@@ -1,0 +1,48 @@
+Navigation:
+
+cd 	The 'change directory' command that will allow a user to navigate to other folders.
+ls	The 'list' command that will display the contents of the current working directory.
+pwd	The 'present working directory' command that will show a user the current folder he/she is in.
+
+
+Editing:
+
+mv	The 'move' command that will move a file to a new directory.
+cp	The 'copy' command that will copy a file to a new directory.
+mkdir	The 'make directory' command that will create a new folder.
+rm	The 'remove' command that will delete a file.
+rmdir	The 'remove directory' command that will delete an empty folder.
+cat	Quickly prints the contents of a file to the console.
+vi	A robust in-built terminal editor which allows a user to create, edit, and save files.
+
+	Press 'I' to focus into the text file and insert/edit/remove text.
+	Press ESC to move out of focus from the text file (this will allow us to execute the below operations).
+	Type ':q!' to force quit the terminal editor without saving.
+	Type ':wq!' to force save and quit the terminal editor.
+
+	
+Helpful Tips:
+
+The '~' keyword in the terminal stands for your user's home directory.
+The '..' keyword in the terminal stands for 'up one level'
+The '*' keyword represents 'all files'
+The 'man' command will pull up the manual/documentation for unix commands.
+
+	
+Examples (in sequence):
+
+1.) `pwd` will show the user the current folder.
+2.) `cd ~/Desktop` will navigate to the user's home directory and change to the desktop directory.
+3.) `ls` will list the contents of the desktop directory.
+4.) `mkdir PythonStuff` will make a new directory/folder on the desktop.
+5.) `vi first_file.py` will create a new file (as it currently does not yet exist). Add 'testing1' to the contents of the file.
+6.) `mv first_file.py PythonStuff` will move 'first_file.py' into the folder 'PythonStuff'
+7.) `cd PythonStuff` will move to the newly created folder
+8.) `cp first_file.py second_file.py` will create a copy of 'first_file.py' in the current directory as 'second_file.py'.
+9.) `vi second_file.py` will edit the existing file. Edit the contents 'testing1' to be 'testing2'.
+10.) `cat *` will list the contents of all the files in the directory.
+11.) `rm * will delete all of the files in the directory.
+12.) `cd ..` will change directory up one level, in this case back to the user's home folder.
+13.) `rmdir PythonStuff` will delete the empty folder.
+
+
