@@ -1,0 +1,332 @@
+#!/usr/bin/env python
+'''
+Script to create TimeTracker files based on the lesson plan
+'''
+
+import datetime
+import getopt
+import os
+import re
+import sys
+import xlsxwriter
+
+
+def get_lesson(filepath):
+    '''Retrieves lesson number from lesson plan title.
+
+    Args:
+        - filepath(str): file path of the lesson plan markdown
+            file
+    '''
+    with open(filepath, 'r') as fil:
+        title = next(fil)
+        pat = re.compile(r'^#+\s*(\d+\.\d+) Lesson Plan')
+        match = pat.match(title)
+        if match:
+            return match.group(1)
+        return ''
+    # 5.2 Lesson Plan -
+
+
+def read_md(filepath, morning=False):
+    '''Reads a Markdown file and create the time tracker data.
+
+    Args:
+        - filepath(str): file path of the lesson plan markdown
+            file
+
+    Yields:
+        a tuple with activity number, name and duration
+    '''
+    regex = (r'^\s*##+\s?(?P<number>\d+)(\.|:)?\s'
+             r'(?P<activity>.+?)\s'
+             r'(?P<duration>\(((?P<time>\d+:\d+)|(?P<minutes>\d+) mins?)\))\s'
+             r"(\((?P<priority>[a-zA-Z]*)\))?")
+    pat = re.compile(regex)
+
+    with open(filepath, 'r') as fil:
+        for line in fil:
+            match = pat.match(line)
+            if match:
+                groups = match.groups()
+                number = match.group('number')
+                activity = match.group('activity')
+                priority = match.group('priority') or ""
+                # Default duration
+                duration = '0:10'
+                no_duration = True
+                if match.group('duration'):
+                    no_duration = False
+                    if match.group('time'):
+                        duration = match.group('time')
+                    else:
+                        duration = f'0:{match.group("minutes"):>02}'
+                if activity.lower().strip() == 'break':
+                    no_duration = False
+                    if morning:
+                        duration = '0:40'
+                    else:
+                        duration = '0:15'
+                if no_duration:
+                    print(f'WARNING: no duration specified for section '
+                          f'{number}')
+                yield number, activity, duration, priority
+
+
+def create_spreadsheet(lesson_plan_path,
+                       output_path='TimeTracker.xlsx',
+                       starting_time='6:30 PM',
+                       overwrite=False,
+                       morning=False):
+    '''Creates an excel file based on the lesson plan
+
+    Args:
+        - lesson_plan_path (str): file path of the lesson plan markdown
+            file
+
+    Keyword args:
+        - output_path (str): file path of the output .xlsx file. By default,
+            'TimeTracker.xlsx'.
+        - overwrite (boolean): if set to True, will overwrite existing file.
+            By default, False.
+        - starting_time (str): Class starting time. By default, '6:30 PM'.
+
+    '''
+    if os.path.exists(output_path) and not overwrite:
+        print(f'ERROR: file already exists ({output_path})')
+        print('To overwrite the file, use option `-f`')
+        sys.exit(3)
+
+    with xlsxwriter.Workbook(output_path) as workbook:
+        # Create worksheet
+        worksheet = workbook.add_worksheet()
+        # Zoom in
+        worksheet.set_zoom(150)
+        # Merge cells for title
+        cell_format = workbook.add_format({'align': 'center', 'bold': True})
+        lesson = get_lesson(lesson_plan_path)
+        worksheet.merge_range('A1:E1', 'Lesson Plan '+lesson+' - Time Tracker',
+                              cell_format)
+        # Set column widths
+        column_width = {'A': 10, 'B': 10, 'C': 50, 'D': 10, 'E': 15}
+        for col, width in column_width.items():
+            worksheet.set_column(col+':'+col, width)
+        # Write headers
+        bold = workbook.add_format({'bold': True})
+        worksheet.write_row('A2:E2', ['Time', 'Number', 'Activity',
+                                      'Duration', 'Priority'], bold)
+        # Write activities
+        time_fmt = workbook.add_format({'num_format': 'h:mm AM/PM',
+                                        'bold': True, 'align': 'right'})
+        duration_fmt = workbook.add_format({'num_format': 'h:mm',
+                                            'align': 'center'})
+        critical_fmt = workbook.add_format({'bg_color': '#FFC000'})
+        high_fmt = workbook.add_format({'bg_color': '#FFFF00'})
+        skip_fmt = workbook.add_format({'bg_color': '#DDDDDD'})
+
+        j = 0
+        for number, activity, duration, priority in read_md(lesson_plan_path,
+                                                  morning=morning):
+            # Set starting time for activity
+            if j == 0:
+                worksheet.write(f'A{j+3}', starting_time, time_fmt)
+            else:
+                worksheet.write_formula(f'A{j+3}',
+                                        f'=IF(LOWER($E{j+2})="skip",A{j+2},' +
+                                        f'A{j+2}+D{j+2})',
+                                        time_fmt)
+            # Set activity number
+            worksheet.write_number(f'B{j+3}', int(number), bold)
+            # Set activity name
+            worksheet.write(f'C{j+3}', activity.strip())
+            # Set activity duration
+            worksheet.write(f'D{j+3}', duration, duration_fmt)
+            # Set priority
+            worksheet.write(f'E{j+3}', priority)
+
+            # Create conditional formatting of row based on priority value
+            worksheet.conditional_format(f'A{j+3}:E{j+3}', {
+                'type': 'formula',
+                'criteria': f'=LOWER($E{j+3})="critical"',
+                'format': critical_fmt
+            })
+            worksheet.conditional_format(f'A{j+3}:E{j+3}', {
+                'type': 'formula',
+                'criteria': f'=LOWER($E{j+3})="high"',
+                'format': high_fmt
+            })
+            worksheet.conditional_format(f'A{j+3}:E{j+3}', {
+                'type': 'formula',
+                'criteria': f'=LOWER($E{j+3})="skip"',
+                'format': skip_fmt
+            })
+            j += 1
+        # Write last row
+        if j == 0:
+            worksheet.write(f'A{j+3}', starting_time, time_fmt)
+        else:
+            worksheet.write_formula(f'A{j+3}',
+                                    f'=IF(LOWER($E{j+2})="skip",A{j+2},' +
+                                    f'A{j+2}+D{j+2})',
+                                    time_fmt)
+        worksheet.write(f'C{j+3}', 'END')
+
+
+def file_write(file_handle, line, debug=False):
+    '''Writes line to file or to standard output
+
+    Args:
+        - file_handle (file): file object
+        - line (str): the line to write
+
+    Keyword args:
+        - debug (boolean): if True, prints the line on screen.
+            If False (default), writes line to file.
+    '''
+    if debug:
+        print(line)
+    else:
+        file_handle.write(line+'\n')
+
+
+def create_markdown(lesson_plan_path,
+                    output_path='TimeTracker.md',
+                    starting_time='6:30 PM',
+                    overwrite=False,
+                    morning=False,
+                    debug=False):
+    '''Creates a markdown file based on the lesson plan
+
+    Args:
+        - lesson_plan_path (str): file path of the lesson plan markdown
+            file
+
+    Keyword args:
+        - output_path (str): file path of the output .xlsx file. By default,
+            'TimeTracker.md'.
+        - overwrite (boolean): if set to True, will overwrite existing file.
+            By default, False.
+        - starting_time (str): Class starting time. By default, '6:30 PM'.
+        - debug (boolean): Does not write to file if debug is True.
+            By default, False
+    '''
+    if os.path.exists(output_path) and not overwrite and not debug:
+        print(f'ERROR: file already exists ({output_path})')
+        print('To overwrite the file, use option `-f`')
+        sys.exit(3)
+
+    lines = []
+    # Write titles
+    lesson = get_lesson(lesson_plan_path)
+    lines.append('# Lesson Plan '+lesson+' - Time Tracker\n')
+    lines.append(f'| {"Start Time":<10} '
+                 f'| {"Number":<6} '
+                 f'| {"Activity":<50} '
+                 f'| {"Duration":<8} '
+                 f'| {"Priority":<8} |')
+    lines.append(f'| {"-"*10:<10} '
+                 f'| {"-"*6:<6} '
+                 f'| {"-"*50:<50} '
+                 f'| {"-"*8:<8} '
+                 f'| {"-"*8:<8} |')
+    # Write activities
+    errors = []
+    j = 0
+    for number, activity, duration, priority in read_md(lesson_plan_path,
+                                              morning=morning):
+        # Check for errors
+        if int(number) != j+1:
+            errors.append((j+1, number))
+        # Set starting time for activity
+        if j == 0:
+            time = starting_time.lstrip('0')
+        else:
+            time = (prevtime+prevdur).strftime('%I:%M %p').lstrip('0')
+        # Transform duration string to timedelta
+        prevdur = datetime.datetime.strptime(duration, '%H:%M')
+        prevdur = datetime.timedelta(hours=prevdur.hour,
+                                     minutes=prevdur.minute)
+        # Transform time string to datetime
+        prevtime = datetime.datetime.strptime(time, '%I:%M %p')
+        # Set activity number
+        lines.append(f'| {time:<10} '
+                     f'| {number:<6} '
+                     f'| {activity.strip():<50} '
+                     f'| {duration:<8} '
+                     f'| {priority:<8} |')
+        j += 1
+    # Write last row
+    if j == 0:
+        time = starting_time.lstrip('0')
+    else:
+        time = (prevtime+prevdur).strftime('%I:%M %p').lstrip('0')
+    lines.append(f'| {time:<10} '
+                 f'| {"":<6} '
+                 f'| {"END":<50} '
+                 f'| {"":<8} '
+                 f'| {"":<8} |')
+
+    if debug:
+        for line in lines:
+            print(line)
+    else:
+        with open(output_path, 'w') as mdfile:
+            for line in lines:
+                mdfile.write(line+'\n')
+    if errors:
+        for j, num in errors:
+            print(f'WARNING: possibly wrong section number for {num}: '
+                  f'should be {j}')
+
+
+def usage():
+    '''Help message
+    '''
+    msg = 'Usage:\n\n./timetracker.py <PATH>'
+    msg += ', where PATH is the path of the LessonPlan.md file.\n'
+    msg += 'By default, PATH is `LessonPlan.md`.\n\n'
+    msg += 'Options:\n'
+    msg += '   -d, --debug: DEBUG mode (does not create a file)\n'
+    msg += '   -f, --force: overwrites output file if already exists'
+    print(msg)
+
+if __name__ == '__main__':
+    try:
+        # Get options and arguments
+        OPTS, ARGS = getopt.getopt(sys.argv[1:], 'dfm',
+                                   ['debug', 'force', 'morning'])
+    except getopt.GetoptError:
+        usage()
+        sys.exit(2)
+    # Only 1 argument is allowed
+    if len(ARGS) > 1:
+        usage()
+        sys.exit(2)
+
+    # Parse options
+    DEBUG = False
+    OVERWRITE = False
+    MORNING = False
+    START = '6:30 PM'
+    for opt, _ in OPTS:
+        if opt in ('-d', '--debug'):
+            DEBUG = True
+        elif opt in ('-f', '--force'):
+            OVERWRITE = True
+        elif opt in ('-m', '--morning'):
+            START = '10:00 AM'
+            MORNING = True
+
+    # Define file path
+    PATH = 'LessonPlan.md'
+    if len(ARGS) == 1:
+        PATH = ARGS[0]
+
+    # Create excel file
+    if not DEBUG:
+        create_spreadsheet(PATH, overwrite=OVERWRITE, starting_time=START,
+                           morning=MORNING)
+    else:
+        # Create markdown file
+        create_markdown(PATH, overwrite=OVERWRITE, starting_time=START,
+                        morning=MORNING, debug=DEBUG)
