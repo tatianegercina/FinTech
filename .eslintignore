@@ -1,0 +1,8 @@
+# /node_modules/* ignored by default
+
+# Ignore minified and vendor files
+**/Unsolved/**
+**/config.js
+**/*.min.js
+**/Extra_Content/
+**/gulpfile.js
