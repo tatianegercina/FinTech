@@ -20,26 +20,26 @@ scalability attirbutes required for a growing enterprise.
 
 In this homework assignment, you will need to:
 
-1. [Read in the Data](#Preprocessing)
-2. [Group the Data](#Tune-Model-Parameters)
-3. [Analyze the Data](#Evaluate-Model-Performance)
+1. [Read in the Data](#Read-in-the-Data)
+2. [Group the Data](#Group-the-Data)
+3. [Analyze the Data](#Analyze-the-Data)
 
 - - -
 
 ## Instructions
 
-### Preprocess the Data
+### Read in the Data
 * Preprocess the raw dataset prior to fitting the model.
 * Perform feature selection and remove unnecessary features.
 * Use `MinMaxScaler` to scale the numerical data.
 * Separate the data into training and testing data.
 
-### Tune Model Parameters
+### Group the Data
 
 * Use `GridSearch` to tune model parameters.
 * Tune and compare at least two different classifiers.
 
-### Evaluate Model Performance
+### Analyze the Data
 
 Compare the performance of two or more classifiers to determine the best model performance.
 
