@@ -7,7 +7,10 @@
 Welcome to Ichiraku Ramen! Opening up a ramen shop has always been your dream and it's finally been realized --- you're closing out on your second year of sales!
 Like last year, you need to analyze your business' financial performance by cross-referencing your sales data with your internal menu data to figure out revenues
 and costs for the year. This year, you also want to analyze how well your business did on a per product basis (as you have several choices of ramen) in order to 
-better understand what products are doing well, poorly, and ultimately which products should potentially be removed or changed.
+better understand what products are doing well, poorly, and ultimately which products should potentially be removed or changed. You tried doing this type of per
+product analysis last year in Excel, but doing so required a lot of manual intervention and frankly is not as kept up-to-date as it should be.
+
+Therefore, the necessity requires innovation. 
 
 
 
