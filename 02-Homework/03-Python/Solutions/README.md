@@ -1,8 +1,38 @@
-# Exoplanet Exploration
+# PyRamen
 
-![exoplanets.jpg](Images/ramen.jpg)
+![ramen.jpg](Images/ramen.jpg)
 
 ## Background
+
+Welcome to Ichiraku Ramen! Opening up a ramen shop has always been your dream and it's finally been realized --- you're closing out on your second year of sales!
+Like last year, you need to analyze your business' financial performance by cross-referencing your sales data with your internal menu data to figure out revenues
+and costs for the year. This year, you also want to analyze how well your business did on a per product basis (as you have several choices of ramen) in order to 
+better understand what products are doing well, poorly, and ultimately which products should potentially be removed or changed.
+
+
+
+which i . Excel first comes to mind, do a few VLOOKUPs(), add some formulas like SUM()
+
+
+on a per product basis (as you have several ramen choices) 
+
+
+
+ in Excel and used VLookups and 
+
+to calculate your annual income statement as well as get an understanding of how
+
+. Excel first comes to mind, you just need to combine your sales
+data with your internal menu data to figure out revenues and costs via vlookups and use form  
+
+
+
+Business has been doing well but 
+
+
+ You're a budding entrepreneur closing out your first year of business and you need to total up your sales to generate your income statement for the year.
+However, 
+
 
 Over a period of nine years in deep space, the NASA Kepler space telescope has been out on a planet-hunting mission to discover hidden planets outside of our solar system.
 
