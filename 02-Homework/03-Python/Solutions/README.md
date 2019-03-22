@@ -32,15 +32,13 @@ In this homework assignment, you will need to:
 ### Read in the Data
 * Read in the `menu_data.csv` and append every menu item to a `list` object.
 * Create a report `dict` object to hold each ramen type as a `key` with every
-  keys having `values` `01-count`, `02-revenue`, `03-cost`, `04-profit`. 
-
-
-Read in the `sales_data.csv` and use an `if` statement with a `for` loop 
+  keys having `values` `01-count`, `02-revenue`, `03-cogs`, `04-profit`. 
+* Read in the `sales_data.csv` and use an `if` statement with a `for` loop 
   to match every transaction item to a corresponding menu item to grab the 
-  item's `price` and `cost`.
-* 
-For every item with a match, place the item name as a key to the `dict`
-
+  sale transaction's `quantity` and the item's `price` and `cost`.
+* Place every item as a `key` to the report `dict`, and if it already exists 
+  cumulatively sum up `quantity` as `01-count`, `price` as `02-revenue`, 
+  `cost` as `03-cogs` and use (`price` - `cost`) to calculate `04-profit`.
 ### Group the Data
 
 * Use `GridSearch` to tune model parameters.
