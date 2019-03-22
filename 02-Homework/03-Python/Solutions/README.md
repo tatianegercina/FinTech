@@ -10,36 +10,13 @@ and costs for the year. This year, you also want to analyze how well your busine
 better understand what products are doing well, poorly, and ultimately which products should potentially be removed or changed. You tried doing this type of per
 product analysis last year in Excel, but doing so required a lot of manual intervention and frankly is not as kept up-to-date as it should be.
 
-Therefore, the necessity requires innovation. 
+Therefore, the necessity requires innovation. You need to perform this level of analysis to keep your menu adaptable and in-tune with your customers' tastes but
+you also realize that going the route of Excel to perform your analysis, while possible, is inconvenient and not a viable long-term solution, especially as your 
+business grows. You need a tool that will allow you to automate your calculations and do so in a manner that scales out with your business as you have more and
+more customers, and thus more data to process. 
 
-
-
-which i . Excel first comes to mind, do a few VLOOKUPs(), add some formulas like SUM()
-
-
-on a per product basis (as you have several ramen choices) 
-
-
-
- in Excel and used VLookups and 
-
-to calculate your annual income statement as well as get an understanding of how
-
-. Excel first comes to mind, you just need to combine your sales
-data with your internal menu data to figure out revenues and costs via vlookups and use form  
-
-
-
-Business has been doing well but 
-
-
- You're a budding entrepreneur closing out your first year of business and you need to total up your sales to generate your income statement for the year.
-However, 
-
-
-Over a period of nine years in deep space, the NASA Kepler space telescope has been out on a planet-hunting mission to discover hidden planets outside of our solar system.
-
-To help process this data, you will create machine learning models capable of classifying candidate exoplanets from the raw dataset.
+Hence, the use of Python! Python should give you the functionality that you need to perform and automate low-level data manipulation as well as provides the 
+scalability features required for a growing enterprise. 
 
 In this homework assignment, you will need to:
 
@@ -52,7 +29,6 @@ In this homework assignment, you will need to:
 ## Instructions
 
 ### Preprocess the Data
-
 * Preprocess the raw dataset prior to fitting the model.
 * Perform feature selection and remove unnecessary features.
 * Use `MinMaxScaler` to scale the numerical data.
