@@ -228,7 +228,7 @@ from pandas.io.json import json_normalize
 
 # Set date range of test data
 start_date = '1/1/2017'
-end_date = '1/7/2017'
+end_date = '12/31/2018'
 
 # Create list of dates from start_date to end_date
 date_range = pd.date_range(start_date, end_date)
