@@ -32,48 +32,50 @@ In this homework assignment, you will need to:
 ### Read in the Data
 * Read in the `menu_data.csv` and append every menu item to a `list` object.
 * Create a report `dict` object to hold each ramen type as a `key` with every
-  keys having `values` `01-count`, `02-revenue`, `03-cogs`, `04-profit`. 
+  key having `values` `01-count`, `02-revenue`, `03-cogs`, `04-profit`. 
+
+
+### Group the Data
+
 * Read in the `sales_data.csv` and use an `if` statement with a `for` loop 
   to match every transaction item to a corresponding menu item to grab the 
   sale transaction's `quantity` and the item's `price` and `cost`.
 * Place every item as a `key` to the report `dict`, and if it already exists 
   cumulatively sum up `quantity` as `01-count`, `price` as `02-revenue`, 
   `cost` as `03-cogs` and use (`price` - `cost`) to calculate `04-profit`.
-### Group the Data
-
-* Use `GridSearch` to tune model parameters.
-* Tune and compare at least two different classifiers.
 
 ### Analyze the Data
 
-Compare the performance of two or more classifiers to determine the best model performance.
+* Create a `sum()`, `avg()`, `min()`, and `max()` function that will return
+  the metric for every item and field of choice. For the `min()` and `max()`
+  function, return the corresponding `key` as well.
+* Find and print out the following:
+
+	* What item is the most popular?
+	* What item is the least popular?
+	* What item is the most profitable?
+	* What item is the least profitable?
+	* What items are underperforming?
+	* What items are overperforming? 
 
 - - -
 
 ## Resources
 
-* [Exoplanet Data Source](https://www.kaggle.com/nasa/kepler-exoplanet-search-results)
-
-* [Scikit-Learn Tutorial Part 1](https://www.youtube.com/watch?v=4PXAztQtoTg)
-
-* [Scikit-Learn Tutorial Part 2](https://www.youtube.com/watch?v=gK43gtGh49o&t=5858s)
-
-* [Grid Search](https://scikit-learn.org/stable/modules/grid_search.html)
+* TBD
 
 - - -
 
 ## Hints and Considerations
 
-* Start by cleaning the data, removing unecessary columns, and scaling the data.
-
-* Try a simple model first, and then tune the model using `GridSearch`.
+* TBD
 
 - - -
 
 ## Submission
 
-* Create a Jupyter Notebook and host the notebook on GitHub.
+* Create a python file
 
-* Include a README.md file that summarizes your assumptions and findings.
+* Write out your results to a `results.txt`
 
 * Submit the link to your GitHub project to Bootcamp Spot.
