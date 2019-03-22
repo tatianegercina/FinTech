@@ -8,7 +8,8 @@ Welcome to Ichiraku Ramen! Opening up a ramen shop has always been your dream an
 Like last year, you need to analyze your business' financial performance by cross-referencing your sales data with your internal menu data to figure out revenues
 and costs for the year. This year, you also want to analyze how well your business did on a per product basis (as you have several choices of ramen) in order to 
 better understand what products are doing well, poorly, and ultimately which products should potentially be removed or changed. You tried doing this type of per
-product analysis last year in Excel, but doing so required a lot of manual intervention and frankly is not as kept up-to-date with your ever growing sales data.
+product analysis last year in Excel, but doing so required a lot of manual intervention and frankly is not as kept up-to-date with your current sales data as it 
+should be.
 
 Therefore, the necessity requires innovation. You need to perform this level of analysis to keep your menu adaptable and in-tune with your customers' tastes but
 you also realize that going the route of Excel to perform your analysis, while possible, is inconvenient and not a viable long-term solution, especially as your 
@@ -29,10 +30,8 @@ In this homework assignment, you will need to:
 ## Instructions
 
 ### Read in the Data
-* Preprocess the raw dataset prior to fitting the model.
-* Perform feature selection and remove unnecessary features.
-* Use `MinMaxScaler` to scale the numerical data.
-* Separate the data into training and testing data.
+* Read in the `menu_data.csv` as a `list`.
+* Read in the `sales_data.csv` and use an `if` statement 
 
 ### Group the Data
 
