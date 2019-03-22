@@ -1,6 +1,6 @@
 # Exoplanet Exploration
 
-![exoplanets.jpg](Images/exoplanets.jpg)
+![exoplanets.jpg](Images/ramen.jpg)
 
 ## Background
 
