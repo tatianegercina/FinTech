@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
 
-from fetch_data import get_stocks, get_coin_prices
+from fetch_data import get_stock, get_stock_news
 
 import dash
 import dash_core_components as dcc
@@ -15,61 +15,73 @@ from plotly.offline import download_plotlyjs, plot, iplot
 
 app = dash.Dash(__name__)
 
-stocks = get_stocks()
 
-trace_high = go.Scatter(x=stocks.Date, y=stocks.High, name="AAPL High")
+def build_line_chart(stocks, ticker):
 
-trace_low = go.Scatter(x=stocks.Date, y=stocks.Low, name="AAPL Low")
+    trace_high = go.Scatter(x=stocks.Date, y=stocks.High, name=f"{ticker} High")
 
-layout = dict(
-    title="Historical Coin Prices",
-    xaxis=dict(
-        rangeselector=dict(
-            buttons=list(
-                [
-                    dict(count=1, label="1m", step="month", stepmode="backward"),
-                    dict(count=6, label="6m", step="month", stepmode="backward"),
-                    dict(step="all"),
-                ]
-            )
+    trace_low = go.Scatter(x=stocks.Date, y=stocks.Low, name=f"{ticker} Low")
+
+    layout = dict(
+        title="Historical Stock Prices",
+        xaxis=dict(
+            rangeselector=dict(
+                buttons=list(
+                    [
+                        dict(count=1, label="1m", step="month", stepmode="backward"),
+                        dict(count=6, label="6m", step="month", stepmode="backward"),
+                        dict(step="all"),
+                    ]
+                )
+            ),
+            rangeslider=dict(visible=True),
+            type="date",
         ),
-        rangeslider=dict(visible=True),
-        type="date",
-    ),
-)
+    )
 
-data = [trace_high, trace_low]
+    data = [trace_high, trace_low]
+    line_figure = {"data": data, "layout": layout}
 
-table_figure = ff.create_table(stocks.iloc[:10, :])
+    return line_figure
 
-# fig1 = px.scatter(df, x='')
+def build_table(stocks, ticker):
+    table_figure = ff.create_table(stocks.iloc[:10, :])
+    return table_figure
 
-app.layout = html.Div(
+default_ticker = "AAPL"
+stocks = get_stock(default_ticker)
+line_figure = build_line_chart(stocks, ticker=default_ticker)
+table_figure = build_table(stocks, ticker=default_ticker)
+
+app.layout = html.Div(className='grid-container',
     children=[
-        dcc.Input(id="input-1-state", type="text", value="United States"),
-        dcc.Input(id="input-2-state", type="text", value="Canada"),
-        html.Button(id="submit-button", n_clicks=0, children="Submit"),
-        html.Div(id="output-state"),
-        dcc.Graph(figure={"data": data, "layout": layout}),
-        dcc.Graph(id="stocks-table", figure=table_figure),
+        html.Div(className="News"),
+        html.Div(children=[
+            dcc.Input(id="stock-ticker", type="text", value="AAPL"),
+            html.Button(id="submit-button", n_clicks=0, children="Submit")], className="Search"),
+        html.Div(dcc.Graph(id="stock-line", figure=line_figure), className="stocks-line"),
+        html.Div(dcc.Graph(id="stock-table", figure=table_figure), className="stocks-table"),
     ]
 )
 
 
 @app.callback(
-    Output("output-state", "children"),
+    Output("stock-line", "figure"),
     [Input("submit-button", "n_clicks")],
-    [State("input-1-state", "value"), State("input-2-state", "value")],
+    [State("stock-ticker", "value")],
 )
-def update_output(n_clicks, input1, input2):
-    return u"""
-        The Button has been pressed {} times,
-        Input 1 is "{}",
-        and Input 2 is "{}"
-    """.format(
-        n_clicks, input1, input2
-    )
+def update_output(n_clicks, input1):
+    stocks = get_stock(input1)
+    return build_line_chart(stocks, input1)
 
+@app.callback(
+    Output("stock-table", "figure"),
+    [Input("submit-button", "n_clicks")],
+    [State("stock-ticker", "value")],
+)
+def update_output(n_clicks, input1):
+    stocks = get_stock(input1)
+    return build_table(stocks, input1)
 
 if __name__ == "__main__":
     app.run_server(debug=True)

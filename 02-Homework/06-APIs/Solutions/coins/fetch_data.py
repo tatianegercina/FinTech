@@ -5,54 +5,14 @@ import pandas as pd
 
 import quandl
 
-def get_coin_prices():
-    currency_base = "EUR"
-    coin = "BTC"
-    fixer_url = 'http://data.fixer.io/api/latest'
-    coinbase_url = f'https://api.coinbase.com/v2/prices/spot?currency={currency_base}'
+stock_news_api = os.getenv("stock_news_api")
+news_api = os.getenv("news_api")
 
-    fixer_params = {
-        "access_key": os.getenv("fixer_api"),
-        "symbols": ",".join(["USD", "AUD", "CAD", "GBP", "CHF"])
-    }
-    r = requests.get(fixer_url, params=fixer_params)
-    exchange_rates = r.json()
+def get_stock_news(ticker="AAPL"):
+    # stock_news_url = f"https://stocknewsapi.com/api/v1?tickers={ticker}&type=article&items=5&fallback=true&token={stock_news_api}"
+    stock_news_url = f"https://newsapi.org/v2/top-headlines?sources=bloomberg&apiKey={news_api}"
+    return requests.get(stock_news_url).json()
 
-
-    coin_params = {
-        "symbols": f"{currency_base}"
-    }
-    r = requests.get(coinbase_url, params=coin_params)
-    coin_rates = r.json()
-    coin_per_eur = float(coin_rates["data"]["amount"])
-
-
-    # buy_url = f"https://api.coinbase.com/v2/prices/{coin}-{currency_base}/buy"
-    # buy_prices = requests.get(buy_url).json()
-
-    # sell_url = f"https://api.coinbase.com/v2/prices/{coin}-{currency_base}/sell"
-    # sell_prices = requests.get(sell_url).json()
-
-    currency_countries = {
-        "USD": "United States",
-        "AUD": "Australia",
-        "CAD": "Canada",
-        "JPY": "Japan",
-        "GBP": "United Kingdom",
-        "CHF": "Switzerland",
-    }
-    def calc_coin_exchange():
-        prices = []
-        countries = []
-        for currency, rate in forex["rates"].items():
-            countries.append(currency_countries[currency])
-            prices.append(rate * coin_per_eur)
-        return pd.DataFrame({
-            "country": countries,
-            "price": prices
-        })
-    return calc_coin_exchange()
-
-def get_stocks():
-    df = quandl.get("BITFINEX/BTCUSD")
+def get_stock(ticker="AAPL"):
+    df = quandl.get(f"WIKI/{ticker}")
     return df.reset_index()
