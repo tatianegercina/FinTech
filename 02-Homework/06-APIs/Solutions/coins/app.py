@@ -52,15 +52,25 @@ default_ticker = "AAPL"
 stocks = get_stock(default_ticker)
 line_figure = build_line_chart(stocks, ticker=default_ticker)
 table_figure = build_table(stocks, ticker=default_ticker)
+stock_news = get_stock_news()
+news_headline = stock_news["articles"][0]['title']
+news_url = stock_news["articles"][0]["url"]
 
 app.layout = html.Div(className='grid-container',
+
     children=[
-        html.Div(className="News"),
-        html.Div(children=[
-            dcc.Input(id="stock-ticker", type="text", value="AAPL"),
-            html.Button(id="submit-button", n_clicks=0, children="Submit")], className="Search"),
-        html.Div(dcc.Graph(id="stock-line", figure=line_figure), className="stocks-line"),
-        html.Div(dcc.Graph(id="stock-table", figure=table_figure), className="stocks-table"),
+        html.H1(children="Stock Dashboard"),
+        html.H2(children=[
+            "Headline News: ",
+            html.A(
+                news_headline,
+                href=news_url,
+                target="_blank",
+        )]),
+        dcc.Input(id="stock-ticker", type="text", value="AAPL"),
+        html.Button(id="submit-button", n_clicks=0, children="Submit"),
+        dcc.Graph(id="stock-line", figure=line_figure),
+        dcc.Graph(id="stock-table", figure=table_figure),
     ]
 )
 
