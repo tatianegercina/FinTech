@@ -1,0 +1,14 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "News Search Search Search" "News stocks-line stocks-line stocks-line" "stocks-table stocks-table stocks-table stocks-table";
+}
+
+.stocks-line { grid-area: stocks-line; }
+
+.News { grid-area: News; }
+
+.stocks-table { grid-area: stocks-table; }
+
+.Search { grid-area: Search; }
