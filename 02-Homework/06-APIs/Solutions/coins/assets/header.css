@@ -1,4 +1,4 @@
-.grid-container {
+/* .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -11,4 +11,4 @@
 
 .stocks-table { grid-area: stocks-table; }
 
-.Search { grid-area: Search; }
+.Search { grid-area: Search; } */

@@ -4,6 +4,7 @@ import requests
 import pandas as pd
 
 import quandl
+quandl.ApiConfig.api_key = os.getenv("quandl_api")
 
 stock_news_api = os.getenv("stock_news_api")
 news_api = os.getenv("news_api")
