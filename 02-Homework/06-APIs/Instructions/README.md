@@ -24,7 +24,7 @@ In this homework assignment, you will be accomplishing five main tasks:
 
 * Save the stocks to a CSV file in order to reduce your total API calls to Quandl.
 
-#### Analyize Daily Returns
+#### Analyze Daily Returns
 
 * Calculate the `Normalized Adjusted Return` for all stocks and use this as a baseline to compare and visualize the performance for each stock.
 
@@ -42,11 +42,11 @@ In this homework assignment, you will be accomplishing five main tasks:
 
 * Calculate the annualized returns for all stocks.
 
-#### Analyze Volatility and Risk
-
 * View the distribution of each stock's daily roi.
 
   ![stock distributions](Images/stock_distributions.png)
+
+#### Analyze Volatility and Risk
 
 * Use a box and whiskers plot to visualize the distribution of each stock to gain a sense of the risk and volatility.
 
@@ -68,7 +68,7 @@ In this homework assignment, you will be accomplishing five main tasks:
 
 * Calculate the average annualized returns for each stock assuming an equal amount of each stock.
 
-* Experiement with new weights to find a portfolio balance that outperforms the equally weighted portfolio.
+* Experiment with new weights to find a portfolio balance that outperforms the equally weighted portfolio.
 
 **Note:** The weights should all sum to 1, so for 5 stocks, the initial numpy array should be:
 ```python
