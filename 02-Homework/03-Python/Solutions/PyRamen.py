@@ -7,9 +7,6 @@ import pprint as pp
 import pandas as pd
 from pathlib import Path
 
-menu_filepath = Path('Resources/menu.csv')
-sales_filepath = Path('Resources/testdata_730_days.csv')
-
 
 def sum_field(report, field):
     total = 0
@@ -30,7 +27,6 @@ def avg_field(report, field):
 
 	avg = round(total / len(report), 2)
 
-	#print(field, avg)
 	return avg
 
 def min_field(report, field):
@@ -49,7 +45,6 @@ def min_field(report, field):
 			minimum = report[key][field]
 			min_key = key
 
-	#print(field, minimum)
 	return minimum, min_key
 
 def max_field(report, field):
@@ -68,15 +63,19 @@ def max_field(report, field):
 			maximum = report[key][field]
 			max_key = key
 
-	#print(field, maximum)
 	return maximum, max_key	
 
 
 
+menu_filepath = Path('Resources/menu.csv')
+sales_filepath = Path('Resources/testdata_730_days.csv')
 
 
-
+# List object to hold our menu data
 menu = []
+
+# Dict obejct to hold our key-value pairs of items and metrics
+report = {}
 
 # item	category	description	price	cost
 # Read in the menu data
@@ -88,19 +87,6 @@ with open(menu_filepath) as menu_file:
 
 	for row in reader:
 		menu.append(row)
-
-#print(menu)
-
-# Buckets to hold our data
-report = {}
-
-# report['count'] = 0
-# report['revenue'] = 0
-# report['avg'] = 0
-# report['max'] = 0
-# report['min'] = 0
-
-
 
 
 # Line_Item_ID	Date	Credit_Card_Number	Quantity	Menu_Item
@@ -180,9 +166,6 @@ with open(sales_filepath) as csvfile:
 fields = ['01-count', '02-revenue', '03-cogs', '04-profit']
 
 
-
-
-
 # Print total number of records in sales data
 print("\n")
 print("Total Number of Records:", row_count)
@@ -210,6 +193,8 @@ print("\n")
 # What items are underperforming?
 # What items are overperforming?
 
+
+# Find items that are performing above or below the average profitability
 under_performing = []
 over_performing = []
 
