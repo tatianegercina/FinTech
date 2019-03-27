@@ -117,7 +117,7 @@ with open(filepath) as csvfile:
 
 	# Loop over every row in the csv file
 	for row in reader:
-		print("\n")
+		print()
 		print(row)
 
 		#
