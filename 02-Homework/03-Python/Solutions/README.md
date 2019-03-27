@@ -63,6 +63,10 @@ Now that we have our data in a per-product format, let's perform some field-leve
 
 * What item is the most popular?
 * What item is the least popular?
+
+* Loop through every `item` in `sales`
+* What item is the most popular?
+* What item is the least popular?
 * What item is the most profitable?
 * What item is the least profitable?
 * What items are underperforming?
