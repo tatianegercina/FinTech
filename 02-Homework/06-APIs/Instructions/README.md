@@ -2,7 +2,7 @@
 
 ## Background
 
-![Portfolio Analysis](Images/stock-technical-analysis-header.jpg)
+![Portfolio Analysis](Images/shutterstock_1099878122.png)
 
 Congratulations! You have just been promoted to Quantitative Analyst for Trading Daze Inc. For your first assignment, you have been asked to analyze the returns for a portfolio of stocks. You will need to perform basic ROI calculations on each dataset to find the daily ROI and annualized returns. You can use that information to calculate all sorts of useful risk indicators such as volatility, Sharpe Ratios, and Annualized Sharp Ratios. Don't forget to include basic correlation analysis to make sure that you have a well-balanced portfolio of stocks. Finally, you will calculate the weighted total return for the portfolio and then try and find a portfolio balance of those stocks that improve the return. Happy Analyzing!
 
