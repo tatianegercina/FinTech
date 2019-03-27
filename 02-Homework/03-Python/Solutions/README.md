@@ -79,7 +79,5 @@ In this homework assignment, you will need to:
 ## Submission
 
 * Create a Python file (ex. <file_name>.py)
-
 * Write out your results to a report.csv file
-
 * Submit the link to your GitHub project to Bootcamp Spot.
