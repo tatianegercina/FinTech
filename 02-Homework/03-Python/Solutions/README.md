@@ -34,30 +34,47 @@ First things first, you'll need to read in your two datasets: `menu_data.csv` an
   * Skips the header
   * Loops over the rest of the rows and appends every row to a new list object 
   * Returns the list object containing all rows of the CSV file
-* Call your newly defined function `read_csv` on your `menu_data.csv` and `sales_data.csv` and assign the return values to variables `menu` and `sales`
+* Call your newly defined function `read_csv` on your `menu_data.csv` and `sales_data.csv` and assign the return values to the variables `menu` and `sales`
 
 ### Manipulate the Data
 
-* Read in the `sales_data.csv` and use an `if` statement with a `for` loop 
-  to match every transaction item to a corresponding menu item to grab the 
-  sale transaction's `quantity` and the item's `price` and `cost`.
-* Place every item as a `key` to the report `dict`, and if it already exists 
-  cumulatively sum up `quantity` as `01-count`, `price` as `02-revenue`, 
-  `cost` as `03-cogs` and use (`price` - `cost`) to calculate `04-profit`.
+Now that you've read your two datasets in Python, you can begin manipulating both datasets to generate a report that showcases on a per product basis...
+
+  * `01-count` - the total quantity for each ramen type
+  * `02-revenue` - the total revenue for each ramen type
+  * `03-cogs` - the total cost of goods sold for each ramen type 
+  * `04-profit` - the total profit for each ramen type
+    
+
+You'll need to 'join' your datasets by the common `item` in order to pull the `price` and `cost` from the menu data to calculate the above four metrics.
+Therefore...
+
+* Loop through every `item` in `sales`
+* Create a nested loop by looping through every `item` in `menu`, for every `item` in `sales` 
+* Do a quick check to see if the `item` in `sales` is already a key in the report dict object, if not add the item as a key initialized with
+  the four metrics above (set them equal to 0)
+* If the `item` in sales is equal to the `item` in `menu`, capture the `quantity` from the sales data, `price`, and `cost` from the menu data, and calculate the `profit` for each item.
+  Add the values to the corresponding item in the report.
+* The report should output each ramen type as the keys and `01-count`, `02-revenue`, `03-cogs`, and `04-profit` metrics as the values for every ramen type.
 
 ### Analyze the Data
 
-* Create a `sum()`, `avg()`, `min()`, and `max()` function that will return
-  the metric for every item and field of choice. For the `min()` and `max()`
-  function, return the corresponding `key` as well.
-* Find and print out the following:
+Now that we have our data in a per-product format, let's perform some field-level calculations that allow us to answer questions like...
 
-	* What item is the most popular?
-	* What item is the least popular?
-	* What item is the most profitable?
-	* What item is the least profitable?
-	* What items are underperforming?
-	* What items are overperforming? 
+  * What item is the most popular?
+  * What item is the least popular?
+  * What item is the most profitable?
+  * What item is the least profitable?
+  * What items are underperforming?
+  * What items are overperforming? 
+
+* Create the following functions that take in the report and field of choice as parameters, and returns the calculations for that particular field of all keys in the report.
+  * `sum_field(report, field)` - summarize up the values of the specified field for every key
+  * `avg_field(report, field)` - average the values of the specified field for every key
+  * `min_field(report, field)` - find the minimum of the values of the specified field for every key
+  * `max_field(report, field)` - find the maximum of the values of the specified field for every key
+* Print out the six questions and corresponding answers.
+
 
 ## Extension Activities
 
