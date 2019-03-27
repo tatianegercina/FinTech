@@ -102,7 +102,8 @@ report = {}
 # report['max'] = 0
 # report['min'] = 0
 
-filepath = "testdata_730_days.csv"
+from pathlib import Path
+filepath = Path('Resources/testdata_730_days.csv")
 
 # Line_Item_ID	Date	Credit_Card_Number	Quantity	Menu_Item
 # Open the csv file and load it in as a csv.reader object
