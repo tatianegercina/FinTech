@@ -53,15 +53,20 @@ In this homework assignment, you will need to:
 	* What items are underperforming?
 	* What items are overperforming? 
 
-### Extension Activities
+## Extension Activities
 
-* TBD, got to think up some stuff!
+* Potential Ideas
+  * Sensitivity Analysis
+  * Monthly/Yearly Profit Reports
+  * Generate Income Statement
 
 - - -
 
 ## Resources
 
-* TBD
+* [Stack Overflow](https://www.stackoverflow.com) - A wealth of community-driven questions and answers, particularly effective for IT solution seekers.
+* [Python Basics](https://pythonbasics.org/) - Contains example materials and exercises for the Python 3 programming language.
+* [Python Documentation](https://docs.python.org/3/) - Official Python documentation.
 
 - - -
 
@@ -73,8 +78,8 @@ In this homework assignment, you will need to:
 
 ## Submission
 
-* Create a python file
+* Create a Python file (ex. <file_name>.py)
 
-* Write out your results to a `results.txt`
+* Write out your results to a `income`
 
 * Submit the link to your GitHub project to Bootcamp Spot.
