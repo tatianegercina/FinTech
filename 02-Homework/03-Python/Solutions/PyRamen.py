@@ -7,7 +7,7 @@ import pprint as pp
 import pandas as pd
 
 
-def sum(report, field):
+def sum_field(report, field):
 
 	total = 0
 
