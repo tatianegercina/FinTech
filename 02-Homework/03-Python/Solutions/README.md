@@ -16,24 +16,27 @@ Hence, the use of Python! Python gives you a wide range of capabilities when han
 
 In this homework assignment, you will need to:
 
-1. [Read in the Data](#Read-in-the-Data)
-2. [Group the Data](#Group-the-Data)
+1. [Read the Data](#Read-in-the-Data)
+2. [Manipulate the Data](#Group-the-Data)
 3. [Analyze the Data](#Analyze-the-Data)
 
 - - -
 
 ## Instructions
 
-### Read in the Data
+### Read the Data
 
+First things first, you'll need to read in your two datasets: `menu_data.csv` and `sales_data.csv`
 
+* Define a `read_csv` function that...
+  * Takes in a file path as a parameter
+  * Opens the specified file path as a CSV
+  * Skips the header
+  * Loops over the rest of the rows and appends every row to a new list object 
+  * Returns the list object containing all rows of the CSV file
+* Call your newly defined function `read_csv` on your `menu_data.csv` and `sales_data.csv` and assign the return values to variables `menu` and `sales`
 
-* Read in the `menu_data.csv` and append every menu item to a `list` object.
-* Create a report `dict` object to hold each ramen type as a `key` with every
-  key having `values` `01-count`, `02-revenue`, `03-cogs`, `04-profit`. 
-
-
-### Group the Data
+### Manipulate the Data
 
 * Read in the `sales_data.csv` and use an `if` statement with a `for` loop 
   to match every transaction item to a corresponding menu item to grab the 
