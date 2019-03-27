@@ -159,7 +159,7 @@ with open(filepath) as csvfile:
 				cost = int(record[4])
 				profit += (price - cost)
 
-				print("Does", row[4], "equal", record[0], "? WE HAVE A MATCH!!!")
+				print(f"Does {row[4]} equal {record[0]}? WE HAVE A MATCH!!!")
 				print("   Item:", item, "\n   Category:", category, "\n   Description:", description, "\n   Price:", price, "\n   Cost:", cost)
 
 				report[row[4]]['01-count'] += quantity
