@@ -61,12 +61,12 @@ Therefore...
 
 Now that we have our data in a per-product format, let's perform some field-level calculations that allow us to answer questions like...
 
-  * What item is the most popular?
-  * What item is the least popular?
-  * What item is the most profitable?
-  * What item is the least profitable?
-  * What items are underperforming?
-  * What items are overperforming? 
+* What item is the most popular?
+* What item is the least popular?
+* What item is the most profitable?
+* What item is the least profitable?
+* What items are underperforming?
+* What items are overperforming? 
 
 * Create the following functions that take in the report and field of choice as parameters, and returns the calculations for that particular field of all keys in the report.
   * `sum_field(report, field)` - summarize up the values of the specified field for every key
