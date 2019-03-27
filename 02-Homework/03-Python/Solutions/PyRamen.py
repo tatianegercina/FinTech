@@ -16,7 +16,11 @@ def sum_field(report, field):
 		total += report[key][field]
 
 	#print(field, total)
-	return total
+def sum_field(report, field):
+    total = 0
+    for key in report:
+        total += report[key][field]
+    return total
 
 def avg(report, field):
 
