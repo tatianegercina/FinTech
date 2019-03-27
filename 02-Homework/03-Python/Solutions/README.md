@@ -12,7 +12,7 @@ This year, you also want to analyze how well your business did on a per product 
 
 Therefore, the necessity requires innovation. As you have more and more customers, and thus more and more data to process, you will need a tool that takes you beyond Excel and will allow you to automate your calculations in a manner that scales out with your business. 
 
-Hence, the use of Python! Python should give you the functionality that you need to perform and automate data manipulation. Python also  provide the scalability attributes required for a growing enterprise.
+Hence, the use of Python! Python gives you a wide range of capabilities when handling data by harnessing the power of low-level Python data structures and high-level development libraries, all the while supporting the automation and scalability needs for a growing enterprise.
 
 In this homework assignment, you will need to:
 
@@ -25,6 +25,9 @@ In this homework assignment, you will need to:
 ## Instructions
 
 ### Read in the Data
+
+
+
 * Read in the `menu_data.csv` and append every menu item to a `list` object.
 * Create a report `dict` object to hold each ramen type as a `key` with every
   key having `values` `01-count`, `02-revenue`, `03-cogs`, `04-profit`. 
@@ -80,4 +83,4 @@ In this homework assignment, you will need to:
 
 * Create a Python file (ex. python_hw.py)
 * Write out your results to a report.csv file
-* Submit the link to your GitHub project to Bootcamp Spot.
+* Submit the link to your GitHub repo to Bootcamp Spot.
