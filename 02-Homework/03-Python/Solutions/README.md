@@ -40,10 +40,10 @@ First things first, you'll need to read in your two datasets: `menu_data.csv` an
 
 Now that you've read your two datasets in Python, you can begin manipulating both datasets to generate a report that showcases on a per product basis...
 
-  * `01-count` - the total quantity for each ramen type
-  * `02-revenue` - the total revenue for each ramen type
-  * `03-cogs` - the total cost of goods sold for each ramen type 
-  * `04-profit` - the total profit for each ramen type
+* `01-count` - the total quantity for each ramen type
+* `02-revenue` - the total revenue for each ramen type
+* `03-cogs` - the total cost of goods sold for each ramen type 
+* `04-profit` - the total profit for each ramen type
     
 
 You'll need to 'join' your datasets by the common `item` in order to pull the `price` and `cost` from the menu data to calculate the above four metrics.
@@ -61,10 +61,6 @@ Therefore...
 
 Now that we have our data in a per-product format, let's perform some field-level calculations that allow us to answer questions like...
 
-* What item is the most popular?
-* What item is the least popular?
-
-* Loop through every `item` in `sales`
 * What item is the most popular?
 * What item is the least popular?
 * What item is the most profitable?
