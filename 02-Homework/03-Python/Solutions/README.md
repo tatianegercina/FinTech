@@ -4,20 +4,14 @@
 
 ## Background
 
-Welcome to Ichiraku Ramen! Opening up a ramen shop has always been your dream and it's finally been realized --- you're closing out on your second year of sales!
-Like last year, you need to analyze your business' financial performance by cross-referencing your sales data with your internal menu data to figure out revenues
-and costs for the year. This year, you also want to analyze how well your business did on a per product basis (as you have several choices of ramen) in order to 
-better understand what products are doing well, poorly, and ultimately which products should potentially be removed or changed. You tried doing this type of per
-product analysis last year in Excel, but doing so required a lot of manual intervention and frankly is not as kept up-to-date with your current sales data as it 
-should be.
+Welcome to Ichiraku Ramen! 
 
-Therefore, the necessity requires innovation. You need to perform this level of analysis to keep your menu adaptable and in-tune with your customers' tastes but
-you also realize that going the route of Excel to perform your analysis, while possible, is inconvenient and not a viable long-term solution, especially as your 
-business grows (as does your responsibilities!). You need a tool that will allow you to automate your calculations and do so in a manner that scales out with your
-business as you have more and more customers, and thus more and more data to process. 
+Opening up a ramen shop has always been your dream and it's finally been realized --- you're closing out on your second year of sales! Like last year, you need to analyze your business' financial performance by cross-referencing your sales data with your internal menu data to figure out revenues and costs for the year. 
 
-Hence, the use of Python! Python should give you the functionality that you need to perform and automate low-level data manipulation as well as provides the 
-scalability attirbutes required for a growing enterprise. 
+This year, you also want to analyze how well your business did on a per product basis (as you have several choices of ramen) in order to better understand what products are doing well, poorly, and ultimately which products should potentially be removed or changed. You tried doing this type of per product analysis last year in Excel,  you were not able to  keep your reports up-to-date with your current sales data.
+
+Therefore, the necessity requires innovation. As you have more and more customers, and thus more and more data to process, you will need a tool that takes you beyond Excel and will allow you to automate your calculations in a manner that scales out with your business. 
+Hence, the use of Python! Python should give you the functionality that you need to perform and automate data manipulation. Python also  provide the scalability attributes required for a growing enterprise.
 
 In this homework assignment, you will need to:
 
@@ -57,6 +51,10 @@ In this homework assignment, you will need to:
 	* What item is the least profitable?
 	* What items are underperforming?
 	* What items are overperforming? 
+
+### Extension Activities
+
+* TBD, got to think up some stuff!
 
 - - -
 
