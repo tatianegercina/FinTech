@@ -64,9 +64,9 @@ In this homework assignment, you will need to:
 
 ## Resources
 
-* [Stack Overflow](https://www.stackoverflow.com) - A wealth of community-driven questions and answers, particularly effective for IT solution seekers.
-* [Python Basics](https://pythonbasics.org/) - Contains example materials and exercises for the Python 3 programming language.
-* [Python Documentation](https://docs.python.org/3/) - Official Python documentation.
+* [Stack Overflow](https://www.stackoverflow.com) - A wealth of community-driven questions and answers, particularly effective for IT solution seekers
+* [Python Basics](https://pythonbasics.org/) - Contains example materials and exercises for the Python 3 programming language
+* [Python Documentation](https://docs.python.org/3/) - Official Python documentation
 
 - - -
 
