@@ -169,7 +169,7 @@ with open(filepath) as csvfile:
 				report[row[4]]['03-cogs'] += cost
 				report[row[4]]['04-profit'] += profit
 
-				print("   Count so far:", str(count))
+				print(f"Count so far: {count}")
 				print("   Revenue so far: $" + str(revenue))	
 				print("   Cost so far: $" + str(cost))
 				print("   Net profit so far: $" + str(profit))	
