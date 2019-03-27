@@ -5,24 +5,22 @@
 import csv
 import pprint as pp 
 import pandas as pd
+from pathlib import Path
+
+menu_filepath = Path('Resources/menu.csv')
+sales_filepath = Path('Resources/testdata_730_days.csv')
 
 
-def sum_field(report, field):
-
-	total = 0
-
-	for key in report:
-
-		total += report[key][field]
-
-	#print(field, total)
 def sum_field(report, field):
     total = 0
+
     for key in report:
+
         total += report[key][field]
+
     return total
 
-def avg(report, field):
+def avg_field(report, field):
 
 	total = 0
 
@@ -35,7 +33,7 @@ def avg(report, field):
 	#print(field, avg)
 	return avg
 
-def min(report, field):
+def min_field(report, field):
 
 	minimum = None
 	min_key = None
@@ -54,7 +52,7 @@ def min(report, field):
 	#print(field, minimum)
 	return minimum, min_key
 
-def max(report, field):
+def max_field(report, field):
 
 	maximum = None
 	max_key = None
@@ -82,7 +80,7 @@ menu = []
 
 # item	category	description	price	cost
 # Read in the menu data
-with open("menu.csv") as menu_file:
+with open(menu_filepath) as menu_file:
 	reader = csv.reader(menu_file)
 
 	# Skip header of menu data
@@ -102,12 +100,12 @@ report = {}
 # report['max'] = 0
 # report['min'] = 0
 
-from pathlib import Path
-filepath = Path('Resources/testdata_730_days.csv')
+
+
 
 # Line_Item_ID	Date	Credit_Card_Number	Quantity	Menu_Item
 # Open the csv file and load it in as a csv.reader object
-with open(filepath) as csvfile:
+with open(sales_filepath) as csvfile:
 	reader = csv.reader(csvfile, delimiter=',')
 
 	# Skip header of sales data
@@ -198,10 +196,10 @@ for key, value in report.items():
 # Calculate the SUM, AVG, MAX, and MIN for each field of every item in the report
 print("\n")
 for field in fields:
-	print(field, "SUM", sum(report, field))
-	print(field, "AVG", avg(report, field))
-	print(field, "MAX", max(report, field))
-	print(field, "MIN", min(report, field))
+	print(field, "SUM", sum_field(report, field))
+	print(field, "AVG", avg_field(report, field))
+	print(field, "MAX", max_field(report, field))
+	print(field, "MIN", min_field(report, field))
 
 print("\n")
 
@@ -217,27 +215,20 @@ over_performing = []
 
 for item in report:
 
-	if report[item]['04-profit'] < avg(report, '04-profit'):
+	if report[item]['04-profit'] < avg_field(report, '04-profit'):
 
 		under_performing.append(item)
 
-	elif report[item]['04-profit'] > avg(report, '04-profit'):
+	elif report[item]['04-profit'] > avg_field(report, '04-profit'):
 
 		over_performing.append(item)
 
-print("Most Popular:", max(report, '01-count'))
-print("Least Popular:", min(report, '01-count'))
-print("Most Profitable:", max(report, '04-profit'))
-print("Least Profitable:", min(report, '04-profit'))
+print("Most Popular:", max_field(report, '01-count'))
+print("Least Popular:", min_field(report, '01-count'))
+print("Most Profitable:", max_field(report, '04-profit'))
+print("Least Profitable:", min_field(report, '04-profit'))
 print("Overperforming Items:", over_performing)
 print("Underperforming Items:", under_performing)
-
-# Pandas makes our lives easier
-print("\n")
-df = pd.DataFrame(report)
-df_transposed = df.T
-print(df_transposed)
-#print(df_transposed['01-count'].sum())
 
 
 
