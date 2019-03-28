@@ -5,7 +5,7 @@ This script will allow you to quickly scaffold an Activities folder.
 ## Installation
 
 ```
-pip install -e .
+pip install .
 ```
 
 ## Usage
