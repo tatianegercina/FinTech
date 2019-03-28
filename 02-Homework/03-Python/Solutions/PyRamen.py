@@ -1,69 +1,66 @@
 
-# Note, this homework could also use the menu data in the form of dicts / JSON structure to keep things more dynamic (key vs. index number)
-# Will students have knowledge of nested JSON objeects at this point? If so, menu hierarchy could be item = { 'category' : '<category', desc... }
-
 import csv
-import pprint as pp 
-import pandas as pd
+import pprint as pp
 from pathlib import Path
 
 
 def sum_field(report, field):
 	"""
-	Summarize a specific field for every key in the report dictionary and return the total.
+	Summarize a column of data.
 
-	Keyword arguments:
-	report -- dict object
-	field -- the column looking to perform the operation on
+	Args:
+		report (dict): The report dictionary.
+		field (str): The column to perform the operation on.
+
+	Returns:
+		A sum total for the requested field (column) in the report.
 	"""
 
 	total = 0
-
 	for key in report:
-
 		total += report[key][field]
-
+	
 	return total
 
 def avg_field(report, field):
 	"""
-	Average a specific field for every key in the report dictionary and return the average.
+	Average a column of data.
 
-	Keyword arguments:
-	report -- dict object
-	field -- the column looking to perform the operation on
+	Args:
+		report (dict): The report dictionary.
+		field (str): The column to perform the operation on.
+
+	Returns:
+		A calculated average for the requested field (column) in the report.
 	"""
 
 	total = 0
-
 	for key in report:
-
 		total += report[key][field]
-
+	
 	avg = round(total / len(report), 2)
-
 	return avg
 
 def min_field(report, field):
 	"""
-	Find the minimum for a specific field key in the report dictionary, return the minimum and the associated key.
+	Find the minimum and associated key of a column of data.
 
-	Keyword arguments:
-	report -- dict object
-	field -- the column looking to perform the operation on
+	Args:
+		report (dict): The report dictionary.
+		field (str): The column looking to perform the operation on.
+	
+	Returns:
+		The minimum for the requested field (column) in the report and the associated key.
 	"""
 
 	minimum = None
 	min_key = None
 
 	for key in report:
-
 		if not minimum:
-
 			minimum = report[key][field]
 
 		elif report[key][field] < minimum:
-
 			minimum = report[key][field]
 			min_key = key
 
@@ -71,11 +68,14 @@ def min_field(report, field):
 
 def max_field(report, field):
 	"""
-	Find the maximum for a specific field key in the report dictionary, return the maximum and the associated key.
+	Find the maximum and associated key of a column of data.
 
-	Keyword arguments:
-	report -- dict object
-	field -- the column looking to perform the operation on
+	Args:
+		report (dict): The report dictionary.
+		field (str): The column looking to perform the operation on.
+
+	Returns:
+		The maximum for the requested field (column) in the report and the associated key.
 	"""
 
 	maximum = None
@@ -84,18 +84,15 @@ def max_field(report, field):
 	for key in report:
 
 		if maximum is None:
-
 			maximum = report[key][field]
 
 		elif report[key][field] > maximum:
-
 			maximum = report[key][field]
 			max_key = key
 
 	return maximum, max_key	
 
-
-
+# Set file paths for menu_data.csv and sales_data.csv
 menu_filepath = Path('Resources/menu.csv')
 sales_filepath = Path('Resources/testdata_730_days.csv')
 
@@ -139,10 +136,18 @@ with open(sales_filepath) as csvfile:
 		cogs = 0
 		profit = 0
 
+		# Sales Data
+		# Line_Item_ID,Date,Credit_Card_Number,Quantity,Menu_Item
+		line_item_id = row[0]
+		date = row[1]
+		cc_number = row[2]
+		quantity = int(row[3])
+		sales_item = row[4]
+
 		# If the item value not in the report, add it as a new entry with initialized metrics
 		# Naming convention allows the keys to be ordered in logical fasion, count, revenue, cost, profit
-		if row[4] not in report.keys():
-			report[row[4]] = {
+		if sales_item not in report.keys():
+			report[sales_item] = {
 				"01-count" : 0,
 				"02-revenue" : 0,
 				"03-cogs" : 0,
@@ -152,47 +157,39 @@ with open(sales_filepath) as csvfile:
 		# For every row in our sales data, loop over the menu records to determine a match  
 		for record in menu:
 
+			# Menu Data
+			# Item,Category,Description,Price,Cost
+			item = record[0]
+			category = record[1]
+			description = record[2]
+			price = float(record[3])
+			cost = float(record[4])
+			profit = (price - cost)
+
+
 			# If the item value in our sales data is equal to the any of the items in the menu, then begin tracking metrics for that item
-			if row[4] == record[0]:
-
-				# Sales Data
-				# Line_Item_ID,Date,Credit_Card_Number,Quantity,Menu_Item
-				line_item_id = row[0]
-				date = row[1]
-				cc_number = row[2]
-				quantity = int(row[3])
-				menu_item = row[4]
-
-				# Menu Data
-				# Item,Category,Description,Price,Cost
-				item = record[0]
-				category = record[1]
-				description = record[2]
-				price = int(record[3])
-				cost = int(record[4])
-				profit = (price - cost)
+			if sales_item == item:
 
 				# Print out matching menu data 
-				print(f"Does {row[4]} equal {record[0]}? WE HAVE A MATCH!!!")
+				print(f"Does {sales_item} equal {item}? WE HAVE A MATCH!!!")
 				print(f"   Item: {item}")
 				print(f"   Category: {category}")
 				print(f"   Price: ${price}")	
-				print(f"   Cost: {cost}")
+				print(f"   Cost: ${cost}")
 				print(f"   Profit: ${profit}")	
 
 				# Cumulatively add up the metrics for each item key
-				report[row[4]]['01-count'] += quantity
-				report[row[4]]['02-revenue'] += (price * quantity)
-				report[row[4]]['03-cogs'] += cost
-				report[row[4]]['04-profit'] += profit
+				report[sales_item]['01-count'] += quantity
+				report[sales_item]['02-revenue'] += (price * quantity)
+				report[sales_item]['03-cogs'] += cost
+				report[sales_item]['04-profit'] += profit
 
 			else:
-				print("Does", row[4], "equal", record[0], "? WA WA, NO MATCH")
+				print("Does", sales_item, "equal", record[0], "? WA WA, NO MATCH")
 
 		row_count += 1
 
 fields = ['01-count', '02-revenue', '03-cogs', '04-profit']
-
 
 # Print total number of records in sales data
 print()
@@ -214,14 +211,6 @@ for field in fields:
 
 print()
 
-# What item is the most popular?
-# What item is the least popular?
-# What item is the most profitable?
-# What item is the least profitable?
-# What items are underperforming?
-# What items are overperforming?
-
-
 # Find items that are performing above or below the average profitability
 under_performing = []
 over_performing = []
@@ -236,6 +225,8 @@ for item in report:
 
 		over_performing.append(item)
 
+print("Ramen Analysis Summary")
+print("-----------------------------")
 print("Most Popular:", max_field(report, '01-count'))
 print("Least Popular:", min_field(report, '01-count'))
 print("Most Profitable:", max_field(report, '04-profit'))
