@@ -91,6 +91,8 @@ array([0.2, 0.2, 0.2, 0.2, 0.2])
 
 Follow the comments in the starter workbook to complete each section. Refer to the ROI cheatsheet to find calculations for each step.
 
+With this homework, you will be analyzing and comparing multiple stocks simultaneously. Try and take advantage of Pandas and Numpy to vectorize the calculations, but you can also loop through each stock. Checkout [this article](https://engineering.upside.com/a-beginners-guide-to-optimizing-pandas-code-for-speed-c09ef2c6a4d6) on the different techniques!
+
 - - -
 
 ### Submission
