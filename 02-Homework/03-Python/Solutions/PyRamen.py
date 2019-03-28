@@ -58,7 +58,7 @@ def min_field(report, field):
 
 	for key in report:
 
-		if minimum is None:
+		if not minimum:
 
 			minimum = report[key][field]
 
