@@ -82,7 +82,6 @@ def max_field(report, field):
 	max_key = None
 
 	for key in report:
-
 		if maximum is None:
 			maximum = report[key][field]
 
