@@ -130,12 +130,6 @@ with open(sales_filepath) as csvfile:
 		print()
 		print(row)
 
-		#
-		count = 0
-		revenue = 0
-		cogs = 0
-		profit = 0
-
 		# Sales Data
 		# Line_Item_ID,Date,Credit_Card_Number,Quantity,Menu_Item
 		line_item_id = row[0]
