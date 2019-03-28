@@ -70,6 +70,15 @@ Now that we have our data in a per-product format, let's perform some field-leve
 
 
 
+
+* Create the following functions that take in the report and field of choice as parameters, and returns the calculations for that particular field of all keys in the report.
+  * `sum_field(report, field)` - summarize up the values of the specified field for every key
+  * `avg_field(report, field)` - average the values of the specified field for every key
+  * `min_field(report, field)` - find the minimum of the values of the specified field for every key
+  * `max_field(report, field)` - find the maximum of the values of the specified field for every key
+* Print out the six questions and corresponding answers.
+
+
 ## Extension Activities
 
 * Potential Ideas
