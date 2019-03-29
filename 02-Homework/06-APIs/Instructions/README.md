@@ -20,7 +20,7 @@ In this homework assignment, you will be accomplishing five main tasks:
 
 #### Collect Stocks
 
-* Use the Quandl API to collect stocks from `Dec 31, 2018 - Present` for at least 5 different stocks.
+* Use the Quandl API to collect stocks from `Dec 31, 2017 - Present` for at least 5 different stocks.
 
 * Save the stocks to a CSV file in order to reduce your total API calls to Quandl.
 
