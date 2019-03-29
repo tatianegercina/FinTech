@@ -70,9 +70,14 @@ In this homework assignment, you will be accomplishing five main tasks:
 
 * Experiment with new weights to find a portfolio balance that outperforms the equally weighted portfolio.
 
-**Note:** The weights should all sum to 1, so for 5 stocks, the initial numpy array should be:
+**Note:** The weights should always sum to 1, so for 5 stocks, the initial equally weighted numpy array should be:
 ```python
 array([0.2, 0.2, 0.2, 0.2, 0.2])
+```
+
+You can also choose new weights to represent different percentages of shares, but the weights should still all add to 1.
+```python
+array([0.1, 0.3, 0.1, 0.1, 0.4])
 ```
 
 - - -
