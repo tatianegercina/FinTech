@@ -1,6 +1,6 @@
 # Unit 5 - How do you like them Apps
 
-![Image Goes Here]()
+![Financial Planner](Images/financial-planner.png)
 
 ## Background
 
@@ -14,15 +14,56 @@ In this homework assignment, you will help Harold complete the following tasks:
 
 - - -
 
+### Files
+
+[Budget Starter Notebook](Starter-Code/budget_analysis.ipynb)
+
+[Retirement Planner Starter Notebook](Starter-Code/retirement_planner.ipynb)
+
+- - -
+
 ### Instructions
 
 #### Budget Analysis
 
 In this section, you will use the Plaid API to obtain transaction and account data for the budget analysis section of the report.
 
-#### Do Y
+Follow the steps outline in the budget starter notebook to complete the following:
 
-Instructions for doing Y
+1. Generate a Plaid access token to access the Developer Sandbox.
+
+2. Use the Access token to fetch account transactions from the sandbox. You should fetch the last 90 days of transactions from the sandbox using the following institution:
+
+    ```python
+    INSITUTION_ID = "ins_109508"
+    ```
+
+3. Perform basic budget analysis on the sandbox transaction and generate the following plots:
+
+* Expenses per category
+
+* Expenses per month
+
+4. (Optional Challenge) Use the API to fetch income data from the sandbox and print the following:
+
+* Last Year's Income Before Tax
+
+* Current Monthly Income
+
+* Projected Year's Income Before Tax
+
+#### Retirement Planner
+
+In this section, you will use the IEX API to fetch historical closing prices for a retirement portfolio and then run monte carlo simulations to project the portfolio performance at 30 years.
+
+Follow the steps outline in the budget starter notebook to complete the following:
+
+1. Use the IEX API to fetch historical closing prices for a traditional 60/40 portfolio using the `SPY` and `AGG` tickers to represet the 60% stocks (SPY) and 40% bonds (AGG).
+2. Run a Monte Carlo Simulation of 1000 runs and 30 years for the 60/40 portfolio and plot the results.
+3. Slice the last day prices from the simulation data and plot a histogram.
+4. (Optional Challenge) Calculate the lower, median, and upper quantiles for the monte carlo data and plot the projections as a prediction of the portfolio returns using a 90% confidence interval.
+
+  ![projected-returns.png](Images/projected-returns.png)
 
 #### Do Z
 
