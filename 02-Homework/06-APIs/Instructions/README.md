@@ -16,9 +16,9 @@ In this homework assignment, you will help Harold complete the following tasks:
 
 ### Files
 
-[Budget Starter Notebook](Starter-Code/budget_analysis.ipynb)
+[Budget Starter Notebook](Starter_Code/account_summary.ipynb)
 
-[Retirement Planner Starter Notebook](Starter-Code/retirement_planner.ipynb)
+[Retirement Planner Starter Notebook](Starter_Code/portfolio_planner.ipynb)
 
 - - -
 
@@ -60,8 +60,9 @@ Follow the steps outline in the budget starter notebook to complete the followin
 
 1. Use the IEX API to fetch historical closing prices for a traditional 60/40 portfolio using the `SPY` and `AGG` tickers to represet the 60% stocks (SPY) and 40% bonds (AGG).
 2. Run a Monte Carlo Simulation of 1000 runs and 30 years for the 60/40 portfolio and plot the results.
-3. Slice the last day prices from the simulation data and plot a histogram.
-4. (Optional Challenge) Calculate the lower, median, and upper quantiles for the monte carlo data and plot the projections as a prediction of the portfolio returns using a 90% confidence interval.
+3. Slice the last day prices from the simulation data and calculate the 95% confidence interval.
+4. Slice the last day prices from the simulation data and plot a histogram of the last day's prices.
+5. (Optional Challenge) Calculate the lower, median, and upper quantiles for the monte carlo data and plot the projections as a prediction of the portfolio returns using a 90% confidence interval.
 
   ![projected-returns.png](Images/projected-returns.png)
 
