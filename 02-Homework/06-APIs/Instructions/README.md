@@ -10,7 +10,7 @@ In this homework assignment, you will help Harold complete the following tasks:
 
 1. [Budget Analysis with Plaid](#Budget-Analysis)
 2. [Retirement Planner](#Retirement-Planner)
-3. [Report Generation](#Report-Generation)
+3. [Financial Report](#Financial-Report)
 
 - - -
 
@@ -65,15 +65,18 @@ Follow the steps outline in the budget starter notebook to complete the followin
 
   ![projected-returns.png](Images/projected-returns.png)
 
-#### Do Z
+#### Financial Report
 
-Instructions for doing Z
+In this section, you will compile an example financial report to present to the development team. The report should be written as a Markdown file and include the following sections:
+
+1. Budget Analysis - Summarize the transaction data from the budget analysis and include images for each chart and table produced.
+2. Retirement Planning - Summarize the retirement portfolio anlaysis and include the charts for the Monte Carlo simulation.
 
 - - -
 
 ### Resources
 
-Resources that will help students
+[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 
 - - -
 
@@ -81,16 +84,20 @@ Resources that will help students
 
 Show good examples
 
-Show bad examples
-
 - - -
 
 ### Hints and Considerations
 
-Share ideas or hints for the best way to proceed with the homework
+[Plaid API Docs](https://plaid.com/docs/)
+
+[IEX Financial API Docs])(https://addisonlynch.github.io/iexfinance/stable/)
 
 - - -
 
 ### Submission
 
-Tell the student how they will submit the homework
+* Create Jupyter Notebooks for the analysis and planner and host the notebooks on Github.
+
+* Include a Markdown Financial Planner report that summarizes your assumptions and finding and include this report in your Github repo.
+
+* Submit the link to your Github project to Bootcampspot.
