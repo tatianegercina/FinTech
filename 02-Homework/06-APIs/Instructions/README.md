@@ -28,7 +28,7 @@ In this homework assignment, you will help Harold complete the following tasks:
 
 In this section, you will use the Plaid API to obtain transaction and account data for the budget analysis section of the report.
 
-Follow the steps outline in the budget starter notebook to complete the following:
+Follow the steps outlined in the budget starter notebook to complete the following:
 
 1. Generate a Plaid access token to access the Developer Sandbox.
 
@@ -44,7 +44,7 @@ Follow the steps outline in the budget starter notebook to complete the followin
 
 * Expenses per month
 
-4. (Optional Challenge) Use the API to fetch income data from the sandbox and print the following:
+4. Use the API to fetch income data from the sandbox and print the following:
 
 * Last Year's Income Before Tax
 
@@ -54,15 +54,28 @@ Follow the steps outline in the budget starter notebook to complete the followin
 
 #### Retirement Planner
 
-In this section, you will use the IEX API to fetch historical closing prices for a retirement portfolio and then run monte carlo simulations to project the portfolio performance at 30 years.
+In this section, you will use the IEX API to fetch historical closing prices for a retirement portfolio and then run monte carlo simulations to project the portfolio performance at 20 years. You will then use the monte carlo data to answer questions about the portfolio.
 
 Follow the steps outline in the budget starter notebook to complete the following:
 
+##### Monte Carlo Simulation
+
+Create a Monte Carlo Simulation for the retirement portfolio:
+
 1. Use the IEX API to fetch historical closing prices for a traditional 60/40 portfolio using the `SPY` and `AGG` tickers to represet the 60% stocks (SPY) and 40% bonds (AGG).
-2. Run a Monte Carlo Simulation of 1000 runs and 30 years for the 60/40 portfolio and plot the results.
-3. Slice the last day prices from the simulation data and calculate the 95% confidence interval.
-4. Slice the last day prices from the simulation data and plot a histogram of the last day's prices.
-5. (Optional Challenge) Calculate the lower, median, and upper quantiles for the monte carlo data and plot the projections as a prediction of the portfolio returns using a 90% confidence interval.
+2. Run a Monte Carlo Simulation of 500 runs and 30 years for the 60/40 portfolio and plot the results.
+3. Select the ending cumulative returns from the Monte Carlo simulation and calculate the interval values for a 90% confidence interval.
+4. Using the ending cumulative returns, plot a histogram of the results and plot the 90% confidence interval as vertical lines on the histogram.
+
+##### Retirement Analysis
+
+Use the monte carlo simulation data to answer the following questions:
+
+1. What are the expected cumulative returns at 20 years for the 10th, 50th, and 90th percentiles?
+2. Given an initial investment of $50,000, what is the expected return in dollars at the 10th, 50th, and 90th percentiles?
+3. Given the current projected annual income from the Plaid analysis, will a 4% withdraw rate meet or exceed that value at the 10th percentile? Note: This is basically determining if their retirement income is equivalent to their current income.
+4. How would a 50% increase in the initial investment amount affect the 4% retirement withdrawal? In other words, what happens if the initial investment had been bigger?
+5. (Optional Challenge) Use the Monte Carlo data and calculate the cumulative returns at the 5, 50, and 95% quartiles and plot this data as a line chart to see how the cumulative returns change over the life of the investment.
 
   ![projected-returns.png](Images/projected-returns.png)
 
@@ -71,7 +84,11 @@ Follow the steps outline in the budget starter notebook to complete the followin
 In this section, you will compile an example financial report to present to the development team. The report should be written as a Markdown file and include the following sections:
 
 1. Budget Analysis - Summarize the transaction data from the budget analysis and include images for each chart and table produced.
-2. Retirement Planning - Summarize the retirement portfolio anlaysis and include the charts for the Monte Carlo simulation.
+2. Retirement Planning - Summarize the retirement portfolio analysis and include the charts for the Monte Carlo simulation.
+
+#### Optional Challenge - Early Retirement
+
+Harold was really impressed with your work on this planner, but commented that 30 years seems like such a long time to retire! Harold starts wondering if the retirement plan could be adjusted to retire earlier than normal. Try adjusting the portfolio to either include more risk (a higher stock than bond ratio) or to have a larger initial investment and re-run the retirement analysis to see what it would take to retire in 5 years instead of 30!
 
 - - -
 
