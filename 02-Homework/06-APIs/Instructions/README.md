@@ -110,6 +110,8 @@ Show good examples
 
 [IEX Financial API Docs])(https://addisonlynch.github.io/iexfinance/stable/)
 
+For the monte carlo simulation, start out by calculating 100 simulations for 1 year of returns and when you have the code worked out, run the simulation at 100-500 simulations for 30 years (This takes a long time).
+
 - - -
 
 ### Submission
