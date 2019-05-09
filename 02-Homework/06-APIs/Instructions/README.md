@@ -102,7 +102,7 @@ Harold was really impressed with your work on this planner, but commented that 3
 
 [Plaid API Docs](https://plaid.com/docs/)
 
-[IEX Financial API Docs])(https://addisonlynch.github.io/iexfinance/stable/)
+[IEX Financial API Docs](https://addisonlynch.github.io/iexfinance/stable/)
 
 For the monte carlo simulation, start out by running 100 simulations for 1 year of returns and when you have the code worked out, run the simulation at 100-500 simulations for 30 years (This takes a long time).
 
