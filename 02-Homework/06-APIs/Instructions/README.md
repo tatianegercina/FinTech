@@ -81,7 +81,7 @@ Use the monte carlo simulation data to answer the following questions:
 
 #### Financial Report
 
-In this section, you will compile an example financial report to present to the development team. The report should be written as a Markdown file and include the following sections:
+In this section, you will compile a financial report to demo your calculations to the consumer app team. The report should be written as a Markdown file and include the following sections:
 
 1. Budget Analysis - Summarize the transaction data from the budget analysis and include images for each chart and table produced.
 2. Retirement Planning - Summarize the retirement portfolio analysis and include the charts for the Monte Carlo simulation.
@@ -98,19 +98,13 @@ Harold was really impressed with your work on this planner, but commented that 3
 
 - - -
 
-### Examples
-
-Show good examples
-
-- - -
-
 ### Hints and Considerations
 
 [Plaid API Docs](https://plaid.com/docs/)
 
 [IEX Financial API Docs])(https://addisonlynch.github.io/iexfinance/stable/)
 
-For the monte carlo simulation, start out by calculating 100 simulations for 1 year of returns and when you have the code worked out, run the simulation at 100-500 simulations for 30 years (This takes a long time).
+For the monte carlo simulation, start out by running 100 simulations for 1 year of returns and when you have the code worked out, run the simulation at 100-500 simulations for 30 years (This takes a long time).
 
 - - -
 
