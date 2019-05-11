@@ -2,6 +2,6 @@
 
 * **Files:**
 
-  * [welcome-slides](LINK TO GOOGLE SHEETS!)
+  * [Lesson 4.2 slides](LINK TO GOOGLE SHEETS!)
 
 * Welcome students back and explain that today we'll ...
