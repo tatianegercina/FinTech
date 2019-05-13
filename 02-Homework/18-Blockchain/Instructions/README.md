@@ -25,7 +25,7 @@ Be sure to include any preliminary setup information, such as installing depende
 
 - Create a "Screenshots" folder inside of the project directory.
 
-- Create accounts for two (or more) nodes for the network with a separate `datadir` for each.
+- Create accounts for two (or more) nodes for the network with a separate `datadir` for each using `geth`.
 
 - Run `puppeth`, name your network and select the option to configure a new genesis block.
 
@@ -45,7 +45,7 @@ Be sure to include any preliminary setup information, such as installing depende
 
 - Screenshot the `puppeth` configuration once complete and save it to the Screenshots folder.
 
-- Initialize each node with the new `networkname.json`
+- Initialize each node with the new `networkname.json` with `geth`.
 
 - Run the first node, unlock the account, enable mining and the RPC flag. Only one node needs RPC enabled.
 
