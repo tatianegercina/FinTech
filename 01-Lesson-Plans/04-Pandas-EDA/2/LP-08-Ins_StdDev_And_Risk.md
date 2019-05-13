@@ -14,7 +14,7 @@ This lesson will introduce students to some basic descriptive statistics than ar
 
   * The **mean**, also known as **average** or **arithmetic mean**, is the central value of a discrete set of numbers, it's calculated by the sum of the value dived by the number o values. Show the mean formula to the class.
 
-  ![Mean formula](Images/mean_formula.png)
+    ![Mean formula](Images/mean_formula.png)
 
   * The **mode** is the most frequently occurring number value among a discrete set of numbers, it's found by collecting and organizing data in order to count the frequency of each result.
 
@@ -24,8 +24,12 @@ This lesson will introduce students to some basic descriptive statistics than ar
 
   * The **variance** measures how spread are numbers in a dataset. It's used to understand how far each number in the dataset is from mean. The variance is calculated is calculated by taking the differences between each number in the dataset and the mean, the differences are squared to make them positive and the sum of the squares is divided by the number of values in the set. Show the variance formula to the class.
 
-  ![Variance formula](Images/variance_formula.png)
+    ![Variance formula](Images/variance_formula.png)
 
   * The **standard deviation** is a measure of variability and is used on finance to assess risk. It's calculated as the square root of variance by determining the variation between each data point relative to the mean.
 
-  ![Standar deviation formula](Images/std_dev_formula.png)
+    ![Standard deviation formula](Images/std_dev_formula.png)
+
+Before introducing the descriptive statistic measures explain to the class that despite every formula can be coded as a python function we are going to use the built-in stats formulas of Pandas.
+
+Now it's time to show descriptive stats in action using Pandas, on this activity standard deviation will be use to analyze how risk change over time. Open the 08-Ins_StdDev_And_Risk.ipynb notebook and explain the following:
