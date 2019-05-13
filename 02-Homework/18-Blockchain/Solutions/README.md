@@ -1,6 +1,6 @@
 # PupperNet, an out-of-the-box blockchain
 
-In this tutorial, I will demonstrate using `geth`, the official Ethereum client, to run a PupperNet private network.
+In this tutorial, I will demonstrate using `geth`, the official Ethereum client, how to run a PupperNet private network.
 
 This network is configured for `5 second` block times, and uses the Clique Proof of Authority consensus algorithm. This
 will ensure fast and efficient testing, so no need to worry about your CPU. The chain ID is `333`.
