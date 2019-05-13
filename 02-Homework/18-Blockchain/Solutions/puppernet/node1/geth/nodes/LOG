@@ -1,0 +1,38 @@
+=============== May 13, 2019 (EDT) ===============
+12:57:21.549597 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:57:21.569698 db@open opening
+12:57:21.575015 version@stat F·[] S·0B[] Sc·[]
+12:57:21.583303 db@janitor F·2 G·0
+12:57:21.586951 db@open done T·14.673646ms
+12:57:21.595157 db@close closing
+12:57:21.595830 db@close done T·663.622µs
+=============== May 13, 2019 (EDT) ===============
+12:58:03.221789 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:58:03.222711 version@stat F·[] S·0B[] Sc·[]
+12:58:03.222751 db@open opening
+12:58:03.222864 journal@recovery F·1
+12:58:03.225079 journal@recovery recovering @1
+12:58:03.237572 memdb@flush created L0@2 N·2 S·180B "n:J..seq,v2":"version,v1"
+12:58:03.241400 version@stat F·[1] S·180B[180B] Sc·[0.25]
+12:58:03.285832 db@janitor F·3 G·0
+12:58:03.286051 db@open done T·63.267592ms
+12:59:26.949686 db@close closing
+12:59:26.950157 db@close done T·469.028µs
+=============== May 13, 2019 (EDT) ===============
+12:59:39.338761 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:59:39.339008 version@stat F·[1] S·180B[180B] Sc·[0.25]
+12:59:39.339026 db@open opening
+12:59:39.339097 journal@recovery F·1
+12:59:39.341164 journal@recovery recovering @3
+12:59:39.352910 memdb@flush created L0@5 N·129 S·4KiB "n:\x06..ing,v130":"n:\xe7..ong,v89"
+12:59:39.357223 version@stat F·[2] S·4KiB[4KiB] Sc·[0.50]
+12:59:39.405462 db@janitor F·4 G·0
+12:59:39.405552 db@open done T·66.510152ms
+12:59:39.413486 table@compaction L0·2 -> L1·0 S·4KiB Q·133
+12:59:39.425840 table@build created L1@8 N·120 S·4KiB "n:\x06..ing,v130":"version,v1"
+12:59:39.425944 version@stat F·[0 1] S·4KiB[0B 4KiB] Sc·[0.00 0.00]
+12:59:39.456366 table@compaction committed F-1 S-263B Ke·0 D·11 T·42.778385ms
+12:59:39.459588 table@remove removed @5
+12:59:39.459801 table@remove removed @2
+13:00:34.876514 db@close closing
+13:00:34.876885 db@close done T·368.891µs
