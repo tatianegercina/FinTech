@@ -36,11 +36,11 @@ We need to unlock the node's account to enable it to sign blocks.
 ## Copy the enode address from this node
 
 For example:
-`enode://40c8726ceb175f39b1d3c2f45a37370742f49427ea6725c52156a4bc3ec4a3adf7418d5353ed8c0c2b05dfa321a2c4453940103930fcf310115bb7ec6988052b@127.0.0.1:30303`
+`enode://b044f481e52f03950ed88ad18f550ace268ad4e4e1647f80c5808d6ea2c4e7f550d8ed25a14608afa6e5828f1b69fdfcf5d7775394f7c38d8592f600e4a37e90@127.0.0.1:30303`
 
 ## Use the first node's enode address as the bootnode for the second node and run on a separate port
 
-`geth --datadir node2 --unlock "7a4f862ab163fc62dce2cfbb734ddac153c5e8cc" --mine --port 30304 --bootnodes enode://40c8726ceb175f39b1d3c2f45a37370742f49427ea6725c52156a4bc3ec4a3adf7418d5353ed8c0c2b05dfa321a2c4453940103930fcf310115bb7ec6988052b@127.0.0.1:30303`
+`geth --datadir node2 --unlock "7a4f862ab163fc62dce2cfbb734ddac153c5e8cc" --mine --port 30304 --bootnodes enode://b044f481e52f03950ed88ad18f550ace268ad4e4e1647f80c5808d6ea2c4e7f550d8ed25a14608afa6e5828f1b69fdfcf5d7775394f7c38d8592f600e4a37e90@127.0.0.1:30303`
 
 Using the first node as a bootnode will enable the nodes to communicate with each other, and discover new nodes later.
 
