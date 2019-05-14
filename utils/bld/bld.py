@@ -17,10 +17,6 @@ def cli(name):
     images = root / "Images"
     resources = root / "Resources"
     readme = root / "README.md"
-    solved_keep = solved / ".gitkeep"
-    unsolved_keep = unsolved / ".gitkeep"
-    images_keep = images / ".gitkeep"
-    resources_keep = resources / ".gitkeep"
 
     if (root.exists() or solved.exists() or unsolved.exists() or
         images.exists() or resources.exists() or readme.exists()):
@@ -33,10 +29,6 @@ def cli(name):
     images.mkdir()
     resources.mkdir()
     readme.touch()
-    solved_keep.touch()
-    unsolved_keep.touch()
-    images_keep.touch()
-    resources_keep.touch()
 
 
 
