@@ -3,6 +3,7 @@
 * **Files:**
 
   * [Lesson 4.2 slides](LINK TO GOOGLE SHEETS!)
+  * [08-Ins_StdDev_And_Risk.ipynb](Activities/08-Ins_StdDev_And_Risk/Solved/08-Ins_StdDev_And_Risk.ipynb)
 
 This lesson will introduce students to some basic descriptive statistics than are commonly used on finance to assess risk. Open the lesson slide deck and introduce students to mean, mode, median, and standard deviation by highlighting the following:
 
@@ -30,6 +31,39 @@ This lesson will introduce students to some basic descriptive statistics than ar
 
     ![Standard deviation formula](Images/std_dev_formula.png)
 
-Before introducing the descriptive statistic measures explain to the class that despite every formula can be coded as a python function we are going to use the built-in stats formulas of Pandas.
+Emphasize that the basic definition of risk is the chance that an investment’s actual return will be different from what was expected; standard deviation is one common way to measure risk, thant's why it's important to understand this concept.
 
-Now it's time to show descriptive stats in action using Pandas, on this activity standard deviation will be use to analyze how risk change over time. Open the 08-Ins_StdDev_And_Risk.ipynb notebook and explain the following:
+* The tradeoff between risk and return could be analyzed as the balance between the lowest possible risk and the highest possible return, in terms of standard deviation, a higher standard deviation means a higher level of risk, as well as a higher potential return, and vice versa as can be seen on the image bellow.
+  ![Standard Deviation (Risk) and Return Tradeoff](Images/risk_return_tradeoff.png)
+
+Explain to the class that despite every formula can be coded as a python function we are going to use the built-in stats formulas of Pandas.
+
+Now it's time to show descriptive stats and risk analysis in action using Pandas, open the [08-Ins_StdDev_And_Risk.ipynb](Activities/08-Ins_StdDev_And_Risk/Solved/08-Ins_StdDev_And_Risk.ipynb) notebook and explain the following:
+
+* The dataset that is going to be analyzed contains stock prices from top tech companies along 2018.
+
+  ![Raw data from tech companies stock prices](Images/tech_stocks_raw_dataframe.png)
+
+* In order to assess risk and calculate descriptive statistics, the `date` column should be defined as the index.
+
+  ![Setting date column as index](Images/tech_stocks_date_index.png)
+
+* The first step towards analyzing risk will be to visually understand the risk using a box plot. On this plot it can be seen that Amazon (AMZN) it's the riskier stock due to data is more spread since it has a highest standard deviation, in contrast Microsoft (MSFT) the less riskier stock.
+
+  ![Tech stocks box plot](Images/tech_stocks_boxplot.png)
+
+* Before calculating the standard deviation, the mean, median and mode are calculated using the DataFrame built-in function. Note at the mode that each stock will have several modes on the results.
+
+  ![Mean, median and mode](Images/tech_stocks_mean_median_mode.png)
+
+* The daily standard deviation is calculated by simply using the `std()` function of the DataFrame.
+
+  ![Daily standard deviation](Images/tech_stocks_daily_std_dev.png)
+
+* Based in the daily standard deviation, looking the maximum and minimum values we can find the riskier and the less riskier stock respectively.
+
+  ![The riskier and less riskier stock](Images/tech_stock_riskier_less_riskier.png)
+
+* Finally the annualized standard deviation is calculated by multiplying the daily standard deviation by the squared root of the total of trading days (252 in the USA).
+
+  ![Annual risk calculation](Images/tech_stocks_annual_risk.png)
