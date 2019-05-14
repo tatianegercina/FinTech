@@ -1,0 +1,114 @@
+# Sales Analysis
+
+In this activity, you will read in a `sales.csv` file to calculate customer revenue averages.
+
+## Instructions
+
+Using the starter file provided, walk through the following steps.
+
+* Import the Pathlib and csv libraries
+
+* Set the `sales.csv` path
+
+* Initialize a `records` list
+
+* Read and iterate over the `sales.csv` using `csv.reader()`
+
+  * Append a new column 'average' to the header and add the header to the list of records
+
+  * Set the `name`, `count`, and `revenue` variables and convert strings to ints for numerical calculations
+
+  * Calculate the average, append the average to the row, and append the row to the list of records
+
+* Write the list of records contained in `records` to an output csvfile
+
+  * Loop over every record in `records` and use the `writerow()` function to write to an output csv file
+
+* Your output should look similar to the following:
+
+  ```python
+  Name,Count,Revenue,Average
+  Andrew,9,58,6.44
+  Phil,8,377,47.12
+  Madison,5,302,60.4
+  Sally,1,75,75.0
+  Tyler,1,334,334.0
+  Billy,7,146,20.86
+  Steve,1,178,178.0
+  Madison,7,313,44.71
+  Sarah,8,103,12.88
+  Tim,5,344,68.8
+  Andrew,5,349,69.8
+  Phil,8,61,7.62
+  Madison,4,196,49.0
+  Carl,1,374,374.0
+  Devon,9,220,24.44
+  Megan,9,321,35.67
+  Sarah,7,277,39.57
+  David,2,246,123.0
+  Sally,9,198,22.0
+  Tom,5,221,44.2
+  Andrew,1,191,191.0
+  Paul,5,399,79.8
+  Carl,1,300,300.0
+  Tim,1,345,345.0
+  Madison,4,202,50.5
+  John,4,305,76.25
+  Phil,6,249,41.5
+  Madison,7,113,16.14
+  Sally,6,256,42.67
+  ```
+
+## Challenge
+
+Calculate the aggregate average for each unique customer name and output to a csv file.
+
+* Initialize an `analysis` dictionary
+
+* Read and iterate over the `sales.csv` using `csv.reader()`, use an if-else statement to check:
+
+* If the customer name is not already in the `analysis` dictionary, initialize the nested key-value pairs `count` and `revenue`
+
+  ```python
+  analysis[name] = {
+      "count": count,
+      "revenue": revenue
+  }
+  ```
+
+* Else the customer name is already in the `analysis` dictionary, cumulatively add the `count` and `revenue` nested key-value pairs
+
+  ```python
+  analysis[name]['count'] += count
+      analysis[name]['revenue'] += revenue
+  ```
+
+* Set the output file path for `aggregate.csv`
+
+* Write the contents of the `analysis` dictionary to `output.csv` using `csv.writer()`. Make sure to add a header to the csv file.
+
+* Your output should look similar to the following:
+
+  ```
+  Name,Count,Revenue,Average
+  Andrew,15,598,39.87
+  Phil,22,687,31.23
+  Madison,27,1126,41.7
+  Sally,16,529,33.06
+  Tyler,1,334,334.0
+  Billy,7,146,20.86
+  Steve,1,178,178.0
+  Sarah,15,380,25.33
+  Tim,6,689,114.83
+  Carl,2,674,337.0
+  Devon,9,220,24.44
+  Megan,9,321,35.67
+  David,2,246,123.0
+  Tom,5,221,44.2
+  Paul,5,399,79.8
+  John,4,305,76.25
+  ```
+
+## Hints
+
+* Remember that the `csvwriter.writerow()` takes in lists!
