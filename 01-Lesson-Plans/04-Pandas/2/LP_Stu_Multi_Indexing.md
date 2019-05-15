@@ -4,21 +4,21 @@ In this activity, students will use hierarchical indexes to gain access to histo
 
 **Files:**
 
-* [indexing_fever.ipynb](Activities/06-Stu_Multi_Indexing/Unsolved/Core/indexing_fever.ipynb)
+* [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Unsolved/Core/indexing_fever.ipynb)
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Multi_Indexing/README.md)
+* [README.md](Activities/09-Stu_Multi_Indexing/README.md)
 
 ### 19. Instructor Do: Review Multi-Indexing (5 mins)
 
 **Files:**
 
-* [indexing_fever.ipynb](Activities/06-Stu_Multi_Indexing/Solved/Core/indexing_fever.ipynb)
+* [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexing_fever.ipynb)
 
 Walkthrough the solution and go over the following discussion points:
 
-* The `read_csv` accepts arguments that make creating indexes easy. Passing a column name to the read_csv `index_col` parameter will create a DataFrame index based off of the values in that Series. When working with Dates as indexes, it is common to set the following two `read_csv` parameters to `True`: `parse_dates` and `infer_datetime_format`.
+* The `read_csv` accepts arguments that make creating indexes easy. Passing a column name to the read_csv `index_col` parameter will create a DataFrame index based off of the values in that Series. When working with Dates as indexes, it is common to set the following two `read_csv` parameters to `True`: `parse_dates` and `infer_datetime_format`. These two date parameters for read_csv will eliminate the need to cast a date Series to a `datetime` object.
 
   ```python
   # Read csv data with dates
