@@ -420,7 +420,7 @@ In this activity, students will be given Harold's stock data and are asked to pe
 
 - - -
 
-### 9. Instructor Do: Review Data Cleansing (5 mins)
+### 9. Instructor Do: Review Data Cleaning (5 mins)
 
 **Files:**
 
@@ -654,7 +654,41 @@ Open the solution and explain the following:
 
 Ask for any remaining questions before moving on.
 
-### 13. Students Do: Market Analysis (20 mins)
+### 13. Instructor Do: Pandas Visualizations (10 mins)
+
+**Files:**
+
+* [visualization.ipynb](Activities/08-Ins_Pandas_Visualization/Solved/visualization.ipynb)
+
+Walk through the demo and explain the following:
+
+* Pandas makes visualization easy by including a DataFrame `plot()` function; the `plot()` function uses data from a DataFrame to set x and y-axis data points.
+
+* Plotting data without defining the index will only display the default index of each row in the DataFrame. In order to set the dates as the x-axis label, the `Date` column needs to be set as the index.
+
+  ![line-chart-without-index](Images/line-chart-without-index.png)
+
+* While setting the `Date` column as the DataFrame index, it's a good practice to convert date strings into datetime objects to have the flexibility of utilizing additional datetime functionality.
+
+  ![set-index](Images/set-index.png)
+
+* Make sure to drop the extra `Date` column after setting it as the index!
+
+  ![drop-column](Images/drop-column.png)
+
+* Plotting data with datetimes as the index now allows us to see the dates as the x-axis label of the line chart.
+
+  ![line-chart-with-index](Images/line-chart-with-index.png)
+
+* Use the `kind` parameter to the `plot()` function to specify different types of charts. The `plot()` function automatically defaults to generating a line chart.
+
+  ![bar-chart](Images/bar-chart.png)
+
+* Use the `figsize` parameter to the `plot()` function to increase or decrease the chart size. This is especially helpful when there are many x or y axis data points.
+
+  ![bar-chart-large](Images/bar-chart-large.png)
+
+### 14. Students Do: Market Analysis (20 mins)
 
 **Instructions:**
 
@@ -664,7 +698,7 @@ Ask for any remaining questions before moving on.
 
 * [market_analysis.ipynb](Activities/09-Stu_Pandas_Visualization/Unsolved/market_analysis.ipynb)
 
-### 14. Instructor Do: Review Market Analysis (5 mins)
+### 15. Instructor Do: Review Market Analysis (5 mins)
 
 **Files:**
 
@@ -717,7 +751,7 @@ Open the solution and explain the following:
   ![scatter_plot](Images/scatter.png)
 Ask for any remaining questions before moving on.
 
-### 15. Instructor Do: Returns (15 mins)
+### 16. Instructor Do: Returns (10 mins)
 
 **Files:**
 
@@ -775,7 +809,7 @@ Walk through the demo and explain the following:
 
   ![Plot of Cumulative Returns](Images/cumulative-return-plot.png)
 
-### 16. Students Do: Returns Over Date Ranges (20 mins)
+### 17. Students Do: Returns Over Date Ranges (20 mins)
 
 In this activity, Harold's manager wants Harold to analyze the last 10 years of historical price data for AMD and plot the daily returns over the last 1, 3, 5, and 10 year time periods. In addition, Harold's manager wants to see the differences in average daily returns for each time period to perhaps understand whether a short or long term perspective should be used in prospecting AMD as a potential candidate.
 
@@ -789,7 +823,7 @@ Help Harold analyze the last 10 years of AMD stock data.
 
 * [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Unsolved/returns_over_date_ranges.ipynb)
 
-### 17. Instructor Do: Returns Over Date Ranges (5 mins)
+### 18. Instructor Do: Returns Over Date Ranges (5 mins)
 
 **Files:**
 
@@ -826,7 +860,7 @@ Open the solution and explain the following:
 
 Ask for any remaining questions before moving on.
 
-### 28. Decompress
+### 19. Decompress
 
 Before ending class, leave some encouraging remarks, and give students a space to vocalize their thoughts.
 
