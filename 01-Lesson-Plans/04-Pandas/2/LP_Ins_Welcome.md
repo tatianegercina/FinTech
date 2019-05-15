@@ -45,21 +45,13 @@ Kick the class off with a returns refresher activity. This activity will be two 
   fb_ticker_data.head()
   ```
 
-* Calculate daily returns.
+* Slice data and calculate daily returns for Feb 2019.
 
   ```python
   # Calculate daily returns
-  fb_daily_returns = fb_ticker_data.pct_change()
-  fb_daily_returns
-  ```
-
-* Slice data and calculate daily returns for Q1 2019.
-
-  ```python
-  # Calculate daily returns for Q1 2019
-  fb_slice = fb_ticker_data.loc['2019-03-31':'2019-01-02']
+  fb_slice = fb_ticker_data.loc['2019-03-01':'2019-02-01']
   fb_quarter_returns = fb_slice.pct_change()
-  fb_quarter_returns.head()
+  fb_quarter_returns
   ```
 
 After the refresher is complete, ask students if they have any questions.
