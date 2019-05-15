@@ -34,10 +34,10 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 mins)
 
-Welcome students to the third day of Pandas. Today they will combine what they've learned so far on using Pandas to analyze individual stock returns and risk, and incorporate the notion of grouping stocks together and factoring in their relationships to each other and other portfolios to choose the optimal group of stocks, and therefore, the optimal portfolio with the best risk/reward.  
+Welcome students to the third day of Pandas. Today they will combine what they've learned so far on using Pandas to analyze individual stock returns and risk, and move onto the notion of grouping stocks together to acheive the best risk/reward ratio for their investments.  
 
-Mention to the class that today's focus is on using Pandas to make more informed (and better) investments! Students should feel invigorated as they are learning the techniques used by real financial analysts, traders, and portfolio managers.
+Mention to the class that today's focus is on using Pandas to make more informed (and better) investments! Students should feel invigorated as they are learning the techniques used by real financial analysts, quantitative traders, and portfolio managers.
 
-Explain that Pandas provides many advantages over Excel through it's data structures and built-in functions for analyzing data.
+Since today's class focuses more on groups of stocks rather than an individual stock, students should be prepared to push their mindset from that of analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.  
 
-Explain to students that they have already installed Pandas through Anaconda, so they don't need to install additional libraries by now. However, if they have issues running Pandas then they can use a free notebook by [Google Colab](https://colab.research.google.com/) and troubleshoot their installation with a TA during a break or office hours.
+Energize your students! Today is the day where students truly begin leveraging the power of Pandas to create truly insightful analyses that can benefit their skills in financial analysis/investing.
