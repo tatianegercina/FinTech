@@ -15,7 +15,8 @@ By the end of class, students will be able to:
 * Visualize trends through rolling statistics that minimize data noise.
 * Compare the volatility of a portfolio against the overall market.
 * Calculate expected returns of a portfolio utilizing custom weights
-* Build and optimize a portfolio and compare its performance to other portfolios.
+* Build and optimize a portfolio by factoring in risk, correlation, and returns
+* Compare a portfolio's performance to other portfolios.
 
 ### Instructor Notes
 
