@@ -1,0 +1,23 @@
+  Gym
+  -
+  Gym_Name
+  Address
+  City
+  Zipcode
+
+  Trainers
+  -
+  First_Name
+  Last_Name
+
+  Members
+  -
+  First_Name
+  Last_Name
+  Address
+  City
+
+  Payments
+  -
+  CreditCard_Info
+  Billing_Zip
