@@ -34,9 +34,9 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 mins)
 
-Welcome students to the first Pandas day, Today they will start discovering one of the most powerful libraries on python to analyse and manipulate data, so remark to the class that using Pandas is one of the most important superpowers as FinTech professionals.
+Welcome students to the third day of Pandas. Today they will combine what they've learned so far on using Pandas to analyze individual stock returns and risk, and incorporate the notion of grouping stocks together and factoring in their relationships to each other and other portfolios to choose the optimal group of stocks, and therefore, the optimal portfolio with the best risk/reward.  
 
-Mention to the class the fact that Pandas was created by [Wes McKinney](https://en.wikipedia.org/wiki/Wes_McKinney) to offer a high performance and flexible tool for performing quantitative analysis on financial data.
+Mention to the class that today's focus is on using Pandas to make more informed (and better) investments! Students should feel invigorated as they are learning the techniques used by real financial analysts, traders, and portfolio managers.
 
 Explain that Pandas provides many advantages over Excel through it's data structures and built-in functions for analyzing data.
 
