@@ -1,17 +1,21 @@
-### 2. Instructor Do: why Pandas (5 mins)
+### 2. Instructor Do: Intro to Portfolios (5 mins)
 
-**Files:**
+* What is an investment portfolio?
 
-* [Unit 4.1 Slides](https://docs.google.com/presentation/d/1OyHSaY2IlRT7ncexJgjimA7zulBWV67_Pr5XdS6kyYQ/edit?usp=sharing)
+  > An investment portfolio is the grouping of various financial assets such as equity, bonds, commodities, private investments, etc, or just that of a single financial asset such as equity.
 
-Open the slides and start talking about how awesome spreadsheets are (slide 4).
+* What is a stock portfolio?
 
-> "Since spreadsheets appeared in [1969 when LANPAR was first used by the plant budgeting operations of AT&T](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed the finance and quants analysis forever; however as more data became available and complexity increased, not everything is what it used to be."
+  > A stock portfolio is an investment portfolio consisting of only equity. Therefore a stock portflio consists of multiple stocks ranging from the 11 sectors of the equity market: financials, utilities, consumer discretionary, consumer staples, energy, healthcare, industrials, technology, telecom, materials, and real estate.
 
-Open the discussion (slides 5 and 6) by questioning the class about the pain points they have suffered themselves while dealing the data using a spreadsheet.
+* Why are stock portfolios better than single stock investments?
 
-You can start a collaborative document on Google Drive to allow students to share their experiences, you can keep this document as a time capsule to be opened at the end of the unit to assess what they have learned and how they can overcome now those pain points using Pandas.
+  > Single stock investments are risky in that they represent the "all eggs in one basket dilemma". If the performance of a single stock fails, then so does the entirety of one's investment (as it is only tied to that particular stock). However, by grouping multiple stocks together, the risk is minimized or spread throughout the portfolio as a single stock may fail but others may continue to succeed.
 
-Use the rest of the presentation to introduce Pandas as the light at the end of a dark tunnel, like a beautiful oasis in the middle of the desert, let them know and get exited about the infinite possibilities Pandas will offer them for data analysis as FinTech professionals. Remember to remark that Pandas has its origins on the financial realm.
+* What is a stock market index?
 
-If there is time, you can end the discussion by presenting some of the applications that Pandas has on different business areas like the ones [discussed here](https://data-flair.training/blogs/applications-of-pandas/).
+  > Similar to a stock portfolio, a stock market index is a collection of stocks used to gauge the performance of a particular area within the stock market. For example, a popular stock market index is the S&P 500, a collection of 500 large market cap U.S. stocks which serve as a general health indicator of the overall U.S. stock market.
+
+* Why do stock market indexes matter?
+
+  > Stock market indexes, like the S&P 500, serve as general health indicators for particular areas in the stock market; however, they also serve as benchmarks to compare performances of portfolios. For example, how does the performance of one's personal stock portfolio compare to that of the S&P 500 or general stock market?
