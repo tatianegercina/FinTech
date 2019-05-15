@@ -58,3 +58,9 @@ Walkthrough the solution and go over the following discussion points:
   goog_thirty_days_ago = nasdaq_data_grp.loc[(time_delta.year,time_delta.month)]
   print(goog_thirty_days_ago)
   ```
+
+* In order to use the `timedelta` function, the `timedelta` function needs to be imported. In order to get access to date functions that identify the current time and current day, the `date` object will also need to be imported from `datetime`. For example, `date.today()` can be used to determine today's date.
+
+  ```python
+  from datetime import datetime, date, timedelta
+  ```
