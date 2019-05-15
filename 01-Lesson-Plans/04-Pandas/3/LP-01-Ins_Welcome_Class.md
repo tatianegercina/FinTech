@@ -20,15 +20,13 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* After learning how to create basic scripts with Python, students are eager to start doing financial analysis beyond the capabilities of Microsoft Excel. In this lesson, students will discover an amazing library for financial analysis that has many benefits over using Excel. Learning about these features and seeing how easy it is to use them will be very exciting for students.
+* This lesson brings the heat on two fronts: math/statistics and financial domain knowledge. Not everyone will have extensive experience with either subject so be clear, visualize code/charts, and refer to the examples and notes if you need help!
 
-* Students will focus on the basics of Pandas and then learn how to apply Pandas to calculate and visualize daily returns. Not all students may have the financial background to understand returns, so leverage the finance savvy students to help their partners when they get stuck. Be sure to spend extra time explain the returns calculations as they will use this for the remainder of the week.
+* Remember that correlation does not imply causation. While two variables may move in tandem, or conversely, opposite to one another, it does not mean that one variable necessarily impacts the other. 
 
-* Indexing might be challenging for students, so live coding the examples and spending extra time in the review may be necessary to help them understand the fundamentals. Encourage students to practice these techniques after class to gain mastery.
+* Showcase the benefits of rolling statistics by comparing the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
 
-* Data cleaning is an art and not an exact science, so this class focuses on common data cleaning techniques. Each dataset will have unique characteristics and may or may not need the same cleaning steps, but these techniques will help them with most of their data cleaning challenges.
-
-If there are some curious students who want to learn more, [feel free to slack out this link](https://www.kaggle.com/chrisbow/kernels?sortBy=relevance&group=everyone&search=Cleaning+data+with+Python&page=1&pageSize=20&userId=1541110) with some guides and challenges to learn more about data cleaning using Python.
+* When dealing with portfolios and its characteristics - risk, return, correlation - try to speak in terms of money. If you started with $10,000, how would a poorly optimized portfolio compare with one that is not?
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
