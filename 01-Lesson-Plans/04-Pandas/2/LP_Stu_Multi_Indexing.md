@@ -30,17 +30,15 @@ Walkthrough the solution and go over the following discussion points:
 
   ![Multi_Indexing_Relationship.png](Images/Multi_Indexing_Relationship.png)
 
-* Grouping data is a way to naturally create indices. Grouping data by a `DatetimeIndex` creates two indices: one for the year and one for the month. Each of these can be accessed by using the `year` and `month` attributes.
-
-  ![Multi_Indexing_Groupby.png](Images/Multi_Indexing_Groupby.png)
-
-* Grouped data can be selected by using the `first` and `last` functions. These will return the first group of grouped items and the last group, respectively.
+* Grouping data is a way to naturally create indices. Grouping data by a `DatetimeIndex` creates two indices: one for the year and one for the month. Each of these can be accessed by using the `year` and `month` attributes. Grouped data can be selected by using the `first` and `last` functions. These will return the first group of grouped items and the last group, respectively.
 
   ```python
-  # Select first group of grouped data
+  # Set multi-index by grouping
   nasdaq_data_grp = nasdaq_data.groupby([nasdaq_data.index.year, nasdaq_data.index.month]).first()
   nasdaq_data_grp.head()
   ```
+
+  ![Multi_Indexing_Groupby.png](Images/Multi_Indexing_Groupby.png)
 
 * Once items have been grouped and indexed, data can be retrieved using those indices.
 
