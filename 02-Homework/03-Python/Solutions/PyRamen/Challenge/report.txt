@@ -1,0 +1,33 @@
+Ramen Analysis Report
+-----------------------------
+Summary Statistics:
+
+Total Number of Ramen Sold: 100,106 bowls
+Total Revenue Generated: $1,264,592.0
+Total Cost of Goods Sold: $590,806.0
+Net Profit Generated: $673,786.0
+
+Average Statistics:
+
+Number of Ramen Types: 11
+Average Number Sold per Ramen Type: 9,100.55 bowls
+Average Revenue Generated per Ramen Type: $114,962.91
+Average Cost of Goods Sold per Ramen Type: $53,709.64
+Average Net Profit Generated per Ramen Type: $61,253.27
+
+Min/Max Statistics:
+
+Most Popular: (9288, 'tonkotsu ramen')
+Least Popular: (8824, 'vegetarian curry + king trumpet mushroom ramen')
+Most Revenue Generating: (127820.0, 'soft-shell miso crab ramen')
+Least Revenue Generating: (100452.0, 'nagomi shoyu')
+Most Costly: (63910.0, 'soft-shell miso crab ramen')
+Least Costly: (45660.0, 'nagomi shoyu')
+Most Profitable: (72560.0, 'burnt garlic tonkotsu ramen')
+Least Profitable: (52944.0, 'vegetarian curry + king trumpet mushroom ramen')
+
+Filter Items:
+
+Overperforming Items: ['spicy miso ramen', 'tori paitan ramen', 'truffle butter ramen', 'tonkotsu ramen', 'vegetarian spicy miso', 'soft-shell miso crab ramen', 'burnt garlic tonkotsu ramen']
+Underperforming Items: ['shio ramen', 'miso crab ramen', 'nagomi shoyu', 'vegetarian curry + king trumpet mushroom ramen']
+
