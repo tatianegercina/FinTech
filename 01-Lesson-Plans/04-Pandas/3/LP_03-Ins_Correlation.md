@@ -1,25 +1,26 @@
-### 2. Instructor Do: Really Important Demo (10 mins) (Critical)
+### 2. Instructor Do: Correlation (10 mins)
+
+This activity introduces the student to the concept of correlation, or the positive or negative relationship between two variables. Two datasets have been chosen to showcase the example of correlation: ice cream sales and drowning incidents.
 
 **Files:**
 
-* [portfolio_returns.py](Activities/01-Ins_Portfolio_Returns/Solved/portfolio_returns.py)
-
-Explain that portfolios of stocks are used by investors to manage and diversify risk. They can choose a portfolio of different percentages of stocks to control and adjust their risk.
+* [correlation.ipynb](Activities/03-Ins_Correlation/Solved/correlation.ipynb)
 
 Walk through the solution and highlight the following:
 
-* To calculate portfolio returns, each stock's closing prices are added as a column to the final portfolio DataFrame.
+* What is correlation?
 
-  ![portfolio-dataframe.png](Images/portfolio-dataframe.png)
+  > Correlation is the measure of either a positive, negative, or netural (random) relationship between two variables. For example, there is often a positive correlation with height vs. weight (as you grow in height you tend to weigh more).
 
-* Portfolio Daily Returns are first calculated individually with `pct_change`, but the total portfolio return is calculated using the weighted average (how much of each stock contributes to the total portfolio).
+* When comparing the line trend of ice cream sales to drowning incidents, it is much harder to detect a relationship between the two. Therefore, use a scatterplot and set the `x` and `y` axis to the corresponding DataFrame columns. With a scatterplot, the relationship becomes much more apparent.
 
-  ![portfolio-returns.png](Images/portfolio-returns.png)
+  ![line-chart](Images/line-chart.png)
+  ![scatterplot](Images/scatterplot.png)
 
-* The portfolio returns can also be calculated using a dot product which is just a shortcut for the previous calculation. This can be handy for large portfolios with a lot of weights.
+* Use the `corr` function to calculate and output a matrix of correlation values for each column-to-column pair of a DataFrame. Correlation values range from `-1` to `0` to `+1`, where `-1` indicates a negative relationship (variables move inversely to one another), `0` indicates a neutral relationship (variables have no relationship and move randomly), and `+1` indicates a positive relationship (variables move in tandem with one another). 
 
-  ![dot-product.png](Images/dot-product.png)
+  ![correlation.png](Images/correlation.png)
 
-* The purpose of a portfolio is to control the amount of risk and diversity in an investment. In the following example, AMD has more volatility than MU, so changing the weights of the portfolios (how much of each stock in invested in) may affect the returns.
+* Remember that correlation does not imply causation! Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents` it does not mean that buying more ice cream causes people to drown. It merely states that there is a positive relationship between the numbers. Chances are, there is another factor at play which makes these two variables so positively correlated. One guess could be as temperatures increase (summer months) people tend to eat more ice cream and go swimming. 
 
-  ![risk-management.png](Images/risk-management.png)
+* In order to determine causation, regression analysis should be used where the premise is to find out how x predicts y.  
