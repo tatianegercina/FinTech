@@ -4,19 +4,18 @@
 
 ### Overview
 
-Today's class will focus on the notion of analyzing the performance of not just a single stock, but groups of stocks together -- otherwise known as a portfolio of stocks. Stock portfolios are an important strategy in the realm of investing as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma. However, in order to create an optimal portfolio that maximizes returns while minimizing risk, it's necessary to not only analyze the average return and risk of the portfolio overall, but also the correlation between stocks as well (how much one stock price changes with or against another). This lesson will teach students how to analyze the correlations of stocks against one another, calculate rolling statistics and volatility (beta) of stocks together, and optimize the composition of a portfolio and compare the performance against other portfolios.
+Today's class will focus on the notion of analyzing the performance of not just a single stock, but groups of stocks together -- otherwise known as a portfolio of stocks. Stock portfolios are an important strategy in the realm of investing as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma. However, in order to create an optimal portfolio that maximizes returns while minimizing risk, it's necessary to not only analyze the average return and risk of the portfolio overall, but also the correlation between stocks as well (how much one stock price changes with or against another). This lesson will teach students how to analyze the correlations of stocks against one another, calculate rolling statistics and volatility (beta) of stocks together, and optimize the composition of a portfolio and compare its performance against other portfolios.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Describe the benefits of Pandas over spreadsheets to manipulate data on financial use cases.
-* Explain what a dataframe is and how it differs from a series.
-* Create dataframes from CSV files and becoming confident using the basic commands to manipulate them.
-* Demonstrate the ability to clean data using the dataframe built-in commands.
-* Manipulate with confidence indexes on dataframes.
-* Describe the basic theory and calculations of returns using Pandas.
-* Create basic data visualizations with Pandas built-in functions to present preliminary results.
+* Describe the benefits of investing in stock portfolios over a single stock.
+* Explain what correlation is and how to calculate it in Pandas.
+* Visualize trends through rolling statistics that minimize data noise.
+* Compare the volatility of a portfolio against the overall market.
+* Calculate expected returns of a portfolio utilizing custom weights
+* Build and optimize a portfolio and compare its performance to other portfolios.
 
 ### Instructor Notes
 
