@@ -1,10 +1,10 @@
-## 4.1 Lesson Plan - Meet Pandas
+## 4.3 Lesson Plan - Stock Portfolios
 
 ---
 
 ### Overview
 
-Today's class will introduce students to a powerful analytics library called Pandas. Pandas is a software library designed specifically for data analytics and time series analysis, which are super useful features for quantitative analytics! This lesson will teach students how to create DataFrames, locate data with indexing, clean data, and create basic data visualizations to tackle financial tasks.
+Today's class will focus on the notion of analyzing the performance of not just a single stock, but groups of stocks together -- otherwise known as a portfolio of stocks. Stock portfolios are an important strategy in the realm of investing as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma. However, in order to create an optimal portfolio that maximizes returns while minimizing risk, it's necessary to not only analyze the average return and risk of the portfolio overall, but also the correlation between stocks as well (how much one stock price changes with or against another). This lesson will teach students how to analyze the correlations of stocks against one another, calculate rolling statistics and volatility (beta) of stocks together, and optimize the composition of a portfolio and compare the performance against other portfolios.
 
 ### Class Objectives
 
