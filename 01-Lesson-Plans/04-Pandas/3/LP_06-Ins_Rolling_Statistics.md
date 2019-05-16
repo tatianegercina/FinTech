@@ -22,7 +22,7 @@ Walk through the solution and explain the following:
 
 * Sometimes comparing different scopes of time can reveal insights that would not have been found otherwise. For example, comparing the 30-day rolling standard deviation to the 180-day rolling standard deviation of TSLA stock shows that although on a monthly scale there was a spike in volatility in late 2018, overall on a 6-month scale the highest spike in volatility was in late 2016, where the stock skyrocketed (remember standard deviation/volatility is how far data points deviate from the mean, this does not always necessarily have to be negative).
 
-  ![daily-close-tsla](Imagas/daily-close-tsla.png)
+  ![daily-close-tsla](Images/daily-close-tsla.png)
 
   ![rolling-std-dev-30](Images/rolling-std-dev-30.png)
 
