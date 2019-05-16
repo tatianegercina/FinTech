@@ -1,8 +1,8 @@
 ## Crypto Circus!
 
-The cryptocurrency market has experienced yet another wave of activity. Everyone's talking about Bitcoin and Ethereum. Close friends and family are asking for information and advice regarding investing. You even overheard an older couple talking about DOGE coin. It's been quite the circus. However, it's been 2 years since you last looked at your holdings on Binance, and your knowledge of trends is lacking.
+The cryptocurrency market has experienced yet another wave of activity. Everyone's talking about Bitcoin and Ethereum. Close friends and family are bombarding you with questions, requests for information, and advice regarding investing. You even overheard an older couple talking about DOGE coin. It's been quite the circus. However, it's been 2 years since you last looked at your holdings on Binance, and your knowledge of the trends is lacking.
 
-Conduct a price analysis to assess daily returns and determine whether or not crypto performance in the past 2 years has warranted future investment. Analyze data for Bitcoin, Ethereum, Bitcoin-cash, Ripple, and Litecoin.
+Conduct a price analysis to assess average, high, and low prices for each cryptocurrency. Determine whether or not crypto performance in the past 2 years has warranted future investment. Analyze data for Bitcoin, Ethereum, Bitcoin-cash, Ripple, and Litecoin.
 
 ## Instructions
 
