@@ -2,11 +2,9 @@
 
 **Files:**
 
-* [portfolio_returns.py](Activities/01-Ins_Portfolio_Returns/Solved/portfolio_returns.py)
+* [rolling_statistics.ipynb](Activities/06-Ins_Rolling_Statistics/Solved/rolling_statistics.ipynb)
 
-Explain that portfolios of stocks are used by investors to manage and diversify risk. They can choose a portfolio of different percentages of stocks to control and adjust their risk.
-
-Walk through the solution and highlight the following:
+Walk through the solution and explain the following:
 
 * To calculate portfolio returns, each stock's closing prices are added as a column to the final portfolio DataFrame.
 
