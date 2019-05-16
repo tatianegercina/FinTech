@@ -30,6 +30,6 @@ Open the solution and explain the following:
 
   ![correlation-heatmap-scaled](Images/correlation-heatmap-scaled.png)
 
-* Looking at the heatmap, it would appear as though AMD stock appears to be the least correlated out of any of the other semiconductor stocks. Therefore, AMD stock would be the best semiconduct stock to add to the existing portfolio.
+* Looking at the heatmap, it would appear as though AMD stock appears to be the least correlated out of any of the other semiconductor stocks. Therefore, AMD stock would be the best semiconductor stock to add to the existing portfolio.
 
   ![correlation-heatmap-amd](Images/correlation-heatmap-amd.png)
