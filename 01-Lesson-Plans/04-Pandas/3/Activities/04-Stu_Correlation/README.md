@@ -4,7 +4,7 @@ In this activity, Harold's company is looking to build a diversified stock portf
 
 As a result, Harold has been asked by his manager to research a set of 5 semiconductor stocks to add to the currently existing portfolio. In order to properly create a diversified portfolio which tends to minimize long-term volatility/risk, stocks within the portfolio should be as uncorrelated as possible so as to create a counter-balance effect (when some stocks fall in price, others may rise in price). 
 
-Therefore, use the Pandas library to help Harold analyze the 5 semiconductor stocks and choose the stock with the least correlation to `JNJ` and `HD`.
+Therefore, use the Pandas library to help Harold analyze 5 semiconductor stocks -- `INTC`, `AMD`, `MU`, `NVDA`, `TSM` -- and choose the stock with the least correlation to `JNJ` and `HD`.
 
 ## Instructions
 
@@ -12,26 +12,26 @@ Therefore, use the Pandas library to help Harold analyze the 5 semiconductor sto
 
   * Import libraries and dependencies
 
-  * Read in the `amd_stock_data.csv` as a pandas DataFrame.
+  * Read in the following as Pandas DataFrames:
 
-  * Display summary statistics of the input data, just to get a feel for your data.
+    * `HD.csv`
+    * `JNJ.csv`
+    * `INTC.csv`
+    * `AMD.csv`
+    * `MU.csv`
+    * `NVDA.csv`
+    * `TSM.csv`
 
-  * Drop the `volume`, `open`, `high`, and `low` columns.
+  * Use the `concat` function to combine the 7 DataFrames into a single combined DataFrame.
 
-  * Set the `date` column as the DataFrame index.
+  * Use the `corr` function on the combined DataFrame to calculate and output a correlation table of each stock-to-stock pair.
 
-  * Drop the extra 'date' column, as the index can now replaces it.
+  * Use the `heatmap` function from the seaborn library to create a heatmap of correlation values.
 
-  * Calculate daily returns.
+  * Use the `vmin` and `vmax` parameters to the `heatmap` function to adjust the correlation scale. Set `vmin` equal to -1 and `vmax` to 1.
 
-  * Use `loc()` to select subsets from the datetime index to create date ranges of 1, 3, 5, and 10 years. Remember that you can select date ranges using label indexing `loc[start_date:end_date]`
-
-  * Output summary statistics for each 1, 3, 5, and 10 year subset.
-
-  * Plot daily return charts for each 1, 3, 5, and 10 year subset. 
-
-  * Formulate insights regarding the variation in average daily returns for each time period. 
+  * From the heatmap, choose the stock with the least correlation to `JNJ` and `HD` that should be added to the existing portfolio.
 
 ## Hints
 
-* Analyze average daily returns from a numerical standpoint. Which time period has the highest average daily return and which has the lowest? What would that mean?
+* To learn more about diversification and how correlation amongst stocks in portoflios play a factor to minimizing risk, read more ![here](https://www.investopedia.com/terms/d/diversification.asp)  
