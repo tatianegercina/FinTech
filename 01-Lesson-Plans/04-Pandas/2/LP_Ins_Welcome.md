@@ -1,3 +1,56 @@
+## 4.2 Lesson Plan - Risk and Returns over Time
+
+### Overview
+
+Today's class will introduce students to the basics of time series analysis using Pandas to calculate risks and returns over time; learning Pandas time-series functionality will allow students to manage all of the financial data they will inevitably come across in FinTech. In this lesson, students will learn how to group data and apply multi-indexing on a DataFrame to analyze stock exchange data. Students will sort data, group data, leverage multi-indexing, calculate Sharpe Ratios, and compute standard deviation and risk.
+
+### Class Objectives
+
+By the end of class, students will be able to:
+
+* Demonstrate the ability to group data on a DataFrame to perform calculations over the grouped data.
+
+* Demonstrate the ability to manipulate datetime data on its different formats (single variables, dataframe columns, and series).
+
+* Identify the calculations that can be done with datetime data.
+Declare and use datetime indexes
+
+* Calculate standard deviation, mean and median with Pandas.
+
+* Interpret the meaning of standard deviation on risk use cases.
+
+* Describe how stocks deviate from the mean to determine risk.
+
+* Describe what sharpe ratios are.
+
+* Calculate sharpe ratios using Pandas and datframes.
+
+* Recognize what a benchmark portfolio is.
+
+* Interpret the how the S&P500 benchmark operate.
+
+* Conduct a benchmark using Pandas series and dataframes.
+
+* Calculate correlation and beta using Pandas series and dataframes.
+
+* Identify how to measure stock volatility with beta to compare volatility to the market.
+
+### Instructor Notes
+
+* Today's class is a quantum leap for students since they will move beyond the basics of Pandas to start learning some advance concepts to be used on risk analysis use cases.
+
+* This class introduces new financial concepts and how they can be coded and applied using Pandas, so spend enough time to understand them. Many of these will be foreign for some students. It is important that students are able to understand what they're doing and why they are doing it, from a financial point of view. Prepare by running the code examples before class.
+
+* Using `MultiIndex` and `groupby()` on Pandas is not trivial. Students will learn these concepts on a practical way by analyzing crypto currencies and stock exchange data, so make sure to underscore and reiterate how Pandas is lessening the burden of analysis by providing financial functions.
+
+* Multi-indexing and grouping are pretty abstract concepts without visual representation. When discussing these two concepts, make sure visuals are available so that students can negotiate the conceptual information with the visual representation.
+
+Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also encourage students to work with partners.
+
+* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+
+- - -
+
 ### 1. Instructor Do: Welcome (5 mins)
 
 Welcome the students to the second day of Pandas. The focus for this class will be learning how to sort, group, multi-index, and concatenate DataFrames. Students will also learn how to use Pandas functions to calculate standard deviation and risk and sharpe ratios.
