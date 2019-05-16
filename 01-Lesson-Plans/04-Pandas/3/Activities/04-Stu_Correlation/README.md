@@ -34,4 +34,4 @@ Therefore, use the Pandas library to help Harold analyze 5 semiconductor stocks 
 
 ## Hints
 
-* To learn more about diversification and how correlation amongst stocks in portoflios play a factor to minimizing risk, read more ![here](https://www.investopedia.com/terms/d/diversification.asp)  
+* To learn more about diversification and how correlation amongst stocks in portoflios play a factor to minimizing risk, read more [here](https://www.investopedia.com/terms/d/diversification.asp)  
