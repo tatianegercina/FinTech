@@ -1,4 +1,4 @@
-### 7. Students Do: Diversification (20 mins)
+### 7. Students Do: Simple Moving Averages (20 mins)
 
 **Instructions:**
 
@@ -8,7 +8,7 @@
 
 * [simple_moving_averages.ipynb](Activities/07_Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
 
-### 8. Instructor Do: Diversification (5 mins)
+### 8. Instructor Do: Simple Moving Averages (5 mins)
 
 **Files:**
 
