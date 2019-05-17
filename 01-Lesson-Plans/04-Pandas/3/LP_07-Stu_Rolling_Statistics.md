@@ -18,7 +18,7 @@ Open the solution and explain the following:
 
 * The `rolling` function and the `window` parameter set the time window for the calculated metric, in this case the average or `mean`. 
 
-  ![rolling-mean-calculation](Images/rolling_mean_calculation.png)
+  ![rolling-mean-calculation](Images/rolling-mean-calculation.png)
 
 * Notice the last `19` datetime indexes contain `NaN` values, this is because the `window` parameter has been set to `20` and therefore the last `19` indexes do not have enough data to support the `20` day time window. 
 
