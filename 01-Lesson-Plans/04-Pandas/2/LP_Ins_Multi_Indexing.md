@@ -4,7 +4,7 @@
 
 * [Multi Indexing Slides]()
 
-* [multi_indexing_.ipynb](Activities/08-Ins_Multi_Indexing/Solved/multi_indexing.ipynb)
+* [multi_indexing.ipynb](Activities/08-Ins_Multi_Indexing/Solved/multi_indexing.ipynb)
 
 Navigate to the Unit 4.2 slides and provide an overview of multi-indexing.
 
