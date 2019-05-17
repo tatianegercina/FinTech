@@ -4,7 +4,7 @@
 
 * [Multi Indexing Slides]()
 
-* [multi-index.ipynb](Activities/05-Ins_MultiIndex/Solved/multi_index.ipynb)
+* [multi_indexing_.ipynb](Activities/08-Ins_Multi_Indexing/Solved/multi_indexing.ipynb)
 
 Navigate to the Unit 4.2 slides and provide an overview of multi-indexing.
 
@@ -14,7 +14,7 @@ Navigate to the Unit 4.2 slides and provide an overview of multi-indexing.
 
 Live code how to create and use multiple indexes, as well as how to access data using more than one index.
 
-* Multi-indexing is commonly done when working with `Date` data. `Date` data is a unique type of index. It is considered a `DatetimeIndex`. `DatetimeIndexes` have the ability to inherently create multiple indexes. A `DatetimeIndex` can be created by passing a `Date` field to the `index_col` attribute when using `read_csv`. `parse_dates` and `infer_datetime_format` should also be included.
+* Multi-indexing is commonly done when working with `Date` data. `Date` data when used as an index is considered a `DatetimeIndex`. `DatetimeIndexes` have the ability to inherently create multi-indexing. A `DatetimeIndex` can be created by passing a `Date` field to the `index_col` attribute when using `read_csv`. `parse_dates` and `infer_datetime_format` should also be included.
 
     ```python
     # Read in data
@@ -23,7 +23,7 @@ Live code how to create and use multiple indexes, as well as how to access data 
     ticker_data.head()
     ```
 
-* `DatetimeIndexes` have the ability to be broken up into multiple indices based off of year and month. The `DatetimeIndex` object includes the attributes `index.year`, `index.month`, and `index.day`. Passing these to a `groupby` statement would create multiple indexes based off of each attribute.
+* `DatetimeIndexes` can be split into year, month, and day segments. The `DatetimeIndex` object includes the attributes `index.year`, `index.month`, and `index.day` for this. Passing these to a `groupby` statement will create multiple indexes based off of each attribute.
 
   ```python
   # Group by year, month, and day
@@ -53,7 +53,7 @@ Live code how to create and use multiple indexes, as well as how to access data 
 
   ![multi_index_agg.png](Images/multi_index_agg.png)
 
-* The `loc` function can be used to slice data from a DataFrame with multiple indexes. While not all indexes are required to be passed, the top level index needs to be specified (i.e. `year`). If a specific index value is not available, the `:` symbol can be used to slice all records. Essentially, indexes have to be accessed and used hierarchically (i.e. `year` > `month` > `day`).
+* The `loc` function can be used to slice data from a DataFrame with multiple indexes. While not all indexes are required to be passed, the top level index needs to be specified (i.e. `year`). If a specific index value is not available, the `:` symbol can be used to slice all records. Essentially, indexes have to be accessed and used hierarchically (i.e. `year` > `month` > `day`); lower level indexes are optional.
 
     ```python
     # Slice data for 4/12/2019 from first group
