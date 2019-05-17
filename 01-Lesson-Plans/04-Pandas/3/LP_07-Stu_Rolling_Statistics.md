@@ -1,25 +1,35 @@
-### 2. Instructor Do: Really Important Demo (10 mins) (Critical)
+### 7. Students Do: Diversification (20 mins)
+
+**Instructions:**
+
+* [README.md](Activities/04-Stu_Correlation/README.md)
 
 **Files:**
 
-* [portfolio_returns.py](Activities/01-Ins_Portfolio_Returns/Solved/portfolio_returns.py)
+* [market_analysis.ipynb](Activities/04-Stu_Correlation/Unsolved/diversification.ipynb)
 
-Explain that portfolios of stocks are used by investors to manage and diversify risk. They can choose a portfolio of different percentages of stocks to control and adjust their risk.
+### 8. Instructor Do: Diversification (5 mins)
 
-Walk through the solution and highlight the following:
+**Files:**
 
-* To calculate portfolio returns, each stock's closing prices are added as a column to the final portfolio DataFrame.
+* [diversification.ipynb](Activities/04-Stu_Correlation/Solved/diversification.ipynb)
 
-  ![portfolio-dataframe.png](Images/portfolio-dataframe.png)
+Open the solution and explain the following:
 
-* Portfolio Daily Returns are first calculated individually with `pct_change`, but the total portfolio return is calculated using the weighted average (how much of each stock contributes to the total portfolio).
+* Remember that the `corr` function compares values from each column-to-column pair. Therefore, make sure that the DataFrame is properly formatted on a column-by-column basis for analysis.
 
-  ![portfolio-returns.png](Images/portfolio-returns.png)
+  ![formatted-dataframe](Images/formatted-dataframe.png)
 
-* The portfolio returns can also be calculated using a dot product which is just a shortcut for the previous calculation. This can be handy for large portfolios with a lot of weights.
+* When viewing a correlation table, it's difficult to distinguish lower values from higher values. Therefore, using the `heatmap` function from the `seaborn` library makes it much easier to discern differences by using color gradients.
 
-  ![dot-product.png](Images/dot-product.png)
+  ![correlation-table](Images/correlation-table.png)
 
-* The purpose of a portfolio is to control the amount of risk and diversity in an investment. In the following example, AMD has more volatility than MU, so changing the weights of the portfolios (how much of each stock in invested in) may affect the returns.
+  ![correlation-heatmap](Images/correlation-heatmap.png)
 
-  ![risk-management.png](Images/risk-management.png)
+* Use the `vmin` and `vmax` parameters to the `heatmap` function to modify the scale of the heatmap. Correlation values range from `-1` to `0` to `+1` therefore the scale of the heatmap will need to reflect accordingly. 
+
+  ![correlation-heatmap-scaled](Images/correlation-heatmap-scaled.png)
+
+* Looking at the heatmap, it would appear as though AMD stock appears to be the least correlated out of any of the other semiconductor stocks. Therefore, AMD stock would be the best semiconductor stock to add to the existing portfolio.
+
+  ![correlation-heatmap-amd](Images/correlation-heatmap-amd.png)
