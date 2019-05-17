@@ -43,7 +43,7 @@ Live code how to create and use multiple indexes, as well as how to access data 
 
   ![multi_index_first.png](Images/multi_index_first.png)
 
-* Because multi-indexing involves grouping data, an aggregation also needs to be applied against the data. A common example is the `mean` function for calculating average. This is an alternative to using the `first` and `last` functions.
+* Because multi-indexing involves grouping data, an aggregation also needs to be applied against the data. A common example is the `mean` function for calculating average. This is an alternative to using the `first` and `last` functions. Because aggregate functions are being used, outputs represent summarized/aggregated records.
 
   ```python
   # Group by year and month and calculate average
@@ -65,7 +65,7 @@ Live code how to create and use multiple indexes, as well as how to access data 
 
   ```python
   # Slice data for April 2019
-  ticker_data_slice = ticker_data_grp_1.loc[2019,4]
+  ticker_data_slice = ticker_data_grp.loc[2019,4]
   ticker_data_slice.head()
   ```
 
