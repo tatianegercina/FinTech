@@ -31,3 +31,5 @@ Open the solution and explain the following:
 * When overlaying the STDs over the plot of the daily closing prices for NFLX, one can see the differences in volatility for different time scopes. 
 
   ![std-overlay](Images/std-overlay.png)
+
+* Because Harold's company is looking to invest long-term in NFLX, the `SMA100` and `STD100` should hold more emphasis. Based on the chart overlays, although there is a recent price uptrend in late 2018, long-term volatility has been high for the entirety of 2018 to 2019. Therefore, it may best to hold off on investing in NFLX long-term for now.
