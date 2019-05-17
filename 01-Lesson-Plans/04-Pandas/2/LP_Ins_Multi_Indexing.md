@@ -43,7 +43,7 @@ Live code how to create and use multiple indexes, as well as how to access data 
 
   ![multi_index_first.png](Images/multi_index_first.png)
 
-* Because multi-indexing involves grouping data, an aggregation also needs to be applied against the data. A common example is the `mean` function for calculating average.
+* Because multi-indexing involves grouping data, an aggregation also needs to be applied against the data. A common example is the `mean` function for calculating average. This is an alternative to using the `first` and `last` functions.
 
   ```python
   # Group by year and month and calculate average
@@ -53,7 +53,7 @@ Live code how to create and use multiple indexes, as well as how to access data 
 
   ![multi_index_agg.png](Images/multi_index_agg.png)
 
-* The `loc` function can be used to slice data from a DataFrame with multiple indexes. While not all indexes are required to be passed, the top level index needs to be specified (i.e. `year`). If a specific index value is not available, the `:` symbol can be used to slice all records. Essentially, indexes have to be accessed and used hierarchically (i.e. `year` > `month` > `day`); lower level indexes are optional.
+* The `loc` function can be used to slice data from a DataFrame with multiple indexes. While not all indexes are required to be passed, the top level index needs to be specified (i.e. `year`). When all indexes are passed to the `loc` function, only one record will be returned. If fewer than all indexes are provided, more than one record of data will be output. Essentially, indexes have to be accessed and used hierarchically (i.e. `year` > `month` > `day`).
 
     ```python
     # Slice data for 4/12/2019 from first group
@@ -62,3 +62,11 @@ Live code how to create and use multiple indexes, as well as how to access data 
     ```
 
   ![multi_index_slice.png](Images/multi_index_slice.png)
+
+  ```python
+  # Slice data for April 2019
+  ticker_data_slice = ticker_data_grp_1.loc[2019,4]
+  ticker_data_slice.head()
+  ```
+
+  ![slice_by_month.png](Images/slice_by_month.png)
