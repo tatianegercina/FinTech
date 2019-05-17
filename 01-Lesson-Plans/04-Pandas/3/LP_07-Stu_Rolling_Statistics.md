@@ -16,20 +16,18 @@
 
 Open the solution and explain the following:
 
-* Remember that the `corr` function compares values from each column-to-column pair. Therefore, make sure that the DataFrame is properly formatted on a column-by-column basis for analysis.
+* The `rolling` function and the `window` parameter set the time window for the calculated metric, in this case the average or `mean`. 
 
-  ![formatted-dataframe](Images/formatted-dataframe.png)
+  ![rolling-mean-calculation](Images/rolling_mean_calculation.png)
 
-* When viewing a correlation table, it's difficult to distinguish lower values from higher values. Therefore, using the `heatmap` function from the `seaborn` library makes it much easier to discern differences by using color gradients.
+* Notice the last `19` datetime indexes contain `NaN` values, this is because the `window` parameter has been set to `20` and therefore the last `19` indexes do not have enough data to support the `20` day time window. 
 
-  ![correlation-table](Images/correlation-table.png)
+  ![not-enough-window-data](Images/not-enough-window-data.png)
 
-  ![correlation-heatmap](Images/correlation-heatmap.png)
+* When overlaying the SMAs over the plot of the daily closing prices for NFLX, one can see the ways in which larger rolling time windows smooth data and show general trends as opposed to smaller rolling time windows that showcase more volatility.
 
-* Use the `vmin` and `vmax` parameters to the `heatmap` function to modify the scale of the heatmap. Correlation values range from `-1` to `0` to `+1` therefore the scale of the heatmap will need to reflect accordingly. 
+  ![sma-overlay](Images/sma-overlay.png)
 
-  ![correlation-heatmap-scaled](Images/correlation-heatmap-scaled.png)
+* When overlaying the STDs over the plot of the daily closing prices for NFLX, one can see the differences in volatility for different time scopes. 
 
-* Looking at the heatmap, it would appear as though AMD stock appears to be the least correlated out of any of the other semiconductor stocks. Therefore, AMD stock would be the best semiconductor stock to add to the existing portfolio.
-
-  ![correlation-heatmap-amd](Images/correlation-heatmap-amd.png)
+  ![std-overlay](Images/std-overlay.png)
