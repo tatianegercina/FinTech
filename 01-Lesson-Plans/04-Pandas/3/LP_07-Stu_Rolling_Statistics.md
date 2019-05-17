@@ -2,17 +2,17 @@
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Correlation/README.md)
+* [README.md](Activities/07_Stu_Rolling_Statistics/README.md)
 
 **Files:**
 
-* [market_analysis.ipynb](Activities/04-Stu_Correlation/Unsolved/diversification.ipynb)
+* [simple_moving_averages.ipynb](Activities/07_Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
 
 ### 8. Instructor Do: Diversification (5 mins)
 
 **Files:**
 
-* [diversification.ipynb](Activities/04-Stu_Correlation/Solved/diversification.ipynb)
+* [simple_moving_averages.ipynb](Activities/07_Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb)
 
 Open the solution and explain the following:
 
