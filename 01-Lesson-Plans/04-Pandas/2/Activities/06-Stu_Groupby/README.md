@@ -19,3 +19,7 @@ Using the [starter-file](Unsolved/crypto_circus.ipynb) provided, and the Nasdaq 
 5. Calculate `max` price across two years for each `cryptocurrency`.
 
 6. Calculate `min` price across two years for each `cryptocurrency`.
+
+7. Which coin would you recommend investing in?
+
+8. Which coin had the largest swing in prices?
