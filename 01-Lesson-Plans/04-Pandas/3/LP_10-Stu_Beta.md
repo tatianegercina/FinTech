@@ -1,35 +1,31 @@
-### 10. Students Do: Diversification (20 mins)
+### 10. Students Do: Beta Comparisons (20 mins)
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Correlation/README.md)
+* [README.md](Activities/10-Stu_Beta/README.md)
 
 **Files:**
 
-* [market_analysis.ipynb](Activities/04-Stu_Correlation/Unsolved/diversification.ipynb)
+* [beta_comparisons.ipynb](Activities/10-Stu_Beta/Unsolved/beta_comparisons.ipynb)
 
-### 11. Instructor Do: Diversification (5 mins)
+### 11. Instructor Do: Beta Comparisons (5 mins)
 
 **Files:**
 
-* [diversification.ipynb](Activities/04-Stu_Correlation/Solved/diversification.ipynb)
+* [beta_comparisons.ipynb](Activities/10-Stu_Beta/Solved/beta_comparisons.ipynb)
 
 Open the solution and explain the following:
 
-* Remember that the `corr` function compares values from each column-to-column pair. Therefore, make sure that the DataFrame is properly formatted on a column-by-column basis for analysis.
+* Remember that combining the separate DataFrames for each social media stock and the S&P 500 into a single DataFrame makes it easier to calculate the daily returns for each stock by simply calling the `pct_change` function on the combined DataFrame.
 
   ![formatted-dataframe](Images/formatted-dataframe.png)
 
-* When viewing a correlation table, it's difficult to distinguish lower values from higher values. Therefore, using the `heatmap` function from the `seaborn` library makes it much easier to discern differences by using color gradients.
+* The covariance quantifies the linear relationship between the each social media stock's returns and the returns of the overall market. 
 
-  ![correlation-table](Images/correlation-table.png)
+* The variance quantifies the extent to which each data point tends to differ from the mean. In this case, variance describes the extent to which each daily return tends to differ from the overall average daily returns of the S&P 500.
 
-  ![correlation-heatmap](Images/correlation-heatmap.png)
+* The beta quantifies the relative volatility of each social media stock's returns to that of the overall market. For example, if the S&P 500 returns `10%` for the year, TWTR with a beta of `1.52` should expect to return approx. `15.02%` for the year.
 
-* Use the `vmin` and `vmax` parameters to the `heatmap` function to modify the scale of the heatmap. Correlation values range from `-1` to `0` to `+1` therefore the scale of the heatmap will need to reflect accordingly. 
+* Plotting multiple rolling beta values for each social media stock shows the progression of relative volatility to the market over time.
 
-  ![correlation-heatmap-scaled](Images/correlation-heatmap-scaled.png)
-
-* Looking at the heatmap, it would appear as though AMD stock appears to be the least correlated out of any of the other semiconductor stocks. Therefore, AMD stock would be the best semiconductor stock to add to the existing portfolio.
-
-  ![correlation-heatmap-amd](Images/correlation-heatmap-amd.png)
+* Based on the overall beta calculations and the plotted chart, it is evident that `SNAP` holds the lowest beta or relative volatility to the market. Interestingly enough as well, while `FB` and `TWTR` took a steep plunge in early 2019, `SNAP` rose dramatically.
