@@ -6,7 +6,7 @@
 
 Navigate to the Unit 4.2 slides, and provide a brief overview of the `groupby` function.
 
-* Indicate that the `groupby` function is used to group values in a Series. This allows for data to be consolidated and summarized.
+* A common technique with data analysis is to summarize data by grouping similar values. An example of this might be to group sales data by country, or in our case, we may want to group the data by the stock ticker and count, sum, or average the results per stock.
 
 * The `groupby` function operates by segmenting a dataset into groups. Once the groups are created, a function or operation can be executed against each group (i.e. addition). The results for each group are then combined together to create the final output.
 
@@ -18,11 +18,13 @@ Demonstrate how to use the `groupby` function. Live code the below examples.
 
   ```python
   # Group by crypto data by cryptocurrency
-  sightings_by_state = ufo_sightings.groupby('cryptocurrency').count()
-  sightings_by_state
+  crypto_data_grp = crypto_data.groupby('cryptocurrency').count()
+  crypto_data_grp
   ```
 
-* The `groupby` function requires that a function or aggregation be applied against the grouped data. If a function or aggregation is not provided, the data will not be grouped or will be returned as a Pandas `DataFrameGroupBy` object.
+  ![group_count.png](Images/group_count.png)
+
+* The `groupby` function requires that a function or aggregation be applied against the grouped data. When a function is not provided, a `DataFrameGroupBy` object is returned instead of data. `DataFrameGroupBy` objects have to be aggregated in order to be used.
 
   ```python
   # Group by crypto data by cryptocurrency
