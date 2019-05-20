@@ -10,9 +10,13 @@ Walk through the solution and explain the following:
 
   > Covariance is a measure of the directional relationship between the returns on two risky assets. A positive covariance means that asset returns move together while a negative covariance means returns move inversely
 
+  ![covariance.png](Images/covariance.png)
+
 * What is variance?
 
   > Variance (σ2) is a measurement of the spread between numbers in a data set. It measures how far each number in the set is from the mean and is calculated by taking the differences between each number in the set and the mean, squaring the differences (to make them positive) and dividing the sum of the squares by the number of values in the set.
+
+  ![variance.png](Images/variance.png)
 
 * What is the difference between covariance and variance?
 
@@ -21,6 +25,8 @@ Walk through the solution and explain the following:
 * What is beta?
 
   > A beta coefficient is a measure of the volatility, or systematic risk, of an individual stock in comparison to the unsystematic risk of the entire market
+
+  ![beta.png](Images/beta.png)
 
 * What is the difference between beta and correlation?
 
