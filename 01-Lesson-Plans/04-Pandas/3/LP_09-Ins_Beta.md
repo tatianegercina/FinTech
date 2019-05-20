@@ -1,4 +1,4 @@
-### 9. Beta (10 mins)
+### 9. Instructor Demo: Beta (10 mins)
 
 **Files:**
 
@@ -8,23 +8,27 @@ Walk through the solution and explain the following:
 
 * What is covariance?
 
-  > Covariance is a measure of the directional relationship between the returns on two risky assets. A positive covariance means that asset returns move together while a negative covariance means returns move inversely
+  > Covariance is a measure of the directional relationship between two variables. For example, covariances between two financial assets such as stock returns would imply that both stock returns would move together with a positive covariance and move inversely with a negative covariance.
 
   ![covariance.png](Images/covariance.png)
 
 * What is variance?
 
-  > Variance (σ2) is a measurement of the spread between numbers in a data set. It measures how far each number in the set is from the mean and is calculated by taking the differences between each number in the set and the mean, squaring the differences (to make them positive) and dividing the sum of the squares by the number of values in the set.
+  > Variance is a measurement of the spread between each number in a data set compares to the overall mean. It is calculated by taking the differences between each number in the data set and the mean, squaring the differences and dividing the sum of the squares by the number of values in the set.
 
   ![variance.png](Images/variance.png)
 
 * What is the difference between covariance and variance?
 
-  > Variance and covariance are mathematical terms frequently used in statistics and probability theory. Variance refers to the spread of a data set around its mean value, while a covariance refers to the measure of the directional relationship between two random variables.
+  > Covariance refers to the measure of the directional relationship between two random variables while variance refers to the spread of a data set around its mean value.
+
+* What is the difference between covariance and correlation?
+
+  > Covariance is a measure of correlation. Correlation describes the directional relationship between two variables in a unit-free manner, while covariance describes the directional relationship between two variables with consideration for the type of data used (in this case, daily return values).
 
 * What is beta?
 
-  > A beta coefficient is a measure of the volatility, or systematic risk, of an individual stock in comparison to the unsystematic risk of the entire market
+  > Beta is the measure of the volatility of an individual stock in comparison to the volatility of the entire market.
 
   ![beta.png](Images/beta.png)
 
