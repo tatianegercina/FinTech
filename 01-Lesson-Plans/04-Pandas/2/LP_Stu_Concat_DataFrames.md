@@ -2,7 +2,7 @@
 
 **Instructions:**
 
-* [README.md](Activities/13-Concat_DataFrames/README.md)
+* [README.md](Activities/13-Stu_Concat_DataFrames/README.md)
 
 **Files:**
 
