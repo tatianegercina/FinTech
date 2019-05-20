@@ -1,4 +1,4 @@
-# Unit 9: SQL
+# Unit 10: SQL
 
 ## How to Install pgAdmin and PostgreSQL
 

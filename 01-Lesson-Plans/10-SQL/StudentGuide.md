@@ -1,4 +1,4 @@
-# Unit 9 - SQL
+# Unit 10 - SQL
 
 ## Objectives
 
@@ -18,9 +18,3 @@
 * [pgAdmin Documentation](https://www.pgadmin.org/docs/)
 
 * [PostgreSQL Tutorial](https://www.tutorialspoint.com/postgresql/)
-
-- - -
-
-### Copyright
-
-Data Boot Camp © 2019. All Rights Reserved.
