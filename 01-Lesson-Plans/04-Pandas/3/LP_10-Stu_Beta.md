@@ -36,4 +36,4 @@ Open the solution and explain the following:
 
   ![rolling-social-media-beta](Images/rolling-social-media-beta.png)
 
-* Based on the overall beta calculations and the plotted chart, it is evident that `SNAP` holds the lowest beta or relative volatility to the market. Interestingly enough as well, while `FB` and `TWTR` took a steep plunge in early 2019, `SNAP` rose dramatically.
+* Based on the overall beta calculations and the plotted chart, it is evident that `SNAP` holds the lowest beta or relative volatility to the market. Interestingly enough however, while `FB` and `TWTR` took a steep plunge in early 2019, `SNAP` rose dramatically.
