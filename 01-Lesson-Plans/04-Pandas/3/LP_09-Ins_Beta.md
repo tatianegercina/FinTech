@@ -1,4 +1,4 @@
-### 9. Instructor Demo: Beta (10 mins)
+### 9. Instructor Do: Beta (10 mins)
 
 **Files:**
 
