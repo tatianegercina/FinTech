@@ -1,4 +1,4 @@
-## 9.2 Lesson Plan: Advanced SQL Queries
+## 10.2 Lesson Plan: Advanced SQL Queries
 
 ### Overview
 
@@ -650,22 +650,6 @@ In this activity, students will continue to practice subqueries. Students can ei
 * Answer any questions before ending class.
 
 ### End Class
-
-- - -
-
-### Lesson Plan and Slideshow Instructor Feedback
-
-Please click the link below that best represents your overall feeling about today's class. It will link you to a form that allows you to submit additional (optional) feedback.
-
-* [:heart_eyes: Great](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=sql-day-2&lp_useful=great)
-
-* [:grinning: Like](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=sql-day-2&lp_useful=like)
-
-* [:neutral_face: Neutral](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=sql-day-2&lp_useful=neutral)
-
-* [:confounded: Dislike](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=sql-day-2&lp_useful=dislike)
-
-* [:triumph: Not Great](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=sql-day-2&lp_useful=not%great)
 
 - - -
 

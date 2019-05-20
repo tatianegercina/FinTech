@@ -1,4 +1,4 @@
-## 9.3 Lesson Plan: Data Modeling
+## 10.3 Lesson Plan: Data Modeling
 
 ### Overview
 
@@ -745,22 +745,6 @@ In this activity, students will further improve on the ERD by creating a physica
 * Consult your SSM to obtain checkpoint scores.
 
 ### End Class
-
-- - -
-
-### Lesson Plan and Slideshow Instructor Feedback
-
-Please click the link below that best represents your overall feeling about today's class. It will link you to a form that allows you to submit additional (optional) feedback.
-
-* [:heart_eyes: Great](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=9.3&lp_useful=great)
-
-* [:grinning: Like](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=9.3&lp_useful=like)
-
-* [:neutral_face: Neutral](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=9.3&lp_useful=neutral)
-
-* [:confounded: Dislike](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=9.3&lp_useful=dislike)
-
-* [:triumph: Not Great](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=9.3&lp_useful=not%great)
 
 - - -
 

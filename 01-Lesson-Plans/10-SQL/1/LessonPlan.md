@@ -1,4 +1,4 @@
-## 9.1 Lesson Plan: Introduction to SQL
+## 10.1 Lesson Plan: Introduction to SQL
 
 ### Overview
 
@@ -666,21 +666,6 @@ In this activity, students will create a new table and import data from a CSV fi
 * Answer any questions before ending class.
 
 ### End Class
-- - -
-
-### Lesson Plan and Slideshow Instructor Feedback
-
-Please click the link below that best represents your overall feeling about today's class. It will link you to a form that allows you to submit additional (optional) feedback.
-
-* [:heart_eyes: Great](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=sql-day-1&lp_useful=great)
-
-* [:grinning: Like](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=sql-day-1&lp_useful=like)
-
-* [:neutral_face: Neutral](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=sql-day-1&lp_useful=neutral)
-
-* [:confounded: Dislike](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=sql-day-1&lp_useful=dislike)
-
-* [:triumph: Not Great](https://www.surveygizmo.com/s3/4381674/DataViz-Instructor-Feedback?section=sql-day-1&lp_useful=not%great)
 
 - - -
 
