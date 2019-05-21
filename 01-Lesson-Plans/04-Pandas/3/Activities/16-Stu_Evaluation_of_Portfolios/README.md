@@ -29,7 +29,18 @@ Use the Pandas library to help Harold construct an optimized portfolio of stocks
 
   * Import libraries and dependencies
 
-  * Read in the `v_data.csv`, `ma_data.csv`, `gs_data.csv`, and `jpm_data.csv` as Pandas DataFrames and set the `date` column as a datetime index for each DataFrame.
+  * Read in the the following CSVs as Pandas DataFrames and set the `date` column as a datetime index for each DataFrame:
+
+    * `bk_data.csv`
+    * `fang_data.csv` 
+    * `jnj_data.csv` 
+    * `luv_data.csv`
+    * `mu_data.csv` 
+    * `nke_data.csv`
+    * `sbux_data.csv`
+    * `t_data.csv`
+    * `wdc_data.csv`
+    * `wrk_data.csv`
 
   * Combine the DataFrames so that the closing prices from each DataFrame are stacked column-by-column.
 
@@ -39,16 +50,30 @@ Use the Pandas library to help Harold construct an optimized portfolio of stocks
 
   * Use the `pct_change` function to calculate daily returns for each stock.
 
-  * Use the `std` function and multiply by `sqrt(252)` to calculate annualized volatility.
+  * Use the `corr` function and the `heatmap` function from the `seaborn` library to calculate and visualize the correlations for each stock pair, respectively.
 
-  * Set portfolio weights of `0.6`, `0.2`, `0.1`, and `0.05` from the least risky stock to the most risky stock.
+  * Drop highly correlated stocks (5 stocks should be dropped) and keep only uncorrelated stocks from the DataFrame.
 
-  * Use the `dot` function to multiply the weights by each column of daily returns to calculate the daily returns of the constructed portfolio.
+  * Use the `std` function and multiply by `sqrt(252)` to calculate annualized volatility and assess the riskiness of the uncorrelated stocks.
 
-  * Use the `cumprod` function to calculate the cumulative returns of the constructed portfolio.
+  * Use the `mean` and `std` function to calculate the annualized sharpe ratio and assess the reward-to-risk of the uncorrelated stocks.
 
-  * Plot the returns of a hypothetical `$10,000` investment in the constructed portfolio.
+  * Drop stocks with negative sharpe ratios (3 stocks should be dropped) from the DataFrame.
+
+  * Set an equal weight for each stock in the optimized portfolio (only stocks that are non-correlated and have positive sharpe ratios) and use the `dot` function to multiply weights by each stock's daily returns to output the optimized portfolio's daily returns.
+
+  * Calculate the optimized portfolio cumulative returns and multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
+
+  * Set an equal weight for each stock in an non-correlated stock portfolio (only stocks that are non-correlated but have positive and negative sharpe ratios) and use the `dot` function to multiply weights by each stock's daily returns to output the uncorrelated stock portfolio's daily returns.
+
+  * Calculate the non-correlated stock portfolio's cumulative returns and multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
+
+  * Set an equal weight for each stock in an unoptimized portfolio (all 10 stocks) and use the `dot` function to multiply weights by each stock's daily returns to output the optimized portfolio's daily returns.
+
+  * Calculate the unoptimized stock portfolio's cumulative returns and multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
+
+  * Overlay the investment trend of every portfolio on a single chart.
 
 ## Hints
 
-* To plot the returns of a `$10,000` investment, multiple the initial investment by the portfolio's cumulative returns over time.
+* Breathe easy! Take this activity step-by-step and remember that this activity is a culminating activity, therefore try to think about the big picture about what makes a particular stock portfolio a good investment.
