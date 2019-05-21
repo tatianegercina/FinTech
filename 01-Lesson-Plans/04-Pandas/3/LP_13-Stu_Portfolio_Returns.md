@@ -1,39 +1,23 @@
-### 10. Students Do: Beta Comparisons (20 mins)
+### 10. Students Do: Portfolio Allocations (20 mins)
 
 **Instructions:**
 
-* [README.md](Activities/10-Stu_Beta/README.md)
+* [README.md](Activities/13-Stu_Portfolio_Returns/README.md)
 
 **Files:**
 
-* [beta_comparisons.ipynb](Activities/10-Stu_Beta/Unsolved/beta_comparisons.ipynb)
+* [beta_comparisons.ipynb](Activities/13-Stu_Portfolio_Returns/Unsolved/portfolio_allocations.ipynb)
 
-### 11. Instructor Do: Beta Comparisons (5 mins)
+### 11. Instructor Do: Review Portfolio Allocations (5 mins)
 
 **Files:**
 
-* [beta_comparisons.ipynb](Activities/10-Stu_Beta/Solved/beta_comparisons.ipynb)
+* [portfolio_allocations.ipynb](Activities/13-Stu_Portfolio_Returns/Solved/portfolio_allocations.ipynb)
 
 Open the solution and explain the following:
 
-* Remember that combining the separate DataFrames for each social media stock and the S&P 500 into a single DataFrame makes it easier to calculate the daily returns for each stock by simply calling the `pct_change` function on the combined DataFrame.
+* Make sure to sort the DataFrame by index in ascending order when dealing with datetime indexes so as to start from the past to the present. This is particularly important when employing time-series functions such as `pct_change`.
 
   ![combined-dataframe](Images/combined-dataframe.png)
 
-* The covariance quantifies the linear relationship between the each social media stock's returns and the returns of the overall market.
-
-  ![social-media-covariance](Images/social-media-covariance.png)
-
-* The variance quantifies the extent to which each data point tends to differ from the mean. In this case, variance describes the extent to which each daily return tends to differ from the overall average daily returns of the S&P 500.
-
-  ![sp500-variance](Images/sp500-variance.png)
-
-* The beta quantifies the relative volatility of each social media stock's returns to that of the overall market. For example, if the S&P 500 returns `10%` for the year, TWTR with a beta of `1.52` should expect to return approx. `15.2%` for the year.
-
-  ![social-media-beta](Images/social-media-beta.png)
-
-* Plotting multiple rolling beta values for each social media stock shows the progression of relative volatility to the market over time.
-
-  ![rolling-social-media-beta](Images/rolling-social-media-beta.png)
-
-* Based on the overall beta calculations and the plotted chart, it is evident that `SNAP` holds the lowest beta or relative volatility to the market. Interestingly enough however, while `FB` and `TWTR` took a steep plunge in early 2019, `SNAP` rose dramatically.
+* Annualized volatility is calculated by taking multiplying standard deviation by the square root of the number of trading days in a year (252 days). Using the `sort_values` function quickly sorts each stock from least volatile to most volatile.
