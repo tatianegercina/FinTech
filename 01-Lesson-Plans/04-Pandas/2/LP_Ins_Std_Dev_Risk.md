@@ -8,11 +8,9 @@ Navigate to the 4.2 slides, and highlight the following:
 
 * A key aspect of analyzing portfolio and stock data is determining risk. Pandas provides a series of functions that can be used to calculate risk. One component of risk is calculating the `mean` performance or price of a stock. The second is calculating the `standard deviation`.
 
-* `Mean` can be used to determine the average value of a portfolio or stock overtime. This can serve as a baseline for measuring risk and value. A portfolio or stock doing better than average is more valuable. Investing in a portfolio or buying a stock doing below average is risky business.
+* `Mean` can be used to determine the average value of a portfolio/stock overtime. This can serve as a baseline for measuring risk and value. A portfolio/stock doing better than average is more valuable. Investing in a portfolio or buying a stock doing below average is risky business.
 
 * A common technique for measuring how far away an asset is from the `mean` is to calculate the `standard deviation`. `Standard deviation` identifies exactly how far away from the average price the value is. A low number indicates that the value is not far form the average. A high `standard deviation` means the value is an outlier.
-
-* Risk can be assessed by evaluating the `standard deviation`.
 
 Live code how to use Pandas to calculate `standard deviation` to evaluate risk:
 
@@ -20,7 +18,7 @@ Live code how to use Pandas to calculate `standard deviation` to evaluate risk:
 
   ![std_dev.png](Images/std_dev.png)
 
-* The `std` Pandas function can be used to determine the risk associated with a portfolio or stock. Behind the scenes, the `std` function calculates the mean/average, and then it evaluates how far away from the average the input is. The function returns a new DataFrame.
+* The `std` Pandas function can be used to determine the risk associated with a portfolio/stock. Behind the scenes, the `std` function calculates the mean/average, and then it evaluates how far away from the average the input is. The function returns a new DataFrame.
 
   ```python
   # Daily Standard Deviations
@@ -36,7 +34,7 @@ Live code how to use Pandas to calculate `standard deviation` to evaluate risk:
   dtype: float64
   ```
 
-* Portfolio and stock risk can be compared. Sorting the output from the `std` function in descending order (using `sort_values`) will display which portfolios/stocks have the most and least amounts of risk.
+* Sorting the output from the `std` function in descending order (using `sort_values`) will display which portfolios/stocks have the most and least amounts of risk.
 
   ```python
   # Identify the stock with the most and least risk
