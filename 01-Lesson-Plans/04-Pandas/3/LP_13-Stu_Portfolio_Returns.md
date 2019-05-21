@@ -20,4 +20,10 @@ Open the solution and explain the following:
 
   ![combined-dataframe](Images/combined-dataframe.png)
 
-* Annualized volatility is calculated by taking multiplying standard deviation by the square root of the number of trading days in a year (252 days). Using the `sort_values` function quickly sorts each stock from least volatile to most volatile.
+* Annualized volatility is calculated by multiplying standard deviation by the square root of the number of trading days in a year (252 days). Using the `sort_values` function quickly sorts each stock from least volatile to most volatile.
+
+* Portfolio weights represent the percentage of allocated capital to each stock. For example, a weight of `0.6` indicates that a single stock will be allocated `60%` of the capital within the portfolio. The sum of the weights should always equal `1`.
+
+* The `dot` function multiples the weights by the daily return of each columns (4 weights, 4 stocks) and sums the total for each row.
+
+* Cumulative returns indicates the total return profit or loss from a percentage standpoint. Multiplying an initial investment of `$10,000` by the series of cumulative returns outputs a trend over time of cumulative profit or loss.
