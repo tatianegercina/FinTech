@@ -1,8 +1,8 @@
 # Portfolio Allocations
 
-In this activity, Harold has been asked to research the following stocks: Visa (V), Mastercard (MA), Goldman Sachs (GS), and JP Morgan (JPM). Specifically, upper management wants to sort the stocks by risk profile/volatility and assign portfolio weights `0.6`, `0.2`, `0.1`, and `0.05` from the least risky stock to the most risky stock. Then, they want to see what the returns of a hypothetical $10,000 investment would be if invested in such a constructed portfolio over time.  
+In this activity, Harold has been asked to research the following stocks: Visa (V), Mastercard (MA), Goldman Sachs (GS), and JP Morgan (JPM). Specifically, upper management wants to sort the stocks by risk profile/volatility and assign portfolio weights `0.6`, `0.2`, `0.1`, and `0.05` from the least risky stock to the most risky stock. Then, they want to see what the returns of a hypothetical `$10,000` investment would be if invested in such a constructed portfolio over time.  
 
-Use the Pandas library to help Harold determine the risk profile of the 4 stocks, assign portfolio weights to each corresponding stock, and plot the returns of a $10,000 investment if invested in such a portfolio over time.
+Use the Pandas library to help Harold determine the risk profile of the 4 stocks, assign portfolio weights to each corresponding stock, and plot the returns of a `$10,000` investment if invested in such a portfolio over time.
 
 ## Instructions
 
