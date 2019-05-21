@@ -62,7 +62,7 @@ Live code how to use Pandas to calculate `standard deviation` to evaluate risk:
   dtype: float64
   ```
 
-* A key way to assess risk is to use the `plot.hist` function to visually review standard deviation trends. This will visually demonstrate the mean value, as well as the number an severity of the deviations.
+* A key way to assess risk is to use the `plot.hist` function to create a chart of standard deviation trends. This will visually demonstrate the mean value, as well as the number and severity of any deviations.
 
   ```python
   portfolio_a_std = np.random.normal(scale=0.5, size=10000)
