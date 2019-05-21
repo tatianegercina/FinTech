@@ -1,8 +1,8 @@
-# Beta Comparisons
+# Portfolio Allocations
 
-In this activity, Harold has been asked to calculate and plot the 30-day rolling betas for social media stocks Facebook (FB), Twitter (TWTR), and Snapchat (SNAP). Upper management is looking to potentially invest in a social media stock; however, they want to stay somewhat conservative and look toward the social media stock with the lowest beta comparatively. 
+In this activity, Harold has been asked to research the following stocks: Visa (V), Mastercard (MA), Goldman Sachs (GS), and JP Morgan (JPM). Specifically, upper management wants to sort the stocks by risk profile/volatility and assign portfolio weights `0.6`, `0.2`, `0.1`, and `0.05` from the least risky stock to the most risky stock. Then, they want to see what the returns of a hypothetical $10,000 investment would be if invested in such a constructed portfolio over time.  
 
-Use the Pandas library to help Harold calculate and plot the 30-day rolling betas for social media stocks and determine the social media stock with the lowest beta value.
+Use the Pandas library to help Harold determine the risk profile the 4 stocks, assign portfolio weights to the corresponding stock, and plot the returns of a $10,000 investment if invested in such a portfolio over time.
 
 ## Instructions
 
