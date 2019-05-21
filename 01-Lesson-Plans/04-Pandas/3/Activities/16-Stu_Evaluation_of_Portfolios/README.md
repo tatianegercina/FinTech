@@ -16,7 +16,7 @@ In this activity, upper management has narrowed down their candidate stocks for 
 Harold has been asked to research the candidate stocks and narrow the list down further to create an optimized portfolio. Specifically, upper management wants to create an optimized portfolio with the following characteristics:
 
 * Equal-weighted allocations
-* Only uncorrelated stocks
+* Only non-correlated stocks
 * Only postive return-to-risk ratio stocks (sharpe ratios)
 
 Then, they want to visualize what the returns of a hypothetical `$10,000` investment would be if invested in such a constructed portfolio over time as well as how such a portfolio compares to `$10,000` investments in other lesser-optimized portfolios. 
@@ -52,11 +52,11 @@ Use the Pandas library to help Harold construct an optimized portfolio of stocks
 
   * Use the `corr` function and the `heatmap` function from the `seaborn` library to calculate and visualize the correlations for each stock pair, respectively.
 
-  * Drop highly correlated stocks (5 stocks should be dropped) and keep only uncorrelated stocks from the DataFrame.
+  * Drop highly correlated stocks (5 stocks should be dropped) and keep only non-correlated stocks from the DataFrame.
 
   * Use the `std` function and multiply by `sqrt(252)` to calculate annualized volatility and assess the riskiness of the uncorrelated stocks.
 
-  * Use the `mean` and `std` function to calculate the annualized sharpe ratio and assess the reward-to-risk of the uncorrelated stocks.
+  * Use the `mean` and `std` function to calculate the annualized sharpe ratio and assess the reward-to-risk of the non-correlated stocks.
 
   * Drop stocks with negative sharpe ratios (3 stocks should be dropped) from the DataFrame.
 
@@ -64,7 +64,7 @@ Use the Pandas library to help Harold construct an optimized portfolio of stocks
 
   * Calculate the optimized portfolio cumulative returns and multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
 
-  * Set an equal weight for each stock in an non-correlated stock portfolio (only stocks that are non-correlated but have positive and negative sharpe ratios) and use the `dot` function to multiply weights by each stock's daily returns to output the uncorrelated stock portfolio's daily returns.
+  * Set an equal weight for each stock in an non-correlated stock portfolio (only stocks that are non-correlated but have positive and negative sharpe ratios) and use the `dot` function to multiply weights by each stock's daily returns to output the non-correlated stock portfolio's daily returns.
 
   * Calculate the non-correlated stock portfolio's cumulative returns and multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
 
