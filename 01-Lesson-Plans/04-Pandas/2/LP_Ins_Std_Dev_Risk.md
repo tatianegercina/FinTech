@@ -28,13 +28,13 @@ Live code how to use Pandas to calculate `standard deviation` to evaluate risk:
   ```
 
   ```
-AAPL    0.018106
-MSFT    0.017839
-GOOG    0.017724
-FB      0.023949
-AMZN    0.022768
-dtype: float64
-```
+  AAPL    0.018106
+  MSFT    0.017839
+  GOOG    0.017724
+  FB      0.023949
+  AMZN    0.022768
+  dtype: float64
+  ```
 
 * Portfolio and stock risk can be compared. Sorting the output from the `std` function in descending order (using `sort_values`) will display which portfolios/stocks have the most and least amounts of risk.
 
@@ -62,4 +62,20 @@ dtype: float64
   dtype: float64
   ```
 
-* `Standard Deviation` should be plotted to provide a visual representation of portfolio/stock price deviation.
+* A key way to assess risk is to use the `plot.hist` function to visually review standard deviation trends. This will visually demonstrate the mean value, as well as the number an severity of the deviations.
+
+  ```python
+  portfolio_a_std = np.random.normal(scale=0.5, size=10000)
+  portfolio_d_std = np.random.normal(scale=1.0, size=10000)
+  portfolio_i_std = np.random.normal(scale=1.5, size=10000)
+
+  portfolio_std = pd.DataFrame({
+      "Aggressive": portfolio_a_std,
+      "Defensive": portfolio_d_std,
+      "Income": portfolio_i_std
+  })
+
+  portfolio_std.plot.hist(stacked=True, bins=100)
+  ```
+
+  ![std_plot.png](Images/std_plot.png)
