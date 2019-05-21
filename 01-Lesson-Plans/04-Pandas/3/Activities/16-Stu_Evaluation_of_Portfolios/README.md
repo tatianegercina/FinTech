@@ -1,4 +1,4 @@
-# Constructing Portfolios
+# Constructing Optimized Portfolios
 
 In this activity, upper management has narrowed down their candidate stocks for a portfolio down to 10 stocks: 
 
