@@ -6,7 +6,7 @@
 
 **Files:**
 
-* [beta_comparisons.ipynb](Activities/13-Stu_Portfolio_Returns/Unsolved/portfolio_allocations.ipynb)
+* [portfolio_allocations.ipynb](Activities/13-Stu_Portfolio_Returns/Unsolved/portfolio_allocations.ipynb)
 
 ### 11. Instructor Do: Review Portfolio Allocations (5 mins)
 
