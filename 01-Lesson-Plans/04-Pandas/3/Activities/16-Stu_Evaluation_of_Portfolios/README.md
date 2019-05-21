@@ -1,6 +1,19 @@
-# Portfolio Allocations
+# Constructing Portfolios
 
-In this activity, Harold has been asked to research the following stocks: Visa (V), Mastercard (MA), Goldman Sachs (GS), and JP Morgan (JPM). Specifically, upper management wants to sort the stocks by risk profile/volatility and assign portfolio weights `0.6`, `0.2`, `0.1`, and `0.05` from the least risky stock to the most risky stock. Then, they want to see what the returns of a hypothetical `$10,000` investment would be if invested in such a constructed portfolio over time.  
+In this activity, upper management has narrowed down their candidate stocks for a portfolio down to 10 stocks: 
+
+  Bank of New York Mellon (BK)
+  Diamondback Energy (FANG)
+  Johnson & Johnson (JNJ)
+  Southwest Airlines Co (LUV)
+  Micron Technologies (MU)
+  Nike (NKE)
+  Starbucks (SBUX)
+  AT&T (T)
+  Western Digital (WDC)
+  Westrock (WRK) 
+
+Harold has been asked to research the candidate stocks and narrow the list down further to create an optimized portfolio. Specifically, upper management wants to have an *equal-weighted* portfolio of *uncorrelated* stocks with postive return-to-risk ratios (sharpe ratios). Then, they want to see what the returns of a hypothetical `$10,000` investment would be if invested in such a constructed portfolio over time.  
 
 Use the Pandas library to help Harold determine the risk profile of the 4 stocks, assign portfolio weights to each corresponding stock, and plot the returns of a `$10,000` investment if invested in such a portfolio over time.
 
