@@ -21,7 +21,7 @@ Harold has been asked to research the candidate stocks and narrow the list down 
 
 Then, they want to visualize what the returns of a hypothetical `$10,000` investment would be if invested in such a constructed portfolio over time as well as how such a portfolio compares to lesser-optimized portfolios. 
 
-Use the Pandas library to help Harold determine the risk profile of the 4 stocks, assign portfolio weights to each corresponding stock, and plot the returns of a `$10,000` investment if invested in such a portfolio over time.
+Use the Pandas library to help Harold determine the construct an optimized portfolio of stocks and plot and compare the returns of a `$10,000` investment in such a portfolio over time.
 
 ## Instructions
 
