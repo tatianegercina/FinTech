@@ -14,17 +14,17 @@ Use the Pandas library to help Harold plot the Simple Moving Averages and Rollin
 
   * Use the `rolling` function and set the `window` parameter to designate the time windows. Then use the `mean` function to calculate the following:
 
-  	* 20-Day Simple Moving Average
-	* 50-Day Simple Moving Average
-	* 100-Day Simple Moving Average 
+  * 20-Day Simple Moving Average
+  * 50-Day Simple Moving Average
+  * 100-Day Simple Moving Average
 
   * Overlay the SMAs on top of the plot for daily closing prices of NFLX.
 
   * Use the `rolling` function and set the `window` parameter to designate the time windows and use the `mean` function to calculate the following:
 
-  	* 20-Day Rolling Standard Deviation
-	* 50-Day Rolling Standard Deviation
-	* 100-Day Rolling Standard Deviation
+  * 20-Day Rolling Standard Deviation
+  * 50-Day Rolling Standard Deviation
+  * 100-Day Rolling Standard Deviation
 
   * Overlay the STDs on top of the plot for daily closing prices of NFLX.
 
