@@ -1,5 +1,7 @@
 ### 2. Instructor Do: Intro to Portfolios (5 mins)
 
+Engage the class with the following discussion around portfolios:
+
 * What is an investment portfolio?
 
   > An investment portfolio is the grouping of various financial assets such as equity, bonds, commodities, private investments, etc, or just that of a single financial asset such as equity.
