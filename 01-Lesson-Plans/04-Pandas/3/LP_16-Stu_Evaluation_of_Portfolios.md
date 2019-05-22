@@ -44,6 +44,6 @@ Open the solution and explain the following:
 
   * The non-correlated portfolio (non-correlated and positive/negative sharpe ratio stocks) performs the worst of the three portfolios, but maintains low volatility.
 
-  * The unoptimized portfolio (correlated/non-correlated and positive/negative sharpe ratio stocks) performs better than the non-correlated portfolio; however, is more volatile. Returns rose quicker but fell faster as well (notice the dip in early 2019).
+  * The unoptimized portfolio (correlated/non-correlated and positive/negative sharpe ratio stocks) performs better than the non-correlated portfolio; however, it is more volatile. Returns rose quicker but fell faster as well (notice the dip in early 2019).
 
   ![challenge-overlay](Images/challenge-overlay.png)
