@@ -36,7 +36,9 @@ By the end of class, students will be able to:
 
 * [Slideshow](placeholder)
 
-* Welcome students to the third day of Pandas. Today they will combine what they've learned so far on using Pandas to analyze individual stock returns and risk, and move onto the notion of grouping stocks together to acheive the best risk/reward ratio for their investments.  
+Welcome students to the third day of Pandas! Cover the following points:
+
+* Today students will combine what they've learned so far on using Pandas to analyze individual stock returns and risk, and move onto the notion of grouping stocks together to achieve the best risk/reward ratio for their investments.  
 
 * Mention to the class that today's focus is on using Pandas to make more informed (and better) investments! Students should feel invigorated as they are learning the techniques used by real financial analysts, quantitative traders, and portfolio managers.
 
