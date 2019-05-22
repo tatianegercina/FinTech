@@ -8,6 +8,6 @@ Using the [starter-file](Unsolved/joining_forces.ipynb) provided, and the data p
 
 1. Load CSV data into Pandas using `read_csv` for each file.
 
-2. Use the `concat` function to concat by `axis='rows'` and `join='inner'`.
+2. Use the `concat` function to concat the `fin_leaders_dues` DataFrame with `investors_leadership_dues` by `axis='rows'` and `join='inner'`.
 
-3. Use the `concat` function to concat by `axis='columns'`.
+3. Use the `concat` function to concat DataFrames `fin_leaders_mbr_status` and `investors_leadership_mbr_status` by `axis='columns'` and `join='inner'`.
