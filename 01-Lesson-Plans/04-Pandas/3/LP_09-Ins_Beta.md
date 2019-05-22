@@ -36,6 +36,8 @@ Walk through the solution and explain the following:
 
   > Beta tries to measures the effect of one variable impacting the other variable. Correlations measure the possible frequency of similarly directional movements without considerations of cause and effect. Beta is the slope of the two variables. Correlation is the strength of that linear relationship.
 
+  ![beta-vs-correlation.png](Images/beta-vs-correlation.png)
+
 * It's often a good practice to plot the progression of beta values for a stock over time using rolling windows to see it's historical volatility relative to the market.
 
   ![rolling-beta.png](Images/rolling-beta.png)
