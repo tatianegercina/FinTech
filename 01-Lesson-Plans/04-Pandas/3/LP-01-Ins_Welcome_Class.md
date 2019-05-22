@@ -22,17 +22,19 @@ By the end of class, students will be able to:
 
 * This lesson brings the heat on two fronts: math/statistics and financial domain knowledge. Not everyone will have extensive experience with either subject so be clear, visualize code/charts, and refer to the examples and notes if you need help!
 
-* Remember that correlation does not imply causation. While two variables may move in tandem, or conversely, opposite to one another, it does not mean that one variable necessarily impacts the other. 
-
 * Showcase the benefits of rolling statistics by comparing the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
 
 * When dealing with portfolios and its characteristics - risk, return, correlation - try to speak in terms of money. If you started with $10,000, how would a poorly optimized portfolio compare with one that is not?
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Class (5 mins)
+
+**Files:**
+
+* [Slideshow](placeholder)
 
 * Welcome students to the third day of Pandas. Today they will combine what they've learned so far on using Pandas to analyze individual stock returns and risk, and move onto the notion of grouping stocks together to acheive the best risk/reward ratio for their investments.  
 
