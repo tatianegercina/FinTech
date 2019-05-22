@@ -20,15 +20,23 @@ Open the solution and explain the following:
 
 * Stock correlation describes the linear relationship between the returns of two stocks and indicates whether returns of both stocks tend to move in tandem, inversely, or random (no correlation). The `corr` function used in conjunction with the `heatmap` function from the `seaborn` library makes it easy to spot the highly correlated stocks. In this case, the daily returns of `BK`, `FANG`, `JNJ`, `LUV`, and `MU` appear to be highly correlated and can be dropped from the DataFrame.
 
+  ![challenge-correlation](Images/challenge-correlation.png)
+
 * Stock volatility describes the riskiness of stocks and indicates the range of variability or dispersion returns will be from the average expected return. The `std` function can be used to calculate the volatility of stocks.
 
+  ![challenge-volatility](Images/challenge-volatility.png)
+
 * Sharpe ratios describe the riskiness of stocks relative to their returns. Therefore, sharpe ratios measure risk-to-reward and indicate *value-driven* investments. The `mean` and `std` functions can be used to calculate the sharpe ratios of stocks.
+
+  ![challenge-sharpe-ratios](Images/challenge-sharpe-ratios.png)
 
 * The sum of weights to a portfolio must equal `1`. Therefore, for example, a stock portfolio of `2` stocks would allocated `0.5` and `0.5` to each stock.
 
 * The `dot` function multiples each weight by the daily returns of each stock to calculate the portfolio's daily returns.
 
 * The `cumprod` function calculates the cumulative returns of a portfolio's daily returns over time. Multiplying an initial investment of `$10,000` by the series of cumulative returns for a portfolio expresses returns in terms of money.
+
+  ![challenge-evaluate](Images/challenge-evaluate.png)
 
 * The overlay chart of corresponding `$10,000` investments in each respective portfolio over time describes the following:
 
@@ -37,3 +45,5 @@ Open the solution and explain the following:
   * The non-correlated portfolio (non-correlated and positive/negative sharpe ratio stocks) performs the worst of the three portfolios, but maintains low volatility.
 
   * The unoptimized portfolio (correlated/non-correlated and positive/negative sharpe ratio stocks) performs better than the non-correlated portfolio; however, is more volatile. Returns rose quicker but fell faster as well (notice the dip in early 2019).
+
+  ![challenge-overlay](Images/challenge-overlay.png)
