@@ -37,3 +37,7 @@ Calculate the sharpe ratio for your entire portfolio rather than for each crypto
 4. Compare Harold's portfolio's sharpe ratio with your own to determine if his is greater.
 
 5. Which portfolio is the smartest investment, based off of risk to reward ratio?
+
+### Hint
+
+When completing steps 1 and 3, use the `values` attribute when calculating `std` and `mean`. For example, `harold_returns.values.std()`
