@@ -1,5 +1,7 @@
 ### 10. Students Do: Portfolio Allocations (20 mins)
 
+In this activity, students will work in pairs to research a group of stocks, find the least to most volatile stock, set portfolio weights to each stock according to risk profile, and perform an analysis of a `$10,000` investment in the portfolio over time. 
+
 **Instructions:**
 
 * [README.md](Activities/13-Stu_Portfolio_Returns/README.md)
