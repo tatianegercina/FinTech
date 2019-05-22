@@ -30,7 +30,7 @@ Open the solution and explain the following:
 
   ![challenge-sharpe-ratios](Images/challenge-sharpe-ratios.png)
 
-* The sum of weights to a portfolio must equal `1`. Therefore, for example, a stock portfolio of `2` stocks would allocated `0.5` and `0.5` to each stock.
+* The sum of weights to a portfolio must equal `1`. Therefore, for example, a stock portfolio of `2` stocks would allocate `0.5` and `0.5` to each stock.
 
 * The `dot` function multiples each weight by the daily returns of each stock to calculate the portfolio's daily returns.
 
