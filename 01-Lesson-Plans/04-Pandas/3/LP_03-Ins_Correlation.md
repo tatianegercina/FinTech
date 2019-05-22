@@ -23,4 +23,6 @@ Walk through the solution and highlight the following:
 
 * Remember that correlation does not imply causation! Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents` it does not mean that buying more ice cream causes people to drown. It merely states that there is a positive relationship between the numbers. Chances are, there is another factor at play which makes these two variables so positively correlated. One guess could be as temperatures increase (summer months) people tend to eat more ice cream and go swimming. 
 
-* In order to determine causation, regression analysis should be used where the premise is to find out how x predicts y.  
+* In order to determine causation, regression analysis should be used where the premise is to find out how x predicts y.
+
+* When applied to stock investments, investigating the correlations of returns among stocks in a portfolio can help analysts properly diversify their portfolios and mitigate risk/volatility. This is due to the fact that non-correlated stocks in a portfolio tend to cancel out large swings in volatility, as one stock may increase in price while another may decrease in price rather than all stocks increasing in price and all stocks decreasing in price.
