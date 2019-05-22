@@ -2,7 +2,7 @@
 
 **Files:**
 
-* [beta.ipynb](Activities/09-Beta/Solved/beta.ipynb)
+* [beta.ipynb](Activities/09-Ins_Beta/Solved/beta.ipynb)
 
 Walk through the solution and explain the following:
 
