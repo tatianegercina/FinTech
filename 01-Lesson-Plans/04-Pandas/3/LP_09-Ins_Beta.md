@@ -2,7 +2,7 @@
 
 **Files:**
 
-* [beta.py](Activities/09-Beta/Solved/beta.py)
+* [beta.ipynb](Activities/09-Beta/Solved/beta.ipynb)
 
 Walk through the solution and explain the following:
 
