@@ -16,7 +16,7 @@
 
 Open the solution and explain the following:
 
-* The `rolling` function and the `window` parameter set the time window for the calculated metric, in this case the average or `mean`. 
+* The `rolling` function and the `window` parameter set the time window for the calculated metric, in this case the average or `mean`.
 
   ![rolling-mean-calculation](Images/rolling-mean-calculation.png)
 
@@ -32,4 +32,4 @@ Open the solution and explain the following:
 
   ![std-overlay](Images/std-overlay.png)
 
-* Because Harold's company is looking to invest long-term in NFLX, the `SMA100` and `STD100` should hold more emphasis. Based on the chart overlays, although there is a recent price uptrend in late 2018, long-term volatility has been high for the entirety of 2018 to 2019. Therefore, it may best to hold off on investing in NFLX long-term for now.
+* Because Harold's company is looking to invest long-term in NFLX, the `SMA100` and `STD100` should hold more emphasis. Based on the chart overlays, although there is a recent price uptrend in late 2018, long-term volatility has been high for the entirety of 2018 to 2019. Therefore, it may be best to hold off on investing in NFLX long-term for now.
