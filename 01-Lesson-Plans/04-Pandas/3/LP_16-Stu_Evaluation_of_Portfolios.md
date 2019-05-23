@@ -2,17 +2,17 @@
 
 **Instructions:**
 
-* [README.md](Activities/16-Stu_Evaluation_of_Portfolios/README.md)
+* [README.md](Activities/16-Stu_Portfolio_Planner_Part_II/README.md)
 
 **Files:**
 
-* [portfolio_evaluation.ipynb](Activities/16-Stu_Evaluation_of_Portfolios/Unsolved/portfolio_evaluation.ipynb)
+* [portfolio_evaluation.ipynb](Activities/16-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb)
 
 ### 18. Instructor Do: Review Constructing Optimized Portfolios (5 mins)
 
 **Files:**
 
-* [portfolio_evaluation.ipynb](Activities/16-Stu_Evaluation_of_Portfolios/Solved/portfolio_evaluation.ipynb)
+* [portfolio_evaluation.ipynb](Activities/16-Stu_Portfolio_Planner_Part_II/Solved/portfolio_planner_part_2.ipynb)
 
 Open the solution and explain the following:
 

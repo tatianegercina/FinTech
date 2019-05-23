@@ -1,6 +1,6 @@
-# Constructing Optimized Portfolios
+# Portfolio Planner Part II
 
-In this activity, upper management has narrowed down their candidate stocks for a portfolio down to 10 stocks: 
+In this activity, Harold has been asked to revisit the 10 stocks he previously researched: 
 
 * Bank of New York Mellon (BK)
 * Diamondback Energy (FANG)
@@ -13,7 +13,7 @@ In this activity, upper management has narrowed down their candidate stocks for 
 * Western Digital (WDC)
 * Westrock (WRK) 
 
-Harold has been asked to research the candidate stocks and narrow the list down further to create an optimized portfolio. Specifically, upper management wants to create an optimized portfolio with the following characteristics:
+Specifically, upper management wants to go beyond just evaluating stocks by volatility/risk, they now want to create a more optimized portfolio with the following characteristics:
 
 * Equal-weighted allocations
 * Only non-correlated stocks
