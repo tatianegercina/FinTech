@@ -1,4 +1,4 @@
-# Unit 11 - Taking stock of the news
+# Unit 11 - Tales from the Crypto
 
 ![Stock Sentiment](Images/sentimental.jpeg)
 
