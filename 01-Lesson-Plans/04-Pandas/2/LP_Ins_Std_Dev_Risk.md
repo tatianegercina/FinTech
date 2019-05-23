@@ -60,20 +60,31 @@ Live code how to use Pandas to calculate `standard deviation` to evaluate risk:
   dtype: float64
   ```
 
-* A key way to assess risk is to use the `plot.hist` function to create a chart of standard deviation trends. This will visually demonstrate the mean value, as well as the number and severity of any deviations.
+* A key way to assess risk is to use the `plot.hist` function to create a chart of standard deviation trends. This will visually demonstrate the mean value, as well as the number and severity of any deviations for each element being plotted (i.e. each portfolio).
 
   ```python
   portfolio_a_std = np.random.normal(scale=0.5, size=10000)
-  portfolio_d_std = np.random.normal(scale=1.0, size=10000)
-  portfolio_i_std = np.random.normal(scale=1.5, size=10000)
+  portfolio_b_std = np.random.normal(scale=1.0, size=10000)
+  portfolio_c_std = np.random.normal(scale=1.5, size=10000)
 
   portfolio_std = pd.DataFrame({
-      "Aggressive": portfolio_a_std,
-      "Defensive": portfolio_d_std,
-      "Income": portfolio_i_std
+      "0.5": portfolio_a_std,
+      "1.0": portfolio_b_std,
+      "1.5": portfolio_c_std
   })
 
   portfolio_std.plot.hist(stacked=True, bins=100)
   ```
 
   ![std_plot.png](Images/std_plot.png)
+
+* Another way to visualize `standard deviation` is with a `box plot`. `Box plots` display the total spread of the data, and they can be created using the `plot.box` Pandas function. Box plots have what are known as `whiskers`. `Whiskers` represent the range/spread of the data. Data elements that extend beyond the `whiskers` are considered outliers.
+
+  ```python
+  # Plot box plot
+  portfolio_std.plot.box()
+  ```
+
+  ![std_dev_box.png](Images/std_dev_box.png)
+
+* The take away from these charts, which should be emphasized to students, is that the greater the spread, the greater the risk. The greater the risk, the greater the potential for earnings and lost.
