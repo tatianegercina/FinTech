@@ -48,26 +48,6 @@ Use SQL to find an answer for the following questions and tasks:
 * What are the top 5 merchant categories that are more prone to be hacked using small transactions?
 * Once you have a query that can be reused, a good practice is to create a view for analyst. Create a view for each of the previous queries.
 
-There are several ways to connect your python scripts with a database. `sqlalchemy` is one of the most popular packages to interact with databases from python. Install `sqlalchemy` by typing `pip install sqlalchemy` on your terminal (or Git Bash) and use the following code to create a connection to your PostgreSQL database and load data directly to a Pandas DataFrame.
-
-```python
-# initial imports
-from sqlalchemy import create_engine
-import pandas as pd
-
-# create a connection to the database
-engine = create_engine('postgresql://user:password@localhost:5432/your_db_name')
-
-# load select query result into a DataFrame
-data = pd.read_sql('SELECT * FROM helloworld', engine)
-```
-
-Once you have the data from PostgreSQL on a DataFrame you can visually analyze your data. Continue your analysis creating the following plots.
-
-* Create a line plot showing a time series from the transactions on may 8th, 2018 from card holder `id` 1980 and 2015. What difference do you observe between the consumption patters? Does the difference could be a fraudulent transaction? Explain your rationale.
-
-* Create a line plot showing four lines representing the daily transactions (from Sunday to Saturday) for card holder `id` 1978 on each week of march 2018. By observing the consumption patters, do you see any anomalies? Write your own conclusions about your insights.
-
 ### Challenge
 
 Another approach to identify fraudulent transactions is looking for _outliers_ on the data. _Standard deviation_ or _quartiles_ are often used to detect _outliers_.
