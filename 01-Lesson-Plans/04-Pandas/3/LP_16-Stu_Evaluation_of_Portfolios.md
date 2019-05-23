@@ -8,13 +8,13 @@ In this activity, students will work in pairs to research a group of 10 stocks, 
 
 **Files:**
 
-* [portfolio_evaluation.ipynb](Activities/16-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb)
+* [portfolio_planner_part_2.ipynb](Activities/16-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb)
 
 ### 18. Instructor Do: Review Portfolio Planner Part II (5 mins)
 
 **Files:**
 
-* [portfolio_evaluation.ipynb](Activities/16-Stu_Portfolio_Planner_Part_II/Solved/portfolio_planner_part_2.ipynb)
+* [portfolio_planner_part_2.ipynb](Activities/16-Stu_Portfolio_Planner_Part_II/Solved/portfolio_planner_part_2.ipynb)
 
 Open the solution and explain the following:
 
