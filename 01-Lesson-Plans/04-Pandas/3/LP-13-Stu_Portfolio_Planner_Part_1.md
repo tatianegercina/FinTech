@@ -1,20 +1,20 @@
-### 10. Students Do: Portfolio Allocations (20 mins)
+### 10. Students Do: Portfolio Planner Part I (20 mins)
 
-In this activity, students will work in pairs to research a group of stocks, find the least to most volatile stock, set portfolio weights to each stock according to risk profile, and perform an analysis of a `$10,000` investment in the portfolio over time. 
+In this activity, students will work in pairs to research a group of 10 stocks, find the least to most volatile stocks, drop the top 5 highly volatile stocks, set portfolio weights to the remaining stocks according to risk profile, and perform an analysis of a `$10,000` investment in the portfolio over time. 
 
 **Instructions:**
 
-* [README.md](Activities/13-Stu_Portfolio_Returns/README.md)
+* [README.md](Activities/13-Stu_Portfolio_Planner_Part_I/README.md)
 
 **Files:**
 
-* [portfolio_allocations.ipynb](Activities/13-Stu_Portfolio_Returns/Unsolved/portfolio_allocations.ipynb)
+* [portfolio_planner_part_1.ipynb](Activities/13-Stu_Portfolio_Planner_Part_I/Unsolved/portfolio_planner_part_1.ipynb)
 
-### 11. Instructor Do: Review Portfolio Allocations (5 mins)
+### 11. Instructor Do: Portfolio Planner Part I (5 mins)
 
 **Files:**
 
-* [portfolio_allocations.ipynb](Activities/13-Stu_Portfolio_Returns/Solved/portfolio_allocations.ipynb)
+* [portfolio_planner_part_1.ipynb](Activities/13-Stu_Portfolio_Planner_Part_I/Solved/portfolio_planner_part_1.ipynb)
 
 Open the solution and explain the following:
 
@@ -26,7 +26,7 @@ Open the solution and explain the following:
 
   ![assess-riskiness](Images/assess-riskiness.png)
 
-* Portfolio weights represent the percentage of allocated capital to each stock. For example, a weight of `0.6` indicates that a single stock will be allocated `60%` of the capital within the portfolio. The sum of the weights should always equal `1`.
+* Portfolio weights represent the percentage of allocated capital to each stock. For example, a weight of `0.5` indicates that a single stock will be allocated `50%` of the capital within the portfolio. The sum of the weights should always equal `1`.
 
 * The `dot` function multiples the weights by the daily return of each columns (4 weights, 4 stocks) and sums the total for each row.
 
