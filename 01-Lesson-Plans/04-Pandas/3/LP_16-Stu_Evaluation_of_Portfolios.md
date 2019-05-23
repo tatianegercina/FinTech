@@ -1,4 +1,4 @@
-### 17. Students Do: Constructing Optimized Portfolios (20 mins)
+### 17. Students Do: Portfolio Planner Part II (20 mins)
 
 **Instructions:**
 
@@ -8,7 +8,7 @@
 
 * [portfolio_evaluation.ipynb](Activities/16-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb)
 
-### 18. Instructor Do: Review Constructing Optimized Portfolios (5 mins)
+### 18. Instructor Do: Review Portfolio Planner Part II (5 mins)
 
 **Files:**
 
