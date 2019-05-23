@@ -1,4 +1,4 @@
-# Portfolio Allocations
+# Portfolio Planner Part I
 
 In this activity, Harold has been asked to research the following 10 stocks: 
 
