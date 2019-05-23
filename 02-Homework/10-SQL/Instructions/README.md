@@ -22,7 +22,11 @@ In this homework assignment, you will be accomplishing three main tasks:
 
 ## Files
 
-* TBD
+* [card_holder.csv](Data/card_holder.csv)
+* [credit_card.csv](Data/credit_card.csv)
+* [merchant.csv](Data/merchant.csv)
+* [merchant_category.csv](Data/merchant_category.csv)
+* [transaction.csv](Data/transaction.csv)
 
 ## Instructions
 
@@ -45,15 +49,19 @@ Use SQL to find an answer for the following questions and tasks:
 * How can you isolate (or group) the transactions of each card holder?
 * Normally one takes breakfast between 7am and 9am, What are to top 100 higher transactions between this time period? do you see some fraudulent or anomalous transactions? what is your rationale for considering that there are fraudulent transactions?
 * Some fraudsters hack a credit card by making several small payments (let's say less than $2.00) that are normally ignored by cardholders, count the transactions that are less than $2.00 per card holder, is there some evidence to state that some credit card has been hacked? Explain you rationale.
-* What are the top 5 merchant categories that are more prone to be hacked using small transactions?
+* What are the top 5 merchants that are more prone to be hacked using small transactions?
 * Once you have a query that can be reused, a good practice is to create a view for analyst. Create a view for each of the previous queries.
 
-### Challenge
+### Submission
 
-Another approach to identify fraudulent transactions is looking for _outliers_ on the data. _Standard deviation_ or _quartiles_ are often used to detect _outliers_.
+* Create an image file of your ERD.
 
-Read the following articles on outliers detection and code a function to identify weekly or daily anomalies for any card holder.
+* Create a .sql file of your table schemata.
 
-* [How to Calculate Outliers](https://www.wikihow.com/Calculate-Outliers)
-* [Removing Outliers Using Standard Deviation in Python](https://www.kdnuggets.com/2017/02/removing-outliers-standard-deviation-python.html)
-* [How to Use Statistics to Identify Outliers in Data](https://machinelearningmastery.com/how-to-use-statistics-to-identify-outliers-in-data/)
+* Create a .sql file of your queries.
+
+* Create and upload a repository with the above files to GitHub and post a link on BootCamp Spot.
+
+### Hint
+
+* For comparing time and dates take a look to the [date/time functions and operators](https://www.postgresql.org/docs/8.0/functions-datetime.html) at the PostgreSQL documentation.
