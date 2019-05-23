@@ -1,14 +1,25 @@
 # Proof of Authority Development Chain
 
-Remember `puppeth`? Great! We'll be using it to create a custom testnet blockchain, similar to what was built in class,
-using the Proof of Authority consensus algorithm. This is a much more effective algorithm for development or private
-networks, since it does not require any mining/hash race, but rather assigns "Authority" of producing or "sealing" new
-blocks to specific addresses on the network. This is more like a role based access control system in non-blockchain or
-centralized environments or applications.
+## Background
+
+Remember `puppeth`? Great!
+
+You have been tasked by your manager to create a new testnet for the company, so that developers can deploy their
+applications in-house without paying fees, and without relying on a public testnet. However, she mentioned that she
+doesn't want to waste any energy mining! She wants you to create nodes for the two DevOps engineers that will
+take over management of the chain. You will need to use the Clique Proof of Authority consensus mechanism.
+
+This is a much more effective algorithm for development or private networks, since it does not require any mining,
+but rather assigns "Authority" of producing or "sealing" new blocks to specific addresses on the network.
+This is more like a role based access control system in non-blockchain or centralized environments or applications,
+so your DevOps engineers will be able to maintain the chain without worry of users changing any rules.
 
 In this assignment, you will be creating an out-of-the-box development blockchain that anyone can use as a playground
 for blockchain applications without having to deploy to the mainnet and pay fees to do so, and without mining.
 This also allows for offline development, as there is no need to rely on a live testnet such as Ropsten or Kovan.
+
+You should be able to forge the commands necessary to run both nodes in conjunction, and to hand each DevOps engineer
+their designated command. You should be able to run both nodes locally and test the chain as well.
 
 Tokens inherently have no value here, so we will provide pre-configured accounts and nodes for easy setup.
 
@@ -90,3 +101,9 @@ Be sure to include any preliminary setup information, such as installing depende
 - Upload the code including the `networkname.json` and node folders.
 
 ### Remember, *never* share your mainnet private keys! This is a testnet, so coins have no value here!
+
+### Challenge mode
+
+- Create a separate `bootnode` dedicated to connecting peers together
+
+- There will be a new DevOps engineer joining the team, add an additional sealer address to the network on the fly!
