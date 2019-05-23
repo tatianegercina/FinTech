@@ -1,6 +1,6 @@
 ### 17. Students Do: Portfolio Planner Part II (20 mins)
 
-In this activity, students will work in pairs to research a group of 10 stocks, evaluate correlations and sharpe ratios of stocks and filter by only non-correlated and positive sharpe ratio stocks, set equal-weighted portfolio allocations to the remaining stocks, and perform an analysis of a `$10,000` investment in the portfolio over time. Then compare the `$10,000` investment in the portfolio to other `$10,000` investments in lesser optimized portfolios.
+In this activity, students will work in pairs to research a group of 10 stocks, evaluate correlations and sharpe ratios of stocks, filter by only non-correlated and positive sharpe ratio stocks, set equal-weighted portfolio allocations to the remaining stocks, and perform an analysis of a `$10,000` investment in the portfolio over time. Then compare the `$10,000` investment in the portfolio to other `$10,000` investments in lesser optimized portfolios.
 
 **Instructions:**
 
