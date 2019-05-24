@@ -11,9 +11,9 @@ In this activity, Harold has been asked to research the following 10 stocks:
 * Starbucks (SBUX)
 * AT&T (T)
 * Western Digital (WDC)
-* Westrock (WRK) 
+* Westrock (WRK)
 
-Specifically, upper management wants to sort the stocks by risk profile/volatility, filter out the top 5 stocks with the highest volatility, and assign the remaining stocks portfolio weights of `0.5`, `0.2`, `0.15`, `0.10`, and `0.05` from the least risky stock to the most risky stock, respectively. Then, they want to see what the returns of a hypothetical `$10,000` investment would be if invested in such a constructed portfolio over time.  
+Specifically, upper management wants to sort the stocks by risk profile/volatility, filter out the top 5 stocks with the highest volatility, and assign the remaining stocks portfolio weights of `0.5`, `0.2`, `0.15`, `0.10`, and `0.05` from the least risky stock to the most risky stock, respectively. Then, they want to see what the returns of a hypothetical `$10,000` investment would be if invested in such a constructed portfolio over time.
 
 Use the Pandas library to help Harold determine the risk profile of the 10 stocks, drop the top 5 highly volatile stocks, assign portfolio weights to each corresponding stock, and plot the returns of a `$10,000` investment if invested in such a portfolio over time.
 
@@ -26,10 +26,10 @@ Use the Pandas library to help Harold determine the risk profile of the 10 stock
   * Read in the following CSVs:
 
     * `bk_data.csv`
-    * `fang_data.csv` 
-    * `jnj_data.csv` 
+    * `fang_data.csv`
+    * `jnj_data.csv`
     * `luv_data.csv`
-    * `mu_data.csv` 
+    * `mu_data.csv`
     * `nke_data.csv`
     * `sbux_data.csv`
     * `t_data.csv`

@@ -32,7 +32,7 @@ Open the solution and explain the following:
 
   ![portfolio-planner-part-1-weights](Images/portfolio-planner-part-1-weights.png)
 
-* Cumulative returns indicates the total return profit or loss from a percentage standpoint. Multiplying an initial investment of `$10,000` by the series of cumulative returns outputs a trend over time of cumulative profit or loss.
+* Cumulative returns indicate the total return profit or loss from a percentage standpoint. Multiplying an initial investment of `$10,000` by the series of cumulative returns outputs a trend over time of cumulative profit or loss.
 
   ![portfolio-planner-cumulative-returns](Images/portfolio-planner-cumulative-returns.png)
 
