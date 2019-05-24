@@ -405,11 +405,11 @@ Open the solution and explain the following:
 
 * The 10 stocks will need to be filtered down by keeping only non-correlated stocks and stocks with positive sharpe ratios. This is to maximize diversification of the portfolio (and therefore minimize volatility) and maximize the returns-to-risk of the optimized portfolio, respectively.
 
-* Stock correlation describes the linear relationship between the returns of two stocks and indicates whether returns of both stocks tend to move in tandem, inversely, or random (no correlation). The `corr` function used in conjunction with the `heatmap` function from the `seaborn` library makes it easy to spot the highly correlated stocks. In this case, the daily returns of `BK`, `FANG`, `JNJ`, `LUV`, and `MU` appear to be highly correlated and can be dropped from the DataFrame.
+* Stock correlation describes the linear relationship between the returns of two stocks and indicates whether returns of both stocks tend to move in tandem, inversely, or random (no correlation). The `corr` function used in conjunction with the `heatmap` function from the `seaborn` library makes it easy to spot the highly correlated stocks. In this case, the daily returns of `FANG` and `JNJ` appear to be highly correlated and can be dropped from the DataFrame.
 
   ![part-2-correlation](Images/part-2-correlation.png)
 
-* Unliked volatility which measures risk, sharpe ratios describe the riskiness of stocks relative to their returns. Therefore, sharpe ratios measure risk-to-reward and indicate *value-driven* investments. The `mean` and `std` functions can be used to calculate the sharpe ratios of stocks.
+* Unlike volatility which measures risk, sharpe ratios describe the riskiness of stocks relative to their returns. Therefore, sharpe ratios measure risk-to-reward and indicate *value-driven* investments. The `mean` and `std` functions can be used to calculate the sharpe ratios of stocks.
 
   ![part-2-sharpe-ratios](Images/part-2-sharpe-ratios.png)
 
