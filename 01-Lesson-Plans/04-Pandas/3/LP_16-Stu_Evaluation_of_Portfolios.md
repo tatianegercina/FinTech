@@ -1,6 +1,6 @@
 ### 17. Students Do: Portfolio Planner Part II (20 mins)
 
-In this activity, students will work in pairs to research a group of 10 stocks, evaluate correlations and sharpe ratios of stocks, filter by only non-correlated and positive sharpe ratio stocks, set equal-weighted portfolio allocations to the remaining stocks, and perform an analysis of a `$10,000` investment in the portfolio over time. Then compare the `$10,000` investment in the portfolio to other `$10,000` investments in lesser optimized portfolios.
+In this activity, students will work in pairs to continue where they left off in part I of evaluating portfolios. Students will now evaluate correlations and sharpe ratios of the 10 stocks, filter by only non-correlated and positive sharpe ratio stocks, set equal-weighted portfolio allocations to the remaining stocks, and perform an analysis of a `$10,000` investment in the portfolio over time. Then compare the `$10,000` investment in the portfolio to other `$10,000` investments in lesser optimized portfolios.
 
 **Instructions:**
 
@@ -24,28 +24,22 @@ Open the solution and explain the following:
 
   ![challenge-correlation](Images/challenge-correlation.png)
 
-* Stock volatility describes the riskiness of stocks and indicates the range of variability or dispersion returns will be from the average expected return. The `std` function can be used to calculate the volatility of stocks.
-
-  ![challenge-volatility](Images/challenge-volatility.png)
-
-* Sharpe ratios describe the riskiness of stocks relative to their returns. Therefore, sharpe ratios measure risk-to-reward and indicate *value-driven* investments. The `mean` and `std` functions can be used to calculate the sharpe ratios of stocks.
+* Unliked volatility which measures risk, sharpe ratios describe the riskiness of stocks relative to their returns. Therefore, sharpe ratios measure risk-to-reward and indicate *value-driven* investments. The `mean` and `std` functions can be used to calculate the sharpe ratios of stocks.
 
   ![challenge-sharpe-ratios](Images/challenge-sharpe-ratios.png)
 
-* The sum of weights to a portfolio must equal `1`. Therefore, for example, a stock portfolio of `2` stocks would allocate `0.5` and `0.5` to each stock.
-
-* The `dot` function multiples each weight by the daily returns of each stock to calculate the portfolio's daily returns.
-
-* The `cumprod` function calculates the cumulative returns of a portfolio's daily returns over time. Multiplying an initial investment of `$10,000` by the series of cumulative returns for a portfolio expresses returns in terms of money.
+* An equal-weighted portfolio consists of the same weight for every stock in the portfolio (totaling `1`). For example, an equal-weighted stock portfolio of `5` stocks would have weights of `0.2`, `0.2`, `0.2`, `0.2`, and `0.2` to each stock.
 
   ![challenge-evaluate](Images/challenge-evaluate.png)
 
 * The overlay chart of corresponding `$10,000` investments in each respective portfolio over time describes the following:
 
-  * The optimized portfolio (non-correlated and positive sharpe ratio stocks) performs the best over time and appears fairly consistent over time.
+  * The non-correlated and sharpe-ratio optimized portfolio performs the best of the four portfolios and consistently acheives higher returns with minimized volatility.
 
-  * The non-correlated portfolio (non-correlated and positive/negative sharpe ratio stocks) performs the worst of the three portfolios, but maintains low volatility.
+  * The non-correlated (diversifed) portfolio performs the second worst of the four portfolios and manages to minimize volatility but at the expense of higher returns.
 
-  * The unoptimized portfolio (correlated/non-correlated and positive/negative sharpe ratio stocks) performs better than the non-correlated portfolio; however, it is more volatile. Returns rose quicker but fell faster as well (notice the dip in early 2019).
+  * The original/unoptimized portfolio performs the second best of the four portfolios and acheives higher returns that but at the expense of more volatility. For example, returns rose quicker but fell faster as well (notice the dip in early 2019).
+
+  * The risk-optimized portfolio performs the worst of the four portfolios and acheives minimal volatility but at the expense of returns.
 
   ![challenge-overlay](Images/challenge-overlay.png)
