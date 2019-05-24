@@ -1,5 +1,7 @@
 # Multi-Blockchain Wallet in Python
 
+![newtons-coin-cradle](https://image.shutterstock.com/z/stock-photo-bitcoin-on-newton-s-cradle-boosts-and-accelerates-other-cryptocurrencies-and-back-and-forth-687394909.jpg)
+
 ## Background
 
 Your new startup is focusing on building a portfolio management system that supports not only traditional assets
