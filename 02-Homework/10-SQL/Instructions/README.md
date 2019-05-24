@@ -54,15 +54,15 @@ Use SQL to find an answer for the following questions and tasks:
 
 Perform a visual data analysis of fraudulent transactions using `pandas` and `sqlalchemy` by creating the following plots:
 
-* Create a line plot showing a time series from the transactions on may 8th, 2018 from card holder `id` 1980 and 2015. What difference do you observe between the consumption patters? Does the difference could be a fraudulent transaction? Explain your rationale.
+* Create a line plot showing a time series from the transactions along all the year from card holder `id` 18 and 2. What difference do you observe between the consumption patters? Does the difference could be a fraudulent transaction? Explain your rationale.
 
-* Create a line plot showing four lines representing the daily transactions (from Sunday to Saturday) for card holder `id` 1978 on each week of march 2018. By observing the consumption patters, do you see any anomalies? Write your own conclusions about your insights.
+* Create six line plots showing to analyze the daily transactions for card holder `id` 25 from january to june 2018. By observing the consumption patters, do you see any anomalies? Write your own conclusions about your insights.
 
 ### Challenge
 
 Another approach to identify fraudulent transactions is looking for _outliers_ on the data. _Standard deviation_ or _quartiles_ are often used to detect _outliers_.
 
-Read the following articles on outliers detection and code a function using python to identify weekly or daily anomalies for any card holder.
+Read the following articles on outliers detection and code a function using python to identify anomalies for any card holder.
 
 * [How to Calculate Outliers](https://www.wikihow.com/Calculate-Outliers)
 * [Removing Outliers Using Standard Deviation in Python](https://www.kdnuggets.com/2017/02/removing-outliers-standard-deviation-python.html)
