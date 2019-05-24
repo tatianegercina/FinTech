@@ -76,7 +76,7 @@ Engage the class with the following discussion around portfolios:
 
 ---
 
-### 2. Instructor Do: Correlation (10 mins)
+### 2. Instructor Do: Correlation (5 mins)
 
 This activity introduces the student to the concept of correlation, or the positive or negative relationship between two variables. Two datasets have been chosen to showcase the example of correlation: ice cream sales and drowning incidents.
 
@@ -111,7 +111,7 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 4. Students Do: Diversification (20 mins)
+### 4. Students Do: Diversification (15 mins)
 
 **Instructions:**
 
@@ -183,7 +183,7 @@ Walk through the solution and explain the following:
 
 ---
 
-### 7. Students Do: Simple Moving Averages (20 mins)
+### 7. Students Do: Simple Moving Averages (15 mins)
 
 **Instructions:**
 
@@ -267,7 +267,7 @@ Walk through the solution and explain the following:
 
 ---
 
-### 10. Students Do: Beta Comparisons (20 mins)
+### 10. Students Do: Beta Comparisons (15 mins)
 
 **Instructions:**
 
@@ -309,7 +309,7 @@ Open the solution and explain the following:
 
 ---
 
-### 12. Instructor Do: Really Important Demo (10 mins) (Critical)
+### 12. Instructor Do: Portfolio Returns (10 mins)
 
 **Files:**
 
@@ -349,7 +349,7 @@ In this activity, students will work in pairs to research a group of 10 stocks, 
 
 * [portfolio_planner_part_1.ipynb](Activities/13-Stu_Portfolio_Planner_Part_I/Unsolved/portfolio_planner_part_1.ipynb)
 
-### 14. Instructor Do: Portfolio Planner Part I (5 mins)
+### 14. Instructor Do: Portfolio Planner Part I (10 mins)
 
 **Files:**
 
@@ -383,7 +383,7 @@ Open the solution and explain the following:
 
 ---
 
-### 16. Students Do: Portfolio Planner Part II (20 mins)
+### 16. Students Do: Portfolio Planner Part II (25 mins)
 
 In this activity, students will work in pairs to continue where they left off in part I of evaluating portfolios. Students will now evaluate correlations and sharpe ratios of the 10 stocks, filter by only non-correlated and positive sharpe ratio stocks, set equal-weighted portfolio allocations to the remaining stocks, and perform an analysis of a `$10,000` investment in the portfolio over time. Then compare the `$10,000` investment in the portfolio to other `$10,000` investments in lesser optimized portfolios.
 
@@ -428,3 +428,23 @@ Open the solution and explain the following:
   * The risk-optimized portfolio performs the worst of the four portfolios and acheives minimal volatility but at the expense of returns.
 
   ![part-2-overlay](Images/part-2-overlay.png)
+
+### 18. Instructor Do: Structured Office Hours (35 mins)
+
+Please use the entire office hours time to review questions with the students.
+
+Suggested Format:
+
+* Ask students for specific activities to revisit.
+
+* Revisit key activities for the homework.
+
+* Allow students to start the homework with extra TA support.
+
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
+
+### End Class
+
+- - -
+
+Trilogy Education Services © 2019. All Rights Reserved.
