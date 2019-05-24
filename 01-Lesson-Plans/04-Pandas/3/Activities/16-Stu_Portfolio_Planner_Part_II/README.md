@@ -43,19 +43,19 @@ Using the starter file provided, pick up where part 1 left off and walk through 
 
   * Assess the investment potential of a non-correlated (diversified) and return-to-risk (sharpe ratio) optimized portfolio:
 
-    * Set an equal weight for each stock in the optimized portfolio (only stocks that are non-correlated and have positive sharpe ratios) and use the `dot` function to multiply weights by each stock's daily returns to output the optimized portfolio's daily returns.
+    * Set an equal weight for each stock in the optimized portfolio (5 stocks) and use the `dot` function to multiply weights by each stock's daily returns to output the optimized portfolio's daily returns.
 
-    * Calculate the optimized portfolio cumulative returns and multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
+    * Calculate the optimized portfolio's cumulative returns and multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
 
   * Assess the investment potential of a non-correlated (diversified) portfolio:
 
-    * Set an equal weight for each stock in an non-correlated stock portfolio (only stocks that are non-correlated but have positive and negative sharpe ratios) and use the `dot` function to multiply weights by each stock's daily returns to output the non-correlated stock portfolio's daily returns.
+    * Set an equal weight for each stock in an non-correlated stock portfolio (8 stocks) and use the `dot` function to multiply weights by each stock's daily returns to output the non-correlated stock portfolio's daily returns.
 
     * Calculate the non-correlated stock portfolio's cumulative returns and multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
 
   * Assess the investment potential of the original/unoptimized portfolio:
 
-    * Set an equal weight for each stock in an unoptimized portfolio (all 10 stocks) and use the `dot` function to multiply weights by each stock's daily returns to output the optimized portfolio's daily returns.
+    * Set an equal weight for each stock in an unoptimized portfolio (all 10 stocks) and use the `dot` function to multiply weights by each stock's daily returns to output the unoptimized portfolio's daily returns.
 
     * Calculate the unoptimized stock portfolio's cumulative returns and multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
 
