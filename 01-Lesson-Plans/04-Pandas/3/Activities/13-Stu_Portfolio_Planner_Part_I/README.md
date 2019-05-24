@@ -17,7 +17,7 @@ Specifically, upper management wants to sort the stocks by risk profile/volatili
 
 Use the Pandas library to help Harold determine the risk profile of the 10 stocks, drop the top 5 highly volatile stocks, assign portfolio weights to each corresponding stock, and plot the returns of a `$10,000` investment if invested in such a portfolio over time.
 
-## Instructions
+## Part 1 Instructions
 
 * Using the starter file provided, walk through the following steps.
 
@@ -55,6 +55,10 @@ Use the Pandas library to help Harold determine the risk profile of the 10 stock
   * Use the `cumprod` function to calculate the cumulative returns of the constructed portfolio.
 
   * Plot the returns of a hypothetical `$10,000` investment in the constructed portfolio.
+
+## Part 2 Instructions
+
+* You will complete part 2 in the next assignment (not yet!)
 
 ## Hints
 
