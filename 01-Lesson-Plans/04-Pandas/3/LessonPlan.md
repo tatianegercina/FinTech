@@ -4,7 +4,9 @@
 
 ### Overview
 
-Today's class will focus on the notion of analyzing the performance of not just a single stock, but groups of stocks together -- otherwise known as a portfolio of stocks. Stock portfolios are an important strategy in the realm of investing as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma. However, in order to create an optimal portfolio that maximizes returns while minimizing risk, it's necessary to not only analyze the average return and risk of the portfolio overall, but also the correlation between stocks as well (how much one stock price changes with or against another). This lesson will teach students how to analyze the correlations of stocks against one another, calculate rolling statistics and volatility (beta) of stocks together, and optimize the composition of a portfolio and compare its performance against other portfolios.
+Today's class will focus on the notion of analyzing the performance of not just a single stock, but groups of stocks together -- otherwise known as a portfolio of stocks. Stock portfolios are an important strategy in the realm of investing as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma. 
+
+However, in order to create an optimal portfolio that maximizes returns while minimizing risk, it's necessary to not only analyze the average return and risk of the portfolio overall, but also the correlation between stocks as well (how much one stock price changes with or against another). This lesson will teach students how to analyze the correlations of stocks against one another, calculate rolling statistics and volatility (beta) of stocks together, and optimize the composition of a portfolio and compare its performance against other portfolios.
 
 ### Class Objectives
 
