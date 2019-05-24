@@ -1,4 +1,4 @@
-## 4.3 Lesson Plan - Stock Portfolios
+## 4.3 Lesson Plan - Investing Like the Pros
 
 ---
 
