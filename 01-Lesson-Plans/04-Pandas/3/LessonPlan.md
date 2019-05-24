@@ -133,19 +133,21 @@ Open the solution and explain the following:
 
   ![formatted-dataframe](Images/formatted-dataframe.png)
 
-* When viewing a correlation table, it's difficult to distinguish lower values from higher values. Therefore, using the `heatmap` function from the `seaborn` library makes it much easier to discern differences by using color gradients.
+* When viewing a correlation table, it's difficult to distinguish lower values from higher values when there are many variables present. Therefore, using the `heatmap` function from the `seaborn` library makes it much easier to discern differences by using color gradients.
 
   ![correlation-table](Images/correlation-table.png)
 
   ![correlation-heatmap](Images/correlation-heatmap.png)
 
-* Use the `vmin` and `vmax` parameters to the `heatmap` function to modify the scale of the heatmap. Correlation values range from `-1` to `0` to `+1` therefore the scale of the heatmap will need to reflect accordingly. 
+* Use the `vmin` and `vmax` parameters to the `heatmap` function to modify the scale of the heatmap. Correlation values range from `-1` to `0` to `+1` therefore the scale of the heatmap will need to reflect accordingly.
 
   ![correlation-heatmap-scaled](Images/correlation-heatmap-scaled.png)
 
-* Looking at the heatmap, it would appear as though AMD stock appears to be the least correlated out of any of the other semiconductor stocks. Therefore, AMD stock would be the best semiconductor stock to add to the existing portfolio.
+* Looking at the heatmap and cross-referencing the correlation table, it would appear as though AMD stock appears to be the least correlated out of any of the other semiconductor stocks. Therefore, AMD stock would be the best semiconductor stock to add to the existing portfolio.
 
-  ![correlation-heatmap-amd](Images/correlation-heatmap-amd.png)
+  ![correlation-heatmap-focus](Images/correlation-heatmap-focus.png)
+  
+  ![correlation-table-focus](Images/correlation-table-focus.png)
 
 ---
 
