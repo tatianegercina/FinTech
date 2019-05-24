@@ -97,6 +97,10 @@ Walk through the solution and highlight the following:
 
   ![correlation.png](Images/correlation.png)
 
+* The `heatmap` function from the `seaborn` library color-codes the different variations in a correlation table. This is particularly useful when there are many variables in a correlation table.
+
+  ![correlation_seaborn.png](Images/correlation.png)
+
 * Remember that correlation does not imply causation! Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents` it does not mean that buying more ice cream causes people to drown. It merely states that there is a positive relationship between the numbers. Chances are, there is another factor at play which makes these two variables so positively correlated. One guess could be as temperatures increase (summer months) people tend to eat more ice cream and go swimming. 
 
 * In order to determine causation, regression analysis should be used where the premise is to find out how x predicts y.
