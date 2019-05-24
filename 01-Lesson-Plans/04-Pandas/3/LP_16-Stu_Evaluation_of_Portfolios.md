@@ -22,15 +22,15 @@ Open the solution and explain the following:
 
 * Stock correlation describes the linear relationship between the returns of two stocks and indicates whether returns of both stocks tend to move in tandem, inversely, or random (no correlation). The `corr` function used in conjunction with the `heatmap` function from the `seaborn` library makes it easy to spot the highly correlated stocks. In this case, the daily returns of `BK`, `FANG`, `JNJ`, `LUV`, and `MU` appear to be highly correlated and can be dropped from the DataFrame.
 
-  ![challenge-correlation](Images/challenge-correlation.png)
+  ![part-2-correlation](Images/part-2-correlation.png)
 
 * Unliked volatility which measures risk, sharpe ratios describe the riskiness of stocks relative to their returns. Therefore, sharpe ratios measure risk-to-reward and indicate *value-driven* investments. The `mean` and `std` functions can be used to calculate the sharpe ratios of stocks.
 
-  ![challenge-sharpe-ratios](Images/challenge-sharpe-ratios.png)
+  ![part-2-sharpe-ratios](Images/part-2-sharpe-ratios.png)
 
 * An equal-weighted portfolio consists of the same weight for every stock in the portfolio (totaling `1`). For example, an equal-weighted stock portfolio of `5` stocks would have weights of `0.2`, `0.2`, `0.2`, `0.2`, and `0.2` to each stock.
 
-  ![challenge-evaluate](Images/challenge-evaluate.png)
+  ![part-2-equal-weighted](Images/part-2-equal-weighted.png)
 
 * The overlay chart of corresponding `$10,000` investments in each respective portfolio over time describes the following:
 
@@ -42,4 +42,4 @@ Open the solution and explain the following:
 
   * The risk-optimized portfolio performs the worst of the four portfolios and acheives minimal volatility but at the expense of returns.
 
-  ![challenge-overlay](Images/challenge-overlay.png)
+  ![part-2-overlay](Images/part-2-overlay.png)
