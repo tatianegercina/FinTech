@@ -2,7 +2,7 @@ import subprocess
 import json
 import os
 
-from constants import *
+from constants import BTC, BTCTEST, ETH
 from pprint import pprint
 
 from bit import PrivateKeyTestnet
