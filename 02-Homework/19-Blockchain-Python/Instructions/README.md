@@ -1,6 +1,6 @@
 # Multi-Blockchain Wallet in Python
 
-![newtons-coin-cradle](https://image.shutterstock.com/z/stock-photo-bitcoin-on-newton-s-cradle-boosts-and-accelerates-other-cryptocurrencies-and-back-and-forth-687394909.jpg)
+![newtons-coin-cradle](Images/newtons-coin-cradle.jpg)
 
 ## Background
 
