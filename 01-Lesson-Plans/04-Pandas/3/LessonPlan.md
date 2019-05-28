@@ -237,6 +237,8 @@ Walk through the solution and explain the following:
 
 * What is variance?
 
+  >
+
   > Variance is a measurement of the spread between each number in a data set compares to the overall mean. It is calculated by taking the differences between each number in the data set and the mean, squaring the differences and dividing the sum of the squares by the number of values in the set.
 
   ![variance.png](Images/variance.png)
