@@ -28,16 +28,12 @@ Using the [starter-file](Unsolved/Core/risky_business.ipynb) provided, and the d
 
 Calculate the sharpe ratio for your entire portfolio rather than for each crypto. Then, use a comparison operator to see which portfolio has the greatest risk to reward ratio.
 
-1. Calculate `std dev` for the entirety of each portfolio.
+1. Calculate annualized `std dev` for each portfolio respectively.
 
-2. Compare Harold's portfolio's `std dev` with your own.
+2. Calculate `sharpe ratio` for each crypto in each respective portfolio.
 
-3. Calculate `sharpe ratio` for each portfolio.
+3. Average the `sharpe ratios` calculated above. Hint: `harold_sharpe_ratios.mean()`.
 
-4. Compare Harold's portfolio's sharpe ratio with your own to determine if his is greater.
+4. Determine if Harold's portfolio's sharpe ratio average is greater than your own by using a comparison operator to compare sharpe ratio averages.
 
 5. Which portfolio is the smartest investment, based off of risk to reward ratio?
-
-### Hint
-
-When completing steps 1 and 3, use the `values` attribute when calculating `std` and `mean`. For example, `harold_returns.values.std()`
