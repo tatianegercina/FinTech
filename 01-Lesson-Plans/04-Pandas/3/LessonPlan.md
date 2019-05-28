@@ -191,17 +191,17 @@ Walk through the solution and explain the following:
 
 **Instructions:**
 
-* [README.md](Activities/04_Stu_Rolling_Statistics/README.md)
+* [README.md](Activities/04-Stu_Rolling_Statistics/README.md)
 
 **Files:**
 
-* [simple_moving_averages.ipynb](Activities/04_Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
+* [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
 
 ### 8. Instructor Do: Review Simple Moving Averages (5 mins)
 
 **Files:**
 
-* [simple_moving_averages.ipynb](Activities/04_Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb)
+* [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb)
 
 Open the solution and explain the following:
 
