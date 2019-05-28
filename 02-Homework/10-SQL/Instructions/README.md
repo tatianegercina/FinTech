@@ -6,11 +6,9 @@
 
 ## Background
 
-Harold has become so popular on the firm due to all the contributions of starting using python on his team, so that the Cybercrime Unit reached Harold to ask him for help to identify potential fraudulent transactions.
+Fraud is prevalent these days whether you are a small tacos shop or a large, international business. While there are emerging technologies that employ machine learning and artificial intelligence to detect fraud, many instances of fraud detection still require strong data analytics to find the abnormal charges within the normal.
 
-Craeg, the Cybercrime Unit Director, shown to Harold all the available data, and Harold realized that you can use your brand new SQL skills to address this challenge.
-
-You have to create a series of SQL queries that analyzes historical credit card transactions to identify possible fraudulent transactions according to the consumption patterns of credit card holders.
+In this assignment, you will apply your new SQL skills to analyze historical credit card transactions to identify possible fraudulent transactions according to the consumption patterns of credit card holders.
 
 In this homework assignment, you will be accomplishing three main tasks:
 
