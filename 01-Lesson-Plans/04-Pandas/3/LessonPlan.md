@@ -123,7 +123,7 @@ Walk through the solution and highlight the following:
 
 * [market_analysis.ipynb](Activities/02-Stu_Correlation/Unsolved/diversification.ipynb)
 
-### 5. Instructor Do: Diversification (5 mins)
+### 5. Instructor Do: Review Diversification (5 mins)
 
 **Files:**
 
@@ -197,7 +197,7 @@ Walk through the solution and explain the following:
 
 * [simple_moving_averages.ipynb](Activities/04_Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
 
-### 8. Instructor Do: Simple Moving Averages (5 mins)
+### 8. Instructor Do: Review Simple Moving Averages (5 mins)
 
 **Files:**
 
@@ -281,7 +281,7 @@ Walk through the solution and explain the following:
 
 * [beta_comparisons.ipynb](Activities/06-Stu_Beta/Unsolved/beta_comparisons.ipynb)
 
-### 11. Instructor Do: Beta Comparisons (5 mins)
+### 11. Instructor Do: Review Beta Comparisons (5 mins)
 
 **Files:**
 
@@ -353,7 +353,7 @@ In this activity, students will work in pairs to research a group of 10 stocks, 
 
 * [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Unsolved/portfolio_planner_part_1.ipynb)
 
-### 14. Instructor Do: Portfolio Planner Part I (10 mins)
+### 14. Instructor Do: Review Portfolio Planner Part I (10 mins)
 
 **Files:**
 
