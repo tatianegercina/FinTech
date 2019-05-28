@@ -319,11 +319,11 @@ Open the solution and explain the following:
 
 ### 12. Instructor Do: Portfolio Returns (10 mins)
 
+In this activity, students will be introduced to the concept of calculating returns for an entire portfolio of stocks rather than that of just a single stock. Students should understand that portfolios of stocks are used by investors to manage and diversify risk; defining a portfolio with varying capital allocations of stocks allows an investor to control and adjust their risk.
+
 **Files:**
 
 * [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.py)
-
-Explain that portfolios of stocks are used by investors to manage and diversify risk. They can choose a portfolio of different percentages of stocks to control and adjust their risk.
 
 Walk through the solution and highlight the following:
 
