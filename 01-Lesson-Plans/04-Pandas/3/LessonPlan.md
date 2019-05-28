@@ -78,7 +78,7 @@ Explain the following regarding portfolios and engage the class by answering any
 
 ---
 
-### 2. Instructor Do: Correlation (5 mins)
+### 3. Instructor Do: Correlation (5 mins)
 
 This activity introduces the student to the concept of correlation, or the positive or negative relationship between two variables. Two datasets have been chosen to showcase the example of correlation: ice cream sales and drowning incidents.
 
