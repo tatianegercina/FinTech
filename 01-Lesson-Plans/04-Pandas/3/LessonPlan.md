@@ -24,7 +24,9 @@ By the end of class, students will be able to:
 
 * This lesson brings the heat on two fronts: math/statistics and financial domain knowledge. Not everyone will have extensive experience with either subject so be clear, visualize code/charts, and refer to the examples and notes if you need help!
 
-* Showcase the benefits of rolling statistics by comparing the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
+* Be clear on the differences between correlation and beta. Both attempt to measure the relationship between one variable and another; however, correlation looks to measure the linear relationship between two variables while beta looks to measure the *unit-driven* relationship betweeen two variables (beta and stock returns).
+
+* When explaining the notion of rolling statistics and how they benefit in identifying statistical trends, it may be helpful to provide a visual by comparing the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
 
 * When dealing with portfolios and its characteristics - risk, return, correlation - try to speak in terms of money. If you started with $10,000, how would a poorly optimized portfolio compare with one that is not?
 
