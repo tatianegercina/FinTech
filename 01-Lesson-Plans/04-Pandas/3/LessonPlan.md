@@ -229,7 +229,7 @@ Open the solution and explain the following:
 
 In this activity, students will be introduced to the concept of beta and how it is used to determine the relative *unit-driven* performance of one variable to another. For example calculating the beta value of a stock's returns relative to the returns of the overall market. 
 
-Students will learn how to calcualte beta and how the concept of beta differs from correlation.
+Students will learn how to calculate beta and how the concept of beta differs from correlation.
 
 **Files:**
 
