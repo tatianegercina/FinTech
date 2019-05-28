@@ -82,7 +82,7 @@ This activity introduces the student to the concept of correlation, or the posit
 
 **Files:**
 
-* [correlation.ipynb](Activities/03-Ins_Correlation/Solved/correlation.ipynb)
+* [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
 
 Walk through the solution and highlight the following:
 
@@ -115,17 +115,17 @@ Walk through the solution and highlight the following:
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Correlation/README.md)
+* [README.md](Activities/02-Stu_Correlation/README.md)
 
 **Files:**
 
-* [market_analysis.ipynb](Activities/04-Stu_Correlation/Unsolved/diversification.ipynb)
+* [market_analysis.ipynb](Activities/02-Stu_Correlation/Unsolved/diversification.ipynb)
 
 ### 5. Instructor Do: Diversification (5 mins)
 
 **Files:**
 
-* [diversification.ipynb](Activities/04-Stu_Correlation/Solved/diversification.ipynb)
+* [diversification.ipynb](Activities/02-Stu_Correlation/Solved/diversification.ipynb)
 
 Open the solution and explain the following:
 
@@ -155,7 +155,7 @@ Open the solution and explain the following:
 
 **Files:**
 
-* [rolling_statistics.ipynb](Activities/06-Ins_Rolling_Statistics/Solved/rolling_statistics.ipynb)
+* [rolling_statistics.ipynb](Activities/03-Ins_Rolling_Statistics/Solved/rolling_statistics.ipynb)
 
 Walk through the solution and explain the following:
 
@@ -187,17 +187,17 @@ Walk through the solution and explain the following:
 
 **Instructions:**
 
-* [README.md](Activities/07_Stu_Rolling_Statistics/README.md)
+* [README.md](Activities/04_Stu_Rolling_Statistics/README.md)
 
 **Files:**
 
-* [simple_moving_averages.ipynb](Activities/07_Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
+* [simple_moving_averages.ipynb](Activities/04_Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
 
 ### 8. Instructor Do: Simple Moving Averages (5 mins)
 
 **Files:**
 
-* [simple_moving_averages.ipynb](Activities/07_Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb)
+* [simple_moving_averages.ipynb](Activities/04_Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb)
 
 Open the solution and explain the following:
 
@@ -225,7 +225,7 @@ Open the solution and explain the following:
 
 **Files:**
 
-* [beta.ipynb](Activities/09-Ins_Beta/Solved/beta.ipynb)
+* [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb)
 
 Walk through the solution and explain the following:
 
@@ -271,17 +271,17 @@ Walk through the solution and explain the following:
 
 **Instructions:**
 
-* [README.md](Activities/10-Stu_Beta/README.md)
+* [README.md](Activities/06-Stu_Beta/README.md)
 
 **Files:**
 
-* [beta_comparisons.ipynb](Activities/10-Stu_Beta/Unsolved/beta_comparisons.ipynb)
+* [beta_comparisons.ipynb](Activities/06-Stu_Beta/Unsolved/beta_comparisons.ipynb)
 
 ### 11. Instructor Do: Beta Comparisons (5 mins)
 
 **Files:**
 
-* [beta_comparisons.ipynb](Activities/10-Stu_Beta/Solved/beta_comparisons.ipynb)
+* [beta_comparisons.ipynb](Activities/06-Stu_Beta/Solved/beta_comparisons.ipynb)
 
 Open the solution and explain the following:
 
@@ -313,7 +313,7 @@ Open the solution and explain the following:
 
 **Files:**
 
-* [portfolio_returns.py](Activities/01-Ins_Portfolio_Returns/Solved/portfolio_returns.py)
+* [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.py)
 
 Explain that portfolios of stocks are used by investors to manage and diversify risk. They can choose a portfolio of different percentages of stocks to control and adjust their risk.
 
@@ -343,17 +343,17 @@ In this activity, students will work in pairs to research a group of 10 stocks, 
 
 **Instructions:**
 
-* [README.md](Activities/13-Stu_Portfolio_Planner_Part_I/README.md)
+* [README.md](Activities/08-Stu_Portfolio_Planner_Part_I/README.md)
 
 **Files:**
 
-* [portfolio_planner_part_1.ipynb](Activities/13-Stu_Portfolio_Planner_Part_I/Unsolved/portfolio_planner_part_1.ipynb)
+* [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Unsolved/portfolio_planner_part_1.ipynb)
 
 ### 14. Instructor Do: Portfolio Planner Part I (10 mins)
 
 **Files:**
 
-* [portfolio_planner_part_1.ipynb](Activities/13-Stu_Portfolio_Planner_Part_I/Solved/portfolio_planner_part_1.ipynb)
+* [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Solved/portfolio_planner_part_1.ipynb)
 
 Open the solution and explain the following:
 
@@ -389,17 +389,17 @@ In this activity, students will work in pairs to continue where they left off in
 
 **Instructions:**
 
-* [README.md](Activities/16-Stu_Portfolio_Planner_Part_II/README.md)
+* [README.md](Activities/09-Stu_Portfolio_Planner_Part_II/README.md)
 
 **Files:**
 
-* [portfolio_planner_part_2.ipynb](Activities/16-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb)
+* [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb)
 
 ### 17. Instructor Do: Review Portfolio Planner Part II (5 mins)
 
 **Files:**
 
-* [portfolio_planner_part_2.ipynb](Activities/16-Stu_Portfolio_Planner_Part_II/Solved/portfolio_planner_part_2.ipynb)
+* [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Solved/portfolio_planner_part_2.ipynb)
 
 Open the solution and explain the following:
 
