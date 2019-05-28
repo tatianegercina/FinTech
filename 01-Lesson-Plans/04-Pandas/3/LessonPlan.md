@@ -153,7 +153,7 @@ Open the solution and explain the following:
 
 ### 6. Instructor Do: Rolling Statistics (10 mins)
 
-In this activity, students will be introduced to the idea of rolling statistics. Rather than calculating a metric over the entire series of datapoints (ex. correlation over 30 days), rolling statistics is a concept in which a particular metric is calculated over a shifting window of time (ex. a rolling 3-day correlation over 30 days). Rolling statistics help view the *change* or *progression* of a particular metric over time and therefore aid in identifying statistical trends. Some common rolling statistics are rolling averages (otherwise known as moving averages), rolling standard deviations, and rolling correlations.
+In this activity, students will be introduced to the idea of rolling statistics. Rather than calculating a metric over the entire series of datapoints, rolling statistics is a concept in which a particular metric is calculated over a shifting window of time. For example, the correlation between two stocks and their returns could be calculated over the course of 30 days; however, a rolling 3-day correlation could also be calculated over that same 30 days. Rolling statistics help view the *change* or *progression* of a particular metric over time and therefore aid in identifying statistical trends. Some commonly used rolling statistics are rolling averages (otherwise known as moving averages) and rolling standard deviations.
 
 **Files:**
 
