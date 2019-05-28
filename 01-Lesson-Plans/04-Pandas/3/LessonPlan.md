@@ -54,7 +54,7 @@ Welcome students to the third day of Pandas! Cover the following points:
 
 ### 2. Instructor Do: Intro to Portfolios (5 mins)
 
-Engage the class with the following discussion around portfolios:
+Explain the following regarding portfolios and engage the class by answering any questions:
 
 * What is an investment portfolio?
 
