@@ -153,6 +153,8 @@ Open the solution and explain the following:
 
 ### 6. Instructor Do: Rolling Statistics (10 mins)
 
+In this activity,
+
 **Files:**
 
 * [rolling_statistics.ipynb](Activities/06-Ins_Rolling_Statistics/Solved/rolling_statistics.ipynb)
