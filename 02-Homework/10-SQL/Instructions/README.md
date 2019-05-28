@@ -50,11 +50,11 @@ Use SQL to find an answer for the following questions and tasks:
 * What are the top 5 merchants that are more prone to be hacked using small transactions?
 * Once you have a query that can be reused, a good practice is to create a view for analyst. Create a view for each of the previous queries.
 
-Now you are asked to create a report about fraudulent transactions of some top customers of the firm. To achieve this task you should perform a visual data analysis of fraudulent transactions using `pandas`, `Plot.ly`, and `sqlalchemy` by creating the following plots:
+Now you are asked to create a report about fraudulent transactions of some top customers of the firm. To achieve this task you should perform a visual data analysis of fraudulent transactions using `pandas`, `Plot.ly`, `cufflinks` and `sqlalchemy` by creating the following plots:
 
 * Your first mission is to verify if there are some fraudulent transactions on the history of two of the most important customers of the firm, for privacy reasons you only know that their card holders IDs are `18` ans `2`. Create a line plot showing a time series from the transactions along all the year for each card holder. In order to contrast the patters of both card holders, create a line plot containing both lines. What difference do you observe between the consumption patterns? Does the difference could be a fraudulent transaction? Explain your rationale.
 
-* The CEO of the biggest customer of the firm suspects that someone has used her corporate credit card without authorization along the first semester of 2018 to pay quite high consumptions on restaurants; now you are asked to find any anomalous transaction along that period. Create a series of six box plots, one for each month, in order to identify how many outliers could be per month for card holder id `25`. By observing the consumption patters, do you see any anomalies? Write your own conclusions about your insights.
+* The CEO of the biggest customer of the firm suspects that someone has used her corporate credit card without authorization along the first semester of 2018 to pay quite high consumptions on restaurants; now you are asked to find any anomalous transaction along that period. Create a series of six box plots using `cufflinks`, one for each month, in order to identify how many outliers could be per month for card holder id `25`. By observing the consumption patters, do you see any anomalies? Write your own conclusions about your insights.
 
 ### Challenge
 
