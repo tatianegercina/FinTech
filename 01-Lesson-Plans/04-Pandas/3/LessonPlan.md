@@ -283,6 +283,8 @@ Walk through the solution and explain the following:
 
 ### 10. Students Do: Beta Comparisons (15 mins)
 
+This activity combines students' knowledge of rolling statistics and beta to plot the 30-day rolling betas of a group of stocks to determine the stock that would be the most conservative choice (the stock with the lowest beta).
+
 **Instructions:**
 
 * [README.md](Activities/06-Stu_Beta/README.md)
