@@ -115,6 +115,8 @@ Walk through the solution and highlight the following:
 
 ### 4. Students Do: Diversification (15 mins)
 
+In this activity, students will apply the concept of correlation to the financial use case of diversifying a portfolio. In order to properly create a diversified portfolio which tends to minimize long-term volatility/risk, stocks within the portfolio should be as non-correlated as possible. Therefore, students will need to find the stock that has returns that are least correlated to the returns of stocks in an already existing portfolio.
+
 **Instructions:**
 
 * [README.md](Activities/02-Stu_Correlation/README.md)
