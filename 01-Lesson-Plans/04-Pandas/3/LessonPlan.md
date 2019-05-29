@@ -153,6 +153,8 @@ Open the solution and explain the following:
   
   ![correlation-table-focus](Images/correlation-table-focus.png)
 
+* Before moving on, ask the students if they have any questions regarding correlation and portfolio diversification.
+
 ---
 
 ### 6. Instructor Do: Rolling Statistics (10 mins)
