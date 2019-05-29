@@ -193,6 +193,8 @@ Walk through the solution and explain the following:
 
 ### 7. Students Do: Simple Moving Averages (15 mins)
 
+In this activity, students will calculate multiple windows of rolling statistics such as moving averages and rolling standard deviations in order to identify trends in average price and volatility/risk that can provide insight to the investment decisions of a particular stock. 
+
 **Instructions:**
 
 * [README.md](Activities/04-Stu_Rolling_Statistics/README.md)
