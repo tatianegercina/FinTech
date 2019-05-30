@@ -4,31 +4,31 @@
 
 ### Overview
 
-Today's class will introduce students to a powerful analytics library called Pandas. Pandas is a software library designed specifically for data analytics and time series analysis, which are super useful features for quantitative analytics! This lesson will teach students how to create DataFrames, locate data with indexing, clean data, and create basic data visualizations to tackle financial tasks.
+Today's class will introduce students to a powerful analytics library called Pandas. Pandas is a software library designed specifically for data analytics and time series analysis, which are super useful features for quantitative analytics! Pandas is built in and runs in a Python environment. If Python was compared to a garage, Pandas would be the sleek Tesla parked inside. The owner can choose to leverage the speed, power, and efficiency of their Tesla and take it for a spin, or the owner could walk to their destination. While walking would produce the same result as using the Tesla, it would require extra labor and take more time. This lesson will teach students how skillfully utilize the sleek Tesla sitting in their garage, which will include teaching how to create and manipulate DataFrames, locate data with indexing, clean data, create basic data visualizations, and conduct quantitative analytics in order to automate financial tasks.
+
+Because Pandas provides useful features and functions for quantitative analytics, a good majority of financial and FinTech companies are using Pandas for everyday financial analysis. Pandas allows you to easily calculate daily returns over time, identify risk and standard deviation, calculate sharpe ratios, and compute correlations and betas. Pandas also provides functions that make data reading, cleaning, and consolidation a piece of cake. These features allow financial and FinTech companies to hit the ground running with development efforts. Lastly, Pandas is free, which goes a long way in the financial and FinTech.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
 * Describe the benefits of Pandas over spreadsheets to manipulate data on financial use cases.
-* Explain what a dataframe is and how it differs from a series.
-* Create dataframes from CSV files and becoming confident using the basic commands to manipulate them.
-* Demonstrate the ability to clean data using the dataframe built-in commands.
-* Manipulate with confidence indexes on dataframes.
+* Explain what a DataFrame is and how it differs from a series.
+* Create DataFrames from CSV files and become confident using the basic commands to manipulate them.
+* Demonstrate the ability to clean data using the DataFrame built-in commands.
+* Manipulate data with confidence using DataFrame indexes.
 * Describe the basic theory and calculations of returns using Pandas.
 * Create basic data visualizations with Pandas built-in functions to present preliminary results.
 
 ### Instructor Notes
 
-* After learning how to create basic scripts with Python, students are eager to start doing financial analysis beyond the capabilities of Microsoft Excel. In this lesson, students will discover an amazing library for financial analysis that has many benefits over using Excel. Learning about these features and seeing how easy it is to use them will be very exciting for students.
+* It might be confusing for students to understand why they are using Pandas when they just learned Python. A focus of the day will be to make sure students can see and understand the transition from talking about Python to talking about Pandas. Ensure Pandas is discussed from a Pythonic point of view: focus on the fact that Pandas is written in Python. It might be helpful to underscore that all Pandas is is lines of Python code that a user wrote for the purpose of financial analytics. Instead of hoarding their code in the depths of a hard drive, the creators packaged the functions up and made them available to the public.
 
-* Students will focus on the basics of Pandas and then learn how to apply Pandas to calculate and visualize daily returns. Not all students may have the financial background to understand returns, so leverage the finance savvy students to help their partners when they get stuck. Be sure to spend extra time explain the returns calculations as they will use this for the remainder of the week.
+* While the lesson begins with technical concepts like reading in CSV files and checking for nulls, it eventually progresses to calculating daily and cumulative investment returns. Not all students will have the financial background to understand returns, so leverage the finance savvy students to help their partners when they get stuck. Make sure to pace the class so that finance conceptual questions can be asked and answered sufficiently.
 
-* Indexing might be challenging for students, so live coding the examples and spending extra time in the review may be necessary to help them understand the fundamentals. Encourage students to practice these techniques after class to gain mastery.
+* The Data Cleaning activities focus on implementing common data cleaning strategies and is not all encompassing. There are additional methods that can be used to clean data. If there are some curious students who want to learn more, [feel free to slack out this link](https://www.kaggle.com/chrisbow/kernels?sortBy=relevance&group=everyone&search=Cleaning+data+with+Python&page=1&pageSize=20&userId=1541110) with some guides and challenges to learn more about data cleaning process using Python.
 
-* Data cleaning is an art and not an exact science, so this class focuses on common data cleaning techniques. Each dataset will have unique characteristics and may or may not need the same cleaning steps, but these techniques will help them with most of their data cleaning challenges.
-
-If there are some curious students who want to learn more, [feel free to slack out this link](https://www.kaggle.com/chrisbow/kernels?sortBy=relevance&group=everyone&search=Cleaning+data+with+Python&page=1&pageSize=20&userId=1541110) with some guides and challenges to learn more about data cleaning using Python.
+* Each of the activities in this lesson are critical to future assignments and activities, so encourage students to practice these techniques after class to gain mastery. These skills will also be required to complete day-to-day tasks within the FinTech professional world.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
@@ -749,6 +749,7 @@ Open the solution and explain the following:
 * A scatter plot is best suited for comparing the relationships between two variables. In this case, the relationship between price and earnings. The plot shows that there is generally a range between which most companies tend to cluster around price and earnings; however, as earnings increase there seems to be a slight positive trend in price as well.
 
   ![scatter_plot](Images/scatter.png)
+
 Ask for any remaining questions before moving on.
 
 ### 16. Instructor Do: Returns (10 mins)
@@ -810,6 +811,10 @@ Walk through the demo and explain the following:
   ![Plot of Cumulative Returns](Images/cumulative-return-plot.png)
 
 ### 17. Students Do: Returns Over Date Ranges (20 mins)
+
+ROI is a financial concept that some students will have just learned about. Students who have been newly introduced to daily and cumulative returns may be confused, lost, and hesitant to vocalize their uncertainty. Address this by encouraging students to work in groups so that they can make sense of the content together. Also identify finance savvy students who can help provide clarity and assistance to students who find the financial concepts challenging; ask these students to walk around and aid students with their inquiries.
+
+TAs should be circulating to provide assistance to any students/groups who need help. You as the instructor should also make yourself available to help answer financial and technical questions.
 
 In this activity, Harold's manager wants Harold to analyze the last 10 years of historical price data for AMD and plot the daily returns over the last 1, 3, 5, and 10 year time periods. In addition, Harold's manager wants to see the differences in average daily returns for each time period to perhaps understand whether a short or long term perspective should be used in prospecting AMD as a potential candidate.
 
