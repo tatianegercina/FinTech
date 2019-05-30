@@ -54,7 +54,7 @@ Welcome students to the third day of Pandas! Cover the following points:
 
 ### 2. Instructor Do: Intro to Portfolios (5 mins)
 
-Explain the following regarding portfolios and engage the class by answering any questions:
+Explain the following regarding portfolios:
 
 * What is an investment portfolio?
 
@@ -75,6 +75,8 @@ Explain the following regarding portfolios and engage the class by answering any
 * Why do stock market indexes matter?
 
   > Stock market indexes, like the S&P 500, serve as general health indicators for particular areas in the stock market; however, they also serve as benchmarks to compare performances of portfolios. For example, how does the performance of one's personal stock portfolio compare to that of the S&P 500 or general stock market?
+
+Answer any questions before moving on.
 
 ---
 
