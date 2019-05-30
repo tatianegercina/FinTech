@@ -1,12 +1,12 @@
-## 4.3 Lesson Plan - Investing Like the Pros
+## 5.3 Lesson Plan - Track to the Future!
 
 ---
 
 ### Overview
 
-Today's class will focus on the notion of analyzing the performance of not just a single stock, but groups of stocks together -- otherwise known as a portfolio of stocks. Stock portfolios are an important strategy in the realm of investing as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma.
+Today's class will focus on the notion of using Monte Carlo simulations to forecast future results and make confident predictions supported by statistical evidence. Monte Carlo simulations are an important tool in emulating a real-world use case that involves a degree of randomness surrounding an event or outcome, and seeks to iterate `n` number of times to find the most probable result of a variable event. For example, flipping a coin has a 50% chance of landing on heads and a 50% chance of landing on tails. However, flipping a coin 10 times may have varying results: 6 heads and 4 tails; 3 heads and 7 tails; 8 heads and 2 tails, etc. Therefore, a simulation would flip a coin 10 times to determine the resulting combination of heads and tails, and then do that same process of flipping a coin 10 times another `n` number of times to determine the most probable combination of heads and tails if a coin were to be flipped 10 times. 
 
-However, in order to create an optimal portfolio that maximizes returns while minimizing risk, it's necessary to not only analyze the average return and risk of the portfolio overall, but also the correlation between stocks as well (how much one stock price changes with or against another). This lesson will teach students how to analyze the correlations of stocks against one another, calculate rolling statistics and volatility (beta) of stocks together, and optimize the composition of a portfolio and compare its performance against other portfolios.
+In particular, stocks prices also tend to move somewhat randomly in such a way that there are varying probabilities to where the price may go or deviate from its incremental return (daily, weekly, monthly). Therefore, this lesson will teach students how to apply the concept of Monte Carlo simulations to predict future stock prices and therefore forecast the potential stocks returns of an initial investment, either as a single stock investment or as an investment in a stock portfolio.  
 
 ### Class Objectives
 
