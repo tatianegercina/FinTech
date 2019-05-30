@@ -327,7 +327,7 @@ Open the solution and explain the following:
 
 ### 12. Instructor Do: Portfolio Returns (10 mins)
 
-In this activity, students will be introduced to the concept of calculating returns for an entire portfolio of stocks rather than that of just a single stock. Students should understand that portfolios of stocks are used by investors to manage and diversify risk; defining a portfolio with varying capital allocations of stocks allows an investor to control and adjust their risk.
+In this activity, students will be introduced to the concept of calculating returns for a group of stocks rather than that of just a single stock. Students should understand that portfolios of stocks are used by investors to manage and diversify risk; defining a portfolio with varying capital allocations of stocks allows an investor to control and adjust their risk.
 
 **Files:**
 
@@ -444,6 +444,8 @@ Open the solution and explain the following:
   * The risk-optimized portfolio performs the worst of the four portfolios and acheives minimal volatility but at the expense of returns.
 
   ![part-2-overlay](Images/part-2-overlay.png)
+
+* Gauge how students are feeling by the end of this activity, and ultimately, how they feel by the end of this Pandas unit; students should feel challenged but not lost, and hopefully will now have a greater comprehension of using Pandas to analyze stock data. If there are any remaining questions, review them in the last reserved in-class office hours of the day.
 
 ### 18. Instructor Do: Structured Office Hours (35 mins)
 
