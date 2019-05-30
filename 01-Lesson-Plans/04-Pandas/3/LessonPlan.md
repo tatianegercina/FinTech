@@ -447,7 +447,7 @@ Open the solution and explain the following:
 
   ![part-2-overlay](Images/part-2-overlay.png)
 
-* Gauge how students are feeling by the end of this activity, and ultimately, how they feel by the end of this Pandas unit; students should feel challenged but not lost, and hopefully will now have a greater comprehension of using Pandas to analyze stock data. If there are any remaining questions, review them in the last reserved in-class office hours of the day.
+* Ask how students are feeling by the end of this activity, and ultimately, how they feel by the end of this Pandas unit; students should feel challenged but not lost, and hopefully will now have a greater comprehension of using Pandas to analyze stock data. If there are any remaining questions, review them in the last reserved in-class office hours of the day.
 
 ### 18. Instructor Do: Structured Office Hours (35 mins)
 
