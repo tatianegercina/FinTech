@@ -36,15 +36,29 @@ If there are some curious students who want to learn more, [feel free to slack o
 
 ### 1. Instructor Do: Welcome Class (5 mins)
 
-Welcome students to the first Pandas day, Today they will start discovering one of the most powerful libraries on python to analyse and manipulate data, so remark to the class that using Pandas is one of the most important superpowers as FinTech professionals.
+Welcome students to the first Pandas day and give students a brief history of Pandas, an overview of its advantages, and why its useful for FinTech professionals. Address the following as talking points.
 
-Mention to the class the fact that Pandas was created by [Wes McKinney](https://en.wikipedia.org/wiki/Wes_McKinney) to offer a high performance and flexible tool for performing quantitative analysis on financial data.
+* Pandas is currently one of the most powerful libraries on Python. Because of this, it is one of the most important superpowers students can have as FinTech professionals. Instead of re-inventing the wheel and writing their own code, students will be able to leverage Pandas' repository of functions.
 
-Explain that Pandas provides many advantages over Excel through it's data structures and built-in functions for analyzing data.
+* History:
+
+  * Pandas was created by Wes McKinney to offer a high performance and flexible tool for performing quantitative analysis on financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
+
+* Advantages:
+
+  * Pandas provides many advantages over Excel through it's data structures and built-in functions for analyzing data.
+
+  * Pandas doesn't require users to have to know formulas. Common financial calculations and formulas are made available to Pandas users as functions.
+
+  * Pandas offers functions that ensure data is clean and ready for analytic use.
+
+  * Pandas functions range from simple arithmetic to complex statistics. This allows users to automate most, if not all, financial calculations. Instead of writing the formula in a cell or calculating by hand, users just need to make a function call (i.e. `pct_change` to calculate daily returns for an investment).
 
 Explain to students that they have already installed Pandas through Anaconda, so they don't need to install additional libraries by now. However, if they have issues running Pandas then they can use a free notebook by [Google Colab](https://colab.research.google.com/) and troubleshoot their installation with a TA during a break or office hours.
 
-### 2. Instructor Do: why Pandas (5 mins)
+End the welcome activity with a review of the homework instructions. Get students excited about learning Pandas by previewing the skills and work they will accomplish by the end of the week. Place emphasis on calculating investment returns/profit over time, as well as plot visualizations.
+
+### 2. Instructor Do: Why Pandas (5 mins)
 
 **Files:**
 
@@ -52,15 +66,39 @@ Explain to students that they have already installed Pandas through Anaconda, so
 
 Open the slides and start talking about how awesome spreadsheets are (slide 4).
 
-> "Since spreadsheets appeared in [1969 when LANPAR was first used by the plant budgeting operations of AT&T](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed the finance and quants analysis forever; however as more data became available and complexity increased, not everything is what it used to be."
+* Since spreadsheets appeared in [1969 when LANPAR was first used by the plant budgeting operations of AT&T](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed the finance and quants analysis forever; however as more data became available and complexity increased, not everything is what it used to be.
 
-Open the discussion (slides 5 and 6) by questioning the class about the pain points they have suffered themselves while dealing the data using a spreadsheet.
+Open the discussion (slides 5 and 6) by questioning the class about the pain points they have suffered themselves while dealing the data using a spreadsheet. Possible questions and answers include:
 
-You can start a collaborative document on Google Drive to allow students to share their experiences, you can keep this document as a time capsule to be opened at the end of the unit to assess what they have learned and how they can overcome now those pain points using Pandas.
+* What are some of the disadvantages/annoying things about Excel?
 
-Use the rest of the presentation to introduce Pandas as the light at the end of a dark tunnel, like a beautiful oasis in the middle of the desert, let them know and get exited about the infinite possibilities Pandas will offer them for data analysis as FinTech professionals. Remember to remark that Pandas has its origins on the financial realm.
+  > "Microsoft Office is expensive."
 
-If there is time, you can end the discussion by presenting some of the applications that Pandas has on different business areas like the ones [discussed here](https://data-flair.training/blogs/applications-of-pandas/).
+  > "Cell formulas can be difficult to edit."
+
+  > "Spreadsheets can only hold so much data, and the more data stored, the slower the workbook runs."
+
+  > "Excel files always stop responding and are vulnerable to corruption."
+
+  > "Automation and custom function creation is not inherent. Macros and VBA have to be learned."
+
+* Ask students to give some horror stories about Excel. What type of disasters/challenges have they experienced while working in Excel?
+
+  > "Excel hogged so much memory entire laptop crashed."
+
+  > "Regional sales data for a sales competition was copied and pasted next to the wrong sales representatives. This resulted in the wrong person being identified as the winner."
+
+  > "The excel formula in a monthly budget spreadsheet to calculate the remaining balance in a checking account did not include the entire cell range necessary for the calculation, which resulted in the account having a negative balance."
+
+If there is time, you can end the discussion by presenting the following Pandas applications [discussed here](https://data-flair.training/blogs/applications-of-pandas/) to give students a taste of what to expect in the field. Applications to highlight include:
+
+* Stock Prediction
+
+* Analytics
+
+* Data Science
+
+Slack out the above link to students so they can review the other applications on their own time as well.
 
 ### 3. Instructor Do: Reading CSVs (10 mins)
 
