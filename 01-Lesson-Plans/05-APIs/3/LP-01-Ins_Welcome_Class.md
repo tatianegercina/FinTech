@@ -12,23 +12,24 @@ In particular, stocks prices also tend to move somewhat randomly in such a way t
 
 By the end of class, students will be able to:
 
-* Describe the benefits of investing in stock portfolios over a single stock.
-* Explain what correlation is and how to calculate it in Pandas.
-* Visualize trends through rolling statistics that minimize data noise.
-* Compare the volatility of a portfolio against the overall market.
-* Calculate expected returns of a portfolio utilizing custom weights
-* Build and optimize a portfolio by factoring in risk, correlation, and returns
-* Compare a portfolio's performance to other portfolios.
+* Define what a simulation is and why it's used				
+* Deconstruct the components of the Monte Carlo Simulation process: probability distributions and iterations				
+* Interpret probability distributions (normal/bell curve) and random number generators				
+* Comprehend the use of confidence intervals and what they suggest				
+* Implement a single Monte Carlo Simulation on the future price of a stock				
+* Execute multiple Monte Carlo Simulations on the future price of stock				
+* Break down Portfolio Forecasting in the context of Monte Carlo Simulations: portfolio weights, asset class composition, and future stock price variations				
+* Implement multiple Monto Carlo Simulations on the returns of a stock portfolio				
 
 ### Instructor Notes
 
-* This lesson brings the heat on two fronts: math/statistics and financial domain knowledge. Not everyone will have extensive experience with either subject so be clear, visualize code/charts, and refer to the examples and notes if you need help!
+* Today's lesson deals heavily with statistical concepts, particularly probability. Try to be as clear as possible and be mindful of students who may become easily confused as this lesson will surely push the boundaries of most students' comfort levels when it comes to statistics. 
 
-* Be clear on the differences between correlation and beta. Both attempt to measure the relationship between one variable and another; however, correlation looks to measure the linear relationship between two variables while beta looks to measure the *unit-driven* relationship betweeen two variables (beta and stock returns).
+* When overviewing the concept of probability distributions, also make sure to stress the notion of randomness. Probability merely implies that there is a chance that a specific result or event may occur but makes no guarantees, which is why results can differ with each iteration.
 
-* When explaining the notion of rolling statistics and how they benefit in identifying statistical trends, it may be helpful to provide a visual by comparing the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
+* Once students are comfortable with probability distributions, namely normal distributions, students should be able to process the idea that Monte Carlo simulations on stock investments seeks to chart the different paths (and probabilities) in which a stock can vary about its average daily return. Overview the code in detail so that this becomes more apparent.
 
-* When dealing with portfolios and its characteristics - risk, return, correlation - try to speak in terms of money. If you started with $10,000, how would a poorly optimized portfolio compare with one that is not?
+* Towards the end of class, students will begin applying Monte Carlo simulations to portfolio returns. Therefore, they will need to combine the concepts of portfolio optimization (taught in the Pandas unit) with the concept of portfolio forecasting (taught in today's lesson). Walk through the steps in details as students can easily get lost in this myriad of technical concepts!
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
@@ -40,12 +41,12 @@ By the end of class, students will be able to:
 
 * [Slideshow](placeholder)
 
-Welcome students to the third day of Pandas! Cover the following points:
+Welcome students to the third day of APIs! Cover the following points:
 
-* Previous classes focused on Pandas basics and single stock evaluation. Today students will combine what they've learned so far on using Pandas to analyze individual stock returns and risk, and move onto the notion of grouping stocks together to achieve the best risk/reward ratio for their investments.
+* The previous lessons focused on API calls and showcased the Plaid API to exemplify that students can leverage the power of external datasets and functionality. Today students will combine what they've learned so far on using APIs to pull in stock data and forecast single stock/portfolio returns using Monte Carlo simulations.
 
-* Mention to the class that today's focus is on using Pandas to make more informed (and better) investments! Students should feel invigorated as they are learning the techniques used by real financial analysts, quantitative traders, and portfolio managers.
+* Mention to the class that today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. Students should feel empowered as they are learning the ways in which they can use other curated datasets to analyze and generate insights on their own.
 
-* Since today's class focuses more on groups of stocks rather than an individual stock, students should be prepared to push their mindset from that of analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.  
+* Students should be prepared to push their mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.  
 
-* Energize your students! Today is the day where students truly begin leveraging the power of Pandas to create truly insightful analyses that can benefit their skills in financial analysis/investing.
+* Energize your students! Today is the day where students move from historical to future-oriented analysis. Time to look into the crystal ball!
