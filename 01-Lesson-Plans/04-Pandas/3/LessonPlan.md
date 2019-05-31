@@ -447,9 +447,27 @@ Open the solution and explain the following:
 
   ![part-2-overlay](Images/part-2-overlay.png)
 
-* Ask how students are feeling by the end of this activity, and ultimately, how they feel by the end of this Pandas unit; students should feel challenged but not lost, and hopefully will now have a greater comprehension of using Pandas to analyze stock data. If there are any remaining questions, review them in the last reserved in-class office hours of the day.
+### 18. Instructor Do: Decompression (5 mins)
 
-### 18. Instructor Do: Structured Office Hours (35 mins)
+Before moving onto the reserved in-class office hours at the end of the day, make some time for students to vocalize their thoughts.
+
+* Provide some positive feedback for the students as they have come a long way in this Pandas unit! Emphasize that they not only have learned how to use the Pandas library, but have also begun performing analyses and investment techniques like professional investors!
+
+* Survey how students feel and what lingering confusions they may still have regarding the concepts/technicals taught so far; students should feel challenged but not lost.
+
+* Ask students the following potential questions:
+
+  * What activity was the most enjoyable to complete? The most fulfilling?
+
+  * What activity was the most stressful or difficult and why?
+
+  * Did the progression or flow of the day make sense?
+
+* Underscore that students have come a long way and that they should feel proud. Mastery doesn't happen in a day, and so practice makes perfect!
+
+Let the students know that the following activity is reserved for in-class office hours and is there for anyone who might have additional questions; would like to review more; or would just like to discuss more FinTech related topics!
+
+### 19. Instructor Do: Structured Office Hours (35 mins)
 
 Please use the entire office hours time to review questions with the students.
 
