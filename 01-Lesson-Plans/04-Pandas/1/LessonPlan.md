@@ -564,7 +564,7 @@ Ask for any remaining questions before moving on.
 
 ### 10. Instructor Do: Indexing (10 mins)
 
-In this activity, students will learn how to locate and select data within a DataFrame through indexing. Indexing allows us to slice and dice our data so we can get or set values for any of the "cells" in our table.
+In this activity, students will demonstrate that they can locate and select data within a DataFrame through indexing. Indexing allows us to slice and dice our data so we can get or set values for any of the "cells" in our table.
 
 **Files:**
 
@@ -616,7 +616,7 @@ Walk through the demo and explain the following:
 
 ### 11. Students Do: Three-Year Loans (20 mins)
 
-This activity tests students abilities to understand DataFrame indexing to slice and dice the `loans.csv` data to generate insightful answers regarding three-year loan customers.
+Now that students have the conceptual knowledge to index and look up data, it's time they get some practice in completing the steps demoed by the instructor. xThis activity tests students abilities to understand DataFrame indexing to slice and dice the `loans.csv` data to generate insightful answers regarding three-year loan customers.
 
 The `loans.csv` data is initially a compilation of many different columns and loan durations. Students will need to filter down to what is necessary and use functions on subsets of data to answer the questions set forth by Harold's manager.
 
@@ -628,13 +628,13 @@ The `loans.csv` data is initially a compilation of many different columns and lo
 
 * [loans.ipynb](Activities/07-Stu_Indexing/Unsolved/loans.ipynb)
 
-### 12. Instructor Do: Three-Year Loans (5 mins) (Low)
+### 12. Instructor Do: Review Indexing (5 mins) (Low)
 
 **Files:**
 
 * [loans.ipynb](Activities/07-Stu_Indexing/Solved/loans.ipynb)
 
-Open the solution and explain the following:
+Open the solution and explain the following with a dry walkthrough:
 
 * Displaying an index of the first 10 rows is similar to what the `head()` function does; however, utilizing `iloc[]` gives you more control over the index ranges.
 
