@@ -631,6 +631,18 @@ Walk through the demo and explain the following:
 
   ![loc-assignment](Images/loc-assignment.png)
 
+If time remains, briefly discuss `DateTimeIndexes` with students. Show them the below syntax, and provide the following explanation for why DateTimeIndexes should be used. Indicate to students that `DateTimeIndexes` will be re-visted with the Multi-Indexing module.
+
+* The `to_datetime` function can be used to create a `DateTimeIndex`. `DateTimeIndexes` work like regular indexes but they allow for data to be looked up by date and date ranges as well. Passing the `infer_datetime_format=True` parameter will ensure all dates are read the same way, regardless of their format (i.e. MM-DD-YYYY vs MM/DD/YYYY).
+
+  ```python
+  # Create DateTimeIndex
+  df.set_index(pd.to_datetime(df['date_col'], infer_datetime_format=True), inplace=True)
+  df.head()
+  ```
+
+  ![datetime-index](Images/datetime-index.png)
+
 * Finally, explain that it will take some time to get used to indexing data with Pandas, but over time, it will become second nature -- practice makes perfect!
 
 - - -
@@ -916,6 +928,12 @@ With the remaining time, open the solution, and discuss the following points:
 
 * The data shows that trading AMD in the short-term is potentially more profitable as the average daily return of a `1 Year` time frame is the highest at `0.004538` or `4.53%`.
 
+Take a minute to get the students to reflect on what they've just learned and the value behind it. Ask the following question:
+
+* What other areas or accounts can daily returns be used to determine return on investment?
+
+> "Savings accounts and 401ks are examples of accounts that generate daily ROI."
+
 Ask for any remaining questions before moving on.
 
 - - -
@@ -936,8 +954,7 @@ Before ending class, leave some encouraging remarks, and give students a space t
 
   * Did you come across any shortcuts or unique ways to do things while completing the activities?
 
-* Underscore that the students have been doing excellent at learning both financial and technical concepts. This is not an
-easy feat. It takes skill, intellect and abstract thinking, and perseverance to make it this far. They should all pat themselves on the back.
+* Underscore that the students have been doing excellent at learning both financial and technical concepts. This is not an easy feat. It takes skill, intellect and abstract thinking, and perseverance to make it this far. They should all pat themselves on the back.
 
 * Underscore that the students have come a long way. Last week they learned Python. Now they're integrating Pandas and Matplotlib into their Python programs. Next they'll start using more advanced Financial calculations and functions, and eventually move onto working with APIs.
 
