@@ -36,13 +36,29 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 mins)
 
-Welcome students to the first Pandas day, Today they will start discovering one of the most powerful libraries on python to analyse and manipulate data, so remark to the class that using Pandas is one of the most important superpowers as FinTech professionals.
+Welcome students to the first Pandas day and give students a brief history of Pandas, an overview of its advantages, and why its useful for FinTech professionals. Address the following as talking points.
 
-Mention to the class the fact that Pandas was created by [Wes McKinney](https://en.wikipedia.org/wiki/Wes_McKinney) to offer a high performance and flexible tool for performing quantitative analysis on financial data.
+* Pandas is currently one of the most powerful libraries on Python. Because of this, it is one of the most important superpowers students can have as FinTech professionals. Instead of re-inventing the wheel and writing their own code, students will be able to leverage Pandas' repository of functions.
 
-Explain that Pandas provides many advantages over Excel through it's data structures and built-in functions for analyzing data.
+* History:
+
+  * Pandas was created by Wes McKinney to offer a high performance and flexible tool for performing quantitative analysis on financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
+
+* Advantages:
+
+  * Pandas provides many advantages over Excel through it's data structures and built-in functions for analyzing data.
+
+  * Pandas doesn't require users to have to know formulas. Common financial calculations and formulas are made available to Pandas users as functions.
+
+  * Pandas offers functions that ensure data is clean and ready for analytic use.
+
+  * Pandas functions range from simple arithmetic to complex statistics. This allows users to automate most, if not all, financial calculations. Instead of writing the formula in a cell or calculating by hand, users just need to make a function call (i.e. `pct_change` to calculate daily returns for an investment).
 
 Explain to students that they have already installed Pandas through Anaconda, so they don't need to install additional libraries by now. However, if they have issues running Pandas then they can use a free notebook by [Google Colab](https://colab.research.google.com/) and troubleshoot their installation with a TA during a break or office hours.
+
+End the welcome activity with a review of the homework instructions. Get students excited about learning Pandas by previewing the skills and work they will accomplish by the end of the week. Place emphasis on calculating investment returns/profit over time, as well as plot visualizations.
+
+- - -
 
 ### 2. Instructor Do: Why Pandas (5 mins)
 
@@ -54,15 +70,41 @@ Students spent an entire day learning Python, and now they are transitioning to 
 
 Open the slides and start talking about how awesome spreadsheets are (slide 4).
 
-> "Since spreadsheets appeared in [1969 when LANPAR was first used by the plant budgeting operations of AT&T](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed the finance and quants analysis forever; however as more data became available and complexity increased, not everything is what it used to be."
+* Since spreadsheets appeared in [1969 when LANPAR was first used by the plant budgeting operations of AT&T](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed the finance and quants analysis forever; however as more data became available and complexity increased, not everything is what it used to be.
 
-Open the discussion (slides 5 and 6) by questioning the class about the pain points they have suffered themselves while dealing the data using a spreadsheet.
+Open the discussion (slides 5 and 6) by questioning the class about the pain points they have suffered themselves while dealing the data using a spreadsheet. Possible questions and answers include:
 
-You can start a collaborative document on Google Drive to allow students to share their experiences, you can keep this document as a time capsule to be opened at the end of the unit to assess what they have learned and how they can overcome now those pain points using Pandas.
+* What are some of the disadvantages/annoying things about Excel?
 
-Use the rest of the presentation to introduce Pandas as the light at the end of a dark tunnel, like a beautiful oasis in the middle of the desert, let them know and get exited about the infinite possibilities Pandas will offer them for data analysis as FinTech professionals. Remember to remark that Pandas has its origins on the financial realm.
+  > "Microsoft Office is expensive."
 
-If there is time, you can end the discussion by presenting some of the applications that Pandas has on different business areas like the ones [discussed here](https://data-flair.training/blogs/applications-of-pandas/).
+  > "Cell formulas can be difficult to edit."
+
+  > "Spreadsheets can only hold so much data, and the more data stored, the slower the workbook runs."
+
+  > "Excel files always stop responding and are vulnerable to corruption."
+
+  > "Automation and custom function creation is not inherent. Macros and VBA have to be learned."
+
+* Ask students to give some horror stories about Excel. What type of disasters/challenges have they experienced while working in Excel?
+
+  > "Excel hogged so much memory entire laptop crashed."
+
+  > "Regional sales data for a sales competition was copied and pasted next to the wrong sales representatives. This resulted in the wrong person being identified as the winner."
+
+  > "The excel formula in a monthly budget spreadsheet to calculate the remaining balance in a checking account did not include the entire cell range necessary for the calculation, which resulted in the account having a negative balance."
+
+If there is time, you can end the discussion by presenting the following Pandas applications [discussed here](https://data-flair.training/blogs/applications-of-pandas/) to give students a taste of what to expect in the field. Applications to highlight include:
+
+* Stock Prediction
+
+* Analytics
+
+* Data Science
+
+Slack out the above link to students so they can review the other applications on their own time.
+
+- - -
 
 ### 3. Instructor Do: Reading CSVs (10 mins)
 
@@ -82,16 +124,16 @@ The goal of this activity is for students to learn how to read CSV files into Pa
 
 Start by opening the two CSV files in the Resources directory to show students the format of the data. Point out that one file has a header while the other does not. Refer back to these files during the demo as needed.
 
-Next, open the `reading_csvs.ipynb` file and highlight the following:
+Next, open the `reading_csvs.ipynb` file, and walkthrough the following aspects of the code. Highlight the following in sequential order.
 
-* The first step is to import the `pandas` library that is commonly referred as `pd`. The `Path` class is also imported from the [`pathlib` module](https://docs.python.org/3/library/pathlib.html) in order to deal with file paths across all operating systems without complexity.
+* First, emphasize how to import `Pandas`. In order to use `Pandas`, the `Pandas` library has to be imported. Pandas is commonly aliased as `pd` at this time. The `Path` class is also imported from the [`pathlib` module](https://docs.python.org/3/library/pathlib.html) in order to deal with file paths across all operating systems without complexity.
 
   ```python
   import pandas as pd
   from pathlib import Path
   ```
 
-* The Pandas library provides a `read_csv` function that can read a CSV file into a DataFrame. The function usually just needs the path to the file, that in this it's defined using the `Path` class.
+* Then, bring attention to the `read_csv` function. The `read_csv` function allows users to read a CSV file into a DataFrame. The function usually just needs the path to the file, that in this it's defined using the `Path` class.
 
   ```python
   csvpath = Path("../Resources/sales.csv")
@@ -99,15 +141,11 @@ Next, open the `reading_csvs.ipynb` file and highlight the following:
   sales_dataframe.head()
   ```
 
-* The `head` function will show the first 5 rows of the data by default. This is a very common function used to take a peek at the DataFrame to make sure that everything loaded correctly.
+* The third aspect of the code to highlight is the `head` function. The `head` function will show the first 5 rows of the data by default. This is a very common function used to take a peek at the DataFrame to make sure that everything loaded correctly.
 
   ![dataframe.png](Images/dataframe.png)
 
-* CSV files sometimes are missing headers. In this case, Pandas will incorrectly assume that the first row is the header.
-
-  ![no-header.png](Images/no-header.png)
-
-* The `header=None` parameter tells pandas not to use the first row as the header. Because no header is specified, the column index numbers are used instead.
+* Now underscore the `header` parameter for `read_csv`. The `header=None` parameter tells `Pandas` not to use the first row as the header. Because no header is specified, the column index numbers are used instead.
 
   ![header-none.png](Images/header-none.png)
 
@@ -115,27 +153,29 @@ Next, open the `reading_csvs.ipynb` file and highlight the following:
 
   ![header-columns.png](Images/header-columns.png)
 
-Explain to students that while these examples cover the most common use-cases for reading csv files, there are sometimes other scenarios to consider. In these cases, they can refer to the official documentation for further guidance.
-
 Visit the Pandas documentation for the [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) function and show the many options available in the function signature. Explain that while the most common scenario is to simply provide the path to the file, Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files.
-
-Explore the documentation page with students to help them understand how to read and interpret the documentation. This will help demystify the documentation and encourage them to rely on it for future assignments.
 
 Be sure to point out the parameters associated with the filepath and the header that was used in the demo code.
 
 Congratulate students on reading their first CSV file into Pandas! This is an exciting moment because students can now harness the power of Pandas to work with tabular data!
 
+- - -
+
 ### 4. Student Do: Reading Stock Data from a CSV File (10 mins)
 
-**Instructions:**
-
-* [README.md](Activities/02-Stu_Reading_CSVs/README.md)
+In this activity, students will get hands-on experience reading in CSV files into Pandas. This will include using the `read_csv` function, sampling data with the `head` function, and creating DataFrames with specified column names.
 
 **Files:**
 
 * [reading_stock_data.ipynb](Activities/02-Stu_Reading_CSVs/Unsolved/reading_stock_data.ipynb)
 
 * [amd_stock_data.csv](Activities/02-Stu_Reading_CSVs/Resources/amd_stock_data.csv)
+
+**Instructions:**
+
+* [README.md](Activities/02-Stu_Reading_CSVs/README.md)
+
+- - -
 
 ### 5. Instructor Do: Review Reading CSVs (5 mins)
 
@@ -145,36 +185,30 @@ Congratulate students on reading their first CSV file into Pandas! This is an ex
 
 Start by explaining that a DataFrame is a special data structure in Pandas that is designed to work with tabular data (data that has rows and columns like a spreadsheet). A Pandas DataFrame also provides some useful functions to help analyze and manipulate the tabular data.
 
-Since this is the first time students are exposed to Pandas, it's recommended to live code the solution to show students how the CSV file is read and how the built-ins functions works. Use [the solution](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb) as a guide.
+Open the [starter-file](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb), and discuss the following discussion points for review:
 
-Open the starter file and live code the solution while explaining the following:
-
-Explain that while this example created a DataFrame from reading a CSV file, there are actually several ways to create DataFrames such as creating a DataFrame from a dictionary or a list of lists. Slack out the [Pandas DataFrame documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) as well this [getting started guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) for students to use as a reference.
-
-* The first step is to import the Pandas library using its most common acronym `pd`. `Path` from the `pathlib` module is also imported to deal with relative file paths across all operating systems.
+* In order to use Pandas, the `Pandas` module has to be imported into the Python environment.
 
   ```python
   import pandas as pd
   from pathlib import Path
   ```
 
-* A DataFrame can be created by reading a CSV file into Pandas. This example uses a Path object to specify the location of the CSV file. Pandas can then read that file and create a DataFrame to hold the data.
+* A DataFrame can be created from a CSV file with the `read_csv`. This example uses a `Path` object to specify the location of the CSV file. Pandas can then read that file and create a DataFrame to hold the data.
 
 ![Relative file path to CSV file](Images/05_relative_file_path.png)
 
-* Once the DataFrame is created get the top 10 records and remark to students the importance of verifying if the CSV file has the columns names on the first line, so they can avoid losing the first record of data.
+* The `head` function can be used to output the first `n` number of lines from a DataFrame. It is common for a sample of a DataFrame to be output to make sure that headers and rows were imported correctly.
 
 ![First record as columns names](Images/05_first_record_as_columns_names.png)
 
-* Fix the columns names by recreating the dataframe and highlighting the usage of the `header=None` parameter while reading the CSV file, notice to the class that this parameter could be used regardless the CSV files has a header or not in order to customize the columns names.
+* The `header=None` parameter can be specified to prevent the first row of data from being used as column names when there is no header provided. Once the `header` is set to `None`, the `df.columns` function can be used to assign column names.
 
 ![Setting new columns names](Images/05_set_columns_names.png)
 
-* Finally for the challenge part explain to students that getting the last rows is as easy as calling the `tail()` function of the DataFrame.
-
-![Getting the bottom 10 rows](Images/05_using_df_tail.png)
-
 Ask for any remaining questions before moving on.
+
+- - -
 
 ### 6. Instructor Do: Column Manipulation (10 mins)
 
@@ -225,6 +259,8 @@ Demonstrate the fundamentals of column manipulation in Pandas:
 Slack the solution file to students to use as a reference.
 
 Now that students have created, split, re-named, and dropped columns, they can move onto the next step of data wrangling: data cleaning.
+
+- - -
 
 ### 7. Instructor Do: Data Cleaning (10 mins)
 
@@ -413,6 +449,8 @@ Live code a few data quality checks that are especially relevant for financial d
 
   ![LP_Ins_Data_Cleansing_AsType.PNG](Images/LP_Ins_Data_Cleansing_AsType.PNG)
 
+- - -
+
 ### 8. Students Do: Data Cleaning (15 mins)
 
 In this activity, students will be given Harold's stock data and are asked to perform a series of data quality checks to ensure the data is ready for analytical use. The objective of the assignment is for the students to learn how to cleanse data using Pandas native functions (`count`,`value_counts`,`isnull`,`sum`,`mean`,`contains`, and `replace`).
@@ -529,6 +567,8 @@ To guide students, you may want to follow up with questions such as:
 
 Ask for any remaining questions before moving on.
 
+- - - 
+
 ### 10. Instructor Do: Indexing (10 mins)
 
 In this activity, students will demonstrate that they can locate and select data within a DataFrame through indexing. Indexing allows us to slice and dice our data so we can get or set values for any of the "cells" in our table.
@@ -581,6 +621,8 @@ Walk through the demo and explain the following:
 
 * Finally, explain that it will take some time to get used to indexing data with Pandas, but over time, it will become second nature -- practice makes perfect!
 
+- - -
+
 ### 11. Students Do: Three-Year Loans (20 mins)
 
 Now that students have the conceptual knowledge to index and look up data, it's time they get some practice in completing the steps demoed by the instructor. xThis activity tests students abilities to understand DataFrame indexing to slice and dice the `loans.csv` data to generate insightful answers regarding three-year loan customers.
@@ -594,6 +636,8 @@ The `loans.csv` data is initially a compilation of many different columns and lo
 **Files:**
 
 * [loans.ipynb](Activities/07-Stu_Indexing/Unsolved/loans.ipynb)
+
+- - -
 
 ### 12. Instructor Do: Review Indexing (5 mins) (Low)
 
@@ -628,6 +672,8 @@ Open the solution and explain the following with a dry walkthrough:
   ![Subset Statistics](Images/subset-statistics.png)
 
 Ask for any remaining questions before moving on.
+
+- - -
 
 ### 13. Instructor Do: Pandas Visualizations (10 mins)
 
@@ -664,6 +710,8 @@ Walk through the demo and explain the following:
 * Use the `figsize` parameter to the `plot()` function to increase or decrease the chart size. This is especially helpful when there are many x or y axis data points.
 
   ![bar-chart-large](Images/bar-chart-large.png)
+  
+- - -
 
 ### 14. Students Do: Market Analysis (20 mins)
 
@@ -676,6 +724,8 @@ For this activity, students will make three different charts using Pandas: pie c
 **Instructions:**
 
 * [README.md](Activities/09-Stu_Pandas_Visualization/README.md)
+
+- - -
 
 ### 15. Instructor Do: Review Market Analysis (5 mins)
 
@@ -730,6 +780,8 @@ Open the solution and explain the following:
   ![scatter_plot](Images/scatter.png)
 
 Ask for any remaining questions before moving on.
+
+- - -
 
 ### 16. Instructor Do: Returns (10 mins)
 
@@ -793,6 +845,8 @@ Walk through the demo and explain the following:
 
 Now that students know how to calculate and plot returns, students will practice doing this by analyzing and plotting historical AMD data for Harold.
 
+- - -
+
 ### 17. Students Do: Returns Over Date Ranges (20 mins)
 
 ROI is a financial concept that some students will have just learned about. Students who have been newly introduced to daily and cumulative returns may be confused, lost, and hesitant to vocalize their uncertainty. Address this by encouraging students to work in groups so that they can make sense of the content together. Also identify finance savvy students who can help provide clarity and assistance to students who find the financial concepts challenging; ask these students to walk around and aid students with their inquiries.
@@ -810,6 +864,8 @@ Help Harold analyze the last 10 years of AMD stock data.
 **Files:**
 
 * [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Unsolved/returns_over_date_ranges.ipynb)
+
+- - -
 
 ### 18. Instructor Do: Review Returns Over Date Ranges (5 mins)
 
@@ -853,6 +909,8 @@ With the remaining time, open the solution, and discuss the following points:
 * The data shows that trading AMD in the short-term is potentially more profitable as the average daily return of a `1 Year` time frame is the highest at `0.004538` or `4.53%`.
 
 Ask for any remaining questions before moving on.
+
+- - -
 
 ### 19. Decompress
 
