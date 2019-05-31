@@ -467,7 +467,7 @@ Before moving onto the reserved in-class office hours at the end of the day, mak
 
 Let the students know that the following activity is reserved for in-class office hours and is there for anyone who might have additional questions; would like to review more; or would just like to discuss more FinTech related topics!
 
-### 19. Instructor Do: Structured Office Hours (35 mins)
+### 19. Instructor Do: Structured Office Hours (30 mins)
 
 Please use the entire office hours time to review questions with the students.
 
