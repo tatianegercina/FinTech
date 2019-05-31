@@ -2,7 +2,11 @@
 
 ### Overview
 
-Today's class will introduce students to the basics of time series analysis using Pandas to calculate risks and returns over time; learning Pandas time-series functionality will allow students to manage all of the financial data they will inevitably come across in FinTech. In this lesson, students will learn how to group data and apply multi-indexing on a DataFrame to analyze stock exchange data. Students will sort data, group data, leverage multi-indexing, calculate Sharpe Ratios, and compute standard deviation and risk.
+In the last class, students got their hands dirty using Pandas to read, clean, and analyze financial data over time. Today's class will continue this trajectory and will introduce students to the basics of using Pandas to conduct time series analysis and calculate risks and returns over time.
+
+Learning how to use Pandas to analyze time-series data will allow students to manage all of the financial data they will inevitably come across in FinTech. In this lesson, students will learn how to group data and apply multi-indexing on a DataFrame to improve the effectiveness of analyzing and visualizing stock exchange data.
+
+This class lesson will afford students the opportunity to demonstrate competence in using Pandas to sort and group data, create and leverage multiple indexes, calculate sharpe ratios, and compute standard deviation and risk--all of which are critical when evaluating investment/portfolio performance and return on investment.
 
 ### Class Objectives
 
@@ -29,11 +33,11 @@ Declare and use datetime indexes
 
 * Today's class is a quantum leap for students since they will move beyond the basics of Pandas to start learning some advance concepts to be used on risk analysis use cases.
 
-* This class introduces new financial concepts and how they can be coded and applied using Pandas, so spend enough time to understand them. Many of these will be foreign for some students. It is important that students are able to understand what they're doing and why they are doing it, from a financial point of view. Prepare by running the code examples before class.
+* Since this class introduces new financial concepts and how they can be coded and applied using Pandas, it is important to spend time preparing and running the code examples before class. As you prepare, be sure you are able to help students articulate what they are doing and why they are doing it, from a financial point of view. This is especially true for the standard deviation and sharpe ratio activities. Students will need clear explanation of these financial/statistical concepts.
 
-* Using `MultiIndex` and `groupby()` on Pandas is not trivial. Students will learn these concepts on a practical way by analyzing crypto currencies and stock exchange data, so make sure to underscore and reiterate how Pandas is lessening the burden of analysis by providing financial functions.
+* Using `MultiIndex` and `groupby()` on Pandas is not trivial. Students will learn these concepts on a practical way by analyzing crypto currencies and stock exchange data, so make sure to underscore and reiterate how Pandas is lessening the burden of analysis by providing financial functions. For example, instead of having to organize two years worth of daily returns data for each cryptocurrency in an Excel file just to calculate the average, the `groupby` function can automatically consolidate the data so that an average can be calculated. Similarly, instead of being burdened with having to create a `groupby` function themselves, students get to use the Pandas function for free.
 
-* Multi-indexing and grouping are pretty abstract concepts without visual representation. When discussing these two concepts, make sure visuals are available so that students can negotiate the conceptual information with the visual representation.
+* The grouping and multi-indexing modules are pretty abstract concepts and are sometimes difficult to understand without visual representation. When reviewing these modules, make sure to present the slides before completing the demo so that students can absorb the conceptual information with the visual representation.
 
 Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also encourage students to work with partners.
 
@@ -49,7 +53,7 @@ Welcome the students to the second day of Pandas. Students will leverage data cl
 
 * [welcome-slides]()
 
-Kick the class off with a returns refresher activity. This activity will be two fold. The focus is on teaching students how to extract historical ticker data from NASDAQ.com as a CSV, as well as calculate daily returns.
+Kick the class off with a returns refresher activity. This activity will be two fold. The focus is on demonstrating to students how to extract historical ticker data from NASDAQ.com as a CSV so that they can understand that all of the data they need to perform ROI analysis is just a few clicks away. Using NASDAQ.com, students can leverage historical stock data to keep a running tab on daily returns for specific stocks. Students will watch and follow along as the instructor navigates the NASDAQ site.
 
 * Navigate to the [NASDAQ](https://nasdaq.com) website. Use the search bar to enter in the name or ticker of a stock. This example uses Facebook.
 
@@ -71,7 +75,7 @@ Kick the class off with a returns refresher activity. This activity will be two 
 
   ![fb_nasdaq.png](Images/fb_nasdaq.png)
 
-* Load the saved file into Pandas. Use the `index_col`, `parse_dates`, and `infer_datetime_format` attributes to create a DatetimeIndex (based off of `Trader DATE`) for date range manipulation. Emphasize to students that these attributes are used to ensure Pandas interprets the date index as a date object.
+* Load the saved file into Pandas, and output the data to the screen. Use the `index_col`, `parse_dates`, and `infer_datetime_format` attributes to create a DatetimeIndex (based off of `Trader DATE`) for date range manipulation. Emphasize to students that these attributes are used to ensure Pandas interprets the date index as a date object.
 
   ```python
   # Read in CSV data
@@ -80,26 +84,17 @@ Kick the class off with a returns refresher activity. This activity will be two 
   fb_ticker_data.head()
   ```
 
-* Drop `Symbol` Series.
+* Instead of actually calculating daily returns, ask the students to orally summarize the required steps to calculate daily returns for three months of data. Write the steps on the board so they can be reinforced in the students' visual memory:
 
-  ```python
-  # Drop Trade DATE and symbol column
-  fb_ticker_data = fb_ticker_data.drop(columns='Symbol')
-  fb_ticker_data.head()
-  ```
+  > "Now that we have the historical stock data, what are the necessary steps for calculating daily returns?"
 
-* Slice data and calculate daily returns for Feb 2019.
+    1. Clean the data
 
-  ```python
-  # Calculate daily returns
-  fb_slice = fb_ticker_data.loc['2019-03-01':'2019-02-01']
-  fb_quarter_returns = fb_slice.pct_change()
-  fb_quarter_returns
-  ```
+    2. Execute pct_change
 
 After the refresher is complete, ask students if they have any questions.
 
-Proceed to finish reviewing the agenda for today's class. Communicate that today's activities will provide the foundation needed for students to begin grouping and aggregating data. Foreshadow what's to come by explaining that it is common to group and aggregate financial data by a number of different metrics, including dates, tickers, categories, etc. Example use cases include determining the average close price for a list of stock tickers and aggregating data (summing, adding, averaging) across time three month intervals.
+If time remains, proceed to finish reviewing the agenda for today's class. Communicate that today's activities will provide the foundation needed for students to begin grouping and aggregating data. Foreshadow what's to come by explaining that it is common to group and aggregate financial data by a number of different metrics, including dates, tickers, categories, etc. Example use cases include determining the average close price for a list of stock tickers and aggregating data (summing, adding, averaging) across time three month intervals.
 
 - - -
 
