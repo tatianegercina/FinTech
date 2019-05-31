@@ -175,32 +175,24 @@ Start by explaining that a DataFrame is a special data structure in Pandas that 
 
 Open the [starter-file](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb), and discuss the following discussion points for review:
 
-*
-
-Explain that while this example created a DataFrame from reading a CSV file, there are actually several ways to create DataFrames such as creating a DataFrame from a dictionary or a list of lists. Slack out the [Pandas DataFrame documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) as well this [getting started guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) for students to use as a reference.
-
-* The first step is to import the Pandas library using its most common acronym `pd`. `Path` from the `pathlib` module is also imported to deal with relative file paths across all operating systems.
+* In order to use Pandas, the `Pandas` module has to be imported into the Python environment.
 
   ```python
   import pandas as pd
   from pathlib import Path
   ```
 
-* A DataFrame can be created by reading a CSV file into Pandas. This example uses a Path object to specify the location of the CSV file. Pandas can then read that file and create a DataFrame to hold the data.
+* A DataFrame can be created from a CSV file with the `read_csv`. This example uses a `Path` object to specify the location of the CSV file. Pandas can then read that file and create a DataFrame to hold the data.
 
 ![Relative file path to CSV file](Images/05_relative_file_path.png)
 
-* Once the DataFrame is created get the top 10 records and remark to students the importance of verifying if the CSV file has the columns names on the first line, so they can avoid losing the first record of data.
+* The `head` function can be used to output the first `n` number of lines from a DataFrame. It is common for a sample of a DataFrame to be output to make sure that headers and rows were imported correctly.
 
 ![First record as columns names](Images/05_first_record_as_columns_names.png)
 
-* Fix the columns names by recreating the dataframe and highlighting the usage of the `header=None` parameter while reading the CSV file, notice to the class that this parameter could be used regardless the CSV files has a header or not in order to customize the columns names.
+* The `header=None` parameter can be specified to prevent the first row of data from being used as column names when there is no header provided. Once the `header` is set to `None`, the `df.columns` function can be used to assign column names.
 
 ![Setting new columns names](Images/05_set_columns_names.png)
-
-* Finally for the challenge part explain to students that getting the last rows is as easy as calling the `tail()` function of the DataFrame.
-
-![Getting the bottom 10 rows](Images/05_using_df_tail.png)
 
 Ask for any remaining questions before moving on.
 
