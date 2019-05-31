@@ -664,6 +664,8 @@ Ask for any remaining questions before moving on.
 
 ### 13. Instructor Do: Pandas Visualizations (10 mins)
 
+In this activity, students will learn through demonstration how to create charts using Pandas visualization functions. The instructor will demo how to plot data with and without indexes, as well as how to plot data using line and bar charts.
+
 **Files:**
 
 * [visualization.ipynb](Activities/08-Ins_Pandas_Visualization/Solved/visualization.ipynb)
@@ -698,13 +700,15 @@ Walk through the demo and explain the following:
 
 ### 14. Students Do: Market Analysis (20 mins)
 
-**Instructions:**
-
-* [README.md](Activities/09-Stu_Pandas_Visualization/README.md)
+For this activity, students will make three different charts using Pandas: pie chart, bar chart, and scatter plot. This activity will teach students how to create pie scatter charts in addition to bar and line plots. Instructors should walk around to review student progress as they complete the secret key activity. Questions and guidance may be required as this will be the first time students will have been exposed to pie charts and scatter plots.
 
 **Files:**
 
 * [market_analysis.ipynb](Activities/09-Stu_Pandas_Visualization/Unsolved/market_analysis.ipynb)
+
+**Instructions:**
+
+* [README.md](Activities/09-Stu_Pandas_Visualization/README.md)
 
 ### 15. Instructor Do: Review Market Analysis (5 mins)
 
@@ -727,7 +731,7 @@ Open the solution and explain the following:
 
   ![value-counts-function](Images/value-counts-function.png)
 
-* The `plot` function defaults to line charts; however, the `kind` parameter allows one to alter the type of chart produced.
+* The `plot` function defaults to line charts; however, the `kind` parameter allows one to alter the type of chart produced (i.e. pie, bar, etc.).
 
   ```python
   # Plot a pie chart from the distribution of company sectors
@@ -761,6 +765,8 @@ Open the solution and explain the following:
 Ask for any remaining questions before moving on.
 
 ### 16. Instructor Do: Returns (10 mins)
+
+The following activity introduces students to calculating daily returns with Pandas. Students are introduced to the concept of `ROIs`, the `pct_change` function, and cumulative returns. This activity will build upon skills taught to read in CSV data, manipulate and clean DataFrames, and plot data.
 
 **Files:**
 
