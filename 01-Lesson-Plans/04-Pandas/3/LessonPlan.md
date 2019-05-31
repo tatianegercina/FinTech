@@ -24,7 +24,9 @@ By the end of class, students will be able to:
 
 * This lesson brings the heat on two fronts: math/statistics and financial domain knowledge. Not everyone will have extensive experience with either subject so be clear, visualize code/charts, and refer to the examples and notes if you need help!
 
-* Showcase the benefits of rolling statistics by comparing the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
+* Be clear on the differences between correlation and beta. Both attempt to measure the relationship between one variable and another; however, correlation looks to measure the linear relationship between two variables while beta looks to measure the *unit-driven* relationship betweeen two variables (beta and stock returns).
+
+* When explaining the notion of rolling statistics and how they benefit in identifying statistical trends, it may be helpful to provide a visual by comparing the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
 
 * When dealing with portfolios and its characteristics - risk, return, correlation - try to speak in terms of money. If you started with $10,000, how would a poorly optimized portfolio compare with one that is not?
 
@@ -40,7 +42,7 @@ By the end of class, students will be able to:
 
 Welcome students to the third day of Pandas! Cover the following points:
 
-* Today students will combine what they've learned so far on using Pandas to analyze individual stock returns and risk, and move onto the notion of grouping stocks together to achieve the best risk/reward ratio for their investments.  
+* Previous classes focused on Pandas basics and single stock evaluation. Today students will combine what they've learned so far on using Pandas to analyze individual stock returns and risk, and move onto the notion of grouping stocks together to achieve the best risk/reward ratio for their investments.
 
 * Mention to the class that today's focus is on using Pandas to make more informed (and better) investments! Students should feel invigorated as they are learning the techniques used by real financial analysts, quantitative traders, and portfolio managers.
 
@@ -52,7 +54,7 @@ Welcome students to the third day of Pandas! Cover the following points:
 
 ### 2. Instructor Do: Intro to Portfolios (5 mins)
 
-Engage the class with the following discussion around portfolios:
+Present the following questions and answers regarding portfolios:
 
 * What is an investment portfolio?
 
@@ -74,9 +76,11 @@ Engage the class with the following discussion around portfolios:
 
   > Stock market indexes, like the S&P 500, serve as general health indicators for particular areas in the stock market; however, they also serve as benchmarks to compare performances of portfolios. For example, how does the performance of one's personal stock portfolio compare to that of the S&P 500 or general stock market?
 
+Answer any student questions before moving on.
+
 ---
 
-### 2. Instructor Do: Correlation (5 mins)
+### 3. Instructor Do: Correlation (5 mins)
 
 This activity introduces the student to the concept of correlation, or the positive or negative relationship between two variables. Two datasets have been chosen to showcase the example of correlation: ice cream sales and drowning incidents.
 
@@ -113,6 +117,8 @@ Walk through the solution and highlight the following:
 
 ### 4. Students Do: Diversification (15 mins)
 
+In this activity, students will apply the concept of correlation to the financial use case of diversifying a portfolio. In order to properly create a diversified portfolio which tends to minimize long-term volatility/risk, stocks within the portfolio should be as non-correlated as possible. Therefore, students will need to find the stock that has returns that are least correlated to the returns of stocks in an already existing portfolio.
+
 **Instructions:**
 
 * [README.md](Activities/02-Stu_Correlation/README.md)
@@ -121,7 +127,7 @@ Walk through the solution and highlight the following:
 
 * [market_analysis.ipynb](Activities/02-Stu_Correlation/Unsolved/diversification.ipynb)
 
-### 5. Instructor Do: Diversification (5 mins)
+### 5. Instructor Do: Review Diversification (5 mins)
 
 **Files:**
 
@@ -148,6 +154,8 @@ Open the solution and explain the following:
   ![correlation-heatmap-focus](Images/correlation-heatmap-focus.png)
   
   ![correlation-table-focus](Images/correlation-table-focus.png)
+
+* Before moving on, ask the students if they have any questions regarding correlation and portfolio diversification.
 
 ---
 
@@ -187,19 +195,21 @@ Walk through the solution and explain the following:
 
 ### 7. Students Do: Simple Moving Averages (15 mins)
 
+In this activity, students will calculate multiple windows of rolling statistics such as moving averages and rolling standard deviations in order to identify trends in average price and volatility/risk that can provide insight to the investment decisions of a particular stock. 
+
 **Instructions:**
 
-* [README.md](Activities/04_Stu_Rolling_Statistics/README.md)
+* [README.md](Activities/04-Stu_Rolling_Statistics/README.md)
 
 **Files:**
 
-* [simple_moving_averages.ipynb](Activities/04_Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
+* [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
 
-### 8. Instructor Do: Simple Moving Averages (5 mins)
+### 8. Instructor Do: Review Simple Moving Averages (5 mins)
 
 **Files:**
 
-* [simple_moving_averages.ipynb](Activities/04_Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb)
+* [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb)
 
 Open the solution and explain the following:
 
@@ -224,6 +234,10 @@ Open the solution and explain the following:
 ---
 
 ### 9. Instructor Do: Beta (10 mins)
+
+In this activity, students will be introduced to the concept of beta and how it is used to determine the relative *unit-driven* performance of one variable to another. For example calculating the beta value of a stock's returns relative to the returns of the overall market. 
+
+Students will learn how to calculate beta and how the concept of beta differs from correlation.
 
 **Files:**
 
@@ -271,6 +285,8 @@ Walk through the solution and explain the following:
 
 ### 10. Students Do: Beta Comparisons (15 mins)
 
+This activity combines students' knowledge of rolling statistics and beta to plot the 30-day rolling betas of a group of stocks to determine the stock that would be the most conservative choice (the stock with the lowest beta).
+
 **Instructions:**
 
 * [README.md](Activities/06-Stu_Beta/README.md)
@@ -279,7 +295,7 @@ Walk through the solution and explain the following:
 
 * [beta_comparisons.ipynb](Activities/06-Stu_Beta/Unsolved/beta_comparisons.ipynb)
 
-### 11. Instructor Do: Beta Comparisons (5 mins)
+### 11. Instructor Do: Review Beta Comparisons (5 mins)
 
 **Files:**
 
@@ -313,11 +329,11 @@ Open the solution and explain the following:
 
 ### 12. Instructor Do: Portfolio Returns (10 mins)
 
+In this activity, students will be introduced to the concept of calculating returns for a group of stocks rather than that of just a single stock. Students should understand that portfolios of stocks are used by investors to manage and diversify risk; defining a portfolio with varying capital allocations of stocks allows an investor to control and adjust their risk.
+
 **Files:**
 
 * [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.py)
-
-Explain that portfolios of stocks are used by investors to manage and diversify risk. They can choose a portfolio of different percentages of stocks to control and adjust their risk.
 
 Walk through the solution and highlight the following:
 
@@ -351,7 +367,7 @@ In this activity, students will work in pairs to research a group of 10 stocks, 
 
 * [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Unsolved/portfolio_planner_part_1.ipynb)
 
-### 14. Instructor Do: Portfolio Planner Part I (10 mins)
+### 14. Instructor Do: Review Portfolio Planner Part I (10 mins)
 
 **Files:**
 
@@ -431,7 +447,27 @@ Open the solution and explain the following:
 
   ![part-2-overlay](Images/part-2-overlay.png)
 
-### 18. Instructor Do: Structured Office Hours (35 mins)
+### 18. Instructor Do: Decompression (5 mins)
+
+Before moving onto the reserved in-class office hours at the end of the day, make some time for students to vocalize their thoughts.
+
+* Provide some positive feedback for the students as they have come a long way in this Pandas unit! Emphasize that they not only have learned how to use the Pandas library, but have also begun performing analyses and investment techniques like professional investors!
+
+* Survey how students feel and what lingering confusions they may still have regarding the concepts/technicals taught so far; students should feel challenged but not lost.
+
+* Ask students the following potential questions:
+
+  * What activity was the most enjoyable to complete? The most fulfilling?
+
+  * What activity was the most stressful or difficult and why?
+
+  * Did the progression or flow of the day make sense?
+
+* Underscore that students have come a long way and that they should feel proud. Mastery doesn't happen in a day, and so practice makes perfect!
+
+Let the students know that the following activity is reserved for in-class office hours and is there for anyone who might have additional questions; would like to review more; or would just like to discuss more FinTech related topics!
+
+### 19. Instructor Do: Structured Office Hours (30 mins)
 
 Please use the entire office hours time to review questions with the students.
 
