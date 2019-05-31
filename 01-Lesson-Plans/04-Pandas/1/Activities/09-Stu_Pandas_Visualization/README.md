@@ -4,7 +4,7 @@ In this activity, Harold has been asked to analyze the financial data of the com
 
 1. A pie chart of the S&P 500 company sector distribution.
 2. A bar chart of the top 20 market cap companies.
-3. A scatter plot of the price vs. earnings relationship. 
+3. A scatter plot of the price vs. earnings relationship.
 
 Use the Pandas library to help Harold perform the above analysis and generate the above plots.
 
