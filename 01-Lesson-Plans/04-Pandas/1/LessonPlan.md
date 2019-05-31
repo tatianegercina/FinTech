@@ -692,7 +692,7 @@ Walk through the demo and explain the following:
 
 ### 14. Students Do: Market Analysis (20 mins)
 
-For this activity, students will make three different charts using Pandas: pie chart, bar chart, and scatter plot. Instructors should walk around to review student progress as they complete the secret key activity. This will be the first time students will have been exposed to pie charts and scatter plots, so questions and guidance may be required.
+For this activity, students will make three different charts using Pandas: pie chart, bar chart, and scatter plot. This activity will teach students how to create pie scatter charts in addition to bar and line plots. Instructors should walk around to review student progress as they complete the secret key activity. Questions and guidance may be required as this will be the first time students will have been exposed to pie charts and scatter plots.
 
 **Files:**
 
