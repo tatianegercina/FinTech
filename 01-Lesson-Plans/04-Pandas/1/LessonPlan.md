@@ -98,7 +98,7 @@ If there is time, you can end the discussion by presenting the following Pandas 
 
 * Data Science
 
-Slack out the above link to students so they can review the other applications on their own time as well.
+Slack out the above link to students so they can review the other applications on their own time.
 
 ### 3. Instructor Do: Reading CSVs (10 mins)
 
@@ -116,16 +116,16 @@ Slack out the above link to students so they can review the other applications o
 
 Start by opening the two CSV files in the Resources directory to show students the format of the data. Point out that one file has a header while the other does not. Refer back to these files during the demo as needed.
 
-Next, open the `reading_csvs.ipynb` file and highlight the following:
+Next, open the `reading_csvs.ipynb` file, and walkthrough the following aspects of the code. Highlight the following in sequential order.
 
-* The first step is to import the `pandas` library that is commonly referred as `pd`. The `Path` class is also imported from the [`pathlib` module](https://docs.python.org/3/library/pathlib.html) in order to deal with file paths across all operating systems without complexity.
+* First, emphasize how to import `Pandas`. In order to use `Pandas`, the `Pandas` library has to be imported. Pandas is commonly aliased as `pd` at this time. The `Path` class is also imported from the [`pathlib` module](https://docs.python.org/3/library/pathlib.html) in order to deal with file paths across all operating systems without complexity.
 
   ```python
   import pandas as pd
   from pathlib import Path
   ```
 
-* The Pandas library provides a `read_csv` function that can read a CSV file into a DataFrame. The function usually just needs the path to the file, that in this it's defined using the `Path` class.
+* Then, bring attention to the `read_csv` function. The `read_csv` function allows users to read a CSV file into a DataFrame. The function usually just needs the path to the file, that in this it's defined using the `Path` class.
 
   ```python
   csvpath = Path("../Resources/sales.csv")
@@ -133,15 +133,11 @@ Next, open the `reading_csvs.ipynb` file and highlight the following:
   sales_dataframe.head()
   ```
 
-* The `head` function will show the first 5 rows of the data by default. This is a very common function used to take a peek at the DataFrame to make sure that everything loaded correctly.
+* The third aspect of the code to highlight is the `head` function. The `head` function will show the first 5 rows of the data by default. This is a very common function used to take a peek at the DataFrame to make sure that everything loaded correctly.
 
   ![dataframe.png](Images/dataframe.png)
 
-* CSV files sometimes are missing headers. In this case, Pandas will incorrectly assume that the first row is the header.
-
-  ![no-header.png](Images/no-header.png)
-
-* The `header=None` parameter tells pandas not to use the first row as the header. Because no header is specified, the column index numbers are used instead.
+* Now underscore the `header` parameter for `read_csv`. The `header=None` parameter tells `Pandas` not to use the first row as the header. Because no header is specified, the column index numbers are used instead.
 
   ![header-none.png](Images/header-none.png)
 
@@ -149,11 +145,7 @@ Next, open the `reading_csvs.ipynb` file and highlight the following:
 
   ![header-columns.png](Images/header-columns.png)
 
-Explain to students that while these examples cover the most common use-cases for reading csv files, there are sometimes other scenarios to consider. In these cases, they can refer to the official documentation for further guidance.
-
 Visit the Pandas documentation for the [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) function and show the many options available in the function signature. Explain that while the most common scenario is to simply provide the path to the file, Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files.
-
-Explore the documentation page with students to help them understand how to read and interpret the documentation. This will help demystify the documentation and encourage them to rely on it for future assignments.
 
 Be sure to point out the parameters associated with the filepath and the header that was used in the demo code.
 
@@ -161,15 +153,17 @@ Congratulate students on reading their first CSV file into Pandas! This is an ex
 
 ### 4. Student Do: Reading Stock Data from a CSV File (10 mins)
 
-**Instructions:**
-
-* [README.md](Activities/02-Stu_Reading_CSVs/README.md)
+In this activity, students will get hands-on experience reading in CSV files into Pandas. This will include using the `read_csv` function, sampling data with the `head` function, and creating DataFrames with specified column names.
 
 **Files:**
 
 * [reading_stock_data.ipynb](Activities/02-Stu_Reading_CSVs/Unsolved/reading_stock_data.ipynb)
 
 * [amd_stock_data.csv](Activities/02-Stu_Reading_CSVs/Resources/amd_stock_data.csv)
+
+**Instructions:**
+
+* [README.md](Activities/02-Stu_Reading_CSVs/README.md)
 
 ### 5. Instructor Do: Reading CSVs Review (5 mins)
 
@@ -179,9 +173,9 @@ Congratulate students on reading their first CSV file into Pandas! This is an ex
 
 Start by explaining that a DataFrame is a special data structure in Pandas that is designed to work with tabular data (data that has rows and columns like a spreadsheet). A Pandas DataFrame also provides some useful functions to help analyze and manipulate the tabular data.
 
-Since this is the first time students are exposed to Pandas, it's recommended to live code the solution to show students how the CSV file is read and how the built-ins functions works. Use [the solution](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb) as a guide.
+Open the [starter-file](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb), and discuss the following discussion points for review:
 
-Open the starter file and live code the solution while explaining the following:
+*
 
 Explain that while this example created a DataFrame from reading a CSV file, there are actually several ways to create DataFrames such as creating a DataFrame from a dictionary or a list of lists. Slack out the [Pandas DataFrame documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) as well this [getting started guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) for students to use as a reference.
 
