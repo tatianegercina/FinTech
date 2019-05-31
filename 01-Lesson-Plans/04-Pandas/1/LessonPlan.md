@@ -182,9 +182,9 @@ Reading CSV data into Pandas is an easy feat, but sometimes the DataFrame's sche
 
 **Files:**
 
-* [column_manipulation.py](Activities/03-Ins_Columns/Solved/column_manipulation.py)
+* [column_manipulation.ipynb](Activities/03-Ins_Columns/Solved/column_manipulation.ipynb)
 
-Explain to students that a common first step in Data Wrangling is to fix or adjust column names and column values. This demonstration will cover the common techniques used to manipulate columns.
+In the previous activity, students created a Pandas DataFrame from a CSV file and assigned column names to the DataFrame. This was one example of column manipulation. There are also other ways to manipulate columns. This demonstration will cover the common techniques used to do so.
 
 Demonstrate the fundamentals of column manipulation in Pandas:
 
@@ -192,7 +192,7 @@ Demonstrate the fundamentals of column manipulation in Pandas:
 
   ![column-names.png](Images/column-names.png)
 
-* The `columns` attribute can be assigned a new list of column values. This has certain restrictions such as the list of column names must match the number of columns in the DataFrame (no partial lists).
+* The `columns` attribute can be assigned a new list of column values. This has certain restrictions such as the list of column names must match the number of columns in the DataFrame (no partial lists). This is valuable whenever column names need to be changed.
 
   ![replace-columns.png](Images/replace-columns.png)
 
@@ -222,7 +222,9 @@ Demonstrate the fundamentals of column manipulation in Pandas:
 
   ![customer-drop-columns.png](Images/customer-drop-columns.png)
 
-Send the solution file to students to use as a reference.
+Slack the solution file to students to use as a reference.
+
+Now that students have created, split, re-named, and dropped columns, they can move onto the next step of data wrangling: data cleaning.
 
 ### 7. Instructor Do: Data Cleaning (10 mins)
 
