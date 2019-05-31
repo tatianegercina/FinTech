@@ -8,17 +8,17 @@ Using the starter file provided, complete the following steps.
 
 1. Import the Pandas library using its most common acronym: _pd_
 
-2. Create a dataframe by reading the provided CSV file that contains the last 10 years of historical price data for AMD.
+2. Create a DataFrame by reading the provided CSV file that contains the last 10 years of historical price data for AMD.
 
-3. Perform an initial data exploration by getting the top rows of the dataframe.
+3. Perform an initial data exploration by getting the top rows of the DataFrame.
 
-4. Oh no! There are no columns names on the dataframe, fix the problem by recreating the dataframe and setting the columns names as: date, close, volume, open, high, low.
+4. Oh no! There are no columns names on the DataFrame, fix the problem by recreating the DataFrame and setting the columns names as: date, close, volume, open, high, low.
 
-5. Once the columns names are fixed get the first then rows from the dataframe.
+5. Once the columns names are fixed get the first then rows from the DataFrame.
 
 ## Challenge
 
-* Google how you can get the _n_ bottom rows from a dataframe and get the bottom 10 rows.
+* Google how you can get the _n_ bottom rows from a DataFrame and get the bottom 10 rows.
 
 ## Hint
 
