@@ -44,7 +44,9 @@ Explain that Pandas provides many advantages over Excel through it's data struct
 
 Explain to students that they have already installed Pandas through Anaconda, so they don't need to install additional libraries by now. However, if they have issues running Pandas then they can use a free notebook by [Google Colab](https://colab.research.google.com/) and troubleshoot their installation with a TA during a break or office hours.
 
-### 2. Instructor Do: why Pandas (5 mins)
+### 2. Instructor Do: Why Pandas (5 mins)
+
+Students spent an entire day learning Python, and now they are transitioning to learning Pandas. Students need to understand why they are learning Pandas and the relationship between Pandas and Python. In this activity, students will learn the features and advantages of using Pandas. They will also learn how using Pandas can alleviate some of the stressors and challenges presented by Excel.
 
 **Files:**
 
@@ -63,6 +65,8 @@ Use the rest of the presentation to introduce Pandas as the light at the end of 
 If there is time, you can end the discussion by presenting some of the applications that Pandas has on different business areas like the ones [discussed here](https://data-flair.training/blogs/applications-of-pandas/).
 
 ### 3. Instructor Do: Reading CSVs (10 mins)
+
+The goal of this activity is for students to learn how to read CSV files into Pandas. Financial data is commonly converted from other formats (i.e. Excel XLS) into CSV so that it can be manipulated by programs like Pandas. Learning how to read CSV data into Pandas is the first necessary step in getting students started with creating automated analytics pipelines.
 
 **Files:**
 
@@ -133,7 +137,7 @@ Congratulate students on reading their first CSV file into Pandas! This is an ex
 
 * [amd_stock_data.csv](Activities/02-Stu_Reading_CSVs/Resources/amd_stock_data.csv)
 
-### 5. Instructor Do: Reading CSVs Review (5 mins)
+### 5. Instructor Do: Review Reading CSVs (5 mins)
 
 **Files:**
 
@@ -173,6 +177,8 @@ Explain that while this example created a DataFrame from reading a CSV file, the
 Ask for any remaining questions before moving on.
 
 ### 6. Instructor Do: Column Manipulation (10 mins)
+
+Reading CSV data into Pandas is an easy feat, but sometimes the DataFrame's schema/structure needs to change. This includes changing DataFrame column names, adding columns, and dropping columns. Students will learn how to use the various Pandas functions to perform each of these operations. It's important that students know how to create and curate DataFrames to their needs.
 
 **Files:**
 
@@ -219,6 +225,8 @@ Demonstrate the fundamentals of column manipulation in Pandas:
 Send the solution file to students to use as a reference.
 
 ### 7. Instructor Do: Data Cleaning (10 mins)
+
+In this activity, students will take part in a lecture and discussion about data cleaning. Students will learn what data cleaning is and why it is necessary, as well as common strategies for cleaning data. This module will be critical to students. Most of the data students will come across in the real world will be dirty and unusable.
 
 **Files:**
 
@@ -749,6 +757,7 @@ Open the solution and explain the following:
 * A scatter plot is best suited for comparing the relationships between two variables. In this case, the relationship between price and earnings. The plot shows that there is generally a range between which most companies tend to cluster around price and earnings; however, as earnings increase there seems to be a slight positive trend in price as well.
 
   ![scatter_plot](Images/scatter.png)
+
 Ask for any remaining questions before moving on.
 
 ### 16. Instructor Do: Returns (10 mins)
@@ -809,6 +818,8 @@ Walk through the demo and explain the following:
 
   ![Plot of Cumulative Returns](Images/cumulative-return-plot.png)
 
+Now that students know how to calculate and plot returns, students will practice doing this by analyzing and plotting historical AMD data for Harold.
+
 ### 17. Students Do: Returns Over Date Ranges (20 mins)
 
 In this activity, Harold's manager wants Harold to analyze the last 10 years of historical price data for AMD and plot the daily returns over the last 1, 3, 5, and 10 year time periods. In addition, Harold's manager wants to see the differences in average daily returns for each time period to perhaps understand whether a short or long term perspective should be used in prospecting AMD as a potential candidate.
@@ -823,15 +834,21 @@ Help Harold analyze the last 10 years of AMD stock data.
 
 * [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Unsolved/returns_over_date_ranges.ipynb)
 
-### 18. Instructor Do: Returns Over Date Ranges (5 mins)
+### 18. Instructor Do: Review Returns Over Date Ranges (5 mins)
 
 **Files:**
 
 * [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Solved/returns_over_date_ranges.ipynb)
 
-Open the solution and explain the following:
+Instruct the students to take 3 minutes to complete a turn and teach activity. Students should:
 
-* We need to set the `%matplotlib inline` feature to display plots in jupyter notebooks.
+* Work with their neighbors and share two new things they learned about returns
+
+* Share answers to the following questions: What is the value behind calculating cumulative returns? Why not just calculate daily returns over time?
+
+With the remaining time, open the solution, and discuss the following points:
+
+* We need to set the `%matplotlib inline` feature to display plots in Jupyter notebooks.
 
   ```python
   # Import libraries and dependencies
@@ -868,7 +885,7 @@ Before ending class, leave some encouraging remarks, and give students a space t
 
 * Ask students the following questions:
 
-  * What activity was the most enjoyable to complete The most fulfilling?
+  * What activity was the most enjoyable to complete? The most fulfilling?
 
   * What's the most stressful thing about programming?
 
@@ -879,7 +896,7 @@ Before ending class, leave some encouraging remarks, and give students a space t
 * Underscore that the students have been doing excellent at learning both financial and technical concepts. This is not an
 easy feat. It takes skill, intellect and abstract thinking, and perseverance to make it this far. They should all pat themselves on the back.
 
-* Underscore that the students have come a long way. Last week they learend Python. Now they're integrating Pandas and Matplotlib into their Python programs. Next they'll start using more advanced Financial calculations and functions, and eventually move onto working with APIs.
+* Underscore that the students have come a long way. Last week they learned Python. Now they're integrating Pandas and Matplotlib into their Python programs. Next they'll start using more advanced Financial calculations and functions, and eventually move onto working with APIs.
 
 * Let the students know that office hours are available for anyone who might have additional questions; would like to review more; or would like to just talk Python, Pandas, Financial Portfolios, and/or FinTech!
 
