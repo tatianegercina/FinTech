@@ -100,6 +100,8 @@ If time remains, proceed to finish reviewing the agenda for today's class. Commu
 
 ### 2. Instructor Do: Sorting (5 mins)
 
+In this activity, students will learn how to sort DataFrame values in ascending and descending order. Instructors will disseminate the necessary conceptual and technical information through a live demonstration.
+
 **Files:**
 
 * [sort_dataframe.ipynb](Activities/Ins_Sorting/Solved/sort_dataframe.ipynb)
@@ -124,7 +126,7 @@ Walk through the solution and highlight the following:
 
 ### 3. Students Do: Sorting (15 mins)
 
-In this activity, students will calculate daily returns for a single ticker for the year of 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
+In this activity, students will extract data for a single ticker from NASDAQ.com and calculate daily returns for the year of 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
 
 **Files:**
 
@@ -134,6 +136,12 @@ In this activity, students will calculate daily returns for a single ticker for 
 
 * [README.md](Activities/03-Stu_Sorting/README.md)
 
+While students are completing the activity, instructors and TAs should be walking around to ensure students do not have any difficulty extracting data from the NASDAQ website.
+
+If a student finishes the activity early, ask them if they'd be willing to participate in an activity in the review module. The activity will include the student live coding how to sort a DataFrame by more than one column. Spend up to 5 minutes with this student preparing for and reviewing the prompt. The prompt can be found below:
+
+* Let's say there's a DataFrame named `df` that contains Olympic medal data (gold, silver, and bronze). The DataFrame has four columns: `country`, `no_of_medals`, `class_of_medal`, and `year_medal_won`. Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by number of medals awarded, in descending order (the medals awarded most should be at the top).
+
 - - -
 
 ### 4. Instructor Do: Review Sorting (5 mins)
@@ -142,7 +150,21 @@ In this activity, students will calculate daily returns for a single ticker for 
 
 * [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Solved/out_of_sorts.ipynb)
 
-Open the solution and explain the following:
+Review the sorting activity by having a student participate in a live coding exercise in front of the class. This exercise should only be completed if a student feels comfortable. The student should also have agreed in the last module to conduct the live coding exercise. If a student doesn't agree to complete the activity, or none of the students seemed exceptionally competent with the `sort_values` function/concepts, skip down to the dry walkthrough of the solution.
+
+Ask the student who was vetted out in the previous exercise to live code an answer to the following prompt. If the student loses momentum or seems stuck while live coding, ask guided questions like "How does one sort by more than one column?" and "Can I use a list to tell Pandas to sort some columns by ascending and others descending?"
+
+Continue the reflective exercise by asking the student who was vetted out in the previous exercise to live code an answer to the following prompt. If the student loses momentum or seems stuck while live coding, ask guided questions like "How does one sort by more than one column?" and "Can I use a list to tell Pandas to sort some columns by ascending and others descending?"
+
+Scenario:
+
+* Let's say there's a DataFrame named `df` that contains Olympic medal data (gold, silver, and bronze). The DataFrame has four columns: `country`, `no_of_medals`, `class_of_medal`, and `year_medal_won`. Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by number of medals awarded, in descending order (the medals awarded most should be at the top).
+
+  ```python
+  df.sort_values(['country','no_of_medals'], ascending=[True,False])
+  ```
+
+If the student live coding review activity could not be completed, open the solution and explain the following:
 
 * The `sort_values` function can be used to sort a DataFrame by a specific column.
 
@@ -162,11 +184,13 @@ Open the solution and explain the following:
 
     ![stu_sort_descending.png](Images/stu_sort_descending.png)
 
-  Ask for any remaining questions before moving on.
+Ask for any remaining questions before moving on.
 
 - - -
 
 ### 5. Instructor Do: Groupby (10 mins)
+
+This module focuses on getting students started with grouping and aggregating data. Grouping data is particularly valuable when dealing with data for multiple stocks. Students will receive a brief overview of what grouping is, and then the instructor will perform a live demo of how to use the Pandas `groupby` function.
 
 **Files:**
 
@@ -325,6 +349,14 @@ Walkthrough the solution and go over the following discussion points:
   ripple             0.154144
   Name: data_priceUsd, dtype: float64
   ```
+
+End the review session with the following reflective questions:
+
+* Does the concept of grouping to aggregate data make sense?
+
+* How was working with more than one ticker in this activity?
+
+* What are some examples of situations where data would need to be grouped and then aggregated?  example would be calculating average grade by students.
 
 - - -
 
