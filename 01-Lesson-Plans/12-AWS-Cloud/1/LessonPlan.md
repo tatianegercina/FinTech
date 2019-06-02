@@ -23,22 +23,22 @@ Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ...
 
-### 0. Instructor Do: Introduce SageMaker (10 mins)
+### 0. Instructor Do: Introduce AWS SageMaker (10 mins)
 
-SageMaker Homepage: https://aws.amazon.com/sagemaker/
-
-Visit the SageMaker homepage and cover the following points.
+Visit the SageMaker homepage and cover the following points.  
+https://aws.amazon.com/sagemaker/
 
 SageMaker is a _platform service_ which consists of three main components that work together or independently:
 * Build - Notebook service to explore and prepare the data
 * Train - Model training environment and infrastructure
-* Deploy - Publish and host a model on an HTTP API endpoint or execute a batch prediction
+* Deploy - Publish and host a model on an HTTP API endpoint or execute a batch prediction / inference.
 
 Additionally, SageMaker includes layers that work across the components:
+* Ground Truth - Data labeling service
+* Tuning - Automatic Model Tuning - Search hyper-parameter values for best model fit
 * Algorithms - Built-in algorithms (k-NN, k-Means, PCA, Forecasting, and many more)
 * Frameworks - Deep learning framework containers (Scikit-learn, TensorFlow, MXNet, PyTorch, and others)
 * Docker containers - Bring your own model or algorithm container and publish to [AWS ECR](https://aws.amazon.com/ecr/)
-* Tuning - Automatic Model Tuning - Search hyper-parameter values for best model fit
 * Marketplace -  SageMaker integrates with AWS Marketplace to find, buy and deploy third-party algorithms and models
 
 Review some of the advantages of using SageMaker:
@@ -46,33 +46,120 @@ Review some of the advantages of using SageMaker:
 * SageMaker infrastructure enables growth at scale with on-demand compute instances and dynamic storage
 * SageMaker pricing for building, training and hosting is billed by the second, no minimum fees and no upfront commitments
 * SageMaker advertises "One-click Training" and "One-click Deployment"
-* SageMaker comes with built-in security, access controls and monitoring
+* SageMaker comes with built-in security, which includes access controls and monitoring
 
 
-### 0. Everyone Do: Getting Started with SageMaker (5 mins)
-
-Follow the steps below to create the required AWS resources for SageMaker.
-
-0. Signup for an AWS account (if not done previously)
-0. Login to the AWS Console: https://console.aws.amazon.com
-0. Create an Amazon S3 Bucket for SageMaker, for example: *sagemaker-`<CURRENT-DATETIME>`*
-
-
-### 0. Everyone Do: Explore SageMaker (5 mins)
-
-Visit the SageMaker console and show the main components from the left pane menu.
-https://console.aws.amazon.com/sagemaker/
+### 0. Students Do: Explore SageMaker (5 mins)
+* Have students login to the AWS Console: https://console.aws.amazon.com
+* Find and visit SageMaker in the Services menu.  
+Remind students that SageMaker might not be available on all AWS regions, but `us-east-1 (N. Virginia)` is sure to have it.  
+Direct link: https://console.aws.amazon.com/sagemaker/home?region=us-east-1
+* Give students a few minutes to explore the main components on the left pane menu.  
+* Have TA's ensure all students are able to login.
 
 
-### 0. Everyone Do: Explore SageMaker (10 mins)
-0. Create an Amazon SageMaker Notebook Instance
-0. Create a Jupyter Notebook
+### 0. Everyone Do: Create a SageMaker Notebook Instance (5 mins)
+Follow these steps to create a SageMaker Notebook Instance.
+
+First, create the required AWS resources for SageMaker.
+* From the main AWS Console, find the `S3` service: https://s3.console.aws.amazon.com
+* Create a bucket for SageMaker:
+  S3 -> Buckets -> click `Create Bucket` and fill in details as follows:
+  * Section: **Name and region**
+    + Bucket name: *sagemaker-`<CURRENT-DATE+TIME>`* (for example: `sagemaker-20190701-1820`)
+    + Region: `(same as SageMaker instance)`
+    + Click: "Next" (leave defaults)
+  * Section: **Configure options**
+    + Click: "Next" (leave defaults)
+  * Section: **Set permissions**
+    + Click: "Next" (leave defaults)
+  * Section: **Review**
+    + Click: `Create bucket`
+* Note down (copy/paste/save) the name of bucket for use in the following section.
+
+Next, create a SageMaker Instance.
+* From the SageMaker console, use the left pane menu and visit: Notebook -> [Notebook instances](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances)
+* On the right side, click: [Create notebook instance](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances/create)
+![Create notebook instance](Images/01-create-notebook-instance-1.png)
+* Fill in the required values, leaving most defaults unchanged, for example:
+
+  * Notebook instance name: `sm-test`
+  * Notebook instance type: `ml.t2.medium`
+  * Elastic Inference: `none`
+  * IAM role: `Create a new role` (enter the name of the previously create *S3 bucket* in "Specific S3 buckets", then click `Create role`)
+  ![Create IAM Role success](Images/02-iam-role-create-success.png)
+  * Root access - `Enable - Give users root access to the notebook` (remind students that this is less safe but allows more control over the instance)
+
+* Click: `Create notebook instance`   
+Note: the `IAM Role` is required, if this or another required field value is missing the process won't proceed until addressed. If all required values where provided you'll see a success message.  
+![Create Notebook Instance success](Images/03-notebook-instance-create-success.png)
+
+* Back in the Notebook Instance list, wait for the status of the new instance to be: "InService"  
+![Create Notebook Instance success](Images/04-notebook-instance-status.png)
+
+* Click on the Notebook Instance to view further details
+![Notebook Instance details](Images/05-notebook-instance-details.png)  
+
+* Remind students that AWS charges for these and most resources as they are created, event when not in use, this instance is billed for by the second until it's turned off and deleted.
+
+
+### 0. Everyone Do: Create a new Jupyter Notebook (5 mins)
+
+* Once the Notebook Instance has status `InService`, go to "Actions" and click on `Open Jupyter`, this is the traditional notebook view. `JupyterLab` is a similar more modern view.  
+![Notebook Instance details](Images/06-notebook-instance-actions.png)  
+
+* On the left side, click `New` and select `conda_python3` to create a new notebook.
+![Notebook Instance details](Images/07-new-notebook.png)  
+
+* Enter and execute python code to demonstrate functionality.  
+![Notebook Instance details](Images/08-notebook-untitled.png)
+
+
+### 0. Everyone Do: Open an existing Jupyter Notebook (5 mins)
+
+* From the main `Jupyter` view, use the `Upload` button on the right and select an existing notebook.  
+For example: `04-Pandas/3/Activities/16-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb`  
+Select the local notebook file and click `Upload`.  
+![Notebook Instance details](Images/09-upload-notebook.png)
+
+* Open the notebook.
+
+* You'll probably see the message: `Kernel not found`, select `conda_python3` and click `Set Kernel`
+![Notebook Instance details](Images/10-upload-nb-kernel-not-found.png)
+
+* Now any you can run commands on the notebook.  
+Note: you might need to make some of the `CSV` input files available by also uploading them to the right location).
 
 
 ### 0. Everyone Do: Create and Deploy a Machine Learning Model (15 mins)
 
-0. Open the following Jupyter Notebook (__TBD: or a custom/similar notebook with modified steps__):  
-https://github.com/awslabs/amazon-sagemaker-examples/blob/master/sagemaker-python-sdk/1P_kmeans_highlevel/kmeans_mnist.ipynb
+* Open the following Jupyter Notebook (__TBD: or a custom/similar notebook with modified steps__):  
+
+* From the main `Jupyter` view, select `SageMaker Examples`, then scroll to `Introduction to Amazon Algorithms`, then find: `linear_learner_mnist.ipynb`
+
+* Run through the notebook.
+
+* TBD.
+
+
+### 0. Everyone Do: Delete Notebook Instance (5 mins)
+
+* From the SageMaker console, use the left pane menu and visit: Notebook -> [Notebook instances](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances)
+
+* Select the the Notebook Instance (or follow this process for all) on the left circular dot.
+![Notebook Instance list](Images/notebook-instance-list.png)
+
+* Once selected, click on the right `Actions` menu and select `Stop`.
+
+* Refresh the page and wait for the instance `Status` to change to `Stopped`.
+![Notebook Instance actions](Images/notebook-instance-actions.png)
+
+* Select the instance again, click on `Actions` and select `Delete` then confirm delete.  
+![Notebook Instance delete](Images/notebook-confirm-delete.png)
+
+
+* At the end of the lesson, the notebook instances list should be empty and state: "There are currently no resources.", otherwise charges will be incurred for any remaining active instances.
+
 
 - - -
 
