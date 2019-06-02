@@ -106,13 +106,13 @@ Note: the `IAM Role` is required, if this or another required field value is mis
 ### 0. Everyone Do: Create a new Jupyter Notebook (5 mins)
 
 * Once the Notebook Instance has status `InService`, go to "Actions" and click on `Open Jupyter`, this is the traditional notebook view. `JupyterLab` is a similar more modern view.  
-![Notebook Instance details](Images/06-notebook-instance-actions.png)  
+![Notebook Instance actions](Images/06-notebook-instance-actions.png)  
 
 * On the left side, click `New` and select `conda_python3` to create a new notebook.
-![Notebook Instance details](Images/07-new-notebook.png)  
+![Notebook Environment](Images/07-new-notebook.png)  
 
 * Enter and execute python code to demonstrate functionality.  
-![Notebook Instance details](Images/08-notebook-untitled.png)
+![Untitled Notebook](Images/08-notebook-untitled.png)
 
 
 ### 0. Everyone Do: Open an existing Jupyter Notebook (5 mins)
@@ -120,12 +120,12 @@ Note: the `IAM Role` is required, if this or another required field value is mis
 * From the main `Jupyter` view, use the `Upload` button on the right and select an existing notebook.  
 For example: `04-Pandas/3/Activities/16-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb`  
 Select the local notebook file and click `Upload`.  
-![Notebook Instance details](Images/09-upload-notebook.png)
+![Upload Notebook](Images/09-upload-notebook.png)
 
 * Open the notebook.
 
 * You'll probably see the message: `Kernel not found`, select `conda_python3` and click `Set Kernel`
-![Notebook Instance details](Images/10-upload-nb-kernel-not-found.png)
+![Notebook Kernel not found](Images/10-upload-nb-kernel-not-found.png)
 
 * Now any you can run commands on the notebook.  
 Note: you might need to make some of the `CSV` input files available by also uploading them to the right location).
