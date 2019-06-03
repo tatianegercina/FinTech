@@ -123,4 +123,8 @@ Walk through the solution and highlight the following:
 
 * Dividing the frequency distribution of heads-to-tails combinations by the number of simulations performed shows the probability distribution of the potential outcomes for 10 simulations of flipping a coin 10 times.
 
-  ![coin-flip-probability-distribution](Images/coin-flip-probability-distribution.png)
+  ![coin-flip-10-simulations](Images/coin-flip-10-simulations.png)
+
+* Increasing the number of simulations to `100` produces a different probability distribution of potential head-to-tails combinations.
+
+  ![coin-flip-100-simulations](Images/coin-flip-100-simulations.png)
