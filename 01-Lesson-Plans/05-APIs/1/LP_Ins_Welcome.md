@@ -26,7 +26,7 @@ Start the class off with a review of the introductory slide about `APIs`. Highli
 
 Introduce `Quandl` and briefly demonstrate to students how to use an internet browser to submit a Quandl API call.
 
-* `Quandl` is a data mart of financial data. Quandl collects data from various sources and makes that data available to their users. `Quandl` is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Quandl has created an API for users to get access to their data.
+* `Quandl` is a data mart of financial data. Quandl collects data from various sources, consolidates the data,and then makes it available to users. `Quandl` is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Quandl's data can be accessed by users via their API. The API supports multiple programming languages, including Python.
 
   ![quandl_flow.gif](Images/quandl_flow.gif)
 
@@ -60,11 +60,11 @@ If time remains, communicate to students that if they wanted to automate the NAS
 
 * Convey what's happening in each gif.
 
-  1. Recording actions/requests
+  1. Actions are recorded
 
-  2. Executing actions/requests
+  2. Actions/requests are executed
 
-  2. Reviewing action/request output
+  2. Action/request output is reviewed
 
 * The `WrapAPI` could actually be used to submit Quandl API requests via a web browser as well. `WrapAPI` could automate the process of copying and pasting the request URL into the browser.
 
