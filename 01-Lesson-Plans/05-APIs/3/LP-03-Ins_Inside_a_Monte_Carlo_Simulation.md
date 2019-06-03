@@ -128,3 +128,5 @@ Walk through the solution and highlight the following:
 * Increasing the number of simulations to `100` produces a different probability distribution of potential head-to-tails combinations.
 
   ![coin-flip-100-simulations](Images/coin-flip-100-simulations.png)
+
+* Increasing the number of simulations to `1000` produces 
