@@ -130,3 +130,5 @@ Walk through the solution and highlight the following:
   ![coin-flip-100-simulations](Images/coin-flip-100-simulations.png)
 
 * Increasing the number of simulations to `1000` produces a (yet again) different probability distribution of potential head-to-tails combinations with `(5,5)` having the highest probability of occurring as should be expected. This is because a higher amount of simulations produce more reliable results in the long-run.
+
+  ![coin-flip-1000-simulations](Images/coin-flip-1000-simulations.png)
