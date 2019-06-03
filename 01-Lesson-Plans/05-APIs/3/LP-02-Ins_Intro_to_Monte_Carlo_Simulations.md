@@ -8,7 +8,7 @@ Ease students into the notion of Monte Carlo simluations by presenting the follo
 
 * What is a Monte Carlo Simluation?
 
-  > Like a simulation, a Monte Carlo Simulation goes the next step and is a simulation that uses probability and variables to predict the future outcomes of a random process.
+  > Like a simulation, a Monte Carlo Simulation goes the next step and is a simulation that uses probability and variables to predict the future outcomes of a random process; Monte Carlo simulations are used to understand the risk of uncertainty in prediction and forecasting models.
 
 * What is probability?
 
