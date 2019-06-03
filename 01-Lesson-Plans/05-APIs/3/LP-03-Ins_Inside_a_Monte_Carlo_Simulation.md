@@ -112,3 +112,7 @@ Walk through the solution and highlight the following:
   print("-----------------------------------")    
   print(f"Results: {tuples}")
   ```
+
+  ```
+  Results: [(6, 4), (7, 3), (4, 6), (7, 3), (5, 5), (4, 6), (5, 5), (6, 4), (7, 3), (6, 4)]
+  ```
