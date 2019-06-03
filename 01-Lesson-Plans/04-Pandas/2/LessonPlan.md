@@ -578,6 +578,20 @@ The `concat` function creates a new DataFrame that includes data from all of the
 
 * [joining_forces.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/joining_forces.ipynb)
 
+Conduct a formal review Q&A with the following questions:
+
+* If I wanted to consolidate two DataFrames with the same columns into one DataFrame, which concat axis would I use?
+
+    > "By rows. Concatenating by rows will combine the two DataFrames so that all rows are in one DataFrame."
+
+* Let's say I wanted to take an intersection of two DataFrames that I have combined. Would I use the inner join operation or outer join operation?
+
+    > "Inner join. Inner join will return a DataFrame with only matching rows."
+
+* Which join will produce more rows? An inner join our outer join?
+
+    > "Outer join. Inner joins represent only a section of all of the data."
+
 Walkthrough the solution and go over the following discussion points:
 
 * The `concat` function can be used to combine or link more than one DataFrame.
@@ -597,6 +611,8 @@ Walkthrough the solution and go over the following discussion points:
 - - -
 
 ### 15. Instructor Do: Standard Deviation and Risk (10 mins)
+
+The Standard Deviation and Risk module focuses on students learning what `standard deviation` is and how it can be used to determine the risk associated with an investment. The instructor will demo how to calculate `standard deviation` using Pandas. Students will learn standard deviation so they can then calculate `sharpe ratios` in the next activity.
 
 **Files:**
 
@@ -693,6 +709,8 @@ Live code how to use Pandas to calculate `standard deviation` to evaluate risk:
 
 ### 16. Instructor Do: Sharpe Ratios (5 mins)
 
+In this module, students will be introduced to sharpe ratios and why risk-reward ratios are important in finance.
+
 **Files:**
 
 * [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py)
@@ -735,6 +753,8 @@ Open the solution, and live code how to calculate and plot sharpe ratios:
 ### 17. Students Do: Risky Business (20 mins)
 
 It's time to wrap it all together. In this activity, students will prep data and use standard deviation and sharpe ratios to analyze cryptocurrency portfolio performance for Harold and themselves. The goal is to calculate who has the riskier portfolio: Harold or themselves. Students will also identify which individual cryptos have had the greatest return.
+
+Encourage students to work in pairs for this assignment.
 
 **Files:**
 
@@ -806,6 +826,8 @@ Walk through the solution and highlight the following:
   ```
 
   ![sharpe_plot.png](Images/sharpe_plot.png)
+
+Ask the students the following questions:
 
 * How many smart investments did Harold make compared to risky investments? How many did you make?
 
