@@ -121,12 +121,12 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-dataframe](Images/coin-flip-dataframe.png)
 
-* Dividing the frequency distribution of heads-to-tails combinations by the number of simulations performed shows the probability distribution of the potential outcomes for 10 simulations of flipping a coin 10 times.
+* Dividing the frequency distribution of heads-to-tails combinations by the number of simulations performed shows the probability distribution of the potential outcomes for 10 simulations of flipping a coin 10 times. Notice the heads-to-tail combination of `(5,5)` is one of the least likely outcomes yet we would expect it to be the highest probable outcome (50% heads, 50% tails) -- what gives? This is because a small number of simulations provides a limited number of data points that may or may not be reliable in the long-run.
 
   ![coin-flip-10-simulations](Images/coin-flip-10-simulations.png)
 
-* Increasing the number of simulations to `100` produces a different probability distribution of potential head-to-tails combinations.
+* Increasing the number of simulations to `100` produces a different probability distribution of potential head-to-tails combinations with `(5,5)` moving closer to being the most probable outcome as we would expect. 
 
   ![coin-flip-100-simulations](Images/coin-flip-100-simulations.png)
 
-* Increasing the number of simulations to `1000` produces 
+* Increasing the number of simulations to `1000` produces a (yet again) different probability distribution of potential head-to-tails combinations with `(5,5)` having the highest probability of occurring as should be expected. This is because a higher amount of simulations produce more reliable results in the long-run.
