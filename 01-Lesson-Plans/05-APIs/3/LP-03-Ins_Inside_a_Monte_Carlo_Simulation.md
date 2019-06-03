@@ -121,7 +121,7 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-dataframe](Images/coin-flip-dataframe.png)
 
-* Dividing the frequency distribution of heads-to-tails combinations by the number of simulations performed shows the probability distribution of the potential outcomes for 10 simulations of flipping a coin 10 times. Notice the heads-to-tail combination of `(5,5)` is one of the least likely outcomes yet we would expect it to be the highest probable outcome (50% heads, 50% tails) -- what gives? This is because a small number of simulations provides a limited number of data points that may or may not be reliable in the long-run.
+* Dividing the frequency distribution of heads-to-tails combinations by the number of simulations performed shows the probability distribution of the potential outcomes for 10 simulations of flipping a coin 10 times. Notice the heads-to-tail combination of `(5,5)` is one of the least likely outcomes, yet we would expect it to be the highest probable outcome (50% heads, 50% tails) -- what gives? This is because a small number of simulations provides a limited number of data points that may or may not be reliable in the long-run.
 
   ![coin-flip-10-simulations](Images/coin-flip-10-simulations.png)
 
