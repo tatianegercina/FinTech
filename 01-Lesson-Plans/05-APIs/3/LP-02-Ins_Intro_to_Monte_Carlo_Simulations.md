@@ -1,6 +1,6 @@
 ### 2. Instructor Do: Intro to Monte Carlo Simulations (5 mins)
 
-Present the following questions and answers regarding simulations:
+Ease students into the notion of Monte Carlo simluations by presenting the following questions and answers:
 
 * What is a simulation?
 
@@ -13,5 +13,7 @@ Present the following questions and answers regarding simulations:
 * What is probability?
 
   > The chance of an event happening. For example, the chance of a coin landing on heads is 50%.
+
+
 
 Answer any student questions before moving on.
