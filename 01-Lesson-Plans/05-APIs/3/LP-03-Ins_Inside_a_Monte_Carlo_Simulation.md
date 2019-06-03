@@ -1,4 +1,4 @@
-### 3 Instructor Demo: Inside a Monte Carlo Simulation (0:05 mins)
+### 3. Instructor Demo: Inside a Monte Carlo Simulation (0:05 mins)
 
 This activity introduces students to how a simple Monte Carlo simulation could look. In particular, this activity showcases a technical example of the Monte Carlo simulation stated in the previous activity.
 
