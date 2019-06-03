@@ -119,4 +119,8 @@ Walk through the solution and highlight the following:
 
 * Leveraging the `value_counts` function by setting the results of the simulation to a Pandas DataFrame allows for counting the occurrences of the different heads-to-tails combinations.
 
-  ![results-dataframe](Images/results-dataframe.png) 
+  ![coin-flip-dataframe](Images/coin-flip-dataframe.png)
+
+* Dividing the frequency distribution of heads-to-tails combinations by the number of simulations performed shows the probability distribution of the potential outcomes for 10 simulations of flipping a coin 10 times.
+
+  ![coin-flip-probability-distribution](Images/coin-flip-probability-distribution)
