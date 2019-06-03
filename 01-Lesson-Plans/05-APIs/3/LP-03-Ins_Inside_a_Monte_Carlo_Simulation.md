@@ -1,8 +1,8 @@
-This activity introduces the student to the concept of correlation, or the positive or negative relationship between two variables. Two datasets have been chosen to showcase the example of correlation: ice cream sales and drowning incidents.
+This activity introduces students to how a simple Monte Carlo simulation could look. In particular, this activity showcases a technical example of the Monte Carlo simulation stated in the previous activity.
 
 **Files:**
 
-* [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
+* [coin_flip_simulation.ipynb](Activities/01-Ins_Inside_a_Monte_Carlo_Simulation/Solved/coin_flip_simulation.ipynb)
 
 Walk through the solution and highlight the following:
 
