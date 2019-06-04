@@ -15,7 +15,9 @@ In this assignment, you will build and evaluate several machine learning models 
 
 ### Files
 
-[Starter Notebook](Starter_Code/credit-risk.ipynb)
+[Resampling Starter Notebook](Starter_Code/credit_risk_resampling.ipynb)
+
+[Ensemble Starter Notebook](Starter_Code/credit_risk_ensemble.ipynb)
 
 - - -
 
