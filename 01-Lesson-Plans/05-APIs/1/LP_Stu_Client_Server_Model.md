@@ -36,4 +36,6 @@ Ask students some of the following review questions:
 
   > "Servers provided by companies like Google, Yahoo, Microsoft, etc. are used to store and distribute email messages. Email applications and internet browsers are clients that are used to specify who emails are sent to and the body of emails. Clients are used to submit email content to servers, and then servers distribute the message to the corresponding email targets."
 
+* If time remains, round robin and ask some students to give details about the data they saw transmitted. This will allow students to compare what they say with what others saw. It will also help students understand some of the common data exchanges, such as user credentials and search queries.
+
 Ask for any remaining questions before moving on.
