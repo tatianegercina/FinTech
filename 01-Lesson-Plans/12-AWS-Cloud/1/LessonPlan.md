@@ -50,16 +50,21 @@ Review some of the advantages of using SageMaker:
 
 
 ### 0. Students Do: Explore SageMaker (5 mins)
-* Have students login to the AWS Console: https://console.aws.amazon.com
+Give students a few minutes to explore SageMaker.
+
+* First, students login to the AWS Console: https://console.aws.amazon.com
 * Find and visit SageMaker in the Services menu.  
 Remind students that SageMaker might not be available on all AWS regions, but `us-east-1 (N. Virginia)` is sure to have it.  
 Direct link: https://console.aws.amazon.com/sagemaker/home?region=us-east-1
-* Give students a few minutes to explore the main components on the left pane menu.  
+* Now students can explore the main components on the left pane menu.  
 * Have TA's ensure all students are able to login.
 
 
 ### 0. Everyone Do: Create a SageMaker Notebook Instance (5 mins)
-Follow these steps to create a SageMaker Notebook Instance.
+
+SageMaker uses a compute instance to run notebooks, the create process will configure multiple settings behind the scenes.
+
+Have students follow along executing the next steps to create a SageMaker Notebook Instance.
 
 First, create the required AWS resources for SageMaker.
 * From the main AWS Console, find the `S3` service: https://s3.console.aws.amazon.com
@@ -77,7 +82,7 @@ First, create the required AWS resources for SageMaker.
     + Click: `Create bucket`
 * Note down (copy/paste/save) the name of bucket for use in the following section.
 
-Next, create a SageMaker Instance.
+Next, create the SageMaker Instance.
 * From the SageMaker console, use the left pane menu and visit: Notebook -> [Notebook instances](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances)
 * On the right side, click: [Create notebook instance](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances/create)
 ![Create notebook instance](Images/01-create-notebook-instance-1.png)
@@ -94,22 +99,25 @@ Next, create a SageMaker Instance.
 Note: the `IAM Role` is required, if this or another required field value is missing the process won't proceed until addressed. If all required values where provided you'll see a success message.  
 ![Create Notebook Instance success](Images/03-notebook-instance-create-success.png)
 
-* Back in the Notebook Instance list, wait for the status of the new instance to be: "InService"  
-![Create Notebook Instance success](Images/04-notebook-instance-status.png)
+* Click on the Notebook Instance to view further details  
+![Notebook Instance details](Images/04-notebook-instance-details.png)  
 
-* Click on the Notebook Instance to view further details
-![Notebook Instance details](Images/05-notebook-instance-details.png)  
+
+* Back in the Notebook Instance list, refresh the page and wait for the status of the new instance to be: `InService`  
+![Create Notebook Instance success](Images/05-notebook-instance-status.png)
 
 * Remind students that AWS charges for these and most resources as they are created, event when not in use, this instance is billed for by the second until it's turned off and deleted.
 
 
 ### 0. Everyone Do: Create a new Jupyter Notebook (5 mins)
 
-* Once the Notebook Instance has status `InService`, go to "Actions" and click on `Open Jupyter`, this is the traditional notebook view. `JupyterLab` is a similar more modern view.  
+Show students how to create a new Jupyter notebook in SageMaker's notebook instance.
+
+* Once the Notebook Instance has status `InService`, go to "Actions" and click on `Open JupyterLab`.  
 ![Notebook Instance actions](Images/06-notebook-instance-actions.png)  
 
-* On the left side, click `New` and select `conda_python3` to create a new notebook.
-![Notebook Environment](Images/07-new-notebook.png)  
+* On JupyterLab Launcher, select notebook `conda_python3` to create a new notebook.
+![Notebook Environment](Images/07-jupyterlab-env-conda_python3.png)  
 
 * Enter and execute python code to demonstrate functionality.  
 ![Untitled Notebook](Images/08-notebook-untitled.png)
@@ -117,21 +125,25 @@ Note: the `IAM Role` is required, if this or another required field value is mis
 
 ### 0. Everyone Do: Open an existing Jupyter Notebook (5 mins)
 
-* From the main `Jupyter` view, use the `Upload` button on the right and select an existing notebook.  
+Show students how to open an existing Jupyter notebook in SageMaker's notebook instance.
+
+* From the main `JupyterLab` view, use the `Upload` icon (arrow up) on the left and select an existing notebook.  
 For example: `04-Pandas/3/Activities/16-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb`  
-Select the local notebook file and click `Upload`.  
+Select the local notebook file to upload.  
 ![Upload Notebook](Images/09-upload-notebook.png)
 
-* Open the notebook.
+* Open the notebook. You'll probably see the message: `Select Kernel` or `Kernel not found`, select `conda_python3` and click `Select` or `Set Kernel`  
+![Notebook Kernel not found](Images/10-notebook-select-kernel-1.png)
 
-* You'll probably see the message: `Kernel not found`, select `conda_python3` and click `Set Kernel`
-![Notebook Kernel not found](Images/10-upload-nb-kernel-not-found.png)
+![Notebook Kernel not found](Images/10-upload-nb-kernel-not-found-2.png)
 
-* Now any you can run commands on the notebook.  
+* Now you can run commands on the notebook cells.  
 Note: you might need to make some of the `CSV` input files available by also uploading them to the right location).
 
 
 ### 0. Everyone Do: Create and Deploy a Machine Learning Model (15 mins)
+
+Show students how a Machine Learning model is created, trained and deployed in SageMaker.
 
 * Open the following Jupyter Notebook (__TBD: or a custom/similar notebook with modified steps__):  
 
@@ -143,6 +155,8 @@ Note: you might need to make some of the `CSV` input files available by also upl
 
 
 ### 0. Everyone Do: Delete Notebook Instance (5 mins)
+
+Show students how to delete their SageMaker notebook instance so that no billing charges are incurred for it after class.
 
 * From the SageMaker console, use the left pane menu and visit: Notebook -> [Notebook instances](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances)
 
