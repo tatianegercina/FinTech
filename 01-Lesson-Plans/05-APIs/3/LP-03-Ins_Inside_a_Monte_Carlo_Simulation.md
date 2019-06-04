@@ -17,47 +17,41 @@ Walk through the solution and highlight the following:
   %matplotlib inline
   ``` 
 
-* A coin is flipped 10 times for each trial or simulation. Therefore, there is a `50%` chance for the coin to land on heads and a `50%` chance for the coin to land on heads. That is why the `random` class from the Numpy library is used to generate integers of `0` or `1`. If `0`, then the coin flip is considered heads, otherwise if `1`, the coin flip is considered tails.
+* A coin is flipped 10 times for each trial or simulation. Therefore, there is a `50%` chance for the coin to land on heads and a `50%` chance for the coin to land on heads. The `random` class from the `numpy` library is used to randomly choose between the two outcomes: heads or tails. 
 
   ```python
-  # Flip a coin: heads or tails
-  for i in range(num_flips):
-      # Random int: 0 or 1
-      coin_flip = random.randint(0,2)
+  # Set number of simulations and coin flips
+  num_simulations = 20
+  num_flips = 10
 
-      # Logic to determine head or tails
-      if coin_flip == 0:
-          result = "heads"
-          num_heads+=1
-      elif coin_flip == 1:
-          result = "tails"
-          num_tails+=1
-        
-      # Print trial
-      print(f"  Flip {i+1}: {result}")
+  # Set a list acting as a coin
+  coin = ["heads", "tails"]
 
-  # Print number of heads and tails for the simulation
-  print("  -----------------------------------")
-  print(f"  Number of Heads: {num_heads}")
-  print(f"  Number of Tails: {num_tails}")
+  # Create an empty DataFrame to hold simulation results
+  monte_carlo = pd.DataFrame()
+
+  # Run n number of simulations
+  for n in range(num_simulations):
+
+      # Set an empty list to hold flip results
+      flips = []
+
+      # Flip the coin several times
+      for i in range(num_flips):
+          # Random int: 0 or 1
+          coin_flip = random.choice(coin)
+
+          # Append flip result to list
+          flips.append(coin_flip)
+
+      # Append column for each simulation and flip results
+      monte_carlo[f"Simulation {n}"] = pd.Series(flips)
+
+  # Print the DataFrame
+  monte_carlo
   ```
 
-  ```
-  Simulation: 1
-  Flip 1: tails
-  Flip 2: heads
-  Flip 3: tails
-  Flip 4: tails
-  Flip 5: heads
-  Flip 6: heads
-  Flip 7: heads
-  Flip 8: heads
-  Flip 9: tails
-  Flip 10: heads
-  -----------------------------------
-  Number of Heads: 6
-  Number of Tails: 4
-  ```
+  ![coin-flip-dataframe](Images/coin-flip-dataframe.png)
 
 * The `randint` function from the `numpy` library returns random integers from low (inclusive) to high (exclusive). Therefore, the parameters `(0,2)` returns integers `0` or `1`.
 
@@ -119,7 +113,7 @@ Walk through the solution and highlight the following:
 
 * Leveraging the `value_counts` function by setting the results of the simulation to a Pandas DataFrame allows for counting the occurrences of the different heads-to-tails combinations.
 
-  ![coin-flip-dataframe](Images/coin-flip-dataframe.png)
+  
 
 * Dividing the frequency distribution of heads-to-tails combinations by the number of simulations performed shows the probability distribution of the potential outcomes for 10 simulations of flipping a coin 10 times. Notice the heads-to-tail combination of `(5,5)` is one of the least likely outcomes, yet we would expect it to be the highest probable outcome (50% heads, 50% tails) -- what gives? This is because a small number of simulations provides a limited number of data points that may or may not be reliable in the long-run.
 
