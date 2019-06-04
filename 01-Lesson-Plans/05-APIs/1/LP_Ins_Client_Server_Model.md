@@ -18,6 +18,8 @@ Navigate to the 5.1 slides for the `client-server model`, and highlight the foll
 
 * A `server` is a computer program or device/hardware. `Servers` run some form of application and are tasked with interacting and providing functionality to `clients`. `Servers` receive requests from `clients`, and `servers` send responses back to clients.
 
+* Inform students that `client-server` requests are commonly `GET` and `POST` requests. `GET` requests fetch data from servers. `POST` requests transmit data (like user credentials for authorization) to servers.
+
 * Communicate that the `client-server model` is what handles all traffic and requests sent to a server. This includes websites, APIs, and databases. The `client-server model` architecture ensures that requests calls/tasks made to servers are handled appropriately and effectively. When students check Yahoo Finance or login to Facebook.com, they're enacting the client-server model.
 
 Demonstrate the `client-server` model by using the terminal to `ping` Yahoo finance.
