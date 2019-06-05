@@ -1,0 +1,47 @@
+## I Spy, an API
+
+You've received an e-mail from your Python mentor, Julia. Read the e-mail below and see if she has any new tasks for you.
+
+> Good Morning Mentee,
+>
+> I was going through some old documents and came across this list of FinTech APIs I did some research on when implementing a Monte Carlo portfolio simulation (see attached). They're nothing too fancy, but you could use them if you're ever in a bind and need to get some financial data quick. I've included brief descriptions of what each API does.
+>
+> Full disclosure: I haven't checked these APIs out in a while. I'd suggest testing them out to see if they're still functioning. Let me know your findings.
+>
+> All the Best,
+>
+>Julia
+
+APIs
+
+* Quandl is a service that provides historical stock data. For example, this API would be useful if you needed to calculate cummulative returns for `GOOG`.
+
+  > https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json
+
+* The World Bank API has a wealth of international bank data. For example, if you wanted to analyze the growth rate of each countries gross domestic product values (GDP), you could extract GDP values, by year, from thehttp://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json World Bank API.
+
+  > http://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json
+
+* Coinbase provides price data for cryptocurrencies through their API. Use the Coinbase API if you need to get the price of a crypto for any given moment.
+
+  > https://api.coinbase.com/v2/prices/BTC-USD/buy?format=json
+
+## Instructions
+
+Using `Postman`, submit `GET` requests to the above APIs using the provided request URLs. Confirm that a response has been received from the servers.
+
+1. Get `GOOG` stock data using `Quandl API`.
+
+2. Extract `GDP` data for the `US` using `World Bank API`.
+
+3. Identify the current `Bitcoin` price using `Coinbase API`.
+
+4. Get `GOOG` stock data in `CSV` format using `Quandl API`. Take note of how the change in URL alters the format (json vs csv) of the data returned by the API.
+
+### Hint
+
+The output format of an API can be changed by altering the `?format=` part of the link, or changing the extension of the target file from `json` to `csv`. See below for examples.
+
+  * Quandl -> https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json
+
+  * Quandl -> https://www.quandl.com/api/v3/datasets/WIKI/GOOG.csv
