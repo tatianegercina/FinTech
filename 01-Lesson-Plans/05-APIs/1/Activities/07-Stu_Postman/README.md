@@ -12,7 +12,7 @@ You've received an e-mail from your Python mentor, Julia. Read the e-mail below 
 >
 >Julia
 
-APIs
+APIs to Investigate:
 
 * Quandl is a service that provides historical stock data. For example, this API would be useful if you needed to calculate cummulative returns for `GOOG`.
 
@@ -32,9 +32,9 @@ Using `Postman`, submit `GET` requests to the above APIs using the provided requ
 
 1. Get `GOOG` stock data using `Quandl API`.
 
-2. Extract `GDP` data for the `US` using `World Bank API`.
+2. Get `GDP` data for the `US` using `World Bank API`.
 
-3. Identify the current `Bitcoin` price using `Coinbase API`.
+3. Get the current `Bitcoin` price using `Coinbase API`.
 
 4. Get `GOOG` stock data in `CSV` format using `Quandl API`. Take note of how the change in URL alters the format (json vs csv) of the data returned by the API.
 
