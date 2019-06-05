@@ -1,14 +1,8 @@
 # Free Throw Simulation
 
-In this activity, a coach wants to know how one of his players may perform in the long-run when it comes to free throws. The player has a free throw accuracy of approximately `70%` and therefore makes a free throw about `7` out of `10` times. The coach wants to know the likelihood of the player making `10` straight free throws in a single session.
+In this activity, a coach wants to know how one of his players may perform in the long-run when it comes to free throws. The player has a free throw accuracy of approximately `70%` and therefore makes on average `7` free throws for every `10` shots. The coach wants to know the likelihood of the player making `10` straight free throws in a single session.
 
-Create a Monte Carlo simulation 
-
-Harold's company is looking to build a diversified stock portfolio. So far, they've added `JNJ` (Johnson & Johnson) and `HD` (Home Depot) which both reside with the the Healthcare and Consumer Discretionary sectors, respectively. However, now they want to add a third technology sector stock to the mix, in particular, a semiconductor stock. 
-
-As a result, Harold has been asked by his manager to research a set of 5 semiconductor stocks to add to the currently existing portfolio. In order to properly create a diversified portfolio which tends to minimize long-term volatility/risk, stocks within the portfolio should be as uncorrelated as possible so as to create a counter-balance effect (when some stocks fall in price, others may rise in price). 
-
-Therefore, use the Pandas library to help Harold analyze 5 semiconductor stocks -- `INTC`, `AMD`, `MU`, `NVDA`, `TSM` -- and choose the stock with the least correlation to `JNJ` and `HD`.
+Create a Monte Carlo simulation with `1000` simulations of `10` free throws to analyze the player's frequency distribution of made free throws and the corresponding probability distribution of made free throws to determine the likelihood of the player making `10` straight free throws.
 
 ## Instructions
 
