@@ -1,4 +1,4 @@
-### 2. Instructor Do: Postman (5 mins)
+### 2. Instructor Do: The Postman Cometh (5 mins)
 
 In this activity, students will learn how to use Postman. The instructor will demo making `Quandl` API calls with Postman rather than through a browser. This will highlight the advantages of using Postman, such access to a UI, request logs, and tools that format API output for ease of use.
 
@@ -42,7 +42,7 @@ Open `Postman` and perform a live demonstration of submitting an API request to 
 
   ![postman_get.png](Images/postman_get.png)
 
-* The output from an API call is returned in the `Postman` client. `Postman` presents users with the ability to choose the format of the output (i.e. JSON vs. XML).
+* The output from an API call is returned in the `Postman` client. `Postman` presents users with the ability to choose the format of the output (i.e. JSON vs. XML). Indicate that the format of the output on the screen is called `JSON` (Javascript Object Notation).
 
   ![postman_submit.png](Images/postman_submit.png)
 
