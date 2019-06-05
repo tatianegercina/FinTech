@@ -14,7 +14,7 @@ You've received an e-mail from your Python mentor, Julia. Read the e-mail below 
 
 APIs to Investigate:
 
-* Quandl is a service that provides historical stock data. For example, this API would be useful if you needed to calculate cummulative returns for `GOOG`.
+* Quandl is a service that provides historical stock data. For example, this API would be useful if you needed to calculate cumulative returns for `GOOG`.
 
   > https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json
 
@@ -22,7 +22,7 @@ APIs to Investigate:
 
   > http://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json
 
-* Coinbase provides price data for cryptocurrencies through their API. Use the Coinbase API if you need to get the price of a crypto for any given moment.
+* Coinbase provides price data for cryptocurrencies through their API. Use the Coinbase API if you need to get the price of a crypto for any given moment, such as `BTC`.
 
   > https://api.coinbase.com/v2/prices/BTC-USD/buy?format=json
 
@@ -38,7 +38,15 @@ It is recommended that you save each API request and the output so that it can b
 
 3. Get the current `Bitcoin` price using `Coinbase API`.
 
-4. Get `GOOG` stock data in `CSV` format using `Quandl API`. Take note of how the change in URL alters the format (json vs csv) of the data returned by the API.
+The TAs will be circulating during this activity. Do not hesitate to reach out for assistance if you experience any trouble using `Postman` or any of the APIs.
+
+### Challenge
+
+1. Change the above `Quandl` request URL to query for `AMD` instead of `GOOG`.
+
+2. Update the `Coinbase` request URL to query for `ETH-USD` instead of `BTC-USD`.
+
+3. Use the `Quandl API` to get `GOOG` stock data in `CSV` format. Take note of how the change in URL alters the format (json vs csv) of the data returned by the API.
 
 ### Hint
 
