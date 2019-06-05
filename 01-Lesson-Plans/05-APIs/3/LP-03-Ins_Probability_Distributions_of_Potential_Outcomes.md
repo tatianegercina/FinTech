@@ -99,9 +99,9 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-value-counts-key](Images/coin-flip-value-counts-key.png)
 
-* Dividing the frequency distribution of heads-to-tails combinations by the number of simulations performed shows the probability distribution of the potential outcomes for 10 simulations of flipping a coin 10 times. Notice the heads-to-tail combination of `(5,5)` is one of the least likely outcomes, yet we would expect it to be the highest probable outcome (50% heads, 50% tails) -- what gives? This is because a small number of simulations provides a limited number of data points that may or may not be reliable in the long-run.
+* Creating a DataFrame from the list of heads per simulation and using the `plot` function with the `kind` parameter set to `hist` produces a histogram that showcases the frequency distribution of landed heads.
 
-  ![coin-flip-10-simulations](Images/coin-flip-10-simulations.png)
+  ![coin-flip-5-simulations](Images/coin-flip-5-simulations.png)
 
 * Increasing the number of simulations to `100` produces a different probability distribution of potential head-to-tails combinations with `(5,5)` moving closer to being the most probable outcome as we would expect. 
 
