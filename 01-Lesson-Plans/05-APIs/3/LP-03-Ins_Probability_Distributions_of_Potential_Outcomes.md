@@ -123,6 +123,6 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-1000-simulations](Images/coin-flip-1000-simulations.png)
 
-* Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve like nature to the probability of its potential outcomes. One in which probability is maximized at the *mean* or middle of the distribution and decreases in probability as outcomes deviate left and right from the mean, otherwise known as the *standard deviation*. This well-known phenomena is called the *normal distribution* or continous probability distribution of a range of potential outcomes.
+* Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve like nature to the probability of its potential outcomes. One in which probability is maximized at the middle of the distribution and decreases in probability as outcomes deviate left and right from the mean, otherwise known as the *mean* and *standard deviation*, respectively. This well-known phenomena is called the *normal distribution* or continous probability distribution of a range of potential outcomes.
 
   ![normal-distribution](Images/normal-distribution.png)
