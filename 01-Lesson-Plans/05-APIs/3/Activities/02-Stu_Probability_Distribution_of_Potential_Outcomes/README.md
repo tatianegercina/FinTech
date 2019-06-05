@@ -10,25 +10,19 @@ Create a Monte Carlo simulation with `1000` simulations of `10` free throws to a
 
   * Import libraries and dependencies
 
-  * Read in the following as Pandas DataFrames:
+  * Write a Monte Carlo simulation that loops through `10` free throws for every simulation of `1000` simulations and saves the results:
 
-    * `HD.csv`
-    * `JNJ.csv`
-    * `INTC.csv`
-    * `AMD.csv`
-    * `MU.csv`
-    * `NVDA.csv`
-    * `TSM.csv`
+    * Set variables for the desired number of simulations and free throws.
 
-  * Use the `concat` function to combine the 7 DataFrames into a single combined DataFrame.
+    * Create a list `throw` consisting of the strings `made` and `missed`
 
-  * Use the `corr` function on the combined DataFrame to calculate and output a correlation table of each stock-to-stock pair.
+    * Create an empty `pandas` DataFrame to hold the results of each simulation.
 
-  * Use the `heatmap` function from the seaborn library to create a heatmap of correlation values.
+    * Create a nested for loop to loop through `10` free throws for every simulation of `1000` simulations.
 
-  * Use the `vmin` and `vmax` parameters to the `heatmap` function to adjust the correlation scale. Set `vmin` equal to -1 and `vmax` to 1.
+    * Use the `choice` function from the `random` class of the `numpy` library to randomly choose between the list elements `made` and `missed` of the `throw` list. Use the `p` parameter for the `choice` function to specify the probabilities of making a free throw and missing a free throw; set the `p` parameter to `[0.7,0.3]`.
 
-  * From the heatmap, choose the stock with the least correlation to `JNJ` and `HD` that should be added to the existing portfolio.
+    * Append the results to the DataFrame, with each column set as the series of free throw results for every simulation.
 
 ## Hints
 
