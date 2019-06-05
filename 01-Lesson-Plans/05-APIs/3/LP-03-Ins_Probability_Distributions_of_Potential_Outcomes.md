@@ -105,12 +105,12 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-5-simulations](Images/coin-flip-5-simulations.png)
 
-* Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum datapoints provided. Sometimes this creates ranges deviating from what we are attempting to simulate. Therefore manually setting the edges of the `bins` ensures that the histogram properly represents the distribution acc 
+* Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum datapoints provided. Sometimes this creates ranges deviating from what is being simulated. Therefore manually setting the `bins` parameter ensures that the histogram properly represents the edges of each bin, in this case bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`. 
 
   ![coin-flip-5-simulations-bins-off](Images/coin-flip-5-simulations-bins-off.png)
 
   ![coin-flip-5-simulations-bins](Images/coin-flip-5-simulations-bins.png)
 
-* Increasing the number of simulations to `1000` produces a (yet again) different probability distribution of potential head-to-tails combinations with `(5,5)` having the highest probability of occurring as should be expected. This is because a higher amount of simulations produce more reliable results in the long-run.
+* Setting the `density` parameter to `True` for the histogram plot function creates a frequency density histogram which can be used to showcase the probability distribution of potential outcomes. In this case, it can be interpreted that for an experiment of `5` simulations of `10` coin flips, we can expect approx `40%` of our simulations to land `4` heads out of `10` coin flips.
 
-  ![coin-flip-1000-simulations](Images/coin-flip-1000-simulations.png)
+  ![coin-flip-density-histogram](Images/coin-flip-density-histogram.png)
