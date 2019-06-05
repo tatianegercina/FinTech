@@ -22,40 +22,22 @@ Walk through the solution and highlight the following:
 * The `choice` function from the `random` class is used to randomly choose between the two outcomes of a coin: heads or tails. 
 
   ```python
-  # Set number of simulations and coin flips
-  num_simulations = 20
-  num_flips = 10
+  # Set an empty list to hold flip results
+  flips = []
 
-  # Set a list acting as a coin
-  coin = ["heads", "tails"]
+  # Flip the coin several times
+  for i in range(num_flips):
+      # Random int: 0 or 1
+      coin_flip = random.choice(coin)
+      
+      # Print flip result
+      print(f"  Flip {i+1}: {coin_flip}")
 
-  # Create an empty DataFrame to hold simulation results
-  monte_carlo = pd.DataFrame()
-
-  # Run n number of simulations
-  for n in range(num_simulations):
-
-      # Set an empty list to hold flip results
-      flips = []
-
-      # Flip the coin several times
-      for i in range(num_flips):
-          # Random int: 0 or 1
-          coin_flip = random.choice(coin)
-
-          # Append flip result to list
-          flips.append(coin_flip)
-
-      # Append column for each simulation and flip results
-      monte_carlo[f"Simulation {n}"] = pd.Series(flips)
-
-  # Print the DataFrame
-  monte_carlo
+      # Append flip result to list
+      flips.append(coin_flip)
   ```
 
-  ![coin-flip-dataframe](Images/coin-flip-dataframe.png)
-
-* The `randint` function from the `numpy` library returns random integers from low (inclusive) to high (exclusive). Therefore, the parameters `(0,2)` returns integers `0` or `1`.
+  ![coin-flip-results](Images/coin-flip-results.png)
 
 * Simulations are run for every 10 flips of the coin. Therefore, the resulting heads-to-tail combinations for each simulation are saved.
 
