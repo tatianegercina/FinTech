@@ -1,6 +1,6 @@
-### 3. Instructor Demo: Inside a Monte Carlo Simulation (0:05 mins)
+### 3. Instructor Demo: Probability Distribution of Potential Outcomes (0:10 mins)
 
-This activity introduces students to how a simple Monte Carlo simulation could look. In particular, this activity showcases a technical example of the Monte Carlo simulation stated in the previous activity.
+Monte Carlo Simulations seek to explain the probability of potential outcomes of a randomly occuring event. Therefore, this activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like and how to interpret the results.
 
 **Files:**
 
@@ -8,7 +8,7 @@ This activity introduces students to how a simple Monte Carlo simulation could l
 
 Walk through the solution and highlight the following:
 
-* Monte Carlo simulations deal with predicting potential outcomes of a random process. Therefore, make sure to import the `random` class from the `numpy` library.
+* Monte Carlo simulations deal with predicting potential outcomes of a random process. Therefore, make sure to import the `random` class from the `numpy` library that allows for randomizing a particular code process.
 
   ```python
   # Import libraries and dependencies
