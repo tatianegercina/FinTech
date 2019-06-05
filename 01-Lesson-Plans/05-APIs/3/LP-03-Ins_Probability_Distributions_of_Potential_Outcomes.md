@@ -49,9 +49,7 @@ Walk through the solution and highlight the following:
   monte_carlo[f"Simulation {n}"] = pd.Series(flips)
   ```
 
-  ```
-  Results: [(6, 4), (7, 3), (4, 6), (7, 3), (5, 5), (4, 6), (5, 5), (6, 4), (7, 3), (6, 4)]
-  ```
+  ![coin-flip-dataframe](Images/coin-flip-dataframe.png)
 
 * Leveraging the `value_counts` function by setting the results of the simulation to a Pandas DataFrame allows for counting the occurrences of the different heads-to-tails combinations.
 
