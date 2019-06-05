@@ -119,8 +119,10 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-100-simulations](Images/coin-flip-100-simulations.png)
 
-* Increasing the simulation count yet again to `1000` produces even more potential outcomes and should be considered even more reliable in the long-term. Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve like nature to the probability of its potential outcomes. One in which probability is maximized at the *mean* or middle of the distribution and decreases in probability as outcomes deviate left and right from the mean, otherwise known as *standard deviation*. This well-known phenomena is called the *normal distribution* or continous probability distribution of a range of potential outcomes.
+* Increasing the simulation count yet again to `1000` produces even more potential outcomes and should be considered even more reliable in the long-term.
 
   ![coin-flip-1000-simulations](Images/coin-flip-1000-simulations.png)
+
+* Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve like nature to the probability of its potential outcomes. One in which probability is maximized at the *mean* or middle of the distribution and decreases in probability as outcomes deviate left and right from the mean, otherwise known as the *standard deviation*. This well-known phenomena is called the *normal distribution* or continous probability distribution of a range of potential outcomes.
 
   ![normal-distribution](Images/normal-distribution.png)
