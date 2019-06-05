@@ -30,6 +30,8 @@ APIs to Investigate:
 
 Using `Postman`, submit `GET` requests to the above APIs using the provided request URLs. Confirm that a response has been received from the servers.
 
+It is recommended that you save each API request and the output so that it can be leveraged for future assignments.
+
 1. Get `GOOG` stock data using `Quandl API`.
 
 2. Get `GDP` data for the `US` using `World Bank API`.
