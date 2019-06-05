@@ -91,9 +91,13 @@ Walk through the solution and highlight the following:
   monte_carlo
   ```
 
-* Leveraging the `value_counts` via the Pandas DataFrame allows for counting the occurrences of the different heads-to-tails combinations of every simulation.
+* Leveraging the `value_counts` function via the Pandas DataFrame allows for counting the occurrences of the different heads-to-tails combinations of every simulation.
 
   ![coin-flip-value-counts](Images/coin-flip-value-counts.png)
+
+* Performing a `value_counts` function on every column (or simulation) in the DataFrame and specifying the `heads` key of the returned Series object produces a list of landed heads per simulation.
+
+  ![coin-flip-value-counts-key](Images/coin-flip-value-counts-key.png)
 
 * Dividing the frequency distribution of heads-to-tails combinations by the number of simulations performed shows the probability distribution of the potential outcomes for 10 simulations of flipping a coin 10 times. Notice the heads-to-tail combination of `(5,5)` is one of the least likely outcomes, yet we would expect it to be the highest probable outcome (50% heads, 50% tails) -- what gives? This is because a small number of simulations provides a limited number of data points that may or may not be reliable in the long-run.
 
