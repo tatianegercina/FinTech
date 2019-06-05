@@ -8,9 +8,9 @@ Monte Carlo Simulations seek to explain the probability of potential outcomes fo
 
 Walk through the solution and highlight the following:
 
-* This solution represents a technical example to the Monto Carlo simulation use case presented in the previous activity (coin flip simulation). Therefore, the program flips a coin 10 times for 5 simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers or ranges of heads.
+* This solution represents a technical example to the Monto Carlo simulation use case presented in the previous activity (coin flip simulation). Therefore, the program flips a coin 10 times for 5 simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers (or ranges) of heads.
 
-* Monte Carlo simulations deal with predicting potential outcomes of a random process. Therefore, make sure to import the `random` class from the `numpy` library that allows for randomizing a particular code process.
+* Make sure to import the `random` class from the `numpy` library which allows for randomizing a particular code process.
 
   ```python
   # Import libraries and dependencies
@@ -19,7 +19,7 @@ Walk through the solution and highlight the following:
   %matplotlib inline
   ``` 
 
-* A coin is flipped 10 times for each trial or simulation. Therefore, there is a `50%` chance for the coin to land on heads and a `50%` chance for the coin to land on heads. The `random` class from the `numpy` library is used to randomly choose between the two outcomes: heads or tails. 
+* The `choice` function from the `random` class is used to randomly choose between the two outcomes of a coin: heads or tails. 
 
   ```python
   # Set number of simulations and coin flips
