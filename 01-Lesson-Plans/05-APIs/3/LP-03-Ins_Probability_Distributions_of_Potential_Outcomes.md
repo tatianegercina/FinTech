@@ -114,3 +114,9 @@ Walk through the solution and highlight the following:
 * Setting the `density` parameter to `True` for the histogram plot function creates a frequency density histogram which can be used to showcase the probability distribution of potential outcomes. In this case, it can be interpreted that for an experiment of `5` simulations of `10` coin flips, we can expect approx `40%` of our simulations to land `4` heads out of `10` coin flips.
 
   ![coin-flip-density-histogram](Images/coin-flip-density-histogram.png)
+
+* Unfortunately, the probability distribution of potential outcomes generated for a small number of simulations should not be trusted. This is because a small number of simulations cannot test every possible outcome and therefore may generate biased results that are not indicative of the true nature of the random process in the long-term. Therefore, increasing the simulation count to `100` provides a more reliable and continuous range of probable outcomes.
+
+  ![coin-flip-100-simulations](Images/coin-flip-100-simulations.png)
+
+*   
