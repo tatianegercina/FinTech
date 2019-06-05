@@ -119,7 +119,7 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-100-simulations](Images/coin-flip-100-simulations.png)
 
-* Increasing the simulation count yet again to `1000` produces even more potential outcomes and should be considered even more reliable in the long-term.
+* Increasing the simulation count yet again to `1000` produces even more potential outcomes and should be considered even more reliable in the long-term. It can be seen that landing heads `5-6` times is the most likely outcome in the long-term. 
 
   ![coin-flip-1000-simulations](Images/coin-flip-1000-simulations.png)
 
