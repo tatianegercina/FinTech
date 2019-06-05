@@ -8,7 +8,7 @@ Monte Carlo Simulations seek to explain the probability of potential outcomes fo
 
 Walk through the solution and highlight the following:
 
-* This solution represents a technical example to the Monto Carlo simulation use case presented in the previous activity (coin flip simulation). Therefore, the program flips a coin 10 times for 5 simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers (or ranges) of heads.
+* This solution represents a technical example to the Monto Carlo simulation use case presented in the previous activity (coin flip simulation). Therefore, the program flips a coin `10` times for `5` simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers (or ranges) of heads.
 
 * Make sure to import the `random` class from the `numpy` library which allows for randomizing a particular code process.
 
