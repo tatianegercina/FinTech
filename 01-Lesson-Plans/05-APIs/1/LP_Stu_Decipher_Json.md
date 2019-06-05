@@ -2,7 +2,7 @@
 
 The key to working with APIs is being able to decipher their output. Because API output is commonly in JSON format, students will need practice deciphering JSON structures and syntax. In this activity, students will choose a sub-selection of the JSON output to decipher. They will then explain the sub-selection to a peer.
 
-Walk around and instruct TAs to circulate during this activity so that students can ask questions as they make sense of the JSON data, including its structure and syntax. Some students will have had little to no exposure to JSON data in the past.
+Walk around and instruct TAs to circulate during this activity so that students can ask questions as they make sense of the JSON data, including its structure and syntax. Some students will have had little to no exposure to JSON data in the past. It can be frustrating trying to interpret JSON data when the structure and syntax is foreign.
 
 **Instructions:**
 
