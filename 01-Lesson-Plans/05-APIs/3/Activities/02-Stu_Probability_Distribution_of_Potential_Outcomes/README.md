@@ -1,6 +1,10 @@
-# Diversification
+# Free Throw Simulation
 
-In this activity, Harold's company is looking to build a diversified stock portfolio. So far, they've added `JNJ` (Johnson & Johnson) and `HD` (Home Depot) which both reside with the the Healthcare and Consumer Discretionary sectors, respectively. However, now they want to add a third technology sector stock to the mix, in particular, a semiconductor stock. 
+In this activity, a coach wants to know how one of his players may perform in the long-run when it comes to free throws. The player has a free throw accuracy of approximately `70%` and therefore makes a free throw about `7` out of `10` times. The coach wants to know the likelihood of the player making `10` straight free throws in a single session.
+
+Create a Monte Carlo simulation 
+
+Harold's company is looking to build a diversified stock portfolio. So far, they've added `JNJ` (Johnson & Johnson) and `HD` (Home Depot) which both reside with the the Healthcare and Consumer Discretionary sectors, respectively. However, now they want to add a third technology sector stock to the mix, in particular, a semiconductor stock. 
 
 As a result, Harold has been asked by his manager to research a set of 5 semiconductor stocks to add to the currently existing portfolio. In order to properly create a diversified portfolio which tends to minimize long-term volatility/risk, stocks within the portfolio should be as uncorrelated as possible so as to create a counter-balance effect (when some stocks fall in price, others may rise in price). 
 
