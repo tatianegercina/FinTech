@@ -51,6 +51,46 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-dataframe](Images/coin-flip-dataframe.png)
 
+* The following is a holistic view of the example Monte Carlo simulation program -- see, it's not that bad!
+
+  ```python
+  # Set number of simulations and coin flips
+  num_simulations = 5
+  num_flips = 10
+
+  # Set a list object acting as a coin: heads or tails
+  coin = ["heads", "tails"]
+
+  # Create an empty DataFrame to hold simulation results
+  monte_carlo = pd.DataFrame()
+
+  # Run n number of simulations
+  for n in range(num_simulations):
+
+      # Print simulation iteration
+      print(f"Running Simulation {n+1}...")
+    
+      # Set an empty list to hold flip results
+      flips = []
+
+      # Flip the coin several times
+      for i in range(num_flips):
+          # Random int: 0 or 1
+          coin_flip = random.choice(coin)
+        
+          # Print flip result
+          print(f"  Flip {i+1}: {coin_flip}")
+
+          # Append flip result to list
+          flips.append(coin_flip)
+
+      # Append column for each simulation and flip results
+      monte_carlo[f"Simulation {n}"] = pd.Series(flips)
+
+  # Print the DataFrame
+  monte_carlo
+  ```
+
 * Leveraging the `value_counts` function by setting the results of the simulation to a Pandas DataFrame allows for counting the occurrences of the different heads-to-tails combinations.
 
   
