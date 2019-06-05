@@ -107,9 +107,9 @@ Walk through the solution and highlight the following:
 
 * Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum datapoints provided. Sometimes this creates ranges deviating from what we are attempting to simulate. Therefore manually setting the edges of the `bins` ensures that the histogram properly represents the distribution acc 
 
-  ![coin-flip-5-simulations-bins](Images/coin-flip-5-simulations-bins.png)
-
   ![coin-flip-5-simulations-bins-off](Images/coin-flip-5-simulations-bins-off.png)
+
+  ![coin-flip-5-simulations-bins](Images/coin-flip-5-simulations-bins.png)
 
 * Increasing the number of simulations to `1000` produces a (yet again) different probability distribution of potential head-to-tails combinations with `(5,5)` having the highest probability of occurring as should be expected. This is because a higher amount of simulations produce more reliable results in the long-run.
 
