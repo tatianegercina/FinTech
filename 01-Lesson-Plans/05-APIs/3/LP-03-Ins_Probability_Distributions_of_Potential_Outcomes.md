@@ -1,12 +1,14 @@
 ### 3. Instructor Demo: Probability Distribution of Potential Outcomes (0:10 mins)
 
-Monte Carlo Simulations seek to explain the probability of potential outcomes of a randomly occuring event. Therefore, this activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like and how to interpret the results.
+Monte Carlo Simulations seek to explain the probability of potential outcomes for a randomly occuring event. Therefore, this activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like and how to interpret the results.
 
 **Files:**
 
 * [coin_flip_simulation.ipynb](Activities/01-Ins_Inside_a_Monte_Carlo_Simulation/Solved/coin_flip_simulation.ipynb)
 
 Walk through the solution and highlight the following:
+
+* This solution represents a technical example to the Monto Carlo simulation use case presented in the previous activity (coin flip simulation). Therefore, the program flips a coin 10 times for 5 simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers or ranges of heads.
 
 * Monte Carlo simulations deal with predicting potential outcomes of a random process. Therefore, make sure to import the `random` class from the `numpy` library that allows for randomizing a particular code process.
 
