@@ -101,7 +101,7 @@ Walk through the solution and highlight the following:
 
 * Creating a DataFrame from the list of heads per simulation and using the `plot` function with the `kind` parameter set to `hist` produces a histogram that showcases the frequency distribution of landed heads.
 
-* Remember that a histogram is not a bar graph; frequency values in histogram bars are determined by the area (length * width) of the bar, not by the height of the bar. This is because histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single datapoint. The following histogram shows one can expect approximately `2` occurrences out of `5` simulations where total heads flipped were between `4-5`.
+* Remember that a histogram is not a bar graph; frequency values in histogram bars are determined by the area (length * width) of the bar, not by the height of the bar. This is because histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single datapoint. The following histogram shows one can expect approximately `4` occurrences out of `5` simulations where total heads flipped were between `4-5`.
 
   ![coin-flip-5-simulations](Images/coin-flip-5-simulations.png)
 
@@ -111,7 +111,7 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-5-simulations-bins](Images/coin-flip-5-simulations-bins.png)
 
-* Setting the `density` parameter to `True` for the histogram plot function creates a frequency density histogram which can be used to showcase the probability distribution of potential outcomes. In this case, it can be interpreted that for an experiment of `5` simulations of `10` coin flips, we can expect approx `40%` of our simulations to land `4` heads out of `10` coin flips.
+* Setting the `density` parameter to `True` for the histogram plot function creates a frequency density histogram which can be used to showcase the probability distribution of potential outcomes. In this case, it can be interpreted that for an experiment of `5` simulations of `10` coin flips, we can expect approx `40%` of our simulations to land between `4-5` heads and another `40%` of our simulations to land between `5-6` heads. In addition, it could be said that `80%` of our simulations could land between `4-6` heads.
 
   ![coin-flip-density-histogram](Images/coin-flip-density-histogram.png)
 
