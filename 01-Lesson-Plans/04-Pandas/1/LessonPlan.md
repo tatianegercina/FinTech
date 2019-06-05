@@ -153,6 +153,10 @@ Next, open the `reading_csvs.ipynb` file, and walkthrough the following aspects 
 
   ![header-columns.png](Images/header-columns.png)
 
+* It is common to generate high level statistics when creating a DataFrame. The Pandas `describe` function can be used. The output of the function is summary statistics for numeric fields, including Series counts, averages, min value, max value, etc. A limitation of the `describe` function is that it only calculates summary statistics for numeric values columns.
+
+  ![describe_summary.png](Images/describe_summary.png)
+
 Visit the Pandas documentation for the [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) function and show the many options available in the function signature. Explain that while the most common scenario is to simply provide the path to the file, Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files.
 
 Be sure to point out the parameters associated with the filepath and the header that was used in the demo code.
@@ -567,7 +571,7 @@ To guide students, you may want to follow up with questions such as:
 
 Ask for any remaining questions before moving on.
 
-- - - 
+- - -
 
 ### 10. Instructor Do: Indexing (10 mins)
 
@@ -599,7 +603,15 @@ Walk through the demo and explain the following:
 
   ![iloc-assignment](Images/iloc-assignment.png)
 
-* To use the `loc[]` function on the index of a DataFrame, string values will need to be set as the index using the `set_index()` function.
+* To use the `loc[]` function on the index of a DataFrame, string values will need to be set as the index using the `set_index()` function. It's important to note that the `set_index` does not return a new DataFrame but creates a copy of the original. Any changes made to the indexed DataFrame will be propragated down to the original DataFrame.
+
+  ![index_overview](Images/index_overview.png)
+
+* The `copy` function is used to decouple original DataFrames from DataFrames indexed by `set_index`. `Copy` decouples the original DataFrame from the indexed DataFrame so that any changes made to the indexed DataFrame are not made to the original DataFrame. This ensures that the state of the original DataFrame is preserved. This is Pandas' way of implementing version control on DataFrames.
+
+  ![index_copy](Images/index_copy.png)
+
+* The alternative to using the `copy` function is to use the `inplace=True` parameter with the `set_index` function. `Inplace=True` tells Pandas not to create a copy of the DataFrame when setting the index.
 
   ![set-index-first-name](Images/set-index-first-name.png)
 
@@ -618,6 +630,18 @@ Walk through the demo and explain the following:
 * The `loc[]` function can be used to modify specific row values.
 
   ![loc-assignment](Images/loc-assignment.png)
+
+If time remains, briefly discuss `DateTimeIndexes` with students. Show them the below syntax, and provide the following explanation for why DateTimeIndexes should be used. Indicate to students that `DateTimeIndexes` will be re-visted with the Multi-Indexing module.
+
+* The `to_datetime` function can be used to create a `DateTimeIndex`. `DateTimeIndexes` work like regular indexes but they allow for data to be looked up by date and date ranges as well. Passing the `infer_datetime_format=True` parameter will ensure all dates are read the same way, regardless of their format (i.e. MM-DD-YYYY vs MM/DD/YYYY).
+
+  ```python
+  # Create DateTimeIndex
+  df.set_index(pd.to_datetime(df['date_col'], infer_datetime_format=True), inplace=True)
+  df.head()
+  ```
+
+  ![datetime-index](Images/datetime-index.png)
 
 * Finally, explain that it will take some time to get used to indexing data with Pandas, but over time, it will become second nature -- practice makes perfect!
 
@@ -667,10 +691,6 @@ Open the solution and explain the following with a dry walkthrough:
 
   ![Unique Values](Images/unique-values.png)
 
-* Combining the `loc[]` function with conditionals creates a subset of data that can be used to display summary statistics with the `describe()` function. This way, there is no need to separately call the `count()` and `mean()` functions.
-
-  ![Subset Statistics](Images/subset-statistics.png)
-
 Ask for any remaining questions before moving on.
 
 - - -
@@ -710,7 +730,7 @@ Walk through the demo and explain the following:
 * Use the `figsize` parameter to the `plot()` function to increase or decrease the chart size. This is especially helpful when there are many x or y axis data points.
 
   ![bar-chart-large](Images/bar-chart-large.png)
-  
+
 - - -
 
 ### 14. Students Do: Market Analysis (20 mins)
@@ -908,6 +928,12 @@ With the remaining time, open the solution, and discuss the following points:
 
 * The data shows that trading AMD in the short-term is potentially more profitable as the average daily return of a `1 Year` time frame is the highest at `0.004538` or `4.53%`.
 
+Take a minute to get the students to reflect on what they've just learned and the value behind it. Ask the following question:
+
+* What other areas or accounts can daily returns be used to determine return on investment?
+
+> "Savings accounts and 401ks are examples of accounts that generate daily ROI."
+
 Ask for any remaining questions before moving on.
 
 - - -
@@ -928,8 +954,7 @@ Before ending class, leave some encouraging remarks, and give students a space t
 
   * Did you come across any shortcuts or unique ways to do things while completing the activities?
 
-* Underscore that the students have been doing excellent at learning both financial and technical concepts. This is not an
-easy feat. It takes skill, intellect and abstract thinking, and perseverance to make it this far. They should all pat themselves on the back.
+* Underscore that the students have been doing excellent at learning both financial and technical concepts. This is not an easy feat. It takes skill, intellect and abstract thinking, and perseverance to make it this far. They should all pat themselves on the back.
 
 * Underscore that the students have come a long way. Last week they learned Python. Now they're integrating Pandas and Matplotlib into their Python programs. Next they'll start using more advanced Financial calculations and functions, and eventually move onto working with APIs.
 
