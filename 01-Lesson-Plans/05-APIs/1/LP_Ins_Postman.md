@@ -24,13 +24,17 @@ Explain to students that internet browsers a sufficient tool to submit adhoc API
 
 Open `Postman` and perform a live demonstration of submitting an API request to `Quandl` for `AAPL` stock data. Use this as an opportunity to bridge back to the previous assignments where requests were submitted via a browser rather than a tool like `Postman`. Highlight the following:
 
-* Creating a request in `Postman` is easy; it's just the click of a button. Selecting `Request` in the `Create New` window will open a screen th
+* Creating a request in `Postman` is easy; it's just the click of a button. Selecting `Request` in the `Create New` window will open a screen where information can be put in for the request and the request saved.
 
   ![create_request.png](Images/create_request.png)
 
 * `Postman` allows users to save API requests to what they call `collections`. This allows requests to be created once but ran many times. It also allows requests to be scheduled. In order to save a request, a request must be saved with a `name`, `description`, and `collection`.
 
   ![save_request.png](Images/save_request.png)
+
+* Another way to create a request is to create a new `tab`. Once the tab is created, the request URL can be input.
+
+  ![new_request.png](Images/new_request.png)
 
 * Submit an API call to `Quandl` using the `Postman` submit button. Use the below request URL.
 
@@ -42,7 +46,7 @@ Open `Postman` and perform a live demonstration of submitting an API request to 
 
   ![postman_submit.png](Images/postman_submit.png)
 
-* Postman allows users to save or download the results of an API call. This is one of the advantages of using Postman to work with APIs. The Postman environment supports creating, storing, and retrieving API requests and API results.
+* Postman allows users to save or download the results of an API call. This is one of the advantages of using Postman to work with APIs. The Postman environment supports creating, storing, and retrieving API requests, as well as API results.
 
   ![save_output.png](Images/save_output.png)
 
