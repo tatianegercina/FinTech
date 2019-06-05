@@ -22,6 +22,9 @@ Walk through the solution and highlight the following:
 * The `choice` function from the `random` class is used to randomly choose between the two outcomes of a coin: heads or tails. 
 
   ```python
+  # Print simulation iteration
+  print(f"Running Simulation {n+1}...")
+    
   # Set an empty list to hold flip results
   flips = []
 
@@ -39,56 +42,11 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-results](Images/coin-flip-results.png)
 
-* Simulations are run for every 10 flips of the coin. Therefore, the resulting heads-to-tail combinations for each simulation are saved.
+* The resulting heads and tails outputs for each simulation of `10` coin flips are saved as individual columns to a Pandas DataFrame.
 
   ```python
-  # Set number of simulations and coin flips
-  num_simulations = 10
-  num_flips = 10
-
-  # Set list
-  tuples = []
-
-  # Run n number of simulations
-  for n in range(num_simulations):
-    
-      # Set variables
-      num_heads = 0
-      num_tails = 0
-    
-      # Print simulation 
-      print(f"Simulation: {n+1}")
-    
-      # Flip a coin: heads or tails
-      for i in range(num_flips):
-          # Random int: 0 or 1
-          coin_flip = random.randint(0,2)
-
-          # Logic to determine head or tails
-          if coin_flip == 0:
-              result = "heads"
-              num_heads+=1
-          elif coin_flip == 1:
-              result = "tails"
-              num_tails+=1
-            
-          # Print trial
-          print(f"  Flip {i+1}: {result}")
-
-      # Print number of heads and tails for the simulation
-      print("  -----------------------------------")
-      print(f"  Number of Heads: {num_heads}")
-      print(f"  Number of Tails: {num_tails}")
-    
-      # Set tuple
-      tuple = (num_heads, num_tails)
-    
-      # Append tuple to tuples list
-      tuples.append(tuple)
-
-  # Print results
-  print("-----------------------------------")    
-  print(f"Results: {tuples}")
+  # Append column for each simulation and flip results
+  monte_carlo[f"Simulation {n}"] = pd.Series(flips)
   ```
 
   ```
