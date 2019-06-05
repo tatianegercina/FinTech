@@ -4,17 +4,17 @@ In this activity, students will apply the concept of correlation to the financia
 
 **Instructions:**
 
-* [README.md](Activities/02-Stu_Correlation/README.md)
+* [README.md](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes/README.md)
 
 **Files:**
 
-* [market_analysis.ipynb](Activities/02-Stu_Correlation/Unsolved/diversification.ipynb)
+* [free_throw_simulation.ipynb](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes/Unsolved/free_throw_simulation.ipynb)
 
 ### 5. Instructor Do: Review Free Throw Simulation (5 mins)
 
 **Files:**
 
-* [diversification.ipynb](Activities/02-Stu_Correlation/Solved/diversification.ipynb)
+* [free_throw_simulation.ipynb](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes/Solved/free_throw_simulation.ipynb)
 
 Open the solution and explain the following:
 
