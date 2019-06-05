@@ -8,7 +8,7 @@ Ease students into the notion of Monte Carlo simluations by presenting the follo
 
 * What is a Monte Carlo simluation?
 
-  > Like a simulation, a Monte Carlo simulation goes the next step and is a simulation that uses probability and variables to predict the future outcomes of a random process; Monte Carlo simulations are used to understand the risk of uncertainty in prediction and forecasting models.
+  > A Monte Carlo simulation is a specific type of simulation that uses probability and variables to predict the future potential outcomes of a randomly occurring process; Monte Carlo simulations are used to understand the risk of uncertainty in prediction and forecasting models.
 
 * What is probability?
 
@@ -16,6 +16,6 @@ Ease students into the notion of Monte Carlo simluations by presenting the follo
 
 * What would be an example of a Monte Carlo simulation?
 
-  > Imagine 5 trials of flipping a coin 10 times. There is a 50% chance of landing on heads and a 50% chance of landing on tails. Flipping a coin 10 times for 5 trials may have varying results: 6 heads and 4 tails; 3 heads and 7 tails; 8 heads and 2 tails, etc. Therefore, a Monte Carlo simulation would flip a coin 10 times to determine the resulting combination of heads and tails, and then do that same process of flipping a coin 10 times another `n` number of times to determine the most probable combination of heads and tails if a coin were to be flipped 10 times.
+  > Imagine a scientist wanted to know how often coin a could land on heads for 5 trials of 10 coin flips. Flipping a coin has a 50% chance of landing on heads and a 50% chance of landing on tails. Because of the randomly occurring nature of flipping a coin, results could vary: for example, a coin could produce 6 heads and 4 tails; 3 heads and 7 tails; 8 heads and 2 tails, 5 heads and 5 tails, or 4 heads and 6 tails. Therefore, an example Monte Carlo simulation would be to flip a coin 10 times to determine the resulting number of heads and tails, and then do that same process another 5 times to determine the frequency distribution (how many times the coin landed a specific number of heads) and corresponding probability distribution (the probability of landing on a specific number of heads) of landing on heads for a coin flipped 10 times for 5 trials.
 
 Ask the students if they can think of any other examples of Monto Carlo simulations. Be sure to have all the students on the same page before moving on.
