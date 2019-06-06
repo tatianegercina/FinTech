@@ -1,6 +1,6 @@
 ### 4. Students Do: Free Throw Simulation (15 mins)
 
-In this activity, students will apply the concept of correlation to the financial use case of diversifying a portfolio. In order to properly create a diversified portfolio which tends to minimize long-term volatility/risk, stocks within the portfolio should be as non-correlated as possible. Therefore, students will need to find the stock that has returns that are least correlated to the returns of stocks in an already existing portfolio.
+In this activity, students will apply the process of executing a Monte Carlo simulation to analyze the probability distribution of free throws made (out of 10 shots) for a player with a `70%` accuracy and determine the likelihood of the player making `9-10` free throws in a single session.
 
 **Instructions:**
 
