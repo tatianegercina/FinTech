@@ -4,7 +4,7 @@ In this activity, students are introduced to confidence intervals, which are val
 
 **Files:**
 
-* [coin_flip_confidence_interval.ipynb](Activities/05-Ins_Confidence_interval/Solved/coin_flip_confidence_interval.ipynb)
+* [coin_flip_confidence_interval.ipynb](Activities/03-Ins_Confidence_interval/Solved/coin_flip_confidence_interval.ipynb)
 
 Walk through the solution and highlight the following:
 
@@ -12,8 +12,10 @@ Walk through the solution and highlight the following:
 
 * The `quantile` function for `pandas` DataFrames takes in a range of values that represent the lower and upper bounds of the confidence interval. The `numeric_only` parameter set to `True` ensures the quantiles are computed on numeric only values.
 
-  ![quantile-function](Images/quantile-function.png) 
+  ![coin-flip-quantile-function](Images/coin-flip-quantile-function.png)
 
 * A confidence interval is a value range of a frequency distribution that contains a specific percentage of the overall sample (or dataset). For example, a `90%` confidence interval would be a range of values of which `90%` of all datapoints in the sample is contained.
 
 * Confidence intervals with Monte Carlo simulations are useful in that they determine the range of potential outcomes and their probabilites of occurring. 
+
+  ![coin-flip-confidence-interval](Images/coin-flip-confidence-interval.png)
