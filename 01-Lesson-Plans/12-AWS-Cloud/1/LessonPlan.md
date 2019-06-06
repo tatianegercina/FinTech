@@ -62,14 +62,15 @@ Direct link: https://console.aws.amazon.com/sagemaker/home?region=us-east-1
 
 ### 0. Everyone Do: Create a SageMaker Notebook Instance (5 mins)
 
-SageMaker uses a compute instance to run notebooks, the create process will configure multiple settings behind the scenes.
+SageMaker uses a compute instance to serve `Jupyter` notebooks, the create instance process will configure multiple settings behind the scenes.
 
 Have students follow along executing the next steps to create a SageMaker Notebook Instance.
 
 First, create the required AWS resources for SageMaker.
 * From the main AWS Console, find the `S3` service: https://s3.console.aws.amazon.com
 * Create a bucket for SageMaker:
-  S3 -> Buckets -> click `Create Bucket` and fill in details as follows:
+![Create S3 bucket](Images/00-create-bucket.png)
+Go to S3 -> Buckets -> click `Create Bucket` and fill in details as follows:
   * Section: **Name and region**
     + Bucket name: *sagemaker-`<CURRENT-DATE+TIME>`* (for example: `sagemaker-20190701-1820`)
     + Region: `(same as SageMaker instance)`
@@ -81,6 +82,7 @@ First, create the required AWS resources for SageMaker.
   * Section: **Review**
     + Click: `Create bucket`
 * Note down (copy/paste/save) the name of bucket for use in the following section.
+
 
 Next, create the SageMaker Instance.
 * From the SageMaker console, use the left pane menu and visit: Notebook -> [Notebook instances](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances)
@@ -111,29 +113,29 @@ Note: the `IAM Role` is required, if this or another required field value is mis
 
 ### 0. Everyone Do: Create a new Jupyter Notebook (5 mins)
 
-Show students how to create a new Jupyter notebook in SageMaker's notebook instance.
+* Once the Notebook Instance has status `InService`, go to "Actions" and click on `Open JupyterLab`.
+![Notebook Instance actions](Images/06-notebook-instance-actions.png)
 
-* Once the Notebook Instance has status `InService`, go to "Actions" and click on `Open JupyterLab`.  
-![Notebook Instance actions](Images/06-notebook-instance-actions.png)  
 
-* On JupyterLab Launcher, select notebook `conda_python3` to create a new notebook.
+* On the `Notebook` section in the JupyterLab `Launcher`, select `conda_python3` to create a new notebook.
 ![Notebook Environment](Images/07-jupyterlab-env-conda_python3.png)  
 
-* Enter and execute python code to demonstrate functionality.  
+* On the new notebook, enter python code in the first cell to test and demonstrate the functionality.  
 ![Untitled Notebook](Images/08-notebook-untitled.png)
 
 
 ### 0. Everyone Do: Open an existing Jupyter Notebook (5 mins)
 
-Show students how to open an existing Jupyter notebook in SageMaker's notebook instance.
+Show students how to open an existing Jupyter Notebook in the new SageMaker Notebook instance.
+For this example we'll use a notebook in our local machine, from a previous activity.
 
-* From the main `JupyterLab` view, use the `Upload` icon (arrow up) on the left and select an existing notebook.  
+* In your SageMaker notebook instance, from the main `JupyterLab` view, use the `Upload` icon (arrow up) on the left and select an existing notebook.  
 For example: `04-Pandas/3/Activities/16-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb`  
 Select the local notebook file to upload.  
 ![Upload Notebook](Images/09-upload-notebook.png)
 
 * Open the notebook. You'll probably see the message: `Select Kernel` or `Kernel not found`, select `conda_python3` and click `Select` or `Set Kernel`  
-![Notebook Kernel not found](Images/10-notebook-select-kernel-1.png)
+![Set Notebook Kernel](Images/10-notebook-select-kernel-1.png)
 
 ![Notebook Kernel not found](Images/10-upload-nb-kernel-not-found-2.png)
 
@@ -147,7 +149,9 @@ Show students how a Machine Learning model is created, trained and deployed in S
 
 * Open the following Jupyter Notebook (__TBD: or a custom/similar notebook with modified steps__):  
 
-* From the main `Jupyter` view, select `SageMaker Examples`, then scroll to `Introduction to Amazon Algorithms`, then find: `linear_learner_mnist.ipynb`
+* From the main `JupyterLab` view, select `SageMaker Examples`, then scroll to `Introduction to Amazon Algorithms` and find: `linear_learner_mnist.ipynb`
+
+![SageMaker Sample Notebooks](Images/11-examples-linear-lerner.png)
 
 * Run through the notebook.
 
