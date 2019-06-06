@@ -16,10 +16,12 @@ Walk through the solution and highlight the following:
 
 * A quantile is a measurement in which a frequency distribution is divided into equal groups, thus each group contain an equal fraction of the total sample. Often times, quantiles are expressed in `100` equal parts, otherwise known as *percentiles*. For example, a student in the 95th percentile of height for his school is as tall as or taller than `95%` of students at the school.
 
-* The `quantile` function for `pandas` DataFrames takes in a range of values that represent the lower and upper bounds of the confidence interval. The `numeric_only` parameter set to `True` ensures the quantiles are computed on numeric only values.
+* The `quantile` function for `pandas` DataFrames takes in a range of values that represent the lower and upper bounds of the confidence interval. The `numeric_only` parameter set to `True` ensures the quantiles are computed on numeric only values. In this case, quantiles of `0.05` and `0.95` are values where landing `2` heads is only greater than `5%` of all simulated outcomes whereas landing `8` heads is greater than `95%` of all simulated outcomes.
 
   ![coin-flip-quantile-function](Images/coin-flip-quantile-function.png)
 
 * The `pyplot` class from the `matplotlib` library contains a `axvline` function that allows for setting upper and lower bounds to a confidence interval on a plot. The `color` parameter sets the color of the line.
 
   ![coin-flip-confidence-interval](Images/coin-flip-confidence-interval.png)
+
+* The `90%` confidence interval calculated suggests that if a coin were to be flipped `10` times, there is a `90%` chance of the coin landing somewhere between `2-8` heads. This is because the confidence interval encapsulates `90%` of the frequency distribution (the area of the bars in the histogram) of simulated results.
