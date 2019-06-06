@@ -2,7 +2,7 @@
 
 Submitting APIs with Postman is useful, but API requests are better sent with Python code. Instructors will demonstrate to students how to submit an API request with Python instead of Postman. Emphasis will be placed on the similarities between the two processes, as well as the advantages of sending requests through Python.
 
-The World Bank API should be used for this instructor demonstration activity.
+The World Bank API (GDP extraction) should be used for this instructor demonstration activity.
 
 **Files:**
 
@@ -45,35 +45,35 @@ Live code how to use the Python `requests` library, and use the following discus
 * `GET` requests can be sent using the `requests.get` function. The function accepts the `request url` as an argument.
 
   ```python
+  # Execute GET request
   requests.get(url)
   ```
 
-* Once a `GET` request is submitted via Python, the response is returned to the console.
+  ![request_response.png](Images/request_response.png)
 
-* Output from a `GET` request is best saved as a variable. This allows for the output to be parsed and manipulated down the road.
-
-  ```python
-  response_data = requests.get(url)
-  print(response_data)
-  ```
-
-* Errors can occur when working with APIs. Common errors are invalid credentials, unauthorized access, and invalid request/page not found. The `requests.codes.ok` function will return `True` if there were no errors with the API request.
-
-  ```python
-  response_data.codes.ok
-  ```
-
-* Most APIs incorporate programming that will return a code with each server response. These are called `response codes`. `Response codes` can be retrieved from a request by using the `requests.status_code` attribute. The function will return the status code. A list of common response codes and their meaning can be found below.
-
-  ```python
-  response_data.status_code
-  ```
-
+* Most APIs incorporate programming that will return a code with each server response. These are called `response codes`. A list of common response codes and their meaning can be found below.
 
   ```
   Common Response Codes
 
   200s: Success
   400s: Error
-  500s: Request accepted but error occured server side
+  500s: Request accepted but error occurred server side
   ```
+
+* Output from a `GET` request is best saved as a variable. This allows for the output to be parsed and manipulated down the road.
+
+  ```python
+  # Execute GET request and store response
+  response_data = requests.get(url)
+  ```
+
+* The actual data returned from the server, called `content`, can be accessed with the `content` attribute.
+
+  ```python
+  # Get content
+  response_content = response_data.content
+  print(response_content)
+  ```
+
+  ![submit_python_request.png](Images/submit_python_request.png)
