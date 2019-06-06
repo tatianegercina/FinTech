@@ -1,4 +1,4 @@
-## Loan Approver
+## SVM Loan Approver
 
 In this activity, you will build a Support Vector Machine (SVM) classifier that can be used to predict the loan status (approve or deny) given a set of input features.
 
