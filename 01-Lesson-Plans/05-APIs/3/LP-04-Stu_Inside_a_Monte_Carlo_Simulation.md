@@ -42,7 +42,8 @@ Open the solution and explain the following:
 
       # Shoot the ball `10` times
       for i in range(num_throws):
-          # Randomly choose between `made` and `missed` with a `70%` chance to make the throw and a `30%` chance the throw is missed
+          # Randomly choose between `made` and `missed` with a `70%` chance to 
+          # make the throw and a `30%` chance the throw is missed
           free_throw = random.choice(throw, p=[0.7, 0.3])
         
           # Print throw result
@@ -63,7 +64,8 @@ Open the solution and explain the following:
   ```python
   # Set a list object acting as a throw: made basket or missed basket
   throw = ["made", "missed"]
-  # Randomly choose between `made` and `missed` with a `70%` chance to make the throw and a `30%` chance the throw is missed
+  # Randomly choose between `made` and `missed` with a `70%` chance to 
+  # make the throw and a `30%` chance the throw is missed
   free_throw = random.choice(throw, p=[0.7, 0.3])
   ```
 
