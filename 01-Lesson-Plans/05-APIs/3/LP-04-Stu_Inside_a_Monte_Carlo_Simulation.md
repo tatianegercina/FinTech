@@ -69,9 +69,15 @@ Open the solution and explain the following:
   free_throw = random.choice(throw, p=[0.7, 0.3])
   ```
 
-* Because the random process has non-uniform probability (`70%` chance to make a shot and `30%` chance to miss a shot) the corresponding frequency and probability distributions of made free throws show that a majority of the distribution lies within the `7, 8, 9, and 10` range, while the rest of the distribution is spread out within the `0, 1, 2, 3, 4, 5, 6`. Unlike the bell-curve of a normal distribution, this is called a skewed (in this case left-scewed) distribution.
+* Because the random process has non-uniform probability (`70%` chance to make a shot and `30%` chance to miss a shot) the corresponding frequency and probability distributions of made free throws show that a majority of the distribution lies within the `7, 8, 9, and 10` range, while the rest of the distribution is spread out within the `0, 1, 2, 3, 4, 5, 6` range. Unlike the bell-curve of a normal distribution, this is called a skewed (in this case left-skewed) distribution.
 
   ![free-throws-frequency-distribution](Images/free-throws-frequency-distribution.png)
 
   ![free-throws-probability-distribution](Images/free-throws-probability-distribution.png)
+
+* The probability distribution of free throws made will change slightly with every run of the program; however, in this current run, the probability distribution shows that the likelihood of the player making `9-10` shots in a single session is approximately `15%`.
+
+  ![free-throws-probability-distribution-focus](Images/free-throws-probability-distribution-focus.png)
+
+
 
