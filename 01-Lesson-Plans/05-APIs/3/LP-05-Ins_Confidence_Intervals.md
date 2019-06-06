@@ -4,7 +4,7 @@ In this activity, students are introduced to confidence intervals, which are val
 
 **Files:**
 
-* [coin_flip_confidence_intervals.ipynb](Activities/03-Ins_Confidence_intervals/Solved/coin_flip_confidence_interval.ipynb)
+* [coin_flip_confidence_intervals.ipynb](Activities/03-Ins_Confidence_intervals/Solved/coin_flip_confidence_intervals.ipynb)
 
 Walk through the solution and highlight the following:
 
