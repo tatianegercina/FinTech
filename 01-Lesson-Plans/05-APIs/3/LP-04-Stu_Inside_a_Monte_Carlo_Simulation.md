@@ -18,24 +18,58 @@ In this activity, students execute a Monte Carlo simulation to analyze the proba
 
 Open the solution and explain the following:
 
-* Remember that the `corr` function compares values from each column-to-column pair. Therefore, make sure that the DataFrame is properly formatted on a column-by-column basis for analysis.
+* The process of executing a Monte Carlo simulation remains similar even for a different use case (free throws vs. coin flips). At it's core, the basis of Monte Carlo simulations is iteration (running tests/simulations) and saving the results of a random process. Thus, expect the programmatic structure of `for` loops and potentially nested `for` loops.
 
-  ![formatted-dataframe](Images/formatted-dataframe.png)
+  ```python
+  # Set number of simulations and free throws
+  num_simulations = 1000
+  num_throws = 10
 
-* When viewing a correlation table, it's difficult to distinguish lower values from higher values when there are many variables present. Therefore, using the `heatmap` function from the `seaborn` library makes it much easier to discern differences by using color gradients.
+  # Set a list object acting as a throw: made basket or missed basket
+  throw = ["made", "missed"]
 
-  ![correlation-table](Images/correlation-table.png)
+  # Create an empty DataFrame to hold simulation results
+  monte_carlo = pd.DataFrame()
 
-  ![correlation-heatmap](Images/correlation-heatmap.png)
+  # Run n number of simulations
+  for n in range(num_simulations):
 
-* Use the `vmin` and `vmax` parameters to the `heatmap` function to modify the scale of the heatmap. Correlation values range from `-1` to `0` to `+1` therefore the scale of the heatmap will need to reflect accordingly.
+      # Print simulation iteration
+      print(f"Running Simulation {n+1}...")
+    
+      # Set an empty list to hold throw results
+      throws = []
 
-  ![correlation-heatmap-scaled](Images/correlation-heatmap-scaled.png)
+      # Shoot the ball `10` times
+      for i in range(num_throws):
+          # Randomly choose between `made` and `missed` with a `70%` chance to make the throw and a `30%` chance the throw is missed
+          free_throw = random.choice(throw, p=[0.7, 0.3])
+        
+          # Print throw result
+          print(f"  Throw {i+1}: {free_throw}")
 
-* Looking at the heatmap and cross-referencing the correlation table, it would appear as though AMD stock appears to be the least correlated out of any of the other semiconductor stocks. Therefore, AMD stock would be the best semiconductor stock to add to the existing portfolio.
+          # Append throw result to list
+          throws.append(free_throw)
 
-  ![correlation-heatmap-focus](Images/correlation-heatmap-focus.png)
-  
-  ![correlation-table-focus](Images/correlation-table-focus.png)
+      # Append column for each simulation and throw results
+      monte_carlo[f"Simulation {n}"] = pd.Series(throws)
 
-* Before moving on, ask the students if they have any questions regarding correlation and portfolio diversification.
+  # Print the DataFrame
+  monte_carlo
+  ```
+
+* The `choice` function from the `random` class of the `numpy` library has a `p` parameter that allows for setting a non-uniform probability to events. In this case, a player has a `70%` chance of making a shot and consequently a `30%` chance of missing the shot. Therefore, the `choice` function below reflects this.
+
+  ```python
+  # Set a list object acting as a throw: made basket or missed basket
+  throw = ["made", "missed"]
+  # Randomly choose between `made` and `missed` with a `70%` chance to make the throw and a `30%` chance the throw is missed
+  free_throw = random.choice(throw, p=[0.7, 0.3])
+  ```
+
+* Because the random process has non-uniform probability (`70%` chance to make a shot and `30%` chance to miss a shot) the corresponding frequency and probability distributions of made free throws show that a majority of the distribution lies within the `7, 8, 9, and 10` range, while the rest of the distribution is spread out within the `0, 1, 2, 3, 4, 5, 6`. Unlike the bell-curve of a normal distribution, this is called a skewed (in this case left-scewed) distribution.
+
+  ![free-throws-frequency-distribution](Images/free-throws-frequency-distribution.png)
+
+  ![free-throws-probability-distribution](Images/free-throws-probability-distribution.png)
+
