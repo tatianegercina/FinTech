@@ -34,4 +34,4 @@ Create a Monte Carlo simulation with `1000` simulations of `10` free throws to a
 
 ## Hints
 
-* To learn more about diversification and how correlation amongst stocks in portoflios play a factor to minimizing risk, read more [here](https://www.investopedia.com/terms/d/diversification.asp)  
+* To learn more about histograms and probability distributions, read more [here](https://learnche.org/pid/univariate-review/histograms-and-probability-distributions)  
