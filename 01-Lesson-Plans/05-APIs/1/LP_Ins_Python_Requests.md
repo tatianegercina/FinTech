@@ -95,3 +95,19 @@ Live code how to use the Python `requests` library, and use the following discus
   ```
 
   ![json_with_indent.png](Images/json_with_indent.png)
+
+* JSON data has to be selected based off of levels and hierarchies. For example, some JSON objects are organized by parent -> index -> attribute. Others just have indexes and attributes or just attributes. Either way, the way to access JSOn values is to use a process similar to `dicts`. Brackets `[]` are used to specify hierarchies.
+
+  ```python
+  # Select country and GDP value for first row
+  country = data[1][1]['country']['value']
+  gdp_value = data[1][1]['value']
+
+  print(country)
+  print("GDP Value: " + str(gdp_value))
+  ```
+
+  ```
+Country: Arab World
+GDP Value: 2584531235434.03
+  ```
