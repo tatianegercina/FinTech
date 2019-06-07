@@ -77,3 +77,21 @@ Live code how to use the Python `requests` library, and use the following discus
   ```
 
   ![submit_python_request.png](Images/submit_python_request.png)
+
+* The `json` function from the `json` library can be used to format API output in true JSON format.
+
+  ```python
+  import json
+
+  # Format JSON
+  data = response_data.json()
+  ```
+
+* To improve visual formatting even more, the `json.dump` function can be used to add indentations to the JSON data to make the JSON levels and hierarchies more apparent. The `json.dump` function accepts an argument `indent` which can be configured to change the indents. `indent=4` is commonly used. Communicate to students  that the `json.dump` function only visually format the JSON output on the screen; it does not alter the underlying JSON structure.
+
+  ```python
+  # Add indents to JSON and output to screen
+  print(json.dumps(data, indent=4))
+  ```
+
+  ![json_with_indent.png](Images/json_with_indent.png)
