@@ -96,7 +96,7 @@ Live code how to use the Python `requests` library, and use the following discus
 
   ![json_with_indent.png](Images/json_with_indent.png)
 
-* JSON data has to be selected based off of levels and hierarchies. For example, some JSON objects are organized by parent -> index -> attribute. Others just have indexes and attributes or just attributes. Either way, the way to access JSOn values is to use a process similar to `dicts`. Brackets `[]` are used to specify hierarchies.
+* JSON data has to be selected based off of levels and hierarchies. For example, some JSON objects are organized by JSON object -> JSON array -> attribute. Some have multiple objects, and others have multiple JSON arrays. Either way, accessing JSON data is just like accessing data in a dictionary. Brackets `[]` are used with `keys` to retrieve values.
 
   ```python
   # Select country and GDP value for first row
@@ -108,6 +108,10 @@ Live code how to use the Python `requests` library, and use the following discus
   ```
 
   ```
-Country: Arab World
-GDP Value: 2584531235434.03
+  Country: Arab World
+  GDP Value: 2584531235434.03
   ```
+
+  ![selecting_json.png](Images/selecting_json.png)
+
+Ask if there are any remaining questions before moving forward.
