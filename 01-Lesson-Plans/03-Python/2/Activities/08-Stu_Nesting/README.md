@@ -1,24 +1,24 @@
 # Weekly Gains
 
-In this activity, the stock markets have already been closed since 4 PM and the time is slowly creeping by to 5 PM on a Friday. Unfortunately, as his job entails, Harold needs to close out another week of gathering stock data so as to calculate a report of the weekly gains of his list of stocks.
+## Background
 
-Usually Harold performs this task by manually looking up the stock price records for the new day, adding them to his weekly list of stocks, and then running his calculations; however, he now wonders if there is an easier (and quicker) way to do all of this so that he can go home earlier on Fridays.
+The stock markets have been closed since 4:00 p.m., and now it's almost 5:00 p.m. on Friday. As his job entails, Harold needs to close out another week of gathering stock data in order to calculate a report of the weekly gains of his list of stocks.
 
-Help Harold by creating a program to automate his data gathering process, and even better, his weekly gain calculations.
+Harold usually performs this task by manually looking up the stock price records for the new day, adding them to his weekly list of stocks, and then running his calculations. However, he now wonders if there is a quicker way to do all of this so that he can go home earlier on Fridays.
+
+Help Harold by creating a program to automate his data gathering process and weekly gains calculations.
 
 ## Instructions
 
-Using the [starter-file](Unsolved/Core/weekly_gains.py) provided, walk through the following steps:
+Using the [starter-file](Unsolved/Core/weekly_gains.py) provided, complete the following steps:
 
-  * Use the `new_records` dictionary to add each new stock ticker record to the corresponding list of records in the `historical_stock_data` dictionary. Appended stock ticker records will need to be in the following format: `[date, open, high, low, close]`.
+* Use the `new_records` dictionary to add each new stock ticker record to the corresponding list of records in the `historical_stock_data` dictionary. Appended stock ticker records will need to be in the following format: `[date, open, high, low, close]`. You have two options for how you do this: 
 
-  * You have two choices to do so:
+  * Create a list object for each new stock ticker record in the `new_records` dictionary in the above sequence. Manually append each list to the corresponding list of stock ticker records in the `historical_stock_data` dictionary.
+  
+  * Loop through the `new_records` dictionary and append a new stock ticker record to each corresponding ticker in the `historical_stock_data` dictionary.
 
-    1. Create a list object for each new stock ticker record in the `new_records` dictionary in the above sequence and manually append each list to the corresponding list of stock ticker records in the `historical_stock_data` dictionary.
-
-    2. Loop through the `new_records` dictionary and append a new stock ticker record to each corresponding ticker in the `historical_stock_data` dictionary.
-
-  * Print out the modified `historical_stock_data` dictionary.
+* Print out the modified `historical_stock_data` dictionary.
 
     ```python
     # Print out the modified 'historical_stock_data' dictionary
@@ -33,15 +33,15 @@ Using the [starter-file](Unsolved/Core/weekly_gains.py) provided, walk through t
 
 Calculate the weekly gains for each stock ticker and assign to a `results` dictionary for each stock ticker.
 
-  * Loop through every key-value pair in the `historical_stock_data` dictionary
+  * Loop through every key-value pair in the `historical_stock_data` dictionary. 
 
-  * Set the last and first record closing prices: `ending_weekly_close` and `beginning_weekly_close`
+  * Set the last and first record closing prices: `ending_weekly_close` and `beginning_weekly_close`. 
 
-  * Calculate the `ticker_weekly_close = ending_week_close - beginning_week_close) / beginning_week_close * 100`. Round to the nearest 2 decimal places.
+  * Calculate the `ticker_weekly_close = ending_week_close - beginning_week_close) / beginning_week_close * 100`. Round to the nearest two decimal places.
 
   * Set the `ticker_weekly_close` to the corresponding ticker in the `results` dictionary.
 
-## Hints
+## Hint
 
 Your results should look similar to the following:
 

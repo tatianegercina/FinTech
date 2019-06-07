@@ -22,19 +22,19 @@ By the end of the unit, students will be able to:
 
 ## Instructor Notes
 
-* Welcome to the first day of programming with Python! This is the first class in which students work with Python, and you will be guiding them through a series of increasingly complex activities. The activities in this class serve as the foundation for next class as well as the homework. The class should feel like an evenly paced introduction to Python that provides a challenge and engages students with relatable use cases.
+* Welcome to the first day of programming with Python! You will be guiding students through a series of increasingly complex activities, which serve as the foundation for the next class as well as the homework. The class should feel like an evenly paced introduction to Python that provides a challenge and engages students with relatable use cases.
 
-* Today's class will focus on fundamental Python concepts, including what Python is, technical and financial problems it solves, and factors that make Python different from other programming languages. Students' familiarity with Python will likely vary, so be prepared to answer questions ranging from basic to complex.
+* Today's class will introduce students to fundamental Python concepts, including what Python is, technical and financial problems it solves, and factors that make Python different from other programming languages. Students' familiarity with Python will likely vary, so be prepared to answer questions ranging from basic to complex.
 
-* This class will likely be challenging for some students as they become acquainted with coding standards, syntax, and the debugging process. An activity will follow each instructor demo so that students can practice these concepts. Review questions are also included to reinforce key information.
+* This class will be challenging for some students as they become acquainted with coding standards, syntax, and the debugging process. Each instructor lecture or demo (Instructor Do) will be followed by an activity in which students will be able to practice these concepts. Review questions are also included to reinforce key information.
 
-* Look for opportunities to include real-world examples in your lecture to make concepts more concrete and relatable for students. Feel free to draw on your own experience in the professional world. 
+* Look for opportunities to include real-world examples in your lectures to make concepts more concrete and relatable for students. Feel free to draw on your own experience in the professional world. 
 
-* Be encouraging. Remind students that all developers have started where they, the students, are right now. Actively work to build confidence and promote effective problem-solving skills.
+* Be encouraging. Remind students that all developers have started where the students are right now. Actively work to build confidence and promote effective problem-solving skills.
 
 * As you review the activities, find ways to connect the concepts to FinTech. Include brief discussion about emerging, innovative technologies and how the concepts relate to them as well.
 
-* Today's class will include a tour of JupyterLab. There will also be several live-coding activities that should be coded in a Python Notebook. Make sure JupyterLab is installed and running properly.
+* Today's class will include a tour of JupyterLab. There will also be several live-coding activities that should be completed in a Python Notebook. Make sure JupyterLab is installed and running properly on your machine.
 
 * Have your TAs keep track of the time with the [Time Tracker](TimeTracker.xlsx).
 
@@ -42,11 +42,9 @@ By the end of the unit, students will be able to:
 
 ### 1. Instructor Do: Welcome and Introduce Python (5 mins)
 
-**Files:**
+**File:** [Slideshow](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.p9)
 
-* [Slideshow](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.p9)
-
-Welcome students to class. Explain that today will be the exciting first step toward automating their work with Python! Cover the following points: 
+Welcome students to class. Explain that today will be the exciting first step toward automating their work with Python! Introduce Python by covering the following points: 
 
 * Python is a high-level, general purpose programming language used to create applications, as well as solve smaller, individual development needs.
 
@@ -62,7 +60,7 @@ Review the advantages of using Python.
 
 * Python integrates with database systems (e.g., Oracle, MySQL), providing a mechanism to load and extract data from databases.
 
-* Python also has libraries and functions, such as NumPy and Pandas, that were developed specifically to help create financial applications and support data visualization.
+* Python also has libraries and functions, such as NumPy and pandas, that were developed specifically to help create financial applications and support data visualization.
 
   * Creating data visualizations with Python allows data elements and their complexity and relationships to be visualized. This is especially valuable for financial algorithms that require trend or time analysis. 
   
@@ -82,11 +80,15 @@ Introduce JupyterLab by first asking students if they have ever heard of Jupyter
 
 * Jupyter Notebook was created by Project Jupyter to provide developers and data scientists with a development environment (integrated development environment) that includes all of the tools needed to build Python programs. 
 
+* An **integrated development environment (IDE)** is software that provides a text editor as well as technology to package code and interpret it.
+
+  * Most IDEs have plugins that allow you to customize the look and feel and download additional software.
+
+  * For example, some IDEs connect with code repositories to make sure code is always backed up in a source control repository. 
+
 * JupyterLab, the next generation of Jupyter Notebook, is an open-source, web-based interactive development environment that provides a space for users to code, take notes, write computational narrative, manipulate data, and visually represent data.
 
 Explain the advantages of JupyterLab.
-
-* Define what an IDE is. An integrated development environment (IDE) is software that provides a text editor and technology to package code up and interpret it. Most IDEs come with plugins that allow you to customize the look and feel, as well as download additional software. For example, some IDEs will connect with code repositories to make sure code is always backed up in a source control repository.
 
 * Whereas Jupyter Notebook provides an interactive space to write code and access a terminal, JupyterLab provides an actual environment to develop. JupyterLab is a true integrated development environment that provides connectivity to various plugins and services.
 
@@ -121,7 +123,7 @@ Walk students through the process of setting up JupyterLab:
   jupyter lab
   ```
 
-Pause to check if any students are unable to launch JupyterLab. If there are, instruct them to troubleshoot their installation with a TA during the next activity or the break. Instruct students to use [https://jupyter.org/try](https://jupyter.org/try) until their environments are up and running.
+Pause here to check if any students are unable to launch JupyterLab. If there are, instruct them to troubleshoot their installation with a TA during the next activity or the break. Instruct students to use [https://jupyter.org/try](https://jupyter.org/try) until their environments are up and running.
 
     ![jupyterlab.png](Images/jupyterlab.png)
 
@@ -169,7 +171,7 @@ Open [JupyterLabProjectGuide.md](../Supplemental/JupyterLabProjectGuide.md). Wal
 
   ![LP_Ins_Jupyter_Project_Notebooks.png](Images/LP_Ins_Jupyter_Project_Notebooks.png)
 
-Ask if there are any questions before moving on. 
+Answer any questions before moving on. 
 
 - - -
 
@@ -193,31 +195,31 @@ Engage students with the following questions:
 
 * What is JupyterLab?
 
-  * Sample answer: JupyterLab is a web-based user interface that enables users to work with documents, write code, and create visualizations. JupyterLab is essentially a communication tool––it allows coders to organize and communicate the results of code in a way that is both fun and easy to read and understand.
+  **Sample Answer:** JupyterLab is a web-based user interface that enables users to work with documents, write code, and create visualizations. JupyterLab is essentially a communication tool––it allows coders to organize and communicate the results of code in a way that is both fun and easy to read and understand.
 
 * What are some of the advantages of JupyterLab?
 
-  * Sample answer: JupyterLab is the next generation of web-based IDEs that gives coders a highly customizable and modular workspace to create and present code and data. You can easily share code, research, and analytical notebooks with team members and leadership, which improves communication and facilitates collaboration.
+  **Sample Answer:** JupyterLab is the next generation of web-based IDEs that gives coders a highly customizable and modular workspace to create and present code and data. You can easily share code, research, and analytical notebooks with team members and leadership, which improves communication and facilitates collaboration.
 
 * Where are files saved when created in JupyterLab: on the file system or on a separate server?
 
-  * Sample answer: Files are saved on the file system. By default, newly created files and directories are created in the user's home folder.
+  **Sample Answer:** Files are saved on the file system. By default, newly created files and directories are created in the user's home folder.
 
 * How many activities can be opened in one launcher?
 
-  * Sample answer: 
+  **Sample Answer:** @@@ 
 
 * What are JupyterLab projects?
 
-  * Sample answer: Conceptually, JupyterLab projects are the underlying organizational system of JupyterLab. Like a hiking backpack holds everything you need to operate on a hiking trip, a Jupyter project holds everything needed to run a Jupyter program. Physically, JupyterLab projects are folders on the file system."
+  **Sample Answer:** Conceptually, JupyterLab projects are the underlying organizational system of JupyterLab. Like a hiking backpack holds everything you need to operate on a hiking trip, a Jupyter project holds everything needed to run a Jupyter program. Physically, JupyterLab projects are folders on the file system.
 
 * How do you create a project in JupyterLab?
 
-  * Sample answer: You can create a Jupyter project by using the create folder button in the File Explorer. From there, a notebook, terminal, or text file can be created in the folder.
+  **Sample Answer:** You can create a Jupyter project by using the create folder button in the File Explorer. From there, a notebook, terminal, or text file can be created in the folder.
 
 * What can go into a JupyterLab project?
 
-  * Sample answer: A JupyterLab project can include documents, text files, code scripts (i.e., Python scripts/files), terminals, etc.
+  **Sample Answer:** A JupyterLab project can include documents, text files, code scripts (i.e., Python scripts/files), terminals, etc.
 
 To guide students, you may want to follow up with questions such as:
 
@@ -225,9 +227,9 @@ To guide students, you may want to follow up with questions such as:
 
 * What is the output extension for a Python Jupyter notebook?
 
-  * Sample answer: Yes, JupyterLab can be configured to work with Scala and R. JupyterLab supports up to 40 languages, including Java. This is awesome because it means you don't have to learn language-specific tools. You can learn how to use JupyterLab, and then as you learn new languages and begin to alternate languages on coding projects, you don't have to worry about switching the IDE being used. JupyterLab can be the one-stop shop for all IDE and programming needs!
+  **Sample Answer:** Yes, JupyterLab can be configured to work with Scala and R. JupyterLab supports up to 40 languages, including Java. This is awesome because it means you don't have to learn language-specific tools. You can learn how to use JupyterLab, and then as you learn new languages and begin to alternate languages on coding projects, you don't have to worry about switching the IDE being used. JupyterLab can be the one-stop shop for all IDE and programming needs!
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 - - -
 
@@ -239,7 +241,9 @@ Ask if there are any questions before moving on.
 
 * [variables.py](Activities/04-Ins_Variables/Solved/variables.py)
 
-Now that the environment and tools have been greased and prepped, it's time to start coding! 
+Begin this section by saying something like, 
+
+> Now that the environment and tools have been greased and prepped, it's time to start coding! 
 
 At this point, students may feel apprehensive about the upcoming coding activities. Build confidence by saying: 
 
@@ -255,11 +259,11 @@ Open the slideshow and use the slides to discuss concepts related to variables. 
 
 * One way to think about variables is from the perspective of Excel: 
 
-  * Each cell label in Excel serves as a variable; e.g., A1, B1, C1. 
+  * Each cell label in Excel serves as a variable; for example, A1, B1, C1. 
   
   * Each cell has a name (e.g., 'A1'), a value (e.g., 5), and a type (int).
 
-* Variables allow us to name our data in ways that make it easier to understand and use in code. For example, computers don't really care if you name a string of text characters something like `first_name`, but this does hold a lot of meaning for a person reading the code.
+* Variables allow us to name our data in ways that make it easier to understand and use in code. For example, computers don't care if you name a string of text characters something like `first_name`, but this does hold a lot of meaning for a person reading the code.
 
 * Variables have three main operations: create, put, and retrieve.
 
@@ -271,7 +275,7 @@ Open the slideshow and use the slides to discuss concepts related to variables. 
 
 * A useful analogy for understanding the relationship between variables and values is an envelope and a letter: the envelope is the variable, and the value is the letter, or contents. `calling` a variable is like opening an envelope and withdrawing the contents.
 
-* All variables have a type. This is known as a **data type**. 
+* All variables have a **data type**. 
 
   * Example data types that will be leveraged in this class include string, int, float, double, and Boolean. 
   
@@ -306,7 +310,7 @@ Open [variables.py](Activities/04-Ins_Variables/Solved/variables.py) and highlig
   print("The data type of variable expert_status is " + type(expert_status))
   ```
 
-* Variables can also be used in calculations. Using variable names can make it easier to understand the logic in the code.
+* Variables can be used in calculations. Using variable names can make it easier to understand the logic in the code.
 
   ```python
   total_miles = 257
@@ -359,15 +363,13 @@ In this activity, students will learn how to perform calculations and operations
 
 If students need additional assistance or finish early, direct them to the Python style guide, which can be found [here](https://www.python.org/dev/peps/pep-0008/).
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 - - -
 
-### 8. Instructor Do: Review Activity (5 mins)
+### 8. Instructor Do: Review Variables (5 mins)
 
-**File:**
-
-* [hello_variable_world.py](Activities/05-Stu_Variables/Solved/Core/hello_variable_world.py)
+**File:** [hello_variable_world.py](Activities/05-Stu_Variables/Solved/Core/hello_variable_world.py)
 
 Review the solution to the variables activity, highlighting the following points:
 
@@ -391,47 +393,45 @@ Engage students with the following review questions:
 
 * How do you create a function?
 
+  **Answer:** Declare it. 
+
 * How do you put a value in a variable?
+
+  **Answer:** Assign it.
 
 * How do you retrieve a value from a function?
 
+  **Answer:** Call it. 
+
 * What are the three attributes of a variable?
+
+  **Answer:** Name, type, and value
 
 * What are some of the data types covered so far?
 
+  **Answer:** String, integer, Boolean, float
+
 * What is concatenation?
+
+  **Answer:** The operation of joining two strings
 
 * What is the function to display output to the screen?
 
+  **Answer:** `print()`
+
 * How do you determine the data type of a variable?
+
+  **Answer:** `type()`
 
 * How do you format a variable in a `print` statement?
 
-Sample Answers:
-
-> "Declare it."
->
-> "Assign it."
->
-> "Call it."
->
-> "The three attributes of a variable are name, type, and value."
->
-> "String, integer, Boolean, float, just to name a few."
->
-> "Concatenation is the operation of joining two strings."
->
-> "By using the `print()` function."
->
-> "By using the `type()` function.
->
-> "By providing the `f` indicator at the beginning of a print statement. The variable being formatted is also required to be wrapped in curly braces."
+  **Answer:** By providing the `f` indicator at the beginning of a print statement. The variable being formatted is also required to be wrapped in curly braces.
 
 To guide students, you may want to follow up with questions such as:
 
-> "Can a string be concatenated with an integer?"
+* Can a string be concatenated with an integer?
 
-> "What type of calculations can be done with Integers?"
+* What type of calculations can be done with integers?
 
 Ask if there are any questions before moving on.
 
@@ -445,15 +445,15 @@ Ask if there are any questions before moving on.
 
 * [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py)
 
-Begin by reminding students how, in the previous activity, variables were used to tell computers what to remember. Explain to students that in this section, variables will be used to tell computers how to make simple decisions about what they are remembering and storing as variables.
+Begin by reminding students that, in the previous activity, variables were used to tell computers what to remember. In this section, variables will be used to tell computers how to make simple decisions about what they remember and store as variables.
 
-Open a console within JupyterLab and live code the examples. Be sure to highlight the following concepts:
+Open a console within JupyterLab and live code the examples. Be sure to explain the following: 
 
 * Computers are really simple in that they do exactly what you tell them to. If you want to have a really useful script, you must program decision logic into the computer. 
 
-  * Imagine a self-driving car. Writing code that tells the car's computer to drive forward is great for straight stretches of road. But what happens when a pedestrian is in the path? You need to include additional logic to instruct the car's computer to not hit the pedestrian. Computers only do what you tell them to!
+* Imagine a self-driving car. Writing code that tells the car's computer to drive forward is great for straight stretches of road. But what happens when a pedestrian is in the path? You need to include additional logic to instruct the car's computer to not hit the pedestrian. Computers only do what you tell them to!
   
-  * This decision making is called **conditional logic**, and it is a fundamental building block of all computer programs. 
+* This decision making is called **conditional logic**, and it is a fundamental building block of all computer programs. 
   
 * Conditions can be specified, or variables can be used to store conditions for conditional statements. 
   
@@ -463,7 +463,9 @@ Open a console within JupyterLab and live code the examples. Be sure to highligh
   
   * Colons are used to indicate what action needs to be taken if the condition evaluates as `True`.
 
-> "What would happen if a driver fell asleep behind the wheel of a car? Well, if it's a self-driving car, nothing. The car's safety mechanisms will activate, and the car will begin auto-piloting itself to avoid collisions and swerving. If it's not a driverless car, well, a miracle might be needed."
+Continue the example of the self-driving car:  
+
+* What would happen if a driver fell asleep behind the wheel of a car? Well, if it's a self-driving car, nothing. The car's safety mechanisms will activate, and the car will begin auto-piloting itself to avoid collisions and swerving. If it's not a driverless car, well, a miracle might be needed.
 
   ```python
   driverless_car = false
@@ -491,7 +493,7 @@ Open a console within JupyterLab and live code the examples. Be sure to highligh
     print("Leave the umbrella at home!")
   ```
 
-* `Boolean` is a pretty weird word, which makes it easier to remember! Booleans are named after their inventor, George Boole, a famous 19th-century logician.
+ * `Boolean` is a pretty weird word, which makes it easier to remember! Booleans are named after their inventor, George Boole, a famous 19th-century logician.
 
 * Conditional statements can be used to make decisions about what will be stored in a variable. 
 
@@ -589,15 +591,15 @@ Open [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py), a
           print("x is less than 10 and y is greater than 5")
   ```
 
-* Revisit the self-driving car scenario to reinforce the power of using `elif` and nested `if-else` statements.
+* Revisit the self-driving car scenario to reinforce the power of using `elif` and nested `if-else` statements. Say: 
 
-> "Let's say you're in your self-driving car in the state of Florida, and you somehow get into an accident. Your insurance company might have a program that will predict, based on a series of conditions (e.g., at-fault liability, accident forgiveness policy, loyalty elite status), whether your premium will increase. That logic might look something like this."
+  "Let's say you're in your self-driving car in the state of Florida, and you somehow get into an accident. Your insurance company might have a program that will predict, based on a series of conditions (for example, at-fault liability, accident forgiveness policy, loyalty elite status), whether your premium will increase. That logic might look something like this code."
 
-Open the following code in JupyterLab. Do not run it. Let students read it to see if they can guess whether `increase_insurance_premium` will be `True` or `False`. 
+At this point, open the code in JupyterLab. Do not run it. Let students read it to see if they can guess whether `increase_insurance_premium` will be `True` or `False`. 
 
 After a minute has passed, run the code. Conditions:
 
-  * Whether or not driver was at fault
+  * Whether or not the driver was at fault
 
   * Whether or not the policy is eligible for accident forgiveness
 
@@ -630,7 +632,7 @@ After a minute has passed, run the code. Conditions:
   print(f"Prediction: {increase_insurance_premium}")
   ```
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 - - -
 
 ### 10. Student Do: The Conditional Conundrum (15 mins)
@@ -647,21 +649,25 @@ In this activity, students will create a Python script that implements condition
 
 Take some time now to gauge students' level of comfort with conditionals. You can say something like: 
 
-> You've just learned a lot of new syntax and keywords. We've also introduced logical and comparison operators, and if-else statements are about to become your best friend. Let's reflect for a minute.  What makes sense, and what is still confusing? Is anything a point of frustration? 
+"You've just learned a lot of new syntax and keywords. We've also introduced logical and comparison operators, and if-else statements are about to become your best friend. Let's reflect for a minute.  What makes sense, and what is still confusing? Is anything a point of frustration?"
 
 Be prepared to explain the following, for example:
 
 * The comparison operators use the double equal sign `==` to represent equality. The equal sign `=` is used to assign values to variables. What's the difference?
 
-  *  `==` checks to see if a value equals another; it double checks equality. Like all work, you want to double check what you're doing. So when you're basing a condition on equality, you should double check what's being compared. You don't want to compare apples to oranges. They'll never be equal!
+  *  `==` checks to see if a value equals another; it double checks equality. (Like all work, you want to double check what you're doing!) So when you're basing a condition on equality, you should double check what's being compared. You don't want to compare apples to oranges. They'll never be equal!
 
   * `=` is used to set and put values in a variable; it is used to asset and declare that a variable is something. You're not comparing it; you know for sure this is the answer. Think back to algebra, for example. When you finish showing your work and steps in the calculation, you declare that `x = <some value>`. This is exactly how using the `=` works when declaring variables. You're declaring rather than evaluating.
 
 * It's difficult to remember when to use greater than `>` and less than `<` operators, and when to use greater than or equal to `>=` and less than or equal to `<=`.
 
-  * Deciding when to use specific comparison operators comes down to whether you want your conditional statement to include the minimum and maximum values needed to pass the condition. This is best explained with the example of drinking age. In the U.S., you have to be 21 years of age or older to legally drink. 21 is the minimum age acceptable. If I were to write a program that checked whether someone's age met the legal conditions, I would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 21 cannot drink.
+  * Deciding when to use specific comparison operators comes down to whether you want your conditional statement to include the minimum and maximum values needed to pass the condition: 
   
-  * Look at the following code. Are the results as expected, based on the logic? What are two ways to fix the logic (switch from using `>` to `>=`, or check `if age > 20`)? 
+  * This is best explained with the example of drinking age. In the U.S., you have to be 21 years of age or older to legally drink. 21 is the minimum age acceptable. 
+    
+  * If we were to write a program to check whether someone's age meets the legal conditions, we would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 21 cannot drink.
+  
+Tell students to look at the following code. Are the results as expected, based on the logic? What are two ways to fix the logic (switch from using `>` to `>=`, or check `if age > 20`)? 
 
   ```python
   age = 21
@@ -713,55 +719,55 @@ Use the following code from the solution as an example. Instead of hard-coding t
 
 * `If-else` statements can have multiple conditions, which can be achieved by using `elif` or by nesting `if-else` statements.
 
-Engage the students with the following review questions:
+Engage the students with the following questions:
 
 * If you want to instruct your program or computer to behave a certain way, you would use...
 
-> Conditional statements. Conditional statements require specific conditions to be met for a block of code to be executed. Conditional statements evaluate expressions to determine if the code should be executed. If the expression evaluates as `True`, the code is executed.
+  **Answer:** Conditional statements. Conditional statements require specific conditions to be met for a block of code to be executed. Conditional statements evaluate expressions to determine if the code should be executed. If the expression evaluates as `True`, the code is executed.
 
 * How does the `AND` operator work?
 
-> The `AND` logical operator requires all conditions to return `True` in order to satisfy the condition. The `AND` operator is used to include two conditions for evaluation.
+  **Answer:** The `AND` logical operator requires all conditions to return `True` in order to satisfy the condition. The `AND` operator is used to include two conditions for evaluation.
 
 * How does the `OR` operator compare to the `AND` operator?
 
-> The `OR` logical operator works similar to the `AND` operator; however, only one condition must return as `True`.
+  **Answer:** The `OR` logical operator works similar to the `AND` operator; however, only one condition must return as `True`.
 
 * How do nested if-else statements work?
 
-> A nested `if-else` statement is an if-else statement within another if-else statement. The statements execute sequentially. In order for the nested if-else statement to execute, the first if-else statement must evaluate accordingly.
+  **Sample Answer:** A nested `if-else` statement is an if-else statement within another if-else statement. The statements execute sequentially. In order for the nested if-else statement to execute, the first if-else statement must evaluate accordingly.
 
 Review what was just learned by asking the following questions:
 
 * We learned about two types of operators: logical and comparison. Is a _greater than_ sign a logical or comparison operator? 
 
-  Answer: Comparison
+  **Answer:** Comparison
 
 * Is `OR` a logical or comparison operator? 
 
-  Answer: Logical
+  **Answer:** Logical
 
 * If you want TWO conditions to be met, you would need to write _If x..._
 
-  Answer: `AND`
+  **Answer:** `AND`
 
 * If you have two conditions, but either one is good enough, you would write _x..._
 
-  Answer: `OR`
+  **Answer:** `OR`
 
 * What is used to tell the computer we want something that is _not equal to_ something else? 
 
-  Answer: `!`
+  **Answer:** `!`
 
 * If you want to declare (or assign) a variable, do you use one or two equals signs? 
 
-  Answer: `=` (one)
+  **Answer:** `=` (one)
 
-* When do you use two equals signs? 
+* When do you use double equals signs? 
 
-  Answer: When you are checking equality
+  **Answer:** When you are checking equality.
 
-Ask if there are any remaining questions before moving on.
+Answer any remaining questions before moving on.
 
 - - -
 
@@ -777,31 +783,26 @@ Ask if there are any remaining questions before moving on.
 
 * [loop_de_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py)
 
-Present the following scenario:
+Introduce for loops by presenting the following scenario:
 
-> Imagine that your new job at Accrual World Inc. is to generate a daily report for each of your client's total sales. 
->
-> Every day, you need to gather the sales data from each client, and then break out your trusty calculator to add up their total sales. This results in hours of manual labor.
->
-> Just before you finish, you realize that you were given last week's data! You have to start over! Well, there's a better way to handle repetitive tasks like this. 
->
-> Almost every programming language has the concept of loops. **Loops** allow programs to execute code over and over until a condition exists to exit the loop. 
->
-> Python has two types of loops: `for` and `while`. Each of these will be explained in the following examples.
+* Imagine that your new job at Accrual World Inc. is to generate a daily report for each of your client's total sales. Every day, you need to gather the sales data from each client, and then break out your trusty calculator to add up their total sales. This results in hours of manual labor.
 
-Open the slideshow and use slides 13-14 to discuss the concepts related to loops. Start by reviewing what has already been learned:
+* Just before you finish, you realize that you were given last week's data! You have to start over! Well, there's a better way to handle repetitive tasks like this. 
 
-> We've already learned how to tell computers what to remember by using variables. We also learned how to tell computers to make simple decisions by using conditionals. 
->
-> Now we're going to tell computers to do what they do best: endlessly repeat an action.
-> 
-> The ability to endlessly repeat te same decision or action for a large dataset is very valuable, and something that computers can do way better than people can. Computers won't make as many mistakes, and they won't get tired! 
+At this point, transition to your discussion to for loops. Open the slideshow (slides 13–14) and cover the following:
 
-Explain the following about loops: 
+* We have already learned how to tell computers what to remember by using variables. We also learned how to tell computers to make simple decisions by using conditionals.
+Now we're going to tell computers to do what they do best: endlessly repeat an action.
 
-* **Loops** give programs the ability to endlessly repeat the same action or decision. Simply put, a loop is a repeating process.
+* The ability to endlessly repeat the same decision or action for a large dataset is very valuable, and something that computers can do way better than people can. Computers won't make as many mistakes, and they won't get tired! 
+
+* Almost every programming language has the concept of loops. **Loops** allow programs to execute code over and over until a condition exists to exit the loop. Simply put, a loop is a repeating process.
+
+* Python has two types of loops: `for` and `while`.
 
 * For loops are used for iterating over a sequence or collection. As the sequence or collection is iterated, a process is executed. This means the process is executed with every round in the loop. 
+
+  * For loops are called for loops because every time a loop happens, a repeating decision or behavior happens. 
 
   * For example, if you have a string `Hello World`, a loop would allow you to iterate over each letter in the phrase and perform some type of operation (e.g., capitalize them).
   
@@ -814,8 +815,6 @@ Explain the following about loops:
 
 Open [loop_dee_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py), and review the following points about for loops.
 
-* For loops are called for loops because every time a loop happens, a repeating decision or behavior happens. 
-
 * Using a for loop means you are instructing the computer to do something for every element in the sequence.
 
 * For example, let's say you're raining a new robotic supermarket cashier. `for` every egg (element) in the carton (sequence), the robot must move the element around to inspect if it's broken. The robot would leverage the below loop:
@@ -825,7 +824,11 @@ Open [loop_dee_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py), and re
       # Inspect egg
   ```
 
-* Loops need something to loop over. This can be a sequence of numbers, known as `range`, or a sequence of letters like a word or string. The `range` function can be used to create a sequence of numbers based off of the limit provided as input (i.e. 5). Ranges begin with 0 and increment by one. When looping over the range of numbers, we will put each number in variable `x`.
+* Loops need something to loop over. This can be a sequence of numbers, known as `range`, or a sequence of letters like a word or string. 
+
+  * The `range` function can be used to create a sequence of numbers based off of the limit provided as input (i.e., 5). 
+  
+  * Ranges begin with 0 and increment by one. When looping over the range of numbers, we will put each number in variable `x`.
 
   ```python
   for x in range(5):
@@ -868,7 +871,9 @@ Open [loop_dee_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py), and re
     print(x)
   ```
 
-* `For` loops loop until they've completed a decision/behavior for each element in a sequence; `while` loops loop until a condition no longer evaluates as `True`.
+Now introduce `while` loops and compare them to `for` loops. 
+
+* Whereas `for` loops loop until they've completed a decision/behavior for each element in a sequence, `while` loops loop until a condition no longer evaluates as `True`.
 
 * For example, `while` you are wearing your uniform (uniform = True), keep ringing up customers at the checkout line.
 
@@ -884,11 +889,9 @@ Open [loop_dee_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py), and re
 
   * `For` loops should especially be used if you know a process needs to be executed a specific number of times.
 
-* `While` loops should be used when you want a decision or behavior to be executed continuously until a condition is no longer `True`. 
+* `While` loops should be used when you want a decision or behavior to be executed continuously until a condition is no longer `True`. In other words, use a `while` loop when there's a specific condition that must be met in order for the loop to end.
 
-  * Use a `while` loop when there's a specific condition that must be met in order for the loop to end.
-
-* It's important to note that while loops require an `iterator` to be created and incremented. If the iterator is not incremented,the loop will not iterate correctly. 
+* It's important to note that `while` loops require an **iterator** to be created and incremented. If the iterator is not incremented,the loop will not iterate correctly. 
 
   * For example, in the following block of code, if `i` is not incremented, `i` will always equal 1. 
   
@@ -907,92 +910,88 @@ Open [loop_dee_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py), and re
     i+=1
   ```
 
-Encourage students to spend some additional time at home reviewing while loops. Documentation can be found [here](https://docs.python.org/3/reference/compound_stmts.html#while).
+Encourage students to spend some additional time at home reviewing `while` loops. Documentation can be found [here](https://docs.python.org/3/reference/compound_stmts.html#while).
 - - -
 
 ### 14. Student Do: For Loops (15 mins)
 
-In this activity, students will work with for loops in a Python file. The objective of the assignment is for the students to recreate the steps and actions demoed during the instructor do activity. Students are also provided with an activity that involves creating a cheer leading Python program.
+In this activity, students will work with for loops in a Python file. The objective is to recreate the steps and actions in the previous instructor demo. Students are also provided with an activity that involves creating a cheerleading Python program.
 
-**Files:**
+**File:** [cheer.py](Activities/09-Stu_Loops/Unsolved/cheer.py)
 
-* [cheer.py](Activities/09-Stu_Loops/Unsolved/cheer.py)
-
-**Instructions:**
-
-* [README.md](Activities/09-Stu_Loops/README.md)
+**Instructions:** [README.md](Activities/09-Stu_Loops/README.md)
 
 - - -
 
 ### 15. Instructor Do: Review For Loops (5 mins)
 
-**Files:**
+**File:** [cheer.py](Activities/09-Stu_Loops/Solved/cheer.py)
 
-* [cheer.py](Activities/09-Stu_Loops/Solved/cheer.py)
-
-Engage the students with the following review questions:
+Engage the students with the following questions:
 
 * How do `for` loops execute?
 
+  **Answer:** For loops operate by executing iteratively over a sequence or collection.
+
 * What are the components of `for` loops?
+
+  **Answer:** Loops are comprised of a variable and a sequence/collection.
 
 * What do variables represent in a `for` loop?
 
+  **Answer:** Variables represent a single element contained within the sequence/collection. This element holds a specific position, which the for loop can access.
+
 * What is an iteration?
 
-* I need to loop over 10 financial reports and calculate growth earnings for each data set. What type of loop should I use?
+  **Answer:** For loop.
 
-* I want to identify the square root for every number in a list from 0 - 200. Should I use a loop for this? If so, what type of loop?
+* I need to loop over 10 financial reports and calculate growth earnings for each dataset. What type of loop should I use?
+
+  **Answer:** Yes; for loop.
+
+* If I want to identify the square root for every number in a list from 0-200, should I use a loop? If so, what type of loop?
+
+  **Answer:** Yes; for loop.
 
 * If I want to process trades as long as the market is open, what type of loop should I use?
 
+  **Answer:** Yes, for loop.
+
 * How do you exit from a `for` loop?
+
+  **Answer:** The `break` keyword will allow you to exit from a loop.
 
 * How do you skip an iteration in a `for` loop?
 
+  **Answer:** The `continue` keyword will allow you to skip an iteration in a loop.
+
 * How do you create a range of numbers to loop over?
 
-Sample Answers:
+  **Answer:** The `range()` function can be used to create a range of numbers.
 
-> "For loops operate by executing iteratively over a sequence or collection."
->
-> "Loops are comprised of a variable and a sequence/collection."
->
-> "Variables represent a single element contained within the sequence/collection. This element holds a specific position, which the for loop can access."
->
-> "For loop."
->
-> "Yes, for loop."
->
-> "Yes, for loop."
->
-> "The `break` keyword will allow you to exit from a loop."
->
-> "The `continue` keyword will allow you to skip an iteration in a loop."
->
-> "The `range()` function can be used to create a range of numbers."
-
-Discuss the following talking points:
+Then review the following points related to the activity:
 
 * The solution works because it loops over an object that is a sequence (the word "cheer").
 
-* String can be substituted for a range of numbers.
+* Strings can be substituted for a range of numbers.
 
-* In future classes, loops will be used with objects called Lists and Dictionaries, which are types of collections.
+* In future classes, loops will be used with objects called lists and dictionaries, which are types of collections.
 
-* Ask the students what would happen if any of the last four print statements were added into the for loop?
+Ask students what would happen if any of the last four print statements were added into the for loop.
 
-* Emphasize the importance of indentation with `for` loops. If the indentation is incorrect, lines of code that should not be in the loop will be included. Vice versa, lines that should be included but are not properly indented will not run iteratively.
+Emphasize the importance of indentation with `for` loops. 
 
-Ask for any remaining questions before moving on.
+* If the indentation is incorrect, lines of code that should not be in the loop will be included. 
+
+* Vice versa, lines that should be included but are not properly indented will not run iteratively.
+
+Answer any remaining questions before moving on.
 
 - - -
 
 ### 16. Instructor Do: Pseudocoding (10 mins)
 
-**Files:**
-
-* [Pseudocoding Slides 15-16](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g57f3228557_0_22)
+**File:** [Pseudocoding Slides 15-16](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g57f3228557_0_22)
 
 Introduce the module with a series of questions regarding how students organize their thoughts when coding:
 
@@ -1002,26 +1001,34 @@ Introduce the module with a series of questions regarding how students organize 
 
 * Was it difficult to come up with an approach/starting point for any of the assignments?
 
-Discuss and underscore the importance of using a problem solving methodology when developing programs. Having a good approach to understanding problems will enable students to design complex applications and troubleshoot errors and bugs. Polyga's techniques to problem solving are simple and easy to remember. The steps are:
+Discuss the importance of using a problem-solving methodology when developing programs. 
 
-1. Understand the problem - gather as much information as possible pertaining to the problem being solved, inputs, desired outputs, and limitations
+* Having a good approach to understanding problems will enable students to design complex applications and troubleshoot errors and bugs. 
 
-2. Devise a plan - pseudocode an algorithm
+Go over Polyga's techniques to problem solving, which are are simple and easy to remember. The steps are:
 
-3. Carry out the plan - code the algorithm
+1. Understand the problem: Gather as much information as possible pertaining to the problem being solved, inputs, desired outputs, and limitations. 
 
-4. Test and evaluate the plan - review algorithm and determine areas of improvement
+2. Devise a plan: Pseudocode an algorithm.
 
-Define pseudocoding and its effectiveness. Demonstrate pseudocoding by creating pseudocode for the previous activity:
+3. Carry out the plan: Code the algorithm. 
 
-* Pseudocode is a high-level description of the inner-workings of a program. Pseudocode is descriptive and written in human language to ensure readability.
+4. Test and evaluate the plan: Review the algorithm and determine areas of improvement. 
 
-* Pseudocoding gives developers a way to design algorithms and programs from a high level, identifying in advance each decision and action the program will make for that specific phase of development. Essentially, pseudocode represents the logical flow and design of an algorithm.
+Define pseudocoding and explain its effectiveness. 
 
-* Live code the following pseudocode:
+* **Pseudocode** is a high-level description (essentially, a prototype or outline) of the inner workings of a program or algorithm. Pseudocode is written in human language to ensure readability.
+
+* Pseudocoding is best done at the beginning of the development life cycle, in a planning or brainstorming phase. Using pseudocode to plan development allows for ideas to be captured in human language and then transformed into fine-tuned programs.
+
+* When added as a comment at the beginning of a script, pseudocode can serve as valuable, internal documentation that helps other developers understand the program.
+
+* Pseudocoding allows developers to focus on the bigger picture and develop a clear and viable plan of action. This action includes a high level, step-by-step approach to solve the problem.
+
+Demonstrate pseudocoding for the previous activity:
 
   ```
-  Pseudocode for a cheer-leading program:
+  Pseudocode for a cheerleading program:
 
   1. Initialize "cheer" variable to a string to be cheered
   2. Create a for loop and iterate through each character in "cheer" variable
@@ -1029,11 +1036,15 @@ Define pseudocoding and its effectiveness. Demonstrate pseudocoding by creating 
   3. Print exclamations to screen ("Woohoo!!!")
   ```
 
-* Pseudocode is a great tool to use on interviews. Pseudocoding on interviews allows employers to see interviewees thought process and problem solving skills, as well as their ability to design algorithms. Some employers even specifically ask interviewees to complete a pseudocoding activity. This is how interested employers are in developers' ability to solve problems, design/envision algorithms, and articulate steps/process.
+Explain that pseudocode is a great tool to use on interviews.
 
-* Data shows that employers are looking for interviewees to pseudocode during interviews. Pseudocoding during an interview communicates to employers that the interviewee is strategic when it comes to solving problems. Pseudocoding also ensures that interviewees don't jump head first into a technical question; it requires them to think about what they're going to do. The last thing anyone wants is to start coding and not know what to do next. Pseudocoding allows developers to focus on the bigger picture and develop a clear and viable plan of action. This action includes a high level, step-by-step approach to solve the problem.
+* Pseudocoding on interviews allows employers to see a candidate's thought process and problem-solving skills, as well as their ability to design algorithms. 
 
-* Pseudocode is essentially the a prototype or outline of an algorithm/program. Pseudocoding before a development activity allows for all planned mechanics to be documented and reviewed for efficiency and effectiveness. When added as a comment at the beginning of a script, pseudocode can serve as valuable, internal documentation that helps other developers understand the program.
+* Some employers even specifically ask interviewees to complete a pseudocoding activity, which shows how interested employers are in developers' ability to solve problems, design and envision algorithms, and articulate process. Data shows that employers are looking for interviewees to pseudocode during interviews.
+
+* Pseudocoding ensures that interviewees don't jump head first into a technical question; it requires them to think about what they're going to do. The last thing anyone wants is to start coding and not know what to do next. 
+
+Walk students through the following pseudocode: 
 
   ```
   Pseudocode for calculating simple interest:
@@ -1043,17 +1054,21 @@ Define pseudocoding and its effectiveness. Demonstrate pseudocoding by creating 
   3. Compute "simple_interest" by multiplying principal, interest_rate, and time_period
   ```
 
-* Pseudocoding is best done at the beginning of the development life cycle, in a planning or brainstorming phase. Using pseudocode to plan development allows for brilliant ideas to be captured in human language and then transformed into fine-tuned programs.
-
 Take a moment to discuss best practices when pseudocoding:
 
-* Human language should be used. The goal is for pseudocode to be readable and understandable.
+* Use human language. The goal is for pseudocode to be readable and understandable.
 
-* Naming and indentation conventions should be maintained.
+* Maintain naming and indentation conventions. 
 
-* Pseudocode should include variable instantiation and any operations or calculations that need to be performed. Keywords like `if`, `then`, and `else` should also be used in pseudocode for conditional statements. Loop conditions should also be specified.
+* Include variable instantiation and any operations or calculations that need to be performed. 
 
-* Be concise and straight to the point.
+* Use keywords like `if`, `then`, and `else` for conditional statements. 
+
+* Specify loop conditions. 
+
+* Be concise.
+
+Present the following example of pseudocode. 
 
 ```
 Pseudocode for determining if credit should be acquired based off of simple interest:
@@ -1068,91 +1083,79 @@ Pseudocode for determining if credit should be acquired based off of simple inte
         THEN print("This is an okay deal. You might find better. Total simple interest paid will between $2,000 and $4,000")
     ELSE print("Total simple interest paid will be over $4,000. Do not accept this line of credit")
 ```
+Answer any questions before moving on.
+- - -
+
+### 17. Student Do: Pseudocoding (10 mins)
+
+In this activity, students will pseudocode a solution to identifying whether or not a stock should be purchased, based on a specific threshold of percentage increase or decrease. When students have finished pseudocoding, they will implement their algorithm. The objective of the assignment is for the students to learn how to pseudocode solutions prior to developing them.
+
+**File:** [conditionally_yours.py](Activities/11-Stu_Pseudocoding/Unsolved/conditionally_yours.py)
+
+**Instructions:** [README.md](Activities/11-Stu_Pseudocoding/README.md)
 
 - - -
 
-### 17. Students Do: Pseudocoding (10 mins)
+### 18. Student Do: Conditionally Yours (15 mins)
 
-In this activity, students will pseudocode a solution to identifying whether or not a stock should be purchased based off of a specific threshold of percentage increase or decrease. Once students have finished pseudocoding, they will implement their algorithm. The objective of the assignment is for the students to learn how to pseudocode solutions prior to developing them.
+In this activity, students will leverage the pseudocode they created in the last activity to develop a program that will recommend whether or not a stock should be purchased based on a specific threshold of percentage increase or decrease. The objective of the assignment is for the students to learn how to evolve pseudocode into an algorithm or program.
 
-**Files:**
+**File:** [conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Unsolved/Core/conditionally_yours.py)
 
-* [conditionally_yours.py](Activities/11-Stu_Pseudocoding/Unsolved/conditionally_yours.py)
-
-**Instructions:**
-
-* [README.md](Activities/11-Stu_Pseudocoding/README.md)
-
-- - -
-
-### 18. Students Do: Conditionally Yours (15 mins)
-
-In this activity, students will leverage the pseudocode they created in the last activity to develop a program that will recommend whether or not a stock should be purchased based off of a specific threshold of percentage increase or decrease. The objective of the assignment is for the students to learn how to evolve pseudocode into an algorithm/program.
-
-**Files:**
-
-* [conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Unsolved/Core/conditionally_yours.py)
-
-**Instructions:**
-
-* [README.md](Activities/12-Stu_Challenge_Activity/README.md)
+**Instructions:** [README.md](Activities/12-Stu_Challenge_Activity/README.md)
 
 - - -
 
 ### 19. Instructor Do: Review Conditionally Yours (5 mins)
 
-**Files:**
-
-* [conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Solved/Core/conditionally_yours.py)
+**File:** [conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Solved/Core/conditionally_yours.py)
 
 Engage the students with the following questions:
 
 * How did pseudocoding improve or impair your coding process?
 
+  **Sample Answer:**  @@@
+
 * What are some of the pseudocoding best practices?
 
-* Pseudocode should include lines of code. True or False?
+  **Sample Answer:** Best practices for pseudocoding include subscribing to naming conventions, listing out variables, specifying input and output, writing calculations and operations in human language, and using keywords such as `IF` and `ELSE`, just to name a few.
+
+* Pseudocode should include lines of code. True or false?
+
+  **Sample Answer:** False, pseudocode should be in human language. Function names can be used, but operations should be written out in human language.
 
 * How do you identify a dependent statement in pseudocode?
 
-Sample Answers:
+  **Sample Answer:** Indentation is used to indicate a dependent statement.
 
-> "Pseudocode best practices include subscribing to naming conventions, listing out variables, specifying input and output, writing calculations and operations in human language, and using keywords such as `IF` and `ELSE`, just to name a few."
->
-> "False, pseudocode should be in human language. Function names can be used, but operations should be written out in human language."
->
-> "Indentation is used to indicate a dependent statement."
+Review the activity solution, highlighting the following:
 
-Go through the solution and bring attention to the following:
+* The solution's pseudocode uses a mix of human-readable language and Python keyword commands and functions. It's ideal for pseudocode to be a balance of the two.
 
-* The solution's pseudocode uses a mix of human-readable language and Python keyword commands and functions. Emphasize that there should be a balance between the two.
+* Pseudocode should match line by line with code implementation.
 
-* Pseudocode should match line-by-line with code implementation.
+* Adding pseudocode to the beginning of a Python file is a great way to outline what the script does and the order of operations. 
+  
+* This is particularly valuable when working on teams in the real world: Because the person who develops the code may not be the same person performing QA and eventually maintaining it in production, having pseudocode readily available increases the effectiveness of knowledge transfer.
 
-* Adding Pseudocode to the beginning of a Python file is a great way to outline what the script does and the order of operations. This is particularly valuable when working on teams in the real world. Because the person who develops the code may not be the same person performing QA and eventually maintaining it in production, having pseudocode readily available increases the effectiveness of knowledge transfer.
+* The key to completing the solution is to use the appropriate comparison and logical conditional operators.
 
-* The key to completing the solution is to use the appropriate Comparison and Logical conditional operators.
-
-Ask for any remaining questions before moving on.
+Answer any remaining questions before moving on.
 
 - - -
 
 ### 20. Instructor Do: Demo Homework (5 mins)
 
-**Files:**
+**File:** [Homework Instructions](../../../02-Homework/03-Python/Instructions/README.md)
 
-* [Homework Instructions](../../../02-Homework/03-Python/Instructions/README.md)
-
-Take a few moments to show students the homework that they will be building this week. Be sure to explain that they will be building up the skills to complete this assignment during the week.
+Take a few moments to show students the homework that they will be working on this week. Explain that they will be building the skills to complete this assignment during this week's classes.
 
 Congratulate students on making it through their first lesson on programming! Offer some words of encouragement such as:
 
-> "Tonight was like acquiring your first new super power. Like all new super heros, it will take some time and practice to weld those powers efficiently, but it will become more natural over time. Just keep practicing and you will be saving the world before you even know it!"
+"Tonight was like acquiring your first new superpower. Like all new superheroes, it will take some time and practice to use those powers efficiently, but it will become more natural over time. Just keep practicing and you will be saving the world before you even know it!"
 
 ### End Class
 
 - - -
 
-### Copyright
-
-Trilogy Education Services © 2019. All Rights Reserved.
+© 2019 Trilogy Education Services

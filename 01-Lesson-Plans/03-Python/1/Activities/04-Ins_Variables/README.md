@@ -1,1 +1,1 @@
-## Instructor demo
+## Instructor Demo
