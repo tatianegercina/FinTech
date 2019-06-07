@@ -34,6 +34,8 @@ Transition into a reflective Q&A session. Ask the students the following questio
 
 * Deciphering and parsing JSON can be frustrating and challenging, especially when the data isn't formatted in the best way. Did the `json.dumps` improve your ability to decipher the JSON data?
 
+If time remains, tell students about some of the APIs you've worked with and how they've added to your professional success. Encourage students to take advantage of as many open source APIs as possible. Take this time to recommend any APIs that you feel students might be interested in.
+
 Ask students if there are any comments or questions they'd like to make regarding their experiences working with APIs so far. Then transition into a formal review of the Python Requests activity.
 
 ### 13. Instructor Do: Review Python Requests (10 mins)
