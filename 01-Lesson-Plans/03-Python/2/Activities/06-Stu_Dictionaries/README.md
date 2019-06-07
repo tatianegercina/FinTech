@@ -1,8 +1,10 @@
 # Market Capitalization
 
-In this activity, Sam wants to categorize banks by their market capitalizations, which is the total dollar market value of a company's outstanding shares. Because she wants to know the relationship between a certain bank and its market capitalization, Sam uses a dictionary to index bank names to the value of its market cap. 
+## Background 
 
-Sam needs to make a few changes to her dictionary of bank market caps because she noticed a few errors/omissions. Help Sam fix her dictionary of bank market caps, and even better, help her group the banks by their corresponding market capitalization tier.
+Sam wants to categorize banks by their market capitalizations, which is the total dollar market value of a company's outstanding shares. Because she wants to know the relationship between a certain bank and its market capitalization, Sam uses a dictionary to index bank names to the value of its market cap. 
+
+Sam needs to make a few changes to her dictionary of bank market caps because she noticed a few errors and omissions. Help Sam fix her dictionary of bank market caps, and even better, help her group the banks by their corresponding market capitalization tier.
 
 ## Instructions
 
@@ -30,7 +32,7 @@ Using the starter file provided, walk through the following steps.
 
   * Add a new bank to the dictionary `American Express` and set the market cap to `33`.
 
-  * Delete `Wachovia` from the dictionary as it is a deprecated bank, acquired by Wells Fargo in 2008.
+  * Delete `Wachovia` from the dictionary, as it is a deprecated bank acquired by Wells Fargo in 2008.
 
 ## Challenge
 
@@ -38,18 +40,21 @@ Group banks by their corresponding market capitalization tier.
 
   * Iterate over the key-value pairs in the `banks` dictionary and calculate the following:
 
-    * Total Market Capitalization
-    * Total Number of Banks
-    * Average Market Capitalization
-    * Largest Bank
-    * Smallest Bank
+    * Total market capitalization
+    * Total number of banks
+    * Average market capitalization
+    * Largest bank
+    * Smallest bank
 
   * Use an if-else statement and lists to compare and group banks by their corresponding market capitalization: mega-cap, large-cap, mid-cap, and small-cap.
 
-    * Mega Cap: Firms with a market capitalization greater than or equal to $300 billion.
-    * Large Cap: Firms with a market capitalization greater than or equal to $10 billion and less than $300 billion.
-    * Mid Cap: A market capitalization greater than or equal to $2 and less than $10 billion.
-    * Small Cap: A market capitalization greater than or equal to $300 million and less than $2 billion.
+    * mega-cap: Market capitalization greater than or equal to $300 billion.
+
+    * large-cap: Market capitalization greater than or equal to $10 billion and less than $300 billion.
+
+    * mid-cap: Market capitalization greater than or equal to $2 and less than $10 billion.
+
+    * small-cap: Market capitalization greater than or equal to $300 million and less than $2 billion.
 
 ## Hints
 

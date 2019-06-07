@@ -1,30 +1,30 @@
 # Sales Analysis
 
-In this activity, you will read in a `sales.csv` file to calculate customer revenue averages.
+In this activity, you will read in the `sales.csv` file to calculate customer revenue averages.
 
 ## Instructions
 
-Using the starter file provided, walk through the following steps.
+Using the starter file, complete the following steps.
 
-* Import the Pathlib and csv libraries
+1. Import the pathlib and CSV libraries.
 
-* Set the `sales.csv` path
+1. Set the `sales.csv` path. 
 
-* Initialize a `records` list
+1. Initialize a `records` list.
 
-* Read and iterate over the `sales.csv` using `csv.reader()`
+1. Read and iterate over the `sales.csv` file using `csv.reader()`.
 
-  * Append a new column 'average' to the header and add the header to the list of records
+1. Append a new column, average, to the header, and then add the header to the list of records. 
 
-  * Set the `name`, `count`, and `revenue` variables and convert strings to ints for numerical calculations
+1. Set the `name`, `count`, and `revenue` variables and convert strings to ints for numerical calculations. 
 
-  * Calculate the average, append the average to the row, and append the row to the list of records
+1. Calculate the average, append the average to the row, and append the row to the list of records. 
 
-* Write the list of records contained in `records` to an output csvfile
+1. Write the list of records contained in `records` to an output CSV file. 
 
-  * Loop over every record in `records` and use the `writerow()` function to write to an output csv file
+1. Loop over every record in `records`, and use the `writerow()` function to write to an output CSV file.
 
-* Your output should look similar to the following:
+Your output should look similar to the following:
 
   ```python
   Name,Count,Revenue,Average
@@ -61,13 +61,13 @@ Using the starter file provided, walk through the following steps.
 
 ## Challenge
 
-Calculate the aggregate average for each unique customer name and output to a csv file.
+Calculate the aggregate average for each unique customer name and output to a CSV file. 
 
-* Initialize an `analysis` dictionary
+* Initialize an `analysis` dictionary. 
 
-* Read and iterate over the `sales.csv` using `csv.reader()`, use an if-else statement to check:
+* Read and iterate over the `sales.csv` file using `csv.reader()`. Use an if-else statement to check:
 
-* If the customer name is not already in the `analysis` dictionary, initialize the nested key-value pairs `count` and `revenue`
+  * If the customer name is not already in the `analysis` dictionary, initialize the nested key-value pairs `count` and `revenue`.
 
   ```python
   analysis[name] = {
@@ -76,18 +76,18 @@ Calculate the aggregate average for each unique customer name and output to a cs
   }
   ```
 
-* Else the customer name is already in the `analysis` dictionary, cumulatively add the `count` and `revenue` nested key-value pairs
+  * Else the customer name is already in the `analysis` dictionary, cumulatively add the `count` and `revenue` nested key-value pairs.
 
   ```python
   analysis[name]['count'] += count
       analysis[name]['revenue'] += revenue
   ```
 
-* Set the output file path for `aggregate.csv`
+* Set the output file path for `aggregate.csv`.
 
-* Write the contents of the `analysis` dictionary to `output.csv` using `csv.writer()`. Make sure to add a header to the csv file.
+* Write the contents of the `analysis` dictionary to `output.csv` using `csv.writer()`. Be sure to add a header to the CSV file.
 
-* Your output should look similar to the following:
+  Your output should look similar to the following:
 
   ```
   Name,Count,Revenue,Average
@@ -109,6 +109,9 @@ Calculate the aggregate average for each unique customer name and output to a cs
   John,4,305,76.25
   ```
 
-## Hints
+## Hint
 
-* Remember that the `csvwriter.writerow()` takes in lists!
+Remember that the `csvwriter.writerow()` takes in lists!
+
+---
+© 2019 Trilogy Education Services
