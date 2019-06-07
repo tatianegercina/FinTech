@@ -25,7 +25,7 @@ Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### 0. Instructor Do: Introduce AWS SageMaker (10 mins)
 
-Visit the SageMaker homepage and cover the following points.  
+Visit the AWS SageMaker homepage and cover the following points.  
 https://aws.amazon.com/sagemaker/
 
 SageMaker is a _platform service_ which consists of three main components that work together or independently:
@@ -142,6 +142,37 @@ Select the local notebook file to upload.
 * Now you can run commands on the notebook cells.  
 Note: you might need to make some of the `CSV` input files available by also uploading them to the right location).
 
+### 0. Students Do: Stu_Linear_Time_Series_Forecast (0:20)
+
+* In this activity, students calculate a regression line using a dataset of LSD drug concentrations vs. math scores.
+
+* **File**: [linear_time_series_forecast.ipynb](Activities/02-Stu_Linear_Time_Series_Forecast/linear_time_series_forecast.ipynb)
+
+* **Instructions:** [README.md](Activities/02-Stu_Linear_Time_Series_Forecast/README.md)
+
+  * Upload the Jupyter notebook to SageMaker's JupyterLab.
+
+### 0. Everyone Do: Review Activity (0:10)
+
+* Reassure students that it's okay if this was difficult. SageMaker APIs have a learning curve, as do other AWS resources, along with Machine Learning in general. They will get a lot of practice with this today!
+
+* Open up [linear_time_series_forecast.ipynb](Activities/02-Stu_Linear_Time_Series_Forecast/linear_time_series_forecast.ipynb).
+
+* During the review, the high level steps are as follows:
+
+    + We get the data and become familiar with it.
+    + Split the data into _Test_ and _Train_ and convert it to the [ProtoBuf format](https://developers.google.com/protocol-buffers/) used by SageMaker algorithms.
+    + Upload the prepared and formatted data to an `AWS S3` bucket.
+    + Train the model using a linear learner algorithm on the data in `S3`.
+    + Deploy the trained model on a SageMaker instance.
+    + Perform predictions and score the model's performance.
+    + Cleanup. Remove the model-hosting instance and the S3 bucket.
+
+* Bonus points:
+    + By using an `S3 bucket`, to store the data we could have trained a model on multiple terabytes of data, or a lot more space than would otherwise have fit in our personal computer.
+    + By using another instance to train our model, we can access compute power including GPU capabilities, making powerful hardware available to us as required.
+    + By deploying our model to another instance, we have make the prediction functionality available 24/7 through a secured endpoint to an application or to be consumed by others without having to make our computer available.
+    + Using AWS resources, we only pay for what we use, we'll turn off everything before ending the class and not incur in further charges.
 
 ### 0. Everyone Do: Create and Deploy a Machine Learning Model (15 mins)
 
@@ -175,9 +206,9 @@ Show students how to delete their SageMaker notebook instance so that no billing
 * Select the instance again, click on `Actions` and select `Delete` then confirm delete.  
 ![Notebook Instance delete](Images/notebook-confirm-delete.png)
 
-
 * At the end of the lesson, the notebook instances list should be empty and state: "There are currently no resources.", otherwise charges will be incurred for any remaining active instances.
 
+* Lastly, go to S3 https://s3.console.aws.amazon.com and remove the buckets created for the activity.
 
 - - -
 
