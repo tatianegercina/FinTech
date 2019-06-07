@@ -18,7 +18,7 @@ In this activity, students execute a Monte Carlo simulation to analyze the proba
 
 Open the solution and explain the following:
 
-* The `pandas` library comes built-in with certain matplotlib functions such as `plot`; however, the standalone `matplotlib` library provides the robustness required for altering a plot and setting the lower and upper bounds of a confidence interval.
+* The `pandas` library comes built-in with certain matplotlib functions such as `plot`; however, the standalone `matplotlib` library provides the robustness required for altering a plot and setting the lower and upper bounds of a confidence interval. Therefore, make sure to import the `pyplot` class from the `matplotlib` library.
 
   ```python
   # Import libraries and dependencies
@@ -28,3 +28,6 @@ Open the solution and explain the following:
   %matplotlib inline
   ```
 
+* In order to know the range of data points that contain a specific percentage of all data points in the sample, generating a frequency distribution is a pre-requisite to defining a confidence interval.
+
+  ![archery-frequency-distribution](Images/archery-frequency-distribution.png)
