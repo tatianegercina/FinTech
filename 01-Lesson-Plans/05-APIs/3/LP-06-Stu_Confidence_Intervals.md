@@ -1,4 +1,4 @@
-### 4. Students Do: Free Throw Simulation (15 mins)
+### 4. Students Do: Archery Target Shots (15 mins)
 
 In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of free throws made (out of 10 shots) for a player with a `70%` accuracy and determine the likelihood of the player making `9-10` free throws in a single session.
 
