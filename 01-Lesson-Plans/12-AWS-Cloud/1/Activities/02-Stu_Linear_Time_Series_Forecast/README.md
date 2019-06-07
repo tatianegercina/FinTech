@@ -10,12 +10,12 @@ Using your SageMaker notebook instance, upload the `linear_time_series_forecast.
 
 ## Bonus
 
-If time remains, check if you could have solved this same problem using another SageMaker built-in algorithm.
+If time remains, think about the places in the notebook where advantages of SageMaker where leveraged.
+
+* Go over other Built-In Algorithms in SageMaker [here](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-algo-docker-registry-paths.html).
+
 
 ## Hints
 
-* Check the Built-In Algorithms [here](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-algo-docker-registry-paths.html).
-
-* There are at least two algorithms that can work.
 
 * If you need a refresher visit the [JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/stable/user/interface.html#).
