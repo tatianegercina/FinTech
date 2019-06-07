@@ -12,7 +12,7 @@ Walk around with TAs to provide assistance to students with parsing JSON data. S
 
 * [README.md](Activities/11-Stu_Python_Requests/README.md)
 
-### 12. Students Do: Python Requests Engagement Activity (15 mins)
+### 12. Students Do: Requests Engagement Activity (15 mins)
 
 In this activity, have each student reveal an interesting fact or joke they discovered while working with APIs. Round robin and have each student volunteer a fact or joke.
 
@@ -31,6 +31,8 @@ Transition into a reflective Q&A session. Ask the students the following questio
 * Are there specific types or categories of APIs you'd be interested in working with?
 
 * What type of APIs are you interested in creating?
+
+* Deciphering and parsing JSON can be frustrating and challenging, especially when the data isn't formatted in the best way. Did the `json.dumps` improve your ability to decipher the JSON data?
 
 Ask students if there are any comments or questions they'd like to make regarding their experiences working with APIs so far. Then transition into a formal review of the Python Requests activity.
 
