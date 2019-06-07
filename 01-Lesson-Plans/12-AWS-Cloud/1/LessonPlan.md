@@ -168,11 +168,25 @@ Note: you might need to make some of the `CSV` input files available by also upl
     + Perform predictions and score the model's performance.
     + Cleanup. Remove the model-hosting instance and the S3 bucket.
 
-* Bonus points:
-    + By using an `S3 bucket`, to store the data we could have trained a model on multiple terabytes of data, or a lot more space than would otherwise have fit in our personal computer.
-    + By using another instance to train our model, we can access compute power including GPU capabilities, making powerful hardware available to us as required.
-    + By deploying our model to another instance, we have make the prediction functionality available 24/7 through a secured endpoint to an application or to be consumed by others without having to make our computer available.
-    + Using AWS resources, we only pay for what we use, we'll turn off everything before ending the class and not incur in further charges.
+* Cover the bonus in the following activity.
+
+### 0. Everyone Do: Discuss Pros and Cons of deploying ML models with SageMaker (10 mins)
+
+Leads and facilitate a discussion around deploying models in SageMaker and why a RESTful ML API is useful.
+
+Have students share their opinions with the class and bring up the following points:
+
+Pros:
+  + Data storage capacity: by using an `S3 bucket`, to store the data we could have trained a model on multiple terabytes of data, or a lot more space than would otherwise have fit in our personal computer.
+  + Hardware / GPU: By using another instance to train our model, we can access compute power including GPU capabilities, making powerful hardware available to us as required.
+  + Cost: Using AWS resources, we only pay for what we use, we'll turn off everything before ending the class and not incur in further charges.
+  + Availability: By deploying our model to another instance, we have make the prediction functionality available 24/7 through a secured endpoint to an application or to be consumed by others without having to make our computer available.
+  + RESTful API: As learned in previous units, APIs provide a standard mechanism to access data, our ML API can be consumed through apps and other channels in a simple form while remaining secure and allowing other constraints (for example: authentication, authorization, rate limiting, etc.).
+
+Cons:
+  + Data privacy / security: by uploading data to a third party, you are trusting your data on them. Certain kinds of data are subject to compliance and regulatory constraints.
+  + Visibility: you con't have oversight on AWS internal handling of your data and infrastructure.
+  + Availability: although there are SLAs in place, AWS (and other cloud providers) can and have suffered outages at times, causing data unavailability.
 
 ### 0. Everyone Do: Create and Deploy a Machine Learning Model (15 mins)
 
