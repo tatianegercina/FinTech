@@ -32,6 +32,10 @@ Open the solution and explain the following:
 
   ![archery-frequency-distribution](Images/archery-frequency-distribution.png)
 
-* Because the mean of a normal distribution is considered to be at the `50th` quantile, confidence intervals are usually set around the mean or `0.50` quantile range. Therefore, a `95%` confidence interval would have quantiles set at `0.025` and `0.975` rather than something like `0.05` and `1.00`.
+* Because the mean of a normal distribution is considered to be at the `50th` quantile, confidence intervals are usually set around the mean or `0.50` quantile. Therefore, a `95%` confidence interval would have quantiles set at `0.025` and `0.975` rather than something like `0.05` and `1.00`.
 
   ![archery-quantiles](Images/archery-quantiles.png)
+
+* The `95%` confidence interval suggests that there is about a `95%` chance of the archer hitting the target `0-3` times out of `5` shots. Marking the confidence interval over the probability distribution histogram shows that the area of the bars within the lower and upper bounds approximate to about `95%`.
+
+  ![archery-confidence-interval](Images/archery-confidence-interval.png)
