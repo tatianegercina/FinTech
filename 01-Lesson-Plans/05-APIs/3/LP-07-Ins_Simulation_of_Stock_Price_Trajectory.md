@@ -14,7 +14,7 @@ Walk through the solution and highlight the following:
 
   ![example-normal-distribution](Images/example-normal-distribution.png)
 
-* The daily closing stock price data will be pulled using the `iexfinance` SDK that connects to the `IEX` API. Therefore, make sure to import the necessary libraries and dependencies before proceeeding.
+* The daily closing stock price data will be pulled using the `iexfinance` SDK that connects to the `iex` API. Therefore, make sure to import the necessary libraries and dependencies before proceeeding.
 
   ```python
   # Import libraries and dependencies
@@ -27,4 +27,6 @@ Walk through the solution and highlight the following:
   %matplotlib inline
   ```
 
-* 
+* Use the `get_symbols` function from the `refdata` class of the `iex` SDK to check the available stock ticker data that can be pulled from the `iex` API.
+
+  ![iex-check-tickers](Images/iex-check-tickers.png)
