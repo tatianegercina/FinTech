@@ -55,3 +55,13 @@ Walk through the solution and highlight the following:
       # Append the simulated price to the list
       simulated_aapl_prices.append(simulated_price)
   ```
+
+* Plotting the DataFrame of simulated `AAPL` closing prices for the next `252` trading days shows one potential pathway for how `AAPL` stock prices may behave in the next year.
+
+  ![appl-simulated-prices-plot](Images/appl-simulated-prices-plot.png)
+
+* Calculating the daily returns and cumulative returns of `AAPL` simulated prices allow for plotting the profits and losses of a potential investment in `AAPL` over the next trading year.
+
+  ![aapl-cumulative-pnl.png](Images/aapl-cumulative-pnl.png)
+
+  ![aapl-cumulative-pnl-plot.png](Images/aapl-cumulative-pnl-plot.png)
