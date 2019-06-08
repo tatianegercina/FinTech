@@ -35,7 +35,7 @@ Walk through the solution and highlight the following:
 
   ![iex-get-data](Images/iex-get-data.png)
 
-* The Monte carlo simulation of stock price trajectory involves closing prices of `AAPL`. Therefore, it's best to drop the extraneous columns.
+* Simulating stock price trajectory involves analyzing the closing prices of a stock. Therefore, it's best to drop the extraneous columns for the `AAPL` price data received from the `iex` API.
 
   ![dataframe-drop-columns](Images/dataframe-drop-columns.png)
 
