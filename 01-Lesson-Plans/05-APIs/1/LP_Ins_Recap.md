@@ -12,8 +12,12 @@ Guide students and the recap session. Use the below sample statements/questions 
 
 * What APIs were the most useful? In what ways could you continue to use these APIs, especially in everyday life?
 
+* Ask students to identify two things they'd like to practice on from today's lesson that they might have struggled with conceptually. Encourage them to do additional practice and reading outside of class to reinforce the knowledge and skill.
+
 Finish the recap with a few statements of encouragement.
 
 * Tell students they need to give themselves, yet gain, a round of applause. They've added yet another valuable tool to their developer's toolkit.
+
+* Remind students that completing this amount of work in this time period already means they've proven their aptitude. It's just growth from here.
 
 * The next step for APIs is to work with authenticated APIs, as well as Software Development Kits (SDKs) like PLAID, a personal finance API that can connect to multiple accounts. This is where the class will get heavy into accessing and using financial data via APIs.
