@@ -34,3 +34,9 @@ Walk through the solution and highlight the following:
 * The `get_historical_data` function from the `iexfinance` SDK takes in a `ticker`, `start_date`, and `end_date` parameter with an `output_format` option set to `pandas` to return a DataFrame of `AAPL` daily stock prices. The `start_date` and `end_date` variables in this case are set to `365` days from the current date and the current date, respectively.
 
   ![iex-get-data](Images/iex-get-data.png)
+
+* In order to simulate `AAPL` stock prices for the next `252` trading days, it is important that the simulation is framed in the context of a stock's *growth*. Therefore, the `pct_change` function is used to calculate the last year of daily returns for `AAPL`, and the `mean` and `std` functions are used to calculate the average daily return and the volatility of daily returns.
+
+  ![aapl-daily-returns](Images/aapl-daily-returns.png)
+
+  ![aapl-daily-return-mean-and-std](Images/aapl-daily-return-mean-and-std.png)
