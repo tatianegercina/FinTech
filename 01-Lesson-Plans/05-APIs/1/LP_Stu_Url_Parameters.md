@@ -74,7 +74,7 @@ Facilitate a dry walk through of the solution utilizing the following discussion
 
   ![parse_json.png](Images/parse_json.png)
 
-Ask the following questions:
+Transition the class into a review session. Ask the following questions:
 
 * In addition to `deck_id`, what other parameter values should be interpolated for the `draw_cards_url`?
 
