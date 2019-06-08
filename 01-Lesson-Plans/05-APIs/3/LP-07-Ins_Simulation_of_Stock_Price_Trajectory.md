@@ -44,3 +44,14 @@ Walk through the solution and highlight the following:
   ![aapl-daily-returns](Images/aapl-daily-returns.png)
 
   ![aapl-daily-return-mean-and-std](Images/aapl-daily-return-mean-and-std.png)
+
+* The following code snippet exemplifies the simulation of stock price trajectory. The simulation calculates the next day's simulated closing price by multiplying the preceding day's closing price by a random selection of a range of values defined by the normal probability distribution of `AAPL` daily returns, given by the *mean* and *standard deviation* of daily returns. 
+
+  ```python
+  # Simulate the returns for 252 days
+  for i in range(num_trading_days):
+      # Calculate the simulated price using the last price within the list
+      simulated_price = simulated_aapl_prices[-1] * (1 + np.random.normal(avg_daily_return, std_dev_daily_return))
+      # Append the simulated price to the list
+      simulated_aapl_prices.append(simulated_price)
+  ```
