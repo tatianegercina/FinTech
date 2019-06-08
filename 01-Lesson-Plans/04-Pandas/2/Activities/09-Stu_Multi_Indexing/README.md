@@ -4,9 +4,9 @@ You've caught the multi-indexing fever! Add power to your financial analytic pip
 
 ## Instructions
 
-Using the [starter file](Unsolved/Core/indexing_fever.ipynb) and the Nasdaq historical stock [data](Resources/nasdaq_data.csv), complete the following steps:
+Using the [starter file](Unsolved/Core/indexing_fever.ipynb), complete the following steps:
 
-1. Load CSV data into Pandas using `read_csv`.
+1. Extract 3 months historical data from NASDAQ.com, and load the CSV data into Pandas using `read_csv`.
 
 2. In the `read_csv` function, set the index to equal `Trade DATE` Series. Enable read_csvs `parse_dates` and `infer_datetime_format` parameters.
 
@@ -22,9 +22,9 @@ Take this activity to the next level by calculating the mean close price for `GO
 
 ### Hints
 
-* Additional information about `DatetimeIndex` capabilities can be found [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DatetimeIndex.html). 
+* Additional information about `DatetimeIndex` capabilities can be found [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DatetimeIndex.html).
 
 * Information about `timedeltas` can be found [here](https://pandas.pydata.org/pandas-docs/stable/user_guide/timedeltas.html).
 
-- - - 
+- - -
 © 2019 Trilogy Education Services
