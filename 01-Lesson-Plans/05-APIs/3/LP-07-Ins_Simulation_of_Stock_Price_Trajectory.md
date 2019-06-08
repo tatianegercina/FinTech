@@ -35,6 +35,10 @@ Walk through the solution and highlight the following:
 
   ![iex-get-data](Images/iex-get-data.png)
 
+* The Monte carlo simulation of stock price trajectory involves closing prices of `AAPL`. Therefore, it's best to drop the extraneous columns.
+
+  ![dataframe-drop-columns](Images/dataframe-drop-columns.png)
+
 * In order to simulate `AAPL` stock prices for the next `252` trading days, it is important that the simulation is framed in the context of a stock's *growth*. Therefore, the `pct_change` function is used to calculate the last year of daily returns for `AAPL`, and the `mean` and `std` functions are used to calculate the average daily return and the volatility of daily returns.
 
   ![aapl-daily-returns](Images/aapl-daily-returns.png)
