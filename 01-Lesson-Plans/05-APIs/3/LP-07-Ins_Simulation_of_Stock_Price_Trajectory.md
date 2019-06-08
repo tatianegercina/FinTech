@@ -30,3 +30,7 @@ Walk through the solution and highlight the following:
 * Use the `get_symbols` function from the `refdata` class of the `iex` SDK to check the available stock ticker data that can be pulled from the `iex` API.
 
   ![iex-check-tickers](Images/iex-check-tickers.png)
+
+* The `get_historical_data` function from the `iexfinance` SDK takes in a `ticker`, `start_date`, and `end_date` parameter with an `output_format` option set to `pandas` to return a DataFrame of `AAPL` daily stock prices. The `start_date` and `end_date` variables in this case are set to `365` days from the current date and the current date, respectively.
+
+  ![iex-get-data](Images/iex-get-data.png)
