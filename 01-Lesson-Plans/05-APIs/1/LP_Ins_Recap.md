@@ -6,7 +6,7 @@ This activity will conclude the APIs Day 1. Recap the skills and concepts learne
 
 * Ask if there are any volunteers who would like to add to what the previous student stated.
 
-Guide students and the recap session. Use the below sample statements/questions to guide students if student engagement and participation is low.
+Guide students and the recap session. Use the below sample statements/questions to guide students if student engagement and participation is low. only use these if necessary; let the students drive the session as much as possible.
 
 * Some of the APIs used in the lesson were Quandl, World Bank, Numbers API, Deck of Cards, U.S. Spending Stats, Random Jokes, etc. What APIs did you find to be the most interesting?
 
