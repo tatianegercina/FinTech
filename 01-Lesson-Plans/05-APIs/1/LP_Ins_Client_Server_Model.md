@@ -12,6 +12,10 @@ Navigate to the 5.1 slides for the `client-server model`, and highlight the foll
 
 * Explain the `client-server model` architecture. Indicate that the model encompasses the relationship between clients and servers.
 
+  ![client_server_model.jpg](Images/client_server_model.jpg)
+
+  Image acquired from [Shutterstock](https://www.shutterstock.com/image-vector/vector-concept-client-server-model-safe-483125932?src=cvaByXWnT8wlRtaTVaTE7Q-1-0).
+
 * Define the `client-server` model as structure that outlines the relationship and flow of communication between two components: a `client` and a `server`.
 
 * A `client` is any tool or application that is used to connect to or communicate with a server. This includes internet browsers, mobile devices, and command line terminals, just to name a few. `Clients` submit requests to servers, and clients receive responses from servers.
