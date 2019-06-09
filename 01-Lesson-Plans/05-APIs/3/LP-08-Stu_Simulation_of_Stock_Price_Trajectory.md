@@ -22,6 +22,12 @@ Open the solution and explain the following:
 
   ![missing-api-key](Images/missing-api-key.PNG)
 
-* The `get_historical_data` function in conjuntion with the `datetime` library pulls stock data using a dynamic datetime range. Specifically, `start_date` and `end_date` variables are not hard-coded.
+* The `get_historical_data` function in conjuntion with the `datetime` library pulls stock data from the `IEX Cloud` API using a dynamic datetime range. Specifically, `start_date` and `end_date` variables are not hard-coded.
 
   ![datetime-range](Images/datetime-range.PNG)
+
+* Applying a Monte Carlo simulation to forecasting the future daily closing prices of `TSLA` stock involves multiplying the closing price of each preceding trading day by a randomly generated daily return approximated by a normal probability distribution given the historical average and standard deviation of `TSLA` daily returns.
+
+* In other words, each `TSLA` closing price of the preceding trading day is multiplied by a randomly chosen daily return where values closer to the expected daily return have a higher probability while values farther away from the expected daily return have a lesser probability of occurring.
+
+  ![tsla-normal-distribution](Images/tsla-normal-distribution.PNG)
