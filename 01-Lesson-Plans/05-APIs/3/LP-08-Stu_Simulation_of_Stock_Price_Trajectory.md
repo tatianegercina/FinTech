@@ -20,4 +20,4 @@ Open the solution and explain the following:
 
 * Make sure that the `IEX_TOKEN` environment variable is properly set so that the `iexfinance` SDK can communicate to the `IEX Cloud` API. Navigate [here](https://addisonlynch.github.io/iexfinance/stable/configuration.html) for more details on how to do so.
 
-  ![missing-api-key](Images/missing-api-key.png)
+  ![missing-api-key](Images/missing-api-key.PNG)
