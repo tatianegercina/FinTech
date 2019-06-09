@@ -28,6 +28,12 @@ Open the solution and explain the following:
 
 * Applying a Monte Carlo simulation to forecasting the future daily closing prices of `TSLA` stock involves multiplying the closing price of each preceding trading day by a randomly generated daily return approximated by a normal probability distribution given the historical average and standard deviation of `TSLA` daily returns.
 
-* In other words, each `TSLA` closing price of the preceding trading day is multiplied by a randomly chosen daily return where values closer to the expected daily return have a higher probability while values farther away from the expected daily return have a lesser probability of occurring.
+* In other words, each `TSLA` closing price of the preceding trading day is multiplied by a randomly chosen daily return where values closer to the expected daily return have a higher probability of occurring while values farther away from the expected daily return have a lesser probability of occurring.
 
   ![tsla-normal-distribution](Images/tsla-normal-distribution.PNG)
+
+* Simulations for the next `252` trading shows that `TSLA` stock is forecasted to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years. 
+
+  ![tsla-simulated-price-plot](Images/tsla-simulated-price-plot.PNG)
+
+  ![tsla-cumulative-pnl](Images/tsla-cumulative-pnl.PNG)
