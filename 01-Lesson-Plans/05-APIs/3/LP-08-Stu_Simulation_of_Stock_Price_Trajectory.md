@@ -4,7 +4,7 @@ In this activity, students execute a Monte Carlo simulation to analyze the proba
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Stock_Price_Forecasting/README.md)
+* [README.md](Activities/06-Stu_Simulation_of_Stock_Price_Trajectory/README.md)
 
 **Files:**
 
