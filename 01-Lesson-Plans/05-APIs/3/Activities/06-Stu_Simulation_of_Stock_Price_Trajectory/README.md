@@ -26,8 +26,14 @@ Help Harold by creating a Monte Carlo simulation that simulates the next `252 * 
 
     * Create a list to hold simulated `TSLA` closing prices with the last closing price of the sample (data from IEX API call) as its first element. 
 
-    * For every trading day, calculate a simulated price using the preceding day's closing price multipled by ```(1 + np.random.normal(avg_daily_return, std_dev_daily_return)```. In other words, multiply the preceding closing price by a randomly generated daily return based off of a normal probability distribution of historical `TSLA` daily returns. Save results to a `pandas` DataFrame.
+    * For every trading day, calculate a simulated price using the preceding day's closing price multipled by ```(1 + np.random.normal(avg_daily_return, std_dev_daily_return)```. In other words, multiply the preceding closing price by a randomly generated daily return based off of a normal probability distribution of historical `TSLA` daily returns. Save the results to a `pandas` DataFrame.
+
+    * Plot the simulated daily closing prices of `TSLA` stock over the next `3` trading years.
+
+    * Calculate the daily returns and cumulative returns of simulated daily closing prices of `TSLA` stock over the next `3` trading years.
+
+    * Plot the cumulative profits/losses for a `$10,000` investment in TSLA given the simulated cumulative returns. 
 
 ## Hints
 
-* To learn more about histograms and probability distributions, read more [here](https://learnche.org/pid/univariate-review/histograms-and-probability-distributions)  
+* Remember that a normal probability distribution is just a diagram illustrating the probability of potential outcomes as outcomes deviate closer or away from the expected average.
