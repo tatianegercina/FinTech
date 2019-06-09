@@ -37,3 +37,5 @@ Open the solution and explain the following:
   ![tsla-simulated-price-plot](Images/tsla-simulated-price-plot.PNG)
 
   ![tsla-cumulative-pnl](Images/tsla-cumulative-pnl.PNG)
+
+* It should be stated that although the forecast for the next `3` years of `TSLA` stock prices show considerable declines, it does not mean that it is guaranteed; A forecast/prediction can only be as good as the foundation of information from which it was made. Therefore, creating forecasts from too little data can also be a factor.
