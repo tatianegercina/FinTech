@@ -18,8 +18,6 @@ In this activity, students execute a Monte Carlo simulation to analyze the proba
 
 Open the solution and explain the following:
 
-* Make sure that the `IEX_TOKEN` environment variable is properly set so that the `iexfinance` SDK can communicate to the `IEX Cloud` API. Navigate to the following link for more details on how to do so.
+* Make sure that the `IEX_TOKEN` environment variable is properly set so that the `iexfinance` SDK can communicate to the `IEX Cloud` API. Navigate [here](https://addisonlynch.github.io/iexfinance/stable/configuration.html) for more details on how to do so.
 
-  * https://addisonlynch.github.io/iexfinance/stable/configuration.html
-
-*
+  ![missing-api-key](Images/missing-api-key.png)
