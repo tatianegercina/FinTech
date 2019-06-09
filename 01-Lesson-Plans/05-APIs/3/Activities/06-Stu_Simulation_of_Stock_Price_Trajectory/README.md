@@ -10,27 +10,23 @@ Help Harold by creating a Monte Carlo simulation that simulates the next `252 * 
 
   * Import libraries and dependencies
 
-  * Write a Monte Carlo simulation that loops through `10` free throws for every simulation of `1000` simulations and saves the results:
+  * Use the `get_symbols` function to confirm that `TSLA` is an available ticker on the `IEX Cloud` API.
 
-    * Set variables for the desired number of simulations and free throws.
+  * Use the `get_historical` function to retrieve `1` year's worth of daily prices for `TSLA` stock as a `pandas` DataFrame. Use the `datetime` library to specify a `start_date` and `end_date`.
 
-    * Create a list `throw` consisting of the strings `made` and `missed`
+  * Drop extraneous columns, keep only the `close` column of the resulting DataFrame.
 
-    * Create an empty `pandas` DataFrame to hold the results of each simulation.
+  * Use the `pct_change` function to calculate the daily returns of `TSLA` stock.
 
-    * Create a nested for loop to loop through `10` free throws for every simulation of `1000` simulations.
+  * Use the `mean` and `std` functions to calculate the average and volatility of historical `TSLA` daily returns.
 
-    * Use the `choice` function from the `random` class of the `numpy` library to randomly choose between the list elements `made` and `missed` of the `throw` list. Use the `p` parameter for the `choice` function to specify the probabilities of making a free throw and missing a free throw; set the `p` parameter to `[0.7,0.3]`.
+  * Write a Monte Carlo simulation that loops through `252 * 3` trading days and saves the results:
 
-    * Append the results to the DataFrame, with each column set as the series of free throw results for every simulation.
+    * Set a variable for `252 * 3` trading days.
 
-  * Loop through every column of the DataFrame and use the `value_counts` function to count the number of made free throws per simulation. Select only the values of the `made` key from the Series object that the `value_counts` function returns. Save results to another DataFrame.
+    * Create a list to hold simulated `TSLA` closing prices with the last closing price of the sample (data from IEX API call) as its first element. 
 
-  * Create a frequency distribution histogram from the DataFrame of made free throws per simulation. Make sure to manually set the bin edges using the `bin` parameter.
-
-  * Create a probability distribution histrogram from the DataFrame of made free throws per simulation. Set the `density` parameter to `True`.
-
-  * Using the probability distribution histogram, assess the likelihood of the player making `9-10` free throws in a single session (results may vary with each run of the program).
+    * For every trading day, calculate a simulated price using the preceding day's closing price multipled by ```(1 + np.random.normal(avg_daily_return, std_dev_daily_return)```. In other words, multiply the preceding closing price by a randomly generated daily return based off of a normal probability distribution of historical `TSLA` daily returns. Save results to a `pandas` DataFrame.
 
 ## Hints
 
