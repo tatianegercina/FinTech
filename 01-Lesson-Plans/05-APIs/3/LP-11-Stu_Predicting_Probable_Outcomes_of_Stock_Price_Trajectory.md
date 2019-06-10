@@ -1,41 +1,43 @@
-### 10. Students Do: Stock Price Forecasting (15 mins)
+### 10. Students Do: Probable Stock Price Forecasting (15 mins)
 
-In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical `TSLA` daily returns. 
+In this activity, students execute a Monte Carlo simulation to forecast the many different possibilities of simulated stock price trajectories, thereby analyzing the frequency/probability of potential `TSLA` stock price outcomes.
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Simulation_of_Stock_Price_Trajectory/README.md)
+* [README.md](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/README.md)
 
 **Files:**
 
-* [stock_price_forecasting.ipynb](Activities/06-Stu_Simulation_of_Stock_Price_Trajectory/Unsolved/stock_price_forecasting.ipynb)
+* [probable_stock_price_forecasting.ipynb](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Unsolved/probable_stock_price_forecasting.ipynb)
 
-### 11. Instructor Do: Review Stock Price Forecasting (5 mins)
+### 11. Instructor Do: Review Probable Stock Price Forecasting (5 mins)
 
 **Files:**
 
-* [stock_price_forecasting.ipynb](Activities/04-Stu_Simulation_of_Stock_Price_Trajectory/Solved/stock_price_forecasting.ipynb)
+* [probable_stock_price_forecasting.ipynb](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Solved/probable_stock_price_forecasting.ipynb)
 
 Open the solution and explain the following:
 
-* Make sure that the `IEX_TOKEN` environment variable is properly set so that the `iexfinance` SDK can communicate to the `IEX Cloud` API. Navigate [here](https://addisonlynch.github.io/iexfinance/stable/configuration.html) for more details on how to do so.
+* Performing a Monte Carlo simulation on potential stock price outcomes involves simulating the stock price of `TSLA` over `253 * 3` trading days using a randomly selected normal distribution of daily returns and then doing the same process `n` number of times. Therefore, the code reflects another `for` loop to account for the extra iteration.
 
-  ![missing-api-key](Images/missing-api-key.PNG)
+  ![]()
 
-* The `get_historical_data` function in conjuntion with the `datetime` library pulls stock data from the `IEX Cloud` API using a dynamic datetime range. Specifically, `start_date` and `end_date` variables are not hard-coded.
+* The plot for `1000` simulations of `TSLA` stock price trajectory over the next `252 * 3` trading days provides a visual repesentation of where `TSLA` stock price could possibly end up. Notice the volatility!
 
-  ![datetime-range](Images/datetime-range.PNG)
+  ![]()
 
-* Applying a Monte Carlo simulation to forecasting the future daily closing prices of `TSLA` stock involves multiplying the closing price of each preceding trading day by a randomly generated daily return approximated by a normal probability distribution given the historical average and standard deviation of `TSLA` daily returns.
+* The last row of the DataFrame containing the `252 * 3` records of closing prices for each simulation contains the closing prices of `1000` different stock price trajectories on the last day of the project `252 * 3` trading day or `3` year trading period.
 
-* In other words, each `TSLA` closing price of the preceding trading day is multiplied by a randomly chosen daily return where values closer to the expected daily return have a higher probability of occurring while values farther away from the expected daily return have a lesser probability of occurring.
+  ![]()
 
-  ![tsla-normal-distribution](Images/tsla-normal-distribution.PNG)
+* The frequency distribution histogram showcases the distribution of potential stock price outcomes for `TSLA` on the last day of the projected `3` year trading period. Notice that the distribution is skewed to the right and has a rather large range of values on the tail of the distribution.
 
-* Simulations for the next `252` trading shows that `TSLA` stock is forecasted to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years. 
+* The `value_counts` function with its `bin` parameter set to `20`, used in conjuction with the `len` function, can be used to confirm the probability distribution of particular ranges of `TSLA` stock price outcomes.
 
-  ![tsla-simulated-price-plot](Images/tsla-simulated-price-plot.PNG)
+  ![]()
 
-  ![tsla-cumulative-pnl](Images/tsla-cumulative-pnl.PNG)
+* The `95%` confidence interval suggests an interval in which `95%` of stock price projections for `TSLA` are likely to lie. The lower and upper bounds suggest that there is a 95% chance that `TSLA` stock price over the next `3` trading years will fall within the range of `6.74 - 402`.
 
-* It should be stated that although the forecast for the next `3` years of `TSLA` stock prices show considerable declines, it does not mean that it is guaranteed. A forecast/prediction is only as good as the foundation of information from which it was made, and even then, by the nature of random events -- *anything* can happen.
+* Calculating the cumulative returns of the ending lower and upper bound prices for `TSLA` stock over the next `3` years and multiplying by an initial investment of `$10,000` provides a `95%` confidence interval in terms of capital investment.
+
+  ![]()
