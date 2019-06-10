@@ -18,4 +18,10 @@ Walk through the solution and highlight the following:
 
 * The last row of the DataFrame containing the results of each simulation represents the closing stock prices of `AAPL` on the `252nd` simulated trading day. In other words, the last row of the DataFrame represents the potential outcomes of `AAPL` stock price over the next `252` trading days.
 
-  ![stock-price-frequency-distribution](Images/stock-price-frequency-distribution.PNG) 
+  ![stock-price-frequency-distribution](Images/stock-price-frequency-distribution.PNG)
+
+* Calculating a `95%` confidence interval of potential outcomes for projected `AAPL` stock prices over the next `252` trading days showcases a range in which there is a `95%` chance that `AAPL` stock price will end up within the range of `$99.12 - $357.69`
+
+  ![stock-price-confidence-interval](Images/stock-price-confidence-interval.PNG)
+
+* 
