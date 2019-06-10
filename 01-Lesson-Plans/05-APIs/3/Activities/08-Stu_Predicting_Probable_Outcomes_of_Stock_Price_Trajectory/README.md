@@ -1,4 +1,4 @@
-# Stock Price Forecasting
+# Probable Stock Price Forecasting
 
 In this activity, Harold's manager wants Harold to take a look at one year's worth of `TSLA` stock prices and plot a potential stock trajectory for where `TSLA` stock prices could go in the next `3` years. In addition, he would like to know how a `$10,000` investment would perform given the simulated results.
 
