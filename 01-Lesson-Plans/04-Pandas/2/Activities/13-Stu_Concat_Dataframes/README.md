@@ -1,10 +1,10 @@
-# Joining Forces
+# Mastering Concatenation
 
 Your county's Financial Leaders of America group has recently joined with the Investors Leadership Council. Eager to consolidate the dues and membership data, the treasurer has reached out to you––the group's FinTech guru––to create a master ledger containing financial data for both organizations.
 
 ## Instructions
 
-Using the [starter file](Unsolved/joining_forces.ipynb) and the data in the Resources folder, complete the following steps:
+Using the [starter file](Unsolved/mastering_concatenation.ipynb) and the data in the Resources folder, complete the following steps:
 
 1. Load CSV data into Pandas using `read_csv` for each file.
 
@@ -12,6 +12,6 @@ Using the [starter file](Unsolved/joining_forces.ipynb) and the data in the Reso
 
 3. Use the `concat` function to concat DataFrames `fin_leaders_mbr_status` and `investors_leadership_mbr_status` by `axis='columns'` and `join='inner'`.
 
-- - - 
+- - -
 
 © 2019 Trilogy Education Services

@@ -40,7 +40,7 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome and Refresher Demo (5 min)
 
-In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns.
+In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
 **File:** [Slides]()
 
@@ -138,9 +138,9 @@ Open the file `sort_dataframe.ipynb` and highlight the following:
 Ask if there are any questions before moving on.
 - - -
 
-### 3. Student Do: Sorting (15 min)
+### 3. Student Do: Out of Sorts (15 min)
 
-In this activity, students will extract data for a single ticker from NASDAQ.com and calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
+In this activity, students will extract data for a single ticker from [NASDAQ](https://nasdaq.com) and calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
 
 **File:** [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Unsolved/out_of_sorts.ipynb)
 
@@ -181,7 +181,11 @@ If the student loses momentum or seems stuck while live coding, ask guided quest
 
 * How does one sort by more than one column?
 
+    **Answer** List the columns to sort by in a comma separated list.
+
 * Can I use a list to tell Pandas to sort some columns by ascending and others descending?
+
+    **Answer** Yes. The **ascending** parameter can be used to do this. Default value is **True**. **False** will sort descending. THe **ascending** parameter accepts a list of boolean responses for when data is sorted by more than one column.
 
 **Scenario:**
 
@@ -224,7 +228,7 @@ Ask if there are any questions before moving on.
 
 ### 5. Instructor Do: Groupby (10 min)
 
-This section focuses on grouping and aggregating data. Grouping data is particularly valuable when dealing with data for multiple stocks. You will give an overview of grouping and then perform a live demo of how to use the `groupby` function in Pandas.
+This section focuses on grouping and aggregating data. Grouping data is particularly valuable when dealing with data for multiple stocks. You will give an overview of grouping and then perform a live demo of how to use the `groupby` function in Pandas. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
 **Files:**
 
@@ -316,11 +320,11 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 6. Student Do: Groupby (15 min)
+### 6. Student Do: Group Dynamics! (15 min)
 
-In this activity, students will work with historical cryptocurrency data. Specifically, they will load in cryptocurrency data, group data by each crypto, and then perform aggregations to analyze price trends. Students will then plot the results.
+In this activity, students will work with historical cryptocurrency data. Specifically, they will load in cryptocurrency data, group data by each crypto, and then perform aggregations to analyze price trends. Students will then plot the results. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
-**File:** [crypto_circus.ipynb](Activities/06-Stu_Groupby/Unsolved/crypto_circus.ipynb)
+**File:** [group_dynamics.ipynb](Activities/06-Stu_Groupby/Unsolved/group_dynamics.ipynb)
 
 **Instructions:** [README.md](Activities/06-Stu_Groupby/README.md)
 
@@ -328,9 +332,11 @@ In this activity, students will work with historical cryptocurrency data. Specif
 
 ### 7. Instructor Do: Review Groupby (10 min)
 
-**File:** [crypto_circus.ipynb](Activities/06-Stu_Groupby/Solved/crypto_circus.ipynb)
+The instructor engages students with a review of **grouping** by conducting a dry walkthrough of the student solution, in addition to asking several review questions.
 
-Review the activity solution, covering the following points:
+**File:** [group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/group_dynamics.ipynb)
+
+Open the solution, and complete a dry walkthrough of the student activity solution, covering the following points:
 
 * The `groupby` function can be used to group a DataFrame by a column. This allows data to be aggregated and summarized in groups rather than all at once. DataFrames can be grouped by a single column or multiple columns.
 
@@ -416,7 +422,7 @@ If time remains, end the review by calling on students to answer the following r
 
 ### 8. Instructor Do: Multi-Indexing (10 min)
 
-Now that students have learned that indexes can be created by using the `groupby` key, it's important they know how to directly multi-index DataFrames. Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group.
+Now that students have learned that indexes can be created by using the `groupby` key, it's important they know how to directly multi-index DataFrames. Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
 **Files:**
 
@@ -506,9 +512,9 @@ Open the [starter-file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing
 Ask if there are any questions before moving on.
 - - -
 
-### 9. Student Do: Multi-Indexing (15 min)
+### 9. Student Do: Indexing Fever (15 min)
 
-In this activity, students will use hierarchical indexes to gain access to historical stock data. The objective of the assignment is for students to take their indexing skills to the next level by using DataFrames with multiple indices. Students will leverage NASDAQ data to perform data segmentation for a single ticker across multiple months in a year.
+In this activity, students will use hierarchical indexes to gain access to historical stock data. The objective of the assignment is for students to take their indexing skills to the next level by using DataFrames with multiple indices. Students will leverage [NASDAQ](https://nasdaq.com) data to perform data segmentation for a single ticker across multiple months in a year.
 
 **File:** [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Unsolved/Core/indexing_fever.ipynb)
 
@@ -586,7 +592,7 @@ Ask if there are any questions before moving on.
 
 ### 12. Instructor Do: Concatenating DataFrames (5 min)
 
-The instructor provides an overview of concatenation and then proceeds into live coding how to concatenate DataFrames.
+The instructor provides an overview of concatenation and then proceeds into live coding how to concatenate DataFrames. Data for this activity was retrieved from [Kaggle](http://kaggle.com).
 
 **Files:**
 
@@ -654,11 +660,11 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 13. Student Do: Concat DataFrames (15 min)
+### 13. Student Do: Mastering Concatenation (15 min)
 
 In this activity, students get hands one experiencing combining multiple DataFrames using the `concat` function. The goal of the activity is for students to take dues and membership data from two community organizations and combine the data into a single DataFrame.
 
-**File:** [joining_forces.ipynb](Activities/13-Stu_Concat_DataFrames/Unsolved/joining_forces.ipynb)
+**File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_DataFrames/Unsolved/mastering_concatenation.ipynb)
 
 **Instructions:** [README.md](Activities/13-Stu_Concat_DataFrames/README.md)
 
@@ -668,7 +674,7 @@ In this activity, students get hands one experiencing combining multiple DataFra
 
 The instructor reviews concatenation by conducting a Q & A session and a dry walkthrough of the solution for the previous student activity.
 
-**File:** [joining_forces.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/joining_forces.ipynb)
+**File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/mastering_concatenation.ipynb)
 
 Start the review by conducting a Q & A with the following questions:
 
@@ -684,7 +690,7 @@ Start the review by conducting a Q & A with the following questions:
 
     **Answer:** Outer join. Inner joins represent only a section of all of the data.
 
-Open [joining_forces.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/joining_forces.ipynb) to review the solution and go over the following points:
+Open [mastering_concatenation.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/mastering_concatenation.ipynb) to review the solution and go over the following points:
 
 * The `concat` function can be used to combine or link more than one DataFrame.
 
@@ -710,7 +716,7 @@ Ask if there are any questions before moving on.
 
 ### 15. Instructor Do: Standard Deviation and Risk (10 min)
 
-This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate sharpe ratios in the next activity.
+This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate sharpe ratios in the next activity. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
 **Files:**
 
@@ -819,7 +825,7 @@ Ask if there are any questions before moving on.
 
 ### 16. Instructor Do: Sharpe Ratios (5 min)
 
-In this section, students will be introduced to sharpe ratios and why risk-reward ratios are important in finance.
+In this section, students will be introduced to sharpe ratios and why risk-reward ratios are important in finance. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
 **Files:**
 
@@ -869,9 +875,9 @@ Ask if there are any questions before moving on.
 
 ### 17. Student Do: Risky Business (20 min)
 
-It's time to put it all together. In this activity, students will prep data and use standard deviation and sharpe ratios to analyze cryptocurrency portfolio performance. The goal is to calculate which portfolio has the highest risk. Students will also identify which individual cryptos have had the greatest return.
+It's time to put it all together. In this activity, students will prep data and use standard deviation and sharpe ratios to analyze cryptocurrency portfolio performance. The goal is to calculate which portfolio has the highest risk. Students will also identify which individual cryptos have had the greatest return. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
-Encourage students to work in pairs for this activity.
+Encourage students to work in pairs to complete the solution.
 
 **File:** [risky_business.ipynb](Activities/17-Stu_Risky_Business/Unsolved/Core/risky_business.ipynb)
 

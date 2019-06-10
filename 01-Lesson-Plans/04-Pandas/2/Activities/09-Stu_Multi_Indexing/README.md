@@ -8,7 +8,7 @@ Using the [starter file](Unsolved/Core/indexing_fever.ipynb), complete the follo
 
 1. Extract 3 months historical data from NASDAQ.com, and load the CSV data into Pandas using `read_csv`.
 
-2. In the `read_csv` function, set the index to equal `Trade DATE` Series. Enable read_csvs `parse_dates` and `infer_datetime_format` parameters.
+2. In the `read_csv` function, set the index to equal `Trade DATE` Series. Enable read_csv's `parse_dates` and `infer_datetime_format` parameters.
 
 3. Group data by DatetimeIndex year and month.
 
