@@ -50,7 +50,9 @@ Welcome the students to the second day of Pandas and explain the focus of today'
 
 * By the end of the day, students will have used Pandas to compare two portfolios and identify which is the smarter investment.
 
-Kick off the class with a refresher activity on returns. In this demo, you will show students how to extract historical ticker data from NASDAQ.com as a CSV. The goal is to get them to understand that all of the data they need to perform ROI analysis is just a few clicks away. Using NASDAQ.com, students can leverage historical stock data to keep a running tab on daily returns for specific stocks. Students will watch and follow along as you navigate the NASDAQ site.
+Kick off the class with a refresher activity on returns. In this demo, you will show students how to extract historical ticker data from NASDAQ.com as a CSV. The goal is to get students to understand that all of the data they need to perform ROI analysis is just a few clicks away. Using NASDAQ.com, students can leverage historical stock data to keep a running tab on daily returns for specific stocks. Students will watch and follow along as you navigate the NASDAQ site.
+
+Indicate to students that the class will begin with a demonstration of how to extract data from NASDAQ.com and a refresher activity on calculating daily returns.
 
 * Navigate to the [NASDAQ](https://nasdaq.com) website. Use the search bar to enter in the name or ticker of a stock. This example uses Facebook.
 
@@ -228,6 +230,8 @@ This section focuses on grouping and aggregating data. Grouping data is particul
 
 * [groupby.ipynb](Activities/05-Ins_Groupby/Solved/groupby.ipynb)
 
+* [starter-file.ipynb](Activities/05-Ins_Groupby/Unsolved/groupby.ipynb)
+
 * [Slides]()
 
 Introduce the `groupby` function by explaining:
@@ -238,15 +242,15 @@ Introduce the `groupby` function by explaining:
 
 Open the slideshow and provide a brief overview of the `groupby` function.
 
-* A common technique in data analysis is to summarize data by grouping similar values. One example is grouping sales data by country. In our case, we may want to group data by the stock ticker and count, sum, or average the results per stock.
+* A common technique in data analysis is to summarize data by grouping similar values. One example is grouping sales data by country. In our case, we may want to group data by the stock ticker. Once the data is grouped, a count, sum, or average can be performed on the result.
 
-* The `groupby` function operates by segmenting a dataset into groups. Once the groups are created, a function or operation can be executed against each group (e.g., addition). The results for each group are then combined together to create the final output.
+* The `groupby` function segments data into groups. Once groups are created, a function or operation can be executed against each group (e.g., addition).
 
-* Data must be grouped using `groupby` before the values in each group can be aggregated respectively. This ensures data is aggregated at the group level rather than the column level.
+* Data must be grouped using `groupby` before the values in each group can be aggregated. This ensures data is aggregated at the group level rather than the column level.
 
-Demonstrate how to use the `groupby` function. Live code the following examples.
+Transition to providing students a demo of how to use the `groupby` function. Open the [starter file](Activities/05-Ins_Groupby/Unsolved/groupby.ipynb), and live code the following examples.
 
-* A DataFrame can be grouped by any Series that contains repeating values or categories. To group data, use the `groupby` function. The `groupby` function accepts a Series name as an argument. Users can also specify a return column with brackets, `[]`.
+* To group data, use the `groupby` function against a non-unique column. The `groupby` function accepts a Series name as an argument. Users can also specify a return column with brackets, `[]`.
 
   ```python
   # Group by crypto data by cryptocurrency
@@ -256,7 +260,7 @@ Demonstrate how to use the `groupby` function. Live code the following examples.
 
   ![group_count.png](Images/group_count.png)
 
-* The `groupby` function requires that a function or aggregation be applied against the grouped data. When a function is not provided, a `DataFrameGroupBy` object is returned instead of data. `DataFrameGroupBy` objects have to be aggregated in order to be used.
+* The `groupby` function requires that a function or aggregation proceed it. Whenever a function is not chained to a `groupby` function, the output will be a `DataFrameGroupBy` object rather than an actual DataFrame. `DataFrameGroupBy` objects have to be aggregated before they can be used.
 
   ```python
   # Group by crypto data by cryptocurrency
@@ -268,7 +272,7 @@ Demonstrate how to use the `groupby` function. Live code the following examples.
   <pandas.core.groupby.generic.DataFrameGroupBy object at 0x000001CFF748A518>
   ```
 
-* Aggregate functions (e.g., `count`, `sum`, `mean`) can be used to summarize data. This allows calculations to be executed against specific groups of data rather than an entire Series.
+* Example aggregate functions that can be applied against `DataFrameGroupBy` objects include `count`, `sum`, and `mean`, just to name a few. These functions will proceed a `groupby` function.
 
   ```python
   # Calculate average data_priceUsd for each crypto
@@ -278,7 +282,7 @@ Demonstrate how to use the `groupby` function. Live code the following examples.
 
   ![group_by_aggregate.png](Images/group_by_aggregate.png)
 
-* DataFrames can also be grouped by more than one column. This groups values across each specified column and summarizes the data into one record. This approach can be used as a way to identify if there are any duplicates within the data.
+* DataFrames can be grouped by more than one column. This groups values across each specified column and summarizes the data into one record. This approach can be used as a way to identify if there are any duplicates within the data.
 
 * In the following screenshot, each `cryptocurrency` and `data_priceUsd` combination occurs only once. The screenshots show the differences between grouping by one or multiple columns.
 
@@ -298,7 +302,7 @@ Demonstrate how to use the `groupby` function. Live code the following examples.
 
   ![compare_single_multi.png](Images/compare_single_multi.png)
 
-* The `groupby` function can be used to plot multiple lines on a line chart. Plotting a grouped DataFrame will automatically create axes subplots.
+* Once data is grouped, each group can be plotted for comparison. This will plot multiple lines on a single plot. Each line is considered a subplot.
 
   ```python
   # Plot data_priceUsd for each crypto across time
@@ -390,13 +394,23 @@ Review the activity solution, covering the following points:
   Name: data_priceUsd, dtype: float64
   ```
 
-End the review with the following reflective questions:
+If time remains, end the review by calling on students to answer the following reflective questions:
 
 * Does the concept of grouping to aggregate data make sense?
 
+    **Answer:** Yes. When aggregating data without groups, all of the data is aggregated. Grouping and then aggregating allows calculations to be executed against groups (i.e. January's stock data would be grouped and computed separate from February's).
+
 * How was working with more than one ticker in this activity?
 
-* What are some examples of situations where data would need to be grouped and then aggregated? An example would be calculating average grade by students.
+    **Answer:** Working with more than one ticker accelerates processing. Instead of analyzing one ticker at a time, data for all stocks can be put into one file, analyzed as individual groups, and then combined to create a single `DataFrame` object.
+
+* What are some examples of situations where data would need to be grouped and then aggregated?
+
+    **Answer:** Calculating daily returns by quarter.
+
+    **Answer:** Calculating final grades for each student per class.
+
+    **Answer:** Calculating the number of horror movies released every decade between 1970 and 1990.
 
 - - -
 
@@ -409,6 +423,8 @@ Now that students have learned that indexes can be created by using the `groupby
 * [Multi-Indexing Slides]()
 
 * [multi_indexing.ipynb](Activities/08-Ins_Multi_Indexing/Solved/multi_indexing.ipynb)
+
+* [starter-file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing.ipynb)
 
 Open the slideshow and provide an overview of multi-indexing.
 
@@ -424,7 +440,7 @@ Open the slideshow and provide an overview of multi-indexing.
 
 * Essentially, multi-indexing improves data storage, lookup, and manipulation/assignment.
 
-Live code how to create and use multiple indexes, as well as how to access data using more than one index.
+Open the [starter-file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing.ipynb), and live code how to create and use multiple indexes, as well as how to access data using more than one index.
 
 * Multi-indexing is commonly done when working with `Date` data.
 
@@ -502,9 +518,11 @@ In this activity, students will use hierarchical indexes to gain access to histo
 
 ### 10. Instructor Do: Review Multi-Indexing (10 min)
 
+In this activity, the instructor will perform a dry walkthrough of the student activity solution.
+
 **File:** [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexing_fever.ipynb)
 
-Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexing_fever.ipynb) and review the solution, covering the following points:
+Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexing_fever.ipynb), and review the solution, covering the following points:
 
 * The `read_csv` accepts arguments that make creating indexes easy. Passing a column name to the `read_csv` `index_col` parameter will create a DataFrame index based off of the values in that Series.
 
@@ -568,9 +586,11 @@ Ask if there are any questions before moving on.
 
 ### 12. Instructor Do: Concatenating DataFrames (5 min)
 
+The instructor provides an overview of concatenation and then proceeds into live coding how to concatenate DataFrames.
+
 **Files:**
 
-* [concat_dataframe.ipynb](Activities/12-Concating_DataFrames/Solved/concat_dataframe.ipynb)
+* [concat_dataframe.ipynb](Activities/12-Ins_Concat_DataFrame/Solved/concat_dataframes.ipynb)
 
 * [Slides]()
 
@@ -598,7 +618,7 @@ Open the slideshow and provide a brief overview of concatenation:
 
     * the `join` operation (inner vs. outer)
 
-Live code the following examples:
+Open the [starter-file](Activities/12-Ins_Concat_DataFrame/Unsolved/concat_dataframes.ipynb), and live code the following examples:
 
 * DataFrames can be joined by either `column` or `row`. The `axis` argument can be configured to specify which to use.
 
@@ -636,6 +656,8 @@ Ask if there are any questions before moving on.
 
 ### 13. Student Do: Concat DataFrames (15 min)
 
+In this activity, students get hands one experiencing combining multiple DataFrames using the `concat` function. The goal of the activity is for students to take dues and membership data from two community organizations and combine the data into a single DataFrame.
+
 **File:** [joining_forces.ipynb](Activities/13-Stu_Concat_DataFrames/Unsolved/joining_forces.ipynb)
 
 **Instructions:** [README.md](Activities/13-Stu_Concat_DataFrames/README.md)
@@ -643,6 +665,8 @@ Ask if there are any questions before moving on.
 - - -
 
 ### 14. Instructor Do: Review Concat DataFrames (5 min)
+
+The instructor reviews concatenation by conducting a Q & A session and a dry walkthrough of the solution for the previous student activity.
 
 **File:** [joining_forces.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/joining_forces.ipynb)
 
@@ -694,7 +718,11 @@ This section focuses on standard deviation and how it can be used to determine t
 
 * [Slides]()
 
-Everything completed in class up until this point has been to prepare students for portfolio analysis. With daily returns calculated, and data from multiple portfolios combined into one dataset, students are able to complete a holistic analysis of the data. For this section of the lesson, students will leverage data preparation skills to analyze portfolio performance, calculate risk, and identify risky investments.
+Introduce **standard deviation and risk** to students by communicating that everything completed in class up until this point has been to prepare them for portfolio and risk analysis.
+
+* With daily returns calculated, and data from multiple portfolios combined into one dataset, students are now able to complete a holistic analysis of stock data.
+
+* The next step is to use **standard deviation and risk** to analyze portfolio performance, calculate risk, and identify risky investments.
 
 Open the slideshow and explain the following:
 
@@ -799,7 +827,7 @@ In this section, students will be introduced to sharpe ratios and why risk-rewar
 
 * [Slides]()
 
-Now that students have been taught how to assess and identify risk and investment performance, they are now prepared to learn how to adjust trade patterns to adjust for risk-reward.
+Communicate to students that their skill in identifying risk and assessing investment performance has prepared them to learn how to adjust for risk in order to maximize reward.
 
 Open the slideshow and begin the overview of sharpe ratios and how they are calculated. Cover the following points:
 
@@ -809,7 +837,7 @@ Open the slideshow and begin the overview of sharpe ratios and how they are calc
 
 * Sharpe ratios are calculated by subtracting the **return of portfolio** from the investment's **risk-free rate**. The difference is than divided by the standard deviation.
 
-  Sharpe Ratios = <img src="https://latex.codecogs.com/gif.latex?\frac{R_{p}-R_{f}}{\sigma_{p}}$" title="\frac{R_{p}-R_{f}}{\sigma_{p}}$" />
+    ![sharpe_ratio_formula.png](Images/sharpe_ratio_formula.png)
 
 Open [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py) and live code how to calculate and plot sharpe ratios:
 
