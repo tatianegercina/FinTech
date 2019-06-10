@@ -320,7 +320,7 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 6. Student Do: Group Dynamics! (15 min)
+### 6. Student Do: Group Dynamics (15 min)
 
 In this activity, students will work with historical cryptocurrency data. Specifically, they will load in cryptocurrency data, group data by each crypto, and then perform aggregations to analyze price trends. Students will then plot the results. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
