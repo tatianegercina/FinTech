@@ -40,6 +40,8 @@ Open the solution and explain the following:
 
 * The `95%` confidence interval suggests an interval in which `95%` of stock price projections for `TSLA` are likely to lie. The lower and upper bounds suggest that there is a 95% chance that `TSLA` stock price over the next `3` trading years will fall within the range of `6.74 - 402`.
 
+  ![tsla-confidence-interval](Images/tsla-confidence-interval.png)
+
 * Calculating the cumulative returns of the ending lower and upper bound prices for `TSLA` stock over the next `3` years and multiplying by an initial investment of `$10,000` provides a `95%` confidence interval in terms of capital investment.
 
-  ![tsla-confidence-interval](Images/tsla-confidence-interval.png)
+  ![tsla-investment-confidence-interval](Images/tsla-investment-confidence-interval.png)
