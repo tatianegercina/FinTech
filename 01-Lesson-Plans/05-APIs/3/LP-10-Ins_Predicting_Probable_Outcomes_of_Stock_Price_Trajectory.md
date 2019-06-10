@@ -15,3 +15,7 @@ Walk through the solution and highlight the following:
 * The plot of the DataFrame containing the `1000` simulations of `252` trading day price records showcases the potential pathways that a stock price can take.
 
   ![multiple-stock-simulation-plot](Images/multiple-stock-simulation-plot.PNG)
+
+* The last row of the DataFrame containing the results of each simulation represents the closing stock prices of `AAPL` on the `252nd` simulated trading day. In other words, the last row of the DataFrame represents the potential outcomes of `AAPL` stock price over the next `252` trading days.
+
+  ![stock-price-frequency-distribution](Images/stock-price-frequency-distribution.PNG) 
