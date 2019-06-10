@@ -1,12 +1,12 @@
 # Out of Sorts
 
-You're trying to spot trends in Tesla's 2019 stock data, but the data you've been given is out of sorts. You're trying to identify the top 5 performing days for Tesla investment returns, but you have over a hundred days' worth of data. Sort the stock data in descending order to identify the top 5 performing days.
+You're trying to identify the top 5 performing days for Tesla investment returns, but you have over a hundred days' worth of data, and nothing is sorted. Sort the stock data in descending order to identify the top 5 performing days.
 
 ## Instructions
 
-Using the [starter file](Unsolved/out_of_sorts.ipynb) and the NASDAQ historical stock [data](Resources/tsla_nasdaq_data.csv), complete the following steps:
+Using the [starter file](Unsolved/out_of_sorts.ipynb) and NASDAQ historical stock, complete the following steps:
 
-1. Load CSV data into Pandas using `read_csv`.
+1. Navigate to [NASDAQ.com](https://nasdaq.com) and download ticker data. Load the CSV data into Pandas using `read_csv`.
 
 2. Index data by `Trade DATE`.
 

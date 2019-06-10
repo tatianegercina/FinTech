@@ -20,21 +20,21 @@ Using the [starter file](Unsolved/Core/risky_business.ipynb) and the data in the
 
 6. Plot the sharpe ratios using a bar chart.
 
-7. Answer the following questions: 
+7. Answer the following questions:
 
     * How many smart investments did Harold make compared to risky investments? How many did you make?
-    
+
     * Which cryptos have been the smartest investments?
 
 ### Challenge
 
 Calculate the sharpe ratio for your entire portfolio rather than for each crypto. Then, use a comparison operator to see which portfolio has the greatest risk-to-reward ratio.
 
-1. Calculate annualized `std dev` for each portfolio respectively.
+1. Calculate annualized `std dev` for each portfolio.
 
 2. Calculate the sharpe ratio for each crypto in each respective portfolio.
 
-3. Average the sharpe ratios calculated above. 
+3. Average the sharpe ratios calculated above.
 
     Hint: `harold_sharpe_ratios.mean()`
 
@@ -42,6 +42,6 @@ Calculate the sharpe ratio for your entire portfolio rather than for each crypto
 
 5. Determine which portfolio is the smartest investment, based on risk-to-reward ratio.
 
-- - - 
+- - -
 
 © 2019 Trilogy Education Services
