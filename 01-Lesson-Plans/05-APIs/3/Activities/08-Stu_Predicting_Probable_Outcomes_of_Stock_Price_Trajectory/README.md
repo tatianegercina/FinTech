@@ -1,8 +1,12 @@
 # Probable Stock Price Forecasting
 
-In this activity, Harold's manager wants Harold to take a look at one year's worth of `TSLA` stock prices and plot a potential stock trajectory for where `TSLA` stock prices could go in the next `3` years. In addition, he would like to know how a `$10,000` investment would perform given the simulated results.
+In this activity, Harold was praised for his projection of `TSLA` stock price over the next `3` trading years; however, now his manager wants to investigate deeper and ask the following questions:
 
-Help Harold by creating a Monte Carlo simulation that simulates the next `252 * 3` trading days using one year's worth of `TSLA` stock data to perform a normally distributed random selection based on the sample mean and standard deviation of historical `TSLA` daily returns. Plot the simulated results of `TSLA` stock prices over the next `3` years as well as the corresponding cumulative returns.
+  * What is the *probable* outcome of where `TSLA` stock price could end up?
+  * What are the probabilities of `20` ranges (or bins) that `TSLA` stock price could end up?
+  * What range of ending stock price are we `95%` certain that `TSLA` stock price will result in?
+
+Help Harold by creating a Monte Carlo simulation that performs `1000` simulations of `TSLA` stock over the next `252 * 3` trading days using one year's worth of `TSLA` stock data to perform a normally distributed random selection based on the sample mean and standard deviation of historical `TSLA` daily returns. Plot the frequency and probability distribution of `20` bins/ranges of simulated ending prices for `TSLA` stock over the next `3` years and determine the `95%` confidence interval of ending `TSLA` prices.
 
 ## Instructions
 
