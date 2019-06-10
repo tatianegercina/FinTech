@@ -38,7 +38,7 @@ Open the solution and explain the following:
 
   ![tsla-value-counts-probabiliy-distribution](Images/tsla-value-counts-probabiliy-distribution.png)
 
-* The `95%` confidence interval suggests an interval in which `95%` of stock price projections for `TSLA` are likely to lie. The lower and upper bounds suggest that there is a 95% chance that `TSLA` stock price over the next `3` trading years will fall within the range of `6.74 - 402`.
+* The `95%` confidence interval suggests an interval in which `95%` of stock price projections for `TSLA` are likely to lie. The lower and upper bounds suggest that there is a 95% chance that `TSLA` stock price over the next `3` trading years will fall within the range of `$6.47 - $402.74`.
 
   ![tsla-confidence-interval](Images/tsla-confidence-interval.png)
 
