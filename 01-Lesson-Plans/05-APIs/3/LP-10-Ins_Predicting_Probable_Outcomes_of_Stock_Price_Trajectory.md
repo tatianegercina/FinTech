@@ -8,4 +8,10 @@ In this activity, students go one step further to produce not just a single pote
 
 Walk through the solution and highlight the following:
 
-* 
+* Simulating a single potential price trajectory for a stock with respect to its average growth and volatility is not enough when it comes to attemping to analyze the possible ranges of where a stock price might end up. That is why multiple simulations of stock price trajectories need to be run.
+
+  ![multiple-stock-simulation](Images/multiple-stock-simulation.PNG)
+
+* The plot of the DataFrame containing the `1000` simulations of `252` trading day price records showcases the potential pathways that a stock price can take.
+
+  ![multiple-stock-simulation-plot](Images/multiple-stock-simulation-plot.PNG)
