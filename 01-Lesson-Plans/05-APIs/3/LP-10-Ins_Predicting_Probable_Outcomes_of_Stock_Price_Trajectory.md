@@ -24,4 +24,4 @@ Walk through the solution and highlight the following:
 
   ![stock-price-confidence-interval](Images/stock-price-confidence-interval.PNG)
 
-* 
+* Multiplying an initial investment of `$10,000` by the percentage change in stock price for the lower and upper bounds of the `95%` confidence interval produces a confidence interval in terms of investment. 
