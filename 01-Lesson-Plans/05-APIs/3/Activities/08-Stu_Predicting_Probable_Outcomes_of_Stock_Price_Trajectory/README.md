@@ -13,10 +13,22 @@ Help Harold by creating a Monte Carlo simulation that performs `1000` simulation
 
   * Data preparation has been done for you to conserve time. Proceed to executing the Monte Carlo simulation.
 
-  * Re-write the Monte Carlo simulation to include a `for` loop for number of simulations and append the results of each simulation to a `pandas` DataFrame.
+  * Re-write the Monte Carlo simulation to include a `for` loop for number of simulations and append the results of each simulation as a column to a `pandas` DataFrame.
 
-  * 
+  * Plot the DataFrame containing `252 * 3` results of each simulation to chart `1000` possible trajectories of `TSLA` stock price. Set the `legends` parameter to `None`.
+
+  * Filter the DataFrame and take the last row, which represents the closing prices of simulated `TSLA` stock price trajectories on their last day.
+
+  * Use the Series object containing the price outcomes of `TSLA` stock to plot a frequency distribution histogram with `20` bins/data ranges.
+
+  * Use the `value_counts` function and set the `bins` parameter to `20`. Divide each bin by the `len` of values in the Series of simulated ending prices for `TSLA` (should be `1000`) to plot the probability distribution of each bin/data range.
+
+  * Use the `quantile` function to calculate a `95%` confidence interval of `TSLA` stock price outcomes.
+
+  * Plot the probability distribution histogram of `20` bins of `TSLA` stock price outcomes and mark the upper and lower bounds of the `95%` confidence interval.
+
+  * Calculate the cumulative return of the lower and upper bounds of `TSLA` stock prices to determine the percentage change of stock price from the first simulated trading day to the last. Multiply `$10,000` by the cumulative returns of the lower and upper bounds to calculate a `95%` confidence interval in terms of a `$10,000` investment based on the simulated `TSLA` stock performance.
 
 ## Hints
 
-* Remember that a normal probability distribution is just a diagram illustrating the probability of potential outcomes as outcomes deviate closer or away from the expected average.
+* The basis of this activity is the idea of nested `for` loops for multiple simulations of stock price trajectories, and analyzing the frequency/probability distribution of simulated stock price outcomes to make better and more thoughtful predictions about where `TSLA` stock price could end up!
