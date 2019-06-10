@@ -32,9 +32,11 @@ Open the solution and explain the following:
 
 * The frequency distribution histogram showcases the distribution of potential stock price outcomes for `TSLA` on the last day of the projected `3` year trading period. Notice that the distribution is skewed to the right and has a rather large range of values on the tail of the distribution.
 
+  ![tsla-frequency-distribution](Images/tsla-frequency-distribution.png)
+
 * The `value_counts` function with its `bin` parameter set to `20`, used in conjuction with the `len` function, can be used to confirm the probability distribution of particular ranges of `TSLA` stock price outcomes.
 
-  ![tsla-frequency-distribution](Images/tsla-frequency-distribution.png)
+  ![tsla-value-counts-probabiliy-distribution](Images/tsla-value-counts-probabiliy-distribution.png)
 
 * The `95%` confidence interval suggests an interval in which `95%` of stock price projections for `TSLA` are likely to lie. The lower and upper bounds suggest that there is a 95% chance that `TSLA` stock price over the next `3` trading years will fall within the range of `6.74 - 402`.
 
