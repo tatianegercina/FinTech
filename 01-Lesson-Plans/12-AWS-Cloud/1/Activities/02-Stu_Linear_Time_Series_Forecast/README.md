@@ -1,11 +1,13 @@
 # Training a Machine Learning Model in SageMaker
 
-In the next activity you'll be performing _time series forecasting_ with a SageMaker built-in Linear Learner algorithm.
+In the next activity you'll be performing a _linear regression_ with a SageMaker built-in Linear Learner algorithm.
 
 
 ## Instructions
 
-Using your SageMaker notebook instance, upload the `linear_time_series_forecast.ipynb` notebook to JupyterLab, and walk through the cell steps to create, train and deploy a Linear Learner model and then forecast values.
+Using your SageMaker notebook instance, upload the `boston-housing-regression.ipynb` notebook to JupyterLab, and walk through the cell steps to create, train and deploy a Linear Learner model and then forecast values.
+
+Take a look at the SageMaker Linear Learner Algorithm documentation: https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html
 
 
 ## Bonus
