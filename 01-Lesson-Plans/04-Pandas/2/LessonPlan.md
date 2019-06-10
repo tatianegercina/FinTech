@@ -42,7 +42,7 @@ By the end of class, students will be able to:
 
 In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
-**File:** [Slides]()
+**File:** [Pandas Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g473a132ac1_0_7)
 
 Welcome the students to the second day of Pandas and explain the focus of today's class.
 
@@ -112,6 +112,8 @@ If time remains, review the agenda for today's class. Communicate the following:
 ### 2. Instructor Do: Sorting (5 min)
 
 In this part of the lesson, you will demo how to sort DataFrame values in ascending and descending order.
+
+**File:** [Sorting Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_35)
 
 **File:** [sort_dataframe.ipynb](Activities/Ins_Sorting/Solved/sort_dataframe.ipynb)
 
@@ -232,11 +234,11 @@ This section focuses on grouping and aggregating data. Grouping data is particul
 
 **Files:**
 
+* [Groupby Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_89)
+
 * [groupby.ipynb](Activities/05-Ins_Groupby/Solved/groupby.ipynb)
 
 * [starter-file.ipynb](Activities/05-Ins_Groupby/Unsolved/groupby.ipynb)
-
-* [Slides]()
 
 Introduce the `groupby` function by explaining:
 
@@ -244,7 +246,7 @@ Introduce the `groupby` function by explaining:
 
 * Both of these functions are used to wrangle data into a state that is usable for analysis.
 
-Open the slideshow and provide a brief overview of the `groupby` function.
+Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_89) and provide a brief overview of the `groupby` function.
 
 * A common technique in data analysis is to summarize data by grouping similar values. One example is grouping sales data by country. In our case, we may want to group data by the stock ticker. Once the data is grouped, a count, sum, or average can be performed on the result.
 
@@ -426,13 +428,13 @@ Now that students have learned that indexes can be created by using the `groupby
 
 **Files:**
 
-* [Multi-Indexing Slides]()
+* [Multi-Indexing Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_207)
 
 * [multi_indexing.ipynb](Activities/08-Ins_Multi_Indexing/Solved/multi_indexing.ipynb)
 
 * [starter-file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing.ipynb)
 
-Open the slideshow and provide an overview of multi-indexing.
+Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_207) and provide an overview of multi-indexing.
 
 * Multi-indexing is the process of indexing a dataset by more than one value. Multi-indexing is like using two bookmarks in a book. Each bookmark is an index, and depending on which index you go to, you'll get different content.
 
@@ -596,9 +598,9 @@ The instructor provides an overview of concatenation and then proceeds into live
 
 **Files:**
 
-* [concat_dataframe.ipynb](Activities/12-Ins_Concat_DataFrame/Solved/concat_dataframes.ipynb)
+* [Concatenation Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_252)
 
-* [Slides]()
+* [concat_dataframe.ipynb](Activities/12-Ins_Concat_DataFrame/Solved/concat_dataframes.ipynb)
 
 Introduce the topic of concatenation by explaining the following:
 
@@ -606,7 +608,7 @@ Introduce the topic of concatenation by explaining the following:
 
 * For example, multiple months of financial records or investment data from different markets can be consolidated into one dataset in order to streamline and centralize data analysis.
 
-Open the slideshow and provide a brief overview of concatenation:
+Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_252) and provide a brief overview of concatenation:
 
 * Concatenation is the process of appending data from one object with another.
 
@@ -720,9 +722,9 @@ This section focuses on standard deviation and how it can be used to determine t
 
 **Files:**
 
-* [std_dev_risk.ipynb](Activities/15-Ins_Std_Dev_Risk/Solved/std_dev_risk.ipynb)
+* [Standed Deviation and Risk Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_293)
 
-* [Slides]()
+* [std_dev_risk.ipynb](Activities/15-Ins_Std_Dev_Risk/Solved/std_dev_risk.ipynb)
 
 Introduce **standard deviation and risk** to students by communicating that everything completed in class up until this point has been to prepare them for portfolio and risk analysis.
 
@@ -730,7 +732,7 @@ Introduce **standard deviation and risk** to students by communicating that ever
 
 * The next step is to use **standard deviation and risk** to analyze portfolio performance, calculate risk, and identify risky investments.
 
-Open the slideshow and explain the following:
+Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_293) and explain the following:
 
 * A key aspect of analyzing portfolio and stock data is determining risk. Pandas provides a Series of functions that can be used to calculate risk.
 
@@ -829,13 +831,13 @@ In this section, students will be introduced to sharpe ratios and why risk-rewar
 
 **Files:**
 
-* [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py)
+* [Sharpe Ratios Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_351)
 
-* [Slides]()
+* [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py)
 
 Communicate to students that their skill in identifying risk and assessing investment performance has prepared them to learn how to adjust for risk in order to maximize reward.
 
-Open the slideshow and begin the overview of sharpe ratios and how they are calculated. Cover the following points:
+Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_351) and begin the overview of sharpe ratios and how they are calculated. Cover the following points:
 
 * **Sharpe ratios** are used to help compare rate of return for an investment with its risk. Sharpe ratios shed light on the potential of profits even with risk involved.
 
@@ -968,6 +970,8 @@ Ask if there are any questions before moving on.
 - - -
 
 ### 19. Instructor Do: Decompress and End Class (5 min)
+
+* [Congratulations Slide](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_392)
 
 Another battle won, another level completed. Students have been excelling at a quantum speed, and it's important they understand this. End the class with the following positive remarks:
 
