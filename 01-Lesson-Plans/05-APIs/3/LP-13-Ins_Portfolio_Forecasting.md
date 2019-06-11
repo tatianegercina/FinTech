@@ -8,4 +8,8 @@ In this activity, students ascend to the final step and learn to project not one
 
 Walk through the solution and highlight the following:
 
+* The `get_historical_data` function of the `iexfinance` SDK can provide stock price data for more than one ticker in a single API call. Supplying a list of tickers with the `output_format` parameter set to `pandas` returns a multi-level index DataFrame.
+
+  ![iex-multi-level-index](Images/iex-multi-level-index.png)
+
 * 
