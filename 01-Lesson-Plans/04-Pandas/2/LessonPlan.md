@@ -169,7 +169,7 @@ Sort the data alphabetically by country. Then, present the data so that the meda
 
 - - -
 
-### 4. Instructor Do: Review Sorting (5 min)
+### 4. Instructor Do: Review Out of Sorts (5 min)
 
 Review the sorting activity by having a student participate in a live-coding exercise in front of the class. This exercise should be completed only if the student feels comfortable and previously agreed to participate (and thus had some time to prepare).
 
