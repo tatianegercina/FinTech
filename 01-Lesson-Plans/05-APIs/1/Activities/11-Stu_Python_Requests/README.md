@@ -1,4 +1,4 @@
-## Ice Breakers on Request
+# Ice Breakers on Request
 
 Your company has recently begun engaging in table talk sessions aimed towards helping the team continue to build soft and conversational skills by having co-workers engage each other for 5 minutes. You're tired of asking basic questions about hometowns and occupations, so you've decided to crawl the web for some new content to use. Your goal is to have ice breakers available on request. You've found 6 APIs that you feel could provide some good, random material for table/small talk.
 
@@ -45,3 +45,7 @@ Selecting values from JSON data requires data be accessed first by parent object
   ```python
   selected_value = data['all'][0]['text']
   ```
+
+- - -
+
+© 2019 Trilogy Education Services

@@ -1,4 +1,4 @@
-## Parlez-vouz le JSON?
+# Parlez-vouz le JSON?
 
 Now that you know that the below APIs are functioning, go back and run one of them again in order to get a closer look at the JSON data being returned. Capture your findings, and then turn and share your observations with a partner.
 
@@ -21,3 +21,7 @@ APIs
 4. Read through the JSON. Try and make sense of a sub-section of the data (i.e. close date for a specific ticker, the U.S's 2018 GDP value, or current price of Ethereum).
 
 5. Turn and teach your partner about what you deciphered from the JSON data.
+
+- - -
+
+© 2019 Trilogy Education Services

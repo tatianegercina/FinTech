@@ -1,4 +1,4 @@
-## Eavesdropping on the Server
+# Eavesdropping on the Server
 
 Every time someone uses the internet or a network, a client sends a message to a server, and that server responds. Explore the relationship between `client` and `server` in more detail by navigating the web with an internet browser and eavesdropping in on the communications sent between `client` and `server`. Review the data that is sent between client and server with an internet browser's developer console.
 
@@ -28,3 +28,7 @@ Navigate to the below websites with the developer console open to review the exc
 8. Visit `https://nasdaq.com` and search for a ticker. Review the developer console as you submit the request.
 
 9. Continue to navigate the internet with the developer console open. Take not of the type of requests that are sent for each site visited (how many POST vs GET). Also take into consideration the differences in API URLs.
+
+- - -
+
+© 2019 Trilogy Education Services
