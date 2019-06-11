@@ -63,3 +63,7 @@ Player 2 Turn
 Interpolation can be achieved by using the literal `f` prefix before a string. Consult the [documentation](https://www.programiz.com/python-programming/string-interpolation) for assistance.
 
 When extracting values from the `Draw Cards` request, an index will have to be provided to extract values whenever more than one card is returned (i.e. `drawn_cards['cards'][0]['value'] + " of " + drawn_cards['cards'][0]['suit']`).
+
+- - -
+
+© 2019 Trilogy Education Services

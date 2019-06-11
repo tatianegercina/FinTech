@@ -55,3 +55,7 @@ The output format of an API can be changed by altering the `?format=` part of th
   * Quandl -> https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json
 
   * Quandl -> https://www.quandl.com/api/v3/datasets/WIKI/GOOG.csv
+
+- - -
+
+© 2019 Trilogy Education Services
