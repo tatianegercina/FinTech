@@ -27,24 +27,30 @@ contract Identity {
         _;
     }
 
+    event infochanged(string info, string value);
+
     function setOwner(address newOwner) public onlyBy(owner) {
         owner = newOwner;
     }
 
     function setName(string memory newName) public onlyBy(owner) {
         name = newName;
+        emit infochanged("name", newName);
     }
 
     function setEmail(string memory newEmail) public onlyBy(owner) {
         email = newEmail;
+        emit infochanged("email", newEmail);
     }
 
     function setPhone(string memory newPhone) public onlyBy(owner) {
         phone = newPhone;
+        emit infochanged("phone", newPhone);
     }
 
     function setLocation(string memory newLocation) public onlyBy(owner) {
         location = newLocation;
+        emit infochanged("location", newLocation);
     }
 
     function addAddress(address payable newAddress) public onlyBy(owner) {

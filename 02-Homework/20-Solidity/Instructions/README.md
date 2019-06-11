@@ -60,6 +60,9 @@ You will need the following functions:
 - `getAddress` -- This function will be a `public view` that takes an integer index, and returns the designated address
   from the array. Anyone can call this function and does not need the `onlyBy(owner)` modifier.
 
+You will also need to create an event that notifies clients that info has changed. You can make separate events for each,
+or combine them into a generic event that passes the parameter that was changed as well as the value to the client.
+
 ## Setting up the deployment/migration script
 
 This is the easy part! All you must do take a look inside of the `migrations` folder that `truffle` created for you.
