@@ -1,4 +1,4 @@
-## I Spy, an API
+# I Spy an API
 
 You've received an e-mail from your Python mentor, Julia. Read the e-mail below and see if she has any new tasks for you.
 
@@ -55,3 +55,7 @@ The output format of an API can be changed by altering the `?format=` part of th
   * Quandl -> https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json
 
   * Quandl -> https://www.quandl.com/api/v3/datasets/WIKI/GOOG.csv
+
+- - -
+
+© 2019 Trilogy Education Services
