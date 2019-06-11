@@ -1,4 +1,4 @@
-# Look at you Smarty, it's a Contract!
+# "Looks like we've made First Contract!"
 
 ![contract](https://image.shutterstock.com/z/stock-photo-two-hands-handshake-polygonal-low-poly-hud-illustration-smart-contract-agreement-blockchain-and-1161295627.jpg)
 
