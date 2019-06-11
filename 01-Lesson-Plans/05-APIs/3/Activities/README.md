@@ -1,6 +1,6 @@
-# Portfolio Planner Part II
+# Financial Forecasting Part III
 
-In this two-part activity, Harold has been asked to re-visit the 10 stocks he previously researched: 
+In this three-part activity, Harold has been asked to re-visit the 10 stocks he previously researched: 
 
 * Bank of New York Mellon (BK)
 * Diamondback Energy (FANG)
@@ -13,14 +13,6 @@ In this two-part activity, Harold has been asked to re-visit the 10 stocks he pr
 * Western Digital (WDC)
 * Westrock (WRK) 
 
-Specifically, upper management wants to go beyond just evaluating stocks by volatility/risk, they now want to create a more optimized portfolio with the following characteristics:
-
-* Equal-weighted allocations
-* Only non-correlated stocks
-* Only postive return-to-risk ratio stocks (sharpe ratios)
-
-Then, they want to visualize what the returns of a hypothetical `$10,000` investment would be if invested in such a constructed portfolio over time as well as how such a portfolio compares to `$10,000` investments in other lesser-optimized portfolios. 
-
 Use the Pandas library to help Harold construct an optimized portfolio of stocks and plot and compare the returns of a `$10,000` investment in the portfolio to other less-optimized portfolios over time.
 
 ## Part I Instructions
@@ -28,6 +20,10 @@ Use the Pandas library to help Harold construct an optimized portfolio of stocks
 You completed this in the last activity, nice job!
 
 ## Part II Instructions
+
+You completed htis in the last activity, nice job!
+
+## Part III Instructions
 
 Using the starter file provided, pick up where part 1 left off and walk through the following steps:
 
