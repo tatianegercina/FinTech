@@ -1,4 +1,4 @@
-## I Spy, an API
+# I Spy an API
 
 You've received an e-mail from your Python mentor, Julia. Read the e-mail below and see if she has any new tasks for you.
 
