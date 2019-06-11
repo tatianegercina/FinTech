@@ -1,4 +1,4 @@
-## Parlez-vouz le JSON?
+# Parlez-vouz le JSON?
 
 Now that you know that the below APIs are functioning, go back and run one of them again in order to get a closer look at the JSON data being returned. Capture your findings, and then turn and share your observations with a partner.
 

@@ -1,4 +1,4 @@
-## Eavesdropping on the Server
+# Eavesdropping on the Server
 
 Every time someone uses the internet or a network, a client sends a message to a server, and that server responds. Explore the relationship between `client` and `server` in more detail by navigating the web with an internet browser and eavesdropping in on the communications sent between `client` and `server`. Review the data that is sent between client and server with an internet browser's developer console.
 
