@@ -32,7 +32,9 @@ By the end of class, students will be able to:
 
 * The sections on grouping and multi-indexing contain abstract concepts that can be difficult to grasp without visual representation. Therefore, be sure to show the slides before walking through the demo to give students a chance to absorb the conceptual information.
 
-* Be sure to set the pace by checking for understanding, having TAs and yourself circulate during activities to assist student progress, and creating a sense of urgency without making students feel rushed. Stick to the time tracker as closely as possible, and encourage students to attend office hours if they feel lost or stuck. Lastly, encourage students to work as partners in-class on activities so that they can collaborate, troubleshoot, and discuss APIs as 2-person teams. Turn-and-teach, student led reviews, and group activities have been created to assist with this.
+* Be sure to set the pace by checking for understanding, having TAs and yourself circulate during activities to assist student progress, and creating a sense of urgency without making students feel rushed. Stick to the time tracker as closely as possible, and encourage students to attend office hours if they feel lost or stuck.
+
+* Encourage students to work as partners in-class on activities so that they can collaborate, troubleshoot, and discuss APIs as 2-person teams. Turn-and-teach, student led reviews, and group activities have been created to assist with this.
 
 * Have your TAs keep the class on schedule with the [Time Tracker](TimeTracker.xlsx).
 
