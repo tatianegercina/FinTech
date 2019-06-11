@@ -14,7 +14,7 @@ By the end of class, students will be able to:
 
 * Identify the calculations that can be done with datetime data.
 
-* Declare and use datetime indexes.
+* Declare and use a DateTimeIndex.
 
 * Calculate standard deviation, mean, and median using Pandas.
 
