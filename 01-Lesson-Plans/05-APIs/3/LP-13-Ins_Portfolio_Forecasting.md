@@ -82,3 +82,19 @@ Walk through the solution and highlight the following:
   ```
 
   ![monte-carlo-results](Images/monte-carlo-results.png)
+
+* Plotting the cumulative portfolio return trajectories for each simulation displays the many possibilities of how the portfolio could perform over the next `252` trading days.
+
+  ![portfolio-returns-simulation-plot](Images/portfolio-returns-simulation-plot.png)
+
+* The last row of the DataFrame containing simulated cumulative portfolio returns represents the total (or cumulative) performance of the portfolio on the `252nd` trading day of each simulation.
+
+  ![portfolio-cumulative-returns-last-row](Images/portfolio-cumulative-returns-last-row.png)
+
+* Plotting a frequency distribution histogram of `10` bins and calculating a probability distribution of `10` bins displays the potential outcomes of ending cumulative portfolio returns.  
+
+  ![portfolio-cumulative-returns-frequency-distribution](Images/portfolio-cumulative-returns-frequency-distribution.png)
+
+* Calculating a confidence interval of cumulative portfolio returns and multiplying the lower and upper bounds by an investment amount outputs a confidence interval of ending investment performance in the portfolio.
+
+  ![portfolio-cumulative-returns-confidence-interval](Images/portfolio-cumulative-returns-confidence-interval.png)
