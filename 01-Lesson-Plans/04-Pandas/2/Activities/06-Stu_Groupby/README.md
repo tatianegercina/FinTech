@@ -1,4 +1,4 @@
-# Group Dynamics!
+# Group Dynamics
 
 The cryptocurrency market has experienced yet another wave of activity. Everyone's talking about Bitcoin and Ethereum. Close friends and family are bombarding you with questions, requests for information, and advice regarding investing. However, it's been two years since you last looked at your holdings on Binance, and your knowledge of current-day crypto trends is lacking.
 
