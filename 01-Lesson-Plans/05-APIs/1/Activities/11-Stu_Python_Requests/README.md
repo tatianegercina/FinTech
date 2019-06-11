@@ -45,3 +45,7 @@ Selecting values from JSON data requires data be accessed first by parent object
   ```python
   selected_value = data['all'][0]['text']
   ```
+
+- - -
+
+© 2019 Trilogy Education Services
