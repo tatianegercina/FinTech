@@ -1,8 +1,8 @@
-## House of Requests
+# House of Requests
 
-You've been challenge to a game of BlackJack, but you don't have any playing cards on-hand. Instead of spending money to buy a set, find a way to programmatically play the game. Use the `Deck of Cards API`, an API that simulates card games through API calls. Play against a classmate or an imaginary dealer.
+You've been challenge to a game of BlackJack, but you don't have any playing cards on-hand. Instead of spending money to buy a set, find a way to programmatically play the game. Use the `Deck of Cards API`, an API that simulates card games through API calls, to play against a classmate or an imaginary dealer. The player with the number of points closest to 21 is the winner!
 
-The player with the number of points closest to 21 will be the winner! The ante will be a serious one; the winner of the game will be the new owner of a 128 GB SSD, a used visa gift card valued at $90.37, and an Acer C270 Chromebook (not really).
+While you won't actually win any real prizes in this game, you will get the opportunity to crush opponents in Python BlackJack and gain the respect of your peers.
 
 API URLs (store these as variables)
 
@@ -18,11 +18,11 @@ Rules of the Game
 
 * Scoring over 21 means you automatically lose.
 
-* Each player-round consists of two drawings. Decide if you should draw two or three times per player-round. The closer to 21 you are, the less rounds you should take, unless you're feeling risky.
+* Each player-turn consists of one to two drawings. Decide if you should draw two or three cards for your turn. The closer to 21 you are, the less rounds you should take, unless you're feeling risky.
 
   * An initial drawing of 2 cards
 
-  * A third drawing of 1 additional card (optional)
+  * A second drawing of 1 additional card (optional)
 
 ## Instructions
 
