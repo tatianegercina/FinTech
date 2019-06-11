@@ -15,3 +15,7 @@ Walk through the solution and highlight the following:
 * To drop specific columns of a multi-level index DataFrame, use the `drop` function with the `level` parameter to specify the *level* of the DataFrame.
 
   ![drop-multi-level-index-columns](Images/drop-multi-level-index-columns.png)
+
+* Access the Series of values of each multi-level index column using additional square bracket key notation to represent the additional levels.
+
+  ![multi-level-index-key-notation](Images/multi-level-index-key-notation.png)
