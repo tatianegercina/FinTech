@@ -334,13 +334,13 @@ In this activity, students will work with historical cryptocurrency data. Specif
 
 - - -
 
-### 7. Instructor Do: Review Groupby (10 min)
+### 7. Instructor Do: Review Group Dynamics (10 min)
 
-The instructor engages students with a review of **grouping** by conducting a dry walkthrough of the student solution, in addition to asking several review questions.
+In this section, review the Group Dynamics activity by completing a dry walk-through of the solution. End by asking a series of review questions to test students' understanding.
 
 **File:** [group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/group_dynamics.ipynb)
 
-Open the solution, and complete a dry walkthrough of the student activity solution, covering the following points:
+Open the solution, and complete a dry walk-through of the student activity solution, covering the following points:
 
 * The `groupby` function can be used to group a DataFrame by a column. This allows data to be aggregated and summarized in groups rather than all at once. DataFrames can be grouped by a single column or multiple columns.
 
@@ -526,9 +526,9 @@ In this activity, students will use hierarchical indexes to gain access to histo
 
 - - -
 
-### 10. Instructor Do: Review Multi-Indexing (10 min)
+### 10. Instructor Do: Review Indexing Fever (10 min)
 
-In this activity, the instructor will perform a dry walkthrough of the student activity solution.
+In this section, you will perform a dry walk-through of the solution for the Indexing Fever activity that students just completed.
 
 **File:** [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexing_fever.ipynb)
 
@@ -596,7 +596,7 @@ Ask if there are any questions before moving on.
 
 ### 12. Instructor Do: Concatenating DataFrames (5 min)
 
-The instructor provides an overview of concatenation and then proceeds into live coding how to concatenate DataFrames. Data for this activity was retrieved from [Kaggle](http://kaggle.com).
+In this section, you will provide an overview of concatenation and then live code how to concatenate DataFrames. Data for this activity was retrieved from [Kaggle](http://kaggle.com).
 
 **Files:**
 
@@ -666,7 +666,7 @@ Ask if there are any questions before moving on.
 
 ### 13. Student Do: Mastering Concatenation (15 min)
 
-In this activity, students get hands one experiencing combining multiple DataFrames using the `concat` function. The goal of the activity is for students to take dues and membership data from two community organizations and combine the data into a single DataFrame.
+In this activity, students get hands-on experience with combining multiple DataFrames using the `concat` function. The goal of the activity is for students to take dues and membership data from two community organizations and combine the data into a single DataFrame.
 
 **File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_DataFrames/Unsolved/mastering_concatenation.ipynb)
 
@@ -674,9 +674,9 @@ In this activity, students get hands one experiencing combining multiple DataFra
 
 - - -
 
-### 14. Instructor Do: Review Concat DataFrames (5 min)
+### 14. Instructor Do: Review Mastering Concatenation (5 min)
 
-The instructor reviews concatenation by conducting a Q & A session and a dry walkthrough of the solution for the previous student activity.
+In this part of the lesson, you will review the Mastering Concatenation activity with students. First, you will conduct a brief Q & A to test students' understanding, and then you will perform a dry walk-through of the solution.
 
 **File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/mastering_concatenation.ipynb)
 
