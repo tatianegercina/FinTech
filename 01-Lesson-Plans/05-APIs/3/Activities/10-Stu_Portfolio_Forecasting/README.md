@@ -1,34 +1,49 @@
-# Probable Stock Price Forecasts
+# Financial Forecasting Part III
 
-In this activity, Harold was praised for his projection of `TSLA` stock price over the next `3` trading years; however, now his manager wants to investigate deeper and ask the following questions:
+In this three-part activity, Harold has been asked to re-visit the Monte Carlo simulation for future stock prices of `TSLA`. Given the volatility of projected future `TSLA` stock prices, upper management wants to test the returns of a portfolio containing both `TSLA` and `SPHD` -- a S&P 500 High Dividend Low Volatility ETF -- to buffer against `TSLA` stock's volatility; they are thinking of allocating `25%` of capital to `TSLA` and the other `75%` to `SPHD`. 
 
-  * What are the probabilities of `20` ranges (or bins) that `TSLA` stock price could end up?
-  * What range of ending stock price are we `95%` certain that `TSLA` stock price will result in?
+Upper management wants answers to the following questions:
+  
+  * What is the expected range of projected cumulative returns of the given portfolio?
+  * What is the `95%` confidence interval of projected cumulative returns of the given portfolio?
+  * What is the `95%` confidence interval of projected cumulative investment for the given portfolio?
 
-Help Harold by creating a Monte Carlo simulation that performs `1000` simulations of `TSLA` stock over the next `252 * 3` trading days using one year's worth of `TSLA` stock data to perform a normally distributed random selection based on the sample mean and standard deviation of historical `TSLA` daily returns. Plot the frequency and probability distribution of `20` bins/ranges of simulated ending prices for `TSLA` stock over the next `3` years and determine the `95%` confidence interval of ending `TSLA` prices.
+Use the `pandas` library to help simulate the cumulative returns of a `25-75` weighted `TSLA-SPHD` portfolio over the next `3` trading years (`252 * 3` trading days).
 
-## Instructions
+## Part I Instructions
 
-* Using the starter file provided, walk through the following steps.
+You completed this already, nice job!
 
-  * Data preparation has been done for you to conserve time. Proceed to executing the Monte Carlo simulation.
+## Part II Instructions
 
-  * Re-write the Monte Carlo simulation to include a `for` loop for number of simulations and append the results of each simulation as a column to a `pandas` DataFrame.
+You completed this in the last activity, you're killin it!
 
-  * Plot the DataFrame containing `252 * 3` results of each simulation to chart `1000` possible trajectories of `TSLA` stock price. Set the `legends` parameter to `None`.
+## Part III Instructions
 
-  * Filter the DataFrame and take the last row, which represents the closing prices of simulated `TSLA` stock price trajectories on their last day.
+Using the starter file provided, pick up where part II left off and walk through the following steps:
 
-  * Use the Series object containing the price outcomes of `TSLA` stock to plot a frequency distribution histogram with `20` bins/data ranges.
+  * Re-write the Monte Carlo simulation code to output a DataFrame of both `TSLA` and `SPHD` simulated stock prices over the next `252 * 3` trading days.
 
-  * Use the `value_counts` function and set the `bins` parameter to `20`. Divide each bin by the `len` of values in the Series of simulated ending prices for `TSLA` (should be `1000`) to plot the probability distribution of each bin/data range.
+    * Create a for loop to simulate `252 * 3` trading days worth of future stock prices for `TSLA` and `SPHD`. Use a random selection of daily returns for each ticker based on a normal probability distribution of their means and standard deviations. Append results to a `pandas` DataFrame.
 
-  * Use the `quantile` function to calculate a `95%` confidence interval of `TSLA` stock price outcomes.
+    * Use the `pct_change` function to calculate the daily returns of both `TSLA` and `SPHD`.
 
-  * Plot the probability distribution histogram of `20` bins of `TSLA` stock price outcomes and mark the upper and lower bounds of the `95%` confidence interval.
+    * Set a list of weights `[0.25, 0.75]` and use the `dot` function on the DataFrame containing `TSLA` and `SPHD` simulated daily returns to calculate the simulated daily returns of a portfolio containing `25%` `TSLA` and `75%` `SPHD`.
 
-  * Calculate the cumulative return of the lower and upper bounds of `TSLA` stock prices to determine the percentage change of stock price from the first simulated trading day to the last. Multiply `$10,000` by the cumulative returns of the lower and upper bounds to calculate a `95%` confidence interval in terms of a `$10,000` investment based on the simulated `TSLA` stock performance.
+    * Use the `cumprod` function to calculate the cumulative returns of the portfolio. Append the Series of simulated cumulative returns for the portfolio to a column of a DataFrame. Do this for each simulation in the Monte Carlo simulation.
+
+  * Plot the simulated cumulative returns of the portfolio over the `252 * 3` trading day range.
+
+  * Take the last row of the DataFrame containing cumulative portfolio returns for each simulation and plot a frequency distribution histogram. Set the `bins` parameter to `10`.
+
+  * Use the `value_counts` and `len` functions to calculate the probability of cumulative return ranges for the portfolio. Set the `bins` parameter to `10`.
+
+  * Use the `quantile` function to calculate the lower and upper bounds of a `95%` confidence interval of potential cumulative returns for the portfolio.
+
+  * Plot the upper and lower bounds of the `95%` confidence interval on a probability distribution histogram. Set the `density` parameter for the histogram to `True`.
+
+  * Answer the questions for upper management.
 
 ## Hints
 
-* The basis of this activity is the idea of nested `for` loops for multiple simulations of stock price trajectories, and analyzing the frequency/probability distribution of simulated stock price outcomes to make better and more thoughtful predictions about where `TSLA` stock price could end up!
+* This is a culminating activity that should test all portions of today's class. Therefore, walk through the process step-by-step and review instructor activities for technical clues on how to complete the code.
