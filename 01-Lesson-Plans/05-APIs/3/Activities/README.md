@@ -1,34 +1,66 @@
-# Probable Stock Price Forecasts
+# Portfolio Planner Part II
 
-In this activity, Harold was praised for his projection of `TSLA` stock price over the next `3` trading years; however, now his manager wants to investigate deeper and ask the following questions:
+In this two-part activity, Harold has been asked to re-visit the 10 stocks he previously researched: 
 
-  * What are the probabilities of `20` ranges (or bins) that `TSLA` stock price could end up?
-  * What range of ending stock price are we `95%` certain that `TSLA` stock price will result in?
+* Bank of New York Mellon (BK)
+* Diamondback Energy (FANG)
+* Johnson & Johnson (JNJ)
+* Southwest Airlines Co (LUV)
+* Micron Technologies (MU)
+* Nike (NKE)
+* Starbucks (SBUX)
+* AT&T (T)
+* Western Digital (WDC)
+* Westrock (WRK) 
 
-Help Harold by creating a Monte Carlo simulation that performs `1000` simulations of `TSLA` stock over the next `252 * 3` trading days using one year's worth of `TSLA` stock data to perform a normally distributed random selection based on the sample mean and standard deviation of historical `TSLA` daily returns. Plot the frequency and probability distribution of `20` bins/ranges of simulated ending prices for `TSLA` stock over the next `3` years and determine the `95%` confidence interval of ending `TSLA` prices.
+Specifically, upper management wants to go beyond just evaluating stocks by volatility/risk, they now want to create a more optimized portfolio with the following characteristics:
 
-## Instructions
+* Equal-weighted allocations
+* Only non-correlated stocks
+* Only postive return-to-risk ratio stocks (sharpe ratios)
 
-* Using the starter file provided, walk through the following steps.
+Then, they want to visualize what the returns of a hypothetical `$10,000` investment would be if invested in such a constructed portfolio over time as well as how such a portfolio compares to `$10,000` investments in other lesser-optimized portfolios. 
 
-  * Data preparation has been done for you to conserve time. Proceed to executing the Monte Carlo simulation.
+Use the Pandas library to help Harold construct an optimized portfolio of stocks and plot and compare the returns of a `$10,000` investment in the portfolio to other less-optimized portfolios over time.
 
-  * Re-write the Monte Carlo simulation to include a `for` loop for number of simulations and append the results of each simulation as a column to a `pandas` DataFrame.
+## Part I Instructions
 
-  * Plot the DataFrame containing `252 * 3` results of each simulation to chart `1000` possible trajectories of `TSLA` stock price. Set the `legends` parameter to `None`.
+You completed this in the last activity, nice job!
 
-  * Filter the DataFrame and take the last row, which represents the closing prices of simulated `TSLA` stock price trajectories on their last day.
+## Part II Instructions
 
-  * Use the Series object containing the price outcomes of `TSLA` stock to plot a frequency distribution histogram with `20` bins/data ranges.
+Using the starter file provided, pick up where part 1 left off and walk through the following steps:
 
-  * Use the `value_counts` function and set the `bins` parameter to `20`. Divide each bin by the `len` of values in the Series of simulated ending prices for `TSLA` (should be `1000`) to plot the probability distribution of each bin/data range.
+  * Reset the DataFrame for daily returns of the 10 stocks. Use the `pct_change` function again to calculate and re-assign a new DataFrame of daily returns.
 
-  * Use the `quantile` function to calculate a `95%` confidence interval of `TSLA` stock price outcomes.
+  * Use the `corr` function and the `heatmap` function from the `seaborn` library to calculate and visualize the stock return correlations for each stock pair, respectively.
 
-  * Plot the probability distribution histogram of `20` bins of `TSLA` stock price outcomes and mark the upper and lower bounds of the `95%` confidence interval.
+  * Drop highly correlated stocks (2 stocks should be dropped) and keep only non-correlated stocks from the DataFrame.
 
-  * Calculate the cumulative return of the lower and upper bounds of `TSLA` stock prices to determine the percentage change of stock price from the first simulated trading day to the last. Multiply `$10,000` by the cumulative returns of the lower and upper bounds to calculate a `95%` confidence interval in terms of a `$10,000` investment based on the simulated `TSLA` stock performance.
+  * Use the `mean` and `std` function to calculate the annualized sharpe ratio and assess the reward-to-risk of the non-correlated stocks.
+
+  * Drop stocks with negative sharpe ratios (3 stocks should be dropped) from the DataFrame.
+
+  * Assess the investment potential of a non-correlated (diversified) and return-to-risk (sharpe ratio) optimized portfolio:
+
+    * Set an equal weight for each stock in the optimized portfolio (5 stocks) and use the `dot` function to multiply weights by each stock's daily returns to output the optimized portfolio's daily returns.
+
+    * Calculate the optimized portfolio's cumulative returns and multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
+
+  * Assess the investment potential of a non-correlated (diversified) portfolio:
+
+    * Set an equal weight for each stock in an non-correlated stock portfolio (8 stocks) and use the `dot` function to multiply weights by each stock's daily returns to output the non-correlated stock portfolio's daily returns.
+
+    * Calculate the non-correlated stock portfolio's cumulative returns and multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
+
+  * Assess the investment potential of the original/unoptimized portfolio:
+
+    * Set an equal weight for each stock in an unoptimized portfolio (all 10 stocks) and use the `dot` function to multiply weights by each stock's daily returns to output the unoptimized portfolio's daily returns.
+
+    * Calculate the unoptimized stock portfolio's cumulative returns and multiply the initial investment of `$10,000` against the portfolio's series of cumulative returns. Plot the trend.
+
+  * Overlay the investment trend of every portfolio on a single chart, including the portfolio constructed in part 1.
 
 ## Hints
 
-* The basis of this activity is the idea of nested `for` loops for multiple simulations of stock price trajectories, and analyzing the frequency/probability distribution of simulated stock price outcomes to make better and more thoughtful predictions about where `TSLA` stock price could end up!
+* Breathe easy! Take this activity step-by-step and remember that this activity is a culminating activity, therefore try to think about the big picture about what makes a particular stock portfolio a good investment.
