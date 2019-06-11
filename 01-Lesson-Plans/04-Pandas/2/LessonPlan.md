@@ -2,7 +2,7 @@
 
 ### Overview
 
-Last class, students got their hands dirty using Pandas to read, clean, and analyze financial data over time. Today's class will continue this trajectory by introducing students to the basics of using Pandas to conduct time Series analysis and calculate risks and returns over time. In today’s class, students will learn how to use Pandas to conduct time series analysis and calculate risks and returns over time. Learning this skill will allow students to manage all of the financial data they will inevitably encounter in FinTech. In this lesson students will also learn how to group data and apply multi-indexing on a DataFrame to improve the effectiveness of analyzing and visualizing of stock exchange data.
+In the last class, students got their hands dirty using Pandas to read, clean, and analyze financial data over time. Today's class will continue this trajectory by introducing students to the basics of using Pandas to conduct time series analysis and calculate risks and returns over time. In today’s class, students will learn how to use Pandas to conduct time series analysis and calculate risks and returns over time. Learning this skill will allow students to manage all of the financial data they will inevitably encounter in FinTech. In this lesson students will also learn how to group data and apply multi-indexing on a DataFrame to improve the effectiveness of analyzing and visualizing of stock exchange data.
 
 ### Class Objectives
 
