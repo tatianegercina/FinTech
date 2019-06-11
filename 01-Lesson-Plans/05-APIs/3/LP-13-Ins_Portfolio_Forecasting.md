@@ -1,6 +1,6 @@
-### 13. Instructor Demo: Predicting Probable Outcomes of Stock Price Trajectory (0:10 mins)
+### 13. Instructor Demo: Portfolio Forecasting (0:10 mins)
 
-In this activity, students go one step further to produce not just a single potential price trajectory for a stock over the next `252` trading days, but many potential price trajectories. So that it's possible to analyze the probabilitiy distribution of where a stock's price can go, and therefore an interval to which confident predictions can be made regarding future price.
+In this activity, students ascend to the final step and learn to project not one, but many, future stock prices using Monte Carlo simulations to calculate the daily/cumulative returns of a multi-weighted portfolio. Then analyze and plot the frequency and probability distributions of potential ending cumulative returns to assess the investment risk of the portfolio.
 
 **Files:**
 
