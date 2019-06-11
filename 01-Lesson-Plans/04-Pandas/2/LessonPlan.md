@@ -1,81 +1,88 @@
-## 4.2 Lesson Plan - Risk and Returns over Time
+## 4.2 Lesson Plan: Risk and Returns Over Time
 
 ### Overview
 
-In the last class, students got their hands dirty using Pandas to read, clean, and analyze financial data over time. Today's class will continue this trajectory and will introduce students to the basics of using Pandas to conduct time series analysis and calculate risks and returns over time.
-
-Learning how to use Pandas to analyze time-series data will allow students to manage all of the financial data they will inevitably come across in FinTech. In this lesson, students will learn how to group data and apply multi-indexing on a DataFrame to improve the effectiveness of analyzing and visualizing stock exchange data.
-
-This class lesson will afford students the opportunity to demonstrate competence in using Pandas to sort and group data, create and leverage multiple indexes, calculate sharpe ratios, and compute standard deviation and risk--all of which are critical when evaluating investment/portfolio performance and return on investment.
+In the last class, students got their hands dirty using Pandas to read, clean, and analyze financial data over time. Today's class will continue this trajectory by introducing students to the basics of using Pandas to conduct time series analysis and calculate risks and returns over time. In today’s class, students will learn how to use Pandas to conduct time series analysis and calculate risks and returns over time. Learning this skill will allow students to manage all of the financial data they will inevitably encounter in FinTech. In this lesson students will also learn how to group data and apply multi-indexing on a DataFrame to improve the effectiveness of analyzing and visualizing of stock exchange data.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Demonstrate the ability to group data on a DataFrame to perform calculations over the grouped data.
+* Group data on a DataFrame to perform calculations over the grouped data.
 
-* Demonstrate the ability to manipulate datetime data on its different formats (single variables, DataFrame columns, and series).
+* Manipulate datetime data on its different formats: single variables, DataFrame columns, and Series.
 
 * Identify the calculations that can be done with datetime data.
-Declare and use datetime indexes
 
-* Calculate standard deviation, mean and median with Pandas.
+* Declare and use a DateTimeIndex.
+
+* Calculate standard deviation, mean, and median using Pandas.
 
 * Interpret the meaning of standard deviation on risk use cases.
 
 * Describe how stocks deviate from the mean to determine risk.
 
-* Describe what sharpe ratios are.
-
-* Calculate sharpe ratios using Pandas and DataFrames.
+* Describe sharpe ratios and calculate them using Pandas and DataFrames.
 
 ### Instructor Notes
 
-* Today's class is a quantum leap for students since they will move beyond the basics of Pandas to start learning some advance concepts to be used on risk analysis use cases.
+* Prepare for the lesson by running the code examples before class and reviewing the lectures. Today's lesson will be a quantum leap for students as they move beyond the basics of Pandas to more advanced concepts that can be applied to risk analysis use cases. You will need to clearly articulate what you are doing in each live demo and why, from a financial point of view. This is especially true for the standard deviation and sharpe ratio activities.
 
-* Since this class introduces new financial concepts and how they can be coded and applied using Pandas, it is important to spend time preparing and running the code examples before class. As you prepare, be sure you are able to help students articulate what they are doing and why they are doing it, from a financial point of view. This is especially true for the standard deviation and sharpe ratio activities. Students will need clear explanation of these financial/statistical concepts.
+* Throughout the lesson, be sure to underscore how Pandas lessens the burden of analysis by providing financial functions such as `MultiIndex` and `groupby()`. Students will learn the practical applications of these concepts by analyzing cryptocurrencies and stock exchange data. For example, tell students they can use the `groupby` function to automatically consolidate data in order to calculate an average, rather than organizing two years’ worth of daily returns data for each cryptocurrency in an Excel file. Similarly, instead of having to create a `groupby` function themselves, students get to use the Pandas function for free.
 
-* Using `MultiIndex` and `groupby()` on Pandas is not trivial. Students will learn these concepts on a practical way by analyzing crypto currencies and stock exchange data, so make sure to underscore and reiterate how Pandas is lessening the burden of analysis by providing financial functions. For example, instead of having to organize two years worth of daily returns data for each cryptocurrency in an Excel file just to calculate the average, the `groupby` function can automatically consolidate the data so that an average can be calculated. Similarly, instead of being burdened with having to create a `groupby` function themselves, students get to use the Pandas function for free.
+* The sections on grouping and multi-indexing contain abstract concepts that can be difficult to grasp without visual representation. Therefore, be sure to show the slides before walking through the demo to give students a chance to absorb the conceptual information.
 
-* The grouping and multi-indexing modules are pretty abstract concepts and are sometimes difficult to understand without visual representation. When reviewing these modules, make sure to present the slides before completing the demo so that students can absorb the conceptual information with the visual representation.
+* Be sure to set the pace by checking for understanding, having TAs and yourself circulate during activities to assist student progress, and creating a sense of urgency without making students feel rushed. Stick to the time tracker as closely as possible, and encourage students to attend office hours if they feel lost or stuck.
 
-Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also encourage students to work with partners.
+* Encourage students to work as partners in-class on activities so that they can collaborate, troubleshoot, and discuss APIs as 2-person teams. Turn-and-teach, student led reviews, and group activities have been created to assist with this.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+* Have your TAs keep the class on schedule with the [Time Tracker](TimeTracker.xlsx).
 
 - - -
 
-### 1. Instructor Do: Welcome (5 mins)
+### 1. Instructor Do: Welcome and Refresher Demo (5 min)
 
-Welcome the students to the second day of Pandas. Students will leverage data cleaning, indexing, and visualization skills from Day 1 in order to sort, group, multi-index, and concatenate multiple financial datasets for daily returns and investment risk analysis. By the end of the day, students will have used Pandas to compare two portfolios and identify which is the smarter investment.
+In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
-**Files:**
+**File:** [Pandas Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g473a132ac1_0_7)
 
-* [welcome-slides]()
+Welcome the students to the second day of Pandas and explain the focus of today's class.
 
-Kick the class off with a returns refresher activity. This activity will be two fold. The focus is on demonstrating to students how to extract historical ticker data from NASDAQ.com as a CSV so that they can understand that all of the data they need to perform ROI analysis is just a few clicks away. Using NASDAQ.com, students can leverage historical stock data to keep a running tab on daily returns for specific stocks. Students will watch and follow along as the instructor navigates the NASDAQ site.
+* Students will leverage their data cleaning, indexing, and visualization skills from Day 1 in order to sort, group, multi-index, and concatenate multiple financial datasets for daily returns and investment risk analysis.
+
+* By the end of the day, students will have used Pandas to compare two portfolios and identify which is the smarter investment.
+
+Kick off the class with a refresher activity on returns. In this demo, you will show students how to extract historical ticker data from NASDAQ.com as a CSV. The goal is to get students to understand that all of the data they need to perform ROI analysis is just a few clicks away. Using NASDAQ.com, students can leverage historical stock data to keep a running tab on daily returns for specific stocks. Students will watch and follow along as you navigate the NASDAQ site.
+
+Indicate to students that the class will begin with a demonstration of how to extract data from NASDAQ.com and a refresher activity on calculating daily returns.
 
 * Navigate to the [NASDAQ](https://nasdaq.com) website. Use the search bar to enter in the name or ticker of a stock. This example uses Facebook.
 
   ![nasdaq_search.png](Images/nasdaq_search.png)
 
-* Use the left-hand navigation pane to select `Historical Quote`. This link will open a web UI that can be used to select the time range of data that is desired.
+* Use the left-hand navigation pane to select Historical Quote. This link will open a web UI that can be used to select the time range of data that is desired.
 
   ![launch_historical.png](Images/launch_historical.png)
 
-* NASDAQ provides a simplified view into ticker prices with the `NASDAQ Official Close Price` page. This page provides access to ticker close prices. NASDAQ also provides flexibility in extracting additional data elements as well (i.e. open, high, etc.). Choose the `NASDAQ Official Close Price` page for this assignment.
+* Choose the NASDAQ Official Close Price page for this demo. Explain the following:
+
+    * NASDAQ provides a simplified view of ticker prices with the NASDAQ Official Close Price page. This page provides access to ticker close prices.
+
+    * NASDAQ also provides flexibility for extracting additional data elements as well (open price, high price, etc.).
 
   ![nasdaq_layout.png](Images/nasdaq_layout.png)
 
-* Select `3 months` as the desired timeframe.
+* Select 3 months as the desired timeframe.
 
   ![select_timeframe.png](Images/select_timeframe.png)
 
-* Scroll down to the `Download All Available Data` link, and right click. Click `Save Link As`. Choose a folder and name the file `fb_nasdaq.csv`. Click save.
+* Scroll to the "Download all available data" link and right click. Click "Save link as." Then, choose a folder and name the file *fb_nasdaq.csv*. Click Save.
 
   ![fb_nasdaq.png](Images/fb_nasdaq.png)
 
-* Load the saved file into Pandas, and output the data to the screen. Use the `index_col`, `parse_dates`, and `infer_datetime_format` attributes to create a DatetimeIndex (based off of `Trader DATE`) for date range manipulation. Emphasize to students that these attributes are used to ensure Pandas interprets the date index as a date object.
+* Load the saved file into Pandas and output the data to the screen.
+
+* Use the `index_col`, `parse_dates`, and `infer_datetime_format` attributes to create a DatetimeIndex (based on `Trader DATE`) for date range manipulation. Emphasize to students that these attributes are used to ensure that Pandas interprets the date index as a date object.
 
   ```python
   # Read in CSV data
@@ -84,33 +91,43 @@ Kick the class off with a returns refresher activity. This activity will be two 
   fb_ticker_data.head()
   ```
 
-* Instead of actually calculating daily returns, ask the students to orally summarize the required steps to calculate daily returns for three months of data. Write the steps on the board so they can be reinforced in the students' visual memory:
+* Instead of calculating daily returns, ask students to orally summarize the required steps to calculate daily returns for three months of data: "Now that we have the historical stock data, what are the necessary steps for calculating daily returns?"
 
-  > "Now that we have the historical stock data, what are the necessary steps for calculating daily returns?"
+* Write the steps on the board so they can be reinforced in students' visual memory:
 
-    1. Clean the data
+    1. Clean the data.
 
-    2. Execute pct_change
+    2. Execute `pct_change`.
 
-After the refresher is complete, ask students if they have any questions.
+Ask students if they have any questions.
 
-If time remains, proceed to finish reviewing the agenda for today's class. Communicate that today's activities will provide the foundation needed for students to begin grouping and aggregating data. Foreshadow what's to come by explaining that it is common to group and aggregate financial data by a number of different metrics, including dates, tickers, categories, etc. Example use cases include determining the average close price for a list of stock tickers and aggregating data (summing, adding, averaging) across time three month intervals.
+If time remains, review the agenda for today's class. Communicate the following:
+
+* Today's activities will provide the foundation needed for students to begin grouping and aggregating data.
+
+* It's common to group and aggregate financial data by a number of different metrics, including dates, tickers, and categories.
+
+* Example use cases include determining the average close price for a list of stock tickers and aggregating data (summing, adding, averaging) over time (e.g., three-month intervals).
 
 - - -
 
-### 2. Instructor Do: Sorting (5 mins)
+### 2. Instructor Do: Sorting (5 min)
 
-In this activity, students will learn how to sort DataFrame values in ascending and descending order. Instructors will disseminate the necessary conceptual and technical information through a live demonstration.
+In this part of the lesson, you will demo how to sort DataFrame values in ascending and descending order.
 
-**Files:**
+**File:** [Sorting Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_35)
 
-* [sort_dataframe.ipynb](Activities/Ins_Sorting/Solved/sort_dataframe.ipynb)
+**File:** [sort_dataframe.ipynb](Activities/Ins_Sorting/Solved/sort_dataframe.ipynb)
 
-Explain that it is very common to sort values in ascending or descending order. Pandas provides a function for this called `sort_values` that will sort a DataFrame by a column. We can use this to find the highest or lowest daily returns from our stock data.
+Start by explaining that it is very common to sort values in ascending or descending order.
 
-Walk through the solution and highlight the following:
+* Pandas provides a function for this called `sort_values` that will sort a DataFrame by a column.
 
-* A DataFrame can be created from lists or dictionaries. In this example, a DataFrame of painting prices is supplied as a Python Dictionary which we convert to a DataFrame.
+* This function can be used to find the highest or lowest daily returns from our stock data.
+
+Open the file `sort_dataframe.ipynb` and highlight the following:
+
+* A DataFrame can be created from lists or dictionaries. In this example, a DataFrame of painting prices is supplied as a Python dictionary, which we convert to a DataFrame.
 
   ![creating-dataframes.png](Images/creating-dataframes.png)
 
@@ -122,49 +139,74 @@ Walk through the solution and highlight the following:
 
   ![sort-descending.png](Images/sort-descending.png)
 
+Ask if there are any questions before moving on.
 - - -
 
-### 3. Students Do: Sorting (15 mins)
+### 3. Student Do: Out of Sorts (15 min)
 
-In this activity, students will extract data for a single ticker from NASDAQ.com and calculate daily returns for the year of 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
+In this activity, students will extract data for a single ticker from [NASDAQ](https://nasdaq.com) and calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
 
-**Files:**
+**File:** [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Unsolved/out_of_sorts.ipynb)
 
-* [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Unsolved/out_of_sorts.ipynb)
+**Instructions:** [README.md](Activities/03-Stu_Sorting/README.md)
 
-**Instructions:**
+As students work on the activity, circulate the room (along with the TAs) to ensure students do not have any difficulty extracting data from the NASDAQ website.
 
-* [README.md](Activities/03-Stu_Sorting/README.md)
+If a student finishes the activity early, ask if they are willing to help present the solution to this activity in the next portion of the lesson. This will require the student to live code how to sort a DataFrame by more than one column.
 
-While students are completing the activity, instructors and TAs should be walking around to ensure students do not have any difficulty extracting data from the NASDAQ website.
+If the student agrees, spend up to 5 minutes with them reviewing the following scenario, which is what the live-coding exercise will be based on.
 
-If a student finishes the activity early, ask them if they'd be willing to participate in an activity in the review module. The activity will include the student live coding how to sort a DataFrame by more than one column. Spend up to 5 minutes with this student preparing for and reviewing the prompt. The prompt can be found below:
+**Scenario:**
 
-* Let's say there's a DataFrame named `df` that contains Olympic medal data (gold, silver, and bronze). The DataFrame has four columns: `country`, `no_of_medals`, `class_of_medal`, and `year_medal_won`. Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by number of medals awarded, in descending order (the medals awarded most should be at the top).
+There's a DataFrame named `df` that contains Olympic medal data (gold, silver, and bronze). The DataFrame has four columns:
+
+* `country`
+* `no_of_medals`
+* `class_of_medal`
+* `year_medal_won`
+
+Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by number of medals awarded in descending order. (The medals awarded most should be at the top.)
 
 - - -
 
-### 4. Instructor Do: Review Sorting (5 mins)
+### 4. Instructor Do: Review Out of Sorts (5 min)
 
-**Files:**
+Review the sorting activity by having a student participate in a live-coding exercise in front of the class. This exercise should be completed only if the student feels comfortable and previously agreed to participate (and thus had some time to prepare).
 
-* [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Solved/out_of_sorts.ipynb)
+Skip to the dry walk-through of the activity solution if you do not have a student who can live code this activity.
 
-Review the sorting activity by having a student participate in a live coding exercise in front of the class. This exercise should only be completed if a student feels comfortable. The student should also have agreed in the last module to conduct the live coding exercise. If a student doesn't agree to complete the activity, or none of the students seemed exceptionally competent with the `sort_values` function/concepts, skip down to the dry walkthrough of the solution.
+**File:** [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Solved/out_of_sorts.ipynb)
 
-Ask the student who was vetted out in the previous exercise to live code an answer to the following prompt. If the student loses momentum or seems stuck while live coding, ask guided questions like "How does one sort by more than one column?" and "Can I use a list to tell Pandas to sort some columns by ascending and others descending?"
+**Student Live Codes the Solution:**
 
-Continue the reflective exercise by asking the student who was vetted out in the previous exercise to live code an answer to the following prompt. If the student loses momentum or seems stuck while live coding, ask guided questions like "How does one sort by more than one column?" and "Can I use a list to tell Pandas to sort some columns by ascending and others descending?"
+Ask the student to live code a solution to the provided scenario.
 
-Scenario:
+If the student loses momentum or seems stuck while live coding, ask guided questions such as:
 
-* Let's say there's a DataFrame named `df` that contains Olympic medal data (gold, silver, and bronze). The DataFrame has four columns: `country`, `no_of_medals`, `class_of_medal`, and `year_medal_won`. Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by number of medals awarded, in descending order (the medals awarded most should be at the top).
+* How does one sort by more than one column?
 
-  ```python
-  df.sort_values(['country','no_of_medals'], ascending=[True,False])
-  ```
+    **Answer** List the columns to sort by in a comma separated list.
 
-If the student live coding review activity could not be completed, open the solution and explain the following:
+* Can I use a list to tell Pandas to sort some columns by ascending and others descending?
+
+    **Answer** Yes. The **ascending** parameter can be used to do this. Default value is **True**. **False** will sort descending. THe **ascending** parameter accepts a list of boolean responses for when data is sorted by more than one column.
+
+**Scenario:**
+
+There's a DataFrame named `df` that contains Olympic medal data (gold, silver, and bronze). The DataFrame has four columns:
+
+* `country`
+* `no_of_medals`
+* `class_of_medal`
+* `year_medal_won`
+
+Sort the data alphabetically by country. Then, present the data so that the medal classes are sorted by number of medals awarded in descending order. (The medals awarded most should be at the top.)
+
+**Dry Walk-Through of the Solution:**
+
+Do this dry walk-through if the live-coding exercise could not be completed.
+
+Open [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Solved/out_of_sorts.ipynb) and explain the following:
 
 * The `sort_values` function can be used to sort a DataFrame by a specific column.
 
@@ -184,31 +226,39 @@ If the student live coding review activity could not be completed, open the solu
 
     ![stu_sort_descending.png](Images/stu_sort_descending.png)
 
-Ask for any remaining questions before moving on.
+Ask if there are any questions before moving on.
 
 - - -
 
-### 5. Instructor Do: Groupby (10 mins)
+### 5. Instructor Do: Groupby (10 min)
 
-This module focuses on getting students started with grouping and aggregating data. Grouping data is particularly valuable when dealing with data for multiple stocks. Students will receive a brief overview of what grouping is, and then the instructor will perform a live demo of how to use the Pandas `groupby` function.
+This section focuses on grouping and aggregating data. Grouping data is particularly valuable when dealing with data for multiple stocks. You will give an overview of grouping and then perform a live demo of how to use the `groupby` function in Pandas. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
 **Files:**
 
+* [Groupby Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_89)
+
 * [groupby.ipynb](Activities/05-Ins_Groupby/Solved/groupby.ipynb)
 
-The `groupby` function is just as common as the `sort_values` function. Both of these functions are used to wrangle data into a state that is usable for analysis.
+* [starter-file.ipynb](Activities/05-Ins_Groupby/Unsolved/groupby.ipynb)
 
-Navigate to the Unit 4.2 slides, and provide a brief overview of the `groupby` function.
+Introduce the `groupby` function by explaining:
 
-* A common technique with data analysis is to summarize data by grouping similar values. An example of this might be to group sales data by country, or in our case, we may want to group the data by the stock ticker and count, sum, or average the results per stock.
+* The `groupby` function is just as common as the `sort_values` function.
 
-* The `groupby` function operates by segmenting a dataset into groups. Once the groups are created, a function or operation can be executed against each group (i.e. addition). The results for each group are then combined together to create the final output.
+* Both of these functions are used to wrangle data into a state that is usable for analysis.
 
-* Data has to be grouped using `groupby` before the values in each group can be aggregated respectively. This ensures that data is aggregated at the group level rather than the column level.
+Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_89) and provide a brief overview of the `groupby` function.
 
-Demonstrate how to use the `groupby` function. Live code the below examples.
+* A common technique in data analysis is to summarize data by grouping similar values. One example is grouping sales data by country. In our case, we may want to group data by the stock ticker. Once the data is grouped, a count, sum, or average can be performed on the result.
 
-* A DataFrame can be grouped by any Series that contains repeating values or categories. TO group data, use the `groupby` function. The `groupby` function accepts a Series name as an argument, and users can also specify a return column with `[]` brackets.
+* The `groupby` function segments data into groups. Once groups are created, a function or operation can be executed against each group (e.g., addition).
+
+* Data must be grouped using `groupby` before the values in each group can be aggregated. This ensures data is aggregated at the group level rather than the column level.
+
+Transition to providing students a demo of how to use the `groupby` function. Open the [starter file](Activities/05-Ins_Groupby/Unsolved/groupby.ipynb), and live code the following examples.
+
+* To group data, use the `groupby` function against a non-unique column. The `groupby` function accepts a Series name as an argument. Users can also specify a return column with brackets, `[]`.
 
   ```python
   # Group by crypto data by cryptocurrency
@@ -218,7 +268,7 @@ Demonstrate how to use the `groupby` function. Live code the below examples.
 
   ![group_count.png](Images/group_count.png)
 
-* The `groupby` function requires that a function or aggregation be applied against the grouped data. When a function is not provided, a `DataFrameGroupBy` object is returned instead of data. `DataFrameGroupBy` objects have to be aggregated in order to be used.
+* The `groupby` function requires that a function or aggregation proceed it. Whenever a function is not chained to a `groupby` function, the output will be a `DataFrameGroupBy` object rather than an actual DataFrame. `DataFrameGroupBy` objects have to be aggregated before they can be used.
 
   ```python
   # Group by crypto data by cryptocurrency
@@ -230,7 +280,7 @@ Demonstrate how to use the `groupby` function. Live code the below examples.
   <pandas.core.groupby.generic.DataFrameGroupBy object at 0x000001CFF748A518>
   ```
 
-* Aggregate functions (i.e. `count`, `sum`, `mean`) can be used to summarize data. This allows calculations to be executed against specific groups of data rather than an entire Series.
+* Example aggregate functions that can be applied against `DataFrameGroupBy` objects include `count`, `sum`, and `mean`, just to name a few. These functions will proceed a `groupby` function.
 
   ```python
   # Calculate average data_priceUsd for each crypto
@@ -240,7 +290,9 @@ Demonstrate how to use the `groupby` function. Live code the below examples.
 
   ![group_by_aggregate.png](Images/group_by_aggregate.png)
 
-* DataFrames can also be grouped by more than one column. This groups values across each specified column and summarizes the data into one record. This approach can be used as a way to identify if there are any duplicates within the data. As evidenced by the below screenshot, each `cryptocurrency` and `data_priceUsd` combination only occurs once. The below screenshots communicate the differences between grouping by one or multiple columns.
+* DataFrames can be grouped by more than one column. This groups values across each specified column and summarizes the data into one record. This approach can be used as a way to identify if there are any duplicates within the data.
+
+* In the following screenshot, each `cryptocurrency` and `data_priceUsd` combination occurs only once. The screenshots show the differences between grouping by one or multiple columns.
 
   ```python
   # Group by more than one column
@@ -258,7 +310,7 @@ Demonstrate how to use the `groupby` function. Live code the below examples.
 
   ![compare_single_multi.png](Images/compare_single_multi.png)
 
-* The `groupby` function can be used to plot multiple lines on a line chart. Plotting a grouped DataFrame will automatically create axes subplots.
+* Once data is grouped, each group can be plotted for comparison. This will plot multiple lines on a single plot. Each line is considered a subplot.
 
   ```python
   # Plot data_priceUsd for each crypto across time
@@ -268,33 +320,35 @@ Demonstrate how to use the `groupby` function. Live code the below examples.
 
   ![plotting_groupby.png](Images/plotting_groupby.png)
 
-- - -
-
-### 6. Students Do: Groupby (15 mins)
-
-This activity will entail students working with historical cryptocurrency data. Students will load in cryptocurrency data, group data by each crypto, and then perform aggregations to analyze price trends. Students will then plot the results.
-
-**Files:**
-
-* [crypto_circus.ipynb](Activities/06-Stu_Groupby/Unsolved/crypto_circus.ipynb)
-
-**Instructions:**
-
-* [README.md](Activities/06-Stu_Groupby/README.md)
+Ask if there are any questions before moving on.
 
 - - -
 
-### 7. Instructor Do: Review Groupby (10 mins)
+### 6. Student Do: Group Dynamics (15 min)
 
-**Files:**
+In this activity, students will work with historical cryptocurrency data. Specifically, they will load in cryptocurrency data, group data by each crypto, and then perform aggregations to analyze price trends. Students will then plot the results. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
-* [crypto_circus.ipynb](Activities/06-Stu_Groupby/Solved/crypto_circus.ipynb)
+**File:** [group_dynamics.ipynb](Activities/06-Stu_Groupby/Unsolved/group_dynamics.ipynb)
 
-Walkthrough the solution and go over the following discussion points:
+**Instructions:** [README.md](Activities/06-Stu_Groupby/README.md)
 
-* The `groupby` function can be used to group a DataFrame by a column. This allows for data to be aggregated and summarized in groups rather than all at once. DataFrames can be grouped by a single column or more than one.
+- - -
 
-* Data that has been grouped, known as a `DataFrameGroupByObject`, can be plotted. Plotting a `DataFrameGroupByObject` will create a chart with multiple lines/bars. Each line/bar will represent a respective group. In order to ensure all groups are plotted on the same chart, the data/column with the data points must be specified (i.e. `data_priceUsd`). Otherwise, multiple charts will be created for each group.
+### 7. Instructor Do: Review Group Dynamics (10 min)
+
+In this section, review the Group Dynamics activity by completing a dry walk-through of the solution. End by asking a series of review questions to test students' understanding.
+
+**File:** [group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/group_dynamics.ipynb)
+
+Open the solution, and complete a dry walk-through of the student activity solution, covering the following points:
+
+* The `groupby` function can be used to group a DataFrame by a column. This allows data to be aggregated and summarized in groups rather than all at once. DataFrames can be grouped by a single column or multiple columns.
+
+* Data that has been grouped, known as a `DataFrameGroupByObject`, can be plotted.
+
+    * Plotting a `DataFrameGroupByObject` will create a chart with multiple lines/bars. Each line/bar represents a respective group.
+
+    * In order to ensure all groups are plotted on the same chart, the data/column with the data points must be specified (i.e., `data_priceUsd`). Otherwise, multiple charts will be created for each group.
 
   ```python
   # Determine average price across two years
@@ -304,7 +358,7 @@ Walkthrough the solution and go over the following discussion points:
 
   ![plot_group.png](Images/plot_group.png)
 
-* Grouping data is valuable when aggregations need to be performed, especially across time periods. Using `groupby` with the `avg` function calculates the average price for each crypto across the two year time period.
+* Grouping data is valuable when aggregations need to be performed, especially across time periods. Using `groupby` with the `avg` function calculates the average price for each crypto over the two-year time period.
 
   ```python
   # Determine average price across two years
@@ -332,7 +386,7 @@ Walkthrough the solution and go over the following discussion points:
     Name: data_priceUsd, dtype: float64
     ```
 
-* `Min` is another common aggregate function used with grouped data. `Min` can be used to determine the lowest price in the two year time period, per crypto.
+* `Min` is another common aggregate function used with grouped data. `Min` can be used to determine the lowest price in the two-year time period, per crypto.
 
   ```python
   # Determine min price across two years
@@ -350,37 +404,59 @@ Walkthrough the solution and go over the following discussion points:
   Name: data_priceUsd, dtype: float64
   ```
 
-End the review session with the following reflective questions:
+If time remains, end the review by calling on students to answer the following reflective questions:
 
 * Does the concept of grouping to aggregate data make sense?
 
+    **Answer:** Yes. When aggregating data without groups, all of the data is aggregated. Grouping and then aggregating allows calculations to be executed against groups (i.e. January's stock data would be grouped and computed separate from February's).
+
 * How was working with more than one ticker in this activity?
 
-* What are some examples of situations where data would need to be grouped and then aggregated?  example would be calculating average grade by students.
+    **Answer:** Working with more than one ticker accelerates processing. Instead of analyzing one ticker at a time, data for all stocks can be put into one file, analyzed as individual groups, and then combined to create a single `DataFrame` object.
+
+* What are some examples of situations where data would need to be grouped and then aggregated?
+
+    **Answer:** Calculating daily returns by quarter.
+
+    **Answer:** Calculating final grades for each student per class.
+
+    **Answer:** Calculating the number of horror movies released every decade between 1970 and 1990.
 
 - - -
 
-### 8. Instructor Do: Multi Indexing (10 mins)
+### 8. Instructor Do: Multi-Indexing (10 min)
+
+Now that students have learned that indexes can be created by using the `groupby` key, it's important they know how to directly multi-index DataFrames. Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
 **Files:**
 
-* [Multi Indexing Slides]()
+* [Multi-Indexing Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_207)
 
 * [multi_indexing.ipynb](Activities/08-Ins_Multi_Indexing/Solved/multi_indexing.ipynb)
 
-Now that students have learned that indexes can be created by using the `groupby` key, it's important they know how to directly multi-index DataFrames. Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group.
+* [starter-file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing.ipynb)
 
-Navigate to the Unit 4.2 slides and provide an overview of multi-indexing.
+Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_207) and provide an overview of multi-indexing.
 
 * Multi-indexing is the process of indexing a dataset by more than one value. Multi-indexing is like using two bookmarks in a book. Each bookmark is an index, and depending on which index you go to, you'll get different content.
 
-* Multi-indexing is sometimes referred to as Hierarchical Indexing as relationships can exist between indexes. For example, a state can be one index and a city could be another. Because a city belongs to a state, these indexes would be hierarchical.
+* Multi-indexing is sometimes referred to as hierarchical indexing, as relationships can exist between indexes. For example, a state can be one index and a city can be another. Because a city belongs to a state, these indexes would be hierarchical.
 
-* Multiple indexes are valuable as it enables dimensional data to be grouped and retrieved. This is particularly valuable when working with Financial data and dates. While dates are great to index, dates do not always provide all of the detail needed to manipulate and analyze data. For example, when looking at stock prices and purchases over time, it is important to group data by both date and ticker. In this operation, both date and ticker can be indexes, and by specifying date and ticker, you can slice out the price of a particular stock at a specific point in time. Essentially, multi-indexing improves data storage, lookup, and manipulation/assignment.
+* Multiple indexes are valuable because they enable dimensional data to be grouped and retrieved.
 
-Live code how to create and use multiple indexes, as well as how to access data using more than one index.
+    * This is particularly valuable when working with financial data and dates. While dates are great to index, dates do not always provide all of the detail needed to manipulate and analyze data.
 
-* Multi-indexing is commonly done when working with `Date` data. `Date` data when used as an index is considered a `DatetimeIndex`. `DatetimeIndexes` have the ability to inherently create multi-indexing. A `DatetimeIndex` can be created by passing a `Date` field to the `index_col` attribute when using `read_csv`. `parse_dates` and `infer_datetime_format` should also be included.
+    * For example, when looking at stock prices and purchases over time, it is important to group data by both date and ticker. In this operation, both date and ticker can be indexes, and by specifying date and ticker, you can slice out the price of a particular stock at a specific point in time.
+
+* Essentially, multi-indexing improves data storage, lookup, and manipulation/assignment.
+
+Open the [starter-file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing.ipynb), and live code how to create and use multiple indexes, as well as how to access data using more than one index.
+
+* Multi-indexing is commonly done when working with `Date` data.
+
+* When used as an index, `Date` data is considered a `DatetimeIndex`. `DatetimeIndexes` have the ability to inherently create multi-indexing.
+
+* A `DatetimeIndex` can be created by passing a `Date` field to the `index_col` attribute when using `read_csv`. `parse_dates` and `infer_datetime_format` should also be included.
 
     ```python
     # Read in data
@@ -419,7 +495,7 @@ Live code how to create and use multiple indexes, as well as how to access data 
 
   ![multi_index_agg.png](Images/multi_index_agg.png)
 
-* The `loc` function can be used to slice data from a DataFrame with multiple indexes. While not all indexes are required to be passed, the top level index needs to be specified (i.e. `year`). When all indexes are passed to the `loc` function, only one record will be returned. If fewer than all indexes are provided, more than one record of data will be output. Essentially, indexes have to be accessed and used hierarchically (i.e. `year` > `month` > `day`).
+* The `loc` function can be used to slice data from a DataFrame with multiple indexes. While not all indexes are required to be passed, the top level index needs to be specified (e.g., `year`). When all indexes are passed to the `loc` function, only one record will be returned. If fewer than all indexes are provided, more than one record of data will be output. Essentially, indexes have to be accessed and used hierarchically (i.e., `year` > `month` > `day`).
 
     ```python
     # Slice data for 4/12/2019 from first group
@@ -437,31 +513,30 @@ Live code how to create and use multiple indexes, as well as how to access data 
 
   ![slice_by_month.png](Images/slice_by_month.png)
 
+Ask if there are any questions before moving on.
 - - -
 
-### 9. Students Do: Multi-Indexing (15 mins)
+### 9. Student Do: Indexing Fever (15 min)
 
-In this activity, students will use hierarchical indexes to gain access to historical stock data. The objective of the assignment is for the students to take their indexing skills to the next level by using DataFrames with multiple indices. Students will leverage NASDAQ data to perform data segmentation for a single ticker across multiple months in a year.
+In this activity, students will use hierarchical indexes to gain access to historical stock data. The objective of the assignment is for students to take their indexing skills to the next level by using DataFrames with multiple indices. Students will leverage [NASDAQ](https://nasdaq.com) data to perform data segmentation for a single ticker across multiple months in a year.
 
-**Files:**
+**File:** [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Unsolved/Core/indexing_fever.ipynb)
 
-* [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Unsolved/Core/indexing_fever.ipynb)
-
-**Instructions:**
-
-* [README.md](Activities/09-Stu_Multi_Indexing/README.md)
+**Instructions:** [README.md](Activities/09-Stu_Multi_Indexing/README.md)
 
 - - -
 
-### 10. Instructor Do: Review Multi-Indexing (10 mins)
+### 10. Instructor Do: Review Indexing Fever (10 min)
 
-**Files:**
+In this section, you will perform a dry walk-through of the solution for the Indexing Fever activity that students just completed.
 
-* [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexing_fever.ipynb)
+**File:** [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexing_fever.ipynb)
 
-Walkthrough the solution and go over the following discussion points:
+Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexing_fever.ipynb), and review the solution, covering the following points:
 
-* The `read_csv` accepts arguments that make creating indexes easy. Passing a column name to the read_csv `index_col` parameter will create a DataFrame index based off of the values in that Series. When working with Dates as indexes, it is common to set the following two `read_csv` parameters to `True`: `parse_dates` and `infer_datetime_format`. These two date parameters for read_csv will eliminate the need to cast a date Series to a `datetime` object.
+* The `read_csv` accepts arguments that make creating indexes easy. Passing a column name to the `read_csv` `index_col` parameter will create a DataFrame index based off of the values in that Series.
+
+* When working with Dates as indexes, it is common to set the following two `read_csv` parameters to `True`: `parse_dates` and `infer_datetime_format`. These two date parameters for `read_csv` will eliminate the need to cast a date Series to a `datetime` object.
 
   ```python
   # Read csv data with dates
@@ -469,7 +544,11 @@ Walkthrough the solution and go over the following discussion points:
   nasdaq_data = pd.read_csv(csv_path, parse_dates=True, index_col="Trade DATE", infer_datetime_format=True)
   ```
 
-* Multi-indexing is used to create multiple look up points for data, as well as to create hierarchal relationships between data elements. Multi-indexing will enable users to index data with more than one data element (i.e. `year` and `month`). Multi-indexing is valuable as it enables data to be indexed with more than one column. Using multi-indexing, especially with date Series, ensures financial data can be stored and accessed by date.
+* Multi-indexing is used to create multiple lookup points for data, as well as hierarchal relationships between data elements.
+
+* Multi-indexing will enable users to index data with more than one data element (e.g., `year` and `month`).
+
+* Multi-indexing is valuable because it enables data to be indexed with more than one column. Using multi-indexing, especially with date Series, ensures financial data can be stored and accessed by date.
 
   ![Multi_Indexing_Relationship.png](Images/Multi_Indexing_Relationship.png)
 
@@ -493,7 +572,7 @@ Walkthrough the solution and go over the following discussion points:
 
     ![Multi_Indexing_Lookup.png](Images/Multi_Indexing_Lookup.png)
 
-* Changes in time can be calculated by using the `timedelta` Pandas function. The function accepts the number of days one wants to traverse as an argument and then identifies the specific date. For example, the `timedelta` function can be used to determine what the date was 60 days from today. `Year` and `month` attributes are also available for `timedelta` objects.
+* Changes in time can be calculated by using the `timedelta` Pandas function. The function accepts the number of days one wants to traverse as an argument, and then identifies the specific date. For example, the `timedelta` function can be used to determine what the date was 60 days from today. `Year` and `month` attributes are also available for `timedelta` objects.
 
   ```python
   # Calculating GOOG stock price for 30 days ago
@@ -502,27 +581,36 @@ Walkthrough the solution and go over the following discussion points:
   print(goog_thirty_days_ago)
   ```
 
-* In order to use the `timedelta` function, the `timedelta` function needs to be imported. In order to get access to date functions that identify the current time and current day, the `date` object will also need to be imported from `datetime`. For example, `date.today()` can be used to determine today's date.
+* In order to use the `timedelta` function, it needs to be imported. To access date functions that identify the current time and  day, the `date` object will also need to be imported from `datetime`. For example, `date.today()` can be used to determine today's date.
 
   ```python
   from datetime import datetime, date, timedelta
   ```
 
+Ask if there are any questions before moving on.
 - - -
 
-### 11. BREAK (15 mins)
+### 11. BREAK (15 min)
 
 - - -
 
-### 12. Instructor Do: Concatenating DataFrames (5 mins)
+### 12. Instructor Do: Concatenating DataFrames (5 min)
+
+In this section, you will provide an overview of concatenation and then live code how to concatenate DataFrames. Data for this activity was retrieved from [Kaggle](http://kaggle.com).
 
 **Files:**
 
-* [concat_dataframe.ipynb](Activities/12-Concating_DataFrames/Solved/concat_dataframe.ipynb)
+* [Concatenation Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_252)
 
-Indexing, grouping, and sorting datasets are all steps taken to prepare data for analysis. Another is combining, also known as concatenating, datasets. This is beneficial when more than one dataset needs to be combined. For example, multiple months of financial records or investment data from different markets can be consolidated into one dataset in order to streamline and centralize data analysis.
+* [concat_dataframe.ipynb](Activities/12-Ins_Concat_DataFrame/Solved/concat_dataframes.ipynb)
 
-Navigate to the 4.2 slides, and provide a brief overview of concatenation:
+Introduce the topic of concatenation by explaining the following:
+
+* Indexing, grouping, and sorting datasets are all steps taken to prepare data for analysis. Another is combining, also known as concatenating, datasets. This is beneficial when more than one dataset needs to be combined.
+
+* For example, multiple months of financial records or investment data from different markets can be consolidated into one dataset in order to streamline and centralize data analysis.
+
+Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_252) and provide a brief overview of concatenation:
 
 * Concatenation is the process of appending data from one object with another.
 
@@ -530,11 +618,23 @@ Navigate to the 4.2 slides, and provide a brief overview of concatenation:
 
 * There are multiple ways to concatenate objects, including by column and row.
 
-* DataFrames can be joined together, or `concatenated`, using the Pandas `concat` function. This function enables users to join and combine more than one DataFrame. The function accepts the following arguments: a list of DataFrames to be joined, the `axis` to join on (by column or row), and the `join` operation (inner vs outer).
+* DataFrames can be joined together, or `concatenated`, using the Pandas `concat` function. This function enables users to join and combine more than one DataFrame.
 
-Live code the following examples:
+* The `concat` function accepts the following arguments:
 
-* DataFrames can be joined by either `column` or `row`. The `axis` argument can be configured to specify which to use. If a new dataset needs to be created where multiple columns from different DataFrames need to be reflected, the DataFrames should be joined on `column`. This will create a new, composite DataFrame that incorporates the columns from all DataFrames. If rows from one DataFrame simply needs to be combined or added to another DataFrame, the DataFrames should be joined on `row`. Joining on the `row` axis would require all DataFrames being joined to have the same columns.
+    * a list of DataFrames to be joined
+
+    * the `axis` to join on (by column or row)
+
+    * the `join` operation (inner vs. outer)
+
+Open the [starter-file](Activities/12-Ins_Concat_DataFrame/Unsolved/concat_dataframes.ipynb), and live code the following examples:
+
+* DataFrames can be joined by either `column` or `row`. The `axis` argument can be configured to specify which to use.
+
+* If a new dataset needs to be created where multiple columns from different DataFrames need to be reflected, the DataFrames should be joined on `column`. This will create a new, composite DataFrame that incorporates the columns from all DataFrames.
+
+* If rows from one DataFrame simply need to be combined or added to another DataFrame, the DataFrames should be joined on `row`. Joining on the `row` axis would require all DataFrames being joined to have the same columns.
 
   ```python
   # Join UK, France, and Netherlands full datasets by axis
@@ -552,51 +652,57 @@ Live code the following examples:
 
   ![concat_columns.png](Images/concat_columns.png)
 
-The `concat` function creates a new DataFrame that includes data from all of the datasets that were joined. The amount of data returned will depend on the type of `join` performed when concatenating. Indicate to students that additional information can be found [here](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html#set-logic-on-the-other-axes).
+* The `concat` function creates a new DataFrame that includes data from all datasets that were joined. The amount of data returned will depend on the type of `join` performed when concatenating.
+
+Indicate to students that additional information can be found in the [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html#set-logic-on-the-other-axes).
 
 * The `join="inner"` argument will create an intersection of the data.
 
 * The `join="outer"` argument will union the data.
 
-- - -
-
-### 13. Students Do: Concat DataFrames (15 mins)
-
-**Instructions:**
-
-* [README.md](Activities/13-Stu_Concat_DataFrames/README.md)
-
-**Files:**
-
-* [joining_forces.ipynb](Activities/13-Stu_Concat_DataFrames/Unsolved/joining_forces.ipynb)
+Ask if there are any questions before moving on.
 
 - - -
 
-### 14. Instructor Do: Review Concat DataFrames (5 mins)
+### 13. Student Do: Mastering Concatenation (15 min)
 
-**Files:**
+In this activity, students get hands-on experience with combining multiple DataFrames using the `concat` function. The goal of the activity is for students to take dues and membership data from two community organizations and combine the data into a single DataFrame.
 
-* [joining_forces.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/joining_forces.ipynb)
+**File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_DataFrames/Unsolved/mastering_concatenation.ipynb)
 
-Conduct a formal review Q&A with the following questions:
+**Instructions:** [README.md](Activities/13-Stu_Concat_DataFrames/README.md)
 
-* If I wanted to consolidate two DataFrames with the same columns into one DataFrame, which concat axis would I use?
+- - -
 
-    > "By rows. Concatenating by rows will combine the two DataFrames so that all rows are in one DataFrame."
+### 14. Instructor Do: Review Mastering Concatenation (5 min)
 
-* Let's say I wanted to take an intersection of two DataFrames that I have combined. Would I use the inner join operation or outer join operation?
+In this part of the lesson, you will review the Mastering Concatenation activity with students. First, you will conduct a brief Q & A to test students' understanding, and then you will perform a dry walk-through of the solution.
 
-    > "Inner join. Inner join will return a DataFrame with only matching rows."
+**File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/mastering_concatenation.ipynb)
+
+Start the review by conducting a Q & A with the following questions:
+
+* If you wanted to consolidate two DataFrames with the same columns into one DataFrame, which `concat` axis would you use?
+
+    **Answer:** By rows. Concatenating by rows will combine the two DataFrames so that all rows are in one DataFrame.
+
+* Let's say you want to take an intersection of two DataFrames that you have combined. Would you use the inner join operation or outer join operation?
+
+    **Answer:** Inner join. Inner join will return a DataFrame with only matching rows.
 
 * Which join will produce more rows? An inner join our outer join?
 
-    > "Outer join. Inner joins represent only a section of all of the data."
+    **Answer:** Outer join. Inner joins represent only a section of all of the data.
 
-Walkthrough the solution and go over the following discussion points:
+Open [mastering_concatenation.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/mastering_concatenation.ipynb) to review the solution and go over the following points:
 
 * The `concat` function can be used to combine or link more than one DataFrame.
 
-* DataFrames can be concatenated either by `rows` or `columns`. Concatenating by `row` will create a DataFrame that has the total number of rows. Concatenating by `columns` produces a DataFrame that has the columns from all DataFrames concatenated.
+* DataFrames can be concatenated either by `rows` or `columns`.
+
+    * Concatenating by `row` will create a DataFrame that has the total number of rows.
+
+    * Concatenating by `columns` produces a DataFrame that has the columns from all DataFrames concatenated.
 
   ![concat_axis.png](Images/concat_axis.png)
 
@@ -608,33 +714,43 @@ Walkthrough the solution and go over the following discussion points:
 
   ![stu_concat_cols.png](Images/stu_concat_cols.png)
 
+Ask if there are any questions before moving on.
+
 - - -
 
-### 15. Instructor Do: Standard Deviation and Risk (10 mins)
+### 15. Instructor Do: Standard Deviation and Risk (10 min)
 
-The Standard Deviation and Risk module focuses on students learning what `standard deviation` is and how it can be used to determine the risk associated with an investment. The instructor will demo how to calculate `standard deviation` using Pandas. Students will learn standard deviation so they can then calculate `sharpe ratios` in the next activity.
+This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate sharpe ratios in the next activity. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
 **Files:**
 
+* [Standed Deviation and Risk Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_293)
+
 * [std_dev_risk.ipynb](Activities/15-Ins_Std_Dev_Risk/Solved/std_dev_risk.ipynb)
 
-Everything completed in class up until this point has been to prepare students for portfolio analysis. With daily returns calculated, and data from multiple portfolios combined into one dataset, students are able to complete a holistic analysis of the data. For this section of the lesson, students will leverage data preparation skills to analyze portfolio performance, calculate risk, and identify risky investments.
+Introduce **standard deviation and risk** to students by communicating that everything completed in class up until this point has been to prepare them for portfolio and risk analysis.
 
-Navigate to the 4.2 slides, and highlight the following:
+* With daily returns calculated, and data from multiple portfolios combined into one dataset, students are now able to complete a holistic analysis of stock data.
 
-* A key aspect of analyzing portfolio and stock data is determining risk. Pandas provides a series of functions that can be used to calculate risk. One component of risk is calculating the `mean` performance or price of a stock. The second is calculating the `standard deviation`.
+* The next step is to use **standard deviation and risk** to analyze portfolio performance, calculate risk, and identify risky investments.
 
-* `Mean` can be used to determine the average value of a portfolio/stock overtime. This can serve as a baseline for measuring risk and value. A portfolio/stock doing better than average is more valuable. Investing in a portfolio or buying a stock doing below average is risky business.
+Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_293) and explain the following:
 
-* A common technique for measuring how far away an asset is from the `mean` is to calculate the `standard deviation`. `Standard deviation` identifies exactly how far away from the average price the value is. A low number indicates that the value is not far form the average. A high `standard deviation` means the value is an outlier.
+* A key aspect of analyzing portfolio and stock data is determining risk. Pandas provides a Series of functions that can be used to calculate risk.
 
-Live code how to use Pandas to calculate `standard deviation` to evaluate risk:
+* One component of risk is calculating the mean performance or price of a stock. The second is calculating the standard deviatio`.
 
-* `Standard deviation` should be calculated using daily returns data. Calculating `standard deviation` against daily returns will help identify risk based off of return value rather than price volatility.
+* **Mean** can be used to determine the average value of a portfolio or stock overtime. This can serve as a baseline for measuring risk and value: a portfolio/stock performing above average is more valuable; investing in a portfolio or buying a stock performing below average is risky business.
+
+* A common technique for measuring how far away an asset is from the mean is calculating the standard deviation. **Standard deviation** identifies exactly how far away a value is from the average price. A low number indicates that the value is not far from the average; a high standard deviation means that the value is an outlier.
+
+Live code how to use Pandas to calculate standard deviation in order evaluate risk:
+
+* Standard deviation should be calculated using daily returns data. Calculating standard deviation against daily returns will help identify risk based on return value rather than price volatility.
 
   ![std_dev.png](Images/std_dev.png)
 
-* The `std` Pandas function can be used to determine the risk associated with a portfolio/stock. Behind the scenes, the `std` function calculates the mean/average, and then it evaluates how far away from the average the input is. The function returns a new DataFrame.
+* The `std` Pandas function can be used to determine the risk associated with a portfolio or stock. Behind the scenes, the `std` function calculates the mean/average, and then it evaluates how far away from the average the input is. The function returns a new DataFrame.
 
   ```python
   # Daily Standard Deviations
@@ -659,7 +775,7 @@ Live code how to use Pandas to calculate `standard deviation` to evaluate risk:
 
   ![risk_sort.png](Images/risk_sort.png)
 
-* It is common to need `standard deviation` at the yearly level. Calculating annualized standard deviation can be done by multiplying the the square root (`sqrt`) of the number of trading days in a year (`252`) with the standard deviation.
+* It is often necessary to calculate standard deviation at the yearly level. Calculating annualized standard deviation can be done by multiplying the square root (`sqrt`) of the number of trading days in a year (`252`) with the standard deviation.
 
   ```python
   # Calculate the annualized standard deviation (252 trading days)
@@ -676,7 +792,7 @@ Live code how to use Pandas to calculate `standard deviation` to evaluate risk:
   dtype: float64
   ```
 
-* A key way to assess risk is to use the `plot.hist` function to create a chart of standard deviation trends. This will visually demonstrate the mean value, as well as the number and severity of any deviations for each element being plotted (i.e. each portfolio).
+* A key way to assess risk is to use the `plot.hist` function to create a chart of standard deviation trends. This will visually demonstrate the mean value, as well as the number and severity of any deviations for each element being plotted (i.e., each portfolio).
 
   ```python
   portfolio_a_std = np.random.normal(scale=0.5, size=10000)
@@ -694,7 +810,9 @@ Live code how to use Pandas to calculate `standard deviation` to evaluate risk:
 
   ![std_plot.png](Images/std_plot.png)
 
-* Another way to visualize `standard deviation` is with a `box plot`. `Box plots` display the total spread of the data, and they can be created using the `plot.box` Pandas function. Box plots have what are known as `whiskers`. `Whiskers` represent the range/spread of the data. Data elements that extend beyond the `whiskers` are considered outliers.
+* Another way to visualize standard deviation is with a box plot. **Box plots** display the total spread of the data, and they can be created using the `plot.box` Pandas function.
+
+* Box plots have what are known as whiskers. **Whiskers** represent the range, or spread, of the data. Data elements that extend beyond the whiskers are considered outliers.
 
   ```python
   # Plot box plot
@@ -703,33 +821,39 @@ Live code how to use Pandas to calculate `standard deviation` to evaluate risk:
 
   ![std_dev_box.png](Images/std_dev_box.png)
 
-* The take away from these charts, which should be emphasized to students, is that the greater the spread, the greater the risk. The greater the risk, the greater the potential for earnings and lost.
+Emphasize that the takeaway from these charts is that the greater the spread, the greater the risk. The greater the risk, the greater the potential for earnings and lost.
+
+Ask if there are any questions before moving on.
 
 - - -
 
-### 16. Instructor Do: Sharpe Ratios (5 mins)
+### 16. Instructor Do: Sharpe Ratios (5 min)
 
-In this module, students will be introduced to sharpe ratios and why risk-reward ratios are important in finance.
+In this section, students will be introduced to sharpe ratios and why risk-reward ratios are important in finance. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
 **Files:**
 
+* [Sharpe Ratios Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_351)
+
 * [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py)
 
-Now that students have been taught how to assess and identify risk and investment performance, they are now prepared to learn how to adjust trade patterns to adjust for risk-reward.
+Communicate to students that their skill in identifying risk and assessing investment performance has prepared them to learn how to adjust for risk in order to maximize reward.
 
-Open the 4.2 slides, and provide an overview of what `sharpe ratios` are and how they are calculated.
+Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_351) and begin the overview of sharpe ratios and how they are calculated. Cover the following points:
 
-* Sharpe ratios are used to help compare rate of return for an investment with its risk. Sharpe ratios shed light on the potential of profits even with risk involved.
+* **Sharpe ratios** are used to help compare rate of return for an investment with its risk. Sharpe ratios shed light on the potential of profits even with risk involved.
 
 * Sharpe ratios measure the excess return for each deviation. This will identify, in the wake of risk, how much profit is left to be gained.
 
-* Sharpe ratios are calculated by subtracting the `return of portfolio` from the investment's `risk-free rate`. The difference is than divided by the `standard deviation`.
+* Sharpe ratios are calculated by subtracting the **return of portfolio** from the investment's **risk-free rate**. The difference is than divided by the standard deviation.
 
-  Sharpe Ratios = <img src="https://latex.codecogs.com/gif.latex?\frac{R_{p}-R_{f}}{\sigma_{p}}$" title="\frac{R_{p}-R_{f}}{\sigma_{p}}$" />
+    ![sharpe_ratio_formula.png](Images/sharpe_ratio_formula.png)
 
-Open the solution, and live code how to calculate and plot sharpe ratios:
+Open [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py) and live code how to calculate and plot sharpe ratios:
 
-* Sharpe ratios are commonly used to indicate whether or not an investment is a good decision. While standard deviation illustrates how far an investment has deviated from its average, sharpe ratios uses standard deviation to illustrate the relationship between standard deviation and risk-reward. Sharpe ratios enables investors to judge whether or not an investment is a good decision. Sharpe ratios adjust for risk, making them a valuable indicator of asset performance.
+* Sharpe ratios are commonly used to indicate whether or not an investment is a good decision. While standard deviation illustrates how far an investment has deviated from its average, sharpe ratios uses standard deviation to illustrate the relationship between standard deviation and risk-reward.
+
+* Sharpe ratios enable investors to judge whether or not an investment is a good decision. Sharpe ratios adjust for risk, making them a valuable indicator of asset performance.
 
   ```python
   # Calculate Sharpe Ratio
@@ -739,7 +863,9 @@ Open the solution, and live code how to calculate and plot sharpe ratios:
 
   ![sharpe_ratios.png](Images/sharpe_ratios.png)
 
-* The ratio of return-to-risk can be used to determine which stocks and/or portfolios have out-done the others. The higher the `sharpe ratio`, the better the investment. The `plot` function can be used to visually compare `sharpe ratios`.
+* The ratio of return-to-risk can be used to determine which stocks and/or portfolios have outperformed the others. The higher the sharpe ratio, the better the investment.
+
+* The `plot` function can be used to visually compare sharpe ratios.
 
   ```python
   # Plot sharpe ratios
@@ -748,33 +874,30 @@ Open the solution, and live code how to calculate and plot sharpe ratios:
 
   ![sharpe_ratios_plot.png](Images/sharpe_ratios_plot.png)
 
+Ask if there are any questions before moving on.
 - - -
 
-### 17. Students Do: Risky Business (20 mins)
+### 17. Student Do: Risky Business (20 min)
 
-It's time to wrap it all together. In this activity, students will prep data and use standard deviation and sharpe ratios to analyze cryptocurrency portfolio performance for Harold and themselves. The goal is to calculate who has the riskier portfolio: Harold or themselves. Students will also identify which individual cryptos have had the greatest return.
+It's time to put it all together. In this activity, students will prep data and use standard deviation and sharpe ratios to analyze cryptocurrency portfolio performance. The goal is to calculate which portfolio has the highest risk. Students will also identify which individual cryptos have had the greatest return. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
-Encourage students to work in pairs for this assignment.
+Encourage students to work in pairs to complete the solution.
 
-**Files:**
+**File:** [risky_business.ipynb](Activities/17-Stu_Risky_Business/Unsolved/Core/risky_business.ipynb)
 
-* [risky_business.ipynb](Activities/17-Stu_Risky_Business/Unsolved/Core/risky_business.ipynb)
-
-**Instructions:**
-
-* [README.md](Activities/17-Stu_Risky_Business/README.md)
+**Instructions:** [README.md](Activities/17-Stu_Risky_Business/README.md)
 
 - - -
 
-### 18. Instructor Do: Review Risky Business (10 mins)
+### 18. Instructor Do: Review Risky Business (10 min)
 
-**Files:**
+**File:** [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_business.ipynb)
 
-* [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_business.ipynb)
+Open [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_business.ipynb) to review the activity solution with students. Highlight the following:
 
-Walk through the solution and highlight the following:
+* The `concat` function can be used to combine portfolio returns. This enables analysis (i.e., standard deviation) of an entire portfolio rather than an individual stock. It also allows data from investments/portfolio A to be compared with investments/portfolio B.
 
-* The `concat` function can be used to combine portfolio returns. This enables analysis (i.e. standard deviation) to be performed on an entire portfolio rather than an individual stock. This allows data from investments/portfolio `A` to be compared with investments/portfolio `B`. Harold's portfolio returns are combined with student returns in order to later calculate `standard deviation` and `sharpe ratio` for across the board.
+* Harold's portfolio returns are combined with student returns in order to later calculate standard deviation and sharpe ratio across the board.
 
   ```python
   # Concat returns DataFrames
@@ -784,7 +907,9 @@ Walk through the solution and highlight the following:
 
   ![stu_concat_compare.png](Images/stu_concat_compare.png)
 
-* `Standard deviation` is required to calculate `sharpe ratios`. `Standard Deviation` calculates the average value and compares the distribution of values to that average. The `std` function can be used to compute standard deviation. The output from the function is a Series that indicates how far the value is from the mean, in the same units as the base data. The greater the value/deviation, the greater the risk and volatility.
+* Standard deviation is required to calculate sharpe ratios. Standard deviation calculates the average value and compares the distribution of values to that average.
+
+* The `std` function can be used to compute standard deviation. The output from the function is a Series that indicates how far the value is from the mean, in the same units as the base data. The greater the value/deviation, the greater the risk and volatility.
 
   ```python
   # Calculate std dev
@@ -801,7 +926,13 @@ Walk through the solution and highlight the following:
   dtype: float64
   ```
 
-* `Sharpe ratios` are used to examine investment performance based off of the risk to reward ratio. `Sharpe ratio` calculates the risk associated with a return and then divides that by the standard deviation of a return. The higher the `sharpe ratio`, the greater the reward associated with the risk. A high `sharpe ratio` indicates a smart investment. Calculating the `sharpe ratio` for Harold's and the students' portfolios reveals who's portfolio has the greatest reward associated with the risk.
+* Sharpe ratios are used to examine investment performance based on the risk-to-reward ratio.
+
+    * The sharpe ratio calculates the risk associated with a return and then divides that by the standard deviation of a return.
+
+    * The higher the sharpe ratio, the greater the reward associated with the risk. A high sharpe ratio indicates a smart investment.
+
+* Calculating the sharpe ratio for Harold's and the students' portfolios reveals whose portfolio has the greatest reward associated with the risk.
 
   ```python
   # Calculate sharpe ratio
@@ -818,7 +949,7 @@ Walk through the solution and highlight the following:
   dtype: float64
   ```
 
-* `Sharpe ratios` can be visually represented with a bar chart. This allows users to easily see which investments have high and low sharpe ratios.
+* Sharpe ratios can be visually represented with a bar chart. This allows users to easily see which investments have high and low sharpe ratios.
 
   ```python
   # Plot
@@ -827,38 +958,44 @@ Walk through the solution and highlight the following:
 
   ![sharpe_plot.png](Images/sharpe_plot.png)
 
-Ask the students the following questions:
+Ask students the following questions:
 
 * How many smart investments did Harold make compared to risky investments? How many did you make?
 
-  ```
-  Out of his 10 investments, Harold only made 4 good investments. Out of the students' 6 investments, 3 of them were smart investments.
-  ```
+    **Answer:** Out of his 10 investments, Harold only made 4 good investments. Out of the students' 6 investments, 3 of them were smart investments.
 
 * Which cryptos are the smartest investment?
 
-  ```
-  DOGE, TRON, and XML are the smartest crypto investments.
-  ```
+    **Answer:** DOGE, TRON, and XML are the smartest crypto investments.
 
+Ask if there are any questions before moving on.
 - - -
 
-### 19. Decompress (5 mins)
+### 19. Instructor Do: Decompress and End Class (5 min)
+
+* [Congratulations Slide](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_392)
 
 Another battle won, another level completed. Students have been excelling at a quantum speed, and it's important they understand this. End the class with the following positive remarks:
 
-* Acknowledge that students have come far. Earlier in the week they were just learning how to use Pandas. Now they're using Pandas to analyze investment risk and predict smart investments.
+* Students have come so far. Earlier in the week they were just learning how to use Pandas. Now they're using Pandas to analyze investment risk and predict smart investments.
 
-* Emphasize that these skills are extremely applicable to the real world. Being able to programmatically combine and group data in order to perform financial analysis and calculate investment risk will go along way professionally and personally.
+* These skills are applicable to the real world. Being able to programmatically combine and group data in order to perform financial analysis and calculate investment risk will go a long way professionally and personally.
 
 Engage the students by asking how they plan to incorporate skills from today's lesson into their resumes and/or work lives. Two skills that should be highlighted are:
 
 * Data Engineering and Analysis
 
-  * Communicate that the activities students completed involving reading, cleaning, combining, grouping, aggregating, and analyzing multiple datasets is actual data engineering and analysis. Data Engineers and Data Analysts are completing these same tasks day to day.
+    * The activities completed today involved reading, cleaning, combining, grouping, aggregating, and analyzing multiple datasets; this is actual data engineering and analysis.
+
+    * Data engineers and data analysts complete these same tasks every day.
 
 * Financial Reporting and Visualization
 
-  * State that with the proper narrative and flow, the final activity could be used as a financial report. Students have calculated daily returns for investments and identified which investments are expected to produce the most reward and risk. They essentially have a report that presents findings on two portfolios and identifies which is a smarter investment. Underscore that this is a real world use case.
+    * The final activity presents a real-world use case. With the proper narrative and flow, the final activity could be used as a financial report.
+
+    * Students have calculated daily returns for investments and identified which investments are expected to produce the most reward and risk. They essentially have a report that presents findings on two portfolios and identifies the smarter investment.
 
 ### End Class
+
+- - -
+© 2019 Trilogy Education Services
