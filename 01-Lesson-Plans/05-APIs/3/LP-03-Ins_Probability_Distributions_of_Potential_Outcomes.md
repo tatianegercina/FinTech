@@ -1,6 +1,6 @@
 ### 3. Instructor Demo: Probability Distribution of Potential Outcomes (0:10 mins)
 
-Monte Carlo Simulations seek to explain the probability of potential outcomes for a randomly occuring event. Therefore, this activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like and how to interpret the results.
+Monte Carlo Simulations seek to explain the probability of potential outcomes for a randomly occurring event. Therefore, this activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like and how to interpret the results.
 
 **Files:**
 
@@ -8,31 +8,34 @@ Monte Carlo Simulations seek to explain the probability of potential outcomes fo
 
 Walk through the solution and highlight the following:
 
-* This solution represents a technical example to the Monto Carlo simulation use case presented in the previous activity (coin flip simulation). Therefore, the program flips a coin `10` times for `5` simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers (or ranges) of heads.
+* This solution represents a technical example to the Monte Carlo simulation use case presented in the previous activity (coin flip simulation). Therefore, the program flips a coin `10` times for `5` simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers (or ranges) of heads.
 
 * Make sure to import the `random` class from the `numpy` library which allows for randomizing a particular code process.
 
   ```python
   # Import libraries and dependencies
-  from numpy import random 
+  from numpy import random
   import pandas as pd
   %matplotlib inline
-  ``` 
+  ```
 
-* The `choice` function from the `random` class is used to randomly choose between the two outcomes of a coin: heads or tails. 
+* The `choice` function from the `random` class is used to randomly choose between the two outcomes of a coin: heads or tails.
 
   ```python
   # Print simulation iteration
   print(f"Running Simulation {n+1}...")
-    
+
   # Set an empty list to hold flip results
   flips = []
+
+  # Set probability of events
+  probability = [0.5, 0.5]
 
   # Flip the coin several times
   for i in range(num_flips):
       # Random int: 0 or 1
-      coin_flip = random.choice(coin)
-      
+      coin_flip = random.choice(coin, p=probability)
+
       # Print flip result
       print(f"  Flip {i+1}: {coin_flip}")
 
@@ -69,7 +72,7 @@ Walk through the solution and highlight the following:
 
       # Print simulation iteration
       print(f"Running Simulation {n+1}...")
-    
+
       # Set an empty list to hold flip results
       flips = []
 
@@ -77,7 +80,7 @@ Walk through the solution and highlight the following:
       for i in range(num_flips):
           # Random int: 0 or 1
           coin_flip = random.choice(coin)
-        
+
           # Print flip result
           print(f"  Flip {i+1}: {coin_flip}")
 
@@ -101,11 +104,11 @@ Walk through the solution and highlight the following:
 
 * Creating a DataFrame from the list of heads per simulation and using the `plot` function with the `kind` parameter set to `hist` produces a histogram that showcases the frequency distribution of landed heads.
 
-* Remember that a histogram is not a bar graph; frequency values in histogram bars are determined by the area (length * width) of the bar, not by the height of the bar. This is because histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single datapoint. The following histogram shows one can expect approximately `4` occurrences out of `5` simulations where total heads flipped were between `4-5`.
+* Remember that a histogram is not a bar graph; frequency values in histogram bars are determined by the area (length * width) of the bar, not by the height of the bar. This is because histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single data point. The following histogram shows one can expect approximately `4` occurrences out of `5` simulations where total heads flipped were between `4-5`.
 
   ![coin-flip-5-simulations](Images/coin-flip-5-simulations.png)
 
-* Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum datapoints provided. Sometimes this creates ranges deviating from what is being simulated. Therefore manually setting the `bins` parameter ensures that the histogram properly represents the edges of each bin, in this case bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`. 
+* Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum data points provided. Sometimes this creates ranges deviating from what is being simulated. Therefore manually setting the `bins` parameter ensures that the histogram properly represents the edges of each bin, in this case bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`.
 
   ![coin-flip-5-simulations-bins-off](Images/coin-flip-5-simulations-bins-off.png)
 
@@ -119,7 +122,7 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-100-simulations](Images/coin-flip-100-simulations.png)
 
-* Increasing the simulation count yet again to `1000` produces even more potential outcomes and should be considered even more reliable in the long-term. It can be seen that landing heads `5-6` times is the most likely outcome in the long-term. 
+* Increasing the simulation count yet again to `1000` produces even more potential outcomes and should be considered even more reliable in the long-term. It can be seen that landing heads `5-6` times is the most likely outcome in the long-term.
 
   ![coin-flip-1000-simulations](Images/coin-flip-1000-simulations.png)
 
