@@ -1,6 +1,6 @@
 ### 9. Students Do: Stock Price Forecasting (15 mins)
 
-In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical `TSLA` daily returns. 
+In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical `TSLA` daily returns.
 
 **Instructions:**
 
@@ -22,7 +22,7 @@ Open the solution and explain the following:
 
   ![missing-api-key](Images/missing-api-key.PNG)
 
-* The `get_historical_data` function in conjuntion with the `datetime` library pulls stock data from the `IEX Cloud` API using a dynamic datetime range. Specifically, `start_date` and `end_date` variables are not hard-coded.
+* The `get_historical_data` function in conjunction with the `datetime` library pulls stock data from the `IEX Cloud` API using a dynamic datetime range. Specifically, `start_date` and `end_date` variables are not hard-coded.
 
   ![datetime-range](Images/datetime-range.PNG)
 
