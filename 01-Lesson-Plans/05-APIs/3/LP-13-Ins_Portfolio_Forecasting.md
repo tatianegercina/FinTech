@@ -41,22 +41,22 @@ Walk through the solution and highlight the following:
       # Initialize the simulated prices list with the last closing price of `JNJ` and `MU`
       simulated_jnj_prices = [jnj_last_price]
       simulated_mu_prices = [mu_last_price]
-    
+
       # Simulate the returns for 252 days
       for i in range(num_trading_days):
-        
+
           # Calculate the simulated price using the last price within the list
           simulated_jnj_price = simulated_jnj_prices[-1] * (1 + np.random.normal(avg_daily_return_jnj, std_dev_daily_return_jnj))
           simulated_mu_price = simulated_mu_prices[-1] * (1 + np.random.normal(avg_daily_return_mu, std_dev_daily_return_mu))
-        
+
           # Append the simulated price to the list
           simulated_jnj_prices.append(simulated_jnj_price)
           simulated_mu_prices.append(simulated_mu_price)
-    
+
       # Append a simulated prices of each simulation to DataFrame
       simulated_price_df["JNJ prices"] = pd.Series(simulated_jnj_prices)
       simulated_price_df["MU prices"] = pd.Series(simulated_mu_prices)
-    
+
       # Calculate the daily returns of simulated prices
       simulated_daily_returns = simulated_price_df.pct_change()
   ```
