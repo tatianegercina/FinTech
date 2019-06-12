@@ -19,7 +19,7 @@ Walk through the solution and highlight the following:
   %matplotlib inline
   ```
 
-* The `choice` function from the `random` class is used to randomly choose between the two outcomes of a coin: heads or tails.
+* The `choice` function from the `random` class, combined with the `p` parameter for setting the probability of random events, is used to randomly choose between the two outcomes of a coin: heads or tails. Therefore in this case, the `p` parameter is set to `[0.5, 0.5]` to represent a `50%` chance of a coin landing on heads and a `50` chance of a coin landing on tails.
 
   ```python
   # Print simulation iteration
@@ -126,6 +126,6 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-1000-simulations](Images/coin-flip-1000-simulations.png)
 
-* Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve like nature to the probability of its potential outcomes. One in which probability is maximized at the middle of the distribution and decreases in probability as outcomes deviate left and right from the mean, otherwise known as the *mean* and *standard deviation*, respectively. This well-known phenomena is called the *normal distribution* or continous probability distribution of a range of potential outcomes.
+* Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve like nature to the probability of its potential outcomes. One in which probability is maximized at the middle of the distribution and decreases in probability as outcomes deviate left and right from the mean, otherwise known as the *mean* and *standard deviation*, respectively. This well-known phenomena is called the *normal distribution* or continuous probability distribution of a range of potential outcomes.
 
   ![normal-distribution](Images/normal-distribution.png)
