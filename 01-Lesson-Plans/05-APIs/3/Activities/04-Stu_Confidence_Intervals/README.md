@@ -20,7 +20,7 @@ Create a Monte Carlo simulation with `1000` simulations of `10` free throws to a
 
     * Create a nested for loop to loop through `10` free throws for every simulation of `1000` simulations.
 
-    * Use the `choice` function from the `random` class of the `numpy` library to randomly choose between the list elements `made` and `missed` of the `throw` list. Use the `p` parameter for the `choice` function to specify the probabilities of making a free throw and missing a free throw; set the `p` parameter to `[0.7,0.3]`.
+    * Use the `choice` function from the `random` class of the `numpy` library to randomly choose between the list elements `made` and `missed` of the `throw` list. Use the `p` parameter for the `choice` function to specify the probabilities of making a free throw and missing a free throw; set the `p` parameter to `[0.7, 0.3]`.
 
     * Append the results to the DataFrame, with each column set as the series of free throw results for every simulation.
 
