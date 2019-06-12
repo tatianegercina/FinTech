@@ -1,6 +1,6 @@
 ### 7. Instructor Demo: Simulation of Stock Price Trajectory (0:10 mins)
 
-This activity exemplifies the use case where a Monte Carlo simulation can be applied to a historical dataset such as daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution. Stock datasets will be pulled in from the IEX API and used to generate a Monte Carlo simulation based off of a normally distributed random process using the dataset's calculated average and standard deviation of daily returns.
+This activity exemplifies the use case where a Monte Carlo simulation can be applied to a historical data set such as daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution. Stock data sets will be pulled in from the IEX API and used to generate a Monte Carlo simulation based off of a normally distributed random process using the data set's calculated average and standard deviation of daily returns.
 
 **Files:**
 
@@ -14,7 +14,7 @@ Walk through the solution and highlight the following:
 
   ![example-normal-distribution](Images/example-normal-distribution.png)
 
-* The daily closing stock price data will be pulled using the `iexfinance` SDK that connects to the `iex` API. Therefore, make sure to import the necessary libraries and dependencies before proceeeding.
+* The daily closing stock price data will be pulled using the `iexfinance` SDK that connects to the `iex` API. Therefore, make sure to import the necessary libraries and dependencies before proceeding.
 
   ```python
   # Import libraries and dependencies
