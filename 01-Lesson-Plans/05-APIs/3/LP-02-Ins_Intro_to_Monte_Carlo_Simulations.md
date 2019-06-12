@@ -1,12 +1,12 @@
 ### 2. Instructor Do: Intro to Monte Carlo Simulations (10 mins)
 
-Ease students into the notion of Monte Carlo simluations by presenting the following questions and answers:
+Ease students into the notion of Monte Carlo simulations by presenting the following questions and answers:
 
 * What is a simulation?
 
-  > At its core, a simulation is a running instance of a model that seeks to emulate an existing process or system. 
+  > At its core, a simulation is a running instance of a model that seeks to emulate an existing process or system.
 
-* What is a Monte Carlo simluation?
+* What is a Monte Carlo simulation?
 
   > A Monte Carlo simulation is a specific type of simulation that uses probability and variables to predict the future potential outcomes of a randomly occurring process.
 
