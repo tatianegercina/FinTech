@@ -6,7 +6,7 @@ Present the following questions and answers regarding portfolio forecasting:
 
 * What is portfolio forecasting?
 
-  > Portfolio forecasting is the process of projecting the future performance of a portfolio and attempting to analyze its most probable outcome, or in this case, cumulative return as well as the portfolio's range of potential cumulative returns and their corresponding probabilities of occurring. 
+  > Portfolio forecasting is the process of projecting the future performance of a portfolio and attempting to analyze its most probable outcome, or in this case, cumulative return as well as the portfolio's range of potential cumulative returns and their corresponding probabilities of occurring.
 
 * How is portfolio forecasting done?
 
