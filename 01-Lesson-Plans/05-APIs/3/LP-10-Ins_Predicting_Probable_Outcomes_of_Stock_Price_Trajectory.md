@@ -1,6 +1,6 @@
 ### 10. Instructor Demo: Predicting Probable Outcomes of Stock Price Trajectory (0:10 mins)
 
-In this activity, students go one step further to produce not just a single potential price trajectory for a stock over the next `252` trading days, but many potential price trajectories. So that it's possible to analyze the probabilitiy distribution of where a stock's price can go, and therefore an interval to which confident predictions can be made regarding future stock price.
+In this activity, students go one step further to produce not just a single potential price trajectory for a stock over the next `252` trading days, but many potential price trajectories. So that it's possible to analyze the probability distribution of where a stock's price can go, and therefore an interval to which confident predictions can be made regarding future stock price.
 
 **Files:**
 
@@ -20,14 +20,14 @@ Walk through the solution and highlight the following:
 
       # Initialize the simulated prices list with the last closing price of AAPL
       simulated_aapl_prices = [aapl_last_price]
-    
+
       # Simulate the returns for 252 days
       for i in range(num_trading_days):
           # Calculate the simulated price using the last price within the list
           simulated_price = simulated_aapl_prices[-1] * (1 + np.random.normal(avg_daily_return, std_dev_daily_return))
           # Append the simulated price to the list
           simulated_aapl_prices.append(simulated_price)
-    
+
       # Append a simulated prices of each simulation to DataFrame
       simulated_price_df[f"Simulation {n+1}"] = pd.Series(simulated_aapl_prices)
 
@@ -47,6 +47,6 @@ Walk through the solution and highlight the following:
 
   ![stock-price-confidence-interval](Images/stock-price-confidence-interval.PNG)
 
-* Multiplying an initial investment of `$10,000` by the percentage change in stock price for the lower and upper bounds of the `95%` confidence interval produces a confidence interval in terms of investment. 
+* Multiplying an initial investment of `$10,000` by the percentage change in stock price for the lower and upper bounds of the `95%` confidence interval produces a confidence interval in terms of investment.
 
   ![stock-price-investment-confidence-interval](Images/stock-price-investment-confidence-interval.PNG)
