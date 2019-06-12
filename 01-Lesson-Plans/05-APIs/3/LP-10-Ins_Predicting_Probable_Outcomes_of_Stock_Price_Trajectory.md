@@ -12,7 +12,7 @@ Walk through the solution and highlight the following:
 
   ![multiple-stock-simulation](Images/multiple-stock-simulation.PNG)
 
-* The following code snippet contains the core of the Monte Carlo simulation and the process of stock price forecasting. For every simulation, the program runs `252` iterations of stock price growth by multiplying each preceding trading day's closing price by a randomly selected daily return based off of a normal probability distribution of `AAPL` daily returns, derived from it's average daily return value (mean) and its volatility (standard deviation). The results of each simulation are then added as a column to a DataFrame.
+* The following code snippet contains the core of the Monte Carlo simulation and the process of stock price forecasting. For every simulation, the program runs `252` iterations of stock price growth by multiplying each preceding trading day's closing price `simulated_aapl_prices[-1]` by a randomly selected daily return based off of a normal probability distribution of `AAPL` daily returns, derived from it's average daily return value (mean) and its volatility (standard deviation) `(1 + np.random.normal(avg_daily_return, std_dev_daily_return)`. The results of each simulation are then added as a column to a DataFrame.
 
   ```python
   # Run the simulation of projecting stock prices for the next trading year, `1000` times
