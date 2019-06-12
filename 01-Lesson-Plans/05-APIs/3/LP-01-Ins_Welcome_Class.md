@@ -4,26 +4,26 @@
 
 ### Overview
 
-Today's class will focus on the notion of using Monte Carlo simulations to forecast future results and make confident predictions supported by statistical evidence. Monte Carlo simulations are an important tool in emulating a real-world use case that involves a degree of randomness surrounding an event or outcome, and seeks to iterate `n` number of times to find the most probable result of a variable event.
+Today's class will focus on the notion of using Monte Carlo simulations to forecast future results and make confident predictions supported by statistical evidence. Monte Carlo simulations are an important tool in emulating a real-world use case that involves a degree of randomness surrounding an event or outcome, and seeks to iterate `n` number of times to find the most probable result of a variable event as well as the range of results and their corresponding probabilities of occurring.
 
-In particular, stocks prices also tend to move somewhat randomly in such a way that there are varying probabilities to where the price may go or deviate from its average return (daily, weekly, monthly). Therefore, this lesson will teach students how to apply the concept of Monte Carlo simulations to predict future stock prices and therefore forecast the potential stocks returns of an initial investment, either as a single stock investment or as an investment in a stock portfolio.  
+In particular, stocks prices also tend to move somewhat randomly in such a way that there are varying probabilities to where the price may go or deviate from its average return (daily, weekly, monthly). Therefore, this lesson will teach students how to apply the concept of Monte Carlo simulations to predict future stock prices and therefore forecast the potential stocks returns of an initial investment, either as a single stock investment or as an investment in a portfolio.  
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Define what a simulation is and why it's used				
-* Deconstruct the components of the Monte Carlo Simulation process: probability distributions and iterations				
-* Interpret probability distributions (normal/bell curve) and random number generators				
-* Comprehend the use of confidence intervals and what they suggest				
-* Implement a single Monte Carlo Simulation on the future price of a stock				
-* Execute multiple Monte Carlo Simulations on the future price of stock				
-* Break down Portfolio Forecasting in the context of Monte Carlo Simulations: portfolio weights, asset class composition, and future stock price variations				
-* Implement multiple Monto Carlo Simulations on the returns of a stock portfolio				
+* Define what a simulation is and why it's used.
+* Deconstruct the components of the Monte Carlo Simulation process: probability distributions and iterations.
+* Interpret probability distributions (normal/bell curve) and random number generators.
+* Comprehend the use of confidence intervals and what they suggest.
+* Implement a single Monte Carlo simulation on the future price trajectory of a stock.
+* Execute multiple Monte Carlo simulations on the future price trajectories of a stock.
+* Break down Portfolio Forecasting in the context of Monte Carlo Simulations on stock price trajectories and portfolio returns.
+* Implement multiple Monte Carlo simulations on the potential returns of a stock portfolio.
 
 ### Instructor Notes
 
-* Today's lesson deals heavily with statistical concepts, particularly probability. Try to be as clear as possible and be mindful of students who may become easily confused as this lesson will surely push the boundaries of most students' comfort levels when it comes to statistics. 
+* Today's lesson deals heavily with statistical concepts, particularly probability. Try to be as clear as possible and be mindful of students who may become easily confused as this lesson will surely push the boundaries of most students' comfort levels when it comes to statistics.
 
 * When overviewing the concept of probability distributions, also make sure to stress the notion of randomness. Probability merely implies that there is a chance that a specific result or event may occur but makes no guarantees, which is why results can differ with each iteration.
 
@@ -43,9 +43,9 @@ By the end of class, students will be able to:
 
 Welcome students to the third day of APIs! Cover the following points:
 
-* The previous lessons focused on API calls and showcased the Plaid API to exemplify that students can leverage the power of external datasets and functionality. Today students will combine what they've learned so far on using APIs to pull in stock data and forecast single stock/portfolio returns using Monte Carlo simulations.
+* The previous lessons focused on API calls and showcased the Plaid API to exemplify that students can leverage the power of external data sets and functionality. Today students will combine what they've learned so far on using APIs to pull in stock data and forecast single stock/portfolio returns using Monte Carlo simulations.
 
-* Mention to the class that today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. Students should feel empowered as they are learning the ways in which they can use other curated datasets to analyze and generate insights on their own.
+* Mention to the class that today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. Students should feel empowered as they are learning the ways in which they can use other curated data sets to analyze and generate insights on their own.
 
 * Students should be prepared to push their mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.  
 
