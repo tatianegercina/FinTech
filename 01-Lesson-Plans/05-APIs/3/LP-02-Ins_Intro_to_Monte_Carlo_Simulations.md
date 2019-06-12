@@ -8,11 +8,15 @@ Ease students into the notion of Monte Carlo simluations by presenting the follo
 
 * What is a Monte Carlo simluation?
 
-  > A Monte Carlo simulation is a specific type of simulation that uses probability and variables to predict the future potential outcomes of a randomly occurring process; Monte Carlo simulations are used to understand the risk of uncertainty in prediction and forecasting models.
+  > A Monte Carlo simulation is a specific type of simulation that uses probability and variables to predict the future potential outcomes of a randomly occurring process.
 
 * What is probability?
 
   > The chance of an event happening. For example, the chance of a coin landing on heads is `50%`.
+
+* Why use Monte Carlo simulations?
+
+  > Monte Carlo simulations provide a method of testing the range of values and corresponding probabilities that a random process can generate over time -- specifically, how far results may deviate from the expected average. Monte Carlo simulations help to understand the risk of uncertainty in prediction and forecasting models.
 
 * What would be an example of a Monte Carlo simulation?
 
