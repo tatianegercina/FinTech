@@ -16,7 +16,7 @@ Ease students into the notion of Monte Carlo simluations by presenting the follo
 
 * Why use Monte Carlo simulations?
 
-  > Monte Carlo simulations provide a method of testing the range of values and corresponding probabilities that a random process can generate over time -- specifically, how far results may deviate from the expected average. Monte Carlo simulations help to understand the risk of uncertainty in prediction and forecasting models.
+  > Monte Carlo simulations provide a method of testing the range of values and corresponding probabilities that a random process can generate over time -- specifically, how far results may deviate from the expected average. Monte Carlo simulations help to understand the risk of uncertainty in prediction and forecasting models, which are particularly helpful when dabbling in the domain of capital investments and stock price uncertainty!
 
 * What would be an example of a Monte Carlo simulation?
 
