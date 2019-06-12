@@ -36,7 +36,7 @@ Open the solution and explain the following:
 
       # Print simulation iteration
       print(f"Running Simulation {n+1}...")
-    
+
       # Set an empty list to hold throw results
       throws = []
 
@@ -45,7 +45,7 @@ Open the solution and explain the following:
           # Randomly choose between `made` and `missed` with a `70%` chance to 
           # make the throw and a `30%` chance the throw is missed
           free_throw = random.choice(throw, p=[0.7, 0.3])
-        
+
           # Print throw result
           print(f"  Throw {i+1}: {free_throw}")
 
@@ -78,6 +78,3 @@ Open the solution and explain the following:
 * The probability distribution of free throws made will change slightly with every run of the program; however, in this current run, the probability distribution shows that the likelihood of the player making `9-10` shots in a single session is approximately `15%`.
 
   ![free-throws-probability-distribution-focus](Images/free-throws-probability-distribution-focus.png)
-
-
-
