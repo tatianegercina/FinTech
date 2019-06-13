@@ -8,9 +8,11 @@ In this activity, students are introduced to confidence intervals, which in the 
 
 Walk through the solution and highlight the following:
 
-* In the context of general statistics, a confidence interval is a value range of a frequency distribution that contains a specific percentage of the overall sample (or data set). For example, a `95%` confidence interval would be a range of values of which `95%` of all data points in the sample are contained. The image below expresses the x-axis as the range of values that deviate from the mean (standard deviation).
+* Often times in statistics, there is a disconnect between the results of a sample dataset and attempting to imply the results of a sample to the overall population. For example, analyzing the average height of `20` students at a school to assume the average height of the entire population of students at the school would be an erroneous assumption. Therefore, confidence intervals suggest a range of values where there is a `X%` chance that the true expected value would lie within the specified range. In this case, a `95%` confidence interval may suggest that there is a `95%` chance that the true average height of students would range in height between `4` ft and `6 ft`, or in other words, the `95%` of the expected height of students should lie within the range of `4` ft and `6 ft`.
 
   ![confidence-interval-probability-distribution](Images/confidence-interval-probability-distribution.png)
+
+* There is a tradeoff between the confidence, or likelihood of occurrence, of the expected result and the range of the upper and lower bounds of the confidence interval; the `X%` of the confidence interval suggests how wide or narrow the value range is. A `90%` confidence interval will have a narrower range, and therefore is less confident than a `95%` confidence interval with a larger range.
 
 * In the context of Monte Carlo simulations, a confidence interval is a value range of a frequency distribution that contains a specific percentage of all potential outcomes. For example, a `90%` confidence interval would be a range of values of which `90%` of all potential outcomes of the Monte Carlo simulation are contained. Therefore, confidence intervals used with frequency distributions of Monte Carlo simulations calculate the range of potential outcomes and their probabilities of occurring. For example, one could analyze the frequency distribution of potential stock price trajectories and determine that "there is a `90%` chance that the stock price will be between `$10` and `$20` next week."
 
