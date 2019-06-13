@@ -8,13 +8,13 @@ In this activity, students execute a Monte Carlo simulation to forecast the many
 
 **Files:**
 
-* [probable_stock_price_forecasting.ipynb](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Unsolved/probable_stock_price_forecasting.ipynb)
+* [financial_forecasting_part_2.ipynb](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Unsolved/financial_forecasting_part_2.ipynb)
 
 ### 11. Instructor Do: Review Probable Stock Price Forecasting (5 mins)
 
 **Files:**
 
-* [probable_stock_price_forecasting.ipynb](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Solved/probable_stock_price_forecasting.ipynb)
+* [financial_forecasting_part_2.ipynb](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Solved/financial_forecasting_part_2.ipynb)
 
 Open the solution and explain the following:
 
