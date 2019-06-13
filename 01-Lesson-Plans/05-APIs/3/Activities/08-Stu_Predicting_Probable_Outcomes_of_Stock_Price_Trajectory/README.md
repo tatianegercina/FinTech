@@ -1,13 +1,17 @@
-# Probable Stock Price Forecasts
+# Financial Forecasting Part II
 
-In this activity, Harold was praised for his projection of `TSLA` stock price over the next `3` trading years; however, now his manager wants to investigate deeper and ask the following questions:
+In this three-part activity, Harold was praised for his projection of `TSLA` stock price over the next `3` trading years; however, now his manager wants to investigate deeper and ask the following questions:
 
   * What are the probabilities of `20` ranges (or bins) that `TSLA` stock price could end up?
   * What range of ending stock price are we `95%` certain that `TSLA` stock price will result in?
 
 Help Harold by creating a Monte Carlo simulation that performs `1000` simulations of `TSLA` stock over the next `252 * 3` trading days using one year's worth of `TSLA` stock data to perform a normally distributed random selection based on the sample mean and standard deviation of historical `TSLA` daily returns. Plot the frequency and probability distribution of `20` bins/ranges of simulated ending prices for `TSLA` stock over the next `3` years and determine the `95%` confidence interval of ending `TSLA` prices.
 
-## Instructions
+## Part I Instructions: Stock Price Forecasting
+
+You completed this in the last activity, nice job!
+
+## Part II Instructions: Probable Stock Price Forecasts
 
 * Using the starter file provided, walk through the following steps.
 
@@ -28,6 +32,10 @@ Help Harold by creating a Monte Carlo simulation that performs `1000` simulation
   * Plot the probability distribution histogram of `20` bins of `TSLA` stock price outcomes and mark the upper and lower bounds of the `95%` confidence interval.
 
   * Calculate the cumulative return of the lower and upper bounds of `TSLA` stock prices to determine the percentage change of stock price from the first simulated trading day to the last. Multiply `$10,000` by the cumulative returns of the lower and upper bounds to calculate a `95%` confidence interval in terms of a `$10,000` investment based on the simulated `TSLA` stock performance.
+
+## Part III Instructions: Portfolio Forecasting
+
+Almost there! Get ready!
 
 ## Hints
 
