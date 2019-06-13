@@ -43,29 +43,6 @@ Walk through the solution and highlight the following:
     simulated_price_df[f"Simulation {n+1}"] = pd.Series(simulated_aapl_prices)
     ```
 
-* The following code snippet contains the core of the Monte Carlo simulation and the process of stock price forecasting. For every simulation, the program runs `252` iterations of stock price growth by multiplying each preceding trading day's closing price `simulated_aapl_prices[-1]` by a randomly selected daily return based off of a normal probability distribution of `AAPL` daily returns, derived from it's average daily return value (mean) and its volatility (standard deviation) `(1 + np.random.normal(avg_daily_return, std_dev_daily_return)`. The results of each simulation are then added as a column to a DataFrame.
-
-  ```python
-  # Run the simulation of projecting stock prices for the next trading year, `1000` times
-  for n in range(num_simulations):
-
-      # Initialize the simulated prices list with the last closing price of AAPL
-      simulated_aapl_prices = [aapl_last_price]
-
-      # Simulate the returns for 252 days
-      for i in range(num_trading_days):
-          # Calculate the simulated price using the last price within the list
-          simulated_price = simulated_aapl_prices[-1] * (1 + np.random.normal(avg_daily_return, std_dev_daily_return))
-          # Append the simulated price to the list
-          simulated_aapl_prices.append(simulated_price)
-
-      # Append a simulated prices of each simulation to DataFrame
-      simulated_price_df[f"Simulation {n+1}"] = pd.Series(simulated_aapl_prices)
-
-  # Print head of DataFrame
-  simulated_price_df.head()
-  ```
-
 * The plot of the DataFrame containing the `1000` simulations of `252` trading day price records showcases the potential pathways that a stock price can take.
 
   ![multiple-stock-simulation-plot](Images/multiple-stock-simulation-plot.PNG)
