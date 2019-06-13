@@ -12,6 +12,37 @@ Walk through the solution and highlight the following:
 
   ![multiple-stock-simulation](Images/multiple-stock-simulation.PNG)
 
+  * The outer loop controls the total number of simulations. The more simulations that we have, the more accurate the model.
+
+    ```python
+    for n in range(num_simulations):
+    ```
+
+  * For each simulation run, the calculations for stock price growth are based on the last known closing price. The simulation will then vary the data from this starting point to see how the data might change in the future.
+
+    ```python
+    simulated_aapl_prices = [aapl_last_price]
+    ```
+
+  * The inner loop determines how many future days of stock prices we are simulating. In this case, we are simulating the returns for `252` trading days.
+
+    ```python
+    for i in range(num_trading_days):
+    ```
+
+  * We can use `random.normal` function from the `numpy` library to simulate future stock price growth and fluctuations by using its historical average daily return and volatility. Future stock price growth is calculated by multiplying each preceding trading day's closing price by a randomly selected daily return based off of a normal probability distribution of `AAPL` daily returns, derived from it's historical average daily return value (mean) and its volatility (standard deviation).
+
+    ```python
+    simulated_price = simulated_aapl_prices[-1] * (1 + np.random.normal(avg_daily_return, std_dev_daily_return))
+    simulated_aapl_prices.append(simulated_price)
+    ```
+
+  * After each inner loop runs, we add all of the simulated daily returns as a new column to the Monte Carlo DataFrame.
+
+    ```python
+    simulated_price_df[f"Simulation {n+1}"] = pd.Series(simulated_aapl_prices)
+    ```
+
 * The following code snippet contains the core of the Monte Carlo simulation and the process of stock price forecasting. For every simulation, the program runs `252` iterations of stock price growth by multiplying each preceding trading day's closing price `simulated_aapl_prices[-1]` by a randomly selected daily return based off of a normal probability distribution of `AAPL` daily returns, derived from it's average daily return value (mean) and its volatility (standard deviation) `(1 + np.random.normal(avg_daily_return, std_dev_daily_return)`. The results of each simulation are then added as a column to a DataFrame.
 
   ```python
