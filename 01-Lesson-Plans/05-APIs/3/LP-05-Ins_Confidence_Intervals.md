@@ -10,7 +10,7 @@ Walk through the solution and highlight the following:
 
 * In the context of general statistics, a confidence interval is a value range of a frequency distribution that contains a specific percentage of the overall sample (or data set). For example, a `95.44%` confidence interval would be a range of values of which `95.44%` of all data points in the sample are contained. The image below expresses the x-axis as the number of standard deviations away from the mean, and the corresponding percentage of data points that would fall within each range.
 
-  ![confidence-interval-frequency-distribution](Images/confidence-interval-frequency-distribution.png)
+  ![confidence-interval-probability-distribution](Images/confidence-interval-probability-distribution.png)
 
 * In the context of Monte Carlo simulations, a confidence interval is a value range of a frequency distribution that contains a specific percentage of all potential outcomes. For example, a `90%` confidence interval would be a range of values of which `90%` of all potential outcomes of the Monte Carlo simulation are contained. Therefore, confidence intervals used with frequency distributions of Monte Carlo simulations calculate the range of potential outcomes and their probabilities of occurring. For example, one could analyze the frequency distribution of potential stock price trajectories and determine that "there is a `90%` chance that the stock price will be between `$10` and `$20` next week."
 
