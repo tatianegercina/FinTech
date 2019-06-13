@@ -10,15 +10,15 @@ Upper management wants answers to the following questions:
 
 Use the `pandas` library to help simulate the cumulative returns of a `25-75` weighted `TSLA-SPHD` portfolio over the next `3` trading years (`252 * 3` trading days).
 
-## Part I Instructions
+## Part I Instructions: Stock Price Forecasting
 
 You completed this already, nice job!
 
-## Part II Instructions
+## Part II Instructions: Probable Stock Price Forecasts
 
 You completed this in the last activity, you're killin it!
 
-## Part III Instructions
+## Part III Instructions: Portfolio Forecasting
 
 Using the starter file provided, pick up where part II left off and walk through the following steps:
 
