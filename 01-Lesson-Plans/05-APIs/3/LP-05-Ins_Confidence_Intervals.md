@@ -8,7 +8,7 @@ In this activity, students are introduced to confidence intervals, which in the 
 
 Walk through the solution and highlight the following:
 
-* In the context of general statistics, a confidence interval is a value range of a frequency distribution that contains a specific percentage of the overall sample (or data set). For example, a `95.44%` confidence interval would be a range of values of which `95.44%` of all data points in the sample are contained. The image below expresses the x-axis as the number of standard deviations away from the mean, and the corresponding percentage of data points that would fall within each range.
+* In the context of general statistics, a confidence interval is a value range of a frequency distribution that contains a specific percentage of the overall sample (or data set). For example, a `95%` confidence interval would be a range of values of which `95%` of all data points in the sample are contained. The image below expresses the x-axis as the range of values that deviate from the mean (standard deviation).
 
   ![confidence-interval-probability-distribution](Images/confidence-interval-probability-distribution.png)
 
