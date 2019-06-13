@@ -8,13 +8,13 @@ In this activity, students execute a Monte Carlo simulation to forecast stock pr
 
 **Files:**
 
-* [stock_price_forecasting.ipynb](Activities/06-Stu_Simulation_of_Stock_Price_Trajectory/Unsolved/stock_price_forecasting.ipynb)
+* [financial_forecasting_part_1.ipynb](Activities/06-Stu_Simulation_of_Stock_Price_Trajectory/Unsolved/financial_forecasting_part_1.ipynb)
 
 ### 10. Instructor Do: Review Stock Price Forecasting (5 mins)
 
 **Files:**
 
-* [stock_price_forecasting.ipynb](Activities/04-Stu_Simulation_of_Stock_Price_Trajectory/Solved/stock_price_forecasting.ipynb)
+* [financial_forecasting_part_1.ipynb](Activities/04-Stu_Simulation_of_Stock_Price_Trajectory/Solved/financial_forecasting_part_1.ipynb)
 
 Open the solution and explain the following:
 
