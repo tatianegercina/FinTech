@@ -1,10 +1,10 @@
-# Stock Price Forecasting
+# Financial Forecasting Part I
 
 In this three-part activity, Harold's manager wants Harold to take a look at one year's worth of `TSLA` stock prices and plot a potential stock trajectory for where `TSLA` stock prices could go in the next `3` years. In addition, he would like to know how a `$10,000` investment would perform given the simulated results.
 
 Help Harold by creating a Monte Carlo simulation that simulates the next `252 * 3` trading days using one year's worth of `TSLA` stock data to perform a normally distributed random selection based on the sample mean and standard deviation of historical `TSLA` daily returns. Plot the simulated results of `TSLA` stock prices over the next `3` years as well as the corresponding cumulative returns.
 
-## Part I Instructions
+## Part I Instructions: Stock Price Forecasting
 
 * Using the starter file provided, walk through the following steps.
 
@@ -34,11 +34,11 @@ Help Harold by creating a Monte Carlo simulation that simulates the next `252 * 
 
     * Plot the cumulative profits/losses for a `$10,000` investment in TSLA given the simulated cumulative returns. 
 
-## Part II Instructions
+## Part II Instructions: Probable Stock Price Forecasts
 
 You'll complete this in the next student activity! Get ready!
 
-## Part III Instructions
+## Part III Instructions: Portfolio Forecasting
 
 The final culminating activity, by this point you'll be stock price fortune tellers!
 
