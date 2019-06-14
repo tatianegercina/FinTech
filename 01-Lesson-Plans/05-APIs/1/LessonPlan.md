@@ -609,7 +609,7 @@ Open the solution and conduct a dry walkthrough review, highlighting the followi
 
 - - -
 
-### 14. BREAK
+### 14. BREAK (15 mins)
 
 - - -
 
