@@ -10,7 +10,11 @@ Welcome students to the second day of APIs by highlighting the following talking
 
 * Communicate that today's lesson will be a continuation of the last session; however, there will be more emphasis and focus on using FinTech APIs in a practical manner.
 
-* Underscore that practical APIs work just like the fun APIs (i.e. Python BlackJack). A client submits a request, and a server responds.
+* Underscore that practical APIs work just like the fun APIs (i.e. Python BlackJack). A client submits a request, and a server responds. Ask the students a quick refresher question:
+
+    **Question** What is the name or conceptual phrase for this interaction/relationship between a client and an API.
+
+    **Answer** Client-server model.
 
 * There are a number of FinTech APIs available that grant users the ability to create and execute analytic pipelines on various forms of financial data.
 
