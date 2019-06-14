@@ -1,14 +1,16 @@
 ### 1. Instructor Do: Welcome Class (5 mins)
 
-Day 2 takes students to the next step in using APIs. Students will transition from using the Python HTTP library to using SDKs. The instructor will briefly introduce students to SDKs, using Paywall and PLAID as examples. Students need to understand the basics of API authentication, practices to keep financial data and user credentials secure, and the process of acquiring and using API keys. By the end of the day, students will have skillfully and securely leveraged the PLAID API for financial analysis. This will prepare them for using APIs to securely perform real-world portfolio return analysis and portfolio simulation with market and personal financial data during Day 3.
+Day 2 takes students to the next step in using APIs. Students will transition from using the Python HTTP library to using SDKs that provide practical use cases for FinTech analysis.
 
-* **Files:**
+**Files:**
 
-  * [welcome-slides]()
+* [welcome-slides]()
 
 Welcome students to the second day of APIs by highlighting the following talking points:
 
 * Communicate that today's lesson will be a continuation of the last session; however, there will be more emphasis and focus on using FinTech APIs in a practical manner.
+
+* Underscore that practical APIs work just like the fun APIs (i.e. Python BlackJack). A client submits a request, and a server responds.
 
 * There are a number of FinTech APIs available that grant users the ability to create and execute analytic pipelines on various forms of financial data.
 
