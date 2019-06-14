@@ -53,7 +53,7 @@ Welcome students to the third day of APIs! Cover the following points:
 
 ---
 
-### 2. Instructor Do: Intro to Monte Carlo Simulations (10 mins)
+### 2. Instructor Do: Intro to Monte Carlo Simulations (0:10 mins)
 
 Ease students into the notion of Monte Carlo simulations by presenting the following questions and answers:
 
@@ -237,7 +237,7 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 4. Students Do: Free Throw Simulation (15 mins)
+### 4. Students Do: Free Throw Simulation (0:15 mins)
 
 In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of free throws made (out of 10 shots) for a player with a `70%` accuracy and determine the likelihood of the player making `9-10` free throws in a single session.
 
@@ -249,7 +249,7 @@ In this activity, students execute a Monte Carlo simulation to analyze the proba
 
 * [free_throw_simulation.ipynb](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes/Unsolved/free_throw_simulation.ipynb)
 
-### 5. Instructor Do: Review Free Throw Simulation (5 mins)
+### 5. Instructor Do: Review Free Throw Simulation (0:05 mins)
 
 **Files:**
 
@@ -356,7 +356,7 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 7. Students Do: Archery Target Hits (15 mins)
+### 7. Students Do: Archery Target Hits (0:15 mins)
 
 In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of potential hits (out of `5` shots) of a target for a beginner archer with a `20%` accuracy and determine the range of hits for the archer that has a `95%` chance of happening in a single session.
 
@@ -368,7 +368,7 @@ In this activity, students execute a Monte Carlo simulation to analyze the proba
 
 * [archery_target_hits.ipynb](Activities/04-Stu_Confidence_Intervals/Unsolved/archery_target_hits.ipynb)
 
-### 8. Instructor Do: Review Free Throw Simulation (5 mins)
+### 8. Instructor Do: Review Free Throw Simulation (0:05 mins)
 
 **Files:**
 
@@ -470,7 +470,7 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 10. Students Do: Stock Price Forecasting (15 mins)
+### 10. Students Do: Stock Price Forecasting (0:15 mins)
 
 In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical `TSLA` daily returns.
 
@@ -482,7 +482,7 @@ In this activity, students execute a Monte Carlo simulation to forecast stock pr
 
 * [financial_forecasting_part_1.ipynb](Activities/06-Stu_Simulation_of_Stock_Price_Trajectory/Unsolved/financial_forecasting_part_1.ipynb)
 
-### 11. Instructor Do: Review Stock Price Forecasting (5 mins)
+### 11. Instructor Do: Review Stock Price Forecasting (0:05 mins)
 
 **Files:**
 
@@ -577,7 +577,11 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 13. Students Do: Probable Stock Price Forecasting (15 mins)
+### 13. BREAK (0:40 mins)
+
+---
+
+### 14. Students Do: Probable Stock Price Forecasting (0:15 mins)
 
 In this activity, students execute a Monte Carlo simulation to forecast the many different possibilities of simulated stock price trajectories, thereby analyzing the frequency/probability of potential `TSLA` stock price outcomes.
 
@@ -589,7 +593,7 @@ In this activity, students execute a Monte Carlo simulation to forecast the many
 
 * [financial_forecasting_part_2.ipynb](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Unsolved/financial_forecasting_part_2.ipynb)
 
-### 14. Instructor Do: Review Probable Stock Price Forecasting (5 mins)
+### 15. Instructor Do: Review Probable Stock Price Forecasting (0:05 mins)
 
 **Files:**
 
@@ -627,7 +631,7 @@ Open the solution and explain the following:
 
 ---
 
-### 15. Instructor Do: Intro to Portfolio Forecasting (10 mins)
+### 16. Instructor Do: Intro to Portfolio Forecasting (0:10 mins)
 
 At this point, students have executed Monte Carlo simulations, learned to interpret frequency distributions, probability distributions, confidence intervals, and realized how to apply Monte Carlo simulations to forecast the future prices (and corresponding returns) of individual stocks. Now, students will take their journey one step further and learn how to apply Monte Carlo simulations to forecast the returns of a portfolio, which can be comprised of either all stocks or a combination of multiple asset classes such as stocks and bonds.
 
@@ -653,7 +657,7 @@ Ask the students if they have any questions or concerns before moving on.
 
 ---
 
-### 16. Instructor Demo: Portfolio Forecasting (0:10 mins)
+### 17. Instructor Demo: Portfolio Forecasting (0:10 mins)
 
 In this activity, students ascend to the final step and learn to project not one, but many, future stock prices using Monte Carlo simulations to calculate the daily/cumulative returns of a multi-weighted portfolio. Then analyze and plot the frequency and probability distributions of potential ending cumulative returns to assess the investment risk of the portfolio.
 
@@ -756,7 +760,7 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 17. Students Do: Financial Forecasting Part III (15 mins)
+### 18. Students Do: Financial Forecasting Part III (0:15 mins)
 
 In this activity, students execute a Monte Carlo simulation to forecast the potential ranges of cumulative returns for a portfolio, based on the simulated closing prices of the stocks that comprise it, to determine the investment risk of the portfolio.
 
@@ -768,7 +772,7 @@ In this activity, students execute a Monte Carlo simulation to forecast the pote
 
 * [financial_forecasting_part_3.ipynb](Activities/10-Stu_Portfolio_Forecasting/Unsolved/financial_forecasting_part_3.ipynb)
 
-### 18. Instructor Do: Review Financial Forecasting Part III (5 mins)
+### 19. Instructor Do: Review Financial Forecasting Part III (0:05 mins)
 
 **Files:**
 
@@ -842,6 +846,22 @@ Open the solution and explain the following:
 * Calculating a `95%` confidence interval of potential cumulative portfolio returns as well as potential investment performance showcases the range of cumulative portfolio returns and investment results that have a `95%` likelihood of occurring.
 
   ![portfolio-confidence-interval](Images/portfolio-confidence-interval.png)
+
+### 20. Instructor Do: Structured Office Hours (30 mins)
+
+Please use the entire office hours time to review questions with the students.
+
+Suggested Format:
+
+* Ask students for specific activities to revisit.
+
+* Revisit key activities for the homework.
+
+* Allow students to start the homework with extra TA support.
+
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
+
+### End Class
 
 ---
 
