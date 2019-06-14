@@ -211,7 +211,7 @@ Walk through the solution and highlight the following:
 
   ![coin-flip-5-simulations](Images/coin-flip-5-simulations.png)
 
-* Remember that a histogram is not a bar graph; frequency values in histogram bars are determined by the area (length * width) of the bar, not by the height of the bar. This is because histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single data point. The following histogram shows one can expect approximately `4` occurrences out of `5` simulations where total heads flipped were between `4-5`.
+* Remember that a histogram is not a bar graph; frequency values in histogram bars are determined by the area (length * width) of the bar, not by the height of the bar. This is because histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single data point.
 
 * Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum data points provided. Sometimes this creates ranges deviating from what is being simulated. Therefore manually setting the `bins` parameter ensures that the histogram properly represents the edges of each bin, in this case bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`.
 
