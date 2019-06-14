@@ -64,6 +64,9 @@ Walk through the solution and highlight the following:
   # Set a list object acting as a coin: heads or tails
   coin = ["heads", "tails"]
 
+  # Set probability of events
+  probability = [0.5, 0.5]
+
   # Create an empty DataFrame to hold simulation results
   monte_carlo = pd.DataFrame()
 
@@ -71,18 +74,19 @@ Walk through the solution and highlight the following:
   for n in range(num_simulations):
 
       # Print simulation iteration
-      print(f"Running Simulation {n+1}...")
-
+      # print(f"Running Simulation {n+1}...")
+    
       # Set an empty list to hold flip results
       flips = []
 
       # Flip the coin several times
       for i in range(num_flips):
+        
           # Random int: 0 or 1
-          coin_flip = random.choice(coin)
-
+          coin_flip = random.choice(coin, p=probability)
+        
           # Print flip result
-          print(f"  Flip {i+1}: {coin_flip}")
+          # print(f"  Flip {i+1}: {coin_flip}")
 
           # Append flip result to list
           flips.append(coin_flip)
@@ -94,13 +98,31 @@ Walk through the solution and highlight the following:
   monte_carlo
   ```
 
-* Leveraging the `value_counts` function via the Pandas DataFrame allows for counting the occurrences of the different heads-to-tails combinations of every simulation.
+* Looping through the DataFrame containing the coin flip results while leveraging the `value_counts` function allows for counting the occurrences of the different heads-to-tails combinations of every simulation.
 
   ![coin-flip-value-counts](Images/coin-flip-value-counts.png)
 
-* Performing a `value_counts` function on every column (or simulation) in the DataFrame and specifying the `heads` key of the returned Series object produces a list of landed heads per simulation.
+* The conditional statements check to make sure that both the `heads` and `tails` keys are present in the Series object returned from the `value_counts` function. If one or the other key is not present, the missing key gets a `0` to account for the fact that the event did not occurr at all during the simulation (flipped 10 heads or flipped 10 tails).
 
-  ![coin-flip-value-counts-key](Images/coin-flip-value-counts-key.png)
+  ```python
+  # Append results of heads and tails to respective lists
+  # If `heads` and `tails key is present in the Series, append both results
+  if 'heads' in value_count.index and 'tails' in value_count.index:
+      heads.append(value_count['heads'])
+      tails.append(value_count['tails'])
+        
+  # If `heads` key is not present in the Series, append heads list with 0
+  # And append tails list with tails result (simulation must have returned all tails)
+  elif 'heads' not in value_count.index:
+      heads.append(0)
+      tails.append(value_count['tails'])
+        
+  # If `tails` key is not present in the Series, append tails list with 0
+  # And append heads list with heads result (simulation must have returned all heads)
+  elif 'tails' not in value_count.index:
+      tails.append(0)
+      heads.append(value_count['heads'])
+  ```
 
 * Creating a DataFrame from the list of heads per simulation and using the `plot` function with the `kind` parameter set to `hist` produces a histogram that showcases the frequency distribution of landed heads.
 
