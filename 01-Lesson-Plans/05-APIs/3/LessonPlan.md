@@ -318,9 +318,9 @@ Open the solution and explain the following:
 
   ![free-throws-probability-distribution-focus](Images/free-throws-probability-distribution-focus.png)
 
-  ---
+---
 
-  ### 5. Instructor Demo: Confidence Intervals (0:10 mins)
+### 6. Instructor Demo: Confidence Intervals (0:10 mins)
 
 In this activity, students are introduced to confidence intervals, which in the context of Monte Carlo simulations, are value ranges of potential outcomes with a particular probability of occurring. Confidence intervals in combination with Monte Carlo simulations are useful when trying to predict the likelihood of an outcome falling within a specific range.
 
@@ -356,7 +356,7 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 6. Students Do: Archery Target Hits (15 mins)
+### 7. Students Do: Archery Target Hits (15 mins)
 
 In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of potential hits (out of `5` shots) of a target for a beginner archer with a `20%` accuracy and determine the range of hits for the archer that has a `95%` chance of happening in a single session.
 
@@ -368,7 +368,7 @@ In this activity, students execute a Monte Carlo simulation to analyze the proba
 
 * [archery_target_hits.ipynb](Activities/04-Stu_Confidence_Intervals/Unsolved/archery_target_hits.ipynb)
 
-### 7. Instructor Do: Review Free Throw Simulation (5 mins)
+### 8. Instructor Do: Review Free Throw Simulation (5 mins)
 
 **Files:**
 
@@ -400,7 +400,7 @@ Open the solution and explain the following:
 
 ---
 
-### 7. Instructor Demo: Simulation of Stock Price Trajectory (0:10 mins)
+### 9. Instructor Demo: Simulation of Stock Price Trajectory (0:10 mins)
 
 This activity exemplifies the use case where a Monte Carlo simulation can be applied to a historical data set such as daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution. Stock data sets will be pulled in from the IEX API and used to generate a Monte Carlo simulation based off of a normally distributed random process using the data set's calculated average and standard deviation of daily returns.
 
@@ -470,7 +470,7 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 9. Students Do: Stock Price Forecasting (15 mins)
+### 10. Students Do: Stock Price Forecasting (15 mins)
 
 In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical `TSLA` daily returns.
 
@@ -482,7 +482,7 @@ In this activity, students execute a Monte Carlo simulation to forecast stock pr
 
 * [financial_forecasting_part_1.ipynb](Activities/06-Stu_Simulation_of_Stock_Price_Trajectory/Unsolved/financial_forecasting_part_1.ipynb)
 
-### 10. Instructor Do: Review Stock Price Forecasting (5 mins)
+### 11. Instructor Do: Review Stock Price Forecasting (5 mins)
 
 **Files:**
 
@@ -514,7 +514,7 @@ Open the solution and explain the following:
 
 ---
 
-### 10. Instructor Demo: Predicting Probable Outcomes of Stock Price Trajectory (0:10 mins)
+### 12. Instructor Demo: Predicting Probable Outcomes of Stock Price Trajectory (0:10 mins)
 
 In this activity, students go one step further to produce not just a single potential price trajectory for a stock over the next `252` trading days, but many potential price trajectories. So that it's possible to analyze the probability distribution of where a stock's price can go, and therefore an interval to which confident predictions can be made regarding future stock price.
 
@@ -577,7 +577,7 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 10. Students Do: Probable Stock Price Forecasting (15 mins)
+### 13. Students Do: Probable Stock Price Forecasting (15 mins)
 
 In this activity, students execute a Monte Carlo simulation to forecast the many different possibilities of simulated stock price trajectories, thereby analyzing the frequency/probability of potential `TSLA` stock price outcomes.
 
@@ -589,7 +589,7 @@ In this activity, students execute a Monte Carlo simulation to forecast the many
 
 * [financial_forecasting_part_2.ipynb](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Unsolved/financial_forecasting_part_2.ipynb)
 
-### 11. Instructor Do: Review Probable Stock Price Forecasting (5 mins)
+### 14. Instructor Do: Review Probable Stock Price Forecasting (5 mins)
 
 **Files:**
 
@@ -627,7 +627,7 @@ Open the solution and explain the following:
 
 ---
 
-### 12. Instructor Do: Intro to Portfolio Forecasting (10 mins)
+### 15. Instructor Do: Intro to Portfolio Forecasting (10 mins)
 
 At this point, students have executed Monte Carlo simulations, learned to interpret frequency distributions, probability distributions, confidence intervals, and realized how to apply Monte Carlo simulations to forecast the future prices (and corresponding returns) of individual stocks. Now, students will take their journey one step further and learn how to apply Monte Carlo simulations to forecast the returns of a portfolio, which can be comprised of either all stocks or a combination of multiple asset classes such as stocks and bonds.
 
@@ -653,7 +653,7 @@ Ask the students if they have any questions or concerns before moving on.
 
 ---
 
-### 13. Instructor Demo: Portfolio Forecasting (0:10 mins)
+### 16. Instructor Demo: Portfolio Forecasting (0:10 mins)
 
 In this activity, students ascend to the final step and learn to project not one, but many, future stock prices using Monte Carlo simulations to calculate the daily/cumulative returns of a multi-weighted portfolio. Then analyze and plot the frequency and probability distributions of potential ending cumulative returns to assess the investment risk of the portfolio.
 
@@ -756,7 +756,7 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 14. Students Do: Financial Forecasting Part III (15 mins)
+### 17. Students Do: Financial Forecasting Part III (15 mins)
 
 In this activity, students execute a Monte Carlo simulation to forecast the potential ranges of cumulative returns for a portfolio, based on the simulated closing prices of the stocks that comprise it, to determine the investment risk of the portfolio.
 
@@ -768,7 +768,7 @@ In this activity, students execute a Monte Carlo simulation to forecast the pote
 
 * [financial_forecasting_part_3.ipynb](Activities/10-Stu_Portfolio_Forecasting/Unsolved/financial_forecasting_part_3.ipynb)
 
-### 15. Instructor Do: Review Financial Forecasting Part III (5 mins)
+### 18. Instructor Do: Review Financial Forecasting Part III (5 mins)
 
 **Files:**
 
