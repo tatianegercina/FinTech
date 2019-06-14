@@ -35,7 +35,7 @@ By the end of class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Welcome Class (5 mins)
+### 1. Instructor Do: Welcome Class (0:05 mins)
 
 **Files:**
 
@@ -81,7 +81,7 @@ Ask the students if they can think of any other examples of Monte Carlo simulati
 
 ---
 
-### 3. Instructor Demo: Probability Distribution of Potential Outcomes (0:10 mins)
+### 3. Instructor Do: Probability Distribution of Potential Outcomes (0:10 mins)
 
 Monte Carlo Simulations seek to explain the probability of potential outcomes for a randomly occurring event. Therefore, this activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like and how to interpret the results.
 
@@ -320,7 +320,7 @@ Open the solution and explain the following:
 
 ---
 
-### 6. Instructor Demo: Confidence Intervals (0:10 mins)
+### 6. Instructor Do: Confidence Intervals (0:10 mins)
 
 In this activity, students are introduced to confidence intervals, which in the context of Monte Carlo simulations, are value ranges of potential outcomes with a particular probability of occurring. Confidence intervals in combination with Monte Carlo simulations are useful when trying to predict the likelihood of an outcome falling within a specific range.
 
@@ -400,7 +400,7 @@ Open the solution and explain the following:
 
 ---
 
-### 9. Instructor Demo: Simulation of Stock Price Trajectory (0:10 mins)
+### 9. Instructor Do: Simulation of Stock Price Trajectory (0:10 mins)
 
 This activity exemplifies the use case where a Monte Carlo simulation can be applied to a historical data set such as daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution. Stock data sets will be pulled in from the IEX API and used to generate a Monte Carlo simulation based off of a normally distributed random process using the data set's calculated average and standard deviation of daily returns.
 
@@ -514,7 +514,7 @@ Open the solution and explain the following:
 
 ---
 
-### 12. Instructor Demo: Predicting Probable Outcomes of Stock Price Trajectory (0:10 mins)
+### 12. Instructor Do: Predicting Probable Outcomes of Stock Price Trajectory (0:10 mins)
 
 In this activity, students go one step further to produce not just a single potential price trajectory for a stock over the next `252` trading days, but many potential price trajectories. So that it's possible to analyze the probability distribution of where a stock's price can go, and therefore an interval to which confident predictions can be made regarding future stock price.
 
@@ -657,7 +657,7 @@ Ask the students if they have any questions or concerns before moving on.
 
 ---
 
-### 17. Instructor Demo: Portfolio Forecasting (0:10 mins)
+### 17. Instructor Do: Portfolio Forecasting (0:10 mins)
 
 In this activity, students ascend to the final step and learn to project not one, but many, future stock prices using Monte Carlo simulations to calculate the daily/cumulative returns of a multi-weighted portfolio. Then analyze and plot the frequency and probability distributions of potential ending cumulative returns to assess the investment risk of the portfolio.
 
@@ -847,7 +847,9 @@ Open the solution and explain the following:
 
   ![portfolio-confidence-interval](Images/portfolio-confidence-interval.png)
 
-### 20. Instructor Do: Structured Office Hours (30 mins)
+---
+
+### 20. Instructor Do: Structured Office Hours (0:30 mins)
 
 Please use the entire office hours time to review questions with the students.
 
