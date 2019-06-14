@@ -28,6 +28,9 @@ Open the solution and explain the following:
   # Set a list object acting as a throw: made basket or missed basket
   throw = ["made", "missed"]
 
+  # Set probability of events
+  probability = [0.7, 0.3]
+
   # Create an empty DataFrame to hold simulation results
   monte_carlo = pd.DataFrame()
 
@@ -35,19 +38,19 @@ Open the solution and explain the following:
   for n in range(num_simulations):
 
       # Print simulation iteration
-      print(f"Running Simulation {n+1}...")
-
+      # print(f"Running Simulation {n+1}...")
+    
       # Set an empty list to hold throw results
       throws = []
 
       # Shoot the ball `10` times
       for i in range(num_throws):
-          # Randomly choose between `made` and `missed` with a `70%` chance to 
-          # make the throw and a `30%` chance the throw is missed
-          free_throw = random.choice(throw, p=[0.7, 0.3])
-
+        
+          # Randomly choose between `made` and `missed` with a `70%` chance to make the throw and a `30%` chance the throw is missed
+          free_throw = random.choice(throw, p=probability)
+        
           # Print throw result
-          print(f"  Throw {i+1}: {free_throw}")
+          # print(f"  Throw {i+1}: {free_throw}")
 
           # Append throw result to list
           throws.append(free_throw)
@@ -62,11 +65,8 @@ Open the solution and explain the following:
 * The `choice` function from the `random` class of the `numpy` library has a `p` parameter that allows for setting a non-uniform probability to events. In this case, a player has a `70%` chance of making a shot and consequently a `30%` chance of missing the shot. Therefore, the `choice` function below reflects this.
 
   ```python
-  # Set a list object acting as a throw: made basket or missed basket
-  throw = ["made", "missed"]
-  # Randomly choose between `made` and `missed` with a `70%` chance to 
-  # make the throw and a `30%` chance the throw is missed
-  free_throw = random.choice(throw, p=[0.7, 0.3])
+  # Randomly choose between `made` and `missed` with a `70%` chance to make the throw and a `30%` chance the throw is missed
+  free_throw = random.choice(throw, p=probability)
   ```
 
 * Because the random process has non-uniform probability (`70%` chance to make a shot and `30%` chance to miss a shot) the corresponding frequency and probability distributions of made free throws show that a majority of the distribution lies within the `7, 8, 9, and 10` range, while the rest of the distribution is spread out within the `0, 1, 2, 3, 4, 5, 6` range. Unlike the bell-curve of a normal distribution, this is called a skewed (in this case left-skewed) distribution.
