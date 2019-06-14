@@ -30,7 +30,7 @@ Open the solution and explain the following:
 
 * In order to know the range of data points that contain a specific percentage of all data points in the sample, generating a frequency distribution is a pre-requisite to defining a confidence interval.
 
-  ![archery-frequency-distribution](Images/archery-frequency-distribution.png)
+  ![archery-probability-distribution](Images/archery-probability-distribution.png)
 
 * Because the mean of a normal distribution is considered to be at the `50th` quantile, confidence intervals are usually set around the mean or `0.50` quantile. Therefore, a `95%` confidence interval would have quantiles set at `0.025` and `0.975` rather than something like `0.05` and `1.00`.
 
