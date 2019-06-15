@@ -40,4 +40,4 @@ Initiate a facilitated discussion by communicating the following guided question
 
   * **Answer:** Submit the **key** with the request URL as a parameter.
 
-End the activity by asking the students if they have any questions.
+End the activity by asking the students if they have any further questions.
