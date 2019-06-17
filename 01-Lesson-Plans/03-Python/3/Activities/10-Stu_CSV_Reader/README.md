@@ -1,8 +1,8 @@
-# Sales Analysis
+## Sales Analysis
 
 In this activity, you will read in the `sales.csv` file to calculate customer revenue averages.
 
-## Instructions
+### Instructions
 
 Using the starter file, complete the following steps.
 
@@ -59,7 +59,7 @@ Your output should look similar to the following:
   Sally,6,256,42.67
   ```
 
-## Challenge
+### Challenge
 
 Calculate the aggregate average for each unique customer name and output to a CSV file. 
 
@@ -109,9 +109,10 @@ Calculate the aggregate average for each unique customer name and output to a CS
   John,4,305,76.25
   ```
 
-## Hint
+### Hint
 
 Remember that the `csvwriter.writerow()` takes in lists!
 
 ---
+
 © 2019 Trilogy Education Services
