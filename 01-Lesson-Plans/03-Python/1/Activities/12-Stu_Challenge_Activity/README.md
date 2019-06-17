@@ -30,7 +30,7 @@ When the pseudocode is complete:
 
     * Percent Increase = Increase / Original x 100
 
-## Instructions
+### Instructions
 
 Using the [starter-file](Unsolved/conditionally_yours.py) provided, complete the following steps:
 
@@ -64,12 +64,16 @@ Using the [starter-file](Unsolved/conditionally_yours.py) provided, complete the
 
 8. Print `recommendation`. 
 
-## Challenge
+### Challenge
 
 Add a layer of sophistication to your program by creating a `balance` variable. This will serve as the amount of excess equity or money available in a portfolio. 
 
 Create logic that will take into consideration `balance` when determining a recommendation. Only recommend to buy if `balance` is five times the amount of the stock's current price.
 
-## Hint
+### Hint
 
 Use a [format specifier](https://www.python.org/dev/peps/pep-0498/#format-specifiers) with the f-string.
+
+---
+
+© 2019 Trilogy Education Services
