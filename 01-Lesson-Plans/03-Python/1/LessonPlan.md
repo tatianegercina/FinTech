@@ -183,7 +183,9 @@ Answer any questions before moving on.
 
 ### 4. Student Do: Create a JupyterLab Project (10 mins)
 
-In this activity, students will create a JupyterLab project and run a Python `hello world` print statement in a Python notebook. 
+In this activity, students will create a JupyterLab project and run a Python `hello world` print statement in a Python notebook.
+
+Open the following instructions and introduce the student actvitiy.
 
 **Instructions:** 
 
@@ -191,7 +193,7 @@ In this activity, students will create a JupyterLab project and run a Python `he
 
 Instructional staff should circulate the classroom during this activity, monitoring students to ensure that everyone can successfully open JupyterLab. 
 
-Take some additional time here if necessary, as students will not be able to participate in the upcoming coding activities if this activity is not completed successfully. 
+Take some additional time here if necessary as students may need to familiarize themselves with the layout of JupyterLab. Students will not be able to participate in the upcoming coding activities if this activity is not completed successfully. 
 
 - - -
 
