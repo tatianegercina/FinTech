@@ -335,7 +335,7 @@ Open [variables.py](Activities/04-Ins_Variables/Solved/variables.py) and highlig
   kilometers = 0.621371 * miles
   ```
 
-* Variables can be substituted inside of strings using a format string literal (f-string).
+* Variables can be substituted inside of strings using a format string literal (f-string). F-strings allow for the **concatentation** or combination of multiple strings. Note, the variable `kilometers` is converted to a String and then concatenated with the rest of the `message`.
 
   ```python
   message = f"The total kilometers driven was: {kilometers}"
@@ -385,7 +385,7 @@ Review the solution to the variables activity, highlighting the following points
 
 * Declaring variables requires a variable name, and in most cases, a value.
 
-* Review how to capture calculation output with variables.
+* Variables can be assigned values derived from the calculation of other variables.
 
 * Data types are implicitly understood in Python. This means that users do not have to specify the data type for a variable. 
 
@@ -441,7 +441,11 @@ To guide students, you may want to follow up with questions such as:
 
 * Can a string be concatenated with an integer?
 
+  **Answer:** No, a string can only be concatenated with another string. Other data types like integers must first be converted to a String before it can be concatenated to another String.
+
 * What type of calculations can be done with integers?
+
+  **Answer:** Any types of mathematical calculations that involve numerical integers. For example, addition `+`, subtraction `-`, multiplication `*`, and division `/`.
 
 Ask if there are any questions before moving on.
 
