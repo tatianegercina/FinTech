@@ -197,7 +197,7 @@ Take some additional time here if necessary as students may need to familiarize 
 
 - - -
 
-### 5. Instructor Do: Review JupyterLab Projects (5 mins) (Optional)
+### 5. Instructor Do: Review JupyterLab Projects (5 mins)
 
 Engage students with the following questions:
 
