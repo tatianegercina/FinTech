@@ -453,15 +453,19 @@ Ask if there are any questions before moving on.
 
 ### 9. Instructor Do: Conditionals (10 mins)
 
+In this activity, students will learn how to apply the use of logic to the values assigned to variables. Thereby establishing a type of workflow in which a program exhibits a specific behavior based on the evaluation of a condition.
+
+Open the slides and talk to the following points and associated code examples. Then, proceed to the respective instructor activity.
+
 **Files:**
 
 * [Conditional Slides 11-12](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g57f3228557_0_8)
 
 * [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py)
 
-Begin by reminding students that, in the previous activity, variables were used to tell computers what to remember. In this section, variables will be used to tell computers how to make simple decisions about what they remember and store as variables.
+Begin by reminding students that conditionals are comparisons or evaluations of variables and their associated values. In the previous activity, variables were used to tell computers what (data) to remember/store. In this section, variables and their associated values are called upon and evaluated via conditionals which determine the decisions or behavior the computer should exhibit.
 
-Open a console within JupyterLab and live code the examples. Be sure to explain the following: 
+Be sure to explain the following: 
 
 * Computers are really simple in that they do exactly what you tell them to. If you want to have a really useful script, you must program decision logic into the computer. 
 
@@ -477,9 +481,9 @@ Open a console within JupyterLab and live code the examples. Be sure to explain 
   
   * Colons are used to indicate what action needs to be taken if the condition evaluates as `True`.
 
-Continue the example of the self-driving car:  
+Open a console within JupyterLab and live code the example of the self-driving car:  
 
-* What would happen if a driver fell asleep behind the wheel of a car? Well, if it's a self-driving car, nothing. The car's safety mechanisms will activate, and the car will begin auto-piloting itself to avoid collisions and swerving. If it's not a driverless car, well, a miracle might be needed.
+* What would happen if a driver fell asleep behind the wheel of a car? Well, if it's a self-driving car, nothing. The car's safety mechanisms will activate, and the car will begin auto-piloting itself to avoid collisions and swerving. If it's not a driverless car, well, a miracle might be needed. An example of such a case could look like the following:
 
   ```python
   driverless_car = false
@@ -525,19 +529,6 @@ Continue the example of the self-driving car:
   ```
 
 * Conditional statements can be considered optional gatekeepers of blocks of code. If you want code to execute only under specific circumstances or conditions, you would use conditionals.
-
-* Comparison and logical operators are available in Python. 
-
-  * Comparison operators include equality, inequality, and greater than/less than evaluations. 
-  
-  * Logical operators include `AND`, `OR`, and `NOT`. Logical operators can be used to check multiple conditions.
-
-  ```python
-  a == b
-  a != b
-  a > b
-  a < b
-  ```
 
 Open [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py), and review the following points: 
 
@@ -609,17 +600,9 @@ Open [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py), a
 
   "Let's say you're in your self-driving car in the state of Florida, and you somehow get into an accident. Your insurance company might have a program that will predict, based on a series of conditions (for example, at-fault liability, accident forgiveness policy, loyalty elite status), whether your premium will increase. That logic might look something like this code."
 
-At this point, open the code in JupyterLab. Do not run it. Let students read it to see if they can guess whether `increase_insurance_premium` will be `True` or `False`. 
+At this point, open the following code snippet in JupyterLab. Do not run it. Let students read it to see if they can guess whether `increase_insurance_premium` will be `True` or `False`. 
 
-After a minute has passed, run the code. Conditions:
-
-  * Whether or not the driver was at fault
-
-  * Whether or not the policy is eligible for accident forgiveness
-
-  * Whether or not the driver has elite status
-
-  ```python
+```python
   # Declare Variables
   accident = True
   at_fault = False
@@ -644,9 +627,18 @@ After a minute has passed, run the code. Conditions:
       increase_insurance_premium = True
 
   print(f"Prediction: {increase_insurance_premium}")
-  ```
+```
+
+After a minute has passed, run the code. Review the following conditions:
+
+  * Whether or not the driver was at fault
+
+  * Whether or not the policy is eligible for accident forgiveness
+
+  * Whether or not the driver has elite status
 
 Answer any questions before moving on.
+
 - - -
 
 ### 10. Student Do: The Conditional Conundrum (15 mins)
