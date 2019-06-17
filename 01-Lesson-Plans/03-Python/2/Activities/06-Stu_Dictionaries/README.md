@@ -1,12 +1,12 @@
-# Market Capitalization
+## Market Capitalization
 
-## Background 
+### Background 
 
 Sam wants to categorize banks by their market capitalizations, which is the total dollar market value of a company's outstanding shares. Because she wants to know the relationship between a certain bank and its market capitalization, Sam uses a dictionary to index bank names to the value of its market cap. 
 
 Sam needs to make a few changes to her dictionary of bank market caps because she noticed a few errors and omissions. Help Sam fix her dictionary of bank market caps, and even better, help her group the banks by their corresponding market capitalization tier.
 
-## Instructions
+### Instructions
 
 Using the starter file provided, walk through the following steps.
 
@@ -34,7 +34,7 @@ Using the starter file provided, walk through the following steps.
 
   * Delete `Wachovia` from the dictionary, as it is a deprecated bank acquired by Wells Fargo in 2008.
 
-## Challenge
+### Challenge
 
 Group banks by their corresponding market capitalization tier.
 
@@ -56,7 +56,7 @@ Group banks by their corresponding market capitalization tier.
 
     * small-cap: Market capitalization greater than or equal to $300 million and less than $2 billion.
 
-## Hints
+### Hints
 
 Your results should look similar to the following:
 
@@ -72,3 +72,7 @@ Large Cap Banks: ['Citigroup', 'Wells Fargo', 'Goldman Sachs', 'Morgan Stanley',
 Mid Cap Banks: ['FNB Corporation', 'First Hawaiian Bank']
 Small Cap Banks: ['Republic Bancorp']
 ```
+
+---
+
+© 2019 Trilogy Education Services
