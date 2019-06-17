@@ -46,13 +46,13 @@ By the end of this class, students will be able to:
 
 **File:** [Slideshow](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.p9)
 
-Welcome students to class. Explain that today will be the exciting first step toward automating their work with Python! Introduce Python by covering the following points: 
+Welcome students to class and introduce the class objectives for the day. Then, explain that today will be the exciting first step toward automating their work with Python! Introduce Python by covering the following points: 
 
 * Python is a high-level, general purpose programming language used to create applications, as well as solve smaller, individual development needs.
 
 * Python has been used to build robust applications and analytic pipelines for a wide range of computing needs. 
 
-* In the financial industry, Python has been used to solve complex quantitative problems that require sophisticated financial models, algorithmic trading and decision making, and iterative and recursive processing.
+* In the financial industry, Python has been used to solve complex quantitative problems such as sophisticated financial modeling/forecasting, algorithmic trading and decision making, and iterative and recursive data processing.
 
 * Python can be used to automate work that's done in Excel, such as data cleansing, data manipulation, and calculations.
 
@@ -66,7 +66,7 @@ Review the advantages of using Python.
 
   * Creating data visualizations with Python allows data elements and their complexity and relationships to be visualized. This is especially valuable for financial algorithms that require trend or time analysis. 
   
-  * More information about these libraries can be found [here](https://financetrain.com/best-python-librariespackages-finance-financial-data-scientists/).
+  * More information about related FinTech Python libraries can be found [here](https://financetrain.com/best-python-librariespackages-finance-financial-data-scientists/).
 
 - - -
 
