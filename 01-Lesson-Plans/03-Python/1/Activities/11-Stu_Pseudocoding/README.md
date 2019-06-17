@@ -24,7 +24,7 @@ For this activity, work with a partner to create pseudocode for a program that w
 
     Percent Increase = Increase / Original x 100
 
-## Instructions
+### Instructions
 
 Using the [starter-file](Unsolved/conditionally_yours.py) provided, complete the following steps:
 
@@ -34,6 +34,10 @@ Using the [starter-file](Unsolved/conditionally_yours.py) provided, complete the
 
 3. Pseudocde `IF-ELSE` logic to determine the buy or sell recommendation. 
 
-**Hint**
+### Hint
 
 Start by writing the logic out in plain English. Then, refine it into pseudocode.
+
+---
+
+© 2019 Trilogy Education Services

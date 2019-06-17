@@ -13,3 +13,7 @@ Like you, your coworker Sam is studying conditional statements. You two have dec
 * Do not run the code yet; first see if you can follow the thought process and guess.
 
 * Once you've guessed, run the file.
+
+---
+
+© 2019 Trilogy Education Services
