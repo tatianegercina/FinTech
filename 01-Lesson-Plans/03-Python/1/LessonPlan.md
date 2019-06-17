@@ -243,6 +243,8 @@ Answer any questions before moving on.
 
 ### 6. Instructor Do: Variables (10 mins)
 
+In this activity, students will learn how to use variables in Python to perform value assignment and store/recall data. 
+
 **Files:**
 
 * [Variables Slides 9-10](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g57f3228557_0_1)
@@ -255,7 +257,7 @@ Begin this section by saying something like,
 
 At this point, students may feel apprehensive about the upcoming coding activities. Build confidence by saying: 
 
-> "Now that our battle stations (environments) are up and running, we can start coding! This can be a really exciting experience, but it can also be very intimidating. Both are understandable. At some point, it might feel like you're on the Death Star, barreling through space beyond the speed of light. But don't worry. If you think about it, computers themselves aren't even really that smart. They are super logical, so you have to tell them what to do and how to do it, including what to remember (variables). You already do this when you tell the computer to open the internet using Chrome instead of Internet Explorer, for example. Even when using the calculator to compute a game score, you're telling the calculator what numbers to use and what operation to do perform on those numbers."
+> "Now that our battle stations (environments) are up and running, we can start coding! This can be a really exciting experience, but it can also be very intimidating. Both are understandable. But don't worry. If you think about it, computers themselves aren't even really that smart. They are super logical, so you have to tell them what to do and how to do it, including what to remember (variables)."
 
 Open the slideshow and use the slides to discuss concepts related to variables. Use the following real-world scenario to help explain variables: 
 
@@ -269,9 +271,9 @@ Open the slideshow and use the slides to discuss concepts related to variables. 
 
   * Each cell label in Excel serves as a variable; for example, A1, B1, C1. 
   
-  * Each cell has a name (e.g., 'A1'), a value (e.g., 5), and a type (int).
+  * Each cell has a name (e.g., 'A1'), a value (e.g., 5), and a type (integer).
 
-* Variables allow us to name our data in ways that make it easier to understand and use in code. For example, computers don't care if you name a string of text characters something like `first_name`, but this does hold a lot of meaning for a person reading the code.
+* Variables allow us to name our data in ways that make it easier to understand and use in code, and provides the freedom of choice in regards to variable names. For example, computers allow us to name a string of text characters something like `first_name` or `first_nm`. Either way works, and both provide meaning for a person reading the code.
 
 * Variables have three main operations: create, put, and retrieve.
 
@@ -285,7 +287,7 @@ Open the slideshow and use the slides to discuss concepts related to variables. 
 
 * All variables have a **data type**. 
 
-  * Example data types that will be leveraged in this class include string, int, float, double, and Boolean. 
+  * Example data types that will be leveraged in this class include string, integer, float, double, and Boolean. 
   
   * Data types correspond to the type of data being stored (letters/words, phrases, or numbers).
 
