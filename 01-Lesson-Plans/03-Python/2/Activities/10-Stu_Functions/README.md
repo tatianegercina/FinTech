@@ -1,6 +1,6 @@
 ## Finally Functioning
 
-## Background 
+### Background 
 
 You have been working with Harold and Sam after hours to further develop your Fintech skills and automate your day jobs.
 
@@ -28,7 +28,7 @@ Compound annual growth rate formula:
 
 ![Readme_Stu_Functions_CAGR.png](Images/Readme_Stu_Functions_CAGR.png)
 
-## Instructions
+### Instructions
 
 Use the [starter-file](Unsolved/finally_functioning.py) provided to complete the following steps:
 
@@ -64,8 +64,13 @@ Use the [starter-file](Unsolved/finally_functioning.py) provided to complete the
 
 Instead of saving the `year_one_growth`, `year_two_growth`, and `year_three_growth` values in variables, add `growth_rate` to a global list named `growth_rates`. Then, write this logic in a new function `calculate_compound_growth_rate_list`.
 
-## Hints
+### Hints
 
 * Instead of returning the local `growth_rate` variable, store it in the `growth_rates` global list object.
 
 * Refer to the [W3Schools documentation](https://www.w3schools.com/python/ref_func_round.asp) for the Python round function.
+
+---
+
+© 2019 Trilogy Education Services
+

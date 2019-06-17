@@ -10,7 +10,7 @@ While on your lunch break together, you start posing ideas about how the program
 
 Harold knows that this would allow him to focus only on buying and selling; the program would handle all decision making and get him one step closer to securing the title of top trader for weeks to come. You begin considering the requirements for the enhanced program.
 
-#### Task
+### Task
 
 For this activity, work with a partner to create pseudocode for a program that will:
 

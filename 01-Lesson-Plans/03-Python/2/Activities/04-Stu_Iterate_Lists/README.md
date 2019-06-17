@@ -1,10 +1,10 @@
-# Trading Log
+## Trading Log
 
-## Background 
+### Background 
 
 Karen, an equity trader, has been tracking her profits and losses over the course of the last 30 days. She wants to quickly analyze her ongoing performance as she continues to log her profits and losses every day. Understanding her profits and losses each day will allow Karen to evaluate her performance for all trades monthly, weekly, and over time. Help Karen create a program to analyze her results. 
 
-## Instructions
+### Instructions
 
 Using the [starter-file](Unsolved/trading_log.py), complete the following steps:
 
@@ -38,7 +38,7 @@ Using the [starter-file](Unsolved/trading_log.py), complete the following steps:
 
   * Print the values of only unprofitable days. 
 
-## Hints
+### Hints
 
 Use the below formulas:
 
@@ -78,3 +78,7 @@ Best Gain: 613
 ```
 
 Refer to this [article](https://www.investopedia.com/terms/p/plstatement.asp) for more information regarding profit and loss statements.
+
+---
+
+© 2019 Trilogy Education Services

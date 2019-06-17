@@ -1,10 +1,10 @@
-# Sugar, Flour, Butter!
+## Sugar, Flour, Butter!
 
  ## Background
  
  Mike needs to plan his grocery list so that he can buy the ingredients needed to make some delicious apple pie. Help Mike create and modify his list of groceries before he leaves for the supermarket. Then help him cross off items as he gathers the ingredients he needs.
 
-## Instructions
+### Instructions
 
 Use the [starter-file](Unsolved/Core/grocery_list.py) to complete the following steps.
 
@@ -30,7 +30,7 @@ Use the [starter-file](Unsolved/Core/grocery_list.py) to complete the following 
 
 * Determine the total number of items on the grocery list.
 
-## Challenge
+### Challenge
 
 Mike arrives at the supermarket and walks through the aisles to gather the items on the list. 
 
@@ -41,3 +41,7 @@ Mike arrives at the supermarket and walks through the aisles to gather the items
 * Mike decides that he has water at home. Remove `water` from the grocery list based on its index.
 
 * Mike decides to pick up the last item on his list, so remove the last item from the grocery list.
+
+---
+
+© 2019 Trilogy Education Services
