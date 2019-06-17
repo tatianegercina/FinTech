@@ -90,6 +90,10 @@ Introduce JupyterLab by first asking students if they have ever heard of Jupyter
 
   * For example, some IDEs connect with code repositories to make sure code is always backed up in a source control repository. 
 
+* Jupyter notebooks are an interactive, web-based IDE that supports the integration of live coding, document manipulation, narrative text, and data visualization. 
+
+* Jupyter notebooks support a number of different programming languages, including Python, Scala, and R. Over 40 languages are supported.
+
 * JupyterLab, the next generation of Jupyter Notebook, is an open-source, web-based interactive development environment that provides a space for users to code, take notes, write computational narrative, manipulate data, and visually represent data.
 
 Explain the advantages of JupyterLab vs. Jupyter Notebook.
@@ -135,6 +139,8 @@ Pause here to check if any students are unable to launch JupyterLab. If there ar
 
 ### 3. Instructor Do: Creating Projects with JupyterLab (10 mins)
 
+Walk through the following slides and proceed to the instructor activity on creating projects with JupyterLab.
+
 **Files:**
 
 * [JupyterLab Slides 5-6](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g57bb043f18_0_4333)
@@ -168,10 +174,6 @@ Open [JupyterLabProjectGuide.md](../Supplemental/JupyterLabProjectGuide.md). Wal
   ![LP_Ins_Jupyter_Project_File_Explorer.png](Images/LP_Ins_Jupyter_Project_File_Explorer.png)
 
 * JupyterLab allows you to create Jupyter Notebooks, which communicate data well in many programming languages, including Python. The majority of development throughout the course will take place in a Jupyter notebook. 
-
-* Jupyter notebooks are an interactive, web-based IDE that supports the integration of live coding, document manipulation, narrative text, and data visualization. 
-
-* Jupyter notebooks support a number of different programming languages, including Python, Scala, and R. Over 40 languages are supported.
 
   ![LP_Ins_Jupyter_Project_Notebooks.png](Images/LP_Ins_Jupyter_Project_Notebooks.png)
 
