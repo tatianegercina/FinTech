@@ -6,7 +6,7 @@ Today's class will introduce students to the basics of the Python programming la
 
 ## Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of this class, students will be able to:
 
 * Open a project using JupyterLab. 
 
