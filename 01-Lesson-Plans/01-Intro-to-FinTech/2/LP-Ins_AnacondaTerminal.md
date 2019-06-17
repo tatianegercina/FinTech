@@ -49,7 +49,7 @@
 
     * How to delete a file
 
-    * How to open a texst file
+    * How to open a text file
 
     * How to output file contents to the screen
 
