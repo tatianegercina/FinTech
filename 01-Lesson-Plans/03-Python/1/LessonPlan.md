@@ -72,6 +72,8 @@ Review the advantages of using Python.
 
 ### 2. Instructor Do: Intro to JupyterLab (5 mins)
 
+Students should already have Anaconda and JupyterLab installed and can proceed to first-time setup. If not, distribute the following installation guidelines to the class.
+
 **Files:**
 
 * [AnacondaInstallGuide.md](../Supplemental/AnacondaInstallGuide.md)
@@ -90,7 +92,7 @@ Introduce JupyterLab by first asking students if they have ever heard of Jupyter
 
 * JupyterLab, the next generation of Jupyter Notebook, is an open-source, web-based interactive development environment that provides a space for users to code, take notes, write computational narrative, manipulate data, and visually represent data.
 
-Explain the advantages of JupyterLab.
+Explain the advantages of JupyterLab vs. Jupyter Notebook.
 
 * Whereas Jupyter Notebook provides an interactive space to write code and access a terminal, JupyterLab provides an actual environment to develop. JupyterLab is a true integrated development environment that provides connectivity to various plugins and services.
 
@@ -125,9 +127,9 @@ Walk students through the process of setting up JupyterLab:
   jupyter lab
   ```
 
-Pause here to check if any students are unable to launch JupyterLab. If there are, instruct them to troubleshoot their installation with a TA during the next activity or the break. Instruct students to use [https://jupyter.org/try](https://jupyter.org/try) until their environments are up and running.
+Pause here to check if any students are unable to launch JupyterLab. If there are, instruct them to troubleshoot their installation with a TA during the next activity or the break. Instruct students to use a temporary hosted Jupyter server located at [https://jupyter.org/try](https://jupyter.org/try) until their environments are up and running.
 
-    ![jupyterlab.png](Images/jupyterlab.png)
+  ![jupyterlab.png](Images/jupyterlab.png)
 
 - - -
 
