@@ -28,13 +28,15 @@ By the end of this class, students will be able to:
 
 * This class will be challenging for some students as they become acquainted with coding standards, syntax, and the debugging process. Each instructor lecture or demo (Instructor Do) will be followed by an activity in which students will be able to practice these concepts. Review questions are also included to reinforce key information.
 
-* Look for opportunities to include real-world examples in your lectures to make concepts more concrete and relatable for students. Feel free to draw on your own experience in the professional world. 
+* Look for opportunities to include real-world examples in your lectures to make concepts more concrete and relatable for students. Feel free to draw upon your own experience using Python in the professional world.
 
-* Be encouraging. Remind students that all developers have started where the students are right now. Actively work to build confidence and promote effective problem-solving skills.
+* Be encouraging. Remind students that all developers have started where the students are right now. Actively work to build confidence, engagement, and promote effective problem-solving skills by letting students explain concepts if they feel comfortable. 
 
-* As you review the activities, find ways to connect the concepts to FinTech. Include brief discussion about emerging, innovative technologies and how the concepts relate to them as well.
+* As you review the activities, find ways to connect the concepts to FinTech. Include brief discussions about emerging or disruptive/innovative technologies and how they have changed the FinTech landscape.
 
 * Today's class will include a tour of JupyterLab. There will also be several live-coding activities that should be completed in a Python Notebook. Make sure JupyterLab is installed and running properly on your machine.
+
+* Activities that involve programming solutions will have an associated coding file linked to the beginning of the activity section. Click on the link to take you to the coding file required for the activity! 
 
 * Have your TAs keep track of the time with the [Time Tracker](TimeTracker.xlsx).
 
