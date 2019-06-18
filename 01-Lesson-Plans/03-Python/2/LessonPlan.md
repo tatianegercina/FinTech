@@ -24,6 +24,8 @@ By the end of class, students will be able to:
 
 * Nested lists and dicts may take some time to work through, as this topic requires a multi-level perspective. Remember to showcase the output of nested loops; it will be much easier for students to grasp the concept when they can visualize the result.
 
+* Some students may wonder about the benefits of using functions; it's because it's easier and less redundant to call upon a block of code that defines a specific programmatic action as a command rather than having to copy and paste the same block of code multiple times to achieve the same effect.
+
 * Make sure TAs circulate the classroom to provide help for students who may still be struggling with Python. If class is moving ahead of schedule, use the extra time to revisit concepts to help bring students up to speed. 
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx). 
