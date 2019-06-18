@@ -934,7 +934,7 @@ In this activity, students will work with for loops in a Python file. The object
 
 **File:** [cheer.py](Activities/09-Stu_Loops/Solved/cheer.py)
 
-Engage the students with the following questions:
+Walk through the solution while engaging the students with the following questions:
 
 * How do `for` loops execute?
 
@@ -1090,7 +1090,9 @@ Pseudocode for determining if credit should be acquired based off of simple inte
         THEN print("This is an okay deal. You might find better. Total simple interest paid will between $2,000 and $4,000")
     ELSE print("Total simple interest paid will be over $4,000. Do not accept this line of credit")
 ```
+
 Answer any questions before moving on.
+
 - - -
 
 ### 17. Student Do: Pseudocoding (10 mins)
@@ -1121,7 +1123,7 @@ Engage the students with the following questions:
 
 * How did pseudocoding improve or impair your coding process?
 
-  **Sample Answer:**  @@@
+  **Sample Answer:**  Pseudocoding provides a human-readable set of requirements from which a program should operate. In other words, pseudocoding makes it easier to define and outline the behavior of an application.
 
 * What are some of the pseudocoding best practices?
 
