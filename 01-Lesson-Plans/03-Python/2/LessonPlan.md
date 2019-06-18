@@ -8,6 +8,7 @@ Today’s class will focus on list and dict data structures and how to iterate o
 
 By the end of class, students will be able to:
 
+* Recap previous Python concepts and implementations: variables, conditionals, and for loops.
 * Identify the differences between homogeneous (same data type) and heterogeneous data (different data type). 
 * Access and manipulate data within list and dict objects using index-based elements and key-value pairs, respectively. 
 * Iterate over lists and dicts. 
@@ -36,9 +37,9 @@ By the end of class, students will be able to:
 
 **File:** [Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit?usp=sharing)
 
-Welcome students back to class. Open the slideshow to review today’s agenda. 
+Welcome students back to class. Open the slideshow and review today’s class objectives/agenda. 
 
-Do a quick review of the previous lesson by posing the following questions to the class: 
+Navigate to the refresher slide and do a quick review of the previous lesson by posing the following questions to the class: 
 
 * What is a terminal?
 
