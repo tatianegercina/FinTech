@@ -53,3 +53,5 @@ Ask the following review questions:
 * Are API keys naturally secure?
 
   **Answer** No, they are not. API keys are transmitted across network and are not naturally encrypted. API keys can be encrypted to make them private.
+
+Ask if there are any questions before moving on.
