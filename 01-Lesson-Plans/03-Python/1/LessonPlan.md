@@ -916,7 +916,8 @@ Now introduce `while` loops and compare them to `for` loops.
     i+=1
   ```
 
-Encourage students to spend some additional time at home reviewing `while` loops. Documentation can be found [here](https://docs.python.org/3/reference/compound_stmts.html#while).
+Encourage students to spend some additional time at home reviewing `for` and `while` loops. Documentation can be found [here](https://docs.python.org/3/reference/compound_stmts.html#while).
+
 - - -
 
 ### 14. Student Do: For Loops (15 mins)
