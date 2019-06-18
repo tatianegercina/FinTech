@@ -1095,29 +1095,29 @@ Answer any questions before moving on.
 
 - - -
 
-### 17. Student Do: Pseudocoding (10 mins)
+### 17. Student Do: Conditionally Yours Part I (10 mins)
 
 In this activity, students will pseudocode a solution to identifying whether or not a stock should be purchased, based on a specific threshold of percentage increase or decrease. When students have finished pseudocoding, they will implement their algorithm. The objective of the assignment is for the students to learn how to pseudocode solutions prior to developing them.
 
-**File:** [conditionally_yours.py](Activities/11-Stu_Pseudocoding/Unsolved/conditionally_yours.py)
+**File:** [conditionally_yours.py](Activities/11-Stu_Pseudocoding/Unsolved/conditionally_yours_part_1.py)
 
 **Instructions:** [README.md](Activities/11-Stu_Pseudocoding/README.md)
 
 - - -
 
-### 18. Student Do: Conditionally Yours (15 mins)
+### 18. Student Do: Conditionally Yours Part II (15 mins)
 
 In this activity, students will leverage the pseudocode they created in the last activity to develop a program that will recommend whether or not a stock should be purchased based on a specific threshold of percentage increase or decrease. The objective of the assignment is for the students to learn how to evolve pseudocode into an algorithm or program.
 
-**File:** [conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Unsolved/Core/conditionally_yours.py)
+**File:** [conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Unsolved/Core/conditionally_yours_part_2.py)
 
 **Instructions:** [README.md](Activities/12-Stu_Challenge_Activity/README.md)
 
 - - -
 
-### 19. Instructor Do: Review Conditionally Yours (5 mins)
+### 19. Instructor Do: Review Conditionally Yours Part II (5 mins)
 
-**File:** [conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Solved/Core/conditionally_yours.py)
+**File:** [conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Solved/Core/conditionally_yours_part_2.py)
 
 Engage the students with the following questions:
 
