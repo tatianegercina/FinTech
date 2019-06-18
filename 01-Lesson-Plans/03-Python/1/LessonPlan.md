@@ -215,7 +215,7 @@ Engage students with the following questions:
 
 * How many activities can be opened in one launcher?
 
-  **Sample Answer:** @@@ 
+  **Sample Answer:** Multiple activities can be opened as several "tabs" in JupyterLab. Just like in a browser, there is no set limit to the number of tabs one can have open; however, more tabs generally mean more allocated memory which can lead to computer performance degradation -- so beware!
 
 * What are JupyterLab projects?
 
@@ -363,7 +363,7 @@ Send a link to the [PEP 8 documentation](https://www.python.org/dev/peps/pep-000
 
 - - -
 
-### 7. Student Do: Variables (10 mins)
+### 7. Student Do: Hello Variable World (10 mins)
 
 In this activity, students will learn how to perform calculations and operations using variables. Students will find the percent increase of Apple stock as well as complete coding drills. 
 
@@ -377,7 +377,7 @@ Answer any questions before moving on.
 
 - - -
 
-### 8. Instructor Do: Review Variables (5 mins)
+### 8. Instructor Do: Review Hello Variable World (5 mins)
 
 **File:** [hello_variable_world.py](Activities/05-Stu_Variables/Solved/Core/hello_variable_world.py)
 
