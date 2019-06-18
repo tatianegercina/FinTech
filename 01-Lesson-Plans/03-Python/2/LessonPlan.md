@@ -626,7 +626,7 @@ Define dictionary.
     
 * Dictionaries operate just like physical, language dictionaries: if you know the word, you can find the definition. The word is the key, and the value is the definition.
 
-To demonstrate the relationship between key and value, live code a simple example of declaring a dictionary. Explain: 
+To demonstrate the relationship between key and value, live code the following example of declaring a dictionary. Explain: 
 
 * The dictionary will contain the top traders for each month in 2019. 
     
@@ -673,7 +673,7 @@ Before starting the demonstration, pose the following scenario:
 
 * You don't know much about dictionaries, but you do know that you want your manager to see that you're innovative, and that you know how to create optimized Python programs!
 
-Demonstrate the syntax for creating a dictionary to store daily trading profits and losses:
+Open the solution and demonstrate the syntax for creating a dictionary to store daily trading profits and losses:
 
 * Dictionaries are syntactically defined via `{}`, curly braces, with key-value pairs separated by `:`, colons.
 
@@ -722,7 +722,7 @@ Demonstrate the syntax for creating a dictionary to store daily trading profits 
   03-31-2019: 321
   ```
 
-* Adding a new key-value pair entry to a dictionary is as easy as specifying a new key-value pair combination.
+* To add a new key-value pair to a dictionary, simply specify a new key-value pair combination.
 
   ```python
   # Add a new key-value pair
@@ -735,7 +735,7 @@ Demonstrate the syntax for creating a dictionary to store daily trading profits 
   {'title': 'Trading Log', '03-18-2019': -224, '03-19-2019': 352, '03-20-2019': 252, '03-21-2019': 354, '03-22-2019': -544, '03-23-2019': -650, '03-24-2019': 56, '03-25-2019': 123, '03-26-2019': -43, '03-27-2019': 254, '03-28-2019': 325, '03-29-2019': -123, '03-30-2019': 47, '03-31-2019': 321, '04-01-2019': 123, '04-02-2019': 133, '04-03-2019': -151, '04-04-2019': 613, '04-05-2019': 232, '04-06-2019': -311, '04-07-2019': 413}
   ```
 
-* Modifying an existing key-value pair within a dictionary is as easy as specifying a new value for that particular key.
+* To modify an existing key-value pair within a dictionary, specify a new value for that particular key.
 
   ```python
   # Modify a key value
@@ -774,7 +774,7 @@ Demonstrate the syntax for creating a dictionary to store daily trading profits 
   Yes, '04-03-2019' is one of the keys in the trading_pnl dictionary
   ```
 
-* For loops can be used with dictionaries to iterate over every key in the dictionary.
+* For loops can be used to iterate over every key in the dictionary.
 
   ```python
   # Print out dict keys via a for loop
@@ -806,7 +806,7 @@ Demonstrate the syntax for creating a dictionary to store daily trading profits 
   Key: 04-06-2019
   ```
 
-* For loops can be used in conjunction with operationally returning a value by a specific key to return all values in the dictionary.
+* For loops can be used to iterate over each key in the dictionary and use each key to call every corresponding value in the dictionary.
 
   ```python
   # Print out dict values
@@ -815,7 +815,7 @@ Demonstrate the syntax for creating a dictionary to store daily trading profits 
       print()
   ```
 
-* For loops can be used in conjunction with calling the `items()` dictionary function to return all key-value pairs in the dictionary.
+* For loops can be used with the `items()` function to return all key-value pairs in the dictionary.
 
   ```python
   # Print out dict key-value pairs
