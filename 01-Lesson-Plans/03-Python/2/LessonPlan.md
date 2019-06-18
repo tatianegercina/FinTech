@@ -546,7 +546,7 @@ Ask if there are any questions before moving on.
 
 ### 6. Student Do: Trading Log (15 min)
 
-In this activity, students will use lists to create a trading log that tracks profits and losses for each market day of the month. They will iterate over the list to calculate the highest and lowest profit and loss days. The goal of this activity is to use for loops and lists in order to track multiple data points. 
+In this activity, students will use lists to create a trading log that tracks profits and losses for each market day of the month. They will iterate over the list to calculate the highest and lowest profit and loss days. The goal of this activity is to use for loops and lists in order to track metrics related to trading performance.
 
 **File:** [trading_log.py](Activities/04-Stu_Iterate_Lists/Unsolved/trading_log.py)
 
