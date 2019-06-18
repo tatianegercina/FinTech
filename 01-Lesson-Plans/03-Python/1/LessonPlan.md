@@ -653,7 +653,7 @@ In this activity, students will create a Python script that implements condition
 
 **File:** [conditionals.md](Activities/07-Stu_Conditionals/Solved/conditionals.py)
 
-Take some time now to gauge students' level of comfort with conditionals. You can say something like: 
+Take some time to walk through the solution and present the following points while gauging students' level of comfort with conditionals. You can say something like: 
 
 "You've just learned a lot of new syntax and keywords. We've also introduced logical and comparison operators, and if-else statements are about to become your best friend. Let's reflect for a minute.  What makes sense, and what is still confusing? Is anything a point of frustration?"
 
@@ -663,7 +663,7 @@ Be prepared to explain the following, for example:
 
   *  `==` checks to see if a value equals another; it double checks equality. (Like all work, you want to double check what you're doing!) So when you're basing a condition on equality, you should double check what's being compared. You don't want to compare apples to oranges. They'll never be equal!
 
-  * `=` is used to set and put values in a variable; it is used to asset and declare that a variable is something. You're not comparing it; you know for sure this is the answer. Think back to algebra, for example. When you finish showing your work and steps in the calculation, you declare that `x = <some value>`. This is exactly how using the `=` works when declaring variables. You're declaring rather than evaluating.
+  * `=` is used to set and put values in a variable; it is used to assess and declare that a variable is something. You're not comparing it; you know for sure this is the answer. Think back to algebra, for example. When you finish showing your work and steps in the calculation, you declare that `x = <some value>`. This is exactly how using the `=` works when declaring variables. You're declaring rather than evaluating.
 
 * It's difficult to remember when to use greater than `>` and less than `<` operators, and when to use greater than or equal to `>=` and less than or equal to `<=`.
 
@@ -673,7 +673,7 @@ Be prepared to explain the following, for example:
     
   * If we were to write a program to check whether someone's age meets the legal conditions, we would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 21 cannot drink.
   
-Tell students to look at the following code. Are the results as expected, based on the logic? What are two ways to fix the logic (switch from using `>` to `>=`, or check `if age > 20`)? 
+Tell students to look at the following code. Are the results as expected, based on the logic? What are two possible ways to fix the logic? (Answer: 1. switch from using `>` to `>=` or 2. check `if age > 20`). 
 
   ```python
   age = 21
