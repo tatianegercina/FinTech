@@ -1,4 +1,4 @@
-## Pseudocoding 
+## Conditionally Yours Part I 
 
 In this activity, you will pseudocode a solution for identifying whether or not a stock should be purchased, based on the percent increase or decrease in stock price. Then, you will implement your algorithm. 
 
