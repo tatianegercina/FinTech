@@ -865,7 +865,7 @@ In this activity, students will practice creating a dictionary, as well as updat
 
 Open the solution file, `market_cap.py`, and explain the following:
 
-* The `banks` dictionary is heterogeneous, containing both int and float data types.
+* The `banks` dictionary is heterogeneous (different data types), containing both int and float data types (last value is a float).
 
   ```python
   # Initialize a dictionary of banks and market caps (in billions)
@@ -898,9 +898,7 @@ Open the solution file, `market_cap.py`, and explain the following:
     small_caps = []
   ```
 
-* Comparing against dictionary values allows us to pull the associated key for the corresponding action. 
-
-* Here, `market_cap` is compared to the running `minimum_value` and `maximum_value` variables to pull the corresponding key associated with those calculated values.
+* Conditionals compared against dictionary values allows us to pull the associated key for the corresponding action. Here, `market_cap` is compared to the running `minimum_value` and `maximum_value` variables to pull the corresponding key associated with the calculated values.
 
   ```python
   # Iterate over key-value pairs of the dictionary
@@ -931,7 +929,7 @@ Open the solution file, `market_cap.py`, and explain the following:
   Smallest Bank: Republic Bancorp
   ```
 
-* Similar to the determination of the banks associated with the minimum and maximum market cap values, it is possible to group banks by their associated market cap values.
+* Similar to the conditional logic used to determine the banks associated with the minimum and maximum market cap values, it is possible to group banks by their associated market cap values.
 
   ```python
   # Group banks by categories of market caps
