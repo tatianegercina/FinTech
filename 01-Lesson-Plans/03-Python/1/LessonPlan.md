@@ -1157,7 +1157,7 @@ Answer any remaining questions before moving on.
 
 **File:** [Homework Instructions](../../../02-Homework/03-Python/Instructions/README.md)
 
-Take a few moments to show students the homework that they will be working on this week. Explain that they will be building the skills to complete this assignment during this week's classes.
+Take a few moments to overview the instructions to the homework and give students an idea of the kind of concepts that will be required to complete the assignment. Explain that they will be building the skills to complete this assignment during this week's classes.
 
 Congratulate students on making it through their first lesson on programming! Offer some words of encouragement such as:
 
