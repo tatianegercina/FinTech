@@ -28,7 +28,7 @@ Using JupyterLab, walk through the following steps:
 
 * Click **Run**. 
 
-### Bonus 
+### Challenge 
 
 Create a text file in your `Jupyter-Workspace` directory. In this file, input a message that states whether or not the environment is up and running by following these steps:
 
