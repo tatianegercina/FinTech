@@ -494,21 +494,27 @@ Ask if there are any questions before moving on.
 
 **File:** [iterate_lists.py](Activities/03-Ins_Iterate_Lists/Solved/iterate_lists.py)
 
-Introduce the concept of iterating through a list in Python: 
+Introduce the concept of iterating over a list in Python: 
 
-* Iterating through lists is a powerful programming tool that will allow you to automate financial analysis and pipelines that assess collections of data points. 
+* Iterating over lists is a powerful programming tool that will allow you to automate financial analysis and pipelines that assess collections of data points. 
 
-* Learning how to iterate lists and execute operations against each element in a list puts you one step closer to creating programs that are completely automated.
+* Learning how to iterate over lists and execute operations against each element in a list puts you one step closer to creating programs that are completely automated.
 
 Open `iterate_lists.py` and cover the following points:
 
 * In Python, certain objects are considered **iterators**, or iterable objects. Iterators are objects that can be iterated on, meaning that you can loop through each value. Lists are iterators because you can loop through every element in the list.
 
-* In this example, each value of the `tips` list can be accessed using the `tip` variable. 
+* In this example, each value of the `cash_tips` list can be accessed using the `tip` variable. 
 
     * During each loop, the next value in the list is assigned to `tip` and can be used within the loop. 
     
     * When there are no more values, the loop ends.
+
+    ```python
+    # Showcase every tip in the list
+    for tip in cash_tips:
+    print(tip)
+    ```
 
 * The `+=` operator is used to cumulatively sum up numerical values when looping through a list. The following code snippets are operationally equivalent.
 
@@ -522,7 +528,7 @@ Open `iterate_lists.py` and cover the following points:
   total = total + tip
   ```
 
-* Conditionals can simulate common functions, such as calculating the `minimum` and `maximum` metrics within a list of values.
+* Iterating over lists while employing conditionals can simulate the calculation of common functions, such as calculating the `minimum` and `maximum` metrics within a list of values. As the list loops through each element, the variables `minimum` and `maximum` are continually compared to each element of the list to determine the value within the list that is the `minimum` and `maximum` value.
 
   ```python
   # Logic to determine minimum and maximum values
