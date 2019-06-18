@@ -920,7 +920,7 @@ Encourage students to spend some additional time at home reviewing `for` and `wh
 
 - - -
 
-### 14. Student Do: For Loops (15 mins)
+### 14. Student Do: Loop De Loop (15 mins)
 
 In this activity, students will work with for loops in a Python file. The objective is to adapt the for loop concepts and actions in the previous instructor demo by creating a cheerleading Python program that loops through the characters of a string.
 
@@ -930,7 +930,7 @@ In this activity, students will work with for loops in a Python file. The object
 
 - - -
 
-### 15. Instructor Do: Review For Loops (5 mins)
+### 15. Instructor Do: Review Loop De Loop (5 mins)
 
 **File:** [cheer.py](Activities/09-Stu_Loops/Solved/cheer.py)
 
