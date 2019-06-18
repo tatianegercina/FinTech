@@ -8,12 +8,10 @@ Today’s class will focus on list and dict data structures and how to iterate o
 
 By the end of class, students will be able to:
 
-* Recap previous Python concepts and implementations: variables, conditionals, and for loops. 
-* Identify the differences between homogeneous and heterogeneous data. 
+* Identify the differences between homogeneous (same data type) and heterogeneous data (different data type). 
 * Access and manipulate data within list and dict objects using index-based elements and key-value pairs, respectively. 
 * Iterate over lists and dicts. 
-* Visualize and traverse nested lists and dicts. 
-* Iterate over nested lists and dicts. 
+* Visualize and iterate over nested lists and dicts. 
 * Define and call functions. 
 
 - - -
