@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today’s class will focus on list and dict data structures and how to iterate over them. Students will work with nested lists and dicts, as well as utilize and define reusable code blocks known as functions. This lesson will introduce more advanced Python operations, such as accessing and manipulating data from data structures, and showcase the efficiency of working with functions.
+Today’s class will focus on list and dict data structures and how to iterate over them. Students will work with nested lists and dicts, as well as utilize and define reusable code blocks known as functions. This lesson will introduce more advanced Python operations, such as accessing and manipulating data from data structures, and showcase the efficiency of defining custom functions.
 
 ### Class Objectives
 
@@ -13,7 +13,7 @@ By the end of class, students will be able to:
 * Access and manipulate data within list and dict objects using index-based elements and key-value pairs, respectively. 
 * Iterate over lists and dicts. 
 * Visualize and iterate over nested lists and dicts. 
-* Define and call functions. 
+* Define and call custom functions. 
 
 - - -
 
@@ -75,15 +75,21 @@ Ask if there are any questions before moving on.
 
 **Note:** Keep discussion informal at the beginning of the lecture. Data structures are a complex topic, especially as students begin to learn the conceptual difference between variables, data types, and data structures.
 
-To introduce the topic of lists, remind students of what they have been doing so far. 
+To introduce the topic of lists, remind students of what they have accomplished so far: 
 
 * Students have worked with variables, conditionals, and for loops. 
 
-* They have been able to automate some processes, but each program they've run has required some degree of hard-coding one-dimensional values, which can be boring.
+* They have been able to automate some processes, but each program they've run has required some degree of hard-coding one-dimensional values, which can be tedious and often inefficient (hard-coding makes a program static rather than dynamic).
 
-Tell students that in this class, they will begin to store data as collections and process values iteratively. The world of automation is banging at their doors! 
+Tell students that in this class, they will begin to store data as collections and process values iteratively or repeatedly. The world of automation is banging at their doors! 
 
-Introduce lists with the following analogy: 
+Introduce the definition of lists: 
+
+* A **list** is a Python data structure that allows multiple values to be stored inside of it. 
+
+* List values can be retrieved, appended, removed, and iterated upon.
+
+Review lists with the following analogy: 
 
 * If Python commands and operations are like workers assigned specific tasks to do, lists are like the conveyor belt in the assembly line. 
 
@@ -97,13 +103,7 @@ Use an example from the previous lesson to illustrate the limitations of supplyi
 
 * The program would have been even better if it allowed for a series of words to be cheered; this would have made the cheers more dynamic and interesting. 
 
-Review the definition of lists: 
-
-* A **list** is a Python data structure that allows multiple values to be stored inside of it. 
-
-* List values can be retrieved, appended, removed, and iterated.
-
-Open the cheerleading program in JupyterLab. Run the code to show students how using a list changes the output of the program. 
+Open the following cheerleading program in JupyterLab. Run the code to show students how using a list allows for more words and ultimately changes the output of the program. 
 
     ```python
     # Create a variable named cheer
@@ -133,6 +133,7 @@ Open the slideshow and use slides 5-7 to discuss basic concepts related to lists
 * A list in Python is a collection of ordered elements or values, separated by commas, with an index of "zero" for the first element.
 
   ```python
+  # Index: 0 = "green", 1 = "blue", 2 = "red", 3 = "purple"
   color_hats = ["green", "blue", "red", "purple"]
   ```
 
@@ -185,7 +186,7 @@ Open the `lists.py` file and explain the following:
   Bulbasaur
   ```
 
-* Use `[start:end]` slice notation to specify elements from the starting index to the ending index. 
+* Use `[start:end]` syntax or slice notation to specify elements from the starting index to the ending index. 
 
   ```python
   # Print elements from index 2 to index 5
