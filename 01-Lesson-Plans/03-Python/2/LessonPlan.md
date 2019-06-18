@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today’s class will focus on list and dict data structures and how to iterate over them. Students will work with nested lists and dicts, as well as utilize and define Python functions. This lesson will introduce more advanced Python operations, such as accessing and manipulating data from data structures, and showcase the efficiency of reusable code blocks known as functions.
+Today’s class will focus on list and dict data structures and how to iterate over them. Students will work with nested lists and dicts, as well as utilize and define reusable code blocks known as functions. This lesson will introduce more advanced Python operations, such as accessing and manipulating data from data structures, and showcase the efficiency of working with functions.
 
 ### Class Objectives
 
