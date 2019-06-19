@@ -1637,13 +1637,13 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 20. Instructor Do: Reflection and End Class 
+### 20. Instructor Do: Reflection and End Class
 
-Use the last few minutes of class to give the students encouraging and positive feedback. Remind them that they're one step closer to conquering Python and becoming FinTech visionaries!
+Use the last few minutes of class to give the students encouraging and positive feedback. Remind them that they're one step closer to conquering Python and becoming Masters of FinTech!
 
 Then give students an opportunity to share any thoughts they have about this lesson and the course so far. Ask questions such as the following: 
 
-* What activity was the most enjoyable to complete? What was the most fulfilling activity?
+* What activity was the most enjoyable (fun) to complete? What was the most fulfilling (challenging) activity?
 
 * What do you find to be the most stressful aspect of programming?
 
