@@ -42,10 +42,10 @@ Your plot for the top 10 expensive neighborhoods was a good starting point, but 
 
 The final step on finishing this assignment to present the analysis results to investors is to assemble all your plots on a dashboard.
 
-* Reusing the code from the previous section, create a class called `PythonicMonopoly` and wrap your code on this class by creating a method for each plot. If you decide to go on the [Challenge](#Challenge) also include the map on the dashboard.
+* Reusing the code from the previous section, create function to create each plot. If you decide to go on the [Challenge](#Challenge) also include the map on the dashboard.
 * In addition to the plots, include one image and a descriptive text to the dashboard.
 * For this activity you can create a draft dashboard using Jupyter notebooks before creating the python script to launch the web application with the `Bokeh Server`.
-* Feel free to design the dashboard's layout at your convenience.
+* Feel free to design the dashboard's layout at your convenience, you can combine the Column, Row and Tabs layout objects.
 
 ### Challenge
 

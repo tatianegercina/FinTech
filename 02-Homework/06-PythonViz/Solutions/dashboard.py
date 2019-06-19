@@ -33,12 +33,17 @@ def housing_units_bar():
     plot_housing_units = df_housing_units.plot.bar()
     plot_housing_units.set_xlabel("Year", fontsize=12)
     plot_housing_units.set_ylabel("Housing Units", fontsize=12)
-    plot_housing_units.set_title("Housing Units in San Francisco from 2010 to 2016", fontsize=14, fontweight='bold')
+    plot_housing_units.set_title(
+        "Housing Units in San Francisco from 2010 to 2016",
+        fontsize=14,
+        fontweight="bold",
+    )
     plot_housing_units.set_ylim(
         housing_units_min - housing_units_std, housing_units_max + housing_units_std
     )
     plt.close(fig_housing_units)
     return pn.pane.Matplotlib(fig_housing_units)
+
 
 def costs_lines():
     df_avg_costs = (
@@ -68,6 +73,7 @@ def costs_lines():
     )
     return fig_costs
 
+
 def mean_sale_price():
     df_costs = sfo_data.groupby([sfo_data.index, "neighborhood"]).mean()
     df_costs.reset_index(inplace=True)
@@ -84,8 +90,9 @@ def mean_sale_price():
     sale_price_curve = sale_price_curve.opts(width=600, tools=["hover"])
     return sale_price_curve
 
+
 def top_expensive_bar():
-    
+
     expensive_neighborhoods = hv.Bars(
         expensive_data,
         ("neighborhood", "Neighborhood"),
@@ -100,6 +107,7 @@ def top_expensive_bar():
     )
     return expensive_neighborhoods
 
+
 def plot_paralell_coord():
     expensive_plot = px.parallel_coordinates(
         expensive_data,
@@ -108,6 +116,7 @@ def plot_paralell_coord():
     )
     return expensive_plot
 
+
 def plot_paralell_cat():
     expensive_plot = px.parallel_categories(
         expensive_data,
@@ -115,6 +124,7 @@ def plot_paralell_cat():
         color_continuous_scale=px.colors.sequential.Inferno,
     )
     return expensive_plot
+
 
 def plot_map():
     px.set_mapbox_access_token(open("mapbox_token").read())
@@ -133,37 +143,50 @@ def plot_map():
 
 
 # panel creation
-# panel creation
+title = pn.pane.Markdown(
+    """
+# Real State Analysis of San Francisco from 2010 to 2016
+""",
+    width=800,
+)
+
 # Logo license info: https://www.iconfinder.com/icons/56262/building_office_icon
-logo = """<img src="https://cdn0.iconfinder.com/data/icons/free-business-desktop-icons/256/Company.png"
-            width=150 height=127 align="left" margin=20px>"""
-title = "<h2>Real State Analysis from San Francisco</h2>"
+welcome = pn.pane.Markdown(
+    """
+This dashboard presents an analysis of historical prices of house units,
+sale price per square foot and gross rent in San Francisco, California from
+2010 to 2016.
 
-desc = pn.pane.HTML(
-    """This dashboard presents an analysis of historical prices of house units,
-    sale price per square foot and gross rent in San Francisco, California from
-    2010 to 2016.""",
-    width=450,
+![Logo](https://cdn0.iconfinder.com/data/icons/free-business-desktop-icons/256/Company.png)
+"""
 )
 
-text = pn.pane.Markdown("""
-    ![Logo](https://cdn0.iconfinder.com/data/icons/free-business-desktop-icons/256/Company.png)
-    
-    # Real State Analysis from San Francisco
-    
-    This dashboard presents an analysis of historical prices of house units,
-    sale price per square foot and gross rent in San Francisco, California from
-    2010 to 2016.
-""")
+# Single page panel dashboard
+# panel = pn.Column(
+#     pn.Column(title, welcome, width=800),
+#     pn.pane.Markdown("## Yearly Market Analysis"),
+#     pn.Row(housing_units_bar(), costs_lines()),
+#     pn.pane.Markdown("## Location Analysis"),
+#     plot_map(),
+#     pn.pane.Markdown("## Neigborhood Analysis"),
+#     mean_sale_price(),
+#     top_expensive_bar(),
+#     pn.Row(plot_paralell_coord(), plot_paralell_cat(), width=850),
+#     width=900
+# )
 
-panel = pn.Column(
-    text,
-    pn.Row(housing_units_bar(), costs_lines()),
-    plot_map(),
-    mean_sale_price(),
-    top_expensive_bar(),
-    pn.Row(plot_paralell_coord(), plot_paralell_cat()),
-    width=800
+# Tabbed panel dashboard
+tabs = pn.Tabs(
+    ("Welcome", welcome),
+    ("Yearly Market Analysis", pn.Row(housing_units_bar(), costs_lines())),
+    ("Location Analysis", plot_map()),
+    ("Neighborhood Analysis", pn.Column(top_expensive_bar(), mean_sale_price())),
+    (
+        "Parallel Plots Analysis",
+        pn.Row(plot_paralell_coord(), plot_paralell_cat(), width=850),
+    ),
 )
+
+panel = pn.Column(pn.Row(title), tabs, width=900)
 
 panel.servable()
