@@ -654,9 +654,9 @@ Open `csv_reader.py`. Walk through the demo and highlight the following:
 
 * CSV stands for comma-separated values. A CVS file follows a tabular form in which the first line is usually a header containing column names, and each subsequent line is a row containing values that intersect with each row-column pair.
 
-* The CSV module parses data in order to make it more easily accessible. 
+* The `csv` library parses data in order to make it more easily accessible. 
 
-* The CSV module includes a `reader()` function that parses CSV data by a separator or delimiter, and creates a `row` list object that contains the values for every row in the CSV data.
+* The `csv` library includes a `reader()` function that parses CSV data by a separator or delimiter, and creates a `row` list object that contains the values for every row in the CSV data.
 
   ```python
   csvreader = csv.reader(csvfile, delimiter=',')
@@ -690,6 +690,8 @@ Ask if there are any questions before moving on.
 
 ### 17. Student Do: Sales Analysis (15 min)
 
+In this activity, students will perform file I/O with a CSV file; students will read in a CSV file to calculate customer revenue averages and then output results back to a CSV file.
+
 **File:** [sales_analysis.py](Activities/10-Stu_CSV_Reader/Unsolved/Core/sales_analysis_core.py)
 
 **Instructions:** [README.md](Activities/10-Stu_CSV_Reader/README.md)
@@ -718,7 +720,7 @@ Open `sales_analysis.py` to review the solution. Explain the following:
       average = round(revenue / count, 2)
   ```
 
-* To add data to each row of the input CSV data, append to the `row` list object. 
+* To add data to each row of the input CSV data, append values to the `row` list object. 
 
   ```python
   # Append the average to the row
