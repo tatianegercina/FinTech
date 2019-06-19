@@ -361,7 +361,7 @@ Open `zero_coupon_bonds.py` to review the solution and explain the process of va
 
   * `years`: The number of years representing the duration of the bond.
 
-* After calculating the present value of the bond, compare it to its market price. The decision whether to purchase the bond is based on whether the bond is selling at a `discount` or `premium` in relation to its present value. 
+* After calculating the present value of the bond, compare it to its market price. The decision whether or not to purchase the bond is based on if the bond is selling at a `discount` or `premium` in relation to its present value. 
 
 Ask if there are any questions before moving on.
 
