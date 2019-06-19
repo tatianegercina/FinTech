@@ -439,6 +439,8 @@ Ask if there are any questions before moving on.
 
 ### 9. Student Do: Net Present Value (15 min)
 
+In this activity, students will use the `npv` function from the `numpy` library to calculate the net present value of three potential company projects (and their cash flows) and assess which is the optimal project to undertake. 
+
 **File:** [Starter Code](Activities/06-Stu_Imports/Unsolved/Core/net_present_value_core.py)
 
 **Instructions:** [README.md](Activities/06-Stu_Imports/README.md)
@@ -467,7 +469,7 @@ Ask if there are any questions before moving on.
 
 **File:** [file_io.py](Activities/07-Ins_File_IO/Solved/file_io.py)
 
-Begin your discussion of file I/O with the following introduction. 
+Begin your discussion of file I/O, or file inputs and outputs, with the following introduction. 
 
 * Data will not (and should not) always be hard-coded within a Python file. Often, data is saved within a file and accessed externally in order to perform some kind of data manipulation or analysis. 
 
@@ -475,17 +477,13 @@ Begin your discussion of file I/O with the following introduction.
 
 * Python natively supports the input and output of files, and the pathlib library makes file pathing easy.
 
-Insert instructor action/direction here that describes the process/procedure we will walk through next. 
-
-* Open Terminal (Mac) or Git Bash (Windows) and navigate to the project folder. 
+Then, open Terminal (Mac) or Git Bash (Windows) and navigate to the project folder. 
 
 * Run `pwd` to show where the current folder is located.
 
 * Open Finder (Mac) or Explorer (Windows) to check the location of the script files and the resource file. 
 
-  **Note:** Before you explain how to utilize `pathlib` and its associated functions, it is important students understand the absolute and relative locations of the project folder and the files. 
-
-Walk through the demo and highlight the following:
+Open the solution file and highlight the following:
 
 * `Path.cwd()` allows us to check our *current working directory* from where the Python program is executing.
 
@@ -575,7 +573,7 @@ Walk through the demo and highlight the following:
       line_num += 1
   ```
 
-* After a file is read and reaches the last line, no more lines can be read for that file object. This is why if we run both methods of reading in the file at one time, only the preceding file read operation (all lines at once) will output, as the subsequent file read operation (line by line) will have already reached the end of the file by this point.
+* After a file is read and reaches the last line, no more lines can be read for that file object. This is why if we run both methods of reading in the file in succession, only the preceding file read operation (all lines at once) will output, as the subsequent file read operation (line by line) will have already reached the end of the file by this point.
 
 * Writing to a text file is very similar to reading in a text file; the main difference is we use the `write()` function instead of the `read()` function.
 
