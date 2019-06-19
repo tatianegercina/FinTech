@@ -1625,7 +1625,11 @@ To guide students, you may want to follow up with questions such as:
 
 * Can functions accept other functions as arguments?
 
+    **Answer:** Yes, functions can be called within the definition of another function.
+
 * What would happen if you called a function within a `for` loop?
+
+    **Answer:** The function would be called multiple times until the end of the for loop.
 
 * What has been your experience working with functions so far?
 
