@@ -39,7 +39,7 @@ By the end of class, students will be able to:
 
 **File:** [Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit?usp=sharing)
 
-Welcome students back to class. Tell them that, in today's lesson, we will begin to apply Python implementation to financial concepts and use cases. Today will be fun! 
+Welcome students back to class. Tell them that, in today's lesson, we will begin to apply Python concepts to financial use cases. Today will be fun! 
 
 Use the slides to review the lesson agenda and the topics covered so far. 
 
