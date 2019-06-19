@@ -1,6 +1,6 @@
 ## Sugar, Flour, Butter!
 
- ## Background
+### Background
  
  Mike needs to plan his grocery list so that he can buy the ingredients needed to make some delicious apple pie. Help Mike create and modify his list of groceries before he leaves for the supermarket. Then help him cross off items as he gathers the ingredients he needs.
 

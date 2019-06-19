@@ -38,9 +38,9 @@ Use the [starter-file](Unsolved/finally_functioning.py) provided to complete the
 
 3. Initialize `ending_balance` to 45000.00.
 
-4. Initialize `years` 1.0.
+4. Initialize `years` to 1.0.
 
-5. Call `calculate_compound_growth_rate()` and capture the results with above values as `year_one_growth`.
+5. Call `calculate_compound_growth_rate()` and use the above values (steps 3-5) to calculate and capture the result as `year_one_growth`.
 
 6. Update `beginning_balance` to 45000.00.
 
