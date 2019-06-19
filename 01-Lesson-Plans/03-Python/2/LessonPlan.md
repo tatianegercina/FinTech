@@ -1353,7 +1353,7 @@ Ask if there are any questions before moving on.
 
 Open the slideshow and go to the slides on functions. Explain the following:
 
-* This section on functions is meant to help write programs with modularity. **Modularity** is the degree to which components or parts can be separated or decoupled from a whole.
+* This section on functions is meant to help write programs with modularity. **Modularity** is the degree to which code components or parts can be separated or decoupled from a whole.
 
 * **Modularity** greatly improves code readability and ensures that reusable lines of code are reused in an efficient, effective way.
 
@@ -1361,17 +1361,22 @@ Open the slideshow and go to the slides on functions. Explain the following:
 
 Define functions. 
 
-* **Functions** offer a methodology for splitting up blocks of code that are redundant or need to be reused. 
+* **Functions** are blocks of callable, reusable code that often perform repeated programmatic actions. Functions can optionally take in inputs or *parameters*. 
 
-* Functions are valuable because they make programs more modular and reusable. 
+* Functions are valuable because they make programs more more readable, modular, and reusable. 
 
 * Functions can be created by a developer or imported from a library. 
 
   ```python
   import math
+  print('pi is', math.pi)
   ```
 
-Explain what "reinventing the wheel" means and the drawbacks of not leveraging reusable/repeatable assets.
+  ```
+  pi is 3.141592653589793
+  ```
+
+Explain that "reinventing the wheel" means to do something that has already been done. Therefore, explain the drawbacks of not leveraging reusable/repeatable assets and ultimately how functions fit into this analogy.
 
 Engage students by asking if they can remember any of the functions used in class so far. For example: 
 
