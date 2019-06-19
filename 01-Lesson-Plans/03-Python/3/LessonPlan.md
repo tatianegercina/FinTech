@@ -301,7 +301,7 @@ Ask if there are any questions before moving on.
 
 This section will focus on core financial calculations in Python. Use the slides to explain concepts related to time value of money. Students should understand that these calculations are fundamental to financial analysis, and that they will actually be writing code for each of these formulas. 
 
-**Note:** Leverage the knowledge of students with a finance background by asking them to help explain time value of money and how it is used. 
+**Note:** When going over the slides, leverage the knowledge of students with a finance background by asking them to help explain time value of money and how it is used. 
 
 Open the slideshow to the slides about time value of money. Be sure to highlight the following:
 
