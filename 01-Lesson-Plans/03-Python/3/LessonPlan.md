@@ -579,7 +579,7 @@ Open the solution file and highlight the following:
 
 - - -
 
-### 12. Student Do: File Manipulation (15 min)
+### 12. Student Do: E-Commerce Traffic (15 min)
 
 In this activity, students will perform file I/O by parsing a text file and calculating the sum and average of customer e-traffic to then write the results back out to a text file.
 
@@ -587,7 +587,7 @@ In this activity, students will perform file I/O by parsing a text file and calc
 
 **Instructions:** [README.md](Activities/08-Stu_File_IO/README.md)
 
-### 13. Instructor Do: Review File Manipulation (5 min)
+### 13. Instructor Do: Review E-Commerce Traffic (5 min)
 
 **File:** [Solution](Activities/08-Stu_File_IO/Solved/ecommerce_traffic.py)
 

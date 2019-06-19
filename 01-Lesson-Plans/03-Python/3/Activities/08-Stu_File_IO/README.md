@@ -10,7 +10,7 @@ Using the starter file, complete the following steps.
 
 2. Set the file path for the `customer_traffic.txt` data file.
 
-3. Initialize the `customer_total` and `day_count` variables that will hold the total and count of the number in the text file, respectively.
+3. Initialize the `customer_total` and `day_count` variables that will hold the total and count of the numbers in the text file, respectively.
 
 4. Use the file path pointing to the `customer_traffic.txt` data file to open the file as an object.
 
