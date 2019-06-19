@@ -1525,7 +1525,7 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 18. Student Do: Functions (20 min)
+### 18. Student Do: Finally Functioning (20 min)
 
 In this activity, students will define a function to calculate compound annual growth rate (CAGR) for an investment portfolio. The goal of this activity is for students to use functions to modularize code and reduce redundancy.
 
@@ -1535,7 +1535,7 @@ Encourage students to work with a partner on this activity.
 
 **Instructions:** [README.md](Activities/10-Stu_Functions/README.md)
 
-### 19. Instructor Do: Review Functions (10 min)
+### 19. Instructor Do: Review Finally Functioning (10 min)
 
 **File:** [finally_functioning.py](Activities/10-Stu_Functions/Solved/finally_functioning.py)
 
