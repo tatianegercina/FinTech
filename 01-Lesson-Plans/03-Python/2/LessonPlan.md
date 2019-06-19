@@ -970,13 +970,13 @@ Ask if there are any questions before moving on.
 
 * [nesting_dict_of_dicts.py](Activities/07-Ins_Nesting/Solved/nesting_dict_of_dicts.py)
 
-Introduce nesting by explaining that lists and dicts are really just data containers.
+Introduce nesting by explaining that lists and dictionaries are really just data containers.
 
-* The values in a list or dict can actually be other lists and dicts. This means that you can have a list of dictionaries or a dictionary where each value is a list. You can also have lists of lists and dicts of dicts! 
+* The values in a list or dictionary can actually be other lists and dictionaries. This means that you can have a list of dictionaries or a dictionary where each value is a list. You can also have lists of lists and dictionaries of dictionaries! 
 
 * This concept is called **nesting**, which is a powerful feature of the Python language because it provides a lot of flexibility for how data is stored.
 
-Walk through the solution and highlight the following:
+Walk through each corresponding solution and highlight the following:
 
 * Lists of lists contain multiple list elements. 
 
@@ -996,7 +996,7 @@ Walk through the solution and highlight the following:
   ]
   ```
 
-* When a nested list object has been created, data needs to be retrieved. Accessing elements in a nested list works similar to a one-dimensional list: 
+* When a nested list object has been created, the next step is to access the data. Accessing elements in a nested list works similar to a one-dimensional list: 
 
     * To access elements, call the list object and then specify the index for the desired value. 
     
@@ -1027,7 +1027,7 @@ Walk through the solution and highlight the following:
   print(f"{first_entry_name} is {first_entry_age} years old, serving as {first_entry_occupation}.")
   ```
 
-* Lists of dicts are similar to lists of lists; however, the nested level is comprised of dicts rather than lists.
+* Lists of dictionaries are similar to lists of lists; however, the nested level is comprised of dictionaries rather than lists.
 
   ```python
   # List of Dicts
@@ -1050,11 +1050,11 @@ Walk through the solution and highlight the following:
   ]
   ```
 
-* Access and manipulate nested dict objects in the same way as dictionaries. 
+* Access and manipulate nested dictionary objects in the same way as dictionaries. 
 
-    * To retrieve data from a list with nested dict objects, call the list with the index of the dict element that is desired. This will return the entire dictionary. 
+    * To retrieve data from a list with nested dictionary objects, call the list with the index of the dictionary element that is desired. This will return the entire dictionary. 
     
-    * If a specific dict value is desired, call the list with the index of the dict element and the corresponding dict key.
+    * If a specific dictionary value is desired, call the list with the index of the dictionary element and the corresponding dictionaryWalk through the solution key.
 
   ```python
   # List of Dicts
@@ -1087,9 +1087,9 @@ Walk through the solution and highlight the following:
   print(f"The second entry in ceo_nested_dict is {second_entry_name}, a {second_entry_age} year old {second_entry_occupation}.")
   ```
 
-Review how to declare and traverse nested dictionaries.
+Review how to declare and access nested dictionaries.
 
-* Dictionaries of lists are objects based on key-value pairs. Unlike regular dicts, dicts of lists have more than one entry for the value.
+* Dictionaries of lists are objects based on key-value pairs. Unlike regular dictionaries, dictionaries of lists have more than one entry for the value.
 
   ```python
   # Dict
@@ -1109,7 +1109,7 @@ Review how to declare and traverse nested dictionaries.
   }
   ```
 
-* Data can be accessed from dicts of lists by calling the dictionary and specifying the key for the desired entry. A specific value from the list object can be retrieved by providing the index.
+* Data can be accessed from dictionaries of lists by calling the dictionary and specifying the key for the desired entry. A specific value from the list object can be retrieved by providing the index.
 
   ```python
   # Dictionary of Lists
@@ -1131,7 +1131,7 @@ Review how to declare and traverse nested dictionaries.
   print(f"APPL ticker stands for {appl_name}. APPL stock price is currently {appl_stock_price}, and it is available on {appl_exchange}.")
   ```
 
-* Dictionaries of dicts are objects based on nested key-value pairs. Unlike dicts of lists, dicts of dicts will have a dictionary as the value.
+* Dictionaries of dictionaries are objects based on nested key-value pairs. Unlike dictionaries of lists, dictionaries of dictionaries will have a dictionary as the value.
 
   ```python
   # Dictionary of Dicts
@@ -1159,7 +1159,7 @@ Review how to declare and traverse nested dictionaries.
   }
   ```
 
-* The top-level dictionary item can be accessed by calling the dictionary and specifying the key. Individual elements in the value collection can be accessed by specifying the key of the nested dict.
+* The top-level dictionary item can be accessed by calling the dictionary and specifying the key. Individual elements in the value collection can be accessed by specifying the key of the nested dictionary.
 
   ```python
   # Dictionary of Dicts
@@ -1319,7 +1319,7 @@ Open the solution file, `weekly_gains.py`, and explain the following:
   print(historical_stock_data)
   ```
 
-* To calculate the weekly gains, take the closing prices of the first and last record of the list of daily prices for each stock ticker. The list index notations `list[0]` and `list[-1]` target the first and last elements of a list, respectively.
+* To calculate the weekly gains, use the closing prices of the first and last record of the list of daily prices for each stock ticker. The list index notations `list[0]` and `list[-1]` target the first and last elements of a list, respectively.
 
   ```python
   # Initialize 'results' dictionary to hold weekly change of each ticker
