@@ -1202,7 +1202,7 @@ Ask if there are any questions before moving on.
 
 ### 14. Student Do: Weekly Gains (20 min)
 
-In this activity, students will work with nested data structures in a Python file. Students will store daily stock data in a list and then store that list in a dictionary. The key of the dictionary will be the stock tickers. They will then retrieve stock data from the dictionary for specific days.
+In this activity, students will work with nested data structures. Students will store daily stock data in a list and then store that list in a dictionary. They will then retrieve stock data from the dictionary for specific days.
 
 Encourage students to work with a partner on this activity.
 
