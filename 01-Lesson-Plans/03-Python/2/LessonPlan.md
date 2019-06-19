@@ -1400,7 +1400,7 @@ Ask if there are any questions before moving on.
 
 **File:** [functions.py](Activities/09-Ins_Functions/Solved/functions.py)
 
-Open `functions.py` and facilitate a discussion focused on the following points: 
+Open `functions.py` and present to the class the following points: 
 
 * Functions allow you to define a reusable block of code. This code block (function) can be used whenever or wherever you need it within a program. 
 
@@ -1426,7 +1426,7 @@ def main():
 main()
 ```
 
-Review the mechanics of function inputs and outputs while showing the code:
+Then, review the mechanics of function inputs and outputs while showing the code:
 
 * Functions can have inputs. 
 
