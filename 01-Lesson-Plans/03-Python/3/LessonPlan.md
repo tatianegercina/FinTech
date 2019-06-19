@@ -373,7 +373,7 @@ This section is exciting because it showcases the power of imports in Python.
 
 Review the following points to motivate students and help them understand how powerful imports can be:
 
-* Imports is a powerful concept, allowing developers to share and use code that others have written. 
+* Imports is a powerful concept in which developers can plug-in pre-existing libraries into their own programs; Imports allow developers to share and use code that others have written.
 
 * Imports provide a way to "stand on the shoulders of giants" and leverage existing tools and libraries to build more sophisticated programs. Instead of building everything from scratch each time, you can use tools that have been built by other brilliant people to enhance your own code and build even greater programs!
 
@@ -403,7 +403,7 @@ Use the slides to discuss the theory behind NPV. Then, review the code in `impor
     hello!
     ```
 
-  * Import the specific attribute (e.g., function, variable) of the additional Python program into the namespace of the current Python program.
+  * Import the specific attribute (e.g., function, variable) of the additional Python program into the namespace, or scope, of the current Python program.
 
     ```python
     # Call the print_hello() function imported directly from functions.py
