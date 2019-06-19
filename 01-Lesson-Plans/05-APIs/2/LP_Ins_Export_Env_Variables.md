@@ -7,9 +7,9 @@ In the previous activity, students learned how to create and call **environment 
 * [keys.sh](Activities/06-Ins_Export_Env_Variables/Solved/keys.sh)
 * [keys.sh](Activities/06-Ins_Export_Env_Variables/Unsolved/keys.sh)
 
-Open the 5.2 slides, and address the following discussion points:
+Open the 5.2 slides, and highlight the following discussion points:
 
-* **Exporting** an **environment variable** exposes it to all applications and programs sharing the same parent process. Each application and program **inherits** the variable, which allows developers to make calls using `os.environ.get` to access the data stored in the variable.
+* **Exporting** an **environment variable** exposes it to all applications and programs sharing the same parent process (i.e. a terminal or Python kernel). Each application and program **inherits** the variable, which allows developers to make calls using `os.environ.get` to access the data stored in the variable.
 
 * The best way to **export** **environment variables** is to create a `keys.sh` file. The `keys.sh` **shell script** will contain commands that will create and **export** **environment variables**. The `keys.sh` approach is faster than exporting the variables individually.
 
@@ -21,7 +21,7 @@ Open the [starter-file](Activities/06-Ins_Export_Env_Variables/Unsolved/keys.sh)
   export QUANDL_API_KEY="zBR2ZoJGSxqe77s_YsAv"
   ```
 
-* Once the `keys.sh` file has been created, it has to be **executed**. Execution can occur manually, or it can be scheduled.
+* Once the `keys.sh` file has been created, it has to be **executed**. Execution can occur manually, or it can be scheduled. Navigate to where `keys.sh` is saved, and execute the following shell command:
 
   ```shell
   . ./keys.sh
