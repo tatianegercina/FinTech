@@ -2,16 +2,15 @@
 
 ### Overview
 
-This lesson focuses on financial functions, file I/O, and working with CSVs. Students will practice basic financial analysis principles in the context of both internal (hard-coded) and external (file I/O) manipulation of data.
+This lesson focuses on financial functions, file I/O, and working with CSVs. Students will practice basic financial analysis skills in the context of both internal (hard-coded) and external (file I/O) manipulation of data.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Recap previous Python concepts and implementations: variables, conditionals, lists and dicts, for loops, and functions. 
 * Define time value of money and explain how it relates to net present value via discounted future values/cash flows. 
 * Perform basic financial analysis from user-defined financial functions (NPV). 
-* Import additional Python libraries, both standard and custom.
+* Import standard and custom Python libraries.
 * Read and write text files. 
 * Identify tabular data and its form. 
 * Read and write CSV files. 
@@ -20,7 +19,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today’s class will introduce concepts like time value of money, zero-coupon bonds, and net present value. Be mindful of pacing as you review these topics; students need to have a thorough understanding of financial concepts and how they are used in order to develop mental frameworks for solving financial use cases. 
+* Today’s class will introduce concepts like time value of money, zero-coupon bonds, and net present value. Be mindful of pacing as you review these topics; students need to have a thorough understanding of financial concepts and how they are used in order to develop the perspective for solving financial use cases. 
 
 * Remember that students most likely have varying levels of finance experience. Therefore, make sure your lectures are clear and thorough for newcomers, while serving as interesting refreshers for veterans as well. 
 
@@ -28,7 +27,7 @@ By the end of class, students will be able to:
 
 * Remind students to activate their conda environment so that they can access libraries like NumPy, which they will need for this lesson. If they have issues importing the NumPy library, suggest running `conda install anaconda` or `conda install numpy`. The conda environment may not have included the Anaconda tools, as this is a common error. 
 
-* Make sure that students are properly setting their file paths when reading in files. Emphasize the difference between relative and absolute paths, and ensure that their paths are properly set. 
+* Make sure that students are properly setting their file paths when reading in files. Ensure that their paths are properly set and look out for erroneous relative or absolute paths.
 
 * The pathlib library allows students to ignore the differences between Windows OS `\` back slashes and Unix-based OS `/` forward slashes in regard to file paths. However, they should still be aware of these differences in case they are not able to access the pathlib library.
 
