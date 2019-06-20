@@ -4,7 +4,7 @@
 
 * [Slides]()
 
-Navigate to the 5.2 slides, and provide a brief overview of Plaid:
+Navigate to the 5.2 slides, and introduce the **Plaid** API by providing a brief overview:
 
 * **Plaid** is an API that brokers connections to users' bank accounts to create a one-stop shop experience for financial management. Typically when analyzing data cross multiple accounts, one would have to visit each financial institution and extract the desired data. **Plaid**  streamlines this process by offering a platform that will broker the request for data extraction so users do not have to manually do it.
 
