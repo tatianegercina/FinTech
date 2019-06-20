@@ -6,11 +6,11 @@ First, quickly present the following questions and answers:
 
 * What is git?
 
-  **Answer:** Git is a version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.
+  **Answer:** Git is a version-control system for tracking changes in files -- often from a coding and software development standpoint. Git is designed for coordinating work among programmers, but it can be used to track changes in any set of files.
 
 * What is a git repository?
 
-  **Answer:** A git repository is a remote or online file repository in which git tracks files and conducts version control as changes come about.
+  **Answer:** A git repository is a remote or online file repository in which git tracks files and conducts version control as changes are made.
 
 * What is a terminal/command prompt?
 
@@ -22,10 +22,21 @@ First, quickly present the following questions and answers:
 
 Then, perform a live demo while highlighting the following:
 
-* A git repository can be downloaded locally as a compresesd .zip file from the GitHub website.
+* A git repository can be downloaded locally as a compressed .zip file from the GitHub website.
 
   ![github-download](Images/github-download.png)
 
 * After unzipping or de-compressing the .zip file, the extracted git repository folder can be accessed through the terminal by performing a `cd` command to change directory inside the folder. The `ls` command with the `-l` parameter displays its contents in list format.
 
   ![terminal-git-repository](Images/terminal-git-repository.png)
+
+* The `vi` command is a utility for editing text files directly from the command line. Once in the editor, press `I` to insert text and then press the sequence `ESC`, `:wq!`, `ENTER` to save the file when finished. Conversely, the sequence `ESC`, `:q!`, `ENTER` would quit the file without saving.
+
+  ![terminal-vi](Images/terminal-vi.png)
+
+  ![terminal-vi-editor](Images/terminal-vi-editor.png)
+
+Here, the file `README.md` is created and saved within the local git repository; however, changes are still local and will need to be pushed to the remote repository.
+
+  ![git-local-change](Images/git-local-change.png)
+
