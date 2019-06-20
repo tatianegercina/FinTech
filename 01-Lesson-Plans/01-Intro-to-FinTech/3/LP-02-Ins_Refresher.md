@@ -42,7 +42,13 @@ Then, perform a live demo while highlighting the following:
 
   ![terminal-vi-editor](Images/terminal-vi-editor.png)
 
-Here, the file `README.md` is edited and saved within the local git repository; however, changes are still local and will need to be pushed to the remote repository.
+* Here, the file `README.md` is edited and saved within the local git repository; however, changes are still local and will need to be pushed to the remote repository.
 
   ![git-local-change](Images/git-local-change.png)
+
+* Files can be committed and changed on the git repository via the GitHub website.
+
+  ![git-upload-files](Images/git-upload-files.png)
+
+  ![git-remote-change](Images/git-remote-change.png)
 
