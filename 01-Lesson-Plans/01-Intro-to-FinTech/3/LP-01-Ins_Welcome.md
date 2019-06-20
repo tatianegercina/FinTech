@@ -1,35 +1,30 @@
-## 1.3 Lesson Plan - !
+## 1.3 Lesson Plan - FinTech Collaboration
 
 ---
 
 ### Overview
 
-Today's class will focus on the notion of using Monte Carlo simulations to forecast future results and make confident predictions supported by statistical evidence. Monte Carlo simulations are an important tool in emulating a real-world use case that involves a degree of randomness surrounding an event or outcome, and seeks to iterate `n` number of times to find the most probable result of a variable event as well as the range of results and their corresponding probabilities of occurring.
-
-In particular, stocks prices also tend to move somewhat randomly in such a way that there are varying probabilities to where the price may go or deviate from its average return (daily, weekly, monthly). Therefore, this lesson will teach students how to apply the concept of Monte Carlo simulations to predict future stock prices and therefore forecast the potential stocks returns of an initial investment, either as a single stock investment or as an investment in a portfolio.  
+In today's class, students will learn how to utilize the Git Command Line Interface (CLI) and create markdown files to generate FinTech case studies that can be collaboratively stored, accessed/modified, and previewed on an online git or file repository such as Github. A solid understanding of the git CLI as well as knowing how to create markdown files will serve students in helping them properly manage git repositories and construct visually enhanced README description files. 
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Define what a simulation is and why it's used.
-* Deconstruct the components of the Monte Carlo Simulation process: probability distributions and iterations.
-* Interpret probability distributions (normal/bell curve) and random number generators.
-* Comprehend the use of confidence intervals and what they suggest.
-* Implement a single Monte Carlo simulation on the future price trajectory of a stock.
-* Execute multiple Monte Carlo simulations on the future price trajectories of a stock.
-* Break down Portfolio Forecasting in the context of Monte Carlo Simulations on stock price trajectories and portfolio returns.
-* Implement multiple Monte Carlo simulations on the potential returns of a stock portfolio.
+* Configure the git CLI user credentials from the terminal
+* Comprehend the notion of git clone and local/remote branches
+* Modify git repositories by adding, committing, and pushing files
+* Create markdown files and implement its additional visual capabilities: text formatting, images, links
+* Collaboratively write a FinTech case study in markdown, hosted on an online git repository 
 
 ### Instructor Notes
 
-* Today's lesson deals heavily with statistical concepts, particularly probability. Try to be as clear as possible and be mindful of students who may become easily confused as this lesson will surely push the boundaries of most students' comfort levels when it comes to statistics.
+* Students may feel uneasy as today's lesson will continue their journey of using the terminal to interact with not just files on their local file system, but also files that are actively tracked via an online repository. Ease students' nerves by telling them that git is merely a command line tool -- a program that exists on the local file system that executes from the command line/terminal.
 
-* When overviewing the concept of probability distributions, also make sure to stress the notion of randomness. Probability merely implies that there is a chance that a specific result or event may occur but makes no guarantees, which is why results can differ with each iteration.
+* Make sure that by the end of class students have the tools to create well-presented markdown README files to host on their git repositories. They'll need these to showcase their git repositories (and the coding assets within) to potential employers in the future.
 
-* Once students are comfortable with probability distributions, namely normal distributions, students should be able to process the idea that Monte Carlo simulations on stock investments seeks to chart the different paths (and probabilities) in which a stock can vary about its average daily return. Overview the code in detail so that this becomes more apparent.
+* Students will need to have a good understanding of git branches and merges in order to effectively collaborate with others working in the same git repository. Otherwise, students may face merge conflicts that prevent them from pushing their file changes to the git repository.
 
-* Towards the end of class, students will begin applying Monte Carlo simulations to portfolio returns. Therefore, they will need to combine the concepts of portfolio optimization (taught in the Pandas unit) with the concept of portfolio forecasting (taught in today's lesson). Walk through the steps in details as students can easily get lost in this myriad of technical concepts!
+* Be mindful of students working in groups during the case study activity; some students may be less vocal than others. Walk around the room with the other TAs and try to make sure every student is actively engaged and has a voice in their respective groups.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
@@ -41,12 +36,12 @@ By the end of class, students will be able to:
 
 * [Slideshow](placeholder)
 
-Welcome students to the third day of APIs! Cover the following points:
+Welcome students to the third day of FinTech! Cover the following points:
 
-* The previous lessons focused on API calls and showcased the Plaid API to exemplify that students can leverage the power of external data sets and functionality. Today students will combine what they've learned so far on using APIs to pull in stock data and forecast single stock/portfolio returns using Monte Carlo simulations.
+* The previous lessons focused on introducing students to the FinTech course structure and discussed the history and current landscape of the FinTech ecosystem, as well as notable case studies of technological disruptors. Today students will combine what they've learned so far on the FinTech industry to collaboratively create their own FinTech case studies that can be hosted on online git repositories and previewed as visually enhanced markdown files.
 
-* Mention to the class that today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. Students should feel empowered as they are learning the ways in which they can use other curated data sets to analyze and generate insights on their own.
+* Mention to the class that today's goal is two-fold: one, to teach students how to manage their own git repositories as well as develop in shared ones, and two, to develop text-based assets (such as a FinTech case study) in markdown to provide visually appealing README files that can be previewed on the GitHub website (and showcased to potential employers). 
 
-* Students should be prepared to push their mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.  
+* Students will be put into groups and given a selection of FinTech case study proposals to choose from. Therefore, students will need to work collaboratively and generate a visually appealing document that can be hosted online -- that's where git CLI and markdown comes in! 
 
-* Energize your students! Today is the day where students move from historical to future-oriented analysis. Time to look into the crystal ball!
+* Energize your students! Today they'll be learning the same collaborative tools (git) that real developers and industry professionals use to share and build upon code.
