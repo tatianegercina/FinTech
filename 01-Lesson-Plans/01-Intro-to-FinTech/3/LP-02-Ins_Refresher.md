@@ -22,7 +22,13 @@ First, quickly present the following questions and answers:
 
 Then, perform a live demo while highlighting the following:
 
-* A git repository can be downloaded locally as a compressed .zip file from the GitHub website.
+* Git repositories can be created via the GitHub website. The option `Initialize this repository with a README` should be checked off to automatically deploy the repository once created.
+
+  ![github-website](Images/github-website.png)
+
+  ![github-create-repository](Images/github-create-repository.png)
+
+* A git repository can then be downloaded locally as a compressed .zip file from the GitHub website.
 
   ![github-download](Images/github-download.png)
 
@@ -36,12 +42,7 @@ Then, perform a live demo while highlighting the following:
 
   ![terminal-vi-editor](Images/terminal-vi-editor.png)
 
-Here, the file `README.md` is created and saved within the local git repository; however, changes are still local and will need to be pushed to the remote repository.
+Here, the file `README.md` is edited and saved within the local git repository; however, changes are still local and will need to be pushed to the remote repository.
 
   ![git-local-change](Images/git-local-change.png)
 
-* Git repositories can be created via the GitHub website. The option `Initialize this repository with a README` should be checked off to automatically deploy the repository once created.
-
-  ![github-website](Images/github-website.png)
-
-  ![github-create-repository](Images/github-create-repository.png)
