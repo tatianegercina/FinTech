@@ -1,6 +1,6 @@
 ### 2. Instructor Do: Refresher (10 mins)
 
-This activity gives students a quick re-cap on how to download a git repository (from the web app), use the terminal to navigate and create a new text file in the local repository folder, and upload the file back to the git repository (from the web app). This activity serves as a pre-cursor to the later git CLI activities as it showcases the limitations of merely downloading a repository as a local folder rather than performing a git clone in which git can track and compare changes.
+This activity gives students a quick re-cap on how to create and download a git repository (from the web app), use the terminal to navigate and create a new text file in the local repository folder, and upload the file back to the git repository (from the web app). This activity serves as a pre-cursor to the later git CLI activities as it showcases the limitations of merely downloading a repository as a local folder rather than performing a git clone in which git can track and compare changes.
 
 First, quickly present the following questions and answers:
 
@@ -40,3 +40,8 @@ Here, the file `README.md` is created and saved within the local git repository;
 
   ![git-local-change](Images/git-local-change.png)
 
+* Git repositories can be created via the GitHub website. The option `Initialize this repository with a README` should be checked off to automatically deploy the repository once created.
+
+  ![github-website](Images/github-website.png)
+
+  ![github-create-repository](Images/github-create-repository.png)
