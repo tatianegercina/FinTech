@@ -48,10 +48,10 @@ Then, perform a live demo while highlighting the following:
 
 * Files can be committed and changed on the git repository via the GitHub website.
 
-  ![git-upload-files](Images/git-upload-files.png)
+  ![github-upload-files](Images/github-upload-files.png)
 
-  ![git-remote-change](Images/git-remote-change.png)
+  ![github-remote-change](Images/github-remote-change.png)
 
 * The `README.md` preview via the Github website confirms the change.
 
-  ![git-remote-change-confirmation](Images/git-remote-change-confirmation.png)
+  ![github-remote-change-confirmation](Images/github-remote-change-confirmation.png)
