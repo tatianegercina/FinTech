@@ -1,6 +1,6 @@
 ### 2. Instructor Do: Refresher (10 mins)
 
-This activity gives students a quick re-cap on how to create and download a git repository (from the web app), use the terminal to navigate and create a new text file in the local repository folder, and upload the file back to the git repository (from the web app). This activity serves as a pre-cursor to the later git CLI activities as it showcases the limitations of merely downloading a repository as a local folder rather than performing a git clone in which git can track and compare changes.
+This activity gives students a quick re-cap on how to create and download a git repository (from the web app), use the terminal to navigate and edit a text file in the local repository folder, and upload the file back to the git repository (from the web app). This activity serves as a pre-cursor to the later git CLI activities as it showcases the limitations of merely downloading a repository as a local folder rather than performing a git clone in which git can track and compare changes.
 
 First, quickly present the following questions and answers:
 
