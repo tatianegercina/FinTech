@@ -1,4 +1,4 @@
-### 11 Group Do: Too many 10-K's!! (20 mins)
+### 11. Group Do: Too many 10-K's!! (20 mins) [Optional]
 
 * This is a group activity, so if students are not already sitting at tables that allow for easy grouping, it's a good idea to stop for a moment and form random groups.
 
