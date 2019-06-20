@@ -52,3 +52,6 @@ Then, perform a live demo while highlighting the following:
 
   ![git-remote-change](Images/git-remote-change.png)
 
+* The `README.md` preview via the Github website confirms the change.
+
+  ![git-remote-change-confirmation](Images/git-remote-change-confirmation.png)
