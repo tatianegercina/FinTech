@@ -40,14 +40,4 @@ Ask students the following guided question:
 
   **Answer** A FinTech **SDK** might provide a function that calculates **sharpe ratios**, which means users would not need to create this functionality themselves; they'd be able to use the **SDK** to extract historical stock data **AND** calculate **sharpe ratios**. The **requests** library would only support data extraction.
 
-If time remains, quickly introduce students to the **Plaid API**. Open the [Plaid API](https://plaid.com/?utm_source=google&utm_medium=search&utm_campaign=chocolate&utm_content=cookies&utm_term=plaid%20api&utm_creative=149410200448&gclid=CjwKCAjw3azoBRAXEiwA-_64OkzZwhwTZoku8kwXjYgyWCezY5zG2OTtCEf3MOcCubW2XPUPP4FIjxoCVMUQAvD_BwE) website, and highlight the following:
-
-* Indicate that the rest of the unit will be focused on using FinTech **SDKs** to automate financial analysis.
-
-* The **Plaid API** is an example of a FinTech **SDK**. **Plaid** is an API that brokers connections to users' bank accounts to create a one-stop shop experience for financial management. **Plaid** offers the following services:
-
-  * Help users monitor, budget, and gain insights from their personal finances
-
-  * Help users manage data from multiple accounts (i.e. savings, equity, investments, retirement) in one platform
-
-  * Up until now, students have been solely conducting quantitative analysis on investments. Students will now use **Plaid** to analyze financial data from more than one type of account in order to create a more comprehensive and holistic review of their portfolios.
+Ask students if there are any questions before moving on.
