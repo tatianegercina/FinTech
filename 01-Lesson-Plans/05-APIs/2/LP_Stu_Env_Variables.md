@@ -4,6 +4,8 @@ The previous modules focused on the instructor demoing how to use and store API 
 
 Working with environment variables can be a little tricky, especially if they are not declared and exported correctly. Make sure both TAs and yourself are circulating during this activity to help resolve any technical/environmental issues students may face.
 
+If students finish early, use the extra time to review the final two guided review questions from the next activity.
+
 **Files:**
 
 * [env_variables.ipynb](Activities/07-Stu_Env_Variables/Unsolved/env_variables.ipynb)
