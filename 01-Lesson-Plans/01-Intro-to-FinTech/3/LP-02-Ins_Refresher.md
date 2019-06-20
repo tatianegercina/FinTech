@@ -1,153 +1,27 @@
-### 2. Instructor Do: Probability Distribution of Potential Outcomes (10 mins)
+### 2. Instructor Do: Refresher (10 mins)
 
-Monte Carlo Simulations seek to explain the probability of potential outcomes for a randomly occurring event. Therefore, this activity provides a hands-on approach to introducing students to what a simple Monte Carlo simulation could look like and how to interpret the results.
+This activity gives students a quick re-cap on how to download a git repository (from the web app), use the terminal to navigate and create a new text file in the local repository folder, and upload the file back to the git repository (from the web app). This activity serves as a pre-cursor to the later git CLI activities as it showcases the limitations of merely downloading a repository as a local folder rather than performing a git clone in which git can track and compare changes.
 
-**Files:**
+First, quickly present the following questions and answers:
 
-* [coin_flip_simulation.ipynb](Activities/01-Ins_Inside_a_Monte_Carlo_Simulation/Solved/coin_flip_simulation.ipynb)
+* What is git?
 
-Walk through the solution and highlight the following:
+  **Answer:** Git is a version-control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files.
 
-* This solution represents a technical example to the Monte Carlo simulation use case presented in the previous activity (coin flip simulation). Therefore, the program flips a coin `10` times for `5` simulations to determine the frequency distribution of heads landed per simulation and the corresponding probability distribution of landing varying numbers (or ranges) of heads.
+* What is a git repository?
 
-* Make sure to import the `random` class from the `numpy` library which allows for randomizing a particular code process.
+  **Answer:** A git repository is a remote or online file repository in which git tracks files and conducts version control as changes come about.
 
-  ```python
-  # Import libraries and dependencies
-  from numpy import random
-  import pandas as pd
-  %matplotlib inline
-  ```
+* What is a terminal/command prompt?
 
-* The `choice` function from the `random` class, combined with the `p` parameter for setting the probability of random events, is used to randomly choose between the two outcomes of a coin: heads or tails. Therefore in this case, the `p` parameter is set to `[0.5, 0.5]` to represent a `50%` chance of a coin landing on heads and a `50` chance of a coin landing on tails.
+  **Answer:** A terminal/command prompt is a command line interpreter application in which users can execute commands to perform specific file system operations or run other existing programs residing on the file system.
 
-  ```python
-  # Print simulation iteration
-  print(f"Running Simulation {n+1}...")
+* What is GitHub?
 
-  # Set an empty list to hold flip results
-  flips = []
+  **Answer:** GitHub is a web-based file hosting service that is one of the many vendors that use Git for file version control.
 
-  # Set probability of events
-  probability = [0.5, 0.5]
+Then, perform a live demo while highlighting the following:
 
-  # Flip the coin several times
-  for i in range(num_flips):
-      # Random int: 0 or 1
-      coin_flip = random.choice(coin, p=probability)
+* A git repository can be downloaded as a .zip file from the GitHub website.
 
-      # Print flip result
-      print(f"  Flip {i+1}: {coin_flip}")
-
-      # Append flip result to list
-      flips.append(coin_flip)
-  ```
-
-  ![coin-flip-results](Images/coin-flip-results.png)
-
-* The resulting heads and tails outputs for each simulation of `10` coin flips are saved as individual columns to a Pandas DataFrame.
-
-  ```python
-  # Append column for each simulation and flip results
-  monte_carlo[f"Simulation {n}"] = pd.Series(flips)
-  ```
-
-  ![coin-flip-dataframe](Images/coin-flip-dataframe.png)
-
-* The following is a holistic view of the example Monte Carlo simulation program -- see, it's not that bad!
-
-  ```python
-  # Set number of simulations and coin flips
-  num_simulations = 5
-  num_flips = 10
-
-  # Set a list object acting as a coin: heads or tails
-  coin = ["heads", "tails"]
-
-  # Set probability of events
-  probability = [0.5, 0.5]
-
-  # Create an empty DataFrame to hold simulation results
-  monte_carlo = pd.DataFrame()
-
-  # Run n number of simulations
-  for n in range(num_simulations):
-
-      # Print simulation iteration
-      # print(f"Running Simulation {n+1}...")
-    
-      # Set an empty list to hold flip results
-      flips = []
-
-      # Flip the coin several times
-      for i in range(num_flips):
-        
-          # Random int: 0 or 1
-          coin_flip = random.choice(coin, p=probability)
-        
-          # Print flip result
-          # print(f"  Flip {i+1}: {coin_flip}")
-
-          # Append flip result to list
-          flips.append(coin_flip)
-
-      # Append column for each simulation and flip results
-      monte_carlo[f"Simulation {n}"] = pd.Series(flips)
-
-  # Print the DataFrame
-  monte_carlo
-  ```
-
-* Looping through the DataFrame containing the coin flip results while leveraging the `value_counts` function allows for counting the occurrences of the different heads-to-tails combinations of every simulation.
-
-  ![coin-flip-value-counts](Images/coin-flip-value-counts.png)
-
-* The conditional statements check to make sure that both the `heads` and `tails` keys are present in the Series object returned from the `value_counts` function. If one or the other key is not present, the missing key gets a `0` to account for the fact that the event did not occurr at all during the simulation (flipped 10 heads or flipped 10 tails).
-
-  ```python
-  # Append results of heads and tails to respective lists
-  # If `heads` and `tails key is present in the Series, append both results
-  if 'heads' in value_count.index and 'tails' in value_count.index:
-      heads.append(value_count['heads'])
-      tails.append(value_count['tails'])
-        
-  # If `heads` key is not present in the Series, append heads list with 0
-  # And append tails list with tails result (simulation must have returned all tails)
-  elif 'heads' not in value_count.index:
-      heads.append(0)
-      tails.append(value_count['tails'])
-        
-  # If `tails` key is not present in the Series, append tails list with 0
-  # And append heads list with heads result (simulation must have returned all heads)
-  elif 'tails' not in value_count.index:
-      tails.append(0)
-      heads.append(value_count['heads'])
-  ```
-
-* Creating a DataFrame from the list of heads per simulation and using the `plot` function with the `kind` parameter set to `hist` produces a histogram that showcases the frequency distribution of landed heads.
-
-  ![coin-flip-5-simulations](Images/coin-flip-5-simulations.png)
-
-* Remember that a histogram is not a bar graph; frequency values in histogram bars are determined by the area (length * width) of the bar, not by the height of the bar. This is because histograms deal with the frequency of values associated with *ranges* of numbers or *bins* rather than a single data point.
-
-* Without manually setting the `bins` parameter for a histogram, the plot defaults to `10` bars between the minimum and maximum data points provided. Sometimes this creates ranges deviating from what is being simulated. Therefore manually setting the `bins` parameter ensures that the histogram properly represents the edges of each bin, in this case bin edges of `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10`.
-
-  ![coin-flip-5-simulations-bins-off](Images/coin-flip-5-simulations-bins-off.png)
-
-  ![coin-flip-5-simulations-bins](Images/coin-flip-5-simulations-bins.png)
-
-* Setting the `density` parameter to `True` for the histogram plot function creates a frequency density histogram which can be used to showcase the probability distribution of potential outcomes. In this case, it can be interpreted that for an experiment of `5` simulations of `10` coin flips, we can expect approx `40%` of our simulations to land between `4-5` heads and another `40%` of our simulations to land between `5-6` heads. In addition, it could be said that `80%` of our simulations could land between `4-6` heads.
-
-  ![coin-flip-density-histogram](Images/coin-flip-density-histogram.png)
-
-* Unfortunately, the probability distribution of potential outcomes generated for a small number of simulations should not be trusted. This is because a small number of simulations cannot test every possible outcome and therefore may generate biased results that are not indicative of the true nature of the random process in the long-term. Therefore, increasing the simulation count to `100` provides a more reliable and continuous range of probable outcomes.
-
-  ![coin-flip-100-simulations](Images/coin-flip-100-simulations.png)
-
-* Increasing the simulation count yet again to `1000` produces even more potential outcomes and should be considered even more reliable in the long-term. It can be seen that landing heads `5-6` times is the most likely outcome in the long-term.
-
-  ![coin-flip-1000-simulations](Images/coin-flip-1000-simulations.png)
-
-* Notice that with an even larger number of simulations, the random process of flipping a coin begins to exhibit a bell-curve like nature to the probability of its potential outcomes. One in which probability is maximized at the middle of the distribution and decreases in probability as outcomes deviate left and right from the mean, otherwise known as the *mean* and *standard deviation*, respectively. This well-known phenomena is called the *normal distribution* or continuous probability distribution of a range of potential outcomes.
-
-  ![normal-distribution](Images/normal-distribution.png)
+  ![github-download](Images/github-download)
