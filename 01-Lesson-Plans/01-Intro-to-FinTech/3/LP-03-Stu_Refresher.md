@@ -18,4 +18,10 @@ Highlight the following points when it comes to setting up a git repository and 
 
   ![github-repo-unzipped](Images/github-repo-unzipped.png)
 
-* 
+* After modifying the `README.md` file on the local file system, changed files will have to be pushed or re-uploaded to the online repository.
+
+  ![github-file-upload-update](Images/github-file-upload-update.png)
+
+* GitHub should automatically be able to preview `.md` or *markdown* files as they contain style formatting elements. The GitHub website should automatically reflect the changes of the updated `README.md` file. If not, manually refresh the page.
+
+  ![github-readme-update](Images/github-readme-update.png)
