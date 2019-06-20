@@ -26,6 +26,6 @@ Then, perform a live demo while highlighting the following:
 
   ![github-download](Images/github-download.png)
 
-* After unzipping or de-compressing the .zip file, the extracted git repository folder can be accessed through the terminal by performing a `cd` command to change directory inside the folder. The `ls` command lists its contents.
+* After unzipping or de-compressing the .zip file, the extracted git repository folder can be accessed through the terminal by performing a `cd` command to change directory inside the folder. The `ls` command with the `-l` parameter displays its contents in list format.
 
   ![terminal-git-repository](Images/terminal-git-repository.png)
