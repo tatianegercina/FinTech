@@ -24,4 +24,4 @@ Then, perform a live demo while highlighting the following:
 
 * A git repository can be downloaded as a .zip file from the GitHub website.
 
-  ![github-download](Images/github-download)
+  ![github-download](Images/github-download.png)
