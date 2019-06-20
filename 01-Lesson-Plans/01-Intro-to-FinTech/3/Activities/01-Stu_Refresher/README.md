@@ -4,23 +4,23 @@ Create an online GitHub repository that will hold your future work assets that c
 
 ## Instructions
 
-* Walk through the following steps.
+Walk through the following steps.
 
-  1. Navigate to [github](www.github.com) and login with your credentials. 
+1. Navigate to [github](www.github.com) and login with your credentials. 
 
-  2. Create a new GitHub repository.
+2. Create a new GitHub repository.
 
-  3. Download the `.zip` file of the GitHub repository; extract the contents.
+3. Download the `.zip` file of the GitHub repository; extract the contents.
 
-  4. Modify the intiialized `README.md` file and insert a quick introduction about yourself:
+4. Modify the intiialized `README.md` file and insert a quick introduction about yourself:
 
-    * Who are you what's your background?
+  * Who are you what's your background?
 
-    * What are you looking to aspire to be?
+  * What are you looking to aspire to be?
 
-    * Why FinTech?
+  * Why FinTech?
 
-  5. Update the `README.md` file in your online GitHub repository.
+5. Update the `README.md` file in your online GitHub repository.
 
 ## Hints
 
