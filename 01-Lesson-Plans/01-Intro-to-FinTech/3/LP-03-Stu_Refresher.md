@@ -1,6 +1,6 @@
 ### 3. Students Do: GitHub README (15 mins)
 
-In this activity, students will emulate the preceding instructor activity by creating their own git repositories and modifying their README.md files to personalize their GitHub repositories. Additionally, they will begin organizing their repositories by setting up a folder hierarchy. 
+In this activity, students will emulate the preceding instructor activity by creating their own git repositories and modifying their README.md files to personalize their GitHub repositories.
 
 **Instructions:**
 
