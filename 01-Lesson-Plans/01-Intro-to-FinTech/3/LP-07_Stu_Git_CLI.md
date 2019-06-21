@@ -4,7 +4,7 @@
 
 * [README.md](Activities/02-Stu_Git_CLI/README.md)
 
-### 8. Instructor Do: Review Git (10 min)
+### 8. Instructor Do: Review GitHub Re-Organized (10 min)
 
 * Ask students for any questions they may have and take a few minutes to review any commands which weren't clear. Offer to help students with this throughout the day and during office hours.
 
