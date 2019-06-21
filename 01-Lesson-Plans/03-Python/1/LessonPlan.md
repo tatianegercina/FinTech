@@ -798,6 +798,7 @@ Introduce for loops by presenting the following scenario:
 At this point, transition to your discussion to for loops. Open the slideshow (slides 13–14) and cover the following:
 
 * We have already learned how to tell computers what to remember by using variables. We also learned how to tell computers to make simple decisions by using conditionals.
+
 Now we're going to tell computers to do what they do best: endlessly repeat an action.
 
 * The ability to endlessly repeat the same decision or action for a large dataset is very valuable, and something that computers can do way better than people can. Computers won't make as many mistakes, and they won't get tired! 
