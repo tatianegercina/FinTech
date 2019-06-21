@@ -76,5 +76,5 @@ Live demo the following walkthrough:
 
   ![git-branch-results](Images/git-branch-results.png)
 
-Make sure every student was able to successfully clone a repo, add file to the repo, commit the changes, and then push the changes to Github all from the command line.
+Make sure every student was able to successfully clone a repo, add files to the repo, commit the changes, and then push the changes to Github all from the command line.
 
