@@ -58,8 +58,7 @@ Among investors there are some foreign people that are not familiar with San Fra
 
 * On this plot show the location of all neighborhoods in San Francisco by coloring the points according to the average gross rent and sizing them according to the average sale price per square foot.
 * For this activity you will find the latitude and longitude of the center point of each neighborhood on the CSV file entitled `neighborhood_coordinates.csv`. Part of this challenge is to combine this information with the average values of *sales price price for square foot* and *gross rent* for each neighborhood.
-* If you have time, try to modify the data to create an animated map using the `Year` as `animated_frame` property on the scatter map plot.
-* In order to create maps visualizations using Plotly Express, you will need to create an account at [mapbox](https://www.mapbox.com/) and create an [access token](https://docs.mapbox.com/help/how-mapbox-works/access-tokens/#creating-and-managing-access-tokens).
+* In order to create maps visualizations using Plotly Express, you will need to create an account at [mapbox](https://www.mapbox.com/) and [create an access token](https://docs.mapbox.com/help/how-mapbox-works/access-tokens/#creating-and-managing-access-tokens).
 * Once you create your access token, open the `mapbox_token` text file, delete all the text an paste your token instead.
 
 ### Submission
