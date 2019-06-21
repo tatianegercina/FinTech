@@ -60,6 +60,7 @@ Among investors there are some foreign people that are not familiar with San Fra
 * For this activity you will find the latitude and longitude of the center point of each neighborhood on the CSV file entitled `neighborhood_coordinates.csv`. Part of this challenge is to combine this information with the average values of *sales price price for square foot* and *gross rent* for each neighborhood.
 * If you have time, try to modify the data to create an animated map using the `Year` as `animated_frame` property on the scatter map plot.
 * In order to create maps visualizations using Plotly Express, you will need to create a free account at [mapbox](https://www.mapbox.com/).
+* Once you get you API key, open the text file on `Solutions/mapbox_token`, delete all the text an paste you key instead.
 
 ### Submission
 
