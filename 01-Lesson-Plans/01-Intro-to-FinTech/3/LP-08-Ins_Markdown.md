@@ -22,7 +22,7 @@ Open the slideshow and present the following questions and answers:
 
   * Line Breaks
 
-  * Code snippets
+  * Text/Code snippets
 
   * Block quotes
 
@@ -43,3 +43,26 @@ Then, live demo the following while explaining the following points:
   ![markdown-text](Images/markdown-text.png)
 
   ![markdwon-text-results](Images/markdown-text-results.png)
+
+* Use the `---` syntax to put a line break underneath the repository name.
+
+  ![markdown-line-break](Images/markdown-line-break.png)
+
+  ![markdown-line-break-results](Images/markdown-line-break-results.png)
+
+* Use the \` backtick syntax to wrap text as snippets or (code) if applied.
+
+  ![markdown-text-code-snippet](Images/markdown-text-code-snippet.png)
+
+  ![markdown-text-code-snippet-results](Images/markdown-text-code-snippet-results.png)
+
+
+
+
+
+
+
+
+
+
+
