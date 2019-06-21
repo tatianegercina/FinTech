@@ -56,13 +56,20 @@ Then, live demo the following while explaining the following points:
 
   ![markdown-text-code-snippet-results](Images/markdown-text-code-snippet-results.png)
 
+* Use the `>` syntax to create a block quote with the following text `"...to boldly go where no one has gone before".`
 
+  ![markdown-blockquotes](Images/markdown-blockquotes.png)
 
+  ![markdown-blockquotes-results](Images/markdown-blockquotes-results.png)
 
+* Use the `[]()` syntax to create a directory for each folder in the repository.
 
+  ![markdown-links](Images/markdown-links.png)
 
+  ![markdown-links-result](Images/markdown-links-result.png)
 
+* Use the `![]()` syntax to add an image.
 
+  ![markdown-image-link](Images/markdown-image-link.png)
 
-
-
+  ![markdown-image-link-results](Images/markdown-image-link-results.png)
