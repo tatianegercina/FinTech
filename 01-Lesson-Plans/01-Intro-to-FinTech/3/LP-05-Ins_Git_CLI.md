@@ -36,33 +36,13 @@ Open the slideshow and go over slides 1-22. Highlight the following about git:
 
 * What is a git branch?
 
-  > A git branch is a derived version of another branch (often `master`).
+  > A git branch is a derived version of another branch (often `master`). In other words, a branch is just a copy of another branch.
 
+* What is Git's "Snapshot model":
 
+  > Git thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots."
 
-Explain that each version of the code lives on a different **branch**.
-
-* Explain that a **branch** is essentially a history of changes.
-
-* Explain that in this case we say that the `age analysis` branch **diverged** from the `master` branch.
-
-* Take a moment to demonstrate the difference between the files on the `age_analysis` and `master` branches.
-
-Explain that saving the age analysis code in a different branch gives our teammates a chance to review it for errors and offer suggestions.
-
-After the proposed change has been reviewed, we can update the `master` branch to include the changes in `age analysis` by doing a **merge**.
-
-Explain that **merging** two branches turns them into one.
-
-Explain that this is how we can work on new features or bugfixes without making changes to code we know is working.
-
-* Explain that this also makes easy to work with teammates, as people can avoid stepping on each others' toes by working on different branches.
-
-Finally, take a moment to review Git's "Snapshot model":
-
-> "...Git thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots."
-
-![Git Snapshot Model](https://git-scm.com/book/en/v2/images/snapshots.png)
+  ![Git Snapshot Model](https://git-scm.com/book/en/v2/images/snapshots.png)
 
 ### 17. Instructor Do: Adding Files from the Command Line (10 min)
 
