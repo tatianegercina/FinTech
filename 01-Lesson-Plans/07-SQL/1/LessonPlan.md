@@ -33,7 +33,7 @@ Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 Open the [slideshow](Slide-Shows/Introduction_to_SQL.pptx).
 
-Welcome students to class and congratulate them on making it through the project week. They have come very far since the beginning of the course and should feel proud of what they have accomplished so far!
+Welcome students to class and congratulate them on making it through 1/4 of the course! They have come very far since the beginning of the course and should feel proud of what they have accomplished so far!
 
 Go over the learning outcomes for the SQL unit and today's class objectives. (Slides 2–3)
 
