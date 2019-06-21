@@ -8,7 +8,7 @@ Live demo the following walkthrough:
 
   ![github-url](Images/github-url.png)
 
-* Run a `git clone` of the GitHub repository using the copied link. Copying a repository via the `git clone` command differs from just downloading a `.zip` file of the repository as the `git clone` command downloads a tracked git repository onto the local filesystem while the `.zip` file merely download the contents without any kind of tracking or version control involved.
+* Run a `git clone <repository link>` in the terminal to clone the repo to the current directory. Copying a repository via the `git clone` command differs from just downloading a `.zip` file of the repository as the `git clone` command downloads a tracked git repository onto the local filesystem while the `.zip` file merely download the contents without any kind of tracking or version control involved.
 
   ![git-clone](Images/git-clone.png)
 
@@ -18,40 +18,63 @@ Live demo the following walkthrough:
 
   ![git-repository-gitkeep](Images/git-repository-gitkeep.png)
 
-* Create a new repo.
-
-* From repo page, click the green box in the top right "Clone or download", select "Use SSH" and copy the link to the clipboard.
-
-  ![clone repo](Images/GitClone.gif)
-
-* Open terminal (or git-bash for Windows users) and navigate to the home folder using `cd ~`.
-
-* Type in `git clone <repository link>` in the terminal to clone the repo to the current directory. Once this has run, everyone should now see a folder with the same name as the repo.
-
-    ![terminal clone](Images/GitClone_command.png)
-
-* Open the folder in VS Code and create two python script files named `script01.py` and `script02.py`.
-
-* Once the files have been created, open up Terminal/git-bash and navigate to the repo folder. Run the following lines and explain each as you go through them.
+* Once the folders and files have been created, open up the terminal/git-bash and navigate to the root of the git repo folder. Run the following lines and explain each as you go through them.
 
   ```bash
-  # Displays that status of files in the folder
+  # Displays git untracked/tracked status of files in the folder
   git status
 
-  # Adds all the files into a staging area
+  # Adds all files and sub-folder files into a staging area
   git add .
 
-  # Check that thr files were added correctly
+  # Performed again to check that the files were added correctly
   git status
 
   # Commits all the files to your repo and adds a message
   git commit -m <add commit message here>
 
   # Pushes the changes up to GitHub
-  git push origin master
+  git push
   ```
 
-* Finally navigate to the repo on [Github.com](https://github.com/) to see that the changes have been pushed up.
+* Navigate to the repo on [Github.com](https://github.com/) to see that the changes have been pushed up.
+
+  ![git-push-results](Images/git-push-results.png)
+
+* Once the changes have been pushed up, open up the terminal/git-bash again and navigate to the root of the git repo folder. Run the following lines and explain each as you go through them.
+
+  ```bash
+  # Make sure the current branch is `master`
+  git checkout master
+
+  # Create a branch `backup` from the current branch `master`
+  git checkout -b backup
+
+  # Verify that the `backup` branch was created
+  git branch
+
+  # Add a quick note in the README file "This is a backup branch."
+  vi README.md
+
+  # Displays git untracked/tracked status of files in the folder
+  git status
+
+  # Adds all files and sub-folder files into a staging area
+  git add .
+
+  # Performed again to check that the files were added correctly
+  git status
+
+  # Commits all the files to your repo and adds a message
+  git commit -m <add commit message here>
+
+  # Pushes the changes up to GitHub
+  git push
+  ```
+
+* Navigate to the repo on [Github.com](https://github.com/) and see that the new branch and `README` changes have been pushed up.
+
+  ![git-branch-results](Images/git-branch-results.png)
 
 Make sure every student was able to successfully clone a repo, add file to the repo, commit the changes, and then push the changes to Github all from the command line.
 
