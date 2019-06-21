@@ -38,38 +38,42 @@ Then, live demo the following while explaining the following points:
 
   ![markdown-header-results](Images/markdown-header-results.png)
 
-* Use the `*` and `**` syntax to put the repository name in **italics** and the repository description in *bold*.
+* Use the `*` and `**` syntax to put the repository name in **italics** and the repository description in *bold*. Alternatively, the `*` syntax can represent a bullet point if used at the beginning of a new line.
 
   ![markdown-text](Images/markdown-text.png)
 
   ![markdwon-text-results](Images/markdown-text-results.png)
 
-* Use the `---` syntax to put a line break underneath the repository name.
+* Use the `---` syntax to put a line break underneath the repository name. A line break is a good idea when trying to separate areas of the document.
 
   ![markdown-line-break](Images/markdown-line-break.png)
 
   ![markdown-line-break-results](Images/markdown-line-break-results.png)
 
-* Use the \` backtick syntax to wrap text as snippets or (code) if applied.
+* Use the \` backtick syntax to wrap text as snippets or (code) if applied. Wrapping text as snippet or blocks can add emphasis to a specific item or code.
 
   ![markdown-text-code-snippet](Images/markdown-text-code-snippet.png)
 
   ![markdown-text-code-snippet-results](Images/markdown-text-code-snippet-results.png)
 
-* Use the `>` syntax to create a block quote with the following text `"...to boldly go where no one has gone before".`
+* Use the `>` syntax to create a block quote with the following text `"...to boldly go where no one has gone before".` Block quote formatting can be used when there is a large text excerpt or quote.
 
   ![markdown-blockquotes](Images/markdown-blockquotes.png)
 
   ![markdown-blockquotes-results](Images/markdown-blockquotes-results.png)
 
-* Use the `[]()` syntax to create a directory for each folder in the repository.
+* Use the `[]()` syntax to create a directory for each folder in the repository. Links are useful in directing a reader to different webpages.
 
   ![markdown-links](Images/markdown-links.png)
 
   ![markdown-links-result](Images/markdown-links-result.png)
 
-* Use the `![]()` syntax to add an image.
+* Use the `![]()` syntax to add an image. Images are useful in providing pictures and visuals to the markdown document.
 
   ![markdown-image-link](Images/markdown-image-link.png)
 
   ![markdown-image-link-results](Images/markdown-image-link-results.png)
+
+* As can be seen, the original markdown compared to the style formatted markdown looks as different as day and night! 
+
+Ask your students if they have any further questions before moving on.
