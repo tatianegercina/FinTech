@@ -66,7 +66,7 @@ Review the advantages of using Python.
 
   * Creating data visualizations with Python allows data elements and their complexity and relationships to be visualized. This is especially valuable for financial algorithms that require trend or time analysis. 
   
-  * More information about related FinTech Python libraries can be found [here](https://financetrain.com/best-python-librariespackages-finance-financial-data-scientists/).
+  * More information about FinTech-related Python libraries can be found [here](https://financetrain.com/best-python-librariespackages-finance-financial-data-scientists/).
 
 - - -
 
