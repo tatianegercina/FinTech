@@ -1,17 +1,10 @@
-### 6. Students Do: Adding more to the repo (15 min)
+### 7. Students Do: Adding more to the repo (15 min)
 
-**Instructions**
+**Instructions:**
 
-* Using the repo that just created, make or add the following changes:
+* [README.md](Activities/02-Stu_Git_CLI/README.md)
 
-    * Add new lines of code to one of the python files.
-    * Create a new folder.
-    * Add a file to the newly created folder.
-    * Add, commit and push the changes.
-    * Delete the new folder.
-    * Add, commit and push the changes again.
-
-### 7. Instructor Do: Review Git (10 min)
+### 8. Instructor Do: Review Git (10 min)
 
 Ask students for any questions students may have and take a few minutes to review any commands which weren't clear. Offer to help students with this throughout the day and during office hours.
 
