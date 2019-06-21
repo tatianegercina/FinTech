@@ -8,9 +8,15 @@ Live demo the following walkthrough:
 
   ![github-url](Images/github-url.png)
 
-* Run a `git clone` of the GitHub repository using the copied link.
+* Run a `git clone` of the GitHub repository using the copied link. Copying a repository via the `git clone` command differs from just downloading a `.zip` file of the repository as the `git clone` command downloads a tracked git repository onto the local filesystem while the `.zip` file merely download the contents without any kind of tracking or version control involved.
 
   ![git-clone](Images/git-clone.png)
+
+* Create three folders in the local git repository via the `mkdir` command: `Homework`, `CourseWork` and `Projects`. Add a `.gitkeep` file to each folder so that git knows to retain the folders as it refrains from keeping empty folders unless explicitly told.
+
+  ![git-repository-mkdir](Images/git-repository-mkdir.png)
+
+  ![git-repository-gitkeep](Images/git-repository-gitkeep.png)
 
 * Create a new repo.
 
