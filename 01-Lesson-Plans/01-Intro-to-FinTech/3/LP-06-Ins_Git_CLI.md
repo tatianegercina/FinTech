@@ -18,7 +18,7 @@ Live demo the following walkthrough:
 
   ![git-repository-gitkeep](Images/git-repository-gitkeep.png)
 
-* Once the folders and files have been created, open up the terminal/git-bash and navigate to the root of the git repo folder. Run the following lines and explain each as you go through them.
+* Once the folders and files have been created, open up the terminal/git-bash and navigate to the root of the git repo folder. Run the following lines to push the changes to the remote git repository and explain each as you go through them.
 
   ```bash
   # Displays git untracked/tracked status of files in the folder
@@ -41,7 +41,7 @@ Live demo the following walkthrough:
 
   ![git-push-results](Images/git-push-results.png)
 
-* Once the changes have been pushed up, open up the terminal/git-bash again and navigate to the root of the git repo folder. Run the following lines and explain each as you go through them.
+* Once the changes have been pushed up, open up the terminal/git-bash again and navigate to the root of the git repo folder. Run the following lines to create a new branch with a modified `README` and explain each as you go through them.
 
   ```bash
   # Make sure the current branch is `master`
