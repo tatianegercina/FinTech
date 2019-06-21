@@ -1,12 +1,32 @@
-### 5. Instructor Do: Intro to Git (30 min)
+### 5. Instructor Do: Git CLI (10 min)
 
-Explain to students that so far GitHub has really only been used as a sort of drop box to store our files. Although GitHub works well this way, it has far greater capability. Today there will be a deeper dive into what Git is and how to use it through the terminal to interact with Github.
+In this activity, students will be introduced to the git CLI, which will allow them to more efficiently track changes to a git repository by providing additional git operations.  
 
-**N.B.**: If teaching with VS Code, consider using the [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) extension to illustrate this section's concepts.
+**File** [Slideshow](Resources/Intro_to_Git.pptx)
 
-![Visualizing Git histories with the Git History plugin](https://raw.githubusercontent.com/DonJayamanne/gitHistoryVSCode/master/images/gitLogv2.gif)
+Open the slideshow and go over slides 1-22. Highlight the following about git:
 
-Open [Intro_to_Git](Resources/Intro_to_Git.pptx) to go over slides 1-22. Explain that Git is essentially a way for us to keep track of our work over time.
+* How does the GitHub web app and Git CLI differ?
+
+  **Answer:** The GitHub web app provides a convenient user interface for performing common git operations. The Git CLI, however, is a command line utility that provides all git operations and is generally more robust than a git-based graphical user interface (GUI). This is because more often then not, a GUI interacts with the underlying CLI to perform its functionality (ex. click a button that executes a command in the backend) and therefore is often a simplified version of the underlying functionality.
+
+* What other features does the Git CLI provide?
+
+  **Answer:** The Git CLI can perform many different kinds of git operations; however, popular commands are...
+
+    * git add
+
+    * git commit
+
+    * git push
+
+    * git pull
+
+    * git branch
+
+    * git checkout
+    
+Explain that Git is essentially a way for us to keep track of our work over time.
 
 * Explain that, whenever we get another piece of a project working, we can save the change with Git.
 
@@ -94,26 +114,3 @@ Have students follow along with creating a repo and adding files with Terminal/g
 * Finally navigate to the repo on [Github.com](https://github.com/) to see that the changes have been pushed up.
 
 Make sure every student was able to successfully clone a repo, add file to the repo, commit the changes, and then push the changes to Github all from the command line.
-
-### 18. Students Do: Adding more to the repo (15 min)
-
-**Instructions**
-
-* Using the repo that just created, make or add the following changes:
-
-    * Add new lines of code to one of the python files.
-    * Create a new folder.
-    * Add a file to the newly created folder.
-    * Add, commit and push the changes.
-    * Delete the new folder.
-    * Add, commit and push the changes again.
-
-### 19. Instructor Do: Review Git (10 min)
-
-Ask students for any questions students may have and take a few minutes to review any commands which weren't clear. Offer to help students with this throughout the day and during office hours.
-
-Explain to students that this will be the new, primary way of submitting homework to GitHub (no more manual uploads!).
-
-Reassure them that it's ok if this take some time to figure out. By the end of the course, they will be git ninjas!
-
-Encourage students to continue to add and commit their activities today into a repo for additional practice.
