@@ -1,5 +1,7 @@
 ### 7. Students Do: GitHub Re-Organized (15 min)
 
+In this activity, students use the Git CLI to clone their git repositories to their local file systems and add directories to their GitHub repositories. 
+
 **Instructions:**
 
 * [README.md](Activities/02-Stu_Git_CLI/README.md)
