@@ -1,4 +1,4 @@
-### 7. Students Do: Adding more to the repo (15 min)
+### 7. Students Do: GitHub Re-Organized (15 min)
 
 **Instructions:**
 
