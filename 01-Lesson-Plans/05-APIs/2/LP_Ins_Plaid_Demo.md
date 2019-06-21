@@ -1,0 +1,145 @@
+### 12. Instructor Do: Plaid Demo (15 mins)
+
+Students will receive an instructor-led demo of the Plaid API. The instructor will demonstrate to students how to connect to the Plaid sandbox from a Python environment.
+
+Have the `keys.sh` file prepared before class so that it does not need to be created during the activity.
+
+**Files:**
+
+* [keys.sh](Activities/12-Ins_Plaid_Demo/Solved/keys.sh)
+
+* [plaid_demo.ipynb](Activities/12-Ins_Plaid_Demo/Solved/plaid_demo.ipynb)
+
+Emphasize to students that one of the really cool things about **Plaid** is that it provides a developers **sandbox** for users to get started running with. The **sandbox** contains account data that can be used to test out connectivity to Plaid, as well as test out some of Plaid's functionality.
+
+* The **sandbox** is great because it gives developers a space to play with **Plaid** without having to connect personal bank accounts. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
+
+#### Prepare environment variables
+
+Open the [keys.sh starter file](Activities/12-Ins_Plaid_Demo/Solved/keys.sh), and set up your environment variables. If possible, complete this step prior to class.
+
+* **Plaid** uses three types of API keys (client id, public key, and sandbox secret key), which need to be saved as environment variables in `keys.sh` file. Keys can be found [here](https://dashboard.plaid.com/account/keys)
+
+  ```shell
+  export client_id="5d0a5ac0d5fa000013be98df"
+  export public_key="ce06372ecdf57655eef8a1acf3cf2a"
+  export sbx_secret_key ="e47940ef0912660ded9f636d9c3b16"
+  ```
+
+* Once complete, the `keys.sh` file will need to be sourced.
+
+  ```shell
+  source ./keys.sh
+  ```
+
+* Ask students if they have any questions before continuing.
+
+#### Install Plaid Library
+
+Because **Plaid** is offered as an SDK, the Python **requests** library doesn't need to be used. The functions provided by the **Plaid** SDK can be used to broker the same connection as the **requests** library.
+
+* The **Plaid** SDK has to be installed in order for it to be used. It can be installed using the `pip install` command.
+
+* Open a terminal, and execute the following command:
+
+  ```shell
+  pip install plaid-python
+  ```
+
+* Once **Plaid** is installed, it can be imported into Jupyter Lab.
+
+#### Execute Plaid Request
+
+Open the Jupyter [starter file](Activities/12-Ins_Plaid_Demo/Solved/plaid_demo.ipynb), and live code the following:
+
+* After the **Plaid** SDK is installed, it can be imported into Python using the **from** import command. **From** specifies to Python which module to look for. The **from** is then proceeded by the library to import.
+
+  ```python
+  from plaid import Client
+  ```
+
+* In order to make a request to the **Plaid** API, a `client` object needs to be created. This object will serve as the **client** in the **client/server model**. The `client` object will specify the API keys, as well as the desired **Plaid** environment.
+
+  ```
+  client = Client(client_id='***', secret='***', public_key='***', environment='sandbox')
+  ```
+
+* Since the client object requires the **Plaid** keys, the keys will need to be extracted using the `os.environ.get` function. Once these are stored as Python variables, they can be passed to the `client` object.
+
+  ```python
+  import os
+
+  plaid_client_id = os.environ.get("client_id")
+  plaid_public_key = os.environ.get("public_key")
+  plaid_sbx_secret_key = os.environ.get("sbx_secret_key")
+
+  client = Client(client_id=plaid_client_id, secret=plaid_sbx_secret_key, public_key=plaid_public_key
+  , environment='sandbox')
+  ```
+
+* **Plaid** offers three different environments for developers: sandbox, development, and production. The **sandbox** and **development** environments are unrestricted; however, **Plaid** bills for the use of the production environment. Since we are testing out the **sandbox**, the **sandbox** request url should be used.
+
+* **Plaid** offers a number of services, such as the ability to:
+
+  * Create an item that will hold account credentials
+
+  * Extract data about an account (i.e. transactions, balances, account type,etc.)
+
+  * Exchange a Plaid token for a token with a financial institution (i.e. Bank of America)
+
+The **Plaid** **sandbox** comes pre-loaded with financial institution data ready and available for use. This data can be leveraged to create new analytic pipelines. **Sandbox** data includes institution data, account information, transactions, investment records, and more. Data can be extracted using the **Plaid** API functions (i.e. get()).
+
+* Generate a list all of the institutions that have been loaded into the sandbox. This can be done by using the `Institutions.get` function, which accepts a **count** as an argument.
+
+  ```python
+  client.Institutions.get(10)
+  ```
+
+* Knowing the institutions available in the **sandbox** allows one to extract account data for that institution. In order to extract account data, **Plaid** will need to perform another level of authentication. This level of authentication requires the generation and exchange of a **public token** for an **access token**.
+
+  * Create a public token using an institution from the sandbox (i.e. ins_109512). The `client.Sandbox.public_token.create` function will create and return a **public token** for Houndstooth Bank. The function accepts two arguments: **institution** and **products**. **Products** can be understood as the types of datasets **Plaid** has available. These include, but are not limited to, transactions, income, and assets.
+
+    ```python
+    INSTITUTION_ID = "ins_109512"
+    create_tkn_response = client.Sandbox.public_token.create(INSTITUTION_ID, ['transactions','income','assets'])
+    ```
+
+* **Public tokens** can be exchanged for **access tokens**. **Access tokens** are needed to be able to access account details such as transactions. The exchange serves as an additional round of security. The `client.Item.public_token.exchange` function handles the exchange and returns an **access token**, **item id**, and **request id**. The `client.Item.public_token.exchange` function accepts one argument: the public_token returned in `create_tkn_response`.
+
+  ```python
+  exchange_response = client.Item.public_token.exchange(create_response['public_token'])
+  ```
+
+* The exchange response will contain the **access token** needed to get data from the `item` object.
+
+  ```python
+  access_token = exchange_response['access_token']
+  ```
+
+#### Wielding Plaid
+
+Once the **access token** is at hand, you can really start using **Plaid** to its fullest potential. You'll have access to a bunch of different accounts and transactions, all available for use. All that is needed is that **access token**.
+
+* Fetch all accounts at an institution
+
+  ```python
+  client.Accounts.get(access_token)
+  ```
+
+* Fetch transactions for a date range. Python date objects can be used to specify **start** and **end** dates.
+
+  ```python
+  start_date = '{:%Y-%m-%d}'.format(datetime.datetime.now() + datetime.timedelta(-30))
+  end_date = '{:%Y-%m-%d}'.format(datetime.datetime.now())
+
+  transaction_response = client.Transactions.get(access_token)
+  pretty_print_response(transactions_response['transactions'][:1])
+  ```
+
+Take some time to emphasize what it means to have this type of data provided by **Plaid**. Use FinTech use cases to help ground the discussion.
+
+* Imagine wanting to create some type of monitoring tool that flags transactions based off of certain rules (i.e. time of day, amount, time since last transaction, etc). Banks provide some of this functionality with their mobile apps, but rarely do they ever allow users to create custom rules. A developer could create an app that does just this, and he or should could use **Plaid** as their foundation. The sandbox data in **Plaid** could be used to begin development and testing. And once the app is ready for production, **Plaid** can be the mechanism that consumers use to connect their accounts.
+
+* Imagine wanting to create a digital dashboard for personal spending. **Plaid** is what can make this happen, providing the outlet for connecting to personal accounts, as well as a means to consolidate and extract data for aggregation. This means as developers we can provide our consumers with the look, feel, and functionality that we want: a financial digital dashboard for the people, by the people.
+
+If time remains, ask students for any thoughts or questions.
