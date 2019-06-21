@@ -52,13 +52,16 @@ Because **Plaid** is offered as an SDK, the Python **requests** library doesn't 
 
 Open the Jupyter [starter file](Activities/12-Ins_Plaid_Demo/Solved/plaid_demo.ipynb), and live code the following:
 
-* After the **Plaid** SDK is installed, it can be imported into Python using the **from** import command. **From** specifies to Python which module to look for. The **from** is then proceeded by the library to import.
+* After the **Plaid** SDK is installed, it can be imported into Python using the `import` command. Also import other libraries needed for this activity, including `os`, `json`, and `datetime`.
 
   ```python
-  from plaid import Client
+  import plaid
+  import os
+  import datetime
+  import json
   ```
 
-* In order to make a request to the **Plaid** API, a `client` object needs to be created. This object will serve as the **client** in the **client/server model**. The `client` object will specify the API keys, as well as the desired **Plaid** environment.
+* In order to make a request to the **Plaid** API, a `client` object needs to be created. This object will serve as the **client** in the **client/server model**. The `client` object will specify the API keys, as well as the desired **Plaid** environment. **Plaid** offers three different environments for developers: sandbox, development, and production. The **sandbox** and **development** environments are unrestricted; however, **Plaid** bills for the use of the production environment.
 
   ```
   client = Client(client_id='***', secret='***', public_key='***', environment='sandbox')
@@ -67,37 +70,26 @@ Open the Jupyter [starter file](Activities/12-Ins_Plaid_Demo/Solved/plaid_demo.i
 * Since the client object requires the **Plaid** keys, the keys will need to be extracted using the `os.environ.get` function. Once these are stored as Python variables, they can be passed to the `client` object.
 
   ```python
-  import os
+  PLAID_CLIENT_ID = os.environ.get("client_id")
+  PLAID_PUBLIC_KEY = os.environ.get("public_key")
+  PLAID_SBX_SECRET_KEY = os.environ.get("sbx_secret_key")
 
-  plaid_client_id = os.environ.get("client_id")
-  plaid_public_key = os.environ.get("public_key")
-  plaid_sbx_secret_key = os.environ.get("sbx_secret_key")
-
-  client = Client(client_id=plaid_client_id, secret=plaid_sbx_secret_key, public_key=plaid_public_key
+  client = Client(client_id=PLAID_CLIENT_ID, secret=PLAID_PUBLIC_KEY, public_key=PLAID_SBX_SECRET_KEY
   , environment='sandbox')
   ```
 
-* **Plaid** offers three different environments for developers: sandbox, development, and production. The **sandbox** and **development** environments are unrestricted; however, **Plaid** bills for the use of the production environment. Since we are testing out the **sandbox**, the **sandbox** request url should be used.
+Explain that data can be extracted from **Plaid** using the `GET` function. The **Plaid** **sandbox** comes pre-loaded with financial data ready and available for use. **Sandbox** data includes institution data, account information, transactions, investment records, and more.
 
-* **Plaid** offers a number of services, such as the ability to:
-
-  * Create an item that will hold account credentials
-
-  * Extract data about an account (i.e. transactions, balances, account type,etc.)
-
-  * Exchange a Plaid token for a token with a financial institution (i.e. Bank of America)
-
-The **Plaid** **sandbox** comes pre-loaded with financial institution data ready and available for use. This data can be leveraged to create new analytic pipelines. **Sandbox** data includes institution data, account information, transactions, investment records, and more. Data can be extracted using the **Plaid** API functions (i.e. get()).
-
-* Generate a list all of the institutions that have been loaded into the sandbox. This can be done by using the `Institutions.get` function, which accepts a **count** as an argument.
+* Generate a list all of the institutions that have been loaded into the sandbox. This can be done by using the `Institutions.get` function, which accepts **count** as an argument.
 
   ```python
-  client.Institutions.get(10)
+  # Fetch institutions
+  client.Institutions.get(2)
   ```
 
 * Knowing the institutions available in the **sandbox** allows one to extract account data for that institution. In order to extract account data, **Plaid** will need to perform another level of authentication. This level of authentication requires the generation and exchange of a **public token** for an **access token**.
 
-  * Create a public token using an institution from the sandbox (i.e. ins_109512). The `client.Sandbox.public_token.create` function will create and return a **public token** for Houndstooth Bank. The function accepts two arguments: **institution** and **products**. **Products** can be understood as the types of datasets **Plaid** has available. These include, but are not limited to, transactions, income, and assets.
+  * Create a public token using an institution from the sandbox (i.e. ins_109512). The `client.Sandbox.public_token.create` function will create and return a **public token** for **Houndstooth Bank**. The function accepts two arguments: **institution** and **products**. **Products** can be understood as the types of datasets **Plaid** has available. These include, but are not limited to, transactions, income, and assets.
 
     ```python
     INSTITUTION_ID = "ins_109512"
@@ -132,8 +124,8 @@ Once the **access token** is at hand, you can really start using **Plaid** to it
   start_date = '{:%Y-%m-%d}'.format(datetime.datetime.now() + datetime.timedelta(-30))
   end_date = '{:%Y-%m-%d}'.format(datetime.datetime.now())
 
-  transaction_response = client.Transactions.get(access_token)
-  pretty_print_response(transactions_response['transactions'][:1])
+  transaction_response = client.Transactions.get(access_token,start_date,end_date)
+  print(json.dumps(transaction_response['transactions'][:2],indent=4, sort_keys=True))
   ```
 
 Take some time to emphasize what it means to have this type of data provided by **Plaid**. Use FinTech use cases to help ground the discussion.
