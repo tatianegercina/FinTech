@@ -16,9 +16,9 @@ Open the slideshow and present the following questions and answers:
 
 * What are some common Markdown features?
 
-  * Text Formatting
-
   * Header Formatting
+
+  * Text Formatting
 
   * Line Breaks
 
@@ -38,4 +38,6 @@ Then, live demo the following while explaining the following points:
 
   ![markdown-header-results](Images/markdown-header-results.png)
 
-* 
+* Use the `*` and `**` syntax to put the repository name in **bold** and the repository description in *italics*.
+
+  ![markdown-text-results](Images/markdown-text-results.png)
