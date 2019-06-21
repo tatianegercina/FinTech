@@ -10,7 +10,7 @@ Harold just became so popular on the firm so his manager asked him to lead the r
 
 In this homework assignment, you will help Harold accomplish the following tasks:
 
-1. [Generate stand-alone plots using `matplotlib`, `PyViz` and `Plotly Express`.](#Stand-Alone-Plots)
+1. [Generate stand-alone plots using `matplotlib`, `hvPlot` and `Plotly Express`.](#Stand-Alone-Plots)
 2. [Create a dashboard web application using the `DataViz Panel` and `Bokeh Server` by combining plots from different libraries on the same visualization.](#Dashboard-Visualization-Web-Application)
 
 ---
@@ -28,9 +28,10 @@ In this homework assignment, you will help Harold accomplish the following tasks
 
 In order to convince potential investors the first step is to understand the available data, so in this section you will use your skills on the different python plotting libraries you learned to answer the following questions:
 
-* Use `matplotlib` to create a plot that shows the average housing units in San Francisco from 2010 to 2016. What kind of plot could be the best fit for this purpose?
-* Now use your `PyViz` super powers to create the following plots:
-  * Create a two series line plot to show how the average gross rent and the sale price per square foot has evolved from 2010 to 2016.
+* Start by using `matplotlib` to create the following plots:
+  * Create a plot that shows the average housing units in San Francisco from 2010 to 2016. What kind of plot could be the best fit for this purpose?
+  * Create two line plots to show how the average gross rent and the sale price per square foot has evolved from 2010 to 2016.
+* Now use your `hvPlot` super powers to create the following plots:
   * In order to understand how the sale price per square foot has evolved from 2010 to 2016, Harold asked you to create a *dynamic line plot* that should allow the people to select any single neighborhood in San Francisco to analyze the data individually.
   * Alina, one of the most influential investors, is interested on buying properties on the most expensive neighborhoods of San Francisco since she believed those places will be the more profitable in the long term. Create a plot that show the average sale price per square foot for the top 10 most expensive neighborhoods.
 
@@ -43,9 +44,13 @@ Your plot for the top 10 expensive neighborhoods was a good starting point, but 
 The final step on finishing this assignment to present the analysis results to investors is to assemble all your plots on a dashboard.
 
 * Reusing the code from the previous section, create function to create each plot. If you decide to go on the [Challenge](#Challenge) also include the map on the dashboard.
-* In addition to the plots, include one image and a descriptive text to the dashboard.
-* For this activity you can create a draft dashboard using Jupyter notebooks before creating the python script to launch the web application with the `Bokeh Server`.
-* Feel free to design the dashboard's layout at your convenience, you can combine the Column, Row and Tabs layout objects.
+* Create a tabbed dashboard with the following sections:
+  * _Welcome tab_: On this tab include a welcome text depicting the what purpose of the dashboard, if you worked on the Challenge, also include the `scatter_mapbox()` plot below the text, if you didn't include an image instead.
+  * _Yearly Market Analysis tab_: This tab will contain the three plots you created with `matplotlib`.
+  * _Neighborhood Analysis tab_: You should include on this tab the two plots you created with `hvPlot`.
+  * _Parallel Plots Analysis tab:_: Finally this tab will include the two parallel plots you created using `Plotly Express`.
+* You can create a draft dashboard using Jupyter notebooks before creating the python script to launch the web application with the `Bokeh Server`.
+* Feel free to design the dashboard's layout at your convenience by combining the Column, Row and Tabs layout objects.
 
 ### Challenge
 
@@ -53,6 +58,7 @@ Among investors there are some foreign people that are not familiar with San Fra
 
 * On this plot show the location of all neighborhoods in San Francisco by coloring the points according to the average gross rent and sizing them according to the average sale price per square foot.
 * For this activity you will find the latitude and longitude of the center point of each neighborhood on the CSV file entitled `neighborhood_coordinates.csv`. Part of this challenge is to combine this information with the average values of *sales price price for square foot* and *gross rent* for each neighborhood.
+* If you have time, try to modify the data to create an animated map using the `Year` as `animated_frame` property on the scatter map plot.
 * In order to create maps visualizations using Plotly Express, you will need to create a free account at [mapbox](https://www.mapbox.com/).
 
 ### Submission
