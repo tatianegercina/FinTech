@@ -38,6 +38,8 @@ Then, live demo the following while explaining the following points:
 
   ![markdown-header-results](Images/markdown-header-results.png)
 
-* Use the `*` and `**` syntax to put the repository name in **bold** and the repository description in *italics*.
+* Use the `*` and `**` syntax to put the repository name in **italics** and the repository description in *bold*.
 
-  ![markdown-text-results](Images/markdown-text-results.png)
+  ![markdown-text](Images/markdown-text.png)
+
+  ![markdwon-text-results](Images/markdown-text-results.png)
