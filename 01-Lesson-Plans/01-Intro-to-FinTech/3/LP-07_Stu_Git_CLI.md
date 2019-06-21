@@ -6,10 +6,10 @@
 
 ### 8. Instructor Do: Review Git (10 min)
 
-Ask students for any questions students may have and take a few minutes to review any commands which weren't clear. Offer to help students with this throughout the day and during office hours.
+* Ask students for any questions they may have and take a few minutes to review any commands which weren't clear. Offer to help students with this throughout the day and during office hours.
 
-Explain to students that this will be the new, primary way of submitting homework to GitHub (no more manual uploads!).
+* Explain to students that this will be the new, primary way of submitting homework to GitHub (no more manual uploads!).
 
-Reassure them that it's ok if this take some time to figure out. By the end of the course, they will be git ninjas!
+* Reassure them that it's ok if this takes some time to figure out. By the end of the course, they will be git ninjas!
 
-Encourage students to continue to add and commit their activities today into a repo for additional practice.
+* Encourage students to continue to add and commit their activities today into a repo for additional practice.
