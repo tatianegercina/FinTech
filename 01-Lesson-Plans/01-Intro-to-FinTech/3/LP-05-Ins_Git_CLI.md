@@ -14,39 +14,31 @@ Open the slideshow and go over slides 1-22. Highlight the following about git:
 
 * What other features does the Git CLI provide?
 
-  > The Git CLI can perform many different kinds of git operations; however, popular commands are...
+  > The Git CLI can perform many different kinds of git operations; however, popular commands are:
 
-    * git add
+    * `git clone`: Clones a git repository onto the local file system.
 
-    * git commit
+    * `git add`: Adds changed files to the queue of tracked files ready to be committed.
 
-    * git push
+    * `git commit`: Adds tracked files as a bulk checkpoint ready to be pushed to the remote git repository.
 
-    * git pull
+    * `git push`: Uploads changed files from the local git repository to the remote git repository and updates the remote files.
 
-    * git branch
+    * `git pull`: Downloads changed files from the remote git repository to the local git repository and updates the local files.
 
-    * git checkout
+    * `git checkout`: Checks out a specific git branch and updates the files in the local git repository to match the contents of the git branch.
 
-Explain that Git is essentially a way for us to keep track of our work over time.
+    * `git merge`: Merges two branches together, consolidating any changes amongst the two.
 
-* Explain that, whenever we get another piece of a project working, we can save the change with Git.
+* What is a git commit?
 
-* Explain that this "save" is called a **commit**, and represents a "checkpoint" for our project.
+  > Before changed files are pushed from a local git repository to the remote git repository, a git commit saves a queue of tracked changed files as a **save** or **checkpoint** for a git repository. This way, should it be necessary, a git repository can be restored to a previous checkpoint in time, thereby undoing any existing changes from that point.
 
-![A commit is a lot like a changelog note](https://cdn-images-1.medium.com/max/1600/1*zj-d8TopjgBml2QVM-672w.jpeg)
+* What is a git branch?
 
-Explain that if we break something in our code while developing, this system allows us to restore the working code from before.
+  > A git branch is a derived version of another branch (often `master`).
 
-Explain that since Git remembers these "checkpoints", we can work on several different concerns all at once.
 
-* Suppose we need to analyze Uber ride data for our project.
-
-* Explain that we might decide to analyze the average age of riders. Git essentially allows us to write this code, and save it with the name: `age analysis`.
-
-Emphasize that this code is _different_ from the code we started with, and that it lives separately from it.
-
-* Explain that in this scenario we have a version of the code, called `master`, which is the "main" version of our code; and a version, called `age analysis`, which contains updates.
 
 Explain that each version of the code lives on a different **branch**.
 
