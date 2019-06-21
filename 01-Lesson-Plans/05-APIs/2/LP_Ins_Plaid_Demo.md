@@ -78,7 +78,7 @@ Open the Jupyter [starter file](Activities/12-Ins_Plaid_Demo/Solved/plaid_demo.i
   , environment='sandbox')
   ```
 
-Explain that data can be extracted from **Plaid** using the `GET` function. The **Plaid** **sandbox** comes pre-loaded with financial data ready and available for use. **Sandbox** data includes institution data, account information, transactions, investment records, and more.
+Explain that data can be extracted from **Plaid** using the `GET` function. The **Plaid** **sandbox** comes pre-loaded with financial data ready and available for use. **Sandbox** data includes institution data, account information, transactions, investment records, and more. However, in order to extract data, there are a few data attributes that are needed first.
 
 * Generate a list all of the institutions that have been loaded into the sandbox. This can be done by using the `Institutions.get` function, which accepts **count** as an argument.
 
