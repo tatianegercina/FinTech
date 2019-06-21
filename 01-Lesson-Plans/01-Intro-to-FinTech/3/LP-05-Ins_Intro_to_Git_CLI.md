@@ -26,6 +26,8 @@ Open the slideshow and go over slides 1-22. Highlight the following about git:
 
     * `git pull`: Downloads changed files from the remote git repository to the local git repository and updates the local files.
 
+    * `git branch`: Lists the available branches of the git repository.
+
     * `git checkout`: Checks out a specific git branch and updates the files in the local git repository to match the contents of the git branch.
 
     * `git merge`: Merges two branches together, consolidating any changes amongst the two.
