@@ -2,17 +2,19 @@
 
 In this activity, students will be introduced to the git CLI, which will allow them to more efficiently track changes to a git repository by providing additional git operations.  
 
-**File** [Slideshow](Resources/Intro_to_Git.pptx)
+**Files:**
+
+* [Slideshow](Resources/Intro_to_Git.pptx)
 
 Open the slideshow and go over slides 1-22. Highlight the following about git:
 
 * How does the GitHub web app and Git CLI differ?
 
-  **Answer:** The GitHub web app provides a convenient user interface for performing common git operations. The Git CLI, however, is a command line utility that provides all git operations and is generally more robust than a git-based graphical user interface (GUI). This is because more often then not, a GUI interacts with the underlying CLI to perform its functionality (ex. click a button that executes a command in the backend) and therefore is often a simplified version of the underlying functionality.
+  > The GitHub web app provides a convenient user interface for performing common git operations. The Git CLI, however, is a command line utility that provides all git operations and is generally more robust than a git-based graphical user interface (GUI). This is because more often then not, a GUI interacts with the underlying CLI to perform its functionality (ex. click a button that executes a command in the backend) and therefore is often a simplified version of the underlying functionality.
 
 * What other features does the Git CLI provide?
 
-  **Answer:** The Git CLI can perform many different kinds of git operations; however, popular commands are...
+  > The Git CLI can perform many different kinds of git operations; however, popular commands are...
 
     * git add
 
@@ -25,7 +27,7 @@ Open the slideshow and go over slides 1-22. Highlight the following about git:
     * git branch
 
     * git checkout
-    
+
 Explain that Git is essentially a way for us to keep track of our work over time.
 
 * Explain that, whenever we get another piece of a project working, we can save the change with Git.
