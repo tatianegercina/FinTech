@@ -114,7 +114,7 @@ Slack out the above link to students so they can review the other applications o
 
 ### 3. Instructor Do: Reading CSVs (10 min)
 
-The goal of this part of the lesson is to get students comfortable with reading CSV files into Pandas. Financial data is commonly converted from other formats (e.g., Excel .xls) to CSV so that it can be manipulated by programs like Pandas. Learning how to read CSV data into Pandas is the first step in getting students started with creating automated analytics pipelines.
+The goal of this part of the lesson is to get students comfortable with reading CSV files into Pandas. Financial data is commonly converted from other formats (e.g., an Excel file) to CSV so that it can be manipulated by programs like Pandas. Learning how to read CSV data into Pandas is the first step in getting students started with creating automated analytics pipelines.
 
 **Files:**
 
