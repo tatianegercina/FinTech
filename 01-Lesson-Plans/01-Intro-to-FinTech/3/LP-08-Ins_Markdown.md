@@ -35,3 +35,7 @@ Then, live demo the following while explaining the following points:
 * Go to your local git repository and modify the `README` file. Notice there was already a `#` in front of the `README` title! That's why the font looked larger in the GitHub webpage. Markdown can create text headers with `#`, `##`, `###...`, where `#` represents size header 1 and `###...` repesents size header 3 and so on. 
 
   ![markdown-header](Images/markdown-header.png)
+
+  ![markdown-header-results](Images/markdown-header-results.png)
+
+* 
