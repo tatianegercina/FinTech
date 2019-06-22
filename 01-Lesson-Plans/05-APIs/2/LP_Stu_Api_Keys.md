@@ -14,7 +14,7 @@ Slack out the below API links just in case some students still need to sign up.
 
 * [README.md](Activities/03-Stu_Api_Keys/README.md)
 
-Indicate to students that this activity will focus on making sure everyone is prepared to begin using the **Quandl** and **Plaid** APIs. Students will need to confirm they have the necessary **keys** to access **Quandl** and **Plaid** as the TAs and yourself touchbase with each of them.
+Indicate to students that this activity will focus on making sure everyone is prepared to begin using the **Quandl** and **Plaid** APIs. TAs and yourself will touch base with each student to confirm they have the necessary **keys** to access **Quandl** and **Plaid**.
 
 Ask students to pull up their account pages for **Quandl** and **Plaid** and to confirm that they have API keys for both APIs.
 
@@ -30,7 +30,7 @@ Excite students about FinTech APIs by highlighting the following points.
 
 * Reiterate that even though many APIs require **keys**, their services are often free. Obtaining an **API key** is like getting the **keys** to a kingdom. Once you're in, you're empowered to build products and submit API requests as you please. There are limitations, but services are still free.
 
-If time remains, ask the following review questions:
+If time remains, engage the students with the following review questions:
 
 * Do **ALL** APIs require API keys?
 
