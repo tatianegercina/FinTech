@@ -1,4 +1,4 @@
-### 3. Student Do: Keys to the Kingdom (15 mins)
+### 3. Student Do: Keys to the FinTech Kingdom (15 mins)
 
 Over the next couple activities, students will be working with APIs that require **keys** for access. Use this time to confirm all students have the necessary **keys** for the **Quandl** and **Plaid** APIs. The instructor and TAs will circulate through the room confirming all students are ready to begin using their **API keys**. Provide assistance to any students who do not have **API keys**.
 
