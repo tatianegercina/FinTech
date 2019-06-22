@@ -35,7 +35,7 @@ Open the [starter-file](Activities/05-Ins_Env_Variables/Unsolved/env_variables.i
 * **Environment variables** are created and stored using the `os.environ` mapping object. **os.environ** works much like a dict structure. Both a **key** and a **value** are needed upon declaration. The common naming convention for **environment variable** names is **all caps**. Emphasize to students that **environment variables** must be stored as strings.
 
   ```python
-  os.environ["QUANDL_API_KEY"] = "zBR2ZoJGSxqe77s_YsAv"
+  os.environ["QUANDL_API_KEY"] = "ENTER YOUR KEY HERE"
   ```
 
 * Underscore to students that why it is possible to create **environment variables** in Python, they need to be careful when saving confidential/sensitive data. Confidential/sensitive data should never be hard-coded in a script.
