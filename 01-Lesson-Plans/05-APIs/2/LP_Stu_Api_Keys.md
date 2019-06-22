@@ -6,13 +6,15 @@ Each student should be met individually. Students should have their account page
 
 Slack out the below API links just in case some students still need to sign up.
 
-**APIs:**
-
 * [Quandl Signup Page](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
 * [Plaid Signup Page](https://dashboard.plaid.com/signup)
 
-Indicate to students that this activity will focus on making sure everyone is prepared to begin using the **Quandl** and **Plaid** APIs. Students will need to confirm they have the necessary **keys** to access **Quandl** and **Plaid**.
+**Instructions:**
+
+* [README.md](Activities/03-Stu_Api_Keys/README.md)
+
+Indicate to students that this activity will focus on making sure everyone is prepared to begin using the **Quandl** and **Plaid** APIs. Students will need to confirm they have the necessary **keys** to access **Quandl** and **Plaid** as the TAs and yourself touchbase with each of them.
 
 Ask students to pull up their account pages for **Quandl** and **Plaid** and to confirm that they have API keys for both APIs.
 
@@ -55,49 +57,3 @@ If time remains, ask the following review questions:
   **Answer** Yes. Rate limits are tied to API keys. Sharing an API key would mean sharing the total number of requests allowed with another individual. Sharing keys could also result in someone else charging your account for billable services.
 
 Ask if there are any questions or comments before moving on.
-
-- - -
-
-### 4. Instructor Do: Activity Review (5 mins)
-
-In this activity, students will review the previous activity by watching the instructor perform a live walkthrough of the solution.
-
-**Files:**
-
-* [api_keys.ipynb](Activities/03-Stu_Api_Keys/Unsolved/api_keys.ipynb)
-
-Open the [starter-file](Activities/03-Stu_Api_Keys/Unsolved/api_keys.ipynb), and begin live coding and discussing the following:
-
-* Declare variable `api_key`. Then, concatenate `request_url` with `api_key`.
-
-  ![request_with_key.PNG](Images/request_with_key.PNG)
-
-* Execute a GET request using Quandl service with API key, and store the data in a variable named `response_data`.
-
-* Use the `content` attribute to display results. Hint: `response_data.content`
-
-  ![response_content.PNG](Images/response_content.PNG)
-
-Ask the following review questions:
-
-* Do **ALL** APIs require API keys?
-
-  **Answer** No. Only some APIs require keys to be used. Others allow users to submit requests for free (with rate limits).
-
-* Why require users to have an API key when requests can be sent without urls?
-
-  **Answer** API keys allow companies monitor, analyze, and enforce rate limits.
-
-* What happens when the `?api_key=` tag is used? Is a function executed or is a parameter passed.
-
-  **Answer** A parameter is being passed.
-
-* Can more than one user have the same API key?
-
-  **Answer** No. API keys are unique identifiers. Each key is assigned to one user.
-
-* Are API keys naturally secure?
-
-  **Answer** No, they are not. API keys are transmitted across network and are not naturally encrypted. API keys can be encrypted to make them private.
-
-Ask if there are any questions before moving on.
