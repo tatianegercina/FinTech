@@ -12,13 +12,13 @@ Have the `keys.sh` file prepared before class so that it does not need to be cre
 
 Emphasize to students that one of the really cool things about **Plaid** is that it provides a developers **sandbox** for users to get started running with. The **sandbox** contains account data that can be used to test out connectivity to Plaid, as well as test out some of Plaid's functionality.
 
-* The **sandbox** is great because it gives developers a space to play with **Plaid** without having to connect personal bank accounts. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
+* The **sandbox** is great because it gives developers a space to play with **Plaid** without having to connect to personal bank accounts. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
 
 #### Prepare environment variables
 
 Open the [keys.sh starter file](Activities/12-Ins_Plaid_Demo/Solved/keys.sh), and set up your environment variables. If possible, complete this step prior to class.
 
-* **Plaid** uses three types of API keys (client id, public key, and sandbox secret key), which need to be saved as environment variables in `keys.sh` file. Keys can be found [here](https://dashboard.plaid.com/account/keys)
+* **Plaid** uses three types of API keys (**client id**, **public key**, and **sandbox secret key**). Each of these need to be saved as environment variables in a `keys.sh` file. Log into [Plaid](https://dashboard.plaid.com/account/keys) to retrieve them.
 
   ```shell
   export client_id="5d0a5ac0d5fa000013be98df"
@@ -36,9 +36,7 @@ Open the [keys.sh starter file](Activities/12-Ins_Plaid_Demo/Solved/keys.sh), an
 
 #### Install Plaid Library
 
-Because **Plaid** is offered as an SDK, the Python **requests** library doesn't need to be used. The functions provided by the **Plaid** SDK can be used to broker the same connection as the **requests** library.
-
-* The **Plaid** SDK has to be installed in order for it to be used. It can be installed using the `pip install` command.
+Because **Plaid** is offered as an SDK, the Python **requests** library doesn't need to be used. The functions provided by the **Plaid** SDK can be used to broker the same connection as the **requests** library. **Plaid** can be installed using the `pip install` command.
 
 * Open a terminal, and execute the following command:
 
@@ -70,10 +68,12 @@ Open the Jupyter [starter file](Activities/12-Ins_Plaid_Demo/Solved/plaid_demo.i
 * Since the client object requires the **Plaid** keys, the keys will need to be extracted using the `os.environ.get` function. Once these are stored as Python variables, they can be passed to the `client` object.
 
   ```python
+  # Extract API keys from environment variables
   PLAID_CLIENT_ID = os.environ.get("client_id")
   PLAID_PUBLIC_KEY = os.environ.get("public_key")
   PLAID_SBX_SECRET_KEY = os.environ.get("sbx_secret_key")
 
+  # Create client object
   client = Client(client_id=PLAID_CLIENT_ID, secret=PLAID_PUBLIC_KEY, public_key=PLAID_SBX_SECRET_KEY
   , environment='sandbox')
   ```
@@ -85,6 +85,9 @@ Explain that data can be extracted from **Plaid** using the `GET` function. The 
   ```python
   # Fetch institutions
   client.Institutions.get(2)
+
+  # Select an institution for processing
+  INSTITUTION_ID = "ins_109512"
   ```
 
 * Knowing the institutions available in the **sandbox** allows one to extract account data for that institution. In order to extract account data, **Plaid** will need to perform another level of authentication. This level of authentication requires the generation and exchange of a **public token** for an **access token**.
@@ -92,19 +95,21 @@ Explain that data can be extracted from **Plaid** using the `GET` function. The 
   * Create a public token using an institution from the sandbox (i.e. ins_109512). The `client.Sandbox.public_token.create` function will create and return a **public token** for **Houndstooth Bank**. The function accepts two arguments: **institution** and **products**. **Products** can be understood as the types of datasets **Plaid** has available. These include, but are not limited to, transactions, income, and assets.
 
     ```python
-    INSTITUTION_ID = "ins_109512"
+    # Create public token to be exchanged for institution access token
     create_tkn_response = client.Sandbox.public_token.create(INSTITUTION_ID, ['transactions','income','assets'])
     ```
 
 * **Public tokens** can be exchanged for **access tokens**. **Access tokens** are needed to be able to access account details such as transactions. The exchange serves as an additional round of security. The `client.Item.public_token.exchange` function handles the exchange and returns an **access token**, **item id**, and **request id**. The `client.Item.public_token.exchange` function accepts one argument: the public_token returned in `create_tkn_response`.
 
   ```python
+  # Exchange public token for access token
   exchange_response = client.Item.public_token.exchange(create_response['public_token'])
   ```
 
 * The exchange response will contain the **access token** needed to get data from the `item` object.
 
   ```python
+  # Store access token as variable
   access_token = exchange_response['access_token']
   ```
 
@@ -115,16 +120,21 @@ Once the **access token** is at hand, you can really start using **Plaid** to it
 * Fetch all accounts at an institution
 
   ```python
+  # Get accounts associated with institution
   client.Accounts.get(access_token)
   ```
 
 * Fetch transactions for a date range. Python date objects can be used to specify **start** and **end** dates.
 
   ```python
+  # Get transactions for institution for specific date range
   start_date = '{:%Y-%m-%d}'.format(datetime.datetime.now() + datetime.timedelta(-30))
   end_date = '{:%Y-%m-%d}'.format(datetime.datetime.now())
 
+  # Get transactions for date range
   transaction_response = client.Transactions.get(access_token,start_date,end_date)
+
+  # Print JSON output
   print(json.dumps(transaction_response['transactions'][:2],indent=4, sort_keys=True))
   ```
 
