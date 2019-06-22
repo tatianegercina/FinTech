@@ -1,4 +1,4 @@
-# Keys to the Kingdom
+# Keys to the FinTech Kingdom
 
 Quandl and Plaid are two powerful FinTech APIs that have taken the industry by storm. Both APIs have decided to grant free access to anyone who wants to use their services, and thus, they have bestowed upon you keys to the FinTech kingdom, a modern day Willy Wonka Golden Ticket!
 
