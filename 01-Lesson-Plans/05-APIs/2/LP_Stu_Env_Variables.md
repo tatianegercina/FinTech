@@ -44,23 +44,28 @@ Kick off the activity review session by asking students to summarize the process
 
   **Answer** No. The best practice for keeping **API keys** secure is to store them in **environment variables**. This practice should always be used.
 
-End the review session with a quick dry walkthrough of the solution. Open the [solution](Activities/07-Stu_Env_Variables/Solved/env_variables.ipynb), and highlight the following.
+Open the [solution](Activities/07-Stu_Env_Variables/Solved/env_variables.ipynb), and end the review session with a quick dry walkthrough of the solution.
 
 * The `export` command is used to create **environment variables**. Once created, the **environment variables** are then shared with all child processes. For example, when the `keys.sh` file is executed, the export command will ensure the `QUANDL_API_KEY` variable is accessible by all processes running in the terminal that executed the `keys.sh` file.
 
-  ![keys_shell_script.PNG](Images/keys_shell_script.PNG)
+  ```shell
+  export QUANDL_API_KEY="ENTER YOUR KEY HERE"
+  ```
 
 * Once a `key.sh` file is created, it has to be executed in order for the `export` commands to execute. Supplying `source` command before the `key.sh` file will **source** the variables and load the `keys.sh` file/`export` command.
 
   ![source_keys.PNG](Images/source_keys.PNG)
 
-* **Environment variables** can be accessed in Python with the **os** library. The library has to be imported before it can be used. The **os** library has an `os.environ.get` function that can be used to retrieve **environment variables** from the operating system. Once retrieved, the value can be saved as a Python variable (i.e. `api_key`).
-
-  ![get_env_var.PNG](Images/get_env_var.PNG)
+* **Environment variables** can be accessed in Python with the **os** library. The library has to be imported before it can be used. The **os** library has an `os.getenv` function that can be used to retrieve **environment variables** from the operating system. Once retrieved, the value can be saved as a Python variable (i.e. `api_key`).
 
 * Once stored as a Python variable, the **environment variable** value can be leveraged for processing. In this case, the `QUANDL_API_KEY` is stored as Python variable **api_key** and then concatenated with the **request url**. The concatenated **request url** will then be used to submit a request to the **Quandl** API.
 
-  ![use_env_variable.PNG](Images/use_env_variable.PNG)
+  ```python
+  request_url = "https://www.quandl.com/api/v3/datasets/WIKI/AMD.json?api_key="
+
+  # Concatenate request_url and api_key. Store as new variable
+  request_url_rfd = request_url + api_key
+  ```
 
 If time remains, ask two final, guided questions:
 
