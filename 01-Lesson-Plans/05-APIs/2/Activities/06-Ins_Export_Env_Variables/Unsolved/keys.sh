@@ -1,2 +1,2 @@
 #!/bin/sh
-export
+export QUANDL_API_KEY="ENTER YOUR KEY HERE"
