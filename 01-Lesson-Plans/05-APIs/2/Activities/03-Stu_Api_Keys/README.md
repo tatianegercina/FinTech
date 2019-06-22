@@ -1,19 +1,13 @@
-# Under Lock and Key
+# Keys to the Kingdom
 
-You and Harold have developed a Python application that will extract historical stock data from **Quandl** for a given ticker and calculate the sharpe ratio for that stock. So far, only you two have been using the application, but your manager now wants you to find a way to make the application usable by the entire team. You know that **Quandl** allows API calls to be submitted without an API key, but the limit is 50 calls a day. You're worried that the scale of this initiative will push you and your users over the rate limits for API calls made without an API key.
+Quandl and Plaid are two powerful FinTech APIs that have taken the industry by storm. Both APIs have decided to grant free access to anyone who wants to use their services, and thus, they have bestowed upon you keys to the FinTech kingdom, a modern day Willy Wonka Golden Ticket!
 
-Create a new Python application that passes an API key with the request URL so that **Quandl** can manage and track rate limits.
+Visit the below links to prepare yourself for entry into a new world that empowers and supports the everyday developer in the war against licensing fees and fat cat data hoarders! Follow the steps below to make sure you have all the resources necessary to begin the journey.
 
 ## Instructions
 
-1. Navigate to the Quandl [Account Settings](https://www.quandl.com/account/profile) page to retrieve API key.
+1. Navigate to the Quandl [Account Settings](https://www.quandl.com/account/profile) page and confirm you have an API key.
 
-2. Import Python requests library.
+2. Navigate to the Plaid [API Keys](https://dashboard.plaid.com/account/keys) page and confirm you have a client id, public key, and sandbox secret key.
 
-3. Save **API key** as a variable named `api_key`.
-
-4. Concatenate **request_url** with the **api_key** variable.
-
-5. Execute a `GET` request using newly created **request_url**.
-
-6. Display content to screen using **content** attribute.
+3. Confirm with the instructor/TAs that all necessary keys are available and ready for use.
