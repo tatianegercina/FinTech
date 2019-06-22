@@ -1,3 +1,3 @@
-export client_id=
-export public_key=
-export sbx_secret_key=
+export PLAID_CLIENT_ID="ENTER YOUR KEY HERE"
+export PLAID_PUBLIC_KEY="ENTER YOUR KEY HERE"
+export PLAID_SBX_SECRET_KEY="ENTER YOUR KEY HERE"
