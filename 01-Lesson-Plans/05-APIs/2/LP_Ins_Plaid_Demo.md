@@ -16,14 +16,14 @@ Emphasize to students that one of the really cool things about **Plaid** is that
 
 #### Prepare environment variables
 
-Open the [keys.sh starter file](Activities/12-Ins_Plaid_Demo/Solved/keys.sh), and set up your environment variables. If possible, complete this step prior to class.
+Open the [keys.sh starter file](Activities/12-Ins_Plaid_Demo/Solved/keys.sh), and set up your environment variables. If possible, complete this step prior to the lesson.
 
 * **Plaid** uses three types of API keys (**client id**, **public key**, and **sandbox secret key**). Each of these need to be saved as environment variables in a `keys.sh` file. Log into [Plaid](https://dashboard.plaid.com/account/keys) to retrieve them.
 
   ```shell
-  export client_id="5d0a5ac0d5fa000013be98df"
-  export public_key="ce06372ecdf57655eef8a1acf3cf2a"
-  export sbx_secret_key ="e47940ef0912660ded9f636d9c3b16"
+  export PLAID_CLIENT_ID="ENTER YOUR KEY HERE"
+  export PLAID_PUBLIC_KEY="ENTER YOUR KEY HERE"
+  export PLAID_SBX_SECRET_KEY="ENTER YOUR KEY HERE"
   ```
 
 * Once complete, the `keys.sh` file will need to be sourced.
@@ -65,13 +65,13 @@ Open the Jupyter [starter file](Activities/12-Ins_Plaid_Demo/Solved/plaid_demo.i
   client = Client(client_id='***', secret='***', public_key='***', environment='sandbox')
   ```
 
-* Since the client object requires the **Plaid** keys, the keys will need to be extracted using the `os.environ.get` function. Once these are stored as Python variables, they can be passed to the `client` object.
+* Since the client object requires the **Plaid** keys, the keys will need to be extracted using the `os.getenv` function. Once these are stored as Python variables, they can be passed to the `client` object.
 
   ```python
   # Extract API keys from environment variables
-  PLAID_CLIENT_ID = os.environ.get("client_id")
-  PLAID_PUBLIC_KEY = os.environ.get("public_key")
-  PLAID_SBX_SECRET_KEY = os.environ.get("sbx_secret_key")
+  PLAID_CLIENT_ID = os.getenv("client_id")
+  PLAID_PUBLIC_KEY = os.getenv("public_key")
+  PLAID_SBX_SECRET_KEY = os.getenv("sbx_secret_key")
 
   # Create client object
   client = Client(client_id=PLAID_CLIENT_ID, secret=PLAID_PUBLIC_KEY, public_key=PLAID_SBX_SECRET_KEY
@@ -90,6 +90,8 @@ Explain that data can be extracted from **Plaid** using the `GET` function. The 
   INSTITUTION_ID = "ins_109512"
   ```
 
+  ![plaid_institutions.png](Images/plaid_institutions.png)
+
 * Knowing the institutions available in the **sandbox** allows one to extract account data for that institution. In order to extract account data, **Plaid** will need to perform another level of authentication. This level of authentication requires the generation and exchange of a **public token** for an **access token**.
 
   * Create a public token using an institution from the sandbox (i.e. ins_109512). The `client.Sandbox.public_token.create` function will create and return a **public token** for **Houndstooth Bank**. The function accepts two arguments: **institution** and **products**. **Products** can be understood as the types of datasets **Plaid** has available. These include, but are not limited to, transactions, income, and assets.
@@ -106,6 +108,8 @@ Explain that data can be extracted from **Plaid** using the `GET` function. The 
   exchange_response = client.Item.public_token.exchange(create_response['public_token'])
   ```
 
+  ![token_exchange.png](Images/token_exchange.png)
+
 * The exchange response will contain the **access token** needed to get data from the `item` object.
 
   ```python
@@ -115,7 +119,7 @@ Explain that data can be extracted from **Plaid** using the `GET` function. The 
 
 #### Wielding Plaid
 
-Once the **access token** is at hand, you can really start using **Plaid** to its fullest potential. You'll have access to a bunch of different accounts and transactions, all available for use. All that is needed is that **access token**.
+Once the **access token** is in hand, you can really start using **Plaid** to its fullest potential. You'll have access to a bunch of different accounts and transactions, all available for use. All that is needed is that **access token**.
 
 * Fetch all accounts at an institution
 
@@ -123,6 +127,8 @@ Once the **access token** is at hand, you can really start using **Plaid** to it
   # Get accounts associated with institution
   client.Accounts.get(access_token)
   ```
+
+  ![get_accounts.png](Images/get_accounts.png)
 
 * Fetch transactions for a date range. Python date objects can be used to specify **start** and **end** dates.
 
@@ -135,8 +141,10 @@ Once the **access token** is at hand, you can really start using **Plaid** to it
   transaction_response = client.Transactions.get(access_token,start_date,end_date)
 
   # Print JSON output
-  print(json.dumps(transaction_response['transactions'][:2],indent=4, sort_keys=True))
+  print(json.dumps(transaction_response['transactions'][:2],indent=4,sort_keys=True))
   ```
+
+  ![get_transactions.png](Images/get_transactions.png)
 
 Take some time to emphasize what it means to have this type of data provided by **Plaid**. Use FinTech use cases to help ground the discussion.
 
