@@ -36,6 +36,8 @@ Ask students the following guided question:
 
     **Answer** By creating **SDKs**, companies allow users to interact with their APIs in a more powerful way. The **requests** library only supports so many functions (i.e. **GET**, **POST**, etc.). However, by providing users with an **SDK**, companies can give users access to in-house built attributes and functions that can provide more value than the functions in the **requests** library.
 
+    **Answer** When writing a Python script, using a Python **SDK** can often be cleaner and easier to understand and integrate in one's code. **SDKs** allow developers to use syntax and language features that often simplify and clean up code. A decent example of this is evidenced when comparing the URL request to **Quandl** with the `quandl.get('AAPL')` function. Both will extract historical stock; however, the `quandl.get` function is easier to use and looks cleaner.
+
 * Because **SDKs** provide out-of-the-box functions that can be used with the API, developers do not have to worry about reinventing the wheel. What is an example of a function/operation a FinTech **SDK** might provide?
 
   **Answer** A FinTech **SDK** might provide a function that calculates **sharpe ratios**, which means users would not need to create this functionality themselves; they'd be able to use the **SDK** to extract historical stock data **AND** calculate **sharpe ratios**. The **requests** library would only support data extraction.
