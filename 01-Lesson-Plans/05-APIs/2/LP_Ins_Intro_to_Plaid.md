@@ -28,7 +28,7 @@ Navigate to the 5.2 slides, and introduce the **Plaid** by highlighting how it i
 
 Facilitate discussion with the following talking points and guided questions:
 
-* **Plaid** can be used to analyze financial data in a more comprehensive and holistic view. **Plaid** takes the data from each financial account and consolidates it to create an overarching portfolio that encompasses savings, investments, retirement funds, loans, etc. What types of financial analysis would require data to be extracted from more than one type of financial account?
+* **Plaid** can be used to analyze financial data in a more comprehensive and holistic view. **Plaid** takes the data from each financial account and consolidates it to create an overarching portfolio that encompasses savings, investments, retirement funds, loans, etc. What types of analysis can be done with these datasets?
 
   **Answer** Net worth analysis would require data to be extracted from all financial accounts.
 
