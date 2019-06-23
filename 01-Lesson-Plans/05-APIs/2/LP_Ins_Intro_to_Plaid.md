@@ -38,4 +38,4 @@ Facilitate discussion with the following talking points and guided questions:
 
   **Answer** Calculate **beta** to compare individualized stock and retirement portfolio volatility.
 
-* By leveraging the data provided by **Plaid**, developers no longer have to concern themselves with data acquisition/brokering communication with financial institutions. Instead, developers can use the functions provided by the **Plaid** **SDK** to broker these connections. This means that developers are fully empowered to focus on designing innovative and valuable processes for consumers.
+* By leveraging the data provided by **Plaid**, consumers no longer have to rely on financial services professionals or big companies to give them insights about their data. Furthermore, developers no longer have to concern themselves with data acquisition/brokering communication with financial institutions. Instead, both parties can just leverage **Plaid**.
