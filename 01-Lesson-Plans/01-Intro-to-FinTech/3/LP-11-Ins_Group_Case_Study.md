@@ -10,8 +10,8 @@ Open the slideshow and go over slides 1-22 while explaining the following:
 
 * Git repositories are often shared and have multiple collaborators; the group case study mini-project will showcase this scenario.
 
-* Students should pair off into groups of 4-5 individuals and choose one of the available FinTech companies to present.
+* Remind students that in the class GitHub repository, there will be a list of potential FinTech case studies from which they can choose. 
 
-* Remind students that they shold look to the class GitHub repository to find samples of existing FinTech case studies to model off of.
+* Students should pair off into groups of 4-5 individuals and choose one of the available FinTech companies to present. Each case study should go over the 
 
 * Energize your students! This will be a good time for students to interact with each other and build upon what they've learned to perform their own independent case study analyses (without teacher help).
