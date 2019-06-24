@@ -66,7 +66,7 @@ Review the advantages of using Python.
 
   * Creating data visualizations with Python allows data elements and their complexity and relationships to be visualized. This is especially valuable for financial algorithms that require trend or time analysis. 
   
-  * More information about FinTech-related Python libraries can be found [here](https://financetrain.com/best-python-librariespackages-finance-financial-data-scientists/).
+  * Slack out the following link to students. Tell them that this is a great resource for more information about FinTech-related Python libraries: https://financetrain.com/best-python-librariespackages-finance-financial-data-scientists/.
 
 - - -
 
@@ -824,6 +824,12 @@ Open [loop_dee_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py), and re
 
 * Using a for loop means you are instructing the computer to do something for every element in the sequence.
 
+* `For` loops should be used when you want a process to run _n_ number of times. 
+
+  * For example, when you want to execute a decision/behavior for each number in a range, you'd use a `for` loop: you know you have _n_ number of items, and you want behavior executed fo reach item. 
+
+  * `For` loops should especially be used if you know a process needs to be executed a specific number of times.
+
 * For example, let's say you're raining a new robotic supermarket cashier. `for` every egg (element) in the carton (sequence), the robot must move the element around to inspect if it's broken. The robot would leverage the below loop:
 
   ```python
@@ -890,15 +896,9 @@ Now introduce `while` loops and compare them to `for` loops.
       # Ring up customers
   ```
 
-* `For` loops should be used when you want a process to run _n_ number of times. 
-
-  * For example, when you want to execute a decision/behavior for each number in a range, you'd use a `for` loop: you know you have _n_ number of items, and you want behavior executed fo reach item. 
-
-  * `For` loops should especially be used if you know a process needs to be executed a specific number of times.
-
 * `While` loops should be used when you want a decision or behavior to be executed continuously until a condition is no longer `True`. In other words, use a `while` loop when there's a specific condition that must be met in order for the loop to end.
 
-* It's important to note that `while` loops require an **iterator** to be created and incremented. If the iterator is not incremented,the loop will not iterate correctly. 
+* It's important to note that `while` loops require an **iterator** or counter variable to be created and incremented. If the iterator is not incremented, the loop will not iterate correctly. 
 
   * For example, in the following block of code, if `i` is not incremented, `i` will always equal 1. 
   
