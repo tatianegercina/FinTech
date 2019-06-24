@@ -1,1 +1,0 @@
-export MAPBOX="YOUR ACCESS TOKEN HERE :-)"
