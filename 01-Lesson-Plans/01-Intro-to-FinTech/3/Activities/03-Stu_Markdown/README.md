@@ -10,19 +10,19 @@ Walk through the following steps:
 
 2. Modify the README file in the following order:
 
-  * Add an H1 header to the README title.
+    * Add an H1 header to the README title.
 
-  * Add an image (can be FinTech or anything else you think is cool!).
+    * Add an image (can be FinTech or anything else you think is cool!).
 
-  * Add an H2 header for the README description.
+    * Add an H2 header for the README description.
 
-  * Add an H3 header for the README table of contents.
+    * Add an H3 header for the README table of contents.
 
-  * Add links to each sub-folder within the table of contents.
+    * Add links to each sub-folder within the table of contents.
 
 3. Push the changes to the remote git repository.
 
-4. Verify the changes by navigating to the [GitHub](www.github.com) website. 
+4. Verify the changes by navigating to the [GitHub](https://github.com/) website.
 
 ## Hints
 
