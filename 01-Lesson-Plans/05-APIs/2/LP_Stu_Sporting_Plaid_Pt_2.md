@@ -4,7 +4,7 @@ It's time the students donned some Plaid again, as they will be extracting finan
 
 Communicate to students that they can work with a partner to complete the activity; however, each student will need to complete the assignment.
 
-Circulate through the room while students are working to provide assistance. Students may run into difficulty parsing through multiple JSON indexes.
+Circulate through the room and provide assistance while students are working. Students may run into difficulty parsing through multiple JSON indexes.
 
 **Files:**
 
