@@ -14,11 +14,11 @@ Walk through the following steps.
 
 4. Modify the intiialized `README.md` file and insert a quick introduction about yourself:
 
-  * Who are you what's your background?
+    * Who are you what's your background?
 
-  * What are you looking to aspire to be?
+    * What are you looking to aspire to be?
 
-  * Why FinTech?
+    * Why FinTech?
 
 5. Update the `README.md` file in your online GitHub repository.
 
