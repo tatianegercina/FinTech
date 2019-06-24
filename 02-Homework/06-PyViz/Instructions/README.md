@@ -1,4 +1,4 @@
-# Unit 6 Assignment - Pythonic Monopoly
+# Unit 6 - Pythonic Monopoly
 
 ![San Francisco Park Reading](Images/san-francisco-park-reading.jpg)
 
@@ -6,62 +6,121 @@
 
 ## Background
 
-Harold just became so popular on the firm so his manager proposed him to lead the real state brand new division. His first mission is to decide where in San Francisco it’s worth to invest on buying properties for rental by maximizing the company’s revenue in the short (5 years) and long (10 years) term. Harold is also requested to present their results and insights on a visually attractive manner for potential investors. Harold asked you for help to use your brand new python plotting skills to create meaningful data visualizations.
+Harold's company has just started a new Real Estate Investment division to provide customers with a wider range of portfolio options. Harold was tasked with building a prototype dashboard and he needs your help. The real estate team wants to trial this initial offering with investment opportunities for the San Francisco market. If the new service is popular, then they can start to expand to other markets.
+
+The goal of this dashboard is to provide charts, maps, and interactive visualizations that help customers explore the data and determine if they want to invest in rental properties in San Francisco.
 
 In this homework assignment, you will help Harold accomplish the following tasks:
 
-1. [Generate stand-alone plots using  Pandas `plot()` function, `hvPlot` and `Plotly Express`.](#Stand-Alone-Plots)
-2. [Create a dashboard web application using the `DataViz Panel` and `Bokeh Server` by combining plots from different libraries on the same visualization.](#Dashboard-Visualization-Web-Application)
+1. [Complete a notebook of rental analysis](#Rental-Analysis)
+
+2. [Create a dashboard of interactive visualizations to explore the market data](#Dashboard)
 
 ---
 
 ## Files
 
-* [sfo_neighborhoods_census_data.csv](Data/sfo_neighborhoods_census_data.csv)
-* [neighborhoods_coordinates.csv](Data/neighborhoods_coordinates.csv)
+* [sfo_neighborhoods_census_data.csv](Starter_Code/Data/sfo_neighborhoods_census_data.csv)
+* [neighborhoods_coordinates.csv](Starter_Code/Data/neighborhoods_coordinates.csv)
 * [Rental Analysis Starter Jupyter Notebook](Starter_Code/rental_analysis.ipynb)
 * [Dashboard Starter Jupyter Notebook](Starter_Code/dashboard.ipynb)
 
 ## Instructions
 
-### Stand-Alone Plots
+### Rental Analysis
 
-In order to convince potential investors the first step is to understand the available data, so in this section you will use your skills on the different python plotting libraries you learned to answer the following questions on the _Rental Analysis jupyter notebook_:
+The first step to building the dashboard is to work out all of the calculations and visualizations in an analysis notebook. Once the code is worked out here, it can be copied over to a dashboard code and used with Panel to create the final layout. Use the `rental_analysis.ipynb` to complete the following:
 
-* Start by using the Pandas `plot()` function to create the following visualizations:
-  * Create a bar plot that shows the average housing units in San Francisco from 2010 to 2016. How the plot looks? You might need to scale the chart by adjusting the `y` axis limits of the chart.
-  * Create two line plots to show how the average gross rent and the sale price per square foot has evolved from 2010 to 2016.
-* Now use your `hvPlot` super powers to create the following plots:
-  * In order to understand how the sale price per square foot has evolved from 2010 to 2016, Harold asked you to create a *dynamic line plot* that should allow the people to select any single neighborhood in San Francisco to analyze the data individually.
-  * Alina, one of the most influential investors, is interested on buying properties on the most expensive neighborhoods of San Francisco since she believed those places will be the more profitable in the long term. Create a plot that show the average sale price per square foot for the top 10 most expensive neighborhoods.
+#### Housing Units Per Year
 
-Your plot for the top 10 expensive neighborhoods was a good starting point, but Alina wants additional information. Harold suggested to create two new plots, a`parallel coordinates` plot to represent the relationship between the average sale price per square foot, housing units and gross rent; as well as a `parallel categories` plot to analyze the same variables by neighborhood. Harold just has never created this kind of plots, but you accepted the challenge to create them.
+In this section, you will calculate the number of housing units per year and visualize the results as a bar chart using the Pandas plot function.
 
-* Use `Plotly Express` to create the `parallel coordinates` and `parallel categories` plots to support the decisions that investors should make.
+Note: By default, the limits auto-scale to the data. However, it is hard to see the difference between the yearly data. In the optional challenge, you can use the min, max, and standard deviation of the data to manually scale the y limits of the plot.
 
-### Dashboard Visualization Web Application
+Default Bar Chart
 
-The final step is to present your analysis results to investors by assembling all your plots on a dashboard usig `Pyviz Panel`.
+  ![unscaled-bar.png](Images/unscaled-bar.png)
 
-* Open the _Dashboard jupyter notebook_ and reuse the code from the previous section to code some functions to create each plot. If you decide to go on the [Challenge](#Challenge) also create a function to include the map on the dashboard.
-* Create a tabbed dashboard with the following sections:
-  * _Welcome tab_: On this tab include a welcome text depicting the purpose of the dashboard, if you worked on the Challenge, also include the `scatter_mapbox()` plot below the text, if you didn't include an image instead.
-  * _Yearly Market Analysis tab_: This tab will contain the three plots you created with the Pandas `plot()` function.
-  * _Neighborhood Analysis tab_: You should include on this tab the two plots you created with `hvPlot`.
-  * _Parallel Plots Analysis tab:_: Finally this tab will include the two parallel plots you created using `Plotly Express`.
-* Feel free to design the dashboard's layout at your convenience by combining the Column, Row and Tabs layout objects.
+Bar Chart with y-axis limits adjusted
 
-### Challenge
+  ![scaled-bar.png](Images/scaled-bar.png)
 
-Among investors there are some foreign people that are not familiar with San Francisco, so you decide to create a [scatter map plot](https://www.plotly.express/#Maps) using `Plotly Express`.
 
-* On this plot show the location of all neighborhoods in San Francisco by coloring the points according to the average gross rent and sizing them according to the average sale price per square foot.
-* For this activity you will find the latitude and longitude of the center point of each neighborhood on the CSV file entitled `neighborhood_coordinates.csv`. Part of this challenge is to combine this information with the average values of *sales price price for square foot* and *gross rent* for each neighborhood.
-* In order to create maps visualizations using Plotly Express, you will need to create an account at [mapbox](https://www.mapbox.com/) and [create an access token](https://docs.mapbox.com/help/how-mapbox-works/access-tokens/#creating-and-managing-access-tokens).
-* Once you create your access token, open the `key.sh` file to setup your mapbox access token as an environment variable.
+#### Average Gross Rent in San Francisco Per Year
+
+In this section, you want to visualize the average gross rent per year to better understand the trends for rental income over time. You will visualize the average (mean) gross rent per year and visualize it as a line chart.
+
+1. Calculate the mean `gross` for each year.
+2. Visualize the mean gross rent per year as a line chart.
+
+  ![gross-rent.png](Images/gross-rent.png)
+
+#### Average Sales Price Per Year
+
+In this section, you want to determine average sales price per year to better understand the sales price of the rental property over time. For example, a customer will want to know if they should expect an increase or decrease in the property value over time so they can determine how long to hold the rental property. You will visualize the average (mean) `sales_price_sqr_foot` and visualize it as a bar chart.
+
+1. Calculate the mean `gross` for each year.
+2. Visualize the mean gross rent per year as a line chart.
+
+  ![average-sales.png](Images/average-sales.png)
+
+#### Average Prices By Neighborhood
+
+In this section, you want to compare the average prices by neighborhood.
+
+1. Group the data by year and by neighborhood and calculate the average (mean) `sales_price_sqr_foot`.
+2. Visualize the mean `sales_price_sqr_foot` per year with the neighborhood as a dropdown selector. Hint: Use hvplot to obtain the interactive dropdown selector for neighborhood.
+
+  ![avg-price-neighborhood.png](Images/avg-price-neighborhood.png)
+
+#### Top 10 Most Expensive Neighborhoods
+
+In this section, you want to figure out which neighborhoods are the most expensive. You will need to calculate the mean sale price for each neighborhood and then sort the values to obtain the top 10 most expensive neighborhoods on average. Plot the results as a bar chart.
+
+  ![top-10-expensive-neighborhoods.png](Images/top-10-expensive-neighborhoods.png)
+
+#### Parallel Coordinates and Parallel Categories Analysis
+
+In this section, you will use plotly express to create parallel coordinates and parallel categories visualizations so that investors can interactively filter and explore various factors related to the sales price of the neighborhoods.
+
+Using the DataFrame of Average values per neighborhood (calculated above), create the following visualizations:
+
+1. Create a Parallel Coordinates Plot
+
+  ![parallel-coordinates.png](Images/parallel-coordinates.png)
+
+2. Create a Parallel Categories Plot
+
+  ![parallel-categories.png](Images/parallel-categories.png)
+
+#### Neighborhood Map
+
+In this final section, you will read in neighborhood location data and build an interactive map with the average prices per neighborhood. Use a 1scatter_mapbox1 from plotly express to create the visualization. Remember, you will need your mapbox api key for this.
+
+Remember that in order to create maps visualizations using Plotly Express, you will need to create an account at [mapbox](https://www.mapbox.com/) and [create an access token](https://docs.mapbox.com/help/how-mapbox-works/access-tokens/#creating-and-managing-access-tokens).
+
+  ![neighborhood-map.png](Images/neighborhood-map.png)
+
+### Dashboard
+
+Now that you have worked out all of the code and analysis, you will use the Panel library to build an interactive dashboard for all of the visualizations. There are no hard requirements for the layout of this dashboard, so use your own imagination and creativity!
+
+Create a new `dashboard.ipynb` for your dashboard code. Copy over the code for each visualization and place this into separate functions (1 function per visualization). This will make it easier to build and modify the layout later. Each function should return the plot figure in a format that Panel can use to plot the visualization.
+
+Sample Dashboard:
+
+  ![dashboard-demo.gif](Images/dashboard-demo.gif)
+
+- - -
 
 ### Submission
 
-* Complete the *Rental Analysis Jupyter Notebook*.
-* Complete the *Dashboard Jupyter Notebook*.
-* You should not submit your `mapbox` access token.
+* Create separate notebooks for the analysis and the dashboard and upload these to Github.
+
+* Create a binder link to the notebooks so that others can interactively test the code and visaulizations. Add the binder links to your GitHub README.md file.
+
+* Complete your README to explain how to run and use your dashboard.
+
+* Note: You should not submit your `mapbox` access token to github!
+
+* Submit the Github URL repository to Bootcampspot.
