@@ -1,4 +1,4 @@
-## 12.3 Lesson Plan: Introduction to APIs / Cloud Infrastructure (AWS)
+## 12.2 Lesson Plan: Introduction to APIs / Cloud Infrastructure (AWS)
 
 ### Overview
 
