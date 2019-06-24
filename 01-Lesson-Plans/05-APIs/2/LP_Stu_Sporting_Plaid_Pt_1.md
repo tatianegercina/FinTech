@@ -1,4 +1,4 @@
-### 12. Student Do: Sporting Plaid (Part 1) (15 mins)
+### 12. Students Do: Sporting Plaid - Part 1 (15 mins)
 
 This activity is the first part of a two part mini-project activity. Students will create **environment variables** for **Plaid** API keys and install the **Plaid** SDK, which will be used in the next activity to extract transaction data.
 
@@ -30,7 +30,7 @@ Facilitate discussion by asking students about their experiences working with AP
 
 If time remains, ask the following questions:
 
-* What data type are **environment variables**?
+* What data type can **environment variables** be stored as?
 
   **Answer:** String
 
