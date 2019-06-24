@@ -8,7 +8,7 @@ Circulate through the room and provide assistance while students are working. St
 
 **Files:**
 
-* [keys.sh](Activities/14-Stu_Sporting_Plaid_Pt_2/Unsolved/Core/key.sh)
+* [keys.sh](Activities/14-Stu_Sporting_Plaid_Pt_2/Unsolved/key.sh)
 
 * [sporting_plaid.ipynb](Activities/14-Stu_Sporting_Plaid_Pt_2/Unsolved/sporting_plaid.ipynb)
 
