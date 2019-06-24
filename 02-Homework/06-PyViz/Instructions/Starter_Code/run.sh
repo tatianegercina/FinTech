@@ -1,1 +1,1 @@
-panel serve dashboard.ipynb
+panel serve --show dashboard.ipynb
