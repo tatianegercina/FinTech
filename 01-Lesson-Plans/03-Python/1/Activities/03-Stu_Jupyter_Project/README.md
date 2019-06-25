@@ -69,9 +69,7 @@ Create a text file in your `Jupyter-Workspace` directory. In this file, input a 
 
 ### Hints
 
-* If you need help working in the JupyterLab environment, read the [documentation](https://jupyterlab.readthedocs.io/en/stable/user/interface.html#) to learn more.
-
-* Remember, a Jupyter Notebook is a web-based interactive development environment that allows users to code, execute programs and scripts, and create visualizations and documents. Notebooks can be configured to execute Python code, as well as Scala, R, and a number of other programming languages.
+If you need help working in the JupyterLab environment, read the [documentation](https://jupyterlab.readthedocs.io/en/stable/user/interface.html#) to learn more.
 
 ---
 
