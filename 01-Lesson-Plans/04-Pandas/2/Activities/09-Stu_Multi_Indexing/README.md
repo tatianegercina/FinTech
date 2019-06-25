@@ -8,13 +8,13 @@ Using the [starter file](Unsolved/Core/indexing_fever.ipynb), complete the follo
 
 1. Extract three months of historical data from NASDAQ.com, and load the CSV data into Pandas using `read_csv`.
 
-2. In the `read_csv` function, set the index to equal `Trade DATE` Series. Enable read_csv's `parse_dates` and `infer_datetime_format` parameters.
+2. In the `read_csv` function, set the index to equal `Trade DATE` series. Enable read_csv's `parse_dates` and `infer_datetime_format` parameters.
 
 3. Group data by DatetimeIndex year and month.
 
 4. Select close price for `GOOG` for May 2019 by passing in values for `year` and `month` indices.
 
-5. Identify `GOOG` closing price for 30 days ago using `time_delta` function. Hint: Subtract `timedelta(days=30)` from `date.today()`.
+5. Identify `GOOG` closing price for 30 days ago using the `time_delta` function. **Hint:** Subtract `timedelta(days=30)` from `date.today()`.
 
 ### Challenge
 

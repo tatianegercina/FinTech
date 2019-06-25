@@ -1,8 +1,8 @@
 # Group Dynamics
 
-The cryptocurrency market has experienced yet another wave of activity. Everyone's talking about Bitcoin and Ethereum. Close friends and family are bombarding you with questions, requests for information, and advice regarding investing. However, it's been two years since you last looked at your holdings on Binance, and your knowledge of current-day crypto trends is lacking.
+The cryptocurrency market has experienced yet another wave of activity. Everyone's talking about Bitcoin and Ethereum. Close friends and family are bombarding you with questions, requests for information, and investing advice. However, it's been two years since you last looked at your holdings on Binance, and your knowledge of current-day crypto trends is lacking.
 
-It's time you brushed up on the price dynamics of each crypto. Conduct a price analysis for Bitcoin, Ethereum, Bitcoin Cash, Ripple, and Litecoin to assess average, high, and low prices for each cryptocurrency. Determine whether or not crypto performance in the past two years has warranted future investment.
+It's time you brushed up on the price dynamics of each crypto. Conduct a price analysis for Bitcoin, Ethereum, Bitcoin Cash, Ripple, and Litecoin to assess average, high, and low prices for each cryptocurrency. Determine whether or not crypto performance in the past two years warrants future investment.
 
 ## Instructions
 
@@ -10,7 +10,7 @@ Using the [starter file](Unsolved/group_dynamics.ipynb) and the NASDAQ historica
 
 1. Load CSV data into Pandas using `read_csv`.
 
-2. Assign the index as Series `data_date`. Be sure to provide the `parse_dates` and `infer_datetime_format` arguments.
+2. Assign the index as series `data_date`. Be sure to provide the `parse_dates` and `infer_datetime_format` arguments.
 
 3. Clean missing values. Drop columns `data_time` and `timestamp`.
 
