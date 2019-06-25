@@ -28,13 +28,13 @@ By the end of class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Welcome and Goals (5 mins)
+### 1. Instructor Do: Welcome and Goals (10 mins)
 
 * Get off to a great start! Make sure to welcome students to class (using as many names as you can remember), and cover the goals outlined in today's LP
 
 ---
 
-### 2. Instructor Do: Evolution of Fintech (10 mins)
+### 2. Instructor Do: Evolution of Fintech (15 mins)
 
 * After welcoming students to class, we're going to dive headfirst into a brief history of fintech, and how it has become increasingly relevant of late.
 
@@ -65,7 +65,7 @@ By the end of class, students will be able to:
 
 ---
 
-### 4. Instructor Do: Fintech Trends/Domains (10 mins)
+### 4. Instructor Do: Fintech Trends/Domains (15 mins)
 
 * In the next few slides, we will be introducing students to some of the major domains of fintech - focusing on the main ones which we will cover in this course
 
