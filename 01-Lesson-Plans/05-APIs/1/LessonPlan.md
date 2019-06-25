@@ -36,6 +36,8 @@ By the end of class, students will be able to:
 
   * Quandl
 
+* Students should have already downloaded Postman the night before. Use the welcome activity to identify any students who may not have already downloaded Postman, and have the TAs help them get it installed.
+
 * The welcome class module will be dedicated to demoing some of the previously mentioned FinTech APIs.
 
 * Working with APIs can be challenging for anyone using them, especially when documentation is limited. Whenever introducing students to a new API, slack out the link to the documentation so that students have access to it for reference.
@@ -71,6 +73,8 @@ Ask the students if there are any questions related to the homework.
 Welcome the students to the first day of APIs. This lesson will require students to leverage various FinTech APIs (i.e. Quandl) to accelerate their financial analytic pipelines, as well as get access to data they otherwise would not have access to. Students will continue employing skills learned from weeks two and three, such as data cleaning, working with DataFrames, and visualizing data.
 
 The focus of this lesson will be to demo to students some of the creative and quirky FinTech APIs that are currently available to the public. Students will learn and use these APIs to take their FinTech careers to the next level.
+
+Before initiating the demo, ask if there are any students who do not have Postman installed. Instruct TAs to help these students install Postman. Postman will be needed for the first few modules of the lesson.
 
 Be sure to have the following websites loaded prior to class so that the demo can move along. Multiple APIs will need to be demoed within the 5 minute time period.
 
