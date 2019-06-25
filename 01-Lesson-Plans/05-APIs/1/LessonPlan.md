@@ -58,9 +58,9 @@ The APIs unit focuses on getting students thinking about different ways to lever
 
 Walk through the homework instructions, and highlight the following:
 
-* The first component of the homework is focused on Budget Analysis. Students will use an API called `PLAID` to analyze personal financial data. `PLAID` can be used to securely access any type of banking, credit, or investment account, which opens doors to new services to customers that are not typically available without `PLAID`. The greatest thing about it is that you can confidently use `PLAID` knowing you can integrate it with other technologies and apps without security being compromised; `PLAID` handles the security and provisions access to personal financial accounts.
+* The first component of the homework is focused on Budget Analysis. Students will use an API called **PLAID** to analyze personal financial data. **PLAID** can be used to securely access any type of banking, credit, or investment account, which opens doors to new services to customers that are not typically available without **PLAID**. The greatest thing about it is that you can confidently use **PLAID** knowing you can integrate it with other technologies and apps without security being compromised; **PLAID** handles the security and provisions access to personal financial accounts.
 
-* With financial data available and accessible via `PLAID`, students will transition to using the financial data retrieved via `PLAID` to forecast financial goals. This section uses a monte carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution will be sufficient to cover their future income.
+* With financial data available and accessible via **PLAID**, students will transition to using the financial data retrieved via **PLAID** to forecast financial goals. This section uses a monte carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution will be sufficient to cover their future income.
 
 * Lastly, students will analyze the output of the retirement planner activity and summarize assumptions and findings in a markdown file. This file will need to be uploaded to the Github repository.
 
@@ -86,23 +86,23 @@ Be sure to have the following websites loaded prior to class so that the demo ca
 
 * [welcome-slides]()
 
-Start the class off with a review of the introductory slide about `APIs`. Highlight the following:
+Start the class off with a review of the introductory slide about **APIs**. Highlight the following:
 
-* Application programming interfaces, or `APIs`, are functions and procedures that enable users to gain access to features and data of an underlying system.
+* Application programming interfaces, or **APIs**, are functions and procedures that enable users to gain access to features and data of an underlying system.
 
 * APIs work as endpoints, like old school telephone operators. A request or call is submitted by a user to be connected to another entity. The API interprets the request and transmits the request to the target entity. The user then receives a response.
 
 * APIs are made by individual developers like the students, as well as private companies and corporations. For this reason, some APIs are free and others require payment for services.
 
-* There are a large number of FinTech APIs are available that accelerate day-to-day financial analytics and data acquisition. These include `Quandl` and `Wrap API`, just to name a few.
+* There are a large number of FinTech APIs are available that accelerate day-to-day financial analytics and data acquisition. These include **Quandl** and **Wrap API**, just to name a few.
 
-Introduce `Quandl` and briefly demonstrate to students how to use an internet browser to submit a Quandl API call.
+Introduce **Quandl** and briefly demonstrate to students how to use an internet browser to submit a Quandl API call.
 
-* `Quandl` is a data mart of financial data. Quandl collects data from various sources, consolidates the data,and then makes it available to users. `Quandl` is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Quandl's data can be accessed by users via their API. The API supports multiple programming languages, including Python.
+* **Quandl** is a data mart of financial data. Quandl collects data from various sources, consolidates the data,and then makes it available to users. **Quandl** is a great product to use to extract financial data to calculate ROI, risk-to-reward ratio, etc. Quandl's data can be accessed by users via their API. The API supports multiple programming languages, including Python.
 
   ![quandl_flow.gif](Images/quandl_flow.gif)
 
-Navigate to the [Quandle API Overview](https://www.quandl.com/tools/api) page, and scroll down to the `API Features` section.
+Navigate to the [Quandle API Overview](https://www.quandl.com/tools/api) page, and scroll down to the **API Features** section.
 
 * Show students the URL used to submit a Quandl API request. Underscore the fact that API requests work just like regular URLs. Also indicate that the **request url** can be configured to specify the output format (i.e. CSV, JSON, or XML); state that JSON will be used for this class.
 
@@ -120,15 +120,15 @@ Finish the demo of Quandl with the following reflective question:
 
 * We've extracted historical stock data in the past using the NASDAQ website. How does using the `Quandl` API compare? How is it different?
 
-  > "Quandl is easier and quicker to use than Nasdaq. As long as the URL is known, less steps are needed. Limitation is that the request URL has to be known. Less steps are required to get data from Quandl compared to NASDAQ as well."
+  **Answer** Quandl is easier and quicker to use than Nasdaq. As long as the URL is known, less steps are needed. Limitation is that the request URL has to be known. Less steps are required to get data from Quandl compared to NASDAQ as well.
 
 * If you wanted to automate the extraction of historical stock price, what's the better tool: NASDAQ.com or Quandl?
 
-  > "Quandl would be the best tool to use to automate extraction of historical stock data. It would be easier than automating the NASDAQ.com process."
+  **Answer** Quandl would be the best tool to use to automate extraction of historical stock data. It would be easier than automating the NASDAQ.com process.
 
 If time remains, communicate to students that if they wanted to automate the NASDAQ process, they could use the really cool[WrapAPI](https://wrapapi.com/). Open the site and show students the Yelp gifs.
 
-* Explain that the `WrapAPI` provides a functionality that allows users to record a series of actions on a website and automate them. This includes actions like signing into Facebook, as well as extracting data from NASDAQ.com. It can also scrape data from a website!
+* Explain that the **WrapAPI** provides a functionality that allows users to record a series of actions on a website and automate them. This includes actions like signing into Facebook, as well as extracting data from NASDAQ.com. It can also scrape data from a website!
 
 * Convey what's happening in each gif.
 
@@ -138,7 +138,7 @@ If time remains, communicate to students that if they wanted to automate the NAS
 
   2. Action/request output is reviewed
 
-* The `WrapAPI` could actually be used to submit Quandl API requests via a web browser as well. `WrapAPI` could automate the process of copying and pasting the request URL into the browser.
+* The **WrapAPI** could actually be used to submit Quandl API requests via a web browser as well. **WrapAPI** could automate the process of copying and pasting the request URL into the browser.
 
 Before ending this activity, let students know that this is just the beginning in terms of available APIs for use. Ask if there are any questions prior to moving onto the next activity.
 
@@ -190,11 +190,11 @@ Ask students the following questions. If time did not permit for the **ping** de
 
 * In this scenario, what is the **client** and what is the **server**?
 
-  > "The terminal is the **client** and Yahoo Finance's server(s) are the **server**."
+  **Answer** The terminal is the **client** and Yahoo Finance's server(s) are the **server**.
 
 * Was the request sent to Yahoo Finance via the Terminal a successful execution of the **client-server model** based on packets sent and received?
 
-  > "Yes, all packets that were sent to the server were received."
+  **Answer** Yes, all packets that were sent to the server were received.
 
 Ask students if there are any questions before moving on.
 
@@ -234,19 +234,19 @@ Engage students by asking some of the following review questions:
 
 * Website images are saved on website servers. When an image loads, what type of request is sent from the client to the server?
 
-  > "`GET` request"
+  **Answer** `GET` request
 
 * Explain the client-server model from the perspective of emails.
 
-  > "Servers provided by companies like Google, Yahoo, Microsoft, etc. are used to store and distribute email messages. Email applications and internet browsers are clients that are used to specify who emails are sent to and the body of emails. Clients are used to submit email content to servers, and then servers distribute the message to the corresponding email targets."
+  **Answer** Servers provided by companies like Google, Yahoo, Microsoft, etc. are used to store and distribute email messages. Email applications and internet browsers are clients that are used to specify who emails are sent to and the body of emails. Clients are used to submit email content to servers, and then servers distribute the message to the corresponding email targets.
 
 * If time remains, round robin and ask some students to give details about the data they saw transmitted. This will allow students to compare what they say with what others saw. It will also help students understand some of the common data exchanges, such as user credentials and search queries.
 
-  > "GET requests"
+  **Answer** GET requests
 
-  > "POST requests"
+  **Answer** POST requests
 
-  > "Calls to fetch images"
+  **Answer** Calls to fetch images
 
 Ask for any remaining questions before moving on.
 
@@ -254,7 +254,7 @@ Ask for any remaining questions before moving on.
 
 ### 6. Instructor Do: Postman (5 mins)
 
-In this activity, students will learn how to use Postman. The instructor will demo making `Quandl` API calls with Postman rather than through a browser. This will highlight the advantages of using Postman, such access to a UI, request logs, and tools that format API output for ease of use.
+In this activity, students will learn how to use Postman. The instructor will demo making **Quandl** API calls with Postman rather than through a browser. This will highlight the advantages of using Postman, such access to a UI, request logs, and tools that format API output for ease of use.
 
 Be sure to have the **Postman** client installed prior to beginning this activity. Consult the Postman install guide for instructions on how to install (link is listed below).
 
@@ -268,7 +268,7 @@ Briefly recap on how APIs have been submitted so far. Ask the students:
 
 * We submitted Quandl API requests earlier in the class. What tool did we use to submit the API call?
 
-> "An internet browser."
+**Answer** An internet browser.
 
 Explain to students that internet browsers a sufficient tool to submit adhoc API requests. While browsers are an easy way to submit API calls, using a service like **Postman** is much more efficient and effective.
 
@@ -276,27 +276,27 @@ Explain to students that internet browsers a sufficient tool to submit adhoc API
 
 * Communicate that **Postman** is a development environment for APIs. APIs requests can be submitted and tested within **Postman**. Servers can also be spun up in **Postman** in order to develop and/or host APIs.
 
-Open **Postman** and perform a live demonstration of submitting an API request to `Quandl` for `AAPL` stock data. Use this as an opportunity to bridge back to the previous assignments where requests were submitted via a browser rather than a tool like **Postman**. Highlight the following:
+Open **Postman** and perform a live demonstration of submitting an API request to **Quandl** for **AAPL** stock data. Use this as an opportunity to bridge back to the previous assignments where requests were submitted via a browser rather than a tool like **Postman**. Highlight the following:
 
-* Creating a request in **Postman** is easy; it's just the click of a button. Selecting `Request` in the `Create New` window will open a screen where information can be put in for the request and the request saved.
+* Creating a request in **Postman** is easy; it's just the click of a button. Selecting **Request** in the **Create New** window will open a screen where information can be put in for the request and the request saved.
 
   ![create_request.png](Images/create_request.png)
 
-* **Postman** allows users to save API requests to what they call `collections`. This allows requests to be created once but ran many times. It also allows requests to be scheduled. In order to save a request, a request must be saved with a **name**, `description`, and `collection`.
+* **Postman** allows users to save API requests to what they call **collections**. This allows requests to be created once but ran many times. It also allows requests to be scheduled. In order to save a request, a request must be saved with a **name**, **description**, and **collection**.
 
   ![save_request.png](Images/save_request.png)
 
-* Another way to create a request is to create a new `tab`. Once the tab is created, the request URL can be input.
+* Another way to create a request is to create a new **tab**. Once the tab is created, the request URL can be input.
 
   ![new_request.png](Images/new_request.png)
 
-* Submit an API call to `Quandl` using the **Postman** submit button. Use the below request URL.
+* Submit an API call to **Quandl** using the **Postman** submit button. Use the below request URL.
 
   * https://www.quandl.com/api/v3/datasets/WIKI/AAPL.json
 
   ![postman_get.png](Images/postman_get.png)
 
-* The output from an API call is returned in the **Postman** client. **Postman** presents users with the ability to choose the format of the output (i.e. JSON vs. XML). Indicate that the format of the output on the screen is called `JSON` (Javascript Object Notation).
+* The output from an API call is returned in the **Postman** client. **Postman** presents users with the ability to choose the format of the output (i.e. JSON vs. XML). Indicate that the format of the output on the screen is called **JSON** (Javascript Object Notation).
 
   ![postman_submit.png](Images/postman_submit.png)
 
@@ -392,7 +392,7 @@ The World Bank API (GDP extraction) should be used for this instructor demonstra
 
 Navigate to the 5.1 slides, and highlight the following:
 
-* Just as API `requests` can be sent through Postman, they can slo be sent through Python. Python offers a `requests` package that can be used to submit API requests through a protocol known as `HTTP`. The `requests` library supports `GET`, `POST`, and `PUT` requests, just to name a few. `GET` requests will be the focus for this class.
+* Just as API **requests** can be sent through Postman, they can slo be sent through Python. Python offers a `requests` package that can be used to submit API requests through a protocol known as `HTTP`. The `requests` library supports `GET`, `POST`, and `PUT` requests, just to name a few. `GET` requests will be the focus for this class.
 
 * Each type of request serves a different purpose.
 
@@ -402,7 +402,7 @@ Navigate to the 5.1 slides, and highlight the following:
 
   * `PUT` requests are used to overwrite content on the server
 
-* APIs play a key role in data analytic pipelines, often being the source of data or a means to analyze data. By writing `requests` in Python, APIs can be used in-line with other processing. For example, data can be pulled from Coinbase in order to calculate `cumulative returns`, `sharpe ratio`, and `beta` for a set of cryptos. Similarly, data could be extracted from the Quandl API in order to complete portfolio simulations. Instead of switching back and forth between Postman and Python, everything can just be completed in Python.
+* APIs play a key role in data analytic pipelines, often being the source of data or a means to analyze data. By submitting **requests** in Python, APIs can be used in-line with other processing. For example, data can be pulled from Coinbase in order to calculate **cumulative returns**, **sharpe ratio**, and **beta** for a set of cryptos. Similarly, data could be extracted from the Quandl API in order to complete portfolio simulations. Instead of switching back and forth between Postman and Python, everything can just be completed in Python.
 
 Live code how to use the Python `requests` library, and use the following discussion points:
 
@@ -418,7 +418,7 @@ Live code how to use the Python `requests` library, and use the following discus
   url = "http://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD"
   ```
 
-* Because most APIs support multiple output formats, the next step is to specify the desired output format. This can be added to the url with a `format` tag, `?format=`. Common formats used are JSON, CSV, and XML. For this lesson, JSON will be the focus. The format tag will need to be appended to the `url` string previously created; ask students if anyone remembers how to append to a string (Answer: concatenation).
+* Because most APIs support multiple output formats, the next step is to specify the desired output format. This can be added to the url with a **format** tag, `?format=`. Common formats used are JSON, CSV, and XML. For this lesson, JSON will be the focus. The format tag will need to be appended to the **url** string previously created; ask students if anyone remembers how to append to a string (Answer: concatenation).
 
   ```python
   url = url + "?format=json"
@@ -433,7 +433,7 @@ Live code how to use the Python `requests` library, and use the following discus
 
   ![request_response.png](Images/request_response.png)
 
-* Most APIs incorporate programming that will return a code with each server response. These are called `response codes`. A list of common response codes and their meaning can be found below.
+* Most APIs incorporate programming that will return a code with each server response. These are called **response codes**. A list of common response codes and their meaning can be found below.
 
   ```
   Common Response Codes
@@ -450,7 +450,7 @@ Live code how to use the Python `requests` library, and use the following discus
   response_data = requests.get(url)
   ```
 
-* The actual data returned from the server, called `content`, can be accessed with the `content` attribute.
+* The actual data returned from the server, called **content**, can be accessed with the `content` attribute.
 
   ```python
   # Get content
@@ -478,7 +478,7 @@ Live code how to use the Python `requests` library, and use the following discus
 
   ![json_with_indent.png](Images/json_with_indent.png)
 
-* JSON data has to be selected based off of levels and hierarchies. For example, some JSON objects are organized by JSON object -> JSON array -> attribute. Some have multiple objects, and others have multiple JSON arrays. Either way, accessing JSON data is just like accessing data in a dictionary. Brackets `[]` are used with `keys` to retrieve values.
+* JSON data has to be selected based off of levels and hierarchies. For example, some JSON objects are organized by JSON object -> JSON array -> attribute. Some have multiple objects, and others have multiple JSON arrays. Either way, accessing JSON data is just like accessing data in a dictionary. Brackets `[]` are used with **keys** to retrieve values.
 
   ```python
   # Select country and GDP value for first row
@@ -502,7 +502,7 @@ Ask if there are any remaining questions before moving forward.
 
 ### 11. Students Do: Ice Breakers on Request (20 mins)
 
-In this activity, students are given a list of `request urls` to execute using the Python `requests` library. Students will also receive the opportunity to put their JSON knowledge to use by interpreting JSON output. Students will interpret the JSON output to find an interesting fact or joke to tell the class.
+In this activity, students are given a list of **request urls** to execute using the Python `requests` library. Students will also receive the opportunity to put their JSON knowledge to use by interpreting JSON output. Students will interpret the JSON output to find an interesting fact or joke to tell the class.
 
 Walk around with TAs to provide assistance to students with parsing JSON data. Students may need assistance parsing JSON output. Make sure every student has been able to successfully execute a request and find an interesting fact/joke to share, even if the fact has to relate to their own experiences using Python requests.
 
@@ -526,7 +526,7 @@ If a student doesn't find a fact or joke they feel like sharing, ask them to ans
 
 * Identify one advantage of using Python `requests` library over using **Postman**.
 
-> "The `requests` library allows API calls to be made in-line with the rest of the code/processing. Postman requires users to transition from one development environment to another."
+**Answer** The `requests` library allows API calls to be made in-line with the rest of the code/processing. Postman requires users to transition from one development environment to another.
 
 Transition into a reflective Q&A session. Ask the students the following questions:
 
@@ -564,7 +564,7 @@ Open the solution and conduct a dry walkthrough review, highlighting the followi
   request_data = requests.get(prog_joke_url)
   ```
 
-* Each Python `request` generates a `response code`. The `response code` indicates whether or not the response was successful and details if there were any errors.
+* Each Python **request** generates a **response code**. The **response code** indicates whether or not the response was successful and details if there were any errors.
 
   ```python
   print(request_data)
@@ -574,7 +574,7 @@ Open the solution and conduct a dry walkthrough review, highlighting the followi
   <Response [200]>
   ```
 
-* The `content` from a `request` can be accessed using the `content` attribute.
+* The **content** from a **request** can be accessed using the `content` attribute.
 
   ```python
   # Store response using `content` attribute
@@ -588,7 +588,7 @@ Open the solution and conduct a dry walkthrough review, highlighting the followi
   data = response_data.json()
   ```
 
-* `json.dumps` can be used to format the JSON output in a way that is easy to decipher and interpret visually. The `indent` argument is used to specify how many indentations should be used when formatting. Indents help delineate JSON levels/hierarchies.
+* `json.dumps` can be used to format the JSON output in a way that is easy to decipher and interpret visually. The **indent** argument is used to specify how many indentations should be used when formatting. Indents help delineate JSON levels/hierarchies.
 
   ```python
   import json
@@ -617,7 +617,7 @@ Open the solution and conduct a dry walkthrough review, highlighting the followi
 
 ### 15. Instructor Do: URL Parameters (5 mins)
 
-In this activity, students learn how to customize API requests with `parameters` through instructor demonstration. The [Numbers API](http://numbersapi.com) will be used for the demonstration, so make sure the API is still up and running prior to class.
+In this activity, students learn how to customize API requests with **parameters** through instructor demonstration. The [Numbers API](http://numbersapi.com) will be used for the demonstration, so make sure the API is still up and running prior to class.
 
 **Files:**
 
@@ -625,13 +625,13 @@ In this activity, students learn how to customize API requests with `parameters`
 
 Navigate to the 5.1 slides, and highlight the following:
 
-* Each API call supports a set of `parameters`. These `parameters` can be used to help direct the API towards the data needed or be used to reduce the amount of data being returned by the server.
+* Each API call supports a set of **parameters**. These **parameters** can be used to help direct the API towards the data needed or be used to reduce the amount of data being returned by the server.
 
-  * Ask the students: We've already made some API requests using `parameters`. Can anyone remember any examples?
+  * Ask the students: We've already made some API requests using **parameters**. Can anyone remember any examples?
 
-    > "When using the `?format=json` tag."
+    **Answer** When using the `?format=json` tag.
 
-* `Parameters` can be specified in one of two ways. `Parameters` can follow `/` forward slashes or specified by `parameter` name and then by `parameter` value.
+* **Parameters** can be specified in one of two ways. **Parameters** can follow `/` forward slashes or specified by **parameter** name and then by **parameter** value.
 
   ```
   Parameter provided after /
@@ -643,13 +643,13 @@ Navigate to the 5.1 slides, and highlight the following:
   http://numbersapi.com/random?min=10?json
   ```
 
-* When used with parameter names, `URL parameters` have to be separated from the **request url** with the `?` symbol.
+* When used with parameter names, **URL parameters** have to be separated from the **request url** with the `?` symbol.
 
   ```
   http://numbersapi.com/random?min=10
   ```
 
-* Multiple parameters can be passed in with the same URL by separating each `parameter` with an `&` symbol
+* Multiple parameters can be passed in with the same URL by separating each **parameter** with an `&` symbol
 
   ```
   http://numbersapi.com/random?min=10&max=20
@@ -657,7 +657,7 @@ Navigate to the 5.1 slides, and highlight the following:
 
 Open the solution, and conduct a dry walk through of the following solution. Touch upon the following discussion points:
 
-* The requests `GET` function can be used to submit a `parameterized` request to the Numbers API to get trivia facts about the number 42.
+* The requests `GET` function can be used to submit a **parameterized** request to the Numbers API to get trivia facts about the number 42.
 
   ```python
   import requests
@@ -678,7 +678,7 @@ Open the solution, and conduct a dry walk through of the following solution. Tou
 
 Open the starter file, and live code the following:
 
-* The Numbers API URL can be `parameterized` to execute for the number `8` instead of `42`.
+* The Numbers API URL can be **parameterized** to execute for the number `8` instead of `42`.
 
   ```python
   # Create parameterized url
@@ -698,7 +698,7 @@ End the class with a final question:
 
 * What kind of parameters should be used when working with financial APIs? One example is dates. What are others? Hint: Think attributes related to people, stocks, bank accounts, credit scores, etc.
 
-  > "Names, birthdays, social security numbers, tickers, trade limits, number of shares to buy, limit order dollar amounts, routing numbers, checking accounts, etc."
+  **Answer** Names, birthdays, social security numbers, tickers, trade limits, number of shares to buy, limit order dollar amounts, routing numbers, checking accounts, etc.
 
 Ask the students if they have any remaining questions before moving on.
 
@@ -706,7 +706,7 @@ Ask the students if they have any remaining questions before moving on.
 
 ### 16. Students Do: House of Requests (20 mins)
 
-This activity is dedicated to giving the students an opportunity to use a fun API. Students play a game of BlackJack using the `Deck of Cards` API. The key skills reinforced in this activity include the execution of `GET` requests using the Python `requests library`, extraction of JSON elements, and parameterization of API `request URLs`.
+This activity is dedicated to giving the students an opportunity to use a fun API. Students play a game of BlackJack using the **Deck of Cards** API. The key skills reinforced in this activity include the execution of `GET` requests using the Python `requests library`, extraction of JSON elements, and parameterization of API **request URLs**.
 
 Students can play the game against a classmate or imaginary dealer. Students are encouraged to work as partners so they can pair-program and play against one another.
 
@@ -728,7 +728,7 @@ Students can play the game against a classmate or imaginary dealer. Students are
 
 Facilitate a dry walk through of the solution utilizing the following discussion points:
 
-* Passing `parameters` to APIs through `request URLs` gives users the ability to configure and control API actions. By passing `parameters` to the `request URLs` for the `Deck of Cards` API, users can create a deck of cards can be created and shuffled. Parameters also allow users to draw `n` number of cards from the deck.
+* Passing **parameters** to APIs through **request URLs** gives users the ability to configure and control API actions. By passing **parameters** to the **request URLs** for the **Deck of Cards** API, users can create a deck of cards can be created and shuffled. Parameters also allow users to draw `n` number of cards from the deck.
 
   ```python
   create_deck_url = "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6"
@@ -742,7 +742,7 @@ Facilitate a dry walk through of the solution utilizing the following discussion
 
   ![parameter_formats.png](Images/parameter_formats.png)
 
-* Interpolation is a common way to pass `parameters` to `request URLs`. This allows for parameters to be assigned to variables and those variables to be interpolated into the `request URLs`. This also enables dynamic configuration of parameters and removes instances of hard-coded parameter values.
+* Interpolation is a common way to pass **parameters** to **request URLs**. This allows for parameters to be assigned to variables and those variables to be interpolated into the **request URLs**. This also enables dynamic configuration of parameters and removes instances of hard-coded parameter values.
 
   ```python
   draw_cards_url = f"https://deckofcardsapi.com/api/deck/{deck_id}/draw/?count=2"
@@ -756,7 +756,7 @@ Facilitate a dry walk through of the solution utilizing the following discussion
   https://deckofcardsapi.com/api/deck/epigy7ynp5yi/shuffle/
   ```
 
-* `Parameterized request URLs` are submitted like any other URL: using the `GET` request. `Parameters` help simplify the amount of data being returned from the output. This makes parsing JSON objects/rows easy, especially since JSON data often times has to be iterated. The more parameters used, the less data returned.
+* **Parameterized request URLs** are submitted like any other URL: using the `GET` request. **Parameters** help simplify the amount of data being returned from the output. This makes parsing JSON objects/rows easy, especially since JSON data often times has to be iterated. The more parameters used, the less data returned.
 
   ```python
   # Draw two cards
@@ -786,21 +786,21 @@ Transition the class into a review session. Ask the following questions:
 
 * In addition to `deck_id`, what other parameter values should be interpolated for the `draw_cards_url`?
 
-  > "count"
+  **Answer** count
 
-* If you were to contribute to the `Deck of Cards` API, what type of features or functionality would you want to enhance or add?
+* If you were to contribute to the **Deck of Cards** API, what type of features or functionality would you want to enhance or add?
 
-  > "Game Options (i.e. Poker, Go Fish, War, etc.)
+  **Answer** Game Options (i.e. Poker, Go Fish, War, etc.)
 
-  > "Automated dealing based off of game type (i.e. Poker, Texas Hold'em, etc.)"
+  **Answer** Automated dealing based off of game type (i.e. Poker, Texas Hold'em, etc.)
 
-  > "Game specific interactions (i.e. playing war compares player cards turn by turn)"
+  **Answer** Game specific interactions (i.e. playing war compares player cards turn by turn)
 
-  > "Turn based gaming"
+  **Answer** Turn based gaming
 
-  > "Scoring"
+  **Answer** Scoring
 
-* Has url `parameters` made APIs more challenging or easier to use?
+* Has url **parameters** made APIs more challenging or easier to use?
 
 Ask if there are any remaining questions or comments before continuing.
 
