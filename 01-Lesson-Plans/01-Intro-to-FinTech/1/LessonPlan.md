@@ -56,7 +56,7 @@ At this point, it's your turn to introduce yourself, as well as have the TAs and
 
 ---
 
-### 4. Instructor Do: Course Format and Requirements (15 mins)
+### 4. Instructor Do: Course Format and Requirements (20 mins)
 
 * Continuing in the slideshow, we will now enumerate the topics that will be covered throughout the course.
 
