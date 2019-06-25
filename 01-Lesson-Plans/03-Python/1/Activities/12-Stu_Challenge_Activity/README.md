@@ -1,6 +1,6 @@
-## Conditionally Yours
+## Conditionally Yours Part II
 
-In this activity, you will use the pseudocode you created in the previous activity to develop a program that recommends purchasing or selling stock based on percent increase or decrease.
+In this activity, you will use the pseudocode you created in the previous activity to develop a program that recommends purchasing or selling stock based on a percent increase or decrease of its stock price.
 
 ### Background
 
@@ -10,7 +10,7 @@ While on your lunch break together, you start posing ideas about how the program
 
 Harold knows that this would allow him to focus only on buying and selling; the program would handle all decision making and get him one step closer to securing the title of top trader for weeks to come. You begin considering the requirements for the enhanced program.
 
-#### Task
+### Task
 
 For this activity, work with a partner to create pseudocode for a program that will:
 
@@ -30,7 +30,7 @@ When the pseudocode is complete:
 
     * Percent Increase = Increase / Original x 100
 
-## Instructions
+### Instructions
 
 Using the [starter-file](Unsolved/conditionally_yours.py) provided, complete the following steps:
 
@@ -64,12 +64,16 @@ Using the [starter-file](Unsolved/conditionally_yours.py) provided, complete the
 
 8. Print `recommendation`. 
 
-## Challenge
+### Challenge
 
 Add a layer of sophistication to your program by creating a `balance` variable. This will serve as the amount of excess equity or money available in a portfolio. 
 
 Create logic that will take into consideration `balance` when determining a recommendation. Only recommend to buy if `balance` is five times the amount of the stock's current price.
 
-## Hint
+### Hint
 
 Use a [format specifier](https://www.python.org/dev/peps/pep-0498/#format-specifiers) with the f-string.
+
+---
+
+© 2019 Trilogy Education Services
