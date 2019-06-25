@@ -1,3 +1,5 @@
+PLACEHOLDER
+
 ### 16. Instructor Do: Intro to Git (30 min)
 
 Explain to students that so far GitHub has really only been used as a sort of drop box to store our files. Although GitHub works well this way, it has far greater capability. Today there will be a deeper dive into what Git is and how to use it through the terminal to interact with Github.
