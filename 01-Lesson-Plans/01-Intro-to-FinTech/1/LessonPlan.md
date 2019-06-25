@@ -1,4 +1,49 @@
-### 1. University Do/SSM Do: Introductions (0:30)
+## 5.3 Lesson Plan - Track to the Future!
+
+---
+
+### Overview
+
+Today's class will focus on the notion of using Monte Carlo simulations to forecast future results and make confident predictions supported by statistical evidence. Monte Carlo simulations are an important tool in emulating a real-world use case that involves a degree of randomness surrounding an event or outcome, and seeks to iterate `n` number of times to find the most probable result of a variable event as well as the range of results and their corresponding probabilities of occurring.
+
+In particular, stocks prices also tend to move somewhat randomly in such a way that there are varying probabilities to where the price may go or deviate from its average return (daily, weekly, monthly). Therefore, this lesson will teach students how to apply the concept of Monte Carlo simulations to predict future stock prices and therefore forecast the potential stocks returns of an initial investment, either as a single stock investment or as an investment in a portfolio.  
+
+### Class Objectives
+
+By the end of class, students will be able to:
+
+* Define what a simulation is and why it's used.
+* Deconstruct the components of the Monte Carlo Simulation process: probability distributions and iterations.
+* Interpret probability distributions (normal/bell curve) and random number generators.
+* Comprehend the use of confidence intervals and what they suggest.
+* Implement a single Monte Carlo simulation on the future price trajectory of a stock.
+* Execute multiple Monte Carlo simulations on the future price trajectories of a stock.
+* Break down Portfolio Forecasting in the context of Monte Carlo Simulations on stock price trajectories and portfolio returns.
+* Implement multiple Monte Carlo simulations on the potential returns of a stock portfolio.
+
+### Instructor Notes
+
+* Today's lesson deals heavily with statistical concepts, particularly probability. Try to be as clear as possible and be mindful of students who may become easily confused as this lesson will surely push the boundaries of most students' comfort levels when it comes to statistics.
+
+* When overviewing the concept of probability distributions, also make sure to stress the notion of randomness. Probability merely implies that there is a chance that a specific result or event may occur but makes no guarantees, which is why results can differ with each iteration.
+
+* Once students are comfortable with probability distributions, namely normal distributions, students should be able to process the idea that Monte Carlo simulations on stock investments seeks to chart the different paths (and probabilities) in which a stock can vary about its average daily return. Overview the code in detail so that this becomes more apparent.
+
+* Towards the end of class, students will begin applying Monte Carlo simulations to portfolio returns. Therefore, they will need to combine the concepts of portfolio optimization (taught in the Pandas unit) with the concept of portfolio forecasting (taught in today's lesson). Walk through the steps in details as students can easily get lost in this myriad of technical concepts!
+
+* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+
+
+
+
+
+
+
+
+
+
+
+### 1. University Do/SSM Do: Introductions (15 mins)
 
 The first part of class consists of introductions from the university, program director, student services director, and/or career director.
 
@@ -6,7 +51,7 @@ The first part of class consists of introductions from the university, program d
 
 ---
 
-### 2. Instructor Do: Class Introductions (0:40)
+### 2. Instructor Do: Class Introductions (40 mins)
 
 At this point, it's your turn to introduce yourself, as well as have the TAs and students introduce themselves one at a time. This is an important icebreaking activity; have fun with it!
 
@@ -20,7 +65,7 @@ At this point, it's your turn to introduce yourself, as well as have the TAs and
 
 ---
 
-### 8. Course overview
+### 3. Course overview (15 mins)
 
 * Continuing in the slideshow, we will now enumerate the topics that will be covered throughout the course.
 
@@ -38,7 +83,7 @@ At this point, it's your turn to introduce yourself, as well as have the TAs and
 
 ---
 
-### X. Instructor Do: Intro to Fintech
+### X. Instructor Do: Intro to Fintech (15 mins)
 
 * What exactly *is* fintech anyway? Through the next few slides we aim to clarify what the field is and isn't, as well as allowing students to explore their own ideas about the field.
 
@@ -46,7 +91,7 @@ At this point, it's your turn to introduce yourself, as well as have the TAs and
 
 ---
 
-### Instructor Do: Introduce Homework [CRITICAL]
+### Instructor Do: Introduce Homework (10 mins)
 
 * Before heading out for the night, make sure to introduce the first homework assignment so students can begin thinking about what company they want to do their case study on.
 
@@ -69,7 +114,7 @@ At this point, it's your turn to introduce yourself, as well as have the TAs and
 
 ---
 
-### Instructor Do: Review Group discussion
+### Instructor Do: Review Group discussion (10 mins)
 
 * After taking a few responses, bring up the next slide.
 
@@ -94,7 +139,7 @@ At this point, it's your turn to introduce yourself, as well as have the TAs and
 
 ---
 
-### Student Do: Discuss Definitions of Fintech
+### Student Do: Discuss Definitions of Fintech (25 mins)
 
 
 * Students are all here for a course on fintech, but may not have clarity on what exactly that is.
