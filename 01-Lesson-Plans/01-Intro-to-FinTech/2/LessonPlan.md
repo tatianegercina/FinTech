@@ -158,7 +158,7 @@ By the end of class, students will be able to:
 
 ---
 
-### 8. Instructor do: Payments Case Study - Stripe
+### 8. Instructor do: Payments Case Study - Stripe (10 mins)
 
 * As students are coming back from break, let them know that we're going to deep-dive into a case study as an example of what we'd like to see in their final report for the homework this week.
 
@@ -224,7 +224,7 @@ By the end of class, students will be able to:
 
 ---
 
-### 11. Instructor Do: Anaconda Terminal (10 mins) (Critical)
+### 11. Instructor Do: Anaconda Terminal (10 mins)
 
 * **Files:**
 
