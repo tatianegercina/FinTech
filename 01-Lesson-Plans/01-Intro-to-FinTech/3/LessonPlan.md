@@ -1,5 +1,3 @@
-PLACEHOLDER
-
 ## 1.3 Lesson Plan - FinTech Collaboration
 
 ---
@@ -12,11 +10,13 @@ In today's class, students will learn how to utilize the Git Command Line Interf
 
 By the end of class, students will be able to:
 
-* Configure the git CLI user credentials from the terminal
-* Comprehend the notion of git clone and local/remote branches
-* Modify git repositories by adding, committing, and pushing files
-* Create markdown files and implement its additional visual capabilities: text formatting, images, links
-* Collaboratively write a FinTech case study in markdown, hosted on an online git repository 
+* Configure the git CLI user credentials from the terminal.
+* Clone a repository using git clone.
+* Explain how git branching works in the context of versioning systems.
+* Create local and remote branches using the git CLI.
+* Modify git repositories by adding, committing, and pushing files.
+* Create markdown files and implement its additional visual capabilities: text formatting, images, links.
+* Collaboratively write a FinTech case study in markdown, hosted on an online git repository.
 
 ### Instructor Notes
 
