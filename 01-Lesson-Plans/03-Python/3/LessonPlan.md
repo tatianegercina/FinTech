@@ -19,9 +19,11 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today’s class will introduce concepts like time value of money, zero-coupon bonds, and net present value. Be mindful of pacing as you review these topics; students need to have a thorough understanding of financial concepts and how they are used in order to develop the perspective for solving financial use cases. 
+* Today’s class will introduce concepts like time value of money, zero-coupon bonds, and net present value. Take your time as you review these topics; a few extra moments to answer questions and review complex concepts goes a long way in aiding comprehension, especially if the majority of the class seems to be struggling. 
 
-* Remember that students most likely have varying levels of finance experience. Therefore, make sure your lectures are clear and thorough for newcomers, while serving as interesting refreshers for veterans as well. 
+* Students need to have a thorough understanding of financial concepts and how they are used in order to develop the mindset for solving financial use cases programmatically. Make sure to relate the financial use case to its corresponding programmatic process.
+
+* Remember that students most likely have varying levels of finance experience. Therefore, make sure your lectures are clear and thorough for newcomers, while serving as interesting refreshers for veterans as well. Draw upon your industry experience or tell a story that relates to the concepts at hand, make things simple to understand while memorable!
 
 * Make sure TAs circulate the classroom to provide assistance to students who are still struggling with Python concepts. If the lesson moves ahead of schedule, you can use the extra time to review those topics. 
 
@@ -35,15 +37,19 @@ By the end of class, students will be able to:
 
 - - -
 
-### 1. Instructor Do: Welcome and Review (5 min)
+### 1. Instructor Do: Welcome and Review (10 min)
 
-**File:** [Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit?usp=sharing)
+**Files:**
+
+* [Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit?usp=sharing)
+
+* [refresher.py](Activities/01-Ins_Refresher/Solved/refresher.py)
 
 Welcome students back to class. Tell them that, in today's lesson, we will begin to apply Python concepts to financial use cases. Today will be fun! 
 
 Use the slides to review the lesson agenda and the topics covered so far. 
 
-Do a quick recap by asking the following questions: 
+Use the solution file to perform a live coding session and quickly recap previous concepts. During the session, ask the following questions: 
 
 * What are variables?
 
@@ -160,7 +166,7 @@ Do a quick recap by asking the following questions:
   SBUX is booming right now!
   ```
 
-* How do you traverse nested objects?
+* How do you traverse/access nested objects?
 
   **Answer:** Specify the index for each level of iteration.
 
@@ -195,37 +201,15 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 2. Instructor Do: Refresher (10 min)
-
-**File:** [refresher.py](Activities/01-Ins_Refresher/Solved/refresher.py)
-
-Open the `refresher.py` file and ask students to guide you through the following examples:
-
-* Create a conditional that prints out `x is greater than 10` or `x is less than 10`. 
-
-* Create a list named `fruits`, and initialize with `apple`, `pear`, `banana`. 
-
-* Loop through and print each fruit in `fruits`. 
-
-* Create a dict named `car` and add `make`, `model`, `type` as keys and their corresponding values. 
-
-* Loop through and print each key-value pair in `car`. 
-
-* Create a function `squared()` that calculates the square of a `number` input parameter. 
-
-- - -
-
-### 3. Student Do: Refresher Activity (15 min)
+### 2. Student Do: Refresher Activity (15 min)
 
 In this activity, students will apply skills learned in the previous lessons to a financial use case. They will act as analysts who categorize customers based on revenue and assign each customer a business tier: platinum, gold, silver, or bronze. A personalized message is generated for each customer depending on the assigned business tier.
-
-This use case is very practical, as it allows firms to target specific groups within their customer base, either by directing personalized messages or distributing promotion codes to specific groups via email. 
 
 **File:** [Starter Code](Activities/02-Stu_Refresher/Unsolved/marketing.py)
 
 **Instructions:** [README.md](Activities/02-Stu_Refresher/README.md)
 
-### 4. Instructor Do: Review Refresher Activity (5 min)
+### 3. Instructor Do: Review Refresher Activity (10 min)
 
 **File:** [Solution](Activities/02-Stu_Refresher/Solved/marketing.py)
 
@@ -291,7 +275,7 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 5. Instructor Do: Time Value of Money (10 min)
+### 4. Instructor Do: Time Value of Money (10 min)
 
 **Files:**
 
@@ -333,7 +317,7 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 6. Student Do: Zero-Coupon Bonds (25 min)
+### 5. Student Do: Zero-Coupon Bonds (25 min)
 
 In this activity, students will use the concept of time value of money (TVM) to discount the future value of a zero-coupon bond to determine its present value. They will also compare the present value to its current selling price in order to decide whether or not to purchase the bond.
 
@@ -343,7 +327,7 @@ Encourage students to work in pairs for this activity. Motivate students to help
 
 **Instructions:** [README.md](Activities/04-Stu_Time_Value_of_Money/README.md)
 
-### 7. Instructor Do: Review Zero-Coupon Bonds (5 min)
+### 6. Instructor Do: Review Zero-Coupon Bonds (5 min)
 
 **File:** [Solution](Activities/04-Stu_Time_Value_of_Money/Solved/zero_coupon_bonds.py)
 
@@ -367,7 +351,7 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 8. Instructor Do: Imports (10 min)
+### 7. Instructor Do: Imports (10 min)
 
 This section is exciting because it showcases the power of imports in Python.  
 
@@ -437,7 +421,7 @@ Introduce NumPy.
 Ask if there are any questions before moving on.
 - - -
 
-### 9. Student Do: Net Present Value (15 min)
+### 8. Student Do: Net Present Value (15 min)
 
 In this activity, students will use the `npv` function from the `numpy` library to calculate the net present value of three potential company projects (and their cash flows) and assess which is the optimal project to undertake. 
 
@@ -445,7 +429,7 @@ In this activity, students will use the `npv` function from the `numpy` library 
 
 **Instructions:** [README.md](Activities/06-Stu_Imports/README.md)
 
-### 10. Instructor Do: Review Net Present Value (5 min)
+### 9. Instructor Do: Review Net Present Value (5 min)
 
 **File:** [Solution](Activities/06-Stu_Imports/Solved/Core/net_present_value_core.py)
 
@@ -465,7 +449,7 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 11. Instructor Do: File I/O (10 min)
+### 10. Instructor Do: File I/O (10 min)
 
 **File:** [file_io.py](Activities/07-Ins_File_IO/Solved/file_io.py)
 
@@ -579,7 +563,7 @@ Open the solution file and highlight the following:
 
 - - -
 
-### 12. Student Do: E-Commerce Traffic (15 min)
+### 11. Student Do: E-Commerce Traffic (15 min)
 
 In this activity, students will perform file I/O by parsing a text file and calculating the sum and average of customer e-traffic to then write the results back out to a text file.
 
@@ -587,7 +571,7 @@ In this activity, students will perform file I/O by parsing a text file and calc
 
 **Instructions:** [README.md](Activities/08-Stu_File_IO/README.md)
 
-### 13. Instructor Do: Review E-Commerce Traffic (5 min)
+### 12. Instructor Do: Review E-Commerce Traffic (5 min)
 
 **File:** [Solution](Activities/08-Stu_File_IO/Solved/ecommerce_traffic.py)
 
@@ -630,11 +614,11 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 14. BREAK (40 min)
+### 13. BREAK (40 min)
 
 - - -
 
-### 15. Instructor Do: Tabular Data (5 min)
+### 14. Instructor Do: Tabular Data (5 min)
 
 **File:** [Slides 28–30](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit?usp=sharing)
 
@@ -646,7 +630,7 @@ Open the slideshow to the slides on tabular data and review the following points
 
 - - -
 
-### 16. Instructor Do: CSV Reader (5 min)
+### 15. Instructor Do: CSV Reader (5 min)
 
 **File:** [csv_reader.py](Activities/09-Ins_CSV_Reader/Solved/csv_reader.py)
 
@@ -688,7 +672,7 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 17. Student Do: Sales Analysis (15 min)
+### 16. Student Do: Sales Analysis (15 min)
 
 In this activity, students will perform file I/O with a CSV file; students will read in a CSV file to calculate customer revenue averages and then output results back to a CSV file.
 
@@ -696,7 +680,7 @@ In this activity, students will perform file I/O with a CSV file; students will 
 
 **Instructions:** [README.md](Activities/10-Stu_CSV_Reader/README.md)
 
-### 18. Instructor Do: Review Sales Analysis (5 min)
+### 17. Instructor Do: Review Sales Analysis (5 min)
 
 **File:** [sales_analysis.py](Activities/10-Stu_CSV_Reader/Solved/Core/sales_analysis_core.py)
 
@@ -777,13 +761,13 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 19. Instructor Do: Structured Office Hours (35 min)
+### 18. Instructor Do: Review and Reflect (35 min)
 
-Please use the entire office hours time to review questions with the students.
-
-Here is a suggested format to follow: 
+Take some time to de-brief and review today's lesson:
 
 * Ask students if there are specific activities they want to revisit.
+
+* Ask students how they felt about the lesson. What were areas of confusion? What were areas of fulfillment/challenge?
 
 * Revisit key activities that will help them complete the homework assignment.
 
