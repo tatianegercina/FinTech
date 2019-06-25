@@ -1,3 +1,5 @@
+PLACEHOLDER
+
 ## 1.1 Lesson Plan - Welcome to FinTech!
 
 ---
