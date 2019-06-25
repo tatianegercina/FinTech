@@ -4,31 +4,25 @@
 
 ### Overview
 
-Today's class will focus on the notion of analyzing the performance of not just a single stock, but groups of stocks together -- otherwise known as a portfolio of stocks. Stock portfolios are an important strategy in the realm of investing as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma.
-
-However, in order to create an optimal portfolio that maximizes returns while minimizing risk, it's necessary to not only analyze the average return and risk of the portfolio overall, but also the correlation between stocks as well (how much one stock price changes with or against another). This lesson will teach students how to analyze the correlations of stocks against one another, calculate rolling statistics and volatility (beta) of stocks together, and optimize the composition of a portfolio and compare its performance against other portfolios.
+Today's class will focus on further investigating the evolution and impact of the FinTech industry and then proceed to command line basics and git (using a graphical user interface (GUI)). Specifically, students will learn about the history of FinTech, the particular domains it has helped disrupt, as well as create their own case studies on a particular FinTech (Payments) company. Then, students will develop the basic command line and git download/upload skills that will aid them in using the more advanced git CLI in the next lesson. 
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Describe the benefits of investing in stock portfolios over a single stock.
-* Explain what correlation is and how to calculate it in Pandas.
-* Visualize trends through rolling statistics that minimize data noise.
-* Compare the volatility of a portfolio against the overall market.
-* Calculate expected returns of a portfolio utilizing custom weights
-* Build and optimize a portfolio by factoring in risk, correlation, and returns
-* Compare a portfolio's performance to other portfolios.
+* Outline the evolution of the FinTech industry.
+* Map out the domains of the FinTech industry.
+* Perform a case study on a FinTech company.
+* Use the terminal/command line to execute basic file system operations.
+* Download/upload files to GitHub using the git GUI.
 
 ### Instructor Notes
 
-* This lesson brings the heat on two fronts: math/statistics and financial domain knowledge. Not everyone will have extensive experience with either subject so be clear, visualize code/charts, and refer to the examples and notes if you need help!
+* This lesson will be a good crash course on where FinTech has been and where it is now! Make sure to have energy when you present FinTech's history -- FinTech has made a lot of progress over the years!
 
-* Be clear on the differences between correlation and beta. Both attempt to measure the relationship between one variable and another; however, correlation looks to measure the linear relationship between two variables while beta looks to measure the *unit-driven* relationship betweeen two variables (beta and stock returns).
+* Be thorough when explaining case study requirements and showcasing a completed case study for students to model off of. Case studies can vary widely in length depending on the audience for which it was written. Therefore, for the sake of the time, case studies should be comprehensive but shouldn't be overly long.  
 
-* When explaining the notion of rolling statistics and how they benefit in identifying statistical trends, it may be helpful to provide a visual by comparing the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
-
-* When dealing with portfolios and its characteristics - risk, return, correlation - try to speak in terms of money. If you started with $10,000, how would a poorly optimized portfolio compare with one that is not?
+* Students may have trouble grasping the notion of the command line. Think of it like this, when students double-click into a folder to change directories, they are essentially executing a backend `cd` command that initiates upon the signal of a double-click into a folder. In other words, the GUI that a student sees is merely a visual overlay of the backend operations of the computer.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
@@ -151,6 +145,8 @@ By the end of class, students will be able to:
 ```
 
 ### 6. Instructor Do: Review Investigate FinTech Trends/Domains (10 mins)
+
+
 
 ---
 
@@ -337,3 +333,9 @@ Have the students follow along with the following steps:
 Make sure that all the students have been able to follow along. Let students know that this will be how they will be submitting their homework for the first two weeks. Students will add all of the necessary files to their Github repo then submit the repository link to BCS.
 
 Encourage students to practice Github before the next class and to use office hours if they run into any problems.
+
+### End Class
+
+---
+
+Trilogy Education Services © 2019. All Rights Reserved.
