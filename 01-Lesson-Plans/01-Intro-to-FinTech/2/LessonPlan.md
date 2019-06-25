@@ -1,20 +1,10 @@
-### X. Everyone Do: Warmup (10 mins) [Optional]
-
-* Welcome to the first full day of class! As students are just getting in, we'll start off with an easy discussion. 
-
-* Give the class a few minutes to ponder about the question: what financial technology do you think will have the most impact in 10 years, and why? 
-
-* Do give students a chance to dream big, but try not to overshoot the time mark with discussion.
-
----
-
 ### 1. Instructor Do: Welcome and Goals (5 mins)
 
 * Get off to a great start! Make sure to welcome students to class (using as many names as you can remember), and cover the goals outlined in today's LP
 
 ---
 
-### Instructor do: evolution of fintech
+### 2. Instructor Do: Evolution of Fintech (10 mins)
 
 * After welcoming students to class, we're going to dive headfirst into a brief history of fintech, and how it has become increasingly relevant of late.
 
@@ -35,7 +25,17 @@
 
 ---
 
-### Instructor Do: Fintech Trends/Domains
+### 3. Instructor Do: Facilitated Discussions to FinTech Domains (10 mins)
+
+* Welcome to the first full day of class! As students are just getting in, we'll start off with an easy discussion. 
+
+* Give the class a few minutes to ponder about the question: what financial technology do you think will have the most impact in 10 years, and why? 
+
+* Do give students a chance to dream big, but try not to overshoot the time mark with discussion.
+
+---
+
+### 4. Instructor Do: Fintech Trends/Domains (10 mins)
 
 * In the next few slides, we will be introducing students to some of the major domains of fintech - focusing on the main ones which we will cover in this course
 
@@ -96,7 +96,7 @@
 
 ---
 
-### Student Do: Investigate trends/domains
+### 5. Student Do: Investigate FinTech Trends/Domains (20 mins)
 
 * We have now given students examples of both the major domains within fintech as well as ongoing trends in the field. Now it is their turn to do some research and discuss amongst their groups about what they've learned.
 
@@ -114,9 +114,34 @@
     Be prepared for a light class discussion!
 ```
 
+### 6. Instructor Do: Reivew Investigate FinTech Trends/Domains (10 mins)
+
 ---
 
-### Student Do: Find your own case study!
+### 7. BREAK (15 mins)
+
+---
+
+### 8. Instructor do: Payments Case Study - Stripe
+
+* As students are coming back from break, let them know that we're going to deep-dive into a case study as an example of what we'd like to see in their final report for the homework this week.
+
+* For this case study, we have decided to cover the payment processing known as Stripe, Inc. Not only does it allow us to discuss the ubiquitous world of online payments, Stripe is also an examplar of how a company can generate significant profits by lowing barriers of entry for other businesses.
+
+* When we go to a website, we often take for granted how easy it is to pay for goods and services. Behind the scenes, there has to be a payment processor that walks through the entire ACH (Automated clearing house) submittal process with an operator, verifies payment info, verifies the transaction, communicate with both the bank and the credit card issuer to greenlight the transaction, and notify the end-user of a success or failure. In addition, that system also needs to verify the handshakes between all of those systems and institutions, make sure that every step along the way is secure, and ensure that it is resistant to errors in transmission.
+
+* Oh, and did we also mention it has to be fast? Users tend to become _exceptionally_ anxious if it takes more than 3 seconds to load a page, and studies show that more than half of your users will leave if you don't meet that bar.
+
+* As a programmer facing all of these technical issues, it would be _super_ awesome if someone were to swoop in and take 90% of the work for this off your hands. Enter Stripe.
+
+* Stripe is a payment processing company founded in 2011 that provides a tiny, 8-line set of code that takes the load off of building a payment system into most android, iOS, and web applications. For this service, Stripe charges a relatively small fee on processed payments.
+
+* By integrating Stripe, a developer can dramatically increase their development speeds, while *trust*ing that Stripe will handle much of the security and performance of payments. Anyone building a modern application will likely lean on Stripe as a go-to solution for the first implementation of their application, which has had great financial benefits for Stripe and their target users (developers).
+
+* Stripe is by no means the only pony in town for this service though! Companies such as Plaid, PayPal (through Braintree), Square, and more have developed their own, similar solutions. 
+---
+
+### 9. Student Do: Payments Case Study - Stripe (20 mins)
 
 * Now it's the students' turn! they should spend the next 30-40 minutes researching case studies in the field and discovering what areas they may want to explore during their homework case studies. 
 
@@ -159,29 +184,11 @@
 
   * For those uncomfortable about the idea of presenting, challenge yourself to treat this as a safe place. Becoming a confident speaker is an important part of being a fintech consultant that people can trust.
 
-  ---
-
-  ### Instructor do: Payments Case Study - Stripe
-
-* As students are coming back from break, let them know that we're going to deep-dive into a case study as an example of what we'd like to see in their final report for the homework this week.
-
-* For this case study, we have decided to cover the payment processing known as Stripe, Inc. Not only does it allow us to discuss the ubiquitous world of online payments, Stripe is also an examplar of how a company can generate significant profits by lowing barriers of entry for other businesses.
-
-* When we go to a website, we often take for granted how easy it is to pay for goods and services. Behind the scenes, there has to be a payment processor that walks through the entire ACH (Automated clearing house) submittal process with an operator, verifies payment info, verifies the transaction, communicate with both the bank and the credit card issuer to greenlight the transaction, and notify the end-user of a success or failure. In addition, that system also needs to verify the handshakes between all of those systems and institutions, make sure that every step along the way is secure, and ensure that it is resistant to errors in transmission.
-
-* Oh, and did we also mention it has to be fast? Users tend to become _exceptionally_ anxious if it takes more than 3 seconds to load a page, and studies show that more than half of your users will leave if you don't meet that bar.
-
-* As a programmer facing all of these technical issues, it would be _super_ awesome if someone were to swoop in and take 90% of the work for this off your hands. Enter Stripe.
-
-* Stripe is a payment processing company founded in 2011 that provides a tiny, 8-line set of code that takes the load off of building a payment system into most android, iOS, and web applications. For this service, Stripe charges a relatively small fee on processed payments.
-
-* By integrating Stripe, a developer can dramatically increase their development speeds, while *trust*ing that Stripe will handle much of the security and performance of payments. Anyone building a modern application will likely lean on Stripe as a go-to solution for the first implementation of their application, which has had great financial benefits for Stripe and their target users (developers).
-
-* Stripe is by no means the only pony in town for this service though! Companies such as Plaid, PayPal (through Braintree), Square, and more have developed their own, similar solutions. 
+### 10. Review Payments Case Study - Stripe (10 mins)
 
 ---
 
-### 2. Instructor Do: Anaconda Terminal (10 mins) (Critical)
+### 11. Instructor Do: Anaconda Terminal (10 mins) (Critical)
 
 * **Files:**
 
@@ -242,7 +249,10 @@
 
 ---
 
-### 4. Instructor Do: Review Anaconda Terminal (5 mins)
+### 12. Student Do: Terminal (15 mins)
+
+
+### 13. Instructor Do: Review Anaconda Terminal (5 mins)
 
 * **Files:**
 
@@ -266,7 +276,7 @@
 
 ---
 
-### X. Instructor Do: Adding files to Github (15 mins)
+### 14. Instructor Do: Adding files to Github (15 mins)
 
 Show students how to submit a homework assignment in Github. Explain to students that "GitHub offers a centralized location where all developers can push and pull (upload and download) their code. This means that GitHub always holds the most up-to-date code and files, handling everyone's updates appropriately. For now, students will only need to know how to use the GUI for GitHub in order to submit homework. However, In a couple of weeks, students will learn to work with Github through the terminal using git.
 
@@ -291,29 +301,3 @@ Have the students follow along with the following steps:
 Make sure that all the students have been able to follow along. Let students know that this will be how they will be submitting their homework for the first two weeks. Students will add all of the necessary files to their Github repo then submit the repository link to BCS.
 
 Encourage students to practice Github before the next class and to use office hours if they run into any problems.
-
----
-
-### Instructor Do: Clone and SSH debugging
-
-* Now that we have introduced students to terminal commands, let's work on getting them set up for class.
-
-* First, ask for a show of hands for those that have not yet finished the prework instructions for setting up their SSH keys. Although this is not the most chiefly important thing they will do today, assure them that the TA's will work with them to resolve the issues during this next activity.
-
-* Second, walk them through the process of performing a `git clone` of the class repository. Assure them that we will cover what this "git" thing is in more detail on the next class period.
-
-    * Go to the *class* repository and copy the HTTPS link. (Please use HTTPS as it is more likely to not be blocked by campus firewalls)
-    
-    * In the terminal, run a `git clone` and paste the link. While it is cloning, explain to students that cloning a repository is the process by which you copy all of the contents of a remote "folder" of sorts. The main difference is that we can constantly update this folder with new content as we progress throughout the course. If it helps, you can compare it to a cloud service like Dropbox, except we will do updates using commands in the terminal. 
-
-    * We don't have time at the moment to cover all of the complexities of git, but we will spend more time on it on Saturday, and continue to learn about the technology over the extent of the course.
-
-### Student Do: Clone class repository
-
-* You will need to clone the class repository to your machine similar to the process your instructor has just demonstrated:
-
-* Go to the class repository and copy the HTTPS link. (Please use HTTPS as it is more likely to not be blocked by campus firewalls)
-
-* In the terminal (Git Bash for Windows), run a `git clone <paste link here>` 
-
-* If the folder exists on your machine when the terminal command stops running; Congrats, you've successfully cloned the class repo!
