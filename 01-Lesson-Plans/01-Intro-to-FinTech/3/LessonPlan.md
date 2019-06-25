@@ -72,6 +72,10 @@ First, quickly present the following questions and answers:
 
   **Answer:** GitHub is a web-based file hosting service that is one of the many vendors that use Git for file version control.
 
+* Why is git important?
+
+  **Answer:** Git is an extremely powerful tool for software development. It has become the standard for versioning software and data science tools across all industries and is even used to version data and enhance data reproducibility. For these reasons, it has become a critical job skill. In fact, it will be one of the most essential job skills that they will need in their careers as developers.
+
 Then, perform a live demo while highlighting the following:
 
 * Git repositories can be created via the GitHub website. The option `Initialize this repository with a README` should be checked off to automatically deploy the repository once created.
