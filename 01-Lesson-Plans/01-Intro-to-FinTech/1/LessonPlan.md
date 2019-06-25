@@ -154,3 +154,9 @@ to compete with "traditional" banking processes.
     * What technologies would your proposed ideas incorporate? Why are those technologies  appropriate for your solution?
 
 At the end of the week, students will produce a short, **informal** (5 min) presentation that will lead to a larger discussion with the class on 1.3 and a final report next week.
+
+### End Class
+
+---
+
+Trilogy Education Services © 2019. All Rights Reserved.
