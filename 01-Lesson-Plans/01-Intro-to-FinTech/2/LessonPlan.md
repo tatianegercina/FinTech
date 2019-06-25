@@ -1,3 +1,5 @@
+PLACEHOLDER
+
 ## 1.2 Lesson Plan - Deep Dive into FinTech
 
 ---
