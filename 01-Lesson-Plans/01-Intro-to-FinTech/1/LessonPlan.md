@@ -26,7 +26,7 @@ By the end of class, students will be able to:
 
 * When going over course requirements, now would also be a good time to give the ol' spiel of cheating/plagiarism. Explain that course requirements prohibit cheating or plagiarism and doing so could endanger the eligibility for certification upon graduation.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
 ---
 
