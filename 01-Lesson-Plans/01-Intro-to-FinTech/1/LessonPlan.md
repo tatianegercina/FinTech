@@ -1,12 +1,10 @@
-## 5.3 Lesson Plan - Track to the Future!
+## 1.1 Lesson Plan - Welcome to FinTech!
 
 ---
 
 ### Overview
 
-Today's class will focus on the notion of using Monte Carlo simulations to forecast future results and make confident predictions supported by statistical evidence. Monte Carlo simulations are an important tool in emulating a real-world use case that involves a degree of randomness surrounding an event or outcome, and seeks to iterate `n` number of times to find the most probable result of a variable event as well as the range of results and their corresponding probabilities of occurring.
-
-In particular, stocks prices also tend to move somewhat randomly in such a way that there are varying probabilities to where the price may go or deviate from its average return (daily, weekly, monthly). Therefore, this lesson will teach students how to apply the concept of Monte Carlo simulations to predict future stock prices and therefore forecast the potential stocks returns of an initial investment, either as a single stock investment or as an investment in a portfolio.  
+Today's class will focus on getting students settled down within the FinTech course as well as introducing students to the evolving financial services industry known as FinTech. In particular, instructors, teacher assistants, student success managers, and students will introduce themselves to the class and then proceed to outlining the course agenda and requirements. Lastly, students will participate in group discussions regarding the nature of FinTech (what is it exactly?) and end the class with an overview of the unit 1 homework.
 
 ### Class Objectives
 
@@ -33,15 +31,7 @@ By the end of class, students will be able to:
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
-
-
-
-
-
-
-
-
-
+---
 
 ### 1. University Do/SSM Do: Introductions (15 mins)
 
