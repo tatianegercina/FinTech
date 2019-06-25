@@ -4,7 +4,7 @@
 
 For the past three weeks, students have been deep-dived into the world of Python and common Python libraries that come included in the Anaconda environment (i.e. Pandas and Matplotlib). They've also learned some key techniques for analyzing financial data, such as calculating daily returns and risk-reward ratios. It's now time for students to take it to the next level and enter into the world of APIs. There are a number of FinTech APIs available that will allow students to perform more powerful analytics. They will also expose students to datasets they would not typically be able to easily access or consolidate. Now students will learn the basics of APIs and API requests so that they can begin incorporating APIs into their work.
 
-Today's class will teach students what APIs are, what they're used for, and why they are valuable. Students will also learn, from a high level, what the client-server model is and how it works. Students will submit API calls with Postman and Python, as well as how decipher and parse API JSON output. Lastly, students will submit API calls with parameters in order to improve response time and filter/narrow down API output. Learning how to make API calls and parse API output using Postman and Python will prepare students for getting their hands dirty with APIs in the professional world.
+Today's class will teach students what Application Programming Interfaces (APIs) are, what they're used for, and why they are valuable. Students will also learn, from a high level, what the client-server model is and how it works. Students will submit API calls with Postman (a development environment for APIs) and Python, as well as how decipher and parse API JSON output. Lastly, students will submit API calls with parameters in order to improve response time and filter/narrow down API output. Learning how to make API calls and parse API output using Postman and Python will prepare students for getting their hands dirty with APIs in the professional world.
 
 ### Class Objectives
 
@@ -100,7 +100,7 @@ Introduce `Quandl` and briefly demonstrate to students how to use an internet br
 
 Navigate to the [Quandle API Overview](https://www.quandl.com/tools/api) page, and scroll down to the `API Features` section.
 
-* Show students the URL used to submit a Quandl API request. Underscore the fact that API requests work just like regular URLs. Also indicate that the `request URL` can be configured to specify the output format (i.e. CSV, JSON, or XML); state that JSON will be used for this class.
+* Show students the URL used to submit a Quandl API request. Underscore the fact that API requests work just like regular URLs. Also indicate that the **request url** can be configured to specify the output format (i.e. CSV, JSON, or XML); state that JSON will be used for this class.
 
   ![quandl_url.png](Images/quandl_url.png)
 
@@ -142,53 +142,53 @@ Before ending this activity, let students know that this is just the beginning i
 
 ### 3. Instructor Do: Client Server Model (5 mins)
 
-Now that students know what APIs are and how to execute them, it's time they learn what goes on in the back-end when an API request is sent. Students will learn the various components of the `client-server model` through instructor demonstration.
+Now that students know what APIs are and how to execute them, it's time they learn what goes on in the back-end when an API request is sent. Students will learn the various components of the **client-server model** through instructor demonstration.
 
-Part of the demonstration will include showing students the client-server model by `pinging` Yahoo Finance. Make sure to have a terminal open and ready for the demo.
+Part of the demonstration will include showing students the client-server model by **pinging** Yahoo Finance. Make sure to have a terminal open and ready for the demo.
 
 **Files:**
 
 * [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
 
-Navigate to the 5.1 slides for the `client-server model`, and highlight the following:
+Navigate to the 5.1 slides for the **client-server model**, and highlight the following:
 
-* Explain the `client-server model` architecture. Indicate that the model encompasses the relationship between clients and servers.
+* Explain the **client-server model** architecture. Indicate that the model encompasses the relationship between clients and servers.
 
   ![client_server_model.jpg](Images/client_server_model.jpg)
 
   Image acquired from [Shutterstock](https://www.shutterstock.com/image-vector/vector-concept-client-server-model-safe-483125932?src=cvaByXWnT8wlRtaTVaTE7Q-1-0).
 
-* Define the `client-server` model as structure that outlines the relationship and flow of communication between two components: a `client` and a `server`.
+* Define the **client-server** model as structure that outlines the relationship and flow of communication between two components: a **client** and a **server**.
 
-* A `client` is any tool or application that is used to connect to or communicate with a server. This includes internet browsers, mobile devices, and command line terminals, just to name a few. `Clients` submit requests to servers, and clients receive responses from servers.
+* A **client** is any tool or application that is used to connect to or communicate with a server. This includes internet browsers, mobile devices, and command line terminals, just to name a few. **Clients** submit requests to servers, and clients receive responses from servers.
 
-* A `server` is a computer program or device/hardware. `Servers` run some form of application and are tasked with interacting and providing functionality to `clients`. `Servers` receive requests from `clients`, and `servers` send responses back to clients.
+* A **server** is a computer program or device/hardware. **Servers** run some form of application and are tasked with interacting and providing functionality to **clients**. **Servers** receive requests from **clients**, and **servers** send responses back to clients.
 
-* Inform students that `client-server` requests are commonly `GET` and `POST` requests. `GET` requests fetch data from servers. `POST` requests transmit data (like user credentials for authorization) to servers.
+* Inform students that **client-server** requests are commonly `GET` and `POST` requests. `GET` requests fetch data from servers. `POST` requests transmit data (like user credentials for authorization) to servers.
 
-* Communicate that the `client-server model` is what handles all traffic and requests sent to a server. This includes websites, APIs, and databases. The `client-server model` architecture ensures that requests calls/tasks made to servers are handled appropriately and effectively. When students check Yahoo Finance or login to Facebook.com, they're enacting the client-server model.
+* Communicate that the **client-server model** is what handles all traffic and requests sent to a server. This includes websites, APIs, and databases. The **client-server model** architecture ensures that requests calls/tasks made to servers are handled appropriately and effectively. When students check Yahoo Finance or login to Facebook.com, they're enacting the client-server model.
 
-Demonstrate the `client-server` model by using the terminal to `ping` Yahoo finance.
+If time remains, demonstrate the **client-server** model by using the terminal to **ping** Yahoo finance.
 
 * Open a terminal.
 
-* Use the `ping` command to send a request to Yahoo Finance. Explain to students that the `ping` is a utility used to test connectivity to a server.
+* Use the **ping** command to send a request to Yahoo Finance. Explain to students that the **ping** is a utility used to test connectivity to a server.
 
   ```shell
   ping finance.yahoo.com
   ```
 
-* Explain the output from the `ping` command. Underscore that with every execution of the `client-server` model, data is transmitted over a network. This data is called `packets`. An example of data contained inside of `packets` are user credentials for a website (i.e. Amazon). When transmission is successful, the number of `packets sent` will match the number of `packets received`.
+* Explain the output from the `ping` command. Underscore that with every execution of the **client-server** model, data is transmitted over a network. This data is called **packets**. An example of data contained inside of **packets** are user credentials for a website (i.e. Amazon). When transmission is successful, the number of **packets sent** will match the number of **packets received**.
 
   ![client_server_ping.png](Images/client_server_ping.png)
 
-Ask students the following questions:
+Ask students the following questions. If time did not permit for the **ping** demo, skip the Yahoo Finance question.
 
-* In this scenario, what is the `client` and what is the `server`?
+* In this scenario, what is the **client** and what is the **server**?
 
-  > "The terminal is the `client` and Yahoo Finance's server(s) are the `server`."
+  > "The terminal is the **client** and Yahoo Finance's server(s) are the **server**."
 
-* Was the request sent to Yahoo Finance via the Terminal a successful execution of the `client-server model` based on packets sent and received?
+* Was the request sent to Yahoo Finance via the Terminal a successful execution of the **client-server model** based on packets sent and received?
 
   > "Yes, all packets that were sent to the server were received."
 
@@ -198,7 +198,7 @@ Ask students if there are any questions before moving on.
 
 ### 4. Students Do: Eavesdropping on the Server (10 mins)
 
-This activity drives home the discussion on the client server model by having students surf the web with the browser's developer console open. Students will visit websites like Facebook and Yahoo, as well as complete a Google search, and they will read the standard output from the console to get a better idea of what data is sent between client and server as students navigate sites. This will communicate to students that every click and API call brokers a connection between client and server and data is transmitted between the two.
+This activity drives home the discussion on the client server model by having students surf the web with the browser's developer console open. Students will visit websites like Facebook and Yahoo, as well as complete a Google search. They will read the standard output from the console to get a better idea of what data is sent between client and server as students navigate sites. This will communicate to students that every click and API request brokers a connection between client and server, allowing data to be exchanged between the two.
 
 **Instructions:**
 
@@ -252,7 +252,7 @@ Ask for any remaining questions before moving on.
 
 In this activity, students will learn how to use Postman. The instructor will demo making `Quandl` API calls with Postman rather than through a browser. This will highlight the advantages of using Postman, such access to a UI, request logs, and tools that format API output for ease of use.
 
-Be sure to have the `Postman` client installed prior to beginning this activity. Consult the Postman install guide for instructions on how to install (link is listed below).
+Be sure to have the **Postman** client installed prior to beginning this activity. Consult the Postman install guide for instructions on how to install (link is listed below).
 
 **Files:**
 
@@ -266,19 +266,19 @@ Briefly recap on how APIs have been submitted so far. Ask the students:
 
 > "An internet browser."
 
-Explain to students that internet browsers a sufficient tool to submit adhoc API requests. While browsers are an easy way to submit API calls, using a service like `Postman` is much more efficient and effective.
+Explain to students that internet browsers a sufficient tool to submit adhoc API requests. While browsers are an easy way to submit API calls, using a service like **Postman** is much more efficient and effective.
 
-* Define `Postman` as a service that provides users with a UI to submit and store API calls and requests.
+* Define **Postman** as a service that provides users with a UI to submit and store API calls and requests.
 
-* Communicate that `Postman` is a development environment for APIs. APIs requests can be submitted and tested within `Postman`. Servers can also be spun up in `Postman` in order to develop and/or host APIs.
+* Communicate that **Postman** is a development environment for APIs. APIs requests can be submitted and tested within **Postman**. Servers can also be spun up in **Postman** in order to develop and/or host APIs.
 
-Open `Postman` and perform a live demonstration of submitting an API request to `Quandl` for `AAPL` stock data. Use this as an opportunity to bridge back to the previous assignments where requests were submitted via a browser rather than a tool like `Postman`. Highlight the following:
+Open **Postman** and perform a live demonstration of submitting an API request to `Quandl` for `AAPL` stock data. Use this as an opportunity to bridge back to the previous assignments where requests were submitted via a browser rather than a tool like **Postman**. Highlight the following:
 
-* Creating a request in `Postman` is easy; it's just the click of a button. Selecting `Request` in the `Create New` window will open a screen where information can be put in for the request and the request saved.
+* Creating a request in **Postman** is easy; it's just the click of a button. Selecting `Request` in the `Create New` window will open a screen where information can be put in for the request and the request saved.
 
   ![create_request.png](Images/create_request.png)
 
-* `Postman` allows users to save API requests to what they call `collections`. This allows requests to be created once but ran many times. It also allows requests to be scheduled. In order to save a request, a request must be saved with a `name`, `description`, and `collection`.
+* **Postman** allows users to save API requests to what they call `collections`. This allows requests to be created once but ran many times. It also allows requests to be scheduled. In order to save a request, a request must be saved with a **name**, `description`, and `collection`.
 
   ![save_request.png](Images/save_request.png)
 
@@ -286,13 +286,13 @@ Open `Postman` and perform a live demonstration of submitting an API request to 
 
   ![new_request.png](Images/new_request.png)
 
-* Submit an API call to `Quandl` using the `Postman` submit button. Use the below request URL.
+* Submit an API call to `Quandl` using the **Postman** submit button. Use the below request URL.
 
   * https://www.quandl.com/api/v3/datasets/WIKI/AAPL.json
 
   ![postman_get.png](Images/postman_get.png)
 
-* The output from an API call is returned in the `Postman` client. `Postman` presents users with the ability to choose the format of the output (i.e. JSON vs. XML). Indicate that the format of the output on the screen is called `JSON` (Javascript Object Notation).
+* The output from an API call is returned in the **Postman** client. **Postman** presents users with the ability to choose the format of the output (i.e. JSON vs. XML). Indicate that the format of the output on the screen is called `JSON` (Javascript Object Notation).
 
   ![postman_submit.png](Images/postman_submit.png)
 
@@ -302,19 +302,21 @@ Open `Postman` and perform a live demonstration of submitting an API request to 
 
 Ask if there are any questions before moving onto the next module.
 
-In the next activity, students will leverage the steps from this demonstration in order to make their first API call using `Postman`. Students will make a `GET` request to `Quandl` for `AAPL` historical stock data.
+In the next activity, students will leverage the steps from this demonstration in order to make their first API call using **Postman**. Students will make a **GET** request to **Quandl** for **AAPL** historical stock data.
 
 - - -
 
 ### 7. Students Do: I Spy an API (15 mins)
 
-It's time students stopped learning about APIs and started playing with some! In this activity, students will go through a list of FinTech APIs and test out their functionality using `Postman`. This will give students a better understanding of what `Postman` is and how it should be used, as well as expose students to one of the most common tools used in the FinTech industry.
+It's time students stopped learning about APIs and started playing with some! In this activity, students will go through a list of FinTech APIs and test out their functionality using **Postman**. This will give students a better understanding of what **Postman** is and how it should be used, as well as expose students to one of the most common tools used in the FinTech industry.
 
-Instruct TAs to make rounds to sure all students have `Postman` installed. Have TAs provide assistance/troubleshooting to any students experiencing issues getting started with `Postman`.
+Instruct TAs to make rounds to sure all students have **Postman** installed. **Postman** should have been installed prior to the class. Have TAs provide assistance/troubleshooting to any students experiencing issues getting started.
 
-Recommend that students save their API requests in `Postman` so they do not have to continually execute the same request.
+Recommend that students save their API requests in **Postman** so they do not have to continually execute the same request.
 
-Slack out the supplemental `Postman Install Guide` to students so they have a step-by-step process for how to install and get started with `Postman`.
+Slack out the supplemental `Postman Install Guide` to students so they have a step-by-step process for how to install and get started.
+
+Instruct students to inform the TAs when they are finished. The next activity will require students to work in pairs, so everyone will need to have completed this activity before the next activity can begin.
 
 **Files:**
 
@@ -328,7 +330,7 @@ Slack out the supplemental `Postman Install Guide` to students so they have a st
 
 ### 8. Students Do: Parle-vouz le JSON? (5 mins)
 
-The key to working with APIs is being able to decipher their output. Because API output is commonly in JSON format, students will need practice deciphering JSON structures and syntax. In this activity, students will choose a sub-selection of the JSON output to decipher. They will then explain the sub-selection to a peer.
+In this activity, students will choose a sub-selection of the JSON output to decipher. They will then explain the sub-selection to a peer. The key to working with APIs is being able to decipher their output. Because API output is commonly in JSON format, students will need practice deciphering JSON structures and syntax.
 
 Walk around and instruct TAs to circulate during this activity so that students can ask questions as they make sense of the JSON data, including its structure and syntax. Some students will have had little to no exposure to JSON data in the past. It can be frustrating trying to interpret JSON data when the structure and syntax is foreign.
 
@@ -340,39 +342,35 @@ Walk around and instruct TAs to circulate during this activity so that students 
 
 ### 9. Instructor Do: Review JSON Turn and Teach (5 mins)
 
-Navigate to 5.1 slides on deciphering JSON output, and use the visuals to highlight the following:
+Instructor and students will review the JSON turn and teach activity. The instructor will complete a live demo of submitting an API request and deciphering the JSON output.
 
-* `JSON` data is structured data. JSON data is comprised of `name/value` pairs. Names are data attributes/column names and values are the actual values associated with that attribute/column. JSON data is made up of `JSON Objects` and `JSON Arrays`.
-
-* `JSON Objects` are identified by the use of curly braces `{}`. These objects often contain multiple name/value pairs, like a `row` (i.e {"ticker":"GOOG","close_price":192.57}).
-
-* `JSON Arrays` are identified by brackets `[]`. An example of a `JSON Array` is the `column_names` object returned from the Quandl API call.
-
-Open Postman and submit the below request to Quandl.
+Open **Postman** and submit the below request to Quandl. Then, conduct a live deciphering of the JSON data, emphasizing the following:
 
 * https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json
 
-Do a live deciphering of the JSON data, and emphasize the following:
+* **Name/value** pairs are used to make deciphering JSON data easy because it does a single map between **name** and **value**. Point out an example of a **name** (i.e. the `description` field). Then, identify the corresponding value.
 
-* `Name/value` pairs are used to make deciphering JSON data easy because it does a single map between `name` and `value`. Point out an example of a `name` (i.e. the `description` field). Then, identify the corresponding value.
-
-* Point out `JSON Array` and `JSON Objects` in order to compare them.
+* Point out **JSON Array** and **JSON Objects** in order to compare them.
 
   ![decipher_json.png](Images/decipher_json.png)
 
-End the review session by asking the students the following questions. Sample answers have been provided.
+* **JSON Objects** are contained within curly braces `{}`. These objects often contain multiple name/value pairs, like a **row** (i.e {"ticker":"GOOG","close_price":192.57}).
+
+* **JSON Arrays** are identified by brackets `[]`. An example of a **JSON Array** is the `column_names` object returned from the Quandl API call.
+
+If time permits, ask the students the students the following questions. Sample answers have been provided.
 
 * We've seen a number of APIs in action (i.e. WrapAPI, Quandl, World Bank, Coinbase). Which API did everyone find the most interesting?
 
-  > "WrapAPI. While it is not FinTech related, it's unique and has a number of different use cases. Of all of the APIs, WrapApi seems the most flexible and all-encompassing."
+  **Answer** WrapAPI. While it is not FinTech related, it's unique and has a number of different use cases. Of all of the APIs, WrapApi seems the most flexible and all-encompassing.
 
-* Ask students to write down two things they like about APIs and the `client-server model`. Ask for two volunteers to present their answers.
+* Ask students to write down two things they like about APIs and the **client-server model**. Ask for two volunteers to present their answers.
 
-  > "The client server-model is simple, easy to understand, and used almost everywhere. APIs are cool because they eliminate the need of having to redundantly re-invent the wheel."
+  **Answer** The client server-model is simple, easy to understand, and used almost everywhere. APIs are cool because they eliminate the need of having to redundantly re-invent the wheel.
 
-* Ask students to write down one thing they do not like and/or find challenging about APIs and the `client-server model`. Ask one student to volunteer their answer, and collect the remaining answers as students leave the classroom.
+* Ask students to write down one thing they do not like and/or find challenging about APIs and the **client-server model**. Ask one student to volunteer their answer, and collect the remaining answers as students leave the classroom.
 
-  > "Not all APIs have good documentation. It's difficult to gauge exactly what an API can do and/or how it should be used."
+  **Answer** Not all APIs have good documentation. It's difficult to gauge exactly what an API can do and/or how it should be used.
 
 Before moving forward, ask the students if there are any remaining questions.
 
@@ -422,7 +420,7 @@ Live code how to use the Python `requests` library, and use the following discus
   url = url + "?format=json"
   ```
 
-* `GET` requests can be sent using the `requests.get` function. The function accepts the `request url` as an argument.
+* `GET` requests can be sent using the `requests.get` function. The function accepts the **request url** as an argument.
 
   ```python
   # Execute GET request
@@ -520,9 +518,9 @@ In this activity, have each student reveal an interesting fact or joke they disc
 
 If a student doesn't find a fact or joke they feel like sharing, ask them to answer one of the following questions:
 
-* Discuss their opinions regarding using the Python `requests` library to make API calls instead of `Postman`.
+* Discuss their opinions regarding using the Python `requests` library to make API calls instead of **Postman**.
 
-* Identify one advantage of using Python `requests` library over using `Postman`.
+* Identify one advantage of using Python `requests` library over using **Postman**.
 
 > "The `requests` library allows API calls to be made in-line with the rest of the code/processing. Postman requires users to transition from one development environment to another."
 
@@ -550,13 +548,13 @@ Ask students if there are any comments or questions they'd like to make regardin
 
 Open the solution and conduct a dry walkthrough review, highlighting the following discussion points:
 
-* The Python `requests` library can be used to submit API requests. Just like `Postman`, the `requests` library will submit the request to the server, and then wait for the response. In order to use the library, it has to be imported.
+* The Python `requests` library can be used to submit API requests. Just like **Postman**, the `requests` library will submit the request to the server, and then wait for the response. In order to use the library, it has to be imported.
 
   ```python
   import requests
   ```
 
-* The `requests` library comes with a `GET` function that can be used to execute a `request url`.
+* The `requests` library comes with a `GET` function that can be used to execute a **request url**.
 
   ```python
   request_data = requests.get(prog_joke_url)
@@ -641,7 +639,7 @@ Navigate to the 5.1 slides, and highlight the following:
   http://numbersapi.com/random?min=10?json
   ```
 
-* When used with parameter names, `URL parameters` have to be separated from the `request url` with the `?` symbol.
+* When used with parameter names, `URL parameters` have to be separated from the **request url** with the `?` symbol.
 
   ```
   http://numbersapi.com/random?min=10
@@ -702,7 +700,7 @@ Ask the students if they have any remaining questions before moving on.
 
 - - -
 
-### 16. Students Do: House of Requests (15 mins)
+### 16. Students Do: House of Requests (20 mins)
 
 This activity is dedicated to giving the students an opportunity to use a fun API. Students play a game of BlackJack using the `Deck of Cards` API. The key skills reinforced in this activity include the execution of `GET` requests using the Python `requests library`, extraction of JSON elements, and parameterization of API `request URLs`.
 
