@@ -40,6 +40,8 @@ It is recommended that you save each API request and the output so that it can b
 
 The TAs will be circulating during this activity. Do not hesitate to reach out for assistance if you experience any trouble using `Postman` or any of the APIs.
 
+Let the TAs know once you've finished the core activity. If time still remains, give the challenge section a try.
+
 ### Challenge
 
 1. Change the above `Quandl` request URL to query for `AMD` instead of `GOOG`.
