@@ -14,7 +14,7 @@ Start small by identifying the percent increase in  price for Apple stock. Yeste
 
 * Percent Increase = Increase / Original x 100
 
-## Instructions
+### Instructions
 
 Using the [starter-file](Unsolved/hello_variable_world.py) provided, complete the following steps:
 
@@ -35,6 +35,10 @@ Using the [starter-file](Unsolved/hello_variable_world.py) provided, complete th
 
 Use a [format specifier](https://www.python.org/dev/peps/pep-0498/#format-specifiers) with the f-string to print the percent increase with two decimal places: `27.88%`.
 
-## Hint
+### Hint
 
 For additional help with f-strings, visit [Python 3's f-Strings](https://realpython.com/python-f-strings/).
+
+---
+
+© 2019 Trilogy Education Services
