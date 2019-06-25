@@ -376,7 +376,7 @@ Ask your students if they have any further questions before moving on.
 
 ---
 
-### 9. Students Do: Git Welcome (15 mins)
+### 10. Students Do: Git Welcome (15 mins)
 
 In this activity, students visually enhance their `README` files for their GitHub repositories by adding additional markdown features.
 
@@ -384,7 +384,7 @@ In this activity, students visually enhance their `README` files for their GitHu
 
 * [README.md](Activities/03-Stu_Markdown/README.md)
 
-### 10. Instructor Do: Git Welcome (5 mins)
+### 11. Instructor Do: Git Welcome (5 mins)
 
 Perform the following:
 
@@ -398,7 +398,11 @@ Perform the following:
 
 ---
 
-### 11. Instructor Do: Group Case Study (10 min)
+### 12. BREAK (40 mins)
+
+---
+
+### 13. Instructor Do: Group Case Study (5 min)
 
 In this activity, students will combine their knowledge of the git CLI and markdown syntax to collaboratively create a group FinTech case study on a shared GitHub repository. 
 
@@ -418,7 +422,7 @@ Open the slideshow and go over slides 1-22 while explaining the following:
 
 ---
 
-### 12. Students Do: FinTech Groups (30 mins)
+### 14. Students Do: FinTech Groups (30 mins)
 
 In this activity, students will be divided up into groups of `4-5` individuals with each group representing a FinTech case study of a particular company. Each group will have to create their own shared GitHub repository and collaboratively create a case study report written in markdown.
 
@@ -426,7 +430,7 @@ In this activity, students will be divided up into groups of `4-5` individuals w
 
 * [README.md](Activities/04-Stu_Group_Case_Study/README.md)
 
-### 13. Instructor Do: Review FinTech Groups (20 mins)
+### 15. Instructor Do: Review FinTech Groups (20 mins)
 
 Perform the following:
 
@@ -439,3 +443,13 @@ Perform the following:
 * When presentations are finished, check the pulse of the class. Ask the students if they have any questions regarding the FinTech case studies and if they enjoyed their group activity.
 
 * Lastly, remind students that the homework for Unit 1 will be a FinTech case study. Therefore, students can leverage what they already have as a group to complete the more comprehensive requirements of the Unit 1 homework.
+
+### 16. Instructor Do: Career Services (35 mins)
+
+Take the time to go over any career services related questions and talk about students and their future goals.
+
+### End Class
+
+---
+
+Trilogy Education Services © 2019. All Rights Reserved.
