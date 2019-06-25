@@ -4,30 +4,26 @@
 
 ### Overview
 
-Today's class will focus on getting students settled down within the FinTech course as well as introducing students to the evolving financial services industry known as FinTech. In particular, instructors, teacher assistants, student success managers, and students will introduce themselves to the class and then proceed to outlining the course agenda and requirements. Lastly, students will participate in group discussions regarding the nature of FinTech (what is it exactly?) and end the class with an overview of the unit 1 homework.
+Today's class will focus on getting students settled down within the FinTech course as well as introducing students to the evolving financial services industry known as FinTech. In particular, instructors, teacher assistants (TAs), student success managers (SSMs), and students will introduce themselves to the class and then proceed to outlining the course agenda and requirements. Lastly, students will participate in group discussions regarding the nature of FinTech (what is it exactly?) and end the class with an overview of the unit 1 homework.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Define what a simulation is and why it's used.
-* Deconstruct the components of the Monte Carlo Simulation process: probability distributions and iterations.
-* Interpret probability distributions (normal/bell curve) and random number generators.
-* Comprehend the use of confidence intervals and what they suggest.
-* Implement a single Monte Carlo simulation on the future price trajectory of a stock.
-* Execute multiple Monte Carlo simulations on the future price trajectories of a stock.
-* Break down Portfolio Forecasting in the context of Monte Carlo Simulations on stock price trajectories and portfolio returns.
-* Implement multiple Monte Carlo simulations on the potential returns of a stock portfolio.
+* Familiarize themselves with the academic team as well as each other
+* Outline the course agenda and requirements for certification
+* Explain exactly what FinTech is
+* Overview the unit 1 homework and corresponding requirements
 
 ### Instructor Notes
 
-* Today's lesson deals heavily with statistical concepts, particularly probability. Try to be as clear as possible and be mindful of students who may become easily confused as this lesson will surely push the boundaries of most students' comfort levels when it comes to statistics.
+* Today will be an easy day as the focus of the first day of the course is to simply familiarize students with each other as well as with the course itself, and ease them into the concept of FinTech and what it means. 
 
-* When overviewing the concept of probability distributions, also make sure to stress the notion of randomness. Probability merely implies that there is a chance that a specific result or event may occur but makes no guarantees, which is why results can differ with each iteration.
+* This is one of the few days where there will be dedicated time for instructors to just connect with their students and get to know them. Therefore, take advantage of the time given now and set the tone! Ask your students questions and break the ice!
 
-* Once students are comfortable with probability distributions, namely normal distributions, students should be able to process the idea that Monte Carlo simulations on stock investments seeks to chart the different paths (and probabilities) in which a stock can vary about its average daily return. Overview the code in detail so that this becomes more apparent.
+* Make sure your TAs are getting sufficient time to introduce themselves as well, as they will be major stakeholders when it comes to helping students progress throughout the course.
 
-* Towards the end of class, students will begin applying Monte Carlo simulations to portfolio returns. Therefore, they will need to combine the concepts of portfolio optimization (taught in the Pandas unit) with the concept of portfolio forecasting (taught in today's lesson). Walk through the steps in details as students can easily get lost in this myriad of technical concepts!
+* When going over course requirements, now would also be a good time to give the ol' spiel of cheating/plagiarism. Explain that course requirements prohibit cheating or plagiarism and doing so could endanger the eligibility for certification upon graduation.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
@@ -73,7 +69,7 @@ At this point, it's your turn to introduce yourself, as well as have the TAs and
 
 ---
 
-### X. Instructor Do: Intro to Fintech (15 mins)
+### 4. Instructor Do: Intro to Fintech (15 mins)
 
 * What exactly *is* fintech anyway? Through the next few slides we aim to clarify what the field is and isn't, as well as allowing students to explore their own ideas about the field.
 
@@ -81,7 +77,7 @@ At this point, it's your turn to introduce yourself, as well as have the TAs and
 
 ---
 
-### Instructor Do: Introduce Homework (10 mins)
+### 5. Instructor Do: Introduce Homework (10 mins)
 
 * Before heading out for the night, make sure to introduce the first homework assignment so students can begin thinking about what company they want to do their case study on.
 
@@ -104,7 +100,7 @@ At this point, it's your turn to introduce yourself, as well as have the TAs and
 
 ---
 
-### Instructor Do: Review Group discussion (10 mins)
+### 6. Instructor Do: Review Group discussion (10 mins)
 
 * After taking a few responses, bring up the next slide.
 
@@ -129,7 +125,7 @@ At this point, it's your turn to introduce yourself, as well as have the TAs and
 
 ---
 
-### Student Do: Discuss Definitions of Fintech (25 mins)
+### 7. Student Do: Discuss Definitions of Fintech (25 mins)
 
 
 * Students are all here for a course on fintech, but may not have clarity on what exactly that is.
