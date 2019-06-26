@@ -20,7 +20,7 @@ Rally your troops and join **Plaid's** cause by signing up for their API keys. S
 
 ### Challenge
 
-Confirm that the environment variables were imported into Python correctly by checking the length of the Python variables the keys are stored in. The string `len` function can be used to confirm variable is not null.
+Confirm that the environment variables were imported into Python correctly by checking the type or length of the Python variables the keys are stored in.
 
 ### Hint
 

@@ -20,6 +20,10 @@ You've joined the **Plaid** ranks and have refused to bend the knee to the priva
 
 8. Parse JSON output for the **amounts** of all transactions with **name** `INTRST PYMNT` for the past 365 days.
 
+### Challenge
+
+The first group to finish can volunteer to conduct a dry walk through of the solution for the class in the next activity.
+
 ### Hint
 
 When parsing **Plaid** **transactions**, use a `for` loop to iterate over the `transactions_response['transactions']` object.
