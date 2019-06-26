@@ -8,7 +8,7 @@ Using standard deviation and sharpe ratios, do the following:
 
 * Determine which portfolio (yours or Harold's) has made the most smart investments. 
 
-* Identify which cryptocurrencies have the greatest sharpe ratios (risk/reward).
+* Identify which cryptocurrencies have the greatest Sharpe ratios (risk/reward).
 
 ## Instructions
 
@@ -22,9 +22,9 @@ Using the [starter file](Unsolved/Core/risky_business.ipynb) and the data in the
 
 1. Calculate standard deviation for the combined DataFrame.
 
-1. Calculate the sharpe ratios by computing the quotient of `annualized average return` and `annualized standard deviation`.
+1. Calculate the Sharpe ratios by computing the quotient of `annualized average return` and `annualized standard deviation`.
 
-1. Plot the sharpe ratios using a bar chart.
+1. Plot the Sharpe ratios using a bar chart.
 
 1. Answer the following questions:
 
@@ -34,17 +34,17 @@ Using the [starter file](Unsolved/Core/risky_business.ipynb) and the data in the
 
 ### Challenge
 
-Calculate the sharpe ratio for your entire portfolio. Then, use a comparison operator to see which portfolio has the greatest risk-to-reward ratio.
+Calculate the Sharpe ratio for your entire portfolio. Then, use a comparison operator to see which portfolio has the greatest risk-to-reward ratio.
 
 1. Calculate annualized `std dev` for each portfolio.
 
-1. Calculate the sharpe ratio for each crypto in each portfolio.
+1. Calculate the Sharpe ratio for each crypto in each portfolio.
 
-1. Average the sharpe ratios calculated above. 
+1. Average the Sharpe ratios calculated above. 
 
     **Hint:** `harold_sharpe_ratios.mean()`
 
-1. Determine if Harold's portfolio's sharpe ratio average is greater than your own. **Hint:** Use a comparison operator to compare sharpe ratio averages. 
+1. Determine if Harold's portfolio's Sharpe ratio average is greater than your own. **Hint:** Use a comparison operator to compare Sharpe ratio averages. 
 
 1. Determine which portfolio is the smartest investment, based on risk-to-reward ratio.
 

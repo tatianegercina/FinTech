@@ -4,9 +4,7 @@
 
 ### Overview
 
-Today's class will introduce students to a powerful, open-source analytics library called Pandas, which is built into and runs on a Python environment. Pandas is a software library designed specifically for data analytics and time series analysis, which are useful features for quantitative analytics. In this lesson, students will learn how to use Pandas to create and manipulate DataFrames, locate data with indexing, clean data, create basic data visualizations, and conduct quantitative analysis to automate financial tasks. 
-
-By the end of class, students should understand how Pandas is used to perform everyday financial analysis, including calculating daily returns over time, identifying risk and standard deviation, calculating sharpe ratios, and computing correlations and betas. These features allow financial and FinTech companies to hit the ground running with development efforts. 
+Today's class will introduce students to a powerful, open-source analytics library called Pandas, which is built into and runs on a Python environment. Pandas is a software library designed specifically for data analytics and time series analysis, which are useful features for quantitative analytics. In this lesson, students will learn how to use Pandas to create and manipulate DataFrames, locate data with indexing, clean data, create basic data visualizations, and conduct quantitative analysis to automate financial tasks. By the end of class, students should understand how Pandas is used to perform everyday financial analysis, including calculating daily returns over time. 
 
 
 ### Class Objectives

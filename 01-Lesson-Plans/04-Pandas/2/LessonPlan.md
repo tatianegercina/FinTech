@@ -22,11 +22,11 @@ By the end of class, students will be able to:
 
 * Describe how stocks deviate from the mean to determine risk.
 
-* Describe sharpe ratios and calculate them using Pandas DataFrames.
+* Describe Sharpe ratios and calculate them using Pandas DataFrames.
 
 ### Instructor Notes
 
-* Prepare for the lesson by running the code examples and reviewing the lectures before class. Today's lesson will be a quantum leap for students as they move beyond the basics of Pandas to more advanced concepts that can be applied to risk analysis use cases. You will need to clearly articulate what you are doing in each live demo and why, from a financial point of view. This is especially true for the standard deviation and sharpe ratio activities.
+* Prepare for the lesson by running the code examples and reviewing the lectures before class. Today's lesson will be a quantum leap for students as they move beyond the basics of Pandas to more advanced concepts that can be applied to risk analysis use cases. You will need to clearly articulate what you are doing in each live demo and why, from a financial point of view. This is especially true for the standard deviation and Sharpe ratio activities.
 
 * Throughout the lesson, be sure to underscore how Pandas lessens the burden of analysis by providing financial functions such as `MultiIndex` and `groupby()`. Students will learn the practical applications of these concepts by analyzing cryptocurrencies and stock exchange data. For example, tell students they can use the `groupby` function to automatically consolidate data in order to calculate an average, rather than organizing two years’ worth of daily returns data for each cryptocurrency in an Excel file. Similarly, instead of having to create a `groupby` function themselves, students get to use the Pandas function for free.
 
@@ -754,7 +754,7 @@ Ask if there are any questions before moving on.
 
 ### 15. Instructor Do: Standard Deviation and Risk (10 min)
 
-This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate sharpe ratios in the next activity. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
+This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate Sharpe ratios in the next activity. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
 **Files:**
 
@@ -867,7 +867,7 @@ Ask if there are any questions before moving on.
 
 ### 16. Instructor Do: Sharpe Ratios (5 min)
 
-In this section, students will be introduced to sharpe ratios and why risk-reward ratios are important in finance. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
+In this section, students will be introduced to Sharpe ratios and learn why risk-reward ratios are important in finance. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
 **Files:**
 
@@ -889,7 +889,7 @@ Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCv
 
 Open [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py) and live code how to calculate and plot sharpe ratios. Explain the following as part of the demo: 
 
-* Sharpe ratios are commonly used to indicate whether or not an investment is a good decision. While standard deviation illustrates how far an investment has deviated from its average, sharpe ratios use standard deviation to illustrate the relationship between standard deviation and risk-reward.
+* Sharpe ratios are commonly used to indicate whether or not an investment is a good decision. While standard deviation illustrates how far an investment has deviated from its average, Sharpe ratios use standard deviation to illustrate the relationship between standard deviation and risk-reward.
 
 * Sharpe ratios enable investors to judge whether or not an investment is a good decision. Sharpe ratios adjust for risk, making them a valuable indicator of asset performance.
 
@@ -903,7 +903,7 @@ Open [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py)
 
 * The return-to-risk ratio can be used to determine which stocks and/or portfolios have outperformed the others. The higher the sharpe ratio, the better the investment.
 
-* The `plot` function is used to visually compare sharpe ratios.
+* The `plot` function is used to visually compare Sharpe ratios.
 
   ```python
   # Plot sharpe ratios
@@ -917,7 +917,7 @@ Ask if there are any questions before moving on.
 
 ### 17. Student Do: Risky Business (20 min)
 
-It's time to put it all together. In this activity, students will prep data and use standard deviation and sharpe ratios to analyze cryptocurrency portfolio performance. The goal is to calculate which portfolio has the highest risk. Students will also identify which individual cryptos have had the greatest return. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
+It's time to put it all together. In this activity, students will prep data and use standard deviation and Sharpe ratios to analyze cryptocurrency portfolio performance. The goal is to calculate which portfolio has the highest risk. Students will also identify which individual cryptos have had the greatest return. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
 Encourage students to work in pairs to complete this activity.
 
@@ -935,7 +935,7 @@ Open [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_b
 
 * The `concat` function can be used to combine portfolio returns. This enables analysis (i.e., standard deviation) of an entire portfolio rather than an individual stock. It also allows data from investments/portfolio A to be compared with investments/portfolio B.
 
-* Harold's portfolio returns are combined with student returns in order to later calculate standard deviation and sharpe ratios across the board.
+* Harold's portfolio returns are combined with student returns in order to later calculate standard deviation and Sharpe ratios across the board.
 
   ```python
   # Concat returns DataFrames
@@ -945,7 +945,7 @@ Open [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_b
 
   ![stu_concat_compare.png](Images/stu_concat_compare.png)
 
-* Standard deviation is required to calculate sharpe ratios. Standard deviation calculates the average value and compares the distribution of values to that average.
+* Standard deviation is required to calculate Sharpe ratios. Standard deviation calculates the average value and compares the distribution of values to that average.
 
 * The `std` function can be used to compute standard deviation. The output from the function is a series that indicates how far the value is from the mean, in the same units as the base data. The greater the value/deviation, the greater the risk and volatility.
 
@@ -966,11 +966,11 @@ Open [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_b
 
 * Sharpe ratios are used to examine investment performance based on the risk-to-reward ratio.
 
-    * The sharpe ratio calculates the risk associated with a return and then divides that by the standard deviation of a return.
+    * The Sharpe ratio calculates the risk associated with a return and then divides that by the standard deviation of a return.
 
-    * The higher the sharpe ratio, the greater the reward associated with the risk. A high sharpe ratio indicates a smart investment.
+    * The higher the Sharpe ratio, the greater the reward associated with the risk. A high Sharpe ratio indicates a smart investment.
 
-* Calculating the sharpe ratio for Harold's and the students' portfolios reveals whose portfolio has the greatest reward associated with the risk.
+* Calculating the Sharpe ratio for Harold's and the students' portfolios reveals whose portfolio has the greatest reward associated with the risk.
 
   ```python
   # Calculate sharpe ratio
@@ -987,7 +987,7 @@ Open [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_b
   dtype: float64
   ```
 
-* Sharpe ratios can be visually represented with a bar chart. This allows users to easily see which investments have high and low sharpe ratios.
+* Sharpe ratios can be visually represented with a bar chart. This allows users to easily see which investments have high and low Sharpe ratios.
 
   ```python
   # Plot
