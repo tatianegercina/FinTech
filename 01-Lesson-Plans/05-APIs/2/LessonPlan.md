@@ -196,7 +196,7 @@ In the previous activity, students learned how to create and call **environment 
 
 **Files:**
 
-* [keys.sh](Activities/06-Ins_Export_Env_Variables/Unsolved/keys.sh)
+* [keys.sh](Activities/04-Ins_Create_Env_Variables/Unsolved/keys.sh)
 
 Open the 5.2 slides, and highlight the following discussion points:
 
@@ -204,7 +204,7 @@ Open the 5.2 slides, and highlight the following discussion points:
 
 * The best way to **export** **environment variables** is to create a `keys.sh` file. The `keys.sh` **shell script** will contain commands that will create and **export** **environment variables**. The `keys.sh` approach is faster than exporting the variables individually.
 
-Open the [starter-file](Activities/06-Ins_Export_Env_Variables/Unsolved/keys.sh), and perform a live demo of creating and **exporting** **environment variables** with the `keys.sh` file.
+Open the [starter-file](Activities/04-Ins_Create_Env_Variables/Unsolved/keys.sh), and perform a live demo of creating and **exporting** **environment variables** with the `keys.sh` file.
 
 * Enter the following command into `keys.sh` file.
 
@@ -234,7 +234,7 @@ This activity involves students learning, by way of an instructor live demo, how
 
 **Files:**
 
-* [env_variables.ipynb](Activities/05-Ins_Env_Variables/Solved/env_variables.ipynb)
+* [env_variables.ipynb](Activities/05-Ins_Call_Env_Variables/Solved/env_variables.ipynb)
 
 Introduce students to the concept of **environment variables** by asking the following question:
 
@@ -289,23 +289,23 @@ If students finish early, use the extra time to review the final two guided revi
 
 **Files:**
 
-* [env_variables.ipynb](Activities/07-Stu_Env_Variables/Unsolved/env_variables.ipynb)
+* [env_variables.ipynb](Activities/06-Under_Lock_And_Key/Unsolved/env_variables.ipynb)
 
-* [keys.sh](Activities/07-Stu_Env_Variables/Solved/keys.sh)
+* [keys.sh](Activities/06-Under_Lock_And_Key/Solved/keys.sh)
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Env_Variables/README.md)
+* [README.md](Activities/06-Under_Lock_And_Key/README.md)
 
 - - -
 
-### 7. Instructor Do: Activity Review (5 mins)
+### 7. Instructor Do: Under Lock and Key Activity Review (5 mins)
 
 **Files:**
 
-* [keys.sh](Activities/07-Stu_Env_Variables/Solved/keys.sh)
+* [keys.sh](Activities/06-Under_Lock_And_Key/Solved/keys.sh)
 
-* [env_variables.ipynb](Activities/07-Stu_Env_Variables/Solved/env_variables.ipynb)
+* [env_variables.ipynb](Activities/06-Under_Lock_And_Key/Solved/env_variables.ipynb)
 
 Kick off the activity review session by asking students to summarize the process of creating and using **environment variables** with APIs. Engage the students with the following questions:
 
@@ -325,7 +325,7 @@ Kick off the activity review session by asking students to summarize the process
 
   **Answer** No. The best practice for keeping **API keys** secure is to store them in **environment variables**. This practice should always be used.
 
-Open the [solution](Activities/07-Stu_Env_Variables/Solved/env_variables.ipynb), and end the review session with a quick dry walkthrough of the solution.
+Open the [solution](Activities/06-Under_Lock_And_Key/Solved/env_variables.ipynb), and end the review session with a quick dry walkthrough of the solution.
 
 * The `export` command is used to create **environment variables**. Once created, the **environment variables** are then shared with all child processes. For example, when the `keys.sh` file is executed, the export command will ensure the `QUANDL_API_KEY` variable is accessible by all processes running in the terminal that executed the `keys.sh` file.
 
@@ -471,9 +471,9 @@ Have the `keys.sh` file prepared before class so that it does not need to be cre
 
 **Files:**
 
-* [keys.sh](Activities/12-Ins_Plaid_Demo/Solved/keys.sh)
+* [keys.sh](Activities/11-Ins_Plaid_Demo/Solved/keys.sh)
 
-* [plaid_demo.ipynb](Activities/12-Ins_Plaid_Demo/Solved/plaid_demo.ipynb)
+* [plaid_demo.ipynb](Activities/11-Ins_Plaid_Demo/Solved/plaid_demo.ipynb)
 
 Emphasize to students that one of the really cool things about **Plaid** is that it provides a developers **sandbox** for users to get started running with. The **sandbox** contains account data that can be used to test out connectivity to Plaid, as well as test out some of Plaid's functionality.
 
@@ -481,7 +481,7 @@ Emphasize to students that one of the really cool things about **Plaid** is that
 
 #### Prepare environment variables
 
-Open the [keys.sh starter file](Activities/12-Ins_Plaid_Demo/Solved/keys.sh), and set up your environment variables. If possible, complete this step prior to the lesson.
+Open the [keys.sh starter file](Activities/11-Ins_Plaid_Demo/Solved/keys.sh), and set up your environment variables. If possible, complete this step prior to the lesson.
 
 * **Plaid** uses three types of API keys (**client id**, **public key**, and **sandbox secret key**). Each of these need to be saved as environment variables in a `keys.sh` file. Log into [Plaid](https://dashboard.plaid.com/account/keys) to retrieve them.
 
@@ -513,7 +513,7 @@ Because **Plaid** is offered as an SDK, the Python **requests** library doesn't 
 
 #### Execute Plaid Request
 
-Open the Jupyter [starter file](Activities/12-Ins_Plaid_Demo/Solved/plaid_demo.ipynb), and live code the following:
+Open the Jupyter [starter file](Activities/11-Ins_Plaid_Demo/Solved/plaid_demo.ipynb), and live code the following:
 
 * After the **Plaid** SDK is installed, it can be imported into Python using the `import` command. Also import other libraries needed for this activity, including `os`, `json`, and `datetime`.
 
@@ -631,13 +631,13 @@ Communicate to students that they can work with a partner to complete the activi
 
 **Files:**
 
-* [keys.sh](Activities/13-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/key.sh)
+* [keys.sh](Activities/12-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/key.sh)
 
-* [sporting_plaid.ipynb](Activities/13-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/sporting_plaid.ipynb)
+* [sporting_plaid.ipynb](Activities/12-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/sporting_plaid.ipynb)
 
 **Instructions:**
 
-* [README.md](Activities/13-Stu_Sporting_Plaid_Pt_1/README.md)
+* [README.md](Activities/12-Stu_Sporting_Plaid_Pt_1/README.md)
 
 - - -
 
@@ -675,7 +675,7 @@ Ask students if they have any questions before moving on.
 
 It's time the students donned some Plaid again, as they will be extracting financial data from the **Plaid** sandbox. In order to complete this assignment, students will submit requests to the **Plaid** API and parse JSON output.
 
-Communicate to students that they can work with a partner to complete the activity; however, each student will need to complete the assignment.
+Communicate to students that they can work with a partner to complete the activity; however, each student will need to complete the assignment. If a student or team finishes early, ask if they'd be willing to conduct a dry walk through of the solution and explain what steps were taken and why.
 
 Circulate through the room and provide assistance while students are working. Students may run into difficulty parsing through multiple JSON indexes.
 
@@ -691,7 +691,7 @@ Circulate through the room and provide assistance while students are working. St
 
 - - -
 
-### 15. Instructor Do: Activity Review (15 mins)
+### 15. Instructor Do: Sporting Plaid Activity Review (15 mins)
 
 **Files:**
 
@@ -727,7 +727,7 @@ Students will just have completed a lengthy activity of installing and using the
 
   **Answer** Hackers will be given the tools to attack less mature FinTech applications using **Plaid**.
 
-Open the [solution](Activities/14-Stu_Sporting_Plaid_Pt_2/Solved/sporting_plaid.ipynb), and conduct a dry walkthrough of the solution.
+If a student or team of students were chosen to conduct a review, instruct them to to perform a dry walk through using the [solution](Activities/14-Stu_Sporting_Plaid_Pt_2/Solved/sporting_plaid.ipynb). Otherwise, use the [solution](Activities/14-Stu_Sporting_Plaid_Pt_2/Solved/sporting_plaid.ipynb) to complete the dry walk through yourself.
 
 * The **Plaid** API functions offer a great way to submit requests without having to create and customize/concatenate request urls.
 
