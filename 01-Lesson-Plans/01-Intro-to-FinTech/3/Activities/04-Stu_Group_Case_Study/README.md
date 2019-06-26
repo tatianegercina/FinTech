@@ -1,12 +1,12 @@
 # FinTech Groups
 
-In this activity, you will need to establish groups and collaboratively create a FinTech case study report written in markdown and hosted on a shared GitHub repository.
+Time to use what you've learned to piece it all together! Get together in groups and collaboratively create a FinTech case study report written in Markdown, hosted on a shared GitHub repository.
 
 ## Instructions
 
 Walk through the following steps:
 
-  * Formulate groups. Each class should have `4-5` groups. For example, a class of `30` students should be divided into `5` groups of `6` students.
+  * Formulate groups of `3-4` individuals. For example, a class of `20` students should have around `5` groups.
 
   * Navigate to the class GitHub repository and choose one of the available FinTech case study proposals.
 
