@@ -6,7 +6,7 @@
 
 Today's class will focus on the notion of using Monte Carlo simulations to forecast future results and make confident predictions supported by statistical evidence. Monte Carlo simulations are an important tool in emulating a real-world use case that involves a degree of randomness surrounding an event or outcome, and seeks to iterate `n` number of times to find the most probable result of a variable event as well as the range of results and their corresponding probabilities of occurring.
 
-In particular, stocks prices also tend to move somewhat randomly in such a way that there are varying probabilities to where the price may go or deviate from its average return (daily, weekly, monthly). Therefore, this lesson will teach students how to apply the concept of Monte Carlo simulations to predict future stock prices and therefore forecast the potential stocks returns of an initial investment, either as a single stock investment or as an investment in a portfolio.  
+In particular, stocks prices also tend to move somewhat randomly in such a way that there are varying probabilities to where the price may go or deviate from its average return (daily, weekly, monthly). Therefore, this lesson will teach students how to apply the concept of Monte Carlo simulations to predict future stock prices and therefore forecast the potential stocks returns of an initial investment, either as a single stock investment or as an investment in a portfolio.
 
 ### Class Objectives
 
@@ -47,7 +47,7 @@ Welcome students to the third day of APIs! Cover the following points:
 
 * Mention to the class that today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. Students should feel empowered as they are learning the ways in which they can use other curated data sets to analyze and generate insights on their own.
 
-* Students should be prepared to push their mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.  
+* Students should be prepared to push their mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.
 
 * Energize your students! Today is the day where students move from historical to future-oriented analysis. Time to look into the crystal ball!
 
@@ -87,7 +87,7 @@ Monte Carlo Simulations seek to explain the probability of potential outcomes fo
 
 **Files:**
 
-* [coin_flip_simulation.ipynb](Activities/01-Ins_Inside_a_Monte_Carlo_Simulation/Solved/coin_flip_simulation.ipynb)
+* [coin_flip_simulation.ipynb](Activities/01-Ins_Probability_Distributions_of_Potential_Outcomes/Solved/coin_flip_simulation.ipynb)
 
 Walk through the solution and highlight the following:
 
@@ -158,16 +158,16 @@ Walk through the solution and highlight the following:
 
       # Print simulation iteration
       # print(f"Running Simulation {n+1}...")
-    
+
       # Set an empty list to hold flip results
       flips = []
 
       # Flip the coin several times
       for i in range(num_flips):
-        
+
           # Random int: 0 or 1
           coin_flip = random.choice(coin, p=probability)
-        
+
           # Print flip result
           # print(f"  Flip {i+1}: {coin_flip}")
 
@@ -193,13 +193,13 @@ Walk through the solution and highlight the following:
   if 'heads' in value_count.index and 'tails' in value_count.index:
       heads.append(value_count['heads'])
       tails.append(value_count['tails'])
-        
+
   # If `heads` key is not present in the Series, append heads list with 0
   # And append tails list with tails result (simulation must have returned all tails)
   elif 'heads' not in value_count.index:
       heads.append(0)
       tails.append(value_count['tails'])
-        
+
   # If `tails` key is not present in the Series, append tails list with 0
   # And append heads list with heads result (simulation must have returned all heads)
   elif 'tails' not in value_count.index:
@@ -278,16 +278,16 @@ Open the solution and explain the following:
 
       # Print simulation iteration
       # print(f"Running Simulation {n+1}...")
-    
+
       # Set an empty list to hold throw results
       throws = []
 
       # Shoot the ball `10` times
       for i in range(num_throws):
-        
+
           # Randomly choose between `made` and `missed` with a `70%` chance to make the throw and a `30%` chance the throw is missed
           free_throw = random.choice(throw, p=probability)
-        
+
           # Print throw result
           # print(f"  Throw {i+1}: {free_throw}")
 
@@ -447,7 +447,7 @@ Walk through the solution and highlight the following:
 
   ![aapl-daily-return-mean-and-std](Images/aapl-daily-return-mean-and-std.png)
 
-* The following code snippet exemplifies the simulation of stock price trajectory. The simulation calculates the next day's simulated closing price by multiplying the preceding day's closing price by a random selection of a range of values defined by the normal probability distribution of `AAPL` daily returns, given by the *mean* and *standard deviation* of daily returns. 
+* The following code snippet exemplifies the simulation of stock price trajectory. The simulation calculates the next day's simulated closing price by multiplying the preceding day's closing price by a random selection of a range of values defined by the normal probability distribution of `AAPL` daily returns, given by the *mean* and *standard deviation* of daily returns.
 
   ```python
   # Simulate the returns for 252 days
@@ -504,7 +504,7 @@ Open the solution and explain the following:
 
   ![tsla-normal-distribution](Images/tsla-normal-distribution.PNG)
 
-* Simulations for the next `252` trading shows that `TSLA` stock is forecasted to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years. 
+* Simulations for the next `252` trading shows that `TSLA` stock is forecasted to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years.
 
   ![tsla-simulated-price-plot](Images/tsla-simulated-price-plot.PNG)
 
@@ -679,7 +679,7 @@ Walk through the solution and highlight the following:
 
   ![multi-level-index-key-notation](Images/multi-level-index-key-notation.png)
 
-* The Monte Carlo simulation projects the stock price trajectory for `JNJ` and `MU` over the course of `252` trading days and returns a DataFrame of `252` records representing each simulated day's closing price. Simulated stock prices are projected by randomly selecting a daily return based off of a normal probability distribution, derived from sample means and standard deviations, and multiplying `1 + np.random.normal(avg_daily_return, std_dev_daily_return)` by the preceding day's closing price. A DataFrame of `252` simulated trading days is returned and the daily returns are calculated using the `pct_change` function.  
+* The Monte Carlo simulation projects the stock price trajectory for `JNJ` and `MU` over the course of `252` trading days and returns a DataFrame of `252` records representing each simulated day's closing price. Simulated stock prices are projected by randomly selecting a daily return based off of a normal probability distribution, derived from sample means and standard deviations, and multiplying `1 + np.random.normal(avg_daily_return, std_dev_daily_return)` by the preceding day's closing price. A DataFrame of `252` simulated trading days is returned and the daily returns are calculated using the `pct_change` function.
 
   ```python
   # Set number of simulations and trading days
@@ -750,7 +750,7 @@ Walk through the solution and highlight the following:
 
   ![portfolio-cumulative-returns-last-row](Images/portfolio-cumulative-returns-last-row.png)
 
-* Plotting a frequency distribution histogram of `10` bins and calculating a probability distribution of `10` bins displays the potential outcomes of ending cumulative portfolio returns.  
+* Plotting a frequency distribution histogram of `10` bins and calculating a probability distribution of `10` bins displays the potential outcomes of ending cumulative portfolio returns.
 
   ![portfolio-cumulative-returns-frequency-distribution](Images/portfolio-cumulative-returns-frequency-distribution.png)
 
@@ -841,7 +841,7 @@ Open the solution and explain the following:
 
 * The last row of the DataFrame containing the cumulative portfolio returns of each simulation represents the ending cumulative returns of the portfolio of each simulation. Plotting a frequency distribution and calculating a probability distribution shows the most expected range of cumulative returns for the portfolio.
 
-  ![portfolio-frequency-distribution](Images/portfolio-frequency-distribution.png) 
+  ![portfolio-frequency-distribution](Images/portfolio-frequency-distribution.png)
 
 * Calculating a `95%` confidence interval of potential cumulative portfolio returns as well as potential investment performance showcases the range of cumulative portfolio returns and investment results that have a `95%` likelihood of occurring.
 
