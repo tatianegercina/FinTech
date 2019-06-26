@@ -287,7 +287,7 @@ Open the slideshow and present the following questions and answers:
 
 * Why is Markdown important?
 
-  **Answer:** Markdown allows for creating visually enhanced documents such as GitHub repostitory `README` files, which are valuable not only to potential employers, but also to potential collaborators. A good `README` helps people understand the purpose of the repository at a glance, and it shows developers how to navigate, install, and run the project.
+  **Answer:** Markdown allows for creating visually enhanced documents such as GitHub repostitory `README` files, which are valuable not only to potential employers, but also to potential collaborators; a good `README` helps people understand the purpose of the repository at a glance, and it shows developers how to navigate, install, and run the project.
 
 Then, live demo the following while explaining the following points:
 
@@ -379,7 +379,7 @@ Open the slideshow and go over slides 1-22 while explaining the following:
 
 * Remind students that in the class GitHub repository, there will be a list of potential FinTech case studies from which they can choose. 
 
-* Students should pair off into `4-5` groups and choose one of the available FinTech companies to present. Students will be given `30` minutes to develop their case studies and will then have `5` minutes to present their reports.
+* Students should pair off into groups of `3-4` individuals and choose one of the available FinTech companies to present. Students will be given `30` minutes to develop their case studies and will then have `2-3` minutes to present their reports.
 
 * Energize your students! This will be a good time for students to interact with each other and build upon what they've learned to perform their own independent case study analyses (without teacher help).
 
@@ -387,7 +387,7 @@ Open the slideshow and go over slides 1-22 while explaining the following:
 
 ### 14. Students Do: FinTech Groups (30 mins)
 
-In this activity, students will be divided up into groups of `4-5` individuals with each group representing a FinTech case study of a particular company. Each group will have to create their own shared GitHub repository and collaboratively create a case study report written in markdown.
+In this activity, students will be divided up into groups of `3-4` individuals with each group representing a FinTech case study of a particular company. Each group will have to create their own shared GitHub repository and collaboratively create a case study report written in markdown.
 
 **Instructions:**
 
@@ -397,11 +397,11 @@ In this activity, students will be divided up into groups of `4-5` individuals w
 
 Perform the following:
 
-* Explain to students that now that they've worked together to create their FinTech case studies, they should finish off with a presentation of their findings. Have each group present their findings to the class and give each group approximately `4-5` minutes per presentation.
+* Explain to students that now that they've worked together to create their FinTech case studies, they should finish off with a presentation of their findings. Have each group present their findings to the class and give each group approximately `2-3` minutes per presentation.
 
 * Have students log into their shared GitHub repository and present off of the FinTech case study content written in the `README` markdown file.
 
-* Make sure that all students have a say in the group presentations. Most likely, there will be some students who are shy when it comes to presenting -- try to bring them out of their comfort zones?
+* Watch out for idle students; make sure that all students have a say in their group presentations.
 
 * When presentations are finished, check the pulse of the class. Ask the students if they have any questions regarding the FinTech case studies and if they enjoyed their group activity.
 
