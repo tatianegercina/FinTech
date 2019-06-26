@@ -1,5 +1,3 @@
-PLACEHOLDER
-
 ## 1.1 Lesson Plan - Welcome to FinTech!
 
 ---
@@ -34,7 +32,21 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Instructor/TA Introductions (15 mins)
 
-The first part of class consists of introductions from instructors and TAs.
+In this activity, students are introduced to the instructor as well the teacher assistants for their cohort/class. Instructors and teacher assistants will accompany students for the next `26` weeks, so get to know your students and vice versa!
+
+**File:** [slideshow-placeholder]()
+
+Take the time to talk about your (and the TAs) background(s). Feel free to talk about topics such as:
+
+* What is your career history? Where did you start and where are you now?
+
+* What have you accomplished in the past? What is your FinTech industry experience (if applicable)?
+
+* What drew you to become a instructor/TA? What are you looking forward to in this course?
+
+* What's something that defines you? What are your passions?
+
+Ask the students if they have any further questions about yourself or the TAs. Now is the time to get to know each other so feel free to chat it up!
 
 ---
 
