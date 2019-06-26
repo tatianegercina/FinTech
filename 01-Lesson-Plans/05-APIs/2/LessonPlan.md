@@ -824,7 +824,7 @@ Highlight that students have shown themselves to cutting edge by working with te
 
 * Reinforce to students that this is exactly what they did today in class. With the skills they've learned today, they'll be able to keep up with emerging technologies.
 
-Communicate to students that the applications they've completed today should be discussed during any interviews and added to their resumes.
+Communicate to students that the applications they've completed today should be discussed during interviews and added to their resumes.
 
 * They've created reusable data extraction tools, which are valuable artifacts in the FinTech industry.
 
