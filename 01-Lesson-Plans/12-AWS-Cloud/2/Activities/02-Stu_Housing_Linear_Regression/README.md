@@ -10,13 +10,7 @@ Using your SageMaker notebook instance, upload the provided `boston-housing-regr
 
 Take a look at the SageMaker Linear Learner Algorithm documentation: https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html
 
-
-## Bonus
-
-If time remains, think about the places in the notebook where advantages of SageMaker where leveraged.
-
-* Check other SageMaker built-in algorithms [here](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-algo-docker-registry-paths.html).
-
+If you finish early, take a look at other SageMaker built-in algorithms [here](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-algo-docker-registry-paths.html).
 
 ## Hints
 
