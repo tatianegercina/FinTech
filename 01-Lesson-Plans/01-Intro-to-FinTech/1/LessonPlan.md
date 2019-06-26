@@ -52,7 +52,17 @@ Ask the students if they have any further questions about yourself or the TAs. N
 
 ### 2. Instructor Do: SSM Introductions (15 mins)
 
-The second part of class consists of introductions from the university, program director, student services director, and/or career director.
+In this activity, your student success manager (SSM) as well as potential university staff, program directors, student services directors, and career directors may introduce themselves.
+
+Give your SSM and related staff their time to introduce themselves. They will probably have an agenda or introduction based on their own criteria; however, chances are they'll say something similar to the following:
+
+* Welcome the class on their next `26` week journey.
+
+* Emphasize the core values of the course and how TrilogyEd/2U is looking to do more than disseminate information and transfer knowledge; TrilogyEd/2U is looking to create educational *experiences*. 
+
+* Excite students and tell them that although the next `6` months will be challenging, it will be one of their most fulfilling experiences!
+
+* Discuss course financing and monthly payments.
 
 ---
 
