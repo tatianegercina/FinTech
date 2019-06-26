@@ -4,6 +4,18 @@
 
 In today's class, students will be introduced to APIs and Cloud Infrastructure with Amazon Web Services (AWS) and will learn how to leverage some cloud computing services for machine learning.
 
+### Instructor Notes
+
+* **Important!** Slack out the disclaimer for [AWS Free Tier](Activities/00-AWS_Free_Tier/AWS-Free-Tier.pdf) services prior to class. Take some time at the beginning of class to explain that while we are only using free tier services in class, students should review this documentation in order to avoid accidentally incurring charges.
+
+* Also note that in the past, AWS content has appeared differently for some instructional teams. It seems that AWS does A/B testing on their UI. If your AWS views _don’t_ match up with the views in the lesson plan, check that you've pulled the latest updates from github or look in the Slack Instructional Team channel for announcements regarding this.
+
+* Check prior to class that everyone has a an AWS account and is able to login.
+
+* Today's class should be a fun one. Students will put together many different technologies covered so far and learn how they can interact with cloud services.
+
+* There are a few activities that require setup. Have the class follow along and ask questions as you go.
+
 ### Class Objectives
 
 By the end of class, students will be able to:
@@ -13,7 +25,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-This lesson introduces new content rapidly. Students may express frustration at learning new cloud technologies. Remind students that while the learning curve may be steep at first, AWS and cloud experience is highly sought-after and well worth the effort required to become comfortable with it.
+This lesson introduces new content rapidly. Students may express frustration at learning new cloud technologies. Remind students that while the learning curve may be steep at first, AWS and *Cloud* experience is highly sought-after and well worth the effort required to become comfortable with it.
 
 Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
@@ -24,6 +36,8 @@ Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 ...
 
 ### 0. Instructor Do: Introduce AWS SageMaker (10 mins)
+
+* **Important!** Slack out the disclaimer for [AWS Free Tier](Activities/00-AWS_Free_Tier/AWS-Free-Tier.pdf) services prior to class. Take some time at the beginning of class to explain that while we are only using free tier services in class, students should review this documentation in order to avoid accidentally incurring charges. All resources created in class should be stopped and deleted at the end of class to ensure no usage fees. The last activity goes over this.
 
 Visit the AWS SageMaker homepage and cover the following points.
 <https://aws.amazon.com/sagemaker/>
@@ -51,8 +65,8 @@ Review some of the advantages of using SageMaker:
 * SageMaker advertises "One-click Training" and "One-click Deployment"
 * SageMaker comes with built-in security, which includes access controls and monitoring
 
-
 ### 0. Students Do: Explore SageMaker (5 mins)
+
 Give students a few minutes to explore SageMaker.
 
 * First, students login to the AWS Console: <https://console.aws.amazon.com>
@@ -62,8 +76,7 @@ Direct link: <https://console.aws.amazon.com/sagemaker/home?region=us-east-1>
 * Now students can explore the main components on the left pane menu.
 * Have TA's ensure all students are able to login.
 
-
-### 0. Everyone Do: Create a SageMaker Notebook Instance (5 mins)
+### 0. Instructor Do: Create a SageMaker Notebook Instance (15 mins)
 
 SageMaker uses a compute instance to serve `Jupyter` notebooks, the create instance process will configure multiple settings behind the scenes.
 
@@ -72,7 +85,7 @@ Have students follow along executing the next steps to create a SageMaker Notebo
 First, create the required AWS resources for SageMaker.
 
 * From the main AWS Console, find the `S3` service: <https://s3.console.aws.amazon.com>
-* Create a bucket for SageMaker:
+* Create a bucket for SageMaker:  
 ![Create S3 bucket](Images/00-create-bucket.png)
 Go to S3 -> Buckets -> click `Create Bucket` and fill in details as follows:
 
@@ -88,51 +101,50 @@ Go to S3 -> Buckets -> click `Create Bucket` and fill in details as follows:
     * Click: `Create bucket`
 * Note down (copy/paste/save) the name of bucket for use in the following section.
 
-
 * From the SageMaker console, use the left pane menu and visit: Notebook -> [Notebook instances](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances)
-* On the right side, click: [Create notebook instance](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances/create)
+* On the right side, click: [Create notebook instance](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances/create)  
 ![Create notebook instance](Images/01-create-notebook-instance-1.png)
 * Fill in the required values, leaving most defaults unchanged, for example:
 
   * Notebook instance name: `sm-test`
   * Notebook instance type: `ml.t2.medium`
   * Elastic Inference: `none`
-  * IAM role: `Create a new role` (enter the name of the previously create *S3 bucket* in "Specific S3 buckets", then click `Create role`)
+  * IAM role: `Create a new role` (enter the name of the previously create *S3 bucket* in "Specific S3 buckets", then click `Create role`)  
   ![Create IAM Role success](Images/02-iam-role-create-success.png)
   * Root access - `Enable - Give users root access to the notebook` (remind students that this is less safe but allows more control over the instance)
 
 * Click: `Create notebook instance`
-Note: the `IAM Role` is required, if this or another required field value is missing the process won't proceed until addressed. If all required values where provided you'll see a success message.
+Note: the `IAM Role` is required, if this or another required field value is missing the process won't proceed until addressed. If all required values where provided you'll see a success message.  
 ![Create Notebook Instance success](Images/03-notebook-instance-create-success.png)
 
-* Click on the Notebook Instance to view further details
+* Click on the Notebook Instance to view further details  
 ![Notebook Instance details](Images/04-notebook-instance-details.png)
 
-* Back in the Notebook Instance list, refresh the page and wait for the status of the new instance to be: `InService`
+* Back in the Notebook Instance list, refresh the page and wait for the status of the new instance to be: `InService`  
 ![Create Notebook Instance success](Images/05-notebook-instance-status.png)
 
 * Remind students that AWS charges for these and most resources as they are created, event when not in use, this instance is billed for by the second until it's turned off and deleted.
 
-### 0. Everyone Do: Create a new Jupyter Notebook (5 mins)
+### 0. Instructor Do: Create a new Jupyter Notebook (5 mins)
 
-* Once the Notebook Instance has status `InService`, go to "Actions" and click on `Open JupyterLab`.
+* Once the Notebook Instance has status `InService`, go to "Actions" and click on `Open JupyterLab`.  
 ![Notebook Instance actions](Images/06-notebook-instance-actions.png)
 
 
-* On the `Notebook` section in the JupyterLab `Launcher`, select `conda_python3` to create a new notebook.
+* On the `Notebook` section in the JupyterLab `Launcher`, select `conda_python3` to create a new notebook.  
 ![Notebook Environment](Images/07-jupyterlab-env-conda_python3.png)
 
-* On the new notebook, enter python code in the first cell to test and demonstrate the functionality.
+* On the new notebook, enter python code in the first cell to test and demonstrate the functionality.  
 ![Untitled Notebook](Images/08-notebook-untitled.png)
 
-### 0. Everyone Do: Open an existing Jupyter Notebook (5 mins)
+### 0. Instructor Do: Open an existing Jupyter Notebook (5 mins)
 
 Show students how to open an existing Jupyter Notebook in the new SageMaker Notebook instance.
 For this example we'll use a notebook in our local machine, from a previous activity.
 
 * In your SageMaker notebook instance, from the main `JupyterLab` view, use the `Upload` icon (arrow up) on the left and select an existing notebook.
 For example: `04-Pandas/3/Activities/16-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb`
-Select the local notebook file to upload.
+Select the local notebook file to upload.  
 ![Upload Notebook](Images/09-upload-notebook.png)
 
 * Open the notebook. You'll probably see the message: `Select Kernel` or `Kernel not found`, select `conda_python3` and click `Select` or `Set Kernel`
@@ -153,7 +165,7 @@ Note: you might need to make some of the `CSV` input files available by also upl
 
   * Upload the provided notebook to SageMaker's JupyterLab and run each cell to build, train, deploy the model. After this
 
-### 0. Everyone Do: Review Activity (0:10)
+### 0. Instructor Do: Review Activity (0:10)
 
 * Reassure students that it's okay if this was difficult. SageMaker APIs have a learning curve, as do other AWS resources, along with Machine Learning in general. They will get a lot of practice with this today!
 
@@ -171,7 +183,7 @@ Note: you might need to make some of the `CSV` input files available by also upl
 
 * Cover the bonus in the following activity.
 
-### 0. Everyone Do: Discuss Pros and Cons of deploying ML models with SageMaker (10 mins)
+### 0. Instructor Do: Discuss Pros and Cons of deploying ML models with SageMaker (10 mins)
 
 Leads and facilitate a discussion around deploying models in SageMaker and why a RESTful ML API is useful.
 
@@ -191,7 +203,7 @@ Cons:
 * Visibility: you won't have oversight on AWS internal handling of your data and infrastructure.
 * Availability: although there are SLAs in place, AWS (and other cloud providers) can and have suffered outages at times, causing data unavailability.
 
-### 0. Everyone Do: Create and Deploy a Machine Learning Model (15 mins)
+### 0. Instructor Do: Create and Deploy a Machine Learning Model (15 mins)
 
 Show students how a Machine Learning model is created, trained and deployed in SageMaker.
 
@@ -205,27 +217,26 @@ Show students how a Machine Learning model is created, trained and deployed in S
 
 * TBD.
 
-
-### 0. Everyone Do: Delete Notebook Instance (5 mins)
+### 0. Instructor Do: Delete Notebook Instance (5 mins)
 
 Show students how to delete their SageMaker notebook instance so that no billing charges are incurred for it after class.
 
 * From the SageMaker console, use the left pane menu and visit: Notebook -> [Notebook instances](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances)
 
-* Select the the Notebook Instance (or follow this process for all) on the left circular dot.
+* Select the the Notebook Instance (or follow this process for all) on the left circular dot.  
 ![Notebook Instance list](Images/notebook-instance-list.png)
 
 * Once selected, click on the right `Actions` menu and select `Stop`.
 
-* Refresh the page and wait for the instance `Status` to change to `Stopped`.
+* Refresh the page and wait for the instance `Status` to change to `Stopped`.  
 ![Notebook Instance actions](Images/notebook-instance-actions.png)
 
-* Select the instance again, click on `Actions` and select `Delete` then confirm delete.
+* Select the instance again, click on `Actions` and select `Delete` then confirm delete.  
 ![Notebook Instance delete](Images/notebook-confirm-delete.png)
 
 * At the end of the lesson, the notebook instances list should be empty and state: "There are currently no resources.", otherwise charges will be incurred for any remaining active instances.
 
-* Lastly, go to S3 https://s3.console.aws.amazon.com and remove the buckets created for the activity.
+* Lastly, go to S3 <https://s3.console.aws.amazon.com> and remove the buckets created for the activity.
 
 - - -
 
