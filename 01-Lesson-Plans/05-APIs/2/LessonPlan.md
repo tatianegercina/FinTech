@@ -788,16 +788,44 @@ Ask if there are any remaining questions.
 
 ### 16. Recap (10 mins)
 
-Woohoo! You've reached the end of APIs Day 2. Over the past two days, the class has been bombarded with an array of APIs, ranging from APIs that allow users to play fun games to APIs that provide users with a unified view of data across all financial accounts.
+Woohoo! You've reached the end of APIs Day 2. Over the past two days, the class has been bombarded with an array of APIs, ranging from APIs that allow users to play fun games to APIs that provide users with a unified view of data across all financial accounts. The importance of **API keys** have been drilled home, as well as the need to store them as **environment variables**.
 
-Underscore to students that their progress in learning how to programmatically submit API calls using the Python `requests` library and **SDKs** is going to have real-world benefit.
+Underscore to students that their progress in learning how to programmatically submit API calls using the Python `requests` library and **SDKs** is going to have real-world benefit. These skills are practical and could be employed to solve a number of FinTech use cases.
 
-* Software development requires applications to support integration with APIs. Cloud (i.e. Amazon Web Services), Big Data (i.e. Hadoop), and Data Science (i.e. Data Science Toolkit ) technologies all require some form of API or SDK be used to leverage their services/platform and data.
+* Software development requires applications to support integration with APIs. Cloud (i.e. Amazon Web Services), Big Data (i.e. Hadoop), and Data Science (i.e. Data Science Toolkit ) technologies all require some form of **API** or **SDK** be used to leverage their services/platform and data.
 
-* In order to write a machine learning algorithm that gets data from the Amazon cloud, an AWS SDK will be needed.
+  * For example, in order to write a machine learning algorithm that gets data from the Amazon cloud, an AWS SDK will be needed.
 
-* In order to process social media data in real time, a streaming service API will be needed. (i.e. kafka-python)
+  * In order to process social media data in real time, a streaming service API will be needed. (i.e. kafka-python)
 
-* To be cutting edge, a developer has to keep up with emerging technologies. In order to do so, developers must be able to write code that connects and integrates multiple APIs and SDKs to create unique interactions. Tell students that this is exactly what they did today in class. With the skills they've learned today, they'll be able to work with a ton of services.
+Highlight that students have shown themselves to cutting edge by working with technologies like **Plaid**, which are disrupting the FinTech data world.
 
-Emphasize to students that the work the applications they've completed today can be added to their resumes as artifacts. Data extraction tools are valuable artifacts in the FinTech industry, and with the right parameterization, these applications can easily scale from being programs to frameworks.
+* In order to be cutting edge, a developer has to keep up with emerging technologies.
+
+* This requires developers to be able to write code that connects and integrates multiple APIs and SDKs to create unique interactions.
+
+* Reinforce to students that this is exactly what they did today in class. With the skills they've learned today, they'll be able to keep up with emerging technologies.
+
+Communicate to students that the applications they've completed today should be discussed during any interviews and added to their resumes.
+
+* They've created reusable data extraction tools, which are valuable artifacts in the FinTech industry.
+
+* With the right parameterization, the **Quandl** and **Plaid** APIs could easily evolve into engines/frameworks.
+
+If time remains, ask students to summarize what they've learned today with one word or a 3 word phrase. Ask for volunteers, and then eventually go round-robin if necessary.
+
+  **Answer** Disruptive
+
+  **Answer** Open-source
+
+  **Answer** Democratization
+
+  **Answer** Keys, keys, keys
+
+  **Answer** Decentralization
+
+  **Answer** For the people
+
+  **Answer** Data Extraction
+
+  **Answer** Development kit
