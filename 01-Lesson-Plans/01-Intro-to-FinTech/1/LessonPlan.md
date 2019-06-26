@@ -68,15 +68,21 @@ Give your SSM and related staff their time to introduce themselves. They will pr
 
 ### 3. Instructor Do: Class Introductions (40 mins)
 
-At this point, it's your turn to introduce yourself, as well as have the TAs and students introduce themselves one at a time. This is an important icebreaking activity; have fun with it!
+At this point, it's the students' turns to introduce themselves. This is an important icebreaking activity as these will be your students for the next `26` weeks, so have fun with it!
 
-* Open the [slideshow](). Use it as a guide for the rest of the lesson. Remember to stay on schedule, and, if necessary, ask your TAs to help keep track of time.
+Have every student in class introduce themselves and try to keep things lighthearted as students share their backgrounds. Some sample questions you could ask to break the ice are:
 
-* Have every student in class introduce themselves. Feel free to refer to the slides or come up with questions of your own. Try to keep things lighthearted as students share their backgrounds.
+* What is your name?
 
-* When all students have had a chance to introduce themselves, have the TAs introduce themselves as well.
+* What did you study or where have you worked?
 
-* Finally, introduce yourself and showcase a project or two to demonstrate your chops in the data field.
+* Where are you from?
+
+* What made you want to sign onto this course?
+
+* What are some of your hobbies, passions?
+
+Due to the time constraint you may not be able to ask every question for every student in the class. Therefore, pick a few that you like from the list above or think of your own relevant questions! 
 
 ---
 
