@@ -130,7 +130,7 @@ End the activity by asking the students if they have any further questions.
 
 ### 3. Student Do: Keys to the FinTech Kingdom (15 mins)
 
-Over the next couple activities, students will be working with APIs that require **keys** for access. Use this time to confirm all students have the necessary **keys** for the **Quandl** and **Plaid** APIs. The instructor and TAs will circulate through the room confirming all students are ready to begin using their **API keys**. Provide assistance to any students who do not have **API keys**.
+Over the next couple activities, students will be working with APIs that require **keys** for access. Use this time to confirm all students have the necessary **keys** for the **Quandl** and **Plaid** APIs. The TAs will circulate through the room confirming all students are ready to begin using their **API keys**. Provide assistance to any students who do not have **API keys**.
 
 Each student should be met individually. Students should have their account pages ready for instructor/TA review. Instructor/TA must review each student's account pages to ensure all **API keys** are available.
 
@@ -140,9 +140,13 @@ Slack out the below API links just in case some students still need to sign up.
 
 * [Plaid Signup Page](https://dashboard.plaid.com/signup)
 
+While TAs are circulating to confirm students have their **keys**, engage the students with discussion points and review questions regarding the importance and value of API keys. These are provided below.
+
+Confirm your **API keys** are available and ready for use. If not completed already, create a `keys.sh` file that will store **Quandl** and **Plaid** **API keys**.
+
 **Instructions:**
 
-* [README.md](Activities/03-Stu_Api_Keys/README.md)
+* [README.md](Activities/03-Stu_Keys_to_Kingdom/README.md)
 
 Indicate to students that this activity will focus on making sure everyone is prepared to begin using the **Quandl** and **Plaid** APIs. TAs and yourself will touch base with each student to confirm they have the necessary **keys** to access **Quandl** and **Plaid**.
 
@@ -151,8 +155,6 @@ Ask students to pull up their account pages for **Quandl** and **Plaid** and to 
 * Instruct TAs to circulate through the room and to check with each student to confirm availability of **Quandl** and **Plaid** **API keys**.
 
 * Circulate the room and provide assistance to any students who do not have an **API key**. Provide troubleshooting if there are any issues.
-
-* Confirm instructor **API keys** are available and ready for use. If not completed already, create a `keys.sh` file that will store **Quandl** and **Plaid** **API keys**.
 
 Excite students about FinTech APIs by highlighting the following points.
 
