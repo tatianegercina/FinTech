@@ -162,7 +162,7 @@ Open the slideshow and go over slides 1-22. Highlight the following about git:
 
 * What other features does the Git CLI provide?
 
-  > The Git CLI can perform many different kinds of git operations; however, popular commands are:
+  **Answer:** The Git CLI can perform many different kinds of git operations; however, popular commands are:
 
     * `git clone`: Clones a git repository onto the local file system.
 
@@ -176,11 +176,11 @@ Open the slideshow and go over slides 1-22. Highlight the following about git:
 
 * What is a git commit?
 
-  > Before changed files are pushed from a local git repository to the remote git repository, a git commit saves a queue of tracked changed files as a **save** or **checkpoint** for a git repository. This way, should it be necessary, a git repository can be restored to a previous checkpoint in time, thereby undoing any existing changes from that point.
+  **Answer:** Before changed files are pushed from a local git repository to the remote git repository, a git commit saves a queue of tracked changed files as a **save** or **checkpoint** for a git repository. This way, should it be necessary, a git repository can be restored to a previous checkpoint in time, thereby undoing any existing changes from that point.
 
 * What is Git's "Snapshot model":
 
-  > Git thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots."
+  **Answer:** Git thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots."
 
   ![Git Snapshot Model](https://git-scm.com/book/en/v2/images/snapshots.png)
 
@@ -263,11 +263,11 @@ Open the slideshow and present the following questions and answers:
 
 * What is Markdown?
 
-  > Markdown is a lightweight markup language that contains syntax for adding formatting elements to plain text documents.
+  **Answer:** Markdown is a lightweight markup language that contains syntax for adding formatting elements to plain text documents.
 
 * Why use Markdown?
 
-  > Markdown provides features for created visually enhanced documents that are rendered on the web, most commonly used for documents such as README files or online forum discussion posts. 
+  **Answer:** Markdown provides features for created visually enhanced documents that are rendered on the web, most commonly used for documents such as README files or online forum discussion posts. 
 
 * What are some common Markdown features?
 
@@ -284,6 +284,10 @@ Open the slideshow and present the following questions and answers:
   * Links
 
   * Images
+
+* Why is Markdown important?
+
+  **Answer:** We want to talk about (and show) good examples of github readme files and how those are valuable not only to potential employers, but also to potential collaborators for their projects. A good readme helps people understand the purpose of the repository at a glance, and it shows developers how to navigate, install, and run the project.
 
 Then, live demo the following while explaining the following points:
 
