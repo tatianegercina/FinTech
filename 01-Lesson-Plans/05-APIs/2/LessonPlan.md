@@ -262,8 +262,6 @@ Navigate to the 5.2 slides, and touch point on each of the below discussion poin
   api_key = os.getenv("QUANDL_API_KEY")
   ```
 
-  ![env_var_print.PNG](Images/env_var_print.PNG)
-
 * If an **environment variable** does not exist, Python will return **None** as the value. An empty **environment variable** will cause an API call to fail. If an API doesn't seem to be working right, double check your **environment variable** using the `type` command. This will indicate if the **environment variable** is of type **None** (null) or **string** (not null).
 
   ```python
