@@ -24,22 +24,6 @@ Navigate to the 5.2 slides, and touch point on each of the below discussion poin
 
 * An easy, convenient, and secure way to store any data that needs to be accessed across programs and applications is to use **environment variables**. This includes API **keys**, as well as user credentials, and program installation paths (i.e. Python).
 
-Open the [starter-file](Activities/05-Ins_Env_Variables/Unsolved/env_variables.ipynb), and conduct a live demo of how to create **environment variables** in Python.
-
-* **Environment variables** can be created in Python by using the **os** library. This can be imported into Python like all other libraries and packages.
-
-  ```python
-  import os
-  ```
-
-* **Environment variables** are created and stored using the `os.environ` mapping object. **os.environ** works much like a dict structure. Both a **key** and a **value** are needed upon declaration. The common naming convention for **environment variable** names is **all caps**. Emphasize to students that **environment variables** must be stored as strings.
-
-  ```python
-  os.environ["QUANDL_API_KEY"] = "ENTER YOUR KEY HERE"
-  ```
-
-* Underscore to students that why it is possible to create **environment variables** in Python, they need to be careful when saving confidential/sensitive data. Confidential/sensitive data should never be hard-coded in a script.
-
 * Once an **environment variable** is declared, it can be called using the `os.environ.get` function. The input to the `os.environ.get` function is the name of the **environment variable**. The output should then be stored as a Python variable to be used at a later time.
 
   ```python
