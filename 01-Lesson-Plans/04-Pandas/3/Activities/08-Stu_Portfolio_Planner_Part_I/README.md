@@ -1,6 +1,6 @@
-# Portfolio Planner Part I
+# Portfolio Planner, Part 1
 
-In this activity, Harold has been asked to research the following 10 stocks: 
+Harold has been asked to research the following 10 stocks: 
 
 * Bank of New York Mellon (BK)
 * Diamondback Energy (FANG)
@@ -13,17 +13,17 @@ In this activity, Harold has been asked to research the following 10 stocks:
 * Western Digital (WDC)
 * Westrock (WRK)
 
-Specifically, upper management wants to sort the stocks by risk profile/volatility, filter out the top 5 stocks with the highest volatility, and assign the remaining stocks portfolio weights of `0.5`, `0.2`, `0.15`, `0.10`, and `0.05` from the least risky stock to the most risky stock, respectively. Then, they want to see what the returns of a hypothetical `$10,000` investment would be if invested in such a constructed portfolio over time.
+Harold has been tasked with sorting stocks by risk/volatility; filtering out the top 5 stocks with the highest volatility; and assigning the remaining stocks portfolio weights of 0.5, 0.2, 0.15, 0.10, and 0.05 (from least risk to most risk). He also needs to show the returns over time of a hypothetical $10,000 investment in such a portfolio. 
 
-Use the Pandas library to help Harold determine the risk profile of the 10 stocks, drop the top 5 highly volatile stocks, assign portfolio weights to each corresponding stock, and plot the returns of a `$10,000` investment if invested in such a portfolio over time.
+Use the Pandas library to help Harold determine the risk profile of the 10 stocks, filter out the top 5 highly volatile stocks, assign portfolio weights to each corresponding stock, and plot the returns of a $10,000 investment in such a portfolio over time.
 
-## Part 1 Instructions
+## Instructions
 
-* Using the starter file provided, walk through the following steps.
+Using the starter file, complete the following steps.
 
-  * Import libraries and dependencies
+1. Import libraries and dependencies. 
 
-  * Read in the following CSVs:
+1. Read in the following CSV files:
 
     * `bk_data.csv`
     * `fang_data.csv`
@@ -36,30 +36,30 @@ Use the Pandas library to help Harold determine the risk profile of the 10 stock
     * `wdc_data.csv`
     * `wrk_data.csv`
 
-  * Combine the DataFrames so that the closing prices from each DataFrame are stacked column-by-column.
+  1. Combine the DataFrames so that the closing prices from each DataFrame are stacked column by column.
 
-  * Use the `sort_index` function to sort the combined DataFrame by datetime index in ascending order (past to present)
+  1. Use the `sort_index` function to sort the combined DataFrame by datetime index in ascending order (past to present).
 
-  * Rename the columns to reflect the corresponding stock.
+  1. Rename the columns to reflect the corresponding stock.
 
-  * Use the `pct_change` function to calculate daily returns for each stock.
+  1. Use the `pct_change` function to calculate daily returns for each stock.
 
-  * Use the `std` function and multiply by `sqrt(252)` to calculate annualized volatility. Use the `sort_values` function to quickly sort by volatility values.
+  1. Use the `std` function and multiply by `sqrt(252)` to calculate annualized volatility. Use the `sort_values` function to quickly sort by volatility values.
 
-  * Drop the top 5 stocks with the highest volatility from the DataFrame of daily returns.
+  1. Drop the top 5 stocks with the highest volatility from the DataFrame of daily returns.
 
-  * Set portfolio weights of `0.5`, `0.2`, `0.15`, `0.10`, and `0.05` to the remaining stocks, from the least risky stock to the most risky stock.
+  1. Set portfolio weights of 0.5, 0.2, 0.15, 0.10, and 0.05 to the remaining stocks (from least risk to most risk). 
 
-  * Use the `dot` function to multiply the weights by each column of daily returns to calculate the daily returns of the constructed portfolio.
+  1. Use the `dot` function to multiply the weights by each column of daily returns to calculate the daily returns of the constructed portfolio.
 
-  * Use the `cumprod` function to calculate the cumulative returns of the constructed portfolio.
+  1. Use the `cumprod` function to calculate the cumulative returns of the constructed portfolio.
 
-  * Plot the returns of a hypothetical `$10,000` investment in the constructed portfolio.
+  1. Plot the returns of a hypothetical $10,000 investment in the constructed portfolio.
 
-## Part 2 Instructions
+## Hint
 
-* You will complete part 2 in the next assignment (not yet!)
+To plot the returns of a $10,000 investment, multiply the initial investment by the portfolio's cumulative returns over time.
 
-## Hints
+- - - 
 
-* To plot the returns of a `$10,000` investment, multiply the initial investment by the portfolio's cumulative returns over time.
+© 2019 Trilogy Education Services
