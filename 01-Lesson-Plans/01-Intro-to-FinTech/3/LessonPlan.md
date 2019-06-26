@@ -287,7 +287,7 @@ Open the slideshow and present the following questions and answers:
 
 * Why is Markdown important?
 
-  **Answer:** We want to talk about (and show) good examples of github readme files and how those are valuable not only to potential employers, but also to potential collaborators for their projects. A good readme helps people understand the purpose of the repository at a glance, and it shows developers how to navigate, install, and run the project.
+  **Answer:** Markdown allows for creating visually enhanced documents such as GitHub repostitory `README` files, which are valuable not only to potential employers, but also to potential collaborators. A good `README` helps people understand the purpose of the repository at a glance, and it shows developers how to navigate, install, and run the project.
 
 Then, live demo the following while explaining the following points:
 
