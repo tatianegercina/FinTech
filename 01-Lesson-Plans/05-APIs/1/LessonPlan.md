@@ -6,6 +6,12 @@ For the past three weeks, students have been deep-dived into the world of Python
 
 Today's class will teach students what Application Programming Interfaces (APIs) are, what they're used for, and why they are valuable. Students will also learn, from a high level, what the client-server model is and how it works. Students will submit API calls with Postman (a development environment for APIs) and Python, as well as how decipher and parse API JSON output. Lastly, students will submit API calls with parameters in order to improve response time and filter/narrow down API output. Learning how to make API calls and parse API output using Postman and Python will prepare students for getting their hands dirty with APIs in the professional world.
 
+Before students leave at the end of the class, instruct them to sign up for the **APIs** that are going to be used tomorrow. These **APIs** will be used in the next lesson, and the 5.2 activities will require students have API keys. Links are provided below. Remember to slack the links to the students so they have a resource to sign up with.
+
+* [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
+
+* [Plaid](https://dashboard.plaid.com/signup)
+
 ### Class Objectives
 
 By the end of class, students will be able to:
@@ -829,6 +835,14 @@ Finish the recap with a few statements of encouragement.
 * Remind students that completing this amount of work in this time period already means they've proven their aptitude. It's just growth from here.
 
 * The next step for APIs is to work with authenticated APIs, as well as Software Development Kits (SDKs) like PLAID, a personal finance API that can connect to multiple accounts. This is where the class will get heavy into accessing and using financial data via APIs.
+
+Before students leave for the end of the day, give them a small homework assignment. Instruct students to sign up for the below **APIs**. Students will need to sign up for these **APIs** before coming to the next class; these **APIs** will be used in Unit 5.2. Slack out the links so that students will have them. Students who do not have access will not be able to complete all of Unit 5.2's activities.
+
+* Emphasize to students that they should be signing up for free, development accounts. There is no need to purchase any services.
+
+* [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
+
+* [Plaid](https://dashboard.plaid.com/signup)
 
 ### End Class
 
