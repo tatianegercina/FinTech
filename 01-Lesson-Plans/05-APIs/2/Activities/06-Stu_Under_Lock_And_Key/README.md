@@ -20,8 +20,10 @@ Since **Quandl** has cracked down on the number of API calls users can make to t
 
 5. Use the `os.environ.get` function to retrieve **environment variable** named `QUANDL_API_KEY`. Store as a Python variable named **api_key**.
 
-6. Concatenate **request_url** with the **api_key** variable.
+6. Use the `type` function to confirm retreival of API key. Hint: If `NoneType` is returned, the **environment variable** does not exist. Revisit steps 2 and 3.
 
-7. Execute a `GET` request using Python requests library and the newly created **request_url**.
+7. Concatenate **request_url** with the **api_key** variable.
 
-8. Display content to screen using **content** attribute.
+8. Execute a `GET` request using Python requests library and the newly created **request_url**.
+
+9. Display content to screen using **content** attribute.
