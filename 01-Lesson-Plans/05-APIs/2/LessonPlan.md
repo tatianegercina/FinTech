@@ -792,6 +792,24 @@ Ask if there are any remaining questions.
 
 Woohoo! You've reached the end of APIs Day 2. Over the past two days, the class has been bombarded with an array of APIs, ranging from APIs that allow users to play fun games to APIs that provide users with a unified view of data across all financial accounts. The importance of **API keys** have been drilled home, as well as the need to store them as **environment variables**.
 
+Recap by asking students to summarize with one word or a 3 word phrase what they learned today. Ask for volunteers, and then eventually go round-robin if necessary.
+
+  **Answer** Disruptive
+
+  **Answer** Open-source
+
+  **Answer** Democratization
+
+  **Answer** Keys, keys, keys
+
+  **Answer** Decentralization
+
+  **Answer** For the people
+
+  **Answer** Data Extraction
+
+  **Answer** Development kit
+
 Underscore to students that their progress in learning how to programmatically submit API calls using the Python `requests` library and **SDKs** is going to have real-world benefit. These skills are practical and could be employed to solve a number of FinTech use cases.
 
 * Software development requires applications to support integration with APIs. Cloud (i.e. Amazon Web Services), Big Data (i.e. Hadoop), and Data Science (i.e. Data Science Toolkit ) technologies all require some form of **API** or **SDK** be used to leverage their services/platform and data.
@@ -814,20 +832,8 @@ Communicate to students that the applications they've completed today should be 
 
 * With the right parameterization, the **Quandl** and **Plaid** APIs could easily evolve into engines/frameworks.
 
-If time remains, ask students to summarize what they've learned today with one word or a 3 word phrase. Ask for volunteers, and then eventually go round-robin if necessary.
+### End Class
 
-  **Answer** Disruptive
+- - -
 
-  **Answer** Open-source
-
-  **Answer** Democratization
-
-  **Answer** Keys, keys, keys
-
-  **Answer** Decentralization
-
-  **Answer** For the people
-
-  **Answer** Data Extraction
-
-  **Answer** Development kit
+© 2019 Trilogy Education Services
