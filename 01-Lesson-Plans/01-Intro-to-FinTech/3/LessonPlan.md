@@ -12,8 +12,6 @@ By the end of class, students will be able to:
 
 * Configure the git CLI user credentials from the terminal.
 * Clone a repository using git clone.
-* Explain how git branching works in the context of versioning systems.
-* Create local and remote branches using the git CLI.
 * Modify git repositories by adding, committing, and pushing files.
 * Create markdown files and implement its additional visual capabilities: text formatting, images, links.
 * Collaboratively write a FinTech case study in markdown, hosted on an online git repository.
@@ -24,7 +22,7 @@ By the end of class, students will be able to:
 
 * Make sure that by the end of class students have the tools to create well-presented markdown README files to host on their git repositories. They'll need these to showcase their git repositories (and the coding assets within) to potential employers in the future.
 
-* Students will need to have a good understanding of git branches and merges in order to effectively collaborate with others working in the same git repository. Otherwise, students may face merge conflicts that prevent them from pushing their file changes to the git repository.
+* More advanced git operations such as git branches, merges, and checkouts will not be introduced in this lesson. Therefore, be aware that students may face merge conflicts that prevent them from pushing their file changes to the git repository when collaborating with others working in the same git repository.
 
 * Be mindful of students working in groups during the case study activity; some students may be less vocal than others. Walk around the room with the other TAs and try to make sure every student is actively engaged and has a voice in their respective groups.
 
@@ -176,19 +174,9 @@ Open the slideshow and go over slides 1-22. Highlight the following about git:
 
     * `git pull`: Downloads changed files from the remote git repository to the local git repository and updates the local files.
 
-    * `git branch`: Lists the available branches of the git repository.
-
-    * `git checkout`: Checks out a specific git branch and updates the files in the local git repository to match the contents of the git branch.
-
-    * `git merge`: Merges two branches together, consolidating any changes amongst the two.
-
 * What is a git commit?
 
   > Before changed files are pushed from a local git repository to the remote git repository, a git commit saves a queue of tracked changed files as a **save** or **checkpoint** for a git repository. This way, should it be necessary, a git repository can be restored to a previous checkpoint in time, thereby undoing any existing changes from that point.
-
-* What is a git branch?
-
-  > A git branch is a derived version of another branch (often `master`). In other words, a branch is just a copy of another branch.
 
 * What is Git's "Snapshot model":
 
@@ -200,7 +188,7 @@ Open the slideshow and go over slides 1-22. Highlight the following about git:
 
 ### 6. Instructor Do: Git CLI (10 min)
 
-In this activity, students will revisit their newly created GitHub repositories to add folder structures and make a `backup` branch of their `master` branch.  
+In this activity, students will revisit their newly created GitHub repositories to add folder structures.  
 
 Live demo the following walkthrough:
 
@@ -240,41 +228,6 @@ Live demo the following walkthrough:
 * Navigate to the repo on [Github.com](https://github.com/) to see that the changes have been pushed up.
 
   ![git-push-results](Images/git-push-results.png)
-
-* Once the changes have been pushed up, open up the terminal/git-bash again and navigate to the root of the git repo folder. Run the following lines to create a new branch with a modified `README` and explain each as you go through them.
-
-  ```bash
-  # Make sure the current branch is `master`
-  git checkout master
-
-  # Create a branch `backup` from the current branch `master`
-  git checkout -b backup
-
-  # Verify that the `backup` branch was created
-  git branch
-
-  # Add a quick note in the README file "This is a backup branch."
-  vi README.md
-
-  # Displays git untracked/tracked status of files in the folder
-  git status
-
-  # Adds all files and sub-folder files into a staging area
-  git add .
-
-  # Performed again to check that the files were added correctly
-  git status
-
-  # Commits all the files to your repo and adds a message
-  git commit -m <add commit message here>
-
-  # Pushes the changes up to GitHub
-  git push
-  ```
-
-* Navigate to the repo on [Github.com](https://github.com/) and see that the new branch and `README` changes have been pushed up.
-
-  ![git-branch-results](Images/git-branch-results.png)
 
 Make sure every student was able to successfully clone a repo, add files to the repo, commit the changes, and then push the changes to Github all from the command line.
 
