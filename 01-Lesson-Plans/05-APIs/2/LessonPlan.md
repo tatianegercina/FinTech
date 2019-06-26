@@ -289,13 +289,13 @@ If students finish early, use the extra time to review the final two guided revi
 
 **Files:**
 
-* [env_variables.ipynb](Activities/06-Under_Lock_And_Key/Unsolved/env_variables.ipynb)
+* [env_variables.ipynb](Activities/06-Stu_Under_Lock_And_Key/Unsolved/env_variables.ipynb)
 
-* [keys.sh](Activities/06-Under_Lock_And_Key/Solved/keys.sh)
+* [keys.sh](Activities/06-Stu_Under_Lock_And_Key/Solved/keys.sh)
 
 **Instructions:**
 
-* [README.md](Activities/06-Under_Lock_And_Key/README.md)
+* [README.md](Activities/06-Stu_Under_Lock_And_Key/README.md)
 
 - - -
 
@@ -303,9 +303,9 @@ If students finish early, use the extra time to review the final two guided revi
 
 **Files:**
 
-* [keys.sh](Activities/06-Under_Lock_And_Key/Solved/keys.sh)
+* [keys.sh](Activities/06-Stu_Under_Lock_And_Key/Solved/keys.sh)
 
-* [env_variables.ipynb](Activities/06-Under_Lock_And_Key/Solved/env_variables.ipynb)
+* [env_variables.ipynb](Activities/06-Stu_Under_Lock_And_Key/Solved/env_variables.ipynb)
 
 Kick off the activity review session by asking students to summarize the process of creating and using **environment variables** with APIs. Engage the students with the following questions:
 
@@ -325,7 +325,7 @@ Kick off the activity review session by asking students to summarize the process
 
   **Answer** No. The best practice for keeping **API keys** secure is to store them in **environment variables**. This practice should always be used.
 
-Open the [solution](Activities/06-Under_Lock_And_Key/Solved/env_variables.ipynb), and end the review session with a quick dry walkthrough of the solution.
+Open the [solution](Activities/06-Stu_Under_Lock_And_Key/Solved/env_variables.ipynb), and end the review session with a quick dry walkthrough of the solution.
 
 * The `export` command is used to create **environment variables**. Once created, the **environment variables** are then shared with all child processes. For example, when the `keys.sh` file is executed, the export command will ensure the `QUANDL_API_KEY` variable is accessible by all processes running in the terminal that executed the `keys.sh` file.
 
