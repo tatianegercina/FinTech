@@ -4,9 +4,9 @@
 
 ### Overview
 
-Today's class will focus on exposing students to the exciting and innovative **FinTech APIs** that have been disrupting the industry. Students will get hands on experience using **APIs** in a Python environment, requesting and leveraging **API keys**, and correctly storing **API keys and credentials** as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests using the Python `requests` library and API **Software Development Kits** (SDKs).
+Today's class will focus on exposing students to the exciting and innovative **FinTech APIs** that have been disrupting the industry. There are so many ground breaking and disruptive APIs in the FinTech industry that it's almost impossible not to get excited about them. **APIs** used in this lesson include **Quandl**, an API that provides programmatic access to historical stock data, and **Plaid**, an API that brokers connections multiple financial institutions in order to create a unified view of personal, financial information and accelerate the extraction of data from multiple financial accounts. Both of these services help democratize and decentralize financial data stores and analytic approaches. And this just the beginning. New APIs and SDKs are released regularly, which means there's always new and emerging technologies to use to enhance and advance the FinTech industry. It's a new world, and it's a world to be crazy about!
 
-**APIs** used in this lesson include **Quandl**, an API that provides programmatic access to historical stock data, and **Plaid**, an API that brokers connections multiple financial institutions in order to create a unified view of personal, financial information and accelerate the extraction of data from multiple financial accounts.
+This lesson presents students with hands on experience using **APIs** in a Python environment, requesting and leveraging **API keys**, and securely storing **API keys and credentials** as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to **Quandl** using the Python `requests` library and **Plaid's** **Software Development Kit** (SDK), a library packaged to provide developers with access to **Plaid's** endpoints and functions.
 
 ### Class Objectives
 
