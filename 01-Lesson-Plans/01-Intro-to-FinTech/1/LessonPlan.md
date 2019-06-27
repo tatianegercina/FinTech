@@ -88,19 +88,23 @@ Due to the time constraint you may not be able to ask every question for every s
 
 ### 4. Instructor Do: Course Format and Requirements (20 mins)
 
-In this activity, the instructor as well as program staff (ex. SSMs) should outline the course topics, class timeline, and requirements for certification upon graduation.
+In this activity, the instructor as well as program staff (ex. SSMs) should outline the course format and requirements for certification upon graduation.
 
 **File:** [slideshow-placeholder]()
 
-Continuing in the slideshow, walk through the following course topics and timeline:
+In the slideshow, showcase the following about the course format:
 
-  * We begin with an introduction to FinTech and Finance as it currently stands, discussing the current financial landscape and some of the current industry-standard methods/tools such as excel.
+  * The course will last for the next `26` weeks, with several weeks attributed to group and final projects.
 
-  * Then, we move into the direction where the industry is *going* by jumping into Python. We'll spend several weeks covering the basics of the languags and popular modern libraries such as Pandas and Matplotlib before turning our sights on building predictive time series analyses. This will culminate in our first major project using what we've learned up until now to build the best portfolio strategy possible.
+  * Class will last from `6:30 PM` to `9:30 PM` on Mondays/Wednesdays or Tuesdays/Thursdays and from `10:00 AM` to `2:00 PM` on Saturdays.
 
-  * From there, we'll supercharge the financial models that we are building using everyone's favorite buzzword: Machine Learning. We'll spend about a week on the introductor material and then get into applications in financial advising, algorithmic trading, and dynamic pricing.
+  * TA office hours are available `45` minutes before class begins and `30` minutes after class ends.
 
-  * In the last major leg of the journey, we'll dive into the up and coming world of blockchain and cryptocurrencies in order to understand the advantages they provide over traditional finance in the context of transactions and third-party verification. In addition, students will learn how to develop automatically-executing smart contracts using the Solidity platform.
+  * Class sessions will be recorded via Pantopto and can be accessed remotely anytime.
+
+  * Students will have access to course information and perform their homework submissions via TrilogyEd/2U's BootCampSpot platform.
+
+  * Slack will be primarily used for communicating directly with instructors and TAs or distributing activity files to students during class sessions.
 
 Then, overview the course requirements for certification (will need to get these requirements):
 
@@ -122,21 +126,49 @@ If you finish this ahead of schedule, feel free to take one or two questions, bu
 
 ### 6. Instructor Do: Course Topics/Agenda (15 mins)
 
-* What exactly *is* fintech anyway? Through the next few slides we aim to clarify what the field is and isn't, as well as allowing students to explore their own ideas about the field.
+In this activity, instructors will overview the topics and technologies used in the course as well the timeline for each topic or unit. 
 
-Ask the class, before moving on, what _they_ think fintech is?
+**File:** [slideshow-placeholder]()
+
+Continuing in the slideshow, walk through the following narrative about the course agenda and timeline:
+
+  * We begin with an introduction to FinTech and Finance as it currently stands, discussing the current financial landscape and some of the current industry-standard methods/tools such as excel.
+
+  * Then, we move into the direction where the industry is *going* by jumping into Python. We'll spend several weeks covering the basics of the languags and popular modern libraries such as Pandas and Matplotlib before turning our sights on building predictive time series analyses. This will culminate in our first major project using what we've learned up until now to build the best portfolio strategy possible.
+
+  * From there, we'll supercharge the financial models that we are building using everyone's favorite buzzword: Machine Learning. We'll spend about a week on the introductor material and then get into applications in financial advising, algorithmic trading, and dynamic pricing.
+
+  * In the last major leg of the journey, we'll dive into the up and coming world of blockchain and cryptocurrencies in order to understand the advantages they provide over traditional finance in the context of transactions and third-party verification. In addition, students will learn how to develop automatically-executing smart contracts using the Solidity platform.
+
+  * Each unit will consist of `3` lessons, which represent class sessions or days. Therefore, students will have `3` classes per week and spend `1` week per unit or topic.
 
 ---
 
 ### 7. Instructor Do: Intro to Fintech (15 mins)
 
-* What exactly *is* fintech anyway? Through the next few slides we aim to clarify what the field is and isn't, as well as allowing students to explore their own ideas about the field.
+In this activity, the instructor discusses the exact nature of what the key word *FinTech* entails.
 
-Ask the class, before moving on, what _they_ think fintech is?
+Present to the class the following questions and answers:
+
+  * What exactly *is* FinTech?
+
+    * **Answer:** As the term suggests, FinTech is the combination of finance and technology. Specifically, FinTech is the technology and innovation that aims to compete with traditional financial methods and improve activities or inefficiencies in finance.
+
+  * Why has FinTech become prevalent/important?
+
+    * Traditionally the finance realm tends to be slow moving in regards to technology as they lean toward the operational mantra of "if it ain't broke don't fix it, especially when it comes to people's money". However, rapid advancements in technology have bolstered the ability for smaller companies to innovate and disrupt many traditional financial domains. Thus, larger and traditional finance firms have been forced to compete and upgrade their own technologies, thereby creating technological demand and a need for skilled technical workers.
+
+  * What kind of careers are to be expected in FinTech?
+
+    * Because FinTech is just the implementation of technology within the financial domain, FinTech careers are largely similar to that of the IT industry. It's quite common to see general data analyst, data/software engineer, and data scientist roles; however, these roles may be more specifically named as quantitative analysts/traders or portfolio analysts, for example.
 
 ---
 
 ### 8. Student Do: Discuss Definitions of Fintech (25 mins)
+
+In this activity, students now get a chance to take some time and break off into groups to discuss amongst themselves what FinTech means to them.
+
+**File:** [README.md]()
 
 * Students are all here for a course on fintech, but may not have clarity on what exactly that is.
 
