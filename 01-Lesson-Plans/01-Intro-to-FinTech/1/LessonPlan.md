@@ -172,50 +172,47 @@ In this activity, students now get a chance to take some time and break off into
 
 ### 9. Instructor Do: Review FinTech and Me (10 mins)
 
-* After taking a few responses, bring up the next slide.
+* Give each group `2-3` minutes to orally present their findings.
 
-* Trilogy's definition for the scope of this class:
+* Once all groups have presented, tie everything back together by explaining that FinTech is the implementation of technology to the finance industry, but what it *means* to each individual person can differ. Some see FinTech as a way to upgrade their current skills and be more employer marketable; some see FinTech as a way to solve the inefficiencies in their current finance role; some see FinTech as a path to embarking on a new career supported by growing demand. 
 
-```
-The use of technology, especially software, 
-to compete with "traditional" banking processes.
-```
-
-* In a broader sense, technology has been in the banking and finance world for many, many years. However, the recent explosion in the number of available technologies for developers and engineers to use has created the chance for newcomers to take advantage of the "missed opportunities" that more mature banking institutions have been unable to take advantage of.
-
-* It's not the banks' fault, they have lots of regulations to adhere to.
-
-* Examples: Kenya's M-Pesa, Betterment, 
-
-* Fintech solutions offer the opportunity to continue to optimize financial services for more speed, better profit margins, and a wider customer base than ever before.
-
-* We'll get into the specific subdomains and trends on day 2
+* Despite students' differing reasons for wanting to learn more about FinTech, every student has made the leap to take this course. Therefore, encourage students to continue to get to know each other as they'll be "together in the trenches" for the next `26` weeks and could serve as valuable network connections after the completion of the course. 
 
 ---
 
 ### 10. Instructor Do: Introduce Homework (10 mins)
 
-* Before heading out for the night, make sure to introduce the first homework assignment so students can begin thinking about what company they want to do their case study on.
+In this activity, the instructor will go over the unit `1` homework and define its requirements.
 
-* This week's homework has students researching a contemporary FinTech company and developing a case study around it. They should strive to answer as many as possible of the following questions:
+Before heading out for the night, introduce the unit `1` homework assignment in which students will have to develop a case study around a particular FinTech company or technology. Students should look to answer as many of the following questions as they can:
 
-  * Current landscape in company sector:
-    * Which financial industry it is in?
-    * Trends and competitors in this industry; 
-
-  * Company’s business activities:
-    * What “problem” does this company solve?
-    * Who is their intended customer?
-    * What solution does this company offer that their competitor does not or cannot? (What is the unfair advantage they utilize?)
-    * Which technologies are they currently using and how are they implementing them?
-    * What are they doing right? What could be improved? 
+* Company Sector:
   
-  * Recommendations:
-    * If you were to advise them – what products or services would you suggest they add to their  services (whether another company already has  them or something that is your pure imagination)?
-    * Why do you think it would benefit them? 
-    * What technologies would your proposed ideas incorporate? Why are those technologies  appropriate for your solution?
+  * Which financial industry it is in?
 
-At the end of the week, students will produce a short, **informal** (5 min) presentation that will lead to a larger discussion with the class on 1.3 and a final report next week.
+  * Trends and competitors in this industry; 
+
+* Company Business Activities:
+  
+  * What “problem” does this company solve?
+  
+  * Who is their intended customer?
+  
+  * What solution does this company offer that their competitor does not or cannot? (What is the unfair advantage they utilize?)
+  
+  * Which technologies are they currently using and how are they implementing them?
+  
+  * What are they doing right? What could be improved? 
+  
+* Recommendations:
+  
+  * If you were to advise them – what products or services would you suggest they add to their  services (whether another company already has  them or something that is your pure imagination)?
+  
+  * Why do you think it would benefit them? 
+  
+  * What technologies would your proposed ideas incorporate? Why are those technologies  appropriate for your solution?
+
+Ask the students if they have any remaining questions before ending the class.
 
 ### End Class
 
