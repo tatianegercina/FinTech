@@ -28,9 +28,17 @@ By the end of class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Welcome and Goals (10 mins)
+### 1. Instructor Do: Welcome (10 mins)
 
-* Get off to a great start! Make sure to welcome students to class (using as many names as you can remember), and cover the goals outlined in today's LP.
+In this activity, instructors should take the time to welcome students back and hype up the day; students will receive a more detailed overview into the background of FinTech as well as learn fundamental tools, such as the terminal/command line and git (GUI), that will be integral to their success as future developers.  
+
+Perform the following:
+
+* Remind students that the last class was all about course introductions and a brief discussion on what FinTech is and what the term *meant* to the students. On the contrary, today's lesson will perform a technical deep dive into the historical background of FinTech, explain the reasoning for its current prevalence, and focus in on the traditional domains or sectors within finance that FinTech has helped to disrupt.  
+
+* Explain that students will also begin working with common tools such as the terminal/command line, a text-base utility for performing file system operations and executing programs, and git, a managed remote file repository with in-built versioning control.
+
+* Encourage your students and get their energy levels up! Today is the day they begin to learn hard skills (case study, terminal, git)!  
 
 ---
 
