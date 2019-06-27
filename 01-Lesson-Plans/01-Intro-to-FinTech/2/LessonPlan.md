@@ -44,7 +44,7 @@ Perform the following:
 
 ### 2. Instructor Do: Evolution of Fintech (15 mins)
 
-In this activity, students will be given a detailed view into the historical progression of the FinTech space; students will learn from where FinTech has come and where it is now.
+In this activity, students will be given a detailed view into the historical progression of the FinTech space; students will learn from where FinTech has come and the potential reasons for how it came to be.
 
 **File:** [slideshow-placeholder]()
 
@@ -86,11 +86,21 @@ Ask the students if they have any questions before moving on.
 
 ### 3. Instructor Do: Facilitated Discussions to FinTech Domains (10 mins)
 
-* Welcome to the first full day of class! As students are just getting in, we'll start off with an easy discussion. 
+In this activity, the instructor will ease students into not just thinking about where FinTech has been, but more so where it is now and where it's going in the future.  
 
-* Give the class a few minutes to ponder about the question: what financial technology do you think will have the most impact in 10 years, and why? 
+Ask the students the following questions:
 
-* Do give students a chance to dream big, but try not to overshoot the time mark with discussion.
+* What are some potential areas in finance where technology has disrupted traditional finance activities?
+
+  * **Answer:** Blockchain and financial transactions; robo advisors and investment management; and payment applications and money transfers are one of many possible answers.
+
+* How did these technologies allow for the disruption of traditional finance?
+
+  * **Answer:** Blockchain allows for cheaper and more secure transactional validation; robo advisors utilize machine learning algorithms for portfolio management, thereby reducing overhead costs; and payment applications utilize modern infrastructure such as mobile and cloud-based networking. 
+
+* How might cloud-based networking, especially, contribute to the advent of start-ups and technological innovators?
+
+  * **Answer:** Traditionally, hosting servers meant purchasing on-premise server farms with large up-front costs and regular maintenance, which was a barrier for entry for small startups. However, with cloud-based networking such as AWS, small startups and even individuals could quickly spin up servers faster and on an as needed basis, thereby minimizing time to deployment and reducing up-front costs -- allowing small startups to compete more efficiently with larger firms with existing infrastructures. 
 
 ---
 
