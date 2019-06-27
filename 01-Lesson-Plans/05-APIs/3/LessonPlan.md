@@ -866,7 +866,7 @@ Open the solution and explain the following:
 
 Is this the end, or is it just another iteration of a simulation? It's actually the end! Welcome to today's finish line.
 
-The content in this lesson is probably the most difficult material students have digested so far. Students were required to whip out every FinTech weapon they've learned so far. This lesson was involved, including portfolio optimization (calculation of returns, standard deviation, risk, etc.) and portfolio forecasting (Monte Carlo, probability distributions, confidence trajectories, and forecasting).
+The content in this lesson is probably the most difficult material students have digested so far. Students were required to whip out every FinTech skill and asset they've learned. This lesson was involved, including portfolio optimization (calculation of returns, standard deviation, risk, etc.) and portfolio forecasting (Monte Carlo, probability distributions, confidence trajectories, and forecasting). And this doesn't even include the Python/Pandas skills they had to leverage!
 
 Make sure students can recognize and acknowledge their accomplishments. Communicate that
 
@@ -878,7 +878,7 @@ Make sure students can recognize and acknowledge their accomplishments. Communic
 
 * They've **forecasted** average daily return volatility at the stock and portfolio level.
 
-* They've gauged the risk of investing in a stock overtime by predicting the **probability** of stock prices rising or falling.
+* They've assessed the risk of investing in a stock by predicting the **probability** of stock prices rising or falling over time.
 
 * They've put the **Fin** in **FinTech**, and they're just getting started!
 
