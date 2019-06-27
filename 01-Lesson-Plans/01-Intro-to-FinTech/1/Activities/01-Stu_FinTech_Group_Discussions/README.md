@@ -1,4 +1,4 @@
-## FinTech Group Discussions
+## FinTech and Me
 
 Time to stretch your legs! So far the day has all been about course introductions and lectures. Now it's time for you and your group to answer the question, what does *FinTech* mean to you?
 

@@ -164,23 +164,13 @@ Present to the class the following questions and answers:
 
 ---
 
-### 8. Student Do: Discuss Definitions of Fintech (25 mins)
+### 8. Student Do: FinTech and Me (25 mins)
 
-In this activity, students now get a chance to take some time and break off into groups to discuss amongst themselves what FinTech means to them.
+In this activity, students now get a chance to take some time and break off into groups of `3-4` to discuss amongst themselves what FinTech means to them.
 
-**File:** [README.md]()
+**File:** [README.md](01-Stu_FinTech_Group_Discussions/README.md)
 
-* Students are all here for a course on fintech, but may not have clarity on what exactly that is.
-
-* Slack out (or simply speak the following assignment):
-
-```md
-- You're all here for a course on fintech, but what exactly _is_ fintech?
-
-- Take the next few minutes to discuss with those around you about what you think fintech both _is_ and _isn't_.
-```
-
-### 9. Instructor Do: Review Group discussion (10 mins)
+### 9. Instructor Do: Review FinTech and Me (10 mins)
 
 * After taking a few responses, bring up the next slide.
 
