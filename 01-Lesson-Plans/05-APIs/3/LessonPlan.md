@@ -13,12 +13,19 @@ In particular, stocks prices also tend to move somewhat randomly in such a way t
 By the end of class, students will be able to:
 
 * Define what a simulation is and why it's used.
+
 * Deconstruct the components of the Monte Carlo Simulation process: probability distributions and iterations.
+
 * Interpret probability distributions (normal/bell curve) and random number generators.
+
 * Comprehend the use of confidence intervals and what they suggest.
+
 * Implement a single Monte Carlo simulation on the future price trajectory of a stock.
+
 * Execute multiple Monte Carlo simulations on the future price trajectories of a stock.
+
 * Break down Portfolio Forecasting in the context of Monte Carlo Simulations on stock price trajectories and portfolio returns.
+
 * Implement multiple Monte Carlo simulations on the potential returns of a stock portfolio.
 
 ### Instructor Notes
@@ -241,6 +248,12 @@ Walk through the solution and highlight the following:
 
 In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of free throws made (out of 10 shots) for a player with a `70%` accuracy and determine the likelihood of the player making `9-10` free throws in a single session.
 
+Circulate with TAs during this activity to provide students with assistance. Below are a couple scenarios to watch out for.
+
+* Students might face difficulty working with the histograms. Histogram **bins** have a default value, and so if the **bins** are not configured properly, the charts might not look as expected (the **bin** edges will be off) and the ranges may deviate from what is being simulated.
+
+* Also keep an eye out for any student issues related to missing data; if heads or tails data is missing, this is most likely because 0 was not appended for the missing values. This could visually result in one side of the distribution being cut off (i.e. non-normal distribution with no values for the first coin flip).
+
 **Instructions:**
 
 * [README.md](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes/README.md)
@@ -368,7 +381,7 @@ In this activity, students execute a Monte Carlo simulation to analyze the proba
 
 * [archery_target_hits.ipynb](Activities/04-Stu_Confidence_Intervals/Unsolved/archery_target_hits.ipynb)
 
-### 8. Instructor Do: Review Free Throw Simulation (5 mins)
+### 8. Instructor Do: Review Archery Target Hits (5 mins)
 
 **Files:**
 
@@ -849,19 +862,47 @@ Open the solution and explain the following:
 
 ---
 
-### 20. Instructor Do: Structured Office Hours (25 mins)
+### 20. Recap (25 mins)
 
-Please use the entire office hours time to review questions with the students.
+Is this the end, or is it just another iteration of a simulation? It's actually the end! Welcome to today's finish line.
 
-Suggested Format:
+The content in this lesson is probably the most difficult material students have digested so far. Students were required to whip out every FinTech weapon they've learned so far. This lesson was involved, including portfolio optimization (calculation of returns, standard deviation, risk, etc.) and portfolio forecasting (Monte Carlo, probability distributions, confidence trajectories, and forecasting).
 
-* Ask students for specific activities to revisit.
+Make sure students can recognize and acknowledge their accomplishments. Communicate that
 
-* Revisit key activities for the homework.
+* They've added another tool to their API/SDK tool belt: the **IEX SDK**, which is a great resource for historical stock data and financial functions.
 
-* Allow students to start the homework with extra TA support.
+* They've taken yet another deep dive into statistics, learning how to create, calculate, and interpret **probability distributions**. This includes using **mean**, **standard deviation**, **daily returns**, Numpy's **random** data generators, and **histograms** in order to implement and visualize portfolio simulations.
 
-Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
+* They've plotted the price trajectory of a stock prices and returns using single and multiple **Monte Carlo simulations**.
+
+* They've **forecasted** average daily return volatility at the stock and portfolio level.
+
+* They've gauged the risk of investing in a stock overtime by predicting the **probability** of stock prices rising or falling.
+
+* They've put the **Fin** in **FinTech**, and they're just getting started!
+
+Give students a space to emotionally release. Use this activity as a way to gauge student confidence, frustration, and stress levels.
+
+* Ask students to summarize how they're feeling with a one-word emotion. Ask for volunteers first. If no one volunteers, initiate the activity by using one word to convey how you're feeling, and then go round-robin. Gauge students for verbal and non-verbal cues of stress and confusion (i.e. withdrawal from the activity and/or isolation, irritability or impatience, chronic worrying, pessimistic attitude, and restlessness).
+
+  **Answer** Relieved
+
+  **Answer** Excited
+
+  **Answer** Confused
+
+  **Answer** Empowered
+
+  **Answer** Stressed
+
+  **Answer** Doubtful
+
+* Indicate to students that no matter what they're feeling, either excited and empowered or stressed and doubtful, they've come a long way. Also underscore that they're not alone in their feelings or the journey. Portfolio simulations are no joke, and results can easily be misinterpreted or corrupted, which is why the best of the best are the ones executing simulations.
+
+* Emphasize that students can reach out individually or attend office hours to ask questions, discuss the activities in the lesson, or just release emotionally.
+
+Use the remaining time to get a head start on office hours. Allow students to ask questions about this lesson, the overall unit, and/or the homework.
 
 ### End Class
 
