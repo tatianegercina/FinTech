@@ -156,11 +156,11 @@ Present to the class the following questions and answers:
 
   * Why has FinTech become prevalent/important?
 
-    * Traditionally the finance realm tends to be slow moving in regards to technology as they lean toward the operational mantra of "if it ain't broke don't fix it, especially when it comes to people's money". However, rapid advancements in technology have bolstered the ability for smaller companies to innovate and disrupt many traditional financial domains. Thus, larger and traditional finance firms have been forced to compete and upgrade their own technologies, thereby creating technological demand and a need for skilled technical workers.
+    * **Answer:** Traditionally the finance realm tends to be slow moving in regards to technology as they lean toward the operational mantra of "if it ain't broke don't fix it, especially when it comes to people's money". However, rapid advancements in technology have bolstered the ability for smaller companies to innovate and disrupt many traditional financial domains. Thus, larger and traditional finance firms have been forced to compete and upgrade their own technologies, thereby creating technological demand and a need for skilled technical workers.
 
   * What kind of careers are to be expected in FinTech?
 
-    * Because FinTech is just the implementation of technology within the financial domain, FinTech careers are largely similar to that of the IT industry. It's quite common to see general data analyst, data/software engineer, and data scientist roles; however, these roles may be more specifically named as quantitative analysts/traders or portfolio analysts, for example.
+    * **Answer:** Because FinTech is just the implementation of technology within the financial domain, FinTech careers are largely similar to that of the IT industry. It's quite common to see general data analyst, data/software engineer, and data scientist roles; however, these roles may be more specifically named as quantitative analysts/traders or portfolio analysts, for example.
 
 ---
 
