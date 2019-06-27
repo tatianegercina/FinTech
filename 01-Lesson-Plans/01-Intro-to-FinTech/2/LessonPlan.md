@@ -102,6 +102,10 @@ Ask the students the following questions:
 
   * **Answer:** Traditionally, hosting servers meant purchasing on-premise server farms with large up-front costs and regular maintenance, which was a barrier for entry for small startups. However, with cloud-based networking such as AWS, small startups and even individuals could quickly spin up servers faster and on an as needed basis, thereby minimizing time to deployment and reducing up-front costs -- allowing small startups to compete more efficiently with larger firms with existing infrastructures. 
 
+* Where else might technology disrupt traditional finance?
+
+  * **Answer:** Machine learning can be used in lending to more efficiently target customers who have a higher likelihood of paying back their loans while avoiding those who have a higher likelihood of *not* paying back their loans.
+
 ---
 
 ### 4. Instructor Do: Fintech Trends/Domains (15 mins)
