@@ -50,7 +50,7 @@ In this activity, students will be given a detailed view into the historical pro
 
 Walk through the slideshow while presenting the potential historical factors leading to today's FinTech boom:
 
-* The Dot-com bubble: The run-up to the early 2000's dot-com bubble can be characterized as having three main features that are helpful to understanding today's environement:
+* `The Dot-Com Bubble`: The run-up to the early 2000's dot-com bubble can be characterized as having three main features that are helpful to understanding today's environement:
 
   * Lots of free-flowing capital: Speaks for itsself. Investors were throwing money around due to a reduction in the capital gains tax (Taxpayer Relief Act of 1997)
 
@@ -60,11 +60,11 @@ Walk through the slideshow while presenting the potential historical factors lea
 
   * When the dust cleared, some of the brands you recognize today had weathered the storm: Paypal, 
 
-* The Great Recession: In the following years, tech companies - especially web comapnies - began to grow in size as the economy recovered. However, 2007 as you may well know marked the beginnings of the Great Recession due to the collapsing real estate bubble. 
+* `The Great Recession`: In the following years, tech companies - especially web comapnies - began to grow in size as the economy recovered. However, 2007 as you may well know marked the beginnings of the Great Recession due to the collapsing real estate bubble. 
 
-* The Rise of Mobile Phones: 2007 also marked the launching of what is unequivocally one of the most influential advancements in recent history: the modern smartphone. Specifically the iPhone in 2007, with the first Android later the following year. Smartphones severely incerased the demand for talented programmers in both mobile and web development. They also changed our ability to _access_ information in quickly. Companies found themselves needing apps not because they wanted to be trendy, but because their clients would not interface with their products and services without the ability to do so while not at a computer. In some foreign markets, there are more people with smartphones than laptops, tablets, and desktops; meaning that if a service isn't available on an app, the service doesn't exist in the user's world.
+* `The Rise of Mobile Phones`: 2007 also marked the launching of what is unequivocally one of the most influential advancements in recent history: the modern smartphone. Specifically the iPhone in 2007, with the first Android later the following year. Smartphones severely incerased the demand for talented programmers in both mobile and web development. They also changed our ability to _access_ information in quickly. Companies found themselves needing apps not because they wanted to be trendy, but because their clients would not interface with their products and services without the ability to do so while not at a computer. In some foreign markets, there are more people with smartphones than laptops, tablets, and desktops; meaning that if a service isn't available on an app, the service doesn't exist in the user's world.
 
-* Millenials: The aughts and early teens additionally saw the generation known as millenials coming of age as income-earners and investors. Millenials already outnumber any other population group, and that proportion relative to baby boomers and generation x over time. In fact, they are projected to outnumber any other population group for quite a few decades to come. This means that understanding the needs and feelings of this highly diverse market sector will be important to companies that want to stay relevant. A few very important things characterize this generational group:
+* `Millenials`: The aughts and early teens additionally saw the generation known as millenials coming of age as income-earners and investors. Millenials already outnumber any other population group, and that proportion relative to baby boomers and generation x over time. In fact, they are projected to outnumber any other population group for quite a few decades to come. This means that understanding the needs and feelings of this highly diverse market sector will be important to companies that want to stay relevant. A few very important things characterize this generational group:
 
   * They have grown up with technology and thus demand internet-connected, user-friendly experiences
 
@@ -74,7 +74,7 @@ Walk through the slideshow while presenting the potential historical factors lea
 
   * They are less likely to own homes than previous generations, and tend to marry later in life
 
-* The Rise of the Data Overlords: Beyond the recession, there has been a proliferation in the number of entities utilizing data in increasingly interesting ways. As companies continue to grow and seek additional methods to mitigate risk in pursuit of profit, increasing data sources and analytics tools offer a way forward.
+* `The Rise of the Data Overlords`: Beyond the recession, there has been a proliferation in the number of entities utilizing data in increasingly interesting ways. As companies continue to grow and seek additional methods to mitigate risk in pursuit of profit, increasing data sources and analytics tools offer a way forward.
 
   * As prices for more powerful processors and memory continue to decrease, it has become increasingly feasible to carry out the massive number of calculations required to accomplish machine learning (ML).
 
