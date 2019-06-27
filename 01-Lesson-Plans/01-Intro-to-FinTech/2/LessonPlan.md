@@ -52,15 +52,13 @@ Walk through the slideshow while presenting the potential historical factors lea
 
 * `The Dot-Com Bubble`: The run-up to the early 2000's dot-com bubble can be characterized as having three main features that are helpful to understanding today's environement:
 
-  * Lots of free-flowing capital: Speaks for itsself. Investors were throwing money around due to a reduction in the capital gains tax (Taxpayer Relief Act of 1997)
+  * Investors were throwing money around due to a reduction in the capital gains tax (Taxpayer Relief Act of 1997) and therefore had lots of free-flowing capital.
 
-  * Rise in tech talent: The bubble in capital also had the effect of freeing up many talented developers when companies went through the process of dissolution.
+  * There was a rise in tech talent as the bubble in capital also had the effect of freeing up many talented developers when companies went through the process of dissolution.
 
-  * Lack of regulation of tech: the rise of services like Napster and LimeWire proved that technology was finally getting to the point that it _far_ outpaced regulatory agencies' ability to understand what they were and how to fairly regulate them.
+  * There was a lack of regulation of tech as the rise of services like Napster and LimeWire proved that technology was finally getting to the point that it _far_ outpaced regulatory agencies' ability to understand what they were and how to fairly regulate them.
 
-  * When the dust cleared, some of the brands you recognize today had weathered the storm: Paypal, 
-
-* `The Great Recession`: In the following years, tech companies - especially web comapnies - began to grow in size as the economy recovered. However, 2007 as you may well know marked the beginnings of the Great Recession due to the collapsing real estate bubble. 
+* `The Great Recession`: In the following years, tech companies - especially web comapnies - began to grow in size as the economy recovered. However, 2007 as you may well know, marked the beginnings of the Great Recession due to the collapsing real estate bubble. 
 
 * `The Rise of Mobile Phones`: 2007 also marked the launching of what is unequivocally one of the most influential advancements in recent history: the modern smartphone. Specifically the iPhone in 2007, with the first Android later the following year. Smartphones severely incerased the demand for talented programmers in both mobile and web development. They also changed our ability to _access_ information in quickly. Companies found themselves needing apps not because they wanted to be trendy, but because their clients would not interface with their products and services without the ability to do so while not at a computer. In some foreign markets, there are more people with smartphones than laptops, tablets, and desktops; meaning that if a service isn't available on an app, the service doesn't exist in the user's world.
 
@@ -81,6 +79,8 @@ Walk through the slideshow while presenting the potential historical factors lea
   * The use of machine learning and artificial intelligence - although often misunderstood by the general public as well as many investors - promises to find trends and strategies that humans would be otherwise incapable of finding
 
   * Many of the developers from the two last bust cycles are finding new roles in the new startup climate.
+
+Ask the students if they have any questions before moving on.
 
 ---
 
