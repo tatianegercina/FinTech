@@ -44,12 +44,11 @@ Perform the following:
 
 ### 2. Instructor Do: Evolution of Fintech (15 mins)
 
-* After welcoming students to class, we're going to dive head-first into a brief history of fintech, and how it has become increasingly relevant of late.
+In this activity, students will be given a detailed view into the historical progression of the FinTech space; students will learn from where FinTech has come and where it is now.
 
-* Remind students that although technology in finance isn't new, for the scope of this class we're focused on the more recent developments in history.
+**File:** [slideshow-placeholder]()
 
-
-
+Walk through the slideshow while presenting the following historical talking points:
 
 * Dot-com bubble: The run-up to the early 2000's dot-com bubble can be characterized as having three main features that are helpful to understanding today's environement:
 
