@@ -190,9 +190,13 @@ Now that students have had an opportunity to perform their own research on the v
 
 ---
 
-### 8. Instructor do: Payments Case Study - Stripe (10 mins)
+### 8. Instructor Do: Stripe Payments Case Study (10 mins)
 
-* As students are coming back from break, let them know that we're going to deep-dive into a case study as an example of what we'd like to see in their final report for the homework this week.
+In this activity, students will be instructed on how to create a FinTech case study -- a compilation of holistic research performed on a FinTech company or technology. This activity is particularly important as it will serve as the knowledge foundation for students completing their FinTech case studies for the unit `1` homework.   
+
+**File:** [slideshow-placeholder]()
+
+Open the slideshow while walking through the following:
 
 * For this case study, we have decided to cover the payment processing known as Stripe, Inc. Not only does it allow us to discuss the ubiquitous world of online payments, Stripe is also an examplar of how a company can generate significant profits by lowing barriers of entry for other businesses.
 
@@ -210,7 +214,11 @@ Now that students have had an opportunity to perform their own research on the v
 
 ---
 
-### 9. Student Do: Payments Case Study - Stripe (20 mins)
+### 9. Student Do: FinTech Payments Case Study (20 mins)
+
+In this activity, students will pair off into groups of `3-4` individuals once again to create a case study on a particular FinTech payments technology.
+
+**File:** [README.md](02-Stu_FinTech_Case_Study/README.md)
 
 * Now it's the students' turn! they should spend the next 30-40 minutes researching case studies in the field and discovering what areas they may want to explore during their homework case studies. 
 
@@ -253,7 +261,7 @@ Now that students have had an opportunity to perform their own research on the v
 
   * For those uncomfortable about the idea of presenting, challenge yourself to treat this as a safe place. Becoming a confident speaker is an important part of being a fintech consultant that people can trust.
 
-### 10. Review Payments Case Study - Stripe (10 mins)
+### 10. Stripe Payments Case Study (10 mins)
 
 ---
 
