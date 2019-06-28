@@ -108,13 +108,13 @@ Ask the students the following questions:
 
 ---
 
-### 4. Instructor Do: Fintech Trends/Domains (15 mins)
+### 4. Instructor Do: Fintech Domains and Trends (15 mins)
 
 In this activity, students will deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation. 
 
 **File:** [slideshow-placeholder]()
 
-Open the slideshow and walkthrough the following FinTech domains:
+Open the slideshow and walk through the following FinTech domains:
 
 * Payments
 
@@ -158,37 +158,23 @@ Open the slideshow and walkthrough the following FinTech domains:
     
   * Examples: CapitalOne, Ally
     
-* Many, many more! (Finance is a very broad field and technology continues to change how it looks!)
+Then, overview the following overarching trends that appear across all domains of FinTech:
 
-* Now that we've covered the major domains of fintech, we will next dive into currently growing trends in the across all of the fields:
+  * `Mobile accessibility is a must`: The rise of smartphones has made it a requirement that any new technology be accessible through a mobile site or app
 
-* Mobile accessibility is a must: The rise of smartphones has made it a requirement that any new technology be accessible through a mobile site or app
+  * `Use of machine learning and/or AI`: With the advent of more powerful processors and cheaper memory, the applications of machine learning have enabled even faster calculations and more accurate predictions than ever berfore.  
 
-* Use of machine learning and/or AI: With the advent of more powerful processors and cheaper memory, the applications of machine learning have enabled even faster calculations and more accurate predictions than ever berfore.  
+  * `Fintech as a social good`: A few of the big players such as Kiva and Lemonade are building companies that not only make profit, but also promote or fund nonprofits
 
-* Fintech as a social good: A few of the big players such as Kiva and Lemonade are building companies that not only make profit, but also promote or fund nonprofits
-
-* Banks have skin in the game: Although many would like to paint the picture that banks are completely ignorant of the rise of fintech, it couldn't be further than the truth. Many of the largest banks are internally funding a multitude of fintech projects in order to stay ahead of the curve!
+  * `Banks have skin in the game`: Although many would like to paint the picture that banks are completely ignorant of the rise of fintech, it couldn't be further than the truth. Many of the largest banks are internally funding a multitude of fintech projects in order to stay ahead of the curve!
 
 ---
 
-### 5. Student Do: Investigate FinTech Trends/Domains (20 mins)
+### 5. Student Do: Investigate FinTech Domains (20 mins)
 
-* We have now given students examples of both the major domains within fintech as well as ongoing trends in the field. Now it is their turn to do some research and discuss amongst their groups about what they've learned.
+By this point, students have been given examples of both the major domains within FinTech as well as the overarching trends across the industry. Now, students will pair off into groups of `3-4` individuals and conduct some research of the various FinTech domains on their own.
 
-* Give students the following instructions:
-
-```
-    You've just learned what the major domains and trends in fintech are, and now it's your turn to begin investigating and discussing some of the areas we've just covered. 
-
-    What areas are you most interested in, and why?
-
-    What areas are those around you most interested in?
-
-    Were there any domains that we left out? (Hint: e.g. RegTech) If so, what are some other domains of note?
-
-    Be prepared for a light class discussion!
-```
+**File:** [README.md](01-Stu_FinTech_Domains/README.md)
 
 ### 6. Instructor Do: Review Investigate FinTech Trends/Domains (10 mins)
 
