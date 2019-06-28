@@ -54,27 +54,7 @@ Be sure to set the pace for the class. Encourage students to attend office hours
 
 - - -
 
-### 1. Instructor Do: Review Homework (5 mins)
-
-**Files:**
-
-* [README.md](../../../02-Homework/05-APIs/Instructions/README.md)
-
-The APIs unit focuses on getting students thinking about different ways to leverage APIs to analyze financial data and create FinTech applications for everyday needs such as budget analysis and retirement planning.
-
-Walk through the homework instructions, and highlight the following:
-
-* The first component of the homework is focused on Budget Analysis. Students will use an API called **PLAID** to analyze personal financial data. **PLAID** can be used to securely access any type of banking, credit, or investment account, which opens doors to new services to customers that are not typically available without **PLAID**. The greatest thing about it is that you can confidently use **PLAID** knowing you can integrate it with other technologies and apps without security being compromised; **PLAID** handles the security and provisions access to personal financial accounts.
-
-* With financial data available and accessible via **PLAID**, students will transition to using the financial data retrieved via **PLAID** to forecast financial goals. This section uses a monte carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution will be sufficient to cover their future income.
-
-* Lastly, students will analyze the output of the retirement planner activity and summarize assumptions and findings in a markdown file. This file will need to be uploaded to the Github repository.
-
-Ask the students if there are any questions related to the homework.
-
-- - -
-
-### 2. Instructor Do: Welcome (5 mins)
+### 1. Instructor Do: Welcome (5 mins)
 
 Welcome the students to the first day of APIs. This lesson will require students to leverage various FinTech APIs (i.e. Quandl) to accelerate their financial analytic pipelines, as well as get access to data they otherwise would not have access to. Students will continue employing skills learned from weeks two and three, such as data cleaning, working with DataFrames, and visualizing data.
 
@@ -132,7 +112,7 @@ Finish the demo of Quandl with the following reflective question:
 
   **Answer** Quandl would be the best tool to use to automate extraction of historical stock data. It would be easier than automating the NASDAQ.com process.
 
-If time remains, communicate to students that if they wanted to automate the NASDAQ process, they could use the really cool[WrapAPI](https://wrapapi.com/). Open the site and show students the Yelp gifs.
+If time remains, communicate to students that if they wanted to automate the NASDAQ process, they could use the really cool[WrapAPI](https://wrapapi.com/). Open the site and show students the Yelp GIFs.
 
 * Explain that the **WrapAPI** provides a functionality that allows users to record a series of actions on a website and automate them. This includes actions like signing into Facebook, as well as extracting data from NASDAQ.com. It can also scrape data from a website!
 
@@ -147,6 +127,26 @@ If time remains, communicate to students that if they wanted to automate the NAS
 * The **WrapAPI** could actually be used to submit Quandl API requests via a web browser as well. **WrapAPI** could automate the process of copying and pasting the request URL into the browser.
 
 Before ending this activity, let students know that this is just the beginning in terms of available APIs for use. Ask if there are any questions prior to moving onto the next activity.
+
+### 2. Instructor Do: Review Homework (5 mins)
+
+Students will receive a demo of the homework from the instructor.
+
+**Files:**
+
+* [README.md](../../../02-Homework/05-APIs/Instructions/README.md)
+
+Explain to student's that this unit's homework focuses on exposing them to some of the most valuable and cataclysmic APIs in FinTech. They homework tasks students with creating Python applications that integrate multiple APIs in order to create innovative and powerful FinTech solutions.
+
+Walk through the homework instructions, and highlight the following:
+
+* The first component of the homework is focused on Budget Analysis. Students will use an API called **PLAID** to analyze personal financial data. **PLAID** can be used to securely access any type of banking, credit, or investment account, which opens doors to new services to customers that are not typically available without **PLAID**. The greatest thing about it is that you can confidently use **PLAID** knowing you can integrate it with other technologies and apps without security being compromised; **PLAID** handles the security and provisions access to personal financial accounts.
+
+* With financial data available and accessible via **PLAID**, students will transition to using the financial data retrieved via **PLAID** to forecast financial goals. This section uses a monte carlo simulation to predict retirement portfolio performance to determine if a customer's initial retirement contribution will be sufficient to cover their future income.
+
+* Lastly, students will analyze the output of the retirement planner activity and summarize assumptions and findings in a markdown file. This file will need to be uploaded to the Github repository.
+
+Ask the students if there are any questions related to the homework.
 
 - - -
 
