@@ -176,11 +176,13 @@ By this point, students have been given examples of both the major domains withi
 
 **File:** [README.md](01-Stu_FinTech_Domains/README.md)
 
-### 6. Instructor Do: Review Investigate FinTech Trends/Domains (10 mins)
+### 6. Instructor Do: Review Investigate FinTech Domains (10 mins)
 
-* Now that students have had an opportunity to research the domains in fintech, it is time to facilitate another conversation about some of the information they have found
+Now that students have had an opportunity to perform their own research on the various domains in FinTech, it's time to facilitate a discussion amongst the class on each group's findings.
 
-* Pick a few groups, and have them share what they've discovered about any additional domains they may have found, and then ask a few others what they're excited for.
+* Have each group present their findings to the class one-by-one until all groups have presented.
+
+* Presentations should be quick, approximately `1-2` minutes.
 
 ---
 
