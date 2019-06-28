@@ -216,140 +216,127 @@ Open the slideshow while walking through the following:
 
 ### 9. Student Do: FinTech Payments Case Study (20 mins)
 
-In this activity, students will pair off into groups of `3-4` individuals once again to create a case study on a particular FinTech payments technology.
+In this activity, students will pair off into groups of `3-4` individuals once again to create a case study on a particular FinTech payments technology that rivals Stripe.
 
 **File:** [README.md](02-Stu_FinTech_Case_Study/README.md)
 
-* Now it's the students' turn! they should spend the next 30-40 minutes researching case studies in the field and discovering what areas they may want to explore during their homework case studies. 
+### 10. Instructor Do: Review FinTech Payments Case Study (10 mins)
 
-* Break students into groups of 3-4, and assign them companies and technologies from the list below to investigate:
+In this activity, students will present their case study findings to the class.
 
-    - Stripe
-    - Plaid
-    - Android Pay
-    - Apple Pay
-    - Square
-    - Braintree
+Before proceeding with presentations, mention the following:
 
-* Emphasize that the secondary goal of this activity is to hone students' communication and presentation skills. 
-  * Point out the importance of these soft skills in the fintech career space and give specific examples in your own careers where you've had to utilize them. 
-  
-* Point out other things students should be aware of as they gather research and put together their presentations. Namely: 
-  * Think about the audience; i.e. fellow students like themselves who are new to the fintech space. As such, they should communicate in language that's easy to understand and avoid using too many esoteric terms. In cases, where specific terms are necesary, make sure that they are defined. 
-  * Think about slide design. Good slides are not "busy" slides, and as such are not overloaded with text or too many images. Students should be cognizant of what is relevant to their slides vs. what is content that they will verbalize.
-  
-* Also point out that each person in the group is expected to speak during the presentation. Emphasize the importance of public speaking, and let students know that there will be more opportunities throughout the course for them to present on various fintech topics. 
+* The secondary goal of this activity was to hone students' communication and presentation skills. Point out the importance of these soft skills in the FinTech career space and give specific examples in your own careers where they've applied. 
+    
+* Make sure to think about the audience in both oral as well as written presentations. Fellow students like themselves who are new to the FinTech space will require language that is communicated in such a way that avoids using too many esoteric terms and instead provides clear easy to understand content.
 
-* Below are links to previous fintech presentations. Feel free to use them to point what's working in the presentation and what's not: 
-  * None yet!
-  
-* Send students the following instructions over Slack. 
+* Each person in the group is expected to speak during the presentation. Emphasize the importance of public speaking, and let students know that there will be more opportunities throughout the course for them to present on various fintech topics. 
 
-* **Instructions:**
-
-  * Working in groups of three or four, you will be assigned a fintech company or technology. Your task is to: Prepare a 5 minute presentation that provides an overview of the topic.
-
-  * You should focus on answering the following questions...
-
-    * What is or was the technology or company?
-    * What market inefficiency does it hope to exploit or improve?
-    * What impact has the technology had on its sector or the field of finance in general?
-
-* **Notes:**
-
-  * While you may be new to the field challenge yourself to “become the expert.” A huge part of being a professional is getting up to speed quickly on technical situations using research.
-
-  * For those uncomfortable about the idea of presenting, challenge yourself to treat this as a safe place. Becoming a confident speaker is an important part of being a fintech consultant that people can trust.
-
-### 10. Stripe Payments Case Study (10 mins)
+Then, allow groups `1-2` minutes to quickly present their findings.
 
 ---
 
-### 11. Instructor Do: Anaconda Terminal (10 mins)
+### 11. Instructor Do: Terminal (0:10)
 
-* **Files:**
+* Explain that all of the Python code will be executed through either git-bash or the Mac terminal. Windows users should always use `git-bash` while Mac users should use the terminal.
 
-  * [solution.py](Activities/01-Ins_Anaconda_Termianl/Solved/solution.py)
+* Open up the terminal or git-bash and walk through the following commands:
 
-* Now that Anaconda and JupyterLab are up and running, it's time to provide the students with instruction on how to navigate the file system using the terminal, as well as execute common file system commands.
+  * `cd` (Changes the directory).
 
-* Provide a brief lecture on termianls. Explain the following:
-    * What terminals are
+  * `cd ~` (Changes to the home directory).
 
-    * What termianls are used for
+  * `cd ..` (Moves up one directory).
 
-    * The relationship between terminals and Windows Explorer/Mac Finder
+  * `ls` (Lists files in the folder).
 
-    * Why developers use terminals over Windows Explorer/Finder
+  * `pwd` (Shows the current directory).
 
-    * What terminal commands are (programs)
+  * `mkdir <FOLDERNAME>` (Creates a new directory with the FOLDERNAME).
 
-    * Cons of using a terminal
+  * `touch <FILENAME>` (Creates a new file with the FILENAME).
 
-* Reinforce to students that the goal of the class is not to learn advanced use of terminals but to learn how to use the terminal to navigate the file system and create file system objects.
+  * `rm <FILENAME>` (Deletes a file).
 
-* Discuss with students the importance of downloading and installing updates prior to using a terminal. Communicate that this allows for the most recent stable versions of packages/libraries to be delivered locally for development purposes.
+  * `rm -r <FOLDERNAME>` (Deletes a folder, make sure to note the -r).
 
-* Walk through the solution and demo the following:
+  * `open .` (Opens the current folder on Macs).
 
-    * How to open the Anaconda Terminal
+  * `explorer .` (Opens the current folder on GitBash).
 
-        * Via start menu
+  * `open <FILENAME>` (Opens a specific file on Macs).
 
-        * Via terminal
+  * `explorer <FILENAME>` (Opens a specific file on GitBash).
 
-    * How to open the Mac Finder
+  ![Terminal Example](Images/TerminalExample.png).
 
-    * How to open the Windows Explorer
+* Slack out [CommonCommands.txt](Activities/01-Ins_Terminal/Solved/CommonCommands.txt) for students to use as a reference. Answer any questions up until this point.
 
-    * How to identify the version of an application
+* This is basic terminal navigation, from here show how students can edit Python files and run in terminal.
 
-    * How to ensure the latest version of Anaconda and other packages are being used
+  * Create and navigate into a `PythonStuff` folder on the desktop.
 
-    * How to list files in the current directory
+  * Create and open `first_file.py` using the text editor.
 
-    * How to change directories
+  * Add `print("This is my first Python file")` and save the code.
 
-    * How to create a directory
+  * Return to the terminal and run the file using `python first_file.py`.
 
-    * How to create an empty file
+  * Explain that `python <FILENAME>.py` tells the computer that this is a python file and to run the code contained within.
 
-    * How to delete a file
+  * Repeat again with `second_file.py` using the code `print("This is my second python file")`.
 
-    * How to open a text file
+  ![Terminal Example](Images/02-Terminal_Example.png)
 
-    * How to output file contents to the screen
+### 12. Students Do: File System Operations (0:10)
 
-    * How to write to a file
+* Students will now dive into the terminal, create three folders, and a pair of Python files which will print some strings of their own creation to the console.
 
-    * How to clear the terminal screen
+* After answering whatever questions your students may have regarding the activity, slack out the instructions.
 
----
+* **Instructions**
 
-### 12. Student Do: Terminal (15 mins)
+* Follow along with these instructions in your terminal and write the commands below:
 
+  * Create a folder called `LearnPython`.
 
-### 13. Instructor Do: Review Anaconda Terminal (5 mins)
+  * Navigate into the folder.
 
-* **Files:**
+  * Inside `LearnPython` create another folder called `Assignment1`.
 
-  * [solution.js](Activities/02-Stu_AnacondaTerminal/Solved/solution.py)
+  * Inside `Assignment1` create a file called `quick_python.py`.
 
-* Open the solution and initiate a review discussion of the Anaconda terminal material. Quiz the students on the learned commands.
+  * Add a print statement to `quick_python.py`.
 
-  * What is a terminal?
+  * Run `quick_python.py`.
 
-  * Why do developers use terminals?
+  * Return to the `LearnPython` folder.
 
-  * What are common terminal commands?
+  * Inside `LearnPython` create another folder called `Assignment2`.
 
-  * How do you launch JupyterLab from the terminal?
+  * Inside `Assignment2` create a file called `quick_python2.py`.
 
-  * How do I check the version of installed software?
+  * Add a different print statement to `quick_python2.py`.
 
-* Ask the studenst about their experience completing the student activity. Inquire about their comfort level using the terminal. Ask whether or not they've developed a preference for using the terminal over  Windows Explorer/Mac Finder.
+  * Run `quick_python2.py`.
 
-* Ask for any additional/remaining questions before moving on.
+### 13. Instructor Do: Review File System Operations (0:05)
+
+* Open [TerminalGamesSolved.sh](Activities/02-Stu_TerminalTest/Solved/TerminalGamesSolved.sh) and work through the code in the solution in the terminal while also showing the results on the computer.
+
+* Key points to cover during the review of this activity:
+
+  * `mkdir` will make the directories.
+
+  * `cd` is changing into them.
+
+  * `touch` will create the file (it will be empty).
+
+  * To add lines of code to these files simply edit them within a text editor.
+
+  * Afterwards, using `python quick_python.py` will run the code.
+
+  * `cd ..` will bring the terminal back a to the `LearnPython` folder where the process can be repeated.
 
 ---
 
