@@ -86,7 +86,7 @@ Ask the students if they have any questions before moving on.
 
 ### 3. Instructor Do: Facilitated Discussions to FinTech Domains (10 mins)
 
-In this activity, the instructor will ease students into not just thinking about where FinTech has been, but more so where it is now and where it's going in the future.  
+In this activity, the instructor leads students into the discussion of the current state of the FinTech industry, specifically where in the financial industry technological innovation has brought upon a positive impact. 
 
 Ask the students the following questions:
 
