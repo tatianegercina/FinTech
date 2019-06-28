@@ -1,10 +1,10 @@
 # Investigate FinTech Domains
 
-You've just learned what the major domains and trends in fintech are, and now it's your turn to begin investigating and discussing some of the areas we've just covered.
+You've just learned what the major domains and trends in FinTech are, and now it's your turn to begin investigating and discussing some of the areas we've just covered.
 
 ## Instructions
 
-Look into the the following questions:
+Formulate groups of `3-4` individuals and research the following questions:
 
   * What areas are you most interested in, and why?
 
