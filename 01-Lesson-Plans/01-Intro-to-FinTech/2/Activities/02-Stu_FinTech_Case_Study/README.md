@@ -1,14 +1,28 @@
-* **Instructions:**
+# FinTech Payments Case Study
 
-  * Working in groups of three or four, you will be assigned a fintech company or technology. Your task is to: Prepare a 5 minute presentation that provides an overview of the topic.
+Now it's your turn to create and present a case study! Break off into groups of `3-4` individuals again and research one of the following competitors to Stripe in the Payments domain:
 
-  * You should focus on answering the following questions...
+ * Plaid
+ 
+ * Android Pay
+ 
+ * Apple Pay
+ 
+ * Square
+ 
+ * Braintree
 
-    * What is or was the technology or company?
-    * What market inefficiency does it hope to exploit or improve?
-    * What impact has the technology had on its sector or the field of finance in general?
+## Instructions
 
-* **Notes:**
+Research the following questions:
+
+  * What is or was the technology or company?
+  
+  * What market inefficiency does it hope to exploit or improve?
+  
+  * What impact has the technology had on its sector or the field of finance in general?
+
+## Hints
 
   * While you may be new to the field challenge yourself to “become the expert.” A huge part of being a professional is getting up to speed quickly on technical situations using research.
 
