@@ -290,21 +290,31 @@ In this activity, students will perform their own file system operations via the
 
 ### 13. Instructor Do: Review File System Operations (0:05)
 
-Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_operations.sh) and work through the solution in the terminal:
+Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points:
 
-* Key points to cover during the review of this activity:
+  * `mkdir` creates folder directories.
 
-  * `mkdir` will make the directories.
+  * `cd` navigates into specified folder directories.
 
-  * `cd` is changing into them.
+  * `vi` will initialize an empty file in the terminal editor.
 
-  * `touch` will create the file (it will be empty).
+    * `I` allows for inserting text.
 
-  * To add lines of code to these files simply edit them within a text editor.
+    * `ESC` escapes out of the text contents in the editor.
 
-  * Afterwards, using `python quick_python.py` will run the code.
+    * `wq!` saves the file and quits out of the editor.
 
-  * `cd ..` will bring the terminal back a to the `LearnPython` folder where the process can be repeated.
+  * `cat` reads files and outputs the results to the console.
+
+  * `cd ..` will navigate up one level.
+
+  * `cp` copies files from source to target.
+
+  * `rm -r` recursively deletes all files in a folder (that may have sub-folders).
+
+  * `mv` moves files from source to target. Can also be used to rename a file.
+
+  * `ls` lists the contents of the current directory.
 
 ---
 
