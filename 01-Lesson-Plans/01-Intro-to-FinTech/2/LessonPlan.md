@@ -286,7 +286,7 @@ Slack out [CommonCommands.txt](Activities/03-Ins_Terminal/Solved/CommonCommands.
 
 In this activity, students will perform their own file system operations via the terminal/command line. 
 
-**File:** [README.md](04-Stu_Terminal/README.md)
+**File:** [README.md](Activities/04-Stu_Terminal/README.md)
 
 ### 13. Instructor Do: Review File System Operations (0:05)
 
