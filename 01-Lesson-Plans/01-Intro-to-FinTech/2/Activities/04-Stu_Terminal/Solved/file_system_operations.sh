@@ -1,35 +1,38 @@
-# Follow the below instructions in your terminal and write the commands below.
+# This bash shell script performs the following file system operations.
 
-# Create a folder called LearnPython
-mkdir LearnPython
+# Navigate to your Desktop
+cd ~/Desktop
 
-# Navigate into the folder
-cd LearnPython
+# Create a folder called `Terminal-Test`.
+mkdir Terminal-Test
 
-# Inside LearnPython create another folder called Assignment1
-mkdir Assignment1
+# Navigate into the folder.
+cd Terminal-Test
 
-# Inside Assignment1 create a file called quick_python.py
-touch quick_python.py
+# Inside `Terminal-Test`, create two folders: `Folder_1` and `Folder_2`.
+mkdir Folder_1
+mkdir Folder_2
 
-# Add a print statement to quick_python.py
-# add print("This file works!") in a python file
+# Navigate into `Folder_1`.
+cd Folder_1
 
-# Run quick_python.py
-python quick_python.py
+# Create a file named `terminal.txt` and insert the text `First time for everything!`, save the file.
+vi terminal.txt
 
-# Return to the LearnPython folder
+# Read the file `terminal.txt` and output the results to the console.
+cat terminal.txt
+
+# Navigate back one level (to the root of the `Terminal-Test` folder).
 cd ..
 
-# Inside LearnPython create another folder called Assignment2
-mkdir Assignment2
+# Copy the file `terminal.txt` into `Folder_2`.
+cp Folder_1/terminal.txt Folder_2/
 
-# Inside Assignment2 create a file called quick_python2.py
-touch quick_python2.py
+# Delete the folder `Folder_1` and its contents.
+rm -r Folder_1
 
-# Add a different print statement to quick_python2.py
-# add print("This file also works!") in a python file
+# Rename the folder `Folder_2` to `Hello_World`.
+mv Folder_2 Hello_World
 
-# Run quick_python2.py
-python quick_python2.py
-
+# List the contents of the root of the `Terminal-Test` folder.
+ls
