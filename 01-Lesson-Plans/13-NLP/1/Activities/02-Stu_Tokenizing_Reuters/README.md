@@ -1,5 +1,7 @@
 # Tokenizing Reuters
 
+In this activity you will practice sentence and word tokenization on some articles from the Reuters corpus. 
+
 ## Instructions
 
 * Search the reuters corpus for articles under the category "cpi"
