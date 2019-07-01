@@ -18,10 +18,18 @@ Move into the newly created folder
 cd Homework
 ```
 
-Create a new file
+Create a new file via command line editor
 ```shell
-touch first_file.txt
+vi first_file.txt
 ```
+
+  `I` Insert
+
+  `ESC` Escape out of editor focus
+
+  `q!` Exit without saving
+
+  `wq!` Exit and save
 
 Open a file (Mac-only)
 ```shell

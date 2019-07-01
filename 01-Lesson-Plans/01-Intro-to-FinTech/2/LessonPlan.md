@@ -238,9 +238,9 @@ Then, allow groups `1-2` minutes to quickly present their findings.
 
 ### 11. Instructor Do: Terminal (0:10)
 
-* Explain that all of the Python code will be executed through either git-bash or the Mac terminal. Windows users should always use `git-bash` while Mac users should use the terminal.
+In this activity, students will learn the basics of using the terminal/command line to perform basic file system operations on their machines.
 
-* Open up the terminal or git-bash and walk through the following commands:
+Open up the terminal (Mac) or git-bash (Windows) and walk through the following commands:
 
   * `cd` (Changes the directory).
 
@@ -254,11 +254,19 @@ Then, allow groups `1-2` minutes to quickly present their findings.
 
   * `mkdir <FOLDERNAME>` (Creates a new directory with the FOLDERNAME).
 
-  * `touch <FILENAME>` (Creates a new file with the FILENAME).
+  * `vi <FILENAME>` (Creates a new file with the FILENAME and initializes the command line editor).
+
+    * `I` (Insert text)
+
+    * `ESC` (Escape out of editor focus)
+
+    * `q!` (Exit without saving)
+
+    * `wq!` (Exit and save)
 
   * `rm <FILENAME>` (Deletes a file).
 
-  * `rm -r <FOLDERNAME>` (Deletes a folder, make sure to note the -r).
+  * `rm -r <FOLDERNAME>` (Deletes a folder recursively, make sure to note the -r).
 
   * `open .` (Opens the current folder on Macs).
 
@@ -268,7 +276,11 @@ Then, allow groups `1-2` minutes to quickly present their findings.
 
   * `explorer <FILENAME>` (Opens a specific file on GitBash).
 
-  ![Terminal Example](Images/TerminalExample.png).
+  ![terminal-example](Images/terminal-example.png)
+
+  ![vi-insert](Images/vi-insert.png)
+
+  ![vi-save](Images/vi-save.png)
 
 * Slack out [CommonCommands.txt](Activities/01-Ins_Terminal/Solved/CommonCommands.txt) for students to use as a reference. Answer any questions up until this point.
 
