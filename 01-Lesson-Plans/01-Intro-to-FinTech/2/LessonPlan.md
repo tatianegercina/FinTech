@@ -280,13 +280,13 @@ Open up the terminal (Mac) or git-bash (Windows) and walk through the following 
 
   ![terminal-example](Images/terminal-example.png)
 
-Slack out [CommonCommands.txt](Activities/03-Ins_Terminal/Solved/CommonCommands.txt) for students to use as a reference. Answer any questions up until this point.
+Slack out [CommonCommands.txt](Activities/03-Ins_Terminal/Solved/CommonCommands.md) for students to use as a reference. Answer any questions up until this point.
 
 ### 12. Students Do: File System Operations (0:10)
 
 In this activity, students will perform their own file system operations via the terminal/command line. 
 
-**File:** [](04-Stu_Terminal/Solved/file_system_operations.sh)
+**File:** [README.md](04-Stu_Terminal/Solved/README.md)
 
 ### 13. Instructor Do: Review File System Operations (0:05)
 
