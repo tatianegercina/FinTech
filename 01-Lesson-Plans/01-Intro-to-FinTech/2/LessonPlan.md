@@ -318,11 +318,17 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
 
 ---
 
-### 14. Instructor Do: Adding files to Github (15 mins)
+### 14. Instructor Do: Uploading files to Github (15 mins)
 
-Show students how to submit a homework assignment in Github. Explain to students that "GitHub offers a centralized location where all developers can push and pull (upload and download) their code. This means that GitHub always holds the most up-to-date code and files, handling everyone's updates appropriately. For now, students will only need to know how to use the GUI for GitHub in order to submit homework. However, In a couple of weeks, students will learn to work with Github through the terminal using git.
+In this activity, students will learn how to upload files to GitHub, which will be used to submit their future homework assignments in the course. 
 
-Have the students follow along with the following steps:
+Briefly explain the following:
+
+* GitHub offers a centralized location where developers can push and pull (upload and download) their code; GitHub always holds the most up-to-date code and files and handles everyone's updates appropriately. 
+
+* For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with Github through the terminal using git -- allowing for more advanced git operations.
+
+Then, have the students follow along with the following steps:
 
 * Visit <https://github.com> and ask students to login to their personal accounts. From the main page, create a new repository with an initialized `README.md` file. Explain that the convention in the software world is for each repository to have a "README" file that explains what the repository contains.
 
