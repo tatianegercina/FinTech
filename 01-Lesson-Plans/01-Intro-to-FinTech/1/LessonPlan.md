@@ -30,13 +30,23 @@ By the end of class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Instructor/TA Introductions (15 mins)
+### 1. Instructor Do: Introductions (40 mins)
 
-In this activity, students are introduced to the instructor as well the teacher assistants for their cohort/class. Instructors and teacher assistants will accompany students for the next `26` weeks, so get to know your students and vice versa!
+In this activity, every member associated with the current FinTech course will introduce themselves to break the ice and develop a foundation of familiarity. This includes student success managers (SSMs), university staff, program directors, student services directors, career directors, individual students, instructors, and teacher assistants (TAs).
 
-**File:** [slideshow-placeholder]()
+* The first `40` minutes of class consists of introductions from the following:
 
-Take the time to talk about your (and the TAs) background(s). Feel free to talk about topics such as:
+   * Student Success Managers (SSMs) and potential university staff, program directors, student services director, career directors.
+
+   * Individual students.
+
+   * Teacher Assistants (TAs).
+
+   * Instructors.
+
+* The SSM, university, and career staff will most likely present their own introductions based on their respective department criteria.
+
+When introducing the TAs as well as yourself (the instructor), feel free to talk about topics such as:
 
 * What is your career history? Where did you start and where are you now?
 
@@ -46,43 +56,49 @@ Take the time to talk about your (and the TAs) background(s). Feel free to talk 
 
 * What's something that defines you? What are your passions?
 
-Ask the students if they have any further questions about yourself or the TAs. Now is the time to get to know each other so feel free to chat it up!
+---
+
+### 2. Instructor Do: The Rise of FinTech (10 mins)
+
+* Now it is time to transition the conversation to make a rousing case for why cybersecurity is such a hot skill today.
+
+* Use the slides to help guide your discussion, in doing so point out the following:
+
+  * That there has been an explosive growth in the dependence on IT systems. 
+
+  * More users online mean more potential targets. 
+
+  * Hackers are getting increasingly sophisticated and aggressive in the audacity of their attacks.
+
+  * Cybercriminals are getting more organized.
+
+  * Huge job shortages exist for security professionals.
+
+* As you are discussing these slides, look for opportunities to engage students into thoughtful reflection. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer. 
+
+  **EXAMPLE:** Ask them to share their own examples of a breach they've heard about in the news.
+
+  ![assets/01-CyberRise.png](assets/01-CyberRise.png)
 
 ---
 
-### 2. Instructor Do: SSM Introductions (15 mins)
+### 3. Instructor Do: Intro to Fintech (15 mins)
 
-In this activity, your student success manager (SSM) as well as potential university staff, program directors, student services directors, and career directors may introduce themselves.
+In this activity, the instructor discusses the exact nature of what the key word *FinTech* entails.
 
-Give your SSM and related staff their time to introduce themselves. They will probably have an agenda or introduction based on their own criteria; however, chances are they'll say something similar to the following:
+Present to the class the following questions and answers:
 
-* Welcome the class on their next `26` week journey.
+  * What exactly *is* FinTech?
 
-* Emphasize the core values of the course and how TrilogyEd/2U is looking to do more than disseminate information and transfer knowledge; TrilogyEd/2U is looking to create educational *experiences*. 
+    * **Answer:** As the term suggests, FinTech is the combination of finance and technology. Specifically, FinTech is the technology and innovation that aims to compete with traditional financial methods and improve activities or inefficiencies in finance.
 
-* Excite students and tell them that although the next `6` months will be challenging, it will be one of their most fulfilling experiences!
+  * Why has FinTech become prevalent/important?
 
-* Discuss course financing and monthly payments.
+    * **Answer:** Traditionally the finance realm tends to be slow moving in regards to technology as they lean toward the operational mantra of "if it ain't broke don't fix it, especially when it comes to people's money". However, rapid advancements in technology have bolstered the ability for smaller companies to innovate and disrupt many traditional financial domains. Thus, larger and traditional finance firms have been forced to compete and upgrade their own technologies, thereby creating technological demand and a need for skilled technical workers.
 
----
+  * What kind of careers are to be expected in FinTech?
 
-### 3. Instructor Do: Class Introductions (40 mins)
-
-At this point, it's the students' turns to introduce themselves. This is an important icebreaking activity as these will be your students for the next `26` weeks, so have fun with it!
-
-Have every student in class introduce themselves and try to keep things lighthearted as students share their backgrounds. Some sample questions you could ask to break the ice are:
-
-* What is your name?
-
-* What did you study or where have you worked?
-
-* Where are you from?
-
-* What made you want to sign onto this course?
-
-* What are some of your hobbies, passions?
-
-Due to the time constraint you may not be able to ask every question for every student in the class. Therefore, pick a few that you like from the list above or think of your own relevant questions! 
+    * **Answer:** Because FinTech is just the implementation of technology within the financial domain, FinTech careers are largely similar to that of the IT industry. It's quite common to see general data analyst, data/software engineer, and data scientist roles; however, these roles may be more specifically named as quantitative analysts/traders or portfolio analysts, for example.
 
 ---
 
@@ -118,13 +134,7 @@ Then, overview the course requirements for certification (will need to get these
 
 If you finish this ahead of schedule, feel free to take one or two questions, but don't get bogged down as the course overview and requirements can be referenced anytime.  
 
----
 
-### 5. BREAK (15 mins)
-
----
-
-### 6. Instructor Do: Course Topics/Agenda (15 mins)
 
 In this activity, instructors will overview the topics and technologies used in the course as well the timeline for each topic or unit. 
 
@@ -144,33 +154,37 @@ Continuing in the slideshow, walk through the following narrative about the cour
 
 ---
 
-### 7. Instructor Do: Intro to Fintech (15 mins)
+### 5. Instructor Do: Tips (10 mins)
 
-In this activity, the instructor discusses the exact nature of what the key word *FinTech* entails.
+* The next series of slides is meant to give students the right perspective coming in. 
 
-Present to the class the following questions and answers:
+* Take a few moments to assuage student fears of being a "beginner." Let them know that having a humble attitude is the first requirement of being successful in this program. In a way, students should channel their inner toddler and recognize that "knowing nothing" and admitting such will allow them to dig their heels in and invest the time necessary to succeed. In a way, being in this program will be like nothing else these students have attempted to do. Their mastery of other subjects, their educational backgrounds, and their professional successes do not guarantee that they will do well here. The only thing that will guarantee success is hard work, humility, and a relentless desire to be better. Recognizing how little you know is a first step towards creating that urgency.
 
-  * What exactly *is* FinTech?
+    ![assets/04-Tips01.png](assets/04-Tips01.png)
 
-    * **Answer:** As the term suggests, FinTech is the combination of finance and technology. Specifically, FinTech is the technology and innovation that aims to compete with traditional financial methods and improve activities or inefficiencies in finance.
+* As you review the remaining tips, give students perspective on the "Path of Learning:"
 
-  * Why has FinTech become prevalent/important?
+  * First, learning all the skills in this course will feel tough, intimidating, and frustrating at times. They should immediately forget about their uncle/brother-in-law/friend/step-sister who told them about so-and-so learning to hack in 1 week. Becoming a skilled professional is challenging. It will take time. There is no way around that.
 
-    * **Answer:** Traditionally the finance realm tends to be slow moving in regards to technology as they lean toward the operational mantra of "if it ain't broke don't fix it, especially when it comes to people's money". However, rapid advancements in technology have bolstered the ability for smaller companies to innovate and disrupt many traditional financial domains. Thus, larger and traditional finance firms have been forced to compete and upgrade their own technologies, thereby creating technological demand and a need for skilled technical workers.
+  * Second, because of how hard this can be, there will be many moments where students will doubt themselves. Take this chance to help them overcome this obstacle ahead of time by building up their confidence. Tell them that you had to start at the beginning (knowing nothing) just like they did, that it takes time but that they have what it takes. Remind them that they were selected for this program because we know they have what it takes.
 
-  * What kind of careers are to be expected in FinTech?
+  * Lastly, because of the length of the program, personal issues WILL come up during the course of the program. The idealism and can-do attitude students enter with on Day 1 will be challenged by the length of the course. Let students know that they should see each other as a family embarking on a long journey. They will become far closer to their peers than they realize. Intensity is no substitute for endurance.
 
-    * **Answer:** Because FinTech is just the implementation of technology within the financial domain, FinTech careers are largely similar to that of the IT industry. It's quite common to see general data analyst, data/software engineer, and data scientist roles; however, these roles may be more specifically named as quantitative analysts/traders or portfolio analysts, for example.
+* Let them know that learning is supposed to be frustrating. It's a process, and they should stick with it!
 
 ---
 
-### 8. Student Do: FinTech and Me (25 mins)
+### 6. BREAK (15 mins)
+
+---
+
+### 7. Student Do: FinTech and Me (25 mins)
 
 In this activity, students now get a chance to take some time and break off into groups of `3-4` to discuss amongst themselves what FinTech means to them.
 
 **File:** [README.md](01-Stu_FinTech_Group_Discussions/README.md)
 
-### 9. Instructor Do: Review FinTech and Me (10 mins)
+### 8. Instructor Do: Review FinTech and Me (10 mins)
 
 * Give each group `2-3` minutes to orally present their findings.
 
@@ -180,7 +194,7 @@ In this activity, students now get a chance to take some time and break off into
 
 ---
 
-### 10. Instructor Do: Introduce Homework (10 mins)
+### 9. Instructor Do: Introduce Homework (10 mins)
 
 In this activity, the instructor will go over the unit `1` homework and define its requirements.
 
