@@ -282,23 +282,7 @@ Open up the terminal (Mac) or git-bash (Windows) and walk through the following 
 
   ![vi-save](Images/vi-save.png)
 
-* Slack out [CommonCommands.txt](Activities/01-Ins_Terminal/Solved/CommonCommands.txt) for students to use as a reference. Answer any questions up until this point.
-
-* This is basic terminal navigation, from here show how students can edit Python files and run in terminal.
-
-  * Create and navigate into a `PythonStuff` folder on the desktop.
-
-  * Create and open `first_file.py` using the text editor.
-
-  * Add `print("This is my first Python file")` and save the code.
-
-  * Return to the terminal and run the file using `python first_file.py`.
-
-  * Explain that `python <FILENAME>.py` tells the computer that this is a python file and to run the code contained within.
-
-  * Repeat again with `second_file.py` using the code `print("This is my second python file")`.
-
-  ![Terminal Example](Images/02-Terminal_Example.png)
+Slack out [CommonCommands.txt](Activities/01-Ins_Terminal/Solved/CommonCommands.txt) for students to use as a reference. Answer any questions up until this point.
 
 ### 12. Students Do: File System Operations (0:10)
 
