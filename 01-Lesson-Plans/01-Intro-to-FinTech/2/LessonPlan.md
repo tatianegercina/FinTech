@@ -236,7 +236,7 @@ Then, allow groups `1-2` minutes to quickly present their findings.
 
 ---
 
-### 11. Instructor Do: Terminal (0:10)
+### 11. Instructor Do: Terminal (10 mins)
 
 In this activity, students will learn the basics of using the terminal/command line to perform basic file system operations on their machines.
 
@@ -282,13 +282,13 @@ Open up the terminal (Mac) or git-bash (Windows) and walk through the following 
 
 Slack out [CommonCommands.txt](Activities/03-Ins_Terminal/Solved/CommonCommands.md) for students to use as a reference. Answer any questions up until this point.
 
-### 12. Students Do: File System Operations (0:10)
+### 12. Students Do: File System Operations (15 mins)
 
 In this activity, students will perform their own file system operations via the terminal/command line. 
 
 **File:** [README.md](Activities/04-Stu_Terminal/README.md)
 
-### 13. Instructor Do: Review File System Operations (0:05)
+### 13. Instructor Do: Review File System Operations (5 mins)
 
 Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points:
 
