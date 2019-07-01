@@ -46,15 +46,15 @@ In this activity, every member associated with the current FinTech course will i
 
 * The SSM, university, and career staff will most likely present their own introductions based on their respective department criteria.
 
-When introducing the TAs as well as yourself (the instructor), feel free to talk about topics such as:
+* When introducing the TAs as well as yourself (the instructor), feel free to talk about topics such as:
 
-* What is your career history? Where did you start and where are you now?
+  * What is your career history? Where did you start and where are you now?
 
-* What have you accomplished in the past? What is your FinTech industry experience (if applicable)?
+  * What have you accomplished in the past? What is your FinTech industry experience (if applicable)?
 
-* What drew you to become a instructor/TA? What are you looking forward to in this course?
+  * What drew you to become a instructor/TA? What are you looking forward to in this course?
 
-* What's something that defines you? What are your passions?
+  * What's something that defines you? What are your passions?
 
 ---
 
