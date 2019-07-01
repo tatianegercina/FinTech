@@ -264,6 +264,8 @@ Open up the terminal (Mac) or git-bash (Windows) and walk through the following 
 
     * `wq!` (Exit and save)
 
+  * `cat <FILENAME>` (Reads a file and outputs to the terminal)
+
   * `rm <FILENAME>` (Deletes a file).
 
   * `rm -r <FOLDERNAME>` (Deletes a folder recursively, make sure to note the -r).
@@ -278,47 +280,17 @@ Open up the terminal (Mac) or git-bash (Windows) and walk through the following 
 
   ![terminal-example](Images/terminal-example.png)
 
-  ![vi-insert](Images/vi-insert.png)
-
-  ![vi-save](Images/vi-save.png)
-
-Slack out [CommonCommands.txt](Activities/01-Ins_Terminal/Solved/CommonCommands.txt) for students to use as a reference. Answer any questions up until this point.
+Slack out [CommonCommands.txt](Activities/03-Ins_Terminal/Solved/CommonCommands.txt) for students to use as a reference. Answer any questions up until this point.
 
 ### 12. Students Do: File System Operations (0:10)
 
-* Students will now dive into the terminal, create three folders, and a pair of Python files which will print some strings of their own creation to the console.
+In this activity, students will perform their own file system operations via the terminal/command line. 
 
-* After answering whatever questions your students may have regarding the activity, slack out the instructions.
-
-* **Instructions**
-
-* Follow along with these instructions in your terminal and write the commands below:
-
-  * Create a folder called `LearnPython`.
-
-  * Navigate into the folder.
-
-  * Inside `LearnPython` create another folder called `Assignment1`.
-
-  * Inside `Assignment1` create a file called `quick_python.py`.
-
-  * Add a print statement to `quick_python.py`.
-
-  * Run `quick_python.py`.
-
-  * Return to the `LearnPython` folder.
-
-  * Inside `LearnPython` create another folder called `Assignment2`.
-
-  * Inside `Assignment2` create a file called `quick_python2.py`.
-
-  * Add a different print statement to `quick_python2.py`.
-
-  * Run `quick_python2.py`.
+**File:** [](04-Stu_Terminal/Solved/file_system_operations.sh)
 
 ### 13. Instructor Do: Review File System Operations (0:05)
 
-* Open [TerminalGamesSolved.sh](Activities/02-Stu_TerminalTest/Solved/TerminalGamesSolved.sh) and work through the code in the solution in the terminal while also showing the results on the computer.
+Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_operations.sh) and work through the solution in the terminal:
 
 * Key points to cover during the review of this activity:
 
