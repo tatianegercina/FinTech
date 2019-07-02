@@ -98,13 +98,7 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
 
   * `cd` navigates into specified folder directories.
 
-  * `vi` will initialize an empty file in the terminal editor.
-
-    * `I` allows for inserting text.
-
-    * `ESC` escapes out of the text contents in the editor.
-
-    * `wq!` saves the file and quits out of the editor.
+  * `touch` will create an empty file.
 
   * `cat` reads files and outputs the results to the console.
 
@@ -148,13 +142,15 @@ Then, have the students follow along with the following steps:
 
   ![drag file](Images/GitDemo_filedrag.gif)
 
-Make sure that all the students have been able to follow along. Let students know that this will be how they will be submitting their homework for the first two weeks. Students will add all of the necessary files to their Github repo then submit the repository link to BCS.
-
-Encourage students to practice Github before the next class and to use office hours if they run into any problems.
+Encourage students to practice using Github before the next class and to use office hours if they run into any problems.
 
 ---
 
-### 6. Instructor Do: Evolution of Fintech (15 mins)
+### 6. BREAK (15 mins)
+
+---
+
+### 7. Instructor Do: Evolution of Fintech (15 mins)
 
 In this activity, students will be given a detailed view into the historical progression of the FinTech space; students will learn from where FinTech has come and the potential reasons for how it came to be.
 
@@ -196,7 +192,7 @@ Ask the students if they have any questions before moving on.
 
 ---
 
-### 7. Instructor Do: Facilitated Discussions to FinTech Domains (10 mins)
+### 8. Instructor Do: Facilitated Discussions to FinTech Domains (10 mins)
 
 In this activity, the instructor leads students into the discussion of the current state of the FinTech industry, specifically where in the financial industry technological innovation has brought upon a positive impact. 
 
@@ -220,7 +216,7 @@ Ask the students the following questions:
 
 ---
 
-### 8. Instructor Do: Fintech Domains and Trends (15 mins)
+### 9. Instructor Do: Fintech Domains and Trends (15 mins)
 
 In this activity, students will deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation. 
 
@@ -282,23 +278,19 @@ Then, overview the following overarching trends that appear across all domains o
 
 ---
 
-### 9. Student Do: Investigate FinTech Domains (20 mins)
+### 10. Student Do: Investigate FinTech Domains (20 mins)
 
 By this point, students have been given examples of both the major domains within FinTech as well as the overarching trends across the industry. The instructor should now place students into groups of `2-4` individuals to conduct some research of the various FinTech domains on their own.
 
 **File:** [README.md](01-Stu_FinTech_Domains/README.md)
 
-### 10. Instructor Do: Review Investigate FinTech Domains (10 mins)
+### 11. Instructor Do: Review Investigate FinTech Domains (10 mins)
 
 Now that students have had an opportunity to perform their own research on the various domains in FinTech, it's time to facilitate a discussion amongst the class on each group's findings.
 
 * Have each group present their findings to the class one-by-one until all groups have presented.
 
 * Presentations should be quick, approximately `1-2` minutes.
-
----
-
-### 11. BREAK (15 mins)
 
 ---
 
