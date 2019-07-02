@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's class will focus on further investigating the evolution and impact of the FinTech industry and then proceed to command line basics and git (using a graphical user interface (GUI)). Specifically, students will learn about the history of FinTech, the particular domains it has helped disrupt, as well as create their own case studies on a particular FinTech (Payments) company. Then, students will develop the basic command line and git download/upload skills that will aid them in using the more advanced git CLI in the next lesson. 
+Today's class will focus on command line basics and git (using a graphical user interface (GUI)) and then proceed to further investigating the key stimuli and impacts that have lead to the exponential growth of the FinTech industry. Specifically, students will develop the basic command line and git download/upload skills that will aid them in using the more advanced git CLI in the next lesson. In addition, students will learn more about the history of FinTech, the particular domains it has helped disrupt, and also create their own case studies on a particular FinTech (Payments) company.
 
 ### Class Objectives
 
@@ -42,7 +42,125 @@ Perform the following:
 
 ---
 
-### 2. Instructor Do: Evolution of Fintech (15 mins)
+### 2. Instructor Do: Terminal (10 mins)
+
+In this activity, students will learn the basics of using the terminal/command line to perform basic file system operations on their machines.
+
+Open up the terminal (Mac) or git-bash (Windows) and walk through the following commands:
+
+  * `cd` (Changes the directory).
+
+  * `cd ~` (Changes to the home directory).
+
+  * `cd ..` (Moves up one directory).
+
+  * `ls` (Lists files in the folder).
+
+  * `pwd` (Shows the current directory).
+
+  * `mkdir <FOLDERNAME>` (Creates a new directory with the FOLDERNAME).
+
+  * `vi <FILENAME>` (Creates a new file with the FILENAME and initializes the command line editor).
+
+    * `I` (Insert text)
+
+    * `ESC` (Escape out of editor focus)
+
+    * `q!` (Exit without saving)
+
+    * `wq!` (Exit and save)
+
+  * `cat <FILENAME>` (Reads a file and outputs to the terminal)
+
+  * `rm <FILENAME>` (Deletes a file).
+
+  * `rm -r <FOLDERNAME>` (Deletes a folder recursively, make sure to note the -r).
+
+  * `open .` (Opens the current folder on Macs).
+
+  * `explorer .` (Opens the current folder on GitBash).
+
+  * `open <FILENAME>` (Opens a specific file on Macs).
+
+  * `explorer <FILENAME>` (Opens a specific file on GitBash).
+
+  ![terminal-example](Images/terminal-example.png)
+
+Slack out [CommonCommands.txt](Activities/03-Ins_Terminal/Solved/CommonCommands.md) for students to use as a reference. Answer any questions up until this point.
+
+---
+
+### 3. Students Do: File System Operations (15 mins)
+
+In this activity, students will perform their own file system operations via the terminal/command line. 
+
+**File:** [README.md](Activities/04-Stu_Terminal/README.md)
+
+### 4. Instructor Do: Review File System Operations (5 mins)
+
+Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points:
+
+  * `mkdir` creates folder directories.
+
+  * `cd` navigates into specified folder directories.
+
+  * `vi` will initialize an empty file in the terminal editor.
+
+    * `I` allows for inserting text.
+
+    * `ESC` escapes out of the text contents in the editor.
+
+    * `wq!` saves the file and quits out of the editor.
+
+  * `cat` reads files and outputs the results to the console.
+
+  * `cd ..` will navigate up one level.
+
+  * `cp` copies files from source to target.
+
+  * `rm -r` recursively deletes all files in a folder (that may have sub-folders).
+
+  * `mv` moves files from source to target. Can also be used to rename a file.
+
+  * `ls` lists the contents of the current directory.
+
+---
+
+### 5. Instructor Do: Uploading files to Github (15 mins)
+
+In this activity, students will learn how to upload files to GitHub, which will be used to submit their future homework assignments in the course. 
+
+Briefly explain the following:
+
+* GitHub offers a centralized location where developers can push and pull (upload and download) their code; GitHub always holds the most up-to-date code and files and handles everyone's updates appropriately. 
+
+* For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with Github through the terminal using git -- allowing for more advanced git operations.
+
+Then, have the students follow along with the following steps:
+
+* Visit <https://github.com> and ask students to login to their personal accounts. From the main page, create a new repository with an initialized `README.md` file. Explain that the convention in the software world is for each repository to have a "README" file that explains what the repository contains.
+
+  ![git repo](Images/GitDemo_1.png)
+
+* Switch back to the Desktop and create a new empty Excel file and save it. This will be used to demonstrate how to upload new files.
+
+* Navigate back to Github website and click **Upload files**.
+
+  ![upload file](Images/GitDemo_upload.png)
+
+* Choose your Excel file in the dialog box; instead of the "Upload Files" button, you may also drag files from your desktop to the Github web page for a repo. Add a commit message and commit the changes.
+
+* Finally, refresh the web page to show that the new file is now safely saved to the repository.
+
+  ![drag file](Images/GitDemo_filedrag.gif)
+
+Make sure that all the students have been able to follow along. Let students know that this will be how they will be submitting their homework for the first two weeks. Students will add all of the necessary files to their Github repo then submit the repository link to BCS.
+
+Encourage students to practice Github before the next class and to use office hours if they run into any problems.
+
+---
+
+### 6. Instructor Do: Evolution of Fintech (15 mins)
 
 In this activity, students will be given a detailed view into the historical progression of the FinTech space; students will learn from where FinTech has come and the potential reasons for how it came to be.
 
@@ -84,7 +202,7 @@ Ask the students if they have any questions before moving on.
 
 ---
 
-### 3. Instructor Do: Facilitated Discussions to FinTech Domains (10 mins)
+### 7. Instructor Do: Facilitated Discussions to FinTech Domains (10 mins)
 
 In this activity, the instructor leads students into the discussion of the current state of the FinTech industry, specifically where in the financial industry technological innovation has brought upon a positive impact. 
 
@@ -108,7 +226,7 @@ Ask the students the following questions:
 
 ---
 
-### 4. Instructor Do: Fintech Domains and Trends (15 mins)
+### 8. Instructor Do: Fintech Domains and Trends (15 mins)
 
 In this activity, students will deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation. 
 
@@ -170,13 +288,13 @@ Then, overview the following overarching trends that appear across all domains o
 
 ---
 
-### 5. Student Do: Investigate FinTech Domains (20 mins)
+### 9. Student Do: Investigate FinTech Domains (20 mins)
 
 By this point, students have been given examples of both the major domains within FinTech as well as the overarching trends across the industry. The instructor should now place students into groups of `2-4` individuals to conduct some research of the various FinTech domains on their own.
 
 **File:** [README.md](01-Stu_FinTech_Domains/README.md)
 
-### 6. Instructor Do: Review Investigate FinTech Domains (10 mins)
+### 10. Instructor Do: Review Investigate FinTech Domains (10 mins)
 
 Now that students have had an opportunity to perform their own research on the various domains in FinTech, it's time to facilitate a discussion amongst the class on each group's findings.
 
@@ -186,11 +304,11 @@ Now that students have had an opportunity to perform their own research on the v
 
 ---
 
-### 7. BREAK (15 mins)
+### 11. BREAK (15 mins)
 
 ---
 
-### 8. Instructor Do: Stripe Payments Case Study (10 mins)
+### 12. Instructor Do: Stripe Payments Case Study (10 mins)
 
 In this activity, students will be instructed on how to create a FinTech case study -- a compilation of holistic research performed on a FinTech company or technology. This activity is particularly important as it will serve as the knowledge foundation for students completing their FinTech case studies for the unit `1` homework.   
 
@@ -214,13 +332,13 @@ Open the slideshow while walking through the following:
 
 ---
 
-### 9. Student Do: FinTech Payments Case Study (20 mins)
+### 13. Student Do: FinTech Payments Case Study (20 mins)
 
 In this activity, the instructor should place students into groups of `2-4` individuals once again to create a case study on a particular FinTech payments technology that rivals Stripe.
 
 **File:** [README.md](02-Stu_FinTech_Case_Study/README.md)
 
-### 10. Instructor Do: Review FinTech Payments Case Study (10 mins)
+### 14. Instructor Do: Review FinTech Payments Case Study (10 mins)
 
 In this activity, students will present their case study findings to the class.
 
@@ -233,122 +351,6 @@ Before proceeding with presentations, mention the following:
 * Each person in the group is expected to speak during the presentation. Emphasize the importance of public speaking, and let students know that there will be more opportunities throughout the course for them to present on various fintech topics. 
 
 Then, allow groups `1-2` minutes to quickly present their findings.
-
----
-
-### 11. Instructor Do: Terminal (10 mins)
-
-In this activity, students will learn the basics of using the terminal/command line to perform basic file system operations on their machines.
-
-Open up the terminal (Mac) or git-bash (Windows) and walk through the following commands:
-
-  * `cd` (Changes the directory).
-
-  * `cd ~` (Changes to the home directory).
-
-  * `cd ..` (Moves up one directory).
-
-  * `ls` (Lists files in the folder).
-
-  * `pwd` (Shows the current directory).
-
-  * `mkdir <FOLDERNAME>` (Creates a new directory with the FOLDERNAME).
-
-  * `vi <FILENAME>` (Creates a new file with the FILENAME and initializes the command line editor).
-
-    * `I` (Insert text)
-
-    * `ESC` (Escape out of editor focus)
-
-    * `q!` (Exit without saving)
-
-    * `wq!` (Exit and save)
-
-  * `cat <FILENAME>` (Reads a file and outputs to the terminal)
-
-  * `rm <FILENAME>` (Deletes a file).
-
-  * `rm -r <FOLDERNAME>` (Deletes a folder recursively, make sure to note the -r).
-
-  * `open .` (Opens the current folder on Macs).
-
-  * `explorer .` (Opens the current folder on GitBash).
-
-  * `open <FILENAME>` (Opens a specific file on Macs).
-
-  * `explorer <FILENAME>` (Opens a specific file on GitBash).
-
-  ![terminal-example](Images/terminal-example.png)
-
-Slack out [CommonCommands.txt](Activities/03-Ins_Terminal/Solved/CommonCommands.md) for students to use as a reference. Answer any questions up until this point.
-
-### 12. Students Do: File System Operations (15 mins)
-
-In this activity, students will perform their own file system operations via the terminal/command line. 
-
-**File:** [README.md](Activities/04-Stu_Terminal/README.md)
-
-### 13. Instructor Do: Review File System Operations (5 mins)
-
-Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points:
-
-  * `mkdir` creates folder directories.
-
-  * `cd` navigates into specified folder directories.
-
-  * `vi` will initialize an empty file in the terminal editor.
-
-    * `I` allows for inserting text.
-
-    * `ESC` escapes out of the text contents in the editor.
-
-    * `wq!` saves the file and quits out of the editor.
-
-  * `cat` reads files and outputs the results to the console.
-
-  * `cd ..` will navigate up one level.
-
-  * `cp` copies files from source to target.
-
-  * `rm -r` recursively deletes all files in a folder (that may have sub-folders).
-
-  * `mv` moves files from source to target. Can also be used to rename a file.
-
-  * `ls` lists the contents of the current directory.
-
----
-
-### 14. Instructor Do: Uploading files to Github (15 mins)
-
-In this activity, students will learn how to upload files to GitHub, which will be used to submit their future homework assignments in the course. 
-
-Briefly explain the following:
-
-* GitHub offers a centralized location where developers can push and pull (upload and download) their code; GitHub always holds the most up-to-date code and files and handles everyone's updates appropriately. 
-
-* For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with Github through the terminal using git -- allowing for more advanced git operations.
-
-Then, have the students follow along with the following steps:
-
-* Visit <https://github.com> and ask students to login to their personal accounts. From the main page, create a new repository with an initialized `README.md` file. Explain that the convention in the software world is for each repository to have a "README" file that explains what the repository contains.
-
-  ![git repo](Images/GitDemo_1.png)
-
-* Switch back to the Desktop and create a new empty Excel file and save it. This will be used to demonstrate how to upload new files.
-
-* Navigate back to Github website and click **Upload files**.
-
-  ![upload file](Images/GitDemo_upload.png)
-
-* Choose your Excel file in the dialog box; instead of the "Upload Files" button, you may also drag files from your desktop to the Github web page for a repo. Add a commit message and commit the changes.
-
-* Finally, refresh the web page to show that the new file is now safely saved to the repository.
-
-  ![drag file](Images/GitDemo_filedrag.gif)
-
-Make sure that all the students have been able to follow along. Let students know that this will be how they will be submitting their homework for the first two weeks. Students will add all of the necessary files to their Github repo then submit the repository link to BCS.
-
-Encourage students to practice Github before the next class and to use office hours if they run into any problems.
 
 ### End Class
 
