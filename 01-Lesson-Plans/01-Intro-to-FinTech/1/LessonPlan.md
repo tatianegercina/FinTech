@@ -108,39 +108,7 @@ Present to the class the following questions and answers:
 
 ---
 
-### 4. Instructor Do: Course Format and Requirements (20 mins)
-
-In this activity, the instructor as well as program staff (ex. SSMs) should outline the course format and requirements for certification upon graduation.
-
-**File:** [slideshow-placeholder]()
-
-In the slideshow, showcase the following about the course format:
-
-  * The course will last for the next `26` weeks, with several weeks attributed to group and final projects.
-
-  * Class will last from `6:30 PM` to `9:30 PM` on Mondays/Wednesdays or Tuesdays/Thursdays and from `10:00 AM` to `2:00 PM` on Saturdays.
-
-  * TA office hours are available `45` minutes before class begins and `30` minutes after class ends.
-
-  * Class sessions will be recorded via Pantopto and can be accessed remotely anytime.
-
-  * Students will have access to course information and perform their homework submissions via TrilogyEd/2U's BootCampSpot platform.
-
-  * Slack will be primarily used for communicating directly with instructors and TAs or distributing activity files to students during class sessions.
-
-Then, overview the course requirements for certification (will need to get these requirements):
-
-  * Attendence
-
-  * Group Projects
-
-  * Homework
-
-  * Loan Payments
-
-If you finish this ahead of schedule, feel free to take one or two questions, but don't get bogged down as the course overview and requirements can be referenced anytime.  
-
-
+### 4. Instructor Do: Course Overview (20 mins)
 
 In this activity, instructors will overview the topics and technologies used in the course as well the timeline for each topic or unit. 
 
@@ -148,15 +116,23 @@ In this activity, instructors will overview the topics and technologies used in 
 
 Continuing in the slideshow, walk through the following narrative about the course agenda and timeline:
 
-  * We begin with an introduction to FinTech and Finance as it currently stands, discussing the current financial landscape and some of the current industry-standard methods/tools such as excel.
+  * `Weeks 1-2`: Students are introduced to the world of FinTech and will discuss the current financial landscape. Then, they will dive into the financial modeling methods of the current industry-standard tool, Microsoft Excel.
 
-  * Then, we move into the direction where the industry is *going* by jumping into Python. We'll spend several weeks covering the basics of the languags and popular modern libraries such as Pandas and Matplotlib before turning our sights on building predictive time series analyses. This will culminate in our first major project using what we've learned up until now to build the best portfolio strategy possible.
+  * `Weeks 3-7`: While useful and easy to grasp, Excel, however, is limited in its technical capabilities compared to a full-fledged progamming langauge such as Python. Thus, over the next several weeks, students will cover the basics of Python as well as how to use additional libraries/tools such as Pandas, APIs, Plotly, and SQL databases, in the context of financial analysis.
 
-  * From there, we'll supercharge the financial models that we are building using everyone's favorite buzzword: Machine Learning. We'll spend about a week on the introductor material and then get into applications in financial advising, algorithmic trading, and dynamic pricing.
+  * `Weeks 8-9`: Students are tasked with their first project.
 
-  * In the last major leg of the journey, we'll dive into the up and coming world of blockchain and cryptocurrencies in order to understand the advantages they provide over traditional finance in the context of transactions and third-party verification. In addition, students will learn how to develop automatically-executing smart contracts using the Solidity platform.
+  * `Weeks 10-14`: Companies are becoming more and more data-driven in their decision making. Therefore, through machine learning, students will need to learn how to not only interpret and create financial models, but also how to automate the execution of such models. Topics include algorithmic trading, robo-advisory, insurance, risk management, and regtech-related technologies.
 
-  * Each unit will consist of `3` lessons, which represent class sessions or days. Therefore, students will have `3` classes per week and spend `1` week per unit or topic.
+  * `Weeks 15-16`: Students are tasked with their second project.
+
+  * `Weeks 17-21`: With its benefits of security, speed, and decentralized peer-to-peer validation, Blockchain technology has already become more efficient than tradtional finance in the context of transactions and third-party validation. Thus, students will learn about Blockchain fundamentals, smart contracts using Solidity, and how to develop Blockchain applications on the popular Ethereum blockchain network.
+
+  * `Week 22`: Reserved for additional topics specific to each university partner.
+
+  * `Week 23-24:` Students are tasked with their final project.
+
+![fintech-curriculum](Images/fintech-curriculum.png)
 
 ---
 
