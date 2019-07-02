@@ -30,15 +30,17 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome (10 mins)
 
-In this activity, instructors should take the time to welcome students back and hype up the day; students will receive a more detailed overview into the background of FinTech as well as learn fundamental tools, such as the terminal/command line and git (GUI), that will be integral to their success as future developers.  
+In this activity, instructors should take the time to welcome students back and exemplify the fact that in today's lesson, students will learn basic technical fundamentals (terminal and git GUI) that will be integral to their success as future developers. In addition, students will receive a more detailed overview into the background of FinTech, which will give them the contextual knowledge required for comprehending the changing landscape within the FinTech ecosystem. 
 
 Perform the following:
 
-* Remind students that the last class was all about course introductions and a brief discussion on what FinTech is and what the term *meant* to the students. On the contrary, today's lesson will perform a technical deep dive into the historical background of FinTech, explain the reasoning for its current prevalence, and focus in on the traditional domains or sectors within finance that FinTech has helped to disrupt.  
+* Explain that students will begin working with common developer tools such as the terminal/command line, a text-based utility for performing file system operations and executing programs, and git, a managed remote file repository with in-built versioning control. By the end of the day, students will look like hackers with their terminals open and join the ranks of millions of developers who also use git to store their files/code.
 
-* Explain that students will also begin working with common tools such as the terminal/command line, a text-base utility for performing file system operations and executing programs, and git, a managed remote file repository with in-built versioning control.
+* Remind students that today's lesson will perform a technical deep dive into a brief historical background of FinTech, explain the reasoning for its current prevalence, focus in on the traditional domains or sectors within finance that FinTech has helped to disrupt, and delve into a single case study of an individual FinTech company. 
 
-* Encourage your students and get their energy levels up! Today is the day they begin to learn hard skills: creating a FinTech case study, performing file system operations via the terminal, and managing file repositories using git!  
+* Being aware of the background behind FinTech can be really useful, especially when applying to jobs because it shows that students not only care enough to familiarize themselves with the industry in which they'd like to work, but also showcases competence in understanding where potential opportunities (and pitfalls) within the FinTech industry may be.
+
+* Encourage your students and get their energy levels up! Today will be a crash course on both hard and soft skills; students will learn technical skills and contextual knowledge to aid them in their future careers in FinTech.
 
 ---
 
