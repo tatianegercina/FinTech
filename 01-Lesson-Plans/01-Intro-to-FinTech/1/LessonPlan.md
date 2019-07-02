@@ -178,15 +178,17 @@ In this activity, students now get a chance to take some time and break off into
 
 ---
 
-### 9. Student Do: Group Thought Experiment (25 mins)
+### 9. Student Do: LendingClub Thought Experiment (25 mins)
 
-In this activity, students will once again break off into groups of `3-4` to devise a solution to a traditional finance problem that FinTech has come to solve. This group thought experiment should put students in the mindset of how technology has been applied to bolster the financial services industry.
+In this activity, students will once again break off into groups of `3-4` to devise a solution to the traditional borrowing/lending finance problem that FinTech has come to solve. This group thought experiment should put students in the mindset of how technology has been applied to bolster the financial services industry.
 
 **File:** [README.md](Activities/02-Stu_FinTech_Thought_Experiment/README.md)
 
 ---
 
-### 10. Instructor Do: Review Group Thought Exeriment  (10 mins)
+### 10. Instructor Do: LendingClub Thought Experiment  (10 mins)
+
+**File:** [](Activities/)
 
 ---
 

@@ -1,28 +1,26 @@
-## FinTech and Me
+## Lending Thought Experiment
 
-Time to stretch your legs! So far the day has all been about course introductions and lectures. Now it's time for you and your group to answer the question, what does *FinTech* mean to you?
+Traditionally, individuals looking to get a loan would have to apply for a loan at a bank or private lender. If the individual met the specific financial institution's loan eligibility criteria such as a certain credit score, annual income, credit utilization, etc., they would be approved for the loan and subsequently receive their requested funds. Otherwise the individual would be denied and therefore receive no loan. Oftentimes, this meant that individuals with low credit scores and annual incomes would be denied loans, creating a social problem as these individuals represent the population that are usually in need of loans the most. In addition, having to request loans from only a handful of banks and private lenders meant that there were similar loan eligibility requirements and little competition among loan interest rates, giving individuals in need few choices.
+
+Given today's mobile phone ubiquity amongst consumers, how might traditional lending be bolstered by the fact that there is an enormous pool of consumers that can be targeted via mobile applications?   
 
 ### Instructions
 
-Walk through the following steps.
+Form groups of `2-4` individuals and answer the following questions:
 
-* Formulate groups of `3-4` individuals.
+* How could a lending application potentially disrupt the traditional lending space?
 
-* Answer the following questions:
+* What would the lending application have to do to..
 
-  * What does FinTech mean to you?
+  1. Create more competition amongst loan interest rates?
 
-  * What about FinTech interests you?
+  2. Target a wider audience and allow for broader tolerances of loan eligibility requirements?
 
-  * Why choose this FinTech course over another course like Data Viz?
-
-  * What are some notable FinTech companies?
-
-* Be prepared to do a quick `2-3` oral presentation to the class on your group's response. 
+Be prepared to do a quick `2-3` minute oral presentation to the class on your group's response. 
 
 ### Hint
 
-Get to know your fellow classmates! Everyone here is in the same boat and likely has similar desires and interests of looking to excel their career or embark on a new life path; don't be a stranger!
+Think about the power of networks through mobile infrastructure and peer-to-peer interactions. Remember, not everyone in the world is looking to borrow funds, some are looking to make money through lending.
 
 ---
 
