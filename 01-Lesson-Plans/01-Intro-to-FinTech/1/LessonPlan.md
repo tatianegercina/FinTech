@@ -164,15 +164,15 @@ Open the next series of slides and emphasize the following points:
 
 ### 7. Student Do: FinTech and Me (20 mins)
 
-In this activity, students now get a chance to take some time and break off into groups of `3-4` to discuss amongst themselves what FinTech means to them.
+In this activity, students get a chance to perform some reflection and write down what FinTech means to them.
 
 **File:** [README.md](Activities/01-Stu_FinTech_Group_Discussions/README.md)
 
 ### 8. Instructor Do: Review FinTech and Me (10 mins)
 
-* Give each group `2-3` minutes to orally present their findings.
+* Ask for a few volunteers that would be willing to present what FinTech means to them.
 
-* Once all groups have presented, tie everything back together by explaining that FinTech is the implementation of technology to the finance industry, but what it *means* to each individual person can differ. Some see FinTech as a way to upgrade their current skills and be more employer marketable; some see FinTech as a way to solve the inefficiencies in their current finance role; others see FinTech as a path to embarking on a new career supported by growing demand. 
+* Once all volunteers have presented, tie everything back together by explaining that FinTech is the implementation of technology to the finance industry, but what it *means* to each individual person can differ. Some see FinTech as a way to upgrade their current skills and be more employer marketable; some see FinTech as a way to solve the inefficiencies in their current finance role; others see FinTech as a path to embarking on a new career supported by growing demand. 
 
 * Despite students' differing reasons for wanting to learn more about FinTech, every student has made the leap to take this course. Therefore, encourage students to continue to get to know each other as they'll be "together in the trenches" for the next `26` weeks and could serve as valuable network connections after the completion of the course. 
 

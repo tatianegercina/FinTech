@@ -1,28 +1,20 @@
 ## FinTech and Me
 
-Time to stretch your legs! So far the day has all been about course introductions and lectures. Now it's time for you and your group to answer the question, what does *FinTech* mean to you?
+So far the day has all been about course introductions and lectures. Now, you've been given your own time to reflect a bit and answer the question, what does *FinTech* mean to you?
 
 ### Instructions
 
-Walk through the following steps.
+Answer the following questions:
 
-* Formulate groups of `3-4` individuals.
-
-* Answer the following questions:
-
-  * What does FinTech mean to you?
+  * What does FinTech mean to you? Why is it important?
 
   * What about FinTech interests you?
 
-  * Why choose this FinTech course over another course like Data Viz?
+  * Where do you expect FinTech to take you? What are you looking to do?
 
-  * What are some notable FinTech companies?
+  * What about FinTech may be confusing? What makes sense?
 
-* Be prepared to do a quick `2-3` oral presentation to the class on your group's response. 
-
-### Hint
-
-Get to know your fellow classmates! Everyone here is in the same boat and likely has similar desires and interests of looking to excel their career or embark on a new life path; don't be a stranger!
+Write down your answers and keep them somewhere safe. In the future, we will look back at your responses to see how much you've accomplished!
 
 ---
 
