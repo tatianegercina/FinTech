@@ -166,7 +166,7 @@ Open the next series of slides and emphasize the following points:
 
 In this activity, students now get a chance to take some time and break off into groups of `3-4` to discuss amongst themselves what FinTech means to them.
 
-**File:** [README.md](01-Stu_FinTech_Group_Discussions/README.md)
+**File:** [README.md](Activities/01-Stu_FinTech_Group_Discussions/README.md)
 
 ### 8. Instructor Do: Review FinTech and Me (10 mins)
 
