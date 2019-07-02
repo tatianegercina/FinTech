@@ -154,6 +154,8 @@ Open the next series of slides and emphasize the following points:
 
   * Lastly, learning is supposed to be frustrating! It's a process, and no matter what stick with it! Things only get easier when we choose to embrace the difficulty.
 
+  ![fintech-tips](Images/fintech-tips.png)
+
 ---
 
 ### 6. BREAK (15 mins)
