@@ -76,7 +76,7 @@ Use the slides to help guide your discussion, and in doing so point out the foll
 
 As you are discussing these slides, look for opportunities to engage students into thoughtful reflection. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer. 
 
-For example, ask students to share their own examples of an innovative FinTech company they've heard about.
+For example, ask students to share their own examples of an innovative FinTech company they've heard about and how it's disrupting the financial services industry.
 
 ![fintech-rise](Images/fintech-rise.png)
 
