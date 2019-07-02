@@ -495,7 +495,7 @@ In this activity, students execute a Monte Carlo simulation to forecast stock pr
 
 * [financial_forecasting_part_1.ipynb](Activities/06-Stu_Financial_Forecasting_Pt_I/Unsolved/financial_forecasting_part_1.ipynb)
 
-### 11. Instructor Do: Review Stock Price Forecasting (5 mins)
+### 11. Instructor Do: Review Financial Forecasting Part I (5 mins)
 
 **Files:**
 
@@ -606,7 +606,7 @@ In this activity, students execute a Monte Carlo simulation to forecast the many
 
 * [financial_forecasting_part_2.ipynb](Activities/08-Stu_Financial_Forecasting_Pt_II/Unsolved/financial_forecasting_part_2.ipynb)
 
-### 15. Instructor Do: Review Probable Stock Price Forecasting (5 mins)
+### 15. Instructor Do: Review Financial Forecasting Part II (5 mins)
 
 **Files:**
 
