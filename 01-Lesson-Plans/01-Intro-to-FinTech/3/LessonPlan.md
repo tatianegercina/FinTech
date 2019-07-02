@@ -90,11 +90,11 @@ Then, perform a live demo while highlighting the following:
 
   ![terminal-git-repository](Images/terminal-git-repository.png)
 
-* The `vi` command is a utility for editing text files directly from the command line. Once in the editor, press `I` to insert text and then press the sequence `ESC`, `:wq!`, `ENTER` to save the file when finished. Conversely, the sequence `ESC`, `:q!`, `ENTER` would quit the file without saving.
+* The `code` utility opens text files from the command line into VS Code for editing.
 
-  ![terminal-vi](Images/terminal-vi.png)
+  ![terminal-vscode](Images/terminal-vscode.png)
 
-  ![terminal-vi-editor](Images/terminal-vi-editor.png)
+  ![vscode-editor](Images/vscode-editor.png)
 
 * Here, the file `README.md` is edited and saved within the local git repository; however, changes are still local and will need to be pushed to the remote repository.
 
@@ -204,7 +204,7 @@ Live demo the following walkthrough:
 
   ![git-clone](Images/git-clone.png)
 
-* Create three folders in the local git repository via the `mkdir` command: `Homework`, `CourseWork` and `Projects`. Add a `.gitkeep` file to each folder so that git knows to retain the folders as it refrains from keeping empty folders unless explicitly told.
+* Create three folders in the local git repository via the `mkdir` command: `data`, `references` and `code`. Add a `.gitkeep` file to each folder so that git knows to retain the folders as it refrains from keeping empty folders unless explicitly told.
 
   ![git-repository-mkdir](Images/git-repository-mkdir.png)
 
