@@ -82,7 +82,7 @@ For example, ask students to share their own examples of an innovative FinTech c
 
 ---
 
-### 3. Instructor Do: Defining Fintech (15 mins)
+### 3. Instructor Do: Defining Fintech (20 mins)
 
 In this activity, the instructor discusses the exact nature of what the key word *FinTech* entails.
 
@@ -108,7 +108,7 @@ Present to the class the following questions and answers:
 
 ---
 
-### 4. Instructor Do: Course Overview (20 mins)
+### 4. Instructor Do: Course Overview (10 mins)
 
 In this activity, the instructor should overview the topics and technologies used in the course as well the timeline for each topic or unit. 
 
@@ -162,7 +162,7 @@ Open the next series of slides and emphasize the following points:
 
 ---
 
-### 7. Student Do: FinTech and Me (25 mins)
+### 7. Student Do: FinTech and Me (20 mins)
 
 In this activity, students now get a chance to take some time and break off into groups of `3-4` to discuss amongst themselves what FinTech means to them.
 
@@ -178,7 +178,15 @@ In this activity, students now get a chance to take some time and break off into
 
 ---
 
-### 9. Instructor Do: Introduce Homework (10 mins)
+### 9. Student Do: Group Thought Experiment (25 mins)
+
+---
+
+### 10. Instructor Do: Review Group Thought Exeriment  (10 mins)
+
+---
+
+### 11. Instructor Do: Introduce Homework (10 mins)
 
 In this activity, the instructor will go over the unit `1` homework and define its requirements.
 
