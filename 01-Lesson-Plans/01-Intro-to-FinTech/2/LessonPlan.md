@@ -172,7 +172,7 @@ Then, overview the following overarching trends that appear across all domains o
 
 ### 5. Student Do: Investigate FinTech Domains (20 mins)
 
-By this point, students have been given examples of both the major domains within FinTech as well as the overarching trends across the industry. Now, students will pair off into groups of `3-4` individuals and conduct some research of the various FinTech domains on their own.
+By this point, students have been given examples of both the major domains within FinTech as well as the overarching trends across the industry. The instructor should now place students into groups of `2-4` individuals to conduct some research of the various FinTech domains on their own.
 
 **File:** [README.md](01-Stu_FinTech_Domains/README.md)
 
@@ -216,7 +216,7 @@ Open the slideshow while walking through the following:
 
 ### 9. Student Do: FinTech Payments Case Study (20 mins)
 
-In this activity, students will pair off into groups of `3-4` individuals once again to create a case study on a particular FinTech payments technology that rivals Stripe.
+In this activity, the instructor should place students into groups of `2-4` individuals once again to create a case study on a particular FinTech payments technology that rivals Stripe.
 
 **File:** [README.md](02-Stu_FinTech_Case_Study/README.md)
 
