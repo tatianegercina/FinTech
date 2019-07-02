@@ -8,7 +8,11 @@ Walk through the following steps:
 
   * Open your terminal (Mac) or git-bash (Windows).
 
+  * Check your current working directory.
+
   * Navigate to your Desktop.
+
+  * Confirm your current working directory is at the Desktop.
 
   * Create a folder called `Terminal-Test`.
 

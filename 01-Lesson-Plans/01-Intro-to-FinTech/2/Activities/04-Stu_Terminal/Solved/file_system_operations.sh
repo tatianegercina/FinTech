@@ -1,7 +1,13 @@
 # This bash shell script performs the following file system operations.
 
-# Navigate to your Desktop
+# Check current directory.
+pwd
+
+# Navigate to your Desktop.
 cd ~/Desktop
+
+# Confirm your current working directory is at the Desktop.
+pwd
 
 # Create a folder called `Terminal-Test`.
 mkdir Terminal-Test
@@ -16,8 +22,11 @@ mkdir Folder_2
 # Navigate into `Folder_1`.
 cd Folder_1
 
-# Create a file named `terminal.txt` and insert the text `First time for everything!`, save the file.
-vi terminal.txt
+# Create an empty file named `terminal.txt`.
+touch terminal.txt
+
+# Edit the file `terminal.txt` with VS Code.
+code terminal.txt
 
 # Read the file `terminal.txt` and output the results to the console.
 cat terminal.txt
