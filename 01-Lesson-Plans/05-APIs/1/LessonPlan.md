@@ -122,13 +122,13 @@ If time remains, communicate to students that if they wanted to automate the NAS
 
   2. Actions/requests are executed
 
-  2. Action/request output is reviewed
+  3. Action/request output is reviewed
 
 * The **WrapAPI** could actually be used to submit Quandl API requests via a web browser as well. **WrapAPI** could automate the process of copying and pasting the request URL into the browser.
 
 Before ending this activity, let students know that this is just the beginning in terms of available APIs for use. Ask if there are any questions prior to moving onto the next activity.
 
-### 2. Instructor Do: Review Homework (5 mins)
+### 2. Instructor Do: Review Homework (10 mins)
 
 Students will receive a demo of the homework from the instructor.
 
@@ -155,10 +155,6 @@ Ask the students if there are any questions related to the homework.
 Now that students know what APIs are and how to execute them, it's time they learn what goes on in the back-end when an API request is sent. Students will learn the various components of the **client-server model** through instructor demonstration.
 
 Part of the demonstration will include showing students the client-server model by **pinging** Yahoo Finance. Make sure to have a terminal open and ready for the demo.
-
-**Files:**
-
-* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
 
 Navigate to the 5.1 slides for the **client-server model**, and highlight the following:
 
@@ -212,29 +208,29 @@ This activity drives home the discussion on the client server model by having st
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Client_Server/README.md)
+* [README.md](Activities/01-Stu_Eavesdropping_On_Server/README.md)
 
 - - -
 
-### 5. Instructor Do: Review Client-Server Model (5 mins)
+### 5. Instructor Do: Eavesdropping on the Server Activity Review (5 mins)
 
 **Files:**
 
-* [eavesdropping.md](Activities/04-Stu_Client_Server/Solved/eavesdropping.md)
+* [eavesdropping.md](Activities/01-Stu_Eavesdropping_On_Server/Solved/eavesdropping.md)
 
 Open the solution and walkthrough the following:
 
 * Firefox, Chrome, and Safari all offer developer consoles that allow users to see requests being exchanged between clients and servers.
 
-  ![first_response.png](Activities/04-Stu_Client_Server/Images/first_response.png)
+  ![first_response.png](Activities/01-Stu_Eavesdropping_On_Server/Images/first_response.png)
 
 * Requests sent from a client to a server are commonly either `GET` or `POST`. `GET` requests retrieve data from a server. `POST` requests submit data to a server.
 
-  ![console_comm.png](Activities/04-Stu_Client_Server/Images/console_comm.png)
+  ![console_comm.png](Activities/01-Stu_Eavesdropping_On_Server/Images/console_comm.png)
 
 * Both types of requests are submitted using URLs. These URLs can be customized to specify what should be retrieved with the `GET` function and what should be submitted with the `POST` request. For example, searching on Google submits a `GET` request, and the search term/query is transmitted to the Google servers with the `GET` request.
 
-  ![console_search.png](Activities/04-Stu_Client_Server/Images/console_search.png)
+  ![console_search.png](Activities/01-Stu_Eavesdropping_On_Server/Images/console_search.png)
 
 Engage students by asking some of the following review questions:
 
@@ -267,8 +263,6 @@ Be sure to have the **Postman** client installed prior to beginning this activit
 **Files:**
 
 * [Postman Install Guide](../../Supplementary/PostmanInstallGuide.md)
-
-* [postman.md](Activities/06-Ins_Postman/Solved/postman.md)
 
 Briefly recap on how APIs have been submitted so far. Ask the students:
 
@@ -334,11 +328,11 @@ Instruct students to inform the TAs when they are finished. The next activity wi
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Postman/README.md)
+* [README.md](Activities/02-Stu_I_Spy_An_Api/README.md)
 
 - - -
 
-### 8. Students Do: Parle-vouz le JSON? (5 mins)
+### 8. Students Do: Parlez-vous le JSON? (5 mins)
 
 In this activity, students will choose a sub-selection of the JSON output to decipher. They will then explain the sub-selection to a peer. The key to working with APIs is being able to decipher their output. Because API output is commonly in JSON format, students will need practice deciphering JSON structures and syntax.
 
@@ -346,11 +340,11 @@ Walk around and instruct TAs to circulate during this activity so that students 
 
 **Instructions:**
 
-* [README.md](Activities/08-Stu_Decipher_Json/README.md)
+* [README.md](Activities/03-Stu_Parlez_Vous_Le_Json/README.md)
 
 - - -
 
-### 9. Instructor Do: Review JSON Turn and Teach (5 mins)
+### 9. Instructor Do: Parlez-vous le JSON Activity Review (5 mins)
 
 Instructor and students will review the JSON turn and teach activity. The instructor will complete a live demo of submitting an API request and deciphering the JSON output.
 
@@ -394,7 +388,7 @@ The World Bank API (GDP extraction) should be used for this instructor demonstra
 
 **Files:**
 
-* [python_requests.ipynb](Activities/10-Ins_Python_Requests/Solved/python_requests.ipynb)
+* [python_requests.ipynb](Activities/04-Ins_Python_Requests/Solved/python_requests.ipynb)
 
 Navigate to the 5.1 slides, and highlight the following:
 
@@ -514,11 +508,11 @@ Walk around with TAs to provide assistance to students with parsing JSON data. S
 
 **Files:**
 
-* [python_requests.ipynb](Activities/11-Stu_Python_Requests/Unsolved/python_requests.ipynb)
+* [python_requests.ipynb](Activities/05-Stu_Ice_Breakers_on_Request/Unsolved/python_requests.ipynb)
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_Python_Requests/README.md)
+* [README.md](Activities/05-Stu_Ice_Breakers_on_Request/README.md)
 
 - - -
 
@@ -550,11 +544,11 @@ Ask students if there are any comments or questions they'd like to make regardin
 
 - - -
 
-### 13. Instructor Do: Review Python Requests (10 mins)
+### 13. Instructor Do: Ice Breakers on Request Activity Review (10 mins)
 
 **Files:**
 
-* [python_requests.ipynb](Activities/11-Stu_Python_Requests/Solved/python_requests.ipynb)
+* [python_requests.ipynb](Activities/05-Stu_Ice_Breakers_on_Request/Solved/python_requests.ipynb)
 
 Open the solution and conduct a dry walkthrough review, highlighting the following discussion points:
 
@@ -627,7 +621,7 @@ In this activity, students learn how to customize API requests with **parameters
 
 **Files:**
 
-* [url_parameters.ipynb](Activities/15-Ins_URL_Parameters/Solved/url_parameters.ipynb)
+* [url_parameters.ipynb](Activities/06-Ins_URL_Parameters/Solved/url_parameters.ipynb)
 
 Navigate to the 5.1 slides, and highlight the following:
 
@@ -710,7 +704,7 @@ Ask the students if they have any remaining questions before moving on.
 
 - - -
 
-### 16. Students Do: House of Requests (20 mins)
+### 16. Students Do: House of Requests (25 mins)
 
 This activity is dedicated to giving the students an opportunity to use a fun API. Students play a game of BlackJack using the **Deck of Cards** API. The key skills reinforced in this activity include the execution of `GET` requests using the Python `requests library`, extraction of JSON elements, and parameterization of API **request URLs**.
 
@@ -718,19 +712,19 @@ Students can play the game against a classmate or imaginary dealer. Students are
 
 **Files:**
 
-* [url_parameters.ipynb](Activities/16-Stu_URL_Parameters/Unsolved/url_parameters.ipynb)
+* [url_parameters.ipynb](Activities/07-Stu_House_of_Requests/Unsolved/url_parameters.ipynb)
 
 **Instructions:**
 
-* [README.md](Activities/16-Stu_URL_Parameters/README.md)
+* [README.md](Activities/07-Stu_House_of_Requests/README.md)
 
 - - -
 
-### 17. Instructor Do: Review URL Parameters (5 mins)
+### 17. Instructor Do: House of Requests Activity Review (5 mins)
 
 **Files:**
 
-* [url_parameters.ipynb](Activities/16-Stu_URL_Parameters/Solved/url_parameters.ipynb)
+* [url_parameters.ipynb](Activities/07-Stu_House_of_Requests/Solved/url_parameters.ipynb)
 
 Facilitate a dry walk through of the solution utilizing the following discussion points:
 
