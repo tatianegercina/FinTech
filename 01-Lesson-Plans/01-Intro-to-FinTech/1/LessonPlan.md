@@ -130,7 +130,7 @@ Continuing in the slideshow, walk through the following narrative about the cour
 
   * `Week 22`: Reserved for additional topics specific to each university partner.
 
-  * `Week 23-24:` Students are tasked with their final project.
+  * `Weeks 23-24:` Students are tasked with their final project.
 
 ![fintech-curriculum](Images/fintech-curriculum.png)
 
