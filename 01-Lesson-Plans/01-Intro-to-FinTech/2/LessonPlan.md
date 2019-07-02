@@ -4,25 +4,25 @@
 
 ### Overview
 
-Today's class will focus on command line basics and git (using a graphical user interface (GUI)) and then proceed to further investigating the key stimuli and impacts that have lead to the exponential growth of the FinTech industry. Specifically, students will develop the basic command line and git download/upload skills that will aid them in using the more advanced git CLI in the next lesson. In addition, students will learn more about the history of FinTech, the particular domains it has helped disrupt, and also create their own case studies on a particular FinTech (Payments) company.
+Today's class will focus on command line basics and git (using a graphical user interface (GUI)) and then proceed to further investigating the key stimuli and impacts that have lead to the exponential growth of the FinTech industry. Specifically, students will develop the basic command line and git download/upload skills that will aid them in using the more advanced git CLI in the next lesson as well as learn more about the history of FinTech, the particular domains it has helped disrupt, and collaborate to create their own case studies on a particular FinTech (Payments) company.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Outline the evolution of the FinTech industry.
-* Map out the domains of the FinTech industry.
-* Perform a case study on a FinTech company.
 * Use the terminal/command line to execute basic file system operations.
 * Download/upload files to GitHub using the git GUI.
+* Deconstruct the factors that lead to the evolution of the FinTech industry.
+* Map out the disrupted domains of the FinTech industry.
+* Perform a case study on a FinTech (Payments) company.
 
 ### Instructor Notes
 
-* This lesson will be a good crash course on where FinTech has been and where it is now! Make sure to have energy when you present FinTech's history -- FinTech has made a lot of progress over the years!
+* Students may have trouble grasping the notion of the command line. Think of it like this, when students double-click into a folder to change directories, they are essentially executing a backend `cd` command that initiates upon the signal of a double-click into a folder. In other words, the GUI that a student sees is merely a visual overlay of the backend operations of the computer.
+
+* Knowing a brief history of FinTech is just as important as knowing what FinTech is. Employers will want to know that students not only have the technical skills to perform their jobs, but also the contextual knowledge of what is happening in the financial services industry.
 
 * Be thorough when explaining case study requirements and showcasing a completed case study for students to model off of. Case studies can vary widely in length depending on the audience for which it was written. Therefore, for the sake of the time, case studies should be comprehensive but shouldn't be overly long.  
-
-* Students may have trouble grasping the notion of the command line. Think of it like this, when students double-click into a folder to change directories, they are essentially executing a backend `cd` command that initiates upon the signal of a double-click into a folder. In other words, the GUI that a student sees is merely a visual overlay of the backend operations of the computer.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
