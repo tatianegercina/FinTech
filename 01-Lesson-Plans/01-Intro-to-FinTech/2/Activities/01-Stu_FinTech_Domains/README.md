@@ -4,7 +4,7 @@ You've just learned what the major domains and trends in FinTech are, and now it
 
 ## Instructions
 
-Formulate groups of `3-4` individuals and research the following questions:
+Answer the following questions:
 
   * What areas are you most interested in, and why?
 
@@ -12,4 +12,4 @@ Formulate groups of `3-4` individuals and research the following questions:
 
   * Were there any domains that we left out? (Hint: e.g. RegTech) If so, what are some other domains of note?
 
-  * Be prepared for a light class discussion!
+Be prepared for a light class discussion!
