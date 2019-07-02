@@ -132,9 +132,9 @@ Highlight the following points when it comes to setting up a git repository and 
 
   ![github-repo-unzipped](Images/github-repo-unzipped.png)
 
-* Navigating through the terminal and performing edits via the command-line may seem unfamiliar and inefficient at first; however, most veteran developers will agree that familiarity with the terminal is critical as it demonstrates a developer's understanding of low-level functions and provides an interactive shell when no graphical user interface (GUI) exists. For example, when connecting remotely to another machine via the SSH or Secure Shell Protocol.
+* Using the `code` command line utility is often used as a quick shortcut to jump from the terminal to editing files directly in VS Code. 
 
-  ![terminal-familiarity](Images/terminal-familiarity.png)
+  ![vscode-familiarity](Images/vscode-familiarity.png)
 
 * After modifying the `README.md` file on the local file system, changed files will have to be pushed or re-uploaded to the online repository.
 
