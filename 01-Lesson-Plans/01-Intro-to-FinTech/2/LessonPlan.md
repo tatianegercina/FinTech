@@ -64,6 +64,8 @@ Open up the terminal (Mac) or git-bash (Windows) and walk through the following 
 
   * `touch <FILENAME>` (Creates a new empty file with the file name as <FILENAME>).
 
+  * `code <FILENAME>` (Opens up a file in the VS Code editor).
+
   * `cat <FILENAME>` (Reads a file and outputs to the terminal)
 
   * `rm <FILENAME>` (Deletes a file).
@@ -101,6 +103,8 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
   * `touch` will create an empty file.
 
   * `cat` reads files and outputs the results to the console.
+
+  * `code` open files in the VS Code editor.
 
   * `cd ..` will navigate up one level.
 
