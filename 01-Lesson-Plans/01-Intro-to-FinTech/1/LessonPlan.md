@@ -172,13 +172,17 @@ In this activity, students now get a chance to take some time and break off into
 
 * Give each group `2-3` minutes to orally present their findings.
 
-* Once all groups have presented, tie everything back together by explaining that FinTech is the implementation of technology to the finance industry, but what it *means* to each individual person can differ. Some see FinTech as a way to upgrade their current skills and be more employer marketable; some see FinTech as a way to solve the inefficiencies in their current finance role; some see FinTech as a path to embarking on a new career supported by growing demand. 
+* Once all groups have presented, tie everything back together by explaining that FinTech is the implementation of technology to the finance industry, but what it *means* to each individual person can differ. Some see FinTech as a way to upgrade their current skills and be more employer marketable; some see FinTech as a way to solve the inefficiencies in their current finance role; others see FinTech as a path to embarking on a new career supported by growing demand. 
 
 * Despite students' differing reasons for wanting to learn more about FinTech, every student has made the leap to take this course. Therefore, encourage students to continue to get to know each other as they'll be "together in the trenches" for the next `26` weeks and could serve as valuable network connections after the completion of the course. 
 
 ---
 
 ### 9. Student Do: Group Thought Experiment (25 mins)
+
+In this activity, students will once again break off into groups of `3-4` to devise a solution to a traditional finance problem that FinTech has come to solve. This group thought experiment should put students in the mindset of how technology has been applied to bolster the financial services industry.
+
+**File:** [README.md](Activities/02-Stu_FinTech_Thought_Experiment/README.md)
 
 ---
 
