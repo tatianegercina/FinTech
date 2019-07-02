@@ -483,23 +483,23 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 10. Students Do: Stock Price Forecasting (15 mins)
+### 10. Students Do: Financial Forecasting Part I (15 mins)
 
 In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical `TSLA` daily returns.
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Simulation_of_Stock_Price_Trajectory/README.md)
+* [README.md](Activities/06-Stu_Financial_Forecasting_Pt_I/README.md)
 
 **Files:**
 
-* [financial_forecasting_part_1.ipynb](Activities/06-Stu_Simulation_of_Stock_Price_Trajectory/Unsolved/financial_forecasting_part_1.ipynb)
+* [financial_forecasting_part_1.ipynb](Activities/06-Stu_Financial_Forecasting_Pt_I/Unsolved/financial_forecasting_part_1.ipynb)
 
 ### 11. Instructor Do: Review Stock Price Forecasting (5 mins)
 
 **Files:**
 
-* [financial_forecasting_part_1.ipynb](Activities/04-Stu_Simulation_of_Stock_Price_Trajectory/Solved/financial_forecasting_part_1.ipynb)
+* [financial_forecasting_part_1.ipynb](Activities/06-Stu_Financial_Forecasting_Pt_I/Solved/financial_forecasting_part_1.ipynb)
 
 Open the solution and explain the following:
 
@@ -594,23 +594,23 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 14. Students Do: Probable Stock Price Forecasting (15 mins)
+### 14. Students Do: Financial Forecasting Part II (15 mins)
 
 In this activity, students execute a Monte Carlo simulation to forecast the many different possibilities of simulated stock price trajectories, thereby analyzing the frequency/probability of potential `TSLA` stock price outcomes.
 
 **Instructions:**
 
-* [README.md](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/README.md)
+* [README.md](Activities/08-Stu_Financial_Forecasting_Pt_II/README.md)
 
 **Files:**
 
-* [financial_forecasting_part_2.ipynb](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Unsolved/financial_forecasting_part_2.ipynb)
+* [financial_forecasting_part_2.ipynb](Activities/08-Stu_Financial_Forecasting_Pt_II/Unsolved/financial_forecasting_part_2.ipynb)
 
 ### 15. Instructor Do: Review Probable Stock Price Forecasting (5 mins)
 
 **Files:**
 
-* [financial_forecasting_part_2.ipynb](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Solved/financial_forecasting_part_2.ipynb)
+* [financial_forecasting_part_2.ipynb](Activities/08-Stu_Financial_Forecasting_Pt_II/Solved/financial_forecasting_part_2.ipynb)
 
 Open the solution and explain the following:
 
@@ -779,17 +779,17 @@ In this activity, students execute a Monte Carlo simulation to forecast the pote
 
 **Instructions:**
 
-* [README.md](Activities/10-Stu_Portfolio_Forecasting/README.md)
+* [README.md](Activities/10-Stu_Financial_Forecasting_Pt_III/README.md)
 
 **Files:**
 
-* [financial_forecasting_part_3.ipynb](Activities/10-Stu_Portfolio_Forecasting/Unsolved/financial_forecasting_part_3.ipynb)
+* [financial_forecasting_part_3.ipynb](Activities/10-Stu_Financial_Forecasting_Pt_III/Unsolved/financial_forecasting_part_3.ipynb)
 
 ### 19. Instructor Do: Review Financial Forecasting Part III (5 mins)
 
 **Files:**
 
-* [financial_forecasting_part_3.ipynb](Activities/10-Stu_Portfolio_Forecasting/Solved/financial_forecasting_part_3.ipynb)
+* [financial_forecasting_part_3.ipynb](Activities/10-Stu_Financial_Forecasting_Pt_III/Solved/financial_forecasting_part_3.ipynb)
 
 Open the solution and explain the following:
 
