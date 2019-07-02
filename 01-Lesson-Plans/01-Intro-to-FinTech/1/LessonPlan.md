@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Introductions (40 mins)
 
-In this activity, every member associated with the current FinTech course will introduce themselves to break the ice and develop a foundation of familiarity. This includes student success managers (SSMs), university staff, program directors, student services directors, career directors, individual students, instructors, and teacher assistants (TAs).
+In this activity, every member associated with the current FinTech course will introduce themselves to break the ice and get to know each other. This includes student success managers (SSMs), university staff, program directors, student services directors, career directors, individual students, instructors, and teacher assistants (TAs).
 
 * The first `40` minutes of class consists of introductions from the following:
 
@@ -60,25 +60,25 @@ In this activity, every member associated with the current FinTech course will i
 
 ### 2. Instructor Do: The Rise of FinTech (10 mins)
 
-* Now it is time to transition the conversation to make a rousing case for why cybersecurity is such a hot skill today.
+In this activity, the instructor should engage students with a facilitated discussion on FinTech and why it has become so prevalent today.
 
-* Use the slides to help guide your discussion, in doing so point out the following:
+**File:** [slideshow-placeholder]()
 
-  * That there has been an explosive growth in the dependence on IT systems. 
+Use the slides to help guide your discussion, and in doing so point out the following:
 
-  * More users online mean more potential targets. 
+  * Recent technological advancements in (big) data and mobile network infrastructure has lead to a consumer desire for companies to not only provide more efficent (data-driven) services but also quality engagement through scalable mobile platforms.
 
-  * Hackers are getting increasingly sophisticated and aggressive in the audacity of their attacks.
+  * Due to the changing consumer landscape, large financial firms who have been traditionally slower to adopt newer technologies have been forced to make larger investments in technology to keep up with consumer demand.
 
-  * Cybercriminals are getting more organized.
+  * Market analysis shows that global FinTech investment has grown dramatically in recent years.
 
-  * Huge job shortages exist for security professionals.
+  * As a result, there is a growing demand for technical specialists that have the backgrounds and experiences to navigate financial waters.
 
-* As you are discussing these slides, look for opportunities to engage students into thoughtful reflection. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer. 
+* As you are discussing these slides, look for opportunities to engage students into thoughtful reflection. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer.
 
-  **EXAMPLE:** Ask them to share their own examples of a breach they've heard about in the news.
+  **EXAMPLE:** Ask students to share their own examples of an innovative FinTech company they've heard about.
 
-  ![assets/01-CyberRise.png](assets/01-CyberRise.png)
+  ![fintech-rise](Images/fintech-rise.png)
 
 ---
 
