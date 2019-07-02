@@ -110,7 +110,7 @@ Present to the class the following questions and answers:
 
 ### 4. Instructor Do: Course Overview (20 mins)
 
-In this activity, instructors will overview the topics and technologies used in the course as well the timeline for each topic or unit. 
+In this activity, the instructor should overview the topics and technologies used in the course as well the timeline for each topic or unit. 
 
 **File:** [slideshow-placeholder]()
 
@@ -138,21 +138,21 @@ Continuing in the slideshow, walk through the following narrative about the cour
 
 ### 5. Instructor Do: Tips (10 mins)
 
-* The next series of slides is meant to give students the right perspective coming in. 
+In this activity, the instructor should provide students some encouragement and tips for overcoming the mental frustrations they will more than likely face throughout the course. 
 
-* Take a few moments to assuage student fears of being a "beginner." Let them know that having a humble attitude is the first requirement of being successful in this program. In a way, students should channel their inner toddler and recognize that "knowing nothing" and admitting such will allow them to dig their heels in and invest the time necessary to succeed. In a way, being in this program will be like nothing else these students have attempted to do. Their mastery of other subjects, their educational backgrounds, and their professional successes do not guarantee that they will do well here. The only thing that will guarantee success is hard work, humility, and a relentless desire to be better. Recognizing how little you know is a first step towards creating that urgency.
+**File:** [slideshow-placeholder]()
 
-    ![assets/04-Tips01.png](assets/04-Tips01.png)
+Open the next series of slides and emphasize the following points: 
 
-* As you review the remaining tips, give students perspective on the "Path of Learning:"
+  * Having a humble attitude is the first requirement of being successful in this program. In a way, students should channel their inner toddler and recognize that "knowing nothing" and admitting such will allow them to dig their heels in and invest the time necessary to succeed. In a way, being in this program will be like nothing else these students have attempted to do. Their mastery of other subjects, their educational backgrounds, and their professional successes do not guarantee that they will do well here. The only thing that will guarantee success is hard work, humility, and a relentless desire to be better. Recognizing how little you know is a first step towards creating that urgency.
 
-  * First, learning all the skills in this course will feel tough, intimidating, and frustrating at times. They should immediately forget about their uncle/brother-in-law/friend/step-sister who told them about so-and-so learning to hack in 1 week. Becoming a skilled professional is challenging. It will take time. There is no way around that.
+  * Learning all the skills in this course will feel tough, intimidating, and frustrating at times. Students should immediately forget about their uncle/brother-in-law/friend/step-sister who told them about so-and-so learning to hack in `1` week. Becoming a skilled professional is challenging and will take time. There is no way around that.
 
-  * Second, because of how hard this can be, there will be many moments where students will doubt themselves. Take this chance to help them overcome this obstacle ahead of time by building up their confidence. Tell them that you had to start at the beginning (knowing nothing) just like they did, that it takes time but that they have what it takes. Remind them that they were selected for this program because we know they have what it takes.
+  * Because of how hard this course can be, there will be many moments where students will doubt themselves. However, students should know that everyone starts as a beginner, even the instructor himself/herself. In addition, students were enrolled in this program because they were screened and determined to have what it takes to complete the course -- so have faith! 
 
-  * Lastly, because of the length of the program, personal issues WILL come up during the course of the program. The idealism and can-do attitude students enter with on Day 1 will be challenged by the length of the course. Let students know that they should see each other as a family embarking on a long journey. They will become far closer to their peers than they realize. Intensity is no substitute for endurance.
+  * Due to the length of the program, psychological burnout *will* come up during the course of the program. The idealism and can-do attitude students enter with on Day `1` will be challenged over time as activities and topics become more intense. Therefore, students should see each other as a family embarking on a long and difficult journey together, and should support each other when times get tough.
 
-* Let them know that learning is supposed to be frustrating. It's a process, and they should stick with it!
+  * Lastly, learning is supposed to be frustrating! It's a process, and no matter what stick with it! Things only get easier when we choose to embrace the difficulty.
 
 ---
 
