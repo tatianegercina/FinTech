@@ -178,7 +178,7 @@ In this activity, students now get a chance to take some time and break off into
 
 ---
 
-### 9. Student Do: LendingClub Thought Experiment (25 mins)
+### 9. Student Do: Lending Thought Experiment (25 mins)
 
 In this activity, students will once again break off into groups of `3-4` to devise a solution to the traditional borrowing/lending finance problem that FinTech has come to solve. This group thought experiment should put students in the mindset of how technology has been applied to bolster the financial services industry.
 
@@ -186,9 +186,25 @@ In this activity, students will once again break off into groups of `3-4` to dev
 
 ---
 
-### 10. Instructor Do: LendingClub Thought Experiment  (10 mins)
+### 10. Instructor Do: Review Lending Thought Experiment  (10 mins)
 
-**File:** [](Activities/)
+**File:** [slideshow-placeholder]()
+
+* Give each group `1-2` minutes to briefly explain their solution and how it solves the traditional lending problem.
+
+* After each group has presented their findings, open the slideshow and go over the following:
+
+  * The traditional lending space has become disrupted with the advent of peer-to-peer lending.
+
+  * As the name suggests, peer-to-peer lending involves connecting borrowers and lenders from a marketplace of *individuals* rather than between an individual and a *financial institution*.
+
+  * Peer-to-peer lending invokes lower loan interest rates because there is a greater selection (and therefore competition) amongst potential borrowers and lenders.
+
+  * Because there is a greater selection of potential borrowers and lenders in peer-to-peer lending, there is also higher degree of tolerance when it comes to loan eligibility requirements; financial institutions may need to abide by minimum loan eligibility requirements, a personal investor/lender on the other hand does not.
+
+  * LendingClub is a prime example of peer-to-peer lending. LendingClub is the world's leading online marketplace for connecting borrowers and investors and their mission is to transforming the banking industry to make it more transparent, efficient, and customer-friendly.
+
+Ask the students if they have any questions before moving on.
 
 ---
 
