@@ -82,7 +82,7 @@ For example, ask students to share their own examples of an innovative FinTech c
 
 ---
 
-### 3. Instructor Do: Intro to Fintech (15 mins)
+### 3. Instructor Do: Defining Fintech (15 mins)
 
 In this activity, the instructor discusses the exact nature of what the key word *FinTech* entails.
 
@@ -90,15 +90,21 @@ Present to the class the following questions and answers:
 
   * What exactly *is* FinTech?
 
-    * **Answer:** As the term suggests, FinTech is the combination of finance and technology. Specifically, FinTech is the technology and innovation that aims to compete with traditional financial methods and improve activities or inefficiencies in finance.
+    * **Answer:** Generally, as the term suggests, FinTech is the combination of finance and technology. More specifically, however, FinTech refers to the financial services industry that has been disrupted by technological innovation that aims to compete with traditional financial methods and improve activities or inefficiencies in finance.
 
-  * Why has FinTech become prevalent/important?
+  * What defines a FinTech company?
 
-    * **Answer:** Traditionally the finance realm tends to be slow moving in regards to technology as they lean toward the operational mantra of "if it ain't broke don't fix it, especially when it comes to people's money". However, rapid advancements in technology have bolstered the ability for smaller companies to innovate and disrupt many traditional financial domains. Thus, larger and traditional finance firms have been forced to compete and upgrade their own technologies, thereby creating technological demand and a need for skilled technical workers.
+    * **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through backend network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups: infrastructure providers, large technology ecosystems, new entrants/start-ups, and incumbent financial institutions.
+
+  * Why has FinTech become so important?
+
+    * **Answer:** Rapid advancements in technology have bolstered the ability for smaller companies to innovate and disrupt many traditional financial domains. Thus, larger and traditional finance firms have been forced to compete and upgrade their own technologies, thereby creating technological demand and a need for skilled technical workers.
 
   * What kind of careers are to be expected in FinTech?
 
     * **Answer:** Because FinTech is just the implementation of technology within the financial domain, FinTech careers are largely similar to that of the IT industry. It's quite common to see general data analyst, data/software engineer, and data scientist roles; however, these roles may be more specifically named as quantitative analysts/traders or portfolio analysts, for example.
+
+  ![fintech-categories](Images/fintech-categories.png)
 
 ---
 
