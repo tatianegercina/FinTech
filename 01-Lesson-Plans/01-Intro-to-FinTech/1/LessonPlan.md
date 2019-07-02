@@ -122,13 +122,11 @@ Continuing in the slideshow, walk through the following narrative about the cour
 
   * `Weeks 8-9`: Students are tasked with their first project.
 
-  * `Weeks 10-14`: Companies are becoming more and more data-driven in their decision making. Therefore, through machine learning, students will need to learn how to not only interpret and create financial models, but also how to automate the execution of such models. Topics include algorithmic trading, robo-advisory, time series analysis, risk management, and cloud-ml technologies.
+  * `Weeks 10-15`: Companies are becoming more and more data-driven in their decision making. Therefore, through machine learning, students will need to learn how to not only interpret and create financial models, but also how to automate the execution of such models. Topics include algorithmic trading, robo-advisory, time series analysis, risk management, and cloud-ml technologies.
 
-  * `Weeks 15-16`: Students are tasked with their second project.
+  * `Weeks 16-17`: Students are tasked with their second project.
 
-  * `Weeks 17-21`: With its benefits of security, speed, and decentralized peer-to-peer validation, Blockchain technology has already become more efficient than tradtional finance in the context of transactions and third-party validation. Thus, students will learn about Blockchain fundamentals, smart contracts using Solidity, and how to develop Blockchain applications on the popular Ethereum blockchain network.
-
-  * `Week 22`: Reserved for additional topics specific to each university partner.
+  * `Weeks 18-22`: With its benefits of security, speed, and decentralized peer-to-peer validation, Blockchain technology has already become more efficient than tradtional finance in the context of transactions and third-party validation. Thus, students will learn about Blockchain fundamentals, smart contracts using Solidity, and how to develop Blockchain applications on the popular Ethereum blockchain network.
 
   * `Weeks 23-24:` Students are tasked with their final project.
 
