@@ -196,6 +196,10 @@ Live demo the following walkthrough:
 
   ![github-url](Images/github-url.png)
 
+* Open up a terminal and run a `pwd` in the terminal to determine the current work directory. Then perform a `cd` operation to navigate to the Desktop.
+
+  ![terminal-pwd-cd](Images/terminal-pwd-cd.png)
+
 * Run a `git clone <repository link>` in the terminal to clone the repo to the current directory. Copying a repository via the `git clone` command differs from just downloading a `.zip` file of the repository as the `git clone` command downloads a tracked git repository onto the local filesystem while the `.zip` file merely download the contents without any kind of tracking or version control involved.
 
   ![git-clone](Images/git-clone.png)
