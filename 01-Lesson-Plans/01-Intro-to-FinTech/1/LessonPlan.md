@@ -94,7 +94,7 @@ Present to the class the following questions and answers:
 
   * What defines a FinTech company?
 
-    * **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through backend network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups: infrastructure providers, large technology ecosystems, new entrants/start-ups, and incumbent financial institutions.
+    * **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through backend network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups: *infrastructure providers*, *large technology ecosystems*, *new entrants/start-ups*, and *incumbent financial institutions*.
 
   * Why has FinTech become so important?
 
