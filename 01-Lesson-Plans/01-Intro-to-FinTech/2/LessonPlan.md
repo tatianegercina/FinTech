@@ -60,17 +60,9 @@ Open up the terminal (Mac) or git-bash (Windows) and walk through the following 
 
   * `pwd` (Shows the current directory).
 
-  * `mkdir <FOLDERNAME>` (Creates a new directory with the FOLDERNAME).
+  * `mkdir <FOLDERNAME>` (Creates a new directory with the folder name as <FOLDERNAME>).
 
-  * `vi <FILENAME>` (Creates a new file with the FILENAME and initializes the command line editor).
-
-    * `I` (Insert text)
-
-    * `ESC` (Escape out of editor focus)
-
-    * `q!` (Exit without saving)
-
-    * `wq!` (Exit and save)
+  * `touch <FILENAME>` (Creates a new empty file with the file name as <FILENAME>).
 
   * `cat <FILENAME>` (Reads a file and outputs to the terminal)
 
