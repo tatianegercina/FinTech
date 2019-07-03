@@ -34,11 +34,11 @@ The remaining schedule for Project #1 is as follows:
 
 - - -
 
-### 0. Welcome Class (5 min)
+### 1. Welcome Class (5 min)
 
 Say your hellos and check if students have any questions about past concepts.
 
-### 1. Instructor Do: Ask About Projects (5 min)
+### 2. Instructor Do: Ask About Projects (5 min)
 
 Tell your students how you're excited to see the projects they'll present on Saturday. You should talk about how your impressed with the concepts they've come up with, that they should feel proud about working toward the goals they devised after just spending eight weeks in this course.
 
@@ -50,7 +50,7 @@ Ask the class about their thoughts on the collaboration experience so far and ab
 
 * If no one says anything, they're likely apprehensive about admitting fears to their classmates. Assure them that if they're anxious about their project work, then no doubt other students feel the same way. Encourage them to share these thoughts—talking about them is an essential step to overcoming them.
 
-### 2. Everyone Do: Project Work (1:20)
+### 3. Everyone Do: Project Work (1:20)
 
 Have your students sit with their project groups. Tell the class they should try as best they can to finish 95% of their code and design by the end of the next class. That would give them most of Thursday and Friday to spend on presentations.
 
@@ -66,11 +66,11 @@ TAs and Instructors: For the next 90 minutes, you're Senior Developers! Walk aro
 
 - - -
 
-### 3. BREAK (15 min)
+### 4. BREAK (15 min)
 
 - - -
 
-### 4. Everyone Do: Project Work (1:30)
+### 5. Everyone Do: Project Work (1:15)
 
 Allow students to continue working on their projects.
 
