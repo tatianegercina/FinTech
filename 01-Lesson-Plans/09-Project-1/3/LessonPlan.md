@@ -44,7 +44,7 @@ Give students a rundown of how their presentations should pan out.
 
 Ask which groups would like to go first, then second, then third and so on. When groups stop responding, assign the remaining teams to random slots (and write this list down).
 
-### 3. Presentations Pt.1 (40 min)
+### 3. Presentations Pt.1 (1:30)
 
 * Go down the list and send each group up to the front of class. Give students roughly three minutes of setup time.
 
@@ -62,9 +62,11 @@ Ask which groups would like to go first, then second, then third and so on. When
 
 - - -
 
-### 5. Presentations Pt.2 (40 min)
+### 5. Presentations Pt.2 (1:30)
 
 Just like in step 2, send each group up to the front of class when their turn comes.
+
+### 6. Congratulate Students (10 min)
 
 When the last group finishes, give them an estimate for when they can expect to have their recorded presentations. Tell each of them that they should put their demonstrations up on LinkedIn, along with links to their GitHub repositories.
 
