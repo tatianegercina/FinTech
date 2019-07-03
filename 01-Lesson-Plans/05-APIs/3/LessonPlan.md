@@ -6,19 +6,26 @@
 
 Today's class will focus on the notion of using Monte Carlo simulations to forecast future results and make confident predictions supported by statistical evidence. Monte Carlo simulations are an important tool in emulating a real-world use case that involves a degree of randomness surrounding an event or outcome, and seeks to iterate `n` number of times to find the most probable result of a variable event as well as the range of results and their corresponding probabilities of occurring.
 
-In particular, stocks prices also tend to move somewhat randomly in such a way that there are varying probabilities to where the price may go or deviate from its average return (daily, weekly, monthly). Therefore, this lesson will teach students how to apply the concept of Monte Carlo simulations to predict future stock prices and therefore forecast the potential stocks returns of an initial investment, either as a single stock investment or as an investment in a portfolio.  
+In particular, stocks prices also tend to move somewhat randomly in such a way that there are varying probabilities to where the price may go or deviate from its average return (daily, weekly, monthly). Therefore, this lesson will teach students how to apply the concept of Monte Carlo simulations to predict future stock prices and therefore forecast the potential stocks returns of an initial investment, either as a single stock investment or as an investment in a portfolio.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
 * Define what a simulation is and why it's used.
+
 * Deconstruct the components of the Monte Carlo Simulation process: probability distributions and iterations.
+
 * Interpret probability distributions (normal/bell curve) and random number generators.
+
 * Comprehend the use of confidence intervals and what they suggest.
+
 * Implement a single Monte Carlo simulation on the future price trajectory of a stock.
+
 * Execute multiple Monte Carlo simulations on the future price trajectories of a stock.
+
 * Break down Portfolio Forecasting in the context of Monte Carlo Simulations on stock price trajectories and portfolio returns.
+
 * Implement multiple Monte Carlo simulations on the potential returns of a stock portfolio.
 
 ### Instructor Notes
@@ -47,7 +54,7 @@ Welcome students to the third day of APIs! Cover the following points:
 
 * Mention to the class that today's focus is on using APIs to access stock data that can be manipulated to serve individual needs. Students should feel empowered as they are learning the ways in which they can use other curated data sets to analyze and generate insights on their own.
 
-* Students should be prepared to push their mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.  
+* Students should be prepared to push their mindset from historically analyzing portfolio returns and their performances to charting the possible paths a portfolio may move in the future, thereby making educated predictions on where the portfolio could end up.
 
 * Energize your students! Today is the day where students move from historical to future-oriented analysis. Time to look into the crystal ball!
 
@@ -87,7 +94,7 @@ Monte Carlo Simulations seek to explain the probability of potential outcomes fo
 
 **Files:**
 
-* [coin_flip_simulation.ipynb](Activities/01-Ins_Inside_a_Monte_Carlo_Simulation/Solved/coin_flip_simulation.ipynb)
+* [coin_flip_simulation.ipynb](Activities/01-Ins_Probability_Distributions_of_Potential_Outcomes/Solved/coin_flip_simulation.ipynb)
 
 Walk through the solution and highlight the following:
 
@@ -158,16 +165,16 @@ Walk through the solution and highlight the following:
 
       # Print simulation iteration
       # print(f"Running Simulation {n+1}...")
-    
+
       # Set an empty list to hold flip results
       flips = []
 
       # Flip the coin several times
       for i in range(num_flips):
-        
+
           # Random int: 0 or 1
           coin_flip = random.choice(coin, p=probability)
-        
+
           # Print flip result
           # print(f"  Flip {i+1}: {coin_flip}")
 
@@ -193,13 +200,13 @@ Walk through the solution and highlight the following:
   if 'heads' in value_count.index and 'tails' in value_count.index:
       heads.append(value_count['heads'])
       tails.append(value_count['tails'])
-        
+
   # If `heads` key is not present in the Series, append heads list with 0
   # And append tails list with tails result (simulation must have returned all tails)
   elif 'heads' not in value_count.index:
       heads.append(0)
       tails.append(value_count['tails'])
-        
+
   # If `tails` key is not present in the Series, append tails list with 0
   # And append heads list with heads result (simulation must have returned all heads)
   elif 'tails' not in value_count.index:
@@ -241,6 +248,12 @@ Walk through the solution and highlight the following:
 
 In this activity, students execute a Monte Carlo simulation to analyze the probability distribution of free throws made (out of 10 shots) for a player with a `70%` accuracy and determine the likelihood of the player making `9-10` free throws in a single session.
 
+Circulate with TAs during this activity to provide students with assistance. Below are a couple scenarios to watch out for.
+
+* Students might face difficulty working with the histograms. Histogram **bins** have a default value, and so if the **bins** are not configured properly, the charts might not look as expected (the **bin** edges will be off) and the ranges may deviate from what is being simulated.
+
+* Also keep an eye out for any student issues related to missing data; if heads or tails data is missing, this is most likely because 0 was not appended for the missing values. This could visually result in one side of the distribution being cut off (i.e. non-normal distribution with no values for the first coin flip).
+
 **Instructions:**
 
 * [README.md](Activities/02-Stu_Probability_Distribution_of_Potential_Outcomes/README.md)
@@ -278,16 +291,16 @@ Open the solution and explain the following:
 
       # Print simulation iteration
       # print(f"Running Simulation {n+1}...")
-    
+
       # Set an empty list to hold throw results
       throws = []
 
       # Shoot the ball `10` times
       for i in range(num_throws):
-        
+
           # Randomly choose between `made` and `missed` with a `70%` chance to make the throw and a `30%` chance the throw is missed
           free_throw = random.choice(throw, p=probability)
-        
+
           # Print throw result
           # print(f"  Throw {i+1}: {free_throw}")
 
@@ -368,7 +381,7 @@ In this activity, students execute a Monte Carlo simulation to analyze the proba
 
 * [archery_target_hits.ipynb](Activities/04-Stu_Confidence_Intervals/Unsolved/archery_target_hits.ipynb)
 
-### 8. Instructor Do: Review Free Throw Simulation (5 mins)
+### 8. Instructor Do: Review Archery Target Hits (5 mins)
 
 **Files:**
 
@@ -447,7 +460,7 @@ Walk through the solution and highlight the following:
 
   ![aapl-daily-return-mean-and-std](Images/aapl-daily-return-mean-and-std.png)
 
-* The following code snippet exemplifies the simulation of stock price trajectory. The simulation calculates the next day's simulated closing price by multiplying the preceding day's closing price by a random selection of a range of values defined by the normal probability distribution of `AAPL` daily returns, given by the *mean* and *standard deviation* of daily returns. 
+* The following code snippet exemplifies the simulation of stock price trajectory. The simulation calculates the next day's simulated closing price by multiplying the preceding day's closing price by a random selection of a range of values defined by the normal probability distribution of `AAPL` daily returns, given by the *mean* and *standard deviation* of daily returns.
 
   ```python
   # Simulate the returns for 252 days
@@ -470,23 +483,23 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 10. Students Do: Stock Price Forecasting (15 mins)
+### 10. Students Do: Financial Forecasting Part I (15 mins)
 
 In this activity, students execute a Monte Carlo simulation to forecast stock price by multiplying each preceding day by a randomly generated daily return of normal probability distribution, approximated by a mean and standard deviation of historical `TSLA` daily returns.
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Simulation_of_Stock_Price_Trajectory/README.md)
+* [README.md](Activities/06-Stu_Financial_Forecasting_Pt_I/README.md)
 
 **Files:**
 
-* [financial_forecasting_part_1.ipynb](Activities/06-Stu_Simulation_of_Stock_Price_Trajectory/Unsolved/financial_forecasting_part_1.ipynb)
+* [financial_forecasting_part_1.ipynb](Activities/06-Stu_Financial_Forecasting_Pt_I/Unsolved/financial_forecasting_part_1.ipynb)
 
-### 11. Instructor Do: Review Stock Price Forecasting (5 mins)
+### 11. Instructor Do: Review Financial Forecasting Part I (5 mins)
 
 **Files:**
 
-* [financial_forecasting_part_1.ipynb](Activities/04-Stu_Simulation_of_Stock_Price_Trajectory/Solved/financial_forecasting_part_1.ipynb)
+* [financial_forecasting_part_1.ipynb](Activities/06-Stu_Financial_Forecasting_Pt_I/Solved/financial_forecasting_part_1.ipynb)
 
 Open the solution and explain the following:
 
@@ -504,7 +517,7 @@ Open the solution and explain the following:
 
   ![tsla-normal-distribution](Images/tsla-normal-distribution.PNG)
 
-* Simulations for the next `252` trading shows that `TSLA` stock is forecasted to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years. 
+* Simulations for the next `252` trading shows that `TSLA` stock is forecasted to continue to decline, with a `$10,000` investment facing brutal negative cumulative returns if invested in `TSLA` over the next 3 years.
 
   ![tsla-simulated-price-plot](Images/tsla-simulated-price-plot.PNG)
 
@@ -581,23 +594,23 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 14. Students Do: Probable Stock Price Forecasting (15 mins)
+### 14. Students Do: Financial Forecasting Part II (15 mins)
 
 In this activity, students execute a Monte Carlo simulation to forecast the many different possibilities of simulated stock price trajectories, thereby analyzing the frequency/probability of potential `TSLA` stock price outcomes.
 
 **Instructions:**
 
-* [README.md](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/README.md)
+* [README.md](Activities/08-Stu_Financial_Forecasting_Pt_II/README.md)
 
 **Files:**
 
-* [financial_forecasting_part_2.ipynb](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Unsolved/financial_forecasting_part_2.ipynb)
+* [financial_forecasting_part_2.ipynb](Activities/08-Stu_Financial_Forecasting_Pt_II/Unsolved/financial_forecasting_part_2.ipynb)
 
-### 15. Instructor Do: Review Probable Stock Price Forecasting (5 mins)
+### 15. Instructor Do: Review Financial Forecasting Part II (5 mins)
 
 **Files:**
 
-* [financial_forecasting_part_2.ipynb](Activities/08-Stu_Predicting_Probable_Outcomes_of_Stock_Price_Trajectory/Solved/financial_forecasting_part_2.ipynb)
+* [financial_forecasting_part_2.ipynb](Activities/08-Stu_Financial_Forecasting_Pt_II/Solved/financial_forecasting_part_2.ipynb)
 
 Open the solution and explain the following:
 
@@ -679,7 +692,7 @@ Walk through the solution and highlight the following:
 
   ![multi-level-index-key-notation](Images/multi-level-index-key-notation.png)
 
-* The Monte Carlo simulation projects the stock price trajectory for `JNJ` and `MU` over the course of `252` trading days and returns a DataFrame of `252` records representing each simulated day's closing price. Simulated stock prices are projected by randomly selecting a daily return based off of a normal probability distribution, derived from sample means and standard deviations, and multiplying `1 + np.random.normal(avg_daily_return, std_dev_daily_return)` by the preceding day's closing price. A DataFrame of `252` simulated trading days is returned and the daily returns are calculated using the `pct_change` function.  
+* The Monte Carlo simulation projects the stock price trajectory for `JNJ` and `MU` over the course of `252` trading days and returns a DataFrame of `252` records representing each simulated day's closing price. Simulated stock prices are projected by randomly selecting a daily return based off of a normal probability distribution, derived from sample means and standard deviations, and multiplying `1 + np.random.normal(avg_daily_return, std_dev_daily_return)` by the preceding day's closing price. A DataFrame of `252` simulated trading days is returned and the daily returns are calculated using the `pct_change` function.
 
   ```python
   # Set number of simulations and trading days
@@ -750,7 +763,7 @@ Walk through the solution and highlight the following:
 
   ![portfolio-cumulative-returns-last-row](Images/portfolio-cumulative-returns-last-row.png)
 
-* Plotting a frequency distribution histogram of `10` bins and calculating a probability distribution of `10` bins displays the potential outcomes of ending cumulative portfolio returns.  
+* Plotting a frequency distribution histogram of `10` bins and calculating a probability distribution of `10` bins displays the potential outcomes of ending cumulative portfolio returns.
 
   ![portfolio-cumulative-returns-frequency-distribution](Images/portfolio-cumulative-returns-frequency-distribution.png)
 
@@ -766,17 +779,17 @@ In this activity, students execute a Monte Carlo simulation to forecast the pote
 
 **Instructions:**
 
-* [README.md](Activities/10-Stu_Portfolio_Forecasting/README.md)
+* [README.md](Activities/10-Stu_Financial_Forecasting_Pt_III/README.md)
 
 **Files:**
 
-* [financial_forecasting_part_3.ipynb](Activities/10-Stu_Portfolio_Forecasting/Unsolved/financial_forecasting_part_3.ipynb)
+* [financial_forecasting_part_3.ipynb](Activities/10-Stu_Financial_Forecasting_Pt_III/Unsolved/financial_forecasting_part_3.ipynb)
 
 ### 19. Instructor Do: Review Financial Forecasting Part III (5 mins)
 
 **Files:**
 
-* [financial_forecasting_part_3.ipynb](Activities/10-Stu_Portfolio_Forecasting/Solved/financial_forecasting_part_3.ipynb)
+* [financial_forecasting_part_3.ipynb](Activities/10-Stu_Financial_Forecasting_Pt_III/Solved/financial_forecasting_part_3.ipynb)
 
 Open the solution and explain the following:
 
@@ -841,7 +854,7 @@ Open the solution and explain the following:
 
 * The last row of the DataFrame containing the cumulative portfolio returns of each simulation represents the ending cumulative returns of the portfolio of each simulation. Plotting a frequency distribution and calculating a probability distribution shows the most expected range of cumulative returns for the portfolio.
 
-  ![portfolio-frequency-distribution](Images/portfolio-frequency-distribution.png) 
+  ![portfolio-frequency-distribution](Images/portfolio-frequency-distribution.png)
 
 * Calculating a `95%` confidence interval of potential cumulative portfolio returns as well as potential investment performance showcases the range of cumulative portfolio returns and investment results that have a `95%` likelihood of occurring.
 
@@ -849,19 +862,47 @@ Open the solution and explain the following:
 
 ---
 
-### 20. Instructor Do: Structured Office Hours (25 mins)
+### 20. Recap (25 mins)
 
-Please use the entire office hours time to review questions with the students.
+Is this the end, or is it just another iteration of a simulation? It's actually the end! Welcome to today's finish line.
 
-Suggested Format:
+The content in this lesson is probably the most difficult material students have digested so far. Students were required to whip out every FinTech skill and asset they've learned. This lesson was involved, including portfolio optimization (calculation of returns, standard deviation, risk, etc.) and portfolio forecasting (Monte Carlo, probability distributions, confidence trajectories, and forecasting). And this doesn't even include the Python/Pandas skills they had to leverage!
 
-* Ask students for specific activities to revisit.
+Make sure students can recognize and acknowledge their accomplishments. Communicate that
 
-* Revisit key activities for the homework.
+* They've added another tool to their API/SDK tool belt: the **IEX SDK**, which is a great resource for historical stock data and financial functions.
 
-* Allow students to start the homework with extra TA support.
+* They've taken yet another deep dive into statistics, learning how to create, calculate, and interpret **probability distributions**. This includes using **mean**, **standard deviation**, **daily returns**, Numpy's **random** data generators, and **histograms** in order to implement and visualize portfolio simulations.
 
-Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
+* They've plotted the price trajectory of a stock prices and returns using single and multiple **Monte Carlo simulations**.
+
+* They've **forecasted** average daily return volatility at the stock and portfolio level.
+
+* They've assessed the risk of investing in a stock by predicting the **probability** of stock prices rising or falling over time.
+
+* They've put the **Fin** in **FinTech**, and they're just getting started!
+
+Give students a space to emotionally release. Use this activity as a way to gauge student confidence, frustration, and stress levels.
+
+* Ask students to summarize how they're feeling with a one-word emotion. Ask for volunteers first. If no one volunteers, initiate the activity by using one word to convey how you're feeling, and then go round-robin. Gauge students for verbal and non-verbal cues of stress and confusion (i.e. withdrawal from the activity and/or isolation, irritability or impatience, chronic worrying, pessimistic attitude, and restlessness).
+
+  **Answer** Relieved
+
+  **Answer** Excited
+
+  **Answer** Confused
+
+  **Answer** Empowered
+
+  **Answer** Stressed
+
+  **Answer** Doubtful
+
+* Indicate to students that no matter what they're feeling, either excited and empowered or stressed and doubtful, they've come a long way. Also underscore that they're not alone in their feelings or the journey. Portfolio simulations are no joke, and results can easily be misinterpreted or corrupted, which is why the best of the best are the ones executing simulations.
+
+* Emphasize that students can reach out individually or attend office hours to ask questions, discuss the activities in the lesson, or just release emotionally.
+
+Use the remaining time to get a head start on office hours. Allow students to ask questions about this lesson, the overall unit, and/or the homework.
 
 ### End Class
 
