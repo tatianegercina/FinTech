@@ -226,41 +226,49 @@ Open the slideshow and walk through the following FinTech domains:
 
 * `Payments & Remittances`
 
-  * Currently the largest segment of the FinTech space, digital payments have become increasingly widespread with the growth of e-Commerce and mobile device infrastructure.
+  * Currently representing the largest segment of the FinTech space, digital payments have become increasingly widespread with the growth of e-Commerce and mobile device infrastructure.
 
   * Distributing credit card numbers over the Internet proved to be insecure (and costly) in the past. Thus, digital payment technologies were designed for not only security, but overall speed and convenience as well.
 
-  * Examples: Venmo, Stripe, PayPal, Square, Apple Pay, Android Pay, Amazon Payments, Plaid, Zelle, Cryptocurrencies
+  * Examples: Venmo, Stripe, PayPal, Square, Apple Pay, Android Pay, Zelle, Cryptocurrencies
 
 * `Robo Advisors & Personal Finance`
 
-  * A broad segment in which companies provide wealth management ser that promises both individuals and institutions better management of wealth in addition to applications for algorithmic trading.
+  * Robo advisors and personal finance companies provide wealth management, investment, or budgetary services that seek to help customers with their overall capital management and investments. 
 
-  * Betterment, Acorns, Robinhood, Quantlab
+  * Often, wealth management solutions are driven by machine learning with automated trading and portfolio re-balancing, while budgetary services utilize machine learning to scan through a customer's purchase history and identify buying habits to suggest areas in which they can save.
+
+  * Betterment, Acorns, Robinhood, Personal Capital
 
 * `RegTechs`
 
-  * growth of alternate modes for financing larger projects
+  * RegTech companies manage the regulatory/compliance processes within the financial industry through technology.
 
-  * IndieGoGo, Kickstarter, Kiva, eREIT's
+  * These types of companies use machine learning to identify and prevent instances of fraud, money laundering, or breaches in data.
+
+  * Examples: Apiax, Finform, Trulioo, ClauseMatch.
 
 * `Digital Banking`
 
-  * Insurance agencies looking to cut costs can reduce the number of physical locations they have, as well as taking advantage of new data sources in order to better understand their clients
+  * Digital Banking consists of online banks that seek to provide higher account interest rates by reducing the capital overhead associated with physical branches/bank locations.
 
-  * Area is slow to adapt new technologies due to heavy regulation, but better use of machine learning and statistics could provide pathway to higher profit margins
-
-  * Examples: Lemondade
+  * Examples: Ally Bank, ING Direct
 
 * `InsurTechs`
 
-  * Similar to insurance agencies, many banks are looking for ways to cut costs while providing more/better services.
+  * InsurTechs utilize the benefits of machine learning to more efficiently group customers into respective risk profiles and provide the right type of insurance product. 
+
+  * Fine-tuning the determination of customer risk profiles minimizes costs to those who would have been lumped together in a more broad customer risk profile.  
     
-  * Examples: CapitalOne, Ally
+  * Examples: Lemonade, Slice, Ladder
     
 * `Alternative Finance`
 
-  *
+  * Alternative Finance refers to the financial channels outside of the realm of traditional finance, such as regulated banks and capital markets, that facilitate capital borrowing and lending.
+
+  * Popular *crowdfunding* and *peer-to-peer* lending channels have emerged in this domain.
+
+  * Example: Indiegogo, Kiva, LendingClub
 
 ![fintech-ecosystem](Images/fintech-ecosystem.png)
 
