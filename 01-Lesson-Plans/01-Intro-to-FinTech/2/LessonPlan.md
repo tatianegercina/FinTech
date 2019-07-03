@@ -182,8 +182,11 @@ Walk through the slideshow while presenting the potential historical factors lea
 
 * `Cloud Infrastructure`
 
-  *
+  * Traditionally server farms, or large clusters of machines, required large up-front costs and overhead related to server maintenance. With the inception of cloud computing however, companies no longer had to purchase their own servers for their data processing needs, but instead could "rent" servers from another vendor on an as needed and therefore much cheaper basis. This lead to the ability for smaller companies to compete with larger more established companies in regards to utilizing Big Data.
 
+  * In addition, because cloud vendors like Amazon Web Services (AWS) managed hosting and deployment of servers in the cloud, the time-to-market for companies to reap the benefits of investing in technology decreased as they were able to push their applications and features quicker.
+
+  * As a result, the landscape for business has become increasingly more competitive as smaller companies now have the capabilities to disrupt markets with their fully-fledged productionalized applications and services that previously would have required large up-front costs that acted as barriers to entry of the industry. 
 
 Ask the students if they have any questions before moving on.
 
