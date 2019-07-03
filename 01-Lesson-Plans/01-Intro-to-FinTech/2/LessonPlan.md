@@ -172,41 +172,18 @@ Walk through the slideshow while presenting the potential historical factors lea
 
 * `Big Data`
 
+  * Throughout the years Computer Processing Units (CPUs), Random Access Memory (RAM), and hard drive storage devices have become more powerful while also becoming much cheaper. Therefore, as time progressed, more companies were able to purchase and utilize large clusters of computers working in parallel.
+
+  * Parallel processing paradigms have also shifted to become more efficient. Traditionally, to enable machines to work in parallel, the concept of MapReduce was born in which data workloads were split amongst multiple machines for disk-based processing and re-aggregated at the end to produce the result. However, with the advent of Spark, that same process has been refined for in-memory processing, in which data workloads utilize RAM that is much faster (ableit costlier) at processing data.
+
+  * Because Big Data processing has become much more efficient, the time to curation of data and subsequent analysis has also decreased. Therefore, modern-day companies are able to employ tactics like machine learning to drive business decision-making in real time.
+
+  * Thus, companies have placed an enormous emphasis on technological investment due to the growing feasibility and allure of housing large clusters of machines to drive real-time data-driven analysis.
+
 * `Cloud Infrastructure`
 
+  *
 
-
-
-
-* `The Dot-Com Bubble`: The run-up to the early 2000's dot-com bubble can be characterized as having three main features that are helpful to understanding today's environement:
-
-  * Investors were throwing money around due to a reduction in the capital gains tax (Taxpayer Relief Act of 1997) and therefore had lots of free-flowing capital.
-
-  * There was a rise in tech talent as the bubble in capital also had the effect of freeing up many talented developers when companies went through the process of dissolution.
-
-  * There was a lack of regulation of tech as the rise of services like Napster and LimeWire proved that technology was finally getting to the point that it _far_ outpaced regulatory agencies' ability to understand what they were and how to fairly regulate them.
-
-* `The Great Recession`: In the following years, tech companies - especially web comapnies - began to grow in size as the economy recovered. However, 2007 as you may well know, marked the beginnings of the Great Recession due to the collapsing real estate bubble. 
-
-* `The Rise of Mobile Phones`: 2007 also marked the launching of what is unequivocally one of the most influential advancements in recent history: the modern smartphone. Specifically the iPhone in 2007, with the first Android later the following year. Smartphones severely incerased the demand for talented programmers in both mobile and web development. They also changed our ability to _access_ information in quickly. Companies found themselves needing apps not because they wanted to be trendy, but because their clients would not interface with their products and services without the ability to do so while not at a computer. In some foreign markets, there are more people with smartphones than laptops, tablets, and desktops; meaning that if a service isn't available on an app, the service doesn't exist in the user's world.
-
-* `Millenials`: The aughts and early teens additionally saw the generation known as millenials coming of age as income-earners and investors. Millenials already outnumber any other population group, and that proportion relative to baby boomers and generation x over time. In fact, they are projected to outnumber any other population group for quite a few decades to come. This means that understanding the needs and feelings of this highly diverse market sector will be important to companies that want to stay relevant. A few very important things characterize this generational group:
-
-  * They have grown up with technology and thus demand internet-connected, user-friendly experiences
-
-  * They are more likely to take on loans to pay for educational certifications
-
-  * Their finances are somewhat shaped by a the combined economic effects of the Dot-Com bubble, the Great Recession, and student loans
-
-  * They are less likely to own homes than previous generations, and tend to marry later in life
-
-* `The Rise of the Data Overlords`: Beyond the recession, there has been a proliferation in the number of entities utilizing data in increasingly interesting ways. As companies continue to grow and seek additional methods to mitigate risk in pursuit of profit, increasing data sources and analytics tools offer a way forward.
-
-  * As prices for more powerful processors and memory continue to decrease, it has become increasingly feasible to carry out the massive number of calculations required to accomplish machine learning (ML).
-
-  * The use of machine learning and artificial intelligence - although often misunderstood by the general public as well as many investors - promises to find trends and strategies that humans would be otherwise incapable of finding
-
-  * Many of the developers from the two last bust cycles are finding new roles in the new startup climate.
 
 Ask the students if they have any questions before moving on.
 
