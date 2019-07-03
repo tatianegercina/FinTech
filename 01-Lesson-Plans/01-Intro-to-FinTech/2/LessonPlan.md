@@ -162,7 +162,7 @@ In this activity, students will be given a brief summary on some of the key comp
 
 Walk through the slideshow while presenting the potential historical factors leading to today's FinTech boom:
 
-* `Mobile Infrastructure & Shifting Consumer Preferences`:
+* `Mobile Infrastructure & Shifting Consumer Preferences`
 
   * With the advancement in mobile network infrastructure (2G, 3G, 4G LTE), consumers have become more connected to the Internet (as well as each other) than ever. As a result, consumers not only now have a greater resource pool to cross-check and validate information (ex. checking prices) but also have become a resource pool themselves in which companies look to target for business.
 
