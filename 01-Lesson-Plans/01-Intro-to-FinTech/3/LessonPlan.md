@@ -10,11 +10,11 @@ In today's class, students will learn how to utilize the Git Command Line Interf
 
 By the end of class, students will be able to:
 
-* Configure the git CLI user credentials from the terminal
-* Comprehend the notion of git clone and local/remote branches
-* Modify git repositories by adding, committing, and pushing files
-* Create markdown files and implement its additional visual capabilities: text formatting, images, links
-* Collaboratively write a FinTech case study in markdown, hosted on an online git repository 
+* Configure the git CLI user credentials from the terminal.
+* Clone a repository using git clone.
+* Modify git repositories by adding, committing, and pushing files.
+* Create markdown files and implement its additional visual capabilities: text formatting, images, links.
+* Collaboratively write a FinTech case study in markdown, hosted on an online git repository.
 
 ### Instructor Notes
 
@@ -22,7 +22,7 @@ By the end of class, students will be able to:
 
 * Make sure that by the end of class students have the tools to create well-presented markdown README files to host on their git repositories. They'll need these to showcase their git repositories (and the coding assets within) to potential employers in the future.
 
-* Students will need to have a good understanding of git branches and merges in order to effectively collaborate with others working in the same git repository. Otherwise, students may face merge conflicts that prevent them from pushing their file changes to the git repository.
+* More advanced git operations such as git branches, merges, and checkouts will not be introduced in this lesson. Therefore, be aware that students may face merge conflicts that prevent them from pushing their file changes to the git repository when collaborating with others working in the same git repository.
 
 * Be mindful of students working in groups during the case study activity; some students may be less vocal than others. Walk around the room with the other TAs and try to make sure every student is actively engaged and has a voice in their respective groups.
 
@@ -70,6 +70,10 @@ First, quickly present the following questions and answers:
 
   **Answer:** GitHub is a web-based file hosting service that is one of the many vendors that use Git for file version control.
 
+* Why is git important?
+
+  **Answer:** Git is an extremely powerful tool for software development. It has become the standard for versioning software and data science tools across all industries and is even used to version data and enhance data reproducibility. For these reasons, it has become a critical job skill. In fact, it will be one of the most essential job skills that they will need in their careers as developers.
+
 Then, perform a live demo while highlighting the following:
 
 * Git repositories can be created via the GitHub website. The option `Initialize this repository with a README` should be checked off to automatically deploy the repository once created.
@@ -86,11 +90,11 @@ Then, perform a live demo while highlighting the following:
 
   ![terminal-git-repository](Images/terminal-git-repository.png)
 
-* The `vi` command is a utility for editing text files directly from the command line. Once in the editor, press `I` to insert text and then press the sequence `ESC`, `:wq!`, `ENTER` to save the file when finished. Conversely, the sequence `ESC`, `:q!`, `ENTER` would quit the file without saving.
+* The `code` utility opens text files from the command line into VS Code for editing.
 
-  ![terminal-vi](Images/terminal-vi.png)
+  ![terminal-vscode](Images/terminal-vscode.png)
 
-  ![terminal-vi-editor](Images/terminal-vi-editor.png)
+  ![vscode-editor](Images/vscode-editor.png)
 
 * Here, the file `README.md` is edited and saved within the local git repository; however, changes are still local and will need to be pushed to the remote repository.
 
@@ -128,9 +132,9 @@ Highlight the following points when it comes to setting up a git repository and 
 
   ![github-repo-unzipped](Images/github-repo-unzipped.png)
 
-* Navigating through the terminal and performing edits via the command-line may seem unfamiliar and inefficient at first; however, most veteran developers will agree that familiarity with the terminal is critical as it demonstrates a developer's understanding of low-level functions and provides an interactive shell when no graphical user interface (GUI) exists. For example, when connecting remotely to another machine via the SSH or Secure Shell Protocol.
+* Using the `code` command line utility is often used as a quick shortcut to jump from the terminal to editing files directly in VS Code. 
 
-  ![terminal-familiarity](Images/terminal-familiarity.png)
+  ![vscode-familiarity](Images/vscode-familiarity.png)
 
 * After modifying the `README.md` file on the local file system, changed files will have to be pushed or re-uploaded to the online repository.
 
@@ -158,7 +162,7 @@ Open the slideshow and go over slides 1-22. Highlight the following about git:
 
 * What other features does the Git CLI provide?
 
-  > The Git CLI can perform many different kinds of git operations; however, popular commands are:
+  **Answer:** The Git CLI can perform many different kinds of git operations; however, popular commands are:
 
     * `git clone`: Clones a git repository onto the local file system.
 
@@ -170,23 +174,13 @@ Open the slideshow and go over slides 1-22. Highlight the following about git:
 
     * `git pull`: Downloads changed files from the remote git repository to the local git repository and updates the local files.
 
-    * `git branch`: Lists the available branches of the git repository.
-
-    * `git checkout`: Checks out a specific git branch and updates the files in the local git repository to match the contents of the git branch.
-
-    * `git merge`: Merges two branches together, consolidating any changes amongst the two.
-
 * What is a git commit?
 
-  > Before changed files are pushed from a local git repository to the remote git repository, a git commit saves a queue of tracked changed files as a **save** or **checkpoint** for a git repository. This way, should it be necessary, a git repository can be restored to a previous checkpoint in time, thereby undoing any existing changes from that point.
-
-* What is a git branch?
-
-  > A git branch is a derived version of another branch (often `master`). In other words, a branch is just a copy of another branch.
+  **Answer:** Before changed files are pushed from a local git repository to the remote git repository, a git commit saves a queue of tracked changed files as a **save** or **checkpoint** for a git repository. This way, should it be necessary, a git repository can be restored to a previous checkpoint in time, thereby undoing any existing changes from that point.
 
 * What is Git's "Snapshot model":
 
-  > Git thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots."
+  **Answer:** Git thinks of its data more like a set of snapshots of a miniature filesystem. Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored. Git thinks about its data more like a stream of snapshots."
 
   ![Git Snapshot Model](https://git-scm.com/book/en/v2/images/snapshots.png)
 
@@ -194,7 +188,7 @@ Open the slideshow and go over slides 1-22. Highlight the following about git:
 
 ### 6. Instructor Do: Git CLI (10 min)
 
-In this activity, students will revisit their newly created GitHub repositories to add folder structures and make a `backup` branch of their `master` branch.  
+In this activity, students will revisit their newly created GitHub repositories to add folder structures.  
 
 Live demo the following walkthrough:
 
@@ -202,11 +196,15 @@ Live demo the following walkthrough:
 
   ![github-url](Images/github-url.png)
 
+* Open up a terminal and run a `pwd` in the terminal to determine the current work directory. Then perform a `cd` operation to navigate to the Desktop.
+
+  ![terminal-pwd-cd](Images/terminal-pwd-cd.png)
+
 * Run a `git clone <repository link>` in the terminal to clone the repo to the current directory. Copying a repository via the `git clone` command differs from just downloading a `.zip` file of the repository as the `git clone` command downloads a tracked git repository onto the local filesystem while the `.zip` file merely download the contents without any kind of tracking or version control involved.
 
   ![git-clone](Images/git-clone.png)
 
-* Create three folders in the local git repository via the `mkdir` command: `Homework`, `CourseWork` and `Projects`. Add a `.gitkeep` file to each folder so that git knows to retain the folders as it refrains from keeping empty folders unless explicitly told.
+* Create three folders in the local git repository via the `mkdir` command: `data`, `references` and `code`. Add a `.gitkeep` file to each folder so that git knows to retain the folders as it refrains from keeping empty folders unless explicitly told.
 
   ![git-repository-mkdir](Images/git-repository-mkdir.png)
 
@@ -234,41 +232,6 @@ Live demo the following walkthrough:
 * Navigate to the repo on [Github.com](https://github.com/) to see that the changes have been pushed up.
 
   ![git-push-results](Images/git-push-results.png)
-
-* Once the changes have been pushed up, open up the terminal/git-bash again and navigate to the root of the git repo folder. Run the following lines to create a new branch with a modified `README` and explain each as you go through them.
-
-  ```bash
-  # Make sure the current branch is `master`
-  git checkout master
-
-  # Create a branch `backup` from the current branch `master`
-  git checkout -b backup
-
-  # Verify that the `backup` branch was created
-  git branch
-
-  # Add a quick note in the README file "This is a backup branch."
-  vi README.md
-
-  # Displays git untracked/tracked status of files in the folder
-  git status
-
-  # Adds all files and sub-folder files into a staging area
-  git add .
-
-  # Performed again to check that the files were added correctly
-  git status
-
-  # Commits all the files to your repo and adds a message
-  git commit -m <add commit message here>
-
-  # Pushes the changes up to GitHub
-  git push
-  ```
-
-* Navigate to the repo on [Github.com](https://github.com/) and see that the new branch and `README` changes have been pushed up.
-
-  ![git-branch-results](Images/git-branch-results.png)
 
 Make sure every student was able to successfully clone a repo, add files to the repo, commit the changes, and then push the changes to Github all from the command line.
 
@@ -304,11 +267,11 @@ Open the slideshow and present the following questions and answers:
 
 * What is Markdown?
 
-  > Markdown is a lightweight markup language that contains syntax for adding formatting elements to plain text documents.
+  **Answer:** Markdown is a lightweight markup language that contains syntax for adding formatting elements to plain text documents.
 
 * Why use Markdown?
 
-  > Markdown provides features for created visually enhanced documents that are rendered on the web, most commonly used for documents such as README files or online forum discussion posts. 
+  **Answer:** Markdown provides features for created visually enhanced documents that are rendered on the web, most commonly used for documents such as README files or online forum discussion posts. 
 
 * What are some common Markdown features?
 
@@ -325,6 +288,10 @@ Open the slideshow and present the following questions and answers:
   * Links
 
   * Images
+
+* Why is Markdown important?
+
+  **Answer:** Markdown allows for creating visually enhanced documents such as GitHub repostitory `README` files, which are valuable not only to potential employers, but also to potential collaborators; a good `README` helps people understand the purpose of the repository at a glance, and it shows developers how to navigate, install, and run the project.
 
 Then, live demo the following while explaining the following points:
 
@@ -416,7 +383,7 @@ Open the slideshow and go over slides 1-22 while explaining the following:
 
 * Remind students that in the class GitHub repository, there will be a list of potential FinTech case studies from which they can choose. 
 
-* Students should pair off into `4-5` groups and choose one of the available FinTech companies to present. Students will be given `30` minutes to develop their case studies and will then have `5` minutes to present their reports.
+* Students should pair off into groups of `3-4` individuals and choose one of the available FinTech companies to present. Students will be given `30` minutes to develop their case studies and will then have `2-3` minutes to present their reports.
 
 * Energize your students! This will be a good time for students to interact with each other and build upon what they've learned to perform their own independent case study analyses (without teacher help).
 
@@ -424,7 +391,7 @@ Open the slideshow and go over slides 1-22 while explaining the following:
 
 ### 14. Students Do: FinTech Groups (30 mins)
 
-In this activity, students will be divided up into groups of `4-5` individuals with each group representing a FinTech case study of a particular company. Each group will have to create their own shared GitHub repository and collaboratively create a case study report written in markdown.
+In this activity, students will be divided up into groups of `3-4` individuals with each group representing a FinTech case study of a particular company. Each group will have to create their own shared GitHub repository and collaboratively create a case study report written in markdown.
 
 **Instructions:**
 
@@ -434,11 +401,11 @@ In this activity, students will be divided up into groups of `4-5` individuals w
 
 Perform the following:
 
-* Explain to students that now that they've worked together to create their FinTech case studies, they should finish off with a presentation of their findings. Have each group present their findings to the class and give each group approximately `4-5` minutes per presentation.
+* Explain to students that now that they've worked together to create their FinTech case studies, they should finish off with a presentation of their findings. Have each group present their findings to the class and give each group approximately `2-3` minutes per presentation.
 
 * Have students log into their shared GitHub repository and present off of the FinTech case study content written in the `README` markdown file.
 
-* Make sure that all students have a say in the group presentations. Most likely, there will be some students who are shy when it comes to presenting -- try to bring them out of their comfort zones?
+* Watch out for idle students; make sure that all students have a say in their group presentations.
 
 * When presentations are finished, check the pulse of the class. Ask the students if they have any questions regarding the FinTech case studies and if they enjoyed their group activity.
 
