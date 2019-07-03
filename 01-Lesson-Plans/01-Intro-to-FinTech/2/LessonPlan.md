@@ -48,7 +48,23 @@ Perform the following:
 
 In this activity, students will learn the basics of using the terminal/command line to perform basic file system operations on their machines.
 
-Open up the terminal (Mac) or git-bash (Windows) and walk through the following commands:
+**File:** [slideshow-placeholder]()
+
+Open the slideshow and present the following questions and answers:
+
+  * What is a Terminal?
+
+    * **Answer:** A terminal/commandline is an interface in which a user can type and execute text based commands.
+
+  * When should one use a Terminal?
+
+    * **Answer:** A terminal can be used at any time over a Graphical User Interface (GUI) as the GUI is merely a visual overlay to the programs executed via the terminal. In addition, when remotely connecting to a server, such as via the Secure Shell Protocol (SSH), a GUI wil not be provided. 
+
+  * Why use a Terminal?
+
+    * **Answer:** Using a terminal is efficient as it does not need to expend the additional processing to produce the visuals associated with a Graphical User Interface (GUI).
+
+Then, open up the terminal (Mac) or git-bash (Windows) and walk through the following commands:
 
   * `cd` (Changes the directory).
 
