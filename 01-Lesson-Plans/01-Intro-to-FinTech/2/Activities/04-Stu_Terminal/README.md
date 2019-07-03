@@ -14,27 +14,27 @@ Walk through the following steps:
 
   * Confirm your current working directory is at the Desktop.
 
-  * Create a folder called `Terminal-Test`.
+  * Create a folder called `Pets`.
 
   * Navigate into the folder.
 
-  * Inside `Terminal-Test`, create two folders: `Folder_1` and `Folder_2`.
+  * Inside `Pets`, create two folders: `Dogs` and `Cats`.
 
-  * Navigate into `Folder_1`.
+  * Navigate into `Cats`.
 
-  * Create a file named `terminal.txt` and insert the text `First time for everything!`, save the file.
+  * Create a file named `name.txt` and insert the text `My name is Lucky! Bark!`, save the file.
 
-  * Read the file `terminal.txt` and output the results to the console.
+  * Read the file `name.txt` and output the results to the console.
 
-  * Navigate back to the root of the `Terminal-Test` folder.
+  * Navigate back to the root of the `Pets` folder.
 
-  * Copy the file `terminal.txt` into `Folder_2`.
+  * Copy the file `name.txt` into `Dogs`.
 
-  * Delete the folder `Folder_1` and its contents.
+  * Delete the folder `Cats` and its contents.
 
-  * Rename the folder `Folder_2` to `Hello_World`.
+  * Rename the folder `Dogs` to `Lucky`.
 
-  * List the contents of the root of the `Terminal-Test` folder.
+  * List the contents of the root of the `Pets` folder.
 
 ## Hints
 
