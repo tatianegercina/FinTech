@@ -8,4 +8,4 @@ The rest of this week is all project work days. Students should work with their 
 
 ### Copyright
 
-Trilogy Education Services © 2019. All Rights Reserved.
+© 2019 Trilogy Education Services

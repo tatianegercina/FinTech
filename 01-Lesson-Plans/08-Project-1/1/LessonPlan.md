@@ -251,6 +251,8 @@ Be sure to walk around and offer advice on project scope; finding data sources; 
 
 - - -
 
-### Copyright
+### End Class
 
-Trilogy Education Services © 2019. All Rights Reserved.
+- - -
+
+© 2019 Trilogy Education Services
