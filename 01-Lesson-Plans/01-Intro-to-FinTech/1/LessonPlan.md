@@ -30,130 +30,215 @@ By the end of class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Instructor/TA Introductions (15 mins)
+### 1. Instructor Do: Introductions (40 mins)
 
-The first part of class consists of introductions from instructors and TAs.
+In this activity, every member associated with the current FinTech course will introduce themselves to break the ice and get to know each other. This includes student success managers (SSMs), university staff, program directors, student services directors, career directors, individual students, instructors, and teacher assistants (TAs).
 
----
+* The first `40` minutes of class consists of introductions from the following:
 
-### 2. Instructor Do: SSM Introductions (15 mins)
+   * Student Success Managers (SSMs) and potential university staff, program directors, student services director, career directors.
 
-The second part of class consists of introductions from the university, program director, student services director, and/or career director.
+   * Individual students.
 
----
+   * Teacher Assistants (TAs).
 
-### 3. Instructor Do: Class Introductions (40 mins)
+   * Instructors.
 
-At this point, it's your turn to introduce yourself, as well as have the TAs and students introduce themselves one at a time. This is an important icebreaking activity; have fun with it!
+* The SSM, university, and career staff will most likely present their own introductions based on their respective department criteria.
 
-* Open the [slideshow](). Use it as a guide for the rest of the lesson. Remember to stay on schedule, and, if necessary, ask your TAs to help keep track of time.
+* When introducing the TAs as well as yourself (the instructor), feel free to talk about topics such as:
 
-* Have every student in class introduce themselves. Feel free to refer to the slides or come up with questions of your own. Try to keep things lighthearted as students share their backgrounds.
+  * What is your career history? Where did you start and where are you now?
 
-* When all students have had a chance to introduce themselves, have the TAs introduce themselves as well.
+  * What have you accomplished in the past? What is your FinTech industry experience (if applicable)?
 
-* Finally, introduce yourself and showcase a project or two to demonstrate your chops in the data field.
+  * What drew you to become a instructor/TA? What are you looking forward to in this course?
 
----
-
-### 4. Instructor Do: Course Format and Requirements (20 mins)
-
-* Continuing in the slideshow, we will now enumerate the topics that will be covered throughout the course.
-
-* Walking students through our narrative:
-    
-  * We begin with an introduction to FinTech and Finance as it currently stands, discussing the current financial landscape and some of the current industry-standard methods/tools such as excel.
-
-  * Then, we move into the direction where the industry is *going* by jumping into Python. We'll spend several weeks covering the basics of the languags and popular modern libraries such as Pandas and Matplotlib before turning our sights on building predictive time series analyses. This will culminate in our first major project using what we've learned up until now to build the best portfolio strategy possible.
-
-  * From there, we'll supercharge the financial models that we are building using everyone's favorite buzzword: Machine Learning. We'll spend about a week on the introductor material and then get into applications in financial advising, algorithmic trading, and dynamic pricing.
-
-  * In the last major leg of the journey, we'll dive into the oft-misunderstood world of blockchain and cryptocurrencies in order to understand the inefficiencies that they can potentially solve as well as how to develop automatically-executing smart contracts using the Solidity platform.
-
-* If you finish this ahead of schedule, feel free to take one or two questions, but don't get bogged down.
-
-* Students will often like to ask if we will cover "X" technology. If you know for certain that we will then feel free to answer, otherwise it is a good idea to deflect to office hours so that you can look through the curriculum for an exact answer or offer to help the find resources when they reach an appropriate point in the course.
+  * What's something that defines you? What are your passions?
 
 ---
 
-### 5. BREAK (15 mins)
+### 2. Instructor Do: The Rise of FinTech (10 mins)
+
+In this activity, the instructor should engage students with a facilitated discussion on FinTech and why it has become so prevalent today.
+
+**File:** [slideshow-placeholder]()
+
+Use the slides to help guide your discussion, and in doing so point out the following:
+
+  * Recent technological advancements in (big) data and mobile network infrastructure has lead to a consumer desire for companies to not only provide more efficent (data-driven) services but also quality engagement through scalable mobile platforms.
+
+  * Due to the changing consumer landscape, large financial firms who have been traditionally slower to adopt newer technologies have been forced to make larger investments in technology to keep up with consumer demand.
+
+  * Market analysis shows that global FinTech investment has grown dramatically in recent years.
+
+  * As a result, there is a growing demand for technical specialists that have the backgrounds and experiences to navigate financial waters.
+
+As you are discussing these slides, look for opportunities to engage students into thoughtful reflection. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer. 
+
+For example, ask students to share their own examples of an innovative FinTech company they've heard about and how it's disrupting the financial services industry.
+
+![fintech-rise](Images/fintech-rise.png)
 
 ---
 
-### 6. Instructor Do: Course Topics/Agenda (15 mins)
+### 3. Instructor Do: Defining Fintech (20 mins)
 
-* What exactly *is* fintech anyway? Through the next few slides we aim to clarify what the field is and isn't, as well as allowing students to explore their own ideas about the field.
+In this activity, the instructor discusses the exact nature of what the key word *FinTech* entails.
 
-Ask the class, before moving on, what _they_ think fintech is?
+Present to the class the following questions and answers:
 
----
+  * What exactly *is* FinTech?
 
-### 7. Instructor Do: Intro to Fintech (15 mins)
+    * **Answer:** Generally, as the term suggests, FinTech is the combination of finance and technology. More specifically, however, FinTech refers to the financial services industry that has been disrupted by technological innovation that aims to compete with traditional financial methods and improve activities or inefficiencies in finance.
 
-* What exactly *is* fintech anyway? Through the next few slides we aim to clarify what the field is and isn't, as well as allowing students to explore their own ideas about the field.
+  * What defines a FinTech company?
 
-Ask the class, before moving on, what _they_ think fintech is?
+    * **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through backend network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups: *infrastructure providers*, *large technology ecosystems*, *new entrants/start-ups*, and *incumbent financial institutions*.
 
----
+  * Why has FinTech become so important?
 
-### 8. Student Do: Discuss Definitions of Fintech (25 mins)
+    * **Answer:** Rapid advancements in technology have bolstered the ability for smaller companies to innovate and disrupt many traditional financial domains. Thus, larger and traditional finance firms have been forced to compete and upgrade their own technologies, thereby creating technological demand and a need for skilled technical workers.
 
-* Students are all here for a course on fintech, but may not have clarity on what exactly that is.
+  * What kind of careers are to be expected in FinTech?
 
-* Slack out (or simply speak the following assignment):
+    * **Answer:** Because FinTech is just the implementation of technology within the financial domain, FinTech careers are largely similar to that of the IT industry. It's quite common to see general data analyst, data/software engineer, and data scientist roles; however, these roles may be more specifically named as quantitative analysts/traders or portfolio analysts, for example.
 
-```md
-- You're all here for a course on fintech, but what exactly _is_ fintech?
-
-- Take the next few minutes to discuss with those around you about what you think fintech both _is_ and _isn't_.
-```
-
-### 9. Instructor Do: Review Group discussion (10 mins)
-
-* After taking a few responses, bring up the next slide.
-
-* Trilogy's definition for the scope of this class:
-
-```
-The use of technology, especially software, 
-to compete with "traditional" banking processes.
-```
-
-* In a broader sense, technology has been in the banking and finance world for many, many years. However, the recent explosion in the number of available technologies for developers and engineers to use has created the chance for newcomers to take advantage of the "missed opportunities" that more mature banking institutions have been unable to take advantage of.
-
-* It's not the banks' fault, they have lots of regulations to adhere to.
-
-* Examples: Kenya's M-Pesa, Betterment, 
-
-* Fintech solutions offer the opportunity to continue to optimize financial services for more speed, better profit margins, and a wider customer base than ever before.
-
-* We'll get into the specific subdomains and trends on day 2
+  ![fintech-categories](Images/fintech-categories.png)
 
 ---
 
-### 10. Instructor Do: Introduce Homework (10 mins)
+### 4. Instructor Do: Course Overview (10 mins)
 
-* Before heading out for the night, make sure to introduce the first homework assignment so students can begin thinking about what company they want to do their case study on.
+In this activity, the instructor should overview the topics and technologies used in the course as well the timeline for each topic or unit. 
 
-* This week's homework has students researching a contemporary FinTech company and developing a case study around it. They should strive to answer as many as possible of the following questions:
+**File:** [slideshow-placeholder]()
 
-  * Current landscape in company sector:
-    * Which financial industry it is in?
-    * Trends and competitors in this industry; 
+Continuing in the slideshow, walk through the following narrative about the course agenda and timeline:
 
-  * Company’s business activities:
-    * What “problem” does this company solve?
-    * Who is their intended customer?
-    * What solution does this company offer that their competitor does not or cannot? (What is the unfair advantage they utilize?)
-    * Which technologies are they currently using and how are they implementing them?
-    * What are they doing right? What could be improved? 
+  * `Weeks 1-2`: Students are introduced to the world of FinTech and will discuss the current financial landscape. Then, they will dive into the financial modeling methods of the current industry-standard tool, Microsoft Excel.
+
+  * `Weeks 3-7`: While useful and easy to grasp, Excel, however, is limited in its technical capabilities compared to a full-fledged progamming langauge such as Python. Thus, over the next several weeks, students will cover the basics of Python as well as how to use additional libraries/tools such as Pandas, APIs, Plotly, and SQL databases, in the context of financial analysis.
+
+  * `Weeks 8-9`: Students are tasked with their first project.
+
+  * `Weeks 10-15`: Companies are becoming more and more data-driven in their decision making. Therefore, through machine learning, students will need to learn how to not only interpret and create financial models, but also how to automate the execution of such models. Topics include algorithmic trading, robo-advisory, time series analysis, risk management, and cloud-ml technologies.
+
+  * `Weeks 16-17`: Students are tasked with their second project.
+
+  * `Weeks 18-22`: With its benefits of security, speed, and decentralized peer-to-peer validation, Blockchain technology has already become more efficient than tradtional finance in the context of transactions and third-party validation. Thus, students will learn about Blockchain fundamentals, smart contracts using Solidity, and how to develop Blockchain applications on the popular Ethereum blockchain network.
+
+  * `Weeks 23-24:` Students are tasked with their final project.
+
+![fintech-curriculum](Images/fintech-curriculum.png)
+
+---
+
+### 5. Instructor Do: Tips (10 mins)
+
+In this activity, the instructor should provide students some encouragement and tips for overcoming the mental frustrations they will more than likely face throughout the course. 
+
+**File:** [slideshow-placeholder]()
+
+Open the next series of slides and emphasize the following points: 
+
+  * Having a humble attitude is the first requirement of being successful in this program. In a way, students should channel their inner toddler and recognize that "knowing nothing" and admitting such will allow them to dig their heels in and invest the time necessary to succeed. In a way, being in this program will be like nothing else these students have attempted to do. Their mastery of other subjects, their educational backgrounds, and their professional successes do not guarantee that they will do well here. The only thing that will guarantee success is hard work, humility, and a relentless desire to be better. Recognizing how little you know is a first step towards creating that urgency.
+
+  * Learning all the skills in this course will feel tough, intimidating, and frustrating at times. Students should immediately forget about their uncle/brother-in-law/friend/step-sister who told them about so-and-so learning to hack in `1` week. Becoming a skilled professional is challenging and will take time. There is no way around that.
+
+  * Because of how hard this course can be, there will be many moments where students will doubt themselves. However, students should know that everyone starts as a beginner, even the instructor himself/herself. In addition, students were enrolled in this program because they were screened and determined to have what it takes to complete the course -- so have faith! 
+
+  * Due to the length of the program, psychological burnout *will* come up during the course of the program. The idealism and can-do attitude students enter with on Day `1` will be challenged over time as activities and topics become more intense. Therefore, students should see each other as a family embarking on a long and difficult journey together, and should support each other when times get tough.
+
+  * Lastly, learning is supposed to be frustrating! It's a process, and no matter what stick with it! Things only get easier when we choose to embrace the difficulty.
+
+  ![fintech-tips](Images/fintech-tips.png)
+
+---
+
+### 6. BREAK (15 mins)
+
+---
+
+### 7. Student Do: FinTech and Me (20 mins)
+
+In this activity, students get a chance to perform some reflection and write down what FinTech means to them.
+
+**File:** [README.md](Activities/01-Stu_FinTech_Group_Discussions/README.md)
+
+### 8. Instructor Do: Review FinTech and Me (10 mins)
+
+* Ask for a few volunteers that would be willing to present what FinTech means to them.
+
+* Once all volunteers have presented, tie everything back together by explaining that FinTech is the implementation of technology to the finance industry, but what it *means* to each individual person can differ. Some see FinTech as a way to upgrade their current skills and be more employer marketable; some see FinTech as a way to solve the inefficiencies in their current finance role; others see FinTech as a path to embarking on a new career supported by growing demand. 
+
+* Despite students' differing reasons for wanting to learn more about FinTech, every student has made the leap to take this course. Therefore, encourage students to continue to get to know each other as they'll be "together in the trenches" for the next `26` weeks and could serve as valuable network connections after the completion of the course. 
+
+---
+
+### 9. Student Do: Lending Thought Experiment (25 mins)
+
+In this activity, students will once again break off into groups of `3-4` to devise a solution to the traditional borrowing/lending finance problem that FinTech has come to solve. This group thought experiment should put students in the mindset of how technology has been applied to bolster the financial services industry.
+
+**File:** [README.md](Activities/02-Stu_FinTech_Thought_Experiment/README.md)
+
+---
+
+### 10. Instructor Do: Review Lending Thought Experiment  (10 mins)
+
+**File:** [slideshow-placeholder]()
+
+* Give each group `1-2` minutes to briefly explain their solution and how it solves the traditional lending problem.
+
+* After each group has presented their findings, open the slideshow and go over the following:
+
+  * The traditional lending space has become disrupted with the advent of peer-to-peer lending.
+
+  * As the name suggests, peer-to-peer lending involves connecting borrowers and lenders from a marketplace of *individuals* rather than between an individual and a *financial institution*.
+
+  * Peer-to-peer lending invokes lower loan interest rates because there is a greater selection (and therefore competition) amongst potential borrowers and lenders.
+
+  * Because there is a greater selection of potential borrowers and lenders in peer-to-peer lending, there is also higher degree of tolerance when it comes to loan eligibility requirements; financial institutions may need to abide by minimum loan eligibility requirements, a personal investor/lender on the other hand does not.
+
+  * LendingClub is a prime example of peer-to-peer lending. LendingClub is the world's leading online marketplace for connecting borrowers and investors and their mission is to transforming the banking industry to make it more transparent, efficient, and customer-friendly.
+
+Ask the students if they have any questions before moving on.
+
+---
+
+### 11. Instructor Do: Introduce Homework (10 mins)
+
+In this activity, the instructor will go over the unit `1` homework and define its requirements.
+
+Before heading out for the night, introduce the unit `1` homework assignment in which students will have to develop a case study around a particular FinTech company or technology. Students should look to answer as many of the following questions as they can:
+
+* Company Sector:
   
-  * Recommendations:
-    * If you were to advise them – what products or services would you suggest they add to their  services (whether another company already has  them or something that is your pure imagination)?
-    * Why do you think it would benefit them? 
-    * What technologies would your proposed ideas incorporate? Why are those technologies  appropriate for your solution?
+  * Which financial industry it is in?
 
-At the end of the week, students will produce a short, **informal** (5 min) presentation that will lead to a larger discussion with the class on 1.3 and a final report next week.
+  * Trends and competitors in this industry; 
+
+* Company Business Activities:
+  
+  * What “problem” does this company solve?
+  
+  * Who is their intended customer?
+  
+  * What solution does this company offer that their competitor does not or cannot? (What is the unfair advantage they utilize?)
+  
+  * Which technologies are they currently using and how are they implementing them?
+  
+  * What are they doing right? What could be improved? 
+  
+* Recommendations:
+  
+  * If you were to advise them – what products or services would you suggest they add to their  services (whether another company already has  them or something that is your pure imagination)?
+  
+  * Why do you think it would benefit them? 
+  
+  * What technologies would your proposed ideas incorporate? Why are those technologies  appropriate for your solution?
+
+Ask the students if they have any remaining questions before ending the class.
 
 ### End Class
 
