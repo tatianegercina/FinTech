@@ -156,11 +156,27 @@ Encourage students to practice using Github before the next class and to use off
 
 ### 7. Instructor Do: Evolution of Fintech (15 mins)
 
-In this activity, students will be given a detailed view into the historical progression of the FinTech space; students will learn from where FinTech has come and the potential reasons for how it came to be.
+In this activity, students will be given a brief summary on some of the key components of the past that have lead to the current exponential growth of the FinTech space. Knowing the factors leading to FinTech's prevalence as well as its future trajectory should give students the contextual knowledge to succeed in future employer interviews and eventually careers in the FinTech industry.
 
 **File:** [slideshow-placeholder]()
 
 Walk through the slideshow while presenting the potential historical factors leading to today's FinTech boom:
+
+* `Mobile Infrastructure & Shifting Consumer Preferences`:
+
+  * With the advancement in mobile network infrastructure (2G, 3G, 4G LTE), consumers have become more connected to the Internet (as well as each other) than ever. As a result, consumers not only now have a greater resource pool to cross-check and validate information (ex. checking prices) but also have become a resource pool themselves in which companies look to target for business.
+
+  * Consumers these days now demand quick, reliable, and quality channels of engagement. Modern-day consumers will often place their trust in a company that boasts a dynamic and beautiful website, a well-designed and efficient mobile application, and (if possible) a social user platform for connecting with others using the similar product.
+
+  * Therefore, companies have been forced to make large investments in technology in order to stay competitive amongst their industry peers. Consumers more than ever have more product choices to pick from and are loyal to those companies they trust. Thus, the technological channels affecting consumer engagement have a direct impact to a companies ability to market themselves and ultimately capitalize on demand.  
+
+* `Big Data`
+
+* `Cloud Infrastructure`
+
+
+
+
 
 * `The Dot-Com Bubble`: The run-up to the early 2000's dot-com bubble can be characterized as having three main features that are helpful to understanding today's environement:
 
