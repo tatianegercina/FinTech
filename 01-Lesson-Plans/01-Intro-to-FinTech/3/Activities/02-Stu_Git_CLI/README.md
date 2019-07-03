@@ -12,15 +12,13 @@ Clone your Github repo, create a folder structure, and create a `backup` branch 
 
   3. Create the following folders in the local git repo:
 
-    * `Homework`
+    * `code`
 
-    * `Coursework`
+    * `data`
 
-    * `Images`
+    * `references`
 
-    * `Projects`
-
-    * `Group Case Studies`
+    * `images`
 
   4. Create a `.gitkeep` file within each sub-folder so that git knows to retain the empty folder (empty folders are not added to git repos by default)
 
