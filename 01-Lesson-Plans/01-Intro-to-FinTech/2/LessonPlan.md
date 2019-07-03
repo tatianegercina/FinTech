@@ -4,315 +4,147 @@
 
 ### Overview
 
-Today's class will focus on further investigating the evolution and impact of the FinTech industry and then proceed to command line basics and git (using a graphical user interface (GUI)). Specifically, students will learn about the history of FinTech, the particular domains it has helped disrupt, as well as create their own case studies on a particular FinTech (Payments) company. Then, students will develop the basic command line and git download/upload skills that will aid them in using the more advanced git CLI in the next lesson. 
+Today's class will focus on command line basics and git (using a graphical user interface (GUI)) and then proceed to further investigating the key stimuli and impacts that have lead to the exponential growth of the FinTech industry. Specifically, students will develop the basic command line and git download/upload skills that will aid them in using the more advanced git CLI in the next lesson as well as learn more about the history of FinTech, the particular domains it has helped disrupt, and collaborate to create their own case studies on a particular FinTech (Payments) company.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Outline the evolution of the FinTech industry.
-* Map out the domains of the FinTech industry.
-* Perform a case study on a FinTech company.
 * Use the terminal/command line to execute basic file system operations.
 * Download/upload files to GitHub using the git GUI.
+* Deconstruct the factors that lead to the evolution of the FinTech industry.
+* Map out the disrupted domains of the FinTech industry.
+* Perform a case study on a FinTech (Payments) company.
 
 ### Instructor Notes
 
-* This lesson will be a good crash course on where FinTech has been and where it is now! Make sure to have energy when you present FinTech's history -- FinTech has made a lot of progress over the years!
+* Students may have trouble grasping the notion of the command line. Think of it like this, when students double-click into a folder to change directories, they are essentially executing a backend `cd` command that initiates upon the signal of a double-click into a folder. In other words, the GUI that a student sees is merely a visual overlay of the backend operations of the computer.
+
+* Knowing a brief history of FinTech is just as important as knowing what FinTech is. Employers will want to know that students not only have the technical skills to perform their jobs, but also the contextual knowledge of what is happening in the financial services industry.
 
 * Be thorough when explaining case study requirements and showcasing a completed case study for students to model off of. Case studies can vary widely in length depending on the audience for which it was written. Therefore, for the sake of the time, case studies should be comprehensive but shouldn't be overly long.  
-
-* Students may have trouble grasping the notion of the command line. Think of it like this, when students double-click into a folder to change directories, they are essentially executing a backend `cd` command that initiates upon the signal of a double-click into a folder. In other words, the GUI that a student sees is merely a visual overlay of the backend operations of the computer.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
 ---
 
-### 1. Instructor Do: Welcome and Goals (10 mins)
+### 1. Instructor Do: Welcome (10 mins)
 
-* Get off to a great start! Make sure to welcome students to class (using as many names as you can remember), and cover the goals outlined in today's LP
+In this activity, instructors should take the time to welcome students back and exemplify the fact that in today's lesson, students will learn basic technical fundamentals (terminal and git GUI) that will be integral to their success as future developers. In addition, students will receive a more detailed overview into the background of FinTech, which will give them the contextual knowledge required for comprehending the changing landscape within the FinTech ecosystem. 
 
----
+Perform the following:
 
-### 2. Instructor Do: Evolution of Fintech (15 mins)
+* Explain that students will begin working with common developer tools such as the terminal/command line, a text-based utility for performing file system operations and executing programs, and git, a managed remote file repository with in-built versioning control. By the end of the day, students will look like hackers with their terminals open and join the ranks of millions of developers who also use git to store their files/code.
 
-* After welcoming students to class, we're going to dive headfirst into a brief history of fintech, and how it has become increasingly relevant of late.
+* Remind students that today's lesson will perform a technical deep dive into a brief historical background of FinTech, explain the reasoning for its current prevalence, focus in on the traditional domains or sectors within finance that FinTech has helped to disrupt, and delve into a single case study of an individual FinTech company. 
 
-* Remind students that although technology in finance isn't know, for the scope of this class we're focused on the more recent developments in the field.
+* Being aware of the background behind FinTech can be really useful, especially when applying to jobs because it shows that students not only care enough to familiarize themselves with the industry in which they'd like to work, but also showcases competence in understanding where potential opportunities (and pitfalls) within the FinTech industry may be.
 
-* Dot-com bubble: The run-up to the early 2000's dot-com bubble can be characterized as having three main features that are helpful to understanding today's environement:
-
-    * Lots of free-flowing capital - Speaks for itsself. Investors were throwing money around due to a reduction in the capital gains tax (Taxpayer Relief Act of 1997)
-
-    * Rise in tech talent - The bubble in capital also 
-
-    * Lack of regulation of tech - the rise of services like Napster and LimeWire proved that technology was finally getting to the point that it _far_ outpaced regulatory agencies' ability to understand what they were and how to fairly regulate them.
-
-    * When the dust cleared, some of the brands you recognize today had weathered the storm: Paypal, 
-
-* Great Recession
-* 07 - 18/19: company breakouts
+* Encourage your students and get their energy levels up! Today will be a crash course on both hard and soft skills; students will learn technical skills and contextual knowledge to aid them in their future careers in FinTech.
 
 ---
 
-### 3. Instructor Do: Facilitated Discussions to FinTech Domains (10 mins)
+### 2. Instructor Do: Terminal (10 mins)
 
-* Welcome to the first full day of class! As students are just getting in, we'll start off with an easy discussion. 
+In this activity, students will learn the basics of using the terminal/command line to perform basic file system operations on their machines.
 
-* Give the class a few minutes to ponder about the question: what financial technology do you think will have the most impact in 10 years, and why? 
+**File:** [slideshow-placeholder]()
 
-* Do give students a chance to dream big, but try not to overshoot the time mark with discussion.
+Open the slideshow and present the following questions and answers:
 
----
+  * What is a Terminal?
 
-### 4. Instructor Do: Fintech Trends/Domains (15 mins)
+    * **Answer:** A terminal/commandline is an interface in which a user can type and execute text based commands.
 
-* In the next few slides, we will be introducing students to some of the major domains of fintech - focusing on the main ones which we will cover in this course
+  * When should one use a Terminal?
 
-* Payments
+    * **Answer:** A terminal can be used at any time over a Graphical User Interface (GUI) as the GUI is merely a visual overlay to the programs executed via the terminal. In addition, when remotely connecting to a server, such as via the Secure Shell Protocol (SSH), a GUI wil not be provided. 
 
-    * By far the largest segment at the moment, mobile and internet payments have been increasingly important with the rise of web companies and monbile devices.
+  * Why use a Terminal?
 
-    * In general, these technologies reduce friction of peer-to-peer payments without the need for a bank to be involved. These systems are designed to be more convienent than cash, and significantly faster than checks.
+    * **Answer:** Using a terminal is efficient as it does not need to expend the additional processing to produce the visuals associated with a Graphical User Interface (GUI).
 
-    * Payments, _especially_ credit cards, are largely built on older technologies that could be disrupted in a variety of ways in order to reduce friction and increase payment approval speeds
+Then, open up the terminal (Mac) or git-bash (Windows) and walk through the following commands:
 
-    * Examples: Venmo, Stripe, PayPal, Square, Apple Pay, Android Pay, Amazon Payments, Plaid, Zelle, most Cryptos
+  * `cd` (Changes the directory).
 
-* Investment Management
+  * `cd ~` (Changes to the home directory).
 
-    * A broad area that promises both individuals and institutions better management of wealth in addition to applications for algorithmic trading.
+  * `cd ..` (Moves up one directory).
 
-    * Betterment, Acorns, Robinhood, Quantlab
+  * `ls` (Lists files in the folder).
 
-* Capital Investment
+  * `pwd` (Shows the current directory).
 
-    * growth of alternate modes for financing larger projects
+  * `mkdir <FOLDERNAME>` (Creates a new directory with the folder name as <FOLDERNAME>).
 
-    * IndieGoGo, Kickstarter, Kiva, eREIT's
+  * `touch <FILENAME>` (Creates a new empty file with the file name as <FILENAME>).
 
+  * `code <FILENAME>` (Opens up a file in the VS Code editor).
 
-* Enterprise Solutions
+  * `cat <FILENAME>` (Reads a file and outputs to the terminal)
 
-    * companies need better tech for a large variety of different things
+  * `rm <FILENAME>` (Deletes a file).
 
-    * Equifax NeuroDecision, JPM Coin, BofA Quartz, Analytics, Fraud detection
+  * `rm -r <FOLDERNAME>` (Deletes a folder recursively, make sure to note the -r).
 
-* Insurance
+  * `open .` (Opens the current folder on Macs).
 
-    * Insurance agencies looking to cut costs can reduce the number of physical locations they have, as well as taking advantage of new data sources in order to better understand their clients
+  * `explorer .` (Opens the current folder on GitBash).
 
-    * Area is slow to adapt new technologies due to heavy regulation, but better use of machine learning and statistics could provide pathway to higher profit margins
+  * `open <FILENAME>` (Opens a specific file on Macs).
 
-    * Examples: Lemondade
+  * `explorer <FILENAME>` (Opens a specific file on GitBash).
 
-* Deposits
+  ![terminal-example](Images/terminal-example.png)
 
-    * Similar to insurance agencies, many banks are looking for ways to cut costs while providing more/better services.
-    
-    * Examples: CapitalOne, Ally
-    
-* Many, many more! (Finance is a very broad field and technology continues to change how it looks!)
-
-* Now that we've covered the major domains of fintech, we will next dive into currently growing trends in the across all of the fields:
-
-* Mobile accessibility is a must: The rise of smartphones has made it a requirement that any new technology be accessible through a mobile site or app
-
-* Use of machine learning and/or AI: With the advent of more powerful processors and cheaper memory, the applications of machine learning have enabled even faster calculations and more accurate predictions than ever berfore.  
-
-* Fintech as a social good: A few of the big players such as Kiva and Lemonade are building companies that not only make profit, but also promote or fund nonprofits
-
-* Banks have skin in the game: Although many would like to paint the picture that banks are completely ignorant of the rise of fintech, it couldn't be further than the truth. Many of the largest banks are internally funding a multitude of fintech projects in order to stay ahead of the curve!
+Slack out [CommonCommands.txt](Activities/03-Ins_Terminal/Solved/CommonCommands.md) for students to use as a reference. Answer any questions up until this point.
 
 ---
 
-### 5. Student Do: Investigate FinTech Trends/Domains (20 mins)
+### 3. Students Do: File System Operations (15 mins)
 
-* We have now given students examples of both the major domains within fintech as well as ongoing trends in the field. Now it is their turn to do some research and discuss amongst their groups about what they've learned.
+In this activity, students will perform their own file system operations via the terminal/command line. 
 
-* Give students the following instructions:
+**File:** [README.md](Activities/04-Stu_Terminal/README.md)
 
-```
-    You've just learned what the major domains and trends in fintech are, and now it's your turn to begin investigating and discussing some of the areas we've just covered. 
+### 4. Instructor Do: Review File System Operations (5 mins)
 
-    What areas are you most interested in, and why?
+Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points:
 
-    What areas are those around you most interested in?
+  * `mkdir` creates folder directories.
 
-    Were there any domains that we left out? (Hint: e.g. RegTech) If so, what are some other domains of note?
+  * `cd` navigates into specified folder directories.
 
-    Be prepared for a light class discussion!
-```
+  * `touch` will create an empty file.
 
-### 6. Instructor Do: Review Investigate FinTech Trends/Domains (10 mins)
+  * `cat` reads files and outputs the results to the console.
 
+  * `code` open files in the VS Code editor.
 
+  * `cd ..` will navigate up one level.
 
----
+  * `cp` copies files from source to target.
 
-### 7. BREAK (15 mins)
+  * `rm -r` recursively deletes all files in a folder (that may have sub-folders).
 
----
+  * `mv` moves files from source to target. Can also be used to rename a file.
 
-### 8. Instructor do: Payments Case Study - Stripe (10 mins)
-
-* As students are coming back from break, let them know that we're going to deep-dive into a case study as an example of what we'd like to see in their final report for the homework this week.
-
-* For this case study, we have decided to cover the payment processing known as Stripe, Inc. Not only does it allow us to discuss the ubiquitous world of online payments, Stripe is also an examplar of how a company can generate significant profits by lowing barriers of entry for other businesses.
-
-* When we go to a website, we often take for granted how easy it is to pay for goods and services. Behind the scenes, there has to be a payment processor that walks through the entire ACH (Automated clearing house) submittal process with an operator, verifies payment info, verifies the transaction, communicate with both the bank and the credit card issuer to greenlight the transaction, and notify the end-user of a success or failure. In addition, that system also needs to verify the handshakes between all of those systems and institutions, make sure that every step along the way is secure, and ensure that it is resistant to errors in transmission.
-
-* Oh, and did we also mention it has to be fast? Users tend to become _exceptionally_ anxious if it takes more than 3 seconds to load a page, and studies show that more than half of your users will leave if you don't meet that bar.
-
-* As a programmer facing all of these technical issues, it would be _super_ awesome if someone were to swoop in and take 90% of the work for this off your hands. Enter Stripe.
-
-* Stripe is a payment processing company founded in 2011 that provides a tiny, 8-line set of code that takes the load off of building a payment system into most android, iOS, and web applications. For this service, Stripe charges a relatively small fee on processed payments.
-
-* By integrating Stripe, a developer can dramatically increase their development speeds, while *trust*ing that Stripe will handle much of the security and performance of payments. Anyone building a modern application will likely lean on Stripe as a go-to solution for the first implementation of their application, which has had great financial benefits for Stripe and their target users (developers).
-
-* Stripe is by no means the only pony in town for this service though! Companies such as Plaid, PayPal (through Braintree), Square, and more have developed their own, similar solutions. 
----
-
-### 9. Student Do: Payments Case Study - Stripe (20 mins)
-
-* Now it's the students' turn! they should spend the next 30-40 minutes researching case studies in the field and discovering what areas they may want to explore during their homework case studies. 
-
-* Break students into groups of 3-4, and assign them companies and technologies from the list below to investigate:
-
-    - Stripe
-    - Plaid
-    - Android Pay
-    - Apple Pay
-    - Square
-    - Braintree
-
-* Emphasize that the secondary goal of this activity is to hone students' communication and presentation skills. 
-  * Point out the importance of these soft skills in the fintech career space and give specific examples in your own careers where you've had to utilize them. 
-  
-* Point out other things students should be aware of as they gather research and put together their presentations. Namely: 
-  * Think about the audience; i.e. fellow students like themselves who are new to the fintech space. As such, they should communicate in language that's easy to understand and avoid using too many esoteric terms. In cases, where specific terms are necesary, make sure that they are defined. 
-  * Think about slide design. Good slides are not "busy" slides, and as such are not overloaded with text or too many images. Students should be cognizant of what is relevant to their slides vs. what is content that they will verbalize.
-  
-* Also point out that each person in the group is expected to speak during the presentation. Emphasize the importance of public speaking, and let students know that there will be more opportunities throughout the course for them to present on various fintech topics. 
-
-* Below are links to previous fintech presentations. Feel free to use them to point what's working in the presentation and what's not: 
-  * None yet!
-  
-* Send students the following instructions over Slack. 
-
-* **Instructions:**
-
-  * Working in groups of three or four, you will be assigned a fintech company or technology. Your task is to: Prepare a 5 minute presentation that provides an overview of the topic.
-
-  * You should focus on answering the following questions...
-
-    * What is or was the technology or company?
-    * What market inefficiency does it hope to exploit or improve?
-    * What impact has the technology had on its sector or the field of finance in general?
-
-* **Notes:**
-
-  * While you may be new to the field challenge yourself to “become the expert.” A huge part of being a professional is getting up to speed quickly on technical situations using research.
-
-  * For those uncomfortable about the idea of presenting, challenge yourself to treat this as a safe place. Becoming a confident speaker is an important part of being a fintech consultant that people can trust.
-
-### 10. Review Payments Case Study - Stripe (10 mins)
+  * `ls` lists the contents of the current directory.
 
 ---
 
-### 11. Instructor Do: Anaconda Terminal (10 mins)
+### 5. Instructor Do: Uploading files to Github (15 mins)
 
-* **Files:**
+In this activity, students will learn how to upload files to GitHub, which will be used to submit their future homework assignments in the course. 
 
-  * [solution.py](Activities/01-Ins_Anaconda_Termianl/Solved/solution.py)
+Briefly explain the following:
 
-* Now that Anaconda and JupyterLab are up and running, it's time to provide the students with instruction on how to navigate the file system using the terminal, as well as execute common file system commands.
+* GitHub offers a centralized location where developers can push and pull (upload and download) their code; GitHub always holds the most up-to-date code and files and handles everyone's updates appropriately. 
 
-* Provide a brief lecture on termianls. Explain the following:
-    * What terminals are
+* For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with Github through the terminal using git -- allowing for more advanced git operations.
 
-    * What termianls are used for
-
-    * The relationship between terminals and Windows Explorer/Mac Finder
-
-    * Why developers use terminals over Windows Explorer/Finder
-
-    * What terminal commands are (programs)
-
-    * Cons of using a terminal
-
-* Reinforce to students that the goal of the class is not to learn advanced use of terminals but to learn how to use the terminal to navigate the file system and create file system objects.
-
-* Discuss with students the importance of downloading and installing updates prior to using a terminal. Communicate that this allows for the most recent stable versions of packages/libraries to be delivered locally for development purposes.
-
-* Walk through the solution and demo the following:
-
-    * How to open the Anaconda Terminal
-
-        * Via start menu
-
-        * Via terminal
-
-    * How to open the Mac Finder
-
-    * How to open the Windows Explorer
-
-    * How to identify the version of an application
-
-    * How to ensure the latest version of Anaconda and other packages are being used
-
-    * How to list files in the current directory
-
-    * How to change directories
-
-    * How to create a directory
-
-    * How to create an empty file
-
-    * How to delete a file
-
-    * How to open a text file
-
-    * How to output file contents to the screen
-
-    * How to write to a file
-
-    * How to clear the terminal screen
-
----
-
-### 12. Student Do: Terminal (15 mins)
-
-
-### 13. Instructor Do: Review Anaconda Terminal (5 mins)
-
-* **Files:**
-
-  * [solution.js](Activities/02-Stu_AnacondaTerminal/Solved/solution.py)
-
-* Open the solution and initiate a review discussion of the Anaconda terminal material. Quiz the students on the learned commands.
-
-  * What is a terminal?
-
-  * Why do developers use terminals?
-
-  * What are common terminal commands?
-
-  * How do you launch JupyterLab from the terminal?
-
-  * How do I check the version of installed software?
-
-* Ask the studenst about their experience completing the student activity. Inquire about their comfort level using the terminal. Ask whether or not they've developed a preference for using the terminal over  Windows Explorer/Mac Finder.
-
-* Ask for any additional/remaining questions before moving on.
-
----
-
-### 14. Instructor Do: Adding files to Github (15 mins)
-
-Show students how to submit a homework assignment in Github. Explain to students that "GitHub offers a centralized location where all developers can push and pull (upload and download) their code. This means that GitHub always holds the most up-to-date code and files, handling everyone's updates appropriately. For now, students will only need to know how to use the GUI for GitHub in order to submit homework. However, In a couple of weeks, students will learn to work with Github through the terminal using git.
-
-Have the students follow along with the following steps:
+Then, have the students follow along with the following steps:
 
 * Visit <https://github.com> and ask students to login to their personal accounts. From the main page, create a new repository with an initialized `README.md` file. Explain that the convention in the software world is for each repository to have a "README" file that explains what the repository contains.
 
@@ -330,9 +162,195 @@ Have the students follow along with the following steps:
 
   ![drag file](Images/GitDemo_filedrag.gif)
 
-Make sure that all the students have been able to follow along. Let students know that this will be how they will be submitting their homework for the first two weeks. Students will add all of the necessary files to their Github repo then submit the repository link to BCS.
+Encourage students to practice using Github before the next class and to use office hours if they run into any problems.
 
-Encourage students to practice Github before the next class and to use office hours if they run into any problems.
+---
+
+### 6. BREAK (15 mins)
+
+---
+
+### 7. Instructor Do: Evolution of Fintech (15 mins)
+
+In this activity, students will be given a brief summary on some of the key components of the past that have lead to the current exponential growth of the FinTech space. Knowing the factors leading to FinTech's prevalence as well as its future trajectory should give students the contextual knowledge to succeed in future employer interviews and eventually careers in the FinTech industry.
+
+**File:** [slideshow-placeholder]()
+
+Walk through the slideshow while presenting the potential historical factors leading to today's FinTech boom:
+
+* `Mobile Infrastructure & Shifting Consumer Preferences`
+
+  * With the advancement in mobile network infrastructure (2G, 3G, 4G LTE), consumers have become more connected to the Internet (as well as each other) than ever. As a result, consumers not only now have a greater resource pool to cross-check and validate information (ex. checking prices) but also have become a resource pool themselves in which companies look to target for business.
+
+  * Consumers these days now demand quick, reliable, and quality channels of engagement. Modern-day consumers will often place their trust in a company that boasts a dynamic and beautiful website, a well-designed and efficient mobile application, and (if possible) a social user platform for connecting with others using the similar product.
+
+  * Therefore, companies have been forced to make large investments in technology in order to stay competitive amongst their industry peers. Consumers more than ever have more product choices to pick from and are loyal to those companies they trust. Thus, the technological channels affecting consumer engagement have a direct impact to a companies ability to market themselves and ultimately capitalize on demand.  
+
+* `Big Data`
+
+  * Throughout the years Computer Processing Units (CPUs), Random Access Memory (RAM), and hard drive storage devices have become more powerful while also becoming much cheaper. Therefore, as time progressed, more companies were able to purchase and utilize large clusters of computers working in parallel.
+
+  * Parallel processing paradigms have also shifted to become more efficient. Traditionally, to enable machines to work in parallel, the concept of MapReduce was born in which data workloads were split amongst multiple machines for disk-based processing and re-aggregated at the end to produce the result. However, with the advent of Spark, that same process has been refined for in-memory processing, in which data workloads utilize RAM that is much faster (ableit costlier) at processing data.
+
+  * Because Big Data processing has become much more efficient, the time to curation of data and subsequent analysis has also decreased. Therefore, modern-day companies are able to employ tactics like machine learning to drive business decision-making in real time.
+
+  * Thus, companies have placed an enormous emphasis on technological investment due to the growing feasibility and allure of housing large clusters of machines to drive real-time data-driven analysis.
+
+* `Cloud Infrastructure`
+
+  * Traditionally server farms, or large clusters of machines, required large up-front costs and overhead related to server maintenance. With the inception of cloud computing however, companies no longer had to purchase their own servers for their data processing needs, but instead could "rent" servers from another vendor on an as needed and therefore much cheaper basis. This lead to the ability for smaller companies to compete with larger more established companies in regards to utilizing Big Data.
+
+  * In addition, because cloud vendors like Amazon Web Services (AWS) managed hosting and deployment of servers in the cloud, the time-to-market for companies to reap the benefits of investing in technology decreased as they were able to push their applications and features quicker.
+
+  * As a result, the landscape for business has become increasingly more competitive as smaller companies now have the capabilities to disrupt markets with their fully-fledged productionalized applications and services that previously would have required large up-front costs that acted as barriers to entry of the industry. 
+
+Ask the students if they have any questions before moving on.
+
+---
+
+### 8. Instructor Do: Facilitated Discussions to FinTech Domains (10 mins)
+
+In this activity, the instructor leads students into the discussion of the current state of the FinTech industry, specifically where in the financial industry technological innovation has brought upon a positive impact. 
+
+Ask the students the following questions:
+
+* What are some potential areas in finance where technology has disrupted traditional finance activities?
+
+  * **Answer:** Blockchain and financial transactions; robo advisors and investment management; and payment applications and money transfers are one of many possible answers.
+
+* How did these technologies allow for the disruption of traditional finance?
+
+  * **Answer:** Blockchain allows for cheaper and more secure transactional validation; robo advisors utilize machine learning algorithms for portfolio management, thereby reducing overhead costs; and payment applications utilize modern infrastructure such as mobile and cloud-based networking. 
+
+* How might cloud-based networking, especially, contribute to the advent of start-ups and technological innovators?
+
+  * **Answer:** Traditionally, hosting servers meant purchasing on-premise server farms with large up-front costs and regular maintenance, which was a barrier for entry for small startups. However, with cloud-based networking such as AWS, small startups and even individuals could quickly spin up servers faster and on an as needed basis, thereby minimizing time to deployment and reducing up-front costs -- allowing small startups to compete more efficiently with larger firms with existing infrastructures. 
+
+* Where else might technology disrupt traditional finance?
+
+  * **Answer:** Machine learning can be used in lending to more efficiently target customers who have a higher likelihood of paying back their loans while avoiding those who have a higher likelihood of *not* paying back their loans.
+
+---
+
+### 9. Instructor Do: Fintech Domains and Trends (15 mins)
+
+In this activity, students will deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation. 
+
+**File:** [slideshow-placeholder]()
+
+Open the slideshow and walk through the following FinTech domains:
+
+* `Payments & Remittances`
+
+  * Currently representing the largest segment of the FinTech space, digital payments have become increasingly widespread with the growth of e-Commerce and mobile device infrastructure.
+
+  * Distributing credit card numbers over the Internet proved to be insecure (and costly) in the past. Thus, digital payment technologies were designed for not only security, but overall speed and convenience as well.
+
+  * Examples: Venmo, Stripe, PayPal, Square, Apple Pay, Android Pay, Zelle, Cryptocurrencies
+
+* `Robo Advisors & Personal Finance`
+
+  * Robo advisors and personal finance companies provide wealth management, investment, or budgetary services that seek to help customers with their overall capital management and investments. 
+
+  * Often, wealth management solutions are driven by machine learning with automated trading and portfolio re-balancing, while budgetary services utilize machine learning to scan through a customer's purchase history and identify buying habits to suggest areas in which they can save.
+
+  * Betterment, Acorns, Robinhood, Personal Capital
+
+* `RegTechs`
+
+  * RegTech companies manage the regulatory/compliance processes within the financial industry through technology.
+
+  * These types of companies use machine learning to identify and prevent instances of fraud, money laundering, or breaches in data.
+
+  * Examples: Apiax, Finform, Trulioo, ClauseMatch.
+
+* `Digital Banking`
+
+  * Digital Banking consists of online banks that seek to provide higher account interest rates by reducing the capital overhead associated with physical branches/bank locations.
+
+  * Examples: Ally Bank, ING Direct
+
+* `InsurTechs`
+
+  * InsurTechs utilize the benefits of machine learning to more efficiently group customers into respective risk profiles and provide the right type of insurance product. 
+
+  * Fine-tuning the determination of customer risk profiles minimizes costs to those who would have been lumped together in a more broad customer risk profile.  
+    
+  * Examples: Lemonade, Slice, Ladder
+    
+* `Alternative Finance`
+
+  * Alternative Finance refers to the financial channels outside of the realm of traditional finance, such as regulated banks and capital markets, that facilitate capital borrowing and lending.
+
+  * Popular *crowdfunding* and *peer-to-peer* lending channels have emerged in this domain.
+
+  * Example: Indiegogo, Kiva, LendingClub
+
+![fintech-ecosystem](Images/fintech-ecosystem.png)
+
+---
+
+### 10. Student Do: Investigate FinTech Domains (20 mins)
+
+By this point, students have been given examples of both the major domains within FinTech as well as the overarching trends across the industry. The instructor should now place students into groups of `2-4` individuals to conduct some research of the various FinTech domains on their own.
+
+**File:** [README.md](01-Stu_FinTech_Domains/README.md)
+
+### 11. Instructor Do: Review Investigate FinTech Domains (10 mins)
+
+Now that students have had an opportunity to perform their own research on the various domains in FinTech, it's time to facilitate a discussion amongst the class on each group's findings.
+
+* Have each group present their findings to the class one-by-one until all groups have presented.
+
+* Presentations should be quick, approximately `1-2` minutes.
+
+---
+
+### 12. Instructor Do: Stripe Payments Case Study (10 mins)
+
+In this activity, students will be instructed on how to create a FinTech case study -- a compilation of holistic research performed on a FinTech company or technology. This activity is particularly important as it will serve as the knowledge foundation for students completing their FinTech case studies for the unit `1` homework.   
+
+**File:** [slideshow-placeholder]()
+
+Open the slideshow and walk through the following:
+
+* `Background`
+
+  * This case study studies the payment processing company known as Stripe. Stripe is an examplar Digital Payments company that provides the technical, fraud prevention, and banking infrastructure required to operate online payment systems.
+
+* `Use Case`
+  
+  * Behind the scenes of digital payments, there is a payment processor that walks through the entire ACH (Automated clearing house) submittal process with an operator, and verifies the payment info, transaction, and communication between the bank and the credit card issuer for approval/denial and subsequent notification of payment success or failure. Therefore, the system needs to verify the handshakes between all processes and institutions, and make sure that every step along the way is secure.
+
+* `Advantages`
+
+  * Stripe provides a tiny 8-line set of code that offloads the deployment of a digital payments system for most Android, iOS, and web applications. For this service, Stripe charges a relatively small fee on every processed payment.
+
+* `Competitors`
+
+  * Similar companies such as PayPal, Apple, Google, Square, and many others have developed similar solutions.
+
+---
+
+### 13. Student Do: FinTech Payments Case Study (20 mins)
+
+In this activity, the instructor should place students into groups of `2-4` individuals once again to create a case study on a particular FinTech payments technology that rivals Stripe.
+
+**File:** [README.md](02-Stu_FinTech_Case_Study/README.md)
+
+### 14. Instructor Do: Review FinTech Payments Case Study (10 mins)
+
+In this activity, students will present their case study findings to the class.
+
+Before proceeding with presentations, mention the following:
+
+* The secondary goal of this activity was to hone students' communication and presentation skills. Point out the importance of these soft skills in the FinTech career space and give specific examples in your own careers where they've applied. 
+    
+* Make sure to think about the audience in both oral as well as written presentations. Fellow students like themselves who are new to the FinTech space will require language that is communicated in such a way that avoids using too many esoteric terms and instead provides clear easy to understand content.
+
+* Each person in the group is expected to speak during the presentation. Emphasize the importance of public speaking, and let students know that there will be more opportunities throughout the course for them to present on various fintech topics. 
+
+Then, allow groups `1-2` minutes to quickly present their findings.
 
 ### End Class
 

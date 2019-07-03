@@ -18,9 +18,14 @@ Move into the newly created folder
 cd Homework
 ```
 
-Create a new file
+Create an empty file
 ```shell
 touch first_file.txt
+```
+
+Edit a file via VS Code
+```shell
+code first_file.txt
 ```
 
 Open a file (Mac-only)
