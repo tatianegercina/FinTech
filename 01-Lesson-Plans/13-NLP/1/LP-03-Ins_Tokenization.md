@@ -15,7 +15,7 @@ Depending on your comfort level, either walk through the solved version or live-
 * Highlight how we can find articles by topic and then use a single article for practicing tokenization by using the corpus object:
 
 ```python
-reuters.fileids(categories = 'crude')
+reuters.fileids(categories='crude')
 article = reuters.raw('test/14829')
 ```
 
@@ -39,3 +39,4 @@ sent.split(' ')
 
 ![nltk_tokenization](Images/nltk_tokenization.PNG)
 
+* Ask students to give an example of one type of analysis that they can do with the tokenized sentences and words. Prompt students to think about what else they might need to make the tokens cleaner for the analysis they have in mind.
