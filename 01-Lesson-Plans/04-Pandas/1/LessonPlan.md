@@ -4,8 +4,7 @@
 
 ### Overview
 
-Today's class will introduce students to a powerful, open-source analytics library called Pandas, which is built into and runs on a Python environment. Pandas is a software library designed specifically for data analytics and time series analysis, which are useful features for quantitative analytics. In this lesson, students will learn how to use Pandas to create and manipulate DataFrames, locate data with indexing, clean data, create basic data visualizations, and conduct quantitative analysis to automate financial tasks. By the end of class, students should understand how Pandas is used to perform everyday financial analysis, including calculating daily returns over time. 
-
+Today's class will introduce students to a powerful, open-source analytics library called Pandas, which is built into and runs on a Python environment. Pandas is a software library designed specifically for data analytics and time series analysis, which are useful features for quantitative analytics. In this lesson, students will learn how to use Pandas to create and manipulate DataFrames, locate data with indexing, clean data, create basic data visualizations, and conduct quantitative analysis to automate financial tasks. By the end of class, students should understand how Pandas is used to perform everyday financial analysis, including calculating daily returns over time.
 
 ### Class Objectives
 
@@ -23,36 +22,34 @@ By the end of class, students will be able to:
 
 * Describe the basic theory and calculations of returns using Pandas.
 
-* Create basic data visualizations with Pandas' built-in functions to present preliminary results.
+* Create basic data visualizations with Pandas' built-in plotting functions.
 
 ### Instructor Notes
 
-* Today’s lesson is students’ introduction to Pandas. Students may be confused as to why they are using Pandas now, having just learned Python. Focus on helping them understand the relationship between Python and Pandas, and how it makes sense at this point to transition to Pandas. Discuss Pandas from a Pythonic point of view and emphasize that Pandas is written in Python. Underscore the fact that Pandas is Python code that a user wrote for the purpose of financial analytics; instead of hoarding their code in the depths of a hard drive, the creators packaged up the functions and made them available to the public. 
+* Today’s lesson is students’ introduction to Pandas. Students may be confused as to why they are using Pandas now, having just learned Python. Focus on helping them understand the relationship between Python and Pandas, and how it makes sense at this point to transition to Pandas. Discuss Pandas from a Pythonic point of view and emphasize that Pandas is written in Python. Underscore the fact that Pandas is Python code that a user wrote for the purpose of financial analytics; instead of hoarding their code in the depths of a hard drive, the creators packaged up the functions and made them available to the public.
 
-* The lesson first covers technical concepts like reading in CSV files and checking for nulls, and then progresses to more advanced skills such as calculating daily and cumulative investment returns. Keep in mind that not all students have a finance background and, as such, may not understand returns right away. Leverage the knowledge of finance-savvy students in the class and encourage them to help their partners if they get stuck. Be sure to pace the class to allow time for student questions. 
-
-* The data cleaning activities focus on implementing common data cleaning strategies. They are not comprehensive––there are additional methods used to clean data that the activities do not cover.  Slack out [this link](https://www.kaggle.com/chrisbow/kernels?sortBy=relevance&group=everyone&search=Cleaning+data+with+Python&page=1&pageSize=20&userId=1541110) for curious students who want to learn more about data-cleaning processes using Python. 
+* The lesson first covers technical concepts like reading in CSV files and checking for nulls, and then progresses to more advanced skills such as calculating daily and cumulative investment returns. Keep in mind that not all students have a finance background and, as such, may not understand returns right away. Leverage the knowledge of finance-savvy students in the class and encourage them to help their partners if they get stuck. Be sure to allow enough time for students to ask questions at the end of each section.
 
 * The activities in this lesson focus on developing and honing skills that are critical for succeeding in this course as well as performing day-to-day tasks within the FinTech professional world.
 Therefore, encourage students to practice these skills outside of class to gain mastery.
 
-* Have your TAs keep the class on schedule with the [Time Tracker](TimeTracker.xlsx). 
+* Have your TAs keep the class on schedule with the [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Class and Introduction to Pandas (5 min)
 
-In this section, you will give students a brief history of Pandas and an overview of its advantages, as well as explain why it's useful for FinTech professionals. 
+In this section, you will give students a brief history of Pandas and an overview of its advantages, as well as explain why it's useful for FinTech professionals.
 
-Welcome students to the first day of Pandas. Explain why students are learning it and provide a brief history. 
+Welcome students to the first day of Pandas. Explain why students are learning it and provide a brief history.
 
 * Pandas is currently one of the most powerful libraries in Python. Because of this, it is one of the most important superpowers students can have as FinTech professionals. Instead of reinventing the wheel and writing their own code, students will be able to leverage Pandas' repository of functions.
 
 * Pandas was created by Wes McKinney to offer a flexible, high-performance for conducting quantitative analysis of financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
 
-Transition to covering the advantages of Pandas. 
+Transition to covering the advantages of Pandas.
 
-* Pandas provides many advantages over Excel due to its data structures and built-in functions for analyzing data.
+* Pandas provides many advantages over Excel due to its data structures and built-in functions for analysis.
 
 * Pandas doesn't require users to memorize formulas. Common financial calculations and formulas are made available to Pandas users as functions.
 
@@ -62,9 +59,9 @@ Transition to covering the advantages of Pandas.
 
 Explain to students that they have already installed Pandas through Anaconda, so they don't need to install additional libraries. However, if they have issues running Pandas, they can use a free notebook by [Google Colab](https://colab.research.google.com/) and troubleshoot their installation with a TA during a break or office hours.
 
-Review the instructions for the homework assignment. Focus on getting students excited about learning Pandas by previewing the skills and work they will accomplish by the end of the week. Emphasize calculating investment returns/profit over time, as well as plot visualizations.
+Review the [instructions](../../../02-Homework/04-Pandas/Instructions/README.md) for the homework assignment. Focus on getting students excited about learning Pandas by previewing the skills and work they will accomplish by the end of the week. Emphasize calculating investment returns/profit over time, as well as plot visualizations.
 
-- - -
+---
 
 ### 2. Instructor Do: Why Pandas? (5 min)
 
@@ -639,7 +636,7 @@ To guide students, you may want to follow up with questions such as the followin
 
   **Answer:** False. Technical rules might be disregarded in order to satisfy business rules.
 
-Ask if there are any questions before moving on.
+For more comprehensive data cleaning strategies, slack out the following [link](https://www.kaggle.com/chrisbow/kernels?sortBy=relevance&group=everyone&search=Cleaning+data+with+Python&page=1&pageSize=20&userId=1541110) for curious students who want to learn more about data-cleaning processes using Python. Ask if there are any questions before moving on.
 
 - - -
 
@@ -731,7 +728,7 @@ Note that the data in `loans.csv` is initially a compilation of many different c
 
 - - -
 
-### 12. Instructor Do: Review Three-Year Loans (5 min) (Low)
+### 12. Instructor Do: Review Three-Year Loans (5 min)
 
 Use this part of the lesson to review the previous activity with students. 
 
@@ -765,7 +762,7 @@ Ask if there are any questions before moving on.
 
 ### 13. Instructor Do: Pandas Visualizations (10 min)
 
-This part of the lesson is focused on creating charts  using Pandas visualization functions. You will demo how to plot data with and without indexes, as well as  using line and bar charts.
+This part of the lesson is focused on creating charts using Pandas visualization functions. You will demo how to plot data with and without indexes, as well as  using line and bar charts.
 
 **File:** [visualization.ipynb](Activities/08-Ins_Pandas_Visualization/Solved/visualization.ipynb)
 
