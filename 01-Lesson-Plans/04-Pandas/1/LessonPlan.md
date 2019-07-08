@@ -47,6 +47,8 @@ Welcome students to the first day of Pandas. Explain why students are learning i
 
 * Pandas was created by Wes McKinney to offer a flexible, high-performance for conducting quantitative analysis of financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
 
+* If Python was compared to a garage, Pandas would be the sleek Tesla parked inside. The owner can choose to leverage the speed, power, and efficiency of their Tesla and take it for a spin, or the owner could walk to their destination. While walking would produce the same result as using the Tesla, it would require extra labor and take more time. This lesson will teach students how skillfully utilize the sleek Tesla sitting in their garage
+
 Transition to covering the advantages of Pandas.
 
 * Pandas provides many advantages over Excel due to its data structures and built-in functions for analysis.
@@ -65,7 +67,7 @@ Review the [instructions](../../../02-Homework/04-Pandas/Instructions/README.md)
 
 ### 2. Instructor Do: Why Pandas? (5 min)
 
-The goal of this section is to help students understand the relationship between Pandas and Python. In this part of the lesson you will cover some specific features of Pandas and how Pandas can alleviate some of the challenges presented by Excel. 
+The goal of this section is to help students understand the relationship between Pandas and Python. In this part of the lesson you will cover some specific features of Pandas and how Pandas can alleviate some of the challenges presented by Excel.
 
 **File:** [Unit 4.1 Slides](https://docs.google.com/presentation/d/1OyHSaY2IlRT7ncexJgjimA7zulBWV67_Pr5XdS6kyYQ/edit?usp=sharing)
 
@@ -73,21 +75,21 @@ Begin this part of the lesson by discussing the utility and history of spreadshe
 
 * Since spreadsheets appeared in [1969 when LANPAR was first used by the plant budgeting operations of AT&T](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed the finance and quants analysis forever.
 
-* However, as the volume and complexity of data has increased significantly, spreadsheets are now limited when it comes to data analysis. 
+* However, as the volume and complexity of data has increased significantly, spreadsheets are now limited when it comes to data analysis.
 
-Ask the class what the pain points they have experienced while using spreadsheets to handle data. (Slides 5–6) Possible answers include: 
+Ask the class what the pain points they have experienced while using spreadsheets to handle data. (Slides 5–6) Possible answers include:
 
 * Microsoft Office is expensive.
 
-* Cell formulas can be difficult to edit. 
+* Cell formulas can be difficult to edit.
 
-* Spreadsheets can only hold so much data; the more data that is stored, the slower the workbook runs. 
+* Spreadsheets can only hold so much data; the more data that is stored, the slower the workbook runs.
 
-* Excel files often stop responding and are vulnerable to corruption. 
+* Excel files often stop responding and are vulnerable to corruption.
 
-* Automation and custom function creation is not inherent. Macros and VBA need to be learned. 
+* Automation and custom function creation is not inherent. Macros and VBA need to be learned.
 
-Ask students if they have experienced any disasters or major challenges while working in Excel. Possible answers include: 
+Ask students if they have experienced any disasters or major challenges while working in Excel. Possible answers include:
 
 * Excel hogged so much memory that my laptop crashed.
 
@@ -121,19 +123,21 @@ The goal of this part of the lesson is to get students comfortable with reading 
 
 Introduce Pandas DataFrames and slack out the link provided below.
 
-* A Pandas DataFrame can be created in several ways, such as using a Python dictionary, a list of lists, or reading data from an external file like CSV or JSON. 
+* A DataFrame is a special data structure in Pandas that is designed to work with tabular data (data that has rows and columns like a spreadsheet) and provides some useful functions to help analyze and manipulate tabular data.
 
-* The [Pandas DataFrame documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and [getting started guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) are great resources if students want to learn more about creating DataFrames.  
+* A Pandas DataFrame can be created in several ways, such as using a Python dictionary, a list of lists, or reading data from an external file like CSV or JSON.
 
-* Comma-separated values (CSV) is one of the most common file formats used to share data on finance. Students will start working with DataFrames by creating them from CSV files. 
+* The [Pandas DataFrame documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and [getting started guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) are great resources if students want to learn more about creating DataFrames.
 
-Start by opening the two CSV files in the Resources directory, `sales.csv` and `sales_no_header.csv` to show students the format of the data. Point out that one file has a header while the other does not. Refer back to these files during the demo as needed.
+* Comma-separated values (CSV) is one of the most common file formats used to share data on finance. Students will start working with DataFrames by creating them from CSV files.
+
+Start by opening the two CSV files in the [Resources](Activities/01-Ins_Reading_CSVs/Resources) directory, `sales.csv` and `sales_no_header.csv` to show students the format of the data. Point out that one file has a header while the other does not. Refer back to these files during the demo as needed.
 
 Next, open `reading_csvs.ipynb` and walk through the following aspects of the code. Highlight the following in sequential order.
 
 First, emphasize how to import Pandas.
 
-* In order to use Pandas, the `pandas` library must be imported. Pandas is commonly aliased as `pd` at this time. 
+* In order to use Pandas, the `pandas` library must be imported. Pandas is commonly aliased as `pd` at this time.
 
 * The `Path` class is also imported from the [`pathlib` module](https://docs.python.org/3/library/pathlib.html) in order to deal with file paths across all operating systems without complexity.
 
@@ -154,15 +158,15 @@ Next, discuss the `read_csv` function.
   sales_dataframe.head()
   ```
 
-Then highlight the `head` function. 
+Then highlight the `head` function.
 
-* The `head` function shows the first 5 rows of the data by default. 
+* The `head` function shows the first 5 rows of the data by default.
 
 * `head` is a common function used to take a peek at the DataFrame to ensure everything loaded correctly.
 
   ![dataframe.png](Images/dataframe.png)
 
-Now call attention to the `header` parameter for `read_csv`. 
+Now call attention to the `header` parameter for `read_csv`.
 
 * The `header=None` parameter tells Pandas not to use the first row as the header. Because no header is specified, the column index numbers are used instead.
 
@@ -210,11 +214,9 @@ In this activity, students will get hands-on experience reading CSV files into P
 
 ### 5. Instructor Do: Review Reading Stock Data from a CSV File (5 min)
 
-In this section, review the previous activity with students. 
+In this section, review the previous activity with students.
 
 **File:** [reading_stock_data.ipynb](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb)
-
-Start by explaining that a DataFrame is a special data structure in Pandas that is designed to work with tabular data (data that has rows and columns like a spreadsheet). A Pandas DataFrame also provides some useful functions to help analyze and manipulate the tabular data.
 
 Open the [solution file](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb) and review the following: 
 
