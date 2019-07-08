@@ -357,7 +357,7 @@ Discuss approaches for identifying data quality issues while live coding a few e
 * The first step in assessing data for quality issues is to visually evaluate a sample of the data. This allows programmers to identify obvious quality issues as well as any skewed rows (e.g., a customer address in a first name field).
 
   ```python
-  # Read in data file Take sample of data
+  # Read in data file and take sample of data
   csv_path = Path("order_data.csv")
   csv_data = pd.read_csv(csv_path, index_col="order_no")
   csv_data.sample(5)
