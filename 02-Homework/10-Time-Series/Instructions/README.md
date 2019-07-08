@@ -18,7 +18,7 @@ In this homework assignment, you will gain proficiency in the following tasks:
 
 ### Files
 
-[Time-Series Starter Notebook](Starter_Code/time_series.ipynb)
+[Time-Series Starter Notebook](Starter_Code/time_series_analysis.ipynb)
 
 - - -
 
@@ -58,7 +58,7 @@ Follow the steps outline in the time-series starter notebook to complete the fol
 
 Last, apply your Scikit-Learn regression model under a testing approach commonly used by data scientists and quantitative traders when dealing specifically with **time-series** data.
 
-1. Use Pandas datetime indexing to slice the dataset into a training and test set, and compare model performance (RMSE) between the two.
+1. Use Pandas datetime indexing to slice the dataset into a training and test set, and compare model performance (RMSE) between the two. (A "one-shot" approach).
 
 2. Create a rolling-out-of sample approach that updates to a new model each week using the most recent data, and evaluates performance on data over the following week.
 
