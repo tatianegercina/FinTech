@@ -1,4 +1,4 @@
-## 10.1 Lesson Plan: Introduction to SQL
+## 7.1 Lesson Plan: Introduction to SQL
 
 ### Overview
 
@@ -9,27 +9,32 @@ In today's class, students will be introduced to SQL databases and will learn ho
 By the end of class, students will be able to:
 
 * Install and run Postgres and pgAdmin on their computers.
+
 * Create a database and tables using pgAdmin.
+
 * Define SQL data types, primary keys, and unique values.
+
 * Load CSV files into a database and query the data.
+
 * Articulate the four basic functions of persistent storage (CRUD) and apply this set of functions to a database.
-* Combine data from multiple tables using JOINs.
+
+* Combine data from multiple tables using joins.
 
 ### Instructor Notes
 
-**Important:** Before today's class, slack out [instructions](../Supplemental/InstallationGuides) for installing PostgreSQL and pgAdmin. Students should install these before class.
+* **Important:** Before today's class, slack out [instructions](../Supplemental/InstallationGuides) for installing PostgreSQL and pgAdmin. Students should install these before class.
 
-Today's class will be challenging. In this lesson, a series of activities will introduce students to programming with SQL using Postgres and pgAdmin. The pace of today's class will be quick as students absorb learning a new UI and programming language simultaneously.
+* Today's class will be challenging. In this lesson, a series of activities will introduce students to programming with SQL using Postgres and pgAdmin. The pace of today's class will be quick as students absorb learning a new UI and programming language simultaneously.
 
-Because this lesson introduces more than one new concept, circulate through the class during student activities to assist those who appear frustrated or stuck. Some students may already have experience with SQL; embrace these students' knowledge of the language and have them assist students who are not yet familiar with SQL.
+* Because this lesson introduces more than one new concept, circulate through the class during student activities to assist those who appear frustrated or stuck. Some students may already have experience with SQL; embrace these students' knowledge of the language and have them assist students who are not yet familiar with SQL.
 
-This lesson introduces new content rapidly. Students may express frustration at learning a new interface and programming language simultaneously. Explain to students that while the learning curve may be steep at first, SQL experience is highly sought-after and well worth the effort required to become comfortable with it.
+* This lesson introduces new content rapidly. Students may express frustration at learning a new interface and programming language simultaneously. Explain to students that while the learning curve may be steep at first, SQL experience is highly sought-after and well worth the effort required to become comfortable with it.
 
-Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 - - -
 
-### 1. Instructor Do: Welcome Class (5 mins)
+### 1. Instructor Do: Welcome Class (5 min)
 
 Open the [slideshow](Slide-Shows/Introduction_to_SQL.pptx).
 
@@ -37,15 +42,19 @@ Welcome students to class and congratulate them on making it through 1/4 of the 
 
 Go over the learning outcomes for the SQL unit and today's class objectives. (Slides 2–3)
 
-Tell students that today's lesson will introduce them to one of the most popular programming languages used when working with databases: SQL. SQL programmers are in high demand, so this is an important language to understand. SQL allows us to manipulate and mine data as well as access large amounts of data with ease.
+Tell students that today's lesson will introduce them to one of the most popular programming languages used when working with databases: SQL. 
 
-### 2. Instructor Do: Introduction to SQL (Slides 4–7) (5 mins)
+* SQL programmers are in high demand, so this is an important language to understand. 
 
-Before diving into the lesson's activities, take some time to go over the purpose of SQL.
+* SQL allows us to manipulate and mine data as well as access large amounts of data with ease.
+
+### 2. Instructor Do: Introduction to SQL (5 min)
+
+Before diving into the lesson's activities, take some time to go over the purpose of SQL. 
 
 * SQL (often pronounced "sequel") stands for Structured Query Language. It is a powerful programming tool designed to allow programmers to create, populate, manipulate, and access databases, as well as provide programmers with an easy method for dealing with server-side storage. (Slide 4)
 
-* Data using SQL is stored in tables on the server, much like spreadsheets you would create in Microsoft Excel. This makes the data easy to visualize and search.
+* With SQL, data is stored in tables on the server, much like spreadsheets you would create in Microsoft Excel. This makes the data easy to visualize and search.
 
 * PostgreSQL (usually referred to as "Postgres") is an object-relational database system that uses the SQL language. (Slide 6)
 
@@ -55,7 +64,7 @@ Slack out the [Student Guide](../StudentGuide.md) containing this week's objecti
 
 Slack out the [SQL Reference Guide](../Supplemental/SQL_reference_guide.pdf) for students to use as a reference during the activities this week.
 
-### 3. Everyone Do: Create a Database (5 mins) (Critical)
+### 3. Instructor Do: Create a Database (5 min) (Critical)
 
 Begin by verifying that everyone has successfully installed pgAdmin and Postgres. Everyone should have completed this step prior to today's class.
 
@@ -67,11 +76,11 @@ Walk the class through the steps to create a database using pgAdmin.
 
 * In the pgAdmin editor, right-click the newly established server to create a new database.
 
-* From the menu, select **Create**, and then select **Database** to create a new database.
+* From the menu, select Create, and then select Database to create a new database.
 
   ![create_database.png](Images/create_database.png)
 
-* Enter **animals_db** as the database name. Make sure the owner is set as the default postgres, and then click **Save**.
+* Enter "animals_db" as the database name. Make sure the owner is set as the default postgres, and then click Save.
 
   ![animals_db.png](Images/animals_db.png)
 
@@ -81,13 +90,13 @@ At this point, show students that there is a new database listed in the left-han
 
 Answer any questions before moving on.
 
-### 4. Instructor Do: Create a Table (10 mins) (Critical)
+### 4. Instructor Do: Create a Table (10 min) (Critical)
 
 Now that there is a database on the server, it's time to dig into the real meat of SQL and start creating tables within the new database!
 
-From the left-hand menu in pgAdmin, right-click **animals_db** and select **Query Tool**.
+From the left-hand menu in pgAdmin, right-click "animals_db" and select Query Tool.
 
-* *Note:** You can also select **Query Tool** from the Tools drop-down menu at the top of the screen. (See second screenshot below.)
+* **Note:** You can also select Query Tool from the Tools drop-down menu at the top of the screen. (See second screenshot below.)
 
   ![query_tool.png](Images/query_tool.png)
 
@@ -129,17 +138,21 @@ After reviewing the code, click the lightning bolt icon to run the script. Make 
 
 Demonstrate that the structure of a table can be visualized using `SELECT * FROM <table name>;`.  Point out the error message that now appears at the bottom of the page.
 
-* Explain that SQL data is persistent; it is not deleted or overwritten when identical commands are run unless specifically commanded. This means that when a database or table is created with a  name identical to one that already exists, an error will occur telling the user that the database or table already exists.
+* SQL data is persistent; it is not deleted or overwritten when identical commands are run unless specifically commanded. 
 
-* Ask the class how to avoid this kind of error. Students may respond that they can simply delete the offending line of code and then run the commands again. Explain that while this method would work, deleting working code is not a best practice.
+* This means that when a database or table is created with a  name identical to one that already exists, an error will occur telling the user that the database or table already exists.
 
-* Show the class an alternative method: Highlight the lines of code to run, and then click the lightning bolt icon to run only the highlighted selection. This method of running SQL code is preferable to deleting previous code.
+Ask the class how to avoid this kind of error. Students may respond that they can simply delete the offending line of code and then run the commands again. Explain that while this method would work, deleting working code is not a best practice.
+
+Show the class an alternative method: 
+
+* Highlight the lines of code to run, and then click the lightning bolt icon to run only the highlighted selection. This method of running SQL code is preferable to deleting previous code.
 
   ![Select.png](Images/Select.png)
 
-Point out that the structure of a table can be visualized using `SELECT * FROM <table name>;`.
+* The structure of a table can be visualized using `SELECT * FROM <table name>;`.
 
-* Explain that using the asterisk in this manner tells pgAdmin to select all fields from the table.
+* Using the asterisk in this manner tells pgAdmin to select all fields from the table.
 
 * In the future, students will be able to view the structure of their table, and all of the values contained within it, using this same line of code.
 
@@ -160,7 +173,7 @@ Type the following code while explaining what it does line by line.
 
 * The `VALUES` line places the data contained in the parentheses into the corresponding columns listed after the `INSERT INTO` statement.
 
-* Note: Single quotations must be used for insert strings; otherwise, an error will result.
+* **Note:** Single quotations must be used for insert strings; otherwise, an error will result.
 
 Use the following code to query the table, extracting only the `pet_name`.
 
@@ -169,7 +182,7 @@ Use the following code to query the table, extracting only the `pet_name`.
   FROM people;
   ```
 
-* Explain that specifying a column name in the `SELECT` statement will return only the data contained in that field.
+Explain that specifying a column name in the `SELECT` statement will return only the data contained in that field.
 
 Filter the queried data to display only dogs younger than 5.
 
@@ -188,19 +201,21 @@ Explain the following points:
 
 * The `WHERE` clause will extract only the data that meets the condition specified. `AND` adds a second condition to the original clause, further refining the query.
 
-### 5. Student Do: Creating Tables (15 mins)
+Answer any questions before moving on.
+
+### 5. Student Do: Creating Tables (15 min)
 
 In this activity, students will use pgAdmin to recreate and query a table from an image provided.
 
 **Instructions:** [README.md](Activities/03-Stu_Creating_Tables/README.md)
 
-### 6. Instructor Do: Review Creating Tables (5 mins)
+### 6. Instructor Do: Review Creating Tables (5 min)
 
 **File:** [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql)
 
 Create a new database named `city_info` in pgAdmin. Then use the query tool to copy and paste, or live code, the solution from `query.sql`.
 
-* To create a new table, remind students to specify the data type for each column.
+* To create a new table, specify the data type for each column.
 
   ```sql
   CREATE TABLE cities (
@@ -210,9 +225,9 @@ Create a new database named `city_info` in pgAdmin. Then use the query tool to c
   );
   ```
 
-Insert multiple rows of data into the new table.
+* Insert multiple rows of data into the new table.
 
-* Point out to students that each column is specified in the `INSERT INTO` clause, and the values are inserted in the same order.
+* Each column is specified in the `INSERT INTO` clause, and the values are inserted in the same order.
 
 * To make the code easier to read, each row of values is on its own line, separated by a comma.
 
@@ -226,14 +241,15 @@ Insert multiple rows of data into the new table.
     ('Garland', 'Texas', 238002);
   ```
 
-Create a query to view the data using the `SELECT` clause.
+* Create a query to view the data using the `SELECT` clause.
 
   ```sql
   SELECT *
   FROM cities;
   ```
 
-* Point out the syntax here. Even though the code can fit on a single line, it's good practice to split it up over two lines instead. This way, the code is easier to read when more advanced queries are created.
+
+* Note the syntax here. Even though the code can fit on a single line, it's good practice to split it up over two lines instead. This way, the code is easier to read when more advanced queries are created.
 
 Using the `SELECT` clause again, query the data to return only the cities in the table.
 
@@ -242,7 +258,7 @@ Using the `SELECT` clause again, query the data to return only the cities in the
   FROM cities;
   ```
 
-Explain to students that the first bonus question incorporates a `WHERE` clause, which further filters the data.
+* The first bonus question incorporates a `WHERE` clause, which further filters the data.
 
 * The `WHERE` clause is used to search for specific data within a database. In this case, we are extracting only the records that meet the specified condition.
 
@@ -256,7 +272,7 @@ Explain to students that the first bonus question incorporates a `WHERE` clause,
 
 Demonstrate the solution to the second bonus question.
 
-* Point out to students that the `WHERE` clause is highly customizable, such as with the use of the `<` operator.
+* Note that the `WHERE` clause is highly customizable, such as with the use of the `<` operator.
 
   ```sql
   SELECT *
@@ -266,7 +282,7 @@ Demonstrate the solution to the second bonus question.
 
 Walk through the solution to the third and final bonus question.
 
-* Explain to students that queries can be filtered even further with the `AND` clause. This clause allows users to specify more than one condition in their query.
+* Queries can be filtered even further with the `AND` clause. This clause allows users to specify more than one condition in their query.
 
   ```sql
   SELECT *
@@ -277,11 +293,11 @@ Walk through the solution to the third and final bonus question.
 
 Answer any questions before moving on.
 
-### 7. Instructor Do: The Value of Unique Values (5 mins) (High)
+### 7. Instructor Do: The Value of Unique Values (5 min) (High)
 
 **File:** [query.sql](Activities/04-Ins_Values_of_Uniques/Solved/query.sql)
 
-Using the `people` table from the `animals_db` database, insert the duplicate data below into the table and then visualize the table with the new information.
+Using the `people` table from the `animals_db` database, insert the duplicate data below into the table, and then visualize the table with the new information.
 
   ```sql
   INSERT INTO people (name, has_pet, pet_type, pet_name, pet_age)
@@ -291,7 +307,7 @@ Using the `people` table from the `animals_db` database, insert the duplicate da
   FROM people;
   ```
 
-* Duplicate data is a real-world occurrence (and an eyesore). Demonstrate how to remove the rows containing the string `Ahmed` in the `name` column.
+Explain that duplicate data is a real-world occurrence (and an eyesore). Demonstrate how to remove the rows containing the string `Ahmed` in the `name` column.
 
   ```sql
   DELETE FROM people
@@ -338,17 +354,21 @@ Copy the following code from the `query.sql` file and paste it in the pgAdmin ed
   FROM people;
   ```
 
-* Explain that a *primary key* uniquely identifies a row.
+Explain the following points: 
 
-* `SERIAL` generates a new value for each inserted record in the table. By default, the starting value is 1, and it will increase by 1 for each new record. When using `SERIAL` with our unique `PRIMARY KEY`, we automatically get unique, incrementing values for each table row.
+* A **primary key** uniquely identifies a row.
 
-* Point out that because values will automatically increment, each row's ID is guaranteed to be unique. This ensures that SQL does not identify and update the wrong row when CRUD—Create, Read, Update, Delete—statements are implemented.
+* `SERIAL` generates a new value for each inserted record in the table. 
 
-* Point out that the `INSERT` statements have not changed, as they do not need to insert data specifically into the `id` column. SQL automatically provides a value for this column, fulfilling the uniqueness constraint by automatically incrementing the last value used as an ID.
+* By default, the starting value is 1, and it will increase by 1 for each new record. When using `SERIAL` with our unique `PRIMARY KEY`, we automatically get unique, incrementing values for each table row.
+
+* Because values will automatically increment, each row's ID is guaranteed to be unique. This ensures that SQL does not identify and update the wrong row when CRUD (Create, Read, Update, Delete) statements are implemented.
+
+* The `INSERT` statements have not changed, as they do not need to insert data specifically into the `id` column. SQL automatically provides a value for this column, fulfilling the uniqueness constraint by automatically incrementing the last value used as an ID.
 
 * The data type for the `id` column is automatically assigned as an integer.
 
-One entry in the table is incorrect: one of the Daves has the wrong `pet_name` and `pet_age`. We need to update the `pet_name` from Pringles to Rocket and the `pet_age` from 7 to 8.
+* One entry in the table is incorrect: one of the Daves has the wrong `pet_name` and `pet_age`. We need to update the `pet_name` from Pringles to Rocket and the `pet_age` from 7 to 8.
 
 * To avoid issues with updating multiple rows, it's best to update by ID. First, query by name to find the ID for the row we want to update.
 
@@ -370,7 +390,7 @@ One entry in the table is incorrect: one of the Daves has the wrong `pet_name` a
 
 * Note that, similar to a query, the `WHERE` statement is used to pinpoint the data we want to change. In this case, the `id` column is used to select the unique row we want to affect.
 
-* Duplicate data is also easier to remove with the use of a unique ID. With the following code, remove the duplicate data.
+* Duplicate data is also easier to remove with the use of a unique ID. With the following code, remove the duplicate data: 
 
   ```sql
   DELETE FROM people
@@ -381,17 +401,17 @@ One entry in the table is incorrect: one of the Daves has the wrong `pet_name` a
 
 Answer any remaining questions before moving on.
 
-### 8. Student Do: Making and Using an ID (10 mins)
+### 8. Student Do: Making and Using an ID (10 min)
 
 In this activity, students will recreate a table and then query, insert, and update data.
 
 **Instructions:** [README.md](Activities/05-Stu_Making_IDs/README.md)
 
-### 9. Instructor Do: Review Making and Using an ID (10 mins)
+### 9. Instructor Do: Review Making and Using an ID (10 min)
 
 **File:** [query.sql](Activities/05-Stu_Making_IDs/Solved/query.sql)
 
-Open query.sql and copy the code into pgAdmin.
+Open [query.sql](Activities/05-Stu_Making_IDs/Solved/query.sql) and copy the code into pgAdmin.
 
 Go over the lines of code used to create the ID and set it as the primary key. Make sure the class understands how this works, and explain how useful this will be in this week's homework.
 
@@ -401,11 +421,11 @@ Answer any questions before moving on.
 
 - - -
 
-### 10. Break (15 mins)
+### 10. BREAK (15 min)
 
 - - -
 
-### 11. Instructor Do: Import Data (10 mins)
+### 11. Instructor Do: Import Data (10 min)
 
 **Files:**
 
@@ -421,35 +441,35 @@ Open the CSV file within an integrated development environment, such as Excel, t
 
 * Open a query tool within `Miscellaneous_DB` and create a table named `bird_song`. Point out that the columns created match the data in the CSV file.
 
-* Once the table has been created, right-click **Miscellaneous_DB** from the left-hand menu and select **Refresh**.
+* Once the table has been created, right-click Miscellaneous_DB from the left-hand menu and select Refresh.
 
 * Scroll down to Schemas and expand that menu, and then expand the Tables menu.
 
   ![table-expand.png](Images/table-expand.png)
 
-* Right-click the new table and select **Import/Export** from the menu.
+* Right-click the new table and select Import/Export from the menu.
 
   ![import-export.png](Images/import-export.png)
 
 In the Options tab, complete the following steps:
 
-* Slide the Import/Export tab to **Import**.
+* Slide the Import/Export tab to Import.
 
 * Click on the dot menu to navigate to the `birdsong.csv` file on your computer.
 
-* Slide the Header tab to **Yes**.
+* Slide the Header tab to Yes.
 
 * Select the comma from the drop-down menu to set it as the Delimiter.
 
-* Leave the other fields as they are, and then click **OK**.
+* Leave the other fields as they are, and then click OK.
 
   ![import.png](Images/import.png)
 
 In the query tool, rerun `SELECT * FROM birdsong` to verify that data has been imported.
 
-Let the class know that the bigger a dataset is, the longer it will take for pgAdmin to import values.
+Let the class know that the larger a dataset is, the longer it will take for pgAdmin to import values.
 
-### 12. Student Do: Hide and Seek (10 mins)
+### 12. Student Do: Hide and Seek (10 min)
 
 In this activity, students will create a new table and import data from a CSV file.
 
@@ -461,11 +481,11 @@ In this activity, students will create a new table and import data from a CSV fi
 
 **Instructions:** [README.md](Activities/07-Stu_Hide_and_Seek/README.md)
 
-### 13. Instructor Do: Review Hide and Seek (5 mins)
+### 13. Instructor Do: Review Hide and Seek (5 min)
 
 **File:** [query.sql](Activities/07-Stu_Hide_and_Seek/Solved/query.sql)
 
-Open pgAdmin and paste the code from `query.sql` into the editor. Explain the following:
+Open pgAdmin and paste the code from [query.sql](Activities/07-Stu_Hide_and_Seek/Solved/query.sql) into the editor. Explain the following:
 
 * Although the CSV data does not contain an `id` column, when we specify `SERIAL PRIMARY KEY` while creating the table, IDs will automatically be assigned to each row.
 
@@ -481,11 +501,13 @@ Walk through the solutions to the bonus questions, touching on the following poi
 
 Answer any questions before moving on.
 
-### 14. Instructor Do: CRUD (Slides 8–11) (5 mins)
+### 14. Instructor Do: CRUD (5 min)
 
 Return to the slideshow and begin to explain CRUD operations. (Slide 9)
 
-* CRUD, while an unusual acronym, is a set of tools that are persistently used throughout programming. CRUD stands for Create, Read, Update, and Delete.
+* **CRUD**, while an unusual acronym, is a set of tools that are persistently used throughout programming. 
+
+* CRUD stands for Create, Read, Update, and Delete.
 
 Engage the class in a discussion by asking them to provide examples of CRUD operations.
 
@@ -501,13 +523,11 @@ In today's class, each of the operations has been in use. Students have:
 
 Introduce the class to an additional method of reading the data: wildcards. (Slides 10–11)
 
-* A wildcard is a character—either a percentage sign or an underscore—that takes the place of one or more characters in a query.
+* A **wildcard** is a character—either a percentage sign or an underscore—that takes the place of one or more characters in a query.
 
 * The keyword `LIKE` indicates the use of a wildcard in a query.
 
-* The percentage sign (%) signifies that zero, one, or multiple characters will be substituted in a query.
-
-  * For example, in the query `WHERE last_name LIKE 'Will%';` all names in the database beginning with "Will" will be returned, no matter the length.
+* The percentage sign (%) signifies that zero, one, or multiple characters will be substituted in a query. For example, in the query `WHERE last_name LIKE 'Will%';` all names in the database beginning with "Will" will be returned, no matter the length.
 
 * When using the underscore as a wildcard, only a single character is replaced in the query.
 
@@ -515,11 +535,12 @@ Introduce the class to an additional method of reading the data: wildcards. (Sli
 
 Answer any questions before moving on.
 
-### 15. Student Do: Using CRUD (20 mins)
+### 15. Student Do: Using CRUD (20 min)
 
 In this activity, students will utilize CRUD operations (Create, Read, Update, Destroy) on the provided data.
 
 **Files:**
+
 * [schema.sql](Activities/08-Stu_CRUD/Resources/schema.sql)
 
 * [GlobalFirePower.csv](Activities/08-Stu_CRUD/Resources/GlobalFirePower.csv)
@@ -530,7 +551,7 @@ Let the class know that they will be using the `WHERE` clause in this activity.
 
 This activity will require students to do some research. Links are provided to help them search for solutions to problems they are likely to encounter.
 
-### 16. Instructor Do: Review Using CRUD (5 mins)
+### 16. Instructor Do: Review Using CRUD (5 min)
 
 **Files:**
 
@@ -554,7 +575,7 @@ Open a query tool in `MiscellaneousDB` and copy and paste the code from schema.s
 
 * Finally, select all values to show the newly added country.
 
-### 17. Instructor Do: Joins (15 mins)
+### 17. Instructor Do: Joins (15 min)
 
 **Files:**
 
@@ -568,11 +589,11 @@ Students may recall working with merges and joins to combine datasets during the
 
 Create two new tables in `MiscellaneousDB` in pgAdmin named `players` and `matches`.
 
-* Copy the code from `query.sql` to create the tables, and then import the corresponding data from `players.csv` and `matches.csv`.
+* Copy the code from [query.sql](Activities/09-Ins_Joins/Solved/query.sql) to create the tables, and then import the corresponding data from `players.csv` and `matches.csv`.
 
 * Remember to refresh the database; newly created tables will not immediately appear.
 
-* Point out that both tables have matching values within the `player_id` column of the `players` table and the `loser_id`/`winner_id` columns of the `matches` table.
+* Point out that both tables have matching values within the `player_id` column of the `players` table and the `loser_id` and `winner_id` columns of the `matches` table.
 
 * Because there are common values, it is possible to join these tables together. For example:
 
@@ -581,7 +602,7 @@ Create two new tables in `MiscellaneousDB` in pgAdmin named `players` and `match
   players.player_id=matches.loser_id;
   ```
 
-* From the `query.sql` file, copy and paste the code performing an `inner join` on the two tables:
+* From the [query.sql](Activities/09-Ins_Joins/Solved/query.sql) file, copy and paste the code performing an `inner join` on the two tables:
 
   ```sql
   SELECT players.first_name, players.last_name, players.hand, matches.loser_rank
@@ -590,7 +611,7 @@ Create two new tables in `MiscellaneousDB` in pgAdmin named `players` and `match
   players.player_id=matches.loser_id;
   ```
 
-* Note: Some students may have advanced knowledge of SQL queries and use aliases in their solutions. Using aliases is not necessary for today's activities; they will be covered more comprehensively in the next class.
+**Note:** Some students may have advanced knowledge of SQL queries and use aliases in their solutions. Using aliases is not necessary for today's activities; they will be covered more comprehensively in the next class.
 
   ```sql
   -- Advanced INNER JOIN solution
@@ -600,27 +621,29 @@ Create two new tables in `MiscellaneousDB` in pgAdmin named `players` and `match
   p.player_id=m.loser_id;
   ```
 
-* Point out one significant difference between SQL joins and Python joins: in SQL joins, the columns that should be viewed after the join must be declared in the initial `SELECT` statement.
+Point out one significant difference between SQL joins and Python joins: 
+
+* In SQL joins, the columns that should be viewed after the join must be declared in the initial `SELECT` statement.
 
   ![inner-join.png](Images/inner-join.png)
 
-There are five primary types of joins that can be used with PostgreSQL:
+* There are five primary types of joins that can be used with PostgreSQL:
 
-* `INNER JOIN` returns records that have matching values in both tables.
+  * `INNER JOIN` returns records that have matching values in both tables.
 
-* `LEFT JOIN` returns all records from the left table and the matched records from the right table.
+  * `LEFT JOIN` returns all records from the left table and the matched records from the right table.
 
-* `RIGHT JOIN` returns all records from the right table and the matched records from the left table.
+  * `RIGHT JOIN` returns all records from the right table and the matched records from the left table.
 
-* `CROSS JOIN` returns records that match every row of the left table with every row of the right table. This type of join has the potential to make very large tables.
+  * `CROSS JOIN` returns records that match every row of the left table with every row of the right table. This type of join has the potential to make very large tables.
 
-* `FULL OUTER JOIN` places null values within the columns that do not match between the two tables, after an inner join is performed.
+  * `FULL OUTER JOIN` places null values within the columns that do not match between the two tables, after an inner join is performed.
 
 Slack out the link to this explanation of Postgres [joins](https://www.tutorialspoint.com/postgresql/postgresql_using_joins.htm) for students to study.
 
 Demonstrate a couple of different joins that can be performed. Then answer any questions before moving on to the next activity.
 
-### 18. Student Do: Joining the NBA (20 mins)
+### 18. Student Do: Joining the NBA (20 min)
 
 In this activity, students will be using joins to query NBA player seasonal statistics.
 
@@ -632,15 +655,15 @@ In this activity, students will be using joins to query NBA player seasonal stat
 
 * [schema.sql](Activities/10-Stu_Joins/Resources/schema.sql)
 
-**Instructions:** * [README.md](Activities/10-Stu_Joins/README.md)
+**Instructions:** [README.md](Activities/10-Stu_Joins/README.md)
 
-### 19. Instructor Do: Review Joining the NBA (5 mins)
+### 19. Instructor Do: Review Joining the NBA (5 min)
 
 **File:** [query.sql](Activities/10-Stu_Joins/Solved/query.sql)
 
-Using the schema.sql file and the query tool, create two new tables named `players` and `seasons_stats` using the data in `Players.csv` and `Seasons_Stats.csv`.
+Using [schema.sql](Activities/10-Stu_Joins/Resources/schema.sql) and the query tool, create two new tables named `players` and `seasons_stats` using the data in `Players.csv` and `Seasons_Stats.csv`.
 
-Open `query.sql` and copy the code. Then open a new query tool and paste the solution into the editor. Review the solution, explaining the following:
+Open [query.sql](Activities/10-Stu_Joins/Solved/query.sql) and copy the code. Then open a new query tool and paste the solution into the editor. Review the solution, explaining the following:
 
 * Since the selected data comes from two different tables, the naming convention is `table_name.column_name`.
 
@@ -667,7 +690,5 @@ Answer any questions before ending class.
 ### End Class
 
 - - -
-
-### Copyright
 
 © 2019 Trilogy Education Services

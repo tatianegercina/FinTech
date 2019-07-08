@@ -1,8 +1,8 @@
-## Making and Using an ID
+# Making and Using an ID
 
 In this activity, you will recreate a table and then query, insert, and update data.
 
-### Instructions
+## Instructions
 
 1. Create a new database named `programming_db`. 
 
@@ -18,8 +18,12 @@ In this activity, you will recreate a table and then query, insert, and update d
 
 6. Change the rating for HTML to 90.
 
-### Bonus
+## Bonus
 
 * Research how to add columns to a table. Then create a Boolean column named `mastered` that  has a default value of `true`.
 
 * Start looking into the concept of joins in SQL. (This concept will be covered later in the lesson.)
+
+- - - 
+
+© 2019 Trilogy Education Services
