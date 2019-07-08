@@ -30,17 +30,13 @@ By the end of today's class, students will be able to:
 
 Welcome students and explain that today's lesson will dive into data modeling techniques such as normalization, relationships, and how to conceptualize database design using entity relationship diagrams (ERDs).
 
-Open the [slideshow](Slide-Shows/SQL_Day3.pptx) and go over the class objectives. (Slide 2)
+Open the [slideshow](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g473a132ac1_0_7) and go over the class objectives. (Slide 2)
 
 ### 2. Instructor Do: Data Normalization (15 min) (Critical)
 
-**Files:** 
+**File:** [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/Normalization.md)
 
-* [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/Normalization.md)
-
-* [Slides 3–8](Slide-Shows/SQL_Day3.pptx)
-
-Review the slides on data normalization, explaining the following:
+Review the [slides on data normalization](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594c06c0c6_3_1090), explaining the following:
 
 * Data normalization is the process of restructuring data to a set of defined "normal forms."
 
@@ -118,7 +114,7 @@ Explain the bonus section of the activity:
 
 **File:** [schema.sql](Activities/03-Ins_Foreign_Keys/Solved/schema.sql)
 
-Use the slideshow to explain the concept of foreign keys and how they are used to connect tables:
+Use the [slides on foreign keys](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594fd95c34_0_199) to explain the concept of foreign keys and how they are used to connect tables:
 
 * A foreign key is a link between tables. The foreign key in the first table points to, or is linked to, the primary key in a second table.
 
@@ -285,9 +281,7 @@ Open `schema.sql` in pgAdmin and walk through the code, explaining the following
 
 * [query.sql](Activities/05-Ins_Data_Relationships/Solved/query.sql)
 
-* [Slides]
-
-Open the [slideshow](Slide-Shows/SQL_Day3.pptx). Explain that we will now cover one-to-one, one-to-many, and many-to-many relationships between data, which is an essential part of data modeling.
+Open the [slideshow](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594c06c0c6_3_1160). Explain that we will now cover one-to-one, one-to-many, and many-to-many relationships between data, which is an essential part of data modeling.
 
 Begin by discussing one-to-one relationships. This example will use members of the Simpson family to illustrate the concept.
 
@@ -302,7 +296,6 @@ Next, discuss one-to-many relationships. We'll continue with our Simpsons exampl
 * This example has two tables. The first table lists only addresses. The second table lists each person's Social Security number and address.
 
 * As before, one Social Security number is unique to one individual.
-
 
 Discuss one-to-many relationships. 
 
@@ -469,13 +462,9 @@ For the bonus, briefly explain that two outer joins can be performed to retrieve
 
 ### 12. Instructor Do: Entity Relationship Diagrams (15 min)
 
-**Files:**
+**File:** [pagila-erd.png](Images/pagila-erd.png)
 
-* [Slides](Slide-Shows/SQL_Day3.pptx)
-
-* [pagila-erd.png](Images/pagila-erd.png)
-
-Revisit the slideshow and begin the discussion of entity relationship diagrams (ERDs). Explain the following points:
+Open the [slideshow](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594fd95c34_0_422) and begin the discussion of entity relationship diagrams (ERDs). Explain the following points:
 
 * An **entity relationship diagram**, or **ERD**, is a visual representation of entity relationships within a database.
 
