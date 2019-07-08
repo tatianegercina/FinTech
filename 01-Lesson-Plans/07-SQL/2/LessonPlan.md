@@ -10,7 +10,7 @@ By the end of today's class, students will be able to:
 
 * Create aggregate queries.
 
-* Create subqueries to explore data further.
+* Create subqueries for further data exploration.
 
 * Create views and run subqueries off of them.
 
@@ -28,7 +28,7 @@ Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Open the [slideshow](Slide-Shows/SQL_Day2.pptx).
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809).
 
 Welcome the students and show the class objectives. (Slide 2)
 
@@ -64,13 +64,13 @@ The TAs should walk around the classroom to assist students with the database up
 
 ### 3. Instructor Do: Aggregate Functions, Aliases, and Grouping (10 min) (Critical)
 
-Open the [slideshow](Slide-Shows/SQL_Day2.pptx) and review the following:
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809) and review the following:
 
-* Similar to aggregates in Pandas, aggregate functions allow calculations on a set of values and return a singular value. (Slide 4)
+* Similar to aggregates in Pandas, aggregate functions allow calculations on a set of values and return a singular value. (Slide 5)
 
-* Some of most commonly used aggregates are `Avg`, `COUNT`, `MIN`, `MAX`, and `SUM`. (Slide 4)
+* Some of most commonly used aggregates are `Avg`, `COUNT`, `MIN`, `MAX`, and `SUM`. (Slide 5)
 
-* Aggregates are often combined with `GROUP BY`, `HAVING`, and `SELECT`. (Slide 5)
+* Aggregates are often combined with `GROUP BY`, `HAVING`, and `SELECT`. (Slide 6)
 
 **File:** [query.sql](Activities/02-Ins_Aggregates/Solved/query.sql)
 
@@ -270,7 +270,7 @@ Open pgAdmin and walk through the solution, highlighting the following:
 
 ### 10. Instructor Do: Introduction to Subqueries (10 min) (High)
 
-Open the [slideshow](Slide-Shows/SQL_Day2.pptx) to begin the discussion of subqueries. A **subquery** is nested inside a larger query. (Slide 7)
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809) to begin the discussion of subqueries. A **subquery** is nested inside a larger query. (Slide 10)
 
 **File:** [query.sql](Activities/06-Ins_Subqueries/Solved/query.sql)
 
@@ -416,7 +416,7 @@ Review the solution in pgAdmin and explain the following:
 
 ### 13. Instructor Do: Create Views (10 min)
 
-Open the [slideshow](Slide-Shows/SQL_Day2.pptx) to begin the discussion of views. A **view** in SQL is a virtual table that can be created from a single table, multiple tables, or another view. (Slide 9)
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809) to begin the discussion of views. A **view** in SQL is a virtual table that can be created from a single table, multiple tables, or another view. (Slide 13)
 
 **File:** [query.sql](Activities/08-Ins_Create_Views/Solved/query.sql)
 
