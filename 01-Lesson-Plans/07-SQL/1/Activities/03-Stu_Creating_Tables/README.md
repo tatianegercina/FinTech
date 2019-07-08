@@ -1,8 +1,8 @@
-## Creating Tables
+# Creating Tables
 
 In this activity, you will use pgAdmin to recreate and query a table based on image provided to you.
 
-### Instructions
+## Instructions
 
 1. Create a new database in pgAdmin named `city_info`.
 
@@ -12,20 +12,23 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 ![cities_table.png](Images/cities_table.png)
 
-4. Query the table to recreate the image below.
+4. Query the table to recreate the following image.
 
 ![cities_only.png](Images/cities_only.png)
 
-### Bonus
+## Bonus
 
 1. Filter the table to view only cities in Arizona.
 
-2. Filter the table to view only cities with a population of less than 100,000.
+1. Filter the table to view only cities with a population of less than 100,000.
 
-3. Filter the table to view California cities with a population of less than 100,000.
+1. Filter the table to view California cities with a population of less than 100,000.
 
 ### Hints
 
 * For the second bonus question, you will need to use a [`WHERE` clause](https://www.tutorialspoint.com/sql/sql-where-clause.htm) to filter the original query.
 
 * For the third bonus question, an [`AND` clause](https://www.tutorialspoint.com/sql/sql-and-or-clauses.htm) will also be necessary.
+
+- - -
+© 2019 Trilogy Education Services
