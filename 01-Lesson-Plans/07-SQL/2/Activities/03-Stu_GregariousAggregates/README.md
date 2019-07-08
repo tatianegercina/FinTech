@@ -1,8 +1,8 @@
-## Gregarious Aggregates
+# Gregarious Aggregates
 
-In this activity, you will practice writing queries with aggregate functions, with grouping, and with using aliases.
+In this activity, you will practice writing queries with aggregate functions, grouping, and using aliases.
 
-### Instructions
+## Instructions
 
 Use aggregate functions as you run queries to answer the following questions. You will have to search the internet for some of them. Try to use aliases for more informative column headings.
 
@@ -16,4 +16,10 @@ Use aggregate functions as you run queries to answer the following questions. Yo
 
 5. How long is the longest movie in the database? How long is the shortest movie?
 
-**Hint**: Consult the Postgres documentation on [aggregate functions](https://www.postgresql.org/docs/9.5/functions-aggregate.html) for a summary of the available functions.
+## Hint
+
+Consult the Postgres documentation on [aggregate functions](https://www.postgresql.org/docs/9.5/functions-aggregate.html) for a summary of the available functions.
+
+- - - 
+
+© 2019 Trilogy Education Services
