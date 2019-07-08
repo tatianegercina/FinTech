@@ -36,11 +36,11 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Open the [slideshow](Slide-Shows/Introduction_to_SQL.pptx).
+Open the [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g480f0dd0a7_0_1809).
 
 Welcome students to class and congratulate them on making it through 1/4 of the course! They have come very far since the beginning of the course and should feel proud of what they have accomplished so far!
 
-Go over the learning outcomes for the SQL unit and today's class objectives. (Slides 2–3)
+Go over the learning outcomes and class objectives for the SQL unit. (Slides 2–3)
 
 Tell students that today's lesson will introduce them to one of the most popular programming languages used when working with databases: SQL. 
 
@@ -96,7 +96,7 @@ Now that there is a database on the server, it's time to dig into the real meat 
 
 From the left-hand menu in pgAdmin, right-click "animals_db" and select Query Tool.
 
-* **Note:** You can also select Query Tool from the Tools drop-down menu at the top of the screen. (See second screenshot below.)
+**Note:** You can also select Query Tool from the Tools drop-down menu at the top of the screen. (See second screenshot below.)
 
   ![query_tool.png](Images/query_tool.png)
 
@@ -130,7 +130,7 @@ Type the following lines of code, explaining each line:
 
 * `pet_age INT` creates a`pet_age` column, which can hold whole numbers.
 
-* **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
+  **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
 
 After reviewing the code, click the lightning bolt icon to run the script. Make a note of the Messages tab at the bottom of the screen.
 
@@ -173,7 +173,7 @@ Type the following code while explaining what it does line by line.
 
 * The `VALUES` line places the data contained in the parentheses into the corresponding columns listed after the `INSERT INTO` statement.
 
-* **Note:** Single quotations must be used for insert strings; otherwise, an error will result.
+* Single quotations must be used for insert strings; otherwise, an error will result.
 
 Use the following code to query the table, extracting only the `pet_name`.
 
@@ -503,7 +503,7 @@ Answer any questions before moving on.
 
 ### 14. Instructor Do: CRUD (5 min)
 
-Return to the slideshow and begin to explain CRUD operations. (Slide 9)
+Return to the [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g58479a5bad_2_0) and begin to explain CRUD operations. (Slides 10–11)
 
 * **CRUD**, while an unusual acronym, is a set of tools that are persistently used throughout programming. 
 
@@ -521,7 +521,7 @@ In today's class, each of the operations has been in use. Students have:
 
 * Deleted data using `DELETE`.
 
-Introduce the class to an additional method of reading the data: wildcards. (Slides 10–11)
+Introduce the class to an additional method of reading the data: wildcards. (Slides 12–13)
 
 * A **wildcard** is a character—either a percentage sign or an underscore—that takes the place of one or more characters in a query.
 
