@@ -133,7 +133,7 @@ Introduce Pandas DataFrames and slack out the link provided below.
 
 Start by opening the two CSV files in the [Resources](Activities/01-Ins_Reading_CSVs/Resources) directory, `sales.csv` and `sales_no_header.csv` to show students the format of the data. Point out that one file has a header while the other does not. Refer back to these files during the demo as needed.
 
-Next, open `reading_csvs.ipynb` and walk through the following aspects of the code. Highlight the following in sequential order.
+Next, open `reading_csvs.ipynb` and walk through the following aspects of the code with your students. Highlight the following in sequential order.
 
 First, emphasize how to import Pandas.
 
@@ -146,9 +146,9 @@ First, emphasize how to import Pandas.
   from pathlib import Path
   ```
 
-Next, discuss the `read_csv` function. 
+Next, discuss the `read_csv` function.
 
-* The `read_csv` function allows users to read a CSV file into a DataFrame. 
+* The `read_csv` function allows users to read a CSV file into a DataFrame.
 
 * The function usually just needs the path to the file, which in this case is defined using the `Path` class.
 
@@ -176,25 +176,21 @@ Now call attention to the `header` parameter for `read_csv`.
 
   ![header-columns.png](Images/header-columns.png)
 
-* It is common to generate high-level statistics when creating a DataFrame. In this case the Pandas `describe` function can be used. 
+* It is common to generate high-level statistics when creating a DataFrame. In this case the Pandas `describe` function can be used.
 
-    * The output of the function is summary statistics for numeric fields, including series counts, averages, minimum value, maximum value, and so on. 
-    
-    * A limitation of the `describe` function is that it only calculates summary statistics for numeric values columns.
+  * The output of the function is summary statistics for numeric fields, including series counts, averages, minimum value, maximum value, and so on.
+
+  * A limitation of the `describe` function is that it only calculates summary statistics for numeric values columns.
 
   ![describe_summary.png](Images/describe_summary.png)
 
-Consult the Pandas documentation to read more about the [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) function. Show the many options available in the function signature. 
+Consult the Pandas documentation to read more about the [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) function. Show the many options available in the function signature.
 
-Explain that, while the most common scenario is to simply provide the path to the file, Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files.
+Explain that, while the most common scenario is to simply provide the path to the file, Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files --- such as the parameters associated with the file path and header that were used in the demo code.
 
-Be sure to point out the parameters associated with the file path and the header that was used in the demo code.
+Congratulate students on reading their first CSV file into Pandas as this is an exciting moment because students can now harness the power of Pandas to work with tabular data! Ask if there are any questions before moving on.
 
-Congratulate students on reading their first CSV file into Pandas. This is an exciting moment because students can now harness the power of Pandas to work with tabular data. 
-
-Ask if there are any questions before moving on. 
-
-- - -
+---
 
 ### 4. Student Do: Reading Stock Data from a CSV File (10 min)
 
@@ -218,9 +214,9 @@ In this section, review the previous activity with students.
 
 **File:** [reading_stock_data.ipynb](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb)
 
-Open the [solution file](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb) and review the following: 
+Open the [solution file](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb) and review the following:
 
-* In order to use Pandas, the `pandas` module must be imported into the Python environment.
+* In order to use Pandas, the `pandas` library must be imported into the Python environment.
 
   ```python
   import pandas as pd
@@ -239,9 +235,9 @@ Open the [solution file](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_dat
 
 ![Setting new columns names](Images/05_set_columns_names.png)
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
-- - -
+---
 
 ### 6. Instructor Do: Column Manipulation (10 min)
 
@@ -257,7 +253,7 @@ Transition to the topic of column manipulation by covering the following talking
 
 * In the previous activity, students created a Pandas DataFrame from a CSV file and assigned column names to the DataFrame. This was one example of column manipulation. There are also other ways to manipulate columns. This demonstration will cover the common techniques used to do so.
 
-Demonstrate the fundamentals of column manipulation in Pandas:
+Open the solution file and demonstrate the fundamentals of column manipulation in Pandas:
 
 * Pandas DataFrames have a `columns` attribute that shows the current column names.
 
@@ -293,15 +289,13 @@ Demonstrate the fundamentals of column manipulation in Pandas:
 
   ![customer-drop-columns.png](Images/customer-drop-columns.png)
 
-Slack out the solution file to students to use as a reference. 
-
-Now that students have created, split, renamed, and dropped columns, they can move onto the next step of data wrangling: data cleaning.
+Slack out the solution file to students to use as a reference. Now that students have created, split, renamed, and dropped columns, they can move onto the next step of data wrangling: data cleaning.
 
 - - -   
 
 ### 7. Instructor Do: Data Cleaning (10 min)
 
-Students will now take part in a lecture and discussion about data cleaning. They will learn what data cleaning, why it is necessary, and common strategies for cleaning data. This part of the lesson is crucial, as most of the data encountered in the real world is "dirty" and unusable. 
+Students will now take part in a lecture and discussion about data cleaning. They will learn what data cleaning, why it is necessary, and common strategies for cleaning data. This part of the lesson is crucial, as most of the data encountered in the real world is "dirty" and unusable.
 
 **Files:**
 
@@ -315,35 +309,35 @@ Data cleaning is comprised of three parts:
 
 1. Data exploration
 
-1. Data quality checks
+2. Data quality checks
 
-1. Data cleaning strategies
+3. Data cleaning strategies
 
-Tell students you will demonstrate each of these parts so that they can confidently clean and prep data for analytical use. 
+Tell students you will demonstrate each of these parts so that they can confidently clean and prep data for analysis.
 
 Open the slides and introduce data cleaning by covering these points:
 
-* Data cleaning is critical to financial analytics. Data quality issues comprise the integrity, or "health," of a dataset, which, in turn, creates a need for data cleaning. 
+* Data cleaning is critical to financial analytics. Data quality issues comprise the integrity, or "health," of a data set, which, in turn, creates a need for data cleaning.
 
 * The goal of data cleaning is to keep the "plumbing" of data pipelines clean and in working condition so that analytics can run smoothly.
 
-Discuss how data quality is determined. 
+Discuss how data quality is determined.
 
 * Most data quality rules are influenced by general coding etiquette (e.g., using correct data types, minimizing use of nulls) as well as general data requirements (e.g., strings are characters and numerics are numbers). 
 
 * However, many companies create their own data governance rules and policies that dictate what makes each data element complete, consistent, valid, and accurate.
 
-* The rules that govern data cleaning are defined by industry accepted standards/best practices and various data storage design theories. For example: 
+* The rules that govern data cleaning are defined by industry accepted standards/best practices and various data storage design theories. For example:
 
-    * Numerical fields should not contain string characters, only digits. 
-    
-    * There should not be any duplicate rows in a dataset.
+  * Numerical fields should not contain string characters, only digits.
+
+  * There should not be any duplicate rows in a data set.
 
 * Data quality rules are also defined by business or functional rules. Sometimes data needs to be stored or formatted in a unique way for business needs. For example, an international company might store dates as `DD/MM/YYY`, whereas an American company might store dates as `MM/DD/YYYY`.
 
 Mention to students that these rules can all be researched  outside of class.
 
-Ask students to propose some reasons why data might become dirty. Highlight some of the examples provided by students. Be sure to cover the implications and impact of the following (typos, human error, and poor data management).  
+Ask students to propose some reasons why data might become dirty. Then, highlight some of the common reasons for having dirty data:  
 
 * **Typos:** When manually entering data, users can enter typos. If gone unchecked, typos can corrupt data values. There is little that can be be done to get rid of typos, as it is often difficult to identify them.
 
@@ -399,13 +393,13 @@ At this point, ask students, "Why do you think there are unequal counts in the d
 
     ![LP_Ins_Data_Cleansing_Distinct_Customer.PNG](Images/LP_Ins_Data_Cleansing_Distinct_Customer.PNG)
 
-* Identifying `nulls` is key in assessing data quality health. 
+* Identifying `nulls` is key in assessing data quality health.
 
-    * Pandas offers a native function, `isnull()`, that can be used to identify missing values in a field, Python `None`. 
-    
-    * The `isnull()` function identifies which column values are nulls and which ones are not. 
-    
-    * If a column value is null, `isnull()` returns `True`. If the value is not null, `isnull` returns `False`.
+  * Pandas offers a native function, `isnull()`, that can be used to identify missing values in a field represented as Python `None` objects.
+
+  * The `isnull()` function identifies which column values are nulls and which ones are not.
+
+  * If a column value is null, `isnull()` returns `True`. If the value is not null, `isnull` returns `False`.
 
     ```python
     # Checking for null
@@ -489,7 +483,7 @@ Next, tell students you will live code a few data quality checks that are especi
 
 * FinTech is all about manipulating financial data. Being able to inspect numeric values and gauge the quality of numerical data is critical to student success when analyzing and aggregating data. 
 
-* A quick and easy way to confirm the quality of a numeric value is to sample the data and do a spot check. 
+* A quick and easy way to confirm the quality of a numeric value is to sample the data and do a spot check.
 
     ```python
     # Generate sample of DataFrame to inspect for issues with numerical data
@@ -498,9 +492,9 @@ Next, tell students you will live code a few data quality checks that are especi
 
     ![LP_Stu_Data_Cleansing_Head_Currency.PNG](Images/LP_Stu_Data_Cleansing_Head_Currency.PNG)
 
-* Because the `order_total` field has currency symbols in the values, numeric operations cannot be performed. A custom cleaning function/operation will need to be created in order to remove these symbols from the dataset.  
+* Because the `order_total` field has currency symbols in the values, numeric operations cannot be performed. A custom cleaning operation will need to be created in order to remove these symbols from the data set.  
 
-* The cleaning function/operation can be created by leveraging and combining other Pandas functions (e.g., the Pandas `replace` function).
+* The cleaning operation can be created by leveraging and combining other Pandas functions (e.g., the Pandas `replace` function).
 
     ```python
     # Cleaning identified numeric fields with $ symbol
