@@ -1,6 +1,6 @@
 # FinTech Payments Case Study
 
-Now it's your turn to create and present a case study! Break off into groups of `3-4` individuals again and research one of the following competitors to Stripe in the Payments domain:
+Now it's your turn to create and present a case study! Break off into groups of `2` individuals again and research one of the following competitors to Stripe in the Payments domain:
 
  * Plaid
  
