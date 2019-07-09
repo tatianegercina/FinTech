@@ -585,7 +585,7 @@ Open a query tool in `MiscellaneousDB` and copy and paste the code from schema.s
 
 * [matches.csv](Activities/09-Ins_Joins/Resources/matches.csv)
 
-Students may recall working with merges and joins to combine datasets during the Pandas module. While SQL is a vastly different language than Python, it also includes the functionality to merge tables.
+Students may recall working with merges and joins to combine datasets during the Pandas unit. While SQL is a vastly different language than Python, it also includes the functionality to merge tables.
 
 Create two new tables in `MiscellaneousDB` in pgAdmin named `players` and `matches`.
 
