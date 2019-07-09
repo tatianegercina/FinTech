@@ -23,4 +23,5 @@ Using the [starter file](Unsolved/out_of_sorts.ipynb) and NASDAQ historical stoc
 8. Plot the data.
 
 ---
+
 © 2019 Trilogy Education Services
