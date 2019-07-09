@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 * The sections on grouping and multi-indexing contain abstract concepts that can be difficult to grasp without visual representation. Therefore, be sure to show the slides before walking through the demos to give students a chance to absorb the information.
 
-* Be mindful of the class pacing; the pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage students who are confused to attend office hours. 
+* Be mindful of the class pacing; the pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage students who are confused to attend office hours.
 
 * Encourage students to work in pairs or groups on the in-class activities to help facilitate discussions as well as troubleshooting. Collaborative exercises such as student-led activity reviews and discussions have been built into this lesson.
 
@@ -99,7 +99,7 @@ Walk students through the following steps.
   fb_ticker_data.head()
   ```
 
-Instead of calculating daily returns, ask students to orally summarize the required steps to calculate daily returns for three months of data: 
+Instead of calculating daily returns, ask students to orally summarize the required steps to calculate daily returns for three months of data:
 
 "Now that we have the historical stock data, what are the necessary steps for calculating daily returns?"
 
@@ -213,7 +213,7 @@ Sort the data alphabetically by country. Then, present the data so that the meda
 
 **Dry Walk-Through of the Solution:**
 
-Do this dry walk-through in place of the live-coding exercise if you do not have a student volunteer. 
+Do this dry walk-through in place of the live-coding exercise if you do not have a student volunteer.
 
 Open [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Solved/out_of_sorts.ipynb) and explain the following:
 
@@ -888,7 +888,7 @@ Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCv
 
 * Sharpe ratios are calculated by subtracting the **return of portfolio** from the investment's **risk-free rate**. The difference is then divided by the standard deviation.
 
-  ![sharpe_ratio_formula.png](Images/sharpe_ratio_formula.png)
+  ![sharpe_ratio_formula.png](Images/sharpe_ratio_formula.PNG)
 
 Open [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py) and live code how to calculate and plot sharpe ratios. Explain the following as part of the demo:
 
