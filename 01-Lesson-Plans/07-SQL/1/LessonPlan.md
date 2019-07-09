@@ -213,7 +213,7 @@ In this activity, students will use pgAdmin to recreate and query a table from a
 
 **File:** [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql)
 
-Create a new database named `city_info` in pgAdmin. Then use the query tool to copy and paste, or live code, the solution from `query.sql`.
+Create a new database named `city_info` in pgAdmin. Then use the query tool to copy and paste, or live code, the solution from [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql). 
 
 * To create a new table, specify the data type for each column.
 
