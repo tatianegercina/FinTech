@@ -4,7 +4,7 @@ Your county's Financial Leaders of America group has recently joined with the In
 
 ## Instructions
 
-Using the [starter file](Unsolved/mastering_concatenation.ipynb) and the data in the Resources folder, complete the following steps:
+Using the [starter file](Unsolved/mastering_concatenation.ipynb) and the data in the [Resources](Resources) folder, complete the following steps:
 
 1. Load CSV data into Pandas using `read_csv` for each file.
 
