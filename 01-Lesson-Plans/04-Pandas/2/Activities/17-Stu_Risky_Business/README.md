@@ -28,9 +28,9 @@ Using the [starter file](Unsolved/Core/risky_business.ipynb) and the data in the
 
 7. Answer the following questions:
 
-  * How many smart investments did Harold make compared to risky investments? How many did you make?
+    * How many smart investments did Harold make compared to risky investments? How many did you make?
 
-  * Which cryptos have been the smartest investments?
+    * Which cryptos have been the smartest investments?
 
 ### Challenge
 
