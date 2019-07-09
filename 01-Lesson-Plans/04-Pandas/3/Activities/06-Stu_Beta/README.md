@@ -8,30 +8,30 @@ Use the Pandas library to help Harold calculate and plot the 30-day rolling beta
 
 Using the starter file, complete the following steps.
 
-1. Import libraries and dependencies. 
+1. Import libraries and dependencies.
 
-1. Read in the files `fb_data.csv`, `twtr_data.csv`, `snap_data.csv`, and `sp500_data.csv` as Pandas DataFrames. Set the Date column as a datetime index for each DataFrame.
+2. Read in the files `fb_data.csv`, `twtr_data.csv`, `snap_data.csv`, and `sp500_data.csv` as Pandas DataFrames. Set the Date column as a datetime index for each DataFrame.
 
-1. Combine the DataFrames so that the closing prices from each DataFrame are stacked column by column.
+3. Combine the DataFrames so that the closing prices from each DataFrame are stacked column by column.
 
-1. Rename the columns to reflect the corresponding stock.
+4. Rename the columns to reflect the corresponding stock.
 
-1. Use the `pct_change` function to calculate daily returns for each stock.
+5. Use the `pct_change` function to calculate daily returns for each stock.
 
-1. Calculate the overall covariances of each stock's daily returns to that of the S&P 500. Calculate the overall variance of S&P 500 daily returns.
+6. Calculate the overall covariances of each stock's daily returns to that of the S&P 500. Calculate the overall variance of S&P 500 daily returns.
 
-1. Calculate the overall beta values of each social media stock.
+7. Calculate the overall beta values of each social media stock.
 
-1. Calculate the rolling 30-day covariances of each stock's daily returns to that of the S&P 500. Calculate the rolling 30-day variance of S&P 500 daily returns.
+8. Calculate the rolling 30-day covariances of each stock's daily returns to that of the S&P 500. Calculate the rolling 30-day variance of S&P 500 daily returns.
 
-1. Calculate the rolling 30-day beta values of each social media stock.
+9. Calculate the rolling 30-day beta values of each social media stock.
 
-1. Plot the rolling 30-day beta values of each social media stock on the same figure. Set the figure legend.
+10. Plot the rolling 30-day beta values of each social media stock on the same figure. Set the figure legend.
 
 ## Hint
 
 Remember to set the `ax` parameter when plotting multiple datasets on a single chart figure.
 
-- - - 
+---
 
 © 2019 Trilogy Education Services

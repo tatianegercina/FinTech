@@ -6,35 +6,36 @@ Use the Pandas library to help Harold plot the simple moving averages and rollin
 
 ## Instructions
 
-Using the starter file, complete the following steps.
+Using the [starter file](Unsolved/simple_moving_averages.ipynb), complete the following steps.
 
-1. Import libraries and dependencies. 
+1. Import libraries and dependencies.
 
-1. Read in `nflx.csv` as a Pandas DataFrame, and set the Date column as a datetime index.
+2. Read in `nflx.csv` as a Pandas DataFrame, and set the Date column as a datetime index.
 
-1. Use the `rolling` function and set the `window` parameter to designate the time windows. Then, use the `mean` function to calculate the following:
+3. Use the `rolling` function and set the `window` parameter to designate the time windows. Then, use the `mean` function to calculate the following:
 
-    * 20-day simple moving average
+  * 20-day simple moving average
 
-    * 50-day simple moving average
+  * 50-day simple moving average
 
-    * 100-day simple moving average
+  * 100-day simple moving average
 
-1. Overlay the plot for daily closing prices of NFLX with the SMAs. 
+4. Overlay the plot for daily closing prices of NFLX with the SMAs.
 
-1. Use the `rolling` function and set the `window` parameter to designate the time windows. Then, use the `mean` function to calculate the following:
+5. Use the `rolling` function and set the `window` parameter to designate the time windows. Then, use the `mean` function to calculate the following:
 
-    * 20-day rolling standard deviation
+  * 20-day rolling standard deviation
 
-    * 50-day rolling standard deviation
+  * 50-day rolling standard deviation
   
-    * 100-day rolling standard deviation
+  * 100-day rolling standard deviation
 
-1. Overlay the plot for daily closing prices with the STDs. 
+6. Overlay the plot for daily closing prices with the STDs.
 
 ## Hint
 
 Go [here](https://www.investopedia.com/terms/s/sma.asp) to learn more about simple moving averages and how they work.
 
-- - - 
+---
+
 © 2019 Trilogy Education Services
