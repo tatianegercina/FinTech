@@ -30,8 +30,9 @@ By the end of class, students will be able to:
 
 * The lesson first covers technical concepts like reading in CSV files and checking for nulls, and then progresses to more advanced skills such as calculating daily and cumulative investment returns. Keep in mind that not all students have a finance background and, as such, may not understand returns right away. Leverage the knowledge of finance-savvy students in the class and encourage them to help their partners if they get stuck. Be sure to allow enough time for students to ask questions at the end of each section.
 
-* The activities in this lesson focus on developing and honing skills that are critical for succeeding in this course as well as performing day-to-day tasks within the FinTech professional world.
-Therefore, encourage students to practice these skills outside of class to gain mastery.
+* Keep in mind that some students may be confused by the concept of ROI but hesitant to vocalize their uncertainty. Encourage students to work in groups so that they can make sense of the activity and concepts together. TAs should circulate the classroom to assist groups, and you should make yourself available for financial or technical questions. Finally, consider asking the finance-savvy students to provide clarity and assistance for students who need help.
+
+* The activities in this lesson focus on developing and honing skills that are critical for succeeding in this course as well as performing day-to-day tasks within the FinTech professional world. Therefore, encourage students to practice these skills outside of class to gain mastery.
 
 * Have your TAs keep the class on schedule with the [Time Tracker](TimeTracker.xlsx).
 
@@ -624,7 +625,7 @@ If time allows, engage the students with the following review questions:
 
 To guide students, you may want to follow up with questions such as the following:
 
-* I used `fillna(0)` to fill `NaN` or null values in my DataFrame, but now my `first_name` and `last_name` fields have 0s in them. What happened? What should I have done instead?
+* I used `fillna(0)` to fill NaN or null values in my DataFrame, but now my first_name and last_name fields have 0s in them. What happened? What should I have done instead?
 
   **Answer:** `fillna(0)` fills all null/NaN values in the DataFrame, regardless of the data type of the Series where the null is. `fillna()` should have been applied against the specific Series that needed the nulls converted to 0.
 
@@ -736,7 +737,7 @@ Open the solution file, [loans.ipynb](Activities/07-Stu_Indexing/Solved/loans.ip
 
   ![First 10 Records](Images/first-10-records.png)
 
-* The `iloc[]` function allows for selecting specific row and column indexes. In this case, the `:` keyword suggests that all rows will be kept from the `0`, `3`, `4`, `8`, `11`, `16` column indexes that will be selected.
+* The `iloc[]` function allows for selecting specific row and column indexes. In this case, the `:` keyword suggests that all rows will be returned from the `0`, `3`, `4`, `8`, `11`, `16` column indexes.
 
   ![Specific Columns](Images/specific-columns.png)
 
@@ -770,7 +771,7 @@ Open [visualization.ipynb](Activities/08-Ins_Pandas_Visualization/Solved/visuali
 
   ![line-chart-without-index](Images/line-chart-without-index.png)
 
-* While setting the `Date` column as the DataFrame index, it's a good practice to convert date strings into datetime objects; this allows flexibility of utilizing additional datetime functionality.
+* While setting the `Date` column as the DataFrame index, it's a good practice to convert date strings into datetime objects; this allows for the use of additional datetime functionality.
 
   ![set-index](Images/set-index.png)
 
@@ -782,11 +783,11 @@ Open [visualization.ipynb](Activities/08-Ins_Pandas_Visualization/Solved/visuali
 
   ![line-chart-with-index](Images/line-chart-with-index.png)
 
-* Use the `kind` parameter to the `plot()` function to specify different types of charts. The `plot()` function automatically defaults to generating a line chart.
+* Use the `kind` parameter with the `plot()` function to specify different types of charts. The `plot()` function automatically defaults to generating a line chart.
 
   ![bar-chart](Images/bar-chart.png)
 
-* Use the `figsize` parameter to the `plot()` function to increase or decrease the chart size. This is especially helpful when there are many x- or y-axis data points.
+* Use the `figsize` parameter with the `plot()` function to increase or decrease the chart size. This is especially helpful when there are many x- or y-axis data points.
 
   ![bar-chart-large](Images/bar-chart-large.png)
 
@@ -844,7 +845,7 @@ Open the solution file, [market_analysis.ipynb](Activities/09-Stu_Pandas_Visuali
   market_cap = sp500_companies_csv.loc[:, ['Symbol', 'Market Cap']]
   ```
 
-* Be sure to set the index on DataFrames that are intended for plotting to display the correct labels, e.g., the x-axis labels on a line chart.
+* When plotting a DataFrame, set the index to a specific column to ensure the desired chart labels are displayed (ex. the x-axis labels on a line or bar chart).
 
 * Use the `nlargest()` function to return the top `n` number of rows based on a particular DataFrame column.
 
@@ -854,7 +855,7 @@ Open the solution file, [market_analysis.ipynb](Activities/09-Stu_Pandas_Visuali
 
   ![bar_chart](Images/bar.png)
 
-* A scatter plot is best suited for comparing the relationship between two variables, which, in this case, is the relationship between price and earnings. The plot shows that there is generally a range between which most companies tend to cluster around price and earnings. However, as earnings increase, there seems to be a slight positive trend in price as well.
+* A scatter plot is best suited for comparing the relationship between two variables, which in this case, is the relationship between price and earnings. The plot shows that there is a common range in which most companies tend to cluster in regards to price and earnings. However, as earnings increase, there seems to be a slight positive trend in price as well.
 
   ![scatter_plot](Images/scatter.png)
 
@@ -922,15 +923,13 @@ Open [returns.ipynb](Activities/10-Ins_Returns/Solved/returns.ipynb) to begin th
 
   ![Plot of Cumulative Returns](Images/cumulative-return-plot.png)
 
-Now that students know how to calculate and plot returns, they will practice doing these skills by analyzing and plotting historical AMD data for Harold. 
+Now that students know how to calculate and plot returns, they will practice doing these skills by analyzing and plotting historical AMD data for Harold.
 
 - - -
 
 ### 17. Student Do: Returns Over Date Ranges (20 min)
 
-In this activity, students will analyze the last 10 years of historical price data for AMD and plot the daily returns over the last 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each time period to determine whether a short- or long-term perspective should be used in prospecting AMD as a potential candidate.
-
-**Note:** Keep in mind that some students may be confused by the concept of ROI but hesitant to vocalize their uncertainty. Encourage students to work in groups so that they can make sense of the activity and concepts together. TAs should circulate the classroom to assist groups, and you should make yourself available for financial or technical questions. Finally, consider asking the finance-savvy students to provide clarity and assistance for students who need help.
+In this activity, students will analyze the last 10 years of historical price data for Advanced Micro Devices (AMD) and plot the daily returns over the last 1, 3, 5, and 10-year periods. They will also need to find and show the differences in average daily returns for each time period to determine whether a short or long-term perspective should be used in prospecting AMD as a potential investment opportunity.
 
 **File:** [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Unsolved/returns_over_date_ranges.ipynb)
 
@@ -946,13 +945,13 @@ In this section, review the solution to the previous activity with students.
 
 Tell students to turn to the person sitting next to them and spend the next three minutes doing the following:
 
-* Share two new things they learned about returns. 
+* Share two new things they learned about returns.
 
-* Share answers to the following questions: 
+* Share answers to the following questions:
 
-    * What is the value of calculating cumulative returns? 
-    
-    * Why not just calculate daily returns over time?
+  * What is the value of calculating cumulative returns?
+
+  * Why not just calculate daily returns over time?
 
 With the remaining time, open the solution file, [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Solved/returns_over_date_ranges.ipynb), and discuss the following points:
 
@@ -965,7 +964,7 @@ With the remaining time, open the solution file, [returns_over_date_ranges.ipynb
   %matplotlib inline
   ```
 
-* Read in the CSV as a DataFrame and do a quick summary statistical analysis. Then trim the data to match the needs of the requirements. In this case, only the Close column is needed to calculate daily returns.
+* Read in the CSV as a DataFrame and do a quick analysis of summary statistics. Then trim the data to match the needs of the requirements. In this case, only the Close column is needed to calculate daily returns.
 
   ![drop-columns](Images/drop-columns.png)
 
