@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today’s class will focus on analyzing the performance of groups of stocks, otherwise known as a portfolio of stocks. Stock portfolios are a key investment strategy, as they proportion capital among several stocks to minimize risk. In order to create an optimal portfolio that maximizes returns while minimizing risk, it’s necessary to analyze the average return and risk of the portfolio overall, as well as the correlations between stocks. In this lesson, students will learn how to analyze correlations between stocks, calculate rolling statistics and volatility of stocks, optimize a portfolio, and compare portfolio performance. 
+Today’s class will focus on analyzing the performance of groups of stocks, otherwise known as a portfolio of stocks. Stock portfolios are a key investment strategy, as they proportion capital among several stocks to minimize risk. In order to create an optimal portfolio that maximizes returns while minimizing risk, it’s necessary to analyze the average return and risk of the portfolio overall, as well as the correlations between stocks. In this lesson, students will learn how to analyze correlations between stocks, calculate rolling statistics and beta of stocks, optimize a portfolio, and compare portfolio performance.
 
 ### Class Objectives
 
@@ -14,43 +14,43 @@ By the end of class, students will be able to:
 
 * Define correlation and explain how to calculate it in Pandas.
 
-* Visualize trends through rolling statistics that minimize data noise.
+* Visualize trends through rolling statistics that smooth datasets and minimize data noise.
 
-* Compare the volatility of a portfolio against the overall market.
+* Compare the volatility of a portfolio against the overall market (beta).
 
 * Calculate expected returns of a portfolio utilizing custom weights.
 
-* Build and optimize a portfolio by factoring in risk, correlation, and returns. 
+* Build and optimize a portfolio by factoring in risk, correlation, and returns.
 
 * Compare a portfolio's performance to other portfolios.
 
 ### Instructor Notes
 
-* This lesson brings the heat on two fronts: statistics and financial knowledge. Not all students have experience in these subjects, so be mindful of this during class discussions and demonstrations. Be clear in your lectures, present code and charts visually whenever possible, and incorporate real-world examples. 
+* This lesson brings the heat on two fronts: statistics and financial knowledge. Not all students have experience in these subjects, so be mindful of this during class discussions and demonstrations. Be clear in your lectures, present code and charts visually whenever possible, and draw from your industry experience.
 
-* Be aware that students may be confused about the differences between correlation and beta. Both attempt to measure relationships between variables; but whereas correlation measures the linear relationship between two variables, beta measures the unit-driven relationship between two variables (beta and stock returns). Be sure to explain these concepts clearly and allow time for students to ask questions. 
+* Be aware that students may be confused about the differences between correlation and beta. Both attempt to measure relationships between variables; but whereas correlation measures the linear relationship between two variables, beta measures the unit-driven relationship between two variables (stock A returns vs. stock B returns). Be sure to explain these concepts clearly and allow time for students to ask questions.
 
-* When explaining the notion of rolling statistics and how they benefit in identifying statistical trends, it may be helpful to provide a visual by comparing the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
+* When explaining the notion of rolling statistics and how they benefit in identifying statistical trends, emphasize the comparison of the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
 
 * When discussing portfolios and its characteristics––risk, return, correlation––explain the concepts in terms of money. For example, if you start with $10,000, how would a poorly optimized portfolio compare with one that is not?
 
-* Have your TAs keep class on schedule with the [Time Tracker](TimeTracker.xlsx). 
+* Have your TAs keep class on schedule with the [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Introduce today's lesson and get students excited for what they are about to learn. Today is when they will truly leverage Pandas to create insightful financial analyses. 
+Introduce today's lesson and get students excited for what they are about to learn. Today is when they will truly leverage Pandas to create insightful financial analyses.
 
 **File:** [Slideshow](placeholder)
 
-Welcome students to the third day of Pandas! Introduce the concepts that will be covered in today's class. Tell students the following: 
+Welcome students to the third day of Pandas! Open the slideshow and introduce the concepts that will be covered in today's class. Tell students the following:
 
-* In the previous two classes, we focused on Pandas basics and single-stock evaluation. Today, students will transition to analyzing groups of stocks (stock portfolios) to achieve the best risk-to-reward ratio for their investments. 
+* In the previous two classes, we focused on Pandas basics and single-stock evaluation. Today, students will transition to analyzing groups of stocks (stock portfolios) to achieve the best risk-to-reward ratio for their investments.
 
 * The focus of this lesson is on using Pandas to make more informed––and better!––investments. Students will be learning and using techniques used by financial analysts, quantitative traders, and portfolio managers. This should feel exciting and invigorating!
 
-* Students should be prepared to themselves mentally today, as they go from analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.  
+* Students should be prepared to themselves mentally today, as they go from analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.
 
 * Get excited! Feel energized! Today is the day where students truly begin leveraging the power of Pandas to create truly insightful analyses that can benefit their skills in financial analysis and investing.
 
@@ -135,7 +135,7 @@ Ask if there are any questions before moving on.
 
 ### 4. Student Do: Diversification (15 min)
 
-In this activity, students will apply the concept of correlation to diversify a portfolio, a practical financial use case. In order to  create a diversified portfolio that tends to minimize long-term volatility/risk, stocks within the portfolio should be as non-correlated as possible. Students need to find the stock with returns that are least correlated to the returns of stocks in an existing portfolio.
+In this activity, students will apply the concept of correlation to diversify a portfolio, a practical financial use case. In order to create a diversified portfolio that tends to minimize long-term volatility/risk, stocks within the portfolio should be as non-correlated as possible. Students need to find the stock with returns that are least correlated to the returns of stocks in an existing portfolio.
 
 **File:** [market_analysis.ipynb](Activities/02-Stu_Correlation/Unsolved/diversification.ipynb)
 
@@ -148,6 +148,8 @@ In this section, you will review the solution to the Diversification activity wi
 **File:** [diversification.ipynb](Activities/02-Stu_Correlation/Solved/diversification.ipynb)
 
 Open the solution file, [diversification.ipynb](Activities/02-Stu_Correlation/Solved/diversification.ipynb), and explain the following:
+
+* Diversification of stock portfolios is an important strategy in the realm of investing as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma. Therefore, it is necessary to not only analyze the average return and risk of the portfolio overall, but also the correlation between stocks as well (how much one stock price changes with or against another).
 
 * The `corr` function compares values from each column-to-column pair. Therefore, make sure that the DataFrame is properly formatted on a column-by-column basis for analysis.
 
