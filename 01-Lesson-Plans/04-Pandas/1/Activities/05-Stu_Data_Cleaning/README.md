@@ -12,7 +12,7 @@ Using the [starter file](Unsolved/Core/spring_cleaning.ipynb) and Harold's finan
 
 1. Load CSV data into Pandas using `read_csv`.
 
-2. Identify the number of rows and columns (shape) in the DataFrame.
+2. Identify the number of rows and columns in the DataFrame, otherwise known as its shape/structure.
 
 3. Generate a sample of the data to visually ensure data has been loaded in correctly.
 
@@ -40,6 +40,6 @@ Now that nulls and duplicates have been wrangled, clean up the data a little mor
 
 Pandas offers a `replace` function that can be executed against a Series. Documentation can be found [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.replace.html).
 
-- - - 
+- - -
 
 © 2019 Trilogy Education Services

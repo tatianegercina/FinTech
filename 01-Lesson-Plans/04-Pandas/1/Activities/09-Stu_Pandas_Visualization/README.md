@@ -12,7 +12,7 @@ Use the Pandas library to help Harold perform this analysis and generate the plo
 
 ## Instructions
 
-Using the starter file, complete the following steps.
+Using the [starter file](Unsolved/market_analysis.ipynb), complete the following steps.
 
 1. Import the necessary libraries and dependencies.
 

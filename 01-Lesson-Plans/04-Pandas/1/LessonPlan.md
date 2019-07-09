@@ -108,7 +108,7 @@ If time allows, you can end the discussion by presenting the following Pandas ap
 
 Slack out the above link to students so they can review the other applications outside of class.
 
-- - -
+---
 
 ### 3. Instructor Do: Reading CSVs (10 min)
 
@@ -207,7 +207,7 @@ In this activity, students will get hands-on experience reading CSV files into P
 
 * [README.md](Activities/02-Stu_Reading_CSVs/README.md)
 
-- - -
+---
 
 ### 5. Instructor Do: Review Reading Stock Data from a CSV File (5 min)
 
@@ -292,7 +292,7 @@ Open the solution file and demonstrate the fundamentals of column manipulation i
 
 Slack out the solution file to students to use as a reference. Now that students have created, split, renamed, and dropped columns, they can move onto the next step of data wrangling: data cleaning.
 
-- - -   
+---
 
 ### 7. Instructor Do: Data Cleaning (10 min)
 
@@ -304,7 +304,7 @@ Students will now take part in a lecture and discussion about data cleaning. The
 
 * [data_cleaning.ipynb](Activities/04-Ins_Data_Cleaning/Solved/data_cleaning.ipynb)
 
-Explain to students that up to this point, they have been working with clean data already curated for use. But in the real world, data is messy and needs to be prepared in order for it to be valuable. This process is called **data cleaning**. 
+Explain to students that up to this point, they have been working with clean data already curated for use. But in the real world, data is messy and needs to be prepared in order for it to be valuable. This process is called **data cleaning**.
 
 Data cleaning is comprised of three parts:
 
@@ -383,7 +383,7 @@ Discuss approaches for identifying data quality issues while live coding a few e
 
 At this point, ask students, "Why do you think there are unequal counts in the data?" (Answer: Nulls and missing data.)
 
-* Similarly, the quality of data can be assessed by using the `value_counts` function, which is a function that identifies the number of times a value occurs in a Series. 
+* Similarly, the quality of data can be assessed by using the `value_counts` function, which is a function that identifies the number of times a value occurs in a Series.
 
 * `Value_counts` reveals how many times a value occurs in a Series, with the most occurring value first.
 
@@ -429,7 +429,7 @@ At this point, ask students, "Why do you think there are unequal counts in the d
 
     ![LP_Ins_Data_Cleansing_No_Of_Null.PNG](Images/LP_Ins_Data_Cleansing_No_Of_Null.PNG)
 
-* Nulls can be cleaned by replacing them with a default value: "Unknown", 0, or mean(). This is exactly what the Pandas `fillna` does! 
+* Nulls can be cleaned by replacing them with a default value: "Unknown", 0, or mean(). This is exactly what the Pandas `fillna` does!
 
 * `Fillna` will replace every instance of `null` with the provided default value. For this reason, the function should be executed against a Series.
 
@@ -443,7 +443,7 @@ At this point, ask students, "Why do you think there are unequal counts in the d
 
 * Once nulls have been identified through a data quality process, a decision can be made to either drop the nulls or leave them. 
 
-* The  `dropna` Pandas function can be used to drop all null values. 
+* The `dropna` Pandas function can be used to drop all null values. 
 
 * Providing `inplace=True` as an argument will ensure the `dropna` function does not make a copy of the DataFrame but rather performs the operation on the original.
 
@@ -459,19 +459,19 @@ At this point, ask students, "Why do you think there are unequal counts in the d
   csv_data_cleaned.isnull().sum()
   ```
 
-    ![LP_Ins_Data_Cleansing_No_Of_Null_2.PNG](Images/LP_Ins_Data_Cleansing_No_Of_Null_2.PNG)
+  ![LP_Ins_Data_Cleansing_No_Of_Null_2.PNG](Images/LP_Ins_Data_Cleansing_No_Of_Null_2.PNG)
 
-* Pandas also offers the `duplicated` function to identify duplicate rows in a DataFrame. Duplicate rows are important to check because they can result in increased wait times for processing. Duplicate rows will also skew data aggregations, inflating aggregated numbers. 
+* Pandas also offers the `duplicated` function to identify duplicate rows in a DataFrame. Duplicate rows are important to check because they can result in increased wait times for processing. Duplicate rows will also skew data aggregations, inflating aggregated numbers.
 
 * The `duplicated` function returns either `True` or `False`.
 
-    ```python
-    # Checking duplicates
-    csv_data.duplicated()
-    csv_data['customer_no'].duplicated()
-    ```
+  ```python
+  # Checking duplicates
+  csv_data.duplicated()
+  csv_data['customer_no'].duplicated()
+  ```
 
-    ![LP_Ins_Data_Cleansing_Duplicated_Check.PNG](Images/LP_Ins_Data_Cleansing_Duplicated_Check.PNG)
+  ![LP_Ins_Data_Cleansing_Duplicated_Check.PNG](Images/LP_Ins_Data_Cleansing_Duplicated_Check.PNG)
 
 * The `drop_duplicates` function cleans duplicate rows. This function can be executed against a DataFrame or a Series.
 
@@ -480,30 +480,30 @@ At this point, ask students, "Why do you think there are unequal counts in the d
   csv_data.drop_duplicates()
   ```
 
-Next, tell students you will live code a few data quality checks that are especially relevant for financial data. Cover the following points in your discussion: 
+Next, tell students you will live code a few data quality checks that are especially relevant for financial data. Cover the following points in your discussion:
 
 * FinTech is all about manipulating financial data. Being able to inspect numeric values and gauge the quality of numerical data is critical to student success when analyzing and aggregating data. 
 
 * A quick and easy way to confirm the quality of a numeric value is to sample the data and do a spot check.
 
-    ```python
-    # Generate sample of DataFrame to inspect for issues with numerical data
-    csv_data.head()
-    ```
+  ```python
+  # Generate sample of DataFrame to inspect for issues with numerical data
+  csv_data.head()
+  ```
 
-    ![LP_Stu_Data_Cleansing_Head_Currency.PNG](Images/LP_Stu_Data_Cleansing_Head_Currency.PNG)
+  ![LP_Stu_Data_Cleansing_Head_Currency.PNG](Images/LP_Stu_Data_Cleansing_Head_Currency.PNG)
 
 * Because the `order_total` field has currency symbols in the values, numeric operations cannot be performed. A custom cleaning operation will need to be created in order to remove these symbols from the data set.  
 
 * The cleaning operation can be created by leveraging and combining other Pandas functions (e.g., the Pandas `replace` function).
 
-    ```python
-    # Cleaning identified numeric fields with $ symbol
-    csv_data['order_total'] = csv_data['order_total'].str.replace('$', '')
-    csv_data['order_total']
-    ```
+  ```python
+  # Cleaning identified numeric fields with $ symbol
+  csv_data['order_total'] = csv_data['order_total'].str.replace('$', '')
+  csv_data['order_total']
+  ```
 
-    ![LP_Ins_Data_Cleansing_Currency_Clean.png](Images/LP_Ins_Data_Cleansing_Currency_Clean.png)
+  ![LP_Ins_Data_Cleansing_Currency_Clean.png](Images/LP_Ins_Data_Cleansing_Currency_Clean.png)
 
 * Once the currency symbols have been removed from the numeric field, the field can be converted to the appropriate data type.
 
@@ -515,8 +515,9 @@ Next, tell students you will live code a few data quality checks that are especi
 
   ![LP_Ins_Data_Cleansing_AsType.PNG](Images/LP_Ins_Data_Cleansing_AsType.PNG)
 
-Ask if there are any questions before moving on. 
-- - -
+Ask if there are any questions before moving on.
+
+---
 
 ### 8. Student Do: Spring Cleaning (15 min)
 
@@ -526,7 +527,7 @@ In this activity, students will perform a series of data quality checks on stock
 
 **Instructions:** [README.md](Activities/05-Stu_Data_Cleaning/README.md)
 
-- - -
+---
 
 ### 9. Instructor Do: Review Spring Cleaning (5 min)
 
@@ -601,9 +602,9 @@ Ask students, "What steps should be taken if all values in a Series are null?" (
 
   ![LP_Ins_Data_Cleansing_Fill_Na.png](Images/LP_Ins_Data_Cleansing_Fill_Na.png)
 
-* The `dtypes` function can be used on a DataFrame to identify Series data types. A Series data type can also be identified by using `dtype`. 
+* The `dtypes` function can be used on a DataFrame to identify Series data types. A Series data type can also be identified by using `dtype`.
 
-* Identifying data types is valuable because it allows for incorrectly inferred data types to be corrected and converted to the appropriate data types. 
+* Identifying data types is valuable because it allows for incorrectly inferred data types to be corrected and converted to the appropriate data types.
 
 * If needed, a Series can be converted to the appropriate data type using the `astype` function (e.g., converting a date field from `string` to `Date`). Some conversions might require values to cleaned before they can be converted (e.g., removing `$` from an amount field).
 
@@ -635,7 +636,7 @@ To guide students, you may want to follow up with questions such as the followin
 
 For more comprehensive data cleaning strategies, slack out the following [link](https://www.kaggle.com/chrisbow/kernels?sortBy=relevance&group=everyone&search=Cleaning+data+with+Python&page=1&pageSize=20&userId=1541110) for curious students who want to learn more about data-cleaning processes using Python. Ask if there are any questions before moving on.
 
-- - -
+---
 
 ### 10. Instructor Do: Indexing (10 min)
 
@@ -711,7 +712,7 @@ Finally, explain that it will take some time to get used to indexing data with P
 
 Ask if there are any questions before moving on. 
 
-- - -
+---
 
 ### 11. Student Do: Three-Year Loans (20 min)
 
@@ -723,11 +724,11 @@ Note that the data in `loans.csv` is a compilation of many different columns and
 
 **Instructions:** [README.md](Activities/07-Stu_Indexing/README.md)
 
-- - -
+---
 
 ### 12. Instructor Do: Review Three-Year Loans (5 min)
 
-Use this part of the lesson to review the previous activity with students. 
+Use this part of the lesson to review the previous activity with students.
 
 **File:** [loans.ipynb](Activities/07-Stu_Indexing/Solved/loans.ipynb)
 
@@ -755,7 +756,7 @@ Open the solution file, [loans.ipynb](Activities/07-Stu_Indexing/Solved/loans.ip
 
 Ask if there are any questions before moving on.
 
-- - -
+---
 
 ### 13. Instructor Do: Pandas Visualizations (10 min)
 
@@ -791,9 +792,9 @@ Open [visualization.ipynb](Activities/08-Ins_Pandas_Visualization/Solved/visuali
 
   ![bar-chart-large](Images/bar-chart-large.png)
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
-- - -
+---
 
 ### 14. Student Do: Market Analysis (20 min)
 
@@ -805,7 +806,7 @@ Circulate the classroom to review student progress as they complete the activity
 
 **Instructions:** [README.md](Activities/09-Stu_Pandas_Visualization/README.md)
 
-- - -
+---
 
 ### 15. Instructor Do: Review Market Analysis (5 min)
 
@@ -861,7 +862,7 @@ Open the solution file, [market_analysis.ipynb](Activities/09-Stu_Pandas_Visuali
 
 Ask if there are any questions before moving on.
 
-- - -
+---
 
 ### 16. Instructor Do: Returns (10 min)
 
@@ -905,7 +906,7 @@ Open [returns.ipynb](Activities/10-Ins_Returns/Solved/returns.ipynb) to begin th
 
   ![Plot of Daily Returns](Images/daily-return-plot.png)
 
-* **Cumulative returns** are a series of returns in which each return represents the relative increase or drecrease in price of an asset at time `t`, compared to the initial price of that asset at time `t0`. Cumulative returns describe the progression of the return on investment of an asset over time.
+* **Cumulative returns** are a series of returns in which each return represents the relative increase or decrease in price of an asset at time `t`, compared to the initial price of that asset at time `t0`. Cumulative returns describe the progression of the return on investment of an asset over time.
 
 * The `cumprod()` function multiplies each number in a series with the next successive number until the end of the series.
 
@@ -913,29 +914,29 @@ Open [returns.ipynb](Activities/10-Ins_Returns/Solved/returns.ipynb) to begin th
 
   * Each daily return is expressed as a multiplier (e.g., daily return of 0.5% is 1.005).
 
-  * The `cumprod()` function cumulatively multiplies each number with its successive number. 
+  * The `cumprod()` function cumulatively multiplies each number with its successive number.
 
   * `-1` brings the result from a multiplier expression back to a typical return value scale (e.g., daily return of 0.5% is 0.005).
 
   ![cumprod-function](Images/cumprod-function.png)
 
-* Plotting cumulative returns makes it easier to visualize the profitability of a single asset and, in particular, the profitabilites of several asset classes over time. In this case, the plot shows that the S&P 500 grew more than 50% from 2014 to 2019.
+* Plotting cumulative returns makes it easier to visualize the profitability of a single asset and, in particular, the profitabilities of several asset classes over time. In this case, the plot shows that the S&P 500 grew more than 50% from 2014 to 2019.
 
   ![Plot of Cumulative Returns](Images/cumulative-return-plot.png)
 
 Now that students know how to calculate and plot returns, they will practice doing these skills by analyzing and plotting historical AMD data for Harold.
 
-- - -
+---
 
 ### 17. Student Do: Returns Over Date Ranges (20 min)
 
-In this activity, students will analyze the last 10 years of historical price data for Advanced Micro Devices (AMD) and plot the daily returns over the last 1, 3, 5, and 10-year periods. They will also need to find and show the differences in average daily returns for each time period to determine whether a short or long-term perspective should be used in prospecting AMD as a potential investment opportunity.
+In this activity, students will analyze the last 10 years of historical price data for Advanced Micro Devices (AMD) and plot the daily returns over the last 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each time period to determine whether a short or long-term perspective should be used in prospecting AMD as a potential investment opportunity.
 
 **File:** [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Unsolved/returns_over_date_ranges.ipynb)
 
 **Instructions:** [README.md](Activities/11-Stu_Returns/README.md)
 
-- - -
+---
 
 ### 18. Instructor Do: Review Returns Over Date Ranges (5 min)
 
@@ -982,7 +983,7 @@ With the remaining time, open the solution file, [returns_over_date_ranges.ipynb
 
 * The data shows that trading AMD in the short term is potentially more profitable, as the average daily return of a 1-year time frame is the highest at 0.004538, or 4.53%.
 
-Get students to briefly reflect about what they've just learned by asking the following question: 
+Get students to briefly reflect about what they've just learned by asking the following question:
 
 For what other accounts can daily returns be used to determine return on investment?
 
@@ -990,7 +991,7 @@ For what other accounts can daily returns be used to determine return on investm
 
 Ask if there are any questions before moving on.
 
-- - -
+---
 
 ### 19. Instructor Do: Decompress
 
@@ -1010,12 +1011,12 @@ Before ending class, give students encouragement and allow them time to vocalize
 
 * Emphasize student progress in grasping both financial and technical concepts. This is not an easy feat. It takes skill, intellect and abstract thinking, and perseverance to make it this far. They should all pat themselves on the back.
 
-* Tell students that they are now ready to start using more advanced financial calculations and functions, and eventually move on to working with APIs. 
+* Tell students that they are now ready to start using more advanced financial calculations and functions, and eventually move on to working with APIs.
 
-* Let the students know that office hours are available for anyone who might have additional questions, would like to review more, or would like to just talk Python, Pandas, financial portfolios, and/or FinTech in general. 
+* Let the students know that office hours are available for anyone who might have additional questions, would like to review more, or would like to just talk Python, Pandas, financial portfolios, and/or FinTech in general.
 
 ### End Class
 
-- - - 
+---
 
-© 2019 Trilogy Education Services 
+© 2019 Trilogy Education Services
