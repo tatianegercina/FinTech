@@ -232,7 +232,7 @@ Ask the students the following questions:
 
 ---
 
-### 9. Instructor Do: Fintech Domains and Trends (15 mins)
+### 9. Instructor Do: Fintech Domains and Trends (10 mins)
 
 In this activity, students will deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation. 
 
@@ -292,17 +292,25 @@ Open the slideshow and walk through the following FinTech domains:
 
 ### 10. Student Do: Investigate FinTech Domains (20 mins)
 
-By this point, students have been given examples of both the major domains within FinTech as well as the overarching trends across the industry. The instructor should now place students into groups of `2-4` individuals to conduct some research of the various FinTech domains on their own.
+By this point, students have been given examples of both the major domains within FinTech as well as the overarching trends across the industry. The instructor should now place students into groups of `2` individuals to conduct some research of the various FinTech domains on their own.
 
-**File:** [README.md](01-Stu_FinTech_Domains/README.md)
+**File:** [README.md](Activities/01-Stu_FinTech_Domains/README.md)
 
-### 11. Instructor Do: Review Investigate FinTech Domains (10 mins)
+### 11. Instructor Do: Review Investigate FinTech Domains (15 mins)
 
 Now that students have had an opportunity to perform their own research on the various domains in FinTech, it's time to facilitate a discussion amongst the class on each group's findings.
 
 * Have each group present their findings to the class one-by-one until all groups have presented.
 
 * Presentations should be quick, approximately `1-2` minutes.
+
+Then, conduct a quick discussion with the class by proposing some sample questions such as:
+
+* How much of an impact did technology have in the success/failure of their companies?
+
+* Which companies ended up dominating the specific FinTech domain? Why could that be?
+
+* Was there anything else that seemed notable to your group during your research?
 
 ---
 
@@ -332,13 +340,13 @@ Open the slideshow and walk through the following:
 
 ---
 
-### 13. Student Do: FinTech Payments Case Study (20 mins)
+### 13. Student Do: FinTech Payments Case Study (15 mins)
 
-In this activity, the instructor should place students into groups of `2-4` individuals once again to create a case study on a particular FinTech payments technology that rivals Stripe.
+In this activity, the instructor should place students into groups of `2` individuals once again to create a case study on a particular FinTech payments technology that rivals Stripe.
 
-**File:** [README.md](02-Stu_FinTech_Case_Study/README.md)
+**File:** [README.md](Activities/02-Stu_FinTech_Case_Study/README.md)
 
-### 14. Instructor Do: Review FinTech Payments Case Study (10 mins)
+### 14. Instructor Do: Review FinTech Payments Case Study (15 mins)
 
 In this activity, students will present their case study findings to the class.
 
