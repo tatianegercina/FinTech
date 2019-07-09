@@ -4,7 +4,7 @@ Now that you see how easy it is to work with spreadsheet data in Pandas, let's p
 
 ## Instructions
 
-Using the starter file, complete the following steps.
+Using the [starter file](Unsolved/reading_stock_data.ipynb), complete the following steps.
 
 1. Import the Pandas library by typing `import pandas as pd` on the command line. 
 
