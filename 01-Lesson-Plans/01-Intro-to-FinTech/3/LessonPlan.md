@@ -1,3 +1,5 @@
+placeholder
+
 ## 1.3 Lesson Plan - FinTech Collaboration
 
 ---
