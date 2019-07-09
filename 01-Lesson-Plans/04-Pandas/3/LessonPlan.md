@@ -92,22 +92,22 @@ This part of the lesson introduces students to the concept of correlation, or th
 
 **File:** [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
 
-Open [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb). As you demo and show the plotted data, cover the following points: 
+Open [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb). As you demo and show the plotted data, cover the following points:
 
-* **Correlation** is the measure of a positive, negative, or neutral (random) relationship between two variables. For example, there is often a positive correlation between height and weight; that is, as you grow in height, you tend to weigh more. 
+* **Correlation** is the measure of a positive, negative, or neutral (random) relationship between two variables. For example, there is often a positive correlation between height and weight; that is, as you grow in height, you tend to weigh more.
 
-* When comparing the line trend of ice cream sales to drowning incidents, it is difficult to detect a relationship between the two. Therefore, use a scatterplot and set the _x_ and _y_ axes to the corresponding DataFrame columns. With a scatterplot, the relationship becomes more apparent. 
+* When comparing the line trend of ice cream sales to drowning incidents, it is difficult to detect a relationship between the two. Therefore, use a scatterplot and set the _x_ and _y_ axes to the corresponding DataFrame columns. With a scatterplot, the relationship becomes more apparent.
 
   ![line-chart](Images/line-chart.png)
   ![scatterplot](Images/scatterplot.png)
 
-* Use the `corr` function to calculate and output a matrix of correlation values for each column-to-column pair of a DataFrame. Correlation values range from -1 to 0 to +1.  
+* Use the `corr` function to calculate and output a matrix of correlation values for each column-to-column pair of a DataFrame. Correlation values range from -1 to 0 to +1.
 
-    * -1 indicates a negative relationship: variables move inversely to one another.
-    
-    * 0 indicates a neutral relationship: variables have no relationship and move randomly. 
-    
-    * +1 indicates a positive relationship: variables move in tandem with one another. 
+  * -1 indicates a negative relationship: variables move inversely to one another.
+
+  * 0 indicates a neutral relationship: variables have no relationship and move randomly.
+
+  * +1 indicates a positive relationship: variables move in tandem with one another.
 
   ![correlation.png](Images/correlation.png)
 
@@ -115,21 +115,21 @@ Open [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
 
   ![correlation_seaborn.png](Images/correlation-seaborn.png)
 
-* Remember that correlation does not imply causation! 
+* Remember that correlation does not imply causation!
 
-    * Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents`, this does not mean that buying more ice cream causes people to drown; it simply means that there is a positive relationship between the numbers. 
-    
-    * Chances are there is another factor at play that results in this positive correlation. One possible factor is that as temperature increases (during the summer months), people tend to both eat more ice cream and go swimming. 
+  * Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents`, this does not mean that buying more ice cream causes people to drown; it simply means that there is a positive relationship between the numbers.
 
-* **Regression analysis** should be used to predict causation, i.e.,  how _x_ predicts _y_.
+  * Chances are there is another factor at play that results in this positive correlation. One possible factor is that as temperature increases (during the summer months), people tend to both eat more ice cream and go swimming.
 
-* How do these concepts apply to stock investments? 
+* **Regression analysis** should be used to predict causation, i.e., how _x_ predicts _y_.
 
-    * Investigating the correlations of returns among stocks in a portfolio can help analysts properly diversify their portfolios and mitigate risk/volatility. 
-    
-    * This is due to the fact that non-correlated stocks in a portfolio tend to cancel out large swings in volatility; one stock may increase in price while another may decrease in price, rather than all stocks increasing in price or all stocks decreasing in price.
+* How do these concepts apply to stock investments?
 
-Ask if there are any questions before moving on. 
+  * Investigating the correlations of returns among stocks in a portfolio can help analysts properly diversify their portfolios and mitigate risk/volatility.
+
+  * This is due to the fact that non-correlated stocks in a portfolio tend to cancel out large swings in volatility; one stock may increase in price while another may decrease in price, rather than all stocks increasing in price or all stocks decreasing in price.
+
+Ask if there are any questions before moving on.
 
 ---
 
@@ -171,13 +171,13 @@ Open the solution file, [diversification.ipynb](Activities/02-Stu_Correlation/So
   
   ![correlation-table-focus](Images/correlation-table-focus.png)
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
 ---
 
 ### 6. Instructor Do: Rolling Statistics (10 min)
 
-This section focuses on the concept of rolling statistics, in which a series of a particular metric is calculated over a shifting window of time. Rolling statistics help view the change or progression of a particular metric over time and therefore aid in identifying statistical trends. 
+This section focuses on the concept of rolling statistics, in which a series of a particular metric is calculated over a shifting window of time. Rolling statistics help view the change or progression of a particular metric over time and therefore aid in identifying statistical trends.
 
 **File:** [rolling_statistics.ipynb](Activities/03-Ins_Rolling_Statistics/Solved/rolling_statistics.ipynb)
 
@@ -185,7 +185,7 @@ Walk through the solution and explain the following:
 
 * A **rolling statistic** is a metric calculated over the range of a shifting, or rolling, window. For example, a 7-day rolling mean of 14 days' worth of closing prices for a stock would calculate the mean of the closing prices for days 1-7, and then days 2-8, and then days 3-9, and so on.
 
-* Some commonly used rolling statistics are rolling averages, otherwise known as moving averages, and rolling standard deviations.
+* Some commonly used rolling statistics are rolling averages, otherwise known as simple moving averages (SMAs), and rolling standard deviations.
 
 * Rolling statistics help to show the progression or change of a particular metric over time. For example, calculating the average closing price of 1 year's worth of stock data will output a single metric, the average closing price for the year. On the contrary, a rolling 7-day mean will give you the change in weekly average closing prices over the course of the year.
 
@@ -195,14 +195,13 @@ Walk through the solution and explain the following:
 
 * Rolling statistics factor in the progression of time. Therefore, a rolling 7-day window makes sense when looking at a short-term weekly investment scope. However, if investing for the long term, a rolling 180-day window might make more sense.
 
-* Comparing different scopes of time can sometimes reveal insights that would not have been found otherwise. 
+* Comparing different scopes of time can sometimes reveal insights that would not have been found otherwise.
 
-    * For example, consider the 30-day rolling standard deviation as compared to the 180-day standard deviation of TSLA stock. 
+  * For example, consider the 30-day rolling standard deviation as compared to the 180-day standard deviation of TSLA stock.
 
-    * Although on a monthly scale there was a spike in volatility in late 2018, overall, over a 6-month period, the highest spike in volatility was in late 2016, when the stock skyrocketed. 
+  * Although on a monthly scale there was a spike in volatility in late 2018, over a 6-month period, the highest spike in volatility was in late 2016 when the stock skyrocketed.
 
-        **Note:** Remember that standard deviation/volatility is how far data points deviate from the mean; this does not necessarily need to be negative. 
-
+  **Note:** Remember that standard deviation/volatility is how far data points deviate from the mean; this does not necessarily need to be negative.
 
   ![daily-close-tsla](Images/daily-close-tsla.png)
 
@@ -222,7 +221,7 @@ In this activity, students will calculate multiple windows of rolling statistics
 
 ### 8. Instructor Do: Review Simple Moving Averages (5 min)
 
-In this section, review the solution to the previous activity, Simple Moving Averages. 
+In this section, review the solution to the previous activity, Simple Moving Averages.
 
 **File:** [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb)
 
@@ -232,15 +231,15 @@ Open the solution file, [simple_moving_averages.ipynb](Activities/04-Stu_Rolling
 
   ![rolling-mean-calculation](Images/rolling-mean-calculation.png)
 
-* Notice that the last 19 datetime indexes contain NaN values. This is because the `window` parameter has been set to `20`; therefore, the last 19 indexes do not have enough data to support the 20-day window. 
+* Notice that the last 19 datetime indexes contain NaN values. This is because the `window` parameter has been set to `20`; therefore, the last 19 indexes do not have enough data to support the 20-day window.
 
   ![not-enough-window-data](Images/not-enough-window-data.png)
 
-* When overlaying the simple moving averages (SMAs) over the plot of the daily closing prices for NFLX, you can see the ways in which larger rolling time windows smooth data and show general trends, as opposed to smaller rolling time windows that showcase more volatility.
+* When overlaying the plot of daily closing prices for NFLX with its simple moving averages, you can see the ways in which larger rolling time windows smooth data and show general trends, as opposed to smaller rolling time windows that showcase more volatility.
 
   ![sma-overlay](Images/sma-overlay.png)
 
-* When overlaying the plot of daily closing prices for NFLX with the STDs, you can see the differences in volatility for different time periods.
+* When overlaying the plot of daily closing prices for NFLX with its rolling standard deviations (rolling STDs), you can see the differences in volatility for different time periods.
 
   ![std-overlay](Images/std-overlay.png)
 
@@ -252,33 +251,39 @@ Ask if there are any questions before moving on.
 
 ### 9. Instructor Do: Beta (10 min)
 
-This section introduces students to the concept of beta and how it is used to determine the relative unit-driven performance of one variable to another––e.g., calculating the beta value of a stock's returns relative to the returns of the overall market.
+This section introduces students to the concept of beta and how it is used to determine the relative unit-driven performance of one variable to another –– e.g., calculating the beta value of a stock's returns relative to the returns of the overall market.
 
 **File:** [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb)
 
-Open [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb). As you walk through the demo, explain the following. 
+Open [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb). As you walk through the demo, explain the following.
 
-* **Covariance** is a measure of the directional relationship between two variables. For example, the covariances between two financial assets such as stock returns would imply that both stock returns would move together with a positive covariance, and move inversely with a negative covariance.
+* What is covariance?
+
+  * **Covariance** is a measure of the directional relationship between two variables. For example, the covariances between two financial assets such as stock returns would imply that both stock returns would move together with a positive covariance, and move inversely with a negative covariance.
 
   ![covariance.png](Images/covariance.png)
 
-* **Variance** is the measurement of how far numbers in a dataset are spread about their mean. For example, let's say stock A has an average price of $50, but varies in price as low as $5 and as high as $90. However, stock B averages $50, but varies in price as low as $40 and as high as $60. Stock A has a higher variance than stock B.
+* What is variance?
+
+  * **Variance** is the measurement of how far numbers in a dataset are spread about their mean. For example, let's say stock A has an average price of $50, but varies in price as low as $5 and as high as $90. However, stock B averages $50, but varies in price as low as $40 and as high as $60. Stock A has a higher variance than stock B.
 
   ![variance.png](Images/variance.png)
 
-* What is the difference between covariance and variance? Covariance refers to the measure of the directional relationship between two random variables, while variance refers to the spread of a dataset around its mean value.
+* What is the difference between covariance and variance?
 
-* What is the difference between covariance and correlation? Covariance is a measure of correlation. Correlation describes the directional relationship between two variables in a unit-free manner, while covariance describes the directional relationship between two variables with consideration for the type of data used (in this case, daily return values).
+  **Answer:** Covariance is a measure of correlation. Correlation describes the directional relationship between two variables in a unit-free manner, while covariance describes the directional relationship between two variables with consideration for the type of data used (in this case, daily return values).
 
-* **Beta** is the measure of the volatility of an individual stock in comparison to the volatility of the entire market.
+* How does covariance/variance relate to Beta?
+
+  * **Beta** uses covariance and variance to calculate the relative volatility of an individual stock's returns in comparison to the volatility of the overall market's returns.
 
   ![beta.png](Images/beta.png)
 
 * What is the difference between beta and correlation?
 
-    * Beta measures the impact of one variable on another variable. Correlations measure the possible frequency of similarly directional movements without consideration for cause and effect. 
-    
-    * Beta is the slope of the two variables. Correlation is the strength of that linear relationship.
+  * Beta measures the impact of one variable on another variable. Correlations measure the possible frequency of similarly directional movements without consideration for cause and effect.
+
+  * Beta is the slope of the two variables. Correlation is the strength of that linear relationship.
 
   ![beta-vs-correlation.png](Images/beta-vs-correlation.png)
 
@@ -286,7 +291,7 @@ Open [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb). As you walk through
 
   ![rolling-beta.png](Images/rolling-beta.png)
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
 ---
 
@@ -338,7 +343,7 @@ This section focuses on calculating returns for a group of stocks, or stock port
 
 **File:** [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.py)
 
-Open [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.py) to review the solution. Cover the following points as you walk through the solved file. 
+Open [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.py) to review the solution. Cover the following points as you walk through the solved file.
 
 * To calculate portfolio returns, each stock's closing prices are added as a column to the final portfolio DataFrame.
 
@@ -356,13 +361,13 @@ Open [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio
 
   ![risk-management.png](Images/risk-management.png)
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
 ---
 
 ### 13. Student Do: Portfolio Planner, Part 1 (20 min)
 
-In this activity, students will work in pairs to research a group of 10 stocks, and then do the following: find the least and most volatile stocks; drop the top 5 highly volatile stocks; set portfolio weights to the remaining stocks according to risk profile; and perform an analysis of a $10,000 investment in the portfolio over time. 
+In this activity, students will work in pairs to research a group of 10 stocks, and then do the following: find the least and most volatile stocks; drop the top 5 highly volatile stocks; set portfolio weights to the remaining stocks according to risk profile; and perform an analysis of a $10,000 investment in the portfolio over time.
 
 **File:** [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Unsolved/portfolio_planner_part_1.ipynb)
 
@@ -396,7 +401,7 @@ Open the solution, [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_
 
   ![plot-cumulative-profit-loss](Images/plot-cumulative-profit-loss.png)
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
 ---
 
@@ -406,7 +411,7 @@ Ask if there are any questions before moving on.
 
 ### 16. Student Do: Portfolio Planner, Part 2 (25 min)
 
-In this activity, students will work in pairs to continue from where they left off in Part 1 of their portfolio evaluation. In this next part, students will evaluate correlations and Sharpe ratios of the 10 stocks, and then filter by only non-correlated and positive Sharpe ratio stocks. They will also set equal-weighted portfolio allocations to the remaining stocks and perform an analysis of a $10,000 investment in the portfolio over time. Finally, they will compare the $10,000 investment in the portfolio to other $10,000 investments in lesser optimized portfolios. 
+In this activity, students will work in pairs to continue from where they left off in Part 1 of their portfolio evaluation. In this next part, students will evaluate correlations and Sharpe ratios of the 10 stocks, and then filter by only non-correlated and positive Sharpe ratio stocks. They will also set equal-weighted portfolio allocations to the remaining stocks and perform an analysis of a $10,000 investment in the portfolio over time. Finally, they will compare the $10,000 investment in the portfolio to other $10,000 investments in lesser optimized portfolios.
 
 **File:** [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb)
 
@@ -424,9 +429,9 @@ Open the solution, [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_
 
 * Stock correlation describes the linear relationship between the returns of two stocks, and indicates whether returns of both stocks tend to move in tandem, inversely, or randomly (no correlation). 
 
-    * The `corr` function used in conjunction with the `heatmap` function from the `seaborn` library makes it easy to spot the highly correlated stocks. 
-    
-    * In this case, the daily returns of `FANG` and `JNJ` appear to be highly correlated and can be dropped from the DataFrame.
+  * The `corr` function used in conjunction with the `heatmap` function from the `seaborn` library makes it easy to spot the highly correlated stocks.
+
+  * In this case, the daily returns of `FANG` and `JNJ` appear to be highly correlated and can be dropped from the DataFrame.
 
   ![part-2-correlation](Images/part-2-correlation.png)
 
@@ -434,11 +439,11 @@ Open the solution, [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_
 
   ![part-2-sharpe-ratios](Images/part-2-sharpe-ratios.png)
 
-* An equal-weighted portfolio consists of the same weight for every stock in the portfolio (totaling 1). For example, an equal-weighted stock portfolio of 5 stocks would have weights of 0.2, 0.2, 0.2, 0.2, and 0.2 to each stock.
+* An equal-weighted portfolio consists of the same weight for every stock in the portfolio (totaling 1). For example, an equal-weighted stock portfolio of 5 stocks would have weights of 0.2, 0.2, 0.2, 0.2, and 0.2 for each stock.
 
   ![part-2-equal-weighted](Images/part-2-equal-weighted.png)
 
-* The overlay chart of corresponding $10,000 investments in each portfolio over time describes the following:
+* The overlay chart of $10,000 investments in each corresponding portfolio over time describes the following:
 
   * The non-correlated and Sharpe ratio optimized portfolio performs the best of the four portfolios, consistently achieving higher returns with minimized volatility.
 
@@ -450,27 +455,27 @@ Open the solution, [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_
 
   ![part-2-overlay](Images/part-2-overlay.png)
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
 ### 18. Instructor Do: Decompress (5 min)
 
 Spend this time letting students share their thoughts about this class, as well as offering up some encouraging words to boost motivation. 
 
-Start by giving students positive feedback. 
+Start by giving students positive feedback.
 
-* Students have come a long way in this Pandas unit! 
+* Students have come a long way in this Pandas unit!
 
-* Not only have they learned how to use the Pandas library, but they have also begun to perform analysis and apply investment strategies like professional investors. 
+* Not only have they learned how to use the Pandas library, but they have also begun to perform analysis and apply investment strategies like professional investors.
 
 Survey the class to get a sense of how they are feeling at this point in the unit and course overall. Are there any concepts that are still giving them trouble? Students should feel challenged but not lost.
 
 Ask students questions such as the following:
 
-  * What activity was the most enjoyable to complete? The most fulfilling?
+* What activity was the most enjoyable to complete? The most fulfilling?
 
-  * What activity was the most stressful or difficult? Why? 
+* What activity was the most stressful or difficult? Why?
 
-  * Did today's lesson flow well and make sense? 
+* Did today's lesson flow well and make sense?
 
 Remind students that mastery doesn't happen in a day. Practice makes perfect!
 
@@ -492,6 +497,6 @@ Take your time with this review! This is a great time to reinforce concepts and 
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services 
