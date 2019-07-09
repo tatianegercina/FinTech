@@ -30,7 +30,7 @@ By the end of today's class, students will be able to:
 
 Welcome students and explain that today's lesson will dive into data modeling techniques such as normalization, relationships, and how to conceptualize database design using entity relationship diagrams (ERDs).
 
-Open the [slideshow](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g473a132ac1_0_7) and go over the class objectives. (Slide 2)
+Open the [Class Objectives slide](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g473a132ac1_0_7) and review the objectives for today's class. 
 
 ### 2. Instructor Do: Data Normalization (15 min) (Critical)
 
@@ -464,7 +464,7 @@ For the bonus, briefly explain that two outer joins can be performed to retrieve
 
 **File:** [pagila-erd.png](Images/pagila-erd.png)
 
-Open the [slideshow](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594fd95c34_0_422) and begin the discussion of entity relationship diagrams (ERDs). Explain the following points:
+Open the [ERD slides](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594fd95c34_0_422) and begin the discussion of entity relationship diagrams (ERDs). Explain the following points:
 
 * An **entity relationship diagram**, or **ERD**, is a visual representation of entity relationships within a database.
 
