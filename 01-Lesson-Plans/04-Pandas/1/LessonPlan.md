@@ -529,18 +529,18 @@ In this activity, students will perform a series of data quality checks on stock
 
 ### 9. Instructor Do: Review Spring Cleaning (5 min)
 
-In this part of the lesson, review the solution to the data cleaning activity with students. 
+In this part of the lesson, review the solution to the data cleaning activity with students.
 
 **File:** [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Solved/Core/spring_cleaning.ipynb)
 
-Review data cleaning from a conceptual standpoint, mentioning the following points: 
+Review data cleaning from a conceptual standpoint, mentioning the following points:
 
-* Data cleaning is important because it removes all of the issues and errors that would block or inhibit computation. 
+* Data cleaning is important because it removes all of the issues and errors that would block or inhibit computation.
 
 * Without data cleaning, financial data can be calculated and aggregated incorrectly and inaccurately. Data quality issues can skew financial numbers, resulting in numbers being reported either higher or lower than actual. Since numbers drive business decisions in the financial world, use of incorrect data can have catastrophic implications.
 
 Open the solution file, [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Solved/Core/spring_cleaning.ipynb),
-and review the activity solution. 
+and review the activity solution.
 
 * The `shape` function provides a quick and easy way to understand the structure of a DataFrame, including the number of columns and number of tuples/rows in the DataFrame.
 
@@ -575,7 +575,7 @@ and review the activity solution.
   dtype: int64
   ```
 
-Ask students, "What should happen if all values in a Series are null?" (Answer: The Series should be dropped.)
+Ask students, "What steps should be taken if all values in a Series are null?" (Answer: The Series should be dropped.)
 
 * Nulls can throw a wrench in an analytic pipeline. The `isnull` function will identify which Series has nulls. If there are nulls, they can be removed or filled. The `dropna` and `fillna` functions provide this functionality, respectively. Note that it's important to understand which fields can have nulls and which one's cannot.
 
@@ -618,17 +618,17 @@ If time allows, engage the students with the following review questions:
 
   **Answer:** False. Amount fields should be floats. Floats cannot have symbols or commas, as these are strings.
 
-* What two functions can be used to identify and remove currency symbols?
+* What two functions are used to identify and remove currency symbols?
 
   **Answer:** `contains()` can be used to identify currency symbols, and `replace()` can be used to remove them.
 
 To guide students, you may want to follow up with questions such as the following:
 
-* I used `fillna(0)` to fill NaN values in my DataFrame, but now my first_name and last_name fields have 0s in them. What happened? What should I have done instead?
+* I used `fillna(0)` to fill `NaN` or null values in my DataFrame, but now my `first_name` and `last_name` fields have 0s in them. What happened? What should I have done instead?
 
   **Answer:** `fillna(0)` fills all null/NaN values in the DataFrame, regardless of the data type of the Series where the null is. `fillna()` should have been applied against the specific Series that needed the nulls converted to 0.
 
-* True or false: Data quality rules do not conflict with one another. 
+* True or false: Data quality rules do not conflict with one another.
 
   **Answer:** False. Technical rules might be disregarded in order to satisfy business rules.
 
@@ -642,9 +642,9 @@ In this part of the lesson, students will learn how to locate and select data wi
 
 **File:** [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb)
 
-Open [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb) and demo the activity, explaining the following: 
+Open [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb) and demo the activity, explaining the following:
 
-* The `iloc[]` function returns a row based on a numerical index.
+* The `iloc[]` function returns row data based on a numerical index.
 
   ![iloc-first-row](Images/iloc-first-row.png)
 
@@ -652,7 +652,7 @@ Open [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb) and demo
 
   ![iloc-first-10](Images/iloc-first-10.png)
 
-* The `iloc[]` function can return specific columns.
+* The `iloc[]` function can return row data of specific columns.
 
   ![iloc-second-column](Images/iloc-second-column.png)
 
@@ -694,9 +694,9 @@ Open [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb) and demo
 
 If time remains, briefly discuss `DateTimeIndexes`. Show students the following syntax and explain why DateTimeIndexes should be used. Tell students that `DateTimeIndexes` will be revisited when we cover `MultiIndex`.
 
-* The `to_datetime` function can be used to create a `DateTimeIndex`. `DateTimeIndexes` work like regular indexes, but they allow for data to be looked up by date and date ranges as well. 
+* The `to_datetime` function can be used to create a `DateTimeIndex`. `DateTimeIndexes` work like regular indexes, but they allow for data to be looked up by date and date ranges as well.
 
-* Passing the `infer_datetime_format=True` parameter ensures that all dates are read the same way, regardless of their format. Example: MM-DD-YYYY vs. MM/DD/YYYY. 
+* Passing the `infer_datetime_format=True` parameter ensures that all dates are read the same way, regardless of their format. Example: MM-DD-YYYY vs. MM/DD/YYYY.
 
   ```python
   # Create DateTimeIndex
@@ -714,9 +714,9 @@ Ask if there are any questions before moving on.
 
 ### 11. Student Do: Three-Year Loans (20 min)
 
-Now that students have the conceptual knowledge to index and look up data, it's time they get some practice. In this activity, students will use DataFrame indexing on the dataset in `loans.csv` in order to generate insights about three-year loan customers. 
+Now that students have the conceptual knowledge to index and look up data, it's time they get some practice. In this activity, students will use DataFrame indexing on the data set in `loans.csv` in order to generate insights about three-year loan customers.
 
-Note that the data in `loans.csv` is initially a compilation of many different columns and loan durations. Students will need to filter the data and use functions on data subsets to answer the activity questions. 
+Note that the data in `loans.csv` is a compilation of many different columns and loan durations. Students will need to filter the data and use functions on data subsets to answer the activity questions.
 
 **File:** [loans.ipynb](Activities/07-Stu_Indexing/Unsolved/loans.ipynb)
 
