@@ -58,9 +58,9 @@ Welcome students to the third day of Pandas! Open the slideshow and introduce th
 
 ### 2. Instructor Do: Introduction to Portfolios (5 min)
 
-Introduce stock portfolios using a discussion format to get students engaged in the topic. 
+Introduce stock portfolios using a discussion format to get students engaged in the topic.
 
-Ask students the following questions about portfolios:
+Ask students the following questions about portfolios and then explain the corresponding answers:
 
 * What is an investment portfolio?
 
@@ -68,7 +68,7 @@ Ask students the following questions about portfolios:
 
 * What is a stock portfolio?
 
-  **Answer:** A stock portfolio is an investment portfolio consisting of only equity. A stock portflio consists of multiple stocks ranging from the 11 sectors of the equity market: financials, utilities, consumer discretionary, consumer staples, energy, healthcare, industrials, technology, telecom, materials, and real estate.
+  **Answer:** A stock portfolio is an investment portfolio consisting of only equity. A stock portfolio consists of multiple stocks ranging from the 11 sectors of the equity market: financials, utilities, consumer discretionary, consumer staples, energy, healthcare, industrials, technology, telecom, materials, and real estate.
 
 * Why are stock portfolios better than single stock investments?
 
