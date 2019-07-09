@@ -28,5 +28,6 @@ Using the [starter file](Unsolved/group_dynamics.ipynb) and the NASDAQ historica
 
     * Which coin had the largest swing in prices?
 
-- - -
+---
+
 © 2019 Trilogy Education Services

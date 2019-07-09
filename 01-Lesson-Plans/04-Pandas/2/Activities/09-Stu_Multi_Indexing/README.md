@@ -26,5 +26,6 @@ Take this activity to the next level by calculating the mean close price for `GO
 
 * Information about `timedeltas` can be found [here](https://pandas.pydata.org/pandas-docs/stable/user_guide/timedeltas.html).
 
-- - -
+---
+
 © 2019 Trilogy Education Services
