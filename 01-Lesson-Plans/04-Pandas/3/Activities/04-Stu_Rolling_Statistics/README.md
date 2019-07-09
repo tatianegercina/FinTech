@@ -14,21 +14,21 @@ Using the [starter file](Unsolved/simple_moving_averages.ipynb), complete the fo
 
 3. Use the `rolling` function and set the `window` parameter to designate the time windows. Then, use the `mean` function to calculate the following:
 
-  * 20-day simple moving average
+    * 20-day simple moving average
 
-  * 50-day simple moving average
+    * 50-day simple moving average
 
-  * 100-day simple moving average
+    * 100-day simple moving average
 
 4. Overlay the plot for daily closing prices of NFLX with the SMAs.
 
 5. Use the `rolling` function and set the `window` parameter to designate the time windows. Then, use the `mean` function to calculate the following:
 
-  * 20-day rolling standard deviation
+    * 20-day rolling standard deviation
 
-  * 50-day rolling standard deviation
+    * 50-day rolling standard deviation
   
-  * 100-day rolling standard deviation
+    * 100-day rolling standard deviation
 
 6. Overlay the plot for daily closing prices with the STDs.
 
