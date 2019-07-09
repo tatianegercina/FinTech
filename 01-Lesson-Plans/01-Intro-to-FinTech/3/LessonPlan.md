@@ -152,7 +152,7 @@ In this activity, students will be introduced to the git CLI, which will allow t
 
 **Files:**
 
-* [Slideshow](Resources/Intro_to_Git.pptx)
+* [Slideshow](https://docs.google.com/presentation/d/1OAbxqe1yZKGMN2IxRPfNXnXT6Bem1oD7gFr47inJMos/edit#slide=id.g473a132ac1_0_7)
 
 Open the slideshow and go over slides 1-22. Highlight the following about git:
 
