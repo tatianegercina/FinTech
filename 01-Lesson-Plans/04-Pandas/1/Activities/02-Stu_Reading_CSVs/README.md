@@ -24,6 +24,6 @@ Get the bottom 10 rows of the DataFrame. Use Google to figure out how to do this
 
 Consult the Pandas [`head()` function documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.head.html).
 
-- - - 
+---
 
 © 2019 Trilogy Education Services
