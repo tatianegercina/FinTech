@@ -1,5 +1,3 @@
-placeholder
-
 ## 1.3 Lesson Plan - FinTech Collaboration
 
 ---
@@ -190,9 +188,9 @@ Open the slideshow and go over slides 1-22. Highlight the following about git:
 
 ### 6. Instructor Do: Git CLI (10 min)
 
-In this activity, students will revisit their newly created GitHub repositories to add folder structures.  
+In this activity, the instructor will guide students on how to add folder structures to their newly created GitHub repositories.
 
-Live demo the following walkthrough:
+Live demo the following walkthrough with your students:
 
 * Re-visit the GitHub website and click on the "Clone or Download" button. This time, copy the URL as it represents the GitHub repository link (which will be used for the `git clone` command).
 
@@ -235,13 +233,13 @@ Live demo the following walkthrough:
 
   ![git-push-results](Images/git-push-results.png)
 
-Make sure every student was able to successfully clone a repo, add files to the repo, commit the changes, and then push the changes to Github all from the command line.
+Make sure every student was able to successfully clone a repo, add files to the repo, commit the changes, and then push the changes to Github all from the command line. Ask your TAs to assist students if needed.
 
 ---
 
 ### 7. Students Do: GitHub Re-Organized (15 min)
 
-In this activity, students use the Git CLI to clone their git repositories to their local file systems and add directories to their GitHub repositories. 
+In this activity, students use the Git CLI to clone their git repositories to their local file systems and add directories to their GitHub repositories.
 
 **Instructions:**
 
@@ -259,7 +257,7 @@ In this activity, students use the Git CLI to clone their git repositories to th
 
 ---
 
-### 8. Instructor Do: Markdown (10 mins)
+### 9. Instructor Do: Markdown (10 mins)
 
 In this activity, students are introduced to markdown files and their style formatting, which can be used to create visually appealing README files. 
 
@@ -353,7 +351,7 @@ In this activity, students visually enhance their `README` files for their GitHu
 
 * [README.md](Activities/03-Stu_Markdown/README.md)
 
-### 11. Instructor Do: Git Welcome (5 mins)
+### 11. Instructor Do: Review Git Welcome (5 mins)
 
 Perform the following:
 
@@ -383,9 +381,9 @@ Open the slideshow and go over slides 1-22 while explaining the following:
 
 * Git repositories are often shared and have multiple collaborators; the group case study mini-project will showcase this scenario.
 
-* Remind students that in the class GitHub repository, there will be a list of potential FinTech case studies from which they can choose. 
+* Remind students that in the class GitHub repository, there will be a list of potential FinTech case studies from which they can choose.
 
-* Students should pair off into groups of `3-4` individuals and choose one of the available FinTech companies to present. Students will be given `30` minutes to develop their case studies and will then have `2-3` minutes to present their reports.
+* Students should pair off into groups of `2` individuals and choose one of the available FinTech companies to present. Students will be given `30` minutes to develop their case studies and will then have `2-3` minutes to present their reports.
 
 * Energize your students! This will be a good time for students to interact with each other and build upon what they've learned to perform their own independent case study analyses (without teacher help).
 
@@ -393,7 +391,7 @@ Open the slideshow and go over slides 1-22 while explaining the following:
 
 ### 14. Students Do: FinTech Groups (30 mins)
 
-In this activity, students will be divided up into groups of `3-4` individuals with each group representing a FinTech case study of a particular company. Each group will have to create their own shared GitHub repository and collaboratively create a case study report written in markdown.
+In this activity, students will be divided up into groups of `2` individuals with each group representing a FinTech case study of a particular company (chosen from the list of FinTech case studies). Each group will have to create their own shared GitHub repository and collaboratively create a case study report written in markdown.
 
 **Instructions:**
 
