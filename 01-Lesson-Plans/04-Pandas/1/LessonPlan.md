@@ -909,13 +909,13 @@ Open [returns.ipynb](Activities/10-Ins_Returns/Solved/returns.ipynb) to begin th
 
 * The `cumprod()` function multiplies each number in a series with the next successive number until the end of the series.
 
-* In the equation `(1 + daily_returns).cumprod() - 1`: 
+* In the equation `(1 + daily_returns).cumprod() - 1`:
 
-    * Each daily return is expressed as a multiplier (e.g., daily return of 0.5% is 1.005).
-    
-    * The `cumprod()` function cumulatively multiplies each number with its successive number. 
-    
-    * `-1` brings the result from a multiplier expression back to a typical return value scale (e.g., daily return of 0.5% is 0.005).
+  * Each daily return is expressed as a multiplier (e.g., daily return of 0.5% is 1.005).
+
+  * The `cumprod()` function cumulatively multiplies each number with its successive number. 
+
+  * `-1` brings the result from a multiplier expression back to a typical return value scale (e.g., daily return of 0.5% is 0.005).
 
   ![cumprod-function](Images/cumprod-function.png)
 
@@ -994,9 +994,9 @@ Ask if there are any questions before moving on.
 
 ### 19. Instructor Do: Decompress
 
-Before ending class, give students encouragement and allow them time to vocalize their thoughts. 
+Before ending class, give students encouragement and allow them time to vocalize their thoughts.
 
-* Tell students that they have come far in the last couple of weeks. Not only have they learned Python, but now they're well on their way to being skilled in Pandas as well. They have also begun to automate portfolio performance evaluation, making them one step closer to becoming masters of FinTech automation. 
+* Tell students that they have come far in the last couple of weeks. Not only have they learned Python, but now they're well on their way to being skilled in Pandas as well. They have also begun to automate portfolio performance evaluation, making them one step closer to becoming masters of FinTech automation.
 
 * Ask students the following questions:
 
