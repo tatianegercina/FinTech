@@ -34,6 +34,6 @@ Using the [starter file](Unsolved/market_analysis.ipynb), complete the following
 
 Consult the [Pandas documentation](https://pandas.pydata.org/pandas-docs/version/0.17.0/index.html) for more information about the `value_counts()` and `nlargest()` functions.
 
-- - - 
+---
 
 © 2019 Trilogy Education Services

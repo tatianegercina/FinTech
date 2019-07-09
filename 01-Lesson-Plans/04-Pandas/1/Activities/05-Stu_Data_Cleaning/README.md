@@ -8,7 +8,7 @@ For this activity, use Pandas to clean Harold's portfolio data to get it fit for
 
 ## Instructions
 
-Using the [starter file](Unsolved/Core/spring_cleaning.ipynb) and Harold's financial [data](Resources/stock_data.csv), complete the following steps. 
+Using the [starter file](Unsolved/Core/spring_cleaning.ipynb) and Harold's financial [data](Resources/stock_data.csv), complete the following steps.
 
 1. Load CSV data into Pandas using `read_csv`.
 
@@ -34,12 +34,12 @@ Using the [starter file](Unsolved/Core/spring_cleaning.ipynb) and Harold's finan
 
 Complete this challenge using the [starter file](Unsolved/Challenge/spring_cleaning.ipynb).
 
-Now that nulls and duplicates have been wrangled, clean up the data a little more by removing the `$` currency symbols from the `price` field. Then, use the `astype` function to cast `price` to a `float`. 
+Now that nulls and duplicates have been wrangled, clean up the data a little more by removing the `$` currency symbols from the `price` field. Then, use the `astype` function to cast `price` to a `float`.
 
 ## Hint
 
 Pandas offers a `replace` function that can be executed against a Series. Documentation can be found [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.replace.html).
 
-- - -
+---
 
 © 2019 Trilogy Education Services
