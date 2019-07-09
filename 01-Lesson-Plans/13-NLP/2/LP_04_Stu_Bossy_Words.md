@@ -1,4 +1,6 @@
-### 4. Student Do: Who are the Bossy Words? (10 mins)
+### 4. Student Do: Who are the Bossy Words? (15 mins)
+
+On this activity students will use the knowledge from previous lesson to create a word cloud based on TF-IDF weights. The main objective of this activity is to let them to learn what is the difference of creating a word cloud based on term relevance instead of terms occurrence.
 
 **Instructions:**
 
@@ -6,4 +8,6 @@
 
 **Files:**
 
-* [starter-code.js](Activities/02-Stu_Practice/Unsolved/starter-code.js)
+* [bossy_words.ipynb](Activities/04-Stu_Bossy_Words/Unsolved/bossy_words.ipynb)
+
+### 4. Instructor Do: Review Who are the Bossy Words? (5 mins)
