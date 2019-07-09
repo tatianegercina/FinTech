@@ -318,7 +318,7 @@ Tell students you will demonstrate each of these parts so that they can confiden
 
 Open the slides and introduce data cleaning by covering these points:
 
-* Data cleaning is critical to financial analytics. Data quality issues comprise the integrity, or "health," of a data set, which, in turn, creates a need for data cleaning.
+* Data cleaning is critical to financial analytics. Data quality issues comprise the integrity, or "health," of a dataset, which, in turn, creates a need for data cleaning.
 
 * The goal of data cleaning is to keep the "plumbing" of data pipelines clean and in working condition so that analytics can run smoothly.
 
@@ -332,7 +332,7 @@ Discuss how data quality is determined.
 
   * Numerical fields should not contain string characters, only digits.
 
-  * There should not be any duplicate rows in a data set.
+  * There should not be any duplicate rows in a dataset.
 
 * Data quality rules are also defined by business or functional rules. Sometimes data needs to be stored or formatted in a unique way for business needs. For example, an international company might store dates as `DD/MM/YYY`, whereas an American company might store dates as `MM/DD/YYYY`.
 
@@ -493,7 +493,7 @@ Next, tell students you will live code a few data quality checks that are especi
 
   ![LP_Stu_Data_Cleansing_Head_Currency.PNG](Images/LP_Stu_Data_Cleansing_Head_Currency.PNG)
 
-* Because the `order_total` field has currency symbols in the values, numeric operations cannot be performed. A custom cleaning operation will need to be created in order to remove these symbols from the data set.  
+* Because the `order_total` field has currency symbols in the values, numeric operations cannot be performed. A custom cleaning operation will need to be created in order to remove these symbols from the dataset.  
 
 * The cleaning operation can be created by leveraging and combining other Pandas functions (e.g., the Pandas `replace` function).
 
@@ -716,7 +716,7 @@ Ask if there are any questions before moving on.
 
 ### 11. Student Do: Three-Year Loans (20 min)
 
-Now that students have the conceptual knowledge to index and look up data, it's time they get some practice. In this activity, students will use DataFrame indexing on the data set in `loans.csv` in order to generate insights about three-year loan customers.
+Now that students have the conceptual knowledge to index and look up data, it's time they get some practice. In this activity, students will use DataFrame indexing on the dataset in `loans.csv` in order to generate insights about three-year loan customers.
 
 Note that the data in `loans.csv` is a compilation of many different columns and loan durations. Students will need to filter the data and use functions on data subsets to answer the activity questions.
 
