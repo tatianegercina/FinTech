@@ -499,4 +499,4 @@ Take your time with this review! This is a great time to reinforce concepts and 
 
 ---
 
-© 2019 Trilogy Education Services 
+© 2019 Trilogy Education Services
