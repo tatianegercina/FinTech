@@ -447,11 +447,11 @@ At this point, ask students, "Why do you think there are unequal counts in the d
 
 * Providing `inplace=True` as an argument will ensure the `dropna` function does not make a copy of the DataFrame but rather performs the operation on the original.
 
-    ```python
-    # Cleaning nulls from DataFrame by dropping
-    csv_data.dropna(inplace=True)
-    csv_data
-    ```
+  ```python
+  # Cleaning nulls from DataFrame by dropping
+  csv_data.dropna(inplace=True)
+  csv_data
+  ```
 
 * A best practice is to combine the `isnull` function with the `sum` function to test the `dropna` function; this serves as a unit test of the `dropna` function. The expectation is there should be a count of 0 nulls for each Series.
 
