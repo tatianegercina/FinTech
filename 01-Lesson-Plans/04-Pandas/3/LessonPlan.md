@@ -471,7 +471,7 @@ Let the students know that the following activity is reserved for in-class offic
 
 **Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
 
-Please use the entire office hours time to review questions with the students.
+Please use the entire time to review questions with the students before officially ending class.
 
 Suggested Format:
 
