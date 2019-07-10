@@ -469,7 +469,7 @@ Let the students know that the following activity is reserved for in-class offic
 
 ### 19. Instructor Do: Structured Office Hours (35 mins)
 
-**Note:** If you are teaching this Lesson on a Saturday, please save this 35 minute review for the next Saturday class.
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
 
 Please use the entire office hours time to review questions with the students.
 
