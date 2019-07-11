@@ -24,7 +24,7 @@ By the end of class, students will be able to:
 
 * **Important:** Before today's class, slack out [instructions](../Supplemental/InstallationGuides) for installing PostgreSQL and pgAdmin. Students should install these before class.
 
-* Today's class will be challenging. In this lesson, a series of activities will introduce students to programming with SQL using Postgres and pgAdmin. The pace of today's class will be quick as students absorb learning a new UI and programming language simultaneously.
+* Today's class will be challenging. In this lesson, a series of activities will introduce students to programming with SQL using PostgreSQL and pgAdmin. The pace of today's class will be quick as students absorb learning a new UI and programming language simultaneously.
 
 * Because this lesson introduces more than one new concept, circulate through the class during student activities to assist those who appear frustrated or stuck. Some students may already have experience with SQL; embrace these students' knowledge of the language and have them assist students who are not yet familiar with SQL.
 
@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
@@ -42,15 +42,17 @@ Welcome students to class and congratulate them on making it through 1/4 of the 
 
 Open the slideshow and overview the learning outcomes and class objectives for the SQL unit:
 
-* Today's lesson will introduce students to one of the most popular programming languages used when working with databases: Structured Query Language (SQL).
+* Today's lesson will introduce students to the most popular database management language: Structured Query Language (SQL).
 
-* SQL programmers are in high demand, so this is an important language to understand.
+* SQL allows us connect to a database and store, manipulate, and analyze the data within.
 
-* SQL allows us to manipulate and mine data as well as access large amounts of data with ease.
+* As companies continue to store data and leverage the insights derived from data analysis, SQL programmers continue to be in high demand. Therefore, SQL is also an economically valuable skill.
+
+---
 
 ### 2. Instructor Do: Introduction to SQL (5 min)
 
-Before diving into the lesson's activities, take some time to go over the purpose of SQL. 
+Before diving into the lesson's activities, take some time to go over the purpose of SQL.
 
 * SQL (often pronounced "sequel") stands for Structured Query Language. It is a powerful programming tool designed to allow programmers to create, populate, manipulate, and access databases, as well as provide programmers with an easy method for dealing with server-side storage. (Slide 4)
 
