@@ -20,6 +20,6 @@ Use aggregate functions as you run queries to answer the following questions. Yo
 
 Consult the Postgres documentation on [aggregate functions](https://www.postgresql.org/docs/9.5/functions-aggregate.html) for a summary of the available functions.
 
---- 
+---
 
 © 2019 Trilogy Education Services

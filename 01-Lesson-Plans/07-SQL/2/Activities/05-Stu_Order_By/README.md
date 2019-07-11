@@ -14,6 +14,6 @@ In this activity, you will use `ORDER BY` in combination with other SQL methods 
 
 Using the city and country tables, determine the count of countries in descending order.
 
---- 
+---
 
 © 2019 Trilogy Education Services
