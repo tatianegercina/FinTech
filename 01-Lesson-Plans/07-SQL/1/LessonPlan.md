@@ -104,7 +104,7 @@ Answer any questions before moving on.
 
 ### 4. Instructor Do: Create a Table (10 min) (Critical)
 
-In this activity, the instructor walks students through the process of creating a table in PostgreSQL.
+In this activity, the instructor walks students through the process of creating and manipulating a table in PostgreSQL.
 
 Now that there is a database on the server, it's time to dig into the real meat of SQL and start creating tables within the new database!
 
@@ -308,6 +308,8 @@ Answer any questions before moving on.
 
 ### 7. Instructor Do: The Value of Unique Values (5 min) (High)
 
+In this activity, students are introduced to the concept of duplicate and unique values, and how to properly remove duplicate records through the use of unique identifiers.
+
 **File:** [query.sql](Activities/04-Ins_Values_of_Uniques/Solved/query.sql)
 
 Using the `people` table from the `animals_db` database, insert the duplicate data below into the table, and then visualize the table with the new information.
@@ -440,6 +442,8 @@ Answer any questions before moving on.
 
 ### 11. Instructor Do: Import Data (10 min)
 
+In this activity, students learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
+
 **Files:**
 
 * [birdsong.csv](Activities/06-Ins_Importing_Data/Resources/birdsong.csv)
@@ -516,9 +520,11 @@ Answer any questions before moving on.
 
 ### 14. Instructor Do: CRUD (5 min)
 
-Return to the [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g58479a5bad_2_0) and begin to explain CRUD operations. (Slides 10–11)
+In this activity, students are introduced to the concept of Create, Read, Update, and Delete statements in SQL.
 
-* **CRUD**, while an unusual acronym, is a set of tools that are persistently used throughout programming. 
+Return to the [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g58479a5bad_2_0) and begin to explain CRUD operations.
+
+* **CRUD**, while an unusual acronym, is a set of tools that are persistently used throughout programming.
 
 * CRUD stands for Create, Read, Update, and Delete.
 
@@ -589,6 +595,8 @@ Open a query tool in `MiscellaneousDB` and copy and paste the code from schema.s
 * Finally, select all values to show the newly added country.
 
 ### 17. Instructor Do: Joins (15 min)
+
+In this activity, students are introduced to the concept of joins -- the combination of multiple related datasets into a single dataset.
 
 **Files:**
 
