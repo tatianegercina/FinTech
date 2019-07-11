@@ -40,11 +40,11 @@ Welcome students to class and congratulate them on making it through 1/4 of the 
 
 **File:** [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g480f0dd0a7_0_1809)
 
-Open the slideshow and overview the learning outcomes and class objectives for the SQL unit:
+Open the slideshow and overview the learning outcomes, class objectives, and technical background for the SQL unit:
 
 * Today's lesson will introduce students to the most popular database management language: Structured Query Language (SQL).
 
-* SQL allows us connect to a database and store, manipulate, and analyze the data within.
+* SQL allows us connect to a database and store, manipulate, and analyze the (often large amounts of) data within.
 
 * As companies continue to store data and leverage the insights derived from data analysis, SQL programmers continue to be in high demand. Therefore, SQL is also an economically valuable skill.
 
