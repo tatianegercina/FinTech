@@ -110,7 +110,7 @@ Explain the bonus section of the activity:
 
 * All three tables can be joined to replicate a view of the cleaned CSV.
 
-### 5. Instructor Do: Intro to Foreign Keys (15 min) (Critical)
+### 5. Instructor Do: Intro to Foreign Keys (15 min)
 
 In this activity, students will be introduced to the concept of foreign keys -- columns designated as matching links or relations to another table.
 
