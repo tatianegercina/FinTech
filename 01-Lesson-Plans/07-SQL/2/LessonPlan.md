@@ -24,17 +24,17 @@ By the end of today's class, students will be able to:
 
 Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
 Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809).
 
-Welcome the students and show the class objectives. (Slide 2)
+Welcome the students and show the class objectives.
 
 Explain that today's lesson will provide a more in-depth look at SQL's features. Students will work with imported tables to expand their SQL skills.
 
-### 2. Instructor Do: Import Data (15 min) (Critical)
+### 2. Instructor Do: Import Data (15 min)
 
 **File:** [Resources](Activities/01-Evr_Import_Data/Resources/schema.sql)
 
@@ -62,15 +62,15 @@ Have the class repeat this process for the remaining tables.
 
 The TAs should walk around the classroom to assist students with the database upload.
 
-### 3. Instructor Do: Aggregate Functions, Aliases, and Grouping (10 min) (Critical)
+### 3. Instructor Do: Aggregate Functions, Aliases, and Grouping (10 min)
 
 Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809) and review the following:
 
-* Similar to aggregates in Pandas, aggregate functions allow calculations on a set of values and return a singular value. (Slide 5)
+* Similar to aggregates in Pandas, aggregate functions allow calculations on a set of values and return a singular value.
 
-* Some of most commonly used aggregates are `Avg`, `COUNT`, `MIN`, `MAX`, and `SUM`. (Slide 5)
+* Some of most commonly used aggregates are `Avg`, `COUNT`, `MIN`, `MAX`, and `SUM`.
 
-* Aggregates are often combined with `GROUP BY`, `HAVING`, and `SELECT`. (Slide 6)
+* Aggregates are often combined with `GROUP BY`, `HAVING`, and `SELECT`.
 
 **File:** [query.sql](Activities/02-Ins_Aggregates/Solved/query.sql)
 
@@ -199,7 +199,7 @@ Review the solution in pgAdmin and explain the following:
 
 Answer any questions before moving on.
 
-### 6. Instructor Do: Order By Aggregates (10 min) (High)
+### 6. Instructor Do: Order By Aggregates (10 min)
 
 **File:** [query.sql](Activities/04-Ins_Order_By/Solved/query.sql)
 
@@ -242,7 +242,7 @@ Open pgAdmin and explain the following:
 
 Answer any questions before moving on.
 
-### 7. Student Do: Movies Ordered By (15 min) (High)
+### 7. Student Do: Movies Ordered By (15 min)
 
 In this activity, you will use `ORDER BY` in combination with other SQL methods to query and order the tables.
 
@@ -262,13 +262,13 @@ Open pgAdmin and walk through the solution, highlighting the following:
 
 * For the bonus, a `JOIN` is needed to combine the `country` and `city` tables. The return of the join can then be grouped and aggregated. The result is sorted by the count of countries in descending order.
 
-- - -
+---
 
 ### 9. BREAK (15 min)
 
-- - -
+---
 
-### 10. Instructor Do: Introduction to Subqueries (10 min) (High)
+### 10. Instructor Do: Introduction to Subqueries (10 min)
 
 Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809) to begin the discussion of subqueries. A **subquery** is nested inside a larger query. (Slide 10)
 
@@ -276,9 +276,9 @@ Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUf
 
 Explain that there is often more than one way of accomplishing a task in SQL.
 
-  * For example, suppose we want to view the inventory of a film called *Early Home*. One way to do this is to run several queries in succession. 
-  
-  * In the first query, we would search by the title and obtain its `film_id` number.
+* For example, suppose we want to view the inventory of a film called *Early Home*. One way to do this is to run several queries in succession. 
+
+* In the first query, we would search by the title and obtain its `film_id` number.
 
   ```sql
   SELECT title, film_id
@@ -359,7 +359,7 @@ Note that `SELECT *` was used in this activity. While this is fine for explorati
 
 Answer any questions before moving on.
 
-### 11. Student Do: Subqueries (15 min) (High)
+### 11. Student Do: Subqueries (15 min)
 
 In this activity, students will practice creating subqueries.
 
@@ -465,7 +465,7 @@ Point out that the query is identical to the one above, except for the first lin
   CREATE VIEW total_sales AS
   ```
 
-* A `view` is created under the name `total_sales`. 
+* A `view` is created under the name `total_sales`.
 
 * Created views can be found on the left sidebar in pgAdmin.
 
@@ -522,7 +522,7 @@ Review the code in the solution file and explain the following:
   WHERE "Number of Copies" = 7;
   ```
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
 ### 16. Instructor Do: Revisit Subqueries (10 min)
 
@@ -532,11 +532,11 @@ Ask if there are any questions before moving on.
 
 * [Pagila ERD](http://www.postgresqltutorial.com/postgresql-sample-database/)
 
-Discuss the following points with students: 
+Discuss the following points with students:
 
 * Up to this point, the subqueries we've seen have been relatively straightforward. In this activity, we will look at more complicated examples, but don't worry. We can perform complexly nested subqueries using the same principles that we've learned so far.
 
-* We begin with a question: how many people have rented the film *Blanket Beverly*? To answer this question systematically, we must first identify the tables needed for our query. 
+* We begin with a question: how many people have rented the film *Blanket Beverly*? To answer this question systematically, we must first identify the tables needed for our query.
 
 * To help with this process, an **entity relationship diagram (ERD)** is used.
 
@@ -564,7 +564,7 @@ Begin a class discussion to determine how to formulate the rest of the subquery 
 
 * Connect the `film` table using the key `film_id`, which it has in common with the `inventory` table.
 
-* In the last subquery, query the film title, *Blanket Beverly*. 
+* In the last subquery, query the film title, *Blanket Beverly*.
 
 The sample query would be as follows:
 
@@ -671,6 +671,6 @@ Answer any questions before ending class.
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services
