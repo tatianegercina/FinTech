@@ -22,7 +22,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* **Important:** Before today's class, slack out [instructions](../Supplemental/InstallationGuides) for installing PostgreSQL and pgAdmin. Students should install these before class.
+* **Important:** [Instructions](../Supplemental/InstallationGuides) for installing PostgreSQL and pgAdmin should have already been slacked out prior to today's class as students need to install these before class to conserve time for activities and lessons rather than initial setup.
 
 * Today's class will be challenging. In this lesson, a series of activities will introduce students to programming with SQL using PostgreSQL and pgAdmin. The pace of today's class will be quick as students absorb learning a new UI and programming language simultaneously.
 
@@ -72,7 +72,7 @@ Slack out the following resources:
 
 ### 3. Instructor Do: Create a Database (5 min) (Critical)
 
-Begin by verifying that everyone has successfully installed pgAdmin and Postgres. Everyone should have completed this step prior to today's class.
+Begin by verifying that everyone has successfully installed pgAdmin and PostgreSQL. Everyone should have completed this step prior to today's class.
 
 * Open pgAdmin in a new browser window and ensure that everyone is able to follow along and view their new server in the browser.
 
