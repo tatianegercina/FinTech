@@ -62,9 +62,13 @@ Before diving into the lesson's activities, take some time to go over the purpos
 
 * pgAdmin is the management tool used for working with Postgres. It simplifies creation, maintenance, and use of database objects. (Slide 7)
 
-Slack out the [Student Guide](../StudentGuide.md) containing this week's objectives as well as resource links.
+Slack out the following resources:
 
-Slack out the [SQL Reference Guide](../Supplemental/SQL_reference_guide.pdf) for students to use as a reference during the activities this week.
+* [Student Guide](../StudentGuide.md) containing this week's objectives as well as resource links.
+
+* [SQL Reference Guide](../Supplemental/SQL_reference_guide.pdf) for students to use as a reference during the activities this week.
+
+* [SQL Installation Guides](../Supplemental/InstallationGuides) outlining how to install PostgreSQL and pgAdmin for either Mac or Windows.
 
 ### 3. Instructor Do: Create a Database (5 min) (Critical)
 
