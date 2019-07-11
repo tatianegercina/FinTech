@@ -1,8 +1,8 @@
-# Pet Normalizer 
+## Pet Normalizer 
 
 In this activity, you will be utilizing data normalization practices.
 
-## Instructions
+### Instructions
 
 * In pgAdmin, create a new database called `pets_db`.
 
@@ -18,8 +18,7 @@ In this activity, you will be utilizing data normalization practices.
 
   **Hint:** Be sure that each table has a unique primary key.
 
-
-## Bonus
+### Bonus
 
 * Create a `service` table that displays the different types of services that are offered.
 
@@ -27,6 +26,6 @@ In this activity, you will be utilizing data normalization practices.
 
 * Join all three tables.
 
-- - - 
+--- 
 
 © 2019 Trilogy Education Services
