@@ -6,13 +6,13 @@ In this activity, you will create a new table and import data from a CSV file.
 
 1. Create a new table in the `Miscellaneous_DB` database called `wordassociation`.
 
-1. Import the data from the `WordAssociation_AC.csv` file in the Resources folder.
+2. Import the data from the `WordAssociation_AC.csv` file in the Resources folder.
 
-1. Create a query in which the data in the `word1` column is `stone`. 
+3. Create a query in which the data in the `word1` column is `stone`. 
 
-1. Create a query that collects all rows in which the author is within the range 0–10.
+4. Create a query that collects all rows in which the author is within the range 0–10.
 
-1. Create a query that searches for any rows that have `pie` in their `word1` or `word2` columns.
+5. Create a query that searches for any rows that have `pie` in their `word1` or `word2` columns.
 
 ### Bonus
 
@@ -22,6 +22,6 @@ In this activity, you will create a new table and import data from a CSV file.
 
 * Create a query that will collect all rows with a `source` of BC and an author range between 333 and 335.
 
---- 
+---
 
 © 2019 Trilogy Education Services

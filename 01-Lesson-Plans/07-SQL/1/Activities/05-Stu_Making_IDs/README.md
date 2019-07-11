@@ -4,11 +4,11 @@ In this activity, you will recreate a table and then query, insert, and update d
 
 ### Instructions
 
-1. Create a new database named `programming_db`. 
+1. Create a new database named `programming_db`.
 
 2. Recreate the `programming_languages` table using the following image.
 
-![programming_languages.png](Images/programming_languages.png)
+    ![programming_languages.png](Images/programming_languages.png)
 
 3. Query the table to return the rows containing MySQL, and then delete one of the duplicates.
 
