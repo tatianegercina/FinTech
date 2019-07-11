@@ -32,7 +32,7 @@ Welcome students and explain that today's lesson will dive into data modeling te
 
 Open the [Class Objectives slide](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g473a132ac1_0_7) and review the objectives for today's class.
 
-### 2. Instructor Do: Data Normalization (15 min) (Critical)
+### 2. Instructor Do: Data Normalization (15 min)
 
 **File:** [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/Normalization.md)
 
@@ -736,7 +736,7 @@ Return to pgAdmin in the browser and create a new database called `gym`.
 
 Answer any questions before moving on.
 
-### 17. Instructor Do: Introduce Checkpoint—SQL (5 min) (Critical)
+### 17. Instructor Do: Introduce Checkpoint—SQL (5 min)
 
 Inform students that they will now be taking a short multiple-choice assessment to check their understanding of SQL.
 
@@ -762,7 +762,7 @@ Reassure students again that the purpose of this checkpoint is to help them. Rem
 
 Slack out the link to the [checkpoint](https://docs.google.com/forms/d/1MENo4W02l59VqWQZn67aPXUm2eqANabxqg9cOPPu1v8/edit?usp=sharing).
 
-### 18. Student Do: Take Checkpoint—SQL (30 min) (Critical)
+### 18. Student Do: Take Checkpoint—SQL (30 min)
 
 Let students know that checkpoints must be completed in class, not at home. This will allow you to find and help struggling students more effectively.
 
