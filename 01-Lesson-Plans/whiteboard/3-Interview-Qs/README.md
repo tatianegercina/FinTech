@@ -2,9 +2,7 @@
 
 ## Overview
 
-This directory contains a collection of annotated interview questions. Each question features a corresponding a README, with details as to what Peer Interviewers should evaluate for; sugested hints; and solutions.
-
-Some questions are primarily intended to improve students' problem solving ability, and are most appropriate for advanced students. Others primarily reinforce fundamental JavaScript concepts, and are suitable for students at all levels. Questions are arranged by type below.
+This directory contains a collection of annotated interview questions. Each question features a corresponding a README, with details as to what Peer Interviewers should evaluate for; suggested hints; and solutions.
 
 Review the [Notes to the Interviewer](2-Supplements/README.md) prior to performing an interview.
 
