@@ -166,7 +166,7 @@ In this activity, students get a chance to perform some reflection and write dow
 
 **File:** [README.md](Activities/01-Stu_FinTech_Group_Discussions/README.md)
 
-During this activity, students will be sharing their responses with their classmates. Be sure that you and the TA's circulate to listen to student responses. If you hear responses that are especially engaging or interesting, ask those students to share that response with the class during the next Activity (Review FinTech and Me).
+During this activity, students will be sharing their responses with their classmates. Be sure that you and the TA's circulate to listen to student responses. If you hear responses that are especially engaging or interesting, ask those students to share that response with the class during the next activity (Review FinTech and Me).
 
 ---
 
