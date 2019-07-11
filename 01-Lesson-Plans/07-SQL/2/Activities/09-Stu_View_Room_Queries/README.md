@@ -1,8 +1,8 @@
-# A View with a Roomful of Queries
+## A View with a Roomful of Queries
 
 In this activity, you will work with a partner to practice your join and subquery skills, as well as build out a view. 
 
-## Instructions
+### Instructions
 
 * Write a query to get the number of copies of a film title that exist in the inventory. 
 
@@ -14,6 +14,6 @@ In this activity, you will work with a partner to practice your join and subquer
 
 * Query the newly created view to find all the titles that have 7 copies.
 
-- - - 
+---
 
 © 2019 Trilogy Education Services
