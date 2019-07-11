@@ -16,7 +16,7 @@ By the end of class, students will be able to:
 
 * Load CSV files into a database and query the data.
 
-* Articulate the four basic functions of persistent storage (CRUD) and apply this set of functions to a database.
+* Articulate and apply the four basic functions of persistent storage: Create, Read, Update, and Delete (CRUD).
 
 * Combine data from multiple tables using joins.
 
@@ -36,7 +36,7 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students to class and congratulate them on making it through 1/4 of the course! They have come very far since the beginning of the course and should feel proud of what they have accomplished so far!
+Welcome students to class and congratulate them on making it this far in the course! At this point students are only one unit away from their first project, and so they should feel proud of what they have accomplished so far!
 
 **File:** [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g480f0dd0a7_0_1809)
 
@@ -62,7 +62,7 @@ Open the slideshow and take some time to go over the purpose of SQL, PostgreSQL,
 
 * With SQL, data is stored in tables on the server, much like spreadsheets you would create in Microsoft Excel. This makes the data easy to visualize and search.
 
-* PostgreSQL (usually referred to as "Postgres") is an object-relational database system that uses the SQL language. PostgreSQL is one of the many *vendors* that utilize the underlying SQL technology --- similar to other well-known vendors such as MySQL, Microsoft SQL Server, and Oracle SQL.
+* PostgreSQL (usually referred to as "Postgres") is an object-relational database system that uses the SQL language. PostgreSQL is one of the many *vendors* that utilize the underlying SQL technology -- similar to other well-known vendors such as MySQL, Microsoft SQL Server, and Oracle SQL.
 
 * pgAdmin is the database management tool used for working with Postgres. It simplifies creation, maintenance, and use of database objects by providing a Graphical User Interface (GUI).
 
@@ -103,6 +103,8 @@ At this point, show students that there is a new database listed in the left-han
 Answer any questions before moving on.
 
 ### 4. Instructor Do: Create a Table (10 min) (Critical)
+
+In this activity, the instructor walks students through the process of creating a table in PostgreSQL.
 
 Now that there is a database on the server, it's time to dig into the real meat of SQL and start creating tables within the new database!
 
@@ -150,13 +152,13 @@ After reviewing the code, click the lightning bolt icon to run the script. Make 
 
 Demonstrate that the structure of a table can be visualized using `SELECT * FROM <table name>;`.  Point out the error message that now appears at the bottom of the page.
 
-* SQL data is persistent; it is not deleted or overwritten when identical commands are run unless specifically commanded. 
+* SQL data is persistent; it is not deleted or overwritten when identical commands are run unless specifically commanded.
 
 * This means that when a database or table is created with a  name identical to one that already exists, an error will occur telling the user that the database or table already exists.
 
 Ask the class how to avoid this kind of error. Students may respond that they can simply delete the offending line of code and then run the commands again. Explain that while this method would work, deleting working code is not a best practice.
 
-Show the class an alternative method: 
+Show the class an alternative method:
 
 * Highlight the lines of code to run, and then click the lightning bolt icon to run only the highlighted selection. This method of running SQL code is preferable to deleting previous code.
 
@@ -259,7 +261,6 @@ Create a new database named `city_info` in pgAdmin. Then use the query tool to c
   SELECT *
   FROM cities;
   ```
-
 
 * Note the syntax here. Even though the code can fit on a single line, it's good practice to split it up over two lines instead. This way, the code is easier to read when more advanced queries are created.
 
@@ -366,7 +367,7 @@ Copy the following code from the `query.sql` file and paste it in the pgAdmin ed
   FROM people;
   ```
 
-Explain the following points: 
+Explain the following points:
 
 * A **primary key** uniquely identifies a row.
 
@@ -374,7 +375,7 @@ Explain the following points:
 
 * By default, the starting value is 1, and it will increase by 1 for each new record. When using `SERIAL` with our unique `PRIMARY KEY`, we automatically get unique, incrementing values for each table row.
 
-* Because values will automatically increment, each row's ID is guaranteed to be unique. This ensures that SQL does not identify and update the wrong row when CRUD (Create, Read, Update, Delete) statements are implemented.
+* Because values will automatically increment, each row's ID is guaranteed to be unique. This ensures that SQL does not identify and update the wrong row when CRUD (Create, Read, Update, Delete) statements are implemented (will cover in the following activities).
 
 * The `INSERT` statements have not changed, as they do not need to insert data specifically into the `id` column. SQL automatically provides a value for this column, fulfilling the uniqueness constraint by automatically incrementing the last value used as an ID.
 
@@ -402,7 +403,7 @@ Explain the following points:
 
 * Note that, similar to a query, the `WHERE` statement is used to pinpoint the data we want to change. In this case, the `id` column is used to select the unique row we want to affect.
 
-* Duplicate data is also easier to remove with the use of a unique ID. With the following code, remove the duplicate data: 
+* Duplicate data is also easier to remove with the use of a unique ID. With the following code, remove the duplicate data:
 
   ```sql
   DELETE FROM people
@@ -431,11 +432,11 @@ Review how to create a new column using the `ALTER TABLE` and `ADD COLUMN` state
 
 Answer any questions before moving on.
 
-- - -
+---
 
 ### 10. BREAK (15 min)
 
-- - -
+---
 
 ### 11. Instructor Do: Import Data (10 min)
 
@@ -701,6 +702,6 @@ Answer any questions before ending class.
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services
