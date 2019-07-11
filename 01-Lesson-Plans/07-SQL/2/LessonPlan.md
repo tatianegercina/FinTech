@@ -270,7 +270,7 @@ Open pgAdmin and walk through the solution, highlighting the following:
 
 ### 10. Instructor Do: Introduction to Subqueries (10 min)
 
-Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_60) to begin the discussion of subqueries. A **subquery** is nested inside a larger query. (Slide 10)
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_60) to begin the discussion of subqueries. A **subquery** is nested inside a larger query.
 
 **File:** [query.sql](Activities/06-Ins_Subqueries/Solved/query.sql)
 
@@ -416,7 +416,7 @@ Review the solution in pgAdmin and explain the following:
 
 ### 13. Instructor Do: Create Views (10 min)
 
-Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_83) to begin the discussion of views. A **view** in SQL is a virtual table that can be created from a single table, multiple tables, or another view. (Slide 13)
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_83) to begin the discussion of views. A **view** in SQL is a virtual table that can be created from a single table, multiple tables, or another view.
 
 **File:** [query.sql](Activities/08-Ins_Create_Views/Solved/query.sql)
 

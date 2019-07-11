@@ -561,7 +561,7 @@ In today's class, each of the operations has been in use. Students have:
   WHERE id = 3;
   ```
 
-Introduce the class to an additional method of reading the data: wildcards. (Slides 12–13)
+Introduce the class to an additional method of reading the data: wildcards.
 
 * A **wildcard** is a character—either a percentage sign or an underscore—that takes the place of one or more characters in a query.
 
