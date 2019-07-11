@@ -1,4 +1,4 @@
-### 6. Instructor Do: Getting Data for Sentiment Analysis (10 mins)
+### 6. Instructor Do: Getting Data for Sentiment Analysis (15 mins)
 
 **Files:**
 
