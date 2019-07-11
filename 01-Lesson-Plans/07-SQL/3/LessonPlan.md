@@ -112,6 +112,8 @@ Explain the bonus section of the activity:
 
 ### 5. Instructor Do: Intro to Foreign Keys (15 min) (Critical)
 
+In this activity, students will be introduced to the concept of foreign keys -- columns designated as matching links or relations to another table.
+
 **File:** [schema.sql](Activities/03-Ins_Foreign_Keys/Solved/schema.sql)
 
 Use the [slides on foreign keys](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594fd95c34_0_199) to explain the concept of foreign keys and how they are used to connect tables:
@@ -274,6 +276,8 @@ Open `schema.sql` in pgAdmin and walk through the code, explaining the following
 * Finally, all tables can be joined together by their respective IDs.
 
 ### 8. Instructor Do: Intro to Data Relationships (15 min)
+
+In this activity, students will learn the many different types of data modeling relationships that one table can have with another: one-to-one, one-to-many, and many-to-many.
 
 **Files:**
 
@@ -461,6 +465,8 @@ For the bonus, briefly explain that two outer joins can be performed to retrieve
 ---
 
 ### 12. Instructor Do: Entity Relationship Diagrams (15 min)
+
+In this activity, students will learn how to interpret and create an Entity Relationship Diagram (ERD) -- an asset that delineates the relationship among tables in a database.
 
 **File:** [pagila-erd.png](Images/pagila-erd.png)
 
@@ -738,7 +744,7 @@ Answer any questions before moving on.
 
 ### 17. Instructor Do: Introduce Checkpoint—SQL (5 min)
 
-Inform students that they will now be taking a short multiple-choice assessment to check their understanding of SQL.
+In this activity, instructors will introduce a short multiple-choice assessment that gauges students' understanding of SQL.
 
 **Important:** Do not skip this introduction. Do not send out the link without context.
 
@@ -763,6 +769,8 @@ Reassure students again that the purpose of this checkpoint is to help them. Rem
 Slack out the link to the [checkpoint](https://docs.google.com/forms/d/1MENo4W02l59VqWQZn67aPXUm2eqANabxqg9cOPPu1v8/edit?usp=sharing).
 
 ### 18. Student Do: Take Checkpoint—SQL (30 min)
+
+In this activity, students will take the short multiple-choice SQL assessment introduced in the previous activity.
 
 Let students know that checkpoints must be completed in class, not at home. This will allow you to find and help struggling students more effectively.
 
