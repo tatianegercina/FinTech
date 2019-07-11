@@ -5,16 +5,10 @@
 Write a function that finds the most frequent element in an array.
 
 ```
-find_most_frequent_element([1, 2, 2, 3]) // 2
+most_frequent([1, 2, 2, 3]) # 2
 ```
 
-### Notes to the Interviewer
-
-N/A.
-
 ### Prompts from the Interviewer
-
-The interviewer may use these prompts to prompt additional problem-solving from the interviewee. It is not mandatory to raise every prompt.
 
 * **Prompt**: Does your approach work if two elements appear the same number of times, as in `[1, 2, 2, 3, 3]`?
 
@@ -48,16 +42,12 @@ The interviewer may use these prompts to prompt additional problem-solving from 
 
 ### Hints
 
-* Does your solution change if the input array is unsorted?
+* Does your solution change if the input list is unsorted?
 
-  * It shouldn't. A properly implemented solution should work on unsorted arrays.
+  * It shouldn't. A properly implemented solution should work on unsorted lists.
 
 ### Solutions
 
 #### Complete Solution
 
-A complete solution should return all elements that occur `max` number of times, rather than just one of the most frequently occurring elements. For example, `find_most_frequent_element([1, 2, 2, 3, 3])` should return both `[2, 3]` as opposed to just `2` or `3`.
-
-[The reference solution](Solved/find_most_frequent_element.js) always returns an array of most frequently occurring elements. If there is only one, this means it returns an array of one element. This is a conscious design decision, and is something strong candidates will discuss.
-
-This solution runs in `O(n)` time with `O(n)` extra space.
+[Most_Frequent.ipynb](Solved/Most_Frequent.ipynb)
