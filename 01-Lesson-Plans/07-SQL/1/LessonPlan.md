@@ -8,7 +8,7 @@ In today's class, students will be introduced to SQL databases and will learn ho
 
 By the end of class, students will be able to:
 
-* Install and run Postgres and pgAdmin on their computers.
+* Install and run PostgreSQL (SQL) and pgAdmin (GUI) on their computers.
 
 * Create a database and tables using pgAdmin.
 
@@ -36,15 +36,15 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Open the [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g480f0dd0a7_0_1809).
-
 Welcome students to class and congratulate them on making it through 1/4 of the course! They have come very far since the beginning of the course and should feel proud of what they have accomplished so far!
 
-Go over the learning outcomes and class objectives for the SQL unit. (Slides 2–3)
+**File:** [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g480f0dd0a7_0_1809)
 
-Tell students that today's lesson will introduce them to one of the most popular programming languages used when working with databases: SQL. 
+Open the slideshow and overview the learning outcomes and class objectives for the SQL unit:
 
-* SQL programmers are in high demand, so this is an important language to understand. 
+* Today's lesson will introduce students to one of the most popular programming languages used when working with databases: Structured Query Language (SQL).
+
+* SQL programmers are in high demand, so this is an important language to understand.
 
 * SQL allows us to manipulate and mine data as well as access large amounts of data with ease.
 
