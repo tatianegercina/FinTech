@@ -10,7 +10,7 @@ In this activity, you will recreate a table and then query, insert, and update d
 
     ![programming_languages.png](Images/programming_languages.png)
 
-3. Query the table to return the rows containing MySQL, and then delete one of the duplicates.
+3. Query the table to return the rows containing "MySQL", and then delete one of the duplicates.
 
 4. Insert a few more rows of data for additional programming languages by adding the `language` and `rating` of your choice to the `programming_languages` table.
 
