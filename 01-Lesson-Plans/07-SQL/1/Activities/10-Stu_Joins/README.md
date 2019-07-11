@@ -1,8 +1,8 @@
-# Joining the NBA
+## Joining the NBA
 
 In this activity, you will be using joins to query NBA player seasonal statistics.
 
-## Instructions
+### Instructions
 
 1. Create a new database named `NBA_DB` and create two new tables with pgAdmin named `players` and `seasons_stats`.
 
@@ -20,6 +20,6 @@ In this activity, you will be using joins to query NBA player seasonal statistic
 
 ![Percent Stats](Images/percent_stats.png)
 
-- - - 
+---
 
 © 2019 Trilogy Education Services
