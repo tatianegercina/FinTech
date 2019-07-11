@@ -26,6 +26,6 @@ In this activity, you will be utilizing data normalization practices.
 
 * Join all three tables.
 
---- 
+---
 
 © 2019 Trilogy Education Services
