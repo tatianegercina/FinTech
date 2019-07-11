@@ -40,27 +40,31 @@ Welcome students to class and congratulate them on making it through 1/4 of the 
 
 **File:** [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g480f0dd0a7_0_1809)
 
-Open the slideshow and overview the learning outcomes, class objectives, and technical background for the SQL unit:
+Open the slideshow and overview the learning outcomes, class objectives, and a brief background of the SQL unit:
 
-* Today's lesson will introduce students to the most popular database management language: Structured Query Language (SQL).
+* Today's lesson will introduce students to the most popular database management language: SQL.
 
 * SQL allows us connect to a database and store, manipulate, and analyze the (often large amounts of) data within.
 
-* As companies continue to store data and leverage the insights derived from data analysis, SQL programmers continue to be in high demand. Therefore, SQL is also an economically valuable skill.
+* As companies continue to store data and leverage the insights derived from data analysis, SQL developers continue to be in high demand. Therefore, SQL is also an economically valuable skill.
 
 ---
 
 ### 2. Instructor Do: Introduction to SQL (5 min)
 
-Before diving into the lesson's activities, take some time to go over the purpose of SQL.
+In this activity, instructors introduce students to the definitions and use cases of SQL, PostgreSQL, and pgAdmin.
 
-* SQL (often pronounced "sequel") stands for Structured Query Language. It is a powerful programming tool designed to allow programmers to create, populate, manipulate, and access databases, as well as provide programmers with an easy method for dealing with server-side storage. (Slide 4)
+**File:** [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g480f0dd0a7_0_1809)
+
+Open the slideshow and take some time to go over the purpose of SQL, PostgreSQL, and pgAdmin:
+
+* SQL (often pronounced "sequel") stands for Structured Query Language. It is a powerful database query tool designed to allow developers to create, populate, manipulate, and access databases, as well as provide developers with the ability to leverage scalable server-side storage for large volumes of data.
 
 * With SQL, data is stored in tables on the server, much like spreadsheets you would create in Microsoft Excel. This makes the data easy to visualize and search.
 
-* PostgreSQL (usually referred to as "Postgres") is an object-relational database system that uses the SQL language. (Slide 6)
+* PostgreSQL (usually referred to as "Postgres") is an object-relational database system that uses the SQL language. PostgreSQL is one of the many *vendors* that utilize the underlying SQL technology --- similar to other well-known vendors such as MySQL, Microsoft SQL Server, and Oracle SQL.
 
-* pgAdmin is the management tool used for working with Postgres. It simplifies creation, maintenance, and use of database objects. (Slide 7)
+* pgAdmin is the management tool used for working with Postgres. It simplifies creation, maintenance, and use of database objects.
 
 Slack out the following resources:
 
