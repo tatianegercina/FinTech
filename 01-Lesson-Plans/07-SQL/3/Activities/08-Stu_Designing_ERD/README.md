@@ -18,6 +18,6 @@ You are meeting with a gym owner who wants to organize his data in a database. C
 
 Read this [documentation](https://www.visual-paradigm.com/support/documents/vpuserguide/3563/3564/85378_conceptual,l.html) for more in-depth explanations of entity relationship diagrams.
 
---- 
+---
 
 © 2019 Trilogy Education Services

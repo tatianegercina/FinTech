@@ -28,7 +28,7 @@ In this activity, you and your partner will continue designing an entity relatio
 
   ![relationship-types.png](Images/relationship-types.png)
 
-* Keep in mind the following: 
+* Keep in mind the following:
 
   * Each member belongs to only one gym.
 
@@ -43,8 +43,7 @@ In this activity, you and your partner will continue designing an entity relatio
   ```sql
   SELECT * FROM "Members";
   ```
---- 
+
+---
 
 © 2019 Trilogy Education Services
-
-
