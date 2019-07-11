@@ -64,7 +64,7 @@ Open the slideshow and take some time to go over the purpose of SQL, PostgreSQL,
 
 * PostgreSQL (usually referred to as "Postgres") is an object-relational database system that uses the SQL language. PostgreSQL is one of the many *vendors* that utilize the underlying SQL technology --- similar to other well-known vendors such as MySQL, Microsoft SQL Server, and Oracle SQL.
 
-* pgAdmin is the management tool used for working with Postgres. It simplifies creation, maintenance, and use of database objects.
+* pgAdmin is the database management tool used for working with Postgres. It simplifies creation, maintenance, and use of database objects by providing a Graphical User Interface (GUI).
 
 Slack out the following resources:
 
