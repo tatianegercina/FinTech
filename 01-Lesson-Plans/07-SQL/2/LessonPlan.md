@@ -64,7 +64,7 @@ The TAs should walk around the classroom to assist students with the database up
 
 ### 3. Instructor Do: Aggregate Functions, Aliases, and Grouping (10 min)
 
-Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809) and review the following:
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_1) and review the following:
 
 * Similar to aggregates in Pandas, aggregate functions allow calculations on a set of values and return a singular value.
 
@@ -270,13 +270,13 @@ Open pgAdmin and walk through the solution, highlighting the following:
 
 ### 10. Instructor Do: Introduction to Subqueries (10 min)
 
-Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809) to begin the discussion of subqueries. A **subquery** is nested inside a larger query. (Slide 10)
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_60) to begin the discussion of subqueries. A **subquery** is nested inside a larger query. (Slide 10)
 
 **File:** [query.sql](Activities/06-Ins_Subqueries/Solved/query.sql)
 
 Explain that there is often more than one way of accomplishing a task in SQL.
 
-* For example, suppose we want to view the inventory of a film called *Early Home*. One way to do this is to run several queries in succession. 
+* For example, suppose we want to view the inventory of a film called *Early Home*. One way to do this is to run several queries in succession.
 
 * In the first query, we would search by the title and obtain its `film_id` number.
 
@@ -416,7 +416,7 @@ Review the solution in pgAdmin and explain the following:
 
 ### 13. Instructor Do: Create Views (10 min)
 
-Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809) to begin the discussion of views. A **view** in SQL is a virtual table that can be created from a single table, multiple tables, or another view. (Slide 13)
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_83) to begin the discussion of views. A **view** in SQL is a virtual table that can be created from a single table, multiple tables, or another view. (Slide 13)
 
 **File:** [query.sql](Activities/08-Ins_Create_Views/Solved/query.sql)
 
@@ -442,7 +442,7 @@ Slack out the following query and ask the students to run it:
         GROUP BY s.store_id;
   ````
 
-* The query is used to monitor the total sales from each store, which is something a company executive would want to look up often. 
+* The query is used to monitor the total sales from each store, which is something a company executive would want to look up often.
 
 * Notice that an alias is used to narrow table names down to a single letter. Instead of having to type this query, we can store it under a `view`:
 
