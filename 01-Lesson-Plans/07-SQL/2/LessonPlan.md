@@ -20,6 +20,8 @@ By the end of today's class, students will be able to:
 
 * This lesson will build on what students learned in the previous class, and each activity will combine multiple SQL elements. Students who are new to SQL may struggle a bit, but many of the concepts are similar to those they have learned previously.
 
+* SQL views will be a pleasant interlude from some of the heavy SQL lifting done prior; however, it is not crucial and so instructors should feel free to tweak the length and content as they deem appropriate.
+
 * The TAs should be ready to help students who are confused or who have not imported the data correctly.
 
 Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
@@ -28,13 +30,15 @@ Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
+Welcome the students and overview the class objectives.
+
 Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809).
 
-Welcome the students and show the class objectives.
-
-Explain that today's lesson will provide a more in-depth look at SQL's features. Students will work with imported tables to expand their SQL skills.
+* Explain that today's lesson will provide a more in-depth look at SQL's features. Students will work with imported tables to expand their SQL skills.
 
 ### 2. Instructor Do: Import Data (15 min)
+
+In this activity, instructors will help students prepare for today's lesson by importing the necessary data to their databases.
 
 **File:** [Resources](Activities/01-Evr_Import_Data/Resources/schema.sql)
 
@@ -63,6 +67,8 @@ Have the class repeat this process for the remaining tables.
 The TAs should walk around the classroom to assist students with the database upload.
 
 ### 3. Instructor Do: Aggregate Functions, Aliases, and Grouping (10 min)
+
+In this activity, students will learn how to use aggregate functions, aliases, and groupby operations to analyze data on a higher-level or aggregated perspective.
 
 Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_1) and review the following:
 
@@ -201,6 +207,8 @@ Answer any questions before moving on.
 
 ### 6. Instructor Do: Order By Aggregates (10 min)
 
+In this activity, students will learn how to sort (ascending or descending) their datasets by a specific column.
+
 **File:** [query.sql](Activities/04-Ins_Order_By/Solved/query.sql)
 
 Explain that aggregate functions return the results in a random order. This can be tough when trying to find the top or bottom numerical results.
@@ -269,6 +277,8 @@ Open pgAdmin and walk through the solution, highlighting the following:
 ---
 
 ### 10. Instructor Do: Introduction to Subqueries (10 min)
+
+In this activity, students will be introduced to the concept of subqueries to query the resulting dataset of another (nested) query.
 
 Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_60) to begin the discussion of subqueries. A **subquery** is nested inside a larger query.
 
@@ -416,15 +426,15 @@ Review the solution in pgAdmin and explain the following:
 
 ### 13. Instructor Do: Create Views (10 min)
 
-Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_83) to begin the discussion of views. A **view** in SQL is a virtual table that can be created from a single table, multiple tables, or another view.
+In this activity, students will learn how to create and utilize views, virtual tables that can be created from a single table, multiple tables, or another view.
 
 **File:** [query.sql](Activities/08-Ins_Create_Views/Solved/query.sql)
 
-This activity will be a pleasant interlude from some of the heavy lifting we have been doing in Postgres. It is not crucial, so feel free to tweak the length and content as you deem appropriate.
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_83) to begin the discussion of views.
 
 Tell students:
 
-* Up to this point, we have seen relatively long queries, especially when they involve joins and subqueries. 
+* Up to this point, we have seen relatively long queries, especially when they involve joins and subqueries.
 
 * There is a way to save a long query under a name and run that name as a shortcut.
 
@@ -525,6 +535,8 @@ Review the code in the solution file and explain the following:
 Ask if there are any questions before moving on.
 
 ### 16. Instructor Do: Revisit Subqueries (10 min)
+
+In this activity, students will gain further experience with more advanced subqueries.
 
 **Files**:
 
