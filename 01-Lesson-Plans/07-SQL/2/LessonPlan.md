@@ -12,7 +12,7 @@ By the end of today's class, students will be able to:
 
 * Create subqueries for further data exploration.
 
-* Create views and run subqueries off of them.
+* Create views and run subqueries on them.
 
 ### Instructor Notes
 
@@ -40,11 +40,11 @@ Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUf
 
 In this activity, instructors will help students prepare for today's lesson by importing the necessary data to their databases.
 
-**File:** [Resources](Activities/01-Evr_Import_Data/Resources/schema.sql)
+**File:** [schema.sql](Activities/01-Evr_Import_Data/Resources/schema.sql)
 
 Explain to the class that today's activities will require a few tables to be imported into a database.
 
-Compress the Resources folder and slack it out to the class. This folder contains everything students need in order to upload the data. The data is taken from the [sakila database](https://dev.mysql.com/doc/sakila/en/), which is a sample database used to learn MySQL.
+Slack out the SQL file to the class. The data is taken from the [sakila database](https://dev.mysql.com/doc/sakila/en/), which is a sample database used to learn MySQL.
 
 Together with the class, walk through the following steps:
 

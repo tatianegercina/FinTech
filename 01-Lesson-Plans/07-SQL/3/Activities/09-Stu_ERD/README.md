@@ -4,7 +4,7 @@ In this activity, you and your partner will continue designing an entity relatio
 
 ### Instructions
 
-* Using the starter code provided, return to [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) and transition your logical ERD physical ERD by creating the relationships between tables.
+* Using the [starter code](Unsolved/schema.txt) provided, return to [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) and transition your logical ERD physical ERD by creating the relationships between tables.
 
 * When you are satisfied with your ERD, export the diagram as a PostgreSQ file:
 
