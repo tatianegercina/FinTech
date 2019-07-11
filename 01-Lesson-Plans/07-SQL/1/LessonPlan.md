@@ -76,6 +76,8 @@ Slack out the following resources:
 
 ### 3. Instructor Do: Create a Database (5 min) (Critical)
 
+In this activity, the instructor walks students through the process of creating a database in PostgreSQL.
+
 Begin by verifying that everyone has successfully installed pgAdmin and PostgreSQL. Everyone should have completed this step prior to today's class.
 
 * Open pgAdmin in a new browser window and ensure that everyone is able to follow along and view their new server in the browser.
