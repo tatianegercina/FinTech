@@ -1,6 +1,6 @@
 ## A View with a Roomful of Queries
 
-In this activity, you will work with a partner to practice your join and subquery skills, as well as build out a view. 
+In this activity, you will work with a partner to practice your join and subquery skills, as well as build out a view.
 
 ### Instructions
 
