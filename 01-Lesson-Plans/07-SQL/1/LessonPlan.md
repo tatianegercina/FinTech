@@ -74,7 +74,7 @@ Slack out the following resources:
 
 * [SQL Installation Guides](../Supplemental/InstallationGuides) outlining how to install PostgreSQL and pgAdmin for either Mac or Windows (if not done already).
 
-### 3. Instructor Do: Create a Database (5 min) (Critical)
+### 3. Instructor Do: Create a Database (5 min)
 
 In this activity, the instructor walks students through the process of creating a database in PostgreSQL.
 
@@ -102,9 +102,9 @@ At this point, show students that there is a new database listed in the left-han
 
 Answer any questions before moving on.
 
-### 4. Instructor Do: Create a Table (10 min) (Critical)
+### 4. Instructor Do: Create a Table (10 min)
 
-In this activity, the instructor walks students through the process of creating and manipulating a table in PostgreSQL.
+In this activity, the instructor walks students through the process of creating a table and manipulating its contents in PostgreSQL.
 
 Now that there is a database on the server, it's time to dig into the real meat of SQL and start creating tables within the new database!
 
@@ -534,11 +534,32 @@ In today's class, each of the operations has been in use. Students have:
 
 * Created data in a table with the `INSERT` statement.
 
+  ```sql
+  INSERT INTO people (name, has_pet, pet_type, pet_name, pet_age)
+  VALUES ('Ahmed', true, 'rock', 'Rockington', 100);
+  ```
+
 * Read data with the use of `SELECT`.
+
+  ```sql
+  SELECT *
+  FROM people;
+  ```
 
 * Updated a table's data using `UPDATE`.
 
+  ```sql
+  UPDATE people
+  SET has_pet = true, pet_name = 'Rocket', pet_age = 8
+  WHERE id = 6;
+  ```
+
 * Deleted data using `DELETE`.
+
+  ```sql
+  DELETE FROM people
+  WHERE id = 3;
+  ```
 
 Introduce the class to an additional method of reading the data: wildcards. (Slides 12–13)
 
