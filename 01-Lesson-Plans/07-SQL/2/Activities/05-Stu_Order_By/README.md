@@ -1,8 +1,8 @@
-# Movies Ordered By
+## Movies Ordered By
 
 In this activity, you will use `ORDER BY` in combination with other SQL methods to query and order the tables.
 
-## Instructions
+### Instructions
 
 * Determine the count of actor first names ordered in descending order.
 
@@ -10,10 +10,10 @@ In this activity, you will use `ORDER BY` in combination with other SQL methods 
 
 * Determine the top 10 average replace costs for movies by their length.
 
-## Bonus
+### Bonus
 
 Using the city and country tables, determine the count of countries in descending order.
 
-- - - 
+--- 
 
 © 2019 Trilogy Education Services
