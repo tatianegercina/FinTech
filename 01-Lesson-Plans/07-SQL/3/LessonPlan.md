@@ -772,9 +772,9 @@ Slack out the link to the [checkpoint](https://docs.google.com/forms/d/1MENo4W02
 
 In this activity, students will take the short multiple-choice SQL assessment introduced in the previous activity.
 
-Let students know that checkpoints must be completed in class, not at home. This will allow you to find and help struggling students more effectively.
+* Let students know that checkpoints must be completed in class, not at home. This will allow you to find and help struggling students more effectively.
 
-It is essential for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about students "cheating" on checkpoints, but rather making sure that struggling students get the help they need.
+* It is essential for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about students "cheating" on checkpoints, but rather making sure that struggling students get the help they need.
 
 Consult your SSM to obtain checkpoint scores.
 
