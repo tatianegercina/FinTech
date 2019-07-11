@@ -22,7 +22,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* **Important:** [Instructions](../Supplemental/InstallationGuides) for installing PostgreSQL and pgAdmin should have already been slacked out prior to today's class as students need to install these before class to conserve time for activities and lessons rather than initial setup.
+* **Important:** [Instructions](../Supplemental/InstallationGuides) for installing PostgreSQL and pgAdmin should have already been slacked out prior to today's class as, students needed to install these before class to conserve time for lessons and activities rather than for initial setup.
 
 * Today's class will be challenging. In this lesson, a series of activities will introduce students to programming with SQL using PostgreSQL and pgAdmin. The pace of today's class will be quick as students absorb learning a new UI and programming language simultaneously.
 
