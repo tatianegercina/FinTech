@@ -20,7 +20,7 @@ Similar to coding with Python using Visual Studio Code, SQL requires a code edit
 
 * Go through the Setup Wizard and install PostgreSQL. The default location is: `/Library/PostgreSQL/11`.
 
-* Select the components to be installed. **Be sure to un-check `Stack Builder`.
+* Select the components to be installed. **Be sure to un-check `Stack Builder`.**
 
   ![postgres_components.png](../Images/stack_builder_mac.png)
 
