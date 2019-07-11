@@ -24,13 +24,9 @@ Today's workshop is an opportunity for students to review and practice technical
 
     * Explain that this is because excellent communication is one of the most sought-after traits interviewers screen for.
 
-* Choose a collection of interview questions for the workshop ahead of time. These are available in the [Interview Questions](../3-Interview-Qs) repository.
+* Review the interview questions for the workshop ahead of time. These are available in the [Interview Questions](../3-Interview-Qs) repository.
 
   * You will need one question for each 30 minute interview—partners will _not_ work on the same interview problems successively.
-
-  * This entails roughly 6 - 10 interview questions per workshop.
-
-  * Suggested "sets" of interview questions are available in the [Question Sets document](../2-Resources/QuestionSets.md).
 
 * Have your TAs reference the `Workshop Time Tracker` to help keep track of time.
 
@@ -80,11 +76,7 @@ After class, students should be able to:
 
   * Discussing the solution after implementation, including potential improvements; and
 
-* Remeber to emphasize the importance of interacting with the interviewer.
-
-* If you've covered this material in a previous interview workshop, feel free to skim or skip this section, so long as students have the guidelines and grading rubrics.
-
-  * In other words, feel free to abbreviate your verbal review, but _always_ slack out the resources—even if you have slacked them out before.
+* Remember to emphasize the importance of interacting with the interviewer.
 
 ### 2. Partners Do: First Partner Interviews (0:30)
 
