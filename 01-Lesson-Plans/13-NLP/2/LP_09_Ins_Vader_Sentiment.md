@@ -42,6 +42,10 @@ nltk.download('vader_lexicon')
 
 * Once the `vader_lexicon` is available the `SentimentIntensityAnalyzer()` can be initialized. [This class](https://www.nltk.org/_modules/nltk/sentiment/vader.html#SentimentIntensityAnalyzer) gets a sentiment intensity score to a sentence based on VADER.
 
+```python
+analyzer = SentimentIntensityAnalyzer()
+```
+
 * For this demo the `page_size` parameter is used on the `newsapi.get_everything()` method to define a page size of 100 articles.
 
 ```python
@@ -52,3 +56,6 @@ libra_headlines = newsapi.get_everything(
     sort_by="relevancy"
 )
 ```
+
+* The sentiment scores are retrieved on the for-loop that creates the DataFrame, in this way, we are taking advantage of the DataFrame creation to add to each row the VADER sentiment scores.
+  ![DataFrame creation including VADER sentiment scores](Images/vader_sentiment_df_creation.png)
