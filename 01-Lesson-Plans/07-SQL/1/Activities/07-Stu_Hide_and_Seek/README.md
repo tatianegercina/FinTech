@@ -1,8 +1,8 @@
-# Hide and Seek 
+## Hide and Seek 
 
 In this activity, you will create a new table and import data from a CSV file.
 
-## Instructions
+### Instructions
 
 1. Create a new table in the `Miscellaneous_DB` database called `wordassociation`.
 
@@ -14,7 +14,7 @@ In this activity, you will create a new table and import data from a CSV file.
 
 1. Create a query that searches for any rows that have `pie` in their `word1` or `word2` columns.
 
-## Bonus
+### Bonus
 
 * Import `WordAssociation_BC.csv` to the `wordassociation` table and research how to use the `SOURCE` statement.
 
@@ -22,6 +22,6 @@ In this activity, you will create a new table and import data from a CSV file.
 
 * Create a query that will collect all rows with a `source` of BC and an author range between 333 and 335.
 
-- - - 
+--- 
 
 © 2019 Trilogy Education Services

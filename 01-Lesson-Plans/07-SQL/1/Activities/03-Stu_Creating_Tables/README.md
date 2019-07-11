@@ -1,8 +1,8 @@
-# Creating Tables
+## Creating Tables
 
 In this activity, you will use pgAdmin to recreate and query a table based on image provided to you.
 
-## Instructions
+### Instructions
 
 1. Create a new database in pgAdmin named `city_info`.
 
@@ -16,7 +16,7 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 ![cities_only.png](Images/cities_only.png)
 
-## Bonus
+### Bonus
 
 1. Filter the table to view only cities in Arizona.
 
@@ -30,5 +30,6 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 * For the third bonus question, an [`AND` clause](https://www.tutorialspoint.com/sql/sql-and-or-clauses.htm) will also be necessary.
 
-- - -
+---
+
 © 2019 Trilogy Education Services

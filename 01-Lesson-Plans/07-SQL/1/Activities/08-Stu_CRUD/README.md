@@ -19,3 +19,7 @@ In this activity, you will be utilizing CRUD operations (Create, Read, Update, D
 ### Bonus
 
 After creating your new nation and some parts of your military strategy, add the average values you calculated to the appropriate columns in the newly created rows. Update their values in any way you wish!
+
+---
+
+© 2019 Trilogy Education Services
