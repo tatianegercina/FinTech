@@ -22,15 +22,15 @@ By the end of today's class, students will be able to:
 
 * The TAs should be ready to help explain and break down concepts for students struggling to grasp the material.
 
-* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx). 
+* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
 Welcome students and explain that today's lesson will dive into data modeling techniques such as normalization, relationships, and how to conceptualize database design using entity relationship diagrams (ERDs).
 
-Open the [Class Objectives slide](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g473a132ac1_0_7) and review the objectives for today's class. 
+Open the [Class Objectives slide](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g473a132ac1_0_7) and review the objectives for today's class.
 
 ### 2. Instructor Do: Data Normalization (15 min) (Critical)
 
@@ -52,9 +52,9 @@ Review the [slides on data normalization](https://docs.google.com/presentation/d
 
 * **Transitive dependency** is a column value's reliance on another column through a third column. The transitive property states that if X > Y and Y > Z, then we can infer that X > Z. Dependence means that one value relies on another, such as city on ZIP code, or age on birthday.
 
-* For example, let's say that a table has three columns: `StoreName`, `OwnerAddress`, and `OwnerName`.  
+* For example, let's say that a table has three columns: `StoreName`, `OwnerAddress`, and `OwnerName`.
 
-  * `OwnerName` and `OwnerAddress` rely on `StoreName`. `OwnerAddress` also depends on `OwnerName`. 
+  * `OwnerName` and `OwnerAddress` rely on `StoreName`. `OwnerAddress` also depends on `OwnerName`.
   
   * Therefore, `OwnerAddress` is transitively dependent on `StoreName` through `OwnerName`.
 
@@ -62,9 +62,9 @@ Review the [slides on data normalization](https://docs.google.com/presentation/d
 
 * In the previous example, two tables are created: 
 
-  * The Owners table has the `OwnerName` and `OwnerAddress`, both of which depend only on the `owner_id`. 
+  * The Owners table has the `OwnerName` and `OwnerAddress`, both of which depend only on the `owner_id`.
   
-  * The Stores table contains the `store_name`, which is dependent on the primary key `store_id`. 
+  * The Stores table contains the `store_name`, which is dependent on the primary key `store_id`.
   
   * The Stores table also contains an `owner_id` that creates a relationship with the Owners table.
 
@@ -297,7 +297,7 @@ Next, discuss one-to-many relationships. We'll continue with our Simpsons exampl
 
 * As before, one Social Security number is unique to one individual.
 
-Discuss one-to-many relationships. 
+Discuss one-to-many relationships.
 
 * Each individual has one address; however, a single address can be shared between multiple individuals. The Simpson family has a shared address at `742 Evergreen Terrace`, while Sherlock and Watson share the `221B Baker Street` address.
 
@@ -309,7 +309,7 @@ Ask students to think of another example of real-life one-to-many relationships.
 
 * A customer might be associated with multiple orders, but each order is associated with one and only one customer.
 
-Discuss many-to-many relationships. 
+Discuss many-to-many relationships.
 
 * Continuing with our Simpsons example, there are three children (Lisa, Bart, and Maggie), and two parents (Homer and Marge).
 
@@ -325,7 +325,7 @@ Discuss many-to-many relationships.
 
 Ask the class what many-to-many relationships might be found in an online retailer database such as Amazon's: A customer can order many different items, and many different customers can order each item.
 
-Demonstrate the creation of a junction table in Postgres. 
+Demonstrate the creation of a junction table in Postgres.
 
 * First, open [schema.sql](Activities/05-Ins_Data_Relationships/Solved/schema.sql) and paste in the queries to create and insert into the `children` and `parents` tables. There are two separate tables:
 
@@ -347,7 +347,7 @@ Now walk through the junction table schema:
 
 * The `child_id` and `parent_id` columns are both linked to the previously created tables as foreign keys.
 
-* Additionally, the primary key in this table is a **composite key**, made up of both the `child_id` and `parent_id` keys. 
+* Additionally, the primary key in this table is a **composite key**, made up of both the `child_id` and `parent_id` keys.
 
 * This means that the unique identifier for a row is not a single column, but rather the composite of both columns.
 
@@ -379,7 +379,7 @@ Take a moment to summarize the major points of the activity:
 
 * Junction tables use foreign keys to reference the keys in the original tables.
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
 ### 9. Student Do: Data Relationships (15 min)
 
@@ -409,7 +409,7 @@ Paste in the schemata for the `students` and `courses` tables and explain the fo
 
   ![Images/modeling06.png](Images/modeling06.png)
 
-Next, do the same for the junction table, named `student_courses_junction`, and explain the code. 
+Next, do the same for the junction table, named `student_courses_junction`, and explain the code.
 
   ```sql
   -- Create a junction table.
@@ -454,11 +454,11 @@ For the bonus, briefly explain that two outer joins can be performed to retrieve
 
   ![Images/modelingfpng](Images/modeling08.png)
 
-- - -
+---
 
 ### 11. BREAK (40 min)
 
-- - -
+---
 
 ### 12. Instructor Do: Entity Relationship Diagrams (15 min)
 
@@ -766,12 +766,12 @@ Slack out the link to the [checkpoint](https://docs.google.com/forms/d/1MENo4W02
 
 Let students know that checkpoints must be completed in class, not at home. This will allow you to find and help struggling students more effectively.
 
-It is essential for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about students "cheating" on checkpoints, but rather making sure that struggling students get the help they need. 
+It is essential for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about students "cheating" on checkpoints, but rather making sure that struggling students get the help they need.
 
 Consult your SSM to obtain checkpoint scores.
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services
