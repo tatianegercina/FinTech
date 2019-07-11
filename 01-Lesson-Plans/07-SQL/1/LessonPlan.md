@@ -46,7 +46,7 @@ Open the slideshow and overview the learning outcomes, class objectives, and a b
 
 * SQL allows us connect to a database and store, manipulate, and analyze the (often large amounts of) data within.
 
-* As companies continue to store data and leverage the insights derived from data analysis, SQL developers continue to be in high demand. Therefore, SQL is also an economically valuable skill.
+* As companies continue to store data and leverage the insights derived from data analysis, SQL programmers continue to be in high demand. Therefore, SQL is also an economically valuable skill.
 
 ---
 
@@ -58,7 +58,7 @@ In this activity, instructors introduce students to the definitions and use case
 
 Open the slideshow and take some time to go over the purpose of SQL, PostgreSQL, and pgAdmin:
 
-* SQL (often pronounced "sequel") stands for Structured Query Language. It is a powerful database query tool designed to allow developers to create, populate, manipulate, and access databases, as well as provide developers with the ability to leverage scalable server-side storage for large volumes of data.
+* SQL (often pronounced "sequel") stands for Structured Query Language. It is a powerful programming tool designed to allow programmers to create, populate, manipulate, and access databases, as well as provide the ability to leverage scalable server-side storage for large volumes of data.
 
 * With SQL, data is stored in tables on the server, much like spreadsheets you would create in Microsoft Excel. This makes the data easy to visualize and search.
 
