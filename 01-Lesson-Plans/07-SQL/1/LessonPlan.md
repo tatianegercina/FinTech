@@ -68,7 +68,7 @@ Slack out the following resources:
 
 * [SQL Reference Guide](../Supplemental/SQL_reference_guide.pdf) for students to use as a reference during the activities this week.
 
-* [SQL Installation Guides](../Supplemental/InstallationGuides) outlining how to install PostgreSQL and pgAdmin for either Mac or Windows.
+* [SQL Installation Guides](../Supplemental/InstallationGuides) outlining how to install PostgreSQL and pgAdmin for either Mac or Windows (if not done already).
 
 ### 3. Instructor Do: Create a Database (5 min) (Critical)
 
