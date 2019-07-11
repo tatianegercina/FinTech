@@ -306,7 +306,7 @@ Walk through the solution to the third and final bonus question.
 
 Answer any questions before moving on.
 
-### 7. Instructor Do: The Value of Unique Values (5 min) (High)
+### 7. Instructor Do: The Value of Unique Values (5 min)
 
 In this activity, students are introduced to the concept of duplicate and unique values, and how to properly remove duplicate records through the use of unique identifiers.
 
