@@ -2,7 +2,7 @@
 
 ### Overview
 
-In today's class, students will be introduced to SQL databases and will learn how to create tables and simple queries.
+In today's class, students are introduced to SQL databases and will learn how to create databases, tables, and simple data queries.
 
 ### Class Objectives
 
