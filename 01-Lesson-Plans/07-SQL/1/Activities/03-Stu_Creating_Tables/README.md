@@ -10,19 +10,19 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 3. Insert data into the new table. The result should match the following image.
 
-![cities_table.png](Images/cities_table.png)
+    ![cities_table.png](Images/cities_table.png)
 
 4. Query the table to recreate the following image.
 
-![cities_only.png](Images/cities_only.png)
+    ![cities_only.png](Images/cities_only.png)
 
 ### Bonus
 
 1. Filter the table to view only cities in Arizona.
 
-1. Filter the table to view only cities with a population of less than 100,000.
+2. Filter the table to view only cities with a population of less than 100,000.
 
-1. Filter the table to view California cities with a population of less than 100,000.
+3. Filter the table to view California cities with a population of less than 100,000.
 
 ### Hints
 

@@ -52,13 +52,13 @@ Open the slideshow and overview the learning outcomes, class objectives, and a b
 
 ### 2. Instructor Do: Introduction to SQL (5 min)
 
-In this activity, instructors introduce students to the definitions and use cases of SQL, PostgreSQL, and pgAdmin.
+In this activity, instructors introduce students to PostgreSQL and pgAdmin, a database management language and GUI, respectively.
 
-**File:** [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g480f0dd0a7_0_1809)
+**File:** [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g480f0dd0a7_0_19)
 
-Open the slideshow and take some time to go over the purpose of SQL, PostgreSQL, and pgAdmin:
+Open the slideshow and take some time to go over the purpose of PostgreSQL and pgAdmin:
 
-* SQL (often pronounced "sequel") stands for Structured Query Language. It is a powerful programming tool designed to allow programmers to create, populate, manipulate, and access databases, as well as provide the ability to leverage scalable server-side storage for large volumes of data.
+* SQL (often pronounced "sequel") stands for Structured Query Language. It is a powerful programming language designed to allow programmers to create, populate, manipulate, and access databases, as well as provide the ability to leverage scalable server-side storage for large volumes of data.
 
 * With SQL, data is stored in tables on the server, much like spreadsheets you would create in Microsoft Excel. This makes the data easy to visualize and search.
 
@@ -227,7 +227,7 @@ In this activity, students will use pgAdmin to recreate and query a table from a
 
 **File:** [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql)
 
-Create a new database named `city_info` in pgAdmin. Then use the query tool to copy and paste, or live code, the solution from [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql). 
+Create a new database named `city_info` in pgAdmin. Then use the query tool to copy and paste, or live code, the solution from [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql).
 
 * To create a new table, specify the data type for each column.
 
