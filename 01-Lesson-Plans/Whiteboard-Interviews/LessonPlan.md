@@ -2,31 +2,24 @@
 
 ### Overview
 
-Today's workshop is an opportunity for students to review and practice technical interview guidelines in a peer review setting.
+Today's workshop is an opportunity for students to review and practice technical interview guidelines in a peer review setting. Instructors will kick off each workshop with an overview of problem-solving strategies and an overview of how to use the discussion guidelines, and then allow students to run their own peer-interviews for the rest of class.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Exercise methods for problem-solving strategies.
+* Verbalize and exercise methods for problem-solving strategies.
 * Map out the guidelines on effectively articulating their problem solving process.
 * Gain experience from practicing the aforementioned strategies and guidelines.
+* Reflect on their shortcomings and devise improvements to the solutions they develop.
 
-#### Instructor Priorities
+### Instructor Notes
 
-* Students should systematically apply the problem solving guidelines with each problem.
+* Students should honestly evaluate their partners' performance as well as their own performance via the the [grading rubric]().
 
-  * They can deviate once they've internalized the format, but _not_ before.
+* Students should systematically apply the problem solving guidelines with each problem; they can deviate once they've internalized the format, but *not* before.
 
-* Students should honestly evaluate their partners' performance on the grading rubric.
-
-  * Students may wish to self-evaluate, as well.
-
-##### Instructor Notes
-
-Instructors will kick off each workshop with an overview of problem-solving strategies and an overview of how to use the discussion guidelines, and then allow students to run their own peer-interviews for the rest of class.
-
-Since the only difference between workshops is the selection of interview questions, Instructors are provided a single Time Tracker and abbreviated Lesson Plan.
+* Since the only difference between workshops is the selection of interview questions, Instructors are provided a single Time Tracker and abbreviated Lesson Plan.
 
 * Emphasize that the purpose of these workshops is not primarily to find the correct answer to these questions.
 
@@ -36,9 +29,7 @@ Since the only difference between workshops is the selection of interview questi
 
     * Explain that this is because excellent communication is one of the most sought-after traits interviewers screen for.
 
-* Review the interview questions for the workshop ahead of time. These are available in the [Interview Questions](../3-Interview-Qs) repository.
-
-  * You will need one question for each 30 minute interview—partners will _not_ work on the same interview problems successively.
+* Review the interview questions for the workshop ahead of time. These are available in the [Interview Questions](../3-Interview-Qs) repository. You will need one question for each 30 minute interview—partners will _not_ work on the same interview problems successively.
 
 * Have your TAs reference the `Workshop Time Tracker` to help keep track of time.
 
@@ -46,21 +37,11 @@ Since the only difference between workshops is the selection of interview questi
 
   * Each student has 25 minutes to work through a problem. Once the 25 minutes is up, students switch. They have 5 minutes to review feedback with one another before rotating pairs or interview questions.
 
-- - -
+---
 
-### Class Objectives
+### 1. Instructor Do: Welcome Class
 
-After class, students should be able to:
-
-* Verbalize programming problems before they solve them;
-
-* Explain their approach to solving problems;
-
-* Identify and articulate assumptions they make about problems they work on; and
-
-* Discuss shortcomings and improvements they might make to solutions they develop.
-
-- - -
+---
 
 ### 1. Instructor Do: Introduce and Review Problem Solving Guidelines (0:15)
 
