@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's workshop is an opportunity for students to review and practice technical interview guidelines in a peer review setting. 
+Today's workshop is an opportunity for students to review and practice technical interview guidelines in a peer review setting.
 
 ### Class Objectives
 
@@ -67,7 +67,7 @@ Welcome students to the class and explain that they will be reviewing and practi
 
 * Remember to emphasize the importance of interacting with the interviewer.
 
-### 3. Partners Do: First Partner Interviews (0:30)
+### 3. Student Do: First Partner Interviews (0:30)
 
 * Break students into pairs. They can work with seatmates to start, as they'll rotate throughout class.
 
@@ -89,7 +89,7 @@ Welcome students to the class and explain that they will be reviewing and practi
 
     * Explain that they will be free to work in a more "freeform" manner when they've internalized this basic approach.
 
-### 4. Partners Do: Second Partner Interviews (0:30)
+### 4. Student Do: Second Partner Interviews (0:30)
 
 * After 25 minutes, instruct partners to swap roles, such that the interviewee now plays the role of interviewer, and vice versa.
 
@@ -101,7 +101,7 @@ Welcome students to the class and explain that they will be reviewing and practi
 
 * Again, emphasize the importance of implementing the problem solving guidelines to a tee.
 
-### 5. Partners Do: Trade Feedback (0:05)
+### 5. Student Do: Trade Feedback (0:05)
 
 * After 20 minutes, have students trade rubrics and discuss each others' performance.
 
@@ -113,7 +113,7 @@ Welcome students to the class and explain that they will be reviewing and practi
 
 * Encourage students to avoid discussing the solutions at this stage; the important piece is not the answers, but how well students communicated their thought processes.
 
-### 6. Partners Do: Repeat (Remainder)
+### 6. Student Do: Repeat (Remainder)
 
 * Allow 2 minutes for groups to switch partners, so that each individual works with a new classmate.
 
