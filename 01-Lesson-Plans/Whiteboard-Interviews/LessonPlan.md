@@ -31,6 +31,8 @@ By the end of class, students will be able to:
 
 Welcome students to the class and explain that they will be reviewing and practicing technical interview guidelines in a mock peer review setting.
 
+**File:** [slideshow-placeholder]()
+
 * Students will overview the problem-solving strategies and as well as the discussion guidelines, and then run their own peer-interviews for the rest of class.
 
 * For the mock peer review sessions, each student will have 25 minutes to work through a problem. Once the 25 minutes is up, students will switch. They have 5 minutes to review feedback with one another before rotating pairs or interview questions.
@@ -40,6 +42,10 @@ Welcome students to the class and explain that they will be reviewing and practi
 ---
 
 ### 2. Instructor Do: Introduce and Review Problem Solving Guidelines (0:15)
+
+In this activity, instructors will introduce the problem solving guidelines that will aid students in effectively performing in a technical interview.
+
+**File:** [slideshow-placeholder]()
 
 * Slack out the [Peer Interview Grading Rubric](../2-Resources/PeerTechnicalInterviewRubric.xlsx)
 
