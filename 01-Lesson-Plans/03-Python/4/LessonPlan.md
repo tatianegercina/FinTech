@@ -6,9 +6,9 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 ### Instructor Notes
 
-* Today's class will consist of Python code drills and review activities. Code drills are a simple way to build muscle memory and give students a chance to practice the fundamentals of programming in Python on simple problems. Many of the code drills may seem trivial to some students, but the drills will help them become fluent in both syntax and basic problem solving.
+* Today's class will consist of Python code drills and review activities. Code drills are a simple way to build muscle memory and give students a chance to practice the fundamentals of programming in Python. Many of the code drills may seem trivial to some students, but the drills will help them become fluent in both syntax and basic problem solving.
 
-* Code drills range in complexity and pace, so the time allotted to each section of activities should be fluid to allow each student to work through the problems at their own pace. You may find it helpful to review certain drills or activities with the entire class, but the majority of the time will likely be best served rotating between groups of students to help them with any issues that they are having. This is also a good time to see how they are feeling about Python in general and to give them some words of encouragement.
+* Code drills range in complexity and pace, so the time allotted to each section of activities should be fluid to allow each student to work through the problems at their own pace. You may find it helpful to review certain drills or activities with the entire class, but the majority of the time will likely be best served by rotating between groups of students to help them with any issues that they are having. This is also a good time to see how they are feeling about Python in general and to give them some words of encouragement.
 
 * You may be able to challenge students with "code drill races" where they pair off and race each other to complete a set of drills. Use this cautiously so that you don't overwhelm a beginner programmer.
 
@@ -26,14 +26,13 @@ Explain code drills to students:
 
 * They key to learning to code is simply to code. Building strong daily coding habits will actually help build muscle memory that makes process of typing code and remembering syntax easier.
 
-* The goal is to practice coding in Python to the point where all of the syntax of the language just falls to the subconscious. This allows you to use your mental power on problem solving not not on basic things like how to type a list.
+* The goal is to practice coding in Python to the point where all of the syntax of the language just falls to the subconscious. This allows you to use your mental power on problem solving and not on basic things like how to type a list or dictionary.
 
 * Code drills are a way to help build that muscle memory. They are designed to provide basic practice with coding. The problems range from simple to complex, and they force you to focus on the fundamentals of the language.
 
 Explain to students that they will be give all of the code drills at once and can work through them at their own pace. Meanwhile, the Instructor and TAs will be rotating around to answer any specific questions that they have.
 
 Encourage students to try and complete the simple code drills from memory as much as possible (Googling answers as needed).
-
 
 ### 2. Students Do: Code Drills (Remaining Class Time)
 
@@ -42,3 +41,11 @@ Students will be given the remaining class time to work through the code drills 
 **Code Drills:**
 
 * [Code Drills](Activities/)
+
+- - -
+
+### End Class
+
+- - -
+
+© 2019 Trilogy Education Services
