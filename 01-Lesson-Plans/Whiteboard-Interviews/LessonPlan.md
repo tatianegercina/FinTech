@@ -1,7 +1,5 @@
 ## Whiteboard Interviews Lesson Plan - Practice Makes Perfect!
 
----
-
 ### Overview
 
 Today's workshop is an opportunity for students to review and practice technical interview guidelines in a peer review setting.
