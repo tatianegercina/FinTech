@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's workshop is an opportunity for students to review and practice technical interview guidelines in a peer review setting. Instructors will kick off each workshop with an overview of problem-solving strategies and an overview of how to use the discussion guidelines, and then allow students to run their own peer-interviews for the rest of class.
+Today's workshop is an opportunity for students to review and practice technical interview guidelines in a peer review setting. 
 
 ### Class Objectives
 
@@ -21,29 +21,25 @@ By the end of class, students will be able to:
 
 * Since the only difference between workshops is the selection of interview questions, Instructors are provided a single Time Tracker and abbreviated Lesson Plan.
 
-* Emphasize that the purpose of these workshops is not primarily to find the correct answer to these questions.
-
-  * Rather, it is to train students to take the right _approach_ to problem solving.
-
-  * Emphasize that, at this stage, following the guidelines matters more than finding the correct solution.
-
-    * Explain that this is because excellent communication is one of the most sought-after traits interviewers screen for.
-
 * Review the interview questions for the workshop ahead of time. These are available in the [Interview Questions](../3-Interview-Qs) repository. You will need one question for each 30 minute interview—partners will _not_ work on the same interview problems successively.
 
-* Have your TAs reference the `Workshop Time Tracker` to help keep track of time.
-
-  * More important than the Time Tracker is that students have adequate time to work through interview problems.
-
-  * Each student has 25 minutes to work through a problem. Once the 25 minutes is up, students switch. They have 5 minutes to review feedback with one another before rotating pairs or interview questions.
+* Have your TAs reference the `Workshop Time Tracker` to help keep track of time; more important than the Time Tracker is that students have adequate time to work through interview problems.
 
 ---
 
-### 1. Instructor Do: Welcome Class
+### 1. Instructor Do: Welcome Class (5 mins)
+
+Welcome students to the class and explain that they will be reviewing and practicing technical interview guidelines in a mock peer review setting.
+
+* Students will overview the problem-solving strategies and as well as the discussion guidelines, and then run their own peer-interviews for the rest of class.
+
+* For the mock peer review sessions, each student will have 25 minutes to work through a problem. Once the 25 minutes is up, students will switch. They have 5 minutes to review feedback with one another before rotating pairs or interview questions.
+
+* Emphasize that the purpose of these workshops is not primarily to find the correct answer to these questions. Rather, it is to train students to take the right _approach_ to problem solving. At this stage, following the guidelines matters more than finding the correct solution. This is because excellent communication is one of the most sought-after traits interviewers screen for.
 
 ---
 
-### 1. Instructor Do: Introduce and Review Problem Solving Guidelines (0:15)
+### 2. Instructor Do: Introduce and Review Problem Solving Guidelines (0:15)
 
 * Slack out the [Peer Interview Grading Rubric](../2-Resources/PeerTechnicalInterviewRubric.xlsx)
 
@@ -71,7 +67,7 @@ By the end of class, students will be able to:
 
 * Remember to emphasize the importance of interacting with the interviewer.
 
-### 2. Partners Do: First Partner Interviews (0:30)
+### 3. Partners Do: First Partner Interviews (0:30)
 
 * Break students into pairs. They can work with seatmates to start, as they'll rotate throughout class.
 
@@ -93,7 +89,7 @@ By the end of class, students will be able to:
 
     * Explain that they will be free to work in a more "freeform" manner when they've internalized this basic approach.
 
-### 3. Partners Do: Second Partner Interviews (0:30)
+### 4. Partners Do: Second Partner Interviews (0:30)
 
 * After 25 minutes, instruct partners to swap roles, such that the interviewee now plays the role of interviewer, and vice versa.
 
@@ -105,7 +101,7 @@ By the end of class, students will be able to:
 
 * Again, emphasize the importance of implementing the problem solving guidelines to a tee.
 
-### 4. Partners Do: Trade Feedback (0:05)
+### 5. Partners Do: Trade Feedback (0:05)
 
 * After 20 minutes, have students trade rubrics and discuss each others' performance.
 
@@ -117,7 +113,7 @@ By the end of class, students will be able to:
 
 * Encourage students to avoid discussing the solutions at this stage; the important piece is not the answers, but how well students communicated their thought processes.
 
-### 5. Partners Do: Repeat (Remainder)
+### 6. Partners Do: Repeat (Remainder)
 
 * Allow 2 minutes for groups to switch partners, so that each individual works with a new classmate.
 
@@ -133,7 +129,7 @@ By the end of class, students will be able to:
 
     * Alternatively, work through a problem with the class as a whole.
 
-### 6. Conclusion (0:00)
+### 7. Conclusion (0:00)
 
 * Slack out the solutions for each interview question students worked on today for later review.
 
