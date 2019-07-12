@@ -30,7 +30,9 @@ Once you finished the function do the following:
 
 * Use the `create_df()` function to create a DataFrame for the English news and another for the Spanish news.
 * Concatenate both DataFrames having the English news at the top and the Spanish news at the bottom.
-* Save tha final DataFrame as a CSV file for further analysis n the forthcoming activities.
+* Save the final DataFrame as a CSV file for further analysis on the forthcoming activities.
+* In order to preserve special characters, especially those in Spanish, it's important to save the CSV using the `encoding='utf-8-sig'` parameter.
 
 Your final DataFrame should look like this:
+
 ![Final news DataFrame example](../../Images/crisis_news_df.png)

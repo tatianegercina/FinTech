@@ -65,6 +65,11 @@ crisis_es_df = create_df(crisis_news_es["articles"], "es")
 crisis_df = pd.concat([crisis_en_df, crisis_es_df])
 ```
 
-Finally the head an tail of the DataFrame is shown and it's saved as a CSV file for further usage on the next activities.
+Finally the head an tail of the DataFrame is shown and it's saved as a CSV file for further usage on the next activities, warn students that is important to use the `encoding='utf-8-sig'` parameter when saving the file to preserve special characters, especially in Spanish, on the CSV file.
+
+```python
+file_path = Path("Data/crisis_news_en_es.csv")
+crisis_df.to_csv(file_path, index=False, encoding='utf-8-sig')
+```
 
 Answer any additional question before moving to the next activity.
