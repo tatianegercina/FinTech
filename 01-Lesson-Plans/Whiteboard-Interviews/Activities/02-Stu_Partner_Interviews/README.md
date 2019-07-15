@@ -2,7 +2,7 @@
 
 Each interview problem in the [Interview Questions README](../README.md) has its own README, replete with **Prompts** and notes specific to the problem.
 
-Because all candidates are different people, who think and express themselves differently, it's impossible to proide a "canonical" or "exemplary response" for each interview question. Strong candidates might discuss problems in compelling ways such "reference" answers wouldn't anticipate, so there is always a certain element of subjectivity in evaluating how well a candidate has done. Remember—this is ultimately an _organic_ discussion between you and your candidate. Use the README to supplement that discussion, but don't be afraid to ignore or add to the prompts and hints.
+Because all candidates are different people, who think and express themselves differently, it's impossible to provide a "canonical" or "exemplary response" for each interview question. Strong candidates might discuss problems in compelling ways such "reference" answers wouldn't anticipate, so there is always a certain element of subjectivity in evaluating how well a candidate has done. Remember—this is ultimately an _organic_ discussion between you and your candidate. Use the README to supplement that discussion, but don't be afraid to ignore or add to the prompts and hints.
 
 ## How to Use the READMEs
 
@@ -30,7 +30,7 @@ Because all candidates are different people, who think and express themselves di
 
   * Candidates should also be in the habit of asking the interviewer if their solution sketch is "on the right track" before they start implementing. Remind them to do this if they forget to do this.
 
-* In the best case, candidates won't need _any_ prompts. 
+* In the best case, candidates won't need _any_ prompts.
 
   * Don't penalize candidates if they need prompts but use the information well. But, do reward them if they do _not_ need the prompts.
 
