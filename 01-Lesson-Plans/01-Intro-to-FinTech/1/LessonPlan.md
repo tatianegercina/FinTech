@@ -62,7 +62,7 @@ As you and the TAs introduce yourself, feel free to include the topics below. Ho
 
 ---
 
-### 2. Instructor Do: Defining Fintech (20 min)
+### 2. Instructor Do: Defining FinTech (20 min)
 
 In this section, you will discuss the concept of FinTech as well as provide some information about the industry.
 
