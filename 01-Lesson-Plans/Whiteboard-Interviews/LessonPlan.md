@@ -146,32 +146,38 @@ In this activity, students will exchange interview feedback with their partners 
 
   * What their partners should focus on improving during their next interview.
 
-* Students de-prioritize discussing the specific coding solutions at this stage; the important piece is not the answers, but how well students communicated their thought processes.
+* Students should de-prioritize discussing the specific coding solutions at this stage; the important piece is not the answers, but how well students communicated their thought processes.
 
 ---
 
 ### 7. Student Do: Repeat (Remainder)
 
-In this activity, students break off into new pairs and repeat the procedures outlined in activities 3-5 for the remainder of the class.
+In this activity, students break off into new pairs and repeat the procedures outlined in activities 4-6 for the remainder of the class.
 
-* Allow 2 minutes for groups to switch partners, so that each individual works with a new classmate.
+* Instructors should allow 2 minutes for students to find new partners, so that each individual works with a new classmate. This can be as simple as one partner shifting seats to the left, and one shifting seats to the right.
 
-  * This can be as simple as one partner shifting seats to the left, and one shifting seats to the right.
+* Repeat the procedure outlined in activities **4** through **6** for the remainder of class.
 
-* Repeat the procedure outlined in sections **2** through **4** for the remainder of class.
+* If the final interview round is expected to run past the end of class, instructors have two choices to account for timing constraints:
 
-* If the final interview round would run over the end of class, you have two choices:
+  1. Adjust the time allocations for the final round of interviews to fit within the remainder of class. For example, two 15 minute sessions for each student in their respective pairs.
 
-  * Adjust the time allotments for the final round of interviews to fit class necessary—two 15 minute sessions is acceptable, for instance.
-
-  * Swap roles. Have students choose a question for you to work on, and verbalize your problem solving strategy for them.
-
-    * Alternatively, work through a problem with the class as a whole.
+  2. Perform a live walkthrough of a sample interview problem with the class as a whole, allowing students to witness the technical interviewing skills of a veteran instructor.
 
 ---
 
-### 8. Conclusion (0:00)
+### 8. Review and Reflect (5 mins)
 
-* Slack out the solutions for each interview question students worked on today for later review.
+In this activity, instructors end the class with a review/discussion regarding students' technical interviews.
 
-  * Emphasize that the solutions are of secondary importance to adequate communication.
+Facilitate student reflection by asking the students questions like:
+
+* How did they feel during their mock interviews? Why did they feel that way?
+
+* Did the problem-solving methodologies help their interviewing performances?
+
+* What could they have done better in the future?
+
+* Do they feel more confident now that they've had some technical interview practice?
+
+Then, slack out the coding solutions for each interview question to the students for future reference.
