@@ -52,7 +52,7 @@ In this activity, instructors will introduce the problem solving guidelines that
 
 Open the slideshow and explain the following:
 
-* Students will use the methodologies outlined in the [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to impress upon a technical interviewer that they are **strong problem solvers.** Specifically, students will use the following technical interview methodologies:
+* Students will use the methodologies outlined in the [problem solving guidelines document](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to impress upon a technical interviewer that they are **strong problem solvers.** Specifically, students will use the following technical interview methodologies:
 
   * Restate/explain the problem with a **concrete example.**
   * Sketch the solution on a high-level (ex. psuedocode).
@@ -85,7 +85,7 @@ Open the slideshow and explain the following:
 
 * After each pair of students has gone through the full interview process (acted as both interviewer/interviewee and discussed feedback), students will break off into new pairs and repeat the process until the end of the class.
 
-Then slack out the [Peer Interview Grading Rubric](Activities/02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xlsx) and explain the following:
+Then slack out the [peer interview grading rubric](Activities/02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xlsx) and explain the following:
 
 * The rubric will be used by interviewers to assess their corresponding partner's interview performances.
 
