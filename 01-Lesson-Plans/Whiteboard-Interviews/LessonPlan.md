@@ -21,7 +21,7 @@ By the end of class, students will be able to:
 
 * Since the only difference between workshops is the selection of interview questions, Instructors are provided a single Time Tracker and abbreviated Lesson Plan.
 
-* Review the interview questions for the workshop ahead of time. These are available in the [Interview Questions](../3-Interview-Qs) repository. You will need one question for each 30 minute interview—partners will _not_ work on the same interview problems successively.
+* Review the interview questions for the workshop ahead of time. These are available in the [Interview Questions](../3-Interview-Qs) repository. You will need one question for each 30 minute interview—partners will *not* work on the same interview problems successively.
 
 * Have your TAs reference the `Workshop Time Tracker` to help keep track of time; more important than the Time Tracker is that students have adequate time to work through interview problems.
 
@@ -29,7 +29,7 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 mins)
 
-Welcome students to the class and explain that they will be reviewing and practicing technical interview guidelines in a mock peer review setting.
+In this activity, instructors welcome students to the class and explain that they will be reviewing and practicing technical interview guidelines in a mock peer review setting.
 
 **File:** [slideshow-placeholder]()
 
@@ -37,19 +37,23 @@ Welcome students to the class and explain that they will be reviewing and practi
 
 * For the mock peer review sessions, each student will have 25 minutes to work through a problem. Once the 25 minutes is up, students will switch. They have 5 minutes to review feedback with one another before rotating pairs or interview questions.
 
-* Emphasize that the purpose of these workshops is not primarily to find the correct answer to these questions. Rather, it is to train students to take the right _approach_ to problem solving. At this stage, following the guidelines matters more than finding the correct solution. This is because excellent communication is one of the most sought-after traits interviewers screen for.
+* Emphasize that the purpose of these workshops is not primarily to find the correct answer to these questions. Rather, it is to train students to take the right *approach* to problem solving. At this stage, following the guidelines matters more than finding the correct solution. This is because excellent communication is one of the most sought-after traits interviewers screen for.
 
 ---
 
 ### 2. Instructor Do: Introduce and Review Problem Solving Guidelines (0:15)
 
-In this activity, instructors will introduce the problem solving guidelines that will aid students in effectively performing a technical interview.
+In this activity, instructors will introduce the problem solving guidelines that will aid students in effectively performing in a technical interview.
 
-**File:** [slideshow-placeholder]()
+**Files:**
+
+* [slideshow-placeholder]()
+
+* [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx)
+
+* [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf)
 
 * Slack out the [Peer Interview Grading Rubric](../2-Resources/PeerTechnicalInterviewRubric.xlsx)
-
-* Slack out the `NotesToTheInterviewer`
 
 * Slack out the [Problem Solving Guidelines](../2-Resources/TechnicalInterviewGuidelines.pdf), and open them yourself.
 
@@ -76,6 +80,8 @@ In this activity, instructors will introduce the problem solving guidelines that
 ### 3. Student Do: First Partner Interviews (0:30)
 
 In this activity, students will pair off with each other to perform mock interviews, with one student as the interviewer and the other as the interviewee.
+
+* Slack out the `NotesToTheInterviewer`
 
 * Break students into pairs. They can work with seatmates to start, as they'll rotate throughout class.
 
