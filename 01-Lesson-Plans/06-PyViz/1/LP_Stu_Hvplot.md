@@ -26,20 +26,24 @@ Open the solution, and conduct a dry walkthrough of the solution while explainin
 
 * The hvplot library can be used to create interactive plot visualizations.
 
-* hvplot has attributes that can be used to explicitly create line and bar plots. Otherwise, the `hvplot` function can be used.
+* hvplot has attributes that can be used to explicitly create line and bar plots. If an explicit declaration is not desired, the `hvplot` function can be used.
 
   ```python
   # Plot a hvplot bar chart of the top 20 market cap companies
   top_20_market_cap.hvplot()
   top_20_market_cap.hvplot.line(title='Top 20 Market Cap Companies (in billions)')
-  top_20_market_cap.hvplot.line(title='Top 20 Market Cap Companies (in billions)')
+  top_20_market_cap.hvplot.bar(title='Top 20 Market Cap Companies (in billions)')
   ```
 
-If time remains, transition into a small review session. Ask the following questions:
+  ![hvplot_plot.png](Images/hvplot_plot.png)
+
+  ![hvplot_bar_market_cap.png](Images/hvplot_bar_market_cap.png)
+
+If time remains, transition into a small review session. Ask the following guided questions:
 
 * How do hvplots differ from Panads/Matplotlib?
 
-  * **Anwer** hvplot visualizations are interactive rather than static. THey also come equipped with widgets that allow users to manage how they want to interact with the data.
+  * **Answer** hvplot visualizations are interactive rather than static. THey also come equipped with widgets that allow users to manage how they want to interact with the data.
 
 * What are example ways in which a user can interact with an hvplot visualization?
 
