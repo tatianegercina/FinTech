@@ -21,7 +21,7 @@ By the end of class, students will be able to:
 
 * Since the only difference between workshops is the selection of interview questions, Instructors are provided a single Time Tracker and abbreviated Lesson Plan.
 
-* Review the interview questions for the workshop ahead of time. These are available in the [Interview Questions](../3-Interview-Qs) repository. You will need one question for each 30 minute interview—partners will *not* work on the same interview problems successively.
+* Review the interview questions for the workshop ahead of time. These are available in the [Interview Questions](../3-Interview-Qs) repository. You will need one question for each 30 minute interview -— partners will *not* work on the same interview problems successively.
 
 * Have your TAs reference the `Workshop Time Tracker` to help keep track of time; more important than the Time Tracker is that students have adequate time to work through interview problems.
 
@@ -73,7 +73,7 @@ In this activity, instructors will overview the process of the mock interviews f
 **Files:**
 
 * [Slideshow-Placeholder]()
-* [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx)
+* [Peer Interview Grading Rubric](Activities/02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xlsx)
 
 Open the slideshow and explain the following:
 
@@ -85,7 +85,7 @@ Open the slideshow and explain the following:
 
 * After each pair of students has gone through the full interview process (acted as both interviewer/interviewee and discussed feedback), students will break off into new pairs and repeat the process until the end of the class.
 
-Then slack out the [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx) and explain the following:
+Then slack out the [Peer Interview Grading Rubric](Activities/02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xlsx) and explain the following:
 
 * The rubric will be used by interviewers to assess their corresponding partner's interview performances.
 
@@ -105,10 +105,10 @@ In this activity, students will pair off with each other to perform mock intervi
 
 **Files:**
 
-* [README.md](Activities/02-Stu_Partner_Interviews/README.md)
-* [Interview Questions](Activities/02-Stu_Partner_Interviews/Solved)
+* [README.md](Activities/03-Stu_Partner_Interviews/README.md)
+* [Interview Questions](Activities/03-Stu_Partner_Interviews/Solved)
 
-Slack out the [README.md](Activities/02-Stu_Partner_Interviews/README.md) and explain the following:
+Slack out the [README.md](Activities/03-Stu_Partner_Interviews/README.md) and explain the following:
 
 * Now, students should break off into their pairs. They can work with seatmates to start as they'll eventually rotate through the class. Specific student pairs should decide amongst themselves who will first play the role of the interviewer, and who will first play the role of the interviewee.
 
@@ -116,7 +116,7 @@ Slack out the [README.md](Activities/02-Stu_Partner_Interviews/README.md) and ex
 
 * Students should reference the [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to implement the methodologies into their interview performances.
 
-Then, slack out the first [interview question](Activities/02-Stu_Partner_Interviews/Solved) and let the interviews begin!
+Then, slack out the first [interview question](Activities/03-Stu_Partner_Interviews/Solved) and let the interviews begin!
 
 ---
 
@@ -130,7 +130,7 @@ In this activity, students will switch roles in their mock interviews; the inter
 
 * Again, students should reference and implement the methodologies listed in the problem solving guidelines document.
 
-Then slack out the next [interview question](Activities/02-Stu_Partner_Interviews/Solved) and let the second interviews begin!
+Then slack out the next [interview question](Activities/03-Stu_Partner_Interviews/Solved) and let the second interviews begin!
 
 ---
 
@@ -162,7 +162,7 @@ In this activity, students break off into new pairs and repeat the procedures ou
 
   1. Adjust the time allocations for the final round of interviews to fit within the remainder of class. For example, two 15 minute sessions for each student in their respective pairs.
 
-  2. Perform a live walkthrough of a sample interview problem with the class as a whole, allowing students to witness the technical interviewing skills of a veteran instructor.
+  2. Perform a live demo of a sample interview problem with the class as a whole, allowing students to witness the technical interviewing skills of a veteran instructor.
 
 ---
 
