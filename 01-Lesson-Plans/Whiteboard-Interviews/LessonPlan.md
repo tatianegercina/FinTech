@@ -31,7 +31,7 @@ By the end of class, students will be able to:
 
 In this activity, instructors welcome students to the class and explain that they will be reviewing and practicing technical interview guidelines in a mock peer review setting.
 
-**File:** [slideshow-placeholder]()
+**File:** [Slideshow-Placeholder]()
 
 * Students will overview the problem-solving strategies and as well as the discussion guidelines, and then run their own peer-interviews for the rest of class.
 
@@ -47,11 +47,13 @@ In this activity, instructors will introduce the problem solving guidelines that
 
 **Files:**
 
-* [slideshow-placeholder]()
-* [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx)
+* [Slideshow-Placeholder]()
+
 * [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf)
 
 Slack out the [Peer Interview Grading Rubric](../2-Resources/PeerTechnicalInterviewRubric.xlsx) and explain the following:
+
+
 
 Then, slack out the [Problem Solving Guidelines](../2-Resources/TechnicalInterviewGuidelines.pdf), and open them yourself.
 
@@ -78,6 +80,11 @@ Then, slack out the [Problem Solving Guidelines](../2-Resources/TechnicalIntervi
 ### 3. Student Do: First Partner Interviews (0:30)
 
 In this activity, students will pair off with each other to perform mock interviews, with one student as the interviewer and the other as the interviewee.
+
+**Files:**
+
+* [README.md](Activities/02-Stu_Partner_Interviews/README.md)
+* [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx)
 
 * Slack out the `NotesToTheInterviewer`
 
