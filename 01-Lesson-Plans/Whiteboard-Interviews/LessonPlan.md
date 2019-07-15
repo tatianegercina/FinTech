@@ -41,7 +41,7 @@ In this activity, instructors welcome students to the class and explain that the
 
 ---
 
-### 2. Instructor Do: Introduce and Review Problem Solving Guidelines (0:15)
+### 2. Instructor Do: Introduce and Review Problem Solving Guidelines (15 mins)
 
 In this activity, instructors will introduce the problem solving guidelines that will help students to effectively outperform in a technical interview.
 
@@ -66,7 +66,9 @@ Open the slideshow and explain the following:
 
 Ask the students if they have any questions before moving on.
 
-### 3. Instructor Do: Introduce Partner Interviews (0:15)
+---
+
+### 3. Instructor Do: Introduce Partner Interviews (15 mins)
 
 In this activity, instructors will overview the process of the mock interviews for today's lesson.
 
@@ -87,7 +89,9 @@ Open the slideshow and explain the following:
 
 Then slack out the [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx) that students will use to assess their partners' interview performances.
 
-### 3. Student Do: First Partner Interviews (0:30)
+---
+
+### 4. Student Do: First Partner Interviews (30 mins)
 
 In this activity, students will pair off with each other to perform mock interviews, with one student as the interviewer and the other as the interviewee.
 
@@ -117,7 +121,9 @@ Slack out the `NotesToTheInterviewer`
 
     * Explain that they will be free to work in a more "freeform" manner when they've internalized this basic approach.
 
-### 4. Student Do: Second Partner Interviews (0:30)
+---
+
+### 5. Student Do: Second Partner Interviews (30 mins)
 
 In this activity, students will switch roles in their mock interviews; the interviewer becomes the interviewee and vice versa.
 
@@ -131,7 +137,9 @@ In this activity, students will switch roles in their mock interviews; the inter
 
 * Again, emphasize the importance of implementing the problem solving guidelines to a tee.
 
-### 5. Student Do: Trade Feedback (0:05)
+---
+
+### 6. Student Do: Trade Feedback (5 mins)
 
 In this activity, students will exchange interview feedback with their partners and discuss how they can improve.
 
@@ -145,7 +153,9 @@ In this activity, students will exchange interview feedback with their partners 
 
 * Encourage students to avoid discussing the solutions at this stage; the important piece is not the answers, but how well students communicated their thought processes.
 
-### 6. Student Do: Repeat (Remainder)
+---
+
+### 7. Student Do: Repeat (Remainder)
 
 In this activity, students break off into new pairs and repeat the procedures outlined in activities 3-5 for the remainder of the class.
 
@@ -163,7 +173,9 @@ In this activity, students break off into new pairs and repeat the procedures ou
 
     * Alternatively, work through a problem with the class as a whole.
 
-### 7. Conclusion (0:00)
+---
+
+### 8. Conclusion (0:00)
 
 * Slack out the solutions for each interview question students worked on today for later review.
 
