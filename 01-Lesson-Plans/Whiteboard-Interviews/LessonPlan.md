@@ -49,7 +49,6 @@ In this activity, instructors will introduce the problem solving guidelines that
 
 * [Slideshow-Placeholder]()
 * [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf)
-* [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx)
 
 Open the slideshow and explain the following:
 
@@ -67,6 +66,27 @@ Open the slideshow and explain the following:
 
 Ask the students if they have any questions before moving on.
 
+### 3. Instructor Do: Introduce Partner Interviews (0:15)
+
+In this activity, instructors will overview the process of the mock interviews for today's lesson.
+
+**Files:**
+
+* [Slideshow-Placeholder]()
+* [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx)
+
+Open the slideshow and explain the following:
+
+* Students will break off into pairs, with one student acting as the interviewer and the other student acting as the interviewee. Students will decide themselves who goes first as the interviewer/interviewee.
+
+* Students will spend 30 minutes for their first round of interviewing and then another 30 minutes for their second round of interviewing (students switch roles).
+
+* Each student will act as both the interviewer and the interviewee in their pair (of two students). Afterwards, there will be a 5 minute session to discuss feedback and potential areas of improvement.
+
+* After each pair of students has gone through the full interview process (acted as both interviewer/interviewee and discussed feedback), students will break off into new pairs and repeat the process until the end of the class.
+
+Then slack out the [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx) that students will use to assess their partners' interview performances.
+
 ### 3. Student Do: First Partner Interviews (0:30)
 
 In this activity, students will pair off with each other to perform mock interviews, with one student as the interviewer and the other as the interviewee.
@@ -74,15 +94,6 @@ In this activity, students will pair off with each other to perform mock intervi
 **Files:**
 
 * [README.md](Activities/02-Stu_Partner_Interviews/README.md)
-
-
-
-* Students will use the [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx) to grade their partner's performance
-
-* Slack out the [Peer Interview Grading Rubric](../2-Resources/PeerTechnicalInterviewRubric.xlsx) and explain the following:
-
-Then, slack out the [Problem Solving Guidelines](../2-Resources/TechnicalInterviewGuidelines.pdf), and open them yourself.
-
 
 Slack out the `NotesToTheInterviewer`
 
