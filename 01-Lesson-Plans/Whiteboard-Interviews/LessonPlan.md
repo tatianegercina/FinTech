@@ -64,8 +64,6 @@ Open the slideshow and explain the following:
 
 * Additionally, it is important to interact and develop a relationship with the interviewer. Not only do interviewers want to know that an individual has the knowledge and capacity to perform their role, but also the personality that fits within their company's culture.
 
-Ask the students if they have any questions before moving on.
-
 ---
 
 ### 3. Instructor Do: Introduce Partner Interviews (15 mins)
@@ -96,6 +94,8 @@ Then slack out the [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Sol
   * The interviewee adequately restated the problem.
   * The interviewee asked the interviewer for input and clarification.
   * The interviewee use a logical approach to solving the problem - regardless of a correct solution
+
+Ask the students if they have any questions before moving on.
 
 ---
 
