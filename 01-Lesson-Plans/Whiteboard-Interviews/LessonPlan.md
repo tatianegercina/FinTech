@@ -136,17 +136,17 @@ Then slack out the next [interview question](Activities/02-Stu_Partner_Interview
 
 ### 6. Student Do: Trade Feedback (5 mins)
 
-In this activity, students will exchange interview feedback with their partners and discuss how they can improve.
+In this activity, students will exchange interview feedback with their partners and discuss how they can improve their interview performances.
 
-* After 20 minutes, have students trade rubrics and discuss each others' performance.
+* After the second partner interviews are complete, students should exchange interview grading rubrics and discuss each others' performances.
 
-* This should be mostly positive in tone—have students identify:
+* Feedback should mostly be positive in tone and should identify potential areas such as:
 
-  * What their partners did best; and
+  * What their partners did best
 
-  * What they should focus on improving during their next interview.
+  * What their partners should focus on improving during their next interview.
 
-* Encourage students to avoid discussing the solutions at this stage; the important piece is not the answers, but how well students communicated their thought processes.
+* Students de-prioritize discussing the specific coding solutions at this stage; the important piece is not the answers, but how well students communicated their thought processes.
 
 ---
 
