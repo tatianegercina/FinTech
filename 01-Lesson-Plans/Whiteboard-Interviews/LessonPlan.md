@@ -43,7 +43,7 @@ Welcome students to the class and explain that they will be reviewing and practi
 
 ### 2. Instructor Do: Introduce and Review Problem Solving Guidelines (0:15)
 
-In this activity, instructors will introduce the problem solving guidelines that will aid students in effectively performing in a technical interview.
+In this activity, instructors will introduce the problem solving guidelines that will aid students in effectively performing a technical interview.
 
 **File:** [slideshow-placeholder]()
 
@@ -75,6 +75,8 @@ In this activity, instructors will introduce the problem solving guidelines that
 
 ### 3. Student Do: First Partner Interviews (0:30)
 
+In this activity, students will pair off with each other to perform mock interviews, with one student as the interviewer and the other as the interviewee.
+
 * Break students into pairs. They can work with seatmates to start, as they'll rotate throughout class.
 
   * Instruct groups to decide amongst themselves who will play the role of interviewer, and who the role of interviewee.
@@ -97,6 +99,8 @@ In this activity, instructors will introduce the problem solving guidelines that
 
 ### 4. Student Do: Second Partner Interviews (0:30)
 
+In this activity, students will switch roles in their mock interviews; the interviewer becomes the interviewee and vice versa.
+
 * After 25 minutes, instruct partners to swap roles, such that the interviewee now plays the role of interviewer, and vice versa.
 
 * Slack out a new question for the interviewee to work on.
@@ -109,6 +113,8 @@ In this activity, instructors will introduce the problem solving guidelines that
 
 ### 5. Student Do: Trade Feedback (0:05)
 
+In this activity, students will exchange interview feedback with their partners and discuss how they can improve.
+
 * After 20 minutes, have students trade rubrics and discuss each others' performance.
 
 * This should be mostly positive in tone—have students identify:
@@ -120,6 +126,8 @@ In this activity, instructors will introduce the problem solving guidelines that
 * Encourage students to avoid discussing the solutions at this stage; the important piece is not the answers, but how well students communicated their thought processes.
 
 ### 6. Student Do: Repeat (Remainder)
+
+In this activity, students break off into new pairs and repeat the procedures outlined in activities 3-5 for the remainder of the class.
 
 * Allow 2 minutes for groups to switch partners, so that each individual works with a new classmate.
 
