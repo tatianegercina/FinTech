@@ -2,9 +2,9 @@
 
 **Files:**
 
-* [hvPlot.ipynb](Activities/10-Ins_hvPlot_Demo/Solved/hvPlot.ipynb)
+* [hvPlot.ipynb](Activities/10-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb)
 
-Open the starter file, and live code the following:
+Open the [starter file](Activities/10-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb), and live code the following:
 
   * The **hvPlot** library has to be imported into the Python environment. hvPlot offers a library called **hvPlot.Pandas** that integrates hvPlot with Pandas DataFrame API. This allows Pandas DataFrames to be visualized using hvPlot.
 
