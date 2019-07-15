@@ -87,7 +87,15 @@ Open the slideshow and explain the following:
 
 * After each pair of students has gone through the full interview process (acted as both interviewer/interviewee and discussed feedback), students will break off into new pairs and repeat the process until the end of the class.
 
-Then slack out the [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx) that students will use to assess their partners' interview performances.
+Then slack out the [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx) and explain the following:
+
+* The rubric will be used by interviewers to assess their corresponding partner's interview performances.
+
+* The rubric includes a score of 0-3 for multiple criteria such as:
+
+  * The interviewee adequately restated the problem.
+  * The interviewee asked the interviewer for input and clarification.
+  * The interviewee use a logical approach to solving the problem - regardless of a correct solution
 
 ---
 
@@ -98,28 +106,19 @@ In this activity, students will pair off with each other to perform mock intervi
 **Files:**
 
 * [README.md](Activities/02-Stu_Partner_Interviews/README.md)
+* [Interview Questions](Activities/02-Stu_Partner_Interviews/Solved)
 
-Slack out the `NotesToTheInterviewer`
+Slack out the [README.md](Activities/02-Stu_Partner_Interviews/README.md) and explain the following:
 
-* Break students into pairs. They can work with seatmates to start, as they'll rotate throughout class.
+* Now, students should break off into their pairs. They can work with seatmates to start as they'll eventually rotate through the class. Specific student pairs should decide amongst themselves who will first play the role of the interviewer, and who will first play the role of the interviewee.
 
-  * Instruct groups to decide amongst themselves who will play the role of interviewer, and who the role of interviewee.
+* Students will have 5 minutes for the interviewer to review the interview question README and solution. Then, the remaining 25 minutes will be allocated for the actual interview.
 
-* Instruct the interviewer to fill out the **Interviewer** and **Interviewee** fields in their rubrics.
+* Remind students to **systematically implement the problem solving guidelines**.
 
-* Slack out an interview question for students to work on, and start a timer for 5 - 7 minutes.
+  * It's okay if they have to refer to them.
 
-  * This 5 minute allowance is for the **Interviewer** to review the interview question README and solution.
-
-  * The **Interviewee** can spend this time reviewing JavaScript, or simply waiting for the interview to start.
-
-* When time is up, tell students to start interviews, and set a timer for 25 minutes.
-
-  * Remind students to **systematically implement the problem solving guidelines**.
-
-    * It's okay if they have to refer to them.
-
-    * Explain that they will be free to work in a more "freeform" manner when they've internalized this basic approach.
+  * Explain that they will be free to work in a more "freeform" manner when they've internalized this basic approach.
 
 ---
 
