@@ -114,11 +114,9 @@ Slack out the [README.md](Activities/02-Stu_Partner_Interviews/README.md) and ex
 
 * Students will have 5 minutes for the interviewer to review the interview question README and solution. Then, the remaining 25 minutes will be allocated for the actual interview.
 
-* Remind students to **systematically implement the problem solving guidelines**.
+* Students should reference the [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to implement the methodologies into their interview performances.
 
-  * It's okay if they have to refer to them.
-
-  * Explain that they will be free to work in a more "freeform" manner when they've internalized this basic approach.
+Then, slack out the first [interview question](Activities/02-Stu_Partner_Interviews/Solved) and let the interviews begin!
 
 ---
 
@@ -126,15 +124,13 @@ Slack out the [README.md](Activities/02-Stu_Partner_Interviews/README.md) and ex
 
 In this activity, students will switch roles in their mock interviews; the interviewer becomes the interviewee and vice versa.
 
-* After 25 minutes, instruct partners to swap roles, such that the interviewee now plays the role of interviewer, and vice versa.
+* After the 30 minutes of the first partner interviews, partners should swap roles such that the interviewee now plays the role of interviewer, and vice versa.
 
-* Slack out a new question for the interviewee to work on.
+* Similar to the timing of the first partner interviews, second partner interviews will retain 5 minutes for the (new) interviewer to review the interview question README and solution and then utilize the remaining 25 minutes for the actual interview.
 
-  * Set a timer for 5 minutes, such the interviewer can review the new question.
+* Again, students should reference and implement the methodologies listed in the problem solving guidelines document.
 
-  * When the five minutes are up, set a timer for 25 minutes, so that students can interview.
-
-* Again, emphasize the importance of implementing the problem solving guidelines to a tee.
+Then slack out the next [interview question](Activities/02-Stu_Partner_Interviews/Solved) and let the second interviews begin!
 
 ---
 
