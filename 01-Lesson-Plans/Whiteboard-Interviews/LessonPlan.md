@@ -43,7 +43,7 @@ In this activity, instructors welcome students to the class and explain that the
 
 ### 2. Instructor Do: Introduce and Review Problem Solving Guidelines (0:15)
 
-In this activity, instructors will introduce the problem solving guidelines that will aid students in effectively performing in a technical interview.
+In this activity, instructors will introduce the problem solving guidelines that will help students to effectively outperform in a technical interview.
 
 **Files:**
 
@@ -51,29 +51,21 @@ In this activity, instructors will introduce the problem solving guidelines that
 * [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf)
 * [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx)
 
-Slack out the [Peer Interview Grading Rubric](../2-Resources/PeerTechnicalInterviewRubric.xlsx) and explain the following:
+Open the slideshow and explain the following:
 
-Then, slack out the [Problem Solving Guidelines](../2-Resources/TechnicalInterviewGuidelines.pdf), and open them yourself.
+* Students will use the methodologies outlined in the [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to impress upon a technical interviewer that they are **strong problem solvers.** Specifically, students will use the following technical interview methodologies:
 
-* Explain the importance of communication in the technical interview process.
+  * Restate/explain the problem with a **concrete example.**
+  * Sketch the solution on a high-level (ex. psuedocode).
+  * Discuss the approach and any assumptions or shortcomings.
+  * Translate and implement the solution into functional code.
+  * Discuss the solution's shortcomings and corresponding potential improvements.
 
-  * Obviously, optimal solutions are of crucial importance, but excellently communicating a suboptimal but correct solution is the priority for this set of workshops.
+* More than anything, interviewers want to know an interviewee's mindset and ability to solve problems, even if he or she does not have the full answer/solution. Therefore, communication is absolutely key to outperforming in *any* interview, not just a technical interview.
 
-* Explain the major steps of the communication process. Namely:
+* Additionally, it is important to interact and develop a relationship with the interviewer. Not only do interviewers want to know that an individual has the knowledge and capacity to perform their role, but also the personality that fits within their company's culture.
 
-  * Restating/explaining the problem with a **concrete example**;
-
-  * Explaining a solution approach at a high level;
-
-  * Discussing assumptions, shortcomings, and other properties of the proposed solution;
-
-  * Discussing alternative solutions;
-
-  * Talking the interviewer through your translation of the solution sketch into real code;
-
-  * Discussing the solution after implementation, including potential improvements; and
-
-* Remember to emphasize the importance of interacting with the interviewer.
+Ask the students if they have any questions before moving on.
 
 ### 3. Student Do: First Partner Interviews (0:30)
 
@@ -82,6 +74,15 @@ In this activity, students will pair off with each other to perform mock intervi
 **Files:**
 
 * [README.md](Activities/02-Stu_Partner_Interviews/README.md)
+
+
+
+* Students will use the [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx) to grade their partner's performance
+
+* Slack out the [Peer Interview Grading Rubric](../2-Resources/PeerTechnicalInterviewRubric.xlsx) and explain the following:
+
+Then, slack out the [Problem Solving Guidelines](../2-Resources/TechnicalInterviewGuidelines.pdf), and open them yourself.
+
 
 Slack out the `NotesToTheInterviewer`
 
