@@ -52,7 +52,7 @@ In this activity, instructors will introduce the problem solving guidelines that
 
 Open the slideshow and explain the following:
 
-* Students will use the methodologies outlined in the [problem solving guidelines document](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to impress upon a technical interviewer that they are **strong problem solvers.** Specifically, students will use the following technical interview methodologies:
+* Students will use the methodologies outlined in the [problem solving guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to impress upon a technical interviewer that they are **strong problem solvers.** Specifically, students will use the following technical interview methodologies:
 
   * Restate/explain the problem with a **concrete example.**
   * Sketch the solution on a high-level (ex. psuedocode).
@@ -114,7 +114,7 @@ Slack out the [README.md](Activities/03-Stu_Partner_Interviews/README.md) and ex
 
 * Students will have 5 minutes for the interviewer to review the interview question README and solution. Then, the remaining 25 minutes will be allocated for the actual interview.
 
-* Students should reference the [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to implement the methodologies into their interview performances.
+* Students should reference the [problem solving guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to implement the methodologies into their interview performances.
 
 Then, slack out the first [interview question](Activities/03-Stu_Partner_Interviews/Solved) and let the interviews begin!
 
