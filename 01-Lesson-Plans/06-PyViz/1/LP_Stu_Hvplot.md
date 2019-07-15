@@ -4,11 +4,11 @@ In this activity, students re-visit plots they made earlier in the class using M
 
 **Instrutions**
 
-* [README.md](Activities/11-Stu_Visual_Takeover/README.md)
+* [README.md](Activities/11-Stu_Plotting_Visual_Takeover/README.md)
 
 **Files**
 
-* [visual_takeover.ipynb](Activities/11-Stu_Visual_Takeover/Unsolved/Core/visual_takeover.ipynb)
+* [plotting_visual_takeover.ipynb](Activities/11-Stu_Plotting_Visual_Takeover/Unsolved/Core/plotting_visual_takeover.ipynb)
 
 - - -
 
@@ -20,7 +20,7 @@ In this activity, students re-visit plots they made earlier in the class using M
 
 **Files:**
 
-* [visual_takeover.ipynb](Activities/11-Stu_Visual_Takeover/Solved/Core/visual_takeover.ipynb)
+* [plotting_visual_takeover.ipynb](Activities/11-Stu_Plotting_Visual_Takeover/Solved/Core/plotting_visual_takeover.ipynb)
 
 Open the solution, and conduct a dry walkthrough of the solution while explaining the following:
 
