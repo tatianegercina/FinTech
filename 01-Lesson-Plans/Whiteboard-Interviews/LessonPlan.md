@@ -48,14 +48,12 @@ In this activity, instructors will introduce the problem solving guidelines that
 **Files:**
 
 * [slideshow-placeholder]()
-
 * [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx)
-
 * [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf)
 
-* Slack out the [Peer Interview Grading Rubric](../2-Resources/PeerTechnicalInterviewRubric.xlsx)
+Slack out the [Peer Interview Grading Rubric](../2-Resources/PeerTechnicalInterviewRubric.xlsx) and explain the following:
 
-* Slack out the [Problem Solving Guidelines](../2-Resources/TechnicalInterviewGuidelines.pdf), and open them yourself.
+Then, slack out the [Problem Solving Guidelines](../2-Resources/TechnicalInterviewGuidelines.pdf), and open them yourself.
 
 * Explain the importance of communication in the technical interview process.
 
