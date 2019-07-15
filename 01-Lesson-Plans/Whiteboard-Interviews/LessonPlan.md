@@ -49,6 +49,7 @@ In this activity, instructors will introduce the problem solving guidelines that
 
 * [Slideshow-Placeholder]()
 * [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf)
+* [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx)
 
 Slack out the [Peer Interview Grading Rubric](../2-Resources/PeerTechnicalInterviewRubric.xlsx) and explain the following:
 
@@ -81,7 +82,6 @@ In this activity, students will pair off with each other to perform mock intervi
 **Files:**
 
 * [README.md](Activities/02-Stu_Partner_Interviews/README.md)
-* [Peer Interview Grading Rubric](Activities/01-Ins_Problem_Solving_Guidelines/Solved/PeerTechnicalInterviewRubric.xlsx)
 
 Slack out the `NotesToTheInterviewer`
 
