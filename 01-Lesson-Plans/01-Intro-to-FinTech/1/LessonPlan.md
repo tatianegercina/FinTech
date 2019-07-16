@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's class will focus on familiarizing students with this course as well as introducing them to the evolving financial services industry known as FinTech. The instructor, teacher assistants (TAs), student success managers (SSMs), and students will all have an opportunity to introduce themselves to the class. Following an overview of the course agenda and requirements, students will participate in group discussions regarding the nature of FinTech (what is it?). The class will end with a review of the Unit 1 homework assignment. 
+Today's class will focus on familiarizing students with this course as well as introducing them to the evolving financial services industry known as FinTech. The instructor, teacher assistants (TAs), student success managers (SSMs), and students will all have an opportunity to introduce themselves to the class. Following an overview of the course agenda and requirements, students will participate in group discussions regarding the nature of FinTech (what is it?). The class will end with a review of the Unit 1 homework assignment.
 
 ### Class Objectives
 
@@ -22,21 +22,29 @@ By the end of class, students will:
 
 ### Instructor Notes
 
-* Today will be more relaxed, as the focus of the first day of the course is to simply familiarize students with each other as well as with the course itself, and ease them into the concept of FinTech. 
+* Today will be more relaxed, as the focus of the first day of the course is to simply familiarize students with each other as well as with the course itself, and ease them into the concept of FinTech.
 
-* This is one of the few days where there will be dedicated time for instructors to connect with the students and get to know them. Take advantage of this time and use it to set the tone! Ask your students questions and break the ice. 
+* This is one of the few days where there will be dedicated time for instructors to connect with the students and get to know them. Take advantage of this time and use it to set the tone! Ask your students questions and break the ice.
 
 * Make sure your TAs have sufficient time to introduce themselves as well, as they will be major stakeholders when it comes to helping students progress through the course.
 
 * When reviewing the course requirements, be sure to emphasize that cheating or plagiarism of any kind is prohibited; engaging in any kind of plagiarism can endanger student eligibility for certification upon graduation.
 
-* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+### Class Slides and Timetracker
+
+The slides for today can be viewed on Google Drive here: [Unit 1 Day 1 Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g54ab1329fa_1_44)
+
+To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Then, add the PDF file to your class repository along with other necessary files. [Instructions Here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit)
+
+* Note: Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+
+The Timetracker for today can be viewed here: [Timetracker](TimeTracker.xlsx)
 
 ---
 
 ### 1. Instructor Do: Introductions (40 min)
 
-In this first part of the lesson, everyone associated with this FinTech course will introduce themselves to the class. This includes the student success managers (SSMs), instructor, and teacher assistants (TAs), as well as university staff, program directors, student services directors, and career directors. Students will also have an opportunity to introduce themselves. The goal here is to break the ice and get the class acquainted with the staff and each other. 
+In this first part of the lesson, everyone associated with this FinTech course will introduce themselves to the class. This includes the student success managers (SSMs), instructor, and teacher assistants (TAs), as well as university staff, program directors, student services directors, and career directors. Students will also have an opportunity to introduce themselves. The goal here is to break the ice and get the class acquainted with the staff and each other.
 
 * The first 40 minutes of class consists of introductions from the following:
 
@@ -74,8 +82,8 @@ Present to the class the following questions and answers:
 
 * What defines a FinTech company?
 
-  **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through back-end network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups: 
-  
+  **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through back-end network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups:
+
     * Infrastructure providers
 
     * Large technology ecosystems
@@ -104,19 +112,19 @@ In this section, provide an overview of the topics and technologies used in the 
 
 Use the slideshow to go over the course agenda and timeline:
 
-  * **Weeks 1–2:** Students are introduced to the world of FinTech and the current financial landscape. Then they will dive into the financial modeling methods of the current industry-standard tool, Microsoft Excel.
+* **Weeks 1–2:** Students are introduced to the world of FinTech and the current financial landscape. Then they will dive into the financial modeling methods of the current industry-standard tool, Microsoft Excel.
 
-  * **Weeks 3–7:** While useful and easy to grasp, Excel is limited in its technical capabilities compared to a full-fledged progamming language like Python. Therefore, over the next several weeks, students will cover the basics of Python as well as how to use additional libraries and tools such as Pandas, APIs, Plotly, and SQL databases, within the context of financial analysis.
+* **Weeks 3–7:** While useful and easy to grasp, Excel is limited in its technical capabilities compared to a full-fledged progamming language like Python. Therefore, over the next several weeks, students will cover the basics of Python as well as how to use additional libraries and tools such as Pandas, APIs, Plotly, and SQL databases, within the context of financial analysis.
 
-  * **Weeks 8–9** Students are tasked with their first project.
+* **Weeks 8–9** Students are tasked with their first project.
 
-  * **Weeks 10–15:** Companies are becoming more and more data-driven in their decision making. Therefore, through machine learning, students will learn how to interpret and create financial models as well as automate the execution of such models. Topics include algorithmic trading, robo-advisory, time series analysis, risk management, and Cloud ML technologies.
+* **Weeks 10–15:** Companies are becoming more and more data-driven in their decision making. Therefore, through machine learning, students will learn how to interpret and create financial models as well as automate the execution of such models. Topics include algorithmic trading, robo-advisory, time series analysis, risk management, and Cloud ML technologies.
 
-  * **Weeks 16–17:** Students are tasked with their second project.
+* **Weeks 16–17:** Students are tasked with their second project.
 
-  * **Weeks 18–22:** With its benefits of security, speed, and decentralized peer-to-peer validation, blockchain technology has already become more efficient than tradtional finance in the context of transactions and third-party validation. Thus, students will learn about blockchain fundamentals, smart contracts using Solidity, and how to develop blockchain applications on the popular Ethereum blockchain network.
+* **Weeks 18–22:** With its benefits of security, speed, and decentralized peer-to-peer validation, blockchain technology has already become more efficient than tradtional finance in the context of transactions and third-party validation. Thus, students will learn about blockchain fundamentals, smart contracts using Solidity, and how to develop blockchain applications on the popular Ethereum blockchain network.
 
-  * **Weeks 23–24:** Students are tasked with their final project.
+* **Weeks 23–24:** Students are tasked with their final project.
 
 ![fintech-curriculum](Images/fintech-curriculum.png)
 
@@ -130,15 +138,15 @@ Provide students with some encouragement and tips for overcoming the mental frus
 
 Open the next series of slides and emphasize the following points:
 
-  * Hard work, humility, and a relentless desire to improve are essential for succeeding in this program. Recognizing how little you know is a first step toward growth as a learner. 
+* Hard work, humility, and a relentless desire to improve are essential for succeeding in this program. Recognizing how little you know is a first step toward growth as a learner.
 
-  * At times, learning the skills taught in this course will be intimidating and frustrating. Remember that becoming a skilled professional is challenging and will take time. There is no way around that.
+* At times, learning the skills taught in this course will be intimidating and frustrating. Remember that becoming a skilled professional is challenging and will take time. There is no way around that.
 
-  * Due to the challenging nature of this course, there will be many moments where students will doubt themselves. Remember that everyone starts as a beginner, including the instructor. Also remember why you were admitted to this program in the first place: you have what it takes to succeed. 
+* Due to the challenging nature of this course, there will be many moments where students will doubt themselves. Remember that everyone starts as a beginner, including the instructor. Also remember why you were admitted to this program in the first place: you have what it takes to succeed.
 
-  * Even though challenging times are up ahead, students have a solid support system: their instructor, TAs, student success manager, and,perhaps most importantly, each other. When you're frustrated or stuck, remember that we're all in this together. Seek help when you need it and lift each other up. 
+* Even though challenging times are up ahead, students have a solid support system: their instructor, TAs, student success manager, and,perhaps most importantly, each other. When you're frustrated or stuck, remember that we're all in this together. Seek help when you need it and lift each other up.
 
-  * Lastly, learning is supposed to be frustrating! It's a process, so stick with it. Things only get easier when we choose to embrace the difficulty.
+* Lastly, learning is supposed to be frustrating! It's a process, so stick with it. Things only get easier when we choose to embrace the difficulty.
 
   ![fintech-tips](Images/fintech-tips.png)
 
@@ -156,13 +164,13 @@ In this section, engage students with a facilitated discussion about why FinTech
 
 Use the slides to help guide your discussion, pointing out the following:
 
-  * Recent technological advancements in (big) data and mobile network infrastructure has led to a consumer desire for companies to not only provide more efficent data-driven services, but also quality engagement through scalable mobile platforms.
+* Recent technological advancements in (big) data and mobile network infrastructure has led to a consumer desire for companies to not only provide more efficent data-driven services, but also quality engagement through scalable mobile platforms.
 
-  * To keep up with consumer demand, large financial firms that have been slower to adopt newer technologies have been forced to make larger investments in technology.
+* To keep up with consumer demand, large financial firms that have been slower to adopt newer technologies have been forced to make larger investments in technology.
 
-  * Market analysis shows that global FinTech investment has grown dramatically in recent years.
+* Market analysis shows that global FinTech investment has grown dramatically in recent years.
 
-  * As a result, there is a growing demand for technical specialists who have the background and experience to navigate financial waters.
+* As a result, there is a growing demand for technical specialists who have the background and experience to navigate financial waters.
 
 As you review the slides, look for opportunities to prompt students to reflect. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer.
 
@@ -184,13 +192,13 @@ During this activity, students will share their responses with their classmates.
 
 ### 8. Instructor Do: Review FinTech and Me (10 min)
 
-**Optional:** Consider using a tool such as [polleverywhere](https://www.polleverywhere.com/) to collect and share responses in real-time. [Groupmap](https://www.groupmap.com/) may also be a good option. 
+**Optional:** Consider using a tool such as [polleverywhere](https://www.polleverywhere.com/) to collect and share responses in real-time. [Groupmap](https://www.groupmap.com/) may also be a good option.
 
 Review each question. Ask for a few volunteers for each of the response questions. Encourage students who had interesting responses in the previous activity to share.
 
 Once all volunteers have presented, tie everything together by explaining the following:
 
-* FinTech is the application of technology to the finance industry, but what it means at the individual level can differ. 
+* FinTech is the application of technology to the finance industry, but what it means at the individual level can differ.
 
 * Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. And still others see FinTech as a path to new career supported by growing demand.
 
@@ -254,7 +262,7 @@ In the Unit 1 homework assignment, students will develop a case study based on a
 
 **Recommendations**
 
-  * If you were an advisor for the company, what products or services would you suggest they offer? 
+  * If you were an advisor for the company, what products or services would you suggest they offer?
 
   * Why do you think this product or service would benefit the business?
 
@@ -266,4 +274,4 @@ Ask if there are any questions before ending class.
 
 ---
 
-© 2019 Trilogy Education Services 
+© 2019 Trilogy Education Services
