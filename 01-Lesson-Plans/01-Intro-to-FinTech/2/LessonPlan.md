@@ -347,17 +347,30 @@ By this point, students have been given examples of the major domains within Fin
 
 ### 11. Instructor Do: Review FinTech Headlines (15 min)
 
-Now that students have had an opportunity to perform their own research on the various domains in FinTech, it's time to facilitate a class discussion based on each group's findings.
+Now that students have had an opportunity to perform their own research on the various domains in FinTech and produce hypothetical news headlines for each FinTech domain, it's now time to facilitate a class discussion based on each group's findings.
 
-Have each group present their findings to the class one by one until all groups have presented. Presentations should be quick––approximately 1 to 2 minutes.
+Open up [GroupMap](https://www.groupmap.com/), a collaborative brainstorming service and perform the following:
 
-Then, present students with questions such as the following.
+* Create sections within the mapping document for each FinTech domain:
 
-* How much of an impact did technology have in the success or failure of their companies?
+  * Payments and Remittances
+  * Robo Advisors and Personal Finance
+  * RegTech
+  * Digital Banking
+  * InsurTech
+  * Alternative Finance
 
-* Which companies ended up dominating the specific FinTech domain? Why do you think that is the case?
+* Once the GroupMap document is created and set up, slack out the link to the class and have each group list their headlines for each FinTech domain.
 
-* Was there anything else that seemed notable to your group during your research?
+* Then, have each student in the class vote on the best headlines for each FinTech domain, with an emphasis on feasibility. When finished, tally up the votes and showcase the most popular headlines for each FinTech domain. Ask for any volunteers who are willing to share why they chose the particular news headline that was voted the most popular.
+
+After the GroupMap review is complete, explain the following:
+
+* The intent of this activity was to provide students with not only the breadth but also the depth of knowledge for each FinTech domain. This may prove to be valuable when applying for roles within the FinTech industry.
+
+* It is not enough to simply restate the past, but also to analyze and predict the future. Therefore, after this activity students should have a general idea as to the trends affecting each FinTech domain as well as the potential outcomes that may result for each domain within the near future.
+
+Ask students if they have any questions before moving on.
 
 ---
 
