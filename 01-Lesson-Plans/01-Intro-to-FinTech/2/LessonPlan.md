@@ -142,51 +142,55 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
 
 ---
 
-### 5. Instructor Do: Uploading Files to GitHub (15 min)
+### 5. Everyone Do: Check Anaconda installation (0:05)
 
-In this activity, students will learn how to upload files to GitHub, which will be used to submit their future homework assignments in the course.
+* Complete a quick check to ensure students have conda installed `conda` and added to their path.
 
-Briefly explain the following:
+* Open up the console and have students follow along.
 
-* GitHub offers a centralized location where developers can push and pull (upload and download) their code; GitHub always holds the most up-to-date code and files and handles everyone's updates appropriately.
+  * Enter `conda --version` which will display the version of Anaconda install.
 
-* For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with GitHub via the command line using git, which allows for more advanced git operations.
+    ![Anaconda Version](Images/conda_version.png)
 
-Then, have the students follow along with the following steps:
+* Have TAs help any students with issues. The most common problem will be students with Windows that don't have the Anaconda PATH variable set.
 
-* Visit <https://github.com> and ask students to log in to their personal accounts.
-
-* From the main page, create a new repository with an initialized `README.md` file.
-
-  * Note that the convention in the software world is for each repository to have a README file that explains what the repository contains.
-
-  ![git repo](Images/GitDemo_1.png)
-
-* Create a new Excel file and save it to your desktop. This file will be used to demonstrate how to upload new files.
-
-* Navigate back to GitHub and click the "Upload files" button.
-
-  ![upload file](Images/GitDemo_upload.png)
-
-* Choose your Excel file in the dialog box.
-
-  * Note that you can also drag and drop the file rather than use the "Upload files" button.
-  
-* Add a commit message and commit the changes.
-
-* Refresh the webpage to show that the new file is now safely saved to the repository.
-
-  ![drag file](Images/GitDemo_filedrag.gif)
-
-Encourage students to practice using GitHub before the next class and attend office hours if they run into any problems.
+  * This can be fixed by manually adding the PATH to Windows' environment variables, but can be more easily solved by uninstalling/reinstalling Anaconda and making sure to check the "Install to Path" box that comes up in a menu.
 
 ---
 
-### 6. BREAK (15 min)
+### 6. Everyone Do: Create A Virtual Environment (0:10)
+
+* Next move on to explaining [virtual environments](https://conda.io/docs/user-guide/tasks/manage-environments.html).
+
+  * Virtual environments create an isolated environment for Python projects.
+
+  * Explain how different projects can have different dependencies.
+
+  * Explain how different projects might also use different types and versions of libraries.
+
+  * This virtual environment will make sure the class has all the right dependencies for future class activities.
+
+* Create a virtual environment that will run Python 3.6. This will help solve issues where students have multiple versions of Python installed.
+
+  * First run `conda create -n PythonData python=3.6 anaconda` in the terminal. Warn students that this may take a few minutes to install.
+
+  * Now enter `source activate PythonData` to activate the environment. When `(PythonData)$` appears, this means you are in the environment.
+
+  * Now make sure everyone is using the correct version of Python by entering `python --version`.
+
+    ![Python version](Images/python_version.png)
+
+  * Lastly, show that you can exit the environment by entering `source deactivate`. If `source deactivate` does not work, try using `conda deactivate` instead.
+
+* Remind students that they will need to activate their environment each time that they open a new terminal. Windows users should always use `git-bash` for their terminal.
 
 ---
 
-### 7. Student Do: Rip Van Winkle Thought Exercise (5 min)
+### 7. BREAK (15 min)
+
+---
+
+### 8. Student Do: Rip Van Winkle Thought Exercise (5 min)
 
 In this activity, students think about how the current state of the FinTech world may differ from that of someone from the year 1999.
 
@@ -202,7 +206,7 @@ Quickly explain to the class the following:
 
 ---
 
-### 8. Instructor Do: Review Rip Van Winkle Though Exercise (15 mins)
+### 9. Instructor Do: Review Rip Van Winkle Though Exercise (15 mins)
 
 In this activity, students present their opinions regarding the FinTech Rip Van Winkle thought experiment.
 
@@ -217,7 +221,7 @@ Perform the following:
   * Mobile Infrastructure
   * Cloud Infrastructure
 
-### 9. Instructor Do: Evolution of FinTech (15 min)
+### 10. Instructor Do: Evolution of FinTech (15 min)
 
 In this section, give students a brief summary of some of the key factors leading to the growth of the FinTech space. Understanding the historical background of FinTech as well as its current trajectory will give students knowledge that will help them both in employer interviews and their FinTech career.
 
@@ -255,7 +259,7 @@ Answer any questions before moving on.
 
 ---
 
-### 10. Instructor Do: Facilitated Discussion About FinTech Domains (10 min)
+### 11. Instructor Do: Facilitated Discussion About FinTech Domains (10 min)
 
 This section will be a discussion of the current state of the FinTech industry and which financial sectors have been positively impacted by technological innovation.
 
@@ -279,7 +283,7 @@ Ask the students the following questions:
 
 ---
 
-### 11. Instructor Do: FinTech Domains and Trends (10 min)
+### 12. Instructor Do: FinTech Domains and Trends (10 min)
 
 This section is a deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation.
 
@@ -339,13 +343,13 @@ Answer any questions before moving on.
 
 ---
 
-### 12. Student Do: FinTech Headlines (20 min)
+### 13. Student Do: FinTech Headlines (20 min)
 
 By this point, students have been given examples of the major domains within FinTech as well as the overarching trends across the industry. Now, students will work together in groups of 3-4 individuals to research and produce hypothetical headlines for each FinTech domain that one could expect to witness within the next 2-3 years.
 
 **File:** [README.md](Activities/01-Stu_FinTech_Domains/README.md)
 
-### 11. Instructor Do: Review FinTech Headlines (20 min)
+### 14. Instructor Do: Review FinTech Headlines (20 min)
 
 Now that students have had an opportunity to perform their own research on the various domains in FinTech and produce hypothetical news headlines for each FinTech domain, it's now time to facilitate a class discussion based on each group's findings.
 
@@ -374,7 +378,7 @@ Ask students if they have any questions before moving on.
 
 ---
 
-### 13. Instructor Do: Betterment Robo-Advisory Case Study (15 min)
+### 15. Instructor Do: Betterment Robo-Advisory Case Study (15 min)
 
 In this activity, students will be instructed on how to create a FinTech case study -- a compilation of holistic research performed on a FinTech company or technology. This activity is particularly important as it will serve as the knowledge foundation for students completing their FinTech case studies for the unit `1` homework.
 
