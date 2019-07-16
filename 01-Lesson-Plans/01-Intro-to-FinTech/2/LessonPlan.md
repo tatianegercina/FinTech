@@ -329,43 +329,51 @@ Then, present students with questions such as the following.
 
 ---
 
-### 12. Instructor Do: Stripe Payments Case Study (10 min)
+### 12. Instructor Do: Betterment Robo-Advisory Case Study (10 min)
 
-In this section, you will walk through a FinTech case study, a compilation of holistic research on a FinTech company or technology. This section will provide key information that will help students complete the Unit 1 homework assignment.  
+In this activity, students will be instructed on how to create a FinTech case study -- a compilation of holistic research performed on a FinTech company or technology. This activity is particularly important as it will serve as the knowledge foundation for students completing their FinTech case studies for the unit `1` homework.
 
 **File:** [slideshow-placeholder]()
 
-Open the slideshow and review the following points:
+Open the slideshow and walk through the following:
 
-* **Background:** This case study is based on the payment processing company Stripe, an exemplary digital payments company that provides the technical, fraud prevention, and banking infrastructure required to operate online payment systems.
+* `Background`
 
-* **Use Case:** Behind the scenes of digital payments, there is a payment processor that walks through the entire ACH (automated clearing house) submittal process with an operator,  verifying the payment info, transaction, and communication between the bank, as well as the credit card issuer for approval or denial and subsequent notification of payment success or failure. Therefore, the system needs to verify the handshakes between all processes and institutions, and make sure that every step along the way is secure.
+  * This case study researches the online financial advisory or "robo-advisory" company known as Betterment. Betterment is an examplar robo-advisory company that provides optimized and self-managed portfolios that customers can invest in based on their varying risk tolerances. In addition, Betterment provides financial advice based on specific customer goals and timelines, and offloads the work of things like portfolio re-balancing, dividend re-investments, auto-depositing, and much more.
 
-* **Advantages:** Stripe provides a short 8-line set of code that offloads the deployment of a digital payments system for most Android, iOS, and web applications. For this service, Stripe charges a relatively small fee on every processed payment.
+* `Use Case`
+  
+  * Traditionally, investment management services would first gauge a customer's investment risk level (conservative, neutral, aggressive) based on factors such as overall risk tolerance, financial goals, and duration of investment, and then proceed to manage a portfolio specifically tailored to that customer for a nominal overhead/maintenance fee. However, as overall technology advanced (as did machine learning/algorithmic trading), automated investment management services started becoming increasingly prevalent -- allowing investment managment services to become more data-driven (and therefore intelligent) as well as cheaper due to automation.
 
-* **Competitors:** Similar companies such as PayPal, Apple, Google, Square, and many others have developed similar solutions.
+* `Advantages`
+
+  * Betterment provides a relatively cheap and easy-to-use service that makes investing simple, intuitive, and intelligent; Customers are given the benefits of investing in computer-optimized and self-managed portfolios based on their specific investment needs (risk tolerance, financial goals, and duration of investment) all the while paying a cheaper overhead/maintenance fee due to the efficiencies of automation. In addition, Betterment has additional features such as monthly auto-deposits to make saving even easier for its customers.
+
+* `Competitors`
+
+  * Similar companies such as WealthFront, Acorns, Stash, and many others have developed similar solutions.
 
 ---
 
-### 13. Student Do: FinTech Payments Case Study (15 min)
+### 13. Student Do: Betterment Robo-Advisory Case Study (15 min)
 
-In this activity, students will work in pairs to create a case study on a particular FinTech payments technology that rivals Stripe.
+In this activity, the instructor should place students into groups of `2` individuals once again to create a case study on a particular FinTech robo-advisory technology that rivals Betterment.
 
 **File:** [README.md](Activities/02-Stu_FinTech_Case_Study/README.md)
 
-### 14. Instructor Do: Review FinTech Payments Case Study (15 min)
+### 14. Instructor Do: Review Betterment Robo-Advisory Case Study (15 min)
 
-Take some time to have students present their case study findings to the class.
+In this activity, students will present their case study findings to the class.
 
-Before proceeding with presentations, mention the following points. Be sure to give specific examples of how presentation and communication skills have helped you in your own career.
+Before proceeding with presentations, mention the following:
 
-* The secondary goal of this activity was to hone students' communication and presentation skills. These soft skills are key in the FinTech career space. 
-    
-* Consider the audience in both oral as well as written presentations. Be sure to use straightforward, clear language and avoid esoteric terms, especially if your audience is new to the FinTech space. 
+* The secondary goal of this activity was to hone students' communication and presentation skills. Point out the importance of these soft skills in the FinTech career space and give specific examples in your own careers where they've applied.
 
-* Each person in the group is expected to speak during the presentation. Public speaking skills are important, so there will be many opportunities throughout the course for students to present on various FinTech topics.
+* Make sure to think about the audience in both oral as well as written presentations. Fellow students like themselves who are new to the FinTech space will require language that is communicated in such a way that avoids using too many esoteric terms and instead provides clear easy to understand content.
 
-Allow groups 1 to 2 minutes to quickly present their findings.
+* Each person in the group is expected to speak during the presentation. Emphasize the importance of public speaking, and let students know that there will be more opportunities throughout the course for them to present on various FinTech topics.
+
+Then, allow groups `1-2` minutes to quickly present their findings.
 
 ### End Class
 
