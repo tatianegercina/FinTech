@@ -341,11 +341,15 @@ Answer any questions before moving on.
 
 ### 12. Student Do: Investigating FinTech Domains Part I (15 min)
 
+By this point, students have been given examples of the major domains within FinTech as well as the overarching trends across the industry. Now, students will work together in groups of 3-4 individuals to research and produce a broad summary overview of one of the FinTech domains.
+
+**File:** [README.md](Activities/01-Stu_FinTech_Domains/README.md)
+
 ---
 
 ### 13. Student Do: Investigating FinTech Domains Part II (20 min)
 
-By this point, students have been given examples of the major domains within FinTech as well as the overarching trends across the industry. Now, students will work together in groups of 3-4 individuals to research and produce hypothetical headlines for each FinTech domain that one could expect to witness within the next 2-3 years.
+ Now, students will work together in groups of 3-4 individuals to research and produce hypothetical headlines for each FinTech domain that one could expect to witness within the next 2-3 years.
 
 **File:** [README.md](Activities/01-Stu_FinTech_Domains/README.md)
 
