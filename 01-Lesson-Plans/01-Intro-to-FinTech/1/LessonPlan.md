@@ -238,9 +238,13 @@ Ask if there are any questions before moving on.
 
 ### 11. Instructor Do: Introduce Homework (10 min)
 
-In this part of the lesson, review the Unit 1 homework assignment.
+In this activity, instructors will review the Unit 1 homework assignment with the class.
 
-In the Unit 1 homework assignment, students will develop a case study based on a particular FinTech company or technology. Students should follow the corresponding case study template:
+**File:** [Unit 1 Homework](../../../02-Homework/01-FinTech/Instructions/README.md)
+
+Open the Unit 1 homework README file and explain the following:
+
+* Students will develop a case study based on a particular FinTech company or technology. Students should follow the corresponding case study template.
 
 `Overview and Origins`
 
