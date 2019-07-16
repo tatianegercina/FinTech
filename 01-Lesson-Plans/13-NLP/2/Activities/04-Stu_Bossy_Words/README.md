@@ -1,6 +1,6 @@
 # Who are the Bossy Words?
 
-On this activity you will use TF-IDF to find the most relevant words on news articles that talk about money in the [Reuters Corpus](https://www.nltk.org/book/ch02.html#reuters-corpus) bundled in `NLTK`. Once you find the most relevant words, you should create a word cloud.
+In this activity, students will use TF-IDF to find the most relevant words from a collection of news articles that talk about money in the [Reuters Corpus](https://www.nltk.org/book/ch02.html#reuters-corpus) bundled in `NLTK`. Once they find the most relevant words, they will visualize the words using a word cloud.
 
 ## Instructions
 
@@ -21,7 +21,7 @@ Once you get the TF-IDF weights, Create a DataFrame representation of the TF-IDF
 
 You should obtain a DataFrame like this:
 
-![Sample word frequency DataFrame](../../Images/tf_idf_words_frequency_df.png)
+![Sample word frequency DataFrame](Images/tf_idf_words_frequency_df.png)
 
 ### Retrieving the Top Words
 
@@ -31,7 +31,7 @@ Following this rule, create a new DataFrame containing only those words with the
 
 You should get a DataFrame like this:
 
-![Top words DataFrame example](../../Images/tf_idf_top_words_frequency_df.png)
+![Top words DataFrame example](Images/tf_idf_top_words_frequency_df.png)
 
 ### Creating Word Cloud
 
@@ -39,18 +39,20 @@ Now you have all the pieces needed to create a word cloud based on TF-IDF weight
 
 Your word cloud should be like this:
 
-![Sample word cloud](../../Images/tf_idf_word_cloud.png)
+![Sample word cloud](Images/tf_idf_word_cloud.png)
 
 ## Challenge: Looking for Documents that Contains Top Words
 
-If you have time you can word on the following challenge section.
+If you have time you can work on the following challenge section.
 
-Finally you might find interesting to search those articles that contain the most relevant words. Create a function called `retrieve_docs(terms)` that receive a list of terms as parameter and extract from the working corpus all those news articles that contains the search terms. On this function you should use the `reuters.words()` method to retrieve the tokenized version of each article as can be seen on the [Reuters Corpus documentation](https://www.nltk.org/book/ch02.html#reuters-corpus).
-
-**Hint:** To find any occurrence of the search terms you might find quite useful [this post on StackOverflow](https://stackoverflow.com/a/25102099/4325668), also you should lower case all the words to ease your terms search.
+As a challenge, search for articles that contain the most relevant words. Create a function called `retrieve_docs(terms)` that receive a list of terms as parameter and extract from the working corpus all those news articles that contains the search terms. In this function you should use the `reuters.words()` method to retrieve the tokenized version of each article as can be seen on the [Reuters Corpus documentation](https://www.nltk.org/book/ch02.html#reuters-corpus).
 
 Once you create the function answer the following questions:
 
 * Question 1: How many articles talk about Yen?
 * Question 2: How many articles talks about Japan or Banks?
 * Question 3: How many articles talk about England or Dealers?
+
+## Hints
+
+* On the challenge, you might find quite useful [this post on StackOverflow](https://stackoverflow.com/a/25102099/4325668) to find any occurrence of the search terms, also you should lower case all the words to ease your terms search.
