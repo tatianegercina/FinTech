@@ -4,7 +4,7 @@ You're trying to identify the top 5 performing days for Tesla investment returns
 
 ## Instructions
 
-Using the [starter file](Unsolved/out_of_sorts.ipynb) and NASDAQ historical stock, complete the following steps:
+Using the [starter file](Unsolved/out_of_sorts.ipynb) and NASDAQ historical stock data, complete the following steps:
 
 1. Navigate to [NASDAQ.com](https://nasdaq.com) and download ticker data. Load the CSV data into Pandas using `read_csv`.
 
@@ -23,4 +23,5 @@ Using the [starter file](Unsolved/out_of_sorts.ipynb) and NASDAQ historical stoc
 8. Plot the data.
 
 ---
+
 © 2019 Trilogy Education Services

@@ -1,33 +1,41 @@
 # Simple Moving Averages
 
-In this activity, Harold has been asked to plot the 20-day, 50-day, and 100-day Simple Moving Averages and Rolling Standard Deviations for Netflix stock (NFLX). Upper management is looking to potentially invest long-term in NFLX; however, they want to be sure that they'll be taking a position at the right time.
+Harold has been asked to plot the 20-day, 50-day, and 100-day simple moving averages and rolling standard deviations for Netflix stock (NFLX). Upper management is looking to potentially invest long term in NFLX, but they want to be sure that they'll be taking a position at the right time.
 
-Use the Pandas library to help Harold plot the Simple Moving Averages and Rolling Standard Deviations to generate insights regarding whether or not his company should currently invest in NFLX long-term.
+Use the Pandas library to help Harold plot the simple moving averages and rolling standard deviations in order to generate insights regarding whether or not the company should currently invest in NFLX long term.
 
 ## Instructions
 
-* Using the starter file provided, walk through the following steps.
+Using the [starter file](Unsolved/simple_moving_averages.ipynb), complete the following steps.
 
-  * Import libraries and dependencies
+1. Import libraries and dependencies.
 
-  * Read in the `nflx.csv` as a Pandas DataFrame and set the `date` column as a datetime index.
+2. Read in `nflx.csv` as a Pandas DataFrame, and set the Date column as a datetime index.
 
-  * Use the `rolling` function and set the `window` parameter to designate the time windows. Then use the `mean` function to calculate the following:
+3. Use the `rolling` function and set the `window` parameter to designate the time windows. Then, use the `mean` function to calculate the following:
 
-  * 20-Day Simple Moving Average
-  * 50-Day Simple Moving Average
-  * 100-Day Simple Moving Average
+    * 20-day simple moving average
 
-  * Overlay the SMAs on top of the plot for daily closing prices of NFLX.
+    * 50-day simple moving average
 
-  * Use the `rolling` function and set the `window` parameter to designate the time windows and use the `mean` function to calculate the following:
+    * 100-day simple moving average
 
-  * 20-Day Rolling Standard Deviation
-  * 50-Day Rolling Standard Deviation
-  * 100-Day Rolling Standard Deviation
+4. Overlay the plot for daily closing prices of NFLX with the SMAs.
 
-  * Overlay the STDs on top of the plot for daily closing prices of NFLX.
+5. Use the `rolling` function and set the `window` parameter to designate the time windows. Then, use the `mean` function to calculate the following:
 
-## Hints
+    * 20-day rolling standard deviation
 
-* To learn more about simple moving averages and how they work, read more [here](https://www.investopedia.com/terms/s/sma.asp)  
+    * 50-day rolling standard deviation
+  
+    * 100-day rolling standard deviation
+
+6. Overlay the plot for daily closing prices with the STDs.
+
+## Hint
+
+Go [here](https://www.investopedia.com/terms/s/sma.asp) to learn more about simple moving averages and how they work.
+
+---
+
+© 2019 Trilogy Education Services

@@ -6,11 +6,11 @@ This week we will cover...
 
 ### Lesson Plans
 
-* [4.1 - Lesson Plan](1/LessonPlan.md)
+* [4.1 Lesson Plan](1/LessonPlan.md)
 
-* [4.2 - Lesson Plan](2/LessonPlan.md)
+* [4.2 Lesson Plan](2/LessonPlan.md)
 
-* [4.3 - Lesson Plan](3/LessonPlan.md)
+* [4.3 Lesson Plan](3/LessonPlan.md)
 
 ### Homework
 
@@ -22,7 +22,7 @@ This week we will cover...
 
 * [Grading Rubric](Homework/GradingRubric.md)
 
-### Supplemental
+### Supplemental Resources
 
 * [Student Guide](Supplemental/StudentGuide.md)
 
@@ -32,4 +32,4 @@ This week we will cover...
 
 ### Copyright
 
-Trilogy Education Services © 2019. All Rights Reserved.
+© 2019 Trilogy Education Services
