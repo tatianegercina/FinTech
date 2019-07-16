@@ -349,7 +349,7 @@ By this point, students have been given examples of the major domains within Fin
 
 Now that students have had an opportunity to perform their own research on the various domains in FinTech and produce hypothetical news headlines for each FinTech domain, it's now time to facilitate a class discussion based on each group's findings.
 
-Open up [GroupMap](https://www.groupmap.com/), a collaborative brainstorming service and perform the following:
+Open up [GroupMap](https://www.groupmap.com/), a collaborative brainstorming service, and perform the following:
 
 * Create sections within the mapping document for each FinTech domain:
 
