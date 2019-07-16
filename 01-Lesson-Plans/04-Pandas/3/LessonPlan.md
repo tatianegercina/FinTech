@@ -46,7 +46,7 @@ Welcome students to the third day of Pandas! Cover the following points:
 
 * Mention to the class that today's focus is on using Pandas to make more informed (and better) investments! Students should feel invigorated as they are learning the techniques used by real financial analysts, quantitative traders, and portfolio managers.
 
-* Since today's class focuses more on groups of stocks rather than an individual stock, students should be prepared to push their mindset from that of analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.  
+* Since today's class focuses more on groups of stocks rather than an individual stock, students should be prepared to push their mindset from that of analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.
 
 * Energize your students! Today is the day where students truly begin leveraging the power of Pandas to create truly insightful analyses that can benefit their skills in financial analysis/investing.
 
@@ -99,7 +99,7 @@ Walk through the solution and highlight the following:
   ![line-chart](Images/line-chart.png)
   ![scatterplot](Images/scatterplot.png)
 
-* Use the `corr` function to calculate and output a matrix of correlation values for each column-to-column pair of a DataFrame. Correlation values range from `-1` to `0` to `+1`, where `-1` indicates a negative relationship (variables move inversely to one another), `0` indicates a neutral relationship (variables have no relationship and move randomly), and `+1` indicates a positive relationship (variables move in tandem with one another). 
+* Use the `corr` function to calculate and output a matrix of correlation values for each column-to-column pair of a DataFrame. Correlation values range from `-1` to `0` to `+1`, where `-1` indicates a negative relationship (variables move inversely to one another), `0` indicates a neutral relationship (variables have no relationship and move randomly), and `+1` indicates a positive relationship (variables move in tandem with one another).
 
   ![correlation.png](Images/correlation.png)
 
@@ -107,7 +107,7 @@ Walk through the solution and highlight the following:
 
   ![correlation_seaborn.png](Images/correlation-seaborn.png)
 
-* Remember that correlation does not imply causation! Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents` it does not mean that buying more ice cream causes people to drown. It merely states that there is a positive relationship between the numbers. Chances are, there is another factor at play which makes these two variables so positively correlated. One guess could be as temperatures increase (summer months) people tend to eat more ice cream and go swimming. 
+* Remember that correlation does not imply causation! Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents` it does not mean that buying more ice cream causes people to drown. It merely states that there is a positive relationship between the numbers. Chances are, there is another factor at play which makes these two variables so positively correlated. One guess could be as temperatures increase (summer months) people tend to eat more ice cream and go swimming.
 
 * In order to determine causation, regression analysis should be used where the premise is to find out how x predicts y.
 
@@ -152,7 +152,7 @@ Open the solution and explain the following:
 * Looking at the heatmap and cross-referencing the correlation table, it would appear as though AMD stock appears to be the least correlated out of any of the other semiconductor stocks. Therefore, AMD stock would be the best semiconductor stock to add to the existing portfolio.
 
   ![correlation-heatmap-focus](Images/correlation-heatmap-focus.png)
-  
+
   ![correlation-table-focus](Images/correlation-table-focus.png)
 
 * Before moving on, ask the students if they have any questions regarding correlation and portfolio diversification.
@@ -195,7 +195,7 @@ Walk through the solution and explain the following:
 
 ### 7. Students Do: Simple Moving Averages (15 mins)
 
-In this activity, students will calculate multiple windows of rolling statistics such as moving averages and rolling standard deviations in order to identify trends in average price and volatility/risk that can provide insight to the investment decisions of a particular stock. 
+In this activity, students will calculate multiple windows of rolling statistics such as moving averages and rolling standard deviations in order to identify trends in average price and volatility/risk that can provide insight to the investment decisions of a particular stock.
 
 **Instructions:**
 
@@ -217,7 +217,7 @@ Open the solution and explain the following:
 
   ![rolling-mean-calculation](Images/rolling-mean-calculation.png)
 
-* Notice the last `19` datetime indexes contain `NaN` values, this is because the `window` parameter has been set to `20` and therefore the last `19` indexes do not have enough data to support the `20` day time window. 
+* Notice the last `19` datetime indexes contain `NaN` values, this is because the `window` parameter has been set to `20` and therefore the last `19` indexes do not have enough data to support the `20` day time window.
 
   ![not-enough-window-data](Images/not-enough-window-data.png)
 
@@ -225,7 +225,7 @@ Open the solution and explain the following:
 
   ![sma-overlay](Images/sma-overlay.png)
 
-* When overlaying the STDs over the plot of the daily closing prices for NFLX, one can see the differences in volatility for different time scopes. 
+* When overlaying the STDs over the plot of the daily closing prices for NFLX, one can see the differences in volatility for different time scopes.
 
   ![std-overlay](Images/std-overlay.png)
 
@@ -235,7 +235,7 @@ Open the solution and explain the following:
 
 ### 9. Instructor Do: Beta (10 mins)
 
-In this activity, students will be introduced to the concept of beta and how it is used to determine the relative *unit-driven* performance of one variable to another. For example calculating the beta value of a stock's returns relative to the returns of the overall market. 
+In this activity, students will be introduced to the concept of beta and how it is used to determine the relative *unit-driven* performance of one variable to another. For example calculating the beta value of a stock's returns relative to the returns of the overall market.
 
 Students will learn how to calculate beta and how the concept of beta differs from correlation.
 
@@ -357,7 +357,7 @@ Walk through the solution and highlight the following:
 
 ### 13. Students Do: Portfolio Planner Part I (20 mins)
 
-In this activity, students will work in pairs to research a group of 10 stocks, find the least to most volatile stocks, drop the top 5 highly volatile stocks, set portfolio weights to the remaining stocks according to risk profile, and perform an analysis of a `$10,000` investment in the portfolio over time. 
+In this activity, students will work in pairs to research a group of 10 stocks, find the least to most volatile stocks, drop the top 5 highly volatile stocks, set portfolio weights to the remaining stocks according to risk profile, and perform an analysis of a `$10,000` investment in the portfolio over time.
 
 **Instructions:**
 
@@ -401,7 +401,7 @@ Open the solution and explain the following:
 
 ---
 
-### 16. Students Do: Portfolio Planner Part II (25 mins)
+### 16. Students Do: Portfolio Planner Part II (20 mins)
 
 In this activity, students will work in pairs to continue where they left off in part I of evaluating portfolios. Students will now evaluate correlations and sharpe ratios of the 10 stocks, filter by only non-correlated and positive sharpe ratio stocks, set equal-weighted portfolio allocations to the remaining stocks, and perform an analysis of a `$10,000` investment in the portfolio over time. Then compare the `$10,000` investment in the portfolio to other `$10,000` investments in lesser optimized portfolios.
 
@@ -467,9 +467,11 @@ Before moving onto the reserved in-class office hours at the end of the day, mak
 
 Let the students know that the following activity is reserved for in-class office hours and is there for anyone who might have additional questions; would like to review more; or would just like to discuss more FinTech related topics!
 
-### 19. Instructor Do: Structured Office Hours (30 mins)
+### 19. Instructor Do: Structured Review (35 mins)
 
-Please use the entire office hours time to review questions with the students.
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
+
+Please use the entire time to review questions with the students before officially ending class.
 
 Suggested Format:
 
