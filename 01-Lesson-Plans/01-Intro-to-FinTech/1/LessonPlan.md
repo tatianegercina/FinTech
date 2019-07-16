@@ -32,7 +32,7 @@ By the end of class, students will:
 
 ### Class Slides and Timetracker
 
-The slides for today can be viewed on Google Drive here: [Unit 1 Day 1 Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g54ab1329fa_1_44)
+The slides for today can be viewed on Google Drive here: [Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g54ab1329fa_1_44)
 
 To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Then, add the PDF file to your class repository along with other necessary files. [Instructions Here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit)
 
