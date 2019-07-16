@@ -374,7 +374,7 @@ Ask students if they have any questions before moving on.
 
 ---
 
-### 13. Instructor Do: Betterment Robo-Advisory Case Study (10 min)
+### 13. Instructor Do: Betterment Robo-Advisory Case Study (20 min)
 
 In this activity, students will be instructed on how to create a FinTech case study -- a compilation of holistic research performed on a FinTech company or technology. This activity is particularly important as it will serve as the knowledge foundation for students completing their FinTech case studies for the unit `1` homework.
 
@@ -398,27 +398,31 @@ Open the slideshow and walk through the following:
 
   * Similar companies such as WealthFront, Acorns, Stash, and many others have developed similar solutions.
 
----
+Advise students that they should generally seek to answer the following questions for their case studies:
 
-### 14. Student Do: Betterment Robo-Advisory Case Study (15 min)
+* `Company Sector`
 
-In this activity, the instructor should place students into groups of `2` individuals once again to create a case study on a particular FinTech robo-advisory technology that rivals Betterment.
+  * Which financial industry it is in?
 
-**File:** [README.md](Activities/02-Stu_FinTech_Case_Study/README.md)
+  * What are the trends and competitors in this industry?
 
-### 15. Instructor Do: Review Betterment Robo-Advisory Case Study (15 min)
+* `Company Business Activities`
 
-In this activity, students will present their case study findings to the class.
+  * What **problem** does this company solve?
 
-Before proceeding with presentations, mention the following:
+  * Who is their intended customer?
 
-* The secondary goal of this activity was to hone students' communication and presentation skills. Point out the importance of these soft skills in the FinTech career space and give specific examples in your own careers where they've applied.
+  * What solution does this company offer that their competitor does not or cannot? (What is the advantage they utilize?)
 
-* Make sure to think about the audience in both oral as well as written presentations. Fellow students like themselves who are new to the FinTech space will require language that is communicated in such a way that avoids using too many esoteric terms and instead provides clear easy to understand content.
+  * Which technologies are they currently using and how are they implementing them?
 
-* Each person in the group is expected to speak during the presentation. Emphasize the importance of public speaking, and let students know that there will be more opportunities throughout the course for them to present on various FinTech topics.
+  * What are they doing right? What could be improved?
 
-Then, allow groups `1-2` minutes to quickly present their findings.
+* `Recommendations:`
+
+  * What products or services would you suggest they add to their catalog? Why do you think it would benefit them?
+
+  * What technologies would your proposed ideas incorporate? Why are those technologies appropriate for your solution?
 
 ### End Class
 
