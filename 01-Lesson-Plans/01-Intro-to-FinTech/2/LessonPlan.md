@@ -339,13 +339,17 @@ Answer any questions before moving on.
 
 ---
 
-### 12. Student Do: FinTech Headlines (20 min)
+### 12. Student Do: Investigating FinTech Domains Part I (15 min)
+
+---
+
+### 13. Student Do: Investigating FinTech Domains Part II (20 min)
 
 By this point, students have been given examples of the major domains within FinTech as well as the overarching trends across the industry. Now, students will work together in groups of 3-4 individuals to research and produce hypothetical headlines for each FinTech domain that one could expect to witness within the next 2-3 years.
 
 **File:** [README.md](Activities/01-Stu_FinTech_Domains/README.md)
 
-### 13. Instructor Do: Review FinTech Headlines (20 min)
+### 14. Instructor Do: Review FinTech Headlines (20 min)
 
 Now that students have had an opportunity to perform their own research on the various domains in FinTech and produce hypothetical news headlines for each FinTech domain, it's now time to facilitate a class discussion based on each group's findings.
 
@@ -371,58 +375,6 @@ After the GroupMap review is complete, explain the following:
 * It is not enough to simply restate the past, but also to analyze and predict the future. Therefore, after this activity students should have a general idea as to the trends affecting each FinTech domain as well as the potential outcomes that may result for each domain within the near future.
 
 Ask students if they have any questions before moving on.
-
----
-
-### 14. Instructor Do: Betterment Robo-Advisory Case Study (15 min)
-
-In this activity, students will be instructed on how to create a FinTech case study -- a compilation of holistic research performed on a FinTech company or technology. This activity is particularly important as it will serve as the knowledge foundation for students completing their FinTech case studies for the unit `1` homework.
-
-**File:** [slideshow-placeholder]()
-
-Open the slideshow and walk through the following:
-
-* `Background`
-
-  * This case study researches the online financial advisory or "robo-advisory" company known as Betterment. Betterment is an examplar robo-advisory company that provides optimized and self-managed portfolios that customers can invest in based on their varying risk tolerances. In addition, Betterment provides financial advice based on specific customer goals and timelines, and offloads the work of things like portfolio re-balancing, dividend re-investments, auto-depositing, and much more.
-
-* `Use Case`
-  
-  * Traditionally, investment management services would first gauge a customer's investment risk level (conservative, neutral, aggressive) based on factors such as overall risk tolerance, financial goals, and duration of investment, and then proceed to manage a portfolio specifically tailored to that customer for a nominal overhead/maintenance fee. However, as overall technology advanced (as did machine learning/algorithmic trading), automated investment management services started becoming increasingly prevalent -- allowing investment management services to become more data-driven (and therefore intelligent) as well as cheaper due to automation.
-
-* `Advantages`
-
-  * Betterment provides a relatively cheap and easy-to-use service that makes investing simple, intuitive, and intelligent; Customers are given the benefits of investing in computer-optimized and self-managed portfolios based on their specific investment needs (risk tolerance, financial goals, and duration of investment) all the while paying a cheaper overhead/maintenance fee due to the efficiencies of automation. In addition, Betterment has additional features such as monthly auto-deposits to make saving even easier for its customers.
-
-* `Competitors`
-
-  * Similar companies such as WealthFront, Acorns, Stash, and many others have developed similar solutions.
-
-Advise students that they should generally seek to answer the following questions for their case studies:
-
-* `Company Sector`
-
-  * Which financial industry it is in?
-
-  * What are the trends and competitors in this industry?
-
-* `Company Business Activities`
-
-  * What **problem** does this company solve?
-
-  * Who is their intended customer?
-
-  * What solution does this company offer that their competitor does not or cannot? (What is the advantage they utilize?)
-
-  * Which technologies are they currently using and how are they implementing them?
-
-  * What are they doing right? What could be improved?
-
-* `Recommendations:`
-
-  * What products or services would you suggest they add to their catalog? Why do you think it would benefit them?
-
-  * What technologies would your proposed ideas incorporate? Why are those technologies appropriate for your solution?
 
 ### End Class
 
