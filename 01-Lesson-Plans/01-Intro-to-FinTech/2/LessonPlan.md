@@ -186,9 +186,40 @@ Encourage students to practice using GitHub before the next class and attend off
 
 ---
 
-### 7. Instructor Do: Evolution of FinTech (15 min)
+### 7. Student Do: Rip Van Winkle Thought Exercise (5 min)
 
-In this section, give students a brief summary of some of the key factors leading to the growth of the FinTech space. Understanding the historical background of FinTech as well as its current trajectory will give students knowledge that will help them both in employer interviews and their FinTech career. 
+In this activity, students think about how the current state of the FinTech world may differ from that of someone from the year 1999.
+
+Quickly explain to the class the following:
+
+* The story of Rip Van Winkle represents a short story by the American author Washington Irving, first published in 1819, that follows a Dutch-American villager in colonial America named Rip Van Winkle who falls asleep in the Catskill Mountains and wakes up 20 years later, completely missing the events of the American Revolution.
+
+* Adapting the Rip Van Winkle story to FinTech, imagine if a financial analyst fell asleep in the year 1999 and woke up today, what would be most surprising about the finance world?
+
+* Students should define areas of finance that have been deeply affected by technology, naming specific companies, products, or innovations that would be surprising to a sleeper from 1999.
+
+* Students should form groups of 3-4 individuals and will be expected to quickly present their thoughts in the following review activity.
+
+---
+
+### 8. Instructor Do: Review Rip Van Winkle Though Exercise (15 mins)
+
+In this activity, students present their opinions regarding the FinTech Rip Van Winkle thought experiment.
+
+Perform the following:
+
+* Give each group approximately 1-2 minutes to present their opinions on what would be most surprising to a sleeper from 1999 witnessing the current state of the finance world.
+
+* Take note of each group's findings and emphasize some of the overarching themes regarding the state of the current FinTech ecosystem. For example, some themes that are likely to present themselves are:
+
+  * Automation
+  * Big Data
+  * Mobile Infrastructure
+  * Cloud Infrastructure
+
+### 9. Instructor Do: Evolution of FinTech (15 min)
+
+In this section, give students a brief summary of some of the key factors leading to the growth of the FinTech space. Understanding the historical background of FinTech as well as its current trajectory will give students knowledge that will help them both in employer interviews and their FinTech career.
 
 **File:** [slideshow-placeholder]()
 
@@ -224,7 +255,7 @@ Answer any questions before moving on.
 
 ---
 
-### 8. Instructor Do: Facilitated Discussion About FinTech Domains (10 min)
+### 10. Instructor Do: Facilitated Discussion About FinTech Domains (10 min)
 
 This section will be a discussion of the current state of the FinTech industry and which financial sectors have been positively impacted by technological innovation. 
 
@@ -248,7 +279,7 @@ Ask the students the following questions:
 
 ---
 
-### 9. Instructor Do: FinTech Domains and Trends (10 min)
+### 11. Instructor Do: FinTech Domains and Trends (10 min)
 
 This section is a deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation. 
 
@@ -291,9 +322,9 @@ Open the slideshow and review the following FinTech domains:
   * InsurTech utilizes the benefits of machine learning to more efficiently group customers into risk profiles in order to provide the right type of insurance product. 
 
   * Fine-tuning the determination of customer risk profiles minimizes costs to those who would have been lumped together in a broader customer risk profile.  
-    
+
   * Examples: Lemonade, Slice, Ladder
-    
+
 * Alternative Finance
 
   * Alternative finance refers to the financial channels outside of the realm of traditional finance, such as regulated banks and capital markets, that facilitate capital borrowing and lending.
@@ -305,9 +336,10 @@ Open the slideshow and review the following FinTech domains:
 ![fintech-ecosystem](Images/fintech-ecosystem.png)
 
 Answer any questions before moving on.
+
 ---
 
-### 10. Student Do: Investigate FinTech Domains (20 min)
+### 12. Student Do: Investigate FinTech Domains (20 min)
 
 By this point, students have been given examples of the major domains within FinTech as well as the overarching trends across the industry. Now, working in pairs, students will research various FinTech domains.
 
@@ -329,7 +361,7 @@ Then, present students with questions such as the following.
 
 ---
 
-### 12. Instructor Do: Betterment Robo-Advisory Case Study (10 min)
+### 13. Instructor Do: Betterment Robo-Advisory Case Study (10 min)
 
 In this activity, students will be instructed on how to create a FinTech case study -- a compilation of holistic research performed on a FinTech company or technology. This activity is particularly important as it will serve as the knowledge foundation for students completing their FinTech case studies for the unit `1` homework.
 
@@ -355,13 +387,13 @@ Open the slideshow and walk through the following:
 
 ---
 
-### 13. Student Do: Betterment Robo-Advisory Case Study (15 min)
+### 14. Student Do: Betterment Robo-Advisory Case Study (15 min)
 
 In this activity, the instructor should place students into groups of `2` individuals once again to create a case study on a particular FinTech robo-advisory technology that rivals Betterment.
 
 **File:** [README.md](Activities/02-Stu_FinTech_Case_Study/README.md)
 
-### 14. Instructor Do: Review Betterment Robo-Advisory Case Study (15 min)
+### 15. Instructor Do: Review Betterment Robo-Advisory Case Study (15 min)
 
 In this activity, students will present their case study findings to the class.
 
