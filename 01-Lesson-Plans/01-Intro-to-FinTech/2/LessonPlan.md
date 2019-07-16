@@ -142,7 +142,7 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
 
 ---
 
-### 5. Everyone Do: Check Anaconda installation (0:05)
+### 5. Instructor Do: Check Anaconda installation (5 min)
 
 * Complete a quick check to ensure students have conda installed `conda` and added to their path.
 
@@ -158,7 +158,7 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
 
 ---
 
-### 6. Everyone Do: Create A Virtual Environment (0:10)
+### 6. Student Do: Create A Virtual Environment (10 min)
 
 * Next move on to explaining [virtual environments](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
