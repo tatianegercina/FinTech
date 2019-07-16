@@ -70,7 +70,7 @@ Open the slideshow and present the following questions and answers:
 
   **Answer:** Using the command line is efficient, as it does not expend the additional processing needed to produce the visuals associated with a graphical user interface (GUI).
 
-Open the command line and demo the following commands. Tell students that on a Mac, the command line is accessed via Terminal, while Windows uses Git Bash. 
+Open the command line and demo the following commands. Tell students that on a Mac, the command line is accessed via Terminal, while Windows uses Git Bash.
 
 * `cd` changes the directory.
 
@@ -281,7 +281,7 @@ Ask the students the following questions:
 
 ### 11. Instructor Do: FinTech Domains and Trends (10 min)
 
-This section is a deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation. 
+This section is a deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation.
 
 **File:** [slideshow-placeholder]()
 
@@ -297,7 +297,7 @@ Open the slideshow and review the following FinTech domains:
 
 * Robo Advisors and Personal Finance
 
-  * Robo advisors and personal finance companies provide wealth management, investment, and budgetary services that seek to help customers with their overall capital management and investments. 
+  * Robo advisors and personal finance companies provide wealth management, investment, and budgetary services that seek to help customers with their overall capital management and investments.
 
   * Often, wealth management solutions are driven by machine learning with automated trading and portfolio re-balancing, while budgetary services utilize machine learning to scan a customer's purchase history and identify buying habits to suggest areas in which they can save.
 
@@ -351,7 +351,7 @@ Now that students have had an opportunity to perform their own research on the v
 
 Have each group present their findings to the class one by one until all groups have presented. Presentations should be quick––approximately 1 to 2 minutes.
 
-Then, present students with questions such as the following. 
+Then, present students with questions such as the following.
 
 * How much of an impact did technology have in the success or failure of their companies?
 
