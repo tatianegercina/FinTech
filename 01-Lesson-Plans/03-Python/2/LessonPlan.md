@@ -2,19 +2,18 @@
 
 ### Overview
 
-Today’s class will focus on list and dict data structures and how to iterate over them. Students will work with nested lists and dicts, as well as utilize and define Python functions. This lesson will introduce more advanced Python operations, such as accessing and manipulating data from data structures, and showcase the efficiency of reusable code blocks known as functions.
+Today’s class will focus on list and dict data structures and how to iterate over them. Students will work with nested lists and dicts, as well as utilize and define reusable code blocks known as functions. This lesson will introduce more advanced Python operations, such as accessing and manipulating data from data structures, and showcase the efficiency of defining custom functions.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Recap previous Python concepts and implementations: variables, conditionals, and for loops. 
-* Identify the differences between homogeneous and heterogeneous data. 
+* Recap previous Python concepts and implementations: variables, conditionals, and for loops.
+* Identify the differences between homogeneous (same data type) and heterogeneous data (different data type). 
 * Access and manipulate data within list and dict objects using index-based elements and key-value pairs, respectively. 
 * Iterate over lists and dicts. 
-* Visualize and traverse nested lists and dicts. 
-* Iterate over nested lists and dicts. 
-* Define and call functions. 
+* Visualize and iterate over nested lists and dicts. 
+* Define and call custom functions. 
 
 - - -
 
@@ -26,6 +25,8 @@ By the end of class, students will be able to:
 
 * Nested lists and dicts may take some time to work through, as this topic requires a multi-level perspective. Remember to showcase the output of nested loops; it will be much easier for students to grasp the concept when they can visualize the result.
 
+* Some students may wonder about the benefits of using functions; it's because it's easier and less redundant to call upon a block of code that defines a specific programmatic action as a command rather than having to copy and paste the same block of code multiple times to achieve the same effect.
+
 * Make sure TAs circulate the classroom to provide help for students who may still be struggling with Python. If class is moving ahead of schedule, use the extra time to revisit concepts to help bring students up to speed. 
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx). 
@@ -36,9 +37,9 @@ By the end of class, students will be able to:
 
 **File:** [Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit?usp=sharing)
 
-Welcome students back to class. Open the slideshow to review today’s agenda. 
+Welcome students back to class. Open the slideshow and review today’s class objectives/agenda. 
 
-Do a quick review of the previous lesson by posing the following questions to the class: 
+Navigate to the refresher slide and do a quick review of the previous lesson by posing the following questions to the class: 
 
 * What is a terminal?
 
@@ -74,15 +75,21 @@ Ask if there are any questions before moving on.
 
 **Note:** Keep discussion informal at the beginning of the lecture. Data structures are a complex topic, especially as students begin to learn the conceptual difference between variables, data types, and data structures.
 
-To introduce the topic of lists, remind students of what they have been doing so far. 
+To introduce the topic of lists, remind students of what they have accomplished so far: 
 
 * Students have worked with variables, conditionals, and for loops. 
 
-* They have been able to automate some processes, but each program they've run has required some degree of hard-coding one-dimensional values, which can be boring.
+* They have been able to automate some processes, but each program they've run has required some degree of hard-coding one-dimensional values, which can be tedious and often inefficient (hard-coding makes a program static rather than dynamic).
 
-Tell students that in this class, they will begin to store data as collections and process values iteratively. The world of automation is banging at their doors! 
+Tell students that in this class, they will begin to store data as collections and process values iteratively or repeatedly. The world of automation is banging at their doors! 
 
-Introduce lists with the following analogy: 
+Introduce the definition of lists: 
+
+* A **list** is a Python data structure that allows multiple values to be stored inside of it. 
+
+* List values can be retrieved, appended, removed, and iterated upon.
+
+Review lists with the following analogy: 
 
 * If Python commands and operations are like workers assigned specific tasks to do, lists are like the conveyor belt in the assembly line. 
 
@@ -96,13 +103,7 @@ Use an example from the previous lesson to illustrate the limitations of supplyi
 
 * The program would have been even better if it allowed for a series of words to be cheered; this would have made the cheers more dynamic and interesting. 
 
-Review the definition of lists: 
-
-* A **list** is a Python data structure that allows multiple values to be stored inside of it. 
-
-* List values can be retrieved, appended, removed, and iterated.
-
-Open the cheerleading program in JupyterLab. Run the code to show students how using a list changes the output of the program. 
+Open the following cheerleading program in JupyterLab. Run the code to show students how using a list allows for more words and ultimately changes the output of the program. 
 
     ```python
     # Create a variable named cheer
@@ -132,6 +133,7 @@ Open the slideshow and use slides 5-7 to discuss basic concepts related to lists
 * A list in Python is a collection of ordered elements or values, separated by commas, with an index of "zero" for the first element.
 
   ```python
+  # Index: 0 = "green", 1 = "blue", 2 = "red", 3 = "purple"
   color_hats = ["green", "blue", "red", "purple"]
   ```
 
@@ -184,7 +186,7 @@ Open the `lists.py` file and explain the following:
   Bulbasaur
   ```
 
-* Use `[start:end]` slice notation to specify elements from the starting index to the ending index. 
+* Use `[start:end]` syntax or slice notation to specify elements from the starting index to the ending index. 
 
   ```python
   # Print elements from index 2 to index 5
@@ -492,21 +494,27 @@ Ask if there are any questions before moving on.
 
 **File:** [iterate_lists.py](Activities/03-Ins_Iterate_Lists/Solved/iterate_lists.py)
 
-Introduce the concept of iterating through a list in Python: 
+Introduce the concept of iterating over a list in Python: 
 
-* Iterating through lists is a powerful programming tool that will allow you to automate financial analysis and pipelines that assess collections of data points. 
+* Iterating over lists is a powerful programming tool that will allow you to automate financial analysis and pipelines that assess collections of data points. 
 
-* Learning how to iterate lists and execute operations against each element in a list puts you one step closer to creating programs that are completely automated.
+* Learning how to iterate over lists and execute operations against each element in a list puts you one step closer to creating programs that are completely automated.
 
 Open `iterate_lists.py` and cover the following points:
 
 * In Python, certain objects are considered **iterators**, or iterable objects. Iterators are objects that can be iterated on, meaning that you can loop through each value. Lists are iterators because you can loop through every element in the list.
 
-* In this example, each value of the `tips` list can be accessed using the `tip` variable. 
+* In this example, each value of the `cash_tips` list can be accessed using the `tip` variable. 
 
     * During each loop, the next value in the list is assigned to `tip` and can be used within the loop. 
     
     * When there are no more values, the loop ends.
+
+    ```python
+    # Showcase every tip in the list
+    for tip in cash_tips:
+    print(tip)
+    ```
 
 * The `+=` operator is used to cumulatively sum up numerical values when looping through a list. The following code snippets are operationally equivalent.
 
@@ -520,7 +528,7 @@ Open `iterate_lists.py` and cover the following points:
   total = total + tip
   ```
 
-* Conditionals can simulate common functions, such as calculating the `minimum` and `maximum` metrics within a list of values.
+* Iterating over lists while employing conditionals can simulate the calculation of common functions, such as calculating the `minimum` and `maximum` metrics within a list of values. As the list loops through each element, the variables `minimum` and `maximum` are continually compared to each element of the list to determine the value within the list that is the `minimum` and `maximum` value.
 
   ```python
   # Logic to determine minimum and maximum values
@@ -538,7 +546,7 @@ Ask if there are any questions before moving on.
 
 ### 6. Student Do: Trading Log (15 min)
 
-In this activity, students will use lists to create a trading log that tracks profits and losses for each market day of the month. They will iterate over the list to calculate the highest and lowest profit and loss days. The goal of this activity is to use for loops and lists in order to track multiple data points. 
+In this activity, students will use lists to create a trading log that tracks profits and losses for each market day of the month. They will iterate over the list to calculate the highest and lowest profit and loss days. The goal of this activity is to use for loops and lists in order to track metrics related to trading performance.
 
 **File:** [trading_log.py](Activities/04-Stu_Iterate_Lists/Unsolved/trading_log.py)
 
@@ -618,7 +626,7 @@ Define dictionary.
     
 * Dictionaries operate just like physical, language dictionaries: if you know the word, you can find the definition. The word is the key, and the value is the definition.
 
-To demonstrate the relationship between key and value, live code a simple example of declaring a dictionary. Explain: 
+To demonstrate the relationship between key and value, live code the following example of declaring a dictionary. Explain: 
 
 * The dictionary will contain the top traders for each month in 2019. 
     
@@ -665,7 +673,7 @@ Before starting the demonstration, pose the following scenario:
 
 * You don't know much about dictionaries, but you do know that you want your manager to see that you're innovative, and that you know how to create optimized Python programs!
 
-Demonstrate the syntax for creating a dictionary to store daily trading profits and losses:
+Open the solution and demonstrate the syntax for creating a dictionary to store daily trading profits and losses:
 
 * Dictionaries are syntactically defined via `{}`, curly braces, with key-value pairs separated by `:`, colons.
 
@@ -714,7 +722,7 @@ Demonstrate the syntax for creating a dictionary to store daily trading profits 
   03-31-2019: 321
   ```
 
-* Adding a new key-value pair entry to a dictionary is as easy as specifying a new key-value pair combination.
+* To add a new key-value pair to a dictionary, simply specify a new key-value pair combination.
 
   ```python
   # Add a new key-value pair
@@ -727,7 +735,7 @@ Demonstrate the syntax for creating a dictionary to store daily trading profits 
   {'title': 'Trading Log', '03-18-2019': -224, '03-19-2019': 352, '03-20-2019': 252, '03-21-2019': 354, '03-22-2019': -544, '03-23-2019': -650, '03-24-2019': 56, '03-25-2019': 123, '03-26-2019': -43, '03-27-2019': 254, '03-28-2019': 325, '03-29-2019': -123, '03-30-2019': 47, '03-31-2019': 321, '04-01-2019': 123, '04-02-2019': 133, '04-03-2019': -151, '04-04-2019': 613, '04-05-2019': 232, '04-06-2019': -311, '04-07-2019': 413}
   ```
 
-* Modifying an existing key-value pair within a dictionary is as easy as specifying a new value for that particular key.
+* To modify an existing key-value pair within a dictionary, specify a new value for that particular key.
 
   ```python
   # Modify a key value
@@ -766,7 +774,7 @@ Demonstrate the syntax for creating a dictionary to store daily trading profits 
   Yes, '04-03-2019' is one of the keys in the trading_pnl dictionary
   ```
 
-* For loops can be used with dictionaries to iterate over every key in the dictionary.
+* For loops can be used to iterate over every key in the dictionary.
 
   ```python
   # Print out dict keys via a for loop
@@ -798,7 +806,7 @@ Demonstrate the syntax for creating a dictionary to store daily trading profits 
   Key: 04-06-2019
   ```
 
-* For loops can be used in conjunction with operationally returning a value by a specific key to return all values in the dictionary.
+* For loops can be used to iterate over each key in the dictionary and use each key to call every corresponding value in the dictionary.
 
   ```python
   # Print out dict values
@@ -807,7 +815,7 @@ Demonstrate the syntax for creating a dictionary to store daily trading profits 
       print()
   ```
 
-* For loops can be used in conjunction with calling the `items()` dictionary function to return all key-value pairs in the dictionary.
+* For loops can be used with the `items()` function to return all key-value pairs in the dictionary.
 
   ```python
   # Print out dict key-value pairs
@@ -857,7 +865,7 @@ In this activity, students will practice creating a dictionary, as well as updat
 
 Open the solution file, `market_cap.py`, and explain the following:
 
-* The `banks` dictionary is heterogeneous, containing both int and float data types.
+* The `banks` dictionary is heterogeneous (different data types), containing both int and float data types (last value is a float).
 
   ```python
   # Initialize a dictionary of banks and market caps (in billions)
@@ -890,9 +898,7 @@ Open the solution file, `market_cap.py`, and explain the following:
     small_caps = []
   ```
 
-* Comparing against dictionary values allows us to pull the associated key for the corresponding action. 
-
-* Here, `market_cap` is compared to the running `minimum_value` and `maximum_value` variables to pull the corresponding key associated with those calculated values.
+* Conditionals compared against dictionary values allows us to pull the associated key for the corresponding action. Here, `market_cap` is compared to the running `minimum_value` and `maximum_value` variables to pull the corresponding key associated with the calculated values.
 
   ```python
   # Iterate over key-value pairs of the dictionary
@@ -923,7 +929,7 @@ Open the solution file, `market_cap.py`, and explain the following:
   Smallest Bank: Republic Bancorp
   ```
 
-* Similar to the determination of the banks associated with the minimum and maximum market cap values, it is possible to group banks by their associated market cap values.
+* Similar to the conditional logic used to determine the banks associated with the minimum and maximum market cap values, it is possible to group banks by their associated market cap values.
 
   ```python
   # Group banks by categories of market caps
@@ -964,13 +970,13 @@ Ask if there are any questions before moving on.
 
 * [nesting_dict_of_dicts.py](Activities/07-Ins_Nesting/Solved/nesting_dict_of_dicts.py)
 
-Introduce nesting by explaining that lists and dicts are really just data containers.
+Introduce nesting by explaining that lists and dictionaries are really just data containers.
 
-* The values in a list or dict can actually be other lists and dicts. This means that you can have a list of dictionaries or a dictionary where each value is a list. You can also have lists of lists and dicts of dicts! 
+* The values in a list or dictionary can actually be other lists and dictionaries. This means that you can have a list of dictionaries or a dictionary where each value is a list. You can also have lists of lists and dictionaries of dictionaries! 
 
 * This concept is called **nesting**, which is a powerful feature of the Python language because it provides a lot of flexibility for how data is stored.
 
-Walk through the solution and highlight the following:
+Walk through each corresponding solution and highlight the following:
 
 * Lists of lists contain multiple list elements. 
 
@@ -990,7 +996,7 @@ Walk through the solution and highlight the following:
   ]
   ```
 
-* When a nested list object has been created, data needs to be retrieved. Accessing elements in a nested list works similar to a one-dimensional list: 
+* When a nested list object has been created, the next step is to access the data. Accessing elements in a nested list works similar to a one-dimensional list: 
 
     * To access elements, call the list object and then specify the index for the desired value. 
     
@@ -1021,7 +1027,7 @@ Walk through the solution and highlight the following:
   print(f"{first_entry_name} is {first_entry_age} years old, serving as {first_entry_occupation}.")
   ```
 
-* Lists of dicts are similar to lists of lists; however, the nested level is comprised of dicts rather than lists.
+* Lists of dictionaries are similar to lists of lists; however, the nested level is comprised of dictionaries rather than lists.
 
   ```python
   # List of Dicts
@@ -1044,11 +1050,11 @@ Walk through the solution and highlight the following:
   ]
   ```
 
-* Access and manipulate nested dict objects in the same way as dictionaries. 
+* Access and manipulate nested dictionary objects in the same way as dictionaries. 
 
-    * To retrieve data from a list with nested dict objects, call the list with the index of the dict element that is desired. This will return the entire dictionary. 
+    * To retrieve data from a list with nested dictionary objects, call the list with the index of the dictionary element that is desired. This will return the entire dictionary. 
     
-    * If a specific dict value is desired, call the list with the index of the dict element and the corresponding dict key.
+    * If a specific dictionary value is desired, call the list with the index of the dictionary element and the corresponding dictionaryWalk through the solution key.
 
   ```python
   # List of Dicts
@@ -1081,9 +1087,9 @@ Walk through the solution and highlight the following:
   print(f"The second entry in ceo_nested_dict is {second_entry_name}, a {second_entry_age} year old {second_entry_occupation}.")
   ```
 
-Review how to declare and traverse nested dictionaries.
+Review how to declare and access nested dictionaries.
 
-* Dictionaries of lists are objects based on key-value pairs. Unlike regular dicts, dicts of lists have more than one entry for the value.
+* Dictionaries of lists are objects based on key-value pairs. Unlike regular dictionaries, dictionaries of lists have more than one entry for the value.
 
   ```python
   # Dict
@@ -1103,7 +1109,7 @@ Review how to declare and traverse nested dictionaries.
   }
   ```
 
-* Data can be accessed from dicts of lists by calling the dictionary and specifying the key for the desired entry. A specific value from the list object can be retrieved by providing the index.
+* Data can be accessed from dictionaries of lists by calling the dictionary and specifying the key for the desired entry. A specific value from the list object can be retrieved by providing the index.
 
   ```python
   # Dictionary of Lists
@@ -1125,7 +1131,7 @@ Review how to declare and traverse nested dictionaries.
   print(f"APPL ticker stands for {appl_name}. APPL stock price is currently {appl_stock_price}, and it is available on {appl_exchange}.")
   ```
 
-* Dictionaries of dicts are objects based on nested key-value pairs. Unlike dicts of lists, dicts of dicts will have a dictionary as the value.
+* Dictionaries of dictionaries are objects based on nested key-value pairs. Unlike dictionaries of lists, dictionaries of dictionaries will have a dictionary as the value.
 
   ```python
   # Dictionary of Dicts
@@ -1153,7 +1159,7 @@ Review how to declare and traverse nested dictionaries.
   }
   ```
 
-* The top-level dictionary item can be accessed by calling the dictionary and specifying the key. Individual elements in the value collection can be accessed by specifying the key of the nested dict.
+* The top-level dictionary item can be accessed by calling the dictionary and specifying the key. Individual elements in the value collection can be accessed by specifying the key of the nested dictionary.
 
   ```python
   # Dictionary of Dicts
@@ -1196,7 +1202,7 @@ Ask if there are any questions before moving on.
 
 ### 14. Student Do: Weekly Gains (20 min)
 
-In this activity, students will work with nested data structures in a Python file. Students will store daily stock data in a list and then store that list in a dictionary. The key of the dictionary will be the stock tickers. They will then retrieve stock data from the dictionary for specific days.
+In this activity, students will work with nested data structures. Students will store daily stock data in a list and then store that list in a dictionary. They will then retrieve stock data from the dictionary for specific days.
 
 Encourage students to work with a partner on this activity.
 
@@ -1313,7 +1319,7 @@ Open the solution file, `weekly_gains.py`, and explain the following:
   print(historical_stock_data)
   ```
 
-* To calculate the weekly gains, take the closing prices of the first and last record of the list of daily prices for each stock ticker. The list index notations `list[0]` and `list[-1]` target the first and last elements of a list, respectively.
+* To calculate the weekly gains, use the closing prices of the first and last record of the list of daily prices for each stock ticker. The list index notations `list[0]` and `list[-1]` target the first and last elements of a list, respectively.
 
   ```python
   # Initialize 'results' dictionary to hold weekly change of each ticker
@@ -1347,7 +1353,7 @@ Ask if there are any questions before moving on.
 
 Open the slideshow and go to the slides on functions. Explain the following:
 
-* This section on functions is meant to help write programs with modularity. **Modularity** is the degree to which components or parts can be separated or decoupled from a whole.
+* This section on functions is meant to help write programs with modularity. **Modularity** is the degree to which code components or parts can be separated or decoupled from a whole.
 
 * **Modularity** greatly improves code readability and ensures that reusable lines of code are reused in an efficient, effective way.
 
@@ -1355,17 +1361,22 @@ Open the slideshow and go to the slides on functions. Explain the following:
 
 Define functions. 
 
-* **Functions** offer a methodology for splitting up blocks of code that are redundant or need to be reused. 
+* **Functions** are blocks of callable, reusable code that often perform repeated programmatic actions. Functions can optionally take in inputs or *parameters*. 
 
-* Functions are valuable because they make programs more modular and reusable. 
+* Functions are valuable because they make programs more more readable, modular, and reusable. 
 
 * Functions can be created by a developer or imported from a library. 
 
   ```python
   import math
+  print('pi is', math.pi)
   ```
 
-Explain what "reinventing the wheel" means and the drawbacks of not leveraging reusable/repeatable assets.
+  ```
+  pi is 3.141592653589793
+  ```
+
+Explain that "reinventing the wheel" means to do something that has already been done. Therefore, explain the drawbacks of not leveraging reusable/repeatable assets and ultimately how functions fit into this analogy.
 
 Engage students by asking if they can remember any of the functions used in class so far. For example: 
 
@@ -1389,7 +1400,7 @@ Ask if there are any questions before moving on.
 
 **File:** [functions.py](Activities/09-Ins_Functions/Solved/functions.py)
 
-Open `functions.py` and facilitate a discussion focused on the following points: 
+Open `functions.py` and present to the class the following points: 
 
 * Functions allow you to define a reusable block of code. This code block (function) can be used whenever or wherever you need it within a program. 
 
@@ -1415,7 +1426,7 @@ def main():
 main()
 ```
 
-Review the mechanics of function inputs and outputs while showing the code:
+Then, review the mechanics of function inputs and outputs while showing the code:
 
 * Functions can have inputs. 
 
@@ -1514,7 +1525,7 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 18. Student Do: Functions (20 min)
+### 18. Student Do: Finally Functioning (20 min)
 
 In this activity, students will define a function to calculate compound annual growth rate (CAGR) for an investment portfolio. The goal of this activity is for students to use functions to modularize code and reduce redundancy.
 
@@ -1524,7 +1535,7 @@ Encourage students to work with a partner on this activity.
 
 **Instructions:** [README.md](Activities/10-Stu_Functions/README.md)
 
-### 19. Instructor Do: Review Functions (10 min)
+### 19. Instructor Do: Review Finally Functioning (10 min)
 
 **File:** [finally_functioning.py](Activities/10-Stu_Functions/Solved/finally_functioning.py)
 
@@ -1614,7 +1625,11 @@ To guide students, you may want to follow up with questions such as:
 
 * Can functions accept other functions as arguments?
 
+    **Answer:** Yes, functions can be called within the definition of another function.
+
 * What would happen if you called a function within a `for` loop?
+
+    **Answer:** The function would be called multiple times until the end of the for loop.
 
 * What has been your experience working with functions so far?
 
@@ -1622,13 +1637,13 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 20. Instructor Do: Reflection and End Class 
+### 20. Instructor Do: Reflection and End Class
 
-Use the last few minutes of class to give the students encouraging and positive feedback. Remind them that they're one step closer to conquering Python and becoming FinTech visionaries!
+Use the last few minutes of class to give the students encouraging and positive feedback. Remind them that they're one step closer to conquering Python and becoming Masters of FinTech!
 
 Then give students an opportunity to share any thoughts they have about this lesson and the course so far. Ask questions such as the following: 
 
-* What activity was the most enjoyable to complete? What was the most fulfilling activity?
+* What activity was the most enjoyable (fun) to complete? What was the most fulfilling (challenging) activity?
 
 * What do you find to be the most stressful aspect of programming?
 

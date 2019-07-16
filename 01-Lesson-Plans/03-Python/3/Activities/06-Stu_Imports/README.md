@@ -1,8 +1,8 @@
-# Net Present Value
+## Net Present Value
 
 In this activity, you will conduct financial analysis on three potential company projects that are categorized as conservative, neutral, and aggressive. Then, you will use the NPV function to determine which project scenario is the optimal choice. 
 
-##Background 
+### Background 
 
 NPV, or net present value, compares the initial investment of a project to the sum of all the present values of the subsequent projected cash flows. Therefore, positive NPV values indicate a project that is profitable and should be considered; negative NPV values indicate a project that is not profitable and should not be considered.
 
@@ -11,7 +11,7 @@ In this activity, you will conduct financial analysis on three project scenarios
 You will use the NPV function from the NumPy library to calculate the NPV values for each project scenario, and determine the scenario that has the highest NPV value, 
 or the project that is the optimal choice.
 
-## Instructions
+### Instructions
 
 Use the [starter-file](Activities/06-Stu_Imports/Unsolved/net_present_value.py) to complete the following steps.
 
@@ -30,7 +30,7 @@ Your results should look similar to the following:
   The optimal project scenario to undertake is 'neutral' with a NPV of 401.91926780957544
   ```
 
-## Challenge
+### Challenge
 
 Use a for loop and an if-else conditional to calculate the max NPV value and associated key from the `npv_dict` dictionary. This will eliminate the need to manually choose the project scenario that has the max NPV value.
 
@@ -43,5 +43,7 @@ Your results should look similar to the following:
   ---------------------------------------------------------
   The project scenario with the max NPV value is 'neutral' with a NPV of 401.91926780957544
   ```
+
 ---
+
 © 2019 Trilogy Education Services

@@ -1,6 +1,6 @@
-# Weekly Gains
+## Weekly Gains
 
-## Background
+### Background
 
 The stock markets have been closed since 4:00 p.m., and now it's almost 5:00 p.m. on Friday. As his job entails, Harold needs to close out another week of gathering stock data in order to calculate a report of the weekly gains of his list of stocks.
 
@@ -8,7 +8,7 @@ Harold usually performs this task by manually looking up the stock price records
 
 Help Harold by creating a program to automate his data gathering process and weekly gains calculations.
 
-## Instructions
+### Instructions
 
 Using the [starter-file](Unsolved/Core/weekly_gains.py) provided, complete the following steps:
 
@@ -29,7 +29,7 @@ Using the [starter-file](Unsolved/Core/weekly_gains.py) provided, complete the f
     {'AAPL': [['04-17-2019', 199.54, 203.38, 198.61, 203.13], ['04-18-2019', 199.46, 201.37, 198.56, 199.25], ['04-19-2019', 198.58, 199.85, 198.01, 199.23], ['04-20-2019', 199.2, 200.14, 196.21, 198.87], [['04-21-2019', 200.85, 201.0, 198.44, 198.95]], ['04-21-2019', 200.85, 201.0, 198.44, 198.95]], 'MU': [['04-17-2019', 43.2, 43.53, 42.79, 43.4], ['04-18-2019', 43.36, 44.05, 42.76, 43.15], ['04-19-2019', 42.26, 42.93, 42.08, 42.76], ['04-20-2019', 42.17, 42.23, 41.2, 41.82], [['04-21-2019', 42.85, 43.2, 41.81, 42.01]], ['04-21-2019', 42.85, 43.2, 41.81, 42.01]], 'AMD': [['04-17-2019', 27.6, 27.88, 27.34, 27.68], ['04-18-2019', 28.21, 28.27, 27.22, 27.49], ['04-19-2019', 27.72, 28.18, 27.49, 27.93], ['04-20-2019', 27.8, 27.84, 26.96, 27.33], [['04-21-2019', 28.21, 28.38, 27.66, 27.85]], ['04-21-2019', 28.21, 28.38, 27.66, 27.85]], 'TWTR': [['04-17-2019', 34.67, 34.86, 34.32, 34.4], ['04-18-2019', 34.73, 34.9, 34.2, 34.48], ['04-19-2019', 34.84, 34.99, 34.23, 34.46], ['04-20-2019', 34.38, 35.03, 34.34, 34.71], [['04-21-2019', 34.67, 34.83, 34.11, 34.37]], ['04-21-2019', 34.67, 34.83, 34.11, 34.37]]}
     ```
 
-## Challenge
+### Challenge
 
 Calculate the weekly gains for each stock ticker and assign to a `results` dictionary for each stock ticker.
 
@@ -41,10 +41,14 @@ Calculate the weekly gains for each stock ticker and assign to a `results` dicti
 
   * Set the `ticker_weekly_close` to the corresponding ticker in the `results` dictionary.
 
-## Hint
+### Hint
 
 Your results should look similar to the following:
 
   ```
   {'AAPL': -2.06, 'MU': -3.2, 'AMD': 0.61, 'TWTR': -0.09}
   ```
+
+---
+
+© 2019 Trilogy Education Services

@@ -919,7 +919,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 17. Student Do: Risky Business (20 min)
+### 17. Student Do: Risky Business (15 min)
 
 It's time to put it all together. In this activity, students will prep data and use standard deviation and Sharpe ratios to analyze cryptocurrency portfolio performance. The goal is to calculate which portfolio has the highest risk. Students will also identify which individual cryptos have had the greatest return. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
@@ -931,7 +931,7 @@ Encourage students to work in pairs to complete this activity.
 
 ---
 
-### 18. Instructor Do: Review Risky Business (10 min)
+### 18. Instructor Do: Review Risky Business (5 min)
 
 **File:** [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_business.ipynb)
 

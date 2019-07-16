@@ -1,12 +1,12 @@
-# Market Capitalization
+## Market Capitalization
 
-## Background 
+### Background 
 
 Sam wants to categorize banks by their market capitalizations, which is the total dollar market value of a company's outstanding shares. Because she wants to know the relationship between a certain bank and its market capitalization, Sam uses a dictionary to index bank names to the value of its market cap. 
 
 Sam needs to make a few changes to her dictionary of bank market caps because she noticed a few errors and omissions. Help Sam fix her dictionary of bank market caps, and even better, help her group the banks by their corresponding market capitalization tier.
 
-## Instructions
+### Instructions
 
 Using the starter file provided, walk through the following steps.
 
@@ -30,11 +30,11 @@ Using the starter file provided, walk through the following steps.
  
   * Change the market cap for `Citigroup` to `170`.
 
-  * Add a new bank to the dictionary `American Express` and set the market cap to `33`.
+  * Add a new bank `American Express` to the dictionary and set the market cap to `33`.
 
   * Delete `Wachovia` from the dictionary, as it is a deprecated bank acquired by Wells Fargo in 2008.
 
-## Challenge
+### Challenge
 
 Group banks by their corresponding market capitalization tier.
 
@@ -46,17 +46,17 @@ Group banks by their corresponding market capitalization tier.
     * Largest bank
     * Smallest bank
 
-  * Use an if-else statement and lists to compare and group banks by their corresponding market capitalization: mega-cap, large-cap, mid-cap, and small-cap.
+  * Use an if-else statement and lists to compare and group banks by their corresponding market capitalization: `mega-cap`, `large-cap`, `mid-cap`, and `small-cap`.
 
-    * mega-cap: Market capitalization greater than or equal to $300 billion.
+    * `mega-cap`: Market capitalization greater than or equal to $300 billion.
 
-    * large-cap: Market capitalization greater than or equal to $10 billion and less than $300 billion.
+    * `large-cap`: Market capitalization greater than or equal to $10 billion and less than $300 billion.
 
-    * mid-cap: Market capitalization greater than or equal to $2 and less than $10 billion.
+    * `mid-cap`: Market capitalization greater than or equal to $2 and less than $10 billion.
 
-    * small-cap: Market capitalization greater than or equal to $300 million and less than $2 billion.
+    * `small-cap`: Market capitalization greater than or equal to $300 million and less than $2 billion.
 
-## Hints
+### Hints
 
 Your results should look similar to the following:
 
@@ -72,3 +72,7 @@ Large Cap Banks: ['Citigroup', 'Wells Fargo', 'Goldman Sachs', 'Morgan Stanley',
 Mid Cap Banks: ['FNB Corporation', 'First Hawaiian Bank']
 Small Cap Banks: ['Republic Bancorp']
 ```
+
+---
+
+© 2019 Trilogy Education Services

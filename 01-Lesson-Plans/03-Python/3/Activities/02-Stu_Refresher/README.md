@@ -1,6 +1,6 @@
-# Refresher Activity: Email Marketing
+## Refresher Activity: Email Marketing
 
-## Background
+### Background
 
 A company's marketing department wants to understand the differences in purchasing activity among the firm's customers in order to create personalized email newsletters for each customer.
 
@@ -8,7 +8,7 @@ Harold has been asked to categorize customers based on their sales revenue and a
 
 Help Harold create a program that will achieve the marketing department's goals––and impress them!
 
-## Instructions
+### Instructions
 
 * Create a function named `create_phrase` that takes in `name` and `revenue` as parameters, and returns a dynamic greeting based on revenue conditionals:
 

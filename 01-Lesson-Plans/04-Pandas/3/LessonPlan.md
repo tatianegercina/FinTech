@@ -168,7 +168,7 @@ Open the solution file, [diversification.ipynb](Activities/02-Stu_Correlation/So
 * Look at the heatmap and cross reference the correlation table. It would appear as though AMD stock appears to be the least correlated of the semiconductor stocks. Therefore, AMD stock would be the best semiconductor stock to add to the existing portfolio.
 
   ![correlation-heatmap-focus](Images/correlation-heatmap-focus.png)
-  
+
   ![correlation-table-focus](Images/correlation-table-focus.png)
 
 Ask if there are any questions before moving on.
@@ -211,7 +211,11 @@ Walk through the solution and explain the following:
 
 ---
 
-### 7. Student Do: Simple Moving Averages (15 min)
+### 7. Students Do: Simple Moving Averages (15 mins)
+
+In this activity, students will calculate multiple windows of rolling statistics such as moving averages and rolling standard deviations in order to identify trends in average price and volatility/risk that can provide insight to the investment decisions of a particular stock.
+
+**Instructions:**
 
 In this activity, students will calculate multiple windows of rolling statistics such as moving averages and rolling standard deviations. The goal is to identify trends in average price and volatility/risk in order to make the smartest investment decision.
 
@@ -247,11 +251,9 @@ Open the solution file, [simple_moving_averages.ipynb](Activities/04-Stu_Rolling
 
 Ask if there are any questions before moving on.
 
----
-
 ### 9. Instructor Do: Beta (10 min)
 
-This section introduces students to the concept of beta and how it is used to determine the relative unit-driven performance of one variable to another –– e.g., calculating the beta value of a stock's returns relative to the returns of the overall market.
+In this activity, students will be introduced to the concept of beta and how it is used to determine the relative *unit-driven* performance of one variable to another. For example calculating the beta value of a stock's returns relative to the returns of the overall market.
 
 **File:** [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb)
 
@@ -363,11 +365,9 @@ Open [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio
 
 Ask if there are any questions before moving on.
 
----
-
 ### 13. Student Do: Portfolio Planner, Part 1 (20 min)
 
-In this activity, students will work in pairs to research a group of 10 stocks, and then do the following: find the least and most volatile stocks; drop the top 5 highly volatile stocks; set portfolio weights to the remaining stocks according to risk profile; and perform an analysis of a $10,000 investment in the portfolio over time.
+In this activity, students will work in pairs to research a group of 10 stocks, find the least to most volatile stocks, drop the top 5 highly volatile stocks, set portfolio weights to the remaining stocks according to risk profile, and perform an analysis of a `$10,000` investment in the portfolio over time.
 
 **File:** [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Unsolved/portfolio_planner_part_1.ipynb)
 
@@ -409,7 +409,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 16. Student Do: Portfolio Planner, Part 2 (25 min)
+### 16. Students Do: Portfolio Planner Part II (20 mins)
 
 In this activity, students will work in pairs to continue from where they left off in Part 1 of their portfolio evaluation. In this next part, students will evaluate correlations and Sharpe ratios of the 10 stocks, and then filter by only non-correlated and positive Sharpe ratio stocks. They will also set equal-weighted portfolio allocations to the remaining stocks and perform an analysis of a $10,000 investment in the portfolio over time. Finally, they will compare the $10,000 investment in the portfolio to other $10,000 investments in lesser optimized portfolios.
 
@@ -479,11 +479,11 @@ Ask students questions such as the following:
 
 Remind students that mastery doesn't happen in a day. Practice makes perfect!
 
-Let students know that the next 30 minutes is reserved for in-class office hours. These are meant for anyone who has additional questions, wants extra review time, or would just like to discuss FinTech-related topics!
+### 19. Instructor Do: Structured Review (35 mins)
 
-### 19. Instructor Do: Structured Office Hours (30 min)
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
 
-Please use the entire allotted time for review.
+Please use the entire time to review questions with the students before officially ending class.
 
 Suggested Format:
 
