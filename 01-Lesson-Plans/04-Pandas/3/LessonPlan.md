@@ -1,4 +1,4 @@
-## Whiteboard Interviews Lesson Plan - Practice Makes Perfect!
+## 4.2 Lesson Plan: Whiteboard Interviews - Practice Makes Perfect! (10:00 AM)
 
 ### Overview
 
