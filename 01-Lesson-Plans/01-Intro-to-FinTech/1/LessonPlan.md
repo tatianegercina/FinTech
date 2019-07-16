@@ -44,21 +44,11 @@ The Timetracker for today can be viewed here: [Timetracker](TimeTracker.xlsx)
 
 ### 1. Instructor Do: Introductions (40 min)
 
-In this first part of the lesson, everyone associated with this FinTech course will introduce themselves to the class. This includes the student success managers (SSMs), instructor, and teacher assistants (TAs), as well as university staff, program directors, student services directors, and career directors. Students will also have an opportunity to introduce themselves. The goal here is to break the ice and get the class acquainted with the staff and each other.
+This activity will be led by the SSM. They will discuss student attendance, graduation requirements, and share opportunities to get support.
 
-* The first 40 minutes of class consists of introductions from the following:
+During this activity, every team member associated with this course will introduce themselves to break the ice and get to know each other. This includes Student Success Managers (SSMs), university staff, program directors, Career Directors, individual students, and Instructional Staff.
 
-  * Student success managers (SSMs), along with (potentially) university staff, program directors, student services director, and career directors
-
-  * Individual students
-
-  * Teacher assistants (TAs)
-
-  * Instructors
-
-* The SSM, university staff, and career services team will most likely present their own introductions based on their respective department criteria.
-
-As you and the TAs introduce yourself, feel free to include the topics below. However, be sure to keep your introduction brief, as there is a great deal to cover in this first class.
+As you introduce yourself, feel free to include the topics below. However, be sure to keep your introduction brief, as there is a great deal to cover in this first class.
 
 * What is your career history? Where did you start and where are you now?
 
