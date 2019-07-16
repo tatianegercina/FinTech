@@ -142,7 +142,7 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
 
 ---
 
-### 5. Instructor Do: Check Anaconda installation (5 min)
+### 5. Instructor Do: Anaconda Virtual Environments (20 min)
 
 * Complete a quick check to ensure students have conda installed `conda` and added to their path.
 
@@ -155,10 +155,6 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
 * Have TAs help any students with issues. The most common problem will be students with Windows that don't have the Anaconda PATH variable set.
 
   * This can be fixed by manually adding the PATH to Windows' environment variables, but can be more easily solved by uninstalling/reinstalling Anaconda and making sure to check the "Install to Path" box that comes up in a menu.
-
----
-
-### 6. Student Do: Create A Virtual Environment (10 min)
 
 * Next move on to explaining [virtual environments](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
@@ -186,11 +182,11 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
 
 ---
 
-### 7. BREAK (15 min)
+### 6. BREAK (15 min)
 
 ---
 
-### 8. Student Do: Rip Van Winkle Thought Exercise (5 min)
+### 7. Student Do: Rip Van Winkle Thought Exercise (5 min)
 
 In this activity, students think about how the current state of the FinTech world may differ from that of someone from the year 1999.
 
@@ -206,7 +202,7 @@ Quickly explain to the class the following:
 
 ---
 
-### 9. Instructor Do: Review Rip Van Winkle Though Exercise (15 mins)
+### 8. Instructor Do: Review Rip Van Winkle Though Exercise (15 mins)
 
 In this activity, students present their opinions regarding the FinTech Rip Van Winkle thought experiment.
 
@@ -221,7 +217,7 @@ Perform the following:
   * Mobile Infrastructure
   * Cloud Infrastructure
 
-### 10. Instructor Do: Evolution of FinTech (15 min)
+### 9. Instructor Do: Evolution of FinTech (15 min)
 
 In this section, give students a brief summary of some of the key factors leading to the growth of the FinTech space. Understanding the historical background of FinTech as well as its current trajectory will give students knowledge that will help them both in employer interviews and their FinTech career.
 
@@ -259,7 +255,7 @@ Answer any questions before moving on.
 
 ---
 
-### 11. Instructor Do: Facilitated Discussion About FinTech Domains (10 min)
+### 10. Instructor Do: Facilitated Discussion About FinTech Domains (10 min)
 
 This section will be a discussion of the current state of the FinTech industry and which financial sectors have been positively impacted by technological innovation.
 
@@ -283,7 +279,7 @@ Ask the students the following questions:
 
 ---
 
-### 12. Instructor Do: FinTech Domains and Trends (10 min)
+### 11. Instructor Do: FinTech Domains and Trends (10 min)
 
 This section is a deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation.
 
@@ -343,13 +339,13 @@ Answer any questions before moving on.
 
 ---
 
-### 13. Student Do: FinTech Headlines (20 min)
+### 12. Student Do: FinTech Headlines (20 min)
 
 By this point, students have been given examples of the major domains within FinTech as well as the overarching trends across the industry. Now, students will work together in groups of 3-4 individuals to research and produce hypothetical headlines for each FinTech domain that one could expect to witness within the next 2-3 years.
 
 **File:** [README.md](Activities/01-Stu_FinTech_Domains/README.md)
 
-### 14. Instructor Do: Review FinTech Headlines (20 min)
+### 13. Instructor Do: Review FinTech Headlines (20 min)
 
 Now that students have had an opportunity to perform their own research on the various domains in FinTech and produce hypothetical news headlines for each FinTech domain, it's now time to facilitate a class discussion based on each group's findings.
 
@@ -378,7 +374,7 @@ Ask students if they have any questions before moving on.
 
 ---
 
-### 15. Instructor Do: Betterment Robo-Advisory Case Study (15 min)
+### 14. Instructor Do: Betterment Robo-Advisory Case Study (15 min)
 
 In this activity, students will be instructed on how to create a FinTech case study -- a compilation of holistic research performed on a FinTech company or technology. This activity is particularly important as it will serve as the knowledge foundation for students completing their FinTech case studies for the unit `1` homework.
 
