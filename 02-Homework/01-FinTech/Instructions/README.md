@@ -9,7 +9,8 @@ As a FinTech professional, it is critical to learn how FinTech companies start, 
 “Case Studies” are one of the major methods of corporate analysis used in top business schools. While full business school case studies may be 50-100 pages long or more, your case study will be more focused: specifically, it will be an analysis of how a FinTech company of your choice is responding to the problems and needs of the FinTech domain it is in, and how it is using technology to solve a standing financial problem.
 
 In this homework assignment, you will:
-1. Select a Fintech domain that interests you.
+
+1. Select a FinTech domain that interests you.
 2. Select a company or project within that domain
 3. Research the domain and company.
 4. Write a detailed case study of the company.
@@ -42,7 +43,6 @@ This assignment will challenge you to polish your FinTech research skills by acc
 
 * Note that FinTech is such an emerging field that different FinTech reports sometimes use different names and definitions of Fintech domains and sectors (CB Insights, Investopedia, Accenture). You may see lists of FinTech domains online that are either longer or shorter than the list above; there is no one comprehensive list.
 
-
 #### 2. Choose a company (or project) within your Fintech domain
 
 Use online research to identify the trends in your domain and choose a company that is successful or otherwise interesting to you. If you have chosen “Wealth Management,” you might want to look at online journals, periodicals, reports and websites about the future of Wealth Management, or how FinTech is changing or disrupting Wealth Management.
@@ -62,6 +62,7 @@ We recommend that you focus your research by using the case study template below
 Note: If you have chosen a project within a larger company (such as the Apple Credit Card), you may want to focus your research on the origins and scope of the project, rather than the company itself.
 
 CASE STUDY TEMPLATE:
+
 ```
 # TITLE
 
