@@ -1,4 +1,4 @@
-## 4.2 Lesson Plan: Risk and Returns Over Time
+## 3.3 Lesson Plan: Risk and Returns Over Time
 
 ### Overview
 
@@ -60,7 +60,7 @@ Introduce the refresher demo on returns.
 
 * Students will watch and follow along to navigate the NASDAQ site.
 
-Walk students through the following steps. 
+Walk students through the following steps.
 
 * Navigate to the [NASDAQ](https://nasdaq.com) website. Use the search bar to enter in the name or ticker of a stock. This example uses Facebook.
 
@@ -82,7 +82,7 @@ Walk students through the following steps.
 
   ![select_timeframe.png](Images/select_timeframe.png)
 
-* Scroll down and right-click on the **Download all available data** link. Click **Save link as**. 
+* Scroll down and right-click on the **Download all available data** link. Click **Save link as**.
 
 * Choose a folder and name the file `fb_nasdaq.csv`. Click **Save**.
 
@@ -161,11 +161,11 @@ In this activity, students will extract data for a single ticker from [NASDAQ](h
 
 **Instructions:** [README.md](Activities/03-Stu_Sorting/README.md)
 
-As students work on the activity, circulate the room with the TAs to offer assistance to students who need it. Make sure students can extract the data from the NASDAQ website. 
+As students work on the activity, circulate the room with the TAs to offer assistance to students who need it. Make sure students can extract the data from the NASDAQ website.
 
 If a student finishes the activity early, ask if they are willing to help present the solution by live coding how to sort a DataFrame by more than one column. This live-coding exercise will be completed in the activity review (the next part of the lesson).
 
-If the student agrees, spend up to 5 minutes with them reviewing the following scenario. 
+If the student agrees, spend up to 5 minutes with them reviewing the following scenario.
 
 **Scenario:**
 
@@ -604,7 +604,7 @@ Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexin
 
 * Changes in time can be calculated by using the `timedelta` Pandas function.
 
-  * This function accepts the number of days one wants to traverse as an argument, and then identifies the specific date. 
+  * This function accepts the number of days one wants to traverse as an argument, and then identifies the specific date.
 
   * For example, the `timedelta` function can be used to determine what the date was 60 days from today. `Year` and `month` attributes are also available for `timedelta` objects.
 
@@ -781,7 +781,7 @@ Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCv
 
 * A common technique for measuring how far away an asset is from the mean is calculating the standard deviation. **Standard deviation** identifies exactly how far away a value is from the average price.
 
-  * A low number indicates that the value is not far from the average. 
+  * A low number indicates that the value is not far from the average.
 
   * A high standard deviation means that the value is an outlier.
 

@@ -1,4 +1,4 @@
-## 3.3 Lesson Plan: Functions and Files (10:00 AM)
+## 2.3 Lesson Plan: Functions and Files (10:00 AM)
 
 ### Overview
 
@@ -8,32 +8,32 @@ This lesson focuses on financial functions, file I/O, and working with CSVs. Stu
 
 By the end of class, students will be able to:
 
-* Define time value of money and explain how it relates to net present value via discounted future values/cash flows. 
-* Perform basic financial analysis from user-defined financial functions (NPV). 
+* Define time value of money and explain how it relates to net present value via discounted future values/cash flows.
+* Perform basic financial analysis from user-defined financial functions (NPV).
 * Import standard and custom Python libraries.
-* Read and write text files. 
-* Identify tabular data and its form. 
-* Read and write CSV files. 
+* Read and write text files.
+* Identify tabular data and its form.
+* Read and write CSV files.
 
 - - -
 
 ### Instructor Notes
 
-* Today’s class will introduce concepts like time value of money, zero-coupon bonds, and net present value. Take your time as you review these topics; a few extra moments to answer questions and review complex concepts goes a long way in aiding comprehension, especially if the majority of the class seems to be struggling. 
+* Today’s class will introduce concepts like time value of money, zero-coupon bonds, and net present value. Take your time as you review these topics; a few extra moments to answer questions and review complex concepts goes a long way in aiding comprehension, especially if the majority of the class seems to be struggling.
 
 * Students need to have a thorough understanding of financial concepts and how they are used in order to develop the mindset for solving financial use cases programmatically. Make sure to relate the financial use case to its corresponding programmatic process.
 
 * Remember that students most likely have varying levels of finance experience. Therefore, make sure your lectures are clear and thorough for newcomers, while serving as interesting refreshers for veterans as well. Draw upon your industry experience or tell a story that relates to the concepts at hand, make things simple to understand while memorable!
 
-* Make sure TAs circulate the classroom to provide assistance to students who are still struggling with Python concepts. If the lesson moves ahead of schedule, you can use the extra time to review those topics. 
+* Make sure TAs circulate the classroom to provide assistance to students who are still struggling with Python concepts. If the lesson moves ahead of schedule, you can use the extra time to review those topics.
 
-* Remind students to activate their conda environment so that they can access libraries like NumPy, which they will need for this lesson. If they have issues importing the NumPy library, suggest running `conda install anaconda` or `conda install numpy`. The conda environment may not have included the Anaconda tools, as this is a common error. 
+* Remind students to activate their conda environment so that they can access libraries like NumPy, which they will need for this lesson. If they have issues importing the NumPy library, suggest running `conda install anaconda` or `conda install numpy`. The conda environment may not have included the Anaconda tools, as this is a common error.
 
 * Make sure that students are properly setting their file paths when reading in files. Ensure that their paths are properly set and look out for erroneous relative or absolute paths.
 
 * The pathlib library allows students to ignore the differences between Windows OS `\` back slashes and Unix-based OS `/` forward slashes in regard to file paths. However, they should still be aware of these differences in case they are not able to access the pathlib library.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx). 
+* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
 - - -
 
@@ -45,11 +45,11 @@ By the end of class, students will be able to:
 
 * [refresher.py](Activities/01-Ins_Refresher/Solved/refresher.py)
 
-Welcome students back to class. Tell them that, in today's lesson, we will begin to apply Python concepts to financial use cases. Today will be fun! 
+Welcome students back to class. Tell them that, in today's lesson, we will begin to apply Python concepts to financial use cases. Today will be fun!
 
-Use the slides to review the lesson agenda and the topics covered so far. 
+Use the slides to review the lesson agenda and the topics covered so far.
 
-Use the solution file to perform a live coding session and quickly recap previous concepts. During the session, ask the following questions: 
+Use the solution file to perform a live coding session and quickly recap previous concepts. During the session, ask the following questions:
 
 * What are variables?
 
@@ -197,7 +197,7 @@ Use the solution file to perform a live coding session and quickly recap previou
   CEO of Berkshire Hathaway
   ```
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
 - - -
 
@@ -283,9 +283,9 @@ Ask if there are any questions before moving on.
 
 * [time_value.py](Activities/03-Ins_Time_Value_of_Money/Solved/time_value.py)
 
-This section will focus on core financial calculations in Python. Use the slides to explain concepts related to time value of money. Students should understand that these calculations are fundamental to financial analysis, and that they will actually be writing code for each of these formulas. 
+This section will focus on core financial calculations in Python. Use the slides to explain concepts related to time value of money. Students should understand that these calculations are fundamental to financial analysis, and that they will actually be writing code for each of these formulas.
 
-**Note:** When going over the slides, leverage the knowledge of students with a finance background by asking them to help explain time value of money and how it is used. 
+**Note:** When going over the slides, leverage the knowledge of students with a finance background by asking them to help explain time value of money and how it is used.
 
 Open the slideshow to the slides about time value of money. Be sure to highlight the following:
 
@@ -297,23 +297,23 @@ Open the slideshow to the slides about time value of money. Be sure to highlight
 
 Open `time_value.py` and explain the following:
 
-* The purpose of a function is to reuse blocks of code. The `calculate_future_value` function contains the logic required to calculate the future value of money. 
+* The purpose of a function is to reuse blocks of code. The `calculate_future_value` function contains the logic required to calculate the future value of money.
 
-  * The function can be called over and over again with new inputs, and a future value is calculated for each of those inputs. 
-  
+  * The function can be called over and over again with new inputs, and a future value is calculated for each of those inputs.
+
   * In programming, this concept of code reuse is called DRY (**D**on't **R**epeat **Y**ourself).
 
-* Functions don't always have to be user defined; there are many built-in Python functions already available for use. For example: 
+* Functions don't always have to be user defined; there are many built-in Python functions already available for use. For example:
 
-  * List objects have multiple functions such as `append()`, `len()`, and `remove()`. 
-  
+  * List objects have multiple functions such as `append()`, `len()`, and `remove()`.
+
   * Dict objects have multiple functions such as `keys()` and `items()`.
 
 * In previous examples, functions were called by supplying values for each of the parameters. However, functions can also be called by using variables to pass in the values for the parameters. The parameters for `calculate_future_value` are `present_value`, `interest_rate`, `compounding_periods`, and `years`.
 
 * Functions often return one or more values. The value that the function returns can be assigned to a variable for use in other parts of the code. In this example, `future_value` is assigned the value that the `calculate_future_value` function returns.
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
 - - -
 
@@ -333,7 +333,7 @@ Encourage students to work in pairs for this activity. Motivate students to help
 
 Open `zero_coupon_bonds.py` to review the solution and explain the process of valuing a zero-coupon bond:
 
-* The `present_value` function allows us to value the promised future value of the bond upon its maturity. 
+* The `present_value` function allows us to value the promised future value of the bond upon its maturity.
 
 * Because the `present_value` formula is merely a manipulation of the `future_value` formula in the previous activity, its parameters are generally equivalent as well:
 
@@ -345,7 +345,7 @@ Open `zero_coupon_bonds.py` to review the solution and explain the process of va
 
   * `years`: The number of years representing the duration of the bond.
 
-* After calculating the present value of the bond, compare it to its market price. The decision whether or not to purchase the bond is based on if the bond is selling at a `discount` or `premium` in relation to its present value. 
+* After calculating the present value of the bond, compare it to its market price. The decision whether or not to purchase the bond is based on if the bond is selling at a `discount` or `premium` in relation to its present value.
 
 Ask if there are any questions before moving on.
 
@@ -353,7 +353,7 @@ Ask if there are any questions before moving on.
 
 ### 7. Instructor Do: Imports (10 min)
 
-This section is exciting because it showcases the power of imports in Python.  
+This section is exciting because it showcases the power of imports in Python.
 
 Review the following points to motivate students and help them understand how powerful imports can be:
 
@@ -367,7 +367,7 @@ Review the following points to motivate students and help them understand how po
 
 * [imports.py](Activities/05-Ins_Imports/Solved/imports.py)
 
-Explain that we will be importing some really cool financial functions to calculate things like net present value (NPV). 
+Explain that we will be importing some really cool financial functions to calculate things like net present value (NPV).
 
 Use the slides to discuss the theory behind NPV. Then, review the code in `imports.py`, highlighting the following:
 
@@ -403,7 +403,7 @@ Introduce NumPy.
 
 * NumPy is a Python library that provides fast input/output, or I/O, on multidimensional or nested array objects. Among other things, NumPy can be used as a scientific computing or financial analysis tool.
 
-* The built-in NPV function from the NumPy library makes calculating NPV values simple so that you don't have to reinvent the wheel. 
+* The built-in NPV function from the NumPy library makes calculating NPV values simple so that you don't have to reinvent the wheel.
 
   ```python
   # Import the NumPy library
@@ -423,7 +423,7 @@ Ask if there are any questions before moving on.
 
 ### 8. Student Do: Net Present Value (15 min)
 
-In this activity, students will use the `npv` function from the `numpy` library to calculate the net present value of three potential company projects (and their cash flows) and assess which is the optimal project to undertake. 
+In this activity, students will use the `npv` function from the `numpy` library to calculate the net present value of three potential company projects (and their cash flows) and assess which is the optimal project to undertake.
 
 **File:** [Starter Code](Activities/06-Stu_Imports/Unsolved/Core/net_present_value_core.py)
 
@@ -440,7 +440,7 @@ Open the solution file, `net_present_value_core.py`, and explain the process of 
 * Each list of cash flows represents a project proposal.
 
   * The first element of each list represents the project's initial investment.
-  
+
   * The remaining elements of the list represent the cash flows as a result of the initial investment.
 
 * Resolving the return values of the NPV functions as key-value pairs lets us easily retrieve the NPV value of an associated scenario, for example, when looking to determine the scenario associated with the calculated max NPV value.
@@ -453,19 +453,19 @@ Ask if there are any questions before moving on.
 
 **File:** [file_io.py](Activities/07-Ins_File_IO/Solved/file_io.py)
 
-Begin your discussion of file I/O, or file inputs and outputs, with the following introduction. 
+Begin your discussion of file I/O, or file inputs and outputs, with the following introduction.
 
-* Data will not (and should not) always be hard-coded within a Python file. Often, data is saved within a file and accessed externally in order to perform some kind of data manipulation or analysis. 
+* Data will not (and should not) always be hard-coded within a Python file. Often, data is saved within a file and accessed externally in order to perform some kind of data manipulation or analysis.
 
-* File pathing is extremely important when attempting to access files saved within a folder structure. 
+* File pathing is extremely important when attempting to access files saved within a folder structure.
 
 * Python natively supports the input and output of files, and the pathlib library makes file pathing easy.
 
-Then, open Terminal (Mac) or Git Bash (Windows) and navigate to the project folder. 
+Then, open Terminal (Mac) or Git Bash (Windows) and navigate to the project folder.
 
 * Run `pwd` to show where the current folder is located.
 
-* Open Finder (Mac) or Explorer (Windows) to check the location of the script files and the resource file. 
+* Open Finder (Mac) or Explorer (Windows) to check the location of the script files and the resource file.
 
 Open the solution file and highlight the following:
 
@@ -496,7 +496,7 @@ Open the solution file and highlight the following:
       Line 3
       ```
 
-    **Relative Path:** 
+    **Relative Path:**
 
       ```python
       from pathlib import Path
@@ -522,7 +522,7 @@ Open the solution file and highlight the following:
       Line 3
       ```
 
-* The `..` keyword means "go one level up" from the current working directory. For example, examine the following folder structure:  
+* The `..` keyword means "go one level up" from the current working directory. For example, examine the following folder structure:
 
     ```
     /Users
@@ -536,9 +536,9 @@ Open the solution file and highlight the following:
 
   * If executing code from `file_io.py`, the relative path `../Resources/file.txt` can be used to target `file.txt`.
 
-  * This is because `file_io.py` resides at `/Users/trilogyed/File_IO/Solved/file_io.py`. The `..` keyword goes one level up from `/Users/trilogyed/File_IO/Solved/` to `/Users/trilogyed/File_IO/` and descends into `Resources/file.txt` to hit the file. 
+  * This is because `file_io.py` resides at `/Users/trilogyed/File_IO/Solved/file_io.py`. The `..` keyword goes one level up from `/Users/trilogyed/File_IO/Solved/` to `/Users/trilogyed/File_IO/` and descends into `Resources/file.txt` to hit the file.
 
-* The pathlib library allows us to set file paths regardless of the operating system (OS). 
+* The pathlib library allows us to set file paths regardless of the operating system (OS).
 
   ```python
   filepath = Path("../Resources/input.txt")
@@ -546,7 +546,7 @@ Open the solution file and highlight the following:
 
 * The `with open(filepath, 'r') as file:` operation opens a file residing at a specified `filepath` as a file object.
 
-* We can read in the entirety of the text file by calling upon the `read()` function on the text file object `file`. 
+* We can read in the entirety of the text file by calling upon the `read()` function on the text file object `file`.
 
 * Files can be read line by line using a loop. This will read every line of text until the end of the file.
 
@@ -586,10 +586,10 @@ Open `ecommerce_traffic.py` and review the solution. Explain the following:
   print(f"Current Working Directory: {Path.cwd()}")
   ```
 
-* When text is read from files, it will first be interpreted as strings. 
+* When text is read from files, it will first be interpreted as strings.
 
-  * To do numerical calculations, we'll have to convert the values from string datatypes to int or float datatypes. 
-  
+  * To do numerical calculations, we'll have to convert the values from string datatypes to int or float datatypes.
+
   * The `int()` datatype conversion function converts a string to an integer.
 
   ```python
@@ -622,7 +622,7 @@ Ask if there are any questions before moving on.
 
 **File:** [Slides 28–30](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit?usp=sharing)
 
-Open the slideshow to the slides on tabular data and review the following points: 
+Open the slideshow to the slides on tabular data and review the following points:
 
 * **Tabular data** is data in a table format with rows, columns, and values for each row-column intersection.
 
@@ -638,14 +638,14 @@ Open `csv_reader.py`. Walk through the demo and highlight the following:
 
 * CSV stands for comma-separated values. A CVS file follows a tabular form in which the first line is usually a header containing column names, and each subsequent line is a row containing values that intersect with each row-column pair.
 
-* The `csv` library parses data in order to make it more easily accessible. 
+* The `csv` library parses data in order to make it more easily accessible.
 
 * The `csv` library includes a `reader()` function that parses CSV data by a separator or delimiter, and creates a `row` list object that contains the values for every row in the CSV data.
 
   ```python
   csvreader = csv.reader(csvfile, delimiter=',')
-  
-  # Read each row of data after the 
+
+  # Read each row of data after the
   for row in csvreader:
       # Print the row
       print(row)
@@ -668,7 +668,7 @@ Open `csv_reader.py`. Walk through the demo and highlight the following:
       csvwriter.writerow(metrics)
   ```
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
 - - -
 
@@ -687,7 +687,7 @@ In this activity, students will perform file I/O with a CSV file; students will 
 Open `sales_analysis.py` to review the solution. Explain the following:
 
 * Python's CSV module parses CSV data and creates `row` list objects, making it easier to access specific column values for each row.
- 
+
 * Data that is read in from CSV files is interpreted as strings. To perform numerical calculations, we'll need to convert the strings into ints or floats.
 
   ```python
@@ -704,7 +704,7 @@ Open `sales_analysis.py` to review the solution. Explain the following:
       average = round(revenue / count, 2)
   ```
 
-* To add data to each row of the input CSV data, append values to the `row` list object. 
+* To add data to each row of the input CSV data, append values to the `row` list object.
 
   ```python
   # Append the average to the row
@@ -724,7 +724,7 @@ Open `sales_analysis.py` to review the solution. Explain the following:
       csvwriter.writerow(record)
   ```
 
-* Using the `analysis` dictionary combined with if-else conditionals allows us to group and aggregate data by making checks to see if a particular key exists. 
+* Using the `analysis` dictionary combined with if-else conditionals allows us to group and aggregate data by making checks to see if a particular key exists.
 
 * If the key does not exist, then we add the key and initialize the nested dictionary value containing the `count` and `revenue` key-value pairs.
 
@@ -773,7 +773,7 @@ Take some time to de-brief and review today's lesson:
 
 * Allow students to start the homework assignment with extra TA support.
 
-Take your time during this review session. This is a great time to reinforce concepts and address any confusion. 
+Take your time during this review session. This is a great time to reinforce concepts and address any confusion.
 
 ### End Class
 
