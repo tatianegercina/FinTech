@@ -345,7 +345,7 @@ By this point, students have been given examples of the major domains within Fin
 
 **File:** [README.md](Activities/01-Stu_FinTech_Domains/README.md)
 
-### 11. Instructor Do: Review FinTech Headlines (15 min)
+### 11. Instructor Do: Review FinTech Headlines (20 min)
 
 Now that students have had an opportunity to perform their own research on the various domains in FinTech and produce hypothetical news headlines for each FinTech domain, it's now time to facilitate a class discussion based on each group's findings.
 
@@ -374,7 +374,7 @@ Ask students if they have any questions before moving on.
 
 ---
 
-### 13. Instructor Do: Betterment Robo-Advisory Case Study (20 min)
+### 13. Instructor Do: Betterment Robo-Advisory Case Study (15 min)
 
 In this activity, students will be instructed on how to create a FinTech case study -- a compilation of holistic research performed on a FinTech company or technology. This activity is particularly important as it will serve as the knowledge foundation for students completing their FinTech case studies for the unit `1` homework.
 
