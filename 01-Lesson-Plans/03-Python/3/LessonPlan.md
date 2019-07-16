@@ -2,16 +2,15 @@
 
 ### Overview
 
-This lesson focuses on financial functions, file I/O, and working with CSVs. Students will practice basic financial analysis principles in the context of both internal (hard-coded) and external (file I/O) manipulation of data.
+This lesson focuses on financial functions, file I/O, and working with CSVs. Students will practice basic financial analysis skills in the context of both internal (hard-coded) and external (file I/O) manipulation of data.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Recap previous Python concepts and implementations: variables, conditionals, lists and dicts, for loops, and functions. 
 * Define time value of money and explain how it relates to net present value via discounted future values/cash flows. 
 * Perform basic financial analysis from user-defined financial functions (NPV). 
-* Import additional Python libraries, both standard and custom.
+* Import standard and custom Python libraries.
 * Read and write text files. 
 * Identify tabular data and its form. 
 * Read and write CSV files. 
@@ -20,15 +19,17 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today’s class will introduce concepts like time value of money, zero-coupon bonds, and net present value. Be mindful of pacing as you review these topics; students need to have a thorough understanding of financial concepts and how they are used in order to develop mental frameworks for solving financial use cases. 
+* Today’s class will introduce concepts like time value of money, zero-coupon bonds, and net present value. Take your time as you review these topics; a few extra moments to answer questions and review complex concepts goes a long way in aiding comprehension, especially if the majority of the class seems to be struggling. 
 
-* Remember that students most likely have varying levels of finance experience. Therefore, make sure your lectures are clear and thorough for newcomers, while serving as interesting refreshers for veterans as well. 
+* Students need to have a thorough understanding of financial concepts and how they are used in order to develop the mindset for solving financial use cases programmatically. Make sure to relate the financial use case to its corresponding programmatic process.
+
+* Remember that students most likely have varying levels of finance experience. Therefore, make sure your lectures are clear and thorough for newcomers, while serving as interesting refreshers for veterans as well. Draw upon your industry experience or tell a story that relates to the concepts at hand, make things simple to understand while memorable!
 
 * Make sure TAs circulate the classroom to provide assistance to students who are still struggling with Python concepts. If the lesson moves ahead of schedule, you can use the extra time to review those topics. 
 
 * Remind students to activate their conda environment so that they can access libraries like NumPy, which they will need for this lesson. If they have issues importing the NumPy library, suggest running `conda install anaconda` or `conda install numpy`. The conda environment may not have included the Anaconda tools, as this is a common error. 
 
-* Make sure that students are properly setting their file paths when reading in files. Emphasize the difference between relative and absolute paths, and ensure that their paths are properly set. 
+* Make sure that students are properly setting their file paths when reading in files. Ensure that their paths are properly set and look out for erroneous relative or absolute paths.
 
 * The pathlib library allows students to ignore the differences between Windows OS `\` back slashes and Unix-based OS `/` forward slashes in regard to file paths. However, they should still be aware of these differences in case they are not able to access the pathlib library.
 
@@ -36,15 +37,19 @@ By the end of class, students will be able to:
 
 - - -
 
-### 1. Instructor Do: Welcome and Review (5 min)
+### 1. Instructor Do: Welcome and Review (10 min)
 
-**File:** [Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit?usp=sharing)
+**Files:**
 
-Welcome students back to class. Tell them that, in today's lesson, we will begin to apply Python implementation to financial concepts and use cases. Today will be fun! 
+* [Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit?usp=sharing)
+
+* [refresher.py](Activities/01-Ins_Refresher/Solved/refresher.py)
+
+Welcome students back to class. Tell them that, in today's lesson, we will begin to apply Python concepts to financial use cases. Today will be fun! 
 
 Use the slides to review the lesson agenda and the topics covered so far. 
 
-Do a quick recap by asking the following questions: 
+Use the solution file to perform a live coding session and quickly recap previous concepts. During the session, ask the following questions: 
 
 * What are variables?
 
@@ -161,7 +166,7 @@ Do a quick recap by asking the following questions:
   SBUX is booming right now!
   ```
 
-* How do you traverse nested objects?
+* How do you traverse/access nested objects?
 
   **Answer:** Specify the index for each level of iteration.
 
@@ -196,37 +201,15 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 2. Instructor Do: Refresher (10 min)
-
-**File:** [refresher.py](Activities/01-Ins_Refresher/Solved/refresher.py)
-
-Open the `refresher.py` file and ask students to guide you through the following examples:
-
-* Create a conditional that prints out `x is greater than 10` or `x is less than 10`. 
-
-* Create a list named `fruits`, and initialize with `apple`, `pear`, `banana`. 
-
-* Loop through and print each fruit in `fruits`. 
-
-* Create a dict named `car` and add `make`, `model`, `type` as keys and their corresponding values. 
-
-* Loop through and print each key-value pair in `car`. 
-
-* Create a function `squared()` that calculates the square of a `number` input parameter. 
-
-- - -
-
-### 3. Student Do: Refresher Activity (15 min)
+### 2. Student Do: Refresher Activity (15 min)
 
 In this activity, students will apply skills learned in the previous lessons to a financial use case. They will act as analysts who categorize customers based on revenue and assign each customer a business tier: platinum, gold, silver, or bronze. A personalized message is generated for each customer depending on the assigned business tier.
-
-This use case is very practical, as it allows firms to target specific groups within their customer base, either by directing personalized messages or distributing promotion codes to specific groups via email. 
 
 **File:** [Starter Code](Activities/02-Stu_Refresher/Unsolved/marketing.py)
 
 **Instructions:** [README.md](Activities/02-Stu_Refresher/README.md)
 
-### 4. Instructor Do: Review Refresher Activity (5 min)
+### 3. Instructor Do: Review Refresher Activity (10 min)
 
 **File:** [Solution](Activities/02-Stu_Refresher/Solved/marketing.py)
 
@@ -292,7 +275,7 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 5. Instructor Do: Time Value of Money (10 min)
+### 4. Instructor Do: Time Value of Money (10 min)
 
 **Files:**
 
@@ -302,7 +285,7 @@ Ask if there are any questions before moving on.
 
 This section will focus on core financial calculations in Python. Use the slides to explain concepts related to time value of money. Students should understand that these calculations are fundamental to financial analysis, and that they will actually be writing code for each of these formulas. 
 
-**Note:** Leverage the knowledge of students with a finance background by asking them to help explain time value of money and how it is used. 
+**Note:** When going over the slides, leverage the knowledge of students with a finance background by asking them to help explain time value of money and how it is used. 
 
 Open the slideshow to the slides about time value of money. Be sure to highlight the following:
 
@@ -334,7 +317,7 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 6. Student Do: Zero-Coupon Bonds (25 min)
+### 5. Student Do: Zero-Coupon Bonds (25 min)
 
 In this activity, students will use the concept of time value of money (TVM) to discount the future value of a zero-coupon bond to determine its present value. They will also compare the present value to its current selling price in order to decide whether or not to purchase the bond.
 
@@ -344,7 +327,7 @@ Encourage students to work in pairs for this activity. Motivate students to help
 
 **Instructions:** [README.md](Activities/04-Stu_Time_Value_of_Money/README.md)
 
-### 7. Instructor Do: Review Zero-Coupon Bonds (5 min)
+### 6. Instructor Do: Review Zero-Coupon Bonds (5 min)
 
 **File:** [Solution](Activities/04-Stu_Time_Value_of_Money/Solved/zero_coupon_bonds.py)
 
@@ -362,19 +345,19 @@ Open `zero_coupon_bonds.py` to review the solution and explain the process of va
 
   * `years`: The number of years representing the duration of the bond.
 
-* After calculating the present value of the bond, compare it to its market price. The decision whether to purchase the bond is based on whether the bond is selling at a `discount` or `premium` in relation to its present value. 
+* After calculating the present value of the bond, compare it to its market price. The decision whether or not to purchase the bond is based on if the bond is selling at a `discount` or `premium` in relation to its present value. 
 
 Ask if there are any questions before moving on.
 
 - - -
 
-### 8. Instructor Do: Imports (10 min)
+### 7. Instructor Do: Imports (10 min)
 
 This section is exciting because it showcases the power of imports in Python.  
 
 Review the following points to motivate students and help them understand how powerful imports can be:
 
-* Imports is a powerful concept, allowing developers to share and use code that others have written. 
+* Imports is a powerful concept in which developers can plug-in pre-existing libraries into their own programs; Imports allow developers to share and use code that others have written.
 
 * Imports provide a way to "stand on the shoulders of giants" and leverage existing tools and libraries to build more sophisticated programs. Instead of building everything from scratch each time, you can use tools that have been built by other brilliant people to enhance your own code and build even greater programs!
 
@@ -404,7 +387,7 @@ Use the slides to discuss the theory behind NPV. Then, review the code in `impor
     hello!
     ```
 
-  * Import the specific attribute (e.g., function, variable) of the additional Python program into the namespace of the current Python program.
+  * Import the specific attribute (e.g., function, variable) of the additional Python program into the namespace, or scope, of the current Python program.
 
     ```python
     # Call the print_hello() function imported directly from functions.py
@@ -438,13 +421,15 @@ Introduce NumPy.
 Ask if there are any questions before moving on.
 - - -
 
-### 9. Student Do: Net Present Value (15 min)
+### 8. Student Do: Net Present Value (15 min)
+
+In this activity, students will use the `npv` function from the `numpy` library to calculate the net present value of three potential company projects (and their cash flows) and assess which is the optimal project to undertake. 
 
 **File:** [Starter Code](Activities/06-Stu_Imports/Unsolved/Core/net_present_value_core.py)
 
 **Instructions:** [README.md](Activities/06-Stu_Imports/README.md)
 
-### 10. Instructor Do: Review Net Present Value (5 min)
+### 9. Instructor Do: Review Net Present Value (5 min)
 
 **File:** [Solution](Activities/06-Stu_Imports/Solved/Core/net_present_value_core.py)
 
@@ -464,11 +449,11 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 11. Instructor Do: File I/O (10 min)
+### 10. Instructor Do: File I/O (10 min)
 
 **File:** [file_io.py](Activities/07-Ins_File_IO/Solved/file_io.py)
 
-Begin your discussion of file I/O with the following introduction. 
+Begin your discussion of file I/O, or file inputs and outputs, with the following introduction. 
 
 * Data will not (and should not) always be hard-coded within a Python file. Often, data is saved within a file and accessed externally in order to perform some kind of data manipulation or analysis. 
 
@@ -476,17 +461,13 @@ Begin your discussion of file I/O with the following introduction.
 
 * Python natively supports the input and output of files, and the pathlib library makes file pathing easy.
 
-Insert instructor action/direction here that describes the process/procedure we will walk through next. 
-
-* Open Terminal (Mac) or Git Bash (Windows) and navigate to the project folder. 
+Then, open Terminal (Mac) or Git Bash (Windows) and navigate to the project folder. 
 
 * Run `pwd` to show where the current folder is located.
 
 * Open Finder (Mac) or Explorer (Windows) to check the location of the script files and the resource file. 
 
-  **Note:** Before you explain how to utilize `pathlib` and its associated functions, it is important students understand the absolute and relative locations of the project folder and the files. 
-
-Walk through the demo and highlight the following:
+Open the solution file and highlight the following:
 
 * `Path.cwd()` allows us to check our *current working directory* from where the Python program is executing.
 
@@ -576,19 +557,21 @@ Walk through the demo and highlight the following:
       line_num += 1
   ```
 
-* After a file is read and reaches the last line, no more lines can be read for that file object. This is why if we run both methods of reading in the file at one time, only the preceding file read operation (all lines at once) will output, as the subsequent file read operation (line by line) will have already reached the end of the file by this point.
+* After a file is read and reaches the last line, no more lines can be read for that file object. This is why if we run both methods of reading in the file in succession, only the preceding file read operation (all lines at once) will output, as the subsequent file read operation (line by line) will have already reached the end of the file by this point.
 
 * Writing to a text file is very similar to reading in a text file; the main difference is we use the `write()` function instead of the `read()` function.
 
 - - -
 
-### 12. Student Do: File Manipulation (15 min)
+### 11. Student Do: E-Commerce Traffic (15 min)
+
+In this activity, students will perform file I/O by parsing a text file and calculating the sum and average of customer e-traffic to then write the results back out to a text file.
 
 **File:** [Starter Code](Activities/08-Stu_File_IO/Unsolved/ecommerce_traffic.py)
 
 **Instructions:** [README.md](Activities/08-Stu_File_IO/README.md)
 
-### 13. Instructor Do: Review File Manipulation (5 min)
+### 12. Instructor Do: Review E-Commerce Traffic (5 min)
 
 **File:** [Solution](Activities/08-Stu_File_IO/Solved/ecommerce_traffic.py)
 
@@ -631,11 +614,11 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 14. BREAK (40 min)
+### 13. BREAK (40 min)
 
 - - -
 
-### 15. Instructor Do: Tabular Data (5 min)
+### 14. Instructor Do: Tabular Data (5 min)
 
 **File:** [Slides 28–30](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit?usp=sharing)
 
@@ -647,7 +630,7 @@ Open the slideshow to the slides on tabular data and review the following points
 
 - - -
 
-### 16. Instructor Do: CSV Reader (5 min)
+### 15. Instructor Do: CSV Reader (5 min)
 
 **File:** [csv_reader.py](Activities/09-Ins_CSV_Reader/Solved/csv_reader.py)
 
@@ -655,9 +638,9 @@ Open `csv_reader.py`. Walk through the demo and highlight the following:
 
 * CSV stands for comma-separated values. A CVS file follows a tabular form in which the first line is usually a header containing column names, and each subsequent line is a row containing values that intersect with each row-column pair.
 
-* The CSV module parses data in order to make it more easily accessible. 
+* The `csv` library parses data in order to make it more easily accessible. 
 
-* The CSV module includes a `reader()` function that parses CSV data by a separator or delimiter, and creates a `row` list object that contains the values for every row in the CSV data.
+* The `csv` library includes a `reader()` function that parses CSV data by a separator or delimiter, and creates a `row` list object that contains the values for every row in the CSV data.
 
   ```python
   csvreader = csv.reader(csvfile, delimiter=',')
@@ -689,13 +672,15 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 17. Student Do: Sales Analysis (15 min)
+### 16. Student Do: Sales Analysis (15 min)
+
+In this activity, students will perform file I/O with a CSV file; students will read in a CSV file to calculate customer revenue averages and then output results back to a CSV file.
 
 **File:** [sales_analysis.py](Activities/10-Stu_CSV_Reader/Unsolved/Core/sales_analysis_core.py)
 
 **Instructions:** [README.md](Activities/10-Stu_CSV_Reader/README.md)
 
-### 18. Instructor Do: Review Sales Analysis (5 min)
+### 17. Instructor Do: Review Sales Analysis (5 min)
 
 **File:** [sales_analysis.py](Activities/10-Stu_CSV_Reader/Solved/Core/sales_analysis_core.py)
 
@@ -719,7 +704,7 @@ Open `sales_analysis.py` to review the solution. Explain the following:
       average = round(revenue / count, 2)
   ```
 
-* To add data to each row of the input CSV data, append to the `row` list object. 
+* To add data to each row of the input CSV data, append values to the `row` list object. 
 
   ```python
   # Append the average to the row
@@ -776,13 +761,13 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 19. Instructor Do: Structured Office Hours (35 min)
+### 18. Instructor Do: Review and Reflect (35 min)
 
-Please use the entire office hours time to review questions with the students.
-
-Here is a suggested format to follow: 
+Take some time to de-brief and review today's lesson:
 
 * Ask students if there are specific activities they want to revisit.
+
+* Ask students how they felt about the lesson. What were areas of confusion? What were areas of fulfillment/challenge?
 
 * Revisit key activities that will help them complete the homework assignment.
 

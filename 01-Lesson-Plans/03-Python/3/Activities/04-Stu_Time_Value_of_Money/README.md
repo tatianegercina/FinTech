@@ -1,12 +1,12 @@
-# Zero-Coupon Bonds
+## Zero-Coupon Bonds
 
 In this activity, you will calculate the present value of a zero-coupon bond from its future value, and compare the resulting present value to its selling price in order to determine whether or not the bond is worth purchasing.
 
-## Background
+### Background
 
 A zero-coupon bond is a debt security that does not pay interest (a coupon) as an annual cash flow; instead, it simply distributes a lump sum, or its face value, upon bond maturity (when the bond completes its duration). Zero-coupon bonds trade at a discount to their future value.
 
-## Instructions
+### Instructions
 
 Using the starter file provided, walk through the following steps.
 
@@ -30,9 +30,10 @@ Using the starter file provided, walk through the following steps.
 	
 	* Else the bond is selling at its fair market value, you're neutral to the decision.
 
-## Hint
+### Hint
 
 Don't overthink it! We are simply calculating the present value of a future value! If you need to refer to the present value formula, look to the slides.
 
 ---
+
 © 2019 Trilogy Education Services
