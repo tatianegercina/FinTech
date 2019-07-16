@@ -4,9 +4,9 @@
 
 ### Overview
 
-Today's class will focus on command line basics and git, using a graphical user interface, or GUI. It will then further investigate the key factors leading to the exponential growth of the FinTech industry. 
+Today's class will focus on command line basics and git, using a graphical user interface, or GUI. It will then further investigate the key factors leading to the exponential growth of the FinTech industry.
 
-Specifically, students will be introduced to basic command line and git download/upload skills, which will help them use the more advanced git CLI in the next lesson; learn more about the history of FinTech and the areas it has disrupted; and collaborate to create their own case studies for a FinTech company. 
+Specifically, students will be introduced to basic command line and git download/upload skills, which will help them use the more advanced git CLI in the next lesson; learn more about the history of FinTech and the areas it has disrupted; and collaborate to create their own case studies for a FinTech company.
 
 ### Class Objectives
 
@@ -26,11 +26,11 @@ By the end of class, students will be able to:
 
 * Students may have trouble grasping the notion of the command line. You can explain it like this: when students double-click on a folder to change directories, they are essentially executing a backend `cd` command. The GUI that a student sees is merely a visual overlay of the backend operations of the computer.
 
-* Emphasize that understanding the history of FinTech is just as important as knowing what FinTech is. Employers will measure candidates not only by their technical skills, but also by their contextual knowledge of what is happening in the financial services industry. 
+* Emphasize that understanding the history of FinTech is just as important as knowing what FinTech is. Employers will measure candidates not only by their technical skills, but also by their contextual knowledge of what is happening in the financial services industry.
 
 * Be thorough when explaining case study requirements and showcasing a completed case study for students to use as a model. Case studies can vary widely in length depending on the audience for which it was written. Therefore, for the sake of the time, case studies should be comprehensive but not overly long.  
 
-* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx). 
+* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -42,9 +42,9 @@ Cover the following points:
 
 * Students will begin working with common developer tools such as the command line, a text-based utility for performing file system operations and executing programs. They will also learn git, which is a managed remote file repository with built-in version control. By the end of the day, students will join the ranks of millions of developers who also use git to store their files/code.
 
-* Today's lesson will be a (brief) deep dive into FinTech's historical background, in which we'll cover why FinTech is so prevalent today, the financial sectors it has helped to disrupt. We'll also delve into a Fintech case study.
+* Today's lesson will be a (brief) deep dive into FinTech's historical background, in which we'll cover why FinTech is so prevalent today, the financial sectors it has helped to disrupt. We'll also delve into a FinTech case study.
 
-* Understanding and being able to discuss FinTech's history is useful, particularly when applying to jobs; it will show employers that you care enough to familiarize yourself with the industry, as well as showcase an understanding of potential opportunities and pitfalls within the industry. 
+* Understanding and being able to discuss FinTech's history is useful, particularly when applying to jobs; it will show employers that you care enough to familiarize yourself with the industry, as well as showcase an understanding of potential opportunities and pitfalls within the industry.
 
 Encourage the students and get them excited for the lesson. Tell them that today will be a crash course in both hard and soft skills; students will learn technical skills and contextual knowledge to aid them in their future careers in FinTech.
 
@@ -58,53 +58,53 @@ In this section, students will learn the basics of using the command line to per
 
 Open the slideshow and present the following questions and answers:
 
-  * What is the command line?
+* What is the command line?
 
-    **Answer:** The command line, or terminal, is an interface in which a user can type and execute text-based commands.
+  **Answer:** The command line, or terminal, is an interface in which a user can type and execute text-based commands.
 
-  * When should you use the command line?
+* When should you use the command line?
 
-    **Answer:** The command line can be used at any time in place of the graphical user interface (GUI). The GUI is merely a visual overlay to the programs executed via the command line. Also, when remotely connecting to a server, such as via the Secure Shell Protocol (SSH), a GUI will not be provided. 
+  **Answer:** The command line can be used at any time in place of the graphical user interface (GUI). The GUI is merely a visual overlay to the programs executed via the command line. Also, when remotely connecting to a server, such as via the Secure Shell Protocol (SSH), a GUI will not be provided. 
 
-  * Why use the command line?
+* Why use the command line?
 
-    **Answer:** Using the command line is efficient, as it does not expend the additional processing needed to produce the visuals associated with a graphical user interface (GUI).
+  **Answer:** Using the command line is efficient, as it does not expend the additional processing needed to produce the visuals associated with a graphical user interface (GUI).
 
 Open the command line and demo the following commands. Tell students that on a Mac, the command line is accessed via Terminal, while Windows uses Git Bash. 
 
-  * `cd` changes the directory. 
+* `cd` changes the directory.
 
-  * `cd ~` navigates to the home directory. 
+* `cd ~` navigates to the home directory.
 
-  * `cd ..` moves up one directory. 
+* `cd ..` moves up one directory.
 
-  * `ls` lists files in the folder.
+* `ls` lists files in the folder.
 
-  * `pwd` shows the current directory.
+* `pwd` shows the current directory.
 
-  * `mkdir <FOLDERNAME>` creates a new directory with the folder name as `<FOLDERNAME>`.
+* `mkdir <FOLDERNAME>` creates a new directory with the folder name as `<FOLDERNAME>`.
 
-  * `touch <FILENAME>` creates a new empty file with the file name as `<FILENAME>`.
+* `touch <FILENAME>` creates a new empty file with the file name as `<FILENAME>`.
 
-  * `code <FILENAME>` opens a file in the VS Code editor.
+* `code <FILENAME>` opens a file in the VS Code editor.
 
-  * `cat <FILENAME>` reads a file and outputs to the terminal.
+* `cat <FILENAME>` reads a file and outputs to the terminal.
 
-  * `rm <FILENAME>` deletes a file.
+* `rm <FILENAME>` deletes a file.
 
-  * `rm -r <FOLDERNAME>` deletes a folder recursively; make sure to note the -r.
+* `rm -r <FOLDERNAME>` deletes a folder recursively; make sure to note the -r.
 
-  * `open .` opens the current folder on Macs.
+* `open .` opens the current folder on Macs.
 
-  * `explorer .`opens the current folder in Git Bash. 
+* `explorer .`opens the current folder in Git Bash.
 
-  * `open <FILENAME>` opens a specific file on Macs.
+* `open <FILENAME>` opens a specific file on Macs.
 
-  * `explorer <FILENAME>` opens a specific file in Git Bash.
+* `explorer <FILENAME>` opens a specific file in Git Bash.
 
-  ![terminal-example](Images/terminal-example.png)
+![terminal-example](Images/terminal-example.png)
 
-Slack out [CommonCommands.txt](Activities/03-Ins_Terminal/Solved/CommonCommands.md) for students to use as a reference. 
+Slack out [CommonCommands.txt](Activities/03-Ins_Terminal/Solved/CommonCommands.md) for students to use as a reference.
 
 Answer any questions before moving on.
 
@@ -112,7 +112,7 @@ Answer any questions before moving on.
 
 ### 3. Student Do: File System Operations (15 min)
 
-In this activity, students will perform their own file system operations via the command line. 
+In this activity, students will perform their own file system operations via the command line.
 
 **File:** [README.md](Activities/04-Stu_Terminal/README.md)
 
@@ -120,43 +120,43 @@ In this activity, students will perform their own file system operations via the
 
 Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points:
 
-  * `mkdir` creates folder directories.
+* `mkdir` creates folder directories.
 
-  * `cd` navigates into specified folder directories.
+* `cd` navigates into specified folder directories.
 
-  * `touch` creates an empty file.
+* `touch` creates an empty file.
 
-  * `cat` reads files and outputs the results to the console.
+* `cat` reads files and outputs the results to the console.
 
-  * `code` opens files in the VS Code.
+* `code` opens files in the VS Code.
 
-  * `cd ..` navigates up one level.
+* `cd ..` navigates up one level.
 
-  * `cp` copies files from source to target.
+* `cp` copies files from source to target.
 
-  * `rm -r` recursively deletes all files in a folder (that may have subfolders).
+* `rm -r` recursively deletes all files in a folder (that may have sub-folders).
 
-  * `mv` moves files from source to target. It can also be used to rename a file.
+* `mv` moves files from source to target. It can also be used to rename a file.
 
-  * `ls` lists the contents of the current directory.
+* `ls` lists the contents of the current directory.
 
 ---
 
 ### 5. Instructor Do: Uploading Files to GitHub (15 min)
 
-In this activity, students will learn how to upload files to GitHub, which will be used to submit their future homework assignments in the course. 
+In this activity, students will learn how to upload files to GitHub, which will be used to submit their future homework assignments in the course.
 
 Briefly explain the following:
 
-* GitHub offers a centralized location where developers can push and pull (upload and download) their code; GitHub always holds the most up-to-date code and files and handles everyone's updates appropriately. 
+* GitHub offers a centralized location where developers can push and pull (upload and download) their code; GitHub always holds the most up-to-date code and files and handles everyone's updates appropriately.
 
 * For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with GitHub via the command line using git, which allows for more advanced git operations.
 
 Then, have the students follow along with the following steps:
 
-* Visit <https://github.com> and ask students to log in to their personal accounts. 
+* Visit <https://github.com> and ask students to log in to their personal accounts.
 
-* From the main page, create a new repository with an initialized `README.md` file. 
+* From the main page, create a new repository with an initialized `README.md` file.
 
   * Note that the convention in the software world is for each repository to have a README file that explains what the repository contains.
 
@@ -164,13 +164,13 @@ Then, have the students follow along with the following steps:
 
 * Create a new Excel file and save it to your desktop. This file will be used to demonstrate how to upload new files.
 
-* Navigate back to GitHub and click the "Upload files" button. 
+* Navigate back to GitHub and click the "Upload files" button.
 
   ![upload file](Images/GitDemo_upload.png)
 
-* Choose your Excel file in the dialog box. 
+* Choose your Excel file in the dialog box.
 
-  * Note that you can also drag and drop the file rather than use the "Upload files" button. 
+  * Note that you can also drag and drop the file rather than use the "Upload files" button.
   
 * Add a commit message and commit the changes.
 
@@ -257,7 +257,7 @@ Answer any questions before moving on.
 
 ### 10. Instructor Do: Facilitated Discussion About FinTech Domains (10 min)
 
-This section will be a discussion of the current state of the FinTech industry and which financial sectors have been positively impacted by technological innovation. 
+This section will be a discussion of the current state of the FinTech industry and which financial sectors have been positively impacted by technological innovation.
 
 Ask the students the following questions:
 
@@ -267,11 +267,11 @@ Ask the students the following questions:
 
 * How did these technologies allow for the disruption of traditional finance?
 
-  **Sample Answer:** Blockchain allows for cheaper and more secure transactional validation. Robo advisors utilize machine learning algorithms for portfolio management, thereby reducing overhead costs.  Payment applications utilize modern infrastructure such as mobile and cloud-based networking. 
+  **Sample Answer:** Blockchain allows for cheaper and more secure transactional validation. Robo advisors utilize machine learning algorithms for portfolio management, thereby reducing overhead costs.  Payment applications utilize modern infrastructure such as mobile and cloud-based networking.
 
 * How might cloud-based networking contribute to the advent of start-ups and technological innovators?
 
-  **Sample Answer:** Traditionally, hosting servers meant purchasing on-premises server farms with large upfront costs and regular maintenance, which was a barrier for entry for small startups. However, with cloud-based networking such as AWS, small start-ups and even individuals can quickly spin up servers faster and on an as-needed basis, thereby minimizing time to deployment and reducing up-front costs. This allows small startups to compete more efficiently with larger firms with existing infrastructures. 
+  **Sample Answer:** Traditionally, hosting servers meant purchasing on-premises server farms with large upfront costs and regular maintenance, which was a barrier for entry for small startups. However, with cloud-based networking such as AWS, small start-ups and even individuals can quickly spin up servers faster and on an as-needed basis, thereby minimizing time to deployment and reducing up-front costs. This allows small startups to compete more efficiently with larger firms with existing infrastructures.
 
 * Where else might technology disrupt traditional finance?
 
@@ -299,7 +299,7 @@ Open the slideshow and review the following FinTech domains:
 
   * Robo advisors and personal finance companies provide wealth management, investment, and budgetary services that seek to help customers with their overall capital management and investments. 
 
-  * Often, wealth management solutions are driven by machine learning with automated trading and portfolio rebalancing, while budgetary services utilize machine learning to scan a customer's purchase history and identify buying habits to suggest areas in which they can save.
+  * Often, wealth management solutions are driven by machine learning with automated trading and portfolio re-balancing, while budgetary services utilize machine learning to scan a customer's purchase history and identify buying habits to suggest areas in which they can save.
 
   * Examples: Betterment, Acorns, Robinhood, Personal Capital
 
@@ -319,7 +319,7 @@ Open the slideshow and review the following FinTech domains:
 
 * InsurTech
 
-  * InsurTech utilizes the benefits of machine learning to more efficiently group customers into risk profiles in order to provide the right type of insurance product. 
+  * InsurTech utilizes the benefits of machine learning to more efficiently group customers into risk profiles in order to provide the right type of insurance product.
 
   * Fine-tuning the determination of customer risk profiles minimizes costs to those who would have been lumped together in a broader customer risk profile.  
 
@@ -349,13 +349,13 @@ By this point, students have been given examples of the major domains within Fin
 
 Now that students have had an opportunity to perform their own research on the various domains in FinTech, it's time to facilitate a class discussion based on each group's findings.
 
-Have each group present their findings to the class one by one until all groups have presented. Presentations should be quick––approximately 1 to 2 minutes. 
+Have each group present their findings to the class one by one until all groups have presented. Presentations should be quick––approximately 1 to 2 minutes.
 
 Then, present students with questions such as the following. 
 
 * How much of an impact did technology have in the success or failure of their companies?
 
-* Which companies ended up dominating the specific FinTech domain? Why do you think that is the case? 
+* Which companies ended up dominating the specific FinTech domain? Why do you think that is the case?
 
 * Was there anything else that seemed notable to your group during your research?
 
@@ -375,7 +375,7 @@ Open the slideshow and walk through the following:
 
 * `Use Case`
   
-  * Traditionally, investment management services would first gauge a customer's investment risk level (conservative, neutral, aggressive) based on factors such as overall risk tolerance, financial goals, and duration of investment, and then proceed to manage a portfolio specifically tailored to that customer for a nominal overhead/maintenance fee. However, as overall technology advanced (as did machine learning/algorithmic trading), automated investment management services started becoming increasingly prevalent -- allowing investment managment services to become more data-driven (and therefore intelligent) as well as cheaper due to automation.
+  * Traditionally, investment management services would first gauge a customer's investment risk level (conservative, neutral, aggressive) based on factors such as overall risk tolerance, financial goals, and duration of investment, and then proceed to manage a portfolio specifically tailored to that customer for a nominal overhead/maintenance fee. However, as overall technology advanced (as did machine learning/algorithmic trading), automated investment management services started becoming increasingly prevalent -- allowing investment management services to become more data-driven (and therefore intelligent) as well as cheaper due to automation.
 
 * `Advantages`
 
