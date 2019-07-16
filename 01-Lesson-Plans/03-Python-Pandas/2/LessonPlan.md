@@ -70,7 +70,7 @@ Review the [instructions](../../../02-Homework/04-Pandas/Instructions/README.md)
 
 The goal of this section is to help students understand the relationship between Pandas and Python. In this part of the lesson you will cover some specific features of Pandas and how Pandas can alleviate some of the challenges presented by Excel.
 
-**File:** [Unit 4.1 Slides](https://docs.google.com/presentation/d/1OyHSaY2IlRT7ncexJgjimA7zulBWV67_Pr5XdS6kyYQ/edit?usp=sharing)
+**File:** [Slides](https://docs.google.com/presentation/d/1OyHSaY2IlRT7ncexJgjimA7zulBWV67_Pr5XdS6kyYQ/edit?usp=sharing)
 
 Begin this part of the lesson by discussing the utility and history of spreadsheets. (Slide 4)
 
@@ -714,7 +714,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 11. Student Do: Three-Year Loans (20 min)
+### 11. Student Do: Three-Year Loans (15 min)
 
 Now that students have the conceptual knowledge to index and look up data, it's time they get some practice. In this activity, students will use DataFrame indexing on the dataset in `loans.csv` in order to generate insights about three-year loan customers.
 
@@ -726,7 +726,11 @@ Note that the data in `loans.csv` is a compilation of many different columns and
 
 ---
 
-### 12. Instructor Do: Review Three-Year Loans (5 min)
+### 12. BREAK (15 min)
+
+---
+
+### 13. Instructor Do: Review Three-Year Loans (5 min)
 
 Use this part of the lesson to review the previous activity with students.
 
@@ -758,7 +762,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 13. Instructor Do: Pandas Visualizations (10 min)
+### 14. Instructor Do: Pandas Visualizations (10 min)
 
 This part of the lesson is focused on creating charts using Pandas visualization functions. You will demo how to plot data with and without indexes, as well as  using line and bar charts.
 
@@ -796,7 +800,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 14. Student Do: Market Analysis (20 min)
+### 15. Student Do: Market Analysis (15 min)
 
 In this activity, students will use Pandas to create three different charts: pie chart, bar chart, and scatter plot. This activity will teach students how to create pie charts and scatter plots in addition to bar and line plots.
 
@@ -808,7 +812,7 @@ Circulate the classroom to review student progress as they complete the activity
 
 ---
 
-### 15. Instructor Do: Review Market Analysis (5 min)
+### 16. Instructor Do: Review Market Analysis (5 min)
 
 In this section, review the previous activity with students.
 
@@ -864,7 +868,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 16. Instructor Do: Returns (10 min)
+### 17. Instructor Do: Returns (10 min)
 
 The following demo introduces students to calculating daily returns with Pandas. It will also cover return on investment (ROI), the `pct_change` function, and cumulative returns. This section will build upon skills students have already learned: reading in CSV data, manipulating and cleaning DataFrames, and plotting data.
 
@@ -928,7 +932,7 @@ Now that students know how to calculate and plot returns, they will practice doi
 
 ---
 
-### 17. Student Do: Returns Over Date Ranges (20 min)
+### 18. Student Do: Returns Over Date Ranges (15 min)
 
 In this activity, students will analyze the last 10 years of historical price data for Advanced Micro Devices (AMD) and plot the daily returns over the last 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each time period to determine whether a short or long-term perspective should be used in prospecting AMD as a potential investment opportunity.
 
@@ -938,7 +942,7 @@ In this activity, students will analyze the last 10 years of historical price da
 
 ---
 
-### 18. Instructor Do: Review Returns Over Date Ranges (5 min)
+### 19. Instructor Do: Review Returns Over Date Ranges (5 min)
 
 In this section, review the solution to the previous activity with students.
 
@@ -993,7 +997,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 19. Instructor Do: Decompress
+### 20. Instructor Do: Decompress
 
 Before ending class, give students encouragement and allow them time to vocalize their thoughts.
 
