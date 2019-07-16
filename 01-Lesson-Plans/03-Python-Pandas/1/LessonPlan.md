@@ -1,4 +1,4 @@
-## 3.4 Lesson Plan: Python Review Day (6:30 PM)
+## 3.1 Lesson Plan: Python Review Day (6:30 PM)
 
 ### Overview
 

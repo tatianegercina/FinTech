@@ -1,4 +1,4 @@
-## Unit 3 - Python
+## Unit 3 - Python & Pandas
 
 ### Lesson Plans
 
@@ -10,10 +10,10 @@
 
 ### Homework
 
-* [Instructions](../../Homework/Instructions/README.md)
+* [Instructions](../../Homework/03-Pandas/Instructions/README.md)
 
 - - -
 
 ### Copyright
 
-Trilogy Education Services © 2019. All Rights Reserved.
+© 2019 Trilogy Education Services
