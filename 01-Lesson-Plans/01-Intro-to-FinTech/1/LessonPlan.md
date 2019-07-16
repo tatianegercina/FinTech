@@ -240,33 +240,53 @@ Ask if there are any questions before moving on.
 
 In this part of the lesson, review the Unit 1 homework assignment.
 
-In the Unit 1 homework assignment, students will develop a case study based on a particular FinTech company or technology. Students should answer as many of the following questions as they can:
+In the Unit 1 homework assignment, students will develop a case study based on a particular FinTech company or technology. Students should follow the corresponding case study template:
 
-**Company Sector**
+`Overview and Origins`
 
-  * Which financial industry is the company part of?
+* Name of company
 
-  * What are some trends and competitors in this industry?
+* When was the company incorporated?
 
-**Company Business Activities**
+* Who are the founders of the company?
 
-  * What “problem” does this company solve?
+* How did this idea come about?
 
-  * Who is the intended customer?
+* How is the company funded? How much funding have they received?
 
-  * What solution does this company offer that their competitors do not or cannot? (What is the unfair advantage they utilize?)
+`Business Activities`
 
-  * Which technologies are they currently using, and how are they implementing them?
+* What specific financial problem is the company/project trying to solve?
 
-  * What is the company doing right? What could be improved?
+* Who is the intended customer of the company? Is there any information about the market size of this set of customers? What solution does this company offer that their competitors do not or cannot? (What is the unfair advantage they utilize?)
 
-**Recommendations**
+* Which technologies are they currently using and how are they implementing them? (This may take a little bit of sleuthing- you may want to search the company’s engineering blog, or use sites like Stackshare)
 
-  * If you were an advisor for the company, what products or services would you suggest they offer?
+`Landscape`
 
-  * Why do you think this product or service would benefit the business?
+* What domain of the financial industry is the company In
 
-  * What technologies would your proposed ideas incorporate? Why are these technologies appropriate for your solution?
+* What are the major trends and innovations of this domain over the last 5-10 years?
+
+* Who are the other major companies in this domain?
+
+`Results`
+
+* What has been the business impact of this company so far?
+
+* What are some of the core metrics that companies in this domain use to measure success? How is your company doing on these metrics?
+
+* How is your company doing relative to competitors in the same domain?
+
+`Recommendations`
+
+* If you were to advise the company, what products or services would you suggest they add to their services (whether another company already has them or something that is your pure imagination)?
+
+* Why do you think it would benefit them?
+
+* What technologies would your proposed ideas incorporate?
+
+* Why are those technologies appropriate for your solution?
 
 Ask if there are any questions before ending class.
 
