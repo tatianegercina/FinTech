@@ -14,7 +14,7 @@ By the end of class, students will be able to:
 
 * Use the command line to execute basic file system operations.
 
-* Check Anaconda installations and create virtual environments.
+* Download and upload files to GitHub using the git GUI.
 
 * Describe the factors that led to the evolution of the FinTech industry.
 
@@ -24,12 +24,14 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
+* Slack out the [Anaconda Installation Guide](../../02-Python/Supplemental/AnacondaInstallGuide.md) and ask students to complete the install and verify it with a TA before the end of the next class. This should help catch installation issues with Python outside of the class time.
+
 * Students may have trouble grasping the notion of the command line. You can explain it like this: when students double-click on a folder to change directories, they are essentially executing a backend `cd` command. The GUI that a student sees is merely a visual overlay of the backend operations of the computer.
 
 * While important, the concept of Anaconda virtual environments and environment variables do not have to be as in-depth at this point in the course. The associated activity mainly acts as a technical pre-cursor to the future units in the course, and ensures that students should be able to complete future activities without dependency issues/conflicts.
 
 * Emphasize that understanding the history of FinTech is just as important as knowing what FinTech is. Employers will measure candidates not only by their technical skills, but also by their contextual knowledge of what is happening in the financial services industry.
-  
+
 ### Class Slides and Timetracker
 
 The slides for today can be viewed on Google Drive here: [Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
@@ -74,7 +76,7 @@ Open the slideshow and present the following questions and answers:
 
 * When should you use the command line?
 
-  **Answer:** The command line can be used at any time in place of the graphical user interface (GUI). The GUI is merely a visual overlay to the programs executed via the command line. Also, when remotely connecting to a server, such as via the Secure Shell Protocol (SSH), a GUI will not be provided. 
+  **Answer:** The command line can be used at any time in place of the graphical user interface (GUI). The GUI is merely a visual overlay to the programs executed via the command line. Also, when remotely connecting to a server, such as via the Secure Shell Protocol (SSH), a GUI will not be provided.
 
 * Why use the command line?
 
@@ -152,45 +154,43 @@ Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_o
 
 ---
 
-### 5. Instructor Do: Anaconda Virtual Environments (20 min)
+### 5. Instructor Do: Uploading Files to GitHub (20 min)
 
-In this activity, instructors guide students on how to use the command line to execute third-party commands such as the `conda` command line interface (CLI), representing the popular Anaconda Distribution. Students will use the `conda` CLI to make sure Anaconda is properly installed on their machines as well as create and initialize a Python virtual environment in preparation for Unit 2 and beyond.
+In this activity, students will learn how to upload files to GitHub, which will be used to submit their future homework assignments in the course.
 
-_Note: Explain to students that if the following steps do not work, they can troubleshoot their install with a TA during the break._
+Briefly explain the following:
 
-Complete a quick check to ensure students have Anaconda installed and that `conda` is added to their PATH environment variable.
+* GitHub offers a centralized location where developers can push and pull (upload and download) their code; GitHub always holds the most up-to-date code and files and handles everyone's updates appropriately.
 
-* Open up the console and have students follow along.
+* For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with GitHub via the command line using git, which allows for more advanced git operations.
 
-  * Enter `conda --version` which will display the version of Anaconda install.
+Then, have the students follow along with the following steps:
 
-    ![Anaconda Version](Images/conda_version.png)
+* Visit <https://github.com> and ask students to log in to their personal accounts.
 
-* Have TAs help any students with issues. The most common problem will be students with Windows that don't have the Anaconda PATH variable set. The easiest fix for this is to reinstall Anaconda and selecing the option to add conda to the path. 
+* From the main page, create a new repository with an initialized `README.md` file.
 
-  * This can be fixed by manually adding the PATH to Windows' environment variables, but can be more easily solved by uninstalling/reinstalling Anaconda and making sure to check the "Install to Path" box that comes up in a menu.
+  * Note that the convention in the software world is for each repository to have a README file that explains what the repository contains.
 
-Next move on to explaining [virtual environments](https://conda.io/docs/user-guide/tasks/manage-environments.html).
+  ![git repo](Images/GitDemo_1.png)
 
-* Virtual environments create an isolated environment for Python projects.
+* Create a new Excel file and save it to your desktop. This file will be used to demonstrate how to upload new files.
 
-* Explain how different projects can have different dependencies.
+* Navigate back to GitHub and click the "Upload files" button.
 
-* Explain how different projects might also use different types and versions of libraries.
+  ![upload file](Images/GitDemo_upload.png)
 
-* This virtual environment will make sure the class has all the right dependencies for future class activities.
+* Choose your Excel file in the dialog box.
 
-Create a virtual environment that will run Python 3.7. This will help solve issues where students have multiple versions of Python installed.
+  * Note that you can also drag and drop the file rather than use the "Upload files" button.
 
-* First run `conda create -n dev python=3.7 anaconda` in the terminal. Warn students that this may take a few minutes to install.
+* Add a commit message and commit the changes.
 
-* Now enter `conda activate dev` to activate the environment. When `(dev)$` appears, this means you are in the environment.
+* Refresh the webpage to show that the new file is now safely saved to the repository.
 
-* Now make sure everyone is using the correct version of Python by entering `python --version`.
+  ![drag file](Images/GitDemo_filedrag.gif)
 
-* Lastly, show that you can exit the environment by entering `conda deactivate`.
-
-Remind students that they will need to activate their environment each time that they open a new terminal. Windows users should always use `git-bash` for their terminal.
+Encourage students to practice using GitHub before the next class and attend office hours if they run into any problems.
 
 ---
 
@@ -243,7 +243,7 @@ Open the slideshow and use the slides to review the key historical factors leadi
 
   * Consumers today demand quick, reliable, and quality channels of engagement. Modern-day consumers often place their trust in a company that boasts a dynamic and beautiful website, a well-designed and efficient mobile application, and––ideally––a social user platform that allows customers to connect with others using the same product or service.
 
-  * Therefore, companies have been forced to make large investments in technology in order to stay competitive with their industry peers. Consumers have more product choices and are loyal to companies they trust. Therefore, the technological channels affecting consumer engagement have a direct impact on a company's ability to market themselves and, ultimately, capitalize on demand.  
+  * Therefore, companies have been forced to make large investments in technology in order to stay competitive with their industry peers. Consumers have more product choices and are loyal to companies they trust. Therefore, the technological channels affecting consumer engagement have a direct impact on a company's ability to market themselves and, ultimately, capitalize on demand.
 
 * Big Data
 
@@ -261,7 +261,7 @@ Open the slideshow and use the slides to review the key historical factors leadi
 
   * In addition, because cloud vendors like Amazon Web Services (AWS) manage hosting and deployment of servers in the cloud, the time-to-market for companies to reap the benefits of investing in technology has decreased, as they are able to push their applications and features quicker.
 
-  * The business landscape has become increasingly competitive, as smaller companies now have the capabilities to disrupt markets with their fully fledged, productionalized applications and services––which previously would have required large upfront costs, a barrier to entry of the industry.  
+  * The business landscape has become increasingly competitive, as smaller companies now have the capabilities to disrupt markets with their fully fledged, productionalized applications and services––which previously would have required large upfront costs, a barrier to entry of the industry.
 
 Answer any questions before moving on.
 
@@ -333,7 +333,7 @@ Open the slideshow and review the following FinTech domains:
 
   * InsurTech utilizes the benefits of machine learning to more efficiently group customers into risk profiles in order to provide the right type of insurance product.
 
-  * Fine-tuning the determination of customer risk profiles minimizes costs to those who would have been lumped together in a broader customer risk profile.  
+  * Fine-tuning the determination of customer risk profiles minimizes costs to those who would have been lumped together in a broader customer risk profile.
 
   * Examples: Lemonade, Slice, Ladder
 
