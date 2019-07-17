@@ -22,7 +22,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today's lesson may make students feel uneasy as they continue to use the command line to interact with both files on their local file system as well as files that are actively tracked via an online repository. Calm students' nerves by telling them that git is merely a command line tool––a program that exists on the local file system that executes from the command line, or terminal. 
+* Today's lesson may make students feel uneasy as they continue to use the command line to interact with both files on their local file system as well as files that are actively tracked via an online repository. Calm students' nerves by telling them that git is merely a command line tool––a program that exists on the local file system that executes from the command line, or terminal.
 
 * Make sure that by the end of class students have the tools to create well-presented markdown README files to host in their git repositories. They'll need these to showcase their git repositories (and the coding assets within them) to potential future employers.
 
@@ -198,7 +198,7 @@ Open the slideshow and use slides 1–22 to review the following points about gi
 
 * How does the GitHub web app differ from the git CLI?
 
-  * The GitHub web app provides a convenient user interface for performing common git operations. The git CLI, however, is a command line utility that provides all git operations and is generally more robust than a git-based graphical user interface (GUI). 
+  * The GitHub web app provides a convenient user interface for performing common git operations. The git CLI, however, is a command line utility that provides all git operations and is generally more robust than a git-based graphical user interface (GUI).
   
   * This is due to the fact that, more often than not, a GUI interacts with the underlying CLI to perform its functionality (e.g., click a button that executes a command on the back-end) and, therefore, is often a simplified version of the underlying functionality.
 
@@ -216,9 +216,9 @@ Open the slideshow and use slides 1–22 to review the following points about gi
 
 * What is a git commit?
 
-    * Before changed files are pushed from a local git repository to the remote git repository, a git commit saves a queue of tracked changed files as a **save** or **checkpoint** for a git repository.
-    
-    * This way, should it be necessary, a git repository can be restored to a previous checkpoint in time, thereby undoing any existing changes from that point.
+  * Before changed files are pushed from a local git repository to the remote git repository, a git commit saves a queue of tracked changed files as a **save** or **checkpoint** for a git repository.
+  
+  * This way, should it be necessary, a git repository can be restored to a previous checkpoint in time, thereby undoing any existing changes from that point.
 
 * What is git's "snapshot" model?
 
@@ -238,7 +238,7 @@ In this section, you will demo how to add folder structures to their newly creat
 
 Demo the following with your students:
 
-* Revisit the GitHub website and click on the "Clone or download" button. 
+* Revisit the GitHub website and click on the "Clone or download" button.
 
 * This time, copy the URL, as it represents the GitHub repository link (which will be used for the `git clone` command).
 
@@ -258,7 +258,7 @@ Demo the following with your students:
 
   ![git-repository-gitkeep](Images/git-repository-gitkeep.png)
 
-* Once the folders and files have been created, go to the command line and navigate to the root of the git repo folder. Run the following lines to push the changes to the remote git repository: 
+* Once the folders and files have been created, go to the command line and navigate to the root of the git repo folder. Run the following lines to push the changes to the remote git repository:
 
 **Note:** Be sure to explain each piece of code as you run it.
 
@@ -345,7 +345,7 @@ Open the slideshow and present students with the following questions and answers
 
   **Answer:** Markdown allows us to create visually enhanced documents such as README files (for GitHub repos, for example), which are valuable not only to potential employers, but also to potential collaborators (colleagues or teammates). A good README file helps people understand the purpose of the repository at a glance, and it shows developers how to navigate, install, and run a project.
 
-Next, demo the following while explaing each step:
+Next, demo the following while explaining each step:
 
 * Go to your local git repository and modify the README file. Notice that there is a `#` in front of the README title; this is why the font appears larger in the GitHub webpage. In markdown, the `#` sign represents a level 1 heading, `##` represents a level 2 heading, and so on.  
 
