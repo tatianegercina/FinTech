@@ -32,8 +32,6 @@ By the end of class, students will be able to:
 
 * Be mindful of students working in groups during the case study activity; some students may be less vocal than others. Circulate the classroom with the TAs and make sure that every student is actively engaged and has a voice in their respective groups.
 
-* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
-
 ### Class Slides and Timetracker
 
 The slides for today can be viewed on Google Drive here: [Slides]()
