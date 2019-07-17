@@ -4,13 +4,11 @@
 
 ### Overview
 
-In today's class, students will learn how to utilize the git graphical user interface (GUI), git command line interface (CLI), and create markdown files to generate FinTech case studies that can be collaboratively stored, accessed, modified, and previewed in an online git or file repository such as GitHub. A solid understanding of the git GUI/CLI and knowing how to create markdown files will help students properly manage git repositories and construct visually enhanced README files.
+In today's class, students will learn how to utilize the Git Command Line Interface (CLI) and create markdown files to generate FinTech case studies that can be collaboratively stored, accessed/modified, and previewed on an online git or file repository such as Github. A solid understanding of the git CLI as well as knowing how to create markdown files will serve students in helping them properly manage git repositories and construct visually enhanced README description files.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
-
-* Create a git repository and upload files to GitHub using the git GUI.
 
 * Configure the git CLI user credentials from the terminal.
 
@@ -54,9 +52,9 @@ Welcome students to the third day of class and the final lesson of Unit 1. Cover
 
 ---
 
-### 2. Instructor Do: Git GUI (10 min)
+### 2. Instructor Do: Refresher (10 min)
 
-In this activity, students will learn how to create and download a git repository, use the command line to navigate to and edit a text file in the local repository folder, and then upload the file to the git repository. This section serves as a precursor to the following git CLI activities, as it showcases the limitations of downloading a repository as a local folder versus performing a git clone in which git can track and compare changes.
+This activity gives students a quick re-cap on how to create and download a git repository (from the web app), use the terminal to navigate and edit a text file in the local repository folder, and upload the file back to the git repository (from the web app). This section serves as a precursor to the following git CLI activities, as it showcases the limitations of downloading a repository as a local folder versus performing a git clone in which git can track and compare changes.
 
 First, quickly present the following questions and answers:
 
