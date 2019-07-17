@@ -180,7 +180,7 @@ Open the slideshow and use slides 1–22 to review the following points about gi
 
 ![git-config](Images/git-config.png)
 
-* What are the popular commands of the git CLI?
+* What are popular git CLI commands?
 
   * `git clone`: Clones a git repository to the local file system.
 
