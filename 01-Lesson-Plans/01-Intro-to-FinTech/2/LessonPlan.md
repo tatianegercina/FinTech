@@ -104,7 +104,7 @@ Open the command line and demo the following commands. Tell students that on a M
 
 ![terminal-example](Images/terminal-example.png)
 
-Slack out [CommonCommands.txt](Activities/03-Ins_Terminal/Solved/CommonCommands.md) for students to use as a reference.
+Slack out [CommonCommands.txt](Activities/01-Ins_Terminal/Solved/CommonCommands.md) for students to use as a reference.
 
 Answer any questions before moving on.
 
@@ -114,11 +114,11 @@ Answer any questions before moving on.
 
 In this activity, students will perform their own file system operations via the command line.
 
-**File:** [README.md](Activities/04-Stu_Terminal/README.md)
+**File:** [README.md](Activities/02-Stu_Terminal/README.md)
 
 ### 4. Instructor Do: Review File System Operations (5 min)
 
-Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points:
+Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points:
 
 * `mkdir` creates folder directories.
 
@@ -345,7 +345,7 @@ Answer any questions before moving on.
 
 By this point, students have been given examples of the major domains within FinTech as well as the overarching trends across the industry. Now, students will work together in groups of 3-4 individuals to research and produce a broad summary overview of one of the FinTech domains.
 
-**File:** [README.md](Activities/01-Stu_FinTech_Domains/README.md)
+**File:** [README.md](Activities/03-Stu_FinTech_Domains_Part_I/README.md)
 
 ---
 
@@ -353,7 +353,7 @@ By this point, students have been given examples of the major domains within Fin
 
  Now, students will work together in groups of 3-4 individuals to research and produce hypothetical headlines for each FinTech domain that one could expect to witness within the next 2-3 years.
 
-**File:** [README.md](Activities/01-Stu_FinTech_Domains/README.md)
+**File:** [README.md](Activities/04-Stu_FinTech_Domains_Part_II/README.md)
 
 ### 14. Instructor Do: Review FinTech Headlines (20 min)
 
