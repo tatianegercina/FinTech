@@ -114,8 +114,6 @@ Then, perform a live demo while highlighting the following:
 
   ![github-remote-change-confirmation](Images/github-remote-change-confirmation.png)
 
-Answer any questions before moving on.
-
 ---
 
 ### 3. Student Do: Create and Personalize a GitHub Repo (15 min)
@@ -168,15 +166,15 @@ Open the slideshow and use slides 1–22 to review the following points about gi
 
 * What are the popular commands of the git CLI?
 
-    * `git clone`: Clones a git repository to the local file system.
+  * `git clone`: Clones a git repository to the local file system.
 
-    * `git add`: Adds changed files to the queue of tracked files ready to be committed.
+  * `git add`: Adds changed files to the queue of tracked files ready to be committed.
 
-    * `git commit`: Adds tracked files as a bulk checkpoint ready to be pushed to the remote git repository.
+  * `git commit`: Adds tracked files as a bulk checkpoint ready to be pushed to the remote git repository.
 
-    * `git push`: Uploads changed files from the local git repository to the remote git repository and updates the remote files.
+  * `git push`: Uploads changed files from the local git repository to the remote git repository and updates the remote files.
 
-    * `git pull`: Downloads changed files from the remote git repository to the local git repository and updates the local files.
+  * `git pull`: Downloads changed files from the remote git repository to the local git repository and updates the local files.
 
 * What is a git commit?
 
