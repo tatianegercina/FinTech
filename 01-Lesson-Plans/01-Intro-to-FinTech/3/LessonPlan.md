@@ -44,9 +44,9 @@ Welcome students to the third day of class and the final lesson of Unit 1.  Cove
 
 * The previous lessons focused on introducing students to the FinTech course structure as well as FinTech more broadly. We have discussed the history and current landscape of the FinTech ecosystem, as well as notable case studies of technological disruptors in this space. Today, students will combine what they've learned so far about the FinTech industry to create their own case studies that can be hosted in online git repositories and previewed as visually enhanced markdown files.
 
-* Mention to the class that today's goal is twofold: (1) to manage their own git repositories and develop in shared repositories, and (2) to develop text-based assets, such as a FinTech case study, in markdown to provide visually appealing README files that can be previewed in GitHub (and, therefore, showcased to potential employers). 
+* Mention to the class that today's goal is twofold: (1) to manage their own git repositories and develop in shared repositories, and (2) to develop text-based assets, such as a FinTech case study, in markdown to provide visually appealing README files that can be previewed in GitHub (and, therefore, showcased to potential employers).
 
-* In this lesson, students will be divided into groups and given a selection of FinTech case study proposals to choose from. Students will need to work collaboratively and generate a visually appealing document that can be hosted online––which is where git CLI and markdown comes in! 
+* In this lesson, students will be divided into groups and given a selection of FinTech case study proposals to choose from. Students will need to work collaboratively and generate a visually appealing document that can be hosted online––which is where git CLI and markdown comes in!
 
 * Energize your students! Remind them that they'll be using collaborative tools (git) that real developers and industry professionals use to share and build upon code.
 
@@ -114,6 +114,42 @@ Then, perform a live demo while highlighting the following:
 
   ![github-remote-change-confirmation](Images/github-remote-change-confirmation.png)
 
+In this activity, students will learn how to upload files to GitHub, which will be used to submit their future homework assignments in the course.
+
+Briefly explain the following:
+
+* GitHub offers a centralized location where developers can push and pull (upload and download) their code; GitHub always holds the most up-to-date code and files and handles everyone's updates appropriately.
+
+* For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with GitHub via the command line using git, which allows for more advanced git operations.
+
+Then, have the students follow along with the following steps:
+
+* Visit <https://github.com> and ask students to log in to their personal accounts.
+
+* From the main page, create a new repository with an initialized `README.md` file.
+
+  * Note that the convention in the software world is for each repository to have a README file that explains what the repository contains.
+
+  ![git repo](Images/GitDemo_1.png)
+
+* Create a new Excel file and save it to your desktop. This file will be used to demonstrate how to upload new files.
+
+* Navigate back to GitHub and click the "Upload files" button.
+
+  ![upload file](Images/GitDemo_upload.png)
+
+* Choose your Excel file in the dialog box.
+
+  * Note that you can also drag and drop the file rather than use the "Upload files" button.
+  
+* Add a commit message and commit the changes.
+
+* Refresh the webpage to show that the new file is now safely saved to the repository.
+
+  ![drag file](Images/GitDemo_filedrag.gif)
+
+Encourage students to practice using GitHub before the next class and attend office hours if they run into any problems.
+
   ---
 
 Answer any questions before moving on.
@@ -136,7 +172,7 @@ Review the previous activity with students, highlighting the following points:
 
   ![github-repo-unzipped](Images/github-repo-unzipped.png)
 
-* The `code` command line utility is often used as a quick shortcut to jump from the terminal to editing files directly in VS Code. 
+* The `code` command line utility is often used as a quick shortcut to jump from the terminal to editing files directly in VS Code.
 
   ![vscode-familiarity](Images/vscode-familiarity.png)
 
@@ -180,15 +216,15 @@ Open the slideshow and use slides 1–22 to review the following points about gi
 
 * What is a git commit?
 
-    * Before changed files are pushed from a local git repository to the remote git repository, a git commit saves a queue of tracked changed files as a **save** or **checkpoint** for a git repository. 
+    * Before changed files are pushed from a local git repository to the remote git repository, a git commit saves a queue of tracked changed files as a **save** or **checkpoint** for a git repository.
     
     * This way, should it be necessary, a git repository can be restored to a previous checkpoint in time, thereby undoing any existing changes from that point.
 
-* What is git's "snapshot" model? 
+* What is git's "snapshot" model?
 
-  * Git thinks of its data more like a series of snapshots of a miniature file system. Every time you commit, or save the state of your project in git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot. 
+  * Git thinks of its data more like a series of snapshots of a miniature file system. Every time you commit, or save the state of your project in git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot.
   
-  * To be efficient, if files have not changed, git doesn’t store the file again; rather, it stores a link to the previous identical file it has already stored. 
+  * To be efficient, if files have not changed, git doesn’t store the file again; rather, it stores a link to the previous identical file it has already stored.
 
   ![Git Snapshot Model](https://git-scm.com/book/en/v2/images/snapshots.png)
 
@@ -261,11 +297,11 @@ In this activity, students will use the git CLI to clone their git repositories 
 
 In this section, review the previous activity and take some time to answer students' questions.
 
-First, ask students if they have any questions, and review commands they are having trouble with. Encourage students to attend office hours if they need additional review. 
+First, ask students if they have any questions, and review commands they are having trouble with. Encourage students to attend office hours if they need additional review.
 
-Then, tell students the following: 
+Then, tell students the following:
 
-* The process completed in this activity will be the primary way of submitting homework assignments to GitHub. (No more manual uploads!) 
+* The process completed in this activity will be the primary way of submitting homework assignments to GitHub. (No more manual uploads!)
 
 * If it takes some time to figure out, that's okay. By the end of the course, everyone will be git ninjas!
 
@@ -275,7 +311,7 @@ Encourage students to continue adding and committing to GitHub for extra practic
 
 ### 9. Instructor Do: Markdown (10 min)
 
-In this part of the lesson, students will be introduced to markdown files and their style formatting, which can be used to create visually appealing README files. 
+In this part of the lesson, students will be introduced to markdown files and their style formatting, which can be used to create visually appealing README files.
 
 **Files:** [slideshow-placeholder]()
 
@@ -287,7 +323,7 @@ Open the slideshow and present students with the following questions and answers
 
 * Why use markdown?
 
-  **Answer:** Markdown provides features for creating visually enhanced documents that are rendered on the web. It is commonly used for documents such as README files or online forum discussion posts. 
+  **Answer:** Markdown provides features for creating visually enhanced documents that are rendered on the web. It is commonly used for documents such as README files or online forum discussion posts.
 
 * What are some common markdown features?
 
@@ -353,7 +389,7 @@ Next, demo the following while explaing each step:
 
   ![markdown-image-link-results](Images/markdown-image-link-results.png)
 
-* Notice how the newly formatted markdown file appears in comparison to the original. 
+* Notice how the newly formatted markdown file appears in comparison to the original.
 
 Ask students if they have any questions before moving on.
 
@@ -369,11 +405,11 @@ In this activity, students will visually enhance their README files for their Gi
 
 Take some time to review the previous activity with students, highlighting the following points:
 
-* A well-formatted README file showcases the contents of a GitHub repository. Markdown syntax provides additional features for text formatting, links, images, and code snippets, among other things. 
+* A well-formatted README file showcases the contents of a GitHub repository. Markdown syntax provides additional features for text formatting, links, images, and code snippets, among other things.
 
 * Markdown is a common README format and renders on a webpage via specific syntax.
 
-* Using markdown syntax is as easy as using the correct syntactical keyword or term. For example, the `![]()` syntax is used specifically for linking images to the markdown file. 
+* Using markdown syntax is as easy as using the correct syntactical keyword or term. For example, the `![]()` syntax is used specifically for linking images to the markdown file.
 
 Encourage students to continue building their GitHub README files as they progress through the course, particularly when they begin generating coding assets. The goal is to have professional-looking README files for their GitHub repo by the end of this course.
 
@@ -393,17 +429,65 @@ Open the slideshow and go through the slides while explaining the following:
 
 * Now that students know how to manage their own GitHub repositories and create text-formatted markdown files, they can move on to creating shared repositories in which multiple people collaborate to create a case study report.
 
-* Git repositories are often shared and have multiple collaborators; therfore, this activity will give students practice in this kind of scenario. 
+* Git repositories are often shared and have multiple collaborators; therefore, this activity will give students practice in this kind of scenario.
 
 Next, provide an overview of the activity.
 
 * In the class GitHub repository, there will be a list of potential FinTech case studies that they can choose from.
 
-* Students should pair off and choose one of the FinTech companies on the list to present. 
+* Students should pair off and choose one of the FinTech companies on the list to present.
 
-* Students will have 30 minutes to develop their case studies, and 2 to 3 minutes to present their reports. 
+* Students will have 30 minutes to develop their case studies, and 2 to 3 minutes to present their reports.
 
 Get students excited for this work. This activity is a great opportunity for students to interact and build on what they've learned to independently produce an analysis.
+
+In this activity, students will be instructed on how to create a FinTech case study -- a compilation of holistic research performed on a FinTech company or technology. This activity is particularly important as it will serve as the knowledge foundation for students completing their FinTech case studies for the unit `1` homework.
+
+**File:** [slideshow-placeholder]()
+
+Open the slideshow and walk through the following:
+
+* `Background`
+
+  * This case study researches the online financial advisory or "robo-advisory" company known as Betterment. Betterment is an examplar robo-advisory company that provides optimized and self-managed portfolios that customers can invest in based on their varying risk tolerances. In addition, Betterment provides financial advice based on specific customer goals and timelines, and offloads the work of things like portfolio re-balancing, dividend re-investments, auto-depositing, and much more.
+
+* `Use Case`
+  
+  * Traditionally, investment management services would first gauge a customer's investment risk level (conservative, neutral, aggressive) based on factors such as overall risk tolerance, financial goals, and duration of investment, and then proceed to manage a portfolio specifically tailored to that customer for a nominal overhead/maintenance fee. However, as overall technology advanced (as did machine learning/algorithmic trading), automated investment management services started becoming increasingly prevalent -- allowing investment management services to become more data-driven (and therefore intelligent) as well as cheaper due to automation.
+
+* `Advantages`
+
+  * Betterment provides a relatively cheap and easy-to-use service that makes investing simple, intuitive, and intelligent; Customers are given the benefits of investing in computer-optimized and self-managed portfolios based on their specific investment needs (risk tolerance, financial goals, and duration of investment) all the while paying a cheaper overhead/maintenance fee due to the efficiencies of automation. In addition, Betterment has additional features such as monthly auto-deposits to make saving even easier for its customers.
+
+* `Competitors`
+
+  * Similar companies such as WealthFront, Acorns, Stash, and many others have developed similar solutions.
+
+Advise students that they should generally seek to answer the following questions for their case studies:
+
+* `Company Sector`
+
+  * Which financial industry it is in?
+
+  * What are the trends and competitors in this industry?
+
+* `Company Business Activities`
+
+  * What **problem** does this company solve?
+
+  * Who is their intended customer?
+
+  * What solution does this company offer that their competitor does not or cannot? (What is the advantage they utilize?)
+
+  * Which technologies are they currently using and how are they implementing them?
+
+  * What are they doing right? What could be improved?
+
+* `Recommendations:`
+
+  * What products or services would you suggest they add to their catalog? Why do you think it would benefit them?
+
+  * What technologies would your proposed ideas incorporate? Why are those technologies appropriate for your solution?
 
 ---
 
@@ -419,7 +503,7 @@ Students will now present their findings to the class.
 
 Explain that each team should take 2 to 3 minutes to share their reports. They should log into their shared GitHub repo and use the markdown file they created to guide their presentation.
 
-**Note:** Make sure that all students participate in the presentation and are given an opportunity to speak. 
+**Note:** Make sure that all students participate in the presentation and are given an opportunity to speak.
 
 After each group has presented, check the pulse of the class. Ask students if they have any questions and if they found the activity to be enjoyable.
 
