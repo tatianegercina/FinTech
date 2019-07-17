@@ -144,7 +144,7 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
 
 ### 5. Instructor Do: Anaconda Virtual Environments (20 min)
 
-In this activity, instructors guide students on how to use the command line to execute third-party commands such as the `conda` command line interface (CLI) representing the popular Anaconda Distribution. Students will use the `conda` CLI to make sure Anaconda is properly installed on their machines as well as create and initialize a Python virtual environment in preparation for Unit 2 and beyond.
+In this activity, instructors guide students on how to use the command line to execute third-party commands such as the `conda` command line interface (CLI), representing the popular Anaconda Distribution. Students will use the `conda` CLI to make sure Anaconda is properly installed on their machines as well as create and initialize a Python virtual environment in preparation for Unit 2 and beyond.
 
 Complete a quick check to ensure students have Anaconda installed and that `conda` is added to their PATH environment variable.
 
@@ -168,9 +168,9 @@ Next move on to explaining [virtual environments](https://conda.io/docs/user-gui
 
 * This virtual environment will make sure the class has all the right dependencies for future class activities.
 
-Create a virtual environment that will run Python 3.6. This will help solve issues where students have multiple versions of Python installed.
+Create a virtual environment that will run Python 3.7. This will help solve issues where students have multiple versions of Python installed.
 
-* First run `conda create -n PythonData python=3.6 anaconda` in the terminal. Warn students that this may take a few minutes to install.
+* First run `conda create -n PythonData python=3.7 anaconda` in the terminal. Warn students that this may take a few minutes to install.
 
 * Now enter `source activate PythonData` to activate the environment. When `(PythonData)$` appears, this means you are in the environment.
 
