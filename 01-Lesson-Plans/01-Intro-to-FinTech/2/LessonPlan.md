@@ -144,6 +144,8 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
 
 ### 5. Instructor Do: Anaconda Virtual Environments (20 min)
 
+In this activity, instructors walk through students on how to check that they have Anaconda properly installed on their machines as well as how to create and initialize a Python virtual environment.
+
 * Complete a quick check to ensure students have conda installed `conda` and added to their path.
 
 * Open up the console and have students follow along.
