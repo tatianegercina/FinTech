@@ -4,9 +4,9 @@
 
 ### Overview
 
-Today's class will focus on command line basics and git, using a graphical user interface, or GUI. It will then further investigate the key factors leading to the exponential growth of the FinTech industry.
+Today's class will focus on command line basics and setting up an Anaconda virtual environment. It will then further investigate the key factors leading to the exponential growth of the FinTech industry.
 
-Specifically, students will be introduced to basic command line and git download/upload skills, which will help them use the more advanced git CLI in the next lesson; learn more about the history of FinTech and the areas it has disrupted; and collaborate to create their own case studies for a FinTech company.
+Specifically, students will be introduced to basic command line and virtual environment skills, which will help them use more advanced CLI tools in the next lesson as well as future units in the course; learn more about the history of FinTech and the areas that have been disrupted through innovation; and collaborate with others to produce predictions on various FinTech domains in the form of future news headlines.
 
 ### Class Objectives
 
@@ -14,22 +14,22 @@ By the end of class, students will be able to:
 
 * Use the command line to execute basic file system operations.
 
-* Download and upload files to GitHub using the git GUI.
+* Check Anaconda installations and create virtual environments.
 
 * Describe the factors that led to the evolution of the FinTech industry.
 
 * Map out the disrupted domains of the FinTech industry.
 
-* Create a case study based on a FinTech company.
+* Make predictions in the form of future news headlines for a particular FinTech domain.
 
 ### Instructor Notes
 
 * Students may have trouble grasping the notion of the command line. You can explain it like this: when students double-click on a folder to change directories, they are essentially executing a backend `cd` command. The GUI that a student sees is merely a visual overlay of the backend operations of the computer.
 
+* While important, the concept of Anaconda virtual environments and environment variables do not have to be as in-depth at this point in the course. The associated activity mainly acts as a technical pre-cursor to the future units in the course, and ensures that students should be able to complete future activities without dependency issues/conflicts.
+
 * Emphasize that understanding the history of FinTech is just as important as knowing what FinTech is. Employers will measure candidates not only by their technical skills, but also by their contextual knowledge of what is happening in the financial services industry.
-
-* Be thorough when explaining case study requirements and showcasing a completed case study for students to use as a model. Case studies can vary widely in length depending on the audience for which it was written. Therefore, for the sake of the time, case studies should be comprehensive but not overly long.  
-
+  
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ---
