@@ -4,7 +4,7 @@
 
 ### Overview
 
-In today's class, students will learn how to utilize the git command line interface (CLI) and create markdown files to generate FinTech case studies that can be collaboratively stored, accessed, modified, and previewed in an online git or file repository such as GitHub. A solid understanding of the git CLI and knowing how to create markdown files will help students properly manage git repositories and construct visually enhanced README files. 
+In today's class, students will learn how to utilize the git command line interface (CLI) and create markdown files to generate FinTech case studies that can be collaboratively stored, accessed, modified, and previewed in an online git or file repository such as GitHub. A solid understanding of the git CLI and knowing how to create markdown files will help students properly manage git repositories and construct visually enhanced README files.
 
 ### Class Objectives
 
@@ -52,9 +52,9 @@ Welcome students to the third day of class and the final lesson of Unit 1.  Cove
 
 ---
 
-### 2. Instructor Do: Refresher (10 min)
+### 2. Instructor Do: Git GUI (10 min)
 
-This section will provide students with a quick recap of how to create and download a git repository, use the command line to navigate to and edit a text file in the local repository folder, and then upload the file to the git repository. This section serves as a precursor to the later git CLI activities, as it showcases the limitations of downloading a repository as a local folder versus performing a git clone in which git can track and compare changes.
+In this activity, students will learn how to create and download a git repository, use the command line to navigate to and edit a text file in the local repository folder, and then upload the file to the git repository. This section serves as a precursor to the following git CLI activities, as it showcases the limitations of downloading a repository as a local folder versus performing a git clone in which git can track and compare changes.
 
 First, quickly present the following questions and answers:
 
@@ -66,9 +66,9 @@ First, quickly present the following questions and answers:
 
   **Answer:** A git repository is a remote or online file repository in which git tracks files and conducts version control as changes are made.
 
-* What is a command prompt?
+* How is git used?
 
-  **Answer:** A command prompt is a command line interpreter application in which users can execute commands to perform specific file system operations or run other existing programs residing in the file system.
+  **Answer:** Git is often used via the command line, but vendors such as GitHub or GitLab provide web/desktop apps that allow users to use git via a GUI.
 
 * What is GitHub?
 
@@ -104,7 +104,7 @@ Then, perform a live demo while highlighting the following:
 
   ![git-local-change](Images/git-local-change.png)
 
-* Files can be committed and changed in the git repository via GitHub.
+* Files can be committed and changed in the git repository via GitHub by clicking on the `Upload files` tab and navigating to the file upload webpage.
 
   ![github-upload-files](Images/github-upload-files.png)
 
@@ -114,45 +114,9 @@ Then, perform a live demo while highlighting the following:
 
   ![github-remote-change-confirmation](Images/github-remote-change-confirmation.png)
 
-In this activity, students will learn how to upload files to GitHub, which will be used to submit their future homework assignments in the course.
-
-Briefly explain the following:
-
-* GitHub offers a centralized location where developers can push and pull (upload and download) their code; GitHub always holds the most up-to-date code and files and handles everyone's updates appropriately.
-
-* For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with GitHub via the command line using git, which allows for more advanced git operations.
-
-Then, have the students follow along with the following steps:
-
-* Visit <https://github.com> and ask students to log in to their personal accounts.
-
-* From the main page, create a new repository with an initialized `README.md` file.
-
-  * Note that the convention in the software world is for each repository to have a README file that explains what the repository contains.
-
-  ![git repo](Images/GitDemo_1.png)
-
-* Create a new Excel file and save it to your desktop. This file will be used to demonstrate how to upload new files.
-
-* Navigate back to GitHub and click the "Upload files" button.
-
-  ![upload file](Images/GitDemo_upload.png)
-
-* Choose your Excel file in the dialog box.
-
-  * Note that you can also drag and drop the file rather than use the "Upload files" button.
-  
-* Add a commit message and commit the changes.
-
-* Refresh the webpage to show that the new file is now safely saved to the repository.
-
-  ![drag file](Images/GitDemo_filedrag.gif)
-
-Encourage students to practice using GitHub before the next class and attend office hours if they run into any problems.
-
-  ---
-
 Answer any questions before moving on.
+
+---
 
 ### 3. Student Do: Create and Personalize a GitHub Repo (15 min)
 
