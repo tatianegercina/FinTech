@@ -1,47 +1,51 @@
-# FinTech Groups
+# FinTech Case Study
 
-Time to use what you've learned to piece it all together! Get together in groups and collaboratively create a FinTech case study report written in Markdown, hosted on a shared GitHub repository.
+In this activity, you will put together all of the skills you have learned so far. Work with a partner to create a FinTech case study report. It should be written in markdown and hosted on a shared GitHub repository. 
 
-Be prepared to share your case study with the rest of the class when you have finished!
+Be prepared to share your findings with the class!
 
 ## Instructions
 
-Walk through the following steps:
+Complete the following steps:
 
-  * Navigate to the class GitHub repository and choose one of the available FinTech case study proposals.
+1. Navigate to the class GitHub repository and choose one of the case study proposals from the list.
 
-  * Create a new shared GitHub repository and add each of your group members to the repo.
+1. Create a new GitHub repository to share with your partner.
 
-  * Research your particular FinTech case and provide answers to the following:
+1. Research the FinTech case study you chose. Provide answers to the following:
 
     * What is the background of your company? What do they do? Who are their competitors?
 
-    * How does this company use technology to their advantage? Why are they called a "FinTech" company?
+    * How does this company use technology to their advantage? Why are they considered a FinTech company?
 
     * Why is this company exemplary in the FinTech space? What are their strengths and weaknesses?
 
     * What is the prognosis for this company? Where do they expect to be in the future?
 
-  * Modify the `README` file to include the minimum requirements (your group can add additional markdown features if desired):
+1. Modify the README file to include the following features. **Note:** The list below includes the minimum requirements. Feel free to add other markdown features! 
 
-    * `H1 Title`: A title for the FinTech case study.
+    * **H1 heading:** A title for the FinTech case study
 
-    * `Image`: An image relevant to the case study.
+    * **Image:** An image relevant to the case study
 
-    * `H2 Description`: A description header.
+    * **H2 description:** A description header
 
-    * `Description Content`: Content for the description
+    * **Description content:** Content for the description
 
-    * `Contributors`: Named contributors/members of the group
+    * **Contributors:** The names of everyone in your group
 
-    * `H3 FinTech Case Study Report`: A title for the FinTech case study report
+    * **H3 heading:** A title for the FinTech case study report
 
-    * `FinTech Case Study Content`: Content for the FinTech case study
+    * **Case study content:** Content for the case study
 
-  * Push the changes to the shared GitHub repository.
+1. Push the changes to the shared GitHub repository.
 
-  * Navigate to the shared GitHub repository and confirm the changes.
+1. Navigate to the shared GitHub repository and confirm the changes.
 
-## Hints
+## Hint
 
-* If you plan on having individuals in your group working on the same file at the same time (rather than one person typing out the entirety of the report), be aware of merge conflicts. In other words, students will need to be careful modifying the same file and creating separate **versions** of the file, in which case git will not know which version takes precedence. Learn more about git merge conflicts [here!](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line)
+If you and your partner plan to work on the file at the same time, be aware of merge conflicts. That is, be careful not to create separate versions of the file, as git will not know which version should take precedence. Learn more about git merge conflicts [here](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line). 
+
+---
+
+© 2019 Trilogy Education Services
