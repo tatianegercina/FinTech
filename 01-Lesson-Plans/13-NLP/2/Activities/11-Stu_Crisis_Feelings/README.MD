@@ -1,8 +1,8 @@
 # The Feelings of the Crisis
 
-While reading news articles normally the title is the hook, perhaps a negative title could lead you to skip reading an article if you don't want to be in a bad mood. But is this fair enough?
+While reading news articles normally the title is the hook to continue reading, however a negative title could lead you to skip reading an article if you don't want to be in a bad mood. But is this fair enough?
 
-On this activity you are tasked to corroborate if a news title with a negative sentiment leads or not to a negative content. You will use VADER sentiment to accomplish this work using the news articles that you previously download on _The Voice of the Crisis_ activity.
+On this activity you are tasked to corroborate if a news title with a negative sentiment leads or not to a negative content. You will use VADER sentiment to accomplish this work using the news articles that you previously downloaded on _The Voice of the Crisis_ activity.
 
 ---
 
@@ -18,7 +18,7 @@ The VADER sentiment module is only trained to score sentiment on English languag
 
 As you know the `compound` score could be used to get a normalized score for a sentiment, in this section you have to create a function called `get_sentiment(score)` that will return a normalized value of sentiment for the `score` parameter based on the rules you learn. This function should return `1` for positive sentiment, `-1` for negative sentiment, and `0` for neutral sentiment.
 
-Use the the VADER sentiment module from `NLTK` to score the sentiment of every news article title and text in english; you should append ten new columns to the English news DataFrame to store the results as follows.
+Use the the VADER sentiment module from `NLTK` to score the sentiment of every news article title and text in English; you should append ten new columns to the English news DataFrame to store the results as follows.
 
 * Title's compound score
 * Title's positive score
@@ -33,9 +33,7 @@ Use the the VADER sentiment module from `NLTK` to score the sentiment of every n
 
 Your final DataFrame should look like this.
 
-![Sample DataFrame with sentiment scores](../../Images/crisis_feelings_df.png)
-
-**Hint:** You can use the `iterrows()` method from the Pandas DataFrame to iterate across the rows to score the sentiment for the title an the text of each news article.
+![Sample DataFrame with sentiment scores](Images/crisis_feelings_df.png)
 
 ### Analyzing Sentiments Results
 
@@ -43,6 +41,10 @@ How the sentiment of the title and the text differs on news articles?
 
 To answer this question, on this section you will create a bar chart contrasting the normalized sentiment for the title and the text of each news article. Use the build-in `plot()` method of the Pandas DataFrame to create a bar chart like the one bellow. Be aware that you chart might differ from this one due to is made from a different news DataFrame.
 
-![Sample bar chart of news title and text sentiments](../../Images/crisis_feelings_bar_chart.png)
+![Sample bar chart of news title and text sentiments](Images/crisis_feelings_bar_chart.png)
 
 Finally get the descriptive statistics from the English news DataFrame and discuss the analysis results with your partners.
+
+### Hints
+
+You can use the [`iterrows()` method](https://stackoverflow.com/a/16476974/4325668) from the Pandas DataFrame to iterate across the rows to score the sentiment for the title an the text of each news article.

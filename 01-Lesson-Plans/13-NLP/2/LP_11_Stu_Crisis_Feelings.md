@@ -1,6 +1,6 @@
-### 11. Student Do: The Feelings of the Crisis (15 mins)
+### 11. Students Do: The Feelings of the Crisis (15 mins)
 
-On this activity student will use VADER sentiment to score the sentiment of news title and text to contrast if they have the same sentiment. This activity includes some open discussion on the class about the findings on scoring sentiment and the contrast between the sentiment a news title and its content. Encourage students to share their insights in the last 4 or 5 minutes of the activity.
+On this activity, students will use VADER to score the sentiment of news' title and text to verify if they have the same sentiment. This activity includes a facilitated discussion along the last four to five minutes to talk about students findings.
 
 **Instructions:**
 
@@ -13,60 +13,89 @@ On this activity student will use VADER sentiment to score the sentiment of news
 ---
 
 ### 12. Instructor Do: Review The Feelings of the Crisis (5 min)
+
 **Files:**
 
 * [crisis_feelings.ipynb](Activities/11-Stu_Crisis_Feelings/Solved/crisis_feelings.ipynb)
 
-Walk through the solution and highlight the following:
+Open the solution and walk through the code highlighting the following:
 
-* Remark students that it's important to use the `encoding='utf-8-sig'` to load the CSV file when creating the DataFrame.
+* It's important to use the `encoding='utf-8-sig'` to load the CSV file when creating the DataFrame, especially to get all the special characters from the news articles in French.
 
-```python
-file_path = Path("Data/crisis_news_en_es.csv")
-news_df = pd.read_csv(file_path, encoding='utf-8-sig')
-```
+  ```python
+  file_path = Path("Data/crisis_news_en_fr.csv")
+  news_df = pd.read_csv(file_path, encoding='utf-8-sig')
+  ```
 
-* When reviewing the English news DataFrame creation, comment to students that the VADER sentiment module only works by default with English language, explain that there are three general approaches to use VADER in different languages: (1) to translate all text to English (2) to use a VADER lexicon for each language (this is quite complex to build) and  (3) to use a cloud sentiment scoring service.
+* The VADER sentiment module is only trained to score sentiment on English language, so a new DataFrame only with news in English is created. Students will learn how to score sentiment in multiple languages later.
 
-* For the DataFrame creation, two Python dictionaries are created to store all the sentiments scores using a key per score.
+  ```python
+  news_en_df = news_df[news_df["language"] == "en"]
+  ```
 
-```python
-title_sent = {
-    "title_compound": [],
-    "title_pos": [],
-    "title_neu": [],
-    "title_neg": [],
-    "title_sent": []
-}
-text_sent = {
-    "text_compound": [],
-    "text_pos": [],
-    "text_neu": [],
-    "text_neg": [],
-    "text_sent": []
-}
-```
+* Two empty Python dictionaries are used to create the DataFrame's structure that will store the sentiment scoring results for the title and the text from the news articles.
 
-* To calculate the sentiment score for each news article title and text, a for-loop is used to iterate across all the DataFrame using the `iterrows()` method. Next the sentiment is scored for each title and text to later be appended as a new element on their corresponding dictionaries keys.
+  ```python
+  title_sent = {
+      "title_compound": [],
+      "title_pos": [],
+      "title_neu": [],
+      "title_neg": [],
+      "title_sent": []
+  }
+  text_sent = {
+      "text_compound": [],
+      "text_pos": [],
+      "text_neu": [],
+      "text_neg": [],
+      "text_sent": []
+  }
+  ```
+
+* The `compound` score will be used to measure the sentiment, so a function called `get_sentiment()` is created to translate the `compound` score to a normalized value as follows: `1` for positive sentiment, `-1` for negative sentiment, and `0` for neutral sentiment.
+
+  ```python
+  def get_sentiment(score):
+    """
+    Calculates the sentiment based on the compound score.
+    """
+    result = 0  # Neutral by default
+    if score >= 0.05:  # Positive
+        result = 1
+    elif score <= -0.05:  # Negative
+        result = -1
+
+    return result
+  ```
+
+* The VADER sentiment score for each news article's title and text is calculated within a `for-loop`, this loop iterates across the `news_en_df` DataFrame using the `iterrows()` method to create the final results DataFrame structure.
+
   ![Sentiment scores calculation](Images/crisis_feelings_title_text_code.png)
 
-* To append the new columns with the sentiment scores, a DataFrame is created for each dictionary and added to the English news articles using the `join()` function.
+* Two DataFrames are created with the resulting VADER sentiment scores for titles and the text. These DataFrames are added as new columns to the `news_en_df` DataFrame using the `join()` function.
 
-```python
-title_sentiment_df = pd.DataFrame(title_sent)
-text_sentiment_df = pd.DataFrame(text_sent)
-news_en_df = news_en_df.join(title_sentiment_df).join(text_sentiment_df)
-```
+  ```python
+  # Titles' sentiments DataFrame
+  title_sentiment_df = pd.DataFrame(title_sent)
 
-* To create the bar chart the `plot()` method from the DataFrame is used. Grid is intentionally added to identify how the bars for each news articles behave. Comment to students that this chart helps to see when the title and the text of a news article have the same sentiment or not.
+  # Texts' sentiments DataFrame
+  text_sentiment_df = pd.DataFrame(text_sent)
 
-```python
-news_en_df.plot(y=["title_sent", "text_sent"],
-                kind='bar',
-                title="News Title and Text Sentiment Comparisson",
-                figsize = (10, 8),
-                grid=True
-)
-```
+  # Sentiment scoring results added to the news_en_df DataFrame
+  news_en_df = news_en_df.join(title_sentiment_df).join(text_sentiment_df)
+  ```
+
+* A bar chart is created using the `plot()` method from the DataFrame to review when the title and the text of a news article have the same sentiment or not. The chart's grid is intentionally added to identify how the bars for each news articles behave.
+
+  ```python
+  news_en_df.plot(y=["title_sent", "text_sent"],
+                  kind='bar',
+                  title="News Title and Text Sentiment Comparisson",
+                  figsize = (10, 8),
+                  grid=True
+  )
+  ```
+
+  ![Sample sentiments bar chart](Images/crisis_feelings_bar_chart.png)
 
 Answer any additional question before moving to the next activity.
