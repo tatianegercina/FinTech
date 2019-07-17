@@ -44,6 +44,8 @@ The Timetracker for today can be viewed here: [Timetracker](TimeTracker.xlsx)
 
 ### 1. Instructor Do: Welcome (10 min)
 
+**File:** [Slides 1-3](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
+
 Take some time to welcome students back to class and introduce the topics that will be covered in this lesson: command line and Anaconda virtual environment, and a brief history of FinTech. This lesson will give students both the skills and knowledge required to gain a deeper understanding of the changing landscape within the FinTech ecosystem.
 
 Cover the following points:
@@ -62,7 +64,7 @@ Encourage the students and get them excited for the lesson. Tell them that today
 
 In this section, students will learn the basics of using the command line to perform basic file system operations on their machines.
 
-**File:** [Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
+**File:** [Slides 4-7](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
 
 Open the slideshow and present the following questions and answers:
 
