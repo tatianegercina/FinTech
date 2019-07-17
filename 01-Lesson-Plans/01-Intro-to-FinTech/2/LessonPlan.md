@@ -144,7 +144,7 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
 
 ### 5. Instructor Do: Anaconda Virtual Environments (20 min)
 
-In this activity, instructors walk through students on how to check that they have Anaconda properly installed on their machines as well as how to create and initialize a Python virtual environment.
+In this activity, instructors guide students on how to use the command line to execute third-party commands such as the `conda` command line interface (CLI) representing the popular Anaconda Distribution. Students will use the `conda` CLI to make sure Anaconda is properly installed on their machines as well as create and initialize a Python virtual environment in preparation for Unit 2 and beyond.
 
 Complete a quick check to ensure students have Anaconda installed and that `conda` is added to their PATH environment variable.
 
