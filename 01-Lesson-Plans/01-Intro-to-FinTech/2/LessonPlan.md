@@ -188,7 +188,7 @@ Remind students that they will need to activate their environment each time that
 
 ---
 
-### 7. Student Do: Rip Van Winkle Thought Exercise (5 min)
+### 7. Student Do: Rip Van Winkle Thought Exercise (10 min)
 
 In this activity, students think about how the current state of the FinTech world may differ from that of someone from the year 1999.
 
@@ -204,7 +204,7 @@ Quickly explain to the class the following:
 
 ---
 
-### 8. Instructor Do: Review Rip Van Winkle Though Exercise (15 mins)
+### 8. Instructor Do: Review Rip Van Winkle Though Exercise (10 mins)
 
 In this activity, students present their opinions regarding the FinTech Rip Van Winkle thought experiment.
 
@@ -349,7 +349,7 @@ By this point, students have been given examples of the major domains within Fin
 
 ---
 
-### 13. Student Do: FinTech Domains Part II (20 min)
+### 13. Student Do: FinTech Domains Part II (15 min)
 
 The previous activity should have laid the foundation for students to not only assess the current state of their FinTech domain, but now also devise a hypothetical news headline for that particular FinTech domain that could potentially occur within the next 2-3 years. Students will continue in their groups of 3-4 individuals to complete the activity.
 
