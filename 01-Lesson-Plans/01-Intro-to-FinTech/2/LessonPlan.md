@@ -30,7 +30,15 @@ By the end of class, students will be able to:
 
 * Emphasize that understanding the history of FinTech is just as important as knowing what FinTech is. Employers will measure candidates not only by their technical skills, but also by their contextual knowledge of what is happening in the financial services industry.
   
-* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+### Class Slides and Timetracker
+
+The slides for today can be viewed on Google Drive here: [Slides]()
+
+To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Then, add the PDF file to your class repository along with other necessary files. [Instructions Here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit)
+
+* Note: Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+
+The Timetracker for today can be viewed here: [Timetracker](TimeTracker.xlsx)
 
 ---
 
