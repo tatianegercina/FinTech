@@ -357,24 +357,13 @@ The previous activity should have laid the foundation for students to not only a
 
 ### 14. Instructor Do: Review FinTech Domains Part II (20 min)
 
-Now that students have had an opportunity to perform their own research on the various domains in FinTech and produce hypothetical news headlines for each FinTech domain, it's now time to facilitate a class discussion based on each group's findings.
+Now that students have had an opportunity to perform their own research on their respective FinTech domains and produce hypothetical news headlines, it's now time to facilitate a class discussion based on each group's findings and thoughts.
 
-Open up [GroupMap](https://www.groupmap.com/), a collaborative brainstorming service, and perform the following:
+Have each group do a turn-and-teach and present their FinTech domain and news headline to the group next to them:
 
-* Create sections within the mapping document for each FinTech domain:
+* Walk around the class with your TAs to support any discussions if necessary.
 
-  * Payments and Remittances
-  * Robo Advisors and Personal Finance
-  * RegTech
-  * Digital Banking
-  * InsurTech
-  * Alternative Finance
-
-* Once the GroupMap document is created and set up, slack out the link to the class and have each group list their headlines for each FinTech domain.
-
-* Then, have each student in the class vote on the best headlines for each FinTech domain, with an emphasis on feasibility. When finished, tally up the votes and showcase the most popular headlines for each FinTech domain. Ask for any volunteers who are willing to share why they chose the particular news headline that was voted the most popular.
-
-After the GroupMap review is complete, explain the following:
+After students' peer presentations are complete, ask for any volunteers who are willing to share why they chose their particular FinTech news headline. Then, ex0plain the following:
 
 * The intent of this activity was to provide students with not only the breadth but also the depth of knowledge for each FinTech domain. This may prove to be valuable when applying for roles within the FinTech industry.
 
