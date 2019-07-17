@@ -10,7 +10,7 @@ In today's class, students will learn how to utilize the git graphical user inte
 
 By the end of class, students will be able to:
 
-* Create a repository and upload files to GitHub using the git GUI.
+* Create a git repository and upload files to GitHub using the git GUI.
 
 * Configure the git CLI user credentials from the terminal.
 
@@ -150,7 +150,7 @@ Review the previous activity with students, highlighting the following points:
 
 ---
 
-### 5. Instructor Do: Git CLI (10 min)
+### 5. Instructor Do: Intro to Git CLI (10 min)
 
 In this section, students will be introduced to the git CLI, which will allow them to more efficiently track changes to a git repository by providing additional git operations.  
 
