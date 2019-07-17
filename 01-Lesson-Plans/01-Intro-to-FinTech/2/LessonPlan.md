@@ -32,7 +32,7 @@ By the end of class, students will be able to:
   
 ### Class Slides and Timetracker
 
-The slides for today can be viewed on Google Drive here: [Slides]()
+The slides for today can be viewed on Google Drive here: [Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
 
 To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Then, add the PDF file to your class repository along with other necessary files. [Instructions Here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit)
 
@@ -62,7 +62,7 @@ Encourage the students and get them excited for the lesson. Tell them that today
 
 In this section, students will learn the basics of using the command line to perform basic file system operations on their machines.
 
-**File:** [slideshow-placeholder]()
+**File:** [Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
 
 Open the slideshow and present the following questions and answers:
 
@@ -231,7 +231,7 @@ Perform the following:
 
 In this section, give students a brief summary of some of the key factors leading to the growth of the FinTech space. Understanding the historical background of FinTech as well as its current trajectory will give students knowledge that will help them both in employer interviews and their FinTech career.
 
-**File:** [slideshow-placeholder]()
+**File:** [Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
 
 Open the slideshow and use the slides to review the key historical factors leading to the present-day FinTech boom:
 
@@ -293,7 +293,7 @@ Ask the students the following questions:
 
 This section is a deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation.
 
-**File:** [slideshow-placeholder]()
+**File:** [Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
 
 Open the slideshow and review the following FinTech domains:
 
