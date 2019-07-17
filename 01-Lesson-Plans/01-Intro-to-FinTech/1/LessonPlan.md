@@ -230,56 +230,72 @@ Ask if there are any questions before moving on.
 
 In this activity, instructors will review the Unit 1 homework assignment with the class.
 
-**File:** [Unit 1 Homework](../../../02-Homework/01-FinTech/Instructions/README.md)
+**File:** [Unit 1 Homework README](../../../02-Homework/01-FinTech/Instructions/README.md)
 
-Open the Unit 1 homework README file and explain the following:
+Open the [homework instructions](../../../02-Homework/01-FinTech/Instructions/README.md) and explain the following:
 
-* Students will develop a case study based on a particular FinTech company or technology. Students should follow the corresponding case study template.
+* While full business school case studies may be 50-100 pages long or more, students' case studies in this course will be more focused. Specifically, students will perform an analysis of a FinTech company of their choice by assessing the competitive landscape, trends, technology, and advantages/disadvantages present in the FinTech domain to which the company belongs. Student should choose a prominent company that is using technology to solve a traditional finance problem.
 
-`Overview and Origins`
+* Students can choose from the following FinTech domains:
 
-* Name of company
+  * Payments/Billing
+  * Capital Investment
+  * Investment Management
+  * Wealth Management
+  * Enterprise Solutions
+  * Insurance (InsurTech)
+  * Mortgage/Real Estate
+  * Personal Finance/Deposits/Online Banking
+  * Lending
+  * Blockchain and Cryptocurrencies
+  * Regulation Technology (RegTech)
+  * Open Banking
+  * Roboadvising
 
-* When was the company incorporated?
+  * Note that FinTech is such an emerging field that different FinTech reports sometimes use different names and definitions of FinTech domains and sectors (CB Insights, Investopedia, Accenture). You may see lists of FinTech domains online that are either longer or shorter than the list above; there is no one comprehensive list.
 
-* Who are the founders of the company?
+* Students should look for a company that fits the following criteria:
 
-* How did this idea come about?
+  * A new FinTech company that has emerged and is doing very well in a particular domain (Examples include: Square, Plaid, Lemonade, RobinHood, Coinbase)
 
-* How is the company funded? How much funding have they received?
+  * A large incumbent financial or technology company that is doing something interesting and new with technology (Examples include: Goldman Sachs’ Marcus, JP Morgan’s JPMCoin, Facebook Libra, Apple Card)
 
-`Business Activities`
+  * A smaller startup that is not yet wildly successful, but you find promising and interesting. This may include a FinTech company in your local area or a company with a new idea that you would like to learn more about.
 
-* What specific financial problem is the company/project trying to solve?
+* Students should follow the general case study format/template listed in the instructions:
 
-* Who is the intended customer of the company? Is there any information about the market size of this set of customers? What solution does this company offer that their competitors do not or cannot? (What is the unfair advantage they utilize?)
+* `Overview and Origins`
 
-* Which technologies are they currently using and how are they implementing them? (This may take a little bit of sleuthing- you may want to search the company’s engineering blog, or use sites like Stackshare)
+  * Name of company
+  * When was the company incorporated?
+  * Who are the founders of the company?
+  * How did this idea come about?
+  * How is the company funded? How much funding have they received?
 
-`Landscape`
+* `Business Activities`
 
-* What domain of the financial industry is the company In
+  * What specific financial problem is the company/project trying to solve?
+  * Who is the intended customer of the company? Is there any information about the market size of this set of customers?
+  What solution does this company offer that their competitors do not or cannot? (What is the unfair advantage they utilize?)
+  * Which technologies are they currently using and how are they implementing them? (This may take a little bit of sleuthing- you may want to search the company’s engineering blog, or use sites like Stackshare)
 
-* What are the major trends and innovations of this domain over the last 5-10 years?
+* `Landscape`
 
-* Who are the other major companies in this domain?
+  * What domain of the financial industry is the company In
+  * What are the major trends and innovations of this domain over the last 5-10 years?
+  * Who are the other major companies in this domain?
 
-`Results`
+* `Results`
 
-* What has been the business impact of this company so far?
+  * What has been the business impact of this company so far?
+  * What are some of the core metrics that companies in this domain use to measure success? How is your company doing on these metrics?
+  * How is your company doing relative to competitors in the same domain?
 
-* What are some of the core metrics that companies in this domain use to measure success? How is your company doing on these metrics?
-
-* How is your company doing relative to competitors in the same domain?
-
-`Recommendations`
+* `Recommendations`
 
 * If you were to advise the company, what products or services would you suggest they add to their services (whether another company already has them or something that is your pure imagination)?
-
 * Why do you think it would benefit them?
-
 * What technologies would your proposed ideas incorporate?
-
 * Why are those technologies appropriate for your solution?
 
 Ask if there are any questions before ending class.
