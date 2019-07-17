@@ -439,7 +439,12 @@ Finally, remind students that the Unit 1 homework assignment is a FinTech case s
 
 ### 16. Instructor Do: Career Services (35 min)
 
-Take time to go over any questions related to career services, as well as students' professional goals.
+Note: If you are teaching this lesson on a weeknight, save this section for the next Saturday class. 
+
+**Files**
+
+* [Slides](https://docs.google.com/presentation/d/1f1h9TRxFlHJLEiL53kRMULt2FpG5hm_LJsnd7hY4AIQ/edit?usp=sharing)
+* [Career Services Lesson Plan](https://docs.google.com/document/d/1BGoLNt4zrD7wJUXwt0KDm4Ubxuljmc07tDJ4ocfeWpE/edit?usp=sharing)
 
 ### End Class
 
