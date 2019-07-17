@@ -10,6 +10,8 @@ In today's class, students will learn how to utilize the git graphical user inte
 
 By the end of class, students will be able to:
 
+* Create a repository and upload files to GitHub using the git GUI.
+
 * Configure the git CLI user credentials from the terminal.
 
 * Clone a repository using `git clone`.
@@ -40,9 +42,9 @@ By the end of class, students will be able to:
 
 * [Slideshow](placeholder)
 
-Welcome students to the third day of class and the final lesson of Unit 1.  Cover the following points:
+Welcome students to the third day of class and the final lesson of Unit 1. Cover the following points:
 
-* The previous lessons focused on introducing students to the FinTech course structure as well as FinTech more broadly. We have discussed the history and current landscape of the FinTech ecosystem, as well as notable case studies of technological disruptors in this space. Today, students will combine what they've learned so far about the FinTech industry to create their own case studies that can be hosted in online git repositories and previewed as visually enhanced markdown files.
+* The previous lessons focused on introducing students to the FinTech course structure as well as FinTech more broadly; we discussed the history and current landscape of the FinTech ecosystem, as well as the specific factors for change in various FinTech domains. Today, students will combine what they've learned so far about the FinTech industry to create their own case studies that can be hosted in online git repositories and previewed as visually enhanced markdown files.
 
 * Mention to the class that today's goal is twofold: (1) to manage their own git repositories and develop in shared repositories, and (2) to develop text-based assets, such as a FinTech case study, in markdown to provide visually appealing README files that can be previewed in GitHub (and, therefore, showcased to potential employers).
 
@@ -166,12 +168,17 @@ Open the slideshow and use slides 1–22 to review the following points about gi
 
 * How does one configure the git CLI?
 
-To set your global username/email configuration:
-Open the command line.
-Set your username:
-git config --global user.name "FIRST_NAME LAST_NAME"
-Set your email address:
-git config --global user.email "MY_NAME@example.com"
+  1. Open the command line.
+  
+  2. Set your username:
+
+      * `git config --global user.name "FIRST_NAME LAST_NAME"`
+
+  3. Set your email address:
+
+      * `git config --global user.email "MY_NAME@example.com"`
+
+![git-config](Images/git-config.png)
 
 * What are the popular commands of the git CLI?
 
