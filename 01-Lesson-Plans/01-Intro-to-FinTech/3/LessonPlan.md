@@ -4,7 +4,7 @@
 
 ### Overview
 
-In today's class, students will learn how to utilize the git command line interface (CLI) and create markdown files to generate FinTech case studies that can be collaboratively stored, accessed, modified, and previewed in an online git or file repository such as GitHub. A solid understanding of the git CLI and knowing how to create markdown files will help students properly manage git repositories and construct visually enhanced README files.
+In today's class, students will learn how to utilize the git graphical user interface (GUI), git command line interface (CLI), and create markdown files to generate FinTech case studies that can be collaboratively stored, accessed, modified, and previewed in an online git or file repository such as GitHub. A solid understanding of the git GUI/CLI and knowing how to create markdown files will help students properly manage git repositories and construct visually enhanced README files.
 
 ### Class Objectives
 
@@ -163,6 +163,15 @@ Open the slideshow and use slides 1–22 to review the following points about gi
   * The GitHub web app provides a convenient user interface for performing common git operations. The git CLI, however, is a command line utility that provides all git operations and is generally more robust than a git-based graphical user interface (GUI).
   
   * This is due to the fact that, more often than not, a GUI interacts with the underlying CLI to perform its functionality (e.g., click a button that executes a command on the back-end) and, therefore, is often a simplified version of the underlying functionality.
+
+* How does one configure the git CLI?
+
+To set your global username/email configuration:
+Open the command line.
+Set your username:
+git config --global user.name "FIRST_NAME LAST_NAME"
+Set your email address:
+git config --global user.email "MY_NAME@example.com"
 
 * What are the popular commands of the git CLI?
 
