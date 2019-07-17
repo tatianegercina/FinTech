@@ -425,7 +425,7 @@ In this activity, students will work in pairs to create a case study report on a
 
 **Instructions:** [README.md](Activities/04-Stu_Group_Case_Study/README.md)
 
-### 15. Instructor Do: Review FinTech Case Study (20 min)
+### 15. Instructor Do: Review FinTech Case Study (15 min)
 
 Students will now present their findings to the class.
 
@@ -437,9 +437,17 @@ After each group has presented, check the pulse of the class. Ask students if th
 
 Finally, remind students that the Unit 1 homework assignment is a FinTech case study. Students can leverage the content created in this activity to complete the homework requirements.
 
-### 16. Instructor Do: Career Services (35 min)
+### 16. Instructor Do: Reflect on Class (5 min)
+
+Take a moment to reflect on the class with students and have students do a quick shareout of highlights and takeaways from the week.
+
+### 17. Instructor Do: Career Services (35 min)
 
 Note: If you are teaching this lesson on a weeknight, save this section for the next Saturday class. 
+
+Explain to students that we've spent a great deal of time introducing outselves to FinTech this week, learning the basics, and also preparing our tools for the course. But, we also want to make sure we're focusing on where you will go once the course is over. Starting today, we're going to dedicate time on certain Saturday classes to talk specifically about Career Services. 
+
+Use the following slides and Lesson to discuss the career services content for this week. 
 
 **Files**
 
