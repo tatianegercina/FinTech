@@ -1,8 +1,8 @@
 # FinTech Domains Part II
 
-Now that you've learned about some of the major trends/domains that have disrupted and lead us to the current state of the FinTech ecosystem, it's time to think about how these FinTech domains might progress in the future given their current trajectories.
+Now that you've gotten a deeper understanding of the landscape for your chosen FinTech domain, it's time to think about how your FinTech domain might progress in the future given their its current trajectory.
 
-Form groups of 3-4 individuals to brainstorm and produce headlines for each FinTech domain (6 headlines for 6 domains) that one might expect to see in the news within the next 2-3 years.
+Continue in your group of 3-4 individuals to brainstorm and produce headlines for your FinTech domain that one might expect to see in the news within the next 2-3 years.
 
 ## Part I Instructions: Investigating FinTech Domains
 
@@ -10,7 +10,7 @@ You completed this in the last activity, nice job!
 
 ## Part II Instructions: Future FinTech Headlines
 
-Research each FinTech domain to produce news headlines that fit the following criteria:
+Research your FinTech domain to produce news headlines that fit the following criteria:
 
 * Headlines should represent an event, outcome, or characteristic of each FinTech domain happening within the next 2-3 years.
 

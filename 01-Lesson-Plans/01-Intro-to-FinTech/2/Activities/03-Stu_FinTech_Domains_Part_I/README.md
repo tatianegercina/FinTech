@@ -24,7 +24,7 @@ You'll complete this in the next student activity! Get ready!
 
 ## Hint
 
-Remember to think about the current trends affecting each FinTech domain in order to extrapolate and devise a potential news headlines representing the environment of the next 2-3 years.
+Pick a FinTech domain you like or feel passionate about! Use the time given to get to know something you're already interested in.
 
 ---
 
