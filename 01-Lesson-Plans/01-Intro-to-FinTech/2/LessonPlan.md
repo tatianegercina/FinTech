@@ -156,6 +156,8 @@ Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_o
 
 In this activity, instructors guide students on how to use the command line to execute third-party commands such as the `conda` command line interface (CLI), representing the popular Anaconda Distribution. Students will use the `conda` CLI to make sure Anaconda is properly installed on their machines as well as create and initialize a Python virtual environment in preparation for Unit 2 and beyond.
 
+_Note: Explain to students that if the following steps do not work, they can troubleshoot their install with a TA during the break._
+
 Complete a quick check to ensure students have Anaconda installed and that `conda` is added to their PATH environment variable.
 
 * Open up the console and have students follow along.
@@ -164,7 +166,7 @@ Complete a quick check to ensure students have Anaconda installed and that `cond
 
     ![Anaconda Version](Images/conda_version.png)
 
-* Have TAs help any students with issues. The most common problem will be students with Windows that don't have the Anaconda PATH variable set.
+* Have TAs help any students with issues. The most common problem will be students with Windows that don't have the Anaconda PATH variable set. The easiest fix for this is to reinstall Anaconda and selecing the option to add conda to the path. 
 
   * This can be fixed by manually adding the PATH to Windows' environment variables, but can be more easily solved by uninstalling/reinstalling Anaconda and making sure to check the "Install to Path" box that comes up in a menu.
 
@@ -180,15 +182,13 @@ Next move on to explaining [virtual environments](https://conda.io/docs/user-gui
 
 Create a virtual environment that will run Python 3.7. This will help solve issues where students have multiple versions of Python installed.
 
-* First run `conda create -n PythonData python=3.7 anaconda` in the terminal. Warn students that this may take a few minutes to install.
+* First run `conda create -n dev python=3.7 anaconda` in the terminal. Warn students that this may take a few minutes to install.
 
-* Now enter `source activate PythonData` to activate the environment. When `(PythonData)$` appears, this means you are in the environment.
+* Now enter `conda activate dev` to activate the environment. When `(dev)$` appears, this means you are in the environment.
 
 * Now make sure everyone is using the correct version of Python by entering `python --version`.
 
-  ![Python version](Images/python_version.png)
-
-* Lastly, show that you can exit the environment by entering `source deactivate`. If `source deactivate` does not work, try using `conda deactivate` instead.
+* Lastly, show that you can exit the environment by entering `conda deactivate`.
 
 Remind students that they will need to activate their environment each time that they open a new terminal. Windows users should always use `git-bash` for their terminal.
 
