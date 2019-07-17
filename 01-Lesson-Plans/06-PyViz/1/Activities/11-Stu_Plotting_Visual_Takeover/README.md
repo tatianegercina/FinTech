@@ -4,9 +4,9 @@ Your company has recently adopted a new digital dashboard initiative that is aim
 
 The CIO also believes the company is falling behind  in terms of reporting paradigms; while there are new and flashy visualization technologies out there, the company has mostly been using Matplotlib. It's time for an upgrade.
 
-Follow the steps below to convert static Matplotlib visualizations to interactive hvplots.
+Open the [starter file](Unsolved/Core/plotting_visual_takeover.ipynb), and code the following steps. The visualizations created below should leverage the starter data provided in the notebook.
 
-## Instrutions
+## Instructions
 
 1. Create an hvplot visualization without specifying line or bar chart.
 
