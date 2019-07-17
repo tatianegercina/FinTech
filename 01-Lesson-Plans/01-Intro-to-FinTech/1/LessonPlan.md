@@ -252,7 +252,7 @@ Open the [homework instructions](../../../02-Homework/01-FinTech/Instructions/RE
   * Open Banking
   * Roboadvising
 
-  * Note that FinTech is such an emerging field that different FinTech reports sometimes use different names and definitions of FinTech domains and sectors (CB Insights, Investopedia, Accenture). You may see lists of FinTech domains online that are either longer or shorter than the list above; there is no one comprehensive list.
+* Note that FinTech is such an emerging field that different FinTech reports sometimes use different names and definitions of FinTech domains and sectors (CB Insights, Investopedia, Accenture). You may see lists of FinTech domains online that are either longer or shorter than the list above; there is no one comprehensive list.
 
 * Students should look for a company that fits the following criteria:
 
@@ -293,10 +293,10 @@ Open the [homework instructions](../../../02-Homework/01-FinTech/Instructions/RE
 
 * `Recommendations`
 
-* If you were to advise the company, what products or services would you suggest they add to their services (whether another company already has them or something that is your pure imagination)?
-* Why do you think it would benefit them?
-* What technologies would your proposed ideas incorporate?
-* Why are those technologies appropriate for your solution?
+  * If you were to advise the company, what products or services would you suggest they add to their services (whether another company already has them or something that is your pure imagination)?
+  * Why do you think it would benefit them?
+  * What technologies would your proposed ideas incorporate?
+  * Why are those technologies appropriate for your solution?
 
 Ask if there are any questions before ending class.
 
