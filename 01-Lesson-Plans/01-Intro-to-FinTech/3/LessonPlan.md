@@ -401,55 +401,7 @@ Next, provide an overview of the activity.
 
 * Students will have 30 minutes to develop their case studies, and 2 to 3 minutes to present their reports.
 
-Get students excited for this work. This activity is a great opportunity for students to interact and build on what they've learned to independently produce an analysis.
-
-In this activity, students will be instructed on how to create a FinTech case study -- a compilation of holistic research performed on a FinTech company or technology. This activity is particularly important as it will serve as the knowledge foundation for students completing their FinTech case studies for the unit `1` homework.
-
-**File:** [slideshow-placeholder]()
-
-Open the slideshow and walk through the following:
-
-* `Background`
-
-  * This case study researches the online financial advisory or "robo-advisory" company known as Betterment. Betterment is an examplar robo-advisory company that provides optimized and self-managed portfolios that customers can invest in based on their varying risk tolerances. In addition, Betterment provides financial advice based on specific customer goals and timelines, and offloads the work of things like portfolio re-balancing, dividend re-investments, auto-depositing, and much more.
-
-* `Use Case`
-  
-  * Traditionally, investment management services would first gauge a customer's investment risk level (conservative, neutral, aggressive) based on factors such as overall risk tolerance, financial goals, and duration of investment, and then proceed to manage a portfolio specifically tailored to that customer for a nominal overhead/maintenance fee. However, as overall technology advanced (as did machine learning/algorithmic trading), automated investment management services started becoming increasingly prevalent -- allowing investment management services to become more data-driven (and therefore intelligent) as well as cheaper due to automation.
-
-* `Advantages`
-
-  * Betterment provides a relatively cheap and easy-to-use service that makes investing simple, intuitive, and intelligent; Customers are given the benefits of investing in computer-optimized and self-managed portfolios based on their specific investment needs (risk tolerance, financial goals, and duration of investment) all the while paying a cheaper overhead/maintenance fee due to the efficiencies of automation. In addition, Betterment has additional features such as monthly auto-deposits to make saving even easier for its customers.
-
-* `Competitors`
-
-  * Similar companies such as WealthFront, Acorns, Stash, and many others have developed similar solutions.
-
-Advise students that they should generally seek to answer the following questions for their case studies:
-
-* `Company Sector`
-
-  * Which financial industry it is in?
-
-  * What are the trends and competitors in this industry?
-
-* `Company Business Activities`
-
-  * What **problem** does this company solve?
-
-  * Who is their intended customer?
-
-  * What solution does this company offer that their competitor does not or cannot? (What is the advantage they utilize?)
-
-  * Which technologies are they currently using and how are they implementing them?
-
-  * What are they doing right? What could be improved?
-
-* `Recommendations:`
-
-  * What products or services would you suggest they add to their catalog? Why do you think it would benefit them?
-
-  * What technologies would your proposed ideas incorporate? Why are those technologies appropriate for your solution?
+Slack out the [Betterment Case Study]() to the class for reference and get students excited! This activity is a great opportunity for students to combine what they've learned technically (command line and git) as well as conceptually (FinTech domains) to produce a collaboratively written company analysis.
 
 ---
 
