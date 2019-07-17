@@ -22,6 +22,8 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
+* As a second reminder, slack out the [Anaconda Installation Guide](../../02-Python/Supplemental/AnacondaInstallGuide.md) and ask students to complete the install and verify it with a TA before the end of the next class. This should help catch installation issues with Python outside of the class time.
+
 * Today's lesson may make students feel uneasy as they continue to use the command line to interact with both files on their local file system as well as files that are actively tracked via an online repository. Calm students' nerves by telling them that git is merely a command line tool––a program that exists on the local file system that executes from the command line, or terminal.
 
 * Make sure that by the end of class students have the tools to create well-presented markdown README files to host in their git repositories. They'll need these to showcase their git repositories (and the coding assets within them) to potential future employers.
@@ -31,6 +33,16 @@ By the end of class, students will be able to:
 * Be mindful of students working in groups during the case study activity; some students may be less vocal than others. Circulate the classroom with the TAs and make sure that every student is actively engaged and has a voice in their respective groups.
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+
+### Class Slides and Timetracker
+
+The slides for today can be viewed on Google Drive here: [Slides]()
+
+To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Then, add the PDF file to your class repository along with other necessary files. [Instructions Here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit)
+
+* Note: Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+
+The Timetracker for today can be viewed here: [Timetracker](TimeTracker.xlsx)
 
 ---
 
