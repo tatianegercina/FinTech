@@ -146,7 +146,7 @@ Open [file_system_operations.sh](Activities/04-Stu_Terminal/Solved/file_system_o
 
 In this activity, instructors walk through students on how to check that they have Anaconda properly installed on their machines as well as how to create and initialize a Python virtual environment.
 
-* Complete a quick check to ensure students have conda installed `conda` and added to their path.
+Complete a quick check to ensure students have Anaconda installed and that `conda` is added to their PATH environment variable.
 
 * Open up the console and have students follow along.
 
@@ -158,29 +158,29 @@ In this activity, instructors walk through students on how to check that they ha
 
   * This can be fixed by manually adding the PATH to Windows' environment variables, but can be more easily solved by uninstalling/reinstalling Anaconda and making sure to check the "Install to Path" box that comes up in a menu.
 
-* Next move on to explaining [virtual environments](https://conda.io/docs/user-guide/tasks/manage-environments.html).
+Next move on to explaining [virtual environments](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
-  * Virtual environments create an isolated environment for Python projects.
+* Virtual environments create an isolated environment for Python projects.
 
-  * Explain how different projects can have different dependencies.
+* Explain how different projects can have different dependencies.
 
-  * Explain how different projects might also use different types and versions of libraries.
+* Explain how different projects might also use different types and versions of libraries.
 
-  * This virtual environment will make sure the class has all the right dependencies for future class activities.
+* This virtual environment will make sure the class has all the right dependencies for future class activities.
 
-* Create a virtual environment that will run Python 3.6. This will help solve issues where students have multiple versions of Python installed.
+Create a virtual environment that will run Python 3.6. This will help solve issues where students have multiple versions of Python installed.
 
-  * First run `conda create -n PythonData python=3.6 anaconda` in the terminal. Warn students that this may take a few minutes to install.
+* First run `conda create -n PythonData python=3.6 anaconda` in the terminal. Warn students that this may take a few minutes to install.
 
-  * Now enter `source activate PythonData` to activate the environment. When `(PythonData)$` appears, this means you are in the environment.
+* Now enter `source activate PythonData` to activate the environment. When `(PythonData)$` appears, this means you are in the environment.
 
-  * Now make sure everyone is using the correct version of Python by entering `python --version`.
+* Now make sure everyone is using the correct version of Python by entering `python --version`.
 
-    ![Python version](Images/python_version.png)
+  ![Python version](Images/python_version.png)
 
-  * Lastly, show that you can exit the environment by entering `source deactivate`. If `source deactivate` does not work, try using `conda deactivate` instead.
+* Lastly, show that you can exit the environment by entering `source deactivate`. If `source deactivate` does not work, try using `conda deactivate` instead.
 
-* Remind students that they will need to activate their environment each time that they open a new terminal. Windows users should always use `git-bash` for their terminal.
+Remind students that they will need to activate their environment each time that they open a new terminal. Windows users should always use `git-bash` for their terminal.
 
 ---
 
