@@ -36,13 +36,13 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome (10 min)
 
-Take some time to welcome students back to class and introduce the topics that will be covered in this lesson: command line and git GUI fundamentals, and a brief history of FinTech. This lesson will give students both the skills and knowledge required to gain a deeper understanding of the changing landscape within the FinTech ecosystem.
+Take some time to welcome students back to class and introduce the topics that will be covered in this lesson: command line and Anaconda virtual environment, and a brief history of FinTech. This lesson will give students both the skills and knowledge required to gain a deeper understanding of the changing landscape within the FinTech ecosystem.
 
 Cover the following points:
 
-* Students will begin working with common developer tools such as the command line, a text-based utility for performing file system operations and executing programs. They will also learn git, which is a managed remote file repository with built-in version control. By the end of the day, students will join the ranks of millions of developers who also use git to store their files/code.
+* Students will begin working with fundamental developer tools such as the command line, a text-based utility for performing file system operations and executing programs. They will also learn to create an Anaconda virtual environment, a managed file space which exists as its own isolated environment with corresponding dependencies, residing on a physical computer. By the end of the day, students will join the ranks of millions of developers who also use the command line for file system operations and third-party CLIs (ex. conda).
 
-* Today's lesson will be a (brief) deep dive into FinTech's historical background, in which we'll cover why FinTech is so prevalent today, the financial sectors it has helped to disrupt. We'll also delve into a FinTech case study.
+* Today's lesson will include a brief insight to the factors leading up to the current state of FinTech, the financial sectors or FinTech domains that technology has helped to disrupt, and a collaborative activity researching the factors for change of a particular FinTech domain for each group.
 
 * Understanding and being able to discuss FinTech's history is useful, particularly when applying to jobs; it will show employers that you care enough to familiarize yourself with the industry, as well as showcase an understanding of potential opportunities and pitfalls within the industry.
 
