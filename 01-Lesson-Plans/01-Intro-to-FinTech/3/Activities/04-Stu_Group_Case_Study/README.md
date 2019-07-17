@@ -10,9 +10,9 @@ Complete the following steps:
 
 1. Navigate to the class GitHub repository and choose one of the case study proposals from the list.
 
-1. Create a new GitHub repository to share with your partner.
+2. Create a new GitHub repository to share with your partner.
 
-1. Research the FinTech case study you chose. Provide answers to the following:
+3. Research the FinTech case study you chose. Provide answers to the following:
 
     * What is the background of your company? What do they do? Who are their competitors?
 
@@ -22,7 +22,7 @@ Complete the following steps:
 
     * What is the prognosis for this company? Where do they expect to be in the future?
 
-1. Modify the README file to include the following features. **Note:** The list below includes the minimum requirements. Feel free to add other markdown features! 
+4. Modify the README file to include the following features. **Note:** The list below includes the minimum requirements. Feel free to add other markdown features!
 
     * **H1 heading:** A title for the FinTech case study
 
@@ -38,9 +38,9 @@ Complete the following steps:
 
     * **Case study content:** Content for the case study
 
-1. Push the changes to the shared GitHub repository.
+5. Push the changes to the shared GitHub repository.
 
-1. Navigate to the shared GitHub repository and confirm the changes.
+6. Navigate to the shared GitHub repository and confirm the changes.
 
 ## Hint
 
