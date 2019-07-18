@@ -202,9 +202,21 @@ Encourage students to practice using GitHub before the next class and attend off
 
 ### 7. Instructor Do: FinTech's Past, Present, Future (5 min)
 
-In this activity, instructors transition students from the technical demos of the 1st half of the day (command line and git GUI) into a more interactive discussion regarding the concepts and background information of the FinTech realm, specifically focusing on the history of FinTech, the current state of its ecosystem, and the possibilities to its future.  
+In this activity, instructors transition students from the technical demos of the 1st half of the day (command line and git GUI) into a more interactive discussion for the remainder of class regarding the concepts and background information of the FinTech realm, specifically focusing on the history of FinTech, the current state of its ecosystem, and the possibilities to its future.  
 
-### 7. Student Do: Rip Van Winkle Thought Exercise (10 min)
+Perform the following:
+
+* Explain to students that the remainder of class will now focus on a deeper dive into FinTech's past, present, and future; namely, the factors leading to the recent explosion of technological investment in the FinTech realm, the current breakdown of the FinTech ecosystem, and the potential outcomes of the FinTech realm given its current trajectory.
+
+Then, set up the prompt for the following thought exercise by asking the students the following questions:
+
+* What did the finance world look like in 1999?
+
+* What were some financial processes that are becoming obsolete or no longer exist today?
+
+* How has technology accelerated the change in the finance world over the last 20+ years?
+
+### 8. Student Do: Rip Van Winkle Thought Exercise (10 min)
 
 In this activity, students think about how the current state of the FinTech world may differ from that of someone from the year 1999.
 
@@ -220,7 +232,7 @@ Quickly explain to the class the following:
 
 ---
 
-### 8. Instructor Do: Review Rip Van Winkle Though Exercise (5 mins)
+### 9. Instructor Do: Review Rip Van Winkle Though Exercise (5 mins)
 
 In this activity, students present their opinions regarding the FinTech Rip Van Winkle thought experiment.
 
@@ -235,7 +247,7 @@ Perform the following:
   * Mobile Infrastructure
   * Cloud Infrastructure
 
-### 9. Instructor Do: Evolution of FinTech (10 min)
+### 10. Instructor Do: Evolution of FinTech (10 min)
 
 In this section, give students a brief summary of some of the key factors leading to the growth of the FinTech space. Understanding the historical background of FinTech as well as its current trajectory will give students knowledge that will help them both in employer interviews and their FinTech career.
 
@@ -273,7 +285,7 @@ Answer any questions before moving on.
 
 ---
 
-### 10. Instructor Do: Facilitated Discussion About FinTech Domains (10 min)
+### 11. Instructor Do: Facilitated Discussion About FinTech Domains (10 min)
 
 This section will be a discussion of the current state of the FinTech industry and which financial sectors have been positively impacted by technological innovation.
 
@@ -297,7 +309,7 @@ Ask the students the following questions:
 
 ---
 
-### 11. Instructor Do: FinTech Domains and Trends (10 min)
+### 12. Instructor Do: FinTech Domains and Trends (10 min)
 
 This section is a deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation.
 
@@ -357,7 +369,7 @@ Answer any questions before moving on.
 
 ---
 
-### 12. Student Do: FinTech Domains Part I (15 min)
+### 13. Student Do: FinTech Domains Part I (15 min)
 
 By this point, students have been given examples of the major domains within FinTech as well as the overarching trends across the industry. Now, students will work together in groups of 3-4 individuals to research one of the FinTech domains.
 
@@ -365,13 +377,13 @@ By this point, students have been given examples of the major domains within Fin
 
 ---
 
-### 13. Student Do: FinTech Domains Part II (15 min)
+### 14. Student Do: FinTech Domains Part II (15 min)
 
 The previous activity should have laid the foundation for students to not only assess the current state of their FinTech domain, but now also devise a hypothetical news headline for that particular FinTech domain that could potentially occur within the next 2-3 years. Students will continue in their groups of 3-4 individuals to complete the activity.
 
 **File:** [README.md](Activities/04-Stu_FinTech_Domains_Part_II/README.md)
 
-### 14. Instructor Do: Review FinTech Domains Part II (20 min)
+### 15. Instructor Do: Review FinTech Domains Part II (20 min)
 
 Now that students have had an opportunity to perform their own research on their respective FinTech domains and produce hypothetical news headlines, it's now time to facilitate a class discussion based on each group's findings and thoughts.
 
