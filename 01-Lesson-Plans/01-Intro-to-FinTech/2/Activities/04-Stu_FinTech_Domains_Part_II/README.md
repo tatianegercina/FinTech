@@ -10,7 +10,7 @@ You completed this in the last activity, nice job!
 
 ## Part II Instructions: Future FinTech Headlines
 
-Research your FinTech domain to produce news headlines that fit the following criteria:
+Use the document created from Part I and research your FinTech domain to produce news headlines that fit the following criteria:
 
 * Headlines should represent an event, outcome, or characteristic of each FinTech domain happening within the next 2-3 years.
 
