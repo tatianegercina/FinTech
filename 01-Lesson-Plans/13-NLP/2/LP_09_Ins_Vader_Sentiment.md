@@ -1,6 +1,6 @@
 ### 9. Instructor Do: Intro to VADER Sentiment (15 mins)
 
-On this activity students will understand how VADER sentiment works and how to interpret sentiment polarity; also students will learn how to score sentiment using the VADER module of NLTK.
+In this activity students will understand how VADER sentiment works and how to interpret sentiment polarity; also students will learn how to score sentiment using the VADER module of NLTK.
 
 **Files:**
 
