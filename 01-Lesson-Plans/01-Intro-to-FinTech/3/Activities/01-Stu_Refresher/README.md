@@ -1,27 +1,31 @@
-# Git Greeting
+# Create and Personalize a GitHub Repository
 
-Create an online GitHub repository that will hold your future work assets that can be showcased to potential employers. 
+In this activity, you will create a GitHub repository to hold future work assets that can be showcased to potential employers. 
 
 ## Instructions
 
-Walk through the following steps.
+Complete the following steps.
 
-1. Navigate to [github](www.github.com) and login with your credentials. 
+1. Navigate to [GitHub](www.github.com) and log in with your credentials. 
 
-2. Create a new GitHub repository.
+1. Create a new GitHub repository.
 
-3. Download the `.zip` file of the GitHub repository; extract the contents.
+1. Download the ZIP file of the GitHub repository and extract the contents.
 
-4. Modify the intiialized `README.md` file and insert a quick introduction about yourself:
+1. Modify the intiialized `README.md` file by inserting a quick introduction about yourself:
 
-    * Who are you what's your background?
+    * Who are you? What is your background?
 
-    * What are you looking to aspire to be?
+    * What are your career goals?
 
-    * Why FinTech?
+    * Why did you choose FinTech as a career path? 
 
-5. Update the `README.md` file in your online GitHub repository.
+1. Update the `README.md` file in your online GitHub repository.
 
-## Hints
+## Hint
 
-* To learn more about git and how it's used, navigate [here](https://www.atlassian.com/git/tutorials/what-is-git)  
+To learn more about git and how it's used, use [this resource](https://www.atlassian.com/git/tutorials/what-is-git). 
+
+---
+
+© 2019 Trilogy Education Services
