@@ -1,6 +1,6 @@
 ### 7. Student Do: The Voice of the Crisis (10 mins)
 
-On this activity students will use the News API to retrieve news articles on English and French about the financial crisis of 2008. At the end of the activity students will create a CSV file that will be used on the forthcoming student's activities.
+In this activity students will use the News API to retrieve news articles on English and French about the financial crisis of 2008. At the end of the activity students will create a CSV file that will be used on the forthcoming student's activities.
 
 **Instructions:**
 
