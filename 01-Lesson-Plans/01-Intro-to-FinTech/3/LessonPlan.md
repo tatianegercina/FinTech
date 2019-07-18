@@ -46,9 +46,9 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-**File:** [Lesson 1.3 Slideshow](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit)
-
 Welcome students to the third day of class and the final lesson of Unit 1. 
+
+**File:** [Lesson 1.3 Slideshow](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit)
 
 Use slides 1–3 to introduce today's lesson and objectives. Then, review the following points with students:
 
@@ -222,7 +222,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 6. Instructor Do: Git CLI (10 min)
+### 6. Instructor Do: Git CLI Demo (10 min)
 
 In this section, you will demo how to add folder structures to students' newly created GitHub repositories.
 
@@ -421,7 +421,7 @@ Encourage students to continue building their GitHub README files as they progre
 
 ### 13. Instructor Do: Introduce Case Studies (5 min)
 
-In this part of the lesson, you will prepare students to work in pairs to create a FinTech case study in a shared GitHub repo. This activity will combine students' knowledge of the git CLI and markdown syntax.
+In this part of the lesson, you will prepare students to work in pairs to create a shortened FinTech case study in a shared GitHub repo. Remind students that this is an abbreviated version of their longer Unit 1 homework assignment, but they can use this activity to begin initial research on a potential FinTech company.
 
 Tell students the following:
 
@@ -431,9 +431,9 @@ Tell students the following:
 
 Next, provide an overview of the activity.
 
-* In the class GitHub repository, there will be a list of potential FinTech case studies that they can choose from.
+* In the class GitHub repository, there will be a list of FinTech case study proposals. These include information about the company, reasons the company might make for an interesting case study, and additional resources to explore.
 
-* Students should pair off, choose one of the FinTech companies on the list, and then conduct research.
+* Students should pair off, choose one of the FinTech companies on the list, and then conduct their research.
 
 * Students will have 30 minutes to develop their case studies, and 2 to 3 minutes to present their reports.
 
@@ -443,7 +443,7 @@ Slack out the [case study examples]() to the class for reference. Get them excit
 
 ### 14. Student Do: FinTech Case Study (30 min)
 
-In this activity, students will work in pairs to create a case study report on a particular FinTech company, which will be chosen from a list. Each team will create a shared GitHub repository and write their report in markdown.
+n this activity, students will work in pairs to create a shortened case study report on a particular FinTech company, which will be chosen from a list of case study proposals. Each team will create a shared GitHub repository and write their report in markdown.
 
 **Instructions:** [README.md](Activities/04-Stu_Group_Case_Study/README.md)
 
