@@ -1,6 +1,6 @@
 ### 13. Instructor Do: Tone Analysis (15 mins)
 
-On this activity students will be introduced to tone analysis and how they can score tone of human speech using the **IBM Watson Tone Analyzer service** and its Python library.
+In this activity students will be introduced to tone analysis and how they can score tone of human speech using the **IBM Watson Tone Analyzer service** and its Python library.
 
 **Files:**
 
