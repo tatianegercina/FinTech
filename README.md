@@ -10,7 +10,7 @@ Please submit a [pull request](https://github.com/coding-boot-camp/FinTech-Lesso
 
 - - -
 
-### [Unit 1 - Excel](01-Lesson-Plans/01-Excel)
+### [Unit 1 - Excel](01-Lesson-Plans/01-Intro-to-FinTech)
 
 * [1.1 - Lesson Plan](01-Lesson-Plans/01-Excel/1/LessonPlan.md)
 * [1.2 - Lesson Plan](01-Lesson-Plans/01-Excel/2/LessonPlan.md)
@@ -18,23 +18,23 @@ Please submit a [pull request](https://github.com/coding-boot-camp/FinTech-Lesso
 
 - - -
 
-### [Unit 2 - VBA Scripting](01-Lesson-Plans/02-VBA-Scripting)
+### [Unit 2 - Python](01-Lesson-Plans/02-Python)
 
-* [2.1 - Lesson Plan](01-Lesson-Plans/02-VBA-Scripting/1/LessonPlan.md)
-* [2.2 - Lesson Plan](01-Lesson-Plans/02-VBA-Scripting/2/LessonPlan.md)
-* [2.3 - Lesson Plan](01-Lesson-Plans/02-VBA-Scripting/3/LessonPlan.md)
-
-- - -
-
-### [Unit 3 - Python](01-Lesson-Plans/03-Python)
-
-* [3.1 - Lesson Plan](01-Lesson-Plans/03-Python/1/LessonPlan.md)
-* [3.2 - Lesson Plan](01-Lesson-Plans/03-Python/2/LessonPlan.md)
-* [3.3 - Lesson Plan](01-Lesson-Plans/03-Python/3/LessonPlan.md)
+* [2.1 - Lesson Plan](01-Lesson-Plans/02-Python/1/LessonPlan.md)
+* [2.2 - Lesson Plan](01-Lesson-Plans/02-Python/2/LessonPlan.md)
+* [2.3 - Lesson Plan](01-Lesson-Plans/02-Python/3/LessonPlan.md)
 
 - - -
 
-### [Unit 4 - Pandas](01-Lesson-Plans/04-Pandas)
+### [Unit 3 - Python-Pandas](01-Lesson-Plans/03-Python-Pandas)
+
+* [3.1 - Lesson Plan](01-Lesson-Plans/03-Python-Pandas/1/LessonPlan.md)
+* [3.2 - Lesson Plan](01-Lesson-Plans/03-Python-Pandas/2/LessonPlan.md)
+* [3.3 - Lesson Plan](01-Lesson-Plans/03-Python-Pandas/3/LessonPlan.md)
+
+- - -
+
+### [Unit 4 - Python](01-Lesson-Plans/04-Pandas)
 
 * [4.1 - Lesson Plan](01-Lesson-Plans/04-Pandas/1/LessonPlan.md)
 * [4.2 - Lesson Plan](01-Lesson-Plans/04-Pandas/2/LessonPlan.md)
