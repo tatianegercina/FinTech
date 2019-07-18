@@ -337,9 +337,15 @@ In this activity, students will form groups of 2-3 individuals to research and p
 
 ### 13. Instructor Do: Review FinTech Domains Part I (10 min)
 
-**File:** [Slideshow](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360)
+**File:** [Optional Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360)
 
-Open the slideshow and review the following FinTech domains:
+First, provide a brief question and answer by asking students the following questions:
+
+* Was there anything confusing regarding the FinTech domains, companies, or technologies used?
+
+* Was there anything you felt was notable or interesting when researching the FinTech domains?
+
+Then, if necessary (students feel confused or want more information), open the optional slides and review the following FinTech domains:
 
 * Payments and Remittances
 * Robo Advisors and Personal Finance
@@ -347,12 +353,6 @@ Open the slideshow and review the following FinTech domains:
 * Digital Banking
 * InsurTech
 * Alternative Finance
-
-Then, provide a brief question and answer by asking students the following questions, thereby making sure the class is on the same page before moving on:
-
-* Was there anything confusing regarding the FinTech domains, companies, or technologies used?
-
-* Was there anything you felt was notable or interesting when researching the FinTech domains?
 
 ---
 
@@ -402,7 +402,7 @@ Perform the following:
 
 * Remind students that as FinTech professionals, they need to be both technical experts with cutting edge skills as well as seasoned financiers. In other words, students need to be FinTech subject matter experts (SMEs)! Therefore, today's lesson was a good mix of both attributes.
 
-* Ask if student's have any remaining questions before ending the class. If needed, TAs will be hosting office hours after the class ends as well.
+* Ask if students have any remaining questions before ending the class. If needed, TAs will be hosting office hours after the class ends as well.
 
 ### End Class
 
