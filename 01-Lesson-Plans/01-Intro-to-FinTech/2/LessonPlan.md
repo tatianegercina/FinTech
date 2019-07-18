@@ -344,7 +344,7 @@ Then, provide a brief question and answer by asking students the following quest
 
 ### 14. Student Do: FinTech Domains Part II (15 min)
 
-The previous activity should have laid the foundation for students to not only assess the current state of their FinTech domain, but now also devise a hypothetical news headline for that particular FinTech domain that could potentially occur within the next 2-3 years. Students will continue in their groups of 3-4 individuals to complete the activity.
+The previous activity should have laid the foundation for students to not only assess the current state of the FinTech domains, but now also devise hypothetical news headline for each FinTech domain that could potentially occur within the next 5 years. Students will continue in their groups of 2-3 individuals to complete the activity.
 
 **File:** [README.md](Activities/04-Stu_FinTech_Domains_Part_II/README.md)
 

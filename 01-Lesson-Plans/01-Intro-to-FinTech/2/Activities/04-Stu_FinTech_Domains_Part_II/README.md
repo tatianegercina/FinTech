@@ -1,8 +1,8 @@
 # FinTech Domains Part II
 
-Now that you've gotten a deeper understanding of the landscape for your chosen FinTech domain, it's time to think about how your FinTech domain might progress in the future given their its current trajectory.
+Now that you've gotten a deeper understanding of the FinTech landscape and its associated domains, it's time to think about how each FinTech domain might progress in the future given the respective trajectories.
 
-Continue in your group of 3-4 individuals to brainstorm and produce headlines for your FinTech domain that one might expect to see in the news within the next 2-3 years.
+Continue in your group of 2-3 individuals to brainstorm and produce headlines for the FinTech domains that one might expect to see in the news within the next 5 years.
 
 ## Part I Instructions: Investigating FinTech Domains
 
@@ -22,7 +22,7 @@ Be prepared to participate in a class discussion!
 
 ## Hint
 
-Remember to think about the current trends affecting each FinTech domain in order to extrapolate and devise a potential news headlines representing the environment of the next 2-3 years.
+Remember to think about the current trends affecting each FinTech domain in order to extrapolate and devise a potential news headlines representing the environment of the next 5 years.
 
 ---
 
