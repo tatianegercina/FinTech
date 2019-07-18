@@ -180,13 +180,13 @@ Use the slides to review the following points. (Slides 16–21)
 
 * How one configures the git CLI: 
 
-  1. Open the command line.
+  * Open the command line.
   
-  2. Set your username:
+  * Set your username:
 
       * `git config --global user.name "FIRST_NAME LAST_NAME"`
 
-  3. Set your email address:
+  * Set your email address:
 
       * `git config --global user.email "MY_NAME@example.com"`
 
