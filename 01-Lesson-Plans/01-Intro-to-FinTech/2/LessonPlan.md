@@ -356,7 +356,7 @@ Then, provide a brief question and answer by asking students the following quest
 
 ---
 
-### 14. Student Do: FinTech Domains Part II (15 min)
+### 14. Student Do: FinTech Domains Part II (10 min)
 
 The previous activity should have laid the foundation for students to not only assess the current state of the FinTech domains, but now also devise hypothetical news headline for each FinTech domain that could potentially occur within the next 5 years. Students will continue in their groups of 2-3 individuals to complete the activity.
 
