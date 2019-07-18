@@ -68,7 +68,7 @@ Encourage the students and get them excited for the lesson. Tell them that today
 
 In this section, students will learn the basics of using the command line to perform basic file system operations on their machines.
 
-**File:** [Slides 4-7](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
+**File:** [Slides 4-7](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g512780ac1c_0_0)
 
 Open the slideshow and present the following questions and answers:
 
@@ -156,17 +156,31 @@ Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_o
 
 ---
 
-### 5. Instructor Do: Uploading Files to GitHub (20 min)
+### 5. Instructor Do: Version Control and GitHub (20 min)
 
-In this activity, students will learn how to upload files to GitHub, which will be used to submit their future homework assignments in the course.
+In this activity, students will learn about file version control and how to upload files to GitHub, which will be used to submit their future homework assignments in the course.
 
-Briefly explain the following:
+**File:** [Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_8_0)
+
+Open the slideshow and cover the following points about version control:
+
+* Versioning is simply a way to keep track of changes to files and folders over time.
+
+* Git and Github are tools that make tracking changes easy.
+
+* Github is a central location to create projects and track changes to files and folders in that project.
+
+* Github uses `commits` to track changes. You can think of a commit as a snapshot of what the files and folders looked like at that particular time. You can always see any version of your changes by looking back in time at the different commits.
+
+Then explain the following about GitHub:
 
 * GitHub offers a centralized location where developers can push and pull (upload and download) their code; GitHub always holds the most up-to-date code and files and handles everyone's updates appropriately.
 
+* Under the covers, GitHub uses the git tool for file versioning; Github is just one of many vendors that use git in the backend (ex. GitLab).
+
 * For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with GitHub via the command line using git, which allows for more advanced git operations.
 
-Then, have the students follow along with the following steps:
+Finally, have the students follow along with the following steps:
 
 * Visit <https://github.com> and ask students to log in to their personal accounts.
 
@@ -251,7 +265,7 @@ Perform the following:
 
 In this section, give students a brief summary of some of the key factors leading to the growth of the FinTech space. Understanding the historical background of FinTech as well as its current trajectory will give students knowledge that will help them both in employer interviews and their FinTech career.
 
-**File:** [Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
+**File:** [Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_3_22)
 
 Open the slideshow and use the slides to review the key historical factors leading to the present-day FinTech boom:
 
