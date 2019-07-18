@@ -20,7 +20,7 @@ By the end of class, students will be able to:
 
 * Map out the disrupted domains of the FinTech industry.
 
-* Make predictions in the form of future news headlines for a particular FinTech domain.
+* Make predictions for the FinTech domains in the form of future news headlines.
 
 ### Instructor Notes
 
@@ -317,7 +317,7 @@ Then, end the discussion with the following points:
 
 ### 12. Student Do: FinTech Domains Part I (25 min)
 
-In this activity, students will form groups of 2-3 individuals to research and produce summaries of the various FinTech domains.
+In this activity, students will form groups of 2-3 individuals to research and produce summaries of the various FinTech domains; there should be an even number of groups.
 
 **File:** [README.md](Activities/03-Stu_FinTech_Domains_Part_I/README.md)
 
@@ -348,15 +348,19 @@ The previous activity should have laid the foundation for students to not only a
 
 **File:** [README.md](Activities/04-Stu_FinTech_Domains_Part_II/README.md)
 
-### 15. Instructor Do: Review FinTech Domains Part II (20 min)
+### 15. Instructor Do: Review FinTech Domains Part II (15 min)
 
 Now that students have had an opportunity to perform their own research on their respective FinTech domains and produce hypothetical news headlines, it's now time to facilitate a class discussion based on each group's findings and thoughts.
 
-Have each group do a turn-and-teach and present their FinTech domain and news headline to the group next to them:
+Have each group do a turn-and-teach and present their FinTech domains and news headlines to the group next to them:
+
+* There should be an even number of groups to perform a turn-and-teach; however, if an odd number of groups exist, feel free to put 3 groups together to share their results.
+
+* Students can send their documents (containing FinTech domain information) to their peer group members to facilitate quicker and easier information transfer.
 
 * Walk around the class with your TAs to support any discussions if necessary.
 
-After students' peer presentations are complete, ask for any volunteers who are willing to share why they chose their particular FinTech news headline. Then, ex0plain the following:
+After students' peer presentations are complete, ask for any volunteers who are willing to share notable or interesting FinTech news headline that they heard from their peer groups. Then, explain the following:
 
 * The intent of this activity was to provide students with not only the breadth but also the depth of knowledge for each FinTech domain. This may prove to be valuable when applying for roles within the FinTech industry.
 
@@ -368,7 +372,23 @@ Ask students if they have any questions before moving on.
 
 ### 16. Instructor Do: Review and Reflect (5 min)
 
-This activity provides a moment to allow the class to digest and decompress from the fast pace of the day.
+This activity provides a moment to allow the class to digest and decompress from the fast pace of the day, and tie everything back to FinTech.
+
+Perform the following:
+
+* Congratulate students on completing the day! Students should feel proud as today's class ran at a much faster pace than the introductory (first day) class.
+
+* Re-cap the lessons learned throughout today's class; students learned to:
+
+  * Use the command line to execute basic file system operations.
+  * Download and upload files to GitHub using the git GUI.
+  * Describe the factors that led to the evolution of the FinTech industry.
+  * Map out the disrupted domains of the FinTech industry.
+  * Make predictions for the FinTech domains in the form of future news headlines.
+
+* Remind students that as FinTech professionals, they need to be both technical experts with cutting edge skills as well as seasoned financiers. In other words, students need to be FinTech subject matter experts (SMEs)! Therefore, today's lesson was a good mix of both attributes.
+
+* Ask if student's have any remaining questions before ending the class. If needed, TAs will be hosting office hours after the class ends as well.
 
 ### End Class
 
