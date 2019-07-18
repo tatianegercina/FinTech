@@ -315,13 +315,15 @@ Then, end the discussion with the following points:
 
 ---
 
-### 12. Student Do: FinTech Domains and Trends (25 min)
+### 12. Student Do: FinTech Domains Part I (25 min)
 
-In this activity, students 
+In this activity, students will form groups of 2-3 individuals to research and produce summaries of the various FinTech domains.
 
-This section is a deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation.
+**File:** [README.md](Activities/03-Stu_FinTech_Domains_Part_I/README.md)
 
-**File:** [Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
+### 13. Instructor Do: Review FinTech Domains Part I (10 min)
+
+**File:** [Slideshow](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360)
 
 Open the slideshow and review the following FinTech domains:
 
@@ -377,14 +379,6 @@ Answer any questions before moving on.
 
 ---
 
-### 13. Student Do: FinTech Domains Part I (15 min)
-
-By this point, students have been given examples of the major domains within FinTech as well as the overarching trends across the industry. Now, students will work together in groups of 3-4 individuals to research one of the FinTech domains.
-
-**File:** [README.md](Activities/03-Stu_FinTech_Domains_Part_I/README.md)
-
----
-
 ### 14. Student Do: FinTech Domains Part II (15 min)
 
 The previous activity should have laid the foundation for students to not only assess the current state of their FinTech domain, but now also devise a hypothetical news headline for that particular FinTech domain that could potentially occur within the next 2-3 years. Students will continue in their groups of 3-4 individuals to complete the activity.
@@ -406,6 +400,12 @@ After students' peer presentations are complete, ask for any volunteers who are 
 * It is not enough to simply restate the past, but also to analyze and predict the future. Therefore, after this activity students should have a general idea as to the trends affecting each FinTech domain as well as the potential outcomes that may result for each domain within the near future.
 
 Ask students if they have any questions before moving on.
+
+---
+
+### 16. Instructor Do: Review and Reflect (5 min)
+
+This activity provides a moment to allow the class to digest and decompress from the fast pace of the day.
 
 ### End Class
 
