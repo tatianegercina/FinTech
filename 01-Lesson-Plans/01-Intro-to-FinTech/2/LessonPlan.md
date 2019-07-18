@@ -200,6 +200,10 @@ Encourage students to practice using GitHub before the next class and attend off
 
 ---
 
+### 7. Instructor Do: FinTech's Past, Present, Future (5 min)
+
+In this activity, instructors transition students from the technical demos of the 1st half of the day (command line and git GUI) into a more interactive discussion regarding the concepts and background information of the FinTech realm, specifically focusing on the history of FinTech, the current state of its ecosystem, and the possibilities to its future.  
+
 ### 7. Student Do: Rip Van Winkle Thought Exercise (10 min)
 
 In this activity, students think about how the current state of the FinTech world may differ from that of someone from the year 1999.
