@@ -328,54 +328,17 @@ In this activity, students will form groups of 2-3 individuals to research and p
 Open the slideshow and review the following FinTech domains:
 
 * Payments and Remittances
-
-  * Currently representing the largest segment of the FinTech space, digital payments have become increasingly widespread with the growth of e-commerce and mobile device infrastructure.
-
-  * Distributing credit card numbers over the internet proved to be insecure (and costly) in the past. Thus, digital payment technologies were designed for not only security, but overall speed and convenience as well.
-
-  * Examples: Venmo, Stripe, PayPal, Square, Apple Pay, Android Pay, Zelle, cryptocurrencies
-
 * Robo Advisors and Personal Finance
-
-  * Robo advisors and personal finance companies provide wealth management, investment, and budgetary services that seek to help customers with their overall capital management and investments.
-
-  * Often, wealth management solutions are driven by machine learning with automated trading and portfolio re-balancing, while budgetary services utilize machine learning to scan a customer's purchase history and identify buying habits to suggest areas in which they can save.
-
-  * Examples: Betterment, Acorns, Robinhood, Personal Capital
-
 * RegTech
-
-  * RegTech companies manage the regulatory and compliance processes within the financial industry through technology.
-
-  * These types of companies use machine learning to identify and prevent instances of fraud, money laundering, or breaches in data.
-
-  * Examples: Apiax, Finform, Trulioo, ClauseMatch.
-
 * Digital Banking
-
-  * Digital banking consists of online banks that seek to provide higher account interest rates by reducing the capital overhead associated with physical branches/bank locations.
-
-  * Examples: Ally Bank, ING Direct
-
 * InsurTech
-
-  * InsurTech utilizes the benefits of machine learning to more efficiently group customers into risk profiles in order to provide the right type of insurance product.
-
-  * Fine-tuning the determination of customer risk profiles minimizes costs to those who would have been lumped together in a broader customer risk profile.
-
-  * Examples: Lemonade, Slice, Ladder
-
 * Alternative Finance
 
-  * Alternative finance refers to the financial channels outside of the realm of traditional finance, such as regulated banks and capital markets, that facilitate capital borrowing and lending.
+Then, provide a brief question and answer by asking students the following questions, thereby making sure the class is on the same page before moving on:
 
-  * Popular **crowdfunding** and **peer-to-peer** lending channels have emerged in this domain.
+* Was there anything confusing regarding the FinTech domains, companies, or technologies used?
 
-  * Examples: Indiegogo, Kiva, LendingClub
-
-![fintech-ecosystem](Images/fintech-ecosystem.png)
-
-Answer any questions before moving on.
+* Was there anything you felt was notable or interesting when researching the FinTech domains?
 
 ---
 
