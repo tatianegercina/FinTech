@@ -216,13 +216,13 @@ Quickly explain to the class the following:
 
 ---
 
-### 8. Instructor Do: Review Rip Van Winkle Though Exercise (10 mins)
+### 8. Instructor Do: Review Rip Van Winkle Though Exercise (5 mins)
 
 In this activity, students present their opinions regarding the FinTech Rip Van Winkle thought experiment.
 
 Perform the following:
 
-* Give each group approximately 1-2 minutes to present their opinions on what would be most surprising to a sleeper from 1999 witnessing the current state of the finance world.
+* Ask for a few volunteers that would be willing to share their group's thoughts on what they felt would be the most surprising to a sleeper from 1999 witnessing the current state of the finance world.
 
 * Take note of each group's findings and emphasize some of the overarching themes regarding the state of the current FinTech ecosystem. For example, some themes that are likely to present themselves are:
 
@@ -231,7 +231,7 @@ Perform the following:
   * Mobile Infrastructure
   * Cloud Infrastructure
 
-### 9. Instructor Do: Evolution of FinTech (15 min)
+### 9. Instructor Do: Evolution of FinTech (10 min)
 
 In this section, give students a brief summary of some of the key factors leading to the growth of the FinTech space. Understanding the historical background of FinTech as well as its current trajectory will give students knowledge that will help them both in employer interviews and their FinTech career.
 
