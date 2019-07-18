@@ -34,7 +34,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Timetracker
 
-The slides for today can be viewed on Google Drive here: [Slides]()
+The slides for today can be viewed on Google Drive here: [Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit#slide=id.g54ab1329fa_1_44)
 
 To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Then, add the PDF file to your class repository along with other necessary files. [Instructions Here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit)
 
@@ -48,7 +48,7 @@ The Timetracker for today can be viewed here: [Timetracker](TimeTracker.xlsx)
 
 **Files:**
 
-* [Slideshow](placeholder)
+* [Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit#slide=id.g54ab1329fa_1_44)
 
 Welcome students to the third day of class and the final lesson of Unit 1. Cover the following points:
 
@@ -164,7 +164,7 @@ In this section, students will be introduced to the git CLI, which will allow th
 
 **Files:**
 
-* [Slideshow](https://docs.google.com/presentation/d/1OAbxqe1yZKGMN2IxRPfNXnXT6Bem1oD7gFr47inJMos/edit#slide=id.g473a132ac1_0_7)
+* [Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit#slide=id.g5d815a1bb6_0_3446)
 
 Open the slideshow and use slides 1–22 to review the following points about git:
 
@@ -299,7 +299,7 @@ Encourage students to continue adding and committing to GitHub for extra practic
 
 In this part of the lesson, students will be introduced to markdown files and their style formatting, which can be used to create visually appealing README files.
 
-**Files:** [slideshow-placeholder]()
+**Files:** [Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit#slide=id.g5d815a1bb6_2_20)
 
 Open the slideshow and present students with the following questions and answers:
 
@@ -409,7 +409,7 @@ Encourage students to continue building their GitHub README files as they progre
 
 In this part of the lesson, you will prepare students to work in pairs to create a FinTech case study in a shared GitHub repo. This activity will combine students' knowledge of the git CLI and markdown syntax.
 
-**Files:** [slideshow-placeholder]()
+**Files:** [Slides]()
 
 Open the slideshow and go through the slides while explaining the following:
 
@@ -449,15 +449,15 @@ Finally, remind students that the Unit 1 homework assignment is a FinTech case s
 
 ### 16. Instructor Do: Reflect on Class (5 min)
 
-Take a moment to reflect on the class with students and have students do a quick shareout of highlights and takeaways from the week.
+Take a moment to reflect on the class with students and have students do a quick exchange of highlights and takeaways from the week.
 
 ### 17. Instructor Do: Career Services (35 min)
 
-Note: If you are teaching this lesson on a weeknight, save this section for the next Saturday class. 
+Note: If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
 
-Explain to students that we've spent a great deal of time introducing outselves to FinTech this week, learning the basics, and also preparing our tools for the course. But, we also want to make sure we're focusing on where you will go once the course is over. Starting today, we're going to dedicate time on certain Saturday classes to talk specifically about Career Services. 
+Explain to students that we've spent a great deal of time introducing ourselves to FinTech this week, learning the basics, and also preparing our tools for the course. But, we also want to make sure we're focusing on where you will go once the course is over. Starting today, we're going to dedicate time on certain Saturday classes to talk specifically about Career Services.
 
-Use the following slides and Lesson to discuss the career services content for this week. 
+Use the following slides and Lesson to discuss the career services content for this week.
 
 **Files**
 
