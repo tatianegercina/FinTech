@@ -8,7 +8,7 @@ Continue in your group of 2-3 individuals to brainstorm and produce headlines fo
 
 You completed this in the last activity, nice job!
 
-## Part II Instructions: Future FinTech Headlines
+## Part II Instructions: FinTech Headlines
 
 Use the document created from Part I and research your FinTech domain to produce news headlines that fit the following criteria:
 
