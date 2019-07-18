@@ -285,9 +285,9 @@ Answer any questions before moving on.
 
 ---
 
-### 11. Instructor Do: Facilitated Discussion About FinTech Domains (10 min)
+### 11. Instructor Do: Facilitated Discussion About Finance and Technology (10 min)
 
-This section will be a discussion of the current state of the FinTech industry and which financial sectors have been positively impacted by technological innovation.
+This section will be a brief discussion on the positive impacts that technology has had on the finance world, which will then transition to the topic of specific FinTech domains whose traditional financial activities have replaced with more efficient means via the benefits of technological innovation.
 
 Ask the students the following questions:
 
@@ -307,9 +307,17 @@ Ask the students the following questions:
 
   **Sample Answer:** Machine learning can be used in lending to more efficiently target customers who have a higher likelihood of paying back their loans, while avoiding those who have a higher likelihood of *not* paying back their loans.
 
+Then, end the discussion with the following points:
+
+* The field of FinTech is so vast and rapidly changing due to technological innovation that even entire domains of the FinTech ecosystem have begun to change the way in which companies operate and compete with their peers.
+
+* In order to complete the unit 1 homework assignment (FinTech case study), students will need to comprehend the nature of the FinTech domains as well as the competitive factors affecting the underlying companies within. Therefore, we will need to take a closer look at the FinTech landscape.
+
 ---
 
-### 12. Instructor Do: FinTech Domains and Trends (10 min)
+### 12. Student Do: FinTech Domains and Trends (25 min)
+
+In this activity, students 
 
 This section is a deep dive into the various domains of the FinTech ecosystem that have been bolstered by technological innovation.
 
