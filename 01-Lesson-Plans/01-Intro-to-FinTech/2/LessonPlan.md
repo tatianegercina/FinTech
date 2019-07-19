@@ -32,19 +32,19 @@ By the end of this class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.2 Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing). 
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.2 Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit). 
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx). 
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome (10 min)
 
-Welcome students to the second day of class and the next lesson in Unit 1. 
+Welcome students to the second day of class and the next lesson in Unit 1.
 
 **File:** [Lesson 1.2 Slideshow](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
 
@@ -134,7 +134,7 @@ In this activity, students will perform their own file system operations via the
 
 ### 4. Instructor Do: Review File System Operations (5 min)
 
-Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points. You can also use [slide 11](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_0) to show these definitions to students: 
+Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points. You can also use [slide 11](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_0) to show these definitions to students:
 
 * `mkdir` creates folder directories.
 
@@ -174,11 +174,11 @@ Open the slideshow and go through the slides while covering the following points
 
 * Developers use GitHub as a centralized place to push and pull (upload and download) their code; GitHub always holds the most up-to-date code and files and handles everyone's updates appropriately.
 
-* Under the covers, GitHub uses the git tool for file versioning. 
+* Under the covers, GitHub uses the git tool for file versioning.
 
-    * Github is just one of many vendors that use git in the backend (e.g., GitLab). 
+  * Github is just one of many vendors that use git in the backend (e.g., GitLab).
 
-    * For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with GitHub via the command line using git, which allows for more advanced git operations.
+  * For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with GitHub via the command line using git, which allows for more advanced git operations.
 
 * GitHub uses `commits` to track changes. You can think of a commit as a snapshot of what the files and folders looked like at a particular moment in time. You can always see any version of your changes by looking at the previous commits.
 
@@ -220,7 +220,7 @@ Encourage students to practice using GitHub before the next class and attend off
 
 In this activity, you will transition students from the technical demos of the first half of the class (command line and git GUI) to the more interactive discussion-based second half. Now we'll cover the concepts and background information of the FinTech realm, focusing on the history of FinTech, the current state of its ecosystem, and its future possibilities.  
 
-First, explain the following to students: 
+First, explain the following to students:
 
 * The remainder of class will be a deep dive into FinTech's past, present, and future.
 
@@ -276,7 +276,7 @@ Open the slideshow and go through the slides while reviewing the key historical 
 
 * Mobile Infrastructure and Shifting Consumer Preferences
 
-  * With the advancements in mobile network infrastructure (2G, 3G, 4G LTE), consumers have become more connected to the internet (as well as each other) than ever before. 
+  * With the advancements in mobile network infrastructure (2G, 3G, 4G LTE), consumers have become more connected to the internet (as well as each other) than ever before.
   
   * As a result, consumers not only have a greater resource pool to cross-check and validate information (e.g., checking prices), but also have become a resource pool themselves, in which companies look to target for business.
 
@@ -288,7 +288,7 @@ Open the slideshow and go through the slides while reviewing the key historical 
 
   * Over the years, computer processing units (CPUs), random access memory (RAM), and hard drive storage devices have become both more powerful and less expensive. Therefore, more companies were able to purchase and utilize large clusters of computers working in parallel.
 
-  * Parallel processing paradigms have also shifted to become more efficient. Traditionally, to enable machines to work in parallel, the concept of MapReduce was born. With MapReduce, data workloads were split among multiple machines for disk-based processing, and then reaggregated at the end to produce the result. However, with the advent of Spark, that same process has been refined for in-memory processing, in which data workloads utilize RAM that is much faster at processing data (though more costly).
+  * Parallel processing paradigms have also shifted to become more efficient. Traditionally, to enable machines to work in parallel, the concept of MapReduce was born. With MapReduce, data workloads were split among multiple machines for disk-based processing, and then re-aggregated at the end to produce the result. However, with the advent of Spark, that same process has been refined for in-memory processing, in which data workloads utilize RAM that is much faster at processing data (though more costly).
 
   * Because big data processing has become more efficient, the time needed to curate and analyze data has also decreased. Therefore, modern-day companies are able to employ tactics like machine learning to drive business decision-making in real time.
 
@@ -296,7 +296,7 @@ Open the slideshow and go through the slides while reviewing the key historical 
 
 * Cloud Infrastructure
 
-  * Traditionally, server farms, or large clusters of machines, required large up-front costs and overhead related to server maintenance. 
+  * Traditionally, server farms, or large clusters of machines, required large up-front costs and overhead related to server maintenance.
   
   * With the inception of cloud computing, however, companies no longer had to purchase their own servers for their data-processing needs, but instead could "rent" servers from another vendor on an as-needed (and, therefore, much cheaper) basis. This allowed smaller companies to compete with larger, more established companies in regard to utilizing big data.
 
@@ -340,7 +340,7 @@ Then, end the discussion with the following points:
 
 ### 12. Student Do: FinTech Domains, Part 1 (25 min)
 
-In this activity, students will form groups of 2 or 3 to research and produce summaries of the various FinTech domains. 
+In this activity, students will form groups of 2 or 3 to research and produce summaries of the various FinTech domains.
 
 **File:** [README.md](Activities/03-Stu_FinTech_Domains_Part_I/README.md)
 
@@ -348,15 +348,15 @@ In this activity, students will form groups of 2 or 3 to research and produce su
 
 ### 13. Instructor Do: Review FinTech Domains, Part 1 (10 min)
 
-**File:** [FinTech Domains and Trends Slides (Optional)](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360)
+**File:** [FinTech Domains and Trends Slides (Optional)](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5dceb08bc3_21_0)
 
 First, ask students the following questions:
 
-* Did you find any of the FinTech domains, companies, or technologies to be confusing? 
+* Did you find any of the FinTech domains, companies, or technologies to be confusing?
 
 * Did you find anything notable or interesting while researching the FinTech domains?
 
-If students are confused or want more information, open the [optional slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360) and review the following FinTech domains and trends: 
+If students are confused or want more information, open the [optional slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5dceb08bc3_21_0) and review the following FinTech domains and trends:
 
 * Payments and Remittances
 * Robo Advisors and Personal Finance
@@ -377,9 +377,9 @@ In this activity, students will build on the research gathered in Part 1 to crea
 
 To review the previous activity, facilitate a class discussion based on each group's findings and thoughts.
 
-Tell students the following: 
+Tell students the following:
 
-* This review will be done in the form of a turn-and-teach, in which each group will present their news headlines to the group next to them. 
+* This review will be done in the form of a turn-and-teach, in which each group will present their news headlines to the group next to them.
 
 * Students that they can send any relevant documents (containing FinTech domain information) to their peer group members to facilitate quicker and easier information transfer.
 
@@ -399,11 +399,11 @@ Ask if there are any questions before moving on.
 
 ### 16. Instructor Do: Review and Reflect (5 min)
 
-Use the last few minutes of class to allow the students to digest and decompress from this lesson. 
+Use the last few minutes of class to allow the students to digest and decompress from this lesson.
 
-First, congratulate students for completing this class! They should be proud, as the pace of today's class was much quicker than the previous class. 
+First, congratulate students for completing this class! They should be proud, as the pace of today's class was much quicker than the previous class.
 
-Recap today's objectives. Students are now able to: 
+Recap today's objectives. Students are now able to:
 
 * Use the command line to execute basic file system operations.
 
@@ -415,7 +415,7 @@ Recap today's objectives. Students are now able to:
 
 * Make predictions about FinTech domains.
 
-Remind students that as FinTech professionals, they need to be both technical experts with cutting-edge skills as well as seasoned financiers. Today's lesson was good practice in both of these aspects; students are on their way to becoming FinTech subject matter experts (SMEs). 
+Remind students that as FinTech professionals, they need to be both technical experts with cutting-edge skills as well as seasoned financiers. Today's lesson was good practice in both of these aspects; students are on their way to becoming FinTech subject matter experts (SMEs).
 
 Ask if students have any remaining questions before ending the class. If needed, TAs will be hosting office hours after class.
 
