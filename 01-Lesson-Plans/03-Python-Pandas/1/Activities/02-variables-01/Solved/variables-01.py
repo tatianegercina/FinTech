@@ -68,58 +68,38 @@ year_of_publish = 1842
 
 #Topic: Print
 
-# Print "First Name: " and first_name
+# Print: "First Name: " and first_name
 print(f"First Name: {first_name}")
 
 # Print: "Last Name:" and last_name
 print(f"Last Name: {last_name}")
 
 # Print: "Profession: " and profession
+print(f"Profession: {profession}")
 
-
-
-##print: "BirthYear: " and birth_year
-
+# Print: "BirthYear: " and birth_year
+print(f"Birth Year: {birth_year}")
 
 
 #Topic: Concat Values
 
 # Create a variable, statement_one, and assign it a value of a string:
 # "Programmers: Ada Lovelace is a British Computer Programmer born in 1815."
-
-
+statement_one = f"{subject}: {first_name} {last_name} is a {nationality} {profession} born in {birth_year}."
+print(statement_one)
 
 # Create a variable, statement_two, and assign it a value of a string:
 # "She is commonly referred to as the first computer programmer"
-
-
-
+statement_two = f"She is commonly referred to as the {known_for}."
+print(statmeent_two)
 
 # Create a variable, statement_three, and assign it a value of a string:
 # "In 1842 she published the first Algorithm, the Analytical Engine, at the age of 27."
-
-
+statement_three = f"In 1842 she published the first Algorithm, {first_algorithm}, at the age of 27."
+print(statement_three)
 
 # Create a variable, statement_four, and assign it a value of a string:
 # "She was a British Citizen who lived in London, England until her passing in 1852 at the age of 37."
-
-
-
-#Topic: print()
-
-
-#print statement_one
-
-
-
-#print statement_two
-
-
-
-#print statement_three
-
-
-
-#print statement_four
-
-
+statement_four = f"She was a {nationality} Citizen who lived in {city_location}, {country_location} until her " \
+                 f"passing in {death_year} at the age of {age_at_passing}"
+print(statement_four)
