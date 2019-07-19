@@ -1,8 +1,8 @@
-## FinTech and Me
+# FinTech and Me
 
-So far the day has all been about course introductions and lectures. Now, you've been given your own time to reflect a bit and answer the question, what does *FinTech* mean to you?
+So far, today has been all about course introductions and lectures. Now it's time to reflect a bit about the following question: what does FinTech mean to you?
 
-### Instructions
+## Instructions
 
 Answer the following questions:
 
