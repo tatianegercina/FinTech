@@ -1,8 +1,8 @@
-# Getting familiar with the Terminal
+## Getting familiar with the Terminal
 
 In this activity, we're going to be practicing a bit more with terminal commands.
 
-## Instructions
+### Instructions
 
 1. To start with, let's open up the terminal in this folder.
 
