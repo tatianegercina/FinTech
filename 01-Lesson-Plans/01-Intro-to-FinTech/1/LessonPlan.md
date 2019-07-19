@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's class will focus on familiarizing students with this course as well as introducing them to the evolving financial services industry known as FinTech. The instructor, teacher assistants (TAs), student success managers (SSMs), and students will all have an opportunity to introduce themselves to the class. Following an overview of the course agenda and requirements, students will participate in group discussions regarding the nature of FinTech (what is it?). The class will end with a review of the Unit 1 homework assignment.
+Today's class will focus on familiarizing students with this course as well as introducing them to the evolving financial services industry known as FinTech. The instructor, teacher assistants (TAs), student success managers (SSMs), and students will all have an opportunity to introduce themselves to the class. Following an overview of the course agenda and requirements, students will participate in group discussions about FinTech. The class will end with a review of the Unit 1 homework assignment.
 
 ### Class Objectives
 
@@ -28,33 +28,33 @@ By the end of class, students will:
 
 * Make sure your TAs have sufficient time to introduce themselves as well, as they will be major stakeholders when it comes to helping students progress through the course.
 
-* When reviewing the course requirements, be sure to emphasize that cheating or plagiarism of any kind is prohibited; engaging in any kind of plagiarism can endanger student eligibility for certification upon graduation.
+* When reviewing the course requirements, be sure to emphasize that cheating or plagiarism of any kind is prohibited; engaging in this kind of behavior can endanger student eligibility for certification upon graduation.
 
-### Class Slides and Timetracker
+### Class Slides and Time Tracker
 
-The slides for today can be viewed on Google Drive here: [Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g54ab1329fa_1_44)
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.1 Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g54ab1329fa_1_44).
 
-To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Then, add the PDF file to your class repository along with other necessary files. [Instructions Here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit)
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
 
-* Note: Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-The Timetracker for today can be viewed here: [Timetracker](TimeTracker.xlsx)
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Introductions (40 min)
 
-This activity will be led by the SSM. They will discuss student attendance, graduation requirements, and share opportunities to get support.
+This first part of the lesson will be led by the Student Success Manager (SSM). They will discuss attendance and graduation requirements, as well as share opportunities for students to get support.
 
-During this activity, every team member associated with this course will introduce themselves to break the ice and get to know each other. This includes Student Success Managers (SSMs), university staff, program directors, Career Directors, individual students, and Instructional Staff.
+During this time, everyone associated with the course will introduce themselves to break the ice and get to know each other. This includes Student Success Managers (SSMs), university staff, program directors, career directors, the instructional staff (instructors and TAs), and the students.
 
-As you introduce yourself, feel free to include the topics below. However, be sure to keep your introduction brief, as there is a great deal to cover in this first class.
+Feel free to answer the questions below as a way to introduce yourself. However, be sure to keep your introduction brief, as there is a great deal to cover in this first class.
 
 * What is your career history? Where did you start and where are you now?
 
-* What have you accomplished in the past? What is your FinTech industry experience (if applicable)?
+* What have you accomplished thus far in your career? What is your FinTech industry experience (if applicable)?
 
-* What drew you to become a instructor/TA? What are you looking forward to in this course?
+* What made you want to become an instructor or TA? What are you looking forward to in this course?
 
 * What is something that defines you? What are your passions?
 
@@ -62,17 +62,19 @@ As you introduce yourself, feel free to include the topics below. However, be su
 
 ### 2. Instructor Do: Defining FinTech (20 min)
 
-In this section, you will discuss the concept of FinTech as well as provide some information about the industry.
+In this section, you will discuss the concept of FinTech as well as provide some information about the FinTech industry.
 
-Present to the class the following questions and answers:
+**File:** [Defining FinTech Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_6_0)
+
+Open the slideshow and review the slides, while presenting the following questions and answers to the class. (Slides 4–9)
 
 * What exactly *is* FinTech?
 
-  **Answer:** Generally, as the term suggests, FinTech is the combination of finance and technology. More specifically, however, FinTech refers to the financial services industry that has been disrupted by technological innovation that aims to compete with traditional financial methods and improve activities or inefficiencies in finance.
+  **Answer:** Generally, as the term suggests, FinTech is the combination of finance and technology. More specifically, FinTech refers to the financial services industry that has been disrupted by technological innovation, and that aims to compete with traditional financial methods in order to improve activities and inefficiencies in finance.
 
 * What defines a FinTech company?
 
-  **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through back-end network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups:
+  **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through backend network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups:
 
     * Infrastructure providers
 
@@ -98,25 +100,23 @@ Present to the class the following questions and answers:
 
 In this section, provide an overview of the topics and technologies used in the course, as well the timeline for each topic or unit.
 
-**File:** [slideshow-placeholder]()
+**File:** [Course Overview Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5d56f58a01_0_34)
 
-Use the slideshow to go over the course agenda and timeline:
+Use the slideshow to go over the course agenda and timeline. (Slides 9–14)
 
-* **Weeks 1–2:** Students are introduced to the world of FinTech and the current financial landscape. Then they will dive into the financial modeling methods of the current industry-standard tool, Microsoft Excel.
+* **Weeks 1–2:** Students will be introduced to the world of FinTech and the current financial landscape. Then, they will dive into the financial modeling methods of the current industry-standard tool, Microsoft Excel.
 
-* **Weeks 3–7:** While useful and easy to grasp, Excel is limited in its technical capabilities compared to a full-fledged progamming language like Python. Therefore, over the next several weeks, students will cover the basics of Python as well as how to use additional libraries and tools such as Pandas, APIs, Plotly, and SQL databases, within the context of financial analysis.
+* **Weeks 3–7:** While useful and easy to grasp, Excel is limited in its technical capabilities compared to a full-fledged progamming language like Python. This is why, over the next several weeks, students will learn the basics of Python as well as how to use additional libraries and tools such as Pandas, APIs, Plotly, and SQL databases, all within the context of financial analysis.
 
 * **Weeks 8–9** Students are tasked with their first project.
 
-* **Weeks 10–15:** Companies are becoming more and more data-driven in their decision making. Therefore, through machine learning, students will learn how to interpret and create financial models as well as automate the execution of such models. Topics include algorithmic trading, robo-advisory, time series analysis, risk management, and Cloud ML technologies.
+* **Weeks 10–15:** Companies are becoming more and more data-driven in their decision making. Through machine learning, students will learn how to interpret and create financial models as well as automate the execution of such models. Topics include algorithmic trading, robo-advisors, time series analysis, risk management, and Cloud ML technologies.
 
 * **Weeks 16–17:** Students are tasked with their second project.
 
-* **Weeks 18–22:** With its benefits of security, speed, and decentralized peer-to-peer validation, blockchain technology has already become more efficient than tradtional finance in the context of transactions and third-party validation. Thus, students will learn about blockchain fundamentals, smart contracts using Solidity, and how to develop blockchain applications on the popular Ethereum blockchain network.
+* **Weeks 18–22:** With its benefits of security, speed, and decentralized peer-to-peer validation, blockchain technology has already become more efficient than tradtional finance in the realm of transactions and third-party validation. Students will learn about blockchain fundamentals, smart contracts using Solidity, and how to develop blockchain applications on the popular Ethereum blockchain network.
 
 * **Weeks 23–24:** Students are tasked with their final project.
-
-![fintech-curriculum](Images/fintech-curriculum.png)
 
 ---
 
@@ -124,19 +124,21 @@ Use the slideshow to go over the course agenda and timeline:
 
 Provide students with some encouragement and tips for overcoming the mental frustrations they will more than likely face throughout the course.
 
-**File:** [slideshow-placeholder]()
+**File:** [Tips Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g480f0dd0a7_0_19)
 
-Open the next series of slides and emphasize the following points:
+Open the next series of slides and emphasize the following points. (Slides 15–21).
 
-* Hard work, humility, and a relentless desire to improve are essential for succeeding in this program. Recognizing how little you know is a first step toward growth as a learner.
+* Embrace your inner toddler. Recognizing how little you know is a first step toward growth as a learner. Hard work, humility, and a relentless desire to improve are essential for succeeding in this program. 
 
 * At times, learning the skills taught in this course will be intimidating and frustrating. Remember that becoming a skilled professional is challenging and will take time. There is no way around that.
 
 * Due to the challenging nature of this course, there will be many moments where students will doubt themselves. Remember that everyone starts as a beginner, including the instructor. Also remember why you were admitted to this program in the first place: you have what it takes to succeed.
 
-* Even though challenging times are up ahead, students have a solid support system: their instructor, TAs, student success manager, and,perhaps most importantly, each other. When you're frustrated or stuck, remember that we're all in this together. Seek help when you need it and lift each other up.
+* Form a community with your classmates. Even though challenging times are up ahead, students have a solid support system: their instructor, TAs, student success manager, and,perhaps most importantly, each other. When you're frustrated or stuck, remember that we're all in this together. Seek help when you need it and lift each other up.
 
-* Lastly, learning is supposed to be frustrating! It's a process, so stick with it. Things only get easier when we choose to embrace the difficulty.
+* Lastly, learning is supposed to be frustrating! It's a process, so stick with it. Things only get easier when we choose to embrace the difficulty and put in the hours to succeed. 
+
+* Most importantly, celebrate your successes! 
 
   ![fintech-tips](Images/fintech-tips.png)
 
@@ -150,9 +152,11 @@ Open the next series of slides and emphasize the following points:
 
 In this section, engage students with a facilitated discussion about why FinTech has become so prevalent today.
 
-**File:** [slideshow-placeholder]()
+**File:** [The Rise of FinTech Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_0_0)
 
-Use the slides to help guide your discussion, pointing out the following:
+Open the slideshow and use the slides to help guide your discussion, focusing on the following talking points. (Slides 23–30)
+
+As you review the slides, look for opportunities to prompt students to reflect. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer. For example, ask students to share examples of innovative FinTech companies and how they are disrupting the financial services industry.
 
 * Recent technological advancements in (big) data and mobile network infrastructure has led to a consumer desire for companies to not only provide more efficent data-driven services, but also quality engagement through scalable mobile platforms.
 
@@ -162,11 +166,9 @@ Use the slides to help guide your discussion, pointing out the following:
 
 * As a result, there is a growing demand for technical specialists who have the background and experience to navigate financial waters.
 
-As you review the slides, look for opportunities to prompt students to reflect. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer.
-
-For example, ask students to share examples of innovative FinTech companies and how they are disrupting the financial services industry.
-
 ![fintech-rise](Images/fintech-rise.png)
+
+Answer any questions before moving on. 
 
 ---
 
@@ -192,51 +194,53 @@ Once all volunteers have presented, tie everything together by explaining the fo
 
 * Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. And still others see FinTech as a path to new career supported by growing demand.
 
-* Despite students' differing reasons for wanting to learn more about FinTech, each of them has made the leap to take this course. Therefore, it's important to continue to get to know each other, as they'll be together "in the trenches" for the next 26 weeks. The relationships you build in this class can serve as valuable network connections after the completion of the course.
+* Despite students' differing reasons for wanting to learn more about FinTech, each of them has made the leap to take this course. Therefore, it's important to continue to get to know each other, as they'll be together "in the trenches" for the next 24 weeks. The relationships you build in this class can serve as valuable network connections after the completion of the course.
 
 ---
 
-### 9. Student Do: Thought Experiment (25 mins)
+### 9. Student Do: Alpacalypse Now (25 min)
 
-In this activity, students will once again break off into groups of `2-4` to define and articulate the challenges faced by the Altruistic Alpacas charity. They will need to list at least 5 financial or technical challenges associated with each of the 5 core problem areas defined by the client.
+In this activity, students will once again break off into groups of 2 to 4 to define and articulate the challenges faced by the Altruistic Alpacas charity. They will need to list at least 5 financial or technical challenges associated with each of the 5 core problem areas defined by the client.
 
-**Files:**
+**File:** [Alpacalypse Now Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_5_0)
 
-* [Thought Experiment Slides]()
+**Notes:**
 
-Use the slides to setup the first thought experiment.
+* Use the slides to set up this activity. (Slides 34–37)
 
-* In essence, this experiment has students attempting to define the financial and technical challenges that the charity is facing. Students may have a mix of financial and technical backgrounds, but this exercise should force them to think creatively about the problem and identify challenges from both the financial and technical perspective.
+* In essence, this thought experiment asks students to define the financial and technical challenges of the Altruistic Alpacas charity. Students may have a mix of financial and technical backgrounds, but this exercise should force them to think creatively about the problem and identify challenges from both a financial and technical perspective.
 
-* The key to executing this exercise in the classroom is in ensuring that students are engaged to think outside of their sphere of knowledge and to think deeply about each problem.
+* The key to executing this exercise in the classroom is to ensure that students thinking outside their sphere of knowledge as well as thinking deeply about each problem.
 
-Set a time for 25 minutes and allow students to dicuss their options. Remind them that they should be prepared to discuss these issues with the class afterwards.
+* Set a time for 25 minutes and allow students to dicuss their options. Remind them that they should be prepared to discuss these issues with the class. 
 
-As students are working on this challenge, you and your TAs should walk around and listen to student conversations. When appropriate, nudge them to think more critically. For instance:
+* As students work, you and your TAs should walk around the classroom and listen to student discussions. When appropriate, nudge them to think more critically. Many students may rely on their personal backgrounds, but this is a good time to think outside the box. For instance:
 
-* If students seem to have focused on only the financial aspects of the problem, prod them to think about the technical challenges and vice versa. Many students may rely on their personal backgrounds, but this is a good time to think outside the box. Have they considered only an analytical approach? If so, ask about a machine learning/AI approach. Have they considered a cryptocurrency or blockchain solution?
+  * If students seem to have focused on only the financial aspects of the problem, prod them to think about the technical challenges. Or maybe they have taken an analytical approach; if so, ask about a machine learning/AI approach. You can also ask if they considered a cryptocurrency or blockchain solution, and so on. 
 
-* If students seem to have a full list of financial and technical challenges, ask them about regulatory or security issues that they may face. Prompt them to also think about governance and cross-border issues with an international charity.
+  * If students seem to have a full list of financial and technical challenges, ask them about regulatory or security issues that they may face. Prompt them to also think about governance and cross-border issues that may come up with an international charity.
 
 ---
 
-### 10. Instructor Do: Review Thought Experiment  (25 mins)
+### 10. Instructor Do: Review Alpacalypse Now (25 min)
 
-**File:** [slideshow-placeholder]()
+**File:** [Review Alpacalypse Now Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_5_39)
 
-After time is up, ask a few student groups to share some of their identified challenges. Consider opening a notepad file or using the whiteboard to track a running list of the challenges for each problem area.
+When time is up, ask a few groups to share some of the challenges they identified. Consider opening a notepad file or using the whiteboard to track a running list of the challenges for each problem area.
 
-Once you've gotten a large enough list, switch to teh slides where it breaks down some of the potential solutions to solving these problems and overcoming these challenges. Be candid that the solution may not be comprehensive, but it should give them some ideas about how FinTech can be used on various fronts to address the problems.
+Once you have a list of challenges, use the slides to break down some of the potential solutions to these problems. (Slides 39–57)
 
-* The slides provide example solutions to each core problem that the client identified. While some are more concrete than others, try not to get bogged down into the details. These slides are meant to provide students fodder for thought.
+Tell students that the following: 
 
-* When appropriate in the slides, ask students for examples.
+* The slides do not represent a comprehensive list of solutions, but they should provide some ideas about how FinTech can be used to address various challenges.
 
-* If you have stories relevant to the slides from your personal experience, feel extra encouraged to share!
+* The slides provide example solutions to each core problem identified by the client (Altruistic Alpacas). While some solutions are more concrete than others, try not to get bogged down with the details. The slides are meant to provide food for thought.
 
-Wrap up the activity by reminding students that while these solutions may not have completely addressed all of the challenges identified, they show the promise of FinTech solutions on complex problems like these.
+When appropriate, ask students to share examples. You should also share any relevant stories from your own experience. 
 
-Encourage students by reminding them that they will soon get to dig into these technologies in-depth during future classes!
+Wrap up the activity review by reminding students that while these solutions may not have completely addressed all of the challenges identified, they show the promise of FinTech solutions for complex problems like these.
+
+Encourage students by reminding them that they will soon get to dig into these technologies in future classes!
 
 ---
 
