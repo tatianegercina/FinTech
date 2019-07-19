@@ -272,7 +272,7 @@ In this section, give students a brief summary of some of the key factors leadin
 
 **File:** [Evolution of FinTech Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_3_22)
 
-Open the slideshow and go through the slides while reviewing the key historical factors leading to the present-day FinTech boom. (Slides 32–47)
+Open the slideshow and go through the slides while reviewing the key historical factors leading to the present-day FinTech boom. (Slides 32–46)
 
 * Mobile Infrastructure and Shifting Consumer Preferences
 
@@ -312,7 +312,9 @@ Answer any questions before moving on.
 
 This section will be a brief discussion of the positive impact that technology has had on the finance world. Then, we'll transition to the topic of specific FinTech domains in which traditional financial activities have been replaced with more efficient means due to technological innovations.
 
-Ask the students the following questions:
+**File:** [FinTech Domains Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_3_35)
+
+Open the slideshow and ask the students the following questions. (Slides 47–55)
 
 * What are some areas in the financial industry in which technology has disrupted traditional finance activities?
 
@@ -340,7 +342,7 @@ Then, end the discussion with the following points:
 
 ### 12. Student Do: FinTech Domains, Part 1 (25 min)
 
-In this activity, students will form groups of 2 or 3 to research and produce summaries of the various FinTech domains.
+In this activity, students will work in groups to research and answer questions about various FinTech domains.
 
 **File:** [README.md](Activities/03-Stu_FinTech_Domains_Part_I/README.md)
 
@@ -356,7 +358,7 @@ First, ask students the following questions:
 
 * Did you find anything notable or interesting while researching the FinTech domains?
 
-If students are confused or want more information, open the [optional slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360) and review the following FinTech domains and trends:
+If students are confused or want more information, open the [slides in the slideshow appendix](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360) and review the following FinTech domains and trends. (Slides 65–79)
 
 * Payments and Remittances
 * Robo Advisors and Personal Finance
