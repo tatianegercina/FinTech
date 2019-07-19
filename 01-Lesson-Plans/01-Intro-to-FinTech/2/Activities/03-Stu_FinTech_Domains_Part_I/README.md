@@ -1,8 +1,8 @@
-# FinTech Domains Part I
+# FinTech Domains, Part 1
 
-Times are changing! Now that you're familiar with some of the technological factors inducing change in the finance world as a whole, let's get a deeper sense of some of the backgrounds and impacts technology has had within each FinTech domain and how it has altered the use of previous, more traditional financial activities.
+Times are changing! Now that you're familiar with some of the technological factors that have led to change in the finance world as a whole, it's time to go deeper into how technology has affected FinTech domains specifically and altered traditional finance activities. 
 
-Form groups of 2-3 individuals and research the following FinTech domains:
+Working in groups of 2 or 3, research the following FinTech domains:
 
 * Payments and Remittances
 * Robo Advisors and Personal Finance
@@ -11,31 +11,25 @@ Form groups of 2-3 individuals and research the following FinTech domains:
 * InsurTech
 * Alternative Finance
 
-## Part I Instructions: Investigating FinTech Domains
+## Instructions: 
 
-Create a document containing the following:
+* Create a document containing the names and definitions of each FinTech domain.
 
-* The names and definitions of each FinTech domain.
+* Research each domain and use your findings to answer the following questions:
 
-Then, research each FinTech domain and try to answer the following questions:
+    * What does the particular FinTech domain do? What is it's purpose?
 
-* What does your particular FinTech domain do? What is it's purpose?
+    * What is the competitive landscape? Who are its main contenders?
 
-* What is the competitive landscape? Who are the main contenders?
+    * What are the main factors for change in the domain? How is the domain being disrupted by innovation?
 
-* What are the main factors for change in the domain? How is the domain being disrupted by innovation?
+    * What are the technologies used?
 
-* What are the technologies used?
-
-* What is the past/present/future growth?
-
-## Part II Instructions: Future FinTech Headlines
-
-You'll complete this in the next student activity! Get ready!
+    * What is its past, present, and future growth?
 
 ## Hint
 
-Feel free to use collaborative services like Google Docs to more efficiently work with your group members!
+Try using collaborative tools like Google Docs to work more efficiently with your group members. 
 
 ---
 
