@@ -1,28 +1,22 @@
-# FinTech Domains Part II
+# FinTech Domains, Part 2
 
-Now that you've gotten a deeper understanding of the FinTech landscape and its associated domains, it's time to think about how each FinTech domain might progress in the future given the respective trajectories.
+In this activity, you will build on the research you did in Part 1 and think more about the future of each FinTech domain, given their current trajectories. Working in the same groups, create headlines for each FinTech domain that one could expect to see in the news within the next five years. 
 
-Continue in your group of 2-3 individuals to brainstorm and produce headlines for the FinTech domains that one might expect to see in the news within the next 5 years.
+## Instructions
 
-## Part I Instructions: Investigating FinTech Domains
+Use your research and answers to the questions in Part 1 to produce news headlines for each FinTech domain that fit the following criteria:
 
-You completed this in the last activity, nice job!
+* Headlines should represent an event, outcome, or characteristic of each FinTech domain that could potentially occur within the next five years.
 
-## Part II Instructions: FinTech Headlines
+* Headlines might focus on the future event of a company, a sociopolitical outcome of the disruption in a specific FinTech domain, or a continuing FinTech trend.
 
-Use the document created from Part I and research your FinTech domain to produce news headlines that fit the following criteria:
+* Headlines should be supported by your research. 
 
-* Headlines should represent an event, outcome, or characteristic of each FinTech domain happening within the next 2-3 years.
-
-* Example headlines might be the future event of a specific company, a sociopolitical outcome as a result of the disruption involved within the respective FinTech domain, or a continuing FinTech trend.
-
-* Headlines should have at least minimal research to support the feasibility of the headline.
-
-Be prepared to participate in a class discussion!
+Be prepared to present your headlines and participate in a class discussion.
 
 ## Hint
 
-Remember to think about the current trends affecting each FinTech domain in order to extrapolate and devise a potential news headlines representing the environment of the next 5 years.
+As you brainstorm, think about the trends in each FinTech domain today, and how these current trends might affect the future of the FinTech landscape.
 
 ---
 
