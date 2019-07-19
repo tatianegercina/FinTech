@@ -1,6 +1,6 @@
 ## More Practice with Variables
 
-You will be getting more practice declaring, printing, and manipulating variables in this exercise.
+You will be getting more practice declaring, printing, and concatenating variables in this exercise.
 
 ## Instructions
 
@@ -18,52 +18,21 @@ Open the [starter file](Unsolved/variables-01.py) and perform the following:
 
     4. Assign a value of "Ada" to the variable `first_name`.
 
-Strings
+    5. Create a variable, `last_name`, and assign it a value of a string, "Lovelace"
 
-1. Create a variable named `subject` with no value (None).
+    6. Create a variable, `full_name`, and assign it a value of the combination of `first_name` and `last_name` with a space.
 
-2. 
+    7. Create a variable, `profession`, and assign it a value of a string, "Computer Programmer".
+  
+    8. Create a variable, `known_for`, and assign it a value of a string, "First Computer Programmer".
 
+    9. Create a variable, `first_algorithm`, and assign it a value of a string, "Analytical Engine".
 
+    10. Create a variable, `city_location`, and assign it a value of a string, "London";
 
-# Topic: Strings
+    11. Create a variable, `country_location`, and assign it a value of a string, "England";
 
-# Create a variable named subject with no value (None):
-subject = None
-
-# Assign a value of "Programmers" to the variable subject
-subject = "Programmers"
-
-# Create a variable, first_name, and assign it a value of an empty string.
-first_name = ""
-
-# Assign a value of "Ada" to the variable first_name
-first_name = "Ada"
-
-# Create a variable, last_name, and assign it a value of a string, "Lovelace".
-last_name = "Lovelace"
-
-# Create a variable, full_name, and assign it a value of the combination of first_name and last_name with a space.
-full_name = f"{first_name} {last_name}"
-
-# Create a variable, profession, and assign it a value of a string, "Computer Programmer".
-profession = "Computer Programmer"
-
-# Create a variable, known_for, and assign it a value of a string, "First Computer Programmer".
-known_for = "First Computer Programmer"
-
-# Create a variable, first_algorithm, and assign it a value of a string, "Analytical Engine".
-first_algorithm = "Analytical Engine"
-
-# Create a variable, city_location, and assign it a value of a string, "London";
-city_location = "London"
-
-# Create a variable, country_location, and assign it a value of a string, "England";
-country_location = "England"
-
-# Create a variable, nationality, and assign it a value of a string, "British";
-nationality = "British"
-
+    12. Create a variable, `nationality`, and assign it a value of a string, "British";
 
 # Topic: Integers
 
