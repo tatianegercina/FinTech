@@ -4,23 +4,23 @@ In this activity, you will read in the `sales.csv` file to calculate customer re
 
 ### Instructions
 
-Using the starter file, complete the following steps.
+Using the [starter file](Unsolved/sales_analysis_core.py), complete the following steps.
 
 1. Import the pathlib and CSV libraries.
 
-2. Set the `sales.csv` path. 
+2. Set the `sales.csv` path.
 
 3. Initialize a `records` list.
 
 4. Read and iterate over the `sales.csv` file using `csv.reader()`.
 
-5. Append a new column, average, to the header, and then add the header to the list of records. 
+5. Append a new column, average, to the header, and then add the header to the list of records.
 
-6. Set the `name`, `count`, and `revenue` variables and convert strings to ints for numerical calculations. 
+6. Set the `name`, `count`, and `revenue` variables and convert strings to ints for numerical calculations.
 
-7. Calculate the average, append the average to the row, and append the row to the list of records. 
+7. Calculate the average, append the average to the row, and append the row to the list of records.
 
-8. Write the list of records contained in `records` to an output CSV file. 
+8. Write the list of records contained in `records` to an output CSV file.
 
 9. Loop over every record in `records`, and use the `writerow()` function to write to an output CSV file.
 
@@ -59,29 +59,29 @@ Your output should look similar to the following:
   Sally,6,256,42.67
   ```
 
-### Challenge
+## Challenge
 
 Calculate the aggregate average for each unique customer name and output to a CSV file by completing the following steps:
 
-1. Initialize an `analysis` dictionary. 
+1. Initialize an `analysis` dictionary.
 
-2. Read and iterate over the `sales.csv` file using `csv.reader()`. Use an if-else statement to check:
+2. Read and iterate over the `sales.csv` file using `csv.reader()`. Use an if-else statement to check the following:
 
-  * If the customer name is not already in the `analysis` dictionary, initialize the nested key-value pairs `count` and `revenue`.
+    * If the customer name is not already in the `analysis` dictionary, initialize the nested key-value pairs `count` and `revenue`.
 
-  ```python
-  analysis[name] = {
-      "count": count,
-      "revenue": revenue
-  }
-  ```
+      ```python
+      analysis[name] = {
+          "count": count,
+          "revenue": revenue
+      }
+      ```
 
-  * Else the customer name is already in the `analysis` dictionary, cumulatively add the `count` and `revenue` nested key-value pairs.
+    * Else the customer name is already in the `analysis` dictionary, cumulatively add the `count` and `revenue` nested key-value pairs.
 
-  ```python
-  analysis[name]['count'] += count
-      analysis[name]['revenue'] += revenue
-  ```
+      ```python
+      analysis[name]['count'] += count
+          analysis[name]['revenue'] += revenue
+      ```
 
 3. Set the output file path for `aggregate.csv`.
 
@@ -109,7 +109,7 @@ Paul,5,399,79.8
 John,4,305,76.25
 ```
 
-### Hint
+## Hint
 
 Remember that the `csvwriter.writerow()` takes in lists!
 

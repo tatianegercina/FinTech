@@ -1,10 +1,10 @@
-## E-Commerce Traffic
+# E-Commerce Traffic
 
-In this activity, you will parse a text file. You will also sum the total number of customers and count of days in the text file to calculate the daily average of customer traffic for your e-commerce business. Assume each line is equal to a day's worth of customers. 
+In this activity, you will parse a text file. You will also sum the total number of customers and count of days in the text file to calculate the daily average of customer traffic for your e-commerce business. Assume each line is equal to a day's worth of customers.
 
-### Instructions
+## Instructions
 
-Using the starter file, complete the following steps.
+Using the [starter file](Unsolved/ecommerce_traffic.py), complete the following steps.
 
 1. Import the pathlib library.
 
@@ -22,7 +22,7 @@ Using the starter file, complete the following steps.
     The total and count of the numbers in the text file are 4945 and 100, respectively. The average is 49.45.
     ```
 
-### Hint
+## Hint
 
 You already know a lot of the concepts needed to complete this activity, like variables, for loops, and formatted strings. Just take it step by step; don't let file paths and reading and writing to/from a file throw you off!
 

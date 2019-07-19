@@ -1,14 +1,16 @@
-## Refresher Activity: Email Marketing
+# Refresher Activity: Email Marketing
 
-### Background
+In this activity, you will apply specific skills learned in the previous lessons to a financial use case.
+
+## Background
 
 A company's marketing department wants to understand the differences in purchasing activity among the firm's customers in order to create personalized email newsletters for each customer.
 
-Harold has been asked to categorize customers based on their sales revenue and assign a business tier: Platinum, Gold, Silver, or Bronze. Then, depending on the assigned business tier, he needs to generate a personalized message for each customer.
+Harold has been asked to categorize customers based on their sales revenue and assign a business tier: platinum, gold, silver, or bronze. Then, depending on the assigned business tier, he needs to generate a personalized message for each customer.
 
 Help Harold create a program that will achieve the marketing department's goals––and impress them!
 
-### Instructions
+## Instructions
 
 * Create a function named `create_phrase` that takes in `name` and `revenue` as parameters, and returns a dynamic greeting based on revenue conditionals:
 
