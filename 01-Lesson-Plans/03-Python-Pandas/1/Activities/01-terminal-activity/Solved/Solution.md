@@ -1,4 +1,4 @@
-# Getting familiar with the Terminal
+# Getting Familiar with the Terminal
 
 In this activity, we're going to be practicing a bit more with terminal commands.
 
