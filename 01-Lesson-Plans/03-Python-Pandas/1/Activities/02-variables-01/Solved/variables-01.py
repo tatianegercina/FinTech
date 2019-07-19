@@ -1,5 +1,3 @@
-placeholder
-
 #Variables
 # The nouns of programming
 
@@ -7,8 +5,8 @@ placeholder
 # meaning that any code or text commented out is ignored.
 
 """
-this is a multiline comment
-You can coment out many lines at once.
+this is a multi-line comment
+You can comment out many lines at once.
 For the most part you will see single line comments
 but it is good to see this.
 As in single line comments, any code contained within multi-line comments are not run -
@@ -17,23 +15,17 @@ meaning that any code commented out is ignored.
 
 #Topic: strings
 
-# Create a variable named subject with no value:
-# Example: hobby = None
-
+# Create a variable named subject with no value (None):
+subject = None
 
 # Assign a value of "Programmers" to the variable subject
-# Example: hobby = "problem solving"
-
-
+subject = "Programmers"
 
 # Create a variable, first_name, and assign it a value of an empty string.
-# Example: empty_string = ""
-
-
+first_name = ""
 
 # Assign a value of "Ada" to the variable first_name
-
-
+first_name = "Ada"
 
 # Create a variable, last_name, and assign it a value of a string, "Lovelace".
 
