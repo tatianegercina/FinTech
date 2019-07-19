@@ -1,38 +1,40 @@
-## Sugar, Flour, Butter!
+# Sugar, Flour, Butter!
 
-### Background
- 
- Mike needs to plan his grocery list so that he can buy the ingredients needed to make some delicious apple pie. Help Mike create and modify his list of groceries before he leaves for the supermarket. Then help him cross off items as he gathers the ingredients he needs.
+In this activity, you will work with lists to maintain a grocery list. You will create lists, append to lists, retrieve `n` items from a list, and retrieve values by indexes.
 
-### Instructions
+## Background
 
-Use the [starter-file](Unsolved/Core/grocery_list.py) to complete the following steps.
+Mike needs to plan his grocery list so that he can buy the ingredients needed to make some delicious apple pie. Help Mike create and modify his list of groceries before he leaves for the supermarket. Then help him cross off items as he gathers the ingredients he needs.
 
-* Create a grocery list for the apple pie ingredients: 
+## Instructions
 
-  * water
-  * butter
-  * eggs
-  * apples
-  * cinnamon
-  * sugar
-  * milk
+Use the [starter file](Unsolved/Core/grocery_list.py) to complete the following steps.
 
-* Find the first two items on Mike's grocery list.
+1. Create a grocery list for the apple pie ingredients:
 
-* Find the items except for the first two items on Mike's grocery list.
+    * Water
+    * Butter
+    * Eggs
+    * Apples
+    * Cinnamon
+    * Sugar
+    * Milk
 
-* Find every other item, starting from the second item, on Mike's grocery list.
+2. Find the first two items on Mike's grocery list.
 
-*  Add `flour` to the grocery list.
+3. Find the items _except_ for the first two items on Mike's grocery list.
 
-* Mike decides to be more specific with the types of apples needed, so change `apples` to `gala apples`.
+4. Find _every other_ item, starting from the second item, on Mike's grocery list.
 
-* Determine the total number of items on the grocery list.
+5. Add `flour` to the grocery list.
 
-### Challenge
+6. Change `apples` to `gala apples`. (Mike decides to be more specific with the types of apples needed.)
 
-Mike arrives at the supermarket and walks through the aisles to gather the items on the list. 
+7. Determine the total number of items on the grocery list.
+
+## Challenge
+
+Mike arrives at the supermarket and walks through the aisles to gather the items on the list. Help him with the following tasks.
 
 * Mike wants to find where `gala apples` is on his list. Find the index of `gala apples`.
 
