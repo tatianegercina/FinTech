@@ -40,6 +40,8 @@ By the end of this class, students will be able to:
 
 * Have your TAs keep track of the time with the [Time Tracker](TimeTracker.xlsx).
 
+* Please reference our [Student FAQ](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
+
 ---
 
 ### 1. Instructor Do: Welcome and Introduce Python (5 min)
