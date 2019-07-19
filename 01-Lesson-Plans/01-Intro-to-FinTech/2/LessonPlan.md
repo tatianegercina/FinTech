@@ -348,7 +348,7 @@ In this activity, students will form groups of 2 or 3 to research and produce su
 
 ### 13. Instructor Do: Review FinTech Domains, Part 1 (10 min)
 
-**File:** [FinTech Domains and Trends Slides (Optional)](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5dceb08bc3_21_0)
+**File:** [FinTech Domains and Trends Slides (Optional)](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360)
 
 First, ask students the following questions:
 
@@ -356,7 +356,7 @@ First, ask students the following questions:
 
 * Did you find anything notable or interesting while researching the FinTech domains?
 
-If students are confused or want more information, open the [optional slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5dceb08bc3_21_0) and review the following FinTech domains and trends:
+If students are confused or want more information, open the [optional slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360) and review the following FinTech domains and trends:
 
 * Payments and Remittances
 * Robo Advisors and Personal Finance
