@@ -1,963 +1,502 @@
-## 4.1 Lesson Plan - Meet Pandas
+## 4.1 Lesson Plan: Investing Like the Pros
 
 ---
 
 ### Overview
 
-Today's class will introduce students to a powerful analytics library called Pandas. Pandas is a software library designed specifically for data analytics and time series analysis, which are super useful features for quantitative analytics! Pandas is built in and runs in a Python environment. If Python was compared to a garage, Pandas would be the sleek Tesla parked inside. The owner can choose to leverage the speed, power, and efficiency of their Tesla and take it for a spin, or the owner could walk to their destination. While walking would produce the same result as using the Tesla, it would require extra labor and take more time. This lesson will teach students how skillfully utilize the sleek Tesla sitting in their garage, which will include teaching how to create and manipulate DataFrames, locate data with indexing, clean data, create basic data visualizations, and conduct quantitative analytics in order to automate financial tasks.
-
-Because Pandas provides useful features and functions for quantitative analytics, a good majority of financial and FinTech companies are using Pandas for everyday financial analysis. Pandas allows you to easily calculate daily returns over time, identify risk and standard deviation, calculate sharpe ratios, and compute correlations and betas. Pandas also provides functions that make data reading, cleaning, and consolidation a piece of cake. These features allow financial and FinTech companies to hit the ground running with development efforts. Lastly, Pandas is free, which goes a long way in the financial and FinTech.
+Today’s class will focus on analyzing the performance of groups of stocks, otherwise known as a portfolio of stocks. Stock portfolios are a key investment strategy, as they proportion capital among several stocks to minimize risk. In order to create an optimal portfolio that maximizes returns while minimizing risk, it’s necessary to analyze the average return and risk of the portfolio overall, as well as the correlations between stocks. In this lesson, students will learn how to analyze correlations between stocks, calculate rolling statistics and beta of stocks, optimize a portfolio, and compare portfolio performance.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Describe the benefits of Pandas over spreadsheets to manipulate data on financial use cases.
-* Explain what a DataFrame is and how it differs from a series.
-* Create DataFrames from CSV files and become confident using the basic commands to manipulate them.
-* Demonstrate the ability to clean data using the DataFrame built-in commands.
-* Manipulate data with confidence using DataFrame indexes.
-* Describe the basic theory and calculations of returns using Pandas.
-* Create basic data visualizations with Pandas built-in functions to present preliminary results.
+* Describe the benefits of investing in stock portfolios over a single stock.
+
+* Define correlation and explain how to calculate it in Pandas.
+
+* Visualize trends through rolling statistics that smooth datasets and minimize data noise.
+
+* Compare the volatility of a portfolio against the overall market (beta).
+
+* Calculate expected returns of a portfolio utilizing custom weights.
+
+* Build and optimize a portfolio by factoring in risk, correlation, and returns.
+
+* Compare a portfolio's performance to other portfolios.
 
 ### Instructor Notes
 
-* It might be confusing for students to understand why they are using Pandas when they just learned Python. A focus of the day will be to make sure students can see and understand the transition from talking about Python to talking about Pandas. Ensure Pandas is discussed from a Pythonic point of view: focus on the fact that Pandas is written in Python. It might be helpful to underscore that all Pandas is is lines of Python code that a user wrote for the purpose of financial analytics. Instead of hoarding their code in the depths of a hard drive, the creators packaged the functions up and made them available to the public.
+* This lesson brings the heat on two fronts: statistics and financial knowledge. Not all students have experience in these subjects, so be mindful of this during class discussions and demonstrations. Be clear in your lectures, present code and charts visually whenever possible, and draw from your industry experience.
 
-* While the lesson begins with technical concepts like reading in CSV files and checking for nulls, it eventually progresses to calculating daily and cumulative investment returns. Not all students will have the financial background to understand returns, so leverage the finance savvy students to help their partners when they get stuck. Make sure to pace the class so that finance conceptual questions can be asked and answered sufficiently.
+* Be aware that students may be confused about the differences between correlation and beta. Both attempt to measure relationships between variables; but whereas correlation measures the linear relationship between two variables, beta measures the unit-driven relationship between two variables (stock A returns vs. stock B returns). Be sure to explain these concepts clearly and allow time for students to ask questions.
 
-* The Data Cleaning activities focus on implementing common data cleaning strategies and is not all encompassing. There are additional methods that can be used to clean data. If there are some curious students who want to learn more, [feel free to slack out this link](https://www.kaggle.com/chrisbow/kernels?sortBy=relevance&group=everyone&search=Cleaning+data+with+Python&page=1&pageSize=20&userId=1541110) with some guides and challenges to learn more about data cleaning process using Python.
+* When explaining the notion of rolling statistics and how they benefit in identifying statistical trends, emphasize the comparison of the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
 
-* Each of the activities in this lesson are critical to future assignments and activities, so encourage students to practice these techniques after class to gain mastery. These skills will also be required to complete day-to-day tasks within the FinTech professional world.
+* When discussing portfolios and its characteristics––risk, return, correlation––explain the concepts in terms of money. For example, if you start with $10,000, how would a poorly optimized portfolio compare with one that is not?
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+* Have your TAs keep class on schedule with the [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
-### 1. Instructor Do: Welcome Class (5 mins)
+### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students to the first Pandas day and give students a brief history of Pandas, an overview of its advantages, and why its useful for FinTech professionals. Address the following as talking points.
+Introduce today's lesson and get students excited for what they are about to learn. Today is when they will truly leverage Pandas to create insightful financial analyses.
 
-* Pandas is currently one of the most powerful libraries on Python. Because of this, it is one of the most important superpowers students can have as FinTech professionals. Instead of re-inventing the wheel and writing their own code, students will be able to leverage Pandas' repository of functions.
+**File:** [Slideshow](placeholder)
 
-* History:
+Welcome students to the third day of Pandas! Open the slideshow and introduce the concepts that will be covered in today's class. Tell students the following:
 
-  * Pandas was created by Wes McKinney to offer a high performance and flexible tool for performing quantitative analysis on financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
+* In the previous two classes, we focused on Pandas basics and single-stock evaluation. Today, students will transition to analyzing groups of stocks (stock portfolios) to achieve the best risk-to-reward ratio for their investments.
 
-* Advantages:
+* The focus of this lesson is on using Pandas to make more informed––and better!––investments. Students will be learning and using techniques used by financial analysts, quantitative traders, and portfolio managers. This should feel exciting and invigorating!
 
-  * Pandas provides many advantages over Excel through it's data structures and built-in functions for analyzing data.
+* Students should be prepared to themselves mentally today, as they go from analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.
 
-  * Pandas doesn't require users to have to know formulas. Common financial calculations and formulas are made available to Pandas users as functions.
+* Get excited! Feel energized! Today is the day where students truly begin leveraging the power of Pandas to create truly insightful analyses that can benefit their skills in financial analysis and investing.
 
-  * Pandas offers functions that ensure data is clean and ready for analytic use.
+---
 
-  * Pandas functions range from simple arithmetic to complex statistics. This allows users to automate most, if not all, financial calculations. Instead of writing the formula in a cell or calculating by hand, users just need to make a function call (i.e. `pct_change` to calculate daily returns for an investment).
+### 2. Instructor Do: Introduction to Portfolios (5 min)
 
-Explain to students that they have already installed Pandas through Anaconda, so they don't need to install additional libraries by now. However, if they have issues running Pandas then they can use a free notebook by [Google Colab](https://colab.research.google.com/) and troubleshoot their installation with a TA during a break or office hours.
+Introduce stock portfolios using a discussion format to get students engaged in the topic.
 
-End the welcome activity with a review of the homework instructions. Get students excited about learning Pandas by previewing the skills and work they will accomplish by the end of the week. Place emphasis on calculating investment returns/profit over time, as well as plot visualizations.
+Ask students the following questions about portfolios and then explain the corresponding answers:
 
-- - -
+* What is an investment portfolio?
 
-### 2. Instructor Do: Why Pandas (5 mins)
+  **Answer:** An investment portfolio is the grouping of various financial assets such as equity, bonds, commodities, private investments, or the grouping of a single financial asset such as equity.
 
-Students spent an entire day learning Python, and now they are transitioning to learning Pandas. Students need to understand why they are learning Pandas and the relationship between Pandas and Python. In this activity, students will learn the features and advantages of using Pandas. They will also learn how using Pandas can alleviate some of the stressors and challenges presented by Excel.
+* What is a stock portfolio?
 
-**Files:**
+  **Answer:** A stock portfolio is an investment portfolio consisting of only equity. A stock portfolio consists of multiple stocks ranging from the 11 sectors of the equity market: financials, utilities, consumer discretionary, consumer staples, energy, healthcare, industrials, technology, telecom, materials, and real estate.
 
-* [Unit 4.1 Slides](https://docs.google.com/presentation/d/1OyHSaY2IlRT7ncexJgjimA7zulBWV67_Pr5XdS6kyYQ/edit?usp=sharing)
+* Why are stock portfolios better than single stock investments?
 
-Open the slides and start talking about how awesome spreadsheets are (slide 4).
+  **Answer:** Single stock investments are risky in that they represent the "all eggs in one basket" dilemma. If the performance of a single stock fails, then so does the entirety of one's investment (as it is tied only to that particular stock). However, by grouping multiple stocks together, the risk is minimized or spread throughout the portfolio; a single stock might fail, but others can continue to succeed.
 
-* Since spreadsheets appeared in [1969 when LANPAR was first used by the plant budgeting operations of AT&T](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed the finance and quants analysis forever; however as more data became available and complexity increased, not everything is what it used to be.
+* What is a stock market index?
 
-Open the discussion (slides 5 and 6) by questioning the class about the pain points they have suffered themselves while dealing the data using a spreadsheet. Possible questions and answers include:
+  **Answer:** Similar to a stock portfolio, a stock market index is a collection of stocks used to gauge the performance of a particular area within the stock market. For example, a popular stock market index is the S&P 500, a collection of 500 large market cap U.S. stocks that serve as a general health indicator of the overall U.S. stock market.
 
-* What are some of the disadvantages/annoying things about Excel?
+* Why do stock market indexes matter?
 
-  > "Microsoft Office is expensive."
+  **Answer:** Stock market indexes, like the S&P 500, serve as general health indicators for particular areas in the stock market. However, they also serve as benchmarks to compare performances of portfolios. For example, how does the performance of one's personal stock portfolio compare to that of the S&P 500 or general stock market?
 
-  > "Cell formulas can be difficult to edit."
+Ask if there are any questions before moving on.
 
-  > "Spreadsheets can only hold so much data, and the more data stored, the slower the workbook runs."
+---
 
-  > "Excel files always stop responding and are vulnerable to corruption."
+### 3. Instructor Do: Correlation (5 min)
 
-  > "Automation and custom function creation is not inherent. Macros and VBA have to be learned."
+This part of the lesson introduces students to the concept of correlation, or the positive or negative relationship between two variables. Two datasets have been chosen to showcase the example of correlation: ice cream sales and drowning incidents.
 
-* Ask students to give some horror stories about Excel. What type of disasters/challenges have they experienced while working in Excel?
+**File:** [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
 
-  > "Excel hogged so much memory entire laptop crashed."
+Open [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb). As you demo and show the plotted data, cover the following points:
 
-  > "Regional sales data for a sales competition was copied and pasted next to the wrong sales representatives. This resulted in the wrong person being identified as the winner."
+* **Correlation** is the measure of a positive, negative, or neutral (random) relationship between two variables. For example, there is often a positive correlation between height and weight; that is, as you grow in height, you tend to weigh more.
 
-  > "The excel formula in a monthly budget spreadsheet to calculate the remaining balance in a checking account did not include the entire cell range necessary for the calculation, which resulted in the account having a negative balance."
+* When comparing the line trend of ice cream sales to drowning incidents, it is difficult to detect a relationship between the two. Therefore, use a scatterplot and set the _x_ and _y_ axes to the corresponding DataFrame columns. With a scatterplot, the relationship becomes more apparent.
 
-If there is time, you can end the discussion by presenting the following Pandas applications [discussed here](https://data-flair.training/blogs/applications-of-pandas/) to give students a taste of what to expect in the field. Applications to highlight include:
+  ![line-chart](Images/line-chart.png)
+  ![scatterplot](Images/scatterplot.png)
 
-* Stock Prediction
+* Use the `corr` function to calculate and output a matrix of correlation values for each column-to-column pair of a DataFrame. Correlation values range from -1 to 0 to +1.
 
-* Analytics
+  * -1 indicates a negative relationship: variables move inversely to one another.
 
-* Data Science
+  * 0 indicates a neutral relationship: variables have no relationship and move randomly.
 
-Slack out the above link to students so they can review the other applications on their own time.
+  * +1 indicates a positive relationship: variables move in tandem with one another.
 
-- - -
+  ![correlation.png](Images/correlation.png)
 
-### 3. Instructor Do: Reading CSVs (10 mins)
+* The `heatmap` function from the `seaborn` library color-codes the different variations in a correlation table. This is particularly useful when there are many variables in a correlation table.
 
-The goal of this activity is for students to learn how to read CSV files into Pandas. Financial data is commonly converted from other formats (i.e. Excel XLS) into CSV so that it can be manipulated by programs like Pandas. Learning how to read CSV data into Pandas is the first necessary step in getting students started with creating automated analytics pipelines.
+  ![correlation_seaborn.png](Images/correlation-seaborn.png)
 
-**Files:**
+* Remember that correlation does not imply causation!
 
-* [reading_csvs.ipynb](Activities/01-Ins_Reading_CSVs/Solved/reading_csvs.ipynb)
+  * Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents`, this does not mean that buying more ice cream causes people to drown; it simply means that there is a positive relationship between the numbers.
 
-* [sales.csv](Activities/01-Ins_Reading_CSVs/Resources/sales.csv)
+  * Chances are there is another factor at play that results in this positive correlation. One possible factor is that as temperature increases (during the summer months), people tend to both eat more ice cream and go swimming.
 
-* [sales_no_header.csv](Activities/01-Ins_Reading_CSVs/Resources/sales_no_header.csv)
+* **Regression analysis** should be used to predict causation, i.e., how _x_ predicts _y_.
 
-* A Pandas DataFrame can be created in several ways such as using a python dictionary, a list of lists, or reding data from an external file like CSV or JSON. Slack out the [Pandas DataFrame documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) as well this [getting started guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) for students to use as a reference.
+* How do these concepts apply to stock investments?
 
-* Comma-separated values (CSV) is one of the most common file formats used to share data on finance, so students will start working with DataFrames by creating them reading data from CSV files.
+  * Investigating the correlations of returns among stocks in a portfolio can help analysts properly diversify their portfolios and mitigate risk/volatility.
 
-Start by opening the two CSV files in the Resources directory to show students the format of the data. Point out that one file has a header while the other does not. Refer back to these files during the demo as needed.
+  * This is due to the fact that non-correlated stocks in a portfolio tend to cancel out large swings in volatility; one stock may increase in price while another may decrease in price, rather than all stocks increasing in price or all stocks decreasing in price.
 
-Next, open the `reading_csvs.ipynb` file, and walkthrough the following aspects of the code. Highlight the following in sequential order.
+Ask if there are any questions before moving on.
 
-* First, emphasize how to import `Pandas`. In order to use `Pandas`, the `Pandas` library has to be imported. Pandas is commonly aliased as `pd` at this time. The `Path` class is also imported from the [`pathlib` module](https://docs.python.org/3/library/pathlib.html) in order to deal with file paths across all operating systems without complexity.
+---
 
-  ```python
-  import pandas as pd
-  from pathlib import Path
-  ```
+### 4. Student Do: Diversification (15 min)
 
-* Then, bring attention to the `read_csv` function. The `read_csv` function allows users to read a CSV file into a DataFrame. The function usually just needs the path to the file, that in this it's defined using the `Path` class.
+In this activity, students will apply the concept of correlation to diversify a portfolio, a practical financial use case. In order to create a diversified portfolio that tends to minimize long-term volatility/risk, stocks within the portfolio should be as non-correlated as possible. Students need to find the stock with returns that are least correlated to the returns of stocks in an existing portfolio.
 
-  ```python
-  csvpath = Path("../Resources/sales.csv")
-  sales_dataframe = pd.read_csv(csvpath)
-  sales_dataframe.head()
-  ```
+**File:** [market_analysis.ipynb](Activities/02-Stu_Correlation/Unsolved/diversification.ipynb)
 
-* The third aspect of the code to highlight is the `head` function. The `head` function will show the first 5 rows of the data by default. This is a very common function used to take a peek at the DataFrame to make sure that everything loaded correctly.
+**Instructions:** [README.md](Activities/02-Stu_Correlation/README.md)
 
-  ![dataframe.png](Images/dataframe.png)
+### 5. Instructor Do: Review Diversification (5 min)
 
-* Now underscore the `header` parameter for `read_csv`. The `header=None` parameter tells `Pandas` not to use the first row as the header. Because no header is specified, the column index numbers are used instead.
+In this section, you will review the solution to the Diversification activity with students.
 
-  ![header-none.png](Images/header-none.png)
+**File:** [diversification.ipynb](Activities/02-Stu_Correlation/Solved/diversification.ipynb)
 
-* New headers can be supplied by assigning a new list of column names to the columns attribute.
+Open the solution file, [diversification.ipynb](Activities/02-Stu_Correlation/Solved/diversification.ipynb), and explain the following:
 
-  ![header-columns.png](Images/header-columns.png)
+* Diversification of stock portfolios is an important strategy in the realm of investing as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma. Therefore, it is necessary to not only analyze the average return and risk of the portfolio overall, but also the correlation between stocks as well (how much one stock price changes with or against another).
 
-* It is common to generate high level statistics when creating a DataFrame. The Pandas `describe` function can be used. The output of the function is summary statistics for numeric fields, including Series counts, averages, min value, max value, etc. A limitation of the `describe` function is that it only calculates summary statistics for numeric values columns.
+* The `corr` function compares values from each column-to-column pair. Therefore, make sure that the DataFrame is properly formatted on a column-by-column basis for analysis.
 
-  ![describe_summary.png](Images/describe_summary.png)
+  ![formatted-dataframe](Images/formatted-dataframe.png)
 
-Visit the Pandas documentation for the [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) function and show the many options available in the function signature. Explain that while the most common scenario is to simply provide the path to the file, Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files.
+* When viewing a correlation table with many variables present, it's difficult to distinguish lower values from higher values. Using the `heatmap` function from the `seaborn` library makes it easier to discern differences by using color gradients.
 
-Be sure to point out the parameters associated with the filepath and the header that was used in the demo code.
+  ![correlation-table](Images/correlation-table.png)
 
-Congratulate students on reading their first CSV file into Pandas! This is an exciting moment because students can now harness the power of Pandas to work with tabular data!
+  ![correlation-heatmap](Images/correlation-heatmap.png)
 
-- - -
+* Use the `vmin` and `vmax` parameters with the `heatmap` function to modify the scale of the heatmap. Correlation values range from `-1` to `0` to `+1` therefore the scale of the heatmap will need to reflect accordingly.
 
-### 4. Student Do: Reading Stock Data from a CSV File (10 mins)
+  ![correlation-heatmap-scaled](Images/correlation-heatmap-scaled.png)
 
-In this activity, students will get hands-on experience reading in CSV files into Pandas. This will include using the `read_csv` function, sampling data with the `head` function, and creating DataFrames with specified column names.
+* Look at the heatmap and cross reference the correlation table. It would appear as though AMD stock appears to be the least correlated of the semiconductor stocks. Therefore, AMD stock would be the best semiconductor stock to add to the existing portfolio.
 
-**Files:**
+  ![correlation-heatmap-focus](Images/correlation-heatmap-focus.png)
 
-* [reading_stock_data.ipynb](Activities/02-Stu_Reading_CSVs/Unsolved/reading_stock_data.ipynb)
+  ![correlation-table-focus](Images/correlation-table-focus.png)
 
-* [amd_stock_data.csv](Activities/02-Stu_Reading_CSVs/Resources/amd_stock_data.csv)
+Ask if there are any questions before moving on.
+
+---
+
+### 6. Instructor Do: Rolling Statistics (10 min)
+
+This section focuses on the concept of rolling statistics, in which a series of a particular metric is calculated over a shifting window of time. Rolling statistics help view the change or progression of a particular metric over time and therefore aid in identifying statistical trends.
+
+**File:** [rolling_statistics.ipynb](Activities/03-Ins_Rolling_Statistics/Solved/rolling_statistics.ipynb)
+
+Walk through the solution and explain the following:
+
+* A **rolling statistic** is a metric calculated over the range of a shifting, or rolling, window. For example, a 7-day rolling mean of 14 days' worth of closing prices for a stock would calculate the mean of the closing prices for days 1-7, and then days 2-8, and then days 3-9, and so on.
+
+* Some commonly used rolling statistics are rolling averages, otherwise known as simple moving averages (SMAs), and rolling standard deviations.
+
+* Rolling statistics help to show the progression or change of a particular metric over time. For example, calculating the average closing price of 1 year's worth of stock data will output a single metric, the average closing price for the year. On the contrary, a rolling 7-day mean will give you the change in weekly average closing prices over the course of the year.
+
+* Rolling statistics tend to smooth out the trend of the initial dataset, allowing for more general or holistic analysis of a dataset rather than focusing on every twist and turn of the data. Overlaying a rolling statistic trend on top of the original data trend makes this feature easier to spot.
+
+  ![rolling-statistic-overlay](Images/rolling-statistic-overlay.png)
+
+* Rolling statistics factor in the progression of time. Therefore, a rolling 7-day window makes sense when looking at a short-term weekly investment scope. However, if investing for the long term, a rolling 180-day window might make more sense.
+
+* Comparing different scopes of time can sometimes reveal insights that would not have been found otherwise.
+
+  * For example, consider the 30-day rolling standard deviation as compared to the 180-day standard deviation of TSLA stock.
+
+  * Although on a monthly scale there was a spike in volatility in late 2018, over a 6-month period, the highest spike in volatility was in late 2016 when the stock skyrocketed.
+
+  **Note:** Remember that standard deviation/volatility is how far data points deviate from the mean; this does not necessarily need to be negative.
+
+  ![daily-close-tsla](Images/daily-close-tsla.png)
+
+  ![rolling-std-dev-30](Images/rolling-std-dev-30.png)
+
+  ![rolling-std-dev-180](Images/rolling-std-dev-180.png)
+
+---
+
+### 7. Students Do: Simple Moving Averages (15 mins)
+
+In this activity, students will calculate multiple windows of rolling statistics such as moving averages and rolling standard deviations in order to identify trends in average price and volatility/risk that can provide insight to the investment decisions of a particular stock.
 
 **Instructions:**
 
-* [README.md](Activities/02-Stu_Reading_CSVs/README.md)
+In this activity, students will calculate multiple windows of rolling statistics such as moving averages and rolling standard deviations. The goal is to identify trends in average price and volatility/risk in order to make the smartest investment decision.
 
-- - -
+**File:** [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
 
-### 5. Instructor Do: Review Reading CSVs (5 mins)
+**Instructions:** [README.md](Activities/04-Stu_Rolling_Statistics/README.md)
 
-**Files:**
+### 8. Instructor Do: Review Simple Moving Averages (5 min)
 
-* [reading_stock_data.ipynb](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb)
+In this section, review the solution to the previous activity, Simple Moving Averages.
 
-Start by explaining that a DataFrame is a special data structure in Pandas that is designed to work with tabular data (data that has rows and columns like a spreadsheet). A Pandas DataFrame also provides some useful functions to help analyze and manipulate the tabular data.
+**File:** [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb)
 
-Open the [starter-file](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb), and discuss the following discussion points for review:
+Open the solution file, [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb), and explain the following:
 
-* In order to use Pandas, the `Pandas` module has to be imported into the Python environment.
+* The `rolling` function and the `window` parameter set the time window for the calculated metric, which in this case is the average or mean.
 
-  ```python
-  import pandas as pd
-  from pathlib import Path
-  ```
+  ![rolling-mean-calculation](Images/rolling-mean-calculation.png)
 
-* A DataFrame can be created from a CSV file with the `read_csv`. This example uses a `Path` object to specify the location of the CSV file. Pandas can then read that file and create a DataFrame to hold the data.
+* Notice that the last 19 datetime indexes contain NaN values. This is because the `window` parameter has been set to `20`; therefore, the last 19 indexes do not have enough data to support the 20-day window.
 
-![Relative file path to CSV file](Images/05_relative_file_path.png)
+  ![not-enough-window-data](Images/not-enough-window-data.png)
 
-* The `head` function can be used to output the first `n` number of lines from a DataFrame. It is common for a sample of a DataFrame to be output to make sure that headers and rows were imported correctly.
+* When overlaying the plot of daily closing prices for NFLX with its simple moving averages, you can see the ways in which larger rolling time windows smooth data and show general trends, as opposed to smaller rolling time windows that showcase more volatility.
 
-![First record as columns names](Images/05_first_record_as_columns_names.png)
+  ![sma-overlay](Images/sma-overlay.png)
 
-* The `header=None` parameter can be specified to prevent the first row of data from being used as column names when there is no header provided. Once the `header` is set to `None`, the `df.columns` function can be used to assign column names.
+* When overlaying the plot of daily closing prices for NFLX with its rolling standard deviations (rolling STDs), you can see the differences in volatility for different time periods.
 
-![Setting new columns names](Images/05_set_columns_names.png)
+  ![std-overlay](Images/std-overlay.png)
 
-Ask for any remaining questions before moving on.
+* Because the company is looking to invest long term in NFLX, the `SMA100` and `STD100` should hold more emphasis. Based on the chart overlays, although there is a recent price uptrend in late 2018, long-term volatility has been high for the entirety of 2018 to 2019. Therefore, it may be best to hold off on investing in NFLX long term for now.
 
-- - -
+Ask if there are any questions before moving on.
 
-### 6. Instructor Do: Column Manipulation (10 mins)
+### 9. Instructor Do: Beta (10 min)
 
-Reading CSV data into Pandas is an easy feat, but sometimes the DataFrame's schema/structure needs to change. This includes changing DataFrame column names, adding columns, and dropping columns. Students will learn how to use the various Pandas functions to perform each of these operations. It's important that students know how to create and curate DataFrames to their needs.
+In this activity, students will be introduced to the concept of beta and how it is used to determine the relative *unit-driven* performance of one variable to another. For example calculating the beta value of a stock's returns relative to the returns of the overall market.
 
-**Files:**
+**File:** [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb)
 
-* [column_manipulation.ipynb](Activities/03-Ins_Columns/Solved/column_manipulation.ipynb)
+Open [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb). As you walk through the demo, explain the following.
 
-In the previous activity, students created a Pandas DataFrame from a CSV file and assigned column names to the DataFrame. This was one example of column manipulation. There are also other ways to manipulate columns. This demonstration will cover the common techniques used to do so.
+* What is covariance?
 
-Demonstrate the fundamentals of column manipulation in Pandas:
+  * **Covariance** is a measure of the directional relationship between two variables. For example, the covariances between two financial assets such as stock returns would imply that both stock returns would move together with a positive covariance, and move inversely with a negative covariance.
 
-* Pandas DataFrames have a `columns` attribute that shows the current column names.
+  ![covariance.png](Images/covariance.png)
 
-  ![column-names.png](Images/column-names.png)
+* What is variance?
 
-* The `columns` attribute can be assigned a new list of column values. This has certain restrictions such as the list of column names must match the number of columns in the DataFrame (no partial lists). This is valuable whenever column names need to be changed.
+  * **Variance** is the measurement of how far numbers in a dataset are spread about their mean. For example, let's say stock A has an average price of $50, but varies in price as low as $5 and as high as $90. However, stock B averages $50, but varies in price as low as $40 and as high as $60. Stock A has a higher variance than stock B.
 
-  ![replace-columns.png](Images/replace-columns.png)
+  ![variance.png](Images/variance.png)
 
-* In order to replace or update selective column names, the `rename` function can be used. Simply provide a dictionary to the columns parameter that has the following format:
+* What is the difference between covariance and variance?
 
-  ```python
-  {
-    "Old Column Name": "New Column Name"
-  }
-  ```
+  **Answer:** Covariance is a measure of correlation. Correlation describes the directional relationship between two variables in a unit-free manner, while covariance describes the directional relationship between two variables with consideration for the type of data used (in this case, daily return values).
 
-  ![rename-columns.png](Images/rename-columns.png)
+* How does covariance/variance relate to Beta?
 
-* Columns can also be reordered by supplying a list of columns in the desired order.
+  * **Beta** uses covariance and variance to calculate the relative volatility of an individual stock's returns in comparison to the volatility of the overall market's returns.
 
-  ![reorder-columns.png](Images/reorder-columns.png)
+  ![beta.png](Images/beta.png)
 
-* New columns can be created by assigning a Pandas Series to a new Column name. This is similar to how dictionaries add values for new keys.
+* What is the difference between beta and correlation?
 
-  ![create-columns.png](Images/create-columns.png)
+  * Beta measures the impact of one variable on another variable. Correlations measure the possible frequency of similarly directional movements without consideration for cause and effect.
 
-* Sometimes, columns may need to be split into separate values. Pandas allows you to split a column based on a delimiter. In this case, the values are split by the whitespace between the names. The `expand=True` flag tells Pandas to create two new columns from the split. These columns can be assigned to new column names in the DataFrame.
+  * Beta is the slope of the two variables. Correlation is the strength of that linear relationship.
 
-  ![split-columns.png](Images/split-columns.png)
+  ![beta-vs-correlation.png](Images/beta-vs-correlation.png)
 
-* Finally, columns that are no longer needed can be dropped using the `drop` function. Simply supply a list of the columns that should be dropped from the DataFrame.
+* A good practice is to plot the progression of beta values for a stock over time using rolling windows to see its historical volatility relative to the market.
 
-  ![customer-drop-columns.png](Images/customer-drop-columns.png)
+  ![rolling-beta.png](Images/rolling-beta.png)
 
-Slack the solution file to students to use as a reference.
+Ask if there are any questions before moving on.
 
-Now that students have created, split, re-named, and dropped columns, they can move onto the next step of data wrangling: data cleaning.
+---
 
-- - -
+### 10. Student Do: Beta Comparisons (15 min)
 
-### 7. Instructor Do: Data Cleaning (10 mins)
+In this activity, students will apply their knowledge of rolling statistics and beta to plot the 30-day rolling betas of a group of stocks. The goal is to determine the most conservative stock choice, or the stock with the lowest beta.
 
-In this activity, students will take part in a lecture and discussion about data cleaning. Students will learn what data cleaning is and why it is necessary, as well as common strategies for cleaning data. This module will be critical to students. Most of the data students will come across in the real world will be dirty and unusable.
+**File:** [beta_comparisons.ipynb](Activities/06-Stu_Beta/Unsolved/beta_comparisons.ipynb)
 
-**Files:**
+**Instructions:** [README.md](Activities/06-Stu_Beta/README.md)
 
-* [Data Cleaning Slides]()
+### 11. Instructor Do: Review Beta Comparisons (5 min)
 
-* [data_cleaning.ipynb](Activities/04-Ins_Data_Cleaning/Solved/data_cleaning.ipynb)
+In this section, review the solutuon to the previous activity, Beta Comparisons.
 
-Up to this point, students have been working with clean data already curated for use. But in the real world, data is messy and needs to be cleaned and prepared in order for it to be valuable. This process is called "data cleaning."
+**File:** [beta_comparisons.ipynb](Activities/06-Stu_Beta/Solved/beta_comparisons.ipynb)
 
-Data cleaning is comprised of 3 parts:
+Open the solution file, [beta_comparisons.ipynb](Activities/06-Stu_Beta/Solved/beta_comparisons.ipynb), and explain the following:
 
-* Data exploration
+* Combine the DataFrames for each social media stock and the S&P 500 into a single DataFrame. This makes it easier to calculate the daily returns for each stock; simply call the `pct_change` function on the combined DataFrame.
 
-* Data quality checks
+  ![combined-dataframe](Images/combined-dataframe.png)
 
-* Data cleaning strategies
+* The covariance quantifies the linear relationship between each social media stock's returns and the returns of the overall market.
 
-This module will demonstrate each of these facets to ensure students can confidently clean and prep data for analytical use.
+  ![social-media-covariance](Images/social-media-covariance.png)
 
-Navigate to the Unit 4.1 slides, and introduce Data cleaning with the below discussion point:
+* The variance quantifies the extent to which each data point tends to differ from the mean. In this case, variance describes the extent to which each daily return tends to differ from the overall average daily returns of the S&P 500.
 
-* Data cleaning is critical to financial analytics. Data quality issues create a need for data cleaning. Data quality issues compromise the integrity or "health" of a dataset. The goal of data cleaning is to keep the "plumbing" of data pipelines clean and in working condition so that analytics can run smoothly.
+  ![sp500-variance](Images/sp500-variance.png)
 
-Discuss how data quality is determined. Most data quality rules are influenced by general coding etiquette (i.e. using correct data types, minimizing use of nulls, etc.) and general data requirements (i.e. strings are characters and numerics are numbers). However, many companies create their own data governance rules and policies that dictate what makes each data element complete, consistent, valid, and accurate.
+* The beta quantifies the relative volatility of each social media stock's returns to that of the overall market. For example, if the S&P 500 returns 10% for the year, `TWTR` with a beta of 1.52 should expect to return approximately 15.2% for the year.
 
-* The rules that govern data cleaning are defined by industry accepted standards. For example, a general data quality rule is that numerical fields should not contain string characters, only digits. Another industry-wide data quality rule is that there should not be any duplicate rows in a dataset. These rules are based off of various data storage design theories and best practices, all of which can be researched by students outside of class.
+  ![social-media-beta](Images/social-media-beta.png)
 
-* Data quality rules are also defined by business or functional rules. Sometimes data needs to be stored or formatted in a unique way for business needs. For example, an international company might store dates as `DD/MM/YYY`, where as an American company might store dates as `MM/DD/YYYY`.
+* Plotting multiple rolling beta values for each social media stock shows the progression of relative volatility to the market over time.
 
-Ask students to propose some explanations of how data becomes dirty. Highlight some of the examples provided by students, and bring attention to the implications/impact of typos, human error, and poor data management if students do not propose these.
+  ![rolling-social-media-beta](Images/rolling-social-media-beta.png)
 
-* When manually entering data, users can enter typos. If gone unchecked, typos can corrupt data values. There is little to be done to get rid of typos as it is difficult to identify a typo.
+* Based on the overall beta calculations and the plotted chart, it is evident that `SNAP` holds the lowest beta, or relative volatility to the market. Interestingly enough, however, while `FB` and `TWTR` took a steep plunge in early 2019, `SNAP` rose dramatically.
 
-* Humans can copy and manipulate data incorrectly. Someone can copy and paste data into the wrong Excel files. A Python function could also incorrectly compute a data value. If these issues are not fixed, data quality issues will arise down the road.
+Ask if there are any questions before moving on.
 
-* Poor data management includes not cleaning or storing data in an effective way. While not all data needs to be cleaned, industry standards and business rules should be consistently implemented in order to ensure the integrity of data.
+---
 
-Discuss approaches for identifying data quality issues. Live code a few examples.
+### 12. Instructor Do: Portfolio Returns (10 min)
 
-* The first step to assessing data for quality issues is to take a sample of the data in order to assess it visually. This view of the data allows programmers to identify obvious data quality issues, as well as identify any skewed rows (i.e. a customer address in a first name field).
+This section focuses on calculating returns for a group of stocks, or stock portfolios. Students should understand that portfolios of stocks are used by investors to manage and diversify risk. Defining a portfolio with varying capital allocations of stocks allows an investor to control and adjust their risk.
 
-  ```python
-  # Read in data file Take sample of data
-  csv_path = Path("order_data.csv")
-  csv_data = pd.read_csv(csv_path, index_col="order_no")
-  csv_data.sample(5)
-  ```
+**File:** [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.py)
 
-  ![LP_Ins_Data_Cleansing_Sample_Data.PNG](Images/LP_Ins_Data_Cleansing_Sample_Data.PNG)
+Open [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.py) to review the solution. Cover the following points as you walk through the solved file.
 
-* The `dtypes` function can be used to return the data type of each Series/column. It is always key to review data types after loading data into a DataFrame as Pandas automatically assigns a data type to a Series. There are instances where Pandas is unable to infer the data type. The students will need to be aware of when this happens so that they can assign the proper data type.
+* To calculate portfolio returns, each stock's closing prices are added as a column to the final portfolio DataFrame.
 
-  ```python
-  # Retrieving DataFrame data types
-  csv_data.dtypes
-  ```
+  ![portfolio-dataframe.png](Images/portfolio-dataframe.png)
 
-  ![LP_Ins_Data_Cleansing_Data_Types.PNG](Images/LP_Ins_Data_Cleansing_Data_Types.PNG)
+* Portfolio daily returns are first calculated individually with `pct_change`. The total portfolio return is calculated using the weighted average (how much of each stock contributes to the total portfolio).
 
-* Record counts should always be reviewed to ensure the expected number of rows matches the actual. The total number of records can be identified by using the `count` function. The `count` function counts the number of non-null cells for each column or row in a Pandas DataFrame.
+  ![portfolio-returns.png](Images/portfolio-returns.png)
 
-    ```python
-    # Identifying Series count
-    csv_data.count()
-    ```
+* The portfolio returns can also be calculated using a dot product, which is just a shortcut for the previous calculation. This can be handy for large portfolios with a lot of weights.
 
-    ![LP_Ins_Data_Cleansing_Count.PNG](Images/LP_Ins_Data_Cleansing_Count.PNG)
+  ![dot-product.png](Images/dot-product.png)
 
-  Ask the students the following question:
+* The purpose of a portfolio is to control the amount of risk and diversity in an investment. In the following example, AMD has more volatility than MU, so changing the weights of the portfolios (how much of each stock in invested in) may affect the returns.
 
-  * Why do you think there are unequal counts in the data?
+  ![risk-management.png](Images/risk-management.png)
 
-    > "Nulls and missing data"
+Ask if there are any questions before moving on.
 
-* Similarly, the quality of data can be assessed by using the `value_counts` function, which is a function that identifies the number of times a value occurs in a Series. `Value_counts` will reveal how many times a value occurs in a Series, with the most occurring value first.
+### 13. Student Do: Portfolio Planner, Part 1 (20 min)
 
-    ```python
-    # Identifying frequency values
-    csv_data['customer_no'].value_counts()
-    ```
+In this activity, students will work in pairs to research a group of 10 stocks, find the least to most volatile stocks, drop the top 5 highly volatile stocks, set portfolio weights to the remaining stocks according to risk profile, and perform an analysis of a `$10,000` investment in the portfolio over time.
 
-    ![LP_Ins_Data_Cleansing_Distinct_Customer.PNG](Images/LP_Ins_Data_Cleansing_Distinct_Customer.PNG)
+**File:** [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Unsolved/portfolio_planner_part_1.ipynb)
 
-* Identifying `nulls` is key to assessing data quality health. Pandas offers a native function `isnull()` that can be used to identify missing values in a field, Python `None`. The `isnull()` function identifies which column values are nulls and which ones are not. If a column value is null, `isnull()` returns `True`. If the value is not null, `isnull` returns `False`.
+**Instructions:** [README.md](Activities/08-Stu_Portfolio_Planner_Part_I/README.md)
 
-    ```python
-    # Checking for null
-    csv_data.isnull()
-    ```
+### 14. Instructor Do: Review Portfolio Planner, Part 1 (10 min)
 
-    ![LP_Ins_Data_Cleansing_CSV_Isnull.png](Images/LP_Ins_Data_Cleansing_CSV_Isnull.png)
+In this section, review the solution to the previous activity, Portfolio Planner, Part 1.
 
-* Assessing the percentage of nulls for the entire DataFrame is also valuable, especially when it comes to determining what should be done with the nulls in a DataFrame. The percentage of nulls will influence the course of action for cleaning nulls: i.e. dropping the nulls or leaving them alone.
+**File:** [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Solved/portfolio_planner_part_1.ipynb)
 
-    ```python
-    # Checking for percentage of null
-    csv_data.isnull().mean() * 100
-    ```
+Open the solution, [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Solved/portfolio_planner_part_1.ipynb), and explain the following:
 
-    ![LP_Ins_Data_Cleansing_Null_Pct_Check.PNG](Images/LP_Ins_Data_Cleansing_Null_Pct_Check.PNG)
+* When dealing with datetime indexes, make sure to sort the DataFrame by index in ascending order, so as to arrange the dates chronologically from past to present. This is particularly important when employing time-series functions such as `pct_change`.
 
-* Another method of determining how many nulls are in the DataFrame is to calculate the sum of all nulls.
+  ![portfolio-planner-part-1-combine-sort-df](Images/portfolio-planner-part-1-combine-sort-df.png)
 
-    ```python
-    # Checking for number of nulls
-    csv_data.isnull().sum()
-    ```
+* Annualized volatility is calculated by multiplying standard deviation by the square root of the number of trading days in a year (252 days). Using the `sort_values` function quickly sorts each stock from least volatile to most volatile.
 
-    ![LP_Ins_Data_Cleansing_No_Of_Null.PNG](Images/LP_Ins_Data_Cleansing_No_Of_Null.PNG)
+  ![assess-riskiness](Images/assess-riskiness.png)
 
-* Nulls can be cleaned by replacing them with a default value (i.e. "Unknown", 0, or mean()), which is exactly what the Pandas `fillna` does! `Fillna` will replace every instance of null with the provided default value. For this reason, the function should be executed against a Series.
+* Portfolio weights represent the percentage of allocated capital to each stock. For example, a weight of 0.5 indicates that a single stock will be allocated 50% of the capital within the portfolio. The sum of the weights should always equal 1.
 
-    ```python
-    # Cleanse nulls from DataFrame by filling na
-    csv_data['customer_no'] = csv_data['customer_no'].fillna("Unknown")
-    csv_data
-    ```
+* The `dot` function multiplies the weights by the daily return of each column (4 weights, 4 stocks) and sums the total for each row.
 
-    ![LP_Ins_Data_Cleansing_Fill_Na.png](Images/LP_Ins_Data_Cleansing_Fill_Na.png)
+  ![portfolio-planner-part-1-weights](Images/portfolio-planner-part-1-weights.png)
 
-* Once nulls have been identified through a data quality process, a decision can be made to either drop the nulls or leave them. To drop all null values, the `dropna` Pandas function can be used. Providing `inplace=True` as an argument will ensure the `dropna` function does not make a copy of the DataFrame but rather performs the operation on the original.
+* Cumulative returns indicate the total return profit or loss from a percentage standpoint. Multiplying an initial investment of $10,000 by the series of cumulative returns outputs a trend over time of cumulative profit or loss.
 
-    ```python
-    # Cleaning nulls from DataFrame by dropping
-    csv_data.dropna(inplace=True)
-    csv_data
-    ```
+  ![portfolio-planner-cumulative-returns](Images/portfolio-planner-cumulative-returns.png)
 
-* It is best practice to combine the `isnull` function with the `sum` function to test the `dropna` function. This serves as a unit test of the `dropna` function. The expectation is there should be a count of 0 nulls for each Series.
+  ![plot-cumulative-profit-loss](Images/plot-cumulative-profit-loss.png)
 
-  ```python
-  csv_data_cleaned.isnull().sum()
-  ```
+Ask if there are any questions before moving on.
 
-    ![LP_Ins_Data_Cleansing_No_Of_Null_2.PNG](Images/LP_Ins_Data_Cleansing_No_Of_Null_2.PNG)
+---
 
-* Pandas also offers a function to identify duplicate rows in a dataframe. Duplicate rows are important to check because they can result in increased wait times for processing. Duplicate rows will also skew data aggregations, inflating aggregated numbers. Duplicate rows can be identified using the `duplicated` function, which returns either `True` or `False`.
+### 15. BREAK (40 min)
 
-    ```python
-    # Checking duplicates
-    csv_data.duplicated()
-    csv_data['customer_no'].duplicated()
-    ```
+---
 
-    ![LP_Ins_Data_Cleansing_Duplicated_Check.PNG](Images/LP_Ins_Data_Cleansing_Duplicated_Check.PNG)
+### 16. Students Do: Portfolio Planner Part II (20 mins)
 
-* Duplicate rows can be cleansed using the `drop_duplicates` function. This function can be executed against a DataFrame or a Series.
+In this activity, students will work in pairs to continue from where they left off in Part 1 of their portfolio evaluation. In this next part, students will evaluate correlations and Sharpe ratios of the 10 stocks, and then filter by only non-correlated and positive Sharpe ratio stocks. They will also set equal-weighted portfolio allocations to the remaining stocks and perform an analysis of a $10,000 investment in the portfolio over time. Finally, they will compare the $10,000 investment in the portfolio to other $10,000 investments in lesser optimized portfolios.
 
-  ```python
-  # Cleaning duplicates
-  csv_data.drop_duplicates()
-  ```
+**File:** [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb)
 
-Live code a few data quality checks that are especially relevant for financial data.
+**Instructions:** [README.md](Activities/09-Stu_Portfolio_Planner_Part_II/README.md)
 
-* FinTech is all about manipulating Financial Data. Inspecting numeric values and gauging the quality of numerical data is going to be critical to student success when analyzing and aggregating data. A quick and easy way to confirm the quality of a numeric value is to sample the data and conduct a spot check!
+### 17. Instructor Do: Review Portfolio Planner, Part 2 (5 min)
 
-    ```python
-    # Generate sample of DataFrame to inspect for issues with numerical data
-    csv_data.head()
-    ```
+In this section, review the solution to the previous activity, Portfolio Planner, Part 2.
 
-    ![LP_Stu_Data_Cleansing_Head_Currency.PNG](Images/LP_Stu_Data_Cleansing_Head_Currency.PNG)
+**File:** [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Solved/portfolio_planner_part_2.ipynb)
 
-* Because the `order_total` field has currency symbols in the values, numeric operations cannot be performed. A custom cleaning function/operation will need to be created to remove these symbols from the dataset. The cleaning function/operation can be created by leveraging and combining other Pandas functions (i.e. the Pandas `replace` function).
+Open the solution, [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Solved/portfolio_planner_part_2.ipynb), and explain the following:
 
-    ```python
-    # Cleaning identified numeric fields with $ symbol
-    csv_data['order_total'] = csv_data['order_total'].str.replace('$', '')
-    csv_data['order_total']
-    ```
+* Filter the 10 stocks to just the non-correlated stocks and stocks with positive Sharpe ratios. This is to maximize diversification of the portfolio––and, therefore, minimize volatility––and maximize the risk-to-returns ratio of the optimized portfolio, respectively.
 
-    ![LP_Ins_Data_Cleansing_Currency_Clean.png](Images/LP_Ins_Data_Cleansing_Currency_Clean.png)
+* Stock correlation describes the linear relationship between the returns of two stocks, and indicates whether returns of both stocks tend to move in tandem, inversely, or randomly (no correlation).
 
-* Once currency symbols have been removed from the numeric field, the field can be converted to the appropriate data type.
+  * The `corr` function used in conjunction with the `heatmap` function from the `seaborn` library makes it easy to spot the highly correlated stocks.
 
-  ```python
-  csv_data.dtypes
-  csv_data['order_total'] = csv_data['order_total'].astype('float')
-  csv_data.dtypes
-  ```
+  * In this case, the daily returns of `FANG` and `JNJ` appear to be highly correlated and can be dropped from the DataFrame.
 
-  ![LP_Ins_Data_Cleansing_AsType.PNG](Images/LP_Ins_Data_Cleansing_AsType.PNG)
+  ![part-2-correlation](Images/part-2-correlation.png)
 
-- - -
+* Unlike volatility, which measures risk, Sharpe ratios describe the riskiness of stocks relative to their returns. Therefore, Sharpe ratios measure risk-to-reward and indicate value-driven investments. The `mean` and `std` functions are used to calculate the Sharpe ratios of stocks.
 
-### 8. Students Do: Data Cleaning (15 mins)
+  ![part-2-sharpe-ratios](Images/part-2-sharpe-ratios.png)
 
-In this activity, students will be given Harold's stock data and are asked to perform a series of data quality checks to ensure the data is ready for analytical use. The objective of the assignment is for the students to learn how to cleanse data using Pandas native functions (`count`,`value_counts`,`isnull`,`sum`,`mean`,`contains`, and `replace`).
+* An equal-weighted portfolio consists of the same weight for every stock in the portfolio (totaling 1). For example, an equal-weighted stock portfolio of 5 stocks would have weights of 0.2, 0.2, 0.2, 0.2, and 0.2 for each stock.
 
-**Files:**
+  ![part-2-equal-weighted](Images/part-2-equal-weighted.png)
 
-* [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Unsolved/Core/spring_cleaning.ipynb)
+* The overlay chart of $10,000 investments in each corresponding portfolio over time describes the following:
 
-**Instructions:**
+  * The non-correlated and Sharpe ratio optimized portfolio performs the best of the four portfolios, consistently achieving higher returns with minimized volatility.
 
-* [README.md](Activities/05-Stu_Data_Cleaning/README.md)
+  * The non-correlated (diversifed) portfolio performs the second worst of the four portfolios; it manages to minimize volatility, but at the expense of higher returns.
 
-- - -
+  * The original, unoptimized portfolio performs the second best of the four portfolios; it achieves higher returns but at the expense of more volatility. Returns increased more quickly, but also fell more quickly––notice the dip in early 2019.
 
-### 9. Instructor Do: Review Data Cleaning (5 mins)
+  * The risk-optimized portfolio performs the worst of the four portfolios, achieving minimal volatility but at the expense of returns.
 
-**Files:**
+  ![part-2-overlay](Images/part-2-overlay.png)
 
-* [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Solved/Core/spring_cleaning.ipynb)
+Ask if there are any questions before moving on.
 
-Walkthrough the solution and highlight the following talking points:
+### 18. Instructor Do: Decompress (5 min)
 
-* Data cleaning is important because it removes all of the issues and errors that would block or inhibit computation. Without data cleaning, financial data can be calculated and aggregated incorrectly and inaccurately. Data quality issues can skew financial numbers, resulting in numbers being reported either higher or lower than actual. Since numbers drive business decisions in the financial world, use of incorrect data could have catastrophic implications.
+Spend this time letting students share their thoughts about this class, as well as offering up some encouraging words to boost motivation.
 
-* The `shape` function provides a quick and easy way to understand the structure of a DataFrame, including the number of columns and number of tuples/rows in the DataFrame.
+Start by giving students positive feedback.
 
-  ```python
-  csv_data.shape
-  ```
+* Students have come a long way in this Pandas unit!
 
-  ```
-  (504, 13)
-  ```
+* Not only have they learned how to use the Pandas library, but they have also begun to perform analysis and apply investment strategies like professional investors.
 
-* Performing a `count` is a great way to assess how many records were loaded into a DataFrame for each Series. The output of `count` reflects the total number of non-null values.
+Survey the class to get a sense of how they are feeling at this point in the unit and course overall. Are there any concepts that are still giving them trouble? Students should feel challenged but not lost.
 
-  ```python
-  csv_data.count()
-  ```
+Ask students questions such as the following:
 
-  ```
-  name                  502
-  sector                501
-  price                 500
-  price_per_earnings    497
-  dividend_yield        499
-  earnings_per_share    498
-  52_week_low           500
-  52_week_high          500
-  market_cap            500
-  ebitda                492
-  price_per_sales       500
-  price_per_book        492
-  sec_filings           500
-  dtype: int64
-  ```
+* What activity was the most enjoyable to complete? The most fulfilling?
 
-  Ask the students:
+* What activity was the most stressful or difficult? Why?
 
-    * What should happen if all values in a Series are null?
+* Did today's lesson flow well and make sense?
 
-      > "The Series should be dropped."
+Remind students that mastery doesn't happen in a day. Practice makes perfect!
 
-* Nulls can throw a wrench in an analytic pipeline. The `isnull` function can identify which Series has nulls. If there are nulls, they can be removed or filled. The `dropna` and `fillna` functions provide this functionality, respectively. Note that it's important to understand which fields can have nulls and which one's cannot.
+### 19. Instructor Do: Structured Review (35 mins)
 
-  ```python
-  csv_data.isnull()
-  ```
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
 
-  ![LP_Stu_Cleansing_Isnull.PNG](Images/LP_Stu_Data_Cleansing_Isnull.PNG)
+Please use the entire time to review questions with the students before officially ending class.
 
-* Using `mean` and `sum` with `isnull` will calculate the percentage and number of nulls for a DataFrame. This is important when considering the distribution of missing values in a DataFrame. The percentage and number of nulls could impact how the missing values are cleaned.
+Suggested Format:
 
-  ```python
-  csv_data.isnull().mean() * 100
-  csv_data.isnull().sum()
-  ```
+* Ask students for specific activities that they want revisit.
 
-  ![LP_Ins_Data_Cleansing_Null_Pct_Check.PNG](Images/LP_Ins_Data_Cleansing_Null_Pct_Check.PNG)
+* Revisit any activities that will help students complete the homework.
 
-  ![LP_Ins_Data_Cleansing_No_Of_Null.PNG](Images/LP_Ins_Data_Cleansing_No_Of_Null.PNG)
+* Allow students to start the homework with extra TA support.
 
-* Instead of dropping nulls in a Series, nulls can be filled with a default value. Common default values are "Unknown", 0, and mean().
-
-  ![LP_Ins_Data_Cleansing_Fill_Na.png](Images/LP_Ins_Data_Cleansing_Fill_Na.png)
-
-* The `dtypes` function can be used on a DataFrame to identify Series data types. A series' data type can also be identified by using `dtype`. Identifying data types is valuable because it allows for incorrectly inferred data types to be corrected and cast to the appropriate data types. If needed, a Series can be cast to the appropriate data type using the `astype` function. (i.e. converting a Date field from `string` to `Date`). Some conversions might require values to cleaned before they can be converted (i.e. removing `$` from an amount field).
-
-  ![LP_Ins_Data_Cleansing_Data_Types.PNG](Images/LP_Ins_Data_Cleansing_Data_Types.PNG)
-
-If time permits, engage the students with the following review questions:
-
-* Two types of rules determine what is considered clean and dirty data. What are they?
-
-  > "Data quality rules are determined based off of technical and business rules."
-
-* It's ok to have currency symbols and commas in amount fields. True or False?
-
-  > "False. Amount fields should be floats. Floats cannot have symbols or commas, as these are strings."
-
-* What two functions can be used to identify and remove currency symbols?
-
-  > "`contains()` can be used to identify currency symbols, and `replace()` can be used to remove them."
-
-To guide students, you may want to follow up with questions such as:
-
-* I used fillna(0) to fill NaN values in my DataFrame, but now my first_name and last_name fields have 0s in them. What happened? What should I have done instead?
-
-  > "`Fillna(0)` fills all null/NaN values in the DataFrame, irrespective of the data type of the Series where the null is. Fillna() should have been applied against the specific Series that needed the nulls converted to 0."
-
-* Data quality rules do not conflict with one another. True or false?
-
-  > "False. Technical rules might be disregarded in order to satisfy business rules."
-
-Ask for any remaining questions before moving on.
-
-- - -
-
-### 10. Instructor Do: Indexing (10 mins)
-
-In this activity, students will demonstrate that they can locate and select data within a DataFrame through indexing. Indexing allows us to slice and dice our data so we can get or set values for any of the "cells" in our table.
-
-**Files:**
-
-* [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb)
-
-Walk through the demo and explain the following:
-
-* The `iloc[]` function returns a row based off of a numerical index.
-
-  ![iloc-first-row](Images/iloc-first-row.png)
-
-* The `iloc[]` function can return a range of rows based off of a numerical index range.
-
-  ![iloc-first-10](Images/iloc-first-10.png)
-
-* The `iloc[]` function can return specific columns.
-
-  ![iloc-second-column](Images/iloc-second-column.png)
-
-* The `iloc[]` function can return a combination of specific rows and columns.
-
-  ![iloc-row-column-combo](Images/iloc-row-column-combo.png)
-
-* The `iloc[]` function can be used to modify specific row values.
-
-  ![iloc-assignment](Images/iloc-assignment.png)
-
-* To use the `loc[]` function on the index of a DataFrame, string values will need to be set as the index using the `set_index()` function. It's important to note that the `set_index` does not return a new DataFrame but creates a copy of the original. Any changes made to the indexed DataFrame will be propragated down to the original DataFrame.
-
-  ![index_overview](Images/index_overview.png)
-
-* The `copy` function is used to decouple original DataFrames from DataFrames indexed by `set_index`. `Copy` decouples the original DataFrame from the indexed DataFrame so that any changes made to the indexed DataFrame are not made to the original DataFrame. This ensures that the state of the original DataFrame is preserved. This is Pandas' way of implementing version control on DataFrames.
-
-  ![index_copy](Images/index_copy.png)
-
-* The alternative to using the `copy` function is to use the `inplace=True` parameter with the `set_index` function. `Inplace=True` tells Pandas not to create a copy of the DataFrame when setting the index.
-
-  ![set-index-first-name](Images/set-index-first-name.png)
-
-* The `loc[]` function returns a row based off of a string index.
-
-  ![loc-string](Images/loc-string.png)
-
-* The `loc[]` function can return a range of rows based on a range of string indexes.
-
-  ![loc-string-range](Images/loc-string-range.png)
-
-* The `loc[]` function can be used to return rows based off of column value conditionals.
-
-  ![loc-conditional](Images/loc-conditional.png)
-
-* The `loc[]` function can be used to modify specific row values.
-
-  ![loc-assignment](Images/loc-assignment.png)
-
-If time remains, briefly discuss `DateTimeIndexes` with students. Show them the below syntax, and provide the following explanation for why DateTimeIndexes should be used. Indicate to students that `DateTimeIndexes` will be re-visted with the Multi-Indexing module.
-
-* The `to_datetime` function can be used to create a `DateTimeIndex`. `DateTimeIndexes` work like regular indexes but they allow for data to be looked up by date and date ranges as well. Passing the `infer_datetime_format=True` parameter will ensure all dates are read the same way, regardless of their format (i.e. MM-DD-YYYY vs MM/DD/YYYY).
-
-  ```python
-  # Create DateTimeIndex
-  df.set_index(pd.to_datetime(df['date_col'], infer_datetime_format=True), inplace=True)
-  df.head()
-  ```
-
-  ![datetime-index](Images/datetime-index.png)
-
-* Finally, explain that it will take some time to get used to indexing data with Pandas, but over time, it will become second nature -- practice makes perfect!
-
-- - -
-
-### 11. Students Do: Three-Year Loans (20 mins)
-
-Now that students have the conceptual knowledge to index and look up data, it's time they get some practice in completing the steps demoed by the instructor. xThis activity tests students abilities to understand DataFrame indexing to slice and dice the `loans.csv` data to generate insightful answers regarding three-year loan customers.
-
-The `loans.csv` data is initially a compilation of many different columns and loan durations. Students will need to filter down to what is necessary and use functions on subsets of data to answer the questions set forth by Harold's manager.
-
-**Instructions:**
-
-* [README.md](Activities/07-Stu_Indexing/README.md)
-
-**Files:**
-
-* [loans.ipynb](Activities/07-Stu_Indexing/Unsolved/loans.ipynb)
-
-- - -
-
-### 12. Instructor Do: Review Indexing (5 mins) (Low)
-
-**Files:**
-
-* [loans.ipynb](Activities/07-Stu_Indexing/Solved/loans.ipynb)
-
-Open the solution and explain the following with a dry walkthrough:
-
-* Displaying an index of the first 10 rows is similar to what the `head()` function does; however, utilizing `iloc[]` gives you more control over the index ranges.
-
-  ![First 10 Records](Images/first-10-records.png)
-
-* The `iloc[]` function allows for selecting specific row and column indexes. In this case, the `:` keyword suggests that all rows will be kept from the `0`, `3`, `4`, `8`, `11`, `16` column indexes that will be selected.
-
-  ![Specific Columns](Images/specific-columns.png)
-
-* The `loc[]` function is able to combine conditionals with column value re-assignment to modify specific values within a DataFrame.
-
-  ![row-modification-with-warning](Images/row-modification-with-warning.png)
-
-* Sometimes this may lead to a `SettingWithCopyWarning` where pandas tries to set values on a copy of a slice of a DataFrame. Therefore, use the `copy()` function to establish a concrete object (rather than a pointer to an object) to alleviate the error.
-
-  ![row-modification-without-warning](Images/row-modification-without-warning.png)
-
-* The `value_counts()` function counts the frequency of unique values of a specific column or Series object.
-
-  ![Unique Values](Images/unique-values.png)
-
-Ask for any remaining questions before moving on.
-
-- - -
-
-### 13. Instructor Do: Pandas Visualizations (10 mins)
-
-In this activity, students will learn through demonstration how to create charts using Pandas visualization functions. The instructor will demo how to plot data with and without indexes, as well as how to plot data using line and bar charts.
-
-**Files:**
-
-* [visualization.ipynb](Activities/08-Ins_Pandas_Visualization/Solved/visualization.ipynb)
-
-Walk through the demo and explain the following:
-
-* Pandas makes visualization easy by including a DataFrame `plot()` function; the `plot()` function uses data from a DataFrame to set x and y-axis data points.
-
-* Plotting data without defining the index will only display the default index of each row in the DataFrame. In order to set the dates as the x-axis label, the `Date` column needs to be set as the index.
-
-  ![line-chart-without-index](Images/line-chart-without-index.png)
-
-* While setting the `Date` column as the DataFrame index, it's a good practice to convert date strings into datetime objects to have the flexibility of utilizing additional datetime functionality.
-
-  ![set-index](Images/set-index.png)
-
-* Make sure to drop the extra `Date` column after setting it as the index!
-
-  ![drop-column](Images/drop-column.png)
-
-* Plotting data with datetimes as the index now allows us to see the dates as the x-axis label of the line chart.
-
-  ![line-chart-with-index](Images/line-chart-with-index.png)
-
-* Use the `kind` parameter to the `plot()` function to specify different types of charts. The `plot()` function automatically defaults to generating a line chart.
-
-  ![bar-chart](Images/bar-chart.png)
-
-* Use the `figsize` parameter to the `plot()` function to increase or decrease the chart size. This is especially helpful when there are many x or y axis data points.
-
-  ![bar-chart-large](Images/bar-chart-large.png)
-
-- - -
-
-### 14. Students Do: Market Analysis (20 mins)
-
-For this activity, students will make three different charts using Pandas: pie chart, bar chart, and scatter plot. This activity will teach students how to create pie scatter charts in addition to bar and line plots. Instructors should walk around to review student progress as they complete the secret key activity. Questions and guidance may be required as this will be the first time students will have been exposed to pie charts and scatter plots.
-
-**Files:**
-
-* [market_analysis.ipynb](Activities/09-Stu_Pandas_Visualization/Unsolved/market_analysis.ipynb)
-
-**Instructions:**
-
-* [README.md](Activities/09-Stu_Pandas_Visualization/README.md)
-
-- - -
-
-### 15. Instructor Do: Review Market Analysis (5 mins)
-
-**Files:**
-
-* [market_analysis.ipynb](Activities/09-Stu_Pandas_Visualization/Solved/market_analysis.ipynb)
-
-Open the solution and explain the following:
-
-* Setting the `%matplotlib inline` feature is necessary to displaying the plots in the jupyter notebook file.
-
-  ```python
-  # Import libraries and dependencies
-  import pandas as pd
-  from pathlib import Path
-  %matplotlib inline
-  ```
-
-* The `value_counts()` function returns a Series object representing the frequency of unique values of a Series object or column of a DataFrame.
-
-  ![value-counts-function](Images/value-counts-function.png)
-
-* The `plot` function defaults to line charts; however, the `kind` parameter allows one to alter the type of chart produced (i.e. pie, bar, etc.).
-
-  ```python
-  # Plot a pie chart from the distribution of company sectors
-  sector_count.plot(kind='pie')
-  ```
-
-* A pie chart is best suited for representing the distribution of a whole category. In this case, the distribution of company sectors in the S&P 500. The plot shows that `Consumer Discretionary` companies hold the greatest weight or proportion amongst the S&P 500 companies.
-
-  ![pie_chart](Images/pie.png)
-
-* To create certain plots, it may be easier to create a subset of the original DataFrame. In this example, the `Symbol` and `Market Cap` columns can be selected as a subset of the original data.
-
-  ```
-  market_cap = sp500_companies_csv.loc[:, ['Symbol', 'Market Cap']]
-  ```
-
-* Make sure to set the index on DataFrames that are intended for plotting to display the correct labels. For example, the x-axis labels on a line chart.
-
-* Use the `nlargest()` function to return the top `n` number of rows based on a particular DataFrame column.
-
-  ![nlargest-function](Images/nlargest-function.png)
-
-* A bar chart is best suited for comparing the values of several variables of the same type. In this case, the market caps of the top 20 companies in the S&P 500. The plot shows the varying market cap values of the top 20 market cap companies of the S&P 500.
-
-  ![bar_chart](Images/bar.png)
-
-* A scatter plot is best suited for comparing the relationships between two variables. In this case, the relationship between price and earnings. The plot shows that there is generally a range between which most companies tend to cluster around price and earnings; however, as earnings increase there seems to be a slight positive trend in price as well.
-
-  ![scatter_plot](Images/scatter.png)
-
-Ask for any remaining questions before moving on.
-
-- - -
-
-### 16. Instructor Do: Returns (10 mins)
-
-The following activity introduces students to calculating daily returns with Pandas. Students are introduced to the concept of `ROIs`, the `pct_change` function, and cumulative returns. This activity will build upon skills taught to read in CSV data, manipulate and clean DataFrames, and plot data.
-
-**Files:**
-
-* [returns.ipynb](Activities/10-Ins_Returns/Solved/returns.ipynb)
-
-Walk through the demo and explain the following:
-
-* What is a return or Return on Investment (ROI)?
-
-  > A Return on Investment (ROI) is a percentage calculation that signifies either a profit or loss relative to the initial cost of an investment. ROI calculations can be used to standardize and compare the investment performances of varying asset classes such as equities, bonds, real estate, etc.
-
-  ```python
-  # ROI = (Current Value of Investment - Cost of Investment) / Cost of Investment
-  initial_investment = 100
-  current_price = 110
-
-  roi = (current_price - initial_investment) / initial_investment
-  roi_pct = roi * 100
-  print(f"ROI for an initial investment of ${initial_investment}"
-        f"now priced at ${current_price}"
-        f"is {roi} or {roi_pct}%")
-  ```
-
-  ```
-  ROI for an initial investment of $100 now priced at $110 is 0.1 or 10.0%
-  ```
-
-* What are daily returns?
-
-  > Daily returns are a series of returns calculated over the course of several days, with each daily return representing the relative increase or decrease in investment between days.
-
-* The `shift()` function creates an offset of a DataFrame index by a specified amount. In this case, the index of the `sp500_csv` is offset by `1` to emulate the daily return formula.
-
-  ![shift-function](Images/shift-function.png)
-
-* The `pct_change()` function calculates the percentage difference between each element of a time series. Therefore, for time series data such as daily closing prices of a stock, using the `pct_change()` function conveniently produces a series of daily returns.
-
-  ![pct-change-function](Images/pct-change-function.png)
-
-* Plotting daily returns makes it easier to see overall variations in daily returns over a course of time. In particular, plotting daily returns make it easier to see high and low spikes compared to the general trend. Such spikes in daily returns may indicate a market event.
-
-  ![Plot of Daily Returns](Images/daily-return-plot.png)
-
-* What are cumulative returns?
-
-  > Cumulative returns are a series of returns, with each return representing the relative increase or drecrease in price of an asset at time `t` compared to the initial price of that asset at time `t0`. Cumulative returns describe the progression of the Return on Investment of an asset over time.
-
-* The `cumprod()` function multiplies each number in a series with the next successive number until the end of the series.
-
-* The equation `(1 + daily_returns).cumprod() - 1` therefore means that each daily return is expressed as a multiplier (ex. daily return of 0.5% is 1.005), the `cumprod()` function cumulatively multiplies each number with its successive number, and the `-1` brings the result from a multiplier expression back to a typical return value scale (ex. daily return of 0.5% is 0.005).
-
-  ![cumprod-function](Images/cumprod-function.png)
-
-* Plotting cumulative returns makes it easier to visualize the profitability of a single asset, and in particular, the profitabilites of several asset classes over time. In this case, the plot shows that the S&P 500 grew more than 50% from 2014 to 2019.
-
-  ![Plot of Cumulative Returns](Images/cumulative-return-plot.png)
-
-Now that students know how to calculate and plot returns, students will practice doing this by analyzing and plotting historical AMD data for Harold.
-
-- - -
-
-### 17. Students Do: Returns Over Date Ranges (20 mins)
-
-ROI is a financial concept that some students will have just learned about. Students who have been newly introduced to daily and cumulative returns may be confused, lost, and hesitant to vocalize their uncertainty. Address this by encouraging students to work in groups so that they can make sense of the content together. Also identify finance savvy students who can help provide clarity and assistance to students who find the financial concepts challenging; ask these students to walk around and aid students with their inquiries.
-
-TAs should be circulating to provide assistance to any students/groups who need help. You as the instructor should also make yourself available to help answer financial and technical questions.
-
-In this activity, Harold's manager wants Harold to analyze the last 10 years of historical price data for AMD and plot the daily returns over the last 1, 3, 5, and 10 year time periods. In addition, Harold's manager wants to see the differences in average daily returns for each time period to perhaps understand whether a short or long term perspective should be used in prospecting AMD as a potential candidate.
-
-Help Harold analyze the last 10 years of AMD stock data.
-
-**Instructions:**
-
-* [README.md](Activities/11-Stu_Returns/README.md)
-
-**Files:**
-
-* [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Unsolved/returns_over_date_ranges.ipynb)
-
-- - -
-
-### 18. Instructor Do: Review Returns Over Date Ranges (5 mins)
-
-**Files:**
-
-* [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Solved/returns_over_date_ranges.ipynb)
-
-Instruct the students to take 3 minutes to complete a turn and teach activity. Students should:
-
-* Work with their neighbors and share two new things they learned about returns
-
-* Share answers to the following questions: What is the value behind calculating cumulative returns? Why not just calculate daily returns over time?
-
-With the remaining time, open the solution, and discuss the following points:
-
-* We need to set the `%matplotlib inline` feature to display plots in Jupyter notebooks.
-
-  ```python
-  # Import libraries and dependencies
-  import pandas as pd
-  from pathlib import Path
-  %matplotlib inline
-  ```
-
-* After reading in the csv as a DataFrame and doing some quick summary statistical analysis, data should be trimmed to match the needs of the requirements. In this case, only the `close` column is needed to calculate daily returns.
-
-  ![drop-columns](Images/drop-columns.png)
-
-* Setting the date as the index allows us to slice the DataFrame by specified date ranges using the `loc` function, which allows for `[start:end]` notation.
-
-  ![datetime-index](Images/datetime-index.png)
-
-* Notice however the hard-coding that had to be done to create the slice notations for each time period. It would be much more convenient to be able to choose a date and use a function to go 365 days prior to that date to create 1 year, 3 year, 5 year, and 10 year time chunks; `datetime` objects will help us do this in the future.
-
-  ```python
-  # Slice DataFrame into 1 year time frame
-  daily_return_1_year = daily_return.loc['2018-04-30':'2019-04-29']
-  daily_return_1_year
-  ```
-
-* The data shows that trading AMD in the short-term is potentially more profitable as the average daily return of a `1 Year` time frame is the highest at `0.004538` or `4.53%`.
-
-Take a minute to get the students to reflect on what they've just learned and the value behind it. Ask the following question:
-
-* What other areas or accounts can daily returns be used to determine return on investment?
-
-> "Savings accounts and 401ks are examples of accounts that generate daily ROI."
-
-Ask for any remaining questions before moving on.
-
-- - -
-
-### 19. Decompress
-
-Before ending class, leave some encouraging remarks, and give students a space to vocalize their thoughts.
-
-* Give students positive feedback; ensure them that they are all doing great. Not only have they learned Python, but now they've learned Pandas and have begun automating portfolio performance evaluation. They're one step closer to their goal of being masters of FinTech automation.
-
-* Ask students the following questions:
-
-  * What activity was the most enjoyable to complete? The most fulfilling?
-
-  * What's the most stressful thing about programming?
-
-  * What took you the most time to figure out?
-
-  * Did you come across any shortcuts or unique ways to do things while completing the activities?
-
-* Underscore that the students have been doing excellent at learning both financial and technical concepts. This is not an easy feat. It takes skill, intellect and abstract thinking, and perseverance to make it this far. They should all pat themselves on the back.
-
-* Underscore that the students have come a long way. Last week they learned Python. Now they're integrating Pandas and Matplotlib into their Python programs. Next they'll start using more advanced Financial calculations and functions, and eventually move onto working with APIs.
-
-* Let the students know that office hours are available for anyone who might have additional questions; would like to review more; or would like to just talk Python, Pandas, Financial Portfolios, and/or FinTech!
+Take your time with this review! This is a great time to reinforce concepts and address any confusion.
 
 ### End Class
+
+---
+
+© 2019 Trilogy Education Services

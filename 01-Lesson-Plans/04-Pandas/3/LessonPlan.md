@@ -1,490 +1,183 @@
-## 4.3 Lesson Plan - Investing Like the Pros
-
----
+## 4.2 Lesson Plan: Whiteboard Interviews - Practice Makes Perfect! (10:00 AM)
 
 ### Overview
 
-Today's class will focus on the notion of analyzing the performance of not just a single stock, but groups of stocks together -- otherwise known as a portfolio of stocks. Stock portfolios are an important strategy in the realm of investing as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma.
-
-However, in order to create an optimal portfolio that maximizes returns while minimizing risk, it's necessary to not only analyze the average return and risk of the portfolio overall, but also the correlation between stocks as well (how much one stock price changes with or against another). This lesson will teach students how to analyze the correlations of stocks against one another, calculate rolling statistics and volatility (beta) of stocks together, and optimize the composition of a portfolio and compare its performance against other portfolios.
+Today's workshop is an opportunity for students to review and practice technical interview guidelines in a peer review setting.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Describe the benefits of investing in stock portfolios over a single stock.
-* Explain what correlation is and how to calculate it in Pandas.
-* Visualize trends through rolling statistics that minimize data noise.
-* Compare the volatility of a portfolio against the overall market.
-* Calculate expected returns of a portfolio utilizing custom weights
-* Build and optimize a portfolio by factoring in risk, correlation, and returns
-* Compare a portfolio's performance to other portfolios.
+* Verbalize and exercise methods for problem-solving strategies.
+* Map out the guidelines on effectively articulating their problem solving process.
+* Gain experience from practicing the aforementioned strategies and guidelines.
+* Reflect on their shortcomings and devise improvements to the solutions they develop.
 
 ### Instructor Notes
 
-* This lesson brings the heat on two fronts: math/statistics and financial domain knowledge. Not everyone will have extensive experience with either subject so be clear, visualize code/charts, and refer to the examples and notes if you need help!
+* Students should honestly evaluate their partners' performance as well as their own performance via the the [grading rubric]().
 
-* Be clear on the differences between correlation and beta. Both attempt to measure the relationship between one variable and another; however, correlation looks to measure the linear relationship between two variables while beta looks to measure the *unit-driven* relationship betweeen two variables (beta and stock returns).
+* Students should systematically apply the problem solving guidelines with each problem; they can deviate once they've internalized the format, but *not* before.
 
-* When explaining the notion of rolling statistics and how they benefit in identifying statistical trends, it may be helpful to provide a visual by comparing the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
+* Since the only difference between workshops is the selection of interview questions, Instructors are provided a single Time Tracker and abbreviated Lesson Plan.
 
-* When dealing with portfolios and its characteristics - risk, return, correlation - try to speak in terms of money. If you started with $10,000, how would a poorly optimized portfolio compare with one that is not?
+* Review the interview questions for the workshop ahead of time. These are available in the [Interview Questions](../3-Interview-Qs) repository. You will need one question for each 30 minute interview -— partners will *not* work on the same interview problems successively.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+* Have your TAs reference the `Workshop Time Tracker` to help keep track of time; more important than the Time Tracker is that students have adequate time to work through interview problems.
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 mins)
 
-**Files:**
+In this activity, instructors welcome students to the class and explain that they will be reviewing and practicing technical interview guidelines in a mock peer review setting.
 
-* [Slideshow](placeholder)
+**File:** [Slideshow-Placeholder]()
 
-Welcome students to the third day of Pandas! Cover the following points:
+* Students will overview the problem-solving strategies and as well as the discussion guidelines, and then run their own peer-interviews for the rest of class.
 
-* Previous classes focused on Pandas basics and single stock evaluation. Today students will combine what they've learned so far on using Pandas to analyze individual stock returns and risk, and move onto the notion of grouping stocks together to achieve the best risk/reward ratio for their investments.
+* For the mock peer review sessions, each student will have 25 minutes to work through a problem. Once the 25 minutes is up, students will switch. They have 5 minutes to review feedback with one another before rotating pairs or interview questions.
 
-* Mention to the class that today's focus is on using Pandas to make more informed (and better) investments! Students should feel invigorated as they are learning the techniques used by real financial analysts, quantitative traders, and portfolio managers.
-
-* Since today's class focuses more on groups of stocks rather than an individual stock, students should be prepared to push their mindset from that of analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.
-
-* Energize your students! Today is the day where students truly begin leveraging the power of Pandas to create truly insightful analyses that can benefit their skills in financial analysis/investing.
+* Emphasize that the purpose of these workshops is not primarily to find the correct answer to these questions. Rather, it is to train students to take the right *approach* to problem solving. At this stage, following the guidelines matters more than finding the correct solution. This is because excellent communication is one of the most sought-after traits interviewers screen for.
 
 ---
 
-### 2. Instructor Do: Intro to Portfolios (5 mins)
+### 2. Instructor Do: Introduce and Review Problem Solving Guidelines (15 mins)
 
-Present the following questions and answers regarding portfolios:
+In this activity, instructors will introduce the problem solving guidelines that will help students to effectively outperform in a technical interview.
 
-* What is an investment portfolio?
+**Files:**
 
-  > An investment portfolio is the grouping of various financial assets such as equity, bonds, commodities, private investments, etc, or just that of a single financial asset such as equity.
+* [Slideshow-Placeholder]()
+* [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf)
 
-* What is a stock portfolio?
+Open the slideshow and explain the following:
 
-  > A stock portfolio is an investment portfolio consisting of only equity. Therefore a stock portflio consists of multiple stocks ranging from the 11 sectors of the equity market: financials, utilities, consumer discretionary, consumer staples, energy, healthcare, industrials, technology, telecom, materials, and real estate.
+* Students will use the methodologies outlined in the [problem solving guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to impress upon a technical interviewer that they are **strong problem solvers.** Specifically, students will use the following technical interview methodologies:
 
-* Why are stock portfolios better than single stock investments?
+  * Restate/explain the problem with a **concrete example.**
+  * Sketch the solution on a high-level (ex. psuedocode).
+  * Discuss the approach and any assumptions or shortcomings.
+  * Translate and implement the solution into functional code.
+  * Discuss the solution's shortcomings and corresponding potential improvements.
 
-  > Single stock investments are risky in that they represent the "all eggs in one basket dilemma". If the performance of a single stock fails, then so does the entirety of one's investment (as it is only tied to that particular stock). However, by grouping multiple stocks together, the risk is minimized or spread throughout the portfolio as a single stock may fail but others may continue to succeed.
+* More than anything, interviewers want to know an interviewee's mindset and ability to solve problems, even if he or she does not have the full answer/solution. Therefore, communication is absolutely key to outperforming in *any* interview, not just a technical interview.
 
-* What is a stock market index?
-
-  > Similar to a stock portfolio, a stock market index is a collection of stocks used to gauge the performance of a particular area within the stock market. For example, a popular stock market index is the S&P 500, a collection of 500 large market cap U.S. stocks which serve as a general health indicator of the overall U.S. stock market.
-
-* Why do stock market indexes matter?
-
-  > Stock market indexes, like the S&P 500, serve as general health indicators for particular areas in the stock market; however, they also serve as benchmarks to compare performances of portfolios. For example, how does the performance of one's personal stock portfolio compare to that of the S&P 500 or general stock market?
-
-Answer any student questions before moving on.
+* Additionally, it is important to interact and develop a relationship with the interviewer. Not only do interviewers want to know that an individual has the knowledge and capacity to perform their role, but also the personality that fits within their company's culture.
 
 ---
 
-### 3. Instructor Do: Correlation (5 mins)
+### 3. Instructor Do: Introduce Partner Interviews (15 mins)
 
-This activity introduces the student to the concept of correlation, or the positive or negative relationship between two variables. Two datasets have been chosen to showcase the example of correlation: ice cream sales and drowning incidents.
+In this activity, instructors will overview the process of the mock interviews for today's lesson.
 
 **Files:**
 
-* [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
+* [Slideshow-Placeholder]()
+* [Peer Interview Grading Rubric](Activities/02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xlsx)
 
-Walk through the solution and highlight the following:
+Open the slideshow and explain the following:
 
-* What is correlation?
+* Students will break off into pairs, with one student acting as the interviewer and the other student acting as the interviewee. Students will decide themselves who goes first as the interviewer/interviewee.
 
-  > Correlation is the measure of either a positive, negative, or neutral (random) relationship between two variables. For example, there is often a positive correlation with height vs. weight (as you grow in height you tend to weigh more).
+* Students will spend 30 minutes for their first round of interviewing and then another 30 minutes for their second round of interviewing (students switch roles).
 
-* When comparing the line trend of ice cream sales to drowning incidents, it is much harder to detect a relationship between the two. Therefore, use a scatterplot and set the `x` and `y` axis to the corresponding DataFrame columns. With a scatterplot, the relationship becomes much more apparent.
+* Each student will act as both the interviewer and the interviewee in their pair (of two students). Afterwards, there will be a 5 minute session to discuss feedback and potential areas of improvement.
 
-  ![line-chart](Images/line-chart.png)
-  ![scatterplot](Images/scatterplot.png)
+* After each pair of students has gone through the full interview process (acted as both interviewer/interviewee and discussed feedback), students will break off into new pairs and repeat the process until the end of the class.
 
-* Use the `corr` function to calculate and output a matrix of correlation values for each column-to-column pair of a DataFrame. Correlation values range from `-1` to `0` to `+1`, where `-1` indicates a negative relationship (variables move inversely to one another), `0` indicates a neutral relationship (variables have no relationship and move randomly), and `+1` indicates a positive relationship (variables move in tandem with one another).
+Then slack out the [peer interview grading rubric](Activities/02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xlsx) and explain the following:
 
-  ![correlation.png](Images/correlation.png)
+* The rubric will be used by interviewers to assess their corresponding partner's interview performances.
 
-* The `heatmap` function from the `seaborn` library color-codes the different variations in a correlation table. This is particularly useful when there are many variables in a correlation table.
+* The rubric includes a score of 0-3 for multiple criteria such as:
 
-  ![correlation_seaborn.png](Images/correlation-seaborn.png)
+  * The interviewee adequately restated the problem.
+  * The interviewee asked the interviewer for input and clarification.
+  * The interviewee use a logical approach to solving the problem - regardless of a correct solution
 
-* Remember that correlation does not imply causation! Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents` it does not mean that buying more ice cream causes people to drown. It merely states that there is a positive relationship between the numbers. Chances are, there is another factor at play which makes these two variables so positively correlated. One guess could be as temperatures increase (summer months) people tend to eat more ice cream and go swimming.
-
-* In order to determine causation, regression analysis should be used where the premise is to find out how x predicts y.
-
-* When applied to stock investments, investigating the correlations of returns among stocks in a portfolio can help analysts properly diversify their portfolios and mitigate risk/volatility. This is due to the fact that non-correlated stocks in a portfolio tend to cancel out large swings in volatility, as one stock may increase in price while another may decrease in price rather than all stocks increasing in price and all stocks decreasing in price.
+Ask the students if they have any questions before moving on.
 
 ---
 
-### 4. Students Do: Diversification (15 mins)
+### 4. Student Do: First Partner Interviews (30 mins)
 
-In this activity, students will apply the concept of correlation to the financial use case of diversifying a portfolio. In order to properly create a diversified portfolio which tends to minimize long-term volatility/risk, stocks within the portfolio should be as non-correlated as possible. Therefore, students will need to find the stock that has returns that are least correlated to the returns of stocks in an already existing portfolio.
-
-**Instructions:**
-
-* [README.md](Activities/02-Stu_Correlation/README.md)
+In this activity, students will pair off with each other to perform mock interviews, with one student as the interviewer and the other as the interviewee.
 
 **Files:**
 
-* [market_analysis.ipynb](Activities/02-Stu_Correlation/Unsolved/diversification.ipynb)
+* [README.md](Activities/03-Stu_Partner_Interviews/README.md)
+* [Interview Questions](Activities/03-Stu_Partner_Interviews/Solved)
 
-### 5. Instructor Do: Review Diversification (5 mins)
+Slack out the [README.md](Activities/03-Stu_Partner_Interviews/README.md) and explain the following:
 
-**Files:**
+* Now, students should break off into their pairs. They can work with seatmates to start as they'll eventually rotate through the class. Specific student pairs should decide amongst themselves who will first play the role of the interviewer, and who will first play the role of the interviewee.
 
-* [diversification.ipynb](Activities/02-Stu_Correlation/Solved/diversification.ipynb)
+* Students will have 5 minutes for the interviewer to review the interview question README and solution. Then, the remaining 25 minutes will be allocated for the actual interview.
 
-Open the solution and explain the following:
+* Students should reference the [problem solving guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to implement the methodologies into their interview performances.
 
-* Remember that the `corr` function compares values from each column-to-column pair. Therefore, make sure that the DataFrame is properly formatted on a column-by-column basis for analysis.
-
-  ![formatted-dataframe](Images/formatted-dataframe.png)
-
-* When viewing a correlation table, it's difficult to distinguish lower values from higher values when there are many variables present. Therefore, using the `heatmap` function from the `seaborn` library makes it much easier to discern differences by using color gradients.
-
-  ![correlation-table](Images/correlation-table.png)
-
-  ![correlation-heatmap](Images/correlation-heatmap.png)
-
-* Use the `vmin` and `vmax` parameters to the `heatmap` function to modify the scale of the heatmap. Correlation values range from `-1` to `0` to `+1` therefore the scale of the heatmap will need to reflect accordingly.
-
-  ![correlation-heatmap-scaled](Images/correlation-heatmap-scaled.png)
-
-* Looking at the heatmap and cross-referencing the correlation table, it would appear as though AMD stock appears to be the least correlated out of any of the other semiconductor stocks. Therefore, AMD stock would be the best semiconductor stock to add to the existing portfolio.
-
-  ![correlation-heatmap-focus](Images/correlation-heatmap-focus.png)
-
-  ![correlation-table-focus](Images/correlation-table-focus.png)
-
-* Before moving on, ask the students if they have any questions regarding correlation and portfolio diversification.
+Then, slack out the first [interview question](Activities/03-Stu_Partner_Interviews/Solved) and let the interviews begin!
 
 ---
 
-### 6. Instructor Do: Rolling Statistics (10 mins)
+### 5. Student Do: Second Partner Interviews (30 mins)
 
-In this activity, students will be introduced to the idea of rolling statistics. Rather than calculating a single metric over the entire series of datapoints, rolling statistics is a concept in which a series of a particular metric is calculated over a shifting window of time. For example, the correlation between two stocks and their returns could be calculated over the course of 30 days; however, a series of rolling 3-day correlations could also be calculated over that same 30 days. Rolling statistics help view the *change* or *progression* of a particular metric over time and therefore aid in identifying statistical trends. Some commonly used rolling statistics are rolling averages (otherwise known as moving averages) and rolling standard deviations.
+In this activity, students will switch roles in their mock interviews; the interviewer becomes the interviewee and vice versa.
 
-**Files:**
+* After the 30 minutes of the first partner interviews, partners should swap roles such that the interviewee now plays the role of interviewer, and vice versa.
 
-* [rolling_statistics.ipynb](Activities/03-Ins_Rolling_Statistics/Solved/rolling_statistics.ipynb)
+* Similar to the timing of the first partner interviews, second partner interviews will retain 5 minutes for the (new) interviewer to review the interview question README and solution and then utilize the remaining 25 minutes for the actual interview.
 
-Walk through the solution and explain the following:
+* Again, students should reference and implement the methodologies listed in the problem solving guidelines document.
 
-* What is a rolling statistic?
-
-  > A rolling statistic is a metric calculated over the range of a shifting (or rolling) window. For example, a 7-day rolling mean of 14 days worth of closing prices for a stock would calculate the mean of the closing prices for days `1-7`, then days `2-8`, then days `3-9`, and so on...
-
-* Why use a rolling statistic?
-
-  > A rolling statistics helps to show the progression or change of a particular metric over time. For example, calculating the average closing price of 1 year's worth of stock data will output a single metric, the average closing price for the year. On the contrary, a rolling 7-day mean will give you the change in weekly average closing prices over the course of the year.
-
-* Rolling statistics tend to smooth out the trend of the initial dataset, allowing for more general or holistic analysis of a dataset rather than focusing on every twist and turn of the data. Overlaying a rolling statistic trend on top of the original data trend makes this feature easier to spot.
-
-  ![rolling-statistic-overlay](Images/rolling-statistic-overlay.png)
-
-* Rolling statistics factor in the progression of time. Therefore, a rolling 7-day window makes sense when looking at a short-term weekly investment scope; however, if investing for the long-term a rolling-180 day window might make more sense.
-
-* Sometimes comparing different scopes of time can reveal insights that would not have been found otherwise. For example, comparing the 30-day rolling standard deviation to the 180-day rolling standard deviation of TSLA stock shows that although on a monthly scale there was a spike in volatility in late 2018, overall on a 6-month scale the highest spike in volatility was in late 2016, where the stock skyrocketed (remember standard deviation/volatility is how far data points deviate from the mean, this does not always necessarily have to be negative).
-
-  ![daily-close-tsla](Images/daily-close-tsla.png)
-
-  ![rolling-std-dev-30](Images/rolling-std-dev-30.png)
-
-  ![rolling-std-dev-180](Images/rolling-std-dev-180.png)
+Then slack out the next [interview question](Activities/03-Stu_Partner_Interviews/Solved) and let the second interviews begin!
 
 ---
 
-### 7. Students Do: Simple Moving Averages (15 mins)
+### 6. Student Do: Trade Feedback (5 mins)
 
-In this activity, students will calculate multiple windows of rolling statistics such as moving averages and rolling standard deviations in order to identify trends in average price and volatility/risk that can provide insight to the investment decisions of a particular stock.
+In this activity, students will exchange interview feedback with their partners and discuss how they can improve their interview performances.
 
-**Instructions:**
+* After the second partner interviews are complete, students should exchange interview grading rubrics and discuss each others' performances.
 
-* [README.md](Activities/04-Stu_Rolling_Statistics/README.md)
+* Feedback should mostly be positive in tone and should identify potential areas such as:
 
-**Files:**
+  * What their partners did best
 
-* [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
+  * What their partners should focus on improving during their next interview.
 
-### 8. Instructor Do: Review Simple Moving Averages (5 mins)
-
-**Files:**
-
-* [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb)
-
-Open the solution and explain the following:
-
-* The `rolling` function and the `window` parameter set the time window for the calculated metric, in this case the average or `mean`.
-
-  ![rolling-mean-calculation](Images/rolling-mean-calculation.png)
-
-* Notice the last `19` datetime indexes contain `NaN` values, this is because the `window` parameter has been set to `20` and therefore the last `19` indexes do not have enough data to support the `20` day time window.
-
-  ![not-enough-window-data](Images/not-enough-window-data.png)
-
-* When overlaying the SMAs over the plot of the daily closing prices for NFLX, one can see the ways in which larger rolling time windows smooth data and show general trends as opposed to smaller rolling time windows that showcase more volatility.
-
-  ![sma-overlay](Images/sma-overlay.png)
-
-* When overlaying the STDs over the plot of the daily closing prices for NFLX, one can see the differences in volatility for different time scopes.
-
-  ![std-overlay](Images/std-overlay.png)
-
-* Because Harold's company is looking to invest long-term in NFLX, the `SMA100` and `STD100` should hold more emphasis. Based on the chart overlays, although there is a recent price uptrend in late 2018, long-term volatility has been high for the entirety of 2018 to 2019. Therefore, it may be best to hold off on investing in NFLX long-term for now.
+* Students should de-prioritize discussing the specific coding solutions at this stage; the important piece is not the answers, but how well students communicated their thought processes.
 
 ---
 
-### 9. Instructor Do: Beta (10 mins)
+### 7. Student Do: Repeat (Remainder)
 
-In this activity, students will be introduced to the concept of beta and how it is used to determine the relative *unit-driven* performance of one variable to another. For example calculating the beta value of a stock's returns relative to the returns of the overall market.
+In this activity, students break off into new pairs and repeat the procedures outlined in activities 4-6 for the remainder of the class.
 
-Students will learn how to calculate beta and how the concept of beta differs from correlation.
+* Instructors should allow 2 minutes for students to find new partners, so that each individual works with a new classmate. This can be as simple as one partner shifting seats to the left, and one shifting seats to the right.
 
-**Files:**
+* Repeat the procedure outlined in activities **4** through **6** for the remainder of class.
 
-* [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb)
+* If the final interview round is expected to run past the end of class, instructors have two choices to account for timing constraints:
 
-Walk through the solution and explain the following:
+  1. Adjust the time allocations for the final round of interviews to fit within the remainder of class. For example, two 15 minute sessions for each student in their respective pairs.
 
-* What is covariance?
-
-  > Covariance is a measure of the directional relationship between two variables. For example, covariances between two financial assets such as stock returns would imply that both stock returns would move together with a positive covariance and move inversely with a negative covariance.
-
-  ![covariance.png](Images/covariance.png)
-
-* What is variance?
-
-  >Variance is the measurement of how far numbers in a dataset are spread about their mean. For example, if stock A has an average price of $50, but varies in price as low as $5 and as high as $90, while stock B averages $50, but varies in price as low as $40 and and as high as $60. Stock A has a higher variance than stock B.
-
-  ![variance.png](Images/variance.png)
-
-* What is the difference between covariance and variance?
-
-  > Covariance refers to the measure of the directional relationship between two random variables while variance refers to the spread of a data set around its mean value.
-
-* What is the difference between covariance and correlation?
-
-  > Covariance is a measure of correlation. Correlation describes the directional relationship between two variables in a unit-free manner, while covariance describes the directional relationship between two variables with consideration for the type of data used (in this case, daily return values).
-
-* What is beta?
-
-  > Beta is the measure of the volatility of an individual stock in comparison to the volatility of the entire market.
-
-  ![beta.png](Images/beta.png)
-
-* What is the difference between beta and correlation?
-
-  > Beta tries to measures the effect of one variable impacting the other variable. Correlations measure the possible frequency of similarly directional movements without considerations of cause and effect. Beta is the slope of the two variables. Correlation is the strength of that linear relationship.
-
-  ![beta-vs-correlation.png](Images/beta-vs-correlation.png)
-
-* It's often a good practice to plot the progression of beta values for a stock over time using rolling windows to see it's historical volatility relative to the market.
-
-  ![rolling-beta.png](Images/rolling-beta.png)
+  2. Perform a live demo of a sample interview problem with the class as a whole, allowing students to witness the technical interviewing skills of a veteran instructor.
 
 ---
 
-### 10. Students Do: Beta Comparisons (15 mins)
+### 8. Review and Reflect (5 mins)
 
-This activity combines students' knowledge of rolling statistics and beta to plot the 30-day rolling betas of a group of stocks to determine the stock that would be the most conservative choice (the stock with the lowest beta).
+In this activity, instructors end the class with a review/discussion regarding students' technical interviews.
 
-**Instructions:**
+Facilitate student reflection by asking the students questions like:
 
-* [README.md](Activities/06-Stu_Beta/README.md)
+* How did they feel during their mock interviews? Why did they feel that way?
 
-**Files:**
+* Did the problem-solving methodologies help their interviewing performances?
 
-* [beta_comparisons.ipynb](Activities/06-Stu_Beta/Unsolved/beta_comparisons.ipynb)
+* What could they have done better in the future?
 
-### 11. Instructor Do: Review Beta Comparisons (5 mins)
+* Do they feel more confident now that they've had some technical interview practice?
 
-**Files:**
-
-* [beta_comparisons.ipynb](Activities/06-Stu_Beta/Solved/beta_comparisons.ipynb)
-
-Open the solution and explain the following:
-
-* Remember that combining the separate DataFrames for each social media stock and the S&P 500 into a single DataFrame makes it easier to calculate the daily returns for each stock by simply calling the `pct_change` function on the combined DataFrame.
-
-  ![combined-dataframe](Images/combined-dataframe.png)
-
-* The covariance quantifies the linear relationship between the each social media stock's returns and the returns of the overall market.
-
-  ![social-media-covariance](Images/social-media-covariance.png)
-
-* The variance quantifies the extent to which each data point tends to differ from the mean. In this case, variance describes the extent to which each daily return tends to differ from the overall average daily returns of the S&P 500.
-
-  ![sp500-variance](Images/sp500-variance.png)
-
-* The beta quantifies the relative volatility of each social media stock's returns to that of the overall market. For example, if the S&P 500 returns `10%` for the year, TWTR with a beta of `1.52` should expect to return approx. `15.2%` for the year.
-
-  ![social-media-beta](Images/social-media-beta.png)
-
-* Plotting multiple rolling beta values for each social media stock shows the progression of relative volatility to the market over time.
-
-  ![rolling-social-media-beta](Images/rolling-social-media-beta.png)
-
-* Based on the overall beta calculations and the plotted chart, it is evident that `SNAP` holds the lowest beta or relative volatility to the market. Interestingly enough however, while `FB` and `TWTR` took a steep plunge in early 2019, `SNAP` rose dramatically.
-
----
-
-### 12. Instructor Do: Portfolio Returns (10 mins)
-
-In this activity, students will be introduced to the concept of calculating returns for a group of stocks rather than that of just a single stock. Students should understand that portfolios of stocks are used by investors to manage and diversify risk; defining a portfolio with varying capital allocations of stocks allows an investor to control and adjust their risk.
-
-**Files:**
-
-* [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.py)
-
-Walk through the solution and highlight the following:
-
-* To calculate portfolio returns, each stock's closing prices are added as a column to the final portfolio DataFrame.
-
-  ![portfolio-dataframe.png](Images/portfolio-dataframe.png)
-
-* Portfolio Daily Returns are first calculated individually with `pct_change`, but the total portfolio return is calculated using the weighted average (how much of each stock contributes to the total portfolio).
-
-  ![portfolio-returns.png](Images/portfolio-returns.png)
-
-* The portfolio returns can also be calculated using a dot product which is just a shortcut for the previous calculation. This can be handy for large portfolios with a lot of weights.
-
-  ![dot-product.png](Images/dot-product.png)
-
-* The purpose of a portfolio is to control the amount of risk and diversity in an investment. In the following example, AMD has more volatility than MU, so changing the weights of the portfolios (how much of each stock in invested in) may affect the returns.
-
-  ![risk-management.png](Images/risk-management.png)
-
----
-
-### 13. Students Do: Portfolio Planner Part I (20 mins)
-
-In this activity, students will work in pairs to research a group of 10 stocks, find the least to most volatile stocks, drop the top 5 highly volatile stocks, set portfolio weights to the remaining stocks according to risk profile, and perform an analysis of a `$10,000` investment in the portfolio over time.
-
-**Instructions:**
-
-* [README.md](Activities/08-Stu_Portfolio_Planner_Part_I/README.md)
-
-**Files:**
-
-* [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Unsolved/portfolio_planner_part_1.ipynb)
-
-### 14. Instructor Do: Review Portfolio Planner Part I (10 mins)
-
-**Files:**
-
-* [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Solved/portfolio_planner_part_1.ipynb)
-
-Open the solution and explain the following:
-
-* Make sure to sort the DataFrame by index in ascending order when dealing with datetime indexes so as to start from the past to the present. This is particularly important when employing time-series functions such as `pct_change`.
-
-  ![portfolio-planner-part-1-combine-sort-df](Images/portfolio-planner-part-1-combine-sort-df.png)
-
-* Annualized volatility is calculated by multiplying standard deviation by the square root of the number of trading days in a year (252 days). Using the `sort_values` function quickly sorts each stock from least volatile to most volatile.
-
-  ![assess-riskiness](Images/assess-riskiness.png)
-
-* Portfolio weights represent the percentage of allocated capital to each stock. For example, a weight of `0.5` indicates that a single stock will be allocated `50%` of the capital within the portfolio. The sum of the weights should always equal `1`.
-
-* The `dot` function multiples the weights by the daily return of each columns (4 weights, 4 stocks) and sums the total for each row.
-
-  ![portfolio-planner-part-1-weights](Images/portfolio-planner-part-1-weights.png)
-
-* Cumulative returns indicate the total return profit or loss from a percentage standpoint. Multiplying an initial investment of `$10,000` by the series of cumulative returns outputs a trend over time of cumulative profit or loss.
-
-  ![portfolio-planner-cumulative-returns](Images/portfolio-planner-cumulative-returns.png)
-
-  ![plot-cumulative-profit-loss](Images/plot-cumulative-profit-loss.png)
-
----
-
-### 15. BREAK (40 mins)
-
----
-
-### 16. Students Do: Portfolio Planner Part II (20 mins)
-
-In this activity, students will work in pairs to continue where they left off in part I of evaluating portfolios. Students will now evaluate correlations and sharpe ratios of the 10 stocks, filter by only non-correlated and positive sharpe ratio stocks, set equal-weighted portfolio allocations to the remaining stocks, and perform an analysis of a `$10,000` investment in the portfolio over time. Then compare the `$10,000` investment in the portfolio to other `$10,000` investments in lesser optimized portfolios.
-
-**Instructions:**
-
-* [README.md](Activities/09-Stu_Portfolio_Planner_Part_II/README.md)
-
-**Files:**
-
-* [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb)
-
-### 17. Instructor Do: Review Portfolio Planner Part II (5 mins)
-
-**Files:**
-
-* [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Solved/portfolio_planner_part_2.ipynb)
-
-Open the solution and explain the following:
-
-* The 10 stocks will need to be filtered down by keeping only non-correlated stocks and stocks with positive sharpe ratios. This is to maximize diversification of the portfolio (and therefore minimize volatility) and maximize the returns-to-risk of the optimized portfolio, respectively.
-
-* Stock correlation describes the linear relationship between the returns of two stocks and indicates whether returns of both stocks tend to move in tandem, inversely, or random (no correlation). The `corr` function used in conjunction with the `heatmap` function from the `seaborn` library makes it easy to spot the highly correlated stocks. In this case, the daily returns of `FANG` and `JNJ` appear to be highly correlated and can be dropped from the DataFrame.
-
-  ![part-2-correlation](Images/part-2-correlation.png)
-
-* Unlike volatility which measures risk, sharpe ratios describe the riskiness of stocks relative to their returns. Therefore, sharpe ratios measure risk-to-reward and indicate *value-driven* investments. The `mean` and `std` functions can be used to calculate the sharpe ratios of stocks.
-
-  ![part-2-sharpe-ratios](Images/part-2-sharpe-ratios.png)
-
-* An equal-weighted portfolio consists of the same weight for every stock in the portfolio (totaling `1`). For example, an equal-weighted stock portfolio of `5` stocks would have weights of `0.2`, `0.2`, `0.2`, `0.2`, and `0.2` to each stock.
-
-  ![part-2-equal-weighted](Images/part-2-equal-weighted.png)
-
-* The overlay chart of corresponding `$10,000` investments in each respective portfolio over time describes the following:
-
-  * The non-correlated and sharpe-ratio optimized portfolio performs the best of the four portfolios and consistently acheives higher returns with minimized volatility.
-
-  * The non-correlated (diversifed) portfolio performs the second worst of the four portfolios and manages to minimize volatility but at the expense of higher returns.
-
-  * The original/unoptimized portfolio performs the second best of the four portfolios and acheives higher returns that but at the expense of more volatility. For example, returns rose quicker but fell faster as well (notice the dip in early 2019).
-
-  * The risk-optimized portfolio performs the worst of the four portfolios and acheives minimal volatility but at the expense of returns.
-
-  ![part-2-overlay](Images/part-2-overlay.png)
-
-### 18. Instructor Do: Decompression (5 mins)
-
-Before moving onto the reserved in-class office hours at the end of the day, make some time for students to vocalize their thoughts.
-
-* Provide some positive feedback for the students as they have come a long way in this Pandas unit! Emphasize that they not only have learned how to use the Pandas library, but have also begun performing analyses and investment techniques like professional investors!
-
-* Survey how students feel and what lingering confusions they may still have regarding the concepts/technicals taught so far; students should feel challenged but not lost.
-
-* Ask students the following potential questions:
-
-  * What activity was the most enjoyable to complete? The most fulfilling?
-
-  * What activity was the most stressful or difficult and why?
-
-  * Did the progression or flow of the day make sense?
-
-* Underscore that students have come a long way and that they should feel proud. Mastery doesn't happen in a day, and so practice makes perfect!
-
-Let the students know that the following activity is reserved for in-class office hours and is there for anyone who might have additional questions; would like to review more; or would just like to discuss more FinTech related topics!
-
-### 19. Instructor Do: Structured Review (35 mins)
-
-**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
-
-Please use the entire time to review questions with the students before officially ending class.
-
-Suggested Format:
-
-* Ask students for specific activities to revisit.
-
-* Revisit key activities for the homework.
-
-* Allow students to start the homework with extra TA support.
-
-Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
-
-### End Class
-
-- - -
-
-Trilogy Education Services © 2019. All Rights Reserved.
+Then, slack out the coding solutions for each interview question to the students for future reference.

@@ -159,7 +159,7 @@ Note: you might need to make some of the `CSV` input files available by also upl
 
 * In this activity, students will calculate a regression line to predict the price of a house using the Boston Housing dataset and the SageMaker built-in `Linear Learner` algorithm.
 
-* **File**: [boston-housing-regression.ipynb](Activities/02-Stu_Housing_Linear_Regression/boston-housing-regression.ipynb)
+* **File**: [boston-housing-regression.ipynb](Activities/02-Stu_Housing_Linear_Regression/Unsolved/boston-housing-regression.ipynb)
 
 * **Instructions:** [README.md](Activities/02-Stu_Housing_Linear_Regression/README.md)
 
@@ -169,7 +169,7 @@ Note: you might need to make some of the `CSV` input files available by also upl
 
 * Reassure students that it's okay if this was difficult. SageMaker APIs have a learning curve, as do other AWS resources, along with Machine Learning in general. They will get a lot of practice with this today!
 
-* Open up [boston-housing-regression.ipynb](Activities/02-Stu_Housing_Linear_Regression/boston-housing-regression.ipynb).
+* Open up [boston-housing-regression.ipynb](Activities/02-Stu_Housing_Linear_Regression/Solved/boston-housing-regression.ipynb)
 
 * During the review, the high level steps are as follows:
 
