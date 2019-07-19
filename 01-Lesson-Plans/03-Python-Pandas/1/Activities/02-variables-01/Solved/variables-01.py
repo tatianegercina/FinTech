@@ -1,5 +1,4 @@
-#Variables
-# The nouns of programming
+# Variables
 
 # This is a comment - any code commented out is not run -
 # meaning that any code or text commented out is ignored.
@@ -13,7 +12,7 @@ As in single line comments, any code contained within multi-line comments are no
 meaning that any code commented out is ignored.
 """
 
-#Topic: strings
+# Topic: Strings
 
 # Create a variable named subject with no value (None):
 subject = None
@@ -28,65 +27,54 @@ first_name = ""
 first_name = "Ada"
 
 # Create a variable, last_name, and assign it a value of a string, "Lovelace".
-
+last_name = "Lovelace"
 
 # Create a variable, full_name, and assign it a value of the combination of first_name and last_name with a space.
-
-
+full_name = f"{first_name} {last_name}"
 
 # Create a variable, profession, and assign it a value of a string, "Computer Programmer".
-
-
+profession = "Computer Programmer"
 
 # Create a variable, known_for, and assign it a value of a string, "First Computer Programmer".
-
-
+known_for = "First Computer Programmer"
 
 # Create a variable, first_algorithm, and assign it a value of a string, "Analytical Engine".
-
-
+first_algorithm = "Analytical Engine"
 
 # Create a variable, city_location, and assign it a value of a string, "London";
-
-
+city_location = "London"
 
 # Create a variable, country_location, and assign it a value of a string, "England";
-
-
+country_location = "England"
 
 # Create a variable, nationality, and assign it a value of a string, "British";
+nationality = "British"
 
 
-
-#Topic: integers
+# Topic: Integers
 
 # Create a variable, birth_year, and assign it with an integer of 1815.
-
-
+birth_year = 1815
 
 # Create a variable, death_year, and assign it with an integer of 1852.
-
-
+death_year = 1852
 
 # Create a variable, age_at_passing, and assign it a value of death_year minus birth_year.
-
-
+age_at_passing = death_year - birth_year
 
 # Create a variable, year_of_publish, and assign it with an integer of 1842.
+year_of_publish = 1842
 
 
+#Topic: Print
 
-#Topic: print
+# Print "First Name: " and first_name
+print(f"First Name: {first_name}")
 
-##print: "First Name:" and first_name
+# Print: "Last Name:" and last_name
+print(f"Last Name: {last_name}")
 
-
-
-##print: "Last Name:" and last_name
-
-
-
-##print: "Profession: " and profession
+# Print: "Profession: " and profession
 
 
 
