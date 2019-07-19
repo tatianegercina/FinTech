@@ -196,33 +196,47 @@ Once all volunteers have presented, tie everything together by explaining the fo
 
 ---
 
-### 9. Student Do: Lending Thought Experiment (30 min)
+### 9. Student Do: Thought Experiment (25 mins)
 
-In this activity, students will break into groups of 2 to 4 to devise a solution to the traditional borrowing/lending finance problem that FinTech has come to solve. This group thought experiment should get students thinking about how technology has been applied to bolster the financial services industry.
+In this activity, students will once again break off into groups of `2-4` to define and articulate the challenges faced by the Altruistic Alpacas charity. They will need to list at least 5 financial or technical challenges associated with each of the 5 core problem areas defined by the client.
 
-**File:** [README.md](Activities/02-Stu_FinTech_Thought_Experiment/README.md)
+**Files:**
+
+* [Thought Experiment Slides]()
+
+Use the slides to setup the first thought experiment.
+
+* In essence, this experiment has students attempting to define the financial and technical challenges that the charity is facing. Students may have a mix of financial and technical backgrounds, but this exercise should force them to think creatively about the problem and identify challenges from both the financial and technical perspective.
+
+* The key to executing this exercise in the classroom is in ensuring that students are engaged to think outside of their sphere of knowledge and to think deeply about each problem.
+
+Set a time for 25 minutes and allow students to dicuss their options. Remind them that they should be prepared to discuss these issues with the class afterwards.
+
+As students are working on this challenge, you and your TAs should walk around and listen to student conversations. When appropriate, nudge them to think more critically. For instance:
+
+* If students seem to have focused on only the financial aspects of the problem, prod them to think about the technical challenges and vice versa. Many students may rely on their personal backgrounds, but this is a good time to think outside the box. Have they considered only an analytical approach? If so, ask about a machine learning/AI approach. Have they considered a cryptocurrency or blockchain solution?
+
+* If students seem to have a full list of financial and technical challenges, ask them about regulatory or security issues that they may face. Prompt them to also think about governance and cross-border issues with an international charity.
 
 ---
 
-### 10. Instructor Do: Review Lending Thought Experiment  (20 min)
+### 10. Instructor Do: Review Thought Experiment  (25 mins)
 
 **File:** [slideshow-placeholder]()
 
-* Give each group 3 or 4 minutes (adjust based on the class size and remaining time) to briefly explain their solution and how it solves the traditional lending problem.
+After time is up, ask a few student groups to share some of their identified challenges. Consider opening a notepad file or using the whiteboard to track a running list of the challenges for each problem area.
 
-* After each group has presented their findings, open the slideshow and go over the following:
+Once you've gotten a large enough list, switch to teh slides where it breaks down some of the potential solutions to solving these problems and overcoming these challenges. Be candid that the solution may not be comprehensive, but it should give them some ideas about how FinTech can be used on various fronts to address the problems.
 
-  * The traditional lending space has become disrupted with the advent of peer-to-peer lending.
+* The slides provide example solutions to each core problem that the client identified. While some are more concrete than others, try not to get bogged down into the details. These slides are meant to provide students fodder for thought.
 
-  * As the name suggests, peer-to-peer lending involves connecting borrowers and lenders from a marketplace of individuals rather than between an individual and a financial institution.
+* When appropriate in the slides, ask students for examples.
 
-  * Peer-to-peer lending invokes lower loan interest rates because there is a greater selection––and,therefore,competition––among potential borrowers and lenders.
+* If you have stories relevant to the slides from your personal experience, feel extra encouraged to share!
 
-  * Because there is a greater selection of potential borrowers and lenders in peer-to-peer lending, there is also higher degree of tolerance when it comes to loan eligibility requirements. Financial institutions may need to abide by minimum loan eligibility requirements; a personal investor or lender, on the other hand, does not.
+Wrap up the activity by reminding students that while these solutions may not have completely addressed all of the challenges identified, they show the promise of FinTech solutions on complex problems like these.
 
-  * LendingClub is a prime example of peer-to-peer lending. LendingClub is the world's leading online marketplace for connecting borrowers and investors. Their mission is to transform the banking industry to make it more transparent, efficient, and customer-friendly.
-
-Ask if there are any questions before moving on.
+Encourage students by reminding them that they will soon get to dig into these technologies in-depth during future classes!
 
 ---
 
