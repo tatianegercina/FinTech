@@ -91,7 +91,7 @@ print(statement_one)
 # Create a variable, statement_two, and assign it a value of a string:
 # "She is commonly referred to as the first computer programmer"
 statement_two = f"She is commonly referred to as the {known_for}."
-print(statmeent_two)
+print(statement_two)
 
 # Create a variable, statement_three, and assign it a value of a string:
 # "In 1842 she published the first Algorithm, the Analytical Engine, at the age of 27."
