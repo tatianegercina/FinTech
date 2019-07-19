@@ -218,7 +218,7 @@ Encourage students to practice using GitHub before the next class and attend off
 
 ---
 
-### 7. Instructor Do: FinTech's Past, Present, Future (5 min)
+### 7. Instructor Do: FinTech's Past, Present, and Future (5 min)
 
 In this activity, you will transition students from the technical demos of the first half of the class (command line and git GUI) to the more interactive discussion-based second half. Now we'll cover the concepts and background information of the FinTech realm, focusing on the history of FinTech, the current state of its ecosystem, and its future possibilities.  
 
