@@ -1,4 +1,4 @@
-# 3.1 Lesson Plan: The Emergence of Python! (6:30 PM)
+# 2.1 Lesson Plan: The Emergence of Python! (6:30 PM)
 
 ## Overview
 
@@ -67,7 +67,7 @@ Review the advantages of using Python.
 * Python also has libraries and functions, such as NumPy and Pandas, that were developed specifically to help create financial applications and support data visualization.
 
 * Creating data visualizations with Python allows data elements and their complexity and relationships to be visualized. This is especially valuable for financial algorithms that require trend or time analysis.
-  
+
 Slack out the following link to students. Tell them that this is a great resource for more information about FinTech-related Python libraries: https://financetrain.com/best-python-librariespackages-finance-financial-data-scientists/.
 
 ---
@@ -282,7 +282,7 @@ Open the slideshow and use the slides to discuss concepts related to variables. 
 * Variables allow us to name our data in ways that make it easier to understand and use in code, and provides the freedom of choice in regard to variable names.
 
   * For example, computers allow us to name a string of text characters something like `first_name` or `first_nm`.
-  
+
   * Either way works, and both provide meaning for a person reading the code.
 
 * Variables have three main operations: create, put, and retrieve.
@@ -298,7 +298,7 @@ Open the slideshow and use the slides to discuss concepts related to variables. 
 * All variables have a **data type**.
 
   * Example data types that will be leveraged in this class include string, integer, float, double, and Boolean.
-  
+
   * Data types correspond to the type of data being stored (letters/words, phrases, or numbers).
 
 * Depending on the type of data that you store, Python provides different functions for that data. For example, you can find the length of a string of characters (how many letters are in the string).
@@ -406,7 +406,7 @@ Review the solution to the variables activity, highlighting the following points
 * String formatting can be used to improve the appearance of values when they are printed to the screen.
 
   * Note that numeric values should only be formatted for display purposes.
-  
+
   * Storing a numeric value as a variable with a percent sign or dollar sign changes the type to a string, which also eliminates the ability to use numerical functions (sum, avg, etc.).
 
 Engage students with the following review questions:
@@ -495,7 +495,7 @@ Explain the following points:
 
   * Colons are used to indicate what action needs to be taken if the condition evaluates as `True`.
 
-Open a console within JupyterLab and live code the example of the self-driving car:  
+Open a console within JupyterLab and live code the example of the self-driving car:
 
 * What would happen if a driver fell asleep behind the wheel of a car? Well, if it's a self-driving car, nothing. The car's safety mechanisms will activate, and the car will begin auto-piloting itself to avoid collisions and swerving. If it's not a driverless car, well, a miracle might be needed. An example of such a case could look like the following:
 
@@ -514,7 +514,7 @@ Open a console within JupyterLab and live code the example of the self-driving c
 * Conditionals operate based on Boolean conditions: `True` or `False` values.
 
   * If a conditional statement returns `True`, the corresponding code will execute.
-  
+
   * If a conditional statement evaluates as `False`, the program will behave in a different way.
 
     ```python
@@ -557,7 +557,7 @@ Open [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py) an
 * Variables can be used to store condition requirements.
 
   * Instead of specifying what the condition is, it can be stored in a variable. If the condition needs to be updated, the only thing that needs to be updated is the value of the variable.
-  
+
   * In the following example, `y` is the condition stored in a variable. `y` can be updated to any number, and the program will dynamically evaluate the condition.
 
     ```python
@@ -570,7 +570,7 @@ Open [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py) an
 * Conditionals can also be used to check inequality.
 
   * There will be instances where computations/actions should not be executed if equality is not achieved.
-  
+
   * The inequality operator returns `True` if the two values do not equal one another.
 
     ```python
@@ -582,7 +582,7 @@ Open [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py) an
 * Conditionals can include one or many conditions. When more than one condition is provided, the conditions have to be separated by logical operators. Logical operators include `AND` (&&) and `OR` (||).
 
   * `AND` requires that both conditions return `True` for the action/computation to occur.
-  
+
   * `OR` only requires one condition to return `True`.
 
     ```python
@@ -595,7 +595,7 @@ Open [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py) an
 * Complex conditional statements can be created by **nesting** if-else statements.
 
   * Nested if-else statements allow you to execute layers of computation.
-  
+
   * In order for a nested if-else statement to execute, the first if-else condition must return `True`.
 
   * Note that the `elif` keyword can be used to include an extra set of conditions within the if-else decision structure. `elif` works just as `if` does.
@@ -857,7 +857,7 @@ Open [loop_dee_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py) and rev
 * Loops need something to loop over. This can be a sequence of numbers, known as a **range**, or a sequence of letters like a word or string.
 
   * The `range` function can be used to create a sequence of numbers based on the limit provided as input (e.g., 5).
-  
+
   * Ranges begin with 0 and increment by one. When looping over the range of numbers, we will put each number in variable `x`.
 
     ```python
@@ -918,9 +918,9 @@ Now introduce while loops and compare them to for loops.
 * While loops require an **iterator**, or counter variable, to be created and incremented. If the iterator is not incremented, the loop will not iterate correctly.
 
   * For example, in the following block of code, if `i` is not incremented, `i` will always equal 1.
-  
+
   * The syntax to increment an iterator is shown below. The value to the right of the equals sign is added to the value of `i`.
-  
+
   * The `+` indicates to increment; `-` indicates to decrement.
 
     ```python

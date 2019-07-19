@@ -1,4 +1,4 @@
-## 3.2 Lesson Plan: Data Structures and Functions (6:30 PM)
+## 2.2 Lesson Plan: Data Structures and Functions (6:30 PM)
 
 ### Overview
 
@@ -1004,7 +1004,7 @@ Walk through each solution and highlight the following:
 
 * When a nested list object has been created, the next step is to access the data. Accessing elements in a nested list works similar to a one-dimensional list:
 
-  * To access elements, call the list object and then specify the index for the desired value. 
+  * To access elements, call the list object and then specify the index for the desired value.
 
   * Because these lists are nested, two indexes will need to be provided: one index for the top level item, and one for the embedded element that needs to be retrieved.
 
@@ -1407,7 +1407,7 @@ Ask if there are any questions before moving on.
 
 **File:** [functions.py](Activities/09-Ins_Functions/Solved/functions.py)
 
-Open `functions.py` and go through the code while explaining the following points: 
+Open `functions.py` and go through the code while explaining the following points:
 
 * Functions allow you to define a reusable block of code. This code block (function) can be used whenever or wherever you need it within a program.
 
