@@ -50,4 +50,6 @@ In this activity, we're going to be practicing a bit more with terminal commands
 
     ![Deleting a folder](Images/11.PNG)
 
-You're done! Play around in the terminal some more if you want to explore the commands in the cheatsheet provided in hints.
+## Hints
+
+Use the terminal cheat sheet to help guide you on which terminal commands should be used for each step.
