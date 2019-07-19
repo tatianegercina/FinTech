@@ -66,7 +66,9 @@ In this section, you will discuss the concept of FinTech as well as provide some
 
 **File:** [Defining FinTech Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_6_0)
 
-Open the slideshow and review the slides, while presenting the following questions and answers to the class. (Slides 4–9)
+Open the slideshow and review today's objectives. (Slide 3)
+
+Then move on to the first topic of the day: defining FinTech. Review the slides while presenting the following questions and answers to the class. (Slides 4–9)
 
 * What exactly *is* FinTech?
 
@@ -102,7 +104,7 @@ In this section, provide an overview of the topics and technologies used in the 
 
 **File:** [Course Overview Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5d56f58a01_0_34)
 
-Use the slideshow to go over the course agenda and timeline. (Slides 9–14)
+Use the slideshow to go over the course agenda and timeline. (Slides 10–13)
 
 * **Weeks 1–2:** Students will be introduced to the world of FinTech and the current financial landscape. Then, they will dive into the financial modeling methods of the current industry-standard tool, Microsoft Excel.
 
@@ -118,15 +120,19 @@ Use the slideshow to go over the course agenda and timeline. (Slides 9–14)
 
 * **Weeks 23–24:** Students are tasked with their final project.
 
+Then, explain that these skills and knowledge translate into real jobs. Activities and homework assignments will allow students to apply real-world FinTech job skills. (Slides 14–18)
+
+Answer any questions before moving on.
+
 ---
 
 ### 4. Instructor Do: Tips (10 min)
 
 Provide students with some encouragement and tips for overcoming the mental frustrations they will more than likely face throughout the course.
 
-**File:** [Tips Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g480f0dd0a7_0_19)
+**File:** [Tips Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_6_12)
 
-Open the next series of slides and emphasize the following points. (Slides 15–21).
+Open the next series of slides and emphasize the following points. (Slides 19–25).
 
 * Embrace your inner toddler. Recognizing how little you know is a first step toward growth as a learner. Hard work, humility, and a relentless desire to improve are essential for succeeding in this program. 
 
@@ -152,9 +158,9 @@ Open the next series of slides and emphasize the following points. (Slides 15–
 
 In this section, engage students with a facilitated discussion about why FinTech has become so prevalent today.
 
-**File:** [The Rise of FinTech Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_0_0)
+**File:** [The Rise of FinTech Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_6_21)
 
-Open the slideshow and use the slides to help guide your discussion, focusing on the following talking points. (Slides 23–30)
+Open the slideshow and use the slides to help guide your discussion, focusing on the following talking points. (Slides 27–34)
 
 As you review the slides, look for opportunities to prompt students to reflect. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer. For example, ask students to share examples of innovative FinTech companies and how they are disrupting the financial services industry.
 
@@ -206,7 +212,7 @@ In this activity, students will once again break off into groups of 2 to 4 to de
 
 **Notes:**
 
-* Use the slides to set up this activity. (Slides 34–37)
+* Use the slides to set up this activity. (Slides 38–41)
 
 * In essence, this thought experiment asks students to define the financial and technical challenges of the Altruistic Alpacas charity. Students may have a mix of financial and technical backgrounds, but this exercise should force them to think creatively about the problem and identify challenges from both a financial and technical perspective.
 
@@ -228,7 +234,7 @@ In this activity, students will once again break off into groups of 2 to 4 to de
 
 When time is up, ask a few groups to share some of the challenges they identified. Consider opening a notepad file or using the whiteboard to track a running list of the challenges for each problem area.
 
-Once you have a list of challenges, use the slides to break down some of the potential solutions to these problems. (Slides 39–57)
+Once you have a list of challenges, use the slides to break down some of the potential solutions to these problems. (Slides 43–61)
 
 Tell students that the following: 
 
