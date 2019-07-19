@@ -1,12 +1,14 @@
-## Trading Log
+# Trading Log
 
-### Background 
+In this activity, you will use lists to create a trading log that tracks profits and losses for each market day of the month. You will iterate over the list to calculate the highest and lowest profit and loss days. The goal of this activity is to use for loops and lists in order to track metrics related to trading performance.
 
-Karen, an equity trader, has been tracking her profits and losses over the course of the last 30 days. She wants to quickly analyze her ongoing performance as she continues to log her profits and losses every day. Understanding her profits and losses each day will allow Karen to evaluate her performance for all trades monthly, weekly, and over time. Help Karen create a program to analyze her results. 
+## Background
 
-### Instructions
+Karen, an equity trader, has been tracking her profits and losses over the course of the last 30 days. She wants to quickly analyze her ongoing performance as she continues to log her profits and losses every day. Understanding her profits and losses each day will allow Karen to evaluate her performance for all trades monthly, weekly, and over time. Help Karen create a program to analyze her results.
 
-Using the [starter-file](Unsolved/trading_log.py), complete the following steps:
+## Instructions
+
+Using the [starter file](Unsolved/trading_log.py), complete the following:
 
 * Create a for loop over the `trading_pnl` list object, and cumulatively sum up the `total` profits/losses and the `count` of actual trading days.
 
@@ -14,7 +16,7 @@ Using the [starter-file](Unsolved/trading_log.py), complete the following steps:
 
 * Create additional lists `profitable_days` and `unprofitable_days` and use if-else statements to group daily trading values into each corresponding list.
 
-* Determine the following: 
+* Determine the following:
 
   * Number of total trading days
 
@@ -34,11 +36,11 @@ Using the [starter-file](Unsolved/trading_log.py), complete the following steps:
 
   * Percentage of unprofitable days
 
-  * Print the values of only profitable days. 
+  * Print the values of only profitable days.
 
-  * Print the values of only unprofitable days. 
+  * Print the values of only unprofitable days.
 
-### Hints
+## Hints
 
 Use the below formulas:
 
