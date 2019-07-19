@@ -1,4 +1,4 @@
-## 3.3 Lesson Plan: Functions and Files (10:00 AM)
+## 2.3 Lesson Plan: Functions and Files (10:00 AM)
 
 ### Overview
 
@@ -30,7 +30,7 @@ By the end of this class, students will be able to:
 
 * Remember that students most likely have varying levels of finance experience. Therefore, make sure your lectures are clear and thorough for newcomers while serving as interesting refreshers for veterans. Draw upon your industry experience or tell a story that relates to the concepts at hand; make things simple to understand as well as memorable!
 
-* Make sure TAs circulate the classroom to provide assistance to students who are still struggling with Python concepts. If the lesson moves ahead of schedule, you can use the extra time to review those topics. 
+* Make sure TAs circulate the classroom to provide assistance to students who are still struggling with Python concepts. If the lesson moves ahead of schedule, you can use the extra time to review those topics.
 
 * Remind students to activate their conda environment so that they can access libraries like NumPy, which they will need for this lesson. If they have issues importing the NumPy library, suggest running `conda install anaconda` or `conda install numpy`. The conda environment may not have included the Anaconda tools, as this is a common error.
 
@@ -311,13 +311,13 @@ Open [time_value.py](Activities/03-Ins_Time_Value_of_Money/Solved/time_value.py)
 * The purpose of a function is to reuse blocks of code. The `calculate_future_value` function contains the logic required to calculate the future value of money.
 
   * The function can be called over and over again with new inputs, and a future value is calculated for each of those inputs.
-  
+
   * In programming, this concept of code reuse is called DRY (**D**on't **R**epeat **Y**ourself).
 
 * Functions don't always have to be user defined; there are many built-in Python functions already available for use. For example:
 
   * List objects have multiple functions such as `append()`, `len()`, and `remove()`.
-  
+
   * Dict objects have multiple functions such as `keys()` and `items()`.
 
 * In previous examples, functions were called by supplying values for each of the parameters. However, functions can also be called by using variables to pass in the values for the parameters. The parameters for `calculate_future_value` are `present_value`, `interest_rate`, `compounding_periods`, and `years`.
@@ -456,7 +456,7 @@ Open the [solution file](Activities/06-Stu_Imports/Solved/Core/net_present_value
 * Each list of cash flows represents a project proposal.
 
   * The first element of each list represents the project's initial investment.
-  
+
   * The remaining elements of the list represent the cash flows as a result of the initial investment.
 
 * Resolving the return values of the NPV functions as key-value pairs lets us easily retrieve the NPV value of an associated scenario, for example, when looking to determine the scenario associated with the calculated max NPV value.
@@ -611,7 +611,7 @@ Open the [solution file](Activities/08-Stu_File_IO/Solved/ecommerce_traffic.py) 
 * When text is read from files, it will first be interpreted as strings.
 
   * To do numerical calculations, we'll have to convert the values from string datatypes to int or float datatypes.
-  
+
   * The `int()` datatype conversion function converts a string to an integer.
 
     ```python
@@ -670,7 +670,7 @@ Open [csv_reader.py](Activities/09-Ins_CSV_Reader/Solved/csv_reader.py). Walk th
 
   ```python
   csvreader = csv.reader(csvfile, delimiter=',')
-  
+
   # Read each row of data after the
   for row in csvreader:
       # Print the row
