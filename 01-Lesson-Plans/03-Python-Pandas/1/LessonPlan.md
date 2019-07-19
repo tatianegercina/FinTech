@@ -14,6 +14,8 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * Overall, this should be a fun day for students and will help them build confidence with their programming skills. Be sure to offer a lot of support and encouragement to beginners.
 
+* Please reference our [Student FAQ](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
+
 - - -
 
 ### 1. Instructor Do: Welcome Students (0:05)
