@@ -30,7 +30,7 @@ By the end of this class, students will be able to:
 
 * While Anaconda virtual environments and environment variables are important concepts, you do not need to go in depth about them at this point in the course. The associated activity mainly serves as a technical precursor to the later units in the course, and ensures that students will be able to complete future activities without dependency issues or conflicts.
 
-* Emphasize that understanding the history and larger context of FinTech is just as important as knowing what FinTech is. Employers will measure candidates not only by their technical skills, but also by their knowledge of what is happening in the financial services industry and ability to grasp the bigger picture.
+* Emphasize that understanding the history and larger context of FinTech is just as important as knowing what FinTech is. Employers will measure candidates not only by their technical skills, but also by their knowledge of what is happening in the financial services industry and the ability to grasp the bigger picture.
 
 ### Slideshow and Time Tracker
 
