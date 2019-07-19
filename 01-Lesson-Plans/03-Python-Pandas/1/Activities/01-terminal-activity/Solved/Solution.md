@@ -16,7 +16,7 @@ In this activity, we're going to be practicing a bit more with terminal commands
 
     ![Finding the current path](Images/03.PNG)
 
-    Notice that the path you're currently at is the folder where you right clicked to start git bash.
+    **Note:** Notice that the path you're currently at is the folder where you right clicked to start git bash.
 
 4. Make a new directory named `Activity-1` and then list the contents of the current directory again to make sure it worked.
 
