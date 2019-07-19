@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's lesson will focus on command line basics and setting up an Anaconda virtual environment. It will also further investigate the key factors leading to the exponential growth of the FinTech industry.
+Today's lesson will focus on command line basics and setting up an Anaconda virtual environment. It will also further investigate the key factors leading to the growth of the FinTech industry.
 
 Specifically, students will be introduced to basic command line and virtual environment skills, which will help them use more advanced CLI tools in the next lesson as well as future units in the course; learn more about the history of FinTech and the areas that have been disrupted through innovation; and collaborate with others to make predictions about various FinTech domains in the form of future news headlines.
 
