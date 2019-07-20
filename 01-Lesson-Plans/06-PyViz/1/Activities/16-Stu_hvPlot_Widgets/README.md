@@ -6,20 +6,28 @@ Using hvPlot, analyze and plot the provided hospital claims data. Use the widget
 
 ## Instructions
 
-1. Open the [starter file](Unsolved/plotting_relocation.ipynb), and filter the `hospital_data` for **DRG Definition** `638 - DIABETES W CC`. `638 - DIABETES W CC` is the diagnostic code for Diabetes conditions with complications or co-morbidities.
+1. Open the [starter file](Unsolved/plotting_relocation.ipynb), and group the filtered hospital data by **Average Total Payments** and **Provider State**. Then, sum by **Average Total Payments**. Hint: Use Pandas `groupby` function.
 
-2. Get an understanding of NJ costs by filtering the by **Provider State** of `NJ`.
+2. Plot the aggregated data using `hvplot.bar` function. Explore the unsorted data using the **pan** and **zoom** widgets to find the costs for the state of **New Jersey**. Zoom in and out of the data to get a better understanding of costs for different states.
 
-3. Using the filtered hospital data for `638 - DIABETES W CC`, identify the average of all payments by **Provider State**. Then, sum by **Average Total Payments**. Hint: Use Pandas `groupby` function.
+    ![exploring_nj_data.gif](Images/exploring_nj_data.gif)
 
-4. Plot the aggregated data using `hvplot.bar` function. Explore the unsorted data using the **pan** and **zoom** widgets. Zoom in and out to get better clarity on the data.
+3. Sort the underlying visualization data from lowest to highest average total payments. Identify the 10 states with the **lowest** Diabetes diagnostic costs.
 
-5. Sort the underlying visualization data from lowest to highest average total payments. Identify the 10 states with the lowest Diabetes diagnostic costs.
+    ![exploring_lowest_states.gif](Images/exploring_lowest_states.gif)
 
-6. Use the **box zoom** widget to zoom in on all states with total average payments less than $2000.
+4. Use the **box zoom** widget to zoom in on **all states** with total average payments **less than $2000**.
 
-7. Reset the visualization and use the **pan** widget to see the highest point of the visualization. Then, use the **box zoom** or **wheel zoom** widgets to zoom in on the data.
+    ![exploring_less_than.gif](Images/exploring_less_than.gif)
 
-8. Identify the 10 states with the highest total average payments for Diabetes diagnostic services.
+5. Reset the visualization and use the **pan** widget to see the highest point of the visualization. Then, use the **box zoom** or **wheel zoom** widgets to zoom in on the data.
 
-9. Use the **Save** widget to save your visualizations.
+    ![exploring_most_expensive.gif](Images/exploring_most_expensive.gif)
+
+6. Identify the 10 states with the **highest total average payments** for Diabetes diagnostic services.
+
+7. Use the **Save** widget to save your visualizations.
+
+- - -
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
