@@ -26,7 +26,7 @@ This week we will cover...
 
 * [Solutions](../../02-Homework/01-FinTech/Solutions/)
 
-* [Grading Rubric](Homework/GradingRubric.md)
+* [Grading Rubric](../../02-Homework/01-FinTech/GradingRubric.pdf)
 
 ### Supplemental
 
