@@ -4,6 +4,14 @@
 
 This week we will cover...
 
+### Slides
+
+* [1.1 Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit?usp=sharing)
+
+* [1.2 Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
+
+* [1.3 Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit?usp=sharing)
+
 ### Lesson Plans
 
 * [1.1 Lesson Plan](1/LessonPlan.md)
@@ -14,11 +22,9 @@ This week we will cover...
 
 ### Homework
 
-* [Instructions](Homework/Instructions/README.md)
+* [Instructions](../../02-Homework/01-FinTech/Instructions/README.md)
 
-* [Solutions](Homework/Solutions/)
-
-* [Solution Video](Homework/Solutions/HomeworkVideo.md)
+* [Solutions](../../02-Homework/01-FinTech/Solutions/)
 
 * [Grading Rubric](Homework/GradingRubric.md)
 
@@ -26,8 +32,6 @@ This week we will cover...
 
 * [Student Guide](Supplemental/StudentGuide.md)
 
-* [Video Guide](Supplemental/VideoGuide.md)
-
 - - -
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
