@@ -10,11 +10,11 @@ Please submit a [pull request](https://github.com/coding-boot-camp/FinTech-Lesso
 
 - - -
 
-### [Unit 1 - Excel](01-Lesson-Plans/01-Intro-to-FinTech)
+### [Unit 1 - Intro to FinTech](01-Lesson-Plans/01-Intro-to-FinTech)
 
-* [1.1 - Lesson Plan](01-Lesson-Plans/01-Excel/1/LessonPlan.md)
-* [1.2 - Lesson Plan](01-Lesson-Plans/01-Excel/2/LessonPlan.md)
-* [1.3 - Lesson Plan](01-Lesson-Plans/01-Excel/3/LessonPlan.md)
+* [1.1 - Lesson Plan](01-Lesson-Plans/01-Intro-to-FinTech/1/LessonPlan.md)
+* [1.2 - Lesson Plan](01-Lesson-Plans/01-Intro-to-FinTech/2/LessonPlan.md)
+* [1.3 - Lesson Plan](01-Lesson-Plans/01-Intro-to-FinTech/3/LessonPlan.md)
 
 - - -
 
