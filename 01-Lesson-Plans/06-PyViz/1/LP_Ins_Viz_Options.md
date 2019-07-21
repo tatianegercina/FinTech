@@ -57,7 +57,9 @@ Open the starter file, and perform a dry walkthrough of the solution, highlighti
 
   ![opt_title.png](Images/opt_title.png)
 
-* The `invert_axis` option is used to change the orientation of a visualization. An example of this would be showing a bar chart with bars moving horizontally rather than vertically.
+If time remains, discuss how to use the `opts` function to switch the x and y axes.
+
+* The `invert_axes` option is used to change the orientation of a visualization. An example of this would be showing a bar chart with bars moving horizontally rather than vertically.
 
   ```python
   # Invert axes
