@@ -4,6 +4,8 @@ This activity is a mini-project where students will create a data visualization 
 
 In this activity, students will use their new sentiment analysis skills, in combination to some of the skills they already master such as: Pandas, Pyviz, Plotly Expres and PyViz Panel.
 
+---
+
 ## Instructions
 
 For this activity you have two starting files:
