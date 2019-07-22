@@ -12,9 +12,9 @@ Perform the following:
 
     2. Make a variable called `c1_age` and have it equal to an integer of 65.
 
-    3. Make a variable called `c1_salary` and have it equal to 100000.00.
+    3. Make a variable called `c1_profession` and have it equal to "Web Developer".
 
-    4. Make a variable called `c1_profession` and have it equal to "Web Developer".
+    4. Make a variable called `c1_salary` and have it equal to 100000.00.
 
     5. Make a variable called `c1_species` and have it equal to "cat".
 
@@ -38,19 +38,21 @@ Perform the following:
 
     3. Make a variable called `c2_species` and have it equal to "mouse".
 
-    4. Make a variable called `c2_salary` and have it equal to.
+    4. Make a variable called `c2_profession` and have it equal "Accountant".
 
-    5. Make a variable called `c2_location` and have it equal to "Oakland, CA".
+    5. Make a variable called `c2_salary` and have it equal to 70000.
 
-    6. Make a variable called `c2_monthly_rent` and have it equal to 4000.
+    6. Make a variable called `c2_location` and have it equal to "Oakland, CA".
 
-    7. Make a variable called `c2_monthly_expenses` and have it equal to 500.
+    7. Make a variable called `c2_monthly_rent` and have it equal to 4000.
 
-    8. Make a variable called `c2_yearly_rent` and have it equal to `c2_monthly_rent` * 12.
+    8. Make a variable called `c2_monthly_expenses` and have it equal to 500.
 
-    9. Make a variable called `c2_yearly_expenses` and have it equal to `c2_monthly_expenses` * 12.
+    9. Make a variable called `c2_yearly_rent` and have it equal to `c2_monthly_rent` * 12.
 
-    10. Make a variable called `c2_savings` and have it equal to `c2_salary` - (`c1_yearly_rent` + `c2_yearly_expenses`)
+    10. Make a variable called `c2_yearly_expenses` and have it equal to `c2_monthly_expenses` * 12.
+
+    11. Make a variable called `c2_savings` and have it equal to `c2_salary` - (`c1_yearly_rent` + `c2_yearly_expenses`)
 
 3. Conditionals
 
