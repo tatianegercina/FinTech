@@ -117,7 +117,7 @@ else:
     print("Mr. Farley pays the same expenses at Mr. Snuggles")
 
 # Write an if-else statement to check if `c1_profession` is equal to "Web Developer" AND `c2_profession` is equal to "Accountant". If so, print a string of "Look a Web Developer and an Accountant", else print a string of "They are professionals."
-if c1_profession == "Web Developer" and c2_profession == Accountant:
-    print("Look a Web Developer and an Accountant"):
+if c1_profession == "Web Developer" and c2_profession == "Accountant":
+    print("Look a Web Developer and an Accountant")
 else:
     print("They are professionals")
