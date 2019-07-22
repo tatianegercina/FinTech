@@ -18,3 +18,7 @@ Open the starter file, and live code the following. Make sure to highlight the c
   dates = pd.date_range('1/1/2000', periods=1000)
   va_foreclosures_by_year  = pd.DataFrame(np.random.randn(1000, 1), index=idx, columns=list('num_foreclosures'))
   ```
+
+* The `kind` attribute can also be used to create area plots.
+
+* Depending on the type of analysis becoming completed, **scatter** and **area** charts may be more fitting.
