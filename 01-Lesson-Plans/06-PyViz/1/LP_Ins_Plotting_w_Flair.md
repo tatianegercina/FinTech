@@ -10,7 +10,7 @@ In this optional activity, the instructor demonstrates to students how to create
 
 Explain to students that **line** and **bar** plots are just the tip of the iceberg in terms of what hvPlot supports.
 
-* hvPlot also offers **area** and **scatter** plots. These plots are essential when visualizing and analyzing categorical/dimensional data at multivariate levels. An example would be considering real estate metric data across time, in terms of sales, foreclosures, and pending escrows.
+* hvPlot also offers **area** and **scatter** plots, just to name two more. These plots are essential when visualizing and analyzing categorical/dimensional data at multivariate levels. An example would be considering real estate metric data across time, in terms of sales, foreclosures, and pending escrows.
 
 * Because these plots support comparative analysis, they can be considered as more advanced than the standard **line** and **bar** plots. Adding these to any report would add extra visual and statistical flair.
 
