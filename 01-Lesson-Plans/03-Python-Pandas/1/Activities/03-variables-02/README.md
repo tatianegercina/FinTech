@@ -1,44 +1,38 @@
 # More Practice with Variables and Logic Check
 
-You will be getting more practice declaring, manipulating variables and if else statement in this exercise.
+You will be getting more practice declaring, manipulating variables and using if else statements in this exercise.
 
 ## Instructions
 
 Perform the following:
 
-1. Character One
+1. Create Character One
 
-    1. Make a variable called character_one_name and have it equal a string of Mr. Farley;
+    1. Make a variable called `c1_name` and have it equal a string of "Mr. Farley".
 
-    2. Assign a new value, Ms. Farley, to the variable character_one_name.
+    2. Make a variable called `c1_age` and have it equal to an integer of 65.
 
-2. Now give character one a age
+    3. Make a variable called `c1_salary` and have it equal to 100000.00.
 
-    1. Make a variable called character_two_age and have it equal to a integer of 5 ;
+    4. Make a variable called `c1_profession` and have it equal to "Web Developer".
 
-    2. Assign a new value, 6, to the varibale character_two_age.
+    5. Make a variable called `c1_species` and have it equal to "cat".
 
-    3. Make a variable called character_one_salary and have it equal to 100000.00 ;
+    6. Make a variable called `c1_location` and have it equal to "San Francisco CA".
 
-    4. Make a variable called character_one_profession and have it equal to "Web Developer"
+    7. Make a variable called `c1_monthly_rent` and have it equal to 2000.
 
-    5. Make a variable called character_one_species and have it equal to "cat"
+    8. Make a variable called `c1_monthly_expenses` and have it equal to 1500.
 
-    6. Make a variable called character_one_location and have it equal to "San Francisco CA"
+    9. Make a variable called `c1_yearly_rent` and have it equal to `character_one_rent` * 12.
 
-    7. Make a variable called character_one_rent and have it equal to "2000.00"
+    10. Make a variable called `c1_yearly_expenses` and have it equal to 1500.00 * 12
 
-    8. Make a variable called character_one_expenses and have it equal to "1500.00"
+    11. Make a variable called `c1_savings` and have it equal to `c1_salary` - (`c1_yearly_rent` + `c1_yearly_expenses`)
 
-    9. Make a variable called character_one_yearly_rent and have it equal to character_one_yearly_rent + 12
+2. Create Character Two
 
-    10. Make a variable called character_one_yealy_expenses and have it equal to 1500.00 * 12
-
-    11. Make a variable called character_one_savings and have it equal to character_one_yearly_rent + character_one_yealy_expenses
-
-3. Character Two
-
-    1. Make a variable of charcter_two_name equal to a string of "Mr. Snuggles"
+    1. Make a variable called `c2_name` and have it equal a string of "Mr. Snuggles".
 
     2. Make a variable of character_two_age equal to a age of 3
 
