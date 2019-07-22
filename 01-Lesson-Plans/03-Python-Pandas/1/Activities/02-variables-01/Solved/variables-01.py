@@ -14,46 +14,46 @@ meaning that any code commented out is ignored.
 
 # Topic: Strings
 
-# Create a variable named subject with no value (None):
+# Create a variable named `subject` with no value (None).
 subject = None
 
-# Assign a value of "Programmers" to the variable subject
+# Assign a value of "Programmers to the variable `subject`.
 subject = "Programmers"
 
-# Create a variable, first_name, and assign it a value of an empty string.
+# Create a variable, `first_name`, and assign it a value of an empty string.
 first_name = ""
 
-# Assign a value of "Ada" to the variable first_name
+# Assign a value of "Ada" to the variable `first_name`.
 first_name = "Ada"
 
-# Create a variable, last_name, and assign it a value of a string, "Lovelace".
+# Create a variable, `last_name`, and assign it a value of a string, "Lovelace".
 last_name = "Lovelace"
 
-# Create a variable, full_name, and assign it a value of the combination of first_name and last_name with a space.
+# Create a variable, `full_name`, and assign it a value of the combination of `first_name` and `last_name` with a space.
 full_name = f"{first_name} {last_name}"
 
-# Create a variable, profession, and assign it a value of a string, "Computer Programmer".
+# Create a variable, `profession`, and assign it a value of a string, "Computer Programmer".
 profession = "Computer Programmer"
 
-# Create a variable, known_for, and assign it a value of a string, "First Computer Programmer".
+# Create a variable, `known_for`, and assign it a value of a string, "First Computer Programmer".
 known_for = "First Computer Programmer"
 
-# Create a variable, first_algorithm, and assign it a value of a string, "Analytical Engine".
+# Create a variable, `first_algorithm`, and assign it a value of a string, "Analytical Engine".
 first_algorithm = "Analytical Engine"
 
-# Create a variable, city_location, and assign it a value of a string, "London";
+# Create a variable, `city_location`, and assign it a value of a string, "London".
 city_location = "London"
 
-# Create a variable, country_location, and assign it a value of a string, "England";
+# Create a variable, `country_location`, and assign it a value of a string, "England".
 country_location = "England"
 
-# Create a variable, nationality, and assign it a value of a string, "British";
+# Create a variable, `nationality`, and assign it a value of a string, "British".
 nationality = "British"
 
 
 # Topic: Integers
 
-# Create a variable, birth_year, and assign it with an integer of 1815.
+# Create a variable, `birth_year`, and assign it with an integer of 1815.
 birth_year = 1815
 
 # Create a variable, death_year, and assign it with an integer of 1852.
@@ -68,38 +68,38 @@ year_of_publish = 1842
 
 #Topic: Print
 
-# Print: "First Name: " and first_name
+# Print: "First Name: " and `first_name`.
 print(f"First Name: {first_name}")
 
-# Print: "Last Name:" and last_name
+# Print: "Last Name: " and `last_name`.
 print(f"Last Name: {last_name}")
 
-# Print: "Profession: " and profession
+# Print: "Profession: " and `profession`.
 print(f"Profession: {profession}")
 
-# Print: "BirthYear: " and birth_year
+# Print: "BirthYear: " and `birth_year`.
 print(f"Birth Year: {birth_year}")
 
 
 #Topic: Concat Values
 
-# Create a variable, statement_one, and assign it a value of a string:
+# Create and print a variable, `statement_one`, by assigning it a value of a string:
 # "Programmers: Ada Lovelace is a British Computer Programmer born in 1815."
 statement_one = f"{subject}: {first_name} {last_name} is a {nationality} {profession} born in {birth_year}."
 print(statement_one)
 
-# Create a variable, statement_two, and assign it a value of a string:
-# "She is commonly referred to as the first computer programmer"
+# Create and print a variable, `statement_two`, by assigning it a value of a string:
+# "She is commonly referred to as the First Computer Programmer."
 statement_two = f"She is commonly referred to as the {known_for}."
 print(statement_two)
 
-# Create a variable, statement_three, and assign it a value of a string:
+# Create and print a variable, `statement_three`, by assigning it a value of a string:
 # "In 1842 she published the first Algorithm, the Analytical Engine, at the age of 27."
 statement_three = f"In 1842 she published the first Algorithm, {first_algorithm}, at the age of 27."
 print(statement_three)
 
-# Create a variable, statement_four, and assign it a value of a string:
+# Create and print a variable, `statement_four`, by assigning it a value of a string:
 # "She was a British Citizen who lived in London, England until her passing in 1852 at the age of 37."
 statement_four = f"She was a {nationality} Citizen who lived in {city_location}, {country_location} until her " \
-                 f"passing in {death_year} at the age of {age_at_passing}"
+                 f"passing in {death_year} at the age of {age_at_passing}."
 print(statement_four)
