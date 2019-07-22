@@ -8,17 +8,17 @@ Perform the following:
 
 Open the [starter file](Unsolved/variables-01.py) and perform the following:
 
-1. Create string variables
+1. Create string variables.
 
     1. Create a variable named `subject` with no value (None).
 
-    2. Assign a value of "Programmers` to the variable `subject`.
+    2. Assign a value of "Programmers to the variable `subject`.
 
     3. Create a variable, `first_name`, and assign it a value of an empty string.
 
     4. Assign a value of "Ada" to the variable `first_name`.
 
-    5. Create a variable, `last_name`, and assign it a value of a string, "Lovelace"
+    5. Create a variable, `last_name`, and assign it a value of a string, "Lovelace".
 
     6. Create a variable, `full_name`, and assign it a value of the combination of `first_name` and `last_name` with a space.
 
@@ -28,71 +28,48 @@ Open the [starter file](Unsolved/variables-01.py) and perform the following:
 
     9. Create a variable, `first_algorithm`, and assign it a value of a string, "Analytical Engine".
 
-    10. Create a variable, `city_location`, and assign it a value of a string, "London";
+    10. Create a variable, `city_location`, and assign it a value of a string, "London".
 
-    11. Create a variable, `country_location`, and assign it a value of a string, "England";
+    11. Create a variable, `country_location`, and assign it a value of a string, "England".
 
-    12. Create a variable, `nationality`, and assign it a value of a string, "British";
+    12. Create a variable, `nationality`, and assign it a value of a string, "British".
 
-# Topic: Integers
+2. Create integer variables.
 
-# Create a variable, birth_year, and assign it with an integer of 1815.
-birth_year = 1815
+    1. Create a variable, `birth_year`, and assign it with an integer of 1815.
 
-# Create a variable, death_year, and assign it with an integer of 1852.
-death_year = 1852
+    2. Create a variable, death_year, and assign it with an integer of 1852.
 
-# Create a variable, age_at_passing, and assign it a value of death_year minus birth_year.
-age_at_passing = death_year - birth_year
+    3. Create a variable, age_at_passing, and assign it a value of death_year minus birth_year.
 
-# Create a variable, year_of_publish, and assign it with an integer of 1842.
-year_of_publish = 1842
+    4. Create a variable, year_of_publish, and assign it with an integer of 1842.
 
+3. Print the variables.
 
-#Topic: Print
+    1. Print: "First Name: " and `first_name`.
 
-# Print: "First Name: " and first_name
-print(f"First Name: {first_name}")
+    2. Print: "Last Name: " and `last_name`.
 
-# Print: "Last Name:" and last_name
-print(f"Last Name: {last_name}")
+    3. Print: "Profession: " and `profession`.
 
-# Print: "Profession: " and profession
-print(f"Profession: {profession}")
+    4. Print: "BirthYear: " and `birth_year`.
 
-# Print: "BirthYear: " and birth_year
-print(f"Birth Year: {birth_year}")
+4. Concatenate and print variables.
 
+    1. Create and print a variable, `statement_one`, by assigning it a value of a string: "Programmers: Ada Lovelace is a British Computer Programmer born in 1815."
 
-#Topic: Concat Values
+    2. Create and print a variable, `statement_two`, by assigning it a value of a string: "She is commonly referred to as the First Computer Programmer."
 
-# Create a variable, statement_one, and assign it a value of a string:
-# "Programmers: Ada Lovelace is a British Computer Programmer born in 1815."
-statement_one = f"{subject}: {first_name} {last_name} is a {nationality} {profession} born in {birth_year}."
-print(statement_one)
+    3. Create and print a variable, `statement_three`, by assigning it a value of a string: "In 1842 she published the first Algorithm, the Analytical Engine, at the age of 27."
 
-# Create a variable, statement_two, and assign it a value of a string:
-# "She is commonly referred to as the first computer programmer"
-statement_two = f"She is commonly referred to as the {known_for}."
-print(statement_two)
+    4. Create and print a variable, `statement_four`, by assigning it a value of a string: "She was a British Citizen who lived in London, England until her passing in 1852 at the age of 37."
 
-# Create a variable, statement_three, and assign it a value of a string:
-# "In 1842 she published the first Algorithm, the Analytical Engine, at the age of 27."
-statement_three = f"In 1842 she published the first Algorithm, {first_algorithm}, at the age of 27."
-print(statement_three)
+5. Execute the Python program.
 
-# Create a variable, statement_four, and assign it a value of a string:
-# "She was a British Citizen who lived in London, England until her passing in 1852 at the age of 37."
-statement_four = f"She was a {nationality} Citizen who lived in {city_location}, {country_location} until her " \
-                 f"passing in {death_year} at the age of {age_at_passing}"
-print(statement_four)
+    1. Open your terminal/git bash.
 
+    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
 
+    3. Navigate to the directory that is holding this code drill.
 
-1. Open your terminal/git bash.
-
-2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
-
-3. Navigate to the directory that is holding this code drill
-
-4. Run `python challenge-prompt.py` to test your output.
+    4. Run `python variables-01.py` to test your output.
