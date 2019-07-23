@@ -27,6 +27,8 @@ if name != "" or name == None:
 
     # Then print the string of "Your order of " concatenated with the variable `beverage`, concatenated with " boba with a sweet level of ", concatenated with the variable `sweetness`
     print(f"Your order of {beverage} boba with a sweetness level of {sweetness}")
+
+# Else, print the string of "You didn't give us your name! Goodbye".
 else:
     print("You didn't give us your name! Goodbye")
 
