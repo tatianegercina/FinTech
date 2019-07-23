@@ -12,6 +12,10 @@ Open the [starter file](Activities/10-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb), an
     import hvplot.pandas
     ```
 
+  * The great thing about **hvPlot** being abstracted over Pandas is that the two technologies share plotting interfaces. This marriage is the definition of not reinventing the wheel.
+
+    * Emphasize to students that even though hvPlot uses the function `hvplot` and Pandas `plot`, the `hvplot` function actually references the Pandas `plot` interface. This allows for hvPlots to be created and manipulated in the same ways as Pandas plots (including plot attributes), just with an interactive component.
+
   * The `hvPlot` function is used to create a standard hvPlot chart. For example, when applied against a DataFrame containing cumulative returns for five different tickers, hvPlot would create a visualization using the metadata and data from the DataFrame. No configuration is needed by the user.
 
     ```python
@@ -53,7 +57,11 @@ If time remains, choose either the line or bar visualization, and demonstrate to
 
 * Click and drag the visualization to pane to the left and right. Communicate that visualizations panned, allowing for data to be analyzed across time more effectively and efficiently.
 
-* Select an element on the legend to filter it out. Show that this allows data to be hidden as needed. This allows data to be curated to specific analytic needs on a case by case basis.
+* Select an element on the legend to filter it out. Show that this allows data to be hidden as needed. With just a click, data can be curated to specific analytic needs on the fly, on a case by case basis.
+
+  * Emphasis to students that this is incredibly difficult to do with standard plotting packages like Pandas and Matplotlib. Having this type of functionality included out of the box with hvPlot is not only powerful but ground breaking! It would take longer to code the filter than it would a user clicking the legend.
+
+  * Static visualizations require the underlying data to be changed in order for a visualization to be updated; with interactive visualizations, data can be filtered on demand.
 
 * Indicate to students that these are just two ways to interact with hvplots. Hvplot also provides widgets to interact with teh data. These will be reviewed later in the day.
 
