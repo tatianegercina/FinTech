@@ -2,28 +2,42 @@
 
 Your interview with REMAX is just three days away! Take a moment to review your current portfolio, and identify any remaining finishing touches that might be valuable to add. Take into consideration color schemes, types of plots used, and even the orientation of the plots (i.e. `inverted=True`).
 
-Also, add in an **area** and **scatter** plot to provide a glimpse into the quantitative numbers over time, as well as to show your understanding of more advanced, statistical based reporting paradigms.
+Also, add in **scatter** and **area** plots to provide a glimpse into the quantitative numbers over time, as well as to show your understanding of more advanced, statistical based reporting paradigms.
+
+Remember--this portfolio could be the make it or break it for this interview. Really make your portfolio stand out, and use your own personality and style to make the portfolio represanative of you and your analytic style/brand.
 
 ## Instructions
 
-1. Slice the `loans_data` DataFrame for Series **2017** and **2015 - 2016**. Store the output as `correlation_data`.
+1. Review the pre-existing plots, and make sure all necessary aesthetic changes have been made.
 
-2. Run `reset_index` function against `correlation_data` to remove **State Code** index and make it available as a field. Hint: correlation_data.reset_index().
+  * Take into consideration labels
 
-3. Plot the reset `correlation_data` using a **scatter** plot. This will create a visualization that trends the effect 2015 - 2016 aver loan amounts ahd on 2017 loans, if any. Hint: **State Code** should be the `c` value.
+  * Format all numbers to appropriate decimal places
 
-4. Don't forget to make your new visualizations picture perfect! Ensure that all visualizations have:
+  * Add titles to every plot
 
-  * A title
+2. Change the line color on plot `plot_2010_2014`.
 
-  * Readable x and y axes labels and ticks
+3. Slice the `loans_data` DataFrame for Series **2017** and **2015 - 2016**. Store the output as `correlation_data`.
 
-  * Formatted values
+4. Run `reset_index` function against `correlation_data` to remove **State Code** index and make it available as a field. Hint: correlation_data.reset_index().
 
-  * Color theme
+5. Create a **scatter** plot using the reset `correlation_data` DataFrame. This will create a correlation visualization outlining the effect of **2015 - 2016** data on **2017** data.
 
-  * Hover color changes
+  * x = `2015 - 2016`
+
+  * y = `2017`
+
+  * c = `State Code`
+
+6. Customize the **scatter** plot using the customization attributes or `opts` function to add finishing touches. Make sure to include a **colorbar**, as well as a **title** and **formatted** axes labels and ticks.
+
+7. Using the code provided for `tri_state_loan_data`, create an **unstacked area** plot to view loan amount progression across time for the tri-state region. Use customization features to add finishing touches.
 
 ### Challenge
 
-1. Slice the `loan_data` DataFrame, and calculate the standard deviation of average loan amounts for each date range (i.e. **Total Average Loan Amount**, **2015 - 2016**, and **2010 - 2014**). Store the returned floats into three separate variables.
+If you finish the activity early, circle back and consider changing the colors of your plots. Implement your own color scheme.
+
+### Hint
+
+Plot colors can be customized using the `opts(line_color=)` option. This will work for all plot types. Refer to the [documentation](https://hvplot.pyviz.org/user_guide/Customization.html) if additional assistance is needed.
