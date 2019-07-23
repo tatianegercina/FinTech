@@ -6,7 +6,7 @@ You will be getting more practice declaring and manipulating variables and check
 
 Perform the following:
 
-1. Declare a variable of `boba_shop` with an input and a string of "Welcome to the Boba Shop! What is your name?".
+1. Declare a variable of `name` with an input and a string of "Welcome to the Boba Shop! What is your name?".
 
 2. Check if `name` is not an empty string or equal to `None`.
 
@@ -14,23 +14,21 @@ Perform the following:
 
     2. Then, declare a variable of `beverage` with an input and a string of "What kind of boba drink would you like?".
 
-    3. Then, Declare a variable of `sweetness` with an input and a string of "How sweet do you want your drink: 0, 50, 100, 200?".
+    3. Then, declare a variable of `sweetness_level` with an input and a string of "How sweet do you want your drink: 0, 50, 100, or 200?".
 
-    4. Now check:
+    4. If `sweetness` equals 50 declare a variable `sweetness` as "half sweetened".
 
-        1. If `sweetness` equals 50 print "half sweetened".
+    5. Else if `sweetness` declare a variable `sweetness`as "normal sweet".
 
-        2. Else if `sweetness` 100 print "normal sweet".
+    6. Else if `sweetness`  declare a variable `sweetness` as "super sweet".
 
-        3. Else if `sweetness` 200 print "super sweet".
+    7. Else  declare a variable `sweetness` with a string of "non-sweet".
 
-        4. Else print with a string of "non-sweet".
+    8. Then print the string of "Your order of " concatenated with the variable `beverage`, concatenated with " boba with a sweet level of ", concatenated with the variable `sweetness`
 
-    5. Then print the string of "Your order of " concatenated with the variable `beverage`, concatenated with " boba with a sweet level of ", concatenated with the variable `sweetness`
+3. Else, print the string of "You didn't give us your name! Goodbye".
 
-    6. Finally, print the string of "Goodbye".
-
-3. Execute the Python program.
+4. Execute the Python program.
 
     1. Open your terminal/git bash.
 
