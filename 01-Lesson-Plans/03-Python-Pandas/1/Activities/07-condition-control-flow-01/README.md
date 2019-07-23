@@ -12,7 +12,7 @@ Perform the following:
 
 3. Write an else if statement that prints the string "SCREECH!" if the last element of farm is "Mothra".
 
-4. Else, print the string "This animal is neither Godzilla nor Mothra".
+4. Else, print the string "This animal is neither Godzilla nor Mothra!".
 
 5. Declare a variable named 'dog' with a string of "Spot".
 
@@ -44,4 +44,4 @@ Perform the following:
 
 19. Write an if statement that checks whether the sum of all our costs is within the budget. If so, print "You're total cost is " concatentated with the `total_cost` variable. Else, print "You're over budget by " concatenated with the difference between `budget` and `total_cost`.
 
-20. Write an if statement that checks whether the rent_cost is larger than the sum of the `utilities_cost`, `food_cost`, and `transportation_cost` and if `computer_cost` is greater than the sum of `rent_cost` and `utilities_cost`. If so, print a string that says "This computer is too expensive!". Else, print a string that says "The rent is too damn high!".
+20. Write an if statement that checks whether the rent_cost is larger than the sum of the `utilities_cost`, `food_cost`, and `transportation_cost`. If so, print a string that says "The rent is too damn high!". Else, print a string that says "Ahhh just right!"
