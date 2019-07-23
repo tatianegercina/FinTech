@@ -108,7 +108,7 @@ If time remains, emphasize one last time the importance of interactive visualiza
 
 * Communicate to students that with the rise of Data Science and data driven industries is going to result in interactive visualizations becoming a staple of the data world.
 
-* Explain that as data volumes increase, users will need interactive visualizations to help shift and parse through countless data points.
+* Explain that as data volumes increase, users will need interactive visualizations to help shift and parse through countless data points. Interactive visualizations are empowering users to deep dive into data themselves to find new and unique structures and patterns that otherwise would have required large data dumps.
 
 * Highlight that without interactive visualizations, users are stuck trying to analyze data in charts and graphs that are too small and static to glean insight from.
 
