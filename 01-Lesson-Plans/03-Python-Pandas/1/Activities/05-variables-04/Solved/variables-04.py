@@ -1,29 +1,32 @@
-# Declare a variable of boba_shop  with an input and a string of "Welcome to the Boba Shop!"
+# Declare a variable of `name` with an input and a string of "Welcome to the Boba Shop! What is your name?".
+name = input("Welcome to the Boba Shop! What is your name?")
 
-# Check if boba_shop  is equal to true
+# Check if `name` is not an empty string or equal to `None`.
+if name != "" or name == None:
+    # If so, write a print with a string of "Hello" concatenated with the variable `name`.
+    print(f"Hello {name}")
 
+    # Then, declare a variable of `beverage` with an input and a string of "What kind of boba drink would you like?".
+    beverage = input("What kind of boba drink would you like?")
 
-    # Write a print with a string of "Hello"
+    # Then, Declare a variable of `sweetness` with an input and a string of "How sweet do you want your drink: 0, 50, 100, or 200?".
+    sweetness_level = input("How sweet do you want your drink: 0, 50, 100, or 200?")
 
+    # If `sweetness` equals 50 print "half sweetened".
+    if sweetness_level == 50:
+        sweetness = "half sweetened"
+    # Else if `sweetness` 100 print "normal sweet".
+    elif sweetness == 100:
+        sweetness = "normal sweet"
+    # Else if `sweetness` 200 print "super sweet".
+    elif sweetness == 200:
+        sweetness = "super sweet"
+    # Else print with a string of "non-sweet".
+    else:
+        sweetness = "non-sweet"
 
-    # Declare a variable of beverage with an input and a string of "What kind of boba drink would you like ?"
-
-
-    # Declare a variable of sweetness with an input and a string of "How sweet do you want your drink 0,50,100,200 ?"
-
-    # Now check 
-        # if sweetness equals to 50 print "half sweetened"
-    
-        # else if sweetness 100 print "normal sweet"
-
-    
-        # else if sweetness 200 print "super sweet"
-
-
-        # else print with a string of "non-sweet"
-
-
-    # then print with a string of "your order of " variable beverage and a string of " boba with a sweet level of " and variable of sweetness
- 
-    # and print string of "goodbye".
+    # Then print the string of "Your order of " concatenated with the variable `beverage`, concatenated with " boba with a sweet level of ", concatenated with the variable `sweetness`
+    print(f"Your order of {beverage} boba with a sweetness level of {sweetness}")
+else:
+    print("You didn't give us your name! Goodbye")
 
