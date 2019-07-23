@@ -18,7 +18,7 @@ Navigate to the 6.1 slides, and highlight the following:
 
   ![pyviz_ecosystem.png](Images/pyviz_ecosystem.png)
 
-Transition to the live walkthrough, and highlight the following:
+Transition to the dry walkthrough of the installation guide, and highlight the following:
 
 * It's important to ensure the conda environment is up to date before installing PyViz and its dependencies. This will ensure version compatability.
 
@@ -49,5 +49,7 @@ Transition to the live walkthrough, and highlight the following:
   jupyter labextension install @jupyterlab/plotly-extension
   jupyter labextension install @pyviz/jupyterlab_pyviz
   ```
+
+Before finishing the activity, reassure students and let them know that time has been set aside during the next activity to debug/troubleshoot any environment issues.
 
 Ask students if they have any questions before moving forward.
