@@ -16,7 +16,7 @@ Perform the following:
 
 5. Call your `hello` function.
 
-6. Define a function `user_input` that asks the user for their name and stores it in a variable called `user_name` and print the user's name.
+6. Define a function `user_input` that asks the user "What is your name?" and stores it in a variable called `user_name` and print the user's name.
 
 7. Call your `user_input` function.
 
@@ -26,4 +26,4 @@ Perform the following:
 
 10. Define a function `average` that calculates the average between two parameters and returns the average.
 
-11. Call the `average` function and assign to a variable `calculated_average`.
+11. Call the `average` function and assign to a variable `calculated_average`. Then print `calcualted_average`.
