@@ -34,15 +34,25 @@ By the end of this class, students will be able to:
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
+### Class Slides and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 2.2 Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+
 ---
 
 ### 1. Instructor Do: Welcome and Review (5 min)
 
-**File:** [Welcome Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit?usp=sharing)
+**File:** [Welcome and Refresher Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit?usp=sharing)
 
-Welcome students back to class. Open the slideshow and review today’s class objectives.
+Welcome students back to class. Open the slideshow and review today’s [class objectives](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_8). 
 
-Navigate to the refresher slide and do a quick review of the previous lesson by posing the following questions to the class:
+Navigate to the [refresher slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g55e32eac42_0_38) and do a quick review of the previous lesson by presenting the following questions to the class:
 
 * What is a terminal?
 
@@ -64,7 +74,7 @@ Navigate to the refresher slide and do a quick review of the previous lesson by 
 
   **Answer:** Pseudocoding is the process of devising the specific requirements and behaviors of an application in human-readable terms.
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -489,7 +499,7 @@ Open the solution file and explain the following:
   ['butter', 'eggs', 'gala apples', 'cinnamon', 'milk']
   ```
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -607,7 +617,7 @@ Open the solution and explain the following:
   Percentage of Unprofitable Days: 35.0%
   ```
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -615,7 +625,7 @@ Ask if there are any questions before moving on.
 
 **File:** [Dicts Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_163)
 
-Open the slideshow and use slides 12–13 while explaining the following:
+Use the [slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_163) while you explain the following:
 
 * Working with multiple data structures will help you understand the use cases for each type––in other words, when to use them.
 
@@ -658,7 +668,7 @@ Briefly discuss the differences between dictionaries and lists and when one shou
 
   * However, size drastically increases performance time when searching a list; if a list doubles in size, search time could also double.
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -851,7 +861,7 @@ Open the solution and demonstrate the syntax for creating a dictionary to store 
   Key: 04-06-2019 Value: -311
   ```
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -954,7 +964,7 @@ Open the solution file, `market_cap.py`, and explain the following:
   Small Cap Banks: ['Republic Bancorp']
   ```
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -976,7 +986,7 @@ Ask if there are any questions before moving on.
 
 * [nesting_dict_of_dicts.py](Activities/07-Ins_Nesting/Solved/nesting_dict_of_dicts.py)
 
-Introduce nesting by explaining that lists and dictionaries are really just data containers.
+Introduce nesting by explaining that lists and dictionaries are really just data containers. Use the [slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g55e32eac42_0_91) to accompany your lecture. 
 
 * The values in a list or dictionary can actually be other lists and dictionaries. This means that you can have a list of dictionaries, or a dictionary where each value is a list. You can also have lists of lists and dictionaries of dictionaries!
 
@@ -1203,7 +1213,7 @@ Review how to declare and access nested dictionaries.
   print(f"Name of TWTR ticker is {twitter_name}. TWTR is available on {twitter_exchange}, and it currently has a market capitalization of {twitter_market_cap}.")
   ```
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -1350,7 +1360,7 @@ Open the solution file, [weekly_gains.py](Activities/08-Stu_Nesting/Solved/Core/
   print(results)
   ```
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -1358,7 +1368,7 @@ Ask if there are any questions before moving on.
 
 **File:** [Functions Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_189)
 
-Open the slideshow and use slides 25–27 while explaining the following:
+Use the [slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_189) as you explain the following:
 
 * This section on functions is meant to help write programs with modularity. **Modularity** is the degree to which code components or parts can be separated or decoupled from a whole.
 
@@ -1399,7 +1409,7 @@ Engage students by asking if they can remember any of the functions used in clas
 
 * `pop()`
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -1528,7 +1538,7 @@ Then, review the mechanics of function inputs and outputs while showing the code
 
 * Function bodies should not include more than 40–50 lines of code. Code longer than 40–50 lines should be decoupled and split into different functions.
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
