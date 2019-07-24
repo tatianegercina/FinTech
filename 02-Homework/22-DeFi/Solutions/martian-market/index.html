@@ -16,14 +16,6 @@
   <!-- Compiled and minified JavaScript for Materialize CSS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-  <script>
-    // bind click events to dapp functions
-    function bid(event) { window.dApp.bid(event); }
-    function endAuction(event) { window.dApp.endAuction(event); }
-    function withdraw(event) { window.dApp.withdraw(event); }
-    function registerLand() { window.dApp.registerLand(); }
-  </script>
-
   <style>
   .card-image > img {
     max-height: 250px;
@@ -57,7 +49,7 @@
           <p><input id="dapp-register-image" placeholder="Landmark image URL..." /></p>
         </div>
         <div class="card-action">
-          <a id="dapp-register" href="#" onclick="registerLand()">Register Land</a>
+          <a id="dapp-register" href="#" onclick="window.dApp.registerLand()">Register Land</a>
         </div>
       </div>
     </div>
