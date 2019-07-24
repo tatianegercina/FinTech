@@ -34,4 +34,4 @@ years = 3
 calculated_future_value = calculate_future_value(present_value, interest_rate, compounding_periods, years)
 
 # Print out the future_value result
-print(f"The future value of ${present_value} at an interest rate of {interest_rate} compounded {compounding_periods} time(s) every year over {years} years is ${future_value}")
+print(f"The future value of ${present_value} at an interest rate of {interest_rate} compounded {compounding_periods} time(s) every year over {years} years is ${calculated_future_value}")
