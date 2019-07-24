@@ -7,10 +7,7 @@ import './MartianAuction.sol';
 contract MartianMarket is ERC721Full, Ownable {
     constructor() ERC721Full("MartianMarket", "MARS") public {}
 
-    // cast a payable address for the Martian Development Foundation to be the beneficiary in the auction
-    // this contract is designed to have the owner of this contract (foundation) to pay for most of the function calls
-    // (all but bid and withdraw)
-    address payable foundationAddress = address(uint160(owner()));
+    address payable foundationAddress = msg.sender;
 
     mapping(uint => MartianAuction) public auctions;
 

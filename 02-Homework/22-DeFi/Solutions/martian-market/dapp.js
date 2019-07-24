@@ -3,7 +3,7 @@ import auctionJson from "./build/contracts/MartianAuction.json";
 
 const Web3 = require("web3");
 
-const contractAddress = "0x7909DDa961fB2D8532D12888E2E6c9fEAc65b300"; // kovan contract address
+const contractAddress = "0xd1AD834c38153CF8c097CEC839f483447635bCe3"; // kovan contract address
 
 const dApp = {
   ethEnabled: function() {

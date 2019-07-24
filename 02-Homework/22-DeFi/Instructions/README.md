@@ -107,7 +107,7 @@ You can also register new land using the foundation address:
 
 The migration scripts are provided here already. This means that once the contracts are properly implemented,
 you can simply run `truffle deploy` and pass your desired network using the `--network` flag. We have included some
-configuration for the Kovan network, but feel free to use any other network as long as you designate in your submission.
+configuration for the Kovan and Ropsten networks, but feel free to use any other network as long as you designate in your submission.
 
 You will also need to deploy this to Github Pages. Follow the same process as previous homeworks.
 Remember to use the convenience package `gh-pages` by running `npm run deploy`. This will automatically publish the
