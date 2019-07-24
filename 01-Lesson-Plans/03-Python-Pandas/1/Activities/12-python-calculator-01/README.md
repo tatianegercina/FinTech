@@ -4,22 +4,14 @@ This activity is going to combine everything we've covered today along with some
 
 ## Instructions
 
-1. Declare a variable called user_input_list and set it to an empty list for now
+1. Define a function `calculate` that takes in two numbers and adds, subtracts, multiplies, or divides the two numbers.
 
-2. Create a string of all the valid_inputs for our validation logic to check against user's input
+    1. Create a variable `result` and set it to 0.
 
-3. Define a function that takes in user_input_list to check the operator's sign
+    2. Prompt the user "What do you want to do: Add, Subtract, Multiply or Divide?" and assign the answer to a variable `choice`.
 
-    1. if the operator is a '+' sign, return the value of the first number added to the second number
+    3. Create an if-else statement to perform the proper calculation with the two parameters based on the user's `choice`.
 
-    2. else if the operator is a '-' sign, return the value of the first number subtracted from the second number
+    4. Return the calculated `result` variable.
 
-    3. else if the operator is a '*' sign, return the value of the first number multiplied by the second number
-
-    4. else if the operator is a '/' sign, return the value of the first number divided by the second number
-
-## Hints
-
-* This calculator should only take numbers, `+`, `-`, `*` and the `/` key as valid inputs
-
-* It is highly recommended you use functions to section out your logic and validate each of the user's input so that they are unable to add multiple operators.
+2. Call the `calculate` function and print the results.
