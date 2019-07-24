@@ -1,15 +1,21 @@
-# Navigating through dictionaries
+## Traversing Through Dictionaries
 
-## Navigate through a large dictionary to retrieve pertinent data
+In this challenge, you are given a large dictionary `show_data.py`. Your job is to navigate through this dictionary and to answer the prompts via key-value pairs.
 
-In this challenge, you are given a large dictionary `show_data.py`. Your job is to navigate through this dictionary and to answer the prompts but only through navigating through the dictionary.
-
-Here is an example of a prompt. The first answer is the correct way to answer the question, the second will not be an accepted answer.
-
-Who is the actor that plays Ned Stark in Game of Thrones (drama)?
+For example, who is the actor that plays Ned Stark in Game of Thrones (drama)?
 
 Correct Answer: `shows["genre"]["drama"]["game_of_thrones"]["cast"][0]["actor"]`
 
-Incorrect Answer: `"Sean Bean"`
+## Instructions
 
-Enter all of your answers in the empty prints. Once you have answered all the questions, check your printed data against the actual returns in the command line.
+1. Use the `from` keyword to import the `shows` dictionary from the `show_data.py` file
+
+2. Answer each question using bracket notation for the `show` dictionary.
+
+## Hint
+
+You may find that you're repeating yourself a lot. It may be helpful to create variables that point to different locations within the dictionary.
+
+For example: `drama = shows["genre"]["drama"]`
+
+Then to get the actor who plays Rick in Walking Dead, we would simply write `drama["the_walking_dead"]["cast"][0]["actor"]` as opposed to `shows["genre"]["drama"]["the_walking_dead"]["cast"][0]["actor"]`.
