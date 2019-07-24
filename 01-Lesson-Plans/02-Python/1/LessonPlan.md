@@ -1,10 +1,10 @@
-# 2.1 Lesson Plan: The Emergence of Python! (6:30 PM)
+## 2.1 Lesson Plan: The Emergence of Python (6:30 PM)
 
-## Overview
+### Overview
 
 Today's class will introduce students to the basics of the Python programming language. The lesson will cover a brief history of Python, its audience and use cases, and functional concepts like variables, conditionals, loops, and calculations. Students will also install Python and get acquainted with its environment. The goal of the lesson is to enable students to automate and solve financial problems with Python.
 
-## Class Objectives
+### Class Objectives
 
 By the end of this class, students will be able to:
 
@@ -20,7 +20,7 @@ By the end of this class, students will be able to:
 
 ---
 
-## Instructor Notes
+### Instructor Notes
 
 * Welcome to the first day of programming with Python! You will be guiding students through a series of increasingly complex activities, which serve as the foundation for the next class as well as the homework. The class should feel like an evenly paced introduction to Python that provides a challenge and engages students with relatable use cases.
 
@@ -38,17 +38,27 @@ By the end of this class, students will be able to:
 
 * Activities that involve programming solutions will have an associated coding file linked at the beginning of the activity section. Click on the link to take you to the coding file required for the activity.
 
-* Have your TAs keep track of the time with the [Time Tracker](TimeTracker.xlsx).
-
 * Please reference our [Student FAQ](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
 
+* Have your TAs keep track of the time with the [Time Tracker](TimeTracker.xlsx).
+
+### Class Slides and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 2.1 Slides](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.p9).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+ 
 ---
 
 ### 1. Instructor Do: Welcome and Introduce Python (5 min)
 
 In this section, you'll welcome students to class and introduce the Python programming language.
 
-**File:** [Python Day 1 Slides](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.p9)
+**File:** [Welcome and Python Slides](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.p9)
 
 Welcome students to class and introduce the class objectives for the day. Then, explain that today will be the exciting first step toward automating their work with Python! Introduce Python by covering the following points:
 
@@ -88,7 +98,7 @@ In this section, you will introduce JupyterLab. Students should already have Ana
 
 Introduce JupyterLab by first asking students if they have ever heard of Jupyter Notebook.
 
-Open the [slideshow](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g57bb043f18_0_4333) and use the slides while you cover the following points.
+Use the [slideshow](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g57bb043f18_0_4333) to cover the following points.
 
 * Jupyter Notebook was created by Project Jupyter to provide developers and data scientists with a development environment (integrated development environment) that includes all of the tools needed to build Python programs.
 
@@ -139,7 +149,7 @@ Walk students through the process of setting up JupyterLab:
     jupyter lab
     ```
 
-Pause here to check if any students are unable to launch JupyterLab. If there are, instruct them to troubleshoot their installation with a TA during the next activity or the break. Instruct students to use a temporary hosted Jupyter server located at [https://jupyter.org/try](https://jupyter.org/try) until their environments are up and running.
+Pause here to check if students are able to launch JupyterLab. If any students are having trouble, direct them to troubleshoot their installation with a TA during the next activity or the break. Instruct students to use a temporary hosted Jupyter server located at [https://jupyter.org/try](https://jupyter.org/try) until their environments are up and running.
 
   ![jupyterlab.png](Images/jupyterlab.png)
 
@@ -151,7 +161,7 @@ Walk through the following slides and then proceed to the instructor activity on
 
 **Files:**
 
-* [JupyterLab Slide](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g594d5df485_0_1089)
+* [JupyterLab Demo Slide](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g594d5df485_0_1103)
 
 * [JupyterLabProjectGuide.md](../Supplemental/JupyterLabProjectGuide.md)
 
@@ -195,11 +205,11 @@ In this activity, students will create a JupyterLab project and run a Python `he
 
 **Instructions:** [README.md](Activities/03-Stu_Jupyter_Project/README.md)
 
-Open the following instructions and introduce the student activity.
+Open the instructions and introduce the student activity.
 
-* Instructional staff should circulate the classroom during this activity, monitoring students to ensure that everyone can successfully open JupyterLab.
+Instructional staff should circulate the classroom during this activity, monitoring students to ensure that everyone can successfully open JupyterLab.
 
-* Take some additional time here if necessary as students may need to familiarize themselves with the layout of JupyterLab. Students will not be able to participate in the upcoming coding activities if this activity is not completed successfully.
+Take some additional time here if necessary, as students may need to familiarize themselves with the layout of JupyterLab. Students will not be able to participate in the upcoming coding activities if this activity is not completed successfully.
 
 ---
 
@@ -267,11 +277,15 @@ At this point, students may feel apprehensive about the upcoming coding activiti
 
 * "Now that our battle stations (environments) are up and running, we can start coding! This can be a really exciting experience, but it can also be very intimidating. Both of these feelings are understandable, but don't worry. If you think about it, computers themselves aren't even really that smart. They are super logical, so you have to tell them what to do and how to do it, including what to remember (variables)."
 
-Open the slideshow and use the slides to discuss concepts related to variables. Use the following real-world scenario to help explain variables:
+Set up the following real-world scenario to help explain variables:
 
-* "Think about any time you've kept score for a game or watched someone else keep score. It can be an involved process. Scores change all the time. Tally marks and points have to be tracked and calculated, and you're always searching for pen and paper. In this scenario, `score` is a variable that represents an ever-changing numeric number. We can track two scores in two different variables: `team_a_score` and `team_b_score`. Whenever Team A gets a point, the `team_a_score` variable should be incremented by 1. The same goes for Team B. At any moment, the two scores can be compared to find out who is winning.
+* Think about any time you've kept score for a game or watched someone else keep score. It can be an involved process. Scores change all the time. Tally marks and points have to be tracked and calculated, and you're always searching for pen and paper. 
 
-  There are advantages to tracking performance or ranking in a game as `score`. First, it increases flexibility. We can reference `score` without specifying if its the score of a baseball game, video game, or even an exam. Regardless of context, `score` has a value, and that value has meaning. `score` as a word and concept is also easy to remember, and its significance is stored in people's mind (memory). `score` can be referenced in conversation, and others will understand its representation. This makes `score` a great example of a variable."
+* In this scenario, `score` is a variable that represents an ever-changing numeric number. We can track two scores in two different variables: `team_a_score` and `team_b_score`. Whenever Team A gets a point, the `team_a_score` variable should be incremented by 1. The same goes for Team B. At any moment, the two scores can be compared to find out who is winning.
+
+* There are advantages to tracking performance or ranking in a game as `score`. First, it increases flexibility. We can reference `score` without specifying if its the score of a baseball game, video game, or even an exam. Regardless of context, `score` has a value, and that value has meaning. `score` as a word and concept is also easy to remember, and its significance is stored in people's mind (memory). `score` can be referenced in conversation, and others will understand its representation. This makes `score` a great example of a variable."
+
+Transition to discussing variables. Use the [slides]((https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g57f3228557_0_1)) to direct your discussion.
 
 * Variables are one of the key components of programming languages and serve as the primary means of data storage. All variables must have a name, value, and type.
 
@@ -299,9 +313,9 @@ Open the slideshow and use the slides to discuss concepts related to variables. 
 
 * All variables have a **data type**.
 
-  * Example data types that will be leveraged in this class include string, integer, float, double, and Boolean.
+  * Data types correspond to the type of data being stored, e.g., letters/words, phrases, or numbers.
 
-  * Data types correspond to the type of data being stored (letters/words, phrases, or numbers).
+  * Python has five standard data types: number (integer, float, etc.), string, list, dictionary, and tuple. 
 
 * Depending on the type of data that you store, Python provides different functions for that data. For example, you can find the length of a string of characters (how many letters are in the string).
 
@@ -465,9 +479,7 @@ Ask if there are any questions before moving on.
 
 ### 9. Instructor Do: Conditionals (10 min)
 
-In this section, students will learn how to apply logic to the values assigned to variables. This establishes a workflow in which a program exhibits a specific behavior based on the evaluation of a condition.
-
-Open the slides and talk to the following points and associated code examples. Then, proceed to the instructor demo.
+In this section, students will learn how to apply logic to the values assigned to variables. This establishes a workflow in which a program exhibits a specific behavior based on the evaluation of a condition. 
 
 **Files:**
 
@@ -475,15 +487,15 @@ Open the slides and talk to the following points and associated code examples. T
 
 * [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py)
 
-Remind students that conditionals are comparisons or evaluations of variables and their associated values.
+Use the [slides](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g57f3228557_0_8) to review the following points and associated code examples.
+
+* **Conditionals** are comparisons or evaluations of variables and their associated values.
 
 * In the previous activity, variables were used to tell computers what (data) to remember/store.
 
 * In this section, variables and their associated values are called upon and evaluated via conditionals, which determine the decisions or behavior the computer should exhibit.
 
-Explain the following points:
-
-* Computers are really simple in that they do exactly what you tell them to. If you want to have a really useful script, you must program decision logic into the computer.
+* Computers are simple in that they do exactly what you tell them to do. If you want to have a useful script, you must program decision logic into the computer.
 
 * Imagine a self-driving car. Writing code that tells the car's computer to drive forward is great for straight stretches of road. But what happens when a pedestrian is in the path? You need to include additional logic to instruct the car's computer to not hit the pedestrian. Computers only do what you tell them to!
 
@@ -612,11 +624,11 @@ Open [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py) an
             print("x is less than 10 and y is greater than 5")
     ```
 
-* Revisit the self-driving car scenario to reinforce the power of using `elif` and nested if-else statements. Say:
+Revisit the self-driving car scenario to reinforce the power of using `elif` and nested if-else statements.
 
-  * "Let's say you're in your self-driving car in the state of Florida, and you somehow get into an accident. Your insurance company might have a program that will predict, based on a series of conditions (for example, at-fault liability, accident forgiveness policy, loyalty elite status), whether your premium will increase. That logic might look something like this code."
+* Let's say you're in your self-driving car in the state of Florida, and you somehow get into an accident. Your insurance company might have a program that will predict, based on a series of conditions (e.g., at-fault liability, accident forgiveness policy, loyalty elite status), whether your premium will increase. That logic might look something like the following code. 
 
-At this point, open the following code snippet in JupyterLab. Do not run it. Let students read it to see if they can guess whether `increase_insurance_premium` will be `True` or `False`.
+Open the following code snippet in JupyterLab. Do not run it. Let students read it to see if they can guess whether `increase_insurance_premium` will be `True` or `False`.
 
 ```python
   # Declare Variables
@@ -665,13 +677,17 @@ In this activity, students will create a Python script that implements condition
 
 ---
 
-### 11. Instructor Do: Review The Conditional Conundrum (5 min)
+### 11. Instructor Do: Review the Conditional Conundrum (5 min)
 
 Take some time to walk through the solution while gauging students' level of comfort with conditionals.
 
 **File:** [conditionals.md](Activities/07-Stu_Conditionals/Solved/conditionals.py)
 
-Begin by saying something like: "You've just learned a lot of new syntax and keywords. We've also introduced logical and comparison operators, and if-else statements are about to become your best friend. Let's reflect for a minute. What makes sense, and what is still confusing? Is anything a point of frustration?"
+Begin by saying something like: 
+
+* "You've just learned a lot of new syntax and keywords. We've also introduced logical and comparison operators, and if-else statements are about to become your best friend." 
+
+* "Let's reflect for a minute. What makes sense, and what is still confusing? Is anything a point of frustration?"
 
 Be prepared to explain the following, for example:
 
@@ -689,12 +705,17 @@ Be prepared to explain the following, for example:
 
   * If we were to write a program to check whether someone's age meets the legal conditions, we would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 21 cannot drink.
 
-Tell students to look at the following code. Are the results as expected, based on the logic? What are two possible ways to fix the logic?
+Tell students to look at the following code. Ask: 
 
-**Answer:**
+* Are the results as expected, based on the logic? 
 
-1. Switch from using `>` to `>=`
-2. Check `if age > 20`
+* What are two possible ways to fix the logic?
+
+    **Answer:**
+
+1. Switch from using `>` to `>=`.
+
+2. Check `if age > 20`. 
 
     ```python
     age = 21
@@ -812,11 +833,11 @@ Answer any questions before moving on.
 
 Introduce for loops by presenting the following scenario:
 
-* Imagine that your new job at Accrual World Inc. is to generate a daily report for each of your client's total sales. Every day, you need to gather the sales data from each client, and then break out your trusty calculator to add up their total sales. This results in hours of manual labor.
+* Imagine that your new job at Accrual World, Inc. is to generate a daily report for each of your client's total sales. Every day, you need to gather the sales data from each client, and then break out your trusty calculator to add up their total sales. This results in hours of manual labor.
 
 * Just before you finish, you realize that you were given last week's data. You have to start over! Well, there's a better way to handle repetitive tasks like this.
 
-At this point, transition to your discussion to for loops. Open the slideshow and cover the following points:
+At this point, transition to your discussion to for loops. Use the [slides](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g58d1bae602_0_153) as you cover the following points:
 
 * We have already learned how to tell computers what to remember by using variables. We also learned how to tell computers to make simple decisions by using conditionals. Now we're going to tell computers to do what they do best: endlessly repeat an action.
 
@@ -1048,7 +1069,7 @@ Go over Polyga's techniques to problem solving, which are are straightforward an
 
 4. Test and evaluate the plan: Review the algorithm and determine areas of improvement.
 
-Define pseudocoding and explain its effectiveness.
+Define pseudocoding and explain its effectiveness. Use the [slides](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g57f3228557_0_22) to accompany the lecture. 
 
 * **Pseudocode** is a high-level description (essentially, a prototype or outline) of the inner workings of a program or algorithm. Pseudocode is written in human language to ensure readability.
 
@@ -1179,7 +1200,7 @@ Answer any questions before moving on.
 
 ---
 
-### 20. Instructor Do: Demo Homework and End Class (5 min)
+### 20. Instructor Do: Preview Homework and End Class (5 min)
 
 **File:** [Homework Instructions](../../../02-Homework/03-Python/Instructions/README.md)
 
