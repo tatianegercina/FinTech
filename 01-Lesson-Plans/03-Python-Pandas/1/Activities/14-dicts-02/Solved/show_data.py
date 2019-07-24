@@ -31,7 +31,7 @@ shows = {
                 ],
                 "num_seasons": 8,
                 "creators": ["David Benioff", "D.B. Weiss"],
-                "still_running": True
+                "still_running": False
             },
             "mad_men": {
                 "cast": [
