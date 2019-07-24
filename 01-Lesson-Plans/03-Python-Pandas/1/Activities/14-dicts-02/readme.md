@@ -10,7 +10,7 @@ Correct Answer: `shows["genre"]["drama"]["game_of_thrones"]["cast"][0]["actor"]`
 
 1. Use the `from` keyword to import the `shows` dictionary from the `show_data.py` file
 
-2. Answer each question using bracket notation for the `show` dictionary.
+2. Answer each question by printing the expected result using bracket notation for the `show` dictionary.
 
 ## Hint
 
