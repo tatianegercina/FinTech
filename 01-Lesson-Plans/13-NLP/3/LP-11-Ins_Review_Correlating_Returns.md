@@ -1,5 +1,7 @@
-### 5. Instructor Do: Review Tokenizing Reuters (5 mins)
+### 11. Instructor Do: Review Correlating Returns (10 mins)
 
 **Files:**
 
-* [tokenizing_reuters.ipynb](Activities/02-Stu_Tokenizing_Reuters/Solved/tokenizing_reuters.ipynb)
+* [correlating_returns.ipynb](Activities/06-Stu_Correlating_Returns/Solved/correlating_returns.ipynb)
+
+ 
