@@ -3,7 +3,7 @@ import auctionJson from "./build/contracts/MartianAuction.json";
 
 const Web3 = require("web3");
 
-const contractAddress = "0x46B84DB3CF195C97654db8cFD715482c1EeAf3E4"; // kovan contract address
+const contractAddress = "0x7909DDa961fB2D8532D12888E2E6c9fEAc65b300"; // kovan contract address
 
 const dApp = {
   ethEnabled: function() {
@@ -65,10 +65,10 @@ const dApp = {
 
     $("#dapp-tokens").html("");
     this.tokens.forEach((token) => {
-      let endAuction = `<a id="${token.tokenId}" class="dapp-admin" style="display:none;" href="#" onclick="endAuction(event)">End Auction</a>`;
-      let bid = `<a id="${token.tokenId}" href="#" onclick="bid(event)">Bid</a>`;
+      let endAuction = `<a id="${token.tokenId}" class="dapp-admin" style="display:none;" href="#" onclick="window.dApp.endAuction(event)">End Auction</a>`;
+      let bid = `<a id="${token.tokenId}" href="#" onclick="window.dApp.bid(event);">Bid</a>`;
       let owner = `Owner: ${token.owner}`;
-      let withdraw = `<a id="${token.tokenId}" href="#" onclick="withdraw(event)">Withdraw</a>`
+      let withdraw = `<a id="${token.tokenId}" href="#" onclick="window.dApp.withdraw(event)">Withdraw</a>`
       let pendingWithdraw = `Balance: ${token.pendingReturn} wei`;
         $("#dapp-tokens").append(
           `<div class="col m6">
