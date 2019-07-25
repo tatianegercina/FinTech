@@ -4,7 +4,7 @@ Functions are a great way to wrap chunks of code so you can use it later. Functi
 
 ## Instructions
 
-Perform the following:
+Open the [starter file](Unsolved/functions-01.py) and perform the following:
 
 1. Define a function `having_fun` that prints "Functions are FUN!".
 
@@ -27,6 +27,16 @@ Perform the following:
 10. Define a function `average` that calculates the average between two parameters and returns the average.
 
 11. Call the `average` function and assign to a variable `calculated_average`. Then print `calcualted_average`.
+
+12. Execute the Python program.
+
+    1. Open your terminal/git bash.
+
+    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+
+    3. Navigate to the directory that is holding this code drill.
+
+    4. Run `python filename.py` to test your output.
 
 ---
 
