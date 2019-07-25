@@ -1,10 +1,10 @@
 # Variable and Conditional Review
 
-In this activity, we will be reviewing variable declaration and conditionals. The prompts are included in the challenge-prompt.py file as comments.
+In this activity, we will be reviewing variable declaration and conditionals.
 
 ## Instructions
 
-Perform the following:
+Open the [starter file](Unsolved/condition-control-flow-01.py) and perform the following:
 
 1. Create a list called 'farm' with the elements "pig", "cow", "chicken", "dog", "horse", "sheep".
 
@@ -45,3 +45,7 @@ Perform the following:
 19. Write an if statement that checks whether the sum of all our costs is within the budget. If so, print "You're total cost is " concatentated with the `total_cost` variable. Else, print "You're over budget by " concatenated with the difference between `budget` and `total_cost`.
 
 20. Write an if statement that checks whether the rent_cost is larger than the sum of the `utilities_cost`, `food_cost`, and `transportation_cost`. If so, print a string that says "The rent is too damn high!". Else, print a string that says "Ahhh just right!"
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

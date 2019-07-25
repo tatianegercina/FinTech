@@ -13,3 +13,7 @@ Perform the following:
 2. Answer each question with the correct coding solution.
 
 3. Execute the Python program.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

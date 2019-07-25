@@ -61,3 +61,7 @@ Git is a great resource for managing your code and very convenient if you want t
 13. Now, if we go back to our first directory, we can pull down the changes we made elsewhere. Navigate back to the directory we cloned down in step 4 and `git pull origin master`.
 
     ![Pulling down changes from GitHub](Images/13.PNG)
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

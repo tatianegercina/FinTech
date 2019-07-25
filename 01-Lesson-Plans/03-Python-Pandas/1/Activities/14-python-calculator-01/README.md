@@ -15,3 +15,7 @@ This activity is going to combine everything we've covered today along with some
     4. Return the calculated `result` variable.
 
 2. Call the `calculate` function and print the results.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

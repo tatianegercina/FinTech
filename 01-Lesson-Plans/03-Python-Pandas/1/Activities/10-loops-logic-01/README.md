@@ -57,3 +57,7 @@ In this activity, we will be getting more practice with lists and loops. The pro
 7. Iterate through `two_dim_list` and the lists inside of it and print all the odd numbers.
 
 8. Iterate through `two_dim_list` and the lists inside of it and print the sum of all the numbers that are a multiple of 3.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

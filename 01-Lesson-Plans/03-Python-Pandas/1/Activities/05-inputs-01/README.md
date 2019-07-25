@@ -29,3 +29,7 @@ Perform the following:
     3. Navigate to the directory that is holding this code drill
 
     4. Run `python challenge-prompt.py` to test your output.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -29,3 +29,7 @@ In this activity, we're going to be practicing a bit more with terminal commands
 ## Hints
 
 Use the terminal cheat sheet to help guide you on which terminal commands should be used for each step.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

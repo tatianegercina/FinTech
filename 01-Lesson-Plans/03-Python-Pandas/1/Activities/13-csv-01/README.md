@@ -27,3 +27,7 @@ Perform the following:
 ## Hints
 
 Hint:  `str` and `int` types cannot be evaluated against each other and must be converted to be the same data type.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -19,3 +19,7 @@ You may find that you're repeating yourself a lot. It may be helpful to create v
 For example: `drama = shows["genre"]["drama"]`
 
 Then to get the actor who plays Rick in Walking Dead, we would simply write `drama["the_walking_dead"]["cast"][0]["actor"]` as opposed to `shows["genre"]["drama"]["the_walking_dead"]["cast"][0]["actor"]`.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
