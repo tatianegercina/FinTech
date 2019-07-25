@@ -1,10 +1,10 @@
-# More Practice with Variables & Lists
+# Variables & Lists
 
-You will be getting more practice declaring and manipulating variables in this exercise.
+You will be getting practice declaring and manipulating variables and lists in this exercise.
 
 ## Instructions
 
-Perform the following:
+Open the [starter file](Unsolved/lists-01.py) and perform the following:
 
 1. Create a list, `list_1`,  with `0`, `1`, `2`, `3` as values.
 
@@ -24,13 +24,13 @@ Perform the following:
 
 9. Execute the Python program.
 
-    1. Open your terminal / git bash.
+    1. Open your terminal/git bash.
 
-    2. From within terminal / git bash run `source activate PythonData` to activate your virtual environment.
+    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
 
     3. Navigate to the directory that is holding this code drill.
 
-    4. Run `python challenge-prompt.py` to test your output.
+    4. Run `python filename.py` to test your output.
 
 ---
 

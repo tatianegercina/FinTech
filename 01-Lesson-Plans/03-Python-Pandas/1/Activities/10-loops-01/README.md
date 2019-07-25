@@ -1,8 +1,10 @@
 # Loop Activities
 
-In this activity, we will be getting more practice with lists and loops. The prompts are included in the challenge-prompt.py file as comments.
+In this activity, we will be getting more practice with lists and loops.
 
 ## Instructions
+
+Open the [starter file](Unsolved/loops-01.py) and perform the following:
 
 1. Declare an empty list named `our_list`.
 
@@ -39,6 +41,16 @@ In this activity, we will be getting more practice with lists and loops. The pro
 17. Iterate through the provided `fruits` list and print the number of times "Peach" appears in the list.
 
 18. Iterate through the provided `fruits` list and print the number of fruits that start with "P" in the list.
+
+19. Execute the Python program.
+
+    1. Open your terminal/git bash.
+
+    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+
+    3. Navigate to the directory that is holding this code drill.
+
+    4. Run `python filename.py` to test your output.
 
 ## Challenge
 

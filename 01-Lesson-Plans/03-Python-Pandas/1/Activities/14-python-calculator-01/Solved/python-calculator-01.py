@@ -4,7 +4,7 @@ def calculate(num_1, num_2):
     result = 0
 
     # Prompt the user "What do you want to do: Add, Subtract, Multiply or Divide?" and assign the answer to a variable `choice`.
-    choice = input("What do you want to do: Add, Subtract, Multiply or Divide?")
+    choice = input("What do you want to do: Add, Subtract, Multiply or Divide? ")
 
     # Create an if-else statement to perform the proper calculation with the two parameters based on the user's `choice`.
     if choice == "Add":
