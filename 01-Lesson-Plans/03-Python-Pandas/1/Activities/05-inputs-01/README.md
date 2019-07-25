@@ -1,10 +1,10 @@
-# More Practice with Variables
+# User Prompts
 
-You will be getting more practice declaring and manipulating variables, logic check, prompting, confirm in this exercise.
+You will be getting more practice declaring and manipulating variables, using conditionals, and requesting user input in this exercise.
 
 ## Instructions
 
-Perform the following:
+Open the [starter file](Unsolved/inputs-01.py) and perform the following:
 
 1. Declare a variable `welcome_name` as an input with a string of "Welcome to the sandwich shop, what do I call you?".
 
