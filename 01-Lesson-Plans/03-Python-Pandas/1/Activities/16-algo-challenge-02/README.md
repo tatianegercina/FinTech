@@ -39,3 +39,7 @@ We're going to be creating a validation function for checking the strength of a 
 5. Declare a variable as `user_input_password` with an input stating "Input your password: ".
 
 6. Call the check_strength function with the `user_input_password`.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

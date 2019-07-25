@@ -17,3 +17,7 @@ Perform the following
 Using bracket notation with dictionaries to add key-value pairs looks like the following.
 
 ```san_francisco["west_coast"] = True```
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -27,3 +27,7 @@ Perform the following:
 10. Define a function `average` that calculates the average between two parameters and returns the average.
 
 11. Call the `average` function and assign to a variable `calculated_average`. Then print `calcualted_average`.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

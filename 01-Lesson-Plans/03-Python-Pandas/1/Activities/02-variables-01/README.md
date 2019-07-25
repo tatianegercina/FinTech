@@ -4,8 +4,6 @@ You will be getting more practice declaring, printing, and concatenating variabl
 
 ## Instructions
 
-Perform the following:
-
 Open the [starter file](Unsolved/variables-01.py) and perform the following:
 
 1. Create string variables.
@@ -73,3 +71,7 @@ Open the [starter file](Unsolved/variables-01.py) and perform the following:
     3. Navigate to the directory that is holding this code drill.
 
     4. Run `python variables-01.py` to test your output.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
