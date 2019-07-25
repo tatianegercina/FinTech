@@ -36,7 +36,7 @@ Encourage students to try and complete the simple code drills from memory as muc
 
 ### 2. Students Do: Code Drills (Remaining Class Time)
 
-Students will be given the remaining class time to work through the code drills at their own pace.
+Students will be given the remaining class time to work through the code drills at their own pace. They are allowed to skip activities if they are already comfortable with certain areas. The activities progress in complexity, so students with Python experience may skip more of the early activities and focus on the later problems.
 
 **Code Drills:**
 
