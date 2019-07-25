@@ -68,7 +68,7 @@ Slack out the following files to be used as reference guides as students progres
 
   * [Student Guide](../Supplemental/StudentGuide.md)
 
-  * [Python CheatSheet](../Supplemental/Python_Reference_Guide.pdf)
+  * [Python Cheat Sheet](../Supplemental/Python_Reference_Guide.pdf)
 
 Introduce Python by covering the following points:
 
