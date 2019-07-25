@@ -8,9 +8,21 @@ Correct Answer: `shows["genre"]["drama"]["game_of_thrones"]["cast"][0]["actor"]`
 
 ## Instructions
 
+Open the [starter file](Unsolved/dicts-02.py) and perform the following:
+
 1. Use the `from` keyword to import the `shows` dictionary from the `show_data.py` file
 
 2. Answer each question by printing the expected result using bracket notation for the `show` dictionary.
+
+3. Execute the Python program.
+
+    1. Open your terminal/git bash.
+
+    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+
+    3. Navigate to the directory that is holding this code drill.
+
+    4. Run `python filename.py` to test your output.
 
 ## Hint
 

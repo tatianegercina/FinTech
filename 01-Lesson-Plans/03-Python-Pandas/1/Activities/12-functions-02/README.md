@@ -1,4 +1,4 @@
-# Return to functions
+# Return to Functions
 
 By including a return value, we can have functions build upon each other. We can use those return values elsewhere in our code. Otherwise, we can't refer to values created within functions outside of them.
 
@@ -18,18 +18,28 @@ Perform the following:
 
 6. Define a function "return_sum" that takes in two numbers as arguments and returns the sum of those two numbers
 
-7. Using either "return_sum" and no mathematical operators, define a function "triple_sum" that takes in 3 arguments and returns the sum of those 3 numbers.
+7. Define a function "triple_sum" that takes in 3 arguments and returns the sum of those 3 numbers.
 
 8. Define a function "dance_party" that takes in a string as an argument, that prints "dance!", updates the string from calling "wibble" function with that argument, updates the string from calling "warble" function with that argument, returns the updated string
 
 9. Print the result of calling your "dance_party" function with your name as the argument
 
-```
-# Should result in:
-# dance!
-# MyName
-# wibbly MyName arglebargle
-```
+    ```
+    # Should result in:
+    # dance!
+    # MyName
+    # wibbly MyName arglebargle
+    ```
+
+10. Execute the Python program.
+
+    1. Open your terminal/git bash.
+
+    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+
+    3. Navigate to the directory that is holding this code drill.
+
+    4. Run `python filename.py` to test your output.
 
 ---
 

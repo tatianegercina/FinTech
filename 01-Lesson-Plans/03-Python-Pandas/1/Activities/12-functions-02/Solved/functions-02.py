@@ -22,7 +22,7 @@ def return_sum(num_1, num_2):
     sum = num_1 + num_2
     return sum
 
-# Using either "return_sum" and no mathematical operators, define a function "triple_sum" that takes in 3 arguments and returns the sum of those 3 numbers.
+# Define a function "triple_sum" that takes in 3 arguments and returns the sum of those 3 numbers.
 def triple_sum(num_1, num_2, num_3):
     sum = num_1 + num_2 + num_3
     return sum

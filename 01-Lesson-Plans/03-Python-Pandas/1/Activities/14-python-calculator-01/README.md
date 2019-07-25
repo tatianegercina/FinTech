@@ -4,6 +4,8 @@ This activity is going to combine everything we've covered today along with some
 
 ## Instructions
 
+Open the [starter file](Unsolved/python-calculator-01.py) and perform the following:
+
 1. Define a function `calculate` that takes in two numbers and adds, subtracts, multiplies, or divides the two numbers.
 
     1. Create a variable `result` and set it to 0.
@@ -15,6 +17,16 @@ This activity is going to combine everything we've covered today along with some
     4. Return the calculated `result` variable.
 
 2. Call the `calculate` function and print the results.
+
+3. Execute the Python program.
+
+    1. Open your terminal/git bash.
+
+    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+
+    3. Navigate to the directory that is holding this code drill.
+
+    4. Run `python filename.py` to test your output.
 
 ---
 

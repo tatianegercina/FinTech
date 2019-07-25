@@ -4,7 +4,7 @@ Put your trainer caps on because we're going to be reading Pokemon data. All 807
 
 ## Instructions
 
-Perform the following:
+Open the [starter file](Unsolved/csv-01.py) and perform the following:
 
 1. Import the necessary libraries for reading csv files
 
@@ -23,6 +23,16 @@ Perform the following:
 8. Iterate through the data and search for pokemon whose height is greater than 50. Append only the pokemon's name and height to the 'tallest' list.
 
 9. Print the list of heaviest and tallest pokemon
+
+10. Execute the Python program.
+
+    1. Open your terminal/git bash.
+
+    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+
+    3. Navigate to the directory that is holding this code drill.
+
+    4. Run `python filename.py` to test your output.
 
 ## Hints
 

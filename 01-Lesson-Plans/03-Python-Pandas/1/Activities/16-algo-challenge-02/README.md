@@ -14,6 +14,8 @@ We're going to be creating a validation function for checking the strength of a 
 
 ## Instructions
 
+Open the [starter file](Unsolved/algo-challenge-02.py) and perform the following:
+
 1. Import the `string` library.
 
 2. Use the `string` library to initialize string variables representing all valid letters and digits, respectively.
@@ -39,6 +41,16 @@ We're going to be creating a validation function for checking the strength of a 
 5. Declare a variable as `user_input_password` with an input stating "Input your password: ".
 
 6. Call the check_strength function with the `user_input_password`.
+
+7. Execute the Python program.
+
+    1. Open your terminal/git bash.
+
+    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+
+    3. Navigate to the directory that is holding this code drill.
+
+    4. Run `python filename.py` to test your output.
 
 ---
 
