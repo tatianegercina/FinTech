@@ -1,10 +1,10 @@
-# More Practice with Variables and Logic Check
+# More Practice with Variables and Conditions
 
 You will be getting more practice declaring, manipulating variables and using if else statements in this exercise.
 
 ## Instructions
 
-Perform the following:
+Open the [starter file](Unsolved/condition-control-flow-02.py) and perform the following:
 
 1. Create Character One
 
