@@ -1,4 +1,4 @@
-### 14. Student Do: Crisis Analysis Dashboard (30 mins)
+### 14. Student Do: Crisis Analysis Dashboard (45 mins)
 
 In this mini-project activity, students will use their new sentiment analysis skills in combination to some of the skills they already master such as: Pandas, Pyviz, Plotly Expres and PyViz Panel to create a data visualization dashboard.
 
@@ -20,7 +20,7 @@ Present the solution demo to students before starting the activity and join TAs 
 
 ---
 
-### 15. Instructor Do: Review Crisis Analysis Dashboard (10 mins)
+### 15. Instructor Do: Review Crisis Analysis Dashboard (15 mins)
 
 **Files:**
 
