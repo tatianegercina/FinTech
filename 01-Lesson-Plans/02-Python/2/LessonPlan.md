@@ -1552,7 +1552,7 @@ Encourage students to work with a partner on this activity.
 
 **Instructions:** [README.md](Activities/10-Stu_Functions/README.md)
 
-### 19. Instructor Do: Review Finally Functioning (10 min)
+### 19. Instructor Do: Review Finally Functioning (5 min)
 
 **File:** [finally_functioning.py](Activities/10-Stu_Functions/Solved/finally_functioning.py)
 
@@ -1654,7 +1654,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 20. Instructor Do: Reflection and End Class
+### 20. Instructor Do: Reflection and End Class (5 min)
 
 Use the last few minutes of class to give the students encouraging and positive feedback. Remind them that they're one step closer to conquering Python and becoming masters of FinTech!
 
