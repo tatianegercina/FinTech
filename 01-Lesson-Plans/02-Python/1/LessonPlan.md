@@ -22,6 +22,8 @@ By the end of this class, students will be able to:
 
 ### Instructor Notes
 
+* As a reminder, slack out the [Anaconda Installation Guide](../Supplemental/AnacondaInstallGuide.md). Tell students that they need to have Anaconda installed prior to class today and to use office hours to debug any problems.
+
 * Welcome to the first day of programming with Python! You will be guiding students through a series of increasingly complex activities, which serve as the foundation for the next class as well as the homework. The class should feel like an evenly paced introduction to Python that provides a challenge and engages students with relatable use cases.
 
 * Today's class will introduce students to fundamental Python concepts, including what Python is, technical and financial problems it solves, and factors that make Python different from other programming languages. Students' familiarity with Python will likely vary, so be prepared to answer questions ranging from basic to complex.
@@ -60,7 +62,15 @@ In this section, you'll welcome students to class and introduce the Python progr
 
 **File:** [Welcome and Python Slides](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.p9)
 
-Welcome students to class and introduce the class objectives for the day. Then, explain that today will be the exciting first step toward automating their work with Python! Introduce Python by covering the following points:
+Welcome students to class and introduce the class objectives for the day. Then, explain that today will be the exciting first step toward automating their work with Python! 
+
+Slack out the following files to be used as reference guides as students progress through Python.
+
+  * [Student Guide](../Supplemental/StudentGuide.md)
+
+  * [Python CheatSheet](../Supplemental/Python_Reference_Guide.pdf)
+
+Introduce Python by covering the following points:
 
 * Python is a high-level, general purpose programming language used to create applications, as well as solve smaller, individual development needs.
 
@@ -205,9 +215,9 @@ In this activity, students will create a JupyterLab project and run a Python `he
 
 **Instructions:** [README.md](Activities/03-Stu_Jupyter_Project/README.md)
 
-Open the instructions and introduce the student activity.
+Open the instructions and introduce the student activity. 
 
-Instructional staff should circulate the classroom during this activity, monitoring students to ensure that everyone can successfully open JupyterLab.
+Instructional staff should circulate the classroom during this activity, monitoring students to ensure that everyone can successfully launch JupyterLab. If anyone has issues, direct them to use [Try Jupyter](https://jupyter.org/try) for this activity and to troubleshoot their install with a TA during the next break. 
 
 Take some additional time here if necessary, as students may need to familiarize themselves with the layout of JupyterLab. Students will not be able to participate in the upcoming coding activities if this activity is not completed successfully.
 
