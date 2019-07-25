@@ -56,13 +56,13 @@ meaning that any code commented out is ignored.
 # Create a variable, `birth_year`, and assign it with an integer of 1815.
 
 
-# Create a variable, death_year, and assign it with an integer of 1852.
+# Create a variable, `death_year`, and assign it with an integer of 1852.
 
 
-# Create a variable, age_at_passing, and assign it a value of death_year minus birth_year.
+# Create a variable, `age_at_passing`, and assign it a value of death_year minus birth_year.
 
 
-# Create a variable, year_of_publish, and assign it with an integer of 1842.
+# Create a variable, `year_of_publish`, and assign it with an integer of 1842.
 
 
 
@@ -83,18 +83,18 @@ meaning that any code commented out is ignored.
 
 #Topic: Concat Values
 
-# Create and print a variable, `statement_one`, by assigning it a value of a string:
+# Create and print a variable, `statement_one`, by assigning it a value of a concatenated string:
 # "Programmers: Ada Lovelace is a British Computer Programmer born in 1815."
 
 
-# Create and print a variable, `statement_two`, by assigning it a value of a string:
+# Create and print a variable, `statement_two`, by assigning it a value of a concatenated string:
 # "She is commonly referred to as the First Computer Programmer."
 
 
-# Create and print a variable, `statement_three`, by assigning it a value of a string:
+# Create and print a variable, `statement_three`, by assigning it a value of a concatenated string:
 # "In 1842 she published the first Algorithm, the Analytical Engine, at the age of 27."
 
 
-# Create and print a variable, `statement_four`, by assigning it a value of a string:
+# Create and print a variable, `statement_four`, by assigning it a value of a concatenated string:
 # "She was a British Citizen who lived in London, England until her passing in 1852 at the age of 37."
 

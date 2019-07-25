@@ -64,7 +64,7 @@ Perform the following:
 
     4. Write an if-else statement to check if `c1_rent` is greater than `c2_rent`. If so, print a string of "Mr. Farley pays more rent than Mr. Snuggles". Else if `c1_rent` is less than `c2_rent`, print a string of "Mr. Farley pays less rent than Mr. Snuggles". Else, `c1_rent` must have to be equal to `c2_rent`, therefore print a string of "Mr. Farley pays the same rent as Mr. Snuggles".
 
-    5. Write an if-else statement to check if `c1_monthly_expenses` is greater than `c2_monthly_expenses`. If so, print a string of `Mr. Farley has more expenses than Mr. Snuggles`. Else if `c1_monthly_expenses` is less than `c2_monthly_expenses`, print a string of "Mr. Farley pays less expenses than Mr. Snuggles". Else, `c1_monthly_expenses` must have to be equal to `c2_monthly_expenses`, therefore print a string of "Mr. Farley pays the same expenses at Mr. Snuggles".
+    5. Write an if-else statement to check if `c1_monthly_expenses` is greater than `c2_monthly_expenses`. If so, print a string of `Mr. Farley has more expenses than Mr. Snuggles`. Else if `c1_monthly_expenses` is less than `c2_monthly_expenses`, print a string of "Mr. Farley pays less expenses than Mr. Snuggles". Else, `c1_monthly_expenses` must have to be equal to `c2_monthly_expenses`, therefore print a string of "Mr. Farley pays the same expenses as Mr. Snuggles".
 
     6. Write an if-else statement to check if `c1_profession` is equal to "Web Developer" AND `c2_profession` is equal to "Accountant". If so, print a string of "Look a Web Developer and an Accountant", else print a string of "They are professionals."
 
