@@ -6,13 +6,21 @@ Approach these problems in the best way you see fit. Open challenge.py and follo
 
 ## Instructions
 
-Perform the following:
+Open the [starter file](Unsolved/algo-challenge-01.py) and perform the following:
 
 1. Import the `random` library.
 
 2. Answer each question with the correct coding solution.
 
 3. Execute the Python program.
+
+    1. Open your terminal/git bash.
+
+    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+
+    3. Navigate to the directory that is holding this code drill.
+
+    4. Run `python filename.py` to test your output.
 
 ---
 

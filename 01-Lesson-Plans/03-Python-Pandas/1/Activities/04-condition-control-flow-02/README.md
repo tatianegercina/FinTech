@@ -76,7 +76,7 @@ Open the [starter file](Unsolved/condition-control-flow-02.py) and perform the f
 
     3. Navigate to the directory that is holding this code drill.
 
-    4. Run `python variables-01.py` to test your output.
+    4. Run `python filename.py` to test your output.
 
 ---
 

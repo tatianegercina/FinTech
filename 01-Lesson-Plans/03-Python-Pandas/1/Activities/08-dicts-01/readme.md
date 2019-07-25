@@ -6,11 +6,21 @@ You may not create a new dictionary, but can instead only use bracket notation t
 
 ## Instructions
 
-Perform the following
+Open the [starter file](Unsolved/dicts-01.py) and perform the following
 
 1. Re-create the content of the commented out `san_francisco` dictionary by using bracket notation to manually add each of the key-value pairs (including nested objects).
 
 2. Print the manually modified `san_francisco` dictionary and confirm the contents match the commented out version.
+
+3. Execute the Python program.
+
+    1. Open your terminal/git bash.
+
+    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+
+    3. Navigate to the directory that is holding this code drill.
+
+    4. Run `python filename.py` to test your output.
 
 ## Hint
 

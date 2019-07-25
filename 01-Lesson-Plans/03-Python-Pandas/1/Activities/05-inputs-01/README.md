@@ -22,13 +22,13 @@ Open the [starter file](Unsolved/inputs-01.py) and perform the following:
 
 5. Execute the Python program.
 
-    1. Open your terminal / git bash
+    1. Open your terminal/git bash.
 
-    2. From within terminal / git bash run `source activate PythonData` to activate your virtual environment.
+    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
 
-    3. Navigate to the directory that is holding this code drill
+    3. Navigate to the directory that is holding this code drill.
 
-    4. Run `python challenge-prompt.py` to test your output.
+    4. Run `python filename.py` to test your output.
 
 ---
 

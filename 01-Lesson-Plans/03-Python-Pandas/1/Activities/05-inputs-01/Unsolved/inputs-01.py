@@ -1,4 +1,4 @@
-# Declare a variable `welcome_name` as an input with a string of "Welcome to the sandwich shop, what do I call you?".
+# Declare a variable `welcome_name` as an input with a string of "Welcome to the sandwich shop, what do I call you? ".
 
 
 # Then print the string "Hello" concatenated with the variable `welcome_name`.
