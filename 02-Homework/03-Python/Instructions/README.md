@@ -99,15 +99,18 @@ Complete the following:
 * Initialize an empty `report` dictionary to hold the future aggregated per-product results. The `report` dictionary will eventually contain the following metrics:
   
   * `01-count`: the total quantity for each ramen type
+
   * `02-revenue`: the total revenue for each ramen type
+
   * `03-cogs`: the total cost of goods sold for each ramen type
+
   * `04-profit`: the total profit for each ramen type
 
-* Then loop through every row in the `sales` list object.
+* Then, loop through every row in the `sales` list object.
 
   * For each row of the `sales` data, set the menu item data as its own variable `sales_item`.  
   
-  * Perform a quick check to see if the `sales_item` is not already included in the `report`. If not, initialize the key-value pairs for the particular `sales_item` in the report; set the `sales_item` as a new key to the `report` dictionary and the values as a nested dictionary containing the following:
+  * Perform a quick check if the `sales_item` is already included in the `report`. If not, initialize the key-value pairs for the particular `sales_item` in the report. Then, set the `sales_item` as a new key to the `report` dictionary and the values as a nested dictionary containing the following:
   
     ```python
     {
@@ -118,7 +121,7 @@ Complete the following:
     }
     ```
   
-  * Now, create a nested loop by looping through every record in `menu`.
+* Create a nested loop by looping through every record in `menu`.
 
     * For each row of the `menu` data, set the columns of the menu data to their own variables:
 
@@ -130,7 +133,7 @@ Complete the following:
 
     * If the `sales_item` in sales is equal to the `item` in `menu`, capture the `quantity` from the sales data and the `price` and `cost` from the menu data to calculate the `profit` for each item.
 
-      * Cumulatively add the values to the corresponding metrics in the report like so:
+    * Cumulatively add the values to the corresponding metrics in the report like so:
 
         ```python
         report[sales_item]["01-count"] += quantity
@@ -141,7 +144,7 @@ Complete the following:
 
     * Else print the message "{sales_item} does not equal {item}! NO MATCH!".
 
-* Write out the contents of the `report` dictionary to a text file; the report should output each ramen type as the keys and `01-count`, `02-revenue`, `03-cogs`, and `04-profit` metrics as the values for every ramen type as shown:
+* Write out the contents of the `report` dictionary to a text file. The report should output each ramen type as the keys and `01-count`, `02-revenue`, `03-cogs`, and `04-profit` metrics as the values for every ramen type as shown:
   
   ```
   spicy miso ramen {'01-count': 9238, '02-revenue': 110856.0, '03-cogs': 46190.0, '04-profit': 64666.0}
