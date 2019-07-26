@@ -8,14 +8,11 @@ from pathlib import Path
 menu_filepath = Path("Resources/menu_data.csv")
 sales_filepath = Path("Resources/sales_data.csv")
 
-
-# Initialize list object to hold our menu data
+# Initialize list objects to hold our menu and sales data
 menu = []
+sales = []
 
-# Initialize dict object to hold our key-value pairs of items and metrics
-report = {}
-
-# item,category,description,price,cost
+# item, category, description, price, cost
 # Read in the menu data into the menu list
 with open(menu_filepath) as menu_file:
     reader = csv.reader(menu_file)
@@ -26,73 +23,80 @@ with open(menu_filepath) as menu_file:
     for row in reader:
         menu.append(row)
 
-
-# Line_Item_ID,Date,Credit_Card_Number,Quantity,Menu_Item
+# Line_Item_ID, Date, Credit_Card_Number, Quantity, Menu_Item
 # Open the csv file and load it in as a csv.reader object
-with open(sales_filepath) as csvfile:
-    reader = csv.reader(csvfile, delimiter=",")
+with open(sales_filepath) as sales_file:
+    reader = csv.reader(sales_file)
 
     # Skip header of sales data
     next(reader)
 
-    row_count = 0
-
-    # Loop over every row in the csv file
     for row in reader:
-        print()
-        print(row)
+        sales.append(row)
 
-        # Line_Item_ID,Date,Credit_Card_Number,Quantity,Menu_Item
-        # Initialize sales data variables
-        line_item_id = row[0]
-        date = row[1]
-        cc_number = row[2]
-        quantity = int(row[3])
-        sales_item = row[4]
+# Initialize dict object to hold our key-value pairs of items and metrics
+report = {}
 
-        # If the item value not in the report, add it as a new entry with initialized metrics
-        # Naming convention allows the keys to be ordered in logical fashion, count, revenue, cost, profit
-        if sales_item not in report.keys():
-            report[sales_item] = {
-                "01-count": 0,
-                "02-revenue": 0,
-                "03-cogs": 0,
-                "04-profit": 0,
-            }
+# Line_Item_ID,Date,Credit_Card_Number,Quantity,Menu_Item
+# Open the csv file and load it in as a csv.reader object
+row_count = 0
 
-        # For every row in our sales data, loop over the menu records to determine a match
-        for record in menu:
+# Loop over every row in the csv file
+for row in sales:
+    print()
+    print(row)
 
-            # Item,Category,Description,Price,Cost
-            # Initialize menu data variables
-            item = record[0]
-            category = record[1]
-            description = record[2]
-            price = float(record[3])
-            cost = float(record[4])
-            profit = price - cost
+    # Line_Item_ID,Date,Credit_Card_Number,Quantity,Menu_Item
+    # Initialize sales data variables
+    line_item_id = row[0]
+    date = row[1]
+    cc_number = row[2]
+    quantity = int(row[3])
+    sales_item = row[4]
 
-            # If the item value in our sales data is equal to the any of the items in the menu, then begin tracking metrics for that item
-            if sales_item == item:
+    # If the item value not in the report, add it as a new entry with initialized metrics
+    # Naming convention allows the keys to be ordered in logical fashion, count, revenue, cost, profit
+    if sales_item not in report.keys():
+        report[sales_item] = {
+            "01-count": 0,
+            "02-revenue": 0,
+            "03-cogs": 0,
+            "04-profit": 0,
+        }
 
-                # Print out matching menu data
-                print(f"Does {sales_item} equal {item}? WE HAVE A MATCH!!!")
-                print(f"   Item: {item}")
-                print(f"   Category: {category}")
-                print(f"   Price: ${price}")
-                print(f"   Cost: ${cost}")
-                print(f"   Profit: ${profit}")
+    # For every row in our sales data, loop over the menu records to determine a match
+    for record in menu:
 
-                # Cumulatively add up the metrics for each item key
-                report[sales_item]["01-count"] += quantity
-                report[sales_item]["02-revenue"] += price * quantity
-                report[sales_item]["03-cogs"] += cost * quantity
-                report[sales_item]["04-profit"] += profit * quantity
+        # Item,Category,Description,Price,Cost
+        # Initialize menu data variables
+        item = record[0]
+        category = record[1]
+        description = record[2]
+        price = float(record[3])
+        cost = float(record[4])
+        profit = price - cost
 
-            else:
-                print("Does", sales_item, "equal", record[0], "? WA WA, NO MATCH")
+        # If the item value in our sales data is equal to the any of the items in the menu, then begin tracking metrics for that item
+        if sales_item == item:
 
-        row_count += 1
+            # Print out matching menu data
+            print(f"Does {sales_item} equal {item}? WE HAVE A MATCH!!!")
+            print(f"   Item: {item}")
+            print(f"   Category: {category}")
+            print(f"   Price: ${price}")
+            print(f"   Cost: ${cost}")
+            print(f"   Profit: ${profit}")
+
+            # Cumulatively add up the metrics for each item key
+            report[sales_item]["01-count"] += quantity
+            report[sales_item]["02-revenue"] += price * quantity
+            report[sales_item]["03-cogs"] += cost * quantity
+            report[sales_item]["04-profit"] += profit * quantity
+
+        else:
+            print("Does", sales_item, "equal", record[0], "? WA WA, NO MATCH")
+
+    row_count += 1
 
 # Print total number of records in sales data
 print()
