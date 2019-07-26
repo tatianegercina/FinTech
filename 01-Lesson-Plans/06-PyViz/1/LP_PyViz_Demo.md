@@ -20,16 +20,7 @@ Navigate to the 6.1 slides, and highlight the following:
 
 Transition to the dry walkthrough of the installation guide, and highlight the following:
 
-* It's important to ensure the conda environment is up to date before installing PyViz and its dependencies. This will ensure version compatability.
-
-  ```shell
-  conda update conda
-  conda update anaconda
-  ```
-
-* Indicate to students that compatability errors might be thrown if the environment is not updated to the latest version first.
-
-* Once the Anaconda env has been updated, the PyViz dependencies will need to be downloaded. This includes nodejs5 and dpm.
+* To install PyViz, PyViz dependencies will need to be downloaded. This includes nodejs5 and dpm.
 
   ```shell
   pip install nodejs
