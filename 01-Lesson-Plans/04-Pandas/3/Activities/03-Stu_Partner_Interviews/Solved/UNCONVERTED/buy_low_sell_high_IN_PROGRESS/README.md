@@ -1,14 +1,12 @@
 # Buy Low Sell High
 
-Xena is an amateur day trader. Her portfolio consists of IAG. IAG is a mineral exploration company. Xena believes IAG has opportunity based on a gut feeling she has. Xena bought 10000 shares of IAG at $1.45 per share at 10 am on 12/12/15. She ended up selling it 20 minutes later at $1.74 making a $2900 profit. Xena just made 2 months of rent in 20 minutes.
+Xena is an amateur day trader who is day trading IAG, a mineral exploration company. On 12/12/15 @ 10 AM, Xena believed IAG was a buying opportunity and bought 10000 shares at $1.42 per share and ended up selling it an hour later (11 AM) at $1.85 per share, generating a profit of $4300. Although a fantastic trade in itself, Xena would also like to know if she could have possible made more money.
 
-These were all the prices of IAG on 12/12/15 during a one hour period in chronological order:
+These were all the prices of IAG at 5-minute intervals on 12/12/15 between the hours of 10 AM and 11 AM:
 
-`$1.42, $1.32, $1.45, $1.20, $1.34, $1.74, $1.10, $1.89, $1.42, $1.90`
+`$1.42, $1.32, $1.45, $1.20, $1.34, $1.74, $1.10, $1.89, $1.42, $1.90, $1.80, $1.85`
 
-Write an efficient function that takes an array of stock prices in chronological order. The function should determine the largest profit possible during that period if someone bought the stock at the lowest price and sold it at the highest.
-
-You must buy before you sell—no shorting.
+Write an efficient function that takes an array of stock prices in chronological order. The function should determine the largest profit possible during that period if someone bought the stock at the lowest price and sold it at the highest. You must buy before you sell—no shorting.
 
 ## Notes to the Interviewer
 
@@ -42,7 +40,7 @@ The interviewer may use these prompts to invoke additional problem-solving for t
 
   * **Ask During**: Solution Sketch, Implementation Discussion
 
-  * **Look For**
+  * **Look For:**
 
     * **Candidate Asks for Input**.
 
@@ -58,7 +56,7 @@ The interviewer may use these prompts to invoke additional problem-solving for t
 
   * **Ask During**: Solution Sketch, Implementation Discussion
 
-  * **Look For**
+  * **Look For:**
 
     * **Candidate Explains Shortcomings**.
 
