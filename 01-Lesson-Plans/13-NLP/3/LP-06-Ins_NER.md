@@ -17,7 +17,7 @@ for ent in doc.ents:
 
 * We can also use displacy here to visually examine an article, which makes seeing the named entities a lot easier.
 
-![ner](Images/ner1.PNG)
+![ner_2](Images/ner_2.PNG)
 
 * Again, like with with POS or dependencies, we can filter for particular types of entities with a list comprehension.
 
