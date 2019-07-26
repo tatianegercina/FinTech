@@ -31,7 +31,7 @@ Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 - - -
 
-### 1. Instructor Do: Welcome Class (5 mins)
+### 1. Instructor Do: Welcome Class (10 mins)
 
 ...
 
@@ -155,7 +155,7 @@ Select the local notebook file to upload.
 * Now you can run commands on the notebook cells.
 Note: you might need to make some of the `CSV` input files available by also uploading them to the right location).
 
-### 0. Students Do: Stu_Linear_Time_Series_Forecast (0:20)
+### 0. Students Do: Housing Price Prediction (20 mins)
 
 * In this activity, students will calculate a regression line to predict the price of a house using the Boston Housing dataset and the SageMaker built-in `Linear Learner` algorithm.
 
@@ -165,7 +165,7 @@ Note: you might need to make some of the `CSV` input files available by also upl
 
   * Upload the provided notebook to SageMaker's JupyterLab and run each cell to build, train, deploy the model. After this
 
-### 0. Instructor Do: Review Activity (0:10)
+### 0. Instructor Do: Review Activity (10 mins)
 
 * Reassure students that it's okay if this was difficult. SageMaker APIs have a learning curve, as do other AWS resources, along with Machine Learning in general. They will get a lot of practice with this today!
 
