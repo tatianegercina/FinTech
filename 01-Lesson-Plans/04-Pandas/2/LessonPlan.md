@@ -38,9 +38,13 @@ Encourage students to try and complete the simple code drills from memory as muc
 
 Students will be given the remaining class time to work through the code drills at their own pace.
 
+In addition to the code drills located in the repo, students can also work through the code drills located [here](https://github.com/guipsamora/pandas_exercises)
+
 **Code Drills:**
 
 * [Code Drills](Activities/)
+
+* [Additional Pandas Exercises](https://github.com/guipsamora/pandas_exercises)
 
 - - -
 
