@@ -1,6 +1,7 @@
 # -*- coding: UTF-8 -*-
 """PyRamen Homework Solution."""
 
+# Import libraries and dependencies
 import csv
 from pathlib import Path
 
@@ -12,7 +13,6 @@ sales_filepath = Path("Resources/sales_data.csv")
 menu = []
 sales = []
 
-# item, category, description, price, cost
 # Read in the menu data into the menu list
 with open(menu_filepath) as menu_file:
     reader = csv.reader(menu_file)
@@ -20,28 +20,28 @@ with open(menu_filepath) as menu_file:
     # Skip header of menu data
     next(reader)
 
+    # Iterate over each row after the header
     for row in reader:
         menu.append(row)
 
-# Line_Item_ID, Date, Credit_Card_Number, Quantity, Menu_Item
-# Open the csv file and load it in as a csv.reader object
+# Read in the sales data into the sales list
 with open(sales_filepath) as sales_file:
     reader = csv.reader(sales_file)
 
     # Skip header of sales data
     next(reader)
 
+    # Iterate over each row after the header
     for row in reader:
         sales.append(row)
 
 # Initialize dict object to hold our key-value pairs of items and metrics
 report = {}
 
-# Line_Item_ID,Date,Credit_Card_Number,Quantity,Menu_Item
-# Open the csv file and load it in as a csv.reader object
+# Initialize a row counter variable
 row_count = 0
 
-# Loop over every row in the csv file
+# Loop over every row in the sales list object
 for row in sales:
     print()
     print(row)
@@ -93,9 +93,11 @@ for row in sales:
             report[sales_item]["03-cogs"] += cost * quantity
             report[sales_item]["04-profit"] += profit * quantity
 
+        # Else, the sales item does not equal any fo the item in the menu data, therefore no match
         else:
             print("Does", sales_item, "equal", record[0], "? WA WA, NO MATCH")
 
+    # Increment the row counter by 1
     row_count += 1
 
 # Print total number of records in sales data
@@ -109,11 +111,3 @@ with open("report.txt", "w") as txt_file:
 
         line = f"{key} {value}\n"
         txt_file.write(line)
-
-
-
-
-
-
-
-
