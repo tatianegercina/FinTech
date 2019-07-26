@@ -46,7 +46,7 @@ Your resulting analysis should look similar to the following:
 
 Your final script should print the analysis to the terminal and export a text file with the results.
 
-## PyRamen
+## PyRamen (Optional)
 
 ![ramen.jpg](Images/ramen.jpg)
 
@@ -67,8 +67,6 @@ In this homework assignment, you will need to:
 1. [Read the Data](#Read-the-Data)
 
 2. [Manipulate the Data](#Manipulate-the-Data)
-
-3. [Analyze the Data](#Analyze-the-Data) (Challenge)
 
 ---
 
@@ -123,26 +121,26 @@ Complete the following:
   
 * Create a nested loop by looping through every record in `menu`.
 
-    * For each row of the `menu` data, set the columns of the menu data to their own variables:
+  * For each row of the `menu` data, set the columns of the menu data to their own variables:
 
-      * Item
-      * Category
-      * Description
-      * Price
-      * Cost
+    * Item
+    * Category
+    * Description
+    * Price
+    * Cost
 
-    * If the `sales_item` in sales is equal to the `item` in `menu`, capture the `quantity` from the sales data and the `price` and `cost` from the menu data to calculate the `profit` for each item.
+  * If the `sales_item` in sales is equal to the `item` in `menu`, capture the `quantity` from the sales data and the `price` and `cost` from the menu data to calculate the `profit` for each item.
 
-    * Cumulatively add the values to the corresponding metrics in the report like so:
+  * Cumulatively add the values to the corresponding metrics in the report like so:
 
-        ```python
-        report[sales_item]["01-count"] += quantity
-        report[sales_item]["02-revenue"] += price * quantity
-        report[sales_item]["03-cogs"] += cost * quantity
-        report[sales_item]["04-profit"] += profit * quantity
-        ```
+      ```python
+      report[sales_item]["01-count"] += quantity
+      report[sales_item]["02-revenue"] += price * quantity
+      report[sales_item]["03-cogs"] += cost * quantity
+      report[sales_item]["04-profit"] += profit * quantity
+      ```
 
-    * Else print the message "{sales_item} does not equal {item}! NO MATCH!".
+  * Else print the message "{sales_item} does not equal {item}! NO MATCH!".
 
 * Write out the contents of the `report` dictionary to a text file. The report should output each ramen type as the keys and `01-count`, `02-revenue`, `03-cogs`, and `04-profit` metrics as the values for every ramen type as shown:
   
@@ -158,109 +156,6 @@ Complete the following:
   soft-shell miso crab ramen {'01-count': 9130, '02-revenue': 127820.0, '03-cogs': 63910.0, '04-profit': 63910.0}
   burnt garlic tonkotsu ramen {'01-count': 9070, '02-revenue': 126980.0, '03-cogs': 54420.0, '04-profit': 72560.0}
   vegetarian curry + king trumpet mushroom ramen {'01-count': 8824, '02-revenue': 114712.0, '03-cogs': 61768.0, '04-profit': 52944.0}
-  ```
-
----
-
-## Challenge
-
-### Analyze the Data
-
-Now that we have our data in a per-product format, let's perform some field-level calculations that allow us to answer the following questions.
-
-**Summary Statistics:**
-
-* What is the total number of ramen bowls sold?
-
-* What is the total revenue generated?
-
-* What is the total cost of goods sold?
-
-* What is the net profit generated?
-
-**Average Statistics:**
-
-* How many ramen types are there?
-
-* What is the average number of ramen bowls sold per ramen type?
-
-* What is the average revenue per ramen type?
-
-* What is the average cost of goods sold per ramen type?
-
-* What is the average profit per ramen type?
-
-**Min/Max Statistics:**
-
-* What item is the most popular?
-
-* What item is the least popular?
-
-* What item generated the most revenue?
-
-* What item generated the least revenue?
-
-* What item is the most costly?
-
-* What item is the least costly?
-
-* What item is the most profitable?
-
-* What item is the least profitable?
-
-**Filter Items:**
-
-* What items are underperforming?
-
-* What items are overperforming?
-
-To answer these questions, do the following:
-
-* Create the following functions that take in the report and field of choice as parameters, and then return the calculations for that particular field of all keys in the report.
-
-  * `sum_field(report, field)`: Summarize the values of the specified field for every item in the report.
-
-  * `avg_field(report, field)`: Average the values of the specified field for every item in the report.
-
-  * `min_field(report, field)`: Find the minimum of the values of the specified field for every item in the report.
-
-  * `max_field(report, field)`: Find the maximum of the values of the specified field for every item in the report
-
-Your report details should look similar to the following:
-
-  ```text
-  Ramen Analysis Report
-  -----------------------------
-  Summary Statistics:
-
-  Total Number of Ramen Sold: 100,106 bowls
-  Total Revenue Generated: $1,264,592.0
-  Total Cost of Goods Sold: $590,806.0
-  Net Profit Generated: $673,786.0
-
-  Average Statistics:
-
-  Number of Ramen Types: 11
-  Average Number Sold per Ramen Type: 9,100.55 bowls
-  Average Revenue Generated per Ramen Type: $114,962.91
-  Average Cost of Goods Sold per Ramen Type: $53,709.64
-  Average Net Profit Generated per Ramen Type: $61,253.27
-
-  Min/Max Statistics:
-
-  Most Popular: (9288, 'tonkotsu ramen')
-  Least Popular: (8824, 'vegetarian curry + king trumpet mushroom ramen')
-  Most Revenue Generating: (127820.0, 'soft-shell miso crab ramen')
-  Least Revenue Generating: (100452.0, 'nagomi shoyu')
-  Most Costly: (63910.0, 'soft-shell miso crab ramen')
-  Least Costly: (45660.0, 'nagomi shoyu')
-  Most Profitable: (72560.0, 'burnt garlic tonkotsu ramen')
-  Least Profitable: (52944.0, 'vegetarian curry + king trumpet mushroom ramen')
-
-  Filter Items:
-
-  Overperforming Items: ['spicy miso ramen', 'tori paitan ramen', 'truffle butter ramen', 'tonkotsu ramen', 'vegetarian spicy miso', 'soft-shell miso crab ramen', 'burnt garlic tonkotsu ramen']
-  Underperforming Items: ['shio ramen', 'miso crab ramen', 'nagomi shoyu', 'vegetarian curry + king trumpet mushroom ramen']
   ```
 
 ---
