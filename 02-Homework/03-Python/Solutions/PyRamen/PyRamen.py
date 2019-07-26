@@ -48,9 +48,6 @@ for row in sales:
 
     # Line_Item_ID,Date,Credit_Card_Number,Quantity,Menu_Item
     # Initialize sales data variables
-    line_item_id = row[0]
-    date = row[1]
-    cc_number = row[2]
     quantity = int(row[3])
     sales_item = row[4]
 
@@ -70,10 +67,10 @@ for row in sales:
         # Item,Category,Description,Price,Cost
         # Initialize menu data variables
         item = record[0]
-        category = record[1]
-        description = record[2]
         price = float(record[3])
         cost = float(record[4])
+
+        # Calculate profit of each item in the menu data
         profit = price - cost
 
         # If the item value in our sales data is equal to the any of the items in the menu, then begin tracking metrics for that item
@@ -82,7 +79,6 @@ for row in sales:
             # Print out matching menu data
             print(f"Does {sales_item} equal {item}? WE HAVE A MATCH!!!")
             print(f"   Item: {item}")
-            print(f"   Category: {category}")
             print(f"   Price: ${price}")
             print(f"   Cost: ${cost}")
             print(f"   Profit: ${profit}")
