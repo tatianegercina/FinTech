@@ -1,22 +1,14 @@
-## Unit 2: Financial Programming with Python
+## Unit 3: Python and Pandas
 
 ### Helpful Links
 
-* [Python - Beginner](https://www.learnpython.org/)
+* [Pandas Tutorials](https://chrisalbon.com/)
 
-* [Python Scripting](https://automatetheboringstuff.com/)
+* [Pandas Documentation](http://pandas.pydata.org/)
 
-* [Python f-strings](https://www.python.org/dev/peps/pep-0498/)
+* [Visual Guide to Joins](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 
-* [Python DataStructures](https://docs.python.org/3/tutorial/datastructures.html)
-
-* [Python CSV Module](https://docs.python.org/3/library/csv.html)
-
-* [Git/Github](https://github.com/Multishifties/No-Nonsense-Github-Project)
-
-* [Visual Git Guide](http://marklodato.github.io/visual-git-guide/index-en.html)
-
-* [Python 3's f-Strings](https://realpython.com/python-f-strings/)
+* [Pandas Merging](https://pandas.pydata.org/pandas-docs/stable/merging.html)
 
 - - -
 
