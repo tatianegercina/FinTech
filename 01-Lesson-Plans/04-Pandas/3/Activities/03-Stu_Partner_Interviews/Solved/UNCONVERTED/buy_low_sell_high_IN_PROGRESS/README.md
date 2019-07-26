@@ -60,13 +60,21 @@ The interviewer may use these prompts to invoke additional problem-solving for t
 
   * **Look For**
 
-    * **Candidate Explains Shortcomings**. Good candidates who can't find the fast solutions explain that their nested loop is slow, and point it out as a point for optimization.
+    * **Candidate Explains Shortcomings**.
 
-    * **Candidate Explains Alternatives**. Good candidates who can't implement the fast solutions explain how they might work at a conceptual level, or pseudocode it.
+      * Good candidates who can't find the fast solutions explain that their nested loop is slow, and point it out as a point for optimization.
 
-    * **Candidate Explains Optimality**. Candidates who find the fast solutions explain why their solution is optimal.
+    * **Candidate Explains Alternatives**.
 
-    * **Candidate Implements Alternatives**. The best candidates explain why the slow solution is suboptmal; explain better alternatives; and implement them.
+      * Good candidates who can't implement the fast solutions explain how they might work at a conceptual level, or pseudocode it.
+
+    * **Candidate Explains Optimality**.
+
+      * Candidates who find the fast solutions explain why their solution is optimal.
+
+    * **Candidate Implements Alternatives**.
+
+      * The best candidates explain why the slow solution is sub-optimal; explain better alternatives; and implement them.
 
 ### Hints
 
