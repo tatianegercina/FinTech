@@ -106,7 +106,10 @@ Complete the following:
 
 * Then, loop through every row in the `sales` list object.
 
-  * For each row of the `sales` data, set the menu item data as its own variable `sales_item`.  
+  * For each row of the `sales` data, set the following columns of the sales data to their own variables: 
+  
+    * Quantity
+    * Menu_Item
   
   * Perform a quick check if the `sales_item` is already included in the `report`. If not, initialize the key-value pairs for the particular `sales_item` in the report. Then, set the `sales_item` as a new key to the `report` dictionary and the values as a nested dictionary containing the following:
   
@@ -121,11 +124,9 @@ Complete the following:
   
 * Create a nested loop by looping through every record in `menu`.
 
-  * For each row of the `menu` data, set the columns of the menu data to their own variables:
+  * For each row of the `menu` data, set the following columns of the menu data to their own variables:
 
     * Item
-    * Category
-    * Description
     * Price
     * Cost
 
