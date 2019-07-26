@@ -21,7 +21,7 @@ def word_counter(corpus):
     return pd.DataFrame(list(top_10.items()), columns=['word', 'count'])
 ```
 
-* Recall that the join() method can be used to combine multiple strings into one longer string. 
+* The join() method can be used to combine multiple strings into one longer string. 
 
 * We next run the defined process_text function over this string in order to get the list of words needed for the Counter function. Once the most frequent words are selected with most_common, all we need to do is to put them into a DataFrame. 
 
