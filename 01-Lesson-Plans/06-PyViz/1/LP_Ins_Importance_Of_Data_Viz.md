@@ -6,7 +6,33 @@ For this activity, the instructor will lead a formal lecture regarding what data
 
 * Slides
 
-Navigate to the Unit 6.1 slides, and highlight the following:
+Begin the activity by asking students what does the phrase "telling stories with data" means to them. Then, transition to the below links, and explain to students the importance of telling stories with data and data visualizations.
+
+* Explain to students that the most important thing to keep in mind with working with data visualizations is the story they want to tell with the data.
+
+* When cleaned and wrangled the proper way, data can tell its own story, whether it be the story of the rise and fall of real estate property value in a specific geographical region or the rise and fall of a particular financial market sector.
+
+* In addition to this, developers can craft and curate the narrative of the data as well, by slicing and dicing the data in a specific way.
+
+* Interactive visualizations give users the ability to explore and deep dive into these stories, paning and zooming across plots like a reader turns and analyzes the content on a page.
+
+Navigate to the below link, and walkthrough some of the visualizations with the students. Begin with the **Royal Constellations** visualization.
+
+* [Royal Constellations](http://www.datasketch.es/october/code/nadieh/) - This site visualizes the lineage of various European royal families. The visualization tells the story of how each of these leaders are interconnected to the other, as well as which royal lines are still in power.
+
+  * Ask the students to describe the story the data is telling, from their eyes in their own words.
+
+  * While on the site, interact with the visualization. Hover and click various nodes to get more information and highlight specific networks of relation.
+
+  ![royal_contellations.png](Images/royal_contellations.png)
+
+Communicate to students that they should take some time to review other sample visualizations provided at the below links. Make sure to slack out the links to the students.
+
+* [Data Sketch](http://www.datasketch.es)
+
+* [Story Telling with Data](http://www.storytellingwithdata.com/)
+
+If time remains, navigate to the Unit 6.1 slides, and highlight the following:
 
 * Working with large amounts of data often means having to run a bunch of manual queries to slice and dice data.
 
@@ -17,10 +43,12 @@ Navigate to the Unit 6.1 slides, and highlight the following:
   * Ask: What’s your first step when trying to analyze this data?
 
     * **Answer**: Run away
+
     * **Answer**: Filter the data to narrow it down
+
     * **Answer**: Categorize the data into segments, and then filter from segments (i.e. investments vs. purchases)
 
-Explain to students that trying to analyze large amounts of data typically results in the following:
+If there is left over time, explain to students that trying to analyze large amounts of data typically results in the following:
 
 * Increased wait time for analysis to completed
 
