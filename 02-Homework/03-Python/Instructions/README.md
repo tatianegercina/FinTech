@@ -236,15 +236,6 @@ Your report details should look similar to the following:
   Overperforming Items: ['spicy miso ramen', 'tori paitan ramen', 'truffle butter ramen', 'tonkotsu ramen', 'vegetarian spicy miso', 'soft-shell miso crab ramen', 'burnt garlic tonkotsu ramen']
   Underperforming Items: ['shio ramen', 'miso crab ramen', 'nagomi shoyu', 'vegetarian curry + king trumpet mushroom ramen']
   ```
-
-## Extension Activities
-
-Potential Ideas
-
-  * Sensitivity Analysis
-  * Monthly/Yearly Profit Reports
-  * Generate Income Statement
-
 - - -
 
 ## Resources
