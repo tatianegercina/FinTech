@@ -1,8 +1,8 @@
 # Crisis Sentiment Analysis Dashboard
 
-This activity is a mini-project where students will create a data visualization dashboard, they have to analyze sentiment and tone about the news related to the financial crisis of 2008 that where published along the last month. Students will retrieve the news articles from the News API; by default, the developer account gives access to news articles up to a month old.
+This activity is a mini-project where you'll create a data visualization dashboard; you have to analyze sentiment and tone about the news related to the financial crisis of 2008 that where published along the last month. You'll retrieve the news articles from the News API; by default, the developer account gives access to news articles up to a month old.
 
-In this activity, students will use their new sentiment analysis skills, in combination to some of the skills they already master such as: Pandas, Pyviz, Plotly Expres and PyViz Panel.
+In this activity, you will use your new sentiment analysis skills, in combination to some of the skills you already master such as: Pandas, Pyviz, Plotly Express and PyViz Panel.
 
 ---
 
@@ -20,7 +20,7 @@ This activity is intended to be done on teams up to three people.
 
 In this section, you will work with the `sentiment_analysis.ipynb` starter Jupyter notebook and perform the following tasks.
 
-#### Fetching the Latests News Metions About the Crisis of 2008
+#### Fetching the Latests News About the Crisis of 2008
 
 Using the News API, get all the news in English about the financial crisis of 2008 using the keywords `"financial AND crisis AND 2008"` in the `q` parameter. Define a `page_size=100` to have at least 100 news articles to analyze.
 
@@ -242,7 +242,7 @@ The final DataFrame should look as follows.
 
 Save the DataFrame as a CSV file named `tone_data.csv` for further use on the dashboard creation.
 
-Create a radar chart like the one bellow using the `scatter_polar()` method from Plotly Express as follows:
+Create a radar chart like the one bellow using the `bar_polar()` method from Plotly Express as follows:
 
 * Use the `score` column for the `r` and `color` parameters.
 
