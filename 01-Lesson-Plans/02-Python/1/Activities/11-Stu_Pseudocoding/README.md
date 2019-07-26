@@ -24,13 +24,13 @@ For this activity, work with a partner to create pseudocode a program that will:
 
 ## Instructions
 
-Using the [starter file](Unsolved/conditionally_yours.py), complete the following steps:
+Using the [starter file](Unsolved/conditionally_yours_part_1.py), complete the following steps:
 
 1. Pseudocode variable declaration.
 
 2. Pseudocode `percent_increase` calculation.
 
-3. Pseudocde `if-else` logic to determine the buy or sell recommendation.
+3. Pseudocode `if-else` logic to determine the buy or sell recommendation.
 
 ## Hint
 

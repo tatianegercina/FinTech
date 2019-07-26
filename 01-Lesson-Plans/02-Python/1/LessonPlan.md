@@ -53,7 +53,7 @@ By the end of this class, students will be able to:
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
- 
+
 ---
 
 ### 1. Instructor Do: Welcome and Introduce Python (5 min)
@@ -62,7 +62,7 @@ In this section, you'll welcome students to class and introduce the Python progr
 
 **File:** [Welcome and Python Slides](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.p9)
 
-Welcome students to class and introduce the class objectives for the day. Then, explain that today will be the exciting first step toward automating their work with Python! 
+Welcome students to class and introduce the class objectives for the day. Then, explain that today will be the exciting first step toward automating their work with Python!
 
 Slack out the following files to be used as reference guides as students progress through Python.
 
@@ -215,9 +215,9 @@ In this activity, students will create a JupyterLab project and run a Python `he
 
 **Instructions:** [README.md](Activities/03-Stu_Jupyter_Project/README.md)
 
-Open the instructions and introduce the student activity. 
+Open the instructions and introduce the student activity.
 
-Instructional staff should circulate the classroom during this activity, monitoring students to ensure that everyone can successfully launch JupyterLab. If anyone has issues, direct them to use [Try Jupyter](https://jupyter.org/try) for this activity and to troubleshoot their install with a TA during the next break. 
+Instructional staff should circulate the classroom during this activity, monitoring students to ensure that everyone can successfully launch JupyterLab. If anyone has issues, direct them to use [Try Jupyter](https://jupyter.org/try) for this activity and to troubleshoot their install with a TA during the next break.
 
 Take some additional time here if necessary, as students may need to familiarize themselves with the layout of JupyterLab. Students will not be able to participate in the upcoming coding activities if this activity is not completed successfully.
 
@@ -289,7 +289,7 @@ At this point, students may feel apprehensive about the upcoming coding activiti
 
 Set up the following real-world scenario to help explain variables:
 
-* Think about any time you've kept score for a game or watched someone else keep score. It can be an involved process. Scores change all the time. Tally marks and points have to be tracked and calculated, and you're always searching for pen and paper. 
+* Think about any time you've kept score for a game or watched someone else keep score. It can be an involved process. Scores change all the time. Tally marks and points have to be tracked and calculated, and you're always searching for pen and paper.
 
 * In this scenario, `score` is a variable that represents an ever-changing numeric number. We can track two scores in two different variables: `team_a_score` and `team_b_score`. Whenever Team A gets a point, the `team_a_score` variable should be incremented by 1. The same goes for Team B. At any moment, the two scores can be compared to find out who is winning.
 
@@ -325,7 +325,7 @@ Transition to discussing variables. Use the [slides]((https://docs.google.com/pr
 
   * Data types correspond to the type of data being stored, e.g., letters/words, phrases, or numbers.
 
-  * Python has five standard data types: number (integer, float, etc.), string, list, dictionary, and tuple. 
+  * Python has five standard data types: number (integer, float, etc.), string, list, dictionary, and tuple.
 
 * Depending on the type of data that you store, Python provides different functions for that data. For example, you can find the length of a string of characters (how many letters are in the string).
 
@@ -489,7 +489,7 @@ Ask if there are any questions before moving on.
 
 ### 9. Instructor Do: Conditionals (10 min)
 
-In this section, students will learn how to apply logic to the values assigned to variables. This establishes a workflow in which a program exhibits a specific behavior based on the evaluation of a condition. 
+In this section, students will learn how to apply logic to the values assigned to variables. This establishes a workflow in which a program exhibits a specific behavior based on the evaluation of a condition.
 
 **Files:**
 
@@ -636,7 +636,7 @@ Open [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py) an
 
 Revisit the self-driving car scenario to reinforce the power of using `elif` and nested if-else statements.
 
-* Let's say you're in your self-driving car in the state of Florida, and you somehow get into an accident. Your insurance company might have a program that will predict, based on a series of conditions (e.g., at-fault liability, accident forgiveness policy, loyalty elite status), whether your premium will increase. That logic might look something like the following code. 
+* Let's say you're in your self-driving car in the state of Florida, and you somehow get into an accident. Your insurance company might have a program that will predict, based on a series of conditions (e.g., at-fault liability, accident forgiveness policy, loyalty elite status), whether your premium will increase. That logic might look something like the following code.
 
 Open the following code snippet in JupyterLab. Do not run it. Let students read it to see if they can guess whether `increase_insurance_premium` will be `True` or `False`.
 
@@ -693,9 +693,9 @@ Take some time to walk through the solution while gauging students' level of com
 
 **File:** [conditionals.md](Activities/07-Stu_Conditionals/Solved/conditionals.py)
 
-Begin by saying something like: 
+Begin by saying something like:
 
-* "You've just learned a lot of new syntax and keywords. We've also introduced logical and comparison operators, and if-else statements are about to become your best friend." 
+* "You've just learned a lot of new syntax and keywords. We've also introduced logical and comparison operators, and if-else statements are about to become your best friend."
 
 * "Let's reflect for a minute. What makes sense, and what is still confusing? Is anything a point of frustration?"
 
@@ -715,9 +715,9 @@ Be prepared to explain the following, for example:
 
   * If we were to write a program to check whether someone's age meets the legal conditions, we would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 21 cannot drink.
 
-Tell students to look at the following code. Ask: 
+Tell students to look at the following code. Ask:
 
-* Are the results as expected, based on the logic? 
+* Are the results as expected, based on the logic?
 
 * What are two possible ways to fix the logic?
 
@@ -725,7 +725,7 @@ Tell students to look at the following code. Ask:
 
 1. Switch from using `>` to `>=`.
 
-2. Check `if age > 20`. 
+2. Check `if age > 20`.
 
     ```python
     age = 21
@@ -1079,7 +1079,7 @@ Go over Polyga's techniques to problem solving, which are are straightforward an
 
 4. Test and evaluate the plan: Review the algorithm and determine areas of improvement.
 
-Define pseudocoding and explain its effectiveness. Use the [slides](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g57f3228557_0_22) to accompany the lecture. 
+Define pseudocoding and explain its effectiveness. Use the [slides](https://docs.google.com/presentation/d/11YSMAXfDc_eDNFKayDVKT6-iWajgeJKCQe1N74bokrM/edit#slide=id.g57f3228557_0_22) to accompany the lecture.
 
 * **Pseudocode** is a high-level description (essentially, a prototype or outline) of the inner workings of a program or algorithm. Pseudocode is written in human language to ensure readability.
 
@@ -1166,7 +1166,7 @@ In this activity, students will pseudocode a solution to recommend whether or no
 
 In this activity, students will leverage the pseudocode they created in the previous activity to develop a program that will recommend whether or not a stock should be purchased based on a specific threshold of percentage increase or decrease. The objective of the assignment is for the students to learn how to evolve pseudocode into an algorithm or program.
 
-**File:** [conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Unsolved/Core/conditionally_yours_part_2.py)
+**File:** [conditionally_yours.py](Activities/12-Stu_Challenge_Activity/Unsolved/Core/conditionally_yours.py)
 
 **Instructions:** [README.md](Activities/12-Stu_Challenge_Activity/README.md)
 
@@ -1212,7 +1212,7 @@ Answer any questions before moving on.
 
 ### 20. Instructor Do: Preview Homework and End Class (5 min)
 
-**File:** [Homework Instructions](../../../02-Homework/03-Python/Instructions/README.md)
+**File:** [Homework Instructions](../../../02-Homework/02-Python/Instructions/README.md)
 
 Take a few moments to review the instructions to the homework and give students an idea of the kind of concepts that will be required to complete the assignment. Explain that they will be building the skills to complete this assignment during this week's classes.
 

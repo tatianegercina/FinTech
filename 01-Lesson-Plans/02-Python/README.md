@@ -10,7 +10,7 @@
 
 ### Homework
 
-* [Instructions](../../Homework/02-Python/Instructions/README.md)
+* [Instructions](../../02-Homework/02-Python/Instructions/README.md)
 
 - - -
 

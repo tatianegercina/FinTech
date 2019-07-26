@@ -4,7 +4,7 @@ In this activity, you will read in the `sales.csv` file to calculate customer re
 
 ## Instructions
 
-Using the [starter file](Unsolved/sales_analysis_core.py), complete the following steps.
+Using the [starter file](Unsolved/Core/sales_analysis_core.py), complete the following steps.
 
 1. Import the pathlib and CSV libraries.
 
