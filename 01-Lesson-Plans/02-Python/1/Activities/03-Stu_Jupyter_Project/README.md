@@ -8,7 +8,7 @@ Congratulations! You've been hired by a large financial investment analytics fir
 
 In order to test that the environment is working as expected, create a project in JupyterLab and execute a Python `hello world` print statement in a Jupyter Notebook.
 
-### Instructions
+## Instructions
 
 Using JupyterLab, complete the following steps:
 

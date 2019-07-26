@@ -1,8 +1,8 @@
-## Sales Analysis
+# Sales Analysis
 
 In this activity, you will read in the `sales.csv` file to calculate customer revenue averages.
 
-### Instructions
+## Instructions
 
 Using the [starter file](Unsolved/sales_analysis_core.py), complete the following steps.
 

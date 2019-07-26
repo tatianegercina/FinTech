@@ -40,6 +40,16 @@ By the end of this class, students will be able to:
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
+### Class Slides and Time Tracker 
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 2.3 Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+
 ---
 
 ### 1. Instructor Do: Welcome and Review (10 min)
@@ -48,13 +58,13 @@ In this section, welcome students to class, review the lesson objectives, and co
 
 **Files:**
 
-* [Welcome Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit?usp=sharing)
+* [Welcome Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss)
 
 * [refresher.py](Activities/01-Ins_Refresher/Solved/refresher.py)
 
 Welcome students back to class. Tell them that in today's lesson we will begin to apply Python concepts to financial use cases. Today will be fun!
 
-Use the slides to review the class objectives.
+Use the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57c97b9346_4_1) to review the class objectives.
 
 Use the solution file to perform a live coding session and quickly recap concepts learned in previous classes. During the session, ask the following questions:
 
@@ -294,11 +304,11 @@ In this part of the lesson, students will be introduced to the concept of time v
 
 * [time_value.py](Activities/03-Ins_Time_Value_of_Money/Solved/time_value.py)
 
-This section will focus on core financial calculations in Python. Use the slides to explain concepts related to time value of money. Students should understand that these calculations are fundamental to financial analysis, and that they will actually be writing code for each of these formulas.
+This section will focus on core financial calculations in Python. Students should understand that these calculations are fundamental to financial analysis, and that they will actually be writing code for each of these formulas.
 
-**Note:** When going over the slides, leverage the knowledge of students with a finance background by asking them to help explain time value of money and how it is used.
+**Note:** When reviewing the slides, leverage the knowledge of students with a finance background by asking them to help explain time value of money and how it is used.
 
-Open the slideshow to the slides about time value of money. Be sure to highlight the following:
+Use the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57bb043f18_0_4333) as you explain time value of money. Be sure to highlight the following:
 
 * The **time value of money (TVM)** describes the additional value that is created through receiving money today compared to receiving money at a later date, as money today can continue to grow with interest.
 
@@ -324,13 +334,13 @@ Open [time_value.py](Activities/03-Ins_Time_Value_of_Money/Solved/time_value.py)
 
 * Functions often return one or more values. The value that the function returns can be assigned to a variable for use in other parts of the code. In this example, `future_value` is assigned the value that the `calculate_future_value` function returns.
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
 ### 5. Student Do: Zero-Coupon Bonds (25 min)
 
-In this activity, students will use the concept of time value of money (TVM) to discount the future value of a zero-coupon bond to determine its present value. They will also compare the present value to its current selling price in order to decide whether or not to purchase the bond.
+In this activity, students will apply the concept of time value of money (TVM) to discount the future value of a zero-coupon bond and determine its present value. They will also compare the present value to its current selling price in order to decide whether or not to purchase the bond.
 
 Encourage students to work in pairs for this activity. Motivate students to help each other by explaining that the best way to learn is to teach, so taking the time to help their neighbor will really reinforce the concepts.
 
@@ -360,7 +370,7 @@ Open `zero_coupon_bonds.py` to review the solution and explain the process of va
 
 * After calculating the present value of the bond, compare it to its market price. The decision whether or not to purchase the bond is based on if the bond is selling at a `discount` or `premium` in relation to its present value.
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -382,7 +392,7 @@ Review the following points to motivate students and help them understand how po
 
 Explain that we will be importing some really cool financial functions to calculate things like net present value (NPV).
 
-Use the slides to discuss the theory behind NPV. Then, review the code in `imports.py`, highlighting the following:
+Using the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57bb043f18_0_4663), discuss the theory behind NPV. Then, review the code in `imports.py`, highlighting the following:
 
 * Imports allow us to call upon other Python programs and gain access to their functions and variables.
 
@@ -431,7 +441,7 @@ Introduce NumPy.
   print(f"NPV = {net_present_value}")
   ```
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -439,7 +449,7 @@ Ask if there are any questions before moving on.
 
 In this activity, students will use the `npv` function from the NumPy library to calculate the net present value of three potential company projects (and their cash flows) and assess which is the optimal project to undertake.
 
-**File:** [Starter code](Activities/06-Stu_Imports/Unsolved/Core/net_present_value_core.py)
+**File:** [Starter Code](Activities/06-Stu_Imports/Unsolved/Core/net_present_value_core.py)
 
 **Instructions:** [README.md](Activities/06-Stu_Imports/README.md)
 
@@ -461,7 +471,7 @@ Open the [solution file](Activities/06-Stu_Imports/Solved/Core/net_present_value
 
 * Resolving the return values of the NPV functions as key-value pairs lets us easily retrieve the NPV value of an associated scenario, for example, when looking to determine the scenario associated with the calculated max NPV value.
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -579,7 +589,7 @@ Open the solution file and highlight the following:
 
 * Writing to a text file is very similar to reading in a text file; the main difference is we use the `write()` function instead of the `read()` function.
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -632,7 +642,7 @@ Open the [solution file](Activities/08-Stu_File_IO/Solved/ecommerce_traffic.py) 
 
 * When writing data to a text file, the content needs to be string data types. Therefore, any non-string data being written to a text file will need to be converted to a string data type.
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -646,7 +656,7 @@ In this section, go over the definition of tabular data.
 
 **File:** [Tabular Data Slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57d7f6e59f_1_0)
 
-Open the slideshow to the slides on tabular data and review the following points:
+Use the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57d7f6e59f_1_0) to review the following points about tabular data.
 
 * **Tabular data** is data in a table format with rows, columns, and values for each row-column intersection.
 
@@ -785,7 +795,7 @@ Open the [solution file](Activities/10-Stu_CSV_Reader/Solved/Core/sales_analysis
           csvwriter.writerow([name, analysis[name]['count'], analysis[name]['revenue'], round(analysis[name]['revenue'] / analysis[name]['count'], 2)])
   ```
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
