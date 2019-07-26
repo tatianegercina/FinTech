@@ -1,7 +1,5 @@
 # Buy Low Sell High
 
-## Problem
-
 Xena is an amateur day trader. Her portfolio consists of IAG. IAG is a mineral exploration company. Xena believes IAG has opportunity based on a gut feeling she has. Xena bought 10000 shares of IAG at $1.45 per share at 10 am on 12/12/15. She ended up selling it 20 minutes later at $1.74 making a $2900 profit. Xena just made 2 months of rent in 20 minutes.
 
 These were all the prices of IAG on 12/12/15 during a one hour period in chronological order:
@@ -12,27 +10,31 @@ Write an efficient function that takes an array of stock prices in chronological
 
 You must buy before you sell—no shorting.
 
-### Notes to the Interviewer
+## Notes to the Interviewer
 
-Remember—you are concerned more with the candidate's ability to _communicate_ their approach than with the correctness of their solution.
+Remember—you are concerned more with the candidate's ability to *communicate* their approach than with the correctness of their solution.
 
-### Prompts from the Interviewer
+## Potential Prompts for the Interviewee
 
-The interviewer may use these prompts to prompt additional problem-solving from the interviewee. It is not mandatory to raise every prompt.
+The interviewer may use these prompts to invoke additional problem-solving for the interviewee. It is not mandatory to raise every prompt.
 
 * **Prompt**: What happens if the price _decreases_ all day?
 
   * **Ask During**: Solution Sketch, Implementation Discussion
 
-  * **Look For**
+  * **Look For:**
 
-    * **Candidate Discusses Possibilities**. As examples, you could throw an error; return "No Profit"; or report the minimum loss (best approach).
+    * **Candidate Discusses Possibilities**.
+
+      * As examples, you could throw an error; return "No Profit"; or report the minimum loss (best approach).
 
       * The best candidates will discuss multiple possibilities; explain one; and explain their choice.
 
       * Such a discussion and explanation is better than immediately stumbling on the best approach.
 
-    * **Candidate Explains Best Approach**. The best solution is to report the minimum loss.
+    * **Candidate Explains Best Approach**.
+
+      * The best solution is to report the minimum loss.
 
       * The best candidates will explain why—because we should keep track of my how much money we _lose_, even if there's no way for us to _win_.
 
@@ -42,9 +44,13 @@ The interviewer may use these prompts to prompt additional problem-solving from 
 
   * **Look For**
 
-    * **Candidate Asks for Input**. The best candidates ask if they can assume a certain array length.
+    * **Candidate Asks for Input**.
 
-    * **Candidate Explains Best Approach**. Passing an array with a single element breaks solutions that don't check the incoming array's length.
+      * The best candidates ask if they can assume a certain array length.
+
+    * **Candidate Explains Best Approach**.
+
+      * Passing an array with a single element breaks solutions that don't check the incoming array's length.
 
       * The best candidates explain that they should `return` or `throw` (better) for arrays of length 1.
 
