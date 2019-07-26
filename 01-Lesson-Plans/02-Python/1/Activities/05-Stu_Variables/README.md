@@ -16,7 +16,7 @@ Start small by identifying the percent increase in price for Apple stock. Yester
 
 ## Instructions
 
-Using the [starter file](Unsolved/hello_variable_world.py), complete the following steps:
+Using the [starter file](Unsolved/Core/hello_variable_world.py), complete the following steps:
 
 1. Create variables for the following:
 

@@ -8,7 +8,7 @@ Mike needs to plan his grocery list so that he can buy the ingredients needed to
 
 ## Instructions
 
-Use the [starter file](Unsolved/Core/grocery_list.py) to complete the following steps.
+Use the [starter file](Unsolved/Core/grocery_list_core.py) to complete the following steps.
 
 1. Create a grocery list for the apple pie ingredients:
 

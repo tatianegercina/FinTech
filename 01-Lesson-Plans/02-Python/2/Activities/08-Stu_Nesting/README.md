@@ -12,7 +12,7 @@ Help Harold by creating a program to automate his data gathering process and wee
 
 ## Instructions
 
-Using the [starter file](Unsolved/Core/weekly_gains.py), complete the following:
+Using the [starter file](Unsolved/Core/weekly_gains_core.py), complete the following:
 
 * Use the `new_records` dictionary to add each new stock ticker record to the corresponding list of records in the `historical_stock_data` dictionary. Appended stock ticker records should be in the following format: `[date, open, high, low, close]`. You have two options for how you do this:
 

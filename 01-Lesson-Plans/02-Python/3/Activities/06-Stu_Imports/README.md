@@ -12,7 +12,7 @@ You will use the NPV function from the NumPy library to calculate the NPV values
 
 ## Instructions
 
-Use the [starter file](Activities/06-Stu_Imports/Unsolved/net_present_value.py) to complete the following steps.
+Use the [starter file](Unsolved/Core/net_present_value_core.py) to complete the following steps.
 
 1. Import the NumPy library.
 

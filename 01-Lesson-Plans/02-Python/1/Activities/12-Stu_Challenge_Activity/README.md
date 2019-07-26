@@ -20,7 +20,7 @@ For this activity, work with a partner to code out the pseudocode solution of th
 
 ## Instructions
 
-Using the [starter file](Unsolved/conditionally_yours.py), complete the following steps:
+Using the [starter file](Unsolved/Core/conditionally_yours.py), complete the following steps:
 
 1. Pseudocode your solution.
 
