@@ -1,12 +1,10 @@
-## Unit 3: Python and Pandas
+## Unit 4: Pandas
 
 ### Helpful Links
 
 * [Pandas Tutorials](https://chrisalbon.com/)
 
 * [Pandas Documentation](http://pandas.pydata.org/)
-
-* [Pandas Visualization](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
 
 * [Visual Guide to Joins](https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/)
 
@@ -16,7 +14,7 @@
 
 ### Additional Course Resources
 
-* [Anaconda Install Guide](AnacondaInstallGuide.md)
+* [Additional Pandas Exercises](https://github.com/guipsamora/pandas_exercises)
 
 - - -
 
