@@ -132,7 +132,7 @@ Complete the following:
 
   * If the `sales_item` in sales is equal to the `item` in `menu`, capture the `quantity` from the sales data and the `price` and `cost` from the menu data to calculate the `profit` for each item.
 
-  * Cumulatively add the values to the corresponding metrics in the report like so:
+    * Cumulatively add the values to the corresponding metrics in the report like so:
 
       ```python
       report[sales_item]["01-count"] += quantity
