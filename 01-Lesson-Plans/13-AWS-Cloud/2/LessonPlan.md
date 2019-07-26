@@ -1,4 +1,4 @@
-## 12.2 Lesson Plan: Introduction to APIs / Cloud Infrastructure (AWS)
+## 13.2 Lesson Plan: Introduction to APIs / Cloud Infrastructure (AWS)
 
 ### Overview
 
@@ -85,7 +85,7 @@ Have students follow along executing the next steps to create a SageMaker Notebo
 First, create the required AWS resources for SageMaker.
 
 * From the main AWS Console, find the `S3` service: <https://s3.console.aws.amazon.com>
-* Create a bucket for SageMaker:  
+* Create a bucket for SageMaker:
 ![Create S3 bucket](Images/00-create-bucket.png)
 Go to S3 -> Buckets -> click `Create Bucket` and fill in details as follows:
 
@@ -102,39 +102,39 @@ Go to S3 -> Buckets -> click `Create Bucket` and fill in details as follows:
 * Note down (copy/paste/save) the name of bucket for use in the following section.
 
 * From the SageMaker console, use the left pane menu and visit: Notebook -> [Notebook instances](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances)
-* On the right side, click: [Create notebook instance](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances/create)  
+* On the right side, click: [Create notebook instance](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances/create)
 ![Create notebook instance](Images/01-create-notebook-instance-1.png)
 * Fill in the required values, leaving most defaults unchanged, for example:
 
   * Notebook instance name: `sm-test`
   * Notebook instance type: `ml.t2.medium`
   * Elastic Inference: `none`
-  * IAM role: `Create a new role` (enter the name of the previously create *S3 bucket* in "Specific S3 buckets", then click `Create role`)  
+  * IAM role: `Create a new role` (enter the name of the previously create *S3 bucket* in "Specific S3 buckets", then click `Create role`)
   ![Create IAM Role success](Images/02-iam-role-create-success.png)
   * Root access - `Enable - Give users root access to the notebook` (remind students that this is less safe but allows more control over the instance)
 
 * Click: `Create notebook instance`
-Note: the `IAM Role` is required, if this or another required field value is missing the process won't proceed until addressed. If all required values where provided you'll see a success message.  
+Note: the `IAM Role` is required, if this or another required field value is missing the process won't proceed until addressed. If all required values where provided you'll see a success message.
 ![Create Notebook Instance success](Images/03-notebook-instance-create-success.png)
 
-* Click on the Notebook Instance to view further details  
+* Click on the Notebook Instance to view further details
 ![Notebook Instance details](Images/04-notebook-instance-details.png)
 
-* Back in the Notebook Instance list, refresh the page and wait for the status of the new instance to be: `InService`  
+* Back in the Notebook Instance list, refresh the page and wait for the status of the new instance to be: `InService`
 ![Create Notebook Instance success](Images/05-notebook-instance-status.png)
 
 * Remind students that AWS charges for these and most resources as they are created, event when not in use, this instance is billed for by the second until it's turned off and deleted.
 
 ### 0. Instructor Do: Create a new Jupyter Notebook (5 mins)
 
-* Once the Notebook Instance has status `InService`, go to "Actions" and click on `Open JupyterLab`.  
+* Once the Notebook Instance has status `InService`, go to "Actions" and click on `Open JupyterLab`.
 ![Notebook Instance actions](Images/06-notebook-instance-actions.png)
 
 
-* On the `Notebook` section in the JupyterLab `Launcher`, select `conda_python3` to create a new notebook.  
+* On the `Notebook` section in the JupyterLab `Launcher`, select `conda_python3` to create a new notebook.
 ![Notebook Environment](Images/07-jupyterlab-env-conda_python3.png)
 
-* On the new notebook, enter python code in the first cell to test and demonstrate the functionality.  
+* On the new notebook, enter python code in the first cell to test and demonstrate the functionality.
 ![Untitled Notebook](Images/08-notebook-untitled.png)
 
 ### 0. Instructor Do: Open an existing Jupyter Notebook (5 mins)
@@ -144,7 +144,7 @@ For this example we'll use a notebook in our local machine, from a previous acti
 
 * In your SageMaker notebook instance, from the main `JupyterLab` view, use the `Upload` icon (arrow up) on the left and select an existing notebook.
 For example: `04-Pandas/3/Activities/16-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb`
-Select the local notebook file to upload.  
+Select the local notebook file to upload.
 ![Upload Notebook](Images/09-upload-notebook.png)
 
 * Open the notebook. You'll probably see the message: `Select Kernel` or `Kernel not found`, select `conda_python3` and click `Select` or `Set Kernel`
@@ -223,15 +223,15 @@ Show students how to delete their SageMaker notebook instance so that no billing
 
 * From the SageMaker console, use the left pane menu and visit: Notebook -> [Notebook instances](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances)
 
-* Select the the Notebook Instance (or follow this process for all) on the left circular dot.  
+* Select the the Notebook Instance (or follow this process for all) on the left circular dot.
 ![Notebook Instance list](Images/notebook-instance-list.png)
 
 * Once selected, click on the right `Actions` menu and select `Stop`.
 
-* Refresh the page and wait for the instance `Status` to change to `Stopped`.  
+* Refresh the page and wait for the instance `Status` to change to `Stopped`.
 ![Notebook Instance actions](Images/notebook-instance-actions.png)
 
-* Select the instance again, click on `Actions` and select `Delete` then confirm delete.  
+* Select the instance again, click on `Actions` and select `Delete` then confirm delete.
 ![Notebook Instance delete](Images/notebook-confirm-delete.png)
 
 * At the end of the lesson, the notebook instances list should be empty and state: "There are currently no resources.", otherwise charges will be incurred for any remaining active instances.
