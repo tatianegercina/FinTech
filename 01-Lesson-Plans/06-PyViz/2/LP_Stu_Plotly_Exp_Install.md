@@ -1,4 +1,4 @@
-### 3. Instructor Do: Plotly Express Install (5 mins) (Critical)
+### 3. Students Do: Plotly Express Install (5 mins) (Critical)
 
 TAs and students work together to ensure everyone has Plotly Express installed. In parallel, the instructor will facilitate a student led refresher activity that will recap the installation process for **Plotly Express**.
 
