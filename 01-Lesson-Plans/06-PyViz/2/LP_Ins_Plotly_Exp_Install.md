@@ -2,6 +2,8 @@
 
 TAs and students work together to ensure everyone has Plotly Express installed. In parallel, the instructor will facilitate a student led refresher activity that will recap the installation process for **Plotly Express**.
 
+Since students should have already installed **Plotly Express** emphasis needs to be placed on providing an opportunity for troubleshooting, as well as reviewing the installation process.
+
 **Files:**
 
 * [PyViz Install Guide]()
@@ -20,16 +22,16 @@ If no one volunteers, ask the below questions yourself. Ask the students:
 
   2. Execute the `pip install` or `conda install` commands for **Plotly Express**
 
-    ```shell
-    conda install -c plotly plotly_express
-    ```
+      ```shell
+      conda install -c plotly plotly_express
+      ```
 
 * What needs to be done to allow Plotly Express figures to render in Jupyter Lab?
 
   * **Answer** The Jupyter Lab extension needs to be installed.
 
-    ```shell
-    jupyter labextension install @jupyterlab/plotly-extension
-    ```
+      ```shell
+      jupyter labextension install @jupyterlab/plotly-extension
+      ```
 
 Ask if there are any questions before moving on.
