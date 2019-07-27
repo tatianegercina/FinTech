@@ -34,4 +34,16 @@ If no one volunteers, ask the below questions yourself. Ask the students:
       jupyter labextension install @jupyterlab/plotly-extension
       ```
 
+If time remains, ask students what's the quickest way to confirm that **Plotly Express** is installed?
+
+* **Answer** Executing the `conda list` command with a `grep` option that searches for **Plotly Express**.
+
+  ```shell
+  conda list | grep plotly_express
+  ```
+
+  ```
+  plotly_express            0.3.1                      py_0    plotly
+  ```
+
 Ask if there are any questions before moving on.
