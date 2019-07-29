@@ -6,7 +6,7 @@ These were all the prices of IAG at 5-minute intervals on 12/12/15 between the h
 
 `$1.42, $1.32, $1.45, $1.20, $1.34, $1.74, $1.10, $1.89, $1.42, $1.90, $1.80, $1.85`
 
-Write an efficient function that takes a list of stock prices in chronological order and finds the best trade by calculating the max profit and duration through the determination of the minimum (buy) and maximum (sell) stock prices as well as their indexes (at 5-minute intervals).
+Write an efficient function that takes a list of stock prices in chronological order and finds the best trade by calculating the max profit through the determination of the minimum (buy) and maximum (sell) stock prices.
 
 ## Notes to the Interviewer
 
@@ -74,7 +74,7 @@ The interviewer may use these prompts to invoke additional problem-solving for t
 
       * The best candidates explain why the slow solution is sub-optimal; explain better alternatives; and implement them.
 
-### Hints
+## Hints
 
 * Can we simply take the difference between the maximum and minimum elements?
 
@@ -92,12 +92,12 @@ The interviewer may use these prompts to invoke additional problem-solving for t
 
   * **Follow-Up**. How do we know if we've found a new minimum price?
 
-### Solutions
+## Solutions
 
-#### Brute Force | O(n^2)
+## Brute Force
 
-[The slow, brute force solution](Solved/bruteForce.js) is to check every possible pair, and return the maximum. It is _correct_, but slow. It is, however, perfectly acceptable for candidates to start here.
+[The brute force solution](Solved/brute_force.py) is to check every possible pair, calculate the max difference between share prices, and calculate and return the maximum profit. Although correct and perfectly acceptable for candidates to start here, this solution is slow compared to other alternatives.
 
-#### Greedy Linear Search | O(n)
+## Linear Scan
 
-The best possible solution is to scan the array once, keeping track of the maximum profit identified so far and the minimum price. This solution is available in [linearScan.js](Solved/linearScan.js).
+[The linear scan solution](Solved/linear_scan.py) is to scan the list once and keep track of the minimum and maximum share prices, and then perform a single calculation at the end to calculate and return the max profit.
