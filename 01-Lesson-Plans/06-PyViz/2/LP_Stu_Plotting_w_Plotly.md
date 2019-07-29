@@ -2,6 +2,8 @@
 
 Students complete a MSMD activity where they create **scatter** plots using **Plotly Express**. This activity will reinforce to students that while **Plotly Express** has the same plotting APIs as other technologies, **Plotly Express'** provides their own flavor and twist.
 
+Data for this activity was acquired from [catalog.data.gov](https://catalog.data.gov/dataset/allegheny-county-mortgage-foreclosure-records).
+
 **Instructions:**
 
 * [README.md](Activities/05-Stu_Plotting_w_Plotly/README.md)
