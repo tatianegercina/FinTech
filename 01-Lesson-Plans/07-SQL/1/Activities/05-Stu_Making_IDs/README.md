@@ -4,13 +4,13 @@ In this activity, you will recreate a table and then query, insert, and update d
 
 ### Instructions
 
-1. Create a new database named `programming_db`. 
+1. Create a new database named `programming_db`.
 
 2. Recreate the `programming_languages` table using the following image.
 
-![programming_languages.png](Images/programming_languages.png)
+    ![programming_languages.png](Images/programming_languages.png)
 
-3. Query the table to return the rows containing MySQL, and then delete one of the duplicates.
+3. Query the table to return the rows containing "MySQL", and then delete one of the duplicates.
 
 4. Insert a few more rows of data for additional programming languages by adding the `language` and `rating` of your choice to the `programming_languages` table.
 
@@ -23,3 +23,7 @@ In this activity, you will recreate a table and then query, insert, and update d
 * Research how to add columns to a table. Then create a Boolean column named `mastered` that  has a default value of `true`.
 
 * Start looking into the concept of joins in SQL. (This concept will be covered later in the lesson.)
+
+---
+
+© 2019 Trilogy Education Services

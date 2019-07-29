@@ -1,4 +1,4 @@
-## 10.2 Lesson Plan: Advanced SQL Queries
+## 7.2 Lesson Plan: Advanced SQL Queries
 
 ### Overview
 
@@ -8,71 +8,79 @@ Today's class will introduce students to additional features of the SQL language
 
 By the end of today's class, students will be able to:
 
-Create aggregate queries.
-Create subqueries to explore data further.
-Create views and run subqueries off of them.
+* Create aggregate queries.
+
+* Create subqueries for further data exploration.
+
+* Create views and run subqueries on them.
 
 ### Instructor Notes
 
-Today's lesson will mostly use imported datasets, so make sure students are comfortable importing data from CSV files. All schemas for the tables will be provided along with the CSV files. Students who don't have this data imported correctly will not be able to follow along with the lesson.
+* Today's lesson will mostly use imported datasets, so make sure students are comfortable importing data from CSV files. All schemas for the tables will be provided along with the CSV files. Students who don't have this data imported correctly will not be able to follow along with the lesson.
 
-This lesson will build on what students learned in the previous class, and each activity will combine multiple SQL elements. Students who are new to SQL may struggle a bit, but many of the concepts are similar to those they have learned previously.
+* This lesson will build on what students learned in the previous class, and each activity will combine multiple SQL elements. Students who are new to SQL may struggle a bit, but many of the concepts are similar to those they have learned previously.
 
-The TAs should be ready to help students who are confused or who have not imported the data correctly.
+* SQL views will be a pleasant interlude from some of the heavy SQL lifting done prior; however, it is not crucial and so instructors should feel free to tweak the length and content as they deem appropriate.
 
-Have your TAs refer to the [Time Tracker](TimeTracker.xlsx) to stay on track.
+* The TAs should be ready to help students who are confused or who have not imported the data correctly.
 
-- - -
+Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
-### 1. Instructor Do: Welcome Class (5 mins)
+---
 
-Open the [slideshow](Slide-Shows/SQL_Day2.pptx).
+### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome the students and show the class objectives. (Slide 2)
+Welcome the students and overview the class objectives.
 
-Explain that today's lesson will provide a more in-depth look at SQL's features. Students will work with imported tables to expand their SQL skills.
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809).
 
-### 2. Instructor Do: Import Data (15 mins) (Critical)
+* Explain that today's lesson will provide a more in-depth look at SQL's features. Students will work with imported tables to expand their SQL skills.
 
-**File:** [Resources](Activities/01-Evr_Import_Data/Resources/schema.sql)
+### 2. Instructor Do: Import Data (15 min)
+
+In this activity, instructors will help students prepare for today's lesson by importing the necessary data to their databases.
+
+**File:** [schema.sql](Activities/01-Evr_Import_Data/Resources/schema.sql)
 
 Explain to the class that today's activities will require a few tables to be imported into a database.
 
-Compress the Resources folder and slack it out to the class. This folder contains everything students need in order to upload the data. The data is taken from the [sakila database](https://dev.mysql.com/doc/sakila/en/), which is a sample database used to learn MySQL.
+Slack out the SQL file to the class. The data is taken from the [sakila database](https://dev.mysql.com/doc/sakila/en/), which is a sample database used to learn MySQL.
 
-Together, walk through the following steps:
+Together with the class, walk through the following steps:
 
 * From pgAdmin, create a database named `rental_db`.
 
-* Open the Query Tool for the newly created `rental_db`.
+* Open the query tool for the newly created `rental_db`.
 
 * Copy [schema.sql](Activities/01-Evr_Import_Data/Resources/schema.sql) and run the code to create the needed tables.
 
-* Right-click the **actor** table on the right-hand side, and then select **Import/Export**.
+* Right-click the "actor" table on the right-hand side, and then select Import/Export.
 
 * Import `actor.csv`.
 
 * Run `SELECT * FROM actor LIMIT 100;` to confirm that the import was successful.
 
-  Optional: Right-click the **actor** table and view the first 100 rows to check that the data was imported correctly.
+  **Optional:** Right-click the "actor" table and view the first 100 rows to check that the data was imported correctly.
 
 Have the class repeat this process for the remaining tables.
 
 The TAs should walk around the classroom to assist students with the database upload.
 
-### 3. Instructor Do: Aggregate Functions, Aliases, and Grouping (Slides 3–5) (10 mins) (Critical)
+### 3. Instructor Do: Aggregate Functions, Aliases, and Grouping (10 min)
 
-Open the [slideshow](Slide-Shows/SQL_Day2.pptx) and review the following:
+In this activity, students will learn how to use aggregate functions, aliases, and groupby operations to analyze data on a higher-level or aggregated perspective.
 
-* Similar to aggregates in Pandas, aggregate functions allow calculations on a set of values and return a singular value. (Slide 4)
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_1) and review the following:
 
-* Some of most commonly used aggregates are `Avg`, `COUNT`, `MIN`, `MAX`, and `SUM`. (Slide 4)
+* Similar to aggregates in Pandas, aggregate functions allow calculations on a set of values and return a singular value.
 
-* Aggregates are often combined with `GROUP BY`, `HAVING`, and `SELECT`. (Slide 5)
+* Some of most commonly used aggregates are `Avg`, `COUNT`, `MIN`, `MAX`, and `SUM`.
+
+* Aggregates are often combined with `GROUP BY`, `HAVING`, and `SELECT`.
 
 **File:** [query.sql](Activities/02-Ins_Aggregates/Solved/query.sql)
 
-Select the `pagila` database in pgAdmin and open a Query window.
+Select the `pagila` database in pgAdmin and open a query window.
 
 Run `SELECT * FROM film;` and count the number of rows.
 
@@ -97,7 +105,7 @@ Run the following:
 
 Explain the following:
 
-* `AS 'Total films'` is a technique called *aliasing*.
+* `AS 'Total films'` is a technique called **aliasing**.
 
 * Aliasing creates an `alias`, or a new name for the column.
 
@@ -105,7 +113,7 @@ Explain the following:
 
   ![Total](Images/Total.png)
 
-The `COUNT()` function is great to see the number of movies, but it isn't informative enough when searching for the number of specific ratings, like G or PG-13. This is where `GROUP BY` comes into play.
+* The `COUNT()` function is great to see the number of movies, but it isn't informative enough when searching for the number of specific ratings, like G or PG-13. This is where `GROUP BY` comes into play.
 
 Run the following code:
 
@@ -125,7 +133,7 @@ Explain the following:
 
   ![Ratings](Images/Ratings.png)
 
-Explain that we can aggregate data in other ways besides counting. For example, *sum*, *average*, *min*, and *max* are all valid aggregate functions to apply to the data.
+Explain that we can aggregate data in other ways besides counting. For example, `sum`, `avg`, `min`, and `max` are all valid aggregate functions to apply to the data.
 
 Ask the class how to query the average rental period for *all* movies. To demonstrate, run the following query:
 
@@ -155,7 +163,7 @@ Ask a student to explain the query.
 
 * Movies that can be rented for three days cost an average of $2.82 to rent, movies that can be rented for four days cost an average of $2.97 to rent, and so on.
 
-SQL can also return the rows that contain the minimum values and maximum values in a column using `MIN()` and `MAX()` respectively.
+* SQL can also return the rows that contain the minimum values and maximum values in a column using `MIN()` and `MAX()` respectively.
 
   ```sql
   -- Find the rows with the minimum rental rate
@@ -169,17 +177,21 @@ SQL can also return the rows that contain the minimum values and maximum values 
   GROUP BY rental_duration;
   ```
 
-Mention that these aggregate functions calculate and retrieve data, but they do not *alter* the data. That is, they do not modify the database.
+Mention that these aggregate functions calculate and retrieve data, but they do not alter the data. That is, they do not modify the database.
 
 Explain that there are many other aggregate functions students can research. Slack out [Postgres functions](https://www.tutorialspoint.com/postgresql/postgresql_useful_functions.htm) to the class for future reference.
 
-### 4. Student Do: Gregarious Aggregates (15 mins)
+Answer any questions before moving on.
 
-In this activity, students will practice writing queries with aggregate functions, with grouping, and with using aliases.
+### 4. Student Do: Gregarious Aggregates (15 min)
+
+In this activity, students will practice writing queries with aggregate functions, grouping, and using aliases.
+
 **File:** [query.sql](Activities/03-Stu_GregariousAggregates/Unsolved/query.sql)
+
 **Instructions:** [README.md](Activities/03-Stu_GregariousAggregates/README.md)
 
-### 5. Instructor Do: Review Gregarious Aggregates (5 mins)
+### 5. Instructor Do: Review Gregarious Aggregates (5 min)
 
 **File**: [query.sql](Activities/03-Stu_GregariousAggregates/Solved/query.sql)
 
@@ -193,7 +205,9 @@ Review the solution in pgAdmin and explain the following:
 
 Answer any questions before moving on.
 
-### 6. Instructor Do: Order By Aggregates (10 mins) (High)
+### 6. Instructor Do: Order By Aggregates (10 min)
+
+In this activity, students will learn how to sort (ascending or descending) their datasets by a specific column.
 
 **File:** [query.sql](Activities/04-Ins_Order_By/Solved/query.sql)
 
@@ -236,19 +250,19 @@ Open pgAdmin and explain the following:
 
 Answer any questions before moving on.
 
-### 7. Student Do: Movies Ordered By (15 mins) (High)
+### 7. Student Do: Movies Ordered By (15 min)
 
 In this activity, you will use `ORDER BY` in combination with other SQL methods to query and order the tables.
 
 **Instructions:** [README.md](Activities/05-Stu_Order_By/README.md)
 
-### 8. Instructor Do: Review Movies Ordered By (5 mins)
+### 8. Instructor Do: Review Movies Ordered By (5 min)
 
 **File:** [query.sql](Activities/05-Stu_Order_By/Solved/query.sql)
 
 Open pgAdmin and walk through the solution, highlighting the following:
 
-* The `actor` table is grouped by `first_name`, with an aggregate taking the count, and then given an alias of `actor count`. The query is then ordered in descending order by the count.
+* The `actor` table is grouped by `first_name`, with an aggregate taking the count and then given an alias of `actor count`. The query is then ordered in descending order by the count.
 
 * The `ROUND` function is used to limit the results to two decimal places.
 
@@ -256,21 +270,25 @@ Open pgAdmin and walk through the solution, highlighting the following:
 
 * For the bonus, a `JOIN` is needed to combine the `country` and `city` tables. The return of the join can then be grouped and aggregated. The result is sorted by the count of countries in descending order.
 
-- - -
+---
 
-### 9. Break (15 mins)
+### 9. BREAK (15 min)
 
-- - -
+---
 
-### 10. Instructor Do: Introduction to Subqueries (Slides 6–7) (10 mins) (High)
+### 10. Instructor Do: Introduction to Subqueries (10 min)
 
-Open the [slideshow](Slide-Shows/SQL_Day2.pptx) to begin the discussion of subqueries. A *subquery* is nested inside a larger query. (Slide 7)
+In this activity, students will be introduced to the concept of subqueries to query the resulting dataset of another (nested) query.
+
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_60) to begin the discussion of subqueries. A **subquery** is nested inside a larger query.
 
 **File:** [query.sql](Activities/06-Ins_Subqueries/Solved/query.sql)
 
 Explain that there is often more than one way of accomplishing a task in SQL.
 
-For example, suppose we want to view the inventory of a film called *Early Home*. One way to do this is to run several queries in succession. In the first query, we would search by the title and obtain its `film_id` number.
+* For example, suppose we want to view the inventory of a film called *Early Home*. One way to do this is to run several queries in succession.
+
+* In the first query, we would search by the title and obtain its `film_id` number.
 
   ```sql
   SELECT title, film_id
@@ -300,7 +318,7 @@ At this point, ask the class whether it might be possible to join these two quer
   WHERE f.title = 'EARLY HOME';
   ```
 
-The class should now begin to feel more comfortable with joins. Explain that we can retrieve the same information in a different way, using a tool called a subquery. Type the following query:
+The class should now begin to feel more comfortable with joins. Explain that we can retrieve the same information in a different way, using a tool called a **subquery**. Type the following query:
 
   ```sql
   SELECT *
@@ -335,11 +353,11 @@ To confirm the result is correct, plug 268 (the result of the subquery) into the
   WHERE film_id IN (268);
   ```
 
-This will get the same result as the previous join.
+* This will get the same result as the previous join.
 
   ![subquery](Images/subquery.png)
 
-We have simplified the query by first running the nested subquery, and then plugging the results into the outer query.
+* We have simplified the query by first running the nested subquery, and then plugging the results into the outer query.
 
 Explain that Postgres doesn't necessarily run code in that order; it helps us to reduce subqueries to basic queries as building blocks.
 
@@ -351,13 +369,13 @@ Note that `SELECT *` was used in this activity. While this is fine for explorati
 
 Answer any questions before moving on.
 
-### 11. Student Do: Subqueries (15 mins) (High)
+### 11. Student Do: Subqueries (15 min)
 
 In this activity, students will practice creating subqueries.
 
 **Instructions:** [README.md](Activities/07-Stu_Subqueries/README.md)
 
-### 12. Instructor Do: Review Subqueries (5 mins)
+### 12. Instructor Do: Review Subqueries (5 min)
 
 **File:** [query.sql](Activities/07-Stu_Subqueries/Solved/query.sql)
 
@@ -406,17 +424,21 @@ Review the solution in pgAdmin and explain the following:
   );
   ```
 
-### 13. Instructor Do: Create Views (Slides 8–9) (10 mins)
+### 13. Instructor Do: Create Views (10 min)
 
-Open the [slideshow](Slide-Shows/SQL_Day2.pptx) to begin the discussion of views. A *view* in SQL is a virtual table that can be created from a single table, multiple tables, or another view. (Slide 9)
+In this activity, students will learn how to create and utilize views, virtual tables that can be created from a single table, multiple tables, or another view.
 
 **File:** [query.sql](Activities/08-Ins_Create_Views/Solved/query.sql)
 
-This activity will be a pleasant interlude from some of the heavy lifting we have been doing in Postgres. It is not crucial, so feel free to tweak the length and content as you deem appropriate.
+Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_83) to begin the discussion of views.
 
-Up to this point, we have seen relatively long queries, especially when they involve joins and subqueries. There is a way to save a long query under a name and run that name as a shortcut.
+Tell students:
 
-Slack out the following query and ask the students run it:
+* Up to this point, we have seen relatively long queries, especially when they involve joins and subqueries.
+
+* There is a way to save a long query under a name and run that name as a shortcut.
+
+Slack out the following query and ask the students to run it:
 
   ````sql
   SELECT s.store_id, SUM(amount) AS Gross
@@ -430,7 +452,9 @@ Slack out the following query and ask the students run it:
         GROUP BY s.store_id;
   ````
 
-The query is used to monitor the total sales from each store, which is something a company executive would want to look up often. Notice that an alias is used to narrow table names down to a single letter. Instead of having to type this query, we can store it under a `view`:
+* The query is used to monitor the total sales from each store, which is something a company executive would want to look up often.
+
+* Notice that an alias is used to narrow table names down to a single letter. Instead of having to type this query, we can store it under a `view`:
 
   ```sql
   CREATE VIEW total_sales AS
@@ -451,11 +475,13 @@ Point out that the query is identical to the one above, except for the first lin
   CREATE VIEW total_sales AS
   ```
 
-A `view` is created under the name `total_sales`. Created views can be found on the left sidebar in pgAdmin.
+* A `view` is created under the name `total_sales`.
+
+* Created views can be found on the left sidebar in pgAdmin.
 
   ![views](Images/views.png)
 
-The rest of the query follows `AS`.
+* The rest of the query follows `AS`.
 
 Run the query. To execute this view, type the following:
 
@@ -472,19 +498,19 @@ Simple! Ask a student to guess how we might delete a view.
 
 For the remainder of the activity, have students create and drop their views.
 
-### 14. Partner Do: A View with a Roomful of Queries (15 mins)
+### 14. Student Do: A View with a Roomful of Queries (15 min)
 
 In this activity, students will pair up and practice their join and subquery skills, as well as build out a view.
 
+* **File:** [subquery.png](Images/subquery.png)
+
 * **Instructions:** [README.md](Activities/09-Stu_View_Room_Queries/README.md)
 
-* **Image:** [subquery.png](Images/subquery.png)
-
-### 15. Instructor Do: Review a View with a Roomful of Queries (5 mins)
+### 15. Instructor Do: Review a View with a Roomful of Queries (5 min)
 
 **File**: [query.sql](Activities/09-Stu_View_Room_Queries/Solved/query.sql)
 
-Review the code and explain the following:
+Review the code in the solution file and explain the following:
 
 * Two pieces of information are required in the query: (1) the title of a film and (2) the number of copies of the title in the system.
 
@@ -506,7 +532,11 @@ Review the code and explain the following:
   WHERE "Number of Copies" = 7;
   ```
 
-### 16. Instructor Do: Revisit Subqueries (10 mins)
+Ask if there are any questions before moving on.
+
+### 16. Instructor Do: Revisit Subqueries (10 min)
+
+In this activity, students will gain further experience with more advanced subqueries.
 
 **Files**:
 
@@ -514,13 +544,15 @@ Review the code and explain the following:
 
 * [Pagila ERD](http://www.postgresqltutorial.com/postgresql-sample-database/)
 
-Up to this point, the subqueries we've seen have been relatively straightforward. In this activity, we will look at more complicated examples, but tell students not to worry. We can perform complexly nested subqueries using the same principles that we've learned so far.
+Discuss the following points with students:
 
-We begin with a question: how many people have rented the film *Blanket Beverly*?
+* Up to this point, the subqueries we've seen have been relatively straightforward. In this activity, we will look at more complicated examples, but don't worry. We can perform complexly nested subqueries using the same principles that we've learned so far.
 
-To answer this question systematically, we must first identify the tables needed for our query. To help with this process, an entity relationship diagram (ERD) is used.
+* We begin with a question: how many people have rented the film *Blanket Beverly*? To answer this question systematically, we must first identify the tables needed for our query.
 
-Slack out the [ERD](http://www.postgresqltutorial.com/postgresql-sample-database/) link to the class. Tell students to scroll down to the **DVD Rental ER Model**, and then explain the following:
+* To help with this process, an **entity relationship diagram (ERD)** is used.
+
+Slack out the [ERD](http://www.postgresqltutorial.com/postgresql-sample-database/) link to the class. Tell students to scroll down to the DVD Rental ER Model, and then explain the following:
 
 * An ERD shows the connections between the tables.
 
@@ -544,7 +576,7 @@ Begin a class discussion to determine how to formulate the rest of the subquery 
 
 * Connect the `film` table using the key `film_id`, which it has in common with the `inventory` table.
 
-* In the last subquery, query the film title, BLANKET BEVERLY.
+* In the last subquery, query the film title, *Blanket Beverly*.
 
 The sample query would be as follows:
 
@@ -574,7 +606,7 @@ The sample query would be as follows:
   );
   ```
 
-`COUNT(*)` will count the number of rows, similar to how `SELECT *` will select all rows. The asterisk indicates *all*.
+* `COUNT(*)` will count the number of rows, similar to how `SELECT *` will select all rows. The asterisk indicates *all*.
 
 Run the query, which will return that 12 people have rented this film.
 
@@ -582,13 +614,13 @@ Explain that there are often multiple ways to find this result through different
 
 Answer any questions before moving on.
 
-### 17. Student Do: Mine the Subquery (10 mins)
+### 17. Student Do: Mine the Subquery (10 min)
 
 In this activity, students will continue to practice subqueries. Students can either work individually or in pairs.
 
 **Instructions:** [README.md](Activities/11-Stu_Mine_the_Subquery/README.md)
 
-### 18. Instructor Do: Review Mine the Subquery (5 mins)
+### 18. Instructor Do: Review Mine the Subquery (5 min)
 
 **File**: [query.sql](Activities/11-Stu_Mine_the_Subquery/Solved/query.sql)
 
@@ -612,7 +644,7 @@ A possible solution to the first problem is as follows:
   );
   ```
 
-* It is recommended that you start with the most specific piece of information and work your way up. In this case, the innermost subquery retrieves the `film_id` of the given film title.
+* It's recommended that you start with the most specific piece of information and work your way up. In this case, the innermost subquery retrieves the `film_id` of the given film title.
 
 * This information is used to retrieve the `actor_id`, which is then used to extract the names of the actors who appear in the film.
 
@@ -651,8 +683,6 @@ Answer any questions before ending class.
 
 ### End Class
 
-- - -
-
-### Copyright
+---
 
 © 2019 Trilogy Education Services

@@ -21,3 +21,7 @@ In this activity, you will create a new table and import data from a CSV file.
 * Create a query that will collect all rows with a `source` of BC.
 
 * Create a query that will collect all rows with a `source` of BC and an author range between 333 and 335.
+
+---
+
+© 2019 Trilogy Education Services

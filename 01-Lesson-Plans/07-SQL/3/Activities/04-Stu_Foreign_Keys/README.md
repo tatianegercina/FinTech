@@ -6,6 +6,8 @@ In this activity, you will create and populate two new tables with foreign keys 
 
 **Note:** Make sure all tables have primary keys that increment with each new row of data.
 
+Complete the following:
+
 * Create a `customer` table with a customer first name and customer last name.
 
 * Create a `customer_email` table with a foreign key that references a field in the original `customer` table.
@@ -20,4 +22,10 @@ In this activity, you will create and populate two new tables with foreign keys 
 
 * Join all three tables.
 
-**Hint:** Think about how you can select certain columns in a table. Use those columns as a reference to insert data into a table.
+### Hint
+
+Think about how you can select certain columns in a table. Use those columns as a reference to insert data into a table.
+
+---
+
+© 2019 Trilogy Education Services

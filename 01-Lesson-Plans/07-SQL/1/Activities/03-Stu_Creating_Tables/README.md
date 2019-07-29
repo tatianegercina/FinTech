@@ -10,11 +10,11 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 3. Insert data into the new table. The result should match the following image.
 
-![cities_table.png](Images/cities_table.png)
+    ![cities_table.png](Images/cities_table.png)
 
-4. Query the table to recreate the image below.
+4. Query the table to recreate the following image.
 
-![cities_only.png](Images/cities_only.png)
+    ![cities_only.png](Images/cities_only.png)
 
 ### Bonus
 
@@ -29,3 +29,7 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 * For the second bonus question, you will need to use a [`WHERE` clause](https://www.tutorialspoint.com/sql/sql-where-clause.htm) to filter the original query.
 
 * For the third bonus question, an [`AND` clause](https://www.tutorialspoint.com/sql/sql-and-or-clauses.htm) will also be necessary.
+
+---
+
+© 2019 Trilogy Education Services

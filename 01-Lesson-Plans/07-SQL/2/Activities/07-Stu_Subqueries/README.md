@@ -15,3 +15,7 @@ In this activity, you will practice creating subqueries.
 Using subqueries, find the first and last names of customers who reside in cities that begin with the letter *Q*.
 
 **Hint:** You will need to use three tables and more than one subquery.
+
+ ---
+
+ © 2019 Trilogy Education Services

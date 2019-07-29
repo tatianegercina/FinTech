@@ -1,23 +1,25 @@
-# Unit 10: SQL
+# Unit 7: SQL
 
 ## Overview
 
 ### Slideshows
 
-* [10.3 - Slideshow](https://docs.google.com/presentation/d/17VmR6N3RgYeyNCiWd4QQblDwLYLuhhZ-y3l-MszpnPI/edit#slide=id.g4a187ec0a8_0_484)
+[7.1 Slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g480f0dd0a7_0_1809)
+
+[7.2 Slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809)
+
+[7.3 Slideshow](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g473a132ac1_0_7)
 
 ### Lesson Plans
 
-* [10.1 - Lesson Plan](../../01-Lesson-Plans/10-SQL/1/LessonPlan.md)
-* [10.2 - Lesson Plan](../../01-Lesson-Plans/10-SQL/2/LessonPlan.md)
-* [10.3 - Lesson Plan](../../01-Lesson-Plans/10-SQL/3/LessonPlan.md)
+* [7.1 Lesson Plan](1/LessonPlan.md)
+* [7.2 Lesson Plan](2/LessonPlan.md)
+* [7.3 Lesson Plan](3/LessonPlan.md)
 
-### Homework Activities
+### Homework
 
-* [Homework Instructions](../../02-Homework/10-SQL/Instructions/README.md)
+* [Homework Instructions](../../02-Homework/07-SQL/Instructions/README.md)
 
-- - -
-
-### Copyright
+---
 
 © 2019 Trilogy Education Services
