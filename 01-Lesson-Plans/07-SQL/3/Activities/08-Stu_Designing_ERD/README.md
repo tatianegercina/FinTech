@@ -1,4 +1,4 @@
-## Designing an ERD, Part I
+## Designing an ERD, Part 1
 
 In this activity, you will work with a partner given the following scenario:
 
@@ -14,4 +14,10 @@ You are meeting with a gym owner who wants to organize his data in a database. C
 
 * Update your existing diagram to reflect the changes.
 
-**Hint:** Read this [documentation](https://www.visual-paradigm.com/support/documents/vpuserguide/3563/3564/85378_conceptual,l.html) for more in-depth explanations of entity relationship diagrams.
+### Hint
+
+Read this [documentation](https://www.visual-paradigm.com/support/documents/vpuserguide/3563/3564/85378_conceptual,l.html) for more in-depth explanations of entity relationship diagrams.
+
+---
+
+© 2019 Trilogy Education Services

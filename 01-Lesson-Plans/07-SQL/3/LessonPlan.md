@@ -1,4 +1,4 @@
-## 10.3 Lesson Plan: Data Modeling
+## 7.3 Lesson Plan: Data Modeling
 
 ### Overview
 
@@ -9,31 +9,34 @@ Today's class will focus on data modeling and best practices for designing a dat
 By the end of today's class, students will be able to:
 
 * Apply data modeling techniques to database design.
+
 * Normalize data.
+
 * Identify data relationships.
+
 * Create visual representations of a database through entity relationship diagrams.
 
 ### Instructor Notes
 
-This lesson is less heavy on pure SQL, which will be used mainly to supplement the ideas presented today. If students continue to struggle with SQL basics, encourage them to practice on their own while still focusing on the concepts in this lesson.
+* This lesson is less heavy on pure SQL, which will be used mainly to supplement the ideas presented today. If students continue to struggle with SQL basics, encourage them to practice on their own while still focusing on the concepts in this lesson.
 
-The TAs should be ready to help explain and break down concepts for students struggling to grasp the material.
+* The TAs should be ready to help explain and break down concepts for students struggling to grasp the material.
 
-Have your TAs refer to the [Time Tracker](TimeTracker.xlsx) to stay on track.
+* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
-### 1. Instructor Do: Welcome Class (Slides 1-2) (5 mins)
+### 1. Instructor Do: Welcome Class (5 min)
 
 Welcome students and explain that today's lesson will dive into data modeling techniques such as normalization, relationships, and how to conceptualize database design using entity relationship diagrams (ERDs).
 
-Open the [slideshow](Slide-Shows/SQL_Day3.pptx) and go over the class objectives.
+Open the [Class Objectives slide](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g473a132ac1_0_7) and review the objectives for today's class.
 
-### 2. Instructor Do: Data Normalization (Slides 3–8) (15 mins) (Critical)
+### 2. Instructor Do: Data Normalization (15 min)
 
 **File:** [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/Normalization.md)
 
-Review the slides on data normalization, explaining the following:
+Review the [slides on data normalization](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594c06c0c6_3_1090), explaining the following:
 
 * Data normalization is the process of restructuring data to a set of defined "normal forms."
 
@@ -41,25 +44,35 @@ Review the slides on data normalization, explaining the following:
 
 * We will be covering the three main forms of normalization, though additional forms exist.
 
-* In *first normal form*, or 1NF, each row contains a single value, and each row is unique. In this example, each family's children are all listed in one row. The data is normalized into 1NF by creating a new row for each child.
+* In **first normal form**, or 1NF, each row contains a single value, and each row is unique. In this example, each family's children are all listed in one row. The data is normalized into 1NF by creating a new row for each child.
 
-* In *second normal form*, or 2NF, the data is in 1NF. Additionally, all non-key columns are dependent on the primary key for the table. In this example, there are two tables. The Family table has the primary key `parent_id`, and the Child table has the primary key `child_id`.
+* In **second normal form**, or 2NF, the data is in 1NF. Additionally, all non-key columns are dependent on the primary key for the table. In this example, there are two tables. The Family table has the primary key `parent_id`, and the Child table has the primary key `child_id`.
 
 * Notice that `family_id` is added to the Child table. Since this is not a primary key, there can be non-unique values that relate to the Family table.
 
-* *Transitive dependency* is a column value's reliance on another column through a third column. The transitive property states that if X > Y and Y > Z, then we can infer that X > Z. Dependence means that one value relies on another, such as city on ZIP code, or age on birthday.
+* **Transitive dependency** is a column value's reliance on another column through a third column. The transitive property states that if X > Y and Y > Z, then we can infer that X > Z. Dependence means that one value relies on another, such as city on ZIP code, or age on birthday.
 
-* For example, let's say that a table has three columns: `StoreName`, `OwnerAddress`, and `OwnerName`.  `OwnerName` and `OwnerAddress` rely on `StoreName`. `OwnerAddress` also depends on `OwnerName`. So `OwnerAddress` is transitively dependent on `StoreName` through `OwnerName`.
+* For example, let's say that a table has three columns: `StoreName`, `OwnerAddress`, and `OwnerName`.
 
-* *Third normal form*, or 3NF, has the data normalized to second form and contains non-transitively-dependent columns.
+  * `OwnerName` and `OwnerAddress` rely on `StoreName`. `OwnerAddress` also depends on `OwnerName`.
+  
+  * Therefore, `OwnerAddress` is transitively dependent on `StoreName` through `OwnerName`.
 
-* In the previous example, two tables are created. The Owners table has the `OwnerName` and `OwnerAddress`, both of which depend only on the `owner_id`. The Stores table contains the `store_name`, which is dependent on the primary key `store_id`. The Stores table also contains an `owner_id` that creates a relationship with the Owners table.
+* **Third normal form**, or 3NF, has the data normalized to second form and contains non-transitively-dependent columns.
+
+* In the previous example, two tables are created: 
+
+  * The Owners table has the `OwnerName` and `OwnerAddress`, both of which depend only on the `owner_id`.
+  
+  * The Stores table contains the `store_name`, which is dependent on the primary key `store_id`.
+  
+  * The Stores table also contains an `owner_id` that creates a relationship with the Owners table.
 
 Note that students may find 3NF a bit confusing. Encourage students to learn more about 3NF on their own. Today's lesson will mainly focus on 1NF and 2NF.
 
 Slack out [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/Normalization.md) as a cheat sheet for students before moving on.
 
-### 3. Student Do: Pet Normalizer (15 mins)
+### 3. Student Do: Pet Normalizer (15 min)
 
 In this activity, students will practice their data normalization skills using the provided data.
 
@@ -67,7 +80,7 @@ In this activity, students will practice their data normalization skills using t
 
 **Instructions:** [README.md](Activities/02-Stu_Data_Normalization/README.md)
 
-### 4. Instructor Do: Review Pet Normalizer (5 mins)
+### 4. Instructor Do: Review Pet Normalizer (5 min)
 
 Open [pets.csv](Activities/02-Stu_Data_Normalization/Resources/pets.csv) and explain the first step of normalization:
 
@@ -97,17 +110,19 @@ Explain the bonus section of the activity:
 
 * All three tables can be joined to replicate a view of the cleaned CSV.
 
-### 5. Instructor Do: Intro to Foreign Keys (Slides 9–10) (15 mins) (Critical)
+### 5. Instructor Do: Intro to Foreign Keys (15 min)
+
+In this activity, students will be introduced to the concept of foreign keys -- columns designated as matching links or relations to another table.
 
 **File:** [schema.sql](Activities/03-Ins_Foreign_Keys/Solved/schema.sql)
 
-Use the slideshow to explain the concept of foreign keys and how they are used to connect tables:
+Use the [slides on foreign keys](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594fd95c34_0_199) to explain the concept of foreign keys and how they are used to connect tables:
 
 * A foreign key is a link between tables. The foreign key in the first table points to, or is linked to, the primary key in a second table.
 
 * A foreign key also prevents invalid data from being entered into a column. The data being entered MUST be a value from the referenced column.
 
-Slack out [schema.sql](Activities/03-Ins_Foreign_Keys/Solved/schema.sql) for students to follow along. Walk through the code, explaining the following steps:
+Slack out [schema.sql](Activities/03-Ins_Foreign_Keys/Solved/schema.sql) for students to follow along. Review the code, explaining the following steps:
 
 * Create a table named `animals_all` and set the primary key to `id`, which will be auto-populated and incremented with each new entry.
 
@@ -195,20 +210,21 @@ Students should now understand how to create foreign keys, as well as how to use
 
 Answer any questions students have about foreign keys. Then ask students if they can think of other real-world cases in which the use of foreign keys makes sense. Here are two examples:
 
-* States and countries in addresses: Tell students to think back to the `rental` database, where streets, addresses, cities, and countries were stored in different tables. So, for example, if a change occurs to the address of a customer, all information across all tables would need to change. This is called maintaining the *referential integrity*.
+* States and countries in addresses: Think back to the `rental` database, where streets, addresses, cities, and countries were stored in different tables. So, for example, if a change occurs to the address of a customer, all information across all tables would need to change. This is called maintaining the **referential integrity**.
 
 * ID number of employees: In a database where the ID number of an employee is used in multiple tables, what happens if the employee's ID number changes? The ID number would need to be changed across all the tables that contain it.
 
 Emphasize that using foreign keys to build relationships across data is a feature of relational databases, hence the name.
 
-### 6. Student Do: Foreign Keys (15 mins)
+### 6. Student Do: Foreign Keys (15 min)
 
 In this activity, students will create tables with foreign keys.
 
 **File**: [schema.sql](Activities/04-Stu_Foreign_Keys/Unsolved/schema.sql)
+
 **Instructions:** [README.md](Activities/04-Stu_Foreign_Keys/README.md)
 
-### 7. Instructor Do: Review Foreign Keys (5 mins)
+### 7. Instructor Do: Review Foreign Keys (5 min)
 
 **File**: [schema.sql](Activities/04-Stu_Foreign_Keys/Solved/schema.sql)
 
@@ -259,7 +275,9 @@ Open `schema.sql` in pgAdmin and walk through the code, explaining the following
 
 * Finally, all tables can be joined together by their respective IDs.
 
-### 8. Instructor Do: Intro to Data Relationships (Slides 11–18) (15 mins)
+### 8. Instructor Do: Intro to Data Relationships (15 min)
+
+In this activity, students will learn the many different types of data modeling relationships that one table can have with another: one-to-one, one-to-many, and many-to-many.
 
 **Files:**
 
@@ -267,11 +285,11 @@ Open `schema.sql` in pgAdmin and walk through the code, explaining the following
 
 * [query.sql](Activities/05-Ins_Data_Relationships/Solved/query.sql)
 
-Open the [slideshow](Slide-Shows/SQL_Day3.pptx). Explain that we will now cover one-to-one, one-to-many, and many-to-many relationships between data, which is an essential part of data modeling.
+Open the [slideshow](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594c06c0c6_3_1160). Explain that we will now cover one-to-one, one-to-many, and many-to-many relationships between data, which is an essential part of data modeling.
 
 Begin by discussing one-to-one relationships. This example will use members of the Simpson family to illustrate the concept.
 
-In a one-to-one relationship, each name is associated with one and only one Social Security number. In other words, each item in a column is linked to only one item from another column.
+* In a one-to-one relationship, each name is associated with one and only one Social Security number. In other words, each item in a column is linked to only one item from another column.
 
   ![Images/one-to-one.png](Images/one-to-one.png)
 
@@ -280,30 +298,40 @@ Next, discuss one-to-many relationships. We'll continue with our Simpsons exampl
   ![Images/one-to-many1.png](Images/one-to-many1.png)
 
 * This example has two tables. The first table lists only addresses. The second table lists each person's Social Security number and address.
+
 * As before, one Social Security number is unique to one individual.
 
-Each individual has one address; however, a single address can be shared between multiple individuals. The Simpson family has a shared address at `742 Evergreen Terrace`, while Sherlock and Watson share the `221B Baker Street` address.
+Discuss one-to-many relationships.
+
+* Each individual has one address; however, a single address can be shared between multiple individuals. The Simpson family has a shared address at `742 Evergreen Terrace`, while Sherlock and Watson share the `221B Baker Street` address.
 
 * In a one-to-many relationship, the data from one table can be repeated for items in another table.
-* Ask students to think of another example of real-life one-to-many relationships.
-* One possible example is a purchase order with an internet company. Each order has a unique identifying number. A customer might be associated with multiple orders, but each order is associated with one and only one customer.
 
-Discuss many-to-many relationships. Continuing with our Simpsons example, there are three children (Lisa, Bart, and Maggie), and two parents (Homer and Marge).
+Ask students to think of another example of real-life one-to-many relationships.
+
+* One possible example is a purchase order with an internet company. Each order has a unique identifying number.
+
+* A customer might be associated with multiple orders, but each order is associated with one and only one customer.
+
+Discuss many-to-many relationships.
+
+* Continuing with our Simpsons example, there are three children (Lisa, Bart, and Maggie), and two parents (Homer and Marge).
 
   ![Images/many-to-many1.png](Images/many-to-many1.png)
 
-In this case, there are two tables: one for children and another for parents.
+* In this case, there are two tables: one for children and another for parents.
 
-Each child here has many parents, and each parent has many children. Each child has a separate row for each parent and vice versa.
+* Each child here has many parents, and each parent has many children. Each child has a separate row for each parent and vice versa.
 
   ![Images/many-to-many2.png](Images/many-to-many2.png)
 
-Explain that many-to-many relationships require a separate table, called a *junction table*, to show the relationships.
+* Many-to-many relationships require a separate table, called a **junction table**, to show the relationships.
 
-* Ask the class what many-to-many relationships might be found in an online retailer database such as Amazon's.
-* A customer can order many different items, and many different customers can order each item.
+Ask the class what many-to-many relationships might be found in an online retailer database such as Amazon's: A customer can order many different items, and many different customers can order each item.
 
-Demonstrate the creation of a junction table in Postgres. First, open [schema.sql](Activities/05-Ins_Data_Relationships/Solved/schema.sql) and paste in the queries to create and insert into the `children` and `parents` tables. There are two separate tables:
+Demonstrate the creation of a junction table in Postgres.
+
+* First, open [schema.sql](Activities/05-Ins_Data_Relationships/Solved/schema.sql) and paste in the queries to create and insert into the `children` and `parents` tables. There are two separate tables:
 
   ![Images/modeling01.png](Images/modeling01.png)
 
@@ -323,7 +351,9 @@ Now walk through the junction table schema:
 
 * The `child_id` and `parent_id` columns are both linked to the previously created tables as foreign keys.
 
-* Additionally, the primary key in this table is a *composite key*, made up of both the `child_id` and `parent_id` keys. This means that the unique identifier for a row is not a single column, but rather the composite of both columns.
+* Additionally, the primary key in this table is a **composite key**, made up of both the `child_id` and `parent_id` keys.
+
+* This means that the unique identifier for a row is not a single column, but rather the composite of both columns.
 
 Show the junction table:
 
@@ -353,13 +383,15 @@ Take a moment to summarize the major points of the activity:
 
 * Junction tables use foreign keys to reference the keys in the original tables.
 
-### 9. Student Do: Data Relationships (15 mins)
+Ask if there are any questions before moving on.
+
+### 9. Student Do: Data Relationships (15 min)
 
 In this activity, students will create table schemata for students and available courses, and then create a junction table to display all courses taken by students.
 
 **Instructions:** [README.md](Activities/06-Stu_Data_Relationships/README.md)
 
-### 10. Instructor Do: Review Data Relationships (5 mins)
+### 10. Instructor Do: Review Data Relationships (5 min)
 
 **Files:**
 
@@ -381,7 +413,7 @@ Paste in the schemata for the `students` and `courses` tables and explain the fo
 
   ![Images/modeling06.png](Images/modeling06.png)
 
-Next, do the same for the junction table, named `student_courses_junction`, and explain the following:
+Next, do the same for the junction table, named `student_courses_junction`, and explain the code.
 
   ```sql
   -- Create a junction table.
@@ -426,23 +458,21 @@ For the bonus, briefly explain that two outer joins can be performed to retrieve
 
   ![Images/modelingfpng](Images/modeling08.png)
 
-- - -
+---
 
-### 11. Break (40 mins)
+### 11. BREAK (40 min)
 
-- - -
+---
 
-### 12. Instructor Do: Entity Relationship Diagrams (Slides 19–20) (15 mins)
+### 12. Instructor Do: Entity Relationship Diagrams (15 min)
 
-**Files:**
+In this activity, students will learn how to interpret and create an Entity Relationship Diagram (ERD) -- an asset that delineates the relationship among tables in a database.
 
-* [slideshow](Slide-Shows/SQL_Day3.pptx)
+**File:** [pagila-erd.png](Images/pagila-erd.png)
 
-* [pagila-erd.png](Images/pagila-erd.png)
+Open the [ERD slides](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594fd95c34_0_422) and begin the discussion of entity relationship diagrams (ERDs). Explain the following points:
 
-Revisit the slideshow and begin the discussion of entity relationship diagrams (ERDs). Explain the following points:
-
-* An entity relationship diagram, or ERD, is a visual representation of entity relationships within a database.
+* An **entity relationship diagram**, or **ERD**, is a visual representation of entity relationships within a database.
 
 * There are three types of ERDs: conceptual, logical, and physical. These will be covered more in-depth as we advance through today's lesson.
 
@@ -544,13 +574,13 @@ Transition from the conceptual ERD to a logical ERD. Using the following lines, 
   Billing_Zip INTEGER
   ```
 
-* By defining the column types, this model has become more complex and is now considered a *logical model*.
+* By defining the column types, this model has become more complex and is now considered a **logical model**.
 
 * Note that in addition to adding the data types for each column, an `ID` column has been included and designated as a primary key with the `PK` acronym.
 
     ![logical-erd.png](Images/logical-ERD.png)
 
-IDs are added because when designing a *physical model*, the physical relationships between entities are constructed and linked. This is often done with the use of primary keys.
+* IDs are added because when designing a **physical model**, the physical relationships between entities are constructed and linked. This is often done with the use of primary keys.
 
 Using the Quick Database Diagrams tool, include the physical relationships in the entities by updating them as follows:
 
@@ -590,11 +620,11 @@ Using the Quick Database Diagrams tool, include the physical relationships in th
 
 If students need a refresher on data relationships, direct them to the documentation on the Quick Database Diagrams website following these steps.
 
-* Click the **Docs** tab at the top of the page.
+* Click the Docs tab at the top of the page.
 
   ![docs.png](Images/docs.png)
 
-* Select **Relationships** from the drop-down menu. From this pane, an explanation of relationships and their symbols is provided.
+* Select Relationships from the drop-down menu. From this pane, an explanation of relationships and their symbols is provided.
 
   ![relationships.png](Images/relationships.png)
 
@@ -608,7 +638,7 @@ Slack out [pagila-erd.png](Images/pagila-erd.png) to the class and open it on yo
 
 Answer any questions before moving on.
 
-### 13. Partner Do: Designing an ERD, Part I (15 mins)
+### 13. Student Do: Designing an ERD, Part 1 (15 min)
 
 In this activity, students will create a conceptual ERD for a gym owner.
 
@@ -616,11 +646,11 @@ In this activity, students will create a conceptual ERD for a gym owner.
 
 **Instructions:** [README.md](Activities/08-Par_Designing_ERD/README.md)
 
-### 14. Instructor Do: Review Designing an ERD, Part I (5 mins)
+### 14. Instructor Do: Review Designing an ERD, Part 1 (5 min)
 
 **File:** [schema.txt](Activities/08-Par_Designing_ERD/Solved/schema.txt)
 
-Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage and demonstrate the solution, using the code in the `schema.txt` file. Live code while explaining the following:
+Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage and demonstrate the solution, using the code in the [`schema.txt`](Activities/08-Par_Designing_ERD/Solved/schema.txt) file. Live code while explaining the following:
 
 * A conceptual diagram has only basic information, such as the names of the tables and their attributes.
 
@@ -642,14 +672,15 @@ Ask students if they created any other tables or connections, as there are many 
 
 Answer any questions before moving on.
 
-### 15. Partner Do: Designing an ERD, Part II (15 mins)
+### 15. Student Do: Designing an ERD, Part 2 (15 min)
 
-In this activity, students will further improve on the ERD by creating a physical ERD.
+In this activity, students will further improve the ERD by creating a physical ERD.
 
 **File:** [schema.txt](Activities/09-Par_ERD/Unsolved/schema.txt)
+
 **Instructions:** [README.md](Activities/09-Par_ERD/README.md)
 
-### 16. Instructor Do: Review Designing an ERD, Part II (5 mins)
+### 16. Instructor Do: Review Designing an ERD, Part 2 (5 min)
 
 **Files:**
 
@@ -657,7 +688,7 @@ In this activity, students will further improve on the ERD by creating a physica
 
 * [query.sql](Activities/09-Par_ERD/Solved/query.sql)
 
-Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage. Copy and paste the solution using the code in the `schema.txt` file and explain the following:
+Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage. Copy and paste the solution using the code in the [`schema.txt`](Activities/09-Par_ERD/Solved/schema.txt) file and explain the following:
 
 * Transitioning a logical ERD to a physical ERD involves adding appropriate entities to tables and mapping their relationships.
 
@@ -684,7 +715,7 @@ Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams
 
 Export the full schema from Quick Database Diagrams as a PostgreSQL file to demonstrate how schema creation code is converted to PostgreSQL code.
 
-* From the **Export** tab, select **PostgreSQL** from the drop-down menu. A file named `QuickDBD-export.sql` will appear in your Downloads folder.
+* From the Export tab, select PostgreSQL from the drop-down menu. A file named `QuickDBD-export.sql` will appear in your Downloads folder.
 
   ![saving-schema.png](Images/saving-schema.png)
 
@@ -692,7 +723,7 @@ Export the full schema from Quick Database Diagrams as a PostgreSQL file to demo
 
 * Open the new file with VS Code to view the SQL code. Note how the table and column names are enclosed in quotation marks. These quotation marks will need to be included in queries (for example ,`SELECT * FROM "Members";`) or removed from the code, if preferred.
 
-* Point out that each table has an `ALTER TABLE` statement. This adds a foreign key to each table.
+* Note that each table has an `ALTER TABLE` statement. This adds a foreign key to each table.
 
 * The `CONSTRAINT` line contained in the table creation code is automatically generated upon exporting the diagram and does not need to be altered.
 
@@ -711,11 +742,11 @@ Return to pgAdmin in the browser and create a new database called `gym`.
 
 Answer any questions before moving on.
 
-### 17. Instructor Do: Introduce Checkpoint—SQL (5 mins) (Critical)
+### 17. Instructor Do: Introduce Checkpoint—SQL (5 min)
 
-Inform students that they will now be taking a short multiple-choice assessment to check their understanding of SQL.
+In this activity, instructors will introduce a short multiple-choice assessment that gauges students' understanding of SQL.
 
-**Do not skip this introduction. Do not send the link without context.**
+**Important:** Do not skip this introduction. Do not send out the link without context.
 
 Reassure students that they do not need to be nervous about the checkpoint. For example, you can say:
 
@@ -733,20 +764,22 @@ Tell the students to read the questions carefully and to focus on finding the ri
 
 * "Test-taking strategies you may have learned for standardized tests do not apply here. Instead of focusing on eliminating wrong answers or looking for sneaky context clues, read the question carefully and think about the steps required to solve or answer it."
 
-Reassure students again that the purpose of this checkpoint is to help them. Remind them that the outcome does not impact their grade or graduation requirements. You should reiterate this at *every single* checkpoint.
+Reassure students again that the purpose of this checkpoint is to help them. Remind them that the outcome does not impact their grade or graduation requirements. You should reiterate this at *every* checkpoint.
 
 Slack out the link to the [checkpoint](https://docs.google.com/forms/d/1MENo4W02l59VqWQZn67aPXUm2eqANabxqg9cOPPu1v8/edit?usp=sharing).
 
-### 18. Student Do: Take Checkpoint—SQL (30 mins) (Critical)
+### 18. Student Do: Take Checkpoint—SQL (30 min)
 
-Let students know that checkpoints must be completed in class, not at home. This will allow you to find and help struggling students more effectively.
-It is essential for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about students "cheating" on checkpoints, but rather making sure that students who need help aren't remaining invisible.
+In this activity, students will take the short multiple-choice SQL assessment introduced in the previous activity.
+
+* Let students know that checkpoints must be completed in class, not at home. This will allow you to find and help struggling students more effectively.
+
+* It is essential for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about students "cheating" on checkpoints, but rather making sure that struggling students get the help they need.
+
 Consult your SSM to obtain checkpoint scores.
 
 ### End Class
 
-- - -
-
-### Copyright
+---
 
 © 2019 Trilogy Education Services

@@ -1,14 +1,14 @@
-## Designing an ERD, Part II
+## Designing an ERD, Part 2
 
 In this activity, you and your partner will continue designing an entity relationship diagram for the gym by transitioning your logical ERD created in the previous activity to a physical ERD.
 
 ### Instructions
 
-* Using the starter code provided, return to [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) and transition your logical ERD physical ERD by creating the relationships between tables.
+* Using the [starter code](Unsolved/schema.txt) provided, return to [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) and transition your logical ERD physical ERD by creating the relationships between tables.
 
 * When you are satisfied with your ERD, export the diagram as a PostgreSQ file:
 
-  * In the Quick Database Diagrams tool, click on the **Export** tab and select **PostgreSQL** from the drop-down menu.
+  * In the Quick Database Diagrams tool, click on the Export tab and select PostgreSQL from the drop-down menu.
 
     ![saving-schema.png](Images/saving-schema.png)
 
@@ -28,15 +28,22 @@ In this activity, you and your partner will continue designing an entity relatio
 
   ![relationship-types.png](Images/relationship-types.png)
 
-* Keep in mind the following: 
+* Keep in mind the following:
 
   * Each member belongs to only one gym.
+
   * Trainers work for only one gym, but a gym has many trainers.
+
   * Each member must have a trainer, but each trainer may instruct multiple members.
+
   * Each member has one credit card on file.
 
-* Once the exported code has been used to create tables using pgAdmin, you can check the table creation with the following syntax (note the quotations around the table name):
+* Once the exported code has been used to create tables using pgAdmin, you can check the table creation with the following syntax. (Note the quotations around the table name.) 
 
   ```sql
   SELECT * FROM "Members";
   ```
+
+---
+
+© 2019 Trilogy Education Services
