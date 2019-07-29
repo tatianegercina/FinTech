@@ -1,21 +1,21 @@
 # Pig Latinize
 
-### Problem
-
 Write a function that translates a text to Pig Latin.
 
 In case you've never heard of this silly language, to translate a word from English to Pig Latin, you move the first letter to the end of the word, and then ad _ay_. So, "fish" in Pig Latin is "ish-f-ay".
 
-```
-pig_latinize("fish"); // ishfay
-pig_latinize("your car is very nice"); // ouryay arcay siay eryvay icenay
+```python
+pig_latinize("fish")
+# ishfay
+pig_latinize("your car is very nice")
+# ouryay arcay siay eryvay icenay
 ```
 
-### Notes to the Interviewer
+## Notes to the Interviewer
 
 Most candidates should be able to solve the basic problem of translating a word to Pig Latin. The real "meat" of this question is the fact that there are several edge cases to consider, such as how to preserve capitalization and handle punctuation. The purpose of this question is to prepare your candidate for situations where interviewers gradually make problems harder.
 
-### Prompts from the Interviewer
+## Prompts from the Interviewer
 
 * **Prompt**: How would you write a function that translates a single word into Pig Latin?
 
@@ -25,7 +25,7 @@ Most candidates should be able to solve the basic problem of translating a word 
 
   * **Ask During**: Solution Sketch, Implementation Discussion
 
-  * **Look For**
+  * **Look For:**
 
     * **Candidate Sketches Solution**.
 
@@ -37,7 +37,9 @@ Most candidates should be able to solve the basic problem of translating a word 
 
   * **Look For**
 
-    * **Candidate Sketches Solution**. There are a couple of legitimate solutions to this problem.
+    * **Candidate Sketches Solution**.
+
+      * There are a couple of legitimate solutions to this problem.
 
       * Candidates can translate a sentence by using a `for` loop on every word in the sentence.
 
@@ -51,7 +53,9 @@ Most candidates should be able to solve the basic problem of translating a word 
 
   * **Look For**
 
-    * **Candidate Brainstorms Alternatives**. There are different ways to deal with this problem. One could simple throw out the capital letter and low-case the word; retain the original capital letter; or capitalize the first letter of the new Pig Latin word, for instance.
+    * **Candidate Brainstorms Alternatives**.
+
+      * There are different ways to deal with this problem. One could simple throw out the capital letter and low-case the word; retain the original capital letter; or capitalize the first letter of the new Pig Latin word, for instance.
 
       * The best candidates will mention at least two alternatives, and ask the interviewer for input.
 
@@ -74,3 +78,7 @@ Most candidates should be able to solve the basic problem of translating a word 
       * One way to solve this problem is to remember the punctuation mark and then append it to end of the translated word.
 
   * **Note**: If your candidate identifies legitimate solutions for the past two prompts, they are free to try to implement them. These are relatively difficult implementations, however, so they are free to
+
+## Solution
+
+The [solution](Solved/pig_latin.py) strips the given string of any punctuation and adds the first letter and 'ay' to the end of every word in the string.
