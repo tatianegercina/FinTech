@@ -10,24 +10,28 @@ Complete this activity successfully, and you'll continue onto the next phase of 
 
 ## Instructions
 
-1. Read in the Alleghany housing sales data.
+1. Read in the Allgehany housing foreclosure data.
 
-2. Read in the Allgehany housing foreclosure data.
+2. Slice the foreclosure data for Series **municipality** and **amount**.
 
-3. Plot the housing sales data using the `plotly_express.scatter` function.
+3. Group data by **index.year** and **municipality**, and then perform a `count`. Hint: This will require a **DateTimeIndex**.
 
-4. Customize the plot dimensionally and aesthetically. Make sure to specify the appropriate `x` and `y` axes for a **scatter** plot.
+4. Create a **scatter** plot. The plot should resemble the below screenshot. Make sure to specify the appropriate `x` and `y` axes for a **scatter** plot.
 
-5. Plot the foreclosure housing data using the `plotly_express.scatter` function.
+    ![plotly_example_scatter.png](Images/plotly_example_scatter.png)
 
-6. Customize the plot dimensionally and aesthetically. Make sure to specify the appropriate `x` and `y` axes for a **scatter** plot.
+5. Plot the relationship between filing date and municipality using a **scatter** plot. The plot should resemble the below screenshot.
 
-7. Analyze the data, taking into consideration the key performance indicators for real estate markets. Identify the best market to target.
+    ![plotly_example_scatter_2.png](Images/plotly_example_scatter_2.png)
+
+### Challenge
+
+Plot the progression of foreclosures using an area chart to determine if the rate of foreclosures has increased or decreased over the years. Make sure to specify a Series for the `color` and `line_group` attributes.
+
+  ![plotly_example_scatter_3.png](Images/plotly_example_scatter_3.png)
 
 ### Hint
 
-Remember to take into consideration average sale prices, median sale prices, cost of living index, and number of sales. Each of these key performance indicators should help you decide which market is ripe and ready for picking.
-
-Remember to tell a story with your data. This might mean sorting data values in a particular way or joining/composing datasets and plots.
+Creating an **area** plot can be done using the Plotly Express `area` function.
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
