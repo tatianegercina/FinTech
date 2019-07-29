@@ -36,7 +36,7 @@ The interviewer may use these prompts to invoke additional problem-solving for t
 
       * The best candidates will explain why—because we should keep track of my how much money we _lose_, even if there's no way for us to _win_.
 
-* **Prompt**: What happens if I pass an array with just one element?
+* **Prompt**: What happens if I pass a list with just one element?
 
   * **Ask During**: Solution Sketch, Implementation Discussion
 
@@ -44,13 +44,13 @@ The interviewer may use these prompts to invoke additional problem-solving for t
 
     * **Candidate Asks for Input**.
 
-      * The best candidates ask if they can assume a certain array length.
+      * The best candidates ask if they can assume a certain list length.
 
     * **Candidate Explains Best Approach**.
 
-      * Passing an array with a single element breaks solutions that don't check the incoming array's length.
+      * Passing a list with a single element breaks solutions that don't check the incoming list's length.
 
-      * The best candidates explain that they should `return` or `throw` (better) for arrays of length 1.
+      * The best candidates explain that they should print an error for lists of less than length 2.
 
 * **Prompt**: Is this the fastest solution?
 
@@ -76,17 +76,11 @@ The interviewer may use these prompts to invoke additional problem-solving for t
 
 ## Hints
 
-* Can we simply take the difference between the maximum and minimum elements?
+* Is it correct to loop through the entire list twice?
 
-  * We can't, because we can't guarantee that the maximum element occurs _after_ the minimum.
+  * Only if we are looking to compare every combination of share prices.
 
-* Is it correct to loop through the entire array twice?
-
-  * Not if the inner loop always starts at `0`.
-
-  * Nested loops are correct only if the inner loop (with index `j`) starts at the index after that maintained by the outer loop (with index `i`).
-
-* Can we loop through the array just once, and keep track of the maximum profit and minimum price we've seen _so far_?
+* Can we loop through the list just once, and keep track of the maximum profit and minimum price we've seen _so far_?
 
   * **Follow-Up**. How do we know if we've found a new maximum profit?
 
