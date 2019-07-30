@@ -4,9 +4,9 @@ This activity introduces students to tokenization, the process with which we bre
 
 **Files:**
 
-* Solved: [tokenization.ipynb](C:\Users\Mike\Documents\fintech\FinTech-Lesson-Plans\01-Lesson-Plans\13-NLP\1\Activities\01-Ins_Tokenization\Solved\tokenization.ipynb)
+* Solved: [tokenization.ipynb](Activities/01-Ins_Tokenization/Solved/tokenization.ipynb)
 
-* Unsolved: [tokenization.ipynb](C:\Users\Mike\Documents\fintech\FinTech-Lesson-Plans\01-Lesson-Plans\13-NLP\1\Activities\01-Ins_Tokenization\Unsolved\tokenization.ipynb)
+* Unsolved: [tokenization.ipynb](Activities/01-Ins_Tokenization/Unsolved/tokenization.ipynb)
 
 Depending on your comfort level, either walk through the solved version or live-code with the unsolved template. Highlight the following:
 
