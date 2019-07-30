@@ -4,7 +4,7 @@ This activity introduces students to named entity recognition (NER), a process t
 
 **Files:**
 
-* Solved: [ner.ipynb](C:\Users\Mike\Documents\fintech\FinTech-Lesson-Plans\01-Lesson-Plans\13-NLP\1\Activities\03-Ins_NER\Solved\ner.ipynb)
+* Solved: [ner.ipynb](Activities/03-Ins_NER/Solved/ner.ipynb)
 
 Open the notebook and walk through the code.
 
