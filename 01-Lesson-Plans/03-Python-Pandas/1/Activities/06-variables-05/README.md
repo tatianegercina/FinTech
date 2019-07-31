@@ -1,6 +1,6 @@
-# More Practice with Variables 
+# More Practice with Variables and Lists
 
-In this activity, you will practice declaring and manipulating variables. 
+In this activity, you will continue to practice declaring and manipulating variables. 
 
 Do the following: 
 
@@ -8,7 +8,7 @@ Do the following:
 
 * Run `source activate PythonData` to activate your virtual environment. 
 
-* Navigate to the directory containing this code drill. 
+* Navigate to the directory containing this code drill.
 
 * Run `python challenge-prompt.py` to test your output. 
 
