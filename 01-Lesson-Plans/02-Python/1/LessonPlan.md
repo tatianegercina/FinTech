@@ -598,8 +598,8 @@ Open [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py) an
   * The inequality operator returns `True` if the two values do not equal one another.
 
     ```python
-    x = 9
-    if x != 1:
+    y = 9
+    if y != 1:
         print("y is not equal to 1")
     ```
 
