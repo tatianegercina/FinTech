@@ -40,7 +40,7 @@ def get_investment_recommendation(risk_level):
     return risk_levels[risk_level.lower()]
 
 
-def validate_data(age):
+def validate_data(age, intent_request):
     """
     Validates the data provided by the user.
     """
@@ -48,12 +48,19 @@ def validate_data(age):
     # Validate the retirement date based on the user's age.
     # An age of 65 years is considered by default.
     if age is not None:
-        age = parse_int(age)
+        age = parse_int(age) # Since parameters are strings is important to cast values
         if age < 0:
             return build_validation_result(
                 False,
                 "age",
-                "Your age is invalid, Can you try an age greater than zero?",
+                "Your age is invalid, can you provide an age greater than zero?",
+            )
+        elif age >= 65:
+            return build_validation_result(
+                False,
+                "age",
+                "The maximum age to contract this services is 64, "
+                "can you provide an age between 0 and 64 please?",
             )
 
     return build_validation_result(True, None, None)
@@ -113,7 +120,7 @@ def recommend_portfolio(intent_request):
         # for the first violation detected.
         slots = get_slots(intent_request)
 
-        validation_result = validate_data(age)
+        validation_result = validate_data(age, intent_request)
         if not validation_result["isValid"]:
             slots[validation_result["violatedSlot"]] = None  # Cleans invalid slot
 
