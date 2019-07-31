@@ -1,4 +1,22 @@
+### Required Libraries ###
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
+
 ### Functionality Helper Functions ###
+def build_validation_result(is_valid, violated_slot, message_content):
+    """
+    Define a result message structured as Lex response.
+    """
+    if message_content is None:
+        return {"isValid": is_valid, "violatedSlot": violated_slot}
+
+    return {
+        "isValid": is_valid,
+        "violatedSlot": violated_slot,
+        "message": {"contentType": "PlainText", "content": message_content},
+    }
+
+
 def get_investment_recommendation(risk_level):
     """
     Returns an initial investment recommendation based on the risk profile.
@@ -14,9 +32,38 @@ def get_investment_recommendation(risk_level):
 
     return risk_levels[risk_level.lower()]
 
+
+def validate_data(age):
+    """
+    Validates the data provided by the user.
+    """
+
+    # Validate the retirement date based on the user's age.
+    # An age of 65 years is considered by default.
+    if age < 0:
+        return build_validation_result(
+            False,
+            "age",
+            "Your age is invalid, Can you try an age greater than zero?",
+        )
+
+
 ### Dialog Actions Helper Functions ###
 def get_slots(intent_request):
     return intent_request["currentIntent"]["slots"]
+
+
+def elicit_slot(session_attributes, intent_name, slots, slot_to_elicit, message):
+    return {
+        "sessionAttributes": session_attributes,
+        "dialogAction": {
+            "type": "ElicitSlot",
+            "intentName": intent_name,
+            "slots": slots,
+            "slotToElicit": slot_to_elicit,
+            "message": message,
+        },
+    }
 
 
 def delegate(session_attributes, slots):
@@ -54,7 +101,20 @@ def recommend_portfolio(intent_request):
         # Perform basic validation on the supplied input slots.
         # Use the elicitSlot dialog action to re-prompt
         # for the first violation detected.
-        # slots = get_slots(intent_request)
+        slots = get_slots(intent_request)
+
+        validation_result = validate_data(age)
+        if not validation_result["isValid"]:
+            slots[validation_result["violetedSlot"]] = None  # Cleans invalid slot
+
+            # Returns an elicitSlot dialog to request new data for the invalid slot
+            return elicit_slot(
+                intent_request["sessionAttributes"],
+                intent_request["currentIntent"]["name"],
+                slots,
+                validation_result["violatedSlot"],
+                validation_result["message"],
+            )
 
         # Pass the user's name back through session attributes to be used
         # in various prompts defined on the bot model.
