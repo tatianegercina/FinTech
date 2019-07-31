@@ -4,7 +4,7 @@ This activity introduces the concept and implementation of stopwords. In English
 
 **Files:**
 
-Solved: [stopwords.ipynb](C:\Users\Mike\Documents\fintech\FinTech-Lesson-Plans\01-Lesson-Plans\13-NLP\1\Activities\03-Ins_Stopwords\Solved\stopwords.ipynb)
+Solved: [stopwords.ipynb](Activities/03-Ins_Stopwords/Solved/stopwords.ipynb)
 
 Walk through the notebook, taking care to allow time for students to look at the output of each step. 
 
