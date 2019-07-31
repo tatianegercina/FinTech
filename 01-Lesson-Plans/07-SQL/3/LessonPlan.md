@@ -888,41 +888,21 @@ Return to pgAdmin in the browser and create a new database called `gym`.
 
 Answer any questions before moving on.
 
-### 20. Instructor Do: Introduce Checkpoint—SQL (5 min)
+### 20. Instructor Do: Structured Review (35 mins)
 
-In this activity, instructors will introduce a short multiple-choice assessment that gauges students' understanding of SQL.
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
 
-**Important:** Do not skip this introduction. Do not send out the link without context.
+Please use the entire time to review questions with the students before officially ending class.
 
-Reassure students that they do not need to be nervous about the checkpoint. For example, you can say:
+Suggested Format:
 
-* "This will not affect your grade or graduation requirements."
+* Ask students for specific activities to revisit.
 
-* "This is not like the tests and quizzes you might be used to from school. Its purpose is not to motivate you to study or to punish you for struggling."
+* Revisit key activities for the homework.
 
-* "This is as much a test of me as an instructor and of the course content as it is of you. We are here to ensure your success, and this is one of the tools we use to make sure we are doing that effectively. This class moves fast; if some or all of you misunderstand something important, we as an instructional team need to find out as quickly as possible so that we can help."
+* Allow students to start the homework with extra TA support.
 
-* "Long story short, this quiz cannot hurt you; it can only help you."
-
-Tell the students to read the questions carefully and to focus on finding the right answer rather than using test-taking techniques they may have learned in the past. For example, you can say:
-
-* "There are no silly answer choices or obvious throwaway responses on this quiz. Those kinds of answer choices reduce the likelihood that we'll be able to figure out whether we've taught something effectively."
-
-* "Test-taking strategies you may have learned for standardized tests do not apply here. Instead of focusing on eliminating wrong answers or looking for sneaky context clues, read the question carefully and think about the steps required to solve or answer it."
-
-Reassure students again that the purpose of this checkpoint is to help them. Remind them that the outcome does not impact their grade or graduation requirements. You should reiterate this at *every* checkpoint.
-
-Slack out the link to the [checkpoint](https://docs.google.com/forms/d/1MENo4W02l59VqWQZn67aPXUm2eqANabxqg9cOPPu1v8/edit?usp=sharing).
-
-### 21. Student Do: Take Checkpoint—SQL (30 min)
-
-In this activity, students will take the short multiple-choice SQL assessment introduced in the previous activity.
-
-* Let students know that checkpoints must be completed in class, not at home. This will allow you to find and help struggling students more effectively.
-
-* It is essential for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about students "cheating" on checkpoints, but rather making sure that struggling students get the help they need.
-
-Consult your SSM to obtain checkpoint scores.
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
 
 ### End Class
 
