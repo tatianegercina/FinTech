@@ -23,8 +23,8 @@ if x == y:
     print("x is equal to y")
 
 # Check inequality
-x = 9
-if x != 1:
+y = 9
+if y != 1:
     print("y is not equal to 1")
 
 # Declare variables and values for evaluation
