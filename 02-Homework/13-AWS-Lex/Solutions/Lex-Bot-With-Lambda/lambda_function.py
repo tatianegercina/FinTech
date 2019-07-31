@@ -3,6 +3,13 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 ### Functionality Helper Functions ###
+def parse_int(n):
+    try:
+        return int(n)
+    except ValueError:
+        return float('nan')
+
+
 def build_validation_result(is_valid, violated_slot, message_content):
     """
     Define a result message structured as Lex response.
@@ -40,13 +47,16 @@ def validate_data(age):
 
     # Validate the retirement date based on the user's age.
     # An age of 65 years is considered by default.
-    if age < 0:
-        return build_validation_result(
-            False,
-            "age",
-            "Your age is invalid, Can you try an age greater than zero?",
-        )
+    if age is not None:
+        age = parse_int(age)
+        if age < 0:
+            return build_validation_result(
+                False,
+                "age",
+                "Your age is invalid, Can you try an age greater than zero?",
+            )
 
+    return build_validation_result(True, None, None)
 
 ### Dialog Actions Helper Functions ###
 def get_slots(intent_request):
@@ -105,7 +115,7 @@ def recommend_portfolio(intent_request):
 
         validation_result = validate_data(age)
         if not validation_result["isValid"]:
-            slots[validation_result["violetedSlot"]] = None  # Cleans invalid slot
+            slots[validation_result["violatedSlot"]] = None  # Cleans invalid slot
 
             # Returns an elicitSlot dialog to request new data for the invalid slot
             return elicit_slot(
