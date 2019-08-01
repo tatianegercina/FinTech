@@ -175,14 +175,14 @@ Open the `lists.py` file and explain the following:
   ```python
   # Create a list of Pokemon
   print("Creating a list of Pokemon...")
-  pokemon = ["Pikachu", "Charizard", "Bulbasaur", "Garydos", "Dragonite", "Onyx"]
+  pokemon = ["Pikachu", "Charizard", "Bulbasaur", "Gyarados", "Dragonite", "Onyx"]
   print(pokemon)
   print()
   ```
 
   ```
   Creating a list of Pokemon...
-  ['Pikachu', 'Charizard', 'Bulbasaur', 'Garydos', 'Dragonite', 'Onyx']
+  ['Pikachu', 'Charizard', 'Bulbasaur', 'Gyarados', 'Dragonite', 'Onyx']
   ```
 
 * Use an index number to specify a particular element of a list.
@@ -210,7 +210,7 @@ Open the `lists.py` file and explain the following:
 
   ```
   Printing 3rd Pokemon to the 5th Pokemon...
-  ['Bulbasaur', 'Garydos', 'Dragonite']
+  ['Bulbasaur', 'Gyarados', 'Dragonite']
   ```
 
 * Use `[start:]` slice notation to specify elements from the starting index to the end of the list.
@@ -224,7 +224,7 @@ Open the `lists.py` file and explain the following:
 
   ```
   Printing every Pokemon after the first three...
-  ['Garydos', 'Dragonite', 'Onyx']
+  ['Gyarados', 'Dragonite', 'Onyx']
   ```
 
 * Use `[:end]` slice notation to specify elements from the beginning of the list to the ending index.
@@ -282,7 +282,7 @@ Open the `lists.py` file and explain the following:
 
   ```
   Changing Pokemon name 'Pikachu' to 'Raichu'...
-  ['Raichu', 'Charizard', 'Bulbasaur', 'Garydos', 'Dragonite', 'Onyx']
+  ['Raichu', 'Charizard', 'Bulbasaur', 'Gyarados', 'Dragonite', 'Onyx']
   ```
 
 * The `append()` function adds elements to the end of a list.
@@ -297,7 +297,7 @@ Open the `lists.py` file and explain the following:
 
   ```
   Adding a new Pokemon to the end of the list...
-  ['Raichu', 'Charizard', 'Bulbasaur', 'Garydos', 'Dragonite', 'Onyx', 'Magikarp']
+  ['Raichu', 'Charizard', 'Bulbasaur', 'Gyarados', 'Dragonite', 'Onyx', 'Magikarp']
   ```
 
 * The `len()` function determines how many elements are in the list.
@@ -320,15 +320,15 @@ If time permits, cover these additional points:
 
   ```python
   # Find the index of the particular element name
-  print("Determining the order of Pokemon 'Garydos'...")
+  print("Determining the order of Pokemon 'Gyarados'...")
   print(pokemon)
-  print(pokemon.index("Garydos"))
+  print(pokemon.index("Gyarados"))
   print()
   ```
 
   ```
-  Determining the order of Pokemon 'Garydos'...
-  ['Pikachu', 'Charizard', 'Bulbasaur', 'Garydos', 'Dragonite', 'Onyx']
+  Determining the order of Pokemon 'Gyarados'...
+  ['Pikachu', 'Charizard', 'Bulbasaur', 'Gyarados', 'Dragonite', 'Onyx']
   3
   ```
 
@@ -344,7 +344,7 @@ If time permits, cover these additional points:
 
   ```
   Removing employee 'Magikarp'...
-  ['Raichu', 'Charizard', 'Bulbasaur', 'Garydos', 'Dragonite', 'Onyx']
+  ['Raichu', 'Charizard', 'Bulbasaur', 'Gyarados', 'Dragonite', 'Onyx']
   ```
 
 * The `pop()` function deletes a particular element by index.
@@ -360,7 +360,7 @@ If time permits, cover these additional points:
 
   ```
   Removing employee 'Bulbasaur' based off of its index
-  ['Raichu', 'Charizard', 'Garydos', 'Dragonite', 'Onyx']
+  ['Raichu', 'Charizard', 'Gyarados', 'Dragonite', 'Onyx']
   ```
 
 Reiterate that lists are a powerful data container in Python that can do so much more than store data.
