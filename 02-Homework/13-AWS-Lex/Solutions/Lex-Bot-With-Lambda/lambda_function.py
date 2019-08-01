@@ -7,7 +7,7 @@ def parse_int(n):
     try:
         return int(n)
     except ValueError:
-        return float('nan')
+        return float("nan")
 
 
 def build_validation_result(is_valid, violated_slot, message_content):
@@ -40,7 +40,7 @@ def get_investment_recommendation(risk_level):
     return risk_levels[risk_level.lower()]
 
 
-def validate_data(age, intent_request):
+def validate_data(age, investment_amount, intent_request):
     """
     Validates the data provided by the user.
     """
@@ -48,7 +48,7 @@ def validate_data(age, intent_request):
     # Validate the retirement date based on the user's age.
     # An age of 65 years is considered by default.
     if age is not None:
-        age = parse_int(age) # Since parameters are strings is important to cast values
+        age = parse_int(age)  # Since parameters are strings is important to cast values
         if age < 0:
             return build_validation_result(
                 False,
@@ -63,7 +63,19 @@ def validate_data(age, intent_request):
                 "can you provide an age between 0 and 64 please?",
             )
 
+    # Validate the investment amount, it should be >= 5000
+    if investment_amount is not None:
+        investment_amount = parse_int(investment_amount)
+        if investment_amount < 5000:
+            return build_validation_result(
+                False,
+                "investmentAmount",
+                "The minimum investment amount is $5,000 USD, "
+                "could you please provide a greater amount?",
+            )
+
     return build_validation_result(True, None, None)
+
 
 ### Dialog Actions Helper Functions ###
 def get_slots(intent_request):
@@ -111,6 +123,7 @@ def recommend_portfolio(intent_request):
 
     first_name = get_slots(intent_request)["firstName"]
     age = get_slots(intent_request)["age"]
+    investment_amount = get_slots(intent_request)["investmentAmount"]
     risk_level = get_slots(intent_request)["riskLevel"]
     source = intent_request["invocationSource"]
 
@@ -120,7 +133,7 @@ def recommend_portfolio(intent_request):
         # for the first violation detected.
         slots = get_slots(intent_request)
 
-        validation_result = validate_data(age, intent_request)
+        validation_result = validate_data(age, investment_amount, intent_request)
         if not validation_result["isValid"]:
             slots[validation_result["violatedSlot"]] = None  # Cleans invalid slot
 
