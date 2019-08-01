@@ -29,7 +29,7 @@ for i in range(len(cheer)):
 
 # Create a list of Pokemon
 print("Creating a list of Pokemon...")
-pokemon = ["Pikachu", "Charizard", "Bulbasaur", "Garydos", "Dragonite", "Onyx"]
+pokemon = ["Pikachu", "Charizard", "Bulbasaur", "Gyarados", "Dragonite", "Onyx"]
 print(pokemon)
 print()
 
@@ -65,9 +65,9 @@ print(last_pokemon)
 print()
 
 # Find the index of the particular element name
-print("Determining the order of Pokemon 'Garydos'...")
+print("Determining the order of Pokemon 'Gyarados'...")
 print(pokemon)
-print(pokemon.index("Garydos"))
+print(pokemon.index("Gyarados"))
 print()
 
 # Change a specified element within the list at the given index
