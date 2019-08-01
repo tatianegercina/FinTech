@@ -16,9 +16,9 @@ You will need to:
 
 ### Files
 
-[Resampling Starter Notebook](Starter_Code/lstm_stock_predictor_closing.ipynb)
+[Closing Prices Starter Notebook](Starter_Code/lstm_stock_predictor_closing.ipynb)
 
-[Ensemble Starter Notebook](Starter_Code/lstm_stock_predictor_fng.ipynb)
+[FNG Starter Notebook](Starter_Code/lstm_stock_predictor_fng.ipynb)
 
 - - -
 
