@@ -12,15 +12,25 @@ You will need to:
 2. [Build and train custom LSTM RNNs](#build-and-train-custom-lstm-rnns)
 3. [Evaluate the performance of each model](#evaluate-the-performance-of-each-model)
 
+- - -
+
+### Files
+
+[Resampling Starter Notebook](Starter_Code/lstm_stock_predictor_closing.ipynb)
+
+[Ensemble Starter Notebook](Starter_Code/lstm_stock_predictor_fng.ipynb)
+
+- - -
+
 ## Instructions
 
 ### Prepare the data for training and testing
 
 Use the starter code as a guide to create a Jupyter notebook for each RNN. The starter code contains a function to help window the data for each dataset.
 
-For the Fear and Greed model, you will use a 10 day rolling window of the FNG values to try and predict the 11th day closing price.
+For the Fear and Greed model, you will use the FNG values to try and predict the closing price. A function is provided in the notebook to help with this.
 
-For the closing price model, you will use a 10 day rolling window of closing prices to try and predict the 11th day closing price.
+For the closing price model, you will use previous closing prices to try and predict the next closing price. A function is provided in the notebook to help with this.
 
 Each model will need to use 70% of the data for training and 30% of the data for testing.
 
@@ -30,7 +40,7 @@ Finally, reshape the X_train and X_test values to fit the model's requirement of
 
 ### Build and train custom LSTM RNNs
 
-In each Jupyter notebook, create the same custom LSTM RNN architecture. In one notebook, you will fit the data using the FNG values. In the second notebook, you will fi thte data using only closing prices.
+In each Jupyter notebook, create the same custom LSTM RNN architecture. In one notebook, you will fit the data using the FNG values. In the second notebook, you will fit the data using only closing prices.
 
 Use the same parameters and training steps for each model. This is necessary to accurately compare each model.
 
@@ -38,9 +48,31 @@ Use the same parameters and training steps for each model. This is necessary to 
 
 Finally, use the testing data to evaluate each model and compare the performance.
 
-Which model has a lower loss?
+Use the above to answer the following:
 
-Which model tracks the actual values?
+> Which model has a lower loss?
+>
+> Which model tracks the actual values better over time?
+>
+> Which window size works best for the model?
+
+- - -
+
+### Resources
+
+[Keras Sequential Model Guide](https://keras.io/getting-started/sequential-model-guide/)
+
+[Illustrated Guide to LSTMs](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)
+
+[Stanford's RNN Cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks)
+
+- - -
+
+### Hints and Considerations
+
+Experiment with the model architecture and parameters to see which provides the best results, but be sure to use the same architecture and parameters when comparing each model.
+
+For training, use at least 10 estimators for both models.
 
 - - -
 
@@ -51,3 +83,7 @@ Which model tracks the actual values?
 * Include a Markdown that summarizes your homework and include this report in your Github repository.
 
 * Submit the link to your Github project to Bootcampspot.
+
+- - -
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
