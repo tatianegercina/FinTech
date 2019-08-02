@@ -72,6 +72,8 @@ Transition to covering the advantages of Pandas.
 
 Explain to students that they have already installed Pandas through Anaconda, so they don't need to install additional libraries. However, if they have issues running Pandas, they can use a free notebook by [Google Colab](https://colab.research.google.com/) and troubleshoot their installation with a TA during a break or office hours.
 
+Review the [instructions](../../../02-Homework/04-Pandas/Instructions/README.md) for the homework assignment. Focus on getting students excited about learning Pandas by previewing the skills and work they will accomplish by the end of the week. Emphasize calculating investment returns/profit over time, as well as plot visualizations.
+
 ---
 
 ### 2. Instructor Do: Why Pandas? (5 min)
@@ -999,7 +1001,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 20. Instructor Do: Preview Homework and End Class
+### 20. Instructor Do: Decompress and End Class
 
 Before ending class, give students encouragement and allow them time to vocalize their thoughts.
 
@@ -1025,4 +1027,4 @@ Before ending class, give students encouragement and allow them time to vocalize
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
