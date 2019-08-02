@@ -1,6 +1,6 @@
-# Variables & Lists
+# Variables and Lists
 
-You will be getting practice declaring and manipulating variables and lists in this exercise.
+In this activity, you will get more practice declaring and manipulating variables and lists.
 
 ## Instructions
 
@@ -24,13 +24,13 @@ Open the [starter file](Unsolved/lists-01.py) and perform the following:
 
 9. Execute the Python program.
 
-    1. Open your terminal/git bash.
+    * Open the command line.
 
-    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+    * Run `source activate PythonData` to activate your virtual environment.
 
-    3. Navigate to the directory that is holding this code drill.
+    * Navigate to the directory that is holding this code drill.
 
-    4. Run `python filename.py` to test your output.
+    * Run `python filename.py` to test your output.
 
 ---
 
