@@ -217,7 +217,7 @@ Instructor and TAs should circulate to provide assistance to anyone who experien
 
 * [PyViz Install Guide]()
 
-* [README.md](Activities/05-Stu_System_Check/README.md)
+* [README.md](Activities/01-Stu_System_Check/README.md)
 
 If time remains after students have completed the check, ask for the chosen group to summarize the install process. Use the below question as a starting point:
 
@@ -287,9 +287,9 @@ Ask if there are any questions. Then, continue to the next activity.
 
 **Files:**
 
-* [hvPlot.ipynb](Activities/07-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb)
+* [hvPlot.ipynb](Activities/02-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb)
 
-Open the [starter file](Activities/07-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb), and live code the following:
+Open the [starter file](Activities/02-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb), and live code the following:
 
   * The **hvPlot** library has to be imported into the Python environment. hvPlot offers a library called **hvPlot.Pandas** that integrates hvPlot with Pandas DataFrame API. This allows Pandas DataFrames to be visualized using hvPlot.
 
@@ -360,11 +360,11 @@ In this activity, students re-visit plots they made earlier in the class using M
 
 **Instructions**
 
-* [README.md](Activities/08-Stu_Plotting_Visual_Takeover/README.md)
+* [README.md](Activities/03-Stu_Plotting_Visual_Takeover/README.md)
 
 **Files:**
 
-* [plotting_visual_takeover.ipynb](Activities/08-Stu_Plotting_Visual_Takeover/Unsolved/Core/plotting_visual_takeover.ipynb)
+* [plotting_visual_takeover.ipynb](Activities/03-Stu_Plotting_Visual_Takeover/Unsolved/Core/plotting_visual_takeover.ipynb)
 
 - - -
 
@@ -376,7 +376,7 @@ In this activity, students re-visit plots they made earlier in the class using M
 
 **Files:**
 
-* [plotting_visual_takeover.ipynb](Activities/08-Stu_Plotting_Visual_Takeover/Solved/Core/plotting_visual_takeover.ipynb)
+* [plotting_visual_takeover.ipynb](Activities/03-Stu_Plotting_Visual_Takeover/Solved/Core/plotting_visual_takeover.ipynb)
 
 Open the solution, and conduct a dry walkthrough of the solution while explaining the following:
 
@@ -459,7 +459,7 @@ By the end of this activity, students and instructor will have deep dived into t
 
 * [Slides]()
 
-* [hvplot_widgets.ipynb](Activities/12-Ins_hvPlot_widgets/Solved/hvplot_widgets.ipynb)
+* [hvplot_widgets.ipynb](Activities/04-Ins_hvPlot_widgets/Solved/hvplot_widgets.ipynb)
 
 Explain to students plot interactions all happen with the hvPlot widget bar.
 
@@ -525,11 +525,11 @@ In this activity, students will play around with the hvPlot widgets to get more 
 
 **Instructions:**
 
-* [README.md](Activities/13-Stu_hvPlot_Widgets/README.md)
+* [README.md](Activities/05-Stu_hvPlot_Widgets/README.md)
 
 **Files:**
 
-* [hvplot_widgets.ipynb](Activities/13-Stu_hvPlot_Widgets/Unsolved/hvplot_widgets.ipynb)
+* [hvplot_widgets.ipynb](Activities/05-Stu_hvPlot_Widgets/Unsolved/hvplot_widgets.ipynb)
 
 ### 14. Instructor Do - hvPlot Widgets Activity Review (5 mins)
 
@@ -539,7 +539,7 @@ Data for this activity was retrieved from [data.cms.gov](https://data.cms.gov/Me
 
 **Files:**
 
-* [hvplot_widgets.ipynb](Activities/13-Stu_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
+* [hvplot_widgets.ipynb](Activities/05-Stu_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
 
 Engage the students by facilitating a review discussion. Ask the following questions:
 
@@ -571,7 +571,7 @@ By the end of this activity, students will have received a dry walkthrough demo 
 
 * [Slides]()
 
-* [composing_plots.ipynb](Activities/15-Ins_Composing_Plots/Solved/composing_plots.ipynb)
+* [composing_plots.ipynb](Activities/06-Ins_Composing_Plots/Solved/composing_plots.ipynb)
 
 Navigate to the 6.1 unit slides, and highlight the following:
 
@@ -627,11 +627,11 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 **Instructions:**
 
-* [README.md](Activities/16-Stu_Composing_Masterpieces/README.md)
+* [README.md](Activities/07-Stu_Composing_Masterpieces/README.md)
 
 **Files:**
 
-* [composing_masterpieces.ipynb](Activities/16-Stu_Composing_Masterpieces/Unsolved/composing_masterpieces.ipynb)
+* [composing_masterpieces.ipynb](Activities/07-Stu_Composing_Masterpieces/Unsolved/composing_masterpieces.ipynb)
 
 ### 17. Instructor Do - Composing Masterpieces Activity Review (5 mins)
 
@@ -639,7 +639,7 @@ The instructor will ask a student volunteer to conduct a dry walkthrough of the 
 
 **Files:**
 
-* [composing_masterpieces.ipynb](Activities/16-Stu_Composing_Masterpieces/Solved/composing_masterpieces.ipynb)
+* [composing_masterpieces.ipynb](Activities/07-Stu_Composing_Masterpieces/Solved/composing_masterpieces.ipynb)
 
 Initiate the review session by asking the first student who completed the student solution to conduct a dry walkthrough. If no student was identified to perform the walkthrough, conduct a dry walkthrough yourself. If the student needs assistance facilitating the review, ask guided questions such as:
 
@@ -707,7 +707,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 * [Slides]()
 
-* [viz_options.ipynb](Activities/18-Ins_Viz_Options/Solved/viz_options.ipynb)
+* [viz_options.ipynb](Activities/08-Ins_Viz_Options/Solved/viz_options.ipynb)
 
 Open the starter file, and perform a dry walkthrough of the solution, highlighting the following:
 
@@ -783,11 +783,11 @@ Make sure to slack out to students the [hvPlot customization](https://hvplot.pyv
 
 **Instructions:**
 
-* [README.md](Activities/19-Stu_Picture_Perfect/README.md)
+* [README.md](Activities/09-Stu_Picture_Perfect/README.md)
 
 **Files:**
 
-* [picture_perfect.ipynb](Activities/19-Stu_Picture_Perfect/Unsolved/Core/picture_perfect.ipynb)
+* [picture_perfect.ipynb](Activities/09-Stu_Picture_Perfect/Unsolved/Core/picture_perfect.ipynb)
 
 ### 20. Students Do - Picture Perfect Activity Review (5 mins)
 
@@ -795,7 +795,7 @@ Students participate in a 5 minute turn and teach activity that will focus on sh
 
 **Files:**
 
-* [picture_perfect.ipynb](Activities/19-Stu_Picture_Perfect/Solved/Core/picture_perfect.ipynb)
+* [picture_perfect.ipynb](Activities/09-Stu_Picture_Perfect/Solved/Core/picture_perfect.ipynb)
 
 Instruct students to turn and find a partner to demo their visualizations and customizations to. Encourage students to teach one another different tricks and shortcuts they may have learned along the way, as well as to provide constructive criticism to help make the visualizations more appealing and insightful.
 
@@ -833,7 +833,7 @@ In this optional activity, the instructor demonstrates to students how to create
 
 * [Slides]()
 
-* [plotting_with_flair.ipynb](Activities/21-Ins_Plotting_with_Flair/Unsolved/plotting_with_flair.ipynb)
+* [plotting_with_flair.ipynb](Activities/10-Ins_Plotting_with_Flair/Unsolved/plotting_with_flair.ipynb)
 
 Explain to students that **line** and **bar** plots are just the tip of the iceberg in terms of what hvPlot supports.
 
@@ -891,11 +891,11 @@ Have TAs circulate to provide assistance to students facing challenges.
 
 **Instructions:**
 
-* [README.md](Activities/22-Stu_Immaculate_Portfolio/README.md)
+* [README.md](Activities/11-Stu_Immaculate_Portfolio/README.md)
 
 **Files:**
 
-* [immaculate_portfolio.ipynb](Activities/22-Stu_Immaculate_Portfolio/Unsolved/immaculate_portfolio.ipynb)
+* [immaculate_portfolio.ipynb](Activities/11-Stu_Immaculate_Portfolio/Unsolved/immaculate_portfolio.ipynb)
 
 ### 23. Instructor Do - Immaculate Portfolio Activity Review (5 mins)
 
@@ -903,7 +903,7 @@ This review activity will be facilitated by the instructor but led by the studen
 
 **Files:**
 
-* [immaculate_portfolio.ipynb](Activities/22-Stu_Immaculate_Portfolio/Solved/immaculate_portfolio.ipynb)
+* [immaculate_portfolio.ipynb](Activities/11-Stu_Immaculate_Portfolio/Solved/immaculate_portfolio.ipynb)
 
 Begin the review activity by asking one of the two student volunteers to present their portfolio. Have the students open the solution and highlight the following:
 
