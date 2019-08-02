@@ -42,4 +42,4 @@ Pandas offers a `replace` function that can be executed against a Series. Docume
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
