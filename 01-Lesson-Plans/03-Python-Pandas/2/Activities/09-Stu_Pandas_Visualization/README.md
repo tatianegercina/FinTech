@@ -36,4 +36,4 @@ Consult the [Pandas documentation](https://pandas.pydata.org/pandas-docs/version
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
