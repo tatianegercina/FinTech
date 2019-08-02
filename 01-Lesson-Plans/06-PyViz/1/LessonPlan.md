@@ -1,4 +1,4 @@
-## 2.1 Lesson Plan: PyViz Formation (6:30 PM)
+## 6.1 Lesson Plan: PyViz Formation (6:30 PM)
 
 ### Overview
 
@@ -124,7 +124,7 @@ Ask the students for any questions before moving forward.
 
 - - -
 
-### 3. Instructor Do - Intro to PyViz (10 mins)
+### 3. Instructor Do - Intro to PyViz (5 mins)
 
 Students will be introduced to PyViz by way of a facilitated discussion led by the instructor. The discussion will focus on the advantages of using PyViz rather than individual technologies (i.e. Holoviews, Matplotlib, d3.js, etc.).
 
@@ -207,7 +207,7 @@ Ask students if they have any questions before moving forward.
 
 - - -
 
-### 5. Students Do - System Check (10 mins)
+### 5. Students Do - System Check (5 mins)
 
 In this activity, students will work in pairs to confirm everyone has PyViz installed.
 
