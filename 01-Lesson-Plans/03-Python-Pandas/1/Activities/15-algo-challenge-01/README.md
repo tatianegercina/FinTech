@@ -1,8 +1,8 @@
-# Programming challenges
+# Programming Challenges
 
-These challenges are meant to strengthen your all-around coding skills and thinking; unlike the past challenges, these do not focus on a single topic. They are meant to be brain teasers.
+These challenges are meant to strengthen your all-around coding skills and thinking. Unlike past challenges, these do not focus on a single topic and are meant to be brainteasers.
 
-Approach these problems in the best way you see fit. Open challenge.py and follow the instructions for each problem within. Have fun!
+Open `challenge.py` and follow the instructions for each problem, approaching them as you see fit. Have fun with this!
 
 ## Instructions
 
@@ -14,13 +14,13 @@ Open the [starter file](Unsolved/algo-challenge-01.py) and perform the following
 
 3. Execute the Python program.
 
-    1. Open your terminal/git bash.
+    * Open the command line.
 
-    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+    * Run `source activate PythonData` to activate your virtual environment.
 
-    3. Navigate to the directory that is holding this code drill.
+    * Navigate to the directory that is holding this code drill.
 
-    4. Run `python filename.py` to test your output.
+    * Run `python filename.py` to test your output.
 
 ---
 

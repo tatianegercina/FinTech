@@ -1,16 +1,14 @@
 # Password Strength Checker
 
-We're going to be creating a validation function for checking the strength of a password. The important part of this activity is the logic behind the checker, so you are given the html and the rest of the javascript. You should not have to modify any part of the code given to you. Just work within the area allotted to you to fulfill the objectives.
+In this activity, you will create a validation function for checking the strength of a password. The focus of this activity is the logic behind the checker. You will be given the HTML and the rest of the JavaScript; you should not have to modify any part of the code given to you. 
 
-* Password strengths are as follows:
+Password strengths are as follows:
 
-  * A very weak password contains equal to or fewer than 6 characters and consists only of numbers
-  * A very strong password has more than 6 characters and consists of at least one number, at least one letter
-  * Anything other type of password is of average strength
+  * A _very weak_ password contains 6 or fewer characters consisting only of numbers. 
 
-* Your password strength checker function should only return one output per password given
+  * A _very strong_ password has more than 6 characters consisting of at least one number and at least one letter. 
 
-* Your function should return the greatest strength level that the password satisfied from weak all the way up to strong with average being in the middle of the two.
+  * Any other type of password is of average strength. 
 
 ## Instructions
 
@@ -22,35 +20,35 @@ Open the [starter file](Unsolved/algo-challenge-02.py) and perform the following
 
 3. Define a function called `check_strength` that takes in a string parameter called `password`.
 
-    1. Create two boolean variables called `contains_number` and `contains_letter`. Set them to False.
+    * Create two Boolean variables called `contains_number` and `contains_letter`. Set them to `False`.
 
-    2. Initialize a `count` variable and set it to 0.
+    * Initialize a `count` variable and set it to 0.
 
-    3. Loop through each character in the `password` and increment the `count` variable by 1 for each character.
+    * Loop through each character in the `password` and increment the `count` variable by 1 for each character.
 
-    4. Create an if-else statement that loops through each character in `password` and updates `contains_number` or `contains_letter` to True.
+    * Create an if-else statement that loops through each character in `password` and updates `contains_number` or `contains_letter` to `True`.
 
 4. Create an if-else statement for the following:
 
-    1. If `password` contains equal to or fewer than 6 characters and consists only of numbers, print "Your password is too weak."
+    * If `password` contains 6 or fewer characters and consists only of numbers, print "Your password is too weak".
 
-    2. Else if `password` contains more than 6 characters and consists of at least one number and at least one letter, print "Your password is a strong password".
+    * Else if `password` contains more than 6 characters and consists of at least one number and at least one letter, print "Your password is a strong password".
 
-    3. Else, print "Your password is of average strength."
+    * Else, print "Your password is of average strength". 
 
-5. Declare a variable as `user_input_password` with an input stating "Input your password: ".
+5. Declare a variable as `user_input_password` with an input stating "Input your password:"
 
-6. Call the check_strength function with the `user_input_password`.
+6. Call the `check_strength` function with `user_input_password`.
 
 7. Execute the Python program.
 
-    1. Open your terminal/git bash.
+    * Open the command line.
 
-    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+    * Run `source activate PythonData` to activate your virtual environment.
 
-    3. Navigate to the directory that is holding this code drill.
+    * Navigate to the directory that is holding this code drill.
 
-    4. Run `python filename.py` to test your output.
+    * Run `python filename.py` to test your output.
 
 ---
 
