@@ -24,4 +24,4 @@ Using the [starter file](Unsolved/out_of_sorts.ipynb) and NASDAQ historical stoc
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
