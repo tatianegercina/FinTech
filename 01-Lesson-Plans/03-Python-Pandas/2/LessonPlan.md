@@ -38,7 +38,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 3.2 Slides](https://docs.google.com/presentation/d/1KWphsqwNlAQGcLf2glW4096Jmnm_xS5pfmfguOsIFJU/edit#slide=id.g54ab1329fa_1_44).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 3.2 Slides](https://docs.google.com/presentation/d/1KWphsqwNlAQGcLf2glW4096Jmnm_xS5pfmfguOsIFJU/edit#slide=id.g59b0dc3b18_0_96).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
@@ -80,7 +80,7 @@ Review the [instructions](../../../02-Homework/04-Pandas/Instructions/README.md)
 
 The goal of this section is to help students understand the relationship between Pandas and Python. In this part of the lesson you will cover some specific features of Pandas and how Pandas can alleviate some of the challenges presented by Excel.
 
-**File:** [Slides](https://docs.google.com/presentation/d/1KWphsqwNlAQGcLf2glW4096Jmnm_xS5pfmfguOsIFJU/edit#slide=id.g54ab1329fa_1_44)
+**File:** [Slides](https://docs.google.com/presentation/d/1KWphsqwNlAQGcLf2glW4096Jmnm_xS5pfmfguOsIFJU/edit#slide=id.g59b0dc3b18_0_96)
 
 Begin this part of the lesson by discussing the utility and history of spreadsheets.
 
