@@ -110,7 +110,7 @@ Use the solution file to perform a live coding session and quickly recap concept
   ```
 
   ```
-  ['Pikachu', 'Charizard', 'Bulbasaur', 'Garydos', 'Dragonite', 'Onyx']
+  ['Pikachu', 'Charizard', 'Bulbasaur', 'Gyarados', 'Dragonite', 'Onyx']
   ```
 
 - What are dicts?
