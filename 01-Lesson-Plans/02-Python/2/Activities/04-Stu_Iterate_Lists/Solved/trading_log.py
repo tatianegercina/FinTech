@@ -41,7 +41,7 @@ for day_pnl in trading_pnl:
     # Logic to determine profitable vs. unprofitable days
     if day_pnl > 0:
         profitable_days.append(day_pnl)
-    elif day_pnl < 0:
+    elif day_pnl <= 0:
         unprofitable_days.append(day_pnl)
 
 # Calculate the average
