@@ -1,6 +1,11 @@
 ### Required Libraries ###
+import requests
+import pandas as pd
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
+
+### API Keys ###
+iex_key = "pk_a04696c8c38545a082a9d19e90b57228"
 
 ### Functionality Helper Functions ###
 def parse_int(n):
@@ -8,6 +13,59 @@ def parse_int(n):
         return int(n)
     except ValueError:
         return float("nan")
+
+def get_retirement_date(age):
+    """
+    Calculates the retirement date and the years to retirement based on
+    the current age of the user and a default retirement age of 65 years.
+    """
+
+    years_to_retirement = 65 - age
+    retirement_date = datetime.now() + relativedelta(years=years_to_retirement)
+
+    return {
+        "retirement_date": retirement_date,
+        "years_to_retirement": years_to_retirement
+    }
+
+def get_ticker_prices(ticker):
+    """
+    Retrieves one year old historical prices for the ticket based on the current date.
+    """
+
+    # Define API endpoint
+    url = "https://cloud.iexapis.com/stable/stock/{}/chart/1y?token={}".format(
+        ticker, iex_key)
+
+    # Retrieve historical prices data
+    data = requests.get(url).json()
+
+    # Create response DataFrame taking only the date and the close price
+    df = pd.DataFrame([{"date": price["date"], "close_"+ticker: price["close"]}
+        for price in data])
+
+    # Define DataFrame's index
+    df.set_index("date", inplace=True)
+
+    return df
+
+def monte_carlo(age, investment_amount, risk_level):
+    """
+    Calculates the cumulative returns for the retirement plan running
+    a Monte Carlo simulation.
+    """
+
+    # Gets retirement information
+    retirement_info = get_retirement_date(age)
+
+    # Fetch tickers data
+    spy_data = get_ticker_prices("spy")
+    agg_data = get_ticker_prices("agg")
+    tickers_data = pd.merge(spy_data, agg_data, on="date")
+
+    # Calculate the daily roi for the stocks
+    daily_returns = tickers_data.pct_change()
+
 
 
 def build_validation_result(is_valid, violated_slot, message_content):
