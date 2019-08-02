@@ -30,4 +30,4 @@ Using the [starter file](Unsolved/group_dynamics.ipynb) and the NASDAQ historica
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
