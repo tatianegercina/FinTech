@@ -10,13 +10,19 @@ Walk through the first few blocks of the notebook.
 
 * We created two classes in this data, with two important features. First, one class is much larger than the other. Second, the classes have significant variation, so neither is cleanly distinguishable from the other.
 
+![eval_1](\Images\eval_1.png)
+
 * Using a logistic regression mode, we try to predict the class, purple or yellow, with the coordinates of a point. 
 
 Ask a student to help you interpret the output of the confusion matrix. Refer to the powerpoint slide to reveal the correct answer.
 
+![eval_2](\Images\eval_2.png)
+
 * Looking only at this matrix, it seems that the model does reasonably well. While there are some false positives, the vast majority of data points are classified correctly. 
 
 Move on to the next block, and ask a student to define the three metrics that are shown here. Once again, refer to the powerpoint slide to confirm the student's answers. 
+
+![eval_3](\Images\eval_2.png)
 
 * Precision is the proportion of predicted positives that are accurate. Recall is the proportion of actual positive that were predicted as positive. The F1 metric is a blended average of the two. 
 
