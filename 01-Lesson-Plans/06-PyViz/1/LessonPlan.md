@@ -1,4 +1,4 @@
-## 2.1 Lesson Plan: The PyViz Formation (6:30 PM)
+## 2.1 Lesson Plan: PyViz Formation (6:30 PM)
 
 ### Overview
 
@@ -100,7 +100,7 @@ Ask for any questions before proceeding.
 
 This activity involves a quick demo and review of the homework.
 
-**Files**
+**Files:**
 
 * [Homework Instructions](https://github.com/coding-boot-camp/FinTech-Lesson-Plans/blob/master/02-Homework/06-PyViz/Instructions/README.md)
 
@@ -124,7 +124,7 @@ Ask the students for any questions before moving forward.
 
 - - -
 
-### 3. Instructor Do: Intro to PyViz (10 minutes)
+### 3. Instructor Do - Intro to PyViz (10 mins)
 
 Students will be introduced to PyViz by way of a facilitated discussion led by the instructor. The discussion will focus on the advantages of using PyViz rather than individual technologies (i.e. Holoviews, Matplotlib, d3.js, etc.).
 
@@ -157,11 +157,11 @@ Ask if there are any questions; then, move onto the next module.
 
 - - -
 
-### 4. Instructor Do - PyViz Demo (10 minutes)
+### 4. Instructor Do - PyViz Demo (10 mins)
 
 By the end of this activity, students will have a solid understanding of how to install PyViz and import it into a development environment.
 
-**Files**
+**Files:**
 
 * [Slides]()
 
@@ -190,7 +190,7 @@ Transition to the dry walkthrough of the installation guide, and highlight the f
 
   ```shell
   conda install -c hvplot
-  conda install -c plotly_express
+  conda install -c plotly.express
   conda install -c pyviz panel
   ```
 
@@ -207,13 +207,13 @@ Ask students if they have any questions before moving forward.
 
 - - -
 
-### 5. Students Do: System Check (10 minutes)
+### 5. Students Do - System Check (10 mins)
 
 In this activity, students will work in pairs to confirm everyone has PyViz installed.
 
 Instructor and TAs should circulate to provide assistance to anyone who experienced environment issues when installing PyViz. At this time, the instructor should find a group and ask if they'd like to volunteer to quickly summarize the install process, time permitting.
 
-**Files**
+**Files:**
 
 * [PyViz Install Guide]()
 
@@ -237,11 +237,11 @@ Ask if there are any questions before moving on.
 
 - - -
 
-### 6. Instructor Do: Intro to hvPlot (5 minutes)
+### 6. Instructor Do - Intro to hvPlot (5 mins)
 
 Students participate in a formal lecture regarding what hvPlot is and what it has to offer in terms of data visualization.
 
-**Files**
+**Files:**
 
 * [Slides]()
 
@@ -283,7 +283,7 @@ Ask if there are any questions. Then, continue to the next activity.
 
 - - -
 
-### 7. Instructor Do: hvPlot Demo (5 minutes)
+### 7. Instructor Do - hvPlot Demo (5 mins)
 
 **Files:**
 
@@ -354,25 +354,25 @@ Ask students if they have any questions before moving onto the next activity.
 
 - - -
 
-### 8. Students Do: Plotting a Visual Takeover (15 minutes)
+### 8. Students Do - Plotting a Visual Takeover (15 mins)
 
 In this activity, students re-visit plots they made earlier in the class using Matplotlib and they re-create them as hvplots. This bridge assignment aims to demonstrate the similarities between hvplot plot API and Matplotlib's.
 
-**Instrutions**
+**Instructions**
 
 * [README.md](Activities/08-Stu_Plotting_Visual_Takeover/README.md)
 
-**Files**
+**Files:**
 
 * [plotting_visual_takeover.ipynb](Activities/08-Stu_Plotting_Visual_Takeover/Unsolved/Core/plotting_visual_takeover.ipynb)
 
 - - -
 
-### 9. BREAK (15 minutes)
+### 9. BREAK (15 mins)
 
 - - -
 
-### 10. Instructor Do: Plotting a Visual Takeover Activity Review (5 minutes)
+### 10. Instructor Do - Plotting a Visual Takeover Activity Review (5 mins)
 
 **Files:**
 
@@ -413,7 +413,7 @@ Ask for any remaining questions before moving on.
 
 - - -
 
-### 11. Instructor Do: Intro to Interactive Visualizations (5 mins)
+### 11. Instructor Do - Intro to Interactive Visualizations (5 mins)
 
 Students participate in a facilitated discussion led by the instructor regarding the different types of chart interactions that are capable with hvPlots.
 
@@ -451,7 +451,7 @@ Ask if there are any questions before moving forward.
 
 - - -
 
-### 12. Instructor Do: hvplot Widgets (10 mins)
+### 12. Instructor Do - hvplot Widgets (10 mins)
 
 By the end of this activity, students and instructor will have deep dived into the different interactions possible with hvPlots. While students may have used some of the widgets already, this activity will serve as a formal review of each button and interaction.
 
@@ -519,7 +519,7 @@ Ask if there are any questions, and then continue to the student activity.
 
 - - -
 
-### 13. Student Do: hvPlot Widgets (10 mins)
+### 13. Students Do - hvPlot Widgets (10 mins)
 
 In this activity, students will play around with the hvPlot widgets to get more accustom to the different types of interactions supported with hvPlots. Students use hvPlot visualizations to explore hospital claims data and answer a few basic questions about the data.
 
@@ -531,7 +531,7 @@ In this activity, students will play around with the hvPlot widgets to get more 
 
 * [hvplot_widgets.ipynb](Activities/13-Stu_hvPlot_Widgets/Unsolved/hvplot_widgets.ipynb)
 
-### 14. Instructor Do: hvPlot Widgets Activity Review (5 mins)
+### 14. Instructor Do - hvPlot Widgets Activity Review (5 mins)
 
 The instructor will lead a facilitated review section in this activity. The emphasis will be placed on what each widget does and how they can be used in conjunction with one another to deep dive into data analysis and exploration.
 
@@ -563,7 +563,7 @@ Ask for any remaining questions before moving on.
 
 - - -
 
-### 15. Instructor Do: Composing Plots (5 mins)
+### 15. Instructor Do - Composing Plots (5 mins)
 
 By the end of this activity, students will have received a dry walkthrough demo on how to combine two plot objects to create a plot with subplots. This activity will teach students how to create plot layouts and overlay visualizations to create a centralized location for comparative data analysis.
 
@@ -615,7 +615,7 @@ Ask and answer any students questions. Then, move onto the next activity.
 
 - - -
 
-### 16. Students Do: Composing Masterpieces (10 mins)
+### 16. Students Do - Composing Masterpieces (10 mins)
 
 Students will complete a MSMD activity where they use the information learned in the instructor demo to customize their hvPlots. Students will use a range of options to customize the color, labels, and axis alignments.
 
@@ -633,7 +633,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 * [composing_masterpieces.ipynb](Activities/16-Stu_Composing_Masterpieces/Unsolved/composing_masterpieces.ipynb)
 
-### 17. Instructor Do: Composing Masterpieces Activity Review (5 mins)
+### 17. Instructor Do - Composing Masterpieces Activity Review (5 mins)
 
 The instructor will ask a student volunteer to conduct a dry walkthrough of the Composing Masterpieces solution.
 
@@ -697,7 +697,7 @@ Ask for any remaining questions before moving on.
 
 - - -
 
-### 18. Instructor Do: Visualization Options (5 mins) (Critical)
+### 18. Instructor Do - Visualization Options (5 mins) (Critical)
 
 The goal of this activity is to provide students with a dry walkthrough demonstration of how to use hvPlot plot attributes and options to customize the look and feel of visualizations. This activity will enable students to perfect their visualizations by fine tuning details such as axis labels, as well as create attractive color themes and effects.
 
@@ -775,7 +775,7 @@ Ask if there are any more questions. Then, continue to the student challenge act
 
 - - -
 
-### 19. Students Do: Picture Perfect (10 mins)
+### 19. Students Do - Picture Perfect (10 mins)
 
 By the end of this activity, students will have employed hvPlot customization attributes and options to perfect and add finishing touches to their visualizations.
 
@@ -789,7 +789,7 @@ Make sure to slack out to students the [hvPlot customization](https://hvplot.pyv
 
 * [picture_perfect.ipynb](Activities/19-Stu_Picture_Perfect/Unsolved/Core/picture_perfect.ipynb)
 
-### 20. Students Do: Picture Perfect Activity Review (5 mins)
+### 20. Students Do - Picture Perfect Activity Review (5 mins)
 
 Students participate in a 5 minute turn and teach activity that will focus on showcasing their final, customized visualizations.
 
@@ -825,7 +825,7 @@ Ask for any remaining questions before moving on.
 
 - - -
 
-### 21. Instructor Do: Plotting with Flair (5 mins) (Optional)
+### 21. Instructor Do - Plotting with Flair (5 mins) (Optional)
 
 In this optional activity, the instructor demonstrates to students how to create additional hvPlot types, such as **scatter** and **area** plots.
 
@@ -897,7 +897,7 @@ Have TAs circulate to provide assistance to students facing challenges.
 
 * [immaculate_portfolio.ipynb](Activities/22-Stu_Immaculate_Portfolio/Unsolved/immaculate_portfolio.ipynb)
 
-### 23. Instructor Do: Immaculate Portfolio Activity Review (5 mins)
+### 23. Instructor Do - Immaculate Portfolio Activity Review (5 mins)
 
 This review activity will be facilitated by the instructor but led by the students. Two student volunteers will be asked to present their portfolio to the class.
 
@@ -953,7 +953,7 @@ If time remains, ask the second volunteer to present. Ask the second volunteer t
 
 Ask for any remaining questions before moving on.
 
-### 24. Instructor Do: Recap (5 minutes)
+### 24. Instructor Do - Recap (5 mins)
 
 The day has been a whirlwind of visualizations. Now it's time to take a load off and reflect on what was learned during the day.
 
