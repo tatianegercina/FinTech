@@ -2,7 +2,7 @@
 
 ## Instructions
 
-Use set operations in Python to answer each section of the unsolved file.
+Use set operations in Python to answer each section in the unsolved file.
 
 ---
 

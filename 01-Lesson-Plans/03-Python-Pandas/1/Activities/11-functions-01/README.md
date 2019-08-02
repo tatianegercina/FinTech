@@ -1,12 +1,12 @@
 # Fun with functions
 
-Functions are a great way to wrap chunks of code so you can use it later. Functions take in an argument and does work on that argument. If you `return` a value, then we can use that value when we call the function. Remember, after you define a function, you have to call the function in order to actually execute its contents.
+In this activity, you will get more practice with functions. Functions are a great way to wrap chunks of code so you can use them later. Functions take in an argument and work on that argument. If you `return` a value, you can use that value when you call the function. Remember, after you define a function, you have to call the function in order to actually execute its contents.
 
 ## Instructions
 
 Open the [starter file](Unsolved/functions-01.py) and perform the following:
 
-1. Define a function `having_fun` that prints "Functions are FUN!".
+1. Define a function `having_fun` that prints "Functions are FUN!"
 
 2. Define a function `thirty_seven` that prints the sum of 18 and 19.
 
@@ -16,7 +16,7 @@ Open the [starter file](Unsolved/functions-01.py) and perform the following:
 
 5. Call your `hello` function.
 
-6. Define a function `user_input` that asks the user "What is your name?" and stores it in a variable called `user_name` and print the user's name.
+6. Define a function `user_input` that asks the user "What is your name?", stores it in a variable called `user_name`, and prints the user's name.
 
 7. Call your `user_input` function.
 
@@ -26,17 +26,17 @@ Open the [starter file](Unsolved/functions-01.py) and perform the following:
 
 10. Define a function `average` that calculates the average between two parameters and returns the average.
 
-11. Call the `average` function and assign to a variable `calculated_average`. Then print `calcualted_average`.
+11. Call the `average` function and assign a variable `calculated_average`. Then print `calculated_average`.
 
 12. Execute the Python program.
 
-    1. Open your terminal/git bash.
+    * Open the command line.
 
-    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+    * Run `source activate PythonData` to activate your virtual environment.
 
-    3. Navigate to the directory that is holding this code drill.
+    * Navigate to the directory that is holding this code drill.
 
-    4. Run `python filename.py` to test your output.
+    * Run `python filename.py` to test your output.
 
 ---
 
