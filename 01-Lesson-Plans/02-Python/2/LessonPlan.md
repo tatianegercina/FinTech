@@ -391,7 +391,7 @@ Open the solution file and explain the following:
   print(groceries[:2])
   print()
 
-  # Find the last four items on the list
+  # Find the last five items on the list
   print("What are all my items except for the first two on the list?")
   print(groceries[2:])
   print()
@@ -406,7 +406,7 @@ Open the solution file and explain the following:
   What are my first two items on the list?
   ['water', 'butter']
 
-  What are all my items except for the first two on the list?
+  What are my last five items on the list?
   ['eggs', 'apples', 'cinnamon', 'sugar', 'milk']
 
   What are is every other item on the list, starting from the second item?
