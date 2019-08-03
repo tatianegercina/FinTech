@@ -4,11 +4,11 @@ It's been about a week since your last interview with REMAX, and you're still wa
 
 During your research, you came across a plot you've only seen offered with **Plotly Express**: the **parallel coordinate** plot. Your research has shown you that **parallel coordinate** plots are great for performing impact analysis, which is key when assessing trends in the real estate market.
 
-While you're waiting to hear back from REMAX, take the initiative to revisit your latest REMAX submission and incorporate a **parallel coordinate** plot into your analysis. Then, analyze the key performance indicators for real estate viability in parallel to one another.
+While you're waiting to hear back from REMAX, use the Alleghany Count sales and foreclosures data sets to get some practice using **parallel coordinate** plots. Then, analyze the key performance indicators for real estate in parallel..
 
 ## Instructions
 
-1. Open the starter file, and concatenate the `sales_grp_cnt` and `foreclosures_grp_cnt` DataFrames. Concatenate on `axis=1`. Hint: drop nulls and reset the index after concatenating. Name this object `sales_foreclosures_cnt`.
+1. Open the [starter file](Unsolved/Core/plotting_in_parallel.ipynb), and concatenate the `sales_grp_cnt` and `foreclosures_grp_cnt` DataFrames. Concatenate on `axis=1`. Hint: drop nulls and reset the index after concatenating. Name this object `sales_foreclosures_cnt`.
 
 2. Rename the columns for both `sales_grp_cnt` and `foreclosures_grp_cnt`.
 
