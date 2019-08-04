@@ -10,6 +10,8 @@ If you finish early, complete the challenge section. If you're feeling confident
 
 3. Sort the plot so that **BEDROOMS**, **TOTALROOMS**, and **FULLBATHS** are sorted in ascending order.
 
+4. Explore the data and try and spot various trends/patterns in the data.
+
 ### Challenge
 
 Find a teammate who has also finished early, and work with them to analyze the data and interpret the **story** of Alleghany real estate property assessments and the evidenced trends of association.
