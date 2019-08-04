@@ -1,4 +1,10 @@
-### 11. Student Do: Categorical Property Evaluation (15 mins)
+- - -
+
+### 11. Break (15 minutes)
+
+- - -
+
+### 12. Student Do: Categorical Property Evaluation (15 mins)
 
 Students complete a MSMD activity and code out a **parallel categories** plot. Students will use the plot to visualize the dimensions/categories evaluated during real estate property assessments.
 
@@ -18,7 +24,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 * [Categorical_Evaluation.ipynb](Activities/11-Stu_Categorical_Evaluation/Unsolved/categorical_evaluation.ipynb)
 
-### 12. Students Do: Categorical Assessments Activity Review (5 mins)
+### 13. Students Do: Categorical Assessments Activity Review (5 mins)
 
 This activity involves a student volunteering to tell the story of Alleghany property assessments. A student will present the parallel categories plot from the student activity, and provide some findings regarding dimensional patterns.
 
