@@ -25,14 +25,12 @@ Open the [starter file](Activities/11-Ins_Parallel_Categories/Solved/parallel_ca
   prop_size= ['Large','Medium','Small']
 
   df= pd.DataFrame({
-      "foreclosed":np.random.randint(300,303,25),
-      "sold":np.random.randint(999,1002,25),
-      "year":np.random.randint(2010,2013,25),
-      "type": np.random.choice(housing_type, 25),
-      "region": np.random.choice(region, 25),
-      "prop_size": np.random.choice(prop_size, 25)}).sort_values(['year','type','region','prop_size'])
+      "sold":np.random.randint(999,1002,30),
+      "year":np.random.randint(2010,2019,30),
+      "type": np.random.choice(housing_type, 30),
+      "region": np.random.choice(region, 30),
+      "prop_size": np.random.choice(prop_size, 30)}).sort_values(['year','type','region','prop_size'])
   df.head()
-  px.parallel_categories()
   ```
 
   ![parallel_categories.png](Images/parallel_categories.png)
