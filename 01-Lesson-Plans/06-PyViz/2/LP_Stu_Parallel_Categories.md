@@ -22,6 +22,8 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 This activity involves a student volunteering to tell the story of Alleghany property assessments. A student will present the parallel categories plot from the student activity, and provide some findings regarding dimensional patterns.
 
+This activity is a revised version of the turn and teach activity type; however, instead of students working as teams, one student will lead the teaching.
+
 **Files:**
 
 * [categorical_property_evaluation.ipynb](Activities/11-Stu_Categorical_Evaluation/Solved/categorical_evaluation.ipynb)
