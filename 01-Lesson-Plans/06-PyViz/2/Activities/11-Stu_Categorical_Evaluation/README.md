@@ -1,5 +1,7 @@
 # Categorical Property Evaluation
 
+On August 1st, Alleghany County released their 2019 real estate property assessment report. Read in the data using Pandas and plot it using a **parallel categories** plot in order to analyze the attributes that have a large impact on evaluated housing prices. Interact with the plot in order to identify key trends/patterns in each dimension.
+
 If you finish early, complete the challenge section. If you're feeling confident in your story, volunteer to present your findings and lead the activity review module.
 
 1. Open the starter file, and slice `prop_assessments` DataFrame by **LOCALTOTAL**, **USEDESC**, **TOTALROOMS**, **BEDROOMS**, and **FULLBATHS**.
