@@ -45,7 +45,7 @@ Open the solution and ask the student volunteer to present the plot and relay th
 
   ![stu_parallel_categories_color.png](Images/stu_parallel_categories_color.png)
 
-Initiate the story telling piece of the review by asking the student some of the following guided questions:
+If time remains, initiate the story telling piece of the review by asking the student some of the following guided questions:
 
 * Are there any identifiable patterns at the dimension level?
 
@@ -63,7 +63,7 @@ Initiate the story telling piece of the review by asking the student some of the
 
   * **Answer** Housing value is more affected by **total number of rooms** and **bedrooms** than **full baths**.
 
-* What is the story being told by the data?
+* Is there an identifiable story being told through the data? What is the story?
 
   * **Answer** Total number of rooms, bedrooms, and bathrooms are all used to assess a property and its value. The more rooms and bedrooms, the higher the sale price. Lastly, most single family homes being assessed in Allgehany county 2019 have around 6 total rooms, 3 bedrooms, and 1 full bath.
 
