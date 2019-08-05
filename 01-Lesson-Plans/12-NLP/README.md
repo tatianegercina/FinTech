@@ -1,4 +1,4 @@
-## Unit 13 - Natural Language Processing
+## Unit 12 - Natural Language Processing
 
 ### Overview
 
@@ -6,11 +6,11 @@ This week we will cover...
 
 ### Lesson Plans
 
-* [13.1 - Lesson Plan](1/LessonPlan.md)
+* [12.1 Lesson Plan](1/LessonPlan.md)
 
-* [13.2 - Lesson Plan](2/LessonPlan.md)
+* [12.2 Lesson Plan](2/LessonPlan.md)
 
-* [13.3 - Lesson Plan](3/LessonPlan.md)
+* [12.3 Lesson Plan](3/LessonPlan.md)
 
 ### Homework
 
