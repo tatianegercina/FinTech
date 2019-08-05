@@ -1,71 +1,16 @@
 ### Required Libraries ###
-import requests
-import pandas as pd
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
-### API Keys ###
-iex_key = "pk_a04696c8c38545a082a9d19e90b57228"
-
 ### Functionality Helper Functions ###
 def parse_int(n):
+    """
+    Securely converts a non-integer value to integer.
+    """
     try:
         return int(n)
     except ValueError:
         return float("nan")
-
-def get_retirement_date(age):
-    """
-    Calculates the retirement date and the years to retirement based on
-    the current age of the user and a default retirement age of 65 years.
-    """
-
-    years_to_retirement = 65 - age
-    retirement_date = datetime.now() + relativedelta(years=years_to_retirement)
-
-    return {
-        "retirement_date": retirement_date,
-        "years_to_retirement": years_to_retirement
-    }
-
-def get_ticker_prices(ticker):
-    """
-    Retrieves one year old historical prices for the ticket based on the current date.
-    """
-
-    # Define API endpoint
-    url = "https://cloud.iexapis.com/stable/stock/{}/chart/1y?token={}".format(
-        ticker, iex_key)
-
-    # Retrieve historical prices data
-    data = requests.get(url).json()
-
-    # Create response DataFrame taking only the date and the close price
-    df = pd.DataFrame([{"date": price["date"], "close_"+ticker: price["close"]}
-        for price in data])
-
-    # Define DataFrame's index
-    df.set_index("date", inplace=True)
-
-    return df
-
-def monte_carlo(age, investment_amount, risk_level):
-    """
-    Calculates the cumulative returns for the retirement plan running
-    a Monte Carlo simulation.
-    """
-
-    # Gets retirement information
-    retirement_info = get_retirement_date(age)
-
-    # Fetch tickers data
-    spy_data = get_ticker_prices("spy")
-    agg_data = get_ticker_prices("agg")
-    tickers_data = pd.merge(spy_data, agg_data, on="date")
-
-    # Calculate the daily roi for the stocks
-    daily_returns = tickers_data.pct_change()
-
 
 
 def build_validation_result(is_valid, violated_slot, message_content):
@@ -87,12 +32,12 @@ def get_investment_recommendation(risk_level):
     Returns an initial investment recommendation based on the risk profile.
     """
     risk_levels = {
-        "none": "100% Bonds, 0% equities",
-        "very low": "80% Bonds, 20% equities",
-        "low": "60% Bonds, 40% equities",
-        "medium": "40% Bonds, 60% equities",
-        "high": "20% Bonds, 80% equities",
-        "very high": "0% Bonds, 100% equities",
+        "none": "100% bonds (AGG), 0% equities (SPY)",
+        "very low": "80% bonds (AGG), 20% equities (SPY)",
+        "low": "60% bonds (AGG), 40% equities (SPY)",
+        "medium": "40% bonds (AGG), 60% equities (SPY)",
+        "high": "20% bonds (AGG), 80% equities (SPY)",
+        "very high": "0% bonds (AGG), 100% equities (SPY)",
     }
 
     return risk_levels[risk_level.lower()]
@@ -103,10 +48,12 @@ def validate_data(age, investment_amount, intent_request):
     Validates the data provided by the user.
     """
 
-    # Validate the retirement date based on the user's age.
-    # An age of 65 years is considered by default.
+    # Validate the retirement age based on the user's current age.
+    # An retirement age of 65 years is considered by default.
     if age is not None:
-        age = parse_int(age)  # Since parameters are strings is important to cast values
+        age = parse_int(
+            age
+        )  # Since parameters are strings it's important to cast values
         if age < 0:
             return build_validation_result(
                 False,
@@ -117,7 +64,7 @@ def validate_data(age, investment_amount, intent_request):
             return build_validation_result(
                 False,
                 "age",
-                "The maximum age to contract this services is 64, "
+                "The maximum age to contract this service is 64, "
                 "can you provide an age between 0 and 64 please?",
             )
 
@@ -137,10 +84,17 @@ def validate_data(age, investment_amount, intent_request):
 
 ### Dialog Actions Helper Functions ###
 def get_slots(intent_request):
+    """
+    Fetch all the slots and their values from the current intent.
+    """
     return intent_request["currentIntent"]["slots"]
 
 
 def elicit_slot(session_attributes, intent_name, slots, slot_to_elicit, message):
+    """
+    Defines an elicit slot type response.
+    """
+
     return {
         "sessionAttributes": session_attributes,
         "dialogAction": {
@@ -154,6 +108,10 @@ def elicit_slot(session_attributes, intent_name, slots, slot_to_elicit, message)
 
 
 def delegate(session_attributes, slots):
+    """
+    Defines a delegate slot type response.
+    """
+
     return {
         "sessionAttributes": session_attributes,
         "dialogAction": {"type": "Delegate", "slots": slots},
@@ -161,6 +119,10 @@ def delegate(session_attributes, slots):
 
 
 def close(session_attributes, fulfillment_state, message):
+    """
+    Defines a close slot type response.
+    """
+
     response = {
         "sessionAttributes": session_attributes,
         "dialogAction": {
@@ -204,11 +166,8 @@ def recommend_portfolio(intent_request):
                 validation_result["message"],
             )
 
-        # Pass the user's name back through session attributes to be used
-        # in various prompts defined on the bot model.
+        # Fetch current session attibutes
         output_session_attributes = intent_request["sessionAttributes"]
-        if first_name is not None:
-            output_session_attributes["Name"] = first_name
 
         return delegate(output_session_attributes, get_slots(intent_request))
 
@@ -222,7 +181,7 @@ def recommend_portfolio(intent_request):
         {
             "contentType": "PlainText",
             "content": """{} thank you for your information;
-            based on the risk level you defined, my recommendation is to split your investment portfolio as follows: {}
+            based on the risk level you defined, my recommendation is to choose an investment portfolio with {}
             """.format(
                 first_name, initial_recommendation
             ),
