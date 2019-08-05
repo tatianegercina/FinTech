@@ -6,7 +6,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 **Files:**
 
-* [plotly_maps.ipynb](Activities/15-Ins_Mapbox_Demo/Solved/plotly_maps.ipynb)
+* [plotly_maps.ipynb](Activities/15-Ins_Mapbox_Demo/Unsolved/plotly_maps.ipynb)
 
 Open the starter file, and live code the following. Make sure to highlight the discussion points while coding.
 
