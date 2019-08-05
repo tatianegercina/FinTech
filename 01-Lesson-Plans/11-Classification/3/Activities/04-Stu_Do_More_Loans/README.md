@@ -1,0 +1,9 @@
+# More Loans
+
+In this activity, you will pratice using random and SMOTE oversampling in combination with logistic regression to predict whether or not someone is likely to default on their credit card loans in a given month given demographic information. 
+
+## Instructions
+
+Implement random and SMOTE oversampling for the credit card default dataset before estimating a logistic regression model and evaluating the results. 
+
+© 2019 Trilogy Education Services
