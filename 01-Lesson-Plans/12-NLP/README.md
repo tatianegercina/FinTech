@@ -2,7 +2,7 @@
 
 ### Overview
 
-This week we will cover...
+This week we will cover NLP.
 
 ### Lesson Plans
 
