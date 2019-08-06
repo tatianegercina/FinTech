@@ -10,13 +10,13 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 **Files:**
 
-* [mapping_adventures.ipynb](Activities/16-Stu_Mapping_Adventures/Unsolved/mapping_adventures.ipynb)
+* [mapping_adventures.ipynb](Activities/16-Stu_Mapping_Adventures/Unsolved/Core/mapping_adventures.ipynb)
 
 ### 17. Instructor Do: It's a Map Plot Activity Review (5 mins)
 
 **Files:**
 
-* [solution.js](Activities/16-Stu_mapping_adventures/Solved/solution.js)
+* [solution.js](Activities/16-Stu_mapping_adventures/Solved/Core/mapping_adventures.ipynb)
 
 Open the solution and explain the following:
 

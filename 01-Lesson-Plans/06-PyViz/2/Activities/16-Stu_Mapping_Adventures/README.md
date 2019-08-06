@@ -1,8 +1,10 @@
 # It's a Map Plot
 
-Your friends have decided to plan a trip to NYC for the weekend. It's Harold's birthday, and you're all looking forward to having a NYC adventure. In order to plan for the event, you started doing some research regarding points of interest in NYC. You've found one data set that lists a bunch of cool places to see.
+It's time to take a break from your day job and to plan an adventure!
 
-Use Plotly Express and MapBox to create a geographical plot that will visualize each area of interest within the city. If you finish early, complete the challenge section.
+Your friends have decided to plan a trip to NYC for Harold's birthday, and you're all looking forward to the time away from the office. In order to plan for the event, you started doing some research regarding points of interest in NYC. You've found one data set that lists a bunch of cool places to see.
+
+Use Plotly Express and **MapBox** to create a geographical plot that will visualize each area of interest within the city. If you finish early, complete the challenge section.
 
 ### Instructions
 
