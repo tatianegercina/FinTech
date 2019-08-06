@@ -18,6 +18,8 @@ Use Plotly Express and **MapBox** to create a geographical plot that will visual
 
 5. Plot places of interest by **borough**.
 
+6. Review the data and identify 3 different types of places from the plots that you'd like to visit. Make sure these places are within walking distance.
+
 ### Challenge
 
 1. Plot parks that are of interest.
