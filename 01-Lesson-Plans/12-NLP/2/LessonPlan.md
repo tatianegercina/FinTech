@@ -1,4 +1,4 @@
-## 13.2 Lesson Plan - How the FinTech Feels
+## 12.2 Lesson Plan - How the FinTech Feels
 
 ---
 
@@ -512,7 +512,7 @@ On this activity, students will use VADER to score the sentiment of news' title 
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_Crisis_Feelings/README.md)
+* [README.md](Activities/11-Stu_Crisis_Feelings/README.MD)
 
 **Files:**
 
