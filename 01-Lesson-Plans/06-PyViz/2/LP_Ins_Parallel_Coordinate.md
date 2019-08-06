@@ -17,9 +17,10 @@ Walk through the syntax required to create a parallel coordinate plot:
   ```python
   import plotly.express as px
   import pandas as pd
+  from pathlib import Path
 
   # Read in data
-  typology = pd.read_csv('../Resources/housing_market_typology.csv')[:30].sort_values('blockGroup')
+  typology = pd.read_csv(Path('../Resources/housing_market_typology.csv'))[:30].sort_values('blockGroup')
 
   # Create Parallel Coordinates plot
   px.parallel_coordinates(typology, color='blockGroup')
