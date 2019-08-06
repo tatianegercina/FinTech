@@ -19,7 +19,7 @@ Open the starter file provided, and live code how to create a **scatter** plot u
   import pandas as pd
 
   # Read in data
-  md_housing_sales = pd.read_csv('../Resources/maryland_sales_data.csv')
+  md_housing_sales = pd.read_csv(Path('../Resources/maryland_sales_data.csv'))
   md_housing_sales.head()
   ```
 
@@ -35,7 +35,11 @@ Open the starter file provided, and live code how to create a **scatter** plot u
 
   ```python
   # Create scatter plot comparing average sale price and cost of living index
-  px.scatter(md_housing_sales, x='Cost of Living Index', y='Average Sale Price', size='Number of Housing Units Sold', color='County')
+  px.scatter(md_housing_sales,
+            x='Cost of Living Index',
+            y='Average Sale Price',
+            size='Number of Housing Units Sold',
+            color='County')
   ```
 
     ![plotly_scatter.png](Images/plotly_scatter.png)
@@ -52,7 +56,11 @@ Open the starter file provided, and live code how to create a **scatter** plot u
 
   ```python
   # Create scatter plot comparing number of housing units sold with cost of living index
-  px.scatter(md_housing_sales, x='Cost of Living Index', y='Number of Housing Units Sold', size='Average Sale Price', color='County')
+  px.scatter(md_housing_sales,
+            x='Cost of Living Index',
+            y='Number of Housing Units Sold',
+            size='Average Sale Price',
+            color='County')
   ```
 
     ![plotly_scatter_2.png](Images/plotly_scatter_2.png)
