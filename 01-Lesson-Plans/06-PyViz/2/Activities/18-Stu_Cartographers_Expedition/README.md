@@ -10,7 +10,7 @@ Work in teams of 2-3 people to
 
 1. Identify 6-8 locations to visit
 
-2. Use Plotly Express/Mapbox to plot the routes (point A to point B) for the expedition.
+2. Use Plotly Express/Mapbox to plot the routes (point A to point B to point C) for the expedition.
 
 ### Instructions
 
@@ -24,6 +24,8 @@ Work in teams of 2-3 people to
 
 5. Plot all locations on one map.
 
-### Hint
+### Challenge
 
-Don't forget to plot your return to the airport.
+If there are places in NYC that you'd like to visit and you know there geospatial details (i.e. latitude, longitude, etc.), feel free to add them to the data file. Be careful not to corrupt the data file.
+
+If you do corrupt the file, re-download the data from Git and start again.
