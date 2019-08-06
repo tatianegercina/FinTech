@@ -137,7 +137,7 @@ Once the intent is fulfilled, the bot should response with an investment recomme
 
 Be creative while coding your solution, you can have all the code on the `recommend_portfolio()` function, or you can split the functionality across different functions, put your Python coding skills in action!
 
-Once you finish coding your lambda function, test it using the [sample test cases](/Test_Cases) provided for this homework.
+Once you finish coding your lambda function, test it using the [sample test cases](Test_Cases/) provided for this homework.
 
 After successfully testing your code, open the Amazon Lex Console and navigate to the `RecommendPortfolio` bot configuration, integrate your new lambda function by selecting it on the _Lambda initialization and validation_ and _Fulfillment_ sections. Build your bot, and you should have a conversation as follows.
 
