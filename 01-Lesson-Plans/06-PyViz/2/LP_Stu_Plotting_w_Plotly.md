@@ -26,15 +26,21 @@ Open the solution, and conduct a dry walk through.
 
   ```python
   # Read in data
-  foreclosures = pd.read_csv('../../Resources/alleghany_foreclosures.csv', infer_datetime_format= True,
-                            parse_dates=True, index_col='filing_date')
+  foreclosures = pd.read_csv(Path('../../Resources/alleghany_foreclosures.csv'),
+                            infer_datetime_format= True,
+                            parse_dates=True,
+                            index_col='filing_date')
 
   # Slice data and group
-  foreclosures_grp = foreclosures[['municipality','amount']].groupby([foreclosures.index.year,'municipality']).count().reset_index()
+  foreclosures_grp = foreclosures[['municipality','amount']].groupby([
+      foreclosures.index.year,'municipality']).count().reset_index()
   foreclosures_grp.head()
 
   # Create scatter plot
-  px.scatter(foreclosures_grp, x='municipality', y='amount', color='filing_date')
+  px.scatter(foreclosures_grp,
+            x='municipality',
+            y='amount',
+            color='filing_date')
   ```
 
     ![plotly_example_scatter.png](Activities/05-Stu_Plotting_w_Plotly/Images/plotly_example_scatter.png)
