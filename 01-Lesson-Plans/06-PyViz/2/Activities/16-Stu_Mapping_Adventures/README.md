@@ -1,0 +1,31 @@
+# It's a Map Plot
+
+Your friends have decided to plan a trip to NYC for the weekend. It's Harold's birthday, and you're all looking forward to having a NYC adventure. In order to plan for the event, you started doing some research regarding points of interest in NYC. You've found one data set that lists a bunch of cool places to see.
+
+Use Plotly Express and MapBox to create a geographical plot that will visualize each area of interest within the city. If you finish early, complete the challenge section.
+
+### Instructions
+
+1. Read in the **Mapbox API key** using the `os.getenv` function.
+
+2. Read in the places of interest data.
+
+3. Use the Plotly Express `scatter_mapbox` function to plot interest data, setting color to **Name**.
+
+4. Use `scatter_mapbox` to plot places of interest by **place type**.
+
+5. Plot places of interest by **borough**.
+
+### Challenge
+
+1. Plot parks that are of interest.
+
+2. Plot gardens that are of interest.
+
+3. Plot squares that are of interest.
+
+Plot data with count of boroughs as the size
+
+### Hint
+
+Creating too many Map plots in one notebook might create a memory issue. Consider creating a separate notebook for the challenge section. This will require you to read the CSV data in for both notebooks.
