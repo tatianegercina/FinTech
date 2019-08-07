@@ -26,4 +26,12 @@ Communicate to students that the visualizations they've created so far, and thei
 
   * **Answer** Reports provide a view into raw data. Reports help visualize underlying data and spot trends. Dashboards present data within a specific context/reporting agenda, and the data is often curated to report on specific KPIs.
 
+If time remains, ask students to summarize three things they've learned today.
+
+ * **Answer** **Parallel coordinates** and **categories** plots use vertical axes to visualize multivariate analysis and variable relationships.
+
+ * **Answer** **Map** plots can be used to visualize clusters of data points geographically.
+
+ * **Answer** **Parallel coordinates** and **categories** plots allow users to visualize correlations but also reorganize variables in order to get a better sense of multivariate relationships.
+
 Ask if there are any questions before moving forward.
