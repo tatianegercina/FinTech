@@ -6,7 +6,7 @@
 
 Welcome students back! Indicate that today will start day 2 of interactive visualizations using PyViz.
 
-* Begin the class explaining to students that **hvPlot** is not the only visualization package that can be used to create interactive visualizations. **Plotly Express** is a package similar to **hvPlot**, offering many of the same plots as **hvPlot** (i.e. bar, line, scatter, etc.) but more as well (i.e. **Parallel Coordinates** and **Parallel Categories plots**).
+Begin the class explaining to students that **hvPlot** is not the only visualization package that can be used to create interactive visualizations. **Plotly Express** is a package similar to **hvPlot**, offering many of the same plots as **hvPlot** (i.e. bar, line, scatter, etc.) but more as well (i.e. **Parallel Coordinates** and **Parallel Categories plots**).
 
 * **Plotly Express** is a favorite among the data science and web-based data visualization communities.
 
