@@ -12,8 +12,14 @@ Continue the discussion about Panel by highlighting the rise of Panel.
 
 * Panel, a PyViz dashboarding package, has altered the data visualization arena by providing a programmatic way to easily create dashboards.
 
-* Panel allows data scientists and analysts to create and manage dashboards in the same environment they are completing development, using one technology stack.
+* Panel's integration with PyViz has made it a highly valuable skill in analytics, as well as a staple in the Python data visualization ecosystem.
 
-  * PyViz removes the need to use another technology stack for dashboards/visualizations.
+* Panel allows data scientists and analysts to create and manage dashboards in the same environment they are completing development, using one technology stack. One developer can use the same technology to create both a data pipeline and dashboard visualizations for the data.
 
-Navigate to the Panel website, and walk through some of the example dashboards. use the below discussion points to guide to the walk through.
+  * PyViz removes the need to use another technology stack for dashboards/visualizations (i.e Tableau).
+
+Walk through some of these [example](https://gapminder.pyviz.demo.anaconda.com/app) dashboards. Use the below discussion points to guide the walk through.
+
+* PyViz comes with widgets and plugins that allow it to render plots and visualizations from other technologies, like Pandas, Matplotlib, and Plotly. This enables developers to build visualizations in the appropriate technologies and then display them all in one, centralized location with a Panel dashboard.
+
+  ![panel_wrapper.png](Images/panel_wrapper.png)
