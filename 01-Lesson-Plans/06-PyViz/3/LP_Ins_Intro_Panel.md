@@ -23,3 +23,21 @@ Walk through some of these [example](https://gapminder.pyviz.demo.anaconda.com/a
 * PyViz comes with widgets and plugins that allow it to render plots and visualizations from other technologies, like Pandas, Matplotlib, and Plotly. This enables developers to build visualizations in the appropriate technologies and then display them all in one, centralized location with a Panel dashboard.
 
   ![panel_wrapper.png](Images/panel_wrapper.png)
+
+* Interact with the plots on the website. Use the widget bar to pan, zoom, etc. Emphasize to students that all plotting interactions and widgets can still be used even when plots are rendered with Panel as a dashboard.
+
+  ![panel_interact.gif](Images/panel_interact.gif)
+
+* Explain that this is what makes Panel such a heavy hitter. Pre-existing plots can be embedded within Panel dashboard, and all functionality will be preserved.
+
+If time remains, show students the [NYC taxi trips](https://nyc-taxi.pyviz.demo.anaconda.com/dashboard) dashboard, a geospatial map reporting on taxi routes, pick up and drop off locations, and trips by the hour.
+
+* Interact with the visualization using the widget bar (i.e. pan, zoom, hover, etc). Ask students the following question:
+
+  * Jupyter Lab and Panel can both render interactive plots. In what ways do these technologies differ?
+
+    * **Answer** Jupyter Lab renders locally, whereas Panel can render plots over the internet.
+
+  * Ask students what the value is behind having a dashboard that opens over the internet rather than just locally.
+
+    * **Answer** More users can access and leverage the dashboard.
