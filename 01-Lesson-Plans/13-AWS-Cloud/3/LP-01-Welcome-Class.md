@@ -4,19 +4,19 @@
 
 ### Overview
 
-In today's class students will create conversational interfaces using Amazon Lex, they also will be introduced to Amazon Lambda as a tool to enhance the interaction between a conversational bot and the user. Students will apply these new skills to create a robo advisor by the end of the class.
+In Today's class, students will be introduced to conversational user interfaces (CUIs) also they will learn how CUIs are disrupting on finance and banking. Students will create a robo advisor by the end of the class using Amazon Lex, Amazon Lambda and Slack.
 
 ### Class Objectives
 
 By the end of the unit, students will be able to:
 
-* Describe the applications of conversational interfaces on FinTech.
+* Describe the applications of conversational interfaces on finance and banking.
 
 * Recognize how machine learning contributes to create conversational interfaces.
 
 * Create conversational interfaces using Amazon Lex.
 
-* Apply their Python skills to add new features to an Amazon Lex bot.
+* Apply their Python skills to add new features to an Amazon Lex bot using Amazon Lambda.
 
 * Deploy a robo advisor application on Slack.
 
@@ -40,14 +40,42 @@ By the end of the unit, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx)
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 mins)
 
+In this activity, students will be introduced to conversational user interfaces (CUIs); they will learn how CUIs are disrupting on financial services and what are the tools they will use to create a robo advisor.
+
 **Files:**
 
 * [Lesson 13.3 Slides](#)
 
-Welcome students back and explain that today we'll ...
+Welcome students back and explain that Today we will learn about conversational user interfaces, one of the coolest applications of natural language processing; explain students that they will create a robo advisor by the end of the day.
+
+Open the [lesson slides](#) and move to the _Conversational User Interfaces (CUIs) and Robo Advisors_ section, highlight the following:
+
+* On the early yeas of computing history, people used to communicate with computers using text interfaces and some non-human-friendly commands.
+
+* Thanks to AI, and specially to the advances on natural language processing (NLP), nowadays we can communicate with computer systems using human language through conversational user interfaces via voice or text.
+
+* Chatbots are the most common applications of CUIs, however, Amazon Alexa, Apple Siri or Google Assistant are also examples of CUIs.
+
+* Financial services providers are using CUIs by offering Robotic Advisors or Robo Advisors, as an additional communication channel for customers.
+
+Engage students by highlighting the benefits of this technology on finance and banking, slack out [this article from Deloitte](../Suplemental/deloitte-nl-fsi-chatbots-adopting-the-power-of-conversational-ux.pdf) were they can learn more about the impact of chatbots in financial services.
+
+Comment to students the examples of chatbots use cases, ask a couple of them if they are familiar with services like these and what were their experience.
+
+Present to the class the technologies we will use Today and highlight the following:
+
+* By the end of Today's class we will create a robo advisor using AWS.
+
+* Amazon Lex is a service for building conversational interfaces into any application using voice and text.
+
+* Amazon Lambda is a computing service that runs code in response to events. We will use this service to program the actions of the robo advisor.
+
+* The robo advisor will be deployed as a Slack application were users will interact with it.
+
+Answer any additional question before moving forward.
