@@ -35,7 +35,7 @@ There are multiple solutions to this problem, but we are particularly interested
 
   * **Ask During**: Solution sketch, implementation discussion.
 
-  * **Look For**
+  * **Look For:**
 
     * Candidate Discusses Possibilities
 

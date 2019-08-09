@@ -14,7 +14,7 @@ most_frequent(num_list) # Should return 2
 
   * **Ask During**: Solution sketch, implementation discussion.
 
-  * **Look For**
+  * **Look For:**
 
     * Candidate discusses shortcomings.
 
@@ -26,7 +26,7 @@ most_frequent(num_list) # Should return 2
 
   * **Ask During**: Solution sketch, implementation discussion.
 
-  * **Look For**
+  * **Look For:**
 
     * **Candidate Asks for Input**.
 

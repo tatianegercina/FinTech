@@ -20,7 +20,7 @@ The interviewer may use these prompts to prompt additional problem-solving from 
 
   * **Ask During**: Solution sketch.
 
-  * **Look For**
+  * **Look For:**
 
     * Candidate Explains Solution
 
