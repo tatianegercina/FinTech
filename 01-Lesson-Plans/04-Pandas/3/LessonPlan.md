@@ -15,7 +15,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Students should honestly evaluate their partners' performance as well as their own performance via the [grading rubric](02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xslx).
+* Students should honestly evaluate their partners' performance as well as their own performance via the [grading rubric](Activities/02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xlsx).
 
 * Students should systematically apply the problem-solving guidelines with each problem; they can deviate once they've internalized the format, but *not* before.
 
