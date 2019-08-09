@@ -34,7 +34,17 @@ By the end of class, students will be able to:
 
 * When discussing portfolios and its characteristics—risk, return, correlation—explain the concepts in terms of money. For example, if you start with $10,000, how would a poorly optimized portfolio compare with one that is not?
 
-* Have your TAs keep class on schedule with the [Time Tracker](TimeTracker.xlsx).
+---
+
+### Class Slides and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 4.1 Slides](https://docs.google.com/presentation/d/1E-g0y0Mmuz33LUPzM34e-3KwRIbrihEB0Pl9L7qidYI/edit?usp=sharing).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -42,7 +52,7 @@ By the end of class, students will be able to:
 
 Introduce today's lesson and get students excited for what they are about to learn. Today is when they will truly leverage Pandas to create insightful financial analyses.
 
-**File:** [Slideshow](https://docs.google.com/presentation/d/1E-g0y0Mmuz33LUPzM34e-3KwRIbrihEB0Pl9L7qidYI/edit#slide=id.g54ab1329fa_1_44)
+**File:** [Slideshow](https://docs.google.com/presentation/d/1E-g0y0Mmuz33LUPzM34e-3KwRIbrihEB0Pl9L7qidYI/edit?usp=sharing)
 
 Welcome students to the third day of Pandas! Open the slideshow and introduce the concepts that will be covered in today's class. Tell students the following:
 
@@ -98,7 +108,7 @@ Open [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
 
 * When comparing the line trend of ice cream sales to drowning incidents, it is difficult to detect a relationship between the two. Therefore, use a scatterplot and set the _x_ and _y_ axes to the corresponding DataFrame columns. With a scatterplot, the relationship becomes more apparent.![line-chart](Images/line-chart.png)
 ![scatterplot](Images/scatterplot.png)
-  
+
 * Use the `corr` function to calculate and output a matrix of correlation values for each column-to-column pair of a DataFrame. Correlation values range from -1 to +1.
 
   * -1 indicates a negative relationship: variables move inversely to one another.
@@ -337,7 +347,11 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 12. Instructor Do: Portfolio Returns (10 min)
+### 12. BREAK (40 min)
+
+---
+
+### 13. Instructor Do: Portfolio Returns (10 min)
 
 This section focuses on calculating returns for a group of stocks, or stock portfolios. Students should understand that portfolios of stocks are used by investors to manage and diversify risk. Defining a portfolio with varying capital allocations of stocks allows an investor to control and adjust their risk.
 
@@ -363,7 +377,7 @@ Open [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio
 
 Ask if there are any questions before moving on.
 
-### 13. Student Do: Portfolio Planner, Part 1 (20 min)
+### 14. Student Do: Portfolio Planner, Part 1 (20 min)
 
 In this activity, students will work in pairs to research a group of 10 stocks, find the least to most volatile stocks, drop the top five highly volatile stocks, set portfolio weights to the remaining stocks according to risk profile, and perform an analysis of a `$10,000` investment in the portfolio over time.
 
@@ -371,7 +385,7 @@ In this activity, students will work in pairs to research a group of 10 stocks, 
 
 **Instructions:** [README.md](Activities/08-Stu_Portfolio_Planner_Part_I/README.md)
 
-### 14. Instructor Do: Review Portfolio Planner, Part 1 (10 min)
+### 15. Instructor Do: Review Portfolio Planner, Part 1 (10 min)
 
 In this section, review the solution to the previous activity, Portfolio Planner, Part 1.
 
@@ -400,12 +414,6 @@ Open the solution, [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_
   ![plot-cumulative-profit-loss](Images/plot-cumulative-profit-loss.png)
 
 Ask if there are any questions before moving on.
-
----
-
-### 15. BREAK (40 min)
-
----
 
 ### 16. Students Do: Portfolio Planner Part 2 (20 mins)
 
@@ -477,21 +485,7 @@ Ask students questions such as the following:
 
 Remind students that mastery doesn't happen in a day. Practice makes perfect!
 
-### 19. Instructor Do: Structured Review (35 mins)
-
-**Note:** If you are teaching this lesson on a weeknight, please save this 35 minute review for the next Saturday class.
-
-Please use the entire time to review questions with the students before officially ending class.
-
-Suggested format:
-
-* Ask students for specific activities that they want revisit.
-
-* Revisit any activities that will help students complete the homework.
-
-* Allow students to start the homework with extra TA support.
-
-Take your time with this review! This is a great time to reinforce concepts and address any confusion.
+---
 
 ### End Class
 
