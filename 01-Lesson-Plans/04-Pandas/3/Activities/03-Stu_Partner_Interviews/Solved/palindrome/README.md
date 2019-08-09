@@ -1,11 +1,10 @@
 # Palindrome
 
-### Problem
-
 Write a function that determines if a string argument is a palindrome.
 
 Example:
-```
+
+```python
 palindrome("mom")
 # Output: True
 
@@ -13,13 +12,13 @@ palindrome("mother")
 # Output: False
 ```
 
-### Notes to the Interviewer
+## Notes to the Interviewer
 
 Remember—you are concerned more with the candidate's ability to _communicate_ their approach than with the correctness of their solution. For the purposes of this exercise, both provided solutions are equally acceptable.
 
 If your candidate finds a solution quickly, make them work toward one of the solutions that they did _not_ discover.
 
-### Prompts from the Interviewer
+## Prompts from the Interviewer
 
 The interviewer may use these prompts to prompt additional problem-solving from the interviewee. It is not mandatory to raise every prompt.
 
@@ -51,7 +50,7 @@ The interviewer may use these prompts to prompt additional problem-solving from 
   
     * What you want to see is that the candidate explains alternative approaches or justifies why no alternative exists.
 
-### Hints
+## Hints
 
 * Write down a palindrome. Can you point out which parts are equal?
 
@@ -61,9 +60,7 @@ The interviewer may use these prompts to prompt additional problem-solving from 
 
   * This is a fairly revealing hint. Only provide it if necessary.
 
-### Solutions
-
-#### Direct Solution
+## Solutions
 
 [Palindrome.ipynb](Solved/Palindrome.ipynb).
 

@@ -1,17 +1,15 @@
 # Deep Equals
 
-## Problem
-
 Suppose you have two lists with the same contents.
 
-```
-var first = [1, 2, 3];
-var second = [3, 2, 1];
+```python
+list first = [1, 2, 3];
+list second = [3, 2, 1];
 ```
 
 Write a function that tests if the contents of two lists are equal.
 
-### Notes to the Interviewer
+## Notes to the Interviewer
 
 If you compare the two lists using `==` then the result is false even though the contents of the lists are the same. This is because simple list equality also includes the order of elements:
 
@@ -25,7 +23,7 @@ print(first == second)
 
 If we want to compare the _contents_ of two lists, we have to write our own function to do so.
 
-### Prompts from the Interviewer
+## Prompts from the Interviewer
 
 * **Prompt**: Can you explain why `first == second` returns false?
 
@@ -69,17 +67,14 @@ If we want to compare the _contents_ of two lists, we have to write our own func
 
       * Strong candidates might point out that we can first sort each list and then use normal list comparison.
 
-### Wrapup
+## Wrap-Up
 
 Congratulate your candidate for a job well done! Remind them that practicing will make these questions easier over time.
 
-### Solution
+## Solution
 
 The solution is available in [Deep_Equals.ipynb](Solved/Deep_Equals.ipynb).
-
-
 
 ------
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
