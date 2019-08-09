@@ -12,7 +12,7 @@ Using the [starter file](Unsolved/reading_stock_data.ipynb), complete the follow
 
 3. Perform an initial data exploration by getting the top 10 rows of the DataFrame.
 
-4. Oh no! There are no columns names on the DataFrame. Fix this problem by recreating the DataFrame and setting the columns names to Date, Close, Volume, Open, High, Low.
+4. Oh no! There are no columns names on the DataFrame. Fix this problem by recreating the DataFrame and setting the columns names to "Date", "Close", "Volume", "Open", "High", "Low".
 
 5. When the columns names are fixed, get the first 10 rows from the DataFrame.
 
