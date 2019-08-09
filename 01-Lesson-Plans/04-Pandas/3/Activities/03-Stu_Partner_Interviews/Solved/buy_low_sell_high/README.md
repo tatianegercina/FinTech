@@ -21,6 +21,7 @@ The interviewer may use these prompts to invoke additional problem-solving for t
 * **Ask During**: Solution sketch, implementation discussion.
 
 * **Look For:**
+
   * Candidate Discusses Possibilities
 
   * As examples, you could throw an error, return no profit, or report the minimum loss (best approach).

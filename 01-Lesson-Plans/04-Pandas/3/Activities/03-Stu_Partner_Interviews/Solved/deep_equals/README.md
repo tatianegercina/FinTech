@@ -27,7 +27,7 @@ If we want to compare the _contents_ of two lists, we have to write our own func
 
 * **Prompt**: Can you explain why `first == second` returns false?
 
-  * **Look For**
+  * **Look For:**
 
     * Candidate Thinks Out Loud
 
@@ -47,7 +47,7 @@ If we want to compare the _contents_ of two lists, we have to write our own func
 
   * **Ask During**: Restate the problem, solution sketch.
 
-  * **Look For**
+  * **Look For:**
 
     * Candidate Explains Solution Behavior
 
@@ -59,7 +59,7 @@ If we want to compare the _contents_ of two lists, we have to write our own func
 
   * **Ask During**: Solution sketch.
 
-  * **Look For**:
+  * **Look For:**
 
     * Candidates Explain Steps
 
