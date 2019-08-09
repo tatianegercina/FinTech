@@ -33,17 +33,22 @@ The interviewer may use these prompts to prompt additional problem-solving from 
 
   * **Ask During**: Solution sketch, implementation discussion.
 
-  * **Look For**
+  * **Look For:**
 
     * Candidate can confirm yes or no based on their solution.
-* The best candidates will be able to tweak their solutions to allow removal of spaces for the test.
+
+    * The best candidates will be able to tweak their solutions to allow removal of spaces for the test.
   
 * **Prompt**: Is this the only solution?
 
   * **Ask During**: Solution sketch, implementation discussion.
 
-  * **Look For**
-* **Candidate Discusses Alternatives**. Strong candidates will identify multiple-solution approaches, but it's OK if they don't see more than one.
+  * **Look For:**
+
+    * Candidate discusses alternatives.
+
+    * Strong candidates will identify multiple-solution approaches, but it's OK if they don't see more than one.
+  
     * What you want to see is that the candidate explains alternative approaches or justifies why no alternative exists.
 
 ### Hints
@@ -60,13 +65,8 @@ The interviewer may use these prompts to prompt additional problem-solving from 
 
 #### Direct Solution
 
-[Palindrome.ipynb](Solutions/Palindrome.ipynb).
-
-
-
-
+[Palindrome.ipynb](Solved/Palindrome.ipynb).
 
 ------
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-

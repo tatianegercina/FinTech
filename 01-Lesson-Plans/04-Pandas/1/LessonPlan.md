@@ -42,7 +42,7 @@ By the end of class, students will be able to:
 
 Introduce today's lesson and get students excited for what they are about to learn. Today is when they will truly leverage Pandas to create insightful financial analyses.
 
-**File:** [Slideshow](placeholder)
+**File:** [Slideshow](https://docs.google.com/presentation/d/1E-g0y0Mmuz33LUPzM34e-3KwRIbrihEB0Pl9L7qidYI/edit#slide=id.g54ab1329fa_1_44)
 
 Welcome students to the third day of Pandas! Open the slideshow and introduce the concepts that will be covered in today's class. Tell students the following:
 
@@ -341,9 +341,9 @@ Ask if there are any questions before moving on.
 
 This section focuses on calculating returns for a group of stocks, or stock portfolios. Students should understand that portfolios of stocks are used by investors to manage and diversify risk. Defining a portfolio with varying capital allocations of stocks allows an investor to control and adjust their risk.
 
-**File:** [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.py)
+**File:** [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.ipynb)
 
-Open [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.py) to review the solution. Cover the following points as you walk through the solved file.
+Open [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.ipynb) to review the solution. Cover the following points as you walk through the solved file.
 
 * To calculate portfolio returns, each stock's closing prices are added as a column to the final portfolio DataFrame.
 

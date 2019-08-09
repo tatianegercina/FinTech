@@ -15,13 +15,13 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Students should honestly evaluate their partners' performance as well as their own performance via the [grading rubric]().
+* Students should honestly evaluate their partners' performance as well as their own performance via the [grading rubric](02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xslx).
 
 * Students should systematically apply the problem-solving guidelines with each problem; they can deviate once they've internalized the format, but *not* before.
 
 * Since the only difference between workshops is the selection of interview questions, Instructors are provided a single Time Tracker and abbreviated Lesson Plan.
 
-* Review the interview questions for the workshop ahead of time. These are available in the [Interview Questions](../3-Interview-Qs) repository. You will need one question for each 30 minute interview — partners will *not* work on the same interview problems successively.
+* Review the interview questions for the workshop ahead of time. These are available in the [Interview Questions](Activities/README.md) repository. You will need one question for each 30 minute interview — partners will *not* work on the same interview problems successively.
 
 * Have your TAs refer to the `Workshop Time Tracker` to help keep track of time; more important than the Time Tracker is that students have adequate time to work through interview problems.
 
