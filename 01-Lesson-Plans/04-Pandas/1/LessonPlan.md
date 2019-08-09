@@ -125,7 +125,7 @@ Open [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
 
   * Investigating the correlations of returns among stocks in a portfolio can help analysts properly diversify their portfolios and mitigate risk and volatility.
 
-  * Noncorrelated stocks in a portfolio tend to cancel out large swings in volatility; one stock may increase in price while another may decrease in price rather than all stocks increasing or all stocks decreasing.
+  * Non-correlated stocks in a portfolio tend to cancel out large swings in volatility; one stock may increase in price while another may decrease in price rather than all stocks increasing or all stocks decreasing.
 
 Ask if there are any questions before moving on.
 
@@ -133,7 +133,7 @@ Ask if there are any questions before moving on.
 
 ### 4. Student Do: Diversification (15 min)
 
-In this activity, students will apply the concept of correlation to diversify a portfolio, a practical financial use case. In order to create a diversified portfolio that tends to minimize long-term volatility and risk, stocks within the portfolio should be as noncorrelated as possible. Students need to find the stock with returns that are least correlated to the returns of stocks in an existing portfolio.
+In this activity, students will apply the concept of correlation to diversify a portfolio, a practical financial use case. In order to create a diversified portfolio that tends to minimize long-term volatility and risk, stocks within the portfolio should be as non-correlated as possible. Students need to find the stock with returns that are least correlated to the returns of stocks in an existing portfolio.
 
 **File:** [market_analysis.ipynb](Activities/02-Stu_Correlation/Unsolved/diversification.ipynb)
 
@@ -409,7 +409,7 @@ Ask if there are any questions before moving on.
 
 ### 16. Students Do: Portfolio Planner Part 2 (20 mins)
 
-In this activity, students will work in pairs to continue from where they left off in Part 1 of their portfolio evaluation. In this next part, students will evaluate correlations and Sharpe ratios of the 10 stocks, and then filter by only noncorrelated and positive Sharpe ratio stocks. They will also set equal-weighted portfolio allocations to the remaining stocks and perform an analysis of a $10,000 investment in the portfolio over time. Finally, they will compare the $10,000 investment in the portfolio to other $10,000 investments in lesser-optimized portfolios.
+In this activity, students will work in pairs to continue from where they left off in Part 1 of their portfolio evaluation. In this next part, students will evaluate correlations and Sharpe ratios of the 10 stocks, and then filter by only non-correlated and positive Sharpe ratio stocks. They will also set equal-weighted portfolio allocations to the remaining stocks and perform an analysis of a $10,000 investment in the portfolio over time. Finally, they will compare the $10,000 investment in the portfolio to other $10,000 investments in lesser-optimized portfolios.
 
 **File:** [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb)
 
@@ -423,7 +423,7 @@ In this section, review the solution to the previous activity, Portfolio Planner
 
 Open the solution, [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Solved/portfolio_planner_part_2.ipynb), and explain the following:
 
-* Filter the 10 stocks to just the noncorrelated stocks and stocks with positive Sharpe ratios. This is to maximize diversification of the portfolio—and, therefore, minimize volatility—and maximize the risk-to-returns ratio of the optimized portfolio.
+* Filter the 10 stocks to just the non-correlated stocks and stocks with positive Sharpe ratios. This is to maximize diversification of the portfolio—and, therefore, minimize volatility—and maximize the risk-to-returns ratio of the optimized portfolio.
 
 * Stock correlation describes the linear relationship between the returns of two stocks, and indicates whether returns of both stocks tend to move in tandem, inversely, or randomly (no correlation).
 
@@ -443,9 +443,9 @@ Open the solution, [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_
 
 * The overlay chart of a $10,000 investments in each corresponding portfolio over time describes the following:
 
-  * The noncorrelated and Sharpe ratio optimized portfolio performs the best of the four portfolios, consistently achieving higher returns with minimized volatility.
+  * The non-correlated and Sharpe ratio optimized portfolio performs the best of the four portfolios, consistently achieving higher returns with minimized volatility.
 
-    * The noncorrelated (diversified) portfolio performs the second worst of the four portfolios; it manages to minimize volatility, but at the expense of higher returns.
+    * The non-correlated (diversified) portfolio performs the second worst of the four portfolios; it manages to minimize volatility, but at the expense of higher returns.
 
   * The original, unoptimized portfolio performs the second best of the four portfolios; it achieves higher returns but at the expense of more volatility. Returns increased more quickly, but also fell more quickly—notice the dip in early 2019.
 
