@@ -1,6 +1,6 @@
 ### 2. Instructor Do - Blockchain Skill Check (5 mins)
 
-Welcome to the blockchain part of the course! Time to gage which students are familiar with the technology by asking a few questions.
+Welcome to the blockchain part of the course! Time to gauge which students are familiar with the technology by asking a few questions.
 
 Begin asking simple yes or no questions and ask the students to raise their hands for yes:
 
