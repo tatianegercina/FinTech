@@ -35,7 +35,7 @@ Most candidates should be able to solve the basic problem of translating a word 
 
   * **Ask During**: Solution sketch, implementation discussion.
 
-  * **Look For**
+  * **Look For:**
 
     * Candidate sketches solution.
 
@@ -51,26 +51,27 @@ Most candidates should be able to solve the basic problem of translating a word 
 
   * **Ask During**: Implementation discussion.
 
-  * **Look For**
-* Candidate brainstorms alternatives.
-    
-  * There are different ways to deal with this problem. One could simply throw out the capital letter and lowercase the word, retain the original capital letter, or capitalize the first letter of the new Pig Latin word, for example.
-    
-  * The best candidates will mention at least two alternatives and ask the interviewer for input.
-    
-  * For our purposes, the best solution is to capitalize the first letter of the new Pig Latin word and lowercase the rest of it.
-    
-    * If your candidate suggests this, let them know that this is the right choice.
-    
-    * If your candidate makes other suggestions but misses this one, simply let them know that their suggestions were good, but that this is the implementation you're looking for.
-    
+  * **Look For:**
+
+    * Candidate brainstorms alternatives.
+
+      * There are different ways to deal with this problem. One could simply throw out the capital letter and lowercase the word, retain the original capital letter, or capitalize the first letter of the new Pig Latin word, for example.
+
+      * The best candidates will mention at least two alternatives and ask the interviewer for input.
+
+      * For our purposes, the best solution is to capitalize the first letter of the new Pig Latin word and lowercase the rest of it.
+
+        * If your candidate suggests this, let them know that this is the right choice.
+
+        * If your candidate makes other suggestions but misses this one, simply let them know that their suggestions were good, but that this is the implementation you're looking for.
+
 * **Note**: You don't need your candidate to implement this, yet—the conceptual solution is enough for now. When your candidate gets the answer, or when you reveal it, explain this, and move on to the next prompt.
   
 * **Prompt**: How would you deal with punctuation? For example, does your function properly deal with "fish."?
 
   * **Ask During**: Implementation discussion.
 
-  * **Look For**
+  * **Look For:**
 
     * Candidate brainstorms solutions.
 
@@ -78,17 +79,10 @@ Most candidates should be able to solve the basic problem of translating a word 
 
   * **Note**: If your candidate identifies legitimate solutions for the past two prompts, they are free to try to implement them. These are relatively difficult implementations.
   
-    
-
 ## Solution
 
 The [solution](Solved/pig_latin.py) strips the given string of any punctuation and adds the first letter and 'ay' to the end of every word in the string.
 
-
-
-
-
-------
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-

@@ -37,16 +37,17 @@ This is a good question to pose to candidates who have already seen the [maximin
   * **Ask If**: Ask this question to candidates who are having trouble moving past the brute force solution.
 
   * **Look For:**
-* Candidate Explains Solution
-    
-  * You want the candidate to explain that they can keep track of the biggest element they've seen _so far_, and return this as the maximum in the list.
-    
-  * If your candidate correctly they could sort the list and return the last element, simply explain the answer you were looking for to save time.
-    
+
+    * Candidate Explains Solution
+
+      * You want the candidate to explain that they can keep track of the biggest element they've seen _so far_, and return this as the maximum in the list.
+
+      * If your candidate correctly they could sort the list and return the last element, simply explain the answer you were looking for to save time.
+
 * **Follow-Up**:
-    
+
   * Can we do the same thing with this problem?
-    
+
   * This is purposefully vague. The hint is that we can find the highest product of two numbers by keeping track of the highest product we've seen _so far_.
   
 * **Prompt**: If we're going to solve this by keeping track of the highest product of two numbers we've seen so far, what information do we need to keep track of?
@@ -70,9 +71,10 @@ This is a good question to pose to candidates who have already seen the [maximin
   * **Look For:**
 
     * Candidate Explains Shortcomings
+
     * Strong candidates will realize they need to account for cases where the product of two negative numbers produces the highest product of two.
-      
-  * This is the case that necessitates our keeping track of the lowest number we've seen so far.
+
+    * This is the case that necessitates our keeping track of the lowest number we've seen so far.
 
 ## Notes
 
@@ -84,9 +86,6 @@ This is a more complicated example to greedy algorithms than the [maximin](../ma
 
 [The brute force solution](Solved/brute_force.py) is to check every possible pair (except for pairs of the same numbers) and calculate and return the max product.
 
-
-
 ------
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-

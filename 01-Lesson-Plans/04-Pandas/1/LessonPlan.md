@@ -111,7 +111,7 @@ Open [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
 
 * The `heatmap` function from the `seaborn` library color codes the different variations in a correlation table. This is particularly useful when there are many variables in a correlation table.
 
-  ![correlation_seaborn.png](Images/correlation-seaborn.png)	
+  ![correlation_seaborn.png](Images/correlation-seaborn.png)
 
 * Remember that correlation does not imply causation!
 

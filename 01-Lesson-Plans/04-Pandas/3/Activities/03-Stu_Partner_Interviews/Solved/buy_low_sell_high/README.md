@@ -17,16 +17,18 @@ Remember: You are concerned more with the candidate's ability to *communicate* t
 The interviewer may use these prompts to invoke additional problem-solving for the interviewee. It is not mandatory to raise every prompt.
 
 * **Prompt**: What happens if the price _decreases_ all day?
+
 * **Ask During**: Solution sketch, implementation discussion.
-  
+
 * **Look For:**
   * Candidate Discusses Possibilities
+
   * As examples, you could throw an error, return no profit, or report the minimum loss (best approach).
-    
+
   * The best candidates will discuss multiple possibilities, explain one, and explain why they made that choice.
-    
+
   * Such a discussion and explanation is better than immediately stumbling on the best approach.
-    
+
   * Candidate Explains Best Approach
   
     * The best solution is to report the minimum loss.
@@ -35,24 +37,26 @@ The interviewer may use these prompts to invoke additional problem-solving for t
   
 * **Prompt**: What happens if I pass a list with just one element?
 
-  * **Ask During**: Solution sketch, implementation discussion.
+* **Ask During**: Solution sketch, implementation discussion.
 
-  * **Look For:**
+* **Look For:**
 
-    * Candidate Asks for Input
+  * Candidate Asks for Input
 
-      * The best candidates ask if they can assume a certain list length.
+    * The best candidates ask if they can assume a certain list length.
 
-    * Candidate Explains Best Approach
+  * Candidate Explains Best Approach
 
-      * Passing a list with a single element breaks solutions that don't check the incoming list's length.
+    * Passing a list with a single element breaks solutions that don't check the incoming list's length.
 
-      * The best candidates explain that they should print an error for lists of less than length 2.
+    * The best candidates explain that they should print an error for lists of less than length 2.
 
 * **Prompt**: Is this the fastest solution?
+
 * **Ask During**: Solution sketch, implementation discussion.
   
 * **Look For:**
+
   * Candidate Explains Shortcomings
   
     * Good candidates who can't find the fast solutions explain that their nested loop is slow and point it out as a point for optimization.
@@ -83,17 +87,14 @@ The interviewer may use these prompts to invoke additional problem-solving for t
 
 ## Solutions
 
-## Brute Force
+### Brute Force
 
 [The brute force solution](Solved/brute_force.py) is to check every possible pair, calculate the maximum difference between share prices, and calculate and return the maximum profit. Although correct and perfectly acceptable for candidates to start here, this solution is slow compared to other alternatives.
 
-## Linear Scan
+### Linear Scan
 
 [The linear scan solution](Solved/linear_scan.py) is to scan the list once and keep track of the minimum and maximum share prices, and then perform a single calculation at the end to calculate and return the max profit.
 
-
-
-------
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-

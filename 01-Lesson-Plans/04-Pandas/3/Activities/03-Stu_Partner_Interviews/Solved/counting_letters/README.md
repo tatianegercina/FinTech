@@ -1,7 +1,5 @@
 # Counting Letters
 
-## Problem
-
 Write a function that counts how many times each letter in a string occurs.
 
 For example:
@@ -12,6 +10,7 @@ count_letters(test)
 ```
 
 Output
+
 ```sh
 {'E': 1,
  'a': 1,
@@ -26,11 +25,11 @@ Output
  'x': 1}
 ```
 
-### Notes to the Interviewer
+## Notes to the Interviewer
 
 There are multiple solutions to this problem, but we are particularly interested in students identifying **dictionaries** as the appropriate data type for this problem.
 
-### Prompts from the Interviewer
+## Prompts from the Interviewer
 
 * **Prompt**: Is your function case-insensitive? That is, does it treat 'E' and 'e' the same way?
 
@@ -41,19 +40,13 @@ There are multiple solutions to this problem, but we are particularly interested
     * Candidate Discusses Possibilities
 
       * Candidates should identify whether their function appropriately deals with capitalization.
-* Most commonly, this entails calling `lower()` on the sentence.
-      
-      
 
-### Solution
+* Most commonly, this entails calling `lower()` on the sentence.
+
+## Solution
 
 One solution for this exercise is available in [Counting_Letters.ipynb](Solved/Counting_Letters.ipynb).
 
-
-
-
-
-------
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
