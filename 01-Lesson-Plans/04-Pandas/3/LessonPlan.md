@@ -186,4 +186,8 @@ Then, slack out the coding solutions for each interview question to the students
 
 ---
 
+### End Class
+
+---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
