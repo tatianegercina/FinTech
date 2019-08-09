@@ -144,11 +144,11 @@ In this activity, students will exchange interview feedback with their partners 
 
 ---
 
-### 8. BREAK (15 min)
+### 7. BREAK (15 min)
 
 ---
 
-### 9. Student Do: Repeat (60 min)
+### 8. Student Do: Repeat (60 min)
 
 In this activity, students break off into new pairs and repeat the procedures outlined in activities 4–6 for the remainder of the class.
 
@@ -164,7 +164,7 @@ In this activity, students break off into new pairs and repeat the procedures ou
 
 ---
 
-### 10. Review and Reflect (5 min)
+### 9. Review and Reflect (5 min)
 
 Instructors end the class with a review and discussion of students' technical interviews.
 
