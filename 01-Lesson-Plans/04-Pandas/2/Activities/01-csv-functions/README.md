@@ -1,12 +1,16 @@
 # CSV and Functions
 
-In a clean and simple interface, this is a fun task for you to exercise your mind by reading a csv and running functions in your csv loops.
+With a clean and simple interface, this is a fun task for you to exercise your mind by reading a CSV file and running functions in your CSV loops.
 
 
-## Instructions:
-You'll be creating a random number and searching the Phrase.csv file for a matching row id.
+## Instructions
+You'll be creating a random number and searching the Phrase.csv file for a matching row ID.
 
-Once a matching number is found, print out the current row's information and previous row's information using two different functions.
+Once a matching number is found, print out that row's information and the previous row's information using two different functions.
 
-If nothing was found, then print out a message stating it was not found and the row id.
+If nothing was found, print out a message stating it was not found and the row ID.
+
+------
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 

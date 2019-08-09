@@ -13,9 +13,9 @@ Harold has been asked to research the following 10 stocks:
 * Western Digital (WDC)
 * Westrock (WRK)
 
-Harold has been tasked with sorting stocks by risk/volatility; filtering out the top 5 stocks with the highest volatility; and assigning the remaining stocks portfolio weights of 0.5, 0.2, 0.15, 0.10, and 0.05 (from least risk to most risk). He also needs to show the returns over time of a hypothetical $10,000 investment in such a portfolio.
+Harold has been tasked with sorting stocks by risk/volatility; filtering out the top five stocks with the highest volatility and assigning the remaining stocks portfolio weights of 0.5, 0.2, 0.15, 0.10, and 0.05 (from least risk to most risk). He also needs to show the returns over time of a hypothetical $10,000 investment in such a portfolio.
 
-Use the Pandas library to help Harold determine the risk profile of the 10 stocks, filter out the top 5 highly volatile stocks, assign portfolio weights to each corresponding stock, and plot the returns of a $10,000 investment in such a portfolio over time.
+Use the Pandas library to help Harold determine the risk profile of the 10 stocks, filter out the top-five highly volatile stocks, assign portfolio weights to each corresponding stock, and plot the returns of a $10,000 investment in such a portfolio over time.
 
 ## Instructions
 
@@ -46,7 +46,7 @@ Using the starter file, complete the following steps.
 
 7. Use the `std` function and multiply by `sqrt(252)` to calculate annualized volatility. Use the `sort_values` function to quickly sort by volatility values.
 
-8. Drop the top 5 stocks with the highest volatility from the DataFrame of daily returns.
+8. Drop the top five stocks with the highest volatility from the DataFrame of daily returns.
 
 9. Set portfolio weights of 0.5, 0.2, 0.15, 0.10, and 0.05 to the remaining stocks (from least risk to most risk). 
 
@@ -62,4 +62,4 @@ To plot the returns of a $10,000 investment, multiply the initial investment by 
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
