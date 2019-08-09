@@ -1,4 +1,4 @@
-# FizzBuzz
+# Fizz Buzz
 
 Write a script that prints the numbers 1 to 100 in the console. But for multiples of three, print `Fizz` and for multiples of five, print `Buzz`. For numbers that are multiples of both three and five, print `FizzBuzz`.
 
