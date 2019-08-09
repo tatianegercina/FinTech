@@ -8,10 +8,20 @@ Review the [Notes to the Interviewer](03-Stu_Partner_Interviews/README.md) prior
 
 ## Index
 
-* [Palindrome](03-Stu_Partner_Interviews/Solved/palindrome)
+* [Buy Low Sell High](03-Stu_Partner_Interviews/Solved/buy_low_sell_high)
 
-* [Most Frequently Occurring Element](03-Stu_Partner_Interviews/Solved/most_frequent_element)
+* [Counting Letters](03-Stu_Partner_Interviews/Solved/counting_letters)
 
 * [Deep Equals](03-Stu_Partner_Interviews/Solved/deep_equals)
 
-* [Count Letters in a Sentence](03-Stu_Partner_Interviews/Solved/counting_letters)
+* [Fizz Buzz](03-Stu_Partner_Interviews/Solved/fizz_buzz)
+
+* [Highest Product of Two](03-Stu_Partner_Interviews/Solved/highest_product_of_two)
+
+* [Maximin](03-Stu_Partner_Interviews/Solved/maximin)
+
+* [Most Frequently Element](03-Stu_Partner_Interviews/Solved/most_frequent_element)
+
+* [Palindrome](03-Stu_Partner_Interviews/Solved/palindrome)
+
+* [Pig Latinize](03-Stu_Partner_Interviews/Solved/pig_latinize)
