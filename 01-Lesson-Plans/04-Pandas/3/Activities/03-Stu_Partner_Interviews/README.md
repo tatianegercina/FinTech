@@ -42,9 +42,7 @@ Because all candidates are different people, who think and express themselves di
 
   * Feel free to help candidates to an arbitrary extent. But, factor the amount of help they need into your evaluation of their performance.
   
-    
-
-------
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 

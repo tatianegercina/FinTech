@@ -50,11 +50,8 @@ This is an exemplary introduction to greedy algorithms—algorithms that keep tr
 
 ### Linear Scan
 
-[The linear scan solution](Solved/linear_scan.py) is to scan the list once and keep track of the minimum and maximum numbers.
-
-
+[The linear scan solution](Solved/maximin.py) is to scan the list once and keep track of the minimum and maximum numbers.
 
 ------
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
