@@ -18,11 +18,11 @@ The interviewer may use these prompts to prompt additional problem-solving from 
 
 * **Prompt**: Before you think about finding both the minimum _and_ the maximum, can you first explain how you'd find the maximum?
 
-  * **Ask During**: Solution Sketch
+  * **Ask During**: Solution sketch.
 
-  * **Look For**
+  * **Look For:**
 
-    * **Candidate Explains Solution**.
+    * Candidate Explains Solution
 
       * There are at least two common solutions to this problem.
 
@@ -34,9 +34,9 @@ The interviewer may use these prompts to prompt additional problem-solving from 
 
 * **Prompt**: Can you find the minimum and maximum at the same time?
 
-  * **Ask During**: Solution Sketch
+  * **Ask During**: Solution sketch.
 
-  * **Candidate Explains Solution**.
+  * Candidate Explains Solution
   
     * Yes, we can find the minimum and maximum at the same time. We keep track of the minimum so far _and_ the maximum so far in our `for` loop—there is no need to loop through twice.
 
@@ -44,10 +44,14 @@ The interviewer may use these prompts to prompt additional problem-solving from 
 
 ## Notes
 
-This is an exemplary introduction to **greedy algorithms**—algorithms that keep track of the _best answer so far_. More difficult examples of this approach include the [buy low, sell high](../buy_low_sell_high) and [highest product of two](../highest_product_of_two) questions.
+This is an exemplary introduction to greedy algorithms—algorithms that keep track of the _best answer so far_. More difficult examples of this approach include the [buy low, sell high](../buy_low_sell_high) and [highest product of two](../highest_product_of_two) questions.
 
 ## Solution
 
 ### Linear Scan
 
-[The linear scan solution](Solved/linear_scan.py) is to scan the list once and keep track of the minimum and maximum numbers.
+[The linear scan solution](Solved/maximin.py) is to scan the list once and keep track of the minimum and maximum numbers.
+
+------
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
