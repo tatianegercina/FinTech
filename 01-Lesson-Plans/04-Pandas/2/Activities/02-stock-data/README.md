@@ -12,9 +12,6 @@ In this exercise, you'll be learning to use the Pandas module. In the Data folde
  - Renaming columns.
  - Using describe for some quick and easy statistics on a DataFrame.
 
-### 
-
 ------
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-

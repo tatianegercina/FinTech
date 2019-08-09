@@ -14,7 +14,7 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * Overall, this should be a fun day for students and it will help them build confidence with their programming skills. Be sure to offer a lot of support and encouragement to beginners.
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Students (5 min)
 
@@ -34,7 +34,7 @@ Explain to students that they will be give all of the code drills at once and ca
 
 Encourage students to try and complete the simple code drills from memory as much as possible (Googling answers as needed).
 
-### 2. Students Do: Code Drills (Remaining class time)
+### 2. Students Do: Code Drills (175 min)
 
 Students will be given the remaining class time to work through the code drills at their own paces.
 
@@ -46,10 +46,10 @@ In addition to the code drills located in the repo, students can also work throu
 
 * [Additional Pandas Exercises](https://github.com/guipsamora/pandas_exercises)
 
-- - -
+---
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

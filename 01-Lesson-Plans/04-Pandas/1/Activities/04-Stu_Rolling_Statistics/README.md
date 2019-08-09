@@ -27,7 +27,7 @@ Using the [starter file](Unsolved/simple_moving_averages.ipynb), complete the fo
     * 20-day rolling standard deviation
 
     * 50-day rolling standard deviation
-    
+
     * 100-day rolling standard deviation
 
 6. Overlay the plot for daily closing prices with the standard deviations.
