@@ -180,6 +180,6 @@ Facilitate student reflection by asking the students questions like:
 
 Then, slack out the coding solutions for each interview question to the students for future reference.
 
-------
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
