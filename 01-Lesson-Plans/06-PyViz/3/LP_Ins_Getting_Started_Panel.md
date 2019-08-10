@@ -14,4 +14,4 @@ Open the solved file, and give students a high level run down of how Panel works
 
 * These parameter widgets provide a convenient and easy way for users to change the values populating the visual, which is extremely handy when completing impact analysis.
 
-  * It's important to note that this interactivity is only provided when visualizing data on a Panel dashboard.
+  * It's important to note that this parameter widget is an added benefit provided by Panel. Not all dashboarding technologies provide this convenient feature.
