@@ -1,4 +1,4 @@
-### 4. Instructor Do: Getting Started with Panel (5 mins)
+### 4. Instructor Do: Getting Started with Panel (10 mins)
 
 Students will receive a small demo on how to use Panel at a high level.
 
@@ -39,7 +39,7 @@ Walk students through how the `interact` function is used to create quick and ea
 
     ![interact_data_struct.gif](Images/interact_data_struct.gif)
 
-* Most Panel functions accept other functions as arguments. This is because **Panel** was designed from a functional programming point of view. This approaches heavily relies on developers passing functions to functions, which allows Panel to dynamically render content and plots based off of user input/interaction. The `interact` function is an example of a **Panel** function that accepts a function as a parameter.
+* Most Panel interact function accepts other functions as arguments. This is because the **interact** widget was designed from a functional programming point of view. This approaches heavily relies on developers passing functions to functions, which allows Panel to dynamically render content and plots based off of user input/interaction.
 
   * Imagine creating a dashboard reporting on housing sales by city across 10 years. Instead of having all 10 years of data for every city shown on a plot, you might want to limit the data to a specific year. A **Panel** select list could be used to select the year to report on.
 
@@ -63,9 +63,11 @@ Walk students through how the `interact` function is used to create quick and ea
 
     ![interact_data_struct_2.gif](Images/interact_data_struct_2.gif)
 
-Discuss how **Panel** can be used with plots.
+In addition to Python data structures, the `interact` function can be used with plots. Discuss how **Panel** can be used with plots.
 
-* In addition to Python data structures, the `interact` function can be used with plots. When used with plots, `interact` will still need to be passed a function that will render the plot. **Panel** will then create UI widgets to allow users to dynamically change parameters. An example would be plotting housing transactions data where the number of records plotted is parameterized. The `interact` function will create a widget that allows users to change configure the number of records being plotted.
+* When used with plots, `interact` will still need to be passed a function that will render the plot.
+
+* **Panel** will then create UI widgets to allow users to dynamically change parameters. An example would be plotting housing transactions data where the number of records plotted is parameterized. The `interact` function will create a widget that allows users to change configure the number of records being plotted.
 
     ```python
     # Define function to create plot
