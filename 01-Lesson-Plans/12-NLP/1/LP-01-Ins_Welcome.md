@@ -8,7 +8,7 @@ Welcome to the natural language processing unit! NLP is an exciting area of mach
 
 ### Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of the class, students will be able to:
 
 * Understand what NLP is, why we use it
 
@@ -40,7 +40,11 @@ By the end of the unit, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 mins)
 
-Welcome students back to class and explain that today is the start of the NLP unit. We'll talk about what NLP is and how it's used in finance in just a little bit, but first pose the following question: when was the last time that a student made a decision - could be financial, career, or purchase - based on what they read in a news story? What about the story made them want to make that decision? 
+Welcome students back to class and explain that today is the start of the NLP unit. We'll talk about what NLP is and how it's used in finance in just a little bit, but first pose the following question. 
+
+* When was the last time that a student made a decision - could be financial, career, or purchase - based on what they read in a news story? What about the story made them want to make that decision? 
+
+    **Sample Answer**: I bought 10 shares of TSLA because of a news article about sales of the Model 3. The tone of the story - optimistic - as well as the specific numbers they cited made me bullish about the company. 
 
 Take a few answers from volunteers (or call on a couple of students).
 
