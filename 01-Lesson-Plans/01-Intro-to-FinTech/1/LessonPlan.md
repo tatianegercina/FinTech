@@ -1,5 +1,3 @@
-placeholder
-
 ## 1.1 Lesson Plan: Welcome to FinTech!
 
 ---
@@ -84,13 +82,13 @@ Then move on to the first topic of the day: defining FinTech. Review the slides 
 
   **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through backend network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups:
 
-    * Infrastructure providers
+  * Infrastructure providers
 
-    * Large technology ecosystems
+  * Large technology ecosystems
 
-    * New entrants/start-ups
+  * New entrants/start-ups
 
-    * Incumbent financial institutions
+  * Incumbent financial institutions
 
 * Why has FinTech become so important?
 
@@ -104,7 +102,33 @@ Then move on to the first topic of the day: defining FinTech. Review the slides 
 
 ---
 
-### 3. Instructor Do: Course Overview (10 min)
+### 3. Student Do: FinTech and Me (5 min)
+
+In this activity, students get a chance to reflect by writing down what FinTech means to them.
+
+**File:** [README.md](Activities/01-Stu_FinTech_Group_Discussions/README.md)
+
+During this activity, students will share their responses with their classmates. Be sure that you and the TAs circulate the classroom to listen to students' responses. If you hear responses that are especially engaging or interesting, ask those students to share their response with the class during the review portion (Instructor Do: Review FinTech and Me).
+
+---
+
+### 4. Instructor Do: Review FinTech and Me (10 min)
+
+**Optional:** Consider using a tool such as [polleverywhere](https://www.polleverywhere.com/) to collect and share responses in real-time. [Groupmap](https://www.groupmap.com/) may also be a good option.
+
+Review each question. Ask for a few volunteers for each of the response questions. Encourage students who had interesting responses in the previous activity to share.
+
+Once all volunteers have presented, tie everything together by explaining the following:
+
+* FinTech is the application of technology to the finance industry, but what it means at the individual level can differ.
+
+* Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. And still others see FinTech as a path to new career supported by growing demand.
+
+* Despite students' differing reasons for wanting to learn more about FinTech, each of them has made the leap to take this course. Therefore, it's important to continue to get to know each other, as they'll be together "in the trenches" for the next 24 weeks. The relationships you build in this class can serve as valuable network connections after the completion of the course.
+
+---
+
+### 5. Instructor Do: Course Overview (10 min)
 
 In this section, provide an overview of the topics and technologies used in the course, as well the timeline for each topic or unit.
 
@@ -132,7 +156,7 @@ Answer any questions before moving on.
 
 ---
 
-### 4. Instructor Do: Tips (10 min)
+### 6. Instructor Do: Tips (10 min)
 
 Provide students with some encouragement and tips for overcoming the mental frustrations they will more than likely face throughout the course.
 
@@ -156,11 +180,45 @@ Open the next series of slides and emphasize the following points. (Slides 19–
 
 ---
 
-### 5. BREAK (15 min)
+### 7. BREAK (15 min)
 
 ---
 
-### 6. Instructor Do: The Rise of FinTech (10 min)
+### 8. Student Do: Rip Van Winkle Thought Exercise (10 min)
+
+In this activity, students will reflect on how the current state of the FinTech world may differ from that of someone from the year 1999.
+
+Quickly explain to the class the following:
+
+* *Rip Van Winkle* is a short story by the American author Washington Irving, first published in 1819. It follows a Dutch-American villager in colonial America named Rip Van Winkle, who falls asleep in the Catskill Mountains and wakes up 20 years later, completely missing the events of the American Revolution.
+
+* We'll apply the Rip Van Winkle story to FinTech by imagining if a financial analyst who fell asleep in the year 1999 and woke up today. What would he or she find most surprising about the current finance world?
+
+* Students should define areas of finance that have been deeply affected by technology, naming specific companies, products, or innovations that would be surprising to a financial analyst from 1999.
+
+* Students should form groups of 3 or 4. Each group will present their thoughts during the review portion of this activity.
+
+---
+
+### 9. Instructor Do: Review Rip Van Winkle Though Exercise (5 min)
+
+In this review portion of the previous activity, students will present their reflections based on the Rip Van Winkle thought experiment.
+
+* Ask for a few volunteers to share their group's thoughts on what they felt would be most surprising to a financial analyst from 1999 witnessing the current state of the finance world.
+
+* Take note of each group's findings and emphasize some of the overarching themes regarding the state of the current FinTech ecosystem. Some themes that are likely to come up include: 
+
+  * Automation
+
+  * Big Data
+
+  * Mobile Infrastructure
+
+  * Cloud Infrastructure
+
+---
+
+### 10. Instructor Do: The Rise of FinTech (10 min)
 
 In this section, engage students with a facilitated discussion about why FinTech has become so prevalent today.
 
@@ -180,37 +238,11 @@ As you review the slides, look for opportunities to prompt students to reflect. 
 
 ![fintech-rise](Images/fintech-rise.png)
 
-Answer any questions before moving on. 
+Answer any questions before moving on.
 
 ---
 
-### 7. Student Do: FinTech and Me (5 min)
-
-In this activity, students get a chance to reflect by writing down what FinTech means to them.
-
-**File:** [README.md](Activities/01-Stu_FinTech_Group_Discussions/README.md)
-
-During this activity, students will share their responses with their classmates. Be sure that you and the TAs circulate the classroom to listen to students' responses. If you hear responses that are especially engaging or interesting, ask those students to share their response with the class during the review portion (Instructor Do: Review FinTech and Me).
-
----
-
-### 8. Instructor Do: Review FinTech and Me (10 min)
-
-**Optional:** Consider using a tool such as [polleverywhere](https://www.polleverywhere.com/) to collect and share responses in real-time. [Groupmap](https://www.groupmap.com/) may also be a good option.
-
-Review each question. Ask for a few volunteers for each of the response questions. Encourage students who had interesting responses in the previous activity to share.
-
-Once all volunteers have presented, tie everything together by explaining the following:
-
-* FinTech is the application of technology to the finance industry, but what it means at the individual level can differ.
-
-* Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. And still others see FinTech as a path to new career supported by growing demand.
-
-* Despite students' differing reasons for wanting to learn more about FinTech, each of them has made the leap to take this course. Therefore, it's important to continue to get to know each other, as they'll be together "in the trenches" for the next 24 weeks. The relationships you build in this class can serve as valuable network connections after the completion of the course.
-
----
-
-### 9. Student Do: Alpacalypse Now (25 min)
+### 11. Student Do: Alpacalypse Now (25 min)
 
 In this activity, students will once again break off into groups of 2 to 4 to define and articulate the challenges faced by the Altruistic Alpacas charity. They will need to list at least 5 financial or technical challenges associated with each of the 5 core problem areas defined by the client.
 
@@ -234,7 +266,7 @@ In this activity, students will once again break off into groups of 2 to 4 to de
 
 ---
 
-### 10. Instructor Do: Review Alpacalypse Now (25 min)
+### 12. Instructor Do: Review Alpacalypse Now (25 min)
 
 **File:** [Review Alpacalypse Now Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_5_39)
 
@@ -256,7 +288,7 @@ Encourage students by reminding them that they will soon get to dig into these t
 
 ---
 
-### 11. Instructor Do: Introduce Homework (10 min)
+### 13. Instructor Do: Introduce Homework (10 min)
 
 In this activity, instructors will review the Unit 1 homework assignment with the class.
 
@@ -272,4 +304,4 @@ Answer any questions, and thank students for their time and a great first class!
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

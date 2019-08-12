@@ -234,6 +234,8 @@ Then, set up the prompt for the following thought exercise by asking the followi
 
 * How has technology accelerated the change in the finance world over the last 20+ years?
 
+---
+
 ### 8. Student Do: Rip Van Winkle Thought Exercise (10 min)
 
 In this activity, students will reflect on how the current state of the FinTech world may differ from that of someone from the year 1999.
