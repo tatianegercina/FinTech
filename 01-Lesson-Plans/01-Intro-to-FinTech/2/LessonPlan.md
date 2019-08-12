@@ -132,6 +132,8 @@ In this activity, students will perform their own file system operations via the
 
 **File:** [README.md](Activities/02-Stu_Terminal/README.md)
 
+---
+
 ### 4. Instructor Do: Review File System Operations (5 min)
 
 Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points. You can also use [slide 11](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_0) to show these definitions to students:
@@ -310,6 +312,8 @@ In this activity, students will work in groups to research and answer questions 
 
 **Note:** There should be an even number of groups for this activity.
 
+---
+
 ### 11. Instructor Do: Review FinTech Domains, Part 1 (10 min)
 
 **File:** [FinTech Domains and Trends Slides (Optional)](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360)
@@ -334,6 +338,8 @@ If students are confused or want more information, open the [slides in the slide
 ### 12. Student Do: FinTech Domains, Part 2 (10 min)
 
 In this activity, students will build on the research gathered in Part 1 to create hypothetical news headlines for each FinTech domain for events that could potentially occur within the next five years. Students will continue working in their groups to complete this activity.
+
+---
 
 **File:** [README.md](Activities/04-Stu_FinTech_Domains_Part_II/README.md)
 
