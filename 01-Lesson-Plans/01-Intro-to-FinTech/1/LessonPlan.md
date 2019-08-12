@@ -110,8 +110,6 @@ In this activity, students get a chance to reflect by writing down what FinTech 
 
 During this activity, students will share their responses with their classmates. Be sure that you and the TAs circulate the classroom to listen to students' responses. If you hear responses that are especially engaging or interesting, ask those students to share their response with the class during the review portion (Instructor Do: Review FinTech and Me).
 
----
-
 ### 4. Instructor Do: Review FinTech and Me (10 min)
 
 **Optional:** Consider using a tool such as [polleverywhere](https://www.polleverywhere.com/) to collect and share responses in real-time. [Groupmap](https://www.groupmap.com/) may also be a good option.
@@ -164,7 +162,7 @@ Provide students with some encouragement and tips for overcoming the mental frus
 
 Open the next series of slides and emphasize the following points. (Slides 19–25).
 
-* Embrace your inner toddler. Recognizing how little you know is a first step toward growth as a learner. Hard work, humility, and a relentless desire to improve are essential for succeeding in this program. 
+* Embrace your inner toddler. Recognizing how little you know is a first step toward growth as a learner. Hard work, humility, and a relentless desire to improve are essential for succeeding in this program.
 
 * At times, learning the skills taught in this course will be intimidating and frustrating. Remember that becoming a skilled professional is challenging and will take time. There is no way around that.
 
@@ -263,8 +261,6 @@ In this activity, students will once again break off into groups of 2 to 4 to de
   * If students seem to have focused on only the financial aspects of the problem, prod them to think about the technical challenges. Or maybe they have taken an analytical approach; if so, ask about a machine learning/AI approach. You can also ask if they considered a cryptocurrency or blockchain solution, and so on. 
 
   * If students seem to have a full list of financial and technical challenges, ask them about regulatory or security issues that they may face. Prompt them to also think about governance and cross-border issues that may come up with an international charity.
-
----
 
 ### 12. Instructor Do: Review Alpacalypse Now (25 min)
 
