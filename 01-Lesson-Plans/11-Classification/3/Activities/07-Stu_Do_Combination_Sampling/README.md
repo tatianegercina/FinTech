@@ -1,0 +1,11 @@
+# Combination Sampling
+
+In this activity, you will practice combination sampling with the imbalanced-learn library. 
+
+## Instructions
+
+* Implement the SMOTEENN technique with the credit card default data.
+
+* Estimate a logistic regression model and report the classification evaluation metrics this method. 
+
+© 2019 Trilogy Education Services
