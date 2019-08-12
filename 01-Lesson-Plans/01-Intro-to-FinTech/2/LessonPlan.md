@@ -304,7 +304,7 @@ Then, end the discussion with the following points:
 
 ---
 
-### 10. Student Do: FinTech Domains, Part 1 (25 min)
+### 10. Student Do: FinTech Domains, Part 1 (35 min)
 
 In this activity, students will work in groups to research and answer questions about various FinTech domains.
 
