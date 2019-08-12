@@ -220,9 +220,17 @@ Encourage students to practice using GitHub before the next class and attend off
 
 ### 7. Instructor Do: The Impact of FinTech (10 min)
 
-In this activity, you will transition students from the technical demos of the first half of the class (command line and git GUI) to the more interactive discussion-based second half. Now we'll cover the concepts and background information of the FinTech realm, focusing on the history of FinTech, the current state of its ecosystem, and its future possibilities.  
+In this activity, you will transition students from the technical demos of the first half of the class (command line and git GUI) to the more interactive discussion-based second half; now, we will quickly discuss what we've learned about FinTech so far and begin to focus not just on its history, but also the current state of its ecosystem and its future possibilities.
 
-First, explain the following to students:
+First, allow students to do a quick turn-and-teach with each other and pose the question "what have we learned about FinTech so far?" Then, ask for any volunteers who would be willing to share their thoughts. Student responses should be similar to the following:
+
+* FinTech is the combination of finance and technology, and represents the state of the modern finance industry that aims to bolster traditional financial methods and services with technology to increase efficiencies in finance.
+
+* FinTech has changed immensely over the past 20+ years, due to advancements in technology and shifts in consumer preferences.
+
+* Due to FinTech's rapid growth in recent years, demand for technological investment, and more importantly the technical expertise driving such investment, has exploded. Thus, there is a shortage of workers in the FinTech industry and makes it an attractive career opportunity in terms of growth and pay.
+
+Lastly, explain the following to the students:
 
 * The remainder of class will be a deep dive into FinTech's past, present, and future.
 
@@ -266,7 +274,7 @@ Open the slideshow and go through the slides while reviewing the key historical 
 
   * In addition, because cloud vendors like Amazon Web Services (AWS) manage hosting and deployment of servers in the cloud, the time-to-market for companies to reap the benefits of investing in technology has decreased, as they are able to push their applications and features quicker.
 
-  * The business landscape has become increasingly competitive, as smaller companies now have the capabilities to disrupt markets with their fully fledged, productionalized applications and services––which previously would have required large up-front costs, a barrier to entry of the industry.
+  * The business landscape has become increasingly competitive, as smaller companies now have the capabilities to disrupt markets with their fully fledged, productionalized applications and services––which previously would have required large up-front costs serving as a potential barrier to entry of the industry.
 
 Answer any questions before moving on.
 
