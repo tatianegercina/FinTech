@@ -1,6 +1,6 @@
 ### 3. Students Do: Simple Crypto Conversation (15 mins)
 
-In Today's class, students will create a bot that converts a given amount on US Dollars to its value in bitcoin `BTC`, ethereum `ETH` or ripple `XRP`. In this activity, students will start creating the bot by defining an intent, some sample utterances and three slots.
+In Today's class, students will create a bot that converts a given amount on US Dollars to its value in bitcoin `BTC`, ethereum `ETH` or ripple `XRP`. In this activity, students will start creating the bot by defining an intent, some sample utterances and two slots in order to convert from US Dollars to `BTC`.
 
 **Instructions:**
 
