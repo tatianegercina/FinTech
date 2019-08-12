@@ -182,9 +182,11 @@ Open the next series of slides and emphasize the following points. (Slides 19–
 
 ---
 
-### 8. Instructor Do: FinTech's Past, Present, and Future (5 min)
+### 8. Instructor Do: FinTech's Past (5 min)
 
-Then, set up the prompt for the following thought exercise by asking the following questions:
+In this activity, instructors begin to facilitate a discussion regarding the stark changes that have affected the finance realm over the last 20+ years.
+
+Set up the prompt for the following thought exercise by asking students the following questions:
 
 * What did the finance world look like in 1999?
 
