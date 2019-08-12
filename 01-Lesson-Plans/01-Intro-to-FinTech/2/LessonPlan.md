@@ -216,7 +216,7 @@ Encourage students to practice using GitHub before the next class and attend off
 
 ---
 
-### 7. Instructor Do: FinTech's Past, Present, and Future (5 min)
+### 7. Instructor Do: The Impact of FinTech (10 min)
 
 In this activity, you will transition students from the technical demos of the first half of the class (command line and git GUI) to the more interactive discussion-based second half. Now we'll cover the concepts and background information of the FinTech realm, focusing on the history of FinTech, the current state of its ecosystem, and its future possibilities.  
 
@@ -225,14 +225,6 @@ First, explain the following to students:
 * The remainder of class will be a deep dive into FinTech's past, present, and future.
 
 * Specifically, we will focus on the factors leading to the recent explosion of technological investment in the FinTech realm, the current breakdown of the FinTech ecosystem, and the potential outcomes of the FinTech realm given its current trajectory.
-
-Then, set up the prompt for the following thought exercise by asking the following questions:
-
-* What did the finance world look like in 1999?
-
-* What were some financial processes that are becoming obsolete or no longer exist today?
-
-* How has technology accelerated the change in the finance world over the last 20+ years?
 
 ---
 
