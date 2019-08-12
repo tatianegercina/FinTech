@@ -236,39 +236,7 @@ Then, set up the prompt for the following thought exercise by asking the followi
 
 ---
 
-### 8. Student Do: Rip Van Winkle Thought Exercise (10 min)
-
-In this activity, students will reflect on how the current state of the FinTech world may differ from that of someone from the year 1999.
-
-Quickly explain to the class the following:
-
-* *Rip Van Winkle* is a short story by the American author Washington Irving, first published in 1819. It follows a Dutch-American villager in colonial America named Rip Van Winkle, who falls asleep in the Catskill Mountains and wakes up 20 years later, completely missing the events of the American Revolution.
-
-* We'll apply the Rip Van Winkle story to FinTech by imagining if a financial analyst who fell asleep in the year 1999 and woke up today. What would he or she find most surprising about the current finance world?
-
-* Students should define areas of finance that have been deeply affected by technology, naming specific companies, products, or innovations that would be surprising to a financial analyst from 1999.
-
-* Students should form groups of 3 or 4. Each group will present their thoughts during the review portion of this activity.
-
----
-
-### 9. Instructor Do: Review Rip Van Winkle Though Exercise (5 min)
-
-In this review portion of the previous activity, students will present their reflections based on the Rip Van Winkle thought experiment.
-
-* Ask for a few volunteers to share their group's thoughts on what they felt would be most surprising to a financial analyst from 1999 witnessing the current state of the finance world.
-
-* Take note of each group's findings and emphasize some of the overarching themes regarding the state of the current FinTech ecosystem. Some themes that are likely to come up include: 
-
-  * Automation
-
-  * Big Data
-
-  * Mobile Infrastructure
-
-  * Cloud Infrastructure
-
-### 10. Instructor Do: Evolution of FinTech (10 min)
+### 8. Instructor Do: Evolution of FinTech (10 min)
 
 In this section, give students a brief summary of some of the key factors leading to the growth of the FinTech space. Understanding the historical background of FinTech as well as its current trajectory will give students knowledge that will help them both in employer interviews and their FinTech career.
 
@@ -310,7 +278,7 @@ Answer any questions before moving on.
 
 ---
 
-### 11. Instructor Do: FinTech Domains (10 min)
+### 9. Instructor Do: FinTech Domains (10 min)
 
 This section will be a brief discussion of the positive impact that technology has had on the finance world. Then, we'll transition to the topic of specific FinTech domains in which traditional financial activities have been replaced with more efficient means due to technological innovations.
 
@@ -342,7 +310,7 @@ Then, end the discussion with the following points:
 
 ---
 
-### 12. Student Do: FinTech Domains, Part 1 (25 min)
+### 10. Student Do: FinTech Domains, Part 1 (25 min)
 
 In this activity, students will work in groups to research and answer questions about various FinTech domains.
 
@@ -350,7 +318,7 @@ In this activity, students will work in groups to research and answer questions 
 
 **Note:** There should be an even number of groups for this activity.
 
-### 13. Instructor Do: Review FinTech Domains, Part 1 (10 min)
+### 11. Instructor Do: Review FinTech Domains, Part 1 (10 min)
 
 **File:** [FinTech Domains and Trends Slides (Optional)](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360)
 
@@ -371,13 +339,13 @@ If students are confused or want more information, open the [slides in the slide
 
 ---
 
-### 14. Student Do: FinTech Domains, Part 2 (10 min)
+### 12. Student Do: FinTech Domains, Part 2 (10 min)
 
 In this activity, students will build on the research gathered in Part 1 to create hypothetical news headlines for each FinTech domain for events that could potentially occur within the next five years. Students will continue working in their groups to complete this activity.
 
 **File:** [README.md](Activities/04-Stu_FinTech_Domains_Part_II/README.md)
 
-### 15. Instructor Do: Review FinTech Domains, Part 2 (15 min)
+### 13. Instructor Do: Review FinTech Domains, Part 2 (15 min)
 
 To review the previous activity, facilitate a class discussion based on each group's findings and thoughts.
 
@@ -401,7 +369,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 16. Instructor Do: Review and Reflect (5 min)
+### 14. Instructor Do: Review and Reflect (5 min)
 
 Use the last few minutes of class to allow the students to digest and decompress from this lesson.
 
@@ -427,4 +395,4 @@ Ask if students have any remaining questions before ending the class. If needed,
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
