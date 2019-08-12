@@ -192,8 +192,6 @@ Set up the prompt for the following thought exercise by asking students the foll
 
 * What were some financial processes that are becoming obsolete or no longer exist today?
 
-* How has technology accelerated the change in the finance world over the last 20+ years?
-
 ---
 
 ### 9. Student Do: Rip Van Winkle Thought Exercise (10 min)
@@ -218,7 +216,7 @@ In this review portion of the previous activity, students will present their ref
 
 * Ask for a few volunteers to share their group's thoughts on what they felt would be most surprising to a financial analyst from 1999 witnessing the current state of the finance world.
 
-* Take note of each group's findings and emphasize some of the overarching themes regarding the state of the current FinTech ecosystem. Some themes that are likely to come up include: 
+* Take note of each group's findings and emphasize some of the overarching themes regarding the state of the current FinTech ecosystem. Some themes that are likely to come up include:
 
   * Automation
 
