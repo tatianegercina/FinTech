@@ -238,7 +238,7 @@ Open the slideshow and use the slides to help guide your discussion, focusing on
 
 As you review the slides, look for opportunities to prompt students to reflect. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer. For example, ask students to share examples of innovative FinTech companies and how they are disrupting the financial services industry.
 
-* Recent technological advancements in (big) data and mobile network infrastructure has led to a consumer desire for companies to not only provide more efficent data-driven services, but also quality engagement through scalable mobile platforms.
+* Recent technological advancements in (big) data and mobile network infrastructure has led to a consumer desire for companies to not only provide more efficient data-driven services, but also quality engagement through scalable mobile platforms.
 
 * To keep up with consumer demand, large financial firms that have been slower to adopt newer technologies have been forced to make larger investments in technology.
 
@@ -266,13 +266,15 @@ In this activity, students will once again break off into groups of 2 to 4 to de
 
 * The key to executing this exercise in the classroom is to ensure that students thinking outside their sphere of knowledge as well as thinking deeply about each problem.
 
-* Set a time for 25 minutes and allow students to dicuss their options. Remind them that they should be prepared to discuss these issues with the class. 
+* Set a time for 25 minutes and allow students to discuss their options. Remind them that they should be prepared to discuss these issues with the class. 
 
 * As students work, you and your TAs should walk around the classroom and listen to student discussions. When appropriate, nudge them to think more critically. Many students may rely on their personal backgrounds, but this is a good time to think outside the box. For instance:
 
-  * If students seem to have focused on only the financial aspects of the problem, prod them to think about the technical challenges. Or maybe they have taken an analytical approach; if so, ask about a machine learning/AI approach. You can also ask if they considered a cryptocurrency or blockchain solution, and so on. 
+  * If students seem to have focused on only the financial aspects of the problem, prod them to think about the technical challenges. Or maybe they have taken an analytical approach; if so, ask about a machine learning/AI approach. You can also ask if they considered a cryptocurrency or blockchain solution, and so on.
 
   * If students seem to have a full list of financial and technical challenges, ask them about regulatory or security issues that they may face. Prompt them to also think about governance and cross-border issues that may come up with an international charity.
+
+---
 
 ### 13. Instructor Do: Review Alpacalypse Now (15 min)
 
@@ -288,7 +290,7 @@ Tell students that the following:
 
 * The slides provide example solutions to each core problem identified by the client (Altruistic Alpacas). While some solutions are more concrete than others, try not to get bogged down with the details. The slides are meant to provide food for thought.
 
-When appropriate, ask students to share examples. You should also share any relevant stories from your own experience. 
+When appropriate, ask students to share examples. You should also share any relevant stories from your own experience.
 
 Wrap up the activity review by reminding students that while these solutions may not have completely addressed all of the challenges identified, they show the promise of FinTech solutions for complex problems like these.
 
