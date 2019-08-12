@@ -252,7 +252,7 @@ Answer any questions before moving on.
 
 ---
 
-### 12. Student Do: Alpacalypse Now (25 min)
+### 12. Student Do: Alpacalypse Now (15 min)
 
 In this activity, students will once again break off into groups of 2 to 4 to define and articulate the challenges faced by the Altruistic Alpacas charity. They will need to list at least 5 financial or technical challenges associated with each of the 5 core problem areas defined by the client.
 
@@ -274,7 +274,7 @@ In this activity, students will once again break off into groups of 2 to 4 to de
 
   * If students seem to have a full list of financial and technical challenges, ask them about regulatory or security issues that they may face. Prompt them to also think about governance and cross-border issues that may come up with an international charity.
 
-### 13. Instructor Do: Review Alpacalypse Now (25 min)
+### 13. Instructor Do: Review Alpacalypse Now (15 min)
 
 **File:** [Review Alpacalypse Now Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_5_39)
 
