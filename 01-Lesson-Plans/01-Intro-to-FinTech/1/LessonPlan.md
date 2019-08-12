@@ -172,7 +172,7 @@ Open the next series of slides and emphasize the following points. (Slides 19–
 
 * Lastly, learning is supposed to be frustrating! It's a process, so stick with it. Things only get easier when we choose to embrace the difficulty and put in the hours to succeed. 
 
-* Most importantly, celebrate your successes! 
+* Most importantly, celebrate your successes!
 
   ![fintech-tips](Images/fintech-tips.png)
 
@@ -182,7 +182,19 @@ Open the next series of slides and emphasize the following points. (Slides 19–
 
 ---
 
-### 8. Student Do: Rip Van Winkle Thought Exercise (10 min)
+### 8. Instructor Do: FinTech's Past, Present, and Future (5 min)
+
+Then, set up the prompt for the following thought exercise by asking the following questions:
+
+* What did the finance world look like in 1999?
+
+* What were some financial processes that are becoming obsolete or no longer exist today?
+
+* How has technology accelerated the change in the finance world over the last 20+ years?
+
+---
+
+### 9. Student Do: Rip Van Winkle Thought Exercise (10 min)
 
 In this activity, students will reflect on how the current state of the FinTech world may differ from that of someone from the year 1999.
 
@@ -198,7 +210,7 @@ Quickly explain to the class the following:
 
 ---
 
-### 9. Instructor Do: Review Rip Van Winkle Though Exercise (5 min)
+### 10. Instructor Do: Review Rip Van Winkle Though Exercise (5 min)
 
 In this review portion of the previous activity, students will present their reflections based on the Rip Van Winkle thought experiment.
 
@@ -216,7 +228,7 @@ In this review portion of the previous activity, students will present their ref
 
 ---
 
-### 10. Instructor Do: The Rise of FinTech (10 min)
+### 11. Instructor Do: The Rise of FinTech (10 min)
 
 In this section, engage students with a facilitated discussion about why FinTech has become so prevalent today.
 
@@ -240,7 +252,7 @@ Answer any questions before moving on.
 
 ---
 
-### 11. Student Do: Alpacalypse Now (25 min)
+### 12. Student Do: Alpacalypse Now (25 min)
 
 In this activity, students will once again break off into groups of 2 to 4 to define and articulate the challenges faced by the Altruistic Alpacas charity. They will need to list at least 5 financial or technical challenges associated with each of the 5 core problem areas defined by the client.
 
@@ -262,7 +274,7 @@ In this activity, students will once again break off into groups of 2 to 4 to de
 
   * If students seem to have a full list of financial and technical challenges, ask them about regulatory or security issues that they may face. Prompt them to also think about governance and cross-border issues that may come up with an international charity.
 
-### 12. Instructor Do: Review Alpacalypse Now (25 min)
+### 13. Instructor Do: Review Alpacalypse Now (25 min)
 
 **File:** [Review Alpacalypse Now Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_5_39)
 
@@ -270,7 +282,7 @@ When time is up, ask a few groups to share some of the challenges they identifie
 
 Once you have a list of challenges, use the slides to break down some of the potential solutions to these problems. (Slides 43–61)
 
-Tell students that the following: 
+Tell students that the following:
 
 * The slides do not represent a comprehensive list of solutions, but they should provide some ideas about how FinTech can be used to address various challenges.
 
@@ -284,7 +296,7 @@ Encourage students by reminding them that they will soon get to dig into these t
 
 ---
 
-### 13. Instructor Do: Introduce Homework (10 min)
+### 14. Instructor Do: Introduce Homework (10 min)
 
 In this activity, instructors will review the Unit 1 homework assignment with the class.
 
