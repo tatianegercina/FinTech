@@ -1,4 +1,4 @@
-### 6. Student Do: Dashboard Components (15 mins)
+### 6. Student Do: No Pane, No Gain (15 mins)
 
 In this activity, students complete a MSMD activity where they create a Plotly plot and convert it to a Panel **pane**.
 
@@ -8,13 +8,13 @@ In this activity, students complete a MSMD activity where they create a Plotly p
 
 **Files:**
 
-* [dashboard_components.ipynb](Activities/06-Stu_Dashboard_Components/Unsolved/dashboard_components.ipynb)
+* [no_pane_no_gain.ipynb](Activities/06-Stu_Dashboard_Components/Unsolved/Core/no_pane_no_gain.ipynb)
 
-### 7. Instructor Do: Dashboard Components Activity Review (5 mins)
+### 7. Instructor Do: No Pane, No Gain Activity Review (5 mins)
 
 **Files:**
 
-* [dashboard_components.ipynb](Activities/06-Stu_Dashboard_Components/Solved/dashboard_components.ipynb)
+* [no_pane_no_gain.ipynb](Activities/06-Stu_Dashboard_Components/Unsolved/Core/no_pane_no_gain.ipynb)
 
 Open the solution and explain the following:
 

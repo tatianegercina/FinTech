@@ -1,12 +1,12 @@
-# Dashboard Components
+# No Pane, No Gain
 
-It's time to get some experience working with PyViz objects in Panel. Use the knowledge and skills learned from the instructor demo to create a Plotly plot and convert it to a Panel **pane** object.
+It's time to get some experience working with PyViz objects in Panel. Panes are the fundamental building block of any Panel Dashboard, and without Panes, there can be no dashboard. Use the knowledge and skills learned from the instructor demo to convert a Plotly plot to a Panel **pane** object.
 
-If time remains, complete the challenge activity by converting an hvPlot to a Panel **pane** figure.
+If time remains, complete the challenge activity by converting an hvPlot to a Panel object as well.
 
 ## Instructions
 
-1. Open the starter file, and use the provided data to create a Plotly plot.
+1. Open the starter file, and use the provided data to create a Plotly **parallel categories** plot showing the number of property sales categorically separated by metropolitan, property type, .
 
 2. Wrap the code to create the Plotly plot into a function.
 
