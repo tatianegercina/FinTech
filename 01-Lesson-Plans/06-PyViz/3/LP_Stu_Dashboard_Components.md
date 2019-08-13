@@ -1,6 +1,6 @@
 ### 6. Student Do: No Pane, No Gain (15 mins)
 
-In this activity, students complete a MSMD activity where they create a Plotly plot and convert it to a Panel **pane**.
+In this activity, students complete a MSMD activity where they create a Plotly plot and convert it to a Panel **pane**. The goal of this activity is to reinforce to students the importance of Panel **panes** and their role in the dashboard creation process.
 
 **Instructions:**
 
