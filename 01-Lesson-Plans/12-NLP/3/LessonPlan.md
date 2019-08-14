@@ -1,48 +1,76 @@
-## 12.3 Lesson Plan - Name Entity Recognition
+## 12.3 Lesson Plan - Text Extraction
+
+---
 
 ### Overview
 
-Today's class will introduce students to ...
+This lesson introduces the concepts of **p**art-**o**f-**s**peech (POS) tagging and **n**amed **e**ntity **r**ecognition (NER). Students will practice both techniques using [spaCy](https://spacy.io/), a model-based tool for natural language processing in Python.
 
 ### Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of the class, students will be able to:
 
-* Develop a sentiment analysis dashboard combining former knowledge on data visualization and the brand new skills to analyze sentiment.
+* Understand spaCy capabilities and where to find documentation.
+
+* Be able to use POS tagged text to extract specific words.
+
+* Use dependency parsed text to extract descriptors.
+
+* Extract specific types of entities from text.
+
+* Correlate text features to real-world series like stock prices.
+
+* Create a dashboard from NLP sentiment features.
 
 ### Instructor Notes
 
-* This class includes a mini project activity at the end of the day where students are asked to use their previous learned skills, this could be challenging for some of them, so encourage students to work in teams to solve this activity.
+* It may not be immediately obvious to students why POS tagging and named entity extraction are important techniques in natural language processing. While their outputs will not always be directly used for analysis, these processes are critical for sifting through text to its most important or pertinent aspects.
+
+* Be sure to emphasize the use of correct preprocessing, which is different for every use case - in this class, hardly any preprocessing will be needed.
+
+* The activities today may be challenging for students as they introduce unfamiliar concepts and are very open-ended. Be sure to provider support along with your TA's, and spend some time in review to ask why students made certain choices in their projects.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+
+### Slideshow and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 12.3 Slides](#).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 mins)
 
-**Files:**
-
-* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
-
-Walk through the solution and highlight the following:
-
-* Something really important
+Welcome students back to class. Today's class will introduce a few new concepts, but will also help put everything together that we've learned in this unit. We'll work with spaCy, another useful tool for general-purpose NLP, and go through a few activities that make use of this tool and others from this unit. The activities today should be rewarding and fun, and students are encouraged to think about out of the box approaches to meet the requirements. Pause for questions about either the homework or previous lessons, then open the slides and continue to the introduction on spaCy.
 
 ---
 
-### 2. Instructor Do: Intro to Spacy (10 mins)
+### 2. Instructor Do: Intro to spaCy (5 mins)
 
-**Files:**
+**Files**
 
-* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
+* [Lesson 12.3 Slides](#)
 
-Walk through the solution and highlight the following:
+Comment students that to implement POS tagging and named entity recognition (more on these later), we will be using spaCy.
 
-* Something really important
+* spaCy is different from NLTK in that it is mainly statistical-based instead of rule-based, meaning that spaCy's core functions depend on language models learned from tagged text instead of programmed rules. This makes spaCy more flexible and in many cases more accurate than some of the NLTK tools.
+
+* We will be using spaCy for part of speech tagging, named entity recognition, and dependency parsing. These tasks are more suitable for model-based solutions because they are complex and depend highly on context.
+
+* In addition, spaCy also provides tools for tasks like tokenization and lemmatization, which we've already learned with NLTK, and creating word vectors, which is beyond the scope of this unit but is a foundation for deep learning for NLP.
+
+* In comparison to NLTK, spaCy's language models trades off accuracy for speed, so if the corpus is large then students may prefer a simpler, rule-based solution.
+
+Ask students to check out spaCy's documentation at https://spacy.io/usage
 
 ---
 
-### 3. Instructor Demo: POS Tagging and Dependency Parsing (0:10 mins)
+### 3. Instructor Do: POS Tagging and Dependency Parsing (10 mins)
 
 This activity introduces students to two important concepts that add grammatical features to text. Part-of-speech tagging is intuitive - each word in a sentence is designated a grammatical part of speech, such as noun, verb, or adjective. Dependency parsing follows this step. Adjectives describe nouns, adverbs describe verbs, nouns can be the subject or object of verbs, and so forth. Each sentence is made of not just the words that it contains but also the relationships that are implicit between them, and a dependency parser is an NLP tool that tries to make these relationships explicit.
 
@@ -136,7 +164,7 @@ def describe_america(text):
 
 ---
 
-### 6. Instructor Demo: Named Entity Recognition (0:10 mins)
+### 6. Instructor Do: Named Entity Recognition (10 mins)
 
 This activity introduces students to named entity recognition (NER), a process that extracts specific types of nouns ("named entities") from text. Named entities are often proper nouns, but NER tools often can also extract things like currency, dates, and times. Like POS tagging and dependency parsing, NER gives us a way of being more precise with our text analysis, only extracting the words that meet a specific grammatical or semantic criteria.
 
@@ -210,7 +238,11 @@ Ask students to talk about their own strategies for selecting entity types and w
 
 ---
 
-### 9. Instructor Do: Text as Feature (15 mins)
+### 9. BREAK (40 mins)
+
+---
+
+### 10. Instructor Do: Text as Feature (10 mins)
 
 In this activity we'll ask students to remind themselves of the tools and techniques they've learned in this unit and talk about how we can use them to create numerical features (structured data) from text (unstructured data).
 
@@ -226,7 +258,7 @@ Let the class know that the remainder of the class will be spent on practicing w
 
 ---
 
-### 10. Students Do: Correlating Returns (15 mins)
+### 11. Students Do: Correlating Returns (15 mins)
 
 In this activity students will create a sentiment index from newsapi headlines and correlated it to S&P 500 daily returns, looking for text topic that generates the highest correlation.
 
@@ -240,7 +272,7 @@ In this activity students will create a sentiment index from newsapi headlines a
 
 ---
 
-### 11. Instructor Do: Review Correlating Returns (10 mins)
+### 12. Instructor Do: Review Correlating Returns (10 mins)
 
 **Files:**
 
@@ -301,11 +333,7 @@ Ask students whether they found topic sentiments that are more closely correlate
 
 ---
 
-### 12. BREAK (40 mins)
-
----
-
-### 13. Student Do: Crisis Analysis Dashboard (45 mins)
+### 13. Student Do: Crisis Analysis Dashboard (40 mins)
 
 In this mini-project activity, students will use their new sentiment analysis skills in combination to some of the skills they already master such as: Pandas, Pyviz, Plotly Expres and PyViz Panel to create a data visualization dashboard.
 
@@ -327,7 +355,7 @@ Present the solution demo to students before starting the activity and join TAs 
 
 ---
 
-### 14. Instructor Do: Review Crisis Analysis Dashboard (15 mins)
+### 14. Instructor Do: Review Crisis Analysis Dashboard (10 mins)
 
 **Files:**
 

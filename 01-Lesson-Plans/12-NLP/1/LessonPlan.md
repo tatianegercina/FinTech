@@ -4,49 +4,93 @@
 
 ### Overview
 
-Today's class will introduce students to ...
+Welcome to the natural language processing unit! NLP is an exciting area of machine learning research and is used in a variety of contexts, from algo trading to chatbots. Today's class will explore what NLP is and give students a solid foundation on preprocessing documents for NLP as well as introduce them to some simple analytical methods.
 
 ### Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of the class, students will be able to:
 
-*
+* Understand what NLP is, why we use it.
+
+* Understand and be able to implement the NLP workflow.
+
+* Demonstrate ability to tokenize texts into sentences and words, including handling punctuations and non-alpha characters gracefully.
+
+* Implement lematization and stop wording with the understanding of pros and cons of various choices.
+
+* Experiment with a few ways of counting tokens and displaying the most frequent ones.
+
+* Define concept of ngrams and implement with scikit-learn.
+
+* Create wordcloud to show most frequent terms in a text.
 
 ### Instructor Notes
 
-* How you expect the class to feel.
+* There is plenty of jargon in NLP. While we try to explain things in plain English as often as possible, some terms of art like token or corpus are inescapable. One option for helping keep all the new terms straight is writing down unfamiliar terms on a slide or whiteboard so that students can refer to it as needed.
 
-* Advice or Warnings
+* Each step in this lesson ties into the next, and every section is critical to learn in order to students to be able to implement the NLP workflow. Pause and ask for questions often.
 
-* Thematic Scripting - We are introducing students to the world of big data...
+* Students may expect to start off doing cool things like text modeling or sentiment analysis, and that's ok - these are coming in the next couple of lessons! However, it's good to remind them that preprocessing text, like any other kind of data, is critical to prevent the garbage in, garbage out phenomenon.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+
+### Slideshow and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 12.1 Slides](#).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 mins)
 
-**Files:**
+**Files**
 
-* [Lesson 13.1 Slides](#)
+* [Lesson 12.1 Slides](#)
 
-Welcome students back and explain that today we'll ...
+Welcome students back to class and explain that today is the start of the NLP unit. We'll talk about what NLP is and how it's used in finance in just a little bit, but first pose the following question.
+
+* When was the last time that a student made a decision - could be financial, career, or purchase - based on what they read in a news story? What about the story made them want to make that decision?
+
+    **Sample Answer**: I bought 10 shares of TSLA because of a news article about sales of the Model 3. The tone of the story - optimistic - as well as the specific numbers they cited made me bullish about the company.
+
+Take a few answers from volunteers (or call on a couple of students).
+
+* Common answers might include statistics cited in a story, something novel that was described, or the tone in which the author wrote about something.
+
+* Scaling this process with computers - reading and understanding the text of documents - is a key task in NLP and is a central use case in financial applications.
+
+* Computers don't "understand" the stories in the way that we do, but they can identify key features - like the ones given by students - and make decisions based off of those features.
+
+Hopefully your students are excited and ready to dive into the content at this point! Open the slides for this lesson and begin the next section.
 
 ---
 
-### 2. Instructor Do: Intro to NLP (15 mins)
+### 2. Instructor Do: Intro to NLP (10 mins)
 
-**Files:**
+**Files**
 
-* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
+* [Lesson 12.1 Slides](#)
 
-Walk through the solution and highlight the following:
+Open the slides and be sure to hit on the following talking points. Pause after each slide for questions.
 
-* Something really important
+* Our objectives today are focused on preprocessing - the stage of the NLP workflow when written documents are transformed into units of data that are more easily processed by a computer.
+
+* NLP spans a wide field of research that intersects computer science, statistics, linguistics, and other disciplines. Understanding and generating human language are two large tasks that encompass many smaller tasks - voice recognition, optical character recognition, summarization, topic representation, etc, etc.
+
+* Finance-specific use cases have mostly been centered around using NLP for quantitative trading. Other settings include fraud detection and chatbots for client interaction (which we will introduce in the next unit).
+
+* The NLP workflow is characterized by four steps - preprocessing, extraction, analysis, and representation. It's not unlike a typical machine learning workflow for any type of data. However, unstructured text data can take much more work to get into useable form than structured, numerical data.
+
+Ask students if they have any questions about NLP in general or the direction of today's class. If not, it's time to move on to the first topic: tokenization.
 
 ---
 
-### 3. Instructor Demo: Tokenization (0:10 mins)
+### 3. Instructor Do: Tokenization (10 mins)
 
 This activity introduces students to tokenization, the process with which we break down documents into smaller units of analysis. Tokenizing is crucial because many of the NLP techniques we'll learn about, including frequency analysis and sentiment analysis, use word, phrase, or sentence level "chunks" instead of the entire document. Students will use NLTK functions to split documents into sentences and words. Students will also be introduced to the corpora made available by NLTK, specifically the Reuters corpus, a collection of financial news stories.
 
@@ -147,7 +191,7 @@ for story in sentence_tokenized:
 
 ---
 
-### 6. Instructor Demo: Stopwords (0:10 mins)
+### 6. Instructor Do: Stopwords (10 mins)
 
 This activity introduces the concept and implementation of stopwords. In English, there are many words that are important to grammar and expression but have no topical significance - these include some of the most common words in the language, such as "is," "him," "for," etc. In NLP, these words are called stopwords. For many use cases in which we hope to summarize the contents of a corpus - such as frequency analysis or topic modeling, for example - we want to take these words out in preprocessing so that they don't distract from the topically important words and phrases. We will also take a look at a way of stripping out non-alphabetic characters, which we might want to do for a similar reason.
 
@@ -200,7 +244,7 @@ re_clean = regex.sub('', sentence)
 
 ---
 
-### 7. Students Do: Crude Stopwords (20 mins)
+### 7. Students Do: Crude Stopwords (15 mins)
 
 In this activity students will practice creating a function that strips non-letter characters from a document and then applies stopwording.
 
@@ -243,7 +287,11 @@ def clean_text(article):
 
 ---
 
-### 9. Instructor Demo: Lemmatization (0:07 mins)
+### 9. BREAK (15 mins)
+
+---
+
+### 10. Instructor Do: Lemmatization (5 mins)
 
 Lemmatization is a technique that transforms various morphologies of a word into its base form. This may sound fancy, but it's pretty intuitive. If we're looking to summarize a document with the most frequent words in it, words like "stock" and "stocks," for the most part, should mean the same, as does words like "run" and "ran." NLTK's lemmatizer takes words in different forms (past tense, plural form, etc.) and transforms them to the base form (present tense, singular).
 
@@ -263,7 +311,7 @@ Solved: [lemmatization.ipynb](Activities/05-Ins_Lemmatization/Solved/lemmatizati
 
 ---
 
-### 10. Students Do: Lemmatize (15 mins)
+### 11. Students Do: Lemmatize (15 mins)
 
 In this activity, create a function that performs stopwording, regex cleaning of non-letter characters, word tokenizing, and lemmatization on each word in the article
 
@@ -277,7 +325,7 @@ In this activity, create a function that performs stopwording, regex cleaning of
 
 ---
 
-### 11. Instructor Do: Review Lemmatize (5 mins)
+### 12. Instructor Do: Review Lemmatize (5 mins)
 
 **Files:**
 
@@ -298,7 +346,7 @@ def process_text(article):
 
 ---
 
-### 12. Instructor Do: N-gram Counter (10 mins)
+### 13. Instructor Do: N-gram Counter (10 mins)
 
 In this section, we introduce the idea of frequency analysis and n-grams. Like the terms we've thrown about earlier, these are fancy names for pretty basic concepts. Frequency analysis, at its simplest, is simply counting words and phrases. At the most basic level, the words that occur most often in a document (assuming they are not stopwords), will probably give you a good idea of what the document is about. This applies at the corpus level as well. N-grams are multiple word sequences - the n stands for the number of consecutive words (or tokens) that are included. So a bigram, for example, is 2 consecutive tokens strung together. We can think of creating n-grams as another way of tokenizing a document.
 
@@ -339,11 +387,7 @@ Ask students to notice that the counts of the most common ngrams are much smalle
 
 ---
 
-### 13. BREAK (15 mins)
-
----
-
-### 14. Students Do: Counter (20 mins)
+### 14. Students Do: Counter (15 mins)
 
 In this activity, students will create a function that preprocesses and outputs a list of the most common words in a corpus.
 
@@ -355,9 +399,9 @@ In this activity, students will create a function that preprocesses and outputs 
 
 * [counter.ipynb](Activities/08-Stu_Counter/Unsolved/counter.ipynb)
 
---
+---
 
-### 15. Instructor Do: Review Counter (10 mins)
+### 15. Instructor Do: Review Counter (5 mins)
 
 **Files:**
 
@@ -398,7 +442,7 @@ def bigram_counter(corpus):
     return pd.DataFrame(list(top_10.items()), columns=['bigram', 'count'])
 ```
 
---
+---
 
 ### 16. Instructor Do: Word Cloud (10 mins)
 
@@ -447,7 +491,7 @@ In this activity, students will  practice creating a word cloud from a subset of
 
 ---
 
-### 18. Instructor Do: Review Gas Cloud (10 mins)
+### 18. Instructor Do: Review Gas Cloud (5 mins)
 
 **Files:**
 
