@@ -2,13 +2,15 @@
 
 In this activity, students will sit through a demonstration of how to use the Mapbox API with Plotly Express.
 
+In order to complete this activity, a Mapbox API will be required. A personal key can be obtained by signing up [here](https://account.mapbox.com/auth/signup/).
+
 Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/500-cities-local-data-for-better-health-fc759).
 
 **Files:**
 
 * [plotly_maps.ipynb](Activities/15-Ins_Mapbox_Demo/Unsolved/plotly_maps.ipynb)
 
-Open the starter file, and live code the following. Make sure to highlight the discussion points while coding.
+Open the starter file, and live code the following. Make sure to have your Mapbox API key handy. Highlight the discussion points while coding:
 
 * Plotly Express has an integration endpoint specific for Mapbox API. This allows Plotly to use the Mapbox maps API in order to create interactive map visualizations. Plotly Express comes with functions designed specifically for interacting with MapBox.
 
