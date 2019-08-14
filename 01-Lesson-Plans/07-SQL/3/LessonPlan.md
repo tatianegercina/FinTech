@@ -642,15 +642,15 @@ Answer any questions before moving on.
 
 In this activity, students will create a conceptual ERD for a gym owner.
 
-**File:** [schema.txt](Activities/08-Par_Designing_ERD/Unsolved/schema.txt)
+**File:** [schema.txt](Activities/08-Stu_Designing_ERD/Unsolved/schema.txt)
 
-**Instructions:** [README.md](Activities/08-Par_Designing_ERD/README.md)
+**Instructions:** [README.md](Activities/08-Stu_Designing_ERD/README.md)
 
 ### 14. Instructor Do: Review Designing an ERD, Part 1 (5 min)
 
-**File:** [schema.txt](Activities/08-Par_Designing_ERD/Solved/schema.txt)
+**File:** [schema.txt](Activities/08-Stu_Designing_ERD/Solved/schema.txt)
 
-Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage and demonstrate the solution, using the code in the [`schema.txt`](Activities/08-Par_Designing_ERD/Solved/schema.txt) file. Live code while explaining the following:
+Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage and demonstrate the solution, using the code in the [`schema.txt`](Activities/08-Stu_Designing_ERD/Solved/schema.txt) file. Live code while explaining the following:
 
 * A conceptual diagram has only basic information, such as the names of the tables and their attributes.
 
@@ -676,19 +676,19 @@ Answer any questions before moving on.
 
 In this activity, students will further improve the ERD by creating a physical ERD.
 
-**File:** [schema.txt](Activities/09-Par_ERD/Unsolved/schema.txt)
+**File:** [schema.txt](Activities/09-Stu_ERD/Unsolved/schema.txt)
 
-**Instructions:** [README.md](Activities/09-Par_ERD/README.md)
+**Instructions:** [README.md](Activities/09-Stu_ERD/README.md)
 
 ### 16. Instructor Do: Review Designing an ERD, Part 2 (5 min)
 
 **Files:**
 
-* [schema.txt](Activities/09-Par_ERD/Solved/schema.txt)
+* [schema.txt](Activities/09-Stu_ERD/Solved/schema.txt)
 
-* [query.sql](Activities/09-Par_ERD/Solved/query.sql)
+* [query.sql](Activities/09-Stu_ERD/Solved/query.sql)
 
-Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage. Copy and paste the solution using the code in the [`schema.txt`](Activities/09-Par_ERD/Solved/schema.txt) file and explain the following:
+Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage. Copy and paste the solution using the code in the [`schema.txt`](Activities/09-Stu_ERD/Solved/schema.txt) file and explain the following:
 
 * Transitioning a logical ERD to a physical ERD involves adding appropriate entities to tables and mapping their relationships.
 
