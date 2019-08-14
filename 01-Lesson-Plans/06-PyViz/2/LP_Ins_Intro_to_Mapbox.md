@@ -1,4 +1,4 @@
-### 14. Instructor Do: Intro to MapBox API (5 mins) (Critical)
+### 14. Instructor Do: Intro to MapBox API (10 mins) (Critical)
 
 In this activity, students will be introduced to the MapBox API and geographical visualizations. The instructor will explain to students, in a formal lecture, what MapBox API is and how it's used.
 
