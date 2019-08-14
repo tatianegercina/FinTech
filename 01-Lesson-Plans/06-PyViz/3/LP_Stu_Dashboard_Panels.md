@@ -56,3 +56,9 @@ Open the solution and explain the following:
   ![panel_tab.gif](Images/panel_tab.gif)
 
 Ask for any remaining questions before moving on.
+
+- - -
+
+### 10. BREAK (40 mins)
+
+- - -
