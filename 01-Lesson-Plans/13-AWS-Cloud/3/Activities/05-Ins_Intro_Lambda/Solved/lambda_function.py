@@ -10,7 +10,7 @@ def parse_float(n):
     try:
         return float(n)
     except ValueError:
-        return float("nan")
+        return float('nan')
 
 
 def build_validation_result(is_valid, violated_slot, message_content):
@@ -34,7 +34,7 @@ def validate_data(birthday, usd_amount, intent_request):
 
     # Validate that the user is over 21 years old
     if birthday is not None:
-        birth_date = datetime.strptime(birthday, "%Y-%m-%d")
+        birth_date = datetime.strptime(birthday, '%Y-%m-%d')
         age = relativedelta(datetime.now(), birth_date).years
         if age < 21:
             return build_validation_result(
@@ -44,11 +44,10 @@ def validate_data(birthday, usd_amount, intent_request):
                 "please provide a different date of birth.",
             )
 
+
     # Validate the investment amount, it should be > 0
     if usd_amount is not None:
-        usd_amount = parse_float(
-            usd_amount
-        )  # Since parameters are strings it's important to cast values
+        usd_amount = parse_float(usd_amount) # Since parameters are strings it's important to cast values
         if usd_amount <= 0:
             return build_validation_result(
                 False,
@@ -58,7 +57,6 @@ def validate_data(birthday, usd_amount, intent_request):
             )
 
     return build_validation_result(True, None, None)
-
 
 ### Dialog Actions Helper Functions ###
 def get_slots(intent_request):
@@ -124,7 +122,7 @@ def convert_usd(intent_request):
     usd_amount = get_slots(intent_request)["usdAmount"]
 
     # Gets the invocation source, for Lex dialogs "DialogCodeHook" is expected.
-    source = intent_request["invocationSource"]  #
+    source = intent_request["invocationSource"] #
 
     if source == "DialogCodeHook":
         # This code performs basic validation on the supplied input slots.
