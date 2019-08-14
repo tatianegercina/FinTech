@@ -24,7 +24,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 * [Categorical_Evaluation.ipynb](Activities/11-Stu_Categorical_Evaluation/Unsolved/categorical_evaluation.ipynb)
 
-### 13. Students Do: Categorical Assessments Activity Review (5 mins)
+### 13. Students Do: Categorical Assessments Activity Review (10 mins)
 
 This activity involves a student volunteering to tell the story of Alleghany property assessments. A student will present the parallel categories plot from the student activity, and provide some findings regarding dimensional patterns.
 
