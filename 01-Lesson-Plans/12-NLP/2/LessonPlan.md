@@ -24,6 +24,8 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
+* Slack out the [Create and Activate an AWS Account Guide](../../13-AWS-Cloud/Supplemental/1-Create-and-Activate-an-AWS-Account.md). Tell students to complete the AWS account creation and verify it with a TA before the end of the next class. This should help catch account creation issues outside of the class time.
+
 * Sentiment analysis is a wide area that has a broad range of tools, this class will cover only a gentle introduction to sentiment analysis fundamental.
 
 * This lesson includes the use and demonstration of the [News API](https://newsapi.org/), a free API for developers that retrieves metadata for headlines and news. This service requires user registration, despite the process is quite easy, have your TAs to assist students during the instructor demo activity to be sure students get their API key.
