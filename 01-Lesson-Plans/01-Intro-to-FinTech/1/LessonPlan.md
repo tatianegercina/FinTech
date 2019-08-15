@@ -134,7 +134,7 @@ In this section, provide an overview of the topics and technologies used in the 
 
 Use the slideshow to go over the course agenda and timeline. (Slides 10–13)
 
-* **Weeks 1–2:** Students will be introduced to the world of FinTech and the current financial landscape. Then, they will dive into the financial modeling methods of the current industry-standard tool, Microsoft Excel.
+* **Weeks 1–2:** Students will be introduced to the world of FinTech and the current financial landscape.
 
 * **Weeks 3–7:** While useful and easy to grasp, Excel is limited in its technical capabilities compared to a full-fledged progamming language like Python. This is why, over the next several weeks, students will learn the basics of Python as well as how to use additional libraries and tools such as Pandas, APIs, Plotly, and SQL databases, all within the context of financial analysis.
 
