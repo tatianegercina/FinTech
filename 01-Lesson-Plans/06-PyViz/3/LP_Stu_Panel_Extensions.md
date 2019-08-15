@@ -37,11 +37,12 @@ Open the solution and explain the following:
   geo_column = pn.Column("## Population and Crime Geo Plots", population_plot, crime_plot)
   scatter_column = pn.Column("## Correlation of Population and Crime Plots", population_violence, violent_murder)
   ```
+  ![panel_column_integration.png](Images/panel_column_integration.png)
 
-* The best way to create a dahsboard layout is to strategically group media types into containers. 
+* The best way to create a dahsboard layout is to strategically group media types into containers.
 
-  * Plots of the same type can be added to the same column/row, and plots of different types can be added to different tabs. 
-  
+  * Plots of the same type can be added to the same column/row, and plots of different types can be added to different tabs.
+
   * Furthermore, plots that serve one specific analytic objective could be rendered on one tab together, while other analytic use cases could be maintained in other tabs.
 
   ```python
@@ -51,6 +52,12 @@ Open the solution and explain the following:
 
   crime_pop_dashboard
   ```
+
+  ![panel_tabs.png](Images/panel_tabs.png)
+
+  ![population_crime_dashboard.gif](Images/population_crime_dashboard.gif)
+
+* Integrating Panel columns and tabs with PyViz visualizations creates a dashboard that allows users to analyze a number of visualizations at one time from a one-stop shop.
 
 If time remains, ask students the following review questions:
 
@@ -67,4 +74,3 @@ If time remains, ask students the following review questions:
   * **Answer** Because **Panel** supports a wide range of visualization technologies. Each technology has its own approach to rendering plot look and feel/skins, widgets, etc. In order to preserve the integrity of the visualizations created by each technology, Panel uses extensions to render the visualization objects.
 
 Ask for any remaining questions before moving on.
-
