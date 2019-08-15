@@ -682,7 +682,7 @@ If time remains, ask students to summarize three things they've learned today.
 
 Ask if there are any questions before moving forward.
 
-## End Class
+### End Class
 
 - - -
 
