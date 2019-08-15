@@ -4,7 +4,7 @@ In this activity, the instructor leads a formal lecture on Panel **extensions**.
 
 **Files:**
 
-* [panel_extensions.ipynb](Activities/11-Ins_Panel_Extensions/Solved/panel_extensions.ipynb)
+* [Slides]()
 
 Navigate to the 6.3 slides, and highlight the following:
 
@@ -31,3 +31,7 @@ Navigate to the 6.3 slides, and highlight the following:
   ```python
   pn.extension()
   ```
+
+* By specifying the extension, multiple media types cna be combined to create an informative and insightful dashboard.
+
+Ask if there are any questions before continuing.
