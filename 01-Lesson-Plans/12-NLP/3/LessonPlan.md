@@ -24,6 +24,8 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
+* Slack out the [Create and Activate an AWS Account Guide](../../13-AWS-Cloud/Supplemental/1-Create-and-Activate-an-AWS-Account.md). Tell students to complete the AWS account creation and verify it with a TA before the end of Today's class. This should help catch account creation issues outside of the class time.
+
 * It may not be immediately obvious to students why POS tagging and named entity extraction are important techniques in natural language processing. While their outputs will not always be directly used for analysis, these processes are critical for sifting through text to its most important or pertinent aspects.
 
 * Be sure to emphasize the use of correct preprocessing, which is different for every use case - in this class, hardly any preprocessing will be needed.
