@@ -390,12 +390,15 @@ Open the [starter file](Activities/05-Ins_Parallel_Categories/Solved/parallel_ca
   region= ['North East','Tri-State']
   prop_size= ['Large','Medium','Small']
 
-  df= pd.DataFrame({
-      "sold":np.random.randint(999,1002,30),
-      "year":np.random.randint(2010,2019,30),
+  df = pd.DataFrame({
+      "sold": np.random.randint(999, 1002, 30),
+      "year": np.random.randint(2010, 2019, 30),
       "type": np.random.choice(housing_type, 30),
       "region": np.random.choice(region, 30),
-      "prop_size": np.random.choice(prop_size, 30)}).sort_values(['year','type','region','prop_size'])
+      "prop_size": np.random.choice(prop_size, 30)}).sort_values(['year',
+                                                                  'type',
+                                                                  'region',
+                                                                  'prop_size'])
   df.head()
   ```
 
@@ -411,9 +414,13 @@ Open the [starter file](Activities/05-Ins_Parallel_Categories/Solved/parallel_ca
 * The labels parameter can be used to customize the labels shown on the plot. It will also add a highlight feature to the label names so they can be read.
 
   ```python
+  # Plot data using parallel_categories
   px.parallel_categories(df, dimensions=['type','region','prop_size'], color='year',
                         color_continuous_scale=px.colors.sequential.Inferno,
-                        labels={'type':'Type of Dwelling', 'region':'Region', 'prop_size':'Property Size'})
+                        labels={
+                            'type': 'Type of Dwelling',
+                            'region': 'Region',
+                            'prop_size': 'Property Size'})
   ```
 
 * Similar to parallel coordinates plot, the **parallel categories** plot axes can be sorted by clicking and dragging to the desired location.
