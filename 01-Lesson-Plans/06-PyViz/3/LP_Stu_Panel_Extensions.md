@@ -14,7 +14,7 @@ Data for this activity was retrieved from [ucr.fbi.gov](https://ucr.fbi.gov/crim
 
 ### 13. Instructor Do: Extending Plotting Activity Review (10 mins)
 
-Students will participate in a facilitated discussion guided by the instructor. The focus of the discussion will be how multiple technologies can be integrated and embedded on a singular dashboard to create a reporting platform.
+Students will participate in a dry walk through and facilitated discussion guided by the instructor. The focus of the discussion will be how multiple technologies can be integrated and embedded on a singular dashboard to create a reporting platform.
 
 **Files:**
 
@@ -37,9 +37,10 @@ Open the solution and explain the following:
   geo_column = pn.Column("## Population and Crime Geo Plots", population_plot, crime_plot)
   scatter_column = pn.Column("## Correlation of Population and Crime Plots", population_violence, violent_murder)
   ```
+
   ![panel_column_integration.png](Images/panel_column_integration.png)
 
-* The best way to create a dahsboard layout is to strategically group media types into containers.
+* The best way to create a dashboard layout is to strategically group media types into containers.
 
   * Plots of the same type can be added to the same column/row, and plots of different types can be added to different tabs.
 
