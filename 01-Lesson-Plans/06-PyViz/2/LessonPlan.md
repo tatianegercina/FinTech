@@ -1,12 +1,12 @@
-# 6.2 Lesson Plan: Plotting with Plotly Express
+## 6.2 Lesson Plan: Plotting with Plotly Express
 
-## Overview
+### Overview
 
 By the end of this class, students will have added another PyViz visualization technology to their skillsets. Today's lesson focuses on **Plotly Express**, a visualization module built on top of **Plotly**. Like hvPlot, **Plotly Express** is an interactive plotting library that supports PyViz and Pandas.
 
 Students are learning **Plotly Express** because it has risen to be an industry standard among data scientists and analysts. **Plotly Express** offers advanced statistical plots, like **parallel categories** and **parallel coordinates**, which many other plotting interfaces do not (i.e. hvPlot). Having knowledge and experience with **Plotly Express** will give students an upper-hand in the job market, and it will enable them to create visualizations and reports that are on the same caliber as data scientists.
 
-## Class Objectives
+### Class Objectives
 
 By the end of class, students will be able to:
 
@@ -22,7 +22,7 @@ By the end of class, students will be able to:
 
 * Construct Map Plot Visualizations
 
-## Instructor Notes
+### Instructor Notes
 
 * Prepare for the lesson by running the code examples and reviewing the lectures before class. Today's lesson will include using **Plotly Express** and **Mapbox**, a mapping API/development kit used for visualizing geospatial data, so make sure the appropriate plugins and API keys have been set up.
 
@@ -40,7 +40,7 @@ By the end of class, students will be able to:
 
 * Have your TAs keep track of time with the Time Tracker.
 
-## Class Slides and Time Tracker
+### Class Slides and Time Tracker
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson 6.2 Slides]().
 
@@ -640,7 +640,7 @@ Indicate to students that they should work in teams of 2-3 to plan the trip toge
 
 - - -
 
-### 16. Instructor Do: A Cartographers Expedition Activity Review (5 mins)
+### 16. Instructor Do: A Cartographers Expedition Activity Review (10 mins)
 
 In this activity, student groups will present their maps and expeditions to the rest of the class.
 
@@ -671,48 +671,6 @@ Start the activity review by asking if there is a group who wants to volunteer t
 * Were the geographic scatter plots helpful in understanding the distribution of places of interest throughout NYC? How did the visual help cement the image?
 
   * **Answer** Yes, the plots were helpful. By color coding by **PlaceType**, it was easy to see the clusters of each type of place. This helped outline the trek through the boroughs. It was also helpful in noticing trends in positioning of certain locations (i.e. Ellis and Liberty Island are in same place and the forts all seem to be north of Manhattan.
-
-Ask for any remaining questions before moving on.
-
-- - -
-
-### 17. Instructor Do: Recap (5 mins)
-
-In this activity, students recap the knowledge and skills learned during the day. Students can ask questions, or he instructor can ask guided questions to facilitate the recap.
-
-**Files:**
-
-* [Slides]()
-
-Congratulate students on taking their plotting skills to the next level. Communicate the following:
-
-* **Plotly Express** is a technology commonly used by data scientists and programmers for data visualization needs.
-
-* Plotly is incredibly versatile and supports multiple programming languages (i.e. R, JavaScript, Python). This makes it highly desired skill by employers.
-
-Ask students if they have any questions about the material covered in today's lesson.
-
-* Use this time to answer as many questions as possible.
-
-* Once time is up, encourage students to attend office hours or reach out to the TAs if they have any additional questions.
-
-If students do not have any questions, ask them the following guided questions:
-
-* Ask students to summarize some of the differences between hvPlot and **Plotly Express**.
-
-  * **Answer** hvPlot offers an easy way to overlay/compose plots. **Plotly Express** offers parallel categories and coordinate plots. **Plotly Express** also has integration with Mapbox API.
-
-Communicate to students that the visualizations they've created so far, and their notebooks in general, could be viewed as reports that provide or answer a specific  request for information or data need. Another type of visualization is a dashboard.
-
-* If reports are different than dashboards, what is a dashboard?
-
-  * **Answer** A dashboard is an interactive visualization tool that can be dynamically manipulated to show data.
-
-* What makes a dashboard starkly different than a report?
-
-  * **Answer** Dashboards often contain live data rather than static data (like with a report). This allows data to be real time. Dashboards are also sometimes made up of multiple reports.
-
-  * **Answer** Reports provide a view into raw data. Reports help visualize underlying data and spot trends. Dashboards present data within a specific context/reporting agenda, and the data is often curated to report on specific KPIs.
 
 If time remains, ask students to summarize three things they've learned today.
 
