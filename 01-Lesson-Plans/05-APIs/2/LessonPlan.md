@@ -48,7 +48,7 @@ Day 2 takes students to the next step in using APIs. Students will transition fr
 
 **Files:**
 
-* [welcome-slides]()
+* [welcome-slides](https://docs.google.com/presentation/d/1t0Uam4ppU404q6GptlQcH0HtHFJLiHuIAoYQijUDXaA/edit#slide=id.g54ab1329fa_1_44)
 
 Welcome students to the second day of APIs by highlighting the following talking points:
 
@@ -90,7 +90,7 @@ Guided questions are provided to help facilitate discussion. Use these questions
 
 **Files:**
 
-* [API Keys Slides]
+* [API Keys Slides](https://docs.google.com/presentation/d/1t0Uam4ppU404q6GptlQcH0HtHFJLiHuIAoYQijUDXaA/edit#slide=id.g5e7c11aa5f_0_0)
 
 Navigate to the 5.2 slides and introduce students to API keys.
 
@@ -349,7 +349,7 @@ The past two lessons have focused on students using the Python requests library 
 
 **Files:**
 
-* [Slides]()
+* [Slides](https://docs.google.com/presentation/d/1t0Uam4ppU404q6GptlQcH0HtHFJLiHuIAoYQijUDXaA/edit?usp=sharing)
 
 Communicate to students that while the Python requests library is a great tool with which to submit requests to APIs, there are more sophisticated APIs out there that offer tools called software development kits that provide a packaged way to access API endpoints and submit calls.
 
@@ -399,7 +399,7 @@ Ask students if there are any questions before moving on.
 
 **Files:**
 
-* [Slides]()
+* [Slides](https://docs.google.com/presentation/d/1t0Uam4ppU404q6GptlQcH0HtHFJLiHuIAoYQijUDXaA/edit#slide=id.g5e7c11aa5f_1_75)
 
 Navigate to the 5.2 slides, and introduce the Plaid by highlighting how it is disrupting the FinTech data industry:
 
@@ -419,9 +419,9 @@ Navigate to the 5.2 slides, and introduce the Plaid by highlighting how it is di
 
   * Help users manage data from multiple accounts (e.g.,  savings, equity, investments, retirement) in one platform.
 
-  
+
 Up until now, students have been solely conducting quantitative analysis on investments.
-  
+
   ![plaid_services.png](Images/plaid_services.png)
 
 Facilitate discussion with the following talking points and guided questions:
