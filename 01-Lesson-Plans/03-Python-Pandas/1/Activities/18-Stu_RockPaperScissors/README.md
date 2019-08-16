@@ -1,18 +1,18 @@
 # Rock, Paper, Scissors, Shoot
 
-Create a RPS game that takes user input from the command line and plays against the computer.
+In this activity, you will create an RPS game that takes user input from the command line and plays against the computer.
 
 ## Instructions
 
-* Using the terminal, take an input of `r`, `p` or `s` which will stand for rock, paper, and scissors.
+1. Using the command line, take an input of `r`, `p`, or `s`, which stand for rock, paper, and scissors.
 
-* Have the computer randomly pick one of these three choices.
+2. Have the computer randomly choose one of these three choices.
 
-* Compare the user's input to the computer's choice to determine if the user won, lost, or tied.
+3. Compare the user's input to the computer's choice to determine if the user won, lost, or tied.
 
-## Hints
+## Hint
 
-* Look into this [stackoverflow](https://stackoverflow.com/questions/306400/how-to-randomly-select-an-item-from-a-list) question for usage.
+You can refer to this [Stack Overflow post](https://stackoverflow.com/questions/306400/how-to-randomly-select-an-item-from-a-list).
 
 ---
 

@@ -82,13 +82,13 @@ Then move on to the first topic of the day: defining FinTech. Review the slides 
 
   **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through backend network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups:
 
-    * Infrastructure providers
+  * Infrastructure providers
 
-    * Large technology ecosystems
+  * Large technology ecosystems
 
-    * New entrants/start-ups
+  * New entrants/start-ups
 
-    * Incumbent financial institutions
+  * Incumbent financial institutions
 
 * Why has FinTech become so important?
 
@@ -102,7 +102,31 @@ Then move on to the first topic of the day: defining FinTech. Review the slides 
 
 ---
 
-### 3. Instructor Do: Course Overview (10 min)
+### 3. Student Do: FinTech and Me (5 min)
+
+In this activity, students get a chance to reflect by writing down what FinTech means to them.
+
+**File:** [README.md](Activities/01-Stu_FinTech_Group_Discussions/README.md)
+
+During this activity, students will share their responses with their classmates. Be sure that you and the TAs circulate the classroom to listen to students' responses. If you hear responses that are especially engaging or interesting, ask those students to share their response with the class during the review portion (Instructor Do: Review FinTech and Me).
+
+### 4. Instructor Do: Review FinTech and Me (10 min)
+
+**Optional:** Consider using a tool such as [polleverywhere](https://www.polleverywhere.com/) to collect and share responses in real-time. [Groupmap](https://www.groupmap.com/) may also be a good option.
+
+Review each question. Ask for a few volunteers for each of the response questions. Encourage students who had interesting responses in the previous activity to share.
+
+Once all volunteers have presented, tie everything together by explaining the following:
+
+* FinTech is the application of technology to the finance industry, but what it means at the individual level can differ.
+
+* Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. And still others see FinTech as a path to new career supported by growing demand.
+
+* Despite students' differing reasons for wanting to learn more about FinTech, each of them has made the leap to take this course. Therefore, it's important to continue to get to know each other, as they'll be together "in the trenches" for the next 24 weeks. The relationships you build in this class can serve as valuable network connections after the completion of the course.
+
+---
+
+### 5. Instructor Do: Course Overview (10 min)
 
 In this section, provide an overview of the topics and technologies used in the course, as well the timeline for each topic or unit.
 
@@ -110,7 +134,7 @@ In this section, provide an overview of the topics and technologies used in the 
 
 Use the slideshow to go over the course agenda and timeline. (Slides 10–13)
 
-* **Weeks 1–2:** Students will be introduced to the world of FinTech and the current financial landscape. Then, they will dive into the financial modeling methods of the current industry-standard tool, Microsoft Excel.
+* **Weeks 1–2:** Students will be introduced to the world of FinTech and the current financial landscape.
 
 * **Weeks 3–7:** While useful and easy to grasp, Excel is limited in its technical capabilities compared to a full-fledged progamming language like Python. This is why, over the next several weeks, students will learn the basics of Python as well as how to use additional libraries and tools such as Pandas, APIs, Plotly, and SQL databases, all within the context of financial analysis.
 
@@ -130,7 +154,7 @@ Answer any questions before moving on.
 
 ---
 
-### 4. Instructor Do: Tips (10 min)
+### 6. Instructor Do: Tips (10 min)
 
 Provide students with some encouragement and tips for overcoming the mental frustrations they will more than likely face throughout the course.
 
@@ -138,7 +162,7 @@ Provide students with some encouragement and tips for overcoming the mental frus
 
 Open the next series of slides and emphasize the following points. (Slides 19–25).
 
-* Embrace your inner toddler. Recognizing how little you know is a first step toward growth as a learner. Hard work, humility, and a relentless desire to improve are essential for succeeding in this program. 
+* Embrace your inner toddler. Recognizing how little you know is a first step toward growth as a learner. Hard work, humility, and a relentless desire to improve are essential for succeeding in this program.
 
 * At times, learning the skills taught in this course will be intimidating and frustrating. Remember that becoming a skilled professional is challenging and will take time. There is no way around that.
 
@@ -148,17 +172,63 @@ Open the next series of slides and emphasize the following points. (Slides 19–
 
 * Lastly, learning is supposed to be frustrating! It's a process, so stick with it. Things only get easier when we choose to embrace the difficulty and put in the hours to succeed. 
 
-* Most importantly, celebrate your successes! 
+* Most importantly, celebrate your successes!
 
   ![fintech-tips](Images/fintech-tips.png)
 
 ---
 
-### 5. BREAK (15 min)
+### 7. BREAK (15 min)
 
 ---
 
-### 6. Instructor Do: The Rise of FinTech (10 min)
+### 8. Instructor Do: FinTech's Past (5 min)
+
+In this activity, instructors begin to facilitate a discussion regarding the stark changes that have affected the finance realm over the last 20+ years.
+
+Set up the prompt for the following thought exercise by asking students the following questions:
+
+* What did the finance world look like in 1999?
+
+* What were some financial processes that are becoming obsolete or no longer exist today?
+
+---
+
+### 9. Student Do: Rip Van Winkle Thought Exercise (10 min)
+
+In this activity, students will reflect on how the current state of the FinTech world may differ from that of someone from the year 1999.
+
+Quickly explain to the class the following:
+
+* *Rip Van Winkle* is a short story by the American author Washington Irving, first published in 1819. It follows a Dutch-American villager in colonial America named Rip Van Winkle, who falls asleep in the Catskill Mountains and wakes up 20 years later, completely missing the events of the American Revolution.
+
+* We'll apply the Rip Van Winkle story to FinTech by imagining if a financial analyst who fell asleep in the year 1999 and woke up today. What would he or she find most surprising about the current finance world?
+
+* Students should define areas of finance that have been deeply affected by technology, naming specific companies, products, or innovations that would be surprising to a financial analyst from 1999.
+
+* Students should form groups of 3 or 4. Each group will present their thoughts during the review portion of this activity.
+
+---
+
+### 10. Instructor Do: Review Rip Van Winkle Though Exercise (5 min)
+
+In this review portion of the previous activity, students will present their reflections based on the Rip Van Winkle thought experiment.
+
+* Ask for a few volunteers to share their group's thoughts on what they felt would be most surprising to a financial analyst from 1999 witnessing the current state of the finance world.
+
+* Take note of each group's findings and emphasize some of the overarching themes regarding the state of the current FinTech ecosystem. Some themes that are likely to come up include:
+
+  * Automation
+
+  * Big Data
+
+  * Mobile Infrastructure
+
+  * Cloud Infrastructure
+
+---
+
+### 11. Instructor Do: The Rise of FinTech (10 min)
 
 In this section, engage students with a facilitated discussion about why FinTech has become so prevalent today.
 
@@ -168,7 +238,7 @@ Open the slideshow and use the slides to help guide your discussion, focusing on
 
 As you review the slides, look for opportunities to prompt students to reflect. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer. For example, ask students to share examples of innovative FinTech companies and how they are disrupting the financial services industry.
 
-* Recent technological advancements in (big) data and mobile network infrastructure has led to a consumer desire for companies to not only provide more efficent data-driven services, but also quality engagement through scalable mobile platforms.
+* Recent technological advancements in (big) data and mobile network infrastructure has led to a consumer desire for companies to not only provide more efficient data-driven services, but also quality engagement through scalable mobile platforms.
 
 * To keep up with consumer demand, large financial firms that have been slower to adopt newer technologies have been forced to make larger investments in technology.
 
@@ -178,37 +248,11 @@ As you review the slides, look for opportunities to prompt students to reflect. 
 
 ![fintech-rise](Images/fintech-rise.png)
 
-Answer any questions before moving on. 
+Answer any questions before moving on.
 
 ---
 
-### 7. Student Do: FinTech and Me (5 min)
-
-In this activity, students get a chance to reflect by writing down what FinTech means to them.
-
-**File:** [README.md](Activities/01-Stu_FinTech_Group_Discussions/README.md)
-
-During this activity, students will share their responses with their classmates. Be sure that you and the TAs circulate the classroom to listen to students' responses. If you hear responses that are especially engaging or interesting, ask those students to share their response with the class during the review portion (Instructor Do: Review FinTech and Me).
-
----
-
-### 8. Instructor Do: Review FinTech and Me (10 min)
-
-**Optional:** Consider using a tool such as [polleverywhere](https://www.polleverywhere.com/) to collect and share responses in real-time. [Groupmap](https://www.groupmap.com/) may also be a good option.
-
-Review each question. Ask for a few volunteers for each of the response questions. Encourage students who had interesting responses in the previous activity to share.
-
-Once all volunteers have presented, tie everything together by explaining the following:
-
-* FinTech is the application of technology to the finance industry, but what it means at the individual level can differ.
-
-* Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. And still others see FinTech as a path to new career supported by growing demand.
-
-* Despite students' differing reasons for wanting to learn more about FinTech, each of them has made the leap to take this course. Therefore, it's important to continue to get to know each other, as they'll be together "in the trenches" for the next 24 weeks. The relationships you build in this class can serve as valuable network connections after the completion of the course.
-
----
-
-### 9. Student Do: Alpacalypse Now (25 min)
+### 12. Student Do: Alpacalypse Now (15 min)
 
 In this activity, students will once again break off into groups of 2 to 4 to define and articulate the challenges faced by the Altruistic Alpacas charity. They will need to list at least 5 financial or technical challenges associated with each of the 5 core problem areas defined by the client.
 
@@ -222,17 +266,17 @@ In this activity, students will once again break off into groups of 2 to 4 to de
 
 * The key to executing this exercise in the classroom is to ensure that students thinking outside their sphere of knowledge as well as thinking deeply about each problem.
 
-* Set a time for 25 minutes and allow students to dicuss their options. Remind them that they should be prepared to discuss these issues with the class. 
+* Set a time for 25 minutes and allow students to discuss their options. Remind them that they should be prepared to discuss these issues with the class. 
 
 * As students work, you and your TAs should walk around the classroom and listen to student discussions. When appropriate, nudge them to think more critically. Many students may rely on their personal backgrounds, but this is a good time to think outside the box. For instance:
 
-  * If students seem to have focused on only the financial aspects of the problem, prod them to think about the technical challenges. Or maybe they have taken an analytical approach; if so, ask about a machine learning/AI approach. You can also ask if they considered a cryptocurrency or blockchain solution, and so on. 
+  * If students seem to have focused on only the financial aspects of the problem, prod them to think about the technical challenges. Or maybe they have taken an analytical approach; if so, ask about a machine learning/AI approach. You can also ask if they considered a cryptocurrency or blockchain solution, and so on.
 
   * If students seem to have a full list of financial and technical challenges, ask them about regulatory or security issues that they may face. Prompt them to also think about governance and cross-border issues that may come up with an international charity.
 
 ---
 
-### 10. Instructor Do: Review Alpacalypse Now (25 min)
+### 13. Instructor Do: Review Alpacalypse Now (15 min)
 
 **File:** [Review Alpacalypse Now Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_5_39)
 
@@ -240,13 +284,13 @@ When time is up, ask a few groups to share some of the challenges they identifie
 
 Once you have a list of challenges, use the slides to break down some of the potential solutions to these problems. (Slides 43–61)
 
-Tell students that the following: 
+Tell students that the following:
 
 * The slides do not represent a comprehensive list of solutions, but they should provide some ideas about how FinTech can be used to address various challenges.
 
 * The slides provide example solutions to each core problem identified by the client (Altruistic Alpacas). While some solutions are more concrete than others, try not to get bogged down with the details. The slides are meant to provide food for thought.
 
-When appropriate, ask students to share examples. You should also share any relevant stories from your own experience. 
+When appropriate, ask students to share examples. You should also share any relevant stories from your own experience.
 
 Wrap up the activity review by reminding students that while these solutions may not have completely addressed all of the challenges identified, they show the promise of FinTech solutions for complex problems like these.
 
@@ -254,7 +298,7 @@ Encourage students by reminding them that they will soon get to dig into these t
 
 ---
 
-### 11. Instructor Do: Introduce Homework (10 min)
+### 14. Instructor Do: Introduce Homework (10 min)
 
 In this activity, instructors will review the Unit 1 homework assignment with the class.
 
@@ -270,4 +314,4 @@ Answer any questions, and thank students for their time and a great first class!
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

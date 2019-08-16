@@ -36,7 +36,17 @@ By the end of class, students will be able to:
 
 * Encourage students to work in pairs or groups on the in-class activities to help facilitate discussions as well as troubleshooting. Collaborative exercises such as student-led activity reviews and discussions have been built into this lesson.
 
-* Have your TAs keep the class on schedule with the [Time Tracker](TimeTracker.xlsx).
+* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+
+### Class Slides and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 3.3 Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g54ab1329fa_1_44).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+
+* Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -44,7 +54,7 @@ By the end of class, students will be able to:
 
 In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
-**File:** [Welcome to Pandas Day 2 Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g473a132ac1_0_7)
+**File:** [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g54ab1329fa_1_44)
 
 Welcome students to the second day of Pandas and explain the focus of today's class.
 
@@ -54,7 +64,7 @@ Welcome students to the second day of Pandas and explain the focus of today's cl
 
 Introduce the refresher demo on returns.
 
-* The following demo will show how to extract historical ticker data from NASDAQ.com as a CSV.  The goal is to get students to understand that all of the data they need to perform ROI analysis is just a few clicks away.
+* The following demo will show how to extract historical ticker data from NASDAQ.com as a CSV. The goal is to get students to understand that all of the data they need to perform ROI analysis is just a few clicks away.
 
 * Using NASDAQ.com, students can leverage historical stock data to keep a running tab on daily returns for specific stocks.
 
@@ -125,7 +135,7 @@ In this part of the lesson, you will demo how to sort DataFrame values in ascend
 
 **Files:**
 
-* [Sorting Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_35)
+* [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5c4c4e9992_0_14)
 
 * [sort_dataframe.ipynb](Activities/Ins_Sorting/Solved/sort_dataframe.ipynb)
 
@@ -239,13 +249,13 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 5. Instructor Do: Groupby (10 min)
+### 5. Instructor Do: Grouping (10 min)
 
 This section focuses on grouping and aggregating data. Grouping data is particularly valuable when dealing with data for multiple stocks. You will give an overview of grouping and then perform a live demo of how to use the `groupby` function in Pandas. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
 **Files:**
 
-* [Grouping Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_89)
+* [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5b86f48914_0_30)
 
 * [groupby.ipynb](Activities/05-Ins_Groupby/Solved/groupby.ipynb)
 
@@ -257,7 +267,7 @@ Introduce the `groupby` function by explaining the following:
 
 * Both of these functions are used to wrangle data into a state that is usable for analysis.
 
-Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_89) and provide a brief overview of the `groupby` function.
+Open the slideshow and provide a brief overview of the `groupby` function.
 
 * A common technique in data analysis is to summarize data by grouping similar values.
 
@@ -451,7 +461,7 @@ Now that students have learned that indexes can be created by using the `groupby
 
 **Files:**
 
-* [Multi-Indexing Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_207)
+* [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5b86f48914_0_126)
 
 * [multi_indexing.ipynb](Activities/08-Ins_Multi_Indexing/Solved/multi_indexing.ipynb)
 
@@ -635,7 +645,7 @@ In this section, you will provide an overview of concatenation and then live cod
 
 **Files:**
 
-* [Concatenation Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_252)
+* [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5b86f48914_0_153)
 
 * [concat_dataframe.ipynb](Activities/12-Ins_Concat_DataFrame/Solved/concat_dataframes.ipynb)
 
@@ -647,7 +657,7 @@ Introduce the topic of concatenation by explaining the following:
 
 * For example, multiple months of financial records or investment data from different markets can be consolidated into one dataset in order to streamline and centralize data analysis.
 
-Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_252) and provide a brief overview of concatenation:
+Open the slideshow and provide a brief overview of concatenation:
 
 * **Concatenation** is the process of appending data from one object with another.
 
@@ -761,7 +771,7 @@ This section focuses on standard deviation and how it can be used to determine t
 
 **Files:**
 
-* [Standard Deviation and Risk Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_293)
+* [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5b86f48914_0_203)
 
 * [std_dev_risk.ipynb](Activities/15-Ins_Std_Dev_Risk/Solved/std_dev_risk.ipynb)
 
@@ -771,7 +781,7 @@ Introduce standard deviation and risk. Tell students that everything completed i
 
 * The next step is to use **standard deviation** and **risk** to analyze portfolio performance, calculate risk, and identify risky investments.
 
-Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_293) and explain the following:
+Open the slideshow and explain the following:
 
 * A key aspect of analyzing portfolio and stock data is determining **risk**. Pandas provides a series of functions that can be used to calculate risk.
 
@@ -874,13 +884,13 @@ In this section, students will be introduced to Sharpe ratios and learn why risk
 
 **Files:**
 
-* [Sharpe Ratios Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_351)
+* [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5e64436d8c_0_0)
 
 * [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py)
 
 Tell students that understanding how to identify risk and assess investment performance will help them adjust for risk in order to maximize reward.
 
-Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_351) and provide an overview of sharpe ratios and how they are calculated. Cover the following points:
+Open the slideshow and provide an overview of Sharpe ratios and how they are calculated. Cover the following points:
 
 * **Sharpe ratios** are used to help compare rate of return for an investment with its risk. Sharpe ratios shed light on the potential of profits even with risk involved.
 
@@ -1016,7 +1026,7 @@ Ask if there are any questions before moving on.
 
 ### 19. Instructor Do: Decompress and End Class (5 min)
 
-* [End Class Slides](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_392)
+**File:** [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5b86f48914_0_280)
 
 Another battle won, another level completed. Students have been excelling at a quantum speed, and it's important they understand this. End the class with the following positive remarks:
 
@@ -1042,4 +1052,4 @@ Engage the students by asking how they plan to incorporate skills from today's l
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

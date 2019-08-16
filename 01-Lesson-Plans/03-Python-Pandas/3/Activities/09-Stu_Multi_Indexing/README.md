@@ -28,4 +28,4 @@ Take this activity to the next level by calculating the mean close price for `GO
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

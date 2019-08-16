@@ -17,7 +17,7 @@ Specifically, upper management wants Harold to go beyond just evaluating stocks 
 
 * Equal-weighted allocations
 
-* Only non-correlated stocks
+* Only noncorrelated stocks
 
 * Only positive return-to-risk ratio stocks (Sharpe ratios)
 
@@ -33,23 +33,23 @@ Using the starter file, complete the following steps:
 
 2. Use the `corr` function and the `heatmap` function from the `seaborn` library to calculate and visualize the stock return correlations for each stock pair.
 
-3. Drop highly correlated stocks and keep only non-correlated stocks from the DataFrame. (2 stocks should be dropped.)
+3. Drop highly correlated stocks and keep only noncorrelated stocks from the DataFrame (two stocks should be dropped).
 
-4. Use the `mean` and `std` functions to calculate the annualized Sharpe ratio and assess the reward-to-risk ratio of the non-correlated stocks.
+4. Use the `mean` and `std` functions to calculate the annualized Sharpe ratio and assess the reward-to-risk ratio of the noncorrelated stocks.
 
-5. Drop stocks with negative Sharpe ratios from the DataFrame. (3 stocks should be dropped.)
+5. Drop stocks with negative Sharpe ratios from the DataFrame (three stocks should be dropped).
 
-6. Assess the investment potential of a non-correlated (diversified) and return-to-risk (Sharpe ratio) optimized portfolio:
+6. Assess the investment potential of a noncorrelated (diversified) and return-to-risk (Sharpe ratio) optimized portfolio:
 
-    * Set an equal weight for each stock in the optimized portfolio (5 stocks). Use the `dot` function to multiply weights by each stock's daily returns to output the optimized portfolio's daily returns.
+    * Set an equal weight for each stock in the optimized portfolio (five stocks). Use the `dot` function to multiply weights by each stock's daily returns to output the optimized portfolio's daily returns.
 
     * Calculate the optimized portfolio's cumulative returns, and then multiply the initial investment of $10,000 against the portfolio's series of cumulative returns. Plot the trend.
 
-7. Assess the investment potential of a non-correlated (diversified) portfolio:
+7. Assess the investment potential of a noncorrelated (diversified) portfolio:
 
-    * Set an equal weight for each stock in a non-correlated stock portfolio (8 stocks). Use the `dot` function to multiply weights by each stock's daily returns to output the non-correlated stock portfolio's daily returns.
+    * Set an equal weight for each stock in a noncorrelated stock portfolio (eight stocks). Use the `dot` function to multiply weights by each stock's daily returns to output the noncorrelated stock portfolio's daily returns.
 
-    * Calculate the non-correlated stock portfolio's cumulative returns, and then multiply the initial investment of $10,000 against the portfolio's series of cumulative returns. Plot the trend.
+    * Calculate the noncorrelated stock portfolio's cumulative returns, and then multiply the initial investment of $10,000 against the portfolio's series of cumulative returns. Plot the trend.
 
 8. Assess the investment potential of the original unoptimized portfolio:
 
@@ -65,4 +65,4 @@ Breathe easy! Take this activity one step at a time. Remember that this is the c
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

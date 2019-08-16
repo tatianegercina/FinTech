@@ -36,4 +36,4 @@ Analyze the average daily returns from a numerical standpoint. Which time period
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

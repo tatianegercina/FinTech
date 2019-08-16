@@ -371,7 +371,7 @@ Open [variables.py](Activities/04-Ins_Variables/Solved/variables.py) and highlig
   kilometers = 0.621371 * miles
   ```
 
-* Variables can be substituted inside of strings using a formatted string literal, or f-string. F-strings allow for **concatentation**, or combination of multiple strings. In the following code, the variable `kilometers` is converted to a string and then concatenated with the rest of the `message`.
+* Variables can be substituted inside of strings using a formatted string literal, or f-string. F-strings allow for **concatenation**, or combination of multiple strings. In the following code, the variable `kilometers` is converted to a string and then concatenated with the rest of the `message`.
 
   ```python
   message = f"The total kilometers driven was: {kilometers}"
@@ -598,8 +598,8 @@ Open [conditionals.py](Activities/06-Ins_Conditionals/Solved/conditionals.py) an
   * The inequality operator returns `True` if the two values do not equal one another.
 
     ```python
-    x = 9
-    if x != 1:
+    y = 9
+    if y != 1:
         print("y is not equal to 1")
     ```
 

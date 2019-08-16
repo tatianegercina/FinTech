@@ -2,7 +2,7 @@
 
 Harold has been asked to plot the 20-day, 50-day, and 100-day simple moving averages and rolling standard deviations for Netflix stock (NFLX). Upper management is looking to potentially invest long term in NFLX, but they want to be sure that they'll be taking a position at the right time.
 
-Use the Pandas library to help Harold plot the simple moving averages and rolling standard deviations in order to generate insights regarding whether or not the company should currently invest in NFLX long term.
+Use the Pandas library to help Harold plot the simple moving averages and rolling standard deviations in order to generate insights regarding whether or not the company should invest in NFLX long term.
 
 ## Instructions
 
@@ -27,10 +27,10 @@ Using the [starter file](Unsolved/simple_moving_averages.ipynb), complete the fo
     * 20-day rolling standard deviation
 
     * 50-day rolling standard deviation
-  
+
     * 100-day rolling standard deviation
 
-6. Overlay the plot for daily closing prices with the STDs.
+6. Overlay the plot for daily closing prices with the standard deviations.
 
 ## Hint
 
@@ -38,4 +38,4 @@ Go [here](https://www.investopedia.com/terms/s/sma.asp) to learn more about simp
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
