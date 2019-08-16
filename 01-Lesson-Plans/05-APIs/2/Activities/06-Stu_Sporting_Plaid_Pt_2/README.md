@@ -4,7 +4,7 @@ You've joined the **Plaid** ranks and have refused to bend the knee to the priva
 
 ## Instructions
 
-1. Open the JupyterLab [starter file](Unsolved/Core/sporting_plaid.ipynb), and create a Plaid `Client` object using the `plaid.Client` constructor.
+1. Open the JupyterLab [starter file](Unsolved/sporting_plaid.ipynb), and create a Plaid `Client` object using the `plaid.Client` constructor.
 
 2. Pass values for arguments `client_id`, `secret`, and `public key` to the `Client` object using the previously created environment variables.
 

@@ -78,7 +78,7 @@ Transition into a dry demonstration (just visit the site) of a practical FinTech
 
   2. Analyze data by either extracting financial information from Plaid or by using Plaid's out-of-the-box capabilities.
 
-  ![plaid_services.PNG](Images/plaid_services.PNG)
+  ![plaid_services.PNG](Images/plaid_services.png)
 
 - - -
 
@@ -608,7 +608,7 @@ Communicate to students that they can work with a partner to complete the activi
 
 **Files:**
 
-* [keys.sh](Activities/05-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/key.sh)
+* [keys.sh](Activities/05-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/keys.sh)
 
 * [sporting_plaid.ipynb](Activities/05-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/sporting_plaid.ipynb)
 
