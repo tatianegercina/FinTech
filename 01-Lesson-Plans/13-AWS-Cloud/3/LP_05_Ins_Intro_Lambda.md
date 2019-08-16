@@ -8,8 +8,6 @@ This activity will introduce AWS Lambda to students, also students will learn ho
 
 * [lambda_function.py](Activities/05-Ins_Intro_Lambda/Solved/lambda_function.py)
 
-* [convert_test_case.json](Activities/05-Ins_Intro_Lambda/Solved/convert_test_case.json)
-
 Start the activity by opening the lesson slides, navigate to the _Intro to AWS Lambda_ section and highlight the following:
 
 * Sometimes AWS Lambda is seen as a webservice or and API since it runs code remotely, however AWS Lambda is a serverless technology where you just upload your code and Lambda takes care of everything.
@@ -197,19 +195,11 @@ return close(
         return dispatch(event)
     ```
 
-After presenting the Lambda function's blocks, copy and paste the code from VSCode to the code editor on the AWS Lambda console, click on the _Save_ button and test the function using the sample test case provided.
+After presenting the Lambda function's building blocks, copy and paste the code from VSCode to the code editor on the AWS Lambda console, click on the _Save_ button to continue.
 
 ![Sample copied Lambda code](Images/copied-lambda-code.png)
 
-Show students how to create a test case, test cases should have a valid event data format. Click on the _Test_ button, then choose the _Create new test event_ option and paste the code from the [provided test case](Activities/05-Ins_Intro_Lambda/Solved/convert_test_case.json). Call the test `convertOkText` and click on the _Create_ button to finish.
-
-![Creating a test case](Images/lambda-text-case.png)
-
-Now the name of the new test case appears on the dropdown list next to the _Test_ button, click on it and you can see the test results on the window bellow the Lambda function code.
-
-![Test resutls](Images/lambda-test-ok.png)
-
-After testing the Lambda, open the Amazon Lex console to bind the `convertUSD` lambda function to the bot. Open the _Lambda initialization and validation_ section, enable the _Initialization and validation code hook_ option and select the `convertUSD` Lambda from the list, next be sure to select the `Latest` version.
+Open the Amazon Lex console to bind the `convertUSD` lambda function to the bot. Open the _Lambda initialization and validation_ section, enable the _Initialization and validation code hook_ option and select the `convertUSD` Lambda from the list, next be sure to select the `Latest` version.
 
 ![Configure the Lambda initializations and validation](Images/lambda-init-val.png)
 
