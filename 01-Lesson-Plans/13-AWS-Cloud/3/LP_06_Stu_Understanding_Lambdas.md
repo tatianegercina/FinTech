@@ -1,6 +1,6 @@
 ### 6. Student Do: Understanding Lambdas (15 mins)
 
-In this activity, students will inspect the code used on the previous demo to have a better understanding about how it works. Students will create their own Lambda function by importing the provided code and will build a new version of their bot.
+In this activity, students will inspect the code used on the previous demo to have a better understanding about how it works. Students will create their own Lambda function by importing the provided code and will build a new version of their bot. Be sure to slack out the [`lambda_function.py`](Activities/06-Stu_Understanding_Lambdas/Unsolved/lambda_function.py) code to students before starting the activity.
 
 **Instructions:**
 
