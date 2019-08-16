@@ -799,17 +799,21 @@ Answer any questions before moving on.
 
 ---
 
-### 18. Instructor Do: Review and Reflect (35 min)
+### 18. Instructor Do: Structured Review (35 mins)
 
-The final part of class is a time to debrief and review today's lesson. Ask students the following:
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
 
-- Are there any specific activities students want to revisit?
+Please use the entire time to review questions with the students before officially ending class.
 
-- How did everyone feel about the lesson? What were areas of confusion? What were areas of fulfillment/challenge?
+Suggested Format:
 
-Revisit key activities that will help students complete the homework assignment. Then allow them to begin the homework assignment with extra TA support.
+* Ask students for specific activities to revisit.
 
-Take your time during this review session. This is a great time to reinforce concepts and address any confusion.
+* Revisit key activities for the homework.
+
+* Allow students to start the homework with extra TA support.
+
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings
 
 ## End Class
 
