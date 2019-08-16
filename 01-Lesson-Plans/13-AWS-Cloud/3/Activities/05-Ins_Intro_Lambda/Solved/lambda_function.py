@@ -1,6 +1,7 @@
 ### Required Libraries ###
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
+from botocore.vendored import requests
 
 ### Functionality Helper Functions ###
 def parse_float(n):
@@ -10,12 +11,23 @@ def parse_float(n):
     try:
         return float(n)
     except ValueError:
-        return float('nan')
+        return float("nan")
+
+
+def get_btcprice():
+    """
+    Retrieves the current price of bitcoin in US Dollars from CoinMarketCap.
+    """
+    bitcoin_api_url = "https://api.coinmarketcap.com/v1/ticker/bitcoin/"
+    response = requests.get(bitcoin_api_url)
+    response_json = response.json()
+    price_usd = parse_float(response_json[0]["price_usd"])
+    return price_usd
 
 
 def build_validation_result(is_valid, violated_slot, message_content):
     """
-    Define a result message structured as Lex response.
+    Defines an internal validation message structured as a python dictionary.
     """
     if message_content is None:
         return {"isValid": is_valid, "violatedSlot": violated_slot}
@@ -34,7 +46,7 @@ def validate_data(birthday, usd_amount, intent_request):
 
     # Validate that the user is over 21 years old
     if birthday is not None:
-        birth_date = datetime.strptime(birthday, '%Y-%m-%d')
+        birth_date = datetime.strptime(birthday, "%Y-%m-%d")
         age = relativedelta(datetime.now(), birth_date).years
         if age < 21:
             return build_validation_result(
@@ -44,10 +56,11 @@ def validate_data(birthday, usd_amount, intent_request):
                 "please provide a different date of birth.",
             )
 
-
     # Validate the investment amount, it should be > 0
     if usd_amount is not None:
-        usd_amount = parse_float(usd_amount) # Since parameters are strings it's important to cast values
+        usd_amount = parse_float(
+            usd_amount
+        )  # Since parameters are strings it's important to cast values
         if usd_amount <= 0:
             return build_validation_result(
                 False,
@@ -56,7 +69,9 @@ def validate_data(birthday, usd_amount, intent_request):
                 "please provide a correct amount in USD to convert.",
             )
 
+    # A True results is returned if age or amount are valid
     return build_validation_result(True, None, None)
+
 
 ### Dialog Actions Helper Functions ###
 def get_slots(intent_request):
@@ -122,7 +137,7 @@ def convert_usd(intent_request):
     usd_amount = get_slots(intent_request)["usdAmount"]
 
     # Gets the invocation source, for Lex dialogs "DialogCodeHook" is expected.
-    source = intent_request["invocationSource"] #
+    source = intent_request["invocationSource"]  #
 
     if source == "DialogCodeHook":
         # This code performs basic validation on the supplied input slots.
@@ -150,20 +165,21 @@ def convert_usd(intent_request):
         # Fetch current session attributes
         output_session_attributes = intent_request["sessionAttributes"]
 
+        # Once all slots are valid, a delegate dialog is returned to Lex to choose the next course of action.
         return delegate(output_session_attributes, get_slots(intent_request))
 
-    # Get the initial investment recommendation
-    # initial_recommendation = get_investment_recommendation(risk_level)
-    btc_value = parse_float(usd_amount) * 0.000089
+    # Get the current price of BTC in USD and make the conversion from USD to BTC.
+    btc_value = parse_float(usd_amount) / get_btcprice()
+    btc_value = round(btc_value, 2)
 
-    # Return a message with the initial recommendation based on the risk level.
+    # Return a message with conversion's result.
     return close(
         intent_request["sessionAttributes"],
         "Fulfilled",
         {
             "contentType": "PlainText",
             "content": """Thank you for your information;
-            you can get {} Bitcoins for your {} US Dollars
+            you can get {} Bitcoins for your {} US Dollars.
             """.format(
                 btc_value, usd_amount
             ),
@@ -177,6 +193,7 @@ def dispatch(intent_request):
     Called when the user specifies an intent for this bot.
     """
 
+    # Get the name of the current intent
     intent_name = intent_request["currentIntent"]["name"]
 
     # Dispatch to bot's intent handlers
