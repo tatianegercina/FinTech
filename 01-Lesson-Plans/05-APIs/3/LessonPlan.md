@@ -46,7 +46,7 @@ By the end of class, students will be able to:
 
 **Files:**
 
-* [Slideshow](placeholder)
+* [Slideshow](https://docs.google.com/presentation/d/1AqrhqULvquRO1W6WdUrYBKp5jcLLngN989DItBr_IBQ/edit?usp=sharing)
 
 Welcome students to the third day of APIs! Cover the following points:
 
