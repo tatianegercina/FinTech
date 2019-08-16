@@ -1,6 +1,6 @@
 # Beta Comparisons
 
-Upper management at Harold's company is looking to potentially invest in a social media stock. They want to be somewhat conservative and look at social media stocks with the lowest beta, relative to the others. Harold has been asked to calculate and plot the 30-day rolling betas for social media stocks: Facebook (FB), Twitter (TWTR), and Snapchat (SNAP).
+Upper management at Harold's company is looking to potentially invest in a social media stock. They want to be somewhat conservative and look at social media stocks with the lowest beta relative to the others. Harold has been asked to calculate and plot the 30-day rolling betas for social media stocks: Facebook (FB), Twitter (TWTR), and Snapchat (SNAP).
 
 Use the Pandas library to help Harold calculate and plot the 30-day rolling betas for social media stocks, and then determine the social media stock with the lowest beta value.
 
@@ -34,4 +34,4 @@ Remember to set the `ax` parameter when plotting multiple datasets on a single c
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

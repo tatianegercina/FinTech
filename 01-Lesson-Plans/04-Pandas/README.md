@@ -17,8 +17,9 @@ This week we will cover...
 
 * [Student Guide](Supplemental/StudentGuide.md)
 
-- - -
 
-### Copyright
 
-© 2019 Trilogy Education Services
+------
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+

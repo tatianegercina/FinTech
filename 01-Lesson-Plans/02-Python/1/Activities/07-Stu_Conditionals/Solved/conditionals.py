@@ -19,11 +19,11 @@ if age > 20:
 else:
     print("Argggggh! You think you can hoodwink me, matey?! You're too young to drink!")
 
-# 4. Output: `GOT QUESTION 3!`
+# 4. Output: `GOT QUESTION 4!`
 x = 2
 y = 5
 if (x ** 3 >= y) and (y ** 2 < 26):
-    print("GOT QUESTION 3!")
+    print("GOT QUESTION 4!")
 else:
     print("Oh good you can count")
 

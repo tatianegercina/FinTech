@@ -1,36 +1,46 @@
 ## Traversing Through Dictionaries
 
-In this challenge, you are given a large dictionary `show_data.py`. Your job is to navigate through this dictionary and to answer the prompts via key-value pairs.
+In this challenge, you are given a large dictionary `show_data.py`. Your job is to navigate through this dictionary and answer the prompts via key-value pairs.
 
-For example, who is the actor that plays Ned Stark in Game of Thrones (drama)?
+Here's an example:
 
-Correct Answer: `shows["genre"]["drama"]["game_of_thrones"]["cast"][0]["actor"]`
+**Prompt:** What actor plays Ned Stark in _Game of Thrones_ (drama)?
+
+**Correct Answer:**
+
+`shows["genre"]["drama"]["game_of_thrones"]["cast"][0]["actor"]`
 
 ## Instructions
 
 Open the [starter file](Unsolved/dicts-02.py) and perform the following:
 
-1. Use the `from` keyword to import the `shows` dictionary from the `show_data.py` file
+1. Use the `from` keyword to import the `shows` dictionary from the `show_data.py` file.
 
 2. Answer each question by printing the expected result using bracket notation for the `show` dictionary.
 
 3. Execute the Python program.
 
-    1. Open your terminal/git bash.
+    * Open the command line.
 
-    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+    * Run `source activate PythonData` to activate your virtual environment.
 
-    3. Navigate to the directory that is holding this code drill.
+    * Navigate to the directory that is holding this code drill.
 
-    4. Run `python filename.py` to test your output.
+    * Run `python filename.py` to test your output.
 
 ## Hint
 
-You may find that you're repeating yourself a lot. It may be helpful to create variables that point to different locations within the dictionary.
+In this activity, you may find that you're repeating yourself a lot. It may be helpful to create variables that point to different locations within the dictionary. For example:
 
-For example: `drama = shows["genre"]["drama"]`
+`drama = shows["genre"]["drama"]`
 
-Then to get the actor who plays Rick in Walking Dead, we would simply write `drama["the_walking_dead"]["cast"][0]["actor"]` as opposed to `shows["genre"]["drama"]["the_walking_dead"]["cast"][0]["actor"]`.
+Then, to get the actor who plays Rick in _The Walking Dead_, we would simply write:
+
+`drama["the_walking_dead"]["cast"][0]["actor"]` 
+
+As opposed to:
+
+`shows["genre"]["drama"]["the_walking_dead"]["cast"][0]["actor"]`.
 
 ---
 

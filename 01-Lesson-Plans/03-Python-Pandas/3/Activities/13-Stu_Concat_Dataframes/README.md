@@ -14,4 +14,4 @@ Using the [starter file](Unsolved/mastering_concatenation.ipynb) and the data in
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

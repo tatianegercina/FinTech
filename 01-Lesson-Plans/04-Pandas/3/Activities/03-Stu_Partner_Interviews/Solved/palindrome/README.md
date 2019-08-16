@@ -1,11 +1,10 @@
 # Palindrome
 
-### Problem
-
 Write a function that determines if a string argument is a palindrome.
 
 Example:
-```
+
+```python
 palindrome("mom")
 # Output: True
 
@@ -13,43 +12,45 @@ palindrome("mother")
 # Output: False
 ```
 
-### Notes to the Interviewer
+## Notes to the Interviewer
 
 Remember—you are concerned more with the candidate's ability to _communicate_ their approach than with the correctness of their solution. For the purposes of this exercise, both provided solutions are equally acceptable.
 
-If your candidate finds a solution quickly, make them work towards one of the solutions that they did _not_ discover.
+If your candidate finds a solution quickly, make them work toward one of the solutions that they did _not_ discover.
 
-### Prompts from the Interviewer
+## Prompts from the Interviewer
 
 The interviewer may use these prompts to prompt additional problem-solving from the interviewee. It is not mandatory to raise every prompt.
 
 * **Prompt**: Will this work with strings that have spaces?
 
-  * **Ask If**: What if the test string was:
+  * **Ask If**: What if the test string were:
 
   ```python
   test = "Never odd or even"
   ```
 
-  * **Ask During**: Solution Sketch, Implementation Discussion
+  * **Ask During**: Solution sketch, implementation discussion.
 
-  * **Look For**
+  * **Look For:**
 
-    * **Candidate can confirm yes or no based on their solution**.
+    * Candidate can confirm yes or no based on their solution.
 
-      * The best candidates will be able to tweak their solution to allow remove spaces for the test.
-
+    * The best candidates will be able to tweak their solutions to allow removal of spaces for the test.
+  
 * **Prompt**: Is this the only solution?
 
-  * **Ask During**: Solution Sketch, Implementation Discussion
+  * **Ask During**: Solution sketch, implementation discussion.
 
-  * **Look For**
+  * **Look For:**
 
-    * **Candidate Discusses Alternatives**. Strong candidates will identify multiple solution approaches, but it's okay if they don't see more than one.
+    * Candidate discusses alternatives.
 
-      * What you want to see is that the candidate **explains alternative approaches**, or **justifies why no alternative exists**.
+    * Strong candidates will identify multiple-solution approaches, but it's OK if they don't see more than one.
+  
+    * What you want to see is that the candidate explains alternative approaches or justifies why no alternative exists.
 
-### Hints
+## Hints
 
 * Write down a palindrome. Can you point out which parts are equal?
 
@@ -59,8 +60,10 @@ The interviewer may use these prompts to prompt additional problem-solving from 
 
   * This is a fairly revealing hint. Only provide it if necessary.
 
-### Solutions
+## Solutions
 
-#### Direct Solution
+[Palindrome.ipynb](Solved/Palindrome.ipynb).
 
-[Palindrome.ipynb](Solutions/Palindrome.ipynb).
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

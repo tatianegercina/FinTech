@@ -1,28 +1,38 @@
 # Return to Functions
 
-By including a return value, we can have functions build upon each other. We can use those return values elsewhere in our code. Otherwise, we can't refer to values created within functions outside of them.
+In this activity, you'll get more practice with functions. By including a return value, functions can build upon each other. Those return values can be used elsewhere in the code. Otherwise, we can't refer to values created within functions outside of them.
 
 ## Instructions
 
 Perform the following:
 
-1. Define a function "warble" that takes in a string as an argument, adds " arglebargle" to the end of it, and returns the result.
+1. Define a function `warble` that takes in a string as an argument, adds " arglebargle" to the end of it, and returns the result.
 
-2. Print the result of calling your "warble" function with the argument "hello".
+2. Print the result of calling your `warble` function with the argument "hello".
 
-3. Define a function "wibble" that takes a string as an argument, prints the argument, prepends "wibbly " to the argument, and returns the result
+3. Define a function `wibble` that takes in a string as an argument, prints the argument, prepends "wibbly" to the argument, and returns the result.
 
-4. Print the result of calling your "wibble" function with the argument "bibbly"
+4. Print the result of calling the `wibble` function with the argument "bibbly".
 
-5. Define a function "print_sum" that takes in two numbers as arguments and prints the sum of those two numbers.
+5. Define a function `print_sum` that takes in two numbers as arguments and prints the sum of those two numbers.
 
-6. Define a function "return_sum" that takes in two numbers as arguments and returns the sum of those two numbers
+6. Define a function `return_sum` that takes in two numbers as arguments and returns the sum of those two numbers.
 
-7. Define a function "triple_sum" that takes in 3 arguments and returns the sum of those 3 numbers.
+7. Define a function `triple_sum` that takes in three arguments and returns the sum of those three numbers.
 
-8. Define a function "dance_party" that takes in a string as an argument, that prints "dance!", updates the string from calling "wibble" function with that argument, updates the string from calling "warble" function with that argument, returns the updated string
+8. Define a function `dance_party` that:
 
-9. Print the result of calling your "dance_party" function with your name as the argument
+    * Takes in a string as an argument.
+    
+    * Prints "dance!"
+    
+    * Updates the string from calling the `wibble` function with that argument. 
+    
+    * Updates the string from calling the `warble` function with that argument.
+    
+    * Returns the updated string.
+
+9. Print the result of calling your `dance_party` function with your name as the argument. 
 
     ```
     # Should result in:
@@ -33,13 +43,13 @@ Perform the following:
 
 10. Execute the Python program.
 
-    1. Open your terminal/git bash.
+    * Open the command line.
 
-    2. From within the terminal/git bash run `source activate PythonData` to activate your virtual environment.
+    * Run `source activate PythonData` to activate your virtual environment.
 
-    3. Navigate to the directory that is holding this code drill.
+    * Navigate to the directory that is holding this code drill.
 
-    4. Run `python filename.py` to test your output.
+    * Run `python filename.py` to test your output.
 
 ---
 
