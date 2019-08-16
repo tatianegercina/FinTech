@@ -216,7 +216,7 @@ This activity drives home the discussion on the client-server model by having st
 
 **Files:**
 
-* [eavesdropping.md](Activities/01-Stu_Eavesdropping_On_Server/Solved/eavesdropping.md)
+* [eavesdropping.md](Activities/01-Stu_Eavesdropping_On_Server/Solved/client_server_model.md)
 
 Open the solution and walk through the following:
 
@@ -262,7 +262,7 @@ Be sure to have the Postman client installed prior to beginning this activity. C
 
 **Files:**
 
-* [Postman Install Guide](../../Supplementary/PostmanInstallGuide.md)
+* [Postman Install Guide](../Supplemental/PostmanInstallGuide.md)
 
 Briefly recap on how APIs have been submitted so far. Ask the students:
 
