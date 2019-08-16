@@ -70,7 +70,7 @@ Be sure to have the following websites loaded prior to class so that the demo ca
 
 **Files:**
 
-* [welcome-slides]()
+* [welcome-slides](https://docs.google.com/presentation/d/1cn9TvizIpIEQ4v1_HR5xQkjQV0v7zyYQHHkwCM-BCeU/edit?usp=sharing)
 
 Start the class off with a review of the introductory slide about APIs. Highlight the following:
 
