@@ -1,6 +1,6 @@
 ### 15. Student Do: Monte Carlo Dashboard Web App (10 mins)
 
-Students complete a Bag of Tricks activity where they revisit simulations and use Monte carlo to predict housing sales prices over the next 10 years.
+Students complete a Bag of Tricks activity where they revisit simulations and use Monte carlo to predict housing sales prices over the next 10 years. Monte carlo output will be visualized on a dashboard so that insights and decisions can be made based off of the predictions.
 
 Data for this activity was acquired from [catalog.data.gov](https://catalog.data.gov/dataset/real-estate-sales-2001-2016).
 
