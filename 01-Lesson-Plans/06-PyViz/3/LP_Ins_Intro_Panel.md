@@ -1,4 +1,4 @@
-### 2. Instructor Do: Intro to Panel (5 mins) (Critical)
+### 2. Instructor Do: Intro to Panel (10 mins) (Critical)
 
 **Files:**
 
