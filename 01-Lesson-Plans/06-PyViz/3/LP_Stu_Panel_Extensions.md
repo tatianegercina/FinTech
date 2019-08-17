@@ -54,7 +54,7 @@ Open the solution and explain the following:
   crime_pop_dashboard
   ```
 
-  ![panel_tabs.png](Images/panel_tabs.png)
+  ![panel_dashboard_tabs.png](Images/panel_dashboard_tabs.png)
 
   ![population_crime_dashboard.gif](Images/population_crime_dashboard.gif)
 
