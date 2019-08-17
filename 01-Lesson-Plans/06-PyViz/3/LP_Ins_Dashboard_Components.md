@@ -1,4 +1,4 @@
-### 5. Instructor Do: Panel Dashboard Components (5 mins) (Critical)
+### 5. Instructor Do: Panel Dashboard Components (10 mins) (Critical)
 
 In this activity, students receive a demonstration of how to use and customize Panel's dashboard components.
 
