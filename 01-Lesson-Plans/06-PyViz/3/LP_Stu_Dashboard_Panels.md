@@ -29,7 +29,7 @@ Open the solution and explain the following:
   row_of_parallel = pn.Row(parallel_categories, parallel_coordinates)
   ```
 
-  ![panel_row.png](Images/panel_row.png)
+  ![panel_row.png](Images/panel_rows.png)
 
 * Column objects store content into a vertical container. Column panels work just like **row** objects, except data is stored vertically rather than horizontally.
 
@@ -39,7 +39,7 @@ Open the solution and explain the following:
   plots_as_column
   ```
 
-  ![panel_column.png](Images/panel_column.png)
+  ![panel_column.png](Images/panel_columns.png)
 
 * Tab objects allow media/content to be segmented into different views. Tabs are a key feature that allow dashboards to have more than one report. Each tab can be considered a report or view, and each view can have its own reporting/analytic approach for gaining insights.
 
