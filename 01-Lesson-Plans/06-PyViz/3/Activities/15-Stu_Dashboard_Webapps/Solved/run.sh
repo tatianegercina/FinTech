@@ -1,1 +1,1 @@
-panel run monte_carlo_dashboard.ipynb
+panel serve monte_carlo_dashboard.ipynb

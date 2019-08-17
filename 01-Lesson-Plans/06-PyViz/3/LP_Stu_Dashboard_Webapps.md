@@ -22,7 +22,7 @@ The instructor and students will review the Monte Carlo Dashboard web app activi
 
 Communicate to students that this activity review will be focused on discussing the benefit and usefulness of Panel dashboards, from their point of view.
 
-* Expalin to students that creating a report in Jupyter Notebook is much different than deploying a dashboard as a web app. Ask students which approach do they feel is more valuable? What are the pros and cons?
+* Explain to students that creating a report in Jupyter Notebook is much different than deploying a dashboard as a web app. Ask students which approach do they feel is more valuable? What are the pros and cons?
 
   * **Answer** Creating a dashboard is better for visualizing data for the purpose of gaining insight from data in order to make data driven decisions.
 
@@ -34,13 +34,13 @@ Communicate to students that this activity review will be focused on discussing 
 
   * **Answer** Panel's widget bar allows users to manipulate and change the underlying data being presented. This is an incredibly powerful tool, especially since most interactive and static plots do not offer this capability. By being able to control data values, users can actually perform impact analysis on the fly and make decisions based off of the results of the interaction.
 
-* When running the `servable` and `panel serve` commands, Panel spins up a Bokeh server to host the dashboard. This deploys the dashboard as a webapp. What are some of the performance considerations to keep in mind when doing this?
+* When running the `servable` and `panel serve` commands, Panel spins up a Bokeh server to host the dashboard. This deploys the dashboard as a web app. What are some of the performance considerations to keep in mind when doing this?
 
   * **Answer** The Bokeh server is ran locally, and so all dashboard operations are goign to use local resources. This could result in large amounts of CPU and RAM being consumed. This could impact load performance.
 
 * Panel components share the same operations as Python lists. How did it feel having the ability to control rows, columns, and tabs in the same way as a list?
 
-  * **Answer** Being able to contorl what items went into a row, column, and tab made it extremely convenient to create the dashboard. Panel dashboard components take out all of the work required to make an aeshtetically pleasing web app. Gone are the days where one has to worry about margins and relative positioning.
+  * **Answer** Being able to control what items went into a row, column, and tab made it extremely convenient to create the dashboard. Panel dashboard components take out all of the work required to make an aesthetically pleasing web app. Gone are the days where one has to worry about margins and relative positioning.
 
 * In many companies, backend developers work with visualization developers to create dashboards and reports. Backend developers will work with languages like Python and visualization developers will use a separate visualization technology stack (i.e. Cognos, Tableau, etc). How does it feel knowing that you can now do both jobs with just your Python experience?
 
@@ -54,6 +54,6 @@ Finish the day off communicating to students that they have exponentially increa
 
 * Emphasize that all executive teams need dashboard and reporting infrastructure to make decisions and drive business. The programming and visualization skills will make students competitive candidates in the job market.
 
-If time reamins, ask students to consider how they want to use interactive plotting technologies and Panel dashboards in the future. Have volunteers communicate their aspirations.
+If time remains, ask students to consider how they want to use interactive plotting technologies and Panel dashboards in the future. Have volunteers communicate their aspirations.
 
 Congratulate students again, and then end the class with a note encouraging students to reach out with any question and to attend office hours.
