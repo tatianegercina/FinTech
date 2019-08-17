@@ -48,11 +48,11 @@ Communicate to students that this activity review will be focused on discussing 
 
   * **Answer** It is comforting to know that my Python skills can allow me to create an end-to-end process that includes data wrangling, data analysis, and data visualization.
 
-Finish the day off communicating to students that they have exponentially increased their exposure and understanding of the PyViz ecosystem. 
+Finish the day off communicating to students that they have exponentially increased their exposure and understanding of the PyViz ecosystem.
 
 * They can now use Pandas, Matplotlib, hvPlot, and Plotly to create visualizations, and they can use these visualizations for a reporting platform, much in the same way that data analysts and data scientists are doing in the field.
 
-* Emphasize that all executive teams need dashboard and reporting infrastructure to make decisions and drive business. The programming and visualization skills will make students competitive candidates in the job market. 
+* Emphasize that all executive teams need dashboard and reporting infrastructure to make decisions and drive business. The programming and visualization skills will make students competitive candidates in the job market.
 
 If time reamins, ask students to consider how they want to use interactive plotting technologies and Panel dashboards in the future. Have volunteers communicate their aspirations.
 
