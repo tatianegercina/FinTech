@@ -10,22 +10,22 @@ Open the solved file, and give students a high level run down of how Panel works
 
 * Panel can be imported into Python using the import command.
 
-    ```python
-    import panel as pn
-    ```
+  ```python
+  import panel as pn
+  ```
 
 * Panel comes equipped with its own set of libraries, functions, and widgets. An example library is the `panel.interact` library.
 
-    ```python
-    from panel.interact import interact
-    from panel import widgets
-    ```
+  ```python
+  from panel.interact import interact
+  from panel import widgets
+  ```
 
 * When working with Panel in Jupyter Lab, the Jupyter Lab Panel plugin is required. The plugin can be activated using the `extension` command. If the extension is not activated, Panel objects will not render in Jupyter Lab.
 
-    ```python
-    pn.extension()
-    ```
+  ```python
+  pn.extension()
+  ```
 
 Walk students through how the `interact` function is used to create quick and easy widget UI controls:
 
@@ -69,22 +69,22 @@ In addition to Python data structures, the `interact` function can be used with 
 
 * **Panel** will then create UI widgets to allow users to dynamically change parameters. An example would be plotting housing transactions data where the number of records plotted is parameterized. The `interact` function will create a widget that allows users to change configure the number of records being plotted.
 
-    ```python
-    # Define function to create plot
-    def plot_housing_tx(number_of_sales):
-        housing_transactions = pd.DataFrame({
-        "years": np.random.randint(2010,2019,number_of_sales),
-        "sales": np.random.randint(53,500,number_of_sales),
-        "foreclosures": np.random.randint(10,147,number_of_sales)}).sort_values(['years','sales'])
+  ```python
+  # Define function to create plot
+  def plot_housing_tx(number_of_sales):
+      housing_transactions = pd.DataFrame({
+      "years": np.random.randint(2010,2019,number_of_sales),
+      "sales": np.random.randint(53,500,number_of_sales),
+      "foreclosures": np.random.randint(10,147,number_of_sales)}).sort_values(['years','sales'])
 
-        return housing_transactions.hvplot.scatter(x='sales',
-                                        y='foreclosures',
-                                        c='years',
-                                        colormap='viridis',
-                                                title='Alleghany, PA Housing Transactions')
+      return housing_transactions.hvplot.scatter(x='sales',
+                                      y='foreclosures',
+                                      c='years',
+                                      colormap='viridis',
+                                              title='Alleghany, PA Housing Transactions')
 
-    # Render plot with Panel interactive widget
-    interact(plot_housing_tx, number_of_sales=100)
-    ```
+  # Render plot with Panel interactive widget
+  interact(plot_housing_tx, number_of_sales=100)
+  ```
 
-    ![interact_plot.gif](Images/interact_plot.gif)
+  ![interact_plot.gif](Images/interact_plot.gif)
