@@ -179,11 +179,11 @@ Navigate to the 6.1 slides, and highlight the following:
 
 Transition to the dry walkthrough of the installation guide, and highlight the following:
 
-* To install PyViz, PyViz dependencies will need to be downloaded. This includes nodejs5 and dpm.
+* To install PyViz, PyViz dependencies will need to be downloaded. This includes nodejs and dpm.
 
   ```shell
-  pip install nodejs
-  pip install npm
+  conda install nodejs
+  conda install npm
   ```
 
 * The actual PyViz packages will need to be installed after all dependencies have been acquired. The key packages are Plotly Express and Panel.
