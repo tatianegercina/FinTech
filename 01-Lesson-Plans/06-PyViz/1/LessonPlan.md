@@ -60,9 +60,9 @@ By the end of this class, students will be able to:
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
-### 1. Instructor Do - Welcome (5 mins)
+### 1. Instructor Do * Welcome (5 mins)
 
 **Files:**
 
@@ -77,6 +77,7 @@ Navigate to the 6.1 slides, and highlight the following:
 * In order to create interactive plots, users need to be able to access visualization libraries and packages that offer interactive visualizations. Otherwise, the visualizations would have to be coded manually, which can be extremely cumbersome.
 
 * PyViz is a data visualization ecosystem made specifically for Python. PyViz itself works as a wrapper around these various technologies
+
   * Example visualization technologies included with PyViz are hvPlot, Plotly Express, and Panel.
 
 * PyViz aims to provide a single stop-and-shop space for all data visualization needs.
@@ -94,9 +95,9 @@ End the module communicating to students that gone are the days where simple lin
 
 Ask for any questions before proceeding.
 
-- - -
+---
 
-### 2. Instructor Do - Review Homework (5 mins)
+### 2. Instructor Do * Review Homework (5 mins)
 
 This activity involves a quick demo and review of the homework.
 
@@ -122,9 +123,9 @@ Demo the homework solution by giving the students a preview of the solution.
 
 Ask the students for any questions before moving forward.
 
-- - -
+---
 
-### 3. Instructor Do - Intro to PyViz (5 mins)
+### 3. Instructor Do * Intro to PyViz (5 mins)
 
 Students will be introduced to PyViz by way of a facilitated discussion led by the instructor. The discussion will focus on the advantages of using PyViz rather than individual technologies (i.e. Holoviews, Matplotlib, d3.js, etc.).
 
@@ -149,15 +150,16 @@ Facilitate discussion by asking the following questions:
   * **Answer** Matplotlib and Holoviews may not satisfy all of the visualization needs required. For example, Matplotlib and Holoviews provide visualizations, but they do not offer a way to create a dashboard. Installing PyViz will ensure all viable technologies are accessible.
 
   * **Answer** Installing PyViz instead of just the individual technologies would mean that you’d get access to the individual technologies, as well as the integration architecture that PyViz uses to integrate the libraries.
+
 * What other environment have we worked in that resembles the PyViz environment?
 
   * **Answer** The Anaconda environment
 
 Ask if there are any questions; then, move onto the next module.
 
-- - -
+---
 
-### 4. Instructor Do - PyViz Demo (10 mins)
+### 4. Instructor Do * PyViz Demo (10 mins)
 
 By the end of this activity, students will have a solid understanding of how to install PyViz and import it into a development environment.
 
@@ -205,9 +207,9 @@ Before finishing the activity, reassure students and let them know that time has
 
 Ask students if they have any questions before moving forward.
 
-- - -
+---
 
-### 5. Students Do - System Check (5 mins)
+### 5. Students Do * System Check (5 mins)
 
 In this activity, students will work in pairs to confirm everyone has PyViz installed.
 
@@ -223,7 +225,7 @@ If time remains after students have completed the check, ask for the chosen grou
 
 * What are the required steps for setting up Panel? For example, the first step is to ensure all dependencies have been installed and the conda environment updated. What's next?
 
-  * **Answer** The second step is to install the PyViz packages. These can be done using the `conda install` or  `pip install` commands. The packages that need to be downloaded are:
+  * **Answer** The second step is to install the PyViz packages. These can be done using the `conda install` or `pip install` commands. The packages that need to be downloaded are:
 
     * Plotly Express
 
@@ -235,9 +237,9 @@ If time remains after students have completed the check, ask for the chosen grou
 
 Ask if there are any questions before moving on.
 
-- - -
+---
 
-### 6. Instructor Do - Intro to hvPlot (5 mins)
+### 6. Instructor Do * Intro to hvPlot (5 mins)
 
 Students participate in a formal lecture regarding what hvPlot is and what it has to offer in terms of data visualization.
 
@@ -265,25 +267,25 @@ Navigate to the 6.1 slides, and introduce students to the world of hvPlots inter
 
 Encourage students to review some of the [example plots](https://hvplot.pyviz.org/) on their own time. Make sure ot slack out this link.
 
-  ```
+```
 https://hvplot.pyviz.org/
-  ```
+```
 
 If time remains, review some of the common hvPlot charts and their interactive features. Highlight the following:
 
-  ![hv_plot_1.PNG](Images/hv_plot_1.PNG)
+![hv_plot_1.PNG](Images/hv_plot_1.PNG)
 
-  ![hv_plot_2_streamz.PNG](Images/hv_plot_2_streamz.PNG)
+![hv_plot_2_streamz.PNG](Images/hv_plot_2_streamz.PNG)
 
-  ![hv_plot_3_geo_views.PNG](Images/hv_plot_3_geo_views.PNG)
+![hv_plot_3_geo_views.PNG](Images/hv_plot_3_geo_views.PNG)
 
-  ![hv_plot_4_networkx.PNG](Images/hv_plot_4_networkx.PNG)
+![hv_plot_4_networkx.PNG](Images/hv_plot_4_networkx.PNG)
 
 Ask if there are any questions. Then, continue to the next activity.
 
-- - -
+---
 
-### 7. Instructor Do - hvPlot Demo (5 mins)
+### 7. Instructor Do * hvPlot Demo (5 mins)
 
 **Files:**
 
@@ -291,50 +293,57 @@ Ask if there are any questions. Then, continue to the next activity.
 
 Open the [starter file](Activities/02-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb), and live code the following:
 
-  * The **hvPlot** library has to be imported into the Python environment. hvPlot offers a library called **hvPlot.Pandas** that integrates hvPlot with Pandas DataFrame API. This allows Pandas DataFrames to be visualized using hvPlot.
+* The **hvPlot** library has to be imported into the Python environment. hvPlot offers a library called **hvPlot.Pandas** that integrates hvPlot with Pandas DataFrame API. This allows Pandas DataFrames to be visualized using hvPlot.
 
-    ```python
-    import hvplot.pandas
-    ```
+  ```python
+  import hvplot.pandas
+  ```
 
-  * The great thing about **hvPlot** being abstracted over Pandas is that the two technologies share plotting interfaces. This marriage is the definition of not reinventing the wheel.
+* The great thing about **hvPlot** being abstracted over Pandas is that the two technologies share plotting interfaces. This marriage is the definition of not reinventing the wheel.
 
-    * Emphasize to students that even though hvPlot uses the function `hvplot` and Pandas `plot`, the `hvplot` function actually references the Pandas `plot` interface. This allows for hvPlots to be created and manipulated in the same ways as Pandas plots (including plot attributes), just with an interactive component.
+  * Emphasize to students that even though hvPlot uses the function `hvplot` and Pandas `plot`, the `hvplot` function actually references the Pandas `plot` interface. This allows for hvPlots to be created and manipulated in the same ways as Pandas plots (including plot attributes), just with an interactive component.
 
-  * The `hvPlot` function is used to create a standard hvPlot chart. For example, when applied against a DataFrame containing cumulative returns for five different tickers, hvPlot would create a visualization using the metadata and data from the DataFrame. No configuration is needed by the user.
+* The `hvPlot` function is used to create a standard hvPlot chart. For example, when applied against a DataFrame containing cumulative returns for five different tickers, hvPlot would create a visualization using the metadata and data from the DataFrame. No configuration is needed by the user.
 
-    ```python
-    # Data Prep
-    df_idx = pd.date_range('1/1/2018', periods=1000)
-    df = pd.DataFrame(np.random.randn(1000,4),index=df_idx, columns=('APPL','GOGLE','AMMD','BCOIN')).pct_change()
+  ```python
+  # Data Prep
+  df_idx = pd.date_range('1/1/2018', periods=1000)
+  df = pd.DataFrame(
+    np.random.randn(1000,4),
+    index=df_idx,
+    columns=('APPL','GOGLE','AMMD','BCOIN')
+  ).pct_change()
 
-    # Use hvplot() function to plot data
-    df.hvplot()
-    ```
+  # Use hvplot() function to plot data
+  df.hvplot()
+  ```
 
-    ![hvplot_line.png](Images/hvplot_line.png)
+  ![hvplot_line.png](Images/hvplot_line.png)
 
 * Similar to the `Pandas.plot` API, the `hvPlot` function comes with a `line` attribute. The `line` attribute explicitly specifies to hvPlot that the visualization should be a line chart.
 
-    ```python
-    # Use hplot.line to create line plot
-    df.hvplot.line(
-        xlabel="Year",
-        ylabel="Daily Return"
-    )
-    ```
+  ```python
+  # Use hplot.line to create line plot
+  df.hvplot.line(
+      xlabel="Year",
+      ylabel="Daily Return"
+  )
+  ```
 
 * The `hvPlot` function also has a `bar` attribute for visualization of categorical data. It works the same as the `line` attribute, but it creates a **bar** visualization rather than **line**. It is important to note to students that bar plots require categorical data and not just time series data. Bar plots need to compare the **x** axis against **y**.
 
-    ```python
-    # Data Prep
-    df = pd.DataFrame({'ticker':['APPL','GOGLE', 'AMMD','BCOIN'], 'daily_return':(4.50,10,33.0,55.25)})
+  ```python
+  # Data Prep
+  df = pd.DataFrame(
+    {'ticker':['APPL','GOGLE', 'AMMD','BCOIN'],
+    'daily_return':(4.50,10,33.0,55.25)}
+  )
 
-    # Use hvplot.bar() to create bar plot with categorical data
-    df.hvplot.bar(x='ticker', y='daily_return', xlabel='Ticker', ylabel='Daily Return', rot=90)
-    ```
+  # Use hvplot.bar() to create bar plot with categorical data
+  df.hvplot.bar(x='ticker', y='daily_return', xlabel='Ticker', ylabel='Daily Return', rot=90)
+  ```
 
-    ![hvplot_bar.png](Images/hvplot_bar.png)
+  ![hvplot_bar.png](Images/hvplot_bar.png)
 
 If time remains, choose either the line or bar visualization, and demonstrate to students how to use hvPlot's interactive features. Highlight the following:
 
@@ -352,9 +361,9 @@ If time remains, choose either the line or bar visualization, and demonstrate to
 
 Ask students if they have any questions before moving onto the next activity.
 
-- - -
+---
 
-### 8. Students Do - Plotting a Visual Takeover (15 mins)
+### 8. Students Do * Plotting a Visual Takeover (15 mins)
 
 In this activity, students re-visit plots they made earlier in the class using Matplotlib and they re-create them as hvplots. This bridge assignment aims to demonstrate the similarities between hvplot plot API and Matplotlib's.
 
@@ -366,13 +375,13 @@ In this activity, students re-visit plots they made earlier in the class using M
 
 * [plotting_visual_takeover.ipynb](Activities/03-Stu_Plotting_Visual_Takeover/Unsolved/Core/plotting_visual_takeover.ipynb)
 
-- - -
+---
 
 ### 9. BREAK (15 mins)
 
-- - -
+---
 
-### 10. Instructor Do - Plotting a Visual Takeover Activity Review (5 mins)
+### 10. Instructor Do * Plotting a Visual Takeover Activity Review (5 mins)
 
 **Files:**
 
@@ -411,9 +420,9 @@ If time remains, transition into a small review session. Ask the following guide
 
 Ask for any remaining questions before moving on.
 
-- - -
+---
 
-### 11. Instructor Do - Intro to Interactive Visualizations (5 mins)
+### 11. Instructor Do * Intro to Interactive Visualizations (5 mins)
 
 Students participate in a facilitated discussion led by the instructor regarding the different types of chart interactions that are capable with hvPlots.
 
@@ -449,9 +458,9 @@ Navigate to the 6.1 slides, and highlight the following:
 
 Ask if there are any questions before moving forward.
 
-- - -
+---
 
-### 12. Instructor Do - hvplot Widgets (10 mins)
+### 12. Instructor Do * hvplot Widgets (10 mins)
 
 By the end of this activity, students and instructor will have deep dived into the different interactions possible with hvPlots. While students may have used some of the widgets already, this activity will serve as a formal review of each button and interaction.
 
@@ -517,9 +526,9 @@ Transition into a demo of the widget bar by opening the solution file, and highl
 
 Ask if there are any questions, and then continue to the student activity.
 
-- - -
+---
 
-### 13. Students Do - hvPlot Widgets (10 mins)
+### 13. Students Do * hvPlot Widgets (10 mins)
 
 In this activity, students will play around with the hvPlot widgets to get more accustom to the different types of interactions supported with hvPlots. Students use hvPlot visualizations to explore hospital claims data and answer a few basic questions about the data.
 
@@ -531,7 +540,7 @@ In this activity, students will play around with the hvPlot widgets to get more 
 
 * [hvplot_widgets.ipynb](Activities/05-Stu_hvPlot_Widgets/Unsolved/hvplot_widgets.ipynb)
 
-### 14. Instructor Do - hvPlot Widgets Activity Review (5 mins)
+### 14. Instructor Do * hvPlot Widgets Activity Review (5 mins)
 
 The instructor will lead a facilitated review section in this activity. The emphasis will be placed on what each widget does and how they can be used in conjunction with one another to deep dive into data analysis and exploration.
 
@@ -561,9 +570,9 @@ Engage the students by facilitating a review discussion. Ask the following quest
 
 Ask for any remaining questions before moving on.
 
-- - -
+---
 
-### 15. Instructor Do - Composing Plots (5 mins)
+### 15. Instructor Do * Composing Plots (5 mins)
 
 By the end of this activity, students will have received a dry walkthrough demo on how to combine two plot objects to create a plot with subplots. This activity will teach students how to create plot layouts and overlay visualizations to create a centralized location for comparative data analysis.
 
@@ -596,15 +605,14 @@ Open the starter file and facilitate a dry walkthrough demonstration of composin
 
   * Even plots of different types can be overlayed (i.e. line and bar). hvPlot will align the data from both plots along the same axis.
 
+```python
+payment_by_state_med = procedure_699_charges[['Average Medicare Payments','Provider State']]
+total_payment_by_state_med = payment_by_state_med.groupby('Provider State').sum()
+sorted_data_med = total_payment_by_state_med.sort_values('Average Medicare Payments')
+sorted_data.hvplot() * sorted_data_med.hvplot()
+```
 
-  ```python
-  payment_by_state_med = procedure_699_charges[['Average Medicare Payments','Provider State']]
-  total_payment_by_state_med = payment_by_state_med.groupby('Provider State').sum()
-  sorted_data_med = total_payment_by_state_med.sort_values('Average Medicare Payments')
-  sorted_data.hvplot() * sorted_data_med.hvplot()
-  ```
-
-  ![compose_overlay.png](Images/compose_overlay.png)
+![compose_overlay.png](Images/compose_overlay.png)
 
 * Once the plots have been composed, users can interact with both (sub) plots with a single widget bar.
 
@@ -612,9 +620,9 @@ Open the starter file and facilitate a dry walkthrough demonstration of composin
 
 Ask and answer any students questions. Then, move onto the next activity.
 
-- - -
+---
 
-### 16. Students Do - Composing Masterpieces (10 mins)
+### 16. Students Do * Composing Masterpieces (10 mins)
 
 Students will complete a MSMD activity where they use the information learned in the instructor demo to customize their hvPlots. Students will use a range of options to customize the color, labels, and axis alignments.
 
@@ -632,7 +640,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 * [composing_masterpieces.ipynb](Activities/07-Stu_Composing_Masterpieces/Unsolved/composing_masterpieces.ipynb)
 
-### 17. Instructor Do - Composing Masterpieces Activity Review (5 mins)
+### 17. Instructor Do * Composing Masterpieces Activity Review (5 mins)
 
 The instructor will ask a student volunteer to conduct a dry walkthrough of the Composing Masterpieces solution.
 
@@ -664,14 +672,14 @@ Indicate to the student to open the solution. The student should highlight the f
 
   ```python
   # Slice data for Total Average Loan Amount by 2015-2016 and 2010-2014 date ranges
-  loan_data_range_1 = loan_data['2015 - 2016']
-  loan_data_range_2 = loan_data['2010 - 2014']
+  loan_data_range_1 = loan_data['2015 * 2016']
+  loan_data_range_2 = loan_data['2010 * 2014']
   loan_data_range_grp = loan_data_range_1.sort_values()
   loan_data_range_grp_2 = loan_data_range_2.sort_values()
 
   # Plot data for date ranges
-  plot_2015_2016 = loan_data_range_grp.hvplot(label='2015 - 2016')
-  plot_2010_2014 = loan_data_range_grp_2.hvplot(label='2010 - 2014')
+  plot_2015_2016 = loan_data_range_grp.hvplot(label='2015 * 2016')
+  plot_2010_2014 = loan_data_range_grp_2.hvplot(label='2010 * 2014')
 
   # Compose plots
   plot_2015_2016 + plot_2010_2014
@@ -694,9 +702,9 @@ Indicate to the student to open the solution. The student should highlight the f
 
 Ask for any remaining questions before moving on.
 
-- - -
+---
 
-### 18. Instructor Do - Visualization Options (5 mins) (Critical)
+### 18. Instructor Do * Visualization Options (5 mins) (Critical)
 
 The goal of this activity is to provide students with a dry walkthrough demonstration of how to use hvPlot plot attributes and options to customize the look and feel of visualizations. This activity will enable students to perfect their visualizations by fine tuning details such as axis labels, as well as create attractive color themes and effects.
 
@@ -741,7 +749,10 @@ Open the starter file, and perform a dry walkthrough of the solution, highlighti
 
   ```python
   # Use string formatting to show no decimal places for saleAmt
-  sale_prices_by_year.hvplot.bar(x='saleDate',y='saleAmt', rot=90).opts(yformatter='%.0f')
+  sale_prices_by_year.hvplot.bar(
+    x='saleDate',
+    y='saleAmt',
+    rot=90).opts(yformatter='%.0f')
   ```
 
   ![hvplot_formatter.png](Images/hvplot_formatter.png)
@@ -750,7 +761,12 @@ Open the starter file, and perform a dry walkthrough of the solution, highlighti
 
   ```python
   # Set title
-  sale_prices_by_year.hvplot.bar(x='saleDate',y='saleAmt', rot=90).opts(title='Arlington, VA Housing Sale Prices June 2016')
+  sale_prices_by_year.hvplot.bar(
+    x='saleDate',
+    y='saleAmt',
+    rot=90).opts(
+      title='Arlington, VA Housing Sale Prices June 2016'
+    )
   ```
 
   ![opt_title.png](Images/opt_title.png)
@@ -772,9 +788,9 @@ Slack out the [hvPlot customization](http://holoviews.org/user_guide/Customizing
 
 Ask if there are any more questions. Then, continue to the student challenge activity.
 
-- - -
+---
 
-### 19. Students Do - Picture Perfect (10 mins)
+### 19. Students Do * Picture Perfect (10 mins)
 
 By the end of this activity, students will have employed hvPlot customization attributes and options to perfect and add finishing touches to their visualizations.
 
@@ -788,7 +804,7 @@ Make sure to slack out to students the [hvPlot customization](https://hvplot.pyv
 
 * [picture_perfect.ipynb](Activities/09-Stu_Picture_Perfect/Unsolved/Core/picture_perfect.ipynb)
 
-### 20. Students Do - Picture Perfect Activity Review (5 mins)
+### 20. Students Do * Picture Perfect Activity Review (5 mins)
 
 Students participate in a 5 minute turn and teach activity that will focus on showcasing their final, customized visualizations.
 
@@ -822,9 +838,9 @@ If time remains, ask students the following review questions:
 
 Ask for any remaining questions before moving on.
 
-- - -
+---
 
-### 21. Instructor Do - Plotting with Flair (5 mins) (Optional)
+### 21. Instructor Do * Plotting with Flair (5 mins) (Optional)
 
 In this optional activity, the instructor demonstrates to students how to create additional hvPlot types, such as **scatter** and **area** plots.
 
@@ -856,7 +872,13 @@ Open the starter file, and live code the following. Make sure to highlight the c
     "year":np.random.randint(2010,2019,50)}).sort_values('year')
 
   # Area plot
-  df.hvplot.area(x='year',y=['foreclosed','sold','escrow'],xlabel='Year',ylabel='Total',title='2019 VA Q1 Real Estate Metrics',stacked=True)
+  df.hvplot.area(
+    x='year',
+    y=['foreclosed','sold','escrow'],
+    xlabel='Year',
+    ylabel='Total',
+    title='2019 VA Q1 Real Estate Metrics',
+    stacked=True)
   ```
 
   ![area_plot.png](Images/area_plot.png)
@@ -865,14 +887,23 @@ Open the starter file, and live code the following. Make sure to highlight the c
 
   ```python
   # Scatter Plot
-  df.hvplot.scatter(x='foreclosed',y='escrow',xlabel='Foreclosed',ylabel='Escrow',c='year',cmap='viridis',colorbar=True,title='2019 VA Q1 Real Estate Metrics')
+  df.hvplot.scatter(
+    x='foreclosed',
+    y='escrow',
+    xlabel='Foreclosed',
+    ylabel='Escrow',
+    c='year',
+    cmap='viridis',
+    colorbar=True,
+    title='2019 VA Q1 Real Estate Metrics'
+  )
   ```
 
   ![scatter_plot.png](Images/scatter_plot.png)
 
 Ask for any questions, and then move onto the next activity.
 
-- - -
+---
 
 ### 22. Student Do: The Immaculate Portfolio (20 mins)
 
@@ -882,9 +913,9 @@ Communicate to students that they should work together on this activity; however
 
 Also, let students know that the review activity will consist of student volunteers presenting their notebooks to the class. Indicate that the first two students to finish early will have the option to volunteer.
 
-  * Ask the first volunteer to focus the review on the approach taken to create **scatter** and **area** plots, as well as how the plots should be analyzed.
+* Ask the first volunteer to focus the review on the approach taken to create **scatter** and **area** plots, as well as how the plots should be analyzed.
 
-  * Ask the second volunteer to present on the customizations made to brand the portfolio as their own. Let this student know that depending on time, the presentation may not be required.
+* Ask the second volunteer to present on the customizations made to brand the portfolio as their own. Let this student know that depending on time, the presentation may not be required.
 
 Have TAs circulate to provide assistance to students facing challenges.
 
@@ -896,7 +927,7 @@ Have TAs circulate to provide assistance to students facing challenges.
 
 * [immaculate_portfolio.ipynb](Activities/11-Stu_Immaculate_Portfolio/Unsolved/immaculate_portfolio.ipynb)
 
-### 23. Instructor Do - Immaculate Portfolio Activity Review (5 mins)
+### 23. Instructor Do * Immaculate Portfolio Activity Review (5 mins)
 
 This review activity will be facilitated by the instructor but led by the students. Two student volunteers will be asked to present their portfolio to the class.
 
@@ -913,12 +944,19 @@ Begin the review activity by asking one of the two student volunteers to present
   loan_data = pd.read_csv("../Resources/state_loan_data.csv")
 
   # Create scatter plot
-  correlation_data = loan_data[['2017','2015 - 2016']]
+  correlation_data = loan_data[['2017','2015 * 2016']]
 
-  correlation_data.reset_index().hvplot.scatter(y='2017',x='2015 - 2016',c='State Code',xformatter='%.0f',yformatter='%.0f',title='Correlation of 2015 - 2016 & 2017 Average Loan Amounts')
+  correlation_data.reset_index().hvplot.scatter(
+    y='2017',
+    x='2015 * 2016',
+    c='State Code',
+    xformatter='%.0f',
+    yformatter='%.0f',
+    title='Correlation of 2015 * 2016 & 2017 Average Loan Amounts'
+  )
   ```
 
-    ![scatter_comparison.png](Images/scatter_comparison.png)
+  ![scatter_comparison.png](Images/scatter_comparison.png)
 
 * **Area** plots are best suited at graphically portraying the change in data over time as it relates to other data elements/variables. **Area** plots are commonly used whenever time series or data changes over time are of importance. Because **area** plots focus on **time**, a time dimension is needed in the data.
 
@@ -928,10 +966,14 @@ Begin the review activity by asking one of the two student volunteers to present
       "NJ": loan_data.loc['NJ'],
       "PA": loan_data.loc['PA'],
       "DE": loan_data.loc['DE']
-  }).loc[['2010 - 2014','2015 - 2016','2017']]
+  }).loc[['2010 * 2014','2015 * 2016','2017']]
 
   # Create area plot
-  tri_state_loan_data.hvplot.area(stacked=False,yformatter='%.0f',title='Tri-State Region Average Loan Amounts')
+  tri_state_loan_data.hvplot.area(
+    stacked=False,
+    yformatter='%.0f',
+    title='Tri-State Region Average Loan Amounts'
+  )
   ```
 
   ![area_progression.png](Images/area_progression.png)
@@ -952,7 +994,7 @@ If time remains, ask the second volunteer to present. Ask the second volunteer t
 
 Ask for any remaining questions before moving on.
 
-### 24. Instructor Do - Recap (5 mins)
+### 24. Instructor Do * Recap (5 mins)
 
 The day has been a whirlwind of visualizations. Now it's time to take a load off and reflect on what was learned during the day.
 
@@ -994,6 +1036,6 @@ Ask for any questiosn before moving forward.
 
 ## End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
