@@ -1,9 +1,5 @@
 ## Unit 12 - Natural Language Processing
 
-### Overview
-
-This week we will cover...
-
 ### Lesson Plans
 
 * [12.1 Lesson Plan](1/LessonPlan.md)
@@ -14,22 +10,8 @@ This week we will cover...
 
 ### Homework
 
-* [Instructions](Homework/Instructions/README.md)
-
-* [Solutions](Homework/Solutions/)
-
-* [Solution Video](Homework/Solutions/HomeworkVideo.md)
-
-* [Grading Rubric](Homework/GradingRubric.md)
-
-### Supplemental
-
-* [Student Guide](Supplemental/StudentGuide.md)
-
-* [Video Guide](Supplemental/VideoGuide.md)
+* [Instructions](../../02-Homework/12-NLP/Instructions/README.md)
 
 - - -
 
-### Copyright
-
-Trilogy Education Services © 2019. All Rights Reserved.
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
