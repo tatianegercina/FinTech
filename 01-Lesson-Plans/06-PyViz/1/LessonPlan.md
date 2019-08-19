@@ -97,7 +97,7 @@ Ask for any questions before proceeding.
 
 ---
 
-### 2. Instructor Do - Review Homework (5 mins)
+### 2. Instructor Do - Review Homework (10 mins)
 
 This activity involves a quick demo and review of the homework.
 
@@ -141,7 +141,9 @@ Navigate to the 6.1 slides, and highlight the following:
 
 * Each visualization technology in the PyViz ecosystem has the power and features to provide stand-alone visualizations. Each technology also has its strengths and weaknesses, which will be explored later.
 
-* PyViz’s platform allows for different visualization technologies to be integrated with one another to create dashboards (which can be done with PyViz’s Panel software).
+* PyViz’s platform allows for different visualization technologies to be integrated with one another to create dashboards (which can be done with PyViz’s Panel software). This is pivotal for FinTech, as PyViz provides all the necessary tools needed to create financial dashboards for personal and corporate use.
+
+* Another benefit of PyViz is that the sheer number of plotting technologies means that there's a greater chance of users finding the visualizations they need. For FinTech, using PyViz means you have access to your standard plots, as well as finance specific plots, like candlestick charts.
 
 Facilitate discussion by asking the following questions:
 
@@ -173,6 +175,8 @@ Navigate to the 6.1 slides, and introduce students to the world of hvPlots inter
 
 * hvPlot abstracts over Python visualization libraries like Matplotlib, Pandas, and Streamz. The abstraction allows hvPlot to utilize the stand-alone plotting mechanisms of these technologies.
 
+* hvPlot provides the FinTech industry with a new way of interacting with financial data. Instead of analyzing ledgers, finance professionals can just explore an interactive plot and digest large data sets visually.
+
 * This abstraction also allows hvPlot to transform the static plots (i.e. Matplotlib plots) into interactive sandboxes for data exploration and analysis. hvPlots allow for:
 
   * Panning
@@ -193,19 +197,27 @@ https://hvplot.pyviz.org/
 
 If time remains, review some of the common hvPlot charts and their interactive features. Highlight the following:
 
-![hv_plot_1.PNG](Images/hv_plot_1.PNG)
+* Line plots
 
-![hv_plot_2_streamz.PNG](Images/hv_plot_2_streamz.PNG)
+  ![hv_plot_1.PNG](Images/hv_plot_1.PNG)
 
-![hv_plot_3_geo_views.PNG](Images/hv_plot_3_geo_views.PNG)
+* Streamz
 
-![hv_plot_4_networkx.PNG](Images/hv_plot_4_networkx.PNG)
+  ![hv_plot_2_streamz.PNG](Images/hv_plot_2_streamz.PNG)
+
+* Geospatial
+
+  ![hv_plot_3_geo_views.PNG](Images/hv_plot_3_geo_views.PNG)
+
+* Network
+
+  ![hv_plot_4_networkx.PNG](Images/hv_plot_4_networkx.PNG)
 
 Ask if there are any questions. Then, continue to the next activity.
 
 ---
 
-### 5. Instructor Do - hvPlot Demo (5 mins)
+### 5. Instructor Do - hvPlot Demo (10 mins)
 
 **Files:**
 
@@ -297,7 +309,7 @@ In this activity, students re-visit plots they made earlier in the class using M
 
 - - -
 
-### 7. Instructor Do - Plotting a Visual Takeover Activity Review (5 mins)
+### 7. Instructor Do - Plotting a Visual Takeover Activity Review (10 mins)
 
 **Files:**
 
@@ -410,7 +422,7 @@ Ask if there are any questions, and then continue to the student activity.
 
 ---
 
-### 10. Students Do - hvPlot Widgets (10 mins)
+### 10. Students Do - hvPlot Widgets (15 mins)
 
 In this activity, students will play around with the hvPlot widgets to get more accustom to the different types of interactions supported with hvPlots. Students use hvPlot visualizations to explore hospital claims data and answer a few basic questions about the data.
 
@@ -422,7 +434,7 @@ In this activity, students will play around with the hvPlot widgets to get more 
 
 * [hvplot_widgets.ipynb](Activities/05-Stu_hvPlot_Widgets/Unsolved/hvplot_widgets.ipynb)
 
-### 11. Instructor Do - hvPlot Widgets Activity Review (5 mins)
+### 11. Instructor Do - hvPlot Widgets Activity Review (10 mins)
 
 The instructor will lead a facilitated review section in this activity. The emphasis will be placed on what each widget does and how they can be used in conjunction with one another to deep dive into data analysis and exploration.
 
@@ -454,7 +466,7 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 12. Instructor Do - Composing Plots (5 mins)
+### 12. Instructor Do - Composing Plots (10 mins)
 
 By the end of this activity, students will have received a dry walkthrough demo on how to combine two plot objects to create a plot with subplots. This activity will teach students how to create plot layouts and overlay visualizations to create a centralized location for comparative data analysis.
 
@@ -524,7 +536,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 - - -
 
-### 14. Instructor Do - Composing Masterpieces Activity Review (5 mins)
+### 14. Instructor Do - Composing Masterpieces Activity Review (10 mins)
 
 The instructor will ask a student volunteer to conduct a dry walkthrough of the Composing Masterpieces solution.
 
@@ -588,7 +600,7 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 15. Instructor Do - Visualization Options (5 mins) (Critical)
+### 15. Instructor Do - Visualization Options (10 mins) (Critical)
 
 The goal of this activity is to provide students with a dry walkthrough demonstration of how to use hvPlot plot attributes and options to customize the look and feel of visualizations. This activity will enable students to perfect their visualizations by fine tuning details such as axis labels, as well as create attractive color themes and effects.
 
@@ -674,7 +686,7 @@ Ask if there are any more questions. Then, continue to the student challenge act
 
 ---
 
-### 16. Students Do - Picture Perfect (10 mins)
+### 16. Students Do - Picture Perfect (15 mins)
 
 By the end of this activity, students will have employed hvPlot customization attributes and options to perfect and add finishing touches to their visualizations.
 
@@ -690,7 +702,7 @@ Make sure to slack out to students the [hvPlot customization](https://hvplot.pyv
 
 - - -
 
-### 17. Students Do - Picture Perfect Activity Review (5 mins)
+### 17. Students Do - Picture Perfect Activity Review (10 mins)
 
 Students participate in a 5 minute turn and teach activity that will focus on showcasing their final, customized visualizations.
 
@@ -726,163 +738,15 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 18. Instructor Do - Plotting with Flair (5 mins) (Optional)
-
-In this optional activity, the instructor demonstrates to students how to create additional hvPlot types, such as **scatter** and **area** plots.
-
-**Files:**
-
-* [Slides]()
-
-* [plotting_with_flair.ipynb](Activities/10-Ins_Plotting_with_Flair/Unsolved/plotting_with_flair.ipynb)
-
-Explain to students that **line** and **bar** plots are just the tip of the iceberg in terms of what hvPlot supports.
-
-* hvPlot also offers **area** and **scatter** plots, just to name two more. These plots are essential when visualizing and analyzing categorical/dimensional data at multivariate levels. An example would be considering real estate metric data across time, in terms of sales, foreclosures, and pending escrows.
-
-* Because these plots support comparative analysis, they can be considered as more advanced than the standard **line** and **bar** plots. Adding these to any report would add extra visual and statistical flair.
-
-Open the starter file, and live code the following. Make sure to highlight the corresponding discussion points during the demonstration.
-
-* **Area** plots are a great way to visualize multivariate time analysis, time-series relationships, and progression over time. In addition to change over time, **area** charts also communicate the volume associated with trends and change over time. Whenever data needs to be analyzed over time, the `hvplot.area` function can be used to plot, visualize, and analyze the data.
-
-  ```python
-  import pandas as pd, numpy as np
-  import hvplot.pandas
-
-  # Prep data
-  df  = pd.DataFrame({
-    "foreclosed":np.random.randint(0,32,50),
-    "sold":np.random.randint(0,32,50),
-    "escrow":np.random.randint(0,32,50),
-    "year":np.random.randint(2010,2019,50)}).sort_values('year')
-
-  # Area plot
-  df.hvplot.area(
-    x='year',
-    y=['foreclosed','sold','escrow'],
-    xlabel='Year',
-    ylabel='Total',
-    title='2019 VA Q1 Real Estate Metrics',
-    stacked=True)
-  ```
-
-  ![area_plot.png](Images/area_plot.png)
-
-* **Scatter** plots are a commonly used for showing how one data point is affected by another. For example, a real estate analyst might want to assess the correlation between number of foreclosures and houses currently in escrow across years. The `hvplot.scatter` function can help with visualizing the correlation. Execute the `hvplot.scatter` function against a Pandas DataFrame.
-
-  ```python
-  # Scatter Plot
-  df.hvplot.scatter(
-    x='foreclosed',
-    y='escrow',
-    xlabel='Foreclosed',
-    ylabel='Escrow',
-    c='year',
-    cmap='viridis',
-    colorbar=True,
-    title='2019 VA Q1 Real Estate Metrics'
-  )
-  ```
-
-  ![scatter_plot.png](Images/scatter_plot.png)
-
-Ask for any questions, and then move onto the next activity.
-
----
-
-### 19. Student Do: The Immaculate Portfolio (20 mins)
-
-For the final activity, students will take everything they've learned in the day and use it to enhance their current REMAX portfolio with more sophisticated and statistics related visualizations (i.e. **scatter** and **area** plots).
-
-Communicate to students that they should work together on this activity; however, each student will need to complete their own notebook.
-
-Also, let students know that the review activity will consist of student volunteers presenting their notebooks to the class. Indicate that the first two students to finish early will have the option to volunteer.
-
-* Ask the first volunteer to focus the review on the approach taken to create **scatter** and **area** plots, as well as how the plots should be analyzed.
-
-* Ask the second volunteer to present on the customizations made to brand the portfolio as their own. Let this student know that depending on time, the presentation may not be required.
-
-Have TAs circulate to provide assistance to students facing challenges.
-
-**Instructions:**
-
-* [README.md](Activities/11-Stu_Immaculate_Portfolio/README.md)
-
-**Files:**
-
-* [immaculate_portfolio.ipynb](Activities/11-Stu_Immaculate_Portfolio/Unsolved/immaculate_portfolio.ipynb)
-
-### 20. Instructor Do - Immaculate Portfolio Activity Review (5 mins)
-
-This review activity will be facilitated by the instructor but led by the students. Two student volunteers will be asked to present their portfolio to the class.
-
-**Files:**
-
-* [immaculate_portfolio.ipynb](Activities/11-Stu_Immaculate_Portfolio/Solved/immaculate_portfolio.ipynb)
-
-Begin the review activity by asking one of the two student volunteers to present their portfolio. Have the students open the solution and highlight the following:
-
-* **Scatter** plots are used to visualize the relationship between two data points/variables. **Scatter** plots enable viewers to assess the relationship and effect one variable has on another.
-
-  ```python
-  # Read in loan data
-  loan_data = pd.read_csv("../Resources/state_loan_data.csv")
-
-  # Create scatter plot
-  correlation_data = loan_data[['2017','2015 * 2016']]
-
-  correlation_data.reset_index().hvplot.scatter(
-    y='2017',
-    x='2015 * 2016',
-    c='State Code',
-    xformatter='%.0f',
-    yformatter='%.0f',
-    title='Correlation of 2015 * 2016 & 2017 Average Loan Amounts'
-  )
-  ```
-
-  ![scatter_comparison.png](Images/scatter_comparison.png)
-
-* **Area** plots are best suited at graphically portraying the change in data over time as it relates to other data elements/variables. **Area** plots are commonly used whenever time series or data changes over time are of importance. Because **area** plots focus on **time**, a time dimension is needed in the data.
-
-  ```python
-  # Data for area plot
-  tri_state_loan_data = pd.DataFrame({
-      "NJ": loan_data.loc['NJ'],
-      "PA": loan_data.loc['PA'],
-      "DE": loan_data.loc['DE']
-  }).loc[['2010 * 2014','2015 * 2016','2017']]
-
-  # Create area plot
-  tri_state_loan_data.hvplot.area(
-    stacked=False,
-    yformatter='%.0f',
-    title='Tri-State Region Average Loan Amounts'
-  )
-  ```
-
-  ![area_progression.png](Images/area_progression.png)
-
-If time remains, ask the second volunteer to present. Ask the second volunteer to focus in on their approach to customizing the visualizations. Guide the presentation by asking the following questions:
-
-* What types of visualization changes did you make?
-
-  * Added axes label rotation
-
-  * Changed color scheme
-
-  * Formatted labels
-
-* When should you use the customization attributes (i.e. xlabel) vs. `opts` function (i.e opts(xlabel=))?
-
-  * **Answer** Customization attributes can be used as the plot is being declared. The `opts` function should be used if the plot has already been instantiated.
-
-Ask for any remaining questions before moving on.
-
-### 21. Instructor Do - Recap (5 mins)
+### 18. Instructor Do - Recap (5 mins)
 
 The day has been a whirlwind of visualizations. Now it's time to take a load off and reflect on what was learned during the day.
+
+Explain to students that interactive plots have made data analysis and data interpretation significantly easier. Financial data is always changing, especially over time.
+
+* Being able to interact and explore data with a plot makes it easier to spot changes and trends in data.
+
+* With technologies like hvPlot, instead of financial analysts and investors receiving snapshots of data frozen in time, they can now get interactive plots that allow them to get a closer look at the data.
 
 Facilitate a recap discussion with students by asking some of the following guided questions:
 
@@ -906,7 +770,7 @@ Facilitate a recap discussion with students by asking some of the following guid
 
   * **Answer** Interactive visualizations take data analysis, exploration, and reporting to the next level by providing opportunity for on-the-fly data changes and manipulations. One user can zoom in to see just a segment of hte data, while another user can zoom out to get a holistic, comprehensive view. Coding changes are not necessary.
 
-  * **Answer** Matplotlib and Pandas Plot API are valuable, but the static plots make it difficult to analyze data at different levels of granularity. When working with static plots, underlying data needs to be manipulated in order for any change to take place on the visualization. Interactive visualizations allow for users to change the data being displayed by filtering, zooming, paning, etc.
+  * **Answer** Matplotlib and Pandas Plot API are valuable, but the static plots make it difficult to analyze data at different levels of granularity. When working with static plots, underlying data needs to be manipulated in order for any change to take place on the visualization. Interactive visualizations allow for users to change the data being displayed by filtering, zooming, panning, etc.
 
 If time remains, emphasize one last time the importance of interactive visualizations.
 
@@ -918,7 +782,7 @@ If time remains, emphasize one last time the importance of interactive visualiza
 
 * Inform students that interactive data visualization careers are currently trending; many companies are looking for developers who can wrangle data as well as create fun and attractive visualizations.
 
-Ask for any questiosn before moving forward.
+Ask for any questions before moving forward.
 
 ## End Class
 
