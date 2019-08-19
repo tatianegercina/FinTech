@@ -362,7 +362,7 @@ By the end of this activity, students and instructor will have deep dived into t
 
 * [Slides]()
 
-* [hvplot_widgets.ipynb](Activities/04-Ins_hvPlot_widgets/Solved/hvplot_widgets.ipynb)
+* [hvplot_widgets.ipynb](Activities/04-Ins_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
 
 Explain to students plot interactions all happen with the hvPlot widget bar.
 
