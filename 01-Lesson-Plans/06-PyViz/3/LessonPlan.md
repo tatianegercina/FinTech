@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 * Throughout the lesson, emphasize the importance of dashboards to FinTech. Dashboards offer FinTech a new platform for information and data visualization. Dashboards are offering a way for finance professionals to monitor and visualize data trends and changes over time. For example, dashboards are used by investment bankers to track and monitor stocks and trades. Dashboards have also been enabling every day banking consumers to understand and consumer their financial data in a more effective and efficient means. Moreover, dashboards allow account owners to visually see how they've been spending their money (i.e. bills, groceries, entertainment, shopping, etc.).
 
-* Be mindful of your machine's resource consumption while running the dashboards.
+* Be mindful of your machine's resource consumption while running the dashboards. Because the server used to host Panel dashboards as web apps are spun up locally, your machine will have to execute the code and host the web app.
 
 * Be mindful of the class pacing; the pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage students who are confused to attend office hours.
 
@@ -90,9 +90,9 @@ Continue the discussion about Panel by highlighting the rise of Panel.
 
 * Dashboards typically were created using visualization technology specific stacks, like those associated with Cognos, Tableau, and Qlik.
 
-* Panel, a PyViz dashboard package, has altered the data visualization arena by providing a programmatic way to easily create dashboards. Now Python developers can create their own dashboards without having to learn a new technology stack specific for visualization (i.e. Cognos and Tableau). Panel also allows Python developers to be competitive in the visualization job market, which has been primarily reserved for visualization developers.
+* **Panel**, a PyViz dashboard package, has altered the data visualization arena by providing a programmatic way to easily create dashboards. Now Python developers can create their own dashboards without having to learn a new technology stack specific for visualization (i.e. Cognos and Tableau). Panel also allows Python developers to be competitive in the visualization job market, which has been primarily reserved for visualization developers.
 
-  * Imagine combining **Panel** with other FinTech technologies, such as **Plaid**. A Python developer could use **Plaid** to get financial data, and then the developer could aggregate and summarize the data with a **Panel** dashboard. This unqiue marriage of **Panel** and **Plaid** is only possible because **Panel** supports Python.
+  * Imagine combining **Panel** with other FinTech technologies, such as **Plaid**. A Python developer could use **Plaid** to get financial data, and then the developer could aggregate and summarize the data with a **Panel** dashboard. This unique marriage of **Panel** and **Plaid** is only possible because **Panel** supports Python.
 
 * Panel's integration with PyViz has made it a highly valuable skill in analytics, as well as a staple in the Python data visualization ecosystem. Dashboards are currently being used to drive business decisions, track and monitor KPIs, and improve operational processes.
 
