@@ -36,7 +36,7 @@ By the end of class, students will:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.1 Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g54ab1329fa_1_44).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.1 Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
 
@@ -68,7 +68,7 @@ Feel free to answer the questions below as a way to introduce yourself. However,
 
 In this section, you will discuss the concept of FinTech as well as provide some information about the FinTech industry.
 
-**File:** [Defining FinTech Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_6_0)
+**File:** [Defining FinTech Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit?usp=sharing)
 
 Open the slideshow and review today's objectives. (Slide 3)
 
@@ -130,7 +130,7 @@ Once all volunteers have presented, tie everything together by explaining the fo
 
 In this section, provide an overview of the topics and technologies used in the course, as well the timeline for each topic or unit.
 
-**File:** [Course Overview Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5d56f58a01_0_34)
+**File:** [Course Overview Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_6)
 
 Use the slideshow to go over the course agenda and timeline. (Slides 10–13)
 
@@ -158,7 +158,7 @@ Answer any questions before moving on.
 
 Provide students with some encouragement and tips for overcoming the mental frustrations they will more than likely face throughout the course.
 
-**File:** [Tips Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_6_12)
+**File:** [Tips Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_12)
 
 Open the next series of slides and emphasize the following points. (Slides 19–25)
 
@@ -170,7 +170,7 @@ Open the next series of slides and emphasize the following points. (Slides 19–
 
 * Form a community with your classmates. Even though challenging times are up ahead, students have a solid support system: their instructor, TAs, student success manager, and, perhaps most importantly, each other. When you're frustrated or stuck, remember that we're all in this together. Seek help when you need it and lift each other up.
 
-* Lastly, learning is supposed to be frustrating! It's a process, so stick with it. Things only get easier when we choose to embrace the difficulty and put in the hours to succeed. 
+* Lastly, learning is supposed to be frustrating! It's a process, so stick with it. Things only get easier when we choose to embrace the difficulty and put in the hours to succeed.
 
 * Most importantly, celebrate your successes!
 
@@ -232,7 +232,7 @@ In this review portion of the previous activity, students will present their ref
 
 In this section, engage students with a facilitated discussion about why FinTech has become so prevalent today.
 
-**File:** [The Rise of FinTech Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_6_21)
+**File:** [The Rise of FinTech Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_21)
 
 Open the slideshow and use the slides to help guide your discussion, focusing on the following talking points. (Slides 27–34)
 
@@ -256,7 +256,7 @@ Answer any questions before moving on.
 
 In this activity, students will once again break off into groups of two to four to define and articulate the challenges faced by the Altruistic Alpacas charity. They will need to list at least five financial or technical challenges associated with each of the five core problem areas defined by the client.
 
-**File:** [Alpacalypse Now Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_5_0)
+**File:** [Alpacalypse Now Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_27)
 
 **Notes:**
 
@@ -266,7 +266,7 @@ In this activity, students will once again break off into groups of two to four 
 
 * The key to executing this exercise in the classroom is to ensure that students thinking outside their sphere of knowledge as well as thinking deeply about each problem.
 
-* Set a time for 25 minutes and allow students to discuss their options. Remind them that they should be prepared to discuss these issues with the class. 
+* Set a time for 25 minutes and allow students to discuss their options. Remind them that they should be prepared to discuss these issues with the class.
 
 * As students work, you and your TAs should walk around the classroom and listen to student discussions. When appropriate, nudge them to think more critically. Many students may rely on their personal backgrounds, but this is a good time to think outside the box. For instance:
 
@@ -278,7 +278,7 @@ In this activity, students will once again break off into groups of two to four 
 
 ### 13. Instructor Do: Review Alpacalypse Now (15 min)
 
-**File:** [Review Alpacalypse Now Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_5_39)
+**File:** [Review Alpacalypse Now Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_5_39)
 
 When time is up, ask a few groups to share some of the challenges they identified. Consider opening a notepad file or using the whiteboard to track a running list of the challenges for each problem area.
 
