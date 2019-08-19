@@ -1,3 +1,57 @@
+## 6.3 Lesson Plan: Dashboarding 101
+
+### Overview
+
+In previous classes, students have used static and interactive plots to visualize and communicate financial data. In this lesson, students will leverage pre-existing plots for a Panel dashboard. Students will integrate visualizations and design the layout of a real estate dashboard.
+
+Panel is one of the libraries included in the PyViz package. Panel is used to create dashboards for information visualization. One of the things that makes Panel special is that it has support for Python (dashboards can be created using Python), as well as the common visualization packages used in the Python ecosystem.
+
+By the the end of class, students will be competent in creating and using Panel objects to create dashboards to visualize financial data sets that lend insight to financial trends. Panel is going to be a key skill for students to have; dashboards are one of the primary mechanisms used to communicate and distribute financial records/ledgers, progress, etc. Knowing Panel will enable students to be able to create dashboards and reports as needed.
+
+### Class Objectives
+
+By the end of class, students will be able to:
+
+* Explain what Panel is and it’s value in relation to data visualization
+
+* Explain Panel’s role within the PyViz ecosystem
+
+* Design and develop Panel dashboard layout using row, column, and tab objects
+
+* Understand how Panel extensions are used to enable interactivity and plugin integration
+
+* Integrate Plotly and hvPlot plots with Panel dashboard using Panel extensions
+
+* Explain the role of Bokeh in Panel dashboards
+
+* Deploy Bokeh server to host Panel dahsboard
+
+### Instructor Notes
+
+* Prepare for the lesson by running the code examples and reviewing the lectures before class. Also make sure that Panel has been installed locally using `conda install`.
+
+* Throughout the lesson, emphasize the importance of dashboards to FinTech. Dashboards offer FinTech a new platform for information and data visualization. Dashboards are offering a way for finance professionals to monitor and visualize data trends and changes over time.
+
+* Panel spins up a server whenever the dashboards are executed. Be mindful of resource consumption while running dashboards as it may impair performance of your local machine.
+
+* Be mindful of the class pacing; the pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage students who are confused to attend office hours.
+
+* Encourage students to work in pairs or groups on the in-class activities to help facilitate discussions as well as troubleshooting. Collaborative exercises such as student-led activity reviews and discussions have been built into this lesson.
+
+* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+
+### Class Slides and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.3 Slides]().
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+
+* Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+
+---
+
 ### 1. Instructor Do: Welcome Class (10 mins)
 
 **Files:**
