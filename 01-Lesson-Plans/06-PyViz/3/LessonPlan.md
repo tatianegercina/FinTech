@@ -78,7 +78,7 @@ Students will receive a small demo on how to use Panel at a high level.
 
 **Files:**
 
-* [getting_started_panel.ipynb](Activities/04-Ins_Getting_Started_Panel/Solved/getting_started_panel.ipynb)
+* [getting_started_panel.ipynb](Activities/01-Ins_Getting_Started_Panel/Solved/getting_started_panel.ipynb)
 
 Open the solved file, and give students a high level run down of how Panel works. Begin by showing students how to prep **Panel** within Jupyter Lab:
 
@@ -173,7 +173,7 @@ Students will receive a small demo on how to use Panel at a high level.
 
 **Files:**
 
-* [getting_started_panel.ipynb](Activities/04-Ins_Getting_Started_Panel/Solved/getting_started_panel.ipynb)
+* [getting_started_panel.ipynb](Activities/01-Ins_Getting_Started_Panel/Solved/getting_started_panel.ipynb)
 
 Open the solved file, and give students a high level run down of how Panel works. Begin by showing students how to prep **Panel** within Jupyter Lab:
 
@@ -268,7 +268,7 @@ In this activity, students receive a demonstration of how to use and customize P
 
 **Files:**
 
-* [panel_components.ipynb](Activities/05-Ins_Dashboard_Components/Solved/panel_components.ipynb)
+* [panel_components.ipynb](Activities/02-Ins_Dashboard_Components/Solved/panel_components.ipynb)
 
 Navigate to the 6.3 slides, and highlight the following:
 
@@ -359,11 +359,11 @@ In this activity, students complete a MSMD activity where they create a Plotly p
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Dashboard_Components/README.md)
+* [README.md](Activities/03-Stu_Dashboard_Components/README.md)
 
 **Files:**
 
-* [no_pane_no_gain.ipynb](Activities/06-Stu_Dashboard_Components/Unsolved/Core/no_pane_no_gain.ipynb)
+* [no_pane_no_gain.ipynb](Activities/03-Stu_Dashboard_Components/Unsolved/Core/no_pane_no_gain.ipynb)
 
 - - -
 
@@ -373,7 +373,7 @@ The instructor will conduct a dry walk through of the solution to highlight the 
 
 **Files:**
 
-* [no_pane_no_gain.ipynb](Activities/06-Stu_Dashboard_Components/Solved/no_pane_no_gain.ipynb)
+* [no_pane_no_gain.ipynb](Activities/03-Stu_Dashboard_Components/Solved/no_pane_no_gain.ipynb)
 
 Open the solution, and explain the following:
 
@@ -423,7 +423,7 @@ By the end of this activity, students will have learned how to create and use Pa
 
 **Files:**
 
-* [dashboard_panels.ipynb](Activities/07-Ins_Dashboard_Components_Panels/Solved/dashboard_panels.ipynb)
+* [dashboard_panels.ipynb](Activities/04-Ins_Dashboard_Components_Panels/Solved/dashboard_panels.ipynb)
 
 Indicate to students that this next activity will focus on creating **panel** objects and using them to create a dashboard layout.
 
@@ -514,11 +514,11 @@ Since students have not been taught how to manipulate **panels** using insert, u
 
 **Instructions:**
 
-* [README.md](Activities/08-Stu_Dashboard_Panels/README.md)
+* [README.md](Activities/05-Stu_Dashboard_Panels/README.md)
 
 **Files:**
 
-* [judges_panel.ipynb](Activities/08-Stu_Dashboard_Panels/Unsolved/judges_panel.ipynb)
+* [judges_panel.ipynb](Activities/05-Stu_Dashboard_Panels/Unsolved/judges_panel.ipynb)
 
 - - -
 
@@ -526,7 +526,7 @@ Since students have not been taught how to manipulate **panels** using insert, u
 
 **Files:**
 
-* [judges_panel.ipynb](Activities/08-Stu_Dashboard_Panels/Solved/judges_panel.ipynb)
+* [judges_panel.ipynb](Activities/05-Stu_Dashboard_Panels/Solved/judges_panel.ipynb)
 
 Open the solution and explain the following:
 
@@ -623,11 +623,11 @@ Data for this activity was retrieved from [ucr.fbi.gov](https://ucr.fbi.gov/crim
 
 **Instructions:**
 
-* [README.md](Activities/12-Stu_Panel_Extensions/README.md)
+* [README.md](Activities/06-Stu_Panel_Extensions/README.md)
 
 **Files:**
 
-* [extending_plotting.ipynb](Activities/12-Stu_Panel_Extensions/Unsolved/extending_plotting.ipynb)
+* [extending_plotting.ipynb](Activities/06-Stu_Panel_Extensions/Unsolved/extending_plotting.ipynb)
 
 - - -
 
@@ -637,7 +637,7 @@ Students will participate in a dry walk through and facilitated discussion guide
 
 **Files:**
 
-* [extending_plotting.ipynb](Activities/12-Stu_Panel_Extensions/Solved/extending_plotting.ipynb)
+* [extending_plotting.ipynb](Activities/06-Stu_Panel_Extensions/Solved/extending_plotting.ipynb)
 
 Open the solution and explain the following:
 
@@ -703,7 +703,7 @@ Students learn how to transform their Jupyter notebook dashboards into a **web a
 
 **Files:**
 
-* [dashboard_webapps.ipynb](Activities/14*Ins_Dashboard_Webapps/Unsolved/dashboard_webapps.ipynb)
+* [dashboard_webapps.ipynb](Activities/07-Ins_Dashboard_Webapps/Unsolved/dashboard_webapps.ipynb)
 
 Navigate to the 6.3 slides, and communicate the following:
 
@@ -756,11 +756,11 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 **Instructions:**
 
-* [README.md](Activities/15-Stu_Dashboard_Webapps/README.md)
+* [README.md](Activities/08-Stu_Dashboard_Webapps/README.md)
 
 **Files:**
 
-* [monte_carlo_dashboard.ipynb](Activities/15-Stu_Dashboard_Webapps/Unsolved/monte_carlo_dashboard.ipynb)
+* [monte_carlo_dashboard.ipynb](Activities/08-Stu_Dashboard_Webapps/Unsolved/monte_carlo_dashboard.ipynb)
 
 - - -
 
@@ -770,7 +770,7 @@ The instructor and students will review the Monte Carlo Dashboard web app activi
 
 **Files:**
 
-* [monte_carlo_dashboard.ipynb](Activities/15-Stu_Dashboard_Webapps/Solved/monte_carlo_dashboard.ipynb)
+* [monte_carlo_dashboard.ipynb](Activities/08-Stu_Dashboard_Webapps/Solved/monte_carlo_dashboard.ipynb)
 
 Communicate to students that this activity review will be focused on discussing the benefit and usefulness of Panel dashboards, from their point of view.
 
