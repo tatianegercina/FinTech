@@ -6,11 +6,11 @@ This week we will cover...
 
 ### Slides
 
-* [1.1 Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit?usp=sharing)
+* [1.1 Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit?usp=sharing)
 
-* [1.2 Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
+* [1.2 Slides](https://docs.google.com/presentation/d/1gauD2mC6AOh-IfCZUD21aBaEQK6HdGKQhgbnq5ElSpQ/edit?usp=sharing)
 
-* [1.3 Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit?usp=sharing)
+* [1.3 Slides](https://docs.google.com/presentation/d/1ltwZSLHyMLZjkW7s1z-6wuTZyPXkwBvto4_kRzFuKOE/edit?usp=sharing)
 
 ### Lesson Plans
 
