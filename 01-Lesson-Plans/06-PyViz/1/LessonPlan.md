@@ -143,7 +143,7 @@ Navigate to the 6.1 slides, and highlight the following:
 
 * PyViz’s platform allows for different visualization technologies to be integrated with one another to create dashboards (which can be done with PyViz’s Panel software). This is pivotal for FinTech, as PyViz provides all the necessary tools needed to create financial dashboards for personal and corporate use.
 
-* Another benefit of PyViz is that the sheer number of plotting technologies means that there's a greater chance of users finding the visualizations they need. For FinTech, using PyViz means you have access to your standard plots, as well as finance specific plots, like candlestick charts.
+* For FinTech, using PyViz means you have access to your standard plots, as well as finance specific plots, like candlestick charts. Another benefit of PyViz is that the sheer number of plotting technologies means that there's a greater chance of users finding the visualizations they need.
 
 Facilitate discussion by asking the following questions:
 
@@ -424,7 +424,7 @@ Ask if there are any questions, and then continue to the student activity.
 
 ### 10. Students Do - hvPlot Widgets (15 mins)
 
-In this activity, students will play around with the hvPlot widgets to get more accustom to the different types of interactions supported with hvPlots. Students use hvPlot visualizations to explore hospital claims data and answer a few basic questions about the data.
+In this activity, students will play around with the hvPlot widgets to get more accustomed to the different types of interactions supported with hvPlots. Students use hvPlot visualizations to explore hospital claims data and answer a few basic questions about the data.
 
 **Instructions:**
 
