@@ -687,7 +687,7 @@ If time remains, ask students to summarize three things they've learned today.
 
 * **Answer** **Parallel coordinates** and **categories** plots allow users to visualize correlations but also reorganize variables in order to get a better sense of multivariate relationships.
 
-Ask if there are any questions before moving forward.
+Ask for any remaining questions before ending the class.
 
 ### End Class
 
