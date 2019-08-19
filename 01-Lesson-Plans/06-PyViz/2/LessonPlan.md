@@ -364,7 +364,11 @@ Ask for any remaining questions before moving on.
 
 - - -
 
-### 8. Instructor Do: Parallel Categories (10 mins) (Critical)
+### 8. Break (15 mins)
+
+- - -
+
+### 9. Instructor Do: Parallel Categories (10 mins) (Critical)
 
 In this activity, students continue learning about more advanced, statistical plots, like the **Parallel Categories** plot by way of an instructor demo. The instructor will demonstrate to students how to create a **parallel categories** plot, as well as highlight the differences between **parallel categories** and **parallel coordinates**.
 
@@ -429,10 +433,6 @@ Open the [starter file](Activities/05-Ins_Parallel_Categories/Solved/parallel_ca
 
 - - -
 
-### 9. Break (15 mins)
-
-- - -
-
 ### 10. Student Do: Categorical Property Evaluation (15 mins)
 
 Students complete a MSMD activity and code out a **parallel categories** plot. Students will use the plot to visualize the dimensions/categories evaluated during real estate property assessments.
@@ -455,7 +455,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 - - -
 
-### 11. Students Do: Categorical Assessments Activity Review (10 mins)
+### 11. Students Do: Categorical Property Evaluation Activity Review (10 mins)
 
 This activity involves a student volunteering to tell the story of Alleghany property assessments. A student will present the parallel categories plot from the student activity, and provide some findings regarding dimensional patterns.
 
@@ -512,7 +512,7 @@ If time remains, initiate the story telling piece of the review by asking the st
 
 ### 12. Instructor Do: Mapbox API Demo (10 mins) (Critical)
 
-In this activity, students will sit through a demonstration of how to use the Mapbox API with Plotly Express.
+In this activity, students observe a demonstration of how to use the Mapbox API with Plotly Express.
 
 In order to complete this activity, a Mapbox API will be required. A personal key can be obtained by signing up [here](https://account.mapbox.com/auth/signup/).
 
