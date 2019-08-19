@@ -15,7 +15,7 @@ Follow the below steps to install and setup PyViz in your Python environment. Th
 
     ```shell
     conda install -c pyviz hvplot
-    conda install -c plotly.express
+    conda install -c plotly
     conda install -c pyviz panel
     ```
 
@@ -26,16 +26,27 @@ Follow the below steps to install and setup PyViz in your Python environment. Th
     jupyter labextension install @jupyterlab/plotly-extension
     ```
 
-4. Use the `conda list` function to confirm installation of all PyViz packages. Look for `pyviz_comms` and `panel`.
+4. Use the `conda list | grep pyviz` function to confirm installation of all PyViz packages. Look for `hvplot`, `panel`, and `pyviz_comms`.
+
+    ```shell
+    conda list | grep pyviz
+    ```
+
+    ```
+    hvplot                    0.4.0                      py_0    pyviz
+    panel                     0.6.0                      py_0    pyviz
+    pyviz_comms               0.7.2                      py_0
+    ```
+
+5. Use the `conda list | grep plotly` function to confirm all Plotly packages are available. Confirm `plotly` and `plotly express` are listed.
 
   ```shell
-  conda list | grep pyviz
+  conda list | grep plotly
   ```
 
   ```
-  panel                     0.6.0                      py_0    pyviz
-  param                     1.9.1                      py_0    pyviz
-  pyct                      0.4.6                      py_0    pyviz
-  pyct-core                 0.4.6                      py_0    pyviz
-  pyviz_comms               0.7.2                      py_0    pyviz
+  plotly                    4.0.0                      py_0
+  plotly_express            0.4.0                      py_0    plotly
   ```
+
+Now you're all set to get started creating visual masterpieces using PyViz technologies!
