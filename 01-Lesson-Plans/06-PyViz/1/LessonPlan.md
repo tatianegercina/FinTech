@@ -221,9 +221,9 @@ Ask if there are any questions. Then, continue to the next activity.
 
 **Files:**
 
-* [hvPlot.ipynb](Activities/02-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb)
+* [hvPlot.ipynb](Activities/01-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb)
 
-Open the [starter file](Activities/02-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb), and live code the following:
+Open the [starter file](Activities/01-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb), and live code the following:
 
 * The **hvPlot** library has to be imported into the Python environment. hvPlot offers a library called **hvPlot.Pandas** that integrates hvPlot with Pandas DataFrame API. This allows Pandas DataFrames to be visualized using hvPlot.
 
@@ -301,11 +301,11 @@ In this activity, students re-visit plots they made earlier in the class using M
 
 **Instructions**
 
-* [README.md](Activities/03-Stu_Plotting_Visual_Takeover/README.md)
+* [README.md](Activities/02-Stu_Plotting_Visual_Takeover/README.md)
 
 **Files:**
 
-* [plotting_visual_takeover.ipynb](Activities/03-Stu_Plotting_Visual_Takeover/Unsolved/Core/plotting_visual_takeover.ipynb)
+* [plotting_visual_takeover.ipynb](Activities/02-Stu_Plotting_Visual_Takeover/Unsolved/Core/plotting_visual_takeover.ipynb)
 
 - - -
 
@@ -313,7 +313,7 @@ In this activity, students re-visit plots they made earlier in the class using M
 
 **Files:**
 
-* [plotting_visual_takeover.ipynb](Activities/03-Stu_Plotting_Visual_Takeover/Solved/Core/plotting_visual_takeover.ipynb)
+* [plotting_visual_takeover.ipynb](Activities/02-Stu_Plotting_Visual_Takeover/Solved/Core/plotting_visual_takeover.ipynb)
 
 Open the solution, and conduct a dry walkthrough of the solution while explaining the following:
 
@@ -362,7 +362,7 @@ By the end of this activity, students and instructor will have deep dived into t
 
 * [Slides]()
 
-* [hvplot_widgets.ipynb](Activities/04-Ins_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
+* [hvplot_widgets.ipynb](Activities/03-Ins_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
 
 Explain to students plot interactions all happen with the hvPlot widget bar.
 
@@ -428,11 +428,11 @@ In this activity, students will play around with the hvPlot widgets to get more 
 
 **Instructions:**
 
-* [README.md](Activities/05-Stu_hvPlot_Widgets/README.md)
+* [README.md](Activities/04-Stu_hvPlot_Widgets/README.md)
 
 **Files:**
 
-* [hvplot_widgets.ipynb](Activities/05-Stu_hvPlot_Widgets/Unsolved/hvplot_widgets.ipynb)
+* [hvplot_widgets.ipynb](Activities/04-Stu_hvPlot_Widgets/Unsolved/hvplot_widgets.ipynb)
 
 ### 11. Instructor Do - hvPlot Widgets Activity Review (10 mins)
 
@@ -442,7 +442,7 @@ Data for this activity was retrieved from [data.cms.gov](https://data.cms.gov/Me
 
 **Files:**
 
-* [hvplot_widgets.ipynb](Activities/05-Stu_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
+* [hvplot_widgets.ipynb](Activities/04-Stu_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
 
 Engage the students by facilitating a review discussion. Ask the following questions:
 
@@ -474,7 +474,7 @@ By the end of this activity, students will have received a dry walkthrough demo 
 
 * [Slides]()
 
-* [composing_plots.ipynb](Activities/06-Ins_Composing_Plots/Solved/composing_plots.ipynb)
+* [composing_plots.ipynb](Activities/05-Ins_Composing_Plots/Solved/composing_plots.ipynb)
 
 Navigate to the 6.1 unit slides, and highlight the following:
 
@@ -528,11 +528,11 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Composing_Masterpieces/README.md)
+* [README.md](Activities/06-Stu_Composing_Masterpieces/README.md)
 
 **Files:**
 
-* [composing_masterpieces.ipynb](Activities/07-Stu_Composing_Masterpieces/Unsolved/composing_masterpieces.ipynb)
+* [composing_masterpieces.ipynb](Activities/06-Stu_Composing_Masterpieces/Unsolved/composing_masterpieces.ipynb)
 
 - - -
 
@@ -542,7 +542,7 @@ The instructor will ask a student volunteer to conduct a dry walkthrough of the 
 
 **Files:**
 
-* [composing_masterpieces.ipynb](Activities/07-Stu_Composing_Masterpieces/Solved/composing_masterpieces.ipynb)
+* [composing_masterpieces.ipynb](Activities/06-Stu_Composing_Masterpieces/Solved/composing_masterpieces.ipynb)
 
 Initiate the review session by asking the first student who completed the student solution to conduct a dry walkthrough. If no student was identified to perform the walkthrough, conduct a dry walkthrough yourself. If the student needs assistance facilitating the review, ask guided questions such as:
 
@@ -610,7 +610,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 * [Slides]()
 
-* [viz_options.ipynb](Activities/08-Ins_Viz_Options/Solved/viz_options.ipynb)
+* [viz_options.ipynb](Activities/07-Ins_Viz_Options/Solved/viz_options.ipynb)
 
 Open the starter file, and perform a dry walkthrough of the solution, highlighting the following:
 
@@ -694,11 +694,11 @@ Make sure to slack out to students the [hvPlot customization](https://hvplot.pyv
 
 **Instructions:**
 
-* [README.md](Activities/09-Stu_Picture_Perfect/README.md)
+* [README.md](Activities/08-Stu_Picture_Perfect/README.md)
 
 **Files:**
 
-* [picture_perfect.ipynb](Activities/09-Stu_Picture_Perfect/Unsolved/Core/picture_perfect.ipynb)
+* [picture_perfect.ipynb](Activities/08-Stu_Picture_Perfect/Unsolved/Core/picture_perfect.ipynb)
 
 - - -
 
@@ -708,7 +708,7 @@ Students participate in a 5 minute turn and teach activity that will focus on sh
 
 **Files:**
 
-* [picture_perfect.ipynb](Activities/09-Stu_Picture_Perfect/Solved/Core/picture_perfect.ipynb)
+* [picture_perfect.ipynb](Activities/08-Stu_Picture_Perfect/Solved/Core/picture_perfect.ipynb)
 
 Instruct students to turn and find a partner to demo their visualizations and customizations to. Encourage students to teach one another different tricks and shortcuts they may have learned along the way, as well as to provide constructive criticism to help make the visualizations more appealing and insightful.
 
@@ -782,7 +782,7 @@ If time remains, emphasize one last time the importance of interactive visualiza
 
 * Inform students that interactive data visualization careers are currently trending; many companies are looking for developers who can wrangle data as well as create fun and attractive visualizations.
 
-Ask for any questions before moving forward.
+Ask for any remaining questions before ending the class.
 
 ## End Class
 
