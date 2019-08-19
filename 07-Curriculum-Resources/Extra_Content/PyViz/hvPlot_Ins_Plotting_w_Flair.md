@@ -1,4 +1,4 @@
-### 21. Instructor Do: Plotting with Flair (5 mins) (Optional)
+### 18. Instructor Do - Plotting with Flair (5 mins) (Optional)
 
 In this optional activity, the instructor demonstrates to students how to create additional hvPlot types, such as **scatter** and **area** plots.
 
@@ -6,7 +6,7 @@ In this optional activity, the instructor demonstrates to students how to create
 
 * [Slides]()
 
-* [plotting_with_flair.ipynb](Activities/21-Ins_Plotting_with_Flair/Unsolved/plotting_with_flair.ipynb)
+* [plotting_with_flair.ipynb](Activities/10-Ins_Plotting_with_Flair/Unsolved/plotting_with_flair.ipynb)
 
 Explain to students that **line** and **bar** plots are just the tip of the iceberg in terms of what hvPlot supports.
 
@@ -30,7 +30,13 @@ Open the starter file, and live code the following. Make sure to highlight the c
     "year":np.random.randint(2010,2019,50)}).sort_values('year')
 
   # Area plot
-  df.hvplot.area(x='year',y=['foreclosed','sold','escrow'],xlabel='Year',ylabel='Total',title='2019 VA Q1 Real Estate Metrics',stacked=True)
+  df.hvplot.area(
+    x='year',
+    y=['foreclosed','sold','escrow'],
+    xlabel='Year',
+    ylabel='Total',
+    title='2019 VA Q1 Real Estate Metrics',
+    stacked=True)
   ```
 
   ![area_plot.png](Images/area_plot.png)
@@ -39,7 +45,16 @@ Open the starter file, and live code the following. Make sure to highlight the c
 
   ```python
   # Scatter Plot
-  df.hvplot.scatter(x='foreclosed',y='escrow',xlabel='Foreclosed',ylabel='Escrow',c='year',cmap='viridis',colorbar=True,title='2019 VA Q1 Real Estate Metrics')
+  df.hvplot.scatter(
+    x='foreclosed',
+    y='escrow',
+    xlabel='Foreclosed',
+    ylabel='Escrow',
+    c='year',
+    cmap='viridis',
+    colorbar=True,
+    title='2019 VA Q1 Real Estate Metrics'
+  )
   ```
 
   ![scatter_plot.png](Images/scatter_plot.png)

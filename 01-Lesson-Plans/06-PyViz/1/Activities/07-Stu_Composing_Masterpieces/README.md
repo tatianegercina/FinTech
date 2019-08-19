@@ -5,9 +5,9 @@ You just received an email notification from your mom. Her email is below:
 ```
 Hi honey!
 
-Thank you so much for doing research on the states with the cheapest Diabetes care. Your father and I have looked at the charts, and we're thinking about taking a look at properties in Delaware since its one of the top 10 lowest states for Diabetes care. It was snazzy being able to play with the charts. I've never seen such a thing before!
+Thank you so much for doing research on the states with the cheapest Diabetes care. Your father  and I have looked at the charts, and we're thinking about taking a look at properties in Delaware since its one of the top 10 lowest states for Diabetes care. It was snazzy being able to play with the charts. I've never seen such a thing before!
 
-The reason I'm writing you is because I showed your nifty little report to Marilyn from down the street. You remember her right? She's the one with the two sons, Sean and Kiran. Well, she just got promoted at REMAX, and she's looking to add someone to her team who can help with data visualizations and analytic reporting. She wants you to come in with a portfolio and interview for the role. She thinks you're a perfect fit! Fingers crossed!
+The reason I'm writing you is because I showed your nifty little report to Marilyn from down the street. You remember her right? She's the one with the two sons, Sean and Kiran. Well, she just got promoted at REMAX, and she's looking to add someone to her team who can help with data visualizations and analytic reporting both full time and as needed. She wants you to come in with a portfolio and interview for the role. She thinks you're a perfect fit! Fingers crossed!
 
 Let me know if you're interested, and I'll give you her phone number!
 
