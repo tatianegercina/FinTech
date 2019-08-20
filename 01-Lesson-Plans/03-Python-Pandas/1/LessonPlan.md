@@ -16,6 +16,10 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * Reference the [Student FAQs](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any suggestions for additional questions, feel free to log an issue or a pull request with your desired additions.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [3.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e1e2c6d5-ca1e-4255-8b93-aaa301156f71) Note that this video may not reflect the most recent lesson plan.
+
+
 - - -
 
 ### 1. Instructor Do: Welcome Students (5 min)

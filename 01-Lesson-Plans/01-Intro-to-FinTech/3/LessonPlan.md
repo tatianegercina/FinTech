@@ -32,6 +32,10 @@ By the end of class, students will be able to:
 
 * Be mindful of students working in groups during the case study activity; some students may be less vocal than others. Circulate the classroom with the TAs and make sure that every student is actively engaged and participating in their group's discussion. 
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [1.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29698287-5856-45e6-9373-aa9800300d03) Note that this video may not reflect the most recent lesson plan.
+
+
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson 1.3 Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit#slide=id.g54ab1329fa_1_44). 
