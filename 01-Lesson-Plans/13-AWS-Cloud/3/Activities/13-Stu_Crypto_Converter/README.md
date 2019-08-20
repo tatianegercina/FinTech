@@ -76,12 +76,16 @@ As you noticed the bot allows users to select between Bitcoin, Ethereum and Ripp
     )
     ```
 
-4. Remove the `get_btcprice()` function since it won't be used anymore.
+4. Remove the `get_btcprice()` function in case you won't need it anymore.
 
 5. Create at least three test event, one per cryptocurrency, to validate that the code is working properly.
 
-6. Open the Amazon Lex console and test the bot on the _Test bot_ window. Since you only made changes on Lambda, there is no need to build the bot. You should now have accurate conversions for each cryptocurrency.
+6. Open the Amazon Lex console and test the bot on the _Test bot_ window. Since you only made changes on Lambda, there is no need to build the bot. You should now have accurate conversions for each cryptocurrency as it's shown bellow.
+
+    ![Extended Crypto Converted demo](Images/crypto_converter_extended.gif)
 
 ## Hints
 
 * You can store the response card image on an AWS S3 bucket, remember to configure public access to the image.
+
+* Remember to save your Lambda function once in a while to prevent code loses.
