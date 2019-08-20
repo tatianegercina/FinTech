@@ -14,7 +14,7 @@ Start this activity by opening the [lesson slides](#), navigate to the _Intro to
 
 * Amazon Lex is an AWS service that allows developers to create conversational interfaces powered by the same deep learning technologies as Alexa.
 
-* Getting started with Amazon Lex is quite easy, it's just a four steps process.
+* Getting started with Amazon Lex is quite easy, it's just a four step process.
 
 * All the complexity of deep learning algorithms is encapsulated, no coding is needed to start using it.
 
@@ -22,7 +22,7 @@ Introduce the Amazon Lex jargon to students using a day-to-day example like book
 
 Clarify to students the AWS regions where Amazon Lex is available, pricing varies among regions. We will use `US West (Oregon)` for running the examples.
 
-Slack out the [Amazon Lex Pricing policies](https://aws.amazon.com/lex/pricing/), remind students that from the date they get started with Amazon Lex, they can process up to 10,000 text requests and 5,000 speech requests per month for free for the first year.
+Slack out the [Amazon Lex Pricing policies](https://aws.amazon.com/lex/pricing/), remind students that from the date they get started with Amazon Lex, they can process up to 10,000 text requests and 5,000 speech requests per month for free for the first year. **Note:** This is subject to change, so they should verify the pricing structure using the link above.
 
 Close the presentation and open the AWS Management Console, explain students that now you will create an Amazon Lex bot that will assist users to split a bill between a given number of people.
 
