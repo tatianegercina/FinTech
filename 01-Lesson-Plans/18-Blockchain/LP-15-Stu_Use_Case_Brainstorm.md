@@ -1,4 +1,4 @@
-### 3. Student Do: Use Case Brainstorm (15 mins)
+### 15. Student Do: Use Case Brainstorm (15 mins)
 
 Now that the students have learned about the features of Ethereum and how it acts as a decentralized world computer,
 it is a good time to brainstorm different use cases given these features.
@@ -12,7 +12,7 @@ Have TAs circulate throughout the class, facilitating discussion and ensuring st
 
 * [README.md](1/Activities/15-Stu_Use_Case_Brainstorm/README.md)
 
-### 4. Instructor Do: Use Case Review (10 mins)
+### 16. Instructor Do: Use Case Review (10 mins)
 
 Ask different groups what their most interesting use case was and have them describe them to the class.
 
