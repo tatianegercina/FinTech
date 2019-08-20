@@ -88,7 +88,7 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 
 ## Hints
 
-* After reading each CSV file, don't forget to sort each DataFrame in descending order by the Date using `sort_index`.
+* After reading each CSV file, don't forget to sort each DataFrame in ascending order by the Date using `sort_index`. This is especially important when working with time series data as we want to make sure Date indexes go from earliest to latest.
 
 * The Pandas functions used in class this week will be useful for this assignment.
 
