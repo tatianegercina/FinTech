@@ -161,7 +161,7 @@ Open the file `sort_dataframe.ipynb` and highlight the following:
   
 * The DataFrame can also be sorted by the index.
 
-  ```python\
+  ```python
   painting_df.sort_index(ascending=False)
   ```
 
