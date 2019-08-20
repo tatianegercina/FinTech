@@ -175,7 +175,7 @@ def convert_usd(intent_request):
         # Once all slots are valid, a delegate dialog is returned to Lex to choose the next course of action.
         return delegate(output_session_attributes, get_slots(intent_request))
 
-    # Get the current price of BTC in USD and make the conversion from USD to BTC.
+    # Get the current price of BTC, ETH or XRP in USD and make the conversion from USD.
     crypto_value = parse_float(usd_amount) / get_cryptoprice(crypto)
     crypto_value = round(crypto_value, 4)
 
