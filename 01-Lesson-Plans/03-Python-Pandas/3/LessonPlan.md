@@ -158,6 +158,12 @@ Open the file `sort_dataframe.ipynb` and highlight the following:
 * The DataFrame can also be sorted in descending order using the `ascending=False` parameter.
 
   ![sort-descending.png](Images/sort-descending.png)
+  
+* The DataFrame can also be sorted by the index.
+
+  ```python\
+  painting_df.sort_index(ascending=False)
+  ```
 
 Ask if there are any questions before moving on.
 
