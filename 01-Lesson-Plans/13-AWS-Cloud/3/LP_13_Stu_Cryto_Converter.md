@@ -6,13 +6,17 @@ In this activity, students will extend their cryptocurrency converter by adding 
 
 * [README.md](Activities/13-Stu_Crypto_Converter/README.md)
 
+**Files:**
+
+* [lambda_function.py](Activities/13-Stu_Crypto_Converter/Unsolved/lambda_function.py)
+
 ---
 
 ### 14. Instructor Do: Review Crypto Converter (10 mins)
 
 **Files:**
 
-* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
+* [lambda_function.py](Activities/13-Stu_Crypto_Converter/Solved/lambda_function.py)
 
 Walk through the solution and highlight the following:
 
