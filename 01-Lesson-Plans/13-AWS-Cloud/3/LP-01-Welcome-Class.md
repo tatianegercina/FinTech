@@ -4,13 +4,13 @@
 
 ### Overview
 
-In Today's class, students will be introduced to conversational user interfaces (CUIs) also they will learn how CUIs are disrupting on finance and banking. Students will create a robo advisor by the end of the class using Amazon Lex, Amazon Lambda and Slack.
+In Today's class, students will be introduced to conversational user interfaces (CUIs) also they will learn how CUIs are disrupting finance and banking. By the end of the class, students will create a robo advisor using Amazon Lex, Amazon Lambda and Slack.
 
 ### Class Objectives
 
 By the end of the unit, students will be able to:
 
-* Describe the applications of conversational interfaces on finance and banking.
+* Describe the applications of conversational interfaces for finance and banking.
 
 * Recognize how machine learning contributes to create conversational interfaces.
 
@@ -22,11 +22,11 @@ By the end of the unit, students will be able to:
 
 ### Instructor Notes
 
-* There are several misconceptions and myths about what can be achieved with a Robo Advisor, make sure students understand what a Robo Advisor is and invite them to think about the endless possibilities of this technology on FinTech.
+* There are several misconceptions and myths about what can be achieved with a Robo Advisor, make sure students understand what a Robo Advisor is and invite them to think about the endless possibilities of this technology for FinTech.
 
-* Today's class would be challenging for students, they are going to deal with different AWS services and the Slack API, so be sure to get familiar with all the activities before class.
+* Today's class may be challenging for students because they are going to deal with different AWS services and the Slack API, so be sure to get familiar with all the activities before class.
 
-* Amazon Lambda functions will be created and edited using the online code editor, sometimes it get freezed, so recommend students to backup their code on a local Python script.
+* Amazon Lambda functions will be created and edited using the online code editor. This editor sometimes has issues or freezes up, so tell students to backup their code with a local Python script.
 
 * Testing Amazon Lambda functions could be tricky and frustrating, so have your TAs assisting students while they are coding and testing them.
 
@@ -34,7 +34,7 @@ By the end of the unit, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 13.3 Slides](#).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 13.3 Slides]().
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
 
@@ -50,11 +50,11 @@ In this activity, students will be introduced to conversational user interfaces 
 
 **Files:**
 
-* [Lesson 13.3 Slides](#)
+* [Lesson 13.3 Slides]()
 
-Welcome students back and explain that Today we will learn about conversational user interfaces, one of the coolest applications of natural language processing; explain students that they will create a robo advisor by the end of the day.
+Welcome students back and explain that Today we will learn about conversational user interfaces, one of the coolest applications of natural language processing; explain to students that they will create a robo advisor with conversational capabilities by the end of the day.
 
-Open the [lesson slides](#) and move to the _Conversational User Interfaces (CUIs) and Robo Advisors_ section, highlight the following:
+Open the lesson slides and move to the _Conversational User Interfaces (CUIs) and Robo Advisors_ section, highlight the following:
 
 * On the early yeas of computing history, people used to communicate with computers using text interfaces and some non-human-friendly commands.
 
@@ -66,9 +66,9 @@ Open the [lesson slides](#) and move to the _Conversational User Interfaces (CUI
 
 Engage students by highlighting the benefits of this technology on finance and banking, slack out [this article from Deloitte](../Suplemental/deloitte-nl-fsi-chatbots-adopting-the-power-of-conversational-ux.pdf) were they can learn more about the impact of chatbots in financial services.
 
-Comment to students the examples of chatbots use cases, ask a couple of them if they are familiar with services like these and what were their experience.
+Present to students the use cases shown on the _Example Chatbots Use Cases_ slide, ask a couple of them if they are familiar with services like these and what were their experience.
 
-Present to the class the technologies we will use Today and highlight the following:
+Explain to the class the technologies we will use Today and highlight the following:
 
 * By the end of Today's class we will create a robo advisor using AWS.
 
