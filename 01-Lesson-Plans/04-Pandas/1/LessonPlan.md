@@ -34,6 +34,9 @@ By the end of class, students will be able to:
 
 * When discussing portfolios and its characteristics—risk, return, correlation—explain the concepts in terms of money. For example, if you start with $10,000, how would a poorly optimized portfolio compare with one that is not?
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [4.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2f56d5fa-30a1-4faf-b2af-aaa800fbbb53) Note that this video may not reflect the most recent lesson plan.
+
 ---
 
 ### Class Slides and Time Tracker
