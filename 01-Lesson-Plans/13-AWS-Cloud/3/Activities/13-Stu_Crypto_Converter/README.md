@@ -40,6 +40,48 @@ Customers just loved the new chatbot to convert from US Dollars to Bitcoin, howe
 
 ![Response cards](Images/custom_slots_cards.gif)
 
+### Add Ethereum and Ripple conversion to Lambda
+
+As you noticed the bot allows users to select between Bitcoin, Ethereum and Ripple, however it's not making the accurate cryptocurrency conversions from US Dollars, now it's time to extend your Lambda function to solve this issue.
+
+1. Open the code of your `convertUSD` Lambda function on the AWS Lambda online code editor, make a backup copy in case you need to restore your function.
+
+2. Create a new helper function called `get_cryptoprice(crypto)` that will receive as parameter the name of the cryptocurrency selected by the user and should return the price of the selected cryptocurrency in US Dollars. As starting code, you can use the `get_btcprice()` function's code. To retrieve the current price of Ethereum and Ripple use the following endpoints from CoinMarketCap.
+
+    * **Ethereum:** https://api.coinmarketcap.com/v1/ticker/ethereum/
+    * **Ripple:** https://api.coinmarketcap.com/v1/ticker/ripple/
+
+3. Modify the `convert_usd()` function as follows:
+
+    * Add the code needed to fetch the value of the `crypto` slot.
+    * Modify the following code at your convenience, to call the `get_cryptoprice()` function and calculate the conversion from US Dollars to the selected cryptocurrency.
+
+    ```python
+    # Get the current price of BTC in USD and make the conversion from USD to BTC.
+    btc_value = parse_float(usd_amount) / get_btcprice()
+    btc_value = round(btc_value, 4)
+
+    # Return a message with conversion's result.
+    return close(
+        intent_request["sessionAttributes"],
+        "Fulfilled",
+        {
+            "contentType": "PlainText",
+            "content": """Thank you for your information;
+            you can get {} Bitcoins for your {} US Dollars.
+            """.format(
+                btc_value, usd_amount
+            ),
+        },
+    )
+    ```
+
+4. Remove the `get_btcprice()` function since it won't be used anymore.
+
+5. Create at least three test event, one per cryptocurrency, to validate that the code is working properly.
+
+6. Open the Amazon Lex console and test the bot on the _Test bot_ window. Since you only made changes on Lambda, there is no need to build the bot. You should now have accurate conversions for each cryptocurrency.
+
 ## Hints
 
 * You can store the response card image on an AWS S3 bucket, remember to configure public access to the image.
