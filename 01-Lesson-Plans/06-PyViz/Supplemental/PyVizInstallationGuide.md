@@ -4,18 +4,17 @@ PyViz is a Python visualization package that provides a single platform to acces
 
 Follow the below steps to install and setup PyViz in your Python environment. These steps should be completed outside of class.
 
-1. Download the PyViz dependencies **nodejs** and **dpm** dependencies.
+1. Download the PyViz dependencies **nodejs** and **npm** (included in nodejs).
 
     ```shell
-    conda install nodejs
-    conda install npm
+    conda install -c conda-forge nodejs
     ```
 
 2. Use the `conda install` command to install the following packages: hvPlot, Plotly Express, and Panel.
 
     ```shell
     conda install -c pyviz hvplot
-    conda install -c plotly
+    conda install -c plotly plotly
     conda install -c pyviz panel
     ```
 
