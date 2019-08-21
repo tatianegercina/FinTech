@@ -4,7 +4,7 @@ PyViz is a Python visualization package that provides a single platform to acces
 
 Follow the below steps to install and setup PyViz in your Python environment. These steps should be completed outside of class.
 
-1. Download the PyViz dependencies **nodejs** and **npm** dependencies (included in nodejs).
+1. Download the PyViz dependencies **nodejs** and **npm** (included in nodejs).
 
     ```shell
     conda install -c conda-forge nodejs
