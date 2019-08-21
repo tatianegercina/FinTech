@@ -1,8 +1,8 @@
 # Understanding Lambdas
 
-Getting started with AWS Lambda is definitely a challenge, however despite its capabilities, the effort is worth it. This is a group activity intended to allow you to go deeper on the code that has been presented on the last activity to have a better understanding about how Amazon Lex and AWS Lambda talks each other.
+Getting started with AWS Lambda can be challenging. However, due to the capabilities that lambda provides, the effort is worth it. In this activity, you learn how Amazon Lex and AWS Lambda communicates with each other.
 
-Work in groups up to three people, review the code shared by the Instructor line by line and comment with your mates about how the code is working, once you finish reviewing the code, create your own lambda function using the code provided and configure your `Crypto_Converter` bot to use it as it was presented on the demo.
+Using the code provided by the instructor, work with a partner to understand each line of the code. Explain it to each other and ask the TAs about anything that isn't clear. Once you finish reviewing the code, create your own lambda function using the code provided and configure your `Crypto_Converter` bot to use it as it was presented on the demo.
 
 Once you finish configuring you bot, build a new version and test the conversation with some of the sample utterances. You final dialog should be similar to the following examples.
 
