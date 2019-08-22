@@ -586,7 +586,7 @@ Walk through the solution and highlight the following:
 
   ![stock-price-frequency-distribution](Images/stock-price-frequency-distribution.PNG)
 
-* Calculating a `95%` confidence interval of potential outcomes for projected `AAPL` stock prices over the next `252` trading days showcases a range in which there is a `95%` chance that `AAPL` stock price will end up within the range of `$99.12–$357.69`.
+* Calculating a `95%` confidence interval of potential outcomes for projected `AAPL` stock prices over the next `252` trading days showcases a range in which there is a `95%` chance that `AAPL` stock price will end up within the range of `$106.22 - $329.27`.
 
   ![stock-price-confidence-interval](Images/stock-price-confidence-interval.PNG)
 
