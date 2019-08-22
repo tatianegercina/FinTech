@@ -29,7 +29,3 @@ Have the students reset and put their hands down, then ask the students to hold 
 At this point you should have an idea of which students have an affinity towards this technology.
 
 Take a mental note of these students, as you will be able to distribute them among groups that have less knowledge about the topic.
-Due to the niche nature of the field, you may notice some students have a bias towards a specific blockchain.
-While this is to be expected, make sure to keep this in mind for keeping discussions on topic and about the core technology.
-Ethereum is the most common ground for teaching this technology, as it has the highest skill transferrability and has the largest developer community.
-You may need to gently remind the students.
