@@ -16,3 +16,29 @@ Have the students pick which part of the world their group will be in.
 **Instructions:**
 
 * [README.md](Activities/06-Stu_Peoplechain/README.md)
+
+### 7. Instructor Do: Peoplechain Review (5 mins)
+
+Ask the students a few questions about the activity:
+
+  * If one person lied about a transaction, would it be easy to tell?
+
+    * **Answer**: Sure, you could double check with another ledger.
+
+    * **Answer**: In reality, there are cryptographic features that will also prevent this.
+
+  * What would you do if you discovered a ledger keeper was lying, or not responding?
+
+    * **Answer** Take note and stop communicating with them.
+
+    * **Answer** You might even tell others that they lied.
+
+  * What are the ways this system is making lying harder to do?
+
+    * **Answer** Since the ledger is everywhere, and transactions are broadcasted to everyone, it is difficult to lie.
+
+Ask the students to ponder the following (no answer required):
+
+  * While it may be easy to discover one node is lying, what if one entire region had a different copy of the ledger?
+
+    * **Answer** You would have a consensus problem.
