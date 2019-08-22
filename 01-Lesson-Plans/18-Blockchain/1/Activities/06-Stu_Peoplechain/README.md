@@ -41,13 +41,3 @@ This activity will demonstrate the public, borderless, and censor resistant natu
 5. Compare ledgers to make sure that they are all "synchronized".
 
 6. If they are not, take a note as to why. Was it because someone missed a transaction, or was a transaction actually modified?
-
-7. Ask yourself, what were to happen if any of these students were to lie about the transactions they received?
-
-  * Would it be easy to discover who is lying?
-
-  * What would you do if you discovered a ledger keeper was lying, or not responding?
-
-  * What are the ways this system is making lying harder to do?
-
-  * While it may be easy to discover one node is lying, what if one entire region had a different copy of the ledger?
