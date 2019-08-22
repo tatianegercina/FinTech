@@ -29,6 +29,8 @@ Blockchain technology is not only helping those without strong financial institu
 
   * Tokenization of securities and new financial markets
 
+  * Notarization and multi-party agreement verification
+
 Ask the students, what happens when you send money to someone via PayPal? Venmo? Cashapp? Walk them through the steps:
 
 * The money goes from your bank, to PayPal, then to the final bank before it hits the other person's account balance.
