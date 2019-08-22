@@ -10,7 +10,9 @@ Get into small groups, or the same groups as before.
 
 2. Elect one member of the group to send out a transaction hash to the rest of the group.
 
-3. Try to break down the different parts of the transaction.
+3. Paste the address into the search on Etherscan:
+
+![etherscan](../../Images/etherscan.png)
 
 4. Identify the following fields in the transaction:
 
@@ -32,7 +34,9 @@ Get into small groups, or the same groups as before.
 
 8. Explore the first transaction (this should be an input from the token faucet).
 
-9. Who is the sender of these test tokens?
+![first transaction](../../Images/first.png)
+
+9.  Who is the sender of these test tokens?
 
 10. Explore the sender. This should be an account that the testnet faucet is using to send test tokens from.
 
