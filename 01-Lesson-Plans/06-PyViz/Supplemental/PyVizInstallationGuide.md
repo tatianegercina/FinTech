@@ -1,6 +1,6 @@
 # PyViz Installation Guide
 
-PyViz is a Python visualization package that provides a single platform to access multiple visualization packages, including Matplotlib, Plotly Express, hvPlot, Panel, d3.js, etc.
+PyViz is a Python visualization package that provides a single platform to access multiple visualization packages, including Matplotlib, Plotly Express, hvPlot, Panel, D3.js, etc.
 
 Follow the below steps to install and setup PyViz in your Python environment. These steps should be completed outside of class.
 
@@ -50,3 +50,9 @@ Follow the below steps to install and setup PyViz in your Python environment. Th
   ```
 
 Now you're all set to get started creating visual masterpieces using PyViz technologies!
+
+
+
+
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
