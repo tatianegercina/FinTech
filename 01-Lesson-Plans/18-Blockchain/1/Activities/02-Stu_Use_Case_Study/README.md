@@ -16,7 +16,7 @@ that each have. This list will be compared against later in class today.
 
 - [Bitcoin](https://www.bbc.co.uk/news/business-47553048)
 
-- [Monero](https://www.reuters.com/article/us-crypto-currencies-altcoins-explainer/explainer-privacy-coin-monero-offers-near-total-anonymity-idUSKCN1SL0F0)
+- [Monero](https://bravenewcoin.com/insights/monero-no-plans-to-go-'legit')
 
 - [Stellar](https://www.investopedia.com/news/what-stellar/)
 
