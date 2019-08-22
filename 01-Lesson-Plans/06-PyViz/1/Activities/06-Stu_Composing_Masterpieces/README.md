@@ -18,13 +18,13 @@ Mom
 P.S. Make sure to really consider Marilyn's offer! Real estate is such a good industry to get into.
 ```
 
-Start working on some sample visualizations to showcase to Marilyn as a portfolio. Use the [real estate loan](Resources/state_loan_data.csv) data you found online as the underlying data for visualization. Make sure to pay particular attention to aesthetic detail; this portfolio will need to be a masterpiece!
+Start working on some sample visualizations as a portfolio to showcase to Marilyn. Use the [real estate loan](Resources/state_loan_data.csv) data you found online as the underlying data for visualization. Make sure to pay particular attention to aesthetic details; this portfolio will need to be a masterpiece!
 
 ## Instructions
 
 1. Open the [starter file](Unsolved/composing_masterpieces.ipynb), and calculate the total average loan amount by state. Plot the data, and name this plot `plot_state_avgs`. Make this plot a **bar** plot.
 
-2. Use the `hvplot` function to create separate plots visualizing sum of average loan amounts for 2015-2016 and 2010-2014. Name these plots `plot_2015_2016` and `plot_2010_2014`.
+2. Use the `hvplot` function to create separate plots visualizing sum of average loan amounts for 2015–2016 and 2010–2014. Name these plots `plot_2015_2016` and `plot_2010_2014`.
 
 3. Compose plots `plot_2015_2016` and `plot_2010_2014` using the `+` operator.
 
@@ -34,6 +34,10 @@ Start working on some sample visualizations to showcase to Marilyn as a portfoli
 
 ### Hint
 
-Composing plots of different kind can help users visualize differences in data points. Consider composing plots of different kinds to help underscore similarities and differences in trends.
+Composing plots of different kinds can help users visualize differences in data points. Consider composing plots of different kinds to help underscore similarities and differences in trends.
 
 Also, remember to sort data before plotting and leverage labels. This will help users glean better insights from the visualization.
+
+
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
