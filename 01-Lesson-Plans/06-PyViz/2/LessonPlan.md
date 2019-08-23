@@ -42,7 +42,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-The slides for this lesson can be viewed on Google Drive here: [Lesson 6.2 Slides]().
+The slides for this lesson can be viewed on Google Drive here: [Lesson 6.2 Slides](https://docs.google.com/presentation/d/1DfYWcHArvTgfQzZ_TI-UwQYifllp3M5teWE1Hx6dwvg/edit?usp=sharing).
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
@@ -56,7 +56,7 @@ The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 **Files:**
 
-* [Welcome-slides]()
+* [Welcome-slides](https://docs.google.com/presentation/d/1DfYWcHArvTgfQzZ_TI-UwQYifllp3M5teWE1Hx6dwvg/edit?usp=sharing)
 
 Welcome students back! Indicate that today will start day 2 of interactive visualizations using PyViz.
 
@@ -155,7 +155,7 @@ Open the starter file provided and live code how to create a scatter plot using 
   * Use **Average Sale Price** to determine the size of the data circles.
 
   * Color code the plot by **County**.
-  
+
   ```python
   # Create scatter plot comparing number of housing units sold with cost of living index
   px.scatter(md_housing_sales,
@@ -164,7 +164,7 @@ Open the starter file provided and live code how to create a scatter plot using 
             size='Average Sale Price',
             color='County')
   ```
-  
+
     ![plotly_scatter_2.png](Images/plotly_scatter_2.png)
 
 Use the Plotly Express interactivity features and widget bar to interact with the visualization.
