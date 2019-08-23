@@ -6,10 +6,15 @@ that each have. This list will be compared against later in class today.
 ## Instructions
 
 * Get into a small group of 3-4
+
 * Each group member should pick a use case to read for a few minutes
+
 * While reading, make a list of the different features and functionality that you notice
+
 * Compare your lists to your group
+
 * Discuss the differences and similarities
+
 * Try to come up with a core set of features that all of the use cases share
 
 ## Links
@@ -31,4 +36,5 @@ that each have. This list will be compared against later in class today.
 ## Hint
 
 * Think big, it's okay to point out socioeconomic features, not just technical ones
+
 * Try to imagine the implications of these technologies on society
