@@ -52,7 +52,7 @@ By the end of this class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.1 Slides]().
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.1 Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w).
 
@@ -66,7 +66,7 @@ By the end of this class, students will be able to:
 
 **Files:**
 
-* [Slides]()
+* [Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit?usp=sharing)
 
 Welcome to Unit 6! Unit 6 is dedicated to introducing and teaching students all they need to know about data visualization using the PyViz visualization platform.
 
@@ -86,9 +86,9 @@ Navigate to the 6.1 slides, and highlight the following:
 
 Transition into a demonstration of the types of visualizations that can be made using PyViz:
 
-- Interactive visualizations allow data to be explored and analyzed in the most efficient and effective manner for human eyes.
-- Interactive visualizations give users the ability to pan, zoom, and filter data elements and values.
-- Interactive visualization also include functionality that allows data to be sorted off different values based off a simple click.
+* Interactive visualizations allow data to be explored and analyzed in the most efficient and effective manner for human eyes.
+* Interactive visualizations give users the ability to pan, zoom, and filter data elements and values.
+* Interactive visualization also include functionality that allows data to be sorted off different values based off a simple click.
 
 End the module communicating to students that gone are the days where simple line, bar, and histogram charts satisfied data visualization and data analysis needs. Students will now learn how to create interactive and innovative visualizations.
 
@@ -130,7 +130,7 @@ Students will be introduced to PyViz by way of a facilitated discussion led by t
 
 **Files:**
 
-* Slides
+* [Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit#slide=id.g49cc2d98fb_0_55)
 
 Communicate to students that the Python environment comes packed with a number of different visualization technologies that have all been wrapped together into one platform called PyViz.
 
@@ -166,7 +166,7 @@ Students participate in a formal lecture regarding what hvPlot is and what it ha
 
 **Files:**
 
-* [Slides]()
+* [Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit#slide=id.g5fd55e56a3_0_42)
 
 Navigate to the 6.1 slides, and introduce students to the world of hvPlot interactive graphs!
 
@@ -359,7 +359,7 @@ By the end of this activity, students and the instructor will have deep dived in
 
 **Files:**
 
-* [Slides]()
+* [Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit#slide=id.g5fd55e56a3_0_91)
 
 * [hvplot_widgets.ipynb](Activities/03-Ins_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
 
@@ -471,7 +471,7 @@ By the end of this activity, students will have received a dry walkthrough demo 
 
 **Files:**
 
-* [Slides]()
+* [Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit#slide=id.g5fdae88b8a_0_213)
 
 * [composing_plots.ipynb](Activities/05-Ins_Composing_Plots/Solved/composing_plots.ipynb)
 
@@ -607,7 +607,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 **Files:**
 
-* [Slides]()
+* [Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit#slide=id.g5fdae88b8a_3_7)
 
 * [viz_options.ipynb](Activities/07-Ins_Viz_Options/Solved/viz_options.ipynb)
 
