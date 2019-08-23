@@ -2,9 +2,9 @@
 
 It's been about a week since your last interview with REMAX, and you're still waiting to hear back regarding an offer. In anticipation of the REMAX offer, you've been doing a lot of research about data visualization and the different types of statistical plots.
 
-During your research, you came across a plot you've only seen offered with **Plotly Express**: the **parallel coordinate** plot. Your research has shown you that **parallel coordinate** plots are great for performing impact analysis, which is key when assessing trends in the real estate market.
+During your research, you came across a plot you've only seen offered with **Plotly Express**: the **parallel coordinate** plot. Your research has shown you that parallel coordinate plots are great for performing impact analysis, which is key when assessing trends in the real estate market.
 
-While you're waiting to hear back from REMAX, use the Alleghany Count sales and foreclosures data sets to get some practice using **parallel coordinate** plots. Then, analyze the key performance indicators for real estate in parallel..
+While you're waiting to hear back from REMAX, use the Alleghany County sales and foreclosures data sets to get some practice using parallel coordinate plots. Then, analyze the key performance indicators for real estate in parallel.
 
 ## Instructions
 
@@ -14,11 +14,11 @@ While you're waiting to hear back from REMAX, use the Alleghany Count sales and 
 
 3. Concatenate `sales_grp_cnt` and `foreclosures_grp_cnt`. Concatenate where `axis=1`. Hint: Don't forget to drop nulls and reset the index.
 
-4. Plot `sales_foreclosures_cnt`. Set the color to be based off of Series `index`.
+4. Plot `sales_foreclosures_cnt`. Set the color to be based off Series `index`.
 
 5. Sort the axes so that `index` axes is in the middle of `num_sales` and `num_foreclosures`.
 
-6. Explore the data and understand the relationship between the number of sales, foreclosures, and the year.
+6. Explore the data and understand the relationship between the number of sales, number of foreclosures, and the year.
 
 ### Challenge
 
@@ -34,6 +34,11 @@ If time remains, complete the challenge activity below.
 
 ### Hint
 
-Use the `reset_index` function whenever an index field needs to be manipulated/displayed on a plot.
+Use the `reset_index` function whenever an index field needs to be manipulated or displayed on a plot.
 
-Dropping nulls after concatenation will ensure data relationships are preserved. This will ensure partial data is not being reported on.
+Dropping nulls after concatenation will ensure that data relationships are preserved. This will ensure partial data is not being reported on.
+
+
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+

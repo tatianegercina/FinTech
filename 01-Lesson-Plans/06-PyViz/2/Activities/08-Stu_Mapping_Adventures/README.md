@@ -2,7 +2,7 @@
 
 It's time to take a break from your day job and to plan an adventure!
 
-Your friends have decided to plan a trip to NYC for Harold's birthday, and you're all looking forward to the time away from the office. In order to plan for the event, you started doing some research regarding points of interest in NYC. You've found one data set that lists a bunch of cool places to see.
+Your friends have decided to plan a trip to New York City for Harold's birthday, and you're all looking forward to the time away from the office. In order to plan for the event, you started doing some research regarding points of interest in NYC. You've found one dataset that lists a bunch of cool places to see.
 
 Use Plotly Express and **MapBox** to create a geographical plot that will visualize each area of interest within the city. If you finish early, complete the challenge section.
 
@@ -18,7 +18,7 @@ Use Plotly Express and **MapBox** to create a geographical plot that will visual
 
 5. Plot places of interest by **borough**.
 
-6. Review the data and identify 3 different types of places from the plots that you'd like to visit. Make sure these places are within walking distance.
+6. Review the data and identify three different types of places from the plots that you'd like to visit. Make sure these places are within walking distance.
 
 ### Challenge
 
@@ -28,8 +28,12 @@ Use Plotly Express and **MapBox** to create a geographical plot that will visual
 
 3. Plot squares that are of interest.
 
-Plot data with count of boroughs as the size
+Plot data with count of boroughs as the size.
 
 ### Hint
 
-Creating too many Map plots in one notebook might create a memory issue. Consider creating a separate notebook for the challenge section. This will require you to read the CSV data in for both notebooks.
+Creating too many map plots in one notebook might create a memory issue. Consider creating a separate notebook for the challenge section. This will require you to read the CSV data in for both notebooks.
+
+
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

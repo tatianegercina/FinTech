@@ -1,6 +1,6 @@
 # Plotting Relocation
 
-Your parents are considering relocating to another state because of the rising hospital costs in New Jersey for Diabetes care. One of their main considerations is moving to a location where there is low cost offerings for diabetes services.
+Your parents are considering relocating to another state because of the rising hospital costs in New Jersey for diabetes care. One of their main considerations is moving to a location where there is low cost offerings for diabetes services.
 
 Using hvPlot, analyze and plot the provided hospital claims data. Use the widgets to explore the data and get specific detail about each state and provider. Make sure to perform all analysis using the visualization and supporting widgets.
 
@@ -12,11 +12,11 @@ Using hvPlot, analyze and plot the provided hospital claims data. Use the widget
 
     ![exploring_nj_data.gif](Images/exploring_nj_data.gif)
 
-3. Sort the underlying visualization data from lowest to highest average total payments. Identify the 10 states with the **lowest** Diabetes diagnostic costs.
+3. Sort the underlying visualization data from lowest to highest average total payments. Identify the 10 states with the **lowest** diabetes diagnostic costs.
 
     ![exploring_lowest_states.gif](Images/exploring_lowest_states.gif)
 
-4. Use the **box zoom** widget to zoom in on **all states** with total average payments **less than $2000**.
+4. Use the **box zoom** widget to zoom in on **all states** with total average payments **less than $2,000**.
 
     ![exploring_less_than.gif](Images/exploring_less_than.gif)
 
@@ -24,9 +24,11 @@ Using hvPlot, analyze and plot the provided hospital claims data. Use the widget
 
     ![exploring_most_expensive.gif](Images/exploring_most_expensive.gif)
 
-6. Identify the 10 states with the **highest total average payments** for Diabetes diagnostic services.
+6. Identify the 10 states with the **highest total average payments** for diabetes diagnostic services.
 
 7. Use the **Save** widget to save your visualizations.
+
+
 
 - - -
 
