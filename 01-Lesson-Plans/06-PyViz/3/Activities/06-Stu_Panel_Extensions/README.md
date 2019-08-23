@@ -12,7 +12,9 @@ If you finish early, assist your peers with troubleshooting and debugging.
 
 1. Use the Panel `extension` function to specify the Panel plugin(s) required for today's activity. The activity will use **Plotly Express** and **hvPlot**.
 
-2. Create a Panel column and add `population_plot` and `crime_plot` to it. Also provide a Markdown header explaining what these plots represent. Hint: `## Population and Crime Geo Plots`.
+2. Create a Panel column and add `population_plot` and `crime_plot` to it. Also provide a Markdown header explaining what these plots represent. 
+
+   **Hint:** `## Population and Crime Geo Plots`.
 
 3. Create a second Panel column and add `population_violence` and `violent_murder` objects to it. Provide a mark down header.
 
@@ -22,4 +24,4 @@ If you finish early, assist your peers with troubleshooting and debugging.
 
 ### Hint
 
-Make sure the plots are displayed correctly. This means using the appropriate widths and zooms (i.e. for Mapbox plots). Both of these can be configured using the `width` and `zoom` attributes respectively.
+Make sure the plots are displayed correctly. This means using the appropriate widths and zooms (i.e., for Mapbox plots). Both of these can be configured using the `width` and `zoom` attributes respectively.
