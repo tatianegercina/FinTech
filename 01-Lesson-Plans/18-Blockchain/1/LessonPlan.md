@@ -1,7 +1,70 @@
+## 18.1 Lesson Plan: Blockchain Building Blocks
+
+### Overview
+
+Today's class will introduce students to blockchain technologies. Students will learn
+the fundamentals of what the technology is, the types of problems it solves, and how it works.
+
+The goal of this lesson is to get the students thinking about how blockchain technology
+is used and how it will likely effect their lives as a FinTech entrepreneur, as well
+as be able to use basic tools like wallets and block explorers to navigate the space, and to hold a conversation about the topic.
+
+### Class Objectives
+
+By the end of the class, students be able to:
+
+* Describe why blockchain exists.
+
+* Explain blockchain technology and its use cases to someone that doesn't have any blockchain background
+
+* Describe the 5 Pillars of Open Blockchains.
+
+* Use a blockchain wallet and explain how it works to somebody who doesn't know.
+
+* Visualize transactions via block explorers.
+
+* Students will be able to brainstorm solutions for the those without robust financial institutions.
+
+* Students will be able to navigate the blockchain ecosystem
+
+- - -
+
+### Instructor Notes
+
+* Some students may already be involved with cryptocurrencies or other blockchain projects
+  and may have some opinions already about particular blockchain implementations. Due to the niche nature of the field, they may have certain biases already.
+
+* Ethereum has the largest developer community in the blockchain space, learning it has high skill transferability.
+
+* Today's class will go over some very thought provoking topics, so be prepared for fruitful discussions.
+
+* Smart Contracts = Programs that run on the Blockchain, and nothing more. You write smart contracts in Solidity, compile them,
+  create the contract with a transaction on the blockchain. The contract can then be used on Ethereum.
+
+* While blockchain inherently has a finance-heavy set of use cases, encourage students to think bigger,
+  since the technology can be used for building secure, globally distributed software.
+
+### 1. Instructor Do: Welcome (5 min)
+
+* **Files:**
+
+  * [slides x-y]()
+
+Welcome to the blockchain part of the course! Introduce the students by reminding them
+that they are about to embark on a new set of technologies from they have been
+using.
+
+* Remind the students that it is normal that they may feel a sense of unfamiliarity as they are charting new territories.
+
+* Explain to students that blockchain technology is the thing that powers cryptocurrencies.
+
+* To name a few popular ones, Bitcoin, Litecoin, Ethereum, Ripple, Dash, and Stellar.
+
+* It does not only power FinTech solutions, it is being adopted in many industries like health care, IoT, supply chain tracking, and many more.
+
 ### 2. Instructor Do: Blockchain Skill Check (5 min)
 
-Welcome to the blockchain part of the course! Time to gauge which students are familiar with the technology by asking a few questions.
-
+Time to gauge which students are familiar with the technology by asking a few questions.
 Begin asking simple yes or no questions and ask the students to raise their hands for yes:
 
 * How many of you have heard of cryptocurrency before?
@@ -14,7 +77,7 @@ Begin asking simple yes or no questions and ask the students to raise their hand
 
 * How many of you have ever purchased blockchain before?
 
-The last question is loaded and everyone should have their hands down, and it may even elicit some laughs from those that get the joke.
+The last question is a loaded one: everyone should have their hands down, and it may even elicit some laughs from those that get the joke.
 State that blockchain is the technology that powers not just cryptocurrencies but entire decentralized economies and even enterprise networks.
 Notably, JP Morgan Chase, the largest US bank, created Quorum, an Ethereum based blockchain.
 
@@ -22,7 +85,7 @@ Have the students reset and put their hands down, then ask the students to hold 
 
 * How familiar are you with blockchain?
 
-* How comfortable to you feel having a conversation about blockchain technology?
+* How comfortable do you feel having a conversation about blockchain technology?
 
 * How familiar are you with smart contracts?
 
@@ -34,9 +97,9 @@ Take a mental note of these students, as you will be able to distribute them amo
 
 For this activity, the instructor will lead a formal lecture regarding what blockchain technology is and why it’s important.
 
-**Files**
+* **Files:**
 
-* [slides x-y]()
+  * [slides x-y]()
 
 Begin the activity by navigating to the slides and asking the students what types of financial services are available to them.
 Discuss common services like loans, payments, credit cards, brokerages, investing, etc. These can be commonly used consumer options or business options.
@@ -122,9 +185,9 @@ Some common features may be:
 
 For this activity, the instructor will lead a formal lecture regarding what the 5 pillars of open blockchains are and why they are relevant.
 
-**Files**
+* **Files:**
 
-* [slides x-y]()
+  * [slides x-y]()
 
 Begin the activity by reminding the students to keep the use cases they just examined in mind, as well as comparing the features they wrote down.
 
@@ -132,7 +195,7 @@ Then, transition through the slides and begin talking about each topic.
 
 Begin by prefacing that each of these pillars ties into each other to build an open blockchain network.
 
-[screenshot of open slide](Images/open.png)
+![screenshot of open slide](https://image.shutterstock.com/image-photo/open-blue-door-sunshine-600w-624832211.jpg)
 
 * Openness in this context refers to access:
 
@@ -145,7 +208,7 @@ Begin by prefacing that each of these pillars ties into each other to build an o
 * Openness means that the system is designed to incentivize users to keep it open. The internet is an example of this,
   it is built on open protocols that anyone can learn and contribute to.
 
-[screenshot of borderless](Images/borderless.png)
+![screenshot of borderless](https://image.shutterstock.com/image-photo/abstract-science-global-network-connection-600w-1147048595.jpg)
 
 * Explain to the students that borderless means exactly that, a network without geographical or political borders.
 
@@ -171,7 +234,7 @@ Elaborate and bring out this analogy:
 
 * You can also use a satellite connection to connect to blockchain networks and broadcast transactions, therefore it is truly global.
 
-[screenshot of neutral](Images/neutral.png)
+![screenshot of neutral](https://image.shutterstock.com/image-illustration/net-neutrality-abstract-background-260nw-1049711261.jpg)
 
 * Explain how neutral means that the protocol does not discriminate against any user.
   In fact, users don't even need to be human. The blockchain does not care if you are a human or a washing machine.
@@ -184,7 +247,7 @@ Elaborate and bring out this analogy:
 
 * Open blockchain networks are also governed in a neutral fashion, with many using the blockchain itself for voting on the next network upgrades.
 
-[screenshot of censor resistant](Images/censorresistant.png)
+![screenshot of censor resistant](https://image.shutterstock.com/image-illustration/closeup-surprised-desperate-looking-man-600w-1399238933.jpg)
 
 * Blockchains that are properly decentralized are highly resistant to censorship and authoritarian control.
 
@@ -196,7 +259,7 @@ Elaborate and bring out this analogy:
 
 * Money is often compared to a form of speech. These are systems where this form of expression cannot be censored.
 
-[screenshot of public](Images/public.png)
+![screenshot of public](https://image.shutterstock.com/image-illustration/two-way-street-signs-words-260nw-156089513.jpg)
 
 * Explain that this means that open blockchains are separate from the state. Public blockchain networks are suited for public affairs.
 
@@ -271,24 +334,26 @@ Have the TAs circulate through the class and clarify definitions for students th
 
 Students will learn basic, common terminology that will enable them to navigate the blockchain space.
 
-**Files:**
+* **Files:**
 
-* [slides x-y]()
+  * [slides x-y]()
 
 Navigate to the slides and define common terms:
 
-![screenshot of hash](hash.png)
+![screenshot of hash](https://image.shutterstock.com/image-photo/man-turning-cryptography-switch-change-600w-1038745234.jpg)
 
 * Explain that a "hash" is a unique fingerprint of a piece of data.
 
 * A hash function is one-way, which means that you cannot reverse a hash much like you can't reverse mixing paint.
+
+* There are several popular hashing algorithms, SHA256 being one of the most popular.
 
 * However, it is easy to run the hash function over the same data again to verify the result is the same.
 
 * If you were to change a single bit of the input, you would get a completely different hash.
   This allows for something called "data integrity" which is a very important part of internet and data security as well as blockchain technology.
 
-![screenshot of signature](signature.png)
+![screenshot of signature](https://image.shutterstock.com/image-vector/businessman-hands-signing-digital-signature-600w-351292748.jpg)
 
 * Digital signatures are used to mathematically prove ownership or authenticity of data.
   Once a file or message is signed, you can verify it was signed by a specific individual.
@@ -302,7 +367,7 @@ Navigate to the slides and define common terms:
 
   * **Answer** The message will be invalidated and you would know the message was modified
 
-![screenshot of wallet](wallet.png)
+![screenshot of wallet](https://image.shutterstock.com/image-illustration/digital-wallet-concept-3d-rendering-600w-487340401.jpg)
 
 * A digital wallet is simply a set of "keys" to your funds that are on the blockchain.
 
@@ -313,7 +378,7 @@ Navigate to the slides and define common terms:
 * A digital wallet is much like the debit cards in your own wallet, you use them to access funds in your account.
   Only in this case, the card is now a key, and the bank is now the blockchain.
 
-![screenshot of transaction](transaction.png)
+![screenshot of transaction](https://image.shutterstock.com/image-photo/finger-pressing-block-chain-text-600w-1026226699.jpg)
 
 * "So what's a transaction then?"
 
@@ -321,7 +386,7 @@ Navigate to the slides and define common terms:
 
 * It is essentially "I sign off on the movement of X amount of value from account A to account B" -- now that it is signed off, nobody can modify it.
 
-![screenshot of node](nodes.png)
+![screenshot of node](https://image.shutterstock.com/image-vector/abstract-scheme-modern-computer-network-600w-155306969.jpg)
 
 * A full node keeps a copy of the blockchain. It verifies every transactions signatures and throws out any that do not validate.
 
@@ -330,7 +395,7 @@ Navigate to the slides and define common terms:
 
 * Nodes are enforcing **all** of the rules of the blockchain, thus they are a very important part of the security of the network.
 
-![screenshot of miner](miner.png)
+![screenshot of miner](https://image.shutterstock.com/image-illustration/design-element-3d-illustration-rendering-600w-1167357031.jpg)
 
 * A miner/block producer is a special type of node that is working to solve computations in order to finalize transactions.
 
@@ -466,12 +531,11 @@ in future blockchain upgrades.
 
 - - -
 
-
 ### 17. Instructor Do: Intro to Ethereum (10 min)
 
-**Files:**
+* **Files:**
 
-* [slides x-y]()
+  * [slides x-y]()
 
 Walk through the slides and highlight the following:
 
