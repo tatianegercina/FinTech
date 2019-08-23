@@ -1,8 +1,8 @@
 # Plotting with Plotly
 
-Congratulations! You've been invited to the second round of the REMAX interview process for the Data Analyst role in the Business Intelligence department.
+Congratulations! You've been invited to the second round of the REMAX interview process for the data analyst role in the Business Intelligence department.
 
-Now satisfied with your skills in **hvPlot**, the interviewers now want to better understand your competency using **Plotly Express**. REMAX currently uses the **Plotly** platform, so the team needs to confirm that you'll be a good fit for their current development ecosystem.
+Now satisfied with your skills in **hvPlot**, the interviewers now want to better understand your competency using **Plotly Express**. REMAX  uses the **Plotly** platform, so the team needs to confirm that you'll be a good fit for their current development ecosystem.
 
 Using **Plotly Express** and the provided real estate data, correlate the Pennsylvania Allgehany County sales data with foreclosures. The goal is to demonstrate to the interviewers that you can understand real estate reporting requirements and develop visualizations that tell stories through data, especially as it relates to market targeting.
 
@@ -33,5 +33,7 @@ Plot the progression of foreclosures using an area chart to determine if the rat
 ### Hint
 
 Creating an **area** plot can be done using the Plotly Express `area` function.
+
+
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
