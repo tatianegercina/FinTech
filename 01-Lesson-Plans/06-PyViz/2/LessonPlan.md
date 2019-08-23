@@ -264,7 +264,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 **Files:**
 
-* [parallel_coordinate.ipynb](Activities/03-Parallel_Coordinate/Solved/parallel_cooridnate.ipynb)
+* [parallel_coordinate.ipynb](Activities/03-Ins_Parallel_Coordinate/Solved/parallel_coordinates.ipynb)
 
 Open the solved solution file and conduct a dry walkthrough. While walking through the solved file, highlight the below discussion points. Make sure to place particular emphasis on the what and why of parallel coordinate plots so students understand their use case and when they should be applied.
 
