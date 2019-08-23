@@ -10,6 +10,8 @@
 * The Ethereum community acts as a "Grand Central Station" of sorts for the blockchain community, where different ideas
   come together. Ethereum has the largest blockchain development community that is constantly innovating the technology.
 
+* Many companies are leveraging Ethereum today, including JP Morgan Chase, IBM, Consensys, and many more, forming the Enterprise Ethereum Alliance.
+
 * The Enterprise Ethereum Alliance is a nonprofit organization that includes the likes of Microsoft, Samsung, Intel, J.P. Morgan, Cooley, Deloitte,
   Consensys, and many others for the mission of developing open blockchain specifications for bridging the gap between open and enterprise chains.
 
