@@ -40,7 +40,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.3 Slides]().
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.3 Slides](https://docs.google.com/presentation/d/18tMXiNivZRYdFxi4GWCX81Zp_fvh7HDFrNXRqFV-rvg/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
@@ -54,7 +54,7 @@ By the end of class, students will be able to:
 
 **Files:**
 
-* [welcome-slides]()
+* [welcome-slides](https://docs.google.com/presentation/d/18tMXiNivZRYdFxi4GWCX81Zp_fvh7HDFrNXRqFV-rvg/edit?usp=sharing)
 
 Welcome back! Today marks the last unit of the PyViz Data Visualization unit. Today's lesson will take data visualizations to the next level and will focus on using Panel, a PyViz technology, to create dashboards.
 
@@ -80,7 +80,7 @@ Describe Panel as an open-source Python library that allows users to integrate w
 
 **Files:**
 
-* [Slides]()
+* [Slides](https://docs.google.com/presentation/d/18tMXiNivZRYdFxi4GWCX81Zp_fvh7HDFrNXRqFV-rvg/edit#slide=id.g480f0dd0a7_0_19)
 
 Continue the discussion about Panel by highlighting the rise of Panel.
 
@@ -321,7 +321,7 @@ In this activity, students complete a MSMD activity where they create a Plotly p
 
 **Files:**
 
-* [no_pane_no_gain.ipynb](Activities/03-Stu_Dashboard_Components/Unsolved/Core/no_pane_no_gain.ipynb)
+* [no_pane_no_gain.ipynb](Activities/03-Stu_Dashboard_Components/Unsolved/no_pane_no_gain.ipynb)
 
 - - -
 
@@ -537,7 +537,7 @@ In this activity, the instructor leads a facilitated discussion on Panel **exten
 
 **Files:**
 
-* [Slides]()
+* [Slides](https://docs.google.com/presentation/d/18tMXiNivZRYdFxi4GWCX81Zp_fvh7HDFrNXRqFV-rvg/edit#slide=id.g5f381b25f9_2_134)
 
 Navigate to the 6.3 slides, and highlight the following:
 
