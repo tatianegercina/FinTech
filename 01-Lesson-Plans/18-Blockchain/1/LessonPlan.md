@@ -46,9 +46,9 @@ By the end of the class, students be able to:
 
 ### 1. Instructor Do: Welcome (5 min)
 
-**Files**
+* **Files:**
 
-* [slides x-y]()
+  * [slides x-y]()
 
 Welcome to the blockchain part of the course! Introduce the students by reminding them
 that they are about to embark on a new set of technologies from they have been
@@ -94,9 +94,9 @@ Take a mental note of these students, as you will be able to distribute them amo
 
 For this activity, the instructor will lead a formal lecture regarding what blockchain technology is and why it’s important.
 
-**Files**
+* **Files:**
 
-* [slides x-y]()
+  * [slides x-y]()
 
 Begin the activity by navigating to the slides and asking the students what types of financial services are available to them.
 Discuss common services like loans, payments, credit cards, brokerages, investing, etc. These can be commonly used consumer options or business options.
@@ -182,9 +182,9 @@ Some common features may be:
 
 For this activity, the instructor will lead a formal lecture regarding what the 5 pillars of open blockchains are and why they are relevant.
 
-**Files**
+* **Files:**
 
-* [slides x-y]()
+  * [slides x-y]()
 
 Begin the activity by reminding the students to keep the use cases they just examined in mind, as well as comparing the features they wrote down.
 
@@ -331,9 +331,9 @@ Have the TAs circulate through the class and clarify definitions for students th
 
 Students will learn basic, common terminology that will enable them to navigate the blockchain space.
 
-**Files:**
+* **Files:**
 
-* [slides x-y]()
+  * [slides x-y]()
 
 Navigate to the slides and define common terms:
 
@@ -528,12 +528,11 @@ in future blockchain upgrades.
 
 - - -
 
-
 ### 17. Instructor Do: Intro to Ethereum (10 min)
 
-**Files:**
+* **Files:**
 
-* [slides x-y]()
+  * [slides x-y]()
 
 Walk through the slides and highlight the following:
 
