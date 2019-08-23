@@ -239,7 +239,7 @@ Navigate to the 6.3 slides, and highlight the following:
 
 * **Pane** and **panel** objects work in the same way, in the sense that they wrap around pre-existing objects (plots, text, html). Each specific media type will have a helper function that can be used to convert the content to a Panel object.
 * For example, there is a `panel.pane.Plotly` function that will create a Plotly pane. There is also `panel.pane.Markdown`.
-  
+
 * Each **pane** type has its own set of **Panel** functions and customization attributes (i.e., height, width, etc).
 
 Open the solution file, and conduct a dry walkthrough. Emphasize the following:
@@ -767,6 +767,22 @@ Finish the day off communicating to students that they have exponentially increa
 If time remains, ask students to consider how they want to use interactive plotting technologies and Panel dashboards in the future. Have volunteers communicate their aspirations.
 
 Congratulate students again, and end class by encouraging students to reach out with any questions and to attend office hours.
+
+### 17. Instructor Do: Structured Review (35 mins)
+
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
+
+Please use the entire time to review questions with the students before officially ending class.
+
+Suggested Format:
+
+* Ask students for specific activities to revisit.
+
+* Revisit key activities for the homework.
+
+* Allow students to start the homework with extra TA support.
+
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings
 
 ### End Class
 
