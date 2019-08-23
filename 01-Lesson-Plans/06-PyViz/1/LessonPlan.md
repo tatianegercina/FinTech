@@ -62,7 +62,7 @@ By the end of this class, students will be able to:
 
 ---
 
-### 1. Instructor Do—Welcome (5 min)
+### 1. Instructor Do: Welcome (5 min)
 
 **Files:**
 
@@ -96,7 +96,7 @@ Ask for any questions before proceeding.
 
 ---
 
-### 2. Instructor Do—Review Homework (10 min)
+### 2. Instructor Do: Review Homework (10 min)
 
 This activity involves a quick demo and review of the homework.
 
@@ -124,7 +124,7 @@ Ask the students for any questions before moving forward.
 
 ---
 
-### 3. Instructor Do—Intro to PyViz (5 min)
+### 3. Instructor Do: Intro to PyViz (5 min)
 
 Students will be introduced to PyViz by way of a facilitated discussion led by the instructor. The discussion will focus on the advantages of using PyViz rather than individual technologies (HoloViews, Matplotlib, D3.js, etc.).
 
@@ -160,7 +160,7 @@ Ask if there are any questions; then, move onto the next module.
 
 - - -
 
-### 4. Instructor Do—Intro to HvPlot (5 min)
+### 4. Instructor Do: Intro to HvPlot (5 min)
 
 Students participate in a formal lecture regarding what hvPlot is and what it has to offer in terms of data visualization.
 
@@ -216,7 +216,7 @@ Ask if there are any questions. Then, continue to the next activity.
 
 ---
 
-### 5. Instructor Do—HvPlot Demo (10 min)
+### 5. Instructor Do: HvPlot Demo (10 min)
 
 **Files:**
 
@@ -294,7 +294,7 @@ Ask students if they have any questions before moving onto the next activity.
 
 ---
 
-### 6. Students Do—Plotting a Visual Takeover (15 min)
+### 6. Students Do: Plotting a Visual Takeover (15 min)
 
 In this activity, students revisit plots they made earlier in the class using Matplotlib and they recreate them as hvPlots. This bridge assignment aims to demonstrate the similarities between the hvPlot plot API and Matplotlib's API.
 
@@ -308,7 +308,7 @@ In this activity, students revisit plots they made earlier in the class using Ma
 
 - - -
 
-### 7. Instructor Do—Plotting a Visual Takeover Activity Review (10 min)
+### 7. Instructor Do: Plotting a Visual Takeover Activity Review (10 min)
 
 **Files:**
 
@@ -353,7 +353,7 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 9. Instructor Do—HvPlot Widgets (10 min)
+### 9. Instructor Do: HvPlot Widgets (10 min)
 
 By the end of this activity, students and the instructor will have deep dived into the different interactions possible with hvPlots. While students may have used some of the widgets already, this activity will serve as a formal review of each button and interaction.
 
@@ -421,7 +421,7 @@ Ask if there are any questions, and then continue to the student activity.
 
 ---
 
-### 10. Students Do—HvPlot Widgets (15 min)
+### 10. Students Do: HvPlot Widgets (15 min)
 
 In this activity, students will play around with the hvPlot widgets to get more accustomed to the different types of interactions supported with hvPlots. Students will use hvPlot visualizations to explore hospital claims data and answer a few basic questions about the data.
 
@@ -433,7 +433,7 @@ In this activity, students will play around with the hvPlot widgets to get more 
 
 * [hvplot_widgets.ipynb](Activities/04-Stu_hvPlot_Widgets/Unsolved/hvplot_widgets.ipynb)
 
-### 11. Instructor Do—HvPlot Widgets Activity Review (10 min)
+### 11. Instructor Do: HvPlot Widgets Activity Review (10 min)
 
 The instructor will lead a facilitated review section in this activity. The emphasis will be placed on what each widget does and how widgets can be used in conjunction with one another to deep dive into data analysis and exploration.
 
@@ -465,7 +465,7 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 12. Instructor Do—Composing Plots (10 min)
+### 12. Instructor Do: Composing Plots (10 min)
 
 By the end of this activity, students will have received a dry walkthrough demo on how to combine two plot objects to create a plot with subplots. This activity will teach students how to create plot layouts and overlay visualizations to create a centralized location for comparative data analysis.
 
@@ -515,7 +515,7 @@ Ask and answer any students questions. Then, move onto the next activity.
 
 ---
 
-### 13. Students Do—Composing Masterpieces (10 min)
+### 13. Students Do: Composing Masterpieces (10 min)
 
 Students will complete an activity where they use the information learned in the instructor demo to customize their hvPlots. Students will use a range of options to customize the color, labels, and axis alignments.
 
@@ -535,7 +535,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 - - -
 
-### 14. Instructor Do—Composing Masterpieces Activity Review (10 min)
+### 14. Instructor Do: Composing Masterpieces Activity Review (10 min)
 
 The instructor will ask a student volunteer to conduct a dry walkthrough of the Composing Masterpieces solution.
 
@@ -599,7 +599,7 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 15. Instructor Do—Visualization Options (10 min) (Critical)
+### 15. Instructor Do: Visualization Options (10 min) (Critical)
 
 The goal of this activity is to provide students with a dry walkthrough demonstration of how to use hvPlot plot attributes and options to customize the look and feel of visualizations. This activity will enable students to perfect their visualizations by fine tuning details such as axis labels and to create attractive color themes and effects.
 
@@ -685,7 +685,7 @@ Ask if there are any more questions. Then, continue to the student challenge act
 
 ---
 
-### 16. Students Do—Picture Perfect (15 min)
+### 16. Students Do: Picture Perfect (15 min)
 
 By the end of this activity, students will have employed hvPlot customization attributes and options to perfect and add finishing touches to their visualizations.
 
@@ -701,7 +701,7 @@ Make sure to slack out to students the [hvPlot customization](https://hvplot.pyv
 
 - - -
 
-### 17. Students Do—Picture Perfect Activity Review (10 min)
+### 17. Students Do: Picture Perfect Activity Review (10 min)
 
 Students participate in a five-minute turn and teach activity that will focus on showcasing their final, customized visualizations.
 
@@ -737,7 +737,7 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 18. Instructor Do—Recap (5 min)
+### 18. Instructor Do: Recap (5 min)
 
 The day has been a whirlwind of visualizations. Now it's time to take a load off and reflect on what was learned during the day.
 
