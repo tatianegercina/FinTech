@@ -54,10 +54,13 @@ Welcome to the blockchain part of the course! Introduce the students by remindin
 that they are about to embark on a new set of technologies from they have been
 using.
 
-The blockchain industry is growing rapidly, however it is still on the bleeding edge
-of distributed computing technology. In fact, it's pushing that edge further every day.
+* Remind the students that it is normal that they may feel a sense of unfamiliarity as they are charting new territories.
 
-Remind the students that it is normal that they may feel a sense of unfamiliarity as they are charting new territories.
+* Explain to students that blockchain technology is the thing that powers cryptocurrencies.
+
+* To name a few popular ones, Bitcoin, Litecoin, Ethereum, Ripple, Dash, and Stellar.
+
+* It does not only power FinTech solutions, it is being adopted in many industries like health care, IoT, supply chain tracking, and many more.
 
 ### 2. Instructor Do: Blockchain Skill Check (5 min)
 
@@ -82,7 +85,7 @@ Have the students reset and put their hands down, then ask the students to hold 
 
 * How familiar are you with blockchain?
 
-* How comfortable to you feel having a conversation about blockchain technology?
+* How comfortable do you feel having a conversation about blockchain technology?
 
 * How familiar are you with smart contracts?
 
