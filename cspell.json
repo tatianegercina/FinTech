@@ -1,106 +1,116 @@
 {
-  "version": "0.1",
-  "language": "en",
-  "allowCompoundWords": true,
-  "dictionaries": [
-    "php",
-    "corp-terms",
-    "fonts",
-    "python",
-    "css",
-    "csharp",
-    "node",
-    "typescript",
-    "html",
-    "npm",
-    "softwareTerms",
-    "companies",
-    "en_US",
-    "curriculum"
-  ],
-  "dictionaryDefinitions": [
-    {
-      "name": "curriculum",
-      "path": "./spellcheck-dictionaries/.spellcheck-dictionary.txt"
-    }
-  ],
-  "ignorePaths": [
-    "package.json",
-    "package-lock.json",
-    "test-files-changed.sh",
-    "requirements.txt",
-    "package.json",
-    "yarn.lock",
-    "gulpfile.js",
-    "cspell.json",
-    "node_modules/**",
-    "environment.yml",
-    "**/Slide-Shows/**",
-    "**/Generator/**",
-    "**/Supplemental/**",
-    "07-Extra-Content/**",
-    "06-Curriculum-Resources/**",
-    "**/*.db",
-    "**/migrations/**",
-    "**/settings.py",
-    "**/*.ipynb",
-    "**/*.svg*",
-    "**/*.svg",
-    "**/*.svg~HEAD",
-    "**/*.sql",
-    "**/*.textClipping",
-    "**/*dna_unsolved.js",
-    "**/*addressData.js",
-    "**/*data.js",
-    "**/*bootstrap.min.css",
-    "**/*.twbx",
-    "**/*.twb",
-    "**/*.h5",
-    "**/*.png*",
-    "**/*.pdf",
-    "**/*.mov",
-    "**/*.png",
-    "**/*.jpg",
-    "**/*.xls*",
-    "**/*.pptx",
-    "**/*.docx",
-    "**/*.psd",
-    "**/*.PNG",
-    "**/*.tsv",
-    "**/*.csv",
-    "**/*.zip",
-    "**/*.mp4",
-    "**/*.lock",
-    "**/*.json",
-    "**/*.sqlite",
-    "**/*.txt",
-    "**/*.html"
-  ],
-  "ignoreRegExpList": ["URL", "Markdown Link Path", "Backticks", "Markdown Link Title", "Filepath", "HTML Entity"],
-  "patterns": [
-    {
-      "name": "URL",
-      "pattern": "https?:\\S+"
-    },
-    {
-      "name": "Markdown Link Path",
-      "pattern": "\\[.+]\\((.+)\\)"
-    },
-    {
-      "name": "Backticks",
-      "pattern": "`.*`"
-    },
-    {
-      "name": "Markdown Link Title",
-      "pattern": "\\[(.+)]"
-    },
-    {
-      "name": "Filepath",
-      "pattern": "\\/\\S+"
-    },
-    {
-      "name": "HTML Entity",
-      "pattern": "\\&\\S+\\;"
-    }
-  ]
+    "version": "0.1",
+    "language": "en",
+    "allowCompoundWords": true,
+    "dictionaries": [
+        "php",
+        "corp-terms",
+        "fonts",
+        "python",
+        "css",
+        "csharp",
+        "node",
+        "typescript",
+        "html",
+        "npm",
+        "softwareTerms",
+        "companies",
+        "en_US",
+        "curriculum"
+    ],
+    "dictionaryDefinitions": [
+        {
+            "name": "curriculum",
+            "path": "./spellcheck-dictionaries/.spellcheck-dictionary.txt"
+        }
+    ],
+    "ignorePaths": [
+        "package.json",
+        "package-lock.json",
+        "test-files-changed.sh",
+        "requirements.txt",
+        "package.json",
+        "yarn.lock",
+        "gulpfile.js",
+        "cspell.json",
+        "node_modules/**",
+        "environment.yml",
+        "**/Slide-Shows/**",
+        "**/Generator/**",
+        "**/Supplemental/**",
+        "07-Extra-Content/**",
+        "06-Curriculum-Resources/**",
+        "**/*.db",
+        "**/migrations/**",
+        "**/settings.py",
+        "**/*.ipynb",
+        "**/*.svg*",
+        "**/*.svg",
+        "**/*.svg~HEAD",
+        "**/*.sql",
+        "**/*.textClipping",
+        "**/*dna_unsolved.js",
+        "**/*addressData.js",
+        "**/*data.js",
+        "**/*bootstrap.min.css",
+        "**/*.twbx",
+        "**/*.twb",
+        "**/*.h5",
+        "**/*.png*",
+        "**/*.pdf",
+        "**/*.mov",
+        "**/*.png",
+        "**/*.jpg",
+        "**/*.xls*",
+        "**/*.pptx",
+        "**/*.docx",
+        "**/*.psd",
+        "**/*.PNG",
+        "**/*.tsv",
+        "**/*.csv",
+        "**/*.zip",
+        "**/*.mp4",
+        "**/*.lock",
+        "**/*.json",
+        "**/*.sqlite",
+        "**/*.txt",
+        "**/*.html"
+    ],
+    "ignoreRegExpList": [
+        "URL",
+        "Markdown Link Path",
+        "Backticks",
+        "Markdown Link Title",
+        "Filepath",
+        "HTML Entity"
+    ],
+    "patterns": [
+        {
+            "name": "URL",
+            "pattern": "https?:\\S+"
+        },
+        {
+            "name": "Markdown Link Path",
+            "pattern": "\\[.+]\\((.+)\\)"
+        },
+        {
+            "name": "Backticks",
+            "pattern": "`.*`"
+        },
+        {
+            "name": "Markdown Link Title",
+            "pattern": "\\[(.+)]"
+        },
+        {
+            "name": "Filepath",
+            "pattern": "\\/\\S+"
+        },
+        {
+            "name": "HTML Entity",
+            "pattern": "\\&\\S+\\;"
+        }
+    ],
+    "words": [
+        "Ethereum"
+    ]
 }
