@@ -1,0 +1,845 @@
+# 10.1 Lesson Plan: An Introduction to Time Series (6:30 PM)
+
+### Overview
+
+Today's class will introduce students to the basics of time series analytics. Students will learn to use tools to work with time series data in pandas, to articulate the four components of a time series, identify trends in time series, and to create a linear regression model for time series data.
+
+### Class Objectives
+
+By the end of this class, students will be able to:
+
+  * Manipulate time series data sets in pandas.
+
+  * Identify the components of a time series.
+
+  * Use tools such as moving average, exponentially-weighted moving average, and the Hodrick-Prescott filter to identify long-term trends.
+
+  * Create a time series linear regression model using Scikit-learn.
+
+  * Analyze and predict seasonal effects using regression.
+
+- - -
+
+### Instructor Notes
+
+Today's class will be a fairly gentle ramp up to the rest of the week. It will provide students with the skills to work with time series data in pandas (e.g. slicing rows by date), and it will furnish them with necessary concepts for days 2 and 3.
+
+The mathematical details of tools such as Hodrick-Prescott filter and linear regression are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class.
+
+
+### Class Slides and Time Tracker
+
+The slides for this lesson can be viewed on Google Drive here: [Lesson 10.1 Slides](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5f3ad86fc3_0_82).
+
+To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+
+Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+The time tracker for this lesson can be viewed here: [Time Tracker.]()
+
+
+### . Instructor Do: Time Series Basics (10 min)
+
+**File:**
+
+  [Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
+
+In this activity, you will introduce the basics of working with time series in Python.
+
+Explain that we'll learn the following pandas techniques to work with time series data:
+
+  * Converting a column of dates from string to datetime format.
+
+  * Using the `loc[]` accessor to select rows with specified dates.
+
+  * Using the `resample()` method to group rows by day, week, month, year, or any datetime attribute.
+
+  * Accessing datetime attributes from the index.
+
+Open the notebook and run the following lines of code:
+
+  ```python
+  df = pd.read_csv('liquor_sales.csv')
+  df.head()
+  df.info()
+  ```
+
+  ![Images/datetime00.png](Images/datetime00.png)
+
+  ![Images/datetime01.png](Images/datetime01.png)
+
+  * The CSV, a data set of liquor sales figures, is opened with pandas.
+
+  * `df.info()` lists the number of rows, as well as the column data types.
+
+  * The `datetime` column type is listed as `object`. In this case, this means that the datetime information is formatted as strings.
+
+Explain how to read a time series data set:
+
+  ```python
+  df2 = pd.read_csv('liquor_sales.csv', parse_dates=True, index_col='datetime')
+  ```
+
+  * There are two additional arguments here. The first, `parse_dates=True`, formats the column containing the datetime information as `datetime`.
+
+  * The next argument, `index_col='datetime'` sets this column as the data frame index.
+
+Demonstrate that the data frame is now a true time series:
+
+  ![Images/datetime01.png](Images/datetime02.png)
+
+  ![Images/datetime01.png](Images/datetime03.png)
+
+  * `df2.info()` shows that the index is a `DatetimeIndex`.
+
+  * Plotting the `liquor_sales` column automatically formats the x-axis as dates.
+
+Having properly formatted and indexed the time series, explain next how to select and slice the data frame with specified dates:
+
+  ```python
+  first_year = df2.loc['1980']
+  ```
+
+  * Using the `loc[]` accessor, only rows from the year 1980 can be selected.
+
+  * The `loc[]` accessor can also be used to slice a date range: `two_year_period = df2.loc['1985': '1986']`.
+
+Next, explain that the `resample()` method groups rows by a specified time frame:
+
+  ```python
+  yearly_average = df2.resample('A').mean()
+  ```
+
+  * This line groups all the rows of a year together, then obtains their mean.
+
+  * `resample()` is quite similar to pandas's `groupby()` method. Once data has been aggregated, an aggregate function must be called. In this case, the mean was called, but quantities such as the sum, maximum value, or the minimum value can also be obtained with their respective functions.
+
+  * The argument `'A'` in `resample()` specifies the time frame. Here, it is grouping the rows into an annual time frame. Others, such as daily or weekly data, can also be used.
+
+  * Other arguments for this method can be found by consulting the documentation.
+
+* Finally, explain that data formatted as datetime offer access to specific attributes.
+
+  ```python
+  df2.index.year
+  df2.index.month
+  df2.index.weekofyear
+  ```
+  * For example, the index of the data frame, which is formatted as datetime, store information on the specific year, month, and even the week of the year for each row.
+
+  * More attributes can be found by consulting the documentation.
+
+### . Students Do: Time Series Basics (10 min)
+
+In this activity, students will practice the basics of time series manipulation in pandas.
+
+**Files:**
+
+  * [Activities/02-Stu_Time_Series_Basics/README.md](Activities/02-Stu_Time_Series_Basics/README.md)
+
+  * [Activities/02-Stu_Time_Series_Basics/Unsolved/amazon.csv](Activities/02-Stu_Time_Series_Basics/Unsolved/amazon.csv)
+
+### . Instructor Do: Review Activity (5 min)
+
+  * **File:**
+
+    * [amazon_stock_prices.ipynb](Activities/02-Stu_Time_Series_Basics/Solved/amazon_stock_prices.ipynb)
+
+Quickly walk through the basic steps of working with a time series in pandas. Try not to dwell on any point for too long, as students will work with these methods repeatedly throughout the week.
+
+  ```python
+  df2 = pd.read_csv('amazon.csv', parse_dates=True, index_col='Date')
+  ```
+
+  * The `parse_dates` and `index_col` arguments are used to format the time series index as datetime.
+
+  ```python
+  sep_2018 = df2.loc['2018-09']
+  ```
+
+  * The `loc[]` accessor is used to select only data from September, 2018.
+
+  ```python
+  df3 = df2.loc['2018-09':'2018-10']
+  ```
+
+  * The `loc[]` accessor is used to select rows from a date range.
+
+  ```python
+  df4 = df2.loc['2018 sep': '2018 oct']
+  ```
+
+  * The same date range can be obtained in a number of ways. The `loc[]` accessor is fairly flexible.
+
+  ```python
+  weekly = df2['Close'].resample('W').mean()
+  ```
+
+  * The weekly averages of closing stock prices is obtained with `resample('W)`.
+
+Finally, explain the bonus code:
+
+  ```python
+  df3 = df2.loc[:, df.columns.str.contains('Close')]
+  ```
+
+  * The data frame was selected only for columns containing the word 'Close' by using the `str.contains()` method and the `loc[]` accessor.
+
+  * `df.columns.str.contains('Close')` returns an array of False and True for whether that column contains the specified keyword.
+
+### Instructor Do: Time Series Decomposition (10 min)
+
+* **File:**
+
+  [Activities/03-Ins_Decomposition/Solved/decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
+
+Open [Slide 3](https://docs.google.com/presentation/d/1DSwXmlnnP2_TmhJlBB_95bdWm_m7xb0rACwK-usjfwk/edit#slide=id.g5f3ad86fc3_0_19) and define time series decomposition to the class:
+
+  * In a nutshell, it is separating time series data into useful and less useful components.
+
+  * The useful components can be used to observe patterns and to make predictions.
+
+Open [Slide 4](https://docs.google.com/presentation/d/1DSwXmlnnP2_TmhJlBB_95bdWm_m7xb0rACwK-usjfwk/edit#slide=id.g5f3ad86fc3_0_19) and list the components of time series decomposition:
+
+  * Level: What is the average value of the series?
+
+  * Trend: Is there an overall direction of movement?
+
+  * Periodicity: Do patterns occur in cycles?
+
+  * Residual: How much noise exists in the data?
+
+Open the notebook and explain that it is a chart of monthly liquor sales in the United States between 1980 and 2007.
+
+  ![Images/decomposition01.png](Images/decomposition01.png)
+
+Ask ask students to describe what they see:
+
+  * There is an overall increase in sales over the years.
+
+  * Spikes in sales also appear regularly.
+
+  * As expected, the pattern is not perfectly regular.
+
+Show the next image in the notebook:
+
+  ![Images/decomposition02.png](Images/decomposition02.png)
+
+  * It plots liquor sales data from a 26-month period.
+
+  * It shows a sales spike during each holiday season.
+
+Next, explain that the code below decomposes the liquor sales data.
+
+  ```python
+  decomposed = seasonal_decompose(df['liquor_sales'], model='multiplicative')
+  ```
+
+  * The model is specified as multiplicative because the seasonal flunctation (the spikes) increases with the series.
+
+Explain that the time series is decomposed visually by the library:
+
+  ![Images/decomposition03.png](Images/decomposition03.png)
+
+  * The `observed data` panel is decomposed into the next three elements.
+
+  * An upward trend is observed in the data.
+
+  * A seasonality is also observed.
+
+  * The residual components are the leftovers when trend and seasonality are removed.
+
+Finally, explain that the library used in the notebook is more useful as an illustrative tool than a predictive tool. We will cover such tools during this week.
+
+### 5. Instructor Do: EWMA and Hodrick-Prescott Filter (15 min)
+
+In this activity, you will introduce EWMA, or exponentially-weighted moving average. You will also introduce the Hodrick-Prescottt filter, a tool that captures trends by minimizing local fluctuations.
+
+**Files:**
+
+  * [hodrick.ipynb](Activities/04-Ins_Hodrick_Prescott/Solved/hodrick.ipynb)
+
+  * [IVV.csv](Activities/04-Ins_Hodrick_Prescott/Solved/IVV.csv)
+
+Open the notebook and describe the dataset:
+
+  * The data tracks the closing price during a two-year period of IVV, an exchange-traded fund (ETF) that tracks the S&P 500 index.
+
+Begin the activity with a brief review of moving average:
+
+  ![Images/ma01.png](Images/ma01.png)
+
+  * In a moving average (also called rolling average), each value is the average of a number of prior values.
+
+  * In pandas, it can be computed with the `rolling()` and `mean()` methods, with the `window` argument specifying the number of prior values to average.
+
+Explain that an exponentially-weighted moving average (EWMA) is similar to a moving average, with a significant difference:
+
+  ![Images/ma02.png](Images/ma02.png)
+
+  * In an EWMA, unlike an MA, recent values carry more weight than values from a more distant past.
+
+  * This strategy may better capture **trends** than a simple moving average.
+
+  * In pandas, it can be computed with the `ewm()` and `mean()` methods.
+
+  * In a rolling average, a `window` argument is supplied. In contrast, the `ewm()` method takes a `halflife` argument.
+
+Introduce the topic of the Hodrick-Prescott filter:
+
+  * It is a mathematical function used to separate short-term fluctations, such as ones that occur daily, from longer-term trends.
+
+  * It decomposes a time series into trend and non-trend components.
+
+  * Like rolling average and EWMA, it can be used to capture trends.
+
+Open the [Slideshow](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5f3ad86fc3_0_212) and briefly explain the overall mathematical idea of the Hodrick-Prescott filter (Slides 7-9):
+
+  ![Images/hp01.png](Images/hp01.png)
+
+  * It is a function that minimizes the sum of two values.
+
+  * As discussed previously, a time series can be decomposed into trend, periodicity, and noise.
+
+  * If we temporarily disregard noise, then, time series data minus trend equals periodicity.
+
+  * The left side describes the cyclic element: time series (y) minus trend (tau).
+
+  * The right side basically describes the volatility in trend.
+
+  * The H-P filter essentially **minimizes** the aggregate values associated with non-trend (periodicity and volatility).
+
+Next, explain the Python code used to run the Hodrick-Prescott filter:
+
+  ```python
+  import statsmodels.api as sm
+  ts_noise, ts_trend = sm.tsa.filters.hpfilter(df['close'])
+  ```
+
+  * `hpfilter` is a module from the `statsmodels` library.
+
+  * The `hpfilter()` function separates a column of closing prices into trend and noise (non-trend).
+
+  * The code is much simpler than the mathematical description!
+
+Finally, show the plots of the trend and noise components after filtering:
+
+  ![Images/hp03.png](Images/hp03.png)
+
+  ![Images/hp04.png](Images/hp04.png)
+
+  * The first plot shows the trend, which is considerably smoother than the raw time series data.
+
+  * The second plot shows the noise (non-trend) that has been filtered out.
+
+### . Students Do: You've Got a FRED (15 min)
+
+In this activity, students will use the Hodrick-Prescott filter to identify macroeconomic trends in the United States in the period from 2004 to 2010.
+
+**File:**
+
+  * [README.md](Activities/05-Stu_Hodrick_Prescott/README.md)
+
+  * [FRED.ipynb](Activities/05-Stu_Hodrick_Prescott/Unsolved/FRED.ipynb)
+
+### . Instructor Do: Review Activity (5 min)
+
+**Files:**
+
+  * [FRED.ipynb](Activities/05-Stu_Hodrick_Prescott/Solved/FRED.ipynb)
+
+Briefly walk through the code.
+
+Explain the data retrieval process:
+
+  ```python
+  start = datetime.datetime(2004, 1, 1)
+  end = datetime.datetime(2010, 1, 1)
+  gdp = web.DataReader(['GDP'], 'fred', start, end)
+  ```
+
+  * pandas's `DataReader` function is used to retrieve data from FRED at specified starting and end points.
+
+Explain using the H-P filter in Python:
+
+  ```python
+  import statsmodels.api as sm
+  gdp_noise, gdp_trend = sm.tsa.filters.hpfilter(gdp['GDP'])
+  ```
+
+  * It is a `statsmodels` module that requires a single line of code.
+
+  * The plots are created simply with pandas's `plot()` method.
+
+If time allows, take a moment to compare and contrast the H-P filter:
+
+  * In this data set, fo the most part, the EWMA seems to produce a fairly similar result as the H-P filter, though the latter is somewhat smoother.
+
+### . Instructor Do: Introduction to Linear Regression (15 min)
+
+**File:**
+
+  * [linear_regression.ipynb](Activities/06-Ins_Linear_Regression/Solved/linear_regression.ipynb)
+
+In this activity, you will explain linear regression to the class and demonstrate using Scikit-learn to create a linear regression model.
+
+Open the first [slide](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_0) and explain the linear equation (Slide 11):
+
+  ```
+  y = mx + b
+  ```
+
+  * This equation describes, or models, the relationship between variables x and y.
+
+  * As x increases, y increases.
+
+  * How fast y increases in relation to x is called the slope.
+
+  * Slope is represented by the letter `m` in the equation.
+
+  * The value of `y` when `x` is 0 is called the y-intercept. It is represented by the letter `b`.
+
+Open the next [https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_19](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_19) and ask whether, on visual inspection, a trend exists (Slide 12):
+
+  ![Images/linear_regression01.png](Images/linear_regression01.png)
+
+  * `y` increases as `x` increases.
+
+Explain that a line that best fits the trend can be drawn:
+
+  ![Images/linear_regression02.png](Images/linear_regression02.png)
+
+  * This line is called the best fit line, and computing it is called linear regression.
+
+  * The equation is simple but tedious, and is best solved by a computer.
+
+Explain that, in other words, linear regresson identifies the line that best predicts `y` based on the value of `x`.
+
+Explain the concept of residuals.
+
+  * Even a best fit line that captures the data well is seldom, if ever, perfect.
+
+  * A residual is the difference between the **predicted** value of `y` and its **actual** value.
+
+  * Linear regression seeks to minimize the **square** value of residuals.
+
+Summarize the key points of linear regression:
+
+  * It models data with a linear trend. It is not useful when the data does not follow a linear trend, e.g. exponential trends.
+
+  * Based on the X values, it predicts Y values.
+
+  * It does not do a good job of describing non-linear patterns. We will cover techniques to model non-linear data later in the course.
+
+Now that students understand linear regression conceptually, walk through the steps of performing linear regression in Python. Here are some introductory remarks:
+
+  * The CSV contains data on years of job experience and salary.
+
+  ![Images/linear_regression03.png](Images/linear_regression03.png)
+
+  * We will use Scikit-learn, a machine learning library, to create a linear regression model.
+
+Engage the class by asking, in a linear regression model, which column will be the dependent variable, and which the independent variable.
+
+  * `YearsExperience` will be the independent variable, or `x`.
+
+  * `Salary` will be the independent variable, or `y`.
+
+Explain that in order to use Scikit-learn (sklearn) for regression, the independent variable (x) will need to be reformatted:
+
+  ```python
+  X = df.YearsExperience.values.reshape(-1, 1)
+  ```
+
+  * Scikit-learn cannot take in a pandas Series directly.
+
+  * `reshape(-1, 1)` reshapes, or formats, the data.
+
+  * `X.shape` returns `(30,1)`, meaning that `X` has 30 rows and 1 column of data.
+
+  * The dependent variable can remain a pandas series, as seen by `y = df.Salary`.
+
+Walk through the boiler plate code:
+
+  ```python
+  model = LinearRegression()
+  model.fit(X,y)
+  ```
+
+  * A linear regression model is created (instantiated) using Scikit-learn, and the data are fit into the model.
+
+Explain how to obtain the parameters of the model, its slope and y-intercept:
+
+  ```python
+  print(model.coef_)
+  print(model.intercept_)
+  ```
+
+  * Again, Scikit-learn creates a linear equation model based on the data (y = mx + b).
+
+  * `model.coef_` is the slope of the equation.
+
+  * `model.intercept_` is the y-intercept.
+
+Explain that the power of a linear regression model comes from its ability to describe, and to predict.
+
+  ```python
+  predicted_y_values = model.predict(X)
+  ```
+
+  * This line creates an array of predicted y values based on x values.
+
+  * In other words, if given an x-value (years of experience) that is not in the data set, the model will predict the corresponding y-value (salary).
+
+Show the best fit line created by the regression model:
+
+  ![Images/linear_regression04.png](Images/linear_regression04.png)
+
+  * In this case, it describes the existing data very closely.
+
+Do not dwell on the r-square value, but explain that there is a strong relationship between the two variables in the data set:
+
+  ![Images/linear_regression05.png](Images/linear_regression05.png)
+
+  * We will explore measures of accuracy in greater detail in an upcoming activity.
+
+- - -
+
+###  BREAK (15 min)
+
+- - -
+
+### Students Do: House Regression (10 min)
+
+**Files:**
+
+  * [README.md](Activities/07-Stu_House_Regression/README.md)
+
+  * [USA_Housing.csv](Activities/07-Stu_House_Regression/data/USA_Housing.csv)
+
+In this activity, students will perform linear regression on number of rooms in houses versus their prices.
+
+### Instructors Do: Review Activity (5 min)
+
+**Files:**
+
+  * [housing.ipynb](Activities/07-Stu_House_Regression/Solved/housing.ipynb)
+
+Walk through the most salient parts of the code:
+
+  ```python
+  from sklearn.linear_model import LinearRegression
+  model = LinearRegression()
+
+  X = df.index.values.reshape(-1,1)
+  y = df['Price']
+
+  model.fit(X,y)
+
+  predicted_y_values = model.predict(X)
+  ```
+
+  * A linear regression model is instantiated with Scikit-learn.
+
+  * X and y variables are defined.
+
+  * X, the number of rooms in houses, is reshaped.
+
+  * The model is fitted to the data.
+
+  * Using `model.predict()`, an array of predicted y-values is created, and a best-fit line plotted.
+
+  ![Images/linear_regression06.png](Images/linear_regression06.png)
+
+  * The slope (`model.coef_`), the y-intercept, and the r-square values are obtained.
+
+### Instructor Do: Time Series Linear Regression (15 min)
+
+**Files:**
+
+  * [time_series_simple_regression.ipynb](Activities/08-Ins_Time_Series_Linear_Regression/Solved/time_series_simple_regression.ipynb)
+
+Inform the class that the idea of linear regression for time series is the same as in the previous example, but that the implementation requires a few tweaks.
+
+Open the notebook and show the data frame:
+
+  * This is a data frame of weather data in Austin, TX in 2010.
+
+  * The data frame has been sliced to contain data from May through July of 2010.
+
+  ![Images/ts_regression01.png](Images/ts_regression01.png)
+
+Show the Temperature column plotted against the date:
+
+  ![Images/ts_regression02.png](Images/ts_regression02.png)
+
+Explain that the goal is to perform linear regression of temperature and the date.
+
+Explain the next two lines of code:
+
+  ```python
+  X = df['Temperature'].to_frame()
+  X.shape
+  ```
+
+  * As seen before, Scikit-learn's models require that the X variable be formatted in the correct shape.
+
+  * Converting the column into a data frame gives it 2208 rows and 1 column of data.
+
+Explain that datetime objects have attributes, such as day of the year.
+
+  ```python
+  X['Day_of_Year'] = X.index.dayofyear
+  ```
+
+  * This creates a new column, called `Day_of_Year`.
+
+  * `X.index` is in datetimeformat, and has attributes such as `dayofyear`, `weekofyear`, etc. that can be extracted from it.
+
+  * More attributes can be found in the [documentation](https://pandas.pydata.org/pandas-docs/version/0.24.2/reference/api/pandas.DatetimeIndex.html)
+
+Explain creating dummy variables:
+
+  ```python
+  X_binary_encoded = pd.get_dummies(X, columns=['Day_of_Year'])
+  ```
+
+  * The `pd.get_dummies()` method creates a column for each day of the year, and for each row assigns a numerical value for that day.
+
+  * Dummy variables are necessary because days are not continuous; they are categorical.
+
+  * As an example, the day 121 of the year is assigned 1 for day 121, but 0 for all other days.
+
+  ![Images/ts_regression03.png](Images/ts_regression03.png)
+
+Explain the regression equation that results from the process **(Slide XXXXX)**:
+
+  ![Images/regression_equation01.gif](Images/regression_equation01.gif)
+
+  * Each day is given its own weight in the overall equation.
+
+  * Because each day is a separate variable in the equation, this is called multiple regression.
+
+Additionally, explain that we delete the extraneous column in the data frame created by `pd_get_dummies()`:
+
+  ```python
+  X_binary_encoded = X_binary_encoded.drop('Temperature', axis=1)
+  ```
+
+  * The argument `axis=1` specifies that it is the column that is dropped. (For rows, it would be `axis=0`.)
+
+Explain that the rest of the code is familiar from previous examples:
+
+  ```python
+  y = df['Temperature'].copy()
+  model = LinearRegression()
+  results = model.fit(X_binary_encoded, y)
+  predictions = model.predict(X_binary_encoded)
+  ```
+
+  * The `Temperature` column is specified as the dependent variable array.
+
+  * A model is created, and fits the independent and dependent variables.
+
+  * An array of predictions is created using `model.predict()`.
+
+Explain that the metrics of the linear regression model are generated:
+
+  ```python
+  from sklearn.metrics import mean_squared_error, r2_score
+  import numpy as np
+  r2 = r2_score(y, predictions)
+  mse = mean_squared_error(y, predictions)
+  rmse = np.sqrt(mse)
+  ```
+
+Note that the r-square value, at 0.23, is fairly low, and that we will cover the interpretation of these numbers in an upcoming activity.
+
+Note also that the trend appears at least somewhat linear for the specified timeline, but that a longer timespan, say from January through December, will not be good for a linear regression model.
+
+  * This underscores the important that linear regression, rather than a mechanical process, requires thinking about the variables.
+
+  * It also highlights the importance of plotting the data before reaching a conclusion!
+
+Take a moment to summarize the key points of this activity:
+
+  * The idea is the same as before. We use Scikit-learn to create a model of the independent variable (X) and the dependent variable (y).
+
+  * Because datetime data cannot be directly imported into a Scikit-learn model, we've had to create a binary encoding for each row, and drop an unnecessary column.
+
+Finally, if time allows, quickly demonstrate an approximate visualization of the linear regression best fit line.
+
+  ![Images/ts_regression04.png](Images/ts_regression04.png)
+
+  * Because of the difficulty of generating a visualization directly from a data frame of binary encodings (`X_binary_encoded`), the original data frame was grouped by day, and the mean for each day obtained.
+
+  * A new linear regression model was created with this data, and a visualization created.
+
+  * We will not go over the code, but students may wish to do so on their own time.
+
+### Students Do: Oil Futures (15 min)
+
+In this activity, students will identify seasonal effects in oil futures prices with linear regression.
+
+**Files:**
+
+  * [README.pdf](Activities/09-Stu_Time_Series_Linear_Regression/README.pdf)
+
+  * [oil_futures_starter.ipynb](Activities/09-Stu_Time_Series_Linear_Regression/Unsolved/oil_futures_starter.ipynb)
+
+  * [oil_futures.csv](Activities/09-Stu_Time_Series_Linear_Regression/data/oil_futures.csv)
+
+### Instructor Do: Review Activity (10 min)
+
+**Files:**
+
+  * [oil_futures.ipynb](Activities/09-Stu_Time_Series_Linear_Regression/Solved/oil_futures.ipynb)
+
+Explain that, rather than the settle prices, we're working with returns, the daily change of the settle price in percentage terms.
+
+  ```python
+  returns = df.Settle.pct_change() *100
+  ```
+
+  * The returns are multiplied by 100 to make the numbers easier to work with.
+
+Explain that we need a column of returns, and lagged returns, which will be regressed:
+
+  ```python
+  df['Return'] = returns.copy()
+  df['Lagged_Return'] = returns.shift()
+  df = df.dropna()
+  ```
+
+  * A column of lagged returns is created by shifting each value downward by 1 row.
+
+  * NaN values must be dropped.
+
+Go over the steps of preparing the data to use in Scikit-learn:
+
+  ```python
+  X = df['Lagged_Return'].to_frame()
+  X['Week_of_year'] = X.index.weekofyear
+  ```
+
+  * Creating the `X` data frame with `to_frame()` shapes the data in requisite shape, and it returns a usable datetime index.
+
+  * The `weekofyear` attribute is used to create a column for the week of the year.
+
+Next, explain that dummy variables are created for each week of the year:
+
+  ```python
+  X_binary_encoded = pd.get_dummies(X, columns=['Week_of_year'])
+  ```
+
+  * Creates dummy variables for each week. That is, it assigns a value of 0 or 1 for each week. For a date that falls on week 7, for example, it will assign 1 for week 7 and 0 to all other weeks.
+
+* Quickly go through the rest of the code, which is boiler plate:
+
+  ```python
+  y = df['Return']
+  model = LinearRegression()
+  res = model.fit(X_binary_encoded, y)
+  predictions = model.predict(X_binary_encoded)
+  r2 = r2_score(y, predictions)
+  ```
+
+  * A regression model is created on lagged returns and returns.
+
+  * Predictions are made with the model.
+
+  * The r-square value is generated.
+
+### Instructor Do: Error, Accuracy, and Metrics (10 min)
+
+* In this activity, we will discuss quantifying a linear regression model: how accurately it describes the data.
+
+* Open the [slideshow](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g33e0d5f8e0_0_12) and recapitulate the linear regression plot below, which we have seen previously (Slide XXX):
+
+  ![Images/error01.png](Images/error01.png)
+
+  * The blue dots are a scatter plot of data points (years of experience vs salary).
+
+  * The red line is the best fit line. It represents the linear regression model.
+
+  * The distance between each data point and the best fit line is referred to as the error.
+
+* Explain that the linear regression model is mathematically constructed to **minimize** the the sum of all the errors after they have been squared (Slide XXX).
+
+  ![Images/error01.jpg](Images/error02.jpg)
+
+* Explain that one way to assess the accuracy of a linear regression model is to look at the errors:
+
+  * The **mean square error**, or **MSE**, as the name states, is the average of the square of the errors of the dataset. It is effectively the variance of the errors in the dataset.
+
+  * The **root mean square error**, or **RMSE**, is simply the square root of the MSE. It is therefore the standard deviation of the errors in the dataset.
+
+  * Lower MSE and RMSE scores, of course, indicate a more accurate model.
+
+* Explain that R2, or r-square, is a way to assess the relationship between two variables.
+
+  * The correlation coefficient is a numerical description of the extent to which the two variables move  together. It ranges from -1 to 1.
+
+  * **R2**, or **r-square value**, is simply the square of the correlation coefficient. It describes the extent to which a change in one variable is associated with the change in the other variable. It ranges from 0 to 1.
+
+* Having explained the general concepts, go over the code implementations of these metrics. Open the [notebook](tbd):
+
+  ```python
+  from sklearn.metrics import mean_squared_error, r2_score
+  import numpy as np
+
+  r2 = r2_score(y, predictions)
+  mse = mean_squared_error(y, predictions)
+  rmse = np.sqrt(mse)
+  np.std(y)
+  ```
+
+  * After importing the pertinent `sklearn` modules, the R2, MSE, and RMSE are calculated.
+
+  * The RMSE is simply the square root of the mean square error.
+
+  * The standard deviation of the temperature, calculated by `np.std()`, is 3.84.
+
+  * The RMSE, or the standard deviation of the error, is 6.38.
+
+  * The RMSE exceeds the standard deviation, indicating that the model may not be very helpful. In other words, on average there are wider swings in the error than the measured temperatures.
+
+### Students Do: Regression Metrics (10 min)
+
+**Files:**
+
+  * [README.md](Activities/11-Stu_Error_Accuracy_Metrics/README.md)
+
+  * [starter.ipynb](Activities/11-Stu_Error_Accuracy_Metrics/Unsolved/starter.ipynb)
+
+  * [oil_futures.csv](Activities/11-Stu_Error_Accuracy_Metrics/data/oil_futures.csv)
+
+### Instructor Do: Review Activity (5 min)
+
+Explain that `res.coef_` returns an array of coefficients.
+
+  * Because of the binary encoding, splitting the dataset into separate weeks, the `coef_` attribute returns an array with a coefficient for each week.
+
+Highlight the salient features of the error metrics:
+
+  * R2: An r-square value of 0.2 An interpretation of R2 is not always straight forward, can be misleading in isolation. With that caveat, 0.2 can be a robust value in financial contexts.
+
+  * The MSE is 2.986 and the RMSE (the square root of MSE) is 1.72. It is lower than the standard deviation of returns (1.93), indicating the standard deviation of errors is smaller than that of the raw data.
+
+Go over the steps of plotting the seasonal effects from the model:
+
+  ![Images/error03.png](Images/error03.png)
+
+  ```python
+  results = pd.DataFrame(model.coef_, columns=["Coefficient"], index=X_binary_encoded.columns)
+
+  results = (results[results.index.str.contains("Week_of_year")])
+  ```
+
+  * First, a data frame is created with each week and its coefficient.
+
+  * Then the resulting data frame is filtered only to include rows that contain the week of the year, meaning that rows with lagged return data are filtered out.
+
+  * Finally, a bar plot of the coefficients by week of the year is created.
+
+  * There does seem to be seasonal effects, with an upswing between week 12 through 26 or so, and intermittent downswings, especially toward the end of the year.
