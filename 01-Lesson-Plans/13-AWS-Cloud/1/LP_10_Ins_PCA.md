@@ -25,19 +25,19 @@ Open the unsolved Jupyter notebook, live code the demo and highlight the followi
 
   ![Using StandardScaler](Images/using-standardscaler.png)
 
-* Once the features are standardized, PCA can be used to reduce the number of features of a dataset. First a PCA model should be created specifying the final number of features on the `n_components` parameter. In this demo, the features are reduced from `4` to `2`.
+* Once the features are standardized, PCA can be used to reduce the number of features in the dataset. First a PCA model should be created specifying the final number of features in the `n_components` parameter. In this demo, the features are reduced from `4` to `2`.
 
   ```python
   pca = PCA(n_components=2)
   ```
-
-Tell to students, that after dimensionality reduction, we get as a results a smaller set of dimensions called _principal components_, there isn’t a particular meaning assigned to each principal component, the new components are just the two main dimensions of variation that contains most of the information in the original dataset.
 
 * After creating the PCA model, we apply dimensionality reduction on the scaled dataset.
 
   ```python
   iris_pca = pca.fit_transform(iris_scaled)
   ```
+
+Tell students, that after dimensionality reduction, we get as a results a smaller set of dimensions called _principal components_, there isn’t a particular meaning assigned to each principal component, the new components are just the two main dimensions of variation that contains most of the information in the original dataset.
 
 * The resulting principal components, are transformed into a DataFrame to be used next to fit the K-Means algorithm. You can see that principal component values has no direct relation with the values in the original dataset, they can be seen as a reduced representation of the original data.
 
@@ -67,3 +67,9 @@ Explain to students that in this demo, after using the attribute `explained_vari
   # Predict clusters
   predictions = model.predict(df_iris_pca)
   ```
+
+* Finally the clusters are plotted, now they are easier to analyze since we have only two features.
+
+  ![Clusters plot](Images/pca-clusters-plot.png)
+
+Answer any questions before moving on.
