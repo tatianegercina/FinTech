@@ -2,7 +2,7 @@
 
 ### Overview
 
-By the end of this class, students will have added another PyViz visualization technology to their skillsets. Today's lesson focuses on P**Plotly Express**, a visualization module built on top of **Plotly**. Like hvPlot, Plotly Express is an interactive plotting library that supports PyViz and Pandas.
+By the end of this class, students will have added another PyViz visualization technology to their skillsets. Today's lesson focuses on **Plotly Express**, a visualization module built on top of **Plotly**. Like hvPlot, Plotly Express is an interactive plotting library that supports PyViz and Pandas.
 
 Students are learning Plotly Express because it has risen to be an industry standard among data scientists and analysts. Plotly Express offers advanced statistical plots, like **parallel categories** and **parallel coordinates**, which many other plotting interfaces do not (e.g., hvPlot). Having knowledge and experience with Plotly Express will give students an upper hand in the job market, and it will enable them to create visualizations and reports that are on the same caliber as those by data scientists.
 
