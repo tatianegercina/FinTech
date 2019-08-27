@@ -79,11 +79,13 @@ Continue the demo by adding a new column to the DataFrame with the predicted cla
 
 ![Adding predicted classes](Images/addind-classes-column.png)
 
-* Visualizing the clusters helps to graphically understand how they are arranged, despite we have four features on the DataFrame, we can take three of them to plot the clusters using Plotly Express.
+* Visualizing the clusters helps to graphically understand how they are arranged, despite we have four features on the DataFrame, we can take two or three of them to plot the clusters.
 
-![Plotting clusters](Images/plotting-clusters.png)
+  | Two features                          | Three Features                        |
+  | ------------------------------------- | ------------------------------------- |
+  | ![2 Features](Images/plotting-2d.png) | ![3 Features](Images/plotting-3d.png) |
 
-Continue with the live coding demo by showing students how the best value for `k` can be found, highlight the following:
+Continue the live coding demo by showing students how the best value for `k` can be found, highlight the following:
 
 * Two list are created to store the values for the `inertia` and to define how many values of `k` we want to try. Ten values of `k` are normally a good number to start.
 
