@@ -464,9 +464,9 @@ For the bonus, briefly explain that two outer joins can be performed to retrieve
 
 ---
 
-### 12. Instructor Do: Connecting Pandas with PostgreSQL (10 mins)
+### 12. Instructor Do: Connecting Pandas with PostgreSQL (10 min)
 
-In this activity, students will learn how they can create a connection to PostgreSQL from Python using [SQLAlchemy](https://www.sqlalchemy.org/) to load data into a Pandas DataFrame.
+In this activity, students will learn how to create a connection from Python to PostgreSQL using [SQLAlchemy](https://www.sqlalchemy.org/) to load data into a Pandas DataFrame.
 
 **Files:**
 
@@ -474,25 +474,25 @@ In this activity, students will learn how they can create a connection to Postgr
 
 * [schema.sql](Activities/07-Ins_Connecting_Pandas_SQL/Solved/schema.sql)
 
-Comment to students that it's possible to interact between PostgreSQL and Python using the SQLAlchemy library. Ask students to install this library on their virtual environment by executing the following command form the terminal:
+Tell students that the SQLAlchemy library allows interaction between PostgreSQL and Python. Students should install this library on their virtual environment by executing the following command in the terminal:
 
 ```bash
 conda install -c anaconda sqlalchemy
 ```
 
-Be sure that all students have installed SQLAlchemy, open the unsolved Jupyter notebook and live code the solution by highlighting the following:
+Make sure all students have installed SQLAlchemy. Then open the unsolved Jupyter Notebook file and live code the solution while highlighting the following:
 
 * SQLAlchemy offers several functionalities to interact with databases from Python.
 
 * This activity is focused on retrieving data from a PostgreSQL database to create a DataFrame for data analysis and visualization in Python.
 
-* To create a connection to a database the [`create_engine` function](https://docs.sqlalchemy.org/en/13/core/engines.html) is imported from `sqlalchemy`.
+* To create a connection to the database, import the [`create_engine` function](https://docs.sqlalchemy.org/en/13/core/engines.html) from `sqlalchemy`.
 
   ```python
   from sqlalchemy import create_engine
   ```
 
-* Creating a connection to the database is as simple as calling the `create_engine` function passing the database URL. In this example, the `animals` database created before is used, the default database user name and password are used.
+* We can connect to the database by calling the `create_engine` function and passing the database URL. In this example, we use the `animals` database that was created earlier, along with the default database username and password.
 
   ```python
   engine = create_engine("postgresql://postgres:postgres@localhost:5432/animals")
@@ -502,21 +502,21 @@ Be sure that all students have installed SQLAlchemy, open the unsolved Jupyter n
 
   ![SQLAlchemy URL structure](Images/sqlalchemy_url.png)
 
-* To retrieve data from the database the first step is to define a SQL query that fetches the data we want. In this example, all the rows from the `animals_all` table are retrieved.
+* To retrieve data from the database, we first need to define a SQL query that fetches the data we want.. In this example, all the rows from the `animals_all` table are retrieved.
 
   ```python
   query = "SELECT * FROM animals_all"
   ```
 
-* The DataFrame is created using the [`read_sql()` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_sql.html) from Pandas, this function reads a SQL query or database table into a DataFrame. Two parameters are passed, the `query` and the `engine` instance defined before.
+* The DataFrame is created by using the [`read_sql()` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_sql.html) in Pandas. This function reads a SQL query or database table into a DataFrame. Two parameters are passed: the `query` and the `engine` instance that were defined earlier.
 
   ```python
   animals_df = pd.read_sql(query, engine)
   ```
 
-Explain to students that once that the data from the database is on a DataFrame, they can perform any data processing, analysis or visualization task.
+Explain to students that once the data from the database is in a DataFrame, we can perform any data processing, analysis, or visualization task.
 
-* The `head()` from the `animals_df` DataFrame is shown, it can be seen that the data from the `animals_all` table is now loaded into the DataFrame.
+* The `head()` from the `animals_df` DataFrame is shown. You can see that the data from the `animals_all` table is now loaded into the DataFrame.
 
   ![Sample DataFrame records](Images/animals_df_head.png)
 
@@ -530,7 +530,7 @@ Explain to students that once that the data from the database is on a DataFrame,
   """
   ```
 
-* The `animals_count_df` DataFrame is created to read the query and a bar chart is created using `hvplot` to present the results.
+* The `animals_count_df` DataFrame is created to read the query, and a bar chart is created using `hvplot` to present the results.
 
   ```python
   animals_count_df = pd.read_sql(query, engine)
@@ -538,29 +538,29 @@ Explain to students that once that the data from the database is on a DataFrame,
 
   ![Sample bar chart](Images/sample_bar_char_sqlalchemy.png)
 
-Answer any additional question from students before moving forward.
+Answer any questions before moving on.
 
-### 13. Student Do: Feeding Pandas with SQL (5 mins)
+### 13. Student Do: Feeding Pandas with SQL (5 min)
 
 In this activity, students will read data into a Pandas DataFrame from a PostgreSQL database using SQLAlchemy.
+
+**Files:**
+
+* [stu_feeding_pandas_sql.ipynb](Activities/08-Stu_Feeding_Pandas_SQL/Unsolved/stu_feeding_pandas_sql.ipynb)
+
+* [schema.sql](Activities/08-Stu_Feeding_Pandas_SQL/Unsolved/schema.sql)
 
 **Instructions:**
 
 * [README.md](Activities/08-Stu_Feeding_Pandas_SQL/README.md)
 
-**Files:**
-
-* [stu_feeding_pandas_sql.ipynb](Activities/08-Stu_Stu_Feeding_Pandas_SQL/Unsolved/stu_feeding_pandas_sql.ipynb)
-
-* [schema.sql](Activities/08-Stu_Stu_Feeding_Pandas_SQL/Unsolved/schema.sql)
-
-### 14. Instructor Do: Feeding Pandas with SQL Review (5 mins)
+### 14. Instructor Do: Feeding Pandas with SQL Review (5 min)
 
 **Files:**
 
-* [stu_feeding_pandas_sql.ipynb](Activities/08-Stu_Stu_Feeding_Pandas_SQL/Solved/stu_feeding_pandas_sql.ipynb)
+* [stu_feeding_pandas_sql.ipynb](Activities/08-Stu_Feeding_Pandas_SQL/Solved/stu_feeding_pandas_sql.ipynb)
 
-* [schema.sql](Activities/08-Stu_Stu_Feeding_Pandas_SQL/Solved/schema.sql)
+* [schema.sql](Activities/08-Stu_Feeding_Pandas_SQL/Solved/schema.sql)
 
 Walk through the solution and highlight the following:
 
@@ -570,7 +570,7 @@ Walk through the solution and highlight the following:
   from sqlalchemy import create_engine
   ```
 
-* The database URL is defined in the `db_url` variable and it's passed as parameter to the `create_engine` function.
+* The database URL is defined in the `db_url` variable, and then it's passed as a parameter to the `create_engine` function.
 
   ```python
   # Define the databaser URL
@@ -590,7 +590,7 @@ Walk through the solution and highlight the following:
   students_df = pd.read_sql(query, engine)
   ```
 
-* A DataFame called `lastname_df` is created to fetch the last names' counting.
+* A DataFame called `lastname_df` is created to fetch the count of the last names.
 
   ```python
   # Write the SQL query
@@ -608,7 +608,7 @@ Walk through the solution and highlight the following:
 
   ![Brothers counting bar chart](Images/brothers_counting_chart.png)
 
-Ask for any remaining questions before moving on.
+Answer any questions before moving on.
 
 ### 15. Instructor Do: Entity Relationship Diagrams (10 min)
 
