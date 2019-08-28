@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's class will focus on using last unit's topics of deep neural networks to implement machine learning based trading, otherwise known as *algorithmic trading*. In particular, students will use deep neural nets to predict stock returns of multiple assets within a portfolio and trigger signal-based strategies for trading multiple assets at the same time.
+Today's class will focus on using last unit's topics of deep neural networks to implement machine learning based trading or algorithmic trading. In particular, students will use deep neural nets to predict stock returns of multiple assets within a portfolio and trigger signal-based strategies for trading multiple assets at the same time.
 
 ### Class Objectives
 
@@ -18,7 +18,7 @@ By the end of class, students will be able to:
 
 * Rank multiple signal-based trading strategies by potential alpha generation.
 
-* Backtest signal-based trading strategies to calculate the earning potential of the algorithm using historical data.
+* Back-test signal-based trading strategies to calculate the earning potential of the algorithm using historical data.
 
 * Automate the purchase and sale of multiple assets using the recommended or best-ranked trading strategy.
 
@@ -26,7 +26,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today's lesson will consist of elements taught in the Pandas and Machine Learning.
+* Today's lesson will consist of elements taught in the Pandas and Machine Learning 
 
 * Not everyone will have a background in trading. Therefore, be thorough when explaining specific trading strategies and key terms.
 
@@ -50,12 +50,4 @@ In this section, you teach students what exactly algorithmic trading is and expl
 
 Welcome students to the first day of algorithmic trading and explain the following:
 
-* Algorithmic trading is the concept of utilizing machine-learning to automate the process of buying and selling assets; models incorporating mathematic models are used to predict future stock returns and perform an action based on specific criteria, such as the ratio of risk to reward for the given scenario.
-
-* Signals are created when specific criteria match up according to the machine learning model. Often, there are multiple signals that appear during trading activity, and therefore an algorithmic trading model should rank the multiple signals by potential alpha generation and choose the best one for the right scenario.
-
-* Backtesting is the process of applying algorithmic trading models to historical trading data, making it possible to test the accuracy of the model (at least on data that has already happened).
-
-* Using algorithmic trading models in conjunction with portfolio management allows for automatic re-balancing of assets (capital) within the portfolio, thereby aiding in portfolio optimization; algorithmic trading models automatically buy and sell assets within the portfolio according to the optimal weights for each asset calculated by the model.
-
-Answer any questions before moving on.
+*
