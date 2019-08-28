@@ -6,7 +6,7 @@ Today's class will introduce students to unsupervised learning and cloud service
 
 The concept of _The Cloud_ is presented to students, by highlighting the importance that these kind of computing services have for FinTech professionals, given that the cloud allows to scale machine learning models to be used by hundreds or thousands of users.
 
-As a prelude for the rest of the unit, an introduction to Amazon Web Services (AWS) and AWS SageMaker is given the end of the day.
+As a prelude for the rest of the unit, a demo of the homework is presented, as well as an introduction to Amazon Web Services (AWS) and AWS SageMaker.
 
 ### Class Objectives
 
@@ -32,7 +32,9 @@ By the end of the class, students will be able to:
 
 * Understating unsupervised learning may be challenging, however everyone is a customer and are familiar with how companies use data to target customers or potential customers to offer products and services, try to use analogies about how companies like [Amazon, Netflix, Google](https://www.pointillist.com/blog/customer-behavior-data/), or [Target](https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/) are using customer segmentation to provide a customized offer, or [how Spotify is using segmentation](https://towardsdatascience.com/in-this-article-i-provide-a-detailed-analysis-of-spotify-as-a-company-music-industry-direction-eeb945d7257c) to improve their products and services.
 
-* There are several theoretical aspects behind the K-Means algorithm, focus the class on the practical application of this algorithm for customer segmentation and share the additional references presented on the slides for those students interested on having a deeper understanding.
+* There are several theoretical aspects behind the K-Means and PCA algorithms, focus the class on the practical application of these algorithms for customer segmentation and share the additional references presented on the slides for those students interested on having a deeper understanding.
+
+* The cloud is a core concept for FinTech professionals, however it might be seen complex and nebulous for some students; it's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud, by offering user friendly interfaces that allow to deploy a machine learning model with few lines of code and some mouse clicks.
 
 * Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also encourage students to work with partners.
 
