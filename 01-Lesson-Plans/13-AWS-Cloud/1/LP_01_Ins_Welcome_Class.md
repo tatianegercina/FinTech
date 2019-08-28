@@ -1,10 +1,12 @@
-## 13.1 Lesson Plan: Unsupervised Learning and K-Means
+## 13.1 Lesson Plan: Unsupervised Learning and The Cloud
 
 ### Overview
 
-Today's class will introduce students to unsupervised learning and the K-Means algorithm, one of the most used unsupervised ML algorithms for clustering. Additionally, students will learn how to speed up ML algorithms by using principal component analysis (PCA), as well as to recognize and to explain at least three main differences between supervised and unsupervised machine learning algorithms.
+Today's class will introduce students to unsupervised learning and cloud services. Students will gain hands-on experience with the K-Means algorithm, one of the most used unsupervised algorithms for clustering. Additionally, students will learn how to speed up ML algorithms by using principal component analysis (PCA), as well as to recognize and explain at least three main differences between supervised and unsupervised machine learning algorithms.
 
-As a prelude for next class, an introduction to Amazon Web Services (AWS) and AWS SageMaker is given the end of the day.
+The concept of _The Cloud_ is presented to students, by highlighting the importance that these kind of computing services have for FinTech professionals, given that the cloud allows to scale machine learning models to be used by hundreds or thousands of users.
+
+As a prelude for the rest of the unit, an introduction to Amazon Web Services (AWS) and AWS SageMaker is given the end of the day.
 
 ### Class Objectives
 
