@@ -711,6 +711,8 @@ Explain that we need a column of returns, and lagged returns, which will be regr
   df = df.dropna()
   ```
 
+  * Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called auto-regression, and will be further discussed in day 2.
+
   * A column of lagged returns is created by shifting each value downward by 1 row.
 
   * NaN values must be dropped.
@@ -749,97 +751,3 @@ Next, explain that dummy variables are created for each week of the year:
   * Predictions are made with the model.
 
   * The r-square value is generated.
-
-### Instructor Do: Error, Accuracy, and Metrics (10 min)
-
-* In this activity, we will discuss quantifying a linear regression model: how accurately it describes the data.
-
-* Open the [slideshow](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g33e0d5f8e0_0_12) and recapitulate the linear regression plot below, which we have seen previously (Slide XXX):
-
-  ![Images/error01.png](Images/error01.png)
-
-  * The blue dots are a scatter plot of data points (years of experience vs salary).
-
-  * The red line is the best fit line. It represents the linear regression model.
-
-  * The distance between each data point and the best fit line is referred to as the error.
-
-* Explain that the linear regression model is mathematically constructed to **minimize** the the sum of all the errors after they have been squared (Slide XXX).
-
-  ![Images/error01.jpg](Images/error02.jpg)
-
-* Explain that one way to assess the accuracy of a linear regression model is to look at the errors:
-
-  * The **mean square error**, or **MSE**, as the name states, is the average of the square of the errors of the dataset. It is effectively the variance of the errors in the dataset.
-
-  * The **root mean square error**, or **RMSE**, is simply the square root of the MSE. It is therefore the standard deviation of the errors in the dataset.
-
-  * Lower MSE and RMSE scores, of course, indicate a more accurate model.
-
-* Explain that R2, or r-square, is a way to assess the relationship between two variables.
-
-  * The correlation coefficient is a numerical description of the extent to which the two variables move  together. It ranges from -1 to 1.
-
-  * **R2**, or **r-square value**, is simply the square of the correlation coefficient. It describes the extent to which a change in one variable is associated with the change in the other variable. It ranges from 0 to 1.
-
-* Having explained the general concepts, go over the code implementations of these metrics. Open the [notebook](tbd):
-
-  ```python
-  from sklearn.metrics import mean_squared_error, r2_score
-  import numpy as np
-
-  r2 = r2_score(y, predictions)
-  mse = mean_squared_error(y, predictions)
-  rmse = np.sqrt(mse)
-  np.std(y)
-  ```
-
-  * After importing the pertinent `sklearn` modules, the R2, MSE, and RMSE are calculated.
-
-  * The RMSE is simply the square root of the mean square error.
-
-  * The standard deviation of the temperature, calculated by `np.std()`, is 3.84.
-
-  * The RMSE, or the standard deviation of the error, is 6.38.
-
-  * The RMSE exceeds the standard deviation, indicating that the model may not be very helpful. In other words, on average there are wider swings in the error than the measured temperatures.
-
-### Students Do: Regression Metrics (10 min)
-
-**Files:**
-
-  * [README.md](Activities/11-Stu_Error_Accuracy_Metrics/README.md)
-
-  * [starter.ipynb](Activities/11-Stu_Error_Accuracy_Metrics/Unsolved/starter.ipynb)
-
-  * [oil_futures.csv](Activities/11-Stu_Error_Accuracy_Metrics/data/oil_futures.csv)
-
-### Instructor Do: Review Activity (5 min)
-
-Explain that `res.coef_` returns an array of coefficients.
-
-  * Because of the binary encoding, splitting the dataset into separate weeks, the `coef_` attribute returns an array with a coefficient for each week.
-
-Highlight the salient features of the error metrics:
-
-  * R2: An r-square value of 0.2 An interpretation of R2 is not always straight forward, can be misleading in isolation. With that caveat, 0.2 can be a robust value in financial contexts.
-
-  * The MSE is 2.986 and the RMSE (the square root of MSE) is 1.72. It is lower than the standard deviation of returns (1.93), indicating the standard deviation of errors is smaller than that of the raw data.
-
-Go over the steps of plotting the seasonal effects from the model:
-
-  ![Images/error03.png](Images/error03.png)
-
-  ```python
-  results = pd.DataFrame(model.coef_, columns=["Coefficient"], index=X_binary_encoded.columns)
-
-  results = (results[results.index.str.contains("Week_of_year")])
-  ```
-
-  * First, a data frame is created with each week and its coefficient.
-
-  * Then the resulting data frame is filtered only to include rows that contain the week of the year, meaning that rows with lagged return data are filtered out.
-
-  * Finally, a bar plot of the coefficients by week of the year is created.
-
-  * There does seem to be seasonal effects, with an upswing between week 12 through 26 or so, and intermittent downswings, especially toward the end of the year.
