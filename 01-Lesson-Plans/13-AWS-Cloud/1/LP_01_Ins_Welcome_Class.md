@@ -36,6 +36,8 @@ By the end of the class, students will be able to:
 
 * The cloud is a core concept for FinTech professionals, however it might be seen complex and nebulous for some students; it's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud, by offering user friendly interfaces that allow to deploy a machine learning model with few lines of code and some mouse clicks.
 
+* On Day 1, a homework demo is presented, be sure to get familiar with homework's solutions before the class.
+
 * Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also encourage students to work with partners.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
@@ -52,8 +54,43 @@ By the end of the class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Welcome Class (5 mins)
+### 1. Instructor Do: Welcome Class (10 mins)
 
-Welcome the class to Unit 13, explain students that on this unit they will learn about unsupervised machine learning, also they will recognize the importance of the cloud and cloud services to deploy enterprise machine learning applications.
+In this activity, students will be introduced to unsupervised learning and its most relevant applications. Also, an overview of the unit is presented including a homework demo.
+
+**Files:**
+
+* [Lesson 13.1 Slides]()
+
+Welcome the class to Unit 13, open the lesson slides and move to the _What you will achieve on this unit_ section by highlighting the following:
+
+* The cloud is a core tool for FinTech professionals, students will learn how to leverage their Python and machine learning skills, by using Amazon Web Services to deploy models and business applications that could be reached by hundreds or thousands of people.
+
+* Along this unit, students will have hands-on experience with the following AWS services:
+
+  * **Amazon SageMaker:** To deploy machine learning models.
+  * **Amazon Lex:** To create conversational interfaces.
+  * **Amazon S3:** To store files in the cloud.
+  * **AWS Lambda:** To create serverless applications.
+
+Open your AWS Management Console, open the _Cryptocurrencies Clustering_ homework's solution and briefly explain to students that a machine learning model could be deployed in the cloud using Jupyter notebooks, a tool they already know, and Amazon SageMaker.
+
+Continue by opening the Amazon Lex Management console, open the _RoboAdvisor_ homework's solution, and test the bot with the sample utterance `I'm worried about my retirement` to conduct a sample dialog as follows.
+
+![RoboAdvisor Demo](Images/robo-advisor-demo.gif)
+
+Ends the homework demo, by commenting students that they will create two chatbots using Amazon Lex and AWS Lambda in this unit:
+
+1. A cryptocurrencies converter.
+
+2. An investment portfolio robo advisor.
+
+Continue with the slides by highlighting the following:
+
+* Cloud services are awesome tools for FinTech professionals, students already master several skills that will empower the cloud applications they will be able to create, however.
+
+* This journey starts by learning about unsupervised learning.
 
 Make sure that all students have created their AWS account, ask TAs to assist any student that could be pending on creating it.
+
+Answer any questions before moving on.
