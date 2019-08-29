@@ -1,37 +1,48 @@
-## 13.2 Lesson Plan: Introduction to APIs / Cloud Infrastructure (AWS)
+## 13.2 Lesson Plan: Deploying ML Models with SageMaker
 
 ### Overview
 
-In today's class, students will be introduced to APIs and Cloud Infrastructure with Amazon Web Services (AWS) and will learn how to leverage some cloud computing services for machine learning.
-
-### Instructor Notes
-
-* **Important!** Slack out the disclaimer for [AWS Free Tier](Activities/00-AWS_Free_Tier/AWS-Free-Tier.pdf) services prior to class. Take some time at the beginning of class to explain that while we are only using free tier services in class, students should review this documentation in order to avoid accidentally incurring charges.
-
-* Also note that in the past, AWS content has appeared differently for some instructional teams. It seems that AWS does A/B testing on their UI. If your AWS views _don’t_ match up with the views in the lesson plan, check that you've pulled the latest updates from github or look in the Slack Instructional Team channel for announcements regarding this.
-
-* Check prior to class that everyone has a an AWS account and is able to login.
-
-* Today's class should be a fun one. Students will put together many different technologies covered so far and learn how they can interact with cloud services.
-
-* There are a few activities that require setup. Have the class follow along and ask questions as you go.
+In today's class, students will be introduced to some Amazon Web Services (AWS) tools and will learn how to leverage some cloud computing services for machine learning using Amazon SageMaker.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Understand how AWS SageMaker can be used for Machine Learning
-* ...
+* Describe the pros and cons of using cloud services to deploy machine learning models.
+
+* Orchestrate a cloud solution by combining different AWS services.
+
+* Understand how Amazon SageMaker works and how it can be used to deploy machine learning models.
 
 ### Instructor Notes
 
-This lesson introduces new content rapidly. Students may express frustration at learning new cloud technologies. Remind students that while the learning curve may be steep at first, AWS and *Cloud* experience is highly sought-after and well worth the effort required to become comfortable with it.
+* This lesson introduces new content rapidly. Students may express frustration at learning new cloud technologies. Remind students that while the learning curve may be steep at first, AWS and Cloud experience is highly sought-after and well worth the effort required to become comfortable with it.
 
-Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+* **Important!** Slack out the disclaimer for [AWS Free Tier](../Supplemental/AWS-Free-Tier.pdf) services prior to class. Take some time at the beginning of class to explain that while we are only using free tier services in class, students should review this documentation in order to avoid accidentally incurring charges.
 
-- - -
+* Note that in the past, AWS content has appeared differently for some instructional teams. It seems that AWS does A/B testing on their UI. If your AWS views _don’t_ match up with the views in the lesson plan, check that you've pulled the latest updates from github or look in the Slack Instructional Team channel for announcements regarding this.
 
-### 1. Instructor Do: Welcome Class (10 mins)
+* Check prior to class that all students has a an AWS account and are able to login.
+
+* Today's class should be a fun one. Students will put together many different technologies covered so far and learn how they can interact with cloud services.
+
+* There are a few activities that require setup. Have the class follow along and ask questions as you go.
+
+* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+
+### Slideshow and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 13.2 Slides]().
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+
+---
+
+### 1. Instructor Do: Welcome Class (5 min)
 
 ...
 
