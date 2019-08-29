@@ -493,6 +493,8 @@ Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCv
 
 Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing.ipynb) and live code how to create and use multiple indexes, as well as how to access data using more than one index. Cover the following points:
 
+* When working with indexes, its a common practice to clean data before setting indexes. For example, a Series being used as an index should not have any `NaN` values. These can be handled by first executing `dropna` against a DataFrame. The `set_index` function can then be used set the index.
+
 * Multi-indexing is commonly done when working with `Date` data.
 
 * When used as an index, `Date` data is considered a `DatetimeIndex`. `DatetimeIndexes` have the ability to inherently create multi-indexing.
@@ -974,6 +976,8 @@ Encourage students to work in pairs to complete this activity.
 **File:** [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_business.ipynb)
 
 Open [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_business.ipynb) to review the activity solution with students. Highlight the following:
+
+* It's important to remember to clean data before beginning to analyze and compute calculations with it. Remember to use the `dropna` function to remove `NaN` values. If the `dropna` function is not used, `NaN` values may end up becoming indexes.
 
 * The `concat` function can be used to combine portfolio returns. This enables analysis (i.e., standard deviation) of an entire portfolio rather than an individual stock. It also allows data from investments/portfolio A to be compared with investments/portfolio B.
 
