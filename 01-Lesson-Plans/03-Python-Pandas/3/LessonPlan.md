@@ -162,7 +162,7 @@ Open the file `sort_dataframe.ipynb` and highlight the following:
 * The DataFrame can also be sorted in descending order using the `ascending=False` parameter.
 
   ![sort-descending.png](Images/sort-descending.png)
-  
+
 * The DataFrame can also be sorted by the index.
 
   ```python
@@ -686,6 +686,24 @@ Open the slideshow and provide a brief overview of concatenation:
   * the `join` operation (inner vs. outer)
 
 Open the [starter file](Activities/12-Ins_Concat_DataFrame/Unsolved/concat_dataframes.ipynb) and live code the following examples:
+
+* A key consideration to keep in mind when concatenating DataFrames is that data is joined by index. Pandas' `concat` function will by default join rows or columns by index. Before concatenating DataFrames, make sure the DataFrames are indexed by the same column.
+
+  ```python
+  # Import data
+  france_data_path = Path('../Resources/france_products.csv')
+  uk_data_path = Path('../Resources/uk_products.csv')
+  netherlands_data_path = Path('../Resources/netherlands_products.csv')
+  customer_data_path = Path('../Resources/customer_info.csv')
+  products_data_path = Path('../Resources/products.csv')
+
+  # Read in data and index by CustomerID
+  france_data = pd.read_csv(france_data_path, index_col='CustomerID')
+  uk_data = pd.read_csv(uk_data_path, index_col='CustomerID')
+  netherlands_data = pd.read_csv(netherlands_data_path, index_col='CustomerID')
+  customer_data = pd.read_csv(customer_data_path, index_col='CustomerID')
+  products_data = pd.read_csv(products_data_path, index_col='CustomerID')
+  ```
 
 * DataFrames can be joined by either `column` or `row`. The `axis` argument can be configured to specify which one to use.
 
