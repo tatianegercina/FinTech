@@ -2,6 +2,12 @@
 
 ---
 
+### Please take the Mid-Course Instructional Staff Survey if You Haven't Yet
+
+Trilogy, as a company, values transparency and data-driven change quite highly. As we grow, we know there will be areas that need improvement. It’s hard for us to know what these areas are unless we’re asking questions. Your candid input truly matters to us, as you are key members of the Trilogy team. In addition to the individual feedback at the end of lesson plans
+we would appreciate your feedback at the following link if you have not already taken the mid-course survey:
+[Instructional Staff Survey](https://docs.google.com/forms/d/e/1FAIpQLSfYVe6jUQwDoXferzGqfd3LZ1k0i_RWzgwccd1f5arSXg2pzA/viewform)
+
 ### Overview
 
 Welcome to the natural language processing unit! NLP is an exciting area of machine learning research and is used in a variety of contexts, from algo trading to chatbots. Today's class will explore what NLP is and give students a solid foundation on preprocessing documents for NLP as well as introduce them to some simple analytical methods.
