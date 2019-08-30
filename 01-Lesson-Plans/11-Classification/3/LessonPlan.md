@@ -35,31 +35,31 @@ First, though, we're going to do a little review of concepts from Day 1 of this 
 
 * [Unit 13.3 slides](https://docs.google.com/presentation/d/1DJ8LXYZikGc4K8bnOi57Et64ztWVSxdv9zY7wnxLUsA/edit#slide=id.p)
 
-### 2. Instructor Review: Model Evaluation (0:10 mins)
+### 2. Instructor Review: Model Evaluation (10 min)
 
 This activity will give students a chance to refresh the concepts of model evaluation, which we first went over in the first day of this unit.
 
 **Files:**
 
-* Solved: [reiew_model_eval.ipynb](\Activities\01-Ins_Review_Eval_Metrics\Solved\review_model_eval.ipynb)
+* [review_model_eval.ipynb](Activities/01-Ins_Review_Eval_Metrics/Solved/review_model_eval.ipynb)
 
 Walk through the first few blocks of the notebook.
 
 * We created two classes in this data, with two important features. First, one class is much larger than the other. Second, the classes have significant variation, so neither is cleanly distinguishable from the other.
 
-![eval_1](\Images\eval_1.png)
+  ![eval_1.png](Images/eval_1.png)
 
 * Using a logistic regression mode, we try to predict the class, purple or yellow, with the coordinates of a point.
 
-Ask a student to help you interpret the output of the confusion matrix. Refer to the powerpoint slide to reveal the correct answer.
+Ask a student to help you interpret the output of the confusion matrix. Refer to the slide to reveal the correct answer.
 
-![eval_2](\Images\eval_2.png)
+![eval_2png](Images/eval_2.png)
 
 * Looking only at this matrix, it seems that the model does reasonably well. While there are some false positives, the vast majority of data points are classified correctly.
 
-Move on to the next block, and ask a student to define the three metrics that are shown here. Once again, refer to the powerpoint slide to confirm the student's answers.
+Move on to the next block, and ask a student to define the three metrics that are shown here. Once again, refer to the slide to confirm the student's answers.
 
-![eval_3](\Images\eval_2.png)
+![eval_3png](Images/eval_2.png)
 
 * Precision is the proportion of predicted positives that are accurate. Recall is the proportion of actual positive that were predicted as positive. The F1 metric is a blended average of the two.
 
@@ -202,7 +202,7 @@ Ask students how they interpreted the evaluation metrics. What are some reasons 
 
 ## 9. Instructor Do: Undersampling
 
-Continue in the powerpoint slides to the undersampling slide.
+Continue in the slides to the undersampling slide.
 
 * If we have imbalanced classes, we can purposefully use more of the minority class for training - this is oversampling. However, we can also take fewer instances of the majority class than would be indicated by a proportional sampling method - this is called undersampling.
 
