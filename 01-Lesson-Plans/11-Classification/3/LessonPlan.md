@@ -1,4 +1,4 @@
-## 11.3 Imbalanced CLasses
+## 11.3 Lesson Plan: Imbalanced Classes
 
 ### Overview
 
@@ -21,17 +21,25 @@ By the end of class, students will be able to:
 
 * It's important for this class to make use of the slides, since concepts like confusion matrices or the precision-recall curve may be easier for many students to understand visually.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+### Class Slides and Time Tracker
 
-- - -
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 11.3 Slides]().
 
-### 1. Instructor Do: Welcome Class (5 mins)
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+
+---
+
+### 1. Instructor Do: Welcome Class (5 min)
 
 Welcome students back to the third day of machine learning for classification. Now that we've talked about some techniques to create classification models, we're ready to take the next step and talk about real-world problems. One prominent problem in many classification tasks is class imbalance, which occurs when the training data you use to build your classification model is unevenly split. Some examples include fraud detection, churn prediction, and medical diagnoses - ask students if they can think of any more. We'll talk about the challenges this creates for model creation and evaluation, and then get into how to techniques for dealing with these challenges.
 
 First, though, we're going to do a little review of concepts from Day 1 of this unit, in which we talked about the confusion matrix and some metrics for evaluating models.
 
-#### Files
+**Files:**
 
 * [Unit 13.3 slides](https://docs.google.com/presentation/d/1DJ8LXYZikGc4K8bnOi57Et64ztWVSxdv9zY7wnxLUsA/edit#slide=id.p)
 
@@ -67,7 +75,7 @@ Ask students to evaluate the performance of this model. How do they think it did
 
 * While the confusion matrix and evaluation metrics do give us some insight into performance, this is a bit of a trick question. Whether or not the model is "good" depends on context. What are we trying to predict? What are the cost of false positives, or false negatives?
 
-### 3. Students Do: Hypothetical Models (15 mins)
+### 3. Students Do: Hypothetical Models (15 min)
 
 In this activity, students will discuss the relative importance of false positives/negatives and weigh the pros and cons of using each evaluation metric for a set of hypothetical classification models.
 
@@ -75,15 +83,15 @@ In this activity, students will discuss the relative importance of false positiv
 
 * [README.md](Activities/02-Stu_Hypothetical_models/README.md)
 
-## 4. Instructor Do: Review Hypothetical Models
+### 4. Instructor Do: Review Hypothetical Models (10 min)
 
 Open the slides and walk through each scenario with the students.
 
 Ask a volunteer to talk the class through each scenario before outlining our answers below.
 
-* In the first case, if we define spam emails as positives, false positives are more costly than false negatives (a spam email getting through is not the end of the world, while an important email that gets flagged as spam might be disasterous for the user). Precision and specificity are important to consider for this reason. Spam emails probably make up a relatively small (but not tiny) proportion of all emails. Because of this, a high accuracy or F1 score might be misleading.
+* In the first case, if we define spam emails as positives, false positives are more costly than false negatives (a spam email getting through is not the end of the world, while an important email that gets flagged as spam might be disastrous for the user). Precision and specificity are important to consider for this reason. Spam emails probably make up a relatively small (but not tiny) proportion of all emails. Because of this, a high accuracy or F1 score might be misleading.
 
-* False positives and false negatives should probably be weighted fairly evenly in this situation, but true positives are likely to be a small proportion of true negatives. In this situation, high accuracy may still be misleading, but all other evaluation metrics should be examined for different models to understand the relative strenghts and weaknesses of each.
+* False positives and false negatives should probably be weighted fairly evenly in this situation, but true positives are likely to be a small proportion of true negatives. In this situation, high accuracy may still be misleading, but all other evaluation metrics should be examined for different models to understand the relative strengths and weaknesses of each.
 
 * For the third example, there doesn't seem to be any obvious reason why false negatives or positives should be weighted more than the other. Assuming a random, representative sample, we would expect the two classes to be roughly equal in size. Therefore, accuracy or the F1 score would likely be a effective summary metric to compare models.
 
@@ -93,11 +101,11 @@ Ask a volunteer to talk the class through each scenario before outlining our ans
 
 Tell the class that though we highlighted particular metrics for each of these examples, it is always beneficial to look at the confusion matrix and all the metrics to understand the strengths and weaknesses of any particular model, even if some may be more useful than others for any given data.
 
-## 5. Instructor Do: Imbalanced Data
+### 5. Instructor Do: Imbalanced Data (5 min)
 
 Continue in the slides to the imbalanced data slide.
 
-* Imbalanced data describes cases when one or more classes in the data is much more or less frequent than the other class(es). We will be working with binary (two class) classifcation tasks for simplicity, but imbalanced data is a problem in multi-class tasks as well.
+* Imbalanced data describes cases when one or more classes in the data is much more or less frequent than the other class(es). We will be working with binary (two class) classification tasks for simplicity, but imbalanced data is a problem in multi-class tasks as well.
 
 * Imbalanced data is problematic for two main reasons. First, it can cause your model to be biased towards the majority class. Basically, the model will be better at predicting the majority class compared to the minority class because model fitting algorithms are designed to minimize the number of total incorrect classifications. For a concrete example, imagine a data set with two classes A and B. There are 100 instances of A in the training sample, and only 10 instances of B. Imagine a naive model that always picks A. If the data were perfectly balanced, this would result in an accuracy of 50%. However, because this data is imbalanced, this naive model would achieve an accuracy of 100/110, or over 90%! If the two classes are not easily separable, the resulting model will lean towards the naive model and be much better at predicting the majority class than the minority class.
 
@@ -105,7 +113,7 @@ Continue in the slides to the imbalanced data slide.
 
 * The rest of the class will go over strategies to deal with imbalanced classes. We will work mostly with over and under-sampling methods, in which we sample the minority class with greater than random chance or sample the majority class with less than random chance. We will also explain why ensemble methods may be more suitable for imbalanced data than other classification methods, and introduce a classification report specifically created for imbalanced data.
 
-## 6. Instructor Do: Oversampling
+### 6. Instructor Do: Oversampling (10 min)
 
 **Files:**
 
@@ -151,10 +159,9 @@ Pause for any questions before moving on to the implementation of SMOTE oversamp
 
 Pause for questions before moving on to the next activity.
 
+### 7. Students Do: More Loans (15 min)
 
-## 7. Students Do: Oversampling
-
-In this activity, students will pratice using random and SMOTE oversampling in combination with logistic regression to predict whether or not someone is likely to default on their credit card loans in a given month given demographic information.
+In this activity, students will practice using random and SMOTE oversampling in combination with logistic regression to predict whether or not someone is likely to default on their credit card loans in a given month given demographic information.
 
 **Files:**
 
@@ -162,13 +169,13 @@ In this activity, students will pratice using random and SMOTE oversampling in c
 
 [README.md](Activities/04-Stu_Do_More_Loans/README.md)
 
-**Dataset**
+**Dataset:**
 
 Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. Expert Systems with Applications, 36(2), 2473-2480. (https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients#)
 
 Introduce students to the dataset they will be using for this activity. Each row represents a person with a credit card account. ln_balance_limit is the log of the maximum balance they can have on the card; 1 is female, 0 male for sex; the education is denoted: 1 = graduate school; 2 = university; 3 = high school; 4 = others; 1 is married and 0 single for marriage; default_next_month is whether the person defaults in the following month (1 yes, 0 no).
 
-## 8. Instructor Review: Oversampling
+### 8. Instructor Review: More Loans (10 min)
 
 **Files:**
 
@@ -200,7 +207,7 @@ Ask students how they interpreted the evaluation metrics. What are some reasons 
 
 * SMOTE is not guaranteed to outperform random oversampling in all applications. The threat of overfitting due to repeated samples with random oversampling is not as great when the imbalance in classes is not as extreme, as is the case in this data set. Moreover, the fact that SMOTE samples are mostly artificial can actually decrease model performance if the generated data does not have the same structure as the observed data does.
 
-## 9. Instructor Do: Undersampling
+### 9. Instructor Do: Undersampling (10 min)
 
 Continue in the slides to the undersampling slide.
 
@@ -220,7 +227,7 @@ Continue in the slides to the undersampling slide.
 
 Pause for students' questions before moving on to the next activity.
 
-## 10. Students Do: Undersampling
+### 10. Students Do: Undersampling (15 min)
 
 In this activity, students will research and practice undersampling with the imbalanced-learn library.
 
@@ -231,11 +238,11 @@ In this activity, students will research and practice undersampling with the imb
 
 [README.md](Activities/05-Stu_Do_Undersampling/README.md)
 
-**Dataset**
+**Dataset:**
 
 Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. Expert Systems with Applications, 36(2), 2473-2480. (https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients#)
 
-## 11. Instructor Review: Undersampling
+### 11. Instructor Review: Undersampling (10 min)
 
 **Files:**
 
@@ -255,7 +262,13 @@ Ask students which sampling method they prefer for this data given the evaluatio
 
 * Holding all else equal, we would want to use the sampling methdology that results in the best evaluation metrics. However, we have not tried alternative models which might provide better fits for this dataset. If the training set seems large enough to use undersampling, we might want to try different models, such as tree-based or ensemble classifiers, before determining that oversampling is the better methodology.
 
-## 12. Instructor Do: Combination Sampling
+---
+
+### 12. BREAK (15 min)
+
+---
+
+### 13. Instructor Do: Combination Sampling (10 min)
 
 One of the downsides of oversampling with SMOTE is that, because it doesn't see the overall distribution of the data, it can create new points from the data that are heavily influenced by outliers and therefor very noisy. As we've mentioned before, undersampling is not always an option due to small sample sizes. One way of dealing with these challenges is using a combination sampling strategy.
 
@@ -267,7 +280,7 @@ Advance through the slides to the combination sampling slide.
 
 * The downsides of SMOTE can be overcome with an additional step.
 
-* The ENN in SMOTEENN stands for the editted nearest neighbor rule, which looks at the labels for the sampled data and removes instances that are surrounded by data points of the other class. This prunes data points that are noisy (or at least indistinct).
+* The ENN in SMOTEENN stands for the edited nearest neighbor rule, which looks at the labels for the sampled data and removes instances that are surrounded by data points of the other class. This prunes data points that are noisy (or at least indistinct).
 
 Pause for questions, then open the solved notebook and go through the code.
 
@@ -283,8 +296,7 @@ Pause for questions, then open the solved notebook and go through the code.
 
 Walk through the rest of the code and pause for questions before moving on to the next activity.
 
-
-## 13. Students Do: Combination Sampling
+### 14. Students Do: Combination Sampling (15 min)
 
 In this activity, students will research and practice combination sampling with the imbalanced-learn library.
 
@@ -299,7 +311,7 @@ In this activity, students will research and practice combination sampling with 
 
 Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. Expert Systems with Applications, 36(2), 2473-2480. (https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients#)
 
-## 14. Instructor Review: Combination Sampling
+### 15. Instructor Review: Combination Sampling (10 min)
 
 **Files:**
 
@@ -307,7 +319,7 @@ Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for 
 
 Open the solved notebook and go through the code. Since the structure of this activity is very similar to the oversampling activity, you should focus on the evaluation metrics from the combination sampling method.
 
-## 15. Instructor Do: Precision-Recall Curve
+### 16. Instructor Do: Precision-Recall Curve (10 min)
 
 **Files:**
 
@@ -343,10 +355,9 @@ Balanced Random Forest:
 
 ![pr_1.png](Images/pr_1.png)
 
-## 16. Students Do: Credit Card Fraud
+### 17. Students Do: Credit Card Fraud (15 min)
 
 In this activity, students will practice resampling techniques and use different models to classify credit card transactions as fraud or not fraud.
-
 
 **Files:**
 
@@ -354,7 +365,7 @@ In this activity, students will practice resampling techniques and use different
 
 [README.md](Activities/09-Stu_Do_Credit_Card_Fraud/README.md)
 
-**Dataset**
+**Dataset:**
 
 https://www.kaggle.com/mlg-ulb/creditcardfraud/downloads/creditcardfraud.zip/3
 
@@ -374,7 +385,7 @@ Bertrand Lebichot, Yann-Aël Le Borgne, Liyun He, Frederic Oblé, Gianluca Bonte
 
 Fabrizio Carcillo, Yann-Aël Le Borgne, Olivier Caelen, Frederic Oblé, Gianluca Bontempi Combining Unsupervised and Supervised Learning in Credit Card Fraud Detection Information Sciences, 2019
 
-## 17. Instructor Review: Credit Card Fraud
+### 18. Instructor Review: Credit Card Fraud (10 min)
 
 **Files:**
 
@@ -384,12 +395,32 @@ For this review, go around the class and ask students which methods they tried, 
 
 After surveying the class, open the solved notebook and walk through our solution. Stress that this is only one (most likely non-optimal) way of solving the problem.
 
-* We found the SMOTEENN ssampling method to generate the best classification metrics when restricting the model to logistic regression. Note, however, that oversampling also produced high precision and recall scores for both classes, indicating that fraudulent and non-fraudulent transactions are relatvily easily separable using these features.
+* We found the SMOTEENN sampling method to generate the best classification metrics when restricting the model to logistic regression. Note, however, that oversampling also produced high precision and recall scores for both classes, indicating that fraudulent and non-fraudulent transactions are relatively easily separable using these features.
 
 * We chose a balanced random forest implementation for the ensemble model. The performance seems comparable to the logistic regression after resampling.
 
 * The PR curve looks very similar, with the logistic regression results seemingly a little better at thresholds that produce higher recall - i.e., lower thresholds for predicting a the fraud class.
 
-Ask students if there are any questions about this activity before starting to finish up class.
+Ask students if there are any questions about this activity before ending the class.
 
-## End Class
+### 19. Instructor Do: Structured Review (35 mins)
+
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
+
+Please use the entire time to review questions with the students before officially ending class.
+
+Suggested Format:
+
+* Ask students for specific activities to revisit.
+
+* Revisit key activities for the homework.
+
+* Allow students to start the homework with extra TA support.
+
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings
+
+### End Class
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
