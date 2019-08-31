@@ -2,7 +2,21 @@
 
 ### Overview
 
-Today's class will introduce students to the basics of time series analytics. Students will learn to use tools to work with time series data in pandas, to articulate the four components of a time series, identify trends in time series, and to create a linear regression model for time series data.
+Welcome to Unit 10! Everything students have learned up to this point--from data cleaning and wrangling to simulations and projected return on investment--has been to prepare students and give them the foundation needed for implementing advanced analytics pipelines.
+
+Unit 10 introduces students to the world of data science and machine learning. For many students, this unit and the units to follow will be the bread and butter of the class. Advanced analytics is taking the data industry by storm, offering developers and companies a means to analyze thousands of large data sets and use computer predictions to drive investments and decision making.
+
+Students will learn how to use data science tool kits and machine learning algorithms to automate financial analysis and predict future outcomes. By the end of unit, students will have designed and executed machine learning algorithms that leverage common time series analysis and linear aggression approaches to make robust predictions about investments.
+
+Unit 10 also takes students even deeper into statistical analysis, covering concepts such as time series analysis and linear regression. Because these topics are heavy on statistical concepts and approaches some students may not already be exposed to, make sure to pace the class adequately and give appropriate time for questions. Also slack out some of the following helpful links:
+
+* TBD
+
+* TBD
+
+* TBD
+
+Today's class will initiate that journey by introducing students to the basics of time series analytics. Students will learn to use tools to work with time series data in pandas, to articulate the four components of a time series, identify trends in time series, and to create a linear regression model for time series data.
 
 ### Class Objectives
 
