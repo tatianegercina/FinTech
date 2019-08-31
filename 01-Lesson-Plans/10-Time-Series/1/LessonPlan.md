@@ -14,11 +14,11 @@ For many students, this unit and the units to follow will be the bread and butte
 
 * Learning how to develop machine learning algorithms is what's required to take programming to the next level in the current day technological ecosystem. By the end of the course, students will have evolved from standard Python developers to FinTech data scientist, capable of designing and developing:
 
-* Robo-advisors and chat-bots for product/investment recommendation and customer service/support
+* Robo-advisors and chat-bots for algorithmic trading, product/investment recommendation, and customer service/support
 
 * Sentiment analysis engines to assess and predict economical sentiment for stock and housing markets
 
-* Predict and detect fraudulent financial transactions
+* Models that predict and detect fraudulent financial transactions
 
 Students will learn how to use data science tool kits and machine learning algorithms to automate financial analysis and predict future outcomes. By the end of unit, students will have designed and executed machine learning algorithms that leverage common time series analysis and linear aggression approaches to make robust predictions about investments. Students will also have become competent in using standard methods/approaches and tools to evaluate predictions, such as **train test data splitting** and **rolling out of sample method**.
 
@@ -44,14 +44,17 @@ By the end of this class, students will be able to:
 
 Today's class will be a fairly gentle ramp up to the rest of the week. It will provide students with the skills to work with time series data in pandas (e.g. slicing rows by date), and it will furnish them with necessary concepts for days 2 and 3.
 
-The mathematical details of tools such as Hodrick-Prescott filter and linear regression are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class. Slack out some of the following helpful links, and encourage students to conduct research and review supplementary resources outside of class.
+The mathematical details of tools such as Hodrick-Prescott filter and linear regression are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class.
 
-* TBD
+* The goal should be to transmit the mathematical and statistical concepts and approaches at a level required to complete the activity. Students should then independently research and reinforce the concepts outside of class.
 
-* TBD
+* Slack out some of the following helpful links, and encourage students to conduct research and review supplementary resources outside of class.
 
-* TBD
+  * TBD
 
+  * TBD
+
+  * TBD
 
 ### Class Slides and Time Tracker
 
@@ -63,6 +66,7 @@ Note: Editing access is not available for this document. If you wish to modify t
 
 The time tracker for this lesson can be viewed here: [Time Tracker.]()
 
+### . Instructor Do: Welcome (10 min)
 
 ### . Instructor Do: Time Series Basics (10 min)
 
