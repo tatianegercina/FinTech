@@ -6,15 +6,7 @@ Welcome to Unit 10! Everything students have learned up to this point--from data
 
 Unit 10 introduces students to the world of data science and machine learning. For many students, this unit and the units to follow will be the bread and butter of the class. Advanced analytics is taking the data industry by storm, offering developers and companies a means to analyze thousands of large data sets and use computer predictions to drive investments and decision making.
 
-Students will learn how to use data science tool kits and machine learning algorithms to automate financial analysis and predict future outcomes. By the end of unit, students will have designed and executed machine learning algorithms that leverage common time series analysis and linear aggression approaches to make robust predictions about investments.
-
-Unit 10 also takes students even deeper into statistical analysis, covering concepts such as time series analysis and linear regression. Because these topics are heavy on statistical concepts and approaches some students may not already be exposed to, make sure to pace the class adequately and give appropriate time for questions. Also slack out some of the following helpful links:
-
-* TBD
-
-* TBD
-
-* TBD
+Students will learn how to use data science tool kits and machine learning algorithms to automate financial analysis and predict future outcomes. By the end of unit, students will have designed and executed machine learning algorithms that leverage common time series analysis and linear aggression approaches to make robust predictions about investments. Students will also have become competent in using standard methods/approaches and tools to evaluate predictions, such as **train test data splitting** and **rolling out of sample method**.
 
 Today's class will initiate that journey by introducing students to the basics of time series analytics. Students will learn to use tools to work with time series data in pandas, to articulate the four components of a time series, identify trends in time series, and to create a linear regression model for time series data.
 
@@ -22,15 +14,15 @@ Today's class will initiate that journey by introducing students to the basics o
 
 By the end of this class, students will be able to:
 
-  * Manipulate time series data sets in pandas.
+* Manipulate time series data sets in pandas.
 
-  * Identify the components of a time series.
+* Identify the components of a time series.
 
-  * Use tools such as moving average, exponentially-weighted moving average, and the Hodrick-Prescott filter to identify long-term trends.
+* Use tools such as moving average, exponentially-weighted moving average, and the Hodrick-Prescott filter to identify long-term trends.
 
-  * Create a time series linear regression model using Scikit-learn.
+* Create a time series linear regression model using Scikit-learn.
 
-  * Analyze and predict seasonal effects using regression.
+* Analyze and predict seasonal effects using regression.
 
 - - -
 
@@ -38,7 +30,13 @@ By the end of this class, students will be able to:
 
 Today's class will be a fairly gentle ramp up to the rest of the week. It will provide students with the skills to work with time series data in pandas (e.g. slicing rows by date), and it will furnish them with necessary concepts for days 2 and 3.
 
-The mathematical details of tools such as Hodrick-Prescott filter and linear regression are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class.
+The mathematical details of tools such as Hodrick-Prescott filter and linear regression are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class. Slack out some of the following helpful links, and encourage students to conduct research and review supplementary resources outside of class.
+
+* TBD
+
+* TBD
+
+* TBD
 
 
 ### Class Slides and Time Tracker
