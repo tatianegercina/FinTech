@@ -2,11 +2,11 @@
 
 ### Overview
 
-Welcome to Unit 10! Everything students have learned up to this point--from data cleaning and wrangling to simulations and projected return on investment--has been to prepare students and give them the foundation needed for implementing advanced analytics pipelines.
+Welcome to Unit 10! Everything students have learned up to this point--from data cleaning and wrangling to simulations and projected return on investments--has been to prepare students and give them the foundation needed for implementing advanced analytics pipelines using **time series** analysis and **machine learning**.
 
-Unit 10 introduces students to the world of data science and **machine learning**. **Machine learning** is a sect of programming that employs statistical models to enable insights, predictions, and data-driven decision making. **Machine learning** involves the development of computer applications that have the ability to automatically learn from data and make adjustments to parameters and execution based off of experience.
+Unit 10 introduces students to the world of data science and **machine learning**. **Machine learning** is a form of programming that employs algorithms and statistical models to enable insights, predictions, and data-driven decision making. **Machine learning** involves the development of computer applications that have the ability to automatically learn from data and make adjustments to parameters and execution based off of experience, with little to no interaction from a developer.
 
-For many students, this unit and the units to follow will be the bread and butter of the class. Advanced analytics is taking the data industry by storm, offering developers and companies a means to analyze thousands of large data sets and use computer predictions to drive investments and decision making.
+For many students, this unit and the units to follow will be the bread and butter of the class. Advanced analytics is taking the data industry by storm, offering developers and companies a means to analyze thousands of large data sets and use computer predictions to drive investments and decision making. Machine learning especially benefited financial services, allowing banks and professionals to analyze large data sets and use technology to make investment recommendations and predictions. Machine learning has streamlined financial analysis; work that previously took hours for a single financial professional to complete can now be automated and completed within minutes using machine learning algorithms.
 
 * Make sure to keep students engaged and excited about the content. Machine learning and data science skills are taking over the tech industry; the advanced analytics and machine learning content in these upcoming units will ensure students are competitive in the job market.
 
@@ -20,9 +20,19 @@ For many students, this unit and the units to follow will be the bread and butte
 
 * Models that predict and detect fraudulent financial transactions
 
-Students will learn how to use data science tool kits and machine learning algorithms to automate financial analysis and predict future outcomes. By the end of unit, students will have designed and executed machine learning algorithms that leverage common time series analysis and linear aggression approaches to make robust predictions about investments. Students will also have become competent in using standard methods/approaches and tools to evaluate predictions, such as **train test data splitting** and **rolling out of sample method**.
+The next several units will teach students how to use data science tool kits and machine learning algorithms to automate financial analysis and predict future outcomes. By the end of unit, students will have designed and executed machine learning algorithms that leverage common time series analysis and linear aggression approaches to make robust predictions about investments. Students will also have become competent in using standard methods/approaches and tools to evaluate predictions, such as **train test data splitting** and **rolling out of sample method**.
 
-Today's class will initiate that journey by introducing students to the basics of time series analytics. Students will learn to use tools to work with time series data in pandas, to articulate the four components of a time series, identify trends in time series, and to create a linear regression model for time series data.
+Today's class will initiate this journey by introducing students to the basics of time series analytics. Students will:
+
+* Learn what time series analysis is
+
+* Use tools to work with time series data in Pandas
+
+* Articulate the four components of a time series
+
+* Identify trends in time series
+
+* Create a linear regression model for time series data.
 
 ### Class Objectives
 
@@ -42,7 +52,7 @@ By the end of this class, students will be able to:
 
 ### Instructor Notes
 
-Today's class will be a fairly gentle ramp up to the rest of the week. It will provide students with the skills to work with time series data in pandas (e.g. slicing rows by date), and it will furnish them with necessary concepts for days 2 and 3.
+Today's class will be a fairly gentle ramp up to the rest of the week. It will provide students with the skills to work with time series data in pandas (e.g. slicing rows by date), and it will furnish them with necessary concepts for days 2 and 3. The first half of the day will focus on identifying what time series analysis is and how it is used. The second half will emphasize scaling time series analysis using machine learning algorithms.
 
 The mathematical details of tools such as Hodrick-Prescott filter and linear regression are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class.
 
@@ -68,11 +78,41 @@ The time tracker for this lesson can be viewed here: [Time Tracker.]()
 
 ### . Instructor Do: Welcome (10 min)
 
+The instructor will kick off the class by welcoming students and briefly introducing the concepts and skills for Unit 10 and today's class. The focus of this activity will be introducing students to **time series analysis**, **machine learning**, and how the two can be used together to create predict trends in various financial markets (i.e. stocks and real estate).
+
+**Files:**
+
+* [welcome-slides]()
+
+Welcome the students back to class. Communicate to them that this unit will commence their journey into the world of time series analysis and machine learning.
+
+Open the slides, and highlight the following:
+
+* Indicate that this unit and several of the units to follow will be focusing on the approaches to implementing time series analysis and machine learning pipelines. Congratulate students are making it this far into the course!
+
+* Define **time series** data as a cluster of data points for a given variable/attributes ordered and sequenced over time with equal time intervals. Emphasize that **time series** data must be stored in equal time intervals.
+
+* Explain that **time series analysis** is the use of statistical models to assess and evaluate **time series** data.
+
+* Underscore that **time series analysis** is the foundation of advanced analytics for the financial sector. **Time series analysis** is used to:
+
+  * Forecast ROI and economic trends
+
+  * Simulate the market
+
+  * Analyze the market
+
+  * Analyze corporate and personal budgets
+
+  * Execute sales and investment projections
+
+Explain to students that the mathematical and statistical content in this unit may seem heavy and difficult to digest at first. However, supplementary guides and resources will be provided to ensure everyone understands the approaches and technologies being used.
+
 ### . Instructor Do: Time Series Basics (10 min)
 
 **File:**
 
-  [Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
+* [Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
 
 In this activity, you will introduce the basics of working with time series in Python.
 
