@@ -62,35 +62,64 @@ Open the [AWS Free Tier Supplemental](../Supplemental/AWS-Free-Tier.md) and brie
 
 Answer any questions before moving on.
 
-### 2. Instructor Do: Introduce AWS SageMaker (10 mins)
+### 2. Instructor Do: Creating an Admin user on IAM (10 min)
 
-* **Important!** Slack out the disclaimer for [AWS Free Tier](Activities/00-AWS_Free_Tier/AWS-Free-Tier.pdf) services prior to class. Take some time at the beginning of class to explain that while we are only using free tier services in class, students should review this documentation in order to avoid accidentally incurring charges. All resources created in class should be stopped and deleted at the end of class to ensure no usage fees. The last activity goes over this.
+**Files:**
 
-Visit the AWS SageMaker homepage and cover the following points.
-<https://aws.amazon.com/sagemaker/>
+* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
 
-SageMaker is a _platform service_ which consists of three main components that work together or independently:
+Walk through the solution and highlight the following:
 
-* Build - Notebook service to explore and prepare the data
-* Train - Model training environment and infrastructure
-* Deploy - Publish and host a model on an HTTP API endpoint or execute a batch prediction / inference.
+* Something really important
 
-Additionally, SageMaker includes layers that work across the components:
+### 3. Students Do: Creating an Admin user on IAM (10 min)
 
-* Ground Truth - Data labeling service
-* Tuning - Automatic Model Tuning - Search hyper-parameter values for best model fit
-* Algorithms - Built-in algorithms (k-NN, k-Means, PCA, Forecasting, and many more)
-* Frameworks - Deep learning framework containers (Scikit-learn, TensorFlow, MXNet, PyTorch, and others)
-* Docker containers - Bring your own model or algorithm container and publish to [AWS ECR](https://aws.amazon.com/ecr/)
-* Marketplace -  SageMaker integrates with AWS Marketplace to find, buy and deploy third-party algorithms and models
+**Instructions:**
 
-Review some of the advantages of using SageMaker:
+* [README.md](Activities/02-Stu_Practice/README.md)
 
-* SageMaker provides tools that streamline a typical workflow for creating a machine learning model
-* SageMaker infrastructure enables growth at scale with on-demand compute instances and dynamic storage
-* SageMaker pricing for building, training and hosting is billed by the second, no minimum fees and no upfront commitments
-* SageMaker advertises "One-click Training" and "One-click Deployment"
-* SageMaker comes with built-in security, which includes access controls and monitoring
+**Files:**
+
+* [starter-code.js](Activities/02-Stu_Practice/Unsolved/starter-code.js)
+
+### 4. Instructor Do: Review Creating an Admin user on IAM (10 min)
+
+**Files:**
+
+* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
+
+Walk through the solution and highlight the following:
+
+* Something really important
+
+### 5. Instructor Do: Create an Amazon SageMaker Notebook Instance (20 min)
+
+In this activity, students will learn how to create an instance of Amazon SageMaker, as well as, how to use Jupyter notebooks on the AWS cloud.
+
+Open your web browser, visit the [AWS SageMaker homepage](https://aws.amazon.com/sagemaker/) and highlight the following points:
+
+* Amazon SageMaker is a _platform service_ which consists of three main components that work together or independently:
+
+  * Build - Notebook service to explore and prepare the data
+  * Train - Model training environment and infrastructure
+  * Deploy - Publish and host a model on an HTTP API endpoint or execute a batch prediction / inference.
+
+* Additionally, Amazon SageMaker includes layers that work across all the components:
+
+  * **Ground Truth:**Data labeling service.
+  * **Tuning:** Automatic Model Tuning by searching hyper-parameter values for best model fit.
+  * **Algorithms:** Built-in algorithms (K-NN, K-Means, PCA, Forecasting, and many more).
+  * **Frameworks:** Deep learning framework containers (Scikit-learn, TensorFlow, MXNet, PyTorch, and others).
+  * **Docker containers:** Bring your own model or algorithm container and publish to [AWS ECR](https://aws.amazon.com/ecr/).
+  * **Marketplace:** Amazon SageMaker integrates with AWS Marketplace to find, buy and deploy third-party algorithms and models.
+
+Review some of the advantages of using Amazon SageMaker:
+
+* Provides tools that streamline a typical workflow for creating a machine learning model.
+* Its infrastructure enables growth at scale with on-demand compute instances and dynamic storage.
+* Pricing for building, training and hosting is billed by the second, no minimum fees and no upfront commitments.
+* Advertises "One-click Training" and "One-click Deployment".
+* Comes with built-in security, which includes access controls and monitoring.
 
 ### 0. Students Do: Explore SageMaker (5 mins)
 
