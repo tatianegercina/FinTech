@@ -12,14 +12,19 @@ Follow this guide to get started with AWS by creating your personal account. Her
 
 1. Go to the [Amazon Web Services home page][1].
 
-2. Choose **Sign Up**.
+2. Choose **Create an AWS account** (or **Sign Up**, seen previously).  
+    ![Create an AWS Account](Images/02-create-aws-account.png)
 
-    **Note:** If you've signed in to AWS recently, the button might say **Sign In to the Console**.
+    **Note:** If you've signed in to AWS recently, the button might say **Sign In to the Console**.  
+    ![Sign In to the Console](Images/02-sign-into-console.png)
 
-3. Enter your account information, and then choose **Continue**.
+3. Enter your account information, and then choose **Continue**.  
+    ![Create an AWS Account](Images/03-create-account.png)
 
-    **Important:** Be sure that you enter your account information correctly, especially your email address. If you enter your email address incorrectly, you won't be able to access your account. If **Create a new AWS account** isn't visible, first choose **Sign in to a different account**, and then choose **Create a new AWS account**.
-4. Choose **Personal** or **Professional** account type.
+    **Important:** Be sure that you enter your account information correctly, especially your email address. If you enter your email address incorrectly, you won't be able to access your account. If **Create a new AWS account** isn't visible, first choose **Sign in to a different account**, and then choose **Create an AWS account**.  
+
+4. Choose **Personal** account type (unless you are a creating an account for a business).  
+    ![Account Type](Images/04-account-type.png)
 
     **Note:** Personal and professional accounts have the same features and functions. A personal account is recommended for this class.
 
@@ -57,7 +62,8 @@ On the **Payment Information** page, enter the information about your payment me
 
 ## Choose an AWS Support plan
 
-On the **Select a Support Plan** page, choose one of the available Support plans. For a description of the available Support plans and their benefits, see [Compare AWS Support Plans][3].
+On the **Select a Support Plan** page, choose one of the available Support plans. For this class we don't need any support, we'll go the the `Basic Support`.  
+For a description of the available Support plans and their benefits, see [Compare AWS Support Plans][3].
 
 ## Wait for account activation
 
