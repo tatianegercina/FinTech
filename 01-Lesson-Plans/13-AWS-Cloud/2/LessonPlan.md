@@ -68,7 +68,7 @@ In this activity, students will learn how to create an `administrator` user usin
 
 Explain to students, that a common best practice, is to avoid using the principal or _root_ user to manage their AWS account. This principal user is the one they used to create their AWS account. Instead, a new user for each person that requires administrator access should be created using the AWS Identity and Access Management (IAM) service.
 
-Open the [AWS console](https://console.aws.amazon.com) using your _root_ user, and show students how to create a new user on IAM as follows.
+Open the [AWS Managemet Console](https://console.aws.amazon.com) using your _root_ user, and show students how to create a new user on IAM as follows.
 
 * Look for the IAM service on the _Find Services_ search box, type `iam` and click on `IAM` service.
 
@@ -133,7 +133,7 @@ Enable access to billing data for the IAM admin user as follows:
 
   ![Create an administrator IAM user - Step 13](Images/iam-user-13.png)
 
-Sign-out from your session, open the `CSV` file with the new `administrator` user credentials and login into the AWS Management Console using the user's URL and their password. Tell students, that from now on, they should avoid using their _root user_ and work with this new admin user instead.
+Sign-out from your session, open the `CSV` file with the new `administrator` user credentials and login into the AWS Management Console using the user's URL and password. Tell students, that from now on, they should avoid using their _root user_ and work with this new admin user instead.
 
 Answer any questions before moving on.
 
@@ -141,23 +141,21 @@ Answer any questions before moving on.
 
 ### 3. Students Do: Creating an Admin user on IAM (10 min)
 
+In this activity, students will create an administrator user to manage their AWS account.
+
 **Instructions:**
 
-* [README.md](Activities/02-Stu_Practice/README.md)
+* [README.md](Activities/01-Stu_IAM_User/README.md)
 
-**Files:**
-
-* [starter-code.js](Activities/02-Stu_Practice/Unsolved/starter-code.js)
+---
 
 ### 4. Instructor Do: Review Creating an Admin user on IAM (10 min)
 
-**Files:**
+This review activity is intended to verify that all students have successfully created their admin user using IAM.
 
-* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
+Make sure all students have their AWS account working properly, also, ask TAs to assist students who could have any issue before moving forward, forthcoming activities will use the `administrator` IAM user by default.
 
-Walk through the solution and highlight the following:
-
-* Something really important
+Answer any questions before moving on.
 
 ### 5. Instructor Do: Create an Amazon SageMaker Notebook Instance (20 min)
 
