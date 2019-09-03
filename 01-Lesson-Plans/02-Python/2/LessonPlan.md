@@ -1,4 +1,4 @@
-## 2.2 Lesson Plan: Data Structures and Functions (6:30 PM)
+## 2.2 Lesson Plan: Data Structures and Functions
 
 ### Overview
 
