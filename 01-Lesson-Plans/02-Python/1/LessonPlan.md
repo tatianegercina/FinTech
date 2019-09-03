@@ -1,4 +1,4 @@
-## 2.1 Lesson Plan: The Emergence of Python (6:30 PM)
+## 2.1 Lesson Plan: The Emergence of Python
 
 ### Overview
 
