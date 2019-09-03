@@ -279,7 +279,7 @@ In this activity, students will calculate a linear regression model to predict t
 
 ---
 
-### 7. Instructor Do: Review Housing Price Prediction on SageMaker (10 mins)
+### 7. Instructor Do: Review Housing Price Prediction on SageMaker (10 min)
 
 **Files**:
 
@@ -303,25 +303,37 @@ Walk through the solution and highlight the following:
 
 ---
 
-### 0. Instructor Do: Discuss Pros and Cons of deploying ML models with SageMaker (10 mins)
+### 8. Break (15 min)
 
-Leads and facilitate a discussion around deploying models in SageMaker and why a RESTful ML API is useful.
+---
+
+### 9. Instructor Do: Pros and Cons of Deploying Machine Learning Models with Amazon SageMaker (10 min)
+
+Lead and facilitate a discussion around deploying models in Amazon SageMaker and why a RESTful ML API is useful.
 
 Have students share their opinions with the class and bring up the following points:
 
-Pros:
+**Pros:**
 
-* Data storage capacity: by using an `S3 bucket`, to store the data we could have trained a model on multiple terabytes of data, or a lot more space than would otherwise have fit in our personal computer.
-* Hardware / GPU: By using another instance to train our model, we can access compute power including GPU capabilities, making powerful hardware available to us as required.
+* Data storage capacity: By using an Amazon S3 bucket to store the data, we could have trained a model on multiple terabytes of data, or a lot more space than would otherwise have fit in our personal computer.
+
+* Hardware / GPU: By using different Amazon SageMaker instances to train our model, we can access compute power including GPU capabilities, making powerful hardware available to us as required.
+
 * Cost: Using AWS resources, we only pay for what we use, we'll turn off everything before ending the class and not incur in further charges.
-* Availability: By deploying our model to another instance, we have make the prediction functionality available 24/7 through a secured endpoint to an application or to be consumed by others without having to make our computer available.
+
+* Availability: By deploying our model to another Amazon SageMaker instance, we have make the prediction functionality available 24/7 through a secured endpoint to an application or to be consumed by others without having to make our computer available.
+
 * RESTful API: As learned in previous units, APIs provide a standard mechanism to access data, our ML API can be consumed through apps and other channels in a simple form while remaining secure and allowing other constraints (for example: authentication, authorization, rate limiting, etc.).
 
-Cons:
+**Cons:**
 
-* Data privacy / security: by uploading data to a third party, you are trusting your data on them. Certain kinds of data are subject to compliance and regulatory constraints.
-* Visibility: you won't have oversight on AWS internal handling of your data and infrastructure.
-* Availability: although there are SLAs in place, AWS (and other cloud providers) can and have suffered outages at times, causing data unavailability.
+* Data privacy / security: By uploading data to a third party, you are trusting your data on them. Certain kinds of data are subject to compliance and regulatory constraints.
+
+* Visibility: You won't have oversight on AWS internal handling of your data and infrastructure.
+
+* Availability: Although there are SLAs in place, AWS (and any other cloud providers) can and have suffered outages at times, causing data unavailability.
+
+---
 
 ### 0. Instructor Do: Create and Deploy a Machine Learning Model (15 mins)
 
