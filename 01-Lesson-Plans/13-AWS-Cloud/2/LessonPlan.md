@@ -247,6 +247,8 @@ While the notebook instance is being created, comment to students that AWS charg
 
 Comment to students, that it's possible to code a Jupyter notebook from scratch on this Amazon SageMaker's notebook instance, but also, you can open an existing Jupyter notebook. Slack out to students the `monte_carlo.ipynb` starter file, and continue the demo as follows.
 
+* This demo code, runs a Monte Carlo simulation that uses the IEX API, so ask students to have their API key at hand.
+
 * In your Amazon SageMaker notebook instance, in left icon menu, click on the _Upload_ icon (arrow up) and select the `monte_carlo.ipynb` notebook to upload.
 
   ![Creating an Amazon SageMaker instance - step 18](Images/sagemaker-18.png)
@@ -261,33 +263,45 @@ Comment to students, that it's possible to code a Jupyter notebook from scratch 
 
 End the demo and answer any questions before moving on.
 
-### 0. Students Do: Housing Price Prediction (20 mins)
+---
 
-* In this activity, students will calculate a regression line to predict the price of a house using the Boston Housing dataset and the SageMaker built-in `Linear Learner` algorithm.
+### 6. Students Do: Housing Price Prediction on SageMaker (20 min)
 
-* **File**: [boston-housing-regression.ipynb](Activities/02-Stu_Housing_Linear_Regression/Unsolved/boston-housing-regression.ipynb)
+In this activity, students will calculate a linear regression model to predict the price of a house using the Boston Housing dataset and the SageMaker built-in `Linear Learner` algorithm.
 
-* **Instructions:** [README.md](Activities/02-Stu_Housing_Linear_Regression/README.md)
+**Instructions:**
 
-  * Upload the provided notebook to SageMaker's JupyterLab and run each cell to build, train, deploy the model. After this
+* [README.md](Activities/02-Stu_Housing_Linear_Regression/README.md)
 
-### 0. Instructor Do: Review Activity (10 mins)
+**Files**:
 
-* Reassure students that it's okay if this was difficult. SageMaker APIs have a learning curve, as do other AWS resources, along with Machine Learning in general. They will get a lot of practice with this today!
+* [boston-housing-regression.ipynb](Activities/02-Stu_Housing_Linear_Regression/Unsolved/boston-housing-regression.ipynb)
 
-* Open up [boston-housing-regression.ipynb](Activities/02-Stu_Housing_Linear_Regression/Solved/boston-housing-regression.ipynb)
+---
 
-* During the review, the high level steps are as follows:
+### 7. Instructor Do: Review Housing Price Prediction on SageMaker (10 mins)
 
-  * We get the data and become familiar with it.
-  * Split the data into _Test_ and _Train_ and convert it to the [ProtoBuf format](https://developers.google.com/protocol-buffers/) used by SageMaker algorithms.
-  * Upload the prepared and formatted data to an `AWS S3` bucket.
-  * Train the model using a linear learner algorithm on the data in `S3`.
-  * Deploy the trained model on a SageMaker instance.
-  * Perform predictions and score the model's performance.
-  * Cleanup. Remove the model-hosting instance and the S3 bucket.
+**Files**:
 
-* Cover the bonus in the following activity.
+* [boston-housing-regression.ipynb](Activities/02-Stu_Housing_Linear_Regression/Solved/boston-housing-regression.ipynb)
+
+Reassure students that it's okay if this was challenging. Amazon SageMaker APIs have a learning curve, as do other AWS resources, along with Machine Learning in general; comment students they will get a lot of practice with AWS Today!
+
+Walk through the solution and highlight the following:
+
+* The date is fetched and analyzed to become familiar with it.
+
+* The data is split into _Test_ and _Train_ datasets and converted into to the [ProtoBuf format](https://developers.google.com/protocol-buffers/) used by Amazon SageMaker's algorithms.
+
+* The prepared and formatted data is uploaded to an Amazon S3 bucket.
+
+* The model is trained using a linear learner algorithm using the data stored in Amazon S3.
+
+* The trained model is deployed on an Amazon SageMaker instance.
+
+* Predictions are performed and the model's performance is scored.
+
+---
 
 ### 0. Instructor Do: Discuss Pros and Cons of deploying ML models with SageMaker (10 mins)
 
