@@ -51,7 +51,52 @@ Follow the below steps to install and setup PyViz in your Python environment. Th
 Now you're all set to get started creating visual masterpieces using PyViz technologies!
 
 
+---
 
+## Troubleshooting
 
+If you have issues with PyViz or Jupyter  Lab, you may need to update your conda environment. Follow the steps below to update the environment and then go back to the install guide to complete a fresh installation of PyViz.
+
+1. Deactivate your current conda environment. This is required in order to update the global conda environment. Be sure to quit any running applications such as Jupyter prior to deactivating the environment.
+
+```
+conda deactivate
+```
+
+2. Update conda.
+
+```
+conda update conda
+```
+
+3. Create a fresh conda environment to use with PyViz.
+
+```
+conda create -n vizenv python=3.7 anaconda
+```
+
+4. Activate the new environment.
+
+```
+conda activate vizenv
+```
+
+5. Install the PyViz dependencies.
+
+```
+conda install -c conda-forge nodejs
+conda install -c pyviz hvplot
+conda install -c plotly plotly
+conda install -c pyviz panel
+```
+
+6. Install the Jupyter Lab Extensions.
+
+```
+jupyter labextension install @pyviz/jupyterlab_pyviz
+jupyter labextension install @jupyterlab/plotly-extension
+```
+
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
