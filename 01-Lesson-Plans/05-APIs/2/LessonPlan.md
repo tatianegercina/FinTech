@@ -53,7 +53,7 @@ Day 2 takes students to the next step in using APIs. Students will transition fr
 
 **Files:**
 
-* [welcome-slides](https://docs.google.com/presentation/d/1t0Uam4ppU404q6GptlQcH0HtHFJLiHuIAoYQijUDXaA/edit#slide=id.g54ab1329fa_1_44)
+* [welcome-slides](https://docs.google.com/presentation/d/1l0JmnichhnQ4RkI5Boe-zrEE5uuCehC2YTqxlTAudsA/edit?usp=sharing)
 
 Welcome students to the second day of APIs by highlighting the following talking points:
 
@@ -93,11 +93,7 @@ In this activity, students and instructor will participate in a facilitated disc
 
 Guided questions are provided to help facilitate discussion. Use these questions as time permits.
 
-**Files:**
-
-* [API Keys Slides](https://docs.google.com/presentation/d/1t0Uam4ppU404q6GptlQcH0HtHFJLiHuIAoYQijUDXaA/edit#slide=id.g5e7c11aa5f_0_0)
-
-Navigate to the 5.2 slides and introduce students to API keys.
+Navigate to the `API Keys` section of the 5.2 slides and introduce students to API keys.
 
 * Many companies that offer APIs require users to sign up for API keys. **API keys are access tokens that serve as a form of credential (like a user name or password) that grants users privileges and permissions needed to submit API requests. API keys are unique identifiers used by APIs to recognize which users submitted which requests.
 
@@ -352,10 +348,6 @@ Ask for any remaining questions before moving on.
 
 The past two lessons have focused on students using the Python requests library to submit API requests. Students will now learn how to use proprietary software development kits (SDKs) to submit API calls and streamline development efforts.
 
-**Files:**
-
-* [Slides](https://docs.google.com/presentation/d/1t0Uam4ppU404q6GptlQcH0HtHFJLiHuIAoYQijUDXaA/edit?usp=sharing)
-
 Communicate to students that while the Python requests library is a great tool with which to submit requests to APIs, there are more sophisticated APIs out there that offer tools called software development kits that provide a packaged way to access API endpoints and submit calls.
 
 Navigate to the 5.2 slides for SDKs, and initiate a facilitated discussion by highlighting the following:
@@ -402,11 +394,7 @@ Ask students if there are any questions before moving on.
 
 ### 10. Instructor Do: Intro to Plaid (10 min)
 
-**Files:**
-
-* [Slides](https://docs.google.com/presentation/d/1t0Uam4ppU404q6GptlQcH0HtHFJLiHuIAoYQijUDXaA/edit#slide=id.g5e7c11aa5f_1_75)
-
-Navigate to the 5.2 slides, and introduce the Plaid by highlighting how it is disrupting the FinTech data industry:
+Navigate to the `Plaid SDK` section of the 5.2 slides, and introduce the Plaid by highlighting how it is disrupting the FinTech data industry:
 
 * According to a [Forbes](https://www.forbes.com/sites/donnafuscaldo/2019/02/06/plaid-and-quovo-just-scratching-the-surface-with-data-aggregation/#6e169e401841) article from February 2019, FinTech is transforming into a new data industry that focuses on and specializes in the democratization of financial services. This is largely due the startup **Plaid**, a company seeking to enrich and empower consumers through financial data and technology.
 
