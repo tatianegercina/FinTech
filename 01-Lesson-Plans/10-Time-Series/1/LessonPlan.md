@@ -6,7 +6,7 @@ Welcome to Unit 10! Everything students have learned up to this point--from data
 
 Unit 10 introduces students to the world of data science and **machine learning**. **Machine learning** is a form of programming that employs algorithms and statistical models to enable insights, predictions, and data-driven decision making. **Machine learning** involves the development of computer applications that have the ability to automatically learn from data and make adjustments to parameters and execution based off of experience, with little to no interaction from a developer.
 
-For many students, this unit and the units to follow will be the bread and butter of the class. Advanced analytics is taking the data industry by storm, offering developers and companies a means to analyze thousands of large data sets and use computer predictions to drive investments and decision making. Machine learning especially benefited financial services, allowing banks and professionals to analyze large data sets and use technology to make investment recommendations and predictions. Machine learning has streamlined financial analysis; work that previously took hours for a single financial professional to complete can now be automated and completed within minutes using machine learning algorithms.
+For many students, this unit and the units to follow will be the bread and butter of the class. Advanced analytics is taking the data industry by storm, offering developers and companies a means to analyze thousands of large data sets and use computer predictions to drive investments and decision making. Machine learning especially benefits financial services, allowing banks and professionals to analyze large data sets and use technology to make investment recommendations and predictions, a process that typically requires multiple hands and hours/days of time. Machine learning has streamlined financial analysis; work that previously took hours for a single financial professional to complete can now be automated and completed within minutes using machine learning algorithms.
 
 * Make sure to keep students engaged and excited about the content. Machine learning and data science skills are taking over the tech industry; the advanced analytics and machine learning content in these upcoming units will ensure students are competitive in the job market.
 
@@ -19,8 +19,6 @@ For many students, this unit and the units to follow will be the bread and butte
 * Sentiment analysis engines to assess and predict economical sentiment for stock and housing markets
 
 * Models that predict and detect fraudulent financial transactions
-
-The next several units will teach students how to use data science tool kits and machine learning algorithms to automate financial analysis and predict future outcomes. By the end of unit, students will have designed and executed machine learning algorithms that leverage common time series analysis and linear aggression approaches to make robust predictions about investments. Students will also have become competent in using standard methods/approaches and tools to evaluate predictions, such as **train test data splitting** and **rolling out of sample method**.
 
 Today's class will initiate this journey by introducing students to the basics of time series analytics. Students will:
 
@@ -52,11 +50,13 @@ By the end of this class, students will be able to:
 
 ### Instructor Notes
 
-Today's class will be a fairly gentle ramp up to the rest of the week. It will provide students with the skills to work with time series data in pandas (e.g. slicing rows by date), and it will furnish them with necessary concepts for days 2 and 3. The first half of the day will focus on identifying what time series analysis is and how it is used. The second half will emphasize scaling time series analysis using machine learning algorithms.
+* Today's class will be a fairly gentle ramp up to the rest of the week. It will provide students with the skills to work with time series data in pandas (e.g. slicing rows by date), and it will furnish them with necessary concepts for days 2 and 3. The first half of the day will focus on identifying what time series analysis is and how it is used. The second half will emphasize scaling time series analysis using machine learning algorithms.
 
-The mathematical details of tools such as Hodrick-Prescott filter and linear regression are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class.
+* The mathematical details of tools such as Hodrick-Prescott filter and linear regression are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class.
 
 * The goal should be to transmit the mathematical and statistical concepts and approaches at a level required to complete the activity. Students should then independently research and reinforce the concepts outside of class.
+
+* The next several units will teach students how to use data science tool kits and machine learning algorithms to automate financial analysis and predict future outcomes. By the end of unit, students will have designed and executed machine learning algorithms that leverage common time series analysis and linear aggression approaches to make robust predictions about investments. Students will also have become competent in using standard methods/approaches and tools to evaluate predictions, such as **train test data splitting** and **rolling out of sample method**.
 
 * Slack out some of the following helpful links, and encourage students to conduct research and review supplementary resources outside of class.
 
@@ -135,6 +135,30 @@ If there is time left over, illustrate that the marriage of **time series analys
 Ask students if there are any questions before moving forward. Answer one or two, and then ask students to save and bring up any additional questions during the next review activity.
 
 ### . Instructor Do: Review Homework (10 min)
+
+The instructor will provide a brief walk through of the homework solution. Time should be dedicated to allowing students ask a few questions about assignment.
+
+**File:**
+
+* [Homework Instructions](https://github.com/coding-boot-camp/FinTech-Lesson-Plans/tree/master/02-Homework/10-Time-Series/Instructions)
+
+Open the homework instructions, and highlight the following:
+
+* This week's homework will be a deep dive into the various methods and techniques of analyzing and forecasting time series data. Students will use the **Hodrick-Prescott** filter, as well as **GARCH** and **EGARCH** models to complete time-series return forecasting and volatility forcasting.
+
+* Explain to students that this homework will consist of three parts:
+
+  * Time-Series Return Forecasting
+
+  * Volatility Forecasting
+
+  * Out-of-Sample Predictions
+
+* Communicate to students that by the end of the homework, they will have gained proficiency in using time series approaches and models to forecast financial data.
+
+* Indicate to students that the homework will leverage the **Quandl** API. Remind students that **Quandl** requires an API key and that they will have to have the key stored, sourced, and exported as an environment variable.
+
+Ask students if they have any questions before moving on.
 
 ### . Instructor Do: Time Series Basics (10 min)
 
