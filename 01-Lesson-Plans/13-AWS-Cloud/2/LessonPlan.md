@@ -157,115 +157,109 @@ Make sure all students have their AWS account working properly, also, ask TAs to
 
 Answer any questions before moving on.
 
-### 5. Instructor Do: Create an Amazon SageMaker Notebook Instance (20 min)
-
-In this activity, students will learn how to create an instance of Amazon SageMaker, as well as, how to use Jupyter notebooks on the AWS cloud.
-
-Open your web browser, visit the [AWS SageMaker homepage](https://aws.amazon.com/sagemaker/) and highlight the following points:
-
-* Amazon SageMaker is a _platform service_ which consists of three main components that work together or independently:
-
-  * Build - Notebook service to explore and prepare the data
-  * Train - Model training environment and infrastructure
-  * Deploy - Publish and host a model on an HTTP API endpoint or execute a batch prediction / inference.
-
-* Additionally, Amazon SageMaker includes layers that work across all the components:
-
-  * **Ground Truth:**Data labeling service.
-  * **Tuning:** Automatic Model Tuning by searching hyper-parameter values for best model fit.
-  * **Algorithms:** Built-in algorithms (K-NN, K-Means, PCA, Forecasting, and many more).
-  * **Frameworks:** Deep learning framework containers (Scikit-learn, TensorFlow, MXNet, PyTorch, and others).
-  * **Docker containers:** Bring your own model or algorithm container and publish to [AWS ECR](https://aws.amazon.com/ecr/).
-  * **Marketplace:** Amazon SageMaker integrates with AWS Marketplace to find, buy and deploy third-party algorithms and models.
-
-Review some of the advantages of using Amazon SageMaker:
-
-* Provides tools that streamline a typical workflow for creating a machine learning model.
-* Its infrastructure enables growth at scale with on-demand compute instances and dynamic storage.
-* Pricing for building, training and hosting is billed by the second, no minimum fees and no upfront commitments.
-* Advertises "One-click Training" and "One-click Deployment".
-* Comes with built-in security, which includes access controls and monitoring.
-
 ---
 
-### 0. Instructor Do: Create a SageMaker Notebook Instance (15 mins)
+### 5. Everyone Do: Create an Amazon SageMaker Notebook Instance (20 min)
 
-SageMaker uses a compute instance to serve `Jupyter` notebooks, the create instance process will configure multiple settings behind the scenes.
+In this activity, students will learn how to create an instance of Amazon SageMaker, and how to use Jupyter notebooks on the AWS cloud.
 
-Have students follow along executing the next steps to create a SageMaker Notebook Instance.
+Comment to students that you will demo how to create an Amazon SageMaker Notebook Instance, ask them to follow your steps as you move along the demo. Ask TAs to assist students if they get stuck along the process.
 
-First, create the required AWS resources for SageMaker.
+Login into your _AWS Management Console_ using your admin user, tell students that the first component that Amazon SageMaker requires is an [Amazon S3](https://aws.amazon.com/s3) bucket to store data to feed machine learning models, or to store prediction results.
 
-* From the main AWS Console, find the `S3` service: <https://s3.console.aws.amazon.com>
-* Create a bucket for SageMaker:
-![Create S3 bucket](Images/00-create-bucket.png)
-Go to S3 -> Buckets -> click `Create Bucket` and fill in details as follows:
+To create an Amazon S3 bucket, follow the next steps:
 
-  * Section: **Name and region**
-    * Bucket name: *sagemaker-`<CURRENT-DATE+TIME>`* (for example: `sagemaker-20190701-1820`)
-    * Region: `(same as SageMaker instance)`
-    * Click: "Next" (leave defaults)
-  * Section: **Configure options**
-    * Click: "Next" (leave defaults)
-  * Section: **Set permissions**
-    * Click: "Next" (leave defaults)
-  * Section: **Review**
-    * Click: `Create bucket`
+* On the _Find Services_ search box, type `s3` and select the _S3_ service from the list.
+
+  ![Creating an Amazon SageMaker instance - step 1](Images/sagemaker-1.png)
+
+* On the Amazon S3 console, click on the _Create bucket_ button.
+
+  ![Creating an Amazon SageMaker instance - step 2](Images/sagemaker-2.png)
+
+* Fill the following details on the _Create button_ window.
+
+  * **Section: Name and region**
+    * _Bucket name:_ `sagemaker-<CURRENT-DATE+TIME>` (for example: `sagemaker-20190903-1026`)
+    * _Region:_ `US West (Oregon)` (S3 and SageMaker instance regions should be the same)
+    * Click: _Next_
+    ![Creating an Amazon SageMaker instance - step 3](Images/sagemaker-3.png)
+  * **Section: Configure options**
+    * Click: _Next_ (leave defaults)
+    ![Creating an Amazon SageMaker instance - step 4](Images/sagemaker-4.png)
+  * **Section: Set permissions**
+    * Click: _Next_ (leave defaults)
+    ![Creating an Amazon SageMaker instance - step 5](Images/sagemaker-5.png)
+  * **Section: Review**
+    * Click: _Create bucket_
+    ![Creating an Amazon SageMaker instance - step 6](Images/sagemaker-6.png)
+
 * Note down (copy/paste/save) the name of bucket for use in the following section.
 
-* From the SageMaker console, use the left pane menu and visit: Notebook -> [Notebook instances](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances)
-* On the right side, click: [Create notebook instance](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances/create)
-![Create notebook instance](Images/01-create-notebook-instance-1.png)
-* Fill in the required values, leaving most defaults unchanged, for example:
+Comment to students, that the next step is to create a Jupyter notebook instance on Amazon SageMaker. Follow the next steps.
 
-  * Notebook instance name: `sm-test`
-  * Notebook instance type: `ml.t2.medium`
-  * Elastic Inference: `none`
-  * IAM role: `Create a new role` (enter the name of the previously create *S3 bucket* in "Specific S3 buckets", then click `Create role`)
-  ![Create IAM Role success](Images/02-iam-role-create-success.png)
-  * Root access - `Enable - Give users root access to the notebook` (remind students that this is less safe but allows more control over the instance)
+* Navigate to the AWS Management Console homepage, on the _Find Services_ search box type _sagemaker_, and select Amazon SageMaker from the list.
 
-* Click: `Create notebook instance`
-Note: the `IAM Role` is required, if this or another required field value is missing the process won't proceed until addressed. If all required values where provided you'll see a success message.
-![Create Notebook Instance success](Images/03-notebook-instance-create-success.png)
+  ![Creating an Amazon SageMaker instance - step 7](Images/sagemaker-7.png)
 
-* Click on the Notebook Instance to view further details
-![Notebook Instance details](Images/04-notebook-instance-details.png)
+* On the Amazon SageMaker console, be sure that `Oregon` is the selected region, on the left pane menu, under _Notebook_ section choose _Notebook instances_.
 
-* Back in the Notebook Instance list, refresh the page and wait for the status of the new instance to be: `InService`
-![Create Notebook Instance success](Images/05-notebook-instance-status.png)
+  ![Creating an Amazon SageMaker instance - step 8](Images/sagemaker-8.png)
 
-* Remind students that AWS charges for these and most resources as they are created, event when not in use, this instance is billed for by the second until it's turned off and deleted.
+* On the _Notebook instances_ page, click on the _Create notebook instance_ button.
 
-### 0. Instructor Do: Create a new Jupyter Notebook (5 mins)
+  ![Creating an Amazon SageMaker instance - step 9](Images/sagemaker-9.png)
 
-* Once the Notebook Instance has status `InService`, go to "Actions" and click on `Open JupyterLab`.
-![Notebook Instance actions](Images/06-notebook-instance-actions.png)
+* Fill in the following values on the _Create notebook instance_ page:
 
+  * **Section: Notebook instance settings**
+    * _Notebook instance name:_ `sm-test`
+    * _Notebook instance type:_ `ml.t2.medium`
+    * _Elastic Inference:_ `none`
+    ![Creating an Amazon SageMaker instance - step 10](Images/sagemaker-10.png)
+  * **Section: Permissions and encryption**
+    * _IAM role:_ On the dropdown list select the `Create a new role` option.
+    ![Creating an Amazon SageMaker instance - step 11](Images/sagemaker-11.png)
+    * Under the _S3 buckets you specify - optional_ section, choose _Specific S3 buckets_ and type the name of the Amazon S3 bucket you created in the past section (e.g. `sagemaker-20190903-1026`), click on _Create role_ to continue.
+    ![Creating an Amazon SageMaker instance - step 12](Images/sagemaker-12.png)
+    * _Root access:_ Be sure that the `Enable - Give users root access to the notebook` option is selected. Tell students, that this option is less safe but allows more control over the instance.
+    ![Creating an Amazon SageMaker instance - step 13](Images/sagemaker-13.png)
 
-* On the `Notebook` section in the JupyterLab `Launcher`, select `conda_python3` to create a new notebook.
-![Notebook Environment](Images/07-jupyterlab-env-conda_python3.png)
+* Scroll down, and click on the _Create notebook instance_ button to continue. Comment to students, that the creations process takes few minutes to finish.
 
-* On the new notebook, enter python code in the first cell to test and demonstrate the functionality.
-![Untitled Notebook](Images/08-notebook-untitled.png)
+  ![Creating an Amazon SageMaker instance - step 14](Images/sagemaker-14.png)
 
-### 0. Instructor Do: Open an existing Jupyter Notebook (5 mins)
+While the notebook instance is being created, comment to students that AWS charges for these and most resources as they are created, event when not in use, this instance is billed for by the second until it's turned off and deleted. Students will learn how to delete these resources later on Today's class.
 
-Show students how to open an existing Jupyter Notebook in the new SageMaker Notebook instance.
-For this example we'll use a notebook in our local machine, from a previous activity.
+* Once the notebook instance status is _InService_, it's ready to be used; on the _Actions_ column, click on `Open JupyterLab` to continue.
 
-* In your SageMaker notebook instance, from the main `JupyterLab` view, use the `Upload` icon (arrow up) on the left and select an existing notebook.
-For example: `04-Pandas/3/Activities/16-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb`
-Select the local notebook file to upload.
-![Upload Notebook](Images/09-upload-notebook.png)
+  ![Creating an Amazon SageMaker instance - step 15](Images/sagemaker-15.png)
 
-* Open the notebook. You'll probably see the message: `Select Kernel` or `Kernel not found`, select `conda_python3` and click `Select` or `Set Kernel`
-![Set Notebook Kernel](Images/10-notebook-select-kernel-1.png)
+* After few seconds you will see the Jupyter Lab UI, comment to students that this notebook is running on the AWS Cloud.
 
-![Notebook Kernel not found](Images/10-upload-nb-kernel-not-found-2.png)
+* On the _Notebook_ section in the JupyterLab _Launcher_, select the `conda_python3` environment to create a new notebook.
 
-* Now you can run commands on the notebook cells.
-Note: you might need to make some of the `CSV` input files available by also uploading them to the right location).
+  ![Creating an Amazon SageMaker instance - step 16](Images/sagemaker-16.png)
+
+* On the new notebook, code a hello world in Python in the first cell to test. Be sure all the class has reach this point before moving forward.
+
+  ![Creating an Amazon SageMaker instance - step 17](Images/sagemaker-17.png)
+
+Comment to students, that it's possible to code a Jupyter notebook from scratch on this Amazon SageMaker's notebook instance, but also, you can open an existing Jupyter notebook. Slack out to students the `monte_carlo.ipynb` starter file, and continue the demo as follows.
+
+* In your Amazon SageMaker notebook instance, in left icon menu, click on the _Upload_ icon (arrow up) and select the `monte_carlo.ipynb` notebook to upload.
+
+  ![Creating an Amazon SageMaker instance - step 18](Images/sagemaker-18.png)
+
+* Open the `monte_carlo.ipynb` notebook. You'll probably see the message: `Select Kernel` or `Kernel not found`, select `conda_python3` and click on `Select` or `Set Kernel` to continue.
+
+  ![Creating an Amazon SageMaker instance - step 19](Images/sagemaker-19.png)
+
+* Run all the cells on the notebook, comment to students that now this notebook is going to run on the AWS cloud using Amazon SageMaker.
+
+  ![Creating an Amazon SageMaker instance - step 20](Images/sagemaker-20.gif)
+
+End the demo and answer any questions before moving on.
 
 ### 0. Students Do: Housing Price Prediction (20 mins)
 
