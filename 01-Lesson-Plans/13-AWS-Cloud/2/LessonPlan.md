@@ -335,9 +335,13 @@ Have students share their opinions with the class and bring up the following poi
 
 ---
 
-### 0. Instructor Do: Create and Deploy a Machine Learning Model (15 mins)
+### 10. Instructor Do: Create and Deploy a Machine Learning Model (15 min)
 
-Show students how a Machine Learning model is created, trained and deployed in SageMaker.
+In this activity, students will learn how a machine learning model is created, trained and deployed in Amazon SageMaker.
+
+**Files:**
+
+* [TDB]()
 
 * Open the following Jupyter Notebook (__TBD: or a custom/similar notebook with modified steps__):
 
@@ -349,7 +353,33 @@ Show students how a Machine Learning model is created, trained and deployed in S
 
 * TBD.
 
-### 0. Instructor Do: Delete Notebook Instance (5 mins)
+---
+
+### 11. Student Do: Deploying a Machine Learning Model (25 min)
+
+**Instructions:**
+
+* [README.md](Activities/02-Stu_Practice/README.md)
+
+**Files:**
+
+* [starter-code.js](Activities/02-Stu_Practice/Unsolved/starter-code.js)
+
+---
+
+### 12. Instructor Do: Review Deploying a Machine Learning Model (10 min)
+
+**Files:**
+
+* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
+
+Walk through the solution and highlight the following:
+
+* Something really important
+
+---
+
+### 13. Instructor Do: Delete Notebook Instance (5 mins)
 
 Show students how to delete their SageMaker notebook instance so that no billing charges are incurred for it after class.
 
