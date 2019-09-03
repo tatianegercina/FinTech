@@ -1,4 +1,4 @@
-## 2.3 Lesson Plan: Functions and Files (10:00 AM)
+## 2.3 Lesson Plan: Functions and Files
 
 ### Overview
 
