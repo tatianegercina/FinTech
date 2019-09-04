@@ -10,7 +10,7 @@ Navigate to the slideshow and present the following questions and answers about 
 
 * What is algorithmic trading?
 
-  **Answer:** Algorithmic trading is an automated form of trading in which a computer program places trades (buy or sell) based on particular instructions defined by a mathematical model (algorithm). For example, a simple algorithm could be to sell 100 shares of a stock when the intraday percentage return of a stock exceeds -3%.
+  **Answer:** Algorithmic trading is automated technical (rather than fundamental) trading in which a machine places trades (buy or sell) based on particular instructions defined by a mathematical model (algorithm) fit on top of price action data. For example, a simple algorithm could be to sell 100 shares of a stock when the intraday percentage return of a stock falls below -3%.
 
 * Why is algorithmic trading so prevalent today?
 
@@ -22,6 +22,6 @@ Navigate to the slideshow and present the following questions and answers about 
 
 * Who performs algorithmic trading?
 
-  **Answer:** 
+  **Answer:** Quantitative analysts or, quant traders, create algorithmic trading models and are often required to have at least a masters or PhD degree level with a familiar background in statistics. Common skill sets require individuals to know languages such as Python and R, as well as machine-learning packages such as sci-kit learn, keras, and tensorflow.
 
 Ask if there are any questions before moving on.
