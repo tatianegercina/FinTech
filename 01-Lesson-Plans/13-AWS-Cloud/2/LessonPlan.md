@@ -271,11 +271,11 @@ In this activity, students will calculate a linear regression model to predict t
 
 **Instructions:**
 
-* [README.md](Activities/02-Stu_Housing_Linear_Regression/README.md)
+* [README.md](Activities/03-Stu_Housing_Price/README.md)
 
 **Files**:
 
-* [boston-housing-regression.ipynb](Activities/02-Stu_Housing_Linear_Regression/Unsolved/boston-housing-regression.ipynb)
+* [boston-housing-regression.ipynb](Activities/03-Stu_Housing_Price/Unsolved/boston-housing-regression.ipynb)
 
 ---
 
