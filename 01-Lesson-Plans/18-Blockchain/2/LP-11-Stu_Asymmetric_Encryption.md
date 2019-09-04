@@ -3,9 +3,9 @@
 Students will get into pairs of 2 and encrypt and decrypt messages between each other using
 asymmetric encryption instead of symmetric.
 
-* **Files:**
+**Files:**
 
-  * [README.md](Activities/11-Stu_Asymmetric_Encryption/README.md)
+* [README.md](Activities/11-Stu_Asymmetric_Encryption/README.md)
 
 Have TAs circulate and ensure that students are successfully encrypting and decrypting each other's messages.
 
