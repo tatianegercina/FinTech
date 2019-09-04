@@ -55,17 +55,17 @@ Review the [slides on data normalization](https://docs.google.com/presentation/d
 * For example, let's say that a table has three columns: `StoreName`, `OwnerAddress`, and `OwnerName`.
 
   * `OwnerName` and `OwnerAddress` rely on `StoreName`. `OwnerAddress` also depends on `OwnerName`.
-  
+
   * Therefore, `OwnerAddress` is transitively dependent on `StoreName` through `OwnerName`.
 
 * **Third normal form**, or 3NF, has the data normalized to second form and contains non-transitively-dependent columns.
 
-* In the previous example, two tables are created: 
+* In the previous example, two tables are created:
 
   * The Owners table has the `OwnerName` and `OwnerAddress`, both of which depend only on the `owner_id`.
-  
+
   * The Stores table contains the `store_name`, which is dependent on the primary key `store_id`.
-  
+
   * The Stores table also contains an `owner_id` that creates a relationship with the Owners table.
 
 Note that students may find 3NF a bit confusing. Encourage students to learn more about 3NF on their own. Today's lesson will mainly focus on 1NF and 2NF.
@@ -275,7 +275,7 @@ Open `schema.sql` in pgAdmin and walk through the code, explaining the following
 
 * Finally, all tables can be joined together by their respective IDs.
 
-### 8. Instructor Do: Intro to Data Relationships (15 min)
+### 8. Instructor Do: Intro to Data Relationships (10 min)
 
 In this activity, students will learn the many different types of data modeling relationships that one table can have with another: one-to-one, one-to-many, and many-to-many.
 
@@ -385,7 +385,7 @@ Take a moment to summarize the major points of the activity:
 
 Ask if there are any questions before moving on.
 
-### 9. Student Do: Data Relationships (15 min)
+### 9. Student Do: Data Relationships (10 min)
 
 In this activity, students will create table schemata for students and available courses, and then create a junction table to display all courses taken by students.
 
@@ -464,7 +464,153 @@ For the bonus, briefly explain that two outer joins can be performed to retrieve
 
 ---
 
-### 12. Instructor Do: Entity Relationship Diagrams (15 min)
+### 12. Instructor Do: Connecting Pandas with PostgreSQL (10 min)
+
+In this activity, students will learn how to create a connection from Python to PostgreSQL using [SQLAlchemy](https://www.sqlalchemy.org/) to load data into a Pandas DataFrame.
+
+**Files:**
+
+* [connecting_pandas_sql.ipynb](Activities/07-Ins_Connecting_Pandas_SQL/Solved/connecting_pandas_sql.ipynb)
+
+* [schema.sql](Activities/07-Ins_Connecting_Pandas_SQL/Solved/schema.sql)
+
+Tell students that the SQLAlchemy library allows interaction between PostgreSQL and Python. Students should install this library on their virtual environment by executing the following command in the terminal:
+
+```bash
+conda install -c anaconda sqlalchemy
+```
+
+Make sure all students have installed SQLAlchemy. Then open the unsolved Jupyter Notebook file and live code the solution while highlighting the following:
+
+* SQLAlchemy offers several functionalities to interact with databases from Python.
+
+* This activity is focused on retrieving data from a PostgreSQL database to create a DataFrame for data analysis and visualization in Python.
+
+* To create a connection to the database, import the [`create_engine` function](https://docs.sqlalchemy.org/en/13/core/engines.html) from `sqlalchemy`.
+
+  ```python
+  from sqlalchemy import create_engine
+  ```
+
+* We can connect to the database by calling the `create_engine` function and passing the database URL. In this example, we use the `animals` database that was created earlier, along with the default database username and password.
+
+  ```python
+  engine = create_engine("postgresql://postgres:postgres@localhost:5432/animals")
+  ```
+
+* The structure of the database URL is defined as follows:
+
+  ![SQLAlchemy URL structure](Images/sqlalchemy_url.png)
+
+* To retrieve data from the database, we first need to define a SQL query that fetches the data we want.. In this example, all the rows from the `animals_all` table are retrieved.
+
+  ```python
+  query = "SELECT * FROM animals_all"
+  ```
+
+* The DataFrame is created by using the [`read_sql()` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_sql.html) in Pandas. This function reads a SQL query or database table into a DataFrame. Two parameters are passed: the `query` and the `engine` instance that were defined earlier.
+
+  ```python
+  animals_df = pd.read_sql(query, engine)
+  ```
+
+Explain to students that once the data from the database is in a DataFrame, we can perform any data processing, analysis, or visualization task.
+
+* The `head()` from the `animals_df` DataFrame is shown. You can see that the data from the `animals_all` table is now loaded into the DataFrame.
+
+  ![Sample DataFrame records](Images/animals_df_head.png)
+
+* A new query is defined to count the number of animals per owner.
+
+  ```python
+  query = """
+  SELECT owner_name, COUNT(owner_name) AS animals
+  FROM animals_all
+  GROUP BY owner_name
+  """
+  ```
+
+* The `animals_count_df` DataFrame is created to read the query, and a bar chart is created using `hvplot` to present the results.
+
+  ```python
+  animals_count_df = pd.read_sql(query, engine)
+  ```
+
+  ![Sample bar chart](Images/sample_bar_char_sqlalchemy.png)
+
+Answer any questions before moving on.
+
+### 13. Student Do: Feeding Pandas with SQL (5 min)
+
+In this activity, students will read data into a Pandas DataFrame from a PostgreSQL database using SQLAlchemy.
+
+**Files:**
+
+* [stu_feeding_pandas_sql.ipynb](Activities/08-Stu_Feeding_Pandas_SQL/Unsolved/stu_feeding_pandas_sql.ipynb)
+
+* [schema.sql](Activities/08-Stu_Feeding_Pandas_SQL/Unsolved/schema.sql)
+
+**Instructions:**
+
+* [README.md](Activities/08-Stu_Feeding_Pandas_SQL/README.md)
+
+### 14. Instructor Do: Feeding Pandas with SQL Review (5 min)
+
+**Files:**
+
+* [stu_feeding_pandas_sql.ipynb](Activities/08-Stu_Feeding_Pandas_SQL/Solved/stu_feeding_pandas_sql.ipynb)
+
+* [schema.sql](Activities/08-Stu_Feeding_Pandas_SQL/Solved/schema.sql)
+
+Walk through the solution and highlight the following:
+
+* In order to create the connection to the PostgreSQL database, the `create_engine` function is imported from `sqlalchemy`.
+
+  ```python
+  from sqlalchemy import create_engine
+  ```
+
+* The database URL is defined in the `db_url` variable, and then it's passed as a parameter to the `create_engine` function.
+
+  ```python
+  # Define the databaser URL
+  db_url = "postgresql://postgres:postgres@localhost:5432/university"
+
+  # Create the engine object
+  engine = create_engine(db_url)
+  ```
+
+* The `students_df` DataFrame is created by reading a SQL query that fetches all the records from the `students` table.
+
+  ```python
+  # Write the SQL query
+  query = "SELECT * FROM students"
+
+  # Read the SQL query into a DataFrame
+  students_df = pd.read_sql(query, engine)
+  ```
+
+* A DataFame called `lastname_df` is created to fetch the count of the last names.
+
+  ```python
+  # Write the SQL query
+  query = """
+  SELECT last_name, count(last_name)
+  FROM students
+  GROUP BY last_name
+  """
+
+  # Read the SQL query into a DataFrame
+  lastname_df = pd.read_sql(query, engine)
+  ```
+
+* The bar chart is created using `hvplot` and the `lastname_df` DataFrame.
+
+  ![Brothers counting bar chart](Images/brothers_counting_chart.png)
+
+Answer any questions before moving on.
+
+### 15. Instructor Do: Entity Relationship Diagrams (10 min)
 
 In this activity, students will learn how to interpret and create an Entity Relationship Diagram (ERD) -- an asset that delineates the relationship among tables in a database.
 
@@ -638,19 +784,19 @@ Slack out [pagila-erd.png](Images/pagila-erd.png) to the class and open it on yo
 
 Answer any questions before moving on.
 
-### 13. Student Do: Designing an ERD, Part 1 (15 min)
+### 16. Student Do: Designing an ERD, Part 1 (15 min)
 
 In this activity, students will create a conceptual ERD for a gym owner.
 
-**File:** [schema.txt](Activities/08-Par_Designing_ERD/Unsolved/schema.txt)
+**File:** [schema.txt](Activities/10-Stu_Designing_ERD/Unsolved/schema.txt)
 
-**Instructions:** [README.md](Activities/08-Par_Designing_ERD/README.md)
+**Instructions:** [README.md](Activities/10-Stu_Designing_ERD/README.md)
 
-### 14. Instructor Do: Review Designing an ERD, Part 1 (5 min)
+### 17. Instructor Do: Review Designing an ERD, Part 1 (5 min)
 
-**File:** [schema.txt](Activities/08-Par_Designing_ERD/Solved/schema.txt)
+**File:** [schema.txt](Activities/10-Stu_Designing_ERD/Solved/schema.txt)
 
-Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage and demonstrate the solution, using the code in the [`schema.txt`](Activities/08-Par_Designing_ERD/Solved/schema.txt) file. Live code while explaining the following:
+Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage and demonstrate the solution, using the code in the [`schema.txt`](Activities/10-Stu_Designing_ERD/Solved/schema.txt) file. Live code while explaining the following:
 
 * A conceptual diagram has only basic information, such as the names of the tables and their attributes.
 
@@ -672,23 +818,23 @@ Ask students if they created any other tables or connections, as there are many 
 
 Answer any questions before moving on.
 
-### 15. Student Do: Designing an ERD, Part 2 (15 min)
+### 18. Student Do: Designing an ERD, Part 2 (10 min)
 
 In this activity, students will further improve the ERD by creating a physical ERD.
 
-**File:** [schema.txt](Activities/09-Par_ERD/Unsolved/schema.txt)
+**File:** [schema.txt](Activities/11-Stu_ERD/Unsolved/schema.txt)
 
-**Instructions:** [README.md](Activities/09-Par_ERD/README.md)
+**Instructions:** [README.md](Activities/11-Stu_ERD/README.md)
 
-### 16. Instructor Do: Review Designing an ERD, Part 2 (5 min)
+### 19. Instructor Do: Review Designing an ERD, Part 2 (5 min)
 
 **Files:**
 
-* [schema.txt](Activities/09-Par_ERD/Solved/schema.txt)
+* [schema.txt](Activities/11-Stu_ERD/Solved/schema.txt)
 
-* [query.sql](Activities/09-Par_ERD/Solved/query.sql)
+* [query.sql](Activities/11-Stu_ERD/Solved/query.sql)
 
-Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage. Copy and paste the solution using the code in the [`schema.txt`](Activities/09-Par_ERD/Solved/schema.txt) file and explain the following:
+Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage. Copy and paste the solution using the code in the [`schema.txt`](Activities/11-Stu_ERD/Solved/schema.txt) file and explain the following:
 
 * Transitioning a logical ERD to a physical ERD involves adding appropriate entities to tables and mapping their relationships.
 
@@ -742,44 +888,24 @@ Return to pgAdmin in the browser and create a new database called `gym`.
 
 Answer any questions before moving on.
 
-### 17. Instructor Do: Introduce Checkpoint—SQL (5 min)
+### 20. Instructor Do: Structured Review (35 mins)
 
-In this activity, instructors will introduce a short multiple-choice assessment that gauges students' understanding of SQL.
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
 
-**Important:** Do not skip this introduction. Do not send out the link without context.
+Please use the entire time to review questions with the students before officially ending class.
 
-Reassure students that they do not need to be nervous about the checkpoint. For example, you can say:
+Suggested Format:
 
-* "This will not affect your grade or graduation requirements."
+* Ask students for specific activities to revisit.
 
-* "This is not like the tests and quizzes you might be used to from school. Its purpose is not to motivate you to study or to punish you for struggling."
+* Revisit key activities for the homework.
 
-* "This is as much a test of me as an instructor and of the course content as it is of you. We are here to ensure your success, and this is one of the tools we use to make sure we are doing that effectively. This class moves fast; if some or all of you misunderstand something important, we as an instructional team need to find out as quickly as possible so that we can help."
+* Allow students to start the homework with extra TA support.
 
-* "Long story short, this quiz cannot hurt you; it can only help you."
-
-Tell the students to read the questions carefully and to focus on finding the right answer rather than using test-taking techniques they may have learned in the past. For example, you can say:
-
-* "There are no silly answer choices or obvious throwaway responses on this quiz. Those kinds of answer choices reduce the likelihood that we'll be able to figure out whether we've taught something effectively."
-
-* "Test-taking strategies you may have learned for standardized tests do not apply here. Instead of focusing on eliminating wrong answers or looking for sneaky context clues, read the question carefully and think about the steps required to solve or answer it."
-
-Reassure students again that the purpose of this checkpoint is to help them. Remind them that the outcome does not impact their grade or graduation requirements. You should reiterate this at *every* checkpoint.
-
-Slack out the link to the [checkpoint](https://docs.google.com/forms/d/1MENo4W02l59VqWQZn67aPXUm2eqANabxqg9cOPPu1v8/edit?usp=sharing).
-
-### 18. Student Do: Take Checkpoint—SQL (30 min)
-
-In this activity, students will take the short multiple-choice SQL assessment introduced in the previous activity.
-
-* Let students know that checkpoints must be completed in class, not at home. This will allow you to find and help struggling students more effectively.
-
-* It is essential for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about students "cheating" on checkpoints, but rather making sure that struggling students get the help they need.
-
-Consult your SSM to obtain checkpoint scores.
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
 
 ### End Class
 
 ---
 
-© 2019 Trilogy Education Services
+Trilogy Education Services © 2019. All Rights Reserved.

@@ -30,6 +30,9 @@ By the end of this class, students will be able to:
 
 * Emphasize that understanding the history and larger context of FinTech is just as important as knowing what FinTech is. Employers will measure candidates not only by their technical skills, but also by their knowledge of what is happening in the financial services industry and the ability to grasp the bigger picture.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [1.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0ab213e1-73b9-430f-b329-aa9500e80c9f) Note that this video may not reflect the most recent lesson plan.
+
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson 1.2 Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing).
@@ -80,7 +83,7 @@ Open the slideshow and use slides 4–7 as you present the following questions a
 
 * When should you use the command line?
 
-  **Answer:** The command line can be used at any time in place of the graphical user interface (GUI). The GUI is merely a visual overlay to the programs executed via the command line. Also, when remotely connecting to a server, such as via the Secure Shell Protocol (SSH), a GUI will not be provided.
+  **Answer:** The command line can be used at any time in place of the graphical user interface (GUI). The GUI is merely a visual overlay to the programs executed via the command line. Also, when remotely connecting to a server, such as via the Secure Shell (SSH) protocol, a GUI will not be provided.
 
 * Why use the command line?
 
@@ -178,7 +181,7 @@ Open the slideshow and go through the slides while covering the following points
 
 * Under the covers, GitHub uses the git tool for file versioning.
 
-  * Github is just one of many vendors that use git in the backend (e.g., GitLab).
+  * GitHub is just one of many vendors that use git in the backend (e.g., GitLab).
 
   * For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with GitHub via the command line using git, which allows for more advanced git operations.
 
@@ -224,11 +227,11 @@ In this activity, you will transition students from the technical demos of the f
 
 First, allow students to do a quick turn-and-teach with each other and pose the question "what have we learned about FinTech so far?" Then, ask for any volunteers who would be willing to share their thoughts. Student responses should be similar to the following:
 
-* FinTech is the combination of finance and technology, and represents the state of the modern finance industry that aims to bolster traditional financial methods and services with technology to increase efficiencies in finance.
+* FinTech is the combination of finance and technology and represents the state of the modern finance industry; it aims to bolster traditional financial methods and services with technology to increase efficiencies in finance.
 
 * FinTech has changed immensely over the past 20+ years, due to advancements in technology and shifts in consumer preferences.
 
-* Due to FinTech's rapid growth in recent years, demand for technological investment, and more importantly the technical expertise driving such investment, has exploded. Thus, there is a shortage of workers in the FinTech industry and makes it an attractive career opportunity in terms of growth and pay.
+* Due to FinTech's rapid growth in recent years, demand for technological investment, and more importantly the technical expertise driving such investment, has exploded. Thus, there is a shortage of workers in the FinTech industry, and this makes it an attractive career opportunity in terms of growth and pay.
 
 Lastly, explain the following to the students:
 
@@ -250,17 +253,17 @@ Open the slideshow and go through the slides while reviewing the key historical 
 
   * With the advancements in mobile network infrastructure (2G, 3G, 4G LTE), consumers have become more connected to the internet (as well as each other) than ever before.
   
-  * As a result, consumers not only have a greater resource pool to cross-check and validate information (e.g., checking prices), but also have become a resource pool themselves, in which companies look to target for business.
+  * As a result, consumers not only have a greater resource pool to cross-check and validate information (e.g., checking prices), but also have become a resource pool themselves, which companies look to target for business.
 
   * Today, consumers demand quick, reliable, and quality channels of engagement. They are inclined to place their trust in a company that boasts a dynamic and beautiful website, a well-designed and efficient mobile application, and (if possible) a social user platform for connecting with others using the similar product.
 
-  * Therefore, companies have been forced to make large investments in technology in order to stay competitive with their industry peers. Consumers have more product choices and are loyal to companies they trust. Therefore, the technological channels affecting consumer engagement have a direct impact on a company's ability to market themselves and, ultimately, capitalize on demand.
+  * Therefore, companies have been forced to make large investments in technology in order to stay competitive with their industry peers. Consumers have more product choices and are loyal to companies they trust. Therefore, the technological channels affecting consumer engagement have a direct impact on a company's ability to market itself and, ultimately, capitalize on demand.
 
 * Big Data
 
-  * Over the years, computer processing units (CPUs), random access memory (RAM), and hard drive storage devices have become both more powerful and less expensive. Therefore, more companies were able to purchase and utilize large clusters of computers working in parallel.
+  * Over the years, computer processing units (CPUs), random access memory (RAM), and hard drive storage devices have become more powerful and less expensive. Therefore, more companies were able to purchase and utilize large clusters of computers working in parallel.
 
-  * Parallel processing paradigms have also shifted to become more efficient. Traditionally, to enable machines to work in parallel, the concept of MapReduce was born. With MapReduce, data workloads were split among multiple machines for disk-based processing, and then re-aggregated at the end to produce the result. However, with the advent of Spark, that same process has been refined for in-memory processing, in which data workloads utilize RAM that is much faster at processing data (though more costly).
+  * Parallel processing paradigms have also shifted to become more efficient. Traditionally, to enable machines to work in parallel, the concept of MapReduce was born. With MapReduce, data workloads were split among multiple machines for disk-based processing, and then re-aggregated at the end to produce the result. With the advent of Spark, that same process has been refined for in-memory processing, in which data workloads utilize RAM that is much faster at processing data (though more costly).
 
   * Because big data processing has become more efficient, the time needed to curate and analyze data has also decreased. Therefore, modern-day companies are able to employ tactics like machine learning to drive business decision-making in real time.
 
@@ -298,7 +301,7 @@ Open the slideshow and ask the students the following questions. (Slides 47–55
 
 * How might cloud-based networking contribute to the advent of start-ups and technological innovators?
 
-  **Sample Answer:** Traditionally, hosting servers meant purchasing on-premises server farms with large upfront costs and regular maintenance, which was a barrier for entry for small start-ups. However, with cloud-based networking such as AWS, small start-ups and even individuals can quickly spin up servers faster and on an as-needed basis, thereby minimizing time to deployment and reducing up-front costs. This allows small start-ups to compete more efficiently with larger firms that have existing infrastructures.
+  **Sample Answer:** Traditionally, hosting servers meant purchasing on-premises server farms with large up-front costs and regular maintenance, which was a barrier for entry for small start-ups. However, with cloud-based networking such as AWS, small start-ups and even individuals can quickly spin up servers faster and on an as-needed basis, thereby minimizing time to deployment and reducing up-front costs. This allows small start-ups to compete more efficiently with larger firms that have existing infrastructures.
 
 * Where else might technology disrupt traditional finance?
 

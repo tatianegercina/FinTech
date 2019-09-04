@@ -4,7 +4,7 @@ In this activity, you will use lists to create a trading log that tracks profits
 
 ## Background
 
-Karen, an equity trader, has been tracking her profits and losses over the course of the last 30 days. She wants to quickly analyze her ongoing performance as she continues to log her profits and losses every day. Understanding her profits and losses each day will allow Karen to evaluate her performance for all trades monthly, weekly, and over time. Help Karen create a program to analyze her results.
+Karen, an equity trader, has been tracking her profits and losses over the course of the last 20 business days. She wants to quickly analyze her ongoing performance as she continues to log her profits and losses every day. Understanding her profits and losses each day will allow Karen to evaluate her performance for all trades monthly, weekly, and over time. Help Karen create a program to analyze her results.
 
 ## Instructions
 

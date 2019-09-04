@@ -1,4 +1,4 @@
-## 2.2 Lesson Plan: Data Structures and Functions (6:30 PM)
+## 2.2 Lesson Plan: Data Structures and Functions
 
 ### Overview
 
@@ -33,6 +33,10 @@ By the end of this class, students will be able to:
 * Make sure TAs circulate the classroom to assist students who are struggling with Python. If class is moving ahead of schedule, use the extra time to revisit concepts to help bring those students up to speed.
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [2.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=765ff335-4fd8-49cd-8852-aa9d0120db88) Note that this video may not reflect the most recent lesson plan.
+
 
 ### Class Slides and Time Tracker
 
@@ -391,7 +395,7 @@ Open the solution file and explain the following:
   print(groceries[:2])
   print()
 
-  # Find the last four items on the list
+  # Find the last five items on the list
   print("What are all my items except for the first two on the list?")
   print(groceries[2:])
   print()
@@ -406,7 +410,7 @@ Open the solution file and explain the following:
   What are my first two items on the list?
   ['water', 'butter']
 
-  What are all my items except for the first two on the list?
+  What are my last five items on the list?
   ['eggs', 'apples', 'cinnamon', 'sugar', 'milk']
 
   What are is every other item on the list, starting from the second item?

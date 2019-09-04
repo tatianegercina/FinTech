@@ -38,6 +38,10 @@ By the end of class, students will be able to:
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [3.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=10e7097d-5905-4c40-b413-aaa600dbb8ee) Note that this video may not reflect the most recent lesson plan.
+
+
 ### Class Slides and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson 3.3 Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g54ab1329fa_1_44).
@@ -158,6 +162,12 @@ Open the file `sort_dataframe.ipynb` and highlight the following:
 * The DataFrame can also be sorted in descending order using the `ascending=False` parameter.
 
   ![sort-descending.png](Images/sort-descending.png)
+
+* The DataFrame can also be sorted by the index.
+
+  ```python
+  painting_df.sort_index(ascending=False)
+  ```
 
 Ask if there are any questions before moving on.
 
@@ -483,6 +493,8 @@ Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCv
 
 Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing.ipynb) and live code how to create and use multiple indexes, as well as how to access data using more than one index. Cover the following points:
 
+* When working with indexes, its a common practice to clean data before setting indexes. For example, a Series being used as an index should not have any `NaN` values. These can be handled by first executing `dropna` against a DataFrame. The `set_index` function can then be used set the index.
+
 * Multi-indexing is commonly done when working with `Date` data.
 
 * When used as an index, `Date` data is considered a `DatetimeIndex`. `DatetimeIndexes` have the ability to inherently create multi-indexing.
@@ -676,6 +688,24 @@ Open the slideshow and provide a brief overview of concatenation:
   * the `join` operation (inner vs. outer)
 
 Open the [starter file](Activities/12-Ins_Concat_DataFrame/Unsolved/concat_dataframes.ipynb) and live code the following examples:
+
+* A key consideration to keep in mind when concatenating DataFrames is that data is joined by index. Pandas' `concat` function will by default join rows or columns by index. Before concatenating DataFrames, make sure the DataFrames are indexed by the same column.
+
+  ```python
+  # Import data
+  france_data_path = Path('../Resources/france_products.csv')
+  uk_data_path = Path('../Resources/uk_products.csv')
+  netherlands_data_path = Path('../Resources/netherlands_products.csv')
+  customer_data_path = Path('../Resources/customer_info.csv')
+  products_data_path = Path('../Resources/products.csv')
+
+  # Read in data and index by CustomerID
+  france_data = pd.read_csv(france_data_path, index_col='CustomerID')
+  uk_data = pd.read_csv(uk_data_path, index_col='CustomerID')
+  netherlands_data = pd.read_csv(netherlands_data_path, index_col='CustomerID')
+  customer_data = pd.read_csv(customer_data_path, index_col='CustomerID')
+  products_data = pd.read_csv(products_data_path, index_col='CustomerID')
+  ```
 
 * DataFrames can be joined by either `column` or `row`. The `axis` argument can be configured to specify which one to use.
 
@@ -946,6 +976,8 @@ Encourage students to work in pairs to complete this activity.
 **File:** [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_business.ipynb)
 
 Open [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_business.ipynb) to review the activity solution with students. Highlight the following:
+
+* It's important to remember to clean data before beginning to analyze and compute calculations with it. Remember to use the `dropna` function to remove `NaN` values. If the `dropna` function is not used, `NaN` values may end up becoming indexes.
 
 * The `concat` function can be used to combine portfolio returns. This enables analysis (i.e., standard deviation) of an entire portfolio rather than an individual stock. It also allows data from investments/portfolio A to be compared with investments/portfolio B.
 

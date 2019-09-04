@@ -22,7 +22,7 @@ Use the [starter file](Unsolved/Core/grocery_list_core.py) to complete the follo
 
 2. Find the first two items on Mike's grocery list.
 
-3. Find the items _except_ for the first two items on Mike's grocery list.
+3. Find the last five items on Mike's grocery list.
 
 4. Find _every other_ item, starting from the second item, on Mike's grocery list.
 

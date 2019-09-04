@@ -1,4 +1,4 @@
-## 2.3 Lesson Plan: Functions and Files (10:00 AM)
+## 2.3 Lesson Plan: Functions and Files
 
 ### Overview
 
@@ -39,6 +39,9 @@ By the end of this class, students will be able to:
 - The pathlib library allows students to ignore the differences between Windows OS `\` back slashes and Unix-based OS `/` forward slashes in regard to file paths. However, they should still be aware of these differences in case they are not able to access the pathlib library.
 
 - Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [2.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2599df21-0a03-4b4f-94aa-aaa0004756ce) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
 
@@ -799,17 +802,21 @@ Answer any questions before moving on.
 
 ---
 
-### 18. Instructor Do: Review and Reflect (35 min)
+### 18. Instructor Do: Structured Review (35 mins)
 
-The final part of class is a time to debrief and review today's lesson. Ask students the following:
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
 
-- Are there any specific activities students want to revisit?
+Please use the entire time to review questions with the students before officially ending class.
 
-- How did everyone feel about the lesson? What were areas of confusion? What were areas of fulfillment/challenge?
+Suggested Format:
 
-Revisit key activities that will help students complete the homework assignment. Then allow them to begin the homework assignment with extra TA support.
+* Ask students for specific activities to revisit.
 
-Take your time during this review session. This is a great time to reinforce concepts and address any confusion.
+* Revisit key activities for the homework.
+
+* Allow students to start the homework with extra TA support.
+
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings
 
 ## End Class
 

@@ -36,6 +36,10 @@ By the end of class, students will be able to:
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [3.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b94c08e1-a82a-4800-a73c-aaa301156f9f) Note that this video may not reflect the most recent lesson plan.
+
+
 ### Class Slides and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson 3.2 Slides](https://docs.google.com/presentation/d/1KWphsqwNlAQGcLf2glW4096Jmnm_xS5pfmfguOsIFJU/edit#slide=id.g59b0dc3b18_0_96).
@@ -918,13 +922,13 @@ Open [returns.ipynb](Activities/10-Ins_Returns/Solved/returns.ipynb) to begin th
 
 * The `cumprod()` function multiplies each number in a series with the next successive number until the end of the series.
 
-* In the equation `(1 + daily_returns).cumprod() - 1`:
+* In the equation `(1 + daily_returns).cumprod()`:
 
-  * Each daily return is expressed as a multiplier (e.g., daily return of 0.5% is 1.005).
+  * Each daily return is expressed as a capital multiplier (e.g., daily return of 0.5% is 1.005).
 
   * The `cumprod()` function cumulatively multiplies each number with its successive number.
 
-  * `-1` brings the result from a multiplier expression back to a typical return value scale (e.g., daily return of 0.5% is 0.005).
+  * Sometimes, the form `(1 + daily_returns).cumprod() - 1` is used; the `-1` brings the result from a capital multiplier expression back to a typical return value scale (e.g., daily return of 0.5% is 0.005).
 
   ![cumprod-function](Images/cumprod-function.png)
 
