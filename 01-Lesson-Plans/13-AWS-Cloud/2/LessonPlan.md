@@ -214,7 +214,7 @@ Comment to students, that the next step is to create a Jupyter notebook instance
 
   * **Section: Notebook instance settings**
     * _Notebook instance name:_ `sm-test`
-    * _Notebook instance type:_ `ml.t2.medium`
+    * _Notebook instance type:_ `ml.m4.xlarge`
     * _Elastic Inference:_ `none`
     ![Creating an Amazon SageMaker instance - step 10](Images/sagemaker-10.png)
   * **Section: Permissions and encryption**
