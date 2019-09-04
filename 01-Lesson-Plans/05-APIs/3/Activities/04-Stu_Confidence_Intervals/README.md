@@ -34,7 +34,8 @@ Create a Monte Carlo simulation with `1000` simulations of `10` free throws to a
 
 ## Hints
 
-* To learn more about histograms and probability distributions, read more [here](https://learnche.org/pid/univariate-review/histograms-and-probability-distributions).  
+* To learn more about histograms and probability distributions, read more [here](https://learnche.org/pid/univariate-review/histograms-and-probability-distributions).
+
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
