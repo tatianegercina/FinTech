@@ -1,4 +1,4 @@
-# Free Throw Simulation
+# Archery Target Hits
 
 In this activity, a coach wants to assess the long-term performance of one of his players when it comes to free throws. The player has a free throw accuracy of approximately `70%` and therefore makes on average `7` free throws for every `10` shots. The coach wants to know the likelihood of the player making `9-10` free throws in a single session.
 
