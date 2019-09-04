@@ -1,9 +1,8 @@
 ### 10. Instructor Do: Asymmetric Cryptography Demo (10 min)
 
-Let's try and solve that pesky problem of having to share the password.
+Explain to students that we need a way of sharing secret data without having to share a password beforehand.
 
 Pick a volunteer to help assist with this demo. They will be encrypting a message using the instructor's public key.
-You can emulate another student by using another tab as well if you do not want to have a volunteer or to test, but it may be more confusing.
 
 Navigate to the ["Box" feature](https://tweetnacl.js.org/#/box) of the TweetNaCl.js site.
 Have your volunteer student do the same.
