@@ -6,9 +6,9 @@ In this activity, students will learn about the data preparation considerations 
 
 * [01_Ins_Data_Preparation.ipynb](Activities/01-Ins_Data_Prep/Solved/01_Ins_Data_Preparation.ipynb)
 
-* [iris.csv](Activities/01-Ins_Data_Prep/Solved/data/iris.csv)
+* [iris.csv](Activities/01-Ins_Data_Prep/Resources/iris.csv)
 
-* [new_iris_data.csv](Activities/01-Ins_Data_Prep/Solved/data/new_iris_data.csv)
+* [new_iris_data.csv](Activities/01-Ins_Data_Prep/Resources/new_iris_data.csv)
 
 Before start playing with unsupervised learning algorithms, explain to students that data preparation for unsupervised learning doesn't differ to much from the process followed for supervised learning problems.
 
@@ -37,7 +37,7 @@ Comment to students that, since all the variables on the dataset are numerical, 
 * Finally, the preprocessed DataFrame is saved on a new `CSV` file for further use.
 
   ```python
-  file_path = Path("data/new_iris_data.csv")
+  file_path = Path("../Resources/new_iris_data.csv")
   new_iris_df.to_csv(file_path, index=False)
   ```
 
