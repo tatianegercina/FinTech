@@ -8,9 +8,9 @@ In this activity, students will identify the best number of clusters on a custom
 
 **Files:**
 
-* [04_Stu_K_Means_In_Action.ipynb](Activities/04-Stu_K_Means_In_Action/Unsolved/04_Stu_K_Means_In_Action.ipynb)
+* [k_means_in_action.ipynb](Activities/04-Stu_K_Means_In_Action/Unsolved/k_means_in_action.ipynb)
 
-* [shopping_data_cleaned.csv](Activities/04-Stu_K_Means_In_Action/Unsolved/data/shopping_data_cleaned.csv)
+* [shopping_data_cleaned.csv](Activities/04-Stu_K_Means_In_Action/Resources/shopping_data_cleaned.csv)
 
 ---
 
@@ -18,16 +18,16 @@ In this activity, students will identify the best number of clusters on a custom
 
 **Files:**
 
-* [04_Stu_K_Means_In_Action.ipynb](Activities/04-Stu_K_Means_In_Action/Solved/04_Stu_K_Means_In_Action.ipynb)
+* [k_means_in_action.ipynb](Activities/04-Stu_K_Means_In_Action/Solved/k_means_in_action.ipynb)
 
-* [shopping_data_cleaned.csv](Activities/04-Stu_K_Means_In_Action/Solved/data/shopping_data_cleaned.csv)
+* [shopping_data_cleaned.csv](Activities/04-Stu_K_Means_In_Action/Resources/shopping_data_cleaned.csv)
 
 Walk through the solution and highlight the following:
 
 * In this activity, the customers shopping data that were preprocessed before is used. Data is loaded on the `df_shopping` DataFrame.
 
     ```python
-    file_path = Path("data/shopping_data_cleaned.csv")
+    file_path = Path("../Resources/shopping_data_cleaned.csv")
     df_shopping = pd.read_csv(file_path)
     ```
 
