@@ -1,12 +1,13 @@
 ### 4. Students Do: Hashing with Hashlib (10 min)
 
-* **Files:**
+Students will now hash two equivilalent messages and compare the outputs.
+Then, they will modify one of the messages and compare again.
 
-  * [README.md](Activities/04-Stu_Hashlib/README.md)
+**Files:**
 
-  * [hashing.py](Activities/04-Stu_Hashlib/Unsolved/hashing.py)
+* [README.md](Activities/04-Stu_Hashlib/README.md)
 
-Students will now hash two equivilalent messages and compare the outputs. Then, they will modify one of the messages and compare again.
+* [hashing.py](Activities/04-Stu_Hashlib/Unsolved/hashing.py)
 
 Point out to the students that the strings that are being hashed require the following syntax:
 
