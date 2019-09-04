@@ -14,7 +14,7 @@ Navigate to the slideshow and present the following questions and answers about 
 
 * Why is algorithmic trading so prevalent today?
 
-  **Answer:** Advances in network technology and computing power have provided greater access and depth to algorithmic trading; platforms like Quantopian have opened the door to novice algorithmic traders, and more capable machines have been used to implement iterative-based learning on increasingly large data sets--otherwise known as machine learning or deep learning.
+  **Answer:** Advances in network technology and computing power have provided greater access and depth to algorithmic trading; platforms like Quantopian have opened the door to novice algorithmic traders, and more capable machines have been used to implement iterative-based learning on increasingly large data sets--otherwise known as *machine learning* or *deep learning*.
 
 * Why use algorithmic trading?
 
