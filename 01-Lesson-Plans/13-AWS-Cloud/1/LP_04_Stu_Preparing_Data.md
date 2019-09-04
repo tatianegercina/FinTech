@@ -16,9 +16,9 @@ There are some data transformations that should be made on the dataset, so ask T
 
 **Files:**
 
-* [02_Stu_Preparing_Data.ipynb](Activities/02-Stu_Preparing_Data/Unsolved/02_Stu_Preparing_Data.ipynb)
+* [preparing_data.ipynb](Activities/02-Stu_Preparing_Data/Unsolved/preparing_data.ipynb)
 
-* [shopping_data.csv](Activities/02-Stu_Preparing_Data/Unsolved/data/shopping_data.csv)
+* [shopping_data.csv](Activities/02-Stu_Preparing_Data/Resources/shopping_data.csv)
 
 ---
 
@@ -26,11 +26,11 @@ There are some data transformations that should be made on the dataset, so ask T
 
 **Files:**
 
-* [02_Stu_Preparing_Data.ipynb](Activities/02-Stu_Preparing_Data/Solved/02_Stu_Preparing_Data.ipynb)
+* [preparing_data.ipynb](Activities/02-Stu_Preparing_Data/Solved/preparing_data.ipynb)
 
-* [shopping_data.csv](Activities/02-Stu_Preparing_Data/Solved/data/shopping_data.csv)
+* [shopping_data.csv](Activities/02-Stu_Preparing_Data/Resources/shopping_data.csv)
 
-* [shopping_data_cleaned.csv](Activities/02-Stu_Preparing_Data/Solved/data/shopping_data_cleaned.csv)
+* [shopping_data_cleaned.csv](Activities/02-Stu_Preparing_Data/Resources/shopping_data_cleaned.csv)
 
 Walk through the solution and highlight the following:
 
@@ -68,8 +68,8 @@ Walk through the solution and highlight the following:
 
 * Finally, the cleaned DataFrame is saved as a `CSV` file for being used on forthcomming activities.
 
-  ```python
-  file_path = "data/shopping_data_cleaned.csv"
+```python
+  file_path = Path("../Resources/shopping_data_cleaned.csv")
   df_shopping.to_csv(file_path, index=False)
   ```
 
