@@ -1,10 +1,10 @@
 ### 2. Students Do: Cryptography Use Cases (10 min)
 
-* **Files:**
-
-  * [README.md](Activities/03-Stu_Cryptography_Use_Cases/README.md)
-
 Students will be researching some applications of cryptography in the wild.
+
+**Files:**
+
+* [README.md](Activities/03-Stu_Cryptography_Use_Cases/README.md)
 
 Have TAs circulate around the class and ensure students are not stuck. This should be a generally easy going activity.
 
