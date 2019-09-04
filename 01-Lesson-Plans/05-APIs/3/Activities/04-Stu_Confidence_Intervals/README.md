@@ -1,6 +1,6 @@
 # Archery Target Hits
 
-In this activity, an archery master wants to assess the long-term performance of one of his new archers when it comes to hitting the target. The new archer has a shot accuracy of approximately `20%` and therefore on average hits the target `1` free throws for every `5` shots. The archery master wants to know what is the range of hits the beginner archer is likely to hit for a `95%` confidence interval.
+In this activity, an archery master wants to assess the long-term performance of one of his beginner archers when it comes to hitting the target. The beginner archer has a shot accuracy of approximately `20%` and therefore on average hits the target `1` time for every `5` shots. The archery master wants to know what the range of target hits (out of `5` shots) the beginner archer is likely to make for a `95%` confidence interval.
 
 Create a Monte Carlo simulation with `1000` simulations of `10` free throws to analyze the player's frequency distribution of made free throws and the corresponding probability distribution of made free throws to determine the likelihood of the player making `9-10` free throws in a session.
 
