@@ -32,7 +32,7 @@ Create a Monte Carlo simulation with `1000` simulations of `5` shots to analyze 
 
   * Use the `quantile` function and create a `95%` confidence interval range from the DataFrame of hit targets per simulation.
 
-  * Plot the upper and lower bounds of the `95%` confidence interval over the probability distribution histogram of hit targets out of `5` shots.
+  * Plot the upper and lower bounds of the `95%` confidence interval over the probability distribution histogram of hit targets.
 
 ## Hints
 
