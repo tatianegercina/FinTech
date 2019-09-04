@@ -17,7 +17,7 @@ print("What are my first two items on the list?")
 print(groceries[:2])
 print()
 
-# Find the last four items on the list
+# Find the last five items on the list
 print("What are all my items except for the first two on the list?")
 print(groceries[2:])
 print()

@@ -14,7 +14,7 @@ Create a Monte Carlo simulation with `1000` simulations of `10` free throws to a
 
     * Set variables for the desired number of simulations and free throws.
 
-    * Create a list `throw` consisting of the strings `made` and `missed`
+    * Create a list `throw` consisting of the strings `made` and `missed`.
 
     * Create an empty `pandas` DataFrame to hold the results of each simulation.
 
@@ -34,4 +34,7 @@ Create a Monte Carlo simulation with `1000` simulations of `10` free throws to a
 
 ## Hints
 
-* To learn more about histograms and probability distributions, read more [here](https://learnche.org/pid/univariate-review/histograms-and-probability-distributions)
+* To learn more about histograms and probability distributions, read more [here](https://learnche.org/pid/univariate-review/histograms-and-probability-distributions).  
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+

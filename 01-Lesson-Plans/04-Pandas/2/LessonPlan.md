@@ -14,6 +14,9 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * Overall, this should be a fun day for students and it will help them build confidence with their programming skills. Be sure to offer a lot of support and encouragement to beginners.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [4.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=11bb2bf6-5fe1-44c4-9843-aaaa003fb3f4) Note that this video may not reflect the most recent lesson plan.
+
 ---
 
 ### 1. Instructor Do: Welcome Students (5 min)

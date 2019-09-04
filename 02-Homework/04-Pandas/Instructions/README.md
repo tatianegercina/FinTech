@@ -46,8 +46,6 @@ Analyze the data to see if any of the portfolios outperform the stock market (i.
 
 1. Calculate and plot cumulative returns. Does any portfolio outperform the S&P 500?
 
-2. Calculate the cumulative terms by month and year. What were the best returns in 2017? What were the best returns for December 2018?
-
 #### Risk Analysis
 
 1. Create a box plot for each of the returns. Which box has the largest spread? Which has the smallest spread?
@@ -90,6 +88,8 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 
 ## Hints
 
+* After reading each CSV file, don't forget to sort each DataFrame in ascending order by the Date using `sort_index`. This is especially important when working with time series data as we want to make sure Date indexes go from earliest to latest.
+
 * The Pandas functions used in class this week will be useful for this assignment.
 
 * Be sure to use `head()` or `tail()` when you want to look at your data but don't want to print to a large DataFrame.
@@ -106,4 +106,4 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

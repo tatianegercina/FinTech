@@ -13,6 +13,8 @@ Today's lesson plan introduces students to the requirements for Project 1, as we
 
 #### Instructor Notes
 
+The instructional staff should work together prior to class to identify the groups for this project. It often works best to pair students with similar skill levels so that all students are able to contribute equally to the project. 
+
 It is highly recommended to request project proposals from students and then approve their proposals. Students will often struggle with finding data sources and in setting realistic goals, so use this as an opportunity to guide them to unique, interesting, and achievable projects.
 
 Install the appropriate text editor plugin to help visualize Git histories: [Git History](https://github.com/DonJayamanne/gitHistoryVSCode) in VS Code, [Git Time Machine](https://github.com/pidu/git-timemachine) for Sublime Text, and [git-time-machine](https://atom.io/packages/git-time-machine) for Atom.
@@ -233,7 +235,7 @@ Point out that students will need a project to work on if they're to be able to 
 
 Step through the [slideshow](), and explain the requirements for Project 1.
 
-* Be sure to slack out the Project's [Technical Requirements](../../03-Projects/Project-01/TechnicalRequirements.md); the [Project Guidelines](../../03-Projects/Project-01/ProjectGuidelines.md); the [Presentation Requirements](../../03-Projects/Project-01/PresentationRequirements.md); the [Presentation Guidelines](../../03-Projects/Project-01/PresentationGuidelines.md) after going through the slides.
+* Be sure to slack out the Project's [Technical Requirements](../../../03-Projects/Project-01/TechnicalRequirements.md); the [Project Guidelines](../../../03-Projects/Project-01/ProjectGuidelines.md); the [Presentation Requirements](../../../03-Projects/Project-01/PresentationRequirements.md); the [Presentation Guidelines](../../../03-Projects/Project-01/PresentationGuidelines.md) after going through the slides.
 
 Take a moment to address any remaining student questions before dismissing the class for break.
 

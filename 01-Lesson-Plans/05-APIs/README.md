@@ -1,9 +1,5 @@
 ## Unit 5 - APIs
 
-### Overview
-
-This week we will cover...
-
 ### Lesson Plans
 
 * [5.1 - Lesson Plan](1/LessonPlan.md)
@@ -14,19 +10,7 @@ This week we will cover...
 
 ### Homework
 
-* [Instructions](Homework/Instructions/README.md)
-
-* [Solutions](Homework/Solutions/)
-
-* [Solution Video](Homework/Solutions/HomeworkVideo.md)
-
-* [Grading Rubric](Homework/GradingRubric.md)
-
-### Supplemental
-
-* [Student Guide](Supplemental/StudentGuide.md)
-
-* [Video Guide](Supplemental/VideoGuide.md)
+* [Instructions](../../02-Homework/05-APIs/Instructions/README.md)
 
 - - -
 

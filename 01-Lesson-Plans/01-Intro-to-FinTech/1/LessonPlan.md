@@ -32,11 +32,14 @@ By the end of class, students will:
 
 * Please reference our [Student FAQ](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [1.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=45af7a90-448b-4d8a-a37a-aa94015e8a75) Note that this video may not reflect the most recent lesson plan.
+
 ---
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.1 Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g54ab1329fa_1_44).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.1 Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
 
@@ -48,9 +51,9 @@ By the end of class, students will:
 
 ### 1. Instructor Do: Introductions (40 min)
 
-This first part of the lesson will be led by the Student Success Manager (SSM). They will discuss attendance and graduation requirements, as well as share opportunities for students to get support.
+This first part of the lesson will be led by the student success manager (SSM). They will discuss attendance and graduation requirements, as well as share opportunities for students to get support.
 
-During this time, everyone associated with the course will introduce themselves to break the ice and get to know each other. This includes Student Success Managers (SSMs), university staff, program directors, career directors, the instructional staff (instructors and TAs), and the students.
+During this time, everyone associated with the course will introduce themselves to break the ice and get to know each other. This includes SSMs, university staff, program directors, career directors, the instructional staff (instructors and TAs), and the students.
 
 Feel free to answer the questions below as a way to introduce yourself. However, be sure to keep your introduction brief, as there is a great deal to cover in this first class.
 
@@ -68,7 +71,7 @@ Feel free to answer the questions below as a way to introduce yourself. However,
 
 In this section, you will discuss the concept of FinTech as well as provide some information about the FinTech industry.
 
-**File:** [Defining FinTech Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_6_0)
+**File:** [Defining FinTech Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit?usp=sharing)
 
 Open the slideshow and review today's objectives. (Slide 3)
 
@@ -80,7 +83,7 @@ Then move on to the first topic of the day: defining FinTech. Review the slides 
 
 * What defines a FinTech company?
 
-  **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through backend network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups:
+  **Answer:** A FinTech company is a financial services company that seeks to utilize technology to drive more efficient operation, either through back-end network infrastructure or consumer engagement. Market analysis more broadly categorizes FinTech companies as falling in one of the following groups:
 
   * Infrastructure providers
 
@@ -130,21 +133,21 @@ Once all volunteers have presented, tie everything together by explaining the fo
 
 In this section, provide an overview of the topics and technologies used in the course, as well the timeline for each topic or unit.
 
-**File:** [Course Overview Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5d56f58a01_0_34)
+**File:** [Course Overview Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_6)
 
 Use the slideshow to go over the course agenda and timeline. (Slides 10–13)
 
-* **Weeks 1–2:** Students will be introduced to the world of FinTech and the current financial landscape. Then, they will dive into the financial modeling methods of the current industry-standard tool, Microsoft Excel.
+* **Weeks 1–2:** Students will be introduced to the world of FinTech and the current financial landscape.
 
-* **Weeks 3–7:** While useful and easy to grasp, Excel is limited in its technical capabilities compared to a full-fledged progamming language like Python. This is why, over the next several weeks, students will learn the basics of Python as well as how to use additional libraries and tools such as Pandas, APIs, Plotly, and SQL databases, all within the context of financial analysis.
+* **Weeks 3–7:** While useful and easy to grasp, Excel is limited in its technical capabilities compared to a full-fledged programming language like Python. This is why, over the next several weeks, students will learn the basics of Python as well as how to use additional libraries and tools such as Pandas, APIs, Plotly, and SQL databases, all within the context of financial analysis.
 
 * **Weeks 8–9** Students are tasked with their first project.
 
-* **Weeks 10–15:** Companies are becoming more and more data-driven in their decision making. Through machine learning, students will learn how to interpret and create financial models as well as automate the execution of such models. Topics include algorithmic trading, robo-advisors, time series analysis, risk management, and Cloud ML technologies.
+* **Weeks 10–15:** Companies are becoming more and more data-driven in their decision-making. Through machine learning, students will learn how to interpret and create financial models as well as automate the execution of such models. Topics include algorithmic trading, robo-advisors, time series analysis, risk management, and Cloud ML technologies.
 
 * **Weeks 16–17:** Students are tasked with their second project.
 
-* **Weeks 18–22:** With its benefits of security, speed, and decentralized peer-to-peer validation, blockchain technology has already become more efficient than tradtional finance in the realm of transactions and third-party validation. Students will learn about blockchain fundamentals, smart contracts using Solidity, and how to develop blockchain applications on the popular Ethereum blockchain network.
+* **Weeks 18–22:** With its benefits of security, speed, and decentralized peer-to-peer validation, blockchain technology has already become more efficient than traditional finance in the realm of transactions and third-party validation. Students will learn about blockchain fundamentals, smart contracts using Solidity, and how to develop blockchain applications on the popular Ethereum blockchain network.
 
 * **Weeks 23–24:** Students are tasked with their final project.
 
@@ -158,9 +161,9 @@ Answer any questions before moving on.
 
 Provide students with some encouragement and tips for overcoming the mental frustrations they will more than likely face throughout the course.
 
-**File:** [Tips Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_6_12)
+**File:** [Tips Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_12)
 
-Open the next series of slides and emphasize the following points. (Slides 19–25).
+Open the next series of slides and emphasize the following points. (Slides 19–25)
 
 * Embrace your inner toddler. Recognizing how little you know is a first step toward growth as a learner. Hard work, humility, and a relentless desire to improve are essential for succeeding in this program.
 
@@ -168,9 +171,9 @@ Open the next series of slides and emphasize the following points. (Slides 19–
 
 * Due to the challenging nature of this course, there will be many moments where students will doubt themselves. Remember that everyone starts as a beginner, including the instructor. Also remember why you were admitted to this program in the first place: you have what it takes to succeed.
 
-* Form a community with your classmates. Even though challenging times are up ahead, students have a solid support system: their instructor, TAs, student success manager, and,perhaps most importantly, each other. When you're frustrated or stuck, remember that we're all in this together. Seek help when you need it and lift each other up.
+* Form a community with your classmates. Even though challenging times are up ahead, students have a solid support system: their instructor, TAs, student success manager, and, perhaps most importantly, each other. When you're frustrated or stuck, remember that we're all in this together. Seek help when you need it and lift each other up.
 
-* Lastly, learning is supposed to be frustrating! It's a process, so stick with it. Things only get easier when we choose to embrace the difficulty and put in the hours to succeed. 
+* Lastly, learning is supposed to be frustrating! It's a process, so stick with it. Things only get easier when we choose to embrace the difficulty and put in the hours to succeed.
 
 * Most importantly, celebrate your successes!
 
@@ -200,17 +203,17 @@ In this activity, students will reflect on how the current state of the FinTech 
 
 Quickly explain to the class the following:
 
-* *Rip Van Winkle* is a short story by the American author Washington Irving, first published in 1819. It follows a Dutch-American villager in colonial America named Rip Van Winkle, who falls asleep in the Catskill Mountains and wakes up 20 years later, completely missing the events of the American Revolution.
+* *Rip Van Winkle* is a short story by the American author Washington Irving, first published in 1819. It follows a Dutch American villager in colonial America named Rip Van Winkle who falls asleep in the Catskill Mountains and wakes up 20 years later, completely missing the events of the American Revolution.
 
 * We'll apply the Rip Van Winkle story to FinTech by imagining if a financial analyst who fell asleep in the year 1999 and woke up today. What would he or she find most surprising about the current finance world?
 
 * Students should define areas of finance that have been deeply affected by technology, naming specific companies, products, or innovations that would be surprising to a financial analyst from 1999.
 
-* Students should form groups of 3 or 4. Each group will present their thoughts during the review portion of this activity.
+* Students should form groups of three or four. Each group will present their thoughts during the review portion of this activity.
 
 ---
 
-### 10. Instructor Do: Review Rip Van Winkle Though Exercise (5 min)
+### 10. Instructor Do: Review Rip Van Winkle Thought Exercise (5 min)
 
 In this review portion of the previous activity, students will present their reflections based on the Rip Van Winkle thought experiment.
 
@@ -220,11 +223,11 @@ In this review portion of the previous activity, students will present their ref
 
   * Automation
 
-  * Big Data
+  * Big data
 
-  * Mobile Infrastructure
+  * Mobile infrastructure
 
-  * Cloud Infrastructure
+  * Cloud infrastructure
 
 ---
 
@@ -232,7 +235,7 @@ In this review portion of the previous activity, students will present their ref
 
 In this section, engage students with a facilitated discussion about why FinTech has become so prevalent today.
 
-**File:** [The Rise of FinTech Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_6_21)
+**File:** [The Rise of FinTech Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_21)
 
 Open the slideshow and use the slides to help guide your discussion, focusing on the following talking points. (Slides 27–34)
 
@@ -254,9 +257,9 @@ Answer any questions before moving on.
 
 ### 12. Student Do: Alpacalypse Now (15 min)
 
-In this activity, students will once again break off into groups of 2 to 4 to define and articulate the challenges faced by the Altruistic Alpacas charity. They will need to list at least 5 financial or technical challenges associated with each of the 5 core problem areas defined by the client.
+In this activity, students will once again break off into groups of two to four to define and articulate the challenges faced by the Altruistic Alpacas charity. They will need to list at least five financial or technical challenges associated with each of the five core problem areas defined by the client.
 
-**File:** [Alpacalypse Now Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_5_0)
+**File:** [Alpacalypse Now Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_27)
 
 **Notes:**
 
@@ -266,7 +269,7 @@ In this activity, students will once again break off into groups of 2 to 4 to de
 
 * The key to executing this exercise in the classroom is to ensure that students thinking outside their sphere of knowledge as well as thinking deeply about each problem.
 
-* Set a time for 25 minutes and allow students to discuss their options. Remind them that they should be prepared to discuss these issues with the class. 
+* Set a time for 25 minutes and allow students to discuss their options. Remind them that they should be prepared to discuss these issues with the class.
 
 * As students work, you and your TAs should walk around the classroom and listen to student discussions. When appropriate, nudge them to think more critically. Many students may rely on their personal backgrounds, but this is a good time to think outside the box. For instance:
 
@@ -278,13 +281,13 @@ In this activity, students will once again break off into groups of 2 to 4 to de
 
 ### 13. Instructor Do: Review Alpacalypse Now (15 min)
 
-**File:** [Review Alpacalypse Now Slides](https://docs.google.com/presentation/d/1YzeZp2dDNlMICPekQAvDXdekYBm0W6RC7lxPBM3Rt9I/edit#slide=id.g5ed7add082_5_39)
+**File:** [Review Alpacalypse Now Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_5_39)
 
 When time is up, ask a few groups to share some of the challenges they identified. Consider opening a notepad file or using the whiteboard to track a running list of the challenges for each problem area.
 
 Once you have a list of challenges, use the slides to break down some of the potential solutions to these problems. (Slides 43–61)
 
-Tell students that the following:
+Tell students the following:
 
 * The slides do not represent a comprehensive list of solutions, but they should provide some ideas about how FinTech can be used to address various challenges.
 
@@ -304,7 +307,7 @@ In this activity, instructors will review the Unit 1 homework assignment with th
 
 Open the [homework instructions](../../../02-Homework/01-FinTech/Instructions/README.md) and briefly discuss the task and due date.
 
-  **Note:** As a general rule, all homework is due one week after the last day of the unit is covered.
+**Note:** As a general rule, all homework is due one week after the last day of the unit is covered.
 
 Briefly talk through the process of submitting homework and let students know they will be covering everything they need to know for this assignment in the next two classes.
 

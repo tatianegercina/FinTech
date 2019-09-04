@@ -25,6 +25,9 @@ By the end of class, students will be able to:
 
 * Have your TAs refer to the `Workshop Time Tracker` to help keep track of time; more important than the Time Tracker is that students have adequate time to work through interview problems.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [4.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a7bf65da-a346-4846-b9c2-aab300263be1) Note that this video may not reflect the most recent lesson plan.
+
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
