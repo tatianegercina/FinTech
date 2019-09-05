@@ -417,7 +417,7 @@ Students will now get with a partner and sign and verify messages between each o
 
 Have TAs circulate through the class and ensure that students are successfully verifying messages.
 
-### 15. Instructor Do: Digital Signatures Review (5 min)
+### 15. Instructor Do: Digital Signatures Review (10 min)
 
 Ask the students the following questions:
 
@@ -431,6 +431,12 @@ Explain to the students:
 
   * Digital signatures in combination with hashing and encryption can be a powerful way to ensure a message is
     delivered securely (without other parties snooping in), and that the right message got there without modification.
+
+Ask the students (critical):
+
+  * So what do transactions on a blockchain and digital signatures have in common?
+
+    **Answer**: A transaction is just a signed message authorizing transfer of funds, hence cannot be modified and can be verified
 
 Tell the students to start thinking about the different ways you might use these cryptographic techniques
 in the context of blockchain and cryptocurrencies.
