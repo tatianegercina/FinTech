@@ -10,10 +10,10 @@ In this activity, you will attempt to identify whether a linear relationship exi
 
 * Create a linear regression model using Scikit-Learn.
 
+* Fit the model to the data.
+
+* Make predictions and save the results in a variable called `predicted_y_values`
+
+* Plot the line of best fit along with the data (see starter code for instructions)
+
 * Obtain the slope and the y-intercept, and r-square values of the model.
-
-* Use the model to obtain predicted y-values based on x.
-
-* Create a plot of the best fit line.
-
-
