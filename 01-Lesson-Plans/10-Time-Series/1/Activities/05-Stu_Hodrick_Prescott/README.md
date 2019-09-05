@@ -8,12 +8,24 @@
 
 ## Instructions
 
+## Fetching FRED data
+
 * Use pandas's web datareader to pull in data from FRED as a pandas data frame. You do not need an API key.
 
 * See the documentation for an example of retrieving data from FRED: [https://pandas-datareader.readthedocs.io/en/latest/remote_data.html](https://pandas-datareader.readthedocs.io/en/latest/remote_data.html).
 
-* Retrieve GDP data from FRED (keyword `GDP`) from 2004 to 2010, and separate the data into trend and non-trend components with the H-P filter. Plot the results.
+### Hodrick-Prescott Filter
+
+* Use the DataReader to fetch the GDP data from FRED using the start and end dates. 
+
+* Plot the raw GDP data as a line plot.
+
+* Use the `hpfilter` function to decompose the GDP column into the trend and noise components. 
+
+* Plot the GDP trend data as a line plot.
+
+* Plot the GDP noise as a line plot. 
 
 * Repeat the processes for inflation (keyword `CPIAUCNS`) and job count (keyword `PAYEMS`).
 
-* For at least one of these data sets, plot the moving and exponentially-weighted moving averages. How do the results compare to results of the H-P filter?
+* For at least one of these data sets, plot the exponentially-weighted moving averages. How do the results compare to results of the H-P filter?
