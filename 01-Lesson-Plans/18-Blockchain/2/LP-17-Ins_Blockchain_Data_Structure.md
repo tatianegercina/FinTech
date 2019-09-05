@@ -34,4 +34,8 @@ Click `Mine` in the first block to change it green and to regenerate the hashes:
 
 Click on `Mine` in the second block to demonstrate.
 
+![mining gif](Images/blockchain-mining.gif)
+
+* Point out that each block is dependent on each other since the hashes are chained.
+
 Now, it's time to have the students try it for themselves.
