@@ -1,4 +1,4 @@
-# 10.1 Lesson Plan: An Introduction to Time Series
+## 10.1 Lesson Plan: An Introduction to Time Series
 
 ### Overview
 
@@ -344,7 +344,7 @@ Next, explain that the code below decomposes the liquor sales data.
   decomposed = seasonal_decompose(df['liquor_sales'], model='multiplicative')
   ```
 
-* The model is specified as multiplicative because the seasonal flunctation (the spikes) increases with the series.
+* The model is specified as multiplicative because the seasonal fluctuation (the spikes) increases with the series.
 
 Explain that the time series is decomposed visually by the library:
 
@@ -396,7 +396,7 @@ Explain that an exponentially-weighted moving average (EWMA) is similar to a mov
 
 Introduce the topic of the Hodrick-Prescott filter:
 
-* It is a mathematical function used to separate short-term fluctations, such as ones that occur daily, from longer-term trends.
+* It is a mathematical function used to separate short-term fluctuations, such as ones that occur daily, from longer-term trends.
 
 * It decomposes a time series into trend and non-trend components.
 
@@ -445,13 +445,13 @@ Finally, show the plots of the trend and noise components after filtering:
 
 In this activity, students will use the Hodrick-Prescott filter to identify macroeconomic trends in the United States in the period from 2004 to 2010.
 
-**File:**
+**Files:**
 
-  * [README.md](Activities/05-Stu_Hodrick_Prescott/README.md)
+* [README.md](Activities/05-Stu_Hodrick_Prescott/README.md)
 
-  * [FRED.ipynb](Activities/05-Stu_Hodrick_Prescott/Unsolved/FRED.ipynb)
+* [FRED.ipynb](Activities/05-Stu_Hodrick_Prescott/Unsolved/FRED.ipynb)
 
-### 9. Instructor Do: You've Got a FRED Activity Review (10 min)
+### 9. Instructor Do: Review You've Got a FRED (10 min)
 
 **Files:**
 
@@ -492,7 +492,7 @@ If time allows, take a moment to compare and contrast the H-P filter:
 
 **File:**
 
-  * [linear_regression.ipynb](Activities/06-Ins_Linear_Regression/Solved/linear_regression.ipynb)
+* [linear_regression.ipynb](Activities/06-Ins_Linear_Regression/Solved/linear_regression.ipynb)
 
 In this activity, you will explain linear regression to the class and demonstrate using Scikit-learn to create a linear regression model.
 
