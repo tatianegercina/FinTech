@@ -9,16 +9,16 @@ you've just learned.
 
 2. Type some data into a block:
 
-![data](../../Images/blockchain-data.png)
+![data](Images/blockchain-data.png)
 
-3. Notice that the chain is now "broken" from that point onward.
+1. Notice that the chain is now "broken" from that point onward.
    Click `Mine` on the block you modified. This should regenerate the block's hashes and allow you to move on.
 
-![mining](../../Images/blockchain-mining.png)
+![mining](Images/blockchain-mining.png)
 
-4. Mine the rest of the chain to rebuild it.
+1. Mine the rest of the chain to rebuild it.
 
-5. Now, modify a block that is further in the chain, like block 3.
+2. Now, modify a block that is further in the chain, like block 3.
 
 Answer some questions to yourself:
 
