@@ -1,4 +1,4 @@
-# 10.1 Lesson Plan: An Introduction to Time Series (6:30 PM)
+# 10.1 Lesson Plan: An Introduction to Time Series
 
 ### Overview
 
@@ -76,15 +76,11 @@ To add the slides to the student-facing repository, download the slides as a PDF
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-The time tracker for this lesson can be viewed here: [Time Tracker.]()
+The time tracker for this lesson can be viewed here: [Time Tracker.](TimeTracker.xlsx)
 
 ### 1. Instructor Do: Welcome (10 min)
 
 The instructor will kick off the class by welcoming students and briefly introducing the concepts and skills for Unit 10 and today's class. The focus of this activity will be introducing students to **time series analysis**, **machine learning**, and how the two can be used together to create predict trends in various financial markets (i.e. stocks and real estate).
-
-**Files:**
-
-* [welcome-slides]()
 
 Welcome the students back to class. Communicate to them that this unit will commence their journey into the world of time series analysis and machine learning.
 
@@ -134,7 +130,7 @@ If there is time left over, illustrate that the marriage of **time series analys
 
 Ask students if there are any questions before moving forward. Answer one or two, and then ask students to save and bring up any additional questions during the next review activity.
 
-### 2. Instructor Do: Review Homework (10 min)
+### 2. Instructor Do: Review Homework (5 min)
 
 The instructor will provide a brief walk through of the homework solution. Time should be dedicated to allowing students ask a few questions about assignment.
 
@@ -262,7 +258,7 @@ In this activity, students will practice the basics of time series manipulation 
 
   * [Activities/02-Stu_Time_Series_Basics/Unsolved/amazon.csv](Activities/02-Stu_Time_Series_Basics/Unsolved/amazon.csv)
 
-### 5. Instructor Do: Time Series Basics Activity Review (10 min)
+### 5. Instructor Do: Time Series Basics Activity Review (5 min)
 
 **File:**
 
@@ -486,7 +482,13 @@ If time allows, take a moment to compare and contrast the H-P filter:
 
 * In this data set, for the most part, the EWMA seems to produce a fairly similar result as the H-P filter, though the latter is somewhat smoother.
 
-### 10. Instructor Do: Introduction to Linear Regression (15 min)
+- - -
+
+### 10. BREAK (15 min)
+
+- - -
+
+### 11. Instructor Do: Introduction to Linear Regression (15 min)
 
 **File:**
 
@@ -613,12 +615,6 @@ Do not dwell on the r-square value, but explain that there is a strong relations
   ![Images/linear_regression05.png](Images/linear_regression05.png)
 
   * We will explore measures of accuracy in greater detail in an upcoming activity.
-
-- - -
-
-### 11. BREAK (15 min)
-
-- - -
 
 ### 12. Students Do: House Regression (10 min)
 
