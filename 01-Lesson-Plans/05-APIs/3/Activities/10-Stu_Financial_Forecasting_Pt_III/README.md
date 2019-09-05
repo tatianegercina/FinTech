@@ -48,6 +48,6 @@ Using the starter file provided, pick up where part II left off and walk through
 
 * This is a culminating activity that should test all portions of today's class. Therefore, walk through the process step-by-step and review instructor activities for technical clues on how to complete the code.
 
-
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
