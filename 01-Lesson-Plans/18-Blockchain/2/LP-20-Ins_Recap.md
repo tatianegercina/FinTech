@@ -1,4 +1,4 @@
-### 20. Instructor Do: Recap / Where's the crypto in crypto? (15 min)
+### 20. Instructor Do: Recap / Where's the crypto in crypto? (10 min)
 
 Now that the students have a fundamental understanding of cryptography, and how a blockchain is built
 using these concepts and data structures, it's time to review and put a cap on the day.
@@ -33,3 +33,7 @@ Ask the students the following questions:
   * Where is the "chain" in blockchain?
 
     * **Answer**: Blocks are connected via a chain of hashes, giving the structure it's name and security.
+
+Remind the students that cryptography is a tough subject that is taught usually in a Computer Science degree and that they
+should be proud for learning it. It is something that few people understand but powers many systems that keep our information
+secure every day.
