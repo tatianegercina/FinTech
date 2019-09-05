@@ -254,9 +254,9 @@ In this activity, students will practice the basics of time series manipulation 
 
 **Files:**
 
-  * [Activities/02-Stu_Time_Series_Basics/README.md](Activities/02-Stu_Time_Series_Basics/README.md)
+* [Activities/02-Stu_Time_Series_Basics/README.md](Activities/02-Stu_Time_Series_Basics/README.md)
 
-  * [Activities/02-Stu_Time_Series_Basics/Unsolved/amazon.csv](Activities/02-Stu_Time_Series_Basics/Unsolved/amazon.csv)
+* [Activities/02-Stu_Time_Series_Basics/Unsolved/amazon.csv](Activities/02-Stu_Time_Series_Basics/Unsolved/amazon.csv)
 
 ### 5. Instructor Do: Time Series Basics Activity Review (5 min)
 
@@ -269,32 +269,28 @@ Quickly walk through the basic steps of working with a time series in pandas. Us
 * The `parse_dates` and `index_col` arguments are used to format the time series index as datetime. This allows data to be sliced from the DataFrame by date ranges.
 
   ```python
-  df2 = pd.read_csv('amazon.csv', parse_dates=True, index_col='Date')
+  df2 = pd.read_csv(
+    'amazon.csv',
+    parse_dates=True,
+    index_col='Date')
   sep_2018 = df2.loc['2018-09']
   ```
 
 * Slicing data by date ranges is key to time series analysis. Data will need to be sliced and diced by different time intervals.
 
   ```python
-  df3 = df2.loc['2018-09':'2018-10']
-  df4 = df2.loc['2018 sep': '2018 oct']
+  df.loc['2018-09':'2018-10']
   ```
 
 * Time series data can be grouped using the resample function. The `resample` function will group the data using the **DateTimeIndex** and the frequency provided (i.e. weekly). This will serve as a resampling of the data. Data can be grouped weekly, monthly, etc. The `resample` function works just like the `groupby` function; however, `resample` is specific for time series data.
 
   ```python
-  weekly = df2['Close'].resample('W').mean()
+  weekly = df['Close'].resample('W').mean()
   ```
 
   ![resample.png](Images/resample.png)
 
-Finally, explain the bonus code:
-
-* The data frame was selected only for columns containing the word 'Close' by using the `str.contains()` method and the `loc[]` accessor. `df.columns.str.contains('Close')` returns an array of False and True for whether that column contains the specified keyword.
-
-  ```python
-  df3 = df2.loc[:, df.columns.str.contains('Close')]
-  ```
+Answer any remaining questions before moving on.
 
 ### 6. Instructor Do: Time Series Decomposition (10 min)
 
