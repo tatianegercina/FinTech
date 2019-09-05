@@ -54,10 +54,10 @@ Let the TAs know once you've finished the core activity. If time still remains, 
 
 The output format of an API can be changed by altering the `?format=` part of the link, or changing the extension of the target file from `json` to `csv`. See below for examples.
 
-  * Quandl -> https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json
+* Quandl -> https://www.quandl.com/api/v3/datasets/WIKI/GOOG.json
 
-  * Quandl -> https://www.quandl.com/api/v3/datasets/WIKI/GOOG.csv
+* Quandl -> https://www.quandl.com/api/v3/datasets/WIKI/GOOG.csv
 
-- - -
+---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

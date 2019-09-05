@@ -64,6 +64,6 @@ Interpolation can be achieved by using the literal `f` prefix before a string. C
 
 When extracting values from the `Draw Cards` request, an index will have to be provided to extract values whenever more than one card is returned (i.e. `drawn_cards['cards'][0]['value'] + " of " + drawn_cards['cards'][0]['suit']`).
 
-- - -
+---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
