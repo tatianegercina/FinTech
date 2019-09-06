@@ -50,7 +50,7 @@ The instructor starts class with an introduction to **classification** and its u
 
 * [Welcome Slides]()
 
-Begin the class by welcoming students back to the second week of machine learning!
+Open the 11.2 slides, and begin the class by welcoming students back to the second week of machine learning!
 
 * Explain to students that Unit 11 kicks off the second week of machine learning and advanced analytics. Highlight that this unit will focus on using machine learning algorithms and pipelines to draw conclusions and predictions about probable financial outcomes.
 
