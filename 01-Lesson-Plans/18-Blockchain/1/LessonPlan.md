@@ -466,7 +466,7 @@ but the students will be building one next unit.
 
 Ask if any students noticed the "data" field, and what it might be.
 
-  * Explain that this field is where contract calls or arbitrary strings can be stored within the transaction.
+* Explain that this field is where contract calls or arbitrary strings can be stored within the transaction.
 
 ### 14. Instructor Do: Block Explorers Demo (10 minutes)
 
