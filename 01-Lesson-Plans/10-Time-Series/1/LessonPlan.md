@@ -736,7 +736,7 @@ Explain creating dummy variables. The `pd.get_dummies()` method creates a column
 
   ![Images/ts_regression03.png](Images/ts_regression03.png)
 
-Explain the regression equation that results from the process **(Slide XXXXX)**:
+Use the slides to show the regression equation that results from the process:
 
   ![Images/regression_equation01.gif](Images/regression_equation01.gif)
 
