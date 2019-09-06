@@ -66,9 +66,9 @@ The instructor starts class with an introduction to **classification** and its u
 
 Open the 11.2 slides, and begin the class by welcoming students back to the second week of machine learning!
 
-* Explain to students that Unit 11 kicks off the second week of machine learning and advanced analytics. Highlight that this unit will focus on using machine learning algorithms and pipelines to draw conclusions and predictions about probable financial outcomes.
+* Explain to students that Unit 11 kicks off the second week of machine learning and advanced analytics. Highlight that this unit will focus on using machine learning algorithms and pipelines to draw categorical conclusions and predictions about probable financial outcomes.
 
-* Briefly explain what **classification** is. Indicate that **classification** is used to draw categorical conclusions about data. Instead of forecasting quantitative numbers, **classification** uses a binary approach to predict categorical membership (i.e. will the outcome be of type A or type B).
+* Briefly explain what **classification** is. Indicate that **classification** is used to draw categorical conclusions about data. Instead of forecasting quantitative numbers, **classification** uses a binary (**true-positive**/**true-negative**) approach to predict categorical membership (i.e. will the outcome be of type A or type B).
 
   * Communicate that **classification** models can be used to identify a loan applicant as credit worthy or a credit risk.
 
@@ -81,6 +81,8 @@ Open the 11.2 slides, and begin the class by welcoming students back to the seco
     * For example, FICO credit scoring currently uses a **classification** model for their cognitive fraud analytics platform. Classification engines have allowed the financial industry to become more proactive rather than reactive. Outcomes can be predicted with probable surety, which allows for more effective and efficient mitigation. Slack out the below link as an article of interest for students to review outside of class.
 
       * [FICO Falcon: Cognitive Fraud Analytics](https://www.fico.com/en/latest-thinking/product-sheet/fico-falcon-platform-cognitive-fraud-analytics-fraud-focused-machine-learning)
+
+* Indicate to students their mission for the remainder of this week is to build and train robust classification models in order to automate predictive analytics.
 
 If time remains, ask students emotionally guided questions to get a feel for their current emotional state and give them a space to address any points of excitement, interests, and/or concerns.
 
