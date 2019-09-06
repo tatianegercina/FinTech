@@ -6,38 +6,45 @@ This activity will demonstrate the public, borderless, and censor resistant natu
 
 ## Instructions
 
-1. Get into at least 3 groups. Each group should elect a student to create a Slack message between the rest of the group.
+* Get into 3 groups.
 
-  * One group will create and send transactions
+  * Group 1: Money senders
 
-  * One group will be a geographical region of ledger keepers. Elect one member from this group to correspond with the other group of ledger keepers.
+  * Group 2: Record keepers in the US
 
-  * One group will be a second geographical region of ledger keepers. Elect one member from this group to correspond with the other group of ledger keepers.
+  * Group 3: Record keepers in the country of their choice
 
-2. If you are a part of the group of users that will create and send transactions, you will be doing the following:
+* **Moneysenders**, you are up! Once the instructor says “go” you will:
 
-  * Create a "transaction" by typing out an object that's formatted like this, but with your own custom values:
+  1. Spread out over the class. You are all going to work individually to send transactions to members of the other two groups.
 
-```json
-{ to: "StudentA", from: "StudentB", amount: "$100", fee: "$1.00" }
-```
+  2. Then, create a "transaction" by typing out an object that's formatted like this, but with your own custom values:
 
-  * Treat this as a transaction, and send it to one student from one group of ledger keepers.
+     * `{ to: "StudentA", from: "StudentB", amount: "$100", fee: "$1.00" }`
 
-  * Create another transaction, tweaking the parameters a bit. Send it to a different student from a different ledger group.
+  3. Send the transaction to someone from Group 2 or Group 3.
 
-3. If you are part of a group of ledger keepers, you will be doing the following:
+* Finally, repeat steps 1-3 with different students, different amounts, and different fees!
 
-  * For every transaction that you receive, copy it down into a separate document outside of Slack.
+* **Record Keepers**, you are up (both Groups 2 and 3). Once the instructor says “go”, you will:
 
-  * Keep the transactions in order by the highest fee, then by the highest amount being sent.
+  * Both groups should elect ONE slacker for their group. This person will not be slacking off. Instead, they will be slacking messages back and forth with the other country!
 
-  * Once you record the transaction to your "personal ledger" you should send the transaction to the rest of the students in your group.
+  * Group 2 Slacker: Create channel called US Record Keepers and invite your group
 
-  * If you are elected to correspond with the other ledger keeper group, send the transaction to one of the students from that group as well.
+  * Group 3 Slacker: Create channel called [your country of choice] Record Keepers and invite your group
 
-4. If all of these steps are properly followed, all of the ledger keeper groups should have the same list of transactions.
+  * If anyone receives a transaction from the Moneysenders, copy and paste it into your personal slack (slack it to yourself). This will be your personal ledger.
 
-5. Compare ledgers to make sure that they are all "synchronized".
+  * Then, once you have slacked it to yourself, slack it to everyone else in your group.
 
-6. If they are not, take a note as to why. Was it because someone missed a transaction, or was a transaction actually modified?
+  * The team Slacker will be responsible for sending every transaction listed in their group channel to the other team’s Slacker, who will then share it with their group channel.
+
+* Example:
+
+Rosa is a Moneysender. Joe is the Slacker for US Record Keepers. Alec is the Slacker for China (the other country in this example). Jeremy is a member of the US Record Keepers.
+
+* Rosa sends a transaction to Jeremy.
+* Jeremy sends a copy of the transaction to himself and to his team channel, the US Record Keepers.
+* Joe sees the slack from Jeremy in the group channel and sends a copy of the transaction to Alec.
+* Alec sends a copy of the transaction to his team channel, The Chinese Record Keepers.
