@@ -8,7 +8,7 @@ In unit 11, students will dive deeper into statistics and machine learning by wo
 
 Today's class will introduce students to **classification** models by explaining what classification is and delineating the various classification models/approaches. Then, students will be taught how to use Scikit-learn to train models and make them more efficient and effective in determining probability/outcome predictions.
 
-Before students leave at the end of the class, encourage them to continue independently researching and learning more about the various ways to implement classification models, especially some of the ones not demonstrated in class (i.e. Nearest Neighbor).
+Before students leave at the end of the class, encourage them to continue independently researching and learning more about the various ways to implement classification models, especially some of the ones not demonstrated in class (i.e. neural networks).
 
 * [Ten Applications of AI to FinTech](https://towardsdatascience.com/ten-applications-of-ai-to-fintech-22d626c2fdac)
 
@@ -19,6 +19,18 @@ Before students leave at the end of the class, encourage them to continue indepe
 ### Class Objectives
 
 By the end of class, students will be able to:
+
+* Understand how to calculate and apply regression analysis to datasets.
+
+* Describe the difference between linear and non-linear data.
+
+* Demonstrate how to quantify and validate linear models.
+
+* Apply scaling and normalization as part of the data preprocessing step in machine learning.
+
+* Draw categorical conclusions from classification model output.
+
+* Identify the similarties, differences, and painpoints associated with linear regression, decision trees, ensemble learning,
 
 ### Instructor Notes
 
@@ -70,7 +82,13 @@ Open the 11.2 slides, and begin the class by welcoming students back to the seco
 
 * Briefly explain what **classification** is. Indicate that **classification** is used to draw categorical conclusions about data. Instead of forecasting quantitative numbers, **classification** uses a binary (**true-positive**/**true-negative**) approach to predict categorical membership (i.e. will the outcome be of type A or type B).
 
-  * Communicate that **classification** models can be used to identify a loan applicant as credit worthy or a credit risk.
+  * Communicate that **classification** models can be used to identify a loan applicant as credit worthy or a credit risk. Tell students that they will be learning how to perform classification using, all of which will be explained in more detail in upcoming activities.
+
+    * Logist/Linear Regression
+
+    * Support Vector Machines
+
+    * Nearest Neighbor
 
 * Highlight to students that **classification** models have drastically improved financial efforts to properly classify applicants, predict market decline, and classify fraudulent transaction or suspicious activity.
 
