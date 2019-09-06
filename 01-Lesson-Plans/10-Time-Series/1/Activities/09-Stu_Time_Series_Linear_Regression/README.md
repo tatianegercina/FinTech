@@ -1,6 +1,6 @@
-# Oil Futures Regression
+## Oil Futures Regression
 
-## Instructions
+### Instructions
 
 In this activity, you will use linear regression to predict oil futures returns with lagged oil futures returns, and to investigate seasonal effects in the pricing of oil futures.
 
