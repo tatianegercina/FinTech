@@ -793,12 +793,6 @@ Finally, if time allows, quickly demonstrate an approximate visualization of the
 
   ![Images/ts_regression04.png](Images/ts_regression04.png)
 
-  * Because of the difficulty of generating a visualization directly from a data frame of binary encodings (`X_binary_encoded`), the original data frame was grouped by day, and the mean for each day obtained.
-
-  * A new linear regression model was created with this data, and a visualization created.
-
-  * We will not go over the code, but students may wish to do so on their own time.
-
 ### 15. Students Do: Oil Futures (15 min)
 
 In this activity, students will identify seasonal effects in oil futures prices with linear regression.
