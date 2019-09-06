@@ -10,9 +10,11 @@ Today's class will introduce students to **classification** models by explaining
 
 Before students leave at the end of the class, encourage them to continue independently researching and learning more about the various ways to implement classification models, especially some of the ones not demonstrated in class (i.e. Nearest Neighbor).
 
-* [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
+* [Ten Applications of AI to FinTech](https://towardsdatascience.com/ten-applications-of-ai-to-fintech-22d626c2fdac)
 
-* [Plaid](https://dashboard.plaid.com/signup)
+* [Types of Classification Algorithms](https://medium.com/@Mandysidana/machine-learning-types-of-classification-9497bd4f2e14)
+
+* [FICO: Cognitive Fraud Analytics](https://www.fico.com/en/latest-thinking/product-sheet/fico-falcon-platform-cognitive-fraud-analytics-fraud-focused-machine-learning)
 
 ### Class Objectives
 
@@ -31,6 +33,18 @@ By the end of class, students will be able to:
   * How to train/enhance the algorithm/model
 
   * How to test algorithms/models and correctly handle false negatives and positives
+
+* This week's activities will use tools such as **imbalance-learn**, **scikit-learn**, and the **Lending Club**.
+
+  * **Imbalance-learn** and **scikit-learn** will need to be added to everyone's Python environments. Modules will need to be installed. Students can consult the [classification ecosystem install guide]() for steps on how to verify both packages have been installed correctly.
+
+  * **Lending club** will be used as a data source for this unit. Accounts will need to be created in order for data to be accessed.
+
+  * Slack out the following links to students to use as resources. There will be no time dedicated for in-class installation.
+
+    * [Imbalance-Learn](https://imbalanced-learn.readthedocs.io/en/stable/)
+
+    * [Scikit-Learn](https://scikit-learn.org/stable/)
 
 * Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. You might find that some students need additional assistance with the statistical concepts, and other students might need help with the application of machine learning models.
 
