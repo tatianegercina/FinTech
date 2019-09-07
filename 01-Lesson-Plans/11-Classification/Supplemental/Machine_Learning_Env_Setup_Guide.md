@@ -4,53 +4,13 @@ This guide serves as a step by step process for setting up and validating the to
 
 This guide will outline how to setup and verify that the following technologies are installed within the Python environment:
 
-* Scilearn-Kit
-
 * Imbalance-learn
 
-## Scikit-learn
-
-Scilearn-kit is a package that offers machine learning objects and functions that can be used with a Python environment.
-
-* Scilearn-kit is built on top of NumPy, SciPy, and Matplotlib
-
-* Scilearn-kit includes statistical functions and models that an be used out-of-the-box in order to complete predictive analytics.
-
-* Scilearn-kit can be used for:
-
-  * Classification
-
-  * Regression
-
-  * Analysis
-
-### Install Scikit-learn
-
-Scilearn-kit can be installed using the `conda install` function.
-
-* Execute the following command in a terminal to install scikit-learn.
-
-    ```shell
-    conda install -c anaconda scikit-learn
-    ```
-
-    ![scikitlearn_install.png](Images/scikitlearn_install.png)
-
-* Confirm scikit-learn was installed correctly, run the following command:
-
-    ```shell
-    conda list | grep scikit-learn
-    ```
-
-    ![confirm_sckitlearn.png](Images/confirm_sckitlearn.png)
-
-Consult the [scikit-learn](https://scikit-learn.org/stable/documentation.html) documentation for additional assistance and detail.
-
-## Imbalance-learn
+## Imbalanced-learn
 
 ### Install
 
-In order to install the `imbalance-learn` package, all of the dependencies must be satisfied. The dependencies list can be found below:
+In order to install the `imbalanced-learn` package, all of the dependencies must be satisfied. The dependencies list can be found below:
 
 * Numpy (>=1.11)
 
@@ -62,6 +22,26 @@ In order to install the `imbalance-learn` package, all of the dependencies must 
 
 * Tensorflow (optional)
 
-```shell
-conda install -c conda-forge imbalanced-learn
-```
+Open the a terminal, and execute the following commands to install `imbalanced-learn`.
+
+* Use the `conda install` command to download the `imbalanced-learn` module.
+
+  ```shell
+  conda install -c conda-forge imbalanced-learn
+  ```
+
+  ![imbalanced_learn_install.png](Images/imbalanced_learn_install.png)
+
+### Verify Installation
+
+Once the `imbalanced-learn` download is complete, verify the installation completed successfully.
+
+* Use the `conda-list` function with a `grep` argument to identify if the `imbalanced-learn` library installed successfully.
+
+  ```shell
+  conda-list | grep imbalanced-learn
+  ```
+
+### Troubleshooting
+
+It is common for challenges to be faced when installing a package/module. Follow the below steps to help troubleshoot any issue with an Ananaconda package.
