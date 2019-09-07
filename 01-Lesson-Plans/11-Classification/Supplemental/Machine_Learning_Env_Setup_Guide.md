@@ -1,10 +1,10 @@
 # Machine Learning Environment Setup Guide
 
-This guide serves as a step by step process for setting up and validating the tools required for the machine learning portion of the curriculum. Many of these tools are needed to train and test machine learning models. Without these tools, class activities and homeworks cannot be completed.
+This guide serves as a step by step process for setting up and validating the tools required for the machine learning portion of the curriculum. Many of these tools are needed to train and test machine learning models. Without these tools, class activities and code cannot be completed.
 
-This guide will outline how to setup and verify that the following technologies are installed within the Python environment:
+This guide will include installation and verification steps for the following technologies:
 
-* Imbalance-learn
+* Imbalanced-learn
 
 ## Imbalanced-learn
 
@@ -22,7 +22,7 @@ In order to install the `imbalanced-learn` package, all of the dependencies must
 
 * Tensorflow (optional)
 
-Open the a terminal, and execute the following commands to install `imbalanced-learn`.
+Open the a terminal, and execute the following command to install `imbalanced-learn`.
 
 * Use the `conda install` command to download the `imbalanced-learn` module.
 
@@ -44,7 +44,7 @@ Once the `imbalanced-learn` download is complete, verify the installation comple
 
 ### Troubleshooting
 
-It is common for challenges to be faced when installing a package/module. Follow the below steps to help troubleshoot any issue with an Anaconda package.
+It can be frustrating when packages do not install correctly. Use the below approaches to troubleshoot installation issues and get your machine learning libraries up and running!
 
 **Update Conda Environment**
 
