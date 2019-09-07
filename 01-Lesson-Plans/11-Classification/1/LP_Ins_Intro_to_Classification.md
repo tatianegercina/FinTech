@@ -1,4 +1,4 @@
-### 1. Instructor Do: Intro to Classification (0:05)
+### 1. Instructor Do: Intro to Classification (0:10)
 
 Students will receive a brief, introductory lecture outlining what **classification** is and what it is used for.
 
@@ -20,12 +20,16 @@ Navigate to the 11.1 slides, and walk through the content on the slide:
 
 * Explain to students that in the scope of machine learning, the act of **classification** takes place through a process of supervised learning, where an algorithm is used that enables an application to analyze historical data sets and learn from the data in order to predict categorical membership and future outcomes.
 
+  * Remind students that classification is used to forecast and predict financial outcomes, automate underwriting and insurance premiums, detect and categorize health issues/overall health.
+
 * Underscore to students that there are a number of libraries available that make **classification** as easy as data cleaning. All that is needed is a series of calls to several functions. Assure students that training and running a **classification** model is as simple as:
 
   1. Prepping and wrangling their data sets (used to train and fit models)
 
   2. Using machine learning libraries and functions that are already available
 
+* Highlight that there are multiple approaches to **classification**. These include **Logistic Regression**, **Nearest Neighbor**, and **Support Vector Machines**, all of which will be explained in further detail throughout the day.
+
 If time remains, let students know there's time for one question.
 
-* If there's a question, answer it, and then move onto the next activity. Assure students that the upcoming activities will shed more light on **classification** and that there will be additional time for questions.
+* If there's a question, answer it, and then move onto the next activity. Assure students that the upcoming activities will shed more light on **classification** and that there will be additional time for questions during review sessions.
