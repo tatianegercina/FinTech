@@ -50,7 +50,7 @@ It is common for challenges to be faced when installing a package/module. Follow
 
 An out-of-date Anaconda environment can create issues when trying to install new packages. Follow the below steps to update your conda environment.
 
-1. Deactivate your current conda environment. This is required in order to update the global conda environment. Be sure to quit any running applications such as Jupyter prior to deactivating the environment.
+1. Deactivate your current conda environment. This is required in order to update the global conda environment. Be sure to quit any running applications, such as Jupyter, prior to deactivating the environment.
 
     ```shell
     conda deactivate
@@ -65,13 +65,13 @@ An out-of-date Anaconda environment can create issues when trying to install new
 3. Create a fresh conda environment to use with PyViz.
 
     ```shell
-    conda create -n vizenv python=3.7 anaconda
+    conda create -n mlenv python=3.7 anaconda
     ```
 
 4. Activate the new environment.
 
     ```shell
-    conda activate vizenv
+    conda activate mlenv
     ```
 
 5. Install the **imbalanced-learn** package.
@@ -79,3 +79,5 @@ An out-of-date Anaconda environment can create issues when trying to install new
     ```shell
     conda install -c conda-forge imbalanced-learn
     ```
+
+Consult the [imbalanced-learn](https://imbalanced-learn.readthedocs.io/en/stable/) documentation for additional information about the **imbalanced-learn** library.
