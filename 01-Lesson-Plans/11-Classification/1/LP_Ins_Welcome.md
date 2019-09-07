@@ -104,6 +104,10 @@ Open the 11.2 slides, and begin the class by welcoming students back to the seco
 
 If time remains, ask students emotionally guided questions to get a feel for their current emotional state and give them a space to address any points of excitement, interests, and/or concerns.
 
+* **Machine learning** can be used to automate financial pipelines, forecast time series data and market volatility, predict fraud, analyze sentiment and parse documents, and automate day trading and make investment recommendations. But what exactly is **machine learning**?
+
+  * **Answer** Machine learning is an approach to programming that leverages libraries that provide statistical algorithms and libraries. The machine learning community has developed tried and tested statistical libraries (like **scikit-learn** and **imbalanced-learn**) that offer statistical functions for algorithmic and statistical modeling.
+
 * Last week, you used time series analysis techniques to forecast market returns and volatility. This week we will be exploring **classification** and predicting categorical outcomes. What are you excited about to learn next?
 
   * **Answer** How to use a **classification** model to predict fraudulent transactions
