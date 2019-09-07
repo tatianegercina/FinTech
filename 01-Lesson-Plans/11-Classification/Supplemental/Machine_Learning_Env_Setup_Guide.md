@@ -10,7 +10,7 @@ This guide will outline how to setup and verify that the following technologies 
 
 ### Install
 
-In order to install the `imbalanced-learn` package, all of the dependencies must be satisfied. The dependencies list can be found below:
+In order to install the `imbalanced-learn` package, all of the dependencies must be satisfied. These dependencies come packaged with every Anaconda install/distribution. The dependencies list can be found below for reference.
 
 * Numpy (>=1.11)
 
@@ -44,4 +44,38 @@ Once the `imbalanced-learn` download is complete, verify the installation comple
 
 ### Troubleshooting
 
-It is common for challenges to be faced when installing a package/module. Follow the below steps to help troubleshoot any issue with an Ananaconda package.
+It is common for challenges to be faced when installing a package/module. Follow the below steps to help troubleshoot any issue with an Anaconda package.
+
+**Update Conda Environment**
+
+An out-of-date Anaconda environment can create issues when trying to install new packages. Follow the below steps to update your conda environment.
+
+1. Deactivate your current conda environment. This is required in order to update the global conda environment. Be sure to quit any running applications such as Jupyter prior to deactivating the environment.
+
+    ```shell
+    conda deactivate
+    ```
+
+2. Update conda.
+
+    ```shell
+    conda update conda
+    ```
+
+3. Create a fresh conda environment to use with PyViz.
+
+    ```shell
+    conda create -n vizenv python=3.7 anaconda
+    ```
+
+4. Activate the new environment.
+
+    ```shell
+    conda activate vizenv
+    ```
+
+5. Install the **imbalanced-learn** package.
+
+    ```shell
+    conda install -c conda-forge imbalanced-learn
+    ```
