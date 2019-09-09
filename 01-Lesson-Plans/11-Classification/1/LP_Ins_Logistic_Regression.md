@@ -1,4 +1,4 @@
-### 2. Instructor Do: Logistic Regression (10 mins)
+### 2. Instructor Do: Making Predictions with Logistic Regression (10 mins)
 
 Having been introduced to classification, students will now receive a demonstration of how to use logistic regression to make linear predictions for categorical outcomes. This demo will contain two parts: a brief explanation of preprocessing and a more in-depth explanation of model fitting and execution.
 
