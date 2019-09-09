@@ -1,4 +1,6 @@
-### 3. Students Do: Predict Diabetes (15 mins)
+### 3. Students Do: Predicting Diabetes (15 mins)
+
+In this activity, students will use the **sklearn** library to execute **logistic regression** models in order to predict whether or not an individual has diabetes. Students will leverage the material covered in the corresponding instructor demo activity to complete this MSMD activity.
 
 **Instructions:**
 
@@ -6,9 +8,9 @@
 
 **Files:**
 
-* [Starter Notebook](Activities/02-Stu_Diabetes/Unsolved/diabetes_lr.ipynb)
+* [diabetes_lr.ipynb](Activities/02-Stu_Diabetes/Unsolved/diabetes_lr.ipynb)
 
-### 4. Instructor Do: Review Diabetes (10 mins)
+### 4. Instructor Do: Predicting Diabetes Activity Review (10 mins)
 
 **Files:**
 
