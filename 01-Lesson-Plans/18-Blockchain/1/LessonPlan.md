@@ -120,7 +120,7 @@ Ask them if they have questions. Then, break down the definition.
 
 ### 3. Instructor Do: The Importance of Blockchain (10 min)
 
-For this activity, the instructor will lead a formal lecture regarding what blockchain technology is and why it’s important.
+For this activity, the instructor will lead a formal discussion regarding what blockchain technology is and why it’s important.
 
 First, navigate to the slides and begin with the "Bank CEO" example:
 
