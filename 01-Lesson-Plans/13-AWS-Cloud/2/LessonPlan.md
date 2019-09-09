@@ -271,17 +271,56 @@ In this activity, students will learn how a machine learning model is created, t
 
 **Files:**
 
-* [TDB]()
+* [rainfall_forecast.ipynb](Activities/03-Ins_SageMaker_Deployment/Unsolved/rainfall_forecast.ipynb)
 
-* Open the following Jupyter Notebook (__TBD: or a custom/similar notebook with modified steps__):
+* [x_austin_final.csv](Activities/03-Ins_SageMaker_Deployment/Resources/x_austin_final.csv)
 
-* From the main `JupyterLab` view, select `SageMaker Examples`, then scroll to `Introduction to Amazon Algorithms` and find: `linear_learner_mnist.ipynb`
+* [y_austin_final.csv](Activities/03-Ins_SageMaker_Deployment/Resources/y_austin_final.csv)
 
-![SageMaker Sample Notebooks](Images/11-examples-linear-lerner.png)
+Explain students, that now, you are going to demo how they can deploy a machine learning model using the built-in models of Amazon SageMaker.
 
-* Run through the notebook.
+Tell students that in this demo, you are going to deploy a linear regression model to predict the amount of rain that will fall in Austin given the average temperature in Fahrenheit degrees.
 
-* TBD.
+Start the demo by opening the the Jupyter lab UI at your Amazon SageMaker instance, and create a new folder called `Data`.
+
+![Deploy SageMaker Model - step 1](Images/deploy-sagemaker-1.png)
+
+Open the `Data` folder, and upload the following `CSV` files:
+
+* `x_austin_final.csv`, this file contains historical weather conditions in Austin, Texas along 1319 days.
+
+* `y_austin_final.cvs`, this file contains the precipitations sum in inches in Austin, Texas along 1319 days.
+
+![Deploy SageMaker Model - step 2](Images/deploy-sagemaker-2.png)
+
+Navigate to the main folder on Jupyter lab, and import the the unsolved version of the Jupyter notebook to your Amazon SageMaker notebook instance, live code the demo by highlighting the following:
+
+* In the `Initial imports` section, some well known libraries are imported. `sklearn` library is used to split the dataset in training and testing set, as well as to evaluate the model.
+
+  ```python
+  import os
+  import io
+  import json
+  import numpy as np
+  import pandas as pd
+  from path import Path
+  import matplotlib.pyplot as plt
+  from sklearn.model_selection import train_test_split
+  from sklearn.metrics import mean_squared_error, r2_score
+  ```
+
+* To use Amazon SageMaker, the following libraries are needed.
+
+  ```python
+  import sagemaker
+  import sagemaker.amazon.common as smac
+  from sagemaker.predictor import csv_serializer, json_deserializer
+  from sagemaker import get_execution_role
+  from sagemaker.amazon.amazon_estimator import get_image_uri
+  import boto3
+  ```
+
+* Along with the `sagemaker` modules, the `boto3` library is imported, this is [AWS SDK for Python](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
 
 ---
 
@@ -355,13 +394,13 @@ Have students share their opinions with the class and bring up the following poi
 
 ---
 
-### 11. Students Do: Credit Fraud Detection with Amazon SageMaker (20 min)
+### 11. Students Do: Credit Risk Evaluation with Amazon SageMaker (20 min)
 
 * TBD.
 
 ---
 
-### 12. Instructor Do: Review Credit Fraud Detection with Amazon SageMaker (10 min)
+### 12. Instructor Do: Review CCredit Risk Evaluation with Amazon SageMaker (10 min)
 
 * TBD
 
