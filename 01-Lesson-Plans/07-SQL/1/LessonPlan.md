@@ -30,15 +30,21 @@ By the end of class, students will be able to:
 
 * This lesson introduces new content rapidly. Students may express frustration at learning a new interface and programming language simultaneously. Explain to students that while the learning curve may be steep at first, SQL experience is highly sought-after and well worth the effort required to become comfortable with it.
 
-* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+### Class Slides and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1xv6ebYYBpDpQAlB4EOxWeRcdOdZPDSp5oe8d27baU-w/edit?usp=sharing).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
 Welcome students to class and congratulate them on making it this far in the course! At this point students are only one unit away from their first project, and so they should feel proud of what they have accomplished so far!
-
-**File:** [slideshow](https://docs.google.com/presentation/d/1xv6ebYYBpDpQAlB4EOxWeRcdOdZPDSp5oe8d27baU-w/edit?usp=sharing)
 
 Open the slideshow and overview the learning outcomes, class objectives, and a brief background of the SQL unit:
 
@@ -731,4 +737,4 @@ Answer any questions before ending class.
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
