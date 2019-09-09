@@ -4,9 +4,9 @@ Students complete a bridge activity where they return to the model they created 
 
 **Files**
 
-* [README.md](Activities/04-Stu_Diagnosis/README.md)
+* [README.md](Activities/04-Stu_Diagnosing_the_Model/README.md)
 
-* [diagnosis.ipynb](Activities/04-Stu_Diagnosis/Unsolved/diagnosis.ipynb)
+* [diagnosis.ipynb](Activities/04-Stu_Diagnosing_the_Model/Unsolved/diagnosis.ipynb)
 
 ### 11. Instructor Do: Diagnosing the Model Activity Review (10 min)
 
@@ -16,7 +16,7 @@ Students receive a dry walk through of the solution and are given the opportunit
 
 * [Slides]()
 
-* [diagnosis.ipynb](Activities/04-Stu_Diagnosis/Solved/diagnosis.ipynb)
+* [diagnosis.ipynb](Activities/04-Stu_Diagnosing_the_Model/Solved/diagnosis.ipynb)
 
 Engage the class with a brief Q&A session. Ask students if they have any questions about **confusion matrices** and **classification reports**. If students do not pose any questions, ask some of the below guided questions. Spend no more than 5 minutes on the Q&A session.
 
