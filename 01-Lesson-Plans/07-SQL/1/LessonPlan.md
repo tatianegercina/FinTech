@@ -38,7 +38,7 @@ By the end of class, students will be able to:
 
 Welcome students to class and congratulate them on making it this far in the course! At this point students are only one unit away from their first project, and so they should feel proud of what they have accomplished so far!
 
-**File:** [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g480f0dd0a7_0_1809)
+**File:** [slideshow](https://docs.google.com/presentation/d/1xv6ebYYBpDpQAlB4EOxWeRcdOdZPDSp5oe8d27baU-w/edit?usp=sharing)
 
 Open the slideshow and overview the learning outcomes, class objectives, and a brief background of the SQL unit:
 
@@ -54,9 +54,7 @@ Open the slideshow and overview the learning outcomes, class objectives, and a b
 
 In this activity, instructors introduce students to PostgreSQL and pgAdmin, a database management language and GUI, respectively.
 
-**File:** [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g480f0dd0a7_0_19)
-
-Open the slideshow and take some time to go over the purpose of PostgreSQL and pgAdmin:
+Open the slideshow to the Postgres section and take some time to go over the purpose of PostgreSQL and pgAdmin:
 
 * SQL (often pronounced "sequel") stands for Structured Query Language. It is a powerful programming language designed to allow programmers to create, populate, manipulate, and access databases, as well as provide the ability to leverage scalable server-side storage for large volumes of data.
 
@@ -373,7 +371,7 @@ Explain the following points:
 
 * A **primary key** uniquely identifies a row.
 
-* `SERIAL` generates a new value for each inserted record in the table. 
+* `SERIAL` generates a new value for each inserted record in the table.
 
 * By default, the starting value is 1, and it will increase by 1 for each new record. When using `SERIAL` with our unique `PRIMARY KEY`, we automatically get unique, incrementing values for each table row.
 
@@ -522,7 +520,7 @@ Answer any questions before moving on.
 
 In this activity, students are introduced to the concept of Create, Read, Update, and Delete statements in SQL.
 
-Return to the [slideshow](https://docs.google.com/presentation/d/1Ll68av_lId0Yoy_Az5JMlvtd0STM2kiMVH2YpzX24FI/edit#slide=id.g58479a5bad_2_0) and begin to explain CRUD operations.
+Return to the `CRUD` section of the slides and begin to explain CRUD operations.
 
 * **CRUD**, while an unusual acronym, is a set of tools that are persistently used throughout programming.
 
@@ -663,7 +661,7 @@ Create two new tables in `MiscellaneousDB` in pgAdmin named `players` and `match
   p.player_id=m.loser_id;
   ```
 
-Point out one significant difference between SQL joins and Python joins: 
+Point out one significant difference between SQL joins and Python joins:
 
 * In SQL joins, the columns that should be viewed after the join must be declared in the initial `SELECT` statement.
 
