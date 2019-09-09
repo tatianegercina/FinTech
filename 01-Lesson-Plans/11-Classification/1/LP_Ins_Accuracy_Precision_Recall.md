@@ -8,6 +8,10 @@ The instructor provides a formal lecture explaining to students what accuracy, p
 
 Navigate to the 11.1 slides, and highlight the following:
 
+* Explain to students that **accuracy**, **precision**, and **recall** are especially important for **classification** models, which a **binary decision problem**. **Binary decision problems** have two possible correct answers: **True Positive** and **True Negative**.
+
+  * Inaccurate and imprecise models result in models returning false positive and false negatives.
+
 * When running a classification model, or any statistical model, it is important that the model is evaluated for **accuracy**, **precision**, and **recall**.
 
 * As demonstrated previously, the **accuracy** of a model can be evaluated by scoring the model using training and testing data sets. Accuracy is the ratio of correctly predicted observations to the total number of observations. Scoring will reveal how accurate the model. However, it does not communicate how precise it is.
