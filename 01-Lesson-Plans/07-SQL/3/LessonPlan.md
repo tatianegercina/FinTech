@@ -22,7 +22,15 @@ By the end of today's class, students will be able to:
 
 * The TAs should be ready to help explain and break down concepts for students struggling to grasp the material.
 
-* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+### Class Slides and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1PNx_qkrRTq-5wmpMXD5DeHXbfaGs5ogLdPa2Ee9GqmQ/edit?usp=sharing).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -30,13 +38,13 @@ By the end of today's class, students will be able to:
 
 Welcome students and explain that today's lesson will dive into data modeling techniques such as normalization, relationships, and how to conceptualize database design using entity relationship diagrams (ERDs).
 
-Open the [Class Objectives slide](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g473a132ac1_0_7) and review the objectives for today's class.
+Open the Class Objectives slide and review the objectives for today's class.
 
 ### 2. Instructor Do: Data Normalization (15 min)
 
 **File:** [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/Normalization.md)
 
-Review the [slides on data normalization](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594c06c0c6_3_1090), explaining the following:
+Review the slides on data normalization, explaining the following:
 
 * Data normalization is the process of restructuring data to a set of defined "normal forms."
 
@@ -116,7 +124,7 @@ In this activity, students will be introduced to the concept of foreign keys -- 
 
 **File:** [schema.sql](Activities/03-Ins_Foreign_Keys/Solved/schema.sql)
 
-Use the [slides on foreign keys](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594fd95c34_0_199) to explain the concept of foreign keys and how they are used to connect tables:
+Use the slides on foreign keys to explain the concept of foreign keys and how they are used to connect tables:
 
 * A foreign key is a link between tables. The foreign key in the first table points to, or is linked to, the primary key in a second table.
 
@@ -285,7 +293,7 @@ In this activity, students will learn the many different types of data modeling 
 
 * [query.sql](Activities/05-Ins_Data_Relationships/Solved/query.sql)
 
-Open the [slideshow](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594c06c0c6_3_1160). Explain that we will now cover one-to-one, one-to-many, and many-to-many relationships between data, which is an essential part of data modeling.
+Use the `Data Relationships` slides to explain that we will now cover one-to-one, one-to-many, and many-to-many relationships between data, which is an essential part of data modeling.
 
 Begin by discussing one-to-one relationships. This example will use members of the Simpson family to illustrate the concept.
 
@@ -616,7 +624,7 @@ In this activity, students will learn how to interpret and create an Entity Rela
 
 **File:** [pagila-erd.png](Images/pagila-erd.png)
 
-Open the [ERD slides](https://docs.google.com/presentation/d/1OEzlcnDFlgmu-elaaYmo_dPdQ00brOln9WEaE4t3NOE/edit#slide=id.g594fd95c34_0_422) and begin the discussion of entity relationship diagrams (ERDs). Explain the following points:
+Use the ERD slides and begin the discussion of entity relationship diagrams (ERDs). Explain the following points:
 
 * An **entity relationship diagram**, or **ERD**, is a visual representation of entity relationships within a database.
 
@@ -908,4 +916,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-Trilogy Education Services © 2019. All Rights Reserved.
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
