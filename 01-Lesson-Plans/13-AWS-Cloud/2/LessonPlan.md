@@ -322,6 +322,192 @@ Navigate to the main folder on Jupyter lab, and import the the unsolved version 
 
 * Along with the `sagemaker` modules, the `boto3` library is imported, this is [AWS SDK for Python](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
 
+* The data to train and test the model, is loaded into two Pandas DataFrames, next, the data is transformed to a vector as follows:
+
+  * The `x_austin_final.csv` data is loaded into the `features` DataFrame, next the `TempAvgF` column, that denotes the average temperature in Austin in Fahrenheit degrees, is taken as input variable (predictor) for the lineal model.
+
+    ```python
+    # Read the weather features data
+    file_path = Path("Data/x_austin_final.csv")
+    features = pd.read_csv(file_path)
+
+    # Transforming the "TempAvgF" column to a vector
+    X = features["TempAvgF"].values.reshape(-1, 1)
+    ```
+
+    * The `y_austin_final.csv` data is initially loaded into the `y` DataFrame, this data represent the target variable in the lineal model.
+
+      ```python
+      # Read the target data (precipitation sum inches)
+      file_path = Path("Data/y_austin_final.csv")
+      y = pd.read_csv(file_path, names=["PrecipitationSumInches"], header=None)
+
+      # Transforminf y into a vector
+      y = y.iloc[:, 0].values
+      ```
+
+* The data is split into a training and testing DataSets using the `train_test_split()` function from `sklearn`.
+
+  ```python
+  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+  ```
+
+Comment to students, that once the data is loaded, the next step is to create the lineal regression model. The process starts with some initial configurations as follows:
+
+* The training and testing data should be stored in an Amazon S3 bucket, so a variable to store the name of the bucket we created before is defined.
+
+  ```python
+  bucket = "sagemaker-bucket-name-here"
+  ```
+
+* To identify the data files stores in Amazon S3, a prefix is defined.
+
+  ```python
+  prefix = "austin-rainfall-regression"
+  ```
+
+* The current role of the IAM user running the notebook is stored in the `role` variable.
+
+  ```python
+  role = get_execution_role()
+  ```
+
+Now it's time to upload the data to Amazon S3. Comment to students, that in order to train the machine learning model using Amazon SageMaker, the training and testing data should passed through an Amazon S3 Bucket formatted using the [protobuf recordIO format](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-training.html#td-serialization).
+
+* The profobuf recordIO format, is a method to serialize structured data (similar to `JSON`), to allow different applications to communicate with each other or for storing data.
+
+Explain to students that, using the profobuf recordIO format, allows you to take advantage of _Pipe mode_ when training the algorithms that support it. In _Pipe mode_, your training job streams data directly from Amazon S3. Streaming can provide faster start times for training jobs and better throughput.
+
+Continue with the following code, to format the training data as a protobuf recordIO, and upload it to the Amazon S3 bucket.
+
+```python
+# Encode the training data as Protocol Buffer
+buf = io.BytesIO()
+vectors = np.array(X_train).astype("float32")
+labels = np.array(Y_train).astype("float32)
+smac.write_numpy_to_dense_tensor(buf, vectors, labels)
+buf.seek(0)
+
+# Upload encoded training data to Amazon S3
+key = 'linear_train.data'
+boto3.resource("s3").Bucket(bucket).Object(os.path.join(prefix, "train", key)).upload_fileobj(buf)
+s3_train_data = "s3://{}/{}/train/{}".format(bucket, prefix, key)
+print("Training data uploaded to: {}".format(s3_train_data))
+```
+
+Tell students that, if you provide test data, the algorithm logs include the test score for the final model. Live code the following to upload the testing data.
+
+```python
+# Encode the testing data as Protocol Buffer
+buf = io.BytesIO()
+vectors = np.array(X_test).astype("float32")
+labels = np.array(Y_test).astype("float32")
+smac.write_numpy_to_dense_tensor(buf, vectors, labels)
+buf.seek(0)
+
+# Upload encoded testing data to Amazon S3
+key = "linear_test.data"
+boto3.resource("s3").Bucket(bucket).Object(os.path.join(prefix, "test", key)).upload_fileobj(buf)
+s3_test_data = "s3://{}/{}/test/{}".format(bucket, prefix, key)
+print("Testing data uploaded to: {}".format(s3_test_data))
+```
+
+Once you have uploaded your data to Amazon S3, it's time to train the machine learning model. Comment to students, that in this demo, you will use the Amazon SageMaker's [_linear learner algorithm_](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html) to run a linear regression prediction model.
+
+Create the instance of the linear learner algorithm and highlight the following:
+
+* The instance of the `linear learner` is created using the `get_image_uri()` method from the `sagemaker` library.
+
+  ```python
+  container = get_image_uri(boto3.Session().region_name, "linear-learner")
+  ```
+
+* Before creating the estimator container, an Amazon SageMaker's session should be started.
+
+  ```python
+  sess = sagemaker.Session()
+  ```
+
+* The estimator container is an AWS EC2 instance that will store and run the model. The estimator container is created using a `ml.m4.xlarge` train instance type.
+
+  ```python
+  linear = sagemaker.estimator.Estimator(
+    container,
+    role,
+    train_instance_count=1,
+    train_instance_type="ml.m4.xlarge",
+    output_path="s3://{}/{}/output".format(bucket, prefix),
+    sagemaker_session=sess
+    )
+  ```
+
+* The linear learner hyperparameters are defined next, it's important to highlight that the `feature_dim` parameter should match with the number of predictors in `X`, in this case since we only have one predictor its value is `1`.
+
+  ```python
+  # Define lineal learner hyperparameters
+  linear.set_hyperparameters(
+    feature_dim=1,
+    mini_batch_size=100,
+    predictor_type="regressor",
+    epochs=10,
+    num_models=32,
+    loss="absolute_loss"
+    )
+  ```
+
+* The model is trained using the `fit` method of the Amazon SageMaker estimator. **Note:** This step might take a few minutes.
+
+  ```python
+  linear.fit({'train': s3_train_data, 'test': s3_test_data})
+  ```
+
+Comment to students, that this step might take few minutes and it will use resources from the AWS account. Normally, this time is not billed in the two months trial period, however, clarify to students that policies of AWS free and trial offers constantly changes, so they can be billed for few cents. Bellow a sample output is shown, you will notice that text is in red, despite it could denote an error, it's not.
+
+![Deploy SageMaker Model - step 3](Images/deploy-sagemaker-3.gif)
+
+Once the `lineal-learner` model was trained, tell students that it can be deployed to make predictions of the rainfall in Austin. Continue the demo and highlight the following:
+
+* An instance of the lineal-learner predictor is created. **Note:** This step might take a few minutes.
+
+  ```python
+  linear_predictor = linear.deploy(initial_instance_count=1, instance_type="ml.m4.xlarge")
+  ```
+
+* Some configurations are made, to specify the type of data files that are going to be used, an to define how the data is going to be serialized and deserialized.
+
+  ```python
+  linear_predictor.content_type = 'text/csv'
+  linear_predictor.serializer = csv_serializer
+  linear_predictor.deserializer = json_deserializer
+  ```
+
+* Some predictions are made using the testing data; results are stored on the `y_predictions` array.
+
+  ```python
+  result = linear_predictor.predict(X_test)
+  y_predictions = np.array([r["score"] for r in result["predictions"]])
+  ```
+
+Explain to students that once you have the predictions, the model can be evaluated using the techniques they already know. First, a plot to contrast the predicted rainfall values versus the real values is created.
+
+![Deploy SageMaker Model - step 4](Images/deploy-sagemaker-4.png)
+
+* Additionally, the `RMSE` and `R2` scores are calculated.
+
+  ![Deploy SageMaker Model - step 5](Images/deploy-sagemaker-5.png)
+
+Finally, after reviewing the model evaluation's results, comment to studets that the end point is deleted to avoid additional AWS resources usage and extra billing.
+
+```python
+sagemaker.Session().delete_endpoint(linear_predictor.endpoint)
+```
+
+Slack out the followin page to students, where they can lear more about the different Amazon SageMaker built-in algorithms.
+
+* [Use Amazon SageMaker Built-in Algorithms](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html).
+
+Answer any questions before moving on.
+
 ---
 
 ### 7. Students Do: Deploying a Housing Price Prediction Model in Amazon SageMaker (20 min)
@@ -330,11 +516,11 @@ In this activity, students will calculate a linear regression model to predict t
 
 **Instructions:**
 
-* [README.md](Activities/03-Stu_Housing_Price/README.md)
+* [README.md](Activities/04-Stu_Housing_Price/README.md)
 
 **Files**:
 
-* [boston-housing-regression.ipynb](Activities/03-Stu_Housing_Price/Unsolved/boston-housing-regression.ipynb)
+* [boston-housing-regression.ipynb](Activities/04-Stu_Housing_Price/Unsolved/boston-housing-regression.ipynb)
 
 ---
 
@@ -342,13 +528,13 @@ In this activity, students will calculate a linear regression model to predict t
 
 **Files**:
 
-* [boston-housing-regression.ipynb](Activities/02-Stu_Housing_Linear_Regression/Solved/boston-housing-regression.ipynb)
+* [boston-housing-regression.ipynb](Activities/04-Stu_Housing_Price/Solved/boston-housing-regression.ipynb)
 
 Reassure students that it's okay if this was challenging. Amazon SageMaker APIs have a learning curve, as do other AWS resources, along with Machine Learning in general; comment students they will get a lot of practice with AWS Today!
 
 Walk through the solution and highlight the following:
 
-* The date is fetched and analyzed to become familiar with it.
+* The data is fetched and analyzed to become familiar with it.
 
 * The data is split into _Test_ and _Train_ datasets and converted into to the [RecordIO-wrapped ProtoBuf format](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-inference.html) used by Amazon SageMaker's algorithms.
 
@@ -359,6 +545,8 @@ Walk through the solution and highlight the following:
 * The trained model is deployed on an Amazon SageMaker instance.
 
 * Predictions are performed and the model's performance is scored.
+
+Answer any questions before moving on.
 
 ---
 
@@ -428,39 +616,60 @@ This activity will require use of an AWS SageMaker notebook instance, the unsolv
   * Unlike *housing price prediction*, the predictions are in `predicted_label` field in the prediction result.
   * Lastly, for our model evaluation, besides the accuracy score, we use a confusion matrix to get a quick sense of the model's true-positive/negative and false-positive/negative prediction combinations.
 
-Answer any remaining questions before moving on the the next activity.
+Answer any questions before moving on.
 
 ---
 
 ### 13. Instructor Do: Delete Notebook Instance (10 min)
 
-Show students how to delete their SageMaker notebook instance so that no billing charges are incurred for it after class.
+In this activity, students will learn how to delete their Amazon SageMaker notebook instance, so that no billing charges are incurred for it after class.
 
-* From the SageMaker console, use the left pane menu and visit: Notebook -> [Notebook instances](https://console.aws.amazon.com/sagemaker/home?region=us-east-1#/notebook-instances)
+Open the Amazon SageMaker console, on the left pane menu, under the _Notebook_ section, click on _Notebook instances_.
 
-* Select the the Notebook Instance (or follow this process for all) on the left circular dot.
-![Notebook Instance list](Images/notebook-instance-list.png)
+![Deleting Amazon SageMaker instance - 1](Images/deleting-sm-1.png)
 
-* Once selected, click on the right `Actions` menu and select `Stop`.
+Select the the `sm-test` notebook instance on the left circular dot, once selected, click on the right _Actions_ menu and select _Stop_.
 
-* Refresh the page and wait for the instance `Status` to change to `Stopped`.
-![Notebook Instance actions](Images/notebook-instance-actions.png)
+![Deleting Amazon SageMaker instance - 2](Images/deleting-sm-2.png)
 
-* Select the instance again, click on `Actions` and select `Delete` then confirm delete.
+Refresh the page and wait for the instance `Status` to change to `Stopped`. **Note:** This process will take few minutes.
+
+![Deleting Amazon SageMaker instance - 3](Images/deleting-sm-3.png)
+
+Select the instance again on the left circular dot, click on _Actions_ and select _Delete_ then confirm delete.
+
 ![Notebook Instance delete](Images/notebook-confirm-delete.png)
 
-* At the end of the lesson, the notebook instances list should be empty and state: "There are currently no resources.", otherwise charges will be incurred for any remaining active instances.
+* At the end of Today's lesson, the notebook instances list should be empty and state: "There are currently no resources.", otherwise charges will be incurred for any remaining active instances.
 
-* If for any reason you changed regions during class, make sure you delete any notebook instances in all regions
+Lastly, go to Amazon S3 console, and remove the buckets created for the activity as follows.
 
-* Lastly, go to S3 <https://s3.console.aws.amazon.com> and remove the buckets created for the activity.
+* Choose the checkbox next to the bucket name, next click on the the _Delete_ button.
 
-Answer any questions before ending class.
+![Deleting Amazon SageMaker instance - 4](Images/deleting-sm-4.png)
+
+* On the _Delete bucket_ window, type the name of the bucket to confirm that you want to delete it, next click on the _Confirm_ button to finish.
+
+![Deleting Amazon SageMaker instance - 5](Images/deleting-sm-5.png)
+
+Answer any questions before moving on.
+
+### 14. Everyone Do: Delete AWS resources (15 mins)
+
+In this activity, students will delete all the AWS resources created in Today's class to avoid additional charges.
+
+Explain students, as it was mentioned before, the policies for the AWS free tier and trials constantly changes, so it's important to remove any unnecessary resources created on AWS to avoid additional charges, specially Amazon SageMaker instances, since despite they are stopped, AWS bills you for hosting the instances.
+
+Collaborate with TAs, on assisting students to delete all the AWS resources that students like to remove. Remember to students, that they can save a local copy of the Jupyter notebooks, by right-clicking on the notebook name and selecting the _Download_ option.
+
+![Downloading a Jupyter notebook](Images/download-notebook-sm.png)
+
+Answer any questions before ending the class.
+
+---
 
 ### End Class
 
 ---
 
-### Copyright
-
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
