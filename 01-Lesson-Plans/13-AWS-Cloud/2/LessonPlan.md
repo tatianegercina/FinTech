@@ -425,6 +425,7 @@ This activity will require use of an AWS SageMaker notebook instance, the unsolv
   * The output of the model prediction is a binary label (0, 1): "Good" or "Bad" Credit Risk.
   * Despite using a "curated" dataset, we still need to perform some data preparation tasks: *split*, *hot-encode* and *scale* the input features.
   * Similar to the *housing price prediction*, we use the AWS SageMaker built-in `linear-lerner` algorithm, but changing the hyper-parameter `predictor_type` to `'binary_classifier'`
+  * Unlike *housing price prediction*, the predictions are in `predicted_label` field in the prediction result.
   * Lastly, for our model evaluation, besides the accuracy score, we use a confusion matrix to get a quick sense of the model's true-positive/negative and false-positive/negative prediction combinations.
 
 Answer any remaining questions before moving on the the next activity.
