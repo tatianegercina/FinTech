@@ -12,11 +12,7 @@ Students complete a bridge activity where they return to the model they created 
 
 Students receive a dry walk through of the solution and are given the opportunity ask questions about creating and interpreting **confusion matrices** and **classification reports**.
 
-**Files**
-
-* [Slides]()
-
-* [diagnosis.ipynb](Activities/04-Stu_Diagnosing_the_Model/Solved/diagnosis.ipynb)
+**Files:** [diagnosis.ipynb](Activities/04-Stu_Diagnosing_the_Model/Solved/diagnosis.ipynb)
 
 Engage the class with a brief Q&A session. Ask students if they have any questions about **confusion matrices** and **classification reports**. If students do not pose any questions, ask some of the below guided questions. Spend no more than 5 minutes on the Q&A session.
 
