@@ -350,7 +350,7 @@ Walk through the solution and highlight the following:
 
 * The date is fetched and analyzed to become familiar with it.
 
-* The data is split into _Test_ and _Train_ datasets and converted into to the [ProtoBuf format](https://developers.google.com/protocol-buffers/) used by Amazon SageMaker's algorithms.
+* The data is split into _Test_ and _Train_ datasets and converted into to the [RecordIO-wrapped ProtoBuf format](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-inference.html) used by Amazon SageMaker's algorithms.
 
 * The prepared and formatted data is uploaded to an Amazon S3 bucket.
 
@@ -396,13 +396,38 @@ Have students share their opinions with the class and bring up the following poi
 
 ### 11. Students Do: Credit Risk Evaluation with Amazon SageMaker (20 min)
 
-* TBD.
+In this activity, students will train and deploy a binary classification model to predict the *credit risk* of a person using the [German Credit Risk dataset](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) and the SageMaker built-in `Linear Learner` algorithm.
+
+This activity will require use of an AWS SageMaker notebook instance, the unsolved notebook will guide students through the process and indicate what the missing code snippets are.
+
+**Instructions:**
+
+* [README.md](Activities/11-Stu_Credit_Risk_Classification/README.md)
+
+**Files**:
+
+* [credit-risk-classification.ipynb](Activities/11-Stu_Credit_Risk_Classification/Unsolved/credit-risk-classification.ipynb)
+* [german_credit_data.csv](Activities/11-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
+
 
 ---
 
 ### 12. Instructor Do: Review CCredit Risk Evaluation with Amazon SageMaker (10 min)
 
-* TBD
+* Open JupyterLab in your AWS SageMaker notebook instance.
+
+* Upload the dataset: [german_credit_data.csv](Activities/11-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
+
+* Upload the solved notebook: [credit-risk-classification.ipynb](Activities/11-Stu_Credit_Risk_Classification/Solved/credit-risk-classification.ipynb)
+
+* Walk-through the solved notebook, cell by cell, highlighting the following points:
+  * This activity is similar the the previous *Housing Price Prediction*, however rather than `linear regression` we're calculating a `logistic regression` to perform a `binary classification`.
+  * The output of the model prediction is a binary label (0, 1): "Good" or "Bad" Credit Risk.
+  * Despite using a "curated" dataset, we still need to perform some data preparation tasks: *split*, *hot-encode* and *scale* the input features.
+  * Similar to the *housing price prediction*, we use the AWS SageMaker built-in `linear-lerner` algorithm, but changing the hyper-parameter `predictor_type` to `'binary_classifier'`
+  * Lastly, for our model evaluation, besides the accuracy score, we use a confusion matrix to get a quick sense of the model's true-positive/negative and false-positive/negative prediction combinations.
+
+Answer any remaining questions before moving on the the next activity.
 
 ---
 
