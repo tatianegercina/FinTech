@@ -4,15 +4,13 @@ Students will receive a brief, introductory lecture outlining what **classificat
 
 **Files:**
 
-* [Slides]()
-
 Kick off the activity by asking for a student to try summarizing what **classification** is. If there are no volunteers, ask a specific student.
 
 * **Answer** **Classification** is the prediction of discrete outcomes. Outcomes are identified as labels, which serve to categorize bi-class and multi-class features.
 
 * Promote student confidence and engagement by thanking the student for volunteering the summary and emphasizing the parts of the answer that are correct. Use the student's answer as a transition into formal lecture.
 
-Navigate to the 11.1 slides, and walk through the content on the slide:
+Navigate to the 11.1 slideshow, and walk through the content on the **Intro to Classification** slide:
 
 * Provide students with the official definition of **classification**, as described by the Oxford English dictionary:
 
