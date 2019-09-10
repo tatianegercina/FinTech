@@ -590,13 +590,13 @@ This activity will require use of an AWS SageMaker notebook instance, the unsolv
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_Credit_Risk_Classification/README.md)
+* [README.md](Activities/05-Stu_Credit_Risk_Classification/README.md)
 
 **Files**:
 
-* [credit-risk-classification.ipynb](Activities/11-Stu_Credit_Risk_Classification/Unsolved/credit-risk-classification.ipynb)
-* [german_credit_data.csv](Activities/11-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
+* [credit-risk-classification.ipynb](Activities/05-Stu_Credit_Risk_Classification/Unsolved/credit-risk-classification.ipynb)
 
+* [german_credit_data.csv](Activities/05-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
 
 ---
 
@@ -604,9 +604,9 @@ This activity will require use of an AWS SageMaker notebook instance, the unsolv
 
 * Open JupyterLab in your AWS SageMaker notebook instance.
 
-* Upload the dataset: [german_credit_data.csv](Activities/11-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
+* Upload the dataset: [german_credit_data.csv](Activities/05-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
 
-* Upload the solved notebook: [credit-risk-classification.ipynb](Activities/11-Stu_Credit_Risk_Classification/Solved/credit-risk-classification.ipynb)
+* Upload the solved notebook: [credit-risk-classification.ipynb](Activities/05-Stu_Credit_Risk_Classification/Solved/credit-risk-classification.ipynb)
 
 * Walk-through the solved notebook, cell by cell, highlighting the following points:
   * This activity is similar the the previous *Housing Price Prediction*, however rather than `linear regression` we're calculating a `logistic regression` to perform a `binary classification`.
