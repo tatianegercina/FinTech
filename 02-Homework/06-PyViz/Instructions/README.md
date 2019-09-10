@@ -117,8 +117,6 @@ Sample Dashboard:
 
 * Create separate notebooks for the analysis and the dashboard and upload these to Github.
 
-* Create a binder link to the notebooks so that others can interactively test the code and visaulizations. Add the binder links to your GitHub README.md file.
-
 * Complete your README to explain how to run and use your dashboard.
 
 * Note: You should not submit your `mapbox` access token to github!
