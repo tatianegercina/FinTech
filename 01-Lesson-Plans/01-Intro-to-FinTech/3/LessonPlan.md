@@ -30,7 +30,7 @@ By the end of class, students will be able to:
 
 * More advanced git operations such as git branches, merges, and checkouts will not be introduced in this lesson. Therefore, be aware that students may face merge conflicts that prevent them from pushing their file changes to the git repository when collaborating with others working in the same git repository.
 
-* Be mindful of students working in groups during the case study activity; some students may be less vocal than others. Circulate the classroom with the TAs and make sure that every student is actively engaged and participating in their group's discussion. 
+* Be mindful of students working in groups during the case study activity; some students may be less vocal than others. Circulate the classroom with the TAs and make sure that every student is actively engaged and participating in their group's discussion.
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [1.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=29698287-5856-45e6-9373-aa9800300d03) Note that this video may not reflect the most recent lesson plan.
@@ -38,25 +38,25 @@ By the end of class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.3 Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit#slide=id.g54ab1329fa_1_44). 
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.3 Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit#slide=id.g54ab1329fa_1_44).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit). 
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx). 
+* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students to the third day of class and the final lesson of Unit 1. 
+Welcome students to the third day of class and the final lesson of Unit 1.
 
 **File:** [Lesson 1.3 Slideshow](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit)
 
 Use slides 1–3 to introduce today's lesson and objectives. Then, review the following points with students:
 
-* The previous two lessons focused on introducing the FinTech course structure as well as the FinTech industry more broadly. We discussed the history and current landscape of the FinTech ecosystem, as well as specific factors that have led to changes in various FinTech domains. 
+* The previous two lessons focused on introducing the FinTech course structure as well as the FinTech industry more broadly. We discussed the history and current landscape of the FinTech ecosystem, as well as specific factors that have led to changes in various FinTech domains.
 
 * Today, students will apply what they've learned so far about the FinTech industry to write their own case studies in visually enhanced markdown files, and then host them in a GitHub repository.
 
@@ -132,13 +132,13 @@ Then, demonstrate how to create a repository in GitHub, edit files in that repo,
 
   ![github-remote-change-confirmation](Images/github-remote-change-confirmation.png)
 
-Ask if there are any questions before moving on. 
+Ask if there are any questions before moving on.
 
 ---
 
 ### 3. Student Do: Create and Personalize a GitHub Repository (15 min)
 
-In this activity, students will follow the steps in the preceding instructor demo to create their own repository in GitHub and modify the README file in order to personalize their repo. 
+In this activity, students will follow the steps in the preceding instructor demo to create their own repository in GitHub and modify the README file in order to personalize their repo.
 
 **Instructions:** [README.md](Activities/01-Stu_Refresher/README.md)
 
@@ -176,16 +176,16 @@ In this section, students will be introduced to the git CLI and additional git o
 
 Use the slides to review the following points. (Slides 16–21)
 
-* How the GitHub web app differs from the git CLI: 
+* How the GitHub web app differs from the git CLI:
 
   * The GitHub web app provides a convenient user interface for performing common git operations. The git CLI is a command line utility that provides all git operations; it is generally more robust than a git-based graphical user interface (GUI).
-  
+
   * This is due to the fact that, more often than not, a GUI interacts with the underlying CLI to perform its functionality (e.g., click a button that executes a command on the back-end) and, therefore, is often a simplified version of the underlying functionality.
 
-* How one configures the git CLI: 
+* How one configures the git CLI:
 
   * Open the command line.
-  
+
   * Set your username:
 
       * `git config --global user.name "FIRST_NAME LAST_NAME"`
@@ -196,7 +196,7 @@ Use the slides to review the following points. (Slides 16–21)
 
 ![git-config](Images/git-config.png)
 
-* Common git CLI commands: 
+* Common git CLI commands:
 
   * `git clone`: Clones a git repository to the local file system.
 
@@ -212,14 +212,14 @@ Use the slides to review the following points. (Slides 16–21)
 
 * What is a git commit?
 
-  * A git commit saves a queue of tracked changed files as a **save** or **checkpoint** for a git repository before the changed files are pushed from the local to the remote git repository. 
-  
+  * A git commit saves a queue of tracked changed files as a **save** or **checkpoint** for a git repository before the changed files are pushed from the local to the remote git repository.
+
   * This way, a git repository can be restored to a previous checkpoint in time, thereby undoing any existing changes from that point.
 
 * What is git's Snapshot Model?
 
   * Git thinks of its data as a series of snapshots of a miniature file system. Every time you commit, or save the state of your project in git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot.
-  
+
   * To be efficient, if files have not changed, git doesn’t store the file again; rather, it stores a link to the previous identical file it has already stored.
 
 Ask if there are any questions before moving on.
@@ -242,10 +242,10 @@ Demo the following:
 
   ![terminal-pwd-cd](Images/terminal-pwd-cd.png)
 
-* Run `git clone <repository link>` to clone the repo to the current directory. 
+* Run `git clone <repository link>` to clone the repo to the current directory.
 
-  * Copying a repository via the `git clone` command differs from just downloading a ZIP file of the repository. 
-  
+  * Copying a repository via the `git clone` command differs from just downloading a ZIP file of the repository.
+
   * `git clone` downloads a tracked git repository to the local file system, while the ZIP file merely downloads the contents without any kind of tracking or version control involved.
 
   ![git-clone](Images/git-clone.png)
@@ -339,19 +339,19 @@ Open the slideshow and review the Markdown slides, while presenting the followin
 
   * Images
 
-Reiterate to students the following: 
+Reiterate to students the following:
 
-* Markdown allows us to create visually enhanced documents such as README files (for GitHub repos, for example), which are valuable not only to potential employers, but also to potential collaborators (colleagues or teammates). 
+* Markdown allows us to create visually enhanced documents such as README files (for GitHub repos, for example), which are valuable not only to potential employers, but also to potential collaborators (colleagues or teammates).
 
 * A good README file helps people understand the purpose of the repository at a glance, and it shows developers how to navigate, install, and run a project.
 
 Next, demo the following while explaining each step:
 
-* Go to your local git repository and modify the README file. 
+* Go to your local git repository and modify the README file.
 
-  * Notice that there is a `#` in front of the README title; this is why the font appears larger in the GitHub webpage. 
-  
-  * In markdown, the `#` sign represents a level 1 heading, `##` represents a level 2 heading, and so on.  
+  * Notice that there is a `#` in front of the README title; this is why the font appears larger in the GitHub webpage.
+
+  * In markdown, the `#` sign represents a level 1 heading, `##` represents a level 2 heading, and so on.
 
   ![markdown-header](Images/markdown-header.png)
 
@@ -469,11 +469,11 @@ Take a moment to reflect on the lesson with students. Ask for volunteers to shar
 
 ### 17. Instructor Do: Career Services (35 min)
 
-**Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class. 
+**Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
 
-Explain to students that we've spent a great deal of time introducing outselves to FinTech this week, learning the basics, and preparing our tools for the course. But we also want to make sure we're focusing on where you will go once the course is over. Starting today, we're going to dedicate time on certain Saturday classes to talk specifically about Career Services. 
+Explain to students that we've spent a great deal of time introducing outselves to FinTech this week, learning the basics, and preparing our tools for the course. But we also want to make sure we're focusing on where you will go once the course is over. Starting today, we're going to dedicate time on certain Saturday classes to talk specifically about Career Services.
 
-Use the following slides and lesson plan to discuss the Career Services content for this week. 
+Use the following slides and lesson plan to discuss the Career Services content for this week.
 
 **Files:**
 
