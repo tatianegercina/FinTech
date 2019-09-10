@@ -20,17 +20,13 @@ Before students leave at the end of the class, encourage them to continue indepe
 
 By the end of class, students will be able to:
 
-* Understand how to calculate and apply regression analysis to datasets.
+* Define classification in the context of machine learning.
 
-* Describe the difference between linear and non-linear data.
+* Model and fit several classification models (Logistic Regression, SVM, KNN) using Scikit-Learn.
 
-* Demonstrate how to quantify and validate linear models.
+* Evaluate classification algorithms using a confusion matrix and classification report.
 
-* Apply scaling and normalization as part of the data preprocessing step in machine learning.
-
-* Draw categorical conclusions from classification model output.
-
-* Identify the similarties, differences, and painpoints associated with linear regression, decision trees, ensemble learning,
+* Convert categorical data to input vectors.
 
 ### Instructor Notes
 
@@ -64,7 +60,15 @@ By the end of class, students will be able to:
 
   * Remind students that additional research and practice will be required outside of class in order to reinforce and build competence in learning and evaluating trained models.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+### Class Slides and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 - - -
 
@@ -72,11 +76,7 @@ By the end of class, students will be able to:
 
 The instructor starts class with an introduction to **classification** and its use cases within FinTech. Students will receive the who, what, when, why, and how of FinTech **classification**.
 
-**Files:**
-
-* [Welcome Slides]()
-
-Open the 11.2 slides, and begin the class by welcoming students back to the second week of machine learning!
+Open the slideshow, and begin the class by welcoming students back to the second week of machine learning!
 
 * Explain to students that Unit 11 kicks off the second week of machine learning and advanced analytics. Highlight that this unit will focus on using machine learning algorithms and pipelines to draw categorical conclusions and predictions about probable financial outcomes.
 
@@ -84,7 +84,7 @@ Open the 11.2 slides, and begin the class by welcoming students back to the seco
 
   * Communicate that **classification** models can be used to identify a loan applicant as credit worthy or a credit risk. Tell students that they will be learning how to perform classification using, all of which will be explained in more detail in upcoming activities.
 
-    * Logist/Linear Regression
+    * Logistic/Linear Regression
 
     * Support Vector Machines
 
