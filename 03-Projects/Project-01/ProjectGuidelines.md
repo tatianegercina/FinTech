@@ -4,7 +4,7 @@ This document contains guidelines, requirements, and suggestions for Project 1.
 
 ## Team Effort
 
-Before anything, remember that Projects are a **group effort**: Working closely with your teammates is a requirement. This both helps teach real-world collaborative workflows, and enables you to tackle more difficult problems than you'd be able to working alone.
+Before anything, remember that projects are a group effort: Working closely with your teammates is a requirement. This helps teach real-world collaborative workflows and enables you to tackle more difficult problems than you'd be able to working alone.
 
 In other words, working in groups allows you to **work smart** and **dream big**. Take advantage of it!
 
@@ -14,13 +14,13 @@ Before you start writing any code, your group should outline the scope and purpo
 
 Write this as a brief summary of your interests and intent, including:
 
-* The kind of data you'd like to work with/field you're interested in (e.g., trading, quantitative analysis, etc.)
+* The kind of data you'd like to work with and the field you're interested in (e.g., trading, quantitative analysis).
 
-* The kinds of questions you'll be asking of that data
+* The kinds of questions you'll be asking of that data.
 
-* Possible source for such data
+* Possible source for such data.
 
-In other words, write down what kind of data you plan to work with, and what kinds of questions you'd like to ask of it. This constitutes your Project Proposal/Outline, and should look something like this:
+This constitutes your Project Proposal and Outline, and it should look something like this:
 
 > Our project is to uncover patterns in credit card fraud. We'll examine relationships between types of transactions and location; purchase prices and times of day; trends in purchases over the course of the year; and related questions, as the data admits.
 
@@ -48,7 +48,7 @@ Make sure that your data is not too large for local analysis. **Big Data** datas
 
 With data in hand, it's time to tackle development and analysis. This is where the fun starts!
 
-Inevitably, the analysis process can be broken into two broad phases: **Exploration & Cleanup** and **Analysis** proper.
+Inevitably, the analysis process can be broken into two broad phases: **Exploration and Cleanup** and **Analysis** proper.
 
 As you've learned, you'll need to explore, clean, and reformat your data before you can begin to answer your research questions. We recommend keeping track of these exploration and cleanup steps in a dedicated Jupyter Notebook, both for organization's sake and to make it easier to  present your work later.
 
@@ -64,12 +64,10 @@ Finally, be sure that your projects meet the [technical requirements](TechnicalR
 
 After you've analyzed your data to your satisfaction, you'll put together a presentation to show off your work, explain your process, and discuss your conclusions.
 
-This presentation will be delivered as a slideshow, and should give your classmates and instructional staff an overview of your work. PowerPoint, Keynote, and Google Slides are all acceptable for building slides.
+This presentation will be delivered as a slideshow, and it should give your classmates and instructional staff an overview of your work. PowerPoint, Keynote, and Google Slides are all acceptable for building slides.
 
 As long as your slides meet the [presentation requirements](PresentationRequirements.md), you are free to structure the presentation however you wish, but students are often successful with the format laid out in the [presentation guidelines](PresentationGuidelines.md).
 
 - - -
 
-### Copyright
-
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
