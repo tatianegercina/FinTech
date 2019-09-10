@@ -450,6 +450,8 @@ Show students how to delete their SageMaker notebook instance so that no billing
 
 * At the end of the lesson, the notebook instances list should be empty and state: "There are currently no resources.", otherwise charges will be incurred for any remaining active instances.
 
+* If for any reason you changed regions during class, make sure you delete any notebook instances in all regions
+
 * Lastly, go to S3 <https://s3.console.aws.amazon.com> and remove the buckets created for the activity.
 
 Answer any questions before ending class.
