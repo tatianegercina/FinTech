@@ -94,7 +94,7 @@ Open [pets.csv](Activities/02-Stu_Data_Normalization/Resources/pets.csv) and exp
 
 * Make sure multiple data points are not included in the same column. For columns containing multiple pets, a new row will need to be created for each pet.
 
-* The final product will look like [pets_cleaned.csv](Activities/02-Stu_Data_Normalization/Resources/pets.csv).
+* The final product will look like [pets_cleaned.csv](Activities/02-Stu_Data_Normalization/Resources/pets_cleaned.csv).
 
 Next, open [schema.sql](Activities/02-Stu_Data_Normalization/Solved/schema.sql) in pgAdmin. Walk through the code and explain the following:
 
