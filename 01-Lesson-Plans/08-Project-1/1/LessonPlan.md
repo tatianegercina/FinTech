@@ -2,7 +2,7 @@
 
 #### Overview
 
-In this week, students will begin work on their first Project of the Boot Camp: Use Python to deliver an in-depth analysis of a financial data source of their choosing, with real data that is pulled through APIs.
+In this week, students will begin work on their first Project of the Boot Camp: Use Python to deliver an in-depth analysis of a financial data source of their choosing.
 
 #### Instructor Notes
 
