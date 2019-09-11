@@ -1,8 +1,8 @@
 ## 8.1 Lesson Plan—Projects & Collaboration with Git
 
-### Overview
+#### Overview
 
-Today's lesson plan introduces students to the requirements for Project 1 as well as the basics of collaboration with Git.
+In this week, students will begin work on their first Project of the Boot Camp: Use Python to deliver an in-depth analysis of a financial data source of their choosing.
 
 #### Instructor Notes
 
