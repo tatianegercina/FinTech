@@ -6,13 +6,11 @@ Today's lesson plan introduces students to the requirements for Project 1 as wel
 
 #### Instructor Notes
 
-The instructional staff should work together prior to class to identify the groups for this project. It often works best to pair students with similar skill levels so that all students are able to contribute equally to the project. 
+The instructional staff should work together prior to class to identify the groups for this project. It often works best to pair students with similar skill levels so that all students are able to contribute equally to the project.
 
 It is highly recommended to request project proposals from students and then approve their proposals. Students will often struggle with finding data sources and in setting realistic goals, so use this as an opportunity to guide them to unique, interesting, and achievable projects.
 
 Install the appropriate text editor to help visualize Git histories: [Git History](https://github.com/DonJayamanne/gitHistoryVSCode) in VS Code, [Git Time Machine](https://github.com/pidu/git-timemachine) for Sublime Text, and [git-time-machine](https://atom.io/packages/git-time-machine) for Atom.
-
-Be sure to refer to the [TimeTracker](TimeTracker.xlsx) to remain on time.
 
 Be sure to slack out the [Git Branching Workflow](http://nvie.com/posts/a-successful-git-branching-model/) before the end of class.
 
@@ -20,7 +18,16 @@ Be sure to slack out the [Visual Introduction to Git](https://medium.com/@ashk3l
 
 * If possible, share the above links both _before_ today's class and again at the end of it.
 
-Lastly, as a reminder, these slideshows are for instructor use only—when distributing slides to students, please first export the slides to a PDF file. You may then distribute the PDF file through Slack.
+### Class Slides and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1UUMgKSR6fKiP-32CQYOhLcSiJEIrq7P7yiYtKtySsHY/edit?usp=sharing
+).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 - - -
 
