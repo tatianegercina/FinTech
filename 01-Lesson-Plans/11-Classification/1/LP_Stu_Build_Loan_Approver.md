@@ -10,7 +10,7 @@ Students will participate in a bag of tricks activity where they apply the machi
 
 The instructor leads a facilitated review discussion on the loan approver. The review will be a dry walk through with accompanying guided/review questions.
 
-**Files:** [solution.js](Activities/05-Stu_Loan_Approver/Solved/loan_approver.ipynb)
+**Files:** [loan_approver.ipynb](Activities/05-Stu_Loan_Approver/Solved/loan_approver.ipynb)
 
 In order to ensure pacing of the activity, do not ask all of the below questions. Use these questions as prompts to engage students and increase discussion.
 
