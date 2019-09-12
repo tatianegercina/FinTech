@@ -44,7 +44,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 3.3 Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g54ab1329fa_1_44).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1VySvayQsq5TY-aaE-9cgaBxZmG4KF11aNJMvnyyxrBo/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
@@ -58,9 +58,7 @@ By the end of class, students will be able to:
 
 In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
-**File:** [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g54ab1329fa_1_44)
-
-Welcome students to the second day of Pandas and explain the focus of today's class.
+Welcome students to the second day of Pandas and use the slides to explain the focus of today's class.
 
 * Students will leverage their data cleaning, indexing, and visualization skills from Day 1 in order to sort, group, multi-index, and concatenate multiple financial datasets for daily returns and investment risk analysis.
 
@@ -137,11 +135,11 @@ Ask students if they have any questions. Then, if time remains, review the agend
 
 In this part of the lesson, you will demo how to sort DataFrame values in ascending and descending order.
 
-**Files:**
-
-* [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5c4c4e9992_0_14)
+**File:**
 
 * [sort_dataframe.ipynb](Activities/Ins_Sorting/Solved/sort_dataframe.ipynb)
+
+Open the slides to the `Sorting` section.
 
 Start by explaining that it is very common to sort values in ascending or descending order.
 
@@ -264,8 +262,6 @@ Ask if there are any questions before moving on.
 This section focuses on grouping and aggregating data. Grouping data is particularly valuable when dealing with data for multiple stocks. You will give an overview of grouping and then perform a live demo of how to use the `groupby` function in Pandas. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
 **Files:**
-
-* [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5b86f48914_0_30)
 
 * [groupby.ipynb](Activities/05-Ins_Groupby/Solved/groupby.ipynb)
 
@@ -471,13 +467,11 @@ Now that students have learned that indexes can be created by using the `groupby
 
 **Files:**
 
-* [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5b86f48914_0_126)
-
 * [multi_indexing.ipynb](Activities/08-Ins_Multi_Indexing/Solved/multi_indexing.ipynb)
 
 * [Starter File](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing.ipynb)
 
-Open the [slideshow](https://docs.google.com/presentation/d/1pFBfNwFoHcvTsG1PGCvQLS9rpQdn645n9QrqTBjP7zw/edit#slide=id.g595c28c35f_0_207) and provide an overview of multi-indexing.
+Use the slideshow to provide an overview of multi-indexing.
 
 * **Multi-indexing** is the process of indexing a dataset by more than one value. Multi-indexing is like using two bookmarks in a book. Each bookmark is an index, and depending on which index you go to, you'll get different content.
 
@@ -657,8 +651,6 @@ In this section, you will provide an overview of concatenation and then live cod
 
 **Files:**
 
-* [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5b86f48914_0_153)
-
 * [concat_dataframe.ipynb](Activities/12-Ins_Concat_DataFrame/Solved/concat_dataframes.ipynb)
 
 * [Starter File](Activities/12-Ins_Concat_DataFrame/Unsolved/concat_dataframes.ipynb)
@@ -799,9 +791,7 @@ Ask if there are any questions before moving on.
 
 This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate Sharpe ratios in the next activity. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
-**Files:**
-
-* [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5b86f48914_0_203)
+**File:**
 
 * [std_dev_risk.ipynb](Activities/15-Ins_Std_Dev_Risk/Solved/std_dev_risk.ipynb)
 
@@ -913,8 +903,6 @@ Ask if there are any questions before moving on.
 In this section, students will be introduced to Sharpe ratios and learn why risk-reward ratios are important in finance. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
 
 **Files:**
-
-* [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5e64436d8c_0_0)
 
 * [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py)
 
@@ -1058,7 +1046,7 @@ Ask if there are any questions before moving on.
 
 ### 19. Instructor Do: Decompress and End Class (5 min)
 
-**File:** [Slides](https://docs.google.com/presentation/d/1WFKfYoyONpz1uNZKXzruzNG_n5ACso4kvDqplUtPLJo/edit#slide=id.g5b86f48914_0_280)
+Use the slideshow to briefly recap today's class.
 
 Another battle won, another level completed. Students have been excelling at a quantum speed, and it's important they understand this. End the class with the following positive remarks:
 
