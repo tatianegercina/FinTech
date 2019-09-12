@@ -29,7 +29,8 @@ By the end of the unit, students will be able to:
 
 ### Instructor Notes
 
-* @TODO post LP dev
+* Before class, make sure to follow the `geth` [install instructions](https://github.com/ethereum/go-ethereum/wiki/Installing-Geth)
+  and ensure that the tool is functioning.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
