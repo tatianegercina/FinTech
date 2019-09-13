@@ -143,7 +143,7 @@ In this activity, students will perform techniques to stationarize a non-station
 
   * [stationarity.ipynb](Activities/05-Stu_Stationarity/Unsolved/stationarity.ipynb)
 
-### 4. Instructor Do: Review Activity (10 min)
+### 4. Instructor Do: Review Stationarity (5 min)
 
 **Files:**
 
@@ -851,7 +851,7 @@ Finally, walk through the steps of plotting the volatility forecast:
 
 * Based on the upward trend in the plot, the volatility of the EUR-USD exchange rate is predicted to increase over the next 5 days.
 
-### 19. Instructor Do: Reflect (5 min)
+### 16. Instructor Do: Reflect (5 min)
 
 Take a few moments to recap and reflect before ending class:
 
@@ -863,4 +863,4 @@ Take a few moments to recap and reflect before ending class:
 
 * These time-series models that you learned are used in practice everywhere, from forecasting next year's revenue to quantitative trading. As a result, you've learned a versatile tool for predicting future events.
 
-### 20. End Class
+### 17. End Class
