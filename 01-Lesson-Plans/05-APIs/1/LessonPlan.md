@@ -699,7 +699,7 @@ Open the starter file, and live code the following:
 
   ![url_parameters_8.png](Images/url_parameters_8.png)
 
-End the class with a final question:
+Ask the class the following question:
 
 * What kind of parameters should be used when working with financial APIs? One example is dates. What are others? Hint: Think attributes related to people, stocks, bank accounts, credit scores, etc.
 
