@@ -12,7 +12,8 @@ Explain each of the new command line flags:
 
 * The `--mine` flag tells the node to mine new blocks.
 
-* The `--minerthreads` flag tells `geth` how many CPU threads to use during mining. Since our difficulty is low, we can set it to 1.
+* The `--minerthreads` flag tells `geth` how many CPU threads, or "workers" to use during mining.
+  Since our difficulty is low, we can set it to 1.
 
 You should see the node `Committing new mining work`:
 
