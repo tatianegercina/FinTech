@@ -62,4 +62,8 @@ Continue the next part of the review by asking students questions and then expla
 
   * **Answer** The confusion matrix identifies the number of categorical outcome predictions made by the model and juxtaposes it against the actual results. Confusion matrices are perfect for evaluating false positives and false negatives. The classification report uses accuracy, precision, and recall to measure the performance and success of the model.The focus is on the ratio of correctly and incorrectly predicted values against all predictions.
 
+* Ask students to provide examples of when accuracy can be sacrificed?
+
+  * **Answer** When running a model where speed is more important than accuracy. A good example is when detecting fraud. It's more important to try and predict faster than to be more accurate. Time spent running a model for accuracy could result in a fraudulent transaction being processed and not flagged in time.
+
 Ask for any remaining questions before moving on.
