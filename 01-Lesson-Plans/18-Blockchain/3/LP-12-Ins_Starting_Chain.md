@@ -48,3 +48,12 @@ The output of the second node should show information about `Importing block seg
 ![node sync](Images/node-sync.png)
 
 Now it's time to have the students bring their own blockchains to life!
+
+**Note**: If you ever encounter strange errors, or need to start over without destroying the accounts,
+run the following command to clear the chain data (this will reset the enode addresses as well):
+
+```bash
+rm -Rf node1/geth node2/geth
+```
+
+This will be a key command for assisting students during the next activity.
