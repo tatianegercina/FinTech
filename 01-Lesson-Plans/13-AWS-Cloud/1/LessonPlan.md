@@ -40,7 +40,7 @@ By the end of the class, students will be able to:
 
 * Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also encourage students to work with partners.
 
-* **Important!** Slack out the disclaimer for [AWS Free Tier](../Supplemental/AWS-Free-Tier.pdf) services at the end of Today´s class. Explain students, that while we are only using free tier services in class, they should review this documentation in order to avoid accidentally incurring charges.
+* **Important!** Slack out the disclaimer for [AWS Free Tier](../Supplemental/AWS-Free-Tier.md) services at the end of Today´s class. Explain students, that while we are only using free tier services in class, they should review this documentation in order to avoid accidentally incurring charges.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
