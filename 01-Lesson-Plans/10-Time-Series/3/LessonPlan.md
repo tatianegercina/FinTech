@@ -8,7 +8,11 @@ Today's class will round out time series modeling with GARCH. Students will also
 
 By the end of this class, students will be able to:
 
-* Model and predict volatility with GARCH.
+* Create a time series linear regression model using Scikit-learn.
+
+* Analyze and predict seasonal effects using regression.
+
+* Quantify the accuracy of a linear regression model.
 
 * Define overfitting and articulate the benefits of parsimony.
 
@@ -28,7 +32,7 @@ By the end of this class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1xHeGCp3x1TFYbcTvRj2gzRrPX64cK_zaAdm49w2PNP8/edit#slide=id.g5f3ad86fc3_0_0).
+The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
@@ -36,11 +40,13 @@ Note: Editing access is not available for this document. If you wish to modify t
 
 The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
-### 1. Instructor Do: Introduction (5 min)
+- - -
+
+### 1. Instructor Do: Welcome Class (5 min)
 
 In this section, you will give a broad overview of today's class.
 
-Welcome students to the second day of the time series unit, and briefly summarize key concepts from day 2:
+Welcome students to the last day of the time series unit, and briefly summarize key concepts from the previous days:
 
 * Auto-correlation is an important feature of many time series datasets.
 
@@ -52,231 +58,401 @@ Welcome students to the second day of the time series unit, and briefly summariz
 
 Describe to students what they will be doing today:
 
-* They will learn to model volatility in a time series.
+* They will learn to quantify the accuracy of a linear regression model.
+
+* They will learn to use processes to make a time series easier to model.
+
+* They will encounter the concept of parsimony in models, an important idea in machine learning.
 
 * They will learn to validate models by training and testing them.
 
 * They will learn to create a model that can continuously update itself.
 
-### 2. Instructor Do: GARCH (15 min)
+### 2. Instructor Do: Introduction to Linear Regression (15 min)
 
 **File:**
 
-* [garch.ipynb](Activities/01-Ins_GARCH/Solved/garch.ipynb)
+* [linear_regression.ipynb](Activities/06-Ins_Linear_Regression/Solved/linear_regression.ipynb)
 
-Before introducing GARCH to the class, introduce the topic of volatility:
+In this activity, you will explain linear regression to the class and demonstrate using Scikit-learn to create a linear regression model.
 
-* Volatility can dictate the larger movements of the market. Higher volatility, for example, tends to accompany lower returns.
+Open the first [slide](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_0) and explain the linear equation (Slide 11):
 
-* In portfolio management, for example, diversifying the types of assets can help reduce risk in a volatile market, and the forecasting of volatility would help make adjustments to reduce risk.
-
-* Another example is the pricing of derivatives. The price of derivatives, such as options, are influenced much more by volatility than the price of the underlying asset. Characterizing and forecasting volatility is therefore a key skill in derivative trading.
-
-* Understanding volatility is also important to banks as loan failures can occur in a cluster. Assets must exceed liabilities, so regulators and banks alike create forecast models for asset volatility.
-
-Explain that GARCH models volatility. Open the slideshow and summarize the key features of the ARMA model (Slide 5):
-
-* An autoregressive component in which future values are predicted based on past values. In this model, values are a function of time.
-
-* A moving average component in which future values are predicted based on past errors.
-
-Explain that GARCH models are structured similarly, but to predict volatility (Slide 6):
-
-* As with ARMA models, there are autoregressive and moving average components.
-
-Formalize the term volatility (Slides 7-8):
-
-* In this context, volatility is the change in variance across a time series.
-
-* Volatility, then, is a function of time.
-
-* GARCH stands for Generalized Autoregressive Conditional Heteroskedasticity, where heteroskedasticity simply means uneven variance.
-
-
-Use the `Volatile Periods in the US Stock Market` slides to illustrate how volatility clusters and to motivate GARCH models:
-
-This slide shows an example of volatility clusters:
-
-* Volatility and returns tend to cluster.
-
-* GARCH is a model designed to take specific advantage of that.
-
-* Tracing the S&P 500 over time gives us some examples of highly volatile periods:
-
-  ![Images/garch01.png](Images/garch01.png)
-
-* The first highlighted box captures the period after the September 11th attacks and the decline of the dotcom bubble, while the second highlights the recession that began in 2008, including the collapse of Lehmann Brothers.
-
-* Scenarios such as political upheavals, natural disasters, and disruptions to oil supply can also cause volatility to cluster.
-
-Explain that the cause of financial market volatility is largely psychological:
-
-* When a big, unexpected event occurs, there is much uncertainty about the future.
-
-* It takes time for people to figure out the financial impact, and until then, there are disagreements about the impact.
-
-* It is these disagreements that lead to the volatility.
-
-Open the notebook and walk through a code example of using GARCH to predict volatility. First, explain that like an ARMA model, a GARCH model assumes stationarity:
-
-  ![Images/garch02.png](Images/garch02.png)
-
-* The closing price has been stationarized by transforming it into returns.
-
-* Volatility clusters are visible here in plot of S&P returns, notably between 2008 and 2010 or so.
-
-Explain the data preparation steps:
-
-  ```python
-  returns = sp500.loc['2008':'2009'].Close.pct_change() * 100
-  returns = returns.dropna()
+  ```
+  y = mx + b
   ```
 
-* The closing prices are stationarized as returns and multiplied by 100 for ease of view.
+  * This equation describes, or models, the relationship between variables x and y.
 
-* Numbers that are NaNs are dropped.
+  * As x increases, y increases.
 
-Explain that the steps of creating a GARCH model are very similar to that of an ARMA model:
+  * How fast y increases in relation to x is called the slope.
+
+  * Slope is represented by the letter `m` in the equation.
+
+  * The value of `y` when `x` is 0 is called the y-intercept. It is represented by the letter `b`.
+
+Open the next [https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_19](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_19) and ask whether, on visual inspection, a trend exists (Slide 12):
+
+  ![Images/linear_regression01.png](Images/linear_regression01.png)
+
+  * `y` increases as `x` increases.
+
+Explain that a line that best fits the trend can be drawn:
+
+  ![Images/linear_regression02.png](Images/linear_regression02.png)
+
+  * This line is called the best fit line, and computing it is called linear regression.
+
+  * The equation is simple but tedious, and is best solved by a computer.
+
+Explain that, in other words, linear regresson identifies the line that best predicts `y` based on the value of `x`.
+
+Explain the concept of residuals.
+
+  * Even a best fit line that captures the data well is seldom, if ever, perfect.
+
+  * A residual is the difference between the **predicted** value of `y` and its **actual** value.
+
+  * Linear regression seeks to minimize the **square** value of residuals.
+
+Summarize the key points of linear regression:
+
+  * It models data with a linear trend. It is not useful when the data does not follow a linear trend, e.g. exponential trends.
+
+  * Based on the X values, it predicts Y values.
+
+  * It does not do a good job of describing non-linear patterns. We will cover techniques to model non-linear data later in the course.
+
+Now that students understand linear regression conceptually, walk through the steps of performing linear regression in Python. Here are some introductory remarks:
+
+  * The CSV contains data on years of job experience and salary.
+
+  ![Images/linear_regression03.png](Images/linear_regression03.png)
+
+  * We will use Scikit-learn, a machine learning library, to create a linear regression model.
+
+Engage the class by asking, in a linear regression model, which column will be the dependent variable, and which the independent variable.
+
+  * `YearsExperience` will be the independent variable, or `x`.
+
+  * `Salary` will be the independent variable, or `y`.
+
+Explain that in order to use Scikit-learn (sklearn) for regression, the independent variable (x) will need to be reformatted:
 
   ```python
-  from arch import arch_model
-  model = arch_model(returns, mean="Zero", vol="GARCH", p=1, q=1)
-  res = model.fit(disp="off")
-  res.summary()
+  X = df.YearsExperience.values.reshape(-1, 1)
   ```
 
-* From the `arch` module, `arch_model` is imported.
+  * Scikit-learn cannot take in a pandas Series directly.
 
-* The arguments `mean="Zero", vol="GARCH"` specify the GARCH model.
+  * `reshape(-1, 1)` reshapes, or formats, the data.
 
-* The arguments `p=1, q=1`, as in ARMA models, specify the auto-regressive and moving average orders. These can be identified by the same process of plotting the ACF and the PACF, and identifying AIC and BIC values.
+  * `X.shape` returns `(30,1)`, meaning that `X` has 30 rows and 1 column of data.
 
-  * To reiterate, `p` is the AR component of the model
-  * and `q` is the MA component of the model
-  * the concept is similar to ARMA, except here we're forecasting volatility.
+  * The dependent variable can remain a pandas series, as seen by `y = df.Salary`.
 
-* The model is created, fits the data, and the summary is printed.
-
-  ![Images/garch03.png](Images/garch03.png)
-
-* The results are plotted. Here, `annualize='D'` argument reflects a scaling by 252 trading days that are in a year.
-
-Explain that the model can also be used to plot a forecast of _volatility_:
+Walk through the boiler plate code:
 
   ```python
-  forecast_horizon = 3
-  forecasts = res.forecast(start='2009-12-31', horizon=forecast_horizon)
-
-  intermediate = np.sqrt(forecasts.variance.dropna()*252)
-  final = intermediate.dropna().T
-  final.plot()
+  model = LinearRegression()
+  model.fit(X,y)
   ```
 
-* The forecast will be generated for 3 trading days.
+  * A linear regression model is created (instantiated) using Scikit-learn, and the data are fit into the model.
 
-* The `forecast()` method generates forecast values.
+Explain how to obtain the parameters of the model, its slope and y-intercept:
 
-* Intermediate steps are taken to format the data properly for plotting. The standard deviation is taken of the forecast values by taking the square root of the variance, then transposed (with `T`), then plotted.
+  ```python
+  print(model.coef_)
+  print(model.intercept_)
+  ```
 
-Show the plot of the volatility forecast:
+  * Again, Scikit-learn creates a linear equation model based on the data (y = mx + b).
 
-  ![Images/garch04.png](Images/garch04.png)
+  * `model.coef_` is the slope of the equation.
 
-  * This chart shows our estimate of volatility of the S&P 500 for the next three days.
+  * `model.intercept_` is the y-intercept.
 
-  * The chart shows that volatility (i.e., risk) in the market is expected to rise.
+Explain that the power of a linear regression model comes from its ability to describe and to predict.
 
-  * Therefore, with GARCH, we've developed a cool way to forecast risk in the market.
+  ```python
+  predicted_y_values = model.predict(X)
+  ```
 
-### 3. Students Do: Euro-USD Volatility (15 min)
+  * This line creates an array of predicted y values based on x values.
+
+  * In other words, if given an x-value (years of experience) that is not in the data set, the model will predict the corresponding y-value (salary).
+
+Show the best fit line created by the regression model:
+
+  ![Images/linear_regression04.png](Images/linear_regression04.png)
+
+  * In this case, it describes the existing data very closely.
+
+Do not dwell on the r-square value, but explain that there is a strong relationship between the two variables in the data set:
+
+  ![Images/linear_regression05.png](Images/linear_regression05.png)
+
+  * We will explore measures of accuracy in greater detail in an upcoming activity.
+
+### 3. Students Do: House Regression (15 min)
+
+In this activity, students will perform linear regression on number of rooms in houses versus their prices.
 
 **Files:**
 
-* [README.md](Activities/02-Stu_USD/README.md)
+* [README.md](Activities/07-Stu_House_Regression/README.md)
 
-* [USD_per_Euro_Hourly_Mid Prices.csv](Activities/03-Stu_USD/Resources/USD_per_Euro_Hourly_Mid Prices.csv)
+* [USA_Housing.csv](Activities/07-Stu_House_Regression/data/USA_Housing.csv)
 
-* [usd.ipynb](Activities/02-Stu_USD/Unsolved/usd.ipynb)
-
-### 4. Instructor Do: Review Activity (10 min)
+### 4. Instructors Do: Review House Regression (10 min)
 
 **Files:**
 
-* [usd.ipynb](Activities/02-Stu_USD/Solved/usd.ipynb)
+* [housing.ipynb](Activities/07-Stu_House_Regression/Solved/housing.ipynb)
 
-Open the notebook and display the plot of the exchange rate:
+Open the solution, and complete a dry walk through of the code:
 
-  ![Images/usd01.png](Images/usd01.png)
-
-* Volatility appears to be more pronounced in the years 2015-2017.
-
-* The series is non-stationary. It will need to be stationarized to use GARCH.
-
-```python
-df['Return'] = df.Rate.pct_change() * 100 * 24
-df = df.resample('D').mean()
-df = df.dropna()
-df.head()
-```
-
-* The pct_change() in the above code makes the data stationary.
-
-* The DataFrame is resampled. Since we start with hourly exchange rates, we'll convert them from hourly to daily using the above block of code.
-
-* Specifically, this block starts by calculating the percentage hourly return.
-
-  * These hourly returns are scaled up to daily, by multiplying by 24 (currency markets trade 24 hours per day).
-
-  * The resample('D') function then calculates the daily average percentage return.
-
-* The plot of the resulting stationarized series also confirms the clustering of volatility seen in 2015, 2016, and 2017:
-
-  ![Images/usd02.png](Images/usd02.png)
-
-Explain the code for creating the GARCH model in Python:
+* Linear regression models can be implemented using the Scikit-learn package. A LinearRegression module is included and can be imported into the Python environment.
 
   ```python
-  model = arch.arch_model(returns, mean="Zero",  vol="GARCH", p=2, q=2)
-  res = model.fit(disp="off")
-  res.summary()
+  from sklearn.linear_model import LinearRegression
+  model = LinearRegression()
   ```
 
-* The AR and MA orders, specified as `p` and `q`, were given in this activity.
+  ![scikit-learn.png](Images/scikit-learn.png)
 
-* However, students can use ACF and PACF plots, as well as AIC and BIC, to identify the GARCH model order, just as they have done in ARMA AND ARIMA.
-
-Next, walk through the code for plotting the volatility forecast:
+* In order to create a linear regression model, **x** and **y** values must be identified. In this case, **x** will be the number of rooms in the house, and it will be reshaped. This will ensure the model is fitted to the data.
 
   ```python
-  forecast_horizon = 5
-  forecasts = res.forecast(start='2019-12-08', horizon=forecast_horizon)
+  X = df.index.values.reshape(-1,1)
+  y = df['Price']
+
+  model.fit(X,y)
+  predicted_y_values = model.predict(X)
   ```
 
-* The last date of the dataset (which can be identified by `df.tail()`) is 2019-12-08. It is defined as the starting date of the forecast.
+  ![model_predict.png](Images/model_predict.png)
 
-* The `forecast_horizon` is defined as 5, meaning the forecast for the next 5 days will be generated.
-
-* A forecast is generated with the `forecast()` method.
-
-Finally, walk through the steps of plotting the volatility forecast:
+* The `model.predict()` function can be used to implement predictive analysis. The function will return an array of predicted y-values. This data can then be plotted using a **scatter** plot to highlight the correlation.
 
   ```python
-  intermediate = np.sqrt(forecasts.variance * 252)
-  final = intermediate.dropna().T
-  final.plot()
+  # Plot the results. The best fit line is red.
+  plt.scatter(X, y)
+  plt.plot(X, predicted_y_values, color='red')
   ```
 
-* With `np.sqrt(forecasts.variance * 252)`, the standard deviation of forecasts is scaled by 252 to account for the number of trading days in a year (standard deviation is the square root of variance).
+  ![scatter_plot.png](Images/scatter_plot.png)
 
-* All NaNs are dropped, and the results are transposed with `T`. The transpose  switches the rows and columns to make it easier to plot.
+* The `model` object can be used to then extract the model coefficient (slope), y intercept, and model score. This can be done using the `coef_`, `intercept_`, and `score` attributes/functions.
 
-* The volatility is plotted with the `pd.plot()` method:
+  ![model_attributes.png](Images/model_attributes.png)
 
-  ![Images/usd04.png](Images/usd04.png)
+If time remains, ask students some of the following review questions:
 
-* Based on the upward trend in the plot, the volatility of the EUR-USD exchange rate is predicted to increase over the next 5 days.
+* What is the purpose behind a linear regression model?
 
-### 5. Instructor Do: Overfitting and Parsimony (10 min)
+  * **Answer** Linear regression is used to perform predictive analysis.
+
+* What type of relationship does linear regression explore?
+
+  * **Answer** The relationship between dependent and independent variables.
+
+* What makes a **scatter** plot a good plot to use for visualizing linear regressions?
+
+  * **Answer** Both linear regression models and scatter plots emphasize the relationships and impact of two or more variables.
+
+Ask if students have any questions before moving forward.
+
+### 5. Instructor Do: Time Series Linear Regression (15 min)
+
+**Files:**
+
+* [time_series_simple_regression.ipynb](Activities/08-Ins_Time_Series_Linear_Regression/Solved/time_series_simple_regression.ipynb)
+
+Inform the class that the idea of linear regression for time series is the same as in the previous example, but that the implementation requires a few tweaks.
+
+Open the notebook and show the data frame:
+
+* This is a data frame of weather data in Austin, TX in 2010.
+
+* The data frame has been sliced to contain data from May through July of 2010.
+
+  ![Images/ts_regression01.png](Images/ts_regression01.png)
+
+Show the Temperature column plotted against the date:
+
+  ![Images/ts_regression02.png](Images/ts_regression02.png)
+
+Explain that the goal is to perform linear regression of temperature and the date.
+
+Explain the next two lines of code. As seen before, Scikit-learn's models require that the X variable be formatted in the correct shape.
+
+  ```python
+  X = df['Temperature'].to_frame()
+  X.shape
+  ```
+
+* Converting the column into a data frame gives it 2208 rows and 1 column of data.
+
+Explain that datetime objects have attributes, such as day of the year.
+
+  ```python
+  X['Day_of_Year'] = X.index.dayofyear
+  ```
+
+* This creates a new column, called `Day_of_Year`.
+
+* `X.index` is in datetimeformat, and has attributes such as `dayofyear`, `weekofyear`, etc. that can be extracted from it.
+
+* More attributes can be found in the [documentation](https://pandas.pydata.org/pandas-docs/version/0.24.2/reference/api/pandas.DatetimeIndex.html)
+
+Explain creating dummy variables. The `pd.get_dummies()` method creates a column for each day of the year, and for each row assigns a numerical value for that day.
+
+  ```python
+  X_binary_encoded = pd.get_dummies(X, columns=['Day_of_Year'])
+  ```
+
+* Dummy variables are necessary because days are not continuous; they are categorical.
+
+* As an example, the day 121 of the year is assigned 1 for day 121, but 0 for all other days.
+
+  ![Images/ts_regression03.png](Images/ts_regression03.png)
+
+Use the slides to show the regression equation that results from the process:
+
+  ![Images/regression_equation01.gif](Images/regression_equation01.gif)
+
+* Each day is given its own weight in the overall equation.
+
+* Because each day is a separate variable in the equation, this is called multiple regression.
+
+Additionally, explain that we delete the extraneous column in the data frame created by `pd_get_dummies()`. The argument `axis=1` specifies that it is the column that is dropped. (For rows, it would be `axis=0`.)
+
+  ```python
+  X_binary_encoded = X_binary_encoded.drop('Temperature', axis=1)
+  ```
+
+Explain that the rest of the code is familiar from previous examples:
+
+  ```python
+  y = df['Temperature'].copy()
+  model = LinearRegression()
+  results = model.fit(X_binary_encoded, y)
+  predictions = model.predict(X_binary_encoded)
+  ```
+
+  * The `Temperature` column is specified as the dependent variable array.
+
+  * A model is created, and fits the independent and dependent variables.
+
+  * An array of predictions is created using `model.predict()`.
+
+Explain that the metrics of the linear regression model are generated:
+
+  ```python
+  from sklearn.metrics import mean_squared_error, r2_score
+  import numpy as np
+  r2 = r2_score(y, predictions)
+  mse = mean_squared_error(y, predictions)
+  rmse = np.sqrt(mse)
+  ```
+
+Note that the r-square value, at 0.23, is fairly low, and that we will cover the interpretation of these numbers in an upcoming activity.
+
+Note also that the trend appears at least somewhat linear for the specified timeline, but that a longer timespan, say from January through December, will not be good for a linear regression model.
+
+  * This underscores the important that linear regression, rather than a mechanical process, requires thinking about the variables.
+
+  * It also highlights the importance of plotting the data before reaching a conclusion!
+
+Take a moment to summarize the key points of this activity:
+
+  * The idea is the same as before. We use Scikit-learn to create a model of the independent variable (X) and the dependent variable (y).
+
+  * Because datetime data cannot be directly imported into a Scikit-learn model, we've had to create a binary encoding for each row, and drop an unnecessary column.
+
+Finally, if time allows, quickly demonstrate an approximate visualization of the linear regression best fit line.
+
+  ![Images/ts_regression04.png](Images/ts_regression04.png)
+
+### 6. Students Do: Oil Futures (15 min)
+
+In this activity, students will identify seasonal effects in oil futures prices with linear regression.
+
+**Files:**
+
+* [README.pdf](Activities/09-Stu_Time_Series_Linear_Regression/README.pdf)
+
+* [oil_futures_starter.ipynb](Activities/09-Stu_Time_Series_Linear_Regression/Unsolved/oil_futures_starter.ipynb)
+
+### 7. Instructor Do: Review Oil Futures (10 min)
+
+**Files:**
+
+* [oil_futures.ipynb](Activities/09-Stu_Time_Series_Linear_Regression/Solved/oil_futures.ipynb)
+
+Explain that, rather than the settle prices, we're working with returns, the daily change of the settle price in percentage terms. The returns are multiplied by 100 to make the numbers easier to work with.
+
+  ```python
+  returns = df.Settle.pct_change() *100
+  ```
+
+  ![seattle_returns.png](Images/seattle_returns.png)
+
+Explain that we need a column of returns, and lagged returns, which will be regressed:
+
+  ```python
+  df['Return'] = returns.copy()
+  df['Lagged_Return'] = returns.shift()
+  df = df.dropna()
+  ```
+
+  * Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called auto-regression, and will be further discussed in day 2.
+
+  * A column of lagged returns is created by shifting each value downward by 1 row.
+
+  * NaN values must be dropped.
+
+Go over the steps of preparing the data to use in Scikit-learn:
+
+  ```python
+  X = df['Lagged_Return'].to_frame()
+  X['Week_of_year'] = X.index.weekofyear
+  ```
+
+  * Creating the `X` data frame with `to_frame()` shapes the data in requisite shape, and it returns a usable datetime index.
+
+  * The `weekofyear` attribute is used to create a column for the week of the year.
+
+Next, explain that dummy variables are created for each week of the year. Communiate that the function creates dummy variables for each week. That is, it assigns a value of 0 or 1 for each week. For a date that falls on week 7, for example, it will assign 1 for week 7 and 0 to all other weeks.
+
+  ```python
+  X_binary_encoded = pd.get_dummies(X, columns=['Week_of_year'])
+  ```
+
+  ![get_dummies.png](Images/get_dummies.png)
+
+* Quickly go through the rest of the code, which is boiler plate and includes creating a regression model is created on lagged returns and returns, making predictions, and then generating r-square value.
+
+  ```python
+  y = df['Return']
+  model = LinearRegression()
+  res = model.fit(X_binary_encoded, y)
+  predictions = model.predict(X_binary_encoded)
+  r2 = r2_score(y, predictions)
+  ```
+
+  ![model_2.png](Images/model_2.png)
+
+- - -
+
+### 8. Break (40 min)
+
+- - -
+
+### 9. Instructor Do: Overfitting and Parsimony (10 min)
 
 Open the slideshow and introduce the concept of overfitting:
 
@@ -320,7 +496,7 @@ Explain that we have already seen parsimony in action:
 
 * AIC and BIC reward models for fitting data accurately, but punish them for having a large number of parameters.
 
-### 6. Instructor Do: Train, Test, Split (10 min)
+### 10. Instructor Do: Train, Test, Split (10 min)
 
 **File:**
 
@@ -445,7 +621,7 @@ Finally, walk through the error metrics:
 
 * The in-sample (_training_ sample) RMSE, at 1.65, is higher than the out-of-sample (_testing_ sample) at 0.70. Typically, out-of-sample errors are higher than in-sample errors.
 
-### 7. Students Do: Ripple (30 min)
+### 11. Students Do: Ripple (20 min)
 
 In this activity, students will create GARCH and linear regression models for the price of Ripple (XRP), a cryptocurrency. They will validate the latter model with training and test sets.
 
@@ -457,7 +633,7 @@ In this activity, students will create GARCH and linear regression models for th
 
 * [xrp.ipynb](04-Stu_Ripple/Unsolved/xrp.ipynb)
 
-### 8. Instructor Do: Review Activity (10 min)
+### 12. Instructor Do: Review Activity (10 min)
 
 A detailed walk-through of the code is given below. However, in the interest of time, use your judgment to highlight the major points and gloss over parts students have seen repeatedly.
 
@@ -554,13 +730,7 @@ Finally, go over the metrics of the in-sample and out-of-sample predictions:
 
   * This could be due to the fact that our out-of-sample period is small, so just by chance, the model happened to do better out-of-sample than in-sample.
 
-- - -
-
-### 9. Break (40 min)
-
-- - -
-
-### 10. Instructor Do: Rolling Out-of-Sample (15 min)
+### 13. Instructor Do: Rolling Out-of-Sample (15 min)
 
 **File:**
 
@@ -729,7 +899,7 @@ Walk through the for-loop:
 
 Reassure students that they will be able to use this notebook as a reference for future calculations.
 
-### 11. Students Do: Rolled Gold (30 min)
+### 14. Students Do: Rolled Gold (25 min)
 
 In this activity, students will perform predictions with linear regression on a rolling out-of-sample basis, in order to predict the price of gold.
 
@@ -741,7 +911,7 @@ In this activity, students will perform predictions with linear regression on a 
 
 * [gold.ipynb](Activities/06-Stu_Rolled_Gold/Unsolved/gold.ipynb)
 
-### 12. Instructor Do: Review Activity (10 min)
+### 15. Instructor Do: Review Rolled Gold (10 min)
 
 **File:**
 
@@ -875,26 +1045,24 @@ Rolling Out-of-Sample Model:
 
   * The fact that the two are close to each other in value though does suggest that our model is reasonably stable.
 
-### 13. Instructor Do: Reflect (10 min)
+Congratulate the class for making it through their first week of Machine Learning! This is a very valuable skill that is currently changing the face of finance.
 
-Take a few moments to recap and reflect before ending class:
+### 16. Instructor Do: Career Services Lesson (35 min)
 
-* We learned that understanding volatility is important in financial forecasting, and we learned a useful model to predict volatility (GARCH).
+**Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
 
-* We learned about the risks of overfitting, and we learned to select model orders parsimoniously when required.
+Explain to students that now that they have completed their first projects and are starting to learn new things such as machine learning, it is time to think about updating resumes to showcase these valuable skills!
 
-* We learned to validate a model by splitting a dataset into train and test sets.
+Use the following slides and lesson plan to discuss the Career Services content for this week.
 
-* We learned to apply train/test split to a model that continuously updates itself on a rolling basis.
+**Files:**
 
-* We learned what time-series data is, and how to build models specifically tailored for the unique challenges inherent in such data.
+* [Career Services Slides](https://docs.google.com/presentation/d/1f1h9TRxFlHJLEiL53kRMULt2FpG5hm_LJsnd7hY4AIQ/edit?usp=sharing)
 
-* We learned how to identify stationary and non-stationary time series data, and which types of models are best for which type.
+* [Career Services Lesson Plan](https://docs.google.com/document/d/1BGoLNt4zrD7wJUXwt0KDm4Ubxuljmc07tDJ4ocfeWpE/edit?usp=sharing)
 
-* Machine learning is really about fitting a model to the data and making predictions with it.
+### End Class
 
-* Most machine learning libraries follow the Model -> Fit -> Predict pattern making it very easy to train and test different models.
+---
 
-* Data Preparation and model evaluation are often the most time consuming and most important part of machine learning.
-
-### 14. End Class
+© 2019 Trilogy Education Services
