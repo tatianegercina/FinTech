@@ -184,17 +184,60 @@ Explain that the power of a linear regression model comes from its ability to de
 
   * In other words, if given an x-value (years of experience) that is not in the data set, the model will predict the corresponding y-value (salary).
 
-Show the best fit line created by the regression model:
+Use the slideshow and recapitulate the linear regression plot below, which we have seen previously:
 
-  ![Images/linear_regression04.png](Images/linear_regression04.png)
+  ![Images/error01.png](Images/error01.png)
 
-  * In this case, it describes the existing data very closely.
+* The blue dots are a scatter plot of data points (years of experience vs salary).
 
-Do not dwell on the r-square value, but explain that there is a strong relationship between the two variables in the data set:
+* The red line is the best fit line. It represents the linear regression model.
 
-  ![Images/linear_regression05.png](Images/linear_regression05.png)
+* The distance between each data point and the best fit line is referred to as the error.
 
-  * We will explore measures of accuracy in greater detail in an upcoming activity.
+Explain that the linear regression model is mathematically constructed to **minimize** the the sum of all the errors after they have been squared (Slide 4).
+
+  ![Images/error01.jpg](Images/error02.jpg)
+
+Explain that one way to assess the accuracy of a linear regression model is to look at the errors:
+
+* The **mean squared error**, or **MSE**, as the name states, is the average of the square of the errors of the dataset. It is the variance of the errors in the dataset.
+
+* The **root mean square error**, or **RMSE**, is simply the square root of the MSE. It is therefore the standard deviation of the errors in the dataset.
+
+* Lower MSE and RMSE scores, of course, indicate a more accurate model.
+
+Explain that R2, or r-square, is a way to assess the relationship between two variables.
+
+* The correlation coefficient is a numerical description of the extent to which the two variables move  together. It ranges from -1 to 1.
+
+* **R2**, or **r-square value**, is simply the square of the correlation coefficient. It describes the extent to which a change in one variable is associated with the change in the other variable. It ranges from 0 to 1.
+
+Having explained the general concepts, go over the code implementations of these metrics. Open the notebook and walk through the code:
+
+  ```python
+  from sklearn.metrics import mean_squared_error, r2_score
+  import numpy as np
+
+  score = model.score(X_binary_encoded, y)
+  r2 = r2_score(y, predictions)
+  mse = mean_squared_error(y, predictions)
+  rmse = np.sqrt(mse)
+  np.std(y)
+  ```
+
+* After importing the pertinent `sklearn` modules, the R2, MSE, and RMSE are calculated.
+
+* The RMSE is simply the square root of the mean squared error. A lower RMSE score (near 0) is ideal and means the model is fit well to the data.
+
+Explain that you can also compare the RMSE to the standard deviation to get a better feel for the model fit.
+
+* Ideally, the RMSE will not exceed the standard deviation of the temperature data.
+
+* The standard deviation of the temperature, calculated by `np.std()`, is 3.84.
+
+* The RMSE, or the standard deviation of the error, is 6.38.
+
+* The RMSE exceeds the standard deviation, indicating that the model may not be very helpful. In other words, on average there are wider swings in the error than the measured temperatures.
 
 ### 3. Students Do: House Regression (15 min)
 
