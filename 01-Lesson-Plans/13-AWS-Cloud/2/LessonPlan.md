@@ -668,7 +668,7 @@ Collaborate with TAs, on assisting students to delete all the AWS resources that
 
 ![Downloading a Jupyter notebook](Images/download-notebook-sm.png)
 
-Answer any questions before ending the class.
+Answer any questions before finishing the class.
 
 ---
 
