@@ -430,7 +430,7 @@ In this activity, students will identify seasonal effects in oil futures prices 
 
 * [oil_futures_starter.ipynb](Activities/09-Stu_Time_Series_Linear_Regression/Unsolved/oil_futures_starter.ipynb)
 
-### 7. Instructor Do: Review Oil Futures (10 min)
+### 7. Instructor Do: Review Oil Futures (5 min)
 
 **Files:**
 
@@ -664,7 +664,7 @@ Finally, walk through the error metrics:
 
 * The in-sample (_training_ sample) RMSE, at 1.65, is higher than the out-of-sample (_testing_ sample) at 0.70. Typically, out-of-sample errors are higher than in-sample errors.
 
-### 11. Students Do: Ripple (20 min)
+### 11. Students Do: Ripple (15 min)
 
 In this activity, students will create GARCH and linear regression models for the price of Ripple (XRP), a cryptocurrency. They will validate the latter model with training and test sets.
 
@@ -942,7 +942,7 @@ Walk through the for-loop:
 
 Reassure students that they will be able to use this notebook as a reference for future calculations.
 
-### 14. Students Do: Rolled Gold (25 min)
+### 14. Students Do: Rolled Gold (15 min)
 
 In this activity, students will perform predictions with linear regression on a rolling out-of-sample basis, in order to predict the price of gold.
 
