@@ -2,7 +2,7 @@
 
 This activity is intended to give students a few minutes to explore SageMaker.
 
-Ask students to login into their [AWS Console](ttps://console.aws.amazon.com) and highlight the following:
+Ask students to login into their [AWS Console](https://console.aws.amazon.com) and highlight the following:
 
 * The Amazon SageMaker service could be reached at the _Find Services_ search box by typing `sagemaker` on it.
 
