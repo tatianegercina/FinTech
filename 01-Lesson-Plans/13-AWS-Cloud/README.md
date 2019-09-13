@@ -1,4 +1,4 @@
-## Unit 13 - Unsupervised Learning and The Cloud
+## Unit 13 - AWS
 
 ### Lesson Plans
 
@@ -12,6 +12,6 @@
 
 * [Instructions](../../02-Homework/13-AWS-Lex/Instructions/README.md)
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
