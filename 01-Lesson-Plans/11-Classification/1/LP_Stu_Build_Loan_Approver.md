@@ -56,7 +56,7 @@ Continue the next part of the review by asking students questions and then expla
 
 * Based off of the precision and recall returned from the classification report, how has this model performed?
 
-  * **Answer** The model would benefit from additional fitting/training. The model currently denies users more than approves, even when it should approve.
+  * **Answer** The model would benefit from additional fitting/training. The model currently denies users more than it approves, even when it should approve. The accuracy averages only to ~50%.
 
 * What is the difference between the confusion matrix and the classification report?
 
