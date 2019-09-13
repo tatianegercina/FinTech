@@ -186,13 +186,11 @@ _[Cryptocurrencies coins by Worldspectrum](https://www.pexels.com/@worldspectrum
 
 You are a Senior Manager at the Advisory Services team on a [Big Four firm](https://en.wikipedia.org/wiki/Big_Four_accounting_firms), one of your most important clients, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers, however, they are lost in the immense universe of cryptocurrencies, they ask you to present a report of what cryptocurrencies are on the trading market and how cryptocurrencies could be grouped towards creating a classification for developing this new investment product.
 
-In this homework assignment, you have the opportunity to put in action your new unsupervised learning and Amazon SageMaker skills cluster cryptocurrencies and create some plots to present your results.
+In this homework assignment, you have the opportunity to put in action your new unsupervised learning and Amazon SageMaker skills to cluster cryptocurrencies and create some plots to present your results.
 
-You are asked to accomplis the following main tasks:
+You are asked to accomplish the following main tasks:
 
-* **[Fetching Cryptocurrency Data](#Fetching-Cryptocurrency-Data):** Retrieve cryptocurrencies data using the CryptoCompare API.
-
-* **[Data Preprocessing](#Data-Preprocessing):** Prepare data for dimension reduction with PCS and clustering using K-Means.
+* **[Data Preprocessing](#Data-Preprocessing):** Prepare data for dimension reduction with PCA and clustering using K-Means.
 
 * **[Reducing Data Dimensions Using PCA](#Reducing-Data-Dimensions-Using-PCA):** Reduce data dimension using the `PCA` algorithm from `sklearn`.
 
@@ -212,25 +210,11 @@ You are asked to accomplis the following main tasks:
 
 ### Instructions
 
-#### Fetching Cryptocurrency Data
-
-In this section you have to fetch information about cryptocurrencies from _CryptoCompare_ using this endpoint: `https://min-api.cryptocompare.com/data/all/coinlist`.
-
-The retrieved data should be stored on a Pandas DataFrame named `crypto_df`, initially the DataFrame should have an structure as follows.
-
-![Initial crypto_df structure](Images/initial_crypto_df.png)
-
 #### Data Preprocessing
 
-Once you created the initial DataFrame with the data retrieved from _CryptoCompare_, you should accomplish the following data preprocessing tasks over the `crypto_df` DataFrame.
+In this section, you have to load the information about cryptocurrencies from the provided `CSV` file and perform some data preprocessing tasks. The data was retrieved from  _CryptoCompare_ using this endpoint: `https://min-api.cryptocompare.com/data/all/coinlist`.
 
-1. Change the arrangement of the `crypto_df` DataFrame to have the following structure, as you can see now the columns becomes rows, and the rows becomes columns.
-
-    ![crypto_df transposed](Images/crypto_df_transposed.png)
-
-2. Remove some columns that won't be necessary for clustering, keep only the following columns in the `crypto_df` DataFrame: `"CoinName", "Algorithm", "IsTrading", "ProofType", "TotalCoinsMined", "TotalCoinSupply"`. The resulting DataFrame should look as follows.
-
-    ![Working columns](Images/crypto_df_working_columns.png)
+Start by loading the data in a Pandas DataFrame named `crypto_df`, and continue with the following data preprocessing tasks.
 
 3. Remove all cryptocurrencies that are not on trading.
 
@@ -241,8 +225,6 @@ Once you created the initial DataFrame with the data retrieved from _CryptoCompa
 6. Remove all cryptocurrencies with at least one null value.
 
 7. Remove all cryptocurrencies without coins mined.
-
-8. There are some columns values missing that contains the text value `N/A`, remove all cryptocurrencies with at least one `N/A` text value on any column.
 
 9. Store the names of all cryptocurrencies on a DataFramed named `coins_name`, use the `crypto_df.index` as the index for this new DataFrame.
 
