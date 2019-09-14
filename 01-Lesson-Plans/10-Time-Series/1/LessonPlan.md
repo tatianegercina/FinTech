@@ -84,13 +84,29 @@ Open the slides, and highlight the following:
 
 * Emphasize that machine learning, in a nutshell, is just the application of statistical methods as functions with inputs. However, instead of a developer configuring inputs, the computer learns how to configure inputs itself and makes changes as needed.
 
-* Explain that machine learning algorithms have been transforming a range of industries, including finance, healthcare, homeland security, and space exploration, just to name a few. **Machine learning** is used to predict loan eligibility, foreclosure rates, fraud and money laundering, disease, presidential election results, natural storms and disasters, planetary climate and atmosphere conditions/composition, etc. Machine learning is at the forefront of all initiatives to make data driven decisions.
+* Explain that machine learning algorithms have been transforming a range of industries, including finance, healthcare, agriculture, marketing, homeland security, and space exploration, just to name a few. **Machine learning** is used to:
 
-  * The predictions made by **machine learning** algorithms are driving decision making at a global level. Commercial and government leaders all leverage **machine learning** in some capacity: **machine learning** outcomes are helping industries become more proactive than reactive.
+  * Predict loan eligibility
 
-* Communicate to students that the world of **machine learning** is sometimes viewed as a nebulous and enigma: a niche field of programming full of heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, **machine learning** is just the application of statistics and statistical libraries to solve data and business problems.
+  * Foreclosure rates
 
-* Like all other functions, the statistical functions needed to execute machine learning pipelines are provided as libraries. Common machine learning libraries include **Sci-kit Learn** and **SciPy**. These libraries make machine learning as simple as calling Pandas functions.
+  * Fraud and money laundering
+
+  * Disease diagnosis and prognosis
+
+  * Consumer segmentation and clustering
+
+  * Presidential election results
+
+  * Occurrence/effects/impacts of natural storms and disasters
+
+  * Planetary climate and atmosphere conditions/composition, etc.
+
+* Underscore to students that the predictions made by **machine learning** algorithms are driving decision making at a global scale. Commercial and government leaders all leverage **machine learning** in some capacity: **machine learning** outcomes are helping industries become more proactive than reactive. Machine learning is at the forefront of all initiatives to make data driven decisions.
+
+* Communicate to students that the world of **machine learning** is sometimes viewed as a nebulous and enigmatic: a niche field of programming involving heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, it is just the application of statistics and statistical libraries to solve data and business problems.
+
+  * Like all other functions, machine learning statistical functions are provided as libraries. Common machine learning libraries include **Sci-kit Learn** and **SciPy**. Services like Amazon Web Services and Google Cloud Platform offer proprietary machine learning libraries that can be used within their cloud ecosystems. These libraries, as well as the open source community, make execution of machine learning models as simple as calling a Pandas functions.
 
 Ask students what they think machine learning can do? Ask what ideas they have as to why someone would go through the effort of using advanced statistical algorithms when a developer can just use Monte Carlo simulations to make predictions?
 
@@ -102,13 +118,17 @@ Define **intelligent algorithms** for students. Explain that **intelligent algor
 
 * **Intelligent algorithms** are used to fuel machine learning, predictive analytics, and artificial intelligence.
 
-Explain the similarities and differences between machine learning, predictive analytics, and artificial intelligent.
+Explain the similarities and differences between machine learning, predictive analytics, and artificial intelligence.
 
 * Machine learning has two approaches to using  **intelligent algorithms**.
 
-  * One one approach is **supervised learning**, which involves a programmer feeding the algorithm valuable data learn from and make predictions.
+  * One one approach is **supervised learning**, which involves a programmer feeding the algorithm valuable data learn from and make predictions. Supervised learning includes classification and regression.
 
-  * The other is **unsupervised learning**, where the **intelligent algorithm** learns on the fly without having seen any type of data before. The algorithm will identify all data points, cluster them, and use statistical analysis to make predictions. Eventually, the algorithm will learn for itself.
+  * The other is **unsupervised learning**, where the **intelligent algorithm** learns on the fly without having seen any type of data before. The algorithm will identify all data points, cluster them, and use statistical analysis to make predictions. Eventually, the algorithm will learn for itself. Unsupervised learning includes dimensionality reduction and clustering approach.
+
+* Predictive analytics is the use of advanced analytics paradigms (machine learning, intelligent algorithms, etc.) to analyze data and forecast outcomes and values. Machine learning is component of predictive analytics, and predictive analytics is an objective of machine learning.
+
+* Artificial intelligence is the use of machine learning... [TBD]
 
 Stimulate excitement by showing students example uses cases for machine learning.
 
