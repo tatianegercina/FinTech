@@ -58,6 +58,12 @@ By the end of this class, students will be able to:
 
   * [Predictive Analytics for FinTech](https://www.prnewswire.com/news-releases/predictive-analytics-for-fintech-an-increasingly-necessary-tool-to-stay-competitive-says-frere-enterprises-300757420.html)
 
+  * [How Machines Learn](https://www.youtube.com/watch?v=R9OHn5ZF4Uo&start=0&end=72)
+
+  * [A.I. Experiments: Visualizing High Dimensional Space](https://www.youtube.com/watch?v=wvsE8jm1GzE)
+
+  * [Machine Learning and Human Agility](https://www.youtube.com/watch?v=sWNG3omofoM)
+
 ### Class Slides and Time Tracker
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5f3ad86fc3_0_82).
@@ -80,13 +86,19 @@ Welcome the students back to class. Communicate to them that this unit will comm
 
 Open the slides, and highlight the following:
 
-* Define **machine learning** as an approach to programming that focuses on designing applications in a way that allows them to learn from their inputs and make adjustments based off of their outputs. A very raw way of thinking about **machine learning** is automated configuration; instead of having to configure inputs and manually make changes to an algorithm, **machine learning** programs automatically change their behaviors to improve outcomes and predictions, as well as accuracy and precision.
+* Define **machine learning** as an approach to programming that focuses on designing applications in a way that allows them to learn from their inputs and make adjustments based off of their outputs.
+
+  * A very raw way of thinking about **machine learning** is automated configuration; instead of having to configure inputs and manually make changes to an algorithm, **machine learning** programs automatically adapt to improve outcomes and predictions, as well as accuracy and precision.
+
+* Explain to students that because machine learning algorithms can learn on their own, developers do not need to worry about coding for every scenario.
+
+  * For example, instead of creating a 500 line if-else decision structure in order to identify if a transaction is fraudulent, where every price range and product category is evaluated, a machine learning algorithm can review all transactions ever made by an account owner, classify and cluster transactions,and then predict whether or not the most recent transaction is fraudulent.
 
 * Emphasize that machine learning, in a nutshell, is just the application of statistical methods as functions with inputs. However, instead of a developer configuring inputs, the computer learns how to configure inputs itself and makes changes as needed.
 
-* Explain that machine learning algorithms have been transforming a range of industries, including finance, healthcare, agriculture, marketing, homeland security, and space exploration, just to name a few. **Machine learning** is used to:
+* Explain that machine learning algorithms have been transforming a range of industries, including finance, healthcare, agriculture, marketing, homeland security, and space exploration, just to name a few. **Machine learning** is being used to used to predict
 
-  * Predict loan eligibility
+  * Loan eligibility
 
   * Foreclosure rates
 
@@ -110,11 +122,15 @@ Open the slides, and highlight the following:
 
 Ask students what they think machine learning can do? Ask what ideas they have as to why someone would go through the effort of using advanced statistical algorithms when a developer can just use Monte Carlo simulations to make predictions?
 
-* **Answer** Typically when working with an algorithm, a developer has to tweak and configure the algorithm to create the most accurate and precise results for a given use case. This requires a lot of manual work. Machine learning completely removes this need, as the program will continuously learn from data/its results and make adjustments on the fly. This allows for the algorithm to perform more robustly and change dynamically based off of the data it is processing. These types of algorithms are classified as **intelligent algorithms**.
+* **Answer** Typically when working with an algorithm, a developer has to tweak and configure the algorithm to create the most accurate and precise results for a given use case. This requires a lot of manual work.
+
+  * Machine learning completely removes this need, as the program will continuously learn from data/its results and make adjustments on the fly.
+
+  * This allows for the algorithm to perform more robustly and change dynamically based off of the data it is processing. These types of algorithms are classified as **intelligent algorithms**.
 
 Define **intelligent algorithms** for students. Explain that **intelligent algorithms** use data to modify behavior. With **intelligent algorithms**, the behavior of the algorithm changes as data is processed and predictions are made.
 
-* **Intelligent algorithms** use pre-existing data to learn and make decisions on how to configure and change its behavior for the most accurate and precise prediction.
+* **Intelligent algorithms** use pre-existing data to learn and make decisions on how to configure and adapt its behavior for the most accurate and precise prediction.
 
 * **Intelligent algorithms** are used to fuel machine learning, predictive analytics, and artificial intelligence.
 
@@ -122,15 +138,31 @@ Explain the similarities and differences between machine learning, predictive an
 
 * Machine learning has two approaches to using  **intelligent algorithms**.
 
-  * One approach is **supervised learning**, which involves a programmer feeding the algorithm valuable data to learn from and make predictions. Categories of supervised learning include classification (classifying outcomes as classes/groups) and regression (fitting data to predict where a new data point lies), both of which are used for making predictions. With **supervised learning**, potential outcomes need to be known up front.
+  * One approach is **supervised learning**, which involves a programmer feeding the algorithm valuable data to learn from and make predictions.
 
-  * The other is **unsupervised learning**, where the **intelligent algorithm** learns on the fly without having seen any type of data before. The algorithm will identify all data points, cluster them, and use statistical analysis to make predictions. Eventually, the algorithm will learn for itself. Unsupervised learning includes dimensionality reduction and clustering approach (finding groups within a population).
+    * Categories of supervised learning include classification (classifying outcomes as classes/groups) and regression (fitting data to predict where a new data point lies), both of which are used for making predictions. With **supervised learning**, potential outcomes need to be known up front.
+
+  * The other is **unsupervised learning**, where the **intelligent algorithm** learns on the fly without having seen any type of data before. The algorithm will identify all data points, cluster them, and then make predictions. Eventually, the algorithm will learn for itself.
+
+    * Unsupervised learning includes dimensionality reduction and clustering approach (finding groups within a population).
 
 * Predictive analytics is the use of advanced analytics paradigms (machine learning, intelligent algorithms, etc.) to analyze data and forecast outcomes and values. Machine learning is component of predictive analytics, and predictive analytics is an objective of machine learning.
 
-* Artificial intelligence is the use of machine learning... [TBD]
+* Machine learning is a class of **artificial intelligence**. Machine learning is the application of AI. **Artificial intelligence** is the concept that machines can execute tasks and learn while doing so in order to perform more intelligently.
 
-Stimulate excitement by showing students example uses cases for machine learning.
+  * The general consensus is that instead of programming machines to perform specific tasks, program machines to learn what tasks to complete and how to complete them.
+
+  * **Machine learning** is not the only application of **artificial intelligence**. Deep learning is a comparative approach to programming that is distinct from **machine learning** but is still another class of **artificial intelligence**.
+
+If time remains, stimulate excitement by showing students some of the below example uses cases for machine learning. Show videos in the order they are provided. If time does not remain, slack these links out to students for review.
+
+* [How Machines Learn](https://www.youtube.com/watch?v=R9OHn5ZF4Uo) - only play up until 1:11 marker.
+
+* [A.I. Experiments: Visualizing High Dimensional Space](https://www.youtube.com/watch?v=wvsE8jm1GzE)
+
+* [Machine Learning and Human Agility](https://www.youtube.com/watch?v=sWNG3omofoM)
+
+Ask for any questions before moving forward.
 
 ### 3. Instructor Do: Review Homework (10 min)
 
