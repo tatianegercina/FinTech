@@ -122,9 +122,9 @@ Explain the similarities and differences between machine learning, predictive an
 
 * Machine learning has two approaches to using  **intelligent algorithms**.
 
-  * One one approach is **supervised learning**, which involves a programmer feeding the algorithm valuable data learn from and make predictions. Supervised learning includes classification and regression.
+  * One approach is **supervised learning**, which involves a programmer feeding the algorithm valuable data to learn from and make predictions. Categories of supervised learning include classification (classifying outcomes as classes/groups) and regression (fitting data to predict where a new data point lies), both of which are used for making predictions. With **supervised learning**, potential outcomes need to be known up front.
 
-  * The other is **unsupervised learning**, where the **intelligent algorithm** learns on the fly without having seen any type of data before. The algorithm will identify all data points, cluster them, and use statistical analysis to make predictions. Eventually, the algorithm will learn for itself. Unsupervised learning includes dimensionality reduction and clustering approach.
+  * The other is **unsupervised learning**, where the **intelligent algorithm** learns on the fly without having seen any type of data before. The algorithm will identify all data points, cluster them, and use statistical analysis to make predictions. Eventually, the algorithm will learn for itself. Unsupervised learning includes dimensionality reduction and clustering approach (finding groups within a population).
 
 * Predictive analytics is the use of advanced analytics paradigms (machine learning, intelligent algorithms, etc.) to analyze data and forecast outcomes and values. Machine learning is component of predictive analytics, and predictive analytics is an objective of machine learning.
 
