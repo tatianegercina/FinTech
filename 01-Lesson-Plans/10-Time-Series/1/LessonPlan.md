@@ -64,7 +64,7 @@ To add the slides to the student-facing repository, download the slides as a PDF
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-The time tracker for this lesson can be viewed here: [Time Tracker.](TimeTracker.xlsx)
+The time tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTracker.xlsx)
 
 - - -
 
@@ -78,49 +78,33 @@ Welcome the students back to class. Communicate to them that this unit will comm
 
 Open the slides, and highlight the following:
 
-* Indicate that this unit and several of the units to follow will be focusing on the approaches to implementing **time series analysis** and **machine learning** pipelines. Congratulate students are making it this far into the course!
+* The world of machine learning is sometimes viewed as a nebulous and enigma: a new arena of programming full of heavy statistical calculations, quantitative analysis, and advanced programming.
 
-* Define **time series** data as a cluster of data points for a given variable/attributes ordered and sequenced over time with equal time intervals. Emphasize that **time series** data must be stored in equal time intervals.
+* Emphasize that machine learning, in a nutshell, is just the application of statistical methods as functions with inputs. However, instead of a developer configuring inputs, the computer learns how to configure inputs itself and makes changes as needed.
 
-* Explain that **time series analysis** is the use of statistical models to assess and evaluate **time series** data.
+* Like all other functions, the statistical methods needed to execute machine learning pipelines are provided as libraries. Common machine learning libraries include **Sci-kit Learn** and SciPy. These libraries make machine learning as simple as calling a Pandas functions.
 
-* Underscore that **time series analysis** is the foundation of advanced analytics for the financial sector. **Time series analysis** is used to:
+* Now the question is, what can machine learning do? Why go through the effort of using advanced statistical algorithms when a developer can just use Monte Carlo simulations to make predictions?
 
-  * Forecast investment portfolios and economic trends
+  * Typically when working with an algorithm, a developer has to tweak and configure the algorithm to create the most accurate and precise results for a given use case. This requires a lot of manual work.
 
-  * Simulate the market
+  * Machine learning completely removes this need, as the machine will continuously learn from output and make adjustments on the fly. This allows for the algorithm to perform more robustly and change dynamically based off of the data it is processing. These types of algorithms are classified as **intelligent algorithms**.
 
-  * Analyze the market
+* Define **intelligent algorithms** for students. Explain that **intelligent algorithms** use data to modify behavior. With **intelligent algorithms**, the behavior of the algorithm changes as data is processed and predictions are made.
 
-  * Analyze corporate and personal budgets
+  * **Intelligent algorithms** use pre-existing data to learn and make decisions on how to configure and change its behavior for the most accurate and precise prediction.
 
-  * Execute sales and investment projections
+  * **Intelligent algorithms** are used to fuel machine learning, predictive analytics, and artificial intelligence.
 
-Explain to students that the mathematical and statistical content in this unit may seem heavy and difficult to digest at first. However, it's just a learning curve, which can be mastered with perserverance.
+Explain the similarities and differences between machine learning, predictive analytics, and artificial intelligent.
 
-* Reassure students that supplementary guides and resources will be provided to ensure everyone understands the approaches and technologies being used.
+* Machine learning has two approaches to using  **intelligent algorithms**.
 
-* Remind students that they can reach out to TAs and yourself, attend office hours, and collaborate amongst themselves to review the material.
+  * One one approach is **supervised learning**, which involves a programmer feeding the algorithm valuable data learn from and make predictions.
 
-If time remains, engage students by asking the following question:
+Stimulate excitement by showing students example uses cases for machine learning.
 
-* So far, we've already forecasted trends in cumulative returns; simulated the market; and analyzed ticker prices, personal budgets, and sale prices. How will using machine learning be any different than the techniques we've already used (i.e. Monte Carlo)?
 
-  * **Answer** Machine learning would eliminate the need for us to manage the configurations/parameters used when analyzing and simulating data for predictions. The simulation would use previous configurations to self learn and identify future configurations to use.
-
-  * **Answer** The machine learning community has developed additional statistical models and algorithms that could be used to make the analysis we've already done more robust and accurate. Instead of using techniques we've already seen for tasks like sampling and linear regression (i.e. Monte Carlo), alternate machine learning ones can be leveraged.
-
-  * **Answer** Machine learning models learn from each event. Machine learning models are able to make more accurate and precise predictions.
-
-If there is time left over, illustrate that the marriage of **time series analysis** and **machine learning** by presenting the following scenario:
-
-* Imagine working on an application that recommends the best investment opportunities for a portfolio based off of the trades made by a day trader. Time series analysis would be required to analyze the data based off of specific intervals, and a machine learning algorithm could be used to have the application learn from previous trades and predict what tickers would be of most interest to the trader.
-
-  * Explain that this type of analysis is considered Predictive Analytics, a form of advanced analytics that leverages statistical models, machine learning, and artificial intelligence to enable data-driven decision making.
-
-  * Communicate that predictive analytics can also be used to predict real estate prices, forecast economic trends and sentiment, predict sentiment and attrition, and a range of other future outcomes based off of historical data points.
-
-Ask students if there are any questions before moving forward. Answer one or two, and then ask students to save and bring up any additional questions during the next review activity.
 
 ### 3. Instructor Do: Review Homework (10 min)
 
@@ -132,7 +116,7 @@ The instructor will provide a brief walk through of the homework solution. Time 
 
 Open the homework instructions, and highlight the following:
 
-* This week's homework will be a deep dive into the various methods and techniques of analyzing and forecasting time series data. Students will use the **Hodrick-Prescott** filter, as well as **GARCH** and **EGARCH** models to complete time-series return forecasting and volatility forcasting.
+* This week's homework will be a deep dive into the various methods and techniques of analyzing and forecasting time series data. Students will use the **Hodrick-Prescott** filter, as well as **GARCH** and **EGARCH** models to complete time-series return forecasting and volatility forecasting.
 
 * Explain to students that this homework will consist of three parts:
 
