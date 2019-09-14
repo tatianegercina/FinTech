@@ -102,9 +102,9 @@ Explain the similarities and differences between machine learning, predictive an
 
   * One one approach is **supervised learning**, which involves a programmer feeding the algorithm valuable data learn from and make predictions.
 
+  * The other is **unsupervised learning**, where the **intelligent algorithm** learns on the fly without having seen any type of data before. The algorithm will identify all data points, cluster them, and use statistical analysis to make predictions. Eventually, the algorithm will learn for itself.
+
 Stimulate excitement by showing students example uses cases for machine learning.
-
-
 
 ### 3. Instructor Do: Review Homework (10 min)
 
