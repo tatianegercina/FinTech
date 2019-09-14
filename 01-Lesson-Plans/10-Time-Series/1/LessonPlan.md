@@ -40,6 +40,8 @@ By the end of this class, students will be able to:
 
 * Today's class will be a fairly gentle ramp up to the rest of the week. It will provide students with the skills to work with time series data in pandas (e.g. slicing rows by date), and it will furnish them with necessary concepts for days 2 and 3. The first half of the day will focus on identifying what time series analysis is and how it is used. The second half will emphasize scaling time series analysis using machine learning algorithms.
 
+* It is important to emphasize the role of machine learning in time series analysis and advanced analytics (the application of advanced statistical models and intelligent algorithms). Today's class, and the unit in its entirety, will begin the students' journey into **machine learning**. For some students, machine learning is their reason for choosing the curriculum. For others, machine learning may be intimidating and unreachable. Remember to communicate concepts in simple terms, reminding students that machine learning is just the application of statistics using Python libraries in order to analyze data and make predictions regarding behavior and outcomes. Foster confidence and understanding by pacing explanations and demonstrations. Explanatory examples have been provided to assist with this.
+
 * The mathematical details of tools such as Hodrick-Prescott filter are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class.
 
 * The goal should be to transmit the mathematical and statistical concepts and approaches at a level required to complete the activity. Students should then independently research and reinforce the concepts outside of class.
@@ -78,23 +80,27 @@ Welcome the students back to class. Communicate to them that this unit will comm
 
 Open the slides, and highlight the following:
 
-* The world of machine learning is sometimes viewed as a nebulous and enigma: a new arena of programming full of heavy statistical calculations, quantitative analysis, and advanced programming.
+* Define **machine learning** as an approach to programming that focuses on designing applications in a way that allows them to learn from their inputs and make adjustments based off of their outputs. A very raw way of thinking about **machine learning** is automated configuration; instead of having to configure inputs and manually make changes to an algorithm, **machine learning** programs automatically change their behaviors to improve outcomes and predictions, as well as accuracy and precision.
 
 * Emphasize that machine learning, in a nutshell, is just the application of statistical methods as functions with inputs. However, instead of a developer configuring inputs, the computer learns how to configure inputs itself and makes changes as needed.
 
-* Like all other functions, the statistical methods needed to execute machine learning pipelines are provided as libraries. Common machine learning libraries include **Sci-kit Learn** and SciPy. These libraries make machine learning as simple as calling a Pandas functions.
+* Explain that machine learning algorithms have been transforming a range of industries, including finance, healthcare, homeland security, and space exploration, just to name a few. **Machine learning** is used to predict loan eligibility, foreclosure rates, fraud and money laundering, disease, presidential election results, natural storms and disasters, planetary climate and atmosphere conditions/composition, etc. Machine learning is at the forefront of all initiatives to make data driven decisions.
 
-* Now the question is, what can machine learning do? Why go through the effort of using advanced statistical algorithms when a developer can just use Monte Carlo simulations to make predictions?
+  * The predictions made by **machine learning** algorithms are driving decision making at a global level. Commercial and government leaders all leverage **machine learning** in some capacity: **machine learning** outcomes are helping industries become more proactive than reactive.
 
-  * Typically when working with an algorithm, a developer has to tweak and configure the algorithm to create the most accurate and precise results for a given use case. This requires a lot of manual work.
+* Communicate to students that the world of **machine learning** is sometimes viewed as a nebulous and enigma: a niche field of programming full of heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, **machine learning** is just the application of statistics and statistical libraries to solve data and business problems.
 
-  * Machine learning completely removes this need, as the machine will continuously learn from output and make adjustments on the fly. This allows for the algorithm to perform more robustly and change dynamically based off of the data it is processing. These types of algorithms are classified as **intelligent algorithms**.
+* Like all other functions, the statistical functions needed to execute machine learning pipelines are provided as libraries. Common machine learning libraries include **Sci-kit Learn** and **SciPy**. These libraries make machine learning as simple as calling Pandas functions.
 
-* Define **intelligent algorithms** for students. Explain that **intelligent algorithms** use data to modify behavior. With **intelligent algorithms**, the behavior of the algorithm changes as data is processed and predictions are made.
+Ask students what they think machine learning can do? Ask what ideas they have as to why someone would go through the effort of using advanced statistical algorithms when a developer can just use Monte Carlo simulations to make predictions?
 
-  * **Intelligent algorithms** use pre-existing data to learn and make decisions on how to configure and change its behavior for the most accurate and precise prediction.
+* **Answer** Typically when working with an algorithm, a developer has to tweak and configure the algorithm to create the most accurate and precise results for a given use case. This requires a lot of manual work. Machine learning completely removes this need, as the program will continuously learn from data/its results and make adjustments on the fly. This allows for the algorithm to perform more robustly and change dynamically based off of the data it is processing. These types of algorithms are classified as **intelligent algorithms**.
 
-  * **Intelligent algorithms** are used to fuel machine learning, predictive analytics, and artificial intelligence.
+Define **intelligent algorithms** for students. Explain that **intelligent algorithms** use data to modify behavior. With **intelligent algorithms**, the behavior of the algorithm changes as data is processed and predictions are made.
+
+* **Intelligent algorithms** use pre-existing data to learn and make decisions on how to configure and change its behavior for the most accurate and precise prediction.
+
+* **Intelligent algorithms** are used to fuel machine learning, predictive analytics, and artificial intelligence.
 
 Explain the similarities and differences between machine learning, predictive analytics, and artificial intelligent.
 
