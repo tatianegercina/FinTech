@@ -116,9 +116,11 @@ Open the slides, and highlight the following:
 
 * Underscore to students that the predictions made by **machine learning** algorithms are driving decision making at a global scale. Commercial and government leaders all leverage **machine learning** in some capacity: **machine learning** outcomes are helping industries become more proactive than reactive. Machine learning is at the forefront of all initiatives to make data driven decisions.
 
-* Communicate to students that the world of **machine learning** is sometimes viewed as a nebulous and enigmatic: a niche field of programming involving heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, it is just the application of statistics and statistical libraries to solve data and business problems.
+* Communicate to students that the world of **machine learning** is sometimes viewed as nebulous and enigmatic: a niche field of programming involving heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, it is just the application of statistics and statistical libraries to solve data and business problems.
 
   * Like all other functions, machine learning statistical functions are provided as libraries. Common machine learning libraries include **Sci-kit Learn** and **SciPy**. Services like Amazon Web Services and Google Cloud Platform offer proprietary machine learning libraries that can be used within their cloud ecosystems. These libraries, as well as the open source community, make execution of machine learning models as simple as calling a Pandas functions.
+
+  * Summarize the machine learning pipeline and explain to students that all machine learning pipelines follow a **Model -> Fit (Train) -> Predict** paradigm, where a data set/model of data is used to train the algorithm. Once the algorithm has been trained, the model and algorithm can be used to make actual predictions.
 
 Ask students what they think machine learning can do? Ask what ideas they have as to why someone would go through the effort of using advanced statistical algorithms when a developer can just use Monte Carlo simulations to make predictions?
 
@@ -132,11 +134,11 @@ Define **intelligent algorithms** for students. Explain that **intelligent algor
 
 * **Intelligent algorithms** use pre-existing data to learn and make decisions on how to configure and adapt its behavior for the most accurate and precise prediction.
 
-* **Intelligent algorithms** are used to fuel machine learning, predictive analytics, and artificial intelligence.
+* **Intelligent algorithms** are used to fuel **machine learning**, **predictive analytics**, and **artificial intelligence**.
 
 Explain the similarities and differences between machine learning, predictive analytics, and artificial intelligence.
 
-* Machine learning has two approaches to using  **intelligent algorithms**.
+* Machine learning has two approaches to using  **intelligent algorithms**:
 
   * One approach is **supervised learning**, which involves a programmer feeding the algorithm valuable data to learn from and make predictions.
 
@@ -162,7 +164,7 @@ If time remains, stimulate excitement by showing students some of the below exam
 
 * [Machine Learning and Human Agility](https://www.youtube.com/watch?v=sWNG3omofoM)
 
-Ask for any questions before moving forward.
+Ask for any questions before moving forward. Assure students that each of these concepts will be explored in more detail over the next several weeks.
 
 ### 3. Instructor Do: Review Homework (10 min)
 
