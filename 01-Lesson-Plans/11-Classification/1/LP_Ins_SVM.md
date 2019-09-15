@@ -6,11 +6,11 @@ The goal of this activity is to illustrate to students the different approaches 
 
 **Files:** [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
 
-Open the starter file, and highlight the following while doing a live coding session:
+Open the starter file, and highlight the following during a live coding session:
 
 * In the previous activity, a logistic regression model was used to classify loan eligibility. This is just one way of implementing the loan approver model. Another algorithm that can be used is support vector machines (SVM).
 
-* Similar to the **Logistic Regression** algorithm, the **SVM** algorithm can be used for classification and regression analysis.
+* Similar to the **Logistic Regression** algorithm, the **SVM** supervised learning algorithm can be used for classification and regression analysis.
 
 * Unlike **Logistic Regression**, **SVM** takes a non-linear approach when predicting classes and outcomes. Instead, **SVM** focuses on dimensionality.
 
@@ -40,20 +40,39 @@ Demonstrate to students how to create a SVM model using sklearn.
     from sklearn.svm import SVC
     ```
 
+* Like all other supervised learning models, the SVM model requires training and test data for fitting. The **sklearn** `model_selection.train_test_split` function can be used to split data sets into training and testing subsets.
+
+    ```python
+    # Split data into training and testing
+    from sklearn.model_selection import train_test_split
+    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
+    ```
+
 * Once SVC has been imported, it can be used to create an SVM model.
 
     ```python
     model = SVC(kernel='linear')
     ```
 
-* The SVC constructor supports a number of arguments, with the `kernel` argument being the most important. The `kernel` argument is used to express the dimnesionality of the model. It's basically the degree of the polynomial used to find the hyperplane to split the data. The polynomial used will be specific to the number of dimensions/features in the model.
+* The SVC constructor supports a number of arguments, with the `kernel` argument being the most important. The `kernel` argument is used to express the dimensionality of the model. It's basically the degree of dimensionality needed to separate the data into classes. The polynomial used will be specific to the number of dimensions/features in the model.
 
-  * The kernel argument accepts a number of values. These are listed and explained below:
+  * The `kernel` argument accepts a number of values. These are listed and explained below. Communicate to students that a **linear** `kernel` value should be used for data sets with two classes.
 
     * rbf - creates a non-linear hyperplane
 
     * linear - creates a linear, 2D hyperplane
 
-    * poly - creates a non-linear hyperlane
+    * poly - creates a non-linear hyperplane
+
+  * There are a number of other parameters used with the SVC constructor. Instruct students to review the below documentation/articles to get additional detail. Remember to slack the resources out.
+
+    * [In-depth Parameter Tuning for SVC](https://medium.com/all-things-ai/in-depth-parameter-tuning-for-svc-758215394769)
+
+* The model can then be fit using the `sklearn.fit` function. The SVM model is trained just like the **Logistic Regression** model.
+
+    ```python
+    model.fit(X_train, y_train)
+    predictions = model.predict(X_test)
+    ```
 
 Explain to students why SVM might be used over a Logistic Regression model.
