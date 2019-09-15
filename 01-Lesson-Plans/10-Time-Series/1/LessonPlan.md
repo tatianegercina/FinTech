@@ -82,7 +82,7 @@ The instructor will kick off the class by welcoming students and briefly introdu
 
 Welcome the students back to class. Communicate to them that this unit will commence their journey into the world of time series analysis and machine learning.
 
-### 2. Instructor Do: Intro to Machine Learning (15 min)
+### 2. Instructor Do: Mysticism of Machine Learning (15 min)
 
 Open the slides, and highlight the following:
 
@@ -150,11 +150,11 @@ Explain the similarities and differences between machine learning, predictive an
 
 * Predictive analytics is the use of advanced analytics paradigms (machine learning, intelligent algorithms, etc.) to analyze data and forecast outcomes and values. Machine learning is component of predictive analytics, and predictive analytics is an objective of machine learning.
 
-* Machine learning is a class of **artificial intelligence**. Machine learning is the application of AI. **Artificial intelligence** is the concept that machines can execute tasks and learn while doing so in order to perform more intelligently.
+* **AI** is the concept that machines can execute tasks and learn while doing so in order to perform more intelligently. Machine learning is a class of **AI**: an application of AI.
 
   * The general consensus is that instead of programming machines to perform specific tasks, program machines to learn what tasks to complete and how to complete them.
 
-  * **Machine learning** is not the only application of **artificial intelligence**. Deep learning is a comparative approach to programming that is distinct from **machine learning** but is still another class of **artificial intelligence**.
+  * **Machine learning** is not the only application of **AI**. Deep learning is a comparative approach to programming that is distinct from **machine learning** but is still another class of **AI**.
 
 If time remains, stimulate excitement by showing students some of the below example uses cases for machine learning. Show videos in the order they are provided. If time does not remain, slack these links out to students for review.
 
@@ -170,9 +170,7 @@ Ask for any questions before moving forward. Assure students that each of these 
 
 The instructor will provide a brief walk through of the homework solution. Time should be dedicated to allowing students ask a few questions about assignment.
 
-**File:**
-
-* [Homework Instructions](../../02-Homework/10-Time-Series/Instructions/README.md)
+**File:** [Homework Instructions](../../02-Homework/10-Time-Series/Instructions/README.md)
 
 Open the homework instructions, and highlight the following:
 
@@ -194,21 +192,19 @@ Ask students if they have any questions before moving on.
 
 ### 4. Instructor Do: Time Series Basics (10 min)
 
-**File:**
-
-* [Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
+**File:** [Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
 
 In this activity, you will introduce the basics of working with time series in Python.
 
 Explain that we'll learn the following pandas techniques to work with time series data:
 
-  * Converting a column of dates from string to datetime format.
+* Converting a column of dates from string to datetime format.
 
-  * Using the `loc[]` accessor to select rows with specified dates.
+* Using the `loc[]` accessor to select rows with specified dates.
 
-  * Using the `resample()` method to group rows by day, week, month, year, or any datetime attribute.
+* Using the `resample()` method to group rows by day, week, month, year, or any datetime attribute.
 
-  * Accessing datetime attributes from the index.
+* Accessing datetime attributes from the index.
 
 Open the notebook and run the following lines of code:
 
@@ -330,9 +326,7 @@ Answer any remaining questions before moving on.
 
 ### 7. Instructor Do: Time Series Decomposition (10 min)
 
-* **File:**
-
-* [Activities/03-Ins_Decomposition/Solved/decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
+* **File:** [Activities/03-Ins_Decomposition/Solved/decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
 
 Open [Slide 3](https://docs.google.com/presentation/d/1DSwXmlnnP2_TmhJlBB_95bdWm_m7xb0rACwK-usjfwk/edit#slide=id.g5f3ad86fc3_0_19) and define time series decomposition to the class:
 
@@ -522,61 +516,59 @@ If time allows, take a moment to compare and contrast the H-P filter:
 
 ### 12. Instructor Do: Auto Correlation (15 min)
 
-**File:**
-
-  * [autocorrelation.ipynb](Activities/06-Ins_Auto_Correlation/Solved/autocorrelation.ipynb)
+**File:** [autocorrelation.ipynb](Activities/06-Ins_Auto_Correlation/Solved/autocorrelation.ipynb)
 
 Open the notebook and briefly describe the data set:
 
   ![Images/ac01.png](Images/ac01.png)
 
-  * The data set is the familiar weather data.
+* The data set is the familiar weather data.
 
-  * The temperature readings are hourly.
+* The temperature readings are hourly.
 
-  * Each hourly reading is fairly close to that of the previous hour.
+* Each hourly reading is fairly close to that of the previous hour.
 
 Introduce the concept of auto correlation:
 
-  * Up to this point, when dealing with linear regression, we have tried to identify the relationship between two unrelated variables, such as date vs. weather, or years of experience vs. salary.
+* Up to this point, when dealing with linear regression, we have tried to identify the relationship between two unrelated variables, such as date vs. weather, or years of experience vs. salary.
 
-  * Auto correlation, on the other hand, determines to what extent, for example, today's values correlate with yesterday's values.
+* Auto correlation, on the other hand, determines to what extent, for example, today's values correlate with yesterday's values.
 
 To illustrate auto correlation, explain to students that the `Lag_Temperature` column is the result of shifting the `Temperature` column down by one:
 
   ![Images/ac02.png](Images/ac02.png)
 
-  * The temperature value from the first row is found in the `Lag_Temperature` column in the second row, for example.
+* The temperature value from the first row is found in the `Lag_Temperature` column in the second row, for example.
 
-  * The temperature data has been shifted down by one time period--in this case an hour.
+* The temperature data has been shifted down by one time period--in this case an hour.
 
-  * The temperature from one hour to the next changes in relatively small increments.
+* The temperature from one hour to the next changes in relatively small increments.
 
-  * Auto correlation, again, is a measure of how closely current values correlate with past values.
+* Auto correlation, again, is a measure of how closely current values correlate with past values.
 
 Show the plot of the temperature data versus a lagged copy of itself:
 
   ![Images/ac06.png](Images/ac06.png)
 
-  * In this case, there appears to be an extremely close relationship.
+* In this case, there appears to be an extremely close relationship.
 
-  * In other words, a temperature reading is close in value to the reading from an hour earlier.
+* In other words, a temperature reading is close in value to the reading from an hour earlier.
 
 Now show the plotting of temperature over a 48-hour period, with the following observations:
 
   ![Images/ac03.png](Images/ac03.png)
 
-  * The temperature, predictably, shows a cyclical pattern.
+* The temperature, predictably, shows a cyclical pattern.
 
-  * Despite significant swings seen in a day, the temperature change between one hour to the next is fairly small.
+ * Despite significant swings seen in a day, the temperature change between one hour to the next is fairly small.
 
-  * For a given temperature reading, say 6 am on January 1st, the most similar temperature reading is seen again 24 hours later.
+* For a given temperature reading, say 6 am on January 1st, the most similar temperature reading is seen again 24 hours later.
 
 You may wish to draw on the following scenario to further illustrate autocorrelation:
 
-  * A pair of dice is thrown every minute. Their combined value and the time are recorded.
+* A pair of dice is thrown every minute. Their combined value and the time are recorded.
 
-  * Since it is a random activity, there will not be a strong relationship between the current value of the dice and the preceding one. Here, the auto correlation will not be significant.
+* Since it is a random activity, there will not be a strong relationship between the current value of the dice and the preceding one. Here, the auto correlation will not be significant.
 
 Next, explain the code used to calculate the auto correlation:
 
@@ -584,11 +576,11 @@ Next, explain the code used to calculate the auto correlation:
   df.Temperature.autocorr(lag=1)
   ```
 
-  * The `autocorr()` method here returns the autocorrelation of the `Temperature` column against a lagged copy of itself.
+* The `autocorr()` method here returns the autocorrelation of the `Temperature` column against a lagged copy of itself.
 
-  * Here, the lag is 1, meaning that the series of temperature readings is correlated against a series of temperature readings taken one hour previously.
+* Here, the lag is 1, meaning that the series of temperature readings is correlated against a series of temperature readings taken one hour previously.
 
-  * The correlation coefficient is 0.99, a very high number.
+* The correlation coefficient is 0.99, a very high number.
 
 Explain that auto correlation can be computed at a different lag
 
@@ -596,9 +588,9 @@ Explain that auto correlation can be computed at a different lag
   df.Temperature.autocorr(lag=24)
   ```
 
-  * Here, each temperature reading is autocorrelated with a temperature reading 24 hours later.
+* Here, each temperature reading is autocorrelated with a temperature reading 24 hours later.
 
-  * As expected, the auto correlation is very high at a lag of 24 as well.
+* As expected, the auto correlation is very high at a lag of 24 as well.
 
 Once again, if necessary, remind your students that auto correlation is simply the correlation of current data with past data.
 
@@ -610,27 +602,27 @@ Explain that the `plot_acf()` function visualizes what we have discussed so far:
 
   ![Images/ac04.png](Images/ac04.png)
 
-  * The plot nicely illustrates the periodicity of daily temperature patterns.
+* The plot nicely illustrates the periodicity of daily temperature patterns.
 
-  * This plot, in other words, shows autocorrelation at lags up to 48, which was specified in the argument `lags=48`.
+* This plot, in other words, shows autocorrelation at lags up to 48, which was specified in the argument `lags=48`.
 
-  * As pointed out previously, there is high auto correlation at a lag of 1, slightly lower at lag 2, and so on. Then a high auto correlation is found at a lag of 24, and multiples of 24, such as 48.
+* As pointed out previously, there is high auto correlation at a lag of 1, slightly lower at lag 2, and so on. Then a high auto correlation is found at a lag of 24, and multiples of 24, such as 48.
 
 Next, explain that the band in light blue is the confidence interval.
 
-  * By default, the CI is set to 95%.
+* By default, the CI is set to 95%.
 
-  * In other words, if the data set were noisy, and there's no meaningful auto correlation, there is 5% chance that the auto correlation at a particular lag would be found outside the CI band by random chance.
+* In other words, if the data set were noisy, and there's no meaningful auto correlation, there is 5% chance that the auto correlation at a particular lag would be found outside the CI band by random chance.
 
-  * In this case, the auto correlation at all specified lags are outside the CI band, indicating a high likelihood that the auto correlation at each interval is **not** a random fluke.
+* In this case, the auto correlation at all specified lags are outside the CI band, indicating a high likelihood that the auto correlation at each interval is **not** a random fluke.
 
-  * As lag time increases, the CI band widens. This makes intuitive sense: as lag is increased, more potential for noise is introduced, and the statistical burden of proof is higher.
+* As lag time increases, the CI band widens. This makes intuitive sense: as lag is increased, more potential for noise is introduced, and the statistical burden of proof is higher.
 
 Next, introduce partial auto correlation functions:
 
-  * The idea of PACF is different from auto correlation function.
+* The idea of PACF is different from auto correlation function.
 
-  * Whereas an auto correlation function measures auto correlation at all specified lags, PACF essentially reduces components of auto correlation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags.
+* Whereas an auto correlation function measures auto correlation at all specified lags, PACF essentially reduces components of auto correlation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags.
 
 Explain that a PACF plot will illustrate the idea in concrete terms:
 
@@ -640,25 +632,25 @@ Explain that a PACF plot will illustrate the idea in concrete terms:
 
   ![Images/ac05.png](Images/ac05.png)
 
-  * The `plot_pacf()` function creates a PACF plot with the same temperature data.
+* The `plot_pacf()` function creates a PACF plot with the same temperature data.
 
-  * In the PACF plot, there are significant lags at 1, 2, and 24 hours.
+* In the PACF plot, there are significant lags at 1, 2, and 24 hours.
 
-  * The PACF estimates that lags at 1, 2, and 24 hours account for the other lags.
+* The PACF estimates that lags at 1, 2, and 24 hours account for the other lags.
 
-  * In other words, PACF answers the question, if there's already one lag that has been identified as being significant, will the data be better explained by flagging a second lag as significant?
+* In other words, PACF answers the question, if there's already one lag that has been identified as being significant, will the data be better explained by flagging a second lag as significant?
 
-  * In the ACF, there was high auto correlation at lags of 24 and 48 hours. This makes sense, as the temperature at the same time across three days would be expected to be very similar.
+* In the ACF, there was high auto correlation at lags of 24 and 48 hours. This makes sense, as the temperature at the same time across three days would be expected to be very similar.
 
-  * In the PACF, however, we do not see a high partial auto correlation at a lag fo 48 hours, since that can be explained by the lag at 24 hours.
+* In the PACF, however, we do not see a high partial auto correlation at a lag fo 48 hours, since that can be explained by the lag at 24 hours.
 
 Finally, summarize the key points of the activity:
 
-  * Autocorrelation is a measure of high closely current values are correlated with past values.
+* Autocorrelation is a measure of high closely current values are correlated with past values.
 
-  * In the activities to come, ACF and PACF will help us select the correct **order** of models for forecasting.
+* In the activities to come, ACF and PACF will help us select the correct **order** of models for forecasting.
 
-  * Doing so requires an understanding of how current values are affected by past values.
+* Doing so requires an understanding of how current values are affected by past values.
 
 ### 13. Students Do: Euro ETFs (15 min)
 
@@ -685,9 +677,9 @@ Walk through the solution code:
   df.bid_ask_spread.autocorr(1)
   ```
 
-  * The bid-ask spread data is sampled at a 10-second interval, and NaN values are dropped.
+* The bid-ask spread data is sampled at a 10-second interval, and NaN values are dropped.
 
-  * The autocorrelation at a lag of 1 is 0.136.
+* The autocorrelation at a lag of 1 is 0.136.
 
 Review the ACF and PACF plots:
 
