@@ -40,6 +40,8 @@ By the end of this class, students will be able to:
 
 * Today's class will be a fairly gentle ramp up to the rest of the week. It will provide students with the skills to work with time series data in pandas (e.g. slicing rows by date), and it will furnish them with necessary concepts for days 2 and 3. The first half of the day will focus on identifying what time series analysis is and how it is used. The second half will emphasize scaling time series analysis using machine learning algorithms.
 
+* It is important to emphasize the role of machine learning in time series analysis and advanced analytics (the application of advanced statistical models and intelligent algorithms). Today's class, and the unit in its entirety, will begin the students' journey into **machine learning**. For some students, machine learning is their reason for choosing the curriculum. For others, machine learning may be intimidating and unreachable. Remember to communicate concepts in simple terms, reminding students that machine learning is just the application of statistics using Python libraries in order to analyze data and make predictions regarding behavior and outcomes. Foster confidence and understanding by pacing explanations and demonstrations. Explanatory examples have been provided to assist with this.
+
 * The mathematical details of tools such as Hodrick-Prescott filter are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class.
 
 * The goal should be to transmit the mathematical and statistical concepts and approaches at a level required to complete the activity. Students should then independently research and reinforce the concepts outside of class.
@@ -56,6 +58,12 @@ By the end of this class, students will be able to:
 
   * [Predictive Analytics for FinTech](https://www.prnewswire.com/news-releases/predictive-analytics-for-fintech-an-increasingly-necessary-tool-to-stay-competitive-says-frere-enterprises-300757420.html)
 
+  * [How Machines Learn](https://www.youtube.com/watch?v=R9OHn5ZF4Uo&start=0&end=72)
+
+  * [A.I. Experiments: Visualizing High Dimensional Space](https://www.youtube.com/watch?v=wvsE8jm1GzE)
+
+  * [Machine Learning and Human Agility](https://www.youtube.com/watch?v=sWNG3omofoM)
+
 ### Class Slides and Time Tracker
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5f3ad86fc3_0_82).
@@ -64,7 +72,7 @@ To add the slides to the student-facing repository, download the slides as a PDF
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-The time tracker for this lesson can be viewed here: [Time Tracker.](TimeTracker.xlsx)
+The time tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTracker.xlsx)
 
 - - -
 
@@ -74,65 +82,99 @@ The instructor will kick off the class by welcoming students and briefly introdu
 
 Welcome the students back to class. Communicate to them that this unit will commence their journey into the world of time series analysis and machine learning.
 
-### 2. Instructor Do: Intro to Machine Learning (15 min)
+### 2. Instructor Do: Mysticism of Machine Learning (15 min)
 
 Open the slides, and highlight the following:
 
-* Indicate that this unit and several of the units to follow will be focusing on the approaches to implementing **time series analysis** and **machine learning** pipelines. Congratulate students are making it this far into the course!
+* Define **machine learning** as an approach to programming that focuses on designing applications in a way that allows them to learn from their inputs and make adjustments based off of their outputs.
 
-* Define **time series** data as a cluster of data points for a given variable/attributes ordered and sequenced over time with equal time intervals. Emphasize that **time series** data must be stored in equal time intervals.
+  * A very raw way of thinking about **machine learning** is automated configuration; instead of having to configure inputs and manually make changes to an algorithm, **machine learning** programs automatically adapt to improve outcomes and predictions, as well as accuracy and precision.
 
-* Explain that **time series analysis** is the use of statistical models to assess and evaluate **time series** data.
+* Explain to students that because machine learning algorithms can learn on their own, developers do not need to worry about coding for every scenario.
 
-* Underscore that **time series analysis** is the foundation of advanced analytics for the financial sector. **Time series analysis** is used to:
+  * For example, instead of creating a 500 line if-else decision structure in order to identify if a transaction is fraudulent, where every price range and product category is evaluated, a machine learning algorithm can review all transactions ever made by an account owner, classify and cluster transactions,and then predict whether or not the most recent transaction is fraudulent.
 
-  * Forecast investment portfolios and economic trends
+* Emphasize that machine learning, in a nutshell, is just developing a statistical or algorithmic model of the data that can be used to automatically make predictions or decisions about new data.
 
-  * Simulate the market
+* Explain that machine learning algorithms have been transforming a range of industries, including finance, healthcare, agriculture, marketing, homeland security, and space exploration, just to name a few. **Machine learning** is being used to used to predict
 
-  * Analyze the market
+  * Loan eligibility
 
-  * Analyze corporate and personal budgets
+  * Foreclosure rates
 
-  * Execute sales and investment projections
+  * Fraud and money laundering
 
-Explain to students that the mathematical and statistical content in this unit may seem heavy and difficult to digest at first. However, it's just a learning curve, which can be mastered with perserverance.
+  * Disease diagnosis and prognosis
 
-* Reassure students that supplementary guides and resources will be provided to ensure everyone understands the approaches and technologies being used.
+  * Consumer segmentation and clustering
 
-* Remind students that they can reach out to TAs and yourself, attend office hours, and collaborate amongst themselves to review the material.
+  * Presidential election results
 
-If time remains, engage students by asking the following question:
+  * Occurrence/effects/impacts of natural storms and disasters
 
-* So far, we've already forecasted trends in cumulative returns; simulated the market; and analyzed ticker prices, personal budgets, and sale prices. How will using machine learning be any different than the techniques we've already used (i.e. Monte Carlo)?
+  * Planetary climate and atmosphere conditions/composition, etc.
 
-  * **Answer** Machine learning would eliminate the need for us to manage the configurations/parameters used when analyzing and simulating data for predictions. The simulation would use previous configurations to self learn and identify future configurations to use.
+* Underscore to students that the predictions made by **machine learning** algorithms are driving decision making at a global scale. Commercial and government leaders all leverage **machine learning** in some capacity: **machine learning** outcomes are helping industries become more proactive than reactive. Machine learning is at the forefront of all initiatives to make data driven decisions.
 
-  * **Answer** The machine learning community has developed additional statistical models and algorithms that could be used to make the analysis we've already done more robust and accurate. Instead of using techniques we've already seen for tasks like sampling and linear regression (i.e. Monte Carlo), alternate machine learning ones can be leveraged.
+* Communicate to students that the world of **machine learning** is sometimes viewed as nebulous and enigmatic: a niche field of programming involving heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, it is just the application of algorithms, statistics, and statistical libraries to solve data and business problems.
 
-  * **Answer** Machine learning models learn from each event. Machine learning models are able to make more accurate and precise predictions.
+  * Like all other functions, machine learning models are provided as libraries. Common machine learning libraries include **Scikit-Learn**, **TensorFlow**, and **SciPy**. Services like Amazon Web Services and Google Cloud Platform offer proprietary machine learning libraries that can be used within their cloud ecosystems. These libraries, as well as the open source community, make execution of machine learning models as simple as calling a Pandas functions.
 
-If there is time left over, illustrate that the marriage of **time series analysis** and **machine learning** by presenting the following scenario:
+  * Summarize the machine learning pipeline and explain to students that all machine learning pipelines follow a **Model -> Fit (Train) -> Predict** paradigm, where a data set/model of data is used to train the algorithm. Once the algorithm has been trained, the model and algorithm can be used to make actual predictions.
 
-* Imagine working on an application that recommends the best investment opportunities for a portfolio based off of the trades made by a day trader. Time series analysis would be required to analyze the data based off of specific intervals, and a machine learning algorithm could be used to have the application learn from previous trades and predict what tickers would be of most interest to the trader.
+Ask students what they think machine learning can do? Ask what ideas they have as to why someone would go through the effort of using advanced statistical algorithms when a developer can just use Monte Carlo simulations to make predictions?
 
-  * Explain that this type of analysis is considered Predictive Analytics, a form of advanced analytics that leverages statistical models, machine learning, and artificial intelligence to enable data-driven decision making.
+* **Answer** Typically when working with an algorithm, a developer has to tweak and configure the algorithm to create the most accurate and precise results for a given use case. This requires a lot of manual work.
 
-  * Communicate that predictive analytics can also be used to predict real estate prices, forecast economic trends and sentiment, predict sentiment and attrition, and a range of other future outcomes based off of historical data points.
+  * Machine learning completely removes this need, as the program will continuously learn from data/its results and make adjustments on the fly.
 
-Ask students if there are any questions before moving forward. Answer one or two, and then ask students to save and bring up any additional questions during the next review activity.
+  * This allows for the algorithm to perform more robustly and change dynamically based off of the data it is processing. These types of algorithms are classified as **intelligent algorithms**.
+
+Define **intelligent algorithms** for students. Explain that **intelligent algorithms** use data to modify behavior. With **intelligent algorithms**, the behavior of the algorithm changes as data is processed and predictions are made.
+
+* **Intelligent algorithms** use pre-existing data to learn and make decisions on how to configure and adapt its behavior for the most accurate and precise prediction.
+
+* **Intelligent algorithms** are used to fuel **machine learning**, **predictive analytics**, and **artificial intelligence**.
+
+Explain the similarities and differences between machine learning, predictive analytics, and artificial intelligence.
+
+* Machine learning has two approaches to using  **intelligent algorithms**:
+
+  * One approach is **supervised learning**, which involves a programmer feeding the algorithm valuable data to learn from and make predictions.
+
+    * Categories of supervised learning include classification (classifying outcomes as classes/groups) and regression (fitting data to predict where a new data point lies), both of which are used for making predictions. With **supervised learning**, potential outcomes need to be known up front.
+
+  * The other is **unsupervised learning**, where the **intelligent algorithm** learns on the fly without having seen any type of data before. The algorithm will identify all data points, cluster them, and then make predictions. Eventually, the algorithm will learn for itself.
+
+    * Unsupervised learning includes dimensionality reduction and clustering approach (finding groups within a population).
+
+* Predictive analytics is the use of advanced analytics paradigms (machine learning, intelligent algorithms, etc.) to analyze data and forecast outcomes and values. Machine learning is component of predictive analytics, and predictive analytics is an objective of machine learning.
+
+* **AI** is the concept that machines can execute tasks and learn while doing so in order to perform more intelligently. Machine learning is a class of **AI**: an application of AI.
+
+  * The general consensus is that instead of programming machines to perform specific tasks, program machines to learn what tasks to complete and how to complete them.
+
+  * **Machine learning** is not the only application of **AI**. Deep learning is a comparative approach to programming that is distinct from **machine learning** but is still another class of **AI**.
+
+If time remains, stimulate excitement by showing students some of the below example uses cases for machine learning. Show videos in the order they are provided. If time does not remain, slack these links out to students for review.
+
+* [How Machines Learn](https://www.youtube.com/watch?v=R9OHn5ZF4Uo) - only play up until 1:11 marker.
+
+* [A.I. Experiments: Visualizing High Dimensional Space](https://www.youtube.com/watch?v=wvsE8jm1GzE)
+
+* [Machine Learning and Human Agility](https://www.youtube.com/watch?v=sWNG3omofoM)
+
+Ask for any questions before moving forward. Assure students that each of these concepts will be explored in more detail over the next several weeks.
 
 ### 3. Instructor Do: Review Homework (10 min)
 
 The instructor will provide a brief walk through of the homework solution. Time should be dedicated to allowing students ask a few questions about assignment.
 
-**File:**
-
-* [Homework Instructions](../../02-Homework/10-Time-Series/Instructions/README.md)
+**File:** [Homework Instructions](../../02-Homework/10-Time-Series/Instructions/README.md)
 
 Open the homework instructions, and highlight the following:
 
-* This week's homework will be a deep dive into the various methods and techniques of analyzing and forecasting time series data. Students will use the **Hodrick-Prescott** filter, as well as **GARCH** and **EGARCH** models to complete time-series return forecasting and volatility forcasting.
+* This week's homework will be a deep dive into the various methods and techniques of analyzing and forecasting time series data. Students will use the **Hodrick-Prescott** filter, as well as **GARCH** and **EGARCH** models to complete time-series return forecasting and volatility forecasting.
 
 * Explain to students that this homework will consist of three parts:
 
@@ -150,21 +192,21 @@ Ask students if they have any questions before moving on.
 
 ### 4. Instructor Do: Time Series Basics (10 min)
 
-**File:**
+**File:** [Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
 
-* [Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
+Explain to students that over the next several weeks, we will be learning about many different machine learning models and techniques, but we will start with Time Series Models. Time Series Models are very prevalent in the financial world and are very useful models for analyzing time series data.
 
 In this activity, you will introduce the basics of working with time series in Python.
 
 Explain that we'll learn the following pandas techniques to work with time series data:
 
-  * Converting a column of dates from string to datetime format.
+* Converting a column of dates from string to datetime format.
 
-  * Using the `loc[]` accessor to select rows with specified dates.
+* Using the `loc[]` accessor to select rows with specified dates.
 
-  * Using the `resample()` method to group rows by day, week, month, year, or any datetime attribute.
+* Using the `resample()` method to group rows by day, week, month, year, or any datetime attribute.
 
-  * Accessing datetime attributes from the index.
+* Accessing datetime attributes from the index.
 
 Open the notebook and run the following lines of code:
 
@@ -286,9 +328,7 @@ Answer any remaining questions before moving on.
 
 ### 7. Instructor Do: Time Series Decomposition (10 min)
 
-* **File:**
-
-* [Activities/03-Ins_Decomposition/Solved/decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
+* **File:** [Activities/03-Ins_Decomposition/Solved/decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
 
 Open [Slide 3](https://docs.google.com/presentation/d/1DSwXmlnnP2_TmhJlBB_95bdWm_m7xb0rACwK-usjfwk/edit#slide=id.g5f3ad86fc3_0_19) and define time series decomposition to the class:
 
@@ -478,61 +518,59 @@ If time allows, take a moment to compare and contrast the H-P filter:
 
 ### 12. Instructor Do: Auto Correlation (15 min)
 
-**File:**
-
-  * [autocorrelation.ipynb](Activities/06-Ins_Auto_Correlation/Solved/autocorrelation.ipynb)
+**File:** [autocorrelation.ipynb](Activities/06-Ins_Auto_Correlation/Solved/autocorrelation.ipynb)
 
 Open the notebook and briefly describe the data set:
 
   ![Images/ac01.png](Images/ac01.png)
 
-  * The data set is the familiar weather data.
+* The data set is the familiar weather data.
 
-  * The temperature readings are hourly.
+* The temperature readings are hourly.
 
-  * Each hourly reading is fairly close to that of the previous hour.
+* Each hourly reading is fairly close to that of the previous hour.
 
 Introduce the concept of auto correlation:
 
-  * Up to this point, when dealing with linear regression, we have tried to identify the relationship between two unrelated variables, such as date vs. weather, or years of experience vs. salary.
+* Up to this point, when dealing with linear regression, we have tried to identify the relationship between two unrelated variables, such as date vs. weather, or years of experience vs. salary.
 
-  * Auto correlation, on the other hand, determines to what extent, for example, today's values correlate with yesterday's values.
+* Auto correlation, on the other hand, determines to what extent, for example, today's values correlate with yesterday's values.
 
 To illustrate auto correlation, explain to students that the `Lag_Temperature` column is the result of shifting the `Temperature` column down by one:
 
   ![Images/ac02.png](Images/ac02.png)
 
-  * The temperature value from the first row is found in the `Lag_Temperature` column in the second row, for example.
+* The temperature value from the first row is found in the `Lag_Temperature` column in the second row, for example.
 
-  * The temperature data has been shifted down by one time period--in this case an hour.
+* The temperature data has been shifted down by one time period--in this case an hour.
 
-  * The temperature from one hour to the next changes in relatively small increments.
+* The temperature from one hour to the next changes in relatively small increments.
 
-  * Auto correlation, again, is a measure of how closely current values correlate with past values.
+* Auto correlation, again, is a measure of how closely current values correlate with past values.
 
 Show the plot of the temperature data versus a lagged copy of itself:
 
   ![Images/ac06.png](Images/ac06.png)
 
-  * In this case, there appears to be an extremely close relationship.
+* In this case, there appears to be an extremely close relationship.
 
-  * In other words, a temperature reading is close in value to the reading from an hour earlier.
+* In other words, a temperature reading is close in value to the reading from an hour earlier.
 
 Now show the plotting of temperature over a 48-hour period, with the following observations:
 
   ![Images/ac03.png](Images/ac03.png)
 
-  * The temperature, predictably, shows a cyclical pattern.
+* The temperature, predictably, shows a cyclical pattern.
 
-  * Despite significant swings seen in a day, the temperature change between one hour to the next is fairly small.
+ * Despite significant swings seen in a day, the temperature change between one hour to the next is fairly small.
 
-  * For a given temperature reading, say 6 am on January 1st, the most similar temperature reading is seen again 24 hours later.
+* For a given temperature reading, say 6 am on January 1st, the most similar temperature reading is seen again 24 hours later.
 
 You may wish to draw on the following scenario to further illustrate autocorrelation:
 
-  * A pair of dice is thrown every minute. Their combined value and the time are recorded.
+* A pair of dice is thrown every minute. Their combined value and the time are recorded.
 
-  * Since it is a random activity, there will not be a strong relationship between the current value of the dice and the preceding one. Here, the auto correlation will not be significant.
+* Since it is a random activity, there will not be a strong relationship between the current value of the dice and the preceding one. Here, the auto correlation will not be significant.
 
 Next, explain the code used to calculate the auto correlation:
 
@@ -540,11 +578,11 @@ Next, explain the code used to calculate the auto correlation:
   df.Temperature.autocorr(lag=1)
   ```
 
-  * The `autocorr()` method here returns the autocorrelation of the `Temperature` column against a lagged copy of itself.
+* The `autocorr()` method here returns the autocorrelation of the `Temperature` column against a lagged copy of itself.
 
-  * Here, the lag is 1, meaning that the series of temperature readings is correlated against a series of temperature readings taken one hour previously.
+* Here, the lag is 1, meaning that the series of temperature readings is correlated against a series of temperature readings taken one hour previously.
 
-  * The correlation coefficient is 0.99, a very high number.
+* The correlation coefficient is 0.99, a very high number.
 
 Explain that auto correlation can be computed at a different lag
 
@@ -552,9 +590,9 @@ Explain that auto correlation can be computed at a different lag
   df.Temperature.autocorr(lag=24)
   ```
 
-  * Here, each temperature reading is autocorrelated with a temperature reading 24 hours later.
+* Here, each temperature reading is autocorrelated with a temperature reading 24 hours later.
 
-  * As expected, the auto correlation is very high at a lag of 24 as well.
+* As expected, the auto correlation is very high at a lag of 24 as well.
 
 Once again, if necessary, remind your students that auto correlation is simply the correlation of current data with past data.
 
@@ -566,27 +604,27 @@ Explain that the `plot_acf()` function visualizes what we have discussed so far:
 
   ![Images/ac04.png](Images/ac04.png)
 
-  * The plot nicely illustrates the periodicity of daily temperature patterns.
+* The plot nicely illustrates the periodicity of daily temperature patterns.
 
-  * This plot, in other words, shows autocorrelation at lags up to 48, which was specified in the argument `lags=48`.
+* This plot, in other words, shows autocorrelation at lags up to 48, which was specified in the argument `lags=48`.
 
-  * As pointed out previously, there is high auto correlation at a lag of 1, slightly lower at lag 2, and so on. Then a high auto correlation is found at a lag of 24, and multiples of 24, such as 48.
+* As pointed out previously, there is high auto correlation at a lag of 1, slightly lower at lag 2, and so on. Then a high auto correlation is found at a lag of 24, and multiples of 24, such as 48.
 
 Next, explain that the band in light blue is the confidence interval.
 
-  * By default, the CI is set to 95%.
+* By default, the CI is set to 95%.
 
-  * In other words, if the data set were noisy, and there's no meaningful auto correlation, there is 5% chance that the auto correlation at a particular lag would be found outside the CI band by random chance.
+* In other words, if the data set were noisy, and there's no meaningful auto correlation, there is 5% chance that the auto correlation at a particular lag would be found outside the CI band by random chance.
 
-  * In this case, the auto correlation at all specified lags are outside the CI band, indicating a high likelihood that the auto correlation at each interval is **not** a random fluke.
+* In this case, the auto correlation at all specified lags are outside the CI band, indicating a high likelihood that the auto correlation at each interval is **not** a random fluke.
 
-  * As lag time increases, the CI band widens. This makes intuitive sense: as lag is increased, more potential for noise is introduced, and the statistical burden of proof is higher.
+* As lag time increases, the CI band widens. This makes intuitive sense: as lag is increased, more potential for noise is introduced, and the statistical burden of proof is higher.
 
 Next, introduce partial auto correlation functions:
 
-  * The idea of PACF is different from auto correlation function.
+* The idea of PACF is different from auto correlation function.
 
-  * Whereas an auto correlation function measures auto correlation at all specified lags, PACF essentially reduces components of auto correlation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags.
+* Whereas an auto correlation function measures auto correlation at all specified lags, PACF essentially reduces components of auto correlation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags.
 
 Explain that a PACF plot will illustrate the idea in concrete terms:
 
@@ -596,25 +634,25 @@ Explain that a PACF plot will illustrate the idea in concrete terms:
 
   ![Images/ac05.png](Images/ac05.png)
 
-  * The `plot_pacf()` function creates a PACF plot with the same temperature data.
+* The `plot_pacf()` function creates a PACF plot with the same temperature data.
 
-  * In the PACF plot, there are significant lags at 1, 2, and 24 hours.
+* In the PACF plot, there are significant lags at 1, 2, and 24 hours.
 
-  * The PACF estimates that lags at 1, 2, and 24 hours account for the other lags.
+* The PACF estimates that lags at 1, 2, and 24 hours account for the other lags.
 
-  * In other words, PACF answers the question, if there's already one lag that has been identified as being significant, will the data be better explained by flagging a second lag as significant?
+* In other words, PACF answers the question, if there's already one lag that has been identified as being significant, will the data be better explained by flagging a second lag as significant?
 
-  * In the ACF, there was high auto correlation at lags of 24 and 48 hours. This makes sense, as the temperature at the same time across three days would be expected to be very similar.
+* In the ACF, there was high auto correlation at lags of 24 and 48 hours. This makes sense, as the temperature at the same time across three days would be expected to be very similar.
 
-  * In the PACF, however, we do not see a high partial auto correlation at a lag fo 48 hours, since that can be explained by the lag at 24 hours.
+* In the PACF, however, we do not see a high partial auto correlation at a lag fo 48 hours, since that can be explained by the lag at 24 hours.
 
 Finally, summarize the key points of the activity:
 
-  * Autocorrelation is a measure of high closely current values are correlated with past values.
+* Autocorrelation is a measure of high closely current values are correlated with past values.
 
-  * In the activities to come, ACF and PACF will help us select the correct **order** of models for forecasting.
+* In the activities to come, ACF and PACF will help us select the correct **order** of models for forecasting.
 
-  * Doing so requires an understanding of how current values are affected by past values.
+* Doing so requires an understanding of how current values are affected by past values.
 
 ### 13. Students Do: Euro ETFs (15 min)
 
@@ -641,9 +679,9 @@ Walk through the solution code:
   df.bid_ask_spread.autocorr(1)
   ```
 
-  * The bid-ask spread data is sampled at a 10-second interval, and NaN values are dropped.
+* The bid-ask spread data is sampled at a 10-second interval, and NaN values are dropped.
 
-  * The autocorrelation at a lag of 1 is 0.136.
+* The autocorrelation at a lag of 1 is 0.136.
 
 Review the ACF and PACF plots:
 
