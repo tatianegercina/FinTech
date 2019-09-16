@@ -20,17 +20,7 @@ For many students, this unit and the units to follow will be the bread and butte
 
 * Models that predict and detect fraudulent financial transactions
 
-Today's class will initiate this journey by introducing students to the basics of time series analytics. Students will:
-
-* Learn what time series analysis is
-
-* Use tools to work with time series data in Pandas
-
-* Articulate the four components of a time series
-
-* Identify trends in time series
-
-* Create a linear regression model for time series data.
+Today's class will initiate this journey by introducing students to the basics of time series analytics.
 
 ### Class Objectives
 
@@ -42,9 +32,7 @@ By the end of this class, students will be able to:
 
 * Use tools such as moving average, exponentially-weighted moving average, and the Hodrick-Prescott filter to identify long-term trends.
 
-* Create a time series linear regression model using Scikit-learn.
-
-* Analyze and predict seasonal effects using regression.
+* Perform auto-correlation on time series data.
 
 - - -
 
@@ -52,7 +40,7 @@ By the end of this class, students will be able to:
 
 * Today's class will be a fairly gentle ramp up to the rest of the week. It will provide students with the skills to work with time series data in pandas (e.g. slicing rows by date), and it will furnish them with necessary concepts for days 2 and 3. The first half of the day will focus on identifying what time series analysis is and how it is used. The second half will emphasize scaling time series analysis using machine learning algorithms.
 
-* The mathematical details of tools such as Hodrick-Prescott filter and linear regression are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class.
+* The mathematical details of tools such as Hodrick-Prescott filter are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class.
 
 * The goal should be to transmit the mathematical and statistical concepts and approaches at a level required to complete the activity. Students should then independently research and reinforce the concepts outside of class.
 
@@ -70,7 +58,7 @@ By the end of this class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-The slides for this lesson can be viewed on Google Drive here: [Lesson 10.1 Slides](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5f3ad86fc3_0_82).
+The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5f3ad86fc3_0_82).
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
@@ -78,11 +66,15 @@ Note: Editing access is not available for this document. If you wish to modify t
 
 The time tracker for this lesson can be viewed here: [Time Tracker.](TimeTracker.xlsx)
 
-### 1. Instructor Do: Welcome (10 min)
+- - -
+
+### 1. Instructor Do: Welcome (5 min)
 
 The instructor will kick off the class by welcoming students and briefly introducing the concepts and skills for Unit 10 and today's class. The focus of this activity will be introducing students to **time series analysis**, **machine learning**, and how the two can be used together to create predict trends in various financial markets (i.e. stocks and real estate).
 
 Welcome the students back to class. Communicate to them that this unit will commence their journey into the world of time series analysis and machine learning.
+
+### 2. Instructor Do: Intro to Machine Learning (15 min)
 
 Open the slides, and highlight the following:
 
@@ -130,7 +122,7 @@ If there is time left over, illustrate that the marriage of **time series analys
 
 Ask students if there are any questions before moving forward. Answer one or two, and then ask students to save and bring up any additional questions during the next review activity.
 
-### 2. Instructor Do: Review Homework (5 min)
+### 3. Instructor Do: Review Homework (10 min)
 
 The instructor will provide a brief walk through of the homework solution. Time should be dedicated to allowing students ask a few questions about assignment.
 
@@ -156,7 +148,7 @@ Open the homework instructions, and highlight the following:
 
 Ask students if they have any questions before moving on.
 
-### 3. Instructor Do: Time Series Basics (10 min)
+### 4. Instructor Do: Time Series Basics (10 min)
 
 **File:**
 
@@ -248,7 +240,7 @@ Next, explain that the `resample()` method groups rows by a specified time frame
 
 * More attributes can be found by consulting the documentation.
 
-### 4. Students Do: Time Series Basics (10 min)
+### 5. Students Do: Time Series Basics (15 min)
 
 In this activity, students will practice the basics of time series manipulation in pandas.
 
@@ -258,7 +250,7 @@ In this activity, students will practice the basics of time series manipulation 
 
 * [Activities/02-Stu_Time_Series_Basics/Unsolved/amazon.csv](Activities/02-Stu_Time_Series_Basics/Unsolved/amazon.csv)
 
-### 5. Instructor Do: Time Series Basics Activity Review (5 min)
+### 6. Instructor Do: Review Time Series Basics (10 min)
 
 **File:**
 
@@ -292,7 +284,7 @@ Quickly walk through the basic steps of working with a time series in pandas. Us
 
 Answer any remaining questions before moving on.
 
-### 6. Instructor Do: Time Series Decomposition (10 min)
+### 7. Instructor Do: Time Series Decomposition (10 min)
 
 * **File:**
 
@@ -356,7 +348,13 @@ Explain that the time series is decomposed visually by the library:
 
 Finally, explain that the library used in the notebook is more useful as an illustrative tool than a predictive tool. We will cover such tools during this week.
 
-### 7. Instructor Do: EWMA and Hodrick-Prescott Filter (15 min)
+- - -
+
+### 8. BREAK (15 min)
+
+- - -
+
+### 9. Instructor Do: EWMA and Hodrick-Prescott Filter (15 min)
 
 In this activity, you will introduce EWMA, or exponentially-weighted moving average. You will also introduce the Hodrick-Prescottt filter, a tool that captures trends by minimizing local fluctuations.
 
@@ -437,7 +435,7 @@ Finally, show the plots of the trend and noise components after filtering:
 
 * The second plot shows the noise (non-trend) that has been filtered out.
 
-### 8. Students Do: You've Got a FRED (15 min)
+### 10. Students Do: You've Got a FRED (15 min)
 
 In this activity, students will use the Hodrick-Prescott filter to identify macroeconomic trends in the United States in the period from 2004 to 2010.
 
@@ -447,7 +445,7 @@ In this activity, students will use the Hodrick-Prescott filter to identify macr
 
 * [FRED.ipynb](Activities/05-Stu_Hodrick_Prescott/Unsolved/FRED.ipynb)
 
-### 9. Instructor Do: Review You've Got a FRED (10 min)
+### 11. Instructor Do: Review You've Got a FRED (10 min)
 
 **Files:**
 
@@ -478,392 +476,197 @@ If time allows, take a moment to compare and contrast the H-P filter:
 
 * In this data set, for the most part, the EWMA seems to produce a fairly similar result as the H-P filter, though the latter is somewhat smoother.
 
-- - -
-
-### 10. BREAK (15 min)
-
-- - -
-
-### 11. Instructor Do: Introduction to Linear Regression (15 min)
+### 12. Instructor Do: Auto Correlation (15 min)
 
 **File:**
 
-* [linear_regression.ipynb](Activities/06-Ins_Linear_Regression/Solved/linear_regression.ipynb)
+  * [autocorrelation.ipynb](Activities/06-Ins_Auto_Correlation/Solved/autocorrelation.ipynb)
 
-In this activity, you will explain linear regression to the class and demonstrate using Scikit-learn to create a linear regression model.
+Open the notebook and briefly describe the data set:
 
-Open the first [slide](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_0) and explain the linear equation (Slide 11):
+  ![Images/ac01.png](Images/ac01.png)
 
-  ```
-  y = mx + b
-  ```
+  * The data set is the familiar weather data.
 
-  * This equation describes, or models, the relationship between variables x and y.
+  * The temperature readings are hourly.
 
-  * As x increases, y increases.
+  * Each hourly reading is fairly close to that of the previous hour.
 
-  * How fast y increases in relation to x is called the slope.
+Introduce the concept of auto correlation:
 
-  * Slope is represented by the letter `m` in the equation.
+  * Up to this point, when dealing with linear regression, we have tried to identify the relationship between two unrelated variables, such as date vs. weather, or years of experience vs. salary.
 
-  * The value of `y` when `x` is 0 is called the y-intercept. It is represented by the letter `b`.
+  * Auto correlation, on the other hand, determines to what extent, for example, today's values correlate with yesterday's values.
 
-Open the next [https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_19](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_19) and ask whether, on visual inspection, a trend exists (Slide 12):
+To illustrate auto correlation, explain to students that the `Lag_Temperature` column is the result of shifting the `Temperature` column down by one:
 
-  ![Images/linear_regression01.png](Images/linear_regression01.png)
+  ![Images/ac02.png](Images/ac02.png)
 
-  * `y` increases as `x` increases.
+  * The temperature value from the first row is found in the `Lag_Temperature` column in the second row, for example.
 
-Explain that a line that best fits the trend can be drawn:
+  * The temperature data has been shifted down by one time period--in this case an hour.
 
-  ![Images/linear_regression02.png](Images/linear_regression02.png)
+  * The temperature from one hour to the next changes in relatively small increments.
 
-  * This line is called the best fit line, and computing it is called linear regression.
+  * Auto correlation, again, is a measure of how closely current values correlate with past values.
 
-  * The equation is simple but tedious, and is best solved by a computer.
+Show the plot of the temperature data versus a lagged copy of itself:
 
-Explain that, in other words, linear regresson identifies the line that best predicts `y` based on the value of `x`.
+  ![Images/ac06.png](Images/ac06.png)
 
-Explain the concept of residuals.
+  * In this case, there appears to be an extremely close relationship.
 
-  * Even a best fit line that captures the data well is seldom, if ever, perfect.
+  * In other words, a temperature reading is close in value to the reading from an hour earlier.
 
-  * A residual is the difference between the **predicted** value of `y` and its **actual** value.
+Now show the plotting of temperature over a 48-hour period, with the following observations:
 
-  * Linear regression seeks to minimize the **square** value of residuals.
+  ![Images/ac03.png](Images/ac03.png)
 
-Summarize the key points of linear regression:
+  * The temperature, predictably, shows a cyclical pattern.
 
-  * It models data with a linear trend. It is not useful when the data does not follow a linear trend, e.g. exponential trends.
+  * Despite significant swings seen in a day, the temperature change between one hour to the next is fairly small.
 
-  * Based on the X values, it predicts Y values.
+  * For a given temperature reading, say 6 am on January 1st, the most similar temperature reading is seen again 24 hours later.
 
-  * It does not do a good job of describing non-linear patterns. We will cover techniques to model non-linear data later in the course.
+You may wish to draw on the following scenario to further illustrate autocorrelation:
 
-Now that students understand linear regression conceptually, walk through the steps of performing linear regression in Python. Here are some introductory remarks:
+  * A pair of dice is thrown every minute. Their combined value and the time are recorded.
 
-  * The CSV contains data on years of job experience and salary.
+  * Since it is a random activity, there will not be a strong relationship between the current value of the dice and the preceding one. Here, the auto correlation will not be significant.
 
-  ![Images/linear_regression03.png](Images/linear_regression03.png)
-
-  * We will use Scikit-learn, a machine learning library, to create a linear regression model.
-
-Engage the class by asking, in a linear regression model, which column will be the dependent variable, and which the independent variable.
-
-  * `YearsExperience` will be the independent variable, or `x`.
-
-  * `Salary` will be the independent variable, or `y`.
-
-Explain that in order to use Scikit-learn (sklearn) for regression, the independent variable (x) will need to be reformatted:
+Next, explain the code used to calculate the auto correlation:
 
   ```python
-  X = df.YearsExperience.values.reshape(-1, 1)
+  df.Temperature.autocorr(lag=1)
   ```
 
-  * Scikit-learn cannot take in a pandas Series directly.
+  * The `autocorr()` method here returns the autocorrelation of the `Temperature` column against a lagged copy of itself.
 
-  * `reshape(-1, 1)` reshapes, or formats, the data.
+  * Here, the lag is 1, meaning that the series of temperature readings is correlated against a series of temperature readings taken one hour previously.
 
-  * `X.shape` returns `(30,1)`, meaning that `X` has 30 rows and 1 column of data.
+  * The correlation coefficient is 0.99, a very high number.
 
-  * The dependent variable can remain a pandas series, as seen by `y = df.Salary`.
-
-Walk through the boiler plate code:
+Explain that auto correlation can be computed at a different lag
 
   ```python
-  model = LinearRegression()
-  model.fit(X,y)
+  df.Temperature.autocorr(lag=24)
   ```
 
-  * A linear regression model is created (instantiated) using Scikit-learn, and the data are fit into the model.
+  * Here, each temperature reading is autocorrelated with a temperature reading 24 hours later.
 
-Explain how to obtain the parameters of the model, its slope and y-intercept:
+  * As expected, the auto correlation is very high at a lag of 24 as well.
+
+Once again, if necessary, remind your students that auto correlation is simply the correlation of current data with past data.
+
+Explain that the `plot_acf()` function visualizes what we have discussed so far:
 
   ```python
-  print(model.coef_)
-  print(model.intercept_)
+  sm.graphics.tsaplots.plot_acf(df.Temperature, lags=48)
   ```
 
-  * Again, Scikit-learn creates a linear equation model based on the data (y = mx + b).
+  ![Images/ac04.png](Images/ac04.png)
 
-  * `model.coef_` is the slope of the equation.
+  * The plot nicely illustrates the periodicity of daily temperature patterns.
 
-  * `model.intercept_` is the y-intercept.
+  * This plot, in other words, shows autocorrelation at lags up to 48, which was specified in the argument `lags=48`.
 
-Explain that the power of a linear regression model comes from its ability to describe and to predict.
+  * As pointed out previously, there is high auto correlation at a lag of 1, slightly lower at lag 2, and so on. Then a high auto correlation is found at a lag of 24, and multiples of 24, such as 48.
+
+Next, explain that the band in light blue is the confidence interval.
+
+  * By default, the CI is set to 95%.
+
+  * In other words, if the data set were noisy, and there's no meaningful auto correlation, there is 5% chance that the auto correlation at a particular lag would be found outside the CI band by random chance.
+
+  * In this case, the auto correlation at all specified lags are outside the CI band, indicating a high likelihood that the auto correlation at each interval is **not** a random fluke.
+
+  * As lag time increases, the CI band widens. This makes intuitive sense: as lag is increased, more potential for noise is introduced, and the statistical burden of proof is higher.
+
+Next, introduce partial auto correlation functions:
+
+  * The idea of PACF is different from auto correlation function.
+
+  * Whereas an auto correlation function measures auto correlation at all specified lags, PACF essentially reduces components of auto correlation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags.
+
+Explain that a PACF plot will illustrate the idea in concrete terms:
 
   ```python
-  predicted_y_values = model.predict(X)
+  sm.graphics.tsaplots.plot_pacf(df.Temperature, lags=48, zero=False)
   ```
 
-  * This line creates an array of predicted y values based on x values.
+  ![Images/ac05.png](Images/ac05.png)
 
-  * In other words, if given an x-value (years of experience) that is not in the data set, the model will predict the corresponding y-value (salary).
+  * The `plot_pacf()` function creates a PACF plot with the same temperature data.
 
-Show the best fit line created by the regression model:
+  * In the PACF plot, there are significant lags at 1, 2, and 24 hours.
 
-  ![Images/linear_regression04.png](Images/linear_regression04.png)
+  * The PACF estimates that lags at 1, 2, and 24 hours account for the other lags.
 
-  * In this case, it describes the existing data very closely.
+  * In other words, PACF answers the question, if there's already one lag that has been identified as being significant, will the data be better explained by flagging a second lag as significant?
 
-Do not dwell on the r-square value, but explain that there is a strong relationship between the two variables in the data set:
+  * In the ACF, there was high auto correlation at lags of 24 and 48 hours. This makes sense, as the temperature at the same time across three days would be expected to be very similar.
 
-  ![Images/linear_regression05.png](Images/linear_regression05.png)
+  * In the PACF, however, we do not see a high partial auto correlation at a lag fo 48 hours, since that can be explained by the lag at 24 hours.
 
-  * We will explore measures of accuracy in greater detail in an upcoming activity.
+Finally, summarize the key points of the activity:
 
-### 12. Students Do: House Regression (10 min)
+  * Autocorrelation is a measure of high closely current values are correlated with past values.
 
-In this activity, students will perform linear regression on number of rooms in houses versus their prices.
+  * In the activities to come, ACF and PACF will help us select the correct **order** of models for forecasting.
+
+  * Doing so requires an understanding of how current values are affected by past values.
+
+### 13. Students Do: Euro ETFs (15 min)
+
+In this activity, students will examine a time series of bid-ask spreads of an ETF for autocorrelation.
 
 **Files:**
 
-* [README.md](Activities/07-Stu_House_Regression/README.md)
+* [README.md](Activities/07-Stu_ETF/README.md)
 
-* [USA_Housing.csv](Activities/07-Stu_House_Regression/data/USA_Housing.csv)
+* [high_frequency_euro_ETF_bid_ask_spreads.csv](Activities/07-Stu_ETF/Resources/high_frequency_euro_ETF_bid_ask_spreads.csv)
 
-### 13. Instructors Do: House Regression Activity Review (10 min)
+* [autocorrelation.ipynb](Activities/07-Stu_ETF/Unsolved/autocorrelation.ipynb)
 
-**Files:**
+### 14. Instructor Do: Review Activity (10 min)
 
-* [housing.ipynb](Activities/07-Stu_House_Regression/Solved/housing.ipynb)
+**File:**
 
-Open the solution, and complete a dry walk through of the code:
+* [autocorrelation.ipynb](Activities/07-Stu_ETF/Solved/autocorrelation.ipynb)
 
-* Linear regression models can be implemented using the Scikit-learn package. A LinearRegression module is included and can be imported into the Python environment.
-
-  ```python
-  from sklearn.linear_model import LinearRegression
-  model = LinearRegression()
-  ```
-
-  ![scikit-learn.png](Images/scikit-learn.png)
-
-* In order to create a linear regression model, **x** and **y** values must be identified. In this case, **x** will be the number of rooms in the house, and it will be reshaped. This will ensure the model is fitted to the data.
+Walk through the solution code:
 
   ```python
-  X = df.index.values.reshape(-1,1)
-  y = df['Price']
-
-  model.fit(X,y)
-  predicted_y_values = model.predict(X)
+  df=df.resample('10S').mean().dropna()
+  df.bid_ask_spread.autocorr(1)
   ```
 
-  ![model_predict.png](Images/model_predict.png)
+  * The bid-ask spread data is sampled at a 10-second interval, and NaN values are dropped.
 
-* The `model.predict()` function can be used to implement predictive analysis. The function will return an array of predicted y-values. This data can then be plotted using a **scatter** plot to highlight the correlation.
+  * The autocorrelation at a lag of 1 is 0.136.
+
+Review the ACF and PACF plots:
 
   ```python
-  # Plot the results. The best fit line is red.
-  plt.scatter(X, y)
-  plt.plot(X, predicted_y_values, color='red')
+  from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+  plot_acf(df['bid_ask_spread'], lags=30, zero=False)
+  plot_pacf(df['bid_ask_spread'], lags=30, zero=False)
   ```
 
-  ![scatter_plot.png](Images/scatter_plot.png)
+  ![Images/etf01.png](Images/etf01.png)
 
-* The `model` object can be used to then extract the model coefficient (slope), y intercept, and model score. This can be done using the `coef_`, `intercept_`, and `score` attributes/functions.
+  ![Images/etf02.png](Images/etf02.png)
 
-  ![model_attributes.png](Images/model_attributes.png)
+  * The ACF and PACF plots here have a similar appearance, although that is not always the case.
 
-If time remains, ask students some of the following review questions:
+  * The ACF and PACF both appear to be significant at a lag of 1.
 
-* What is the purpose behind a linear regression model?
+### 15. Instructor Do: Reflect (10 min)
 
-  * **Answer** Linear regression is used to perform predictive analysis.
+End the class by congratulating students on a tough day of time series analysis. Assure students that no one can master this content in a day; additional review and practice will be needed to reinforce the skills learned.
 
-* What type of relationship does linear regression explore?
-
-  * **Answer** The relationship between dependent and independent variables.
-
-* What makes a **scatter** plot a good plot to use for visualizing linear regressions?
-
-  * **Answer** Both linear regression models and scatter plots emphasize the relationships and impact of two or more variables.
-
-Ask if students have any questions before moving forward.
-
-### 14. Instructor Do: Time Series Linear Regression (15 min)
-
-**Files:**
-
-* [time_series_simple_regression.ipynb](Activities/08-Ins_Time_Series_Linear_Regression/Solved/time_series_simple_regression.ipynb)
-
-Inform the class that the idea of linear regression for time series is the same as in the previous example, but that the implementation requires a few tweaks.
-
-Open the notebook and show the data frame:
-
-* This is a data frame of weather data in Austin, TX in 2010.
-
-* The data frame has been sliced to contain data from May through July of 2010.
-
-  ![Images/ts_regression01.png](Images/ts_regression01.png)
-
-Show the Temperature column plotted against the date:
-
-  ![Images/ts_regression02.png](Images/ts_regression02.png)
-
-Explain that the goal is to perform linear regression of temperature and the date.
-
-Explain the next two lines of code. As seen before, Scikit-learn's models require that the X variable be formatted in the correct shape.
-
-  ```python
-  X = df['Temperature'].to_frame()
-  X.shape
-  ```
-
-* Converting the column into a data frame gives it 2208 rows and 1 column of data.
-
-Explain that datetime objects have attributes, such as day of the year.
-
-  ```python
-  X['Day_of_Year'] = X.index.dayofyear
-  ```
-
-* This creates a new column, called `Day_of_Year`.
-
-* `X.index` is in datetimeformat, and has attributes such as `dayofyear`, `weekofyear`, etc. that can be extracted from it.
-
-* More attributes can be found in the [documentation](https://pandas.pydata.org/pandas-docs/version/0.24.2/reference/api/pandas.DatetimeIndex.html)
-
-Explain creating dummy variables. The `pd.get_dummies()` method creates a column for each day of the year, and for each row assigns a numerical value for that day.
-
-  ```python
-  X_binary_encoded = pd.get_dummies(X, columns=['Day_of_Year'])
-  ```
-
-* Dummy variables are necessary because days are not continuous; they are categorical.
-
-* As an example, the day 121 of the year is assigned 1 for day 121, but 0 for all other days.
-
-  ![Images/ts_regression03.png](Images/ts_regression03.png)
-
-Use the slides to show the regression equation that results from the process:
-
-  ![Images/regression_equation01.gif](Images/regression_equation01.gif)
-
-* Each day is given its own weight in the overall equation.
-
-* Because each day is a separate variable in the equation, this is called multiple regression.
-
-Additionally, explain that we delete the extraneous column in the data frame created by `pd_get_dummies()`. The argument `axis=1` specifies that it is the column that is dropped. (For rows, it would be `axis=0`.)
-
-  ```python
-  X_binary_encoded = X_binary_encoded.drop('Temperature', axis=1)
-  ```
-
-Explain that the rest of the code is familiar from previous examples:
-
-  ```python
-  y = df['Temperature'].copy()
-  model = LinearRegression()
-  results = model.fit(X_binary_encoded, y)
-  predictions = model.predict(X_binary_encoded)
-  ```
-
-  * The `Temperature` column is specified as the dependent variable array.
-
-  * A model is created, and fits the independent and dependent variables.
-
-  * An array of predictions is created using `model.predict()`.
-
-Explain that the metrics of the linear regression model are generated:
-
-  ```python
-  from sklearn.metrics import mean_squared_error, r2_score
-  import numpy as np
-  r2 = r2_score(y, predictions)
-  mse = mean_squared_error(y, predictions)
-  rmse = np.sqrt(mse)
-  ```
-
-Note that the r-square value, at 0.23, is fairly low, and that we will cover the interpretation of these numbers in an upcoming activity.
-
-Note also that the trend appears at least somewhat linear for the specified timeline, but that a longer timespan, say from January through December, will not be good for a linear regression model.
-
-  * This underscores the important that linear regression, rather than a mechanical process, requires thinking about the variables.
-
-  * It also highlights the importance of plotting the data before reaching a conclusion!
-
-Take a moment to summarize the key points of this activity:
-
-  * The idea is the same as before. We use Scikit-learn to create a model of the independent variable (X) and the dependent variable (y).
-
-  * Because datetime data cannot be directly imported into a Scikit-learn model, we've had to create a binary encoding for each row, and drop an unnecessary column.
-
-Finally, if time allows, quickly demonstrate an approximate visualization of the linear regression best fit line.
-
-  ![Images/ts_regression04.png](Images/ts_regression04.png)
-
-### 15. Students Do: Oil Futures (15 min)
-
-In this activity, students will identify seasonal effects in oil futures prices with linear regression.
-
-**Files:**
-
-* [README.pdf](Activities/09-Stu_Time_Series_Linear_Regression/README.pdf)
-
-* [oil_futures_starter.ipynb](Activities/09-Stu_Time_Series_Linear_Regression/Unsolved/oil_futures_starter.ipynb)
-
-### 16. Instructor Do: Oil Futures Activity Review (10 min)
-
-**Files:**
-
-* [oil_futures.ipynb](Activities/09-Stu_Time_Series_Linear_Regression/Solved/oil_futures.ipynb)
-
-Explain that, rather than the settle prices, we're working with returns, the daily change of the settle price in percentage terms. The returns are multiplied by 100 to make the numbers easier to work with.
-
-  ```python
-  returns = df.Settle.pct_change() *100
-  ```
-
-  ![seattle_returns.png](Images/seattle_returns.png)
-
-Explain that we need a column of returns, and lagged returns, which will be regressed:
-
-  ```python
-  df['Return'] = returns.copy()
-  df['Lagged_Return'] = returns.shift()
-  df = df.dropna()
-  ```
-
-  * Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called auto-regression, and will be further discussed in day 2.
-
-  * A column of lagged returns is created by shifting each value downward by 1 row.
-
-  * NaN values must be dropped.
-
-Go over the steps of preparing the data to use in Scikit-learn:
-
-  ```python
-  X = df['Lagged_Return'].to_frame()
-  X['Week_of_year'] = X.index.weekofyear
-  ```
-
-  * Creating the `X` data frame with `to_frame()` shapes the data in requisite shape, and it returns a usable datetime index.
-
-  * The `weekofyear` attribute is used to create a column for the week of the year.
-
-Next, explain that dummy variables are created for each week of the year. Communiate that the function creates dummy variables for each week. That is, it assigns a value of 0 or 1 for each week. For a date that falls on week 7, for example, it will assign 1 for week 7 and 0 to all other weeks.
-
-  ```python
-  X_binary_encoded = pd.get_dummies(X, columns=['Week_of_year'])
-  ```
-
-  ![get_dummies.png](Images/get_dummies.png)
-
-* Quickly go through the rest of the code, which is boiler plate and includes creating a regression model is created on lagged returns and returns, making predictions, and then generating r-square value.
-
-  ```python
-  y = df['Return']
-  model = LinearRegression()
-  res = model.fit(X_binary_encoded, y)
-  predictions = model.predict(X_binary_encoded)
-  r2 = r2_score(y, predictions)
-  ```
-
-  ![model_2.png](Images/model_2.png)
-
-End the class by congratulating students on a tough day of linear regressions and statistics. Assure students that no one can master this content in a day; additional review and practice will be needed to reinforce the skills learned.
-
-* Reiterate to students that the main goal linear regression models, especially within FinTech, is to predict and forecast prices and ROI. Like scatter plots, linear regression models focus on evaluating the relationship between dependent and independent variables.
+* Reiterate to students that the main goal time series and machine learning models, especially within FinTech, is to predict and forecast prices and ROI. Time series analysis helps us to analyze the data to determine the best way to model the data and ultimately forecast future events.
 
 Ask if there are any questions before moving on. Encourage students to attend office hours and to reach out to teaching staff for any additional questions or help.
+
+### 16. END Class

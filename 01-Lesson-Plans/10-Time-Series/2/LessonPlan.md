@@ -1,16 +1,12 @@
-# 10.2 Lesson Plan: ARMA Virumque
+# 10.2 Lesson Plan: Time Series Models
 
 ### Overview
 
-Today's class is the heart of this unit. Students will be introduced to core concepts such as stationarity and autocorrelation. They will also learn to use time series models such as ARMA and ARIMA to create forecasts. They will also begin thinking about parsimony as they learn to estimate the order of a model.
+Today's class is the heart of this unit. Students will be introduced to core techniques to model or convert stationary data. They will also learn to use time series models such as ARMA, ARIMA, and GARCH to create forecasts.
 
 ### Class Objectives
 
 By the end of this class, students will be able to:
-
-* Quantify the accuracy of a linear regression model.
-
-* Perform auto-correlation on time series data.
 
 * Determine stationarity of a time series.
 
@@ -20,17 +16,15 @@ By the end of this class, students will be able to:
 
 * Use ACF and PACF plots to estimate the order of ARMA and ARIMA models.
 
-* Explain the significance of Akaike Information Criterion and Bayesian Information Criterion in assessing statistical models.
+* Model and predict volatility with GARCH.
 
 - - -
 
 ### Instructor Notes
 
-* Today's class is the most challenging in this unit. Starting with the concept of auto-correlation, students will build on previous skills and ideas as they progress through the day. Some of these ideas are counterintuitive. However, they will gain repeated exposure to them from one activity to the next. A major goal for today's class, then, is for students to gain confidence through the process of working through fairly challenging material through multiple exposures.
+* Today's class is the most challenging in this unit. Starting with the concept of stationarity, students will build on previous skills and ideas as they progress through the day. Some of these ideas are counterintuitive. However, they will gain repeated exposure to them from one activity to the next. A major goal for today's class, then, is for students to gain confidence through the process of working through fairly challenging material through multiple exposures.
 
 * Be mindful that because the each activity is a pre-requisite for the next, today's class may call for greater patience from both instructor and students. Do not rush through activities, and take the time to explain the core concepts and techniques in detail if necessary.
-
-* Due to the sheer volume of material covered, the discussion of ACF and PACF plots, as well as AIC and BIC, in determining a model's order has been deferred until ARIMA. However, feel free to discuss it more fully during ARMA at your discretion.
 
 * While it is likely that some students may not fully grasp all of today's material by the end of class, the payoff will be in day 3, when your students will have a chance to create predictive models from start to end.
 
@@ -56,322 +50,15 @@ Welcome students to the second day of the time series unit, and briefly summariz
 
 * Tools such as the Hodrick-Prescott filter, and EWMA can be used to identify trends in a time series.
 
-* Linear regression can be a powerful tool used to describe and predict data.
-
 Describe to students what they will be learning today:
 
-* They will learn to quantify the accuracy of a linear regression model.
+* They will learn how to detect and convert non-stationary data to stationary.
 
-* They will learn to use processes to make a time series easier to model.
+* They will learn to model volatility in a time series.
 
-* They will learn to use powerful time series models, ARMA and ARIMA, to forecast financial data.
+* They will learn to use powerful time series models, ARMA,  ARIMA, and GARCH, to forecast financial data.
 
-* They will encounter the concept of parsimony in models, an important idea in machine learning.
-
-### 2. Instructor Do: Error, Accuracy, and Metrics (10 min)
-
-In this activity, we will discuss quantifying a linear regression model: how accurately it describes the data.
-
-**File:**
-
-* [time_series_simple_regression.ipynb](Activities/01-Ins_Error_Accuracy_Metrics/Solved/time_series_simple_regression.ipynb)
-
-
-Open the slideshow and recapitulate the linear regression plot below, which we have seen previously:
-
-  ![Images/error01.png](Images/error01.png)
-
-* The blue dots are a scatter plot of data points (years of experience vs salary).
-
-* The red line is the best fit line. It represents the linear regression model.
-
-* The distance between each data point and the best fit line is referred to as the error.
-
-Explain that the linear regression model is mathematically constructed to **minimize** the the sum of all the errors after they have been squared (Slide 4).
-
-  ![Images/error01.jpg](Images/error02.jpg)
-
-Explain that one way to assess the accuracy of a linear regression model is to look at the errors:
-
-* The **mean squared error**, or **MSE**, as the name states, is the average of the square of the errors of the dataset. It is the variance of the errors in the dataset.
-
-* The **root mean square error**, or **RMSE**, is simply the square root of the MSE. It is therefore the standard deviation of the errors in the dataset.
-
-* Lower MSE and RMSE scores, of course, indicate a more accurate model.
-
-Explain that R2, or r-square, is a way to assess the relationship between two variables.
-
-* The correlation coefficient is a numerical description of the extent to which the two variables move  together. It ranges from -1 to 1.
-
-* **R2**, or **r-square value**, is simply the square of the correlation coefficient. It describes the extent to which a change in one variable is associated with the change in the other variable. It ranges from 0 to 1.
-
-Having explained the general concepts, go over the code implementations of these metrics. Open the notebook and walk through the code:
-
-  ```python
-  from sklearn.metrics import mean_squared_error, r2_score
-  import numpy as np
-
-  score = model.score(X_binary_encoded, y)
-  r2 = r2_score(y, predictions)
-  mse = mean_squared_error(y, predictions)
-  rmse = np.sqrt(mse)
-  np.std(y)
-  ```
-
-* After importing the pertinent `sklearn` modules, the R2, MSE, and RMSE are calculated.
-
-* The RMSE is simply the square root of the mean squared error. A lower RMSE score (near 0) is ideal and means the model is fit well to the data.
-
-Explain that you can also compare the RMSE to the standard deviation to get a better feel for the model fit.
-
-* Ideally, the RMSE will not exceed the standard deviation of the temperature data.
-
-* The standard deviation of the temperature, calculated by `np.std()`, is 3.84.
-
-* The RMSE, or the standard deviation of the error, is 6.38.
-
-* The RMSE exceeds the standard deviation, indicating that the model may not be very helpful. In other words, on average there are wider swings in the error than the measured temperatures.
-
-### 3. Students Do: Regression Metrics (10 min)
-
-**Files:**
-
-* [README.md](Activities/02-Stu_Error_Accuracy_Metrics/README.md)
-
-* [starter.ipynb](Activities/02-Stu_Error_Accuracy_Metrics/Unsolved/metrics.ipynb)
-
-* [oil_futures.csv](Activities/02-Stu_Error_Accuracy_Metrics/Resources/oil_futures.csv)
-
-### 4. Instructor Do: Review Activity (5 min)
-
-**Files:**
-
-* [metrics.ipynb](Activities/02-Stu_Error_Accuracy_Metrics/Solved/metrics.ipynb)
-
-Open the solution notebook and explain the following:
-
-  ```python
-  df['Return'] = returns.copy()
-  df['Lagged_Return'] = returns.shift()
-  ```
-
-  * Lagged Returns are used to associate a date with its returns. The goal of this assignment is to use the week of year data to predict the returns.
-
-
-  ```python
-  X['Week_of_year'] = X.index.weekofyear
-  X_binary_encoded = pd.get_dummies(X, columns=['Week_of_year'])
-  ```
-
-  * The features are created by using the `weekofyear` attribute of the index. Because the index is a DateTimeIndex, the index can be transformed into other time periods such as weekly.
-
-  ```
-  y = df['Return']
-  ```
-
-  * The prediction target will be the returns.
-
-  ```python
-  model = LinearRegression()
-  model.fit(X_binary_encoded, y)
-  ```
-
-  * A `LinearRegression` model is fit to the data. This model will attempt to use the week of year inputs to predict the returns.
-
-Highlight the salient features of the error metrics:
-
-* R2: An r-square value of 0.2 An interpretation of R2 is not always straight forward, can be misleading in isolation. With that caveat, 0.2 can be a robust value in financial contexts.
-
-* The MSE is 2.986 and the RMSE (the square root of MSE) is 1.72. The RMSE is lower than the standard deviation of returns (1.93), indicating the standard deviation of errors is smaller than that of the raw data.
-
-Ask for any remaining questions before moving on.
-
-### 5. Instructor Do: Auto Correlation (15 min)
-
-**File:**
-
-  * [autocorrelation.ipynb](Activities/03-Ins_Auto_Correlation/Solved/autocorrelation.ipynb)
-
-Open the notebook and briefly describe the data set:
-
-  ![Images/ac01.png](Images/ac01.png)
-
-  * The data set is the familiar weather data.
-
-  * The temperature readings are hourly.
-
-  * Each hourly reading is fairly close to that of the previous hour.
-
-Introduce the concept of auto correlation:
-
-  * Up to this point, when dealing with linear regression, we have tried to identify the relationship between two unrelated variables, such as date vs. weather, or years of experience vs. salary.
-
-  * Auto correlation, on the other hand, determines to what extent, for example, today's values correlate with yesterday's values.
-
-To illustrate auto correlation, explain to students that the `Lag_Temperature` column is the result of shifting the `Temperature` column down by one:
-
-  ![Images/ac02.png](Images/ac02.png)
-
-  * The temperature value from the first row is found in the `Lag_Temperature` column in the second row, for example.
-
-  * The temperature data has been shifted down by one time period--in this case an hour.
-
-  * The temperature from one hour to the next changes in relatively small increments.
-
-  * Auto correlation, again, is a measure of how closely current values correlate with past values.
-
-Show the plot of the temperature data versus a lagged copy of itself:
-
-  ![Images/ac06.png](Images/ac06.png)
-
-  * In this case, there appears to be an extremely close relationship.
-
-  * In other words, a temperature reading is close in value to the reading from an hour earlier.
-
-Now show the plotting of temperature over a 48-hour period, with the following observations:
-
-  ![Images/ac03.png](Images/ac03.png)
-
-  * The temperature, predictably, shows a cyclical pattern.
-
-  * Despite significant swings seen in a day, the temperature change between one hour to the next is fairly small.
-
-  * For a given temperature reading, say 6 am on January 1st, the most similar temperature reading is seen again 24 hours later.
-
-You may wish to draw on the following scenario to further illustrate autocorrelation:
-
-  * A pair of dice is thrown every minute. Their combined value and the time are recorded.
-
-  * Since it is a random activity, there will not be a strong relationship between the current value of the dice and the preceding one. Here, the auto correlation will not be significant.
-
-Next, explain the code used to calculate the auto correlation:
-
-  ```python
-  df.Temperature.autocorr(lag=1)
-  ```
-
-  * The `autocorr()` method here returns the autocorrelation of the `Temperature` column against a lagged copy of itself.
-
-  * Here, the lag is 1, meaning that the series of temperature readings is correlated against a series of temperature readings taken one hour previously.
-
-  * The correlation coefficient is 0.99, a very high number.
-
-Explain that auto correlation can be computed at a different lag
-
-  ```python
-  df.Temperature.autocorr(lag=24)
-  ```
-
-  * Here, each temperature reading is autocorrelated with a temperature reading 24 hours later.
-
-  * As expected, the auto correlation is very high at a lag of 24 as well.
-
-Once again, if necessary, remind your students that auto correlation is simply the correlation of current data with past data.
-
-Explain that the `plot_acf()` function visualizes what we have discussed so far:
-
-  ```python
-  sm.graphics.tsaplots.plot_acf(df.Temperature, lags=48)
-  ```
-
-  ![Images/ac04.png](Images/ac04.png)
-
-  * The plot nicely illustrates the periodicity of daily temperature patterns.
-
-  * This plot, in other words, shows autocorrelation at lags up to 48, which was specified in the argument `lags=48`.
-
-  * As pointed out previously, there is high auto correlation at a lag of 1, slightly lower at lag 2, and so on. Then a high auto correlation is found at a lag of 24, and multiples of 24, such as 48.
-
-Next, explain that the band in light blue is the confidence interval.
-
-  * By default, the CI is set to 95%.
-
-  * In other words, if the data set were noisy, and there's no meaningful auto correlation, there is 5% chance that the auto correlation at a particular lag would be found outside the CI band by random chance.
-
-  * In this case, the auto correlation at all specified lags are outside the CI band, indicating a high likelihood that the auto correlation at each interval is **not** a random fluke.
-
-  * As lag time increases, the CI band widens. This makes intuitive sense: as lag is increased, more potential for noise is introduced, and the statistical burden of proof is higher.
-
-Next, introduce partial auto correlation functions:
-
-  * The idea of PACF is different from auto correlation function.
-
-  * Whereas an auto correlation function measures auto correlation at all specified lags, PACF essentially reduces components of auto correlation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags.
-
-Explain that a PACF plot will illustrate the idea in concrete terms:
-
-  ```python
-  sm.graphics.tsaplots.plot_pacf(df.Temperature, lags=48, zero=False)
-  ```
-
-  ![Images/ac05.png](Images/ac05.png)
-
-  * The `plot_pacf()` function creates a PACF plot with the same temperature data.
-
-  * In the PACF plot, there are significant lags at 1, 2, and 24 hours.
-
-  * The PACF estimates that lags at 1, 2, and 24 hours account for the other lags.
-
-  * In other words, PACF answers the question, if there's already one lag that has been identified as being significant, will the data be better explained by flagging a second lag as significant?
-
-  * In the ACF, there was high auto correlation at lags of 24 and 48 hours. This makes sense, as the temperature at the same time across three days would be expected to be very similar.
-
-  * In the PACF, however, we do not see a high partial auto correlation at a lag fo 48 hours, since that can be explained by the lag at 24 hours.
-
-Finally, summarize the key points of the activity:
-
-  * Autocorrelation is a measure of high closely current values are correlated with past values.
-
-  * In the activities to come, ACF and PACF will help us select the correct **order** of models for forecasting.
-
-  * Doing so requires an understanding of how current values are affected by past values.
-
-### 6. Students Do: Euro ETFs (10 min)
-
-In this activity, students will examine a time series of bid-ask spreads of an ETF for autocorrelation.
-
-**Files:**
-
-* [README.md](Activities/04-Stu_ETF/README.md)
-
-* [high_frequency_euro_ETF_bid_ask_spreads.csv](Activities/04-Stu_ETF/Resources/high_frequency_euro_ETF_bid_ask_spreads.csv)
-
-* [autocorrelation.ipynb](Activities/04-Stu_ETF/Unsolved/autocorrelation.ipynb)
-
-### 7. Instructor Do: Review Activity (5 min)
-
-**File:**
-
-* [autocorrelation.ipynb](Activities/04-Stu_ETF/Solved/autocorrelation.ipynb)
-
-Walk through the solution code:
-
-  ```python
-  df=df.resample('10S').mean().dropna()
-  df.bid_ask_spread.autocorr(1)
-  ```
-
-  * The bid-ask spread data is sampled at a 10-second interval, and NaN values are dropped.
-
-  * The autocorrelation at a lag of 1 is 0.136.
-
-Review the ACF and PACF plots:
-
-  ```python
-  from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
-  plot_acf(df['bid_ask_spread'], lags=30, zero=False)
-  plot_pacf(df['bid_ask_spread'], lags=30, zero=False)
-  ```
-
-  ![Images/etf01.png](Images/etf01.png)
-
-  ![Images/etf02.png](Images/etf02.png)
-
-  * The ACF and PACF plots here have a similar appearance, although that is not always the case.
-
-  * The ACF and PACF both appear to be significant at a lag of 1.
-
-### 8. Instructor Do: Stationarity and Non-Stationarity (10 min)
+### 2. Instructor Do: Stationarity and Non-Stationarity (10 min)
 
 In this activity, you will define stationarity, a key concept in time series modeling.
 
@@ -444,7 +131,7 @@ Open the notebook and show the code to convert from a non-stationary dataset to 
   * Diff() subtracts out this upward trend, and can often be an easy way to make a series stationary.
 
 
-### 9. Students Do: Stationarity (15 min)
+### 3. Students Do: Stationarity (15 min)
 
 In this activity, students will perform techniques to stationarize a non-stationary time series.
 
@@ -456,7 +143,7 @@ In this activity, students will perform techniques to stationarize a non-station
 
   * [stationarity.ipynb](Activities/05-Stu_Stationarity/Unsolved/stationarity.ipynb)
 
-### 10. Instructor Do: Review Activity (5 min)
+### 4. Instructor Do: Review Stationarity (5 min)
 
 **Files:**
 
@@ -528,7 +215,7 @@ Summarize the key points and procedures of this activity:
 
   * NaN and infinity values must be dropped along the way.
 
-### 11. Instructor Do: Auto-Regressive Moving Average Model (15 min)
+### 5. Instructor Do: Auto-Regressive Moving Average Model (15 min)
 
 Before diving into ARMA, quickly summarize auto-correlation for the class:
 
@@ -624,11 +311,7 @@ Reiterate that, despite the possibly intimidating mathematical formula, the idea
 
   * Past values and past errors are used to predict future values.
 
-- - -
-### 12. BREAK (15 min)
-- - -
-
-### 13. Instructor Do: ARMA in Practice (10 min)
+### 6. Instructor Do: ARMA in Practice (10 min)
 
 **File:**
 
@@ -725,7 +408,7 @@ Finally, highlight a few important features of the model's summary:
 
   * The AIC and BIC values should also be noted, lower values reflecting better accuracy. We will cover these values in greater detail later today.
 
-### 14. Students Do: Yields (10 min)
+### 7. Students Do: Yields (15 min)
 
 In this activity, students will create an ARMA model on yield data.
 
@@ -735,7 +418,7 @@ In this activity, students will create an ARMA model on yield data.
 
   * [yield.csv](Activities/07-Stu_ARMA/Resources/yield.csv)
 
-### 15. Instructor Do: Review Activity (5 min)
+### 8. Instructor Do: Review Activity (10 min)
 
 **File:**
 
@@ -801,7 +484,13 @@ Explain that the model can be used to make predictions:
 
   * The `forecast()` method is used here to predict yield values for the next 5 days.
 
-### 16. Instructor Do: ARIMA (15 mins)
+- - -
+
+### 9. BREAK (15 min)
+
+- - -
+
+### 10. Instructor Do: ARIMA (15 mins)
 
 In this activity, in addition to describing the ARIMA model, you will elucidate the use of ACF and PACF plots, as well as AIC and BIC, in identifying the order of an ARIMA model.
 
@@ -906,7 +595,7 @@ Send the following link to students for more information on the order of an ARIM
 
   * [https://people.duke.edu/~rnau/arimrule.htm](https://people.duke.edu/~rnau/arimrule.htm).
 
-### 17. Students Do: An ARIMA and a Leg (15 min)
+### 11. Students Do: An ARIMA and a Leg (15 min)
 
 **Files:**
 
@@ -916,7 +605,7 @@ Send the following link to students for more information on the order of an ARIM
 
   * [stu_ARIMA.ipynb](Activities/09-Stu_ARIMA_Leg/Unsolved/stu_ARIMA.ipynb)
 
-### 18. Instructor Do: Review Activity (5 min)
+### 12. Instructor Do: Review Activity (10 min)
 
 **File:**
 
@@ -944,17 +633,234 @@ Describe the lag patterns seen in ACF and PACF plots:
 
 Answer any remaining questions before moving on.
 
-### 19. Instructor Do: Reflect (5 min)
+### 13. Instructor Do: GARCH (15 min)
+
+**File:**
+
+* [garch.ipynb](Activities/01-Ins_GARCH/Solved/garch.ipynb)
+
+Before introducing GARCH to the class, introduce the topic of volatility:
+
+* Volatility can dictate the larger movements of the market. Higher volatility, for example, tends to accompany lower returns.
+
+* In portfolio management, for example, diversifying the types of assets can help reduce risk in a volatile market, and the forecasting of volatility would help make adjustments to reduce risk.
+
+* Another example is the pricing of derivatives. The price of derivatives, such as options, are influenced much more by volatility than the price of the underlying asset. Characterizing and forecasting volatility is therefore a key skill in derivative trading.
+
+* Understanding volatility is also important to banks as loan failures can occur in a cluster. Assets must exceed liabilities, so regulators and banks alike create forecast models for asset volatility.
+
+Explain that GARCH models volatility. Open the slideshow and summarize the key features of the ARMA model (Slide 5):
+
+* An autoregressive component in which future values are predicted based on past values. In this model, values are a function of time.
+
+* A moving average component in which future values are predicted based on past errors.
+
+Explain that GARCH models are structured similarly, but to predict volatility (Slide 6):
+
+* As with ARMA models, there are autoregressive and moving average components.
+
+Formalize the term volatility (Slides 7-8):
+
+* In this context, volatility is the change in variance across a time series.
+
+* Volatility, then, is a function of time.
+
+* GARCH stands for Generalized Autoregressive Conditional Heteroskedasticity, where heteroskedasticity simply means uneven variance.
+
+
+Use the `Volatile Periods in the US Stock Market` slides to illustrate how volatility clusters and to motivate GARCH models:
+
+This slide shows an example of volatility clusters:
+
+* Volatility and returns tend to cluster.
+
+* GARCH is a model designed to take specific advantage of that.
+
+* Tracing the S&P 500 over time gives us some examples of highly volatile periods:
+
+  ![Images/garch01.png](Images/garch01.png)
+
+* The first highlighted box captures the period after the September 11th attacks and the decline of the dotcom bubble, while the second highlights the recession that began in 2008, including the collapse of Lehmann Brothers.
+
+* Scenarios such as political upheavals, natural disasters, and disruptions to oil supply can also cause volatility to cluster.
+
+Explain that the cause of financial market volatility is largely psychological:
+
+* When a big, unexpected event occurs, there is much uncertainty about the future.
+
+* It takes time for people to figure out the financial impact, and until then, there are disagreements about the impact.
+
+* It is these disagreements that lead to the volatility.
+
+Open the notebook and walk through a code example of using GARCH to predict volatility. First, explain that like an ARMA model, a GARCH model assumes stationarity:
+
+  ![Images/garch02.png](Images/garch02.png)
+
+* The closing price has been stationarized by transforming it into returns.
+
+* Volatility clusters are visible here in plot of S&P returns, notably between 2008 and 2010 or so.
+
+Explain the data preparation steps:
+
+  ```python
+  returns = sp500.loc['2008':'2009'].Close.pct_change() * 100
+  returns = returns.dropna()
+  ```
+
+* The closing prices are stationarized as returns and multiplied by 100 for ease of view.
+
+* Numbers that are NaNs are dropped.
+
+Explain that the steps of creating a GARCH model are very similar to that of an ARMA model:
+
+  ```python
+  from arch import arch_model
+  model = arch_model(returns, mean="Zero", vol="GARCH", p=1, q=1)
+  res = model.fit(disp="off")
+  res.summary()
+  ```
+
+* From the `arch` module, `arch_model` is imported.
+
+* The arguments `mean="Zero", vol="GARCH"` specify the GARCH model.
+
+* The arguments `p=1, q=1`, as in ARMA models, specify the auto-regressive and moving average orders. These can be identified by the same process of plotting the ACF and the PACF, and identifying AIC and BIC values.
+
+  * To reiterate, `p` is the AR component of the model
+  * and `q` is the MA component of the model
+  * the concept is similar to ARMA, except here we're forecasting volatility.
+
+* The model is created, fits the data, and the summary is printed.
+
+  ![Images/garch03.png](Images/garch03.png)
+
+* The results are plotted. Here, `annualize='D'` argument reflects a scaling by 252 trading days that are in a year.
+
+Explain that the model can also be used to plot a forecast of _volatility_:
+
+  ```python
+  forecast_horizon = 3
+  forecasts = res.forecast(start='2009-12-31', horizon=forecast_horizon)
+
+  intermediate = np.sqrt(forecasts.variance.dropna()*252)
+  final = intermediate.dropna().T
+  final.plot()
+  ```
+
+* The forecast will be generated for 3 trading days.
+
+* The `forecast()` method generates forecast values.
+
+* Intermediate steps are taken to format the data properly for plotting. The standard deviation is taken of the forecast values by taking the square root of the variance, then transposed (with `T`), then plotted.
+
+Show the plot of the volatility forecast:
+
+  ![Images/garch04.png](Images/garch04.png)
+
+  * This chart shows our estimate of volatility of the S&P 500 for the next three days.
+
+  * The chart shows that volatility (i.e., risk) in the market is expected to rise.
+
+  * Therefore, with GARCH, we've developed a cool way to forecast risk in the market.
+
+### 14. Students Do: Euro-USD Volatility (10 min)
+
+**Files:**
+
+* [README.md](Activities/02-Stu_USD/README.md)
+
+* [USD_per_Euro_Hourly_Mid Prices.csv](Activities/03-Stu_USD/Resources/USD_per_Euro_Hourly_Mid Prices.csv)
+
+* [usd.ipynb](Activities/02-Stu_USD/Unsolved/usd.ipynb)
+
+### 15. Instructor Do: Review Activity (10 min)
+
+**Files:**
+
+* [usd.ipynb](Activities/02-Stu_USD/Solved/usd.ipynb)
+
+Open the notebook and display the plot of the exchange rate:
+
+  ![Images/usd01.png](Images/usd01.png)
+
+* Volatility appears to be more pronounced in the years 2015-2017.
+
+* The series is non-stationary. It will need to be stationarized to use GARCH.
+
+```python
+df['Return'] = df.Rate.pct_change() * 100 * 24
+df = df.resample('D').mean()
+df = df.dropna()
+df.head()
+```
+
+* The pct_change() in the above code makes the data stationary.
+
+* The DataFrame is resampled. Since we start with hourly exchange rates, we'll convert them from hourly to daily using the above block of code.
+
+* Specifically, this block starts by calculating the percentage hourly return.
+
+  * These hourly returns are scaled up to daily, by multiplying by 24 (currency markets trade 24 hours per day).
+
+  * The resample('D') function then calculates the daily average percentage return.
+
+* The plot of the resulting stationarized series also confirms the clustering of volatility seen in 2015, 2016, and 2017:
+
+  ![Images/usd02.png](Images/usd02.png)
+
+Explain the code for creating the GARCH model in Python:
+
+  ```python
+  model = arch.arch_model(returns, mean="Zero",  vol="GARCH", p=2, q=2)
+  res = model.fit(disp="off")
+  res.summary()
+  ```
+
+* The AR and MA orders, specified as `p` and `q`, were given in this activity.
+
+* However, students can use ACF and PACF plots, as well as AIC and BIC, to identify the GARCH model order, just as they have done in ARMA AND ARIMA.
+
+Next, walk through the code for plotting the volatility forecast:
+
+  ```python
+  forecast_horizon = 5
+  forecasts = res.forecast(start='2019-12-08', horizon=forecast_horizon)
+  ```
+
+* The last date of the dataset (which can be identified by `df.tail()`) is 2019-12-08. It is defined as the starting date of the forecast.
+
+* The `forecast_horizon` is defined as 5, meaning the forecast for the next 5 days will be generated.
+
+* A forecast is generated with the `forecast()` method.
+
+Finally, walk through the steps of plotting the volatility forecast:
+
+  ```python
+  intermediate = np.sqrt(forecasts.variance * 252)
+  final = intermediate.dropna().T
+  final.plot()
+  ```
+
+* With `np.sqrt(forecasts.variance * 252)`, the standard deviation of forecasts is scaled by 252 to account for the number of trading days in a year (standard deviation is the square root of variance).
+
+* All NaNs are dropped, and the results are transposed with `T`. The transpose  switches the rows and columns to make it easier to plot.
+
+* The volatility is plotted with the `pd.plot()` method:
+
+  ![Images/usd04.png](Images/usd04.png)
+
+* Based on the upward trend in the plot, the volatility of the EUR-USD exchange rate is predicted to increase over the next 5 days.
+
+### 16. Instructor Do: Reflect (5 min)
 
 Take a few moments to recap and reflect before ending class:
-
 
 * We learned that certain models are robust against non-stationary data (ARIMA) while others need input data to be converted to stationary first (ARMA).
 
 * We learned how to forecast stock prices and oil futures prices using statistical models (ARMA and ARIMA).
 
-* We learned how to use time-series models to predict trends in things other than asset markets, for example, flight activity.
+* We learned that understanding volatility is important in financial forecasting, and we learned a useful model to predict volatility (GARCH).
 
 * These time-series models that you learned are used in practice everywhere, from forecasting next year's revenue to quantitative trading. As a result, you've learned a versatile tool for predicting future events.
 
-### 20. End Class
+### 17. End Class
