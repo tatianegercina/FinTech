@@ -10,9 +10,11 @@ Open the starter file, and highlight the following during a live coding session:
 
 * In the previous activity, a logistic regression model was used to classify loan eligibility. This is just one way of implementing the loan approver model. Another algorithm that can be used is support vector machines (SVM).
 
-* Similar to the **Logistic Regression** algorithm, the **SVM** supervised learning algorithm can be used for classification and regression analysis.
+* Define SVM as a supervised learning model that can be used for classification and regression analysis. Explain that SVM separates classes of data points into multidimensional space. The space is segmented by a line or plane that groups data points into their respective classes.
 
-* Unlike **Logistic Regression**, **SVM** takes a non-linear approach when predicting classes and outcomes. Instead, **SVM** focuses on dimensionality.
+  ![svm.png](Images/svm.png)
+
+* Unlike **Logistic Regression**, **SVM** can employ both a linear and non-linear approach when predicting outcomes. **SVM** focuses on dimensionality.
 
   * The number of dimensions needed for the model is dependent on the number of features in the data set. Each feature is a dimension.
 
@@ -38,24 +40,21 @@ Provide understanding on how the orientation and position of the hyperplane is d
 
     * In order to establish **0 tolerance with perfect partition**, the SVM model may introduce a new `z-axis` dimension for non-linear hyperplanes.
 
-*
-
-*
-
 Demonstrate to students how to create a SVM model using sklearn.
+
+* The `make_blobs` function can be used to create the data set that the model will use to train/learn from.
+
+    ```python
+    from sklearn.datasets.samples_generator import make_blobs
+    X, y = make_blobs(n_samples=40, centers=2, random_state=42, cluster_std=1.25)
+    plt.scatter(X[:, 0], X[:, 1], c=y, s=100, cmap="bwr");
+    plt.show()
+    ```
 
 * In order to create a SVM model, the **sklearn** `svm.SVC` module must be imported.
 
     ```python
     from sklearn.svm import SVC
-    ```
-
-* Like all other supervised learning models, the SVM model requires training and test data for fitting. The **sklearn** `model_selection.train_test_split` function can be used to split data sets into training and testing subsets.
-
-    ```python
-    # Split data into training and testing
-    from sklearn.model_selection import train_test_split
-    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
     ```
 
 The SVC constructor supports a number of arguments, with the `kernel` argument being the most important. Provide students with a brief overview of the `kernel` argument and what **kerneling** is.
@@ -74,6 +73,42 @@ The SVC constructor supports a number of arguments, with the `kernel` argument b
 
     ```python
     model = SVC(kernel='linear')
+    ```
+
+* Once the model has been created, it can be trained using the **sklearn** `fit` function. The blob data created earlier can be used for training.
+
+    ```python
+    model.fit(X, y)
+    ```
+
+* It is a good idea to identify the decision boundary/hyperplane for the already identified data points prior to making predictions. This provides a visual representation of the already existing classes and their margin of separation.
+
+  * This can be done by identifying the min and max values within the provided data set (feature columns only). These values are known as **support vectors** and can be plotted to render a visual of the classes.
+
+    ```python
+    # WARNING! BOILERPLATE CODE HERE!
+    # Plot the decision boundaries
+    x_min = X[:, 0].min()
+    x_max = X[:, 0].max()
+    y_min = X[:, 1].min()
+    y_max = X[:, 1].max()
+
+    print(x_min, x_max, y_min, x_max)
+    ```
+
+* The NumPy `mesh_grid` function can be used to plot the decision boundary coordinates and render a plot of the data.
+
+    ```python
+    XX, YY = np.mgrid[x_min:x_max, y_min:y_max]
+    Z = model.decision_function(np.c_[XX.ravel(), YY.ravel()])
+
+    # Put the result into a color plot
+    Z = Z.reshape(XX.shape)
+    # plt.pcolormesh(XX, YY, Z > 0, cmap=plt.cm.Paired)
+    plt.contour(XX, YY, Z, colors=['k', 'k', 'k'],
+                linestyles=['--', '-', '--'], levels=[-.5, 0, .5])
+    plt.scatter(X[:, 0], X[:, 1], c=y, cmap='bwr', edgecolor='k', s=100)
+    plt.show()
     ```
 
 * The model can then be fit using the `sklearn.fit` function. The SVM model is trained just like the **Logistic Regression** model. After the model is fit, the model can be used to make classification predictions using the `predict` function.
