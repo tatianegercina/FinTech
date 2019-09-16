@@ -83,7 +83,7 @@ Transition into a dry demonstration (just visit the site) of a practical FinTech
 
   2. Analyze data by either extracting financial information from Plaid or by using Plaid's out-of-the-box capabilities.
 
-  ![plaid_services.PNG](Images/plaid_services.png)
+  ![plaid_services.png](Images/plaid_services.png)
 
 - - -
 
@@ -312,7 +312,7 @@ Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ip
 
 * Once a `key.sh` file is created, it has to be executed for the `export` commands to execute. Supplying a `source` command before the `key.sh` file will source the variables and load the `keys.sh` file/`export` command.
 
-  ![source_keys.PNG](Images/source_keys.PNG)
+  ![source_keys.png](Images/source_keys.png)
 
 * Environment variables can be accessed in Python with the os library. The library has to be imported before it can be used. The os library has an `os.getenv` function that can be used to retrieve environment variables from the operating system. Once retrieved, the value can be saved as a Python variable (e.g.,  `api_key`).
 
