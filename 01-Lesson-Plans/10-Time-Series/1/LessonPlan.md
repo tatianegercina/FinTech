@@ -94,7 +94,7 @@ Open the slides, and highlight the following:
 
   * For example, instead of creating a 500 line if-else decision structure in order to identify if a transaction is fraudulent, where every price range and product category is evaluated, a machine learning algorithm can review all transactions ever made by an account owner, classify and cluster transactions,and then predict whether or not the most recent transaction is fraudulent.
 
-* Emphasize that machine learning, in a nutshell, is just the application of statistical methods as functions with inputs. However, instead of a developer configuring inputs, the computer learns how to configure inputs itself and makes changes as needed.
+* Emphasize that machine learning, in a nutshell, is just developing a statistical or algorithmic model of the data that can be used to automatically make predictions or decisions about new data.
 
 * Explain that machine learning algorithms have been transforming a range of industries, including finance, healthcare, agriculture, marketing, homeland security, and space exploration, just to name a few. **Machine learning** is being used to used to predict
 
@@ -116,9 +116,9 @@ Open the slides, and highlight the following:
 
 * Underscore to students that the predictions made by **machine learning** algorithms are driving decision making at a global scale. Commercial and government leaders all leverage **machine learning** in some capacity: **machine learning** outcomes are helping industries become more proactive than reactive. Machine learning is at the forefront of all initiatives to make data driven decisions.
 
-* Communicate to students that the world of **machine learning** is sometimes viewed as nebulous and enigmatic: a niche field of programming involving heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, it is just the application of statistics and statistical libraries to solve data and business problems.
+* Communicate to students that the world of **machine learning** is sometimes viewed as nebulous and enigmatic: a niche field of programming involving heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, it is just the application of algorithms, statistics, and statistical libraries to solve data and business problems.
 
-  * Like all other functions, machine learning statistical functions are provided as libraries. Common machine learning libraries include **Sci-kit Learn** and **SciPy**. Services like Amazon Web Services and Google Cloud Platform offer proprietary machine learning libraries that can be used within their cloud ecosystems. These libraries, as well as the open source community, make execution of machine learning models as simple as calling a Pandas functions.
+  * Like all other functions, machine learning models are provided as libraries. Common machine learning libraries include **Scikit-Learn**, **TensorFlow**, and **SciPy**. Services like Amazon Web Services and Google Cloud Platform offer proprietary machine learning libraries that can be used within their cloud ecosystems. These libraries, as well as the open source community, make execution of machine learning models as simple as calling a Pandas functions.
 
   * Summarize the machine learning pipeline and explain to students that all machine learning pipelines follow a **Model -> Fit (Train) -> Predict** paradigm, where a data set/model of data is used to train the algorithm. Once the algorithm has been trained, the model and algorithm can be used to make actual predictions.
 
