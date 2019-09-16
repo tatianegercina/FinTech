@@ -26,13 +26,17 @@ By the end of the unit, students will be able to:
 
 * Apply Gradient Tree Boosting models in classification problems.
 
+---
+
 ### Instructor Notes
 
-* How you expect the class to feel.
+* Today's class is focused on teaching students how tree based algorithms can be used for classification problems, however feature engineering with categorical variables is also covered at the beginning of the class.
 
-* Advice or Warnings
+* Tree based algorithms have a wide range of applications, Today's class will use them on risk analysis scenarios.
 
-* Thematic Scripting - We are introducing students to the world of big data...
+* Some demos of Today's class, uses a lot of memory to train the models; some warning messages can be seen on Jupyter and may arise questions from students, explain them that these messages are not critical and can be ignored.
+
+* Overfitting could be a major problem in machine learning, take your time to understand it implications and how the techniques covered in this class can help to avoid it.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
