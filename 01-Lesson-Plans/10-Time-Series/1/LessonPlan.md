@@ -194,6 +194,8 @@ Ask students if they have any questions before moving on.
 
 **File:** [Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
 
+Explain to students that over the next several weeks, we will be learning about many different machine learning models and techniques, but we will start with Time Series Models. Time Series Models are very prevalent in the financial world and are very useful models for analyzing time series data.
+
 In this activity, you will introduce the basics of working with time series in Python.
 
 Explain that we'll learn the following pandas techniques to work with time series data:
