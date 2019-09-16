@@ -102,7 +102,7 @@ Navigate to the [Quandle API Overview](https://www.quandl.com/tools/api) page, a
 * Submit Quandl API to get AAPL's stock prices using an internet browser and the link below. Show students the data, and bring attention to the AAPL stock prices in the output.
 
   ```
-  https://www.quandl.com/api/v3/datasets/OPEC/ORB.json
+  https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=<instructor's API key>
   ```
 
   ![quandl_request_output.png](Images/quandl_request_output.png)
