@@ -624,7 +624,8 @@ Next, introduce partial auto correlation functions:
 
 * The idea of PACF is different from auto correlation function.
 
-* Whereas an auto correlation function measures auto correlation at all specified lags, PACF essentially reduces components of auto correlation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags.
+* Whereas an auto correlation function measures auto correlation at all specified lags, PACF essentially reduces components of auto correlation that are explained by previous lags. The effect is that it gives heavier weight to lags that have components that are not explained by earlier lags. That is, autocorrelations at any given lag interval that are significantly dissimilar to previous  intervals are marked as anomalous.
+
 
 Explain that a PACF plot will illustrate the idea in concrete terms:
 
