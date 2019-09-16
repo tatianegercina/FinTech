@@ -132,14 +132,23 @@ The SVC constructor supports a number of arguments, with the `kernel` argument b
     plt.show()
     ```
 
-* Now that the pre-existing data has been visualized into their corresponding classes, separated by a hyperplane, the model can be used to predict the classification of new data points. Just like with the Logistic Regression model, the `predict` function can be used to make predictions.
+    ![plotting_hyperplane.png](Images/plotting_hyperplane.png)
+
+* Now that the pre-existing data has been visualized into the corresponding classes, separated by a hyperplane, the model can be used to predict the classification of new data points. Just like with the Logistic Regression model, the `predict` function can be used to make predictions.
 
     ```python
     # Create new data set to predict
     X, y = make_blobs(n_samples=100, centers=2, random_state=0, cluster_std=.95)
     plt.scatter(X[:, 0], X[:, 1], c=y, s=100, cmap="bwr");
     plt.show()
+
+    # Fit to the training data and predict
+    model = SVC(kernel='linear')
+    model.fit(X_train, y_train)
+    predictions = model.predict(X_test)
     ```
+
+    ![predictions.png](Images/predictions.png)
 
 Explain to students why SVM might be used over a Logistic Regression model.
 
