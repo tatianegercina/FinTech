@@ -42,11 +42,11 @@ By the end of the class, students will be able to:
 
 * **Important!** Slack out the disclaimer for [AWS Free Tier](../Supplemental/AWS-Free-Tier.md) services at the end of Today´s class. Explain students, that while we are only using free tier services in class, they should review this documentation in order to avoid accidentally incurring charges.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+* Prior to class, make sure that all students have created their AWS account, and ask TAs to help troubleshoot any issues. If any students are unable to access a free tier account, ask that they pair up with a peer for this week.
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 13.1 Slides]().
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -59,10 +59,6 @@ By the end of the class, students will be able to:
 ### 1. Instructor Do: Welcome Class (10 mins)
 
 In this activity, students will be introduced to unsupervised learning and its most relevant applications. Also, an overview of the unit is presented including a homework demo.
-
-**Files:**
-
-* [Lesson 13.1 Slides]()
 
 Welcome the class to Unit 13, open the lesson slides and move to the _What you will achieve on this unit_ section by highlighting the following:
 
@@ -81,7 +77,7 @@ Continue by opening the Amazon Lex Management console, open the _RoboAdvisor_ ho
 
 ![RoboAdvisor Demo](Images/robo-advisor-demo.gif)
 
-Ends the homework demo, by commenting students that they will create two chatbots using Amazon Lex and AWS Lambda in this unit:
+Conclude the homework demo by telling students that they will create one of two chatbots using Amazon Lex and AWS Lambda in this unit:
 
 1. A cryptocurrencies converter.
 
@@ -93,19 +89,11 @@ Continue with the slides by highlighting the following:
 
 * This journey starts by learning about unsupervised learning.
 
-Make sure that all students have created their AWS account, ask TAs to assist any student that could be pending on creating it.
-
-Answer any questions before moving on.
-
 ---
 
 ### 2. Instructor Do: Introduction to Unsupervised Learning (10 mins)
 
-After an introduction to machine learning and NLP, students are eager to learn more about this matter. In this activity, students will be introduced to unsupervised learning and its most relevant applications.
-
-**Files:**
-
-* [Lesson 13.1 Slides]()
+In this activity, students will be introduced to unsupervised learning and its most relevant applications.
 
 Open the lesson slides and go to the _Introduction to Unsupervised Learning_ section.
 
@@ -127,19 +115,19 @@ Start a short facilitated discussion with students, take one or two answers from
 
   **Sample Answer:** Having thousands of transactions per day on credit card operations, it's hard to identify anomalous or fraudulent transactions, we can use unsupervised learning to find patters among transactions data to identify anomalies and potential fraudulent transactions.
 
-  **Sample Answer:** We can use unsupervised learning to cluster stocks data, so we can create investment portfolios according to the resulting groups.
+  **Sample Answer:** We can use unsupervised learning to cluster stock data, so we can create investment portfolios according to the resulting groups.
 
-As an example, a customer clustering problem is followed; continue with the presentation on the slide entitled _How can we understand our customers?_, move forward by highlighting the following:
+As an example, continue with the presentation on the slide entitled _How can we understand our customers?_, move forward by highlighting the following:
 
 * Beyond the typical segmentation variables, such as age, gender, income or zip code, nowadays understanding customers is crucial on every sector.
 
-* Supervised learning is very helpful predicting the future based on labeled historic data, however, there are some hidden patters on data that supervised learning is unable to find.
+* Supervised learning is very helpful predicting the future based on labeled historic data, however, there are are often situations where supervised learning is not feasible due to lack of information or lack of training labels.
 
-* Unsupervised learning enhances customers understanding, we can cluster data to find hidden or unknown patterns that can be used, for example, to develop a customized offer that responses to the needs identified on every group.
+* Unsupervised learning allows us to cluster data to find hidden or unknown patterns that can be used to better understand the customers. For example, to develop a customized offer that responds to the needs identified on every group.
 
-* The main applications of unsupervised learning on industry are:
+* The main applications of unsupervised learning are:
 
-  * **Clustering:** It allows to automatically split the dataset into groups according to similarity. It can be used for customer segmentation and targeting.
+  * **Clustering:** It allows us to automatically split the dataset into groups according to similarity. It can be used for customer segmentation and targeting.
 
   * **Anomaly Detection:** Automatically discovers unusual data points in a dataset. It's useful in identifying fraudulent transactions, discovering faulty pieces of hardware, or identifying an outlier caused by a human error during data entry.
 
@@ -151,27 +139,27 @@ As an example, a customer clustering problem is followed; continue with the pres
   * Responses to online marketing channels.
   * Buying habits (e.g. best day for buying, weekly spend)
 
-Comment to students, that customer segmentation is driving revenue in leading companies such as Netflix and Amazon as it's presented on the slides.
+Explain to students that customer segmentation is driving revenue in leading companies such as Netflix and Amazon.
 
-  * 75% of Netflix viewer activity is driven by recommendation ([Source](http://blog.springtab.com/personalization-examples-netflix/)).
-  * 35% of Amazon’s sales are generated through their recommendation engine ([Source](https://www.martechadvisor.com/articles/customer-experience-2/recommendation-engines-how-amazon-and-netflix-are-winning-the-personalization-battle/)).
-  * Netflix’s recommendation system saves the company an estimated $1Billion per year through reduced churn ([Source](https://dl.acm.org/citation.cfm?id=2843948)).
+* 75% of Netflix viewer activity is driven by recommendation ([Source](http://blog.springtab.com/personalization-examples-netflix/)).
+
+* 35% of Amazon’s sales are generated through their recommendation engine ([Source](https://www.martechadvisor.com/articles/customer-experience-2/recommendation-engines-how-amazon-and-netflix-are-winning-the-personalization-battle/)).
+
+* Netflix’s recommendation system saves the company an estimated $1Billion per year through reduced churn ([Source](https://dl.acm.org/citation.cfm?id=2843948)).
 
 End the presentation with a closing facilitated discussion, ask the following questions to students:
 
-* How a bank could use customer segmentation to improve their products?
+* How could a bank use customer segmentation to improve their products?
 
-  **Sample Answer:** Instead of having a generic offer of credit cards, a bank could use customer segmentation to offer credit cards according to demographics such as: age, geography, gender, generation (e.g. Millennials and Baby Boomers), income level, marital status, etc.
+  **Sample Answer:** Instead of having a generic offer for a credit card, a bank could use customer segmentation to offer credit cards according to demographics such as: age, geography, gender, generation (e.g. Millennials and Baby Boomers), income level, marital status, etc.
 
-* How an investment portfolio can be improved using customer segmentation?
+* How could an investment portfolio be improved using customer segmentation?
 
   **Sample Answer:** Using customer segmentation a portfolio can be categorized by industry, location, revenue, account size, and number of employees to reveal where risk and opportunity live within the portfolio. These patterns can provide key measurable data for more predictive credit risk management.
 
-Comment to students that, unsupervised learning and algorithms like K-Means, are the tools behind this kind of magic that is perceived by customers.
+Explain to students that we will be learning how to use sklearn and cloud-based tools to implement clustering and customer segmentation.
 
-Answer any questions before moving on.
-
---
+---
 
 ### 3. Instructor Do: Data Preparation for Unsupervised Learning (10 mins)
 
@@ -185,19 +173,19 @@ In this activity, students will learn about the data preparation considerations 
 
 * [new_iris_data.csv](Activities/01-Ins_Data_Prep/Resources/new_iris_data.csv)
 
-Before start playing with unsupervised learning algorithms, explain to students that data preparation for unsupervised learning doesn't differ to much from the process followed for supervised learning problems.
+Explain to students that data preparation for unsupervised learning doesn't differ to much from the process followed for supervised learning problems.
 
-Comment to the class that, as they already done in past lessons, they should consider the following data preparation tasks:
+Explain to the class that, as they already done in past lessons, they should consider the following data preparation tasks:
 
 1. **Data Selection:** Make a good choice of what data are going to be used. It's important to consider what data is available, what data is missing and what data can be removed.
 2. **Data Preprocessing:** Organize the selected data by formatting, cleaning and sampling it.
 3. **Data Transformation:** Transform the data to a format that eases its treatment and storage for future use (e.g. CSV file, spreadsheet, database).
 
-Highlight to students, that the main difference on preparing data for unsupervised learning is that its algorithms don't have any target variable, they only have input features that will be used to find patterns on the data. So, they should take care on selecting features that could help to find those patterns or create groups.
+Highlight to students that the main difference on preparing data for unsupervised learning is that its algorithms don't have any target variable, they only have input features that will be used to find patterns on the data. So, they should take care on selecting features that could help to find those patterns or create groups.
 
 Open the unsolved version of the Jupyter notebook, live code the demo and highlight the following:
 
-* To get started with unsupervised learning, [the iris dataset from the UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris) will be used. So, the data preparation workflow will use this data.
+* To get started with unsupervised learning, [the iris dataset from the UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris) will be used.
 
 * The data preparation workflow is quite similar as the one students have been following in the past, once the data is selected, the next step is to load the data into a pandas DataFrame.
 
@@ -207,7 +195,7 @@ Open the unsolved version of the Jupyter notebook, live code the demo and highli
 
   ![Removing the class column](Images/removing-class-column.png)
 
-Comment to students that, since all the variables on the dataset are numerical, there are no additional data preprocessing tasks to do. However, data transformations have to be done when there are categorical data or non-numeric features on the dataset. For example, transforming `male` and `female` categorical values to `0` and `1` respectively.
+Explain to students that since all the variables on the dataset are numerical there are no additional data preprocessing tasks to do. However, data transformations have to be done when there are categorical data or non-numeric features on the dataset. For example, transforming `male` and `female` categorical values to `0` and `1` respectively.
 
 * Finally, the preprocessed DataFrame is saved on a new `CSV` file for further use.
 
@@ -299,13 +287,11 @@ Be sure that there are no pending questions before moving forward.
 
 ---
 
-### 6. Instructor Do: The K-Means Algorith (15 min)
+### 6. Instructor Do: The K-Means Algorithm (15 min)
 
 In this activity, students will learn how the K-Means algorithm works, use your time wisely to cover the theoretical part as well as the coding part.
 
-**Files:**
-
-* [Lesson 13.1 slides]()
+**File:**
 
 * [03_Ins_K-Means.ipynb](Activities/03-Ins_KMeans/Solved/03_Ins_K-Means.ipynb)
 
@@ -313,17 +299,17 @@ Open the lesson slides and move to _The K-Means Algorithm_ section, go through t
 
 * To understand how K-Mean works a fictional anecdote is used.
 
-  > The anecdote begins by imagining you are on a room full of blue spheres, you want to learn more about them, so you start to observe around.
+  > The anecdote begins by imagining you are on a room full of spheres (data points), you want to learn more about them, so you start to observe them.
   >
   > You realized that every sphere represents a flower and that axes represent features of flowers. After observing the flowers, you discovered that there are some patterns when you combine the three features.
   >
-  > At this point, K-Means comes to the rescue!
+  > We can see that spheres (data points) with similar features seem to be closer together than data points with dissimilar features. We can use this spatial information to group similar data points together.
 
-Finish the anecdote, by explaining to students, that K-Means is an unsupervised learning algorithm used to identify clusters and solve clustering issues.
+Explain to students that K-Means is an unsupervised learning algorithm used to identify clusters and solve clustering issues.
 
 Continue on the slides to formally introduce K-Means, highlight the following:
 
-* K-Means algorithm groups the data into `k` clusters, where belonging to a cluster is based on some similarity or distance measure to a _centroid_.
+* The K-Means algorithm groups the data into `k` clusters, where each data is assigned to a cluster based on some similarity or distance measure to a _centroid_.
 
 * A _centroid_ represents a data point that is the arithmetic mean position of all the points on a cluster.
 
@@ -334,7 +320,7 @@ Continue on the slides to formally introduce K-Means, highlight the following:
   3. The centroids are recomputed as the mean of the data points assigned to the respective cluster.
   4. Repeat steps `1` through `3` until the stopping criteria is triggered.
 
-* One of the key tasks using K-Means is to find the best number of `k`.
+* One of the key tasks using K-Means is to find the best number for `k`. In other words, `k` determines how many clusters or groups best represent the data.
 
 * The _Elbow Curve_ is the most common method used to figure out the best value of `k`.
 
@@ -344,9 +330,9 @@ Continue on the slides to formally introduce K-Means, highlight the following:
 
 * Visually the best number for `k`, is the `k` value where the curve turns showing like an elbow on the curve.
 
-* Analytically using the inertia, we choose as the best `k`, the `k` value where adding more clusters only marginally decreases the inertia.
+* Analytically, using the inertia, we choose as the best `k`, the `k` value where adding more clusters only marginally decreases the inertia.
 
-Comment to students, that Today they will learn how to use `K-Means` and finding the best value for `k` using Python.
+Reassure students that while this may sound complex, K-Means is actually quite simple to implement using Python.
 
 Close the presentation, open the starter unsolved Jupyter notebook and live code the demo by highlighting the following:
 
@@ -364,23 +350,23 @@ Close the presentation, open the starter unsolved Jupyter notebook and live code
   model = KMeans(n_clusters=3, random_state=5)
   ```
 
-* Once the model instance is created, the next step is to fit the model with the unlabeled data. When the model is fitted, the K-Means algorithm will iteratively look for the best centroid for each of the `k` clusters.
+* Once the model instance is created, the next step is to fit the model with the unlabeled data. When the model is being trained (fit to the data), the K-Means algorithm will iteratively look for the best centroid for each of the `k` clusters.
 
   ```python
   model.fit(df_iris)
   ```
 
-* After the model is fitted, the corresponding cluster for every iris plant on the dataset can be found using the `predict()` method.
+* After the model is fit, the corresponding cluster for every iris plant on the dataset can be found using the `predict()` method.
 
   ![K-Means predictions](Images/kmeans-predictions-iris.png)
 
-Explain to students that, as they can see, three classes were found labeled as `0`, `1`, and `2`. Make clear to the class that naming classes is part of the job done by a subject matter expert on each business case, the K-Means algorithm is just able to identified how many clusters are on the data and label them with numbers.
+Explain to students that, as they can see, three classes were found labeled as `0`, `1`, and `2`. Make it clear to the class that naming classes is part of the job done by a subject matter expert, the K-Means algorithm is just able to identified how many clusters are on the data and label them with numbers.
 
 Continue the demo by adding a new column to the DataFrame with the predicted classes.
 
-![Adding predicted classes](Images/addind-classes-column.png)
+![Adding predicted classes](Images/adding-classes-column.png)
 
-* Visualizing the clusters helps to graphically understand how they are arranged, despite we have four features on the DataFrame, we can take two or three of them to plot the clusters.
+* Visualizing the clusters helps to graphically understand how they are arranged. In this case, we actually have too many features to represent visually, but we can take two or three of them to plot the clusters.
 
   | Two features                          | Three Features                        |
   | ------------------------------------- | ------------------------------------- |
@@ -388,11 +374,11 @@ Continue the demo by adding a new column to the DataFrame with the predicted cla
 
 Continue the live coding demo by showing students how the best value for `k` can be found, highlight the following:
 
-* Two list are created to store the values for the `inertia` and to define how many values of `k` we want to try. Ten values of `k` are normally a good number to start.
+* Two lists are created to store the values for the `inertia` and to define how many values of `k` we want to try. Ten values of `k` are normally a good number to start.
 
   ```python
   inertia = []
-  k = list(range(1,11))
+  k = list(range(1, 11))
   ```
 
 * A `for-loop` is defined to fit the K-Means model with the data from `df_iris` and a number of clusters ranging from 1 to 10, the `inertia` is fetched on each iteration to be compared on the Elbow Curve.
@@ -400,7 +386,7 @@ Continue the live coding demo by showing students how the best value for `k` can
   ```python
   # Looking for the best k
   for i in k:
-      km = KMeans(n_clusters = i, random_state = 0)
+      km = KMeans(n_clusters=i, random_state=0)
       km.fit(df_iris)
       inertia.append(km.inertia_)
   ```
@@ -413,14 +399,14 @@ Continue the live coding demo by showing students how the best value for `k` can
     "inertia": inertia
   }
   df_elbow = pd.DataFrame(elbow_data)
-  df_elbow.hvplot.line(x = "k", y="inertia", title="Elbow Curve", xticks=k)
+  df_elbow.hvplot.line(x="k", y="inertia", title="Elbow Curve", xticks=k)
   ```
 
 * As can be seen on the Elbow Curve, visually the best value for `k` is `3`.
 
   ![Elbow Curve](Images/elbow-curve.png)
 
-Answer any question that could arise from the class before continue.
+Answer any remaining questions before moving on.
 
 ---
 
@@ -450,7 +436,7 @@ In this activity, students will identify the best number of clusters on a custom
 
 Walk through the solution and highlight the following:
 
-* In this activity, the customers shopping data that were preprocessed before is used. Data is loaded on the `df_shopping` DataFrame.
+* This activity uses the customer shopping data that was preprocessed earlier.
 
     ```python
     file_path = Path("../Resources/shopping_data_cleaned.csv")
@@ -508,7 +494,7 @@ Explain students that, after observing the Elbow Curve, it can be concluded that
 | 2D Scatter plot | ![2D Scatter k=5](Images/2d-scatter-k5.png) | ![2D Scatter k=6](Images/2d-scatter-k6.png) |
 | 3D Scatter plot | ![3D Scatter k=5](Images/3d-scatter-k5.png) | ![3D Scatter k=5](Images/3d-scatter-k6.png) |
 
-Comment to students, that plotting the clusters helps to have an idea about how the features interact and how the clusters are influenced by the features, despite only two or three dimensions can be plotted, doing a visual analysis contributes on decision making.
+Explain that even though we have more features than we can plot in 2 or 3 dimensions, it is still helpful to show the graphs.
 
 * After analyzing the plots, it can be concluded that using `k=6`, a more meaningful segmentation of customers can be done as follows:
 
@@ -523,7 +509,7 @@ Comment to students, that plotting the clusters helps to have an idea about how 
 
 Encourage one or two students to share theirs conclusions, ask any reminder question and move forward.
 
---
+---
 
 ### 9. BREAK (15 min)
 
@@ -537,7 +523,7 @@ In this activity, students will learn how to use Principal Component Analysis as
 
 * [05_Ins_PCA.ipynb](Activities/05-Ins_PCA/Solved/05_Ins_PCA.ipynb)
 
-Explain to students that, Principal Component Analysis (PCA), is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. Comment to students, that PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.
+Explain to students that, Principal Component Analysis (PCA), is a statistical technique to speed up machine learning algorithms when the number of input features (or dimensions) is too high. Explain to students that PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.
 
 Open the unsolved Jupyter notebook, live code the demo and highlight the following:
 
@@ -570,7 +556,7 @@ Open the unsolved Jupyter notebook, live code the demo and highlight the followi
 
 Tell students, that after dimensionality reduction, we get as a results a smaller set of dimensions called _principal components_, there isn’t a particular meaning assigned to each principal component, the new components are just the two main dimensions of variation that contains most of the information in the original dataset.
 
-* The resulting principal components, are transformed into a DataFrame to be used next to fit the K-Means algorithm. You can see that principal component values has no direct relation with the values in the original dataset, they can be seen as a reduced representation of the original data.
+* The resulting principal components, are transformed into a DataFrame to be used next to fit the K-Means algorithm. You can see that principal component values have no direct relation with the values in the original dataset, they can be seen as a reduced representation of the original data.
 
   ![PCA Data](Images/pca-df.png)
 
@@ -580,9 +566,9 @@ Comment to students, that dimensionality reductions implies a lost of accuracy, 
 
   ![Explained variance](Images/explained-variance.png)
 
-Explain to students that in this demo, after using the attribute `explained_variance_ratio_`, they can see that the first principal component contains `72.77%` of the variance and the second principal component contains `23.03%` of the variance. Both components contain `95.80%` of the information.
+Explain to students that in this demo, after using the attribute `explained_variance_ratio_`, they can see that the first principal component contains `72.77%` of the variance and the second principal component contains `23.03%` of the variance. Both components together contain `95.80%` of the information.
 
-* The Elbow Curve is generated using the principal components data, you can see that the resulting best value for `k` is `3`. Despite some accuracy is lost due to dimensionality reduction, the results are good enough.
+* The Elbow Curve is generated using the principal components data, you can see that the resulting best value for `k` is `3`. Despite some accuracy loss due to dimensionality reduction, the results are still good enough.
 
   ![PCA Elbow Curve](Images/pca-elbow-curve.png)
 
@@ -653,7 +639,7 @@ Comment to students that, after fetching the explained variance, the first princ
 
   ![Explained variance with three PCs](Images/explained-variance-3pcs.png)
 
-* The K-Means algorithm is fitted with the principal components data to predict the clusters. A value of `k=6` is used, since this was the best value in the previous exercise using the Elbow Curve.
+* The K-Means algorithm is fit with the principal components data to predict the clusters. A value of `k=6` is used, since this was the best value in the previous exercise using the Elbow Curve.
 
   ```python
   # Initialize the K-Means model
@@ -673,7 +659,7 @@ Comment to students that, after fetching the explained variance, the first princ
 
   ![Clusters plot](Images/pca-data-plot.png)
 
-Explain students that, the power of PCA to speed-up machine learning algorithms, is more noticeable when you are dealing with a dataset that has tens or hundreds of features, for datasets up to ten features, PCA adds value to simplify data analysis and visualization.
+Explain to students that the power of PCA to speed-up machine learning algorithms is more noticeable when you are dealing with a dataset that has tens or hundreds of features, for datasets up to ten features, PCA adds value to simplify data analysis and visualization.
 
 Answer any questions before moving on.
 
@@ -683,9 +669,7 @@ Answer any questions before moving on.
 
 In this activity, students will be introduced to the cloud and the generalities of Amazon Web Services.
 
-**Files:**
-
-* [Lesson 13.1 slides]()
+Explain that while PCA can be very useful in speeding up algorithms be reducing dimensionality, modern machine learning algorithms can also take advantage of powerful computing resources in the cloud.
 
 Open the lesson slides, move to the _Welcome to The Cloud and Amazon Web Services_ section and introduce the concept of _The Cloud_ by asking students to share what they think the cloud is.
 
@@ -750,7 +734,7 @@ Answer any questions before moving on.
 
 ### 14. Instructor Do: Intro to Amazon SageMaker (5 min)
 
-In this activity, students will learn how Amazon SageMaker works and what are its main features.
+In this activity, students will be introduced to Amazon's machine learning service called SageMaker.
 
 Open your web browser, visit the [AWS SageMaker homepage](https://aws.amazon.com/sagemaker/) and highlight the following points:
 
@@ -758,8 +742,8 @@ Open your web browser, visit the [AWS SageMaker homepage](https://aws.amazon.com
 
 * Amazon SageMaker is a _platform service_ which consists of three main components that work together or independently:
 
-  * **Build:** Notebook service to explore and prepare the data
-  * **Train:** Model training environment and infrastructure
+  * **Build:** Notebook service to explore and prepare the data.
+  * **Train:** Model training environment and infrastructure.
   * **Deploy:** Publish and host a model on an HTTP API endpoint or execute a batch prediction / inference.
 
 * Additionally, Amazon SageMaker includes layers that work across all the components:
@@ -779,7 +763,7 @@ Review some of the advantages of using Amazon SageMaker:
 * Advertises "One-click Training" and "One-click Deployment".
 * Comes with built-in security, which includes access controls and monitoring.
 
-Answer any questions before moving on.
+Explain to students that learning how to train and deploy models with SageMaker is a very in-demand skill that is worth learning more about.
 
 ---
 
@@ -800,7 +784,6 @@ Ask students to explore the main components on the left pane menu, they can expl
 ![Amazon SageMaker Landing Page](Images/sagemaker-landing.png)
 
 Have TA's ensure all students are able to login, and answer any questions before moving on.
-
 
 ### End Class
 
