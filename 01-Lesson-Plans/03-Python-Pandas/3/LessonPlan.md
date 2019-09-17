@@ -612,30 +612,11 @@ Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexin
 
   ```python
   # Select GOOG NOCP for May 2019
-  google_may_2019_data = nasdaq_data_grp.loc[2019,5]
+  google_may_2019_data = nasdaq_data_grp.loc[2019, 5]
   print(google_may_2019_data)
   ```
 
   ![Multi_Indexing_Lookup.png](Images/Multi_Indexing_Lookup.png)
-
-* Changes in time can be calculated by using the `timedelta` Pandas function.
-
-  * This function accepts the number of days one wants to traverse as an argument, and then identifies the specific date.
-
-  * For example, the `timedelta` function can be used to determine what the date was 60 days from today. `Year` and `month` attributes are also available for `timedelta` objects.
-
-  ```python
-  # Calculating GOOG stock price for 30 days ago
-  time_delta = date.today() - timedelta(days=30)
-  goog_thirty_days_ago = nasdaq_data_grp.loc[(time_delta.year,time_delta.month)]
-  print(goog_thirty_days_ago)
-  ```
-
-* The `timedelta` function must be imported before you can use it. The `date` object also needs to be imported from `datetime` in order to access date functions that identify the current time and day. For example, `date.today()` can be used to determine today's date.
-
-  ```python
-  from datetime import datetime, date, timedelta
-  ```
 
 Ask if there are any questions before moving on.
 
