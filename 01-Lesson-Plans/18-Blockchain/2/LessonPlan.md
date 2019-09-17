@@ -61,27 +61,45 @@ By the end of the class, students be able to:
 Welcome to the cryptography fundamentals part of the course. In today's class you will be covering the basic cryptographic
 techniques that blockchain technology, as well as the rest of the internet, is built upon.
 
+Ask the students to refresh their definitions:
+
+* What is a hash?
+
+  **Answer**: A one way function that produces a digital fingerprint of data.
+
+* What is a wallet?
+
+  **Answer**: A set of "keys" to your funds that are on the blockchain.
+
+Explain that today, we will be learning the techniques that make these things possible.
+
 Ask the students to raise their hand if they have heard of:
 
-  * Encryption
+* Encryption
 
-  * Digital Signatures
+* Digital Signatures
+
+Ask the students to offer some of their answers, then move on while telling them that we will be learning these very things.
 
 Ask the students to raise their hand if:
 
-  * They have ever used a password to protect something like their cell phone, computer, social media, etc.
+* They have ever used a password to protect something like their cell phone, computer, social media, etc.
 
-  * They have ever used an encrypted messaging service.
+* They have ever used an encrypted messaging service.
 
 Point out that students may have seen cryptography in action when browsing the internet over HTTPS by pointing out the "green lock"
 in the URL bar of their web browsers.
 
-  * Describe that that this means the communication between you and the website is
-    "encrypted" so that nobody else on the network can see the information.
+![green lock https](Images/green-lock-https.png)
+
+* Describe that that this means the communication between you and the website is
+  "encrypted" so that nobody else on the network can see the information.
 
 ### 2. Students Do: Cryptography Use Cases (10 min)
 
 Students will be researching some applications of cryptography in the wild.
+
+Explain to the students that getting good at this type of research is key to succeeding in an emerging field like the blockchain industry.
 
 **Files:**
 
@@ -95,29 +113,29 @@ Given the research the students just did, ask the students to share some of the 
 
 Some examples may include:
 
-  * Storing files safely.
+* Storing files safely.
 
-  * Securing communications.
+* Securing communications.
 
-  * Verifying authenticity of some data.
+* Verifying authenticity of some data.
 
-  * Payment systems (EMV chips, online payment gateways, banking communication).
+* Payment systems (EMV chips, online payment gateways, banking communication).
 
 Ask the students:
 
-  * What sort of institutions would you hold to the standard of using good cryptography?
+* What sort of institutions would you hold to the standard of using good cryptography?
 
-    **Answer**: Banks, exchanges, financial institutions.
+  **Answer**: Banks, exchanges, financial institutions.
 
-    **Answer**: Messaging platforms, payment systems.
+  **Answer**: Messaging platforms, payment systems.
 
-  * What are some risks that could exist if an encryption algorithm is broken?
+* What are some risks that could exist if an encryption algorithm is broken?
 
-    **Answer**: A data breach could occur, private information could be exposed.
+  **Answer**: A data breach could occur, private information could be exposed.
 
-  * What about a hashing algorithm?
+* What about a hashing algorithm?
 
-    **Answer**: Using that algorithm for data integrity would no longer be secure, since each hash is no longer unique to the data.
+  **Answer**: Using that algorithm for data integrity would no longer be secure, since each hash is no longer unique to the data.
 
 Now elucidate that while you expect these services to be using good cryptography, practically every application benefits
 from having it. By using good cryptography, a more robust and secure internet can exist.
