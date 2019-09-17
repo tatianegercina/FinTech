@@ -40,7 +40,6 @@ By the end of the unit, students will be able to:
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
-
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson 11.2 Slides]().
@@ -52,3 +51,30 @@ By the end of the unit, students will be able to:
 * The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
+
+### 1. Instructor Do: Welcome Class (5 min)
+
+Day 2 takes students to a new family of machine learning algorithms, students will learn about tree based algorithms and how they can be used in classification problems.
+
+**Files:**
+
+* [Lesson 11.2 Slides]()
+
+Open the lesson slides, and welcome students to day 2 by highlighting the following:
+
+* Today a new family of machine learning algorithms is going to be introduced: _Tree based algorithms_.
+
+* Tree based algorithms are supervised learning methods that are mostly used for classifications and regression problems.
+
+* This class will cover the following algorithms and methods:
+
+  * Decision trees
+  * Random forest
+  * Weak learners
+  * Ensemble methods
+
+Explain to students, that sometimes you need to deal with categorical data in machine learning problems, for example gender, locations names or risk categories.
+
+Tell students that in this class, they will learn how to deal with categorical data and how to discern if it's worth to include categorical features or not.
+
+Answer any questions before moving on.
