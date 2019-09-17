@@ -4,7 +4,7 @@ Students receive a demonstration and lecture on how to use support vector machin
 
 **Files:** [support_vector_machine.ipynb](Activities/06-Ins_SVM/Solved/support_vector_machine.ipynb)
 
-Open the starter file, and highlight the following during a live coding session:
+Open the slideshow to the SVM section, and highlight the following:
 
 * In the previous activity, a Logistic Regression model was used to classify loan eligibility. Logistic Regression is just one model that can be used to classify data points. Another algorithm that can be used is **support vector machines (SVM)**.
 
@@ -34,19 +34,29 @@ Open the starter file, and highlight the following during a live coding session:
 
     ![support_vectors.png](Images/support_vectors.png)
 
-Provide understanding on how the orientation and position of the hyperplane is decided.
+Educate students on the different orientations for **hyperplanes**. Provide understanding on how the orientation and position of the hyperplane is decided.
+
+![hyperplane_orientation.png](Images/hyperplane_orientation.png])
 
 * Hyperplanes can be 2D, clearly delineating classes with non-overlapping data points or outliers.
 
-  * Hyperplane also supports what's considered **0 tolerance with perfect partition**, which is a non-linear hyperplane that will position and orient the hyperplane to correctly classify overlapping or outlying data points.
+* Hyperplane also supports what's considered **0 tolerance with perfect partition**, which is a non-linear hyperplane that will position and orient the hyperplane to correctly classify overlapping or outlying data points.
 
-    * This hyperplane could be a curved line or a circle, depending on the data points and their proximity to one another
+  * This hyperplane could be a curved line or a circle, depending on the data points and their proximity to one another.
 
-    * In order to establish **0 tolerance with perfect partition**, the SVM model may introduce a new `z-axis` dimension for non-linear hyperplanes.
+  * In order to establish **0 tolerance with perfect partition**, the SVM model may introduce a new `z-axis` dimension for non-linear hyperplanes.
 
-Demonstrate to students how to create a **SVM** model using **sklearn**.
+* The `kernel` parameter is used to identify the orientation of the **hyperplane**. **Kernelling** and how to use the `kernel` parameter will be addressed later in the demo.
 
-* The `make_blobs` function can be used to create the data set that the model will use to train/learn from.
+Transition into the live coding exercise by opening the starter file and demonstrating to students how to create a **SVM** model with **sklearn**.
+
+* In order to create a SVM model, the **sklearn** `svm.SVC` module must be imported.
+
+    ```python
+    from sklearn.svm import SVC
+    ```
+
+* Like any other supervised learning model, a data set is needed to learn from. The `make_blobs` function can be used to create the data set that the model will use to train/learn from.
 
     ```python
     from sklearn.datasets.samples_generator import make_blobs
@@ -57,13 +67,9 @@ Demonstrate to students how to create a **SVM** model using **sklearn**.
 
   ![plot_classification.png](Images/plot_classification.png)
 
-* In order to create a SVM model, the **sklearn** `svm.SVC` module must be imported.
+Indicate to students that the `svm.svc` module is used to create a **SVM** model.
 
-    ```python
-    from sklearn.svm import SVC
-    ```
-
-The SVC constructor supports a number of arguments, with the `kernel` argument being the most important. Provide students with a brief overview of the `kernel` argument and what **kerneling** is.
+* The SVC constructor supports a number of arguments, with the `kernel` argument being the most important. Provide students with a brief overview of the `kernel` argument and what **kerneling** is.
 
 * The `kernel` argument is used to express the dimensionality of the model. It's basically the degree of dimensionality needed to separate the data into classes.
 
@@ -81,7 +87,7 @@ The SVC constructor supports a number of arguments, with the `kernel` argument b
     model = SVC(kernel='linear')
     ```
 
-* Once the model has been created, it can be trained using the blob data created in the previous step and the **sklearn** `fit` function.
+* Once the model has been created, it can be trained using the blob data created in the previous step. The model is trained using the **sklearn** `fit` function.
 
     ```python
     model.fit(X, y)
@@ -89,9 +95,9 @@ The SVC constructor supports a number of arguments, with the `kernel` argument b
 
     ![svm_model.png](Images/svm_model.png)
 
-* It is a good idea to identify the decision boundary/hyperplane for the already identified data points prior to making predictions. This provides a visual representation of the already existing classes and their margin of separation.
+* A common practice is to identify the decision boundary/hyperplane for the already identified data points prior to making predictions. This provides a visual representation of the already existing classes and their margin of separation.
 
-  * This can be done by identifying the min and max values within the provided data set (feature columns only). These values are known as **support vectors** and can be plotted to render a visual of the classes.
+  * The decision boundary is dictated by the min and max values within the provided data set (feature columns only). These values are known as **support vectors** and can be plotted to render a visual of the classes.
 
     ```python
     # Plot the decision boundaries
@@ -132,7 +138,7 @@ The SVC constructor supports a number of arguments, with the `kernel` argument b
 
     ![plotting_hyperplane.png](Images/plotting_hyperplane.png)
 
-* Emphasize to students that data will not always be evenly distributed with a wide margin. Explain that they will come across data sets with **support vectors** within the margin and on/bordering the **hyperplane**. These values should be considered errors and the classification should not be relied on.
+* Emphasize to students that data will not always be equidistant with a wide margin. Explain that **support vectors** can fall within the margin of the hyperplane. These values should be considered errors and the classification should not be relied on.
 
   * Remind students that margins should always be maximized
 
@@ -142,7 +148,7 @@ The SVC constructor supports a number of arguments, with the `kernel` argument b
 
   ![classification_errors.png](Images/classification_errors.png)
 
-* Now that the pre-existing data has been visualized into the corresponding classes, separated by a hyperplane, the model can be used to predict the classification of new data points. Just like with the Logistic Regression model, the `predict` function can be used to make predictions.
+* Now that the pre-existing data has been visualized into the corresponding classes, separated by a hyperplane, the model can be used to predict the classification of new data points. Just like with the Logistic Regression model, the `predict` function can be used to make label predictions.
 
     ```python
     # Create new data set to predict
