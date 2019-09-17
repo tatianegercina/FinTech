@@ -1,16 +1,14 @@
 ### 15. Instructor Do: Support Vector Machines (10 mins)
 
-Students receive a demonstration and lecture on how to use support vector machines to create the same loan approver seen in the previous activity. However, instead of using a Logistic Regression approach, the instructor will show students how to classify loan eligibility using the support vector machines algorithm.
-
-The goal of this activity is to illustrate to students the different approaches that can be taken to come up with the same classification engine. Another objective is to highlight the strengths and weaknesses of each algorithm so students can learn how to identify the best approach based off of use case.
+Students receive a demonstration and lecture on how to use support vector machine algorithm. The goal of this activity is to illustrate to students the different approaches that can be taken to come up with the same classification engine.
 
 **Files:** [support_vector_machine.ipynb](Activities/06-Ins_SVM/Solved/support_vector_machine.ipynb)
 
 Open the starter file, and highlight the following during a live coding session:
 
-* In the previous activity, a logistic regression model was used to classify loan eligibility. This is just one way of implementing the loan approver model. Another algorithm that can be used is support vector machines (SVM).
+* In the previous activity, a Logistic Regression model was used to classify loan eligibility. Logistic Regression is just one model that can be used to classify data points. Another algorithm that can be used is **support vector machines (SVM)**.
 
-* Define SVM as a supervised learning model that can be used for classification and regression analysis. Explain that SVM separates classes of data points into multidimensional space. The space is segmented by a line or plane that groups data points into their respective classes.
+* Define **SVM** as a **supervised learning** model that can be used for classification and regression analysis. Explain that SVM separates classes of data points into multidimensional space. The space is segmented by a line or plane that groups data points into their respective classes.
 
   ![svm.png](Images/svm.png)
 
@@ -183,7 +181,7 @@ Instruct students to review the below documentation/articles to get additional d
 
 * [In-depth Parameter Tuning for SVC](https://medium.com/all-things-ai/in-depth-parameter-tuning-for-svc-758215394769)
 
-Before moving on, remind students that most of the code they saw today is boilerplate and can be reused with little to no changes. From a high level, the steps to implement an SVM model include:
+If time remains, remind students that most of the code they saw today is boilerplate and can be reused with little to no changes. From a high level, the steps to implement an SVM model include:
 
 1. Create the model with appropriate `kernel` parameters
 
