@@ -23,3 +23,5 @@ In this activity, you will build a Support Vector Machine (SVM) classifier that 
 9. Generate the classification report for the test data.
 
 10. Compare the performance of the SVM model against the Logistic Regression model. Decide which model performed better, and be prepared to discuss these results in an upcoming activity. Performance results for the Logistic Regression model can be found below.
+
+  ![orig_loan_approv_metrics.png](Images/orig_loan_approv_metrics.png)
