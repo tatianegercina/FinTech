@@ -4,7 +4,7 @@ Students receive a demonstration and lecture on how to use support vector machin
 
 The goal of this activity is to illustrate to students the different approaches that can be taken to come up with the same classification engine. Another objective is to highlight the strengths and weaknesses of each algorithm so students can learn how to identify the best approach based off of use case.
 
-**Files:** [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
+**Files:** [support_vector_machine.ipynb](Activities/06-Ins_SVM/Solved/support_vector_machine.ipynb)
 
 Open the starter file, and highlight the following during a live coding session:
 
@@ -134,6 +134,16 @@ The SVC constructor supports a number of arguments, with the `kernel` argument b
 
     ![plotting_hyperplane.png](Images/plotting_hyperplane.png)
 
+* Emphasize to students that data will not always be evenly distributed with a wide margin. Explain that they will come across data sets with **support vectors** within the margin and on/bordering the **hyperplane**. These values should be considered errors and the classification should not be relied on.
+
+  * Remind students that margins should always be maximized
+
+  * Indicate that when support vectors are too close to the margin, there's a 50% change the classification can go either this. This is why these results are not reliable.
+
+  ![overlap.png](Images/overlap.png)
+
+  ![classification_errors.png](Images/classification_errors.png)
+
 * Now that the pre-existing data has been visualized into the corresponding classes, separated by a hyperplane, the model can be used to predict the classification of new data points. Just like with the Logistic Regression model, the `predict` function can be used to make predictions.
 
     ```python
@@ -149,6 +159,19 @@ The SVC constructor supports a number of arguments, with the `kernel` argument b
     ```
 
     ![predictions.png](Images/predictions.png)
+
+* The predictions can then be evaluated using **sklearn's** classification report. As made clear by the precision, recall, and f-1 metrics, the model performed well.
+
+  * Remind students that the SVM model provides a higher accuracy than some of the other models. The accuracy of the model is evidenced in the performance metrics.
+
+    ```python
+    # Calculate classification report
+    from sklearn.metrics import classification_report
+    print(classification_report(y_test, predictions,
+                                target_names=["blue", "red"]))
+    ```
+
+    ![model_performance.png](Images/model_performance.png)
 
 Explain to students why SVM might be used over a Logistic Regression model.
 
