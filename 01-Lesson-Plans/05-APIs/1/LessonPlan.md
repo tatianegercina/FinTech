@@ -486,7 +486,7 @@ Demonstrate with live code how to use the Python `requests` library, and use the
 * JSON data has to be selected based off levels and hierarchies. For example, some JSON objects are organized by JSON object -> JSON array -> attribute. Some have multiple objects, and others have multiple JSON arrays. Either way, accessing JSON data is just like accessing data in a dictionary. Brackets `[]` are used with **keys** to retrieve values.
 
   ```python
-  # Select country and GDP value for first row
+  # Select country and GDP value for second row
   country = data[1][1]['country']['value']
   gdp_value = data[1][1]['value']
 
