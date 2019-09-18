@@ -18,7 +18,7 @@ Pick a partner to encrypt and decrypt some messages with.
 
 ![super secret](Images/symmetric-message.png)
 
-* Copy and send the following fields to your partner:
+* Copy and send the following fields to your partner via Slack:
 
   * Key
 

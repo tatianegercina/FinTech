@@ -109,8 +109,25 @@ Have TAs circulate around the class and ensure students are not stuck. This shou
 
 ### 3. Instructor Do: Cryptography Use Case Review (15 min)
 
-Given the research the students just did, ask the students to share some of the most common use cases.
+Given the research the students just did, ask the students to their definitions of the terms:
 
+* Cryptography
+
+  **Answer**: Using math to keep data secure.
+
+* Encryption
+
+  **Answer**: Using cryptography to keep data secret.
+
+* Digital Signatures
+
+  **Answer**: Using cryptography to prove things stay the same.
+
+* PGP
+
+  **Answer**: Using cryptography to email/communicate securely.
+
+Now, ask the students to share some ideas about where they might have used cryptography in their lives.
 Some examples may include:
 
 * Storing files safely.
@@ -144,6 +161,13 @@ Remind students that practically all of the hacks you hear about in the news are
 so it is very important to integrate it throughout their lives in order to protect their data and identity.
 
 ### 4. Instructor Do: Hashing Demo (10 min)
+
+Time to demonstrate hashing several different strings, and comparing the results to show that given the same input, you will
+output the same hash.
+
+Ask the students to define hashing again:
+
+  **Answer**: A one way function that produces a digital fingerprint of data.
 
 **Files:**
 
@@ -191,26 +215,42 @@ Have TAs circulate through the class to ensure that students are able to properl
 
 Ask the students the following questions:
 
-  * What do you notice about the length of the hashes?
+* What do you notice about the length of the hashes?
 
-    **Answer**: They are the same length no matter what.
+  **Answer**: They are the same length no matter what.
 
-  * Why might this be useful?
+* Why might this be useful?
 
-    **Answer**: You can verify large amounts of data with a smaller string.
+  **Answer**: You can verify large amounts of data with a smaller string.
 
-  * What is the biggest functionality hashing enables?
+* What is the biggest functionality hashing enables?
 
-    **Answer**: Data integrity
+  **Answer**: Data integrity
+
+* What is the difference between data integrity and security?
+
+  **Answer**: Data integrity is ensuring the data stays the same, security is ensuring the data stays secret.
 
 Reaffirm to the students that the hashes of the messages should only be equal if the messages are equal.
 
 ### 7. Instructor Do: Symmetric Cryptography (10 min)
 
+Time to introduce the concept of symmetric cryptography.
+
+* Explain to the students that symmetric cryptography means "one key" to "one lock" -- hence the "symmetry."
+
+* If you wanted to share the contents of a locked box, you would have to also give away the key (or a copy).
+
+* This is the same technique used to encrypt your hard drive or password-protect a document.
+  It's used to protect "data at rest" aka data that is not moving across a network.
+
+![lock](https://image.shutterstock.com/image-photo/macro-shot-antique-weathered-vintage-600w-551871160.jpg)
+
 Open up the [Secretbox demo](https://tweetnacl.js.org/#/secretbox) from TweetNacl.js.
 This tool demonstrates symmetric and asymmetric crypto, as well as hashing, signing, and verifying messages.
 
 * Explain to the students that this JavaScript library contains all of the cryptography tools we need to get our job done.
+  Don't worry, you'll become very familiar with these tools the more you work with blockchains.
 
 Type an arbitrary message into the `Message` box:
 
@@ -224,7 +264,7 @@ Generate a random symmetric key by clicking the `Random` button in the `Key` fie
 
 * Explain that this key is just like using a password that you would think of on your own.
 
-* In this case, we're going to let the tool generate a random key for us, as it will be formatted properly.
+* In this case, we're going to let the tool generate a random, secure key for us.
 
 Generate a random nonce:
 
@@ -244,8 +284,13 @@ Encrypt the message:
 
 * Explain that the encrypted message can now be copied securely to a safe place.
 
-Delete everything in the `Message` box, then click `Decrypt` again to demonstrate the process of decryption.
-Only the key, nonce, and encrypted message are needed to decrypt back to the original message.
+Delete the plaintext in the `Message` box.
+
+* Point out that we now only have the encrypted data plus its key and nonce.
+
+Then, click `Decrypt` again to demonstrate the process of decryption.
+
+* Only the key, nonce, and encrypted message are needed to decrypt back to the original message. We can store the encrypted message safely and decrypt it with the key and nonce later!
 
 ### 8. Students Do: Encrypting and Decrypting Messages (10 min)
 
@@ -265,21 +310,30 @@ each other's messages.
 
 Ask the students the following questions:
 
-  * What is the biggest security hole you see in this system?
+* What did you learn?
 
-    **Answer**: The key has to be known by both parties.
+* What is the biggest security hole you see in this system?
 
-    **Answer**: It might be hard to securely deliver the key and nonce to the recipient.
+  **Answer**: The key has to be known by both parties.
 
-  * What is symmetric cryptography best used for?
+  **Answer**: It might be hard to securely deliver the key and nonce to the recipient.
 
-    **Answer**: Storing secure data on a hard drive. This is also called "encrypting data at rest."
+* What is symmetric cryptography best used for?
 
-    **Answer**: Securing data that does not need to be transferred over the internet.
+  **Answer**: Storing secure data on a hard drive. This is also called "encrypting data at rest."
+
+  **Answer**: Securing data that does not need to be transferred over the internet.
 
 ### 10. Instructor Do: Asymmetric Cryptography Demo (10 min)
 
 Explain to students that we need a way of sharing secret data without having to share a password beforehand.
+
+* Asymmetric cryptography doesn't just use one key like symmetric, but now it splits up the key into a "keypair"
+  -- a public key and a private key. This allows us to do some neat stuff that we'll dive into shortly.
+
+* In the context of encryption, imagine that Joe's public key is like a special lockbox that you can use to store secrets in.
+  Once you close this box, it can only be opened with Joe's private key.
+  Anyone can use Joe's public key to send him secret data, but only he can unlock the data with his private key.
 
 Pick a volunteer to help assist with this demo. They will be encrypting a message using the instructor's public key.
 
@@ -304,23 +358,23 @@ Have them paste this public key into the `Their Public Key` field.
 
 Have the student generate a `Nonce`, then ensure that the student has the following three fields populated:
 
-  * Their Public Key (instructor's)
+* Their Public Key (instructor's)
 
-  * Secret Key
+* Secret Key
 
-  * My Public Key (student's)
+* My Public Key (student's)
 
-  * Nonce
+* Nonce
 
 Have the student type a class-friendly message into the `Message` box, then click `Encrypt`.
 
 Have the student send over the following fields:
 
-  * Public Key
+* Public Key
 
-  * Nonce
+* Nonce
 
-  * Encrypted Message (in `Box` field)
+* Encrypted Message (in `Box` field)
 
 Once they have done that, copy the information into the running demo.
 
@@ -335,19 +389,19 @@ Click `Decrypt` and the message should be displayed:
 
 Ask the students:
 
-  * What information was not shared during this encrypted message exchange?
+* What information was not shared during this encrypted message exchange?
 
-    **Answer**: The private key, or password to the message.
+  **Answer**: The private key, or password to the message.
 
 Elaborate to the students about how this technique allows for secure communication without having to share private data.
 
-  * The idea is that you encrypt the data using the recipient's **public** key.
-    Then, the recipient uses their **private** key to decrypt the message.
+* The idea is that you encrypt the data using the recipient's **public** key.
+  Then, the recipient uses their **private** key to decrypt the message.
 
-  * Only the sender and receiver can decrypt the messages between them, nobody in between, and they do not need
-    to share a secret key beforehand.
+* Only the sender and receiver can decrypt the messages between them, nobody in between, and they do not need
+  to share a secret key beforehand.
 
-  * This is what allows for something called "end-to-end" encryption, which is what encrypted messaging platforms use.
+* This is what allows for something called "end-to-end" encryption, which is what encrypted messaging platforms use.
 
 ### 11. Students Do: Asymmetric Encryption (10 min)
 
@@ -364,25 +418,39 @@ Have TAs circulate and ensure that students are successfully encrypting and decr
 
 Ask the students the following questions:
 
-  * What is the biggest benefit to using asymmetric encryption over symmetric?
+* What is the biggest benefit to using asymmetric encryption over symmetric?
 
-    **Answer**: You do not need to share a key beforehand.
+  **Answer**: You do not need to share a key beforehand.
 
-    **Answer**: Only the recipient and the sender can decrypt the payloads.
+  **Answer**: Only the recipient and the sender can decrypt the payloads.
 
-  * What is the difference between symmetric and asymmetric encryption?
+* What is the difference between symmetric and asymmetric encryption?
 
-    **Answer**: You have a single, private key with symmetric, versus having a pair of keys for public and private use in asymmetric.
+  **Answer**: You have a single, private key with symmetric, versus having a pair of keys for public and private use in asymmetric.
 
 ### 13. Instructor Do: Digital Signatures (10 min)
 
-Pick another volunteer to help assist with this demo.
-You can emulate another student by using another tab as well if you do not want to have a volunteer or to test, but it may be more confusing.
+Asymmetric cryptography lets us do another really useful thing -- digital signatures.
+Give this example:
+
+* Let's say Joe wanted to sign a legal agreement, but he also wanted digital proof that was the exact agreement.
+
+* What Joe can do is take the document and "sign" it with his private key. This outputs a string called a "signature"
+  that can then be used to prove the document is still the same as when it was signed originally.
+
+* To do this, you take the document and digital signature and check it against Joe's public key.
+  That's it -- if the function succeeds then you know that the signature was actually signed by Joe and was not modified.
+
+* In this case, Joe uses his private key to "sign" his identity, and the world can use his public key to verify the signature came from him.
+
+Pick another volunteer (or TA) to help assist with this demo.
 
 Navigate to the ["Sign" feature](https://tweetnacl.js.org/#/sign) of the demo site.
-Have your volunteer do the same, only have them click `Verify` right after instead.
+Have your volunteer do the same, then have them click the `Verify` feature on the top left.
 
 Generate a `Secret Key`.
+
+* Explain that "secret key" and "private key" are synonymous.
 
 Type a message to sign.
 Make it something like "I authorize transferring $100 to Jane Doe" to stress importance of the data's integrity, and to maliciously modify later.
@@ -393,11 +461,11 @@ Click `Sign` to generate the message signature.
 
 Send the following fields to the student to have them verify the message's signature:
 
-  * Public Key
+* Public Key
 
-  * Message
+* Message
 
-  * Signature
+* Signature
 
 Ensure that the student is at the `Verify` section of the `Sign` feature, and have them paste
 the public key, signature, and message into their corresponding fields.
@@ -470,7 +538,7 @@ in the context of blockchain and cryptocurrencies.
 Now that the students understand the fundamental cryptographic techniques that power the internet and blockchain tech,
 let's break down the data structure of a blockchain and why the design is so secure.
 
-Open up the [Anders Blockchain Demo](https://anders.com/blockchain/blockchain.html) and walk through the different fields.
+Open up the [Anders Blockchain Demo](https://anders.com/blockchain/blockchain) and walk through the different fields.
 
 Point out the matching "chain of hashes" located inside of each block:
 
@@ -496,8 +564,10 @@ Click `Mine` in the first block to change it green and to regenerate the hashes:
 
 ![mining](Images/blockchain-mining.png)
 
-* Point out that we still need to mine each block going forward again, one at a time, chronologically
+* Point out that we still need to mine, or "calculate" each block going forward again, one at a time, chronologically
   in order to completely rebuild the chain.
+
+* We will learn more about how mining works next class, but you can just think of it as rebuilding the block.
 
 Click on `Mine` in the second block to demonstrate.
 
