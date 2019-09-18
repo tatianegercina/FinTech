@@ -5,7 +5,7 @@ you've just learned.
 
 ## Instructions
 
-* Navigate to the [Anders Blockchain Demo](https://anders.com/blockchain/blockchain.html).
+* Navigate to the [Anders Blockchain Demo](https://anders.com/blockchain/blockchain).
 
 * Type some data into a block:
 
