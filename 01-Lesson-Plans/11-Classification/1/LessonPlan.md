@@ -774,13 +774,13 @@ Indicate to students that the `svm.svc` module is used to create a **SVM** model
 
     ![svm_model.png](Images/svm_model.png)
 
-* A common practice is to identify the decision boundary/hyperplane for the already identified data points prior to making predictions. This provides a visual representation of the already existing classes and their margin of separation.
+If time permits, illustrate to students how to define a decision boundary. A common practice to identify the decision boundary/hyperplane for the already identified data points prior to making predictions. This provides a visual representation of the already existing classes and their margin of separation.
 
-  * Emphasize to students that this practice of plotting the decision boundary is just illustrative. If you're short on time, do not review the code. Just show the students the visualization in the solution notebook. The goal is just to illustrate to students what a hyperplane is and the importance of wide margins.
+* Emphasize to students that this practice of plotting the decision boundary is just illustrative. If you're short on time, do not review the code. Just show the students the visualization in the solution notebook. The goal is just to illustrate to students what a hyperplane is and the importance of wide margins.
 
-  * Also communicate to students that plotting the decision boundary with contour is only effective when there are two **features** in the data.
+* Also communicate to students that plotting the decision boundary with contour is only effective when there are two **features** in the data.
 
-  * The decision boundary is dictated by the min and max values within the provided data set (feature columns only). These values are known as **support vectors** and can be plotted to render a visual of the classes.
+* The decision boundary is dictated by the min and max values within the provided data set (feature columns only). These values are known as **support vectors** and can be plotted to render a visual of the classes.
 
     ```python
     # Plot the decision boundaries
@@ -821,17 +821,17 @@ Indicate to students that the `svm.svc` module is used to create a **SVM** model
 
     ![plotting_hyperplane.png](Images/plotting_hyperplane.png)
 
-* Emphasize to students that data will not always be equidistant with a wide margin. Explain that **support vectors** can fall within the margin of the hyperplane. These values should be considered errors and the classification should not be relied on.
+Emphasize to students that data will not always be equidistant with a wide margin. Explain that **support vectors** can fall within the margin of the hyperplane. These values should be considered errors and the classification should not be relied on.
 
-  * Remind students that margins should always be maximized
+* Remind students that margins should always be maximized
 
-  * Indicate that when support vectors are too close to the margin, there's a 50% change the classification can go either this. This is why these results are not reliable.
+* Indicate that when support vectors are too close to the margin, there's a 50% change the classification can go either this. This is why these results are not reliable.
 
   ![overlap.png](Images/overlap.png)
 
   ![classification_errors.png](Images/classification_errors.png)
 
-* Now that the pre-existing data has been visualized into the corresponding classes, separated by a hyperplane, the model can be used to predict the classification of new data points. Just like with the Logistic Regression model, the `predict` function can be used to make label predictions.
+Now that the pre-existing data has been visualized into the corresponding classes, separated by a hyperplane, the model can be used to predict the classification of new data points. Just like with the Logistic Regression model, the `predict` function can be used to make label predictions.
 
     ```python
     # Create new data set to predict
