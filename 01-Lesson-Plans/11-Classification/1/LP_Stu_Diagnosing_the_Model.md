@@ -30,11 +30,11 @@ Engage the class with a brief Q&A session. Ask students if they have any questio
 
 Transition to the dry walk through by opening the solution file, and highlight the below discussion points. Go through this section quickly as students should be well versed in creating **confusion matrices** and **classification reports**.
 
-* A **confusion matrix** is a table that describes the performance of a model by looking at the total number of outcomes for each class. Confusion matrices look at the total number of actual outcomes and can be used to compare to predicted outcomes.
+* A **confusion matrix** is a table that describes the performance of a model by looking at the total number of outcomes for each class. Confusion matrices look at the total number of actual outcomes and juxtaposes them with predicted outcomes.
+
+  * For example, with a confusion matrix, you can aggregate the number of actual positives and compare it to the number of predicted positives. The closer the values, the better the model. The same can be said with negative outcomes.
 
   * **Confusion matrices** can be a little difficult to understand at first. If students have questions/difficulty understanding, and or seem lost, use the following scenario to help reinforce how a confusion matrix is used:
-
-    * Consider
 
     ```python
     from sklearn.metrics import confusion_matrix
