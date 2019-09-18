@@ -1,7 +1,5 @@
 ## 13.3 Lesson Plan - Amazon Lex and Robo Advisors
 
----
-
 ### Overview
 
 In Today's class, students will be introduced to conversational user interfaces (CUIs) also they will learn how CUIs are disrupting finance and banking. By the end of the class, students will create a robo advisor using Amazon Lex, Amazon Lambda and Slack.
@@ -32,11 +30,9 @@ By the end of the unit, students will be able to:
 
 * **Important:** At the end of Today´s class, remember students to create a local copy of all their deployments on AWS, so they can delete them from the cloud to avoid additional charges. Also, remind students to be aware, of AWS free tier and trials expiration date.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
-
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 13.3 Slides]().
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -49,10 +45,6 @@ By the end of the unit, students will be able to:
 ### 1. Instructor Do: Welcome Class (5 min)
 
 In this activity, students will be introduced to conversational user interfaces (CUIs); they will learn how CUIs are disrupting on financial services and what are the tools they will use to create a robo advisor.
-
-**Files:**
-
-* [Lesson 13.3 Slides]()
 
 Welcome students back and explain that Today we will learn about conversational user interfaces, one of the coolest applications of natural language processing; explain to students that they will create a robo advisor with conversational capabilities by the end of the day.
 
@@ -90,13 +82,11 @@ In this activity, students will be introduced to Amazon Lex; they will learn how
 
 **Files:**
 
-* [Lesson 13.3 Slides](#)
-
 * [Share_The_Bill Bot](Activities/01-Ins_Intro_Lex/Solved/Share_The_Bill_1_d57679ca-cc90-4b74-9a61-2211a93f7208_Bot_LEX_V1.zip)
 
 * [ShareBill Intent](Activities/01-Ins_Intro_Lex/Solved/ShareBill_6_6f154262-76b0-465f-aed1-ce1f3914c492_Intent_LEX_V1.zip)
 
-Start this activity by opening the [lesson slides](#), navigate to the _Intro to Lex_ section and highlight the following:
+Start this activity by opening the slides to the _Intro to Lex_ section and highlight the following:
 
 * Amazon Lex is an AWS service that allows developers to create conversational interfaces powered by the same deep learning technologies as Alexa.
 
@@ -235,8 +225,6 @@ This activity will introduce AWS Lambda to students, also students will learn ho
 
 **Files:**
 
-* [Lesson 13.3 Slides](#)
-
 * [lambda_function.py](Activities/03-Ins_Intro_Lambda/Solved/lambda_function.py)
 
 Start the activity by opening the lesson slides, navigate to the _Intro to AWS Lambda_ section and highlight the following:
@@ -282,7 +270,7 @@ Scroll-down to the _Function code_ section, explain students that this code is a
 
 ![Function code section](Images/convertUSD-function-code.png)
 
-Open [lesson slides](#) and show students the anatomy of the lambda function you are going to use. Comment to students that this code can be used as a boilerplate template to code business logic for extending Amazon Lex bots functionality.
+Open slides and show students the anatomy of the lambda function you are going to use. Comment to students that this code can be used as a boilerplate template to code business logic for extending Amazon Lex bots functionality.
 
 ![Lambda function anatomy](Images/lambda-function-anatomy.png)
 
@@ -374,7 +362,7 @@ if source == "DialogCodeHook":
     return delegate(output_session_attributes, get_slots(intent_request))
 ```
 
-Comment to students that once the conversation between the user and the bot ends, the current price of bitcoin in US Dollars is fetched using the `get_btcprice()` function, the conversion from USD to BTC in done and the `close()` function is called to return a `Fulfilled` event message to Lex.
+Explain to students that once the conversation between the user and the bot ends, the current price of bitcoin in US Dollars is fetched using the `get_btcprice()` function, the conversion from USD to BTC in done and the `close()` function is called to return a `Fulfilled` event message to Lex.
 
 ```python
 # Get the current price of BTC in USD and make the conversion from USD to BTC.
@@ -516,7 +504,7 @@ In this activity, students will learn how to test AWS Lambda functions that vali
 
 * [convertErrDate.json](Activities/05-Ins_Testing_Lambdas/Solved/convertErrDate.json)
 
-Comment to students that one of the challenges working with AWS Lambda is dealing with errors, so it's important to know how to test a Lambda function on the AWS Lambda console. For this activity, three test cases are provided.
+Explain to students that one of the challenges working with AWS Lambda is dealing with errors, so it's important to know how to test a Lambda function on the AWS Lambda console. For this activity, three test cases are provided.
 
 Explain to students that, in order to test a Lambda function, a `JSON` file should be created to send a testing event to Lambda, the structure of the event depends on the kind of service you are connecting to Lambda. This demo only will cover how to test Amazon Lex intents.
 
@@ -948,7 +936,7 @@ Now that you have Slack application credentials, you can integrate the applicati
 
 #### Step 5: Complete Slack Integration
 
-Comment to students that, in this section, you'll use the Slack API console to complete the integration of the Slack application.
+Explain to students that, in this section, you'll use the Slack API console to complete the integration of the Slack application.
 
 1. Comeback to the Slack API console, in the left menu, choose _OAuth & Permissions_.
 
