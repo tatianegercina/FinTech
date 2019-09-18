@@ -31,7 +31,7 @@ Transition to the live coding aspect of the demo, and demonstrate how to use and
 
     ![confusion_matrix.png](Images/confusion_matrix.png)
 
-Communicat to students that a **classification report** can also be used to evaluate a model. When evaluating a model, the **accuracy**, **precision**, and **recall** must all be evaluated to ensure the rate of false positive sand false negatives are minimal. The results from these tests can be stored within a **classification report**, which can be used to assess and evaluate number of predicted occurrences for each class.
+Communicate to students that a **classification report** can also be used to evaluate a model. When evaluating a model, the **accuracy**, **precision**, and **recall** must all be evaluated to ensure the rate of false positive sand false negatives are minimal. The results from these tests can be stored within a **classification report**, which can be used to assess and evaluate number of predicted occurrences for each class.
 
 * Classification reports calculate the precision, recall, and f1 score (accuracy in relation to precision and recall). Classification reports can be generated using the **sklearn** `metrics.classification_report` module. All that is required to execute the `classification_report` function is the actual data points and predicted data points.
 
