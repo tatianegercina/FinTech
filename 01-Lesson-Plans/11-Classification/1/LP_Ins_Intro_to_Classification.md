@@ -1,8 +1,6 @@
 ### 1. Instructor Do: Intro to Classification (0:10)
 
-Students will receive a brief, introductory lecture outlining what **classification** is and what it is used for.
-
-**Files:**
+By the end of this activity, students will be able to summarize what classification is within the machine learning space, as well as name one or two common classification algorithms.
 
 Kick off the activity by asking for a student to try summarizing what **classification** is. If there are no volunteers, ask a specific student.
 
