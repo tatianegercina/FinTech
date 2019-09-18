@@ -428,7 +428,13 @@ Ask the students the following questions:
 
   **Answer**: You have a single, private key with symmetric, versus having a pair of keys for public and private use in asymmetric.
 
-### 13. Instructor Do: Digital Signatures (10 min)
+- - -
+
+### 13. BREAK (15 min)
+
+- - -
+
+### 14. Instructor Do: Digital Signatures (10 min)
 
 Asymmetric cryptography lets us do another really useful thing -- digital signatures.
 Give this example:
@@ -493,7 +499,7 @@ the signature fails to validate.
 
 ![verification failed](Images/verify-failed.png)
 
-### 14. Students Do: Signing and Verifying Messages (10 min)
+### 15. Students Do: Signing and Verifying Messages (10 min)
 
 Students will now get with a partner and sign and verify messages between each other.
 
@@ -503,35 +509,29 @@ Students will now get with a partner and sign and verify messages between each o
 
 Have TAs circulate through the class and ensure that students are successfully verifying messages.
 
-### 15. Instructor Do: Digital Signatures Review (10 min)
+### 16. Instructor Do: Digital Signatures Review (10 min)
 
 Ask the students the following questions:
 
-  * It looks like this helps a lot with data integrity. Why not just hash the message instead?
+* It looks like this helps a lot with data integrity. Why not just hash the message instead?
 
-    **Answer**: This proves that the owner actually sent and authorized that data.
+  **Answer**: This proves that the owner actually sent and authorized that data.
 
-    **Answer**: This is an additional layer. This provides authenticity and authentication at the same time, aka ownership and identity.
+  **Answer**: This is an additional layer. This provides authenticity and authentication at the same time, aka ownership and identity.
 
 Explain to the students:
 
-  * Digital signatures in combination with hashing and encryption can be a powerful way to ensure a message is
-    delivered securely (without other parties snooping in), and that the right message got there without modification.
+* Digital signatures in combination with hashing and encryption can be a powerful way to ensure a message is
+  delivered securely (without other parties snooping in), and that the right message got there without modification.
 
 Ask the students (critical):
 
-  * So what do transactions on a blockchain and digital signatures have in common?
+* So what do transactions on a blockchain and digital signatures have in common?
 
-    **Answer**: A transaction is just a signed message authorizing transfer of funds, hence cannot be modified and can be verified
+  **Answer**: A transaction is just a signed message authorizing transfer of funds, hence cannot be modified and can be verified
 
 Tell the students to start thinking about the different ways you might use these cryptographic techniques
 in the context of blockchain and cryptocurrencies.
-
-- - -
-
-### 16. BREAK (15 min)
-
-- - -
 
 ### 17. Instructor Do: Blockchain Data Structure (10 min)
 
@@ -593,13 +593,13 @@ Have the TAs circulate through the class and ensure that students are connecting
 
 Ask the students the following questions:
 
-  * How are the blocks linked together / What does the "chain" in blockchain mean?
+* How are the blocks linked together / What does the "chain" in blockchain mean?
 
-    **Answer**: Each block is linked to the previous by putting the last block's hash inside of it.
+  **Answer**: Each block is linked to the previous by putting the last block's hash inside of it.
 
-  * In a blockchain with 10 blocks, if you were to modify the 3rd block, how many would you need to re-mine?
+* In a blockchain with 10 blocks, if you were to modify the 3rd block, how many would you need to re-mine?
 
-    **Answer**: 8 blocks, 3 through 10 need to be mined again
+  **Answer**: 8 blocks, 3 through 10 need to be mined again
 
 * Explain that this is the feature that makes blockchain transactions so "final" -- once a block is accepted by the network,
   it takes an enormous amount of energy to "roll a transaction back" since each block from the point of that transaction forward must be mined *again*, which quickly becomes mathematically infeasible.
@@ -614,31 +614,31 @@ day of this section. They are now equipped with knowledge of blockchain *and* se
 
 Ask the students the following questions:
 
-  * So where's the "crypto" in cryptocurrency?
+* So where's the "crypto" in cryptocurrency?
 
-    **Answer**: It's an adage to the cryptography that is **heavily** used throughout the system.
+  **Answer**: It's an adage to the cryptography that is **heavily** used throughout the system.
 
-    **Answer**: You could almost call it "cryptography currency" and get away with it.
+  **Answer**: You could almost call it "cryptography currency" and get away with it.
 
-  * What is a hash?
+* What is a hash?
 
-    **Answer**: A one-way fingerprint of data, usually represented as a long string of alphanumeric characters.
+  **Answer**: A one-way fingerprint of data, usually represented as a long string of alphanumeric characters.
 
-  * What is symmetric cryptography?
+* What is symmetric cryptography?
 
-    **Answer**: A type of cryptography that uses a single, preshared key for encryption.
+  **Answer**: A type of cryptography that uses a single, preshared key for encryption.
 
-  * What is asymmetric cryptography?
+* What is asymmetric cryptography?
 
-    **Answer**: AKA "public key cryptography" -- Cryptography that uses a pair of keys, public and private, for encrypting and signing messages.
+  **Answer**: AKA "public key cryptography" -- Cryptography that uses a pair of keys, public and private, for encrypting and signing messages.
 
-  * What is a (digital) signature?
+* What is a (digital) signature?
 
-    **Answer**: A message that can be cryptographically validated for its authenticity and integrity.
+  **Answer**: A message that can be cryptographically validated for its authenticity and integrity.
 
-  * Where is the "chain" in blockchain?
+* Where is the "chain" in blockchain?
 
-    **Answer**: Blocks are connected via a chain of hashes, giving the structure it's name and security.
+  **Answer**: Blocks are connected via a chain of hashes, giving the structure it's name and security.
 
 Remind the students that cryptography is a tough subject that is taught usually in a Computer Science degree and that they
 should be proud for learning it. It is something that few people understand but powers many systems that keep our information
