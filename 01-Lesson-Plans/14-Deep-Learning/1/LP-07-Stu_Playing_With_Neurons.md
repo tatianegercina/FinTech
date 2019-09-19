@@ -1,6 +1,6 @@
-### 7. Students Do: Playing With Neurons (20 min)
+### 7. Students Do: Playing With Neurons (15 min)
 
-In this activity, students will use TensorFlow Playground to create neural nets to classify the remaining two sets of data. 
+In this activity, students will use TensorFlow Playground to create neural nets to classify the remaining two sets of data, "exclusive or" and "spiral."
 
 ### Files
 
@@ -8,6 +8,8 @@ In this activity, students will use TensorFlow Playground to create neural nets 
 
 ---
 
-### 8. Instructor Do: Review Playing With Neurons (10 min)
+### 8. Instructor Do: Review Playing With Neurons (5 min)
+
+Open the Playground webpage. First, select the "exclusive or" dataset and ask students how they manipulated the input features and hidden layer neurons to minimize the loss statistic. Which combinations seemed to work well, and which did not?
 
 
