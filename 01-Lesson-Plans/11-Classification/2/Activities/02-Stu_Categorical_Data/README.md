@@ -69,3 +69,7 @@ In this section, you will drop those columns that would be unnecessary for a mac
 Finally, save the preprocessed file as `transactions_data_encoded.csv` for forthcoming usage.
 
 **Note:** This step will take between 3 up to 7 minutes depending on your computer's features.
+
+## Hints
+
+You can learn more about using the Pandas `dt` accessor [here](https://medium.com/@swethalakshmanan14/simple-ways-to-extract-features-from-date-variable-using-python-60c33e3b0501).
