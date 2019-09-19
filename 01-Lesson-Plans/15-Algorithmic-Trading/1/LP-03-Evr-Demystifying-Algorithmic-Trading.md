@@ -26,6 +26,6 @@ Open the solution file and discuss the following:
 
   ![simple-trading-algo-performance](Images/simple-trading-algo-performance.png)
 
-* Lastly, keep in mind that while the trading strategy in this example works, the trading strategy was designed to be oversimplified and may not work at scale. It is for this reason that we hard-coded the stock prices--in order simply focus on the process of creating a trading algorithm rather than dive into the complexities of a particular trading strategy.
+* Lastly, keep in mind that while the trading strategy in this example works, the trading strategy was designed to be oversimplified and may not work at scale. It is for this reason that we hard-coded the stock prices--in order to simply focus on the process of creating a trading algorithm rather than dive into the complexities of a particular trading strategy.
 
 Answer any questions before moving on.
