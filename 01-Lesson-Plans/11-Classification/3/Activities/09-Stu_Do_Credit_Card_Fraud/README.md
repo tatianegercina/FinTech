@@ -10,4 +10,14 @@ In this activity, you will practice resampling techniques and use different mode
 
 * Compare the logistic regression using resampled data to the results of an ensemble method of your choice. 
 
-© 2019 Trilogy Education Services
+## Hints:
+
+* You may need to increase the number of maximum training iterations in the logistic regression model. This can be set using the `max_iter` parameter.
+
+```
+model = LogisticRegression(solver='lbfgs', random_state=1, max_iter=2000)
+```
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
