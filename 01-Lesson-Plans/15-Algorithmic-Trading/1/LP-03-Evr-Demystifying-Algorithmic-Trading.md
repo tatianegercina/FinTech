@@ -17,3 +17,7 @@ Open the solution file and discuss the following:
 * As can be seen, a trading algorithm can be much simpler than we thought! Here we can see the handling of data and the decision logic for the trading algorithm, namely the looping through of data using the for loop and the conditional statements defining the actions to buy or sell. This particular trading strategy performs a buy and sell every two days, in other words the first day performs a buy, the second day performs a sell, the third day performs a buy, and the fourth day performs a sell, and so on.
 
   ![simple-trading-algorithm](Images/simple-trading-algorithm.png)
+
+* Trading algorithms often produce metrics on a per trade basis. Thus, in order to emulate the same effect in our simple trading algorithm, only a few changes are required--such as implementing order containers for buys and sells to record the stock prices of the buy-sell trading pairs.
+
+  ![profit-loss-trading-algorithm](profit-loss-trading-algorithm.png)
