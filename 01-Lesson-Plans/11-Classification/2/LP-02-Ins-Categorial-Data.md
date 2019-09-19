@@ -133,7 +133,8 @@ Comment to students, that sometimes there is problem with this type of encoding,
 * Once the categorical data is encoded, the resulting DataFrame is saved as a `CSV` file for further usage.
 
   ```python
-  loans_binary_encoded = pd.get_dummies(loans_df, columns=["education", "gender"])
+  file_path = Path("../Resources/loans_data_encoded.csv")
+  loans_binary_encoded.to_csv(file_path, index=False)
   ```
 
 Tell students, that the final step we need to perform is scaling and normalization. Many machine learning algorithms will perform better with a normalized or scaled dataset.
