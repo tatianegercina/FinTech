@@ -20,4 +20,6 @@ Open the solution file and discuss the following:
 
 * Trading algorithms often produce metrics on a per trade basis. Thus, in order to emulate the same effect in our simple trading algorithm, only a few changes are required--such as implementing order containers for buys and sells to record the stock prices of the buy-sell trading pairs.
 
-  ![profit-loss-trading-algorithm](profit-loss-trading-algorithm.png)
+  ![profit-loss-trading-algorithm](Images/profit-loss-trading-algorithm.png)
+
+* 
