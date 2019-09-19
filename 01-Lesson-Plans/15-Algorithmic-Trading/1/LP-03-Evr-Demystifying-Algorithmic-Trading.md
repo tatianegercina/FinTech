@@ -4,7 +4,7 @@ In this activity, instructors will walk students through the mindset and steps o
 
 **Files:**
 
-* [basic_trading_algorithm.ipynb](Activities/01-Evr_Basic_Trading_Algorithm/Solved/basic_trading_algorithm.ipynb)
+* [simple_trading_algorithm.ipynb](Activities/01-Evr_Simple_Trading_Algorithm/Solved/simple_trading_algorithm.ipynb)
 
 Open the solution file and discuss the following:
 
