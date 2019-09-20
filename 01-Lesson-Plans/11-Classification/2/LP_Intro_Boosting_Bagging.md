@@ -12,7 +12,7 @@ Navigate to the **boosting** and **bagging** section of the slideshow. Highlight
 
 Communicate that **weak learners** are a consequence of limited data to learn from. This may mean too few features or the data provided doesn't allow for data points to be classified.
 
-* Provide more context around **weak learners** by defining them as algorithms/classifiers that are unable to accurately learn from the data they are being provided. The classifiers can make predictions; however, their predictions are not representative of the relationship between inputs and target.
+* Provide more context around **weak learners** by defining them as algorithms/classifiers that are unable to accurately learn from the data they are being provided. This is why their predictions are only a little better than random chance. The classifiers can make predictions; however, their predictions are not representative of the relationship between inputs and target.
 
 * **Weak learners** are described as being only slightly better than random chance.
 
