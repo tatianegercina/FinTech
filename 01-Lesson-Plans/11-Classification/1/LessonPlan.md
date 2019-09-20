@@ -2,13 +2,13 @@
 
 ### Overview
 
-In the last unit, students learned how to use advanced statistical models and algorithms in order to predict and forecast outcomes using time series data. Students used statistical approaches; such as linear regression, **Hodrick-Prescott filter**, and **GARCH** and **EGARCH** model; to forecast investment returns, volatility, and out-of-sample predictions.
+In the last unit, students learned how to use machine learning to predict and forecast time series outcomes. Students used statistical approaches; such as linear regression, **Hodrick-Prescott filter**, and **GARCH** and **EGARCH** model; to forecast investment returns, volatility, and out-of-sample predictions.
 
-In unit 11, students will dive deeper into statistics and machine learning by working with **classification** algorithms in order to promote and enable supervised machined learning. **Classification** is the act of discovering whether or not a particular feature or element belongs to a given feature class; **classification** derives categorical conclusions based off of classified/modeled data. By the end of this unit, students will be competent in the execution and evaluation of **classification** models (i.e logistic regression and decision trees) for drawing categorical conclusions and outcomes.
+In unit 11, students will dive deeper into statistics and machine learning by working with **classification** algorithms. **Classification** is the act of discovering whether or not a particular feature or element belongs to a given feature class/group. **Classification** derives categorical conclusions based off of classified/modeled data. By the end of this unit, students will be competent in the execution and evaluation of **classification** models (i.e logistic regression and decision trees) for predicting categorical conclusions and outcomes.
 
-Today's class will introduce students to **classification** models by explaining what classification is and delineating the various classification models/approaches. Then, students will be taught how to use Scikit-learn to train models and make them more efficient and effective in determining probability/outcome predictions.
+Today's class will walk students through two classification models/approaches: Logistic Regression and Support Vector Machines. Both models are used to predict linear outcomes. Students will also learn how to use Scikit-learn, a Python data science package, to train evaluate models and make them more efficient and effective in determining probability/outcome predictions.
 
-Before students leave at the end of the class, encourage them to continue independently researching and learning more about the various ways to implement classification models, especially some of the ones not demonstrated in class (i.e. neural networks).
+Before students leave at the end of the class, encourage them to continue independently researching and learning more about the various ways to implement classification models, especially some of the ones not demonstrated in class (i.e. neural networks). Make sure to slack out the below links as supplementary resources.
 
 * [Ten Applications of AI to FinTech](https://towardsdatascience.com/ten-applications-of-ai-to-fintech-22d626c2fdac)
 
@@ -30,9 +30,17 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today's class will be a great deal of hands on work training and evaluating classification models. Because the content will be heavy in statistics and machine learning, it's important that you remind students of value and application of these skills/concepts to **FinTech**. Whenever appropriate, remind students that **classification** models enables financial companies to make faster and smarter data driven decisions and outcomes (i.e. credit risk and worthiness, money laundering and fraud identification, longevity and return for a particular investment, and loan recommendations).
+* Today's class will require students to train and evaluate two different classification models. Because the content will be heavy in statistical analysis and machine learning, it's important that you reinforce concepts with FinTech use cases. Examples will be provided. Whenever appropriate, remind students that **classification** models enable financial companies to make faster and smarter data driven decisions and outcomes, such as:
 
-* The world of **classification** is a large one. All forms and concepts of classification cannot be covered in one class. Ensure to pace the class and be cognizant of how long it takes to explain concepts. The key is to stay rooted in real world and practical examples of how classification can be used. Avoid getting bogged down in the statistical and mathematical detail for the algorithms. Focus should be placed on
+  * credit risk and worthiness
+
+  * money laundering and fraud identification
+
+  * investment return and predicted longevity
+
+  * loan recommendations
+
+* The world of **classification** is vast. All forms and concepts of classification cannot be covered in one class. Ensure to pace the class and be cognizant of how long it takes to explain concepts. The key is to stay rooted in real world and practical examples of how classification can be used within FinTech. Avoid getting bogged down in the statistical and mathematical detail for the algorithms. Focus should be placed on
 
   * What the algorithm/model is
 
