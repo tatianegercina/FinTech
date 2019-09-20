@@ -40,7 +40,13 @@ Transition into explaining to students what boosting is and how it benefits mach
 
     * For this reason, **boosting algorithms** are considered **meta-algorithms**. Instead of working with and affecting data, **boosting algorithms** work with and affect other algorithms.
 
-  * **Boosting** algorithms use weighted averages to determine what values are misclassified. Other algorithms create new base learners as older ones prove ineffective.
+  * **Boosting** algorithms use weighted averages (the higher the average the more inaccurate the prediction) to determine what values are misclassified. The algorithm will iterate until there are no weighted predictions.
+
+    * Other algorithms (i.e. **bagging**) create new base learners as older ones prove ineffective.
+
+    ![boosting_flow.jpg](IMages/boosting_flow.jpg)
+
+    * Photo retrieved from [here](https://www.educba.com/boosting-algorithm/). Needs to be recreated.
 
 Highlight to students that **boosting** is not the only way to make a **weak learner** more robust and accurate. Another approach is called **bagging**.
 
@@ -52,7 +58,17 @@ Highlight to students that **boosting** is not the only way to make a **weak lea
 
   * Results for a **bagging** algorithm are then aggregated via a voting process. Each classifier will vote for a label, and then the **bagging** algorithm will aggregate votes and classify the label with the most votes as the prediction.
 
-* One of the key differences between **boosting** and **bagging** is that **boosting** algorithms will weigh predictions based off of accuracy. Instead of weighing predictions, the **bagging** algorithm resamples and replaces data in order to improve model fitting and accuracy.
+* One of the key differences between **boosting** and **bagging** is that **boosting** algorithms will weigh predictions based off of accuracy, and as long as data points are weighted as inaccurate, **boosting** algorithms will continue to run. Instead of weighing predictions, **bagging** algorithms resample and replace data in order to improve model fitting and accuracy.
+
+  * Summarize the comparison again to help reinforce the differences:
+
+    * Bagging iteratively weighs inaccurate predictions and continue to execute.
+
+    * Boosting iteratively resamples and replaces data in order to train the best model.
+
+    ![bagging_flow.png](Images/bagging_flow.png)
+
+    * Photo retrieved from [here](https://hackernoon.com/how-to-develop-a-robust-algorithm-c38e08f32201). Will need to be recreated.
 
 End the activity by letting students know that the next several activities will be dedicated to implementing/applying a GradientBoostedTree **boosting** algorithm to improve decision tree accuracy.
 
