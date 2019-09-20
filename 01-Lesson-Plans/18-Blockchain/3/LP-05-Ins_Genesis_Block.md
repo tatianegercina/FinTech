@@ -3,11 +3,6 @@
 In this activity, you will be demonstrating the generation of a genesis block using the `puppeth` tool bundled with
 `geth`.
 
-Before class, make sure to follow the `geth` [install instructions](https://github.com/ethereum/go-ethereum/wiki/Installing-Geth)
-and ensure that the tool is functioning.
-
-Have an address/wallet ready to populate as a pre-funded account. You can generate a new one with MyCrypto, or use the same wallet as before.
-
 First, introduce the `geth` tool to the class.
 
 ![golang](https://www.vertica.com/wp-content/uploads/2019/07/Golang-1000x565.png)
@@ -55,6 +50,11 @@ Explain to the class that we will be using Proof of Work.
 Type `1` to choose `Proof of Work` and continue.
 
 You will be asked to pre-fund accounts. Paste an address from any Ethereum wallet that you control, without the `0x` prefix.
+
+Use MyCrypto like from the previous class, but explain to the students:
+
+* This is where we are going to prefund any accounts. We're going to paste in the address from the wallet we used the other day,
+  and when used on this new network, it will be heavily funded for us to test with.
 
 Once you paste an address and hit enter, hit enter again on the blank `0x` address to continue the prompt.
 
