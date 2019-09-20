@@ -1,4 +1,4 @@
-### 2. Instructor Do: Dealing with Text and Categorical Data in Machine Learning (10 mins)
+### 2. Instructor Do: Dealing with Text and Categorical Data in Machine Learning (10 min)
 
 In this activity, students will learn how categorical data should be preprocessed to be used in machine learning algorithms.
 
@@ -6,9 +6,9 @@ In this activity, students will learn how categorical data should be preprocesse
 
 * [categorical-data.ipynb](Activities/01_Ins-Categorical-Data/Solved/categorical-data.ipynb)
 
-Recall to students, that machine learning algorithms work with numerical data, however datasets also have text and categorical data such as gender, education level or marital status, that could represent a valuable input variable for a machine learning algorithms.
+Explain to students that machine learning algorithms work with numerical data. However, datasets also have text and categorical data such as gender, education level or marital status that could represent a valuable input variable for a machine learning algorithms.
 
-Explain to students, that in order to use text or categorical data in a machine learning algorithm, these kind of data values should be converted to a numerical representations.
+Explain to students that in order to use text or categorical data in a machine learning algorithm, these kind of data values should be converted to a numerical representations.
 
 Tell students that, we will use `pandas` and the `preprocessing` library of `sklearn` to encode text and categorical data as numbers.
 
@@ -24,7 +24,7 @@ Open the unsolved version of the Jupyter notebook and highlight the following:
 
 * [The `StandardScaler` function](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) will be used to standardize numerical features.
 
-Comment to students, that you will use simulated data about loans, there are a total of 500 records in the dataset, where each row represents a loan application along an arbitrary year. Every column represents the following data about each loan application.
+Explain to students that they will use simulated data about loans. There is a total of 500 records in the dataset where each row represents a loan application along an arbitrary year. Every column represents the following data about each loan application.
 
 * `amount`: The loan amount in USD.
 * `term`: The loan term in months.
@@ -102,7 +102,7 @@ loans_df["month_num"] = loans_df["month"].apply(lambda x: months_num[x])
 
 * The resulting DataFrame, contains the encoded months' names with a more meaningful numeric value for this context.
 
-    ![Meaninful encoded months' names](Images/categorical-data-4.png)
+    ![Meaningful encoded months' names](Images/categorical-data-4.png)
 
 * The `month` and `month_le` columns are dropped since they won't be used anymore.
 
@@ -110,13 +110,13 @@ loans_df["month_num"] = loans_df["month"].apply(lambda x: months_num[x])
     loans_df.drop(["month", "month_le"], axis=1, inplace=True)
     ```
 
-Comment to students, that sometimes there is problem with this type of encoding, since there are different numbers in the same column, the machine learning model can misunderstand the data to be in some kind of order, for example, since `0 < 1 < 2`; the model may derive a correlation like as the `month_num` increases the `amount`, `term` or `age` increase, but this's clearly not the correct scenario.
+Comment to students, that sometimes there is problem with this type of encoding, since there are different numbers in the same column, the machine learning model can misunderstand the data to be in some kind of order that implies a numerical significance, for example, since `0 < 1 < 2`; the model may derive a wrong correlation like as the `month_num` increases the `amount`, `term` or `age` increase, but this is clearly not the correct scenario.
 
-* Whether to use `LabelEncoder` or not, will depend on the machine learning performance metrics.
+* Whether to use `LabelEncoder` or not will depend on the machine learning performance metrics.
 
-* One way to overcome this issue related to `LabelEncoder`, is to use a binaty encoding method.
+* One way to overcome this issue related to `LabelEncoder` is to use a binary encoding method.
 
-* The `get_dummies` method from Pandas, offers a practical solution to encode categorial or text data as binary encoded data.
+* The `get_dummies` method from Pandas, offers a practical solution to encode categorical or text data as binary encoded data.
 
 * The `get_dummies` transforms each categorical feature into new columns with a `1` (True) or `0` (False) encoding to represent if that categorical label was present or not in the original row.
 
@@ -139,13 +139,15 @@ Comment to students, that sometimes there is problem with this type of encoding,
 
 Tell students, that the final step we need to perform is scaling and normalization. Many machine learning algorithms will perform better with a normalized or scaled dataset.
 
+Explain to students, that some models are sensitive to very large numerical values and may not be able to converge due to those features. It's always a good idea to have features all on the same scale so they have equal importance to the model.
+
 * `sklearn` provides a variety of scaling and normalization options. The most common is `StandardScaler`.
 
 * `StandardScales` standardizes the features by removing the mean and scaling to unit variance.
 
 * `StandardScaler` can be used when you don't know anything about your data.
 
-* To use `StandarScaler` the `model -> fit-> predict/transform` workflow is also used.
+* To use `StandardScaler` the `model -> fit-> predict/transform` workflow is also used.
 
   ```python
   # Creating the scaler instance
