@@ -4,7 +4,7 @@
 
 ### Overview
 
-By the end of Today's class, students will recognize the benefits of using trees based algorithms for classifications problems, also students will gain hands on experience on weak learners and ensemble methods such as bagging and boosting.
+By the end of Today's class, students will recognize the benefits of using tree based algorithms for classifications problems, also students will gain hands on experience with random forests and ensemble methods such as bagging and boosting.
 
 Today´s lesson also introduce students on dealing with categorical data in machine learning, students will be able to identify when is worth to use categorical data as a feature in a model.
 
@@ -34,11 +34,9 @@ By the end of the unit, students will be able to:
 
 * Tree based algorithms have a wide range of applications, Today's class will use them on risk analysis scenarios.
 
-* Some demos of Today's class, uses a lot of memory to train the models; some warning messages can be seen on Jupyter and may arise questions from students, explain them that these messages are not critical and can be ignored.
+* Some demos of Today's class, uses a lot of memory to train the models; some warning messages may be seen in Jupyter and may provoke questions from students, explain them that these messages are not critical and can be ignored.
 
-* Overfitting could be a major problem in machine learning, take your time to understand it implications and how the techniques covered in this class can help to avoid it.
-
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+* Overfitting is a common problem in machine learning, take your time to understand its implications and how the techniques covered in this class can help to avoid it.
 
 ### Slideshow and Time Tracker
 
@@ -56,10 +54,6 @@ By the end of the unit, students will be able to:
 
 Day 2 takes students to a new family of machine learning algorithms, students will learn about tree based algorithms and how they can be used in classification problems.
 
-**Files:**
-
-* [Lesson 11.2 Slides]()
-
 Open the lesson slides, and welcome students to day 2 by highlighting the following:
 
 * Today a new family of machine learning algorithms is going to be introduced: _Tree based algorithms_.
@@ -73,7 +67,7 @@ Open the lesson slides, and welcome students to day 2 by highlighting the follow
   * Weak learners
   * Ensemble methods
 
-Explain to students, that sometimes you need to deal with categorical data in machine learning problems, for example gender, locations names or risk categories.
+Explain to students, that sometimes you need to deal with categorical data inputs in machine learning problems, for example gender, locations names or risk categories.
 
 Tell students that in this class, they will learn how to deal with categorical data and how to discern if it's worth to include categorical features or not.
 
