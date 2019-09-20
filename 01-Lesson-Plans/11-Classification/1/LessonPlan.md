@@ -78,9 +78,9 @@ By the end of class, students will be able to:
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
-### 1. Instructor Do: Welcome (10 min)
+### 1. Instructor Do: Welcome (5 min)
 
 The instructor starts class with an introduction to **classification** and its use cases within FinTech. Students will receive the who, what, when, why, and how of FinTech **classification**.
 
@@ -130,9 +130,9 @@ If time remains, ask students emotionally guided questions to get a feel for the
 
 Ask if there are any questions before moving forward.
 
-- - -
+---
 
-### 2. Instructor Do: Demo Homework (10 mins)
+### 2. Instructor Do: Demo Homework (5 min)
 
 Students will receive a brief demonstration of the Unit 11 homework. The first half of this activity should be dedicated to giving a 5 minute overview. The second half should be to answer one or two questions.
 
@@ -156,9 +156,9 @@ Open the homework instructions, and provide a brief dry walk through of the inst
 
 End the activity by opening the floor for students to ask questions about the homework. Dedicate the next 5 minutes to answering these questions.
 
-- - -
+---
 
-### 1. Instructor Do: Intro to Classification (0:10)
+### 3. Instructor Do: Intro to Classification (10 min)
 
 By the end of this activity, students will be able to summarize what classification is within the machine learning space, as well as name one or two common classification algorithms.
 
@@ -190,9 +190,9 @@ If time remains, let students know there's time for one question.
 
 * If there's a question, answer it, and then move onto the next activity. Assure students that the upcoming activities will shed more light on **classification** and that there will be additional time for questions during review sessions.
 
-- - -
+---
 
-### 2. Instructor Do: Making Predictions with Logistic Regression (10 mins)
+### 4. Instructor Do: Making Predictions with Logistic Regression (10 min)
 
 Having been introduced to classification, students will now receive a demonstration of how to use logistic regression to make linear predictions for categorical outcomes. This demo will contain two parts: a brief explanation of preprocessing and a more in-depth explanation of model fitting and execution.
 
@@ -223,7 +223,7 @@ Walk through the slideshow and highlight the following points:
 
 * We can use logistic regression to predict which category or class a new data point should be classified as.
 
-After presenting the slideshow, open the Jupyter notebook and complete a dry walk through of running logistic regression with  Scikit-Learn (sklearn). Quickly run through the next bullet points, emphasizing that classification algorithms require data to be clustered into classes/groups.
+After presenting the slideshow, open the Jupyter notebook and complete a dry walk through of running logistic regression with Scikit-Learn (sklearn). Quickly run through the next bullet points, emphasizing that classification algorithms require data to be clustered into classes/groups.
 
 * Communicate to students that the only way to run a logistic regression model is to first prepare a dataset to be used for training the model. In order for a logistic regression model to learn on its own, it must be given data that is clustered in classes/groups.
 
@@ -263,18 +263,18 @@ After presenting the slideshow, open the Jupyter notebook and complete a dry wal
 
 Transition into the next part of the demo by explaining to students that once the preprocessing work has been completed, the logistic regression model can be ran. Demonstrate and explain how logistic regression models are trained and executed.
 
-* **Logistic Regression** can be implemented using the sklearn `LogisticRegression` class. This module is a part of the **linear model** package, a package commonly chosen by developers to run linear regression. The object returned from the `LogisticRegression` class will be  a **classifier** object, which is used to train, validate, and make predictions.
+* **Logistic Regression** can be implemented using the sklearn `LogisticRegression` class. This module is a part of the **linear model** package, a package commonly chosen by developers to run linear regression. The object returned from the `LogisticRegression` class will be a **classifier** object, which is used to train, validate, and make predictions.
 
   ![logistic_regression_class.png](Images/logistic_regression_class.png)
 
 * Once a Logistic regression model has been created, it can be **trained**/**fitted**. The model can be **trained** by using the `train` function provided by the `LogisticRegression` object. As stated previously, **classification** is a form of **supervised learning**. In order for the algorithm to learn, it must be given data to learn from. This process is fitting/training.
 
-    ```python
-    # Train the data
-    classifier.fit(X_train, y_train)
-    ```
+  ```python
+  # Train the data
+  classifier.fit(X_train, y_train)
+  ```
 
-    ![train_model.png](Images/train_model.png)
+  ![train_model.png](Images/train_model.png)
 
 The next step after training the model is **validating** it. A common approach is the Train/Test Split approach. Walk students through how this approach is used.
 
@@ -300,32 +300,32 @@ Once the model is proven to be accurate for both the training and test data, the
 
 * The **sklearn** `predict` function can be used to apply the model against a new data set. The model will predict which class the new data points will fall into (i.e. low credit risk or high credit risk).
 
-    ```python
-    # Generate a new data point (the red circle)
-    import numpy as np
-    new_data = np.array([[-2, 6]])
-    plt.scatter(X[:, 0], X[:, 1], c=y)
-    plt.scatter(new_data[0, 0], new_data[0, 1], c="r", marker="o", s=100)
+  ```python
+  # Generate a new data point (the red circle)
+  import numpy as np
+  new_data = np.array([[-2, 6]])
+  plt.scatter(X[:, 0], X[:, 1], c=y)
+  plt.scatter(new_data[0, 0], new_data[0, 1], c="r", marker="o", s=100)
 
-    # Predict the class (purple or yellow) of the new data point
-    predictions = classifier.predict(new_data)
-    print("Classes are either 0 (purple) or 1 (yellow)")
-    print(f"The new point was classified as: {predictions}")
-    ```
+  # Predict the class (purple or yellow) of the new data point
+  predictions = classifier.predict(new_data)
+  print("Classes are either 0 (purple) or 1 (yellow)")
+  print(f"The new point was classified as: {predictions}")
+  ```
 
-    ![predict_new_data.png](Images/predict_new_data.png)
+  ![predict_new_data.png](Images/predict_new_data.png)
 
 If time remains, show students the results of the predictions made using the test data. Students did not see this because the `score` function executes predictions behind the scenes when calculating accuracy.
 
 * When applying the model against the test data, the `score` function automatically calculates predictions behind the scenes. The **sklearn** `predict` function can be used see the actual predictions made from the data points in the test data set.
 
-    ```python
-    # Predict outcomes for test data set
-    predictions = classifier.predict(X_test)
-    pd.DataFrame({"Prediction": predictions, "Actual": y_test})
-    ```
+  ```python
+  # Predict outcomes for test data set
+  predictions = classifier.predict(X_test)
+  pd.DataFrame({"Prediction": predictions, "Actual": y_test})
+  ```
 
-    ![predict_test.png](Images/predict_test.png)
+  ![predict_test.png](Images/predict_test.png)
 
 Ask students if there are any questions before moving on. This was a heavy activity, so there will most likely be a number of questions. Try and answer one or two questions if timing permits. If not, ask students to save questions for review, and reiterate the following to students:
 
@@ -341,9 +341,9 @@ Ask students if there are any questions before moving on. This was a heavy activ
 
 Ask if there are any questions, and then move to the next activity.
 
-- - -
+---
 
-### 3. Students Do: Predicting Diabetes (15 mins)
+### 5. Students Do: Predicting Diabetes (15 min)
 
 In this activity, students will use the **sklearn** library to execute **logistic regression** models in order to predict whether or not an individual has diabetes. Students will leverage the material covered in the corresponding instructor demo activity to complete this MSMD activity.
 
@@ -355,9 +355,9 @@ In this activity, students will use the **sklearn** library to execute **logisti
 
 * [diabetes_lr.ipynb](Activities/02-Stu_Diabetes/Unsolved/diabetes_lr.ipynb)
 
-- - -
+---
 
-### 4. Instructor Do: Predicting Diabetes Activity Review (10 mins)
+### 6. Instructor Do: Predicting Diabetes Activity Review (10 min)
 
 **Files:**
 
@@ -367,41 +367,41 @@ Open the solution and complete a dry walk through of the solution . Answer any q
 
 * Reiterate to students that in order to run a logistic regression model, a training and testing data set are required. A single data set can be split into these two subsets using the **sklearn** `train_test_split` function. Explain that these two data sets will be used to validate the accuracy of the model.
 
-    ```python
-    # Use the train_test_split function to create training and testing data sets
-    from sklearn.model_selection import train_test_split
+  ```python
+  # Use the train_test_split function to create training and testing data sets
+  from sklearn.model_selection import train_test_split
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1, stratify=y)
-    ```
+  X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1, stratify=y)
+  ```
 
 * In order to run a logistic regression model, a logistic regression model object is needed. The **sklearn** `LogisticRegression` module is a common module used.
 
-    ```python
-    # Use the LogisticRegression module from the sklearn package to create a model
-    from sklearn.linear_model import LogisticRegression
-    classifier = LogisticRegression(random_state=1)
-    classifier
-    ```
+  ```python
+  # Use the LogisticRegression module from the sklearn package to create a model
+  from sklearn.linear_model import LogisticRegression
+  classifier = LogisticRegression(random_state=1)
+  classifier
+  ```
 
-    ![create_lr_model.png](Images/create_lr_model.png)
+  ![create_lr_model.png](Images/create_lr_model.png)
 
 * Once a model is created, it has to be trained. After training, the model can be scored, and it can then be used to make predictions for new data points.
 
-    ```python
-    # Fit the model
-    classifier.fit(X_train, y_train)
+  ```python
+  # Fit the model
+  classifier.fit(X_train, y_train)
 
-    # Score the model
-    print(f"Training Data Score: {classifier.score(X_train, y_train)}")
-    print(f"Testing Data Score: {classifier.score(X_test, y_test)}")
+  # Score the model
+  print(f"Training Data Score: {classifier.score(X_train, y_train)}")
+  print(f"Testing Data Score: {classifier.score(X_test, y_test)}")
 
-    # Make predictions
-    predictions = classifier.predict(X_test)
-    results = pd.DataFrame({"Prediction": predictions, "Actual": y_test}).reset_index(drop=True)
-    results
-    ```
+  # Make predictions
+  predictions = classifier.predict(X_test)
+  results = pd.DataFrame({"Prediction": predictions, "Actual": y_test}).reset_index(drop=True)
+  results
+  ```
 
-    ![running_lr.png](Images/running_lr.png)
+  ![running_lr.png](Images/running_lr.png)
 
 If time remains, facilitate a discussion around model evaluation using the following questions. Be mindful of pacing. Also encourage students to ask any of their own questions.
 
@@ -415,7 +415,7 @@ Explain to students that in addition to the accuracy score, there are other metr
 
 Ask if there are any questions before moving forward.
 
-- - -
+---
 
 ### 7. Instructor Do: Evaluating Logistic Regression Predictions (5 min)
 
@@ -443,7 +443,7 @@ Open the 11.1 slides, and highlight the following:
 
 Ask if there are any questions before moving on.
 
-- - -
+---
 
 ### 8. Instructor Do: Accuracy, Precision, Recall (10 min)
 
@@ -489,9 +489,9 @@ Encourage students to consult the following [documentation](https://blog.exsilio
 
 Use the remaining time to answer any questions about logistic regression models and evaluating predictions. Then, move forward with the next activity.
 
-- - -
+---
 
-### 9. Instructor Do: Confusion Matrix & Classification Report (10)
+### 9. Instructor Do: Confusion Matrix & Classification Report (10 min)
 
 Students receive a live demonstration of how to create and use a confusion matrix and classification report to evaluate models for error.
 
@@ -513,12 +513,12 @@ Transition to the live coding aspect of the demo, and demonstrate how to use and
 
 * The `confusion_matrix` function can be imported into the Python environment from the `metrics` package. Once imported, it can be executed using the actual and predicted data points. The output is a two dimensional array. Columns reflect binary classes (high credit risk or low credit risk), and the rows represent the number of samples/data points that actually belong to that class.
 
-    ```python
-    from sklearn.metrics import confusion_matrix
-    confusion_matrix(y_test, predictions)
-    ```
+  ```python
+  from sklearn.metrics import confusion_matrix
+  confusion_matrix(y_test, predictions)
+  ```
 
-    ![confusion_matrix.png](Images/confusion_matrix.png)
+  ![confusion_matrix.png](Images/confusion_matrix.png)
 
 Communicate to students that a **classification report** can also be used to evaluate a model. When evaluating a model, the **accuracy**, **precision**, and **recall** must all be evaluated to ensure the rate of false positive sand false negatives are minimal. The results from these tests can be stored within a **classification report**, which can be used to assess and evaluate number of predicted occurrences for each class.
 
@@ -536,7 +536,7 @@ Communicate to students that a **classification report** can also be used to eva
 
 Finish the activity by asking students if there are any questions, and then transition to the student activity.
 
-- - -
+---
 
 ### 10. Students Do: Diagnosing the Model (10 min)
 
@@ -548,7 +548,7 @@ Students complete a bridge activity where they return to the model they created 
 
 * [diagnosis.ipynb](Activities/04-Stu_Diagnosing_the_Model/Unsolved/diagnosis.ipynb)
 
-- - -
+---
 
 ### 11. Instructor Do: Diagnosing the Model Activity Review (10 min)
 
@@ -587,11 +587,11 @@ Transition to the dry walk through by opening the solution file, and highlight t
 
 * Similarly, the **classification report** reveals the precision, recall, and accuracy of the predicted values for each class. These ratios are calculated using the actual and predicted data points.
 
-    ```python
-    from sklearn.metrics import classification_report
-    target_names = ["No Diabetes", "Diabetes"]
-    print(classification_report(y_test, predictions, target_names=target_names))
-    ```
+  ```python
+  from sklearn.metrics import classification_report
+  target_names = ["No Diabetes", "Diabetes"]
+  print(classification_report(y_test, predictions, target_names=target_names))
+  ```
 
 Next, transition into the interpretation part of the review activity. Ask students guided questions that will require them to interpret the results from the matrix and report.
 
@@ -605,9 +605,9 @@ Next, transition into the interpretation part of the review activity. Ask studen
 
 Ask if there are any questions before moving forward.
 
-- - -
+---
 
-### 12. Student Do: Build Loan Approver (15 mins)
+### 12. Student Do: Build Loan Approver (15 min)
 
 Students will participate in a bag of tricks activity where they apply the machine learning concepts and technical skills learned thus far to create a model for approving loans.
 
@@ -615,11 +615,11 @@ Students will participate in a bag of tricks activity where they apply the machi
 
 **Files:** [starter-code.js](Activities/05-Stu_Loan_Approver/Unsolved/loan_approver.ipynb)
 
-- - -
+---
 
 ### 13. BREAK (15 min)
 
-- - -
+---
 
 ### 14. Instructor Do: Build Loan Approver Activity Review (10 min)
 
@@ -683,9 +683,9 @@ Continue the next part of the review by asking students questions and then expla
 
 Ask for any remaining questions before moving on.
 
-- - -
+---
 
-### 15. Instructor Do: Support Vector Machines (10 mins)
+### 15. Instructor Do: Support Vector Machines (10 min)
 
 Students receive a demonstration and lecture on how to use support vector machine algorithm. The goal of this activity is to illustrate to students the different approaches that can be taken to come up with the same classification engine.
 
@@ -739,18 +739,18 @@ Transition into the live coding exercise by opening the starter file and demonst
 
 * In order to create a SVM model, the **sklearn** `svm.SVC` module must be imported.
 
-    ```python
-    from sklearn.svm import SVC
-    ```
+  ```python
+  from sklearn.svm import SVC
+  ```
 
 * Like any other supervised learning model, a data set is needed to learn from. The `make_blobs` function can be used to create the data set that the model will use to train/learn from.
 
-    ```python
-    from sklearn.datasets.samples_generator import make_blobs
-    X, y = make_blobs(n_samples=40, centers=2, random_state=42, cluster_std=1.25)
-    plt.scatter(X[:, 0], X[:, 1], c=y, s=100, cmap="bwr");
-    plt.show()
-    ```
+  ```python
+  from sklearn.datasets.samples_generator import make_blobs
+  X, y = make_blobs(n_samples=40, centers=2, random_state=42, cluster_std=1.25)
+  plt.scatter(X[:, 0], X[:, 1], c=y, s=100, cmap="bwr");
+  plt.show()
+  ```
 
   ![plot_classification.png](Images/plot_classification.png)
 
@@ -764,11 +764,11 @@ Indicate to students that the `svm.svc` module is used to create a **SVM** model
 
 * The `kernel` argument accepts a number of values. These are listed and explained below. Advise students to consult the documentation to get additional detail on these parameter values.
 
-  * rbf - creates a non-linear hyperplane
+  * rbf * creates a non-linear hyperplane
 
-  * linear - creates a linear, 2D hyperplane
+  * linear * creates a linear, 2D hyperplane
 
-  * poly - creates a non-linear hyperplane
+  * poly * creates a non-linear hyperplane
 
     ```python
     model = SVC(kernel='linear')
@@ -776,11 +776,11 @@ Indicate to students that the `svm.svc` module is used to create a **SVM** model
 
 * Once the model has been created, it can be trained using the blob data created in the previous step. The model is trained using the **sklearn** `fit` function.
 
-    ```python
-    model.fit(X, y)
-    ```
+  ```python
+  model.fit(X, y)
+  ```
 
-    ![svm_model.png](Images/svm_model.png)
+  ![svm_model.png](Images/svm_model.png)
 
 If time permits, illustrate to students how to define a decision boundary. A common practice to identify the decision boundary/hyperplane for the already identified data points prior to making predictions. This provides a visual representation of the already existing classes and their margin of separation.
 
@@ -790,44 +790,44 @@ If time permits, illustrate to students how to define a decision boundary. A com
 
 * The decision boundary is dictated by the min and max values within the provided data set (feature columns only). These values are known as **support vectors** and can be plotted to render a visual of the classes.
 
-    ```python
-    # Plot the decision boundaries
-    x_min = X[:, 0].min()
-    x_max = X[:, 0].max()
-    y_min = X[:, 1].min()
-    y_max = X[:, 1].max()
+  ```python
+  # Plot the decision boundaries
+  x_min = X[:, 0].min()
+  x_max = X[:, 0].max()
+  y_min = X[:, 1].min()
+  y_max = X[:, 1].max()
 
-    print(x_min, x_max, y_min, x_max)
-    ```
+  print(x_min, x_max, y_min, x_max)
+  ```
 
-    ![min_max_boundaries.png](Images/min_max_boundaries.png)
+  ![min_max_boundaries.png](Images/min_max_boundaries.png)
 
 * The NumPy `mesh_grid` function can be used to store the coordinates in a vector. These will be referenced later when running the `decision_function` to identify the boundaries of the hyperplane.
 
-    ```python
-    # Create mesh grid
-    XX, YY = np.mgrid[x_min:x_max, y_min:y_max]
-    ```
+  ```python
+  # Create mesh grid
+  XX, YY = np.mgrid[x_min:x_max, y_min:y_max]
+  ```
 
-    ![mesh_grid.png](Images/mesh_grid.png)
+  ![mesh_grid.png](Images/mesh_grid.png)
 
 * The mesh grid data can then be scored by the classifier using the `decision_function` function. The `decision_function` operates similar to predict; however, instead of providing the classification outcome (i.e yes or no), the `decision_function` returns the classifier score for the data point (i.e. -1.38402 and 1.323), which can be used to figure out which side of the hyperplane the data point will fall.
 
-    ```python
-    # Use the decision_function function to identify sides of the hyperplane
-    Z = model.decision_function(np.c_[XX.ravel(), YY.ravel()])
-    print(Z)
+  ```python
+  # Use the decision_function function to identify sides of the hyperplane
+  Z = model.decision_function(np.c_[XX.ravel(), YY.ravel()])
+  print(Z)
 
-    # Put the result into a color plot
-    Z = Z.reshape(XX.shape)
-    # plt.pcolormesh(XX, YY, Z > 0, cmap=plt.cm.Paired)
-    plt.contour(XX, YY, Z, colors=['k', 'k', 'k'],
-                linestyles=['--', '-', '--'], levels=[-.5, 0, .5])
-    plt.scatter(X[:, 0], X[:, 1], c=y, cmap='bwr', edgecolor='k', s=100)
-    plt.show()
-    ```
+  # Put the result into a color plot
+  Z = Z.reshape(XX.shape)
+  # plt.pcolormesh(XX, YY, Z > 0, cmap=plt.cm.Paired)
+  plt.contour(XX, YY, Z, colors=['k', 'k', 'k'],
+              linestyles=['--', '-', '--'], levels=[-.5, 0, .5])
+  plt.scatter(X[:, 0], X[:, 1], c=y, cmap='bwr', edgecolor='k', s=100)
+  plt.show()
+  ```
 
-    ![plotting_hyperplane.png](Images/plotting_hyperplane.png)
+  ![plotting_hyperplane.png](Images/plotting_hyperplane.png)
 
 Emphasize to students that data will not always be equidistant with a wide margin. Explain that **support vectors** can fall within the margin of the hyperplane. These values should be considered errors and the classification should not be relied on.
 
@@ -892,9 +892,9 @@ If time remains, remind students that most of the code they saw today is boilerp
 
 Ask for any questions before moving forward.
 
-- - -
+---
 
-### 16. Students Do: SVM Loan Approver (15 mins)
+### 16. Students Do: SVM Loan Approver (15 min)
 
 Students are asked to update their loan approver with an SVM model and rerun the evaluation metrics. Students will then compare the performance of the SVM model with the Logistic Regression model.
 
@@ -902,9 +902,9 @@ Students are asked to update their loan approver with an SVM model and rerun the
 
 **Files:** [svm_loan_approver.ipynb](Activities/07_Stu_SVM_Loan_Approver/Unsolved/svm_loan_approver.ipynb)
 
-- - -
+---
 
-### 17. Instructor Do: SVM Loan Approver Activity Review (10 mins)
+### 17. Instructor Do: SVM Loan Approver Activity Review (10 min)
 
 The instructor leads a dry walk through of the previous activity.
 
@@ -920,56 +920,56 @@ Open the solution and explain the following:
 
 * SVM models can be either 2D (linear) or multi-dimensional (poly). The dimension of the model is defined by the `kernel` argument.
 
-    ```python
-    # Instantiate a linear SVM model
-    from sklearn.svm import SVC
-    classifier = SVC(kernel='linear')
-    classifier
-    ```
+  ```python
+  # Instantiate a linear SVM model
+  from sklearn.svm import SVC
+  classifier = SVC(kernel='linear')
+  classifier
+  ```
 
-    ```
-    SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
-    decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
-    kernel='linear', max_iter=-1, probability=False, random_state=None,
-    shrinking=True, tol=0.001, verbose=False)
-    ```
+  ```
+  SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto_deprecated',
+  kernel='linear', max_iter=-1, probability=False, random_state=None,
+  shrinking=True, tol=0.001, verbose=False)
+  ```
 
 * Once the model is created, it has to be fit with data.
 
-    ```python
-    # Fit the data
-    classifier.fit(X_train, y_train)
-    ```
+  ```python
+  # Fit the data
+  classifier.fit(X_train, y_train)
+  ```
 
 * The model can then be scored for accuracy.
 
-    ```python
-    # Score the accuracy
-    print(f"Training Data Score: {classifier.score(X_train, y_train)}")
-    print(f"Testing Data Score: {classifier.score(X_test, y_test)}")
-    ```
+  ```python
+  # Score the accuracy
+  print(f"Training Data Score: {classifier.score(X_train, y_train)}")
+  print(f"Testing Data Score: {classifier.score(X_test, y_test)}")
+  ```
 
 * An accurate model can make precise predictions. The **sklearn** `predict` function is used make predictions off of the new data.
 
-    ```python
-    # Make predictions using the test data
-    predictions = classifier.predict(X_test)
-    results = pd.DataFrame({"Prediction": predictions, "Actual": y_test}).reset_index(drop=True)
-    results.head()
-    ```
+  ```python
+  # Make predictions using the test data
+  predictions = classifier.predict(X_test)
+  results = pd.DataFrame({"Prediction": predictions, "Actual": y_test}).reset_index(drop=True)
+  results.head()
+  ```
 
-    ![prediction_results.png](Images/prediction_results.png)
+  ![prediction_results.png](Images/prediction_results.png)
 
 * The last step is to evaluate the model. Just like with the Logistic Regression model, the `confusion_matrix` and `classification_report` libraries can be used to assess metrics and performance.
 
-    ```python
-    # Evaluate performance
-    from sklearn.metrics import confusion_matrix
-    confusion_matrix(y_test, predictions)
+  ```python
+  # Evaluate performance
+  from sklearn.metrics import confusion_matrix
+  confusion_matrix(y_test, predictions)
 
-    from sklearn.metrics import classification_report
-    print(classification_report(y_test, predictions))
-    ```
+  from sklearn.metrics import classification_report
+  print(classification_report(y_test, predictions))
+  ```
 
   ![evaluate_svm.png](Images/evaluate_svm.png)
 
@@ -1001,7 +1001,7 @@ If time remains, ask students the following guided/review questions.
 
 Ask if there are any questions before moving forward.
 
-- - -
+---
 
 ### 18. Instructor Do: Which Model is the Best? (5 min)
 
@@ -1033,6 +1033,12 @@ End the activity by congratulating the students on learning two new machine lear
 
 * Remind the students that these algorithms can be used for a range of classification use cases, from fraud detection to medical diagnosis, computer vision and election results.
 
-* Assure students that a lot of the statistical concepts covered will be re-used and re-emphasized in upcoming lessons. This will provide plenty of opportunity to re-enforce  the teachings.
+* Assure students that a lot of the statistical concepts covered will be re-used and re-emphasized in upcoming lessons. This will provide plenty of opportunity to re-enforce the teachings.
 
 Ask if there are any questions before ending the class.
+
+### End Class
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
