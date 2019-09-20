@@ -2,7 +2,7 @@
 
 **Files:**
 
-* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
+* [decision-trees.ipynb](Activities/03-Ins_Decision-Trees/Solved/decision-trees.ipynb)
 
 Walk through the solution and highlight the following:
 
