@@ -32,7 +32,9 @@ By the end of the unit, students will be able to:
 * Before class, make sure to follow the `geth` [install instructions](https://github.com/ethereum/go-ethereum/wiki/Installing-Geth)
   and ensure that the tool is functioning.
 
----
+* Have an address/wallet ready to populate as a pre-funded account. You can generate a new one with MyCrypto, or use the same wallet as before.
+
+- - -
 
 ### Class Slides and Time Tracker
 
@@ -44,7 +46,7 @@ By the end of the unit, students will be able to:
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
----
+- - -
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
