@@ -1,6 +1,6 @@
 ### 4. Instructor Do: Trading Signals (10 mins)
 
-In this activity, students will learn what differentiates technical analysis from fundamental analysis, what a technical indicator is, what trading signals are, and how to use these signals to devise a trading strategy (actions based on the occurrence of a trading signal). In particular, students will learn how to generate a dual moving average crossover trading signal, implement the logic/strategy to perform the buy or sell orders, and overlay the points at which the algorithm places the buy and sell orders on top of the plot for closing prices of AMD stock.
+In this activity, students will learn what differentiates technical analysis from fundamental analysis, what a technical indicator is, what trading signals are, and how to use these signals to devise a trading strategy (actions based on the occurrence of a trading signal). In particular, students will learn how to generate a dual moving average crossover trading signal, implement the logic/strategy to perform the buy or sell orders, and overlay the points at which the algorithm places the buy and sell orders on top of the plot for closing prices of AAPL stock.
 
 **Files:**
 
@@ -29,10 +29,6 @@ Next, open the solution file and present the following:
 * By default, a Pandas DataFrame shows a limited number of rows and columns in order to conserve screen space (ex. the `...`); however, because we'll need to see the specific points at which a trading signal is active and the corresponding trade entry and exit points, it is a good idea to increase the Pandas DataFrame display size to show all of it's contents.
 
   ![dataframe-options](Images/dataframe-options.png)
-
-* Make sure to set the IEX public key to an environment variable `IEX_PUBLIC_KEY` on your system in order to import it into the code. Note, after setting your environment variable you may to restart JupyterLab for it to register the change.
-
-  ![iex-env-variable](Images/iex-env-variable.png)
 
 * Generating a dual moving average crossover trading signal involves calculating a short rolling window moving average and a long rolling window moving average of closing prices, defining logic for an active/inactive trade signal 1 or -1 when the short MA crosses above/under the long MA, and calculating the points at which a entry or exit position should be made 1 or -1.
 
