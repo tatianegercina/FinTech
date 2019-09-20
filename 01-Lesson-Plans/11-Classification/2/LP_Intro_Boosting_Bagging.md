@@ -70,6 +70,18 @@ Highlight to students that **boosting** is not the only way to make a **weak lea
 
     * Photo retrieved from [here](https://hackernoon.com/how-to-develop-a-robust-algorithm-c38e08f32201). Will need to be recreated.
 
-End the activity by letting students know that the next several activities will be dedicated to implementing/applying a GradientBoostedTree **boosting** algorithm to improve decision tree accuracy.
+If time remains, engage students with the below questions. If there are no conversations, go round-robin.
+
+* Ask if there's a volunteer who would like to summarize the difference between boosting and bagging algorithms.
+
+  * **Answer** Bagging iteratively weighs inaccurate predictions and continue to execute. Boosting iteratively resamples and replaces data in order to train the best model.
+
+* Ask if another volunteer would like to explain what **boosting** and **bagging** algorithms are used for.
+
+  * **Answer** **Boosting** and **bagging** algorithms are used to improve the accuracy and robustness of **weak learners**. Each class of algorithm converts **weak learners** into **strong learners** through **ensemble learning**.
+
+* Ask a final question: what's the difference between **weak learners** and **strong learners**? Address the entire class and let anyone answer.
+
+  * **Answer** **Strong learners** can make predictions with accuracy and precision. **Weak learners** make predictions that are only slightly better than random chance.
 
 Ask students if they have any questions before moving on.
