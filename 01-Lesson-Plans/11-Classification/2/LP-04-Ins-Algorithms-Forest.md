@@ -2,10 +2,6 @@
 
 In this lesson, students will be introduced to tree based algorithms and the `sklearn` modules that implements this algorithms family.
 
-**Files:**
-
-* [Lesson 11.2 Slides]()
-
 Open the lesson slides, go to the _Walking into the Algorithms Forest_ section and highlight the following:
 
 * Tree based algorithms, are part of the supervised machine learning methods.
