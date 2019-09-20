@@ -1,10 +1,10 @@
-### 4. Instructor Do: Trading Signals (10 mins)
+### 5. Student Do: The Big Short (15 mins)
 
-In this activity, students will learn what differentiates technical analysis from fundamental analysis, what a technical indicator is, what trading signals are, and how to use these signals to devise a trading strategy (actions based on the occurrence of a trading signal). In particular, students will learn how to generate a dual moving average crossover trading signal, implement the logic/strategy to perform the buy or sell orders, and overlay the points at which the algorithm places the buy and sell orders on top of the plot for closing prices of AMD stock.
+In this activity, students will take what they've learned about generating trading signals and implementing a corresponding trading strategy, and instead now perform the inverse: creating a trading strategy that profits off of price declines by shorting (selling) and covering (buying) the stock.
 
 **Files:**
 
-* [dual_ma_crossover.ipynb](Activities/02-Ins_Trading_Signals/Solved/dual_ma_crossover.ipynb)
+* [the_big_short.ipynb](Activities/03-Stu_Trading_Signals/Solved/the_big_short.ipynb)
 
 First, present the following questions and answers:
 
