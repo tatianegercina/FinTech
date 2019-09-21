@@ -13,16 +13,23 @@ Open the unsolved file, and live code the following. Make sure to touch upon the
 * The `GradientBoostingClassifier` is a part of the `sklearn.ensemble` package. Like any other **sklearn** library, it has to be imported into the Python environment.
 
     ```python
+    import pandas as pd
+    from path import Path
+    from sklearn.preprocessing import LabelEncoder, StandardScaler
     from sklearn.ensemble import GradientBoostingClassifier
     ```
 
+* Remind students that because we are working with categorical data, numeric values have to be converted to categories. The `sklearn.preprocessing` `StandardScaler` functions is used to do this.
+
 * The `GradientBoostingClassifier` has four main arguments: `n_estimators`, `learning_rate`, `max_depth`, and `random_state`. Explain each of these parameters while configuring them.
 
-  * The `n_estimators` paramater configures the number of **weak learners** being used with the **boosting** algorithm.
+  * The `n_estimators` paramater configures the number of **weak learners** being used with the **boosting** algorithm. The higher the value of `n_estimators`, the more trees that will be created to train the algorithm. The more trees, the better the performance.
 
   * `Learning_rate` controls overfitting. Smaller values should be used when setting `learning_rate`. `Learning_rate` will work with `n_estimators` to identify the number of **weak learners** to train.
 
     * The values should be between 0 and 1.
+
+    * A common technique is to loop through a range of **learning rates**, creating and fitting the classifier with each value in the range. Once the classifier is created, it can be scored. The **learning rate** with the highest test accuracy should be used.
 
   * The `max_depth` argument identifies the size of each decision tree being used.
 
