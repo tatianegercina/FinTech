@@ -22,7 +22,7 @@ Open the solution file and discuss the following:
 
   ![profit-loss-trading-algorithm](Images/profit-loss-trading-algorithm.png)
 
-* It is important to evaluate the performance of a trading algorithm. Here we multiply the per share profit/loss by 1000 to simulate the performance of the trading algorithm if it were to execute its trades using a share size of 1000. Results show that the trading algorithm profited $323, and produced a return on investment of 32.3% for an initial capital allocation of $100000.
+* It is important to evaluate the performance of a trading algorithm. Here we multiply the per share profit/loss by 1000 to simulate the performance of the trading algorithm if it were to execute its trades using a share size of 1000. Results show that the trading algorithm profited $3230, and produced a return on investment of 3.23% for an initial capital allocation of $100000.
 
   ![simple-trading-algo-performance](Images/simple-trading-algo-performance.png)
 
