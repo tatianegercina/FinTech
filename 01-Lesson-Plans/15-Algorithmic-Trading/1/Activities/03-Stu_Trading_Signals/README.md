@@ -6,9 +6,24 @@ If you had an algorithm to monitor and *short* the market in 2008, could you hav
 
 ## Instructions
 
-Using the [starter file](), complete the following steps:
+Using the [starter file](Unsolved/short_dual_ma_crossover.ipynb), complete the following steps:
 
-1. 
+1. Import the `pandas`, `numpy`, `matplotlib`, and `pathlib` libraries. Optionally, set the pandas DataFrame settings to display more rows and columns.
 
+2. Create a DataFrame by reading in the `vnq.csv` file containing stock data for VNQ from 2007 to 2009.
+
+3. Create a Dual Moving Average Crossover Trading Signal that indicates shorting opportunities
+
+    1. Create a filtered DataFrame containing just the `Date` and `Close` columns of the VNQ stock data. 
+
+    2. Set the `Date` column as the index to the DataFrame and convert the datetime strings to datetime objects.
+
+    3. Set a `short_window` and `long_window` to `50` and `100`, respectively.
+
+    4. Create a 50-day moving average and a 100-day moving average from the VNQ closing prices using the `rolling` and `mean` functions.
+
+    5. 
+
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
