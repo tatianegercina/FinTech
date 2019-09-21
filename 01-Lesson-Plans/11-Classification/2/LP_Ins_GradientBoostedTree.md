@@ -31,36 +31,104 @@ Open the unsolved file, and live code the following. Make sure to touch upon the
 
     * A common technique is to loop through a range of **learning rates**, creating and fitting the classifier with each value in the range. Once the classifier is created, it can be scored. The **learning rate** with the highest test accuracy should be used.
 
-  * The `max_depth` argument identifies the size of each decision tree being used.
+  * The `max_depth` argument identifies the size/depth of each decision tree being used. `Max_depth` will dictate the number of levels between leaf nodes and the root.
 
-Explain that using the `GradientBoostingClassifier` is like using any other machine learning algorithm: it requires data, training, and scoring.
+Explain that using the `GradientBoostingClassifier` is like using any other machine learning algorithm: it requires training data, fitting, and scoring.
 
-* Use the `sklearn.make_blobs` function to generate data for the algorithm.
+* The `GradientBoostingClassifier` will require values for arguments `n_estimators`, `learning_Rate`, and `max_depth`. The defaults will be used for `n_estimators` and `max_depth`.
 
-* Split the data into train and test segments using `sklearn.train_test_split`.
-
-* Create a classifier object using the `GradientBoostingClassifier` module.
+* In order to determine the optimal `learning_rate`, a loop is used to iterate over each possible `learning_rate`, and then the model is built and scored using that value. The **learning rate** with the highest test accuracy should be chosen.
 
     ```python
-    classifier = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0, max_depth=1, random_state=0)
+    # Create a classifier object
+    learning_rates = [0.05, 0.1, 0.25, 0.5, 0.75, 1]
+    for learning_rate in learning_rates:
+        classifier = GradientBoostingClassifier(n_estimators=20,
+                                                learning_rate=learning_rate,
+                                                max_features=5,
+                                                max_depth=3,
+                                                random_state=0)
+
+        # Fit the model
+        classifier.fit(X_train_scaled, y_train.ravel())
+        print("Learning rate: ", learning_rate)
+
+        # Score the model
+        print("Accuracy score (training): {0:.3f}".format(classifier.score(X_train_scaled, y_train.ravel())))
+        print("Accuracy score (validation): {0:.3f}".format(classifier.score(X_test_scaled, y_test.ravel())))
+        print()
     ```
 
-* Train the model using the training data.
+    ![iterate_learning_rate.png](Images/iterate_learning_rate.png)
+
+* The **learning rate** of `0.75` resulted in the highest test accuracy. Create a new classifier using this learning rate. Then, fit the model, score it, and then make predictions using the test data.
 
     ```python
-    classifier.fit(X_train, y_train)
+    # Choose a learning rate and create classifier
+    classifier = GradientBoostingClassifier(n_estimators=20,
+                                            learning_rate=0.75,
+                                            max_features=5,
+                                            max_depth=3,
+                                            random_state=0)
+
+    # Fit the model
+    classifier.fit(X_train_scaled, y_train.ravel())
+
+    # Make Prediction
+    predictions = classifier.predict(X_test_scaled)
+    pd.DataFrame({"Prediction": predictions, "Actual": y_test.ravel()}).head(20)
     ```
 
-* Score the model using the `sklearn.score` function.
+    ![gb_model.png](Images/gb_model.png)
+
+* Determine the accuracy rate using the `accuracy_score` function.
 
     ```python
-    classifier.score(X_train)
+    # Calculating the accuracy score
+    acc_score = accuracy_score(y_test, predictions)
+    print(f"Accuracy Score : {acc_score}")
     ```
 
-* Now it's time to predict! Use the `sklearn.predict` function to make a prediction using the **ensemble learners** and the **test** data.
+  ```
+  Accuracy Score : 0.568
+  ```
+
+* Evaluate the performance of the model by generating a **confusion matrix** and **classification report**.
 
     ```python
-    classifier.predict(X_test, y_test)
+    # Generate the confusion matrix
+    cm = confusion_matrix(y_test, predictions)
+    cm_df = pd.DataFrame(
+        cm, index=["Actual 0", "Actual 1"],
+        columns=["Predicted 0", "Predicted 1"]
+    )
+
+    # Displaying results
+    display(cm_df)
+
+    # Generate classification report
+    print("Classification Report")
+    print(classification_report(y_test, predictions))
     ```
 
-* Evaluate the model using the `sklearn.classification_report` and `sklearn.confusion_matrix` classes.
+    ![gb_evaluation.png](Images/gb_evaluation.png)
+
+* If time remains, show students how to visualize the boosted tree. Use the `tree.export_graphviz` function and `pydotplus.graph_from_dot_data`.
+
+    ```python
+    # Graph tree
+    dot_data = tree.export_graphviz(
+        classifier.estimators_[9, 0],
+        out_file=None, filled=True,
+        rounded=True,
+        special_characters=True,
+        proportion=True,
+    )
+
+    graph = pydotplus.graph_from_dot_data(dot_data)
+    Image(graph.create_png())
+    ```
+
+    ![gb_tree.png](Images/gb_tree.png)
+
+Ask if there any questions before moving on.
