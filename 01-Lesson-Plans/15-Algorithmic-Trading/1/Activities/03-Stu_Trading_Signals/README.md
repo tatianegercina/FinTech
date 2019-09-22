@@ -12,9 +12,9 @@ Using the [starter file](Unsolved/short_dual_ma_crossover.ipynb), complete the f
 
 2. Create a DataFrame by reading in the `vnq.csv` file containing stock data for VNQ from 2007 to 2009.
 
-3. Create a Dual Moving Average Crossover Trading Signal that indicates shorting opportunities
+3. Create a Dual Moving Average Crossover Trading Signal that indicates shorting opportunities.
 
-    1. Create a filtered DataFrame containing just the `Date` and `Close` columns of the VNQ stock data. 
+    1. Create a filtered DataFrame containing just the `Date` and `Close` columns of the VNQ stock data.
 
     2. Set the `Date` column as the index to the DataFrame and convert the datetime strings to datetime objects.
 
@@ -22,7 +22,19 @@ Using the [starter file](Unsolved/short_dual_ma_crossover.ipynb), complete the f
 
     4. Create a 50-day moving average and a 100-day moving average from the VNQ closing prices using the `rolling` and `mean` functions.
 
-    5. 
+    5. Initialize a new DataFrame column `Signal` and set the values to 0.
+
+    6. Use the numpy `where` function to specify that when the short window MA is less than the long window MA, set the value to the `Signal` column as 1 or 0, respectively.
+
+    7. Use the `diff` function on the `Signal` column and assign the values to a `Entry/Exit` column to indicate trade entry and exit points in time.
+
+4. Plot the entry and exit points of your Short Dual Moving Average Crossover signal.
+
+    1. Use the `figure` and `axes` objects from the matplotlib library to create the figure layout and the x and y coordinates, respectively.
+
+    2. Plot the VNQ closing prices as well as the 50-day moving average and 100-day moving average.
+
+    3. Plot the entry and exit points and mark the coordinates with marker symbols.
 
 ---
 
