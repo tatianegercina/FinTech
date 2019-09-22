@@ -36,9 +36,9 @@ Using the [starter file](Unsolved/short_dual_ma_crossover.ipynb), complete the f
 
     3. Plot the entry and exit points and mark the coordinates with marker symbols.
 
-## Hints
+## Hint
 
-* Remember that taking a short position (profiting off of selling) is the inverse of taking a long position (profiting off of buying), therefore make sure the decision logic regarding your trading signal reflects this!
+Remember that taking a short position (profiting off of selling) is the inverse of taking a long position (profiting off of buying), therefore make sure the decision logic regarding your trading signal reflects this!
 
 ---
 
