@@ -42,6 +42,6 @@ Open the solution file and review the following:
 
   ![short-exit.png](Images/short-exit.png)
 
-* Plotting the closing prices of VNQ, a 50-day moving average, and a 100-day moving average overlaid with marker symbols indicating short position entry and exit trades shows that if you had an algorithm utilizing a short position dual moving average crossover strategy during the 2008 recession, you would have *made* money rather than *lose* money like most other investors during tha time.
+* Plotting the closing prices of VNQ, a 50-day moving average, and a 100-day moving average overlaid with marker symbols indicating short position entry and exit trades shows that if you had an algorithm utilizing a short position dual moving average crossover strategy during the 2008 recession, you would have *made* money rather than *lose* money like most other investors during that time.
 
   ![short-dual-ma-crossover-plot](Images/short-dual-ma-crossover-plot.png)
