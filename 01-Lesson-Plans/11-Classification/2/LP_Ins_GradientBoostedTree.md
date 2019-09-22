@@ -19,7 +19,7 @@ Open the unsolved file, and live code the following. Make sure to touch upon the
     from sklearn.ensemble import GradientBoostingClassifier
     ```
 
-* Remind students that because we are working with categorical data, numeric values have to be converted to categories. The `sklearn.preprocessing` `StandardScaler` functions is used to do this.
+* Remind students that data has already been normalized/standardized with categories encoded. The `sklearn.preprocessing` `StandardScaler` functions was used to do this.
 
 * The `GradientBoostingClassifier` has four main arguments: `n_estimators`, `learning_rate`, `max_depth`, and `random_state`. Explain each of these parameters while configuring them.
 
