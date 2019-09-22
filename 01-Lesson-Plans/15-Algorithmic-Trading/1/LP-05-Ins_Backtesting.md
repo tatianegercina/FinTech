@@ -4,7 +4,7 @@ In this activity, students will learn what differentiates technical analysis fro
 
 **Files:**
 
-* [dual_ma_crossover.ipynb](Activities/02-Ins_Trading_Signals/Solved/dual_ma_crossover.ipynb)
+* [backtesting.ipynb](Activities/04-Ins_Backtesting/Solved/backtesting.ipynb)
 
 First, present the following questions and answers:
 
