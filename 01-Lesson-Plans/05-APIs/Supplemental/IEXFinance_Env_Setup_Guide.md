@@ -103,3 +103,7 @@ Therefore, there are two options:
   2. Upgrade your IEX Cloud account to a paid tier.
 
 Consult the [iexfinance](https://addisonlynch.github.io/iexfinance/stable/index.html) documentation for additional information about the **iexfinance** library.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
