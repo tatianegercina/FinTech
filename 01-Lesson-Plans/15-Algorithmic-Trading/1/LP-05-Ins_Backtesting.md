@@ -37,6 +37,18 @@ Next, open the solution file and present the following:
   initial_capital = float(100000)
   ```
 
+* Here, we create a new `Position` column by multiplying an arbitrarily chosen `share_size` of 500 shares and multiplying it by the values in the `Signal` column. As a result, periods of time in the dataset where there is an active signal of 1 will now show an active position holding of 500 shares for the backtesting simulation. 
+
+  ```python
+  # Set the share size
+  share_size = 500
+
+  # Take a 500 share position where the dual moving average crossover is 1 (SMA50 is greater than SMA100)
+  signals_df['Position'] = share_size * signals_df['Signal']
+  ```
+
+  ![active-positions](Images/active-positions.png)
+
 * 
 
 Ask if there are any questions before moving on.
