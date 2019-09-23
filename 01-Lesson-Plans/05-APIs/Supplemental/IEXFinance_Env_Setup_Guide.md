@@ -58,7 +58,7 @@ An out-of-date Anaconda environment can create issues when trying to install new
     conda update conda
     ```
 
-3. Create a fresh conda environment to use with PyViz.
+3. Create a fresh conda environment to use with iexfinance.
 
     ```shell
     conda create -n iexenv python=3.7 anaconda
