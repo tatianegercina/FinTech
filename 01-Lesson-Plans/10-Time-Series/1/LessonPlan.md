@@ -708,3 +708,7 @@ End the class by congratulating students on a tough day of time series analysis.
 Ask if there are any questions before moving on. Encourage students to attend office hours and to reach out to teaching staff for any additional questions or help.
 
 ### 16. END Class
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
