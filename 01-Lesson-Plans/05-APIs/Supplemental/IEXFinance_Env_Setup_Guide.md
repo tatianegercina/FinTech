@@ -40,7 +40,7 @@ Once the `iexfinance` download is complete, verify the installation completed su
 
 ### Troubleshooting
 
-It can be frustrating when packages do not install correctly. Use the below approaches to troubleshoot installation issues and get your machine learning libraries up and running!
+It can be frustrating when packages do not install correctly, therefore use the below approaches to troubleshoot any installation issues.
 
 **Update Conda Environment**
 
