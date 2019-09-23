@@ -20,7 +20,7 @@ In this activity, you are going to explore how random forest algorithm can be us
 
 6. Once data is scaled, create a random forest instance and train it with the training data (`X_train_scaled` and `y_train`), define `n_estimators=200` and `random_state=78`.
 
-### Making Predictions Using the Tree Model
+### Making Predictions Using the Random Forest Model
 
 7. Validate the trained model, by predicting fraudulent transactions using the testing data (`X_test_scaled`).
 
