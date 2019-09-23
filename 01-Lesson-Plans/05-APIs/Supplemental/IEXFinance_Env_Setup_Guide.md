@@ -26,6 +26,18 @@ Open a terminal, and execute the following command to install `iexfinance`.
 
   ![iexfinance_install.png](Images/iexfinance-install.png)
 
+### Set `IEX_TOKEN` environment variable
+
+In order to use the iexfinance SDK, you will need to set your `IEX_TOKEN` environment variable prior to using the library, as iexfinance communicates with the IEX Cloud API.
+
+Go to [IEX Cloud](https://iexcloud.io/) and login to your account. Then grab your API token as shown below.
+
+  ![iex-token](Images/iex-token.png)
+
+Then, open up a terminal and use the following command `export IEX_TOKEN=<public key>` to set your `IEX_TOKEN` environment variable. Use the `echo` command to verify that the `IEX_TOKEN` variable has been properly set.
+
+  ![iex-token](Images/iex-token-verify.png)
+
 ### Verify Installation
 
 Once the `iexfinance` download is complete, verify the installation completed successfully.
@@ -75,5 +87,19 @@ An out-of-date Anaconda environment can create issues when trying to install new
     ```shell
     pip install iexfinance
     ```
+
+**Verify IEX Cloud Usage**
+
+Sometimes, queries to the IEX Cloud API will fail. This is most likely because of a max usage related to a IEX Cloud account, as shown below.
+
+  ![iex-query-error](Images/iex-query-error.png)
+
+  ![iex-cloud-account-usage](Images/iex-cloud-account-usage.png)
+
+Therefore, there are two options:
+
+  1. Create another free IEX Cloud account.
+
+  2. Upgrade your IEX Cloud account to a paid tier.
 
 Consult the [iexfinance](https://addisonlynch.github.io/iexfinance/stable/index.html) documentation for additional information about the **iexfinance** library.
