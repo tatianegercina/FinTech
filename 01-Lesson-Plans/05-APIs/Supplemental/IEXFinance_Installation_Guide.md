@@ -90,6 +90,8 @@ Sometimes, queries to the IEX Cloud API will fail. This is most likely because o
 
   ![iex-cloud-account-usage](Images/iex-cloud-account-usage.png)
 
+In order to fix usage related errors, you will have to upgrade your IEX Cloud account to a paid tier.
+
 Consult the [iexfinance](https://addisonlynch.github.io/iexfinance/stable/index.html) documentation for additional information about the **iexfinance** library.
 
 ---
