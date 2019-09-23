@@ -26,7 +26,7 @@ Next, open the solution file and present the following:
 
   ![strategy-to-backtest](Images/strategy-to-backtest.png)
 
-* Oftentimes, backtesting is a functionality already provided by algorithmic trading frameworks such as Quantopian's `zipline`; however, performing manual backtesting can be just as easy if we understand the steps. Notice the minimal lines of code to achieve this functionality!
+* Oftentimes, backtesting is a functionality already provided by algorithmic trading frameworks such as Quantopian's `zipline` library; however, performing manual backtesting can be just as easy if we understand the steps. Notice the minimal lines of code to achieve this functionality!
 
   ![manual-backtesting](Images/manual-backtesting.png)
 
