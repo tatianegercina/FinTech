@@ -30,7 +30,7 @@ Open a terminal, and execute the following command to install `iexfinance`.
 
 Once the `iexfinance` download is complete, verify the installation completed successfully.
 
-* Use the `pip list` function with a `grep` argument to identify if the `imbalanced-learn` library installed successfully.
+* Use the `pip list` function with a `grep` argument to identify if the `iexfinance` library installed successfully.
 
   ```shell
   pip list | grep iexfinance
