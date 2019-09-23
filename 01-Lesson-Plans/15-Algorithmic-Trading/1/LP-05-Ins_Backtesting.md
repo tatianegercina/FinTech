@@ -37,7 +37,7 @@ Next, open the solution file and present the following:
   initial_capital = float(100000)
   ```
 
-* Here, we create a new `Position` column by multiplying an arbitrarily chosen `share_size` of 500 shares and multiplying it by the values in the `Signal` column. As a result, periods of time in the dataset where there is an active signal of 1 will now show an active position holding of 500 shares for the backtesting simulation. 
+* Here, we create a new `Position` column by multiplying an arbitrarily chosen `share_size` of 500 shares and multiplying it by the values in the `Signal` column. As a result, periods of time in the dataset where there is an active signal of 1 will now show an active trade position of 500 shares for the backtesting simulation.
 
   ```python
   # Set the share size
@@ -49,6 +49,42 @@ Next, open the solution file and present the following:
 
   ![active-positions](Images/active-positions.png)
 
-* 
+* Similar to using the `diff` function on the `Signal` column to calculate entry and exit points, using the `diff` function on the `Position` column calculates the entry and exit points for the specified share size, in this case 500 shares. 
+
+  ```python
+  # Find the points in time where a 500 share position is bought or sold
+  signals_df['Entry/Exit Position'] = signals_df['Position'].diff()
+  ```
+
+  ![entry-exit-positions](Images/entry-exit-positions.png)
+
+* In the next step, a new column `Portfolio Holdings` is created by multiplying the closing prices of AAPL by the cumulative sum for entry and exit positions of 500 shares--indicating the value of the investment made for each trade over time.
+
+  ```python
+  # Multiply share price by entry/exit positions and get the cumulatively sum
+  signals_df['Portfolio Holdings'] = signals_df['close'] * signals_df['Entry/Exit Position'].cumsum()
+  ```
+
+  ![portfolio-holdings](Images/portfolio-holdings.png)
+
+* Interestingly enough, at first glance the following code looks like it should have parentheses around the product of closing prices and entry/exit share size positions; however, doing so causes the calculated portfolio holdings to remain static, and is therefore erroneous.
+
+  ```python
+  # Multiply share price by entry/exit positions and get the cumulatively sum
+  signals_df['Portfolio Holdings'] = (signals_df['close'] * signals_df['Entry/Exit Position']).cumsum()
+  ```
+
+  ![erroneous-portoflio-holdings.png](Images/erroneous-portfolio-holdings.png)
+
+* Next, another new column `Portfolio Cash` is created by subtracting the initial capital allocation of $100,000 by the product of APPL closing prices and entry/exit share size positions--indicating the remaining cash value of the simulated portfolio relative to the performance of trades over time. Notice that now parenthesis are used around the product of AAPL closing prices and entry/exit share size positions.
+
+  ```python
+  # Subtract the initial capital by the portfolio holdings to get the amount of liquid cash in the portfolio
+  signals_df['Portfolio Cash'] = initial_capital - (signals_df['close'] * signals_df['Entry/Exit Position']).cumsum()
+  ```
+
+  ![portfolio-cash](Images/portfolio-cash.png)
+
+*
 
 Ask if there are any questions before moving on.
