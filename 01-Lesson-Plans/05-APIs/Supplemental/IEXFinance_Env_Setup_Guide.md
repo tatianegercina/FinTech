@@ -26,18 +26,6 @@ Open a terminal, and execute the following command to install `iexfinance`.
 
   ![iexfinance_install.png](Images/iexfinance-install.png)
 
-### Set `IEX_TOKEN` environment variable
-
-In order to use the iexfinance SDK, you will need to set your `IEX_TOKEN` environment variable prior to using the library, as iexfinance communicates with the IEX Cloud API.
-
-Go to [IEX Cloud](https://iexcloud.io/) and login to your account. Then grab your API token as shown below.
-
-  ![iex-token](Images/iex-token.png)
-
-Then, open up a terminal and use the following command `export IEX_TOKEN=<public key>` to set your `IEX_TOKEN` environment variable. Use the `echo` command to verify that the `IEX_TOKEN` variable has been properly set.
-
-  ![iex-token](Images/iex-token-verify.png)
-
 ### Verify Installation
 
 Once the `iexfinance` download is complete, verify the installation completed successfully.
@@ -49,6 +37,18 @@ Once the `iexfinance` download is complete, verify the installation completed su
   ```
 
   ![iexfinance_verify](Images/iexfinance-verify.png)
+
+### Set `IEX_TOKEN` environment variable
+
+In order to use the iexfinance SDK, you will need to set your `IEX_TOKEN` environment variable prior to using the library, as iexfinance communicates with the IEX Cloud API.
+
+Go to [IEX Cloud](https://iexcloud.io/) and login to your account. Then grab your API token as shown below.
+
+  ![iex-token](Images/iex-token.png)
+
+Then, open up a terminal and use the following command `export IEX_TOKEN=<public key>` to set your `IEX_TOKEN` environment variable. Use the `echo` command to verify that the `IEX_TOKEN` variable has been properly set.
+
+  ![iex-token](Images/iex-token-verify.png)
 
 ### Troubleshooting
 
