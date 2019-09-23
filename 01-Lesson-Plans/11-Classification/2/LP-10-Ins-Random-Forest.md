@@ -8,9 +8,9 @@ In this activity, students will learn how to implement a random forest using `sk
 
 * [loans_data_encoded.csv](Activities/05-Ins_Random_Forest/Resources/loans_data_encoded.csv)
 
-Comment to students that in this demo, you are going to use the loan applications encoded dataset presented before. The goal of this demo, is to predict fraudulent loan applications using a random forest.
+Explain to students that in this demo, you are going to use the loan applications encoded dataset presented before. The goal of this demo, is to predict fraudulent loan applications using a random forest.
 
-Open the unsolved jupyter notebook, walk through the code and highlight the following:
+Use the unsolved Jupyter notebook to live code the solution and highlight the following:
 
 * In order to use the random forest implementation from `sklearn`, the `RandomForestClassifier` class from the `ensemble` module should be imported.
 
@@ -18,7 +18,7 @@ Open the unsolved jupyter notebook, walk through the code and highlight the foll
   from sklearn.ensemble import RandomForestClassifier
   ```
 
-As it has been done before, the data is loaded in to a Pandas DataFrame, scaled and split into training and testing set, just make a brief review of this code, and continue to live code the random forest implementation by highlighting the following:
+As it has been done before, the data is loaded in to a Pandas DataFrame and then scaled and split into training and testing set. Just briefly review this code and continue to live code the random forest implementation by highlighting the following:
 
 * To create the target vector `y` before scaling the data, the `ravel` method is used instead of `reshape` as we did in the decision tree demo.
 
@@ -35,6 +35,8 @@ As it has been done before, the data is loaded in to a Pandas DataFrame, scaled 
   * `n_estimators`: This is the number of random forest to be created by the algorithm, in general, a higher number makes the predictions stronger and more stable, however a very large number can result in higher training time.
 
   * `random_state`: This parameter defines the seed used by the random number generator, it's important to define a value for future model comparison.
+
+Comment to students, that that according to a [research study](https://doi.org/10.1007/978-3-642-31537-4_13), it's possible to suggest that a range between `64` and `128` trees in a forest could be used for initial modeling.
 
 * Once the random forest model is created, it's fitted with the training data.
 
