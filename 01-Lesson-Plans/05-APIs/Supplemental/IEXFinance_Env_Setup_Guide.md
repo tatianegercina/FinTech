@@ -48,7 +48,7 @@ Then, open up a terminal and use the following command `export IEX_TOKEN=<public
 
 It can be frustrating when packages do not install correctly, therefore use the below approaches to troubleshoot any installation or usage issues.
 
-### Update Conda Environment**
+### Update Conda Environment
 
 An out-of-date Anaconda environment can create issues when trying to install new packages. Follow the below steps to update your conda environment.
 
