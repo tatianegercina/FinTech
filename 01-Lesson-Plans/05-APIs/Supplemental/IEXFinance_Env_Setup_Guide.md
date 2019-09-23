@@ -1,46 +1,42 @@
-# Machine Learning Environment Setup Guide
+# IEXFinance Environment Setup Guide
 
-This guide serves as a step by step process for setting up and validating the tools required for the machine learning portion of the curriculum. Many of these tools are needed to train and test machine learning models. Without these tools, class activities and code cannot be completed.
+This guide serves as a step by step process for setting up and validating the `iexfinance` Python SDK. Without this library, class activities and code will not be able to extract historical stock data and therefore will not be able to be completed.
 
 This guide will include installation and verification steps for the following technologies:
 
-* Imbalanced-learn
+* IEXFinance
 
-## Imbalanced-learn
+## IEXFinance
 
 ### Install
 
-In order to install the `imbalanced-learn` package, all of the dependencies must be satisfied. These dependencies come packaged with every Anaconda install/distribution. The dependencies list can be found below for reference.
+In order to install the `iexfinance` package, all of the dependencies must be satisfied. The dependencies list can be found below for reference.
 
-* Numpy (>=1.11)
+* Pandas
 
-* Scipy (>=0.17)
+* Requests
 
-* Scikit-learn (>=0.21)
+Open a terminal, and execute the following command to install `iexfinance`.
 
-* Keras 2 (optional)
-
-* Tensorflow (optional)
-
-Open the a terminal, and execute the following command to install `imbalanced-learn`.
-
-* Use the `conda install` command to download the `imbalanced-learn` module.
+* Use the `pip install` command to download the `iexfinance` module.
 
   ```shell
-  conda install -c conda-forge imbalanced-learn
+  pip install iexfinance
   ```
 
-  ![imbalanced_learn_install.png](Images/imbalanced_learn_install.png)
+  ![iexfinance_install.png](Images/iexfinance_install.png)
 
 ### Verify Installation
 
-Once the `imbalanced-learn` download is complete, verify the installation completed successfully.
+Once the `iexfinance` download is complete, verify the installation completed successfully.
 
-* Use the `conda-list` function with a `grep` argument to identify if the `imbalanced-learn` library installed successfully.
+* Use the `pip list` function with a `grep` argument to identify if the `imbalanced-learn` library installed successfully.
 
   ```shell
-  conda-list | grep imbalanced-learn
+  pip list | grep iexfinance
   ```
+
+  ![iexfinance_verify](Images/iexfinance_verify.png)
 
 ### Troubleshooting
 
@@ -65,19 +61,19 @@ An out-of-date Anaconda environment can create issues when trying to install new
 3. Create a fresh conda environment to use with PyViz.
 
     ```shell
-    conda create -n mlenv python=3.7 anaconda
+    conda create -n iexenv python=3.7 anaconda
     ```
 
 4. Activate the new environment.
 
     ```shell
-    conda activate mlenv
+    conda activate iexenv
     ```
 
-5. Install the **imbalanced-learn** package.
+5. Install the **iexfinance** package.
 
     ```shell
-    conda install -c conda-forge imbalanced-learn
+    pip install iexfinance
     ```
 
-Consult the [imbalanced-learn](https://imbalanced-learn.readthedocs.io/en/stable/) documentation for additional information about the **imbalanced-learn** library.
+Consult the [iexfinance](https://addisonlynch.github.io/iexfinance/stable/index.html) documentation for additional information about the **iexfinance** library.
