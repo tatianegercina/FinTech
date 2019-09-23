@@ -1,4 +1,4 @@
-# IEXFinance Environment Setup Guide
+# IEXFinance Installation Guide
 
 This guide serves as a step by step process for setting up and validating the `iexfinance` Python SDK. Without this library, class activities and code will not be able to extract historical stock data and therefore will not be able to be completed.
 
