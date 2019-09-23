@@ -10,15 +10,15 @@ First, present the following questions and answers:
 
 * What is backtesting?
 
-  **Answer:** Backtesting is the process for measuring the performance of a trading strategy using historical stock prices.
+  **Answer:** Backtesting is the process for measuring the overall performance of a trading strategy using historical stock prices to simulate executed trades dictated by the calculated trading signals and trade decision logic.
 
 * Why is backtesting important?
 
-  **Answer:** Backtesting helps to assess the validity or profitability of a trading strategy over time.
+  **Answer:** Backtesting helps to assess the validity or profitability of a trading strategy over time and provides a benchmark for how it may perform going forward.
 
 * How reliable is backtesting?
 
-  **Answer:** While backtesting is important, the results of the backtest correspond to historical prices and not future prices. Therefore, a backtest provides a reliable benchmark for what has already occurred, but may prove to be less reliable as new stock data arises.
+  **Answer:** While backtesting is important, the results of the backtest correspond to historical prices and not future prices. Therefore, backtesting may provide a reliable benchmark for the stock prices that have already occurred, but may prove to be less reliable as new stock data arises.
 
 Next, open the solution file and present the following:
 
