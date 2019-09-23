@@ -106,4 +106,12 @@ Next, open the solution file and present the following:
 
   ![portfolio-daily-and-cumulative-returns](Images/portfolio-daily-and-cumulative-returns.png)
 
+* Finally, once again using the `figure` and `axes` objects of the matplotlib library, we can plot the entry and exit positions of the trading strategy against the backtesting results of a simulated portfolio of $100,000. Results show that the trading strategy increased the simulated portfolio of $100,000 to slightly above $130,000.
+
+  ![trading-strategy-vs-backtest-code](Images/trading-strategy-vs-backtest-code.png)
+
+  ![trading-strategy-plot](Images/trading-strategy-plot.png)
+
+  ![backtest-results-plot](Images/backtest-results-plot.png)
+
 Ask if there are any questions before moving on.
