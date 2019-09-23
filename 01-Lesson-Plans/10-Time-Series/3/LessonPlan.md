@@ -1096,11 +1096,11 @@ Congratulate the class for making it through their first week of Machine Learnin
 
 Explain to students that now that they have completed their first projects and are starting to learn new things such as machine learning, it is time to think about updating resumes to showcase these valuable skills!
 
-Use the following slides and lesson plan to discuss the Career Services content for this week.
+Use the following lesson plan to discuss the Career Services content for this week.
 
 **Files:**
 
-* [Career Services Lesson Plan](FinTech_Resume_LessonPlan.pdf)
+* [Career Services Lesson Plan](Career_Services_LessonPlan.md)
 
 ### End Class
 
