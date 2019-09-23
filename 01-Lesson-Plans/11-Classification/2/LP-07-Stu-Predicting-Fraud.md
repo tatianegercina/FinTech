@@ -8,7 +8,7 @@ In this activity, students will create a decision tree model to predict fraudule
 
 **Files:**
 
-* [preventing-fraud.ipynb](Activities/04-Stu_Predicting_Fraud/Unolved/preventing-fraud.ipynb)
+* [preventing-fraud.ipynb](Activities/04-Stu_Predicting_Fraud/Unsolved/preventing-fraud.ipynb)
 
 * [transactions_data_encoded.csv](Activities/04-Stu_Predicting_Fraud/Resources/transactions_data_encoded.csv)
 
