@@ -4,15 +4,15 @@ In this lesson, students will be introduced to tree based algorithms and the `sk
 
 Open the lesson slides, go to the _Walking into the Algorithms Forest_ section and highlight the following:
 
-* Tree based algorithms, are part of the supervised machine learning methods.
+* Tree based algorithms are part of the supervised machine learning methods.
 
-* These kind of algorithms, can be used to solve classification or regression problems.
+* These kind of algorithms can be used to solve classification or regression problems.
 
-* These algorithms are quite used in finance for assessing risk, preventing fraud or fighting money laundering.
+* These algorithms are quite often used in finance for assessing risk, preventing fraud or fighting money laundering.
 
 * In contrast to linear models, tree based algorithms can map non-linear relationships in data.
 
-Explain to students, that linear models are not always an straight line, even a parabolic curve is a linear model, it just have a different shape.
+Explain to students that in linear models, the relationship among input variables can be represented as a straight line, while non-linear models have a different shape.
 
 * Predicting the price of an stock is an example of a linear problem.
 
