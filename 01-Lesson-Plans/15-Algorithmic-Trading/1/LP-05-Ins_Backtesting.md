@@ -26,6 +26,17 @@ Next, open the solution file and present the following:
 
   ![strategy-to-backtest](Images/strategy-to-backtest.png)
 
+* Oftentimes, backtesting is a functionality already provided by algorithmic trading frameworks such as Quantopian's `zipline`; however, performing manual backtesting can be just as easy if we understand the steps. Notice the minimal lines of code to achieve this functionality!
+
+  ![manual-backtesting](Images/manual-backtesting.png)
+
+* First, we will want to set an initial capital allocation for our backtesting simulation. More often than not, an arbitrary value of $100,000 is chosen as the starting value.
+
+  ```python
+  # Set initial capital
+  initial_capital = float(100000)
+  ```
+
 * 
 
 Ask if there are any questions before moving on.
