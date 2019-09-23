@@ -24,7 +24,7 @@ Open a terminal, and execute the following command to install `iexfinance`.
   pip install iexfinance
   ```
 
-  ![iexfinance_install.png](Images/iexfinance_install.png)
+  ![iexfinance_install.png](Images/iexfinance-install.png)
 
 ### Verify Installation
 
@@ -36,7 +36,7 @@ Once the `iexfinance` download is complete, verify the installation completed su
   pip list | grep iexfinance
   ```
 
-  ![iexfinance_verify](Images/iexfinance_verify.png)
+  ![iexfinance_verify](Images/iexfinance-verify.png)
 
 ### Troubleshooting
 
