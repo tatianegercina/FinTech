@@ -125,11 +125,15 @@ In oder to evaluate the model, comment to students that a confusion matrix can, 
 
   ![Decision Tree evaluation results](Images/decision-trees-1.png)
 
-* After observing the results, it can be concluded that this model may not be the best one for preventing fraudulent loan applications.
+* After observing the results, it can be seen that model's accuracy (`0.584`) is low, also precision and recall are not good enough to state that the model will be good predicting fraudulent loan applications.
+
+* It can be concluded that this model may not be the best one for preventing fraudulent loan applications.
 
 Finally, comment to students that an interesting way to analyze a decision tree is by visualizing it, so a visual representation of the final decision tree is created using `pydotplus` library.
 
 ![Decision tree visualization](Images/decision-trees-2.png)
+
+Explain to students, that a very large and complex tree shape like this, probably indicates that the model is overfitted to this specific data and won't generalize well to other models.
 
 * To ease the tree visualization, the image can be saved as `PDF` or `PNG`.
 
