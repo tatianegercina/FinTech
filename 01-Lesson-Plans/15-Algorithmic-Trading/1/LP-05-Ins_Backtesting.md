@@ -22,6 +22,10 @@ First, present the following questions and answers:
 
 Next, open the solution file and present the following:
 
+* Because backtesting requires an initial trading strategy, here we start off again with our Long Position Dual Moving Average Crossover strategy. Going forward, we will want to measure the performance of each trade (entry position followed by exit position) as well as the overall increase/decrease in a simulated portfolio value.
+
+  ![strategy-to-backtest](Images/strategy-to-backtest.png)
+
 * 
 
 Ask if there are any questions before moving on.
