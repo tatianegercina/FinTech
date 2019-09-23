@@ -1100,12 +1100,10 @@ Use the following slides and lesson plan to discuss the Career Services content 
 
 **Files:**
 
-* [Career Services Slides](https://docs.google.com/presentation/d/1f1h9TRxFlHJLEiL53kRMULt2FpG5hm_LJsnd7hY4AIQ/edit?usp=sharing)
-
-* [Career Services Lesson Plan](https://docs.google.com/document/d/1BGoLNt4zrD7wJUXwt0KDm4Ubxuljmc07tDJ4ocfeWpE/edit?usp=sharing)
+* [Career Services Lesson Plan](FinTech_Resume_LessonPlan.pdf)
 
 ### End Class
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
