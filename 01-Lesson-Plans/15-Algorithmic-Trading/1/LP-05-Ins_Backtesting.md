@@ -22,6 +22,6 @@ First, present the following questions and answers:
 
 Next, open the solution file and present the following:
 
-*
+* 
 
 Ask if there are any questions before moving on.
