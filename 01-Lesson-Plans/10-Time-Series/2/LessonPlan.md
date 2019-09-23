@@ -864,3 +864,7 @@ Take a few moments to recap and reflect before ending class:
 * These time-series models that you learned are used in practice everywhere, from forecasting next year's revenue to quantitative trading. As a result, you've learned a versatile tool for predicting future events.
 
 ### 17. End Class
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
