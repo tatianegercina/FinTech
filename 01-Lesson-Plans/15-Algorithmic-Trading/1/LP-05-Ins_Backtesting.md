@@ -76,7 +76,7 @@ Next, open the solution file and present the following:
 
   ![erroneous-portoflio-holdings.png](Images/erroneous-portfolio-holdings.png)
 
-* Next, another new column `Portfolio Cash` is created by subtracting the initial capital allocation of $100,000 by the product of APPL closing prices and entry/exit share size positions--indicating the remaining cash value of the simulated portfolio relative to the performance of trades over time. Notice that now parenthesis are used around the product of AAPL closing prices and entry/exit share size positions.
+* Next, another new column `Portfolio Cash` is created by subtracting the initial capital allocation of $100,000 by the product of APPL closing prices and entry/exit share size positions--indicating the remaining cash value of the simulated portfolio relative to the performance of trades over time. Notice that now parenthesis are used around the product of AAPL closing prices and entry/exit share size positions when calculating the remaining portfolio cash, this is because while the investment value of each trade changes over time, the *cost-basis* of each trade remains the same.
 
   ```python
   # Subtract the initial capital by the portfolio holdings to get the amount of liquid cash in the portfolio
@@ -85,6 +85,25 @@ Next, open the solution file and present the following:
 
   ![portfolio-cash](Images/portfolio-cash.png)
 
-*
+* The `Portfolio Total` column simply adds the values of the `Portfolio Cash` columns by the values of the `Portfolio Holdings` columns, indicating the total portfolio value given the performance of trades over time.
+
+  ```python
+  # Get the total portfolio value by adding the cash amount by the portfolio holdings (or investments)
+  signals_df['Portfolio Total'] = signals_df['Portfolio Cash'] + signals_df['Portfolio Holdings']
+  ```
+
+  ![portfolio-total](Images/portfolio-total.png)
+
+* Lastly, the `Portfolio Daily Returns` and the `Portfolio Cumulative Returns` are calculated using the `pct_change` and `cumprod` functions respectively, as done in the previous units of this course.
+
+  ```python
+  # Calculate the portfolio daily returns
+  signals_df['Portfolio Daily Returns'] = signals_df['Portfolio Total'].pct_change()
+
+  # Calculate the cumulative returns
+  signals_df['Portfolio Cumulative Returns'] = (1 + signals_df['Portfolio Daily Returns']).cumprod() - 1
+  ```
+
+  ![portfolio-daily-and-cumulative-returns](Images/portfolio-daily-and-cumulative-returns.png)
 
 Ask if there are any questions before moving on.
