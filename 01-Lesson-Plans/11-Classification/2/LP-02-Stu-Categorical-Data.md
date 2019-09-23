@@ -20,8 +20,6 @@ In this activity, students are tasked to encode some categorical and text featur
 
 Walk through the solution and highlight the following:
 
-* Despite the dataset looks huge since it has 100,000 records, this is only a small sample of what a real dataset can be; in industry, you can have millions of records just for one day of transactions.
-
 * After loading the data into the `transactions_df` DataFrame, the only column that could need to be casted is the `date` column. This column can be easily converted to datetime using Pandas.
 
   ```python
