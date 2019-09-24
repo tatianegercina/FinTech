@@ -1,12 +1,16 @@
-# The Big Short Part I
+# The Big Short Part II
 
 The real estate bubble that led to the financial crisis in 2008 resulted in one of the worst economic disasters since the Great Depression of 1929. During this period, housing prices fell precipitously, causing massive ripples throughout the U.S. economy and ultimately causing the stock market to crash. Some keen investors profited off of the recession by *shorting* the market or placing bets that the market would fall. Most, however, lost substantial value from their investment portfolios, including much-needed retirement accounts and savings accounts.
 
-If you had an algorithm to monitor and *short* the market in 2008, could you have possibly *made* money? Create a dual moving average crossover strategy that would have shorted VNQ (Real Estate ETF) stock during the years between 2007 and 2009.
+Now that you have developed a Short Position Dual Moving Average Crossover Trading Strategy and determined that the algorithm could have *made* money during the 2008 financial recession, it is now time to determine *how much* money could have been made.
 
-## Instructions
+## Part 1 Instructions: The Big Short Part I
 
-Using the [starter file](Unsolved/short_dual_ma_crossover.ipynb), complete the following steps:
+You completed this in the last activity, nice job!
+
+## Part 2 Instructions: The Big Short Part II
+
+Using the [starter file](Unsolved/the_big_short_part_2.ipynb.ipynb), complete the following steps:
 
 1. Import the `pandas`, `numpy`, `matplotlib`, and `pathlib` libraries. Optionally, set the pandas DataFrame settings to display more rows and columns.
 
@@ -38,7 +42,7 @@ Using the [starter file](Unsolved/short_dual_ma_crossover.ipynb), complete the f
 
 ## Hint
 
-Remember that taking a short position (profiting off of selling) is the inverse of taking a long position (profiting off of buying), therefore make sure the decision logic regarding your trading signal reflects this!
+Remember that shorting a stock means to sell shares of a stock and then buy or cover the shares at a later point in time. Therefore, in particular, share sizes relative to backtesting calculations should be negative.
 
 ---
 
