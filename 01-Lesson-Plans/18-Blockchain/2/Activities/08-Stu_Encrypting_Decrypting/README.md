@@ -8,17 +8,17 @@ Pick a partner to encrypt and decrypt some messages with.
 
 * Generate a key by clicking `Random` in the `Key` field:
 
-* ![symmetric key](Images/symmetric-key.png)
+![symmetric key](Images/symmetric-key.png)
 
 * Generate a "nonce" (number used once):
 
-* ![nonce](Images/symmetric-nonce.png)
+![nonce](Images/symmetric-nonce.png)
 
 * Type a secret message that you will send to your partner:
 
-* ![super secret](Images/symmetric-message.png)
+![super secret](Images/symmetric-message.png)
 
-* Copy and send the following fields to your partner:
+* Copy and send the following fields to your partner via Slack:
 
   * Key
 
