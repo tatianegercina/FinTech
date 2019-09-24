@@ -13,7 +13,7 @@ Navigate to the below websites with the developer console open to review the exc
 
 2. Select `requests`.
 
-  ![dev_console_reqs.png](Images/dev_console_reqs.png)
+    ![dev_console_reqs.png](Images/dev_console_reqs.png)
 
 3. Navigate to `https://google.com`.
 
@@ -27,8 +27,8 @@ Navigate to the below websites with the developer console open to review the exc
 
 8. Visit `https://nasdaq.com` and search for a ticker. Review the developer console as you submit the request.
 
-9. Continue to navigate the internet with the developer console open. Take not of the type of requests that are sent for each site visited (how many POST vs GET). Also take into consideration the differences in API URLs.
+9. Continue to navigate the internet with the developer console open. Take note of the type of requests that are sent for each site visited (how many POST vs GET). Also take into consideration the differences in API URLs.
 
-- - -
+---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

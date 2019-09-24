@@ -1,20 +1,20 @@
 # Git Branching/Pushing
 
-In this activity we will create a new branch, implement a feature, and then submit a pull request back into master. We will also cover reviewing pull requests and merging them into master.
+In this activity, we will create a new branch, implement a feature, and then submit a pull request back into master. We will also cover reviewing pull requests and merging them into master.
 
 # Instructions
 
 ## Part I: Branching and Submitting a Pull Request
 
-* In this section we will create a branch, add a feature, and submit a pull request. **Only one group member should complete this section, everyone else should observe.**
+* In this section, we will create a branch, add a feature, and submit a pull request. **Only one group member should complete this section, everyone else should observe.**
 
-* Clone the project repo onto your computer and cd into it.
+* Clone the project repo onto your computer and use the cd (change directory) command to get into it.
 
 * Run the following command in your terminal to create and checkout to a new branch:
 
   `git checkout -b add-new-python-script`
 
-* You should now be on a new branch named "add-new-python-script". In order to verify this worked, run the following command in your terminal:
+* You should now be on a new branch named "add-new-python-script." In order to verify that this worked, run the following command in your terminal:
 
   `git branch`
 
@@ -28,19 +28,19 @@ In this activity we will create a new branch, implement a feature, and then subm
 
 * This should push up your code to to GitHub on a branch with the same name (`add-new-python-script`).
 
-* Go to the main repo page at github.com and you should see an button that says "Compare & pull request" -- click this.
+* Go to the main repo page at github.com and you should see an button that says "Compare & pull request." Click this.
 
-* On the next screen, add a description of the work that was done in the textarea and click the "Pull Request" button.
+* On the next screen, add a description of the work that was done in the text area and click the "Pull Request" button.
 
 * If completed successfully, you should see the pull request listed under the repo's "Pull request" tab.
 
 ## Part II: Reviewing a Pull Request
 
-* In this section we will review the pull request from Part I and merge it into master. **A different project member should complete this section while others observe**.
+* In this section, we will review the pull request from Part I and merge it into master. **A different project member should complete this section while others observe**.
 
-* Clone the repo to your computer if you haven't already done so and cd into it.
+* Clone the repo to your computer if you haven't already done so and use the cd command to get into it.
 
-* First you will want to test the changes introduced by the `add-new-python-script` branch locally. In order to examine the new branch on your local machine, run the following commands in your terminal:
+* First, you will want to test the changes introduced by the `add-new-python-script` branch locally. To examine the new branch on your local machine, run the following commands in your terminal:
 
   `git fetch --all`
 
@@ -58,16 +58,14 @@ In this activity we will create a new branch, implement a feature, and then subm
 
 * Now go to your GitHub repo's main page and go to the "Pull request" section. Select the `add-new-python-script` pull request from the list.
 
-* At the next page select the option to see the "Files changed".
+* At the next page select the option to see the "Files changed."
 
-* You should be presented with all of the files that were changed in this PR along with line numbers for any code added/removed.
+* You should be presented with all of the files that were changed in this PR along with line numbers for any code added or removed.
 
-* If there are any changes you would like made, you can click the line number to leave a comment the PR author will see and should address before approval. Otherwise click "Review changes" and approve the PR. You should be taken to a screen with an option to "Merge pull request" -- click this button.
+* If there are any changes you would like made, you can click the line number to leave a comment the PR author will see and should address before approval. Otherwise click "Review changes" and approve the PR. You should be taken to a screen with an option to "Merge pull request." Click this button.
 
-* Once complete you can delete the feature branch from your machine by running the following in your terminal:
+* Once complete, you can delete the feature branch from your machine by running the following in your terminal:
 
   `git branch -D add-new-python-script`
-
-* **Hints**:
 
 * Ask an instructor or TA if you get stuck or have any questions!

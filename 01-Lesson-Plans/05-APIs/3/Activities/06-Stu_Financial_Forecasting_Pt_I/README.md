@@ -46,6 +46,6 @@ The culminating activity—by this point, you'll be stock price fortune tellers!
 
 * Remember that a normal probability distribution is just a diagram illustrating the probability of potential outcomes as outcomes deviate closer to or away from the expected average.
 
-
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

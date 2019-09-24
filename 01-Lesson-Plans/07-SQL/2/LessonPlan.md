@@ -24,7 +24,21 @@ By the end of today's class, students will be able to:
 
 * The TAs should be ready to help students who are confused or who have not imported the data correctly.
 
-Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
+
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [7.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=592da5ea-c7a9-4d50-a22e-aac5002c0248) Note that this video may not reflect the most recent lesson plan.
+
+---
+
+### Class Slides and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1iiQKfL3bG3AHfGNmf8NjLf63T8qsS85ZIwnptNAnQeA/edit?usp=sharing).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -32,7 +46,7 @@ Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 Welcome the students and overview the class objectives.
 
-Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g480f0dd0a7_0_1809).
+Open the slides and cover the agenda.
 
 * Explain that today's lesson will provide a more in-depth look at SQL's features. Students will work with imported tables to expand their SQL skills.
 
@@ -40,7 +54,7 @@ Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUf
 
 In this activity, instructors will help students prepare for today's lesson by importing the necessary data to their databases.
 
-**Files:** 
+**Files:**
 
 * [schema.sql](Activities/01-Evr_Import_Data/Resources/schema.sql)
 
@@ -76,7 +90,7 @@ The TAs should walk around the classroom to assist students with the database up
 
 In this activity, students will learn how to use aggregate functions, aliases, and groupby operations to analyze data on a higher-level or aggregated perspective.
 
-Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_1) and review the following:
+Use the `Aggregate Functions` section of the slides and review the following:
 
 * Similar to aggregates in Pandas, aggregate functions allow calculations on a set of values and return a singular value.
 
@@ -286,7 +300,7 @@ Open pgAdmin and walk through the solution, highlighting the following:
 
 In this activity, students will be introduced to the concept of subqueries to query the resulting dataset of another (nested) query.
 
-Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_60) to begin the discussion of subqueries. A **subquery** is nested inside a larger query.
+Use the `Subqueries` section of the slides to begin the discussion of subqueries. A **subquery** is nested inside a larger query.
 
 **File:** [query.sql](Activities/06-Ins_Subqueries/Solved/query.sql)
 
@@ -436,7 +450,7 @@ In this activity, students will learn how to create and utilize views, virtual t
 
 **File:** [query.sql](Activities/08-Ins_Create_Views/Solved/query.sql)
 
-Open the [slideshow](https://docs.google.com/presentation/d/1uegNjJniwluj1P1nUUfwF2-981xcwlmdR_Hh9m92Nts/edit#slide=id.g584fa64c5f_1_83) to begin the discussion of views.
+Use the `SQL Views` section of the slides to begin the discussion of views.
 
 Tell students:
 
@@ -691,4 +705,4 @@ Answer any questions before ending class.
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

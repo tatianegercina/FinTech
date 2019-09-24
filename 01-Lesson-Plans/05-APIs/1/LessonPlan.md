@@ -4,7 +4,7 @@
 
 For the past three weeks, students have been immersed into the world of Python and common Python libraries that are included in the Anaconda environment (i.e., Pandas and Matplotlib). They've also learned some key techniques for analyzing financial data, such as calculating daily returns and risk-reward ratios. It's now time for students to take it to the next level and enter into the world of APIs. There are a number of FinTech APIs available that will allow students to perform more powerful analytics. They will also expose students to datasets they would not typically be able to easily access or consolidate. Now, students will learn the basics of APIs and API requests so that they can begin incorporating APIs into their work.
 
-Today's class will teach students what application programming interfaces (APIs) are, what they're used for, and why they are valuable. Students will also learn, from a high level, what the client-server model is and how it works. Students will submit API calls with Postman (a development environment for APIs) and Python, and they'll learn how decipher and parse API JSON output. Lastly, students will submit API calls with parameters in order to improve response time and filter and narrow down API output. Learning how to make API calls and parse API output using Postman and Python will prepare students for getting their hands dirty with APIs in the professional world.
+Today's class will teach students what application programming interfaces (APIs) are, what they're used for, and why they are valuable. Students will also learn, from a high level, what the client-server model is and how it works. Students will submit API calls with Postman (a development environment for APIs) and Python, and they'll learn how to decipher and parse API JSON output. Lastly, students will submit API calls with parameters in order to improve response time and filter and narrow down API output. Learning how to make API calls and parse API output using Postman and Python will prepare students for getting their hands dirty with APIs in the professional world.
 
 Before students leave at the end of the class, instruct them to sign up for the APIs that are going to be used tomorrow. These APIs will be used in the next lesson, and the 5.2 activities will require students have API keys. Links are provided below. Remember to slack the links to the students so they have a resource to sign up with.
 
@@ -31,6 +31,8 @@ By the end of class, students will be able to:
 * Query an API using URL Parameters with the requests library.
 
 ### Instructor Notes
+
+* Slack out the [IEXFinance Installation Guide](../Supplemental/IEXFinance_Installation_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with iexfinance outside of class time.
 
 * This class will focus on the fundamentals of APIs and the process of submitting APIs. This class is a great opportunity for students to be impressed and inspired by FinTech. There are a number of fun and creative FinTech APIs, such as Quandl and World of Bank, that will be used to drive student engagement. This lesson is the perfect opportunity to get students excited about FinTech again!
 
@@ -102,7 +104,7 @@ Navigate to the [Quandle API Overview](https://www.quandl.com/tools/api) page, a
 * Submit Quandl API to get AAPL's stock prices using an internet browser and the link below. Show students the data, and bring attention to the AAPL stock prices in the output.
 
   ```
-  https://www.quandl.com/api/v3/datasets/OPEC/ORB.json
+  https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=<instructor's API key>
   ```
 
   ![quandl_request_output.png](Images/quandl_request_output.png)
@@ -486,7 +488,7 @@ Demonstrate with live code how to use the Python `requests` library, and use the
 * JSON data has to be selected based off levels and hierarchies. For example, some JSON objects are organized by JSON object -> JSON array -> attribute. Some have multiple objects, and others have multiple JSON arrays. Either way, accessing JSON data is just like accessing data in a dictionary. Brackets `[]` are used with **keys** to retrieve values.
 
   ```python
-  # Select country and GDP value for first row
+  # Select country and GDP value for second row
   country = data[1][1]['country']['value']
   gdp_value = data[1][1]['value']
 
@@ -699,7 +701,7 @@ Open the starter file, and live code the following:
 
   ![url_parameters_8.png](Images/url_parameters_8.png)
 
-End the class with a final question:
+Ask the class the following question:
 
 * What kind of parameters should be used when working with financial APIs? One example is dates. What are others? Hint: Think attributes related to people, stocks, bank accounts, credit scores, etc.
 

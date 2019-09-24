@@ -14,8 +14,6 @@ Using the [starter file](Unsolved/Core/indexing_fever.ipynb), complete the follo
 
 4. Select close price for `GOOG` for May 2019 by passing in values for `year` and `month` indices.
 
-5. Identify `GOOG` closing price for 30 days ago using the `time_delta` function. **Hint:** Subtract `timedelta(days=30)` from `date.today()`.
-
 ### Challenge
 
 Take this activity to the next level by calculating the mean close price for `GOOG` for all of `2019`.
@@ -23,8 +21,6 @@ Take this activity to the next level by calculating the mean close price for `GO
 ### Hints
 
 * Additional information about `DatetimeIndex` capabilities can be found [here](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DatetimeIndex.html).
-
-* Information about `timedeltas` can be found [here](https://pandas.pydata.org/pandas-docs/stable/user_guide/timedeltas.html).
 
 ---
 

@@ -1,11 +1,9 @@
-# Unit 8 - Project 1
+# Unit 8—Project 1
 
 ## Overview
 
-The rest of this week is all project work days. Students should work with their groups to complete their projects with the instructional staff rotates between groups to check on their progress and offer assistance.
+The rest of this week is all project work days. Students should work with their groups to complete their projects while the instructional staff rotates between groups to check on their progress and offers assistance.
 
 - - -
 
-### Copyright
-
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

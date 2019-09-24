@@ -27,3 +27,7 @@ Since Quandl has cracked down on the number of API calls users can make to the s
 8. Execute a `GET` request using Python requests library and the newly created request_url.
 
 9. Display content to screen using content attribute.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
