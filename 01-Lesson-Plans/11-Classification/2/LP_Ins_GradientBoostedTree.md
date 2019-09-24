@@ -15,7 +15,8 @@ Open the unsolved file, and live code the following. Make sure to touch upon the
     ```python
     import pandas as pd
     from path import Path
-    from sklearn.preprocessing import LabelEncoder, StandardScaler
+    from sklearn.preprocessing import LabelEncoder
+    from sklearn.preprocessing import StandardScaler
     from sklearn.ensemble import GradientBoostingClassifier
     ```
 
