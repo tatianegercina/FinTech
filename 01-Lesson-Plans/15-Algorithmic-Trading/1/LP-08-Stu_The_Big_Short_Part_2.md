@@ -81,6 +81,6 @@ Open the solution file and review the following:
 
 * Finally, plotting the Short Position Dual Moving Average crossover trading strategy against its backtesting results show that the algorithm would have *made* money by shorting VNQ stock during the 2008 financial crisis and by approximately $6,500 on an initial capital allocation of $100,000. Specifically, the ending portfolio value for the algorithm was $106,587.2295 and results in cumulative returns of 6.5872%.
 
-  ![short-dual-ma-crossover-plot2](Images/short-dual-ma-crossover-plot2.png)
+  ![short-dual-ma-crossover-plot3](Images/short-dual-ma-crossover-plot3.png)
 
   ![short-backtest-results](Images/short-backtest-results.png)
