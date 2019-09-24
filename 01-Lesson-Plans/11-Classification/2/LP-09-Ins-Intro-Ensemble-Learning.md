@@ -28,7 +28,7 @@ Explain to students that **weak learners** are still valuable in machine learnin
 
   * **Answer** Boost **weak learners** with other algorithms for an **ensemble learning** approach.
 
-* Indicate to students that a decision tree can be classified as a **weak learner**. Ask students what they think would make a decision tree a weak learner:
+* Indicate to students that a decision tree could be classified as a **weak learner**. Ask students what they think would make a decision tree a weak learner:
 
   * **Answer** The decision tree having only one split (i.e. a stump)
 
