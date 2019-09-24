@@ -22,6 +22,6 @@ APIs
 
 5. Turn and teach your partner about what you deciphered from the JSON data.
 
-- - -
+---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

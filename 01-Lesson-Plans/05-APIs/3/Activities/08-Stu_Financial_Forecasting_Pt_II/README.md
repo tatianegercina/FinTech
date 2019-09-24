@@ -41,6 +41,6 @@ Almost there! Get ready!
 
 * The basis of this activity is the idea of nested `for` loops for multiple simulations of stock price trajectories, and analyzing the frequency or probability distribution of simulated stock price outcomes to make better and more thoughtful predictions about where `TSLA` stock price could end up.
 
-
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
