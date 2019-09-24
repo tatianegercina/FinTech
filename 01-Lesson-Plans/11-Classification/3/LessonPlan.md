@@ -55,19 +55,19 @@ Walk through the first few blocks of the notebook.
 
 * We created two classes in this data, with two important features. First, one class is much larger than the other. Second, the classes have significant variation, so neither is cleanly distinguishable from the other.
 
-  ![eval_1.png](Images/eval_1.png)
+  ![eval_1.png](Images/eval_1.PNG)
 
 * Using a logistic regression mode, we try to predict the class, purple or yellow, with the coordinates of a point.
 
 Ask a student to help you interpret the output of the confusion matrix. Refer to the slide to reveal the correct answer.
 
-![eval_2png](Images/eval_2.png)
+![eval_2png](Images/eval_2.PNG)
 
 * Looking only at this matrix, it seems that the model does reasonably well. While there are some false positives, the vast majority of data points are classified correctly.
 
 Move on to the next block, and ask a student to define the three metrics that are shown here. Once again, refer to the slide to confirm the student's answers.
 
-![eval_3png](Images/eval_2.png)
+![eval_3png](Images/eval_2.PNG)
 
 * Precision is the proportion of predicted positives that are accurate. Recall is the proportion of actual positive that were predicted as positive. The F1 metric is a blended average of the two.
 
@@ -81,7 +81,7 @@ In this activity, students will discuss the relative importance of false positiv
 
 **Instructions:**
 
-* [README.md](Activities/02-Stu_Hypothetical_models/README.md)
+* [README.md](Activities/02-Stu_Do_Hypothetical_Models/README.md)
 
 ### 4. Instructor Do: Review Hypothetical Models (10 min)
 
@@ -341,17 +341,17 @@ Pause for questions, then continue on to the notebook.
 
 Logistic Regression:
 
-![pr_2.png](Images/pr_2.png)
+![pr_2.png](Images/pr_2.PNG)
 
 Balanced Random Forest:
 
-![pr_3.png](Images/pr_3.png)
+![pr_3.png](Images/pr_3.PNG)
 
 * At the default threshold, it looks like the two models perform similarly. However, depending on the relative cost of positive and false negatives, we might want to change the threshold. This is when a precision-recall curve becomes useful.
 
 * The PR curve below shows that the random forest classifier outperforms the logistic regression model at almost all thresholds.
 
-![pr_1.png](Images/pr_1.png)
+![pr_1.png](Images/pr_1.PNG)
 
 ### 17. Students Do: Credit Card Fraud (15 min)
 
