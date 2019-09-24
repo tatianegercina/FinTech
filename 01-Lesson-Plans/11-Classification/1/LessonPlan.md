@@ -237,6 +237,16 @@ After presenting the slideshow, open the Jupyter notebook and complete a dry wal
 
     ![make-blobs.png](Images/make-blobs.png)
 
+* Highlight to students that the `random_state` parameter is used to preserve the state of the output from `make_blobs`. The value passed to `random_state` serves as a numerical bookmark for the data set returned from `make_blobs`. The goal is to produce the same data set no matter how many times the code is re-ran. If `random_state` is not preserved, `make_blobs` would generate a new random data set each time it's executed.
+
+  * Reassure students that the `random_state` argument will not prevent the `make_blobs` function from creating a randomized data set. It just ensures that if you want to retrieve that same randomized data set, you can (using the parameter provided, e.g. 42).
+
+  * This means that `X` and `y` will always be the same value as long as `random_state=42` is provided.
+
+  * Emphasize that this helps ensure the same data set is used to train the model, even if the `make_blobs` function is re-executed.
+
+  * Underscore that if `random_state` is not provided, a new randomized data set will be output everytime the process is ran.
+
 * Depending on time, further explain that the process of clustering data points into classes/groups is called **centering**.
 
   * Explain to students that **centering** is a a part of the pre-process step of advanced analytics that helps dictate the number of classes/groups to create. **Centering** improves the performance of logistic regression models by ensuring that all data points share the same starting mean value. Data points with the same starting mean value are clustered together.
@@ -379,11 +389,14 @@ Open the solution and complete a dry walk through of the solution . Answer any q
   ```python
   # Use the LogisticRegression module from the sklearn package to create a model
   from sklearn.linear_model import LogisticRegression
-  classifier = LogisticRegression(random_state=1)
+  classifier = LogisticRegression(solver='lbfgs',
+                                  random_state=1)
   classifier
   ```
 
   ![create_lr_model.png](Images/create_lr_model.png)
+
+* The `LogisticRegression` module supports a number of optimization algorithms for processing, **lbfgs** being just one. The **solver** helps optimize learning and computation.
 
 * Once a model is created, it has to be trained. After training, the model can be scored, and it can then be used to make predictions for new data points.
 
@@ -397,7 +410,8 @@ Open the solution and complete a dry walk through of the solution . Answer any q
 
   # Make predictions
   predictions = classifier.predict(X_test)
-  results = pd.DataFrame({"Prediction": predictions, "Actual": y_test}).reset_index(drop=True)
+  results = pd.DataFrame({"Prediction": predictions,
+                        "Actual": y_test}).reset_index(drop=True)
   results
   ```
 
@@ -449,11 +463,7 @@ Ask if there are any questions before moving on.
 
 The instructor provides a formal lecture explaining to students what accuracy, precision, and recall is in relation to logistic regression models, as well as how to measure each metric.
 
-**Files**
-
-* [Slides]()
-
-Navigate to the 11.1 slides, and highlight the following:
+Navigate to the 11.1 slides section on accuracy, precision, and recall; and highlight the following:
 
 * Explain to students that **accuracy**, **precision**, and **recall** are especially important for **classification** models, which a **binary decision problem**. **Binary decision problems** have two possible correct answers: **True Positive** and **True Negative**.
 
@@ -723,7 +733,9 @@ Open the slideshow to the SVM section, and highlight the following:
 
 Educate students on the different orientations for **hyperplanes**. Provide understanding on how the orientation and position of the hyperplane is decided.
 
-![hyperplane_orientation.png](Images/hyperplane_orientation.png])
+![hyperplane_orientation.png](Images/hyperplane_orientation.png)
+
+Image retrieved from [here](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwjgoJK8mejkAhUtHTQIHeLoAFwQjRx6BAgBEAQ&url=https%3A%2F%2Ftowardsdatascience.com%2Fsupport-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47&psig=AOvVaw2DyashN0tUrStoJsPeA1Sg&ust=1569371203289268)
 
 * Hyperplanes can be 2D, clearly delineating classes with non-overlapping data points or outliers.
 
@@ -853,7 +865,7 @@ Now that the pre-existing data has been visualized into the corresponding classe
     predictions = model.predict(X_test)
     ```
 
-    ![predictions.png](Images/predictions.png)
+  ![predictions.png](Images/predictions.png)
 
 * The predictions can then be evaluated using **sklearn's** classification report. As made clear by the precision, recall, and f-1 metrics, the model performed well.
 
