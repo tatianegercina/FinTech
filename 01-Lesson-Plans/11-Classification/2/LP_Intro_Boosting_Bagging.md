@@ -18,6 +18,8 @@ Navigate to the **boosting** and **bagging** section of the slideshow. Highlight
 
     * Photo retrieved from [here](https://www.educba.com/boosting-algorithm/). Needs to be recreated.
 
+  * **Boosting** algorithms are so powerful and performant that they've been stealing the spotlight at Kaggle machine learning algorithms competitions. **Boosting** algorithms like XGBoost have consistently outperformed other algorithms in competitions, on multiple occasions. XGBoost's success has put **boosting** algorithms in the spotlight.
+
 Highlight to students that **boosting** is not the only way to make a **weak learner** more robust and accurate. Another approach is called **bagging**.
 
 * **Bagging** is another method used to improve the accuracy and robustness of a model.
