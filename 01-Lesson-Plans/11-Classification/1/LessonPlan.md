@@ -196,12 +196,6 @@ If time remains, let students know there's time for one question.
 
 Having been introduced to classification, students will now receive a demonstration of how to use logistic regression to make linear predictions for categorical outcomes. This demo will contain two parts: a brief explanation of preprocessing and a more in-depth explanation of model fitting and execution.
 
-**Files:**
-
-[logistic_regression.pptx](Activities/01-Ins_Logistic_Regression/logistic_regression.pptx)
-
-[Ins_Logistic_Regression.ipynb](Activities/01-Ins_Logistic_Regression/Solved/Ins_Logistic_Regression.ipynb)
-
 Walk through the slideshow and highlight the following points:
 
 * Communicate that Logistic Regression is a statistical method for predicting binary outcomes from data. With linear regression, our linear model may provide a numerical output such as age. With logistic regression, the numerical value for age could be translated to a probability between 0 and 1. This discrete output could then be labeled as "young" vs "old". The same approach can be used to predict the probability of credit worthiness based off of credit score, number of missed payments, number of public records, and credit age.
@@ -910,9 +904,9 @@ Ask for any questions before moving forward.
 
 Students are asked to update their loan approver with an SVM model and rerun the evaluation metrics. Students will then compare the performance of the SVM model with the Logistic Regression model.
 
-**Instructions:** [README.md](Activities/07_Stu_SVM_Loan_Approver/README.md)
+**Instructions:** [README.md](Activities/07-Stu-SVM_Loan_Approver/README.md)
 
-**Files:** [svm_loan_approver.ipynb](Activities/07_Stu_SVM_Loan_Approver/Unsolved/svm_loan_approver.ipynb)
+**Files:** [svm_loan_approver.ipynb](Activities/07-Stu-SVM_Loan_Approver/Unsolved/svm_loan_approver.ipynb)
 
 ---
 
@@ -922,7 +916,7 @@ The instructor leads a dry walk through of the previous activity.
 
 **Files:**
 
-* [ssvm_loan_approver.ipynb](Activities/07-Stu_SVM_Loan_Approver/Solved/svm_loan_approver.ipynb)
+* [ssvm_loan_approver.ipynb](Activities/07-Stu-SVM_Loan_Approver/Solved/svm_loan_approver.ipynb)
 
 Open the solution and explain the following:
 
