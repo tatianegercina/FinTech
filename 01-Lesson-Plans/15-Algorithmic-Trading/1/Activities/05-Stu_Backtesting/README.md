@@ -10,35 +10,29 @@ You completed this in the last activity, nice job!
 
 ## Part 2 Instructions: The Big Short Part II
 
+The pre-requisite steps for developing the Short Position Dual Moving Average Crossover trading strategy have already been provided for you. Therefore, continue onwards to the backtesting parts of the notebook file.
+
 Using the [starter file](Unsolved/the_big_short_part_2.ipynb.ipynb), complete the following steps:
 
-1. Import the `pandas`, `numpy`, `matplotlib`, and `pathlib` libraries. Optionally, set the pandas DataFrame settings to display more rows and columns.
+1. Set an `initial_capital` variable to 100000, representing the simulated starting portfolio value.
 
-2. Create a DataFrame by reading in the `vnq.csv` file containing stock data for VNQ from 2007 to 2009.
+2. Set a negative `share_size` value of -500.
 
-3. Create a Dual Moving Average Crossover Trading Signal that indicates shorting opportunities.
+3. Create a new column `Position` by multiplying the `share_size` by the values in the `Signal` column.
 
-    1. Create a filtered DataFrame containing just the `Date` and `Close` columns of the VNQ stock data.
+4. Create a new column `Entry/Exit Position` by using the `diff` function on the `Position` column.
 
-    2. Set the `Date` column as the index to the DataFrame and convert the datetime strings to datetime objects.
+5. Create a new column `Portfolio Holdings` by multiplying the `Close` prices of VNQ by the cumulative sum of the values of the `Entry/Exit Position` column.
 
-    3. Set a `short_window` and `long_window` to `50` and `100`, respectively.
+6. Create a new column `Portfolio Cash` by subtracting the `initial_capital` by cumulative sum of the product of the `Close` prices of VNQ and the values of the `Entry/Exit Position` column.
 
-    4. Create a 50-day moving average and a 100-day moving average from the VNQ closing prices using the `rolling` and `mean` functions.
+7. Create a new column `Portfolio Total` by adding the values of the `Portfolio Cash` and `Portfolio Holdings` columns.
 
-    5. Initialize a new DataFrame column `Signal` and set the values to 0.
+8. Create a new column `Portfolio Daily Returns` by using the `pct_change` function on the `Portfolio Total` column.
 
-    6. Use the numpy `where` function to specify that when the short window MA is less than the long window MA, set the value to the `Signal` column as 1 or 0, respectively.
+9. Create a new column `Portfolio Cumulative Returns` by using the `cum_prod` function on the `Portfolio Daily Returns` column.
 
-    7. Use the `diff` function on the `Signal` column and assign the values to a `Entry/Exit` column to indicate trade entry and exit points in time.
-
-4. Plot the entry and exit points of your Short Dual Moving Average Crossover signal.
-
-    1. Use the `figure` and `axes` objects from the matplotlib library to create the figure layout and the x and y coordinates, respectively.
-
-    2. Plot the VNQ closing prices as well as the 50-day moving average and 100-day moving average.
-
-    3. Plot the entry and exit points and mark the coordinates with marker symbols.
+10. Use the `figure` and `axes` objects of the `matplotlib` library to plot the Short Position Dual Moving Average Crossover trading strategy against its backtesting results.
 
 ## Hint
 
