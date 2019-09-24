@@ -14,13 +14,15 @@ Open the lesson slides, go to the _Walking into the Algorithms Forest_ section a
 
 Explain to students that in linear models, the relationship among input variables can be represented as a straight line, while non-linear models have a different shape.
 
-* Predicting the price of an stock is an example of a linear problem.
+Underline how a linear model that is fit to a non-linear dataset, would only be good part of the time and have huge errors the rest of the time due to non-linear data follows a different pattern.
 
-* Predicting if a credit applications is going to be fraudulent or not, is an example of a non-linear problem.
+* Predicting the price of a house based on its size is an example of a linear problem.
 
-* The most used tree based algorithms are decision trees, random forest and gradient boosting trees.
+* Predicting if a credit applications is going to be fraudulent or not is an example of a non-linear problem.
 
-* `sklearn` has two modules that implement tree based algorithms.
+Comment to students that the most used tree based algorithms are: decision trees, random forest, and gradient boosting trees.
+
+* `sklearn` has two modules that implement tree based algorithms that we will be covering Today.
 
   * [`sklearn.tree`](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.tree) implements decision trees.
 
