@@ -4,36 +4,6 @@ Students are given a formal lecture on **boosting**, **bagging**, its benefits, 
 
 Navigate to the **boosting** and **bagging** section of the slideshow. Highlight the following:
 
-* Address the class and tell them that if they were to take all of the classification models they've used so far and compared them, they'd find that some algorithms performed better than others, as expected.
-
-  * Indicate that even though some of the other algorithms performed worse, they were able to still execute independently and classify labels with decent accuracy.
-
-  * Explain to students that they will come across algorithms that actually fail at learning in an adequate fashion. These algorithms/classifiers are considered **weak learners**.
-
-Communicate that **weak learners** are a consequence of limited data to learn from. This may mean too few features or the data provided doesn't allow for data points to be classified.
-
-* Provide more context around **weak learners** by defining them as algorithms/classifiers that are unable to accurately learn from the data they are being provided. This is why their predictions are only a little better than random chance. The classifiers can make predictions; however, their predictions are not representative of the relationship between inputs and target.
-
-* **Weak learners** are described as being only slightly better than random chance.
-
-Explain to students that **weak learners** are still valuable in machine learning. This is where **boosting** and **bagging** comes in.
-
-* **Weak learners** are valuable because they can be combined with other classifiers in order to make a more accurate and robust prediction engine. A single **weak learner** will make inaccurate and imprecise predictions. Combined **weak learners** can perform just as well as any other **strong learner**.
-
-  * Classify this type of learning as an example of **ensemble learning**. **Ensemble models** help improve accuracy and robustness, as well as decrease variance.
-
-* Underscore that **weak learners** have to be combined using a specific algorithm. Example algorithms include **GradientBoostedTree** and **GXBoost**.
-
-* Ask students if they have any guess as to what can be done to make a **weak learner** perform more accurately?
-
-  * **Answer** Boost **weak learners** with other algorithms for an **ensemble learning** approach.
-
-* Indicate to students that a decision tree can be classified as a **weak learner**. Ask students what they think would make a decision tree a weak learner:
-
-  * **Answer** The decision tree having only one split (i.e. a stump)
-
-Transition into explaining to students what boosting is and how it benefits machine learning algorithms.
-
 * **Boosting** is both a process and set of algorithms. Boosting is the process of combining a set of **weak learners** into a **strong longer**.
 
   * **Boosting** algorithms work by taking the predictions of each **weak learner** and aggregating them to produce a more accurate and precise prediction. The goal goal of a boosting algorithm is to combine **weak learners** into **ensemble learners**.
@@ -44,9 +14,11 @@ Transition into explaining to students what boosting is and how it benefits mach
 
     * Other algorithms (i.e. **bagging**) create new base learners as older ones prove ineffective.
 
-    ![boosting_flow.jpg](IMages/boosting_flow.jpg)
+    ![boosting_flow.jpg](Images/boosting_flow.jpg)
 
     * Photo retrieved from [here](https://www.educba.com/boosting-algorithm/). Needs to be recreated.
+
+  * **Boosting** algorithms are so powerful and performant that they've been stealing the spotlight at Kaggle machine learning algorithms competitions. **Boosting** algorithms like XGBoost have consistently outperformed other algorithms in competitions, on multiple occasions. XGBoost's success has put **boosting** algorithms in the spotlight.
 
 Highlight to students that **boosting** is not the only way to make a **weak learner** more robust and accurate. Another approach is called **bagging**.
 
