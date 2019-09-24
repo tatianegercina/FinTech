@@ -19,6 +19,8 @@ In this assignment, you will build and evaluate several machine learning models 
 
 [Ensemble Starter Notebook](Starter_Code/credit_risk_ensemble.ipynb)
 
+[Lending Club Loans Data](Instructions/Resources/LoanStats_2019Q1.csv.zip)
+
 - - -
 
 ### Instructions
@@ -54,7 +56,7 @@ In this section, you will train and compare two different ensemble classifiers t
 
 Be sure to complete the following steps for each model:
 
-1. Train the model using the latest quarterly data from Lending Club.
+1. Train the model using the quarterly data from Lending Club provided in the `Resources` folder.
 2. Calculate the balanced accuracy score from `sklearn.metrics`.
 3. Print the confusion matrix from `sklearn.metrics`.
 4. Generate a classification report using the `imbalanced_classification_report` from imbalanced-learn.
@@ -72,15 +74,9 @@ Use the above to answer the following:
 
 - - -
 
-### Resources
-
-[2019 Q1 Loan Data](https://www.lendingclub.com/info/download-data.action)
-
-- - -
-
 ### Hints and Considerations
 
-Select the latest quarterly data from the Lending Club data. Keep the file in the zipped format and use the starter code to read the file.
+Use the quarterly data from the Lending Club data that is provided in the `Resources` folder. Keep the file in the zipped format and use the starter code to read the file.
 
 Refer to the [imbalanced-learn](https://imbalanced-learn.readthedocs.io/en/stable/) and [scikit-learn](https://scikit-learn.org/stable/) official documentation for help with training the models. Remember that these models all use the model->fit->predict API.
 
