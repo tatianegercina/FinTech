@@ -1,47 +1,70 @@
-### 8. Student Do: The Big Short (15 mins)
+### 8. Student Do: The Big Short Part II (15 mins)
 
-In this activity, students will take what they've learned about generating trading signals and implementing a corresponding trading strategy, and instead now perform the inverse: create a trading strategy that profits off of price declines by shorting (selling) and covering (buying) the stock.
+In this activity, students will now take the Short Position Dual Moving Average Crossover trading strategy they made in the previous student activity and now run a backtest to quantify the performance of their trading strategy.
 
 **Files:**
 
-* [the_big_short.ipynb](Activities/03-Stu_Trading_Signals/Unsolved/the_big_short.ipynb)
+* [the_big_short.ipynb](Activities/05-Stu_Backtesting/Unsolved/the_big_short_part_2.ipynb)
 
-* [vnq.csv](Activities/03-Stu_Trading_Signals/Resources/vnq.csv)
+* [vnq.csv](Activities/05-Stu_Backtesting/Resources/vnq.csv)
 
-**Instructions:** [README.md](Activities/03-Stu_Trading_Signals/README.md)
+**Instructions:** [README.md](Activities/05-Stu_Backtesting/README.md)
 
 ---
 
-### 9. Instructor Do: The Big Short Review (10 mins)
+### 9. Instructor Do: The Big Short Part II Review (10 mins)
 
-**File:** [the_big_short.ipynb](Activities/03-Stu_Trading_Signals/Solved/the_big_short.ipynb)
+**File:** [the_big_short.ipynb](Activities/03-Backtesting/Solved/the_big_short_part_2.ipynb)
 
 Open the solution file and review the following:
 
-* Be mindful when dealing with time series data, it is sometimes important to view the entirety of the data in the DataFrame. Therefore, using the pandas `set_option` function allows users to extend the maximum rows and columns a Pandas DataFrame will display.
+* The plot of the Short Position Dual Moving Average Crossover trading strategy showed that it was possible to *make* money from shorting VNQ (a real estate ETF) stock during the financial recession in 2008. Now, through backtesting the particular strategy, we will be able to see *how much* money can be made.
+
+* Because short positions involve selling shares and then buying them back later, the `share_size` should be a negative number rather than a positive number.
 
   ```python
-  pd.set_option('display.max_rows', 2000)
-  pd.set_option('display.max_columns', 2000)
-  pd.set_option('display.width', 1000)
+  share_size = -500
   ```
 
-* Generating a short position dual moving average crossover trading signal involves calculating a short window rolling moving average and a long window rolling moving average of closing prices, defining logic for an active trade signal as 1 when the short MA crosses under the long MA and 0 when the short MA crosses above the long MA, and calculating the points at which a entry or exit position should be made as 1 or -1.
-
-  ![short-dual-ma-crossover](Images/short-dual-ma-crossover.png)
-
-* Similar to a long position dual moving average crossover trading signal, the `where` function defines the logic for when a short moving average is less than the long moving average, issue a value of 1; when a short moving average is greater than the long moving average, issue a value of 0. Values are assigned to data points starting from an offset equal to the length of the short moving average window, as moving average calculations will be null prior to that point (not enough data points to perform the rolling mean calculation).
+* As a result of the negative `share_size` number, the following calculations show that an active share size position will be defined as -500, and that entry and exit positions in the short trading strategy will involve selling shares (a negative number) followed by purchasing shares (a positive number).
 
   ```python
-  signals_df['Signal'][short_window:] = np.where(signals_df['SMA50'][short_window:] < signals_df['SMA100'][short_window:], 1.0, 0.0)
+  # Take a 500 share position where the dual moving average crossover is 1 (SMA50 is greater than SMA100)
+  signals_df['Position'] = share_size * signals_df['Signal']
+
+  # Find the points in time where a 500 share position is bought or sold
+  signals_df['Entry/Exit Position'] = signals_df['Position'].diff()
   ```
 
-* The `diff` function calculates the difference in active vs. non-active trading periods suggested by the short position trading signal, 1 or 0. Therefore, values defined for specific entry and exit points become 1 or -1.
+* The calculations for portfolio holdings and show that as the stock price decreases, the value of the portfolio holdings increase (become less negative).
 
-  ![short-entry.png](Images/short-entry.png)
+  ```python
+  # Multiply share price by entry/exit positions and get the cumulatively sum
+  signals_df['Portfolio Holdings'] = signals_df['Close'] * signals_df['Entry/Exit Position'].cumsum()
+  ```
 
-  ![short-exit.png](Images/short-exit.png)
+* When shorting a stock, it is beneficial to sell the stock at a high price and buy (or cover as they say in the industry) the shares at a low price, resulting in a positive differential. This is why the portfolio cash increases when the algorithm shorts VNQ stock at a high and covers the shares at a low.
 
-* Plotting the closing prices of VNQ, a 50-day moving average, and a 100-day moving average overlaid with marker symbols indicating short position entry and exit trades shows that if you had an algorithm utilizing a short position dual moving average crossover strategy during the 2008 recession, you would have *made* money rather than *lose* money like most other investors during that time.
+  ```python
+  # Subtract the initial capital by the portfolio holdings to get the amount of liquid cash in the portfolio
+  signals_df['Portfolio Cash'] = initial_capital - (signals_df['Close'] * signals_df['Entry/Exit Position']).cumsum()
+  ```
 
-  ![short-dual-ma-crossover-plot](Images/short-dual-ma-crossover-plot.png)
+* After calculating the portfolio holdings and portfolio cash, calculating the total portfolio value is as simple as adding the portfolio holdings and portfolio cash together.
+
+  ```python
+  # Get the total portfolio value by adding the cash amount by the portfolio holdings (or investments)
+  signals_df['Portfolio Total'] = signals_df['Portfolio Cash'] + signals_df['Portfolio Holdings']
+  ```
+
+* The portfolio daily returns can then be calculated using the `pct_change` function on the total portfolio value, while the portfolio cumulative returns can then be calculated using the resulting portfolio daily returns and the `cumprod` function.
+
+  ```python
+  # Calculate the portfolio daily returns
+  signals_df['Portfolio Daily Returns'] = signals_df['Portfolio Total'].pct_change()
+
+  # Calculate the cumulative returns
+  signals_df['Portfolio Cumulative Returns'] = (1 + signals_df['Portfolio Daily Returns']).cumprod() - 1
+  ```
+
+* Finally, plotting the Short Position Dual Moving Average crossover trading strategy against its backtesting results show that the algorithm would have *made* money by shorting VNQ stock during the 2008 financial crisis and by approximately $6,500 on an initial capital allocation of $100,000. Specifically, the ending portfolio value for the algorithm was $106,587.2295 and results in cumulative returns of 6.5872%.
