@@ -4,15 +4,17 @@ This guide serves as a step by step process for setting up and validating the to
 
 This guide will include installation and verification steps for the following technologies:
 
-* Imbalanced-learn
+* [Imbalanced-learn](#Imbalanced-learn)
+
+* [PyDotPlus](#PyDotPlus)
 
 ## Imbalanced-learn
 
 ### Install
 
-The `imbalanced-learn` package has several dependencies which should already be installed in the default conda environment. Please refer to the troubleshooting section for details about this environment.
+The `imbalanced-learn` package has several dependencies which should already be installed in the default conda environment. Please refer to the [troubleshooting](#Troubleshooting) section for details about this environment.
 
-Open the a terminal, and execute the following command to install `imbalanced-learn`.
+Open the terminal, and execute the following command to install `imbalanced-learn`.
 
 * Use the `conda install` command to download the `imbalanced-learn` module.
 
@@ -29,14 +31,40 @@ Once the `imbalanced-learn` download is complete, verify the installation comple
 * Use the `conda-list` function with a `grep` argument to identify if the `imbalanced-learn` library installed successfully.
 
   ```shell
-  conda-list | grep imbalanced-learn
+  conda list | grep imbalanced-learn
   ```
 
-### Troubleshooting
+  ![Verify imbalanced-learn installation](Images/imbalanced_learn_verify.png)
+
+## PyDotPlus
+
+The `pydotplus` package is used to create a visual representation of decision trees.
+
+### Install
+
+Open the terminal, and execute the following command to install `pydotplus`.
+
+```shell
+conda install -c conda-forge pydotplus
+```
+
+### Verify Installation
+
+Once the `pydotplus` download is complete, verify the installation completed successfully.
+
+* Use the `conda-list` function with a `grep` argument to identify if the `pydotplus` library installed successfully.
+
+  ```shell
+  conda list | grep pydotplus
+  ```
+
+  ![Verify pydotplus installation](Images/pydotplus-verify.png)
+
+## Troubleshooting
 
 It can be frustrating when packages do not install correctly. Use the below approaches to troubleshoot installation issues and get your machine learning libraries up and running!
 
-#### Imbalanced-learn Installation Prerequisites
+### Imbalanced-learn Installation Prerequisites
 
 In order to install the `imbalanced-learn` package, all of the dependencies must be satisfied. These dependencies come packaged with every Anaconda install/distribution. The dependencies list can be found below for reference.
 
@@ -50,7 +78,7 @@ In order to install the `imbalanced-learn` package, all of the dependencies must
 
 * Tensorflow (optional)
 
-#### Update Conda Environment
+### Update Conda Environment
 
 An out-of-date Anaconda environment can create issues when trying to install new packages. Follow the below steps to update your conda environment.
 
@@ -86,9 +114,9 @@ An out-of-date Anaconda environment can create issues when trying to install new
 
 Consult the [imbalanced-learn](https://imbalanced-learn.readthedocs.io/en/stable/) documentation for additional information about the **imbalanced-learn** library.
 
-#### Anaconda is not Running!
+### Anaconda is not Running!
 
-If you have issues running or updating anaconda, you can check if the package is correctly installed by running the following command on your terminal.
+If you have issues running or updating anaconda, you can check if the package is correctly installed by running the following command in your terminal.
 
 ```shell
 conda list | grep anaconda
