@@ -1,18 +1,18 @@
-# Students Do: Predicting Fraudulent Credit Card Transactions
+# Students Do: Predicting Fraudulent Loans Applications
 
 According to the American Bankers Association, [_"every dollar of fraud now costs banks and credit unions roughly $2.92"_](https://www.aba.com/member-tools/industry-solutions/insights/state-card-fraud-2018), that's a reason why predicting fraud using machine learning techniques becomes a [broad area of research](https://scholar.google.com.mx/scholar?q=fraud+detection+machine+learning&btnG=&oq=fraud+detection+) and a great [business opportunity for FinTech startups](https://www.eu-startups.com/2019/06/paris-based-fintech-bleckwen-raises-e8-8-million-for-its-fraud-detection-software-to-prevent-financial-crime/).
 
-In this activity, you are going to explore how tree based algorithms can be used to identify fraudulent credit card transactions. You will start using a decision tree model, that will be trained with the `transactions_data_encoded.csv` file that you created before.
+In this activity, you are going to explore how tree based algorithms can be used to identify fraudulent loan applications. You will start using a decision tree model, that will be trained with the `sba_loans_encoded.csv` file that you created before.
 
 ## Instructions
 
 ### Loading and Preprocessing Loans Encoded Data
 
-1. Load the `transactions_data_encoded.csv` in a pandas DataFrame called `df_transactions`.
+1. Load the `sba_loans_encoded.csv` in a pandas DataFrame called `df_loans`.
 
-2. Define the features set, by copying the `df_transactions` DataFrame and dropping the `isFraud` column.
+2. Define the features set, by copying the `df_loans` DataFrame and dropping the `Default` column.
 
-3. Create the target vector by assigning the values of the `isFraud` column from the `df_transactions` DataFrame.
+3. Create the target vector by assigning the values of the `Default` column from the `df_loans` DataFrame.
 
 4. Split the data into training and testing sets.
 
@@ -38,4 +38,4 @@ In this activity, you are going to explore how tree based algorithms can be used
 
 10. Finally, analyze the model's evaluation results and answer the following question.
 
-    * Would you trust in this model to deploy a fraud detection solution in a bank?
+    * Would you trust in this model to deploy a loans application approval solution in a bank?
