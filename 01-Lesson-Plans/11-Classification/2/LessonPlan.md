@@ -254,6 +254,8 @@ In this activity, students are tasked to encode some categorical and text featur
 
 * [encoding-categorical-data.ipynb](Activities/02-Stu_Categorical_Data/Unsolved/encoding-categorical-data.ipynb)
 
+* [sba_loans.csv](Activities/02-Stu_Categorical_Data/Resources/sba_loans.csv)
+
 ---
 
 ### 4. Instructor Do: Review Encoding Categorical Data for Machine Learning (10 min)
@@ -492,9 +494,9 @@ Answer any questions before moving on.
 
 ---
 
-### 7. Students Do: Predicting Fraudulent Credit Card Transactions (10 min)
+### 7. Students Do: Predicting Fraudulent Loans Applications (10 min)
 
-In this activity, students will create a decision tree model to predict fraudulent credit card transactions.
+In this activity, students will create a decision tree model to predict fraudulent loan applications.
 
 **Instructions:**
 
@@ -504,11 +506,11 @@ In this activity, students will create a decision tree model to predict fraudule
 
 * [preventing-fraud.ipynb](Activities/04-Stu_Predicting_Fraud/Unsolved/preventing-fraud.ipynb)
 
-* [transactions_data_encoded.csv](Activities/04-Stu_Predicting_Fraud/Resources/transactions_data_encoded.csv)
+* [sba_loans_encoded.csv](Activities/04-Stu_Predicting_Fraud/Resources/sba_loans_encoded.csv)
 
 ---
 
-### 8. Instructor Do: Review Predicting Fraudulent Credit Card Transactions (10 min)
+### 8. Instructor Do: Review Predicting Fraudulent Loans Applications (10 min)
 
 **Files:**
 
@@ -529,22 +531,22 @@ Open the solution, and live code the review by highlighting the following:
   from IPython.display import Image
   ```
 
-* The data from the `transactions_data_encoded.csv` file is loaded in a pandas DataFrame called `df_transactions`.
+* The data from the `sba_loans_encoded.csv` file is loaded in a pandas DataFrame called `df_loans`.
 
   ```python
-  file_path = Path("../Resources/transactions_data_encoded.csv")
-  df_transactions = pd.read_csv(file_path)
+  file_path = Path("../Resources/sba_loans_encoded.csv")
+  df_loans = pd.read_csv(file_path)
   ```
 
 * After loading the data, the features and target sets are defined.
 
   ```python
   # Define features set
-  X = df_transactions.copy()
-  X.drop("isFraud", axis=1, inplace=True)
+  X = df_loans.copy()
+  X.drop("Default", axis=1, inplace=True)
 
   # Define target vector
-  y = df_transactions["isFraud"].values.reshape(-1, 1)
+  y = df_loans["Default"].values.reshape(-1, 1)
   ```
 
 * The data is split into training and testing set using the `train_test_split` method from `sklearn`.
@@ -590,7 +592,7 @@ Recall to students that the target data is not scaled since it contains the clas
 
   ![Model's evaluation results](Images/preventing_fraud_review_1.png)
 
-Explain to students that despite model's high accuracy, this model is not precisely predicting the fraudulent transactions as can be seen from the precision and recall values. This is why it is important to include the classification report when evaluating a classification model.
+Explain to students that despite model's high accuracy, this model is not predicting all the fraudulent loan applications as can be seen from the precision and recall values. This is why it is important to include the classification report when evaluating a classification model.
 
 Continue live coding the review by creating the model graph using the `pydotplus` library and highlight the following.
 
@@ -616,6 +618,8 @@ Image(graph.create_png())
 * Having imbalanced target classes is a common problem in classification machine learning algorithms when there are a disproportionate ratio of observations in each class.
 
 Explain to students that they will learn how to deal with imbalanced classes in next class, and that there are other tree algorithms such as ensemble learners that can be better at modeling imbalanced classes.
+
+Answer any questions before moving on.
 
 ---
 
