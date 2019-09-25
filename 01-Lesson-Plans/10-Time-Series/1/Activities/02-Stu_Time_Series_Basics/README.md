@@ -10,9 +10,9 @@ In this activity, you will accomplish the following tasks:
   
 ### Slice Time Series Data
 
-* Select all rows from September, 2018.
+* Select all rows from September 2018.
 
-* Select all rows from September, 2018 through October.
+* Select all rows from September 2018 through October.
   
 ### Plot Time Series Data
   
@@ -20,7 +20,7 @@ In this activity, you will accomplish the following tasks:
   
 ### Resample Time Series Data
 
-* Resample the dat and plot the weekly average of the closing price.
+* Resample the date and plot the weekly average of the closing price.
 
 ## Optional Challenge
 
