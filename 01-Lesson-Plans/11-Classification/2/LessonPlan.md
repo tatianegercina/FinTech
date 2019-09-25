@@ -244,7 +244,7 @@ Answer any questions before moving on.
 
 ### 3. Student Do: Encoding Categorical Data for Machine Learning (10 min)
 
-In this activity, students are tasked to encode some categorical and text features of a fictional dataset that contains 100,000 credit card transactions. In forthcoming activities, students will use this dataset to predict fraudulent transactions.
+In this activity, students are tasked to encode some categorical and text features of a dataset that contains `2097` loans applications. In forthcoming activities, they will use this dataset to predict defaulted loan applications.
 
 **Instructions:**
 
@@ -264,32 +264,42 @@ In this activity, students are tasked to encode some categorical and text featur
 
 Walk through the solution and highlight the following:
 
-* After loading the data into the `transactions_df` DataFrame, the `date` column needs to converted to `datetime` using Pandas.
+* To encode the `Month` column, a dictionary that maps months' names with their numerical values is created using the `month_name` method from the `calendar` module.
+
+  ![Months dic](Images/months-dic.png)
+
+* The `Month` column is encoded using a `lambda` function that looks for the dictionary's values using the month number as key.
 
   ```python
-  transactions_df["date"] = pd.to_datetime(transactions_df["date"])
+  loans_df["Month"] = loans_df["Month"].apply(lambda x: name_to_num[x])
   ```
 
-* The `LabelEncoder´ from `sklearn` is used to encode the `type` column, following the Model -> Fit -> Predict/Transform API workflow.
+* The `LabelEncoder´ from `sklearn` is used to encode the `RealEstate`, `RevLineCr` and `UrbanRural` columns, following the Model -> Fit -> Predict/Transform API workflow.
 
   ```python
   # Create the LabelEncoder instance
   le = LabelEncoder()
 
-  # Fitting the LabelEncoder
-  le.fit(transactions_df["type"])
+  # Fitting and encoding the columns with the LabelEncoder
 
-  # Encoding type column
-  transactions_df["type"] = le.transform(transactions_df["type"])
+  # RealEstate column
+  le.fit(loans_df["RealEstate"])
+  loans_df["RealEstate"] = le.transform(loans_df["RealEstate"])
+
+  # Encoding RevLineCr column
+  le.fit(loans_df["RevLineCr"])
+  loans_df["RevLineCr"] = le.transform(loans_df["RevLineCr"])
+
+  # Encoding UrbanRural column
+  le.fit(loans_df["UrbanRural"])
+  loans_df["UrbanRural"] = le.transform(loans_df["UrbanRural"])
   ```
 
-* The `gender` and `merchant` columns, are binary encoded using the Pandas `get_dummies()` function. This will increase the number of columns in the DataFrame up to `3254` columns.
+* The the `Bank`, `State` and `City` columns, are binary encoded using the Pandas `get_dummies()` function. This will increase the number of columns in the DataFrame up to `684` columns.
 
   ![Binary Encoding sample](Images/encoding-categorical-1.png)
 
-* The unecessary columns such `date` and `cardholder` columns can simply be dropped.
-
-* Finally, the preprocessed DataFrame is saved as a `CSV` file named `transactions_data_encoded.csv` for forthcoming usage.
+* Finally, the preprocessed DataFrame is saved as a `CSV` file named `sba_loans_encoded.csv` for forthcoming usage.
 
 Answer any questions before moving on.
 
