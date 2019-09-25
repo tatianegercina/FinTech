@@ -1,10 +1,10 @@
-## 11.2 Lesson Plan: Trees and Regression
+## 11.2 Lesson Plan: Trees and Ensemble Learning
 
 ---
 
 ### Overview
 
-By the end of Today's class, students will recognize the benefits of using tree based algorithms for classifications problems, also students will gain hands on experience with random forests and ensemble methods such as bagging and boosting.
+By the end of Today's class, students will recognize the benefits of using tree-based algorithms for classifications problems, also students will gain hands on experience with random forests and ensemble methods such as bagging and boosting.
 
 Today´s lesson also introduce students on dealing with categorical data in machine learning, students will be able to identify when is worth to use categorical data as a feature in a model.
 
@@ -20,7 +20,7 @@ By the end of the unit, students will be able to:
 
 * Demonstrate how random forest performs better than decision trees by avoiding overfitting.
 
-* Identify the pros and cons of tree based algorithms.
+* Identify the pros and cons of tree-based algorithms.
 
 * Understand the implications of overfitting and how boosting and bagging can help to deal with it.
 
@@ -30,13 +30,13 @@ By the end of the unit, students will be able to:
 
 ### Instructor Notes
 
-* Today's class is focused on teaching students how tree based algorithms can be used for classification problems, however feature engineering with categorical variables is also covered at the beginning of the class.
+* Today's class is focused on teaching students how tree-based algorithms can be used for classification problems. Students start with an introduction to decision trees and are then introduced to Ensemble Learning algorithms such as Random Forests and Gradient Boosted Trees.
 
-* Tree based algorithms have a wide range of applications, Today's class will use them on risk analysis scenarios.
+* tree-based algorithms have a wide range of applications, but today's class will use them for risk analysis scenarios.
 
-* Some demos of Today's class, uses a lot of memory to train the models; some warning messages may be seen in Jupyter and may provoke questions from students, explain them that these messages are not critical and can be ignored.
+* Some of the demos in Today's class will use a lot of memory to train the models which may throw warning messages in Jupyter. Reassure students that these warnings are typically not critical and can largely be ignored.
 
-* Overfitting is a common problem in machine learning, take your time to understand its implications and how the techniques covered in this class can help to avoid it.
+* Overfitting is a common problem in machine learning that will be discussed today, so take your time to understand its implications and how the techniques covered in this class can help to avoid it.
 
 ### Slideshow and Time Tracker
 
@@ -52,13 +52,13 @@ By the end of the unit, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Day 2 takes students to a new family of machine learning algorithms, students will learn about tree based algorithms and how they can be used in classification problems.
+Day 2 introduces students to tree-based algorithms and Ensemble Learners such as Random Forests and Gradient Boosted Trees. Students will get experience applying this new family of machine learning algorithms to a variety of classification problems. This will also tie in with day 3 as a potential solution to imbalanced classes which will be seen later in the lesson.
 
-Open the lesson slides, and welcome students to day 2 by highlighting the following:
+Open the lesson slides and welcome students to day 2 by highlighting the following:
 
-* Today a new family of machine learning algorithms is going to be introduced: _Tree based algorithms_.
+* Today a new family of machine learning algorithms is going to be introduced: _tree-based algorithms_.
 
-* Tree based algorithms are supervised learning methods that are mostly used for classifications and regression problems.
+* tree-based algorithms are supervised learning methods that are mostly used for classifications and regression problems.
 
 * This class will cover the following algorithms and methods:
 
@@ -67,11 +67,7 @@ Open the lesson slides, and welcome students to day 2 by highlighting the follow
   * Weak learners
   * Ensemble methods
 
-Explain to students, that sometimes you need to deal with categorical data inputs in machine learning problems, for example gender, locations names or risk categories.
-
-Tell students that in this class, they will learn how to deal with categorical data and how to discern if it's worth to include categorical features or not.
-
-Answer any questions before moving on.
+Ask for any additional questions before moving on.
 
 ---
 
@@ -83,13 +79,17 @@ In this activity, students will learn how categorical data should be preprocesse
 
 * [categorical-data.ipynb](Activities/01-Ins-Categorical-Data/Solved/categorical-data.ipynb)
 
-Explain to students that machine learning algorithms work with numerical data. However, datasets also have text and categorical data such as gender, education level or marital status that could represent a valuable input variable for a machine learning algorithms.
+Set up this activity by explaining that before we dig into the tree-based algorithms, we need to briefly discuss the problem of categorical input features and the need for pre-processing and scaling input features.
 
-Explain to students that in order to use text or categorical data in a machine learning algorithm, these kind of data values should be converted to a numerical representations.
+Explain to students that while many datasets contain categorical features such as gender labels or risk categories, machine learning algorithms only work with numerical data.
 
-Tell students that, we will use `pandas` and the `preprocessing` library of `sklearn` to encode text and categorical data as numbers.
+Explain to students that in order to use text or categorical data in a machine learning algorithms, these kind of data values should be converted to numerical representations.
 
-Open the unsolved version of the Jupyter notebook and highlight the following:
+Additionally, many machine learning algorithms and models are sensitive to input features with wide ranges of numbers. A best practice for preparing the numerical input data is normalize all of the data to the same scale. This prevents any single feature from dominating the others.
+
+Tell students that we will use `pandas` and the `preprocessing` library of `sklearn` to encode text and categorical data as numbers and to normalize all numerical inputs to the same scale. These preprocessing steps are critical for many machine learning algorithms.
+
+Open the Jupyter notebook and highlight the following:
 
 * On the _initial imports_ cell, two functions from the `preprocessing` library of `sklearn` are imported.
 
@@ -111,9 +111,9 @@ Explain to students that they will use simulated data about loans. There is a to
 * `gender`: Gender of the loan applicant.
 * `bad`: Stands for a bad or good loan applicant (`1` - bad, `0` - good).
 
-Continue the demo by loading the dataset on the `loans_df` DataFrame, and highlight the following:
+Continue the demo by loading the dataset on the `loans_df` DataFrame and highlight the following:
 
-* The dataset has three text features: `month`, `education` and `gender`.
+* The dataset has three text features: `month`, `education`, and `gender`.
 
     ![Original loans dataset](Images/categorical-data-1.png)
 
@@ -131,7 +131,7 @@ Continue the demo by loading the dataset on the `loans_df` DataFrame, and highli
     label_encoder = LabelEncoder()
     ```
 
-* Once the `LabelEncoder` instance is created, it should be trained (fitted) with the text data you want to encode. The first example shows how the `LabelEncoder` can be fitted with one column of a DatFrame.
+* Once the `LabelEncoder` instance is created, it should be trained (fit) with the text data you want to encode. The fit step is learning how many classes to use for the encoding. The first example shows how the `LabelEncoder` can be fitted with one column of a DatFrame.
 
     ```python
     label_encoder.fit(loans_df["month"])
@@ -147,13 +147,13 @@ Continue the demo by loading the dataset on the `loans_df` DataFrame, and highli
     loans_df["month_le"] = label_encoder.transform(loans_df["month"])
     ```
 
-Show the DataFrame's head, comment students that, despite the `LabelEncoder` do the job of transforming text labels to numerical values, there is a contextual issue in this particular case: the number assigned to some months doesn't match with the actual month number (e.g. `july` is encoded as `5`)
+Show the DataFrame's head and show that there is actually a problem with using `LabelEncoder` for all of the cateogrical data in this dataframe. Explain that there is a contextual issue in this particular case: the number assigned to some months doesn't match with the actual month number (e.g. `july` is encoded as `5`)
 
 ![Months' names encoded as numbers with Label Encoder](Images/categorical-data-3.png)
 
-* Despite this encoding is technically correct, it can lead to misconceptions while doing further data analysis.
+* Despite this encoding being technically correct, it can lead to misconceptions while doing further data analysis.
 
-* The `LabelEncoder` is a great tool, but in some particular cases, a manual integer encoding could be made.
+* The `LabelEncoder` is a great tool, but in some particular cases, a manual integer encoding could be used.
 
 Explain to students that, in this particular case, a dictionary with the months' number is created to encode the months' names with their corresponding month number.
 
@@ -187,13 +187,9 @@ loans_df["month_num"] = loans_df["month"].apply(lambda x: months_num[x])
     loans_df.drop(["month", "month_le"], axis=1, inplace=True)
     ```
 
-Comment to students, that sometimes there is problem with this type of encoding, since there are different numbers in the same column, the machine learning model can misunderstand the data to be in some kind of order that implies a numerical significance, for example, since `0 < 1 < 2`; the model may derive a wrong correlation like as the `month_num` increases the `amount`, `term` or `age` increase, but this is clearly not the correct scenario.
+Explain to students that there is actually another consideration with this type of encoding. Certain machine learning models may actual place numerical significance on integer encodings. For example, the 12th month has a larger numerical encoding that may bias certain models. In cases like this, a binary encoding method can be used.
 
-* Whether to use `LabelEncoder` or not will depend on the machine learning performance metrics.
-
-* One way to overcome this issue related to `LabelEncoder` is to use a binary encoding method.
-
-* The `get_dummies` method from Pandas, offers a practical solution to encode categorical or text data as binary encoded data.
+Remind students that they have already seen binary encoded data with the Pandas `get_dummies` function.
 
 * The `get_dummies` transforms each categorical feature into new columns with a `1` (True) or `0` (False) encoding to represent if that categorical label was present or not in the original row.
 
@@ -214,13 +210,15 @@ Comment to students, that sometimes there is problem with this type of encoding,
   loans_binary_encoded.to_csv(file_path, index=False)
   ```
 
-Tell students, that the final step we need to perform is scaling and normalization. Many machine learning algorithms will perform better with a normalized or scaled dataset.
+Tell students, that the final step we need to perform is scaling and normalization. Many machine learning algorithms will perform better with a normalized (scaled) dataset.
 
 Explain to students, that some models are sensitive to very large numerical values and may not be able to converge due to those features. It's always a good idea to have features all on the same scale so they have equal importance to the model.
 
-* `sklearn` provides a variety of scaling and normalization options. The most common is `StandardScaler`.
+* `sklearn` provides a variety of scaling and normalization options. The two most common are `MinMaxScaler` and `StandardScaler`.
 
-* `StandardScales` standardizes the features by removing the mean and scaling to unit variance.
+* `MinMaxScaler` will scale the data between 0 and 1.
+
+* `StandardScaler` standardizes the features by removing the mean and scaling to unit variance.
 
 * `StandardScaler` can be used when you don't know anything about your data.
 
@@ -236,7 +234,7 @@ Explain to students, that some models are sensitive to very large numerical valu
   loans_data_scaled = data_scaler.transform(loans_binary_encoded)
   ```
 
-* The resulting data, is ready to be used on a machine learning model.
+* The resulting data is ready to be used for a machine learning model.
 
   ![Scaled data](Images/categorical-data-6.png)
 
@@ -266,22 +264,10 @@ In this activity, students are tasked to encode some categorical and text featur
 
 Walk through the solution and highlight the following:
 
-* After loading the data into the `transactions_df` DataFrame, the only column that could need to be casted is the `date` column. This column can be easily converted to datetime using Pandas.
+* After loading the data into the `transactions_df` DataFrame, the `date` column needs to converted to `datetime` using Pandas.
 
   ```python
   transactions_df["date"] = pd.to_datetime(transactions_df["date"])
-  ```
-
-* The manual integer encoding of the `dateMonthName` and `dateWeekdayName` columns is needed, to create a meaningful numerical representation for those values.
-
-* To encode `dateMonthName` and `dateWeekdayName` columns is needed as integer numbers, the the Pandas `dt` accessor is used.
-
-  ```python
-  # Encode month name
-  transactions_df["dateMonthName"] = transactions_df["date"].dt.month
-
-  # Encode week day name name
-  transactions_df["dateWeekdayName"] = transactions_df["date"].dt.day
   ```
 
 * The `LabelEncoder´ from `sklearn` is used to encode the `type` column, following the Model -> Fit -> Predict/Transform API workflow.
@@ -301,9 +287,9 @@ Walk through the solution and highlight the following:
 
   ![Binary Encoding sample](Images/encoding-categorical-1.png)
 
-* The final touches to the DataFrame, are removing the `date` and `cardholder` columns, as well as renaming the `dateMonthName` and `dateWeekdayName` columns as `dateMonth` and `dateWeekDay`.
+* The unecessary columns such `date` and `cardholder` columns can simply be dropped.
 
-* Finally, the preprocessed DataFrame is saved on a `CSV` file named `transactions_data_encoded.csv` for forthcoming usage.
+* Finally, the preprocessed DataFrame is saved as a `CSV` file named `transactions_data_encoded.csv` for forthcoming usage.
 
 Answer any questions before moving on.
 
@@ -311,29 +297,29 @@ Answer any questions before moving on.
 
 ### 5. Instructor Do: Walking into the Algorithms Forest (5 min)
 
-In this lesson, students will be introduced to tree based algorithms and the `sklearn` modules that implements this algorithms family.
+In this lesson, students will be introduced to tree-based algorithms and the `sklearn` modules that implements this algorithmic family.
 
-Open the lesson slides, go to the _Walking into the Algorithms Forest_ section and highlight the following:
+Open the lesson slides, go to the _Walking into the Algorithms Forest_ section, and highlight the following:
 
-* Tree based algorithms are part of the supervised machine learning methods.
+* Tree-based algorithms are part of the supervised machine learning methods.
 
 * These kind of algorithms can be used to solve classification or regression problems.
 
-* These algorithms are quite often used in finance for assessing risk, preventing fraud or fighting money laundering.
+* These algorithms are quite often used in finance for assessing risk, preventing fraud, or fighting money laundering.
 
-* In contrast to linear models, tree based algorithms can map non-linear relationships in data.
+* In contrast to linear models, tree-based algorithms can map non-linear relationships in data.
 
 Explain to students that in linear models, the relationship among input variables can be represented as a straight line, while non-linear models have a different shape.
 
-Underline how a linear model that is fit to a non-linear dataset, would only be good part of the time and have huge errors the rest of the time due to non-linear data follows a different pattern.
+* Predicting the price of a house based on its size is an example of a linear problem. This is because, as a general rule, the size of the house is directly proportional to the price of the house.
 
-* Predicting the price of a house based on its size is an example of a linear problem.
+* Predicting if a credit application is going to be fraudulent or not may be an example of a non-linear problem due to the complex relationship between the input features and the output prediction.
 
-* Predicting if a credit applications is going to be fraudulent or not is an example of a non-linear problem.
+Explain that a linear model fit to non-linear data would only be a good approximation of points near the line and a bad approximation for points that vary from the line.
 
-Comment to students that the most used tree based algorithms are: decision trees, random forest, and gradient boosting trees.
+Explain to students that the most used tree-based algorithms are: decision trees, random forests, and gradient boosting trees.
 
-* `sklearn` has two modules that implement tree based algorithms that we will be covering Today.
+* `sklearn` has two modules that implement tree-based algorithms that we will be covering Today.
 
   * [`sklearn.tree`](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.tree) implements decision trees.
 
@@ -373,9 +359,9 @@ Start by opening the lesson slides, move to the _Decision Trees_ section and hig
 
 * Decision trees can become very complex and very deep, depending on how many questions have to be answered. Deep and complex trees tend to overfit to the data and do not generalize well.
 
-Close the presentation, and comment to students that in this demo, you are going to use the loan applications encoded dataset presented before. The goal of this demo, is to predict fraudulent loan applications using a decision tree.
+Close the presentation explain to students that in this demo, you are going to use the loan applications encoded dataset presented before. The goal of this demo is to predict fraudulent loan applications using a decision tree.
 
-Open the unsolved version of the Jupyter notebook, live code the demo and highlight the following:
+Open the unsolved version of the Jupyter notebook to live code the demo and highlight the following:
 
 * In the initial imports cell, the `tree` module from `sklearn` is imported since it offers a decision tree implementation for classifications problems.
 
@@ -383,7 +369,7 @@ Open the unsolved version of the Jupyter notebook, live code the demo and highli
   from sklearn import tree
   ```
 
-* One interesting way to analyze a decision tree, is to visualize it. The following libraries are imported to create a visual representation of the decision tree.
+* One interesting way to analyze a decision tree is to visualize it. The following libraries are imported to create a visual representation of the decision tree.
 
   ```python
   import pydotplus
@@ -414,13 +400,13 @@ Open the unsolved version of the Jupyter notebook, live code the demo and highli
   y = df_loans["bad"].values.reshape(-1, 1)
   ```
 
-Comment to students, that in order to train and validate the decision tree model, the data is split in training and testing sets.
+Explain to students that in order to train and validate the decision tree model, the data is split in training and testing sets.
 
 ```python
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 ```
 
-Explain to students, that in order to improve algorithm's performance, the features data will be scaled using the 'StandardScaler`. There is no need to scale the target data, since it contains the labels that we want to predict using the decision tree.
+Explain to students that in order to improve an algorithm's performance, the features data will be scaled using the 'StandardScaler`. There is no need to scale the target data since it contains the labels that we want to predict using the decision tree.
 
 ```python
 # Creating StandardScaler instance
@@ -453,9 +439,9 @@ X_test_scaled = X_scaler.transform(X_test)
   predictions = model.predict(X_test_scaled)
   ```
 
-In oder to evaluate the model, comment to students that a confusion matrix can, the `accuracy_score` and the `classification_report` from `sklearn.metrics` can be used.
+Explain that we can use the confusion matrix, the `accuracy_score`, and the `classification_report` from `sklearn.metrics` to evaluate the model.
 
-* In this particular example, the confusion matrix is created using the `y_test` and the `results` vectors. The matrix shows how well the model predict fraudulent loan applications.
+* In this particular example, the confusion matrix is created using the `y_test` and the `results` vectors. The matrix shows how well the model predicts fraudulent loan applications.
 
   ```python
   # Calculating the confusion matrix
@@ -470,7 +456,7 @@ In oder to evaluate the model, comment to students that a confusion matrix can, 
 
   ![Decision Tree evaluation results](Images/decision-trees-1.png)
 
-* After observing the results, it can be seen that model's accuracy (`0.584`) is low, also precision and recall are not good enough to state that the model will be good predicting fraudulent loan applications.
+* After observing the results, it can be seen that model's accuracy (`0.584`) is low. Also, precision and recall are not good enough to state that the model will be good predicting fraudulent loan applications.
 
 * It can be concluded that this model may not be the best one for preventing fraudulent loan applications.
 
@@ -520,7 +506,7 @@ In this activity, students will create a decision tree model to predict fraudule
 
 Open the solution, and live code the review by highlighting the following:
 
-* As it was shown on the previous explanation, the `tree` module from `sklearn` should be imported to create a decision tree model instance.
+* The `tree` module from `sklearn` should be imported to create a decision tree model instance.
 
   ```python
   from sklearn import tree
@@ -533,7 +519,7 @@ Open the solution, and live code the review by highlighting the following:
   from IPython.display import Image
   ```
 
-* The data from the `transactions_data_encoded.csv` file, is loaded in a pandas DataFrame called `df_transactions`.
+* The data from the `transactions_data_encoded.csv` file is loaded in a pandas DataFrame called `df_transactions`.
 
   ```python
   file_path = Path("../Resources/transactions_data_encoded.csv")
@@ -551,7 +537,7 @@ Open the solution, and live code the review by highlighting the following:
   y = df_transactions["isFraud"].values.reshape(-1, 1)
   ```
 
-* The data is split into training and testing set, using the `train_test_split` method from `sklearn`.
+* The data is split into training and testing set using the `train_test_split` method from `sklearn`.
 
   ```python
   X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
@@ -571,7 +557,7 @@ Open the solution, and live code the review by highlighting the following:
   X_test_scaled = X_scaler.transform(X_test)
   ```
 
-Recall to students, that the target data is not scaled since it contains the classes that you want to predict with the decision tree.
+Recall to students that the target data is not scaled since it contains the classes that you want to predict with the decision tree.
 
 * Once the data is scaled, the decision tree model is created and fitted with the training data.
 
@@ -590,13 +576,13 @@ Recall to students, that the target data is not scaled since it contains the cla
   predictions = model.predict(X_test_scaled)
   ```
 
-* The model is evaluated using `sklearn` to calculate the confusion matrix, the accuracy score and to generate the classification report.
+* The confusion matrix, accuracy score, and classification report is used ot evaluate the model.
 
   ![Model's evaluation results](Images/preventing_fraud_review_1.png)
 
-Comment to students, that despite model's accuracy is high, this model is not precisely predicting the fraudulent transactions as it can be seen after reviewing the precision and recall value. Remind students, that this is why getting the classification report is always important to evaluate a classification model.
+Explain to students that despite model's high accuracy, this model is not precisely predicting the fraudulent transactions as can be seen from the precision and recall values. This is why it is important to include the classification report when evaluating a classification model.
 
-Continue live coding the review, by creating the model graph using the `pydotplus` library and highlight the following.
+Continue live coding the review by creating the model graph using the `pydotplus` library and highlight the following.
 
 ```python
 # Create DOT data
@@ -613,23 +599,21 @@ Image(graph.create_png())
 
 ![Transaction tree graph](Images/transactions_tree.png)
 
-* The tree is to deep, however it can be observed that only one subtree grows.
+* The tree is to deep. However, it can be observed that only one subtree grows.
 
 * This phenomenon occurs when the target classes are imbalanced.
 
-* Having imbalanced target classes is a common problem in classification machine learning algorithms, when there are a disproportionate ratio of observations in each class.
+* Having imbalanced target classes is a common problem in classification machine learning algorithms when there are a disproportionate ratio of observations in each class.
 
-Comment to students, that they will learn how to deal with imbalanced classes in next class.
-
-Answer any questions before moving on.
+Explain to students that they will learn how to deal with imbalanced classes in next class, and that there are other tree algorithms such as ensemble learners that can be better at modeling imbalanced classes.
 
 ---
 
 ### 9. Instructor Do: Introduction to Ensemble Learning (10 min)
 
-In this activity, students will be introduced to ensemble learning, weak learners and random forest.
+In this activity, students will be introduced to ensemble learning, weak learners, and random forests.
 
-Navigate to the _Introduction to Ensemble Learning_ section of the Lesson 11.2 slides. Highlight the following:
+Navigate to the _Introduction to Ensemble Learning_ section of the slides. Highlight the following:
 
 * Address the class and tell them that if they were to take all of the classification models they've used so far and compared them, they'd find that some algorithms performed better than others, as expected.
 
@@ -645,7 +629,7 @@ Communicate that **weak learners** are a consequence of limited data to learn fr
 
 Explain to students that **weak learners** are still valuable in machine learning.
 
-* **Weak learners** are valuable because they can be combined with other classifiers in order to make a more accurate and robust prediction engine. A single **weak learner** will make inaccurate and imprecise predictions. Combined **weak learners** can perform just as well as any other **strong learner**.
+* **Weak learners** are valuable because there are models that can combine many weak learners to create a more accurate and robust prediction engine. A single **weak learner** will make inaccurate and imprecise predictions. Combined **weak learners** can perform just as well as any other **strong learner**.
 
   * Classify this type of learning as an example of **ensemble learning**. **Ensemble models** help improve accuracy and robustness, as well as decrease variance.
 
@@ -667,7 +651,7 @@ Continue the presentation by introducing the random forest algorithm, and highli
 
 * These simple trees are created by randomly sampling the data and creating a decision tree for only that small portion of data. This is known as a **weak classifier** because it is only trained on a small piece of the original data and by itself is only slightly better than a random guess. However, many _slightly better than average_ small decision trees can be combined to create a **strong classifier**, which has much better decision making power.
 
-* Some of the benefits of the decision tree algorithm are:
+* Some of the benefits of the random forest algorithm are:
 
   * It’s robust against overfitting because all of those weak classifiers are trained on different pieces of the data.
 
@@ -693,7 +677,7 @@ In this activity, students will learn how to implement a random forest using `sk
 
 * [loans_data_encoded.csv](Activities/05-Ins_Random_Forest/Resources/loans_data_encoded.csv)
 
-Explain to students that in this demo, you are going to use the loan applications encoded dataset presented before. The goal of this demo, is to predict fraudulent loan applications using a random forest.
+Explain to students that in this demo, you are going to use the loan applications encoded dataset presented before. The goal of this demo is to predict fraudulent loan applications using a random forest.
 
 Use the unsolved Jupyter notebook to live code the solution and highlight the following:
 
@@ -703,7 +687,7 @@ Use the unsolved Jupyter notebook to live code the solution and highlight the fo
   from sklearn.ensemble import RandomForestClassifier
   ```
 
-As it has been done before, the data is loaded in to a Pandas DataFrame and then scaled and split into training and testing set. Just briefly review this code and continue to live code the random forest implementation by highlighting the following:
+The data is loaded in to a Pandas DataFrame and then scaled and split into training and testing set. Just briefly review this code and continue to live code the random forest implementation by highlighting the following:
 
 * To create the target vector `y` before scaling the data, the `ravel` method is used instead of `reshape` as we did in the decision tree demo.
 
@@ -717,11 +701,11 @@ As it has been done before, the data is loaded in to a Pandas DataFrame and then
   rf_model = RandomForestClassifier(n_estimators=500, random_state=78)
   ```
 
-  * `n_estimators`: This is the number of random forest to be created by the algorithm, in general, a higher number makes the predictions stronger and more stable, however a very large number can result in higher training time.
+  * `n_estimators`: This is the number of random forest to be created by the algorithm, in general, a higher number makes the predictions stronger and more stable, however a very large number can result in higher training time. A good approach is to start low and increase the number if the model performance is not adequate.
 
-  * `random_state`: This parameter defines the seed used by the random number generator, it's important to define a value for future model comparison.
+    * A [research study](https://doi.org/10.1007/978-3-642-31537-4_13) suggests that a range between `64` and `128` trees in a forest could be used for initial modeling.
 
-Comment to students, that that according to a [research study](https://doi.org/10.1007/978-3-642-31537-4_13), it's possible to suggest that a range between `64` and `128` trees in a forest could be used for initial modeling.
+  * `random_state`: This parameter defines the seed used by the random number generator. It's important to define a random state when comparing multiple models.
 
 * Once the random forest model is created, it's fitted with the training data.
 
@@ -752,7 +736,7 @@ Comment to students, that that according to a [research study](https://doi.org/1
 
   ![Random forest evaluation results](Images/random-forest-1.png)
 
-After observing the results, it can be concluded that this model may not be the best one for preventing fraudulent loan applications, comment to students that there are several strategies to improve this model such as:
+After observing the results, it can be concluded that this model may not be the best one for preventing fraudulent loan applications. Explain to students that there are several strategies that may improve this model such as:
 
 * Reduce the number of features using PCA.
 
@@ -760,7 +744,7 @@ After observing the results, it can be concluded that this model may not be the 
 
 * Increase the number of estimators.
 
-Finally, explain to students that as it was commented in the random forest intro, a byproduct of the Random Forest algorithm is a ranking of feature importance (i.e. which features have the most impact on the decision).
+Finally, explain to students that a byproduct of the Random Forest algorithm is a ranking of feature importance (i.e. which features have the most impact on the decision).
 
 * The `RandomForestClassifier` of `sklearn` provides an attribute called `feature_importances_`, where you can see which features were the most significant.
 
@@ -800,7 +784,7 @@ In this activity, you are going to explore how the random forest algorithm can b
 
 Walk through the solution and highlight the following:
 
-* The data used in this activity, is the same that students used with in the decision tree exercise, so data preprocessing is the same, except in the target set creation where the `ravel` method is used instead of `reshape`.
+* The data used in this activity is the same that students used in the decision tree exercise, so data preprocessing is the same, except for the target set creation where the `ravel` method is used instead of `reshape`.
 
   ```python
   y = df_transactions["isFraud"].ravel()
@@ -808,7 +792,7 @@ Walk through the solution and highlight the following:
 
 * The random forest model instance is created defining `n_estimators = 100` and `random_state = 78`.
 
-Recall students that defining the `random_state` parameter, is important to compare different models.
+Explain to students that defining the `random_state` parameter is important to compare different models.
 
 * The random forest model is trained with the training data. **Note:** This step will take few minutes due to the size of the DataFrame.
 
@@ -826,9 +810,9 @@ Recall students that defining the `random_state` parameter, is important to comp
 
   ![Random forest evaluation results](Images/stu-random-forest-1.png)
 
-Comment to students, that it can be observed that model´s accuracy is quite good (`0.99`) and it's capable of predicting the 100% of non-fraudulent transactions, however after analyzing the confusion matrix, it can be seen that the model is not predicting the fraudulent transactions `isFraud = 1`, so precision, recall and F1 score were set to zero for this class.
+Expplain to students that it can be observed that model´s accuracy is quite good (`0.99`) and it's capable of predicting the 100% of non-fraudulent transactions, however after analyzing the confusion matrix, it can be seen that the model is not predicting the fraudulent transactions `isFraud = 1`, so precision, recall and F1 score were set to zero for this class.
 
-Explain to students, that this is not an issue with the algorithm, it's an issue with the data since classes are unbalanced, and maybe, we should train the model with different features. Remind
+Explain to students, that this is not an issue with the algorithm, it's an issue with the data since classes are unbalanced, and maybe, we should train the model with different features.
 
 * The features importance is retrieved from the random forest model using the `feature_importances_` attribute, finally the top 10 most important features are displayed.
 
@@ -1122,9 +1106,9 @@ Ask a couple of students to answer the question, provide your feedback by contin
 
 Follow the discussion by asking students the next question:
 
-* Are tree based algorithms the strongest for classification?
+* Are tree-based algorithms the strongest for classification?
 
-Ask for one volunteer to answer the question, after listening to student's answer, comment to students some the the strengths of tree based algorithms:
+Ask for one volunteer to answer the question, after listening to student's answer, comment to students some the the strengths of tree-based algorithms:
 
 * Are easy to represent, making a complex model much easier to interpret.
 
@@ -1136,7 +1120,7 @@ loan).
 
 * Can avoid overfitting.
 
-Continue the presentation by showing to students, some of the cases when classical classifiers perform better than tree based algorithms:
+Continue the presentation by showing to students, some of the cases when classical classifiers perform better than tree-based algorithms:
 
 * Generally speaking, classical classifiers may be faster.
 
