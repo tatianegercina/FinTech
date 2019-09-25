@@ -774,7 +774,7 @@ Answer any questions before moving on.
 
 ### 11. Students Do: Predicting Fraud with Random Forests (10 min)
 
-In this activity, you are going to explore how the random forest algorithm can be used to identify fraudulent credit card transactions. You will use the `transactions_data_encoded.csv` file that you created before to train the model
+In this activity, students are going to explore how the random forest algorithm can be used to identify fraudulent loan applications. Students will use the `sba_loans_encoded.csv` file that they created before to train the model
 
 **Instructions:**
 
@@ -784,7 +784,7 @@ In this activity, you are going to explore how the random forest algorithm can b
 
 * [fraud-random-forest.ipynb](Activities/06-Stu_Random_Forest/Unsolved/fraud-random-forest.ipynb)
 
-* [transactions_data_encoded.csv](Activities/06-Stu_Random_Forest/Resources/transactions_data_encoded.csv)
+* [sba_loans_encoded.csv](Activities/06-Stu_Random_Forest/Resources/sba_loans_encoded.csv)
 
 ---
 
@@ -794,21 +794,17 @@ In this activity, you are going to explore how the random forest algorithm can b
 
 * [fraud-random-forest.ipynb](Activities/06-Stu_Random_Forest/Solved/fraud-random-forest.ipynb)
 
-* [transactions_data_encoded.csv](Activities/06-Stu_Random_Forest/Resources/transactions_data_encoded.csv)
+* [sba_loans_encoded.csv](Activities/06-Stu_Random_Forest/Resources/sba_loans_encoded.csv)
 
 Walk through the solution and highlight the following:
 
-* The data used in this activity is the same that students used in the decision tree exercise, so data preprocessing is the same, except for the target set creation where the `ravel` method is used instead of `reshape`.
+* The data used in this activity is the same that students used in the decision tree exercise, so data preprocessing is the same.
 
-  ```python
-  y = df_transactions["isFraud"].ravel()
-  ```
-
-* The random forest model instance is created defining `n_estimators = 100` and `random_state = 78`.
+* The random forest model instance is created defining `n_estimators = 500` and `random_state = 78`.
 
 Explain to students that defining the `random_state` parameter is important to compare different models.
 
-* The random forest model is trained with the training data. **Note:** This step will take few minutes due to the size of the DataFrame.
+* The random forest model is trained with the training data.
 
   ```python
   rf_model = rf_model.fit(X_train_scaled, y_train)
@@ -824,9 +820,7 @@ Explain to students that defining the `random_state` parameter is important to c
 
   ![Random forest evaluation results](Images/stu-random-forest-1.png)
 
-Expplain to students that it can be observed that model´s accuracy is quite good (`0.99`) and it's capable of predicting the 100% of non-fraudulent transactions, however after analyzing the confusion matrix, it can be seen that the model is not predicting the fraudulent transactions `isFraud = 1`, so precision, recall and F1 score were set to zero for this class.
-
-Explain to students, that this is not an issue with the algorithm, it's an issue with the data since classes are unbalanced, and maybe, we should train the model with different features.
+Explain to students that it can be observed that model´s accuracy is better than the one obtained using decision trees (`0.89`), in combination to the confusion matrix results and the precision and recall values, we could conclude that using random forest is better to predict fraudulent loan applications.
 
 * The features importance is retrieved from the random forest model using the `feature_importances_` attribute, finally the top 10 most important features are displayed.
 
@@ -836,11 +830,11 @@ Finally, ask a couple of students about their insights in the _Analysis Question
 
 * **Question 1:** Would you trust in this model to deploy a fraud detection solution in a bank?
 
-  * **Sample Answer:** Model's accuracy seems to be good (`0.99`), after analyzing the confusion matrix, it can bee observed that the model is only predicting the fraudulent non-fraudulent transactions, so we can re-train the model using a different combination of features.
+  * **Sample Answer:** Model's accuracy is better than using decision trees, so if we want to deploy a fraud detection solution for loans in a Bank, we would trust in random forest more than in decision trees.
 
 * **Question 2:** What are your insights about the top 10 most importance features?
 
-  * **Sample Answer:** It seems that the merchant is not relevant for the model, so we can create a new random forest model by only taking these top 10 features. Also, for piloting this model in a business environment, we will only need to fetch new data about these 10 features.
+  * **Sample Answer:** It seems that the Bank is not relevant for the model, so we can create a new random forest model by only taking these top 10 features. Also, for piloting this model in a business environment, we will only need to fetch new data about these 10 features.
 
 Answer any questions before moving on.
 
