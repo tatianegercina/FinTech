@@ -1,16 +1,16 @@
 # Students Do: Predicting Fraud with Random Forests
 
-In this activity, you are going to explore how random forest algorithm can be used to identify fraudulent credit card transactions. You will use the `transactions_data_encoded.csv` file that you created before to train the model
+In this activity, you are going to explore how random forest algorithm can be used to identify fraudulent loan applications. You will use the `sba_loans_encoded.csv` file that you created before to train the model
 
 ## Instructions
 
 ### Loading and Preprocessing Loans Encoded Data
 
-1. Load the `transactions_data_encoded.csv` in a pandas DataFrame called `df_transactions`.
+1. Load the `sba_loans_encoded.csv` in a pandas DataFrame called `df_loans`.
 
-2. Define the features set by copying the `df_transactions` DataFrame and dropping the `isFraud` column.
+2. Define the features set by copying the `df_loans` DataFrame and dropping the `Default` column.
 
-3. Create the target vector by assigning the values of the `isFraud` column from the `df_transactions` DataFrame.
+3. Create the target vector by assigning the values of the `Default` column from the `df_loans` DataFrame.
 
 4. Split the data into training and testing sets.
 
@@ -18,11 +18,11 @@ In this activity, you are going to explore how random forest algorithm can be us
 
 ### Fitting the Random Forest Model
 
-6. Once data is scaled, create a random forest instance and train it with the training data (`X_train_scaled` and `y_train`), define `n_estimators=200` and `random_state=78`.
+6. Once data is scaled, create a random forest instance and train it with the training data (`X_train_scaled` and `y_train`), define `n_estimators=500` and `random_state=78`.
 
 ### Making Predictions Using the Random Forest Model
 
-7. Validate the trained model by predicting fraudulent transactions using the testing data (`X_test_scaled`).
+7. Validate the trained model by predicting fraudulent loan applications using the testing data (`X_test_scaled`).
 
 ### Model Evaluation
 

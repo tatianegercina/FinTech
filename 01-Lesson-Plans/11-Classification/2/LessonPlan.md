@@ -244,7 +244,7 @@ Answer any questions before moving on.
 
 ### 3. Student Do: Encoding Categorical Data for Machine Learning (10 min)
 
-In this activity, students are tasked to encode some categorical and text features of a fictional dataset that contains 100,000 credit card transactions. In forthcoming activities, students will use this dataset to predict fraudulent transactions.
+In this activity, students are tasked to encode some categorical and text features of a dataset that contains `2097` loans applications. In forthcoming activities, they will use this dataset to predict defaulted loan applications.
 
 **Instructions:**
 
@@ -253,6 +253,8 @@ In this activity, students are tasked to encode some categorical and text featur
 **Files:**
 
 * [encoding-categorical-data.ipynb](Activities/02-Stu_Categorical_Data/Unsolved/encoding-categorical-data.ipynb)
+
+* [sba_loans.csv](Activities/02-Stu_Categorical_Data/Resources/sba_loans.csv)
 
 ---
 
@@ -264,32 +266,42 @@ In this activity, students are tasked to encode some categorical and text featur
 
 Walk through the solution and highlight the following:
 
-* After loading the data into the `transactions_df` DataFrame, the `date` column needs to converted to `datetime` using Pandas.
+* To encode the `Month` column, a dictionary that maps months' names with their numerical values is created using the `month_name` method from the `calendar` module.
+
+  ![Months dic](Images/months-dic.png)
+
+* The `Month` column is encoded using a `lambda` function that looks for the dictionary's values using the month number as key.
 
   ```python
-  transactions_df["date"] = pd.to_datetime(transactions_df["date"])
+  loans_df["Month"] = loans_df["Month"].apply(lambda x: name_to_num[x])
   ```
 
-* The `LabelEncoder´ from `sklearn` is used to encode the `type` column, following the Model -> Fit -> Predict/Transform API workflow.
+* The `LabelEncoder´ from `sklearn` is used to encode the `RealEstate`, `RevLineCr` and `UrbanRural` columns, following the Model -> Fit -> Predict/Transform API workflow.
 
   ```python
   # Create the LabelEncoder instance
   le = LabelEncoder()
 
-  # Fitting the LabelEncoder
-  le.fit(transactions_df["type"])
+  # Fitting and encoding the columns with the LabelEncoder
 
-  # Encoding type column
-  transactions_df["type"] = le.transform(transactions_df["type"])
+  # RealEstate column
+  le.fit(loans_df["RealEstate"])
+  loans_df["RealEstate"] = le.transform(loans_df["RealEstate"])
+
+  # Encoding RevLineCr column
+  le.fit(loans_df["RevLineCr"])
+  loans_df["RevLineCr"] = le.transform(loans_df["RevLineCr"])
+
+  # Encoding UrbanRural column
+  le.fit(loans_df["UrbanRural"])
+  loans_df["UrbanRural"] = le.transform(loans_df["UrbanRural"])
   ```
 
-* The `gender` and `merchant` columns, are binary encoded using the Pandas `get_dummies()` function. This will increase the number of columns in the DataFrame up to `3254` columns.
+* The the `Bank`, `State` and `City` columns, are binary encoded using the Pandas `get_dummies()` function. This will increase the number of columns in the DataFrame up to `684` columns.
 
   ![Binary Encoding sample](Images/encoding-categorical-1.png)
 
-* The unecessary columns such `date` and `cardholder` columns can simply be dropped.
-
-* Finally, the preprocessed DataFrame is saved as a `CSV` file named `transactions_data_encoded.csv` for forthcoming usage.
+* Finally, the preprocessed DataFrame is saved as a `CSV` file named `sba_loans_encoded.csv` for forthcoming usage.
 
 Answer any questions before moving on.
 
@@ -482,9 +494,9 @@ Answer any questions before moving on.
 
 ---
 
-### 7. Students Do: Predicting Fraudulent Credit Card Transactions (10 min)
+### 7. Students Do: Predicting Fraudulent Loans Applications (10 min)
 
-In this activity, students will create a decision tree model to predict fraudulent credit card transactions.
+In this activity, students will create a decision tree model to predict fraudulent loan applications.
 
 **Instructions:**
 
@@ -494,11 +506,11 @@ In this activity, students will create a decision tree model to predict fraudule
 
 * [preventing-fraud.ipynb](Activities/04-Stu_Predicting_Fraud/Unsolved/preventing-fraud.ipynb)
 
-* [transactions_data_encoded.csv](Activities/04-Stu_Predicting_Fraud/Resources/transactions_data_encoded.csv)
+* [sba_loans_encoded.csv](Activities/04-Stu_Predicting_Fraud/Resources/sba_loans_encoded.csv)
 
 ---
 
-### 8. Instructor Do: Review Predicting Fraudulent Credit Card Transactions (10 min)
+### 8. Instructor Do: Review Predicting Fraudulent Loans Applications (10 min)
 
 **Files:**
 
@@ -519,22 +531,22 @@ Open the solution, and live code the review by highlighting the following:
   from IPython.display import Image
   ```
 
-* The data from the `transactions_data_encoded.csv` file is loaded in a pandas DataFrame called `df_transactions`.
+* The data from the `sba_loans_encoded.csv` file is loaded in a pandas DataFrame called `df_loans`.
 
   ```python
-  file_path = Path("../Resources/transactions_data_encoded.csv")
-  df_transactions = pd.read_csv(file_path)
+  file_path = Path("../Resources/sba_loans_encoded.csv")
+  df_loans = pd.read_csv(file_path)
   ```
 
 * After loading the data, the features and target sets are defined.
 
   ```python
   # Define features set
-  X = df_transactions.copy()
-  X.drop("isFraud", axis=1, inplace=True)
+  X = df_loans.copy()
+  X.drop("Default", axis=1, inplace=True)
 
   # Define target vector
-  y = df_transactions["isFraud"].values.reshape(-1, 1)
+  y = df_loans["Default"].values.reshape(-1, 1)
   ```
 
 * The data is split into training and testing set using the `train_test_split` method from `sklearn`.
@@ -580,7 +592,7 @@ Recall to students that the target data is not scaled since it contains the clas
 
   ![Model's evaluation results](Images/preventing_fraud_review_1.png)
 
-Explain to students that despite model's high accuracy, this model is not precisely predicting the fraudulent transactions as can be seen from the precision and recall values. This is why it is important to include the classification report when evaluating a classification model.
+Explain to students that despite model's high accuracy, this model is not predicting all the fraudulent loan applications as can be seen from the precision and recall values. This is why it is important to include the classification report when evaluating a classification model.
 
 Continue live coding the review by creating the model graph using the `pydotplus` library and highlight the following.
 
@@ -606,6 +618,8 @@ Image(graph.create_png())
 * Having imbalanced target classes is a common problem in classification machine learning algorithms when there are a disproportionate ratio of observations in each class.
 
 Explain to students that they will learn how to deal with imbalanced classes in next class, and that there are other tree algorithms such as ensemble learners that can be better at modeling imbalanced classes.
+
+Answer any questions before moving on.
 
 ---
 
@@ -760,7 +774,7 @@ Answer any questions before moving on.
 
 ### 11. Students Do: Predicting Fraud with Random Forests (10 min)
 
-In this activity, you are going to explore how the random forest algorithm can be used to identify fraudulent credit card transactions. You will use the `transactions_data_encoded.csv` file that you created before to train the model
+In this activity, students are going to explore how the random forest algorithm can be used to identify fraudulent loan applications. Students will use the `sba_loans_encoded.csv` file that they created before to train the model
 
 **Instructions:**
 
@@ -770,7 +784,7 @@ In this activity, you are going to explore how the random forest algorithm can b
 
 * [fraud-random-forest.ipynb](Activities/06-Stu_Random_Forest/Unsolved/fraud-random-forest.ipynb)
 
-* [transactions_data_encoded.csv](Activities/06-Stu_Random_Forest/Resources/transactions_data_encoded.csv)
+* [sba_loans_encoded.csv](Activities/06-Stu_Random_Forest/Resources/sba_loans_encoded.csv)
 
 ---
 
@@ -780,21 +794,17 @@ In this activity, you are going to explore how the random forest algorithm can b
 
 * [fraud-random-forest.ipynb](Activities/06-Stu_Random_Forest/Solved/fraud-random-forest.ipynb)
 
-* [transactions_data_encoded.csv](Activities/06-Stu_Random_Forest/Resources/transactions_data_encoded.csv)
+* [sba_loans_encoded.csv](Activities/06-Stu_Random_Forest/Resources/sba_loans_encoded.csv)
 
 Walk through the solution and highlight the following:
 
-* The data used in this activity is the same that students used in the decision tree exercise, so data preprocessing is the same, except for the target set creation where the `ravel` method is used instead of `reshape`.
+* The data used in this activity is the same that students used in the decision tree exercise, so data preprocessing is the same.
 
-  ```python
-  y = df_transactions["isFraud"].ravel()
-  ```
-
-* The random forest model instance is created defining `n_estimators = 100` and `random_state = 78`.
+* The random forest model instance is created defining `n_estimators = 500` and `random_state = 78`.
 
 Explain to students that defining the `random_state` parameter is important to compare different models.
 
-* The random forest model is trained with the training data. **Note:** This step will take few minutes due to the size of the DataFrame.
+* The random forest model is trained with the training data.
 
   ```python
   rf_model = rf_model.fit(X_train_scaled, y_train)
@@ -810,9 +820,7 @@ Explain to students that defining the `random_state` parameter is important to c
 
   ![Random forest evaluation results](Images/stu-random-forest-1.png)
 
-Expplain to students that it can be observed that model´s accuracy is quite good (`0.99`) and it's capable of predicting the 100% of non-fraudulent transactions, however after analyzing the confusion matrix, it can be seen that the model is not predicting the fraudulent transactions `isFraud = 1`, so precision, recall and F1 score were set to zero for this class.
-
-Explain to students, that this is not an issue with the algorithm, it's an issue with the data since classes are unbalanced, and maybe, we should train the model with different features.
+Explain to students that it can be observed that model´s accuracy is better than the one obtained using decision trees (`0.89`), in combination to the confusion matrix results and the precision and recall values, we could conclude that using random forest is better to predict fraudulent loan applications.
 
 * The features importance is retrieved from the random forest model using the `feature_importances_` attribute, finally the top 10 most important features are displayed.
 
@@ -822,11 +830,11 @@ Finally, ask a couple of students about their insights in the _Analysis Question
 
 * **Question 1:** Would you trust in this model to deploy a fraud detection solution in a bank?
 
-  * **Sample Answer:** Model's accuracy seems to be good (`0.99`), after analyzing the confusion matrix, it can bee observed that the model is only predicting the fraudulent non-fraudulent transactions, so we can re-train the model using a different combination of features.
+  * **Sample Answer:** Model's accuracy is better than using decision trees, so if we want to deploy a fraud detection solution for loans in a Bank, we would trust in random forest more than in decision trees.
 
 * **Question 2:** What are your insights about the top 10 most importance features?
 
-  * **Sample Answer:** It seems that the merchant is not relevant for the model, so we can create a new random forest model by only taking these top 10 features. Also, for piloting this model in a business environment, we will only need to fetch new data about these 10 features.
+  * **Sample Answer:** It seems that the Bank is not relevant for the model, so we can create a new random forest model by only taking these top 10 features. Also, for piloting this model in a business environment, we will only need to fetch new data about these 10 features.
 
 Answer any questions before moving on.
 
@@ -1036,33 +1044,37 @@ Ask if there any questions before moving on.
 
 ### 16. Students Do: Turbo Boost (10 min)
 
-Students will complete a MSMD activity where they use the **sklearn** `GradientBoostedClassifier` **boosting** algorithm to detect fraudulent transactions using **ensemble learning**.
+Students will complete a MSMD activity where they use the **sklearn** `GradientBoostedClassifier` **boosting** algorithm to detect fraudulent loan applications using **ensemble learning**.
 
-**Instructions:** [README.md](Activities/08-Stu_Gradient_Boosted_Tree/README.md)
+**Instructions:**
 
-**Files:** [boost_of_power.ipynb](Activities/08-Stu_Gradient_Boosted_Tree/Unsolved/boost_of_power.ipynb)
+* [README.md](Activities/08-Stu_Gradient_Boosted_Tree/README.md)
+
+**Files:**
+
+* [boost_of_power.ipynb](Activities/08-Stu_Gradient_Boosted_Tree/Unsolved/boost_of_power.ipynb)
 
 ---
 
 ### 17. Instructor Do: Turbo Boost Activity Review (10 min)
 
-**Files:** [boost_of_power.ipynb](Activities/08-Stu_Gradient_Boosted_Tree/Solved/boost_of_power.ipynb)
+**Files:**
+
+* [boost_of_power.ipynb](Activities/08-Stu_Gradient_Boosted_Tree/Solved/boost_of_power.ipynb)
 
 Open the solution and explain the following:
 
-* The `GradientBoostedClassifier` model was able to produce incredibly high accuracy scores, higher than some of the algorithms we've seen. What about the `GradientBoostedClassifier` makes it better performant than some other algorithms?
+* The `GradientBoostedClassifier` model was able to produce incredibly high accuracy scores, higher than some of the algorithms we've seen. What about the `GradientBoostedClassifier` makes it better performance than some other algorithms?
 
   * **Answer** `GradientBoostClassifier` is an **ensemble learning** algorithm. It pools **weak learners** together and executes them in parallel in order to refit the model as needed. Because it leverages multiple algorithms and runs them in parallel, `GradientBoostClassifier`is a more robust algorithm than average.
 
     ![gradient_boosting_classifier.png](Images/gradient_boosting_classifier.png)
 
-* Even though the accuracy score was high, the classification report shows the precision and recall for detecting one class was significantly greater than the classification for the other class.
+* Even though the accuracy score was high, the classification report shows the precision and recall for detecting one class was greater than the classification for the other class.
 
   * Explain that this is because the classes are imbalanced, meaning that the algorithm was able to make predictions for one class better than it was for another, and as a result, the algorithm developed bias.
 
   * Let students know that they will learn what imbalanced classes are and how to deal with them in the next class.
-
-    ![imbalanced_results.png](Images/imbalanced_results.png)
 
 * What are the three main parameters for the `GradientBoostClassifier` model?
 
