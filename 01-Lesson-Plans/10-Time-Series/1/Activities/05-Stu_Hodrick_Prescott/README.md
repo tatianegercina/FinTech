@@ -16,16 +16,24 @@
 
 ### Hodrick-Prescott Filter
 
-* Use the DataReader to fetch the GDP data from FRED using the start and end dates. 
+* Use the DataReader to fetch the GDP data from FRED using the start and end dates.
 
 * Plot the raw GDP data as a line plot.
 
-* Use the `hpfilter` function to decompose the GDP column into the trend and noise components. 
+* Use the `hpfilter` function to decompose the GDP column into the trend and noise components.
 
 * Plot the GDP trend data as a line plot.
 
-* Plot the GDP noise as a line plot. 
+* Plot the GDP noise as a line plot.
 
 * Repeat the processes for inflation (keyword `CPIAUCNS`) and job count (keyword `PAYEMS`).
 
 * For at least one of these data sets, plot the exponentially-weighted moving averages. How do the results compare to results of the H-P filter?
+
+### Notes
+
+You will need to intall the [pandas-datareader](https://pandas-datareader.readthedocs.io/en/latest/) for the activity.
+
+```
+pip install pandas-datareader
+```
