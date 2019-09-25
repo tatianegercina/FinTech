@@ -22,6 +22,8 @@ By the end of this class, students will be able to:
 
 ### Instructor Notes
 
+* Slack out the [imblearn Installation Guide](../../11-Classification/Supplemental/Machine_Learning_Env_Setup_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+
 * Today's class is the most challenging in this unit. Starting with the concept of stationarity, students will build on previous skills and ideas as they progress through the day. Some of these ideas are counterintuitive. However, they will gain repeated exposure to them from one activity to the next. A major goal for today's class, then, is for students to gain confidence through the process of working through fairly challenging material through multiple exposures.
 
 * Be mindful that because the each activity is a pre-requisite for the next, today's class may call for greater patience from both instructor and students. Do not rush through activities, and take the time to explain the core concepts and techniques in detail if necessary.

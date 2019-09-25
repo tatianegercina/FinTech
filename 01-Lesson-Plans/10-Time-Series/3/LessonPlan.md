@@ -26,6 +26,8 @@ By the end of this class, students will be able to:
 
 ### Instructor Notes
 
+* Slack out the [imblearn Installation Guide](../../11-Classification/Supplemental/Machine_Learning_Env_Setup_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+
 * Through longer activities, students will consolidate their skills from the previous two days, creating financial models in multiple steps, from stationarizing data to identifying model orders to making predictions on future values and volatility. You and your TAs should be on the lookout for your weaker students during the longer activities. Make sure that such students do not flounder.
 
 * Your students will also learn to validate models by training and testing data. Emphasize that this will be a valuable skill in later units as they dive more deeply into machine learning.
