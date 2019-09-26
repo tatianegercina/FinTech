@@ -26,7 +26,7 @@ By the end of this class, students will be able to:
 
 * Today's class is the most challenging in this unit. Starting with the concept of stationarity, students will build on previous skills and ideas as they progress through the day. Some of these ideas are counterintuitive. However, they will gain repeated exposure to them from one activity to the next. A major goal for today's class, then, is for students to gain confidence through the process of working through fairly challenging material through multiple exposures.
 
-* Be mindful that because the each activity is a pre-requisite for the next, today's class may call for greater patience from both instructor and students. Do not rush through activities, and take the time to explain the core concepts and techniques in detail if necessary.
+* Be mindful that because each activity is a pre-requisite for the next, today's class may call for greater patience from both instructor and students. Do not rush through activities, and take the time to explain the core concepts and techniques in detail if necessary.
 
 * While it is likely that some students may not fully grasp all of today's material by the end of class, the payoff will be in day 3, when your students will have a chance to create predictive models from start to end.
 
@@ -64,7 +64,7 @@ Describe to students what they will be learning today:
 
 In this activity, you will define stationarity, a key concept in time series modeling.
 
-Open slide 6 and introduce the term `stationarity`:
+Open slide 3 and introduce the term `stationarity`:
 
   * In a stationary process, statistical properties such as the mean and variance do not vary across time.
 
@@ -123,7 +123,7 @@ Open the notebook and show the code to convert from a non-stationary dataset to 
   df['Returns'] = df.Close.pct_change()
   ```
 
-  * pct_change() is another was to make a series stationary. The difference between diff() is that pct_change() essentially normalizes the data (_i.e., with the denominator doing the scaling_).
+  * pct_change() is another way to make a series stationary. The difference between diff() is that pct_change() essentially normalizes the data (_i.e., with the denominator doing the scaling_).
 
 
   ```python
@@ -139,17 +139,17 @@ In this activity, students will perform techniques to stationarize a non-station
 
 **Files:**
 
-  * [README.md](Activities/05-Stu_Stationarity/README.md)
+  * [README.md](Activities/02-Stu_Stationarity/README.md)
 
-  * [amazon.csv](Activities/05-Stu_Stationarity/Resources/amazon.csv)
+  * [amazon.csv](Activities/02-Stu_Stationarity/Resources/amazon.csv)
 
-  * [stationarity.ipynb](Activities/05-Stu_Stationarity/Unsolved/stationarity.ipynb)
+  * [stationarity.ipynb](Activities/02-Stu_Stationarity/Unsolved/stationarity.ipynb)
 
 ### 4. Instructor Do: Review Stationarity (5 min)
 
 **Files:**
 
-  * [stationarity.ipynb](Activities/05-Stu_Stationarity/Solved/stationarity.ipynb)
+  * [stationarity.ipynb](Activities/02-Stu_Stationarity/Solved/stationarity.ipynb)
 
 Show the initial plot of Amazon's closing prices, and explain that this time series is non-stationary.
 
@@ -229,7 +229,7 @@ Before diving into ARMA, quickly summarize auto-correlation for the class:
 
   * Plotting partial auto-correlation helps identify the **number** of lags that are significant in explaining the data.
 
-Open slide 11 and introduce the concept of auto-regressive (AR) modeling:
+Open slide 8 and introduce the concept of auto-regressive (AR) modeling:
 
   * In an AR model, past values are used to predict future values.
 
@@ -317,7 +317,7 @@ Reiterate that, despite the possibly intimidating mathematical formula, the idea
 
 **File:**
 
-  * [ARMA.ipynb](Activities/06-Ins_ARMA/Solved/ARMA.ipynb)
+  * [ARMA.ipynb](Activities/03-Ins_ARMA/Solved/ARMA.ipynb)
 
 Now that we have a theoretical understanding of the ARMA model, explain that we will go over using it in Python.
 
@@ -416,9 +416,9 @@ In this activity, students will create an ARMA model on yield data.
 
 **Files:**
 
-  * [README.md](Activities/07-Stu_ARMA/README.md)
+  * [README.md](Activities/04-Stu_Yields/README.md)
 
-  * [yield.csv](Activities/07-Stu_ARMA/Resources/yield.csv)
+  * [yield.csv](Activities/04-Stu_Yields/Resources/yield.csv)
 
 ### 8. Instructor Do: Review Activity (10 min)
 
@@ -498,7 +498,7 @@ In this activity, in addition to describing the ARIMA model, you will elucidate 
 
 **File:**
 
-  * [ARIMA.ipynb](Activities/08-Ins_ARIMA/Solved/ARIMA.ipynb)
+  * [ARIMA.ipynb](Activities/05-Ins_ARIMA/Solved/ARIMA.ipynb)
 
 Open the notebook and describe the dataset:
 
@@ -601,17 +601,17 @@ Send the following link to students for more information on the order of an ARIM
 
 **Files:**
 
-  * [README.md](Activities/09-Stu_ARIMA_Leg/README.md)
+  * [README.md](Activities/06-Stu_ARIMA_Leg/README.md)
 
-  * [oil_futures_front.csv](Activities/09-Stu_ARIMA_Leg/Resources/oil_futures_front.csv)
+  * [oil_futures_front.csv](Activities/06-Stu_ARIMA_Leg/Resources/oil_futures_front.csv)
 
-  * [stu_ARIMA.ipynb](Activities/09-Stu_ARIMA_Leg/Unsolved/stu_ARIMA.ipynb)
+  * [stu_ARIMA.ipynb](Activities/06-Stu_ARIMA_Leg/Unsolved/oil_futures_ARIMA.ipynb)
 
 ### 12. Instructor Do: Review Activity (10 min)
 
 **File:**
 
-* [stu_ARIMA.ipynb](Activities/09-Stu_ARIMA_Leg/Solved/stu_ARIMA.ipynb)
+* [stu_ARIMA.ipynb](Activities/06-Stu_ARIMA_Leg/Solved/oil_futures_ARIMA.ipynb)
 
 Open the notebook and explain the rationale for using ARIMA:
 
@@ -639,7 +639,7 @@ Answer any remaining questions before moving on.
 
 **File:**
 
-* [garch.ipynb](Activities/01-Ins_GARCH/Solved/garch.ipynb)
+* [garch.ipynb](Activities/07-Ins_GARCH/Solved/garch.ipynb)
 
 Before introducing GARCH to the class, introduce the topic of volatility:
 
@@ -651,17 +651,17 @@ Before introducing GARCH to the class, introduce the topic of volatility:
 
 * Understanding volatility is also important to banks as loan failures can occur in a cluster. Assets must exceed liabilities, so regulators and banks alike create forecast models for asset volatility.
 
-Explain that GARCH models volatility. Open the slideshow and summarize the key features of the ARMA model (Slide 5):
+Explain that GARCH models volatility. Open the slideshow and summarize the key features of the ARMA model (Slide 8):
 
 * An autoregressive component in which future values are predicted based on past values. In this model, values are a function of time.
 
 * A moving average component in which future values are predicted based on past errors.
 
-Explain that GARCH models are structured similarly, but to predict volatility (Slide 6):
+Explain that GARCH models are structured similarly, but to predict volatility (Slide 10):
 
 * As with ARMA models, there are autoregressive and moving average components.
 
-Formalize the term volatility (Slides 7-8):
+Formalize the term volatility (Slides 11-12):
 
 * In this context, volatility is the change in variance across a time series.
 
@@ -769,17 +769,17 @@ Show the plot of the volatility forecast:
 
 **Files:**
 
-* [README.md](Activities/02-Stu_USD/README.md)
+* [README.md](Activities/08-Stu_USD/README.md)
 
-* [USD_per_Euro_Hourly_Mid Prices.csv](Activities/03-Stu_USD/Resources/USD_per_Euro_Hourly_Mid Prices.csv)
+* [USD_per_Euro_Hourly_Mid_Prices.csv](Activities/08-Stu_USD/Resources/USD_per_Euro_Hourly_Mid_Prices.csv)
 
-* [usd.ipynb](Activities/02-Stu_USD/Unsolved/usd.ipynb)
+* [usd.ipynb](Activities/08-Stu_USD/Unsolved/usd.ipynb)
 
 ### 15. Instructor Do: Review Activity (10 min)
 
 **Files:**
 
-* [usd.ipynb](Activities/02-Stu_USD/Solved/usd.ipynb)
+* [usd.ipynb](Activities/08-Stu_USD/Solved/usd.ipynb)
 
 Open the notebook and display the plot of the exchange rate:
 
