@@ -651,17 +651,17 @@ Before introducing GARCH to the class, introduce the topic of volatility:
 
 * Understanding volatility is also important to banks as loan failures can occur in a cluster. Assets must exceed liabilities, so regulators and banks alike create forecast models for asset volatility.
 
-Explain that GARCH models volatility. Open the slideshow and summarize the key features of the ARMA model (Slide 5):
+Explain that GARCH models volatility. Open the slideshow and summarize the key features of the ARMA model (Slide 8):
 
 * An autoregressive component in which future values are predicted based on past values. In this model, values are a function of time.
 
 * A moving average component in which future values are predicted based on past errors.
 
-Explain that GARCH models are structured similarly, but to predict volatility (Slide 6):
+Explain that GARCH models are structured similarly, but to predict volatility (Slide 10):
 
 * As with ARMA models, there are autoregressive and moving average components.
 
-Formalize the term volatility (Slides 7-8):
+Formalize the term volatility (Slides 11-12):
 
 * In this context, volatility is the change in variance across a time series.
 
@@ -771,7 +771,7 @@ Show the plot of the volatility forecast:
 
 * [README.md](Activities/08-Stu_USD/README.md)
 
-* [USD_per_Euro_Hourly_Mid Prices.csv](Activities/03-Stu_USD/Resources/USD_per_Euro_Hourly_Mid Prices.csv)
+* [USD_per_Euro_Hourly_Mid_Prices.csv](Activities/08-Stu_USD/Resources/USD_per_Euro_Hourly_Mid_Prices.csv)
 
 * [usd.ipynb](Activities/08-Stu_USD/Unsolved/usd.ipynb)
 
