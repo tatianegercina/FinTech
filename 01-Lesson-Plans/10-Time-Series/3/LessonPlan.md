@@ -26,13 +26,15 @@ By the end of this class, students will be able to:
 
 ### Instructor Notes
 
+* Slack out the [imblearn Installation Guide](../../11-Classification/Supplemental/Machine_Learning_Env_Setup_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+
 * Through longer activities, students will consolidate their skills from the previous two days, creating financial models in multiple steps, from stationarizing data to identifying model orders to making predictions on future values and volatility. You and your TAs should be on the lookout for your weaker students during the longer activities. Make sure that such students do not flounder.
 
 * Your students will also learn to validate models by training and testing data. Emphasize that this will be a valuable skill in later units as they dive more deeply into machine learning.
 
 ### Class Slides and Time Tracker
 
-The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
+The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1dpPDlLWNX3j-riUXrBoXQEOUn1l025swCYmP1aGKc1M/edit?usp=sharing).
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
@@ -67,6 +69,8 @@ Describe to students what they will be doing today:
 * They will learn to validate models by training and testing them.
 
 * They will learn to create a model that can continuously update itself.
+
+- - -
 
 ### 2. Instructor Do: Introduction to Linear Regression (15 min)
 
@@ -239,6 +243,8 @@ Explain that you can also compare the RMSE to the standard deviation to get a be
 
 * The RMSE exceeds the standard deviation, indicating that the model may not be very helpful. In other words, on average there are wider swings in the error than the measured temperatures.
 
+- - -
+
 ### 3. Students Do: House Regression (15 min)
 
 In this activity, students will perform linear regression on number of rooms in houses versus their prices.
@@ -248,6 +254,8 @@ In this activity, students will perform linear regression on number of rooms in 
 * [README.md](Activities/07-Stu_House_Regression/README.md)
 
 * [USA_Housing.csv](Activities/07-Stu_House_Regression/data/USA_Housing.csv)
+
+- - -
 
 ### 4. Instructors Do: Review House Regression (10 min)
 
@@ -307,6 +315,8 @@ If time remains, ask students some of the following review questions:
   * **Answer** Both linear regression models and scatter plots emphasize the relationships and impact of two or more variables.
 
 Ask if students have any questions before moving forward.
+
+- - -
 
 ### 5. Instructor Do: Time Series Linear Regression (15 min)
 
@@ -420,6 +430,8 @@ Finally, if time allows, quickly demonstrate an approximate visualization of the
 
   ![Images/ts_regression04.png](Images/ts_regression04.png)
 
+- - -
+
 ### 6. Students Do: Oil Futures (15 min)
 
 In this activity, students will identify seasonal effects in oil futures prices with linear regression.
@@ -429,6 +441,8 @@ In this activity, students will identify seasonal effects in oil futures prices 
 * [README.pdf](Activities/09-Stu_Time_Series_Linear_Regression/README.pdf)
 
 * [oil_futures_starter.ipynb](Activities/09-Stu_Time_Series_Linear_Regression/Unsolved/oil_futures_starter.ipynb)
+
+- - -
 
 ### 7. Instructor Do: Review Oil Futures (5 min)
 
@@ -538,6 +552,8 @@ Define the concept of parsimony:
 Explain that we have already seen parsimony in action:
 
 * AIC and BIC reward models for fitting data accurately, but punish them for having a large number of parameters.
+
+- - -
 
 ### 10. Instructor Do: Train, Test, Split (10 min)
 
@@ -664,6 +680,8 @@ Finally, walk through the error metrics:
 
 * The in-sample (_training_ sample) RMSE, at 1.65, is higher than the out-of-sample (_testing_ sample) at 0.70. Typically, out-of-sample errors are higher than in-sample errors.
 
+- - -
+
 ### 11. Students Do: Ripple (15 min)
 
 In this activity, students will create GARCH and linear regression models for the price of Ripple (XRP), a cryptocurrency. They will validate the latter model with training and test sets.
@@ -675,6 +693,8 @@ In this activity, students will create GARCH and linear regression models for th
 * [USD_per_Ripple_XRP_prices.csv](Activities/04-Stu_Ripple/Resources/USD_per_Ripple_XRP_prices.csv)
 
 * [xrp.ipynb](04-Stu_Ripple/Unsolved/xrp.ipynb)
+
+- - -
 
 ### 12. Instructor Do: Review Activity (10 min)
 
@@ -772,6 +792,8 @@ Finally, go over the metrics of the in-sample and out-of-sample predictions:
   * The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data, but is higher in this case.
 
   * This could be due to the fact that our out-of-sample period is small, so just by chance, the model happened to do better out-of-sample than in-sample.
+
+- - -
 
 ### 13. Instructor Do: Rolling Out-of-Sample (15 min)
 
@@ -942,6 +964,8 @@ Walk through the for-loop:
 
 Reassure students that they will be able to use this notebook as a reference for future calculations.
 
+- - -
+
 ### 14. Students Do: Rolled Gold (15 min)
 
 In this activity, students will perform predictions with linear regression on a rolling out-of-sample basis, in order to predict the price of gold.
@@ -953,6 +977,8 @@ In this activity, students will perform predictions with linear regression on a 
 * [gold_price.csv](Activities/06-Stu_Rolled_Gold/Resources/gold_price.csv)
 
 * [gold.ipynb](Activities/06-Stu_Rolled_Gold/Unsolved/gold.ipynb)
+
+- - -
 
 ### 15. Instructor Do: Review Rolled Gold (10 min)
 
@@ -1090,22 +1116,22 @@ Rolling Out-of-Sample Model:
 
 Congratulate the class for making it through their first week of Machine Learning! This is a very valuable skill that is currently changing the face of finance.
 
+- - -
+
 ### 16. Instructor Do: Career Services Lesson (35 min)
 
 **Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
 
 Explain to students that now that they have completed their first projects and are starting to learn new things such as machine learning, it is time to think about updating resumes to showcase these valuable skills!
 
-Use the following slides and lesson plan to discuss the Career Services content for this week.
+Use the following lesson plan to discuss the Career Services content for this week.
 
 **Files:**
 
-* [Career Services Slides](https://docs.google.com/presentation/d/1f1h9TRxFlHJLEiL53kRMULt2FpG5hm_LJsnd7hY4AIQ/edit?usp=sharing)
-
-* [Career Services Lesson Plan](https://docs.google.com/document/d/1BGoLNt4zrD7wJUXwt0KDm4Ubxuljmc07tDJ4ocfeWpE/edit?usp=sharing)
+* [Career Services Lesson Plan](Career_Services_LessonPlan.md)
 
 ### End Class
 
----
+- - -
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

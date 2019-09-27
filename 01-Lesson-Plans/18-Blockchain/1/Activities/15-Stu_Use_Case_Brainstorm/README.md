@@ -5,40 +5,19 @@ different applications you might build with this new technology.
 
 ## Instructions
 
-1. Get into small groups for discusssion.
+* Get into small groups for discussion.
 
-2. As a group, brainstorm different ideas that you have either heard of before, or an idea you think would go great on chain.
+* Go to the [Enterprise Ethereum Alliance members](https://entethalliance.org/members/) page select a few that pop out to you.
 
-3. Write down the ideas as they begin to formulate.
+* Navigate to several of the links.
 
-4. Remember the following features when considering the application use case:
+* Discuss with your group intersting findings:
 
-  * Public
+  * What the use case is
 
-  * Borderless
+  * What problems that blockchain is helping to solve in this use case
 
-  * Neutral
+## Hint
 
-  * Censor Resistant
-
-  * Open
-
-  * Turing complete (can build anything, not limited by programming language features)
-
-5. If you are stuck, pick from the following categories as foundations for ideas:
-
-  * Payment systems/financial services
-
-  * Digital goods and services
-
-  * Video games
-
-  * Chat/messaging applications
-
-  * Media applications
-
-  * IoT applications
-
-  * V2X (Vehicle to Vehicle, Vehicle to Infrastructure communication)ß
-
-6. Come to a consensus about the idea that the group would like to share with the rest of class. Elect a leader to speak.
+* Some of these companies might not directly reference blockchain projects, so you'll want to focus more on
+  the members that have started implementations, versus the ones supporting research and development.

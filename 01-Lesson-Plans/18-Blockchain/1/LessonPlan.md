@@ -36,13 +36,13 @@ By the end of the class, students be able to:
 
 * Ethereum has the largest developer community in the blockchain space, learning it has high skill transferability.
 
-* Today's class will go over some very thought provoking topics, so be prepared for fruitful discussions.
-
 * Smart Contracts = Programs that run on the Blockchain, and nothing more. You write smart contracts in Solidity, compile them,
   create the contract with a transaction on the blockchain. The contract can then be used on Ethereum.
 
 * While blockchain inherently has a finance-heavy set of use cases, encourage students to think bigger,
   since the technology can be used for building secure, globally distributed software.
+
+* Be sure to read through Peoplechain before you teach it.
 
 ### 1. Instructor Do: Welcome (5 min)
 
@@ -50,97 +50,109 @@ By the end of the class, students be able to:
 
   * [slides x-y]()
 
-Welcome to the blockchain part of the course! Introduce the students by reminding them
-that they are about to embark on a new set of technologies from they have been
-using.
+Welcome students to the course by expressing excitement over starting the final lap in this bootcamp marathon -- BLOCKCHAIN -- and that some might say it’s the most exciting lap by far!
 
-* Remind the students that it is normal that they may feel a sense of unfamiliarity as they are charting new territories.
+* Blockchain is exciting - and critical for their careers - because blockchain technology powers not just cryptocurrencies but entire decentralized economies and even enterprise networks.
 
-* Explain to students that blockchain technology is the thing that powers cryptocurrencies.
+* For example, JP Morgan Chase, the largest US bank, created Quorum, an Ethereum-based blockchain, in order to leverage the security that blockchain provides for their own systems
+  (and, probably, because they are afraid of being left in the dust by this new technology!).
 
-* To name a few popular ones, Bitcoin, Litecoin, Ethereum, Ripple, Dash, and Stellar.
+* Blockchain is a buzz-word in the industry, but it’s much more than that -- it’s a new way of thinking about money.
 
-* It does not only power FinTech solutions, it is being adopted in many industries like health care, IoT, supply chain tracking, and many more.
+Some of this may seem intimidating to the students, so express that you are proud of how far the class has already traveled together as a team;
+after 17 weeks together, the students can do Python, Pandas, and ML! And, by the end of this block (get it?),
+they will be able to speak “blockchain” -- but we’re going far beyond the terminology.
+
+* You’ll be building your own blockchain wallets, write smart contracts, and build a blockchain from scratch.
+
+* That’s huge. That’s not going to be easy. But I know you can do it - after all, you’ve made it this far!
 
 ### 2. Instructor Do: Blockchain Skill Check (5 min)
 
-Time to gauge which students are familiar with the technology by asking a few questions.
-Begin asking simple yes or no questions and ask the students to raise their hands for yes:
-
-* How many of you have heard of cryptocurrency before?
-
-* How many of you have ever purchased cryptocurrency?
-
-* How many of you have ever traded cryptocurrency?
+Before we dig in, let’s get a sense for where the class might be when it comes to blockchain.
+Ask a few questions and have the students give a thumbs up for yes or a thumbs down for no.
 
 * How many of you have heard of blockchain before?
 
-* How many of you have ever purchased blockchain before?
+* How many of you have heard of cryptocurrency before?
 
-The last question is a loaded one: everyone should have their hands down, and it may even elicit some laughs from those that get the joke.
-State that blockchain is the technology that powers not just cryptocurrencies but entire decentralized economies and even enterprise networks.
-Notably, JP Morgan Chase, the largest US bank, created Quorum, an Ethereum based blockchain.
+* How many of you have ever used a blockchain, aka crypto wallet?
 
-Have the students reset and put their hands down, then ask the students to hold out a fist-to-five (fist for 0, 5 fingers up for 5) to answer how familiar they are with the following topics:
+* How many of you have ever traded cryptocurrency?
+
+Ask the students to hold out a fist-to-five (fist for 0, 5 fingers up for 5) to answer how familiar they are with the following topics:
 
 * How familiar are you with blockchain?
 
 * How comfortable do you feel having a conversation about blockchain technology?
 
-* How familiar are you with smart contracts?
+* How familiar are you with Ethereum?
 
-At this point you should have an idea of which students have an affinity towards this technology.
+Remark on the results.
 
-Take a mental note of these students, as you will be able to distribute them among groups that have less knowledge about the topic.
+* “It looks like we have some blockchain experts - awesome!”
+
+Take a mental note of the students with strong familiarity with blockchain, as you will be able to distribute them among groups that have less knowledge about the topic.
+Ask the students to hold out a fist-to-five (fist for 0, 5 fingers up for 5) to answer how familiar they were with the following topics before they started the course.
+
+* How familiar were you with Python?
+
+* How comfortable were you having a conversation about machine learning?
+
+* How familiar were you with data science?
+
+Remind the students that just like they learned how to master Python and ML, they will surprise themselves with how much they learn over the course of the coming weeks.
+It may seem like a foreign language at times, but they’ve already learned a new language as part of this course, and you and the TAs will be there to guide them.
+
+Tell the students it’s time to dig into blockchain: first things first, let’s start with a definition.
+
+Ask the students if anyone has a definition of blockchain that they would like to share with the class.
+Thank the students for sharing.
+
+Then, show the definition of blockchain on the slide.
+Ask the students to read it to themselves.
+Ask them if they have questions. Then, break down the definition.
+
+* A blockchain is a distributed "immutable" database that is not controlled by a single, central authority.
+  Instead, the database is synchronized across the network, with special rules in place to incentivize good actors and disincentivize bad actors.
+  It is immutable, which means you can only add to the database: you cannot change the history.
+  This provides a powerful means of creating a trusted "source of truth" in a trustless environment.
 
 ### 3. Instructor Do: The Importance of Blockchain (10 min)
 
-For this activity, the instructor will lead a formal lecture regarding what blockchain technology is and why it’s important.
+For this activity, the instructor will lead a formal discussion regarding what blockchain technology is and why it’s important.
 
-* **Files:**
+First, navigate to the slides and begin with the "Bank CEO" example:
 
-  * [slides x-y]()
+Ask the students the following questions, giving them an opportunity to answer, then confirm each of the listed answers:
 
-Begin the activity by navigating to the slides and asking the students what types of financial services are available to them.
-Discuss common services like loans, payments, credit cards, brokerages, investing, etc. These can be commonly used consumer options or business options.
+* "Why would a banker want to use a blockchain?"
 
-* Now ask the students to imagine if they did not have any of these facilities available to them due to poor financial infrastructure.
+  **Answer**: Using a blockchain for inter-bank communication is faster, more secure, and cheaper than the systems in place now, Swift and ACH.
 
-* Explain to the students that this is the reality that 2+ billion people in the world do not have access to a banking institution.
+* Why would an individual in an underbanked, developing, or authoritarian country want to use a blockchain?
 
-* Even more do not have access to stable financial services.
+  **Answer**: Transactions cannot be censored.
 
-* Things as simple as getting a business loan are near impossible in many countries today.
+  **Answer**: You only need a mobile device and internet connection, which is a common commodity even in developing countries.
 
-Explain that blockchain technology has the potential, and is currently solving these global problems today.
+  **Answer**: Some blockchains can be used as a hedge against hyperinflation of their native currency.
 
-Blockchain technology is not only helping those without strong financial institutions, but it is solving financial bottlenecks we've been facing for decades.
+* Why would an individual in the US want to use a blockchain?
 
-* Explain that blockchain technology is being adopted by top companies such as IBM and JPM Chase for solving infrastructure issues such as:
+  **Answer**: Removes intermediaries like PayPal, Venmo, Cashapp, etc, and allows for peer to peer payments, thus lower fees.
 
-  * Finality and transaction settlement
+  **Answer**: Custody over your funds, versus allowing a bank to have custody.
 
-  * Supply chain tracking and logistics
+  **Answer**: Cheaper than domestic wire transfers
 
-  * Tokenization of securities and new financial markets
+  **Answer**: Brings financial services typically available to the upper class to everyone.
 
-  * Notarization and multi-party agreement verification
+* Why would anyone want to use blockchain?
 
-Ask the students, what happens when you send money to someone via PayPal? Venmo? Cashapp? Walk them through the steps:
+  **Answer**: Fast, global transactions that are not managed by a single authority
 
-* The money goes from your bank, to PayPal, then to the final bank before it hits the other person's account balance.
-
-* How many fees are being created throughout this process? What is a notable characteristic of this model?
-
-* Explain how in this model, there are many middlemen that sit between you and the recipient of the money.
-
-* Drive home the point that in a blockchain model, the transaction simply goes from account A to account B, with no middlemen institutions.
-
-* This allows for much faster settlement, and a much better experience for the consumer.
-
-Now ask the students, what were to happen if you lived in a country where your human rights were not respected?
-
-What type of financial system would you choose in this case?
+  **Answer**: Secure, modern infrastructure for the next generation of the internet. This is also known as Web 3.0.
 
 ### 4. Students Do: Use Case Study (10 min)
 
@@ -156,6 +168,9 @@ Keep these students in mind for later as they may be helpful to distribute among
 **Instructions:**
 
 * [README.md](Activities/04-Stu_Use_Case_Study/README.md)
+
+If students are actively engaged with each other and the research process, they are succeeding at this exercise.
+The only way to not excel at this exercise is to not participate in the research.
 
 ### 5. Instructor Do: Use Case Study Review (5 min)
 
@@ -184,12 +199,15 @@ Some common features may be:
 ### 6. Instructor Do: The 5 Pillars of Open Blockchains (10 min)
 
 For this activity, the instructor will lead a formal lecture regarding what the 5 pillars of open blockchains are and why they are relevant.
+See the [blockchain support document](../Instructor_Support/Blockchain.md) for a background video on this topic.
 
-* **Files:**
+Tell the students:
 
-  * [slides x-y]()
+* As we talk through each pillar, keep in mind what you uncovered during the previous exercise. What feature would you put in each category?
 
-Begin the activity by reminding the students to keep the use cases they just examined in mind, as well as comparing the features they wrote down.
+* These pillars are the fundamental features that blockchains were created to provide. Learning these will help you understand
+  how some blockchains sacrifice these features for speed or marketing purposes instead of innovating on the underlying algorithms.
+  The chains that innovate on these features are the most universal in terms of feature sets, and can be easily adapted to enterprise.
 
 Then, transition through the slides and begin talking about each topic.
 
@@ -219,17 +237,17 @@ Begin by prefacing that each of these pillars ties into each other to build an o
 
 Ask the students: "Are you moving money across a border when you bring a credit card across customs?"
 
-  * **Answer**: No
+  **Answer**: No
 
 Ask: "In that case, are you moving money across a border when you load cryptocurrency onto your phone and travel internationally?"
 
-  * **Answer**: Nope, you only have to register cash over 10k
+  **Answer**: Nope, you only have to register cash over 10k
 
 Elaborate and bring out this analogy:
 
-  * Much like the money is not on the card itself, a crypto wallet does not hold the crypto itself, just the access.
+* Much like the money is not on the card itself, a crypto wallet does not hold the crypto itself, just the access.
 
-  * The blockchain is already synchronized to a device in the country you are traveling to, so accessing it is the same
+* The blockchain is already synchronized to a device in the country you are traveling to, so accessing it is the same
   as if you were to swipe a Visa card internationally, only without Visa getting involved.
 
 * You can also use a satellite connection to connect to blockchain networks and broadcast transactions, therefore it is truly global.
@@ -242,9 +260,6 @@ Elaborate and bring out this analogy:
 * The blockchain is agnostic to the users, regardless of political or social status, or geographic location.
   A wealthy banker or government leader use the protocol in the exact same way anyone else would.
 
-* Reinforce that while this idea sounds radical at first, it is the way the world worked up until the mid 1990s.
-  This is also how cash, and many peer to peer payments work today.
-
 * Open blockchain networks are also governed in a neutral fashion, with many using the blockchain itself for voting on the next network upgrades.
 
 ![screenshot of censor resistant](https://image.shutterstock.com/image-illustration/closeup-surprised-desperate-looking-man-600w-1399238933.jpg)
@@ -255,7 +270,7 @@ Elaborate and bring out this analogy:
 
 * Blockchain is being used currently around the world to avoid censorship or hyperinflation in many countries such as Venezuela, Zimbabwe, China, and Russia.
 
-* It has been said that blockchain and crypto can be seen as an insurance policy against an Orwellian future.
+* It has been said that blockchain and crypto can be seen as an insurance policy against a dystopian future.
 
 * Money is often compared to a form of speech. These are systems where this form of expression cannot be censored.
 
@@ -294,31 +309,46 @@ Have the students pick which part of the world their group will be in.
 
 * [README.md](Activities/07-Stu_Peoplechain/README.md)
 
+Time the students and allow the students to transact for 3 minutes.
+
 ### 8. Instructor Do: Peoplechain Review (5 min)
+
+Ask every group to make a list of all the transactions they have a record of in order of highest dollar amount to lowest dollar amount.
+
+Ask each group to slack their list to you.
+
+Show the two different lists on the board. They should be the same, if they aren’t, ask: why aren’t these the same?
+
+Did someone miss a transaction? In this case, keep in mind this is why we have computers do it for us.
+
+Did someone lie about a transaction? In this case, it’s easy to tell because we have so many records of the transaction.
 
 Ask the students a few questions about the activity:
 
-  * If one person lied about a transaction, would it be easy to tell?
+* If one person lied about a transaction, would it be easy to tell?
 
-    * **Answer**: Sure, you could double check with another ledger.
+  **Answer**: Sure, you could double check with another one of the many records of the transaction.
 
-    * **Answer**: In reality, there are cryptographic features that will also prevent this.
+  **Answer**: In reality, there are cryptographic features that will also prevent this.
 
-  * What would you do if you discovered a ledger keeper was lying, or not responding?
+* What would you do if you discovered a record keeper was lying, or not responding?
 
-    * **Answer** Take note and stop communicating with them.
+  **Answer** Take note and stop communicating with them.
 
-    * **Answer** You might even tell others that they lied.
+  **Answer** You might even tell others that they lied.
 
-  * What are the ways this system is making lying harder to do?
+* What are the ways this system is making lying harder to do?
 
-    * **Answer** Since the ledger is everywhere, and transactions are broadcasted to everyone, it is difficult to lie.
+  **Answer** Since the ledger is everywhere, and transactions are broadcasted to everyone, it is difficult to lie.
+
+* Theoretically, all the students in each country could be connected to each other.
+  In our example, we just had one “internet connection” between the Slackers for each country for the sake of the example.
 
 Ask the students to ponder the following (no answer required):
 
-  * While it may be easy to discover one node is lying, what if one entire region had a different copy of the ledger?
+* So, given the possibility of all these connections, what if one entire region had a different list of transactions?
 
-    * **Answer** You would have a consensus problem.
+  **Answer** You would have a consensus problem -- we’ll discuss how to manage this with consensus algorithms in a later lesson.
 
 ### 9. Student Do: Basic Terminology (10 min)
 
@@ -365,7 +395,7 @@ Navigate to the slides and define common terms:
 
 * Ask the students "If a signed message is modified, what happens?"
 
-  * **Answer** The message will be invalidated and you would know the message was modified
+  **Answer** The message will be invalidated and you would know the message was modified
 
 ![screenshot of wallet](https://image.shutterstock.com/image-illustration/digital-wallet-concept-3d-rendering-600w-487340401.jpg)
 
@@ -407,7 +437,13 @@ Navigate to the slides and define common terms:
 Reassure the students that we will dive deeper into the mechanisms in which nodes and miners communicate with each other,
 as well as the full lifecycle of a transaction from creation to being stored in a block.
 
-### 11. Student Do: Using a Wallet (10 min)
+- - -
+
+### 11. BREAK (15 min)
+
+- - -
+
+### 12. Student Do: Using a Wallet (10 min)
 
 For this activity, students will be testing a cryptocurrency wallet.
 
@@ -417,30 +453,32 @@ Have the TAs circulate through the class and ensure that students are able to se
 
 * [README.md](Activities/10-Stu_Using_Wallet/README.md)
 
-### 12. Instructor Do: Using a Wallet Review (5 min)
+### 13. Instructor Do: Using a Wallet Review (5 min)
 
 Ask the students: "What types of things stood out to you?"
 
-  * **Answer**: You can pick your own fees
+  **Answer**: You can pick your own fees
 
-  * **Answer**: You can view the status of the transactions live
+  **Answer**: You can view the status of the transactions live
 
 Let the students know that there are many types of wallets. We just used a desktop wallet,
 but the students will be building one next unit.
 
 Ask if any students noticed the "data" field, and what it might be.
 
-  * Explain that this field is where contract calls or arbitrary strings can be stored within the transaction.
+* Explain that this field is where contract calls or arbitrary strings can be stored within the transaction.
 
-### 13. Instructor Do: Block Explorers Demo (10 minutes)
+### 14. Instructor Do: Block Explorers Demo (10 minutes)
 
 The goal of this demo is to show the students how block explorers can be used to visualize transactions on the blockchain.
 
 Open [this link](https://ropsten.etherscan.io/address/0xc3879b456daa348a16b6524cbc558d2cc984722c) to the Ropsten Etherscan block explorer.
 
-This has an address pre-populated, but it is recommended to use an account that you own and have made the transactions personally.
+This has an address pre-populated, but it is recommended to use an account that you own and have made the transactions personally since you
+will be more familiar with them.
 
-* Point out the balance field. Reflect that this is part of the public nature of blockchains, and some blockchains have this field hidden.
+* Point out the balance field. Reflect that this is part of the public nature of blockchains, and some blockchains have this field hidden,
+  like Zcash and Monero.
 
 ![balance](Images/balance.png)
 
@@ -454,7 +492,7 @@ This has an address pre-populated, but it is recommended to use an account that 
 
 * Ask the students what they think a transaction hash might be, and what it might be used for.
 
-  * **Answer**: The transaction hash is used as the unique ID of the transaction to find it later.
+  **Answer**: The transaction hash is used as the unique ID of the transaction to find it later.
 
 * Go back to the initial address page, then click on the "block number" section of a transaction
 
@@ -473,7 +511,7 @@ This has an address pre-populated, but it is recommended to use an account that 
 
 ![block](Images/block.png)
 
-Have a student volunteer to send out the transaction hash of a recent transcation made to a fellow student.
+Have a student volunteer to send out the transaction hash of a transcation they made to a fellow student.
 
 Walk through the student's recent transactions and point out the "from", "to", and "amount" fields and verify this with the students that these transactions ocurred between.
 
@@ -488,7 +526,7 @@ If they point out the following terms, reassure them that they will be explained
 
 * Nonce
 
-### 14. Student Do: Visualizing Transactions (10 min)
+### 15. Student Do: Visualizing Transactions (10 min)
 
 For this activity, students will visualize transactions using the same technique used in the demo.
 
@@ -500,7 +538,7 @@ Have TAs circulate to provide assistance to students facing challenges or to cla
 
 * [README.md](Activities/14-Stu_Visualizing_Transactions/README.md)
 
-### 15. Instructor Do: Visualizing Transactions Review (5 min)
+### 16. Instructor Do: Visualizing Transactions Review (5 min)
 
 Review the groups and ensure that students can navigate and visualize transactions.
 
@@ -521,33 +559,42 @@ called "Zero Knowledge Proofs" that will enable completely private transactions 
 This means that the balances and transaction history between accounts will be encrypted in a way that allows
 for verification without exposing potentially sensitive information.
 
+This allows for private, enterprise applications to run on open blockchains!
+
 This means that in the future, transactions will be private, and you will only be able to view transactions that you are a part of.
 There are currently public blockchains like Zcash that implement this now by default, so be on the look out for zero knowledge protocols
 in future blockchain upgrades.
 
-- - -
-
-### 16. BREAK (15 min)
-
-- - -
-
 ### 17. Instructor Do: Intro to Ethereum (10 min)
-
-* **Files:**
-
-  * [slides x-y]()
 
 Walk through the slides and highlight the following:
 
-* Ask the students: "What would it be like to have money built into your programming language, as a first data type like string or number?"
-  This is what Ethereum brings to the table.
+Ask the students:
+
+* What would it be like to be able to code with money, like this?
+
+  ```python
+  amount = $10 dollars
+  recipient = "JaneDoe123"
+  wallet.send_transaction(amount, recipient)
+  ```
+
+  That's what Ethereum brings to the table, just replace a couple fields:
+
+  ```python
+  amount = 0.05 Ether
+  recipient = "0xc3879B456DAA348a16B6524CBC558d2CC984722c"
+  wallet.send_transaction(amount, recipient)
+  ```
+
+  Note: this is pseudocode, but should get the point across.
 
 * Ethereum secures over $20 billion in assets without a central authority. It powers a huge ecosystem of decentralized applications
   and financial ecosystems.
 
 * First generation blockchains were much like the days of carrying a cell phone, iPod, and calculator with you. Each solved a specific problem.
   Ethereum brought to blockchains what the iPhone brought to personal computing, a general purpose platform where apps take the place of separate devices.
-  Now, you can build fully fledged applications on top of the blockchain with Ethereum.
+  Now, you can build fully fledged applications, called "Smart Contracts" on top of the blockchain with Ethereum.
 
 * You can think of Ethereum like the inverse of AWS Lambda. With Lambda, you upload your code to Amazon and pay per use.
   Amazon in this case is the central party, they control the computing. Whereas in Ethereum, every person who helps run Ethereum
@@ -559,11 +606,8 @@ Walk through the slides and highlight the following:
 
   **Answer** Highly reliable systems that will run regardless of if some servers go down
 
-If students are unclear as to how this works, reassure them that they will be learning the inner workings when they begin Smart Contracts.
+If students are unclear as to how this works, reassure them that they will be learning the inner workings when they begin Smart Contracts in Unit 20.
 The biggest point to get across is that everyone shares computing power in order to create a platform that anyone can upload and run code on top of.
-
-* Tokenization is one of the leading use cases of the platform, allowing for things like stablecoins, utility tokens, security tokens,
-  or for representing unique digital or physical assets.
 
 Now, transition to talk about the types of financial services that you can build with Ethereum:
 
@@ -579,11 +623,13 @@ Now, transition to talk about the types of financial services that you can build
 
 * Brokerage services – Trading tokens and other digital assets on the Blockchain.
 
-* Foreign exchange – Using crypto as a bridge between fiat currencies to reduce the cost of foreign currency fees.
+* Foreign exchange – Using crypto as a bridge between fiat/government currencies to reduce the cost of foreign currency fees.
 
 * Decentralized crypto exchange - Using the blockchain as a backend to support a crypto-trading exchange.
 
-### 18. Student Do: Use Case Brainstorm (15 min)
+* Tokenizing assets - Representing things from the US Dollar, Gold, Securities, to unique video game assets a on the blockchain.
+
+### 18. Student Do: Use Case Brainstorm (10 min)
 
 Now that the students have learned about the features of Ethereum and how it acts as a decentralized world computer,
 it is a good time to brainstorm different use cases given these features.

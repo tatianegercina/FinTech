@@ -23,7 +23,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 11.3 Slides]().
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
@@ -55,19 +55,19 @@ Walk through the first few blocks of the notebook.
 
 * We created two classes in this data, with two important features. First, one class is much larger than the other. Second, the classes have significant variation, so neither is cleanly distinguishable from the other.
 
-  ![eval_1.png](Images/eval_1.png)
+  ![eval_1.png](Images/eval_1.PNG)
 
 * Using a logistic regression mode, we try to predict the class, purple or yellow, with the coordinates of a point.
 
 Ask a student to help you interpret the output of the confusion matrix. Refer to the slide to reveal the correct answer.
 
-![eval_2png](Images/eval_2.png)
+![eval_2png](Images/eval_2.PNG)
 
 * Looking only at this matrix, it seems that the model does reasonably well. While there are some false positives, the vast majority of data points are classified correctly.
 
 Move on to the next block, and ask a student to define the three metrics that are shown here. Once again, refer to the slide to confirm the student's answers.
 
-![eval_3png](Images/eval_2.png)
+![eval_3png](Images/eval_2.PNG)
 
 * Precision is the proportion of predicted positives that are accurate. Recall is the proportion of actual positive that were predicted as positive. The F1 metric is a blended average of the two.
 
@@ -81,7 +81,7 @@ In this activity, students will discuss the relative importance of false positiv
 
 **Instructions:**
 
-* [README.md](Activities/02-Stu_Hypothetical_models/README.md)
+* [README.md](Activities/02-Stu_Do_Hypothetical_Models/README.md)
 
 ### 4. Instructor Do: Review Hypothetical Models (10 min)
 
@@ -175,7 +175,7 @@ Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for 
 
 Introduce students to the dataset they will be using for this activity. Each row represents a person with a credit card account. ln_balance_limit is the log of the maximum balance they can have on the card; 1 is female, 0 male for sex; the education is denoted: 1 = graduate school; 2 = university; 3 = high school; 4 = others; 1 is married and 0 single for marriage; default_next_month is whether the person defaults in the following month (1 yes, 0 no).
 
-### 8. Instructor Review: More Loans (10 min)
+### 8. Instructor Review: More Loans (5 min)
 
 **Files:**
 
@@ -221,16 +221,15 @@ Continue in the slides to the undersampling slide.
 
 * Just like oversampling, there are numerous methods for undersampling. We will go over random undersampling and cluster-centroid undersampling.
 
-* In random undersampling, the algorithm randomly choose majority class instances to take out of the training set until the number of instances of the majority class is equal to the number of instances in the minority class training set.
+* In random undersampling, the algorithm randomly chooses majority class instances to take out of the training set until the number of instances of the majority class is equal to the number of instances in the minority class training set.
 
-* In cluster centroid undersampling, the algorithm first creates n clusters in the majority class training data using the K-means clustering strategy, where n is equal to the number of minority class training instances, and then takes the centroids of those clusters to be the majority class training set. This is meant to ensure that the sampled data is "representative" of the majority set, as compared to a random set.
+* In cluster centroid undersampling, the algorithm first creates `n` clusters in the majority class training data using the K-means clustering strategy, where `n` is equal to the number of minority class training instances, and then takes the centroids of those clusters to be the majority class training set. This is meant to ensure that the sampled data is "representative" of the majority set, as compared to a random set.
 
 Pause for students' questions before moving on to the next activity.
 
 ### 10. Students Do: Undersampling (15 min)
 
 In this activity, students will research and practice undersampling with the imbalanced-learn library.
-
 
 **Files:**
 
@@ -242,7 +241,7 @@ In this activity, students will research and practice undersampling with the imb
 
 Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. Expert Systems with Applications, 36(2), 2473-2480. (https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients#)
 
-### 11. Instructor Review: Undersampling (10 min)
+### 11. Instructor Review: Undersampling (5 min)
 
 **Files:**
 
@@ -300,7 +299,6 @@ Walk through the rest of the code and pause for questions before moving on to th
 
 In this activity, students will research and practice combination sampling with the imbalanced-learn library.
 
-
 **Files:**
 
 [combination_sampling.ipynb](Activities/07-Stu_Do_Combination_Sampling/Unsolved/combination_sampling.ipynb)
@@ -311,7 +309,7 @@ In this activity, students will research and practice combination sampling with 
 
 Yeh, I. C., & Lien, C. H. (2009). The comparisons of data mining techniques for the predictive accuracy of probability of default of credit card clients. Expert Systems with Applications, 36(2), 2473-2480. (https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients#)
 
-### 15. Instructor Review: Combination Sampling (10 min)
+### 15. Instructor Review: Combination Sampling (5 min)
 
 **Files:**
 
@@ -343,17 +341,17 @@ Pause for questions, then continue on to the notebook.
 
 Logistic Regression:
 
-![pr_2.png](Images/pr_2.png)
+![pr_2.png](Images/pr_2.PNG)
 
 Balanced Random Forest:
 
-![pr_3.png](Images/pr_3.png)
+![pr_3.png](Images/pr_3.PNG)
 
 * At the default threshold, it looks like the two models perform similarly. However, depending on the relative cost of positive and false negatives, we might want to change the threshold. This is when a precision-recall curve becomes useful.
 
 * The PR curve below shows that the random forest classifier outperforms the logistic regression model at almost all thresholds.
 
-![pr_1.png](Images/pr_1.png)
+![pr_1.png](Images/pr_1.PNG)
 
 ### 17. Students Do: Credit Card Fraud (15 min)
 
@@ -385,7 +383,7 @@ Bertrand Lebichot, Yann-Aël Le Borgne, Liyun He, Frederic Oblé, Gianluca Bonte
 
 Fabrizio Carcillo, Yann-Aël Le Borgne, Olivier Caelen, Frederic Oblé, Gianluca Bontempi Combining Unsupervised and Supervised Learning in Credit Card Fraud Detection Information Sciences, 2019
 
-### 18. Instructor Review: Credit Card Fraud (10 min)
+### 18. Instructor Review: Credit Card Fraud (5 min)
 
 **Files:**
 
