@@ -13,3 +13,7 @@ When adding new columns to the DataFrame, work with the closing stock prices. Do
 2. Create a column named `Returns` in the DataFrame using the `pct_change()` function. Its values will be the return, or the change of the stock price in percentage points from one day to the next. Plot the returns.
 
 3. Create a column named `Diff` in the DataFrame using the `diff()` function. Its values will be the difference in stock price from one day to the next. Plot this column.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
