@@ -369,7 +369,7 @@ Next, demo the following while explaining each step:
 
   ![markdown-line-break-results](Images/markdown-line-break-results.png)
 
-* Use the backtick (`\`) syntax to wrap text as snippets or code. Wrapping text as snippet or code blocks adds emphasis to a specific item or piece of code.
+* Use the backtick **`** syntax to wrap text as snippets or code. Wrapping text as snippet or code blocks adds emphasis to a specific item or piece of code.
 
   ![markdown-text-code-snippet](Images/markdown-text-code-snippet.png)
 

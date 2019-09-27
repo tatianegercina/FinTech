@@ -18,7 +18,7 @@ By the end of class, students will be able to:
 
 * This lesson introduces new content rapidly. Students may express frustration at learning new cloud technologies. Remind students that while the learning curve may be steep at first, AWS and Cloud experience is highly sought-after and well worth the effort required to become comfortable with it.
 
-* **Important!** Slack out the disclaimer for [AWS Free Tier](../Supplemental/AWS-Free-Tier.pdf) services prior to class. Take some time at the beginning of class to explain that while we are only using free tier services in class, students should review this documentation in order to avoid accidentally incurring charges.
+* **Important!** Slack out the disclaimer for [AWS Free Tier](../Supplemental/AWS-Free-Tier.md) services prior to class. Take some time at the beginning of class to explain that while we are only using free tier services in class, students should review this documentation in order to avoid accidentally incurring charges.
 
 * Note that in the past, AWS content has appeared differently for some instructional teams. It seems that AWS does A/B testing on their UI. If your AWS views _don’t_ match up with the views in the lesson plan, check that you've pulled the latest updates from github or look in the Slack Instructional Team channel for announcements regarding this.
 
@@ -27,8 +27,6 @@ By the end of class, students will be able to:
 * Today's class should be a fun one. Students will put together many different technologies covered so far and learn how they can interact with cloud services.
 
 * There are a few activities that require setup. Have the class follow along and ask questions as you go.
-
-* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Slideshow and Time Tracker
 
@@ -46,9 +44,9 @@ By the end of class, students will be able to:
 
 Welcome class to day 2 of Unit 13, this should be a fun one since students will go deeper on using AWS to deploy machine learning models.
 
-Explain students that along this unit, we will use the free tier of AWS, as well as, the trial period for some of the services. Slack out the following resources to be used as reference to understand how the free offer of AWS works.
+Explain students that throughout this unit, we will use the free tier of AWS, as well as, the trial period for some of the services. Slack out the following resources to be used as reference to understand how the free offer of AWS works.
 
-* [AWS Free Tier Supplemental](../Supplemental/AWS-Free-Tier.pdf)
+* [AWS Free Tier Supplemental](../Supplemental/AWS-Free-Tier.md)
 
 * [AWS Free Tier Documentation](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Categories=categories%23ai-ml)
 
@@ -66,7 +64,7 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to create an `administrator` user using AWS Identity and Access Management (IAM) service. This will add some extra security when working on AWS.
 
-Explain to students, that a common best practice, is to avoid using the principal or _root_ user to manage their AWS account. This principal user is the one they used to create their AWS account. Instead, a new user for each person that requires administrator access should be created using the AWS Identity and Access Management (IAM) service.
+Explain to students that a common best practice is to avoid using the principal or _root_ user to manage their AWS account. This principal user is the one they used to create their AWS account. Instead, a new user for each person that requires administrator access should be created using the AWS Identity and Access Management (IAM) service.
 
 Open the [AWS Managemet Console](https://console.aws.amazon.com) using your _root_ user, and show students how to create a new user on IAM as follows.
 
@@ -163,6 +161,10 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to create an instance of Amazon SageMaker, and how to use Jupyter notebooks on the AWS cloud.
 
+**Files:**
+
+* [monte_carlo.ipynb](Activities/02-Evr_SageMaker/Solved/monte_carlo.ipynb)
+
 Comment to students that you will demo how to create an Amazon SageMaker Notebook Instance, ask them to follow your steps as you move along the demo. Ask TAs to assist students if they get stuck along the process.
 
 Login into your _AWS Management Console_ using your admin user, tell students that the first component that Amazon SageMaker requires is an [Amazon S3](https://aws.amazon.com/s3) bucket to store data to feed machine learning models, or to store prediction results.
@@ -196,7 +198,7 @@ To create an Amazon S3 bucket, follow the next steps:
 
 * Note down (copy/paste/save) the name of bucket for use in the following section.
 
-Comment to students, that the next step is to create a Jupyter notebook instance on Amazon SageMaker. Follow the next steps.
+Explain to students that the next step is to create a Jupyter notebook instance on Amazon SageMaker. Follow the next steps.
 
 * Navigate to the AWS Management Console homepage, on the _Find Services_ search box type _sagemaker_, and select Amazon SageMaker from the list.
 
@@ -229,7 +231,7 @@ Comment to students, that the next step is to create a Jupyter notebook instance
 
   ![Creating an Amazon SageMaker instance - step 14](Images/sagemaker-14.png)
 
-While the notebook instance is being created, comment to students that AWS charges for these and most resources as they are created, event when not in use, this instance is billed for by the second until it's turned off and deleted. Students will learn how to delete these resources later on Today's class.
+While the notebook instance is being created, explain to students that AWS charges for these and most resources as they are created, event when not in use, this instance is billed for by the second until it's turned off and deleted. Students will learn how to delete these resources later in Today's class.
 
 * Once the notebook instance status is _InService_, it's ready to be used; on the _Actions_ column, click on `Open JupyterLab` to continue.
 
@@ -241,13 +243,13 @@ While the notebook instance is being created, comment to students that AWS charg
 
   ![Creating an Amazon SageMaker instance - step 16](Images/sagemaker-16.png)
 
-* On the new notebook, code a hello world in Python in the first cell to test. Be sure all the class has reach this point before moving forward.
+* On the new notebook, code a `hello world` statement in Python in the first cell as a test. Be sure that all of the class has reached this point before moving forward.
 
   ![Creating an Amazon SageMaker instance - step 17](Images/sagemaker-17.png)
 
-Comment to students, that it's possible to code a Jupyter notebook from scratch on this Amazon SageMaker's notebook instance, but also, you can open an existing Jupyter notebook. Slack out to students the `monte_carlo.ipynb` starter file, and continue the demo as follows.
+Explain to students that it's possible to code a Jupyter notebook from scratch on this Amazon SageMaker's notebook instance, but also, you can open an existing Jupyter notebook. Slack out to students the `monte_carlo.ipynb` starter file, and continue the demo as follows.
 
-* This demo code, runs a Monte Carlo simulation that uses the IEX API, so ask students to have their API key at hand.
+* This demo code runs a Monte Carlo simulation that uses the IEX API, so ask students to have their API key at hand.
 
 * In your Amazon SageMaker notebook instance, in left icon menu, click on the _Upload_ icon (arrow up) and select the `monte_carlo.ipynb` notebook to upload.
 
@@ -277,9 +279,9 @@ In this activity, students will learn how a machine learning model is created, t
 
 * [y_austin_final.csv](Activities/03-Ins_SageMaker_Deployment/Resources/y_austin_final.csv)
 
-Explain students, that now, you are going to demo how they can deploy a machine learning model using the built-in models of Amazon SageMaker.
+Explain students that Amazon has actually created an extensive library of machine learning models that are optimized for the cloud. This demo will show how to use one of those models.
 
-Tell students that in this demo, you are going to deploy a linear regression model to predict the amount of rain that will fall in Austin given the average temperature in Fahrenheit degrees.
+Tell students that in this demo, you are going to deploy one of Amazon's linear regression models to predict the amount of rain that will fall in Austin given the average temperature in Fahrenheit degrees.
 
 Start the demo by opening the the Jupyter lab UI at your Amazon SageMaker instance, and create a new folder called `Data`.
 
@@ -372,7 +374,7 @@ Comment to students, that once the data is loaded, the next step is to create th
   role = get_execution_role()
   ```
 
-Now it's time to upload the data to Amazon S3. Comment to students, that in order to train the machine learning model using Amazon SageMaker, the training and testing data should passed through an Amazon S3 Bucket formatted using the [protobuf recordIO format](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-training.html#td-serialization).
+Now it's time to upload the data to Amazon S3. Explain to students that, in order to train the machine learning model using Amazon SageMaker, the training and testing data should pass through an Amazon S3 Bucket formatted using the [protobuf recordIO format](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-training.html#td-serialization).
 
 * The profobuf recordIO format, is a method to serialize structured data (similar to `JSON`), to allow different applications to communicate with each other or for storing data.
 
@@ -461,7 +463,7 @@ Create the instance of the linear learner algorithm and highlight the following:
   linear.fit({'train': s3_train_data, 'test': s3_test_data})
   ```
 
-Comment to students, that this step might take few minutes and it will use resources from the AWS account. Normally, this time is not billed in the two months trial period, however, clarify to students that policies of AWS free and trial offers constantly changes, so they can be billed for few cents. Bellow a sample output is shown, you will notice that text is in red, despite it could denote an error, it's not.
+Explain to students that this step might take few minutes and it will use resources from the AWS account. Normally, this time is not billed in the two months trial period, however, clarify to students that policies of AWS free and trial offers constantly changes, so they should always check the pricing pages for any service that they want to use. Bellow a sample output is shown, you will notice that text is in red, despite it could denote an error, it's not.
 
 ![Deploy SageMaker Model - step 3](Images/deploy-sagemaker-3.gif)
 
@@ -496,13 +498,13 @@ Explain to students that once you have the predictions, the model can be evaluat
 
   ![Deploy SageMaker Model - step 5](Images/deploy-sagemaker-5.png)
 
-Finally, after reviewing the model evaluation's results, comment to studets that the end point is deleted to avoid additional AWS resources usage and extra billing.
+Finally, after reviewing the model evaluation's results, explain to students that the end point needs to be deleted to avoid additional AWS resources usage and extra billing.
 
 ```python
 sagemaker.Session().delete_endpoint(linear_predictor.endpoint)
 ```
 
-Slack out the followin page to students, where they can lear more about the different Amazon SageMaker built-in algorithms.
+Slack out the following page to students, where they can lear more about the different Amazon SageMaker built-in algorithms.
 
 * [Use Amazon SageMaker Built-in Algorithms](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html).
 
@@ -530,7 +532,7 @@ In this activity, students will calculate a linear regression model to predict t
 
 * [boston-housing-regression.ipynb](Activities/04-Stu_Housing_Price/Solved/boston-housing-regression.ipynb)
 
-Reassure students that it's okay if this was challenging. Amazon SageMaker APIs have a learning curve, as do other AWS resources, along with Machine Learning in general; comment students they will get a lot of practice with AWS Today!
+Reassure students that it's okay if this was challenging. Amazon SageMaker APIs have a learning curve, as do other AWS resources, along with Machine Learning in general; Tell students that they will get a lot of practice with AWS Today!
 
 Walk through the solution and highlight the following:
 
@@ -600,7 +602,7 @@ This activity will require use of an AWS SageMaker notebook instance, the unsolv
 
 ---
 
-### 12. Instructor Do: Review CCredit Risk Evaluation with Amazon SageMaker (10 min)
+### 12. Instructor Do: Review Credit Risk Evaluation with Amazon SageMaker (10 min)
 
 * Open JupyterLab in your AWS SageMaker notebook instance.
 
@@ -658,13 +660,13 @@ Answer any questions before moving on.
 
 In this activity, students will delete all the AWS resources created in Today's class to avoid additional charges.
 
-Explain students, as it was mentioned before, the policies for the AWS free tier and trials constantly changes, so it's important to remove any unnecessary resources created on AWS to avoid additional charges, specially Amazon SageMaker instances, since despite they are stopped, AWS bills you for hosting the instances.
+Explain students, as it was mentioned before, the policies for the AWS free tier and trials constantly changes, so it's important to remove any unnecessary resources created on AWS to avoid additional charges, specially Amazon SageMaker instances, since despite that they are stopped, AWS bills you for hosting the instances.
 
 Collaborate with TAs, on assisting students to delete all the AWS resources that students like to remove. Remember to students, that they can save a local copy of the Jupyter notebooks, by right-clicking on the notebook name and selecting the _Download_ option.
 
 ![Downloading a Jupyter notebook](Images/download-notebook-sm.png)
 
-Answer any questions before ending the class.
+Answer any questions before finishing the class.
 
 ---
 

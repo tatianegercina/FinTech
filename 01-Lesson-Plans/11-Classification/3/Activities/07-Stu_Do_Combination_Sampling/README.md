@@ -8,4 +8,6 @@ In this activity, you will practice combination sampling with the imbalanced-lea
 
 * Estimate a logistic regression model and report the classification evaluation metrics this method. 
 
-© 2019 Trilogy Education Services
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

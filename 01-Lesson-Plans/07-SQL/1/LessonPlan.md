@@ -30,6 +30,11 @@ By the end of class, students will be able to:
 
 * This lesson introduces new content rapidly. Students may express frustration at learning a new interface and programming language simultaneously. Explain to students that while the learning curve may be steep at first, SQL experience is highly sought-after and well worth the effort required to become comfortable with it.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [7.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c6264b7e-e1bb-41d4-be84-aac3016512d0) Note that this video may not reflect the most recent lesson plan.
+
+---
+
 ### Class Slides and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1xv6ebYYBpDpQAlB4EOxWeRcdOdZPDSp5oe8d27baU-w/edit?usp=sharing).

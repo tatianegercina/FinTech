@@ -20,7 +20,7 @@ In this activity, you will accomplish the following tasks:
   
 ### Resample Time Series Data
 
-* Resample the dat and plot the weekly average of the closing price.
+* Resample the date and plot the weekly average of the closing price.
 
 ## Optional Challenge
 

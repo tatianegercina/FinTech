@@ -257,7 +257,7 @@ Circulate with TAs during this activity to provide students with assistance. Bel
 
 * Students might face difficulty working with the histograms. Histogram bins have a default value, so if the bins are not configured properly, the charts might not look as expected (the bin edges will be off) and the ranges may deviate from what is being simulated.
 
-* Also keep an eye out for any student issues related to missing data; if heads or tails data is missing, this is most likely because 0 was not appended for the missing values. This could visually result in one side of the distribution being cut off (producing a non-normal distribution with no values for the first coin flip).
+* Also keep an eye out for any student issues related to missing data; if missed or made data is missing, this is most likely because 0 was not appended for the missing values. This could visually result in one side of the distribution being cut off (producing a non-normal distribution with no values for the first shot attempted).
 
 **Instructions:**
 
