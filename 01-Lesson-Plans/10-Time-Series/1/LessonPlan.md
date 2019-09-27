@@ -343,13 +343,13 @@ Answer any remaining questions before moving on.
 
 * **File:** [Activities/03-Ins_Decomposition/Solved/decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
 
-Open [Slide 3](https://docs.google.com/presentation/d/1DSwXmlnnP2_TmhJlBB_95bdWm_m7xb0rACwK-usjfwk/edit#slide=id.g5f3ad86fc3_0_19) and define time series decomposition to the class:
+Use the slides and define time series decomposition to the class:
 
 * In a nutshell, it is separating time series data into useful and less useful components.
 
 * The useful components can be used to observe patterns and to make predictions.
 
-Open [Slide 4](https://docs.google.com/presentation/d/1DSwXmlnnP2_TmhJlBB_95bdWm_m7xb0rACwK-usjfwk/edit#slide=id.g5f3ad86fc3_0_19) and list the components of time series decomposition:
+List the components of time series decomposition:
 
 * Level: What is the average value of the series?
 
@@ -449,7 +449,7 @@ Introduce the topic of the Hodrick-Prescott filter:
 
 * Like rolling average and EWMA, it can be used to capture trends.
 
-Open the [Slideshow](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5f3ad86fc3_0_212) and briefly explain the overall mathematical idea of the Hodrick-Prescott filter (Slides 7-9):
+Open the slides to explain the overall mathematical idea of the Hodrick-Prescott filter (Slides 7-9):
 
   ![Images/hp01.png](Images/hp01.png)
 
