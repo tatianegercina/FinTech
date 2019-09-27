@@ -64,6 +64,10 @@ Describe to students what they will be learning today:
 
 In this activity, you will define stationarity, a key concept in time series modeling.
 
+**Files:**
+
+* [stationarity.ipynb](Activities/01-Ins_Stationarity/Solved/stationarity.ipynb)
+
 Open slide 3 and introduce the term `stationarity`:
 
   * In a stationary process, statistical properties such as the mean and variance do not vary across time.
@@ -422,9 +426,9 @@ In this activity, students will create an ARMA model on yield data.
 
 ### 8. Instructor Do: Review Activity (10 min)
 
-**File:**
+**Files:**
 
-  * [yields.ipynb](Activities/07-Stu_ARMA/Solved/yields.ipynb)
+  * [yields.ipynb](Activities/04-Stu_Yields/Solved/yields.ipynb)
 
 Open the notebook and show the plot of the data:
 
