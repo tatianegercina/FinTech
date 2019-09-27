@@ -601,6 +601,8 @@ Send the following link to students for more information on the order of an ARIM
 
   * [https://people.duke.edu/~rnau/arimrule.htm](https://people.duke.edu/~rnau/arimrule.htm).
 
+- - -
+
 ### 11. Students Do: An ARIMA and a Leg (15 min)
 
 **Files:**
