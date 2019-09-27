@@ -60,6 +60,8 @@ Describe to students what they will be learning today:
 
 * They will learn to use powerful time series models, ARMA,  ARIMA, and GARCH, to forecast financial data.
 
+- - -
+
 ### 2. Instructor Do: Stationarity and Non-Stationarity (10 min)
 
 In this activity, you will define stationarity, a key concept in time series modeling.
@@ -136,6 +138,7 @@ Open the notebook and show the code to convert from a non-stationary dataset to 
 
   * Diff() subtracts out this upward trend, and can often be an easy way to make a series stationary.
 
+- - -
 
 ### 3. Students Do: Stationarity (15 min)
 
@@ -148,6 +151,8 @@ In this activity, students will perform techniques to stationarize a non-station
   * [amazon.csv](Activities/02-Stu_Stationarity/Resources/amazon.csv)
 
   * [stationarity.ipynb](Activities/02-Stu_Stationarity/Unsolved/stationarity.ipynb)
+
+- - -
 
 ### 4. Instructor Do: Review Stationarity (5 min)
 
@@ -220,6 +225,8 @@ Summarize the key points and procedures of this activity:
   * Which technique to use can often be determined by examining the non-stationary plot.
 
   * NaN and infinity values must be dropped along the way.
+
+- - -
 
 ### 5. Instructor Do: Auto-Regressive Moving Average Model (15 min)
 
@@ -316,6 +323,8 @@ Ask your students to identify the features of the ARMA model:
 Reiterate that, despite the possibly intimidating mathematical formula, the idea behind the ARMA model is simple:
 
   * Past values and past errors are used to predict future values.
+
+- - -
 
 ### 6. Instructor Do: ARMA in Practice (10 min)
 
@@ -414,6 +423,8 @@ Finally, highlight a few important features of the model's summary:
 
   * The AIC and BIC values should also be noted, lower values reflecting better accuracy. We will cover these values in greater detail later today.
 
+- - -
+
 ### 7. Students Do: Yields (15 min)
 
 In this activity, students will create an ARMA model on yield data.
@@ -423,6 +434,8 @@ In this activity, students will create an ARMA model on yield data.
   * [README.md](Activities/04-Stu_Yields/README.md)
 
   * [yield.csv](Activities/04-Stu_Yields/Resources/yield.csv)
+
+- - -
 
 ### 8. Instructor Do: Review Activity (10 min)
 
@@ -613,6 +626,8 @@ Send the following link to students for more information on the order of an ARIM
 
   * [stu_ARIMA.ipynb](Activities/06-Stu_ARIMA_Leg/Unsolved/oil_futures_ARIMA.ipynb)
 
+- - -
+
 ### 12. Instructor Do: Review Activity (10 min)
 
 **File:**
@@ -640,6 +655,8 @@ Describe the lag patterns seen in ACF and PACF plots:
   * We might therefore tentatively estimate the order of the ARIMA model as (1, 1, 1), then see if a greater number of lags improves the model fit (i.e., the BIC, AIC) or changes the forecast.
 
 Answer any remaining questions before moving on.
+
+- - -
 
 ### 13. Instructor Do: GARCH (15 min)
 
@@ -771,6 +788,8 @@ Show the plot of the volatility forecast:
 
   * Therefore, with GARCH, we've developed a cool way to forecast risk in the market.
 
+- - -
+
 ### 14. Students Do: Euro-USD Volatility (10 min)
 
 **Files:**
@@ -780,6 +799,8 @@ Show the plot of the volatility forecast:
 * [USD_per_Euro_Hourly_Mid_Prices.csv](Activities/08-Stu_USD/Resources/USD_per_Euro_Hourly_Mid_Prices.csv)
 
 * [usd.ipynb](Activities/08-Stu_USD/Unsolved/usd.ipynb)
+
+- - -
 
 ### 15. Instructor Do: Review Activity (10 min)
 
@@ -859,6 +880,8 @@ Finally, walk through the steps of plotting the volatility forecast:
 
 * Based on the upward trend in the plot, the volatility of the EUR-USD exchange rate is predicted to increase over the next 5 days.
 
+- - -
+
 ### 16. Instructor Do: Reflect (5 min)
 
 Take a few moments to recap and reflect before ending class:
@@ -871,8 +894,8 @@ Take a few moments to recap and reflect before ending class:
 
 * These time-series models that you learned are used in practice everywhere, from forecasting next year's revenue to quantitative trading. As a result, you've learned a versatile tool for predicting future events.
 
-### 17. End Class
+### End Class
 
----
+- - -
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
