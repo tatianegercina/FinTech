@@ -52,13 +52,35 @@ conda install -c conda-forge pydotplus
 
 Once the `pydotplus` download is complete, verify the installation completed successfully.
 
-* Open the terminal, and use the `conda-list` function with a `grep` argument to identify if the `pydotplus` library installed successfully.
+* Open the terminal, use the `conda-list` function with a `grep` argument to identify if the `pydotplus` library installed successfully.
 
   ```shell
   conda list | grep pydotplus
   ```
 
   ![Verify pydotplus installation](Images/pydotplus-verify.png)
+
+### Installation Process in Windows
+
+Open the Git Bash terminal, and execute the following commands to install `pydotplus` and the additional libraries required to make it run under Windows. It's important to install these libraries in the order they are listed.
+
+```shell
+conda install python-graphviz
+conda install graphviz
+conda install -c conda-forge pydotplus
+```
+
+#### Verify Installation in Windows
+
+Once the `pydotplus` and the additional libraries download is complete, verify the installation completed successfully.
+
+* Open the Git Bash terminal, and use the `conda-list` function with a `grep` argument to identify if the `pydotplus` and `graphviz` libraries installed successfully.
+
+  ```shell
+  conda list | grep -E 'pydotplus|graphviz'
+  ```
+
+  ![Verify pydotplus Windows installation](Images/pydotplus_windows_check.png)
 
 ## Troubleshooting
 
@@ -145,3 +167,21 @@ python -c "import imblearn;print(imblearn.__version__)"
 This is the output you should see on the terminal window.
 
 ![Package version check](Images/package-version.png)
+
+
+### Package is not Installed in Windows
+
+Sometimes you can get the following message when you install a package using `conda install`
+
+```shell
+EnvironmentNotWritableError: The current user does not have write permissions to the target environment.
+ environment location: C:\ProgramData\Anaconda3
+```
+
+If you ever see this message, try running the Git Bash terminal as `Administrator`. In Windows 10 you can do it as follows.
+
+1. Right-click on the Git Bash icon.
+
+2. Go over the `More` option.
+
+3. Chose the `Run as administrator` option.
