@@ -1,4 +1,4 @@
-# And I'll Be there -- You've Got a FRED
+# And I'll Be there—You've Got a FRED
 
 ## Introduction
 
@@ -10,7 +10,7 @@
 
 ## Fetching FRED data
 
-* Use pandas's web datareader to pull in data from FRED as a pandas data frame. You do not need an API key.
+* Use Pandas's web datareader to pull in data from FRED as a Pandas DataFrame. You do not need an API key.
 
 * See the documentation for an example of retrieving data from FRED: [https://pandas-datareader.readthedocs.io/en/latest/remote_data.html](https://pandas-datareader.readthedocs.io/en/latest/remote_data.html).
 
@@ -28,4 +28,8 @@
 
 * Repeat the processes for inflation (keyword `CPIAUCNS`) and job count (keyword `PAYEMS`).
 
-* For at least one of these data sets, plot the exponentially-weighted moving averages. How do the results compare to results of the H-P filter?
+* For at least one of these datasets, plot the exponentially weighted moving averages. How do the results compare to results of the H-P filter?
+
+
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

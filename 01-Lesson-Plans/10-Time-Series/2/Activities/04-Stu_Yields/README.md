@@ -14,3 +14,4 @@ Finally, create an ARMA model and note its p-value for the lags, as well as AIC 
 
 
 
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

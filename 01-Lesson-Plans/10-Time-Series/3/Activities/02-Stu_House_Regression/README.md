@@ -17,3 +17,9 @@ In this activity, you will attempt to identify whether a linear relationship exi
 * Plot the line of best fit along with the data (see starter code for instructions)
 
 * Obtain the slope and the y-intercept, and r-square values of the model.
+
+
+
+
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
