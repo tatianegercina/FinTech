@@ -32,7 +32,7 @@
 
 ### Notes
 
-You will need to intall the [pandas-datareader](https://pandas-datareader.readthedocs.io/en/latest/) for the activity.
+You will need to install the [pandas-datareader](https://pandas-datareader.readthedocs.io/en/latest/) for the activity.
 
 ```
 pip install pandas-datareader
