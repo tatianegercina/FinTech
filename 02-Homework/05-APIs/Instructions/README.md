@@ -35,7 +35,7 @@ Follow the steps outlined in the budget starter notebook to complete the followi
 2. Use the Access token to fetch account transactions from the sandbox. You should fetch the last 90 days of transactions from the sandbox using the following institution:
 
     ```python
-    INSITUTION_ID = "ins_109508"
+    INSTITUTION_ID = "ins_109508"
     ```
 
 3. Perform basic budget analysis on the sandbox transaction and generate the following plots:
@@ -60,7 +60,7 @@ Follow the steps outlined in the budget starter notebook to complete the followi
 
 In this section, you will use the IEX API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to answer questions about the portfolio.
 
-Follow the steps outline in the budget starter notebook to complete the following:
+Follow the steps outlined in the budget starter notebook to complete the following:
 
 ##### Monte Carlo Simulation
 
