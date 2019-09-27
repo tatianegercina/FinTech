@@ -38,9 +38,9 @@ Once the `imbalanced-learn` download is complete, verify the installation comple
 
 ## PyDotPlus
 
-The `pydotplus` package is used to create a visual representation of decision trees.
+The `pydotplus` package is used to create a visual representation of decision trees. Be aware that the installation process differs between Windows and [macOS](#Installation-Process-in-macOS).
 
-### Install
+### Installation Process in macOS
 
 Open the terminal, and execute the following command to install `pydotplus`.
 
@@ -48,11 +48,11 @@ Open the terminal, and execute the following command to install `pydotplus`.
 conda install -c conda-forge pydotplus
 ```
 
-### Verify Installation
+#### Verify Installation in macOS
 
 Once the `pydotplus` download is complete, verify the installation completed successfully.
 
-* Use the `conda-list` function with a `grep` argument to identify if the `pydotplus` library installed successfully.
+* Open the terminal, and use the `conda-list` function with a `grep` argument to identify if the `pydotplus` library installed successfully.
 
   ```shell
   conda list | grep pydotplus
