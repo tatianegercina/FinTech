@@ -415,7 +415,7 @@ In this activity, you will introduce EWMA, or exponentially-weighted moving aver
 
 * [hodrick.ipynb](Activities/04-Ins_Hodrick_Prescott/Solved/hodrick.ipynb)
 
-* [IVV.csv](Activities/04-Ins_Hodrick_Prescott/Solved/IVV.csv)
+* [IVV.csv](Activities/04-Ins_Hodrick_Prescott/Resources/IVV.csv)
 
 Open the notebook and describe the dataset:
 
