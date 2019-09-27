@@ -449,7 +449,7 @@ Introduce the topic of the Hodrick-Prescott filter:
 
 * Like rolling average and EWMA, it can be used to capture trends.
 
-Open the slides to explain the overall mathematical idea of the Hodrick-Prescott filter (Slides 7-9):
+Open the slides to explain the overall mathematical idea of the Hodrick-Prescott filter:
 
   ![Images/hp01.png](Images/hp01.png)
 
