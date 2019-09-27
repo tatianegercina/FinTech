@@ -11,3 +11,5 @@ In each task, work with the closing stock prices. Don't forget to drop NaN value
 1. Create a column named `Returns` in the dataframe. Its values will be the return, or the change of the stock price in percentage points from one day to the next. Plot the returns.
 
 2. Create a column named `Diff` in the dataframe. Its values will be the difference in stock price from one day to the next. Plot this column.
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

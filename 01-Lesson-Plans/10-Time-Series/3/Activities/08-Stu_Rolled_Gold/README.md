@@ -24,5 +24,8 @@ Compile a dataframe of actual returns and out-of-sample predicted returns.
 
 Using the 2019 data from the Results DataFrame, compute the out-of-sample RMSE.
 
-
 How does the RMSE for the two models compare?
+
+
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -8,7 +8,7 @@ Follow the directions in the starter Jupyter notebook, but consult the below if 
 
 Prepare the data with the following steps:
 
-  * Read the CSV in pandas. You will use the data in the settle price column (see [https://www.investopedia.com/terms/s/settlementprice.asp](https://www.investopedia.com/terms/s/settlementprice.asp) for more on futures settle prices).
+  * Read the CSV in Pandas. You will use the data in the settle price column (see [https://www.investopedia.com/terms/s/settlementprice.asp](https://www.investopedia.com/terms/s/settlementprice.asp) for more on futures settle prices).
 
   * Instead of using settle prices directly, create a column of returns: the percentage change from one day to the next. Multiply the results by 100 for ease of interpretation. This column will be your dependent variable (y).
 
@@ -19,15 +19,15 @@ Prepare the data with the following steps:
   * Your data frame should look like this:
 
   ![futures01.png](Images/oil_futures01.png)
-  
+
 Next, reshape the data by transforming the lagged returns column into a data frame, and adding a week of the year column:
 
   ![futures02.png](Images/oil_futures02.png)
-  
+
 Next, assign dummy variables to the weeks of the year:
 
   ![futures03.png](Images/oil_futures03.png)
-  
+
 Finally, fit a linear regression model to the data, compute the metrics, and to assess your findings.
 
 Provide and interpret the following metrics:
@@ -39,3 +39,7 @@ Provide and interpret the following metrics:
 * Root mean squared error
 
 * Standard deviation of futures return
+
+
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
