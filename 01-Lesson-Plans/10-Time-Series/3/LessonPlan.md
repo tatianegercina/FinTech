@@ -770,7 +770,7 @@ Explain that the predicted values are plotted:
 
 * `y_test`, the actual values in the test set, is compared with the predicted values in the test set.
 
-Finally, go over the metrics of the in-sample and out-of-sample predictions:
+Go over the metrics of the in-sample and out-of-sample predictions:
 
   ```python
   from sklearn.metrics import mean_squared_error, r2_score
@@ -792,6 +792,12 @@ Finally, go over the metrics of the in-sample and out-of-sample predictions:
   * The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data, but is higher in this case.
 
   * This could be due to the fact that our out-of-sample period is small, so just by chance, the model happened to do better out-of-sample than in-sample.
+
+Finally, discuss the forecast plot.
+
+![xrp_forecast_plot.png](Images/xrp_forecast_plot.png)
+
+* The chart shows that our forecast for XRP volatility will continue to rise over the next five days. This suggests choppy trading ahead, as prices will likely fluctuate up and down more than usual. In addition, if we’re betting types, we might consider buying options on XRP, as prices of options tend to rise in response to higher volatility.
 
 - - -
 
