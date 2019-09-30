@@ -36,7 +36,7 @@ By the end of this class, students will be able to:
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1dpPDlLWNX3j-riUXrBoXQEOUn1l025swCYmP1aGKc1M/edit?usp=sharing).
 
-To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -76,7 +76,7 @@ Describe to students what they will be doing today:
 
 **File:**
 
-* [linear_regression.ipynb](Activities/06-Ins_Linear_Regression/Solved/linear_regression.ipynb)
+* [linear_regression.ipynb](Activities/01-Ins_Linear_Regression/Solved/linear_regression.ipynb)
 
 In this activity, you will explain linear regression to the class and demonstrate using Scikit-learn to create a linear regression model.
 
@@ -251,17 +251,17 @@ In this activity, students will perform linear regression on number of rooms in 
 
 **Files:**
 
-* [README.md](Activities/07-Stu_House_Regression/README.md)
+* [README.md](Activities/02-Stu_House_Regression/README.md)
 
-* [USA_Housing.csv](Activities/07-Stu_House_Regression/data/USA_Housing.csv)
+* [USA_Housing.csv](Activities/02-Stu_House_Regression/Resources/USA_Housing.csv)
 
 - - -
 
-### 4. Instructors Do: Review House Regression (10 min)
+### 4. Instructor Do: Review House Regression (10 min)
 
 **Files:**
 
-* [housing.ipynb](Activities/07-Stu_House_Regression/Solved/housing.ipynb)
+* [housing.ipynb](Activities/02-Stu_House_Regression/Solved/housing.ipynb)
 
 Open the solution, and complete a dry walk through of the code:
 
@@ -322,7 +322,7 @@ Ask if students have any questions before moving forward.
 
 **Files:**
 
-* [time_series_simple_regression.ipynb](Activities/08-Ins_Time_Series_Linear_Regression/Solved/time_series_simple_regression.ipynb)
+* [time_series_simple_regression.ipynb](Activities/03-Ins_Time_Series_Linear_Regression/Solved/time_series_simple_regression.ipynb)
 
 Inform the class that the idea of linear regression for time series is the same as in the previous example, but that the implementation requires a few tweaks.
 
@@ -438,9 +438,9 @@ In this activity, students will identify seasonal effects in oil futures prices 
 
 **Files:**
 
-* [README.pdf](Activities/09-Stu_Time_Series_Linear_Regression/README.pdf)
+* [README.md](Activities/04-Stu_Time_Series_Linear_Regression/README.md)
 
-* [oil_futures_starter.ipynb](Activities/09-Stu_Time_Series_Linear_Regression/Unsolved/oil_futures_starter.ipynb)
+* [oil_futures_starter.ipynb](Activities/04-Stu_Time_Series_Linear_Regression/Unsolved/oil_futures.ipynb)
 
 - - -
 
@@ -448,7 +448,7 @@ In this activity, students will identify seasonal effects in oil futures prices 
 
 **Files:**
 
-* [oil_futures.ipynb](Activities/09-Stu_Time_Series_Linear_Regression/Solved/oil_futures.ipynb)
+* [oil_futures.ipynb](Activities/04-Stu_Time_Series_Linear_Regression/Solved/oil_futures.ipynb)
 
 Explain that, rather than the settle prices, we're working with returns, the daily change of the settle price in percentage terms. The returns are multiplied by 100 to make the numbers easier to work with.
 
@@ -491,7 +491,7 @@ Next, explain that dummy variables are created for each week of the year. Commun
 
   ![get_dummies.png](Images/get_dummies.png)
 
-* Quickly go through the rest of the code, which is boiler plate and includes creating a regression model is created on lagged returns and returns, making predictions, and then generating r-square value.
+* Quickly go through the rest of the code, which is boiler plate and includes creating a regression model that is created on lagged returns and returns, making predictions, and then generating r-square value.
 
   ```python
   y = df['Return']
@@ -559,7 +559,7 @@ Explain that we have already seen parsimony in action:
 
 **File:**
 
-* [train_test.ipynb](Activities/03-Ins_Train_Test/Solved/train_test.ipynb)
+* [train_test.ipynb](Activities/05-Ins_Train_Test/Solved/train_test.ipynb)
 
 Inform your students that they will now learn to minimize the problems posed by overfitting.
 
@@ -567,7 +567,7 @@ Explain that a common strategy used in machine learning is to split a dataset in
 
 * With the training set, the model learns the relevant patterns in the data. The model seeks to minimize error on the training data.
 
-* Then the testing set is used evaluate the model's performance on unseen data.
+* Then the testing set is used to evaluate the model's performance on unseen data.
 
 * If the model underperforms with the testing set, the model can be retrained with better (or more) data, or the model itself can be tweaked.
 
@@ -688,11 +688,11 @@ In this activity, students will create GARCH and linear regression models for th
 
 **Files:**
 
-* [README.md](Activities/04-Stu_Ripple/README.md)
+* [README.md](Activities/06-Stu_Ripple/README.md)
 
-* [USD_per_Ripple_XRP_prices.csv](Activities/04-Stu_Ripple/Resources/USD_per_Ripple_XRP_prices.csv)
+* [USD_per_Ripple_XRP_prices.csv](Activities/06-Stu_Ripple/Resources/USD_per_Ripple_XRP_prices.csv)
 
-* [xrp.ipynb](04-Stu_Ripple/Unsolved/xrp.ipynb)
+* [xrp.ipynb](Activities/06-Stu_Ripple/Unsolved/xrp.ipynb)
 
 - - -
 
@@ -702,7 +702,7 @@ A detailed walk-through of the code is given below. However, in the interest of 
 
 **File:**
 
-* [xrp.ipynb](Activities/04-Stu_Ripple/Solved/xrp.ipynb)
+* [xrp.ipynb](Activities/06-Stu_Ripple/Solved/xrp.ipynb)
 
 Open the notebook and display the plot of Ripple's closing price:
 
@@ -799,9 +799,9 @@ Finally, go over the metrics of the in-sample and out-of-sample predictions:
 
 **File:**
 
-* [sp500.ipynb](Activities/05-Ins_Rolling_Out_of_Sample/Solved/sp500.ipynb)
+* [sp500.ipynb](Activities/07-Ins_Rolling_Out_of_Sample/Solved/sp500.ipynb)
 
-Point out that up to this point, we have created models as a one-shot affair. Explain that we will go over a procedure allows an analyst to update the financial model as new data continues to come in.
+Point out that up to this point, we have created models as a one-shot affair. Explain that we will go over a procedure that allows an analyst to update the financial model as new data continues to come in.
 
 * In this activity, we will cover a more sophisticated iterative approach to the train-test-split technique in the previous activity.
 
@@ -972,11 +972,11 @@ In this activity, students will perform predictions with linear regression on a 
 
 **Files:**
 
-* [README.md](Activities/06-Stu_Rolled_Gold/README.md)
+* [README.md](Activities/08-Stu_Rolled_Gold/README.md)
 
-* [gold_price.csv](Activities/06-Stu_Rolled_Gold/Resources/gold_price.csv)
+* [gold_price.csv](Activities/08-Stu_Rolled_Gold/Resources/gold_price.csv)
 
-* [gold.ipynb](Activities/06-Stu_Rolled_Gold/Unsolved/gold.ipynb)
+* [gold.ipynb](Activities/08-Stu_Rolled_Gold/Unsolved/gold.ipynb)
 
 - - -
 
@@ -984,7 +984,7 @@ In this activity, students will perform predictions with linear regression on a 
 
 **File:**
 
-* [gold.ipynb](Activities/06-Stu_Rolled_Gold/Solved/gold.ipynb)
+* [gold.ipynb](Activities/08-Stu_Rolled_Gold/Solved/gold.ipynb)
 
 Open the notebook and explain that, since regression will later be performed on returns and lagged returns in USD, those columns are created:
 
