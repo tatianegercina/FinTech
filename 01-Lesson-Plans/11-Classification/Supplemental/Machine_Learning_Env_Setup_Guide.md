@@ -38,11 +38,11 @@ Once the `imbalanced-learn` download is complete, verify the installation comple
 
 ## PyDotPlus
 
-The `pydotplus` package is used to create a visual representation of decision trees. If you have any issues installing this library in Windows, please read the [Troubleshooting section bellow](#Troubleshooting).
+The `pydotplus` package is used to create a visual representation of decision trees. If you have any issues installing this library in Windows, please read the [Troubleshooting section below](#Troubleshooting).
 
 ### Installation Process
 
-Open the terminal (Git Bash in Windows), and execute the following commands to install `pydotplus` and the additional libraries required. It's important to install these libraries in the order they are listed bellow.
+Open the terminal (Git Bash in Windows), and execute the following commands to install `pydotplus` and the additional libraries required. It's important to install these libraries in the order they are listed below.
 
 ```shell
 conda install python-graphviz
