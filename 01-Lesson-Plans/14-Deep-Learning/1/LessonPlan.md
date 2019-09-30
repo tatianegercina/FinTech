@@ -20,7 +20,11 @@ By the end of class, students will be able to:
 
 * Preprocessing data for neural network models.
 
-* Implement neural nets with Python Tensorflow/Keras API.
+* Identify the Python libraries available to build neural networks.
+
+* Describe what are the pros and cons of using Keras for building neural networks.
+
+* Implement neural nets with Python Keras API.
 
 ### Instructor Notes
 
