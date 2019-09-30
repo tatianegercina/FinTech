@@ -70,7 +70,7 @@ In this activity, you will define stationarity, a key concept in time series mod
 
 * [stationarity.ipynb](Activities/01-Ins_Stationarity/Solved/stationarity.ipynb)
 
-Open slide 3 and introduce the term `stationarity`:
+Use the slides to introduce the term `stationarity`:
 
   * In a stationary process, statistical properties such as the mean and variance do not vary across time.
 
@@ -240,7 +240,7 @@ Before diving into ARMA, quickly summarize auto-correlation for the class:
 
   * Plotting partial auto-correlation helps identify the **number** of lags that are significant in explaining the data.
 
-Open slide 8 and introduce the concept of auto-regressive (AR) modeling:
+Use the slides to introduce the concept of auto-regressive (AR) modeling:
 
   * In an AR model, past values are used to predict future values.
 
@@ -256,7 +256,7 @@ Explain the relationship between an AR model and a linear regression model:
 
   * In an example of an AR model, the past prices of a stock may be used to predict future prices.
 
-Explain the elements of the autoregression model (Slide 13):
+Explain the elements of the autoregression model:
 
   ![Images/arma01.gif](Images/arma01.gif)
 
@@ -574,7 +574,7 @@ Walk through the code used to create an ARIMA model:
 
   * An ARIMA model in which the differencing order is zero is therefore an ARMA model. For example, an ARIMA model with an order of (1, 0, 1) is an ARMA model of an order of (1, 1).
 
-Open slide 20 and explain the interpretation of AIC and BIC:
+Use the slides to explain the interpretation of AIC and BIC:
 
   * AIC stands for Akaike Information Criterion. BIC stands for Bayesian Information Criterion.
 
@@ -674,17 +674,17 @@ Before introducing GARCH to the class, introduce the topic of volatility:
 
 * Understanding volatility is also important to banks as loan failures can occur in a cluster. Assets must exceed liabilities, so regulators and banks alike create forecast models for asset volatility.
 
-Explain that GARCH models volatility. Open the slideshow and summarize the key features of the ARMA model (Slide 8):
+Explain that GARCH models volatility. Open the slideshow and summarize the key features of the ARMA model:
 
 * An autoregressive component in which future values are predicted based on past values. In this model, values are a function of time.
 
 * A moving average component in which future values are predicted based on past errors.
 
-Explain that GARCH models are structured similarly, but to predict volatility (Slide 10):
+Explain that GARCH models are structured similarly, but to predict volatility:
 
 * As with ARMA models, there are autoregressive and moving average components.
 
-Formalize the term volatility (Slides 11-12):
+Formalize the term volatility:
 
 * In this context, volatility is the change in variance across a time series.
 
