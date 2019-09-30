@@ -38,31 +38,11 @@ Once the `imbalanced-learn` download is complete, verify the installation comple
 
 ## PyDotPlus
 
-The `pydotplus` package is used to create a visual representation of decision trees. Be aware that the installation process differs between Windows and [macOS](#Installation-Process-in-macOS).
+The `pydotplus` package is used to create a visual representation of decision trees. If you have any issues installing this library in Windows, please read the [Troubleshooting section bellow](#Troubleshooting).
 
-### Installation Process in macOS
+### Installation Process
 
-Open the terminal, and execute the following command to install `pydotplus`.
-
-```shell
-conda install -c conda-forge pydotplus
-```
-
-#### Verify Installation in macOS
-
-Once the `pydotplus` download is complete, verify the installation completed successfully.
-
-* Open the terminal, use the `conda-list` function with a `grep` argument to identify if the `pydotplus` library installed successfully.
-
-  ```shell
-  conda list | grep pydotplus
-  ```
-
-  ![Verify pydotplus installation](Images/pydotplus-verify.png)
-
-### Installation Process in Windows
-
-Open the Git Bash terminal, and execute the following commands to install `pydotplus` and the additional libraries required to make it run under Windows. It's important to install these libraries in the order they are listed.
+Open the terminal (Git Bash in Windows), and execute the following commands to install `pydotplus` and the additional libraries required. It's important to install these libraries in the order they are listed bellow.
 
 ```shell
 conda install python-graphviz
@@ -70,15 +50,20 @@ conda install graphviz
 conda install -c conda-forge pydotplus
 ```
 
-#### Verify Installation in Windows
+#### Verify Installation
 
 Once the `pydotplus` and the additional libraries download is complete, verify the installation completed successfully.
 
-* Open the Git Bash terminal, and use the `conda-list` function with a `grep` argument to identify if the `pydotplus` and `graphviz` libraries installed successfully.
+* Open the terminal (Git Bash in Windows), and use the `conda-list` function with a `grep` argument to identify if the `pydotplus` and `graphviz` libraries installed successfully.
 
   ```shell
   conda list | grep -E 'pydotplus|graphviz'
   ```
+
+  _Installation verification in macOS_
+  ![Verify pydotplus macOS installation](Images/pydotplus-verify.png)
+
+  _Installation verification in Windows_
 
   ![Verify pydotplus Windows installation](Images/pydotplus_windows_check.png)
 
