@@ -80,7 +80,7 @@ Describe to students what they will be doing today:
 
 In this activity, you will explain linear regression to the class and demonstrate using Scikit-learn to create a linear regression model.
 
-Open the first [slide](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_0) and explain the linear equation (Slide 11):
+Use the slides to explain the linear equation:
 
   ```
   y = mx + b
@@ -96,7 +96,7 @@ Open the first [slide](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxX
 
   * The value of `y` when `x` is 0 is called the y-intercept. It is represented by the letter `b`.
 
-Open the next [https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_19](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_19) and ask whether, on visual inspection, a trend exists (Slide 12):
+Ask whether, on visual inspection, a trend exists:
 
   ![Images/linear_regression01.png](Images/linear_regression01.png)
 
@@ -198,7 +198,7 @@ Use the slideshow and recapitulate the linear regression plot below, which we ha
 
 * The distance between each data point and the best fit line is referred to as the error.
 
-Explain that the linear regression model is mathematically constructed to **minimize** the the sum of all the errors after they have been squared (Slide 4).
+Explain that the linear regression model is mathematically constructed to **minimize** the the sum of all the errors after they have been squared.
 
   ![Images/error01.jpg](Images/error02.jpg)
 
