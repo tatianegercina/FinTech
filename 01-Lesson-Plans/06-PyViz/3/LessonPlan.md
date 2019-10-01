@@ -44,7 +44,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.3 Slides](https://docs.google.com/presentation/d/18tMXiNivZRYdFxi4GWCX81Zp_fvh7HDFrNXRqFV-rvg/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 6.3 Slides](https://docs.google.com/presentation/d/1xzEteF7tPkqJKHusUOtyAZG85NTJtTAcL1AlG9ZE3sE/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
@@ -317,7 +317,7 @@ Ask if there are any questions before moving forward.
 
 ### 5. Student Do: No Pane, No Gain (15 mins)
 
-In this activity, students complete a MSMD activity where they create a Plotly plot and convert it to a Panel **pane**. The goal of this activity is to reinforce to students the importance of Panel **panes** and their role in the dashboard creation process.
+In this activity, students will create a Plotly plot and convert it to a Panel **pane**. The goal of this activity is to reinforce to students the importance of Panel **panes** and their role in the dashboard creation process.
 
 **Instructions:**
 
@@ -712,7 +712,7 @@ Ask if there are any questions before moving on.
 
 ### 15. Student Do: Monte Carlo Dashboard Web App (15 mins)
 
-Students complete a Bag of Tricks activity where they revisit simulations and use Monte Carlo to predict housing sales prices over the next 10 years. Monte Carlo output will be visualized on a dashboard so that insights and decisions can be made based off of the predictions.
+In this activity, students will revisit simulations and use Monte Carlo to predict housing sales prices over the next 10 years. Monte Carlo output will be visualized on a dashboard so that insights and decisions can be made based off of the predictions.
 
 Data for this activity was acquired from [catalog.data.gov](https://catalog.data.gov/dataset/real-estate-sales-2001-2016).
 
