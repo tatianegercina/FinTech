@@ -28,10 +28,11 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* This lesson is packed with a lot of technical complexities, so be mindful of pacing when progressing through the day. Give students the opportunity to ask questions, and when necessary, have students save questions for the review sessions.
+* This lesson may be technically challenging, so be mindful of pacing when progressing through the day.
+
+* Give students the opportunity to ask questions, and when necessary, have students save questions for the review sessions or office hours.
 
 * A thorough understanding of neural networks would require math that's beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms in order to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
-
 
 ### Class Slides and Time Tracker
 
