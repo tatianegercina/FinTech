@@ -340,36 +340,33 @@ Show the Temperature column plotted against the date:
 
 Explain that the goal is to perform linear regression of temperature and the date.
 
-Explain the next two lines of code. As seen before, Scikit-learn's models require that the X variable be formatted in the correct shape.
+Explain the next three lines of code. As seen before, Scikit-learn's models require that the `X` variable be formatted in the correct shape.
+
+![X variable formatted](Images/10_5_img1.png)
+
+* Converting the column into a data frame gives it `2208` rows and `1` column of data.
+
+Explain that datetime objects have attributes, such as week of the year.
 
   ```python
-  X = df['Temperature'].to_frame()
-  X.shape
+  X['Week_of_Year'] = X.index.weekofyear
   ```
 
-* Converting the column into a data frame gives it 2208 rows and 1 column of data.
+* This creates a new column, called `Week_of_Year`.
 
-Explain that datetime objects have attributes, such as day of the year.
-
-  ```python
-  X['Day_of_Year'] = X.index.dayofyear
-  ```
-
-* This creates a new column, called `Day_of_Year`.
-
-* `X.index` is in datetimeformat, and has attributes such as `dayofyear`, `weekofyear`, etc. that can be extracted from it.
+* `X.index` is in `datetime` format, and has attributes such as `dayofyear`, `weekofyear`, etc. that can be extracted from it.
 
 * More attributes can be found in the [documentation](https://pandas.pydata.org/pandas-docs/version/0.24.2/reference/api/pandas.DatetimeIndex.html)
 
-Explain creating dummy variables. The `pd.get_dummies()` method creates a column for each day of the year, and for each row assigns a numerical value for that day.
+Explain creating dummy variables. The `pd.get_dummies()` method creates a column for each week of the year, and for each row assigns a numerical value for that week.
 
   ```python
-  X_binary_encoded = pd.get_dummies(X, columns=['Day_of_Year'])
+  X_binary_encoded = pd.get_dummies(X, columns=['Week_of_Year'])
   ```
 
-* Dummy variables are necessary because days are not continuous; they are categorical.
+* Dummy variables are necessary because weeks are not continuous; they are categorical.
 
-* As an example, the day 121 of the year is assigned 1 for day 121, but 0 for all other days.
+* As an example, the week 17 of the year is assigned 1 for week 17, but 0 for all other weeks.
 
   ![Images/ts_regression03.png](Images/ts_regression03.png)
 
@@ -377,9 +374,9 @@ Use the slides to show the regression equation that results from the process:
 
   ![Images/regression_equation01.gif](Images/regression_equation01.gif)
 
-* Each day is given its own weight in the overall equation.
+* Each week is given its own weight in the overall equation.
 
-* Because each day is a separate variable in the equation, this is called multiple regression.
+* Because each week is a separate variable in the equation, this is called multiple regression.
 
 Additionally, explain that we delete the extraneous column in the data frame created by `pd_get_dummies()`. The argument `axis=1` specifies that it is the column that is dropped. (For rows, it would be `axis=0`.)
 
@@ -396,7 +393,7 @@ Explain that the rest of the code is familiar from previous examples:
   predictions = model.predict(X_binary_encoded)
   ```
 
-  * The `Temperature` column is specified as the dependent variable array.
+  * The `Temperature` column is specified as the dependent variable array `y`. The `copy()` method is used to create a copy of a Pandas object, to ensure that no unwanted changes are made to the original data.
 
   * A model is created, and fits the independent and dependent variables.
 
@@ -412,7 +409,7 @@ Explain that the metrics of the linear regression model are generated:
   rmse = np.sqrt(mse)
   ```
 
-Note that the r-square value, at 0.23, is fairly low, and that we will cover the interpretation of these numbers in an upcoming activity.
+Note that the r-square value, at `0.23`, is fairly low, and that we will cover the interpretation of these numbers in an upcoming activity.
 
 Note also that the trend appears at least somewhat linear for the specified timeline, but that a longer timespan, say from January through December, will not be good for a linear regression model.
 
