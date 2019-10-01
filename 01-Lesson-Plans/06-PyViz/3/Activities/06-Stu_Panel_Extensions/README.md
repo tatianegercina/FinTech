@@ -18,7 +18,7 @@ If you finish early, assist your peers with troubleshooting and debugging.
 
 3. Create a second Panel column and add `population_violence` and `violent_murder` objects to it. Provide a mark down header.
 
-4. Create a tabs object that will contain the column panels created in steps 1 and 2. There sould be two tabs, with a column object in each. 
+4. Create a tabs object that will contain the column panels created in steps 1 and 2. There should be two tabs, with a column object in each. 
 
 5. Customize the labels used for each tab. The first tab should be called **Geospatial**. The second should be called **Correlations**.
 
