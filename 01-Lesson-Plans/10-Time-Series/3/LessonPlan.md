@@ -423,9 +423,7 @@ Take a moment to summarize the key points of this activity:
 
   * Because datetime data cannot be directly imported into a Scikit-learn model, we've had to create a binary encoding for each row, and drop an unnecessary column.
 
-Finally, if time allows, quickly demonstrate an approximate visualization of the linear regression best fit line.
-
-  ![Images/ts_regression04.png](Images/ts_regression04.png)
+Answer any questions before moving on.
 
 - - -
 
