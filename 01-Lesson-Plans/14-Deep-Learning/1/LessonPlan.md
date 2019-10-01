@@ -28,9 +28,11 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* This lesson may be technically challenging, so be mindful of pacing when progressing through the day.
+* Today's activities will be concept-heavy, so students should be prepared to discuss and think, and not merely to practice steps for implementation.
 
 * Give students the opportunity to ask questions, and when necessary, have students save questions for the review sessions or office hours.
+
+* Today should also be fun, since we'll be playing with neural nets in several ways to experiment with input, architecture, and algorithms.
 
 * A thorough understanding of neural networks would require math that's beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms in order to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
 
@@ -46,12 +48,30 @@ The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 ---
 
-### 1. Instructor Do: Welcome Class (5 mins)
+### 1. Instructor Do: Welcome Class (5 min)
 
-**Files:**
+Open the lesson slides and welcome students to the first day of deep learning! Indicate that Today's class will begin with an introduction to the basic unit of neural networks before moving on to constructing simple neural nets.
 
-* [Welcome-slides]()
+As an icebreaking activity, open the class by asking the following questions to students:
 
-Welcome students to the first day of deep learning! Indicate that today (day 1) will begin with an introduction to the basic unit of neural networks before moving on to constructing simple neural nets. Today's activities will be concept-heavy, so students should be prepared to discuss and think, and not merely to practice steps for implementation. Today should also be fun, since we'll be playing with neural nets in several ways to experiment with input, architecture, and algorithms.
+* What do you think a neural network is?
+
+  * **Sample Answer:** It's a computer representation of a human neuron.
+
+  * **Sample Answer:** It's a method to create artificial intelligence software.
+
+  * **Sample Answer:** Neural networks are machine learning algorithms that can learn to solve a problem.
+
+* Do you know some cool applications of neural networks?
+
+  * **Sample Answer:** Autonomous cars.
+
+  * **Sample Answer:** Image processing in cancer detection.
+
+  * **Sample Answer:** Banning inadequate content on social networks.
+
+  * **Sample Answer:** Automated trading based on artificial intelligence.
+
+Ask for two or three volunteers to share their insights, and comment to students that Today they will answer these questions.
 
 Ask if there are any questions before moving on.
