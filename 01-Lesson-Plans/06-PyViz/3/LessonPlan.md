@@ -171,7 +171,7 @@ Walk students through how the `interact` function is used to create quick and ea
 
     ![interact_data_struct.gif](Images/interact_data_struct.gif)
 
-* Most Panel interact function accepts other functions as arguments. This is because the **interact** widget was designed from a functional programming point of view. This approach heavily relies on developers passing functions to functions, which allows Panel to dynamically render content and plots based off of user input/interaction.
+* Most Panel interact functions accept other functions as arguments. This is because the **interact** widget was designed from a functional programming point of view. This approach heavily relies on developers passing functions to functions, which allows Panel to dynamically render content and plots based off of user input/interaction.
 
   * Imagine creating a dashboard reporting on housing sales by city across 10 years. Instead of having all 10 years of data for every city shown on a plot, you might want to limit the data to a specific year. A **Panel** select list could be used to select the year to report on.
 
@@ -199,7 +199,7 @@ In addition to Python data structures, the `interact` function can be used with 
 
 * When used with plots, `interact` will still need to be passed a function that will render the plot.
 
-* **Panel** will then create UI widgets to allow users to dynamically change parameters. An example would be plotting housing transactions data where the number of records plotted is parameterized. The `interact` function will create a widget that allows users to change configure the number of records being plotted.
+* **Panel** will then create UI widgets to allow users to dynamically change parameters. An example would be plotting housing transactions data where the number of records plotted is parameterized. The `interact` function will create a widget that allows users to configure the number of records being plotted.
 
   ```python
   # Define function to create plot
@@ -675,7 +675,7 @@ Navigate to the 6.3 slides, and communicate the following:
 
 Open the starter file, and live code how to run a Panel dashboard as a **web app**.
 
-* In order to deploy the notebook and dashboard as **web app**, a Panel object has to be ran as a servable object. This can be achieved using the `servable` function.
+* In order to deploy the notebook and dashboard as a  **web app**, a Panel object has to be ran as a servable object. This can be achieved using the `servable` function.
 
   ```python
   # Execute Panel dashboard using servable function
