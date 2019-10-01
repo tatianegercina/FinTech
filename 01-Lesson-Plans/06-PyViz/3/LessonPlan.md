@@ -470,7 +470,7 @@ Ask if there are any questions before moving forward.
 
 ### 8. Student Do: The Judge's Panel (15 mins)
 
-Students complete a Find the Path activity where they execute insert, update, and remove operations on Panel **panels**.
+In this activity, students will execute insert, update, and remove operations on Panel **panels**.
 
 Since students have not been taught how to manipulate **panels** using insert, update, and remove functions, make sure to circulate with TAs to provide assistance. Also encourage students to work together in pairs of two.
 
@@ -579,7 +579,7 @@ Ask if there are any questions before continuing.
 
 ### 12. Student Do: Extending Plotting (15 mins)
 
-Students complete a Bag of Tricks activity where they create a dashboard that contains map visualizations and hvPlot composed plots. The goal of this activity is to reinforce to students that Panel can support all the visualizations that have been created in class so far.
+In this activity, students will create a dashboard that contains map visualizations and `hvPlot` composed plots. The goal of this activity is to reinforce to students that Panel can support all the visualizations that have been created in class so far.
 
 Data for this activity was retrieved from [ucr.fbi.gov](https://ucr.fbi.gov/crime-in-the-u.s/2015/crime-in-the-u.s.-2015/tables/table-8/table_8_offenses_known_to_law_enforcement_by_state_by_city_2015.xls/view).
 
