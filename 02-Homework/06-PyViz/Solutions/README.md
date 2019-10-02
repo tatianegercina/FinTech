@@ -15,8 +15,15 @@ conda activate dev
 
 For this solution, you will need to export the mapbox token.
 
+In the keys.sh file, enter the following:
+
 ```shell
-export QUANDL_API_KEY="ENTER YOUR API KEY HERE"
+export mapbox="ENTER YOUR API KEY HERE"
+```
+
+Activate the keys file:
+```shell
+. ./keys.sh
 ```
 
 #### Step 3: Serve the Dashboard
