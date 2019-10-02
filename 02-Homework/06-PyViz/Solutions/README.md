@@ -2,7 +2,24 @@
 
 ## Usage
 
-Note: You will need to have your conda environment activated with PyViz installed.
+#### Step 1: Conda with PyViz
+
+You will need to have your conda environment activated with PyViz installed. 
+
+Example:
+```
+conda activate dev
+```
+
+#### Step 2: Export the Mapbox Token
+
+For this solution, you will need to export the mapbox token.
+
+```shell
+export QUANDL_API_KEY="ENTER YOUR API KEY HERE"
+```
+
+#### Step 3: Serve the Dashboard
 
 ```shell
 panel serve --show dashboard.ipynb
