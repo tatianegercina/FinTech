@@ -2,6 +2,8 @@
 
 ## Usage
 
+Note: You will need to have your conda environment activated with PyViz installed.
+
 ```shell
 panel serve --show dashboard.ipynb
 ```
