@@ -110,7 +110,7 @@ Explain that a line that best fits the trend can be drawn:
 
   * The equation is simple but tedious, and is best solved by a computer.
 
-Explain that, in other words, linear regresson identifies the line that best predicts `y` based on the value of `x`.
+Explain that, in other words, linear regression identifies the line that best predicts `y` based on the value of `x`.
 
 Explain the concept of residuals.
 
@@ -122,7 +122,7 @@ Explain the concept of residuals.
 
 Summarize the key points of linear regression:
 
-  * It models data with a linear trend. It is not useful when the data does not follow a linear trend, e.g. exponential trends.
+  * It models data with a linear trend. It is not useful when the data does not follow a linear trend, e.g., exponential trends.
 
   * Based on the X values, it predicts Y values.
 
@@ -212,7 +212,7 @@ Explain that one way to assess the accuracy of a linear regression model is to l
 
 Explain that R2, or r-square, is a way to assess the relationship between two variables.
 
-* The correlation coefficient is a numerical description of the extent to which the two variables move  together. It ranges from -1 to 1.
+* The correlation coefficient is a numerical description of the extent to which the two variables move together. It ranges from -1 to 1.
 
 * **R2**, or **r-square value**, is simply the square of the correlation coefficient. It describes the extent to which a change in one variable is associated with the change in the other variable. It ranges from 0 to 1.
 
@@ -247,7 +247,7 @@ Explain that you can also compare the RMSE to the standard deviation to get a be
 
 ### 3. Students Do: House Regression (15 min)
 
-In this activity, students will perform linear regression on number of rooms in houses versus their prices.
+In this activity, students will perform linear regression on the number of rooms in houses versus their prices.
 
 **Files:**
 
@@ -263,7 +263,7 @@ In this activity, students will perform linear regression on number of rooms in 
 
 * [housing.ipynb](Activities/02-Stu_House_Regression/Solved/housing.ipynb)
 
-Open the solution, and complete a dry walk through of the code:
+Open the solution, and complete a dry walkthrough of the code:
 
 * Linear regression models can be implemented using the Scikit-learn package. A LinearRegression module is included and can be imported into the Python environment.
 
@@ -338,7 +338,7 @@ Show the Temperature column plotted against the date:
 
   ![Images/ts_regression02.png](Images/ts_regression02.png)
 
-Explain that the goal is to perform linear regression of temperature and the date.
+Explain that the goal is to perform a linear regression of temperature and the date.
 
 Explain the next three lines of code. As seen before, Scikit-learn's models require that the `X` variable be formatted in the correct shape.
 
@@ -346,7 +346,7 @@ Explain the next three lines of code. As seen before, Scikit-learn's models requ
 
 * Converting the column into a data frame gives it `2208` rows and `1` column of data.
 
-Explain that datetime objects have attributes, such as week of the year.
+Explain that datetime objects have attributes, such as the week of the year.
 
   ```python
   X['Week_of_Year'] = X.index.weekofyear
@@ -366,7 +366,7 @@ Explain creating dummy variables. The `pd.get_dummies()` method creates a column
 
 * Dummy variables are necessary because weeks are not continuous; they are categorical.
 
-* As an example, the week 17 of the year is assigned 1 for week 17, but 0 for all other weeks.
+* As an example, week 17 of the year is assigned 1 for week 17, but 0 for all other weeks.
 
   ![Images/ts_regression03.png](Images/ts_regression03.png)
 
@@ -413,7 +413,7 @@ Note that the r-square value, at `0.23`, is fairly low, and that we will cover t
 
 Note also that the trend appears at least somewhat linear for the specified timeline, but that a longer timespan, say from January through December, will not be good for a linear regression model.
 
-  * This underscores the important that linear regression, rather than a mechanical process, requires thinking about the variables.
+  * This underscores the importance that linear regression, rather than a mechanical process, requires thinking about the variables.
 
   * It also highlights the importance of plotting the data before reaching a conclusion!
 
@@ -461,7 +461,7 @@ Explain that we need a column of returns, and lagged returns, which will be regr
   df = df.dropna()
   ```
 
-  * Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called auto-regression, and will be further discussed in day 2.
+  * Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called auto-regression, and will be further discussed on day 2.
 
   * A column of lagged returns is created by shifting each value downward by 1 row.
 
@@ -478,7 +478,7 @@ Go over the steps of preparing the data to use in Scikit-learn:
 
   * The `weekofyear` attribute is used to create a column for the week of the year.
 
-Next, explain that dummy variables are created for each week of the year. Communiate that the function creates dummy variables for each week. That is, it assigns a value of 0 or 1 for each week. For a date that falls on week 7, for example, it will assign 1 for week 7 and 0 to all other weeks.
+Next, explain that dummy variables are created for each week of the year. Communicate that the function creates dummy variables for each week. That is, it assigns a value of 0 or 1 for each week. For a date that falls on week 7, for example, it will assign 1 for week 7 and 0 to all other weeks.
 
   ```python
   X_binary_encoded = pd.get_dummies(X, columns=['Week_of_year'])
@@ -516,7 +516,7 @@ Open the slideshow and introduce the concept of overfitting:
 
 * In other words, overfit models learn the noise found in the training data, rather than just the signal.
 
-* Because models are optimized to limit the training error, they can become too focused on the unique patterns of the training data, and fail to extend to  previously unseen data.
+* Because models are optimized to limit the training error, they can become too focused on the unique patterns of the training data, and fail to extend to previously unseen data.
 
 Explain that overfitting typically involves an excessive number of variables in a model.
 
@@ -560,7 +560,7 @@ Inform your students that they will now learn to minimize the problems posed by 
 
 Explain that a common strategy used in machine learning is to split a dataset into a train set and a test set.
 
-* With the training set, the model learns the relevant patterns in the data. The model seeks to minimize error on the training data.
+* With the training set, the model learns the relevant patterns in the data. The model seeks to minimize errors in the training data.
 
 * Then the testing set is used to evaluate the model's performance on unseen data.
 
@@ -570,7 +570,7 @@ Remind your students that we have worked with a number of models so far, includi
 
 * Models were trained on the entire dataset, then made predictions.
 
-* We will now split a dataset into training and testing data and run linear regression on them.
+* We will now split a dataset into training and testing data and run a linear regression on them.
 
 Open the notebook and introduce the dataset:
 
@@ -588,7 +588,7 @@ Open the notebook and introduce the dataset:
 
 * NaN values are deleted from the DataFrame.
 
-* In regression, the lagged returns will be the **independent** variable and the returns will be the **dependent** variable, since we are attempting to answer to what extent past values affect future values. It's like asking the question: given today's return, what's the expected return going to be tomorrow?
+* In regression, the lagged returns will be the **independent** variable and the returns will be the **dependent** variable, since we are attempting to answer to what extent past values affect future values. It is like asking the question: given today's return, what's the expected return going to be tomorrow?
 
 Explain that the next step is to split the dataset into `train` and `test` sets:
 
@@ -603,7 +603,7 @@ Explain that the next step is to split the dataset into `train` and `test` sets:
 
 * However, in a time series in which autocorrelation exists, that is not possible. Instead, data points prior to a cutoff point comprise the training set, and all points that come after comprise the testing set.
 
-* Another common practice is to assign 80% of the data to the training set, and 20% to the testing set. Oftentimes, with time-series data, it's good to explicitly specify the date ranges.
+* Another common practice is to assign 80% of the data to the training set, and 20% to the testing set. Oftentimes, with time-series data, it is good to specify the date ranges explicitly.
 
 Explain the code with which `train` and `test` sets are divided into dependent and independent variables.
 
@@ -852,7 +852,7 @@ Next, explain the pandas time series techniques used to calculate the training a
   end_of_training_period
   ```
 
-* `weeks[0]` is the first week of the data frame. In this example, The start of the training period is `2007-12-31` and the end of the training period is `2008007-06`.
+* `weeks[0]` is the first week of the data frame. In this example, the start of the training period is `2007-12-31` and the end of the training period is `2008007-06`.
 
   ```python
   # The week of the first test window
@@ -1075,7 +1075,7 @@ Walk through the iterations that take place inside the for-loop:
 
 Next, discuss the out-of-sample error metrics:
 
-* What is going on is that the predicted out-of-sample values are compared to the actual values that occurred in that day. We'll compare how this out-of-sample approach predicted, relative to the single training and test window consructed previously.
+* What is going on is that the predicted out-of-sample values are compared to the actual values that occurred in that day. We will compare how this out-of-sample approach predicted, relative to the single training and test window constructed previously.
 
 * To make that comparison, first slice the rolling out-of-sample results to just include 2019.
 
@@ -1083,7 +1083,7 @@ Next, discuss the out-of-sample error metrics:
 results_2019 = Results.loc['2019':]
 ```
 
-* This makes a more "apples to apples" comparison between the two time approaches (since we'll be comparing over the same dates).
+* This makes a more "apples to apples" comparison between the two time approaches (since we will be comparing over the same dates).
 
 Train Test Split Model:
 ![rolling_gold_01.png](Images/rolling_gold_01.png)
@@ -1107,7 +1107,7 @@ Rolling Out-of-Sample Model:
 
 * Comparing the two RMSE's, the RMSE from the single training window is 0.73, whereas it is 0.75 from the rolling-out-of-sample model.
 
-  * The rolling-out-of sample approach is an approach more akin to real life (you likely re-estimate your model when new data becomes available)
+  * The rolling-out-of sample approach is an approach more akin to real-life (you likely re-estimate your model when new data becomes available)
 
   * In addition to being more realistic, the rolling-out of sample approach is also more rigorous, as you are testing your model many more times across different time periods
 
