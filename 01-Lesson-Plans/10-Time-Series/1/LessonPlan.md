@@ -82,6 +82,8 @@ The instructor will kick off the class by welcoming students and briefly introdu
 
 Welcome the students back to class. Communicate to them that this unit will commence their journey into the world of time series analysis and machine learning.
 
+- - -
+
 ### 2. Instructor Do: Mysticism of Machine Learning (15 min)
 
 Open the slides, and highlight the following:
@@ -166,6 +168,8 @@ If time remains, stimulate excitement by showing students some of the below exam
 
 Ask for any questions before moving forward. Assure students that each of these concepts will be explored in more detail over the next several weeks.
 
+- - -
+
 ### 3. Instructor Do: Review Homework (10 min)
 
 The instructor will provide a brief walk through of the homework solution. Time should be dedicated to allowing students to ask a few questions about the assignment.
@@ -190,6 +194,8 @@ Open the homework instructions, and highlight the following:
 * Indicate to students that the homework will leverage the **Quandl** API. Remind students that **Quandl** requires an API key and that they will have to have the key stored, sourced, and exported as an environment variable.
 
 Ask students if they have any questions before moving on.
+
+- - -
 
 ### 4. Instructor Do: Time Series Basics (10 min)
 
@@ -283,6 +289,8 @@ Next, explain that the `resample()` method groups rows by a specified time frame
 
 * More attributes can be found by consulting the documentation.
 
+- - -
+
 ### 5. Students Do: Time Series Basics (15 min)
 
 In this activity, students will practice the basics of time series manipulation in pandas.
@@ -292,6 +300,8 @@ In this activity, students will practice the basics of time series manipulation 
 * [Activities/02-Stu_Time_Series_Basics/README.md](Activities/02-Stu_Time_Series_Basics/README.md)
 
 * [Activities/02-Stu_Time_Series_Basics/Resources/amazon.csv](Activities/02-Stu_Time_Series_Basics/Resources/amazon.csv)
+
+- - -
 
 ### 6. Instructor Do: Review Time Series Basics (10 min)
 
@@ -304,7 +314,7 @@ Quickly walk through the basic steps of working with a time series in pandas. Us
 * The `parse_dates` and `index_col` arguments are used to format the time series index as datetime. This allows data to be sliced from the DataFrame by date ranges.
 
   ```python
-  df2 = pd.read_csv(
+  df = pd.read_csv(
     'amazon.csv',
     parse_dates=True,
     index_col='Date')
@@ -327,17 +337,19 @@ Quickly walk through the basic steps of working with a time series in pandas. Us
 
 Answer any remaining questions before moving on.
 
+- - -
+
 ### 7. Instructor Do: Time Series Decomposition (10 min)
 
 * **File:** [Activities/03-Ins_Decomposition/Solved/decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
 
-Open [Slide 3](https://docs.google.com/presentation/d/1DSwXmlnnP2_TmhJlBB_95bdWm_m7xb0rACwK-usjfwk/edit#slide=id.g5f3ad86fc3_0_19) and define time series decomposition to the class:
+Use the slides and define time series decomposition to the class:
 
 * In a nutshell, it is separating time series data into useful and less useful components.
 
 * The useful components can be used to observe patterns and to make predictions.
 
-Open [Slide 4](https://docs.google.com/presentation/d/1DSwXmlnnP2_TmhJlBB_95bdWm_m7xb0rACwK-usjfwk/edit#slide=id.g5f3ad86fc3_0_19) and list the components of time series decomposition:
+List the components of time series decomposition:
 
 * Level: What is the average value of the series?
 
@@ -403,7 +415,7 @@ In this activity, you will introduce EWMA, or exponentially-weighted moving aver
 
 * [hodrick.ipynb](Activities/04-Ins_Hodrick_Prescott/Solved/hodrick.ipynb)
 
-* [IVV.csv](Activities/04-Ins_Hodrick_Prescott/Solved/IVV.csv)
+* [IVV.csv](Activities/04-Ins_Hodrick_Prescott/Resources/IVV.csv)
 
 Open the notebook and describe the dataset:
 
@@ -437,7 +449,7 @@ Introduce the topic of the Hodrick-Prescott filter:
 
 * Like rolling average and EWMA, it can be used to capture trends.
 
-Open the [Slideshow](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5f3ad86fc3_0_212) and briefly explain the overall mathematical idea of the Hodrick-Prescott filter (Slides 7-9):
+Open the slides to explain the overall mathematical idea of the Hodrick-Prescott filter:
 
   ![Images/hp01.png](Images/hp01.png)
 
@@ -476,6 +488,8 @@ Finally, show the plots of the trend and noise components after filtering:
 
 * The second plot shows the noise (non-trend) that has been filtered out.
 
+- - -
+
 ### 10. Students Do: You've Got a FRED (15 min)
 
 In this activity, students will use the Hodrick-Prescott filter to identify macroeconomic trends in the United States in the period from 2004 to 2010.
@@ -485,6 +499,8 @@ In this activity, students will use the Hodrick-Prescott filter to identify macr
 * [README.md](Activities/05-Stu_Hodrick_Prescott/README.md)
 
 * [FRED.ipynb](Activities/05-Stu_Hodrick_Prescott/Unsolved/FRED.ipynb)
+
+- - -
 
 ### 11. Instructor Do: Review You've Got a FRED (10 min)
 
@@ -516,6 +532,8 @@ Open the solution file, and conduct a brief dry walk through of the code.
 If time allows, take a moment to compare and contrast the H-P filter:
 
 * In this data set, for the most part, the EWMA seems to produce a fairly similar result as the H-P filter, though the latter is somewhat smoother.
+
+- - -
 
 ### 12. Instructor Do: Auto Correlation (15 min)
 
@@ -655,6 +673,8 @@ Finally, summarize the key points of the activity:
 
 * Doing so requires an understanding of how current values are affected by past values.
 
+- - -
+
 ### 13. Students Do: Euro ETFs (15 min)
 
 In this activity, students will examine a time series of bid-ask spreads of an ETF for autocorrelation.
@@ -666,6 +686,8 @@ In this activity, students will examine a time series of bid-ask spreads of an E
 * [high_frequency_euro_ETF_bid_ask_spreads.csv](Activities/07-Stu_ETF/Resources/high_frequency_euro_ETF_bid_ask_spreads.csv)
 
 * [autocorrelation.ipynb](Activities/07-Stu_ETF/Unsolved/autocorrelation.ipynb)
+
+- - -
 
 ### 14. Instructor Do: Review Activity (10 min)
 
@@ -700,6 +722,8 @@ Review the ACF and PACF plots:
 
   * The ACF and PACF both appear to be significant at a lag of 1.
 
+- - -
+
 ### 15. Instructor Do: Reflect (10 min)
 
 End the class by congratulating students on a tough day of time series analysis. Assure students that no one can master this content in a day; additional review and practice will be needed to reinforce the skills learned.
@@ -708,8 +732,8 @@ End the class by congratulating students on a tough day of time series analysis.
 
 Ask if there are any questions before moving on. Encourage students to attend office hours and to reach out to teaching staff for any additional questions or help.
 
-### 16. END Class
+### End Class
 
----
+- - -
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

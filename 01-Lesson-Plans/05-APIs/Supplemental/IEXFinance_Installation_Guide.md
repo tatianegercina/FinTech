@@ -42,7 +42,13 @@ Go to [IEX Cloud](https://iexcloud.io/) and login to your account. Then grab you
 
 Then, open up a terminal and use the following command `export IEX_TOKEN=<public key>` to set your `IEX_TOKEN` environment variable. Use the `echo` command to verify that the `IEX_TOKEN` variable has been properly set.
 
+**Note**: Make sure to set your environment variable name specifically as `IEX_TOKEN`. In addition, refrain from putting quotes around your environment variable value as they are not needed.
+
   ![iex-token](Images/iex-token-verify.png)
+
+## Usage
+
+Lastly, run `jupyter-lab` from the same terminal in which you set your `IEX_TOKEN` environment variable. You may have to restart `jupyter-lab` if it is already running in the terminal in order for `jupyter-lab` to re-scan the environment for new variables.
 
 ## Troubleshooting
 

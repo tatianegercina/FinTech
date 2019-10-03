@@ -8,7 +8,7 @@ Follow the directions in the starter Jupyter notebook, but consult the below if 
 
 Prepare the data with the following steps:
 
-  * Read the spreadsheet in Pandas. You will use the data in the settle price column (see [https://www.investopedia.com/terms/s/settlementprice.asp](https://www.investopedia.com/terms/s/settlementprice.asp) for more on futures settle prices).
+  * Read the CSV in Pandas. You will use the data in the settle price column (see [https://www.investopedia.com/terms/s/settlementprice.asp](https://www.investopedia.com/terms/s/settlementprice.asp) for more on futures settle prices).
 
   * Instead of using settle prices directly, create a column of returns: the percentage change from one day to the next. Multiply the results by 100 for ease of interpretation. This column will be your dependent variable (y).
 
@@ -36,5 +36,7 @@ Provide and interpret the following metrics:
 * Mean squared error
 * Root mean squared error
 * Standard deviation of futures return
+
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

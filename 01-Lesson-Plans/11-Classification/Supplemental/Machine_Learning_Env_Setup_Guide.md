@@ -38,27 +38,34 @@ Once the `imbalanced-learn` download is complete, verify the installation comple
 
 ## PyDotPlus
 
-The `pydotplus` package is used to create a visual representation of decision trees.
+The `pydotplus` package is used to create a visual representation of decision trees. If you have any issues installing this library in Windows, please read the [Troubleshooting section below](#Troubleshooting).
 
-### Install
+### Installation Process
 
-Open the terminal, and execute the following command to install `pydotplus`.
+Open the terminal (Git Bash in Windows), and execute the following commands to install `pydotplus` and the additional libraries required. It's important to install these libraries in the order they are listed below.
 
 ```shell
+conda install python-graphviz
+conda install graphviz
 conda install -c conda-forge pydotplus
 ```
 
-### Verify Installation
+#### Verify Installation
 
-Once the `pydotplus` download is complete, verify the installation completed successfully.
+Once the `pydotplus` and the additional libraries download is complete, verify the installation completed successfully.
 
-* Use the `conda-list` function with a `grep` argument to identify if the `pydotplus` library installed successfully.
+* Open the terminal (Git Bash in Windows), and use the `conda-list` function with a `grep` argument to identify if the `pydotplus` and `graphviz` libraries installed successfully.
 
   ```shell
-  conda list | grep pydotplus
+  conda list | grep -E 'pydotplus|graphviz'
   ```
 
-  ![Verify pydotplus installation](Images/pydotplus-verify.png)
+  _Installation verification in macOS_
+  ![Verify pydotplus macOS installation](Images/pydotplus-verify.png)
+
+  _Installation verification in Windows_
+
+  ![Verify pydotplus Windows installation](Images/pydotplus_windows_check.png)
 
 ## Troubleshooting
 
@@ -145,3 +152,21 @@ python -c "import imblearn;print(imblearn.__version__)"
 This is the output you should see on the terminal window.
 
 ![Package version check](Images/package-version.png)
+
+
+### Package is not Installed in Windows
+
+Sometimes you can get the following message when you install a package using `conda install`
+
+```shell
+EnvironmentNotWritableError: The current user does not have write permissions to the target environment.
+ environment location: C:\ProgramData\Anaconda3
+```
+
+If you ever see this message, try running the Git Bash terminal as `Administrator`. In Windows 10 you can do it as follows.
+
+1. Right-click on the Git Bash icon.
+
+2. Go over the `More` option.
+
+3. Chose the `Run as administrator` option.
