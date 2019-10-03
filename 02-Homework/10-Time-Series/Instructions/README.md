@@ -4,15 +4,15 @@
 
 ## Background
 
-The financial departments of large companies often deal with foreign currency transactions while doing international business. As a result, they're always looking for anything that can help them better understand the future direction and risk of various currencies. Hedge funds, too, are keenly interested in anything that will give them a consistent edge in predicting  currency movements. 
+The financial departments of large companies often deal with foreign currency transactions while doing international business. As a result, they are always looking for anything that can help them better understand the future direction and risk of various currencies. Hedge funds, too, are keenly interested in anything that will give them a consistent edge in predicting currency movements. 
 
-In this assignment, you will test the many time-series tools that you've learned in order to predict future movements in the value of the Japanese yen versus the U.S. dollar. 
+In this assignment, you will test the many time-series tools that you have learned in order to predict future movements in the value of the Japanese yen versus the U.S. dollar. 
 
 You will gain proficiency in the following tasks:
 
-1. [Time-Series Return Forecasting](#Return-Forecasts)
-2. [Volatility Forecasting](#Volatility-Forecasts)
-3. [Out-of-Sample Predictions](#OOS-Predictions)
+1. Time-Series Return Forecasting
+2. Volatility Forecasting
+3. Out-of-Sample Predictions
 
 - - -
 
@@ -36,7 +36,7 @@ Follow the steps outlined in the time-series starter notebook to complete the fo
 
      (*Futures contracts are contractual bets made today about what the future value of something will be. They are used a lot for hedging and for speculative trading. For more information on futures contracts, see a few of the links in the [Resources](#Resources) section.*) 
 
-3. Perform a time-series decomposition, using Hodrick-Prescott filter and various moving average (MA) and exponentially weighted moving average (EWMA) smoothers.
+3. Perform a time-series decomposition, using the Hodrick-Prescott filter and various moving average (MA) and exponentially weighted moving average (EWMA) smoothers.
 
 4. Estimate a Scikit-Learn time-series regression to identify seasonal effects in the yen.
 
@@ -52,7 +52,7 @@ Follow the steps outlined in the time-series starter notebook to complete the fo
 
 2. Identify patterns of clustered and/or high yen volatility.
 
-3. Forecast three-day volatility of the yen using a GARCH or EGARCH model.
+3. Forecast the three-day volatility of the yen using a GARCH or EGARCH model.
 
 #### Out-of-Sample Predictions
 
@@ -71,7 +71,7 @@ Futures spreads, as opposed to futures contracts, often exhibit more seasonal pa
 
 2. Construct a futures spread, by taking [(2 month contract return) - (1 month contract return * -1)]. This is effectively a bet that the yen will be stronger two months from now than it will be a month from now (regardless of what it is today).  
 
-3. Use an ARMA model and the out-of-sample approaches you've learned to see if you can build a model with a low RMSE. (Then save it! In a subsequent unit, you'll learn how to apply your best model to actual trading).
+3. Use an ARMA model and the out-of-sample approaches you have learned to see if you can build a model with a low RMSE. (Then save it! In a subsequent unit, you will learn how to apply your best model to actual trading).
 
 - - -
 
