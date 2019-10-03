@@ -54,7 +54,7 @@ Follow the steps outlined in the time-series starter notebook to complete the fo
 
 3. Forecast three-day volatility of the yen using a GARCH or EGARCH model.
 
-#### Out-of-Sample Predictions
+#### Optional Challenge—Out-of-Sample Predictions
 
 Last, apply your Scikit-Learn regression model under a testing approach commonly used by data scientists and quantitative traders when dealing specifically with time-series data.
 
