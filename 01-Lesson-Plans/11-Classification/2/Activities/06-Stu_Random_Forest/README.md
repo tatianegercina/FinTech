@@ -1,6 +1,6 @@
 # Students Do: Predicting Fraud with Random Forests
 
-In this activity, you are going to explore how random forest algorithm can be used to identify fraudulent loan applications. You will use the `sba_loans_encoded.csv` file that you created before to train the model
+In this activity, you are going to explore how random forest algorithms can be used to identify fraudulent loan applications. You will use the `sba_loans_encoded.csv` file that you created before to train the model.
 
 ## Instructions
 
@@ -34,8 +34,12 @@ In this activity, you are going to explore how random forest algorithm can be us
 
 ### Analysis Questions
 
-10. Analyze the model's evaluation results and answer the following questions.
+10. Analyze the model's evaluation results and answer the following questions:
 
 * **Question 1:** Would you trust in this model to deploy a fraud detection solution in a bank?
 
 * **Question 2:** What are your insights about the top 10 most importance features?
+
+
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

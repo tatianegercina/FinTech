@@ -21,3 +21,7 @@ In this activity, you will use the Pima Diabetes dataset to train a logistic reg
 ### Hints
 
 If you get stuck, refer back to the instructor demo notebook for examples of how to complete each step. You got this!
+
+
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
