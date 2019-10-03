@@ -18,6 +18,6 @@ In this activity, you will attempt to identify whether a linear relationship exi
 
 * Obtain the slope and the y-intercept, and r-square values of the model.
 
+---
 
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

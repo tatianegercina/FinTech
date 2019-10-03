@@ -1,4 +1,4 @@
-# And I'll Be there -- You've Got a FRED
+# And I'll Be there—You've Got a FRED
 
 ## Introduction
 
@@ -10,7 +10,7 @@
 
 ## Fetching FRED data
 
-* Use pandas's web datareader to pull in data from FRED as a pandas data frame. You do not need an API key.
+* Use Pandas's web datareader to pull in data from FRED as a Pandas DataFrame. You do not need an API key.
 
 * See the documentation for an example of retrieving data from FRED: [https://pandas-datareader.readthedocs.io/en/latest/remote_data.html](https://pandas-datareader.readthedocs.io/en/latest/remote_data.html).
 
@@ -32,8 +32,12 @@
 
 ### Notes
 
-You will need to intall the [pandas-datareader](https://pandas-datareader.readthedocs.io/en/latest/) for the activity.
+You will need to install the [pandas-datareader](https://pandas-datareader.readthedocs.io/en/latest/) for the activity.
 
 ```
 pip install pandas-datareader
 ```
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
