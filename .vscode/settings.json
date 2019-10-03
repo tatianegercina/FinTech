@@ -11,7 +11,8 @@
   },
   "[python]": {
     "editor.detectIndentation": false,
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true
   },
   "[markdown]": {
     "editor.quickSuggestions": true
@@ -20,5 +21,7 @@
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "git.autofetch": true,
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true
 }
