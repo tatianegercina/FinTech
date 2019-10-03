@@ -6,7 +6,7 @@ In this activity, you will practice combination sampling with the imbalanced-lea
 
 * Implement the SMOTEENN technique with the credit card default data.
 
-* Estimate a logistic regression model and report the classification evaluation metrics this method. 
+* Estimate a logistic regression model and report the classification evaluation metrics using this method. 
 
 ---
 
