@@ -82,6 +82,8 @@ Ask if there are any questions before moving on.
 
 ### 2. Instructor Do: Neural Networks are Cool! (10 min)
 
+In this activity, students will be instrodu
+
 Open the lesson slides and move to the _Neural Networks are Cool!_ section.
 
 Start the presentation by showing students the following image from the [Rorschach Inkblot Test](https://en.wikipedia.org/wiki/Rorschach_test), and ask them the next question:
@@ -189,3 +191,9 @@ Now that you train the model, play around by making several poses and faces to t
 Comment to students that this funny experiment is just an example of the power of neural networks, instead of matching gestures with silly pets, you can use this kind of technology for business applications like building security systems.
 
 Answer any questions before moving on.
+
+---
+
+### 3. Instructor Do: Neuron's Anatomy (10 min)
+
+Op
