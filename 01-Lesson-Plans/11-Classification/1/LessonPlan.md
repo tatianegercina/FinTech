@@ -52,7 +52,7 @@ By the end of class, students will be able to:
 
 * This week's activities will use tools such as **imbalance-learn**, **scikit-learn**, and the **Lending Club**.
 
-  * **Imbalance-learn** and **scikit-learn** will need to be added to everyone's Python environments. Modules will need to be installed. Students can consult the [classification ecosystem install guide]() for steps on how to verify both packages have been installed correctly.
+  * **Imbalance-learn** and **scikit-learn** will need to be added to everyone's Python environments. Modules will need to be installed. Students can consult the [classification ecosystem install guide](../Supplemental/Machine_Learning_Env_Setup_Guide.md) for steps on how to verify both packages have been installed correctly.
 
   * **Lending club** will be used as a data source for this unit. Accounts will need to be created in order for data to be accessed.
 
