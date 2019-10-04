@@ -729,8 +729,6 @@ Educate students on the different orientations for **hyperplanes**. Provide unde
 
 ![hyperplane_orientation.png](Images/hyperplane_orientation.png)
 
-Image retrieved from [here](https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwjgoJK8mejkAhUtHTQIHeLoAFwQjRx6BAgBEAQ&url=https%3A%2F%2Ftowardsdatascience.com%2Fsupport-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47&psig=AOvVaw2DyashN0tUrStoJsPeA1Sg&ust=1569371203289268)
-
 * Hyperplanes can be 2D, clearly delineating classes with non-overlapping data points or outliers.
 
 * Hyperplane also supports what's considered **0 tolerance with perfect partition**, which is a non-linear hyperplane that will position and orient the hyperplane to correctly classify overlapping or outlying data points.
