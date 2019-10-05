@@ -80,6 +80,8 @@ Welcome students to the first day of algorithmic trading and explain the followi
 
 * Algorithmic trading is the concept of utilizing machine-learning to automate the process of buying and selling assets. Machine learning algorithms can make predictions about ROI, risk, and analyze transactions much faster than a human brain. Because computers run off of logic rather than emotions, traders don't have to worry about their emotions getting in the way.
 
+  * Underscore to students that there are a number of different algorthmic trading strategies that leverage machine learning. An algorithmic doesn't have to perform every action involved trading: algorithmic trading can be used just to predict the best investments, determine risk, or kick-off end-to-end trade execution and portfolio management.
+
 * Using algorithmic trading models in conjunction with portfolio management also allows for automatic re-balancing of assets (capital) within the portfolio, thereby aiding in portfolio optimization. Algorithmic trading models automatically buy and sell assets within the portfolio according to the optimal weights for each asset calculated by the model.
 
 * Summarize to students that all **algorithmic trading** involves is the prediction of future stock returns and execution of specific trading actions based on specific criteria, such as the ratio of risk to reward for the given scenario. In this regard, all a human has to do is click a button to execute the algorithm. The key difference between human traders and algorithmic trading is that computers can make decisions and predictions much more efficiently and effectively than humans, and they can do so without human emotions getting in the way.
