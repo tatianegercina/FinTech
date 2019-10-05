@@ -4,7 +4,9 @@
 
 ### Overview
 
-Today's class will focus on using last unit's topics of deep neural networks to implement machine learning based trading, otherwise known as *algorithmic trading*. In particular, students will use deep neural nets to predict stock returns of multiple assets within a portfolio and trigger signal-based strategies for trading multiple assets at the same time.
+Students have seen how machine learning can be used accelerate time series analysis, gauge public sentiment about the market, and classify loan eligibility. By the end of this unit, students will also know how machine learning can be used to automate and improve portfolio management and trading, especially as it pertains to making predictions about when to enter and exit the market for the most profitability.
+
+Today's class will introduce students to **algorithmic trading** in Python. Students will learn the fundaments of algorithmic trading such as data collection, signal generation, backtesting, and evaluation. The class will conclude with students building a complete trading dashboard similar to commercial online trading platforms.
 
 ### Class Objectives
 
@@ -12,23 +14,35 @@ By the end of class, students will be able to:
 
 * Delineate what algorithmic trading is and who does it.
 
-* Implement deep neural networks to predict stock returns of multiple assets.
+* Define and verbally reiterate effective entry and exit rules for trading.
+
+* Configure position sizing and leveraging.
+
+* Identify useful trading platforms and trading APIs and reiterate their use cases.
+
+* Build a predictive model for algorithmic trading.
+
+* Validate predictive model using backtesting for signal-based trading strategies.
+
+* Automate the purchase and sale of multiple assets using the recommended or best-ranked trading strategy.
 
 * Construct signal-based trading strategies from predicted stock returns such as momentum and mean reversion.
 
 * Rank multiple signal-based trading strategies by potential alpha generation.
 
-* Backtest signal-based trading strategies to calculate the earning potential of the algorithm using historical data.
-
-* Automate the purchase and sale of multiple assets using the recommended or best-ranked trading strategy.
-
 * Build portfolios with specific allocations to each underlying asset based on the predicted alpha generation of each stock.
 
 ### Instructor Notes
 
-* Today's lesson will consist of elements taught in the Pandas and Machine Learning.
+* Today's lesson will consist of elements taught in the Pandas, PyViz, and Machine Learning units. The lesson will include data analysis and querying, utilization of trading APIs for automated trade execution, and the visualization of trading performance and transaction analysis using a Panel dashboard.
 
-* Not everyone will have a background in trading. Therefore, be thorough when explaining specific trading strategies and key terms.
+* The goal of this unit is to educate students on trading, as well as how to use code to automate trading. Trading may be new for many students, so it is important that adequate information is provided regarding what trading is and all of the steps involved in creating entry and exit strategies, as well as which FinTech APIs integrate well with Python for automated trading.
+
+* Not everyone will have a background in trading, so be thorough when explaining specific trading terminology, concepts, and strategies. Instead of painting the entire picture for students, focus on the individual steps required to execute a trade, and then apply coding concepts (i.e. iterations) to illustrate how the step can be automated using Python code. Definitions for key trading terminology will be provided.
+
+* Review sessions will be geared towards allowing students to ask as many questions as possible. Questions should be prioritized over instructor posed review questions. While we want to provide as much opportunity as possible for students to ask questions, it is also important that the class is paced so that all material is covered.
+
+  * Encourage students to review supplementary resources, to reach out to TAs individually for assistance, and to attend office hours to address any unanswered questions or confusion.
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
@@ -46,16 +60,28 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-In this section, you teach students what exactly algorithmic trading is and explain why it's useful for FinTech professionals.
+In this section, students are introduced to algorithmic trading is and explain why it's useful for FinTech professionals. This section is a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and make participating in the market as easy as running a program.
 
 Welcome students to the first day of algorithmic trading and explain the following:
 
-* Algorithmic trading is the concept of utilizing machine-learning to automate the process of buying and selling assets; models incorporating mathematic models are used to predict future stock returns and perform an action based on specific criteria, such as the ratio of risk to reward for the given scenario.
+* Introduce students to algorithmic trading first by explaining how cumbersome it can be to manually make trades. Explain that a typical day for traders involves:
 
-* Signals are created when specific criteria match up according to the machine learning model. Often, there are multiple signals that appear during trading activity, and therefore an algorithmic trading model should rank the multiple signals by potential alpha generation and choose the best one for the right scenario.
+  * Tracking the transactional history of many stocks
 
-* Backtesting is the process of applying algorithmic trading models to historical trading data, making it possible to test the accuracy of the model (at least on data that has already happened).
+  * Identify the best opportunity to buy, sell, and hold
 
-* Using algorithmic trading models in conjunction with portfolio management allows for automatic re-balancing of assets (capital) within the portfolio, thereby aiding in portfolio optimization; algorithmic trading models automatically buy and sell assets within the portfolio according to the optimal weights for each asset calculated by the model.
+  * Maintain knowledge about the highs and lows for each individual stock, as well as their overall portfolio value and profit/loss
+
+  * Keeping emotions in check
+
+* Also explain that human emotions play a key role in the success or failure of a trade/trader. Because the market is constantly changing with varying degrees of volatility, it's easy for humans to get emotional when trading. The trades that traders make have the ability to drastically impact their own profitability and livelihood. Furthermore, because traders are dealing with other people's money, such as retirement funds, every decision has the ability to disrupt the economical foundation of countless lives.
+
+* The sheer number of moving parts and details that need to be considered can make it difficult for the human mind to consistently make performant trades. This is where **algorthmic trading** comes in.
+
+* Algorithmic trading is the concept of utilizing machine-learning to automate the process of buying and selling assets. Machine learning algorithms can make predictions about ROI, risk, and analyze transactions much faster than a human brain. Because computers run off of logic rather than emotions, traders don't have to worry about their emotions getting in the way.
+
+* Using algorithmic trading models in conjunction with portfolio management also allows for automatic re-balancing of assets (capital) within the portfolio, thereby aiding in portfolio optimization. Algorithmic trading models automatically buy and sell assets within the portfolio according to the optimal weights for each asset calculated by the model.
+
+* Summarize to students that all **algorithmic trading** involves is the prediction of future stock returns and execution of specific trading actions based on specific criteria, such as the ratio of risk to reward for the given scenario. In this regard, all a human has to do is click a button to execute the algorithm. The key difference between human traders and algorithmic trading is that computers can make decisions and predictions much more efficiently and effectively than humans, and they can do so without human emotions getting in the way.
 
 Answer any questions before moving on.
