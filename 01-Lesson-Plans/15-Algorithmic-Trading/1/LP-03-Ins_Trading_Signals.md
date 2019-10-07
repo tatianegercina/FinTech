@@ -38,15 +38,15 @@ Transition to explaining to students how technical indicators and trading signal
 
 There are a number of different trading strategies that can be used to interpret technical indicators. Strategies are what dictates trading signals (buy or sell decisions). Provide students with an overview of the differences by touching upon the below examples and explaining the difference between a technical and fundamental approach.
 
-* Explain that when a short window moving average (ex. 50-day MA) crosses over a long window moving average (ex. 100-day MA) and continues to be greater than the long window moving average, then the technical indicator suggests that the underlying stock price will rise in the short-term.
+* Explain that when a short window moving average (ex. 50-day MA) crosses over a long window moving average (ex. 100-day MA) and continues to be greater than the long window moving average, then the technical indicator suggests that the underlying stock price will rise in the short-term. Based off of this knowledge, a trader or algorithm could implement one of the following **dual moving average crossover** strategies:
 
-  * Communicate that some strategies would issue a buy order, with the general mantra being to buy high and sell higher.
+  * Buy high and sell higher
 
-  * Highlight that other strategies could translate the indicator to a sell signal based off of the strategy of buying low and selling high.
+  * Buy low and sell high
 
-  * One specific strategy, the **dual moving average crossover** strategy, would issue buy orders at the point of crossover.
+  * Regardless of the strategy, the **dual moving average crossover** approach is used to read a technical indicator and issue a trading signal: buy or well.
 
-* Ask students the following: if **dual moving average crossover** is used, what would be the trading signal for the following scenario--the short window moving average crosses under a long window moving average and continues to be less than the long window moving average (stock will fall in the short-term).
+* Ask students the following: if **dual moving average crossover** is used, what could be the trading signal for the following scenario--the short window moving average crosses under a long window moving average and continues to be less than the long window moving average (stock will fall in the short-term).
 
   * **Answer** The signal would indicate to sell. Sell orders would be issued at the points in which the short window moving average crosses under the long window moving average.
 
