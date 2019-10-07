@@ -34,6 +34,8 @@ By the end of the unit, students will be able to:
 
 * Have an address/wallet ready to populate as a pre-funded account. You can generate a new one with MyCrypto, or use the same wallet as before.
 
+* Have a look at the [Proof of Stake](https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ) FAQ on the Ethereum wiki for a deep comparison between it and Proof of Work.
+
 - - -
 
 ### Class Slides and Time Tracker
@@ -70,25 +72,40 @@ Ask the students the following questions:
 
 Explain to the students that today they will be building a real, functioning blockchain from scratch, so get excited!
 
-### 2. Instructor Do: Consensus Algorithms (10 min)
+### 2. Instructor Do: Consensus Algorithms (15 min)
 
-Time to explain the differences between some of the most popular consensus algorithms.
+To get started building our blockchain, let’s think back to the people chain we built on the first day of class.
 
-First, give these rhetorical questions to the class to ponder on:
+Have the students ponder:
 
-* What gives blockchains their inherent value?
+* How would you know if somebody was lying in the network? This is a consensus problem.
 
-* Why are they so secure?
+Ask the students:
 
-* This is what we will be learning today.
+* Do any blockchain enthusiasts know what this problem is called?
+
+  **Answer**: Byzantine general’s problem!
+
+Play the following video for the class to explain the problem:
+
+* [Byzantine General's Problem](https://www.youtube.com/watch?v=_MwqAaVweJ8)
+
+Consensus algorithms are how we solve this problem. Like most things in blockchain,
+they are simple words that get complicated fast, so let’s start with some definitions.
+
+* Can someone define consensus for us?
+
+  **Answer**: "Coming to agreement." In blockchain, we mean coming to agreement on what block in the chain is going to come next.
+
+* What about consensus algorithms?
+
+  **Answer**: In blockchain, we mean the math that decides what block in the chain will come next.
 
 Explain to the students that:
 
 * In a decentralized system, you cannot trust the participants in the network.
   It's a database that can be written to by anyone, which means special rules must be in place to prevent the database
   from being modified in a malicious way.
-
-* This is where something called a "Consensus Algorithm" comes into play.
 
 Break down the main purposes for a consensus algorithm:
 
@@ -99,7 +116,31 @@ Break down the main purposes for a consensus algorithm:
   that you'd make more just playing the game by the rules and just adding to it (aka mining) instead.
 
 Explain that there are many consensus algorithms in development, but blockchain technology has reignited innovation in the
-distributed computing field, so we'll discuss the more popular algorithms relevant to blockchain, starting with Proof of Work.
+distributed computing field, so we'll discuss the more popular algorithms relevant to blockchain.
+
+Send this table to the students and have them fill out the table for each algorithm:
+
+Name | Strength | Weakness
+---------|----------|---------
+Proof of Work | |
+Proof of Stake | |
+Proof of Authority | |
+
+The first, simplest, and least secure algorithm we'll start with is called "Proof of Authority."
+
+![proof of authority](https://image.shutterstock.com/image-photo/successful-team-leader-manager-ceo-600w-461317327.jpg)
+
+* Proof of Authority allows only specific addresses to mine/produce blocks in the network.
+
+* This is a centralized but cheap algorithm mainly used to power test networks.
+
+* This algorithm is never used in production, mainnet blockchains, only for development, which is what we'll be using it for.
+
+Ask the students:
+
+* What is the biggest strength of Proof of Authority?
+
+  **Answer**: Fast and cheap, good for test or development networks.
 
 ![proof of work](https://image.shutterstock.com/image-photo/bitcoin-cryptocurrency-mining-farm-600w-761471725.jpg)
 
@@ -120,17 +161,18 @@ Ask the students:
 ![proof of stake](https://image.shutterstock.com/image-photo/closeup-portrait-shocked-surprised-young-600w-207481837.jpg)
 
 * Explain that Proof of Stake is very similar to PoW, only instead of contributing computational power, you "stake"
-  some of the cryptocurrency for a period of time. Once passed a minimum staking interval, you can then submit blocks
-  to the rest of the network for confirmation.
+  some of the cryptocurrency, aka "collateralize" it while you produce blocks.
 
 * "Staking" your coins means to lock them in a transaction that proves to the rest of the network that you are willing
   to "put your money where your mouth is" in order to be trusted to make blocks.
+  If you cheat, you are penalized from your stake.
 
 * The biggest criticism is the "nothing at stake" problem, where block producers have nothing to lose for producing alternative
   versions/histories of the blockchain. Some versions of this algorithm include "punishing" cheaters by "burning" their stake and not
   letting them get it back.
 
-* Despite this concern, much of the blockchain community is moving towards different variations of PoS, including Ethereum.
+* Despite this concern, much of the blockchain community is moving towards different variations of PoS, including Ethereum,
+  with mathematical safe-guards in place to reduce this risk significantly.
 
 Ask the students:
 
@@ -143,22 +185,6 @@ Explain to the class that there are many others to research, and give them a few
 * Proof of Capacity - Using free hard drive space as a contribution to the network.
 
 * Proof of Burn -- "Burning" or making some amount of coins un-spendable to act as a stake to the network.
-
-The last, simplest, and least secure algorithm is called "Proof of Authority."
-
-![proof of authority](https://image.shutterstock.com/image-photo/successful-team-leader-manager-ceo-600w-461317327.jpg)
-
-* Proof of Authority allows only specific addresses to mine/produce blocks in the network.
-
-* This is a centralized but cheap algorithm mainly used to power test networks.
-
-* This algorithm is never used in production, mainnet blockchains, only for development, which is what we'll be using it for.
-
-Ask the students:
-
-* What is the biggest strength of Proof of Authority?
-
-  **Answer**: Fast and cheap, good for test or development networks.
 
 ### 3. Students Do: Turn and Teach Consensus Algorithms (10 min)
 
@@ -198,24 +224,40 @@ Ask the students the following questions:
 
   * Proof of Stake
 
-    **Answer**: Potential wealth distribution issues, incentive structure can possibly be taken advantage of.
+    **Answer**: "Nothing at Stake," potential wealth distribution issues, incentive structure can possibly be taken advantage of.
 
   * Proof of Authority
 
     **Answer**: Highly centralized, least secure.
+
+Congratulate the class on learning some of the most important and fundamental algorithms that blockchains are using today.
+Now, we can take this knowledge and start to build our own blockchain.
+
+* Many computer scientists and mathematicians around the globe are working very hard to solve these problems.
+
+* Understanding fundamentally how these algorithms work allows you to understand the rest of the blockchain community
+  and why certain design decisions are being made, and what makes blockchains different from each other.
 
 ### 5. Instructor Do: Creating a Genesis Block Demo (10 min)
 
 In this activity, you will be demonstrating the generation of a genesis block using the `puppeth` tool bundled with
 `geth`.
 
+* Explain to the class that now we are going to be building the first block of the chain,
+  where we will decide on which consensus algorithm to pick and configure the network.
+
 First, introduce the `geth` tool to the class.
 
 ![golang](https://www.vertica.com/wp-content/uploads/2019/07/Golang-1000x565.png)
 
-* Geth is a command line tool written in the Go programming language -- don't worry, you don't need to know Go, just that it's super fast and has a cute mascot!
+* Geth is a command line tool written in the Go programming language -- don't worry, you don't need to know Go,
+  just that it's super fast and has a cute mascot!
 
 * It is the official Ethereum node software used to initialize, run and manage Ethereum nodes.
+
+Ask the students to recall what a "node" is.
+
+  **Answer**: A participant of the network that keeps a full copy of the blockchain and maintains the consensus rules of the network.
 
 * By default, running `geth` will create a standard Ethereum node that will sync to the main
   network.
@@ -235,9 +277,8 @@ This should show the following prompt:
 * Explain to the class that the prompt is saying that this tool can be used to setup a complete
   Ethereum network ecosystem, including nodes, monitoring tools, and more.
 
-* We will be using this tool to creating something called the "Genesis Block" in our new blockchain.
-
-* The Genesis block is the very first block in the chain. It contains the initial rules for the network, like the consensus algorithm and pre-funded accounts.
+* The Genesis block is the very first block in the chain. It contains the initial rules for the network,
+  like the consensus algorithm and pre-funded accounts.
 
 Ask the class to come up with a clever name for your new network.
 
@@ -389,7 +430,7 @@ Your directory structure should look something like:
 
 The chain is ready to be started. Now it's time to have the students initialize their nodes.
 
-### 09. Students Do: Creating two nodes with accounts (15 min)
+### 9. Students Do: Creating two nodes with accounts (15 min)
 
 Students will now creating their own nodes and accounts for their custom blockchain network
 
@@ -465,7 +506,8 @@ Explain each of the new command line flags:
 
 * Since the first node's sync port already took up `30303`, we need to change this one to `30304` using `--port`.
 
-* The `--bootnodes` flag allows you to pass the network info needed to find other nodes in the blockchain. This will allow us to connect both of our nodes to each other.
+* The `--bootnodes` flag allows you to pass the network info needed to find other nodes in the blockchain.
+  This will allow us to connect both of our nodes to each other.
 
 The output of the second node should show information about `Importing block segments` and synchronization:
 
@@ -566,7 +608,7 @@ You can click the `Check TX Status` button to update the status.
 Congratulations, that was the first transaction send on this blockchain network!
 Now it's time for the students to do the same.
 
-### 16. Students Do: Transacting on their chains (15 min)
+### 16. Students Do: Transacting on their chains (10 min)
 
 Now it's time for the students to connect MyCrypto to their chain and send a transaction!
 
