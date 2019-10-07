@@ -1,24 +1,22 @@
 ### 3. Everyone Do: Demystifying Algorithmic Trading (10 min)
 
-In this activity, instructors will walk students through the mindset and steps of developing a basic trading algorithm. While the trading strategy of this particular example may not be effective at scale, the purpose of this activity is to show that the complexity associated with a trading algorithm more so derives from the sophistication of the particular trading strategy (how to handle stock data and initiate buy/sell/hold decision logic) rather than the actual steps to produce and execute a trading algorithm, which can be very simple.
+The goal of this activity is to demystify algorithmic trading by showing a simplified trading strategy in code. While this particular strategy isn't something that anyone would actually want to trade with, it serves to show how a trading strategy can be written in code. The following lessons will build on this core concept using more realistic strategies.
 
-**Files:**
-
-* [simple_trading_algorithm.ipynb](Activities/01-Evr_Simple_Trading_Algorithm/Solved/simple_trading_algorithm.ipynb)
+**Files:** [simple_trading_algorithm.ipynb](Activities/01-Evr_Simple_Trading_Algorithm/Solved/simple_trading_algorithm.ipynb)
 
 Open the solution file and discuss the following:
 
-* Trading algorithms are often misconstrued to be highly complex and esoteric, left only for the quantitative analysts/traders of prominent big banks and hedge funds; however, when breaking down the core components of a trading algorithm, there are three fundamental parts: obtaining the data, handling the data, and initiating the decision logic to buy, sell, or hold.
+* Trading algorithms are often misconstrued to be highly complex and esoteric, left only for the quantitative analysts/traders of prominent big banks and hedge funds; however, when breaking down the core components of a trading algorithm, there are three fundamental parts: obtaining the data, making a trading decision, and evaluating the results.
 
 * Oftentimes, stock data is provided from brokerage services than can be obtained via API calls. For this particular example, however, we've produced a hard-coded DataFrame consisting of 10 trading days worth of closing prices for AMD. The `bdate_range` function produces a datetime index using only "business day" datetime objects.
 
   ![amd-closing-prices-dataframe](Images/amd-closing-prices-dataframe.png)
 
-* As can be seen, a trading algorithm can be much simpler than we thought! Here we can see the handling of data and the decision logic for the trading algorithm, namely the looping of data using the for loop and the conditional statements defining the actions to buy, sell, or hold. This particular trading strategy performs a "buy low, sell high" strategy in which a buy order is made when the current day price is less than the previous day, a sell order is made when the current day price is greater than the previous day, and a hold is made when the current day price is equal to the previous day.
+* A trading algorithm can actually be a simple as a loop and a conditional. This trading strategy iterates through the data and compares the current price to the previous price to make a `buy`, `sell`, `hold` decision.
 
   ![simple-trading-algorithm](Images/simple-trading-algorithm.png)
 
-* Trading algorithms often produce metrics on a per trade basis. Thus, in order to emulate the same effect in our simple trading algorithm, only a few changes are required--such as implementing containers for buy and sell orders to record the stock prices of the buy-sell trading pairs.
+* Trading algorithms often produce metrics on a per trade basis. We can modify our algorithm to track trade decisions and profit/loss.
 
   ![profit-loss-trading-algorithm](Images/profit-loss-trading-algorithm.png)
 
@@ -26,6 +24,12 @@ Open the solution file and discuss the following:
 
   ![simple-trading-algo-performance](Images/simple-trading-algo-performance.png)
 
-* Lastly, keep in mind that while the trading strategy in this example works, the trading strategy was designed to be oversimplified and may not work at scale. It is for this reason that we hard-coded the stock prices--in order to simply focus on the process of creating a trading algorithm rather than dive into the complexities of a particular trading strategy.
+* Explain that while this particular trading strategy wasn't actually very good, we will keep improving our strategies throughout the week until we have some very robust trading algorithms.
+
+* Ask the class if they would actually use this particular trading strategy with their own money and why they would or wouldn't use it. Call for a few volunteers to provide their answers.
+
+* Ask how they might formally evaluate the algorithm and then share some of the following ideas for evaluation: risk metrics such as sharp ratios, performing quantitative analysis, using data visualizations.
+
+* Acknowledge that further analysis may show that this particular strategy may not be very good, but the beauty of algorithmic trading is that we can come up with any number of trading strategies, code it up, and test it out. Explain throughout the week,  we will learn how to improve on this model of obtaining data, making a trading decision, and evaluating the results.
 
 Answer any questions before moving on.
