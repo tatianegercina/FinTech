@@ -147,7 +147,7 @@ Continue the demo by loading the dataset on the `loans_df` DataFrame and highlig
     loans_df["month_le"] = label_encoder.transform(loans_df["month"])
     ```
 
-Show the DataFrame's head and show that there is actually a problem with using `LabelEncoder` for all of the categorical data in this data frame. Explain that there is a contextual issue in this particular case: the number assigned to some months doesn't match with the actual month number (e.g. `July` is encoded as `5`)
+Show the DataFrame's head and show that there is actually a problem with using `LabelEncoder` for all of the categorical data in this DataFrame. Explain that there is a contextual issue in this particular case: the number assigned to some months doesn't match with the actual month number (e.g. `July` is encoded as `5`)
 
 ![Months' names encoded as numbers with Label Encoder](Images/categorical-data-3.png)
 
