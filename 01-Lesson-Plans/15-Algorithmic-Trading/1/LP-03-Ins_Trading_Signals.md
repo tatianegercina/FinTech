@@ -2,15 +2,15 @@
 
 In this activity, students will learn what differentiates technical analysis from fundamental analysis, what a technical indicator is, what trading signals are, and how to use these signals to devise a trading strategy (actions based on the occurrence of a trading signal). In particular, students will learn how to generate a dual moving average crossover trading signal, implement the logic/strategy to perform the buy or sell orders, and overlay the points at which the algorithm places the buy and sell orders on top of the plot for closing prices of AAPL stock.
 
-**Files:**
+**Files:** [dual_ma_crossover.ipynb](Activities/02-Ins_Trading_Signals/Solved/dual_ma_crossover.ipynb)
 
-* [dual_ma_crossover.ipynb](Activities/02-Ins_Trading_Signals/Solved/dual_ma_crossover.ipynb)
+Navigate to the 15.1 trading signals section of the slides, and highlight the following:
 
-First, present the following questions and answers:
+* Explain to students that technical analysis is an (often) short-term trading discipline in which investments (such as stocks) are evaluated on the basis of their price action or movement.
 
-* What is technical analysis?
+* Contrast technical analysis with fundamental analysis by explaining that fundamental analysis is an investment discipline in which investments (such as stocks) are evaluated on the basis of their intrinsic qualities such as financial (income statement, balance sheet, and cash flow statement) or economic data pertaining to the underlying company.
 
-  **Answer:** Technical analysis is an (often) short-term trading discipline in which investments (such as stocks) are evaluated on the basis of their price action or movement. In contrast, fundamental analysis is an investment discipline in which investments (such as stocks) are evaluated on the basis of their intrinsic qualities such as financial (income statement, balance sheet, and cash flow statement) or economic data pertaining to the underlying company.
+Engage students by asking if anyone has any guesses or knowledge of what the following terms are. Make sure to communicate to students that they are not not expected to have the answers yet.
 
 * What is a technical indicator?
 
@@ -18,11 +18,37 @@ First, present the following questions and answers:
 
 * What is a trading signal?
 
-  **Answer:** A trading signal is the point at which a technical indicator, such as the crossover of two moving averages (short MA and long MA), suggests an opportunity for action--namely whether an individual trader or algorithmic trading program should issue a buy or sell order for a security such as a stock at that point in time.
+  **Answer:** A trading signal is the point at which a technical indicator, such as the crossover of two moving averages (short MA and long MA), suggests an opportunity for action--namely whether an individual trader or algorithmic trading program should issue a buy or sell order for a security (such as a stock) at that point in time.
 
-* What is a dual moving average crossover trading strategy?
+Transition to explaining to students how technical indicators and trading signal are used in practice, particularly as it relates to the dual moving average crossover trading strategy.
 
-  **Answer:** A dual moving average crossover is the point at which a short window moving average and a long window moving average cross paths. In particular, when a short window moving average (ex. 50-day MA) crosses over a long window moving average (ex. 100-day MA) and continues to be greater than the long window moving average, then it suggests that the underlying stock price will rise in the short-term. Conversely, when a short window moving average crosses under a long window moving average and continues to be less than the long window moving average, then it suggests that the underlying stock price will fall in the short-term. Therefore, a trading strategy using a dual moving average crossover would issue buy orders at the points in which the short window moving average crosses over the long window moving average, and sell orders at the points in which the short window moving average crosses under the long window moving average.
+* Emphasize to students that technical indicators and trading signals are used when implementing trading strategies. An example trading strategy is the dual moving average crossover strategy, which leverages two types of simple moving averages (short term and long term) in order to flag when an investment should be bought or sold.
+
+  * Use this as an opportunity to remind students that moving averages are calculated using historical quote data. Moving averages are just the average security price over/for a given time period.
+
+* Explain the difference between short term and long term moving averages. Highlight that short term moving average sand long term moving averages both track the average price of a security over time; however, long term moving averages are tracked with a greater window than short term.
+
+* Underscore that short term and long term moving averages, when plotted, will travel in the same direction. At some point, they will cross. The value at the time of the crossover is considered the crossover point. Crossover points are a type of technical indicator.
+
+  * If the STMA goes above the LTMA, it is understood that the security price will be rising in the short term, greater than the historical average for that time period.
+
+  * If the STMA goes below the LTMA, it is understood that the security price will be dropping in the short term, less than the historical average for that time period.
+
+* Indicate to students that once technical indicators are available, actual trading strategies can be used to approach buying and selling securities.
+
+There are a number of different trading strategies that can be used to interpret technical indicators. Strategies are what dictates trading signals (buy or sell decisions). Provide students with an overview of the differences by touching upon the below examples and explaining the difference between a technical and fundamental approach.
+
+* Explain that when a short window moving average (ex. 50-day MA) crosses over a long window moving average (ex. 100-day MA) and continues to be greater than the long window moving average, then the technical indicator suggests that the underlying stock price will rise in the short-term.
+
+  * Communicate that some strategies would issue a buy order, with the general mantra being to buy high and sell higher.
+
+  * Highlight that other strategies could translate the indicator to a sell signal based off of the strategy of buying low and selling high.
+
+  * One specific strategy, the **dual moving average crossover** strategy, would issue buy orders at the point of crossover.
+
+* Ask students the following: if **dual moving average crossover** is used, what would be the trading signal for the following scenario--the short window moving average crosses under a long window moving average and continues to be less than the long window moving average (stock will fall in the short-term).
+
+  * **Answer** The signal would indicate to sell. Sell orders would be issued at the points in which the short window moving average crosses under the long window moving average.
 
 Next, open the solution file and present the following:
 
@@ -30,7 +56,14 @@ Next, open the solution file and present the following:
 
   ![dataframe-options](Images/dataframe-options.png)
 
-* Generating a dual moving average crossover trading signal involves calculating a short rolling window moving average and a long rolling window moving average of closing prices, defining logic for an active/inactive trade signal 1 or -1 when the short MA crosses above/under the long MA, and calculating the points at which a entry or exit position should be made 1 or -1.
+* When working with dual moving averages, one of the key components is the duration or the short and long term windows. Data needs to be sampled using the Pandas `rolling` function for these particular time periods. Once data is sampled for both short term and long term windows, the average can be calculated (using close price).
+
+    ```python
+    signals_df['SMA50'] = signals_df['close'].rolling(window=50).mean()
+    signals_df['SMA100'] = signals_df['close'].rolling(window=100).mean()
+    ```
+
+* After the averages have been identified, logic has to be defined to return an active/inactive trade signal 1 or -1 when the short MA crosses above/under the long MA. and calculating the points at which a entry or exit position should be made 1 or -1.
 
   ![dual-ma-signal](Images/dual-ma-signal.png)
 
