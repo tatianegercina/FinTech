@@ -22,9 +22,11 @@ By the end of this class, students will be able to:
 
 ### Instructor Notes
 
+* Slack out the [imblearn Installation Guide](../../11-Classification/Supplemental/Machine_Learning_Env_Setup_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+
 * Today's class is the most challenging in this unit. Starting with the concept of stationarity, students will build on previous skills and ideas as they progress through the day. Some of these ideas are counterintuitive. However, they will gain repeated exposure to them from one activity to the next. A major goal for today's class, then, is for students to gain confidence through the process of working through fairly challenging material through multiple exposures.
 
-* Be mindful that because the each activity is a pre-requisite for the next, today's class may call for greater patience from both instructor and students. Do not rush through activities, and take the time to explain the core concepts and techniques in detail if necessary.
+* Be mindful that because each activity is a pre-requisite for the next, today's class may call for greater patience from both instructor and students. Do not rush through activities, and take the time to explain the core concepts and techniques in detail if necessary.
 
 * While it is likely that some students may not fully grasp all of today's material by the end of class, the payoff will be in day 3, when your students will have a chance to create predictive models from start to end.
 
@@ -58,11 +60,17 @@ Describe to students what they will be learning today:
 
 * They will learn to use powerful time series models, ARMA,  ARIMA, and GARCH, to forecast financial data.
 
+- - -
+
 ### 2. Instructor Do: Stationarity and Non-Stationarity (10 min)
 
 In this activity, you will define stationarity, a key concept in time series modeling.
 
-Open slide 6 and introduce the term `stationarity`:
+**Files:**
+
+* [stationarity.ipynb](Activities/01-Ins_Stationarity/Solved/stationarity.ipynb)
+
+Use the slides to introduce the term `stationarity`:
 
   * In a stationary process, statistical properties such as the mean and variance do not vary across time.
 
@@ -121,7 +129,7 @@ Open the notebook and show the code to convert from a non-stationary dataset to 
   df['Returns'] = df.Close.pct_change()
   ```
 
-  * pct_change() is another was to make a series stationary. The difference between diff() is that pct_change() essentially normalizes the data (_i.e., with the denominator doing the scaling_).
+  * pct_change() is another way to make a series stationary. The difference between diff() is that pct_change() essentially normalizes the data (_i.e., with the denominator doing the scaling_).
 
 
   ```python
@@ -130,6 +138,7 @@ Open the notebook and show the code to convert from a non-stationary dataset to 
 
   * Diff() subtracts out this upward trend, and can often be an easy way to make a series stationary.
 
+- - -
 
 ### 3. Students Do: Stationarity (15 min)
 
@@ -137,17 +146,19 @@ In this activity, students will perform techniques to stationarize a non-station
 
 **Files:**
 
-  * [README.md](Activities/05-Stu_Stationarity/README.md)
+  * [README.md](Activities/02-Stu_Stationarity/README.md)
 
-  * [amazon.csv](Activities/05-Stu_Stationarity/Resources/amazon.csv)
+  * [amazon.csv](Activities/02-Stu_Stationarity/Resources/amazon.csv)
 
-  * [stationarity.ipynb](Activities/05-Stu_Stationarity/Unsolved/stationarity.ipynb)
+  * [stationarity.ipynb](Activities/02-Stu_Stationarity/Unsolved/stationarity.ipynb)
+
+- - -
 
 ### 4. Instructor Do: Review Stationarity (5 min)
 
 **Files:**
 
-  * [stationarity.ipynb](Activities/05-Stu_Stationarity/Solved/stationarity.ipynb)
+  * [stationarity.ipynb](Activities/02-Stu_Stationarity/Solved/stationarity.ipynb)
 
 Show the initial plot of Amazon's closing prices, and explain that this time series is non-stationary.
 
@@ -215,6 +226,8 @@ Summarize the key points and procedures of this activity:
 
   * NaN and infinity values must be dropped along the way.
 
+- - -
+
 ### 5. Instructor Do: Auto-Regressive Moving Average Model (15 min)
 
 Before diving into ARMA, quickly summarize auto-correlation for the class:
@@ -227,7 +240,7 @@ Before diving into ARMA, quickly summarize auto-correlation for the class:
 
   * Plotting partial auto-correlation helps identify the **number** of lags that are significant in explaining the data.
 
-Open slide 11 and introduce the concept of auto-regressive (AR) modeling:
+Use the slides to introduce the concept of auto-regressive (AR) modeling:
 
   * In an AR model, past values are used to predict future values.
 
@@ -243,7 +256,7 @@ Explain the relationship between an AR model and a linear regression model:
 
   * In an example of an AR model, the past prices of a stock may be used to predict future prices.
 
-Explain the elements of the autoregression model (Slide 13):
+Explain the elements of the autoregression model:
 
   ![Images/arma01.gif](Images/arma01.gif)
 
@@ -311,11 +324,13 @@ Reiterate that, despite the possibly intimidating mathematical formula, the idea
 
   * Past values and past errors are used to predict future values.
 
+- - -
+
 ### 6. Instructor Do: ARMA in Practice (10 min)
 
 **File:**
 
-  * [ARMA.ipynb](Activities/06-Ins_ARMA/Solved/ARMA.ipynb)
+  * [ARMA.ipynb](Activities/03-Ins_ARMA/Solved/ARMA.ipynb)
 
 Now that we have a theoretical understanding of the ARMA model, explain that we will go over using it in Python.
 
@@ -408,21 +423,25 @@ Finally, highlight a few important features of the model's summary:
 
   * The AIC and BIC values should also be noted, lower values reflecting better accuracy. We will cover these values in greater detail later today.
 
+- - -
+
 ### 7. Students Do: Yields (15 min)
 
 In this activity, students will create an ARMA model on yield data.
 
 **Files:**
 
-  * [README.md](Activities/07-Stu_ARMA/README.md)
+  * [README.md](Activities/04-Stu_Yields/README.md)
 
-  * [yield.csv](Activities/07-Stu_ARMA/Resources/yield.csv)
+  * [yield.csv](Activities/04-Stu_Yields/Resources/yield.csv)
+
+- - -
 
 ### 8. Instructor Do: Review Activity (10 min)
 
-**File:**
+**Files:**
 
-  * [yields.ipynb](Activities/07-Stu_ARMA/Solved/yields.ipynb)
+  * [yields.ipynb](Activities/04-Stu_Yields/Solved/yields.ipynb)
 
 Open the notebook and show the plot of the data:
 
@@ -496,7 +515,7 @@ In this activity, in addition to describing the ARIMA model, you will elucidate 
 
 **File:**
 
-  * [ARIMA.ipynb](Activities/08-Ins_ARIMA/Solved/ARIMA.ipynb)
+  * [ARIMA.ipynb](Activities/05-Ins_ARIMA/Solved/ARIMA.ipynb)
 
 Open the notebook and describe the dataset:
 
@@ -555,7 +574,7 @@ Walk through the code used to create an ARIMA model:
 
   * An ARIMA model in which the differencing order is zero is therefore an ARMA model. For example, an ARIMA model with an order of (1, 0, 1) is an ARMA model of an order of (1, 1).
 
-Open slide 20 and explain the interpretation of AIC and BIC:
+Use the slides to explain the interpretation of AIC and BIC:
 
   * AIC stands for Akaike Information Criterion. BIC stands for Bayesian Information Criterion.
 
@@ -595,21 +614,25 @@ Send the following link to students for more information on the order of an ARIM
 
   * [https://people.duke.edu/~rnau/arimrule.htm](https://people.duke.edu/~rnau/arimrule.htm).
 
+- - -
+
 ### 11. Students Do: An ARIMA and a Leg (15 min)
 
 **Files:**
 
-  * [README.md](Activities/09-Stu_ARIMA_Leg/README.md)
+  * [README.md](Activities/06-Stu_ARIMA_Leg/README.md)
 
-  * [oil_futures_front.csv](Activities/09-Stu_ARIMA_Leg/Resources/oil_futures_front.csv)
+  * [oil_futures_front.csv](Activities/06-Stu_ARIMA_Leg/Resources/oil_futures_front.csv)
 
-  * [stu_ARIMA.ipynb](Activities/09-Stu_ARIMA_Leg/Unsolved/stu_ARIMA.ipynb)
+  * [stu_ARIMA.ipynb](Activities/06-Stu_ARIMA_Leg/Unsolved/oil_futures_ARIMA.ipynb)
+
+- - -
 
 ### 12. Instructor Do: Review Activity (10 min)
 
 **File:**
 
-* [stu_ARIMA.ipynb](Activities/09-Stu_ARIMA_Leg/Solved/stu_ARIMA.ipynb)
+* [stu_ARIMA.ipynb](Activities/06-Stu_ARIMA_Leg/Solved/oil_futures_ARIMA.ipynb)
 
 Open the notebook and explain the rationale for using ARIMA:
 
@@ -633,11 +656,13 @@ Describe the lag patterns seen in ACF and PACF plots:
 
 Answer any remaining questions before moving on.
 
+- - -
+
 ### 13. Instructor Do: GARCH (15 min)
 
 **File:**
 
-* [garch.ipynb](Activities/01-Ins_GARCH/Solved/garch.ipynb)
+* [garch.ipynb](Activities/07-Ins_GARCH/Solved/garch.ipynb)
 
 Before introducing GARCH to the class, introduce the topic of volatility:
 
@@ -649,17 +674,17 @@ Before introducing GARCH to the class, introduce the topic of volatility:
 
 * Understanding volatility is also important to banks as loan failures can occur in a cluster. Assets must exceed liabilities, so regulators and banks alike create forecast models for asset volatility.
 
-Explain that GARCH models volatility. Open the slideshow and summarize the key features of the ARMA model (Slide 5):
+Explain that GARCH models volatility. Open the slideshow and summarize the key features of the ARMA model:
 
 * An autoregressive component in which future values are predicted based on past values. In this model, values are a function of time.
 
 * A moving average component in which future values are predicted based on past errors.
 
-Explain that GARCH models are structured similarly, but to predict volatility (Slide 6):
+Explain that GARCH models are structured similarly, but to predict volatility:
 
 * As with ARMA models, there are autoregressive and moving average components.
 
-Formalize the term volatility (Slides 7-8):
+Formalize the term volatility:
 
 * In this context, volatility is the change in variance across a time series.
 
@@ -763,21 +788,25 @@ Show the plot of the volatility forecast:
 
   * Therefore, with GARCH, we've developed a cool way to forecast risk in the market.
 
+- - -
+
 ### 14. Students Do: Euro-USD Volatility (10 min)
 
 **Files:**
 
-* [README.md](Activities/02-Stu_USD/README.md)
+* [README.md](Activities/08-Stu_USD/README.md)
 
-* [USD_per_Euro_Hourly_Mid Prices.csv](Activities/03-Stu_USD/Resources/USD_per_Euro_Hourly_Mid Prices.csv)
+* [USD_per_Euro_Hourly_Mid_Prices.csv](Activities/08-Stu_USD/Resources/USD_per_Euro_Hourly_Mid_Prices.csv)
 
-* [usd.ipynb](Activities/02-Stu_USD/Unsolved/usd.ipynb)
+* [usd.ipynb](Activities/08-Stu_USD/Unsolved/usd.ipynb)
+
+- - -
 
 ### 15. Instructor Do: Review Activity (10 min)
 
 **Files:**
 
-* [usd.ipynb](Activities/02-Stu_USD/Solved/usd.ipynb)
+* [usd.ipynb](Activities/08-Stu_USD/Solved/usd.ipynb)
 
 Open the notebook and display the plot of the exchange rate:
 
@@ -851,6 +880,8 @@ Finally, walk through the steps of plotting the volatility forecast:
 
 * Based on the upward trend in the plot, the volatility of the EUR-USD exchange rate is predicted to increase over the next 5 days.
 
+- - -
+
 ### 16. Instructor Do: Reflect (5 min)
 
 Take a few moments to recap and reflect before ending class:
@@ -863,8 +894,8 @@ Take a few moments to recap and reflect before ending class:
 
 * These time-series models that you learned are used in practice everywhere, from forecasting next year's revenue to quantitative trading. As a result, you've learned a versatile tool for predicting future events.
 
-### 17. End Class
+### End Class
 
----
+- - -
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

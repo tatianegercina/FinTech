@@ -12,13 +12,13 @@ For many students, this unit and the units to follow will be the bread and butte
 
 * Remember to emphasize the real world value and application of time series analysis, machine learning, sentiment analysis, and other advanced analytic concepts as they are discussed.
 
-* Learning how to develop machine learning algorithms is what's required to take programming to the next level in the current day technological ecosystem. By the end of the course, students will have evolved from standard Python developers to FinTech data scientist, capable of designing and developing:
+ * Learning how to develop machine learning algorithms is what's required to take programming to the next level in the current day technological ecosystem. By the end of the course, students will have evolved from standard Python developers to FinTech data scientist, capable of designing and developing:
 
-* Robo-advisors and chat-bots for algorithmic trading, product/investment recommendation, and customer service/support
+   * Robo-advisors and chat-bots for algorithmic trading, product/investment recommendation, and customer service/support
 
-* Sentiment analysis engines to assess and predict economical sentiment for stock and housing markets
+   * Sentiment analysis engines to assess and predict economical sentiment for stock and housing markets
 
-* Models that predict and detect fraudulent financial transactions
+   * Models that predict and detect fraudulent financial transactions
 
 Today's class will initiate this journey by introducing students to the basics of time series analytics.
 
@@ -42,11 +42,11 @@ By the end of this class, students will be able to:
 
 * It is important to emphasize the role of machine learning in time series analysis and advanced analytics (the application of advanced statistical models and intelligent algorithms). Today's class, and the unit in its entirety, will begin the students' journey into **machine learning**. For some students, machine learning is their reason for choosing the curriculum. For others, machine learning may be intimidating and unreachable. Remember to communicate concepts in simple terms, reminding students that machine learning is just the application of statistics using Python libraries in order to analyze data and make predictions regarding behavior and outcomes. Foster confidence and understanding by pacing explanations and demonstrations. Explanatory examples have been provided to assist with this.
 
-* The mathematical details of tools such as Hodrick-Prescott filter are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that derails the pace of the class.
+* The mathematical details of tools such as the Hodrick-Prescott filter are discussed in some detail. They are provided to give students an understanding of what happens under the hood. However, do not get so bogged down in explaining the niceties that it derails the pace of the class.
 
 * The goal should be to transmit the mathematical and statistical concepts and approaches at a level required to complete the activity. Students should then independently research and reinforce the concepts outside of class.
 
-* The next several units will teach students how to use data science tool kits and machine learning algorithms to automate financial analysis and predict future outcomes. By the end of unit, students will have designed and executed machine learning algorithms that leverage common time series analysis and linear aggression approaches to make robust predictions about investments. Students will also have become competent in using standard methods/approaches and tools to evaluate predictions, such as **train test data splitting** and **rolling out of sample method**.
+* The next several units will teach students how to use data science tool kits and machine learning algorithms to automate financial analysis and predict future outcomes. By the end of this unit, students will have designed and executed machine learning algorithms that leverage common time series analysis and linear regression approaches to make robust predictions about investments. Students will also become competent in using standard methods/approaches and tools to evaluate predictions, such as **train test data splitting** and **rolling out of sample method**.
 
 * Slack out some of the following helpful links, and encourage students to conduct research and review supplementary resources outside of class.
 
@@ -68,7 +68,7 @@ By the end of this class, students will be able to:
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/17Elb2sXMp__4sIrwbmPkjDZDm6zGSupxVRJJCsMnbIo/edit?usp=sharing).
 
-To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -78,9 +78,11 @@ The time tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTra
 
 ### 1. Instructor Do: Welcome (5 min)
 
-The instructor will kick off the class by welcoming students and briefly introducing the concepts and skills for Unit 10 and today's class. The focus of this activity will be introducing students to **time series analysis**, **machine learning**, and how the two can be used together to create predict trends in various financial markets (i.e. stocks and real estate).
+The instructor will kick off the class by welcoming students and briefly introducing the concepts and skills for Unit 10 and today's class. The focus of this activity will be introducing students to **time series analysis**, **machine learning**, and how the two can be used together to create and predict trends in various financial markets (i.e. stocks and real estate).
 
 Welcome the students back to class. Communicate to them that this unit will commence their journey into the world of time series analysis and machine learning.
+
+- - -
 
 ### 2. Instructor Do: Mysticism of Machine Learning (15 min)
 
@@ -118,7 +120,7 @@ Open the slides, and highlight the following:
 
 * Communicate to students that the world of **machine learning** is sometimes viewed as nebulous and enigmatic: a niche field of programming involving heavy statistical calculations, programming conundrums, and loaded words like **artificial intelligence**. Highlight that while **machine learning** can be challenging, it is just the application of algorithms, statistics, and statistical libraries to solve data and business problems.
 
-  * Like all other functions, machine learning models are provided as libraries. Common machine learning libraries include **Scikit-Learn**, **TensorFlow**, and **SciPy**. Services like Amazon Web Services and Google Cloud Platform offer proprietary machine learning libraries that can be used within their cloud ecosystems. These libraries, as well as the open source community, make execution of machine learning models as simple as calling a Pandas functions.
+  * Like all other functions, machine learning models are provided as libraries. Common machine learning libraries include **Scikit-Learn**, **TensorFlow**, and **SciPy**. Services like Amazon Web Services and Google Cloud Platform offer proprietary machine learning libraries that can be used within their cloud ecosystems. These libraries, as well as the open source community, make execution of machine learning models as simple as calling a Pandas function.
 
   * Summarize the machine learning pipeline and explain to students that all machine learning pipelines follow a **Model -> Fit (Train) -> Predict** paradigm, where a data set/model of data is used to train the algorithm. Once the algorithm has been trained, the model and algorithm can be used to make actual predictions.
 
@@ -148,7 +150,7 @@ Explain the similarities and differences between machine learning, predictive an
 
     * Unsupervised learning includes dimensionality reduction and clustering approach (finding groups within a population).
 
-* Predictive analytics is the use of advanced analytics paradigms (machine learning, intelligent algorithms, etc.) to analyze data and forecast outcomes and values. Machine learning is component of predictive analytics, and predictive analytics is an objective of machine learning.
+* Predictive analytics is the use of advanced analytics paradigms (machine learning, intelligent algorithms, etc.) to analyze data and forecast outcomes and values. Machine learning is a component of predictive analytics, and predictive analytics is an objective of machine learning.
 
 * **AI** is the concept that machines can execute tasks and learn while doing so in order to perform more intelligently. Machine learning is a class of **AI**: an application of AI.
 
@@ -166,11 +168,14 @@ If time remains, stimulate excitement by showing students some of the below exam
 
 Ask for any questions before moving forward. Assure students that each of these concepts will be explored in more detail over the next several weeks.
 
+- - -
+
 ### 3. Instructor Do: Review Homework (10 min)
 
-The instructor will provide a brief walk through of the homework solution. Time should be dedicated to allowing students ask a few questions about assignment.
+The instructor will provide a brief walk through of the homework solution. Time should be dedicated to allowing students to ask a few questions about the assignment.
 
-**File:** [Homework Instructions](../../02-Homework/10-Time-Series/Instructions/README.md)
+**File:** [Homework Instructions](../../../02-Homework/10-Time-Series/Instructions/README.md)
+
 
 Open the homework instructions, and highlight the following:
 
@@ -189,6 +194,8 @@ Open the homework instructions, and highlight the following:
 * Indicate to students that the homework will leverage the **Quandl** API. Remind students that **Quandl** requires an API key and that they will have to have the key stored, sourced, and exported as an environment variable.
 
 Ask students if they have any questions before moving on.
+
+- - -
 
 ### 4. Instructor Do: Time Series Basics (10 min)
 
@@ -282,6 +289,8 @@ Next, explain that the `resample()` method groups rows by a specified time frame
 
 * More attributes can be found by consulting the documentation.
 
+- - -
+
 ### 5. Students Do: Time Series Basics (15 min)
 
 In this activity, students will practice the basics of time series manipulation in pandas.
@@ -290,7 +299,9 @@ In this activity, students will practice the basics of time series manipulation 
 
 * [Activities/02-Stu_Time_Series_Basics/README.md](Activities/02-Stu_Time_Series_Basics/README.md)
 
-* [Activities/02-Stu_Time_Series_Basics/Unsolved/amazon.csv](Activities/02-Stu_Time_Series_Basics/Unsolved/amazon.csv)
+* [Activities/02-Stu_Time_Series_Basics/Resources/amazon.csv](Activities/02-Stu_Time_Series_Basics/Resources/amazon.csv)
+
+- - -
 
 ### 6. Instructor Do: Review Time Series Basics (10 min)
 
@@ -303,7 +314,7 @@ Quickly walk through the basic steps of working with a time series in pandas. Us
 * The `parse_dates` and `index_col` arguments are used to format the time series index as datetime. This allows data to be sliced from the DataFrame by date ranges.
 
   ```python
-  df2 = pd.read_csv(
+  df = pd.read_csv(
     'amazon.csv',
     parse_dates=True,
     index_col='Date')
@@ -326,17 +337,19 @@ Quickly walk through the basic steps of working with a time series in pandas. Us
 
 Answer any remaining questions before moving on.
 
+- - -
+
 ### 7. Instructor Do: Time Series Decomposition (10 min)
 
 * **File:** [Activities/03-Ins_Decomposition/Solved/decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
 
-Open [Slide 3](https://docs.google.com/presentation/d/1DSwXmlnnP2_TmhJlBB_95bdWm_m7xb0rACwK-usjfwk/edit#slide=id.g5f3ad86fc3_0_19) and define time series decomposition to the class:
+Use the slides and define time series decomposition to the class:
 
 * In a nutshell, it is separating time series data into useful and less useful components.
 
 * The useful components can be used to observe patterns and to make predictions.
 
-Open [Slide 4](https://docs.google.com/presentation/d/1DSwXmlnnP2_TmhJlBB_95bdWm_m7xb0rACwK-usjfwk/edit#slide=id.g5f3ad86fc3_0_19) and list the components of time series decomposition:
+List the components of time series decomposition:
 
 * Level: What is the average value of the series?
 
@@ -402,7 +415,7 @@ In this activity, you will introduce EWMA, or exponentially-weighted moving aver
 
 * [hodrick.ipynb](Activities/04-Ins_Hodrick_Prescott/Solved/hodrick.ipynb)
 
-* [IVV.csv](Activities/04-Ins_Hodrick_Prescott/Solved/IVV.csv)
+* [IVV.csv](Activities/04-Ins_Hodrick_Prescott/Resources/IVV.csv)
 
 Open the notebook and describe the dataset:
 
@@ -436,7 +449,7 @@ Introduce the topic of the Hodrick-Prescott filter:
 
 * Like rolling average and EWMA, it can be used to capture trends.
 
-Open the [Slideshow](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5f3ad86fc3_0_212) and briefly explain the overall mathematical idea of the Hodrick-Prescott filter (Slides 7-9):
+Open the slides to explain the overall mathematical idea of the Hodrick-Prescott filter:
 
   ![Images/hp01.png](Images/hp01.png)
 
@@ -475,6 +488,8 @@ Finally, show the plots of the trend and noise components after filtering:
 
 * The second plot shows the noise (non-trend) that has been filtered out.
 
+- - -
+
 ### 10. Students Do: You've Got a FRED (15 min)
 
 In this activity, students will use the Hodrick-Prescott filter to identify macroeconomic trends in the United States in the period from 2004 to 2010.
@@ -484,6 +499,8 @@ In this activity, students will use the Hodrick-Prescott filter to identify macr
 * [README.md](Activities/05-Stu_Hodrick_Prescott/README.md)
 
 * [FRED.ipynb](Activities/05-Stu_Hodrick_Prescott/Unsolved/FRED.ipynb)
+
+- - -
 
 ### 11. Instructor Do: Review You've Got a FRED (10 min)
 
@@ -515,6 +532,8 @@ Open the solution file, and conduct a brief dry walk through of the code.
 If time allows, take a moment to compare and contrast the H-P filter:
 
 * In this data set, for the most part, the EWMA seems to produce a fairly similar result as the H-P filter, though the latter is somewhat smoother.
+
+- - -
 
 ### 12. Instructor Do: Auto Correlation (15 min)
 
@@ -648,11 +667,13 @@ Explain that a PACF plot will illustrate the idea in concrete terms:
 
 Finally, summarize the key points of the activity:
 
-* Autocorrelation is a measure of high closely current values are correlated with past values.
+* Autocorrelation is a measure of how closely current values are correlated with past values.
 
 * In the activities to come, ACF and PACF will help us select the correct **order** of models for forecasting.
 
 * Doing so requires an understanding of how current values are affected by past values.
+
+- - -
 
 ### 13. Students Do: Euro ETFs (15 min)
 
@@ -665,6 +686,8 @@ In this activity, students will examine a time series of bid-ask spreads of an E
 * [high_frequency_euro_ETF_bid_ask_spreads.csv](Activities/07-Stu_ETF/Resources/high_frequency_euro_ETF_bid_ask_spreads.csv)
 
 * [autocorrelation.ipynb](Activities/07-Stu_ETF/Unsolved/autocorrelation.ipynb)
+
+- - -
 
 ### 14. Instructor Do: Review Activity (10 min)
 
@@ -699,16 +722,18 @@ Review the ACF and PACF plots:
 
   * The ACF and PACF both appear to be significant at a lag of 1.
 
+- - -
+
 ### 15. Instructor Do: Reflect (10 min)
 
 End the class by congratulating students on a tough day of time series analysis. Assure students that no one can master this content in a day; additional review and practice will be needed to reinforce the skills learned.
 
-* Reiterate to students that the main goal time series and machine learning models, especially within FinTech, is to predict and forecast prices and ROI. Time series analysis helps us to analyze the data to determine the best way to model the data and ultimately forecast future events.
+* Reiterate to students that the main goal of time series and machine learning models, especially within FinTech, is to predict and forecast prices and ROI. Time series analysis helps us to analyze the data to determine the best way to model the data and ultimately forecast future events.
 
 Ask if there are any questions before moving on. Encourage students to attend office hours and to reach out to teaching staff for any additional questions or help.
 
-### 16. END Class
+### End Class
 
----
+- - -
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -38,7 +38,7 @@ By the end of this class, students will be able to:
 
 * Look for opportunities to include real-world examples in your lectures to make concepts more concrete and relatable for students. Feel free to draw upon your own experience using interactive visualization technologies in the professional world.
 
-* The financial focus for this unit is the real estate market. Real estate is a great domain for this type of lesson because real estate data is easily visualized with map charts. Visualizations can also help analyst scour through listings to find ideal property locations and sales.
+* The financial focus for this unit is the real estate market. Real estate is a great domain for this type of lesson because real estate data is easily visualized with map charts. Visualizations can also help analysts scour through listings to find ideal property locations and sales.
 
   * Make sure to emphasize the real-world use cases of visualizing real estate, such as finding the best place to move to, since some students may not find the real estate market as exciting as the stock market.
 
@@ -75,7 +75,7 @@ Welcome to Unit 6! Unit 6 is dedicated to introducing and teaching students all 
 
 Navigate to the 6.1 slides, and highlight the following:
 
-* Visualizations have already been used in class (Matplotlib plots). However, these visualizations have been static. While static visualizations are help in displaying data, the data cannot be interacted with or explored in the same way. For this reason, students will learn how to create interactive plots.
+* Visualizations have already been used in class (Matplotlib plots). However, these visualizations have been static. While static visualizations are helpful in displaying data, the data cannot be interacted with or explored in the same way. For this reason, students will learn how to create interactive plots.
 
 * To create interactive plots, users need to be able to access visualization libraries and packages that offer interactive visualizations. Otherwise, the visualizations would have to be coded manually, which can be extremely cumbersome.
 
@@ -91,7 +91,7 @@ Transition into a demonstration of the types of visualizations that can be made 
 
 * Interactive visualizations allow data to be explored and analyzed in the most efficient and effective manner for human eyes.
 * Interactive visualizations give users the ability to pan, zoom, and filter data elements and values.
-* Interactive visualization also include functionality that allows data to be sorted off different values based off a simple click.
+* Interactive visualizations also include functionality that allows data to be sorted off different values based off a simple click.
 
 End the module communicating to students that gone are the days where simple line, bar, and histogram charts satisfied data visualization and data analysis needs. Students will now learn how to create interactive and innovative visualizations.
 
@@ -235,7 +235,7 @@ Open the [starter file](Activities/01-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb), an
 
 * The great thing about hvPlot being abstracted over Pandas is that the two technologies share plotting interfaces. This marriage is the definition of not reinventing the wheel.
 
-  * Emphasize to students that even though hvPlot uses the function `hvplot` and Pandas `plot`, the `hvplot` function actually makes reference to the Pandas `plot` interface. This allows for hvPlots to be created and manipulated in the same ways as Pandas plots (including plot attributes), just with an interactive component.
+  * Emphasize to students that even though hvPlot uses the function `hvplot` and not Pandas `plot`, the `hvplot` function actually makes reference to the Pandas `plot` interface. This allows for hvPlots to be created and manipulated in the same ways as Pandas plots (including plot attributes), just with an interactive component.
 
 * The `hvPlot` function is used to create a standard hvPlot chart. For example, when applied against a DataFrame containing cumulative returns for five different tickers, hvPlot would create a visualization using the metadata and data from the DataFrame. No configuration is needed by the user.
 
