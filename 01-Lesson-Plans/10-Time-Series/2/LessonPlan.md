@@ -30,6 +30,10 @@ By the end of this class, students will be able to:
 
 * While it is likely that some students may not fully grasp all of today's material by the end of class, the payoff will be in day 3, when your students will have a chance to create predictive models from start to end.
 
+
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [10.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=55d24bd9-17d9-48f3-ad41-aad9011c28d4) Note that this video may not reflect the most recent lesson plan.
+
 ### Class Slides and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1eEcHtHkmehOP0NEe6qnaqUZ_VOgpcmyH4KvvVMiX3OQ/edit?usp=sharing).

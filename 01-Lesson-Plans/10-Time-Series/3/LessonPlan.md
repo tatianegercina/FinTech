@@ -32,6 +32,10 @@ By the end of this class, students will be able to:
 
 * Your students will also learn to validate models by training and testing data. Emphasize that this will be a valuable skill in later units as they dive more deeply into machine learning.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [10.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=57855d94-d1e5-4334-a4bd-aadb010f656c) Note that this video may not reflect the most recent lesson plan.
+
+
 ### Class Slides and Time Tracker
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1dpPDlLWNX3j-riUXrBoXQEOUn1l025swCYmP1aGKc1M/edit?usp=sharing).
