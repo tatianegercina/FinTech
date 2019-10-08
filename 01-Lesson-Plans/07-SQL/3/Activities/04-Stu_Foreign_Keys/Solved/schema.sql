@@ -57,10 +57,10 @@ VALUES
 -- View our third table
 SELECT * FROM customer_phone;
 
--- Test wrong insert
-INSERT INTO customer_phone(customer_id, phone)
-VALUES
-  (10, '555-444-3333');
+-- Uncomment the following to demonstrate the error of inserting a value with no foreign key
+-- INSERT INTO customer_phone(customer_id, phone)
+-- VALUES
+  -- (10, '555-444-3333');
 
 -- Join Tables
 SELECT customer.first_name, customer.last_name, email.email, phone.phone

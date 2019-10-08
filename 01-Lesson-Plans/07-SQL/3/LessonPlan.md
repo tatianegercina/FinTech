@@ -284,9 +284,19 @@ Open `schema.sql` in pgAdmin and walk through the code, explaining the following
 
 * Data is inserted into the `customer_phone` table. Like the `customer_email` table, the `customer_id` is a foreign key that references the `id` of the `customer` table.
 
-* To test if we have the correct foreign keys, we can attempt to insert a value with an `id` of 10. This returns an error because that `id` does not exist in the `customer` table.
+* To test if we have the correct foreign keys, we can attempt to insert a value with an `id` of 10. Uncomment the code:
 
-* Finally, all tables can be joined together by their respective IDs.
+  ```sql
+  -- INSERT INTO customer_phone(customer_id, phone)
+  -- VALUES
+    -- (10, '555-444-3333');
+  ```
+
+* Then run the `INSERT` statement. Explain:
+
+  * This returns an error because that `id` does not exist in the `customer` table.
+
+* Finally explain that all tables can be joined together by their respective IDs.
 
 ### 8. Instructor Do: Intro to Data Relationships (10 min)
 
