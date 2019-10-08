@@ -22,9 +22,11 @@ Engage students by asking if anyone has any guesses or knowledge of what the fol
 
 Transition to explaining to students how technical indicators and trading signal are used in practice, particularly as it relates to the dual moving average crossover trading strategy.
 
-* Emphasize to students that technical indicators and trading signals are used when implementing trading strategies. An example trading strategy is the dual moving average crossover strategy, which leverages two types of simple moving averages (short term and long term) in order to flag when an investment should be bought or sold.
+* Emphasize to students that technical indicators and trading signals are used when implementing trading strategies. The goal of a trading signal is to identify opportunities to get ahead of the trend.
 
-  * Use this as an opportunity to remind students that moving averages are calculated using historical quote data. Moving averages are just the average security price over/for a given time period.
+  * An example trading strategy is the dual moving average crossover strategy, which leverages two types of simple moving averages (short term and long term) in order to flag when an investment should be bought or sold.
+
+    * Use this as an opportunity to remind students that moving averages are calculated using historical quote data. Moving averages are just the average security price over/for a given time period.
 
 * Explain the difference between short term and long term moving averages. Highlight that short term moving average sand long term moving averages both track the average price of a security over time; however, long term moving averages are tracked with a greater window than short term.
 
@@ -34,23 +36,21 @@ Transition to explaining to students how technical indicators and trading signal
 
   * If the STMA goes below the LTMA, it is understood that the security price will be dropping in the short term, less than the historical average for that time period.
 
-* Indicate to students that once technical indicators are available, actual trading strategies can be used to approach buying and selling securities.
+* Indicate to students that once technical indicators are available, actual trading strategies can be used to approach buying and selling strategies. These strategies are determined by trading signals.
 
-There are a number of different trading strategies that can be used to interpret technical indicators. Strategies are what dictates trading signals (buy or sell decisions). Provide students with an overview of the differences by touching upon the below examples and explaining the difference between a technical and fundamental approach.
+Elaborate on the role of trading signals in placing trades. Emphasize how buy and sell decisions are determined.
 
-* Explain that when a short window moving average (ex. 50-day MA) crosses over a long window moving average (ex. 100-day MA) and continues to be greater than the long window moving average, then the technical indicator suggests that the underlying stock price will rise in the short-term. Based off of this knowledge, a trader or algorithm could implement one of the following **dual moving average crossover** strategies:
+* Explain that when a short window moving average (ex. 50-day MA) crosses over a long window moving average (ex. 100-day MA) and continues to be greater than the long window moving average, then:
 
-  * Buy high and sell higher
+  * The technical indicator would suggest that the underlying stock price will rise in the short-term. The trading signal would signal to buy.
 
-  * Buy low and sell high
+* Ask students the following: if **dual moving average crossover** is used, what would be the trading signal for the following scenario:
 
-  * Regardless of the strategy, the **dual moving average crossover** approach is used to read a technical indicator and issue a trading signal: buy or well.
+  * The short window moving average crosses under a long window moving average and continues to be less than the long window moving average (stock will fall in the short-term).
 
-* Ask students the following: if **dual moving average crossover** is used, what could be the trading signal for the following scenario--the short window moving average crosses under a long window moving average and continues to be less than the long window moving average (stock will fall in the short-term).
+  * **Answer** The signal would be to issue a sell order. Sell orders would be issued at the points in which the short window moving average crosses under the long window moving average.
 
-  * **Answer** The signal would indicate to sell. Sell orders would be issued at the points in which the short window moving average crosses under the long window moving average.
-
-Next, open the solution file and present the following:
+Open the solution file and provide a dry walk through following:
 
 * By default, a Pandas DataFrame shows a limited number of rows and columns in order to conserve screen space (ex. the `...`); however, because we'll need to see the specific points at which a trading signal is active and the corresponding trade entry and exit points, it is a good idea to increase the Pandas DataFrame display size to show all of it's contents.
 
@@ -59,27 +59,70 @@ Next, open the solution file and present the following:
 * When working with dual moving averages, one of the key components is the duration or the short and long term windows. Data needs to be sampled using the Pandas `rolling` function for these particular time periods. Once data is sampled for both short term and long term windows, the average can be calculated (using close price).
 
     ```python
-    signals_df['SMA50'] = signals_df['close'].rolling(window=50).mean()
-    signals_df['SMA100'] = signals_df['close'].rolling(window=100).mean()
+    short_window = 50
+    long_window = 100
+    signals_df['SMA50'] = signals_df['close'].rolling(window=short_window).mean()
+    signals_df['SMA100'] = signals_df['close'].rolling(window=long_window).mean()
     ```
 
 * After the averages have been identified, logic has to be defined to return an active/inactive trade signal 1 or -1 when the short MA crosses above/under the long MA. and calculating the points at which a entry or exit position should be made 1 or -1.
 
   ![dual-ma-signal](Images/dual-ma-signal.png)
 
-* The `where` function defines the logic that when a short moving average is greater than the long moving average, issue a value of 1; when a short moving average is less than the long moving average, issue a value of 0. Values are assigned to data points starting from an offset equal to the length of the short moving average window, as moving average calculations will be null prior to that point (not enough data points to perform the rolling mean calculation).
+* The `where` function can be used to define the logic for when to buy and sell.
+
+  * When a short moving average is greater than the long moving average, the technical indicator will have a value of 1, for sell.
+
+  * When a short moving average is less than the long moving average, the technical indicator be a value of 0, for buy.
+
+  * These values are assigned to data points starting from an offset equal to the length of the short moving average window, as moving average calculations will be null prior to that point (not enough data points to perform the rolling mean calculation).
 
   ```python
-  signals_df['Signal'][short_window:] = np.where(signals_df['SMA50'][short_window:] > signals_df['SMA100'][short_window:], 1.0, 0.0)
+  # Generate the trading signal 0 or 1,
+  # where 0 is when the SMA50 is under the SMA100, and
+  # where 1 is when the SMA50 is higher (or crosses over) the SMA100
+  signals_df['Signal'][short_window:] = np.where(
+      signals_df['SMA50'][short_window:] > signals_df['SMA100'][short_window:],
+      1.0,
+      0.0
+  )
   ```
 
-* The `diff` function calculates the difference in active vs. non-active trading periods suggested by the trading signal, 1 or 0. Therefore, values defined for specific entry and exit points become 1 or -1.
+* The `diff` function is used to calculate the difference in active vs. non-active trading periods suggested by the trading signal, 1 or 0. The output from the `diff` function represents the specific entry and exit points for when a position should be taken (1 or -1).
+
+    ```python
+    # Calculate the points in time at which a position should be taken, 1 or -1
+    signals_df['Entry/Exit'] = signals_df['Signal'].diff()
+    ```
 
   ![entry](Images/entry.png)
 
   ![exit](Images/exit.png)
 
-* Using the matplotlib library, it is possible to mark the coordinates at which entry (buy) and exit (sell) orders should be made. The `figure` object handles the figure layout and size and the `axes` object handles plotting coordinates on the x and y axes. In this example, coordinates are plotted with green `^` and red `v` marker symbols.
+* The coordinates at which entry (buy) and exit (sell) orders should be made can be visualized using Matplotlib. The `figure` object handles the figure layout and size and the `axes` object handles plotting coordinates on the x and y axes. In this example, coordinates are plotted with green `^` and red `v` marker symbols.
+
+    ```python
+    # Set the figure and axes
+    fig = plt.figure(figsize=(20,20))
+    ax = fig.add_subplot(211, ylabel='Price in $')
+
+    # Plot the AAPL close, SMA50, and SMA100
+    signals_df['close'].plot(ax=ax, color='black', lw=2.)
+    signals_df[['SMA50', 'SMA100']].plot(ax=ax, lw=2.)
+
+    # Plot the points in time where a buy or entry position should be made
+    ax.plot(signals_df.loc[signals_df['Entry/Exit'] == 1.0].index,
+            signals_df.SMA50[signals_df['Entry/Exit'] == 1.0],
+            '^', markersize=10, color='g')
+
+    # Plot the points in time where a sell or exit position should be made
+    ax.plot(signals_df.loc[signals_df['Entry/Exit'] == -1.0].index,
+            signals_df.SMA50[signals_df['Entry/Exit'] == -1.0],
+            'v', markersize=10, color='r')
+
+    # Plot the figure
+    plt.show()
+    ```
 
   ![trading-strategy-visual](Images/trading-strategy-visual.png)
 
