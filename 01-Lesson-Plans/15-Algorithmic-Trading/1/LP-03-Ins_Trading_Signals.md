@@ -99,31 +99,43 @@ Open the solution file and provide a dry walk through following:
 
   ![exit](Images/exit.png)
 
-* The coordinates for entry (buy) and exit (sell) orders can be visualized using Matplotlib. The `figure` object handles the figure layout and size. The `axes` object handles plotting coordinates on the x and y axes. In this example, coordinates are plotted with green `^` and red `v` marker symbols to visualize entry and exit positions.
+* By plotting entry/exit positions, security close price, and the moving averages, each entry/exit position can be visualized in relationship to close price.
 
     ```python
-    # Set the figure and axes
-    fig = plt.figure(figsize=(20,20))
-    ax = fig.add_subplot(211, ylabel='Price in $')
+    # Visualize exit position relative to close price
+    exit = signals_df[signals_df['Entry/Exit'] == -1.0]['close'].hvplot.scatter(
+        color='red',
+        legend=False,
+        ylabel='Price in $',
+        width=1000,
+        height=400)
 
-    # Plot the AAPL close, SMA50, and SMA100
-    signals_df['close'].plot(ax=ax, color='black', lw=2.)
-    signals_df[['SMA50', 'SMA100']].plot(ax=ax, lw=2.)
+    # Visualize entry position relative to close price
+    entry = signals_df[signals_df['Entry/Exit'] == 1.0]['close'].hvplot.scatter(
+        color='green',
+        legend=False,
+        ylabel='Price in $',
+        width=1000,
+        height=400)
 
-    # Plot the points in time where a buy or entry position should be made
-    ax.plot(signals_df.loc[signals_df['Entry/Exit'] == 1.0].index,
-            signals_df.SMA50[signals_df['Entry/Exit'] == 1.0],
-            '^', markersize=10, color='g')
+    # Visualize close price for the investment
+    security_close = signals_df[['close']].hvplot(
+        line_color='lightgray',
+        ylabel='Price in $',
+        width=1000,
+        height=400)
 
-    # Plot the points in time where a sell or exit position should be made
-    ax.plot(signals_df.loc[signals_df['Entry/Exit'] == -1.0].index,
-            signals_df.SMA50[signals_df['Entry/Exit'] == -1.0],
-            'v', markersize=10, color='r')
+    # Visualize moving averages
+    moving_avgs = signals_df[['SMA50', 'SMA100']].hvplot(
+        ylabel='Price in $',
+        width=1000,
+        height=400)
 
-    # Plot the figure
-    plt.show()
+    # Overlay plots
+    entry_exit_plot = security_close * moving_avgs * entry * exit
+    entry_exit_plot
     ```
 
-  ![trading-strategy-visual](Images/trading-strategy-visual.png)
+  ![trading-strategy-visual](Images/trading-strategy-visual.gif)
 
 Ask if there are any questions before moving on.
