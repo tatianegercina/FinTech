@@ -64,6 +64,9 @@ By the end of this class, students will be able to:
 
   * [Machine Learning and Human Agility](https://www.youtube.com/watch?v=sWNG3omofoM)
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [10.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4234324b-3993-4779-a9b6-aad801186c48) Note that this video may not reflect the most recent lesson plan.
+
 ### Class Slides and Time Tracker
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/17Elb2sXMp__4sIrwbmPkjDZDm6zGSupxVRJJCsMnbIo/edit?usp=sharing).
