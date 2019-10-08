@@ -12,6 +12,14 @@ In this activity, you will get with a group of 3 and review the pros and cons of
 
 * Make sure to discuss the biggest strength and biggest weakness of each algorithm.
 
+* Fill in the table below:
+
+  Name | Strength | Weakness
+  ---------|----------|---------
+  Proof of Work | |
+  Proof of Stake | |
+  Proof of Authority | |
+
 ## Challenge
 
 * If time remains, try discussing any other consensus algorithms you may have heard about or studied and the tradeoffs they make.
