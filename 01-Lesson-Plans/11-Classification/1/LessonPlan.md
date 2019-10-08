@@ -617,7 +617,7 @@ Students will participate in a bag of tricks activity where they apply the machi
 
 **Instructions:** [README.md](Activities/05-Stu_Loan_Approver/README.md)
 
-**Files:** [starter-code.js](Activities/05-Stu_Loan_Approver/Unsolved/loan_approver.ipynb)
+**Files:** [starter-code.ipynb](Activities/05-Stu_Loan_Approver/Unsolved/loan_approver.ipynb)
 
 ---
 
