@@ -26,6 +26,8 @@ By the end of this class, students will be able to:
 
 ### Instructor Notes
 
+* Slack out the [imblearn Installation Guide](../../11-Classification/Supplemental/Machine_Learning_Env_Setup_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+
 * Through longer activities, students will consolidate their skills from the previous two days, creating financial models in multiple steps, from stationarizing data to identifying model orders to making predictions on future values and volatility. You and your TAs should be on the lookout for your weaker students during the longer activities. Make sure that such students do not flounder.
 
 * Your students will also learn to validate models by training and testing data. Emphasize that this will be a valuable skill in later units as they dive more deeply into machine learning.
@@ -34,7 +36,7 @@ By the end of this class, students will be able to:
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1dpPDlLWNX3j-riUXrBoXQEOUn1l025swCYmP1aGKc1M/edit?usp=sharing).
 
-To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -68,15 +70,17 @@ Describe to students what they will be doing today:
 
 * They will learn to create a model that can continuously update itself.
 
+- - -
+
 ### 2. Instructor Do: Introduction to Linear Regression (15 min)
 
 **File:**
 
-* [linear_regression.ipynb](Activities/06-Ins_Linear_Regression/Solved/linear_regression.ipynb)
+* [linear_regression.ipynb](Activities/01-Ins_Linear_Regression/Solved/linear_regression.ipynb)
 
 In this activity, you will explain linear regression to the class and demonstrate using Scikit-learn to create a linear regression model.
 
-Open the first [slide](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_0) and explain the linear equation (Slide 11):
+Use the slides to explain the linear equation:
 
   ```
   y = mx + b
@@ -92,7 +96,7 @@ Open the first [slide](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxX
 
   * The value of `y` when `x` is 0 is called the y-intercept. It is represented by the letter `b`.
 
-Open the next [https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_19](https://docs.google.com/presentation/d/1j_WwCLWxq3nscIXxXNcEGdJfwsiIVsuWWeLBfpzLyno/edit#slide=id.g5fe5cfc349_2_19) and ask whether, on visual inspection, a trend exists (Slide 12):
+Ask whether, on visual inspection, a trend exists:
 
   ![Images/linear_regression01.png](Images/linear_regression01.png)
 
@@ -106,7 +110,7 @@ Explain that a line that best fits the trend can be drawn:
 
   * The equation is simple but tedious, and is best solved by a computer.
 
-Explain that, in other words, linear regresson identifies the line that best predicts `y` based on the value of `x`.
+Explain that, in other words, linear regression identifies the line that best predicts `y` based on the value of `x`.
 
 Explain the concept of residuals.
 
@@ -118,7 +122,7 @@ Explain the concept of residuals.
 
 Summarize the key points of linear regression:
 
-  * It models data with a linear trend. It is not useful when the data does not follow a linear trend, e.g. exponential trends.
+  * It models data with a linear trend. It is not useful when the data does not follow a linear trend, e.g., exponential trends.
 
   * Based on the X values, it predicts Y values.
 
@@ -194,7 +198,7 @@ Use the slideshow and recapitulate the linear regression plot below, which we ha
 
 * The distance between each data point and the best fit line is referred to as the error.
 
-Explain that the linear regression model is mathematically constructed to **minimize** the the sum of all the errors after they have been squared (Slide 4).
+Explain that the linear regression model is mathematically constructed to **minimize** the the sum of all the errors after they have been squared.
 
   ![Images/error01.jpg](Images/error02.jpg)
 
@@ -208,7 +212,7 @@ Explain that one way to assess the accuracy of a linear regression model is to l
 
 Explain that R2, or r-square, is a way to assess the relationship between two variables.
 
-* The correlation coefficient is a numerical description of the extent to which the two variables move  together. It ranges from -1 to 1.
+* The correlation coefficient is a numerical description of the extent to which the two variables move together. It ranges from -1 to 1.
 
 * **R2**, or **r-square value**, is simply the square of the correlation coefficient. It describes the extent to which a change in one variable is associated with the change in the other variable. It ranges from 0 to 1.
 
@@ -239,23 +243,27 @@ Explain that you can also compare the RMSE to the standard deviation to get a be
 
 * The RMSE exceeds the standard deviation, indicating that the model may not be very helpful. In other words, on average there are wider swings in the error than the measured temperatures.
 
+- - -
+
 ### 3. Students Do: House Regression (15 min)
 
-In this activity, students will perform linear regression on number of rooms in houses versus their prices.
+In this activity, students will perform linear regression on the number of rooms in houses versus their prices.
 
 **Files:**
 
-* [README.md](Activities/07-Stu_House_Regression/README.md)
+* [README.md](Activities/02-Stu_House_Regression/README.md)
 
-* [USA_Housing.csv](Activities/07-Stu_House_Regression/data/USA_Housing.csv)
+* [USA_Housing.csv](Activities/02-Stu_House_Regression/Resources/USA_Housing.csv)
 
-### 4. Instructors Do: Review House Regression (10 min)
+- - -
+
+### 4. Instructor Do: Review House Regression (10 min)
 
 **Files:**
 
-* [housing.ipynb](Activities/07-Stu_House_Regression/Solved/housing.ipynb)
+* [housing.ipynb](Activities/02-Stu_House_Regression/Solved/housing.ipynb)
 
-Open the solution, and complete a dry walk through of the code:
+Open the solution, and complete a dry walkthrough of the code:
 
 * Linear regression models can be implemented using the Scikit-learn package. A LinearRegression module is included and can be imported into the Python environment.
 
@@ -308,11 +316,13 @@ If time remains, ask students some of the following review questions:
 
 Ask if students have any questions before moving forward.
 
+- - -
+
 ### 5. Instructor Do: Time Series Linear Regression (15 min)
 
 **Files:**
 
-* [time_series_simple_regression.ipynb](Activities/08-Ins_Time_Series_Linear_Regression/Solved/time_series_simple_regression.ipynb)
+* [time_series_simple_regression.ipynb](Activities/03-Ins_Time_Series_Linear_Regression/Solved/time_series_simple_regression.ipynb)
 
 Inform the class that the idea of linear regression for time series is the same as in the previous example, but that the implementation requires a few tweaks.
 
@@ -328,38 +338,35 @@ Show the Temperature column plotted against the date:
 
   ![Images/ts_regression02.png](Images/ts_regression02.png)
 
-Explain that the goal is to perform linear regression of temperature and the date.
+Explain that the goal is to perform a linear regression of temperature and the date.
 
-Explain the next two lines of code. As seen before, Scikit-learn's models require that the X variable be formatted in the correct shape.
+Explain the next three lines of code. As seen before, Scikit-learn's models require that the `X` variable be formatted in the correct shape.
 
-  ```python
-  X = df['Temperature'].to_frame()
-  X.shape
-  ```
+![X variable formatted](Images/10_5_img1.png)
 
-* Converting the column into a data frame gives it 2208 rows and 1 column of data.
+* Converting the column into a data frame gives it `2208` rows and `1` column of data.
 
-Explain that datetime objects have attributes, such as day of the year.
+Explain that datetime objects have attributes, such as the week of the year.
 
   ```python
-  X['Day_of_Year'] = X.index.dayofyear
+  X['Week_of_Year'] = X.index.weekofyear
   ```
 
-* This creates a new column, called `Day_of_Year`.
+* This creates a new column, called `Week_of_Year`.
 
-* `X.index` is in datetimeformat, and has attributes such as `dayofyear`, `weekofyear`, etc. that can be extracted from it.
+* `X.index` is in `datetime` format, and has attributes such as `dayofyear`, `weekofyear`, etc. that can be extracted from it.
 
 * More attributes can be found in the [documentation](https://pandas.pydata.org/pandas-docs/version/0.24.2/reference/api/pandas.DatetimeIndex.html)
 
-Explain creating dummy variables. The `pd.get_dummies()` method creates a column for each day of the year, and for each row assigns a numerical value for that day.
+Explain creating dummy variables. The `pd.get_dummies()` method creates a column for each week of the year, and for each row assigns a numerical value for that week.
 
   ```python
-  X_binary_encoded = pd.get_dummies(X, columns=['Day_of_Year'])
+  X_binary_encoded = pd.get_dummies(X, columns=['Week_of_Year'])
   ```
 
-* Dummy variables are necessary because days are not continuous; they are categorical.
+* Dummy variables are necessary because weeks are not continuous; they are categorical.
 
-* As an example, the day 121 of the year is assigned 1 for day 121, but 0 for all other days.
+* As an example, week 17 of the year is assigned 1 for week 17, but 0 for all other weeks.
 
   ![Images/ts_regression03.png](Images/ts_regression03.png)
 
@@ -367,9 +374,9 @@ Use the slides to show the regression equation that results from the process:
 
   ![Images/regression_equation01.gif](Images/regression_equation01.gif)
 
-* Each day is given its own weight in the overall equation.
+* Each week is given its own weight in the overall equation.
 
-* Because each day is a separate variable in the equation, this is called multiple regression.
+* Because each week is a separate variable in the equation, this is called multiple regression.
 
 Additionally, explain that we delete the extraneous column in the data frame created by `pd_get_dummies()`. The argument `axis=1` specifies that it is the column that is dropped. (For rows, it would be `axis=0`.)
 
@@ -386,7 +393,7 @@ Explain that the rest of the code is familiar from previous examples:
   predictions = model.predict(X_binary_encoded)
   ```
 
-  * The `Temperature` column is specified as the dependent variable array.
+  * The `Temperature` column is specified as the dependent variable array `y`. The `copy()` method is used to create a copy of a Pandas object, to ensure that no unwanted changes are made to the original data.
 
   * A model is created, and fits the independent and dependent variables.
 
@@ -402,11 +409,11 @@ Explain that the metrics of the linear regression model are generated:
   rmse = np.sqrt(mse)
   ```
 
-Note that the r-square value, at 0.23, is fairly low, and that we will cover the interpretation of these numbers in an upcoming activity.
+Note that the r-square value, at `0.23`, is fairly low, and that we will cover the interpretation of these numbers in an upcoming activity.
 
 Note also that the trend appears at least somewhat linear for the specified timeline, but that a longer timespan, say from January through December, will not be good for a linear regression model.
 
-  * This underscores the important that linear regression, rather than a mechanical process, requires thinking about the variables.
+  * This underscores the importance that linear regression, rather than a mechanical process, requires thinking about the variables.
 
   * It also highlights the importance of plotting the data before reaching a conclusion!
 
@@ -416,9 +423,9 @@ Take a moment to summarize the key points of this activity:
 
   * Because datetime data cannot be directly imported into a Scikit-learn model, we've had to create a binary encoding for each row, and drop an unnecessary column.
 
-Finally, if time allows, quickly demonstrate an approximate visualization of the linear regression best fit line.
+Answer any questions before moving on.
 
-  ![Images/ts_regression04.png](Images/ts_regression04.png)
+- - -
 
 ### 6. Students Do: Oil Futures (15 min)
 
@@ -426,15 +433,17 @@ In this activity, students will identify seasonal effects in oil futures prices 
 
 **Files:**
 
-* [README.pdf](Activities/09-Stu_Time_Series_Linear_Regression/README.pdf)
+* [README.md](Activities/04-Stu_Time_Series_Linear_Regression/README.md)
 
-* [oil_futures_starter.ipynb](Activities/09-Stu_Time_Series_Linear_Regression/Unsolved/oil_futures_starter.ipynb)
+* [oil_futures_starter.ipynb](Activities/04-Stu_Time_Series_Linear_Regression/Unsolved/oil_futures.ipynb)
+
+- - -
 
 ### 7. Instructor Do: Review Oil Futures (5 min)
 
 **Files:**
 
-* [oil_futures.ipynb](Activities/09-Stu_Time_Series_Linear_Regression/Solved/oil_futures.ipynb)
+* [oil_futures.ipynb](Activities/04-Stu_Time_Series_Linear_Regression/Solved/oil_futures.ipynb)
 
 Explain that, rather than the settle prices, we're working with returns, the daily change of the settle price in percentage terms. The returns are multiplied by 100 to make the numbers easier to work with.
 
@@ -452,7 +461,7 @@ Explain that we need a column of returns, and lagged returns, which will be regr
   df = df.dropna()
   ```
 
-  * Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called auto-regression, and will be further discussed in day 2.
+  * Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called auto-regression, and will be further discussed on day 2.
 
   * A column of lagged returns is created by shifting each value downward by 1 row.
 
@@ -469,7 +478,7 @@ Go over the steps of preparing the data to use in Scikit-learn:
 
   * The `weekofyear` attribute is used to create a column for the week of the year.
 
-Next, explain that dummy variables are created for each week of the year. Communiate that the function creates dummy variables for each week. That is, it assigns a value of 0 or 1 for each week. For a date that falls on week 7, for example, it will assign 1 for week 7 and 0 to all other weeks.
+Next, explain that dummy variables are created for each week of the year. Communicate that the function creates dummy variables for each week. That is, it assigns a value of 0 or 1 for each week. For a date that falls on week 7, for example, it will assign 1 for week 7 and 0 to all other weeks.
 
   ```python
   X_binary_encoded = pd.get_dummies(X, columns=['Week_of_year'])
@@ -477,7 +486,7 @@ Next, explain that dummy variables are created for each week of the year. Commun
 
   ![get_dummies.png](Images/get_dummies.png)
 
-* Quickly go through the rest of the code, which is boiler plate and includes creating a regression model is created on lagged returns and returns, making predictions, and then generating r-square value.
+* Quickly go through the rest of the code, which is boiler plate and includes creating a regression model that is created on lagged returns and returns, making predictions, and then generating r-square value.
 
   ```python
   y = df['Return']
@@ -507,7 +516,7 @@ Open the slideshow and introduce the concept of overfitting:
 
 * In other words, overfit models learn the noise found in the training data, rather than just the signal.
 
-* Because models are optimized to limit the training error, they can become too focused on the unique patterns of the training data, and fail to extend to  previously unseen data.
+* Because models are optimized to limit the training error, they can become too focused on the unique patterns of the training data, and fail to extend to previously unseen data.
 
 Explain that overfitting typically involves an excessive number of variables in a model.
 
@@ -539,19 +548,21 @@ Explain that we have already seen parsimony in action:
 
 * AIC and BIC reward models for fitting data accurately, but punish them for having a large number of parameters.
 
+- - -
+
 ### 10. Instructor Do: Train, Test, Split (10 min)
 
 **File:**
 
-* [train_test.ipynb](Activities/03-Ins_Train_Test/Solved/train_test.ipynb)
+* [train_test.ipynb](Activities/05-Ins_Train_Test/Solved/train_test.ipynb)
 
 Inform your students that they will now learn to minimize the problems posed by overfitting.
 
 Explain that a common strategy used in machine learning is to split a dataset into a train set and a test set.
 
-* With the training set, the model learns the relevant patterns in the data. The model seeks to minimize error on the training data.
+* With the training set, the model learns the relevant patterns in the data. The model seeks to minimize errors in the training data.
 
-* Then the testing set is used evaluate the model's performance on unseen data.
+* Then the testing set is used to evaluate the model's performance on unseen data.
 
 * If the model underperforms with the testing set, the model can be retrained with better (or more) data, or the model itself can be tweaked.
 
@@ -559,7 +570,7 @@ Remind your students that we have worked with a number of models so far, includi
 
 * Models were trained on the entire dataset, then made predictions.
 
-* We will now split a dataset into training and testing data and run linear regression on them.
+* We will now split a dataset into training and testing data and run a linear regression on them.
 
 Open the notebook and introduce the dataset:
 
@@ -577,7 +588,7 @@ Open the notebook and introduce the dataset:
 
 * NaN values are deleted from the DataFrame.
 
-* In regression, the lagged returns will be the **independent** variable and the returns will be the **dependent** variable, since we are attempting to answer to what extent past values affect future values. It's like asking the question: given today's return, what's the expected return going to be tomorrow?
+* In regression, the lagged returns will be the **independent** variable and the returns will be the **dependent** variable, since we are attempting to answer to what extent past values affect future values. It is like asking the question: given today's return, what's the expected return going to be tomorrow?
 
 Explain that the next step is to split the dataset into `train` and `test` sets:
 
@@ -592,7 +603,7 @@ Explain that the next step is to split the dataset into `train` and `test` sets:
 
 * However, in a time series in which autocorrelation exists, that is not possible. Instead, data points prior to a cutoff point comprise the training set, and all points that come after comprise the testing set.
 
-* Another common practice is to assign 80% of the data to the training set, and 20% to the testing set. Oftentimes, with time-series data, it's good to explicitly specify the date ranges.
+* Another common practice is to assign 80% of the data to the training set, and 20% to the testing set. Oftentimes, with time-series data, it is good to specify the date ranges explicitly.
 
 Explain the code with which `train` and `test` sets are divided into dependent and independent variables.
 
@@ -664,17 +675,21 @@ Finally, walk through the error metrics:
 
 * The in-sample (_training_ sample) RMSE, at 1.65, is higher than the out-of-sample (_testing_ sample) at 0.70. Typically, out-of-sample errors are higher than in-sample errors.
 
+- - -
+
 ### 11. Students Do: Ripple (15 min)
 
 In this activity, students will create GARCH and linear regression models for the price of Ripple (XRP), a cryptocurrency. They will validate the latter model with training and test sets.
 
 **Files:**
 
-* [README.md](Activities/04-Stu_Ripple/README.md)
+* [README.md](Activities/06-Stu_Ripple/README.md)
 
-* [USD_per_Ripple_XRP_prices.csv](Activities/04-Stu_Ripple/Resources/USD_per_Ripple_XRP_prices.csv)
+* [USD_per_Ripple_XRP_prices.csv](Activities/06-Stu_Ripple/Resources/USD_per_Ripple_XRP_prices.csv)
 
-* [xrp.ipynb](04-Stu_Ripple/Unsolved/xrp.ipynb)
+* [xrp.ipynb](Activities/06-Stu_Ripple/Unsolved/xrp.ipynb)
+
+- - -
 
 ### 12. Instructor Do: Review Activity (10 min)
 
@@ -682,7 +697,7 @@ A detailed walk-through of the code is given below. However, in the interest of 
 
 **File:**
 
-* [xrp.ipynb](Activities/04-Stu_Ripple/Solved/xrp.ipynb)
+* [xrp.ipynb](Activities/06-Stu_Ripple/Solved/xrp.ipynb)
 
 Open the notebook and display the plot of Ripple's closing price:
 
@@ -750,7 +765,7 @@ Explain that the predicted values are plotted:
 
 * `y_test`, the actual values in the test set, is compared with the predicted values in the test set.
 
-Finally, go over the metrics of the in-sample and out-of-sample predictions:
+Go over the metrics of the in-sample and out-of-sample predictions:
 
   ```python
   from sklearn.metrics import mean_squared_error, r2_score
@@ -773,13 +788,21 @@ Finally, go over the metrics of the in-sample and out-of-sample predictions:
 
   * This could be due to the fact that our out-of-sample period is small, so just by chance, the model happened to do better out-of-sample than in-sample.
 
+Finally, discuss the forecast plot.
+
+![xrp_forecast_plot.png](Images/xrp_forecast_plot.png)
+
+* The chart shows that our forecast for XRP volatility will continue to rise over the next five days. This suggests choppy trading ahead, as prices will likely fluctuate up and down more than usual. In addition, if we’re betting types, we might consider buying options on XRP, as prices of options tend to rise in response to higher volatility.
+
+- - -
+
 ### 13. Instructor Do: Rolling Out-of-Sample (15 min)
 
 **File:**
 
-* [sp500.ipynb](Activities/05-Ins_Rolling_Out_of_Sample/Solved/sp500.ipynb)
+* [sp500.ipynb](Activities/07-Ins_Rolling_Out_of_Sample/Solved/sp500.ipynb)
 
-Point out that up to this point, we have created models as a one-shot affair. Explain that we will go over a procedure allows an analyst to update the financial model as new data continues to come in.
+Point out that up to this point, we have created models as a one-shot affair. Explain that we will go over a procedure that allows an analyst to update the financial model as new data continues to come in.
 
 * In this activity, we will cover a more sophisticated iterative approach to the train-test-split technique in the previous activity.
 
@@ -829,7 +852,7 @@ Next, explain the pandas time series techniques used to calculate the training a
   end_of_training_period
   ```
 
-* `weeks[0]` is the first week of the data frame. In this example, The start of the training period is `2007-12-31` and the end of the training period is `2008007-06`.
+* `weeks[0]` is the first week of the data frame. In this example, the start of the training period is `2007-12-31` and the end of the training period is `2008007-06`.
 
   ```python
   # The week of the first test window
@@ -942,23 +965,27 @@ Walk through the for-loop:
 
 Reassure students that they will be able to use this notebook as a reference for future calculations.
 
+- - -
+
 ### 14. Students Do: Rolled Gold (15 min)
 
 In this activity, students will perform predictions with linear regression on a rolling out-of-sample basis, in order to predict the price of gold.
 
 **Files:**
 
-* [README.md](Activities/06-Stu_Rolled_Gold/README.md)
+* [README.md](Activities/08-Stu_Rolled_Gold/README.md)
 
-* [gold_price.csv](Activities/06-Stu_Rolled_Gold/Resources/gold_price.csv)
+* [gold_price.csv](Activities/08-Stu_Rolled_Gold/Resources/gold_price.csv)
 
-* [gold.ipynb](Activities/06-Stu_Rolled_Gold/Unsolved/gold.ipynb)
+* [gold.ipynb](Activities/08-Stu_Rolled_Gold/Unsolved/gold.ipynb)
+
+- - -
 
 ### 15. Instructor Do: Review Rolled Gold (10 min)
 
 **File:**
 
-* [gold.ipynb](Activities/06-Stu_Rolled_Gold/Solved/gold.ipynb)
+* [gold.ipynb](Activities/08-Stu_Rolled_Gold/Solved/gold.ipynb)
 
 Open the notebook and explain that, since regression will later be performed on returns and lagged returns in USD, those columns are created:
 
@@ -1048,7 +1075,7 @@ Walk through the iterations that take place inside the for-loop:
 
 Next, discuss the out-of-sample error metrics:
 
-* What is going on is that the predicted out-of-sample values are compared to the actual values that occurred in that day. We'll compare how this out-of-sample approach predicted, relative to the single training and test window consructed previously.
+* What is going on is that the predicted out-of-sample values are compared to the actual values that occurred in that day. We will compare how this out-of-sample approach predicted, relative to the single training and test window constructed previously.
 
 * To make that comparison, first slice the rolling out-of-sample results to just include 2019.
 
@@ -1056,7 +1083,7 @@ Next, discuss the out-of-sample error metrics:
 results_2019 = Results.loc['2019':]
 ```
 
-* This makes a more "apples to apples" comparison between the two time approaches (since we'll be comparing over the same dates).
+* This makes a more "apples to apples" comparison between the two time approaches (since we will be comparing over the same dates).
 
 Train Test Split Model:
 ![rolling_gold_01.png](Images/rolling_gold_01.png)
@@ -1080,7 +1107,7 @@ Rolling Out-of-Sample Model:
 
 * Comparing the two RMSE's, the RMSE from the single training window is 0.73, whereas it is 0.75 from the rolling-out-of-sample model.
 
-  * The rolling-out-of sample approach is an approach more akin to real life (you likely re-estimate your model when new data becomes available)
+  * The rolling-out-of sample approach is an approach more akin to real-life (you likely re-estimate your model when new data becomes available)
 
   * In addition to being more realistic, the rolling-out of sample approach is also more rigorous, as you are testing your model many more times across different time periods
 
@@ -1089,6 +1116,8 @@ Rolling Out-of-Sample Model:
   * The fact that the two are close to each other in value though does suggest that our model is reasonably stable.
 
 Congratulate the class for making it through their first week of Machine Learning! This is a very valuable skill that is currently changing the face of finance.
+
+- - -
 
 ### 16. Instructor Do: Career Services Lesson (35 min)
 
@@ -1104,6 +1133,6 @@ Use the following lesson plan to discuss the Career Services content for this we
 
 ### End Class
 
----
+- - -
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

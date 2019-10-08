@@ -35,7 +35,7 @@ Follow the steps outlined in the budget starter notebook to complete the followi
 2. Use the Access token to fetch account transactions from the sandbox. You should fetch the last 90 days of transactions from the sandbox using the following institution:
 
     ```python
-    INSITUTION_ID = "ins_109508"
+    INSTITUTION_ID = "ins_109508"
     ```
 
 3. Perform basic budget analysis on the sandbox transaction and generate the following plots:
@@ -58,9 +58,9 @@ Follow the steps outlined in the budget starter notebook to complete the followi
 
 #### Retirement Planner
 
-In this section, you will use the IEX API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at 20 years. You will then use the Monte Carlo data to answer questions about the portfolio.
+In this section, you will use the IEX API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to answer questions about the portfolio.
 
-Follow the steps outline in the budget starter notebook to complete the following:
+Follow the steps outlined in the budget starter notebook to complete the following:
 
 ##### Monte Carlo Simulation
 
@@ -80,8 +80,8 @@ Create a Monte Carlo simulation for the retirement portfolio:
 
 Use the Monte Carlo simulation data to answer the following questions:
 
-1. What are the expected cumulative returns at 20 years for the 10th, 50th, and 90th percentiles?
-2. Given an initial investment of $50,000, what is the expected return in dollars at the 10th, 50th, and 90th percentiles?
+1. What are the expected cumulative returns at 30 years for the 10th, 50th, and 90th percentiles?
+2. Given an initial investment of $20,000, what is the expected return in dollars at the 10th, 50th, and 90th percentiles?
 3. Given the current projected annual income from the Plaid analysis, will a 4% withdrawal rate meet or exceed that value at the 10th percentile? Note: This is basically determining if retirement income is equivalent to current income.
 4. How would a 50% increase in the initial investment amount affect the 4% retirement withdrawal? In other words, what happens if the initial investment had been bigger?
 5. (Optional Challenge) Use the Monte Carlo data and calculate the cumulative returns at the 5%, 50%, and 95% quartiles and plot this data as a line chart to see how the cumulative returns change over the life of the investment.
