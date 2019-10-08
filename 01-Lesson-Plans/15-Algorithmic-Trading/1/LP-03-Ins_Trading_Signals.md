@@ -99,7 +99,7 @@ Open the solution file and provide a dry walk through following:
 
   ![exit](Images/exit.png)
 
-* The coordinates at which entry (buy) and exit (sell) orders should be made can be visualized using Matplotlib. The `figure` object handles the figure layout and size and the `axes` object handles plotting coordinates on the x and y axes. In this example, coordinates are plotted with green `^` and red `v` marker symbols.
+* The coordinates for entry (buy) and exit (sell) orders can be visualized using Matplotlib. The `figure` object handles the figure layout and size. The `axes` object handles plotting coordinates on the x and y axes. In this example, coordinates are plotted with green `^` and red `v` marker symbols to visualize entry and exit positions.
 
     ```python
     # Set the figure and axes
