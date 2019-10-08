@@ -101,13 +101,13 @@ Open [pets.csv](Activities/02-Stu_Data_Normalization/Resources/pets.csv) and exp
 
 * The final product will look like [pets_cleaned.csv](Activities/02-Stu_Data_Normalization/Resources/pets_cleaned.csv).
 
-Next, open [schema.sql](Activities/02-Stu_Data_Normalization/Solved/schema.sql) in pgAdmin. Walk through the code and explain the following:
+Next, open [schema.sql](Activities/02-Stu_Data_Normalization/Solved/schema.sql) in pgAdmin. Walkthrough the code and explain the following:
 
 * Second normal form requires the data to be in first normal form, which was accomplished in the previous step.
 
 * All non-ID columns are dependent on the primary key.
 
-* The `owners` table will include each owner name once, which is dependent on the primary key for the table.
+* The `owners` table will include each owner's name once, which is dependent on the primary key for the table.
 
 * Next, a `pet_names` table is created, with each pet given a name and two IDs: one unique `id` for the pet itself and an `owner_id` that will link each pet to its correct owner.
 
@@ -131,7 +131,7 @@ In this activity, students will be introduced to the concept of foreign keys -- 
 
 Use the slides on foreign keys to explain the concept of foreign keys and how they are used to connect tables:
 
-* A foreign key is a link between tables. The foreign key in the first table points to, or is linked to, the primary key in a second table.
+* A foreign key is a link between tables. The foreign key in the first table points to or is linked to, the primary key in a second table.
 
 * A foreign key also prevents invalid data from being entered into a column. The data being entered MUST be a value from the referenced column.
 
@@ -575,7 +575,7 @@ In this activity, students will read data into a Pandas DataFrame from a Postgre
 
 * [schema.sql](Activities/08-Stu_Feeding_Pandas_SQL/Solved/schema.sql)
 
-Walk through the solution and highlight the following:
+Walkthrough the solution and highlight the following:
 
 * In order to create the connection to the PostgreSQL database, the `create_engine` function is imported from `sqlalchemy`.
 
@@ -813,11 +813,11 @@ Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams
 
 * A conceptual diagram has only basic information, such as the names of the tables and their attributes.
 
-* Creating a diagram looks similar to writing code. For example, in the following image, `Gym` followed by the hyphen creates the table name within the diagram.
+* Creating a diagram looks similar to writing code. For example, in the following image, `Gym` followed by the hyphen, creates the table name within the diagram.
 
   ![gym.png](Images/gym.png)
 
-* Transitioning a conceptual diagram to a logical diagram requires more information. Data types are defined and primary keys are established by adding ID rows to the tables, such as in the `Trainers` table:
+* Transitioning a conceptual diagram to a logical diagram requires more information. Data types are defined, and primary keys are established by adding ID rows to the tables, such as in the `Trainers` table:
 
   ![trainers.png](Images/trainers.png)
 
