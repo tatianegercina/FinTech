@@ -619,8 +619,6 @@ Now it's time for the students to connect MyCrypto to their chain and send a tra
 Have the TAs circulate and ensure that students are successfully connecting MyCrypto to their
 second RPC-enabled node and sending a transaction from a prefunded account.
 
-### 17. Instructor Do: Recap and Troubleshooting (35 min)
-
 Take this time to troubleshoot and ensure that the students are successfully transacting.
 
 Ensure that:
@@ -636,3 +634,21 @@ Ensure that:
   * One node is mining.
 
   * One node is RPC enabled.
+
+### 17. Instructor Do: Structured Review (35 mins)
+
+Note: If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
+
+Please use the entire time to review questions with the students before officially ending class.
+
+Suggested Format:
+
+* Ask students for specific activities to revisit.
+
+* Revisit key activities for the homework.
+
+* Allow students to start the homework with extra TA support.
+
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings
+
+### End Class
