@@ -216,7 +216,7 @@ Explain to students that the next step is to create a Jupyter notebook instance 
 
   * **Section: Notebook instance settings**
     * _Notebook instance name:_ `sm-test`
-    * _Notebook instance type:_ `ml.m4.xlarge`
+    * _Notebook instance type:_ `ml.t2.medium`
     * _Elastic Inference:_ `none`
     ![Creating an Amazon SageMaker instance - step 10](Images/sagemaker-10.png)
   * **Section: Permissions and encryption**
@@ -227,11 +227,13 @@ Explain to students that the next step is to create a Jupyter notebook instance 
     * _Root access:_ Be sure that the `Enable - Give users root access to the notebook` option is selected. Tell students, that this option is less safe but allows more control over the instance.
     ![Creating an Amazon SageMaker instance - step 13](Images/sagemaker-13.png)
 
-* Scroll down, and click on the _Create notebook instance_ button to continue. Comment to students, that the creations process takes few minutes to finish.
+* Scroll down, and click on the _Create notebook instance_ button to continue. Comment to students, that the creation process takes up to five minutes to finish.
 
   ![Creating an Amazon SageMaker instance - step 14](Images/sagemaker-14.png)
 
 While the notebook instance is being created, explain to students that AWS charges for these and most resources as they are created, event when not in use, this instance is billed for by the second until it's turned off and deleted. Students will learn how to delete these resources later in Today's class.
+
+Explain to students that, as long as the free tier is used, there are no charges associated with Today's activities, however, if any of the students use an account that is more than two months old, the tasks performed Today using Amazon SageMaker will have an associated cost.
 
 * Once the notebook instance status is _InService_, it's ready to be used; on the _Actions_ column, click on `Open JupyterLab` to continue.
 
@@ -403,7 +405,7 @@ Tell students that, if you provide test data, the algorithm logs include the tes
 # Encode the testing data as Protocol Buffer
 buf = io.BytesIO()
 vectors = np.array(X_test).astype("float32")
-labels = np.array(Y_test).astype("float32")
+labels = np.array(y_test).astype("float32")
 smac.write_numpy_to_dense_tensor(buf, vectors, labels)
 buf.seek(0)
 
@@ -430,7 +432,7 @@ Create the instance of the linear learner algorithm and highlight the following:
   sess = sagemaker.Session()
   ```
 
-* The estimator container is an AWS EC2 instance that will store and run the model. The estimator container is created using a `ml.m4.xlarge` train instance type.
+* The estimator container is an AWS EC2 instance that will store and run the model. The estimator container is created using a `ml.m4.xlarge` instance type for training the model.
 
   ```python
   linear = sagemaker.estimator.Estimator(
@@ -469,10 +471,12 @@ Explain to students that this step might take few minutes and it will use resour
 
 Once the `lineal-learner` model was trained, tell students that it can be deployed to make predictions of the rainfall in Austin. Continue the demo and highlight the following:
 
-* An instance of the lineal-learner predictor is created. **Note:** This step might take a few minutes.
+* In order to make predictions, the model should be deployed; a `ml.t2.medium` instant type is defined, since this is the instance type we selected when we created the notebook that is part of the free tier offer.
+
+* **Note:** This step may take a up to 15 minutes, if you are running out of time in this activity, open the solved version of the notebook and continue the demo by dry-walking through the code.
 
   ```python
-  linear_predictor = linear.deploy(initial_instance_count=1, instance_type="ml.m4.xlarge")
+  linear_predictor = linear.deploy(initial_instance_count=1, instance_type="ml.t2.medium")
   ```
 
 * Some configurations are made, to specify the type of data files that are going to be used, an to define how the data is going to be serialized and deserialized.
@@ -516,6 +520,8 @@ Answer any questions before moving on.
 
 In this activity, students will calculate a linear regression model to predict the price of a house using the Boston Housing dataset and the SageMaker built-in `Linear Learner` algorithm.
 
+**Note:** Remember that the time needed to deploy the model is about 10 minutes.
+
 **Instructions:**
 
 * [README.md](Activities/04-Stu_Housing_Price/README.md)
@@ -526,7 +532,7 @@ In this activity, students will calculate a linear regression model to predict t
 
 ---
 
-### 8. Instructor Do: Deploying a Housing Price Prediction Model in Amazon SageMaker (10 min)
+### 8. Instructor Do: Review Deploying a Housing Price Prediction Model in Amazon SageMaker (10 min)
 
 **Files**:
 
@@ -589,6 +595,8 @@ Have students share their opinions with the class and bring up the following poi
 In this activity, students will train and deploy a binary classification model to predict the *credit risk* of a person using the [German Credit Risk dataset](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) and the SageMaker built-in `Linear Learner` algorithm.
 
 This activity will require use of an AWS SageMaker notebook instance, the unsolved notebook will guide students through the process and indicate what the missing code snippets are.
+
+**Note:** Remember that the time needed to deploy the model is about 10 minutes.
 
 **Instructions:**
 
