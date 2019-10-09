@@ -1,12 +1,12 @@
-## 15.2 Lesson Plan: Algorithmic Trading
+## 15.2 Lesson Plan: An Algorithmic Trading Framework
 
 ---
 
 ### Overview
 
-Students have seen how machine learning can be used accelerate time series analysis, gauge public sentiment about the market, and classify loan eligibility. By the end of this unit, students will also know how machine learning can be used to automate and improve portfolio management and trading, especially as it pertains to making predictions about when to enter and exit the market for the most profitability.
+Today's class will expand upon students' component knowledge of algorithmic trading and abstract one level higher to create a full-fledged trading framework encapsulated in a single application. In particular, students will learn how to wrap their previous code (data collection, signal generation, backtesting, evaluation, and dashboard creation) into functions that will be called via a single workflow. In other words, students' trading framework applications will automate the manual component calculations done in the previous class to produce an end-to-end trading dashboard containing all relevant metrics and functionality.
 
-Today's class will introduce students to **algorithmic trading** in Python. Students will learn the fundaments of algorithmic trading such as data collection, signal generation, backtesting, and evaluation. The class will conclude with students building a complete trading dashboard similar to commercial online trading platforms.
+In addition, students will not only learn how to "go live" with their trading frameworks by establishing a connection to an actual financial API such as the Kraken Cryptocurrency Exchange (which provides 24-hour market access and generous API request privileges), but also further their understanding of dataflows by implementing asynchronous tasks and streaming capabilities that will allow them to create more robust trading dashboards that can update its underlying data without having to re-draw the overall dashboard each time.
 
 ### Class Objectives
 
