@@ -38,7 +38,7 @@ By the end of the class, students will be able to:
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson 12.3 Slides](#).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -185,7 +185,7 @@ for ent in doc.ents:
 
 * We can also use displacy here to visually examine an article, which makes seeing the named entities a lot easier.
 
-![ner_2](Images/ner_2.png)
+![ner_2](Images/ner_2.PNG)
 
 * Again, like with with POS or dependencies, we can filter for particular types of entities with a list comprehension.
 
@@ -234,7 +234,7 @@ entities = [ent.text for ent in doc.ents if ent.label_ in ['GPE', 'ORG']]
 entities = [i.lower().replace(' ', '_') for i in entities]
 ```
 
-![ner](Images/ner1.png)
+![ner](Images/ner1.PNG)
 
 Ask students to talk about their own strategies for selecting entity types and whether their selections resulted in informative wordclouds.
 
@@ -323,13 +323,13 @@ def headline_sentiment_summarizer_avg(headlines):
     return sentiment
 ```
 
-* After calculating the sentiment scores and merging it with the stock return that we get from the IEX API, we generate the correlatation coefficients between each variable in the DataFrame. One useful trick when looking for strong correlations, especially when there are many variables of interest, is to use pandas' style module to visualize the DataFrame as a heatmap.
+* After calculating the sentiment scores and merging it with the stock return that we get from the IEX API, we generate the correlation coefficients between each variable in the DataFrame. One useful trick when looking for strong correlations, especially when there are many variables of interest, is to use pandas' style module to visualize the DataFrame as a heatmap.
 
 ```python
 topic_sentiments.corr().style.background_gradient()
 ```
 
-  ![corr1](Images/corr1.png)
+  ![corr1](Images/corr1.PNG)
 
 Ask students whether they found topic sentiments that are more closely correlated with AAPL returns. Ask volunteers whether they might expect correlations between sentiment and returns to remain stable over time for a given topic/stock pairing.
 

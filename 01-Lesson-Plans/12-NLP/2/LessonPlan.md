@@ -36,9 +36,9 @@ By the end of the class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 12.2 Slides]#).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 12.2 Slides](#).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy."
 
@@ -48,11 +48,7 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Intro to Sentiment Analysis (10 min)
 
-**Files:**
-
-* [Lesson 13.2 Slides](#)
-
-Welcome students to the second day on NLP, this lesson will introduce the fundamentals of **sentiment analysis**, one of the most popular and growing areas of NLP where there are some new tools almost every day. Beyond the buzz, on this initial lecture students will learn what sentiment analysis is as well as how a computer can understand people's feelings.
+Welcome students to the second day on NLP, this lesson will introduce the fundamentals of **sentiment analysis**, one of the most popular and growing areas of NLP where there are some new tools almost every day. Beyond the buzz of sentiment analysis, on this initial lecture students will learn what sentiment analysis is as well as how a computer can understand people's feelings.
 
 Follow the _Intro to Sentiment Analysis_ section on lesson slides by highlighting the following points:
 
@@ -68,11 +64,7 @@ Follow the _Intro to Sentiment Analysis_ section on lesson slides by highlightin
 
 The purpose of this activity is to encourage students to have an open discussion led by the instructor about the applications they envision for sentiment analysis in the FinTech industry.
 
-**Files:**
-
-* [Lesson 13.2 Slides](#)
-
-The introduction to sentiment analysis will offer some context to students about this area of NLP; follow lesson slides and facilitate an open discussion, asking the following questions:
+The introduction to sentiment analysis will offer some context to students about this area of NLP; follow to the next section entitled **Listen to the FinTech** on lesson slides and facilitate an open discussion by asking following questions:
 
 * Can a stock feel sadness if it opens with losses today?
 
@@ -101,8 +93,6 @@ This activity introduces term relevance from the perspective of TF–IDF (term f
 Do not invest to much time on the TF–IDF formulas, just explain how they work in general and invest a little more time on the rationale behind these measures and their implementation using `sklearn`.
 
 **Files:**
-
-* [Lesson 13.2 Slides](#)
 
 * [03_Ins_Terms_Relevance.ipynb](Activities/03-Ins_Terms_Relevance/Solved/03_Ins_Terms_Relevance.ipynb)
 
@@ -277,6 +267,7 @@ In this activity, students will learn how to retrieve news articles from the [Ne
 **Files:**
 
 * [sentiment_analysis_data.ipynb](Activities/06-Ins_Sentiment_Analysis_Data/Solved/sentiment_analysis_data.ipynb)
+
 * [keys.sh](Activities/06-Ins_Sentiment_Analysis_Data/Solved/keys.sh)
 
 Explain to students that there are several ways to retrieve data for sentiment analysis, such as web scrapping, manual corpus creation from document digitization, document transformations (e.g., from PDF, word processors, or spreadsheets to raw text) and using APIs. Among these data-retrieval mechanisms APIs is one of the most used, so in this activity students will learn how to retrieve news articles using the [News API](https://newsapi.org/) and its [Python library](https://newsapi.org/docs/client-libraries/python).
@@ -449,8 +440,6 @@ In this activity, students will understand how VADER sentiment works and how to 
 
 **Files:**
 
-* [Lesson Slides - Intro to VADER Sentiment Section](#)
-
 * [vader_sentiment.ipynb](Activities/09-Ins_Vader_Sentiment/Solved/vader_sentiment.ipynb)
 
 Open the lesson slides, move to the Intro to VADER Sentiment section and highlight the following:
@@ -622,13 +611,11 @@ Answer any additional question before moving to the next activity.
 
 ---
 
-### 13. Instructor Do: Tone Analysis (20 min)
+### 13. Everyone Do: Tone Analysis (20 mins)
 
 In this activity, students will be introduced to tone analysis and how they can score the tone of human speech using the **IBM Watson Tone Analyzer service** and its Python library.
 
 **Files:**
-
-* [Lesson Slides](#)
 
 * [tone_analysis.ipynb](Activities/13-Ins_Tone_Analysis/Solved/tone_analysis.ipynb)
 

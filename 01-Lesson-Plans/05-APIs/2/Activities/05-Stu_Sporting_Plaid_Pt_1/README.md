@@ -26,6 +26,6 @@ Confirm that the environment variables were imported into Python correctly by ch
 
 Avoid printing variables that store keys. You don't want to push your secret key into GitHub!
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

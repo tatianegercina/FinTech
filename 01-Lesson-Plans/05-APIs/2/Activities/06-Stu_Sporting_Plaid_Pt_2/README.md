@@ -28,6 +28,6 @@ The first group to finish can volunteer to conduct a dry walk-through of the sol
 
 When parsing Plaid transactions, use a `for` loop to iterate over the `transactions_response['transactions']` object.
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
