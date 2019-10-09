@@ -12,7 +12,7 @@ Create a Panel dashboard using the Monte Carlo simulation code and plots provide
 
    **Hint:** Add Markdown header text to indicate what each variable is.
 
-2. Create a Panel `row` component and store it in `tab_2_row`. Store variables `simulated_ending_prices_plot` and `simulated_ending_price_hist` in it.
+2. Create a Panel `row` component and store it in `tab_2_row`. Store variables `simulated_ending_prices_plot` and `simulated_ending_prices_hist` in it.
 
 3. Create a another Panel `column` component and store it as `tab_2_columns`. Add in `confidence_intervals` and `tab_2_row` to the column.
 

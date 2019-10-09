@@ -6,7 +6,7 @@
 
 ## Background
 
-Harold's company has just started a new Real Estate Investment division to provide customers with a wider range of portfolio options. Harold was tasked with building a prototype dashboard and he needs your help. The real estate team wants to trial this initial offering with investment opportunities for the San Francisco market. If the new service is popular, then they can start to expand to other markets.
+Harold's company has just started a new Real Estate Investment division to provide customers with a broader range of portfolio options. Harold was tasked with building a prototype dashboard and he needs your help. The real estate team wants to trial this initial offering with investment opportunities for the San Francisco market. If the new service is popular, then they can start to expand to other markets.
 
 The goal of this dashboard is to provide charts, maps, and interactive visualizations that help customers explore the data and determine if they want to invest in rental properties in San Francisco.
 
@@ -57,7 +57,7 @@ In this section, you want to visualize the average gross rent per year to better
 
 #### Average Sales Price Per Year
 
-In this section, you want to determine average sales price per year to better understand the sales price of the rental property over time. For example, a customer will want to know if they should expect an increase or decrease in the property value over time so they can determine how long to hold the rental property. You will visualize the average (mean) `sales_price_sqr_foot` and visualize it as a bar chart.
+In this section, you want to determine the average sales price per year to better understand the sales price of the rental property over time. For example, a customer will want to know if they should expect an increase or decrease in the property value over time so they can determine how long to hold the rental property. You will visualize the average (mean) `sales_price_sqr_foot` and visualize it as a bar chart.
 
 1. Calculate the mean `gross` for each year.
 2. Visualize the mean gross rent per year as a line chart.
@@ -69,7 +69,7 @@ In this section, you want to determine average sales price per year to better un
 In this section, you want to compare the average prices by neighborhood.
 
 1. Group the data by year and by neighborhood and calculate the average (mean) `sales_price_sqr_foot`.
-2. Visualize the mean `sales_price_sqr_foot` per year with the neighborhood as a dropdown selector. Hint: Use hvplot to obtain the interactive dropdown selector for neighborhood.
+2. Visualize the mean `sales_price_sqr_foot` per year with the neighborhood as a dropdown selector. Hint: Use hvplot to obtain the interactive dropdown selector for the neighborhood.
 
   ![avg-price-neighborhood.png](Images/avg-price-neighborhood.png)
 
@@ -95,7 +95,7 @@ Using the DataFrame of Average values per neighborhood (calculated above), creat
 
 #### Neighborhood Map
 
-In this final section, you will read in neighborhood location data and build an interactive map with the average prices per neighborhood. Use a 1scatter_mapbox1 from plotly express to create the visualization. Remember, you will need your mapbox api key for this.
+In this final section, you will read in neighborhood location data and build an interactive map with the average prices per neighborhood. Use a scatter mapbox object from plotly express to create the visualization. Remember, you will need your mapbox API key for this.
 
 Remember that in order to create maps visualizations using Plotly Express, you will need to create an account at [mapbox](https://www.mapbox.com/) and [create an access token](https://docs.mapbox.com/help/how-mapbox-works/access-tokens/#creating-and-managing-access-tokens).
 
@@ -117,10 +117,8 @@ Sample Dashboard:
 
 * Create separate notebooks for the analysis and the dashboard and upload these to Github.
 
-* Create a binder link to the notebooks so that others can interactively test the code and visaulizations. Add the binder links to your GitHub README.md file.
-
 * Complete your README to explain how to run and use your dashboard.
 
-* Note: You should not submit your `mapbox` access token to github!
+* Note: You should not submit your `mapbox` access token to Github!
 
 * Submit the Github URL repository to Bootcampspot.

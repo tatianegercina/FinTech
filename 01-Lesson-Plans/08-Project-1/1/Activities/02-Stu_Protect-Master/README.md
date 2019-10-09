@@ -1,6 +1,6 @@
 # Students Do: Protect Master Branch
 
-In this activity we will protect our repo's master branch.
+In this activity, we will protect our repo's master branch.
 
 ## Instructions
 

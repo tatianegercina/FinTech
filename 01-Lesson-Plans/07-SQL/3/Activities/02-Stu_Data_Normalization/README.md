@@ -6,17 +6,15 @@ In this activity, you will be utilizing data normalization practices.
 
 * In pgAdmin, create a new database called `pets_db`.
 
-* Use Excel or Pandas to get the data into first normal form (1NF).
+* Using SQL, create the following tables with continued normalized practices:
 
-* Using the normalized CSV, create the following tables with continued normalized practices:
+  * A table for owners that has an ID and the owner's name
 
-  * A table for owners that takes an ID and the owner's name
-
-  * A table for pet names that takes two IDs and the pet's name.
+  * A table for pet names that has two IDs (one being the owner's name) and the pet's name.
 
 * Using the CSV file as guide, insert the data into respective tables.
 
-  **Hint:** Be sure that each table has a unique primary key.
+  **Hint:** Be sure that each table has a *unique primary key*.
 
 ### Bonus
 

@@ -8,7 +8,7 @@
 
 ## Second Form Normalization
 
-* Be in first normal form.
+* Data must already be in first normal form before transitioning to this form.
 
 * Single Column for Primary Key.
 
@@ -16,6 +16,6 @@
 
 ## Third Form Normalization
 
-* Be in second normal form.
+* Data must already be in second normal form before transitioning to this form.
 
 * Contain non-transitively dependent columns.

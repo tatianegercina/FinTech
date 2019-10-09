@@ -42,7 +42,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 3.2 Slides](https://docs.google.com/presentation/d/1KWphsqwNlAQGcLf2glW4096Jmnm_xS5pfmfguOsIFJU/edit#slide=id.g59b0dc3b18_0_96).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1WDfjMyC1leJpij4h4tw_Z2S4QB69wq92onDFRnkkLu4/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
@@ -62,7 +62,7 @@ Welcome students to the first day of Pandas. Explain why students are learning i
 
 * Pandas was created by Wes McKinney to offer a flexible, high-performance tool for conducting quantitative analysis of financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
 
-* If Python was compared to a garage, Pandas would be the sleek Tesla parked inside. The owner can choose to leverage the speed, power, and efficiency of their Tesla and take it for a spin, or the owner could walk to their destination. While walking would produce the same result as using the Tesla, it would require extra labor and take more time. This lesson will teach students how skillfully utilize the sleek Tesla sitting in their garage. 
+* If Python was compared to a garage, Pandas would be the sleek Tesla parked inside. The owner can choose to leverage the speed, power, and efficiency of their Tesla and take it for a spin, or the owner could walk to their destination. While walking would produce the same result as using the Tesla, it would require extra labor and take more time. This lesson will teach students how skillfully utilize the sleek Tesla sitting in their garage.
 
 Transition to covering the advantages of Pandas.
 
@@ -84,9 +84,7 @@ Review the [instructions](../../../02-Homework/04-Pandas/Instructions/README.md)
 
 The goal of this section is to help students understand the relationship between Pandas and Python. In this part of the lesson you will cover some specific features of Pandas and how Pandas can alleviate some of the challenges presented by Excel.
 
-**File:** [Slides](https://docs.google.com/presentation/d/1KWphsqwNlAQGcLf2glW4096Jmnm_xS5pfmfguOsIFJU/edit#slide=id.g59b0dc3b18_0_96)
-
-Begin this part of the lesson by discussing the utility and history of spreadsheets.
+Use the slides and begin this part of the lesson by discussing the utility and history of spreadsheets.
 
 * Since spreadsheets appeared in [1969 when LANPAR was first used by the plant budgeting operations of AT&T](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed the finance and quants analysis forever.
 

@@ -7,13 +7,13 @@ used cryptography before.
 
 Research and define the following terms:
 
-1. Cryptography
+* Cryptography
 
-2. Digital Signature
+* Digital Signature
 
-3. Encryption
+* Encryption
 
-4. PGP
+* PGP
 
 Now, think about how you may have used cryptography in your life.
 
