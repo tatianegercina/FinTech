@@ -6,31 +6,17 @@
 
 Today's class will expand upon students' component knowledge of algorithmic trading and abstract one level higher to create a full-fledged trading framework encapsulated in a single application. In particular, students will learn how to wrap their previous code (data collection, signal generation, backtesting, evaluation, and dashboard creation) into functions that will be called via a single workflow. In other words, students' trading framework applications will automate the manual component calculations done in the previous class to produce an end-to-end trading dashboard containing all relevant metrics and functionality.
 
-In addition, students will not only learn how to "go live" with their trading frameworks by establishing a connection to an actual financial API such as the Kraken Cryptocurrency Exchange (which provides 24-hour market access and generous API request privileges), but also further their understanding of dataflows by implementing asynchronous tasks and streaming capabilities that will allow them to create more robust trading dashboards that can update its underlying data without having to re-draw the overall dashboard each time.
+In addition, students will not only learn how to "go live" with their trading frameworks by establishing a connection to an actual financial API such as the Kraken Cryptocurrency Exchange (which provides 24-hour market access and generous API request privileges), but also further their understanding of dataflows by implementing asynchronous tasks and streaming capabilities that allows for more robust trading dashboards that can update its underlying data without having to re-draw the overall dashboard each time.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Delineate what algorithmic trading is and who does it.
+* Design an end-to-end workflow for a trading framework (data collection > signal generation > backtesting > evaluation > dashboard creation)
 
-* Define and verbally reiterate effective entry and exit rules for trading.
+* Abstract their previous day's component algorithmic trading calculations into functions and execute an end-to-end implementation of a trading dashboard.
 
-* Configure position sizing and leveraging.
-
-* Identify useful trading platforms and trading APIs and reiterate their use cases.
-
-* Build a predictive model for algorithmic trading.
-
-* Validate predictive model using backtesting for signal-based trading strategies.
-
-* Automate the purchase and sale of multiple assets using the recommended or best-ranked trading strategy.
-
-* Construct signal-based trading strategies from predicted stock returns such as momentum and mean reversion.
-
-* Rank multiple signal-based trading strategies by potential alpha generation.
-
-* Build portfolios with specific allocations to each underlying asset based on the predicted alpha generation of each stock.
+* 
 
 ### Instructor Notes
 
