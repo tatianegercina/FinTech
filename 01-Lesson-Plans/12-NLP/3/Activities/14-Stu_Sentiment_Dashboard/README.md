@@ -1,8 +1,8 @@
 # Crisis Sentiment Analysis Dashboard
 
-This activity is a mini-project where you'll create a data visualization dashboard; you have to analyze sentiment and tone about the news related to the financial crisis of 2008 that where published along the last month. You'll retrieve the news articles from the News API; by default, the developer account gives access to news articles up to a month old.
+This activity is a mini-project where you'll create a data visualization dashboard. You will analyze sentiment and tone about the news related to the financial crisis of 2008 that were published in the past month. You'll retrieve the news articles from the News API; by default, the developer account gives access to news articles up to a month old.
 
-In this activity, you will use your new sentiment analysis skills, in combination to some of the skills you already master such as: Pandas, Pyviz, Plotly Express and PyViz Panel.
+In this activity, you will use your new sentiment analysis skills in combination to some of the skills you have already mastered. such as Pandas, PyViz, Plotly Express, and PyViz Panel.
 
 ---
 
@@ -26,9 +26,9 @@ Using the News API, get all the news in English about the financial crisis of 20
 
 #### Creating a VADER Sentiment Scoring Function
 
-Use the VADER sentiment scoring function from `NLTK` to score the sentiment polarity of the 100 news you fetched.
+Use the VADER sentiment scoring function from `NLTK` to score the sentiment polarity of the 100 news articles you fetched.
 
-Just for convenience, start downloading the `vader_lexicon` in order to initialize the VADER sentiment analyzer.
+For convenience, start downloading the `vader_lexicon` in order to initialize the VADER sentiment analyzer.
 
 In order to score the VADER sentiment, create a function named `get_sentiment_scores(text, date, source, url)` that will receive four parameters.
 
@@ -37,7 +37,7 @@ In order to score the VADER sentiment, create a function named `get_sentiment_sc
 * `source` is the name of the news article's source.
 * `url` is the URL that points to the article.
 
-The `get_sentiment_score()` function should return a Python dictionary with the scoring results. This dictionary is going to be used in the next section to create a DataFrame; the structure of the dictionary is the following:
+The `get_sentiment_score()` function should return a Python dictionary with the scoring results. This dictionary is going to be used in the next section to create a DataFrame. The structure of the dictionary is the following:
 
 * `date` the date passed as parameter to the function.
 * `text` the text passed a parameter to the function.
@@ -80,7 +80,7 @@ This is an example of the function's return value:
 
 #### Creating the News Articles' Sentiments DataFrame
 
-In this section you have to create a DataFrame that is going to be used to plot the sentiment analysis results.
+In this section, you have to create a DataFrame that is going to be used to plot the sentiment analysis results.
 
 Using a `for-loop`, iterate across all the news articles you fetched to create the DataFrame structure.
 
@@ -141,7 +141,7 @@ Save the DataFrame with the top 20 words as a CSV file named `top_words_data.csv
 
 ![Sample bag-of-words word cloud](Images/bow_wordcloud.png)
 
-#### TF-IDF Wordcloud
+#### TF-IDF Word Cloud
 
 Use the `TfidfVectorizer` module from `sklearn` to create a word cloud with the top 20 words with the highest frequency.
 
@@ -167,9 +167,9 @@ In this section, you will load the CSV files you created on the analysis noteboo
 
 #### Plots Functions
 
-In this section, you will copy the code for each plot type from your analysis notebook and place it into separate functions that Panel can use to create panes for the dashboard. These functions will convert the plot object to a Panel pane.
+In this section, you will copy the code for each plot type from your analysis notebook and place it into separate functions that the Panel can use to create panes for the dashboard. These functions will convert the plot object to a Panel pane.
 
-Be sure to include any DataFrame transformation/manipulation code required along with the plotting code.
+Be sure to include any DataFrame transformation or manipulation code required along with the plotting code.
 
 Return a Panel pane object from each function that can be used to build the dashboard.
 
@@ -193,9 +193,9 @@ In order to create the radar chart, you need to score the tone of each article a
 
 Create a function named `get_tone(text,url)` that will receive two parameters and will get the tone score for a particular article.
 
-* `text` the content of the article.
+* `text` the content of the article
 
-* `url` the URL pointing to the article.
+* `url` the URL pointing to the article
 
 The `get_tone()` function will use the `tone()` method from the `ToneAnalyzerV3` module to score the article's tone. Remember that for each document (or text), the `tone()` method of IBM Watson Tone Analyzer [scores one or more overall document tones](https://cloud.ibm.com/apidocs/tone-analyzer#analyze-general-tone-get), you can also get and empty result if no tone were scored; this function should return a dictionary with the first document tone's score with the following structure:
 
@@ -253,3 +253,9 @@ Create a radar chart like the one bellow using the `bar_polar()` method from Plo
 * Define a `title` for the chart.
 
   ![Sample radar chart](Images/radar_chart.png)
+
+
+
+
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
