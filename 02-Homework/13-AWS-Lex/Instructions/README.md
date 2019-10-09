@@ -31,7 +31,7 @@ In this homework assignment, you will combine your new skills about Amazon Web S
 
 You are asked to accomplish the following main tasks:
 
-1. **[Initial Robo Advisor Configuration:](#Initial-Robo-Advisor-Configuration)** Define an Amazon Lex bot with a single intent that stablish a conversation about the requirements to suggest an investment portfolio for retirement.
+1. **[Initial Robo Advisor Configuration:](#Initial-Robo-Advisor-Configuration)** Define an Amazon Lex bot with a single intent that establishes a conversation about the requirements to suggest an investment portfolio for retirement.
 
 2. **[Build and Test the Robo Advisor](#Build-and-Test-the-Robo-Advisor):** Make sure that your bot is working and responding accurately along the conversation with the user, by building and testing it.
 
