@@ -1,4 +1,4 @@
-## 12.1 Lesson Plan—Intro to Natural Language Processing (NLP)
+## 12.1 Lesson Plan: Intro to Natural Language Processing (NLP)
 
 ---
 
@@ -42,7 +42,7 @@ By the end of the class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 12.1 Slides](#).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1NoW5ZXlmW-lz4tbG6kU07zuR0cTryVSZIsLRAskyB1E/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -53,10 +53,6 @@ By the end of the class, students will be able to:
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
-
-**Files**
-
-* [Lesson 12.1 Slides](#)
 
 Welcome students back to class and explain that today is the start of the NLP unit. We'll talk about what NLP is and how it's used in finance in just a little bit, but first pose the following question.
 
@@ -77,10 +73,6 @@ Hopefully, your students are excited and ready to dive into the content at this 
 ---
 
 ### 2. Instructor Do: Intro to NLP (10 min)
-
-**Files**
-
-* [Lesson 12.1 Slides](#)
 
 Open the slides and be sure to hit on the following talking points. Pause after each slide for questions.
 
