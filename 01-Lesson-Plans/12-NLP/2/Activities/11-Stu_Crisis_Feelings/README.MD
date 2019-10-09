@@ -1,8 +1,8 @@
 # The Feelings of the Crisis
 
-While reading news articles, normally the headline is the hook to continue reading. However, a negative title could lead you to skip reading an article if you don't want to be in a bad mood. But is this accurate?
+While reading news articles normally the title is the hook to continue reading, however a negative title could lead you to skip reading an article if you don't want to be in a bad mood. But is this fair enough?
 
-On this activity you are tasked to corroborate if a news title with a negative sentiment leads to a negative content. You will use VADER sentiment to accomplish this work using the news articles that you previously downloaded in The Voice of the Crisis activity.
+On this activity you are tasked to corroborate if a news title with a negative sentiment leads or not to a negative content. You will use VADER sentiment to accomplish this work using the news articles that you previously downloaded on _The Voice of the Crisis_ activity.
 
 ---
 
