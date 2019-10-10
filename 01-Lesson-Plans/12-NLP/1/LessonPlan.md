@@ -22,7 +22,7 @@ By the end of the class, students will be able to:
 
 * Demonstrate an ability to tokenize texts into sentences and words, including handling punctuations and non-alphabetic characters gracefully.
 
-* Implement lemmatization and stop wording with the understanding of pros and cons of various choices.
+* Implement lemmatization and stopwording with the understanding of pros and cons of various choices.
 
 * Experiment with a few ways of counting tokens and displaying the most frequent ones.
 
@@ -197,7 +197,7 @@ Solved: [stopwords.ipynb](Activities/03-Ins_Stopwords/Solved/stopwords.ipynb)
 
 Walkthrough the notebook, taking care to allow time for students to look at the output of each step.
 
-For simplicity's sake, we're only going to use one sentence from the article to demonstrate stop wording. Note that these techniques can be applied to entire documents or corpora, as well.
+For simplicity's sake, we're only going to use one sentence from the article to demonstrate stopwording. Note that these techniques can be applied to entire documents or corpora, as well.
 
 Ask students to familiarize themselves with NLTK's list of stopwords. What others can they think of that might be added? Could stopwords for one domain be ill-suited for another (for example, might you want to ignore certain words in finance documents that you wouldn't want to ignore in documents about history)?
 
@@ -212,7 +212,7 @@ Two important notes here: First, we choose to instantiate the list of stopwords 
 
 ![stopwords1](Images/stopwords1.PNG)
 
-Have students take a look at the result after the sentence has been "stop worded." Are there other words in there that are not informative? If so, we can define our list of custom stop words and join these to the NLTK list when we perform this step of preprocessing:
+Have students take a look at the result after the sentence has been "stopworded." Are there other words in there that are not informative? If so, we can define our list of custom stopwords and join these to the NLTK list when we perform this step of preprocessing:
 
 ```python
 sw_addon = {'said', 'mln', 'kilolitres','kl'}
@@ -223,7 +223,7 @@ Note that the union function here combines the unique elements of the two sets.
 
 ![stopwords2](Images/stopwords2.PNG)
 
-Once again, have students take a look at the result. We've gotten rid of the words that are uninformative, but what about the numbers and punctuation at the end? For most use cases, these characters are also of little use. It's possible to get rid of them using the stop word methodology, but this would involve entering every combination of numbers and punctuation that exists in the corpus, and that's unrealistic.
+Once again, have students take a look at the result. We've gotten rid of the words that are uninformative, but what about the numbers and punctuation at the end? For most use cases, these characters are also of little use. It's possible to get rid of them using the stopword methodology, but this would involve entering every combination of numbers and punctuation that exists in the corpus, and that's unrealistic.
 
 Instead, we're going to make use of regular expressions. Direct students to this resource for learning more about regular expressions and how they're implemented in Python: https://docs.python.org/3/library/re.html. For now, though, go through the following code:
 
@@ -234,7 +234,7 @@ re_clean = regex.sub('', sentence)
 
 Regex substitution here takes two steps. In the first, we compile a pattern to match for. In this case, we want to match all characters that are not a letter or a space (denoted by the caret followed by lower and uppercase letters). In the second, we use the .sub() function to substitute out whatever matches that pattern in the string we want to clean. Important: stress to students that this step should occur **before** the text is word tokenized.
 
-Finally, have students take a look at the results of regex cleaning, followed by the stop wording that we did before.
+Finally, have students take a look at the results of regex cleaning, followed by the stopwording that we did before.
 
 ![stopwords3](Images/stopwords3.PNG)
 
@@ -242,7 +242,7 @@ Finally, have students take a look at the results of regex cleaning, followed by
 
 ### 7. Student Do: Crude Stopwords (15 min)
 
-In this activity, students will practice creating a function that strips non-letter characters from a document and then applies to stop wording.
+In this activity, students will practice creating a function that strips non-letter characters from a document and then applies stopwording.
 
 **Instructions:**
 
@@ -260,9 +260,9 @@ In this activity, students will practice creating a function that strips non-let
 
 * [crude_stopwords.ipynb](Activities/04-Stu_Crude_Stopwords/Solved/crude_stopwords.ipynb)
 
-Reiterate that stop wording is very domain and circumstance specific. Using the same set of stopwords for every corpus is rarely a good idea. The NLTK set is a good start, but the chances are that you'll want to augment it with your own set after inspecting the results.
+Reiterate that stopwording is very domain and circumstance specific. Using the same set of stopwords for every corpus is rarely a good idea. The NLTK set is a good start, but the chances are that you'll want to augment it with your own set after inspecting the results.
 
-Note the order in which we apply the regex cleaning, word tokenizing, and stop wording.
+Note the order in which we apply the regex cleaning, word tokenizing, and stopwording.
 
 ```python
 def clean_text(article):
@@ -309,7 +309,7 @@ Note that it's possible to lemmatize every part of speech for any given word—a
 
 ### 11. Student Do: Lemmatize (15 min)
 
-In this activity, create a function that performs stop wording, regex cleaning of non-letter characters, word tokenizing, and lemmatization on each word in the article
+In this activity, create a function that performs stopwording, regex cleaning of non-letter characters, word tokenizing, and lemmatization on each word in the article
 
 **Instructions:**
 
@@ -405,7 +405,7 @@ In this activity, students will create a function that preprocesses and outputs 
 
 Open the solved notebook and explain the following:
 
-* We can quickly copy and paste from the previous activity in order to get a preprocessing function that can output lemmatized, stop worded, and tokenized words. We'll use this function as a helper in our main Counter functions.
+* We can quickly copy and paste from the previous activity in order to get a preprocessing function that can output lemmatized, stopworded, and tokenized words. We'll use this function as a helper in our main Counter functions.
 
 Go over the first word counter function below line by line, highlighting the following points:
 
