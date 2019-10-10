@@ -1,5 +1,10 @@
 import pandas as pd
+import numpy as np
 from pathlib import Path
+import panel as pn
+import hvplot.pandas
+
+pn.extension()
 
 def initialize(cash):
     """Initialize the dashboard, data storage, and account balances."""
@@ -27,19 +32,21 @@ def fetch_data():
     # Read the CSV located at the file path into a Pandas DataFrame
     data_df = pd.read_csv(filepath)
 
+    # Print the DataFrame
+    print(data_df)
+
     return data_df
 
 def generate_signal(data_df):
     """Generates trading signals for a given dataset."""
-
     # Set window
     short_window = 10
     long_window = 20
 
     # Set up the signals DataFrame
-    signals = df.copy()
-    signals["index"] = pd.to_datetime(signals["index"])
-    signals = signals.set_index("index", drop=True)
+    signals = data_df.copy()
+    signals["date"] = pd.to_datetime(signals["date"], infer_datetime_format=True)
+    signals = signals.set_index("date", drop=True)
     signals["signal"] = 0.0
 
     # Generate the short and long moving averages
@@ -48,15 +55,19 @@ def generate_signal(data_df):
 
     # Generate the trading signal 0 or 1,
     signals["signal"][short_window:] = np.where(
-        signals["SMA10"][short_window:] > signals["SMA20"][long_window:], 1.0, 0.0
+        signals["SMA10"][short_window:] > signals["SMA20"][short_window:], 1.0, 0.0
     )
 
     # Calculate the points in time at which a position should be taken, 1 or -1
     signals["entry/exit"] = signals["signal"].diff()
 
+    # Print the DataFrame
+    print(signals)
+
     return signals
 
 def execute_backtest(signals_df):
+    """Executes a backtest on trading signal data."""
     # Set initial capital
     initial_capital = float(100000)
 
@@ -64,7 +75,7 @@ def execute_backtest(signals_df):
     share_size = 500
 
     # Take a 500 share position where the dual moving average crossover is 1 (SMA50 is greater than SMA100)
-    signals_df['Position'] = share_size * signals_df['Signal']
+    signals_df['Position'] = share_size * signals_df['signal']
 
     # Find the points in time where a 500 share position is bought or sold
     signals_df['Entry/Exit Position'] = signals_df['Position'].diff()
@@ -85,28 +96,13 @@ def execute_backtest(signals_df):
     signals_df['Portfolio Cumulative Returns'] = (1 + signals_df['Portfolio Daily Returns']).cumprod() - 1
 
     # Print the DataFrame
-    signals_df
+    print(signals_df)
 
     return signals_df
 
-def place_order():
-    """Makes a buy/sell/hold decision."""
-
-    if signals["entry/exit"][-1] == 1.0:
-        print("buy")
-        number_to_buy = round(account["balance"] / signals["close"][-1], 0) * 0.001
-        account["balance"] -= number_to_buy * signals["close"][-1]
-        account["shares"] += number_to_buy
-    elif signals["entry/exit"][-1] == -1.0:
-        print("sell")
-        account["balance"] += signals["close"][-1] * account["shares"]
-        account["shares"] = 0
-    else:
-        print("hold")
-
-    return account
-
 def evaluate_metrics(signals_df):
+    """Evaluates metrics from backtested signal data"""
+    #### CALCULATE PORTFOLIO METRICS ####
     # Initialize index and columns
     metrics= ['Annual Return', 'Cumulative Returns', 'Annual Volatility', 'Sharpe Ratio', 'Sortino Ratio', 'Alpha', 'Beta']
     columns = ['Backtest']
@@ -130,26 +126,29 @@ def evaluate_metrics(signals_df):
     sortino_ratio_df = signals_df[['Portfolio Daily Returns']]
     sortino_ratio_df['Downside Returns'] = 0
     target = 0
-
     sortino_ratio_df.loc[sortino_ratio_df['Portfolio Daily Returns'] < target, 'Downside Returns'] = sortino_ratio_df['Portfolio Daily Returns']**2
-
     down_stdev = np.sqrt(sortino_ratio_df['Downside Returns'].mean())
     expected_return = sortino_ratio_df['Portfolio Daily Returns'].mean()
-
     sortino_ratio = expected_return/down_stdev
     portfolio_evaluation_df.loc['Sortino Ratio'] = sortino_ratio
 
-    #### CALCULATE TRADE METRICS ####
+    # Print the DataFrame
+    print(portfolio_evaluation_df)
 
-    trade_evaluation_df = pd.DataFrame(columns=['Stock',
-                                            'Entry Date',
-                                            'Exit Date',
-                                            'Shares',
-                                            'Entry Share Price',
-                                            'Exit Share Price',
-                                            'Entry Portfolio Holding',
-                                            'Exit Portfolio Holding',
-                                            'Profit/Loss'])
+    #### CALCULATE TRADE METRICS ####
+    trade_evaluation_df = pd.DataFrame(
+        columns=[
+            'Stock',
+            'Entry Date',
+            'Exit Date',
+            'Shares',
+            'Entry Share Price',
+            'Exit Share Price',
+            'Entry Portfolio Holding',
+            'Exit Portfolio Holding',
+            'Profit/Loss'
+        ]
+    )
 
     entry_date = ''
     exit_date = ''
@@ -160,62 +159,95 @@ def evaluate_metrics(signals_df):
     exit_share_price = 0
 
     for index, row in signals_df.iterrows():
-        if row['Entry/Exit'] == 1:
-            #record = [index, row['Entry/Exit'], row['Portfolio Holdings']]
-            print(index, row['Entry/Exit'], row['Portfolio Holdings'])
-
+        if row['entry/exit'] == 1:
             entry_date = index
             entry_portfolio_holding = row['Portfolio Holdings']
             share_size = row['Entry/Exit Position']
             entry_share_price = row['close']
 
-            print(f"  Entry Portfolio Holding {entry_portfolio_holding}")
-            #trade_evaluation_df = trade_evaluation_df.append(record)
-        elif row['Entry/Exit'] == -1:
-            print(index, row['Entry/Exit'], signals_df.loc[index].shift(-1)['Portfolio Holdings'])
-
+        elif row['entry/exit'] == -1:
             exit_date = index
-            exit_portfolio_holding = signals_df.loc[index].shift(-1)['Portfolio Holdings']
-            exit_share_price = signals_df.loc[index].shift(-1)['close']
-
-            print(f"  Exit Portfolio Holding {exit_portfolio_holding}")
+            exit_portfolio_holding = abs(row['close'] * row['Entry/Exit Position'])
+            exit_share_price = row['close']
 
             profit_loss = exit_portfolio_holding - entry_portfolio_holding
-            print(f"  Per Trade Profit Loss: {profit_loss}")
 
-            trade_evaluation_df = trade_evaluation_df.append({'Stock': 'AAPL',
-                                                            'Entry Date': entry_date,
-                                                            'Exit Date': exit_date,
-                                                            'Shares': share_size,
-                                                            'Entry Share Price': entry_share_price,
-                                                            'Exit Share Price': exit_share_price,
-                                                            'Entry Portfolio Holding': entry_portfolio_holding,
-                                                            'Exit Portfolio Holding': exit_portfolio_holding,
-                                                            'Profit/Loss': profit_loss},
-                                                            ignore_index=True)
+            trade_evaluation_df = trade_evaluation_df.append(
+                {
+                    'Stock': 'AAPL',
+                    'Entry Date': entry_date,
+                    'Exit Date': exit_date,
+                    'Shares': share_size,
+                    'Entry Share Price': entry_share_price,
+                    'Exit Share Price': exit_share_price,
+                    'Entry Portfolio Holding': entry_portfolio_holding,
+                    'Exit Portfolio Holding': exit_portfolio_holding,
+                    'Profit/Loss': profit_loss
+                },
+                ignore_index=True)
 
-    trade_evaluation_df
+    # Print the DataFrame
+    print(trade_evaluation_df)
 
     return portfolio_evaluation_df, trade_evaluation_df
 
-def update_dashboard():
+def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df):
+    """Updates the dashboard with widgets, plots, and financial tables"""
+    # Initialize static widgets
+    account_balance = pn.widgets.StaticText(name="Cash Balance", value=tested_signals_df['Portfolio Cash'][-1])
+    holding_value = pn.widgets.StaticText(name="Portfolio Holding", value=tested_signals_df['Portfolio Holdings'][-1])
+    total_portfolio_value = pn.widgets.StaticText(name="Total Portfolio Value", value=tested_signals_df['Portfolio Total'][-1])
+
+    # Create price plot of closing, SMA10, and SMA20
+    price_plot = tested_signals_df.hvplot.line(x='date', y=['close', 'SMA10', 'SMA20'], value_label='Price', width=1000, height=400, rot=90)
+
+    # Create portfolio metrics table
+    portfolio_evaluation_table = portfolio_evaluation_df.hvplot.table(columns=['index', 'Backtest'], width=300, height=400)
+
+    # Create trade metrics table
+    trade_evaluation_table = trade_evaluation_df.hvplot.table(
+        columns=[
+            'Stock',
+            'Entry Date',
+            'Exit Date',
+            'Shares',
+            'Entry Share Price',
+            'Exit Share Price',
+            'Entry Portfolio Holding',
+            'Exit Portfolio Holding',
+            'Profit/Loss'
+        ]
+    )
+
+    # Create rows
+    row_one = pn.Row(account_balance, holding_value, total_portfolio_value)
+    row_two = pn.Row(price_plot)
+    row_three = pn.Row(portfolio_evaluation_table, trade_evaluation_table)
+
+    # Create columns
+    column = pn.Column(row_one,
+                       row_two,
+                       row_three)
+
+    # Create tabs
+    tabs = pn.Tabs(("Summary", column))
+
+    # Assign tab to dashboard object
+    dashboard[0] = tabs
+
     return
 
-def save_data():
-
-
-    return
-
-
+# Initialize account and dashboard objects
 account, dashboard = initialize(100000)
+dashboard.servable()
 
-# data_df = fetch_data()
-# signals_df = generate_signal(data_df)
+# Fetch data and generate signals
+data_df = fetch_data()
+signals_df = generate_signal(data_df)
 
-# signals_df = execute_backtest(signals_df)
+# Backtest signal data and evaluate metrics from backtested results
+tested_signals_df = execute_backtest(signals_df)
+portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals_df)
 
-# portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(signals_df)
-
-# update_dashboard(account, signals_df, portfolio_evaluation_df, trade_evaluation_df)
-
-# save_data()
+# Update the dashboard with all metrics
+update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df)
