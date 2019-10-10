@@ -6,7 +6,7 @@
 
 Today's class will expand upon students' component knowledge of algorithmic trading and abstract one level higher to create a full-fledged trading framework encapsulated in a single application. In particular, students will learn how to wrap their previous code (data collection, signal generation, backtesting, evaluation, and dashboard creation) into functions that will be called via a single workflow. In other words, students will automate the manual component calculations done in the previous class to produce an end-to-end trading dashboard containing all relevant metrics and functionality.
 
-Furthermore, students will not only learn how to "go live" with their trading frameworks by establishing a connection to an actual financial API such as the Kraken Cryptocurrency Exchange (which provides 24-hour market access and generous API request privileges), but also further their understanding of dataflows by implementing asynchronous tasks and streaming capabilities that allows for a more robust trading dashboard that can update its underlying data without having to re-draw its overall dashboard each time.
+Furthermore, students will not only learn how to "go live" with their trading frameworks by establishing a connection to an actual financial API such as the Kraken Cryptocurrency Exchange API (which provides 24-hour market access and generous API request privileges), but also further their understanding of dataflows by implementing asynchronous tasks and streaming capabilities that allows for a more robust trading dashboard that can update its underlying data without having to re-draw its overall dashboard each time.
 
 ### Class Objectives
 
@@ -56,32 +56,30 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-In this section, students will review the algorithmic trading concepts taught in the previous class to prepare them for today's consolidation of multiple trading functions (signal generation, backtesting, etc.) into a single trading framework. This section is a key opportunity to take a step back and understand the *process* of algorithmic trading, so as to later transition to the architecture or infrastructure of an algorithmic trading framework.
+In this section, students will review the algorithmic trading concepts taught in the previous class to prepare them for today's consolidation of multiple trading functions (signal generation, backtesting, trade evaluation, etc.) into a single trading framework. This section is a key opportunity to take a step back and understand the *process* of algorithmic trading, so as to later transition to the architecture or infrastructure of an algorithmic trading framework.
 
-Welcome students to the second day of algorithmic trading and explain the following:
+Welcome students to the second day of algorithmic trading and quickly review the following:
 
-* Introduce students to algorithmic trading first by explaining how cumbersome it can be to manually make trades. Explain that a typical day for traders involves:
+* What is algorithmic trading?
 
-  * Tracking the transactional history of many stocks
+  **Answer:** Algorithmic trading is the concept of utilizing a machine to automate the process of buying and selling assets based on specific trading signal criteria and decision-making logic.
 
-  * Identify the best opportunity to buy, sell, and hold
+* What is a trading signal?
 
-  * Maintain knowledge about the highs and lows for each individual stock, as well as their overall portfolio value and profit/loss
+  **Answer:** A trading signal is the point at which a technical indicator, such as the crossover of two moving averages (short MA and long MA), suggests an opportunity for action--namely whether an individual trader or algorithmic trading program should issue a buy or sell order for a security (such as a stock) at that point in time.
 
-  * Keeping emotions in check
+* What is backtesting?
 
-* Also explain that human emotions play a key role in the success or failure of a trade/trader. Because the market is constantly changing with varying degrees of volatility, it's easy for humans to get emotional when trading. The trades that traders make have the ability to drastically impact their own profitability and livelihood. Furthermore, because traders are dealing with other people's money, such as retirement funds, every decision has the ability to disrupt the economical foundation of countless lives.
+  **Answer:** Backtesting is the process for measuring the overall performance of a trading strategy using historical stock prices to simulate executed trades dictated by the calculated trading signals and trade decision logic.
 
-* The sheer number of moving parts and details that need to be considered can make it difficult for the human mind to consistently make performant trades. This is where **algorthmic trading** comes in.
+* What are algorithmic trading evaluation metrics?
 
-* Algorithmic trading is the concept of utilizing machine-learning to automate the process of buying and selling assets. Machine learning algorithms can make predictions about ROI, risk, and analyze transactions much faster than a human brain. Because computers run off of logic rather than emotions, traders don't have to worry about their emotions getting in the way.
+  **Answer:** Metrics that showcase information such as overall portfolio or per-trade performance. Examples include cash balance, total portfolio value, per-trade profits and losses, and dates of entry and exit trades.
 
-  * Underscore to students that there are a number of different algorthmic trading strategies that leverage machine learning. An algorithmic doesn't have to perform every action involved trading: algorithmic trading can be used just to predict the best investments, determine risk, or kick-off end-to-end trade execution and portfolio management.
+* What is a trading dashboard?
 
-* Using algorithmic trading models in conjunction with portfolio management also allows for automatic re-balancing of assets (capital) within the portfolio, thereby aiding in portfolio optimization. Algorithmic trading models automatically buy and sell assets within the portfolio according to the optimal weights for each asset calculated by the model.
+  **Answer:** Like other dashboards, a *trading* dashboard consolidates and presents multiple facets of information pertaining to the performance of an algorithmic trading application, allowing a user to interact with the data via tables and plots (visualizations).
 
-* If time remains, summarize to students that all **algorithmic trading** involves is the prediction of future stock returns and execution of specific trading actions based on specific criteria, such as the ratio of risk to reward for the given scenario. In this regard, all a human has to do is click a button to execute the algorithm. The key difference between human traders and algorithmic trading is that computers can make decisions and predictions much more efficiently and effectively than humans, and they can do so without human emotions getting in the way.
-
-* Lastly, if there is time, explain to students that the use of machine learning has given certain firms a competitive advantage compared to those still using manual, human labor. They're able to make smarter, more agile decisions based off of real time predictions and historical analysis, not to mention that less time is wasted on implementing and repeating manual processes.
+Mention to students that going forward in today's class, they should not only keep in mind the distinct purposes or functions of each trading calculation, but the chronology and dependencies of each function as well.
 
 Answer any questions before moving on.
