@@ -366,20 +366,16 @@ def evaluate_metrics(signals_df):
                 profit_loss = exit_portfolio_holding - entry_portfolio_holding
 
                 # Append the variables as a new entry-exit pair row in the trade_evaluation_df
-                trade_evaluation_df = trade_evaluation_df.append(
-                    {
-                        'Stock': 'AAPL',
-                        'Entry Date': entry_date,
-                        'Exit Date': exit_date,
-                        'Shares': share_size,
-                        'Entry Share Price': entry_share_price,
-                        'Exit Share Price': exit_share_price,
-                        'Entry Portfolio Holding': entry_portfolio_holding,
-                        'Exit Portfolio Holding': exit_portfolio_holding,
-                        'Profit/Loss': profit_loss
-                    },
-                    ignore_index=True
-                )
+                trade_evaluation_df = trade_evaluation_df.append({'Stock': 'AAPL',
+                                                                  'Entry Date': entry_date,
+                                                                  'Exit Date': exit_date,
+                                                                  'Shares': share_size,
+                                                                  'Entry Share Price': entry_share_price,
+                                                                  'Exit Share Price': exit_share_price,
+                                                                  'Entry Portfolio Holding': entry_portfolio_holding,
+                                                                  'Exit Portfolio Holding': exit_portfolio_holding,
+                                                                  'Profit/Loss': profit_loss},
+                                                                  ignore_index=True)
 
         return trade_evaluation_df
 
