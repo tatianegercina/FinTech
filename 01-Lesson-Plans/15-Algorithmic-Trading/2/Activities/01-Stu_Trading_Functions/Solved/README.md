@@ -6,7 +6,7 @@
 
 3. generate_signal(): Generates trading signals from a financial API closing price data.
 
-4. execute_backtest(): Tests the execution of the strategy dictated by the signal data against a proposed initial capital allocation.
+4. execute_backtest(): Tests the execution of the strategy dictated by the signal data against a proposed initial capital allocation and share size.
 
 5. place_order(): Makes a call to a financial API to place an order to buy or sell an asset.
 
@@ -14,7 +14,7 @@
 
 7. update_dashboard(): Updates the values within the dashboard.
 
-8. save_data(): Saves the data to a persistent storage (e.g. database)
+8. save_data(): Saves the data to a persistent storage (e.g. database).
 
 ---
 
