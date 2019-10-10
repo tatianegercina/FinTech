@@ -4,7 +4,7 @@
 
 ### Please take the Mid-Course Instructional Staff Survey if You Haven't Yet
 
-Trilogy, as a company, values transparency and data-driven change quite highly. As we grow, we know there will be areas that need improvement. It’s hard for us to know what these areas are unless we’re asking questions. Your candid input truly matters to us, as you are key members of the Trilogy team. In addition to the individual feedback at the end of lesson plans, we would appreciate your feedback at the following link if you have not already taken the mid-course survey:
+Trilogy, as a company, values transparency and data-driven change quite highly. As we grow, we know there will be areas that need improvement. It’s hard for us to understand what these areas are unless we’re asking questions. Your candid input truly matters to us, as you are key members of the Trilogy team. In addition to the individual feedback at the end of lesson plans, we would appreciate your feedback at the following link if you have not already taken the mid-course survey:
 
 [Instructional Staff Survey](https://docs.google.com/forms/d/e/1FAIpQLSfYVe6jUQwDoXferzGqfd3LZ1k0i_RWzgwccd1f5arSXg2pzA/viewform)
 
@@ -22,13 +22,13 @@ By the end of the class, students will be able to:
 
 * Demonstrate an ability to tokenize texts into sentences and words, including handling punctuations and non-alphabetic characters gracefully.
 
-* Implement lemmatization and stopwording with the understanding of pros and cons of various choices.
+* Implement lemmatization and stop wording with the understanding of pros and cons of various choices.
 
 * Experiment with a few ways of counting tokens and displaying the most frequent ones.
 
 * Define the concept of ngrams and implement with Scikit-learn.
 
-* Create a word cloud to show most frequent terms in a text.
+* Create a word cloud to show the most frequent terms in a text.
 
 ### Instructor Notes
 
@@ -54,11 +54,11 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students back to class and explain that today is the start of the NLP unit. We'll talk about what NLP is and how it's used in finance in just a little bit, but first pose the following question.
+Welcome students back to class and explain that today is the start of the NLP unit. We'll talk about what NLP is and how it's used in finance in just a little bit but first pose the following question.
 
-* When was the last time that a student made a decision—could be financial, career, or purchase—based on what they read in a news story? What about the story made them want to make that decision?
+* When was the last time that a student made a decision—could be financial, career, or purchase—based on what they read in a news story? What about the story that made them want to make that decision?
 
-    **Sample answer**: I bought 10 shares of TSLA because of a news article about sales of the Model 3. The tone of the story—optimistic—as well as the specific numbers they cited made me bullish about the company.
+ **Sample answer**: I bought 10 shares of TSLA because of a news article about sales of the Model 3. The tone of the story—optimistic—as well as the specific numbers they cited,  made me bullish about the company.
 
 Take a few answers from volunteers (or call on a couple of students).
 
@@ -66,7 +66,7 @@ Take a few answers from volunteers (or call on a couple of students).
 
 * Scaling this process with computers—reading and understanding the text of documents—is a key task in NLP and is a central use case in financial applications.
 
-* Computers don't understand the stories in the way that we do, but they can identify key features—like the ones given by students—and make decisions based off those features.
+* Computers don't understand the stories in the way that we do, but they can identify key features—like the ones given by students—and make decisions based on those features.
 
 Hopefully, your students are excited and ready to dive into the content at this point! Open the slides for this lesson and begin the next section.
 
@@ -107,7 +107,7 @@ reuters.fileids(categories='crude')
 article = reuters.raw('test/14829')
 ```
 
-Point out that the idea of tokenization is very simple. First, we decide the unit of text we want to work with, whether that's a sentence or word (other units are possible, but harder to define consistently). Next, we look for strings that signal a boundary, or a break between one unit and the next. For words, this might be spaces. For sentences, it might be periods. Ask students how they might proceed to then do the actual split.
+Point out that the idea of tokenization is very simple. First, we decide the unit of text we want to work with, whether that's a sentence or word (other units are possible, but harder to define consistently). Next, we look for strings that signal a boundary, or a break between one unit and the next. For words, this might be spaces. For sentences, it might be periods. Ask students how they might proceed to do the actual split.
 
 We can use Python's native string split function to break apart text into smaller units, or tokens.
 
@@ -119,7 +119,7 @@ article.split('.')
 sent.split(' ')
 ```
 
-However, these simple methods aren't very good at covering many potential types of boundaries. For example, sentences don't just end with periods—sometimes they have exclamation marks, question marks, or no punctuation at all. It's possible, but annoying, to account for all these cases. Luckily, NLTK provides us with tokenization methods that do this for us. Walk through the sent_tokenize and word_tokenize methods.
+However, these simple methods aren't very good at covering many potential types of boundaries. For example, sentences don't just end with periods—sometimes they have exclamation marks, question marks, or no punctuation at all. It's possible, but annoying, to account for all these cases. Luckily, NLTK provides us with tokenization methods that do this for us. Walkthrough the sent_tokenize and word_tokenize methods.
 
 Note that even with NLTK's functions, we won't get perfect results all the time. For example, while NLTK's word_tokenizer is pretty good at separating words and punctuation that are not separated by spaces, it does not separate words with forward slashes like "supply/demand" below.
 
@@ -162,8 +162,8 @@ Open the [solved file](Activities/02-Stu_Tokenizing_Reuters/Solved/tokenizing_re
 raw_stories = []
 ids = []
 for id in cpi_ids:
-    raw_stories.append(reuters.raw(id))
-    ids.append(id)
+ raw_stories.append(reuters.raw(id))
+ ids.append(id)
 ```
 
 * Just as with the raw articles, we can store sentences in a list. Note that once we apply sent_tokenize to each article, we get a list of sentences back. So, the sentence tokenized list we create is actually a list of lists.
@@ -177,12 +177,12 @@ for id in cpi_ids:
 word_tokenized = []
 
 for story in sentence_tokenized:
-    # get all for each article, which is already sentence tokenized
-    words = []
-    for sent in story:
-        words = words + word_tokenize(sent)
-    # append all words for each article to the word_tokenized list
-    word_tokenized.append(words)
+ # get all for each article, which is already sentence tokenized
+ words = []
+ for sent in story:
+ words = words + word_tokenize(sent)
+ # append all words for each article to the word_tokenized list
+ word_tokenized.append(words)
 ```
 
 ---
@@ -195,9 +195,9 @@ This activity introduces the concept and implementation of stopwords. In English
 
 Solved: [stopwords.ipynb](Activities/03-Ins_Stopwords/Solved/stopwords.ipynb)
 
-Walk through the notebook, taking care to allow time for students to look at the output of each step.
+Walkthrough the notebook, taking care to allow time for students to look at the output of each step.
 
-For simplicity's sake, we're only going to use one sentence from the article to demonstrate stopwording. Note that these techniques can be applied to entire documents or corpora as well.
+For simplicity's sake, we're only going to use one sentence from the article to demonstrate stop wording. Note that these techniques can be applied to entire documents or corpora, as well.
 
 Ask students to familiarize themselves with NLTK's list of stopwords. What others can they think of that might be added? Could stopwords for one domain be ill-suited for another (for example, might you want to ignore certain words in finance documents that you wouldn't want to ignore in documents about history)?
 
@@ -212,7 +212,7 @@ Two important notes here: First, we choose to instantiate the list of stopwords 
 
 ![stopwords1](Images/stopwords1.PNG)
 
-Have students take a look at the result after the sentence has been "stopworded." Are there other words in there that are not informative? If so, we can define our own list of custom stopwords and join these to the NLTK list when we perform this step of preprocessing:
+Have students take a look at the result after the sentence has been "stop worded." Are there other words in there that are not informative? If so, we can define our list of custom stop words and join these to the NLTK list when we perform this step of preprocessing:
 
 ```python
 sw_addon = {'said', 'mln', 'kilolitres','kl'}
@@ -223,7 +223,7 @@ Note that the union function here combines the unique elements of the two sets.
 
 ![stopwords2](Images/stopwords2.PNG)
 
-Once again, have students take a look at the result. We've gotten rid of the words that are uninformative, but what about the numbers and punctuation at the end? For most use cases, these characters are also of little use. It's possible to get rid of them using the stopwords methodology, but this would involve entering every combination of numbers and punctuation that exists in the corpus, and that's unrealistic.
+Once again, have students take a look at the result. We've gotten rid of the words that are uninformative, but what about the numbers and punctuation at the end? For most use cases, these characters are also of little use. It's possible to get rid of them using the stop word methodology, but this would involve entering every combination of numbers and punctuation that exists in the corpus, and that's unrealistic.
 
 Instead, we're going to make use of regular expressions. Direct students to this resource for learning more about regular expressions and how they're implemented in Python: https://docs.python.org/3/library/re.html. For now, though, go through the following code:
 
@@ -234,7 +234,7 @@ re_clean = regex.sub('', sentence)
 
 Regex substitution here takes two steps. In the first, we compile a pattern to match for. In this case, we want to match all characters that are not a letter or a space (denoted by the caret followed by lower and uppercase letters). In the second, we use the .sub() function to substitute out whatever matches that pattern in the string we want to clean. Important: stress to students that this step should occur **before** the text is word tokenized.
 
-Finally, have students take a look at the results of regex cleaning followed by the stopwording that we did before.
+Finally, have students take a look at the results of regex cleaning, followed by the stop wording that we did before.
 
 ![stopwords3](Images/stopwords3.PNG)
 
@@ -242,7 +242,7 @@ Finally, have students take a look at the results of regex cleaning followed by 
 
 ### 7. Student Do: Crude Stopwords (15 min)
 
-In this activity, students will practice creating a function that strips non-letter characters from a document and then applies stopwording.
+In this activity, students will practice creating a function that strips non-letter characters from a document and then applies to stop wording.
 
 **Instructions:**
 
@@ -260,19 +260,19 @@ In this activity, students will practice creating a function that strips non-let
 
 * [crude_stopwords.ipynb](Activities/04-Stu_Crude_Stopwords/Solved/crude_stopwords.ipynb)
 
-Reiterate that stopwording is very domain and circumstance specific. Using the same set of stopwords for every corpus is rarely a good idea. The NLTK set is a good start, but chances are that you'll want to augment it with your own set after inspecting the results.
+Reiterate that stop wording is very domain and circumstance specific. Using the same set of stopwords for every corpus is rarely a good idea. The NLTK set is a good start, but the chances are that you'll want to augment it with your own set after inspecting the results.
 
-Note the order in which we apply the regex cleaning, word tokenizing, and stopwording.
+Note the order in which we apply the regex cleaning, word tokenizing, and stop wording.
 
 ```python
 def clean_text(article):
-    sw = set(stopwords.words('english'))
-    regex = re.compile("[^a-zA-Z ]")
+ sw = set(stopwords.words('english'))
+ regex = re.compile("[^a-zA-Z ]")
 
-    re_clean = regex.sub('', article)
-    words = word_tokenize(re_clean)
-    output = [word.lower() for word in words if word.lower() not in sw]
-    return output
+ re_clean = regex.sub('', article)
+ words = word_tokenize(re_clean)
+ output = [word.lower() for word in words if word.lower() not in sw]
+ return output
 ```
 
 Read the list of additional words that we decided to drop in the second solved implementation. Ask students if they agree with these and which words they might add or drop from this list.
@@ -289,7 +289,7 @@ Tell students that the extent to which we want to add stopwords is a trade-off. 
 
 ### 10. Instructor Do: Lemmatization (5 min)
 
-Lemmatization is a technique that transforms various morphologies of a word into its base form. This may sound fancy, but it's pretty intuitive. If we're looking to summarize a document with the most frequent words in it, words like "stock" and "stocks" should, for the most part,  mean the same. This is also true for words like "run" and "ran." NLTK's lemmatizer takes words in different forms (past tense, plural, etc.) and transforms them to the base form (present tense, singular).
+Lemmatization is a technique that transforms various morphologies of a word into its base form. This may sound fancy, but it's pretty intuitive. If we're looking to summarize a document with the most frequent words in it, words like "stock" and "stocks" should, for the most part, mean the same. This is also true for words like "run" and "ran." NLTK's lemmatizer takes words in different forms (past tense, plural, etc.) and transforms them into the base form (present tense, singular).
 
 **Files:**
 
@@ -299,7 +299,7 @@ Note that the lemmatizer is smart enough to not only transform those words that 
 
 ![lemma1](Images/lemma1.PNG)
 
-The lemmatizer does not automatically lemmatize any part of speech; the default is noun, which means that plural forms will be transformed to singular. If you want to lemmatize verbs or adjectives, you can use the **pos** argument to change the default part of speech. So, changing pos to **a** for adjective allows us to lemmatize words like "greater" to their root, "great."
+The lemmatizer does not automatically lemmatize any part of speech; the default is a noun, which means that plural forms will be transformed into singular. If you want to lemmatize verbs or adjectives, you can use the **pos** argument to change the default part of speech. So, changing pos to **a** for adjective allows us to lemmatize words like "greater" to their root, "great."
 
 ![lemma2](Images/lemma2.PNG)
 
@@ -309,7 +309,7 @@ Note that it's possible to lemmatize every part of speech for any given word—a
 
 ### 11. Student Do: Lemmatize (15 min)
 
-In this activity, create a function that performs stopwording, regex cleaning of non-letter characters, word tokenizing, and lemmatization on each word in the article
+In this activity, create a function that performs stop wording, regex cleaning of non-letter characters, word tokenizing, and lemmatization on each word in the article
 
 **Instructions:**
 
@@ -327,24 +327,24 @@ In this activity, create a function that performs stopwording, regex cleaning of
 
 [lemmatize.ipynb](Activities/06-Stu_Lemmatize/Solved/lemmatize.ipynb)
 
-For this exercise, the key fact to note is the order in which we apply the various processing steps. Explain to students that it's usually appropriate to lemmatize before stopwording so that the different forms of stopwords are more likely to be caught.
+For this exercise, the key fact to note is the order in which we apply the various processing steps. Explain to students that it's usually appropriate to lemmatize before stop wording so that the different forms of stopwords are more likely to be caught.
 
 ```python
 def process_text(article):
-    sw = set(stopwords.words('english'))
-    regex = re.compile("[^a-zA-Z ]")
-    re_clean = regex.sub('', article)
-    words = word_tokenize(re_clean)
-    lem = [lemmatizer.lemmatize(word) for word in words]
-    output = [word.lower() for word in lem if word.lower() not in sw]
-    return output
+ sw = set(stopwords.words('english'))
+ regex = re.compile("[^a-zA-Z ]")
+ re_clean = regex.sub('', article)
+ words = word_tokenize(re_clean)
+ lem = [lemmatizer.lemmatize(word) for word in words]
+ output = [word.lower() for word in lem if word.lower() not in sw]
+ return output
 ```
 
 ---
 
 ### 13. Instructor Do: Ngram Counter (10 min)
 
-In this section, we introduce the idea of frequency analysis and ngrams. Like the terms we've thrown about earlier, these are fancy names for pretty basic concepts. Frequency analysis, at its simplest, is simply counting words and phrases. At the most basic level, the words that occur most often in a document (assuming they are not stopwords), will probably give you a good idea of what the document is about. This applies at the corpus level as well. Ngrams are multiple word sequences—the n stands for the number of consecutive words (or tokens) that are included. So a bigram, for example, is two consecutive tokens strung together. We can think of creating ngrams as another way of tokenizing a document.
+In this section, we introduce the idea of frequency analysis and ngrams. Like the terms we've thrown about earlier, these are fancy names for pretty basic concepts. Frequency analysis, at its simplest, is simply counting words and phrases. At the most basic level, the words that occur most often in a document (assuming they are not stopwords) will probably give you a good idea of what the document is about. This applies to the corpus level, as well. Ngrams are multiple word sequences—the n stands for the number of consecutive words (or tokens) that are included. So a bigram, for example, is two consecutive tokens strung together. We can think of creating ngrams as another way of tokenizing a document.
 
 **Files:**
 
@@ -405,44 +405,44 @@ In this activity, students will create a function that preprocesses and outputs 
 
 Open the solved notebook and explain the following:
 
-* We can quickly copy and paste from the previous activity in order to get a preprocessing function that can output lemmatized, stopworded, and tokenized words. We'll use this function as a helper in our main Counter functions.
+* We can quickly copy and paste from the previous activity in order to get a preprocessing function that can output lemmatized, stop worded, and tokenized words. We'll use this function as a helper in our main Counter functions.
 
 Go over the first word counter function below line by line, highlighting the following points:
 
-* Given a list of articles as a corpus, we have two options. We can either treat each article separately and clean and count words for each in turn, or we can combine all the articles into one big string and preprocess and count that string all at once. Since the latter is more efficient, both computationally and in terms of lines of code written, we choose that method, which is implemented in the function below.
+* Given a list of articles as a corpus, we have two options. We can either treat each article separately  clean and count words for each in turn or we can combine all the articles into one big string and preprocess and count that string all at once. Since the latter is more efficient, both computationally and in terms of lines of code written, we choose that method, which is implemented in the function below.
 
 ```python
 def word_counter(corpus):
-    # Combine all articles in corpus into one large string
-    big_string = ' '.join(corpus)
-    processed = process_text(big_string)
-    top_10 = dict(Counter(processed).most_common(10))
-    return pd.DataFrame(list(top_10.items()), columns=['word', 'count'])
+ # Combine all articles in corpus into one large string
+ big_string = ' '.join(corpus)
+ processed = process_text(big_string)
+ top_10 = dict(Counter(processed).most_common(10))
+ return pd.DataFrame(list(top_10.items()), columns=['word', 'count'])
 ```
 
-* The join() method can be used to combine multiple strings into one longer string.
+* The join() method can be used to combine multiple strings into one long string.
 
 * We next run the defined process_text function over this string to get the list of words needed for the Counter function. Once the most frequent words are selected with most_common, all we need to do is to put them into a DataFrame.
 
 * One way of transforming the dictionary is to turn it into a list of tuples first with the .items() method.
 
-* The bigram Counter function, shown below, is very similar. The difference is that nstead of going right to the Counter function after we preprocess the text, we apply the ngram function first, with 2 as the n argument.
+* The bigram Counter function, shown below, is very similar. The difference is that instead of going right to the Counter function after we preprocess the text, we apply the ngram function first, with two as the n argument.
 
 ```python
 def bigram_counter(corpus):
-    # Combine all articles in corpus into one large string
-    big_string = ' '.join(corpus)
-    processed = process_text(big_string)
-    bigrams = ngrams(processed, n=2)
-    top_10 = dict(Counter(bigrams).most_common(10))
-    return pd.DataFrame(list(top_10.items()), columns=['bigram', 'count'])
+ # Combine all articles in corpus into one large string
+ big_string = ' '.join(corpus)
+ processed = process_text(big_string)
+ bigrams = ngrams(processed, n=2)
+ top_10 = dict(Counter(bigrams).most_common(10))
+ return pd.DataFrame(list(top_10.items()), columns=['bigram', 'count'])
 ```
 
 ---
 
 ### 16. Instructor Do: Word Cloud (10 min)
 
-Frequency analysis is a useful technique, but counts of words or ngrams are difficult and boring to read through for an audience. If only there was a visualization that can achieve the same purpose, but with some color and flair. Enter word clouds! These visualizations are now pretty common and get their share of flack for not being the most rigorous of methods for visualizing text frequency, but there are still few better alternatives for quickly and viscerally summarizing a text.
+Frequency analysis is a useful technique, but counts of words or ngrams are difficult and boring to read through for an audience. If only there was a visualization that can achieve the same purpose, but with some color and flair. Enter the word clouds! These visualizations are now pretty common and get their share of flack for not being the most rigorous of methods for visualizing text frequency, but there are still few better alternatives for quickly and viscerally summarizing a text.
 
 **Files:**
 
@@ -450,20 +450,20 @@ Frequency analysis is a useful technique, but counts of words or ngrams are diff
 
 First, we need to import the word cloud library, which will do most of the heavy lifting for this activity. Note that we also import matplotlib's pyplot module; although we won't be using pyplot substantively, because the word cloud library is built on top of the matplotlib library, there are some useful matplotlib functions that we can use to create our word cloud.
 
-We can copy over most of the preprocessing code from previous activities. Alert students to one small but important change—whereas before we were returning a list of words, this time we want to return one string instead. So, as a last step, we use a join to create that string. We still want to lemmatize and stopword, so word tokenizing is necessary as an intermediate step. But, since the word cloud function takes only a single string as an argument, we must join these words back together in the preprocessing function.
+We can copy most of the preprocessing code from previous activities. Alert students to one small but important change—whereas before we were returning a list of words, this time, we want to return one string instead. So, as the last step, we use a join to create that string. We still want to lemmatize and stopword, so word tokenizing is necessary as an intermediate step. But, since the word cloud function takes only a single string as an argument, we must join these words back together in the preprocessing function.
 
 ```python
 def process_text(doc):
-    sw = set(stopwords.words('english'))
-    regex = re.compile("[^a-zA-Z ]")
-    re_clean = regex.sub('', doc)
-    words = word_tokenize(re_clean)
-    lem = [lemmatizer.lemmatize(word) for word in words]
-    output = [word.lower() for word in lem if word.lower() not in sw]
-    return ' '.join(output)
+ sw = set(stopwords.words('english'))
+ regex = re.compile("[^a-zA-Z ]")
+ re_clean = regex.sub('', doc)
+ words = word_tokenize(re_clean)
+ lem = [lemmatizer.lemmatize(word) for word in words]
+ output = [word.lower() for word in lem if word.lower() not in sw]
+ return ' '.join(output)
 ```
 
-Creating the word cloud itself is easy—two lines will do it. Tell students that the word cloud function does a lot of things in the background that we've done explicitly, like tokenizing and counting words, and then sizes each word that is displayed based on the frequency with which it appears in the text. Do the words that show up largest here make sense for the topic, "gold"? (It's possible that you'd want to add some additional stopwords here, since some of the largest words don't seem informative in this context.)
+Creating the word cloud itself is easy—two lines will do it. Tell students that the word cloud function does a lot of things in the background that we've done explicitly, like tokenizing and counting words, and then sizes each word that is displayed based on the frequency with which it appears in the text. Do the words that show up largest here make sense for the topic, "gold"? (It's possible that you'd want to add some additional stopwords here since some of the largest words don't seem informative in this context.)
 
 ![cloud1](Images/cloud1.PNG)
 
@@ -475,7 +475,7 @@ There are many ways to customize your word cloud. Some of the most basic include
 
 ### 17. Student Do: Gas Cloud (15 min)
 
-In this activity, students will  practice creating a word cloud from a subset of the Reuters Corpus.
+In this activity, students will practice creating a word cloud from a subset of the Reuters Corpus.
 
 **Instructions:**
 
@@ -495,23 +495,23 @@ In this activity, students will  practice creating a word cloud from a subset of
 
 Review the solved notebook cell by cell, pausing to ask students about their implementations when necessary.
 
-* To create a word cloud, students essentially need only to copy and paste code from the previous demo. Reiterate that sometimes we need to make small changes to our preprocess function depending on what the output is going to be used for. In this case, we need to join the output because the word cloud takes one string as input.
+* To create a word cloud, students essentially need only to copy and paste code from the previous demo. Reiterate that sometimes, we need to make small changes to our preprocess function depending on what the output is going to be used for. In this case, we need to join the output because the word cloud takes one string as input.
 
 Go over the challenge section next; ask students how they implemented it before reviewing the code.
 
-* We need to create bigrams in order to show them in a word cloud, but how can we do this if the word cloud module automatically word tokenizes any string we give it? One work-around is to use a character to join the two words of each bigram, essentially fooling the word cloud tokenizer to think that they are one word. Here, we use the underscore as the join character.
+* We need to create bigrams in order to show them in a word cloud, but how can we do this if the word cloud module automatically word tokenizes any string we give it? One workaround is to use a character to join the two words of each bigram, essentially fooling the word cloud tokenizer to think that they are one word. Here, we use the underscore as the join character.
 
 ```python
 def process_text_bg(doc):
-    sw = set(stopwords.words('english'))
-    regex = re.compile("[^a-zA-Z ]")
-    re_clean = regex.sub('', doc)
-    words = word_tokenize(re_clean)
-    lem = [lemmatizer.lemmatize(word) for word in words]
-    sw_words = [word.lower() for word in lem if word.lower() not in sw]
-    bigrams = ngrams(sw_words, 2)
-    output = ['_'.join(i) for i in bigrams]
-    return ' '.join(output)
+ sw = set(stopwords.words('english'))
+ regex = re.compile("[^a-zA-Z ]")
+ re_clean = regex.sub('', doc)
+ words = word_tokenize(re_clean)
+ lem = [lemmatizer.lemmatize(word) for word in words]
+ sw_words = [word.lower() for word in lem if word.lower() not in sw]
+ bigrams = ngrams(sw_words, 2)
+ output = ['_'.join(i) for i in bigrams]
+ return ' '.join(output)
 ```
 
 * Note that there are many "nonsense" bigrams prominent in this word cloud. Is this a case where adding stopwords can help?
