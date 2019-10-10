@@ -10,7 +10,7 @@ Quickly discuss the following before proceeding onward to the walk through:
 
 * Students should keep in mind the concept of inputs and outputs (I/O). This is because as data within the algorithmic trading application flows from start to finish, the underlying functions called therein will require inputs and return outputs according to their specific purposes.
 
-Open the solution file and wak through the following with the class:
+Open the solution file and walk through the following with the class:
 
 * 
 
