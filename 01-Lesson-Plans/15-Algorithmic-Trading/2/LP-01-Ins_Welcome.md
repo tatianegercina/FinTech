@@ -6,17 +6,27 @@
 
 Today's class will expand upon students' component knowledge of algorithmic trading and abstract one level higher to create a full-fledged trading framework encapsulated in a single application. In particular, students will learn how to wrap their previous code (data collection, signal generation, backtesting, evaluation, and dashboard creation) into functions that will be called via a single workflow. In other words, students' trading framework applications will automate the manual component calculations done in the previous class to produce an end-to-end trading dashboard containing all relevant metrics and functionality.
 
-In addition, students will not only learn how to "go live" with their trading frameworks by establishing a connection to an actual financial API such as the Kraken Cryptocurrency Exchange (which provides 24-hour market access and generous API request privileges), but also further their understanding of dataflows by implementing asynchronous tasks and streaming capabilities that allows for more robust trading dashboards that can update its underlying data without having to re-draw the overall dashboard each time.
+In addition, students will not only learn how to "go live" with their trading frameworks by establishing a connection to an actual financial API such as the Kraken Cryptocurrency Exchange (which provides 24-hour market access and generous API request privileges), but also further their understanding of dataflows by implementing asynchronous tasks and streaming capabilities that allows for a more robust trading dashboard that can update its underlying data without having to re-draw the overall dashboard each time.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Design an end-to-end workflow for a trading framework (data collection > signal generation > backtesting > evaluation > dashboard creation)
+* Design an end-to-end workflow for a trading framework (data collection > signal generation > backtesting > evaluation > dashboard creation).
 
-* Abstract their previous day's component algorithmic trading calculations into functions and execute an end-to-end implementation of a trading dashboard.
+* Abstract their previous day's algorithmic trading calculations into functions and execute an end-to-end implementation of a working trading framework.
 
-* 
+* Utilize live financial data by connecting their trading frameworks to the Kraken Cryptocurrency Exchange API.
+
+* Persist or save their trading data to a database such as sqlite.
+
+* Perform asynchronous tasks and loops using asyncio.
+
+* Implement asyncio with their trading frameworks to fetch data and update the dashboard in parallel.
+
+* Enhance their trading dashboards with data streaming capabilities.
+
+* Deploy their algorithmic trading application online via Heroku.
 
 ### Instructor Notes
 
@@ -34,7 +44,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 15.1 Slides]().
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 15.2 Slides]().
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
