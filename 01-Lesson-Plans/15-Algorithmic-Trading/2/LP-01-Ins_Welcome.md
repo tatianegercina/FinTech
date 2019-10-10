@@ -1,4 +1,4 @@
-## 15.2 Lesson Plan: An Algorithmic Trading Framework
+## 15.2 Lesson Plan: Egad! It's Alive!
 
 ---
 
