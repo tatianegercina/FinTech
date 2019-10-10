@@ -82,7 +82,7 @@ Ask if there are any questions before moving on.
 
 ### 2. Instructor Do: Neural Networks are Cool! (10 min)
 
-In this activity, students will be instrodu
+In this activity, students will be introduced to neural networks and some of their applications.
 
 Open the lesson slides and move to the _Neural Networks are Cool!_ section.
 
@@ -196,4 +196,114 @@ Answer any questions before moving on.
 
 ### 3. Instructor Do: Neuron's Anatomy (10 min)
 
-Op
+After going more in-depth with neural networks, this activity will explain to students how single artificial neurons work.
+
+Open the lesson slides. Move to the _Neuron's Anatomy_ section and highlight the following:
+
+* Neurons are the most fundamental units of a neural network.
+
+* In 1958, [Frank Rosenblatt](https://en.wikipedia.org/wiki/Frank_Rosenblatt), an American psychologist, proposed the classical perceptron model.
+
+* The model proposed by Rosenblatt was refined in 1969 by [Marvin Minsky](https://en.wikipedia.org/wiki/Marvin_Minsky) and [Seymour Papert](https://en.wikipedia.org/wiki/Seymour_Papert), who defined the first model of computational perceptron that is presented in the slides.
+
+  ![Perceptron](Images/perceptron.png)
+
+* The perceptron mimics the functioning of a biological neuron, it receives input data signals (_X<sub>n</sub>_) that can take boolean or numeric values.
+
+* Every input data signal is weighted according to the relevance of each one under the context of the problem the perceptron was designed.
+
+* The perceptron takes a weighted sum of the inputs and set the output as `1` only when the sum is more than an arbitrary threshold (theta - `θ`).
+
+* Theta is added as a special input labeled as _X<sub>0</sub>=1_ with the weight `-θ`, like it's shown in the figure above.
+
+After this brief technical introduction to the perceptron, continue with the following quotidian example to illustrate how the perceptron works.
+
+* Consider the task of predicting whether or not a person would watch a random movie on Netflix using the behavioral data available.
+
+* Let's assume the decision depends on `3` binary inputs (binary for simplicity).
+
+* In this perceptron model, _w<sub>0</sub>_ (our arbitrary threshold `θ`) is called the bias because it represents the prejudice that can influence the final decision.
+
+* A cinephile may have a low threshold and will be willing to watch any movie regardless of its genre, release date, or the awards the movie received (`θ = 0`).
+
+* In contrast, a father with two children who want to spend some time with them watching a movie may choose the latest children's film by default (`θ = 2`).
+
+* In the case of the father with two children, the model may give a lot of importance (high weight) to the `isNewRelease` and `isForChildren` inputs, and penalize the weights of the `isAwardWinning` input.
+
+* The key point is, the weights and the threshold (`θ` also referred as bias) will depend on the data available, the viewing history in this case.
+
+Continue to the slide entitled _The perceptron may be harsh_ and highlight the following:
+
+* In real life, if you want to choose a movie, you're not as strict as the perceptron could be. For example, if you base your decision only in one input variable, such as _isNewRelease_, the bias is set to `0.5` and _w<sub>1</sub> = 1_ then our perceptron would look as follows.
+
+  ![Harsh perceptron](Images/harsh_perceptron.png)
+
+* Using this model, the decision for a movie with `isNewRelease = 1` will be _Yes!_, and the decision for a movie with `isNewRelease = 0` will be _No!_. This decision may be too harsh since we are losing the chance of enjoying classic movies, or the Oscar awarded films from last year; this is where the activation function comes to the scene.
+
+Move to the slide entitled _Introducing the Activation Function_ and highlight the following:
+
+* The neurons we use nowadays to build neural networks are an updated version of the perceptron proposed in 1969.
+
+  ![Current neuron structure](Images/neuron_structure.jpg)
+
+* The difference is the **activation function** that adds a dose of reality to neurons decisions. It's a mathematical function with a characteristic _S-shaped_ curve, also called the sigmoid curve.
+
+  ![Sigmoid functions](Images/sigmoid_functions.png)
+
+* Using an activation function the output is a probability.
+
+* Instead of _yes/no_ decision, with an activation function, we get the probability of yes, similar to using logistic regression.
+
+* Following our example, using an activation function we can get a decision similar to real life, the final decision of watching a movie is a probability based on the input variables (what we know about the movie) and influenced by the bias (our personal preferences).
+
+Explain to students that now you are going to demo how a single neuron works using the _TensorFlow Playground_.
+
+Click on the [pre-configured link](https://playground.tensorflow.org/#activation=sigmoid&batchSize=10&dataset=gauss&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=1&seed=0.13671&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=true&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false) in the slide to open the _TensorFlow Playground_, slack out the link to students, and highlight the following.
+
+![tfp_home.png](Images/tfp_home.png)
+
+* [TensorFlow Playground](http://playground.tensorflow.org) is a website where users can train a neural network and visualize both the model creation process and the resulting predictions.
+
+* Take a moment to explain the layout of the page to the class.
+
+* Note the _play_ button in the top left corner of the page. Explain that clicking this starts training the network.
+
+  ![tf_play.png](Images/tf_play.png)
+
+* In the same row as the play button, there are dropdowns for **Learning Rate**; **Activation Function**; **Regularization**; etc. These options affect how quickly a network learns and influence the goodness of its predictions.
+
+* **Problem Type** is also on this row, and allows us to select whether we want the neural net to solve a regression or classification problem. We'll demonstrate a classification problem for now.
+
+* Below this row are headings for **Data**; **Features**; **Hidden Layers**; and **Output**.
+
+* Under **Data**, we can select the data set on which to train the model. The options are two-dimensional data, which are easy to visualize. The two blobs in the bottom left is selected for this demo.
+
+  ![two_blobs.png](Images/two_blobs.png)
+
+* The **Features** section allows the user to specify properties to look for in the input data and is also the input layer of neurons in the network. Each additional neuron that we add in this layer represents another feature of the data. We have three inputs for this demo to illustrate the movies' example.
+
+  ![Neuron's features](Images/neuron_features.png)
+
+* **Hidden Layers** are layers of neurons that take the output of the layer before them as inputs, allowing the network to identify "higher-order" patterns and correlations amongst input features. For now, we'll use only one hidden layer with a single neuron, which results in a very simple architecture.
+
+  ![tfp_hidden_layer.png](Images/tfp_hidden_layer.png)
+
+* Finally, note the **Output** image, which plots the network's decision boundaries and generates a chart of the loss function. As the neural net learns, the loss function will decrease, and the decision boundaries will shift. The faster the loss function decreases, the more efficient the model; the lower the loss function becomes, the better it performs.
+
+  ![Neuron's output](Images/neuron_output.png)
+
+* Emphasize that this data set is **linearly separable**; that is, we can easily draw a straight line between the two classes in this data.
+
+Click on the _Play_ button to start training the network, and call attention to the output image on the right-hand side of the page. Point out that, right after the play button is pressed, the fit _changed_ over time.
+
+* The network draws a linear decision boundary, as expected.
+
+  ![Neuron's demo](Images/tfp_neuron_demo.gif)
+
+Recall students that this isn't new, a variety of `sklearn` classifiers already covered in class can draw this boundary just fine. Logistic regression is one example.
+
+* This example shows that neural networks can easily solve linear problems, but doesn't demonstrate their efficacy at non-linear modeling problems.
+
+* The real power or neural networks can be seen when we add more than one neuron, especially dealing with non-linear data. This is going to be explored later in Today's class.
+
+Answer any questions before moving on.
