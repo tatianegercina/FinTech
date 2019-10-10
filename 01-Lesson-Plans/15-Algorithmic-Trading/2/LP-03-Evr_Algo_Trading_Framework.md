@@ -1,6 +1,6 @@
-### 3. Everyone Do: Trading Signals (10 mins)
+### 3. Everyone Do: Algorithmic Trading Framework (15 mins)
 
-In this activity, students will learn what differentiates technical analysis from fundamental analysis, what a technical indicator is, what trading signals are, and how to use these signals to devise a trading strategy (actions based on the occurrence of a trading signal). In particular, students will learn how to generate a dual moving average crossover trading signal, implement the logic/strategy to perform the buy or sell orders, and overlay the points at which the algorithm places the buy and sell orders on top of the plot for closing prices of AAPL stock.
+In this activity, instructors will guide students on how to begin encapsulating their trading calculations into trading functions that can be used in an algorithmic trading framework. The purpose of this activity is to port the functionality that was achieved in the previous class into an end-to-end implementation of an algorithmic trading dashboard.
 
 **Files:** [dual_ma_crossover.ipynb](Activities/02-Ins_Trading_Signals/Solved/dual_ma_crossover.ipynb)
 
