@@ -56,9 +56,9 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-In this section, students are introduced to algorithmic trading is and explain why it's useful for FinTech professionals. This section is a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and make participating in the market as easy as running a program.
+In this section, students will review the algorithmic trading concepts taught in the previous class to prepare them for today's consolidation of multiple trading functions (signal generation, backtesting, etc.) into a single trading framework. This section is a key opportunity to take a step back and understand the *process* of algorithmic trading, so as to later transition to the architecture or infrastructure of an algorithmic trading framework.
 
-Welcome students to the first day of algorithmic trading and explain the following:
+Welcome students to the second day of algorithmic trading and explain the following:
 
 * Introduce students to algorithmic trading first by explaining how cumbersome it can be to manually make trades. Explain that a typical day for traders involves:
 
