@@ -2,7 +2,7 @@
 
 It's time to start thinking about your new algorithmic trading application!
 
-To begin visualizing the process, think about what the correct order of the below functions should be and why.
+To begin visualizing the process for the trading framework, think about what the correct order of the below functions should be and why.
 
 ## Instructions
 
