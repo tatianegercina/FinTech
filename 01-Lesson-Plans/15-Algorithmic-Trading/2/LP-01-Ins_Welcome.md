@@ -78,7 +78,7 @@ Welcome students to the second day of algorithmic trading and quickly review the
 
 * What is a trading dashboard?
 
-  **Answer:** Like other dashboards, a *trading* dashboard consolidates and presents multiple facets of information pertaining to the performance of an algorithmic trading application, allowing a user to interact with the data via tables and plots (visualizations).
+  **Answer:** Like other dashboards, a *trading dashboard* consolidates and presents multiple facets of information pertaining to the performance of an algorithmic trading application, allowing a user to interact with the data via tables and plots (visualizations).
 
 Mention to students that going forward in today's class, they should not only keep in mind the distinct purposes or functions of each trading calculation, but the chronology and dependencies of each function as well.
 
