@@ -1,4 +1,4 @@
-# Trading Function Solution
+# Trading Function Solved
 
 1. initialize(): Initializes the trading framework, relevant data structures, and the dashboard.
 
