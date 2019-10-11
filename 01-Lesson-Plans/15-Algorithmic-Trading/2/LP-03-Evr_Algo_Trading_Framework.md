@@ -31,7 +31,7 @@ Open the solution file and walk through the following with the class:
   update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df)
   ```
 
-* Going in order, the first function is the `initialize` function, which initiates an `account` dictionary and executes another function `initialize_dashboard` to produce a dashboard object representing a loading screen for the trading framework. 
+* Going in order, the first function is the `initialize` function, which initiates an `account` dictionary and executes another function `initialize_dashboard` to produce a dashboard object representing a loading screen for the trading framework.
 
   **Note**: Keep in mind that depending on the execution time of the trading application, users may not see the loading screen and instead with simply see the end result of the dashboard where financial metrics and visualizations are displayed.
 
@@ -145,6 +145,149 @@ Open the solution file and walk through the following with the class:
     return signals_df
   ```
 
-* 
+* The `evaluate_metrics` function then takes the backtested signal data and calculates the corresponding portfolio and per-trade metrics.
+
+  ```python
+  def evaluate_metrics(signals_df):
+    """Evaluates metrics from backtested signal data"""
+    #### CALCULATE PORTFOLIO METRICS ####
+    # Initialize index and columns
+    metrics= ['Annual Return', 'Cumulative Returns', 'Annual Volatility', 'Sharpe Ratio', 'Sortino Ratio', 'Alpha', 'Beta']
+    columns = ['Backtest']
+
+    # Initialize the DataFrame with index set to evaluation metrics and column as `Backtest` (just like PyFolio)
+    portfolio_evaluation_df = pd.DataFrame(index=metrics, columns=columns)
+
+    # Assign evaluation metric values from backtest results
+    portfolio_evaluation_df.loc['Cumulative Returns'] = signals_df['Portfolio Cumulative Returns'][-1]
+
+    # Calculate annualized return
+    portfolio_evaluation_df.loc['Annual Return'] = ((1 + signals_df['Portfolio Daily Returns'].mean())**252 - 1)
+
+    # Calculate annual volatility
+    portfolio_evaluation_df.loc['Annual Volatility'] = ((1 + signals_df['Portfolio Daily Returns'].std())** 252 - 1)
+
+    # Calculate Sharpe Ratio
+    portfolio_evaluation_df.loc['Sharpe Ratio'] = (signals_df['Portfolio Daily Returns'].mean() * 252) / (signals_df['Portfolio Daily Returns'].std() * np.sqrt(252))
+
+    # Calculate Sortino Ratio
+    sortino_ratio_df = signals_df[['Portfolio Daily Returns']]
+    sortino_ratio_df['Downside Returns'] = 0
+    target = 0
+    sortino_ratio_df.loc[sortino_ratio_df['Portfolio Daily Returns'] < target, 'Downside Returns'] = sortino_ratio_df['Portfolio Daily Returns']**2
+    down_stdev = np.sqrt(sortino_ratio_df['Downside Returns'].mean())
+    expected_return = sortino_ratio_df['Portfolio Daily Returns'].mean()
+    sortino_ratio = expected_return/down_stdev
+    portfolio_evaluation_df.loc['Sortino Ratio'] = sortino_ratio
+
+    # Print the DataFrame
+    print(portfolio_evaluation_df)
+
+    #### CALCULATE TRADE METRICS ####
+    trade_evaluation_df = pd.DataFrame(
+        columns=[
+            'Stock',
+            'Entry Date',
+            'Exit Date',
+            'Shares',
+            'Entry Share Price',
+            'Exit Share Price',
+            'Entry Portfolio Holding',
+            'Exit Portfolio Holding',
+            'Profit/Loss'
+        ]
+    )
+
+    entry_date = ''
+    exit_date = ''
+    entry_portfolio_holding = 0
+    exit_portfolio_holding = 0
+    share_size = 0
+    entry_share_price = 0
+    exit_share_price = 0
+
+    for index, row in signals_df.iterrows():
+        if row['entry/exit'] == 1:
+            entry_date = index
+            entry_portfolio_holding = row['Portfolio Holdings']
+            share_size = row['Entry/Exit Position']
+            entry_share_price = row['close']
+
+        elif row['entry/exit'] == -1:
+            exit_date = index
+            exit_portfolio_holding = abs(row['close'] * row['Entry/Exit Position'])
+            exit_share_price = row['close']
+
+            profit_loss = exit_portfolio_holding - entry_portfolio_holding
+
+            trade_evaluation_df = trade_evaluation_df.append(
+                {
+                    'Stock': 'AAPL',
+                    'Entry Date': entry_date,
+                    'Exit Date': exit_date,
+                    'Shares': share_size,
+                    'Entry Share Price': entry_share_price,
+                    'Exit Share Price': exit_share_price,
+                    'Entry Portfolio Holding': entry_portfolio_holding,
+                    'Exit Portfolio Holding': exit_portfolio_holding,
+                    'Profit/Loss': profit_loss
+                },
+                ignore_index=True)
+
+    # Print the DataFrame
+    print(trade_evaluation_df)
+
+    return portfolio_evaluation_df, trade_evaluation_df
+  ```
+
+* Lastly, the `update_dashboard` function takes in the objects returned from the previous functions and builds the various figures and plots according to the data within each object, and finally updates the dashboard to show a trading dashboard with relevant financial metrics.
+
+  ```python
+  def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df):
+    """Updates the dashboard with widgets, plots, and financial tables"""
+    # Initialize static widgets
+    account_balance = pn.widgets.StaticText(name="Cash Balance", value=tested_signals_df['Portfolio Cash'][-1])
+    holding_value = pn.widgets.StaticText(name="Portfolio Holding", value=tested_signals_df['Portfolio Holdings'][-1])
+    total_portfolio_value = pn.widgets.StaticText(name="Total Portfolio Value", value=tested_signals_df['Portfolio Total'][-1])
+
+    # Create price plot of closing, SMA10, and SMA20
+    price_plot = tested_signals_df.hvplot.line(x='date', y=['close', 'SMA10', 'SMA20'], value_label='Price', width=1000, height=400, rot=90)
+
+    # Create portfolio metrics table
+    portfolio_evaluation_table = portfolio_evaluation_df.hvplot.table(columns=['index', 'Backtest'], width=300, height=400)
+
+    # Create trade metrics table
+    trade_evaluation_table = trade_evaluation_df.hvplot.table(
+        columns=[
+            'Stock',
+            'Entry Date',
+            'Exit Date',
+            'Shares',
+            'Entry Share Price',
+            'Exit Share Price',
+            'Entry Portfolio Holding',
+            'Exit Portfolio Holding',
+            'Profit/Loss'
+        ]
+    )
+
+    # Create rows
+    row_one = pn.Row(account_balance, holding_value, total_portfolio_value)
+    row_two = pn.Row(price_plot)
+    row_three = pn.Row(portfolio_evaluation_table, trade_evaluation_table)
+
+    # Create columns
+    column = pn.Column(row_one,
+                       row_two,
+                       row_three)
+
+    # Create tabs
+    tabs = pn.Tabs(("Summary", column))
+
+    # Assign tab to dashboard object
+    dashboard[0] = tabs
+
+    return
+  ```
 
 Ask if there are any questions before moving on.
