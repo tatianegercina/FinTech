@@ -22,7 +22,7 @@ Navigate to the **evaluation** slide of the Unit 15.1 slideshow. Communicate the
 
   * Sortino Ratio
 
-* These metrics can be calculated historically with backtesting, or they can be used to measure trades as they are made.
+* These metrics can be calculated historically with backtesting, or they can be used to measure future trades and opportunities for portfolio growth.
 
 Transition through a dry walk through of the code used to calculate each of these metrics. Open the solution, and highlight the following:
 
@@ -53,3 +53,29 @@ Transition through a dry walk through of the code used to calculate each of thes
     ```python
     sharpe_ratio = (signals_df['Portfolio Daily Returns'].mean() * 252) / (signals_df['Portfolio Daily Returns'].std() * np.sqrt(252))
     ```
+
+* Indicate that the downside returns, or downside deviation, metric is calculated by squaring daily returns less than 0.
+
+    ```python
+    sortino_ratio_df.loc[sortino_ratio_df['Portfolio Daily Returns'] < target, 'Downside Returns'] = sortino_ratio_df['Portfolio Daily Returns']**2
+    ```
+
+* Sortino ratios are calculated using the downside return. Sortino ratios are calculated by dividing the average daily return by the square root of the average downside return.
+
+    ```python
+    down_stdev = np.sqrt(sortino_ratio_df['Downside Returns'].mean())
+    expected_return = sortino_ratio_df['Portfolio Daily Returns'].mean()
+
+    sortino_ratio = expected_return/down_stdev
+    portfolio_evaluation_df.loc['Sortino Ratio'] = sortino_ratio
+    ```
+
+* Emphasize to students that they should dedicate time outside of class to conduct research on each individual metric to better understand how it can be applied to assess portfolio performance.
+
+If time remains, finish the walk through by reminding students that even trades and portfolios managed by algorithms need to be evaluated. Highlight the following:
+
+* Algorithms have to be tweaked and fine tuned over time, especially as trading strategies evolve or are replaced. Because a machine will be handling the trading process, it is imperative that the algorithm has metrics to use that will help measure performance, detect and mitigate risk, and track trends in returns on the fly.
+
+* Evaluation metrics are also important for traders to have available, even if a machine is doing all of the trading and calculations. By analyzing evaluation metrics, humans can spot nuances in the data that the algorithm might not have been programed/trained to detect. This could lead to new features for the algorithm, as well as increased investment opportunity for the trader.
+
+Ask if there are any questions before moving forward.
