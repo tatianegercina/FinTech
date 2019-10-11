@@ -89,6 +89,6 @@ Open the solution file and review the following:
 
   **Note:** The following functions return minimal/empty datasets due to the fact that the Kraken account used in this lesson is not funded with capital.
 
-  ![additional-functions](additional-functions.png)
+  ![additional-functions](Images/additional-functions.png)
 
 Answer any questions before moving on.
