@@ -12,7 +12,7 @@ Quickly discuss the following before proceeding onward to the walk through:
 
 Open the solution file and walk through the following with the class:
 
-* In accordance with the workflow showcased in the previous activity, the trading framework follows the following progression: initialize the account and dashboard objects; fetch data and generate signals; backtest and evaluate; and build the dashboard.
+* In accordance with the workflow showcased in the previous activity, the trading framework executes the following progression: initialize the account and dashboard objects; fetch data and generate signals; backtest signal data and evaluate metrics; and build the dashboard.
 
   ```python
   # Initialize account and dashboard objects
@@ -31,6 +31,28 @@ Open the solution file and walk through the following with the class:
   update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df)
   ```
 
-* 
+* Going in order, the first function is the `initialize` function, which initiates an `account` dictionary and executes another function `initialize_dashboard` to produce a dashboard object representing a loading screen for the trading framework.
+
+  ```python
+  def initialize(cash):
+    """Initialize the dashboard, data storage, and account balances."""
+    # Initialize account
+    account = {"balance": cash, "shares": 0}
+
+    # Initialize dashboard
+    dashboard = initialize_dashboard()
+
+    return account, dashboard
+  ```
+
+  ```python
+  def initialize_dashboard():
+    """Build the dashboard."""
+    loading_text = pn.widgets.StaticText(name="Trading Dashboard", value="Loading...")
+    dashboard = pn.Column(loading_text)
+    print("init dashboard")
+
+    return dashboard
+  ```
 
 Ask if there are any questions before moving on.
