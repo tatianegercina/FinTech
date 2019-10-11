@@ -240,7 +240,7 @@ Open the solution file and walk through the following with the class:
     return portfolio_evaluation_df, trade_evaluation_df
   ```
 
-* Lastly, the `update_dashboard` function takes in the objects returned from the previous functions and builds the various figures and plots according to the data within each object, and finally updates the dashboard to show a trading dashboard with relevant financial metrics.
+* Lastly, the `update_dashboard` function takes in the objects returned from the previous functions and builds the various figures and plots according to the data within each object--finally updating the dashboard to show a trading dashboard with relevant financial metrics.
 
   ```python
   def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df):
