@@ -57,6 +57,56 @@ Open the solution file and walk through the following with the class:
     return dashboard
   ```
 
+* Next, the trading application executes the `fetch_data` function to read a CSV from a local file and returns a DataFrame containing historical stock data.
+
+  ```python
+  def fetch_data():
+    """Fetches the latest prices."""
+    # Set the file path
+    filepath = Path("../Resources/aapl.csv")
+
+    # Read the CSV located at the file path into a Pandas DataFrame
+    data_df = pd.read_csv(filepath)
+
+    # Print the DataFrame
+    print(data_df)
+
+    return data_df
+  ```
+
+* After data has been fetched, the `generate_signal` function uses the DataFrame from the `fetch_data` function as its own input, generating a signal based off a dual moving average crossover strategy and returns a DataFrame containing signal data.
+
+  ```python
+  def generate_signal(data_df):
+    """Generates trading signals for a given dataset."""
+    # Set window
+    short_window = 10
+    long_window = 20
+
+    # Set up the signals DataFrame
+    signals = data_df.copy()
+    signals["date"] = pd.to_datetime(signals["date"], infer_datetime_format=True)
+    signals = signals.set_index("date", drop=True)
+    signals["signal"] = 0.0
+
+    # Generate the short and long moving averages
+    signals["SMA10"] = signals["close"].rolling(window=short_window).mean()
+    signals["SMA20"] = signals["close"].rolling(window=long_window).mean()
+
+    # Generate the trading signal 0 or 1,
+    signals["signal"][short_window:] = np.where(
+        signals["SMA10"][short_window:] > signals["SMA20"][short_window:], 1.0, 0.0
+    )
+
+    # Calculate the points in time at which a position should be taken, 1 or -1
+    signals["entry/exit"] = signals["signal"].diff()
+
+    # Print the DataFrame
+    print(signals)
+
+    return signals
+  ```
+
 * 
 
 Ask if there are any questions before moving on.
