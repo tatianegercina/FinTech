@@ -81,8 +81,14 @@ Open the solution file and review the following:
   }
   ```
 
-* To view the list of available functions for the current exchange, display the results of the `has` instance variable from the current exchange object. Functions are indicated as available based on a boolean or True/False.
+* To view the list of available functions for an exchange, display the results of the `has` instance variable from the current exchange object. Functions are indicated as available based on a Boolean such as True or False.
 
   ![exchange-has](Images/exchange-has.png)
+
+* While today's lesson only focuses on fetching pricing data from the Kraken API, the CCXT library also allows a user to perform tasks such as checking account balances/status, fetching any open orders, or even placing and executing trades.
+
+  **Note:** The following functions return minimal/empty datasets due to the fact that the Kraken account used in this lesson is not funded with capital.
+
+  ![additional-functions](additional-functions.png)
 
 Answer any questions before moving on.
