@@ -26,4 +26,8 @@ Open the solution file and review the following:
 
   ![kraken-cryptos](Images/kraken-cryptos.png)
 
+* After loading the market data for the Kraken exchange and importing the data as a Pandas DataFrame, a quick print of the column values shows that there are (as of this writing) 110 available cryptocurrencies for trading on the Kraken exchange.
+
+  ![kraken-crypto-symbols](Images/kraken-crypto-symbols.png)
+
 Answer any questions before moving on.
