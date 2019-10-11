@@ -1,4 +1,4 @@
-### 4. Instructor Do: Going Live with CCXT (5 min)
+### 4. Instructor Do: Going Live with CCXT (15 min)
 
 In this section, students will become familiar with the expansive CCXT library which abstracts upon a collection of available cryptocurrency exchange APIs and provides unified functions to simplify API calls when switching from different cryptocurrency exchange APIs. In particular, students will work with the Kraken API and extract both historical and current price data.
 
