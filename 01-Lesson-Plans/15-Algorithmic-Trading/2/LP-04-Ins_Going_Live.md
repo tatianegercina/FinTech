@@ -40,4 +40,14 @@ Open the solution file and review the following:
 
   ![convert-epoch-timestamp-ms](Images/convert-epoch-timestamp-ms.png)
 
+* In order to fetch the latest pricing data for `BTC/USD`, the `fetch_ticker` function should be used. Make sure to drop the `info` column as the subsequent import to a Pandas DataFrame will produce multiple records due to the nested object nature of the `info` column, and in this case only one record is desired.
+
+  ![kraken-btc-usd-current-price](Images/kraken-btc-usd-current-price.png)
+
+  ![ticker-structure](Images/ticker-structure.png)
+
+* To view the list of available functions for the current exchange, display the results of the `has` instance variable from the current exchange object. Functions are indicated as available based on a boolean or True/False.
+
+  ![exchange-has](Images/exchange-has.png)
+
 Answer any questions before moving on.
