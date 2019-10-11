@@ -6,6 +6,24 @@ In this section, students will become familiar with the expansive CCXT library w
 
 Open the solution file and review the following:
 
-*
+* Because CCXT is a collection of multiple APIs under the hood, when choosing to connect to a particular exchange such as Kraken, the credentials for that particular exchange must be set. In this case, the public and private keys for the Kraken API are imported from the `KRAKEN_PUBLIC_KEY` and `KRAKEN_SECRET_KEY` environment variables and set to the `kraken` class of the CCXT library.
+
+  ```python
+  # Import environment variables
+  kraken_public_key = os.getenv('KRAKEN_PUBLIC_KEY')
+  kraken_secret_key = os.getenv('KRAKEN_SECRET_KEY')
+  ```
+
+  ```python
+  # Set the public and private keys for the API
+  exchange = ccxt.kraken({
+    'apiKey': kraken_public_key,
+    'secret': kraken_secret_key,
+  })
+  ```
+
+* In most cases, CCXT requires that a user must load the list available markets and trading symbols prior to accessing other API functions for an exchange. This can be set either explicitly or automatically by CCXT when it detects that a user has not initiated the `load_markets` function when the first unified API call is made.
+
+  ![kraken-cryptos](Images/kraken-cryptos.png)
 
 Answer any questions before moving on.
