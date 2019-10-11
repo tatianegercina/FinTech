@@ -31,7 +31,9 @@ Open the solution file and walk through the following with the class:
   update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df)
   ```
 
-* Going in order, the first function is the `initialize` function, which initiates an `account` dictionary and executes another function `initialize_dashboard` to produce a dashboard object representing a loading screen for the trading framework. Keep in mind that depending on the execution time of the trading application, users may not see the loading screen and instead with simply see the end result of the dashboard where financial metrics and visualizations are displayed.
+* Going in order, the first function is the `initialize` function, which initiates an `account` dictionary and executes another function `initialize_dashboard` to produce a dashboard object representing a loading screen for the trading framework. 
+
+  **Note**: Keep in mind that depending on the execution time of the trading application, users may not see the loading screen and instead with simply see the end result of the dashboard where financial metrics and visualizations are displayed.
 
   ```python
   def initialize(cash):
