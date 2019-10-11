@@ -307,3 +307,9 @@ Recall students that this isn't new, a variety of `sklearn` classifiers already 
 * The real power or neural networks can be seen when we add more than one neuron, especially dealing with non-linear data. This is going to be explored later in Today's class.
 
 Answer any questions before moving on.
+
+### 4. Everyone Do: Activating your first artificial neuron (15 min)
+
+**Files:**
+
+* [starter-code.js](Activities/02-Stu_Practice/Unsolved/starter-code.js)
