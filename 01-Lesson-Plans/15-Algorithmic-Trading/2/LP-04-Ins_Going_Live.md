@@ -34,7 +34,19 @@ Open the solution file and review the following:
 
   ![kraken-btc-usd-historical-prices](Images/kraken-btc-usd-historical-prices.png)
 
-  ![ohlcv-structure](Images/ohlcv-structure.png)
+  ```python
+  [
+    [
+        1504541580000, // UTC timestamp in milliseconds, integer
+        4235.4,        // (O)pen price, float
+        4240.6,        // (H)ighest price, float
+        4230.0,        // (L)owest price, float
+        4230.7,        // (C)losing price, float
+        37.72941911    // (V)olume (in terms of the base currency), float
+    ],
+    ...
+  ]
+  ```
 
 * The `timestamp` data from the `fetch_ohlcv` function is returned in *Epoch time* or *Unix time* format, which is the number of seconds (or in this case milliseconds) since the origin point in time known as the *Unix epoch*. Therefore, in order to convert epoch timestamps to a readable date format, the `to_datetime` function with the `unit` parameter should be used.
 
@@ -44,7 +56,30 @@ Open the solution file and review the following:
 
   ![kraken-btc-usd-current-price](Images/kraken-btc-usd-current-price.png)
 
-  ![ticker-structure](Images/ticker-structure.png)
+  ```python
+  {
+    'symbol':        string symbol of the market ('BTC/USD', 'ETH/BTC', ...)
+    'info':        { the original non-modified unparsed reply from exchange API },
+    'timestamp':     int (64-bit Unix Timestamp in milliseconds since Epoch 1 Jan 1970)
+    'datetime':      ISO8601 datetime string with milliseconds
+    'high':          float, // highest price
+    'low':           float, // lowest price
+    'bid':           float, // current best bid (buy) price
+    'bidVolume':     float, // current best bid (buy) amount (may be missing or undefined)
+    'ask':           float, // current best ask (sell) price
+    'askVolume':     float, // current best ask (sell) amount (may be missing or undefined)
+    'vwap':          float, // volume weighed average price
+    'open':          float, // opening price
+    'close':         float, // price of last trade (closing price for current period)
+    'last':          float, // same as `close`, duplicated for convenience
+    'previousClose': float, // closing price for the previous period
+    'change':        float, // absolute change, `last - open`
+    'percentage':    float, // relative change, `(change/open) * 100`
+    'average':       float, // average price, `(last + open) / 2`
+    'baseVolume':    float, // volume of base currency traded for last 24 hours
+    'quoteVolume':   float, // volume of quote currency traded for last 24 hours
+  }
+  ```
 
 * To view the list of available functions for the current exchange, display the results of the `has` instance variable from the current exchange object. Functions are indicated as available based on a boolean or True/False.
 
