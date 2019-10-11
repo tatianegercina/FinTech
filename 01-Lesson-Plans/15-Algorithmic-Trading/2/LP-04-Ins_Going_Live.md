@@ -30,10 +30,14 @@ Open the solution file and review the following:
 
   ![kraken-crypto-symbols](Images/kraken-crypto-symbols.png)
 
-* The `fetch_ohlcv` function can be used to fetch the candlestick bar data for `BTC/USD`, which returns a list of lists containing records with `timestamp`, `open`, `high`, `low`, `close`, and `volume` data points. As a result, when importing data into a Pandas DataFrame, column names will need to be specified according to the structure dictated by the CCXT documentation.
+* The `fetch_ohlcv` function can be used to fetch the candlestick bar data for `BTC/USD`, which returns a list of lists containing records with `timestamp`, `open`, `high`, `low`, `close`, and `volume` data points. As a result of the lack of key-value pairs, when importing data into a Pandas DataFrame, column names will need to be specified according to the structure dictated by the CCXT documentation.
 
   ![kraken-btc-usd-historical-prices](Images/kraken-btc-usd-historical-prices.png)
 
   ![ohlcv-structure](Images/ohlcv-structure.png)
+
+* The `timestamp` data from the `fetch_ohlcv` function is returned in *Epoch time* or *Unix time* format, which is the number of seconds (or in this case milliseconds) since the origin point in time known as the *Unix epoch*. Therefore, in order to convert epoch timestamps to a readable date format, the `to_datetime` function with the `unit` parameter should be used.
+
+  ![convert-epoch-timestamp-ms](Images/convert-epoch-timestamp-ms.png)
 
 Answer any questions before moving on.
