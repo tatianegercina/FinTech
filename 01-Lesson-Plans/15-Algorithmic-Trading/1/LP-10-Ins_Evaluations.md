@@ -72,7 +72,7 @@ Transition through a dry walk through of the code used to calculate each of thes
 
 * Emphasize to students that they should dedicate time outside of class to conduct research on each individual metric to better understand how it can be applied to assess portfolio performance.
 
-If time remains, finish the walk through by reminding students that even trades and portfolios managed by algorithms need to be evaluated. Highlight the following:
+If time remains, finish the walk through by reminding students that even when trading with an algorithm, trades and portfolios need to be evaluated. Algorithms are not infallible. Touch upon the following:
 
 * Algorithms have to be tweaked and fine tuned over time, especially as trading strategies evolve or are replaced. Because a machine will be handling the trading process, it is imperative that the algorithm has metrics to use that will help measure performance, detect and mitigate risk, and track trends in returns on the fly.
 
