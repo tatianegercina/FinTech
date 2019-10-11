@@ -23,6 +23,5 @@
   "git.autofetch": true,
   "editor.tabSize": 2,
   "python.linting.pylintEnabled": true,
-  "python.linting.enabled": true,
-  "python.pythonPath": "/anaconda3/envs/dev/bin/python"
+  "python.linting.enabled": true
 }
