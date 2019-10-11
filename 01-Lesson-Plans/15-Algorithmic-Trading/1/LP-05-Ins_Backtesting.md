@@ -2,23 +2,17 @@
 
 In this activity, students will learn how to test the performance of an algorithmic trading strategy using historical stock data, a process otherwise known as backtesting. In particular, students will use historical stock data to measure the profit/loss of executed trades for a given trading strategy and visualize the overall change in portfolio value over time.
 
-**Files:**
+**Files:** [backtesting.ipynb](Activities/04-Ins_Backtesting/Solved/backtesting.ipynb)
 
-* [backtesting.ipynb](Activities/04-Ins_Backtesting/Solved/backtesting.ipynb)
+First, present the following discussion points and use the below questions and answers to elicit student engagement:
 
-First, present the following questions and answers:
+* Backtesting is the process for measuring the overall performance of a trading strategy using historical stock prices to simulate executed trades dictated by the calculated trading signals and trade decision logic.
 
-* What is backtesting?
-
-  **Answer:** Backtesting is the process for measuring the overall performance of a trading strategy using historical stock prices to simulate executed trades dictated by the calculated trading signals and trade decision logic.
-
-* Why is backtesting important?
+* Ask students to take a guess at why backtesting is important?
 
   **Answer:** Backtesting helps to assess the validity or profitability of a trading strategy over time and provides a benchmark for how it may perform going forward.
 
-* How reliable is backtesting?
-
-  **Answer:** While backtesting is important, the results of the backtest correspond to historical prices and not future prices. Therefore, backtesting may provide a reliable benchmark for the stock prices that have already occurred, but may prove to be less reliable as new stock data arises.
+* Underscore to students that while backtesting is important, the results of the backtest correspond to historical prices and not future prices. Therefore, backtesting may provide a reliable benchmark for the stock prices that have already occurred, but may prove to be less reliable as new stock data arises.
 
 Next, open the solution file and present the following:
 
@@ -26,9 +20,11 @@ Next, open the solution file and present the following:
 
   ![strategy-to-backtest](Images/strategy-to-backtest.png)
 
-* Oftentimes, backtesting is a functionality already provided by algorithmic trading frameworks such as Quantopian's `zipline` library; however, performing manual backtesting can be just as easy if we understand the steps. Notice the minimal lines of code to achieve this functionality!
+* Backtesting is commonly implemented using third party libraries like Quantopian's `zipline` library; however, performing manual backtesting can be just as easy if we understand the steps. Notice the minimal lines of code to achieve this functionality!
 
   ![manual-backtesting](Images/manual-backtesting.png)
+
+Walk students through each step required to implement manual backtesting. Highlight the following:
 
 * First, we will want to set an initial capital allocation for our backtesting simulation. More often than not, an arbitrary value of $100,000 is chosen as the starting value.
 
@@ -49,7 +45,7 @@ Next, open the solution file and present the following:
 
   ![active-positions](Images/active-positions.png)
 
-* Similar to using the `diff` function on the `Signal` column to calculate entry and exit points, using the `diff` function on the `Position` column calculates the entry and exit points for the specified share size, in this case 500 shares. 
+* Similar to using the `diff` function on the `Signal` column to calculate entry and exit points, using the `diff` function on the `Position` column calculates the entry and exit points for the specified share size, in this case 500 shares.
 
   ```python
   # Find the points in time where a 500 share position is bought or sold
