@@ -32,8 +32,8 @@ Open the solution file and review the following:
 
 * The `fetch_ohlcv` function can be used to fetch the candlestick bar data for `BTC/USD`, which returns a list of lists containing records with `timestamp`, `open`, `high`, `low`, `close`, and `volume` data points. As a result, when importing data into a Pandas DataFrame, column names will need to be specified according to the structure dictated by the CCXT documentation.
 
-  ![kraken-btc-usd-historical-prices](Images/kraken-btc-usd-historical-prices)
+  ![kraken-btc-usd-historical-prices](Images/kraken-btc-usd-historical-prices.png)
 
-  ![ohlcv-structure](ohlcv-structure.png)
+  ![ohlcv-structure](Images/ohlcv-structure.png)
 
 Answer any questions before moving on.
