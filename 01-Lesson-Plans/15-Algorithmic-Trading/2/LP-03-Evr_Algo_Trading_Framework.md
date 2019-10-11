@@ -107,6 +107,44 @@ Open the solution file and walk through the following with the class:
     return signals
   ```
 
+* Using the DataFrame containing signal data, the `execute_backtest` function backtests the signal data and returns a DataFrame of running portfolio balances for a proposed initial capital allocation and share size.
+
+  ```python
+  def execute_backtest(signals_df):
+    """Executes a backtest on trading signal data."""
+    # Set initial capital
+    initial_capital = float(100000)
+
+    # Set the share size
+    share_size = 500
+
+    # Take a 500 share position where the dual moving average crossover is 1 (SMA50 is greater than SMA100)
+    signals_df['Position'] = share_size * signals_df['signal']
+
+    # Find the points in time where a 500 share position is bought or sold
+    signals_df['Entry/Exit Position'] = signals_df['Position'].diff()
+
+    # Multiply share price by entry/exit positions and get the cumulatively sum
+    signals_df['Portfolio Holdings'] = signals_df['close'] * signals_df['Entry/Exit Position'].cumsum()
+
+    # Subtract the initial capital by the portfolio holdings to get the amount of liquid cash in the portfolio
+    signals_df['Portfolio Cash'] = initial_capital - (signals_df['close'] * signals_df['Entry/Exit Position']).cumsum()
+
+    # Get the total portfolio value by adding the cash amount by the portfolio holdings (or investments)
+    signals_df['Portfolio Total'] = signals_df['Portfolio Cash'] + signals_df['Portfolio Holdings']
+
+    # Calculate the portfolio daily returns
+    signals_df['Portfolio Daily Returns'] = signals_df['Portfolio Total'].pct_change()
+
+    # Calculate the cumulative returns
+    signals_df['Portfolio Cumulative Returns'] = (1 + signals_df['Portfolio Daily Returns']).cumprod() - 1
+
+    # Print the DataFrame
+    print(signals_df)
+
+    return signals_df
+  ```
+
 * 
 
 Ask if there are any questions before moving on.
