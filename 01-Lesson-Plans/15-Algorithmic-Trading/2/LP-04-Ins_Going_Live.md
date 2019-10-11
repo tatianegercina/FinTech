@@ -1,4 +1,4 @@
-### 1. Instructor Do: Welcome Class (5 min)
+### 4. Instructor Do: Going Live (5 min)
 
 In this section, students will review the algorithmic trading concepts taught in the previous class to prepare them for today's consolidation of multiple trading functions (signal generation, backtesting, trade evaluation, etc.) into a single trading framework. This section is a key opportunity to take a step back and understand the *process* of algorithmic trading, so as to later transition to the architecture or infrastructure of an algorithmic trading framework.
 
