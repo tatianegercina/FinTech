@@ -310,6 +310,135 @@ Answer any questions before moving on.
 
 ### 4. Everyone Do: Activating your first artificial neuron (15 min)
 
+In this activity, students are introduced to Keras and they will use this library to start building neural networks..
+
 **Files:**
 
-* [starter-code.js](Activities/02-Stu_Practice/Unsolved/starter-code.js)
+* [artificial-neuron.ipynb](Activities/1-Evr_Keras_Intro/Solved/artificial-neuron.ipynb)
+
+Open the lesson slides, go to the _Activating Your First Artificial Neuron_ section and highlight the following:
+
+* There are two ways to code a neuron:
+
+  * You can do all the math behind and code it using Python, Pandas and NumPy.
+
+  * You can use an industry standard API or framework to speed up your implementation and focus your efforts in improving your model and have a better understanding of the business problem you want to solve.
+
+* We are going to use [TensorFlow](https://www.tensorflow.org/) and [Keras](https://keras.io/) to build our Neural Networks.
+
+* TensorFlow is an end-to-end open source platform for machine learning, that allows us to run our code across multiple platforms in a highly efficient way.
+
+* Keras is an abstraction layer on top of TensorFLow that makes it easier to build models. You can relate this to using Plotly Express to build charts instead of using the more verbose Matplotlib library.
+
+* Using Keras and TensorFlow we can use the standard `model -> fit -> predict` interface that students are used to seeing.
+
+Ask students if they have already installed TensorFlow, if there are some students who don't, slack out the [installation guide](../Supplemental/deep_learning_installation_guide.md) and have your TAs to assist students in the process while you continue to the demo.
+
+This demo is an _Everyone Do_ activity where students are encourage to follow your steps as you code, slack out the unsolved version of the Jupyter notebook before continue.
+
+Open the unsolved version of the Jupyter notebook, explain to students that you are going to demo how a neural network with a single neuron can be made using Keras, encourage the class to replicate your live coding and highlight the following:
+
+* We are going to use Keras through TensorFlow, so we import the Keras modules as follows:
+
+  ```python
+  from tensorflow.keras.models import Sequential
+  from tensorflow.keras.layers import Dense
+  ```
+
+* There are two types of models in Keras.
+
+  * The `Sequential` model is a linear stack of layers, where data flows from layer to the next as we seen in the TensorFlow playground.
+
+  * The functional `Model` class, allows the creation of complex and more customizable models.
+
+* The `Sequential` model is going to be used in this class.
+
+* The `Dense` class is used to add layers to the neural network.
+
+Explain to students, that we will start coding a neural network with a single neuron, to solve a binary classification problem similar to the example presented in the TensorFlow playground demo.
+
+* A dummy dataset is created for this demo using the `make_blobs` function from `sklearn`.
+
+  ```python
+  X, y = make_blobs(n_samples=1000, centers=2, n_features=2, random_state=78)
+  ```
+
+* This dummy dataset contains 1000 samples with two features thar are split in two groups.
+
+* A DataFrame is created with the dummy data to create a plot using `hvplot`.
+
+  ```python
+  # Creating a DataFrame with the dummy data
+  df = pd.DataFrame(X, columns=["Feature 1", "Feature 2"])
+  df["Target"] = y
+
+  # Plotting the dummy data
+df.hvplot.scatter(x="Feature 1", y="Feature 2", by="Target")
+  ```
+
+  ![Two blobs dummy data](Images/neuron-two-blobs.png)
+
+* As we did with other machine learning algorithms, the data is split intro training and testing datasets.
+
+  ```python
+  X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
+  ```
+
+Explain to students that before using a neural network, it's important to normalize or standardize the data.
+
+* The `StandardScaler` is used to scale the features data. There is no need to scale the target data (`y`) since it's already encoded as `0` and `1`.
+
+  ```python
+  # Create scaler instance
+  X_scaler = StandardScaler()
+
+  # Fit the scaler
+  X_scaler.fit(X_train)
+
+  # Scale the data
+  X_train_scaled = X_scaler.transform(X_train)
+  X_test_scaled = X_scaler.transform(X_test)
+  ```
+
+Once the data is scaled, explain to students that now we are going to create our first neural network.
+
+* An instance of the `Sequential` model is created in the `neuron` variable.
+
+  ```python
+  neuron = Sequential()
+  ```
+
+* The `neuron` variable will store the architecure of our model.
+
+* The next step is to add the first layer of our neural network using the `add()` method and the `Dense()` class.
+
+  ![First Layer](Images/tensorflow-neuron-layer-1.png)
+
+  ```python
+  # First layer
+  number_inputs = 2
+  number_hidden_nodes = 1
+
+  neuron.add(Dense(units=number_hidden_nodes, activation="relu", input_dim=number_inputs))
+  ```
+
+Explain to students, that as it was mentioned before, the `Dense()` class is used to add layers to the neural networks; since this is the first layer, we define the number of inputs in the `input_dim` parameter and the number of neurons in the first hidden layer in the `units` parameter.
+
+* The `activation` parameter, defines the activation function that is going to be used to process the values of the input features as they are passed to the first hidden layer. In this demo, the [rectified linear unit (relu) function is used](https://keras.io/activations/#relu).
+
+* It's recommendable to add an activation function in this first layer, to add non-linearity to our network and enable it to learn non-linear relationships while the neural network is trained.
+
+* We finish creating our neural network by adding the output layer.
+
+  ![Output layer](Images/tensorflow-neuron-output-layer.png)
+
+  ```python
+  # Output layer
+  number_classes = 1
+
+  neuron.add(Dense(units=number_classes, activation="sigmoid"))
+  ```
+
+* We use the `sigmoid` activation function in this layer, since this is the output layer, there are no inputs to define, we only specify the number of `units` we want.
+
+*
