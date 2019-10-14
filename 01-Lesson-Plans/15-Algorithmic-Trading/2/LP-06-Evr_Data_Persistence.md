@@ -1,8 +1,8 @@
 ### 5. Student Do: Going Live with CCXT (15 mins)
 
-In this activity, students will now get the chance to connect their algorithmic trading applications to the Kraken cryptocurrency exchange. In particular, rather than read data locally from a CSV file, students will modify their `fetch_data` functions to connect to Kraken via the CCXT library and read historical pricing data for BTC/USD.
+In this activity, students will now get the chance to connect their algorithmic trading applications to the Kraken cryptocurrency exchange as well as transition from a batch processing data load paradigm (data retrieved all at once) to that of real-time (data retrieved every second). For example, rather than read historical data locally from a CSV file, students will modify their `fetch_data` functions to connect to Kraken via the CCXT library and read *current* pricing data for BTC/USD every second.
 
-The purpose of this activity is to showcase the "plug-and-play" feature of a framework. In other words, as long as the work flow of the overall framework remains consistent, individual components of the framework, such as the `fetch_data` function, can be modified to fit distinct needs.
+The purpose of this activity is to not only showcase the "plug-and-play" feature of a framework--where as long as the work flow of the overall framework remains consistent, individual components of the framework, such as the `fetch_data` function, can be modified to fit distinct needs--but also note the differences between handling data in batches as opposed to real-time or streaming data.
 
 **File:**
 
@@ -82,6 +82,7 @@ Open the solution file and review the following:
   ![trading-dashboard-off-metrics](Images/trading-dashboard-off-metrics.png)
 
 * In order to calculate the correct share size, the running cash balance should be divided by the running closing price of BTC/USD and rounded *down* to the nearest integer; however, due to the current nature of the 
+
 
   ```python
   # Set the share size
