@@ -18,8 +18,14 @@ Open the solution, and explain the following:
 
 * Evaluation metrics should be used to gauge algorithm performance. Commonly used evaluation metrics include cumulative returns, annualized returns, annual volatility, Sharpe ratio, and Sortino ratio.
 
-* Remind students that even though algorithms can perform faster than humans, without emotional or mental fatigue, algorithms still need to be evaluated for performance. Explain that the best case scenario is to have the algorithm calculate and monitor evaluation metrics to help making decisions regarding when to buy and sell.
+  ![eval_metrics_function.png](Images/eval_metrics_function.png)
 
-* X can also be used for Z.
+* Remind students that even though algorithms can perform more effectively and efficiently than humans (without emotional or mental fatigue), algorithms still need to be evaluated for performance. This will ensure the algorithm is trading with the most optimal configurations.
+
+* Explain that the common practice is to have the algorithm calculate and monitor evaluation metrics to help making decisions regarding when to buy and sell. This removes the need for manual calculations, and it also provides the opportunity for the evaluation metrics to be tracked in real time as stock prices fluctuate and trades are executed.
+
+Dedicate the remaining time to student questions. Encourage students to ask any questions regarding the different evaluation metrics, how they're used, or why they are used.
+
+* Pull up the [evaluations calculation guide](../Supplemental/EvaluationsCalculationGuide.md) as an anchor for the question session. This will give students the ability to call out specific aspects of the metrics that may be confusing or unclear.
 
 Ask for any remaining questions before moving on.
