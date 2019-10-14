@@ -1,6 +1,6 @@
 ### 10. Instructor Do: Evaluations (10 min)
 
-Students will receive a dry walk through of the various evaluation metrics that can be used to evaluate their trading algorithms. This will include revisiting metrics such as cumulative returns and sharpe ratios, as well as new metrics such as the sortino ratio. The instructor will explain how the metrics are calculated and how they are used.
+Students will receive a dry walk through of the various evaluation metrics that can be used to evaluate their trading algorithms. This will include revisiting metrics such as cumulative returns and sharpe ratios, as well as new metrics such as the Sortino ratio. The instructor will explain how the metrics are calculated and how they are used.
 
 **Files:** [trading_algorithm_evaluation.ipynb](Activities/06-Ins_Evaluations/Solved/trading_algorithm_evaluation.ipynb)
 
@@ -8,19 +8,17 @@ Navigate to the **evaluation** slide of the Unit 15.1 slideshow. Communicate the
 
 * Evaluating securities, trades, and portfolios is important regardless if it is a human or algorithm making the trade. The following metrics can be used to evaluate a securities/trades.
 
-  * Cumulative Return
+  * **Cumulative Return**- the total/aggregated amount of gains and losses for an investment. Cumulative return is measured across time and not for a given time period.
 
-  * Annual Return
+  * **Annual Return**- a time weighted annual percentage representing the return on an investment over a period of time.
 
-  * Annual Volatility
+  * **Annual Volatility**- the annualized degree of variation in trading prices over time.
 
-  * Sharpe Ratio
+  * **Sharpe Ratio**- The return of investment compared to its risk, measured by the difference between the return on investment and the risk-free return.
 
-  * Portfolio Daily Return
+  * **Downside Deviation/Return**- The measure of risk for returns that are below hte minimal acceptable return.
 
-  * Downside Return
-
-  * Sortino Ratio
+  * **Sortino Ratio**-  The quotient of harmful volatility and overall volatility. The Sortino ratio focuses on downside deviation rather than standard deviation.
 
 * These metrics can be calculated historically with backtesting, or they can be used to measure future trades and opportunities for portfolio growth.
 
@@ -70,6 +68,7 @@ Transition through a dry walk through of the code used to calculate each of thes
     portfolio_evaluation_df.loc['Sortino Ratio'] = sortino_ratio
     ```
 
+    ![evluation_metrics.png](Images/evluation_metrics.png)
 * Emphasize to students that they should dedicate time outside of class to conduct research on each individual metric to better understand how it can be applied to assess portfolio performance.
 
 If time remains, finish the walk through by reminding students that even when trading with an algorithm, trades and portfolios need to be evaluated. Algorithms are not infallible. Touch upon the following:
