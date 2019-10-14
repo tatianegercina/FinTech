@@ -22,7 +22,7 @@ Navigate to the **evaluation** slide of the Unit 15.1 slideshow. Communicate the
 
 * These metrics can be calculated historically with backtesting, or they can be used to measure future trades and opportunities for portfolio growth.
 
-Transition through a dry walk through of the code used to calculate each of these metrics. Open the solution, and highlight the following:
+Transition to a dry walk through of the code used to calculate each of these metrics. Open the solution, and highlight the following:
 
 * One of the advantages of using an algorithm for trading is that evaluation metrics can be calculated using the algorithm as well. This allows for each metric to be calculated within seconds. Having an algorithm calculate the evaluation metrics diminishes chances of human error and improves the overall accuracy and time it takes to comprehensively evaluate a portfolio/security/trade.
 
