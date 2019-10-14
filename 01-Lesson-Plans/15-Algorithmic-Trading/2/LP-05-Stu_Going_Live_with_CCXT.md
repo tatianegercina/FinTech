@@ -81,7 +81,7 @@ Open the solution file and review the following:
 
   ![trading-dashboard-off-metrics](Images/trading-dashboard-off-metrics.png)
 
-* In order to calculate the correct share size, the running cash balance should be divided by the running closing price of BTC/USD and rounded *down* to the nearest integer; however, due to the current batch processing paradigm (data retrieved and processed all at once), the best that can be done is to calculate the share size based off of the initial capital divided by the first closing price of BTC/USD. The `int` function by default converts and rounds down the float data type to the nearest integer.
+* In order to calculate the correct share size, the running cash balance should be divided by the running closing price of BTC/USD and rounded *down* to the nearest integer; however, due to the current batch processing paradigm of the framework (data retrieved and processed all at once), the best that can be done is to calculate the share size based off of the initial capital divided by the first closing price of BTC/USD. The `int` function by default converts and rounds down the float data type to the nearest integer.
 
   ```python
   # Set the share size
