@@ -80,7 +80,10 @@ def execute_backtest(signals_df):
     initial_capital = float(100000)
 
     # Set the share size
-    share_size = round(initial_capital / signals_df['close'][0], 0) * .001
+    share_size = 500
+    #print(initial_capital, signals_df['close'][0])
+    #share_size = int(initial_capital / signals_df['close'][0])
+
 
     # Take a 500 share position where the dual moving average crossover is 1 (SMA50 is greater than SMA100)
     signals_df['Position'] = share_size * signals_df['signal']

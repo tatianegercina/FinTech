@@ -76,3 +76,18 @@ Open the solution file and review the following:
 
     return historical_prices_df
   ```
+
+* While the execution of the trading framework continues to be successful, one might notice that the account value metrics now appear wrong. This is because the code within the `execute_backtest` function arbitrarily uses a share size of 500 rather than properly calculating the correct share size based off of an available cash balance.
+
+  ![trading-dashboard-off-metrics](Images/trading-dashboard-off-metrics.png)
+
+* In order to calculate the correct share size, the initial capital should be divided by the first closing price of BTC/USD rounded 
+
+  ```python
+  # Set the share size
+    share_size = 500
+  ```
+
+  ```python
+  share_size = round(initial_capital / signals_df['close'][0], 0) * .001
+  ```
