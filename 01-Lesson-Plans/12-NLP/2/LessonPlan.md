@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's class will introduce students to **sentiment analysis**, one of the most popular applications of natural language processing (NLP). Normally sentiment analysis is related to marketing, however it's receiving a big attention on FinTech because of its huge spectrum of applications ranging from customer service, competition benchmarking, investment assistance, and news and social media analysis.
+Today's class will introduce students to **sentiment analysis**, one of the most popular applications of natural language processing (NLP). Normally sentiment analysis is related to marketing, however it's receiving big attention on FinTech because of its huge spectrum of applications ranging from customer service, competition benchmarking, investment assistance, and news and social media analysis.
 
 In this lesson, students will gain practical experience using the `NLTK` Python library and the **IBM Tone Analyzer** cloud service to analyze sentiments on news feeds.
 
@@ -30,7 +30,7 @@ By the end of the class, students will be able to:
 
 * This lesson includes the use and demonstration of the [News API](https://newsapi.org/), a free API for developers that retrieves metadata for headlines and news. This service requires user registration. The process is quite easy, but have your TAs assist students during the instructor demo activity to be sure students get their API keys.
 
-* Students will use the **IBM Tone Analyzer** cloud service in this class. The registration process could be time-consuming, so be sure to get familiar with the process by your own before class to assist students on the process.
+* Students will use the **IBM Tone Analyzer** cloud service in this class. The registration process could be time-consuming, so be sure to get familiar with the process on your own before class to assist students on the process.
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
@@ -48,13 +48,13 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Intro to Sentiment Analysis (10 min)
 
-Welcome students to the second day on NLP, this lesson will introduce the fundamentals of **sentiment analysis**, one of the most popular and growing areas of NLP where there are some new tools almost every day. Beyond the buzz, on this initial lecture students will learn what sentiment analysis is as well as how a computer can understand people's feelings.
+Welcome students to the second day on NLP, this lesson will introduce the fundamentals of **sentiment analysis**, one of the most popular and growing areas of NLP where there are some new tools almost every day. Beyond the buzz, on this initial lecture, students will learn what sentiment analysis is as well as how a computer can understand people's feelings.
 
 Follow the _Intro to Sentiment Analysis_ section on lesson slides by highlighting the following points:
 
 * Sentiment analysis is part of NLP. Despite it being quite popular in marketing, it has several applications on FinTech.
 
-* Sentiment analysis is a growing area, so some students could have experience with it or have heard about tools to analyze sentiments from social media and other texts. This lesson will introduce the foundations that will allow students to understand how sentiment analysis works so they will be able to choose the tools that best fit for their analysis purposes.
+* Sentiment analysis is a growing area, so some students could have experience with it or have heard about tools to analyze sentiments from social media and other texts. This lesson will introduce the foundations that will allow students to understand how sentiment analysis works so they will be able to choose the tools that best fit their analysis purposes.
 
 * Sentiment analysis is not infallible, so take the last three or four minutes of the presentation to discuss with students how sentiment analysis is used in FinTech and the challenges of this NLP area.
 
@@ -68,15 +68,15 @@ The introduction to sentiment analysis will offer some context to students about
 
 * Can a stock feel sadness if it opens with losses today?
 
-  * **Answer:** A stock can't have feelings, but we can use sentiment analysis to understand the sentiments expressed about a stock in news headlines to support investment decisions.
+  * **Answer:** A stock cannot have feelings, but we can use sentiment analysis to understand the sentiments expressed about a stock in news headlines to support investment decisions.
 
-* Is it possible to your bank account to suggest a travel destinations based on your tweets from last year?
+* Is it possible for your bank account to suggest a travel destination based on your tweets from last year?
 
-  * **Answer:** If you allow your bank to follow you on Twitter, it's possible it can score the sentiment of your tweets, even the tone you express in your posts. Your bank can give you some travel recommendations to boost your mood for the weekend or to spend some time with your family if it seems you were tweeting to much about how angry your were the last months.
+  * **Answer:** If you allow your bank to follow you on Twitter, it's possible it can score the sentiment of your tweets, even the tone you express in your posts. Your bank can give you some travel recommendations to boost your mood for the weekend or to spend some time with your family if it seems you were tweeting too much about how angry you were in the last months.
 
 * Can an auction website prevent fraud by analyzing the conversation between a potential buyer and a dealer?
 
-  * **Answer:** Using tone analysis, it's possible to follow the messages between a potential buyer and a dealer and score the emotions they are expressing to prevent a fraud.
+  * **Answer:** Using tone analysis, it is possible to follow the messages between a potential buyer and a dealer and score the emotions they are expressing to prevent fraud.
 
 * What about your privacy in this sentiment analysis revolution?
 
@@ -88,7 +88,7 @@ This activity looks to challenge students to think outside of the box and encour
 
 ### 3. Instructor Do: Terms Relevance (Understanding TF–IDF) (15 min)
 
-This activity introduces term relevance from the perspective of TF–IDF (term frequency –inverse document frequency). Also, students will lean how TF–IDF can be implemented using `sklearn`.
+This activity introduces term relevance from the perspective of TF–IDF (term frequency-inversee document frequency). Also, students will learn how TF–IDF can be implemented using `sklearn`.
 
 Do not invest to much time on the TF–IDF formulas, just explain how they work in general and invest a little more time on the rationale behind these measures and their implementation using `sklearn`.
 
@@ -96,15 +96,15 @@ Do not invest to much time on the TF–IDF formulas, just explain how they work 
 
 Open the lesson slides and move to the **Terms Relevance (Understanding TF–IDF)** section, highlighting the following points:
 
-* In a world of words, analyzing text can be confusing because of speech's complexity. That's why measuring term relevance is useful—it offers a way to understand how important a word is to a document in a collection of documents, or a corpus.
+* In a world of words, analyzing text can be confusing because of speech's complexity. That is why measuring term relevance is useful—it offers a way to understand how important a word is to a document in a collection of documents or a corpus.
 
-* A **corpus** (_corpora_ in plural) is a large, structured and organized collection of text documents that normally focuses on a specific matter; there are monolingual, or single-language corpora, and multilingual or multiple-language corpora.
+* A **corpus** (_corpora_ in plural) is a large, structured, and organized collection of text documents that normally focuses on a specific matter; there are monolingual or single-language corpora, and multilingual or multiple-language corpora.
 
 * **TF–IDF** is a weighting factor intended to measure how important a word is to a document in a corpus.
 
-* **TF** indicates that if a word appears multiple times in a document, it can be concluded that it's relevant and more meaningful than other words in the same text.
+* **TF** indicates that if a word appears multiple times in a document, it can be concluded that it is relevant and more meaningful than other words in the same text.
 
-* **IDF** comes to action when you're analyzing several documents. If a word also appears many times among a collection of documents, maybe it's just a frequent word and not a relevant one.
+* **IDF** comes to action when you are analyzing several documents. If a word also appears many times among a collection of documents, maybe it's just a frequent word and not a relevant one.
 
 * A high weight in TF–IDF is reached by terms with high TF and a low document frequency of the term in the corpus; normally these are more interesting terms to analyze.
 
@@ -134,7 +134,7 @@ Continue the explanation by live coding the solution and highlight the following
   vectorizer = CountVectorizer(stop_words='english')
   ```
 
-* The [`fit_transform()`](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer.fit_transform) method retrieves a matrix of the terms counts. In this example, a single document is passed as parameter, but a list of documents can be passed instead.
+* The [`fit_transform()`](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer.fit_transform) method retrieves a matrix of the terms counts. In this example, a single document is passed as a parameter, but a list of documents can be passed instead.
 
   ```python
   X = vectorizer.fit_transform([doc_text])
@@ -162,13 +162,13 @@ To calculate the TF–IDF, a set of 1,000 documents from the Reuters Corpus is u
   corpus = [reuters.raw(doc) for doc in corpus_id]
   ```
 
-* A `TfidfVectorizer()` instance is created by passing the stopwords in English as parameter.
+* A `TfidfVectorizer()` instance is created by passing the stopwords in English as a parameter.
 
   ```python
   vectorizer = TfidfVectorizer(stop_words='english')
   ```
 
-* The `fit_transform()` method is called passing the 1,000 documents collection as parameter; a matrix with the TF–IDF value for each term on every single document is retrieved.
+* The `fit_transform()` method is called passing the 1,000 documents collection as a parameter; a matrix with the TF–IDF value for each term on every single document is retrieved.
 
   ```python
   X_corpus = vectorizer.fit_transform(corpus)
@@ -182,13 +182,13 @@ To calculate the TF–IDF, a set of 1,000 documents from the Reuters Corpus is u
 
 Conclude the activity by presenting the highest and lowest ten TF–IDF scores. Explain that highest values normally represent less common and more interesting terms for analysis; they have a high term frequency in some documents and a low document frequency in the collection of documents.
 
-If there is time, ask the class what they think about the numbers identified as terms (tokens) by the algorithm. In fact, the importance of these terms resides in the context of the documents; for example a year or an amount could be relevant if you are talking about a historical fact.
+If there is time, ask the class what they think about the numbers identified as terms (tokens) by the algorithm. In fact, the importance of these terms resides in the context of the documents; for example, a year or an amount could be relevant if you are talking about a historical fact.
 
 ---
 
 ### 4. Student Do: Bossy Words (20 min)
 
-On this activity, students will use the knowledge from previous lessons to create a word cloud based on TF–IDF weights. The main objective of this activity is to let students see the differences between term relevance and term occurrence in word clouds.
+In this activity, students will use the knowledge from previous lessons to create a word cloud based on TF–IDF weights. The main objective of this activity is to let students see the differences between term relevance and term occurrence in word clouds.
 
 **Instructions:**
 
@@ -267,7 +267,7 @@ In this activity, students will learn how to retrieve news articles from the [Ne
 * [sentiment_analysis_data.ipynb](Activities/06-Ins_Sentiment_Analysis_Data/Solved/sentiment_analysis_data.ipynb)
 * [keys.sh](Activities/06-Ins_Sentiment_Analysis_Data/Solved/keys.sh)
 
-Explain to students that there are several ways to retrieve data for sentiment analysis, such as web scrapping, manual corpus creation from document digitization, document transformations (e.g., from PDF, word processors, or spreadsheets to raw text) and using APIs. Among these data-retrieval mechanisms APIs is one of the most used, so in this activity students will learn how to retrieve news articles using the [News API](https://newsapi.org/) and its [Python library](https://newsapi.org/docs/client-libraries/python).
+Explain to students that there are several ways to retrieve data for sentiment analysis, such as web scraping, manual corpus creation from document digitization, document transformations (e.g., from PDF, word processors, or spreadsheets to raw text) and using APIs. Among these data-retrieval mechanisms, APIs is one of the most used, so in this activity, students will learn how to retrieve news articles using the [News API](https://newsapi.org/) and its [Python library](https://newsapi.org/docs/client-libraries/python).
 
 Open the [News API](https://newsapi.org/) website and explain that it's an easy-to-use API that returns JSON metadata for headlines and articles that are live all over the web right now, so the results retrieved at this moment could be different from the results retrieved in 20 minutes.
 
@@ -277,7 +277,7 @@ Slack out the News API web address to students (https://newsapi.org/) and ask th
 
 Guide students on the account process creation by following these steps:
 
-* On the registration form, the "I am an individual" option should be selected to create a free developer account. It's also important to select the last two check boxes since this is a free service.
+* On the registration form, the "I am an individual" option should be selected to create a free developer account. It is also important to select the last two checkboxes since this is a free service.
   ![News API registration form](Images/news_api_registration_form.png)
 
 * Once the account is created, the API key is shown on [the Account page](https://newsapi.org/account).
@@ -300,7 +300,7 @@ Open [the unsolved Jupyter notebook](Activities/06-Ins_Sentiment_Analysis_Data/U
   from newsapi import NewsApiClient
   ```
 
-* To create a `NewsApiClient` object, the API key should be passed as parameter.
+* To create a `NewsApiClient` object, the API key should be passed as a parameter.
 
   ```python
   newsapi = NewsApiClient(api_key=api_key)
@@ -338,7 +338,7 @@ Show students how they can create a DataFrame using the response Python dictiona
 
   ![Creating a DataFrame from the response python dictionary](Images/news_api_df.png)
 
-Live code the `newsapi.get_everything()` demo by highlighting that it's also possible to send more than one keyword as search term, as with this example to fetch news about Facebook Libra using `q="facebook libra"` as parameter:
+Live code the `newsapi.get_everything()` demo by highlighting that it's also possible to send more than one keyword as search term, as with this example to fetch news about Facebook Libra using `q="facebook libra"` as a parameter:
 
 * Separating two keywords by a blank space is equivalent to use `q="facebook AND libra"`.
 
@@ -350,7 +350,7 @@ Live code the `newsapi.get_everything()` demo by highlighting that it's also pos
   )
   ```
 
-Answer any question that arise and move to the next activity.
+Answer any questions that arise and move to the next activity.
 
 ---
 
@@ -372,10 +372,10 @@ In this activity, students will use the News API to retrieve news articles in En
 
 Open the [solution](Activities/07-Stu_Crisis_Voice/Solved/voice_crisis.ipynb) and walk through the code, highlight the following:
 
-* As can be read on [the News API documentation for the `Everything` endpoint,](https://newsapi.org/docs/endpoints/everything) it's possible to use logical operators to include or exclude keywords.
+* As can be read on [the News API documentation for the `Everything` endpoint,](https://newsapi.org/docs/endpoints/everything) it is possible to use logical operators to include or exclude keywords.
   ![Documentation for the q parameter of the News API](Images/new_api_q_param.png)
 
-* All the articles containing the three keywords are retrieved using the `AND` operator, either for English or French news. The queries are sensitive to orthographic signs, so it's important to use the grave accent over the first `è` in `financière`.
+* All the articles containing the three keywords are retrieved using the `AND` operator, either for English or French news. The queries are sensitive to orthographic signs, so it is important to use the grave accent over the first `è` in `financière`.
 
   ```python
   # Fetch news about the financial crisis on 2008 in English
@@ -427,7 +427,7 @@ file_path = Path("Data/crisis_news_en_fr.csv")
 crisis_df.to_csv(file_path, index=False, encoding='utf-8-sig')
 ```
 
-Answer any additional question before moving to the next activity.
+Answer any additional questions before moving to the next activity.
 
 ---
 
@@ -439,11 +439,11 @@ In this activity, students will understand how VADER sentiment works and how to 
 
 * [vader_sentiment.ipynb](Activities/09-Ins_Vader_Sentiment/Solved/vader_sentiment.ipynb)
 
-Open the lesson slides, move to the Intro to VADER Sentiment section and highlight the following:
+Open the lesson slides, move to the Intro to VADER Sentiment section, and highlight the following:
 
-* VADER (Valence Aware Dictionary and Sentiment Reasoner) is a tool used to score the sentiment  of human speech as positive, neutral, or negative based on a set of rules and a [lexicon](https://dictionary.cambridge.org/dictionary/english/lexicon) (a list of words).
+* VADER (Valence Aware Dictionary and Sentiment Reasoner) is a tool used to score the sentiment of human speech as positive, neutral, or negative based on a set of rules and a [lexicon](https://dictionary.cambridge.org/dictionary/english/lexicon) (a list of words).
 
-* VADER calculates the polarity of a sentiment using its built-in rules and a predefined lexicon that was manually tagged as positive or negative according to semantic orientation.
+* VADER calculates the polarity of sentiment using its built-in rules and a predefined lexicon that was manually tagged as positive or negative according to semantic orientation.
 
 * VADER generates four scores for each analyzed text: positive (`pos`), neutral (`neu`), negative (`neg`) and `compound`.
 
@@ -457,7 +457,7 @@ Open the lesson slides, move to the Intro to VADER Sentiment section and highlig
   * neutral sentiment: (`compound` score > -0.05) and (`compound` score 0.05)
   * negative sentiment: `compound` score <= -0.05
 
-Open the Jupyter notebook, live code the solution and highlight the following:
+Open the Jupyter notebook, live code the solution, and highlight the following:
 
 * The News API is used to fetch news about Facebook Libra and analyze sentiment using the [`NLTK` VADER sentiment module](https://www.nltk.org/api/nltk.sentiment.html#module-nltk.sentiment.vader).
 
@@ -496,7 +496,7 @@ libra_headlines = newsapi.get_everything(
 
   ![Sample VADER sentiment descriptive stats](Images/vader_df_stats.png)
 
-Answer any questions from class before moving on.
+Answer any questions from the class before moving on.
 
 ---
 
@@ -506,7 +506,7 @@ Answer any questions from class before moving on.
 
 ### 11. Student Do: The Feelings of the Crisis (20 min)
 
-On this activity, students will use VADER to score the sentiment of news title and text to verify whether they have the same sentiment. This activity includes a facilitated discussion in the last four to five minutes to talk about students' findings.
+In this activity, students will use VADER to score the sentiment of news titles and text to verify whether they have the same sentiment. This activity includes a facilitated discussion in the last four to five minutes to talk about students' findings.
 
 **Instructions:**
 
@@ -591,7 +591,7 @@ Open the solution and walk through the code, highlighting the following:
   news_en_df = news_en_df.join(title_sentiment_df).join(text_sentiment_df)
   ```
 
-* A bar chart is created using the `plot()` method from the DataFrame to review whether the title and the text of a news article have the same sentiment or not. The chart's grid is added to identify how the bars for each news articles behave.
+* A bar chart is created using the `plot()` method from the DataFrame to review whether the title and the text of a news article have the same sentiment or not. The chart's grid is added to identify how the bars for each news article behave.
 
   ```python
   news_en_df.plot(y=["title_sent", "text_sent"],
@@ -604,7 +604,7 @@ Open the solution and walk through the code, highlighting the following:
 
   ![Sample sentiments bar chart](Images/crisis_feelings_bar_chart.png)
 
-Answer any additional question before moving to the next activity.
+Answer any additional questions before moving to the next activity.
 
 ---
 
@@ -618,21 +618,21 @@ In this activity, students will be introduced to tone analysis and how they can 
 
 * [keys.sh](Activities/13-Ins_Tone_Analysis/Solved/keys.sh)
 
-Start by opening the lesson slides, go to the Tone Analysis section and highlight the following:
+Start by opening the lesson slides, go to the Tone Analysis section, and highlight the following:
 
 * Tone analysis offers new possibilities for sentiment analysis since it goes beyond the simple classic classification as positive, negative or neutral and looks to understand human emotions.
 
 * Tone analysis is a complex and costly task since it requires training algorithms with thousands of documents that need to be previously tagged to understand the emotion behind the words.
 
-* IBM Watson Tone Analyzer is a cloud service to analyze tone on text communications. This service is  available for English and French languages.
+* IBM Watson Tone Analyzer is a cloud service to analyze tone on text communications. This service is available for English and French languages.
 
 * IBM Watson Tone Analyzer can be used via its Python API.
 
 After the brief definition of tone analysis and the intro to IBM Watson Tone Analyzer, slack out [the URL for this service](https://cloud.ibm.com/catalog/services/tone-analyzer) and guide students on creating their IBM Cloud account and setting up their Tone Analyzer instance. Ask TAs to assist students on creating their personal IBM Cloud account and follow the lesson slides as a guided tour by highlighting the following:
 
-* Students will use the Lite plan of Tone Analyzer, it allows 2,500 API call per month for free and no credit card is required to use it.
+* Students will use the Lite plan of Tone Analyzer, it allows 2,500 API calls per month for free, and no credit card is required to use it.
 
-* Student only need to fill out their personal account information on the registration form.
+* Students only need to fill out their personal account information on the registration form.
 
   ![IBM Cloud registration form](Images/ibm_cloud_registration_form.png)
 
@@ -652,19 +652,19 @@ Once students have access to their IBM Cloud dashboard, they need to create an i
 
   ![Tone Analyzer configuration page](Images/tone_analyzer_create_instance.png)
 
-Now that the Tone Analyzer instance is ready to use, ask students get their API keys and the instance URL by clicking on the "Show credentials" link.
+Now that the Tone Analyzer instance is ready to use, ask students to get their API keys and the instance URL by clicking on the "Show credentials" link.
 
   ![Tone Analyzer instance sample](Images/show_tone_analyzer_credentials.png)
 
 * Students will find their credentials under the section titled Step 1: Using the general-purpose endpoint via the POST request method.
 
-* Students will see the API key and the instance URL as it's shown below. The URL can differ from the image but it ends with `/api`.
+* Students will see the API key and the instance URL as it's shown below. The URL can differ from the image, but it ends with `/api`.
 
   ![Tone Analyser credentials](Images/get_tone_analyzer_key.png)
 
 Ask students to create two environment variables, one for the API key and the other for the URL. Open the [unsolved Jupyter notebook](Activities/13-Ins_Tone_Analysis/Solved/tone_analysis.ipynb) and switch to the code demo, highlighting the following:
 
-* The IBM Watson Python library need to be installed using `pip` as follows. This demo runs using version 3.
+* The IBM Watson Python library needs to be installed using `pip` as follows. This demo runs using version 3.
 
   ```bash
   pip install --upgrade "ibm-watson>=3.0.3"
@@ -781,7 +781,7 @@ print(json.dumps(tone_analysis, indent=2))
 
   ![Sample document tone as DataFrame](Images/document_tone_df.png)
 
-Next, the `tone_chat()` method is presented. Explain to students that this method is intended to analyze tone from customer engagement conversations, between an agent and a customer, where all the utterances are passed as parameter to score the tone of each one.
+Next, the `tone_chat()` method is presented. Explain to students that this method is intended to analyze tone from customer engagement conversations between an agent and a customer, where all the utterances are passed as parameter to score the tone of each one.
 
 ```python
 # Define conversational utterances
