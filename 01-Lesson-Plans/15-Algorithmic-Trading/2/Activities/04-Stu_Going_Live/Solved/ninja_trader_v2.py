@@ -111,6 +111,23 @@ def execute_backtest(signals_df):
 
     return signals_df
 
+def execute_trade_strategy(signals, account):
+    """Makes a buy/sell/hold decision."""
+
+    if signals["entry/exit"][-1] == 1.0:
+        print("buy")
+        number_to_buy = round(account['balance'] / signals['close'][-1], 0) * .001
+        account["balance"] -= (number_to_buy * signals['close'][-1])
+        account["shares"] += number_to_buy
+    elif signals["entry/exit"][-1] == -1.0:
+        print("sell")
+        account["balance"] += signals['close'][-1] * account['shares']
+        account["shares"] = 0
+    else:
+        print("hold")
+
+    return account
+
 def evaluate_metrics(signals_df):
     """Evaluates metrics from backtested signal data"""
     #### CALCULATE PORTFOLIO METRICS ####
@@ -258,6 +275,7 @@ signals_df = generate_signal(data_df)
 
 # Backtest signal data, execute trade strategy, and evaluate metrics from backtested results
 tested_signals_df = execute_backtest(signals_df)
+account  = execute_trade_strategy(tested_signals_df, account)
 portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals_df)
 
 # Update the dashboard with all metrics
