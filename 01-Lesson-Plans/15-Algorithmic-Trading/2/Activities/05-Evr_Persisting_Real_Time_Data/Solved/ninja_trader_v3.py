@@ -5,18 +5,25 @@ import panel as pn
 import hvplot.pandas
 import ccxt
 import os
+import sqlite
 
 pn.extension()
 
 def initialize(cash):
     """Initialize the dashboard, data storage, and account balances."""
     # Initialize account
-    account = {"balance": cash, "shares": 0}
+    account = {"cash_balance": cash, "portfolio_holding": 0, "total_portfolio_value": 0, "active_shares": 0}
+
+    # Initialize Database
+    db = sqlite3.connect("ninja_trader_database.sqlite")
+
+     # Initialize DataFrames to hold data
+    api_data_df = pd.DataFrame()
 
     # Initialize dashboard
     dashboard = initialize_dashboard()
 
-    return account, dashboard
+    return account, db, dashboard
 
 def initialize_dashboard():
     """Build the dashboard."""
@@ -79,9 +86,6 @@ def execute_backtest(signals_df):
 
     # Set the share size
     share_size = 500
-    #print(initial_capital, signals_df['close'][0])
-    #share_size = int(initial_capital / signals_df['close'][0])
-
 
     # Take a 500 share position where the dual moving average crossover is 1 (SMA50 is greater than SMA100)
     signals_df['Position'] = share_size * signals_df['signal']
@@ -263,9 +267,28 @@ def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_
 
     return
 
-# Initialize account and dashboard objects
-account, dashboard = initialize(100000)
+def main(account, api_data_df, signals_df, trade_evaluation_df, dashboard):
+
+    while True:
+
+        new_record_df = fetch_data()
+
+
+        signals_df = generate_signal(api_data_df)
+
+
+
+
+
+
+
+
+
+# Initialize account, data storage, and dashboard objects
+account, api_data_df, signals_df, trade_evaluation_df, dashboard = initialize(100000)
 dashboard.servable()
+
+main(account, api_data_df, signals_df, trade_evaluation_df, dashboard)
 
 # Fetch data and generate signals
 data_df = fetch_data()
@@ -278,3 +301,5 @@ portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals_d
 
 # Update the dashboard with all metrics
 update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df)
+
+
