@@ -93,3 +93,6 @@ Open the solution file and review the following:
     share_size = int(initial_capital / signals_df['close'][0])
   ```
 
+* Close but no cigar! Modifying the share size calculation looks to have improved the account value metrics but unfortunately are still slightly off. This is noted by the fact that an initial account cash balance of $100,000 should not be able to afford a trade with an entry portfolio holding of greater than $100,000. Therefore, in order to obtain the correct share sizes, the framework will need to shift from a batch processing paradigm (data retrieved and processed all at once) to a real-time or streaming paradigm (data retrieved and processed every second) so as to access the running account cash balance and BTC/USD closing prices. 
+
+  ![trading-dashboard-improved-metrics](Images/trading-dashboard-improved-metrics.png)
