@@ -22,4 +22,6 @@ Quickly discuss the following before proceeding onward to the walk through:
 
 Open the solution file and walk through the following with the class:
 
+* 
+
 Ask if there are any questions before moving on.
