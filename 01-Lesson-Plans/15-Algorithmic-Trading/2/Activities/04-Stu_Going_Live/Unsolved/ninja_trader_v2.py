@@ -3,8 +3,6 @@ import numpy as np
 from pathlib import Path
 import panel as pn
 import hvplot.pandas
-import ccxt
-import os
 
 pn.extension()
 
