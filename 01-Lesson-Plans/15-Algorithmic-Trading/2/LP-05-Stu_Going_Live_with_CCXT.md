@@ -18,4 +18,61 @@ The purpose of this activity is to showcase the "plug-and-play" feature of a fra
 
 Open the solution file and review the following:
 
-* 
+* The beauty of a robust application framework is that as long as the high-level input/output workflow of the framework remains consistent, the underlying "parts" or functions can be modified to fit multiple use cases. In this case, the `fetch_data` function will be modified to instead read live data from Kraken rather than a static local CSV file; however, the overall execution of the framework remains the same.
+
+  ```python
+  # Initialize account and dashboard objects
+  account, dashboard = initialize(100000)
+  dashboard.servable()
+
+  # Fetch data and generate signals
+  data_df = fetch_data()
+  signals_df = generate_signal(data_df)
+
+  # Backtest signal data, execute trade strategy, and evaluate metrics from backtested results
+  tested_signals_df = execute_backtest(signals_df)
+  portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals_df)
+
+  # Update the dashboard with all metrics
+  update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df)
+  ```
+
+* Specifically, notice how both versions of the `fetch_data` function obtain data in separate ways (local vs. API); however, the output of either function (a DataFrame) remains the same, thereby maintaining the overall workflow of the framework itself.
+
+  **Note:** While out of the scope of today's lesson, rather than replace the local CSV functionality of the `fetch_data` function with the ability to read data from Kraken, the `fetch_data` function could be modified to use a parameter that flags whether or not to choose to read from a CSV or connect to Kraken, thereby creating a more robust framework.
+
+  ```python
+  def fetch_data():
+    """Fetches the latest prices."""
+    # Set the file path
+    filepath = Path("../Resources/aapl.csv")
+
+    # Read the CSV located at the file path into a Pandas DataFrame
+    data_df = pd.read_csv(filepath)
+
+    # Print the DataFrame
+    print(data_df)
+
+    return data_df
+  ```
+
+  ```python
+  def fetch_data():
+    """Fetches the latest prices."""
+    # Import Kraken environment variables
+    exchange = ccxt.kraken(
+        {"apiKey": os.getenv("KRAKEN_PUBLIC_KEY"), "secret": os.getenv("KRAKEN_SECRET_KEY")}
+    )
+    # Fetch daily candlestick bar data from `BTC/USD`
+    historical_prices = exchange.fetch_ohlcv('BTC/USD', '1d')
+
+    # Import the data as a Pandas DataFrame and set the columns
+    historical_prices_df = pd.DataFrame(historical_prices, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
+    historical_prices_df
+
+    # Convert epoch timestamp to date using the `to_datetime` function and `unit` parameter
+    historical_prices_df['date'] = pd.to_datetime(historical_prices_df['timestamp'], unit='ms')
+    historical_prices_df
+
+    return historical_prices_df
+  ```
