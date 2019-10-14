@@ -45,12 +45,12 @@ Your word cloud should be like this:
 
 If you have time you can work on the following challenge section.
 
-As a challenge, search for articles that contain the most relevant words. Create a function called `retrieve_docs(terms)` that receive a list of terms as parameter and extract from the working corpus all those news articles that contains the search terms. In this function you should use the `reuters.words()` method to retrieve the tokenized version of each article as can be seen on the [Reuters Corpus documentation](https://www.nltk.org/book/ch02.html#reuters-corpus).
+As a challenge, search for articles that contain the most relevant words. Create a function called `retrieve_docs(terms)` that receive a list of terms as a parameter and extract from the working corpus all those news articles that contain the search terms. In this function you should use the `reuters.words()` method to retrieve the tokenized version of each article as can be seen on the [Reuters Corpus documentation](https://www.nltk.org/book/ch02.html#reuters-corpus).
 
 Once you create the function answer the following questions:
 
 * Question 1: How many articles talk about yen?
-* Question 2: How many articles talks about Japan or banks?
+* Question 2: How many articles talk about Japan or banks?
 * Question 3: How many articles talk about England or dealers?
 
 ## Hints
