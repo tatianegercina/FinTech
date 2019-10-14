@@ -18,7 +18,7 @@ Quickly discuss the following before proceeding onward to the walk through:
 
 * What is data persistence?
 
-  **Answer:** Data persistence is the concept of saving data to a database so as to have a reliable copy of data that is *persisted* rather than transiently stored in-memory.
+  **Answer:** Data persistence is the concept of saving data to a database so as to have a reliable copy of data that is *persisted* rather than transiently stored as in-memory data structures.
 
 Open the solution file and walk through the following with the class:
 
