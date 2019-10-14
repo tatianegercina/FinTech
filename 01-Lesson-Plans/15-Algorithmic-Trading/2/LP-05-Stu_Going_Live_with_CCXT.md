@@ -81,7 +81,7 @@ Open the solution file and review the following:
 
   ![trading-dashboard-off-metrics](Images/trading-dashboard-off-metrics.png)
 
-* In order to calculate the correct share size, the initial capital should be divided by the first closing price of BTC/USD rounded 
+* In order to calculate the correct share size, the initial capital should be divided by the first closing price of BTC/USD and rounded *down* to the nearest integer. One way to round down to the nearest integer is to multiply the result by .001 and 
 
   ```python
   # Set the share size
