@@ -123,7 +123,7 @@ Open the solution file and review the following:
     return df
   ```
 
-* The `initialize` function has also been slightly modified to initialize an empty DataFrame, so as to hold the contents of the continuous data flow fetched from the Kraken exchange.
+* The `initialize` function has also been slightly modified to initialize an empty DataFrame, so as to hold the contents of the continuous data flow fetched from the Kraken exchange for simplicity purposes.
 
   ```python
     def initialize(cash):
