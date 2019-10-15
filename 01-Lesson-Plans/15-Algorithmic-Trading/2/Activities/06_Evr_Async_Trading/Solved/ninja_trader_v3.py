@@ -5,45 +5,42 @@ import panel as pn
 import hvplot.pandas
 import ccxt
 import os
+import asyncio
 
 pn.extension()
 
 def initialize(cash):
     """Initialize the dashboard, data storage, and account balances."""
-    # Initialize account
+    # Initialize Account
     account = {"balance": cash, "shares": 0}
 
-    # Initialize dashboard
-    dashboard = initialize_dashboard()
+    # Initialize DataFrame
+    data_df = pd.DataFrame()
 
-    return account, dashboard
+    # Initialize Streaming DataFrame for the signals
+    dashboard = initialize_dashboard()
+    return account, data_df, dashboard
+
 
 def initialize_dashboard():
     """Build the dashboard."""
     loading_text = pn.widgets.StaticText(name="Trading Dashboard", value="Loading...")
     dashboard = pn.Column(loading_text)
     print("init dashboard")
-
     return dashboard
+
 
 def fetch_data():
     """Fetches the latest prices."""
-    # Import Kraken environment variables
-    exchange = ccxt.kraken(
-        {"apiKey": os.getenv("KRAKEN_PUBLIC_KEY"), "secret": os.getenv("KRAKEN_SECRET_KEY")}
+    kraken = ccxt.kraken(
+        {"apiKey": os.getenv("kraken_key"), "secret": os.getenv("kraken_secret")}
     )
-    # Fetch daily candlestick bar data from `BTC/USD`
-    historical_prices = exchange.fetch_ohlcv('BTC/USD', '1d')
+    close = kraken.fetch_ticker("BTC/USD")['close']
+    datetime = kraken.fetch_ticker("BTC/USD")['datetime']
+    df = pd.DataFrame({'close': [close], 'date': [datetime]})
+    df.index = pd.to_datetime([datetime])
+    return df
 
-    # Import the data as a Pandas DataFrame and set the columns
-    historical_prices_df = pd.DataFrame(historical_prices, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
-    historical_prices_df
-
-    # Convert epoch timestamp to date using the `to_datetime` function and `unit` parameter
-    historical_prices_df['date'] = pd.to_datetime(historical_prices_df['timestamp'], unit='ms')
-    historical_prices_df
-
-    return historical_prices_df
 
 def generate_signal(data_df):
     """Generates trading signals for a given dataset."""
@@ -73,6 +70,7 @@ def generate_signal(data_df):
     print(signals)
 
     return signals
+
 
 def execute_backtest(signals_df):
     """Executes a backtest on trading signal data."""
@@ -108,6 +106,7 @@ def execute_backtest(signals_df):
 
     return signals_df
 
+
 def execute_trade_strategy(signals, account):
     """Makes a buy/sell/hold decision."""
 
@@ -124,6 +123,7 @@ def execute_trade_strategy(signals, account):
         print("hold")
 
     return account
+
 
 def evaluate_metrics(signals_df):
     """Evaluates metrics from backtested signal data"""
@@ -216,7 +216,8 @@ def evaluate_metrics(signals_df):
 
     return portfolio_evaluation_df, trade_evaluation_df
 
-def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df):
+
+def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df, dashboard):
     """Updates the dashboard with widgets, plots, and financial tables"""
     # Initialize static widgets
     account_balance = pn.widgets.StaticText(name="Cash Balance", value=tested_signals_df['Portfolio Cash'][-1])
@@ -262,18 +263,46 @@ def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_
 
     return
 
+
+async def main():
+
+    while True:
+        global account
+        global data_df
+        global dashboard
+
+        # Fetch latest pricing data
+        new_record_df = fetch_data()
+
+        # Save latest pricing data to a global DataFrame
+        if data_df.empty:
+            data_df = new_record_df.copy()
+        else:
+            data_df = data_df.append(new_record_df, ignore_index=False)
+
+        # Generate Signals and execute the trading strategy
+        min_window = 10
+        max_window = 1000
+        if data_df.shape[0] >= min_window:
+            signals = generate_signal(data_df)
+            tested_signals = execute_backtest(signals)
+
+            account = execute_trade_strategy(tested_signals, account)
+            portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals)
+
+            print(f"Account Balance: {account['balance']}")
+            print(f"Account Shares: {account['shares']}")
+
+            # Update the dashboard
+            update_dashboard(account, signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
+
+        await asyncio.sleep(1)
+
+
 # Initialize account and dashboard objects
-account, dashboard = initialize(100000)
+account, data_df, dashboard = initialize(100000)
 dashboard.servable()
 
-# Fetch data and generate signals
-data_df = fetch_data()
-signals_df = generate_signal(data_df)
-
-# Backtest signal data, execute trade strategy, and evaluate metrics from backtested results
-tested_signals_df = execute_backtest(signals_df)
-account  = execute_trade_strategy(tested_signals_df, account)
-portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals_df)
-
-# Update the dashboard with all metrics
-update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df)
+# Python 3.7+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
