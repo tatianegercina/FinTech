@@ -108,7 +108,7 @@ Open the solution file and review the following:
   loop.run_until_complete(main())
   ```
 
-* The `fetch_data` function has been modified to now use the `fetch_ticker` function from the ccxt library, which grabs the latest pricing data for BTC/USD, and imports the resulting data into a DataFrame.
+* The `fetch_data` function has been modified to now use the `fetch_ticker` function from the ccxt library, which grabs the latest pricing data for BTC/USD and imports the resulting data into a DataFrame that can be returned.
 
   ```python
   def fetch_data():
