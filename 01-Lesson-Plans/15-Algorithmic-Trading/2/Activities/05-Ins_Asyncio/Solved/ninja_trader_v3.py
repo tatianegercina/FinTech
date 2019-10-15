@@ -15,16 +15,16 @@ def initialize(cash):
 
     # Initialize dashboard
     dashboard = initialize_dashboard()
-
     return account, dashboard
+
 
 def initialize_dashboard():
     """Build the dashboard."""
     loading_text = pn.widgets.StaticText(name="Trading Dashboard", value="Loading...")
     dashboard = pn.Column(loading_text)
     print("init dashboard")
-
     return dashboard
+
 
 def fetch_data():
     """Fetches the latest prices."""
@@ -42,8 +42,8 @@ def fetch_data():
     # Convert epoch timestamp to date using the `to_datetime` function and `unit` parameter
     historical_prices_df['date'] = pd.to_datetime(historical_prices_df['timestamp'], unit='ms')
     historical_prices_df
-
     return historical_prices_df
+
 
 def generate_signal(data_df):
     """Generates trading signals for a given dataset."""
@@ -71,7 +71,6 @@ def generate_signal(data_df):
 
     # Print the DataFrame
     print(signals)
-
     return signals
 
 def execute_backtest(signals_df):
@@ -105,7 +104,6 @@ def execute_backtest(signals_df):
 
     # Print the DataFrame
     print(signals_df)
-
     return signals_df
 
 def execute_trade_strategy(signals, account):
@@ -122,7 +120,6 @@ def execute_trade_strategy(signals, account):
         account["shares"] = 0
     else:
         print("hold")
-
     return account
 
 def evaluate_metrics(signals_df):
@@ -213,7 +210,6 @@ def evaluate_metrics(signals_df):
 
     # Print the DataFrame
     print(trade_evaluation_df)
-
     return portfolio_evaluation_df, trade_evaluation_df
 
 def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df):
