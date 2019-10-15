@@ -18,7 +18,7 @@ Complete the following tasks:
 
 ### Files
 
-[Starter Notebook](Starter_Code/stock_sentiment.ipynb)
+[Starter Notebook](Starter_Code/crypto_sentiment.ipynb)
 
 - - -
 
