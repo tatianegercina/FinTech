@@ -191,6 +191,10 @@ Open the solution file and review the following:
   loop.run_until_complete(main())
   ```
 
-* The 
+  ![nano-trader-asyncio](Images/nano-trader-asyncio.png)
+
+* By defining the `main` function as a asynchronous function, the asyncio `get_event_loop` and `run_until_complete` functions handle the execution of the `main` function and prevent the `main` function from blocking the execution of the program due to its continuous while loop.
+
+* For example, if the same code were to be replaced without the asyncio features, the program would stall as the while loop would 
 
 Answer any questions before moving on.
