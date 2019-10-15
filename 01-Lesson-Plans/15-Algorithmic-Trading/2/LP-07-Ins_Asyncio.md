@@ -123,7 +123,7 @@ Open the solution file and review the following:
     return df
   ```
 
-* The `initialize` function has also been slightly modified to initialize an empty DataFrame, so as to hold the contents of the continuous data flow fetched from the Kraken exchange for simplicity purposes.
+* The `initialize` function has also been slightly modified to initialize an empty DataFrame, so as to hold the contents of the continuous data flow fetched from the Kraken exchange.
 
   ```python
     def initialize(cash):
@@ -139,7 +139,7 @@ Open the solution file and review the following:
     return account, data_df, dashboard
   ```
 
-* The `update_dashboard` function has been modified to only display the price plot of the closing price of BTC/USD.
+* The `update_dashboard` function has been modified to only display the price plot of the closing price of BTC/USD for simplicity purposes.
 
   ```python
   def update_dashboard(account, data, dashboard):
