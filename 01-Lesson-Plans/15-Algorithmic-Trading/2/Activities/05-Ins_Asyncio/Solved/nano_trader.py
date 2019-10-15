@@ -9,40 +9,28 @@ import hvplot.streamz
 from streamz import Stream
 from streamz.dataframe import DataFrame
 import panel as pn
+import time
 
 pn.extension()
 
-def initialize(cash=None):
+def initialize(cash):
     """Initialize the dashboard, data storage, and account balances."""
-
-    # Initialize Database
-    db = sqlite3.connect("nano_trader_db.sqlite")
-
     # Initialize Account
     account = {"balance": cash, "shares": 0}
 
-    # Initialize Streaming DataFrame for Raw Data
-    data_stream = Stream()
-    data_example = pd.DataFrame(data={"close": []}, columns=["close"], index=pd.DatetimeIndex([]))
-    data_stream_df = DataFrame(data_stream, example=data_example)
-
-    # Initialize Streaming DataFrame for Signals
-    signals_stream = Stream()
-    columns = ["close", "signal", "sma10", "sma20", "entry/exit"]
-    data = {"close": [], "signal": [], "sma10": [], "sma20": [], "entry/exit": []}
-    signals_example = pd.DataFrame(data=data, columns=columns, index=pd.DatetimeIndex([]))
-    signals_stream_df = DataFrame(signals_stream, example=signals_example)
+    # Initialize DataFrame
+    data_df = pd.DataFrame()
 
     # Initialize Streaming DataFrame for the signals
-    dashboard = build_dashboard(data_stream_df, signals_stream_df)
-    return db, account, data_stream, signals_stream, dashboard
+    dashboard = initialize_dashboard()
+    return account, data_df, dashboard
 
-
-def build_dashboard(data, signals):
+def initialize_dashboard():
     """Build the dashboard."""
-    dashboard = pn.Column(data.hvplot(), signals["entry/exit"].hvplot.scatter())
+    loading_text = pn.widgets.StaticText(name="Trading Dashboard", value="Loading...")
+    dashboard = pn.Column(loading_text)
+    print("init dashboard")
     return dashboard
-
 
 def fetch_data():
     """Fetches the latest prices."""
@@ -51,24 +39,25 @@ def fetch_data():
     )
     close = kraken.fetch_ticker("BTC/USD")['close']
     datetime = kraken.fetch_ticker("BTC/USD")['datetime']
-    df = pd.DataFrame({'close': [close]})
+    df = pd.DataFrame({'close': [close], 'date': [datetime]})
     df.index = pd.to_datetime([datetime])
     return df
 
-
-def generate_signals(df):
+def generate_signal(data_df):
     """Generates trading signals for a given dataset."""
     # Set window
     short_window = 10
+    long_window = 20
 
-    signals = df.copy()
-    signals["index"] = pd.to_datetime(signals["index"])
-    signals = signals.set_index('index', drop=True)
+    # Set up the signals DataFrame
+    signals = data_df.copy()
+    signals["date"] = pd.to_datetime(signals["date"], infer_datetime_format=True)
+    signals = signals.set_index("date", drop=True)
     signals["signal"] = 0.0
 
     # Generate the short and long moving averages
-    signals["SMA10"] = signals["close"].rolling(window=10).mean()
-    signals["SMA20"] = signals["close"].rolling(window=20).mean()
+    signals["SMA10"] = signals["close"].rolling(window=short_window).mean()
+    signals["SMA20"] = signals["close"].rolling(window=long_window).mean()
 
     # Generate the trading signal 0 or 1,
     signals["signal"][short_window:] = np.where(
@@ -78,59 +67,61 @@ def generate_signals(df):
     # Calculate the points in time at which a position should be taken, 1 or -1
     signals["entry/exit"] = signals["signal"].diff()
 
+    # Print the DataFrame
+    print(signals)
     return signals
 
+def update_dashboard(account, tested_signals_df):
+    """Updates the dashboard with widgets, plots, and financial tables"""
+    # Initialize static widgets
+    account_balance = pn.widgets.StaticText(name="Cash Balance", value=tested_signals_df['Portfolio Cash'][-1])
+    holding_value = pn.widgets.StaticText(name="Portfolio Holding", value=tested_signals_df['Portfolio Holdings'][-1])
+    total_portfolio_value = pn.widgets.StaticText(name="Total Portfolio Value", value=tested_signals_df['Portfolio Total'][-1])
 
-def execute_trade_strategy(signals, account):
-    """Makes a buy/sell/hold decision."""
+    # Create price plot of closing, SMA10, and SMA20
+    price_plot = tested_signals_df.hvplot.line(x='date', y=['close', 'SMA10', 'SMA20'], value_label='Price', width=1000, height=400, rot=90)
 
-    if signals["entry/exit"][-1] == 1.0:
-        print("buy")
-        number_to_buy = round(account['balance'] / signals['close'][-1], 0) * .001
-        account["balance"] -= (number_to_buy * signals['close'][-1])
-        account["shares"] += number_to_buy
-    elif signals["entry/exit"][-1] == -1.0:
-        print("sell")
-        account["balance"] += signals['close'][-1] * account['shares']
-        account["shares"] = 0
-    else:
-        print("hold")
+    # Create rows
+    row_one = pn.Row(account_balance, holding_value, total_portfolio_value)
+    row_two = pn.Row(price_plot)
 
-    return account
+    # Create columns
+    column = pn.Column(row_one, row_two)
 
+    # Create tabs
+    tabs = pn.Tabs(("Summary", column))
 
-db, account, data_stream, signals_stream, dashboard = initialize(10000)
-dashboard.servable()
+    # Assign tab to dashboard object
+    dashboard[0] = tabs
+    return
 
-async def main():
-    loop = asyncio.get_event_loop()
+def main():
 
     while True:
-        global db
         global account
-        global data_stream
-        global signals_stream
+        global data_df
+        global dashboard
 
         # Fetch and save new data
-        new_df = await loop.run_in_executor(None, fetch_data)
-        new_df.to_sql('data', db, if_exists='append', index=True)
+        new_record_df = fetch_data()
+
+        if data_df.empty:
+            data_df = new_record_df.copy()
+        else:
+            data_df = data_df.append(new_record_df, ignore_index=True)
 
         # Generate Signals and execute the trading strategy
         min_window = 30
-        max_window = 1000
-        df = pd.read_sql(f"select * from data limit {max_window}", db)
-        if df.shape[0] >= min_window:
-            signals = generate_signals(df)
-            signals_stream.emit(signals)
-            account = execute_trade_strategy(signals, account)
+        if data_df.shape[0] >= min_window:
+            signals = generate_signal(data_df)
             print(f"Account Balance: {account['balance']}")
             print(f"Account Shares: {account['shares']}")
 
         # Update the Dashboard
-        data_stream.emit(new_df)
-        await asyncio.sleep(1)
+        update_dashboard(account, signals)
+        time.sleep(1)
 
+account, data_df, dashboard = initialize(10000)
+dashboard.servable()
 
-# Python 3.7+
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+main()
