@@ -30,7 +30,7 @@ Quickly discuss the following before proceeding onward to the walk through:
 
 Open the solution file and review the following:
 
-* This program is an over-simplified version of students' trading frameworks to more easily focus on the implementation changes required to use a real-time data loading paradigm; this program is less than 100 lines code.
+* This program is an over-simplified version of students' trading frameworks to more easily focus on the implementation changes required to use a real-time data load paradigm; this program is less than 100 lines of code.
 
   ```python
   def initialize(cash):
