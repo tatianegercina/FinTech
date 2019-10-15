@@ -1,94 +1,35 @@
-### 4. Instructor Do: Trading with CCXT (15 min)
+### 7. Instructor Do: Asyncio (15 min)
 
-In this section, students will become familiar with the expansive CCXT library which abstracts upon a collection of available cryptocurrency exchange APIs and provides unified functions to simplify API calls when switching from different cryptocurrency exchange APIs. In particular, students will work with the Kraken API and extract both historical and current price data.
+In this activity, students will learn how to transition their trading frameworks to use a real-time data load paradigm (data retrieved continuously) rather than a batch processing data load paradigm (data retrieved all at once) with the help of asyncio, a library to write concurrent or asynchronous code that mitigates the issue of *blocking code* or code that halts the further execution of a program.
 
-**File:** [ccxt.ipynb](Activities/03-Ins_Going_Live/Solved/ccxt.ipynb)
+The purpose of this activity is to not only demonstrate what processing real-time data looks like, but also showcase the role asyncio plays in preventing the issue of blocking code.
+
+**File:** [nano_trader.py](Activities/05-Ins_Asyncio/Solved/nano_trader.py)
+
+Quickly discuss the following before proceeding onward to the walk through:
+
+* What is batch data processing vs. real-time data processing?
+
+  **Answer:** Batch data processing refers to the concept of processing data that represents a duration of time that has already occurred, such as historical daily closing price data. In contrast, real-time data processing refers to the concept of processing data that is continually flowing, such as a new up-to-date closing price record every second.
+
+* What are the advantages/disadvantages of batch data processing vs. real-time data processing?
+
+  **Answer:** Batch data processing works well for efficiently processing large volumes of data collected over a period of time, but lacks the granular control of processing data at the record-level. Real-time data processing, however, works well for processing a continual flow of data at the record-level, but is generally less efficient and adds more complexity.
+
+* What is asyncio?
+
+  **Answer:** Asyncio is a library to write concurrent code using the async/await syntax. Specifically, asyncio provides the concept of asynchrony, which unlike multi-threading, implements asynchronous events as independent schedules that are "out of sync" with one another entirely within a single thread.
+
+* What is multi-threading?
+
+  **Answer:** Multi-threading is another method of implementing concurrent code, and uses multiple threads or scheduled tasks that run in the same allocated memory context of a process.
+
+* What is the difference between asynchrony and multi-threading?
+
+  **Answer:** While both can achieve concurrency, asynchrony prevents much of the downsides associated with multi-threading such as memory safety and race conditions by providing control over when a program shifts from one task to the next. In addition, asychrony tends to use less memory as operations are kept on a single thread.
 
 Open the solution file and review the following:
 
-* Because CCXT is a collection of multiple APIs under the hood, when choosing to connect to a particular exchange such as Kraken, the credentials for that particular exchange must be set. In this case, the public and private keys for the Kraken API are imported from the `KRAKEN_PUBLIC_KEY` and `KRAKEN_SECRET_KEY` environment variables and set to the `kraken` class of the CCXT library.
-
-  ```python
-  # Import environment variables
-  kraken_public_key = os.getenv('KRAKEN_PUBLIC_KEY')
-  kraken_secret_key = os.getenv('KRAKEN_SECRET_KEY')
-  ```
-
-  ```python
-  # Set the public and private keys for the API
-  exchange = ccxt.kraken({
-    'apiKey': kraken_public_key,
-    'secret': kraken_secret_key,
-  })
-  ```
-
-* In most cases, CCXT requires that a user must load the list available markets and trading symbols prior to accessing other API functions for an exchange. This can be set either explicitly or automatically by CCXT when it detects that a user has not initiated the `load_markets` function when the first unified API call is made.
-
-  ![kraken-cryptos](Images/kraken-cryptos.png)
-
-* After loading the market data for the Kraken exchange and importing the data as a Pandas DataFrame, a quick print of the column values shows that there are (as of this writing) 110 available cryptocurrencies for trading on the Kraken exchange.
-
-  ![kraken-crypto-symbols](Images/kraken-crypto-symbols.png)
-
-* The `fetch_ohlcv` function can be used to fetch the candlestick bar data for `BTC/USD`, which returns a list of lists containing records with `timestamp`, `open`, `high`, `low`, `close`, and `volume` data points. As a result of the lack of key-value pairs, when importing data into a Pandas DataFrame, column names will need to be specified according to the structure dictated by the CCXT documentation.
-
-  ![kraken-btc-usd-historical-prices](Images/kraken-btc-usd-historical-prices.png)
-
-  ```python
-  [
-    [
-        1504541580000, // UTC timestamp in milliseconds, integer
-        4235.4,        // (O)pen price, float
-        4240.6,        // (H)ighest price, float
-        4230.0,        // (L)owest price, float
-        4230.7,        // (C)losing price, float
-        37.72941911    // (V)olume (in terms of the base currency), float
-    ],
-    ...
-  ]
-  ```
-
-* The `timestamp` data from the `fetch_ohlcv` function is returned in *Epoch time* or *Unix time* format, which is the number of seconds (or in this case milliseconds) since the origin point in time known as the *Unix epoch*. Therefore, in order to convert epoch timestamps to a readable date format, the `to_datetime` function with the `unit` parameter should be used.
-
-  ![convert-epoch-timestamp-ms](Images/convert-epoch-timestamp-ms.png)
-
-* In order to fetch the latest pricing data for `BTC/USD`, the `fetch_ticker` function should be used. Make sure to drop the `info` column as the subsequent import to a Pandas DataFrame will produce multiple records due to the nested object nature of the `info` column, and in this case only one record is desired.
-
-  ![kraken-btc-usd-current-price](Images/kraken-btc-usd-current-price.png)
-
-  ```python
-  {
-    'symbol':        string symbol of the market ('BTC/USD', 'ETH/BTC', ...)
-    'info':        { the original non-modified unparsed reply from exchange API },
-    'timestamp':     int (64-bit Unix Timestamp in milliseconds since Epoch 1 Jan 1970)
-    'datetime':      ISO8601 datetime string with milliseconds
-    'high':          float, // highest price
-    'low':           float, // lowest price
-    'bid':           float, // current best bid (buy) price
-    'bidVolume':     float, // current best bid (buy) amount (may be missing or undefined)
-    'ask':           float, // current best ask (sell) price
-    'askVolume':     float, // current best ask (sell) amount (may be missing or undefined)
-    'vwap':          float, // volume weighed average price
-    'open':          float, // opening price
-    'close':         float, // price of last trade (closing price for current period)
-    'last':          float, // same as `close`, duplicated for convenience
-    'previousClose': float, // closing price for the previous period
-    'change':        float, // absolute change, `last - open`
-    'percentage':    float, // relative change, `(change/open) * 100`
-    'average':       float, // average price, `(last + open) / 2`
-    'baseVolume':    float, // volume of base currency traded for last 24 hours
-    'quoteVolume':   float, // volume of quote currency traded for last 24 hours
-  }
-  ```
-
-* To view the list of available functions for an exchange, display the results of the `has` instance variable from the current exchange object. Functions are indicated as available based on a Boolean such as True or False.
-
-  ![exchange-has](Images/exchange-has.png)
-
-* While today's lesson only focuses on fetching pricing data from the Kraken API, the CCXT library also allows a user to perform tasks such as checking account balances/status, fetching any open orders, or even placing and executing trades.
-
-  **Note:** The following functions return minimal/empty datasets due to the fact that the Kraken account used in this lesson is not funded with capital.
-
-  ![additional-functions](Images/additional-functions.png)
+*  
 
 Answer any questions before moving on.
