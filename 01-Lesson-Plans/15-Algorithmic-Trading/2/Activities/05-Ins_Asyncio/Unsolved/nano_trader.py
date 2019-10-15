@@ -12,7 +12,7 @@ def initialize(cash):
     account = {"balance": cash, "shares": 0}
 
     # Initialize DataFrame
-    data_df = pd.DataFrame()
+
 
     # Initialize Streaming DataFrame for the signals
     dashboard = initialize_dashboard()
@@ -27,14 +27,8 @@ def initialize_dashboard():
 
 def fetch_data():
     """Fetches the latest prices."""
-    kraken = ccxt.kraken(
-        {"apiKey": os.getenv("kraken_key"), "secret": os.getenv("kraken_secret")}
-    )
-    close = kraken.fetch_ticker("BTC/USD")['close']
-    datetime = kraken.fetch_ticker("BTC/USD")['datetime']
-    df = pd.DataFrame({'close': [close], 'date': [datetime]})
-    df.index = pd.to_datetime([datetime])
-    return df
+
+    return
 
 def update_dashboard(account, data, dashboard):
     """Updates the dashboard with widgets, plots, and financial tables"""
@@ -61,17 +55,13 @@ async def main():
         global dashboard
 
         # Fetch latest pricing data
-        new_record_df = fetch_data()
+
 
         # Save latest pricing data to a global DataFrame
-        if data_df.empty:
-            data_df = new_record_df.copy()
-        else:
-            data_df = data_df.append(new_record_df, ignore_index=False)
+
 
         # Update the dashboard
-        update_dashboard(account, data_df, dashboard)
-        await asyncio.sleep(1)
+
 
 account, data_df, dashboard = initialize(100000)
 dashboard.servable()
