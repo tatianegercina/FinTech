@@ -5,20 +5,18 @@ import panel as pn
 import hvplot.pandas
 import ccxt
 import os
-import sqlite
+import sqlite3
+import time
 
 pn.extension()
 
 def initialize(cash):
     """Initialize the dashboard, data storage, and account balances."""
     # Initialize account
-    account = {"cash_balance": cash, "portfolio_holding": 0, "total_portfolio_value": 0, "active_shares": 0}
+    account = {"balance": cash, "portfolio_holding": 0, "total_portfolio_value": 0, "active_shares": 0}
 
     # Initialize Database
-    db = sqlite3.connect("ninja_trader_database.sqlite")
-
-     # Initialize DataFrames to hold data
-    api_data_df = pd.DataFrame()
+    db = sqlite3.connect("ninja_trader_db.sqlite")
 
     # Initialize dashboard
     dashboard = initialize_dashboard()
@@ -120,11 +118,11 @@ def execute_trade_strategy(signals, account):
         print("buy")
         number_to_buy = round(account['balance'] / signals['close'][-1], 0) * .001
         account["balance"] -= (number_to_buy * signals['close'][-1])
-        account["shares"] += number_to_buy
+        account["active_shares"] += number_to_buy
     elif signals["entry/exit"][-1] == -1.0:
         print("sell")
-        account["balance"] += signals['close'][-1] * account['shares']
-        account["shares"] = 0
+        account["balance"] += signals['close'][-1] * account['active_shares']
+        account["active_shares"] = 0
     else:
         print("hold")
 
@@ -221,7 +219,7 @@ def evaluate_metrics(signals_df):
 
     return portfolio_evaluation_df, trade_evaluation_df
 
-def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df):
+def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df, dashboard):
     """Updates the dashboard with widgets, plots, and financial tables"""
     # Initialize static widgets
     account_balance = pn.widgets.StaticText(name="Cash Balance", value=tested_signals_df['Portfolio Cash'][-1])
@@ -264,42 +262,43 @@ def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_
 
     # Assign tab to dashboard object
     dashboard[0] = tabs
+    print("updated dash")
 
     return
 
-def main(account, api_data_df, signals_df, trade_evaluation_df, dashboard):
-
-    while True:
-
-        new_record_df = fetch_data()
-
-
-        signals_df = generate_signal(api_data_df)
-
-
-
-
-
-
-
-
-
 # Initialize account, data storage, and dashboard objects
-account, api_data_df, signals_df, trade_evaluation_df, dashboard = initialize(100000)
-dashboard.servable()
-
-main(account, api_data_df, signals_df, trade_evaluation_df, dashboard)
-
-# Fetch data and generate signals
-data_df = fetch_data()
-signals_df = generate_signal(data_df)
-
-# Backtest signal data, execute trade strategy, and evaluate metrics from backtested results
-tested_signals_df = execute_backtest(signals_df)
-account  = execute_trade_strategy(tested_signals_df, account)
-portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals_df)
-
-# Update the dashboard with all metrics
-update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df)
+account, db, dashboard = initialize(100000)
 
 
+while True:
+    dashboard.servable()
+    # Fetch new closing price record
+    new_record_df = fetch_data()
+    # Save new closing price record to sqlite
+    new_record_df.to_sql('data', db, if_exists='append', index=True)
+
+    # Generate Signals and execute the trading strategy
+    min_window = 30
+    max_window = 1000
+    df = pd.read_sql(f"select * from data limit {max_window}", db)
+    if df.shape[0] >= min_window:
+        # Backtest signal data, execute trade strategy, and evaluate metrics from backtested results
+        signals = generate_signal(df)
+        tested_signals = execute_backtest(signals)
+        account = execute_trade_strategy(tested_signals, account)
+        portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals)
+
+        # Update the dashboard with all metrics
+        update_dashboard(account, tested_signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
+        print(f"Account Balance: {account['balance']}")
+        print(f"Account Shares: {account['active_shares']}")
+        time.sleep(1)
+
+
+
+# def main():
+
+
+
+
+# main()
