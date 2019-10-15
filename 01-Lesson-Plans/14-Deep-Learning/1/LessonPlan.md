@@ -373,7 +373,7 @@ Explain to students that we will start coding a neural network with a single neu
   df["Target"] = y
 
   # Plotting the dummy data
-df.hvplot.scatter(x="Feature 1", y="Feature 2", by="Target")
+  df.hvplot.scatter(x="Feature 1", y="Feature 2", by="Target")
   ```
 
   ![Two blobs dummy data](Images/neuron-two-blobs.png)
@@ -720,5 +720,72 @@ model_moon_2 = nn_2.fit(X_moon_train_scaled, y_moon_train, epochs=500)
   ![Two layer neural network's results](Images/nn_4.png)
 
 Comment to students that modeling neural networks is part science and part and art; the best model will be the result of several tests by playing around with the number of layers and neurons and testing different activation functions.
+
+Answer any questions before moving on.
+
+### 6. Students Do: Preventing credit card defaults with neural networks (15 min)
+
+In this activity, students will train a neural network model to predict whether a credit card holder will default in the next month.
+
+**Instructions:**
+
+* [README.md](Activities/3-Stu_CC_Default/README.md)
+
+**Files:**
+
+* [credit-card-default.ipynb](Activities/3-Stu_CC_Default/Unsolved/credit-card-default.ipynb)
+
+### 7. Instructor Do: Review reventing credit card defaults with neural networks (10 min)
+
+**Files:**
+
+* [credit-card-default.ipynb](Activities/3-Stu_CC_Default/Solved/credit-card-default.ipynb)
+
+Walk through the solution and highlight the following:
+
+* After the data is read in a DataFrame, it is split and scaled using the `StandardScaler()` function from `sklearn`.
+
+* The neural network is defined, adding two layers as follows.
+
+  ```python
+  # Define the model
+  number_inputs = 23
+  number_hidden_nodes = 69
+
+  nn = Sequential()
+  nn.add(Dense(units=number_hidden_nodes, input_dim=number_inputs, activation='relu'))
+  nn.add(Dense(1, activation='sigmoid'))
+  ```
+
+* The first layer has the `23` features as input dimensions, following the rule-of-thumb mentioned before, the triple amount of nodes were defined in the hidden network (`69` units).
+
+* The model is compiled and trained using `100` epochs. Due to the number of records, the training process takes a few minutes to finish.
+
+* The model is evaluated by plotting the loss function, the accuracy, and executing the `evaluate()` method.
+
+  ![Model evaluation](Images/cc-results.png)
+
+* The accuracy is not great, but also is not as bad to discard the model. It could be used in a real-world scenario to run a pilot project.
+
+Explain to students that for the challenge section, different approaches could be taken, for this demo, a second layer is added as requested, the `tanh` activation function is used in both hidden layers, and the model is trained with `50` epochs.
+
+```python
+# Define the model
+number_inputs = 23
+number_hidden_nodes = 69
+
+nn_2 = Sequential()
+nn_2.add(Dense(units=number_hidden_nodes, input_dim=number_inputs, activation='relu'))
+nn_2.add(Dense(units=number_hidden_nodes, activation='tanh'))
+nn_2.add(Dense(units=1, activation='tanh'))
+
+# Compile model
+nn_2.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+# Fit the model
+model_2 = nn_2.fit(X_train_scaled, y_train, epochs=50)
+```
+
+* As it can be seen in the model's evaluation, the accuracy improves a little bit. Having more epochs not always make accuracy better.
 
 Answer any questions before moving on.
