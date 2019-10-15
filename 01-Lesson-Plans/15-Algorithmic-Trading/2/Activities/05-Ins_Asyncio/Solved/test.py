@@ -43,13 +43,9 @@ def update_dashboard(account, data, dashboard):
     # Create price plot of closing, SMA10, and SMA20
     price_plot = data.hvplot.line(x='index', y=['close'], value_label='Price', width=1000, height=400, rot=90)
 
-    # Create rows
+    # Create rows, columns, and tabs
     row_two = pn.Row(price_plot)
-
-    # Create columns
     column = pn.Column(row_two)
-
-    # Create tabs
     tabs = pn.Tabs(("Summary", column))
 
     # Assign tab to dashboard object
