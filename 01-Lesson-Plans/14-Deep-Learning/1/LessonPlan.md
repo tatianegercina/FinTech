@@ -460,7 +460,7 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
 * After the model is compiled, it's fit (trained) using the dummy data.
 
   ```python
-  model = neuron.fit(X_train_scaled, y_train, epochs=100, shuffle=True)
+  model = neuron.fit(X_train_scaled, y_train, epochs=100)
   ```
 
 * Training consists of using the optimizer and loss function to update weights during each iteration of your training cycle. This training using 100 iterations or epochs.
@@ -475,7 +475,7 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
 
   ![Results plot from binary classification](Images/neuron_results_plot.png)
 
-* Using this simple one-neuron neural network, it can be seen that loss function decreases as expected, and the accuracy is drastically improved to 1.0 by the fourth epoch.
+* Using this simple one-neuron neural network, it can be seen that loss function decreases as expected, and the accuracy is drastically improved to `1.0` in the first epochs.
 
 * The model is evaluated using the `evaluate` method and the testing data.
 
@@ -536,5 +536,189 @@ model_moon = neuron.fit(X_moon_train_scaled, y_moon_train, epochs=100, shuffle=T
   ![Non-linear data evaluation](Images/non_linear_loss_accuracy.png)
 
 Comment to students that in the next activity, they will learn how they can create more complex networks.
+
+Answer any questions before moving on.
+
+### 5. Instructor Do: Connecting neurons (10 min)
+
+In this activity, students will learn how to build more complex neural networks using Keras.
+
+**Files:**
+
+* [connecting_neurons.ipynb](Activities/2-Ins_Connecting_Neurons/Solved/connecting_neurons.ipynb)
+
+Explain to students that now they will learn how to create more complex neural networks.
+
+For this demo, comment to the class that you are going to use non-linear dummy data to show how neural networks deal with it.
+
+Open the unsolved version of the Jupyter notebook, live code the demo, and highlight the following:
+
+* Some dummy non-linear data is created using the `make_moons()` function from `sklearn`.
+
+  ```python
+  # Creating dummy non-linear data
+  X_moons, y_moons = make_moons(n_samples=1000, noise=0.08, random_state=78)
+
+  # Transforming y_moons to a vertical vector
+  y_moons = y_moons.reshape(-1, 1)
+  ```
+
+* A DataFrame is created to plot the dummy data using `hvplot`.
+
+  ```python
+  # Creating a DataFrame to plot the non-linear dummy data
+  df_moons = pd.DataFrame(X_moons, columns=["Feature 1", "Feature 2"])
+  df_moons["Target"] = y_moons
+  ```
+
+  ![Non-linear data plot](Images/nn_1.png)
+
+* The data is split into training and testing sets, and it's scaled prior to building and testing the neural network.
+
+  ```python
+  # Create training and testing sets
+  X_moon_train, X_moon_test, y_moon_train, y_moon_test = train_test_split(
+      X_moons, y_moons, random_state=78
+  )
+
+  # Create the scaler instance
+  X_moon_scaler = StandardScaler()
+
+  # Fit the scaler
+  X_moon_scaler.fit(X_moon_train)
+
+  # Scale the data
+  X_moon_train_scaled = X_moon_scaler.transform(X_moon_train)
+  X_moon_test_scaled = X_moon_scaler.transform(X_moon_test)
+  ```
+
+Explain to students that now you are going to create a more complex neural network by adding a hidden layer with six neurons.
+
+![Neural net sample](Images/simple-nn.png)
+
+Comment to students, that the rule-of-thumb for a neural network is to have triple the amount of nodes in the hidden layer as the number of inputs, this is not true of deep learning, but it's a good point to start prototyping a neural network.
+
+Start building the neural network and highlight the following.
+
+* A sequential model is created to define the neural network.
+
+  ```python
+  nn = Sequential()
+  ```
+
+* The first layer is added by defining two input features and six hidden nodes. The `relu` activation function is used.
+
+  ![First layer in the neural network](Images/simple-nn-layer-1.png)
+
+  ```python
+  # First layer
+  number_inputs = 2
+  number_hidden_nodes = 6
+
+  nn.add(Dense(units=number_hidden_nodes, activation="relu", input_dim=number_inputs))
+  ```
+
+* The output layer is added by defining one unit. The `sigmoid` activation function is used to show students how, by only adding more neurons to the network, the model accuracy improves.
+
+  ![Second layer in the neural network](Images/simple-nn-layer-2.png)
+
+  ```python
+  # Output layer
+  number_classes = 1
+
+  nn.add(Dense(units=number_classes, activation="sigmoid"))
+  ```
+
+* After presenting the model summary, it's compiled and trained with `100` epochs to compare the results with the previous example where only one neuron was used.
+
+```python
+# Compile model
+nn.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
+
+# Training the model with the non-linear data
+model_moon = nn.fit(X_moon_train_scaled, y_moon_train, epochs=100)
+```
+
+* After evaluating the model, it can be seen that after adding more neurons to the model, the accuracy improves.
+
+  ![Neural network evaluation](Images/nn_2.png)
+
+Ask students the following question:
+
+* How do you think we can improve the model accuracy?
+
+  * **Sample Answer:** We can add more neurons to the hidden layer.
+
+  * **Sample Answer:** We can add a second hidden layer.
+
+  * **Sample Answer:**  We may test with different activation functions.
+
+Collect a couple of answers from the class and highlight the following:
+
+* Adding more neurons to the model is a possible solution; however, we can overfit the model.
+
+* Adding a second layer is also a suitable solution; this may improve accuracy.
+
+* Testing with different activation functions is one of the most used initial solutions, especially when dealing with non-linear data.
+
+* Using more epochs for training is another strategy to improve the model's accuracy.
+
+Comment to students that for this demo, you will add a second layer with six neurons, also you will change the activation function to `tanh` and will train the model along `500` epochs.
+
+![Adding a second layer](Images/simple-nn-two-layers.png)
+
+* A new sequential model is created to build this new neural network.
+
+  ```python
+  nn_2 = Sequential()
+  ```
+
+* The first layer is added, two inputs features, and six hidden nodes are defined.
+
+```python
+# First layer
+number_inputs = 2
+number_hidden_nodes = 6
+
+nn_2.add(Dense(units=number_hidden_nodes, activation="relu", input_dim=number_inputs))
+```
+
+* To add the second layer, we only need to use the `add()` method of the model together with the `Dense()` function where the number of nodes in the new layer is defined along with the activation function. Note that `tanh` is used as an activation function in this layer.
+
+```python
+  # Second layer
+  number_hidden_nodes = 6
+
+  nn_2.add(Dense(units=number_hidden_nodes, activation="tanh"))
+```
+
+* Finally, the output layer is added by defining `tanh` as the activation function.
+
+  ```python
+  # Output layer
+  number_classes = 1
+
+  nn_2.add(Dense(units=number_classes, activation="tanh"))
+  ```
+
+* The model summary shows a more complex architecture this time, that was quickly created thanks to the human-friendly interface of Keras.
+
+  ![Model summary of the two layers network](Images/nn_3.png)
+
+* Once the new model is defined, it's compiled and trained with `500` epochs.
+
+```python
+# Compile model
+nn_2.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
+
+# Training the model with the non-linear data
+model_moon_2 = nn_2.fit(X_moon_train_scaled, y_moon_train, epochs=500)
+```
+
+* Once the model is fit, it's evaluated using the testing data. The accuracy improves as a result of adding a new layer and changing the activation function.
+
+  ![Two layer neural network's results](Images/nn_4.png)
+
+Comment to students that modeling neural networks is part science and part and art; the best model will be the result of several tests by playing around with the number of layers and neurons and testing different activation functions.
 
 Answer any questions before moving on.
