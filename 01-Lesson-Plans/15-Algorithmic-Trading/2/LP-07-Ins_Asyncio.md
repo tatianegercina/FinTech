@@ -160,7 +160,7 @@ Open the solution file and review the following:
       return
   ```
 
-* The newly constructed `main` function houses the workflow for processing data in real-time. By wrapping the code within a continuous while loop, the `main` function constantly fetches new pricing data for BTC/USD from the Kraken exchange, checks and appends the new record to a global DataFrame, updates the dashboard with the new data, and repeats the loop after waiting 1 second.
+* The newly constructed `main` function houses the workflow for processing data in real-time. By wrapping the code within a continuous while loop, the `main` function constantly fetches new pricing data for BTC/USD from the Kraken exchange, checks and appends the new record to a global DataFrame, updates the dashboard with the new data, and repeats the loop after waiting 1 second. The result is a working dashboard that refreshes the closing price of BTC/USD every second.
 
   ```python
   async def main():
