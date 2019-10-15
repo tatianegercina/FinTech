@@ -193,8 +193,36 @@ Open the solution file and review the following:
 
   ![nano-trader-asyncio](Images/nano-trader-asyncio.png)
 
-* By defining the `main` function as a asynchronous function, the asyncio `get_event_loop` and `run_until_complete` functions handle the execution of the `main` function and prevent the `main` function from blocking the execution of the program due to its continuous while loop.
+* By defining the `main` function as an asynchronous function, the asyncio `get_event_loop` and `run_until_complete` functions handle the execution of the `main` function and prevent the `main` function from blocking the execution of the program due to its continuous while loop. For example, if the same code were to be replaced without the asyncio features, the program would stall as the while loop would prevent the dashboard from being served.
 
-* For example, if the same code were to be replaced without the asyncio features, the program would stall as the while loop would 
+  ```python
+  def main():
+
+    while True:
+        global account
+        global data_df
+        global dashboard
+
+        # Fetch latest pricing data
+        new_record_df = fetch_data()
+
+        # Save latest pricing data to a global DataFrame
+        if data_df.empty:
+            data_df = new_record_df.copy()
+        else:
+            data_df = data_df.append(new_record_df, ignore_index=False)
+
+        # Update the dashboard
+        update_dashboard(account, data_df, dashboard)
+        time.sleep(1)
+
+  account, data_df, dashboard = initialize(100000)
+  dashboard.servable()
+
+  # Python 3.7+
+  main()
+  ```
+
+  ![nano-trader-without-asyncio](Images/nano-trader-without-asyncio.png)
 
 Answer any questions before moving on.

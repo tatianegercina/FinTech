@@ -4,6 +4,7 @@ import panel as pn
 import os
 import hvplot.pandas
 import asyncio
+import time
 
 def initialize(cash):
     """Initialize the dashboard, data storage, and account balances."""
@@ -52,7 +53,7 @@ def update_dashboard(account, data, dashboard):
     dashboard[0] = tabs
     return
 
-async def main():
+def main():
 
     while True:
         global account
@@ -70,11 +71,38 @@ async def main():
 
         # Update the dashboard
         update_dashboard(account, data_df, dashboard)
-        await asyncio.sleep(1)
+        time.sleep(1)
 
 account, data_df, dashboard = initialize(100000)
 dashboard.servable()
 
 # Python 3.7+
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+main()
+
+
+# async def main():
+
+#     while True:
+#         global account
+#         global data_df
+#         global dashboard
+
+#         # Fetch latest pricing data
+#         new_record_df = fetch_data()
+
+#         # Save latest pricing data to a global DataFrame
+#         if data_df.empty:
+#             data_df = new_record_df.copy()
+#         else:
+#             data_df = data_df.append(new_record_df, ignore_index=False)
+
+#         # Update the dashboard
+#         update_dashboard(account, data_df, dashboard)
+#         await asyncio.sleep(1)
+
+# account, data_df, dashboard = initialize(100000)
+# dashboard.servable()
+
+# # Python 3.7+
+# loop = asyncio.get_event_loop()
+# loop.run_until_complete(main())
