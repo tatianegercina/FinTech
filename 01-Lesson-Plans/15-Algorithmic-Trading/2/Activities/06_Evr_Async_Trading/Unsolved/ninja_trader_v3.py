@@ -13,6 +13,9 @@ def initialize(cash):
     # Initialize account
     account = {"balance": cash, "shares": 0}
 
+    # Initialize DataFrame
+
+
     # Initialize dashboard
     dashboard = initialize_dashboard()
 
