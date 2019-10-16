@@ -806,7 +806,7 @@ Answer any questions before moving on.
 
 ### 9. Instructor Do: Preparing Data for Neural Networks (15 min)
 
-In this section we will go over some necessary transformations of data before it can be fed into a neural network.
+In this section, we will go over some necessary transformations of data before it can be fed into a neural network.
 
 **Files:**
 
@@ -814,19 +814,19 @@ In this section we will go over some necessary transformations of data before it
 
 Open the lesson slides, move to the _Preparing Data for Neural Networks_ and highlight the following:
 
-* Like any machine learning model, neural networks require some preprocessing of data in order to be used effectively.
+* Like any machine learning model, neural networks require some preprocessing of data to be used effectively.
 
 * Neural networks cannot deal with categorical variables in their raw forms, and explanatory variables that are represented in different units or have vastly different scales of magnitude can make models difficult to train.
 
-* To solve the first problem, we apply one-hot encoding to categorical values in order to transform them into binary variables. To deal with the second, we apply standardization.
+* To solve the first problem, we apply one-hot encoding to categorical values to transform them into binary variables. To deal with the second, we use standardization.
 
-* One hot encoding involves taking a categorical variable, such as color with labels "red," "white," and "blue," and creating three new variables of the colors, with each instance of the data now showing a 1 if it corresponds to that color and 0 if it does not.
+* One hot encoding involves taking a categorical variable, such as color with labels "red," "white," and "blue," and creating three new variables of the colors, with each instance of the data now showing a `1` if it corresponds to that color and `0 ` if it does not.
 
-* With scikit-learn, one hot encoding involves two steps. First, we label encode the column (in this case, "target") and turn it into a series of numerical values based on the categorical values they correspond to. Then, we use the one hot encoder function to split the series into columns of variables, each corresponding to a category.
+* Scikit-learn offers an implementation of one-hot encoding in the [`OneHotEncoder` module](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html).
 
 Open the unsolved Jupyter notebook and ask students to follow along as your live code one-hot encoding and model scaling.
 
-* For this demo the iris dataset is used. The data is loaded into a DataFrame.
+* For this demo, the iris dataset is used. The data is loaded into a DataFrame.
 
   ![Loading data](Images/ohe-1.png)
 
@@ -838,7 +838,7 @@ Open the unsolved Jupyter notebook and ask students to follow along as your live
   enc = OneHotEncoder()
   ```
 
-* In order to encode the iris classes, the encoder is fit with the values of the `class` column. Note that the values are reshaped as a one-column vector.
+* To encode the iris classes, the encoder is fit with the values of the `class` column. Note that the values are reshaped as a one-column vector.
 
   ```python
   class_values = data["class"].values.reshape(-1, 1)
@@ -849,7 +849,7 @@ Open the unsolved Jupyter notebook and ask students to follow along as your live
 
   ![Categories identified by the encoder](Images/ohe-2.png)
 
-* The class data is encoded using the `transform` method; the result is stored a an array.
+* The `class` column data is encoded using the `transform` method; the result is stored as an array.
 
   ```python
   class_encoded = enc.transform(class_values).toarray()
@@ -859,25 +859,25 @@ Open the unsolved Jupyter notebook and ask students to follow along as your live
 
   ![One-hot encoded data](Images/ohe-3.png)
 
-* After the data is encoded, each categorical variable is represented as an a sequence of `1's` and `0's`.
+* After the data is encoded, each categorical variable is represented as a sequence of `1's` and `0's`.
 
   ![Sample encoded data](Images/ohe-4.png)
 
-Ask the class to restate what we've accomplished with one hot encoding.
+Ask the class to restate what we've accomplished with one-hot encoding.
 
 * **Sample Answer**: We've transformed one categorical variable into many binary (numerical) variables, each corresponding to a category.
 
 Switch back to the lesson slides, continue with the slide entitled _Data Standardization_ and highlight the following:
 
-* Another important preprocessing task is to standardize the numerical variables in the dataset.
+* Another critical preprocessing task is to standardize the numerical variables in the dataset.
 
-* Standardization involves de-meaning the variables, that is, make it so that each numerical variable has a mean of `0`, and a constance variance of `1`.
+* Standardization involves de-meaning the variables, that is, make it so that each numerical variable has a mean of `0`, and a constant variance of `1`.
 
 * This makes it so that the variables all have approximately the same size, and reduces the likelihood that outliers or variables in different units will negatively affect model performance.
 
-* Students are already familiar with the `StandardScaler` from Scikit-learn, that offers an easy way to standardize variables.
+* Students are already familiar with the `StandardScaler` from Scikit-learn, which offers an easy way to standardize variables.
 
-Come back to the Jupyter notebook to recall data standardization, live code the demo and highlight the following.
+Come back to the Jupyter notebook to recall data standardization, live code the demo, and highlight the following.
 
 * To demonstrate data standardization, the iris numerical features are used.
 
@@ -897,8 +897,50 @@ scaler.fit(data_to_scale)
 # Scale the data
 scaled_data = scaler.transform(data_to_scale)
 
-# Create a DataFrame with the scaled dats
+# Create a DataFrame with the scaled data
 features_scaled_data = pd.DataFrame(scaled_data, columns=data.iloc[:, :4].columns)
 ```
 
 Ask students if they have any questions before moving on to the next activity.
+
+---
+
+### 10. Students Do: Voice Gender Recognition (30 min)
+
+In this activity, students will create a neural network to predict the gender of a voice using acoustic properties of the voice and speech.
+
+**Files:**
+
+  * [Voice_Recognition.ipynb](Activities/05-Stu_Voice_Recognition/Unsolved/Voice_Recognition.ipynb)
+
+  * [voice.csv](Activities/05-Stu_Voice_Recognition/Resources/voice.csv)
+
+  * [voice.md](Activities/05-Stu_Voice_Recognition/Resources/voice.md)
+
+**Instructions:**
+
+* [README.md](Activities/05-Stu_Voice_Recognition/README.md)
+
+---
+
+### 11. Everyone Do: Review Voice Gender Recognition (10 min)
+
+**Files:**
+
+* [Voice_Recognition.ipynb](Activities/05-Stu_Voice_Recognition/Solved/Voice_Recognition.ipynb)
+
+* Point out that this dataset requires applying standardization to the `X-features`, and one-hot encoding on the `y-labels` since they are categorical and contain the strings `male` and `female`.
+
+* Explain that for this model, a complex network is designed with 100 nodes in the hidden layer. This more significant number of nodes will allow the neural network to adapt to the dataset.
+
+* When the model is compiled, explain to students that as a general rule, they can use the following [loss function options in Keras](https://keras.io/losses/):
+
+  * `binary_crossentropy` is used for binary classification.
+
+  * `categorical_crossentropy` is used for classification models.
+
+  * `mean_squared_error` is used for regression models.
+
+* Warn students that neural networks are often prone to over-fitting. Neural Network architectures should always be validated to ensure that they are not over-fitting to the training data and thus performing poorly on new data values.
+
+Ask students if they have any questions before moving on.
