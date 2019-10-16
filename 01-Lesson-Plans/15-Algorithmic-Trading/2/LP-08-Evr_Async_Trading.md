@@ -129,9 +129,8 @@ Open the solution file and walk through the following with the class:
     return account
   ```
 
-*
+* The result of the previous changes shows a trading dashboard that not only displays the real-time pricing data for BTC/USD, but also makes buy, sell, or hold decisions in real-time.
 
   ![async-trading-dashboard](Images/async-trading-dashboard.gif)
-
 
 Ask if there are any questions before moving on.
