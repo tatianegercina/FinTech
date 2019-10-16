@@ -4,15 +4,15 @@
 
 ## Background
 
-The financial departments of large companies often deal with foreign currency transactions while doing international business. As a result, they are always looking for anything that can help them better understand the future direction and risk of various currencies. Hedge funds, too, are keenly interested in anything that will give them a consistent edge in predicting currency movements. 
+The financial departments of large companies often deal with foreign currency transactions while doing international business. As a result, they are always looking for anything that can help them better understand the future direction and risk of various currencies. Hedge funds, too, are keenly interested in anything that will give them a consistent edge in predicting currency movements.
 
-In this assignment, you will test the many time-series tools that you have learned in order to predict future movements in the value of the Japanese yen versus the U.S. dollar. 
+In this assignment, you will test the many time-series tools that you have learned in order to predict future movements in the value of the Japanese yen versus the U.S. dollar.
 
 You will gain proficiency in the following tasks:
 
-1. Time-Series Return Forecasting
-2. Volatility Forecasting
-3. Out-of-Sample Predictions
+1. Time Series Forecasting
+2. Linear Regression Modeling
+
 
 - - -
 
@@ -20,73 +20,54 @@ You will gain proficiency in the following tasks:
 
 [Time-Series Starter Notebook](Starter_Code/time_series_analysis.ipynb)
 
+[Linear Regression Starter Notebook](Starter_Code/regression_analysis.ipynb)
+
+[Yen Data CSV File](Starter_Code/yen.csv)
+
 - - -
 
 ### Instructions
 
-#### Time-Series Return Forecasting
+#### Time-Series Forecasting
 
-In this section, you will use the Quandl API to obtain daily **futures** data (a type of financial contract) on the Japanese yen per U.S. dollar exchange rate and use the data to build various time-series models that predict near-term yen returns. 
+In this notebook, you will load historical Dollar-Yen exchange rate futures data and apply time series analysis and modeling to determine whether there is any predictable behavior.
 
 Follow the steps outlined in the time-series starter notebook to complete the following:
 
-1. Generate a Quandl API key [(free)](https://www.quandl.com/).
+1. Decomposition using a Hodrick-Prescott Filter (Decompose the Settle price into trend and noise).
+2. Forecasting Returns using an ARMA Model.
+3. Forecasting the Settle Price using an ARIMA Model.
+4. Forecasting Volatility with GARCH.
 
-     1. Use your API key to read historical daily yen futures data into a Pandas DataFrame. 
+Use the results of the time series analysis and modeling to answer the following questions:
 
-     (*Futures contracts are contractual bets made today about what the future value of something will be. They are used a lot for hedging and for speculative trading. For more information on futures contracts, see a few of the links in the [Resources](#Resources) section.*) 
-
-3. Perform a time-series decomposition, using the Hodrick-Prescott filter and various moving average (MA) and exponentially weighted moving average (EWMA) smoothers.
-
-4. Estimate a Scikit-Learn time-series regression to identify seasonal effects in the yen.
-
-5. Identify autocorrelation and use that to guide selection for the best fitting autoregressive moving average (ARMA) and autoregressive integrated moving average (ARIMA) models.
-
-
-#### Volatility Forecasting
-
-In this section, you will use the time-series GARCH (generalized autoregressive conditional heteroskedasticity) or EGARCH (exponential GARCH) models to forecast short-term volatility in the Japanese yen.
-Follow the steps outlined in the time-series starter notebook to complete the following:
-
-1. Estimate either a GARCH or EGARCH model using the arch python package.
-
-2. Identify patterns of clustered and/or high yen volatility.
-
-3. Forecast the three-day volatility of the yen using a GARCH or EGARCH model.
-
-#### Optional Challenge—Out-of-Sample Predictions
-
-Last, apply your Scikit-Learn regression model under a testing approach commonly used by data scientists and quantitative traders when dealing specifically with time-series data.
-
-1. Use Pandas datetime indexing to slice the dataset into a training and test set, and compare model performance (root mean square error or RMSE) between the two (a one-shot approach).
-
-2. Create a rolling-out-of sample approach that updates to a new model each week using the most recent data and evaluates performance on data over the following week.
+1. Based on your time series analysis, would you buy the yen now?
+2. Is the risk of the yen expected to increase or decrease?
+3. Based on the model evaluation, would you feel confident in using these models for trading?
 
 
-#### Optional Challenge—Futures Spread Prediction
+#### Linear Regression Forecasting
 
-Futures spreads, as opposed to futures contracts, often exhibit more seasonal patterns and are generally easier to predict. 
+In this notebook, you will build a Scikit-Learn linear regression model to predict Yen futures ("settle") returns with *lagged* Yen futures returns and categorical calendar seasonal effects (e.g., day-of-week or week-of-year seasonal effects).
 
-1. Navigating the Quandl website, pull futures data one-month and two-month continuous Japanese yen futures contracts.
+Follow the steps outlined in the regression_analysis starter notebook to complete the following:
 
-2. Construct a futures spread, by taking [(2 month contract return) - (1 month contract return * -1)]. This is effectively a bet that the yen will be stronger two months from now than it will be a month from now (regardless of what it is today).  
+1. Data Preparation (Creating Returns and Lagged Returns and splitting the data into training and testing data)
+2. Fitting a Linear Regression Model.
+3. Making predictions using the testing data.
+4. Out-of-sample performance.
+5. In-sample performance.
 
-3. Use an ARMA model and the out-of-sample approaches you have learned to see if you can build a model with a low RMSE. (Then save it! In a subsequent unit, you will learn how to apply your best model to actual trading).
+Use the results of the linear regression analysis and modeling to answer the following question:
 
-- - -
+* Does this model perform better or worse on out-of-sample data compared to in-sample data?
 
-### Resources
-
-[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-
-[A Traders Guide to Futures (Chicago Mercantile Exchange)](https://www.cmegroup.com/education/files/a-traders-guide-to-futures.pdf)
-
-[Futures Spread Trading - For the Optional Challenge](https://www.investopedia.com/terms/f/futuresspread.asp)
 - - -
 
 ### Hints and Considerations
 
-[Quandl API Guide for Futures Data](https://blog.quandl.com/api-for-futures-data)
+* Out-of-sample data is data that the model hasn't seen before (Testing data).
+* In-sample data is data that the model was trained on (Training data).
 
 - - -
 
