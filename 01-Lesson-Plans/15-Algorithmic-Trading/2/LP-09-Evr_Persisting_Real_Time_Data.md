@@ -52,13 +52,16 @@ Open the solution file and walk through the following with the class:
 
   ```python
   # Save latest pricing data to a global DataFrame
-  if data_df.empty:
-      data_df = new_record_df.copy()
-  else:
-      data_df = data_df.append(new_record_df, ignore_index=False)
+  new_record_df.to_sql('data', db, if_exists='append', index=True)
   ```
 
-* Putting everything together, 
+* The data within the sqlite database is then queried, and if the number of rows returned is greater or equal to the minimum window, the program proceeds to executing the rest of its trading functions.
+
+  ```python
+  data_df = pd.read_sql(f"select * from data limit {max_window}", db)
+  ```
+
+* Putting everything together, it can be seen that the trading application now operates in such a way that new records are fetched and appended to the `data` table in a sqlite database, where they are later queried prior to the execution of later functions. The result is a trading application that stores its data and therefore can resume its operations in the event of a failure, as shown below.
 
   ```python
   async def main():
@@ -102,5 +105,7 @@ Open the solution file and walk through the following with the class:
   loop = asyncio.get_event_loop()
   loop.run_until_complete(main())
   ```
+
+  ![failure-recovery.gif](Images/failure-recovery.gif)
 
 Ask if there are any questions before moving on.
