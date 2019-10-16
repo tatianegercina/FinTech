@@ -1,42 +1,49 @@
-import ccxt
-import pandas as pd
-import panel as pn
 import os
-import hvplot.pandas
-import hvplot.streamz
+import numpy as np
+import pandas as pd
+import ccxt
 import asyncio
-import time
 import sqlite3
+
+import hvplot.streamz
 from streamz import Stream
 from streamz.dataframe import DataFrame
-import numpy as np
+import panel as pn
 
-def initialize(cash):
+pn.extension()
+
+
+def initialize(cash=None):
     """Initialize the dashboard, data storage, and account balances."""
-    # Initialize Account
-    account = {"balance": cash, "shares": 0}
 
     # Initialize Database
     db = sqlite3.connect("algo_trader_history.sqlite")
 
+    # Initialize Account
+    account = {"balance": cash, "shares": 0}
+
+    # Initialize Streaming DataFrame for Raw Data
+    data_stream = Stream()
+    data_example = pd.DataFrame(data={"close": []}, columns=["close"], index=pd.DatetimeIndex([]))
+    data_stream_df = DataFrame(data_stream, example=data_example)
+
     # Initialize Streaming DataFrame for Signals
     signals_stream = Stream()
-    columns = ["close", "SMA10", "SMA20"]
-    data = {"close": [],  "sma10": [], "sma20": []}
+    columns = ["close", "signal", "sma10", "sma20", "entry/exit"]
+    data = {"close": [], "signal": [], "sma10": [], "sma20": [], "entry/exit": []}
     signals_example = pd.DataFrame(data=data, columns=columns, index=pd.DatetimeIndex([]))
     signals_stream_df = DataFrame(signals_stream, example=signals_example)
 
     # Initialize Streaming DataFrame for the signals
-    dashboard = build_dashboard(signals_stream_df)
-    return account, db, signals_stream, dashboard
+    dashboard = build_dashboard(data_stream_df, signals_stream_df)
+    return db, account, data_stream, signals_stream, dashboard
 
-def build_dashboard(signals):
+
+def build_dashboard(data, signals):
     """Build the dashboard."""
-    column = pn.Column(signals.hvplot.line())
-    column_test = pn.Column()
-
-    dashboard = pn.Tabs(("Summary", column), ("Test", column_test))
+    dashboard = pn.Column(data.hvplot(), signals["entry/exit"].hvplot.scatter())
     return dashboard
+
 
 def fetch_data():
     """Fetches the latest prices."""
@@ -45,11 +52,12 @@ def fetch_data():
     )
     close = kraken.fetch_ticker("BTC/USD")['close']
     datetime = kraken.fetch_ticker("BTC/USD")['datetime']
-    df = pd.DataFrame({'close': [close], 'date': [datetime]})
+    df = pd.DataFrame({'close': [close]})
     df.index = pd.to_datetime([datetime])
     return df
 
-def generate_signal(df):
+
+def generate_signals(df):
     """Generates trading signals for a given dataset."""
     # Set window
     short_window = 10
@@ -91,7 +99,13 @@ def execute_trade_strategy(signals, account):
 
     return account
 
+
+db, account, data_stream, signals_stream, dashboard = initialize(10000)
+dashboard.servable()
+
+
 async def main():
+    loop = asyncio.get_event_loop()
 
     while True:
         global db
@@ -108,18 +122,16 @@ async def main():
         max_window = 1000
         df = pd.read_sql(f"select * from data limit {max_window}", db)
         if df.shape[0] >= min_window:
-            signals = generate_signal(df)
-            signals_stream.emit(signals[['close', 'SMA10', 'SMA20']].tail(1))
+            signals = generate_signals(df)
+            signals_stream.emit(signals)
             account = execute_trade_strategy(signals, account)
             print(f"Account Balance: {account['balance']}")
             print(f"Account Shares: {account['shares']}")
 
         # Update the Dashboard
+        data_stream.emit(new_df)
         await asyncio.sleep(1)
 
-
-account, db, signals_stream, dashboard = initialize(100000)
-dashboard.servable()
 
 # Python 3.7+
 loop = asyncio.get_event_loop()
