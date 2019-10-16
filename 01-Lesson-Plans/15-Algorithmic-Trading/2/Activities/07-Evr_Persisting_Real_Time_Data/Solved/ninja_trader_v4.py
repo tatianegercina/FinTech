@@ -5,48 +5,43 @@ import panel as pn
 import hvplot.pandas
 import ccxt
 import os
+import asyncio
 import sqlite3
-import time
 
 pn.extension()
 
 def initialize(cash):
     """Initialize the dashboard, data storage, and account balances."""
-    # Initialize account
-    account = {"balance": cash, "portfolio_holding": 0, "total_portfolio_value": 0, "active_shares": 0}
+    # Initialize Account
+    account = {"balance": cash, "shares": 0}
 
     # Initialize Database
     db = sqlite3.connect("ninja_trader_db.sqlite")
 
-    # Initialize dashboard
+    # Initialize Streaming DataFrame for the signals
     dashboard = initialize_dashboard()
-
     return account, db, dashboard
+
 
 def initialize_dashboard():
     """Build the dashboard."""
     loading_text = pn.widgets.StaticText(name="Trading Dashboard", value="Loading...")
     dashboard = pn.Column(loading_text)
     print("init dashboard")
-
     return dashboard
+
 
 def fetch_data():
     """Fetches the latest prices."""
-    # Import Kraken environment variables
     kraken = ccxt.kraken(
-        {"apiKey": os.getenv("KRAKEN_PUBLIC_KEY"), "secret": os.getenv("KRAKEN_SECRET_KEY")}
+        {"apiKey": os.getenv("kraken_key"), "secret": os.getenv("kraken_secret")}
     )
-
-    # Fetch closing price and datetimes of current ticker data
     close = kraken.fetch_ticker("BTC/USD")['close']
     datetime = kraken.fetch_ticker("BTC/USD")['datetime']
-
-    # Import data as Pandas DataFrame
     df = pd.DataFrame({'close': [close], 'date': [datetime]})
-    print(df)
-
+    df.index = pd.to_datetime([datetime])
     return df
+
 
 def generate_signal(data_df):
     """Generates trading signals for a given dataset."""
@@ -77,13 +72,14 @@ def generate_signal(data_df):
 
     return signals
 
+
 def execute_backtest(signals_df):
     """Executes a backtest on trading signal data."""
     # Set initial capital
     initial_capital = float(100000)
 
     # Set the share size
-    share_size = 500
+    share_size = int(initial_capital / signals_df['close'][0])
 
     # Take a 500 share position where the dual moving average crossover is 1 (SMA50 is greater than SMA100)
     signals_df['Position'] = share_size * signals_df['signal']
@@ -111,6 +107,7 @@ def execute_backtest(signals_df):
 
     return signals_df
 
+
 def execute_trade_strategy(signals, account):
     """Makes a buy/sell/hold decision."""
 
@@ -118,15 +115,16 @@ def execute_trade_strategy(signals, account):
         print("buy")
         number_to_buy = round(account['balance'] / signals['close'][-1], 0) * .001
         account["balance"] -= (number_to_buy * signals['close'][-1])
-        account["active_shares"] += number_to_buy
+        account["shares"] += number_to_buy
     elif signals["entry/exit"][-1] == -1.0:
         print("sell")
-        account["balance"] += signals['close'][-1] * account['active_shares']
-        account["active_shares"] = 0
+        account["balance"] += signals['close'][-1] * account['shares']
+        account["shares"] = 0
     else:
         print("hold")
 
     return account
+
 
 def evaluate_metrics(signals_df):
     """Evaluates metrics from backtested signal data"""
@@ -219,6 +217,7 @@ def evaluate_metrics(signals_df):
 
     return portfolio_evaluation_df, trade_evaluation_df
 
+
 def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df, dashboard):
     """Updates the dashboard with widgets, plots, and financial tables"""
     # Initialize static widgets
@@ -262,43 +261,47 @@ def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_
 
     # Assign tab to dashboard object
     dashboard[0] = tabs
-    print("updated dash")
 
     return
 
-# Initialize account, data storage, and dashboard objects
+
+async def main():
+
+    while True:
+        global account
+        global db
+        global dashboard
+
+        # Fetch latest pricing data
+        new_record_df = fetch_data()
+
+        # Save latest pricing data to a global DataFrame
+        new_record_df.to_sql('data', db, if_exists='append', index=True)
+
+        # Generate Signals and execute the trading strategy
+        min_window = 10
+        max_window = 1000
+        data_df = pd.read_sql(f"select * from data limit {max_window}", db)
+        if data_df.shape[0] >= min_window:
+            signals = generate_signal(data_df)
+            tested_signals = execute_backtest(signals)
+
+            account = execute_trade_strategy(tested_signals, account)
+            portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals)
+
+            print(f"Account Balance: {account['balance']}")
+            print(f"Account Shares: {account['shares']}")
+
+            # Update the dashboard
+            update_dashboard(account, signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
+
+        await asyncio.sleep(1)
+
+
+# Initialize account and dashboard objects
 account, db, dashboard = initialize(100000)
+dashboard.servable()
 
-
-while True:
-    dashboard.servable()
-    # Fetch new closing price record
-    new_record_df = fetch_data()
-    # Save new closing price record to sqlite
-    new_record_df.to_sql('data', db, if_exists='append', index=True)
-
-    # Generate Signals and execute the trading strategy
-    min_window = 30
-    max_window = 1000
-    df = pd.read_sql(f"select * from data limit {max_window}", db)
-    if df.shape[0] >= min_window:
-        # Backtest signal data, execute trade strategy, and evaluate metrics from backtested results
-        signals = generate_signal(df)
-        tested_signals = execute_backtest(signals)
-        account = execute_trade_strategy(tested_signals, account)
-        portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals)
-
-        # Update the dashboard with all metrics
-        update_dashboard(account, tested_signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
-        print(f"Account Balance: {account['balance']}")
-        print(f"Account Shares: {account['active_shares']}")
-        time.sleep(1)
-
-
-
-# def main():
-
-
-
-
-# main()
+# Python 3.7+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
