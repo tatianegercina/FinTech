@@ -8,7 +8,7 @@ The purpose of this activity is to build upon the instructions from the previous
 
 Open the solution file and walk through the following with the class:
 
-* In much of the same fashion of the previous activity, in order to transition students' trading frameworks to use real-time data, the following functions need to be modified or added.
+* In much of the same fashion of the previous activity, in order to transition students' trading frameworks to use real-time data (make an API call every second), the following functions need to be modified or added.
 
   ```python
   def initialize(cash):
@@ -102,6 +102,36 @@ Open the solution file and walk through the following with the class:
       update_dashboard(account, signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
   ```
 
-* 
+* Furthermore, because students' trading frameworks are now using real-time data, data can now be evaluated at a more granular level such that students can now make decisions based at the record level.
+
+  ```python
+  account = execute_trade_strategy(tested_signals, account)
+  ```
+
+* In the new `execute_trade_strategy` function, the algorithmic trading framework makes a decision to either buy, sell, or hold based on the latest entry/exit values of the backtested signal results. In the case of either a buy or a sell, the account dictionary is updated to reflect the change in cash balance and active share count; however, this code could be modified to place real buy or sell orders via the Kraken exchange.
+
+  ```python
+  def execute_trade_strategy(signals, account):
+    """Makes a buy/sell/hold decision."""
+
+    if signals["entry/exit"][-1] == 1.0:
+        print("buy")
+        number_to_buy = round(account['balance'] / signals['close'][-1], 0) * .001
+        account["balance"] -= (number_to_buy * signals['close'][-1])
+        account["shares"] += number_to_buy
+    elif signals["entry/exit"][-1] == -1.0:
+        print("sell")
+        account["balance"] += signals['close'][-1] * account['shares']
+        account["shares"] = 0
+    else:
+        print("hold")
+
+    return account
+  ```
+
+*
+
+  ![async-trading-dashboard](Images/async-trading-dashboard.gif)
+
 
 Ask if there are any questions before moving on.
