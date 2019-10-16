@@ -82,4 +82,26 @@ Open the solution file and walk through the following with the class:
   loop.run_until_complete(main())
   ```
 
+* Notice, however, that the following snippet takes into account the fact that in order to generate a signal based on a short and long window dual moving average crossover strategy, there must be a sufficient amount of data that is at least equal to or greater than the number defined by the short window.
+
+  ```python
+  # Generate Signals and execute the trading strategy
+  min_window = 10
+  max_window = 1000
+  if data_df.shape[0] >= min_window:
+      signals = generate_signal(data_df)
+      tested_signals = execute_backtest(signals)
+
+      account = execute_trade_strategy(tested_signals, account)
+      portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals)
+
+      print(f"Account Balance: {account['balance']}")
+      print(f"Account Shares: {account['shares']}")
+
+      # Update the dashboard
+      update_dashboard(account, signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
+  ```
+
+* 
+
 Ask if there are any questions before moving on.
