@@ -308,6 +308,8 @@ Recall students that this isn't new, a variety of `sklearn` classifiers already 
 
 Answer any questions before moving on.
 
+---
+
 ### 4. Everyone Do: Activating your first artificial neuron (15 min)
 
 In this activity, students are introduced to Keras and how they can use this library to start building neural networks.
@@ -539,6 +541,8 @@ Comment to students that in the next activity, they will learn how they can crea
 
 Answer any questions before moving on.
 
+---
+
 ### 5. Instructor Do: Connecting neurons (10 min)
 
 In this activity, students will learn how to build more complex neural networks using Keras.
@@ -723,6 +727,8 @@ Comment to students that modeling neural networks is part science and part and a
 
 Answer any questions before moving on.
 
+---
+
 ### 6. Students Do: Preventing credit card defaults with neural networks (15 min)
 
 In this activity, students will train a neural network model to predict whether a credit card holder will default in the next month.
@@ -734,6 +740,8 @@ In this activity, students will train a neural network model to predict whether 
 **Files:**
 
 * [credit-card-default.ipynb](Activities/3-Stu_CC_Default/Unsolved/credit-card-default.ipynb)
+
+---
 
 ### 7. Instructor Do: Review reventing credit card defaults with neural networks (10 min)
 
@@ -789,3 +797,108 @@ model_2 = nn_2.fit(X_train_scaled, y_train, epochs=50)
 * As it can be seen in the model's evaluation, the accuracy improves a little bit. Having more epochs not always make accuracy better.
 
 Answer any questions before moving on.
+
+---
+
+### 8. Break (15 min)
+
+---
+
+### 9. Instructor Do: Preparing Data for Neural Networks (15 min)
+
+In this section we will go over some necessary transformations of data before it can be fed into a neural network.
+
+**Files:**
+
+* [04-Ins/preparing_data.ipynb](Activities/4-Ins_Preparing_Data/Solved/preparing_data.ipynb)
+
+Open the lesson slides, move to the _Preparing Data for Neural Networks_ and highlight the following:
+
+* Like any machine learning model, neural networks require some preprocessing of data in order to be used effectively.
+
+* Neural networks cannot deal with categorical variables in their raw forms, and explanatory variables that are represented in different units or have vastly different scales of magnitude can make models difficult to train.
+
+* To solve the first problem, we apply one-hot encoding to categorical values in order to transform them into binary variables. To deal with the second, we apply standardization.
+
+* One hot encoding involves taking a categorical variable, such as color with labels "red," "white," and "blue," and creating three new variables of the colors, with each instance of the data now showing a 1 if it corresponds to that color and 0 if it does not.
+
+* With scikit-learn, one hot encoding involves two steps. First, we label encode the column (in this case, "target") and turn it into a series of numerical values based on the categorical values they correspond to. Then, we use the one hot encoder function to split the series into columns of variables, each corresponding to a category.
+
+Open the unsolved Jupyter notebook and ask students to follow along as your live code one-hot encoding and model scaling.
+
+* For this demo the iris dataset is used. The data is loaded into a DataFrame.
+
+  ![Loading data](Images/ohe-1.png)
+
+* The `class` column is going to be used to demonstrate how one-hot-encoding works in `sklearn`.
+
+* An instance of the `OneHotEncoder` module is created
+
+  ```python
+  enc = OneHotEncoder()
+  ```
+
+* In order to encode the iris classes, the encoder is fit with the values of the `class` column. Note that the values are reshaped as a one-column vector.
+
+  ```python
+  class_values = data["class"].values.reshape(-1, 1)
+  enc.fit(class_values)
+  ```
+
+* Once the encoder is fit, the `categories_` attribute stores the categories that were found by the encoder.
+
+  ![Categories identified by the encoder](Images/ohe-2.png)
+
+* The class data is encoded using the `transform` method; the result is stored a an array.
+
+  ```python
+  class_encoded = enc.transform(class_values).toarray()
+  ```
+
+* Once the data is encoded, a DataFrame is created that can be used to store the encoded data as a `CVS` for further usage.
+
+  ![One-hot encoded data](Images/ohe-3.png)
+
+* After the data is encoded, each categorical variable is represented as an a sequence of `1's` and `0's`.
+
+  ![Sample encoded data](Images/ohe-4.png)
+
+Ask the class to restate what we've accomplished with one hot encoding.
+
+* **Sample Answer**: We've transformed one categorical variable into many binary (numerical) variables, each corresponding to a category.
+
+Switch back to the lesson slides, continue with the slide entitled _Data Standardization_ and highlight the following:
+
+* Another important preprocessing task is to standardize the numerical variables in the dataset.
+
+* Standardization involves de-meaning the variables, that is, make it so that each numerical variable has a mean of `0`, and a constance variance of `1`.
+
+* This makes it so that the variables all have approximately the same size, and reduces the likelihood that outliers or variables in different units will negatively affect model performance.
+
+* Students are already familiar with the `StandardScaler` from Scikit-learn, that offers an easy way to standardize variables.
+
+Come back to the Jupyter notebook to recall data standardization, live code the demo and highlight the following.
+
+* To demonstrate data standardization, the iris numerical features are used.
+
+  ```python
+  data_to_scale = data.iloc[:, :4]
+  ```
+
+* Once the data to scale is selected, it's scaled using the `StandardScaler` following the steps that students are familiar with.
+
+```python
+# Create the StandardScaler instances
+scaler = StandardScaler()
+
+# Fit the StandardScaler
+scaler.fit(data_to_scale)
+
+# Scale the data
+scaled_data = scaler.transform(data_to_scale)
+
+# Create a DataFrame with the scaled dats
+features_scaled_data = pd.DataFrame(scaled_data, columns=data.iloc[:, :4].columns)
+```
+
+Ask students if they have any questions before moving on to the next activity.
