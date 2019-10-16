@@ -10,9 +10,9 @@ In this activity, you will use your new sentiment analysis skills in combination
 
 For this activity you have two starting files:
 
-* [sentiment_analysis.ipynb](Activities/14-Stu_Sentiment_Dashboard/Unsolved/sentiment_analysis.ipynb): Start working with this Jupyter notebook; it's a sandbox workspace where you will conduct the sentiment analysis tasks and charts creation before assembling the dashboard.
+* [sentiment_analysis.ipynb](../../Activities/14-Stu_Sentiment_Dashboard/Unsolved/sentiment_analysis.ipynb): Start working with this Jupyter notebook; it's a sandbox workspace where you will conduct the sentiment analysis tasks and charts creation before assembling the dashboard.
 
-* [sentiment_dashboard.ipynb](Activities/14-Stu_Sentiment_Dashboard/Unsolved/sentiment_dashboard.ipynb): In this Jupyter notebook, you will compile the visualizations from the previous analysis into functions that can be used for a Panel dashboard.
+* [sentiment_dashboard.ipynb](../../Activities/14-Stu_Sentiment_Dashboard/Unsolved/sentiment_dashboard.ipynb): In this Jupyter notebook, you will compile the visualizations from the previous analysis into functions that can be used for a Panel dashboard.
 
 This activity is intended to be done on teams up to three people.
 

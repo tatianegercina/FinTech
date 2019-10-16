@@ -24,7 +24,7 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [Create and Activate an AWS Account Guide](../../13-AWS-Cloud/Supplemental/1-Create-and-Activate-an-AWS-Account.md). Tell students to complete the AWS account creation and verify it with a TA before the end of today's class. This should help catch account creation issues outside of the class time.
+* Slack out the [Create and Activate an AWS Account Guide](../../13-AWS-Cloud/Supplemental/1-Create-and-Activate-an-AWS-Account.md). Tell students to complete the AWS account creation and verify it with a TA before the end of today's class. This should help catch account creation issues outside of class time.
 
 * It may not be immediately obvious to students why POS tagging and named entity extraction are important techniques in natural language processing. While their outputs will not always be directly used for analysis, these processes are critical for sifting through text to its most important or pertinent aspects.
 
@@ -38,7 +38,7 @@ By the end of the class, students will be able to:
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1x3Wxnv1piynJy3GnoZHBfoyGneRayibAgZhHCRBzs6s/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy."
 
@@ -48,7 +48,7 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students back to class. Today's class will introduce a few new concepts but will also help put everything together that we've learned in this unit. We'll work with spaCy, another useful tool for general-purpose natural language processing (NLP), and go through a few activities that make use of this tool and others from this unit. The activities today should be rewarding and fun, and students are encouraged to think about out-of-the-box approaches to meet the requirements. Pause for questions about either the homework or previous lessons, then open the slides and continue to the introduction on spaCy.
+Welcome students back to class. Today's class will introduce a few new concepts but will also help put everything together that we have learned in this unit. We will work with spaCy, another useful tool for general-purpose natural language processing (NLP), and go through a few activities that make use of this tool and others from this unit. The activities today should be rewarding and fun, and students are encouraged to think about out-of-the-box approaches to meet the requirements. Pause for questions about either the homework or previous lessons, then open the slides and continue to the introduction on spaCy.
 
 ---
 
@@ -56,13 +56,13 @@ Welcome students back to class. Today's class will introduce a few new concepts 
 
 Tell students that to implement POS tagging and named entity recognition (more on these later), we will be using spaCy.
 
-* SpaCy is different from NLTK in that it is mainly statistical-based instead of rule-based, meaning that spaCy's core functions depend on language models learned from tagged text instead of programmed rules. This makes spaCy more flexible and in many cases more accurate than some of the NLTK tools.
+* SpaCy is different from NLTK in that it is mainly statistical-based instead of rule-based, meaning that spaCy's core functions depend on language models learned from tagged text instead of programmed rules. This makes spaCy more flexible and in many cases, more accurate than some of the NLTK tools.
 
 * We will be using spaCy for part-of-speech tagging, named entity recognition, and dependency parsing. These tasks are more suitable for model-based solutions because they are complex and depend highly on context.
 
 * SpaCy also provides tools for tasks like tokenization and lemmatization, which we've already learned with NLTK, and creating word vectors, which is beyond the scope of this unit but is a foundation for deep learning for NLP.
 
-* In comparison to NLTK, spaCy's language models trade off accuracy for speed, so if the corpus is large then students may prefer a simpler, rule-based solution.
+* In comparison to NLTK, spaCy's language models trade off accuracy for speed, so if the corpus is large, then students may prefer a simpler, rule-based solution.
 
 Ask students to check out spaCy's documentation at https://spacy.io/usage
 
@@ -70,7 +70,7 @@ Ask students to check out spaCy's documentation at https://spacy.io/usage
 
 ### 3. Instructor Do: POS Tagging and Dependency Parsing (10 min)
 
-This activity introduces students to two important concepts that add grammatical features to text. Part-of-speech tagging is intuitive—each word in a sentence is designated a grammatical part of speech, such as noun, verb, or adjective. Dependency parsing follows this step. Adjectives describe nouns, adverbs describe verbs, nouns can be the subject or object of verbs, and so forth. Each sentence is made of not just the words that it contains but also the relationships that are implicit between them, and a dependency parser is an NLP tool that tries to make these relationships explicit.
+This activity introduces students to two important concepts that add grammatical features to text. Part-of-speech tagging is intuitive—each word in a sentence is designated a grammatical part of speech, such as noun, verb, or adjective. Dependency parsing follows this step. Adjectives describe nouns, and adverbs describe verbs, nouns can be the subject or object of verbs, and so forth. Each sentence is made of not just the words that it contains but also the relationships that are implicit between them, and a dependency parser is an NLP tool that tries to make these relationships explicit.
 
 **Files:**
 
@@ -78,7 +78,7 @@ This activity introduces students to two important concepts that add grammatical
 
 Go through the demo line by line, pausing for questions and highlighting these points.
 
-* Notice that we need to load the language model before using spaCy's various NLP tools. If the text we wanted to analyze were in a foreign language, we'd need to load a different model.
+* Notice that we need to load the language model before using spaCy's various NLP tools. If the text we wanted to analyze were in a foreign language, we would need to load a different model.
 
 * SpaCy tokenizes each word and stores the POS and dependency data inside each token. To access them, we need to iterate through each token and access its pos_ attribute.
 
@@ -140,7 +140,7 @@ def get_counts(text, word):
     return tok.count(word)
 ```
 
-* Once we get the counts for each word, we can put the three lists in a DataFrame. In order to create a chart over time, though, we need a x-axis with dates. Luckily, the years of the speeches are part of each fileid—we can extract those years and turn it into a DateTime index with two lines of code:
+* Once we get the counts for each word, we can put the three lists in a DataFrame. In order to create a chart over time, though, we need an x-axis with dates. Luckily, the years of the speeches are part of each fileid—we can extract those years and turn it into a DateTime index with two lines of code:
 
 ```python
 dates = [i.split('-')[0] for i in ids]
@@ -164,7 +164,7 @@ def describe_america(text):
 
 ### 6. Instructor Do: Named Entity Recognition (10 min)
 
-This activity introduces students to named entity recognition (NER), a process that extracts specific types of nouns ("named entities") from text. Named entities are often proper nouns, but NER tools can also extract things like currency, dates, and times. Like POS tagging and dependency parsing, NER gives us a way of being more precise with our text analysis, only extracting the words that meet a specific grammatical or semantic criteria.
+This activity introduces students to named entity recognition (NER), a process that extracts specific types of nouns ("named entities") from the text. Named entities are often proper nouns, but NER tools can also extract things like currency, dates, and times. Like POS tagging and dependency parsing, NER gives us a way of being more precise with our text analysis, only extracting the words that meet a specific grammatical or semantic criteria.
 
 **Files:**
 
@@ -195,7 +195,7 @@ Before moving on to the next student activity, ask the class to search for spaCy
 
 ### 7. Student Do: NER Clouds (15 min)
 
-In this activity students will extract named entities of their own choosing from the Reuters Corpus and build a word cloud from these entities.
+In this activity, students will extract named entities of their own choosing from the Reuters Corpus and build a word cloud from these entities.
 
 **Instructions:**
 
@@ -215,7 +215,7 @@ In this activity students will extract named entities of their own choosing from
 
 Open the solved notebook and walk through the activity code.
 
-* As with most NLP tasks, it's advantageous to manually inspect a few of the documents in a corpus if you're unfamiliar with the corpus to understand it better. Here, we can use the displaCy tool to make this easier for us.
+* As with most NLP tasks, it is advantageous to manually inspect a few of the documents in a corpus if you are unfamiliar with the corpus to understand it better. Here, we can use the displaCy tool to make this easier for us.
 
 * Having decided to extract organizations and geopolitical entities, we can use the following code to extract them from the corpus.
 
@@ -242,13 +242,13 @@ Ask students to talk about their own strategies for selecting entity types and w
 
 ### 10. Instructor Do: Text as Feature (10 min)
 
-In this activity, we'll ask students to remind themselves of the tools and techniques they've learned in this unit and talk about how we can use them to create numerical features (structured data) from text (unstructured data).
+In this activity, we'll ask students to remind themselves of the tools and techniques they've learned in this unit and talk about how we can use them to create numerical features (structured data) from the text (unstructured data).
 
-Ask the class to recall the lessons of this unit. Call on volunteers to list some of the tools and techniques that we've learned in this unit.
+Ask the class to recall the lessons of this unit. Call on volunteers to list some of the tools and techniques that we have learned in this unit.
 
 * Techniques include preprocessing, tokenizing, and lemmatizing text; aggregating word counts; creating ngrams; normalizing to TF-IDF weights; sentiment analysis; parsing and pos-tagging text; and named entity recognition. Tools include the libraries NLTK, word cloud, and spaCy.
 
-We've learned a lot! Tell the class that it's often not enough to transform text data in the ways that we've done. In order to use this data for classification or prediction, we need to make them features—numerical representations of unstructured text. Ask the class for examples of features that can be created from text documents.
+We have learned a lot! Tell the class that it is often not enough to transform text data in the ways that we have done. In order to use this data for classification or prediction, we need to make them features—numerical representations of unstructured text. Ask the class for examples of features that can be created from text documents.
 
 * Some examples of features include: length of document, count of a key word; count of named entities, sentiment scores, percent of words that are adjectives, and total TF-IDF score. These features can then be used, for example, to classify a document to a category or predict the effect of an earnings call on a stock price.
 
@@ -301,7 +301,7 @@ def get_headlines(keyword):
     return all_headlines, all_dates
 ```
 
-Walk through the next few blocks of code, which contain the keywords we chose to look for. Ask the class what other keywords they used and why they thought those topics might be correlated with Apple stock.
+Walkthrough the next few blocks of code, which contain the keywords we chose to look for. Ask the class what other keywords they used and why they thought those topics might be correlated with Apple stock.
 
 * The function below calculates an average sentiment score for each day for each topic. We chose to take the average of the compound sentiment score as implemented by VADER.
 
@@ -333,13 +333,13 @@ Ask students whether they found topic sentiments that are more closely correlate
 
 ### 13. Student Do: Crisis Analysis Dashboard (40 min)
 
-In this mini-project activity, students will use their new sentiment analysis skills in combination with some of the skills they have already mastered, such as Pandas, PyViz, Plotly Express and PyViz Panel, to create a data visualization dashboard.
+In this mini-project activity, students will use their new sentiment analysis skills in combination with some of the skills they have already mastered, such as Pandas, PyViz, Plotly Express, and PyViz Panel, to create a data visualization dashboard.
 
 Students will analyze sentiment and tone about the news related to the financial crisis of 2008 that was published in the past month, fetching articles from the News API. By default, the developer account gives access to news articles up to a month old.
 
 Present the solution demo to students before starting the activity and join TAs to assist students with this activity.
 
-* This activity can be done on teams of up to three students.
+* This activity can be done in teams of up to three students.
 
 **Instructions:**
 
@@ -388,7 +388,7 @@ plt.style.use("seaborn-whitegrid")
 pn.extension('plotly')
 ```
 
-* It's important to define the `page_size=100` on the News API instance to have more interesting number of news articles to analyze.
+* It is important to define the `page_size=100` on the News API instance to have a more interesting number of news articles to analyze.
 
   ```python
   crisis_news_en = newsapi.get_everything(
@@ -416,7 +416,7 @@ pn.extension('plotly')
           pass
   ```
 
-* The `hvplot.table()` only supports one signature: either all columns are plotted or a subset of columns can be selected by defining the `columns` parameter explicitly.
+* The `hvplot.table()` only supports one signature: either all columns are plotted, or a subset of columns can be selected by defining the `columns` parameter explicitly.
 
   ```python
   pos_news_table = pos_news.hvplot.table(
@@ -428,7 +428,7 @@ pn.extension('plotly')
 
   ![DataFrame creation sample with news articles and tone analysis results](Images/tone_analysis_progress_bar.png)
 
-Explain to students that it's important to create the CSV files on this section to reduce the processing time on the dashboard creation by only reading the final results from the files.
+Explain to students that it is important to create the CSV files on this section to reduce the processing time on the dashboard creation by only reading the final results from the files.
 
 Continue the review activity by opening the `sentiment_dashboard.ipynb` Jupyter notebook; walk through the solution and highlight the following:
 
@@ -446,13 +446,13 @@ Continue the review activity by opening the `sentiment_dashboard.ipynb` Jupyter 
 
 On the Plots Functions section comment to students on the following:
 
-* It's important to include any DataFrame transformation or manipulation code required along with the plotting code.
+* It is important to include any DataFrame transformation or manipulation code required along with the plotting code.
 
 * Each function should return a Panel pane object that will be used to build the dashboard.
 
 * Any `.show()` methods should be removed from the code.
 
-* The final dashboard could be like the one shown bellow.
+* The final dashboard could be like the one shown below.
 
   ![Sample dashboard](Images/sentiment_analysis_dashboard.gif)
 
