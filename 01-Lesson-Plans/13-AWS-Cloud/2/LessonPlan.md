@@ -30,7 +30,7 @@ By the end of class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 13.2 Slides]().
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/17jc9_8FMijZJdai1JNnAQTO33HV-mhxFaMwI5FxRL8Q/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
 
@@ -497,7 +497,7 @@ Explain to students that once you have the predictions, the model can be evaluat
 * Additionally, the `RMSE` and `R2` scores are calculated.
 
   ![Deploy SageMaker Model - step 5](Images/deploy-sagemaker-5.png)
-  
+
   Finally, after reviewing the model evaluation's results, explain to students that the end point needs to be deleted to avoid additional AWS resources usage and extra billing.
 
 ```python
