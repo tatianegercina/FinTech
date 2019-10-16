@@ -179,22 +179,17 @@ The instructor will provide a brief walk through of the homework solution. Time 
 
 **File:** [Homework Instructions](../../../02-Homework/10-Time-Series/Instructions/README.md)
 
-
 Open the homework instructions, and highlight the following:
 
-* This week's homework will be a deep dive into the various methods and techniques of analyzing and forecasting time series data. Students will use the **Hodrick-Prescott** filter, as well as **GARCH** and **EGARCH** models to complete time-series return forecasting and volatility forecasting.
+* This week's homework will be a deep dive into the various methods and techniques of analyzing and forecasting time series data. Students will use the **Hodrick-Prescott** filter, as well as **ARMA**, **ARIMA**, and **GARCH** models to complete time-series return forecasting and volatility forecasting. Students will also use Linear Regression to model the returns data.
 
-* Explain to students that this homework will consist of three parts:
+* Explain to students that this homework will consist of two parts:
 
-  * Time-Series Return Forecasting
+  * Time-Series Forecasting - forecasting Settle prices, Settle Returns, and Volatility.
 
-  * Volatility Forecasting
-
-  * Out-of-Sample Predictions
+  * Linear Regression Modeling - predicting returns using linear regression.
 
 * Communicate to students that by the end of the homework, they will have gained proficiency in using time series approaches and models to forecast financial data.
-
-* Indicate to students that the homework will leverage the **Quandl** API. Remind students that **Quandl** requires an API key and that they will have to have the key stored, sourced, and exported as an environment variable.
 
 Ask students if they have any questions before moving on.
 
