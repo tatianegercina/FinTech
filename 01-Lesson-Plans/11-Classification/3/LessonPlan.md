@@ -21,6 +21,9 @@ By the end of class, students will be able to:
 
 * It is important for this class to make use of the slides, since concepts like confusion matrices or the precision-recall curve may be easier for many students to understand visually.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [11.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=51d87669-ec9e-4420-8606-aae300f75ceb) Note that this video may not reflect the most recent lesson plan.
+
 ### Class Slides and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1qaiDAlthQE0ECwlJYmm0zaYtCoBM9C17BUNcdHybFhI/edit?usp=sharing).
