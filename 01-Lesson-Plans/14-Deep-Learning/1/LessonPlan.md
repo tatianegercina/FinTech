@@ -929,3 +929,9 @@ This day may be hard for students since several new concepts were covered, spend
 * Neural networks are not the panacea; they are just other options in the machine learning realm; in the end, the only way to find a solution is by testing and benchmarking different algorithms.
 
 Congratulate students on learning a new skill that will add value to their professional portfolio; answer any questions before ending the class.
+
+## End Class
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
