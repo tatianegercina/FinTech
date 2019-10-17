@@ -2,9 +2,9 @@
 
 ### Overview
 
-Today's class introduces students to a neural networks, a new member of the machine learning algorithms that can be used for classification and regression problems, but are perhaps uniquely able to learn very complex, non-linear models. Conceptually, neural networks were inspired by neurons in the human brain, and have a similar property of scaling to meet the complex environments that they operate in.
+Today's class introduces students to a neural networks, a new member of the machine learning algorithms that can be used for classification and regression problems but are perhaps uniquely able to learn very complex, non-linear models. Conceptually, neural networks were inspired by neurons in the human brain, and have a similar property of scaling to meet the complex environments that they operate in.
 
-Neural networks are very flexible in their applications, but they are not necessarily meant to be "plug-and-play." From preprocessing input data to constructing a neural network architecture, students will learn the process to successfully construct and use neural networks.
+Neural networks are very flexible in their applications, but they are not necessarily meant to be "plug-and-play." From preprocessing input data to constructing a neural network architecture, students will learn the process to construct and use neural networks successfully.
 
 ### Class Objectives
 
@@ -14,7 +14,7 @@ By the end of class, students will be able to:
 
 * Explain the intuition of how weights of neurons are determined.
 
-* Understand how choice of inputs and hidden layers apply to problems regression and classification.
+* Understand how the choice of inputs and hidden layers apply to problems with regression and classification.
 
 * Experiment with architecture in Tensor Flow playground.
 
@@ -22,7 +22,7 @@ By the end of class, students will be able to:
 
 * Identify the Python libraries available to build neural networks.
 
-* Describe what are the pros and cons of using Keras for building neural networks.
+* Describe what the pros and cons of using Keras for building neural networks are.
 
 * Implement neural nets with Python Keras API.
 
@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 * Give students the opportunity to ask questions, and when necessary, have students save questions for the review sessions or office hours.
 
-* Today should also be fun, since we'll be playing with neural nets in several ways to experiment with input, architecture, and algorithms.
+* Today should also be fun since we'll be playing with neural nets in several ways to experiment with input, architecture, and algorithms.
 
 * A thorough understanding of neural networks would require math that's beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms in order to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
 
@@ -56,7 +56,7 @@ The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 Open the lesson slides and welcome students to the first day of deep learning! Indicate that Today's class will begin with an introduction to the basic unit of neural networks before moving on to constructing simple neural nets.
 
-As an icebreaking activity, open the class by asking the following questions to students:
+As an ice-breaking activity, open the class by asking the following questions to students:
 
 * What do you think a neural network is?
 
@@ -76,7 +76,7 @@ As an icebreaking activity, open the class by asking the following questions to 
 
   * **Sample Answer:** Automated trading based on artificial intelligence.
 
-Ask for two or three volunteers to share their insights, and comment to students that Today they will answer these questions.
+Ask for two or three volunteers to share their insights, and explain to students that Today they will answer these questions.
 
 Ask if there are any questions before moving on.
 
@@ -94,11 +94,11 @@ Start the presentation by showing students the following image from the [Rorscha
 
   ![Rorschach Test Card](Images/Rorschach_blot_05.jpg)
 
-Allow students to play around for few seconds sharing what they see, continue the presentation by telling students that there is no precise answer to this question.
+Allow students to play around for a few seconds sharing what they see, continue the presentation by telling students that there is no precise answer to this question.
 
 Continue to the _How our brain works_ slide, and explain to students that any similitude they could find from the image with a real object, is possible because our brain uses thousands of neurons connections to find a match between the visual input and a mental representation of an object.
 
-Follow to the slide entitled _Our brain as inspiration for artificial neural nets_, and comment to students that this power of our brain to process information and make predictions or interpretations is the fact that inspires neurophysiologists and mathematicians to start the development of artificial neural networks (ANN).
+Follow to the slide entitled _Our brain as inspiration for artificial neural nets_, and explain to students that this power of our brain to process information and make predictions or interpretations is the fact that inspires neurophysiologists and mathematicians to start the development of artificial neural networks (ANN).
 
 * In the same way biological neurons receive input signals through the dendrites, an ANN is able to receive input variables and process those inputs using an activation function to compute an output, akin the neuron nucleus in the brain.
 
@@ -106,11 +106,11 @@ Tell students that you will go over the details of how a neuron works in the nex
 
 Continue to _The History of Neural Networks_ slide and highlight the following:
 
-* The concept of ANNs was presented for the very first time in 1943, when Warren McCulloch and Walter Pitts opened the subject by creating a computational model for neural networks that they implemented using electrical circuits.
+* The concept of ANNs was presented for the very first time in 1943 when Warren McCulloch and Walter Pitts opened the subject by creating a computational model for neural networks that they implemented using electrical circuits.
 
 * From that initial idea of a single neuron, the concept evolved the last decades to more complex models that propose creating connections between neurons to the point of creating what we know Today as neural networks.
 
-* Nowadays neural networks are discussed in almost every field, from preventing cancer or credit card frauds to creating artistic expressions using artificial intelligence or having self-driving cars.
+* Nowadays, neural networks are discussed in almost every field, from preventing cancer or credit card frauds to creating artistic expressions using artificial intelligence or having self-driving cars.
 
 Follow to the slide entitled _The Future is here: Awesome applications of neural nets_ and highlight the following:
 
@@ -124,7 +124,7 @@ Follow to the slide entitled _The Future is here: Awesome applications of neural
 
 * Neural networks are also used to create a better world, not only for humans but also for wildlife thanks to projects like the one led by the U.S. National Oceanic and Atmospheric Administration where they are saving whales by tracking the north Atlantic right whales population using neural networks for image recognition.
 
-As you continue to the slide entitled _Neural Networks Applications in Finance_, comment to students that financial sector is leading in the use of neural networks, highlight the following applications and slack out the links of each one for further reference:
+As you continue to the slide entitled _Neural Networks Applications in Finance_, explain to students that financial sector is leading in the use of neural networks, highlight the following applications and slack out the links of each one for further reference:
 
 * [Credit card fraud detection](https://www.semanticscholar.org/paper/Credit-card-fraud-detection-with-a-neural-network-Ghosh-Reilly/ba70a74262adec9dcfa47b5710752d2537a07af4)
 
@@ -138,7 +138,7 @@ As you continue to the slide entitled _Neural Networks Applications in Finance_,
 
 * [Preventing Money Laundering](https://doi.org/10.1109/ICNSC.2019.8743234)
 
-Comment to students that there are several deep mathematical concepts behind neural networks that are beyond the scope of Today's class.
+Explain to students that there are several deep mathematical concepts behind neural networks that are beyond the scope of Today's class.
 
 Explain to students that this week, we will give an intuitive introduction to the components that make up a neural network and how they work together to learn.
 
@@ -154,7 +154,7 @@ Continue to the _Python Libraries for Neural Networks_ slide, explain to student
 
 * [Keras](https://keras.io/)
 
-Comment to students that we will use Keras in the class and that an introduction comes next; in the meantime, it's time for a funny example about how neural networks work.
+Explain to students that we will use Keras in the class and that an introduction comes next; in the meantime, it's time for a funny example about how neural networks work.
 
 Open your web browser and navigate to [the Teachable Machine website](https://teachablemachine.withgoogle.com). This web application shows the fundamental mechanism of a neural network by training a model that recognizes gestures from your webcam to predict one of three classes.
 
@@ -170,7 +170,7 @@ Once you open the Teachable Machine website, follow the next steps to conduct th
 
 * Explain to students that now you are going to train the neural network model.
 
-* Raise your left hand and press the _TRAIN GREEN_ button for few seconds, comment to students that your current image is the input data for the neural network, it's learning that these visual patterns correspond to a cute kitten.
+* Raise your left hand and press the _TRAIN GREEN_ button for few seconds, explain to students that your current image is the input data for the neural network, it's learning that these visual patterns correspond to a cute kitten.
 
   ![Teachable Machine - Step 3](Images/intro_nns_3.gif)
 
@@ -178,25 +178,25 @@ Once you open the Teachable Machine website, follow the next steps to conduct th
 
   ![Teachable Machine - Step 4](Images/intro_nns_4.gif)
 
-* Finally, train the orange class by making a funny face and press the _TRAIN ORANGE_ button for few seconds, comment to students that you are telling the neural network that this crazy pose corresponds to a little bunny.
+* Finally, train the orange class by making a funny face and press the _TRAIN ORANGE_ button for few seconds, explain to students that you are telling the neural network that this crazy pose corresponds to a little bunny.
 
   ![Teachable Machine - Step 5](Images/intro_nns_5.gif)
 
 Now that you train the model, play around by making several poses and faces to the camera:
 
-*  Rise your right hand and explain to students, that despite the neural network were trained to recognize your left hand raised, these kind of models are continuously learning and are capable of recognizing and learning new patterns.
+* Rise your right hand and explain to students that despite the neural network were trained to recognize your left hand raised, these kinds of models are continuously learning and are capable of recognizing and learning new patterns.
 
-* Make a tricky test by partially raising your left hand, comment to students that the neural network gets confused but is still learning as can be seen on the confidence bars, finally the model is able to make a decision about your partial hand raised.
+* Make a tricky test by partially raising your left hand, explain to students that the neural network gets confused but is still learning as can be seen on the confidence bars; finally, the model is able to make a decision about your partial hand raised.
 
 ![Teachable Machine - Step 6](Images/intro_nns_6.gif)
 
-Comment to students that this funny experiment is just an example of the power of neural networks, instead of matching gestures with silly pets, you can use this kind of technology for business applications like building security systems.
+Explain to students that this funny experiment is just an example of the power of neural networks, instead of matching gestures with silly pets, you can use this kind of technology for business applications like building security systems.
 
 Answer any questions before moving on.
 
 ---
 
-### 3. Instructor Do: Neuron's Anatomy (15 min)
+### 3. Instructor Do: Anatomy of a Neuron (15 min)
 
 After going more in-depth with neural networks, this activity will explain to students how single artificial neurons work.
 
@@ -214,7 +214,7 @@ Open the lesson slides. Move to the _Neuron's Anatomy_ section and highlight the
 
 * Every input data signal is weighted according to the relevance of each one under the context of the problem the perceptron was designed.
 
-* The perceptron takes a weighted sum of the inputs and set the output as `1` only when the sum is more than an arbitrary threshold (theta - `θ`).
+* The perceptron took a weighted sum of the inputs and set the output as `1` only when the sum is more than an arbitrary threshold (theta - `θ`).
 
 * Theta is added as a special input labeled as _X<sub>0</sub>=1_ with the weight `-θ`, like it's shown in the figure above.
 
@@ -232,7 +232,7 @@ After this brief technical introduction to the perceptron, continue with the fol
 
 * In the case of the father with two children, the model may give a lot of importance (high weight) to the `isNewRelease` and `isForChildren` inputs, and penalize the weights of the `isAwardWinning` input.
 
-* The key point is, the weights and the threshold (`θ` also referred as bias) will depend on the data available, the viewing history in this case.
+* The key point is, the weights and the threshold (`θ` also referred to as bias) will depend on the data available, the viewing history in this case.
 
 Continue to the slide entitled _The perceptron may be harsh_ and highlight the following:
 
@@ -252,7 +252,7 @@ Move to the slide entitled _Introducing the Activation Function_ and highlight t
 
   ![Sigmoid functions](Images/sigmoid_functions.png)
 
-* Using an activation function the output is a probability.
+* Using an activation function, the output is a probability.
 
 * Instead of _yes/no_ decision, with an activation function, we get the probability of yes, similar to using logistic regression.
 
@@ -272,13 +272,13 @@ Click on the [pre-configured link](https://playground.tensorflow.org/#activation
 
   ![tf_play.png](Images/tf_play.png)
 
-* In the same row as the play button, there are dropdowns for **Learning Rate**; **Activation Function**; **Regularization**; etc. These options affect how quickly a network learns and influence the goodness of its predictions.
+* In the same row as the play button, there are dropdowns for **Learning Rate**; **Activation Function**; **Regularization**; etc. These options affect how quickly a network learns and influences the goodness of its predictions.
 
 * **Problem Type** is also on this row, and allows us to select whether we want the neural net to solve a regression or classification problem. We'll demonstrate a classification problem for now.
 
 * Below this row are headings for **Data**; **Features**; **Hidden Layers**; and **Output**.
 
-* Under **Data**, we can select the data set on which to train the model. The options are two-dimensional data, which are easy to visualize. The two blobs in the bottom left is selected for this demo.
+* Under **Data**, we can select the data set on which to train the model. The options are two-dimensional data, which are easy to visualize. The two blobs in the bottom left are selected for this demo.
 
   ![two_blobs.png](Images/two_blobs.png)
 
@@ -324,9 +324,9 @@ Open the lesson slides, go to the _Activating Your First Artificial Neuron_ sect
 
 * There are two ways to code a neuron:
 
-  * You can do all the math behind and code it using Python, Pandas, and NumPy.
+  * You can do all the math and code it from scratch using Python, Pandas, and NumPy.
 
-  * You can use an industry-standard API or framework to speed up your implementation and focus your efforts on improving your model and have a better understanding of the business problem you want to solve.
+  * Or, you can use an industry-standard API or framework to speed up your implementation and focus your efforts on improving your model and have a better understanding of the business problem you want to solve.
 
 * We are going to use [TensorFlow](https://www.tensorflow.org/) and [Keras](https://keras.io/) to build our Neural Networks.
 
@@ -388,9 +388,9 @@ Explain to students that we will start coding a neural network with a single neu
   X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
   ```
 
-Explain to students that before using a neural network, it's important to normalize or standardize the data.
+Explain to students that before using a neural network, it's important to normalize or standardize the data. Neural networks typically perform better when each of the input features are on the same scale. This makes it easier for the neural network to stabilize and adjust the weights in the network.
 
-* The `StandardScaler` is used to scale the features data. There is no need to scale the target data (`y`) since it's already encoded as `0` and `1`.
+* Scikit-Learn's `MinMaxScaler` or `StandardScaler` are commonly used to scale and normalize input features. The `StandardScaler` is used here to scale the features data. There is no need to scale the target data (`y`) since it's already encoded as `0` and `1`.
 
   ```python
   # Create scaler instance
@@ -489,7 +489,7 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
 
   ![Neuron predictions](Images/neuron_predictions.png)
 
-Comment to students that using this simple one-neuron neural network is just an example to show them how a neural network can be constructed using Keras. This model is as effective as a logistic regression for linear data, now the question that arises is, how good this model could be for non-linear data?
+Explain to students that using this simple one-neuron neural network is just an example to show them how a neural network can be constructed using Keras. This model is as effective as logistic regression for linear data, now the question that arises is, how good this model could be for non-linear data?
 
 Continue the demo to demonstrate what happens when we use this model with non-linear data.
 
@@ -539,7 +539,7 @@ model_moon = neuron.fit(X_moon_train_scaled, y_moon_train, epochs=100, shuffle=T
 
   ![Non-linear data evaluation](Images/non_linear_loss_accuracy.png)
 
-Comment to students that in the next activity, they will learn how they can create more complex networks.
+Explain to students that in the next activity, they will learn how they can create more complex networks that can handle more complexity and non-linearity in the data.
 
 Answer any questions before moving on.
 
@@ -602,7 +602,7 @@ Explain to students that now you are going to create a more complex neural netwo
 
 ![Neural net sample](Images/simple-nn.png)
 
-Comment to students, that the rule-of-thumb for a neural network is to have triple the amount of nodes in the hidden layer as the number of inputs, this is not true of deep learning, but it's a good point to start prototyping a neural network.
+Explain to students that the rule-of-thumb for a neural network is to have triple the amount of nodes in the hidden layer as the number of inputs, this is not true of deep learning, but it's a good point to start prototyping a neural network.
 
 Start building the neural network and highlight the following.
 
@@ -669,7 +669,7 @@ Collect a couple of answers from the class and highlight the following:
 
 * Using more epochs for training is another strategy to improve the model's accuracy.
 
-Comment to students that modeling neural networks is part science and part and art; the best model will be the result of several tests by playing around with the number of neurons and testing different activation functions.
+Explain to students that modeling neural networks is part science and part and art; the best model will be the result of several tests by playing around with the number of neurons and testing different activation functions.
 
 Answer any questions before moving on.
 
@@ -695,7 +695,7 @@ In this activity, students will train a neural network model to predict whether 
 
 * [credit-card-default.ipynb](Activities/03-Stu_CC_Default/Solved/credit-card-default.ipynb)
 
-Walk through the solution and highlight the following:
+Walkthrough the solution and highlight the following:
 
 * After the data is read in a DataFrame, it is split and scaled using the `StandardScaler()` function from `sklearn`.
 
@@ -719,7 +719,7 @@ Walk through the solution and highlight the following:
 
   ![Model evaluation](Images/cc-results.png)
 
-* The accuracy is not great, but also is not as bad to discard the model. It could be used in a real-world scenario to run a pilot project.
+* The accuracy is not great, but it also is not as bad to discard the model. It could be used in a real-world scenario to run a pilot project.
 
 Explain to students that for the challenge section, different approaches could be taken, for this demo, the `tanh` activation function is used in the output layer, and the model is trained with `50` epochs.
 
@@ -816,7 +816,7 @@ Switch back to the lesson slides, continue with the slide entitled _Data Standar
 
 * Another critical preprocessing task is to standardize the numerical variables in the dataset.
 
-* Standardization involves de-meaning the variables, that is, make it so that each numerical variable has a mean of `0`, and a constant variance of `1`.
+* Standardization involves de-meaning the variables, that is, make it so that each numerical variable has a mean of `0`, and constant variance of `1`.
 
 * This makes it so that the variables all have approximately the same size, and reduces the likelihood that outliers or variables in different units will negatively affect model performance.
 
@@ -852,7 +852,7 @@ Ask students if they have any questions before moving on to the next activity.
 
 ### 10. Students Do: Voice Gender Recognition (30 min)
 
-In this activity, students will create a neural network to predict the gender of a voice using acoustic properties of the voice and speech.
+In this activity, students will create a neural network to predict the gender of a voice using the acoustic properties of the voice and speech.
 
 **Files:**
 
@@ -894,7 +894,7 @@ Ask students if they have any questions before moving on.
 
 ### 12. Instructor Do: Homework Demo (10 mins)
 
-In this activity, the instructor will conduct a demonstration for the homework.
+In this activity, the instructor will conduct a demonstration of the homework.
 
 **Files:**
 
@@ -926,6 +926,6 @@ This day may be hard for students since several new concepts were covered, spend
 
 * Mastering neural networks take time; however, thanks to frameworks like Keras, you don't need to have a Ph.D. to start using neural networks to solve real-world problems.
 
-* Neural networks are not the panacea; they are just other options in the machine learning realm, in the end, the only way to find a solution is by testing and benchmarking different algorithms.
+* Neural networks are not the panacea; they are just other options in the machine learning realm; in the end, the only way to find a solution is by testing and benchmarking different algorithms.
 
 Congratulate students on learning a new skill that will add value to their professional portfolio; answer any questions before ending the class.
