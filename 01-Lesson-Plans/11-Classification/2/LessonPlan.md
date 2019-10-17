@@ -38,6 +38,9 @@ By the end of the unit, students will be able to:
 
 * Overfitting is a common problem in machine learning that will be discussed today, so take your time to understand its implications and how the techniques covered in this class can help to avoid it.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [11.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8c4c5255-0418-48d5-8a9e-aae001123070) Note that this video may not reflect the most recent lesson plan.
+
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1AjhsJ-tToVzqX-D63O_0EPC9QEZeuDhDYjMPhOPDz7Y/edit?usp=sharing).
