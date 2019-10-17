@@ -82,7 +82,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 2. Instructor Do: Neural Networks are Cool! (10 min)
+### 2. Instructor Do: Neural Networks are Cool! (15 min)
 
 In this activity, students will be introduced to neural networks and some of their applications.
 
@@ -196,7 +196,7 @@ Answer any questions before moving on.
 
 ---
 
-### 3. Instructor Do: Neuron's Anatomy (10 min)
+### 3. Instructor Do: Neuron's Anatomy (15 min)
 
 After going more in-depth with neural networks, this activity will explain to students how single artificial neurons work.
 
@@ -318,7 +318,7 @@ In this activity, students are introduced to Keras and how they can use this lib
 
 **Files:**
 
-* [artificial-neuron.ipynb](Activities/1-Evr_Keras_Intro/Solved/artificial-neuron.ipynb)
+* [artificial-neuron.ipynb](Activities/01-Evr_Keras_Intro/Solved/artificial-neuron.ipynb)
 
 Open the lesson slides, go to the _Activating Your First Artificial Neuron_ section and highlight the following:
 
@@ -545,13 +545,13 @@ Answer any questions before moving on.
 
 ---
 
-### 5. Instructor Do: Connecting neurons (10 min)
+### 5. Instructor Do: Connecting neurons (15 min)
 
 In this activity, students will learn how to build more complex neural networks using Keras.
 
 **Files:**
 
-* [connecting_neurons.ipynb](Activities/2-Ins_Connecting_Neurons/Solved/connecting_neurons.ipynb)
+* [connecting_neurons.ipynb](Activities/02-Ins_Connecting_Neurons/Solved/connecting_neurons.ipynb)
 
 Explain to students that now they will learn how to create more complex neural networks.
 
@@ -675,17 +675,17 @@ Answer any questions before moving on.
 
 ---
 
-### 6. Students Do: Preventing credit card defaults with neural networks (15 min)
+### 6. Students Do: Preventing credit card defaults with neural networks (20 min)
 
 In this activity, students will train a neural network model to predict whether a credit card holder will default in the next month.
 
 **Instructions:**
 
-* [README.md](Activities/3-Stu_CC_Default/README.md)
+* [README.md](Activities/03-Stu_CC_Default/README.md)
 
 **Files:**
 
-* [credit-card-default.ipynb](Activities/3-Stu_CC_Default/Unsolved/credit-card-default.ipynb)
+* [credit-card-default.ipynb](Activities/03-Stu_CC_Default/Unsolved/credit-card-default.ipynb)
 
 ---
 
@@ -693,7 +693,7 @@ In this activity, students will train a neural network model to predict whether 
 
 **Files:**
 
-* [credit-card-default.ipynb](Activities/3-Stu_CC_Default/Solved/credit-card-default.ipynb)
+* [credit-card-default.ipynb](Activities/03-Stu_CC_Default/Solved/credit-card-default.ipynb)
 
 Walk through the solution and highlight the following:
 
@@ -745,7 +745,7 @@ Answer any questions before moving on.
 
 ---
 
-### 8. Break (15 min)
+### 8. BREAK (15 min)
 
 ---
 
@@ -755,7 +755,7 @@ In this section, we will go over some necessary transformations of data before i
 
 **Files:**
 
-* [04-Ins/preparing_data.ipynb](Activities/4-Ins_Preparing_Data/Solved/preparing_data.ipynb)
+* [04-Ins/preparing_data.ipynb](Activities/04-Ins_Preparing_Data/Solved/preparing_data.ipynb)
 
 Open the lesson slides, move to the _Preparing Data for Neural Networks_ and highlight the following:
 
@@ -765,7 +765,7 @@ Open the lesson slides, move to the _Preparing Data for Neural Networks_ and hig
 
 * To solve the first problem, we apply one-hot encoding to categorical values to transform them into binary variables. To deal with the second, we use standardization.
 
-* One hot encoding involves taking a categorical variable, such as color with labels "red," "white," and "blue," and creating three new variables of the colors, with each instance of the data now showing a `1` if it corresponds to that color and `0 ` if it does not.
+* One hot encoding involves taking a categorical variable, such as color with labels "red," "white," and "blue," and creating three new variables of the colors, with each instance of the data now showing a `1` if it corresponds to that color and `0` if it does not.
 
 * Scikit-learn offers an implementation of one-hot encoding in the [`OneHotEncoder` module](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html).
 
@@ -868,7 +868,7 @@ In this activity, students will create a neural network to predict the gender of
 
 ---
 
-### 11. Everyone Do: Review Voice Gender Recognition (10 min)
+### 11. Instructor Do: Review Voice Gender Recognition (10 min)
 
 **Files:**
 
@@ -898,7 +898,7 @@ In this activity, the instructor will conduct a demonstration for the homework.
 
 **Files:**
 
-* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
+* [README.md](../../../02-Homework/14-Deep-Learning/Instructions/README.md)
 
 Open the lesson slides, move to the _Unit 14 Homework Solution Demo_ and highlight the following:
 
