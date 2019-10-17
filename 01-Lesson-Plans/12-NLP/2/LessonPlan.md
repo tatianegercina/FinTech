@@ -34,6 +34,9 @@ By the end of the class, students will be able to:
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [12.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c900d473-28d8-4d5d-8f33-aae700f22c46) Note that this video may not reflect the most recent lesson plan.
+
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1j6oqrY-rJARHH_7FOCEyKRgakak5gGgeTcgola_wXVY/edit?usp=sharing).
