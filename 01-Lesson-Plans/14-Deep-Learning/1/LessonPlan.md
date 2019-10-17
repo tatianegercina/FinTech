@@ -36,7 +36,9 @@ By the end of class, students will be able to:
 
 * A thorough understanding of neural networks would require math that's beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms in order to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
 
-* In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google][https://teachablemachine.withgoogle.com/], be sure to practice the demo before class. If you are not familiar with this project, we encourage you to watch this video.
+* In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/), be sure to practice the demo before class. If you are not familiar with this project, we encourage you to watch this video.
+
+* There is a closing activity that proposes a group activity to the class, you may bring sticky notes to Today's class.
 
 ### Class Slides and Time Tracker
 
@@ -661,69 +663,13 @@ Collect a couple of answers from the class and highlight the following:
 
 * Adding more neurons to the model is a possible solution; however, we can overfit the model.
 
-* Adding a second layer is also a suitable solution; this may improve accuracy.
+* Adding a second layer is also a suitable solution; this is part of deep learning, and it's going to be covered next class.
 
 * Testing with different activation functions is one of the most used initial solutions, especially when dealing with non-linear data.
 
 * Using more epochs for training is another strategy to improve the model's accuracy.
 
-Comment to students that for this demo, you will add a second layer with six neurons, also you will change the activation function to `tanh` and will train the model along `500` epochs.
-
-![Adding a second layer](Images/simple-nn-two-layers.png)
-
-* A new sequential model is created to build this new neural network.
-
-  ```python
-  nn_2 = Sequential()
-  ```
-
-* The first layer is added, two inputs features, and six hidden nodes are defined.
-
-```python
-# First layer
-number_inputs = 2
-number_hidden_nodes = 6
-
-nn_2.add(Dense(units=number_hidden_nodes, activation="relu", input_dim=number_inputs))
-```
-
-* To add the second layer, we only need to use the `add()` method of the model together with the `Dense()` function where the number of nodes in the new layer is defined along with the activation function. Note that `tanh` is used as an activation function in this layer.
-
-```python
-  # Second layer
-  number_hidden_nodes = 6
-
-  nn_2.add(Dense(units=number_hidden_nodes, activation="tanh"))
-```
-
-* Finally, the output layer is added by defining `tanh` as the activation function.
-
-  ```python
-  # Output layer
-  number_classes = 1
-
-  nn_2.add(Dense(units=number_classes, activation="tanh"))
-  ```
-
-* The model summary shows a more complex architecture this time, that was quickly created thanks to the human-friendly interface of Keras.
-
-  ![Model summary of the two layers network](Images/nn_3.png)
-
-* Once the new model is defined, it's compiled and trained with `500` epochs.
-
-```python
-# Compile model
-nn_2.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
-
-# Training the model with the non-linear data
-model_moon_2 = nn_2.fit(X_moon_train_scaled, y_moon_train, epochs=500)
-```
-
-* Once the model is fit, it's evaluated using the testing data. The accuracy improves as a result of adding a new layer and changing the activation function.
-
-  ![Two layer neural network's results](Images/nn_4.png)
-
-Comment to students that modeling neural networks is part science and part and art; the best model will be the result of several tests by playing around with the number of layers and neurons and testing different activation functions.
+Comment to students that modeling neural networks is part science and part and art; the best model will be the result of several tests by playing around with the number of neurons and testing different activation functions.
 
 Answer any questions before moving on.
 
@@ -743,7 +689,7 @@ In this activity, students will train a neural network model to predict whether 
 
 ---
 
-### 7. Instructor Do: Review reventing credit card defaults with neural networks (10 min)
+### 7. Instructor Do: Review Preventing credit card defaults with neural networks (10 min)
 
 **Files:**
 
@@ -775,7 +721,7 @@ Walk through the solution and highlight the following:
 
 * The accuracy is not great, but also is not as bad to discard the model. It could be used in a real-world scenario to run a pilot project.
 
-Explain to students that for the challenge section, different approaches could be taken, for this demo, a second layer is added as requested, the `tanh` activation function is used in both hidden layers, and the model is trained with `50` epochs.
+Explain to students that for the challenge section, different approaches could be taken, for this demo, the `tanh` activation function is used in the output layer, and the model is trained with `50` epochs.
 
 ```python
 # Define the model
@@ -784,7 +730,6 @@ number_hidden_nodes = 69
 
 nn_2 = Sequential()
 nn_2.add(Dense(units=number_hidden_nodes, input_dim=number_inputs, activation='relu'))
-nn_2.add(Dense(units=number_hidden_nodes, activation='tanh'))
 nn_2.add(Dense(units=1, activation='tanh'))
 
 # Compile model
@@ -855,7 +800,7 @@ Open the unsolved Jupyter notebook and ask students to follow along as your live
   class_encoded = enc.transform(class_values).toarray()
   ```
 
-* Once the data is encoded, a DataFrame is created that can be used to store the encoded data as a `CVS` for further usage.
+* Once the data is encoded, a DataFrame is created that can be used to store the encoded data as a `CSV` for further usage.
 
   ![One-hot encoded data](Images/ohe-3.png)
 
@@ -944,3 +889,43 @@ In this activity, students will create a neural network to predict the gender of
 * Warn students that neural networks are often prone to over-fitting. Neural Network architectures should always be validated to ensure that they are not over-fitting to the training data and thus performing poorly on new data values.
 
 Ask students if they have any questions before moving on.
+
+---
+
+### 12. Instructor Do: Homework Demo (10 mins)
+
+In this activity, the instructor will conduct a demonstration for the homework.
+
+**Files:**
+
+* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
+
+Open the lesson slides, move to the _Unit 14 Homework Solution Demo_ and highlight the following:
+
+* Cryptocurrencies are gaining the attention of investors; however, due to its volatility and nature, conventional indicators and metrics are not always suitable.
+
+* The [Crypto Fear and Greed Index (FNG)](https://alternative.me/crypto/fear-and-greed-index/) is an instrument used to assess cryptocurrencies.
+
+* FNG attempts to use a variety of data sources to produce a daily value for cryptocurrency, based on sentiment from social media and news articles to help guide trading strategies.
+
+* In this Unit's homework assignment, you will build and evaluate deep learning models, using both the FNG values and simple closing prices, to determine if the FNG indicator provides a better signal for cryptocurrencies than the normal closing price data.
+
+Open the homework solutions and explain to students that in this unit, they will learn how to deal with time series using Long short-term memory (LSTM) recurrent neural networks (RNN); this special type of neural networks will be a key part to develop the homework's solution.
+
+Answer any questions before moving on.
+
+---
+
+### 13. Instructor Do: Reflect (5 min)
+
+This day may be hard for students since several new concepts were covered, spend a few minutes with the class reflecting on what they learn Today.
+
+* Recall students that modeling neural networks is part art, and part science, so they should be patient while defining models.
+
+* There are several frameworks to implement neural networks, Keras is a business class framework they can trust in for prototyping or deploy production models.
+
+* Mastering neural networks take time; however, thanks to frameworks like Keras, you don't need to have a Ph.D. to start using neural networks to solve real-world problems.
+
+* Neural networks are not the panacea; they are just other options in the machine learning realm, in the end, the only way to find a solution is by testing and benchmarking different algorithms.
+
+Congratulate students on learning a new skill that will add value to their professional portfolio; answer any questions before ending the class.

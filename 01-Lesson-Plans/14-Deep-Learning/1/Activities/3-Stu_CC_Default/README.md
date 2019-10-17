@@ -36,8 +36,6 @@ For this challenge section, you have to figure out how the model you created cou
 
 1. Review the Keras documentation about activation functions, and decide if there is anyone that could be used instead of `sigmoid`.
 
-2. Add a second hidden layer with `69` units and use a different activation function than `sigmoid`.
+2. Change any other parameter that you believe could improve the model's accuracy.
 
-3. Change any other parameter that you believe could improve the model's accuracy.
-
-4. Evaluate the model's accuracy and loss and write down your conclusions.
+3. Evaluate the model's accuracy and loss and write down your conclusions.
