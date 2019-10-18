@@ -4,7 +4,7 @@ In this activity, you will use PCA to reduce the dimensions of the consumers sho
 
 ## Instructions
 
-1. Import the preprocessed data from the customers shopping dataset into a DataFrame called `df_shopping`.
+1. Import the preprocessed data from the consumers shopping dataset into a DataFrame called `df_shopping`.
 
 2. Standardize the data of all the DataFrame features.
 

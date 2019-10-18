@@ -8,11 +8,11 @@ You are given a dataset that contains historical data from purchases at a online
 
 Use the starter Jupyter Notebook and perform the following tasks:
 
-* Load the data on a Pandas DataFrame, name it as `df_shopping`, and fetch the top 10 rows.
+* Load the data into Pandas DataFrame, name it as `df_shopping`, and fetch the top 10 rows.
 
-* List DataFrame's data types to ensure that they're aligned to the type of data stored in each column. Are there any columns whose data type need to be changed? If so, make the corresponding adjustments.
+* List the DataFrame's data types to ensure that they're aligned to the type of data stored in each column. Are there any columns whose data type need to be changed? If so, make the corresponding adjustments.
 
-* Another best practice is to drop any column that would be unnecessary. Are there any unnecessary columns that need to be dropped? If so, make the corresponding adjustments.
+* Another best practice is to drop any column that would be unnecessary. Are there any unnecessary columns that needs to be dropped? If so, make the corresponding adjustments.
 
 * Remove all rows with `null` values, if any.
 
