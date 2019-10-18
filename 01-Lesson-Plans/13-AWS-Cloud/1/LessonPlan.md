@@ -627,7 +627,7 @@ Walkthrough the solution and highlight the following:
   # Initialize PCA model
   pca = PCA(n_components=2)
 
-  # Get two principal components for the iris data.
+  # Get two principal components for the data.
   shopping_pca = pca.fit_transform(shopping_scaled)
   ```
 
