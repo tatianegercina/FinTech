@@ -2,7 +2,7 @@
 
 ## Background
 
-It's time to take what you've learned about unsupervised learning and the AWS services and apply it to new situations. For this assignment, you'll need to complete **one of two** (not both) challenges. Which challenge you take on is your choice. Just be sure to give it your all -- as the skills you hone will become powerful tools in your FinTech tool belt.
+It is time to take what you have learned about unsupervised learning and the AWS services and apply it to new situations. For this assignment, you will need to complete **one of two** (not both) challenges. Which challenge you take on is your choice. Just be sure to give it your all -- as the skills you hone will become powerful tools in your FinTech tool belt.
 
 ### Before You Begin
 
@@ -25,15 +25,15 @@ It's time to take what you've learned about unsupervised learning and the AWS se
 
 ### Background
 
-You were hired as digital transformation consultant by one of the most prominent retirement plans providers in the country, they want to increase their client portfolio especially by engaging young people. Since machine learning and NLP are disrupting on finance to improve customer experience, you decide to create a robo advisor that could be used by customers or potential new customers to get investment portfolio recommendations for retirement using Slack.
+You were hired as a digital transformation consultant by one of the most prominent retirement plan providers in the country; they want to increase their client portfolio, especially by engaging young people. Since machine learning and NLP are disrupting finance to improve customer experience, you decide to create a robo advisor that could be used by customers or potential new customers to get investment portfolio recommendations for retirement using Slack.
 
-In this homework assignment, you will combine your new skills about Amazon Web Services with your already mastered Python superpowers, to create a bot that will recommend an investment portfolio for a retirement plan.
+In this homework assignment, you will combine your new skills with Amazon Web Services with your already mastered Python superpowers, to create a bot that will recommend an investment portfolio for a retirement plan.
 
 You are asked to accomplish the following main tasks:
 
 1. **[Initial Robo Advisor Configuration:](#Initial-Robo-Advisor-Configuration)** Define an Amazon Lex bot with a single intent that establishes a conversation about the requirements to suggest an investment portfolio for retirement.
 
-2. **[Build and Test the Robo Advisor](#Build-and-Test-the-Robo-Advisor):** Make sure that your bot is working and responding accurately along the conversation with the user, by building and testing it.
+2. **[Build and Test the Robo Advisor](#Build-and-Test-the-Robo-Advisor):** Make sure that your bot is working and responding accurately along with the conversation with the user, by building and testing it.
 
 3. **[Deploy the Robo Advisor on Slack](#Deploy-the-Robo-Advisor-on-Slack):** Publish the bot and create a Robo Advisor Slack app.
 
@@ -57,7 +57,7 @@ You are asked to accomplish the following main tasks:
 
 #### Initial Robo Advisor Configuration
 
-On this section your will create the `RoboAdvisor` bot and add an intent with its corresponding slots.
+In this section, you will create the `RoboAdvisor` bot and add an intent with its corresponding slots.
 
 Sign in into your AWS Management Console and [create a new custom Amazon Lex bot](https://console.aws.amazon.com/lex/home). Use the following parameters:
 
@@ -115,7 +115,7 @@ Leave the error handling configuration for the `RecommendPortfolio` bot with the
 
 #### Build and Test the Robo Advisor
 
-On this section you will test your Robo Advisor. Build the bot and test it on the chatbot window, you should see a conversation like the one bellow.
+In this section, you will test your Robo Advisor. Build the bot and test it on the chatbot window. You should see a conversation like the one below.
 
 ![Robo Advisor test](Images/bot-test-no-lambda.gif)
 
@@ -124,11 +124,11 @@ On this section you will test your Robo Advisor. Build the bot and test it on th
 Congratulations! You have your Robo Advisor working. Now in this section, your mission is to publish the first version of your bot and configure the connection to Slack.
 
 1. From the Amazon Lex console, publish the version 1 of the `RoboAdvisor` bot.
-2. Login into to the [Slack API website](https://api.slack.com) and create a new app called `Robo Advisor` into the development Slack workspace you defined before on class.
-3. Go to the Amazon Lex Console, navigate to the *Channels* tab on the `RoboAdvisor` bot configuration and setup the Slack connection details.
+2. Login into the [Slack API website](https://api.slack.com) and create a new app called `Robo Advisor` into the development Slack workspace you defined before in class.
+3. Go to the Amazon Lex Console, navigate to the *Channels* tab on the `RoboAdvisor` bot configuration, and set up the Slack connection details.
 4. Complete the Slack integration and test it.
 
-After completing these tasks you should get your bot working on Slack as follows.
+After completing these tasks, you should get your bot working on Slack as follows.
 
 ![Robo Advisor test on Slack](Images/robo-advisor-slack-no-lambda.gif)
 
@@ -140,7 +140,7 @@ Use the starter code provided on [lambda_function.py](Starter_Files/lambda_funct
 
 ##### User Input Validation
 
-* The `age` should by greater than zero and less than 65.
+* The `age` should be greater than zero and less than 65.
 * the `investment_amount` should be equals o greater than 5000.
 
 ##### Investment Portfolio Recommendation
@@ -164,14 +164,14 @@ After successfully testing your code, open the Amazon Lex Console and navigate t
 
 #### Deploy the Robo Advisor Powered by Amazon Lambda
 
-Now your bot is ready to advice customers about retirement plans on Slack. Publish a new version of the bot and test it on Slack. Your final solution should look like this.
+Now your bot is ready to advise customers about retirement plans on Slack. Publish a new version of the bot and test it on Slack. Your final solution should look like this.
 
 ![Robo Advisor test with Lambda on Slack](Images/robo-advisor-slack-with-lambda.gif)
 
 ### Submission
 
 * Create a python script with your final lambda function.
-* From the Amazon Lex Console export your bot, intent and slot using `Amazon Lex` as target platform.
+* From the Amazon Lex Console export your bot, intent, and slot using `Amazon Lex` as the target platform.
 * Create a short video showing a demo of your Robo Advisor in action from Slack.
 * Create and upload a repository with the above files to GitHub and post a link in BootCamp Spot.
 
@@ -232,11 +232,11 @@ Start by loading the data in a Pandas DataFrame named `crypto_df`, and continue 
 
 11. Create dummies variables for all the text features, store the resulting data on a DataFrame named `X`.
 
-12. Use the [`StandardScaler` from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) to standardize all the data of the `X` DataFrame. Remember this is important prior using PCA and K-Means algorithms.
+12. Use the [`StandardScaler` from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) to standardize all the data of the `X` DataFrame. Remember, this is important prior to using PCA and K-Means algorithms.
 
 #### Reducing Data Dimensions Using PCA
 
-Use tha [`PCA` algorithm from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) to reduce the dimensions of the `X` DataFrame down to three principal components.
+Use the [`PCA` algorithm from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) to reduce the dimensions of the `X` DataFrame down to three principal components.
 
 Once you have reduced the data dimensions, create a DataFrame named `pcs_df` using as columns names `"PC 1", "PC 2"` and `"PC 3"`;  use the `crypto_df.index` as the index for this new DataFrame.
 
@@ -272,7 +272,7 @@ In this section, you will create some data visualization to present the final re
 
 For the challenge section, you have to upload your Jupyter notebook to Amazon SageMaker and deploy it.
 
-The `hvplot` and Plotly Express libraries are not included on the built-in anaconda environments, despite you can install external libraries on Amazon SageMaker, there is not still full support for these libraries; so, for this challenge section, you should use the `altair` library instead.
+The `hvplot` and Plotly Express libraries are not included in the built-in anaconda environments, despite you can install external libraries on Amazon SageMaker, there is not still full support for these libraries; so, for this challenge section, you should use the `altair` library instead.
 
 Perform the following tasks:
 
