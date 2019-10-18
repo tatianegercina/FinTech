@@ -4,7 +4,7 @@
 
 Today's class will introduce students to unsupervised learning and cloud services. Students will gain hands-on experience with the k-means algorithm, one of the most used unsupervised algorithms for clustering. Students also will learn how to speed up machine-learning algorithms by using principal component analysis (PCA), as well as to recognize and explain at least three main differences between supervised and unsupervised machine-learning algorithms.
 
-The concept of **the cloud** is presented to students by highlighting the importance that these kind of computing services have for FinTech professionals, given that the cloud allows to scale machine-learning models to be used by hundreds or thousands of users.
+The concept of **the cloud** is presented to students by highlighting the importance that these kinds of computing services have for FinTech professionals, given that the cloud allows scaling machine-learning models to be used by hundreds or thousands of users.
 
 As a prelude for the rest of the unit, a demo of the homework is presented as well as an introduction to Amazon Web Services (AWS) and AWS SageMaker.
 
@@ -16,7 +16,7 @@ By the end of the class, students will be able to:
 
 * Apply the k-means algorithm to identify clusters on a given dataset.
 
-* Diagnose what are the data preprocessing tasks that a dataset would need to apply the k-means algorithm.
+* Diagnose what the data preprocessing tasks are that a dataset would need to apply the k-means algorithm.
 
 * Demonstrate how the k-means algorithm is useful for customer segmentation.
 
@@ -30,15 +30,15 @@ By the end of the class, students will be able to:
 
 * Students have learned the generalities of machine learning, and they already know how to apply supervised machine learning; this class offers an overview of unsupervised machine learning, students will have hands-on experience using k-means on a business case scenario to demonstrate how unsupervised machine learning could add value to business decision-making.
 
-* Understating unsupervised learning may be challenging, however everyone is a customer and is familiar with how companies use data to target customers or potential customers to offer products and services. Try to use analogies about how companies like [Amazon, Netflix, Google](https://www.pointillist.com/blog/customer-behavior-data/), or [Target](https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/) are using customer segmentation to provide customized offers, or [how Spotify is using segmentation](https://towardsdatascience.com/in-this-article-i-provide-a-detailed-analysis-of-spotify-as-a-company-music-industry-direction-eeb945d7257c) to improve its products and services.
+* Understanding unsupervised learning may be challenging, however everyone is a customer and is familiar with how companies use data to target customers or potential customers to offer products and services. Try to use analogies about how companies like [Amazon, Netflix, Google](https://www.pointillist.com/blog/customer-behavior-data/), or [Target](https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/) are using customer segmentation to provide customized offers, or [how Spotify is using segmentation](https://towardsdatascience.com/in-this-article-i-provide-a-detailed-analysis-of-spotify-as-a-company-music-industry-direction-eeb945d7257c) to improve its products and services.
 
-* There are several theoretical aspects behind the k-means and PCA algorithms, focus the class on the practical application of these algorithms for customer segmentation and share the additional references presented on the slides for those students interested on having a deeper understanding.
+* There are several theoretical aspects behind the k-means and PCA algorithms, focus the class on the practical application of these algorithms for customer segmentation and share the additional references presented on the slides for those students interested in having a deeper understanding.
 
-* The cloud is a core concept for FinTech professionals; however, it might be seen complex and nebulous for some students; it's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud, by offering user-friendly interfaces that allow deployment of a machine-learning model with few lines of code and some mouse clicks.
+* The cloud is a core concept for FinTech professionals; however, it might be seen as complex and nebulous for some students; it's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud, by offering user-friendly interfaces that allow deployment of a machine-learning model with few lines of code and some mouse clicks.
 
-* On Day 1, a homework demo is presented; be sure to get familiar with the homework's solutions before the class.
+* On Day 1, the homework demo is presented; be sure to get familiar with the homework's solutions before the class.
 
-* Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also encourage students to work with partners.
+* Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also, encourage students to work with partners.
 
 * **Important!** Slack out the disclaimer for [AWS Free Tier](../Supplemental/AWS-Free-Tier.md) services at the end of today's class. Explain to students that while we are only using free tier services in class, they should review this documentation to avoid accidentally incurring charges.
 
@@ -60,7 +60,7 @@ By the end of the class, students will be able to:
 
 In this activity, students will be introduced to unsupervised learning and its most relevant applications. Also, an overview of the unit is presented, including a homework demo.
 
-Welcome the class to Unit 13, open the lesson slides and move to the What You Will Achieve in this Unit section by highlighting the following:
+Welcome the class to Unit 13, open the lesson slides, and move to the What You Will Achieve in this Unit section by highlighting the following:
 
 * The cloud is a core tool for FinTech professionals; students will learn how to leverage their Python and machine-learning skills, by using Amazon Web Services to deploy models and business applications that could be reached by hundreds or thousands of people.
 
@@ -79,7 +79,7 @@ Continue by opening the Amazon Lex Management console, open the RoboAdvisor home
 
 Conclude the homework demo by telling students that they will create one of two chatbots using Amazon Lex and AWS Lambda in this unit:
 
-1. A cryptocurrencies converter.
+1. A cryptocurrency converter.
 
 2. An investment portfolio robo advisor.
 
@@ -99,7 +99,7 @@ Open the lesson slides and go to the Introduction to Unsupervised Learning secti
 
 Start the presentation by explaining to students that, in general terms, machine learning has two main areas of application: supervised and unsupervised learning.
 
-Students are already familiar with supervised learning algorithms and its applications; highlight to students the main differences between these types of learning.
+Students are already familiar with supervised learning algorithms and its applications, highlight to students the main differences between these types of learning.
 
 | Supervised Learning                | Unsupervised Learning                      |
 | ---------------------------------- | ------------------------------------------ |
@@ -111,25 +111,25 @@ Start a short facilitated discussion with students. Take one or two answers from
 
 * If unsupervised learning deals with unlabeled data, what kind of questions or business problems do you think can we solve?
 
-  **Sample answer:** We can group customers on a retail chain by shopping habits so we can send customized offers by email or mobile app to increase sales.
+  **Sample answer:** We can group customers on a retail chain by shopping habits, so we can send customized offers by email or mobile app to increase sales.
 
-  **Sample answer:** Having thousands of transactions per day on credit card operations, it's hard to identify anomalous or fraudulent transactions. We can use unsupervised learning to find patters among transaction data to identify anomalies and potential fraudulent transactions.
+  **Sample answer:** Having thousands of transactions per day on credit card operations, it is hard to identify anomalous or fraudulent transactions. We can use unsupervised learning to find patterns among transaction data to identify anomalies and potentially fraudulent transactions.
 
   **Sample answer:** We can use unsupervised learning to cluster stock data so we can create investment portfolios according to the resulting groups.
 
 As an example, continue with the presentation on the slide titled "How can we understand our customers?" and then move forward by highlighting the following:
 
-* Beyond the typical segmentation variables, such as age, gender, income or zip code, understanding customers is crucial in every sector.
+* Beyond the typical segmentation variables, such as age, gender, income, or zip code, understanding customers is crucial in every sector.
 
-* Supervised learning is very helpful at predicting the future based on labeled historical data, however, there are often situations where supervised learning is not feasible due to lack of information or lack of training labels.
+* Supervised learning is very helpful at predicting the future based on labeled historical data; however, there are often situations where supervised learning is not feasible due to lack of information or lack of training labels.
 
-* Unsupervised learning allows us to cluster data to find hidden or unknown patterns that can be used to better understand the customers. For example, to develop a customized offer that responds to the needs identified in every group.
+* Unsupervised learning allows us to cluster data to find hidden or unknown patterns that can be used to understand the customers better. For example, to develop a customized offer that responds to the needs identified in every group.
 
 * The main applications of unsupervised learning are:
 
-  * **Clustering:** It allows us to automatically split the dataset into groups according to similarity. It can be used for customer segmentation and targeting.
+  * **Clustering:** It allows us to split the dataset into groups according to similarity automatically. It can be used for customer segmentation and targeting.
 
-  * **Anomaly detection:** Automatically discovers unusual data points in a dataset. It's useful in identifying fraudulent transactions, discovering faulty pieces of hardware, or identifying an outlier caused by a human error during data entry.
+  * **Anomaly detection:** Automatically discovers unusual data points in a dataset. It is useful in identifying fraudulent transactions, discovering faulty pieces of hardware, or identifying an outlier caused by a human error during data entry.
 
 * Customer segmentation is one of the most popular applications of unsupervised learning. It is the division of potential customers in a given market into discrete groups.
 
@@ -155,7 +155,7 @@ End the presentation with a closing facilitated discussion. Ask the following qu
 
 * How could an investment portfolio be improved using customer segmentation?
 
-  **Sample answer:** Using customer segmentation, a portfolio can be categorized by industry, location, revenue, account size, and number of employees to reveal where risk and opportunity live within the portfolio. These patterns can provide key measurable data for more predictive credit risk management.
+  **Sample answer:** Using customer segmentation, a portfolio can be categorized by industry, location, revenue, account size, and the number of employees to reveal where risk and opportunity live within the portfolio. These patterns can provide key measurable data for more predictive credit risk management.
 
 Explain to students that we will be learning how to use Scikit-learn and cloud-based tools to implement clustering and customer segmentation.
 
@@ -173,15 +173,15 @@ In this activity, students will learn about the data preparation considerations 
 
 * [new_iris_data.csv](Activities/01-Ins_Data_Prep/Resources/new_iris_data.csv)
 
-Explain to students that data preparation for unsupervised learning doesn't differ too much from the process followed for supervised learning problems.
+Explain to students that data preparation for unsupervised learning does not differ too much from the process followed for supervised learning problems.
 
 Explain to the class that, as they already have done in past lessons, they should consider the following data preparation tasks:
 
-1. **Data selection:** Make a good choice of what data is going to be used. It's important to consider what data is available, what data is missing and what data can be removed.
+1. **Data selection:** Make a good choice of what data is going to be used. It is important to consider what data is available, what data is missing, and what data can be removed.
 2. **Data preprocessing:** Organize the selected data by formatting, cleaning, and sampling it.
 3. **Data transformation:** Transform the data to a format that eases its treatment and storage for future use (e.g., CSV file, spreadsheet, database).
 
-Highlight to students that the main difference on preparing data for unsupervised learning is that its algorithms don't have any target variable; they only have input features that will be used to find patterns in the data. So, they should take care on selecting features that could help to find those patterns or create groups.
+Highlight to students that the main difference in preparing data for unsupervised learning is that its algorithms don't have any target variable; they only have input features that will be used to find patterns in the data. So, they should take care of selecting features that could help to find those patterns or create groups.
 
 Open the unsolved version of the Jupyter Notebook, live code the demo, and highlight the following:
 
@@ -195,7 +195,7 @@ Open the unsolved version of the Jupyter Notebook, live code the demo, and highl
 
   ![Removing the class column](Images/removing-class-column.png)
 
-Explain to students that since all the variables on the dataset are numerical, there are no additional data preprocessing tasks to do. However, data transformations have to be done when there is categorical data or non-numeric features on the dataset. For example, transforming `male` and `female` categorical values to `0` and `1`.
+Explain to students that since all the variables on the dataset are numerical, there are no additional data preprocessing tasks to do. However, data transformations have to be done when there are categorical data or non-numeric features on the dataset. For example, transforming `male` and `female` categorical values to `0` and `1`.
 
 * Finally, the preprocessed DataFrame is saved on a new `CSV` file for further use.
 
@@ -210,11 +210,11 @@ Ask the class if there are any further questions before moving to the next activ
 
 ### 4. Student Do: Understanding Customers (20 min)
 
-In this activity, students will perform some data preparation tasks on a dataset that contains data from purchases on a e-commerce website made by 200 customers. Students will use this dataset on further activities to find customers segments.
+In this activity, students will perform some data preparation tasks on a dataset that contains data from purchases on an e-commerce website made by 200 customers. Students will use this dataset on further activities to find customer segments.
 
-There are some data transformations that should be made on the dataset, so ask TAs to assist students if there are any questions about why the following changes are needed.
+There are some data transformations that should be made to the dataset, so ask TAs to assist students if there are any questions about why the following changes are needed.
 
-* **Annual Income:** This feature should be regularized since it’s in a different scale than the other features; dividing by `1000` is the simplest solution.
+* **Annual Income:** This feature should be regularized since it is on a different scale than the other features; dividing by `1000` is the simplest solution.
 
 * **Gender:** The `Gender` should be transformed to a numerical value, in this case, transforming `Male` to `1` and `Female` to `0` is a feasible solution.
 
@@ -242,7 +242,7 @@ There are some data transformations that should be made on the dataset, so ask T
 
 * [shopping_data_cleaned.csv](Activities/02-Stu_Preparing_Data/Resources/shopping_data_cleaned.csv)
 
-Walk through the solution and highlight the following:
+Walkthrough the solution and highlight the following:
 
 * Unsupervised learning algorithms only work with numerical data, so checking data types is an important task to ensure that numerical values were loaded to the DataFrame with the appropriate data type.
 
@@ -250,7 +250,7 @@ Walk through the solution and highlight the following:
 
 * All columns have an appropriate data type, so no adjustments are needed.
 
-* The `CustomerID` column can be dropped; it's not relevant for clustering since it doesn't denote any relevant characteristic of customer shopping habits.
+* The `CustomerID` column can be dropped; it is not relevant for clustering since it does not denote any relevant characteristic of customer shopping habits.
 
   ```python
   df_shopping.drop(columns=["CustomerID"], inplace=True)
@@ -258,7 +258,7 @@ Walk through the solution and highlight the following:
 
 * Looking for `null` values and duplicate entries is part of any data preprocessing workflow; there are no `null` values nor duplicates on this DataFrame, so no additional adjustments are needed.
 
-* The `Genre` column is categorical, so it should be transformed to numerical values. Transforming `Male` to `1` and `Female` to `0` is a common practice.
+* The `Genre` column is categorical, so it should be transformed into numerical values. Transforming `Male` to `1` and `Female` to `0` is a common practice.
 
   ```python
   def changeGenre(genre):
@@ -289,7 +289,7 @@ Be sure that there are no questions before moving forward.
 
 ### 6. Instructor Do: The K-Means Algorithm (15 min)
 
-In this activity, students will learn how the k-means algorithm works. Use your time wisely to cover the theoretical part as well as the coding part.
+In this activity, students will learn how the k-means algorithm works. Use your time wisely to cover the theoretical part, as well as the coding part.
 
 **File:**
 
@@ -299,9 +299,9 @@ Open the lesson slides and move to the K-Means Algorithm section; go through the
 
 * To understand how k-means works, a fictional anecdote is used.
 
-  > Imagine that you are in a room full of spheres (data points) and you want to learn more about them, so you start to observe.
+  > Imagine that you are in a room full of spheres (data points), and you want to learn more about them, so you start to observe.
   >
-  > You realize that every sphere represents a flower, and that axes represent features of flowers. After observing the flowers, you discovered that there are some patterns when you combine the three features.
+  > You realize that every sphere represents a flower and that axes represent features of flowers. After observing the flowers, you discovered that there are some patterns when you combine the three features.
   >
   > We can see that spheres (data points) with similar features seem to be closer together than data points with dissimilar features. We can use this spatial information to group similar data points together.
 
@@ -326,7 +326,7 @@ Continue on the slides to formally introduce k-means, and highlight the followin
 
 * On the elbow curve, the `x` axis is the value of `k`, while the `y` axis is the value of some objective function.
 
-* The **inertia**, that is the sum of squared distances of samples to their closest cluster center, is commonly used as objective function.
+* The **inertia** that is the sum of squared distances of samples to their closest cluster center is commonly used as an objective function.
 
 * Visually, the best number for `k` is the `k` value where the curve turns like an elbow.
 
@@ -366,7 +366,7 @@ Continue the demo by adding a new column to the DataFrame with the predicted cla
 
 ![Adding predicted classes](Images/adding-classes-column.png)
 
-* Visualizing the clusters helps to graphically understand how they are arranged. In this case, we actually have too many features to represent visually, but we can take two or three of them to plot the clusters.
+* Visualizing the clusters helps to understand how they are arranged graphically. In this case, we actually have too many features to represent visually, but we can take two or three of them to plot the clusters.
 
   | Two features                          | Three Features                        |
   | ------------------------------------- | ------------------------------------- |
@@ -434,7 +434,7 @@ In this activity, students will identify the best number of clusters on a custom
 
 * [shopping_data_cleaned.csv](Activities/04-Stu_K_Means_In_Action/Resources/shopping_data_cleaned.csv)
 
-Walk through the solution and highlight the following:
+Walkthrough the solution and highlight the following:
 
 * This activity uses the customer shopping data that was preprocessed earlier.
 
@@ -443,7 +443,7 @@ Walk through the solution and highlight the following:
     df_shopping = pd.read_csv(file_path)
     ```
 
-* The elbow curve is used to find the best value for `k`. A `for-loop` is used to loop 10 times fitting the k-means model and fetching the `inertia` to create the plot.
+* The elbow curve is used to find the best value for `k`. A `for-loop` is used to loop 10 times, fitting the k-means model and fetching the `inertia` to create the plot.
 
     ```python
     inertia = []
@@ -487,7 +487,7 @@ Explain to students that, after observing the elbow curve, they can conclude tha
         return data
     ```
 
-* A visual analysis of using k-means with `k=5` and `k=6` is done by creating a 2-D scatter plot as well as a 3-D scatter plot.
+* A visual analysis of using k-means with `k=5` and `k=6` is done by creating a 2-D scatter plot, as well as a 3-D, scatter plot.
 
 | Plot Type       | `k=5`                                       | `k=6`                                       |
 | --------------- | ------------------------------------------- | ------------------------------------------- |
@@ -523,7 +523,7 @@ In this activity, students will learn how to use principal component analysis as
 
 * [05_Ins_PCA.ipynb](Activities/05-Ins_PCA/Solved/05_Ins_PCA.ipynb)
 
-Explain to students that, principal component analysis (PCA), is a statistical technique to speed up machine-learning algorithms when the number of input features (or dimensions) is too high. Explain to students that PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.
+Explain to students that principal component analysis (PCA), is a statistical technique to speed up machine-learning algorithms when the number of input features (or dimensions) is too high. Explain to students that PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.
 
 Open the unsolved Jupyter Notebook, live code the demo, and highlight the following:
 
@@ -542,7 +542,7 @@ Open the unsolved Jupyter Notebook, live code the demo, and highlight the follow
 
   ![Using StandardScaler](Images/using-standardscaler.png)
 
-* Once the features are standardized, PCA can be used to reduce the number of features in the dataset. First a PCA model should be created specifying the final number of features in the `n_components` parameter. In this demo, the features are reduced from `4` to `2`.
+* Once the features are standardized, PCA can be used to reduce the number of features in the dataset. First, a PCA model should be created specifying the final number of features in the `n_components` parameter. In this demo, the features are reduced from `4` to `2`.
 
   ```python
   pca = PCA(n_components=2)
@@ -554,19 +554,19 @@ Open the unsolved Jupyter Notebook, live code the demo, and highlight the follow
   iris_pca = pca.fit_transform(iris_scaled)
   ```
 
-Tell students, that after dimensionality reduction, we get as a result a smaller set of dimensions called **principal components**. There isn’t a particular meaning assigned to each principal component; the new components are just the two main dimensions of variation that contains most of the information in the original dataset.
+Tell students that after dimensionality reduction, we get as a result a smaller set of dimensions called **principal components**. There isn’t a particular meaning assigned to each principal component; the new components are just the two main dimensions of variation that contains most of the information in the original dataset.
 
 * The resulting principal components, are transformed into a DataFrame to be used next to fit the k-means algorithm. You can see that principal component values have no direct relation with the values in the original dataset. They can be seen as a reduced representation of the original data.
 
   ![PCA Data](Images/pca-df.png)
 
-Explain to students that dimensionality reductions imply a loss of accuracy, however the trick is to sacrifice a little accuracy for simplicity. Smaller datasets are easier to explore and visualize. They ease data analysis and speed up machine-learning algorithms without extraneous variables to process.
+Explain to students that dimensionality reductions imply a loss of accuracy; however, the trick is to sacrifice a little accuracy for simplicity. Smaller datasets are easier to explore and visualize. They ease data analysis and speed up machine-learning algorithms without extraneous variables to process.
 
-* To know how much information can be attributed to each principal component, the explained variances is used.
+* To know how much information can be attributed to each principal component, the explained variances are used.
 
   ![Explained variance](Images/explained-variance.png)
 
-Explain to students that in this demo, after using the attribute `explained_variance_ratio_`, they can see that the first principal component contains `72.77%` of the variance and the second principal component contains `23.03%` of the variance. Both components together contain `95.80%` of the information.
+Explain to students that in this demo, after using the attribute `explained_variance_ratio_`, they can see that the first principal component contains `72.77%` of the variance, and the second principal component contains `23.03%` of the variance. Both components together contain `95.80%` of the information.
 
 * The elbow curve is generated using the principal components data. You can see that the resulting best value for `k` is `3`. Despite some accuracy loss due to dimensionality reduction, the results are still good enough.
 
@@ -595,7 +595,7 @@ Answer any questions before moving on.
 
 ### 11. Student Do: PCA in Action (20 min)
 
-In this activity, students will use PCA to reduce the dimensions of the consumers shopping dataset.
+In this activity, students will use PCA to reduce the dimensions of the consumers' shopping dataset.
 
 **Instructions:**
 
@@ -613,7 +613,7 @@ In this activity, students will use PCA to reduce the dimensions of the consumer
 
 * [06_Stu_PCA.ipynb](Activities/06-Stu_PCA/Solved/06_Stu_PCA.ipynb)
 
-Walk through the solution and highlight the following:
+Walkthrough the solution and highlight the following:
 
 * After using PCA, the features' values on the `df_shopping` DataFrame are standardized using the `StandardScaler` library from `sklearn`.
 
@@ -627,11 +627,11 @@ Walk through the solution and highlight the following:
   # Initialize PCA model
   pca = PCA(n_components=2)
 
-  # Get two principal components for the iris data.
+  # Get two principal components for the data.
   shopping_pca = pca.fit_transform(shopping_scaled)
   ```
 
-Tell students that, when they fetch the explained variance, the first principal component will contain `33.7%` of the variance and the second principal component will contain `26.2%` of the variance. Since we have `59.9%` of the information in the original dataset, it's worth to explore increasing the number of principal components up to three to verify if this ratio improves.
+Tell students that, when they fetch the explained variance, the first principal component will contain `33.7%` of the variance, and the second principal component will contain `26.2%` of the variance. Since we have `59.9%` of the information in the original dataset, it is worth to explore increasing the number of principal components up to three to verify if this ratio improves.
 
 ![Explained variance with two PCs](Images/explained-variance-2pcs.png)
 
@@ -655,7 +655,7 @@ Tell students that, when they fetch the explained variance, the first principal 
   df_shopping_pca["class"] = model.labels_
   ```
 
-* Since we decided that three principal components were the best approach, a 3-D scatter plot is created with Plotly Express to visually represent the clusters.
+* Since we decided that three principal components were the best approach, a 3-D scatter plot is created with Plotly Express to represent the clusters visually.
 
   ![Clusters plot](Images/pca-data-plot.png)
 
@@ -669,11 +669,11 @@ Answer any questions before moving on.
 
 In this activity, students will be introduced to the cloud and the generalities of Amazon Web Services.
 
-Explain that while PCA can be very useful in speeding up algorithms be reducing dimensionality, modern machine-learning algorithms can also take advantage of powerful computing resources in the cloud.
+Explain that while PCA can be very useful in speeding up algorithms by reducing dimensionality, modern machine-learning algorithms can also take advantage of powerful computing resources in the cloud.
 
-Open the lesson slides, move to the Welcome to the Cloud and Amazon Web Services section and introduce the concept of the cloud by asking students to share what they think the cloud is.
+Open the lesson slides, move to the Welcome to the Cloud, and Amazon Web Services section and introduce the concept of the cloud by asking students to share what they think the cloud is.
 
-Collect two or three answers, and emphasize the following points:
+Collect two or three answers and emphasize the following points:
 
 * In essence, the cloud refers to the on-demand availability of computer system resources.
 
@@ -690,7 +690,7 @@ Collect two or three answers, and emphasize the following points:
 * You get access to unlimited resources (in theory, maybe not in practice).
 
 * There are multiple services models, with trade-offs in responsibility and control. The most common are:
-  * **Infrastructure as a service (IaaS):** Online services that provide APIs to access different infrastructure such as servers, virtual machines, storage, load balancers, or network interfaces (e.g., [Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/)).
+  * **Infrastructure as a service (IaaS):** Online services that provide APIs to access different infrastructures such as servers, virtual machines, storage, load balancers, or network interfaces (e.g., [Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/)).
   * **Platform as a service (PaaS):** Provides a platform that allow customers to develop, run, and manage applications without the complexity of building and maintaining their own physical infrastructure (e.g., [Amazon Web Services](https://aws.amazon.com/)).
   * **Software as a service (SaaS):** Refers to a software licensing and delivery model where software is licensed on a subscription basis and is centrally hosted (e.g., [Microsoft Office 365](https://www.office.com)).
   * **Function/code as a service (FaaS):** Also known as serverless computing, it offers a remote procedure call that enables the deployment of individual functions in the cloud that run in response to events (e.g., [AWS Lambda](https://aws.amazon.com/lambda/)).
@@ -701,7 +701,7 @@ Collect two or three answers, and emphasize the following points:
 
 * Cloud services allow you to scale your resources up and down as required.
 
-* There are multiple cloud service providers, including: Amazon, Microsoft, Google, Oracle, and IBM.
+* There are multiple cloud service providers, including Amazon, Microsoft, Google, Oracle, and IBM.
 
 * Some of the disadvantages of the cloud are:
 
@@ -716,15 +716,15 @@ Visit the [Amazon Web Services (AWS)](https://aws.amazon.com/) homepage and cove
 
 * Launched in March 2006, Amazon Web Services (AWS) popularized the concept of cloud computing.
 
-* AWS comprises more than 140 services, including technologies for compute, storage, networking, database, analytics, IoT, machine learning, and more.
+* AWS comprises more than 140 services, including technologies for computing, storage, networking, database, analytics, IoT, machine learning, and more.
 
 * AWS started with a service called Elastic Compute Cloud (or EC2).
 
-* Although Amazon didn't invent the concept, it pioneered the cloud's adoption.
+* Although Amazon did not invent the concept, it pioneered the cloud's adoption.
 
-* [Thousands of companies use AWS](https://aws.amazon.com/solutions/case-studies/all/), including: 2U, Airbnb, Adobe, Capital One, Comcast, Dropbox, Expedia, GE, Kellogg's, McDonalds, Philips, Yelp, and many more.
+* [Thousands of companies use AWS](https://aws.amazon.com/solutions/case-studies/all/), including 2U, Airbnb, Adobe, Capital One, Comcast, Dropbox, Expedia, GE, Kellogg's, McDonalds, Philips, Yelp, and many more.
 
-Slack out this following link to students if they want to learn more about AWS: [AWS Cloud Products](https://aws.amazon.com/products/)
+Slack out the following link to students if they want to learn more about AWS: [AWS Cloud Products](https://aws.amazon.com/products/)
 
 Answer any questions before moving on.
 
@@ -775,13 +775,13 @@ Ask students to login into their [AWS Console](https://console.aws.amazon.com) a
 
     ![Looking for SageMaker](Images/looking-sagemaker.png)
 
-* Amazon SageMaker might not be available on all AWS regions, but `us-west (Oregon)` is sure to have it.
+* Amazon SageMaker might not be available in all AWS regions, but `us-west (Oregon)` is sure to have it.
 
-Ask students to explore the main components on the left pane menu, they can explore beyond the class by clicking on Start with an overview.
+Ask students to explore the main components on the left pane menu, and they can explore beyond the class by clicking on Start with an overview.
 
 ![Amazon SageMaker Landing Page](Images/sagemaker-landing.png)
 
-Have TAs make sure that all students are able to log in, and answer any questions before moving on.
+Have TAs make sure that all students are able to log in and answer any questions before moving on.
 
 ### End Class
 
