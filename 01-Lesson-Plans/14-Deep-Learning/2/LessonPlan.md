@@ -2,7 +2,6 @@
 
 ### Overview
 
-
 ### Class Objectives
 
 By the end of class, students will be able to:
@@ -27,7 +26,27 @@ The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students to the second day of deep learning! Indicate that today students will dive into constructing deep learning models with real-world data. Deep neural networks are much more effective than traditional machine learning approaches at discovering non-linear relationships amongst data, and thus are often the best-performing choice for complex or unstructured data like images and text and.
+Welcome students to the second day of thw deep learning unit! Open the lesson slides and move to the _Hello Deep Learning!_ slide and highlight the following:
+
+* Today we will dive into constructing deep learning models with real-world data.
+
+* Generally speaking, deep learning models are neural networks with more than one hidden layer.
+
+* Deep neural networks are much more effective than traditional machine learning approaches at discovering non-linear relationships amongst data, and thus are often the best-performing choice for complex or unstructured data like images, text, and voice.
+
+Comment to students, that deep neural networks allow to create computational models composed of multiple layers that are able to learn representations of data with multiple levels of abstraction.
+
+* For example, in image recognition, each layer is able to identify different features of an input image to decide what is it about.
+
+Comment to students, that deep neural networks are fun! Open the [Quick, Drawn! web application](https://quickdraw.withgoogle.com) in you browser and slack out the URL to students, explain students that you are going to play a Pictionary like game using the power of deep learning.
+
+* The Quick, Draw! application is able to identify an image from a trace.
+
+* The game ask you to draw something in less than 20 seconds, an the deep learning algorithm start predicting what you trace could be.
+
+  ![Quick,Draw! demo](Images/quick-draw.gif)
+
+Draw a couple of traces in the game, and tell students that this is an example of the power of neural networks in real time, despite this is a game for fun, these kind of applications could be also used for signatures recognition in banking checks or hand writing text in historic documents.
 
 Ask if there are any questions before moving on.
 
@@ -35,11 +54,11 @@ Ask if there are any questions before moving on.
 
 ### 2. Instructor Do: Intro to Deep Learning (15 min)
 
-Return to the slides for this class and begin with the section titled "Deep Learning." Open the Tensorflow playground to demonstrate the effects of adding layers of neurons to a neural network and go through the following talking points:
+Continue on the lesson slides and move to the _Introduction to Deep Learning_ section. Open the [TensorFlow playground](https://playground.tensorflow.org/), and use the default model presented on the website to demonstrate the effects of adding layers of neurons to a neural network and go through the following talking points.
 
 * As we've seen, neural networks work by calculating the weights of various input data and passing them on to the next layer of neurons. This proceeds until we get to the output layer, which makes the final decision on the predicted category or numerical value of an instance.
 
-* The number of layers that are included in a neural network model determines whether it is a "deep" learning model or not. While definitions vary, networks with more than one "hidden" layer can be classified as "deep." The prevalence of these deep learning models have been faciliated in recent years by the abundance and decreasing cost of computing power.
+* The number of layers that are included in a neural network model determines whether it is a "deep" learning model or not. While definitions vary, networks with more than one "hidden" layer can be classified as "deep." The prevalence of these deep learning models have been facilitated in recent years by the abundance and decreasing cost of computing power.
 
 * The advantages of adding layers lie in the fact that each additional layer of neurons makes it possible to model more complex relationships and concepts. Imagine we're trying to classify whether a picture contains a cat. Conceptually, the first step in solving this problem might involve checking whether there exists some animal in the picture. Drilling deeper, the model might detect the presence of paws, pointed ears, etc. This breaking down of the problem continues until we reach the raw input of the model, which are the individual pixels in the picture. If this problem is correctly specified, each conceptual layer would need its own layer of neurons.
 
