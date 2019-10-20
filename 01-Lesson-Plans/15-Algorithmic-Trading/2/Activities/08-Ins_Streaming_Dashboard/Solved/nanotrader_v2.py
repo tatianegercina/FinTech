@@ -21,7 +21,7 @@ def initialize(cash):
 
     # Initialize Streaming DataFrame for Signals
     signals_stream = Stream()
-    columns = ["close", "SMA10", "SMA20"]
+    columns = ["close", "sma10", "sma20"]
     data = {"close": [],  "sma10": [], "sma20": []}
     signals_example = pd.DataFrame(data=data, columns=columns, index=pd.DatetimeIndex([]))
     signals_stream_df = DataFrame(signals_stream, example=signals_example)
@@ -41,7 +41,7 @@ def build_dashboard(signals):
 def fetch_data():
     """Fetches the latest prices."""
     kraken = ccxt.kraken(
-        {"apiKey": os.getenv("kraken_key"), "secret": os.getenv("kraken_secret")}
+        {"apiKey": os.getenv("KRAKEN_PUBLIC_KEY"), "secret": os.getenv("KRAKEN_SECRET_KEY")}
     )
     close = kraken.fetch_ticker("BTC/USD")['close']
     datetime = kraken.fetch_ticker("BTC/USD")['datetime']
@@ -60,12 +60,12 @@ def generate_signal(df):
     signals["signal"] = 0.0
 
     # Generate the short and long moving averages
-    signals["SMA10"] = signals["close"].rolling(window=10).mean()
-    signals["SMA20"] = signals["close"].rolling(window=20).mean()
+    signals["sma10"] = signals["close"].rolling(window=10).mean()
+    signals["sma20"] = signals["close"].rolling(window=20).mean()
 
     # Generate the trading signal 0 or 1,
     signals["signal"][short_window:] = np.where(
-        signals["SMA10"][short_window:] > signals["SMA20"][short_window:], 1.0, 0.0
+        signals["sma10"][short_window:] > signals["sma20"][short_window:], 1.0, 0.0
     )
 
     # Calculate the points in time at which a position should be taken, 1 or -1
@@ -96,7 +96,6 @@ async def main():
     while True:
         global db
         global account
-        global data_stream
         global signals_stream
 
         # Fetch and save new data
@@ -109,7 +108,7 @@ async def main():
         df = pd.read_sql(f"select * from data limit {max_window}", db)
         if df.shape[0] >= min_window:
             signals = generate_signal(df)
-            signals_stream.emit(signals[['close', 'SMA10', 'SMA20']].tail(1))
+            signals_stream.emit(signals[['close', 'sma10', 'sma20']].tail(1))
             account = execute_trade_strategy(signals, account)
             print(f"Account Balance: {account['balance']}")
             print(f"Account Shares: {account['shares']}")
