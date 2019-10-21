@@ -673,11 +673,16 @@ Ask students to create two environment variables, one for the API key and the ot
   pip install --upgrade "ibm-watson>=3.0.3"
   ```
 
-* The Tone Analyzer service is imported from the `ibm_watson` library as follows:
+* To use the Tone Analyzer service the following libraries should be imported.
 
   ```python
   from ibm_watson import ToneAnalyzerV3
+  from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
   ```
+
+* `ToneAnalyzerV3` is the main library to access to the Tone Analyzer via Python.
+
+* `IAMAuthenticator` is used to authenticate your Python application to access the IBM cloud services.
 
 * The Tone Analyzer response is given in JSON format, so the [`json_normalize` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.io.json.json_normalize.html) is imported from Pandas to transform the JSON response to a DataFrame.
 
@@ -685,10 +690,20 @@ Ask students to create two environment variables, one for the API key and the ot
   from pandas.io.json import json_normalize
   ```
 
-* The Tone Analyzer service should be initialized passing as parameters the version that is going to be used, the API key and the URL.
+* The Tone Analyzer service is initialized as follows.
 
   ```python
-  tone_analyzer = ToneAnalyzerV3(version="2017-09-21", iam_apikey=tone_api, url=tone_url)
+  # Create authentication object
+  authenticator = IAMAuthenticator(tone_api)
+
+  # Create tone_analyzer instance
+  tone_analyzer = ToneAnalyzerV3(
+      version="2017-09-21",
+      authenticator=authenticator
+  )
+
+  # Set the service endpoint
+  tone_analyzer.set_service_url(tone_url)
   ```
 
 * The IBM Watson Tone Analyzer has two main methods:
