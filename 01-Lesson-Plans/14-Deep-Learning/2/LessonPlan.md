@@ -322,7 +322,8 @@ Open the solved notebook and go through each cell, stopping for questions.
   # Save model as JSON
   nn_json = nn.to_json()
 
-  with open("../Resources/model.json", "w") as json_file:
+  file_path = Path("../Resources/model.json")
+  with open(file_path, "w") as json_file:
       json_file.write(nn_json)
   ```
 
@@ -336,7 +337,8 @@ Open the solved notebook and go through each cell, stopping for questions.
 
   ```python
   # Save weights
-  nn.save_weights("../Resources/model.h5")
+  file_path = Path("../Resources/model.h5")
+  nn.save_weights(file_path)
   ```
 
 * To load the models, we need to call the `model_from_json` function from Keras.
@@ -346,11 +348,13 @@ Open the solved notebook and go through each cell, stopping for questions.
   from tensorflow.keras.models import model_from_json
 
   # load json and create model
+  file_path = Path("../Resources/model.json")
   with open("../Resources/model.json", "r") as json_file:
       model_json = json_file.read()
   loaded_model = model_from_json(model_json)
 
   # load weights into new model
+  file_path = Path("../Resources/model.h5")
   loaded_model.load_weights("../Resources/model.h5")
   ```
 
@@ -364,15 +368,15 @@ Ask students for questions before moving on to the practice activity.
 
 ### 7. Students Do: After Training (15 min)
 
-In this activity students will create a deep learning model from the music geographies data, save it, and load it to evaluate its performance on unseen data.
+In this activity, students will create a deep learning model from the music geographies data, save it, and load it to evaluate its performance on unseen data.
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_After_Training/README.md)
+* [README.md](Activities/04-Stu_After_Training/README.md)
 
 **Files:**
 
-* [after_training.ipynb]((Activities/06-Stu_After_Training/Unsolved/after_training.ipynb)
+* [after_training.ipynb](Activities/04-Stu_After_Training/Unsolved/after_training.ipynb)
 
 ---
 
@@ -380,44 +384,88 @@ In this activity students will create a deep learning model from the music geogr
 
 **Files:**
 
-* [after_training.ipynb]((Activities/06-Stu_After_Training/Solved/after_training.ipynb)
+* [after_training.ipynb]((Activities/04-Stu_After_Training/Solved/after_training.ipynb)
 
 Open the notebook and walk through the code, stopping for any questions.
 
-* First we train-test split the data using the below code.
+* After the data is loaded, we split the the data into training and testing sets.
 
-```python
-from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
-```
+  ```python
+  from sklearn.model_selection import train_test_split
 
-* Don't forget to scale the data before creating the model.
+  X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
+  ```
 
-* We use a shallow neural net to try to predict the geographical coordinates to limit overfitting.
+* The data is scaled before creating the model.
 
-```python
-# 1 hidden layer
-nn = Sequential()
-nn.add(Dense(30, input_dim=67, activation='relu'))
-nn.add(Dense(2, activation='linear'))
-```
+  ```python
+  # Scale the data for the features set X_tain and X_test
+  from sklearn.preprocessing import StandardScaler
 
-* To save the model, we write it to a json file. We save the weights to a H5 store.
+  scaler = StandardScaler().fit(X_train)
 
-* To load the model, first we read the json file. Then, we use the model object to load the weights from its filepath.
+  X_train_scaled = scaler.transform(X_train)
+  X_test_scaled = scaler.transform(X_test)
+  ```
+
+* We use a shallow neural net to predict the geographical coordinates and limit overfitting.
+
+  ```python
+  # Create a neural network with 1 hidden layer
+  nn = Sequential()
+
+  nn.add(Dense(units=8, input_dim=67, activation="relu"))
+  nn.add(Dense(units=2, activation="linear"))
+  ```
+
+* After compiling and fitting the model, we save it it to a json file. We save the weights to a H5 store.
+
+  ```python
+  # Save model as JSON
+  nn_json = nn.to_json()
+  file_path = Path("../Resources/model.json")
+  with open(file_path, "w") as json_file:
+      json_file.write(nn_json)
+
+  # Save weights
+  file_path = Path("../Resources/model.h5")
+  nn.save_weights(file_path)
+  ```
+
+* To load the model, first we read the json file. Then, we use the model object to load the weights from its file path.
+
+  ```python
+  # Load the model to predict values
+  from tensorflow.keras.models import model_from_json
+
+  # Load json and create model
+  file_path = Path("../Resources/model.json")
+  with open(file_path, "r") as json_file:
+      model_json = json_file.read()
+  loaded_model = model_from_json(model_json)
+
+  # Load weights into new model
+  file_path = Path("../Resources/model.h5")
+  loaded_model.load_weights(file_path)
+  ```
 
 * All that's left to do is to use the model for prediction. After this, we can use scikit's MSE metric function to calculate the difference between predicted and observed values for the test set.
 
 ```python
-from sklearn.metrics import mean_squared_error, r2_score
+# Predict values using the testing data
+from sklearn.metrics import mean_squared_error
 
-y_pred = loaded_model.predict(X_test)
+y_pred = loaded_model.predict(X_test_scaled)
+
+# Evaluate the model with the MSE metric
 print(mean_squared_error(y_test, y_pred))
 ```
 
+Answer any questions before moving on.
+
 ---
 
-### 9. BREACK (15 min)
+### 9. BREAK (15 min)
 
 ---
 
