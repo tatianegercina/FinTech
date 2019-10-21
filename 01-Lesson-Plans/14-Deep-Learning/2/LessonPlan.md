@@ -104,48 +104,102 @@ In this activity, students will build a deep learning model to predict the quali
 
 **Files:**
 
-* Solved: [deeplearning.ipynb](Activities/03-Ins_Deep_Learning/Solved/deeplearning.ipynb)
+* Solved: [deeplearning.ipynb](Activities/01-Ins_Deep_Learning/Solved/deeplearning.ipynb)
 
-* Unsolved: [deeplearning.ipynb](Activities/03-Ins_Deep_Learning/Unsolved/deeplearning.ipynb)
+* Unsolved: [deeplearning.ipynb](Activities/01-Ins_Deep_Learning/Unsolved/deeplearning.ipynb)
 
 If you are confident with the code, open the unsolved notebook and have everyone follow along while you live code. Otherwise, walk through the solved notebook and given students the following talking points.
 
-* In this activity we will try to use a deep neural network to predict wine quality scores using some features of the wine.
+* In this activity we will use a deep neural network to predict wine quality scores using some features of the wine.
+
+* The dataset is loaded an the features set `X` and the target vector `y` are created.
+
+  ```python
+  # Read in data
+  data = Path("../Resources/winequality.csv")
+  df = pd.read_csv(data, delimiter=";")
+
+  # Create the features (X) and target (y) sets
+  X = df.iloc[:, 0:11].values
+  y = df["quality"].values
+  ```
 
 * As always, the data needs to be scaled first.
 
-* First we'll create a shallow, one hidden layer network to accomplish the same task.
+  ```python
+  # Scale the data
+  from sklearn.preprocessing import StandardScaler
 
-```python
-# Define the model - shallow neural net
-nn = Sequential()
-nn.add(Dense(8, input_dim=11, activation='relu'))
-nn.add(Dense(1, activation='linear'))
-```
+  scaler = StandardScaler().fit(X)
+  X = scaler.transform(X)
+  ```
+
+* First we'll create a shallow, one hidden layer network to accomplish the task. Note that the activation function in the output layer is set to `linear`.
+
+  ```python
+  # Define the model - shallow neural net
+  number_hidden_nodes = 8
+  number_input_features = 11
+
+  nn = Sequential()
+  # Hidden layer
+  nn.add(
+      Dense(units=number_hidden_nodes, input_dim=number_input_features, activation="relu")
+  )
+  # Output layer
+  nn.add(Dense(units=1, activation="linear"))
+  ```
+
+* The model is compiled and trained.
+
+  ```python
+  # Compile the model
+  nn.compile(loss="mean_squared_error", optimizer="adam", metrics=["mse"])
+
+  # Train the model
+  model_1 = nn.fit(X, y, validation_split=0.3, epochs=200)
+  ```
+
+* The `mean_squared_error` loss function is used to compile the model, since the output is continuous because this is a regression model.
+
+* Note that in the  `fit()` method the `validation_split` parameter is used. This parameter is a float number between `0` and `1` that reserves a fraction of the data for validation; it can be used as an alternative to the `train_test_split` method of `sklearn`.
+
+* When the `validation_split` parameter is used, the model will set apart this fraction of the training data, will not train on it, and will evaluate the loss and any model metrics on this data at the end of each epoch.
 
 * From plotting the loss function, it seems to quickly converge to a very small loss. Can a deeper network do better?
 
-![deep1](Images/deep1.PNG)
+  ![deep1](Images/deep1.PNG)
 
 * Defining a deep neural net is very easy - all we have to do is add another layer of hidden neurons, using the same activation function as the first, and normally with fewer neurons than the first hidden layer. Of course, we can and should experiment with many different potential architectures if our goal is to minimize the loss metric.
 
-```python
-# Define the model - deep neural net
-nn = Sequential()
-nn.add(Dense(8, input_dim=11, activation='relu'))
-nn.add(Dense(4, activation='relu'))
-nn.add(Dense(1, activation='linear'))
-```
+  ```python
+  # Define the model - deep neural net
+  number_input_features = 11
+  hidden_nodes_layer1 = 8
+  hidden_nodes_layer2 = 4
+
+  nn = Sequential()
+  # First hidden layer
+  nn.add(
+      Dense(units=hidden_nodes_layer1, input_dim=number_input_features, activation="relu")
+  )
+  # Second hidden layer
+  nn.add(Dense(units=hidden_nodes_layer2, activation="relu"))
+  # Output layer
+  nn.add(Dense(units=1, activation="linear"))
+  ```
 
 * After defining and overlaying the results of the deep learning model on the shallow model, it seems that adding a layer increases the training speed (as measured by the slope of the loss metric over epochs) and slightly decreases the loss metric the model converges to.
 
-![deep2](Images/deep2.PNG)
+  ![deep2](Images/deep2.PNG)
 
 * This does not seem to come at the price of overfitting, as both models perform equally well on validation data, which is unseen at training.
 
-![deep3](Images/deep2.PNG)
+  ![deep3](Images/deep3.PNG)
 
-![deep4](Images/deep2.PNG)
+  ![deep4](Images/deep4.PNG)
+
+Answer any questions before moving on.
 
 ---
 
