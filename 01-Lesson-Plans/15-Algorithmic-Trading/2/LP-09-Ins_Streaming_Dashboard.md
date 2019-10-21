@@ -1,4 +1,4 @@
-### 9. Instructor Do: Streaming Dashboard (15 min)
+### 9. Instructor Do: Streaming Data with Streamz (15 min)
 
 In this activity, students will learn how to use the Streamz library to create a dedicated pipeline for continuous streaming data.
 
