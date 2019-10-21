@@ -54,7 +54,7 @@ Ask if there are any questions before moving on.
 
 ### 2. Instructor Do: Intro to Deep Learning (15 min)
 
-Continue on the lesson slides and move to the _Introduction to Deep Learning_ section. Open the [TensorFlow playground](https://playground.tensorflow.org/), and use the default model presented on the website to demonstrate the effects of adding layers of neurons to a neural network and go through the following talking points.
+Continue on the lesson slides and move to the _Understanding Deep Learning_ section by highlighting the following:
 
 * As we've seen, neural networks work by calculating the weights of various input data and passing them on to the next layer of neurons. This proceeds until we get to the output layer, which makes the final decision on the predicted category or numerical value of an instance.
 
@@ -64,15 +64,21 @@ Continue on the lesson slides and move to the _Introduction to Deep Learning_ se
 
 * Deep learning models make solving machine learning problems with high accuracy like image classification and sentiment classification possible.
 
-* We can see the benefits of adding additional layers in the tensorflow playground - this is apparent with the more complex classification datasets, such as "spiral." We see a lack of convergence below with one layer of neurons.
+Open the TensorFlow playground [using this link](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8&seed=0.14370&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=true&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false), click on the _Play_ button to run simulation, and use the model to demonstrate the effects of adding layers of neurons to a neural network and go through the following talking points.
+
+* We can see the benefits of adding additional layers in the TensorFlow playground - this is apparent with the more complex classification datasets, such as _spiral_. We see a lack of convergence below with one layer of neurons.
 
 ![playground_1_layers](Images/playground_1_layers.PNG)
 
-* When we add a second layer, the model converges to a much lower loss metric.
+Add a second hidden layer with six neurons to the model and highlight the following:
+
+* After adding a second layer, the model converges to a much lower loss metric.
 
 ![playground_2_layers](Images/playground_2_layers.PNG)
 
-* Of course, adding layers does not always guarantee better performance. Some layers can be redundant if the problem is not complex enough to warrant them. Of course, we rarely know this beforehand, and since there is not an analytical way of arriving at the number of layers we should use, the only solution to specifying the "correct" number of layers is to use trial and error.
+Add a third hidden layer with four neurons to the model and highlight the following:
+
+* Adding layers does not always guarantee better performance. Some layers can be redundant if the problem is not complex enough to warrant them. Of course, we rarely know this beforehand, and since there is not an analytical way of arriving at the number of layers we should use, the only solution to specifying the "correct" number of layers is to use trial and error.
 
 ![playground_3_layers](Images/playground_3_layers.PNG)
 
@@ -88,15 +94,18 @@ Ask for volunteers to the questions below as a check for understanding.
 
     **Sample Answer**: Signs of overfitting - for example, test accuracy is far lower than training accuracy.
 
+Answer any questions before moving on.
+
 ---
 
 ### 3. Everyone Do: Deep Learning with Keras (15 min)
 
-In this activity we build a deep learning model to predict the quality score of wines.
+In this activity, students will build a deep learning model to predict the quality score of wines.
 
 **Files:**
 
 * Solved: [deeplearning.ipynb](Activities/03-Ins_Deep_Learning/Solved/deeplearning.ipynb)
+
 * Unsolved: [deeplearning.ipynb](Activities/03-Ins_Deep_Learning/Unsolved/deeplearning.ipynb)
 
 If you are confident with the code, open the unsolved notebook and have everyone follow along while you live code. Otherwise, walk through the solved notebook and given students the following talking points.
@@ -105,7 +114,7 @@ If you are confident with the code, open the unsolved notebook and have everyone
 
 * As always, the data needs to be scaled first.
 
-* First we'll create a shallow, 1 hidden layer network to accomplish the same task.
+* First we'll create a shallow, one hidden layer network to accomplish the same task.
 
 ```python
 # Define the model - shallow neural net
