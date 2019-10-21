@@ -7,34 +7,114 @@ import ccxt
 import os
 import asyncio
 import sqlite3
+from streamz import Stream
+from streamz.dataframe import DataFrame
+import hvplot.streamz
 
 pn.extension()
 
 def initialize(cash):
     """Initialize the dashboard, data storage, and account balances."""
     # Initialize Account
-    account = {"balance": cash, "shares": 0}
+    account = {"balance": cash, "holding_value": 0, "total_portfolio_value": 0, "shares": 0}
 
     # Initialize Database
     db = sqlite3.connect("ninja_trader_db.sqlite")
 
+    # Initialize Streaming DataFrame for Account
+    account_stream = Stream()
+    columns = ["balance", "holding_value", "total_portfolio_value", "active_shares"]
+    data = {"balance": [], "holding_value": [], "total_portfolio_value": [], "active_shares": []}
+    account_example = pd.DataFrame(data=data, columns=columns)
+    account_stream_df = DataFrame(account_stream, example=account_example)
+
+    # Initialize Streaming DataFrame for Signals
+    signals_stream = Stream()
+    columns = ["close", "sma10", "sma20"]
+    data = {"close": [],  "sma10": [], "sma20": []}
+    signals_example = pd.DataFrame(data=data, columns=columns, index=pd.DatetimeIndex([]))
+    signals_stream_df = DataFrame(signals_stream, example=signals_example)
+
+    # Initialize Streaming DataFrame for Evaluations
+    portfolio_eval_stream = Stream()
+    trade_eval_stream = Stream()
+
+    portfolio_eval_columns = ["Backtest"]
+    trade_eval_columns = ['Stock', 'Entry Date', 'Exit Date', 'Shares', 'Entry Share Price', 'Exit Share Price', 'Entry Portfolio Holding', 'Exit Portfolio Holding', 'Profit/Loss']
+
+    portfolio_eval_data = {"Backtest": []}
+    trade_eval_data = {
+        "Stock": [],
+        "Entry Date": [],
+        "Exit Date": [],
+        "Shares": [],
+        "Entry Share Price": [],
+        "Exit Share Price": [],
+        "Entry Portfolio Holding": [],
+        "Exit Portfolio Holding": [],
+        "Profit/Loss": []
+    }
+
+    portfolio_stream_df = pd.DataFrame(
+        data=portfolio_eval_data,
+        columns=portfolio_eval_columns
+    )
+    trade_stream_df = pd.DataFrame(data=trade_eval_data, columns=trade_eval_columns
+    )
+
+    print("RIGHT BEFORE BUILD DASHBOARD")
     # Initialize Streaming DataFrame for the signals
-    dashboard = initialize_dashboard()
-    return account, db, dashboard
+    dashboard = build_dashboard(account_stream_df, signals_stream_df, portfolio_stream_df, trade_stream_df)
+
+    return account, db, account_stream, signals_stream, portfolio_eval_stream, trade_eval_stream, dashboard
 
 
-def initialize_dashboard():
+def build_dashboard(account_stream_df, signals_stream_df, portfolio_stream_df, trade_stream_df):
     """Build the dashboard."""
-    loading_text = pn.widgets.StaticText(name="Trading Dashboard", value="Loading...")
-    dashboard = pn.Column(loading_text)
-    print("init dashboard")
-    return dashboard
+    # Initialize static widgets
+    account_balance = pn.widgets.StaticText(name="Cash Balance", value=account_stream_df['balance'])
+    holding_value = pn.widgets.StaticText(name="Portfolio Holding", value=account_stream_df['holding_value'])
+    total_portfolio_value = pn.widgets.StaticText(name="Total Portfolio Value", value=account_stream_df['total_portfolio_value'])
+    active_shares = pn.widgets.StaticText(name="Active Shares", value=account_stream_df['active_shares'])
 
+    # Create price plot of closing, SMA10, and SMA20
+    price_plot = signals_stream_df.hvplot.line(x='date', y=['close', 'SMA10', 'SMA20'], value_label='Price', width=1000, height=400, rot=90)
+
+    # Create portfolio and trade metrics table
+    portfolio_evaluation_table = portfolio_stream_df.hvplot.table(columns=['Backtest'], width=300, height=400)
+    trade_evaluation_table = trade_stream_df.hvplot.table(
+        columns=[
+            'Stock',
+            'Entry Date',
+            'Exit Date',
+            'Shares',
+            'Entry Share Price',
+            'Exit Share Price',
+            'Entry Portfolio Holding',
+            'Exit Portfolio Holding',
+            'Profit/Loss'
+        ]
+    )
+
+    # Create rows
+    row_one = pn.Row(account_balance, holding_value, total_portfolio_value)
+    row_two = pn.Row(price_plot)
+    row_three = pn.Row(portfolio_evaluation_table, trade_evaluation_table)
+    row_test = pn.Row()
+
+    # Create columns
+    column = pn.Column(row_one,
+                       row_two,
+                       row_three)
+    column_test = pn.Column(row_test)
+
+    dashboard = pn.Tabs(("Summary", column), ("Tab 2", column_test))
+    return dashboard
 
 def fetch_data():
     """Fetches the latest prices."""
     kraken = ccxt.kraken(
-        {"apiKey": os.getenv("kraken_key"), "secret": os.getenv("kraken_secret")}
+        {"apiKey": os.getenv("KRAKEN_PUBLIC_KEY"), "secret": os.getenv("KRAKEN_SECRET_KEY")}
     )
     close = kraken.fetch_ticker("BTC/USD")['close']
     datetime = kraken.fetch_ticker("BTC/USD")['datetime']
@@ -115,10 +195,14 @@ def execute_trade_strategy(signals, account):
         print("buy")
         number_to_buy = round(account['balance'] / signals['close'][-1], 0) * .001
         account["balance"] -= (number_to_buy * signals['close'][-1])
+        account["holding_value"] = signals['Portfolio Holdings'][-1]
+        account["total_portfolio_value"] = signals['Portfolio Total'][-1]
         account["shares"] += number_to_buy
     elif signals["entry/exit"][-1] == -1.0:
         print("sell")
         account["balance"] += signals['close'][-1] * account['shares']
+        account["holding_value"] = signals['Portfolio Holdings'][-1]
+        account["total_portfolio_value"] = signals['Portfolio Total'][-1]
         account["shares"] = 0
     else:
         print("hold")
@@ -218,62 +302,19 @@ def evaluate_metrics(signals_df):
     return portfolio_evaluation_df, trade_evaluation_df
 
 
-def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df, dashboard):
-    """Updates the dashboard with widgets, plots, and financial tables"""
-    # Initialize static widgets
-    account_balance = pn.widgets.StaticText(name="Cash Balance", value=tested_signals_df['Portfolio Cash'][-1])
-    holding_value = pn.widgets.StaticText(name="Portfolio Holding", value=tested_signals_df['Portfolio Holdings'][-1])
-    total_portfolio_value = pn.widgets.StaticText(name="Total Portfolio Value", value=tested_signals_df['Portfolio Total'][-1])
-
-    # Create price plot of closing, SMA10, and SMA20
-    price_plot = tested_signals_df.hvplot.line(x='date', y=['close', 'SMA10', 'SMA20'], value_label='Price', width=1000, height=400, rot=90)
-
-    # Create portfolio metrics table
-    portfolio_evaluation_table = portfolio_evaluation_df.hvplot.table(columns=['index', 'Backtest'], width=300, height=400)
-
-    # Create trade metrics table
-    trade_evaluation_table = trade_evaluation_df.hvplot.table(
-        columns=[
-            'Stock',
-            'Entry Date',
-            'Exit Date',
-            'Shares',
-            'Entry Share Price',
-            'Exit Share Price',
-            'Entry Portfolio Holding',
-            'Exit Portfolio Holding',
-            'Profit/Loss'
-        ]
-    )
-
-    # Create rows
-    row_one = pn.Row(account_balance, holding_value, total_portfolio_value)
-    row_two = pn.Row(price_plot)
-    row_three = pn.Row(portfolio_evaluation_table, trade_evaluation_table)
-
-    # Create columns
-    column = pn.Column(row_one,
-                       row_two,
-                       row_three)
-
-    # Create tabs
-    tabs = pn.Tabs(("Summary", column))
-
-    # Assign tab to dashboard object
-    dashboard[0] = tabs
-
-    return
-
-
 async def main():
 
     while True:
         global account
         global db
-        global dashboard
+        global account_stream
+        global signals_stream
+        global portfolio_eval_stream
+        global trade_eval_stream
 
         # Fetch latest pricing data
         new_record_df = fetch_data()
+        print(new_record_df)
 
         # Save latest pricing data to a global DataFrame
         new_record_df.to_sql('data', db, if_exists='append', index=True)
@@ -285,21 +326,26 @@ async def main():
         if data_df.shape[0] >= min_window:
             signals = generate_signal(data_df)
             tested_signals = execute_backtest(signals)
-
             account = execute_trade_strategy(tested_signals, account)
             portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals)
+
+            account_df = pd.DataFrame(account)
+            print(account_df)
+            signals_stream.emit(signals[['close', 'sma10', 'sma20']].tail(1))
+            portfolio_eval_stream.emit(portfolio_evaluation_df)
+            trade_eval_stream.emit(trade_evaluation_df)
 
             print(f"Account Balance: {account['balance']}")
             print(f"Account Shares: {account['shares']}")
 
             # Update the dashboard
-            update_dashboard(account, signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
+            #update_dashboard(account, signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
 
         await asyncio.sleep(1)
 
 
 # Initialize account and dashboard objects
-account, db, dashboard = initialize(100000)
+account, db, account_stream, signals_stream, portfolio_eval_stream, trade_eval_stream, dashboard = initialize(100000)
 dashboard.servable()
 
 # Python 3.7+
