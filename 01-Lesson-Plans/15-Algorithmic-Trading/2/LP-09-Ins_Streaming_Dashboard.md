@@ -115,6 +115,6 @@ Open the solution file and review the following:
 
 * The results of the changes show a trading dashboard that no longer requires a re-draw of its visualizations each time, but instead manages the updates to the visualizations at the data level. This allows a user to navigate to other tabs while continuously streaming data in the main tab.
 
-  ![dashboard-redraw](Images/dashboard-redraw.gif)
+  ![dashboard-streaming](Images/dashboard-streaming.gif)
 
 Answer any questions before moving on.
