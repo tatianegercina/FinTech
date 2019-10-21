@@ -4,7 +4,7 @@ In this activity, students will learn how to use the Streamz library to create a
 
 The purpose of this activity is to showcase the need for a pipeline or buffer that manages incoming streaming data, as doing so allows for a more robust and scalable dashboard in which streaming data is handled at the visual component level rather than done via a re-draw of the entire dashboard each time.
 
-**File:** [nano_trader_v2.py](Activities/08-Ins_Streaming_Dashboard/Solved/nano_trader_v2.py)
+**File:** [nanotrader_v2.py](Activities/08-Ins_Streaming_Dashboard/Solved/nanotrader_v2.py)
 
 Quickly discuss the following before proceeding onward to the walk through:
 
@@ -30,7 +30,7 @@ Open the solution file and review the following:
   import hvplot.streamz
   ```
 
-* Instead of initializing a DataFrame to later be used as a global variable for the asyncio event loop, the trading framework now initializes a Stream object that serves as an input to a Stream DataFrame object, of which the dashboard utilizes to build the plot.
+* Instead of initializing a DataFrame to later be used as a global variable for the asyncio event loop, the trading framework now initializes a Stream object that manages the data pipeline, serving as an input to a Stream DataFrame object, of which the dashboard utilizes to build the plot.
 
   ```python
   def initialize(cash):
@@ -53,6 +53,68 @@ Open the solution file and review the following:
       return account, db, signals_stream, dashboard
   ```
 
-* 
+* In particular, notice that the Stream DataFrame object `signals_stream_df` takes in two parameters: the Stream object as its first parameter which will contain the incoming streaming data, and two, an example Pandas DataFrame that defines the structure of the Stream DataFrame.
+
+  ```python
+  # Initialize Streaming DataFrame for Signals
+      signals_stream = Stream()
+      columns = ["close", "sma10", "sma20"]
+      data = {"close": [],  "sma10": [], "sma20": []}
+      signals_example = pd.DataFrame(data=data, columns=columns, index=pd.DatetimeIndex([]))
+      signals_stream_df = DataFrame(signals_stream, example=signals_example)
+  ```
+
+* Because the trading dashboard no longer needs to re-draw itself each time, the previous `update_dashboard` function can be taken out. Instead, all that needs to be done is to initialize the dashboard once with the corresponding Stream DataFrame object updating the hvplot line chart continuously.
+
+  ```python
+  def build_dashboard(signals):
+    """Build the dashboard."""
+    column = pn.Column(signals.hvplot.line())
+    column_test = pn.Column()
+
+    dashboard = pn.Tabs(("Summary", column), ("Tab 2", column_test))
+    return dashboard
+  ```
+
+* Lastly, when running the application, the `emit` function is used to continuously push data through the streaming data pipeline managed by the Stream object. Only a single record should be passed to the `emit` function.
+
+  ```python
+  async def main():
+
+    while True:
+        global db
+        global account
+        global signals_stream
+
+        # Fetch and save new data
+        new_df = await loop.run_in_executor(None, fetch_data)
+        new_df.to_sql('data', db, if_exists='append', index=True)
+
+        # Generate Signals and execute the trading strategy
+        min_window = 30
+        max_window = 1000
+        df = pd.read_sql(f"select * from data limit {max_window}", db)
+        if df.shape[0] >= min_window:
+            signals = generate_signal(df)
+            signals_stream.emit(signals[['close', 'sma10', 'sma20']].tail(1))
+            account = execute_trade_strategy(signals, account)
+            print(f"Account Balance: {account['balance']}")
+            print(f"Account Shares: {account['shares']}")
+
+        # Update the Dashboard
+        await asyncio.sleep(1)
+
+
+  account, db, signals_stream, dashboard = initialize(100000)
+  dashboard.servable()
+
+  # Python 3.7+
+  loop = asyncio.get_event_loop()
+  loop.run_until_complete(main())
+  ```
+
+* The results of the changes show a trading dashboard that no longer requires a re-draw of its visualizations each time, but instead manages the updates to the visualizations at the data level. This allows a user to navigate to other tabs while continuously streaming data in the main tab.
+
+  ![dashboard-redraw](Images/dashboard-redraw.gif)
 
 Answer any questions before moving on.

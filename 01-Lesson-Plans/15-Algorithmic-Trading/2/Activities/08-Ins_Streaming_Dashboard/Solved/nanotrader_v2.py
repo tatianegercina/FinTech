@@ -35,7 +35,7 @@ def build_dashboard(signals):
     column = pn.Column(signals.hvplot.line())
     column_test = pn.Column()
 
-    dashboard = pn.Tabs(("Summary", column), ("Test", column_test))
+    dashboard = pn.Tabs(("Summary", column), ("Tab 2", column_test))
     return dashboard
 
 def fetch_data():
