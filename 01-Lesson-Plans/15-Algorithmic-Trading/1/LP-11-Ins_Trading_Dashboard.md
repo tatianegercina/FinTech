@@ -53,7 +53,7 @@ Open the solution file and and highlight the following:
   )
   ```
 
-* Lastly, the `servable` function then serves or initializes the dashboard. There are two ways to use the `servable` function, either in a Jupyter notebook file where the dashboard is displayed within the notebook file itself, or using the terminal command `panel serve --show trading_dashboard.ipynb` which actually created a web application of the dashboard via the default localhost port 5006.
+* Lastly, the `servable` function then serves or initializes the dashboard. There are two ways to use the `servable` function, either in a Jupyter notebook file where the dashboard is displayed within the notebook file itself, or using the terminal command `panel serve --show trading_dashboard.ipynb` which actually creates a web application of the dashboard via the default localhost port 5006.
 
   ![panel-trading-dashboard-servable](Images/panel-trading-dashboard-servable.png)
 
