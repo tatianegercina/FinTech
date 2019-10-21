@@ -35,4 +35,28 @@ Open the solution file and and highlight the following:
 
   ![hvplot-evaluation-metrics](Images/hvplot-evaluation-metrics.png)
 
+* After generating the visualizations that will be added to the Panel dashboard, the next step is to assign the visualizations as rows, columns, and tabs to the Panel dashboard using the Panel `Row`, `Column`, and `Tabs` functions.
+
+  ```python
+  # Create rows
+  portfolio_evaluation_row = pn.Row(portfolio_evaluation_table)
+  trade_evaluation_row = pn.Row(trade_evaluation_table)
+
+  # Create columns
+  portfolio_column = pn.Column('# Portfolio Evaluation Metrics', portfolio_evaluation_row)
+  trade_column = pn.Column('# Trade Evaluation Metrics', trade_evaluation_row)
+
+  # Create tabs
+  trading_dashboard = pn.Tabs(
+      ("Portfolio Metrics", portfolio_column),
+      ("Trade Metrics", trade_column)
+  )
+  ```
+
+* Lastly, the `servable` function then serves or initializes the dashboard. There are two ways to use the `servable` function, either in a Jupyter notebook file where the dashboard is displayed within the notebook file itself, or using the terminal command `panel serve --show trading_dashboard.ipynb` which actually created a web application of the dashboard via the default localhost port 5006.
+
+  ![panel-trading-dashboard-servable](Images/panel-trading-dashboard-servable.png)
+
+  ![panel-trading-dashboard-servable-localhost](Images/panel-trading-dashboard-servable-localhost.png)
+
 Ask if there are any questions before moving forward.
