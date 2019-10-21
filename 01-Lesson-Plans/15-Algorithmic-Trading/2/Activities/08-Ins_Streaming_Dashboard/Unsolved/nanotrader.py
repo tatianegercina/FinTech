@@ -46,8 +46,10 @@ def update_dashboard(account, data, dashboard):
 
     # Create rows, columns, and tabs
     row_two = pn.Row(price_plot)
+    row_test = pn.Row()
     column = pn.Column(row_two)
-    tabs = pn.Tabs(("Summary", column))
+    column_test = pn.Column()
+    tabs = pn.Tabs(("Summary", column), ("Tab 2", column_test))
 
     # Assign tab to dashboard object
     dashboard[0] = tabs
