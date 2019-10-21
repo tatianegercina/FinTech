@@ -76,7 +76,7 @@ Open the solution file and review the following:
     return dashboard
   ```
 
-* Lastly, when running the application, the `emit` function is used to continuously push data through the streaming data pipeline managed by the Stream object. Only a single record should be passed to the `emit` function.
+* When running the application, the `emit` function is used to continuously push data through the streaming data pipeline managed by the Stream object. Only a single record should be passed to the `emit` function.
 
   ```python
   async def main():
