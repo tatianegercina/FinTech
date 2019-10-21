@@ -1,6 +1,6 @@
 ### 11. Everyone Do: Trading Dashboard (20 min)
 
-In this activity, instructors will walk students through creating a trading dashboard with Panel using the evaluation metrics generated from the prior activities. At this point in time, students should already have exposure to creating dashboards using Panel.
+In this activity, instructors will walk students through creating a trading dashboard with Panel using the evaluation metrics generated from prior activities. At this point in time, students should already have exposure to creating dashboards using Panel.
 
 The purpose of this activity is to show students how to create a trading dashboard using the already shown (Unit 6) Panel dashboard library. In particular, students will once again define rows, columns, and tabs, as well as serve the trading dashboard as an actual web application.
 
@@ -33,17 +33,20 @@ Open the solution file and and highlight the following:
 
 * Before creating the Panel dashboard, we will need to first define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvplot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
 
+  ![hvplot-price-chart](Images/hvplot-price-chart.png)
+
   ![hvplot-evaluation-metrics](Images/hvplot-evaluation-metrics.png)
 
 * After generating the visualizations that will be added to the Panel dashboard, the next step is to assign the visualizations as rows, columns, and tabs to the Panel dashboard using the Panel `Row`, `Column`, and `Tabs` functions.
 
   ```python
   # Create rows
+  price_chart_row = pn.Row(price_chart)
   portfolio_evaluation_row = pn.Row(portfolio_evaluation_table)
   trade_evaluation_row = pn.Row(trade_evaluation_table)
 
   # Create columns
-  portfolio_column = pn.Column('# Portfolio Evaluation Metrics', portfolio_evaluation_row)
+  portfolio_column = pn.Column('# Portfolio Evaluation Metrics', price_chart_row, portfolio_evaluation_row)
   trade_column = pn.Column('# Trade Evaluation Metrics', trade_evaluation_row)
 
   # Create tabs
