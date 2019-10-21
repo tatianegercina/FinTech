@@ -22,6 +22,17 @@ Before moving onto the walk through, quickly review the following:
 
 Open the solution file and and highlight the following:
 
-* 
+* Make sure to import the necessary libraries and dependencies in order to use the Panel dashboard and Hvplot visualizations. The `pn.extension()` function automatically detects the need for Panel to load additional extensions; in this case, Panel will load the extension for Hvplot.
+
+  ```python
+  import panel as pn
+  import hvplot
+  import hvplot.pandas
+  pn.extension()
+  ```
+
+* Before creating the Panel dashboard, we will need to first define the visualizations that will be shown. Therefore, using the DataFrames containing evaluation metrics generated from previous activities, we can create interactive hvplot tables that allow for sorting of columns (ascending or descending) and row selection (selecting one or multiple rows).
+
+  ![hvplot-evaluation-metrics](Images/hvplot-evaluation-metrics.png)
 
 Ask if there are any questions before moving forward.
