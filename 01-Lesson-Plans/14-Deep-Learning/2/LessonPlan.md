@@ -160,7 +160,7 @@ If you are confident with the code, open the unsolved notebook and have everyone
   model_1 = nn.fit(X, y, validation_split=0.3, epochs=200)
   ```
 
-* The `mean_squared_error` loss function is used to compile the model, since the output is continuous because this is a regression model.
+* The `mean_squared_error` loss function is used to compile the model, since the output is continuous because this is a regression model. Also, as additional metric, we defined `mse`.
 
 * Note that in the  `fit()` method the `validation_split` parameter is used. This parameter is a float number between `0` and `1` that reserves a fraction of the data for validation; it can be used as an alternative to the `train_test_split` method of `sklearn`.
 
@@ -205,15 +205,15 @@ Answer any questions before moving on.
 
 ### 4. Students Do: Sound of Music (20 min)
 
-In this activity students will build a model to predict the geographical origins of a musical composition.
+In this activity, students will build a model to predict the geographical origins of a musical composition.
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Sound_of_Music/README.md)
+* [README.md](Activities/02-Stu_Sound_of_Music/README.md)
 
 **Files:**
 
-* [music].ipynb]((Activities/04-Stu_Sound_of_Music/Unsolved/music.ipynb)
+* [music].ipynb]((Activities/02-Stu_Sound_of_Music/Unsolved/music.ipynb)
 
 ---
 
@@ -221,37 +221,82 @@ In this activity students will build a model to predict the geographical origins
 
 **Files:**
 
-* [music.ipynb]((Activities/04-Stu_Sound_of_Music/Solved/music.ipynb)
+* [music.ipynb]((Activities/02-Stu_Sound_of_Music/Solved/music.ipynb)
 
-* The first model we define has one hidden layer with 8 neurons.
+* The dataset is loaded and split into features `X` and target `y` sets.
 
-```python
-# 1 hidden layer
-nn = Sequential()
-nn.add(Dense(8, input_dim=67, activation='relu'))
-nn.add(Dense(2, activation='linear'))
-```
+  ```python
+  # Read in data
+  data = Path("../Resources/music.csv")
+  df = pd.read_csv(data, header=None)
 
-* The second model we define has two hidden layers, with 8 and 4 neurons respectively.
+  # Create the features set (X) and the target set (y)
+  X = df.iloc[:, 0:67].values
+  y = df.iloc[:, 68:70].values
+  ```
 
-```python
-# Define the model - shallow neural net
-nn = Sequential()
-nn.add(Dense(8, input_dim=67, activation='relu'))
-nn.add(Dense(4, activation='relu'))
-nn.add(Dense(2, activation='linear'))
-```
-* The second model converges to a lower loss metric at a slightly faster rate of training.
+* The features data is scaled using the `StandardScaler`.
 
-![music1](Images/music1.PNG)
+  ```python
+  # Scale the data of the features set using the StandardScaler
+  from sklearn.preprocessing import StandardScaler
+
+  scaler = StandardScaler().fit(X)
+  X = scaler.transform(X)
+  ```
+
+* The first model we define has one hidden layer with 8 neurons, and it's fit with `800` epochs.
+
+  ```python
+  # Create a shallow, 1 hidden layer, neural network
+  nn = Sequential()
+
+  # Hidden layer
+  nn.add(Dense(units=8, input_dim=67, activation="relu"))
+
+  # Output layer
+  nn.add(Dense(units=2, activation="linear"))
+
+  # Compile the model
+  nn.compile(loss="mean_squared_error", optimizer="adam", metrics=["mse"])
+
+  # Fit the model
+  model_1 = nn.fit(X, y, validation_split=0.3, epochs=800, verbose=0)
+  ```
+
+* The second model we define has two hidden layers, with 8 and 4 neurons respectively. This model is fit with `800` epochs as well.
+
+  ```python
+  # Define the model - deep neural network with two layers
+  nn = Sequential()
+
+  # First hidden layer
+  nn.add(Dense(units=8, input_dim=67, activation="relu"))
+
+  # Second hidden layer
+  nn.add(Dense(units=4, activation="relu"))
+
+  # Output layer
+  nn.add(Dense(units=2, activation="linear"))
+
+  # Compile the model
+  nn.compile(loss="mean_squared_error", optimizer="adam", metrics=["mse"])
+
+  # Fit the model
+  model_2 = nn.fit(X, y, validation_split=0.3, epochs=800, verbose=0)
+  ```
+
+* When the plot of the loss function of the two models is created, the second model converges to a lower loss metric at a slightly faster rate of training.
+
+  ![music1](Images/music1.PNG)
 
 * However, when we compare validation losses, it's clear that both models have severe overfitting problems after 100 or so epochs of training. The simpler model has a less drastic increase in the validation loss over time, which intuitively should make sense; the simpler model does not overfit quite as much because the function it can create is less complex.
 
-![music2](Images/music2.PNG)
+  ![music2](Images/music2.PNG)
 
-![music3](Images/music3.PNG)
+  ![music3](Images/music3.PNG)
 
-* In this instance, we may prefer the first (shallow) model due to better performance on validation (or test) data, unless there is some way of preprocessing the data or tuning the model that would limit the effects of overfitting.
+Comment to students, that in this instance, we may prefer the first (shallow) model due to better performance on validation (or test) data, unless there is some way of preprocessing the data or tuning the model that would limit the effects of overfitting, like performing PCA or adding more nodes to the hidden layer.
 
 Ask students for any questions before moving on.
 
