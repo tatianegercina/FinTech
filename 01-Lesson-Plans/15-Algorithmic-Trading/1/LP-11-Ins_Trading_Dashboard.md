@@ -1,6 +1,6 @@
-### 11. Instructor Do: Trading Dashboard (10 min)
+### 11. Everyone Do: Trading Dashboard (20 min)
 
-In this activity, students will learn how to create a Panel dashboard using the evaluation metrics generated from the prior activities. At this point in time, students should already have exposure to creating dashboards using Panel.
+In this activity, instructors will walk students through creating a trading dashboard with Panel using the evaluation metrics generated from the prior activities. At this point in time, students should already have exposure to creating dashboards using Panel.
 
 The purpose of this activity is to show students how to create a trading dashboard using the already shown (Unit 6) Panel dashboard library. In particular, students will once again define rows, columns, and tabs, as well as serve the trading dashboard as an actual web application.
 
