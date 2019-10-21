@@ -308,7 +308,7 @@ In order to use a neural net model in a production setting, we often need to sav
 
 **Files:**
 
-* [model_persistence.ipynb]((Activities/05-Ins_Model_Persistence/Solved/model_persistence.ipynb)
+* [model_persistence.ipynb](Activities/03-Ins_Model_Persistence/Solved/model_persistence.ipynb)
 
 Open the solved notebook and go through each cell, stopping for questions.
 
@@ -316,40 +316,47 @@ Open the solved notebook and go through each cell, stopping for questions.
 
 * In the first few blocks of code, we have defined a model to predict the quality of wine similar to the one we created in the last demo.
 
-* To save the model, we take advantage of the to_json function, which represents the parameters and hyperparameters of the model in a JSON format. Students should be familiar with this format as it is a common API output standard.
+* To save the model, we take advantage of the `to_json()` function, which represents the parameters and hyperparameters of the model in a `JSON` format. Students should be familiar with this format as it is a common API output standard.
 
-```python
-nn_json = nn.to_json()
-with open('../Resources/model.json', 'w') as json_file:
-    json_file.write(nn_json)
-```
+  ```python
+  # Save model as JSON
+  nn_json = nn.to_json()
+
+  with open("../Resources/model.json", "w") as json_file:
+      json_file.write(nn_json)
+  ```
 
 * Once the model is saved, it can be read and accessed again by code. However, it is now also viewable by humans, since JSON is human-readable. Open the file that the model was saved to, and ask students to identify parameters.
 
 ![json_model](Images/json_model.PNG)
 
-* Note that the model does not actually contain the weights that were trained i.e., the parameters within each neuron that dictate how variables are used to predict outcomes. We also need to save the model weights, this time in a HDF store.
+* Note that the model does not actually contain the weights that were trained i.e., the parameters within each neuron that dictate how variables are used to predict outcomes. We also need to save the model weights, this time in a HDF file.
 
-```python
-# load weights into new model
-loaded_model.load_weights('../Resources/model.h5')
-```
+* [Hierarchical Data Format (HDF or h5)](https://en.wikipedia.org/wiki/Hierarchical_Data_Format) files, contain multidimensional arrays of data.
 
-* To load the models, we need to call the model_from_json function from Keras.
+  ```python
+  # Save weights
+  nn.save_weights("../Resources/model.h5")
+  ```
 
-```python
-from tensorflow.keras.models import model_from_json
+* To load the models, we need to call the `model_from_json` function from Keras.
 
-# load json and create model
-with open('../Resources/model.json', 'r') as json_file:
-    model_json = json_file.read()
-loaded_model = model_from_json(model_json)
+  ```python
+  # Load the saved model to make predictions
+  from tensorflow.keras.models import model_from_json
 
-# load weights into new model
-loaded_model.load_weights('../Resources/model.h5')
-```
+  # load json and create model
+  with open("../Resources/model.json", "r") as json_file:
+      model_json = json_file.read()
+  loaded_model = model_from_json(model_json)
 
-* Finally, we can use the loaded model's predict function to make predictions on unseen data.
+  # load weights into new model
+  loaded_model.load_weights("../Resources/model.h5")
+  ```
+
+* Finally, we can use the loaded model's `predict()` function to make predictions on unseen data.
+
+  ![Predicted values](Images/predicted_values.png)
 
 Ask students for questions before moving on to the practice activity.
 
