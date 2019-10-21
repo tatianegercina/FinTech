@@ -22,6 +22,37 @@ Quickly discuss the following before proceeding onward to the walk through:
 
 Open the solution file and review the following:
 
+* In order to incorporate the Streamz library into our trading dashboards, we must first import the necessary libraries and dependencies.
+
+  ```python
+  from streamz import Stream
+  from streamz.dataframe import DataFrame
+  import hvplot.streamz
+  ```
+
+* Instead of initializing a DataFrame to later be used as a global variable for the asyncio event loop, the trading framework now initializes a Stream object that serves as an input to a Stream DataFrame object, of which the dashboard utilizes to build the plot.
+
+  ```python
+  def initialize(cash):
+      """Initialize the dashboard, data storage, and account balances."""
+      # Initialize Account
+      account = {"balance": cash, "shares": 0}
+
+      # Initialize Database
+      db = sqlite3.connect("algo_trader_history.sqlite")
+
+      # Initialize Streaming DataFrame for Signals
+      signals_stream = Stream()
+      columns = ["close", "sma10", "sma20"]
+      data = {"close": [],  "sma10": [], "sma20": []}
+      signals_example = pd.DataFrame(data=data, columns=columns, index=pd.DatetimeIndex([]))
+      signals_stream_df = DataFrame(signals_stream, example=signals_example)
+
+      # Initialize Streaming DataFrame for the signals
+      dashboard = build_dashboard(signals_stream_df)
+      return account, db, signals_stream, dashboard
+  ```
+
 * 
 
 Answer any questions before moving on.
