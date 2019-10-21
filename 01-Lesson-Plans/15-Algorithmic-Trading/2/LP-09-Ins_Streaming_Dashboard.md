@@ -16,7 +16,7 @@ Quickly discuss the following before proceeding onward to the walk through:
 
   **Answer:** When creating a dashboard, oftentimes it is necessary to be able to have multiple tabs with other visualizations running in parallel; however, re-drawing a full dashboard each time (as is currently done) will "refresh" the dashboard and redirect users to the home screen (or tab) each time. Therefore, in order to have visualizations running in separate tabs in parallel, it is essential to separate the streaming data layer from the dashboard creation layer.
 
-* In a modified version of `nanotrader.py` which includes an additional tab for the Panel dashboard, it can be seen that when attempting to navigate to the second tab in the dashboard, the user is sent back to the dashboard homepage after each refresh of the BTC/USD closing price. This is because the dashboard is re-drawn with every refresh and therefore initializes back to its starting point (the main tab) each time.
+* In a modified version of [nanotrader.py](Activities/08-Ins_Streaming_Dashboard/Unsolved/nanotrader.py) which includes an additional tab for the Panel dashboard, it can be seen that when attempting to navigate to the second tab in the dashboard, the user is sent back to the dashboard homepage after each refresh of the BTC/USD closing price. This is because the dashboard is re-drawn with every refresh and therefore initializes back to its starting point (the main tab) each time.
 
   ![dashboard-redraw](Images/dashboard-redraw.gif)
 
