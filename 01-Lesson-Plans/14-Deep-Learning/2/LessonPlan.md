@@ -221,7 +221,7 @@ In this activity, students will build a model to predict the geographical origin
 
 **Files:**
 
-* [music.ipynb]((Activities/02-Stu_Sound_of_Music/Solved/music.ipynb)
+* [sound_of_music.ipynb](Activities/02-Stu_Sound_of_Music/Solved/sound_of_music.ipynb)
 
 * The dataset is loaded and split into features `X` and target `y` sets.
 
@@ -384,7 +384,7 @@ In this activity, students will create a deep learning model from the music geog
 
 **Files:**
 
-* [after_training.ipynb]((Activities/04-Stu_After_Training/Solved/after_training.ipynb)
+* [after_training.ipynb](Activities/04-Stu_After_Training/Solved/after_training.ipynb)
 
 Open the notebook and walk through the code, stopping for any questions.
 
@@ -469,27 +469,142 @@ Answer any questions before moving on.
 
 ---
 
-### 10. Instructor Do: Colaboratory, a Web-based Environment for Sharing ML Projects (15 min)
+### 10. Everyone Do: Colaboratory, a Web-based Environment for Sharing ML Projects (20 min)
 
-The Colaboratory is a Google-sponsored environment for running Jupyter notebooks. It's specifically tailored for running and sharing deep learning experiments, with access to Google's self-developed Tensor Processing Units (TPUs) in addition to general purpose memory and RAM. Everything is based on the cloud, so there is no need to install or download any software or data.
+**Files:**
 
-Navigate to the [Colab site](https://colab.research.google.com/notebooks/welcome.ipynb#scrollTo=P-H6Lw1vyNNd) and explain the following points about Colab to students:
+* [connecting_neurons.ipynb](Activities/05-Evr_Colab/Solved/connecting_neurons.ipynb)
 
-* Colab allows us to do machine learning on the web, using Google Cloud resources. We can use this environment to create Jupyter notebooks just as we would on our local computers.
+In this activity, students will learn how to create and share Jupyter notebooks on Google Colaboratory (aka Colab), a cloud platform oriented toward machine learning.
 
-* Colab makes it easy to share projects and results - you can save notebooks right to your Google drive.
+Explain to students that Colaboratory is a Google-sponsored environment for running Jupyter notebooks on the Cloud. It's specifically tailored for running and sharing deep learning experiments, with access to Google's self-developed Tensor Processing Units (TPUs) in addition to general-purpose memory and RAM.
+
+[Open this three minutes introductory video](https://youtu.be/inN8seMm7UI) and reproduce it in the class. After playing the video, highlight the following:
+
+* Colab allows us to do machine learning on the web, using Google Cloud resources.
+
+* We can use this environment to create Jupyter notebooks just as we would on our local computers.
+
+* Colab makes it easy to share projects and results with potential employers, and you can save notebooks right to your Google drive.
 
 * More importantly, you get access to cloud computing resources, including RAM, memory, and Google's proprietary hardware solution for deep learning - Tensor Processor Units (TPUs).
 
-Navigate to [this page](https://colab.research.google.com/notebooks/tpu.ipynb) to show students a demo for using TPUs in Colab.
+Navigate to the [Colab website](https://colab.research.google.com), slack out the URL to students and explain the following points about Colaboratory to students:
 
-* The best part of Colab might be the many examples created using an assortment of data that are available through it. These notebooks can be found using [Seedbank](https://research.google.com/seedbank/).
+* To use Colab, students will need a Google account.
+
+* To create a new Jupyter notebook, click on `NEW PYTHON3 NOTEBOOK`:
+
+  ![Images/colab02.png](Images/colab02.png)
+
+  * The notebook will be saved to your Google Drive.
+
+  * Like any other file on Google Drive, you can control the sharing, editing, and collaboration of your notebook.
+
+* Now you are ready to start using Colab.
+
+Type the following command in the first cell, and click on the _Run_ button or press `SHIFT` + `ENTER` on your keyboard to execute the code in the cell.
+
+  ```python
+  print("Hello Colab!")
+  ```
+
+  ![Images/colab03.png](Images/colab03.png)
+
+* Code snippets provide useful boilerplate code for many tasks, such as building a plot.
+
+* To add a code snippet, open the left bar and type the kind of task you want to accomplish, for example, creating a bar chart.
+
+* Once the code snippet appears, click in _INSERT_ to add the code to your notebook.
+
+  ![Images/colab04.gif](Images/colab04.gif)
+
+* For unusually large datasets or intensive tasks, Colab offers free hardware acceleration. To enable it, go to `Edit` and select `Notebook settings`, then choose `GPU` as the Hardware Accelerator.
+
+  ![Images/colab12.png](Images/colab12.png)
+
+  ![Images/colab13.png](Images/colab13.png)
+
+* To locate in Google Drive where your notebook is stored, click on the _File_ menu, and continue by choosing the _Locate in Drive_ option.
+
+  ![Images/colab05.gif](Images/colab05.gif)
+
+* You can also import Jupyter notebooks from your local drive. Click on the _File_ menu and choose the _Upload notebook...` option, then browse your local drive for the Jupyter notebook you want to upload.
+
+  ![Images/colab06.png](Images/colab06.png)
+
+For this demo, a notebook with dummy data is going to be used. Slack out the notebook for this activity to students, while you import the file to Colab.
+
+* Once the file is imported, a new window showing the notebook will be opened.
+
+Comment to students that this example is using `hvplot` since it's not installed by default in Colab, we leave these lines commented by now.
+
+  ![Images/colab07.png](Images/colab07.png)
+
+Run all the cells by clicking on the _Runtime_ menu and choose the _Run all_ option.
+
+  ![Images/colab08.png](Images/colab08.png)
+
+* After a few seconds, all the cells will run on the Google cloud!
+
+Explain to students that it's possible to install new libraries in Google Colab by running the following command
+
+```python
+!pip install <library_name>
+```
+
+Add a new code text bellow the title cell of the notebook, type and execute the following code to install `hvplot` and make it run in Google Colab. Note that also `bokeh` is installed to ensure we are using the last version.
+
+```python
+!pip install hvplot
+!pip install -U bokeh
+```
+
+![Images/colab09.gif](Images/colab09.gif)
+
+* Once you installed these libraries, you may be asked to restart the restart your runtime.
+
+  ![Images/colab10.png](Images/colab10.png)
+
+  ![Images/colab11.png](Images/colab11.png)
+
+After the installation finish, remove the comments from the initial imports.
+
+```python
+# Initial imports
+import pandas as pd
+import numpy as np
+import hvplot.pandas # <--- Uncomment this line
+from sklearn.datasets.samples_generator import make_moons
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+```
+
+Also, remove the comments from the cell where the plot is created. Note that we are using the `hvplot.show()` method, explain to students that this is the way to proceed in order to display the plot in Google Colab
+
+```python
+# Plotting the non-linear dummy data
+plot = df_moons.hvplot.scatter(x="Feature 1", y="Feature 2", by="Target")
+hvplot.show(plot)
+```
+
+Delete the cell where you run the libraries installation, and run all the notebook's cell to show students that now the plot is displayed in the notebook as we did in Jupyter notebooks.
+
+![Images/colab14.gif](Images/colab14.gif)
+
+Comment to students that there are plenty of examples created by the Colab community using an assortment of data that are available through it. These notebooks can be found in [Seedbank website](https://research.google.com/seedbank/). Slack out the Seedbank URL to students and highlight the following:
 
 * We can search projects by tags or keywords.
 
 * These projects can be useful for learning by example, a source of inspiration for your own projects, or just a useful repository of code to copy snippets from.
 
-Navigate to the [text classification with movie reviews](https://colab.research.google.com/github/tensorflow/docs/blob/r2.0rc/site/en/r2/tutorials/keras/basic_text_classification.ipynb) page. Inform students that we will use this notebook for the next activity.
+Type `Classify movie reviews using tf.keras` in the Seedbank search box and press `ENTER` to look for this project.
+
+Once the project appears in the search results, open it and click on the _Run seed in Colab_ button; explain to students that this is how they can import a _seed project_ to their Colab workspace, and start studying it and customizing the code.
+
+![Images/colab15.gif](Images/colab15.gif)
 
 Stop for questions before moving on to the next activity.
 
@@ -497,15 +612,26 @@ Stop for questions before moving on to the next activity.
 
 ### 11. Students Do: Deep Learning on the Web (30 min)
 
-In this activity students will use the text classification demo notebook to understand and modify a deep learning classification model with Colab.
+In this activity, students will use the text classification demo notebook to understand and modify a deep learning classification model with Colab.
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Colab/README.md)
+* [README.md](Activities/06-Stu_Colab/README.md)
 
+---
 
 ### 12. Instructor Do: Review Deep Learning on the Web (15 min)
 
-Open the [Text Classification with Movie Reviews notebook](https://colab.research.google.com/github/tensorflow/docs/blob/r2.0rc/site/en/r2/tutorials/keras/basic_text_classification.ipynb). Ask one partner to volunteer to summarize for the class what this model is doing and the steps it takes to do it.
+Open the [Text Classification with Movie Reviews notebook](https://colab.research.google.com/github/tensorflow/docs/blob/r2.0rc/site/en/r2/tutorials/keras/basic_text_classification.ipynb).
+
+Ask one student to volunteer to summarize for the class what this model is doing and the steps it takes to do it.
 
 Ask volunteers to give examples of ways they changed the architecture, and why. Compare final accuracy and loss metrics.
+
+---
+
+### End Class
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
