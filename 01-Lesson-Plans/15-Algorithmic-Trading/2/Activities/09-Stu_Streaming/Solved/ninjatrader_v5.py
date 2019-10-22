@@ -23,8 +23,8 @@ def initialize(cash):
 
     # Initialize Streaming DataFrame for Account
     account_stream = Stream()
-    columns = ["balance", "holding_value", "total_portfolio_value", "active_shares"]
-    data = {"balance": [], "holding_value": [], "total_portfolio_value": [], "active_shares": []}
+    columns = ["balance", "holding_value", "total_portfolio_value", "shares"]
+    data = {"balance": [], "holding_value": [], "total_portfolio_value": [], "shares": []}
     account_example = pd.DataFrame(data=data, columns=columns)
     account_stream_df = DataFrame(account_stream, example=account_example)
 
@@ -37,12 +37,15 @@ def initialize(cash):
 
     # Initialize Streaming DataFrame for Evaluations
     portfolio_eval_stream = Stream()
+    portfolio_eval_columns = ["Index", "Backtest"]
+    portfolio_eval_data = {"Index": [], "Backtest": []}
+    portfolio_stream_df = pd.DataFrame(
+        data=portfolio_eval_data,
+        columns=portfolio_eval_columns
+    )
+
     trade_eval_stream = Stream()
-
-    portfolio_eval_columns = ["Backtest"]
     trade_eval_columns = ['Stock', 'Entry Date', 'Exit Date', 'Shares', 'Entry Share Price', 'Exit Share Price', 'Entry Portfolio Holding', 'Exit Portfolio Holding', 'Profit/Loss']
-
-    portfolio_eval_data = {"Backtest": []}
     trade_eval_data = {
         "Stock": [],
         "Entry Date": [],
@@ -54,15 +57,8 @@ def initialize(cash):
         "Exit Portfolio Holding": [],
         "Profit/Loss": []
     }
+    trade_stream_df = pd.DataFrame(data=trade_eval_data, columns=trade_eval_columns)
 
-    portfolio_stream_df = pd.DataFrame(
-        data=portfolio_eval_data,
-        columns=portfolio_eval_columns
-    )
-    trade_stream_df = pd.DataFrame(data=trade_eval_data, columns=trade_eval_columns
-    )
-
-    print("RIGHT BEFORE BUILD DASHBOARD")
     # Initialize Streaming DataFrame for the signals
     dashboard = build_dashboard(account_stream_df, signals_stream_df, portfolio_stream_df, trade_stream_df)
 
@@ -72,16 +68,16 @@ def initialize(cash):
 def build_dashboard(account_stream_df, signals_stream_df, portfolio_stream_df, trade_stream_df):
     """Build the dashboard."""
     # Initialize static widgets
-    account_balance = pn.widgets.StaticText(name="Cash Balance", value=account_stream_df['balance'])
+    account_balance = pn.widgets.StaticText(name="Cash Balance", value=account_stream_df['balance'].tail(1))
     holding_value = pn.widgets.StaticText(name="Portfolio Holding", value=account_stream_df['holding_value'])
     total_portfolio_value = pn.widgets.StaticText(name="Total Portfolio Value", value=account_stream_df['total_portfolio_value'])
-    active_shares = pn.widgets.StaticText(name="Active Shares", value=account_stream_df['active_shares'])
+    #active_shares = pn.widgets.StaticText(name="Active Shares", value=account_stream_df['shares'])
 
     # Create price plot of closing, SMA10, and SMA20
-    price_plot = signals_stream_df.hvplot.line(x='date', y=['close', 'SMA10', 'SMA20'], value_label='Price', width=1000, height=400, rot=90)
+    price_plot = signals_stream_df.hvplot.line(y=['close', 'sma10', 'sma20'], value_label='Price', width=1000, height=400, rot=90)
 
     # Create portfolio and trade metrics table
-    portfolio_evaluation_table = portfolio_stream_df.hvplot.table(columns=['Backtest'], width=300, height=400)
+    portfolio_evaluation_table = portfolio_stream_df.hvplot.table(columns=['Index', 'Backtest'], width=300, height=400)
     trade_evaluation_table = trade_stream_df.hvplot.table(
         columns=[
             'Stock',
@@ -93,7 +89,8 @@ def build_dashboard(account_stream_df, signals_stream_df, portfolio_stream_df, t
             'Entry Portfolio Holding',
             'Exit Portfolio Holding',
             'Profit/Loss'
-        ]
+        ],
+        backlog=10
     )
 
     # Create rows
@@ -136,12 +133,12 @@ def generate_signal(data_df):
     signals["signal"] = 0.0
 
     # Generate the short and long moving averages
-    signals["SMA10"] = signals["close"].rolling(window=short_window).mean()
-    signals["SMA20"] = signals["close"].rolling(window=long_window).mean()
+    signals["sma10"] = signals["close"].rolling(window=short_window).mean()
+    signals["sma20"] = signals["close"].rolling(window=long_window).mean()
 
     # Generate the trading signal 0 or 1,
     signals["signal"][short_window:] = np.where(
-        signals["SMA10"][short_window:] > signals["SMA20"][short_window:], 1.0, 0.0
+        signals["sma10"][short_window:] > signals["sma20"][short_window:], 1.0, 0.0
     )
 
     # Calculate the points in time at which a position should be taken, 1 or -1
@@ -329,11 +326,19 @@ async def main():
             account = execute_trade_strategy(tested_signals, account)
             portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals)
 
-            account_df = pd.DataFrame(account)
+            account_df = pd.DataFrame(account, index=[[0]])
+            print("ACCOUNT DF")
             print(account_df)
+            print(account_df['balance'][-1])
+            account_stream.emit(account_df)
             signals_stream.emit(signals[['close', 'sma10', 'sma20']].tail(1))
+
+            portfolio_evaluation_df.reset_index(inplace=True)
+
+            print("PORTFOLIO EVALUATION DF")
+            print(portfolio_evaluation_df)
             portfolio_eval_stream.emit(portfolio_evaluation_df)
-            trade_eval_stream.emit(trade_evaluation_df)
+            trade_eval_stream.emit(trade_evaluation_df.tail(1))
 
             print(f"Account Balance: {account['balance']}")
             print(f"Account Shares: {account['shares']}")
