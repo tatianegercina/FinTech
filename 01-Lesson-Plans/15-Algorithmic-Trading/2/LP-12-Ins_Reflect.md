@@ -1,6 +1,6 @@
-### 12. Instructor Do: Reflect (15 min)
+### 12. Instructor Do: Reflect (10 min)
 
-This activity will conclude today's lesson on Algorithmic Trading Day 1 and provide a chance for students to reflect upon what they've learned throughout the day.
+This activity will conclude today's lesson on Algorithmic Trading Day 2 and provide a chance for students to reflect upon what they've learned throughout the day.
 
 The purpose of this activity is to allow students a chance to take a step back and digest the concepts that have been taught today by engaging students in such a way that students drive the conversation, thereby reinforcing their learning by "teaching" the class.
 
@@ -8,24 +8,24 @@ Recap the skills and concepts learned throughout the lesson, and engage students
 
 * Ask if there are any students who would like to volunteer to summarize the any of the following concepts.
 
-  * What is algorithmic trading? What does the process entail?
+  * What is the purpose of an algorithmic trading framework? What does it look like?
 
-  * What are trading signals?
+  * What is the ccxt library and what does it do? Why is it a convenient library to have in terms of trading?
 
-  * What is backtesting? Why is it important?
+  * What is the asyncio library? Why was it important for our algorithmic trading applications?
 
-  * What kinds of portfolio evaluation metrics exist?
+  * What is data persistence? Why is it important?
 
-  * What kinds of trade evaluation metrics exist?
+  * What is the streamz library? What benefits did it provide for our algorithmic trading applications?
 
-* Ask if there are any volunteers who would like to anything that has not been previously stated.
+* Ask if there are any volunteers who would like to add anything that has not been previously stated.
 
 * Ask students to identify two things they'd like to practice more from today's lesson that they might have struggled with conceptually, and in particular, how the lesson could be better taught from their perspective. Encourage them to do additional practice and reading outside of class to reinforce their knowledge and skill.
 
 Finish the recap with a few statements of encouragement:
 
-* Tell students they should give themselves a round of applause. They are on their way to becoming their own investment fund managers!
+* Tell students they should give themselves another round of applause. Students now have the tools necessary to engage in live algorithmic trading!
 
-* Remind students that by learning how to algorithmically trade, they are now already way ahead of those who only know how to manually invest. Therefore, they now have the tools to do both, and can choose which method they prefer, either algorithmically, manually, or a hybrid of both.
+* Remind students that should they choose, they can continue to build out their trading applications to make them even more robust and scalable. In particular, this will be especially impressive to potential employers as not many individuals have an algorithmic trading application under their belts!
 
-* The next step is to create an algorithmic trading framework in Day 2, in which students will take what they've learned today to create a full-fledged trading application that they can use in real-world scenarios. Students should be pumped for this!
+* The next step is to further enhance students' algorithmic trading frameworks with machine learning capabilities in Day 3. Students are on their way to not only managing their own trades better, but building a machine that can learn to do it better!
