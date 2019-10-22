@@ -2,15 +2,27 @@
 
 ### Overview
 
+In this lesson, students will be introduced to deep learning basic concepts, also they will create deep learning models using Keras and deploy machine learning models in the web using Google Colaboratory.
+
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-*
+* Explain the difference between neural networks and deep neural networks.
+
+* Build deep learning models using Keras.
+
+* Save trained deep learning models built in Keras for further usage.
+
+* Deploy models in the cloud using Google Colaboratory.
 
 ### Instructor Notes
 
-*
+* Deep learning has deep math concepts behind, despite these concepts are beyond the scope of the class, students will gain a high-level understanding of deep neural network by the hands-on activities.
+
+* This lesson has many practical activities, be sure to get familiar with them before the class to assist students in the class.
+
+* There is a video proposed to be viewed in class in the intro to Google Colaboratory; if you don't have an audio system in your classroom, you can activate closed captions in the video instead.
 
 ### Class Slides and Time Tracker
 
