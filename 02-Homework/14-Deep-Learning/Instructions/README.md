@@ -42,7 +42,7 @@ Finally, reshape the X_train and X_test values to fit the model's requirement of
 
 In each Jupyter notebook, create the same custom LSTM RNN architecture. In one notebook, you will fit the data using the FNG values. In the second notebook, you will fit the data using only closing prices.
 
-Use the same parameters and training steps for each model. This is necessary to accurately compare each model.
+Use the same parameters and training steps for each model. This is necessary to compare each model accurately.
 
 ### Evaluate the performance of each model
 
