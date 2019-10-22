@@ -1,30 +1,31 @@
-18. Instructor Do: Recap (10 min)
-This activity will conclude the APIs Day 1. Recap the skills and concepts learned throughout the lesson. Engage the students by having students lead the recap as much as possible.
+### 12. Instructor Do: Reflect (15 min)
 
-Ask if there's a student who would like to volunteer to summarize what was learned today.
+This activity will conclude today's lesson on Algorithmic Trading Day 1 and provide a chance for students to reflect upon what they've learned throughout the day.
 
-Ask if there are any volunteers who would like to add to what the previous student stated.
+The purpose of this activity is to allow students a chance to take a step back and digest the concepts that have been taught today by engaging students in such a way that students drive the conversation, thereby reinforcing their learning by "teaching" the class.
 
-Guide students and the recap session. Use the below sample statements and questions to guide students if student engagement and participation is low. Only use these if necessary; let the students drive the session as much as possible.
+Recap the skills and concepts learned throughout the lesson, and engage students by having them lead the discussion as much as possible:
 
-Some of the APIs used in the lesson were Quandl, World Bank, Numbers API, Deck of Cards, U.S. Spending Stats, Random Jokes, etc. What APIs did you find to be the most interesting?
+* Ask if there are any students who would like to volunteer to summarize the any of the following concepts.
 
-What APIs were the most useful? In what ways could you continue to use these APIs, especially in everyday life?
+  * What is algorithmic trading? What does the process entail?
 
-Ask students to identify two things they'd like to practice on from today's lesson that they might have struggled with conceptually. Encourage them to do additional practice and reading outside of class to reinforce the knowledge and skill.
+  * What are trading signals?
 
-Finish the recap with a few statements of encouragement.
+  * What is backtesting? Why is it important?
 
-Tell students they need to give themselves, yet gain, a round of applause. They've added yet another valuable tool to their developer's toolkit.
+  * What kinds of portfolio evaluation metrics exist?
 
-Remind students that completing this amount of work in this time period already means they've proven their aptitude. It's just growth from here.
+  * What kinds of trade evaluation metrics exist?
 
-The next step for APIs is to work with authenticated APIs, as well as software development kits (SDKs) like PLAID, a personal finance API that can connect to multiple accounts. This is where the class will get heavy into accessing and using financial data via APIs.
+* Ask if there are any volunteers who would like to anything that has not been previously stated.
 
-Before students leave for the end of the day, give them a small homework assignment. Instruct students to sign up for the below APIs. Students will need to sign up for these APIs before coming to the next class; these APIs will be used in Unit 5.2. Slack out the links so that students will have them. Students who do not have access will not be able to complete all of Unit 5.2's activities.
+* Ask students to identify two things they'd like to practice more from today's lesson that they might have struggled with conceptually, and in particular, how the lesson could be better taught from their perspective. Encourage them to do additional practice and reading outside of class to reinforce their knowledge and skill.
 
-Emphasize to students that they should be signing up for free, development accounts. There is no need to purchase any services.
+Finish the recap with a few statements of encouragement:
 
-Quandl
+* Tell students they should give themselves a round of applause. They are on their way to becoming their own investment fund managers!
 
-Plaid
+* Remind students that by learning how to algorithmically trade, they are now already way ahead of those who only know how to manually invest. Therefore, they now have the tools to do both, and can choose which method they prefer, either algorithmically, manually, or a hybrid of both.
+
+* The next step is to create an algorithmic trading framework in Day 2, in which students will take what they've learned today to create a full-fledged trading application that they can use in real-world scenarios. Students should be pumped for this!
