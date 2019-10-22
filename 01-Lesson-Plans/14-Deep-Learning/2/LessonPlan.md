@@ -2,7 +2,7 @@
 
 ### Overview
 
-In this lesson, students will be introduced to deep learning basic concepts, also they will create deep learning models using Keras and deploy machine learning models in the web using Google Colaboratory.
+In this lesson, students will be introduced to deep learning basic concepts. Also, they will create deep learning models using Keras and deploy machine learning models in the cloud using Google Colaboratory.
 
 ### Class Objectives
 
@@ -18,11 +18,9 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Deep learning has deep math concepts behind, despite these concepts are beyond the scope of the class, students will gain a high-level understanding of deep neural network by the hands-on activities.
+* Deep learning has a lot of technical concepts that are beyond the scope of this lesson. Students should be able to obtain a high-level understanding of deep neural network architectures through a series of hands-on activities.
 
-* This lesson has many practical activities, be sure to get familiar with them before the class to assist students in the class.
-
-* There is a video proposed to be viewed in class in the intro to Google Colaboratory; if you don't have an audio system in your classroom, you can activate closed captions in the video instead.
+* This class uses the new TensorFlow 2.0 framework for the activities, so be sure to test the install and setup for this before class.
 
 ### Class Slides and Time Tracker
 
@@ -38,27 +36,27 @@ The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students to the second day of thw deep learning unit! Open the lesson slides and move to the _Hello Deep Learning!_ slide and highlight the following:
+Welcome students to the second day of the deep learning unit! Open the lesson slides and move to the _Hello Deep Learning!_ slide and highlight the following:
 
 * Today we will dive into constructing deep learning models with real-world data.
 
 * Generally speaking, deep learning models are neural networks with more than one hidden layer.
 
-* Deep neural networks are much more effective than traditional machine learning approaches at discovering non-linear relationships amongst data, and thus are often the best-performing choice for complex or unstructured data like images, text, and voice.
+* Deep neural networks are much more effective than traditional machine learning approaches at discovering non-linear relationships amongst data and thus are often the best-performing choice for complex or unstructured data like images, text, and voice.
 
-Comment to students, that deep neural networks allow to create computational models composed of multiple layers that are able to learn representations of data with multiple levels of abstraction.
+Explain to students that deep neural networks allow creating computational models composed of multiple layers that can learn representations of data with multiple levels of abstraction.
 
-* For example, in image recognition, each layer is able to identify different features of an input image to decide what is it about.
+* For example, in image recognition, each layer can identify different features of an input image to decide what is it about.
 
-Comment to students, that deep neural networks are fun! Open the [Quick, Drawn! web application](https://quickdraw.withgoogle.com) in you browser and slack out the URL to students, explain students that you are going to play a Pictionary like game using the power of deep learning.
+Explain to students that deep neural networks are fun! Open the [Quick, Drawn! web application](https://quickdraw.withgoogle.com) in your browser and slack out the URL to students. Explain to students that they are going to play a Pictionary-like game using the power of deep learning.
 
-* The Quick, Draw! application is able to identify an image from a trace.
+* The Quick, Draw! application can identify an image from a trace.
 
-* The game ask you to draw something in less than 20 seconds, an the deep learning algorithm start predicting what you trace could be.
+* The game asks you to draw something in less than 20 seconds while the deep learning algorithm tries to guess what the trace could be.
 
   ![Quick,Draw! demo](Images/quick-draw.gif)
 
-Draw a couple of traces in the game, and tell students that this is an example of the power of neural networks in real time, despite this is a game for fun, these kind of applications could be also used for signatures recognition in banking checks or hand writing text in historic documents.
+Draw a couple of traces in the game, and tell students that this is an example of the power of neural networks in real-time, despite this is a game for fun, these kinds of applications could also be used for signatures recognition in banking checks or handwriting text in historical documents.
 
 Ask if there are any questions before moving on.
 
@@ -76,7 +74,7 @@ Continue on the lesson slides and move to the _Understanding Deep Learning_ sect
 
 * Deep learning models make solving machine learning problems with high accuracy like image classification and sentiment classification possible.
 
-Open the TensorFlow playground [using this link](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8&seed=0.14370&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=true&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false), click on the _Play_ button to run simulation, and use the model to demonstrate the effects of adding layers of neurons to a neural network and go through the following talking points.
+Open the TensorFlow playground [using this link](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8&seed=0.14370&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=true&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false), click on the _Play_ button to run the simulation, and use the model to demonstrate the effects of adding layers of neurons to a neural network and go through the following talking points.
 
 * We can see the benefits of adding additional layers in the TensorFlow playground - this is apparent with the more complex classification datasets, such as _spiral_. We see a lack of convergence below with one layer of neurons.
 
@@ -120,11 +118,11 @@ In this activity, students will build a deep learning model to predict the quali
 
 * Unsolved: [deeplearning.ipynb](Activities/01-Ins_Deep_Learning/Unsolved/deeplearning.ipynb)
 
-If you are confident with the code, open the unsolved notebook and have everyone follow along while you live code. Otherwise, walk through the solved notebook and given students the following talking points.
+If you are confident with the code, open the unsolved notebook, and have everyone follow along while you live code. Otherwise, walk through the solved notebook and give students the following talking points.
 
-* In this activity we will use a deep neural network to predict wine quality scores using some features of the wine.
+* In this activity, we will use a deep neural network to predict wine quality scores using some features of the wine.
 
-* The dataset is loaded an the features set `X` and the target vector `y` are created.
+* The features are assigned to `X`, and the target labels are assigned to `y`.
 
   ```python
   # Read in data
@@ -146,7 +144,7 @@ If you are confident with the code, open the unsolved notebook and have everyone
   X = scaler.transform(X)
   ```
 
-* First we'll create a shallow, one hidden layer network to accomplish the task. Note that the activation function in the output layer is set to `linear`.
+* First, we'll create a shallow, one hidden layer network to accomplish the task. Note that the activation function in the output layer is set to `linear`.
 
   ```python
   # Define the model - shallow neural net
@@ -172,13 +170,13 @@ If you are confident with the code, open the unsolved notebook and have everyone
   model_1 = nn.fit(X, y, validation_split=0.3, epochs=200)
   ```
 
-* The `mean_squared_error` loss function is used to compile the model, since the output is continuous because this is a regression model. Also, as additional metric, we defined `mse`.
+* The `mean_squared_error` loss function is used to compile the model since the output is continuous because this is a regression model. Also, as an additional metric, we defined `mse`.
 
 * Note that in the  `fit()` method the `validation_split` parameter is used. This parameter is a float number between `0` and `1` that reserves a fraction of the data for validation; it can be used as an alternative to the `train_test_split` method of `sklearn`.
 
 * When the `validation_split` parameter is used, the model will set apart this fraction of the training data, will not train on it, and will evaluate the loss and any model metrics on this data at the end of each epoch.
 
-* From plotting the loss function, it seems to quickly converge to a very small loss. Can a deeper network do better?
+* From plotting the loss function, it seems to converge to a very small loss quickly. Can a deeper network do better?
 
   ![deep1](Images/deep1.PNG)
 
@@ -276,7 +274,7 @@ In this activity, students will build a model to predict the geographical origin
   model_1 = nn.fit(X, y, validation_split=0.3, epochs=800, verbose=0)
   ```
 
-* The second model we define has two hidden layers, with 8 and 4 neurons respectively. This model is fit with `800` epochs as well.
+* The second model we define has two hidden layers, with 8 and 4 neurons, respectively. This model is fit with `800` epochs as well.
 
   ```python
   # Define the model - deep neural network with two layers
@@ -316,7 +314,7 @@ Ask students for any questions before moving on.
 
 ### 6. Instructor Do: Model Persistence (10 min)
 
-In order to use a neural net model in a production setting, we often need to save the model and have it predict outcomes on unseen data at a future date. In this demo we'll show students how to persist a neural net model.
+To use a neural net model in a production setting, we often need to save the model and have it predict outcomes on unseen data at a future date. In this demo, we'll show students how to persist a neural net model.
 
 **Files:**
 
@@ -343,7 +341,7 @@ Open the solved notebook and go through each cell, stopping for questions.
 
 ![json_model](Images/json_model.PNG)
 
-* Note that the model does not actually contain the weights that were trained i.e., the parameters within each neuron that dictate how variables are used to predict outcomes. We also need to save the model weights, this time in a HDF file.
+* Note that the model does not contain the weights that were trained, i.e., the parameters within each neuron that dictate how variables are used to predict outcomes. We also need to save the model weights, this time in an HDF file.
 
 * [Hierarchical Data Format (HDF or h5)](https://en.wikipedia.org/wiki/Hierarchical_Data_Format) files, contain multidimensional arrays of data.
 
@@ -400,7 +398,7 @@ In this activity, students will create a deep learning model from the music geog
 
 Open the notebook and walk through the code, stopping for any questions.
 
-* After the data is loaded, we split the the data into training and testing sets.
+* After the data is loaded, we split the data into training and testing sets.
 
   ```python
   from sklearn.model_selection import train_test_split
@@ -430,7 +428,7 @@ Open the notebook and walk through the code, stopping for any questions.
   nn.add(Dense(units=2, activation="linear"))
   ```
 
-* After compiling and fitting the model, we save it it to a json file. We save the weights to a H5 store.
+* After compiling and fitting the model, we save it to a JSON file. We save the weights to an H5 store.
 
   ```python
   # Save model as JSON
@@ -444,7 +442,7 @@ Open the notebook and walk through the code, stopping for any questions.
   nn.save_weights(file_path)
   ```
 
-* To load the model, first we read the json file. Then, we use the model object to load the weights from its file path.
+* To load the model, first we read the JSON file. Then, we use the model object to load the weights from its file path.
 
   ```python
   # Load the model to predict values
@@ -461,7 +459,7 @@ Open the notebook and walk through the code, stopping for any questions.
   loaded_model.load_weights(file_path)
   ```
 
-* All that's left to do is to use the model for prediction. After this, we can use scikit's MSE metric function to calculate the difference between predicted and observed values for the test set.
+* All that's left to do is to use the model for prediction. After this, we can use sklearn's MSE metric function to calculate the difference between predicted and observed values for the test set.
 
 ```python
 # Predict values using the testing data
@@ -594,7 +592,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 ```
 
-Also, remove the comments from the cell where the plot is created. Note that we are using the `hvplot.show()` method, explain to students that this is the way to proceed in order to display the plot in Google Colab
+Also, remove the comments from the cell where the plot is created. Note that we are using the `hvplot.show()` method, explain to students that this is the way to proceed to display the plot in Google Colab
 
 ```python
 # Plotting the non-linear dummy data
@@ -610,7 +608,7 @@ Comment to students that there are plenty of examples created by the Colab commu
 
 * We can search projects by tags or keywords.
 
-* These projects can be useful for learning by example, a source of inspiration for your own projects, or just a useful repository of code to copy snippets from.
+* These projects can be useful for learning by example, a source of inspiration for your projects, or just a helpful repository of code to copy snippets from.
 
 Type `Classify movie reviews using tf.keras` in the Seedbank search box and press `ENTER` to look for this project.
 
