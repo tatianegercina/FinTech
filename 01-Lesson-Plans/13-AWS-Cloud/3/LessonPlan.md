@@ -20,6 +20,8 @@ By the end of the unit, students will be able to:
 
 ### Instructor Notes
 
+* Slack out the [Deep Learning Installation Guide](../../14-Deep-Learning/Supplemental/deep_learning_installation_guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+
 * There are several misconceptions and myths about what can be achieved with a Robo Advisor, make sure students understand what a Robo Advisor is and invite them to think about the endless possibilities of this technology for FinTech.
 
 * Today's class may be challenging for students because they are going to deal with different AWS services and the Slack API, so be sure to get familiar with all the activities before class.
