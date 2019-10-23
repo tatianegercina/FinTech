@@ -28,7 +28,7 @@ By the end of the unit, students will be able to:
 
 * Testing Amazon Lambda functions could be tricky and frustrating, so have your TAs assisting students while they are coding and testing them.
 
-* **Important:** At the end of Today´s class, remember students to create a local copy of all their deployments on AWS, so they can delete them from the cloud to avoid additional charges. Also, remind students to be aware, of AWS free tier and trials expiration date.
+* **Important:** At the end of Today´s class, remember students to create a local copy of all their deployments on AWS, so they can delete them from the cloud to avoid additional charges. Also, remind students to be aware of AWS free tier and trials expiration date.
 
 ### Slideshow and Time Tracker
 
@@ -44,41 +44,41 @@ By the end of the unit, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-In this activity, students will be introduced to conversational user interfaces (CUIs); they will learn how CUIs are disrupting on financial services and what are the tools they will use to create a robo advisor.
+In this activity, students will be introduced to conversational user interfaces (CUIs); they will learn how CUIs are disrupting financial services and what are the tools they will use to create a robo advisor.
 
-Welcome students back and explain that Today we will learn about conversational user interfaces, one of the coolest applications of natural language processing; explain to students that they will create a robo advisor with conversational capabilities by the end of the day.
+Welcome students back and explain that today, we will learn about conversational user interfaces, one of the coolest applications of natural language processing, explain to students that they will create a robo advisor with conversational capabilities by the end of the day.
 
 Open the lesson slides and move to the _Conversational User Interfaces (CUIs) and Robo Advisors_ section, highlight the following:
 
-* On the early yeas of computing history, people used to communicate with computers using text interfaces and some non-human-friendly commands.
+* On the early years of computing history, people used to communicate with computers using text interfaces and some non-human-friendly commands.
 
-* Thanks to AI, and specially to the advances on natural language processing (NLP), nowadays we can communicate with computer systems using human language through conversational user interfaces via voice or text.
+* Thanks to AI, and especially to the advances in natural language processing (NLP), we can communicate with computer systems using human language through conversational user interfaces via voice or text.
 
-* Chatbots are the most common applications of CUIs, however, Amazon Alexa, Apple Siri or Google Assistant are also examples of CUIs.
+* Chatbots are the most common applications of CUIs; however, Amazon Alexa, Apple Siri, or Google Assistant are also examples of CUIs.
 
 * Financial services providers are using CUIs by offering Robotic Advisors or Robo Advisors, as an additional communication channel for customers.
 
-Engage students by highlighting the benefits of this technology on finance and banking, slack out [this article from Deloitte](../Supplemental/deloitte-nl-fsi-chatbots-adopting-the-power-of-conversational-ux.pdf) were they can learn more about the impact of chatbots in financial services.
+Engage students by highlighting the benefits of this technology on finance and banking, slack out [this article from Deloitte](../Supplemental/deloitte-nl-fsi-chatbots-adopting-the-power-of-conversational-ux.pdf) where they can learn more about the impact of chatbots in financial services.
 
-Present to students the use cases shown on the _Example Chatbots Use Cases_ slide, ask a couple of them if they are familiar with services like these and what were their experience.
+Present to students the use cases shown on the _Example Chatbots Use Cases_ slide, ask a couple of them if they are familiar with services like these, and what were their experience.
 
 Explain to the class the technologies we will use Today and highlight the following:
 
-* By the end of Today's class we will create a robo advisor using AWS.
+* By the end of Today's class, we will create a robo advisor using AWS.
 
 * Amazon Lex is a service for building conversational interfaces into any application using voice and text.
 
 * Amazon Lambda is a computing service that runs code in response to events. We will use this service to program the actions of the robo advisor.
 
-* The robo advisor will be deployed as a Slack application were users will interact with it.
+* The robo advisor will be deployed as a Slack application where users will interact with it.
 
-Answer any additional question before moving forward.
+Answer any additional questions before moving forward.
 
 ---
 
 ### 2. Instructor Do: Intro to Amazon Lex (10 min)
 
-In this activity, students will be introduced to Amazon Lex; they will learn how to create a bot using the Amazon Lex console that returns parameters to the client by configuring a single intent, some slots and a confirmation prompt.
+In this activity, students will be introduced to Amazon Lex; they will learn how to create a bot using the Amazon Lex console that returns parameters to the client by configuring a single intent, some slots, and a confirmation prompt.
 
 **Files:**
 
@@ -88,19 +88,19 @@ In this activity, students will be introduced to Amazon Lex; they will learn how
 
 Start this activity by opening the slides to the _Intro to Lex_ section and highlight the following:
 
-* Amazon Lex is an AWS service that allows developers to create conversational interfaces powered by the same deep learning technologies as Alexa.
+* Amazon Lex is an AWS service that allows developers to create conversational interfaces powered by the same deep learning technologies like Alexa.
 
-* Getting started with Amazon Lex is quite easy, it's just a four step process.
+* Getting started with Amazon Lex is quite easy, it is just a four-step process.
 
 * All the complexity of deep learning algorithms is encapsulated, no coding is needed to start using it.
 
 Introduce the Amazon Lex jargon to students using a day-to-day example like booking a hotel room; comment to students that they will gain hands-on experience with these concepts in Today's class.
 
-Clarify to students the AWS regions where Amazon Lex is available, pricing varies among regions. We will use `US West (Oregon)` for running the examples.
+Clarify to students the AWS regions where Amazon Lex is available, and pricing varies among regions. We will use `US West (Oregon)` for running the examples.
 
 Slack out the [Amazon Lex Pricing policies](https://aws.amazon.com/lex/pricing/), remind students that from the date they get started with Amazon Lex, they can process up to 10,000 text requests and 5,000 speech requests per month for free for the first year. **Note:** This is subject to change, so they should verify the pricing structure using the link above.
 
-Close the presentation and open the AWS Management Console, explain students that now you will create an Amazon Lex bot that will assist users to split a bill between a given number of people.
+Close the presentation and open the AWS Management Console, explain to students that now you will create an Amazon Lex bot that will assist users to split a bill between a given number of people.
 
 Follow the next steps to perform a live demo.
 
@@ -116,11 +116,11 @@ Follow the next steps to perform a live demo.
 
   ![Step 3](Images/lex-step3.png)
 
-* **Step 4:** If this is the fist time you use Amazon Lex, you will see the following page to get started with your first bot.
+* **Step 4:** If this is the first time you use Amazon Lex, you will see the following page to get started with your first bot.
 
   ![Step 4a](Images/lex-step4a.png)
 
-  If you have already created a bot, you will be led to the following page instead where you can see a list with your current bots.
+  If you have already created a bot, you will be led to the following page instead of where you can see a list with your current bots.
 
   ![Step 4b](Images/lex-step4b.png)
 
@@ -133,7 +133,7 @@ Follow the next steps to perform a live demo.
 
   ![Step 5](Images/lex-step5.png)
 
-* **Step 6:** Now you will create an intent to respond to user's actions. Click on the _Create Intent_ button and you will see the a pup-up window entitled _Add intent_ as you can see bellow. Click on the _Create intent_ option to continue.
+* **Step 6:** Now you will create an intent to respond to the user's actions. Click on the _Create Intent_ button, and you will see a pup-up window entitled _Add intent_ as you can see below. Click on the _Create intent_ option to continue.
 
   ![Step 6](Images/lex-step6.png)
 
@@ -147,7 +147,7 @@ Follow the next steps to perform a live demo.
   * `Please help me to share the bill`
   * `I want to share the bill with my friends`
 
-  At this point, explain to student that these sample utterances will be used by the deep learning algorithm of Amazon Lex to understand the context of the conversation, the more different sample utterances you add, the best the conversation will flow between the bot and the user.
+  At this point, explain to the students that these sample utterances will be used by the deep learning algorithm of Amazon Lex to understand the context of the conversation, the more different sample utterances you add, the best the conversation will flow between the bot and the user.
 
   ![Step 8](Images/lex-step8.png)
 
@@ -155,21 +155,21 @@ Follow the next steps to perform a live demo.
 
   | Name         | Slot type     | Prompt                                                   |
   | ------------ | ------------- | -------------------------------------------------------- |
-  | totalAmount  | AMAZON.NUMBER | I'll be please to help, what is the bill's total amount? |
-  | numberPeople | AMAZON.NUMBER | How many people is going to pay the bill?                |
+  | totalAmount  | AMAZON.NUMBER | I will be pleased to help, what is the bill's total amount? |
+  | numberPeople | AMAZON.NUMBER | How many people are going to pay the bill?                |
 
   On the _Confirmation prompt_ section, enable the confirmation prompt and type the following confirm and cancel prompts:
 
   * _Confirm prompt:_ `Are you sure you want to split a bill for ${totalAmount} between {numberPeople} people?`
   * _Cancel prompt:_ `Okay, let's start again.`
 
-  Explain students that in the confirm prompt, `{totalAmount}` and `{numberPeople}` are a kind of variables that will be filled out with the values given by the user.
+  Explain to students that in the confirm prompt, `{totalAmount}` and `{numberPeople}` are a kind of variables that will be filled out with the values given by the user.
 
-* **Step 9:** Now it's time to see the bot in action, build your bot by clicking on the _Build_ button and confirming the build option on the pop-up window.
+* **Step 9:** Now it is time to see the bot in action, build your bot by clicking on the _Build_ button, and confirming the build option on the pop-up window.
 
   ![Step 9a](Images/lex-step9a.png)
 
-  The building process takes a couple of minutes, once the process finished, you will see the following confirmation message and the _Test bot_ window will appear. You can now close the confirmation message and test your bot.
+  The building process takes a couple of minutes. Once the process finished, you will see the following confirmation message, and the _Test bot_ window will appear. You can now close the confirmation message and test your bot.
 
   ![Step 9b](Images/lex-step9b.png)
 
@@ -177,11 +177,11 @@ Follow the next steps to perform a live demo.
 
   ![Step 10](Images/lex-step10.gif)
 
-  Explain to students that at this time the bot has no business rules logic attached, that's why the final message the bot sends after fulfilling all the slots is a kind of non-friendly confirmation message. We will improve this by adding an Amazon Lambda function to the bot.
+  Explain to students that at this time, the bot has no business rules logic attached, that is why the final message the bot sends after fulfilling all the slots is a kind of non-friendly confirmation message. We will improve this by adding an Amazon Lambda function to the bot.
 
   ![Fulfillment message](Images/lex-step10msg.png)
 
-Answer any pending questions before continue.
+Answer any pending questions before continuing.
 
 ---
 
@@ -201,7 +201,7 @@ In Today's class, students will create a bot that converts a given amount on US 
 
 * [Crypto Converted export file](Activities/02-Stu_Simple_Crypto_Conversation/Solved/Crypto_Converter_1_c99b8f7e-ea4d-4a6e-bb46-f179beeb5e60_Bot_LEX_V1.zip)
 
-You can chose to live demo the solution or import the solution file into your Amazon Lex console.
+You can choose to live demo the solution or import the solution file into your Amazon Lex console.
 
 To import the solution, click on the _Import_ option into the _Actions_ button and select the provided ZIP file; once the import process ends, you will have the bot and the intent available on your Amazon Lex console, be sure to build the bot before starting the review activity.
 
@@ -211,7 +211,7 @@ Click on the `Crypto_Converter` bot, once the `convertUSD` intent is on the scre
 
 * Adding `{usdAmount}` on the sample utterances, will allow the user send messages like `I want to convert **100** dollars to BTC` where the deep learning algorithms will match the `{usdAmount}` label with a number on the utterance speech, as can be seen on the demo gif file bellow.
 
-* When the bot is tested, the date of birth can be given on any format (e.g. `12/16/1978`, `16/12/1978`, `Dec 16, 1978`), using the `AMAZON.DATE` slot type will transform the date automatically to the `YYYY-mm-dd` format as can be seen on the demo gif file bellow.
+* When the bot is tested, the date of birth can be given on any format (e.g., `12/16/1978`, `16/12/1978`, `Dec 16, 1978`), using the `AMAZON.DATE` slot type will transform the date automatically to the `YYYY-mm-dd` format, as can be seen on the demo gif file bellow.
 
   ![Demo bot test](Images/crypto_converter_1.gif)
 
@@ -221,31 +221,31 @@ Answer any questions before moving on.
 
 ### 5. Instructor Do: Intro to AWS Lambda (10 min)
 
-This activity will introduce AWS Lambda to students, also students will learn how they can integrate Lambda functions into an Amazon Lex bot. The full code of the lambda function could be found on the _Solved_ directory.
+This activity will introduce AWS Lambda to students. Also, students will learn how they can integrate Lambda functions into an Amazon Lex bot. The full code of the lambda function could be found on the _Solved_ directory.
 
 **Files:**
 
 * [lambda_function.py](Activities/03-Ins_Intro_Lambda/Solved/lambda_function.py)
 
-Start the activity by opening the lesson slides, navigate to the _Intro to AWS Lambda_ section and highlight the following:
+Start the activity by opening the lesson slides, navigate to the _Intro to AWS Lambda_ section, and highlight the following:
 
-* Sometimes AWS Lambda is seen as a webservice or and API since it runs code remotely, however AWS Lambda is a serverless technology where you just upload your code and Lambda takes care of everything.
+* Sometimes AWS Lambda is seen as a web service or and API since it runs code remotely, however, AWS Lambda is a serverless technology where you just upload your code and Lambda takes care of everything.
 
-* In general terms. _serverless_ means that you don't have to be worried about any servers configuration nor administration.
+* In general terms. _serverless_ means that you do not have to be worried about any server configuration nor administration.
 
-* AWS Lambda can have your code to automatically triggered from other AWS services or call it directly from any web or mobile app.
+* AWS Lambda can have your automatically trigger from other AWS services or call it directly from any web or mobile app.
 
 * We are going to use AWS Lambda by triggering code from an Amazon Lex Bot.
 
-* AWS Lambda enhances chatbots by combining the NLP capabilities of Amazon Lex to understand human speech, with the possibility of running code tu fulfill user's requests, for example, booking a hotel room, making a wire transfer, or providing financial advice about an investment portfolio.
+* AWS Lambda enhances chatbots by combining the NLP capabilities of Amazon Lex to understand human speech, with the possibility of running code to fulfill user's requests, for example, booking a hotel room, making a wire transfer, or providing financial advice about an investment portfolio.
 
 * AWS Lambda interacts with other AWS services by processing events messages in `JSON`, every AWS Services has its specific format.
 
 * Amazon Lex "talks" to AWS Lambda to perform initialization and validation, fulfillment, or both.
 
-Explain students that in this demo, you will show how to process `ElicitSlots`, `Delegate` and `Close` response events.
+Explain to students that in this demo, you will show how to process `ElicitSlots`, `Delegate` and `Close` response events.
 
-Close the slides and log-in into the AWS Management Console using your IAM administrator user, once you are logged-in, type `Lambda` into the _AWS services_ search box and click on _Lambda_ to open the AWS Lambda console.
+Close the slides and log-in into the AWS Management Console using your IAM administrator user, once you are logged in, type `Lambda` into the _AWS services_ search box and click on _Lambda_ to open the AWS Lambda console.
 
 ![Search for AWS Lambda service on the AWS Management console](Images/search-lambda-service.png)
 
@@ -253,32 +253,32 @@ In the AWS Lambda console, click on _Functions_ on the left side menu; continue 
 
 ![AWS Lambda console](Images/aws-lambda-console.png)
 
-On the _Create function_ page, select the _Author from scratch_ option, fill-out the following information and click on the _Create function_ button:
+On the _Create function_ page, select the _Author from scratch_ option, fill out the following information, and click on the _Create function_ button:
 
 * **Function name:** `convertUSD` (This is the name to identify our new Lambda function)
 * **Runtime:** `Python 3.7`
 
 ![Create function page](Images/aws-lambda-create-function.png)
 
-Explain students that now AWS will create the `convertUSD` lambda function, it takes few seconds. Once created, you will see the following page.
+Explain to students that now AWS will create the `convertUSD` lambda function, and it takes a few seconds. Once created, you will see the following page.
 
 ![convertUSD function created](Images/convertUSD-created.png)
 
-Scroll-down to the _Function code_ section, explain students that this code is a starter `Hello World` example. Highlight that a lambda function has a main events handler, its goal is to manage all the incoming messages and dispatch them depending on the business logic defined.
+Scroll down to the _Function code_ section, explain to students that this code is a starter `Hello World` example. Highlight that a lambda function has a main events handler; its goal is to manage all the incoming messages and dispatch them depending on the business logic defined.
 
-* We will use the `lambda_handler` to route the incoming requests based on user's intents captured by the Amazon Lex bot.
+* We will use the `lambda_handler` to route the incoming requests based on the user's intents captured by the Amazon Lex bot.
 
 ![Function code section](Images/convertUSD-function-code.png)
 
-Open slides and show students the anatomy of the lambda function you are going to use. Comment to students that this code can be used as a boilerplate template to code business logic for extending Amazon Lex bots functionality.
+Open the slides and show students the anatomy of the lambda function you are going to use. Let the students know that this code can be used as a boilerplate template to code business logic to extend Amazon Lex bots functionality.
 
 ![Lambda function anatomy](Images/lambda-function-anatomy.png)
 
 Explain to students that the lambda function contains six general building blocks, briefly present these blocks, and open the `lambda_function.py` script on VSCode by highlighting the following:
 
-1. **Required Libraries:** This section contains all the necessary libraries to code the business logic on the lambda functions, despite AWS Lambda supports Python, the runtime doesn't support some common packages such as `pandas`, `numpy` or `requests`, so alternative packages should be used or installed. In this demo we take the current price of bitcoin making an API call to [CoinMarketCap](https://api.coinmarketcap.com/v1/ticker/bitcoin/), so the `requests` library is imported from the [`botocore` package](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html). A complete list of the python modules available on AWS Lambda can be found [here](https://gist.github.com/gene1wood/4a052f39490fae00e0c3).
+1. **Required Libraries:** This section contains all the necessary libraries to code the business logic on the lambda functions, despite AWS Lambda supports Python, the runtime doesn't support some common packages such as `pandas`, `numpy` or `requests`, so alternative packages should be used or installed. In this demo, we take the current price of bitcoin making an API call to [CoinMarketCap](https://api.coinmarketcap.com/v1/ticker/bitcoin/), so the `requests` library is imported from the [`botocore` package](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html). A complete list of the python modules available on AWS Lambda can be found [here](https://gist.github.com/gene1wood/4a052f39490fae00e0c3).
 
-2. **Functionality Helper Functions:** These functions implement business logic and data validation. In this demo we have four helper functions.
+2. **Functionality Helper Functions:** These functions implement business logic and data validation. In this demo, we have four helper functions.
 
     * `parse_float()`: This function securely parses a non-numeric value to float.
 
@@ -286,9 +286,9 @@ Explain to students that the lambda function contains six general building block
 
     * `build_validation_result()`: This function defines an internal validation message structured as a python dictionary.
 
-    * `validate_data()`: This function validates the data provided by the user across the intent's dialog on Amazon Lex according to the business logic. In this demo there are only to rules: (1) the user should be at least 21 years old (2) the amount in US Dollars to convert must be greater that zero.
+    * `validate_data()`: This function validates the data provided by the user across the intent's dialog on Amazon Lex according to the business logic. In this demo, there are only to rules: (1) the user should be at least 21 years old (2) the amount in US Dollars to convert must be greater than zero.
 
-Explain students that the `validate_data()` function uses the `build_validation_result()` function to return a validation result message. In this demo if the user's age is less than 21 or the amount to convert is less than 0, a `False` result is returned, otherwise a `True` result is returned.
+Explain students that the `validate_data()` function uses the `build_validation_result()` function to return a validation result message. In this demo, if the user's age is less than 21 or the amount to convert is less than 0, a `False` result is returned; otherwise, a `True` result is returned.
 
 ```python
 def validate_data(birthday, usd_amount, intent_request):
@@ -321,13 +321,13 @@ def validate_data(birthday, usd_amount, intent_request):
                 "please provide a correct amount in USD to convert.",
             )
 
-    # A True results is returned if age or amount are valid
+    # A True result is returned if age or amount are valid
     return build_validation_result(True, None, None)
 ```
 
-3. **Dialog Actions Helper Functions:** These functions handle the input and response events data from the "conversation" between Amazon Lex and AWS Lambda. The `get_slots()` function simply fetches all the slots and their values from the current intent. The `elicit_slot()`, `delegate()` and `close()` functions, construct response messages structured as a valid JSON Lex event. The full structure of event data that Amazon Lex exchanges with a Lambda function can be reviewed [here](https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html).
+3. **Dialog Actions Helper Functions:** These functions handle the input and response events data from the "conversation" between Amazon Lex and AWS Lambda. The `get_slots()` function fetches all the slots and their values from the current intent. The `elicit_slot()`, `delegate()` and `close()` functions, construct response messages structured as a valid JSON Lex event. The full structure of event data that Amazon Lex exchanges with a Lambda function can be reviewed [here](https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html).
 
-4. **Intents Handlers:** The core business logic is coded into an intent handler. An intent handlers is a function that implements the functionality that is willing to fulfill the user's intent.
+4. **Intents Handlers:** The core business logic is coded into an intent handler. An intent handler is a function that implements the functionality that is willing to fulfill the user's intent.
 
 Explain students that in this demo, the `convert_usd()` function contains all the logic to validate the user's input stored in the `slots` using the `validate_data()` helper function; along the conversation between the user and the bot, if any of the `slots` have invalid data, an `elicitSlot` dialog is returned to request the data again to the user, otherwise a `delegate()` dialog is returned to direct Lex to choose the next course of action according to the bot's configuration.
 
@@ -422,15 +422,15 @@ Open the Amazon Lex console to bind the `convertUSD` lambda function to the bot.
 
 ![Configure the Lambda initializations and validation](Images/lambda-init-val.png)
 
-A pop-window asking you for permissions to your Lambda Function will appear next, click on the _Ok_ button to continue. Explain students that this permission is needed to allow the communication between the bot and Lambda.
+A pop-window asking you for permissions to your Lambda Function will appear next, click on the _Ok_ button to continue. Explain to students that this permission is needed to allow the communication between the bot and Lambda.
 
 ![Lambda permission prompt](Images/lambda-permissions-prompt.png)
 
-Scroll down to the _Confirmation prompt_ section and disable the checkbox, continue by opening the _Fulfillment_ section and choose the _AWS Lambda function option_, select the `convertUSD` Lambda and the `Latest` version. Click on the _Build_ button on the upper right corner and you're done, now the bot is connected to Lambda to control the user's intent.
+Scroll down to the _Confirmation prompt_ section and disable the checkbox, continue by opening the _Fulfillment_ section and choose the _AWS Lambda function option_, select the `convertUSD` Lambda and the `Latest` version. Click on the _Build_ button on the upper right corner, and you are done, and now the bot is connected to Lambda to control the user's intent.
 
 ![Confirmation and fulfillment configuration](Images/lambda-confirmation-fulfillment.png)
 
-Test the Lambda powered bot with some of the sample utterances, you should have a final conversation as it's shown bellow.
+Test the Lambda powered bot with some of the sample utterances; you should have a final conversation as it is shown below.
 
 | _Bot demo conversation with valid user's data_ | _Bot demo conversation with invalid user's data_ |
 | --- | ---|
@@ -442,7 +442,7 @@ Answer any pending questions from the class before moving forward.
 
 ### 6. Student Do: Understanding Lambdas (15 min)
 
-In this activity, students will inspect the code of a Lambda function to have a better understanding about how it works. Students will create their own Lambda function by importing the provided code and will build a new version of their bot. Be sure to slack out the `lambda_function.py` code to students before starting the activity.
+In this activity, students will inspect the code of a Lambda function to have a better understanding of how it works. Students will create their own Lambda function by importing the provided code and will build a new version of their bot. Be sure to slack out the `lambda_function.py` code to students before starting the activity.
 
 **Instructions:**
 
@@ -462,7 +462,7 @@ In this activity, students will inspect the code of a Lambda function to have a 
 
 * [Crypto_Converter export file](Activities/04-Stu_Understanding_Lambdas/Solved/Crypto_Converter_1_6dfe9e0e-82de-4d08-b33b-3bfd1d827672_Bot_LEX_V1.zip)
 
-Open the Lambda function code in VSCode, conduct a facilitated discussion by asking students about their findings, insights or additional questions after reviewing the provided code. Start with some questions as follows.
+Open the Lambda function code in VSCode, conduct a facilitated discussion by asking students about their findings, insights, or additional questions after reviewing the provided code. Start with some questions as follows.
 
 * Does anyone has a different idea to organize the function's _building blocks_?
 
@@ -474,15 +474,15 @@ Open the Lambda function code in VSCode, conduct a facilitated discussion by ask
 
   **Sample Answer:** Yes, we can do that by simply using the `float()` function.
 
-  **Sample Answer:** Yes, we can avoid defining the `parse_float()` function and use the `float()` function instead, however, having this function returning the value of `nan` for non numeric values is more secure and eases testing.
+  **Sample Answer:** Yes, we can avoid defining the `parse_float()` function and use the `float()` function instead, however, having this function returning the value of `nan` for non-numeric values is more secure and eases testing.
 
 * Is there any other way to define the dialog helper functions?
 
   **Sample Answer:** We could define a function that receives all the data from the current intent and have some nested `if` controlling the kind of dialog and response.
 
-  **Sample Answer:** I thinks this is a very efficient way to handle the different dialog types.
+  **Sample Answer:** I think this is a very efficient way to handle the different dialog types.
 
-Slack out the following the following resources, encourage students to learn more about AWS Lambda and Lex.
+Slack out the following resources, encourage students to learn more about AWS Lambda and Lex.
 
 * [Lambda Function Input Event and Response Format](https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html#using-lambda-input-event-format)
 
@@ -494,7 +494,7 @@ Be sure to answer any reminder question and move to the next activity.
 
 ### 8. Instructor Do: Testing AWS Lambda Functions (10 min)
 
-In this activity, students will learn how to test AWS Lambda functions that validates Amazon Lex intents.
+In this activity, students will learn how to test AWS Lambda functions that validate Amazon Lex intents.
 
 **Files:**
 
@@ -504,7 +504,7 @@ In this activity, students will learn how to test AWS Lambda functions that vali
 
 * [convertErrDate.json](Activities/05-Ins_Testing_Lambdas/Solved/convertErrDate.json)
 
-Explain to students that one of the challenges working with AWS Lambda is dealing with errors, so it's important to know how to test a Lambda function on the AWS Lambda console. For this activity, three test cases are provided.
+Explain to students that one of the challenges working with AWS Lambda is dealing with errors, so it is important to know how to test a Lambda function on the AWS Lambda console. For this activity, three test cases are provided.
 
 Explain to students that, in order to test a Lambda function, a `JSON` file should be created to send a testing event to Lambda, the structure of the event depends on the kind of service you are connecting to Lambda. This demo only will cover how to test Amazon Lex intents.
 
@@ -555,19 +555,19 @@ Now the name of the new test case appears on the dropdown list next to the _Test
 
 Since this test case has valid data for both slots, comment to students that the test status is `Succeeded` and the execution results show a response with both slots fulfilled with the data passed on the test case.
 
-Show students how to add a new text case, click on the test events dropdown list and choose the _Configure test events_ option.
+Show students how to add a new test case, click on the test events dropdown list, and choose the _Configure test events_ option.
 
 ![Add new test event](Images/lambda-add-new-test-evet.png)
 
-By default you will see that the last used test case is selected, notice that the _Edit saved test events_ option is selected, so can edit the test event.
+By default, you will see that the last used test case is selected, notice that the _Edit saved test events_ option is selected, so you can edit the test event.
 
 ![Edit saved test event](Images/lambda-add-new-test-default-selection.png)
 
-Choose the _Create new test event_ option, you will notice that the previous test event remains as template. Change the value of the `usdAmount` slot to zero to test the amount validation coded on the Lambda. Click on the _Create_ button to continue.
+Choose the _Create new test event_ option, and you will notice that the previous test event remains as a template. Change the value of the `usdAmount` slot to zero to test the amount validation coded on the Lambda. Click on the _Create_ button to continue.
 
 ![Create a new test event to cast amount value](Images/lambda-add-convertErrAmount.png)
 
-Select the `convertErrAmount` test on the _Test events_ dropdown list and click on the _Test_ button. Explain to students that the test ran successfully again, however, now Lambda responses with a `ElicitSlot` type of dialog where the message defined on the Lambda can be read. This test event is validating that the incorrect value is caught by the code at the Lambda and the appropriate new data elicitation is sent to the user via Amazon Lex.
+Select the `convertErrAmount` test on the _Test events_ dropdown list and click on the _Test_ button. Explain to students that the test ran successfully again, however, now Lambda responses with a `ElicitSlot` type of dialog where the message defined on the Lambda can be read. This test event is validating that the incorrect value is caught by the code at the Lambda, and the appropriate new data elicitation is sent to the user via Amazon Lex.
 
 ![Running the convertErrAmount test event](Images/lambda-testing-convertErrAmount.png)
 
@@ -575,17 +575,17 @@ Create a final test event, but now to validate what happens when an invalid date
 
 ![Adding the convertErrDate test event](Images/lambda-add-convertErrDate.png)
 
-Execute the the `convertErrDate` test, comment to students that the date validation was successfully corroborated since the `ElicitSlot` dialog type is returned together with the message asking for a different age of birth.
+Execute the `convertErrDate` test, comment to the students that the date validation was successfully corroborated since the `ElicitSlot` dialog type is returned together with the message asking for a different age of birth.
 
-Close the execution results window, now you will introduce a typo on the code to raise a runtime error. On the `parse_float()` function, delete the closing parenthesis on line 12. Click on the _Save_ button and run any of the testing events.
+Close the execution results window, and now you will introduce a typo on the code to raise a runtime error. On the `parse_float()` function, delete the closing parenthesis on line 12. Click on the _Save_ button and run any of the testing events.
 
 ![Provoking a runtime error](Images/lambda-provoking-runtime-error.png)
 
-After running the test event, explain to students that the test status is `Failed` and that the response contains the error description and the line where the error were detected.
+After running the test event, explain to students that the test status is `Failed` and that the response contains the error description and the line where the error was detected.
 
 ![Runtime error](Images/lambda-runtime-error.png)
 
-Comment to students that these type or errors are difficult to catch on Amazon Lex, that's why it's important to test Lambdas on the AWS Lambda console before linking the Lambda to the Amazon Lex bot.
+Comment to the students that these types of errors are difficult to catch on Amazon Lex. That is why it is important to test Lambdas on the AWS Lambda console before linking the Lambda to the Amazon Lex bot.
 
 Answer any remainder question and continue to the next activity.
 
@@ -615,19 +615,19 @@ In this activity, students will test their Lambdas and will practice their abili
 
 * [convertOldAge.json](Activities/06-Stu_Buggy_Lambdas/Solved/convertOldAge.json)
 
-Start the review activity by adding the `convertErrNegAmount` and `convertOldAge` test events to your `convertUSD` Lambda, run both test and highlight the following:
+Start the review activity by adding the `convertErrNegAmount` and `convertOldAge` test events to your `convertUSD` Lambda, run both tests, and highlight the following:
 
-* The `convertErrNegAmount` behavior is the same as the case when a zero is passed, an `ElicitSlot` type is returned asking the user for an amount grater than zero.
+* The `convertErrNegAmount` behavior is the same as the case when a zero is passed, an `ElicitSlot` type is returned, asking the user for an amount greater than zero.
 
 * The `convertOldAge` text case runs as a correct test event, there is no further validation to prevent a very old person to use the bot.
 
-Open a facilitated discussion with student by asking the following question:
+Open a facilitated discussion with the students by asking the following question:
 
-* How can you prevent a possible fake date of birth to be given to the bot?
+* How can you prevent a possible fake date of birth from being given to the bot?
 
-  **Sample Answer:** Let's suppose that the average life expectancy is 85 years old, we can add an additional condition to validate that the age is between 21 and 85 years.
+  **Sample Answer:** Let us suppose that the average life expectancy is 85 years old, we can add an additional condition to validate that the age is between 21 and 85 years.
 
-  **Sample Answer:** We can unfairly discriminate an old person to use the service, so, I wouldn't be worried about this kind of validation.
+  **Sample Answer:** We can unfairly discriminate an older person to use the service, so I would not be worried about this kind of validation.
 
 Continue the discussion by asking for volunteers that want to share their experience finding the bugs provoked by her or his partner.
 
@@ -635,7 +635,7 @@ Continue the discussion by asking for volunteers that want to share their experi
 
   **Sample Answer:** It was funny to play becoming a bug detective.
 
-  **Sample Answer:** It was a great opportunity to practice by debugging skills.
+  **Sample Answer:** It was a great opportunity to practice my debugging skills.
 
 Close the discussion by answering any reminder question before moving forward.
 
@@ -653,7 +653,7 @@ In this activity, students will learn how to create a custom slot and add it to 
 
 * [Crypto Converter export file](Activities/07-Ins_Custom_Slots/Solved/Crypto_Converter_2_4aefdbf6-55cc-4892-b302-dc428c404e29_Bot_LEX_V1.zip)
 
-Comment to students that it's possible to create custom slot types, this is intended to gather specific data values for a slot, for example the size of a pizza (personal, small, medium or large) on a pizza ordering bot. Explain to students that now you will show them how to create a custom slot to allow users to choose the cryptocurrency they want to convert to.
+Comment to students that it is possible to create custom slot types. This is intended to gather specific data values for a slot, for example, the size of a pizza (personal, small, medium, or large) on a pizza ordering bot. Explain to students that now you will show them how to create a custom slot to allow users to choose the cryptocurrency they want to convert to.
 
 Open the Amazon Lex console and navigate to the `convertUSD` intent editor, on the left side menu, click on the blue plus symbol next to the _Slot types_ option to add a new custom slot type.
 
@@ -667,45 +667,45 @@ Configure the new slot type as follows:
 
 * **Slot type name:** `CryptoCurrency`
 * **Description:** `Available cryptocurrencies to convert.`
-* **Slot Resolution:** Choose _Restrict to Slot values and Synonyms_. By selecting this option the user has to choose only among the available options.
-* **Value:** Add three values and synonyms, one per each cryptocurrency as can be seen bellow.
+* **Slot Resolution:** Choose _Restrict to Slot values and Synonyms_. By selecting this option, the user has to choose only among the available options.
+* **Value:** Add three values and synonyms, one per each cryptocurrency, as can be seen below.
 
 Once you are done, click on the _Save slot type_ button.
 
 ![Configuring the new slot type](Images/configure-new-slot-type.png)
 
-Come back to the `convertUSD` intent editor, add a new slot named `crypto`, click on the _Slot type_ dropdown list and you will see your brand new slot type, select `CryptoCurrency` from the list. End the slot configuration by typing `What cryptocurrency do you want to convert to?` on the prompt.
+Come back to the `convertUSD` intent editor, add a new slot named `crypto`, click on the _Slot type_ dropdown list, and you will see your brand new slot type, select `CryptoCurrency` from the list. End the slot configuration by typing `What cryptocurrency do you want to convert to?` on the prompt.
 
 ![Add the crypto slot](Images/add-crypto-slot.png)
 
-Explain students that now the bot is configured to elicit the `crypto` slot, however, we need to modify the utterances to add a better dialog that includes the new slot.
+Explain to the students that now the bot is configured to elicit the `crypto` slot; however, we need to modify the utterances to add a better dialog that includes the new slot.
 
-Modify the utterances to have the _Sample utterances_ like the ones shown bellow.
+Modify the utterances to have the _Sample utterances_ like the ones shown below.
 
 ![New sample utterances](Images/new-crypto-utterances.png)
 
 Highlight to students that on the new utterances, the word `bitcoin` has been substituted by the slot `crypto` in order to allow users to specify on their dialog what cryptocurrency they want to convert to, for example by typing `I want to convert USD to Ripple`.
 
-Build the bot and test it on the _Test bot_ window. Start with typing the sample utterance `I want to invest in crypto` in oder to elicit all the slots as follows.
+Build the bot and test it on the _Test bot_ window. Start with typing the sample utterance `I want to invest in crypto` in order to elicit all the slots as follows.
 
 ![Sample utterance 1](Images/custom_slots_1.gif)
 
-Explain to students that, when the `crypto` slot is elicited, only the three options will be valid, however, giving the user the chance to type any cryptocurrency name could be prone to errors, that's why using _Card Slots_ could be useful.
+Explain to students that, when the `crypto` slot is elicited, only the three options will be valid, however, giving the user the chance to type any cryptocurrency name could be prone to errors, that is why using _Card Slots_ could be useful.
 
-To create a _Card Slot_, click on the gear icon next to `cypto` slot's prompt.
+To create a _Card Slot_, click on the gear icon next to `crypto` slot's prompt.
 
 ![Create a card slot](Images/create-card-slot.png)
 
-The _Crypto settings_ window will open, scroll down to the _Prompt response cards_ section and start by adding this URL in the _Image URL_ text field: https://cdn1.iconfinder.com/data/icons/cryptocurrency-set-2018/375/Asset_1480-128.png. Comment to students that this URL should point to a public image that they can store as a public asset on an AWS S3 bucket, for this demo we are using a free public image from [Iconfinder](https://www.iconfinder.com/).
+The _Crypto settings_ window will open, scroll down to the _Prompt response cards_ section, and start by adding this URL in the _Image URL_ text field: https://cdn1.iconfinder.com/data/icons/cryptocurrency-set-2018/375/Asset_1480-128.png. Comment to students that this URL should point to a public image that they can store as a public asset on an AWS S3 bucket, for this demo we are using a free public image from [Iconfinder](https://www.iconfinder.com/).
 
 ![Add card slot image](Images/add-card-slot-image.png)
 
-Comment to students that a card slot can have up to five cards, in this demo we will create one card with three options. Continue by adding the tittle and subtitle as is shown bellow.
+Comment to the students that a card slot can have up to five cards; in this demo, we will create one card with three options. Continue by adding the title and subtitle, as is shown below.
 
 * **Tittle:** `Available CryptoCurrencies`
 * **Subtitle:** `Choose one crypto to convert`
 
-Next, explain to student that each option will appear as a button on the card, so a tittle should be defined for each one together with a value; the value is taken from the values defined when the custom slot type is created. In this demo you will see three possible values on the _Button value_ dropdown list as it's shown bellow. Once you finish, click on the _Save_ button con continue.
+Next, explain to students that each option will appear as a button on the card, so a tittle should be defined for each one together with a value; the value is taken from the values defined when the custom slot type is created. In this demo, you will see three possible values on the _Button value_ dropdown list as it is shown below. Once you finish, click on the _Save_ button con continue.
 
 ![Card slot values](Images/card-slot-values.png)
 
@@ -713,15 +713,15 @@ Click on the _Build_ button, once the build process is done, test your bot on th
 
 ![Sample card slot demo](Images/custo_slots_cards.gif)
 
-**What is happening?** Explain students that the bot dialog and elicitation process is working perfectly, however, we have to modify the Lambda function to allow the bot to make to correct conversion. This is going to be done in the next activity.
+**What is happening?** Explain to students that the bot dialog and elicitation process is working perfectly; however, we have to modify the Lambda function to allow the bot to make to correct conversion. This is going to be done in the next activity.
 
-Answer any pending question before continue.
+Answer any pending questions before continuing.
 
 ---
 
 ### 13. Students Do: Crypto Converter (20 min)
 
-In this activity, students will extend their cryptocurrency converter by adding a custom slot to allow users to select between Bitcoin, Ethereum or Ripple to convert from US Dollars. Also, business logic to identify the cryptocurrency selected by the user and make the conversion will be added to the Lambda function.
+In this activity, students will extend their cryptocurrency converter by adding a custom slot to allow users to select between Bitcoin, Ethereum, or Ripple to convert from US Dollars. Also, business logic to identify the cryptocurrency selected by the user and make the conversion will be added to the Lambda function.
 
 **Instructions:**
 
@@ -745,9 +745,9 @@ Start by reviewing the bot configuration. Open the Amazon Lex console, navigate 
 
   ![CrytoCurrency Slot Type](Images/cryptocurrency_slot_type.png)
 
-* The user can use either, the value or the synonyms to refer to the cryptocurrencies while talking to the bot.
+* The user can use either the value or the synonyms to refer to the cryptocurrencies while talking to the bot.
 
-* Once the new slot type is created, it's possible to add the `crypto` slot to the intent.
+* Once the new slot type is created, it is possible to add the `crypto` slot to the intent.
 
 * The `crypto` slot is configured to show prompt response cards as follows:
 
@@ -755,7 +755,7 @@ Start by reviewing the bot configuration. Open the Amazon Lex console, navigate 
 
 * The card image should be a public image, it can be stored anywhere on the web; an AWS S3 public asset could be the best option.
 
-Continue to the Lambda function code, open the solution on your AWS Lambda online code editor and highlight the following:
+Continue to the Lambda function code, open the solution on your AWS Lambda online code editor, and highlight the following:
 
 * There is no need to validate the name of the cryptocurrency since it is not typed by the user.
 
@@ -795,7 +795,7 @@ Continue to the Lambda function code, open the solution on your AWS Lambda onlin
   crypto_value = round(crypto_value, 4)
   ```
 
-* The fulfillment message is formated in the `convert_usd()` function to include the name of the selected crypto currency dynamically.
+* The fulfillment message is formatted in the `convert_usd()` function to include the name of the selected cryptocurrency dynamically.
 
   ```python
   # Return a message with conversion's result.
@@ -825,7 +825,7 @@ Answer any reminder question before moving forward.
 
 This is a group activity, students will follow you on the process to publish the `Crypto_Converter` bot, and later, you will show them how to deploy the bot as a Slack App.
 
-Follow the next steps, ask your TAs to assist students along the demo and be sure all the class is following you along the process.
+Follow the next steps, ask your TAs to assist students along with the demo and be sure all the class is following you along the process.
 
 #### Step 1: Publish the Amazon Lex bot
 
@@ -845,23 +845,23 @@ Follow the next steps, ask your TAs to assist students along the demo and be sur
 
 Explain to students that, in order to publish the Amazon Lex bot as a Slack App, the first step is to create a Slack Team to deploy the app. Perform the following tasks and be sure students are on track as you move forward.
 
-1. To create a new Slack Team, open your web browser and navigate to https://slack.com/create. Enter your e-mail address and click on the _Next_ button to continue.
+1. To create a new Slack Team, open your web browser, and navigate to https://slack.com/create. Enter your e-mail address and click on the _Next_ button to continue.
 
   ![Create Slack worspace - step 1](Images/slack-workspace-1.png)
 
-2. A six digit verification code will be sent to your e-mail, check your inbox and type the code in the six boxes to continue.
+2. A six-digit verification code will be sent to your e-mail, check your inbox, and type the code in the six boxes to continue.
 
   ![Create Slack worspace - step 2](Images/slack-workspace-2.png)
 
-3. Once you confirm your six digit code, you will see the next page where you have to create a Slack Team. Type an original name for your team and click on the _Next_ button to continue.
+3. Once you confirm your six-digit code, you will see the next page where you have to create a Slack Team. Type an original name for your team and click on the _Next_ button to continue.
 
   ![Create Slack worspace - step 3](Images/slack-workspace-3.png)
 
-4. On the next page, you'll be asked for the name of a current project on your team. Type `Crypto Converter Bot` and click on the _Next_ button to continue.
+4. On the next page, you will be asked for the name of a current project on your team. Type `Crypto Converter Bot` and click on the _Next_ button to continue.
 
   ![Create Slack worspace - step 4](Images/slack-workspace-4.png)
 
-5. Next you are asked to invite some people to your team, skip this to continue.
+5. Next, you are asked to invite some people to your team, skip this to continue.
 
   ![Create Slack worspace - step 5](Images/slack-workspace-5.png)
 
@@ -871,7 +871,7 @@ Explain to students that, in order to publish the Amazon Lex bot as a Slack App,
 
 #### Step 3: Create a Slack Application
 
-Comment to students that now, you are going to login into the Slack Api to create a new Slack Application. The Slack Application will be the bridge between Amazon Lex and Slack to allow users to talk to the bot.
+Comment to the students that now, you are going to login into the Slack Api to create a new Slack Application. The Slack Application will be the bridge between Amazon Lex and Slack to allow users to talk to the bot.
 
 1. Open your web browser and navigate to the Slack API Console at http://api.slack.com. Click on the _Start Building_ button to continue.
 
@@ -901,7 +901,7 @@ Comment to students that now, you are going to login into the Slack Api to creat
 
   ![Create a Slack App - step 6](Images/slack-app-6.png)
 
-7. In the left menu, under _Settings_, choose _Basic Information_. Record the following application credentials to be used in the next step. To protect your credentials privacy, be sure to regenerate your _Client Secret_ and _Verification Token_ after the class.
+7. In the left menu, under _Settings_, choose _Basic Information_. Record the following application credentials to be used in the next step. To protect the privacy of your credentials, be sure to regenerate your _Client Secret_ and _Verification Token_ after the class.
 
     * Client ID
     * Client Secret
@@ -929,16 +929,16 @@ Now that you have Slack application credentials, you can integrate the applicati
 
 3. Click on the _Activate_ button to continue. The console creates the bot channel association and returns two URLs, record them.
 
-    * **Postback URL:** It's the Amazon Lex bot's endpoint that listens to Slack events.
-    * **OAuth URL:** It's your Amazon Lex bot's endpoint for an OAuth handshake with Slack.
+    * **Postback URL:** It is the Amazon Lex bot's endpoint that listens to Slack events.
+    * **OAuth URL:** It is your Amazon Lex bot's endpoint for an OAuth handshake with Slack.
 
   ![Integrating Slack App - step 3](Images/slack-integration-3.png)
 
 #### Step 5: Complete Slack Integration
 
-Explain to students that, in this section, you'll use the Slack API console to complete the integration of the Slack application.
+Explain to students that, in this section, you will use the Slack API console to complete the integration of the Slack application.
 
-1. Comeback to the Slack API console, in the left menu, choose _OAuth & Permissions_.
+1. Come back to the Slack API console, in the left menu, choose _OAuth & Permissions_.
 
   ![Complete Slack integration - step 1](Images/complete-slack-integration-1.png)
 
@@ -964,15 +964,15 @@ Explain to students that, in this section, you'll use the Slack API console to c
 
     * Toggle the _Enable events_ option to `On`.
 
-    * Set the _Request URL_ value to the Postback URL that Amazon Lex provided in the preceding step. One you type it, Slack will verify the URL.
+    * Set the _Request URL_ value to the Postback URL that Amazon Lex provided in the preceding step. Once you type it, Slack will verify the URL.
   ![Complete Slack integration - step 5a](Images/complete-slack-integration-5a.png)
 
-    * In the _Subscribe to Bot Events_ section, click on the _Add Bot User Event_ button and filter the list by typing `message.im`. This event will enable direct messaging between the end user and the Slack bot. Click on the _Save Changes_ button to continue.
+    * In the _Subscribe to Bot Events_ section, click on the _Add Bot User Event_ button and filter the list by typing `message.im`. This event will enable direct messaging between the end-user and the Slack bot. Click on the _Save Changes_ button to continue.
     ![Complete Slack integration - step 5b](Images/complete-slack-integration-5b.png)
 
 #### Step 6: Test the Integration Between Amazon Lex and Slack
 
-Congratulate students on reaching this point, this is the final stage on getting Amazon Lex integrated with Slack, there are just some last final touches to refine. Continue on the Slack API Console as follows.
+Congratulate students on reaching this point, this is the final stage on getting Amazon Lex integrated with Slack, and there are just some last final touches to refine. Continue on the Slack API Console as follows.
 
 1. In the left menu, choose _Manage Distribution_ under the _Settings_ option. Click on the _Add to Slack_ button to install the application.
 
@@ -982,19 +982,19 @@ Congratulate students on reaching this point, this is the final stage on getting
 
   ![Test integration - step 2](Images/test-slack-integration-2.png)
 
-3. You are redirected to your Slack team. In the left menu, in the _Apps_ section, choose your bot and engage in a chat with your Slack application, which is linked to the `Crypto_Converter` Amazon Lex bot. Start with the `I want to invest in crypto` sample utterance to test the bot. You should see an dialog like the shown bellow.
+3. You are redirected to your Slack team. In the left menu, in the _Apps_ section, choose your bot and engage in a chat with your Slack application, which is linked to the `Crypto_Converter` Amazon Lex bot. Start with the `I want to invest in crypto` sample utterance to test the bot. You should see a dialog like the shown below.
 
   ![Demo crypto converter bot on Slack](Images/slack-crypto-converter-bot-test.gif)
 
-**Note:** If you don't see your bot, choose the plus icon (+) next to _Apps_ section to search for it.
+**Note:** If you do not see your bot, choose the plus icon (+) next to _Apps_ section to search for it.
 
-Ask your TAs to assist students to test their bots, answer any additional question before continue.
+Ask your TAs to assist students in testing their bots, answer any additional questions before continuing.
 
 ---
 
 ### 16. Instructor Do: Structured Review (35 min)
 
-**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35-minute review for the next Saturday class.
 
 Please use the entire time to review questions with the students before officially ending class.
 
