@@ -1,4 +1,4 @@
-### 10. Student Do: Stream Trading (15 mins)
+### 9. Instructor Do: Streaming Data with Streamz (15 mins)
 
 In this activity, students will now incorporate the streamz library into their trading frameworks to allow for the streaming of data as a managed pipeline.
 
