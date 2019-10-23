@@ -23,4 +23,16 @@ Open the solution file and discuss the following:
 
   ![stream-dataframe](Images/stream-dataframe.png)
 
-* Hvplot will bind the streamz buffer to the chart. Emitting a dataframe to the stream will add that data to the plot. Not sure what the upper limit it, but at 10000 iterations, it seems to accumulate all of the points. Not sure if there is an integer limit or a memory limit.
+* In order to push data through to the scatter plot, the Stream object houses an `emit` function that pushes a DataFrame with similar structure to the bound Stream DataFrame object, which is then used to update the scatter plot. In this case, a loop from 1 to 20 is performed in which for every loop, a DataFrame is created with the value `i` and pushed via the Stream object to the scatter plot. The result is a scatter plot that streams its data points from 1 to 20.
+
+  ![stream-emit](Images/stream-emit.gif)
+
+* In addition, hvplot allows for a `backlog` parameter that creates a rolling window for streaming data. In this case, the data is streamed to the scatter plot ranging from 1 to 100, but the `backlog` parameter created a rolling window of 10.
+
+  ![stream-emit-rolling](Images/stream-emit-rolling.gif)
+
+* Lastly, the Stream library can be used to stream data received from an external API, such as the Kraken exchange via the ccxt library. In this case, a Stream DataFrame object is created and bound to the Stream object with a structure set to a DataFrame with the column `close`. Then, in a continuous while loop, data is pulled from Kraken and a DataFrame with a similar structure to the Stream DataFrame object is pushed via the `emit` function. The result is a line chart that continually streams BTC/USD pricing data.
+
+  ![stream-kraken-data](Images/stream-kraken-data.gif)
+
+Ask any questions before moving on.
