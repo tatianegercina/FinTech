@@ -25,7 +25,7 @@ def initialize(cash):
     account_stream = Stream()
     columns = ["balance", "holding_value", "total_portfolio_value", "shares"]
     data = {"balance": [], "holding_value": [], "total_portfolio_value": [], "shares": []}
-    account_example = pd.DataFrame(data=data, columns=columns)
+    account_example = pd.DataFrame(data=data, columns=columns, index=pd.DatetimeIndex([]))
     account_stream_df = DataFrame(account_stream, example=account_example)
 
     # Initialize Streaming DataFrame for Signals
@@ -37,12 +37,10 @@ def initialize(cash):
 
     # Initialize Streaming DataFrame for Evaluations
     portfolio_eval_stream = Stream()
-    portfolio_eval_columns = ["Index", "Backtest"]
-    portfolio_eval_data = {"Index": [], "Backtest": []}
-    portfolio_stream_df = pd.DataFrame(
-        data=portfolio_eval_data,
-        columns=portfolio_eval_columns
-    )
+    portfolio_eval_columns = ["index", "Backtest"]
+    portfolio_eval_data = {"index": [], "Backtest": []}
+    portfolio_example = pd.DataFrame(data=portfolio_eval_data, columns=portfolio_eval_columns)
+    portfolio_stream_df = DataFrame(portfolio_eval_stream, example=portfolio_example)
 
     trade_eval_stream = Stream()
     trade_eval_columns = ['Stock', 'Entry Date', 'Exit Date', 'Shares', 'Entry Share Price', 'Exit Share Price', 'Entry Portfolio Holding', 'Exit Portfolio Holding', 'Profit/Loss']
@@ -57,7 +55,8 @@ def initialize(cash):
         "Exit Portfolio Holding": [],
         "Profit/Loss": []
     }
-    trade_stream_df = pd.DataFrame(data=trade_eval_data, columns=trade_eval_columns)
+    trade_example = pd.DataFrame(data=trade_eval_data, columns=trade_eval_columns)
+    trade_stream_df = DataFrame(trade_eval_stream, example=trade_example)
 
     # Initialize Streaming DataFrame for the signals
     dashboard = build_dashboard(account_stream_df, signals_stream_df, portfolio_stream_df, trade_stream_df)
@@ -68,16 +67,17 @@ def initialize(cash):
 def build_dashboard(account_stream_df, signals_stream_df, portfolio_stream_df, trade_stream_df):
     """Build the dashboard."""
     # Initialize static widgets
-    account_balance = pn.widgets.StaticText(name="Cash Balance", value=account_stream_df['balance'].tail(1))
-    holding_value = pn.widgets.StaticText(name="Portfolio Holding", value=account_stream_df['holding_value'])
-    total_portfolio_value = pn.widgets.StaticText(name="Total Portfolio Value", value=account_stream_df['total_portfolio_value'])
+    account_table = account_stream_df.hvplot.table(width=1000, height=100, backlog=1)
+    # account_balance = pn.widgets.StaticText(name="Cash Balance", value=account_stream_df['balance'])
+    # holding_value = pn.widgets.StaticText(name="Portfolio Holding", value=account_stream_df['holding_value'])
+    # total_portfolio_value = pn.widgets.StaticText(name="Total Portfolio Value", value=account_stream_df['total_portfolio_value'])
     #active_shares = pn.widgets.StaticText(name="Active Shares", value=account_stream_df['shares'])
 
     # Create price plot of closing, SMA10, and SMA20
     price_plot = signals_stream_df.hvplot.line(y=['close', 'sma10', 'sma20'], value_label='Price', width=1000, height=400, rot=90)
 
     # Create portfolio and trade metrics table
-    portfolio_evaluation_table = portfolio_stream_df.hvplot.table(columns=['Index', 'Backtest'], width=300, height=400)
+    portfolio_evaluation_table = portfolio_stream_df.hvplot.table(columns=['index', 'Backtest'], width=300, height=400)
     trade_evaluation_table = trade_stream_df.hvplot.table(
         columns=[
             'Stock',
@@ -89,12 +89,11 @@ def build_dashboard(account_stream_df, signals_stream_df, portfolio_stream_df, t
             'Entry Portfolio Holding',
             'Exit Portfolio Holding',
             'Profit/Loss'
-        ],
-        backlog=10
+        ]
     )
 
     # Create rows
-    row_one = pn.Row(account_balance, holding_value, total_portfolio_value)
+    row_one = pn.Row(account_table)
     row_two = pn.Row(price_plot)
     row_three = pn.Row(portfolio_evaluation_table, trade_evaluation_table)
     row_test = pn.Row()
@@ -337,7 +336,7 @@ async def main():
 
             print("PORTFOLIO EVALUATION DF")
             print(portfolio_evaluation_df)
-            portfolio_eval_stream.emit(portfolio_evaluation_df)
+            portfolio_eval_stream.emit(portfolio_evaluation_df.tail(1))
             trade_eval_stream.emit(trade_evaluation_df.tail(1))
 
             print(f"Account Balance: {account['balance']}")
