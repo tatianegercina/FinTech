@@ -27,7 +27,7 @@ Open the solution file and discuss the following:
 
   ![stream-emit](Images/stream-emit.gif)
 
-* In addition, hvplot allows for a `backlog` parameter that creates a rolling window for streaming data. In this case, the data is streamed to the scatter plot ranging from 1 to 100, but the `backlog` parameter created a rolling window of 10.
+* In addition, hvplot allows for a `backlog` parameter that creates a rolling window for streaming data. In this case, the data is streamed to the scatter plot ranging from 1 to 100; however, the use of the`backlog` parameter sets a rolling window of 10 data points in the scatter plot.
 
   ![stream-emit-rolling](Images/stream-emit-rolling.gif)
 
