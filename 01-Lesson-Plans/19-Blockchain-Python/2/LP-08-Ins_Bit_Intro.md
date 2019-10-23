@@ -36,13 +36,7 @@ Now, we can check our balance like so:
 key.get_balance("btc")
 ```
 
-We can also get the USD equivalent value (if this were mainnet):
-
-```python
-key.get_balance("usd")
-```
-
-* Several other fiat currency conversions are also available.
+* Several other fiat currency conversions are also available. We'll learn how to convert to them soon.
   In fact, we can use them in our send functions instead of having to convert them manually!
 
 Fantastic! Most of the class should see a positive balance. If the transaction you sent to the students earlier is confirmed,
