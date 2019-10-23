@@ -16,6 +16,8 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
+* Slack out the [Deep Learning Installation Guide](../../14-Deep-Learning/Supplemental/deep_learning_installation_guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+
 * This lesson introduces new content rapidly. Students may express frustration at learning new cloud technologies. Remind students that while the learning curve may be steep at first, AWS and cloud experience is highly sought-after and well worth the effort required to become comfortable with it.
 
 * **Important!** Slack out the disclaimer for [AWS Free Tier](../Supplemental/AWS-Free-Tier.md) services prior to class. Take some time at the beginning of class to explain that while we are only using free tier services in class; students should review this documentation in order to avoid accidentally incurring charges.
