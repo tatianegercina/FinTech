@@ -850,35 +850,95 @@ Ask students if they have any questions before moving on to the next activity.
 
 ---
 
-### 10. Students Do: Voice Gender Recognition (30 min)
+### 10. Students Do: Smartphone Activity Detector (30 min)
 
-In this activity, students will create a neural network to predict the gender of a voice using the acoustic properties of the voice and speech.
+In this activity, students will create a neural network to predict the activity of the user based on their smartphone's accelerometer data.
 
 **Files:**
 
-  * [Voice_Recognition.ipynb](Activities/05-Stu_Voice_Recognition/Unsolved/Voice_Recognition.ipynb)
-
-  * [voice.csv](Activities/05-Stu_Voice_Recognition/Resources/voice.csv)
-
-  * [voice.md](Activities/05-Stu_Voice_Recognition/Resources/voice.md)
+* [Smartphone_Activity_Detector.ipynb](Activities/05-Stu_Smartphone/Unsolved/Smartphone_Activity_Detector.ipynb)
 
 **Instructions:**
 
-* [README.md](Activities/05-Stu_Voice_Recognition/README.md)
+* [README.md](Activities/05-Stu_Smartphone/README.md)
 
 ---
 
-### 11. Instructor Do: Review Voice Gender Recognition (10 min)
+### 11. Instructor Do: Review Smartphone Activity Detector (10 min)
 
 **Files:**
 
-* [Voice_Recognition.ipynb](Activities/05-Stu_Voice_Recognition/Solved/Voice_Recognition.ipynb)
+* [Smartphone_Activity_Detector.ipynb](Activities/05-Stu_Smartphone/Solved/Smartphone_Activity_Detector.ipynb)
 
-* Point out that this dataset requires applying standardization to the `X-features`, and one-hot encoding on the `y-labels` since they are categorical and contain the strings `male` and `female`.
+Open the solution and highlight the following points about the data preparation:
 
-* Explain that for this model, a complex network is designed with 100 nodes in the hidden layer. This more significant number of nodes will allow the neural network to adapt to the dataset.
+* The dataset consists of 561 input features that are obtained from the smartphone. Many of these features are actually transformations of the original smartphone accelerometer data. The complete explanation of input features can be found from the source URL for the dataset.
 
-* When the model is compiled, explain to students that as a general rule, they can use the following [loss function options in Keras](https://keras.io/losses/):
+* While this particular dataset appears to already be in a normalized form, it may be safer to scale the input features using StandardScaler or MinMaxScaler.
+
+  ```python
+  # Scale the training and testing input features using StandardScaler
+  X_scaler = StandardScaler()
+  X_scaler.fit(X_train)
+
+  X_train_scaled = X_scaler.transform(X_train)
+  X_test_scaled = X_scaler.transform(X_test)
+  ```
+
+* There are 12 target activity labels that can be identified using the `value_counts` function.
+
+  ```python
+  y.activity.value_counts()
+  standing              1423
+  laying                1413
+  sitting               1293
+  walking               1226
+  walking_upstairs      1073
+  walking_downstairs     987
+  stand_to_lie            90
+  sit_to_lie              75
+  lie_to_sit              60
+  lie_to_stand            57
+  stand_to_sit            47
+  sit_to_stand            23
+  Name: activity, dtype: int64
+  ```
+
+* The target labels must be converted to one-hot encoded vectors before the model can be trained. The `OneHotEncoder` can be used to make this transformation.
+
+  ```python
+  # Apply One-hot encoding to the target labels
+  enc = OneHotEncoder()
+  enc.fit(y_train)
+
+  encoded_y_train = enc.transform(y_train).toarray()
+  encoded_y_test = enc.transform(y_test).toarray()
+  encoded_y_train[0]
+  ```
+
+Next, walk through the process of building and training the model. Highlight the following:
+
+* A Keras Sequential model is used to create the neural network.
+
+  ```python
+  model = Sequential()
+  ```
+
+* The first layer specified for the neural network actually defines both the input layer and the hidden layer. There are 561 input nodes defined by `input_dim` and 100 nodes in the hidden layer. Each of the hidden layer neurons uses a `relu` activation function, which is a common activation function.
+
+  ```python
+  model.add(Dense(100, activation='relu', input_dim=X_train_scaled.shape[1]))
+  ```
+
+* In this case, the choice of 100 nodes is somewhat arbitrary, but it provides enough complexity to sufficiently predict the activity type. Because this number was much less than the number of input features, it is very likely that many of the input features are not useful or needed to predict the activity type. Further experimentation with dimensionality reduction techniques such as PCA could show that a smaller number of input features could be used.
+
+* The final output layer consists of 12 nodes (one node for each activity type) with a softmax activation type. This choice matches the one-hot encoding that was used on the target labels.
+
+  ```python
+  model.add(Dense(number_outputs, activation="softmax"))
+  ```
+
+* `Categorical Crossentropy` was chosen for the loss function. This is common for building a neural network classifier, but there are other [loss function options available in Keras](https://keras.io/losses/):
 
   * `binary_crossentropy` is used for binary classification.
 
@@ -886,9 +946,50 @@ In this activity, students will create a neural network to predict the gender of
 
   * `mean_squared_error` is used for regression models.
 
-* Warn students that neural networks are often prone to over-fitting. Neural Network architectures should always be validated to ensure that they are not over-fitting to the training data and thus performing poorly on new data values.
+* The `adam` optimizer is a popular choice for neural networks. Again, other options are available and documented on the Keras homepage, but `adam` is typically a safe choice to use.
 
-Ask students if they have any questions before moving on.
+Take a moment to show the model summary and the number of total trainable parameters in the model. Highlight the following:
+
+* This neural network is very large due to the number of input features and the choice of 100 hidden notes. Each input feature is connected to each hidden node, so that results in the total number of training parameters in the model.
+
+* Dimensionality reduction techniques such as PCA may improve the model performance and model size.
+
+Show students the code to fit the model and explain that the model converges to a high accuracy very quickly.
+
+Warn students that large neural networks like this are often prone to over-fitting. Adjusting the network architecture and the number of training epochs may help prevent overfitting. Neural Network architectures should always be validated to ensure that they are not over-fitting to the training data and thus performing poorly on new data values.
+
+Show how the classification report can be used to evaluate the model performance for each activity type.
+
+```python
+from sklearn.metrics import classification_report
+print(classification_report(results.Actual, results.Predicted))
+                    precision    recall  f1-score   support
+
+            laying       1.00      1.00      1.00       355
+        lie_to_sit       0.76      0.87      0.81        15
+      lie_to_stand       0.80      0.73      0.76        11
+        sit_to_lie       0.89      0.74      0.81        23
+      sit_to_stand       1.00      0.75      0.86         4
+           sitting       0.95      0.97      0.96       337
+      stand_to_lie       0.74      0.78      0.76        18
+      stand_to_sit       0.93      0.93      0.93        15
+          standing       0.97      0.95      0.96       367
+           walking       1.00      0.99      0.99       300
+walking_downstairs       0.99      0.99      0.99       230
+  walking_upstairs       0.99      1.00      0.99       267
+
+          accuracy                           0.97      1942
+         macro avg       0.92      0.89      0.90      1942
+      weighted avg       0.97      0.97      0.97      1942
+```
+
+Explain to students that this is a really good example of how neural networks can be used to transform FinTech. Consider providing an example such as the following:
+
+> A hypothetical FinTech company is interested in providing a mobile application for micro renewable energy investments yielding ~4-8% per year with small investments. The company wants to remind users to make additional investments when they are the most likely to see and respond to the smartphone notifications. A neural network activity predictor could be used to detect the optimal activity types in which a user responds to the notification.
+
+Ask students if they can think of any additional FinTech uses for an activity detector like this.
+
+Ask for any remaining questions before moving on.
 
 ---
 
