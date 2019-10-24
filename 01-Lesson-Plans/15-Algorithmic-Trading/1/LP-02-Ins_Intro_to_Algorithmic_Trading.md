@@ -14,7 +14,7 @@ Navigate to the slideshow and present the following questions and answers about 
 
 * Why is algorithmic trading so prevalent today?
 
-  **Answer:** Advances in network technology and computing power along with authorization to use electronic exchanges have made it possible for anyone to write code and automate their trading strategy. The result is that algorithmic trading can be orders of magnitude faster than traditional trading.
+  **Answer:** Advances in network technology and computing power, along with access to financial trading APIs, have made it possible for anyone to write code and automate their trading strategies. The result is that algorithmic trading can be orders of magnitude faster and more efficient than humans performing traditional trading.
 
 * Why use algorithmic trading?
 
@@ -22,6 +22,6 @@ Navigate to the slideshow and present the following questions and answers about 
 
 * Who performs algorithmic trading?
 
-  **Answer:** Anyone that can code can create their own algorithmic trader bot. Traditionally, Quantitative analysts or, quant traders, create algorithmic trading models and are often required to have at least a masters or PhD degree level with a familiar background in statistics, but with human-friendly programming languages like Python and analytical tools and machine learning libraries, anyone can learn to build a very powerful algorithmic trader.
+  **Answer:** Anyone that can code can create their own algorithmic trading bot. Traditionally, Quantitative analysts or, quant traders, create algorithmic trading models and are often required to have at least a masters or PhD degree level with a familiar background in statistics, but with human-friendly programming languages like Python and analytical tools and machine learning libraries, anyone can learn to build a very powerful algorithmic trader.
 
 Ask if there are any questions before moving on.
