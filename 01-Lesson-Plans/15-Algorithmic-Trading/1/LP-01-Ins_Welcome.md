@@ -12,15 +12,21 @@ Today's class will introduce students to **algorithmic trading** in Python. Stud
 
 By the end of class, students will be able to:
 
-* Delineate what algorithmic trading is, who does it, and why it's valuable.
+* Delineate what algorithmic trading is, how it came to be, and why it's valuable.
 
-* Deconstruct the process for algorithmic trading: fetching data, handling data, and making buy, sell, or hold decisions.
+* Deconstruct the process for algorithmic trading: obtaining the data, making a trading decision, and evaluating the results.
+
+* Compare the differences between technical analysis and fundamental analysis.
 
 * Define what a trading signal is, how it is used, and why it's important.
 
+* Construct a dual moving average crossover trading signal.
+
 * Define what backtesting is, how it is used, and why it's important.
 
-* Quantify evaluation metrics pertaining to overall portfolio and trading performance.
+* Backtest or validate a dual moving average crossover strategy with a capital allocation of $100,000.
+
+* Quantify evaluation metrics pertaining to overall portfolio and per-trade performance.
 
 * Build a trading dashboard to visualize the multiple components of algorithmic trading.
 
