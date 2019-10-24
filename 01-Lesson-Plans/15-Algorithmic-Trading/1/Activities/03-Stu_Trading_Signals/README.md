@@ -38,7 +38,9 @@ Using the [starter file](Unsolved/short_dual_ma_crossover.ipynb), complete the f
 
 ## Hint
 
-Remember that taking a short position (profiting off of selling) is the inverse of taking a long position (profiting off of buying), therefore make sure the decision logic regarding your trading signal reflects this!
+* Remember that taking a short position (profiting off of selling) is the inverse of taking a long position (profiting off of buying), therefore make sure the decision logic regarding your trading signal reflects this!
+
+* To read more on what a short position is, click [here!](https://www.investopedia.com/terms/s/short.asp)
 
 ---
 
