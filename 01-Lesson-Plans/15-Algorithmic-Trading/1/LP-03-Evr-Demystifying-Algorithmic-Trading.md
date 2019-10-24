@@ -12,7 +12,7 @@ Open the solution file and discuss the following:
 
   ![amd-closing-prices-dataframe](Images/amd-closing-prices-dataframe.png)
 
-* A trading algorithm can actually be a simple as a loop and a conditional. This trading strategy iterates through the data and compares the current price to the previous price to make a `buy`, `sell`, `hold` decision.
+* A trading algorithm can actually be as simple as a loop and a conditional. This trading strategy iterates through the data and compares the current price to the previous price to make a `buy`, `sell`, `hold` decision.
 
   ![simple-trading-algorithm](Images/simple-trading-algorithm.png)
 
@@ -20,9 +20,11 @@ Open the solution file and discuss the following:
 
   ![profit-loss-trading-algorithm](Images/profit-loss-trading-algorithm.png)
 
-* It is important to evaluate the performance of a trading algorithm. Here we multiply the per share profit/loss by 1000 to simulate the performance of the trading algorithm if it were to execute its trades using a share size of 1000. Results show that the trading algorithm profited $3230, and produced a return on investment of 3.23% for an initial capital allocation of $100000.
+* It is important to evaluate the performance of a trading algorithm. Here we multiply the per share profit/loss by 1000 to simulate the performance of the trading algorithm if it were to execute its trades using a share size of 1000. Results show that the trading algorithm profited $3230, and produced a return on investment of 3.23% for an initial capital allocation of $100,000.
 
   ![simple-trading-algo-performance](Images/simple-trading-algo-performance.png)
+
+End the discussion with the following:
 
 * Explain that while this particular trading strategy wasn't actually very good, we will keep improving our strategies throughout the week until we have some very robust trading algorithms.
 
@@ -30,6 +32,6 @@ Open the solution file and discuss the following:
 
 * Ask how they might formally evaluate the algorithm and then share some of the following ideas for evaluation: risk metrics such as sharp ratios, performing quantitative analysis, using data visualizations.
 
-* Acknowledge that further analysis may show that this particular strategy may not be very good, but the beauty of algorithmic trading is that we can come up with any number of trading strategies, code it up, and test it out. Explain throughout the week,  we will learn how to improve on this model of obtaining data, making a trading decision, and evaluating the results.
+* Acknowledge that further analysis may show that this particular strategy may not be very good, but the beauty of algorithmic trading is that we can come up with any number of trading strategies, code it up, and test it out. Explain that throughout the week, we will learn how to improve on this model of obtaining data, making a trading decision, and evaluating the results.
 
 Answer any questions before moving on.
