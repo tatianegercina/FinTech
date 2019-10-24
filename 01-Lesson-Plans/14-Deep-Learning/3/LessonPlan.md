@@ -139,3 +139,118 @@ For those students that may be interested in learning more about this matter, sl
 Answer any questions before moving on.
 
 ---
+
+### 3. Everyone Do: Data Preparation for LSTM (15 min)
+
+In this activity, students will learn how to prepare the training and testing data for a LSTM model.
+
+**Files:**
+
+* [lstm_predictor_part_1.ipynb](Activities/01-Evr_RNN_Part_1/Unsolved/lstm_predictor_part_1.ipynb)
+
+* [stock_data.csv](Activities/01-Evr_RNN_Part_1/Resources/stock_data.csv)
+
+* [vnq_hist_prices.csv](Activities/01-Evr_RNN_Part_1/Resources/vnq_hist_prices.csv)
+
+Explain to students that we are going to focus the class on learning how to create LSTM model using Keras, since these kind of models are widely used in industry.
+
+Comment to students that Today's class is going to be an interactive guided session, were you will go through the process of building a LSTM model from data preparation to model design and creation using Keras.
+
+Slack out the unsolved version of the Jupyter notebook, and conduct a guided live demo by highlighting the following.
+
+* In this activity, we will use closing prices from different stocks to make predictions of future closing prices based in the temporal data of each stock.
+
+* Before start creating LSTM models, we will learn how to prepare training and testing data for these type or neural networks.
+
+* We start the exercise by importing the following libraries for data manipulation.
+
+  ```python
+  # Initial imports
+  import numpy as np
+  import pandas as pd
+  from path import Path
+  import hvplot.pandas
+  ```
+
+* When you are prototyping models, it's a common practice to set the random seed to ensure reproducibility; the random seed is set for `numpy` and `tensorflow` as follows.
+
+  ```python
+  from numpy.random import seed
+  seed(1)
+
+  from tensorflow import random
+  random.set_seed(2)
+  ```
+
+* The data is loaded into a Pandas DataFrame. Note that the index is set to the column containing the date of the time series and the `infer_datetime_format` and `parse_dates` parameters are set to `True`.
+
+  ![Data Prep 1](Images/data-prep-1.png)
+
+Explain to students that the first step towards preparing the data is to create the input features vectors `X` and the target vector `y`.
+
+Comment to students that we will use the `window_data()` function to create these vectors and highlight the following.
+
+```python
+def window_data(df, window, feature_col_number, target_col_number):
+    """
+    This function accepts the column number for the features (X) and the target (y).
+    It chunks the data up with a rolling window of Xt - window to predict Xt.
+    It returns two numpy arrays of X and y.
+    """
+    X = []
+    y = []
+    for i in range(len(df) - window - 1):
+        features = df.iloc[i : (i + window), feature_col_number]
+        target = df.iloc[(i + window), target_col_number]
+        X.append(features)
+        y.append(target)
+    return np.array(X), np.array(y).reshape(-1, 1)
+```
+
+* This function chunks the data up with a rolling window of _X<sub>t</sub> - window_ to predict _X<sub>t</sub>_.
+
+* The function returns two `numpy` arrays:
+
+  * `X`: The input features vectors.
+
+  * `y`: The target vector.
+
+* The function has the following parameters:
+
+  * `df`: The original DataFrame with the time series data.
+
+  * `window`: The window size in days of previous closing prices that will be use for the prediction.
+
+  * `feature_col_number`: The column number from the original DataFrame where the features are located.
+
+  * `target_col_number`: The column number from the original DataFrame where the target is located.
+
+Explain to students, that in the forthcoming activities, we will predict closing prices using a `5` days windows of previous _T-Bonds_ closing prices, so that, we will create the `X` and `y` vectors by calling the `window_data` function and defining a window size of `5` and setting the features and target column numbers to `2` (this is the column with the _T-Bonds_ closing prices).
+
+![Data Prep 2](Images/data-prep-2.png)
+
+* To create the training and testing dataset, the data is manually split using arrays slicing to avoid randomizing data when creating the samples.
+
+```python
+# Use 70% of the data for training and the remainder for testing
+split = int(0.7 * len(X))
+X_train = X[: split - 1]
+X_test = X[split:]
+y_train = y[: split - 1]
+y_test = y[split:]
+```
+
+Once the training and test dataset are created, explain to students that we need to scale the data before training the LSTM model. We will use the `MinMaxScaler` from `sklearn` to scale all values between `0` and `1`. Note that we scale both, features and target sets.
+
+```python
+# Use the MinMaxScaler to scale data between 0 and 1.
+from sklearn.preprocessing import MinMaxScaler
+
+scaler = MinMaxScaler()
+scaler.fit(X)
+X_train = scaler.transform(X_train)
+X_test = scaler.transform(X_test)
+scaler.fit(y)
+y_train = scaler.transform(y_train)
+y_test = scaler.transform(y_test)
+```
