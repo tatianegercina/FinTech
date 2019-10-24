@@ -142,7 +142,7 @@ Answer any questions before moving on.
 
 ### 3. Everyone Do: Data Preparation for LSTM (15 min)
 
-In this activity, students will learn how to prepare the training and testing data for a LSTM model.
+In this activity, students will learn how to prepare the training and testing data for an LSTM model.
 
 **Files:**
 
@@ -152,15 +152,15 @@ In this activity, students will learn how to prepare the training and testing da
 
 * [vnq_hist_prices.csv](Activities/01-Evr_RNN_Part_1/Resources/vnq_hist_prices.csv)
 
-Explain to students that we are going to focus the class on learning how to create LSTM model using Keras, since these kind of models are widely used in industry.
+Explain to students that we are going to focus the class on learning how to create the LSTM model using Keras since these kinds of models are widely used in industry.
 
-Comment to students that Today's class is going to be an interactive guided session, were you will go through the process of building a LSTM model from data preparation to model design and creation using Keras.
+Comment to students that Today's class is going to be an interactive guided session where you will go through the process of building an LSTM model from data preparation to model design and creation using Keras.
 
-Slack out the unsolved version of the Jupyter notebook, and conduct a guided live demo by highlighting the following.
+Slack out the unsolved version of the Jupyter notebook and conduct a guided live demo by highlighting the following.
 
-* In this activity, we will use closing prices from different stocks to make predictions of future closing prices based in the temporal data of each stock.
+* In this activity, we will use closing prices from different stocks to make predictions of future closing prices based on the temporal data of each stock.
 
-* Before start creating LSTM models, we will learn how to prepare training and testing data for these type or neural networks.
+* Before start creating LSTM models, we will learn how to prepare training and testing data for these types of neural networks.
 
 * We start the exercise by importing the following libraries for data manipulation.
 
@@ -182,7 +182,7 @@ Slack out the unsolved version of the Jupyter notebook, and conduct a guided liv
   random.set_seed(2)
   ```
 
-* The data is loaded into a Pandas DataFrame. Note that the index is set to the column containing the date of the time series and the `infer_datetime_format` and `parse_dates` parameters are set to `True`.
+* The data is loaded into a Pandas DataFrame. Note that the index is set to the column containing the date of the time series, and the `infer_datetime_format` and `parse_dates` parameters are set to `True`.
 
   ![Data Prep 1](Images/data-prep-1.png)
 
@@ -219,7 +219,7 @@ def window_data(df, window, feature_col_number, target_col_number):
 
   * `df`: The original DataFrame with the time series data.
 
-  * `window`: The window size in days of previous closing prices that will be use for the prediction.
+  * `window`: The window size in days of previous closing prices that will be used for the prediction.
 
   * `feature_col_number`: The column number from the original DataFrame where the features are located.
 
@@ -240,7 +240,7 @@ y_train = y[: split - 1]
 y_test = y[split:]
 ```
 
-Once the training and test dataset are created, explain to students that we need to scale the data before training the LSTM model. We will use the `MinMaxScaler` from `sklearn` to scale all values between `0` and `1`. Note that we scale both, features and target sets.
+Once the training and test datasets are created, comment to students that we need to scale the data before training the LSTM model. We will use the `MinMaxScaler` from `sklearn` to scale all values between `0` and `1`. Note that we scale both features and target sets.
 
 ```python
 # Use the MinMaxScaler to scale data between 0 and 1.
@@ -253,4 +253,12 @@ X_test = scaler.transform(X_test)
 scaler.fit(y)
 y_train = scaler.transform(y_train)
 y_test = scaler.transform(y_test)
+```
+
+Explain to students that the LSTM API from Keras needs to receive the features data as a _vertical vector_  so that we need to reshape the `X` data in the form `reshape((X_train.shape[0], X_train.shape[1], 1))`. Both sets, training, and testing are reshaped.
+
+```python
+# Reshape the features for the model
+X_train = X_train.reshape((X_train.shape[0], X_train.shape[1], 1))
+X_test = X_test.reshape((X_test.shape[0], X_test.shape[1], 1))
 ```
