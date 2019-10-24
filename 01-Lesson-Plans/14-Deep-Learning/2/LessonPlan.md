@@ -42,7 +42,7 @@ Welcome students to the second day of the deep learning unit! Open the lesson sl
 
 * Generally speaking, deep learning models are neural networks with more than one hidden layer.
 
-* Deep neural networks are much more effective than traditional machine learning approaches at discovering non-linear relationships amongst data and thus are often the best-performing choice for complex or unstructured data like images, text, and voice.
+* Deep neural networks are much more effective than traditional machine learning approaches at discovering non-linear relationships in data and thus are often the best-performing choice for complex or unstructured data like images, text, and voice.
 
 Explain to students that deep neural networks allow creating computational models composed of multiple layers that can learn representations of data with multiple levels of abstraction.
 
@@ -56,7 +56,7 @@ Explain to students that deep neural networks are fun! Open the [Quick, Drawn! w
 
   ![Quick,Draw! demo](Images/quick-draw.gif)
 
-Draw a couple of traces in the game, and tell students that this is an example of the power of neural networks in real-time, despite this is a game for fun, these kinds of applications could also be used for signatures recognition in banking checks or handwriting text in historical documents.
+Draw a couple of traces in the game, and tell students that this is an example of the power of neural networks in real-time. Explain that even though this is just an example of a game, deep learning has been the tool that has really allowed machine learning to transform FinTech. Advances in deep learning are powering applications that were once considered science fiction.
 
 Ask if there are any questions before moving on.
 
@@ -64,7 +64,7 @@ Ask if there are any questions before moving on.
 
 ### 2. Instructor Do: Intro to Deep Learning (15 min)
 
-Continue on the lesson slides and move to the _Understanding Deep Learning_ section by highlighting the following:
+Using the slides, move to the _Understanding Deep Learning_ section and highlight the following:
 
 * As we've seen, neural networks work by calculating the weights of various input data and passing them on to the next layer of neurons. This proceeds until we get to the output layer, which makes the final decision on the predicted category or numerical value of an instance.
 
@@ -72,7 +72,7 @@ Continue on the lesson slides and move to the _Understanding Deep Learning_ sect
 
 * The advantages of adding layers lie in the fact that each additional layer of neurons makes it possible to model more complex relationships and concepts. Imagine we're trying to classify whether a picture contains a cat. Conceptually, the first step in solving this problem might involve checking whether there exists some animal in the picture. Drilling deeper, the model might detect the presence of paws, pointed ears, etc. This breaking down of the problem continues until we reach the raw input of the model, which are the individual pixels in the picture. If this problem is correctly specified, each conceptual layer would need its own layer of neurons.
 
-* Deep learning models make solving machine learning problems with high accuracy like image classification and sentiment classification possible.
+* Deep learning models are capable of solving very complex problems where classical models would fail. Deep learning makes it possible to solve difficult problems with high accuracy like image classification or natural language processing.
 
 Open the TensorFlow playground [using this link](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8&seed=0.14370&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=true&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false), click on the _Play_ button to run the simulation, and use the model to demonstrate the effects of adding layers of neurons to a neural network and go through the following talking points.
 
@@ -88,13 +88,13 @@ Add a second hidden layer with six neurons to the model and highlight the follow
 
 Add a third hidden layer with four neurons to the model and highlight the following:
 
-* Adding layers does not always guarantee better performance. Some layers can be redundant if the problem is not complex enough to warrant them. Of course, we rarely know this beforehand, and since there is not an analytical way of arriving at the number of layers we should use, the only solution to specifying the "correct" number of layers is to use trial and error.
+* Adding layers does not always guarantee better performance. Some layers can be redundant if the problem is not complex enough to warrant them. Of course, we rarely know this beforehand, and since there is not an easy analytical way of arriving at the number of layers we should use, the only solution to specifying the "correct" number of layers is to use trial and error.
 
 ![playground_3_layers](Images/playground_3_layers.PNG)
 
 * Adding more layers than is necessary may cause overfitting, since the model might fit a far more complex function than the one that actually generated the data.
 
-Ask for volunteers to the questions below as a check for understanding.
+Ask for volunteers to answer the questions below as a check for understanding.
 
 * What are some examples of classification or regression problems that might benefit from a deep learning model?
 
@@ -110,7 +110,7 @@ Answer any questions before moving on.
 
 ### 3. Everyone Do: Deep Learning with Keras (15 min)
 
-In this activity, students will build a deep learning model to predict the quality score of wines.
+In this activity, students will build a deep learning model to predict the quality score of different wines.
 
 **Files:**
 
@@ -306,7 +306,7 @@ In this activity, students will build a model to predict the geographical origin
 
   ![music3](Images/music3.PNG)
 
-Comment to students, that in this instance, we may prefer the first (shallow) model due to better performance on validation (or test) data, unless there is some way of preprocessing the data or tuning the model that would limit the effects of overfitting, like performing PCA or adding more nodes to the hidden layer.
+Explain to students, that in this instance, we may prefer the first (shallow) model due to better performance on validation (or test) data, unless there is some way of preprocessing the data or tuning the model that would limit the effects of overfitting, like performing PCA or adding more nodes to the hidden layer.
 
 Ask students for any questions before moving on.
 
@@ -479,7 +479,7 @@ Answer any questions before moving on.
 
 ---
 
-### 10. Everyone Do: Colaboratory, a Web-based Environment for Sharing ML Projects (20 min)
+### 10. Everyone Do: Colaboratory, a Cloud-based Environment for Sharing ML Projects (20 min)
 
 **Files:**
 
@@ -487,11 +487,11 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to create and share Jupyter notebooks on Google Colaboratory (aka Colab), a cloud platform oriented toward machine learning.
 
-Explain to students that Colaboratory is a Google-sponsored environment for running Jupyter notebooks on the Cloud. It's specifically tailored for running and sharing deep learning experiments, with access to Google's self-developed Tensor Processing Units (TPUs) in addition to general-purpose memory and RAM.
+Explain to students that Colaboratory is a Google-sponsored environment for running Jupyter notebooks on the Cloud. It's specifically tailored for running and sharing deep learning experiments. Colab notebooks have access to specialized computing architectures such as Google's self-developed Tensor Processing Units (TPUs) in addition to general-purpose memory and RAM. TPUs designed specifically by Google to train and run TensorFlow models.
 
 [Open this three minutes introductory video](https://youtu.be/inN8seMm7UI) and reproduce it in the class. After playing the video, highlight the following:
 
-* Colab allows us to do machine learning on the web, using Google Cloud resources.
+* Colab allows us to do machine learning on the web using Google Cloud resources.
 
 * We can use this environment to create Jupyter notebooks just as we would on our local computers.
 
@@ -547,7 +547,7 @@ For this demo, a notebook with dummy data is going to be used. Slack out the not
 
 * Once the file is imported, a new window showing the notebook will be opened.
 
-Comment to students that this example is using `hvplot` since it's not installed by default in Colab, we leave these lines commented by now.
+Explain to students that this particular example is using `hvplot` which is not installed by default in Colab. To avoid potential errors, these lines are just commented out for now.
 
   ![Images/colab07.png](Images/colab07.png)
 
@@ -555,7 +555,7 @@ Run all the cells by clicking on the _Runtime_ menu and choose the _Run all_ opt
 
   ![Images/colab08.png](Images/colab08.png)
 
-* After a few seconds, all the cells will run on the Google cloud!
+* After a few seconds, all of the cells will run on the Google cloud!
 
 Explain to students that it's possible to install new libraries in Google Colab by running the following command
 
@@ -563,7 +563,7 @@ Explain to students that it's possible to install new libraries in Google Colab 
 !pip install <library_name>
 ```
 
-Add a new code text bellow the title cell of the notebook, type and execute the following code to install `hvplot` and make it run in Google Colab. Note that also `bokeh` is installed to ensure we are using the last version.
+Add a new code text bellow the title cell of the notebook, type and execute the following code to install `hvplot` and make it run in Google Colab. Note that `bokeh` is also installed to ensure we are using the last version.
 
 ```python
 !pip install hvplot
@@ -600,13 +600,13 @@ plot = df_moons.hvplot.scatter(x="Feature 1", y="Feature 2", by="Target")
 hvplot.show(plot)
 ```
 
-Delete the cell where you run the libraries installation, and run all the notebook's cell to show students that now the plot is displayed in the notebook as we did in Jupyter notebooks.
+Delete the cell where you run `pip` and run all the notebook's cells to show students that the plot is now displayed in the notebook just like it was in the Jupyter notebooks.
 
 ![Images/colab14.gif](Images/colab14.gif)
 
-Comment to students that there are plenty of examples created by the Colab community using an assortment of data that are available through it. These notebooks can be found in [Seedbank website](https://research.google.com/seedbank/). Slack out the Seedbank URL to students and highlight the following:
+Explain to students that there are plenty of examples created by the Colab community using an assortment of data that are available through the platform. These notebooks can be found in [Seedbank website](https://research.google.com/seedbank/). Slack out the Seedbank URL to students and highlight the following:
 
-* We can search projects by tags or keywords.
+* Projects can be searched by tags or keywords.
 
 * These projects can be useful for learning by example, a source of inspiration for your projects, or just a helpful repository of code to copy snippets from.
 
@@ -633,6 +633,8 @@ In this activity, students will use the text classification demo notebook to und
 ### 12. Instructor Do: Review Deep Learning on the Web (15 min)
 
 Open the [Text Classification with Movie Reviews notebook](https://colab.research.google.com/github/tensorflow/docs/blob/r2.0rc/site/en/r2/tutorials/keras/basic_text_classification.ipynb).
+
+Walk students through the notebook, pausing to highlight the various sections of code.
 
 Ask one student to volunteer to summarize for the class what this model is doing and the steps it takes to do it.
 
