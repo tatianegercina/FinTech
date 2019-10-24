@@ -2,6 +2,10 @@
 
 In this activity, students will learn the basics of what algorithmic trading is and how it came to be, how it is performed, and what kind of individuals and skill sets are required for potential participants looking to break into the field.
 
+**Files:**
+
+* [Slideshow]()
+
 Navigate to the slideshow and present the following questions and answers about algorithmic trading:
 
 * What is algorithmic trading?
