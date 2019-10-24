@@ -4,33 +4,25 @@
 
 ### Overview
 
-Students have seen how machine learning can be used accelerate time series analysis, gauge public sentiment about the market, and classify loan eligibility. By the end of this unit, students will also know how machine learning can be used to automate and improve portfolio management and trading, especially as it pertains to making predictions about when to enter and exit the market for the most profitability.
+Students have seen how machine learning can be used to accelerate time series analysis, gauge public sentiment about the market, and classify loan eligibility. By the end of this unit, students will also know how machine learning can be used to automate and improve portfolio management and trading, especially as it pertains to making predictions about when to enter and exit the market for the most profitability.
 
-Today's class will introduce students to **algorithmic trading** in Python. Students will learn the fundaments of algorithmic trading such as data collection, signal generation, backtesting, and evaluation. The class will conclude with students building a complete trading dashboard similar to commercial online trading platforms.
+Today's class will introduce students to **algorithmic trading** in Python. Students will learn the fundamentals of algorithmic trading such as data collection, signal generation, backtesting, and evaluation. The class will conclude with students building a complete trading dashboard similar to commercial online trading platforms.
 
 ### Class Objectives
 
 By the end of class, students will be able to:
 
-* Delineate what algorithmic trading is and who does it.
+* Delineate what algorithmic trading is, who does it, and why it's valuable.
 
-* Define and verbally reiterate effective entry and exit rules for trading.
+* Deconstruct the process for algorithmic trading: fetching data, handling data, and making buy, sell, or hold decisions.
 
-* Configure position sizing and leveraging.
+* Define what a trading signal is, how it is used, and why it's important.
 
-* Identify useful trading platforms and trading APIs and reiterate their use cases.
+* Define what backtesting is, how it is used, and why it's important.
 
-* Build a predictive model for algorithmic trading.
+* Quantify evaluation metrics pertaining to overall portfolio and trading performance.
 
-* Validate predictive model using backtesting for signal-based trading strategies.
-
-* Automate the purchase and sale of multiple assets using the recommended or best-ranked trading strategy.
-
-* Construct signal-based trading strategies from predicted stock returns such as momentum and mean reversion.
-
-* Rank multiple signal-based trading strategies by potential alpha generation.
-
-* Build portfolios with specific allocations to each underlying asset based on the predicted alpha generation of each stock.
+* Build a trading dashboard to visualize the multiple components of algorithmic trading.
 
 ### Instructor Notes
 
@@ -42,7 +34,7 @@ By the end of class, students will be able to:
 
 * Review sessions will be geared towards allowing students to ask as many questions as possible. Questions should be prioritized over instructor posed review questions. While we want to provide as much opportunity as possible for students to ask questions, it is also important that the class is paced so that all material is covered.
 
-  * Encourage students to review supplementary resources, to reach out to TAs individually for assistance, and to attend office hours to address any unanswered questions or confusion.
+* Encourage students to review supplementary resources, to reach out to TAs individually for assistance, and to attend office hours to address any unanswered questions or confusion.
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
