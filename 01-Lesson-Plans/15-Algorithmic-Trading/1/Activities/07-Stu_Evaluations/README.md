@@ -20,6 +20,8 @@ Evaluate the backtesting results by calculating the annual return, cumulative re
 
 8. Call the `calculate_eval_metrics` function with `signals_df` as the argument
 
+9. Calculate the per-trade evaluation metrics by calculating the difference between exit and entry portfolio holding values.
+
 ### Hint
 
 Consult the [evaluations calculation guide](../../../Supplemental/EvaluationsCalculationGuide.md) for the above calculations/formulas.
