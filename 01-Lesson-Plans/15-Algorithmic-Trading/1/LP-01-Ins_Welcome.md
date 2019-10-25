@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Today's lesson will consist of elements taught in the Pandas, PyViz, and Machine Learning units. The lesson will include data analysis and querying, utilization of trading APIs for automated trade execution, and the visualization of trading performance and transaction analysis using a Panel dashboard.
+* Today's lesson will consist of elements taught in the Pandas and PyViz units. The lesson will include data analysis and querying, utilization of trading APIs for automated trade execution, and the visualization of trading performance and transaction analysis using a Panel dashboard.
 
 * The goal of this unit is to educate students on trading, as well as how to use code to automate trading. Trading may be new for many students, so it is important that adequate information is provided regarding what trading is and all of the steps involved in creating entry and exit strategies, as well as which FinTech APIs integrate well with Python for automated trading.
 
