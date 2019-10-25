@@ -26,7 +26,7 @@ By the end of class, students will be able to:
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson 14.2 Slides]().
 
-To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -38,7 +38,7 @@ The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 Welcome students to the second day of the deep learning unit! Open the lesson slides and move to the _Hello Deep Learning!_ slide and highlight the following:
 
-* Today we will dive into constructing deep learning models with real-world data.
+* Today, we will dive into constructing deep learning models with real-world data.
 
 * Generally speaking, deep learning models are neural networks with more than one hidden layer.
 
@@ -50,7 +50,7 @@ Explain to students that deep neural networks allow creating computational model
 
 Explain to students that deep neural networks are fun! Open the [Quick, Drawn! web application](https://quickdraw.withgoogle.com) in your browser and slack out the URL to students. Explain to students that they are going to play a Pictionary-like game using the power of deep learning.
 
-* The Quick, Draw! application can identify an image from a trace.
+* The Quick, Draw! an application that can identify an image from a trace.
 
 * The game asks you to draw something in less than 20 seconds while the deep learning algorithm tries to guess what the trace could be.
 
@@ -66,13 +66,13 @@ Ask if there are any questions before moving on.
 
 Using the slides, move to the _Understanding Deep Learning_ section and highlight the following:
 
-* As we've seen, neural networks work by calculating the weights of various input data and passing them on to the next layer of neurons. This proceeds until we get to the output layer, which makes the final decision on the predicted category or numerical value of an instance.
+* As we have seen, neural networks work by calculating the weights of various input data and passing them on to the next layer of neurons. This proceeds until we get to the output layer, which makes the final decision on the predicted category or numerical value of an instance.
 
 * The number of layers that are included in a neural network model determines whether it is a "deep" learning model or not. While definitions vary, networks with more than one "hidden" layer can be classified as "deep." The prevalence of these deep learning models have been facilitated in recent years by the abundance and decreasing cost of computing power.
 
-* The advantages of adding layers lie in the fact that each additional layer of neurons makes it possible to model more complex relationships and concepts. Imagine we're trying to classify whether a picture contains a cat. Conceptually, the first step in solving this problem might involve checking whether there exists some animal in the picture. Drilling deeper, the model might detect the presence of paws, pointed ears, etc. This breaking down of the problem continues until we reach the raw input of the model, which are the individual pixels in the picture. If this problem is correctly specified, each conceptual layer would need its own layer of neurons.
+* The advantages of adding layers lie in the fact that each additional layer of neurons makes it possible to model more complex relationships and concepts. Imagine we are trying to classify whether a picture contains a cat. Conceptually, the first step in solving this problem might involve checking whether there exists some animal in the picture. Drilling deeper, the model might detect the presence of paws, pointed ears, etc. This breaking down of the problem continues until we reach the raw input of the model, which are the individual pixels in the picture. If this problem is correctly specified, each conceptual layer would need its own layer of neurons.
 
-* Deep learning models are capable of solving very complex problems where classical models would fail. Deep learning makes it possible to solve difficult problems with high accuracy like image classification or natural language processing.
+* Deep learning models are capable of solving very complex problems where classical models would fail. Deep learning makes it possible to solve difficult problems with high accuracy, like image classification or natural language processing.
 
 Open the TensorFlow playground [using this link](https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8&seed=0.14370&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=true&xSquared=true&ySquared=true&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false), click on the _Play_ button to run the simulation, and use the model to demonstrate the effects of adding layers of neurons to a neural network and go through the following talking points.
 
@@ -223,7 +223,7 @@ In this activity, students will build a model to predict the geographical origin
 
 **Files:**
 
-* [music].ipynb]((Activities/02-Stu_Sound_of_Music/Unsolved/music.ipynb)
+* [music.ipynb](Activities/02-Stu_Sound_of_Music/Unsolved/sound_of_music.ipynb)
 
 ---
 
@@ -255,7 +255,7 @@ In this activity, students will build a model to predict the geographical origin
   X = scaler.transform(X)
   ```
 
-* The first model we define has one hidden layer with 8 neurons, and it's fit with `800` epochs.
+* The first model we define has one hidden layer with 8 neurons, and it is fitted with `800` epochs.
 
   ```python
   # Create a shallow, 1 hidden layer, neural network
@@ -274,7 +274,7 @@ In this activity, students will build a model to predict the geographical origin
   model_1 = nn.fit(X, y, validation_split=0.3, epochs=800, verbose=0)
   ```
 
-* The second model we define has two hidden layers, with 8 and 4 neurons, respectively. This model is fit with `800` epochs as well.
+* The second model we define has two hidden layers, with 8 and 4 neurons, respectively. This model is fitted with `800` epochs as well.
 
   ```python
   # Define the model - deep neural network with two layers
@@ -300,7 +300,7 @@ In this activity, students will build a model to predict the geographical origin
 
   ![music1](Images/music1.PNG)
 
-* However, when we compare validation losses, it's clear that both models have severe overfitting problems after 100 or so epochs of training. The simpler model has a less drastic increase in the validation loss over time, which intuitively should make sense; the simpler model does not overfit quite as much because the function it can create is less complex.
+* However, when we compare validation losses, it is clear that both models have severe overfitting problems after 100 or so epochs of training. The simpler model has a less drastic increase in the validation loss over time, which intuitively should make sense; the simpler model does not overfit quite as much because the function it can create is less complex.
 
   ![music2](Images/music2.PNG)
 
@@ -314,7 +314,7 @@ Ask students for any questions before moving on.
 
 ### 6. Instructor Do: Model Persistence (10 min)
 
-To use a neural net model in a production setting, we often need to save the model and have it predict outcomes on unseen data at a future date. In this demo, we'll show students how to persist a neural net model.
+To use a neural net model in a production setting, we often need to save the model and have it predict outcomes on unseen data at a future date. In this demo, we will show students how to persist in a neural net model.
 
 **Files:**
 
@@ -322,7 +322,7 @@ To use a neural net model in a production setting, we often need to save the mod
 
 Open the solved notebook and go through each cell, stopping for questions.
 
-* Let's say we have created a model that seems to do well on the training and test data. Now we want to put it into production so that it can be used to make actual predictions. To do this, we need to save the model somewhere so that it can be called when needed.
+* Let us say we have created a model that seems to do well on the training and test data. Now we want to put it into production so that it can be used to make actual predictions. To do this, we need to save the model somewhere so that it can be called when needed.
 
 * In the first few blocks of code, we have defined a model to predict the quality of wine similar to the one we created in the last demo.
 
@@ -354,8 +354,7 @@ Open the solved notebook and go through each cell, stopping for questions.
 * To load the models, we need to call the `model_from_json` function from Keras.
 
   ```python
-  # Load the saved model to make predictions
-  from tensorflow.keras.models import model_from_json
+  # Load the saved model to make predictions from tensorflow.keras.models import model_from_json
 
   # load json and create model
   file_path = Path("../Resources/model.json")
@@ -487,7 +486,7 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to create and share Jupyter notebooks on Google Colaboratory (aka Colab), a cloud platform oriented toward machine learning.
 
-Explain to students that Colaboratory is a Google-sponsored environment for running Jupyter notebooks on the Cloud. It's specifically tailored for running and sharing deep learning experiments. Colab notebooks have access to specialized computing architectures such as Google's self-developed Tensor Processing Units (TPUs) in addition to general-purpose memory and RAM. TPUs designed specifically by Google to train and run TensorFlow models.
+Explain to students that Colaboratory is a Google-sponsored environment for running Jupyter notebooks on the Cloud. It is specifically tailored for running and sharing deep learning experiments. Colab notebooks have access to specialized computing architectures such as Google's self-developed Tensor Processing Units (TPUs) in addition to general-purpose memory and RAM. TPUs designed specifically by Google to train and run TensorFlow models.
 
 [Open this three minutes introductory video](https://youtu.be/inN8seMm7UI) and reproduce it in the class. After playing the video, highlight the following:
 
