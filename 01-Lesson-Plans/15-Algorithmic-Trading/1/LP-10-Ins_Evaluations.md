@@ -28,48 +28,55 @@ Transition to a dry walk through of the code used to calculate each of these met
 
 * Point out to students the code to calculate cumulative returns.
 
-    ```python
-    cum_returns = (1 + signals_df['Portfolio Daily Returns']).cumprod() - 1
-    ```
+  ```python
+  cum_returns = (1 + signals_df['Portfolio Daily Returns']).cumprod() - 1
+  ```
 
 * Show students the code to calculate annual returns. Highlight that when calculating annual returns, the average of daily return has to be calculated first, and then that value can be multiplied by the number of trading days within a year to derive an annualized value.
 
-    ```python
-    annual_returns = ((1 + signals_df['Portfolio Daily Returns'].mean())**252 - 1)
-    ```
+  ```python
+  annual_returns = ((1 + signals_df['Portfolio Daily Returns'].mean())**252 - 1)
+  ```
 
 * Explain the code to calculate annual volatility. Emphasize that annual volatility involves calculating the standard deviation for each daily return. The standard deviation is then annualized by multiplying by the number of trading days in the year.
 
-    ```python
-    annual_volatility = ((1 + signals_df['Portfolio Daily Returns'].std())** 252 - 1)
-    ```
+  ```python
+  annual_volatility = ((1 + signals_df['Portfolio Daily Returns'].std())** 252 - 1)
+  ```
 
 * Ask students if anyone remembers how to calculate a sharpe ratio.
 
   **Answer** Calculate the annual average daily return and then divide that by the standard deviation of daily returns. The standard deviation of daily returns will need to be multiplied by the square root of the number of trading days.
 
-    ```python
-    sharpe_ratio = (signals_df['Portfolio Daily Returns'].mean() * 252) / (signals_df['Portfolio Daily Returns'].std() * np.sqrt(252))
-    ```
+  ```python
+  sharpe_ratio = (signals_df['Portfolio Daily Returns'].mean() * 252) / (signals_df['Portfolio Daily Returns'].std() * np.sqrt(252))
+  ```
 
 * Indicate that the downside returns, or downside deviation, metric is calculated by squaring daily returns less than 0.
 
-    ```python
-    sortino_ratio_df.loc[sortino_ratio_df['Portfolio Daily Returns'] < target, 'Downside Returns'] = sortino_ratio_df['Portfolio Daily Returns']**2
-    ```
+  ```python
+  sortino_ratio_df.loc[sortino_ratio_df['Portfolio Daily Returns'] < target, 'Downside Returns'] = sortino_ratio_df['Portfolio Daily Returns']**2
+  ```
 
 * Sortino ratios are calculated using the downside return. Sortino ratios are calculated by dividing the average daily return by the square root of the average downside return.
 
-    ```python
-    down_stdev = np.sqrt(sortino_ratio_df['Downside Returns'].mean())
-    expected_return = sortino_ratio_df['Portfolio Daily Returns'].mean()
+  ```python
+  down_stdev = np.sqrt(sortino_ratio_df['Downside Returns'].mean())
+  expected_return = sortino_ratio_df['Portfolio Daily Returns'].mean()
 
-    sortino_ratio = expected_return/down_stdev
-    portfolio_evaluation_df.loc['Sortino Ratio'] = sortino_ratio
-    ```
+  sortino_ratio = expected_return/down_stdev
+  portfolio_evaluation_df.loc['Sortino Ratio'] = sortino_ratio
+  ```
 
-    ![evluation_metrics.png](Images/evluation_metrics.png)
+  ![evluation_metrics.png](Images/evluation_metrics.png)
+
 * Emphasize to students that they should dedicate time outside of class to conduct research on each individual metric to better understand how it can be applied to assess portfolio performance.
+
+* Per-trade evaluation metrics can also be calculated by iterating over the DataFrame containing backtested signal data and calculating the difference between the exit portfolio holding and the entry portfolio holding values.
+
+  ![per-trade-evaluation-code](Images/per-trade-evaluation-code.png)
+
+  ![per-trade-evaluation-dataframe](Images/per-trade-evaluation-dataframe.png)
 
 If time remains, finish the walk through by reminding students that even when trading with an algorithm, trades and portfolios need to be evaluated. Algorithms are not infallible. Touch upon the following:
 
