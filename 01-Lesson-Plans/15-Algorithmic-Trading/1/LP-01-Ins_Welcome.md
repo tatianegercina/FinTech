@@ -4,9 +4,9 @@
 
 ### Overview
 
-Students have seen how machine learning can be used to accelerate time series analysis, gauge public sentiment about the market, and classify loan eligibility. By the end of this unit, students will also know how machine learning can be used to automate and improve portfolio management and trading, especially as it pertains to making predictions about when to enter and exit the market for the most profitability.
+Today's class will introduce students to the concept of **algorithmic trading** in Python. Traditional trading, or the manual purchase and sale of assets such as stocks, has begun to shift to more automated methods due to the advancements in network speed, computing power, and available financial trading APIs. Therefore, students will learn the fundamentals of algorithmic trading and deconstruct the process of producing a functional algorithmic trading model.
 
-Today's class will introduce students to **algorithmic trading** in Python. Students will learn the fundamentals of algorithmic trading such as data collection, signal generation, backtesting, and evaluation. The class will conclude with students building a complete trading dashboard similar to commercial online trading platforms.
+In particular, students will learn how to generate trading signals from raw data, backtest a trading strategy using such signals, produce evaluation metrics regarding overall portfolio and per-trade performance, and construct a trading dashboard similar to commercial online trading platforms. By the end of this unit, students will also incorporate machine learning to automate and improve portfolio management and trade performance for maximum profitability with minimal risk.
 
 ### Class Objectives
 
@@ -58,32 +58,32 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-In this section, students are introduced to algorithmic trading is and explain why it's useful for FinTech professionals. This section is a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and make participating in the market as easy as running a program.
+In this activity, students are introduced to what algorithmic trading is and why it's useful for FinTech professionals. In particular, this section is a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and simplify participation in the market through the execution of a single program.
 
 Welcome students to the first day of algorithmic trading and explain the following:
 
 * Introduce students to algorithmic trading first by explaining how cumbersome it can be to manually make trades. Explain that a typical day for traders involves:
 
-  * Tracking the transactional history of many stocks
+  * Tracking the transactional history of many stocks.
 
-  * Identify the best opportunity to buy, sell, and hold
+  * Identifying the best opportunity to buy, sell, and hold.
 
-  * Maintain knowledge about the highs and lows for each individual stock, as well as their overall portfolio value and profit/loss
+  * Maintaining knowledge about the highs and lows for each individual stock, as well as their overall portfolio value and profit/loss.
 
-  * Keeping emotions in check
+  * Keeping emotions in check.
 
-* Also explain that human emotions play a key role in the success or failure of a trade/trader. Because the market is constantly changing with varying degrees of volatility, it's easy for humans to get emotional when trading. The trades that traders make have the ability to drastically impact their own profitability and livelihood. Furthermore, because traders are dealing with other people's money, such as retirement funds, every decision has the ability to disrupt the economical foundation of countless lives.
+* Also explain that human emotions play a key role in the success or failure of a trade/trader. Because the market is constantly changing with varying degrees of volatility, it's easy for humans to get emotional when trading. The trades that traders make have the ability to drastically impact their own profitability and livelihood. Furthermore, because traders often deal with other people's money, such as retirement funds, impulsive trading decisions can have the ability to disrupt the economical foundation of countless lives.
 
-* The sheer number of moving parts and details that need to be considered can make it difficult for the human mind to consistently make performant trades. This is where **algorthmic trading** comes in.
+* The sheer number of moving parts and details that need to be considered can make it difficult for the human mind to consistently make profitable trades. This is where **algorithmic trading** comes in.
 
-* Algorithmic trading is the concept of utilizing machine-learning to automate the process of buying and selling assets. Machine learning algorithms can make predictions about ROI, risk, and analyze transactions much faster than a human brain. Because computers run off of logic rather than emotions, traders don't have to worry about their emotions getting in the way.
+* Algorithmic trading is the concept of utilizing machines to automate the process of buying and selling assets. Machines running algorithms can make predictions about ROI, risk, and analyze transactions much faster than a human brain. Because computers run off of logic rather than emotions, traders don't have to worry about their emotions getting in the way.
 
-  * Underscore to students that there are a number of different algorthmic trading strategies that leverage machine learning. An algorithmic doesn't have to perform every action involved trading: algorithmic trading can be used just to predict the best investments, determine risk, or kick-off end-to-end trade execution and portfolio management.
+  * Underscore to students that there are a number of different algorithmic trading strategies, even ones that can leverage machine learning. In addition, an algorithm does not necessarily have to evaluate the basis of a candidate trade in the same way: algorithms can be used to predict the best investments based off of profit-to-risk ratios, volume and volatility, or any number of varying attributes.
 
 * Using algorithmic trading models in conjunction with portfolio management also allows for automatic re-balancing of assets (capital) within the portfolio, thereby aiding in portfolio optimization. Algorithmic trading models automatically buy and sell assets within the portfolio according to the optimal weights for each asset calculated by the model.
 
-* If time remains, summarize to students that all **algorithmic trading** involves is the prediction of future stock returns and execution of specific trading actions based on specific criteria, such as the ratio of risk to reward for the given scenario. In this regard, all a human has to do is click a button to execute the algorithm. The key difference between human traders and algorithmic trading is that computers can make decisions and predictions much more efficiently and effectively than humans, and they can do so without human emotions getting in the way.
+* If time remains, summarize to students that all **algorithmic trading** involves is the execution of specific trading actions based on specific criteria, such as the ratio of profit-to-risk for the given scenario. In this regard, all a human has to do is click a button to execute the algorithm.
 
-* Lastly, if there is time, explain to students that the use of machine learning has given certain firms a competitive advantage compared to those still using manual, human labor. They're able to make smarter, more agile decisions based off of real time predictions and historical analysis, not to mention that less time is wasted on implementing and repeating manual processes.
+* Lastly, if there is time, explain to students that the use of algorithmic trading has given certain firms a competitive advantage compared to those still using manual, human labor. They're able to make smarter, more agile decisions based off of real time predictions and historical analysis, not to mention that less time is wasted on implementing and repeating manual processes.
 
 Answer any questions before moving on.
