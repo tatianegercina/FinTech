@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's class introduces students to a neural networks, a new member of the machine learning algorithms that can be used for classification and regression problems but are perhaps uniquely able to learn very complex, non-linear models. Conceptually, neural networks were inspired by neurons in the human brain, and have a similar property of scaling to meet the complex environments that they operate in.
+Today's class introduces students to neural networks, a new member of the machine learning algorithms that can be used for classification and regression problems but are perhaps uniquely able to learn very complex, non-linear models. Conceptually, neural networks were inspired by neurons in the human brain, and have a similar property of scaling to meet the complex environments that they operate in.
 
 Neural networks are very flexible in their applications, but they are not necessarily meant to be "plug-and-play." From preprocessing input data to constructing a neural network architecture, students will learn the process to construct and use neural networks successfully.
 
@@ -32,9 +32,9 @@ By the end of class, students will be able to:
 
 * Give students the opportunity to ask questions, and when necessary, have students save questions for the review sessions or office hours.
 
-* Today should also be fun since we'll be playing with neural nets in several ways to experiment with input, architecture, and algorithms.
+* Today should also be fun since we will be playing with neural nets in several ways to experiment with input, architecture, and algorithms.
 
-* A thorough understanding of neural networks would require math that's beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms in order to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
+* A thorough understanding of neural networks would require math that is beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms in order to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
 
 * In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/), be sure to practice the demo before class. If you are not familiar with this project, we encourage you to watch this video.
 
@@ -154,7 +154,7 @@ Continue to the _Python Libraries for Neural Networks_ slide, explain to student
 
 * [Keras](https://keras.io/)
 
-Explain to students that we will use Keras in the class and that an introduction comes next; in the meantime, it's time for a funny example about how neural networks work.
+Explain to students that we will use Keras in the class and that an introduction comes next; in the meantime, it is time for a funny example about how neural networks work.
 
 Open your web browser and navigate to [the Teachable Machine website](https://teachablemachine.withgoogle.com). This web application shows the fundamental mechanism of a neural network by training a model that recognizes gestures from your webcam to predict one of three classes.
 
@@ -222,7 +222,7 @@ After this brief technical introduction to the perceptron, continue with the fol
 
 * Consider the task of predicting whether or not a person would watch a random movie on Netflix using the behavioral data available.
 
-* Let's assume the decision depends on `3` binary inputs (binary for simplicity).
+* Let us assume the decision depends on `3` binary inputs (binary for simplicity).
 
 * In this perceptron model, _w<sub>0</sub>_ (our arbitrary threshold `θ`) is called the bias because it represents the prejudice that can influence the final decision.
 
@@ -236,7 +236,7 @@ After this brief technical introduction to the perceptron, continue with the fol
 
 Continue to the slide entitled _The perceptron may be harsh_ and highlight the following:
 
-* In real life, if you want to choose a movie, you're not as strict as the perceptron could be. For example, if you base your decision only in one input variable, such as _isNewRelease_, the bias is set to `0.5` and _w<sub>1</sub> = 1_ then our perceptron would look as follows.
+* In real life, if you want to choose a movie, you are not as strict as the perceptron could be. For example, if you base your decision only in one input variable, such as _isNewRelease_, the bias is set to `0.5` and _w<sub>1</sub> = 1_ then our perceptron would look as follows.
 
   ![Harsh perceptron](Images/harsh_perceptron.png)
 
@@ -248,7 +248,7 @@ Move to the slide entitled _Introducing the Activation Function_ and highlight t
 
   ![Current neuron structure](Images/neuron_structure.jpg)
 
-* The difference is the **activation function** that adds a dose of reality to neurons decisions. It's a mathematical function with a characteristic _S-shaped_ curve, also called the sigmoid curve.
+* The difference is the **activation function** that adds a dose of reality to neurons decisions. It is a mathematical function with a characteristic _S-shaped_ curve, also called the sigmoid curve.
 
   ![Sigmoid functions](Images/sigmoid_functions.png)
 
@@ -274,7 +274,7 @@ Click on the [pre-configured link](https://playground.tensorflow.org/#activation
 
 * In the same row as the play button, there are dropdowns for **Learning Rate**; **Activation Function**; **Regularization**; etc. These options affect how quickly a network learns and influences the goodness of its predictions.
 
-* **Problem Type** is also on this row, and allows us to select whether we want the neural net to solve a regression or classification problem. We'll demonstrate a classification problem for now.
+* **Problem Type** is also on this row, and allows us to select whether we want the neural net to solve a regression or classification problem. We will demonstrate a classification problem for now.
 
 * Below this row are headings for **Data**; **Features**; **Hidden Layers**; and **Output**.
 
@@ -286,7 +286,7 @@ Click on the [pre-configured link](https://playground.tensorflow.org/#activation
 
   ![Neuron's features](Images/neuron_features.png)
 
-* **Hidden Layers** are layers of neurons that take the output of the layer before them as inputs, allowing the network to identify "higher-order" patterns and correlations amongst input features. For now, we'll use only one hidden layer with a single neuron, which results in a very simple architecture.
+* **Hidden Layers** are layers of neurons that take the output of the layer before them as inputs, allowing the network to identify "higher-order" patterns and correlations amongst input features. For now, we will use only one hidden layer with a single neuron, which results in a very simple architecture.
 
   ![tfp_hidden_layer.png](Images/tfp_hidden_layer.png)
 
@@ -302,9 +302,9 @@ Click on the _Play_ button to start training the network, and call attention to 
 
   ![Neuron's demo](Images/tfp_neuron_demo.gif)
 
-Recall students that this isn't new, a variety of `sklearn` classifiers already covered in class can draw this boundary just fine. Logistic regression is one example.
+Recall to students that this is not new, a variety of `sklearn` classifiers already covered in class can draw this boundary just fine. Logistic regression is one example.
 
-* This example shows that neural networks can easily solve linear problems, but doesn't demonstrate their efficacy at non-linear modeling problems.
+* This example shows that neural networks can easily solve linear problems, but does not demonstrate their efficacy at non-linear modeling problems.
 
 * The real power or neural networks can be seen when we add more than one neuron, especially dealing with non-linear data. This is going to be explored later in Today's class.
 
@@ -388,7 +388,7 @@ Explain to students that we will start coding a neural network with a single neu
   X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
   ```
 
-Explain to students that before using a neural network, it's important to normalize or standardize the data. Neural networks typically perform better when each of the input features are on the same scale. This makes it easier for the neural network to stabilize and adjust the weights in the network.
+Explain to students that before using a neural network, it is important to normalize or standardize the data. Neural networks typically perform better when each of the input features are on the same scale. This makes it easier for the neural network to stabilize and adjust the weights in the network.
 
 * Scikit-Learn's `MinMaxScaler` or `StandardScaler` are commonly used to scale and normalize input features. The `StandardScaler` is used here to scale the features data. There is no need to scale the target data (`y`) since it's already encoded as `0` and `1`.
 
@@ -461,7 +461,7 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
 
 * An additional training metric, `accuracy`, is also specified.
 
-* After the model is compiled, it's fit (trained) using the dummy data.
+* After the model is compiled, it is fit (trained) using the dummy data.
 
   ```python
   model = neuron.fit(X_train_scaled, y_train, epochs=100)
@@ -579,7 +579,7 @@ Open the unsolved version of the Jupyter notebook, live code the demo, and highl
 
   ![Non-linear data plot](Images/nn_1.png)
 
-* The data is split into training and testing sets, and it's scaled prior to building and testing the neural network.
+* The data is split into training and testing sets, and it is scaled prior to building and testing the neural network.
 
   ```python
   # Create training and testing sets
@@ -663,7 +663,7 @@ Collect a couple of answers from the class and highlight the following:
 
 * Adding more neurons to the model is a possible solution; however, we can overfit the model.
 
-* Adding a second layer is also a suitable solution; this is part of deep learning, and it's going to be covered next class.
+* Adding a second layer is also a suitable solution; this is part of deep learning, and it is going to be covered next class.
 
 * Testing with different activation functions is one of the most used initial solutions, especially when dealing with non-linear data.
 
@@ -808,7 +808,7 @@ Open the unsolved Jupyter notebook and ask students to follow along as your live
 
   ![Sample encoded data](Images/ohe-4.png)
 
-Ask the class to restate what we've accomplished with one-hot encoding.
+Ask the class to restate what we have accomplished with one-hot encoding.
 
 * **Sample Answer**: We've transformed one categorical variable into many binary (numerical) variables, each corresponding to a category.
 
@@ -830,7 +830,7 @@ Come back to the Jupyter notebook to recall data standardization, live code the 
   data_to_scale = data.iloc[:, :4]
   ```
 
-* Once the data to scale is selected, it's scaled using the `StandardScaler` following the steps that students are familiar with.
+* Once the data to scale is selected, it is scaled using the `StandardScaler` following the steps that students are familiar with.
 
 ```python
 # Create the StandardScaler instances
@@ -1021,7 +1021,7 @@ Answer any questions before moving on.
 
 This day may be hard for students since several new concepts were covered, spend a few minutes with the class reflecting on what they learn Today.
 
-* Recall students that modeling neural networks is part art, and part science, so they should be patient while defining models.
+* Recall students that modeling neural networks is part art and part science, so they should be patient while defining models.
 
 * There are several frameworks to implement neural networks, Keras is a business class framework they can trust in for prototyping or deploy production models.
 
