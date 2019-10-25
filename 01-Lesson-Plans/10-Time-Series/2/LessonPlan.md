@@ -125,7 +125,7 @@ Open the notebook and show the code to convert from a non-stationary dataset to 
   adfuller(data.Yield)
   ```
 
-  * The Augmented Dickey-Fuller tests for stationarity. It's a quick statistical test to tell you if a series is stationary or not.
+  * The Augmented Dickey-Fuller tests for stationarity. It is a quick statistical test to tell you if a series is stationary or not.
 
   * The p-value is the second value in the output. A p-value less than 0.05 means that the series is stationary.
 
@@ -146,7 +146,7 @@ Open the notebook and show the code to convert from a non-stationary dataset to 
 
 ### 3. Students Do: Stationarity (15 min)
 
-In this activity, students will perform techniques to stationarize a non-stationary time series.
+In this activity, students will perform techniques to make stationary a non-stationary time series.
 
 **Files:**
 
@@ -184,7 +184,7 @@ Walk through the first part of the code, in which the diffs are plotted:
 
   ![Images/stationarity02.png](Images/stationarity02.png)
 
-  * The series is not quite perfectly stationary. The right side of the plot (between May and November in 2011) shows higher variance.
+  * The series is not quite perfectly stationary. The right side of the plot (between May and November in 2011) shows a higher variance.
 
 Walk through the next transformation:
 
@@ -236,7 +236,7 @@ Summarize the key points and procedures of this activity:
 
 Before diving into ARMA, quickly summarize auto-correlation for the class:
 
-  * Auto-correlation is simply seeing to how well a time series correlates with a lagged copy of itself at a specified lag interval.
+  * Autocorrelation is simply seeing to how well a time series correlates with a lagged copy of itself at a specified lag interval.
 
   * For example, if we have a week's worth of data, the value from each day would be matched up with the value from the previous day, and the two series would be mathematically correlated.
 
@@ -248,9 +248,9 @@ Use the slides to introduce the concept of auto-regressive (AR) modeling:
 
   * In an AR model, past values are used to predict future values.
 
-  * An AR model therefore assumes some degree of auto-correlation.
+  * An AR model, therefore, assumes some degree of auto-correlation.
 
-	  * An AR model may have one significant lag, or it may have multiple.
+    * An AR model may have one significant lag, or it may have multiple.
 
 Explain the relationship between an AR model and a linear regression model:
 
@@ -264,7 +264,7 @@ Explain the elements of the autoregression model:
 
   ![Images/arma01.gif](Images/arma01.gif)
 
-  * If we're dealing with stock prices, the term on the left, `y` at time `t`, is the current price. In other words, it is the value of the stock price at time `t`.
+  * If we are dealing with stock prices, the term on the left, `y` at time `t`, is the current price. In other words, it is the value of the stock price at time `t`.
 
   * The first term on the right, the letter mu, is simply the mean of the time series.
 
@@ -284,7 +284,7 @@ Explain that in a second order AR model, where two significant lags are assumed,
 
   * Again, this second order model assumes that the present value is determined by past values at two different lag points.
 
-* Now that we've gone over the equation, ask your students to focus on the larger picture:
+* Now that we have gone over the equation, ask your students to focus on the larger picture:
 
   * An AR model predicts future values based on past values at a specified lag, and the number of significant lags.
 
@@ -304,7 +304,7 @@ Contrast the MA model with the AR model:
 
   * In an MA model, past errors (plus current error) are used to predict future values. In other words, it is a form of error correction.
 
-* Emphasize that a MA model is **not** the same thing as a moving/rolling average that we discussed previously.
+* Emphasize that an MA model is **not** the same thing as a moving/rolling average that we discussed previously.
 
   * In a moving average, each value is the average of a number of previous values. It does not take into account the error at each time point.
 
@@ -336,7 +336,7 @@ Reiterate that, despite the possibly intimidating mathematical formula, the idea
 
   * [ARMA.ipynb](Activities/03-Ins_ARMA/Solved/ARMA.ipynb)
 
-Now that we have a theoretical understanding of the ARMA model, explain that we will go over using it in Python.
+Now that we have a theoretical understanding of the ARMA model explain that we will go over using it in Python.
 
 Open the notebook.
 
@@ -350,7 +350,7 @@ Display the plot and ask the class whether the time series is stationary:
 
 Explain that an ARMA model requires a stationary time series.
 
-  * Later today, we'll cover a model for non-stationary series.
+  * Later today, we will cover a model for non-stationary series.
 
 Ask the class how one might transform this time series to be stationary:
 
@@ -360,14 +360,14 @@ Ask the class how one might transform this time series to be stationary:
 
   * An exponential time series can be made stationary by taking the logarithm.
 
-Explain that here, we're stationarizing the time series by calculating the return.
+Explain that here, we are stationarizing the time series by calculating the return.
 
   ```python
   df['Return'] = df['Close'].pct_change()
   returns = df['Return'].dropna()
   ```
 
-  * The pandas function `pct_change()` calculates the returns, and NaN values are subsequently dropped.
+  * The Pandas function `pct_change()` calculates the returns, and NaN values are subsequently dropped.
 
 Show the transformed series, and ask the class whether it is stationary.
 
@@ -415,7 +415,7 @@ Explain that the model's `forecast()` method can be used to make predictions:
 
   * The `steps=10` argument specifies two weeks (ten trading days) as the interval of prediction.
 
-  * The predicted values (in this case, stock returns) are formatted as a dataframe and plotted.
+  * The predicted values (in this case, stock returns) are formatted as a DataFrame and plotted.
 
 Finally, highlight a few important features of the model's summary:
 
@@ -460,7 +460,7 @@ Open the notebook and show the plot of the data:
 
   * In this example, the p-value is 0.011 (less than 0.05), suggesting stationarity.
 
- * In addition to the Dickey-Fuller test, since the data appears visually to not have a consistent upward or downward trend, this also suggests stationarity. Because of that, we will try modeling the series without further transformations.
+ * In addition to the Dickey-Fuller test, since the data appears visually not to have a consistent upward or downward trend, this also suggests stationarity. Because of that, we will try modeling the series without further transformations.
 
 Next, display the ACF plot and comment on the pattern:
 
@@ -489,7 +489,7 @@ Explain the code used to create the model:
   result.summary()
   ```
 
-  * Other than the order numbers, the code is boiler plate.
+  * Other than the order numbers, the code is boilerplate.
 
   * In `order=(2, 2)`, the first number denotes the AR order, and the second number denotes the MA order.
 
@@ -527,7 +527,7 @@ Open the notebook and describe the dataset:
 
   * It is a time series of the number of airline passengers from 1949 through 1960.
 
-  * There is a pronounced upward trend. The time series is therefore non-stationary.
+  * There is a pronounced upward trend. The time series is, therefore, non-stationary.
 
 Ask the class whether **ARMA** would be a suitable model for this dataset:
 
@@ -535,9 +535,9 @@ Ask the class whether **ARMA** would be a suitable model for this dataset:
 
 Explain that, unlike an ARMA model, an **ARIMA** model stationarizes a non-stationary time series.
 
-  * Specifically, it stationarizes a time series by differencing it. In pandas, we have differenced with the `diff()` method.
+  * Specifically, it stationarizes a time series by differencing it. In Pandas, we have differentiated with the `diff()` method.
 
-  * The stationarizing step is the key difference between ARMA and ARIMA. It is possible to stationarize a time series manually, as we have done before. But ARIMA automates the process.
+  * The stationarizing step is the key difference between ARMA and ARIMA. It is possible to stationarize a time series manually, as we have done before. However, ARIMA automates the process.
 
 Describe the ACF and PACF plots:
 
@@ -557,7 +557,7 @@ Explain the significance of ACF and PACF plots in estimating the order of the AR
 
   * Similarly, the ACF can be used to estimate the MA order. In this example, the first two lags also appear to be significant in the ACF.
 
-  * We might like to capture the 12th lag to, but that will require a model that's a little more advanced ("Seasonal" ARIMA) than what we'll cover in this activity.
+  * We might like to capture the 12th lag too, but that will require a model that's a little more advanced ("Seasonal" ARIMA) than what we will cover in this activity.
 
 Walk through the code used to create an ARIMA model:
 
@@ -576,7 +576,7 @@ Walk through the code used to create an ARIMA model:
 
   * The number in the middle refers to the order of differencing. In other words, it refers to the number of times a time series has been differenced. In this example, if `df['Passengers']` were differenced once, then differenced again to achieve stationarity, this number would be 2.
 
-  * An ARIMA model in which the differencing order is zero is therefore an ARMA model. For example, an ARIMA model with an order of (1, 0, 1) is an ARMA model of an order of (1, 1).
+  * An ARIMA model in which the differencing order is zero is, therefore, an ARMA model. For example, an ARIMA model with an order of (1, 0, 1) is an ARMA model of an order of (1, 1).
 
 Use the slides to explain the interpretation of AIC and BIC:
 
@@ -584,9 +584,9 @@ Use the slides to explain the interpretation of AIC and BIC:
 
   * Both of these metrics estimate the quality of a model.
 
-  * They weigh goodness of fit against the number of parameters. In other words, AIC and BIC favor the simplest model that best fit the data.
+  * They weigh goodness of fit against the number of parameters. In other words, AIC and BIC favor the simplest model that best fits the data.
 
-  * This means that they penalize models with a large number of parameters. A model with a large number of parameters may describe that particular dataset well, but may lose its predictive power when used on new data.
+  * This means that they penalize models with a large number of parameters. A model with a large number of parameters may describe that particular dataset well but may lose its predictive power when used on new data.
 
   * In this example, we have two models with orders of (2,1,2) and (2,1,4). Because each additional lag adds a variable to the model, AIC and BIC penalize the model with a higher order.
 
@@ -608,11 +608,11 @@ Take a moment to summarize the order of an ARIMA model:
 
   * The ACF and PACF plots can be used in conjunction with AIC and BIC scores to identify the model order.
 
-  * AIC and BIC favor models with the best fit, and penalize higher order models for their complexity.
+  * AIC and BIC favor models with the best fit and penalize higher order models for their complexity.
 
   * Lower AIC and BIC scores are usually better.
 
-  * These quantities can also be used to estimate the order of an ARMA model. An ARMA model, however, does not have a differencing order, because it assumes that the time series is stationary and therefore doesn't need to be differenced.
+  * These quantities can also be used to estimate the order of an ARMA model. An ARMA model, however, does not have a differencing order because it assumes that the time series is stationary and therefore does not need to be differenced.
 
 Send the following link to students for more information on the order of an ARIMA model:
 
@@ -674,7 +674,7 @@ Before introducing GARCH to the class, introduce the topic of volatility:
 
 * In portfolio management, for example, diversifying the types of assets can help reduce risk in a volatile market, and the forecasting of volatility would help make adjustments to reduce risk.
 
-* Another example is the pricing of derivatives. The price of derivatives, such as options, are influenced much more by volatility than the price of the underlying asset. Characterizing and forecasting volatility is therefore a key skill in derivative trading.
+* Another example is the pricing of derivatives. The price of derivatives, such as options, are influenced much more by volatility than the price of the underlying asset. Characterizing and forecasting volatility is, therefore, a key skill in derivative trading.
 
 * Understanding volatility is also important to banks as loan failures can occur in a cluster. Assets must exceed liabilities, so regulators and banks alike create forecast models for asset volatility.
 
@@ -727,7 +727,7 @@ Open the notebook and walk through a code example of using GARCH to predict vola
 
 * The closing price has been stationarized by transforming it into returns.
 
-* Volatility clusters are visible here in plot of S&P returns, notably between 2008 and 2010 or so.
+* Volatility clusters are visible here in the plot of S&P returns, notably between 2008 and 2010 or so.
 
 Explain the data preparation steps:
 
@@ -753,11 +753,11 @@ Explain that the steps of creating a GARCH model are very similar to that of an 
 
 * The arguments `mean="Zero", vol="GARCH"` specify the GARCH model.
 
-* The arguments `p=1, q=1`, as in ARMA models, specify the auto-regressive and moving average orders. These can be identified by the same process of plotting the ACF and the PACF, and identifying AIC and BIC values.
+* The arguments `p=1, q=1`, as in ARMA models, specify the auto-regressive and moving average orders. These can be identified by the same process of plotting the ACF and the PACF and identifying AIC and BIC values.
 
   * To reiterate, `p` is the AR component of the model
   * and `q` is the MA component of the model
-  * the concept is similar to ARMA, except here we're forecasting volatility.
+  * the concept is similar to ARMA, except here we are forecasting volatility.
 
 * The model is created, fits the data, and the summary is printed.
 
@@ -786,11 +786,11 @@ Show the plot of the volatility forecast:
 
   ![Images/garch04.png](Images/garch04.png)
 
-  * This chart shows our estimate of volatility of the S&P 500 for the next three days.
+  * This chart shows our estimate of the volatility of the S&P 500 for the next three days.
 
   * The chart shows that volatility (i.e., risk) in the market is expected to rise.
 
-  * Therefore, with GARCH, we've developed a cool way to forecast risk in the market.
+  * Therefore, with GARCH, we have developed a cool way to forecast risk in the market.
 
 - - -
 
@@ -829,7 +829,7 @@ df.head()
 
 * The pct_change() in the above code makes the data stationary.
 
-* The DataFrame is resampled. Since we start with hourly exchange rates, we'll convert them from hourly to daily using the above block of code.
+* The DataFrame is resampled. Since we start with hourly exchange rates, we will convert them from hourly to daily using the above block of code.
 
 * Specifically, this block starts by calculating the percentage hourly return.
 
@@ -876,7 +876,7 @@ Finally, walk through the steps of plotting the volatility forecast:
 
 * With `np.sqrt(forecasts.variance * 252)`, the standard deviation of forecasts is scaled by 252 to account for the number of trading days in a year (standard deviation is the square root of variance).
 
-* All NaNs are dropped, and the results are transposed with `T`. The transpose  switches the rows and columns to make it easier to plot.
+* All NaNs are dropped, and the results are transposed with `T`. The transpose switches the rows and columns to make it easier to plot.
 
 * The volatility is plotted with the `pd.plot()` method:
 
@@ -896,7 +896,7 @@ Take a few moments to recap and reflect before ending class:
 
 * We learned that understanding volatility is important in financial forecasting, and we learned a useful model to predict volatility (GARCH).
 
-* These time-series models that you learned are used in practice everywhere, from forecasting next year's revenue to quantitative trading. As a result, you've learned a versatile tool for predicting future events.
+* These time-series models that you learned are used in practice everywhere, from forecasting next year's revenue to quantitative trading. As a result, you have learned a versatile tool for predicting future events.
 
 ### End Class
 
