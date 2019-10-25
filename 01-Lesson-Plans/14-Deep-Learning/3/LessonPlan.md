@@ -10,7 +10,13 @@ Today's class will introduce students to ...
 
 By the end of the unit, students will be able to:
 
-*
+* Identify the differences between ANN, RNN, and LSTM RNN models.
+
+* Prepare data to fit LSTM RNN models.
+
+* Create LSTM RNN models for predicting prices.
+
+* Evaluate LSTM RNN models to discriminate against the best architecture for a given problem.
 
 ### Instructor Notes
 
@@ -368,3 +374,87 @@ Regarding the `batch_size` parameter, highlight the following point to the class
 Answer any questions before moving on.
 
 ---
+
+### 5. Everyone Do: Assessing Model Performance (15 min)
+
+In this section, students will evaluate the model using the test data.
+
+**Files:**
+
+* [lstm_predictor_part_3.ipynb](Activities/03-Evr_RNN_Part_3/Unsolved/lstm_predictor_part_3.ipynb)
+
+* [stock_data.csv](Activities/03-Evr_RNN_Part_3/Resources/stock_data.csv)
+
+Open the unsolved version of the Jupyter notebook and highlight the following:
+
+* After training the model, it's time to evaluate our model to assess its performance.
+
+* We will use the evaluate method using the testing data.
+
+  ```python
+  # Evaluate the model
+  model.evaluate(X_test, y_test)
+  ```
+
+* To better understand the model evaluation results, we will make some predictions and plot the predicted vs. the real prices.
+
+  ```python
+  # Make some predictions
+  predicted = model.predict(X_test)
+  ```
+
+* Since we scaled the original values using the `MinMaxScaler`, we need to recover the original prices to better understand of the predictions.
+
+* We will use the `inverse_transform()` method of the scaler to decode the scaled values to their original scale.
+
+  ```python
+  # Recover the original prices instead of the scaled version
+  predicted_prices = scaler.inverse_transform(predicted)
+  real_prices = scaler.inverse_transform(y_test.reshape(-1, 1))
+  ```
+
+* To plot the predicted vs. the real values, we will create a DataFrame.
+
+  ![model-eval-1](Images/model-eval-1.png)
+
+* Finally, we plot the predicted vs. real prices using the `plot()` method of the DataFrame.
+
+  ![model-eval-2](Images/model-eval-2.png)
+
+After creating the plot, ask students the following question and conduct a brief discussion about the results:
+
+* Will you trust in this model to predict prices?
+
+  * **Sample Answer:** It's difficult to trust in this model as is, the error between the real and predicted values looks big.
+
+  * **Sample Answer:** I will give a chance to this model, but before start using it to make a decision, I would train it with new data.
+
+Finally, comment to students that this model could be enhanced as follows:
+
+* We can test different window sizes, for example, from `5` to `10`.
+
+* We can test different dropout parameters, for example, between `0.2` and `0.5`.
+
+* We may want to add an additional LSTM layer.
+
+* When training the model, we can test different batch sizes and use more epochs.
+
+Comment to student that they will have a chance to test these different approaches in the homework assignment.
+
+Answer any questions before moving on.
+
+---
+
+### 6. BREAK (40 min)
+
+---
+
+### 7. Instructor Do: Machine Learning Review (2:15 min)
+
+The remainder of Today's class is intended to review the topics covered in the machine learning units and clarify any doubt that may arise.
+
+### End Class
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
