@@ -150,8 +150,6 @@ In this activity, students will learn how to prepare the training and testing da
 
 * [stock_data.csv](Activities/01-Evr_RNN_Part_1/Resources/stock_data.csv)
 
-* [vnq_hist_prices.csv](Activities/01-Evr_RNN_Part_1/Resources/vnq_hist_prices.csv)
-
 Explain to students that we are going to focus the class on learning how to create the LSTM model using Keras since these kinds of models are widely used in industry.
 
 Comment to students that Today's class is going to be an interactive guided session where you will go through the process of building an LSTM model from data preparation to model design and creation using Keras.
@@ -262,3 +260,111 @@ Explain to students that the LSTM API from Keras needs to receive the features d
 X_train = X_train.reshape((X_train.shape[0], X_train.shape[1], 1))
 X_test = X_test.reshape((X_test.shape[0], X_test.shape[1], 1))
 ```
+
+Answer any questions before moving on.
+
+---
+
+### 4. Everyone Do: Build and Train the LSTM RNN Model (15 min)
+
+In this activity, students will learn how to build and train an LSTM RNN model using Keras.
+
+This is an everyone do activity intended to be followed and commented with students, as you live code the demo.
+
+**Files:**
+
+* [lstm_predictor_part_2.ipynb](Activities/02-Evr_RNN_Part_2/Unsolved/lstm_predictor_part_2.ipynb)
+
+* [stock_data.csv](Activities/02-Evr_RNN_Part_2/Resources/stock_data.csv)
+
+Explain to students that now we are going to build and train an LSTM RNN model using Keras, also, some model design particularities will be covered.
+
+Open the unsolved version of the Jupyter notebook, scroll down to the _Build and Train the LSTM RNN_ section, and slack out the file to students, as you live code the demo by and highlight the following.
+
+* To build an LSTM RNN model in Keras, we will use the `Sequential` model as we did before; however, we will have two new types of layers:
+
+  * `LSTM`: It's used to add an LSTM layer to the model.
+
+  * `Dropout`: Dropout is a regularization technique for reducing overfitting in neural networks.
+
+Open the lesson slides, and move to the _Introduction to Dropout_ section to give a brief explanation about this concept to the class.
+
+* For simplicity, the concept of dropout will be explained using a simple neural network design with just one layer.
+
+* Dropout consists of removing units from the hidden layers, by randomly select a fraction of the hidden nodes and set their output to zero, regardless of the input.
+
+* A different subset of units is randomly selected every time we feed a training example.
+
+* In Keras, dropout is implemented by adding a layer after each `LSTM` layer and defining the fraction of nodes to hide as parameter.
+
+Switch back to the Jupyter notebook to build the LSTM RNN model, explain the code, and highlight the following.
+
+```python
+# Define the LSTM RNN model.
+model = Sequential()
+
+number_units = 5
+dropout_fraction = 0.2
+
+# Layer 1
+model.add(LSTM(
+    units=number_units,
+    return_sequences=True,
+    input_shape=(X_train.shape[1], 1))
+    )
+model.add(Dropout(dropout_fraction))
+# Layer 2
+model.add(LSTM(units=number_units, return_sequences=True))
+model.add(Dropout(dropout_fraction))
+# Layer 3
+model.add(LSTM(units=number_units))
+model.add(Dropout(dropout_fraction))
+# Output layer
+model.add(Dense(1))
+```
+
+* To create an LSTM RNN model, we will add `LSTM` layers.
+
+* The `return_sequences` parameter needs to set to `True` every time we add a new `LSTM` layer, excluding the final layer.
+
+* The `input_shape` is the number of time steps and the number of indicators
+
+* After each `LSTM` layer, we add a `Dropout` layer to prevent overfitting.
+
+* The parameter passed to the `Dropout` layer is the fraction of nodes that will be drop on each epoch.
+
+* For this demo, we will use a dropout value of `0.2`. It means that on each epoch we will randomly drop `20%` of the units.
+
+* The number of units in each `LSTM` layers, is equal to the size of the time window, in this demo, we are taking five previous `T-Bons` closing price to predict the next closing price.
+
+Comment to students that once the model is defined, we compile the model, using the `adam` optimizer; as loss function, we will use `mean_square_error`, since the value we want to predict is continuous.
+
+```python
+# Compile the model
+model.compile(optimizer='adam', loss='mean_squared_error')
+```
+
+* Once the model is defined, we train (fit) the model using 10 epochs.
+
+  ```python
+  # Train the model
+  model.fit(X_train, y_train, epochs=10, shuffle=False, batch_size=1, verbose=1)
+  ```
+
+* Since we are working with time-series data, it's important to set `shuffle=False` since it's necessary to keep the sequential order of the data.
+
+* We can experiment with the batch_size parameter; however, smaller batch size is recommended; in this demo, we will use a batch_size=1.
+
+Regarding the `batch_size` parameter, highlight the following point to the class:
+
+* An epoch is one forward pass and one backward pass of all the training examples across all the nodes in the neural network.
+
+* The batch size is the number of training examples in one forward/backward pass. The higher the batch size, the more memory space you'll need.
+
+* The number of iterations is the number of passes, each pass consists of one forward and one backward pass, we do not count the forward pass and backward pass as two different passes.
+
+* For example, if you have `1000` training examples, and your batch size is `500`, then it will take `2` iterations to complete `1` epoch.
+
+Answer any questions before moving on.
+
+---
