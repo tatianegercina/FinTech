@@ -20,6 +20,8 @@ Open the solution file and review the following:
 
 * The plot of the Short Position Dual Moving Average Crossover trading strategy showed that it was possible to *make* money from shorting VNQ (a real estate ETF) stock during the financial recession in 2008. Now, through backtesting the particular strategy, we will be able to see *how much* money can be made.
 
+  ![short-dual-ma-crossover-code2](Images/short-dual-ma-crossover-code2.png)
+
   ![short-dual-ma-crossover-plot2](Images/short-dual-ma-crossover-plot2.png)
 
 * Because short positions involve selling shares and then buying them back later, the `share_size` should be a negative number rather than a positive number.
@@ -81,6 +83,6 @@ Open the solution file and review the following:
 
 * Finally, plotting the Short Position Dual Moving Average crossover trading strategy against its backtesting results show that the algorithm would have *made* money by shorting VNQ stock during the 2008 financial crisis and by approximately $6,500 on an initial capital allocation of $100,000. Specifically, the ending portfolio value for the algorithm was $106,587.2295 and results in cumulative returns of 6.5872%.
 
-  ![short-dual-ma-crossover-plot3](Images/short-dual-ma-crossover-plot3.png)
+  ![short-backtest-results-code](Images/short-backtest-results-code.png)
 
-  ![short-backtest-results](Images/short-backtest-results.png)
+  ![short-backtest-results-plot](Images/short-backtest-results-plot.png)
