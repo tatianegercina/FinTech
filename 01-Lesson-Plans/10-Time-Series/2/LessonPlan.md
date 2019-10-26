@@ -748,6 +748,7 @@ Explain that the steps of creating a GARCH model are very similar to that of an 
   res = model.fit(disp="off")
   res.summary()
   ```
+* Open the terminal, and execute the following command to install the arch module: `pip install arch`
 
 * From the `arch` module, `arch_model` is imported.
 
