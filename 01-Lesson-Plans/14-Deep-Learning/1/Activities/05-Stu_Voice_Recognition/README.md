@@ -1,6 +1,6 @@
 # Voice Gender Recognition
 
-Banks are always looking to innovate in authentication methods to protect their clients' privacy and ensure data security. [Voice signature](https://whatis.techtarget.com/definition/voice-signature) is a method used in phone baking to authenticate clients by their voice and approve transactions; part of the voice authentication process is to identify the gender of the client as a first step to prevent fraud.
+Banks are always looking to innovate in authentication methods to protect their clients' privacy and ensure data security. [Voice signature](https://whatis.techtarget.com/definition/voice-signature) is a method used in phone baking to authenticate clients by their voice and approve transactions; part of the voice-authentication process is to identify the gender of the client as a first step to prevent fraud.
 
 In this activity, you will create a neural network to predict the gender of a voice using the acoustic properties of the voice and speech.
 
@@ -8,9 +8,9 @@ In this activity, you will create a neural network to predict the gender of a vo
 
 The dataset that is going to be used in this activity was created to identify a voice as male or female based upon acoustic properties of the voice and speech.
 
-The dataset consists of `3,168` recorded voice samples, collected from male and female speakers. The voice samples were pre-processed by acoustic analysis in R using the `seewave` and `tuneR` packages, with an analyzed frequency range of `0hz` to `280hz` (human vocal range).
+The dataset consists of `3,168` recorded voice samples, collected from male and female speakers. The voice samples were preprocessed by acoustic analysis in R using the `seewave` and `tuneR` packages, with an analyzed frequency range of `0hz` to `280hz` (the human vocal range).
 
-The following acoustic properties of each voice are measured and included within the CSV:
+The following acoustic properties of each voice are measured and included within the spreadsheet:
 
 * meanfreq: mean frequency (in kHz)
 * sd: standard deviation of frequency
@@ -59,7 +59,7 @@ Create a neural network model as follows:
 
 2. Define the output layer with two nodes and `softmax` as the activation function.
 
-    * Note that despite the values of the `label` column could be encoded as a binary output (e.g. `0` - male and `1` - female), you encoded this column using one-hot encoding, that's why you've to define two nodes in the output layer, since you will have two categories as possible outputs of the neural network model.
+    * Note that although the values of the `label` column could be encoded as a binary output (e.g., `0`— male and `1` — female), you encoded this column using one-hot encoding. That's why you've to define two nodes in the output layer, since you will have two categories as possible outputs of the neural network model.
 
 3. Compile the model using the `adam` optimizer and the `categorical_crossentropy` loss function.
 
@@ -73,4 +73,6 @@ Create a neural network model as follows:
 
 ### Final Conclusions
 
-Write down your conclusions about the model you created, can it be used to identify clients' gender as part of the voice signature authentication process in phone banking?
+Write down your conclusions about the model you created. Can it be used to identify clients' gender as part of the voice signature authentication process in phone banking?
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
