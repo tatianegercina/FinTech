@@ -26,7 +26,7 @@ By the end of the unit, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1NoW5ZXlmW-lz4tbG6kU07zuR0cTryVSZIsLRAskyB1E/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -152,7 +152,7 @@ In part 1 of this activity, students will learn how to prepare the training and 
 
 * [stock_data.csv](Activities/01-Evr_RNN_Part_1/Resources/stock_data.csv)
 
-Explain to the class that the entire class is going to work together to build a complete LSTM RNN model using Keras. Ask the students to follow along if they want, or to just observe and ask questions. Be sure to take plenty of time to live code this activity and discuss the major talking points during the process.
+Explain to the class that the entire class is going to work together to build a complete LSTM RNN model using Keras. Ask the students to follow along if they want or observe and ask questions. Be sure to take plenty of time to live code this activity and discuss the major talking points during the process.
 
 Explain to students that this activity will be broken into 3 sections:
 
@@ -162,7 +162,7 @@ Explain to students that this activity will be broken into 3 sections:
 
 Slack out the unsolved version of the Jupyter notebook. Live code the data preparation section with the class, and highlight the following:
 
-* This activity will use a history of closing prices to make prediction about the next closing price.
+* This activity will use a history of closing prices to make a prediction about the next closing price.
 
 * The first step to solving this problem is to prepare the data for the model. This process typically requires the following steps:
 
@@ -229,7 +229,7 @@ Explain to students, that in the forthcoming activities, we will predict closing
 
 ![Data Prep 2](Images/data-prep-2.png)
 
-* To create the training and testing dataset, the data is manually split using array slicing to avoid randomizing data when creating the samples. This is because the sequency of data in time is important when training the model, so random sampling and shuffling should be avoided.
+* To create the training and testing dataset, the data is manually split using array slicing to avoid randomizing data when creating the samples. This is because the sequencing of data in time is important when training the model, so random sampling and shuffling should be avoided.
 
 ```python
 # Use 70% of the data for training and the remainder for testing
@@ -337,7 +337,7 @@ model.add(Dense(1))
 
 * The parameter passed to the `Dropout` layer is the fraction of nodes that will be drop on each epoch.
 
-* For this demo, we will use a dropout value of `0.2`. It means that on each epoch we will randomly drop `20%` of the units.
+* For this demo, we will use a dropout value of `0.2`. It means that on each epoch, we will randomly drop `20%` of the units.
 
 * The number of units in each `LSTM` layers, is equal to the size of the time window, in this demo, we are taking five previous `T-Bonds` closing prices to predict the next closing price.
 
@@ -357,7 +357,7 @@ model.compile(optimizer='adam', loss='mean_squared_error')
 
 * Since we are working with time-series data, it's important to set `shuffle=False` since it's necessary to keep the sequential order of the data.
 
-* We can experiment with the batch_size parameter; however, smaller batch size is recommended; in this demo, we will use a batch_size=1.
+* We can experiment with the batch_size parameter; however, the smaller batch size is recommended; in this demo, we will use a batch_size=1.
 
 Take a moment to pause and allow students to catch up. Slack out the solution to Part 2 of the activity and answer any remaining questions before moving on.
 
@@ -427,7 +427,7 @@ Finally, explain to students that this model could be enhanced as follows:
 
 * When training the model, we can test different batch sizes and adjust the training epochs.
 
-Explain to student that they will have a chance to test these different approaches in the homework assignment.
+Explain to students that they will have a chance to test these different approaches in the homework assignment.
 
 Answer any questions before moving on.
 
