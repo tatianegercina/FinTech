@@ -1,8 +1,8 @@
-# Students Do: Preventing credit card defaults with neural networks
+# Student Do: Preventing credit card defaults with neural networks
 
 In this activity, you will train a neural network model to predict whether a credit card holder will default in the next month.
 
-The dataset provided contains `30,000` anonymous records of credit default status with `23` features columns and one binary target column entitled _DEFAULT_, where `1` represents a defaulted credit card.
+The dataset provided contains `30,000` anonymous records of credit default status with `23` features columns and one binary target column entitled DEFAULT, where `1` represents a defaulted credit card.
 
 The `23` features include demographic info (age, gender, marital status, etc.), credit limit, past payment details, and other relevant information.
 
@@ -34,8 +34,10 @@ You are tasked to create a neural network model to predict if a credit card hold
 
 For this challenge section, you have to figure out how the model you created could be modified to improve the accuracy.
 
-1. Review the Keras documentation about activation functions, and decide if there is anyone that could be used instead of `sigmoid`.
+1. Review the Keras documentation about activation functions, and decide if there is anything that could be used instead of `sigmoid`.
 
 2. Change any other parameter that you believe could improve the model's accuracy.
 
 3. Evaluate the model's accuracy and loss and write down your conclusions.
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's class introduces students to neural networks, a new member of the machine learning algorithms that can be used for classification and regression problems but are perhaps uniquely able to learn very complex, non-linear models. Conceptually, neural networks were inspired by neurons in the human brain, and have a similar property of scaling to meet the complex environments that they operate in.
+Today's class introduces students to a neural networks, a new member of the machine learning algorithms that can be used for classification and regression problems but are perhaps uniquely able to learn very complex, nonlinear models. Conceptually, neural networks were inspired by neurons in the human brain, and have a similar property of scaling to meet the complex environments that they operate in.
 
 Neural networks are very flexible in their applications, but they are not necessarily meant to be "plug-and-play." From preprocessing input data to constructing a neural network architecture, students will learn the process to construct and use neural networks successfully.
 
@@ -16,7 +16,7 @@ By the end of class, students will be able to:
 
 * Understand how the choice of inputs and hidden layers apply to problems with regression and classification.
 
-* Experiment with architecture in Tensor Flow playground.
+* Experiment with architecture in TensorFlow playground.
 
 * Preprocessing data for neural network models.
 
@@ -38,7 +38,7 @@ By the end of class, students will be able to:
 
 * In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/), be sure to practice the demo before class. If you are not familiar with this project, we encourage you to watch this video.
 
-* There is a closing activity that proposes a group activity to the class, you may bring sticky notes to Today's class.
+* There is a closing activity that proposes a group activity to the class, you may bring sticky notes to today's class.
 
 ### Class Slides and Time Tracker
 
@@ -46,7 +46,7 @@ The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](h
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
-Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy."
 
 The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
@@ -54,7 +54,7 @@ The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Open the lesson slides and welcome students to the first day of deep learning! Indicate that Today's class will begin with an introduction to the basic unit of neural networks before moving on to constructing simple neural nets.
+Open the lesson slides and welcome students to the first day of deep learning! Indicate that today's class will begin with an introduction to the basic unit of neural networks before moving on to constructing simple neural nets.
 
 As an ice-breaking activity, open the class by asking the following questions to students:
 
@@ -72,11 +72,11 @@ As an ice-breaking activity, open the class by asking the following questions to
 
   * **Sample Answer:** Image processing in cancer detection.
 
-  * **Sample Answer:** Banning inadequate content on social networks.
+  * **Sample Answer:** Banning inappropriate content on social networks.
 
   * **Sample Answer:** Automated trading based on artificial intelligence.
 
-Ask for two or three volunteers to share their insights, and explain to students that Today they will answer these questions.
+Ask for two or three volunteers to share their insights, and explain to students that today they will answer these questions.
 
 Ask if there are any questions before moving on.
 
@@ -86,7 +86,7 @@ Ask if there are any questions before moving on.
 
 In this activity, students will be introduced to neural networks and some of their applications.
 
-Open the lesson slides and move to the _Neural Networks are Cool!_ section.
+Open the lesson slides and move to the Neural Networks are Cool! section.
 
 Start the presentation by showing students the following image from the [Rorschach Inkblot Test](https://en.wikipedia.org/wiki/Rorschach_test), and ask them the next question:
 
@@ -96,35 +96,35 @@ Start the presentation by showing students the following image from the [Rorscha
 
 Allow students to play around for a few seconds sharing what they see, continue the presentation by telling students that there is no precise answer to this question.
 
-Continue to the _How our brain works_ slide, and explain to students that any similitude they could find from the image with a real object, is possible because our brain uses thousands of neurons connections to find a match between the visual input and a mental representation of an object.
+Continue to the "How our brain works" slide, and explain to students that any similarity they could find between the image and a real object is possible because our brain uses thousands of neurons connections to find a match between the visual input and a mental representation of an object.
 
-Follow to the slide entitled _Our brain as inspiration for artificial neural nets_, and explain to students that this power of our brain to process information and make predictions or interpretations is the fact that inspires neurophysiologists and mathematicians to start the development of artificial neural networks (ANN).
+Follow to the slide titled "Our brain as inspiration for artificial neural nets," and explain to students that this power of our brain to process information and make predictions or interpretations is the fact that inspires neurophysiologists and mathematicians to start the development of artificial neural networks (ANN).
 
 * In the same way biological neurons receive input signals through the dendrites, an ANN is able to receive input variables and process those inputs using an activation function to compute an output, akin the neuron nucleus in the brain.
 
 Tell students that you will go over the details of how a neuron works in the next activity.
 
-Continue to _The History of Neural Networks_ slide and highlight the following:
+Continue to "The History of Neural Networks" slide and highlight the following:
 
-* The concept of ANNs was presented for the very first time in 1943 when Warren McCulloch and Walter Pitts opened the subject by creating a computational model for neural networks that they implemented using electrical circuits.
+* The concept of ANNs was presented for the first time in 1943 when Warren McCulloch and Walter Pitts created a computational model for neural networks that they implemented using electrical circuits.
 
-* From that initial idea of a single neuron, the concept evolved the last decades to more complex models that propose creating connections between neurons to the point of creating what we know Today as neural networks.
+* From that initial idea of a single neuron, the concept evolved the last decades to more complex models that propose creating connections between neurons to the point of creating what we know today as neural networks.
 
-* Nowadays, neural networks are discussed in almost every field, from preventing cancer or credit card frauds to creating artistic expressions using artificial intelligence or having self-driving cars.
+* Nowadays, neural networks are discussed in almost every field, from preventing cancer or credit card fraud to creating artistic expressions using artificial intelligence or having self-driving cars.
 
-Follow to the slide entitled _The Future is here: Awesome applications of neural nets_ and highlight the following:
+Follow to the slide "The Future is here: Awesome applications of neural nets" and highlight the following:
 
 * Neural networks are here to stay, and applications become more common every day.
 
 * Companies like Google or Tesla are using neural networks to develop self-driving cars.
 
-* Using the power of neural networks, Today you can talk in any language thanks to the automated translation of instant messaging applications like Skype.
+* Using the power of neural networks, today you can talk in any language thanks to the automated translation of instant messaging applications like Skype.
 
 * Memories from the past that were captured in black and white can take a new perspective through automatic image colorization.
 
-* Neural networks are also used to create a better world, not only for humans but also for wildlife thanks to projects like the one led by the U.S. National Oceanic and Atmospheric Administration where they are saving whales by tracking the north Atlantic right whales population using neural networks for image recognition.
+* Neural networks are also used to create a better world, not only for humans but also for wildlife thanks to projects like one led by the U.S. National Oceanic and Atmospheric Administration to save whales by tracking the North Atlantic right whales population using neural networks for image recognition.
 
-As you continue to the slide entitled _Neural Networks Applications in Finance_, explain to students that financial sector is leading in the use of neural networks, highlight the following applications and slack out the links of each one for further reference:
+As you continue to the slide called "Neural Networks Applications in Finance," explain to students that financial sector is leading in the use of neural networks, highlight the following applications and slack out the links of each one for further reference:
 
 * [Credit card fraud detection](https://www.semanticscholar.org/paper/Credit-card-fraud-detection-with-a-neural-network-Ghosh-Reilly/ba70a74262adec9dcfa47b5710752d2537a07af4)
 
@@ -138,11 +138,11 @@ As you continue to the slide entitled _Neural Networks Applications in Finance_,
 
 * [Preventing Money Laundering](https://doi.org/10.1109/ICNSC.2019.8743234)
 
-Explain to students that there are several deep mathematical concepts behind neural networks that are beyond the scope of Today's class.
+Explain to students that there are several deep mathematical concepts behind neural networks that are beyond the scope of today's class.
 
 Explain to students that this week, we will give an intuitive introduction to the components that make up a neural network and how they work together to learn.
 
-Continue to the _Python Libraries for Neural Networks_ slide, explain to students that there are several Python libraries to implement neural networks, the most used in industry and the research community are the following:
+Continue to the "Python Libraries for Neural Networks" slide, and explain to students that there are several Python libraries to implement neural networks; those used most in industry and the research community are the following:
 
 * [TensorFlow (from Google)](https://www.tensorflow.org/)
 
@@ -170,23 +170,23 @@ Once you open the Teachable Machine website, follow the next steps to conduct th
 
 * Explain to students that now you are going to train the neural network model.
 
-* Raise your left hand and press the _TRAIN GREEN_ button for few seconds, explain to students that your current image is the input data for the neural network, it's learning that these visual patterns correspond to a cute kitten.
+* Raise your left hand and press the _TRAIN GREEN_ button for few seconds, and explain to students that your current image is the input data for the neural network. It's learning that these visual patterns correspond to a cute kitten.
 
   ![Teachable Machine - Step 3](Images/intro_nns_3.gif)
 
-* Continue to train the purple class by posing serious to the camera, press the _TRAIN PURPLE_ button for few seconds, and explain to students that now the neural network is learning that your poker face corresponds to a furry dog.
+* Continue to train the purple class by posing seriously to the camera. Press the _TRAIN PURPLE_ button for few seconds, and explain to students that now the neural network is learning that your poker face corresponds to a furry dog.
 
   ![Teachable Machine - Step 4](Images/intro_nns_4.gif)
 
-* Finally, train the orange class by making a funny face and press the _TRAIN ORANGE_ button for few seconds, explain to students that you are telling the neural network that this crazy pose corresponds to a little bunny.
+* Finally, train the orange class by making a funny face and pressing the _TRAIN ORANGE_ button for few seconds. Explain to students that you are telling the neural network that this funny pose corresponds to a little bunny.
 
   ![Teachable Machine - Step 5](Images/intro_nns_5.gif)
 
 Now that you train the model, play around by making several poses and faces to the camera:
 
-* Rise your right hand and explain to students that despite the neural network were trained to recognize your left hand raised, these kinds of models are continuously learning and are capable of recognizing and learning new patterns.
+* Rise your right hand and explain to students that despite that the neural network were trained to recognize your left hand raised, these kinds of models are continuously learning and are capable of recognizing and learning new patterns.
 
-* Make a tricky test by partially raising your left hand, explain to students that the neural network gets confused but is still learning as can be seen on the confidence bars; finally, the model is able to make a decision about your partial hand raised.
+* Make a tricky test by partially raising your left hand; explain to students that the neural network gets confused but is still learning as can be seen on the confidence bars; finally, the model is able to make a decision about your partially raised hand.
 
 ![Teachable Machine - Step 6](Images/intro_nns_6.gif)
 
@@ -286,7 +286,7 @@ Click on the [pre-configured link](https://playground.tensorflow.org/#activation
 
   ![Neuron's features](Images/neuron_features.png)
 
-* **Hidden Layers** are layers of neurons that take the output of the layer before them as inputs, allowing the network to identify "higher-order" patterns and correlations amongst input features. For now, we will use only one hidden layer with a single neuron, which results in a very simple architecture.
+* **Hidden Layers** are layers of neurons that take the output of the layer before them as inputs, allowing the network to identify "higher-order" patterns and correlations among input features. For now, we'll use only one hidden layer with a single neuron, which results in a very simple architecture.
 
   ![tfp_hidden_layer.png](Images/tfp_hidden_layer.png)
 
@@ -304,9 +304,9 @@ Click on the _Play_ button to start training the network, and call attention to 
 
 Recall to students that this is not new, a variety of `sklearn` classifiers already covered in class can draw this boundary just fine. Logistic regression is one example.
 
-* This example shows that neural networks can easily solve linear problems, but does not demonstrate their efficacy at non-linear modeling problems.
+* This example shows that neural networks can easily solve linear problems, but doesn't demonstrate their efficacy at nonlinear modeling problems.
 
-* The real power or neural networks can be seen when we add more than one neuron, especially dealing with non-linear data. This is going to be explored later in Today's class.
+* The real power or neural networks can be seen when we add more than one neuron, especially dealing with nonlinear data. This is going to be explored later in today's class.
 
 Answer any questions before moving on.
 
@@ -338,9 +338,9 @@ Open the lesson slides, go to the _Activating Your First Artificial Neuron_ sect
 
 Ask students if they have already installed TensorFlow, if there are some students who don't, slack out the [installation guide](../Supplemental/deep_learning_installation_guide.md) and have your TAs to assist students in the process while you continue to the demo.
 
-This demo is an _Everyone Do_ activity where students are encouraged to follow your steps as you code, slack out the unsolved version of the Jupyter notebook before continue.
+This demo is an Everyone Do activity where students are encouraged to follow your steps as you code, slack out the unsolved version of the Jupyter Notebook before continue.
 
-Open the unsolved version of the Jupyter notebook, explain to students that you are going to demo how a neural network with a single neuron can be made using Keras, encourage the class to replicate your live coding and highlight the following:
+Open the unsolved version of the Jupyter Notebook, explain to students that you are going to demo how a neural network with a single neuron can be made using Keras, encourage the class to replicate your live coding and highlight the following:
 
 * We are going to use Keras through TensorFlow, so we import the Keras modules as follows:
 
@@ -430,7 +430,7 @@ Explain to students, that as it was mentioned before, the `Dense()` class is use
 
 * The `activation` parameter defines the activation function that is going to be used to process the values of the input features as they are passed to the first hidden layer. In this demo, the [rectified linear unit (relu) function is used](https://keras.io/activations/#relu).
 
-* It's recommendable to add an activation function in this first layer, to add non-linearity to our network, and enable it to learn non-linear relationships while the neural network is trained.
+* It's recommendable to add an activation function in this first layer, to add nonlinearity to our network, and enable it to learn nonlinear relationships while the neural network is trained.
 
 * We finish creating our neural network by adding the output layer.
 
@@ -489,27 +489,27 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
 
   ![Neuron predictions](Images/neuron_predictions.png)
 
-Explain to students that using this simple one-neuron neural network is just an example to show them how a neural network can be constructed using Keras. This model is as effective as logistic regression for linear data, now the question that arises is, how good this model could be for non-linear data?
+Explain to students that using this simple one-neuron neural network is just an example to show them how a neural network can be constructed using Keras. This model is as effective as logistic regression for linear data, now the question that arises is, how good this model could be for nonlinear data?
 
-Continue the demo to demonstrate what happens when we use this model with non-linear data.
+Continue the demo to demonstrate what happens when we use this model with nonlinear data.
 
-* A non-linear dummy dataset is created using the `make_moons()` function from `sklearn`, and a DataFrame is created to plot the data.
+* A nonlinear dummy dataset is created using the `make_moons()` function from `sklearn`, and a DataFrame is created to plot the data.
 
   ```python
-  # Creating dummy non-linear data
+  # Creating dummy nonlinear data
   X_moons, y_moons = make_moons(n_samples=1000, noise=0.08, random_state=78)
 
   # Transforming y_moons to a vertical vector
   y_moons = y_moons.reshape(-1, 1)
 
-  # Creating a DataFrame to plot the non-linear dummy data
+  # Creating a DataFrame to plot the nonlinear dummy data
   df_moons = pd.DataFrame(X_moons, columns=["Feature 1", "Feature 2"])
   df_moons["Target"] = y_moons
   ```
 
   ![Non-linear data plot](Images/non_linear_data_plot.png)
 
-Since students are already familiar with the neural network creation workflow, explain to students that you are going to follow a similar process than before, but now, you are going to use the non-linear data to train the same model.
+Since students are already familiar with the neural network creation workflow, explain to students that you are going to follow a similar process than before, but now, you are going to use the nonlinear data to train the same model.
 
 ```python
 # Create training and testing sets
@@ -527,19 +527,19 @@ X_moon_scaler.fit(X_moon_train)
 X_moon_train_scaled = X_moon_scaler.transform(X_moon_train)
 X_moon_test_scaled = X_moon_scaler.transform(X_moon_test)
 
-# Training the model with the non-linear data
+# Training the model with the nonlinear data
 model_moon = neuron.fit(X_moon_train_scaled, y_moon_train, epochs=100, shuffle=True)
 ```
 
-* After training the model with the non-linear data, it can be seen that the performance is worse than in the previous example, especially the accuracy is lower.
+* After training the model with the nonlinear data, it can be seen that the performance is worse than in the previous example, especially the accuracy is lower.
 
   ![Non-linear data plots](Images/neuron_plot_non_linear.png)
 
-* The model is evaluated with ten new dummy samples, it can be corroborated that results aren't as good as the ones obtained with linear data, this is because using only one-single neuron is not unveiling the power of neural networks to find non-linear patterns.
+* The model is evaluated with 10 new dummy samples, it can be corroborated that results aren't as good as the ones obtained with linear data, this is because using only one-single neuron is not unveiling the power of neural networks to find nonlinear patterns.
 
   ![Non-linear data evaluation](Images/non_linear_loss_accuracy.png)
 
-Explain to students that in the next activity, they will learn how they can create more complex networks that can handle more complexity and non-linearity in the data.
+Explain to students that in the next activity, they will learn how they can create more complex networks that can handle more complexity and nonlinearity in the data.
 
 Answer any questions before moving on.
 
@@ -555,14 +555,14 @@ In this activity, students will learn how to build more complex neural networks 
 
 Explain to students that now they will learn how to create more complex neural networks.
 
-For this demo, comment to the class that you are going to use non-linear dummy data to show how neural networks deal with it.
+For this demo, comment to the class that you are going to use nonlinear dummy data to show how neural networks deal with it.
 
-Open the unsolved version of the Jupyter notebook, live code the demo, and highlight the following:
+Open the unsolved version of the Jupyter Notebook, live code the demo, and highlight the following:
 
-* Some dummy non-linear data is created using the `make_moons()` function from `sklearn`.
+* Some dummy nonlinear data is created using the `make_moons()` function from `sklearn`.
 
   ```python
-  # Creating dummy non-linear data
+  # Creating dummy nonlinear data
   X_moons, y_moons = make_moons(n_samples=1000, noise=0.08, random_state=78)
 
   # Transforming y_moons to a vertical vector
@@ -572,7 +572,7 @@ Open the unsolved version of the Jupyter notebook, live code the demo, and highl
 * A DataFrame is created to plot the dummy data using `hvplot`.
 
   ```python
-  # Creating a DataFrame to plot the non-linear dummy data
+  # Creating a DataFrame to plot the nonlinear dummy data
   df_moons = pd.DataFrame(X_moons, columns=["Feature 1", "Feature 2"])
   df_moons["Target"] = y_moons
   ```
@@ -641,7 +641,7 @@ Start building the neural network and highlight the following.
 # Compile model
 nn.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
 
-# Training the model with the non-linear data
+# Training the model with the nonlinear data
 model_moon = nn.fit(X_moon_train_scaled, y_moon_train, epochs=100)
 ```
 
@@ -665,7 +665,7 @@ Collect a couple of answers from the class and highlight the following:
 
 * Adding a second layer is also a suitable solution; this is part of deep learning, and it is going to be covered next class.
 
-* Testing with different activation functions is one of the most used initial solutions, especially when dealing with non-linear data.
+* Testing with different activation functions is one of the most used initial solutions, especially when dealing with nonlinear data.
 
 * Using more epochs for training is another strategy to improve the model's accuracy.
 
@@ -675,7 +675,7 @@ Answer any questions before moving on.
 
 ---
 
-### 6. Students Do: Preventing credit card defaults with neural networks (20 min)
+### 6. Student Do: Preventing credit card defaults with neural networks (20 min)
 
 In this activity, students will train a neural network model to predict whether a credit card holder will default in the next month.
 
@@ -695,7 +695,7 @@ In this activity, students will train a neural network model to predict whether 
 
 * [credit-card-default.ipynb](Activities/03-Stu_CC_Default/Solved/credit-card-default.ipynb)
 
-Walkthrough the solution and highlight the following:
+Walk through the solution and highlight the following:
 
 * After the data is read in a DataFrame, it is split and scaled using the `StandardScaler()` function from `sklearn`.
 
@@ -769,7 +769,7 @@ Open the lesson slides, move to the _Preparing Data for Neural Networks_ and hig
 
 * Scikit-learn offers an implementation of one-hot encoding in the [`OneHotEncoder` module](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html).
 
-Open the unsolved Jupyter notebook and ask students to follow along as your live code one-hot encoding and model scaling.
+Open the unsolved Jupyter Notebook and ask students to follow along as your live code one-hot encoding and model scaling.
 
 * For this demo, the iris dataset is used. The data is loaded into a DataFrame.
 
@@ -822,7 +822,7 @@ Switch back to the lesson slides, continue with the slide entitled _Data Standar
 
 * Students are already familiar with the `StandardScaler` from Scikit-learn, which offers an easy way to standardize variables.
 
-Come back to the Jupyter notebook to recall data standardization, live code the demo, and highlight the following.
+Come back to the Jupyter Notebook to recall data standardization, live code the demo, and highlight the following.
 
 * To demonstrate data standardization, the iris numerical features are used.
 
@@ -993,7 +993,7 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 12. Instructor Do: Homework Demo (10 mins)
+### 12. Instructor Do: Homework Demo (10 min)
 
 In this activity, the instructor will conduct a demonstration of the homework.
 
@@ -1019,7 +1019,7 @@ Answer any questions before moving on.
 
 ### 13. Instructor Do: Reflect (5 min)
 
-This day may be hard for students since several new concepts were covered, spend a few minutes with the class reflecting on what they learn Today.
+This day may be hard for students since several new concepts were covered, spend a few minutes with the class reflecting on what they learn today.
 
 * Recall students that modeling neural networks is part art and part science, so they should be patient while defining models.
 
