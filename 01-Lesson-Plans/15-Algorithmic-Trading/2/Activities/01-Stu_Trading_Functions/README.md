@@ -6,7 +6,7 @@ To begin visualizing the process for the trading framework, think about what the
 
 ## Instructions
 
-Open the [unsolved file](Unsolved/ninjatrader_v1.py) and produce the correct order of the following trading functions:
+Open the [unsolved file](Unsolved/ninjatrader_v1.py) and produce the correct order (top to bottom) of the following trading functions:
 
 * evaluate_metrics()
 
@@ -14,50 +14,17 @@ Open the [unsolved file](Unsolved/ninjatrader_v1.py) and produce the correct ord
 
 * fetch_data()
 
+* build_dashboard()
+
+* main()
+
 * update_dashboard()
 
 * execute_backtest()
 
 * initialize()
 
-* place_order()
-
-
-def initialize(cash=None):
-    """Initialize the dashboard, data storage, and account balances."""
-    return
-
-def build_dashboard():
-    """Build the dashboard."""
-     return
-
-def fetch_data():
-    """Fetches the latest prices."""
-    return
-
-def generate_signals():
-    """Generates trading signals for a given dataset."""
-    return
-
-def execute_backtest():
-    """Backtests signal data."""
-    return
-
-def evaluate_metrics():
-    """Generates evaluation metrics from backtested signal data."""
-
-def execute_trade_strategy():
-    """Makes a buy/sell/hold decision."""
-    return
-
-def update_dashboard():
-    """Updates the dashboard."""
-    return
-
-def main():
-    """Main Event Loop."""
-    return
-
+* execute_trade_strategy()
 
 
 ## Hint
