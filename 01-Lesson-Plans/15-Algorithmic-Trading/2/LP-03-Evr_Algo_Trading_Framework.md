@@ -16,7 +16,7 @@ Open the Jupyter Notebook with the original source code to be ported and highlig
 
 Ask students what code cells might be good candidates for different functions in the trading framework.
 
-Open the solution file and walk through the following with the class:
+Ask students to open the trading framework starter code in Vscode or Jupyter and follow along as you start to port over the original code into the algorithmic trading framework. 
 
 * In accordance with the workflow showcased in the previous activity, the trading framework executes the following progression: initialize the account and build the dashboard; fetch data and generate signals; backtest signal data and evaluate metrics; and update the dashboard.
 
