@@ -1,6 +1,6 @@
 ### 3. Everyone Do: Algorithmic Trading Framework (15 mins)
 
-In this activity, instructors will guide students on how to begin encapsulating their trading calculations into trading functions that can be used in an algorithmic trading framework. The purpose of this activity is to port the functionality that was achieved in the previous class into an end-to-end implementation of an algorithmic trading application.
+In this activity, students will code along with the instructor and port over their previous algorithmic trading code into the new algorithmic trading framework.
 
 **Files:** [ninja_trader.py](Activities/02-Evr_Algo_Trading_Framework/Solved/ninja_trader.py)
 
