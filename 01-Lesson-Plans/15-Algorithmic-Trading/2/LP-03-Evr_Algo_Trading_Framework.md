@@ -37,7 +37,7 @@ Ask students to open the trading framework starter code in Vscode or Jupyter and
   update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df)
   ```
 
-* Going in order, the first function is the `initialize` function, which initiates an `account` dictionary and executes another function `initialize_dashboard` to produce a dashboard object representing a loading screen for the trading framework.
+Ask students which code functions might belong in the initialize function. Start to copy code from the original source file into the trading framework starter for the initialize function. Be sure to explain that initializing accounts or data containers are all good candidates for the initialize function. 
 
   **Note**: Keep in mind that depending on the execution time of the trading application, users may not see the loading screen and instead with simply see the end result of the dashboard where financial metrics and visualizations are displayed.
 
