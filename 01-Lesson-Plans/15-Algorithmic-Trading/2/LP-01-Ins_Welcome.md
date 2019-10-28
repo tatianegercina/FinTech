@@ -6,7 +6,7 @@
 
 Today's class will expand upon students' component knowledge of algorithmic trading and abstract one level higher to create a full-fledged trading framework encapsulated in a single application. In particular, students will learn how to wrap their previous code (data collection, signal generation, backtesting, evaluation, and dashboard creation) into functions that will be called via a single workflow. In other words, students will automate the manual component calculations done in the previous class to produce an end-to-end trading dashboard containing all relevant metrics and functionality.
 
-Furthermore, students will not only learn how to "go live" with their trading frameworks by establishing a connection to an actual financial API such as the Kraken Cryptocurrency Exchange API (which provides 24-hour market access and generous API request privileges), but also further their understanding of dataflows by implementing asynchronous tasks and streaming capabilities that allows for a more robust trading dashboard that can update its underlying data without having to re-draw its overall dashboard each time.
+Furthermore, students will not only learn how to "go live" with their trading frameworks by establishing a connection to an actual financial API, such as the Kraken Cryptocurrency Exchange API (which provides 24-hour market access and generous API request privileges), but also further their understanding of dataflows by implementing asynchronous tasks and streaming capabilities that allows for a more robust trading dashboard that can update its underlying data without having to re-draw its overall dashboard each time.
 
 ### Class Objectives
 
@@ -32,8 +32,6 @@ By the end of class, students will be able to:
 
 * Today's lesson will tie together the concepts and coding solutions from the previous day into a single robust trading framework that can produce an end-to-end implementation of a trading dashboard with working metrics.
 
-* The goal of today's lesson is to demonstrate how to architect and implement a full stack trading application (back-end and front-end functionality), and also dispel the esoteric nature of developing a production-level algorithmic trading application.
-
 * This lesson will primarily focus on developing the *infrastructure* of the trading framework and therefore will not contain as much domain-specific trading knowledge.
 
 * Review sessions will be geared towards allowing students to ask as many questions as possible. Questions should be prioritized over instructor posed review questions. While we want to provide as much opportunity as possible for students to ask questions, it is also important that the class is paced so that all material is covered.
@@ -56,9 +54,9 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-In this section, students will review the algorithmic trading concepts taught in the previous class to prepare them for today's consolidation of multiple trading functions (signal generation, backtesting, trade evaluation, etc.) into a single trading framework. This section is a key opportunity to take a step back and understand the *process* of algorithmic trading, so as to later transition to the architecture or infrastructure of an algorithmic trading framework.
+In this section, students will review the algorithmic trading concepts taught in the previous class to prepare them for today's consolidation of multiple trading functions (signal generation, backtesting, trade evaluation, etc.) into a single trading framework. This section is a key opportunity to quickly re-visit the core components related to algorithmic trading before transitioning to the design of an algorithmic trading framework.
 
-Welcome students to the second day of algorithmic trading and quickly review the following:
+Welcome students to the second day of algorithmic trading and ask for any volunteers that can answer the following review questions:
 
 * What is algorithmic trading?
 
@@ -80,6 +78,12 @@ Welcome students to the second day of algorithmic trading and quickly review the
 
   **Answer:** Like other dashboards, a *trading dashboard* consolidates and presents multiple facets of information pertaining to the performance of an algorithmic trading application, allowing a user to interact with the data via tables and plots (visualizations).
 
-Mention to students that going forward in today's class, they should not only keep in mind the distinct purposes or functions of each trading calculation, but the chronology and dependencies of each function as well.
+Then, create some excitement around the day by mentioning the following points:
+
+* The goal of today's lesson is to take what students learned in day 1 and put the concepts together to formulate an end-to-end full stack trading application that is capable of pulling financial data, generating signals, backtesting, executing a trade strategy, evaluating results, and generating dashboard visualizations in a single workflow.
+
+* Creating a trading application from scratch should hopefully dispel the esoteric nature of developing algorithmic trading applications similar to those offered from commercial services, and allows for the ability to add additional features in the future, should students desire to do so.
+
+* By the end of today's lesson, students should have a working trading application that they can demo to future employers, as well as use as the foundation for their own custom trading application if they decide to further expand upon it.
 
 Answer any questions before moving on.
