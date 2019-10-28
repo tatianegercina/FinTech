@@ -20,6 +20,8 @@ Next, open the solution file and present the following:
 
   ![strategy-to-backtest](Images/strategy-to-backtest.png)
 
+  ![strategy-to-backtest-plot](Images/strategy-to-backtest-plot.png)
+
 * Backtesting is commonly implemented using third party libraries like Quantopian's `zipline` library; however, performing manual backtesting can be just as easy if we understand the steps. Notice the minimal lines of code to achieve this functionality!
 
   ![manual-backtesting](Images/manual-backtesting.png)
@@ -102,11 +104,9 @@ Walk students through each step required to implement manual backtesting. Highli
 
   ![portfolio-daily-and-cumulative-returns](Images/portfolio-daily-and-cumulative-returns.png)
 
-* Finally, once again using the `figure` and `axes` objects of the matplotlib library, we can plot the entry and exit positions of the trading strategy against the backtesting results of a simulated portfolio of $100,000. Results show that the trading strategy increased the simulated portfolio of $100,000 to slightly above $130,000.
+* Finally, once again using the `hvplot` library, we can plot the entry and exit positions of the backtesting results of a simulated portfolio of $100,000. Results show that the trading strategy increased the simulated portfolio of $100,000 to slightly above $130,000.
 
-  ![trading-strategy-vs-backtest-code](Images/trading-strategy-vs-backtest-code.png)
-
-  ![trading-strategy-plot](Images/trading-strategy-plot.png)
+  ![backtest-code](Images/backtest-code.png)
 
   ![backtest-results-plot](Images/backtest-results-plot.png)
 
