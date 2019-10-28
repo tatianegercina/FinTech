@@ -63,7 +63,9 @@ Ask students which code functions might belong in the initialize function. Start
     return dashboard
   ```
 
-* Next, the trading application executes the `fetch_data` function to read a CSV from a local file and returns a DataFrame containing historical stock data.
+Next, code the solution for the fetch_data function. Be sure to prompt students to guide you through the solution to keep the class engaged. 
+
+Explain that while they could potentially read the CSV file in the initialize function, the goal is to abstract the code for fetching data into a function so that any data or API can be used. 
 
   ```python
   def fetch_data():
