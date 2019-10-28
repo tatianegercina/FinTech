@@ -4,7 +4,7 @@ def initialize(cash=None):
 
 def build_dashboard():
     """Build the dashboard."""
-     return
+    return
 
 def fetch_data():
     """Fetches the latest prices."""
@@ -18,11 +18,12 @@ def execute_backtest():
     """Backtests signal data."""
     return
 
-def evaluate_metrics():
-    """Generates evaluation metrics from backtested signal data."""
-
 def execute_trade_strategy():
     """Makes a buy/sell/hold decision."""
+    return
+
+def evaluate_metrics():
+    """Generates evaluation metrics from backtested signal data."""
     return
 
 def update_dashboard():
@@ -32,21 +33,3 @@ def update_dashboard():
 def main():
     """Main Event Loop."""
     return
-
-
-
-* evaluate_metrics()
-
-* generate_signal()
-
-* save_data()
-
-* fetch_data()
-
-* update_dashboard()
-
-* execute_backtest()
-
-* initialize()
-
-* place_order()
