@@ -8,7 +8,13 @@ Quickly discuss the following before proceeding onward to the walk through:
 
 * Now that students have completed their workflow design for their new algorithmic trading applications, it is now time to take what they've learned in the previous day and assemble the code together in a single framework/application.
 
-* Students should keep in mind the concepts of inputs and outputs (I/O). This is because as data within the algorithmic trading application flows from start to finish, the underlying functions called therein will require inputs and return outputs according to their specific purposes.
+Open the Jupyter Notebook with the original source code to be ported and highlight the following points:
+
+*  Jupyter naturally provides a method of chunking code into cells which can make the code more readable and reusable. 
+
+* In programming, a better practice is to chunk code together into functions. This provides a layer of abstraction that makes the code easier to modify and reuse. 
+
+Ask students what code cells might be good candidates for different functions in the trading framework.
 
 Open the solution file and walk through the following with the class:
 
