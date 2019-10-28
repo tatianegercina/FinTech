@@ -82,7 +82,7 @@ Explain that while they could potentially read the CSV file in the initialize fu
     return data_df
   ```
 
-* After data has been fetched, the `generate_signal` function uses the DataFrame from the `fetch_data` function as its own input, generating a signal based off a dual moving average crossover strategy and returns a DataFrame containing signal data.
+Explain that the `generate_signal` function in the framework can be used to generate trading signals. Again, abstracting this code into its own function will make it easier to code up new signal generators later. The goal of the framework is to encapsulate each chunk of code so that it is easier to change later. 
 
   ```python
   def generate_signal(data_df):
