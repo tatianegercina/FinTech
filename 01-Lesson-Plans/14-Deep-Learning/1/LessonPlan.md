@@ -32,9 +32,9 @@ By the end of class, students will be able to:
 
 * Give students the opportunity to ask questions, and when necessary, have students save questions for the review sessions or office hours.
 
-* Today should also be fun since we'll be playing with neural nets in several ways to experiment with input, architecture, and algorithms.
+* Today should also be fun since we will be playing with neural nets in several ways to experiment with input, architecture, and algorithms.
 
-* A thorough understanding of neural networks would require math that's beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms in order to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
+* A thorough understanding of neural networks would require math that is beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms in order to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
 
 * In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/), be sure to practice the demo before class. If you are not familiar with this project, we encourage you to watch this video.
 
@@ -42,7 +42,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-The slides for this lesson can be viewed on Google Drive here: [Lesson 14.1 Slides]().
+The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/11gh-YowNqHBx_WEm-OBHJypKImSc51zo71vEYohNdqY/edit?usp=sharing).
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
 
@@ -154,7 +154,7 @@ Continue to the "Python Libraries for Neural Networks" slide, and explain to stu
 
 * [Keras](https://keras.io/)
 
-Explain to students that we will use Keras in the class and that an introduction comes next; in the meantime, it's time for a funny example about how neural networks work.
+Explain to students that we will use Keras in the class and that an introduction comes next; in the meantime, it is time for a funny example about how neural networks work.
 
 Open your web browser and navigate to [the Teachable Machine website](https://teachablemachine.withgoogle.com). This web application shows the fundamental mechanism of a neural network by training a model that recognizes gestures from your webcam to predict one of three classes.
 
@@ -222,7 +222,7 @@ After this brief technical introduction to the perceptron, continue with the fol
 
 * Consider the task of predicting whether or not a person would watch a random movie on Netflix using the behavioral data available.
 
-* Let's assume the decision depends on `3` binary inputs (binary for simplicity).
+* Let us assume the decision depends on `3` binary inputs (binary for simplicity).
 
 * In this perceptron model, _w<sub>0</sub>_ (our arbitrary threshold `θ`) is called the bias because it represents the prejudice that can influence the final decision.
 
@@ -236,7 +236,7 @@ After this brief technical introduction to the perceptron, continue with the fol
 
 Continue to the slide entitled _The perceptron may be harsh_ and highlight the following:
 
-* In real life, if you want to choose a movie, you're not as strict as the perceptron could be. For example, if you base your decision only in one input variable, such as _isNewRelease_, the bias is set to `0.5` and _w<sub>1</sub> = 1_ then our perceptron would look as follows.
+* In real life, if you want to choose a movie, you are not as strict as the perceptron could be. For example, if you base your decision only in one input variable, such as _isNewRelease_, the bias is set to `0.5` and _w<sub>1</sub> = 1_ then our perceptron would look as follows.
 
   ![Harsh perceptron](Images/harsh_perceptron.png)
 
@@ -248,7 +248,7 @@ Move to the slide entitled _Introducing the Activation Function_ and highlight t
 
   ![Current neuron structure](Images/neuron_structure.jpg)
 
-* The difference is the **activation function** that adds a dose of reality to neurons decisions. It's a mathematical function with a characteristic _S-shaped_ curve, also called the sigmoid curve.
+* The difference is the **activation function** that adds a dose of reality to neurons decisions. It is a mathematical function with a characteristic _S-shaped_ curve, also called the sigmoid curve.
 
   ![Sigmoid functions](Images/sigmoid_functions.png)
 
@@ -274,7 +274,7 @@ Click on the [pre-configured link](https://playground.tensorflow.org/#activation
 
 * In the same row as the play button, there are dropdowns for **Learning Rate**; **Activation Function**; **Regularization**; etc. These options affect how quickly a network learns and influences the goodness of its predictions.
 
-* **Problem Type** is also on this row, and allows us to select whether we want the neural net to solve a regression or classification problem. We'll demonstrate a classification problem for now.
+* **Problem Type** is also on this row, and allows us to select whether we want the neural net to solve a regression or classification problem. We will demonstrate a classification problem for now.
 
 * Below this row are headings for **Data**; **Features**; **Hidden Layers**; and **Output**.
 
@@ -302,7 +302,7 @@ Click on the _Play_ button to start training the network, and call attention to 
 
   ![Neuron's demo](Images/tfp_neuron_demo.gif)
 
-Recall students that this isn't new, a variety of `sklearn` classifiers already covered in class can draw this boundary just fine. Logistic regression is one example.
+Recall to students that this is not new, a variety of `sklearn` classifiers already covered in class can draw this boundary just fine. Logistic regression is one example.
 
 * This example shows that neural networks can easily solve linear problems, but doesn't demonstrate their efficacy at nonlinear modeling problems.
 
@@ -388,7 +388,7 @@ Explain to students that we will start coding a neural network with a single neu
   X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
   ```
 
-Explain to students that before using a neural network, it's important to normalize or standardize the data. Neural networks typically perform better when each of the input features are on the same scale. This makes it easier for the neural network to stabilize and adjust the weights in the network.
+Explain to students that before using a neural network, it is important to normalize or standardize the data. Neural networks typically perform better when each of the input features are on the same scale. This makes it easier for the neural network to stabilize and adjust the weights in the network.
 
 * Scikit-Learn's `MinMaxScaler` or `StandardScaler` are commonly used to scale and normalize input features. The `StandardScaler` is used here to scale the features data. There is no need to scale the target data (`y`) since it's already encoded as `0` and `1`.
 
@@ -461,7 +461,7 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
 
 * An additional training metric, `accuracy`, is also specified.
 
-* After the model is compiled, it's fit (trained) using the dummy data.
+* After the model is compiled, it is fit (trained) using the dummy data.
 
   ```python
   model = neuron.fit(X_train_scaled, y_train, epochs=100)
@@ -579,7 +579,7 @@ Open the unsolved version of the Jupyter Notebook, live code the demo, and highl
 
   ![Non-linear data plot](Images/nn_1.png)
 
-* The data is split into training and testing sets, and it's scaled prior to building and testing the neural network.
+* The data is split into training and testing sets, and it is scaled prior to building and testing the neural network.
 
   ```python
   # Create training and testing sets
@@ -663,7 +663,7 @@ Collect a couple of answers from the class and highlight the following:
 
 * Adding more neurons to the model is a possible solution; however, we can overfit the model.
 
-* Adding a second layer is also a suitable solution; this is part of deep learning, and it's going to be covered next class.
+* Adding a second layer is also a suitable solution; this is part of deep learning, and it is going to be covered next class.
 
 * Testing with different activation functions is one of the most used initial solutions, especially when dealing with nonlinear data.
 
@@ -808,7 +808,7 @@ Open the unsolved Jupyter Notebook and ask students to follow along as your live
 
   ![Sample encoded data](Images/ohe-4.png)
 
-Ask the class to restate what we've accomplished with one-hot encoding.
+Ask the class to restate what we have accomplished with one-hot encoding.
 
 * **Sample Answer**: We've transformed one categorical variable into many binary (numerical) variables, each corresponding to a category.
 
@@ -830,7 +830,7 @@ Come back to the Jupyter Notebook to recall data standardization, live code the 
   data_to_scale = data.iloc[:, :4]
   ```
 
-* Once the data to scale is selected, it's scaled using the `StandardScaler` following the steps that students are familiar with.
+* Once the data to scale is selected, it is scaled using the `StandardScaler` following the steps that students are familiar with.
 
 ```python
 # Create the StandardScaler instances
@@ -850,35 +850,95 @@ Ask students if they have any questions before moving on to the next activity.
 
 ---
 
-### 10. Student Do: Voice Gender Recognition (30 min)
+### 10. Students Do: Smartphone Activity Detector (30 min)
 
-In this activity, students will create a neural network to predict the gender of a voice using the acoustic properties of the voice and speech.
+In this activity, students will create a neural network to predict the activity of the user based on their smartphone's accelerometer data.
 
 **Files:**
 
-  * [Voice_Recognition.ipynb](Activities/05-Stu_Voice_Recognition/Unsolved/Voice_Recognition.ipynb)
-
-  * [voice.csv](Activities/05-Stu_Voice_Recognition/Resources/voice.csv)
-
-  * [voice.md](Activities/05-Stu_Voice_Recognition/Resources/voice.md)
+* [Smartphone_Activity_Detector.ipynb](Activities/05-Stu_Smartphone/Unsolved/Smartphone_Activity_Detector.ipynb)
 
 **Instructions:**
 
-* [README.md](Activities/05-Stu_Voice_Recognition/README.md)
+* [README.md](Activities/05-Stu_Smartphone/README.md)
 
 ---
 
-### 11. Instructor Do: Review Voice Gender Recognition (10 min)
+### 11. Instructor Do: Review Smartphone Activity Detector (10 min)
 
 **Files:**
 
-* [Voice_Recognition.ipynb](Activities/05-Stu_Voice_Recognition/Solved/Voice_Recognition.ipynb)
+* [Smartphone_Activity_Detector.ipynb](Activities/05-Stu_Smartphone/Solved/Smartphone_Activity_Detector.ipynb)
 
-* Point out that this dataset requires applying standardization to the `X-features`, and one-hot encoding on the `y-labels` since they are categorical and contain the strings `male` and `female`.
+Open the solution and highlight the following points about the data preparation:
 
-* Explain that for this model, a complex network is designed with 100 nodes in the hidden layer. This more significant number of nodes will allow the neural network to adapt to the dataset.
+* The dataset consists of 561 input features that are obtained from the smartphone. Many of these features are actually transformations of the original smartphone accelerometer data. The complete explanation of input features can be found from the source URL for the dataset.
 
-* When the model is compiled, explain to students that as a general rule, they can use the following [loss function options in Keras](https://keras.io/losses/):
+* While this particular dataset appears to already be in a normalized form, it may be safer to scale the input features using StandardScaler or MinMaxScaler.
+
+  ```python
+  # Scale the training and testing input features using StandardScaler
+  X_scaler = StandardScaler()
+  X_scaler.fit(X_train)
+
+  X_train_scaled = X_scaler.transform(X_train)
+  X_test_scaled = X_scaler.transform(X_test)
+  ```
+
+* There are 12 target activity labels that can be identified using the `value_counts` function.
+
+  ```python
+  y.activity.value_counts()
+  standing              1423
+  laying                1413
+  sitting               1293
+  walking               1226
+  walking_upstairs      1073
+  walking_downstairs     987
+  stand_to_lie            90
+  sit_to_lie              75
+  lie_to_sit              60
+  lie_to_stand            57
+  stand_to_sit            47
+  sit_to_stand            23
+  Name: activity, dtype: int64
+  ```
+
+* The target labels must be converted to one-hot encoded vectors before the model can be trained. The `OneHotEncoder` can be used to make this transformation.
+
+  ```python
+  # Apply One-hot encoding to the target labels
+  enc = OneHotEncoder()
+  enc.fit(y_train)
+
+  encoded_y_train = enc.transform(y_train).toarray()
+  encoded_y_test = enc.transform(y_test).toarray()
+  encoded_y_train[0]
+  ```
+
+Next, walk through the process of building and training the model. Highlight the following:
+
+* A Keras Sequential model is used to create the neural network.
+
+  ```python
+  model = Sequential()
+  ```
+
+* The first layer specified for the neural network actually defines both the input layer and the hidden layer. There are 561 input nodes defined by `input_dim` and 100 nodes in the hidden layer. Each of the hidden layer neurons uses a `relu` activation function, which is a common activation function.
+
+  ```python
+  model.add(Dense(100, activation='relu', input_dim=X_train_scaled.shape[1]))
+  ```
+
+* In this case, the choice of 100 nodes is somewhat arbitrary, but it provides enough complexity to sufficiently predict the activity type. Because this number was much less than the number of input features, it is very likely that many of the input features are not useful or needed to predict the activity type. Further experimentation with dimensionality reduction techniques such as PCA could show that a smaller number of input features could be used.
+
+* The final output layer consists of 12 nodes (one node for each activity type) with a softmax activation type. This choice matches the one-hot encoding that was used on the target labels.
+
+  ```python
+  model.add(Dense(number_outputs, activation="softmax"))
+  ```
+
+* `Categorical Crossentropy` was chosen for the loss function. This is common for building a neural network classifier, but there are other [loss function options available in Keras](https://keras.io/losses/):
 
   * `binary_crossentropy` is used for binary classification.
 
@@ -886,9 +946,50 @@ In this activity, students will create a neural network to predict the gender of
 
   * `mean_squared_error` is used for regression models.
 
-* Warn students that neural networks are often prone to over-fitting. Neural Network architectures should always be validated to ensure that they are not over-fitting to the training data and thus performing poorly on new data values.
+* The `adam` optimizer is a popular choice for neural networks. Again, other options are available and documented on the Keras homepage, but `adam` is typically a safe choice to use.
 
-Ask students if they have any questions before moving on.
+Take a moment to show the model summary and the number of total trainable parameters in the model. Highlight the following:
+
+* This neural network is very large due to the number of input features and the choice of 100 hidden notes. Each input feature is connected to each hidden node, so that results in the total number of training parameters in the model.
+
+* Dimensionality reduction techniques such as PCA may improve the model performance and model size.
+
+Show students the code to fit the model and explain that the model converges to a high accuracy very quickly.
+
+Warn students that large neural networks like this are often prone to over-fitting. Adjusting the network architecture and the number of training epochs may help prevent overfitting. Neural Network architectures should always be validated to ensure that they are not over-fitting to the training data and thus performing poorly on new data values.
+
+Show how the classification report can be used to evaluate the model performance for each activity type.
+
+```python
+from sklearn.metrics import classification_report
+print(classification_report(results.Actual, results.Predicted))
+                    precision    recall  f1-score   support
+
+            laying       1.00      1.00      1.00       355
+        lie_to_sit       0.76      0.87      0.81        15
+      lie_to_stand       0.80      0.73      0.76        11
+        sit_to_lie       0.89      0.74      0.81        23
+      sit_to_stand       1.00      0.75      0.86         4
+           sitting       0.95      0.97      0.96       337
+      stand_to_lie       0.74      0.78      0.76        18
+      stand_to_sit       0.93      0.93      0.93        15
+          standing       0.97      0.95      0.96       367
+           walking       1.00      0.99      0.99       300
+walking_downstairs       0.99      0.99      0.99       230
+  walking_upstairs       0.99      1.00      0.99       267
+
+          accuracy                           0.97      1942
+         macro avg       0.92      0.89      0.90      1942
+      weighted avg       0.97      0.97      0.97      1942
+```
+
+Explain to students that this is a really good example of how neural networks can be used to transform FinTech. Consider providing an example such as the following:
+
+> A hypothetical FinTech company is interested in providing a mobile application for micro renewable energy investments yielding ~4-8% per year with small investments. The company wants to remind users to make additional investments when they are the most likely to see and respond to the smartphone notifications. A neural network activity predictor could be used to detect the optimal activity types in which a user responds to the notification.
+
+Ask students if they can think of any additional FinTech uses for an activity detector like this.
+
+Ask for any remaining questions before moving on.
 
 ---
 
@@ -920,7 +1021,7 @@ Answer any questions before moving on.
 
 This day may be hard for students since several new concepts were covered, spend a few minutes with the class reflecting on what they learn today.
 
-* Recall students that modeling neural networks is part art, and part science, so they should be patient while defining models.
+* Recall students that modeling neural networks is part art and part science, so they should be patient while defining models.
 
 * There are several frameworks to implement neural networks, Keras is a business class framework they can trust in for prototyping or deploy production models.
 
