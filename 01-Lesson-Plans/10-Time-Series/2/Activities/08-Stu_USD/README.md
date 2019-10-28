@@ -4,6 +4,10 @@
 
 In this activity, you will use GARCH to forecast volatility of the Euro-USD exchange rate.
 
+Open the terminal, and execute the following command to install the arch module:
+
+ `pip install arch`
+
 Create a GARCH model whose order is `p=2`, `q=2`.
 
 Output the model summary. Take note of the p-values. Are any of them significant (<0.05)?
