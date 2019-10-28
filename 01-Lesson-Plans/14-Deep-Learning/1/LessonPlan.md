@@ -1,4 +1,4 @@
-## 14.1 Lesson Plan—Neural Networks
+## 14.1 Lesson Plan: Neural Networks
 
 ### Overview
 
@@ -312,7 +312,7 @@ Answer any questions before moving on.
 
 ---
 
-### 4. Student Do: Activating your first artificial neuron (15 min)
+### 4. Everyone Do: Activating your first artificial neuron (15 min)
 
 In this activity, students are introduced to Keras and how they can use this library to start building neural networks.
 
