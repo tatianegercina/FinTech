@@ -113,7 +113,7 @@ Ask students which code functions might belong in the initialize function. Start
     return signals
   ```
 
-* Using the DataFrame containing signal data, the `execute_backtest` function backtests the signal data and returns a DataFrame of running portfolio balances for a proposed initial capital allocation and share size.
+Show students that they can also grab the backtesting code and place it into its own function.
 
   ```python
   def execute_backtest(signals_df):
