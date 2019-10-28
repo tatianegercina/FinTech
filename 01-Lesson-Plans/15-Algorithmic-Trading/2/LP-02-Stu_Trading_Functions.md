@@ -6,7 +6,7 @@ In this activity, students will be given a random sequence of trading function n
 
 * [Instructions](Activities/01-Stu_Trading_Functions/README.md)
 
-* [Solution](Activities/01-Stu_Trading_Functions/Solved/ninjatrader_v1.py)
+* [Solution](Activities/01-Stu_Trading_Functions/Solved/jarvis_v1.py)
 
 Open the slides and explain the following to students:
 
