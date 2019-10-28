@@ -10,34 +10,15 @@ Quickly discuss the following before proceeding onward to the walk through:
 
 Open the Jupyter Notebook with the original source code to be ported and highlight the following points:
 
-*  Jupyter naturally provides a method of chunking code into cells which can make the code more readable and reusable. 
+* Jupyter naturally provides a method of chunking code into cells which can make the code more readable and reusable. 
 
 * In programming, a better practice is to chunk code together into functions. This provides a layer of abstraction that makes the code easier to modify and reuse. 
 
-Ask students what code cells might be good candidates for different functions in the trading framework.
+* Ask students what code cells might be good candidates for different functions in the trading framework.
 
-Ask students to open the trading framework starter code in Vscode or Jupyter and follow along as you start to port over the original code into the algorithmic trading framework. 
+* Ask students to open the trading framework starter code in Vscode or Jupyter and follow along as you start to port over the original code into the algorithmic trading framework. 
 
-* In accordance with the workflow showcased in the previous activity, the trading framework executes the following progression: initialize the account and build the dashboard; fetch data and generate signals; backtest signal data and evaluate metrics; and update the dashboard.
-
-  ```python
-  # Initialize account and dashboard objects
-  account, dashboard = initialize(100000)
-  dashboard.servable()
-
-  # Fetch data and generate signals
-  data_df = fetch_data()
-  signals_df = generate_signal(data_df)
-
-  # Backtest signal data and evaluate metrics from backtested results
-  tested_signals_df = execute_backtest(signals_df)
-  portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals_df)
-
-  # Update the dashboard with all metrics
-  update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df)
-  ```
-
-Ask students which code functions might belong in the initialize function. Start to copy code from the original source file into the trading framework starter for the initialize function. Be sure to explain that initializing accounts or data containers are all good candidates for the initialize function. 
+* Ask students which code functions might belong in the initialize function. Start to copy code from the original source file into the trading framework starter for the initialize function. Be sure to explain that initializing accounts or data containers are all good candidates for the initialize function. 
 
   **Note**: Keep in mind that depending on the execution time of the trading application, users may not see the loading screen and instead with simply see the end result of the dashboard where financial metrics and visualizations are displayed.
 
@@ -65,7 +46,7 @@ Ask students which code functions might belong in the initialize function. Start
 
 Next, code the solution for the fetch_data function. Be sure to prompt students to guide you through the solution to keep the class engaged. 
 
-Explain that while they could potentially read the CSV file in the initialize function, the goal is to abstract the code for fetching data into a function so that any data or API can be used. 
+* Explain that while they could potentially read the CSV file in the initialize function, the goal is to abstract the code for fetching data into a function so that any data or API can be used. 
 
   ```python
   def fetch_data():
@@ -82,7 +63,7 @@ Explain that while they could potentially read the CSV file in the initialize fu
     return data_df
   ```
 
-Explain that the `generate_signal` function in the framework can be used to generate trading signals. Again, abstracting this code into its own function will make it easier to code up new signal generators later. The goal of the framework is to encapsulate each chunk of code so that it is easier to change later. 
+* Explain that the `generate_signal` function in the framework can be used to generate trading signals. Again, abstracting this code into its own function will make it easier to code up new signal generators later. The goal of the framework is to encapsulate each chunk of code so that it is easier to change later. 
 
   ```python
   def generate_signal(data_df):
@@ -115,7 +96,7 @@ Explain that the `generate_signal` function in the framework can be used to gene
     return signals
   ```
 
-Show students that they can also grab the backtesting code and place it into its own function.
+* Show students that they can also grab the backtesting code and place it into its own function.
 
   ```python
   def execute_backtest(signals_df):
@@ -248,7 +229,7 @@ Show students that they can also grab the backtesting code and place it into its
     return portfolio_evaluation_df, trade_evaluation_df
   ```
 
-Finally, show that we can also encapsulate the code for updating the dashboard. This will make it easier to update the dashboard later at whatever frequency we want. Explain that we often want to update the dashboard when new data arrives and/or at a specific time interval (seconds, minutes, hours, days, etc).
+* Finally, show that we can also encapsulate the code for updating the dashboard. This will make it easier to update the dashboard later at whatever frequency we want. Explain that we often want to update the dashboard when new data arrives and/or at a specific time interval (seconds, minutes, hours, days, etc).
 
   ```python
   def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df):
