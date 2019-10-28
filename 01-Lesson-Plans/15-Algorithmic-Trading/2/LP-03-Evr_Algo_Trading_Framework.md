@@ -246,7 +246,7 @@ Ask students which code functions might belong in the initialize function. Start
     return portfolio_evaluation_df, trade_evaluation_df
   ```
 
-* Lastly, the `update_dashboard` function takes in the objects returned from the previous functions and builds the various figures and plots according to the data within each object--finally updating the dashboard to show a trading dashboard with relevant financial metrics.
+Finally, show that we can also encapsulate the code for updating the dashboard. This will make it easier to update the dashboard later at whatever frequency we want. Explain that we often want to update the dashboard when new data arrives and/or at a specific time interval (seconds, minutes, hours, days, etc).
 
   ```python
   def update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df):
