@@ -2,7 +2,11 @@
 
 In this activity, students will code along with the instructor and port over their previous algorithmic trading code into the new algorithmic trading framework.
 
-**Files:** [ninja_trader.py](Activities/02-Evr_Algo_Trading_Framework/Solved/ninja_trader.py)
+**Files:**
+
+* [component_code.ipynb](Activities/02-Evr_Algo_Trading_Framework/Solved/component_code.ipynb)
+
+* [ninja_trader_v2.py](Activities/02-Evr_Algo_Trading_Framework/Solved/ninjatrader_v2.py)
 
 Quickly discuss the following before proceeding onward to the walk through:
 
