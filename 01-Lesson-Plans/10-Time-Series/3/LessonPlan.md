@@ -792,11 +792,7 @@ Go over the metrics of the in-sample and out-of-sample predictions:
 
   * This could be due to the fact that our out-of-sample period is small, so just by chance, the model happened to do better out-of-sample than in-sample.
 
-Finally, discuss the forecast plot.
-
-![xrp_forecast_plot.png](Images/xrp_forecast_plot.png)
-
-* The chart shows that our forecast for XRP volatility will continue to rise over the next five days. This suggests choppy trading ahead, as prices will likely fluctuate up and down more than usual. In addition, if we’re betting types, we might consider buying options on XRP, as prices of options tend to rise in response to higher volatility.
+Ask for any remaining questions before moving on.
 
 - - -
 
