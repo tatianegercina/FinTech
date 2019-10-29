@@ -9,7 +9,7 @@ Open a terminal, and execute the following commands to install `asyncio` and `st
 * Use the `pip install` command to download the `asyncio` module.
 
   ```shell
-  pip install aysncio
+  pip install asyncio
   ```
 
   ![asyncio-install](Images/asyncio-install.png)
