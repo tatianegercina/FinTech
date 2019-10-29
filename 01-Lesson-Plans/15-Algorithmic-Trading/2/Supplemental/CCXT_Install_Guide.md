@@ -30,7 +30,7 @@ Once the `ccxt` module is downloaded and installed, verify that the installation
 
 Now that the `ccxt` module has been installed and verified, go to the [Kraken Cryptocurrency Exchange](https://www.kraken.com/en-us/) and sign up for an account.
 
-Next, head to the APIs settings of your Kraken account and generate new API keys. Make sure to select all key permissions.
+Next, head to the API settings of your Kraken account and generate new API keys. Make sure to select all key permissions.
 
   ![kraken-api-settings](Images/kraken-api-settings.png)
 
