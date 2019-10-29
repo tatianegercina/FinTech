@@ -202,7 +202,7 @@ Use the slideshow and recapitulate the linear regression plot below, which we ha
 
 * The distance between each data point and the best fit line is referred to as the error.
 
-Explain that the linear regression model is mathematically constructed to **minimize** the the sum of all the errors after they have been squared.
+Explain that the linear regression model is mathematically constructed to **minimize** the sum of all the errors after they have been squared.
 
   ![Images/error01.jpg](Images/error02.jpg)
 
@@ -245,7 +245,7 @@ Explain that you can also compare the RMSE to the standard deviation to get a be
 
 * The RMSE, or the standard deviation of the error, is 6.38.
 
-* The RMSE exceeds the standard deviation, indicating that the model may not be very helpful. In other words, on average there are wider swings in the error than the measured temperatures.
+* The RMSE exceeds the standard deviation, indicating that the model may not be very helpful. In other words, on average, there are wider swings in the error than the measured temperatures.
 
 - - -
 
@@ -399,7 +399,7 @@ Explain that the rest of the code is familiar from previous examples:
 
   * The `Temperature` column is specified as the dependent variable array `y`. The `copy()` method is used to create a copy of a Pandas object, to ensure that no unwanted changes are made to the original data.
 
-  * A model is created, and fits the independent and dependent variables.
+  * A model is created and fits the independent and dependent variables.
 
   * An array of predictions is created using `model.predict()`.
 
@@ -413,7 +413,7 @@ Explain that the metrics of the linear regression model are generated:
   rmse = np.sqrt(mse)
   ```
 
-Note that the r-square value, at `0.23`, is fairly low, and that we will cover the interpretation of these numbers in an upcoming activity.
+Note that the r-square value, at `0.23`, is fairly low and that we will cover the interpretation of these numbers in an upcoming activity.
 
 Note also that the trend appears at least somewhat linear for the specified timeline, but that a longer timespan, say from January through December, will not be good for a linear regression model.
 
@@ -465,7 +465,7 @@ Explain that we need a column of returns, and lagged returns, which will be regr
   df = df.dropna()
   ```
 
-  * Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called auto-regression, and will be further discussed on day 2.
+  * Here, unlike previous examples with two separate variables, `Return` values are regressed against `Lagged_Return` values. This is called autoregression and will be further discussed on day 2.
 
   * A column of lagged returns is created by shifting each value downward by 1 row.
 
@@ -490,7 +490,7 @@ Next, explain that dummy variables are created for each week of the year. Commun
 
   ![get_dummies.png](Images/get_dummies.png)
 
-* Quickly go through the rest of the code, which is boiler plate and includes creating a regression model that is created on lagged returns and returns, making predictions, and then generating r-square value.
+* Quickly go through the rest of the code, which is boilerplate and includes creating a regression model that is created on lagged returns and returns, making predictions, and then generating r-square value.
 
   ```python
   y = df['Return']
@@ -528,7 +528,7 @@ Explain that overfitting typically involves an excessive number of variables in 
 
 Explain that a useful analogy might be to memorize the answers to a math test without learning the underlying principles.
 
-* The learning that takes place is useful in one particular setting, but is less generalizable to other contexts.
+* The learning that takes place is useful in one particular setting but is less generalizable to other contexts.
 
 Next, explain variance and bias, two important concepts in machine learning:
 
@@ -592,7 +592,7 @@ Open the notebook and introduce the dataset:
 
 * NaN values are deleted from the DataFrame.
 
-* In regression, the lagged returns will be the **independent** variable and the returns will be the **dependent** variable, since we are attempting to answer to what extent past values affect future values. It is like asking the question: given today's return, what's the expected return going to be tomorrow?
+* In regression, the lagged returns will be the **independent** variable, and the returns will be the **dependent** variable since we are attempting to answer to what extent, past values affect future values. It is like asking the question: given today's return, what's the expected return going to be tomorrow?
 
 Explain that the next step is to split the dataset into `train` and `test` sets:
 
@@ -788,7 +788,7 @@ Go over the metrics of the in-sample and out-of-sample predictions:
 
   * The RMSE is obtained by comparing predicted and actual data.
 
-  * The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data, but is higher in this case.
+  * The out-of-sample RMSE is lower than the in-sample RMSE. RMSE is typically lower for training data but is higher in this case.
 
   * This could be due to the fact that our out-of-sample period is small, so just by chance, the model happened to do better out-of-sample than in-sample.
 
@@ -897,9 +897,9 @@ Explain that the goal is to roll through the period in 26-week windows, one week
   timeframe = len(weeks) - training_window - 1
   ```
 
-* The `timeframe` variable refers to the total timespan encompassed by the data frame, minus the training window of 26 weeks (minus 1 due to indexing).
+* The `timeframe` variable refers to the total time span encompassed by the data frame, minus the training window of 26 weeks (minus 1 due to indexing).
 
-* The last training window will therefore begin 26 weeks before the end of the total timespan. If there were to be a training window after this point, it would be less than the full 26 weeks, and the Python code would throw an out-of-bounds error.
+* The last training window will, therefore, begin 26 weeks before the end of the total time span. If there were to be a training window after this point, it would be less than the full 26 weeks, and the Python code would throw an out-of-bounds error.
 
 Explain that empty data frames are created to hold predicted values and actual values:
 
@@ -959,7 +959,7 @@ Walk through the for-loop:
     all_actuals = all_actuals.append(actuals)
   ```
 
-* The `X_train` and `X_test` series are converted into a data frame.
+* The `X_train` and `X_test` series are converted into a DataFrame.
 
 * A model is created for each training period, then fitted to the data.
 
@@ -1097,7 +1097,7 @@ Rolling Out-of-Sample Model:
 
 * Evaluating performance visually, the plot of the out-of-sample results for 2019 shows that gold returns and our model's predictions of gold returns seem to be trending together
 
-* The visual results showing the predicted and actual returns from the single training and test window seem to also trend well together.
+* The visual results showing the predicted and actual returns from the single training and test window seem also to trend well together.
 
 * So far, this is a good indication of our model's performance, but we'll have to check the RMSE to get a more solid idea about how well good the predictions from each approach are.
 
@@ -1117,7 +1117,7 @@ Rolling Out-of-Sample Model:
 
   * Therefore, we expect a slightly higher out-of-sample RMSE, which is what we see.
 
-  * The fact that the two are close to each other in value though does suggest that our model is reasonably stable.
+  * The fact that the two are close to each other in value, though, does suggest that our model is reasonably stable.
 
 Congratulate the class for making it through their first week of Machine Learning! This is a very valuable skill that is currently changing the face of finance.
 
