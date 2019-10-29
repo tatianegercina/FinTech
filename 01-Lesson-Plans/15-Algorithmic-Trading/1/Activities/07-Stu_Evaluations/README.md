@@ -20,62 +20,30 @@ The pre-requisite steps for developing the Short Position Dual Moving Average Cr
 
 Using the [starter file](Unsolved/the_big_short_part_3.ipynb), complete the following steps:
 
-1. Set an `initial_capital` variable to 100000, representing the simulated starting portfolio value.
+1. Initialize a Portfolio Evaluation DataFrame with an index set to `['Annual Return', 'Cumulative Returns', 'Annual Volatility', 'Sharpe Ratio', 'Sortino Ratio']` and columns as `['Backtest']`.
 
-2. Set a negative `share_size` value of -500.
+2. Calculate and assign the following portfolio metrics to the portfolio evaluation DataFrame:
 
-3. Create a new column `Position` by multiplying the `share_size` by the values in the `Signal` column.
+    1. Cumulative Return
 
-4. Create a new column `Entry/Exit Position` by using the `diff` function on the `Position` column.
+    2. Annual Return
 
-5. Create a new column `Portfolio Holdings` by multiplying the `Close` prices of VNQ by the cumulative sum of the values of the `Entry/Exit Position` column.
+    3. Annual Volatility
 
-6. Create a new column `Portfolio Cash` by subtracting the `initial_capital` by cumulative sum of the product of the `Close` prices of VNQ and the values of the `Entry/Exit Position` column.
+    4. Sharpe Ratio
 
-7. Create a new column `Portfolio Total` by adding the values of the `Portfolio Cash` and `Portfolio Holdings` columns.
+    5. Sortino Ratio
 
-8. Create a new column `Portfolio Daily Returns` by using the `pct_change` function on the `Portfolio Total` column.
+3. Initialize a Trade Evaluation DataFrame with columns set to `['Stock', 'Entry Date', 'Exit Date', 'Shares', 'Entry Share Price', 'Exit Share Price', 'Entry Portfolio Holding', 'Exit Portfolio Holding', 'Profit/Loss']`.
 
-9. Create a new column `Portfolio Cumulative Returns` by using the `cum_prod` function on the `Portfolio Daily Returns` column.
+4. Iterate over the backtested signals DataFrame and pull the relevant entry and exit data values to calculate the per-trade profit/loss and append each record to the Trade Evaluation DataFrame.
 
-10. Use the `figure` and `axes` objects of the `matplotlib` library to plot the Short Position Dual Moving Average Crossover trading strategy against its backtesting results.
+## Hints
 
-## Hint
+* Because this is a short strategy, in order to calculate the profit/loss for each trade, the difference should be the inverse of a long strategy. In other words the profit/loss should be calculated using the entry holding value minus the exit holding value.
 
-Remember that shorting a stock means to sell shares of a stock and then buy or cover the shares at a later point in time. Therefore, in particular, share sizes relative to backtesting calculations should be negative.
+* Consult the [evaluations calculation guide](../../../Supplemental/EvaluationsCalculationGuide.md) for the above calculations/formulas.
 
 ---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
-
-
-
-
-## Evaluations
-
-Evaluate the backtesting results by calculating the annual return, cumulative returns, annual volatility, Sharpe ratio, and Sortino ratio for your portfolio. These evaluation metrics will provide insight into how well the trading algorithm performed in terms of maximizing returns and minimizing risk and volatility.
-
-### Instructions
-
-1. Open the starter file, and begin by calculating cumulative returns using the `signals_df` DataFrame.
-
-2. Calculate annualized returns. Remember to multiply by the number of trading days.
-
-3. Measure annual volatility.
-
-4. Calculate the Sharpe ratio.
-
-5. Calculate the downside deviation/return.
-
-6. Calculate the Sortino ratio by dividing the average downside deviation by the average daily return.
-
-7. Wrap all of these calculations into a single function called `calculate_eval_metrics`. The function should accept the `signals_df` DataFrame as a parameter, and it should return the `portfolio_evaluation_df` DataFrame.
-
-8. Call the `calculate_eval_metrics` function with `signals_df` as the argument
-
-9. Calculate the per-trade evaluation metrics by calculating the difference between exit and entry portfolio holding values.
-
-### Hint
-
-Consult the [evaluations calculation guide](../../../Supplemental/EvaluationsCalculationGuide.md) for the above calculations/formulas.
