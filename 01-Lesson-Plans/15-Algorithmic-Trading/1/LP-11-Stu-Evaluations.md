@@ -26,9 +26,9 @@ Open the solution, and explain the following:
 
 * Per-trade evaluation metrics show a more granular approach to assessing the performance of the overall portfolio. Previously, it was shown that the short strategy increased the initial capital allocation from $100,000 to $106,587.2295; by looking at the per-trade evaluation metrics, we can see how each trade propelled the total portfolio value to the ending value of $106,587.2295.
 
-  ![per-trade-evaluation-code](Images/per-trade-evaluation-code.png)
+  ![per-trade-evaluation-code](Images/per-trade-evaluation-code2.png)
 
-  ![per-trade-evaluation-dataframe](Images/per-trade-evaluation-dataframe.png)
+  ![per-trade-evaluation-dataframe](Images/per-trade-evaluation-dataframe2.png)
 
 Dedicate the remaining time to student questions. Encourage students to ask any questions regarding the different evaluation metrics, how they're used, or why they are used.
 
