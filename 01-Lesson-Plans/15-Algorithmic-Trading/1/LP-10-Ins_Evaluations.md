@@ -1,12 +1,12 @@
 ### 10. Instructor Do: Evaluations (10 min)
 
-Students will receive a dry walk through of the various evaluation metrics that can be used to evaluate their trading algorithms. This will include revisiting metrics such as cumulative returns and sharpe ratios, as well as new metrics such as the Sortino ratio. The instructor will explain how the metrics are calculated and how they are used.
+Students will receive a dry walk through of the various evaluation metrics that can be used to evaluate their trading algorithms, namely portfolio and trade related evaluation metrics. This will include revisiting metrics such as cumulative returns and sharpe ratios, as well as new metrics such as the Sortino ratio. The instructor will explain how the metrics are calculated and how they are used.
 
 **Files:** [trading_algorithm_evaluation.ipynb](Activities/06-Ins_Evaluations/Solved/trading_algorithm_evaluation.ipynb)
 
 Navigate to the **evaluation** slide of the Unit 15.1 slideshow. Communicate the following:
 
-* Evaluating securities, trades, and portfolios is important regardless if it is a human or algorithm making the trade. The following metrics can be used to evaluate a securities/trades.
+* Evaluating the performance of a portfolio is of utmost importance, regardless if it is a human or an algorithm making trades. The following metrics can be used to evaluate a portfolio.
 
   * **Cumulative Return**- the total/aggregated amount of gains and losses for an investment. Cumulative return is measured across time and not for a given time period.
 
@@ -20,7 +20,7 @@ Navigate to the **evaluation** slide of the Unit 15.1 slideshow. Communicate the
 
   * **Sortino Ratio**-  The quotient of harmful volatility and overall volatility. The Sortino ratio focuses on downside deviation rather than standard deviation.
 
-* These metrics can be calculated historically with backtesting, or they can be used to measure future trades and opportunities for portfolio growth.
+* These metrics can be calculated for a portfolio through historical backtesting, or they can be used to measure the performances of specific securities before engaging in a trade.
 
 Transition to a dry walk through of the code used to calculate each of these metrics. Open the solution, and highlight the following:
 
@@ -63,7 +63,7 @@ Transition to a dry walk through of the code used to calculate each of these met
   ```python
   down_stdev = np.sqrt(sortino_ratio_df['Downside Returns'].mean())
   expected_return = sortino_ratio_df['Portfolio Daily Returns'].mean()
-
+  
   sortino_ratio = expected_return/down_stdev
   portfolio_evaluation_df.loc['Sortino Ratio'] = sortino_ratio
   ```
@@ -72,7 +72,7 @@ Transition to a dry walk through of the code used to calculate each of these met
 
 * Emphasize to students that they should dedicate time outside of class to conduct research on each individual metric to better understand how it can be applied to assess portfolio performance.
 
-* Per-trade evaluation metrics can also be calculated by iterating over the DataFrame containing backtested signal data and calculating the difference between the exit portfolio holding and the entry portfolio holding values.
+* Per-trade evaluation metrics can also be calculated by iterating over the DataFrame containing backtested signal data and grabbing related entry and exit trade values. In addition, the profit for each trade can be calculated by finding the difference between the exit portfolio holding and the entry portfolio holding values. Each entry-exit trade record is then appended to the trade evaluation DataFrame.
 
   ![per-trade-evaluation-code](Images/per-trade-evaluation-code.png)
 
