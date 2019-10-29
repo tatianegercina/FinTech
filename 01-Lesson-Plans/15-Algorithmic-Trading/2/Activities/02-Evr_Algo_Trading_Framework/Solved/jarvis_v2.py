@@ -16,9 +16,9 @@ def build_dashboard(signals_df, portfolio_evaluation_df, trade_evaluation_df):
     trade_evaluation_table = trade_evaluation_df.hvplot.table()
 
     # Create rows, columns, and tabs
-    row_two = pn.Row(price_plot)
-    row_three = pn.Row(portfolio_evaluation_table, trade_evaluation_table)
-    column = pn.Column(row_two, row_three)
+    row_one = pn.Row(price_plot)
+    row_two = pn.Row(portfolio_evaluation_table, trade_evaluation_table)
+    column = pn.Column(row_one, row_two)
     tabs = pn.Tabs(("Summary", column))
 
     # Assign dashboard
@@ -27,7 +27,7 @@ def build_dashboard(signals_df, portfolio_evaluation_df, trade_evaluation_df):
 
 def fetch_data():
     """Fetches the latest prices."""
-    # Set the file path and read CSV into a Pandas DatafRame
+    # Set the file path and read CSV into a Pandas DataFrame
     filepath = Path("../Resources/aapl.csv")
     data_df = pd.read_csv(filepath)
 
@@ -149,10 +149,6 @@ def evaluate_metrics(signals_df):
     # Print the DataFrame
     print(trade_evaluation_df.head())
     return portfolio_evaluation_df, trade_evaluation_df
-
-def update_dashboard():
-    """Updates the dashboard."""
-    return
 
 def main():
     """Main Event Loop."""
