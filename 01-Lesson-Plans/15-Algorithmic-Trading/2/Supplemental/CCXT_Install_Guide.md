@@ -30,9 +30,19 @@ Once the `ccxt` module is downloaded and installed, verify that the installation
 
 Now that the `ccxt` module has been installed and verified, go to the [Kraken Cryptocurrency Exchange](https://www.kraken.com/en-us/) and sign up for an account.
 
-Then, after generating your API keys, open a terminal and set the `KRAKEN_PUBLIC_KEY` and `KRAKEN_SECRET_KEY` environment variables.
+Next, head to the APIs settings of your Kraken account and generate new API keys. Make sure to select all key permissions.
+
+  ![kraken-api-settings](Images/kraken-api-settings.png)
+
+  ![kraken-generate-keys](Images/kraken-generate-keys.png)
+
+Then, after generating your API keys, open a terminal and set the `KRAKEN_PUBLIC_KEY` and `KRAKEN_SECRET_KEY` environment variables, respectively. There is no need to include quotes around your api keys when setting the environment variables.
+
+  ![kraken-api-keys](Images/kraken-api-keys.png)
 
   ![ccxt-environment-variables](Images/ccxt-environment-variables.png)
+
+**Note:** Unless you are setting these environment variables globally or permanently, they will need to be set each time you want to access the Kraken API via the ccxt library.
 
 ## Troubleshooting
 
