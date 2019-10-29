@@ -24,7 +24,7 @@ Open the solution, and explain the following:
 
 * Explain that the common practice is to have the algorithm calculate and monitor evaluation metrics to help making decisions regarding when to buy and sell. This removes the need for manual calculations, and it also provides the opportunity for the evaluation metrics to be tracked in real time as stock prices fluctuate and trades are executed.
 
-* Per-trade evaluation metrics show a more granular approach to assessing the performance of the overall portfolio. Previously, it was shown that the short strategy increased the initial capital allocation from $100,000 to $106,587.2295; by looking at the per-trade evaluation metrics, we can see how each trade propelled the total portfolio value to the ending value of $106,587.2295. 
+* Per-trade evaluation metrics show a more granular approach to assessing the performance of the overall portfolio. Previously, it was shown that the short strategy increased the initial capital allocation from $100,000 to $106,587.2295; by looking at the per-trade evaluation metrics, we can see how each trade propelled the total portfolio value to the ending value of $106,587.2295.
 
   ![per-trade-evaluation-code](Images/per-trade-evaluation-code.png)
 
