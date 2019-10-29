@@ -6,9 +6,9 @@ In this activity, students will code along with the instructor and port over the
 
 * [algorithmic_trading_code.ipynb](Activities/02-Evr_Algo_Trading_Framework/Solved/algorithmic_trading_code.ipynb)
 
-* [jarvis_v2.py](Activities/02-Evr_Algo_Trading_Framework/Solved/jarvis_v2.py)
-
 * [jarvis_v1.py](Activities/02-Evr_Algo_Trading_Framework/Unsolved/jarvis_v1.py)
+
+* [jarvis_v2.py](Activities/02-Evr_Algo_Trading_Framework/Solved/jarvis_v2.py)
 
 Quickly discuss the following before proceeding onward to the walk through:
 
@@ -194,7 +194,7 @@ Then, ask students to open the starter code in VScode and follow along as you po
       return dashboard
   ```
 
-* Lastly, the `main` function wraps the rest of the functions in a single workflow--allowing the application to perform a single call of the `main` function to then kick off the totality of the framework.
+* Lastly, the `main` function wraps the rest of the functions in a single workflow--allowing the application to perform a single call of the `main` function to then kick off the totality of the framework. Note the fact that the output of one function generally serves as the input to the next.
 
   ```python
   def main():
@@ -209,5 +209,7 @@ Then, ask students to open the starter code in VScode and follow along as you po
 
   main()
   ```
+
+* And that's it! Students now have an end-to-end implementation of the code that was produced from day 1! Going forward, students should also keep in mind that to enhance code readability, they should try to minimize the lines of code in their Python applications wherever possible (which is why the solved code looks more condensed than the Jupyter Notebook code).
 
 Ask if there are any questions before moving on.
