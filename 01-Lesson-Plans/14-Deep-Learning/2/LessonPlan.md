@@ -24,7 +24,7 @@ By the end of class, students will be able to:
 
 ### Class Slides and Time Tracker
 
-The slides for this lesson can be viewed on Google Drive here: [Lesson 14.2 Slides]().
+The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/13YjMJO9cpmfUJBXCnPtuBN4w7jhBdEoGQyGBCKc2PPk/edit?usp=sharing).
 
 To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -42,7 +42,7 @@ Welcome students to the second day of the deep learning unit! Open the lesson sl
 
 * Generally speaking, deep learning models are neural networks with more than one hidden layer.
 
-* Deep neural networks are much more effective than traditional machine learning approaches at discovering non-linear relationships in data and thus are often the best-performing choice for complex or unstructured data like images, text, and voice.
+* Deep neural networks are much more effective than traditional machine learning approaches at discovering nonlinear relationships among data and thus are often the best-performing choice for complex or unstructured data like images, text, and voice.
 
 Explain to students that deep neural networks allow creating computational models composed of multiple layers that can learn representations of data with multiple levels of abstraction.
 
@@ -213,7 +213,7 @@ Answer any questions before moving on.
 
 ---
 
-### 4. Students Do: Sound of Music (20 min)
+### 4. Student Do: Sound of Music (20 min)
 
 In this activity, students will build a model to predict the geographical origins of a musical composition.
 
@@ -255,7 +255,7 @@ In this activity, students will build a model to predict the geographical origin
   X = scaler.transform(X)
   ```
 
-* The first model we define has one hidden layer with 8 neurons, and it is fitted with `800` epochs.
+* The first model we define has one hidden layer with `8` neurons, and it is fitted with `800` epochs.
 
   ```python
   # Create a shallow, 1 hidden layer, neural network
@@ -375,7 +375,7 @@ Ask students for questions before moving on to the practice activity.
 
 ---
 
-### 7. Students Do: After Training (15 min)
+### 7. Student Do: After Training (15 min)
 
 In this activity, students will create a deep learning model from the music geographies data, save it, and load it to evaluate its performance on unseen data.
 
@@ -484,17 +484,17 @@ Answer any questions before moving on.
 
 * [connecting_neurons.ipynb](Activities/05-Evr_Colab/Solved/connecting_neurons.ipynb)
 
-In this activity, students will learn how to create and share Jupyter notebooks on Google Colaboratory (aka Colab), a cloud platform oriented toward machine learning.
+In this activity, students will learn how to create and share Jupyter Notebooks on Google Colaboratory (aka Colab), a cloud platform oriented toward machine learning.
 
-Explain to students that Colaboratory is a Google-sponsored environment for running Jupyter notebooks on the Cloud. It is specifically tailored for running and sharing deep learning experiments. Colab notebooks have access to specialized computing architectures such as Google's self-developed Tensor Processing Units (TPUs) in addition to general-purpose memory and RAM. TPUs designed specifically by Google to train and run TensorFlow models.
+Explain to students that Colaboratory is a Google-sponsored environment for running Jupyter Notebooks on the Cloud. It is specifically tailored for running and sharing deep learning experiments. Colab Notebooks have access to specialized computing architectures such as Google's self-developed Tensor Processing Units (TPUs) in addition to general-purpose memory and RAM. TPUs designed specifically by Google to train and run TensorFlow models.
 
 [Open this three minutes introductory video](https://youtu.be/inN8seMm7UI) and reproduce it in the class. After playing the video, highlight the following:
 
 * Colab allows us to do machine learning on the web using Google Cloud resources.
 
-* We can use this environment to create Jupyter notebooks just as we would on our local computers.
+* We can use this environment to create Jupyter Notebooks just as we would on our local computers.
 
-* Colab makes it easy to share projects and results with potential employers, and you can save notebooks right to your Google drive.
+* Colab makes it easy to share projects and results with potential employers, and you can save Notebooks right to your Google Drive.
 
 * More importantly, you get access to cloud computing resources, including RAM, memory, and Google's proprietary hardware solution for deep learning - Tensor Processor Units (TPUs).
 
@@ -538,7 +538,7 @@ Type the following command in the first cell, and click on the _Run_ button or p
 
   ![Images/colab05.gif](Images/colab05.gif)
 
-* You can also import Jupyter notebooks from your local drive. Click on the _File_ menu and choose the _Upload notebook...` option, then browse your local drive for the Jupyter notebook you want to upload.
+* You can also import Jupyter Notebooks from your local drive. Click on the _File_ menu and choose the _Upload notebook...` option, then browse your local drive for the Jupyter notebook you want to upload.
 
   ![Images/colab06.png](Images/colab06.png)
 
@@ -594,16 +594,16 @@ from tensorflow.keras.layers import Dense
 Also, remove the comments from the cell where the plot is created. Note that we are using the `hvplot.show()` method, explain to students that this is the way to proceed to display the plot in Google Colab
 
 ```python
-# Plotting the non-linear dummy data
+# Plotting the nonlinear dummy data
 plot = df_moons.hvplot.scatter(x="Feature 1", y="Feature 2", by="Target")
 hvplot.show(plot)
 ```
 
-Delete the cell where you run `pip` and run all the notebook's cells to show students that the plot is now displayed in the notebook just like it was in the Jupyter notebooks.
+Delete the cell where you run `pip` and run all the notebook's cells to show students that the plot is now displayed in the notebook just like it was in the Jupyter Notebooks.
 
 ![Images/colab14.gif](Images/colab14.gif)
 
-Explain to students that there are plenty of examples created by the Colab community using an assortment of data that are available through the platform. These notebooks can be found in [Seedbank website](https://research.google.com/seedbank/). Slack out the Seedbank URL to students and highlight the following:
+Explain to students that there are plenty of examples created by the Colab community using an assortment of data that are available through the platform. These Notebooks can be found in [Seedbank website](https://research.google.com/seedbank/). Slack out the Seedbank URL to students and highlight the following:
 
 * Projects can be searched by tags or keywords.
 
@@ -619,7 +619,7 @@ Stop for questions before moving on to the next activity.
 
 ---
 
-### 11. Students Do: Deep Learning on the Web (30 min)
+### 11. Student Do: Deep Learning on the Web (30 min)
 
 In this activity, students will use the text classification demo notebook to understand and modify a deep learning classification model with Colab.
 

@@ -22,4 +22,6 @@ The dataset contains `68` encoded features of music composition (columns from `0
 
 * When fitting the model, you can set the parameter `verbose=0` in the `fit()` method to mute the printing of each epoch's results.
 
-© 2019 Trilogy Education Services
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
