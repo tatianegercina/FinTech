@@ -1,30 +1,30 @@
-### 11. Students Do: Evaluations (15 mins)
+### 11. Students Do: The Big Short Part III (15 mins)
 
-Students complete a MSMD activity where they create a function to calculate portfolio evaluation metrics for their backtesting data. The activity is aimed to get students thinking about how the calculation of evaluation metrics can be incorporated into algorithmic training.
+Now that students have developed a Short Dual Moving Average trading strategy and backtested their strategy against historical VNQ prices, students can now calculate the portfolio and trade evaluation metrics to ascertain the performance of their short strategy.
 
 **Instructions:** [README.md](Activities/07-Stu_Evaluations/README.md)
 
-**Files:** [trade_evaluations.ipynb](Activities/07-Stu_Evaluations/Unsolved/trade_evaluations.ipynb)
+**Files:** [the_big_short_part_3.ipynb](Activities/07-Stu_Evaluations/Unsolved/the_big_short_part_3.ipynb)
 
 ---
 
-### 12. Instructor Do: Evaluations Activity Review (10 mins)
+### 12. Instructor Do: The Big Short Part III Review (10 mins)
 
 **Files:**
 
-* [trade_evaluations.ipynb](Activities/07-Stu_Evaluations/Solved/trade_evaluations.ipynb)
+* [the_big_short_part_3.ipynb](Activities/07-Stu_Evaluations/Solved/the_big_short_part_3.ipynb)
 
 Open the solution, and explain the following:
 
-* Evaluation metrics should be used to gauge algorithm performance. Commonly used evaluation metrics include cumulative returns, annualized returns, annual volatility, Sharpe ratio, and Sortino ratio.
+* Portfolio evaluation metrics should be used to gauge algorithm performance. Commonly used metrics include cumulative returns, annualized returns, annual volatility, Sharpe ratio, and Sortino ratio.
 
-  ![eval_metrics_function.png](Images/eval_metrics_function.png)
+  ![portfolio-evaluation-metrics.png](Images/portfolio-evaluation-metrics.png)
 
 * Remind students that even though algorithms can perform more effectively and efficiently than humans (without emotional or mental fatigue), algorithms still need to be evaluated for performance. This will ensure the algorithm is trading with the most optimal configurations.
 
 * Explain that the common practice is to have the algorithm calculate and monitor evaluation metrics to help making decisions regarding when to buy and sell. This removes the need for manual calculations, and it also provides the opportunity for the evaluation metrics to be tracked in real time as stock prices fluctuate and trades are executed.
 
-* Per-trade evaluation metrics can also be calculated by iterating over the DataFrame containing backtested signal data and calculating the difference between the exit portfolio holding and the entry portfolio holding values.
+* Per-trade evaluation metrics show a more granular approach to assessing the performance of the overall portfolio. Previously, it was shown that the short strategy increased the initial capital allocation from $100,000 to $106,587.2295; by looking at the per-trade evaluation metrics, we can see how each trade propelled the total portfolio value to the ending value of $106,587.2295. 
 
   ![per-trade-evaluation-code](Images/per-trade-evaluation-code.png)
 
