@@ -12,4 +12,6 @@ In this activity, you will create a deep learning model from the music geographi
 
 4. Load the model and its weights, and use this loaded model to predict points for the test data and print the mean squared error metric for the predicted points vs. the actual points.
 
-© 2019 Trilogy Education Services
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

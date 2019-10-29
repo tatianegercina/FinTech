@@ -12,4 +12,6 @@ In this activity you will use the text classification demo notebook to understan
 
 * In the _Build the model_ section, experiment with the neural network architecture defined to increase the accuracy of the model and decrease loss to the maximum extent possible.
 
+---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
