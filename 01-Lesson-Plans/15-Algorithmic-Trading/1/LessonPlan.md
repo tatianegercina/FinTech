@@ -408,7 +408,7 @@ Next, open the solution file and present the following:
 
   ![strategy-to-backtest-plot](Images/strategy-to-backtest-plot.png)
 
-* Backtesting is commonly implemented using third party libraries like Quantopian's `zipline` library; however, performing manual backtesting can be just as easy if we understand the steps. Notice the minimal lines of code to achieve this functionality!
+* Backtesting is commonly implemented using third party libraries; however, performing manual backtesting can be just as easy if we understand the steps. Notice the minimal lines of code to achieve this functionality!
 
   ![manual-backtesting](Images/manual-backtesting.png)
 
