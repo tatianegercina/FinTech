@@ -390,7 +390,7 @@ Open the solution file and review the following:
 
 ---
 
-### 5. Instructor Do: Backtesting (10 mins)
+### 7. Instructor Do: Backtesting (10 mins)
 
 In this activity, students will learn how to test the performance of an algorithmic trading strategy using historical stock data, a process otherwise known as backtesting. In particular, students will use historical stock data to measure the profit/loss of executed trades for a given trading strategy and visualize the overall change in portfolio value over time.
 
@@ -727,7 +727,7 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 11. Everyone Do: Trading Dashboard (20 min)
+### 12. Everyone Do: Trading Dashboard (20 min)
 
 In this activity, instructors will walk students through creating a trading dashboard with Panel using the evaluation metrics generated from prior activities. At this point in time, students should already have exposure to creating dashboards using Panel.
 
@@ -795,7 +795,7 @@ Ask if there are any questions before moving forward.
 
 ---
 
-### 12. Instructor Do: Reflect (15 min)
+### 13. Instructor Do: Reflect (15 min)
 
 This activity will conclude today's lesson on Algorithmic Trading Day 1 and provide a chance for students to reflect upon what they've learned throughout the day.
 
