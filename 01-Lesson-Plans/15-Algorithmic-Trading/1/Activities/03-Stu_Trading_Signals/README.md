@@ -8,39 +8,39 @@ If you had an algorithm to monitor and *short* the market in 2008, could you hav
 
 Using the [starter file](Unsolved/short_dual_ma_crossover.ipynb), complete the following steps:
 
-1. Import the `pandas`, `numpy`, `matplotlib`, and `pathlib` libraries. Optionally, set the pandas DataFrame settings to display more rows and columns.
+* Create a Dual Moving Average Crossover Trading Signal that indicates shorting opportunities.
 
-2. Create a DataFrame by reading in the `vnq.csv` file containing stock data for VNQ from 2007 to 2009.
+  * Create a filtered DataFrame containing just the `Date` and `Close` columns of the VNQ stock data.
 
-3. Create a Dual Moving Average Crossover Trading Signal that indicates shorting opportunities.
+  * Set the `Date` column as the index to the DataFrame.
 
-    1. Create a filtered DataFrame containing just the `Date` and `Close` columns of the VNQ stock data.
+  * Set a `short_window` and `long_window` to `50` and `100`, respectively.
 
-    2. Set the `Date` column as the index to the DataFrame and convert the datetime strings to datetime objects.
+  * Create a 50-day moving average and a 100-day moving average from the VNQ closing prices using the `rolling` and `mean` functions.
 
-    3. Set a `short_window` and `long_window` to `50` and `100`, respectively.
+  * Initialize a new DataFrame column `Signal` and set the values to 0.
 
-    4. Create a 50-day moving average and a 100-day moving average from the VNQ closing prices using the `rolling` and `mean` functions.
+  * Use the numpy `where` function to set the signal column to `1.0` when the SMA50 is less than SMA100 and `0.0` otherwise.
+  
+  * Use the `diff` function on the `Signal` column and assign the values to a `Entry/Exit` column to indicate trade entry and exit points in time.
 
-    5. Initialize a new DataFrame column `Signal` and set the values to 0.
+* Plot the entry and exit points of your Short Dual Moving Average Crossover signal.
 
-    6. Use the numpy `where` function to specify that when the short window MA is less than the long window MA, set the value to the `Signal` column as 1 or 0, respectively.
+  * Create scatter plots for the entry and exit points. Use the color green to indicate the entry points. Use a second scatter plot with red markers to indicate the exit points. 
 
-    7. Use the `diff` function on the `Signal` column and assign the values to a `Entry/Exit` column to indicate trade entry and exit points in time.
+  * Create line plots for the VNQ closing prices, the 50-day moving average, and the 100-day moving average.
+  
+  * Create a composite plot that overlays all of the above into a single plot. 
+  
+---
 
-4. Plot the entry and exit points of your Short Dual Moving Average Crossover signal.
-
-    1. Use the `figure` and `axes` objects from the matplotlib library to create the figure layout and the x and y coordinates, respectively.
-
-    2. Plot the VNQ closing prices as well as the 50-day moving average and 100-day moving average.
-
-    3. Plot the entry and exit points and mark the coordinates with marker symbols.
-
-## Hint
+## Hints
 
 * Remember that taking a short position (profiting off of selling) is the inverse of taking a long position (profiting off of buying), therefore make sure the decision logic regarding your trading signal reflects this!
 
 * To read more on what a short position is, click [here!](https://www.investopedia.com/terms/s/short.asp)
+
+* Refer to the Holoviews or Hvplot documentation to see how to [compose plots](https://holoviz.org/tutorial/Composing_Plots.html). 
 
 ---
 
