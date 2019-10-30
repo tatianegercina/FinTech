@@ -2,11 +2,11 @@
 
 ### Overview
 
-In the last unit, students learned how to use machine learning to predict and forecast time series outcomes. Students used statistical approaches; such as linear regression, **Hodrick-Prescott filter**, and **GARCH** and **EGARCH** model; to forecast investment returns, volatility, and out-of-sample predictions.
+In the last unit, students learned how to use machine learning to predict and forecast time series outcomes. Students used statistical approaches; such as linear regression, **Hodrick-Prescott filter**, and **GARCH** and **EGARCH** model, to forecast investment returns, volatility, and out-of-sample predictions.
 
 In unit 11, students will dive deeper into statistics and machine learning by working with **classification** algorithms. **Classification** is the act of discovering whether or not a particular feature or element belongs to a given feature class/group. **Classification** derives categorical conclusions based off of classified/modeled data. By the end of this unit, students will be competent in the execution and evaluation of **classification** models (i.e., logistic regression and decision trees) for predicting categorical conclusions and outcomes.
 
-Today's class will walk students through two classification models/approaches: Logistic Regression and Support Vector Machines. Both models are used to predict linear outcomes. Students will also learn how to use Scikit-learn, a Python data science package, to train evaluate models and make them more efficient and effective in determining probability/outcome predictions.
+Today's class will walk students through two classification models/approaches: Logistic Regression and Support Vector Machines. Both models are used to predict linear outcomes. Students will also learn how to use Scikit-learn, a Python data science package, to train to evaluate models and make them more efficient and effective in determining probability/outcome predictions.
 
 Before students leave at the end of the class, encourage them to continue independently researching and learning more about the various ways to implement classification models, especially some of the ones not demonstrated in class (i.e., neural networks). Make sure to slack out the below links as supplementary resources.
 
@@ -75,7 +75,7 @@ By the end of class, students will be able to:
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/13wRqzWIh3ZVRYxgcfJfxUbKoZEQhiMFK8Y39dWvDG3c/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -113,7 +113,7 @@ Open the slideshow, and begin the class by welcoming students back to the second
 
 If time remains, ask students emotionally guided questions to get a feel for their current emotional state and give them a space to address any points of excitement, interests, and/or concerns.
 
-* **Machine learning** can be used to automate financial pipelines, forecast time series data and market volatility, predict fraud, analyze sentiment and parse documents, and automate day trading and make investment recommendations. However, what exactly is **machine learning**?
+* **Machine learning** can be used to automate financial pipelines, forecast time series data, and market volatility, predict fraud, analyze sentiment and parse documents, and automate day trading and make investment recommendations. However, what exactly is **machine learning**?
 
   * **Answer** Machine learning is an approach to programming that leverages libraries that provide statistical algorithms and libraries. The machine learning community has developed tried and tested statistical libraries (like **scikit-learn** and **imbalanced-learn**) that offer statistical functions for algorithmic and statistical modeling.
 
@@ -201,7 +201,7 @@ Having been introduced to classification, students will now receive a demonstrat
 
 Walkthrough the slideshow and highlight the following points:
 
-* Communicate that Logistic Regression is a statistical method for predicting binary outcomes from data. With linear regression, our linear model may provide a numerical output such as age. With logistic regression, the numerical value for age could be translated to a probability between 0 and 1. This discrete output could then be labeled as "young" vs "old". The same approach can be used to predict the probability of creditworthiness based on credit score, number of missed payments, number of public records, and credit age.
+* Communicate that Logistic Regression is a statistical method for predicting binary outcomes from data. With linear regression, our linear model may provide a numerical output such as age. With logistic regression, the numerical value for age could be translated to a probability between 0 and 1. This discrete output could then be labeled as "young" vs. "old". The same approach can be used to predict the probability of creditworthiness based on credit score, number of missed payments, number of public records, and credit age.
 
   ![logistic_1.png](Images/logistic_1.png)
   ![logistic_2.png](Images/logistic_2.png)
@@ -234,7 +234,7 @@ After presenting the slideshow, open the Jupyter notebook and complete a dry wal
 
     ![make-blobs.png](Images/make-blobs.png)
 
-* Highlight to students that the `random_state` parameter is used to preserve the state of the output from `make_blobs`. The value passed to `random_state` serves as a numerical bookmark for the data set returned from `make_blobs`. The goal is to produce the same data set no matter how many times the code is re-ran. If `random_state` is not preserved, `make_blobs` would generate a new random data set each time it is executed.
+* Highlight to students that the `random_state` parameter is used to preserve the state of the output from `make_blobs`. The value passed to `random_state` serves as a numerical bookmark for the data set returned from `make_blobs`. The goal is to produce the same data set, no matter how many times the code is re-ran. If `random_state` is not preserved, `make_blobs` would generate a new random data set each time it is executed.
 
   * Reassure students that the `random_state` argument will not prevent the `make_blobs` function from creating a randomized data set. It just ensures that if you want to retrieve that same randomized data set, you can (using the parameter provided, e.g., 42).
 
@@ -270,7 +270,7 @@ After presenting the slideshow, open the Jupyter notebook and complete a dry wal
 
 Transition into the next part of the demo by explaining to students that once the preprocessing work has been completed, the logistic regression model can be ran. Demonstrate and explain how logistic regression models are trained and executed.
 
-* **Logistic Regression** can be implemented using the sklearn `LogisticRegression` class. This module is a part of the **linear model** package, a package commonly chosen by developers to run linear regression. The object returned from the `LogisticRegression` class will be a **classifier** object, which is used to train, validate, and make predictions.
+* **Logistic Regression** can be implemented using the sklearn `LogisticRegression` class. This module is a part of the **linear model** package, a package commonly chosen by developers to run a linear regression. The object returned from the `LogisticRegression` class will be a **classifier** object, which is used to train, validate, and make predictions.
 
   ![logistic_regression_class.png](Images/logistic_regression_class.png)
 
@@ -291,7 +291,7 @@ The next step after training the model is **validating** it. A common approach i
 
   * When scoring the training data, the accuracy of the model is applied against the training data it was created with. The more data is trained, the higher the accuracy.
 
-  * Scoring of test data consists of applying the model against the test data. The test data is considered new data the model has not seen if the score will reflect the accuracy of the predictions made by the model using the test data.
+  * Scoring of test data consists of applying the model against the test data. The test data is considered new data; the model has not seen if the score will reflect the accuracy of the predictions made by the model using the test data.
 
   * If the training score is more accurate than the testing score, the model is considered overtrained. **Overtraining** the model can result in **overfitting**, where the model learned rules for predictions that apply mostly just for the training data set. The goal is to have the scores as close to each other in accuracy as possible.
 
@@ -303,7 +303,7 @@ The next step after training the model is **validating** it. A common approach i
 
     ![testing_model.png](Images/testing_model.png)
 
-Once the model is proven to be accurate for both the training and test data, the last step is to actually make predictions using an entirely new data set. Explain to students how the **sklearn** package can be used to make **logistic regression** predictions.
+Once the model is proven to be accurate for both the training and test data, the last step is actually to make predictions using an entirely new data set. Explain to students how the **sklearn** package can be used to make **logistic regression** predictions.
 
 * The **sklearn** `predict` function can be used to apply the model against a new data set. The model will predict which class the new data points will fall into (i.e., low credit risk or high credit risk).
 
@@ -422,7 +422,7 @@ If time remains, facilitate a discussion around model evaluation using the follo
 
 * If you were asked to diagnose a patient, how confident would you be in your model's prediction?
 
-Explain to students that in addition to the accuracy score, there are other metrics that we can use for model evaluation such as precision and recall.
+Explain to students that in addition to the accuracy score, there are other metrics that we can use for model evaluation, such as precision and recall.
 
 Ask if there are any questions before moving forward.
 
@@ -448,7 +448,7 @@ Open the 11.1 slides, and highlight the following:
 
     * **Answer** Neither option is preferred. Both leave opportunities for inaccuracy.
 
-    * **Answer** A model that incorrectly flags diabetes for patients that don't actually have the disease. Additional tests can be ran to refine the prediction and filter out individuals who do not have diabetes. This way, anyone with hte potential of having it can be given the treatment and attention they need.
+    * **Answer** A model that incorrectly flags diabetes for patients that don't actually have the disease. Additional tests can be ran to refine the prediction and filter out individuals who do not have diabetes. This way, anyone with the potential of having it can be given the treatment and attention they need.
 
 * Explain to students that in order to evaluate a model, they must do more than score/measure the model for accuracy. In addition to **accuracy**, a model must be measured for **precision** and **recall**, both of which can be used to eliminate **false positives** and **false negatives**.
 
@@ -492,7 +492,7 @@ Navigate to the 11.1 slides section on accuracy, precision, and recall; and high
 
   * **Calculation:** TP / (TP + FN)
 
-Encourage students to consult the following [documentation](https://blog.exsilio.com/all/accuracy-precision-recall-f1-score-interpretation-of-performance-measures/) if they need an additional explanation of precision and recall and how they are calculated.
+Encourage students to consult the following [documentation](https://blog.exsilio.com/all/accuracy-precision-recall-f1-score-interpretation-of-performance-measures/) if they need any additional explanation of precision and recall and how they are calculated.
 
 Use the remaining time to answer any questions about logistic regression models and evaluating predictions. Then, move forward with the next activity.
 
@@ -506,7 +506,7 @@ Students receive a live demonstration of how to create and use a confusion matri
 
 Open the starter-file, and highlight the below discussion points while live coding how to use a **confusion matrix**.
 
-* A **confusion matrix** is used to measure and gauge the success of a model. Confusion matrices reveal the number of true negatives and true positives (actuals) for each categorical class and compares it to the number of predicted values for each class. These values are then individually summed by column and row. The aggregate sums are then compared to gauge accuracy and precision. If the aggregates match, the model can be considered accurate and precise.
+* A **confusion matrix** is used to measure and gauge the success of a model. Confusion matrices reveal the number of true negatives and true positives (actuals) for each categorical class and compare it to the number of predicted values for each class. These values are then individually summed by column and row. The aggregate sums are then compared to gauge accuracy and precision. If the aggregates match, the model can be considered accurate and precise.
 
   ![confusion_matrix_table.png](Images/confusion_matrix_table.png)
 
@@ -527,7 +527,7 @@ Transition to the live coding aspect of the demo, and demonstrate how to use and
 
   ![confusion_matrix.png](Images/confusion_matrix.png)
 
-Communicate to students that a **classification report** can also be used to evaluate a model. When evaluating a model, the **accuracy**, **precision**, and **recall** must all be evaluated to ensure the rate of false-positives and false-negatives are minimal. The results from these tests can be stored within a **classification report**, which can be used to assess and evaluate number of predicted occurrences for each class.
+Communicate to students that a **classification report** can also be used to evaluate a model. When evaluating a model, the **accuracy**, **precision**, and **recall** must all be evaluated to ensure the rate of false-positives and false-negatives are minimal. The results from these tests can be stored within a **classification report**, which can be used to assess and evaluate the number of predicted occurrences for each class.
 
 * Classification reports calculate the precision, recall, and f1 score (accuracy in relation to precision and recall). Classification reports can be generated using the **sklearn** `metrics.classification_report` module. All that is required to execute the `classification_report` function is the actual data points and predicted data points.
 
@@ -581,7 +581,7 @@ Transition to the dry walkthrough by opening the solution file, and highlight th
 
 * A **confusion matrix** is a table that describes the performance of a model by looking at the total number of outcomes for each class. Confusion matrices look at the total number of actual outcomes and juxtapose them with predicted outcomes.
 
-  * For example, with a confusion matrix, you can aggregate the number of actual positives and compare it to the number of predicted positives. The closer the values, the better the model. The same can be said with negative outcomes.
+  * For example, with a confusion matrix, you can aggregate the number of actual positives and compare it to the number of predicted positives — the closer the values, the better the model. The same can be said with negative outcomes.
 
   * **Confusion matrices** can be a little difficult to understand at first. If students have questions/difficulty understanding, and or seem lost, use the following scenario to help reinforce how a confusion matrix is used:
 
@@ -604,7 +604,7 @@ Next, transition into the interpretation part of the review activity. Ask studen
 
 * Ask students to interpret the **classification report**. What does it mean for the **diabetes** class to have a lower recall score compared to **no diabetes**?
 
-  * **Answer** The **diabetes** predictions have a lower recall rate which means a higher rate of false negatives. There are individuals being predicted as not having diabetes that actually do. However, the data points predicting no diabetes have a higher recall score which means a lower rate of false negatives.
+  * **Answer** The **diabetes** predictions have a lower recall rate, which means a higher rate of false negatives. There are individuals being predicted as not having diabetes that actually do. However, the data points predicting no diabetes have a higher recall score, which means a lower rate of false negatives.
 
   * **Answer** The model is arguably precise but could benefit from additional training/fitting to improve predictions and reduce false negatives.
 
@@ -616,7 +616,7 @@ Ask if there are any questions before moving forward.
 
 ### 12. Student Do: Build Loan Approver (15 min)
 
-Students will participate in a bag of tricks activity where they apply the machine learning concepts and technical skills learned thus far to create a model for approving loans.
+Students will participate in a bag of tricks activity where they apply the machine learning concepts, and technical skills learned thus far to create a model for approving loans.
 
 **Instructions:** [README.md](Activities/05-Stu_Loan_Approver/README.md)
 
@@ -672,7 +672,7 @@ Continue the next part of the review by asking students questions and then expla
 
   * **Answer** Precision is the ratio of correctly predicted positive outcomes out of all predicted positive outcomes.
 
-* Recall is another performance metric that can be considered. What does recall measure? What does recall reveal about the model's predictions?
+* Recall is another performance metric that can be considered. What does the recall measure? What does recall reveal about the model's predictions?
 
   * **Answer** Recall measures the number of correct positive predictions out of all predictions. The recall reveals that our model predicts more correct denies than approves.
 
@@ -728,7 +728,7 @@ Open the slideshow to the SVM section, and highlight the following:
 
     ![support_vectors.png](Images/support_vectors.png)
 
-Educate students on the different orientations for **hyperplanes**. Provide understanding on how the orientation and position of the hyperplane is decided.
+Educate students on the different orientations for **hyperplanes**. Provide an understanding of how the orientation and position of the hyperplane is decided.
 
 ![hyperplane_orientation.png](Images/hyperplane_orientation.png)
 
@@ -742,9 +742,9 @@ Educate students on the different orientations for **hyperplanes**. Provide unde
 
 * The `kernel` parameter is used to identify the orientation of the **hyperplane**. **Kernelling** and how to use the `kernel` parameter will be addressed later in the demo.
 
-Transition into the live coding exercise by opening the starter file and demonstrating to students how to create a **SVM** model with **sklearn**.
+Transition into the live coding exercise by opening the starter file and demonstrating to students how to create an **SVM** model with **sklearn**.
 
-* In order to create a SVM model, the **sklearn** `svm.SVC` module must be imported.
+* In order to create an SVM model, the **sklearn** `svm.SVC` module must be imported.
 
   ```python
   from sklearn.svm import SVC
@@ -761,7 +761,7 @@ Transition into the live coding exercise by opening the starter file and demonst
 
   ![plot_classification.png](Images/plot_classification.png)
 
-Indicate to students that the `svm.svc` module is used to create a **SVM** model.
+Indicate to students that the `svm.svc` module is used to create an **SVM** model.
 
 * The SVC constructor supports a number of arguments, with the `kernel` argument being the most important. Provide students with a brief overview of the `kernel` argument and what **kerneling** is.
 
@@ -864,7 +864,7 @@ Now that the pre-existing data has been visualized into the corresponding classe
 
 * The predictions can then be evaluated using **sklearn's** classification report. As made clear by the precision, recall, and f-1 metrics, the model performed well.
 
-  * Remind students that the SVM model provides a higher accuracy than some of the other models. The accuracy of the model is evidenced in the performance metrics.
+  * Remind students that the SVM model provides higher accuracy than some of the other models. The accuracy of the model is evidenced in the performance metrics.
 
     ```python
     # Calculate classification report
@@ -877,7 +877,7 @@ Now that the pre-existing data has been visualized into the corresponding classe
 
 Explain to students why SVM might be used over a Logistic Regression model.
 
-* SVM is more beneficial than Logistic Regression because the model supports classification of outliers and overlapping data points
+* SVM is more beneficial than Logistic Regression because the model supports the classification of outliers and overlapping data points
 
 * SVM also provides higher accuracy with less computation power.
 
