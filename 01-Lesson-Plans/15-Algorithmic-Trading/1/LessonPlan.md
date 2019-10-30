@@ -144,8 +144,6 @@ Open the solution file and discuss the following:
 
 End the discussion with the following:
 
-* Explain that while this particular trading strategy wasn't actually very good, we will keep improving our strategies throughout the week until we have some very robust trading algorithms.
-
 * Ask the class if they would actually use this particular trading strategy with their own money and why they would or wouldn't use it. Call for a few volunteers to provide their answers.
 
 * Ask how they might formally evaluate the algorithm and then share some of the following ideas for evaluation: risk metrics such as sharp ratios, performing quantitative analysis, using data visualizations.
