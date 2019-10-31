@@ -1,228 +1,54 @@
-### 7. Instructor Do: Real-Time Data with Asyncio (15 min)
+### 7. Instructor Do: Concurreny with Asyncio (15 min)
 
-In this activity, students will use a simplified version of their trading frameworks to learn how to use a real-time data load paradigm (data retrieved continuously) rather than a batch processing data load paradigm (data retrieved all at once) with the help of asyncio, a library to write concurrent or asynchronous code that mitigates the issue of *blocking code* or code that halts the further execution of a program.
+In this activity, students will learn how to use the asyncio library--an asynchronous framework that allows a developer to write concurrent (or non-sequential) code.
 
-The purpose of this activity is to not only demonstrate what processing real-time data looks like, but also showcase the role asyncio plays in preventing the issue of blocking code.
+The purpose of this activity is to teach students how to write concurrent code that mitigates the issue of sequential code, namely *blocking code* or code that halts the further execution of downstream processes within a program.
 
-**File:** [nano_trader.py](Activities/05-Ins_Asyncio/Solved/nano_trader.py)
+**File:** [asyncio.ipynb](Activities/05-Ins_Asyncio/Solved/asyncio.ipynb)
 
-Quickly discuss the following before proceeding onward to the walk through:
-
-* What is batch data processing vs. real-time data processing?
-
-  **Answer:** Batch data processing refers to the concept of processing data that represents a duration of time that has already occurred, such as historical daily closing price data. In contrast, real-time data processing refers to the concept of processing data that is continually flowing, such as a new up-to-date closing price record every second.
-
-* What are the advantages/disadvantages of batch data processing vs. real-time data processing?
-
-  **Answer:** Batch data processing works well for efficiently processing large volumes of data collected over a period of time, but lacks the granular control of processing data at the record-level. Real-time data processing, however, works well for processing a continual flow of data at the record-level, but is generally less efficient and adds more complexity.
+Open the slideshow and discuss the following before proceeding onward to the walk through:
 
 * What is asyncio?
 
-  **Answer:** Asyncio is a library to write concurrent code using the async/await syntax. Specifically, asyncio provides the concept of asynchrony, which unlike multi-threading, implements asynchronous events as independent schedules that are "out of sync" with one another while contained within a single thread.
+  **Answer:** Asyncio is a library for writing concurrent, or more specifically, asynchronous code that allows for coroutines or functions to "pause" while waiting on their result, thereby allowing other coroutines to run in the meantime; asyncio uses an `async/await` syntax when defining such coroutines.
 
-* What is multi-threading?
+* Is there a difference between concurrent and asynchronous code?
 
-  **Answer:** Multi-threading is another method of implementing concurrent code, and uses multiple threads or scheduled tasks that run in the same allocated memory context of a process.
+  **Answer:** Concurrency is merely a broader term used for defining multiple tasks that have the ability to run in parallel. Asynchrony is a more specific type of concurrency in which tasks are able to run in parallel by allowing a task to "pause" and allow other tasks to run while it awaits for its result.
 
-* What is the difference between asynchrony and multi-threading?
+* What would be an example of a synchronous (sequential) vs asychronous (non-sequential) process?
 
-  **Answer:** While both can achieve concurrency, asynchrony prevents much of the downsides associated with multi-threading such as memory safety and race conditions by providing control over when a program shifts from one task to the next. In addition, asychrony tends to use less memory as operations are kept on a single thread.
+  **Answer:** Imagine an application needs to send an API request and receive the corresponding response for 12 URLs. Each request takes 5 seconds to send to the API and 55 seconds for the API to return a response. A sequential process could be to send a request, wait for the response, and then move onto the next URL, resulting in a total completion time of 720 seconds or 12 minutes ((5 second request + 55 response) x 12 URLs); however, a non-sequential process could be to send a request, and while waiting for the response, send the next request for the next URL and so on for all 12 URLs. This would mean that the total completion time would be cut to 330 seconds or 5 1/2 minutes ((5 second request x 12 URLs) + 55 second response for all 12 URLs).
+  
+Then open the solution file and explain the following:
 
-Open the solution file and review the following:
-
-* This program is an over-simplified version of students' trading frameworks to more easily focus on the implementation changes required to use a real-time data load paradigm; this program is less than 100 lines of code.
+* The event loop is the core of every asyncio application and manages the execution of awaitable objects, or objects that can be used in an await expression, such as Coroutines, Tasks, and Futures (we'll only focus on coroutines and tasks for simplicity); the `get_event_loop` function gets the current event loop and creates a new event loop if no current one is found.
 
   ```python
-  def initialize(cash):
-    """Initialize the dashboard, data storage, and account balances."""
-    # Initialize Account
-    account = {"balance": cash, "shares": 0}
-
-    # Initialize DataFrame
-    data_df = pd.DataFrame()
-
-    # Initialize Streaming DataFrame for the signals
-    dashboard = initialize_dashboard()
-    return account, data_df, dashboard
-
-  def initialize_dashboard():
-      """Build the dashboard."""
-      loading_text = pn.widgets.StaticText(name="Trading Dashboard", value="Loading...")
-      dashboard = pn.Column(loading_text)
-      print("init dashboard")
-      return dashboard
-
-  def fetch_data():
-      """Fetches the latest prices."""
-      kraken = ccxt.kraken(
-          {"apiKey": os.getenv("kraken_key"), "secret": os.getenv("kraken_secret")}
-      )
-      close = kraken.fetch_ticker("BTC/USD")['close']
-      datetime = kraken.fetch_ticker("BTC/USD")['datetime']
-      df = pd.DataFrame({'close': [close], 'date': [datetime]})
-      df.index = pd.to_datetime([datetime])
-      return df
-
-  def update_dashboard(account, data, dashboard):
-      """Updates the dashboard with widgets, plots, and financial tables"""
-      # Reset DataFrame index
-      data.reset_index
-
-      # Create price plot of closing, SMA10, and SMA20
-      price_plot = data.hvplot.line(x='index', y=['close'], value_label='Price', width=1000, height=400, rot=90)
-
-      # Create rows, columns, and tabs
-      row_two = pn.Row(price_plot)
-      column = pn.Column(row_two)
-      tabs = pn.Tabs(("Summary", column))
-
-      # Assign tab to dashboard object
-      dashboard[0] = tabs
-      return
-
-  async def main():
-
-      while True:
-          global account
-          global data_df
-          global dashboard
-
-          # Fetch latest pricing data
-          new_record_df = fetch_data()
-
-          # Save latest pricing data to a global DataFrame
-          if data_df.empty:
-              data_df = new_record_df.copy()
-          else:
-              data_df = data_df.append(new_record_df, ignore_index=False)
-
-          # Update the dashboard
-          update_dashboard(account, data_df, dashboard)
-          await asyncio.sleep(1)
-
-  account, data_df, dashboard = initialize(100000)
-  dashboard.servable()
-
-  # Python 3.7+
+  import asyncio
+  import time
+  
   loop = asyncio.get_event_loop()
-  loop.run_until_complete(main())
   ```
 
-* The `fetch_data` function has been modified to now use the `fetch_ticker` function from the ccxt library, which grabs the latest pricing data for BTC/USD rather than data spanning a period of time, and imports the resulting data into a DataFrame that can be returned.
+* A Coroutine is an asyncio process defined by the `async/await` syntax. Despite its name, a Coroutine is merely a single process that does not run concurrently but *can* if used in conjunction with asyncio Tasks. In this case, a coroutine defined as the `main` function is executed using the `run_until_complete` function of the current event loop and prints the string "One", then waits 1 second, and finally prints the string "Two".
 
-  ```python
-  def fetch_data():
-    """Fetches the latest prices."""
-    kraken = ccxt.kraken(
-        {"apiKey": os.getenv("kraken_key"), "secret": os.getenv("kraken_secret")}
-    )
-    close = kraken.fetch_ticker("BTC/USD")['close']
-    datetime = kraken.fetch_ticker("BTC/USD")['datetime']
-    df = pd.DataFrame({'close': [close], 'date': [datetime]})
-    df.index = pd.to_datetime([datetime])
-    return df
-  ```
+  ![single-coroutine-no-error](Images/single-coroutine-no-error.png)
 
-* The `initialize` function has also been slightly modified to initialize an empty DataFrame, so as to hold the contents of the continuous data flow fetched from the Kraken exchange.
+* It should be noted that Jupyter already runs an event loop for the cells in a Jupyter Notebook file. It is for this reason that we used a try-catch clause to ignore the following RunTimeError (for aesthetic reasons). Normally, asyncio would be used in a classic Python or .py file without such an error occurrence.
 
-  ```python
-    def initialize(cash):
-    """Initialize the dashboard, data storage, and account balances."""
-    # Initialize Account
-    account = {"balance": cash, "shares": 0}
+  ![single-coroutine-error](Images/single-coroutine-error.png)
 
-    # Initialize DataFrame
-    data_df = pd.DataFrame()
+* Multiple coroutines can be run in sequence by merely calling the await expression on multiple async defined functions. In this case, the `say_after` waits 1 second before printing the string "One" and then waits another 2 seconds before printing the string "Two". Total completion time is 3 seconds.
 
-    # Initialize Streaming DataFrame for the signals
-    dashboard = initialize_dashboard()
-    return account, data_df, dashboard
-  ```
+  ![single-coroutine-multiple-times](Images/single-coroutine-multiple-times.png)
 
-* The `update_dashboard` function has been modified to only display the price plot of the closing price of BTC/USD for simplicity purposes.
+* A Task is a concurrent execution of a coroutine. Therefore, multiple tasks of a single coroutine will be executed concurrently. In this case, tasks are explicitly created using the asyncio `create_task` function and the first task waits 1 second and prints the string "One", and *while* the first task is waiting for the 1 second duration, the second task is executed, waits 2 seconds, and prints the string "Two". Total completion time is now only 2 seconds, a 33% reduction in time.
 
-  ```python
-  def update_dashboard(account, data, dashboard):
-      """Updates the dashboard with widgets, plots, and financial tables"""
-      # Reset DataFrame index
-      data.reset_index
+  ![multiple-tasks](Images/multiple-tasks.png)
 
-      # Create price plot of closing, SMA10, and SMA20
-      price_plot = data.hvplot.line(x='index', y=['close'], value_label='Price', width=1000, height=400, rot=90)
+* Similarly, the asyncio `gather` function can accept multiple calls of a single coroutine and create multiple tasks under-the-hood. Therefore, the multiple tasks are executed concurrently and the total completion time is still 2 seconds.
 
-      # Create rows, columns, and tabs
-      row_two = pn.Row(price_plot)
-      column = pn.Column(row_two)
-      tabs = pn.Tabs(("Summary", column))
+  ![multiple-tasks-gather](Images/multiple-tasks-gather.png)
 
-      # Assign tab to dashboard object
-      dashboard[0] = tabs
-      return
-  ```
-
-* The newly constructed `main` function houses the workflow for processing data in real-time. By wrapping the code within a continuous while loop, the `main` function constantly fetches new pricing data for BTC/USD from the Kraken exchange, checks and appends the new record to a global DataFrame, updates the dashboard with the new data, and repeats the loop after waiting 1 second. The result is a working dashboard that refreshes the closing price of BTC/USD every second.
-
-  ```python
-  async def main():
-
-    while True:
-        global account
-        global data_df
-        global dashboard
-
-        # Fetch latest pricing data
-        new_record_df = fetch_data()
-
-        # Save latest pricing data to a global DataFrame
-        if data_df.empty:
-            data_df = new_record_df.copy()
-        else:
-            data_df = data_df.append(new_record_df, ignore_index=False)
-
-        # Update the dashboard
-        update_dashboard(account, data_df, dashboard)
-        await asyncio.sleep(1)
-
-  account, data_df, dashboard = initialize(100000)
-  dashboard.servable()
-
-  # Python 3.7+
-  loop = asyncio.get_event_loop()
-  loop.run_until_complete(main())
-  ```
-
-  ![nano-trader-asyncio](Images/nano-trader-asyncio.png)
-
-* By defining the `main` function as an asynchronous function, the asyncio `get_event_loop` and `run_until_complete` functions handle the execution of the `main` function and prevent the `main` function from blocking the execution of the program due to its continuous while loop. For example, if the same code were to be replaced without the asyncio features, the program would stall as the while loop would prevent the dashboard from being served.
-
-  ```python
-  def main():
-
-    while True:
-        global account
-        global data_df
-        global dashboard
-
-        # Fetch latest pricing data
-        new_record_df = fetch_data()
-
-        # Save latest pricing data to a global DataFrame
-        if data_df.empty:
-            data_df = new_record_df.copy()
-        else:
-            data_df = data_df.append(new_record_df, ignore_index=False)
-
-        # Update the dashboard
-        update_dashboard(account, data_df, dashboard)
-        time.sleep(1)
-
-  account, data_df, dashboard = initialize(100000)
-  dashboard.servable()
-
-  # Python 3.7+
-  main()
-  ```
-
-  ![nano-trader-without-asyncio](Images/nano-trader-without-asyncio.png)
-
-Answer any questions before moving on.
+* As can be seen, running code asychronously (non-sequentially) as opposed to synchronously (sequentially) can have significant performance benefits and should be implemented to optimize and ultimately make applications more robust.
