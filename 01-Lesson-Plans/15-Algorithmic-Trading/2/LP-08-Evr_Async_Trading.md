@@ -102,7 +102,7 @@ Open the solution file and walk through the following with the class:
       update_dashboard(account, signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
   ```
 
-* Furthermore, because students' trading frameworks are now using real-time data, data can now be evaluated at a more granular level such that students can now make decisions based at the record level.
+* Because the trading framework is now using real-time data, data can now be evaluated at a more granular level. This allows decisions to be based at the record level.
 
   ```python
   account = execute_trade_strategy(tested_signals, account)
