@@ -22,5 +22,19 @@ Open the slideshow and discuss the following before proceeding onward to the wal
   
 Then open the solution file and explain the following:
 
-* We say that an object is an awaitable object if it can be used in an await expression. Many asyncio APIs are designed to accept awaitables; there are three main types of awaitable objects: Coroutines, Tasks, and Futures.
+* The event loop is the core of every asyncio application and manages the execution of awaitable objects, or objects that can be used in an await expression, such as Coroutines, Tasks, and Futures (we'll only focus on coroutines and tasks for simplicity); the `get_event_loop` function gets the current event loop and creates a new event loop if no current one is found.
 
+  ```python
+  import asyncio
+  import time
+  
+  loop = asyncio.get_event_loop()
+  ```
+
+* A Coroutine is an expression defined by the `async/await` syntax. Despite its name, a Coroutine is merely a single asyncio process that does not run concurrently but *can* if used in conjunction with Tasks. In this case, a coroutine defined as the `main` function is executed using the `run_until_complete` function of the current event loop and prints the string "One", then waits 1 second, and finally prints the string "Two".
+
+  ![single-coroutine-no-error](Images/single-coroutine-no-error.png)
+
+* It should be noted that Jupyter already runs an event loop for the cells in a Jupyter Notebook file. It is for this reason that we used a try-catch clause to ignore the following RunTimeError (for aesthetic reasons). Normally, asyncio would be used in a classic python file.
+
+  ![single-coroutine-error](Images/single-coroutine-error.png)
