@@ -10,17 +10,27 @@ Recap the skills and concepts learned throughout the lesson, and engage students
 
   * What is the purpose of an algorithmic trading framework? What does it look like?
 
+    **Answer:** The purpose of an algorithmic trading framework is to create an end-to-end implementation of working full stack financial trading application. Namely, a framework works by abstracting code into functions, so that the underlying code can potentially be further modified in the future to include additional functionality or be completely replaced altogether.  
+
   * What is the ccxt library and what does it do? Why is it a convenient library to have in terms of trading?
+
+    **Answer:** The ccxt library is a Cryptocurrency Exchange Trading API that allows a developer to access the many cryptocurrency APIs, such as the Kraken API, through a single API interface.
 
   * What is the asyncio library? Why was it important for our algorithmic trading applications?
 
+    **Answer:** The asyncio library is an asychronous framework that allows for producing concurrent code. Using asyncio allowed for us to bypass the blocking nature of the continuous while loop, thereby facilitating real-time data loads.
+
   * What is data persistence? Why is it important?
+
+    **Answer:** Data persistence is the concept of storing or "persisting" data in a reliable location such as a database. It is often important for failure prevention/disaster recovery in the event that an application fails, meaning that an application can pick up where it last failed due to the most recent "save" point.
 
   * What is the streamz library? What benefits did it provide for our algorithmic trading applications?
 
+    **Answer:** The streamz library allowed for streaming of data to our Panel dashboard and associated visualizations, thereby mitigating the need to re-build the dashboard each time.
+
 * Ask if there are any volunteers who would like to add anything that has not been previously stated.
 
-* Ask students to identify two things they'd like to practice more from today's lesson that they might have struggled with conceptually, and in particular, how the lesson could be better taught from their perspective. Encourage them to do additional practice and reading outside of class to reinforce their knowledge and skill.
+* Ask students to identify two things they'd like to practice more from today's lesson that they might have struggled with conceptually.
 
 Finish the recap with a few statements of encouragement:
 
