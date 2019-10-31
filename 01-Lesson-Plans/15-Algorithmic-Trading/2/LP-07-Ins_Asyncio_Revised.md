@@ -31,7 +31,7 @@ Then open the solution file and explain the following:
   loop = asyncio.get_event_loop()
   ```
 
-* A Coroutine is an expression defined by the `async/await` syntax. Despite its name, a Coroutine is merely a single asyncio process that does not run concurrently but *can* if used in conjunction with Tasks. In this case, a coroutine defined as the `main` function is executed using the `run_until_complete` function of the current event loop and prints the string "One", then waits 1 second, and finally prints the string "Two".
+* A Coroutine is an asyncio process defined by the `async/await` syntax. Despite its name, a Coroutine is merely a single process that does not run concurrently but *can* if used in conjunction with asyncio Tasks. In this case, a coroutine defined as the `main` function is executed using the `run_until_complete` function of the current event loop and prints the string "One", then waits 1 second, and finally prints the string "Two".
 
   ![single-coroutine-no-error](Images/single-coroutine-no-error.png)
 
@@ -39,6 +39,6 @@ Then open the solution file and explain the following:
 
   ![single-coroutine-error](Images/single-coroutine-error.png)
 
-* Multiple coroutines can be run in sequence by merely calling the await expression on multiple functions. In this case, the `say_after` waits 1 second before printing the string "One" and then waits another 2 seconds before printing the string "Two".
+* Multiple coroutines can be run in sequence by merely calling the await expression on multiple async defined functions. In this case, the `say_after` waits 1 second before printing the string "One" and then waits another 2 seconds before printing the string "Two".
 
   ![multiple-coroutines-in-sequence](Images/multiple-coroutines-in-sequence.png)
