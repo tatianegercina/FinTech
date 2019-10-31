@@ -30,7 +30,13 @@ Recap the skills and concepts learned throughout the lesson, and engage students
 
 * Ask if there are any volunteers who would like to add anything that has not been previously stated.
 
-* Ask students to identify two things they'd like to practice more from today's lesson that they might have struggled with conceptually.
+Then, get students reflecting on what they've learned so far:
+
+* Ask students how might they apply what they've learned so far in Unit 15. Will they go on to manage their own investments through automation?
+
+* Ask students how they now feel regarding algorithmic trading (comfortable or uncomfortable?).
+
+* Ask students to identify two potential things they'd like to practice more from today's lesson that they might have struggled with conceptually.
 
 Finish the recap with a few statements of encouragement:
 
