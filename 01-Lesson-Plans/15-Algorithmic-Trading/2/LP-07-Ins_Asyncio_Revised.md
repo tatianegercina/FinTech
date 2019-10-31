@@ -35,6 +35,10 @@ Then open the solution file and explain the following:
 
   ![single-coroutine-no-error](Images/single-coroutine-no-error.png)
 
-* It should be noted that Jupyter already runs an event loop for the cells in a Jupyter Notebook file. It is for this reason that we used a try-catch clause to ignore the following RunTimeError (for aesthetic reasons). Normally, asyncio would be used in a classic python file.
+* It should be noted that Jupyter already runs an event loop for the cells in a Jupyter Notebook file. It is for this reason that we used a try-catch clause to ignore the following RunTimeError (for aesthetic reasons). Normally, asyncio would be used in a classic Python or .py file.
 
   ![single-coroutine-error](Images/single-coroutine-error.png)
+
+* Multiple coroutines can be run in sequence by merely calling the await expression on multiple functions. In this case, the `say_after` waits 1 second before printing the string "One" and then waits another 2 seconds before printing the string "Two".
+
+  ![multiple-coroutines-in-sequence](Images/multiple-coroutines-in-sequence.png)
