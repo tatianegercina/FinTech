@@ -764,7 +764,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 8. Everyone Do: Async Trading (15 mins)
+### 9. Everyone Do: Async Trading (15 mins)
 
 In this activity, now that students understand how to transition their trading frameworks from performing batch processing data loads to real-time data loads with the help of asyncio, instructors will now guide students on how to execute trades based on the continual flow of data.
 
@@ -903,7 +903,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 9. Everyone Do: Persisting Real-Time Data (15 mins)
+### 10. Everyone Do: Persisting Real-Time Data (15 mins)
 
 In this activity, students will learn how to persist their real-time data to a sqlite database.
 
@@ -1017,7 +1017,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 9. Instructor Do: Streaming Data with Streamz (15 mins)
+### 11. Instructor Do: Streaming Data with Streamz (15 mins)
 
 In this activity, students will learn how to use the Streamz library to create a dedicated pipeline for continuous streaming data.
 
@@ -1058,7 +1058,7 @@ Ask any questions before moving on.
 
 ---
 
-### 10. Student Do: Stream Trading (15 min)
+### 12. Student Do: Stream Trading (15 min)
 
 In this activity, students will learn how to use the Streamz library to create a dedicated pipeline for continuous streaming data.
 
@@ -1181,7 +1181,7 @@ Answer any questions before moving on.
 
 ---
 
-### 11. Instructor Do: Reflect (10 min)
+### 13. Instructor Do: Reflect (10 min)
 
 This activity will conclude today's lesson on Algorithmic Trading Day 2 and provide a chance for students to reflect upon what they've learned throughout the day.
 
