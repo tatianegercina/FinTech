@@ -90,63 +90,41 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Student Do: Trading Functions (10 mins)
+### 2. Student Do: Trading Functions (5 min)
 
-In this activity, students will be given a random sequence of trading function names and will be asked to propose the correct order of the functions if they were to be implemented in an algorithmic trading application.
+In this activity, students will be given a random sequence of trading function names and will be asked to propose the correct order of the functions if they were to be implemented in an algorithmic trading application. Note that there is not a single precise order, so treat this as a thought exercise to help drive engagement and discussion around the use of frameworks to encapsulate and abstract code.
 
 **Files:**
 
 * [Instructions](Activities/01-Stu_Trading_Functions/README.md)
 
-* [Solution](Activities/01-Stu_Trading_Functions/Solved/jarvis_v1.py)
+* [jarvis.py](Activities/01-Stu_Trading_Functions/Unsolved/jarvis.py)
 
-Open the slides and explain the following to students:
+### 3. Instructor Do: Review Trading Functions (10 min)
 
-* Before designing an algorithmic trading framework, students need to first determine the order or workflow of the individual functions that constitute the holistic operation of the framework. Therefore, in this case, students will need to decide what is the proper order for a random sequence of trading functions if they were to be implemented in an algorithmic trading application.
+Call on different students to describe their function call order and live code their solution directly into the unsolved Python script.
 
-* Doing this exercise helps students to mentally map out the process required for an end-to-end algorithmic trading application and should reinforce the importance of the core algorithmic trading concepts taught in day 1.
+After displaying a few student solutions, explain the following points:
 
-Then, slack out the instructions and review the solution when ready:
+* Even without code, a framework provides an abstraction that is easy to read, understand, and use. This is a very powerful programming technique that is analogous to providing an API to the code.
 
-* The correct order of the trading functions is as follows: first set up the necessary data structures and dashboard objects, obtain the financial data, generate signals from such financial data, backtest the signal data, execute the trade strategy, evaluate the results of the trade strategy, update the dashboard, and wrap all the component functions into a single main event loop.
+* By encapsulating the code in functions, we can swap code out when necessary. For example, fetching data from a file or an API can easily be changed inside of the `fetch_data` function without affecting how the functions are called.
 
-  ```python
-  def initialize(cash=None):
-    """Initialize the dashboard, data storage, and account balances."""
-    return
+Open the solution and highlight the solution that was provided:
 
-  def build_dashboard():
-      """Build the dashboard."""
-      return
+```python
+initialize()
+fetch_data()
+generate_signals()
+execute_backtest()
+execute_trade_strategy()
+evaluate_metrics()
+build_dashboard()
+```
 
-  def fetch_data():
-      """Fetches the latest prices."""
-      return
+* The true order of this solution may change once the code and behavior of each function is provided, but even without code, the call order will typically follow a pattern of initializing data containers, fetching data, transforming or using the data, and displaying the data.
 
-  def generate_signals():
-      """Generates trading signals for a given dataset."""
-      return
-
-  def execute_backtest():
-      """Backtests signal data."""
-      return
-
-  def execute_trade_strategy():
-      """Makes a buy/sell/hold decision."""
-      return
-
-  def evaluate_metrics():
-      """Generates evaluation metrics from backtested signal data."""
-      return
-
-  def update_dashboard():
-      """Updates the dashboard."""
-      return
-
-  def main():
-      """Main Event Loop."""
-      return
-  ```
+* By placing the call order in a main function, it can be easy to control and update the function call order in a single place in the program.
 
 Ask any questions before moving on.
 
@@ -589,7 +567,7 @@ Open the slideshow and discuss the following before proceeding onward to the wal
 * What would be an example of a synchronous (sequential) vs asychronous (non-sequential) process?
 
   **Answer:** Imagine an application needs to send an API request and receive the corresponding response for 12 URLs. Each request takes 5 seconds to send to the API and 55 seconds for the API to return a response. A sequential process could be to send a request, wait for the response, and then move onto the next URL, resulting in a total completion time of 720 seconds or 12 minutes ((5 second request + 55 response) x 12 URLs); however, a non-sequential process could be to send a request, and while waiting for the response, send the next request for the next URL and so on for all 12 URLs. This would mean that the total completion time would be cut to 330 seconds or 5 1/2 minutes ((5 second request x 12 URLs) + 55 second response for all 12 URLs).
-  
+
 Then open the solution file and explain the following:
 
 * The event loop is the core of every asyncio application and manages the execution of awaitable objects, or objects that can be used in an await expression, such as Coroutines, Tasks, and Futures (we'll only focus on coroutines and tasks for simplicity); the `get_event_loop` function gets the current event loop and creates a new event loop if no current one is found.
@@ -597,7 +575,7 @@ Then open the solution file and explain the following:
   ```python
   import asyncio
   import time
-  
+
   loop = asyncio.get_event_loop()
   ```
 
@@ -1193,7 +1171,7 @@ Recap the skills and concepts learned throughout the lesson, and engage students
 
   * What is the purpose of an algorithmic trading framework? What does it look like?
 
-    **Answer:** The purpose of an algorithmic trading framework is to create an end-to-end implementation of working full stack financial trading application. Namely, a framework works by abstracting code into functions, so that the underlying code can potentially be further modified in the future to include additional functionality or be completely replaced altogether.  
+    **Answer:** The purpose of an algorithmic trading framework is to create an end-to-end implementation of working full stack financial trading application. Namely, a framework works by abstracting code into functions, so that the underlying code can potentially be further modified in the future to include additional functionality or be completely replaced altogether.
 
   * What is the ccxt library and what does it do? Why is it a convenient library to have in terms of trading?
 
