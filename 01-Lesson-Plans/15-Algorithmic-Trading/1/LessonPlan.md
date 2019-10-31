@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's class will introduce students to the concept of **algorithmic trading** in Python. Traditional trading, or the manual purchase and sale of assets such as stocks, has begun to shift to more automated methods due to the advancements in network speed, computing power, and available financial trading APIs. Therefore, students will learn the fundamentals of algorithmic trading and deconstruct the process of producing a functional algorithmic trading model.
+Today's class will introduce students to **algorithmic trading** in Python. Traditional trading, or the manual purchase and sale of assets such as stocks, has begun to shift to more automated methods due to the advancements in network speed, computing power, and available financial trading APIs. Therefore, students will learn the fundamentals of algorithmic trading and deconstruct the process of producing a functional algorithmic trading model.
 
 In particular, students will learn how to generate trading signals from raw data, backtest a trading strategy using such signals, produce evaluation metrics regarding overall portfolio and per-trade performance, and construct a trading dashboard similar to commercial online trading platforms. By the end of this unit, students will also incorporate machine learning to automate and improve portfolio management and trade performance for maximum profitability with minimal risk.
 
@@ -42,21 +42,19 @@ By the end of class, students will be able to:
 
 * Encourage students to review supplementary resources, to reach out to TAs individually for assistance, and to attend office hours to address any unanswered questions or confusion.
 
-* Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
-
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 15.1 Slides]().
+The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+The time tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTracker.xlsx)
 
 ---
 
-### 1. Instructor Do: Welcome Class (5 min)
+### 1. Instructor Do: Welcome Class (10 min)
 
 In this activity, students are introduced to what algorithmic trading is and why it's useful for FinTech professionals. In particular, this section is a key opportunity to build excitement about creating a process to automate trades, evaluate risk, and simplify participation in the market through the execution of a single program.
 
@@ -160,11 +158,11 @@ In this activity, students will learn what differentiates technical analysis fro
 
 **Files:** [dual_ma_crossover.ipynb](Activities/02-Ins_Trading_Signals/Solved/dual_ma_crossover.ipynb)
 
-Navigate to the 15.1 trading signals section of the slides, and highlight the following:
+Navigate to the trading signals section of the slides, and highlight the following:
 
-* Explain to students that technical analysis is an (often) short-term trading discipline in which investments (such as stocks) are evaluated based on their price action or movement.
+* Technical analysis is an (often) short-term trading discipline in which investments (such as stocks) are evaluated based on their price action or movement.
 
-* Contrast technical analysis with fundamental analysis by explaining that fundamental analysis is an investment discipline in which investments (such as stocks) are evaluated based on their intrinsic qualities such as financial (income statement, balance sheet, and cash flow statement) or economic data about the underlying company.
+* Fundamental analysis is an investment discipline in which investments (such as stocks) are evaluated based on their intrinsic qualities such as financial (income statement, balance sheet, and cash flow statement) or economic data about the underlying company.
 
 Engage students by asking if anyone has any guesses or knowledge of what the following terms are. Make sure to communicate to students that they are not expected to have the answers yet.
 
@@ -264,7 +262,8 @@ Open the solution file and highlight the following points:
       legend=False,
       ylabel='Price in $',
       width=1000,
-      height=400)
+      height=400
+  )
 
   # Visualize entry position relative to close price
   entry = signals_df[signals_df['Entry/Exit'] == 1.0]['close'].hvplot.scatter(
@@ -272,20 +271,23 @@ Open the solution file and highlight the following points:
       legend=False,
       ylabel='Price in $',
       width=1000,
-      height=400)
+      height=400
+  )
 
   # Visualize close price for the investment
   security_close = signals_df[['close']].hvplot(
       line_color='lightgray',
       ylabel='Price in $',
       width=1000,
-      height=400)
+      height=400
+  )
 
   # Visualize moving averages
   moving_avgs = signals_df[['SMA50', 'SMA100']].hvplot(
       ylabel='Price in $',
       width=1000,
-      height=400)
+      height=400
+  )
 
   # Overlay plots
   entry_exit_plot = security_close * moving_avgs * entry * exit
@@ -316,23 +318,15 @@ In this activity, students will take what they've learned about generating tradi
 
 **File:** [the_big_short.ipynb](Activities/03-Stu_Trading_Signals/Solved/the_big_short.ipynb)
 
+Take a moment to explain that generating a short position dual moving average crossover trading signal involves:
+
+* Calculating a short window rolling moving average and a long window rolling moving average of closing prices.
+
+* Defining logic for an active trade signal as 1 when the short MA crosses under the long MA and 0 when the short MA crosses above the long MA.
+
+* Calculating the points at which an entry or exit position should be made using 1 or -1.
+
 Open the solution file and review the following:
-
-* Be mindful when dealing with time-series data, it is sometimes important to view the entirety of the data in the DataFrame. Therefore, using the pandas `set_option` function allows users to extend the maximum rows and columns that a Pandas DataFrame will display.
-
-  ```python
-  pd.set_option('display.max_rows', 2000)
-  pd.set_option('display.max_columns', 2000)
-  pd.set_option('display.width', 1000)
-  ```
-
-* Generating a short position dual moving average crossover trading signal involves:
-
-  * Calculating a short window rolling moving average and a long window rolling moving average of closing prices.
-
-  * Defining logic for an active trade signal as 1 when the short MA crosses under the long MA and 0 when the short MA crosses above the long MA.
-
-  * Calculating the points at which an entry or exit position should be made using 1 or -1.
 
 * The first step in identifying entry/exit positions is to create a rolling window for moving averages. This can be done using the Pandas `rolling` function.
 
@@ -365,7 +359,6 @@ Open the solution file and review the following:
 
     ![short-dual-ma-crossover](Images/short-dual-ma-crossover.png)
 
-
 * The `diff` function calculates the difference in active vs. non-active trading periods suggested by the short position trading signal, 1 or 0. Therefore, values defined for specific entry and exit points become 1 or -1.
 
     ```python
@@ -389,7 +382,7 @@ In this activity, students will learn how to test the performance of an algorith
 
 **Files:** [backtesting.ipynb](Activities/04-Ins_Backtesting/Solved/backtesting.ipynb)
 
-First, present the following discussion points and use the below questions and answers to elicit student engagement:
+First, present the following discussion points and use the questions below to elicit student engagement:
 
 * Backtesting is the process for measuring the overall performance of a trading strategy using historical stock prices to simulate executed trades dictated by the calculated trading signals and trade decision logic.
 
@@ -477,7 +470,7 @@ Walk students through each step required to implement manual backtesting. Highli
 
   ![portfolio-total](Images/portfolio-total.png)
 
-* Lastly, the `Portfolio Daily Returns` and the `Portfolio Cumulative Returns` are calculated using the `pct_change` and `cumprod` functions respectively, as done in the previous units of this course.
+* The `Portfolio Daily Returns` and the `Portfolio Cumulative Returns` are calculated using the `pct_change` and `cumprod` functions respectively, as done in the previous units of this course.
 
   ```python
   # Calculate the portfolio daily returns
@@ -590,7 +583,11 @@ Open the solution file and review the following:
 
 ---
 
-### 10. Instructor Do: Evaluations (10 min)
+### 10. BREAK (15 min)
+
+---
+
+### 11. Instructor Do: Evaluation Metrics (10 min)
 
 Students will receive a dry walkthrough of the various evaluation metrics that can be used to evaluate their trading algorithms, namely portfolio and trade-related evaluation metrics. This will include revisiting metrics such as cumulative returns and Sharpe ratios, as well as new metrics such as the Sortino ratio. The instructor will explain how the metrics are calculated and how they are used.
 
@@ -633,7 +630,7 @@ Transition to a dry walkthrough of the code used to calculate each of these metr
 * Explain the code to calculate annual volatility. Emphasize that annual volatility involves calculating the standard deviation for each daily return. The standard deviation is then annualized by multiplying by the number of trading days in the year.
 
   ```python
-  annual_volatility = ((1 + signals_df['Portfolio Daily Returns'].std())** 252 - 1)
+  annual_volatility = ((1 + signals_df['Portfolio Daily Returns'].std())**252 - 1)
   ```
 
 * Ask students if anyone remembers how to calculate a Sharpe ratio.
@@ -680,7 +677,7 @@ Ask if there are any questions before moving forward.
 
 ---
 
-### 11. Students Do: The Big Short Part III (15 mins)
+### 12. Students Do: The Big Short Part III (15 mins)
 
 Now that students have developed a Short Dual Moving Average trading strategy and backtested their strategy against historical VNQ prices, students can now calculate the portfolio and trade evaluation metrics to ascertain the performance of their short strategy.
 
@@ -690,7 +687,7 @@ Now that students have developed a Short Dual Moving Average trading strategy an
 
 ---
 
-### 12. Instructor Do: The Big Short Part III Review (10 mins)
+### 13. Instructor Do: The Big Short Part III Review (10 mins)
 
 **Files:**
 
@@ -720,7 +717,7 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 12. Everyone Do: Trading Dashboard (20 min)
+### 14. Everyone Do: Trading Dashboard (15 min)
 
 In this activity, instructors will walk students through creating a trading dashboard with Panel using the evaluation metrics generated from prior activities. At this point, students should already have exposure to creating dashboards using Panel.
 
@@ -788,7 +785,7 @@ Ask if there are any questions before moving forward.
 
 ---
 
-### 13. Instructor Do: Reflect (15 min)
+### 15. Instructor Do: Reflect (15 min)
 
 This activity will conclude today's lesson on Algorithmic Trading Day 1 and provide a chance for students to reflect upon what they've learned throughout the day.
 
