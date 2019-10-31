@@ -35,7 +35,7 @@ Then open the solution file and explain the following:
 
   ![single-coroutine-no-error](Images/single-coroutine-no-error.png)
 
-* It should be noted that Jupyter already runs an event loop for the cells in a Jupyter Notebook file. It is for this reason that we used a try-catch clause to ignore the following RunTimeError (for aesthetic reasons). Normally, asyncio would be used in a classic Python or .py file.
+* It should be noted that Jupyter already runs an event loop for the cells in a Jupyter Notebook file. It is for this reason that we used a try-catch clause to ignore the following RunTimeError (for aesthetic reasons). Normally, asyncio would be used in a classic Python or .py file without such an error occurrence.
 
   ![single-coroutine-error](Images/single-coroutine-error.png)
 
