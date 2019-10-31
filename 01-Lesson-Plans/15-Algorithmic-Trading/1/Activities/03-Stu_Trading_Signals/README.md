@@ -6,7 +6,7 @@ If you had an algorithm to monitor and *short* the market in 2008, could you hav
 
 ## Instructions
 
-Using the [starter file](Unsolved/short_dual_ma_crossover.ipynb), complete the following steps:
+Using the [starter file](Unsolved/the_big_short.ipynb), complete the following steps:
 
 * Create a Dual Moving Average Crossover Trading Signal that indicates shorting opportunities.
 
@@ -21,17 +21,17 @@ Using the [starter file](Unsolved/short_dual_ma_crossover.ipynb), complete the f
   * Initialize a new DataFrame column `Signal` and set the values to 0.
 
   * Use the numpy `where` function to set the signal column to `1.0` when the SMA50 is less than SMA100 and `0.0` otherwise.
-  
+
   * Use the `diff` function on the `Signal` column and assign the values to a `Entry/Exit` column to indicate trade entry and exit points in time.
 
 * Plot the entry and exit points of your Short Dual Moving Average Crossover signal.
 
-  * Create scatter plots for the entry and exit points. Use the color green to indicate the entry points. Use a second scatter plot with red markers to indicate the exit points. 
+  * Create scatter plots for the entry and exit points. Use the color green to indicate the entry points. Use a second scatter plot with red markers to indicate the exit points.
 
   * Create line plots for the VNQ closing prices, the 50-day moving average, and the 100-day moving average.
-  
-  * Create a composite plot that overlays all of the above into a single plot. 
-  
+
+  * Create a composite plot that overlays all of the above into a single plot.
+
 ---
 
 ## Hints
@@ -40,7 +40,7 @@ Using the [starter file](Unsolved/short_dual_ma_crossover.ipynb), complete the f
 
 * To read more on what a short position is, click [here!](https://www.investopedia.com/terms/s/short.asp)
 
-* Refer to the Holoviews or Hvplot documentation to see how to [compose plots](https://holoviz.org/tutorial/Composing_Plots.html). 
+* Refer to the Holoviews or Hvplot documentation to see how to [compose plots](https://holoviz.org/tutorial/Composing_Plots.html).
 
 ---
 

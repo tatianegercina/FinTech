@@ -12,7 +12,7 @@ You completed this in the last activity, nice job!
 
 The pre-requisite steps for developing the Short Position Dual Moving Average Crossover trading strategy have already been provided for you. Therefore, continue onwards to the backtesting parts of the notebook file.
 
-Using the [starter file](Unsolved/the_big_short_part_2.ipynb.ipynb), complete the following steps:
+Using the [starter file](Unsolved/the_big_short_part_2.ipynb), complete the following steps:
 
 * Set an `initial_capital` variable to 100000, representing the simulated starting portfolio value.
 

@@ -508,7 +508,7 @@ In this activity, students will now take the Short Position Dual Moving Average 
 
 ### 9. Instructor Do: The Big Short Part II Review (10 mins)
 
-**File:** [the_big_short.ipynb](Activities/03-Backtesting/Solved/the_big_short_part_2.ipynb)
+**File:** [the_big_short.ipynb](Activities/05-Stu_Backtesting/Solved/the_big_short_part_2.ipynb)
 
 Open the solution file and review the following:
 
