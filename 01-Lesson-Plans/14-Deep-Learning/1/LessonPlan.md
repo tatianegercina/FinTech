@@ -2,9 +2,11 @@
 
 ### Overview
 
-Today's class introduces students to a neural networks, a new member of the machine learning algorithms that can be used for classification and regression problems but are perhaps uniquely able to learn very complex, nonlinear models. Conceptually, neural networks were inspired by neurons in the human brain, and have a similar property of scaling to meet the complex environments that they operate in.
+Today's class introduces students to neural networks, a new member of the machine learning algorithms that can be used for classification and regression problems but are perhaps uniquely able to learn very complex, nonlinear models.
 
-Neural networks are very flexible in their applications, but they are not necessarily meant to be "plug-and-play." From preprocessing input data to constructing a neural network architecture, students will learn the process to construct and use neural networks successfully.
+Conceptually, neural networks were inspired by neurons in the human brain, and have a similar property of scaling to meet the complex environments where they operate.
+
+Neural networks are very flexible in their applications, but they are not necessarily meant to be "plug-and-play". From preprocessing input data to constructing a neural network architecture, students will learn the process to build and use neural networks successfully.
 
 ### Class Objectives
 
@@ -16,7 +18,7 @@ By the end of class, students will be able to:
 
 * Understand how the choice of inputs and hidden layers apply to problems with regression and classification.
 
-* Experiment with architecture in TensorFlow playground.
+* Experiment with neural networks' architecture in the TensorFlow playground.
 
 * Preprocessing data for neural network models.
 
@@ -24,21 +26,19 @@ By the end of class, students will be able to:
 
 * Describe what the pros and cons of using Keras for building neural networks are.
 
-* Implement neural nets with Python Keras API.
+* Implement neural networks with the Python Keras API.
 
 ### Instructor Notes
 
 * Today's activities will be concept-heavy, so students should be prepared to discuss and think, and not merely to practice steps for implementation.
 
-* Give students the opportunity to ask questions, and when necessary, have students save questions for the review sessions or office hours.
+* Allow students to ask questions, and when necessary, have students save questions for the review sessions or office hours.
 
 * Today should also be fun since we will be playing with neural nets in several ways to experiment with input, architecture, and algorithms.
 
-* A thorough understanding of neural networks would require math that is beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms in order to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
+* A thorough understanding of neural networks would require math that is beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
 
-* In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/), be sure to practice the demo before class. If you are not familiar with this project, we encourage you to watch this video.
-
-* There is a closing activity that proposes a group activity to the class, you may bring sticky notes to today's class.
+* In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/), be sure to practice the demo before class. If you are not familiar with this project, we encourage you to [watch this video](https://youtu.be/3BhkeY974Rg).
 
 ### Class Slides and Time Tracker
 
