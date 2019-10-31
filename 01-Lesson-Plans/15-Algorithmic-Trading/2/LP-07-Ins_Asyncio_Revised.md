@@ -1,4 +1,4 @@
-### 7. Instructor Do: Concurrent Code with Asyncio (15 min)
+### 7. Instructor Do: Concurreny with Asyncio (15 min)
 
 In this activity, students will learn how to use the asyncio library--an asynchronous framework that allows a developer to write concurrent (or non-sequential) code.
 
@@ -18,8 +18,9 @@ Open the slideshow and discuss the following before proceeding onward to the wal
 
 * What would be an example of a synchronous (sequential) vs asychronous (non-sequential) process?
 
-  **Answer:** Imagine an application needs to send an API request and receive the corresponding response for 12 URLs. Each request takes 5 seconds to send to the API and 55 seconds for the API to return a response. A sequential process could be to send a request, wait for the response, and then move onto the next URL, resulting in a total completion time of 720 seconds or 12 minutes ((5 second request + 55 response) x 12 URLs); however, a non-sequential process could be to send a request, and while waiting for the response, send the next request for the next URL and so on for all 12 URLs. This would mean that the total completion time would be cut to 330 seconds ((5 second request x 12 URLs) + 55 second response for all 12 URLs).
+  **Answer:** Imagine an application needs to send an API request and receive the corresponding response for 12 URLs. Each request takes 5 seconds to send to the API and 55 seconds for the API to return a response. A sequential process could be to send a request, wait for the response, and then move onto the next URL, resulting in a total completion time of 720 seconds or 12 minutes ((5 second request + 55 response) x 12 URLs); however, a non-sequential process could be to send a request, and while waiting for the response, send the next request for the next URL and so on for all 12 URLs. This would mean that the total completion time would be cut to 330 seconds or 5 1/2 minutes ((5 second request x 12 URLs) + 55 second response for all 12 URLs).
   
 Then open the solution file and explain the following:
 
 * We say that an object is an awaitable object if it can be used in an await expression. Many asyncio APIs are designed to accept awaitables; there are three main types of awaitable objects: Coroutines, Tasks, and Futures.
+
