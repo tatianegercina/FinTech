@@ -43,12 +43,12 @@ Then open the solution file and explain the following:
 
   ![single-coroutine-multiple-times](Images/single-coroutine-multiple-times.png)
 
-* A Task is a concurrent execution of a coroutine. Therefore, multiple tasks of a single coroutine will be executed concurrently. In this case, tasks are explicitly created using the `create_task` function and the first task waits 1 second and prints the string "One", and *while* the first task is waiting for the 1 second duration, the second task is executed, waits 2 seconds, and prints the string "Two". Total completion time is now only 2 seconds, a 33% reduction in time.
+* A Task is a concurrent execution of a coroutine. Therefore, multiple tasks of a single coroutine will be executed concurrently. In this case, tasks are explicitly created using the asyncio `create_task` function and the first task waits 1 second and prints the string "One", and *while* the first task is waiting for the 1 second duration, the second task is executed, waits 2 seconds, and prints the string "Two". Total completion time is now only 2 seconds, a 33% reduction in time.
 
   ![multiple-tasks](Images/multiple-tasks.png)
 
-* Similarly, the `gather` function can accept multiple calls of a single coroutine and create multiple tasks under-the-hood. Therefore, the multiple tasks are executed concurrently and the total completion time is still 2 seconds.
+* Similarly, the asyncio `gather` function can accept multiple calls of a single coroutine and create multiple tasks under-the-hood. Therefore, the multiple tasks are executed concurrently and the total completion time is still 2 seconds.
 
   ![multiple-tasks-gather](Images/multiple-tasks-gather.png)
 
-* As can be seen, running code asychronously (non-sequentially) as opposed to synchronously (sequentially) can have significant performance benefits and should be implemented to optimize and ultimately make application more robust.
+* As can be seen, running code asychronously (non-sequentially) as opposed to synchronously (sequentially) can have significant performance benefits and should be implemented to optimize and ultimately make applications more robust.
