@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import ccxt
 import asyncio
-# @TODO: Import sqlite3
+import sqlite3
 
 import hvplot.pandas
 import panel as pn
@@ -15,7 +15,24 @@ def initialize(cash=None):
     """Initialize the dashboard, data storage, and account balances."""
     print("Intializing account, database, and DataFrame")
 
-    # @TODO: Initialize Database
+    # Initialize Database
+    db = sqlite3.connect("algo_trader_history.sqlite")
+    with db:
+        cur = db.cursor()
+        cur.execute("DROP TABLE IF EXISTS data")
+
+    # Initialize Account
+    account = {"balance": cash, "shares": 0}
+
+    # Initialize dataframe
+    # @TODO: We will update this later!
+    df = fetch_data()
+
+    # Intialize the dashboard
+    dashboard = build_dashboard()
+
+    # @TODO: We will complete the rest of this later!
+    return db, account, df, dashboard
 
 
 def build_dashboard():
@@ -89,7 +106,7 @@ def execute_trade_strategy(signals, account):
     return account
 
 
-#@TODO: Initialize everything
+db, account, df, dashboard = initialize(10000)
 dashboard.servable()
 
 
@@ -97,7 +114,23 @@ async def main():
     loop = asyncio.get_event_loop()
 
     while True:
-        # @TODO: Update to use a database
+        global db
+        global account
+        global df
+        global dashboard
+
+        new_df = await loop.run_in_executor(None, fetch_data)
+        new_df.to_sql("data", db, if_exists="append", index=True)
+
+        # Generate Signals and execute the trading strategy
+        min_window = 21
+        max_window = 1000
+        df = pd.read_sql(f"select * from data limit {max_window}", db)
+        if df.shape[0] >= min_window:
+            signals = generate_signals(df)
+            account = execute_trade_strategy(signals, account)
+
+        update_dashboard(df, dashboard)
 
         await asyncio.sleep(1)
 
