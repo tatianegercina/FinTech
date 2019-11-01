@@ -1,10 +1,12 @@
-# Going Live with CCXT
+# Everyone Do: Going Live with CCXT
 
-Now that you have access to the Kraken cryptocurrency exchange, modify your algorithmic trading framework to read in historical pricing data from Kraken rather than a local CSV file; select the daily historical closing prices of BTC/USD.
+Code along with the instructor to complete the following tasks:
+
+Now that you have access to the Kraken cryptocurrency exchange, we can modify the algorithmic trading framework to read in historical pricing data from Kraken rather than a local CSV file.
 
 ## Instructions
 
-Using the [starter file](Unsolved/ninja_trader_v2.py), complete the following steps:
+Using the [starter file](Unsolved/jarvis.py), complete the following steps:
 
 1. Import the ccxt and os libraries.
 
@@ -21,10 +23,6 @@ Using the [starter file](Unsolved/ninja_trader_v2.py), complete the following st
     4. Create a new 'date' column by converting the epoch timestamp to a date using the `to_datetime` function and `unit` parameter.
 
     5. Set the BTC/USD historical prices DataFrame as the return object of the `fetch_data` function.
-
-## Challenge
-
-1. Modify the `share_size` variable of the `execute_backtest` function to calculate the available share size based on the initial capital divided by the first closing price of BTC/USD, rounded down to the nearest integer.
 
 ## Hint
 
