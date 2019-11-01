@@ -18,6 +18,8 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
+* Slack out the [Streamz Installation Guide](../../15-Algorithmic-Trading/Supplemental/Asyncio_Streamz_Install_Guide.md) and the [CCXT Installation Guide](../../15-Algorithmic-Trading/Supplemental/CCXT_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+
 * Deep learning has a lot of technical concepts that are beyond the scope of this lesson. Students should be able to obtain a high-level understanding of deep neural network architectures through a series of hands-on activities.
 
 * This class uses the new TensorFlow 2.0 framework for the activities, so be sure to test the install and setup for this before class.
