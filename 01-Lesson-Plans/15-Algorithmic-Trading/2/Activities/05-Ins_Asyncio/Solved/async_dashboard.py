@@ -1,4 +1,4 @@
-import time
+import asyncio
 import panel as pn
 
 pn.extension()
@@ -6,7 +6,7 @@ pn.extension()
 
 async def fetch_data():
     """Simulate a delayed fetch."""
-    time.sleep(5)
+    asyncio.sleep(5)
 
 
 def serve_dashboard():
