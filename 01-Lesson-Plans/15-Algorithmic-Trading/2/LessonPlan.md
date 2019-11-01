@@ -546,60 +546,121 @@ Open the solution file and review the following:
 
 ---
 
-### 7. Instructor Do: Concurreny with Asyncio (15 min)
+### 7. Instructor Do: Asyncio (10 min)
 
-In this activity, students will learn how to use the asyncio library--an asynchronous framework that allows a developer to write concurrent (or non-sequential) code.
+In this demonstrations, students will learn how to create asynchronous functions that do not block the dashboard from loading.
 
-The purpose of this activity is to teach students how to write concurrent code that mitigates the issue of sequential code, namely *blocking code* or code that halts the further execution of downstream processes within a program.
+Note that a complete explanation of asyncio is out-of-scope for this lesson, so refer students to the [official documents](https://docs.python.org/3/library/asyncio.html) and office hours if they want to learn more.
 
-**File:** [asyncio.ipynb](Activities/05-Ins_Asyncio/Solved/asyncio.ipynb)
+**Files:**
 
-Open the slideshow and discuss the following before proceeding onward to the walk through:
+* [blocked_dashboard.py](Activities/05-Ins_Asyncio/Solved/blocked_dashboard.py)
 
-* What is asyncio?
+* [asyncio_demo.ipynb](Activities/05-Ins_Asyncio/Solved/asyncio_demo.ipynb)
 
-  **Answer:** Asyncio is a library for writing concurrent, or more specifically, asynchronous code that allows for coroutines or functions to "pause" while waiting on their result, thereby allowing other coroutines to run in the meantime; asyncio uses an `async/await` syntax when defining such coroutines.
+* [async_dashboard.py](Activities/05-Ins_Asyncio/Solved/async_dashboard.py)
 
-* Is there a difference between concurrent and asynchronous code?
+Start by running the `blocked_dashboard.py` code to show the long loading time.
 
-  **Answer:** Concurrency is merely a broader term used for defining multiple tasks that have the ability to run in parallel. Asynchrony is a more specific type of concurrency in which tasks are able to run in parallel by allowing a task to "pause" and allow other tasks to run while it awaits for its result.
+```shell
+panel serve --log-level debug --show blocked_dashboard.py
+```
 
-* What would be an example of a synchronous (sequential) vs asychronous (non-sequential) process?
+Open the `blocked_dashboard.py` code and highlight the following points:
 
-  **Answer:** Imagine an application needs to send an API request and receive the corresponding response for 12 URLs. Each request takes 5 seconds to send to the API and 55 seconds for the API to return a response. A sequential process could be to send a request, wait for the response, and then move onto the next URL, resulting in a total completion time of 720 seconds or 12 minutes ((5 second request + 55 response) x 12 URLs); however, a non-sequential process could be to send a request, and while waiting for the response, send the next request for the next URL and so on for all 12 URLs. This would mean that the total completion time would be cut to 330 seconds or 5 1/2 minutes ((5 second request x 12 URLs) + 55 second response for all 12 URLs).
+```python
+def fetch_data():
+    """Simulate a delayed fetch."""
+    time.sleep(5)
 
-Then open the solution file and explain the following:
 
-* The event loop is the core of every asyncio application and manages the execution of awaitable objects, or objects that can be used in an await expression, such as Coroutines, Tasks, and Futures (we'll only focus on coroutines and tasks for simplicity); the `get_event_loop` function gets the current event loop and creates a new event loop if no current one is found.
+def serve_dashboard():
+    dashboard = pn.Column("# My Blocked Dashboard")
+    return dashboard.servable()
 
-  ```python
-  import asyncio
-  import time
 
-  loop = asyncio.get_event_loop()
-  ```
+fetch_data()
+serve_dashboard()
+```
 
-* A Coroutine is an asyncio process defined by the `async/await` syntax. Despite its name, a Coroutine is merely a single process that does not run concurrently but *can* if used in conjunction with asyncio Tasks. In this case, a coroutine defined as the `main` function is executed using the `run_until_complete` function of the current event loop and prints the string "One", then waits 1 second, and finally prints the string "Two".
+* The `fetch_data` function simulates a data fetch that takes a long time. In practice, any request to an external API may actually take a long time to fetch and return the data.
 
-  ![single-coroutine-no-error](Images/single-coroutine-no-error.png)
+* The serve_dashboard function simply serves up a simple dashboard of text.
 
-* It should be noted that Jupyter already runs an event loop for the cells in a Jupyter Notebook file. It is for this reason that we used a try-catch clause to ignore the following RunTimeError (for aesthetic reasons). Normally, asyncio would be used in a classic Python or .py file without such an error occurrence.
+* Python is a synchronous language. That means that it runs one line of code and waits on that code to finish before moving on to run the next line of code. In this example, the `fetch_data` function takes 5 seconds to run before the code that serves the dashboard can run. This effectively blocks the page from loading until the data returns.
 
-  ![single-coroutine-error](Images/single-coroutine-error.png)
+* In practice, fetching data can actually take a lot longer than expected. Database queries, network delays, and other factors can create delays in the request. With code like this, the user experience suffers because the page cannot load until the data returns.
 
-* Multiple coroutines can be run in sequence by merely calling the await expression on multiple async defined functions. In this case, the `say_after` waits 1 second before printing the string "One" and then waits another 2 seconds before printing the string "Two". Total completion time is 3 seconds.
+Open `asyncio_demo.ipynb` and highlight the following points about the asyncio library:
 
-  ![single-coroutine-multiple-times](Images/single-coroutine-multiple-times.png)
+* Python provides a library called `asyncio` to write concurrent or asynchronous code.
 
-* A Task is a concurrent execution of a coroutine. Therefore, multiple tasks of a single coroutine will be executed concurrently. In this case, tasks are explicitly created using the asyncio `create_task` function and the first task waits 1 second and prints the string "One", and *while* the first task is waiting for the 1 second duration, the second task is executed, waits 2 seconds, and prints the string "Two". Total completion time is now only 2 seconds, a 33% reduction in time.
+* Asynchronous code just means that Python doesn't have to wait on that line to finish running before moving on to the next line of code.
 
-  ![multiple-tasks](Images/multiple-tasks.png)
+Run the following cell to show the delay created by the default synchronous behavior:
 
-* Similarly, the asyncio `gather` function can accept multiple calls of a single coroutine and create multiple tasks under-the-hood. Therefore, the multiple tasks are executed concurrently and the total completion time is still 2 seconds.
+```python
+def fetch_data():
+    time.sleep(3)
+    print("data")
 
-  ![multiple-tasks-gather](Images/multiple-tasks-gather.png)
+def serve_dashboard():
+    print("dashboard")
 
-* As can be seen, running code asychronously (non-sequentially) as opposed to synchronously (sequentially) can have significant performance benefits and should be implemented to optimize and ultimately make applications more robust.
+fetch_data()
+serve_dashboard()
+```
+
+Break down the asynchronous code cell and explain the following:
+
+```python
+async def fetch_data():
+    await asyncio.sleep(3)
+    print("data")
+
+def serve_dashboard():
+    print("dashboard")
+
+loop = asyncio.get_event_loop()
+
+loop.create_task(fetch_data())
+serve_dashboard()
+```
+
+* Code can be defined as asynchronous using the keywords `async` and `await`. This tells Python to handle this code differently than the other code.
+
+* The `async` keyword in the function definition tells asyncio that this function is something called a [coroutine](https://docs.python.org/3/glossary.html#term-coroutine) which is just code that can be executed differently (asynchronously) from the normal code.
+
+* The `await` keyword indicates which line of code can be waited for asynchronously. This is what suspends the coroutine until this line of code finishes running. In other words, the sleep statement can run asynchronously while Python continues to run the remaining code in the program.
+
+* Asyncio uses an event loop to run code asynchronously. The event loop can be thought of as a loop that sits off to the side and just periodically checks to see if the async code has finished running yet. When it does finish running, it can rejoin the main program. Meanwhile, Python is free to continue running other code.
+
+* The asyncio provides several functions for using the event loop. This example just runs the `fetch_data` function as a task in the event loop. It then immediately moves on to run the `serve_dashboard` code in the main program while fetch_data continues to run in the event loop. Once fetch_data finishes, it rejoins the main program.
+
+Show that the dashboard no longer has to wait on the fetch_data function:
+
+```python
+async def fetch_data():
+    await asyncio.sleep(3)
+    print("data")
+
+def serve_dashboard():
+    dashboard = pn.Column("# My Panel Dashboard")
+    return dashboard.servable()
+
+loop = asyncio.get_event_loop()
+
+loop.create_task(fetch_data())
+serve_dashboard()
+```
+
+Finally, run the `async_dashboard.py` code to show that the page can immediately load while the data is still being fetched.
+
+```shell
+panel serve --log-level debug --show async_dashboard.py
+```
+
+Explain that we can use these ideas to modify our trading dashboard so that the page can load while new data is collected asynchronously. The dashboard can then be updated with the new data once it returns.
 
 ---
 
