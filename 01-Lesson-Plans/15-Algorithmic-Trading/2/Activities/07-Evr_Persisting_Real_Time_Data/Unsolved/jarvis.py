@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import ccxt
 import asyncio
-# @TODO: Import sqlite3
 
 import hvplot.pandas
 import panel as pn
@@ -13,9 +12,20 @@ pn.extension()
 
 def initialize(cash=None):
     """Initialize the dashboard, data storage, and account balances."""
-    print("Intializing account, database, and DataFrame")
+    print("Intializing Account and DataFrame")
 
-    # @TODO: Initialize Database
+    # Initialize Account
+    account = {"balance": cash, "shares": 0}
+
+    # Initialize dataframe
+    # @TODO: We will update this later!
+    df = fetch_data()
+
+    # Intialize the dashboard
+    dashboard = build_dashboard()
+
+    # @TODO: We will complete the rest of this later!
+    return account, df, dashboard
 
 
 def build_dashboard():
@@ -89,7 +99,7 @@ def execute_trade_strategy(signals, account):
     return account
 
 
-#@TODO: Initialize everything
+account, df, dashboard = initialize(10000)
 dashboard.servable()
 
 
@@ -97,7 +107,19 @@ async def main():
     loop = asyncio.get_event_loop()
 
     while True:
-        # @TODO: Update to use a database
+        global account
+        global df
+        global dashboard
+
+        new_df = await loop.run_in_executor(None, fetch_data)
+        df = df.append(new_df, ignore_index=True)
+
+        min_window = 22
+        if df.shape[0] >= min_window:
+            signals = generate_signals(df)
+            account = execute_trade_strategy(signals, account)
+
+        update_dashboard(df, dashboard)
 
         await asyncio.sleep(1)
 
