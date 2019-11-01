@@ -548,7 +548,7 @@ Open the solution file and review the following:
 
 ### 7. Instructor Do: Asyncio (10 min)
 
-In this demonstrations, students will learn how to create asynchronous functions that do not block the dashboard from loading.
+In this demonstration, students will learn how to create asynchronous functions that do not block the dashboard from loading.
 
 Note that a complete explanation of asyncio is out-of-scope for this lesson, so refer students to the [official documents](https://docs.python.org/3/library/asyncio.html) and office hours if they want to learn more.
 
