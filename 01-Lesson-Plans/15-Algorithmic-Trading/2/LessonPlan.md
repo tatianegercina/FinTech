@@ -1034,126 +1034,161 @@ Ask any questions before moving on.
 
 ---
 
-### 12. Student Do: Stream Trading (15 min)
+### 12. Everyone Do: Streaming Dashboard (15 min)
 
-In this activity, students will learn how to use the Streamz library to create a dedicated pipeline for continuous streaming data.
+In this activity, students will code along with the instructor to update the trading framework to use streaming data visualizations.
 
-The purpose of this activity is to showcase the need for a pipeline or buffer that manages incoming streaming data, as doing so allows for a more robust and scalable dashboard in which streaming data is handled at the visual component level rather than done via a re-draw of the entire dashboard each time.
+**File:** [jarvis.py](Activities/09-Evr_Streaming_Dashboard/Solved/jarvis.py)
 
-**File:** [nanotrader_v2.py](Activities/08-Ins_Streaming_Dashboard/Solved/nanotrader_v2.py)
+Explain to students that the previous iteration of the trading dashboard was replaced each time that new data arrived. For a single plot, this was ok, but for a complex dashboard, each replacement would reset the entire dashboard and negatively impact the user experience. Explain that we can avoid some of these issues by updating the example to use the streamz library with hvplot.
 
-Quickly discuss the following before proceeding onward to the walk through:
+Open the starter code and highlight the sections that will be replaced or updated. Then, start by updating the imports and the initialize function:
 
-* What is Streamz?
+```python
+import hvplot.streamz
+from streamz import Stream
+from streamz.dataframe import DataFrame
+import panel as pn
 
-  **Answer:** Streamz is a library that helps to build pipelines that manage continuous streams of data such as Pandas Dataframes containing tabular data.
+pn.extension()
 
-* Why should you use Streamz?
 
-  **Answer:** When creating a dashboard, oftentimes it is necessary to be able to have multiple tabs with other visualizations running in parallel; however, re-drawing a full dashboard each time (as is currently done) will "refresh" the dashboard and redirect users to the home screen (or tab) each time. Therefore, in order to have visualizations running in separate tabs in parallel, it is essential to separate the streaming data layer from the dashboard creation layer.
+def initialize(cash=None):
+    """Initialize the dashboard, data storage, and account balances."""
 
-* In a modified version of [nanotrader.py](Activities/08-Ins_Streaming_Dashboard/Unsolved/nanotrader.py) which includes an additional tab for the Panel dashboard, it can be seen that when attempting to navigate to the second tab in the dashboard, the user is sent back to the dashboard homepage after each refresh of the BTC/USD closing price. This is because the dashboard is re-drawn with every refresh and therefore initializes back to its starting point (the main tab) each time.
+    # Initialize Database
+    db = sqlite3.connect("algo_trader_history.sqlite")
+    with db:
+        cur = db.cursor()
+        cur.execute("DROP TABLE IF EXISTS data")
 
-  ![dashboard-redraw](Images/dashboard-redraw.gif)
+    # Initialize Account
+    account = {"balance": cash, "shares": 0}
 
-Open the solution file and review the following:
+    # Initialize Streaming DataFrame for Raw Data
+    data_stream = Stream()
+    data_example = pd.DataFrame(
+        data={"close": []}, columns=["close"], index=pd.DatetimeIndex([])
+    )
+    data_stream_df = DataFrame(data_stream, example=data_example)
 
-* In order to incorporate the Streamz library into our trading dashboards, we must first import the necessary libraries and dependencies.
+    # Initialize Streaming DataFrame for Signals
+    signals_stream = Stream()
+    columns = ["close", "signal", "sma10", "sma20", "entry/exit"]
+    data = {"close": [], "signal": [], "sma10": [], "sma20": [], "entry/exit": []}
+    signals_example = pd.DataFrame(
+        data=data, columns=columns, index=pd.DatetimeIndex([])
+    )
+    signals_stream_df = DataFrame(signals_stream, example=signals_example)
 
-  ```python
-  from streamz import Stream
-  from streamz.dataframe import DataFrame
-  import hvplot.streamz
-  ```
+    # Initialize Streaming DataFrame for the signals
+    dashboard = build_dashboard(data_stream_df, signals_stream_df)
+    return db, account, data_stream, signals_stream, dashboard
+```
 
-* Instead of initializing a DataFrame to later be used as a global variable for the asyncio event loop, the trading framework now initializes a Stream object that manages the data pipeline, serving as an input to a Stream DataFrame object, of which the dashboard utilizes to build the plot.
+* The initialize function creates a streaming DataFrame for both the raw data and for the generated signals. Both of these DataFrames will be used to update the final dashboard visualizations.
 
-  ```python
-  def initialize(cash):
-      """Initialize the dashboard, data storage, and account balances."""
-      # Initialize Account
-      account = {"balance": cash, "shares": 0}
+* The format for each `example` DataFrame can be worked out ahead of time using a normal DataFrame and jupyter notebook with historical data.
 
-      # Initialize Database
-      db = sqlite3.connect("algo_trader_history.sqlite")
+* The trading framework will now initialize Stream objects to manage the data pipeline. These streaming data pipelines are then used to build the dashboard with streaming visualizations.
 
-      # Initialize Streaming DataFrame for Signals
-      signals_stream = Stream()
-      columns = ["close", "sma10", "sma20"]
-      data = {"close": [],  "sma10": [], "sma20": []}
-      signals_example = pd.DataFrame(data=data, columns=columns, index=pd.DatetimeIndex([]))
-      signals_stream_df = DataFrame(signals_stream, example=signals_example)
+Show that the `update_dashboard` function can be removed and the `build_dashboard` code modified to use the streaming DataFrames:
 
-      # Initialize Streaming DataFrame for the signals
-      dashboard = build_dashboard(signals_stream_df)
-      return account, db, signals_stream, dashboard
-  ```
-
-* In particular, notice that the Stream DataFrame object `signals_stream_df` takes in two parameters: the Stream object as its first parameter which will contain the incoming streaming data, and two, an example Pandas DataFrame that defines the structure of the Stream DataFrame.
-
-  ```python
-  # Initialize Streaming DataFrame for Signals
-      signals_stream = Stream()
-      columns = ["close", "sma10", "sma20"]
-      data = {"close": [],  "sma10": [], "sma20": []}
-      signals_example = pd.DataFrame(data=data, columns=columns, index=pd.DatetimeIndex([]))
-      signals_stream_df = DataFrame(signals_stream, example=signals_example)
-  ```
-
-* Because the trading dashboard no longer needs to re-draw itself each time, the previous `update_dashboard` function can be taken out. Instead, all that needs to be done is to initialize the dashboard once with the corresponding Stream DataFrame object updating the hvplot line chart continuously.
-
-  ```python
-  def build_dashboard(signals):
+```python
+def build_dashboard(data, signals):
     """Build the dashboard."""
-    column = pn.Column(signals.hvplot.line())
-    column_test = pn.Column()
 
-    dashboard = pn.Tabs(("Summary", column), ("Tab 2", column_test))
+    signals_plot = (
+        signals[signals["entry/exit"] == 1.0].hvplot.scatter(
+            y="sma10", marker="^", size=200, c="g", label="buy", padding=0.1
+        )
+        * signals[signals["entry/exit"] == -1.0].hvplot.scatter(
+            y="sma10", marker="v", size=200, c="r", label="sell", padding=0.1
+        )
+        * signals.hvplot.line(y="sma10", label="sma10")
+        * signals.hvplot.line(y="sma20", label="sma20")
+    )
+    dashboard = pn.Column(
+        "# JARVIS Algorithmic Trading Dashboard",
+        data.hvplot(title="prices"),
+        signals_plot.opts(title="signals plot", show_legend=False),
+        "### Signals Table",
+        signals.hvplot.table(
+            title="signals table",
+            columns=["close", "entry/exit", "sma10", "sma20"],
+            backlog=10,
+        ),
+    )
     return dashboard
-  ```
+```
 
-* When running the application, the `emit` function is used to continuously push data through the streaming data pipeline managed by the Stream object. Only a single record should be passed to the `emit` function.
+* The above code was adapted to use the limited streamz DataFrame interface with hvplot. Because of this, using streaming data may impact or limit the complexity of the final plots.
 
-  ```python
-  async def main():
+Show that the `generate_signals` function also needs modified slightly to convert the index to match the `example` DataFrame used in the initialize function.
+
+```python
+def generate_signals(df):
+    """Generates trading signals for a given dataset."""
+    # Set window
+    short_window = 10
+
+    signals = df.copy()
+    signals["index"] = pd.to_datetime(signals["index"])
+    signals = signals.set_index("index", drop=True)
+    signals["signal"] = 0.0
+
+    # Generate the short and long moving averages
+    signals["sma10"] = signals["close"].rolling(window=10).mean()
+    signals["sma20"] = signals["close"].rolling(window=20).mean()
+
+    # Generate the trading signal 0 or 1,
+    signals["signal"][short_window:] = np.where(
+        signals["sma10"][short_window:] > signals["sma20"][short_window:], 1.0, 0.0
+    )
+
+    # Calculate the points in time at which a position should be taken, 1 or -1
+    signals["entry/exit"] = signals["signal"].diff()
+
+    return signals
+```
+
+Finally, show how the main function can be updated to emit new data to the streaming DataFrames:
+
+```python
+async def main():
+    loop = asyncio.get_event_loop()
 
     while True:
         global db
         global account
+        global data_stream
         global signals_stream
 
         # Fetch and save new data
         new_df = await loop.run_in_executor(None, fetch_data)
-        new_df.to_sql('data', db, if_exists='append', index=True)
+        new_df.to_sql("data", db, if_exists="append", index=True)
 
         # Generate Signals and execute the trading strategy
-        min_window = 30
+        min_window = 21
         max_window = 1000
         df = pd.read_sql(f"select * from data limit {max_window}", db)
         if df.shape[0] >= min_window:
-            signals = generate_signal(df)
-            signals_stream.emit(signals[['close', 'sma10', 'sma20']].tail(1))
+            signals = generate_signals(df)
+            signals_stream.emit(signals)
             account = execute_trade_strategy(signals, account)
             print(f"Account Balance: {account['balance']}")
             print(f"Account Shares: {account['shares']}")
 
         # Update the Dashboard
+        data_stream.emit(new_df)
         await asyncio.sleep(1)
+```
 
+* The `emit` function is used to continuously inject data into the streaming data pipeline managed by the Stream object. These streaming DataFrames are connected to the dashboard visualizations and automatically update the charts when new data is emitted.
 
-  account, db, signals_stream, dashboard = initialize(100000)
-  dashboard.servable()
+* The result of these changes is that the dashboard no longer has to replace each visualization from scratch. This allows users to scroll on the page and switch between tabs without losing their place. This would not have been possible without the streaming data visualizations that hvplot and streamz provides.
 
-  # Python 3.7+
-  loop = asyncio.get_event_loop()
-  loop.run_until_complete(main())
-  ```
-
-* The results of the changes show a trading dashboard that no longer requires a re-draw of its visualizations each time, but instead manages the updates to the visualizations at the data level. This allows a user to navigate to other tabs while continuously streaming data in the main tab.
-
-  ![dashboard-streaming](Images/dashboard-streaming.gif)
-
-Answer any questions before moving on.
+Congratulate students on completing the final dashboard! They now have a robust algorithmic trading framework that can be used to build and deploy a wide variety of trading algorithms!
 
 ---
 
