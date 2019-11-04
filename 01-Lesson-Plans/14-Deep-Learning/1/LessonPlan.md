@@ -102,17 +102,12 @@ Follow to the slide titled "Our brain as inspiration for artificial neural nets,
 
 * In the same way biological neurons receive input signals through the dendrites, an ANN is able to receive input variables and process those inputs using an activation function to compute an output, akin the neuron nucleus in the brain.
 
-Tell students that you will go over the details of how a neuron works in the next activity.
-
-Continue to "The History of Neural Networks" slide and highlight the following:
-
-* The concept of ANNs was presented for the first time in 1943 when Warren McCulloch and Walter Pitts created a computational model for neural networks that they implemented using electrical circuits.
+* The concept of ANNs was presented for the first time in 1943 when [Warren McCulloch and Walter Pitts](https://doi.org/10.1007/BF02478259
+) created a computational model for neural networks that they implemented using electrical circuits.
 
 * From that initial idea of a single neuron, the concept evolved the last decades to more complex models that propose creating connections between neurons to the point of creating what we know today as neural networks.
 
-* Nowadays, neural networks are discussed in almost every field, from preventing cancer or credit card fraud to creating artistic expressions using artificial intelligence or having self-driving cars.
-
-Follow to the slide "The Future is here: Awesome applications of neural nets" and highlight the following:
+Follow to the slide "The Future is here: applications of neural nets" and highlight the following:
 
 * Neural networks are here to stay, and applications become more common every day.
 
@@ -124,37 +119,19 @@ Follow to the slide "The Future is here: Awesome applications of neural nets" an
 
 * Neural networks are also used to create a better world, not only for humans but also for wildlife thanks to projects like one led by the U.S. National Oceanic and Atmospheric Administration to save whales by tracking the North Atlantic right whales population using neural networks for image recognition.
 
-As you continue to the slide called "Neural Networks Applications in Finance," explain to students that financial sector is leading in the use of neural networks, highlight the following applications and slack out the links of each one for further reference:
+As you continue to the slide called "Neural Networks in Finance," explain to students that financial sector is leading in the use of neural networks, and highlight the following applications:
 
-* [Credit card fraud detection](https://www.semanticscholar.org/paper/Credit-card-fraud-detection-with-a-neural-network-Ghosh-Reilly/ba70a74262adec9dcfa47b5710752d2537a07af4)
+* **Fraud detection:** According to Javelin Strategy & Research, errors on fraud detection can cost a bank $118 billion in lost revenue.
 
-* [Foreign-Exchange-Rate Forecasting](https://www.springer.com/gp/book/9780387717197)
+* **Risk Management:** The banking sector, insurance and stocks exchanges, are building more robust and efficient techniques for credit management thanks to neural networks.
 
-* [Risk Management](https://dx.doi.org/10.2991/ispcbc-19.2019.138)
+* **Money Laundering Prevention:** Money laundering activity around the world is estimated to be between 2% to 5% of global GDP,  financial institutions are using neural nets to serve as a new weapon in their fight against financial crime.
 
-* [Algorithmic Trading](https://link.springer.com/article/10.1007/s10479-019-03144-y)
-
-* [Automated invoices processing](https://link.springer.com/chapter/10.1007/978-3-319-99695-0_29)
-
-* [Preventing Money Laundering](https://doi.org/10.1109/ICNSC.2019.8743234)
+* **Algorithmic Trading:** Thanks to algorithmic trading, you can automate your trading strategies and increase your trading profits.
 
 Explain to students that there are several deep mathematical concepts behind neural networks that are beyond the scope of today's class.
 
 Explain to students that this week, we will give an intuitive introduction to the components that make up a neural network and how they work together to learn.
-
-Continue to the "Python Libraries for Neural Networks" slide, and explain to students that there are several Python libraries to implement neural networks; those used most in industry and the research community are the following:
-
-* [TensorFlow (from Google)](https://www.tensorflow.org/)
-
-* [Microsoft Cognitive Toolkit (CNTK)](https://docs.microsoft.com/en-us/cognitive-toolkit/)
-
-* [Apache mxnet](https://mxnet.incubator.apache.org/)
-
-* [Pytorch](https://pytorch.org/)
-
-* [Keras](https://keras.io/)
-
-Explain to students that we will use Keras in the class and that an introduction comes next; in the meantime, it is time for a funny example about how neural networks work.
 
 Open your web browser and navigate to [the Teachable Machine website](https://teachablemachine.withgoogle.com). This web application shows the fundamental mechanism of a neural network by training a model that recognizes gestures from your webcam to predict one of three classes.
 
