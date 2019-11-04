@@ -52,7 +52,7 @@ By the end of class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Welcome Class (5 min)
+### 1. Instructor Do: Welcome Class (10 min)
 
 In this section, students will review the algorithmic trading concepts taught in the previous class to prepare them for today's consolidation of multiple trading functions (signal generation, backtesting, trade evaluation, etc.) into a single trading framework. This section is a key opportunity to quickly re-visit the core components related to algorithmic trading before transitioning to the design of an algorithmic trading framework.
 
@@ -90,7 +90,7 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Student Do: Trading Functions (5 min)
+### 2. Student Do: Trading Functions (10 min)
 
 In this activity, students will be given a random sequence of trading function names and will be asked to propose the correct order of the functions if they were to be implemented in an algorithmic trading application. Note that there is not a single precise order, so treat this as a thought exercise to help drive engagement and discussion around the use of frameworks to encapsulate and abstract code.
 
@@ -130,7 +130,7 @@ Ask any questions before moving on.
 
 ---
 
-### 3. Everyone Do: Algorithmic Trading Framework (15 mins)
+### 4. Everyone Do: Algorithmic Trading Framework (20 min)
 
 In this activity, students will code along with the instructor and port over their previous algorithmic trading code into the new algorithmic trading framework.
 
@@ -348,7 +348,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 4. Instructor Do: Trading with CCXT (15 min)
+### 5. Instructor Do: Trading with CCXT (15 min)
 
 In this section, students will become familiar with the expansive CCXT library which provides an API for over 120 cryptocurrency exchanges. In particular, students will work with the Kraken API and extract both historical and current price data.
 
@@ -434,7 +434,7 @@ Answer any remaining questions before moving on.
 
 ---
 
-### 5. Everyone Do: Going Live with CCXT (15 mins)
+### 6. Everyone Do: Going Live with CCXT (15 min)
 
 In this activity, students will code along with the instructor to update a version of the algorithmic trading framework to use the Kraken exchance from the CCXT API.
 
@@ -711,7 +711,7 @@ Explain that we can use these ideas to modify our trading dashboard so that the 
 
 ---
 
-### 8. Everyone Do: Async Trading (15 mins)
+### 8. Everyone Do: Async Trading (15 min)
 
 In this activity, students will code along with the instructor to update their live trading code to fetch data asynchronously with [asyncio](https://docs.python.org/3/library/asyncio.html).
 
@@ -814,7 +814,7 @@ Wrap up this activity by acknowledging that asynchronous code is very challengin
 
 ---
 
-### 10. Everyone Do: Persisting Real-Time Data (15 mins)
+### 9. Everyone Do: Persisting Real-Time Data (15 min)
 
 In this activity, students will learn how to persist their real-time data to a database. Students will code along with the instructor to update the trading framework to persist data with a sqlite database.
 
@@ -926,7 +926,11 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 11. Instructor Do: Streaming Data with Streamz (15 mins)
+### 10. BREAK (15 min)
+
+---
+
+### 11. Instructor Do: Streaming Data with Streamz (15 min)
 
 In this activity, students will learn how to use the Streamz library to create a dedicated pipeline for continuous streaming data.
 
@@ -1034,7 +1038,7 @@ Ask any questions before moving on.
 
 ---
 
-### 12. Everyone Do: Streaming Dashboard (15 min)
+### 12. Everyone Do: Streaming Dashboard (20 min)
 
 In this activity, students will code along with the instructor to update the trading framework to use streaming data visualizations.
 
