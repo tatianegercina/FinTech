@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import pandas as pd
+
 # @TODO: Import ccxt
 import time
 
@@ -63,7 +64,19 @@ print(df)
 
 def main():
 
-    # @TODO: Update the main loop to fetch new data
+    while True:
+        global account
+        global df
+
+        # Fetch and save new data
+        new_df = fetch_data()
+        df = df.append(new_df, ignore_index=True)
+        min_window = 22
+        if df.shape[0] >= min_window:
+            signals = generate_signals(df)
+            print(signals)
+            account = execute_trade_strategy(signals, account)
+        time.sleep(1)
 
 
 main()
