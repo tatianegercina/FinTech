@@ -40,6 +40,9 @@ By the end of class, students will be able to:
 
 * There is a closing activity that proposes a group activity to the class, you may bring sticky notes to today's class.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [14.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d6cecb1c-4ed3-4cf1-83e6-aaf500da5859) Note that this video may not reflect the most recent lesson plan.
+
 ### Class Slides and Time Tracker
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/11gh-YowNqHBx_WEm-OBHJypKImSc51zo71vEYohNdqY/edit?usp=sharing).
