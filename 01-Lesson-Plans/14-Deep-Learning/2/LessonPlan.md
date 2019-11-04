@@ -24,6 +24,9 @@ By the end of class, students will be able to:
 
 * This class uses the new TensorFlow 2.0 framework for the activities, so be sure to test the install and setup for this before class.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [14.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2bd77952-1001-4f38-9c08-aaf8002299ae) Note that this video may not reflect the most recent lesson plan.
+
 ### Class Slides and Time Tracker
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/13YjMJO9cpmfUJBXCnPtuBN4w7jhBdEoGQyGBCKc2PPk/edit?usp=sharing).
