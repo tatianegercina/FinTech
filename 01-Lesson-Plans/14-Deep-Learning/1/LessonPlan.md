@@ -542,7 +542,7 @@ For this demo, comment to the class that you are going to use nonlinear dummy da
 
 Open the unsolved version of the Jupyter Notebook, live code the demo, and highlight the following:
 
-* Some dummy nonlinear data is created using the `make_moons()` function from `sklearn`.
+* Some nonlinear dummy data is created using the `make_moons()` function from `sklearn`.
 
   ```python
   # Creating dummy nonlinear data
@@ -562,7 +562,7 @@ Open the unsolved version of the Jupyter Notebook, live code the demo, and highl
 
   ![Non-linear data plot](Images/nn_1.png)
 
-* The data is split into training and testing sets, and it is scaled prior to building and testing the neural network.
+* The data is split into training and testing sets, and it is scaled before building and testing the neural network.
 
   ```python
   # Create training and testing sets
@@ -585,7 +585,7 @@ Explain to students that now you are going to create a more complex neural netwo
 
 ![Neural net sample](Images/simple-nn.png)
 
-Explain to students that the rule-of-thumb for a neural network is to have triple the amount of nodes in the hidden layer as the number of inputs, this is not true of deep learning, but it's a good point to start prototyping a neural network.
+Explain to students that the rule-of-thumb for a neural network is to have triple the amount of nodes in the hidden layer as the number of inputs, this is not true of deep learning, but it's an excellent point to start prototyping a neural network.
 
 Start building the neural network and highlight the following.
 
@@ -646,7 +646,7 @@ Collect a couple of answers from the class and highlight the following:
 
 * Adding more neurons to the model is a possible solution; however, we can overfit the model.
 
-* Adding a second layer is also a suitable solution; this is part of deep learning, and it is going to be covered next class.
+* Adding a second layer is also a suitable solution; this is part of deep learning, and it is going to be covered, next class.
 
 * Testing with different activation functions is one of the most used initial solutions, especially when dealing with nonlinear data.
 
