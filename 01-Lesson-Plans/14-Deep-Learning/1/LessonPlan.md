@@ -86,7 +86,7 @@ Ask if there are any questions before moving on.
 
 In this activity, students will be introduced to neural networks and some of their applications.
 
-Open the lesson slides and move to the Neural Networks are Cool! section.
+Open the lesson slides and move to the Neural Networks are Cool! Section.
 
 Start the presentation by showing students the following image from the [Rorschach Inkblot Test](https://en.wikipedia.org/wiki/Rorschach_test), and ask them the next question:
 
@@ -100,7 +100,7 @@ Continue to the "How our brain works" slide, and explain to students that any si
 
 Follow to the slide titled "Our brain as inspiration for artificial neural nets," and explain to students that this power of our brain to process information and make predictions or interpretations is the fact that inspires neurophysiologists and mathematicians to start the development of artificial neural networks (ANN).
 
-* In the same way biological neurons receive input signals through the dendrites, an ANN is able to receive input variables and process those inputs using an activation function to compute an output, akin the neuron nucleus in the brain.
+* In the same way biological neurons receive input signals through the dendrites, an ANN can receive input variables and process those inputs using an activation function to compute an output, akin the neuron nucleus in the brain.
 
 * The concept of ANNs was presented for the first time in 1943 when [Warren McCulloch and Walter Pitts](https://doi.org/10.1007/BF02478259
 ) created a computational model for neural networks that they implemented using electrical circuits.
@@ -119,13 +119,13 @@ Follow to the slide "The Future is here: applications of neural nets" and highli
 
 * Neural networks are also used to create a better world, not only for humans but also for wildlife thanks to projects like one led by the U.S. National Oceanic and Atmospheric Administration to save whales by tracking the North Atlantic right whales population using neural networks for image recognition.
 
-As you continue to the slide called "Neural Networks in Finance," explain to students that financial sector is leading in the use of neural networks, and highlight the following applications:
+As you continue to the slide called "Neural Networks in Finance", explain to students that the financial sector is leading in the use of neural networks, and highlight the following applications:
 
 * **Fraud detection:** According to Javelin Strategy & Research, errors on fraud detection can cost a bank $118 billion in lost revenue.
 
-* **Risk Management:** The banking sector, insurance and stocks exchanges, are building more robust and efficient techniques for credit management thanks to neural networks.
+* **Risk Management:** The banking sector, insurance, and stock exchanges are building more robust and efficient techniques for credit management thanks to neural networks.
 
-* **Money Laundering Prevention:** Money laundering activity around the world is estimated to be between 2% to 5% of global GDP,  financial institutions are using neural nets to serve as a new weapon in their fight against financial crime.
+* **Money Laundering Prevention:** Money laundering activity around the world is estimated to be between 2% to 5% of global GDP; financial institutions are using neural nets to serve as a new weapon in their fight against financial crime.
 
 * **Algorithmic Trading:** Thanks to algorithmic trading, you can automate your trading strategies and increase your trading profits.
 
@@ -147,11 +147,11 @@ Once you open the Teachable Machine website, follow the next steps to conduct th
 
 * Explain to students that now you are going to train the neural network model.
 
-* Raise your left hand and press the _TRAIN GREEN_ button for few seconds, and explain to students that your current image is the input data for the neural network. It's learning that these visual patterns correspond to a cute kitten.
+* Raise your left hand and press the _TRAIN GREEN_ button for few seconds and explain to students that your current image is the input data for the neural network. It's learning that these visual patterns correspond to a cute kitten.
 
   ![Teachable Machine - Step 3](Images/intro_nns_3.gif)
 
-* Continue to train the purple class by posing seriously to the camera. Press the _TRAIN PURPLE_ button for few seconds, and explain to students that now the neural network is learning that your poker face corresponds to a furry dog.
+* Continue to train the purple class by posing seriously to the camera. Press the _TRAIN PURPLE_ button for a few seconds, and explain to students that now the neural network is learning that your poker face corresponds to a furry dog.
 
   ![Teachable Machine - Step 4](Images/intro_nns_4.gif)
 
@@ -161,9 +161,9 @@ Once you open the Teachable Machine website, follow the next steps to conduct th
 
 Now that you train the model, play around by making several poses and faces to the camera:
 
-* Rise your right hand and explain to students that despite that the neural network were trained to recognize your left hand raised, these kinds of models are continuously learning and are capable of recognizing and learning new patterns.
+* Rise your right hand and explain to students that despite that the neural network was trained to recognize your left hand raised, these kinds of models are continuously learning and are capable of recognizing and learning new patterns.
 
-* Make a tricky test by partially raising your left hand; explain to students that the neural network gets confused but is still learning as can be seen on the confidence bars; finally, the model is able to make a decision about your partially raised hand.
+* Make a tricky test by partially raising your left hand; explain to students that the neural network gets confused but is still learning as can be seen on the confidence bars; finally, the model can decide on your partially raised hand.
 
 ![Teachable Machine - Step 6](Images/intro_nns_6.gif)
 
@@ -177,7 +177,7 @@ Answer any questions before moving on.
 
 After going more in-depth with neural networks, this activity will explain to students how single artificial neurons work.
 
-Open the lesson slides. Move to the _Neuron's Anatomy_ section and highlight the following:
+Open the lesson slides. Move to the "Anatomy of a Neuron" Section and highlight the following:
 
 * Neurons are the most fundamental units of a neural network.
 
@@ -191,9 +191,9 @@ Open the lesson slides. Move to the _Neuron's Anatomy_ section and highlight the
 
 * Every input data signal is weighted according to the relevance of each one under the context of the problem the perceptron was designed.
 
-* The perceptron took a weighted sum of the inputs and set the output as `1` only when the sum is more than an arbitrary threshold (theta - `θ`).
+* The perceptron took a weighted sum of the inputs and set the output as `1` only when the sum is more than an arbitrary threshold.
 
-* Theta is added as a special input labeled as _X<sub>0</sub>=1_ with the weight `-θ`, like it's shown in the figure above.
+* The _bias_ is added as a particular input labeled as _X<sub>0</sub>=1_ with a negative weight.
 
 After this brief technical introduction to the perceptron, continue with the following quotidian example to illustrate how the perceptron works.
 
@@ -201,29 +201,33 @@ After this brief technical introduction to the perceptron, continue with the fol
 
 * Let us assume the decision depends on `3` binary inputs (binary for simplicity).
 
-* In this perceptron model, _w<sub>0</sub>_ (our arbitrary threshold `θ`) is called the bias because it represents the prejudice that can influence the final decision.
+* In this perceptron model, _w<sub>0</sub>_ is called the bias because it represents the prejudice that can influence the final decision.
 
-* A cinephile may have a low threshold and will be willing to watch any movie regardless of its genre, release date, or the awards the movie received (`θ = 0`).
+* A cinephile may have a low threshold and will be willing to watch any movie regardless of its genre, release date, or the awards the film received (`bias = 0`).
 
-* In contrast, a father with two children who want to spend some time with them watching a movie may choose the latest children's film by default (`θ = 2`).
+* In contrast, a father that wants to spend time with his daughter watching a movie may choose the latest children's film by default (`bias = 2`).
 
-* In the case of the father with two children, the model may give a lot of importance (high weight) to the `isNewRelease` and `isForChildren` inputs, and penalize the weights of the `isAwardWinning` input.
+* In the case of the father, the model may give a lot of importance (high weight) to the `isNewRelease` and `isForChildren` inputs, and penalize the weights of the `isAwardWinning` input.
 
-* The key point is, the weights and the threshold (`θ` also referred to as bias) will depend on the data available, the viewing history in this case.
+* The key point is the weights and the bias will depend on the data available, the viewing history in this case.
 
-Continue to the slide entitled _The perceptron may be harsh_ and highlight the following:
+Continue to the slide entitled "The perceptron may be harsh" and highlight the following:
 
-* In real life, if you want to choose a movie, you are not as strict as the perceptron could be. For example, if you base your decision only in one input variable, such as _isNewRelease_, the bias is set to `0.5` and _w<sub>1</sub> = 1_ then our perceptron would look as follows.
+* In real life, if you want to choose a movie, you are not as strict as the perceptron could be.
+
+* For example, if you base your decision only in one input variable, such as `isNewRelease`, the bias is set to `0.5` and _w<sub>1</sub> = 1_ then our perceptron would look as follows.
 
   ![Harsh perceptron](Images/harsh_perceptron.png)
 
-* Using this model, the decision for a movie with `isNewRelease = 1` will be _Yes!_, and the decision for a movie with `isNewRelease = 0` will be _No!_. This decision may be too harsh since we are losing the chance of enjoying classic movies, or the Oscar awarded films from last year; this is where the activation function comes to the scene.
+* Using this model, the decision for a movie with `isNewRelease = 1` will be _Yes!_, and the decision for a movie with `isNewRelease = 0` will be _No!_.
 
-Move to the slide entitled _Introducing the Activation Function_ and highlight the following:
+* This decision may be too harsh since we are losing the chance of enjoying classic movies, or the Oscar awarded films from last year; this is where the activation function comes to the scene.
+
+Move to the slide entitled _Activation Function_ and highlight the following:
 
 * The neurons we use nowadays to build neural networks are an updated version of the perceptron proposed in 1969.
 
-  ![Current neuron structure](Images/neuron_structure.jpg)
+  ![Current neuron structure](Images/neuron_structure.png)
 
 * The difference is the **activation function** that adds a dose of reality to neurons decisions. It is a mathematical function with a characteristic _S-shaped_ curve, also called the sigmoid curve.
 
@@ -243,23 +247,23 @@ Click on the [pre-configured link](https://playground.tensorflow.org/#activation
 
 * [TensorFlow Playground](http://playground.tensorflow.org) is a website where users can train a neural network and visualize both the model creation process and the resulting predictions.
 
-* Take a moment to explain the layout of the page to the class.
+Take a moment to explain the layout of the page to the class.
 
-* Note the _play_ button in the top left corner of the page. Explain that clicking this starts training the network.
+* The _play_ button in the top left corner of the page, starts training the network.
 
   ![tf_play.png](Images/tf_play.png)
 
-* In the same row as the play button, there are dropdowns for **Learning Rate**; **Activation Function**; **Regularization**; etc. These options affect how quickly a network learns and influences the goodness of its predictions.
+* In the same row as the play button, there are dropdowns for **Learning Rate**, **Activation Function**, **Regularization**, etc. These options affect how quickly a network learns and influences the goodness of its predictions.
 
 * **Problem Type** is also on this row, and allows us to select whether we want the neural net to solve a regression or classification problem. We will demonstrate a classification problem for now.
 
-* Below this row are headings for **Data**; **Features**; **Hidden Layers**; and **Output**.
+* Below this row are headings for **Data**, **Features**, **Hidden Layers**, and **Output**.
 
 * Under **Data**, we can select the data set on which to train the model. The options are two-dimensional data, which are easy to visualize. The two blobs in the bottom left are selected for this demo.
 
   ![two_blobs.png](Images/two_blobs.png)
 
-* The **Features** section allows the user to specify properties to look for in the input data and is also the input layer of neurons in the network. Each additional neuron that we add in this layer represents another feature of the data. We have three inputs for this demo to illustrate the movies' example.
+* The **Features** section allows the user to specify properties to look for in the input data and is also the input layer of neurons in the network. Each additional neuron that we add in this layer represents another feature of the data. We have three inputs for this demo.
 
   ![Neuron's features](Images/neuron_features.png)
 
@@ -271,7 +275,7 @@ Click on the [pre-configured link](https://playground.tensorflow.org/#activation
 
   ![Neuron's output](Images/neuron_output.png)
 
-* Emphasize that this data set is **linearly separable**; that is, we can easily draw a straight line between the two classes in this data.
+Emphasize that this data set is **linearly separable**; that is, we can easily draw a straight line between the two classes in this data.
 
 Click on the _Play_ button to start training the network, and call attention to the output image on the right-hand side of the page. Point out that, right after the play button is pressed, the fit _changed_ over time.
 
@@ -283,7 +287,7 @@ Recall to students that this is not new, a variety of `sklearn` classifiers alre
 
 * This example shows that neural networks can easily solve linear problems, but doesn't demonstrate their efficacy at nonlinear modeling problems.
 
-* The real power or neural networks can be seen when we add more than one neuron, especially dealing with nonlinear data. This is going to be explored later in today's class.
+* The real power or neural networks can be seen when we add more than one neuron, especially dealing with nonlinear data. This is going to be explored later in Today's class.
 
 Answer any questions before moving on.
 
