@@ -44,7 +44,7 @@ First, though, we are going to do a little review of concepts from Day 1 of this
 
 **Files:**
 
-* [Unit 13.3 slides](https://docs.google.com/presentation/d/1DJ8LXYZikGc4K8bnOi57Et64ztWVSxdv9zY7wnxLUsA/edit#slide=id.p)
+* [Unit 11.3 slides](https://docs.google.com/presentation/d/1DJ8LXYZikGc4K8bnOi57Et64ztWVSxdv9zY7wnxLUsA/edit#slide=id.p)
 
 ### 2. Instructor Review: Model Evaluation (10 min)
 
