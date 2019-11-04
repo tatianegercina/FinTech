@@ -740,11 +740,11 @@ In this section, we will go over some necessary transformations of data before i
 
 * [04-Ins/preparing_data.ipynb](Activities/04-Ins_Preparing_Data/Solved/preparing_data.ipynb)
 
-Open the lesson slides, move to the _Preparing Data for Neural Networks_ and highlight the following:
+Open the lesson slides, move to the "Preparing Data for Neural Networks" Section and highlight the following:
 
 * Like any machine learning model, neural networks require some preprocessing of data to be used effectively.
 
-* Neural networks cannot deal with categorical variables in their raw forms, and explanatory variables that are represented in different units or have vastly different scales of magnitude can make models difficult to train.
+* Neural networks cannot deal with categorical variables in their raw forms, and explanatory variables that are represented in different units or have vastly different scales of magnitude can make models challenging to train.
 
 * To solve the first problem, we apply one-hot encoding to categorical values to transform them into binary variables. To deal with the second, we use standardization.
 
@@ -795,7 +795,7 @@ Ask the class to restate what we have accomplished with one-hot encoding.
 
 * **Sample Answer**: We've transformed one categorical variable into many binary (numerical) variables, each corresponding to a category.
 
-Switch back to the lesson slides, continue with the slide entitled _Data Standardization_ and highlight the following:
+Switch back to the lesson slides, continue with the slide entitled "Data Standardization" and highlight the following:
 
 * Another critical preprocessing task is to standardize the numerical variables in the dataset.
 
