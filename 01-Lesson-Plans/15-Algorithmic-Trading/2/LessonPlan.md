@@ -814,152 +814,15 @@ Wrap up this activity by acknowledging that asynchronous code is very challengin
 
 ---
 
-### 9. Everyone Do: Async Trading (15 mins)
-
-In this activity, now that students understand how to transition their trading frameworks from performing batch processing data loads to real-time data loads with the help of asyncio, instructors will now guide students on how to execute trades based on the continual flow of data.
-
-The purpose of this activity is to build upon the instructions from the previous activity to not only implement real-time data loads with the help of asyncio, but also to implement the trading logic required to make a decision to either buy, sell, or hold.
-
-**Files:** [ninja_trader_v3.py](Activities/06-Evr_Async_Trading/Solved/ninja_trader_v3.py)
-
-Open the solution file and walk through the following with the class:
-
-* In much of the same fashion of the previous activity, in order to transition students' trading frameworks to use real-time data (make an API call every second), the following functions need to be modified or added.
-
-  ```python
-  def initialize(cash):
-    """Initialize the dashboard, data storage, and account balances."""
-    # Initialize Account
-    account = {"balance": cash, "shares": 0}
-
-    # Initialize DataFrame
-    data_df = pd.DataFrame()
-
-    # Initialize Streaming DataFrame for the signals
-    dashboard = initialize_dashboard()
-    return account, data_df, dashboard
-  ```
-
-  ```python
-  def fetch_data():
-    """Fetches the latest prices."""
-    kraken = ccxt.kraken(
-        {"apiKey": os.getenv("kraken_key"), "secret": os.getenv("kraken_secret")}
-    )
-    close = kraken.fetch_ticker("BTC/USD")['close']
-    datetime = kraken.fetch_ticker("BTC/USD")['datetime']
-    df = pd.DataFrame({'close': [close], 'date': [datetime]})
-    df.index = pd.to_datetime([datetime])
-    return df
-  ```
-
-  ```python
-  async def main():
-
-    while True:
-        global account
-        global data_df
-        global dashboard
-
-        # Fetch latest pricing data
-        new_record_df = fetch_data()
-
-        # Save latest pricing data to a global DataFrame
-        if data_df.empty:
-            data_df = new_record_df.copy()
-        else:
-            data_df = data_df.append(new_record_df, ignore_index=False)
-
-        # Generate Signals and execute the trading strategy
-        min_window = 10
-        max_window = 1000
-        if data_df.shape[0] >= min_window:
-            signals = generate_signal(data_df)
-            tested_signals = execute_backtest(signals)
-
-            account = execute_trade_strategy(tested_signals, account)
-            portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals)
-
-            print(f"Account Balance: {account['balance']}")
-            print(f"Account Shares: {account['shares']}")
-
-            # Update the dashboard
-            update_dashboard(account, signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
-
-        await asyncio.sleep(1)
-
-
-  # Initialize account and dashboard objects
-  account, data_df, dashboard = initialize(100000)
-  dashboard.servable()
-
-  # Python 3.7+
-  loop = asyncio.get_event_loop()
-  loop.run_until_complete(main())
-  ```
-
-* Notice, however, that the following snippet takes into account the fact that in order to generate a signal based on a short and long window dual moving average crossover strategy, there must be a sufficient amount of data that is at least equal to or greater than the number defined by the short window.
-
-  ```python
-  # Generate Signals and execute the trading strategy
-  min_window = 10
-  max_window = 1000
-  if data_df.shape[0] >= min_window:
-      signals = generate_signal(data_df)
-      tested_signals = execute_backtest(signals)
-
-      account = execute_trade_strategy(tested_signals, account)
-      portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals)
-
-      print(f"Account Balance: {account['balance']}")
-      print(f"Account Shares: {account['shares']}")
-
-      # Update the dashboard
-      update_dashboard(account, signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
-  ```
-
-* Because the trading framework is now using real-time data, data can now be evaluated at a more granular level. This allows decisions to be based at the record level.
-
-  ```python
-  account = execute_trade_strategy(tested_signals, account)
-  ```
-
-* In the new `execute_trade_strategy` function, the algorithmic trading framework makes a decision to either buy, sell, or hold based on the latest entry/exit values of the backtested signal results. In the case of either a buy or a sell, the account dictionary is updated to reflect the change in cash balance and active share count; however, this code could be modified to place real buy or sell orders via the Kraken exchange.
-
-  ```python
-  def execute_trade_strategy(signals, account):
-    """Makes a buy/sell/hold decision."""
-
-    if signals["entry/exit"][-1] == 1.0:
-        print("buy")
-        number_to_buy = round(account['balance'] / signals['close'][-1], 0) * .001
-        account["balance"] -= (number_to_buy * signals['close'][-1])
-        account["shares"] += number_to_buy
-    elif signals["entry/exit"][-1] == -1.0:
-        print("sell")
-        account["balance"] += signals['close'][-1] * account['shares']
-        account["shares"] = 0
-    else:
-        print("hold")
-
-    return account
-  ```
-
-* The result of the previous changes shows a trading dashboard that not only displays the real-time pricing data for BTC/USD (along with associated short and long window moving averages), but also makes buy, sell, or hold decisions in real-time.
-
-  ![async-trading-dashboard](Images/async-trading-dashboard.gif)
-
-Ask if there are any questions before moving on.
-
----
-
 ### 10. Everyone Do: Persisting Real-Time Data (15 mins)
 
-In this activity, students will learn how to persist their real-time data to a sqlite database.
+In this activity, students will learn how to persist their real-time data to a database. Students will code along with the instructor to update the trading framework to persist data with a sqlite database.
 
 The purpose of this activity is to showcase the value in persisting data as doing so allows an application to pick up where it left off should a failure occur.
 
 **Files:** [ninja_trader_v3.py](Activities/05-Evr_Persisting_Real_Time_Data/Solved/ninja_trader_v3.py)
+
+Explain to the class that the next enhancement to make to the trading algorithm is to persist the live data to a database. Persisting the live data allows the framework to recover from data errors, and it allows us to collect and use historical data without running into memory issues.
 
 Quickly discuss the following before proceeding onward to the walk through:
 
@@ -971,97 +834,92 @@ Quickly discuss the following before proceeding onward to the walk through:
 
   **Answer:** Persisting data is generally a best practice as it provides a method for data recovery should an application ever fail; data stored in transient in-memory data structures will be lost forever if the application itself terminates. In addition, persisting data to a database allows for separate data analysis to be done at a later time, if desired.
 
-Open the solution file and walk through the following with the class:
+With the class, update the starter code to use a sqlite database to persist the data. Be sure to highlight the following points about sqlite:
 
-* First things first, the sqlite3 library will need to be imported into students' trading applications before moving on.
+* `sqlite` is a database system that is provided with Python through the `sqlite3` library.
 
-  ```python
-  import sqlite3
-  ```
+* `sqlite` is very useful for fast, lightweight database applications.
 
-* Because data will now be persisted to a sqlite database, there is no need for a global DataFrame to hold transient data in-memory. Therefore, the `initialize` function can be modified to remove the declaration of the empty DataFrame and instead create a connection to a sqlite database using the `connect` function of the sqlite3 library.
+* Because it is included with Python and uses a file-based database, it is a popular choice for testing and prototyping code that requires a database.
 
-  ```python
-  def initialize(cash):
+* The same code shown today with sqlite can also be used with any database connector in Python including `postgresql`.
+
+Import the sqlite3 library and show how the database connector is initialized in the code:
+
+```python
+def initialize(cash=None):
     """Initialize the dashboard, data storage, and account balances."""
-    # Initialize Account
-    account = {"balance": cash, "shares": 0}
+    print("Intializing account, database, and DataFrame")
 
     # Initialize Database
-    db = sqlite3.connect("ninja_trader_db.sqlite")
+    db = sqlite3.connect("algo_trader_history.sqlite")
+    with db:
+        cur = db.cursor()
+        cur.execute("DROP TABLE IF EXISTS data")
+```
 
-    # Initialize Streaming DataFrame for the signals
-    dashboard = initialize_dashboard()
-    return account, db, dashboard
-  ```
+* In Python, a sqlite database can be created using `sqlite3.connect` with a filename for the database. The entire database is contained locally on disk in this file.
 
-* In addition, now that there is no longer a need for a global DataFrame to hold fetched data from Kraken, the previous conditional statements within the `main` function can be deprecated with the following one-liner, in which each new record DataFrame is exported to the sqlite database using the `to_sql` Pandas DataFrame function.
-
-  ```python
-  # Save latest pricing data to a global DataFrame
-  if data_df.empty:
-      data_df = new_record_df.copy()
-  else:
-      data_df = data_df.append(new_record_df, ignore_index=False)
-  ```
+* With the database connection `db`, a cursor can be used to execute raw sql directly on the database. In this example, a cursor is used to drop the table called `data` if it already exists.
 
   ```python
-  # Save latest pricing data to a global DataFrame
-  new_record_df.to_sql('data', db, if_exists='append', index=True)
+  with db:
+      cur = db.cursor()
+      cur.execute("DROP TABLE IF EXISTS data")
   ```
 
-* The data within the sqlite database is then queried, and if the number of rows returned is greater or equal to the minimum window, the program proceeds to executing the rest of its trading functions.
+Next, update the main loop to use the database connector. Explain the following points:
 
-  ```python
-  data_df = pd.read_sql(f"select * from data limit {max_window}", db)
-  ```
+```python
+db, account, df, dashboard = initialize(10000)
+dashboard.servable()
 
-* Putting everything together, it can be seen that the trading application now operates in such a way that new records are fetched and appended to the `data` table in a sqlite database, where they are later queried prior to the execution of later functions. The result is a trading application that stores its data and therefore can resume its operations in the event of a failure, as shown below.
 
-  ```python
-  async def main():
+async def main():
+    loop = asyncio.get_event_loop()
 
     while True:
-        global account
         global db
+        global account
+        global df
         global dashboard
 
-        # Fetch latest pricing data
-        new_record_df = fetch_data()
-
-        # Save latest pricing data to a global DataFrame
-        new_record_df.to_sql('data', db, if_exists='append', index=True)
+        new_df = await loop.run_in_executor(None, fetch_data)
+        new_df.to_sql("data", db, if_exists="append", index=True)
 
         # Generate Signals and execute the trading strategy
-        min_window = 10
+        min_window = 21
         max_window = 1000
-        data_df = pd.read_sql(f"select * from data limit {max_window}", db)
-        if data_df.shape[0] >= min_window:
-            signals = generate_signal(data_df)
-            tested_signals = execute_backtest(signals)
+        df = pd.read_sql(f"select * from data limit {max_window}", db)
+        if df.shape[0] >= min_window:
+            signals = generate_signals(df)
+            account = execute_trade_strategy(signals, account)
 
-            account = execute_trade_strategy(tested_signals, account)
-            portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals)
-
-            print(f"Account Balance: {account['balance']}")
-            print(f"Account Shares: {account['shares']}")
-
-            # Update the dashboard
-            update_dashboard(account, signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
+        update_dashboard(df, dashboard)
 
         await asyncio.sleep(1)
+```
 
+* The database connector that is returned from the initialize function can be used with Pandas to read and write DataFrames. In this example, new data that is fetched can be written directly to the database with Pandas `to_sql`.
 
-  # Initialize account and dashboard objects
-  account, db, dashboard = initialize(100000)
-  dashboard.servable()
-
-  # Python 3.7+
-  loop = asyncio.get_event_loop()
-  loop.run_until_complete(main())
+  ```python
+  new_df.to_sql("data", db, if_exists="append", index=True)
   ```
 
-  ![failure-recovery.gif](Images/failure-recovery.gif)
+* The database can then be ready back into the main Pandas DataFrame and used to generate signals and create visualizations.
+
+  ```python
+  max_window = 1000
+  df = pd.read_sql(f"select * from data limit {max_window}", db)
+  ```
+
+Wrap up this demonstration with a quick recap of the advantage of using databases to persist the data:
+
+* Appending live data to a Pandas DataFrame can eventually create memory issues when the amount of data collected is large enough. Offloading this data to a database can be very efficient.
+
+* Many appplications can share a common database. This allows you to create multiple trading applications that all share a common database.
+
+* Capturing the live data makes it easier to choose how much data is selected for the trading strategy.
 
 Ask if there are any questions before moving on.
 
