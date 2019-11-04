@@ -44,6 +44,9 @@ By the end of the class, students will be able to:
 
 * Prior to class, make sure that all students have created their AWS account, and ask TAs to help troubleshoot any issues. If any students are unable to access a free tier account, ask that they pair up with a peer for this week.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [13.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=496c4888-8f12-4852-b593-aaed011cc667) Note that this video may not reflect the most recent lesson plan.
+
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1Z8JiUdBlHbeHD9yfI_0Bz2Zwe-PMpu0aD7kNY7JqImQ/edit?usp=sharing).
