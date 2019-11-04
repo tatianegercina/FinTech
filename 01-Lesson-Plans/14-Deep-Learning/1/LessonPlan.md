@@ -702,7 +702,7 @@ Walk through the solution and highlight the following:
 
   ![Model evaluation](Images/cc-results.png)
 
-* The accuracy is not great, but it also is not as bad to discard the model. It could be used in a real-world scenario to run a pilot project.
+* The accuracy is not great, but it also is not as harmful to discard the model. It could be used in a real-world scenario to run a pilot project.
 
 Explain to students that for the challenge section, different approaches could be taken, for this demo, the `tanh` activation function is used in the output layer, and the model is trained with `50` epochs.
 
