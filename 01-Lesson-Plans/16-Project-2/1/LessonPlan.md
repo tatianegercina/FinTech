@@ -1,8 +1,8 @@
-## 16.1 Lesson Plan: Projects & Collaboration with Git
+## 16.1 Lesson Plan—Projects & Collaboration with Git
 
 #### Overview
 
-In this week, students will begin work on their second Project of the Boot Camp: FinTech Machine Learning.
+In this week, students will begin work on their second project of the boot camp: FinTech Machine Learning.
 
 #### Instructor Notes
 
@@ -16,7 +16,7 @@ It is highly recommended to request project proposals from students and then app
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy."
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
@@ -34,17 +34,17 @@ Greet the class, and explain that today is the first day of Project 2!
 
 Congratulate the class on having made it this far!
 
-Explain that, over the next two class weeks, students will work in groups to complete a FinTech Machine Learning Project.
+Explain that, over the next two class weeks, students will work in groups to complete a FinTech machine learning project.
 
 Point out that this provides students with an opportunity to dive deeper into machine learning and create a really advanced FinTech project.
 
-Explain that today's class will be dedicated to researching and creating a project 2 proposal.
+Explain that today's class will be dedicated to researching and creating a Project 2 proposal.
 
-Use the slides to show the requirements for project 2.
+Use the slides to show the requirements for Project 2.
 
 Break students into their project groups, and have them start to brainstorm ideas for their proposals. Each team should submit a proposal via GitHub to the instructor by the beginning of the next class.
 
-* Be sure to slack out the Project's [Technical Requirements](../../../03-Projects/Project-02/TechnicalRequirements.md); the [Project Guidelines](../../../03-Projects/Project-02/ProjectGuidelines.md); the [Presentation Requirements](../../../03-Projects/Project-02/PresentationRequirements.md); the [Presentation Guidelines](../../../03-Projects/Project-02/PresentationGuidelines.md) after going through the slides.
+* Be sure to slack out the Project's [Technical Requirements](../../../03-Projects/Project-02/TechnicalRequirements.md), the [Project Guidelines](../../../03-Projects/Project-02/ProjectGuidelines.md), the [Presentation Requirements](../../../03-Projects/Project-02/PresentationRequirements.md), and the [Presentation Guidelines](../../../03-Projects/Project-02/PresentationGuidelines.md) after going through the slides.
 
 ### 2. Student Do: Project Brainstorming and Proposals (Remaining Class Time)
 

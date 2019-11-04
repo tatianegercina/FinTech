@@ -12,7 +12,7 @@ Most of this class will center on project work. You and the TAs should check up 
 
 ##### Instructor Notes
 
-Your students will be nearing the end of their projects. Even though it's the beginning of the week, you should push students to finish their apps before Thursday so they have optimal time to practice their presentations.
+Your students will be nearing the end of their projects. Even though it's the beginning of the week, you should push students to finish their apps before Thursday so they have optimum time to practice their presentations.
 
 It's crucial that you steer any off-course projects back on track. Come next class, the encroaching Saturday deadline will mire any attempt at a turnaround.
 
@@ -40,7 +40,7 @@ Say your hellos and check if students have any questions about past concepts.
 
 ### 2. Instructor Do: Ask About Projects (5 min)
 
-Tell your students how you're excited to see the projects they'll present on Saturday. You should talk about how you're impressed with the concepts they've come up with and that they should feel proud about working toward the goals they devised after just spending eight weeks in this course.
+Tell your students how you're excited to see the projects they'll present on Saturday. You should talk about how you're impressed with the concepts they've come up with and that they should feel proud about working toward the goals they devised after spending just eight weeks in this course.
 
 Ask the class about their thoughts on the collaboration experience so far and about any lingering sources of anxiety they might have as they near closer to presentation day.
 
