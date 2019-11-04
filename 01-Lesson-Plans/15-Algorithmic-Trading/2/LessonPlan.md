@@ -434,104 +434,160 @@ Answer any remaining questions before moving on.
 
 ---
 
-### 5. Student Do: Going Live with CCXT (15 mins)
+### 5. Everyone Do: Going Live with CCXT (15 mins)
 
-In this activity, students will now get the chance to connect their algorithmic trading applications to the Kraken cryptocurrency exchange. In particular, rather than read data locally from a CSV file, students will modify their `fetch_data` functions to connect to Kraken via the CCXT library and read historical pricing data for BTC/USD.
-
-The purpose of this activity is to showcase the "plug-and-play" feature of a framework. In other words, as long as the work flow of the overall framework remains consistent, individual components of the framework, such as the `fetch_data` function, can be modified to fit distinct needs.
+In this activity, students will code along with the instructor to update a version of the algorithmic trading framework to use the Kraken exchance from the CCXT API.
 
 **File:**
 
-* [ninja_trader_v2.py](Activities/04-Stu_Going_Live/Unsolved/ninja_trader_v2.py)
+* [jarvis.py](Activities/04-Evr_Going_Live/Unsolved/jarvis.py)
 
-**Instructions:** [README.md](Activities/04-Stu_Going_Live/README.md)
+Live code the solution to this activity with the entire class. Use the code to explain new concepts to students, and engage the class with questions when appropriate. Be sure to go slow and give students plenty of time to keep upp.
 
----
+Start the activity with a brief overview of the framework to show which sections will need to be updated to "go live".
 
-### 6. Instructor Do: Going Live with CCXT Review (10 mins)
+* **NOTE:** Each section that needs to be updated will have a `# @TODO:` comment to make it easier to find those sections.
 
-**File:** [ninja_trader_v2.py](Activities/04-Stu_Going_Live/Solved/ninja_trader_v2.py)
+Highlight the following points about the main function:
 
-Open the solution file and review the following:
+```python
+print("Initializing account and DataFrame")
+account, df = initialize(10000)
+print(df)
 
-* The beauty of a robust application framework is that as long as the high-level input/output workflow of the framework remains consistent, the underlying "parts" or functions can be modified to fit multiple use cases. In this case, the `fetch_data` function will be modified to instead read live data from Kraken rather than a static local CSV file; however, the overall execution of the framework remains the same.
 
-  ```python
-  # Initialize account and dashboard objects
-  account, dashboard = initialize(100000)
-  dashboard.servable()
+def main():
 
-  # Fetch data and generate signals
-  data_df = fetch_data()
-  signals_df = generate_signal(data_df)
+    while True:
+        global account
+        global df
 
-  # Backtest signal data and evaluate metrics from backtested results
-  tested_signals_df = execute_backtest(signals_df)
-  portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals_df)
+        # Fetch and save new data
+        new_df = fetch_data()
+        df = df.append(new_df, ignore_index=True)
+        min_window = 22
+        if df.shape[0] >= min_window:
+            signals = generate_signals(df)
+            print(signals)
+            account = execute_trade_strategy(signals, account)
+        time.sleep(1)
+```
 
-  # Update the dashboard with all metrics
-  update_dashboard(account, tested_signals_df, portfolio_evaluation_df, trade_evaluation_df)
-  ```
+* The main function uses a loop to fetch new data every 1 second. This loop can easily be modified to fetch data at any interval required for the trading algorithm.
 
-* Specifically, notice how both versions of the `fetch_data` function obtain data in separate ways (local vs. API); however, the output of either function (a DataFrame) remains the same, thereby maintaining the overall workflow of the framework itself.
+* The loop refers to `global` variables for the account and DataFrame. This is required because the `account` and `df` variables are initialized outside of the loop. We will see later in today's class why initializing certain variables like this will be advantageous.
 
-  **Note:** While out of the scope of today's lesson, rather than replace the local CSV functionality of the `fetch_data` function with the ability to read data from Kraken, the `fetch_data` function could be modified to use a parameter that flags whether or not to choose to read from a CSV or connect to Kraken, thereby creating a more robust framework.
+* New data is fetched from the Kraken API using the `fetch_data` function and then appended to the main `df` DataFrame.
 
-  ```python
-  def fetch_data():
+* A conditional statement is used to make sure there is enough data to generate a signal for the strategy before calling those functions. In this case, the strategy uses a 20 day window for the moving average crossover, so we want a minimum of 20 data points before we generate signals.
+
+Move to the `initialize` function definition and highlight the following points:
+
+```python
+def initialize(cash=None):
+    """Initialize the dashboard, data storage, and account balances."""
+    print("Intializing Account and DataFrame")
+
+    # Initialize Account
+    account = {"balance": cash, "shares": 0}
+
+    # Initialize dataframe
+    df = fetch_data()
+
+    # @TODO: We will complete the rest of this later!
+    return account, df
+```
+
+* The initialize function is used to create all of the initial variables and data containers that the function may need. By initializing all of the functions in a single function, it makes it easy to update and change the initial values or data types used.
+
+* The account balance is a simple Python dictionary to keep track of the cash balance and number of shares owned.
+
+* The `df` DataFrame is initialized using the `fetch_data` function.
+
+Move to the `fetch_data` function and prompt the class to help complete the function definition. Highlight the following points:
+
+```python
+def fetch_data():
     """Fetches the latest prices."""
-    # Set the file path
-    filepath = Path("../Resources/aapl.csv")
+    print("Fetching data...")
+    kraken_public_key = os.getenv("KRAKEN_PUBLIC_KEY")
+    kraken_secret_key = os.getenv("KRAKEN_SECRET_KEY")
+    kraken = ccxt.kraken({"apiKey": kraken_public_key, "secret": kraken_secret_key})
 
-    # Read the CSV located at the file path into a Pandas DataFrame
-    data_df = pd.read_csv(filepath)
+    close = kraken.fetch_ticker("BTC/USD")["close"]
+    datetime = kraken.fetch_ticker("BTC/USD")["datetime"]
+    df = pd.DataFrame({"close": [close]})
+    df.index = pd.to_datetime([datetime])
+    return df
+```
 
-    # Print the DataFrame
-    print(data_df)
+* This function will use the Kraken exchange. However, by abstracting and encapsulating the data fetching code with this function, it is very easy to use a different exchange or API to trade other currencies, equities, etc.
 
-    return data_df
-  ```
+* The Kraken API keys need to be set from the environment variables.
 
-  ```python
-  def fetch_data():
-    """Fetches the latest prices."""
-    # Import Kraken environment variables
-    exchange = ccxt.kraken(
-        {"apiKey": os.getenv("KRAKEN_PUBLIC_KEY"), "secret": os.getenv("KRAKEN_SECRET_KEY")}
+* This particular example only needs the closing prices and timestamp for `BTC`. This data is returned as a DataFrame for convenience, but it could also have been returned as raw data.
+
+Show that the code for the signal generation uses the same moving crossover strategy as in previous examples, but that could also be easily changed. Point out again that because this code uses a window of 20 prices, we need to ensure that we fetch at least 20 data points before any signals are generated.
+
+```python
+def generate_signals(df):
+    """Generates trading signals for a given dataset."""
+    print("Generating Signals")
+    # Set window
+    short_window = 10
+
+    signals = df.copy()
+    signals["signal"] = 0.0
+
+    # Generate the short and long moving averages
+    signals["sma10"] = signals["close"].rolling(window=10).mean()
+    signals["sma20"] = signals["close"].rolling(window=20).mean()
+
+    # Generate the trading signal 0 or 1,
+    signals["signal"][short_window:] = np.where(
+        signals["sma10"][short_window:] > signals["sma20"][short_window:], 1.0, 0.0
     )
-    # Fetch daily candlestick bar data from `BTC/USD`
-    historical_prices = exchange.fetch_ohlcv('BTC/USD', '1d')
 
-    # Import the data as a Pandas DataFrame and set the columns
-    historical_prices_df = pd.DataFrame(historical_prices, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
-    historical_prices_df
+    # Calculate the points in time at which a position should be taken, 1 or -1
+    signals["entry/exit"] = signals["signal"].diff()
 
-    # Convert epoch timestamp to date using the `to_datetime` function and `unit` parameter
-    historical_prices_df['date'] = pd.to_datetime(historical_prices_df['timestamp'], unit='ms')
-    historical_prices_df
+    return signals
+```
 
-    return historical_prices_df
-  ```
+Move on to the `execute_trade_strategy` and show how we can use the account balance and the latest data retrieved to make a trading decision.
 
-* While the execution of the trading framework continues to be successful, one might notice that the account value metrics now appear wrong. This is because the code within the `execute_backtest` function arbitrarily uses a share size of 500 rather than properly calculating the correct share size based off of an available cash balance.
+```python
+def execute_trade_strategy(signals, account):
+    """Makes a buy/sell/hold decision."""
 
-  ![trading-dashboard-off-metrics](Images/trading-dashboard-off-metrics.png)
+    print("Executing Trading Strategy!")
 
-* In order to calculate the correct share size, the running cash balance should be divided by the running closing price of BTC/USD and rounded *down* to the nearest integer; however, due to the current batch processing paradigm of the framework (data retrieved and processed all at once), the best that can be done is to calculate the share size based off of the initial capital divided by the first closing price of BTC/USD. The `int` function by default converts and rounds down the float data type to the nearest integer.
+    if signals["entry/exit"].iloc[-1] == 1.0:
+        print("buy")
+        number_to_buy = round(account["balance"] / signals["close"].iloc[-1], 0) * 0.001
+        account["balance"] -= number_to_buy * signals["close"].iloc[-1]
+        account["shares"] += number_to_buy
+    elif signals["entry/exit"].iloc[-1] == -1.0:
+        print("sell")
+        account["balance"] += signals["close"].iloc[-1] * account["shares"]
+        account["shares"] = 0
+    else:
+        print("hold")
 
-  ```python
-  # Set the share size
-    share_size = 500
-  ```
+    return account
+```
 
-  ```python
-  # Set the share size
-    share_size = int(initial_capital / signals_df['close'][0])
-  ```
+* This function only prints the trade decision, but an API call can be used here to place a real order.
 
-* Close but no cigar! Modifying the share size calculation looks to have improved the account value metrics but unfortunately remain slightly off. This is noted by the fact that an initial account cash balance of $100,000 should not be able to afford a trade with an entry portfolio holding of greater than $100,000. Therefore, in order to obtain the correct share sizes, the framework will need to shift from a batch processing paradigm (data retrieved and processed all at once) to a real-time or streaming paradigm (data retrieved and processed every second) so as to access the running account cash balance and BTC/USD closing prices.
+Run the complete trading script in the terminal to show that the data being fetched until there is enough data collected to generate signals and execute the trading strategy.
 
-  ![trading-dashboard-improved-metrics](Images/trading-dashboard-improved-metrics.png)
+```shell
+python jarvis.py
+```
+
+Congratulate students on creating their first live trading platform!
+
+Explain that the beauty of a robust application framework, is that the abstraction and encapsualtion of code makes it easy to make additional changes. Explain that the remainder of class will be used to iterate and improve on this platform to make it even better!
 
 ---
 
