@@ -713,140 +713,104 @@ Explain that we can use these ideas to modify our trading dashboard so that the 
 
 ### 8. Everyone Do: Async Trading (15 mins)
 
-In this activity, now that students understand how to transition their trading frameworks from performing batch processing data loads to real-time data loads with the help of asyncio, instructors will now guide students on how to execute trades based on the continual flow of data.
+In this activity, students will code along with the instructor to update their live trading code to fetch data asynchronously with [asyncio](https://docs.python.org/3/library/asyncio.html).
 
-The purpose of this activity is to build upon the instructions from the previous activity to not only implement real-time data loads with the help of asyncio, but also to implement the trading logic required to make a decision to either buy, sell, or hold.
+**Files:** [jarvis.py](Activities/06-Evr_Async_Trading/Solved/jarvis.py)
 
-**Files:** [ninja_trader_v3.py](Activities/06-Evr_Async_Trading/Solved/ninja_trader_v3.py)
+Open the starter code and live code the solution with the class. Explain any new concepts as you go, and be sure to proceed slowly and pause frequently to make sure that students can keep up.
 
-Open the solution file and walk through the following with the class:
+Start by skimming the code with the class and showing the `# @TODO:` comments where the code will need updated. Explain that the goal is to use asyncio so that the dashboard can be loaded and updated without blocking the page from loading.
 
-* In much of the same fashion of the previous activity, in order to transition students' trading frameworks to use real-time data (make an API call every second), the following functions need to be modified or added.
+Import the necessary libraries to use asyncio, hvplot, and panel.
 
-  ```python
-  def initialize(cash):
-    """Initialize the dashboard, data storage, and account balances."""
-    # Initialize Account
-    account = {"balance": cash, "shares": 0}
+```python
+import asyncio
 
-    # Initialize DataFrame
-    data_df = pd.DataFrame()
+import hvplot.pandas
+import panel as pn
 
-    # Initialize Streaming DataFrame for the signals
-    dashboard = initialize_dashboard()
-    return account, data_df, dashboard
-  ```
+pn.extension()
+```
 
-  ```python
-  def fetch_data():
-    """Fetches the latest prices."""
-    kraken = ccxt.kraken(
-        {"apiKey": os.getenv("kraken_key"), "secret": os.getenv("kraken_secret")}
-    )
-    close = kraken.fetch_ticker("BTC/USD")['close']
-    datetime = kraken.fetch_ticker("BTC/USD")['datetime']
-    df = pd.DataFrame({'close': [close], 'date': [datetime]})
-    df.index = pd.to_datetime([datetime])
-    return df
-  ```
+Update the code for the `initialize`, `build_dashboard`, and `update_dashboard` functions and highlight the following:
 
-  ```python
-  async def main():
+```python
+# Intialize the dashboard
+    dashboard = build_dashboard()
+
+    # @TODO: We will complete the rest of this later!
+    return account, df, dashboard
+
+
+def build_dashboard():
+    """Build the dashboard."""
+    loading_text = pn.widgets.StaticText(name="Trading Dashboard", value="Loading...")
+    dashboard = pn.Column(loading_text)
+    print("init dashboard")
+    return dashboard
+```
+
+* The `initialize` function uses the `build_dashboard` function to build and return a simple dashboard that initially just contains static text.
+
+* The `update_dashboard` function is used to update the Panel dashboard with a line chart. It uses new data that is available after fetching from the CCXT API.
+
+* Because the dashboard is just a container for plots, the dashboard contents can be replaced with new plots using `dashboard[0] = dv.hvplot()`.
+
+Complete the main function and explain the following to the class:
+
+```python
+account, df, dashboard = initialize(10000)
+dashboard.servable()
+
+
+async def main():
+    loop = asyncio.get_event_loop()
 
     while True:
         global account
-        global data_df
+        global df
         global dashboard
 
-        # Fetch latest pricing data
-        new_record_df = fetch_data()
+        new_df = await loop.run_in_executor(None, fetch_data)
+        df = df.append(new_df, ignore_index=True)
 
-        # Save latest pricing data to a global DataFrame
-        if data_df.empty:
-            data_df = new_record_df.copy()
-        else:
-            data_df = data_df.append(new_record_df, ignore_index=False)
+        min_window = 22
+        if df.shape[0] >= min_window:
+            signals = generate_signals(df)
+            account = execute_trade_strategy(signals, account)
 
-        # Generate Signals and execute the trading strategy
-        min_window = 10
-        max_window = 1000
-        if data_df.shape[0] >= min_window:
-            signals = generate_signal(data_df)
-            tested_signals = execute_backtest(signals)
-
-            account = execute_trade_strategy(tested_signals, account)
-            portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals)
-
-            print(f"Account Balance: {account['balance']}")
-            print(f"Account Shares: {account['shares']}")
-
-            # Update the dashboard
-            update_dashboard(account, signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
+        update_dashboard(df, dashboard)
 
         await asyncio.sleep(1)
 
 
-  # Initialize account and dashboard objects
-  account, data_df, dashboard = initialize(100000)
-  dashboard.servable()
+# Python 3.7+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+```
 
+* The dashboard is initialized as Static text and then served immediately. Afterwards, we can use an asynchronous main function to fetch new data and update the dashboard without blocking the page from loading.
+
+  ```python
+  account, df, dashboard = initialize(10000)
+  dashboard.servable()
+  ```
+
+* In this example, we choose to make the main function async so that it does not block the dashboard from loading. The code awaits both the `fetch_data` function and the `asyncio.sleep` function.
+
+  * **Note:** The `requests` library that is used in the `fetch_data` function is consdiered a blocking library. Blocking libraries like this must be called using a special function called `run_in_executor`. More information about this can be found in the official [asyncio documents](https://docs.python.org/3/library/asyncio-eventloop.html#executing-code-in-thread-or-process-pools), but this code can be used anytime that the requests library is used. Alternatively, there is a asyncio-compatible library called [aiohttp-requests](https://pypi.org/project/aiohttp-requests/) that can be used instead.
+
+* Once the new data is fetched, the `update_dashboard` function is called to update the plots. This function simply replaces the dashboard plots for now, but this will be improved later in class.
+
+* Finally, the main function is executed with a special asyncio function called `run_until_complete`. This is just one way to run the asynchronous code in the event loop.
+
+  ```python
   # Python 3.7+
   loop = asyncio.get_event_loop()
   loop.run_until_complete(main())
   ```
 
-* Notice, however, that the following snippet takes into account the fact that in order to generate a signal based on a short and long window dual moving average crossover strategy, there must be a sufficient amount of data that is at least equal to or greater than the number defined by the short window.
-
-  ```python
-  # Generate Signals and execute the trading strategy
-  min_window = 10
-  max_window = 1000
-  if data_df.shape[0] >= min_window:
-      signals = generate_signal(data_df)
-      tested_signals = execute_backtest(signals)
-
-      account = execute_trade_strategy(tested_signals, account)
-      portfolio_evaluation_df, trade_evaluation_df = evaluate_metrics(tested_signals)
-
-      print(f"Account Balance: {account['balance']}")
-      print(f"Account Shares: {account['shares']}")
-
-      # Update the dashboard
-      update_dashboard(account, signals, portfolio_evaluation_df, trade_evaluation_df, dashboard)
-  ```
-
-* Because the trading framework is now using real-time data, data can now be evaluated at a more granular level. This allows decisions to be based at the record level.
-
-  ```python
-  account = execute_trade_strategy(tested_signals, account)
-  ```
-
-* In the new `execute_trade_strategy` function, the algorithmic trading framework makes a decision to either buy, sell, or hold based on the latest entry/exit values of the backtested signal results. In the case of either a buy or a sell, the account dictionary is updated to reflect the change in cash balance and active share count; however, this code could be modified to place real buy or sell orders via the Kraken exchange.
-
-  ```python
-  def execute_trade_strategy(signals, account):
-    """Makes a buy/sell/hold decision."""
-
-    if signals["entry/exit"][-1] == 1.0:
-        print("buy")
-        number_to_buy = round(account['balance'] / signals['close'][-1], 0) * .001
-        account["balance"] -= (number_to_buy * signals['close'][-1])
-        account["shares"] += number_to_buy
-    elif signals["entry/exit"][-1] == -1.0:
-        print("sell")
-        account["balance"] += signals['close'][-1] * account['shares']
-        account["shares"] = 0
-    else:
-        print("hold")
-
-    return account
-  ```
-
-* The result of the previous changes shows a trading dashboard that not only displays the real-time pricing data for BTC/USD (along with associated short and long window moving averages), but also makes buy, sell, or hold decisions in real-time.
-
-  ![async-trading-dashboard](Images/async-trading-dashboard.gif)
-
-Ask if there are any questions before moving on.
+Wrap up this activity by acknowledging that asynchronous code is very challenging to write. However, the code provided in this example can be used as a template that can be reused for many different algorithmic trading applications.
 
 ---
 
