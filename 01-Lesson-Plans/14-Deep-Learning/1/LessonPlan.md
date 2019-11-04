@@ -301,7 +301,7 @@ In this activity, students are introduced to Keras and how they can use this lib
 
 * [artificial-neuron.ipynb](Activities/01-Evr_Keras_Intro/Solved/artificial-neuron.ipynb)
 
-Open the lesson slides, go to the _Activating Your First Artificial Neuron_ section and highlight the following:
+Open the lesson slides, go to the "Activating Your First Artificial Neuron" Section and highlight the following:
 
 * There are two ways to code a neuron:
 
@@ -317,9 +317,9 @@ Open the lesson slides, go to the _Activating Your First Artificial Neuron_ sect
 
 * Using Keras and TensorFlow, we can use the standard `model -> fit -> predict` interface that students are used to seeing.
 
-Ask students if they have already installed TensorFlow, if there are some students who don't, slack out the [installation guide](../Supplemental/deep_learning_installation_guide.md) and have your TAs to assist students in the process while you continue to the demo.
+Ask students if they have already installed TensorFlow, if some students don't, slack out the [installation guide](../Supplemental/deep_learning_installation_guide.md) and have your TAs to assist students in the process while you continue to the demo.
 
-This demo is an Everyone Do activity where students are encouraged to follow your steps as you code, slack out the unsolved version of the Jupyter Notebook before continue.
+This demo is an _Everyone Do_ activity where students are encouraged to follow your steps as you code, slack out the unsolved version of the Jupyter Notebook before continue.
 
 Open the unsolved version of the Jupyter Notebook, explain to students that you are going to demo how a neural network with a single neuron can be made using Keras, encourage the class to replicate your live coding and highlight the following:
 
@@ -350,7 +350,7 @@ Explain to students that we will start coding a neural network with a single neu
 
 * This dummy dataset contains 1000 samples with two features that are split into two groups.
 
-* A DataFrame is created with the dummy data to create a plot using `hvplot`.
+* A DataFrame is created with the dummy data to generate a plot using Pandas' `plot()` method.
 
   ```python
   # Creating a DataFrame with the dummy data
@@ -358,7 +358,7 @@ Explain to students that we will start coding a neural network with a single neu
   df["Target"] = y
 
   # Plotting the dummy data
-  df.hvplot.scatter(x="Feature 1", y="Feature 2", by="Target")
+  df.plot.scatter(x="Feature 1", y="Feature 2", c="Target", colormap="winter")
   ```
 
   ![Two blobs dummy data](Images/neuron-two-blobs.png)
@@ -369,7 +369,9 @@ Explain to students that we will start coding a neural network with a single neu
   X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
   ```
 
-Explain to students that before using a neural network, it is important to normalize or standardize the data. Neural networks typically perform better when each of the input features are on the same scale. This makes it easier for the neural network to stabilize and adjust the weights in the network.
+Explain to students that before using a neural network, it is crucial to normalize or standardize the data.
+
+* Neural networks typically perform better when each of the input features are on the same scale. This makes it easier for the neural network to stabilize and adjust the weights in the network.
 
 * Scikit-Learn's `MinMaxScaler` or `StandardScaler` are commonly used to scale and normalize input features. The `StandardScaler` is used here to scale the features data. There is no need to scale the target data (`y`) since it's already encoded as `0` and `1`.
 
@@ -438,7 +440,7 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
 
 * The `binary_crossentropy` loss function is used since this is a binary classification problem.
 
-* Optimizers are algorithms that shape and mold a neural network while it's trained, to its most accurate possible for by updating the model in response to the output of the loss function. The `adam` optimizer is used in this demo.
+* Optimizers are algorithms that shape and mold a neural network while it's trained, to its most accurate possible form by updating the model in response to the output of the loss function. The `adam` optimizer is used in this demo.
 
 * An additional training metric, `accuracy`, is also specified.
 
@@ -490,7 +492,7 @@ Continue the demo to demonstrate what happens when we use this model with nonlin
 
   ![Non-linear data plot](Images/non_linear_data_plot.png)
 
-Since students are already familiar with the neural network creation workflow, explain to students that you are going to follow a similar process than before, but now, you are going to use the nonlinear data to train the same model.
+Since students are already familiar with the neural network creation workflow, explain that you are going to follow a similar process than before, but now, you are going to use the nonlinear data to train the same model.
 
 ```python
 # Create training and testing sets
@@ -516,7 +518,7 @@ model_moon = neuron.fit(X_moon_train_scaled, y_moon_train, epochs=100, shuffle=T
 
   ![Non-linear data plots](Images/neuron_plot_non_linear.png)
 
-* The model is evaluated with 10 new dummy samples, it can be corroborated that results aren't as good as the ones obtained with linear data, this is because using only one-single neuron is not unveiling the power of neural networks to find nonlinear patterns.
+* The model is evaluated and predictions are made with ten new dummy samples, it can be corroborated that results aren't as good as the ones obtained with linear data, this is because using only one-single neuron is not unveiling the power of neural networks to find nonlinear patterns.
 
   ![Non-linear data evaluation](Images/non_linear_loss_accuracy.png)
 
