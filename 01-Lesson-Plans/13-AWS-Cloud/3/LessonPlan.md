@@ -32,6 +32,9 @@ By the end of the unit, students will be able to:
 
 * **Important:** At the end of Today´s class, remember students to create a local copy of all their deployments on AWS, so they can delete them from the cloud to avoid additional charges. Also, remind students to be aware of AWS free tier and trials expiration date.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [13.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0f288da5-fe69-4899-b21d-aaf1013917e1) Note that this video may not reflect the most recent lesson plan.
+
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1n9mKCC7_yl_P_GUHnLCauvdgunTLigX0tfamq2kJ0RQ/edit?usp=sharing).

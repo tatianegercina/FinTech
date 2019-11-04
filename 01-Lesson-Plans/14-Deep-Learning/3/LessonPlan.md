@@ -26,6 +26,9 @@ By the end of the unit, students will be able to:
 
 * A few students may want to go even deeper into the theory and math behind RNNs, but it would be best to direct those in-depth discussions to office hours. Encourage students to review the reference links and to think about ways that they might be able to incorporate RNNs into their projects.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [14.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=89f4c6a4-9739-4b74-90b0-aafa01716805) Note that this video may not reflect the most recent lesson plan.
+
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1tl9Bc40tvQatP5znUnBCsVJsn-BIUZJimh0ASjM76rQ/edit?usp=sharing).
