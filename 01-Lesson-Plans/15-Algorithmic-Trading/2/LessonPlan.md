@@ -820,7 +820,8 @@ In this activity, students will learn how to persist their real-time data to a d
 
 The purpose of this activity is to showcase the value in persisting data as doing so allows an application to pick up where it left off should a failure occur.
 
-**Files:** [ninja_trader_v3.py](Activities/05-Evr_Persisting_Real_Time_Data/Solved/ninja_trader_v3.py)
+**File:**
+* [jarvis.py](Activities/05-Evr_Persisting_Real_Time_Data/Unsolved/jarvis.py)
 
 Explain to the class that the next enhancement to make to the trading algorithm is to persist the live data to a database. Persisting the live data allows the framework to recover from data errors, and it allows us to collect and use historical data without running into memory issues.
 
@@ -933,34 +934,101 @@ The purpose of this activity is to show students how to update a visualization a
 
 **File:** [streamz.ipynb](Activities/08-Ins_Streaming/Solved/streamz.ipynb)
 
-Open the solution file and discuss the following:
+Begin this demonstration by asking the students if they noticed anything strange about the `update_dashboard` code. Point out that the dashboard is simply replaced with each new piece of data. While this approach is fine for a simple dashboard example, it can create problems for a complex dashboard.
 
-* First and foremost, we will need to import the necessary libraries and dependencies in order to properly stream data.
+Explain that a better approach to replacing the plots each time is to update the plots with new data. Explain that Panel, hvplot, and Plotly all provide tools to update plots in an efficient way using live data streams. In this example, we will use the `streamz` library with hvplot to update our plots to allow for live data streams.
+
+Explain to students that hvplot uses the `Streamz` library to build a pipeline or buffer to manage continuos streams of data. A `Stream` can be thought of as a data reservoir that live data can be sent to. Hvplot can then connect to this Stream and update its plots when new data arrives.
+
+Acknowledge that while data pipelines and buffers are very advanced subjects, the streamz library makes it very simple to create a use streamz with Pandas and hvplot.
+
+Open the notebook and quickly show that hvplot has a special data streaming interface to the streamz library that can be imported:
+
+```python
+import os
+import ccxt
+import pandas as pd
+import hvplot.streamz
+from streamz import Stream
+from streamz.dataframe import DataFrame
+```
+
+Use the first section of the notebook to demonstrate how to create a streaming DataFrame and plot the data with streamz and hvplot. Highlight the following points:
+
+* The streamz library provides a [DataFrame-like interface](https://streamz.readthedocs.io/en/latest/dataframes.html) that can accept Stream and a example to form a streaming DataFrame.
 
   ```python
-  import os
-  import ccxt
-  import pandas as pd
-  import hvplot.streamz
-  from streamz import Stream
-  from streamz.dataframe import DataFrame
+  stream = Stream()
+  example = pd.DataFrame({"x": [], "y": []}, columns=["x", "y"], index=[])
+  sdf = DataFrame(stream, example=example)
   ```
 
-* The Streamz library supports streaming data from a Pandas DataFrame and includes a custom Stream DataFrame object that can bind Stream objects to itself. The `example` parameter sets the structure of the Stream DataFrame object, and similar to a normal DataFrame, hvplot can be called on the Stream DataFrame to generate a visualization such as a scatter plot.
+* The `example` in the above code is just a template for what the live data will look like. In this example, the live data will have `x` and `y` columns of data.
 
-  ![stream-dataframe](Images/stream-dataframe.png)
+* A streaming DataFrame has limited functions similar to a real Pandas DataFrame, but it uses a Stream to hold live streaming data. A streaming DataFrame can be considered a wrapper around a normal DataFrame that hvplot can use to automatically update its plots with streaming data. In this example, hvplot will update its scatter plot whenever it receives new live data that matches the format of the `example` DataFrame.
 
-* In order to push data through to the scatter plot, the Stream object houses an `emit` function that pushes a DataFrame with similar structure to the bound Stream DataFrame object, which is then used to update the scatter plot. In this case, a loop from 1 to 20 is performed in which for every loop, a DataFrame is created with the value `i` and pushed via the Stream object to the scatter plot. The result is a scatter plot that streams its data points from 1 to 20.
+  ```python
+  sdf.hvplot.scatter(x="x", y="y")
+  ```
 
-  ![stream-emit](Images/stream-emit.gif)
+* Live data is added to the streaming DataFrame using `stream.emit`. In this example, a DataFrame is created 20 different times and each time emitted to the streaming DataFrame. Hvplot knows to update its scatter plot with each new data that is emitted.
 
-* In addition, hvplot allows for a `backlog` parameter that creates a rolling window for streaming data. In this case, the data is streamed to the scatter plot ranging from 1 to 100; however, the use of the`backlog` parameter sets a rolling window of 10 data points in the scatter plot.
+  ```python
+  def emit(i):
+      df = pd.DataFrame({"x": [i], "y": [i]})
+      stream.emit(df)
 
-  ![stream-emit-rolling](Images/stream-emit-rolling.gif)
+  for i in range(20):
+      emit(i)
+  ```
 
-* Lastly, the Stream library can be used to stream data received from an external API, such as the Kraken exchange via the ccxt library. In this case, a Stream DataFrame object is created and bound to the Stream object with a structure set to a DataFrame with the column `close`. Then, in a continuous while loop, data is pulled from Kraken and a DataFrame with a similar structure to the Stream DataFrame object is pushed via the `emit` function. The result is a line chart that continually streams BTC/USD pricing data.
+  ![streamz_demo_1.gif](Images/streamz_demo_1.gif)
 
-  ![stream-kraken-data](Images/stream-kraken-data.gif)
+Use the Rolling Window section to explain that a rolling window of data can be used with hvplot to make the plot more efficient. Highlight the following:
+
+* You can specify the rolling window of data to plot using the `backlog` parameter. This is just how much total data the plot will remember and use at any given time.
+
+  ```python
+  sdf.hvplot.scatter(x="x", y="y", backlog=10)
+  ```
+
+* Even with 100 total emits, the backlog of 10 means that only the newest 10 datapoints are remembered.
+
+  ```python
+  for i in range(100):
+    emit(i)
+  ```
+
+  ![streamz_demo_2.gif](Images/streamz_demo_2.gif)
+
+* Finally, show how streamz can be used with CCXT and Kraken to fetch data from an API and update a plot:
+
+  ![streamz_demo_3.gif](Images/streamz_demo_3.gif)
+
+* In this code, the `example` DataFrame consists of a closing price column.
+
+  ```python
+  stream = Stream()
+  example = pd.DataFrame({"close": []}, columns=["close"], index=pd.DatetimeIndex([]))
+  sdf = DataFrame(stream, example=example)
+  ```
+
+* New data is fetched from the Kraken exchange via the CCXT API and processed as a new DataFrame `df` that matches the format of the `example` DataFrame. This new DataFrame is then emitted to the Stream and hvplot uses the streaming DataFrame to update the plot.
+
+  ```python
+  kraken = ccxt.kraken(
+      {"apiKey": os.getenv("kraken_key"), "secret": os.getenv("kraken_secret")}
+  )
+
+  while True:
+      close = kraken.fetch_ticker("BTC/USD")['close']
+      datetime = kraken.fetch_ticker("BTC/USD")['datetime']
+
+      df = pd.DataFrame({"close": [close]})
+      df.index = pd.to_datetime([datetime])
+      stream.emit(df)
+      time.sleep(1)
+  ```
 
 Ask any questions before moving on.
 
