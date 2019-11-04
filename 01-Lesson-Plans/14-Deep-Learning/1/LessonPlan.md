@@ -984,7 +984,7 @@ In this activity, the instructor will conduct a demonstration of the homework.
 
 * [README.md](../../../02-Homework/14-Deep-Learning/Instructions/README.md)
 
-Open the lesson slides, move to the _Unit 14 Homework Solution Demo_ and highlight the following:
+Open the lesson slides, move to the "Homework Demo" Section, and highlight the following:
 
 * Cryptocurrencies are gaining the attention of investors; however, due to its volatility and nature, conventional indicators and metrics are not always suitable.
 
