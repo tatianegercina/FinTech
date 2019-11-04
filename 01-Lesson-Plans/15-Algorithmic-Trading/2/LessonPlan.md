@@ -605,6 +605,8 @@ Note that a complete explanation of asyncio is out-of-scope for this lesson, so 
 
 * [async_dashboard.py](Activities/05-Ins_Asyncio/Solved/async_dashboard.py)
 
+Explain to students that now that we have a basic live trading script working, we want to include live visualizations as well. However, there are some problems with plotting live data that needs to be addressed first.
+
 Start by running the `blocked_dashboard.py` code to show the long loading time.
 
 ```shell
