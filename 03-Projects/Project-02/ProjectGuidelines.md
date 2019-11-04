@@ -40,13 +40,13 @@ Once your group has written an outline, it's time to start hunting for data. You
 
 * [Medium APIs List](https://medium.com/@benjamin_libor/a-curated-collection-of-over-150-apis-to-build-great-products-fdcfa0f361bc)
 
-Chances are you'll have to update your Project Outline as you explore the available data. **This is fine**—adjustments like this are part of the process! Just make sure everyone in the group is up-to-speed on the goals of the project as you make changes.
+Chances are you'll have to update your Project Outline as you explore the available data. This is fine—adjustments like this are part of the process! Just make sure everyone in the group is up to speed on the goals of the project as you make changes.
 
-Make sure that your data is not too large for local analysis. **Big Data** datasets are difficult to manage locally, so consider a subset of that data or a different dataset altogether.
+Make sure that your data is not too large for local analysis. Big-data datasets are difficult to manage locally, so consider a subset of that data or a different dataset altogether.
 
 ## Data Preparation & Model Training
 
-Machine learning typically requires extensive data preparation before the model can be trained. Use Jupyter, Google Colab, or AWS SageMaker to prepare a training and testing dataset and to train the machine learning model.
+Machine learning typically requires extensive data preparation before the model can be trained. Use Jupyter, Google Colab, or AWS SageMaker to prepare a training and testing dataset and to train the machine-learning model.
 
 Use the training data to fit the model.
 
@@ -56,7 +56,7 @@ Use the testing data to evaluate the model. Create any necessary tables, charts,
 
 ## Predictions and Conclusions
 
-Summarize your conclusions and predictions. This should include a numerical summary (i.e., what data did your model yield), as well as visualizations of that summary (plots of the final model evaluation and predictions).
+Summarize your conclusions and predictions. This should include a numerical summary (what data your model yielded), as well as visualizations of that summary (plots of the final model evaluation and predictions).
 
 Optionally, deploy the model as an interactive dashboard or interface (Lex or SageMaker).
 
