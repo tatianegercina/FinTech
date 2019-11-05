@@ -48,7 +48,7 @@ Then, open the solution file and discuss the following:
 
   ![bollinger-band.png](Images/bollinger-band.png)
 
-  ![bollinger-band-plot.png](Images/bolling-band-plot.png)
+  ![bollinger-band-plot.png](Images/bollinger-band-plot.png)
 
 * After constructing the trading signals or the features of the Random Forest model, the next step is to define the x-variable list, shift the index of the Pandas DataFrame by 1, and construct the dependent variable. The shift ensures that the model will use the current day values to predict the *next* day's outcome--whether the next day will be a positive or negative return.
 
