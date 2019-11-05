@@ -74,6 +74,6 @@ Then, open the solution file and discuss the following:
 
   ![random-forest-model-plot-2](Images/random-forest-model-plot-2.png)
 
-* And finally, the cumulative return plot related to the strategy employed by the predictive Random Forest model in shown. Unfortunately, the strategy seems to have lost money in the long-term.
+* And finally, the cumulative return plot related to the strategy employed by the predictive Random Forest model is shown. Unfortunately, the strategy would have lost money from 09-15-2019 to 09-25-2019.
 
   ![Images/model-cumulative-returns-plot.png](Images/model-cumulative-returns-plot.png)
