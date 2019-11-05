@@ -78,7 +78,7 @@ Welcome students to the second day of algorithmic trading and ask for any volunt
 
 Then, create some excitement around the day by mentioning the following points:
 
-* The goal of today's lesson is to take what students learned in day one and put the concepts together to formulate an end-to-end full-stack trading application that is capable of pulling financial data, generating signals, backtesting, executing a trading strategy, evaluating results, and generating dashboard visualizations in a single workflow.
+* The goal of today's lesson is to take what students learned in day one and put the concepts together to build an end-to-end full-stack trading application that is capable of pulling financial data, generating signals, backtesting, executing a trading strategy, evaluating results, and generating dashboard visualizations in a single workflow.
 
 * Creating a trading application from scratch should hopefully dispel the esoteric nature of developing algorithmic trading applications similar to those offered from commercial services, and allows for the ability to add additional features in the future, should students desire to do so.
 
