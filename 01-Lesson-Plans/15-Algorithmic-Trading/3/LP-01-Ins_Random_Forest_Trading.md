@@ -56,3 +56,10 @@ Then, open the solution file and discuss the following:
 
   ![dependent-variable](Images/dependent-variable.png)
 
+* Almost there! The final remaining steps before proceeding to train the Random Forest model is to now define the training and test windows and separate the X and Y training/testing datasets.
+
+  ![training-testing-windows.png](Images/training-testing-windows.png)
+
+  ![x-y-training-datasets](Images/x-y-training-datasets.png)
+
+  ![x-y-testing-datasets](Images/x-y-testing-datasets.png)
