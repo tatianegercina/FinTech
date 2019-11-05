@@ -1,4 +1,4 @@
-## 17.3 Lesson Plan: Project 2 Presentations
+## 17.3 Lesson Plan—Project 2 Presentations
 
 In this class, your students will present their project projects to the class! They’ll afterward answer open-floor questions from you, TAs, and classmates. This is a **crucial** lecture for your students, so make sure you follow the advice in this plan.
 
@@ -22,7 +22,7 @@ In this class, your students will present their project projects to the class! T
 
 Make sure to come to class and setup your laptop and other equipment. It is recommended that you prepare a list of the GitHub pages links for all deployed repos so that students can quickly launch their projects.
 
-If students have hosted presentations on Google Presentations, compile a list of those as well to avoid switching computers.
+If students have hosted presentations on Google Slides, compile a list of those as well to avoid switching computers.
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
@@ -38,7 +38,7 @@ Ask students to send links to both their presentation and to their GitHub README
 
 Give students a rundown of how their presentations should pan out.
 
-1. They should last about eight minutes, followed by two to four minutes of open-floor Q&A. (Note: Adjust the presentation time based on your class size.)
+1. They should last about 8 minutes, followed by 2 to 4 minutes of open-floor Q&A. (Note: Adjust the presentation time based on your class size.)
 2. They should speak **into** the microphone—this ensures that we capture high-quality audio for their recorded presentation.
 3. They need to show confidence! All of them have contributed to impressive projects—they need to recognize and project that during their demonstrations.
 
@@ -46,9 +46,9 @@ Ask which groups would like to go first, then second and so on. When groups stop
 
 ### 3. Presentations Part 1 (1 hour, 30 minutes)
 
-* Go down the list and send each group up to the front of class. Give students roughly three minutes of setup time.
+* Go down the list and send each group up to the front of class. Give students roughly 3 minutes of setup time.
 
-* When a group nears the nine-minute mark, motion for them to draw their presentation to a close (try pointing to your wrist). Don't say anything—you don't want your voice to interrupt their talk, especially since you're recording them.
+* When a group nears the 9-minute mark, motion for them to draw their presentation to a close (try pointing to your wrist). Don't say anything—you don't want your voice to interrupt their talk, especially since you're recording them.
 
 * Follow each of these presentations up with questions about their projects. Let TAs and classmates ask questions, too.
 

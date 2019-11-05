@@ -31,11 +31,11 @@ You are free to structure your presentations to your liking, but students tend t
 * Postmortem
 
   * Discuss any difficulties that arose, and how you dealt with them.
-  * Discuss any additional questions/problems that came up, but which you didn't have time to answer: What would you research next, if you had two more weeks?
+  * Discuss any additional questions or problems that came up but you didn't have time to answer: What would you research next if you had two more weeks?
 
 * Questions
 
-  * Open-floor Q&A with the audience
+  * Open-floor Q&A with the audience.
 
 - - -
 

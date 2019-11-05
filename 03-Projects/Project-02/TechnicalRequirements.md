@@ -2,7 +2,7 @@
 
 The technical requirements for Project 2 are as follows.
 
-* [ ] Create a Jupyter Notebook, Google Colab Notebook, or SageMaker Notebook to prepare a training/testing dataset.
+* [ ] Create a Jupyter Notebook, Google Colab Notebook, or Amazon SageMaker Notebook to prepare a training and testing dataset.
 
 * [ ] Optionally, apply a dimensionality reduction technique to reduce the input features, or perform feature engineering to generate new features to train the model.
 
@@ -18,7 +18,7 @@ The technical requirements for Project 2 are as follows.
 
 * [ ] Use one new machine learning library, machine learning model, or evaluation metric that hasn't been covered in class.
 
-* [ ] Create a README.md in your repo with a write-up summarizing your project. Be sure to include any usage instructions to setup and use the model.
+* [ ] Create a README.md in your repo with a write-up summarizing your project. Be sure to include any usage instructions to set up and use the model.
 
 - - -
 

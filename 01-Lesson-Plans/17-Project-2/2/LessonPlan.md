@@ -1,4 +1,4 @@
-## 17.2 Lesson Plan: Project Work
+## 17.2 Lesson Plan—Project Work
 
 In today's class, students will have time to outline their presentations and complete work on their projects.
 
@@ -32,7 +32,7 @@ The remaining schedule for Project 2 is as follows:
 
 * To provide students more time and support for their group projects.
 
-* **To make sure students spend at least a half hour outlining their presentations**.
+* To make sure students spend **at least a half hour **outlining their presentations.
 
 - - -
 
@@ -50,13 +50,11 @@ Make sure they don't code. They should consider:
 
   * The key messages they need to show
 
-  * The details that they should _avoid_ reviewing (they only have 10 minutes to talk). (Note: Adjust the presentation time based on your class size.)
+  * The details that they should _avoid_ reviewing (they only have 10 minutes to talk). Note: Adjust the presentation time based on your class size.
 
 While the groups organize their presentations, offer to answer any questions about Saturday.
 
-About 10 minutes in, you should walk around and make sure that students aren't coding. If it looks like they are, just walk up and warmly ask how they're progressing so far with their outline.
-
-Don't accuse them of not following directions; just steer them on course.
+About 10 minutes in, you should walk around and make sure that students aren't coding. If it looks like they are, just walk up and warmly ask how they're progressing so far with their outline. Don't accuse them of not following directions; just steer them on course.
 
 ### 3. Student Do: Project Work (60 min)
 
