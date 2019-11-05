@@ -76,4 +76,4 @@ Then, open the solution file and discuss the following:
 
 * And finally, the cumulative return plot related to the strategy employed by the predictive Random Forest model in shown. Unfortunately, the strategy seems to have lost money in the long-term.
 
-  ![Images/model-cumulative-return-plot.png](Images/model-cumulative-return-plot.png)
+  ![Images/model-cumulative-returns-plot.png](Images/model-cumulative-returns-plot.png)
