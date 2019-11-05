@@ -29,3 +29,24 @@ Then, open the solution file and discuss the following:
   ![data-prep-3](Images/data-prep-3.png)
 
   ![data-prep-4](Images/data-prep-4.png)
+
+* The Random Forest model will utilize three trading signal features derived from three different technical indicators, namely an exponential moving average of closing prices, an exponential moving average of daily return volatility, and a Bollinger Band, which is a set of lines representing a (positive and negative) standard deviation away from a simple moving average (SMA) of the asset's closing price.
+
+* In contrast to a simple moving average (SMA), an exponential moving average (EMA) represents a moving average with more weight given to the most recent of prices. Therefore, a short window EMA describes "faster" price action than its long window EMA or "slower" counterpart. The logic then dictates such that when the fast EMA is greater than the slow EMA, a long trade opportunity exists, as price action should rise in the short-term, while a short trade opportunity arises for the opposite scenario.
+
+  ![ema](Images/ema.png)
+
+  ![ema-plot](Images/ema-plot.png)
+
+* Similarly, an exponential moving average of daily return volatility gives more weight to the most recent of daily returns. Therefore, when a short window EMA of daily return volatility is greater than a long window EMA of daily return volatility, the crossover suggests that a long opportunity exists where daily returns are expected to rise, while a short opportunity exists for the opposite scenario where daily returns are expected to fall.
+
+  ![ema-std](Images/ema-std.png)
+
+  ![ema-std-plot](Images/ema-std-plot.png)
+
+* Lastly, a Bollinger Band describes a middle, upper, and lower band, in which the middle is a simple moving average (SMA) of closing prices, while the upper and lower bands describe the rolling standard deviation above and below the SMA, respectively. Therefore, when the asset closing price is less than the lower band, a long opportunity exists as the signal suggests that the price action will tend to move upwards and more in line with where the price *should* be (within the negative standard deviation). A short opportunity exists for the opposite scenario in which the asset closing price is greater than the upper band, suggesting that the price action will tend to move lower and within the positive standard deviation.
+
+  ![bollinger-band.png](Images/bollinger-band.png)
+
+  ![bollinger-band-plot.png](Images/bolling-band-plot.png)
+
