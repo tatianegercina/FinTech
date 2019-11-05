@@ -14,7 +14,7 @@ Your presentation must:
 
 * [ ] Describe the techniques used to evaluate the model performance.
 
-* [ ] Summarize your conclusions and predictions. This should include a numerical summary (i.e., what data did your model yield), as well as visualizations of that summary (plots of the final model evaluation and predictions).
+* [ ] Summarize your conclusions and predictions. This should include a numerical summary (what data your model yielded), as well as visualizations of that summary (plots of the final model evaluation and predictions).
 
 * [ ] Discuss the implications of your findings. This is where you get to have an open-ended discussion about what your findings mean.
 
