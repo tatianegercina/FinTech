@@ -63,3 +63,17 @@ Then, open the solution file and discuss the following:
   ![x-y-training-datasets](Images/x-y-training-datasets.png)
 
   ![x-y-testing-datasets](Images/x-y-testing-datasets.png)
+
+* And now for the last piece to the puzzle! After importing the `sklearn` library and associated Random Forest classes, the model is fit with the x and y training data and then used to predict the y values derived from the x test dataset. The results are then shown in the following DataFrame.
+
+  ![random-forest-model](Images/random-forest-model.png)
+
+* The results are then plotted against the actual results (where or not the particular day was a positive or negative return) to show the turnover of the Random Forest model. In other words, the following plot shows how many times the model predicted that a particular day would be positive or negative based off of the features or trading signals.
+
+  ![random-forest-model-plot-1](Images/random-forest-model-plot-1.png)
+
+  ![random-forest-model-plot-2](Images/random-forest-model-plot-2.png)
+
+* And finally, the cumulative return plot related to the strategy employed by the predictive Random Forest model in shown. Unfortunately, the strategy seems to have lost money in the long-term.
+
+  ![Images/model-cumulative-return-plot.png](Images/model-cumulative-return-plot.png)
