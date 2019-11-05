@@ -54,7 +54,5 @@ Then, open the solution file and discuss the following:
 
   ![set-x-var-list-and-shift](Images/set-x-var-list-and-shift.png)
 
-  ![na-inf-cleaning](Images/na-inf-cleaning.png)
-
   ![dependent-variable](Images/dependent-variable.png)
 
