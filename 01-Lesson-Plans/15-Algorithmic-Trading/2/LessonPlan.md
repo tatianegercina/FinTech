@@ -134,11 +134,11 @@ In this activity, students will code along with the instructor and port over the
 
 **Files:**
 
-* [algorithmic_trading_code.ipynb](Activities/02-Evr_Algo_Trading_Framework/Solved/algorithmic_trading_code.ipynb)
+* [algorithmic_trading_code.ipynb](Activities/02-Evr_Algo_Trading_Framework/Resources/trading_dashboard.ipynb)
 
-* [jarvis_v1.py](Activities/02-Evr_Algo_Trading_Framework/Unsolved/jarvis_v1.py)
+* [jarvis.py](Activities/02-Evr_Algo_Trading_Framework/Unsolved/jarvis.py)
 
-* [jarvis_v2.py](Activities/02-Evr_Algo_Trading_Framework/Solved/jarvis_v2.py)
+* [jarvis.py](Activities/02-Evr_Algo_Trading_Framework/Solved/jarvis.py)
 
 Quickly discuss the following before proceeding onward to the walkthrough:
 
@@ -350,7 +350,7 @@ Ask if there are any questions before moving on.
 
 In this section, students will become familiar with the expansive CCXT library, which provides an API for over 120 cryptocurrency exchanges. In particular, students will work with the Kraken API and extract both historical and current price data.
 
-**File:** [ccxt.ipynb](Activities/03-Ins_Going_Live/Solved/ccxt.ipynb)
+**File:** [ccxt_demo.ipynb](Activities/03-Ins_Going_Live/Solved/ccxt_demo.ipynb)
 
 Open the solution file and review the following:
 
@@ -713,7 +713,7 @@ Explain that we can use these ideas to modify our trading dashboard so that the 
 
 In this activity, students will code along with the instructor to update their live trading code to fetch data asynchronously with [asyncio](https://docs.python.org/3/library/asyncio.html).
 
-**Files:** [jarvis.py](Activities/06-Evr_Async_Trading/Solved/jarvis.py)
+**Files:** [jarvis.py](Activities/06-Evr_Async_Trading/Unsolved/jarvis.py)
 
 Open the starter code and live code the solution with the class. Explain any new concepts as you go, and be sure to proceed slowly and frequently pause to make sure that students can keep up.
 
@@ -819,7 +819,7 @@ In this activity, students will learn how to persist their real-time data to a d
 The purpose of this activity is to showcase the value in persisting data as doing so allows an application to pick up where it left off should a failure occur.
 
 **File:**
-* [jarvis.py](Activities/05-Evr_Persisting_Real_Time_Data/Unsolved/jarvis.py)
+* [jarvis.py](Activities/07-Evr_Persisting_Real_Time_Data/Unsolved/jarvis.py)
 
 Explain to the class that the next enhancement to make to the trading algorithm is to persist the live data to a database. Persisting the live data allows the framework to recover from data errors, and it allows us to collect and use historical data without running into memory issues.
 
@@ -1040,7 +1040,7 @@ Ask any questions before moving on.
 
 In this activity, students will code along with the instructor to update the trading framework to use streaming data visualizations.
 
-**File:** [jarvis.py](Activities/09-Evr_Streaming_Dashboard/Solved/jarvis.py)
+**File:** [jarvis.py](Activities/09-Evr_Streaming_Dashboard/Unsolved/jarvis.py)
 
 Explain to students that the previous iteration of the trading dashboard was replaced each time that new data arrived. For a single plot, this was ok, but for a complex dashboard, each replacement would reset the entire dashboard and negatively impact the user experience. Explain that we can avoid some of these issues by updating the example to use the streamz library with hvplot.
 
