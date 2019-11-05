@@ -6,7 +6,7 @@ Help Tony decide what the correct order of the below functions should be called 
 
 ## Instructions
 
-Open the [unsolved file](Unsolved/jarvis_v1.py) and complete the `main()` function by calling each function below in an order that might make a trade:
+Open the [unsolved file](Unsolved/jarvis.py) and complete the `main()` function by calling each function below in an order that might make a trade:
 
 * evaluate_metrics()
 
