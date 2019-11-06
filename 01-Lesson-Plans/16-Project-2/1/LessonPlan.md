@@ -2,7 +2,7 @@
 
 #### Overview
 
-In this week, students will begin work on their second project of the boot camp: FinTech Machine Learning.
+This week, students will begin work on their second project of the boot camp: FinTech Machine Learning.
 
 #### Instructor Notes
 
@@ -30,13 +30,13 @@ It is highly recommended to request project proposals from students and then app
 
 ### 1. Instructor Do: Welcome Students (15 min)
 
-Greet the class, and explain that today is the first day of Project 2!
+Greet the class and explain that today is the first day of Project 2!
 
 Congratulate the class on having made it this far!
 
 Explain that, over the next two class weeks, students will work in groups to complete a FinTech machine learning project.
 
-Point out that this provides students with an opportunity to dive deeper into machine learning and create a really advanced FinTech project.
+Point out that this provides students with an opportunity to dive deeper into machine learning and create an advanced FinTech project.
 
 Explain that today's class will be dedicated to researching and creating a Project 2 proposal.
 

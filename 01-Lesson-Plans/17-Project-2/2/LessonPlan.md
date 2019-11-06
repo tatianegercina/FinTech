@@ -20,7 +20,7 @@ The remaining schedule for Project 2 is as follows:
 
   * Students begin planning their final presentations.
 
-  * Students are given rest of class to work on projects.
+  * Students are given rest of the class to work on projects.
 
 * Day 6:
 
@@ -32,7 +32,7 @@ The remaining schedule for Project 2 is as follows:
 
 * To provide students more time and support for their group projects.
 
-* To make sure students spend **at least a half hour **outlining their presentations.
+* To make sure students spend **at least a half-hour **outlining their presentations.
 
 - - -
 
@@ -62,7 +62,7 @@ Tell your students that they may work on coding their app again or spend more ti
 
 TAs and instructors: For the next 45 minutes, you'll once again be senior developers. Visit each group and answer any questions they may have about coding their apps or presenting on Saturday.
 
-Some students may feel nervous with their deadline approaching. Reassure them that they have solid project ideas and that they'll be fine on Saturday as long as they prepare for their presentation.
+Some students may feel nervous about their deadline approaching. Reassure them that they have solid project ideas and that they'll be fine on Saturday as long as they prepare for their presentation.
 
 A few groups might not seem poised to finish their apps on time. Tell them to drop any undeveloped and unnecessary features. Even if they can't meet their proposed goal, they should still present a functional app on Saturday. Add that they can talk about the dropped features as planned updates.
 
