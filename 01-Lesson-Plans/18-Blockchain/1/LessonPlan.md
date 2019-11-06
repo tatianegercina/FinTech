@@ -2,12 +2,9 @@
 
 ### Overview
 
-Today's class will introduce students to blockchain technologies. Students will learn
-the fundamentals of what the technology is, the types of problems it solves, and how it works.
+Today's class will introduce students to blockchain technologies. Students will learn the fundamentals of what the technology is, the types of problems it solves, and how it works.
 
-The goal of this lesson is to get the students thinking about how blockchain technology
-is used and how it will likely effect their lives as a FinTech entrepreneur, as well
-as be able to use basic tools like wallets and block explorers to navigate the space, and to hold a conversation about the topic.
+Most of the people believe that blockchain is only about cryptocurrencies; the goal of this lesson is to break this myth, and get the students thinking about how blockchain technology is used and how it will likely affect their lives as a FinTech entrepreneur, as well as be able to use essential tools like wallets and block explorers to navigate the space and to hold a conversation about the topic.
 
 ### Class Objectives
 
@@ -27,22 +24,31 @@ By the end of the class, students be able to:
 
 * Students will be able to navigate the blockchain ecosystem
 
-- - -
-
 ### Instructor Notes
 
-* Some students may already be involved with cryptocurrencies or other blockchain projects
-  and may have some opinions already about particular blockchain implementations. Due to the niche nature of the field, they may have certain biases already.
+* Some students may already be involved with cryptocurrencies or other blockchain projects and may have some opinions already about particular blockchain implementations. Due to the niche nature of the field, they may have certain biases already.
 
 * Ethereum has the largest developer community in the blockchain space, learning it has high skill transferability.
 
-* Smart Contracts = Programs that run on the Blockchain, and nothing more. You write smart contracts in Solidity, compile them,
-  create the contract with a transaction on the blockchain. The contract can then be used on Ethereum.
+* In this unit, students will be introduced to [Solidity](https://solidity.readthedocs.io/), an object-oriented, high-level language for implementing smart contracts for Ethereum.
 
-* While blockchain inherently has a finance-heavy set of use cases, encourage students to think bigger,
-  since the technology can be used for building secure, globally distributed software.
+* Smart Contracts are programs that run on the blockchain, and nothing more. Smart contracts are written in Solidity; next contracts are compiled and created through a transaction on the blockchain. Once the contract is created, it can be used on Ethereum.
 
-* Be sure to read through Peoplechain before you teach it.
+* While blockchain inherently has a finance-heavy set of use cases, encourage students to think bigger, since the technology can be used for building secure, globally distributed software.
+
+* There is an activity called "Peoplechain" aimed to emulate the public, censor resistant, and borderless nature of the blockchain; be sure to read through before the class.
+
+### Slideshow and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+
+---
 
 ### 1. Instructor Do: Welcome (5 min)
 
