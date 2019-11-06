@@ -57,3 +57,12 @@ Push the app to heroku and wait until it is deployed.
 Visit the app at app-name.herokuapp.com
 
 Once you have deployed the app you might find that if your app is visited by more than one user at a time it will become unresponsive. In this case you can use the Heroku CLI to scale your deployment.
+
+
+
+
+
+$ heroku config:set DATABASE_URI=database_uri_here
+$ heroku config:set SESSION_SECRET=session_secret
+heroku ps:scale web=1
+
