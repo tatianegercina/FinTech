@@ -54,29 +54,34 @@ By the end of the class, students be able to:
 
 * **Files:**
 
-  * [slides x-y]()
+  * [Lesson Slides]()
 
-Welcome students to the course by expressing excitement over starting the final lap in this bootcamp marathon -- BLOCKCHAIN -- and that some might say it’s the most exciting lap by far!
+Welcome students to the class by expressing excitement over starting the final lap in this bootcamp marathon -- BLOCKCHAIN -- and that some might say it’s the most exciting lap by far!
+
+Open the lesson slides and highlight the following:
 
 * Blockchain is exciting - and critical for their careers - because blockchain technology powers not just cryptocurrencies but entire decentralized economies and even enterprise networks.
 
-* For example, JP Morgan Chase, the largest US bank, created Quorum, an Ethereum-based blockchain, in order to leverage the security that blockchain provides for their own systems
-  (and, probably, because they are afraid of being left in the dust by this new technology!).
-
 * Blockchain is a buzz-word in the industry, but it’s much more than that -- it’s a new way of thinking about money.
 
+* Traditional financial institutions have been skeptical about blockchain technology, however, JP Morgan Chase, the largest U.S. bank, created [Quorum](https://www.goquorum.com/), an Ethereum-based blockchain, in order to leverage the security that blockchain provides for their own systems (and, probably, because they are afraid of being left in the dust by this new technology!).
+
+* In this unit, students will be building their own blockchain wallets, write smart contracts, and construct a blockchain from scratch.
+
 Some of this may seem intimidating to the students, so express that you are proud of how far the class has already traveled together as a team;
-after 17 weeks together, the students can do Python, Pandas, and ML! And, by the end of this block (get it?),
-they will be able to speak “blockchain” -- but we’re going far beyond the terminology.
+after 17 weeks together, the students can do Python, Pandas, and ML!; and by the end of this block (get it?), they will be able to speak “blockchain” -- but we’re going far beyond the terminology.
 
-* You’ll be building your own blockchain wallets, write smart contracts, and build a blockchain from scratch.
+Comment to the class that this final stage is huge. That’s going to be challenging, but you know they can do it - after all, they’ve made it this far!
 
-* That’s huge. That’s not going to be easy. But I know you can do it - after all, you’ve made it this far!
+Answer any questions before moving on.
+
+---
 
 ### 2. Instructor Do: Blockchain Skill Check (5 min)
 
 Before we dig in, let’s get a sense for where the class might be when it comes to blockchain.
-Ask a few questions and have the students give a thumbs up for yes or a thumbs down for no.
+
+Open the lesson slides and move to the "Have you heard?" section; ask a few questions and have the students give a thumbs up for yes or a thumbs down for no.
 
 * How many of you have heard of blockchain before?
 
@@ -86,7 +91,7 @@ Ask a few questions and have the students give a thumbs up for yes or a thumbs d
 
 * How many of you have ever traded cryptocurrency?
 
-Ask the students to hold out a fist-to-five (fist for 0, 5 fingers up for 5) to answer how familiar they are with the following topics:
+Ask the students to hold out a [fist-to-five](https://k12teacherstaffdevelopment.com/tlb/what-is-fist-to-five-strategy/) (fist for 0, 5 fingers up for 5) to answer how familiar they are with the following topics:
 
 * How familiar are you with blockchain?
 
@@ -99,7 +104,8 @@ Remark on the results.
 * “It looks like we have some blockchain experts - awesome!”
 
 Take a mental note of the students with strong familiarity with blockchain, as you will be able to distribute them among groups that have less knowledge about the topic.
-Ask the students to hold out a fist-to-five (fist for 0, 5 fingers up for 5) to answer how familiar they were with the following topics before they started the course.
+
+Ask the students to hold out again a fist-to-five (fist for 0, 5 fingers up for 5) to answer how familiar they were with the following topics before they started the course.
 
 * How familiar were you with Python?
 
@@ -108,21 +114,28 @@ Ask the students to hold out a fist-to-five (fist for 0, 5 fingers up for 5) to 
 * How familiar were you with data science?
 
 Remind the students that just like they learned how to master Python and ML, they will surprise themselves with how much they learn over the course of the coming weeks.
+
 It may seem like a foreign language at times, but they’ve already learned a new language as part of this course, and you and the TAs will be there to guide them.
 
 Tell the students it’s time to dig into blockchain: first things first, let’s start with a definition.
 
-Ask the students if anyone has a definition of blockchain that they would like to share with the class.
-Thank the students for sharing.
+Ask the students if anyone has a definition of blockchain that they would like to share with the class. Thank the students for sharing.
 
-Then, show the definition of blockchain on the slide.
-Ask the students to read it to themselves.
+Show the definition of blockchain on the slide, and ask the students to read it to themselves.
+
 Ask them if they have questions. Then, break down the definition.
 
 * A blockchain is a distributed "immutable" database that is not controlled by a single, central authority.
-  Instead, the database is synchronized across the network, with special rules in place to incentivize good actors and disincentivize bad actors.
-  It is immutable, which means you can only add to the database: you cannot change the history.
-  This provides a powerful means of creating a trusted "source of truth" in a trustless environment.
+
+* The database is synchronized across the network, with special rules in place to incentivize good actors and disincentivize bad actors.
+
+* It is immutable, which means you can only add to the database: you cannot change the history.
+
+* This provides a powerful means of creating a trusted "source of truth" in a trustless environment.
+
+Answer any questions before moving on.
+
+---
 
 ### 3. Instructor Do: The Importance of Blockchain (10 min)
 
@@ -160,23 +173,30 @@ Ask the students the following questions, giving them an opportunity to answer, 
 
   **Answer**: Secure, modern infrastructure for the next generation of the internet. This is also known as Web 3.0.
 
+Answer any questions before moving on.
+
+---
+
 ### 4. Students Do: Use Case Study (10 min)
 
 Students will complete a thought experiment in which the students will get together in small groups and examine an example use case application
 for different cryptocurrency and blockchain projects.
 
-The goal is to have the students write down the features they gleam from the different use cases.
-This list will be compared against the 5 Pillars of Open blockchains in a following lecture.
+The goal is to have the students write down the features they glean from the different use cases.
 
-Circulate through the room while students are completing the activity. Look to identify students who are actively engaging peers and digging deeper.
-Keep these students in mind for later as they may be helpful to distribute among groups.
+The features listed by students, will be compared against the 5 Pillars of Open blockchains in a following lecture.
+
+Circulate through the room while students are completing the activity. Look to identify students who are actively engaging peers and digging deeper. Keep these students in mind for later as they may be helpful to distribute among groups.
+
+If students are actively engaged with each other and the research process, they are succeeding at this exercise.
+
+The only way to not excel at this exercise is to not participate in the research.
 
 **Instructions:**
 
 * [README.md](Activities/04-Stu_Use_Case_Study/README.md)
 
-If students are actively engaged with each other and the research process, they are succeeding at this exercise.
-The only way to not excel at this exercise is to not participate in the research.
+---
 
 ### 5. Instructor Do: Use Case Study Review (5 min)
 
@@ -202,22 +222,29 @@ Some common features may be:
 
 * Pseudonymous system (addresses are your alias, not necessarily attached to identity)
 
+Answer any questions before moving on.
+
+---
+
 ### 6. Instructor Do: The 5 Pillars of Open Blockchains (10 min)
 
 For this activity, the instructor will lead a formal lecture regarding what the 5 pillars of open blockchains are and why they are relevant.
+
 See the [blockchain support document](../Instructor_Support/Blockchain.md) for a background video on this topic.
 
-Tell the students:
+Start this activity by commenting to the students the following:
 
 * As we talk through each pillar, keep in mind what you uncovered during the previous exercise. What feature would you put in each category?
 
-* These pillars are the fundamental features that blockchains were created to provide. Learning these will help you understand
-  how some blockchains sacrifice these features for speed or marketing purposes instead of innovating on the underlying algorithms.
-  The chains that innovate on these features are the most universal in terms of feature sets, and can be easily adapted to enterprise.
+* These pillars are the fundamental features that blockchains were created to provide. Learning these will help you understand how some blockchains sacrifice these features for speed or marketing purposes instead of innovating on the underlying algorithms.
+
+* The chains that innovate on these features are the most universal in terms of feature sets, and can be easily adapted to enterprise.
 
 Then, transition through the slides and begin talking about each topic.
 
 Begin by prefacing that each of these pillars ties into each other to build an open blockchain network.
+
+#### Pillar 1: Open
 
 ![screenshot of open slide](https://image.shutterstock.com/image-photo/open-blue-door-sunshine-600w-624832211.jpg)
 
@@ -229,15 +256,15 @@ Begin by prefacing that each of these pillars ties into each other to build an o
 
   * Anyone can access the services the blockchain offers.
 
-* Openness means that the system is designed to incentivize users to keep it open. The internet is an example of this,
-  it is built on open protocols that anyone can learn and contribute to.
+* Openness means that the system is designed to incentivize users to keep it open. The internet is an example of this, it is built on open protocols that anyone can learn and contribute to.
+
+#### Pillar 2: Borderless
 
 ![screenshot of borderless](https://image.shutterstock.com/image-photo/abstract-science-global-network-connection-600w-1147048595.jpg)
 
 * Explain to the students that borderless means exactly that, a network without geographical or political borders.
 
-* To be borderless, the network needs to be decentralized. This means that the control of the network is not held by
-  any central party.
+* To be borderless, the network needs to be decentralized. This means that the control of the network is not held by any central party.
 
 * Since the blockchain is synchronized onto every device that helps maintain it (called nodes), it lives everywhere.
 
@@ -253,20 +280,25 @@ Elaborate and bring out this analogy:
 
 * Much like the money is not on the card itself, a crypto wallet does not hold the crypto itself, just the access.
 
-* The blockchain is already synchronized to a device in the country you are traveling to, so accessing it is the same
-  as if you were to swipe a Visa card internationally, only without Visa getting involved.
+* The blockchain is already synchronized to a device in the country you are traveling to, so accessing it is the same as if you were to swipe a Visa card internationally, only without Visa getting involved.
 
 * You can also use a satellite connection to connect to blockchain networks and broadcast transactions, therefore it is truly global.
+
+#### Pillar 3: Neutral
 
 ![screenshot of neutral](https://image.shutterstock.com/image-illustration/net-neutrality-abstract-background-260nw-1049711261.jpg)
 
 * Explain how neutral means that the protocol does not discriminate against any user.
-  In fact, users don't even need to be human. The blockchain does not care if you are a human or a washing machine.
+
+* In fact, users don't even need to be human. The blockchain does not care if you are a human or a washing machine.
 
 * The blockchain is agnostic to the users, regardless of political or social status, or geographic location.
-  A wealthy banker or government leader use the protocol in the exact same way anyone else would.
+
+* A wealthy banker or government leader use the protocol in the exact same way anyone else would.
 
 * Open blockchain networks are also governed in a neutral fashion, with many using the blockchain itself for voting on the next network upgrades.
+
+#### Pillar 4: Censor Resistant
 
 ![screenshot of censor resistant](https://image.shutterstock.com/image-illustration/closeup-surprised-desperate-looking-man-600w-1399238933.jpg)
 
@@ -274,50 +306,67 @@ Elaborate and bring out this analogy:
 
 * This means that people suffering in nations that have high censorship can still find a way to use these systems to reach out and to bypass the oppression.
 
-* Blockchain is being used currently around the world to avoid censorship or hyperinflation in many countries such as Venezuela, Zimbabwe, China, and Russia.
+* Blockchain is being used currently around the world to avoid censorship or hyperinflation in many countries.
 
 * It has been said that blockchain and crypto can be seen as an insurance policy against a dystopian future.
 
 * Money is often compared to a form of speech. These are systems where this form of expression cannot be censored.
+
+#### Pillar 5: Public
 
 ![screenshot of public](https://image.shutterstock.com/image-illustration/two-way-street-signs-words-260nw-156089513.jpg)
 
 * Explain that this means that open blockchains are separate from the state. Public blockchain networks are suited for public affairs.
 
 * Military or government work, or certain logistic implementations will likely be suited to a private network due to the confidential nature.
-  This is at least until zero-knowledge proof technology that allow for total privacy on an public blockchain is further developed to scale.
 
-* This separation of state and money is a first in history, and is similar to the separation of church and state to allow for religious freedom,
-  only this allows for monetary freedom.
+* This is at least until zero-knowledge proof technology that allows for total privacy on a public blockchain is further developed to scale.
+
+* This separation of state and money is a first in history, and is similar to the separation of church and state to allow for religious freedom, only this allows for monetary freedom.
 
 * Explain how these systems are built by the people, for the people, and are governed by the people.
 
 Ask the students to compare the 5 Pillars to the features that they had written down during their use case analysis and to compare and contrast what they came up with to what they just learned.
 
+Answer any questions before moving on.
+
+---
+
 ### 7. Student Do: Peoplechain (15 min)
 
-For this activity, students will emulate the public, censor resistant and borderless nature of the blockchain by creating
-a distributed ledger like system breaking up into groups and using themselves as network participants.
+For this activity, students will emulate the public, censor resistant, and borderless nature of the blockchain by creating a distributed ledger like system breaking up into groups and using themselves as network participants.
+
+#### Activity Logistics
+
+You will need to group students into at least three groups:
+
+* Group 1 - Money senders. This group will create and send transactions.
+
+* Group 2 - Record Keepers in the US. This group will be a geographical region of "nodes" in the US.
+
+* Group 3 - Record Keepers outside the US. This group will be a second geographical region of "nodes" in a different country than the US.
+
+To speed up this activity, organize the three groups before class and let students know which group they belong to by creating some slides or a document to show in the projector during the activity.
+
+You should create at least two slack channels for this activity, name the channels as follows:
+
+* RecordKeepersUS
+
+* RecordKeepersChina (China is just an example, feel free to choose another country)
+
+Add students to their corresponding slack channel before class.
+
+Run a couple of test transactions after starting the activity. Time the students and allow them to transact for at least 5 minutes.
 
 Have TAs circulate to provide assistance to students facing challenges or to clarify the role of each student.
-
-You will need to group students into at least 3 groups:
-
-* 1 group will create and send transactions
-
-* 1 group will be a geographical region of "nodes"
-
-* 1 group will be a second geographical region of "nodes"
-
-Have the students pick which part of the world their group will be in.
 
 **Instructions:**
 
 * [README.md](Activities/07-Stu_Peoplechain/README.md)
 
-Time the students and allow the students to transact for 3 minutes.
+---
 
-### 8. Instructor Do: Peoplechain Review (5 min)
+### 8. Instructor Do: Peoplechain Review (10 min)
 
 Ask every group to make a list of all the transactions they have a record of in order of highest dollar amount to lowest dollar amount.
 
@@ -348,13 +397,18 @@ Ask the students a few questions about the activity:
   **Answer** Since the ledger is everywhere, and transactions are broadcasted to everyone, it is difficult to lie.
 
 * Theoretically, all the students in each country could be connected to each other.
-  In our example, we just had one “internet connection” between the Slackers for each country for the sake of the example.
+
+* In our example, we just had one “internet connection” between the Slackers for each country.
 
 Ask the students to ponder the following (no answer required):
 
 * So, given the possibility of all these connections, what if one entire region had a different list of transactions?
 
   **Answer** You would have a consensus problem -- we’ll discuss how to manage this with consensus algorithms in a later lesson.
+
+Answer any questions before moving on.
+
+---
 
 ### 9. Student Do: Basic Terminology (10 min)
 
@@ -372,9 +426,11 @@ Students will learn basic, common terminology that will enable them to navigate 
 
 * **Files:**
 
-  * [slides x-y]()
+  * [Lesson Slides]()
 
 Navigate to the slides and define common terms:
+
+#### Hash
 
 ![screenshot of hash](https://image.shutterstock.com/image-photo/man-turning-cryptography-switch-change-600w-1038745234.jpg)
 
@@ -386,22 +442,25 @@ Navigate to the slides and define common terms:
 
 * However, it is easy to run the hash function over the same data again to verify the result is the same.
 
-* If you were to change a single bit of the input, you would get a completely different hash.
-  This allows for something called "data integrity" which is a very important part of internet and data security as well as blockchain technology.
+* If you were to change a single bit of the input, you would get a completely different hash. This allows for something called "data integrity" which is a very important part of internet and data security as well as blockchain technology.
+
+#### Digital Signature
 
 ![screenshot of signature](https://image.shutterstock.com/image-vector/businessman-hands-signing-digital-signature-600w-351292748.jpg)
 
 * Digital signatures are used to mathematically prove ownership or authenticity of data.
-  Once a file or message is signed, you can verify it was signed by a specific individual.
+
+* Once a file or message is signed, you can verify it was signed by a specific individual.
 
 * If the signed message is modified, the signature will be invalidated.
 
-* This means that if you were to sign a document, and the document was later modified, the signature would invalidate.
-  You could then easily prove that the document was modified. This is not just used for documents, but secure internet communication as well.
+* This means that if you were to sign a document, and the document was later modified, the signature would invalidate. You could then easily prove that the document was modified. This is not just used for documents, but secure internet communication as well.
 
-* Ask the students "If a signed message is modified, what happens?"
+Ask the students "If a signed message is modified, what happens?"
 
-  **Answer** The message will be invalidated and you would know the message was modified
+* **Answer** The message will be invalidated and you would know the message was modified
+
+#### Crypto Wallet
 
 ![screenshot of wallet](https://image.shutterstock.com/image-illustration/digital-wallet-concept-3d-rendering-600w-487340401.jpg)
 
@@ -411,25 +470,27 @@ Navigate to the slides and define common terms:
 
 * You can also sign messages with your digital wallet to prove ownership or authenticity of something.
 
-* A digital wallet is much like the debit cards in your own wallet, you use them to access funds in your account.
-  Only in this case, the card is now a key, and the bank is now the blockchain.
+* A digital wallet is much like the debit cards in your own wallet, you use them to access funds in your account. Only in this case, the card is now a key, and the bank is now the blockchain.
+
+At this point, students should be curious about what a transaction is in the context of blockchain, continue with the slides and highlight the following:
 
 ![screenshot of transaction](https://image.shutterstock.com/image-photo/finger-pressing-block-chain-text-600w-1026226699.jpg)
 
-* "So what's a transaction then?"
-
-* Explain that a transaction is simply a signed message that authorizes a movement of funds between two parties.
+* A transaction is simply a signed message that authorizes a movement of funds between two parties.
 
 * It is essentially "I sign off on the movement of X amount of value from account A to account B" -- now that it is signed off, nobody can modify it.
+
+#### Blockchain Node
 
 ![screenshot of node](https://image.shutterstock.com/image-vector/abstract-scheme-modern-computer-network-600w-155306969.jpg)
 
 * A full node keeps a copy of the blockchain. It verifies every transactions signatures and throws out any that do not validate.
 
-* If you wanted to send a transaction, you would send it to a node to keep track of. Nodes broadcast the transaction to
-  their neighbors, until a miner comes along and finalizes the transactions.
+* If you wanted to send a transaction, you would send it to a node to keep track of. Nodes broadcast the transaction to their neighbors, until a miner comes along and finalizes the transactions.
 
 * Nodes are enforcing **all** of the rules of the blockchain, thus they are a very important part of the security of the network.
+
+#### Miner or Block Producer
 
 ![screenshot of miner](https://image.shutterstock.com/image-illustration/design-element-3d-illustration-rendering-600w-1167357031.jpg)
 
@@ -437,17 +498,17 @@ Navigate to the slides and define common terms:
 
 * Miners take the pending transactions from the nodes they are connected to and put them into a block.
 
-* Each miner races against each other to perform this process first, and the winner is rewarded by the network for its work.
-  Then this race happens again and again for each new block in the chain.
+* Each miner races against each other to perform this process first, and the winner is rewarded by the network for its work. Then this race happens again and again for each new block in the chain.
 
-Reassure the students that we will dive deeper into the mechanisms in which nodes and miners communicate with each other,
-as well as the full lifecycle of a transaction from creation to being stored in a block.
+Reassure the students that we will dive deeper into the mechanisms in which nodes and miners communicate with each other, as well as the full life cycle of a transaction from creation to being stored in a block.
 
-- - -
+Answer any questions before moving on.
+
+---
 
 ### 11. BREAK (15 min)
 
-- - -
+---
 
 ### 12. Student Do: Using a Wallet (10 min)
 
@@ -458,6 +519,8 @@ Have the TAs circulate through the class and ensure that students are able to se
 **Instructions:**
 
 * [README.md](Activities/10-Stu_Using_Wallet/README.md)
+
+---
 
 ### 13. Instructor Do: Using a Wallet Review (5 min)
 
