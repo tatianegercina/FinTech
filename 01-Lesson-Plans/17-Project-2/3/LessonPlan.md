@@ -20,7 +20,7 @@ In this class, your students will present their project projects to the class! T
 
 ### 0. Instructor Do: Set Up Your Equipment (15 minutes before class)
 
-Make sure to come to class and setup your laptop and other equipment. It is recommended that you prepare a list of the GitHub pages links for all deployed repos so that students can quickly launch their projects.
+Make sure to come to class and set up your laptop and other equipment. It is recommended that you prepare a list of the GitHub pages links for all deployed repos so that students can quickly launch their projects.
 
 If students have hosted presentations on Google Slides, compile a list of those as well to avoid switching computers.
 
@@ -30,7 +30,7 @@ Welcome students and check whether anyone has any questions before the presentat
 
 ### 2. Instructor Do: Introduce Presentations (5 min)
 
-Congratulate your class for developing their projects to a state worth presenting. Assure them that machine learning is incredibly complex and that they should take pride in what they've done!
+Congratulate your class on developing their projects to a state worth presenting. Assure them that machine learning is incredibly complex and that they should take pride in what they've done!
 
 Tell students to deploy their latest changes to GitHub. After this, all it will take is a quick pull to get any changes.
 
@@ -42,11 +42,11 @@ Give students a rundown of how their presentations should pan out.
 2. They should speak **into** the microphone—this ensures that we capture high-quality audio for their recorded presentation.
 3. They need to show confidence! All of them have contributed to impressive projects—they need to recognize and project that during their demonstrations.
 
-Ask which groups would like to go first, then second and so on. When groups stop responding, assign the remaining teams to random slots (and write this list down).
+Ask which groups would like to go first, then second, and so on. When groups stop responding, assign the remaining teams to random slots (and write this list down).
 
 ### 3. Presentations Part 1 (1 hour, 30 minutes)
 
-* Go down the list and send each group up to the front of class. Give students roughly 3 minutes of setup time.
+* Go down the list and send each group up to the front of the class. Give students roughly 3 minutes of setup time.
 
 * When a group nears the 9-minute mark, motion for them to draw their presentation to a close (try pointing to your wrist). Don't say anything—you don't want your voice to interrupt their talk, especially since you're recording them.
 
@@ -54,7 +54,7 @@ Ask which groups would like to go first, then second and so on. When groups stop
 
 * When the Q&A session ends, stop recording. When Panopto stops, point out what you found impressive and what they can improve on for future demonstrations.
 
-* When a group finishes after noon, announce a break.
+* When a group finishes afternoon, announce a break.
 
 - - -
 
@@ -64,7 +64,7 @@ Ask which groups would like to go first, then second and so on. When groups stop
 
 ### 5. Presentations Part 2 (1 hour, 30 minutes)
 
-Just as in step 3, send each group up to the front of class when their turn comes.
+Just as in step 3, send each group up to the front of the class when their turn comes.
 
 ### 6. Congratulate Students (10 min)
 
