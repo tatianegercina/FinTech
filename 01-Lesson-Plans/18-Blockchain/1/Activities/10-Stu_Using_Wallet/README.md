@@ -1,5 +1,7 @@
 # Using a Wallet
 
+In this activity you will create a crypto wallet with [MyCrypto](https://mycrypto.com/). If you have not already installed the MyCrypto App, please follow the instructions in [the installation guide](Supplemental/blockchain-install-guide.md).
+
 Using MyCrypto, you will be requesting testnet tokens and sending transactions to your fellow students.
 
 ## Instructions
