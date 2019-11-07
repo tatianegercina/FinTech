@@ -61,7 +61,7 @@ Welcome students back to class and explain that today is the start of the NLP un
 
 * When was the last time that a student made a decision—could be financial, career, or purchase—based on what they read in a news story? What about the story that made them want to make that decision?
 
- **Sample answer**: I bought 10 shares of TSLA because of a news article about sales of the Model 3. The tone of the story—optimistic—as well as the specific numbers they cited,  made me bullish about the company.
+ **Sample answer**: I bought 10 shares of TSLA because of a news article about sales of the Model 3. The tone of the story—optimistic—as well as the specific numbers they cited made me bullish about the company.
 
 Take a few answers from volunteers (or call on a couple of students).
 
@@ -81,7 +81,7 @@ Open the slides and be sure to hit on the following talking points. Pause after 
 
 * Our objectives today are focused on preprocessing—the stage of the NLP workflow when written documents are transformed into units of data that are more easily processed by a computer.
 
-* NLP spans a wide field of research that intersects computer science, statistics, linguistics, and other disciplines. Understanding and generating human language are two large tasks that encompass many smaller tasks—voice recognition, optical character recognition, summarization, topic representation, etc, etc.
+* NLP spans a wide field of research that intersects computer science, statistics, linguistics, and other disciplines. Understanding and generating human language are two large tasks that encompass many smaller tasks—voice recognition, optical character recognition, summarization, topic representation, etc., etc.
 
 * Finance-specific use cases have mostly been centered around using NLP for quantitative trading. Other settings include fraud detection and chatbots for client interaction (which we will introduce in the next unit).
 
@@ -198,7 +198,7 @@ This activity introduces the concept and implementation of stopwords. In English
 
 Solved: [stopwords.ipynb](Activities/03-Ins_Stopwords/Solved/stopwords.ipynb)
 
-Walkthrough the notebook, taking care to allow time for students to look at the output of each step.
+Walkthrough, the notebook, taking care to allow time for students to look at the output of each step.
 
 For simplicity's sake, we're only going to use one sentence from the article to demonstrate stopwording. Note that these techniques can be applied to entire documents or corpora, as well.
 
@@ -312,7 +312,7 @@ Note that it's possible to lemmatize every part of speech for any given word—a
 
 ### 11. Student Do: Lemmatize (15 min)
 
-In this activity, create a function that performs stopwording, regex cleaning of non-letter characters, word tokenizing, and lemmatization on each word in the article
+In this activity, create a function that performs stopwording, regex cleaning of non-letter characters, word tokenizing, and lemmatization on each word in the article.
 
 **Instructions:**
 
@@ -357,7 +357,7 @@ Open the solved notebook and explain the following:
 
 * We use the same preprocessing function that was defined in the previous activity to get a list of processed words.
 
-* We want to count the frequency of individual words in this article. We can use the imported Counter function to create a dictionary-like object that has words as its keys and counts as values (the Counter function can be used to count any elements of an iterable, but in this case we want it to count tokens.) As we can see in the snippet of code below, we can convert the Counter object to a dictionary, a more familiar data type.
+* We want to count the frequency of individual words in this article. We can use the imported Counter function to create a dictionary-like object that has words as its keys and counts as values (the Counter function can be used to count any elements of an iterable, but in this case, we want it to count tokens.) As we can see in the snippet of code below, we can convert the Counter object to a dictionary, a more familiar data type.
 
 ```python
 word_counts = Counter(processed)
@@ -412,7 +412,7 @@ Open the solved notebook and explain the following:
 
 Go over the first word counter function below line by line, highlighting the following points:
 
-* Given a list of articles as a corpus, we have two options. We can either treat each article separately  clean and count words for each in turn or we can combine all the articles into one big string and preprocess and count that string all at once. Since the latter is more efficient, both computationally and in terms of lines of code written, we choose that method, which is implemented in the function below.
+* Given a list of articles as a corpus, we have two options. We can either treat each article separately clean and count words for each in turn or we can combine all the articles into one big string and preprocess and count that string all at once. Since the latter is more efficient, both computationally and in terms of lines of code written, we choose that method, which is implemented in the function below.
 
 ```python
 def word_counter(corpus):
