@@ -1,44 +1,63 @@
 ### 1. Instructor Do: Random Forest Trading (15 min)
 
-In this activity, students will learn how to use a set of trading signal features generated from raw BTC/USD data to train a random forest machine learning model that will autonomously make predictions and corresponding trades.
+In this activity, students will learn how to generate a set of trading signal derived from raw BTC/USD data that will be used as features to train a Random Forest machine learning model that will autonomously make predictions and corresponding trades.
 
 **File:** [random_forest_trading.ipynb](Activities/01-Ins_Random_Forest_Trading/Solved/random_forest_trading.ipynb)
 
-Open the slideshow and quickly discuss the following:
+First, quickly introduce the following:
 
-* What is a Random Forest model?
+* Now that students have learned to generate trading signals, backtest their trading strategies, and evaluate their results, it is now time to incorporate machine learning into the mix! Students will now have the opportunity to use a machine learning model (Random Forest) to correctly predict next day positive or negative returns based off of multiple trading signals.
 
-  **Answer:** A Random Forest model is among one of the best supervised algorithms in terms of its ability to predict outcomes. The Random Forest model utilizes a combination of multiple decision tree models to "average away" or minimize the impact of any single decision tree with high variance, thereby creating a more reliable predicted result derived from the strongest features. For example, in regards to portfolio optimization, combining the concept of sharp ratios and portfolio diversification tends to create a portfolio of maximum expected return with minimal variance or risk due to the tendency for non-correlated stock to "cancel" out each other's variances.
-
-* Why is it called a Random Forest?
-
-  **Answer:** A Random Forest model is a combination of many decision tree models with each decision tree or "tree" randomly selecting a subset of the observations and features to train itself on. The result is a final prediction that is an average across this "forest" of random tress.
-
-* How does a Random Forest model work?
-
-  **Answer:** Specifically, a random forest is a collection of bagged decision tree models that split on a subset of features (rather than all the features in the model) at each split. In other words, each decision tree model gets a different view (different data, different variables) and what is left as the final prediction is an average result of all the decision tree models in which the mistakes of each individual tree is "averaged away" with only the strongest features remaining.
+* The Random Forest model will require multiple features, or in this case, multiple trading signals to train itself on. Therefore, students will learn to generate multiple trading signals using various technical indicators such as an exponential moving average of closing prices, exponential moving average of daily return volatility, and Bollinger Bands, which is are a set of lines representing a (positive and negative) standard deviation away from a simple moving average (SMA) of the asset's closing price.
 
 Then, open the solution file and discuss the following:
 
 * As always, before proceeding to generating the multiple features or trading signals of the Random Forest model, the following will first have to be done: importing the relevant libraries, reading in the data as a Pandas DataFrame, and preparing/cleaning the data.
 
-  ![data-prep-1](Images/data-prep-1.png)
+  ```python
+  # Import libraries and dependencies
+  import pandas as pd
+  import numpy as np
+  from pathlib import Path
+  %matplotlib inline
+  ```
 
-  ![data-prep-2](Images/data-prep-2.png)
+  ```python
+  # Set path to CSV and read in CSV, then set index as `Timestamp`
+  csv_path = Path('../Resources/kraken_btc_1hr.csv')
+  btc_df=pd.read_csv(csv_path)
+  btc_df
+  ```
 
-  ![data-prep-3](Images/data-prep-3.png)
+  ```python
+  btc_df.set_index(pd.to_datetime(btc_df['Timestamp'], infer_datetime_format=True), inplace=True)
+  btc_df.drop(columns=['Timestamp'], inplace=True)
+  btc_df
+  ```
 
-  ![data-prep-4](Images/data-prep-4.png)
+* Then, in order to calculate the exponential moving average of daily return volatility (2nd trading signal), we will of course need prepare the DataFrame by calculating the daily returns of BTC/USD closing prices. Using the `dropna` function to drop any rows with NA values is a generally good practice.
 
-* The Random Forest model will utilize three trading signal features derived from three different technical indicators, namely an exponential moving average of closing prices, an exponential moving average of daily return volatility, and a Bollinger Band, which is a set of lines representing a (positive and negative) standard deviation away from a simple moving average (SMA) of the asset's closing price.
+  ```python
+  # Drop NAs and calculate daily percent return
+  btc_df['daily_return'] = btc_df['Close'].dropna().pct_change()
+  btc_df
+  ```
 
-* In contrast to a simple moving average (SMA), an exponential moving average (EMA) represents a moving average with more weight given to the most recent of prices. Therefore, a short window EMA describes "faster" price action than its long window EMA or "slower" counterpart. The logic then dictates such that when the fast EMA is greater than the slow EMA, a long trade opportunity exists, as price action should rise in the short-term, while a short trade opportunity arises for the opposite scenario.
+* Now that the data is prepared, it is now time to move onto generating the multiple trading signals! Students should draw from their experiences from the previous unit 15 lessons where they generated a dual moving average crossover trading signal, as the process is similar.
 
-  ![ema](Images/ema.png)
+* In contrast to a simple moving average (SMA), an exponential moving average (EMA) represents a moving average with more weight or focus given to the most recent of prices. Therefore, a short window EMA describes "faster" price action than its long window EMA or "slower" counterpart. The logic then dictates such that when the fast EMA is greater than the slow EMA, a long trade opportunity exists, as price action should rise in the short-term, while a short trade opportunity arises for the opposite scenario in which the slow EMA is greater than the fast EMA.
 
-  ![ema-plot](Images/ema-plot.png)
+  * Students should be aware that these trading signals will incorporate a long, short, or hold strategy (rather than just long or hold, or short or hold), which is why the `crossover_signal` is calculated as the result of adding both the `crossover_long` and `crossover_short` signals together.
 
-* Similarly, an exponential moving average of daily return volatility gives more weight to the most recent of daily returns. Therefore, when a short window EMA of daily return volatility is greater than a long window EMA of daily return volatility, the crossover suggests that a long opportunity exists where daily returns are expected to rise, while a short opportunity exists for the opposite scenario where daily returns are expected to fall.
+    ```python
+    btc_df['crossover_signal'] = btc_df['crossover_long'] + btc_df['crossover_short']
+    ```
+
+    ![ema](Images/ema.png)
+
+    ![ema-plot](Images/ema-plot.png)
+
+* Similarly, an exponential moving average of daily return volatility gives more weight to the most recent of daily returns. Therefore, when a short window EMA or fast EMA of daily return volatility is greater than a long window or slow EMA of daily return volatility, the crossover suggests that a short opportunity exists where daily return volatility is expected to rise. This is because during times of rising price volatility, there often exists a negative price bias (selling) and vice versa for when daily return volatility is expected to fall (buying).
 
   ![ema-std](Images/ema-std.png)
 
@@ -50,30 +69,4 @@ Then, open the solution file and discuss the following:
 
   ![bollinger-band-plot.png](Images/bollinger-band-plot.png)
 
-* After constructing the trading signals or the features of the Random Forest model, the next step is to define the x-variable list, shift the index of the Pandas DataFrame by 1, and construct the dependent variable. The shift ensures that the model will use the current day values to predict the *next* day's outcome--whether the next day will be a positive or negative return.
-
-  ![set-x-var-list-and-shift](Images/set-x-var-list-and-shift.png)
-
-  ![dependent-variable](Images/dependent-variable.png)
-
-* Almost there! The final remaining steps before proceeding to train the Random Forest model is to now define the training and test windows and separate the X and Y training/testing datasets.
-
-  ![training-testing-windows.png](Images/training-testing-windows.png)
-
-  ![x-y-training-datasets](Images/x-y-training-datasets.png)
-
-  ![x-y-testing-datasets](Images/x-y-testing-datasets.png)
-
-* And now for the last piece to the puzzle! After importing the `sklearn` library and associated Random Forest classes, the model is fit with the x and y training data and then used to predict the y values derived from the x test dataset. The results are then shown in the following DataFrame.
-
-  ![random-forest-model](Images/random-forest-model.png)
-
-* The results are then plotted against the actual results (where or not the particular day was a positive or negative return) to show the turnover of the Random Forest model. In other words, the following plot shows how many times the model predicted that a particular day would be positive or negative based off of the features or trading signals.
-
-  ![random-forest-model-plot-1](Images/random-forest-model-plot-1.png)
-
-  ![random-forest-model-plot-2](Images/random-forest-model-plot-2.png)
-
-* And finally, the cumulative return plot related to the strategy employed by the predictive Random Forest model is shown. Unfortunately, the strategy would have lost money from 09-15-2019 to 09-25-2019.
-
-  ![Images/model-cumulative-returns-plot.png](Images/model-cumulative-returns-plot.png)
+At the end of the discussion, ask students whether or not they understand what the trading signals are suggesting. This is important as these trading signals will end up training the Random Forest model, therefore it is crucial for them to understanding the basis upon which the model will be trained.
