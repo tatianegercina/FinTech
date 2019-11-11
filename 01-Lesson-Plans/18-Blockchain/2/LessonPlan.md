@@ -2,11 +2,9 @@
 
 ### Overview
 
-Today's class will introduce students to the fundamental cryptographic techniques used throughout blockchain and internet
-technologies.
+Today's class will introduce students to the fundamental cryptographic techniques used throughout blockchain and internet technologies.
 
-The goal of this lesson is to have the students understand and apply basic cryptographic concepts to their daily lives as
-well as to arbitrary data, understanding the significance and applications of these techniques.
+The goal of this lesson is to have the students understand and apply basic cryptographic concepts to their daily lives, as well as to arbitrary data understanding the significance and applications of these techniques.
 
 ### Class Objectives
 
@@ -26,11 +24,11 @@ By the end of the class, students be able to:
 
 * Explain the significance of asymmetric cryptography in the context of blockchain.
 
-* Explain the use of crypto in a blockchain network.
+* Explain the use of cryptography in a blockchain network.
 
 * Explain the basic blockchain data structure.
 
-- - -
+---
 
 ### Instructor Notes
 
@@ -40,7 +38,7 @@ By the end of the class, students be able to:
 
 * Though these cryptographic algorithms and techniques are founded on mathematics, it is not required to understand the algorithms themselves to learn how they generally operate.
 
-* This is not designed to teach someone how the algorithms and math works, only to be able to navigate the blockchain industry and to understand basic security.
+* Today's lesson is not designed to teach someone how the math and algorithms work, the goal is to allow students to be able to navigate the blockchain industry and to understand basic security.
 
 ### Slideshow and Time Tracker
 
@@ -51,6 +49,8 @@ By the end of the class, students be able to:
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+
+---
 
 ### 1. Instructor Do: Welcome to Class (5 min)
 
