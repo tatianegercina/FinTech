@@ -68,9 +68,9 @@ Open the lesson slides and highlight the following:
 
 * In this unit, students will be building their blockchain wallets, write smart contracts, and construct a blockchain from scratch.
 
-Some of this may seem intimidating to the students, so express that you are proud of how far the class has already traveled together as a team; after 17 weeks together, the students can do Python, Pandas, and ML!; and by the end of this block (get it?), they will be able to speak “blockchain” -- but we’re going far beyond the terminology.
+Some of this may seem intimidating to the students, so express that you are proud of how far the class has already traveled together as a team; after 17 weeks together, the students can do Python, Pandas, and ML!; By the end of this block (get it?), they will be able to speak “blockchain” -- but we’re going far beyond the terminology.
 
-Comment to the class that this final stage is huge. That’s going to be challenging, but you know they can do it - after all, they’ve made it this far!
+Explain to the class that this final stage is huge. That’s going to be challenging, but you know they can do it - after all, they’ve made it this far!
 
 Answer any questions before moving on.
 
@@ -231,7 +231,7 @@ For this activity, the instructor will lead a formal lecture regarding what the 
 
 See the [blockchain support document](../Instructor_Support/Blockchain.md) for a background video on this topic.
 
-Start this activity by commenting to the students the following:
+Start this activity by explaining the following to students:
 
 * As we talk through each pillar, keep in mind what you uncovered during the previous exercise. What feature would you put in each category?
 
