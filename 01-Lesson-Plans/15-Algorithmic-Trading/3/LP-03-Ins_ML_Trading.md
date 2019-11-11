@@ -8,28 +8,19 @@ Briefly discuss the following before proceeding to the coding solution:
 
 * Now that the pre-trained Random Forest model has been saved, re-deploying the model to make predictions becomes very straightforward--all that needs to be done is to feed in the x test data and compare against the y test data (actual results).
 
-* Deploying an already trained model saves time and effort, offloading the need for developers to have to prepare the data, split the data (train and test datasets), and fit the model before finally proceeding to use the model to make predictions.
+* Deploying an already trained model saves time and effort, offloading the need for developers to have to prepare the data, split the data (train and test datasets), and fit the model before finally being able to use the model to make predictions.
 
 Open the solution file and discuss the following:
 
 * For convenience, the x test and y test (actual results) datasets have been provided as CSVs. The remaining pre-requisites before loading and making predictions from the pre-trained model are to once again set the indexes to the DataFrames as `Timestamp` (a datetime object) and drop the extraneous columns.
 
-  ```python
-  # Set path to CSV and read in CSV
-  csv_path = Path('../Resources/x_test.csv')
-  x_test=pd.read_csv(csv_path)
-  x_test.set_index(pd.to_datetime(x_test['Timestamp'], infer_datetime_format=True), inplace=True)
-  x_test.drop(columns=['Timestamp'], inplace=True)
-  x_test.head()
-  ```
+  ![x-test-csv](Images/x-test-csv.png)
 
-  ```python
-  csv_path = Path('../Resources/results.csv')
-  results = pd.read_csv(csv_path)
-  results.set_index(pd.to_datetime(results['Timestamp'], infer_datetime_format=True), inplace=True)
-  results.drop(columns=['Timestamp'], inplace=True)
-  results.head()
-  ```
+  ![y-test-csv](Images/y-test-csv.png)
+
+* One, two, three, predict! By using a pre-trained Random forest model that has already been saved, the process of deploying the pre-trained model and making predictions becomes a mere two lines of code.
+
+  ![pre-trained-model-predict.png](Images/pre-trained-model-predict.png)
 
 * And now for the last piece to the puzzle! After importing the `sklearn` library and associated Random Forest classes, the model is fit with the x and y training data and then used to predict the y values derived from the x test dataset. The results are then shown in the following DataFrame.
 
