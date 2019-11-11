@@ -16,7 +16,7 @@ Open the slideshow and quickly re-cap the following. Engage students by having t
 
   **Answer:** That the process for implementing a machine learning trading model can be fairly straightforward, but the ability to construct a sophisticated enough trading model that can outperform the markets will require more effort via further understanding of the markets and fine-tuning of the model (more features and therefore information).
 
-Then, ask students if they have any further questions before moving onto the following talking points:
+Then, ask students if they have any further questions before moving onto the following talking points regarding model improvement:
 
 * Admittedly, the Random Forest trading model still has room for improvement before it can be considered a robust system for automated machine learning based trading. This is because while the activities aim to simplify the process for implementation to provide beginner insight, the trade-off in complexity affects the overall performance of the model. In particular, several factors could have benefited the training and therefore overall performance of the Random Forest trading model, such as using more observations or data, more features or variables, and continuous rather than binary calculations for trading signals.
 
@@ -27,3 +27,7 @@ Then, ask students if they have any further questions before moving onto the fol
 * In addition, for simplicity, the trading signals were output as binary calculations--either 0 or 1, do not engage in the trade or engage in the trade. However, if a scaled continuous value were used instead of a binary value, the *extent* upon which a trading signal is defined or how *far* the values differ from the crossover point, could be used therefore providing more information to train the model.
 
   ![continuous-vs-binary](Images/continuous-vs-binary.png)
+
+* Lastly, a lot of effort and time is spent on collecting and preparing training data. Therefore, as an alternative solution, Amazon SageMaker, a machine learning cloud service that enables users to build, train, and deploy machine learning models quickly and conveniently, could be used to minimize the work effort spent on preparing data and instead focus on optimizing the accuracy or performance of the model. Amazon SageMaker also provides several methods for accessing its functionality such as via the AWS web GUI, specific API endpoints, or the SageMaker Python SDK.
+
+  ![aws-sagemaker](Images/aws-sagemaker.png)
