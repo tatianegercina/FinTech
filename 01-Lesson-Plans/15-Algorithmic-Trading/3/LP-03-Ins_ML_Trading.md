@@ -6,7 +6,7 @@ In this activity, students will re-deploy a pre-trained Random Forest model to m
 
 Briefly discuss the following before proceeding to the coding solution:
 
-* Now that the pre-trained Random Forest model has been saved, re-deploying the model to make predictions becomes very straightforward--all that needs to be done is to feed in the x test data and compare against the y test data (actual results).
+* Now that the pre-trained Random Forest model has been saved, re-deploying the model to make predictions becomes very straightforward--all that needs to be done is to feed in the x test data (trading signal data) and compare against the y test data (actual daily return results).
 
 * Deploying an already trained model saves time and effort, offloading the need for developers to have to prepare the data, split the data (train and test datasets), and fit the model before finally being able to use the model to make predictions.
 
@@ -18,9 +18,11 @@ Open the solution file and discuss the following:
 
   ![y-test-csv](Images/y-test-csv.png)
 
-* One, two, three, predict! By using a pre-trained Random forest model that has already been saved, the process of deploying the pre-trained model and making predictions becomes a mere two lines of code.
+* One, two, three, predict! By using a pre-trained Random forest model that has already been saved, the process of deploying the pre-trained model and making predictions becomes a mere two lines of code. Aligning the actual results vs. the predicted results within a DataFrame then makes for a more aesthetically pleasing comparison.
 
   ![pre-trained-model-predict.png](Images/pre-trained-model-predict.png)
+
+  ![actual-results-vs-predicted-results](Images/actual-results-vs-predicted-results.png)
 
 * And now for the last piece to the puzzle! After importing the `sklearn` library and associated Random Forest classes, the model is fit with the x and y training data and then used to predict the y values derived from the x test dataset. The results are then shown in the following DataFrame.
 
