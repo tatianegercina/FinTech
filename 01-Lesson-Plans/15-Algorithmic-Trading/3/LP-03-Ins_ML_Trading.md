@@ -32,6 +32,8 @@ Open the solution file and discuss the following:
 
   ![random-forest-model-plot-2](Images/random-forest-model-plot-2.png)
 
-* And finally, the cumulative return plot related to the strategy employed by the predictive Random Forest model is shown. Unfortunately, the strategy would have lost money from 09-15-2019 to 09-25-2019.
+* Finally, calculating the cumulative return by multiplying the daily returns (actual results) against the predicted values shows that the model would have unfortunately lost money from 09-15-2019 to 09-25-2019 trading on BTC/USD hourly prices. This is to be expected, however, as the process for training and using a trading model can be straightforward, but the ability to create a sophisticated trading model that outperforms markets is not--otherwise, there would be no more finance jobs as machines would run the markets!
 
   ![Images/model-cumulative-returns-plot.png](Images/model-cumulative-returns-plot.png)
+
+  ![model-cumulative-returns-plot-backtest](Images/model-cumulative-returns-plot-backtest.png)
