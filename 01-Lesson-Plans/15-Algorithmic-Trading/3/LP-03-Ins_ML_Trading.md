@@ -36,6 +36,6 @@ Open the solution file and discuss the following:
 
   ![Images/model-cumulative-returns-plot.png](Images/model-cumulative-returns-plot.png)
 
-* Finally, backtesting an initial capital allocation of $100,000 by multiplying the cumulative returns of the model against $100,000 merely serves to visualize the performance of the model in terms of capital.
+* Finally, backtesting the performance of the model by multiplying the cumulative returns of the model against an initial capital allocation of $100,000 merely serves to visualize its performance in terms of capital.
 
   ![model-cumulative-returns-plot-backtest](Images/model-cumulative-returns-plot-backtest.png)
