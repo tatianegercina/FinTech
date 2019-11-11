@@ -1,8 +1,8 @@
 # Using a Wallet
 
-In this activity you will create a crypto wallet with [MyCrypto](https://mycrypto.com/). If you have not already installed the MyCrypto App, please follow the instructions in [the installation guide](Supplemental/blockchain-install-guide.md).
+In this activity you will create a crypto wallet with [MyCrypto Desktop App](https://download.mycrypto.com/). If you have not already installed the MyCrypto App, please follow the instructions in [the installation guide](Supplemental/blockchain-install-guide.md).
 
-Using MyCrypto, you will be requesting testnet tokens and sending transactions to your fellow students.
+Using MyCrypto Desktop App, you will be requesting testnet tokens and sending transactions to your fellow students.
 
 ## Instructions
 
@@ -10,26 +10,27 @@ Using MyCrypto, you will be requesting testnet tokens and sending transactions t
 
 2. Click "Create a new wallet" on the left.
 
-![create wallet](../../Images/create.png)
+    ![create wallet](../../Images/create.png)
 
 3. Choose "Generate a wallet".
 
-4. Use the "Mnemonic Phrase" option. Write down this phrase **in order** and store it in a safe place. Do not share this phrase with anyone.
-   Treat it like your banking password.
+4. Use the "Mnemonic Phrase" option. MyCrypto will generate a unique mnemonic phrase for you, write down this phrase **in order** and store it in a safe place. Do not share this phrase with anyone, treat it like your banking password.
 
-![mnemonic](../../Images/mnemonic.png)
+    ![mnemonic](../../Images/mnemonic.png)
 
 5. You will need to confirm the phrase by clicking your words in order:
 
-![verify mnemonic](../../Images/verify.png)
+    ![verify mnemonic](../../Images/verify.png)
 
 Once you are done, you will see the steps you will need to unlock your account in the future.
+
+![Unlock wallet](Images/MyCryptop-Unlock-Steps.png)
 
 6. Unlock your wallet by going to "View & Send" and pick "Mnemonic Phrase."
 
 7. Type your mnemonic phrase, with spaces (you can click the eye to view it), then continue to choose an address.
 
-![unlock wallet](../../Images/unlock.png)
+    ![unlock wallet](../../Images/unlock.png)
 
 8. Once you pick an address to unlock, copy the address on the right hand side.
 
