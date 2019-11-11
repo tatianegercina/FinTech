@@ -1,6 +1,6 @@
 # Peoplechain
 
-ThSlackt way to understand how the blockchain keeps track of transactions is to emulate one!
+The best way to understand how the blockchain keeps track of transactions is to emulate one!
 
 As a class, you will be getting into groups that will each participate in the network differently.
 
@@ -8,7 +8,7 @@ This activity will demonstrate the public, borderless, and censor resistant natu
 
 ## Instructions
 
-You were arranged into at least three groups.
+Get into three groups.
 
 * Group 1: Money senders.
 
@@ -26,7 +26,9 @@ You are up! Once the instructor says “go” you will:
 
 2. Then, create a "transaction" by typing out an object that's formatted like this, but with your own custom values:
 
-    * `{ to: "StudentA", from: "StudentB", amount: "$100", fee: "$1.00" }`
+    ```python
+    { to: "StudentA", from: "StudentB", amount: "$100", fee: "$1.00" }
+    ```
 
 3. Slack out the transaction to someone from Group 2 or Group 3.
 
