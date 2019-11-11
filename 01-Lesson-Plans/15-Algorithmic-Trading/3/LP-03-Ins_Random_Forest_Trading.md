@@ -2,7 +2,7 @@
 
 In this activity, students will re-deploy a pre-trained Random Forest model to make predictions (positive or negative daily return) given the x test dataset of BTC/USD closing prices. Then, students will compare the actual results vs. the predicted results and backtest the Random Forest model given a capital allocation of $100,000.
 
-**File:** [random_forest_trading.ipynb](Activities/01-Ins_Random_Forest_Trading/Solved/random_forest_trading.ipynb)
+**File:** [random_forest_trading.ipynb](Activities/03-Ins_Random_Forest_Trading/Solved/random_forest_trading.ipynb)
 
 Briefly discuss the following before proceeding to the coding solution:
 

@@ -2,7 +2,7 @@
 
 In this activity, students will learn how to use the set of trading signal features they generated in the previous activity to now train a Random Forest machine learning model.
 
-**File:** [random_forest_trading.ipynb](Activities/01-Ins_Random_Forest_Trading/Solved/random_forest_trading.ipynb)
+**File:** [random_forest_training.ipynb](Activities/02-Ins_Random_Forest_Training/Solved/random_forest_training.ipynb)
 
 Before proceeding with the coding activity, open the slides and briefly re-cap the the use of machine learning models in regards to trading:
 
