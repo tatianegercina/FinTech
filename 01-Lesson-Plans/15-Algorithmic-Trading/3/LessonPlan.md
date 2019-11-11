@@ -116,6 +116,18 @@ Then, open the solution file and discuss the following:
 
   ![dependent-variable](Images/dependent-variable.png)
 
+* It is also important to check for any positive or negative infinity values, as such values will cause problems when training the model as suggested by the error below.
+
+  ```python
+  # Drop NAs and replace positive/negative infinity values
+  trading_signals_df.dropna(subset=x_var_list, inplace=True)
+  trading_signals_df.dropna(subset=['daily_return'], inplace=True)
+  trading_signals_df = trading_signals_df.replace([np.inf, -np.inf], np.nan)
+  trading_signals_df.head()
+  ```
+
+  ![infinity-error.png](Images/infinity-error.png)
+
 * Almost there! The final remaining steps before proceeding to train the Random Forest model is to now define the training and test windows and separate the X and Y training/testing datasets.
 
   ![training-testing-windows.png](Images/training-testing-windows.png)
