@@ -31,3 +31,9 @@ Then, ask students if they have any further questions before moving onto the fol
 * Lastly, a lot of effort and time is spent on collecting and preparing training data. Therefore, as an alternative solution, Amazon SageMaker, a machine learning cloud service that enables users to build, train, and deploy machine learning models quickly and conveniently, could be used to minimize the work effort spent on preparing data and instead focus on optimizing the accuracy or performance of the model. Amazon SageMaker also provides several methods for accessing its functionality such as via the AWS web GUI, specific API endpoints, or the SageMaker Python SDK.
 
   ![aws-sagemaker](Images/aws-sagemaker.png)
+
+Finally, end the lesson with some encouragement for students:
+
+* Today marks the end of everything we have learned so far in the course! At this point in time, students have learned to not only use Python and its various libraries, but also learn how to implement machine learning based strategies to derive predictive insight. Students should feel very proud, as they have reached a technical milestone that many have yet to accomplish, and that they are on their way to becoming data scientists!
+
+* Looking toward the horizon, students will soon delve deep into the world of Blockchain technology, or the next generation digital economy. With their now refined data analytic skills matched with machine learning capabilities, students will become absolute rock stars in the FinTech space once they add Blockchain to their technical repertoire!
