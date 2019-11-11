@@ -24,11 +24,7 @@ Open the solution file and discuss the following:
 
   ![actual-results-vs-predicted-results](Images/actual-results-vs-predicted-results.png)
 
-* And now for the last piece to the puzzle! After importing the `sklearn` library and associated Random Forest classes, the model is fit with the x and y training data and then used to predict the y values derived from the x test dataset. The results are then shown in the following DataFrame.
-
-  ![random-forest-model](Images/random-forest-model.png)
-
-* The results are then plotted against the actual results (where or not the particular day was a positive or negative return) to show the turnover of the Random Forest model. In other words, the following plot shows how many times the model predicted that a particular day would be positive or negative based off of the features or trading signals.
+* The comparative results can then plotted to show the turnover of the Random Forest model. In other words, the following plot shows how many times the model predicted that a particular day would be positive or negative based off of the features or trading signals.
 
   ![random-forest-model-plot-1](Images/random-forest-model-plot-1.png)
 
