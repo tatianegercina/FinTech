@@ -2,4 +2,4 @@
 
 ## Installing MyCrypto
 
-* https://mycrypto.com/
+* https://download.mycrypto.com/
