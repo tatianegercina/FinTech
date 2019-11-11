@@ -117,6 +117,8 @@
         "geth",
         "jupyter",
         "lab",
-        "plotly"
+        "plotly",
+        "UTXO",
+        "utxos"
     ]
 }
