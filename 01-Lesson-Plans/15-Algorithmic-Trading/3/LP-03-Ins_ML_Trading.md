@@ -24,9 +24,11 @@ Open the solution file and discuss the following:
 
   ![actual-results-vs-predicted-results](Images/actual-results-vs-predicted-results.png)
 
-* The comparative results can then be plotted to show the turnover of the Random Forest model. In other words, the following plot shows how many times the model predicted that a particular day would be positive or negative based off of the features or trading signals. Viewing the totality of the actual vs. predicted results may be hard to decipher, therefore viewing a small portion such as the last 10 records provides better understanding of how the model performs.
+* The comparative results can then be plotted to show the turnover of the Random Forest model. In other words, the following plot shows how many times the model predicted that a particular day would be positive or negative based off of the features or trading signals.
 
   ![random-forest-model-plot-1](Images/random-forest-model-plot-1.png)
+
+* Viewing the totality of the actual vs. predicted results can be hard to decipher, therefore viewing a small portion such as the last 10 records provides better understanding of how the model performs.
 
   ![random-forest-model-plot-2](Images/random-forest-model-plot-2.png)
 
