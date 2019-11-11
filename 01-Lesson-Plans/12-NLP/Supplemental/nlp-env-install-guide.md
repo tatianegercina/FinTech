@@ -71,7 +71,7 @@ conda list | grep ibm-watson
 
 ## SpaCy Library Installation
 
-In this unit, you will learn how to perform text analysis using [the `spcacy` library](https://spacy.io/).
+In this unit, you will learn how to perform text analysis using [the `spacy` library](https://spacy.io/).
 
 To install this library, open the terminal and execute the following commands:
 
