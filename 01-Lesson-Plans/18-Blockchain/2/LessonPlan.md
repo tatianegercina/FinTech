@@ -353,23 +353,27 @@ Answer any questions before moving on.
 
 ### 8. Students Do: Encrypting and Decrypting Messages (10 min)
 
-Students will now use the same tool to encrypt and decrypt messages with a partner. Send out the instructions,
-which includes the URL to the TweetNacl.js tool.
+In this activity, students will now use the same tool to encrypt and decrypt messages with a partner.
+
+Slack out the instructions, which includes the URL to the TweetNacl.js tool.
+
+Have the students pick a partner to send and receive encrypted messages with.
+
+Have TAs circulate and ensure that students can use the tool properly and are successfully encrypting and decrypting each other's messages.
 
 **Files:**
 
 * [README.md](Activities/08-Stu_Encrypting_Decrypting/README.md)
 
-Have the students pick a partner to send and receive encrypted messages with.
-
-Have TAs circulate and ensure that students can use the tool properly and are successfully encrypting and decrypting
-each other's messages.
+---
 
 ### 9. Instructor Do: Symmetric Cryptography Review (10 min)
 
-Ask the students the following questions:
+Conduct a facilitated discussion in the class by asking the students the following questions:
 
 * What did you learn?
+
+  **Answer**: The encryption and decryption process.
 
 * What is the biggest security hole you see in this system?
 
@@ -382,6 +386,10 @@ Ask the students the following questions:
   **Answer**: Storing secure data on a hard drive. This is also called "encrypting data at rest."
 
   **Answer**: Securing data that does not need to be transferred over the internet.
+
+Answer any questions before moving on.
+
+---
 
 ### 10. Instructor Do: Asymmetric Cryptography Demo (10 min)
 
