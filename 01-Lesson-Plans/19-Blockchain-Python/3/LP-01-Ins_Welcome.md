@@ -1,4 +1,4 @@
-## 19.2 Lesson Plan: Bit, A Python Library
+## 19.3 Lesson Plan: Wallet Standards (BIP39, BIP32, and BIP44)
 
 ### Overview
 
@@ -27,7 +27,11 @@ and to understand how wallets work across the blockchain ecosystem.
 
 ### Instructor Notes
 
-* @TODO
+* Ensure that you have your 12 word mnemonic ready. We will be using it throughout the class.
+
+* Take some time before class to familiarize yourself with the [BIP39 online wallet converter](https://iancoleman.io/bip39/) and how to convert your mnemonic into different coins.
+
+* Ensure that you have properly installed the [hd-wallet-derive](https://github.com/dan-da/hd-wallet-derive#installation-and-running) PHP CLI tool at least once before class.
 
 - - -
 
