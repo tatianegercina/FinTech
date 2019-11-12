@@ -714,11 +714,9 @@ Answer any questions before moving on.
 
 ### 20. Instructor Do: Recap / Where's the crypto in crypto? (10 min)
 
-Now that the students have a fundamental understanding of cryptography, and how a blockchain is built
-using these concepts and data structures, it's time to review and put a cap on the day.
+Now that the students have a fundamental understanding of cryptography, and how a blockchain is built using these concepts and data structures, it's time to review and put a cap on the day.
 
-First, congratulate and encourage the students for getting through one of the hardest and conceptually abstract
-day of this section. They are now equipped with knowledge of blockchain *and* security.
+First, congratulate and encourage the students for getting through one of the hardest and conceptually abstract days of this section. They are now equipped with knowledge of blockchain *and* security.
 
 Ask the students the following questions:
 
@@ -748,6 +746,15 @@ Ask the students the following questions:
 
   **Answer**: Blocks are connected via a chain of hashes, giving the structure it's name and security.
 
-Remind the students that cryptography is a tough subject that is taught usually in a Computer Science degree and that they
-should be proud for learning it. It is something that few people understand but powers many systems that keep our information
-secure every day.
+Remind the students that cryptography is a tough subject that is taught usually in a Computer Science degree and that they should be proud for learning it.
+
+* Cryptography is something that few people understand but powers many systems that keep our information secure every day.
+
+Answer any questions before ending the class.
+
+---
+
+End Class
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
