@@ -235,8 +235,7 @@ Answer any questions before moving on.
 
 ### 5. Students Do: Hashing with Hashlib (10 min)
 
-Students will now hash two equivilalent messages and compare the outputs.
-Then, they will modify one of the messages and compare again.
+In this activity, students will now hash two equivalent messages and compare the outputs. Then, they will modify one of the messages and compare again.
 
 **Files:**
 
@@ -252,12 +251,17 @@ message = b"Message to be hashed"
 
 * The `b` prefixing the string definition passes the string as a byte array, which is the required input type for hashing algorithms.
 
-* Explain to the students that this means that hashing works on all types of data, regardless of it's data type,
-  since it operates on the actual bits themselves.
+* Explain to the students that this means that hashing works on all types of data, regardless of it's data type, since it operates on the actual bits themselves.
 
 Have TAs circulate through the class to ensure that students are able to properly hash messages.
 
-### 6. Instructor Do: Hashing Review (5 min)
+---
+
+### 6. Instructor Do: Hashing with Hashlib Review (5 min)
+
+**Files:**
+
+* [hashing.py](Activities/05-Stu_Hashlib/Solved/hashing.py)
 
 Ask the students the following questions:
 
@@ -278,6 +282,10 @@ Ask the students the following questions:
   **Answer**: Data integrity is ensuring the data stays the same, security is ensuring the data stays secret.
 
 Reaffirm to the students that the hashes of the messages should only be equal if the messages are equal.
+
+Answer any questions before moving on.
+
+---
 
 ### 7. Instructor Do: Symmetric Cryptography (10 min)
 
