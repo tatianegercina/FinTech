@@ -1,3 +1,5 @@
+## Placeholder
+
 ## 15.2 Lesson Plan: Egad! It's Alive!
 
 ---
