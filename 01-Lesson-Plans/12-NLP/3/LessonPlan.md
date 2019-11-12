@@ -338,8 +338,6 @@ Ask students whether they found topic sentiments that are more closely correlate
 
 The remainder of today's class is intended to review any topics, activities, or concepts covered in any of the previous machine learning units.
 
-There is also an [ExtraContent_LessonPlan.md](ExtraContent_LessonPlan.md) and activities available that can be covered as an Everyone Do activity if the class is ready for an additional challenge.
-
 ---
 
 ### 15. Instructor Do: Structured Review (35 min)
