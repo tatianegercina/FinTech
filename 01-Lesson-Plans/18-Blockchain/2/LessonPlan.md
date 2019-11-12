@@ -600,17 +600,19 @@ Answer any questions before moving on.
 
 ### 15. Students Do: Signing and Verifying Messages (10 min)
 
-Students will now get with a partner and sign and verify messages between each other.
+In this activity, students will get with a partner and sign and verify messages between each other.
+
+Have TAs circulate through the class and ensure that students are successfully verifying messages.
 
 **Files:**
 
 * [README.md](Activities/14-Stu_Signing_Verifying/README.md)
 
-Have TAs circulate through the class and ensure that students are successfully verifying messages.
+---
 
-### 16. Instructor Do: Digital Signatures Review (10 min)
+### 16. Instructor Do: Signing and Verifying Messages Review (10 min)
 
-Ask the students the following questions:
+Conduct a facilitated discussion by asking the students the following questions:
 
 * It looks like this helps a lot with data integrity. Why not just hash the message instead?
 
@@ -618,10 +620,7 @@ Ask the students the following questions:
 
   **Answer**: This is an additional layer. This provides authenticity and authentication at the same time, aka ownership and identity.
 
-Explain to the students:
-
-* Digital signatures in combination with hashing and encryption can be a powerful way to ensure a message is
-  delivered securely (without other parties snooping in), and that the right message got there without modification.
+Explain to the students that digital signatures, in combination with hashing and encryption, can be a powerful way to ensure a message is delivered securely (without other parties snooping in), and that the right message got there without modification.
 
 Ask the students (critical):
 
@@ -629,8 +628,11 @@ Ask the students (critical):
 
   **Answer**: A transaction is just a signed message authorizing transfer of funds, hence cannot be modified and can be verified
 
-Tell the students to start thinking about the different ways you might use these cryptographic techniques
-in the context of blockchain and cryptocurrencies.
+Tell the students to start thinking about the different ways you might use these cryptographic techniques in the context of blockchain and cryptocurrencies.
+
+Answer any questions before moving on.
+
+---
 
 ### 17. Instructor Do: Blockchain Data Structure (10 min)
 
