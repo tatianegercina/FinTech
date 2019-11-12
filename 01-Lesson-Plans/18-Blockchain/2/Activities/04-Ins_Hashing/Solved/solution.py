@@ -1,3 +1,6 @@
+# Hasing Demo
+
+# initial imports
 import hashlib
 
 # output sha256 hash in hexadecimal string format
@@ -9,10 +12,10 @@ sentence_one = b"The quick brown fox jumped over the lazy dog"
 print(sentence_one, hash(sentence_one))
 # output: 7d38b5cd25a2baf85ad3bb5b9311383e671a8a142eb302b324d4a5fba8748c69
 
-sentence_two = b"The quick brown fox jumped over the lazy dog."
+sentence_two = b"The quick brown fox jumped over the lazy dog"
 
 print(sentence_two, hash(sentence_two))
-# output: 68b1282b91de2c054c36629cb8dd447f12f096d3e3c587978dc2248444633483
+# output: 7d38b5cd25a2baf85ad3bb5b9311383e671a8a142eb302b324d4a5fba8748c69
 
 payment_message = b"I agree to pay Joe $90"
 
