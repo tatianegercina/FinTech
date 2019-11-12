@@ -4,6 +4,14 @@ This guide serves as a step by step process for setting up and validating the to
 
 This guide will include installation and verification steps for the following technologies:
 
+## NLTK
+
+The [Natural Language Toolkit (NLTK)](https://www.nltk.org/) should already be installed through Anaconda. This unit requires additional downloads for NLTK using the following terminal command:
+
+```shell
+python -c "import nltk;nltk.download('all')"
+```
+
 ## Wordcloud Library
 
 In this unit, you will learn how to create word clouds visualizations to analyze text using [the `wordcloud` library](https://anaconda.org/conda-forge/wordcloud).
@@ -33,7 +41,7 @@ In this unit, you will learn how to analyze text and sentiment from news article
 Open the terminal and execute the following command.
 
 ```shell
-pip install newsapi-python
+pip install newsapi-python==0.2.5
 ```
 
 ### Verify the News API Python Client Installation
@@ -76,8 +84,7 @@ In this unit, you will learn how to perform text analysis using [the `spacy` lib
 To install this library, open the terminal and execute the following commands:
 
 ```shell
-pip install -U spacy
-
+conda install -c conda-forge spacy
 python -m spacy download en_core_web_sm
 ```
 
