@@ -1,0 +1,2 @@
+# Force include .env file
+!.env

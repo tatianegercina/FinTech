@@ -12,9 +12,9 @@ Most of this class will center on project work. You and the TAs should check up 
 
 ##### Instructor Notes
 
-Your students will be nearing the end of their projects. Even though it's the beginning of the week, you should push students to finish their apps before Thursday so they have optimum time to practice their presentations.
+Your students will be nearing the end of their projects. Even though it's the beginning of the week, you should push students to finish their apps before Thursday, so they have optimum time to practice their presentations.
 
-It's crucial that you steer any off-course projects back on track. Come next class, the encroaching Saturday deadline will mire any attempt at a turnaround.
+It's crucial that you steer any off-course projects back on track. Come next class; the encroaching Saturday deadline will mire any attempt at a turnaround.
 
 The remaining schedule for Project 2 is as follows:
 
@@ -52,7 +52,7 @@ Ask the class about their thoughts on the collaboration experience so far and ab
 
 Have your students sit with their project groups. Tell the class they should try as best they can to finish 95% of their code and design by the end of the next class. That would give them most of Thursday and Friday to spend on presentations.
 
-Add that they should come into the next class expecting to devote at least 30 minutes to outlining their presentations. They'll also have time to work on the rest of their project.
+Add that they should come into the next class expecting to devote at least 30 minutes to outline their presentations. They'll also have time to work on the rest of their projects.
 
 TAs and instructors: For the next 90 minutes, you're senior developers! Walk around the class as mentors for each group's team. Ask them about their progress so far; offer them advice on how they can finish their work in time.
 
