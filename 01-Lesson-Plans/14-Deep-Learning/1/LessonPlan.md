@@ -18,7 +18,7 @@ By the end of class, students will be able to:
 
 * Understand how the choice of inputs and hidden layers apply to problems with regression and classification.
 
-* Experiment with neural networks' architecture in the TensorFlow playground.
+* Experiment with building neural network architectures using TensorFlow playground.
 
 * Preprocessing data for neural network models.
 
@@ -26,7 +26,7 @@ By the end of class, students will be able to:
 
 * Describe what the pros and cons of using Keras for building neural networks are.
 
-* Implement neural networks with the Python Keras API.
+* Implement neural networks with the TensorFlow Keras API.
 
 ### Instructor Notes
 
@@ -38,7 +38,7 @@ By the end of class, students will be able to:
 
 * A thorough understanding of neural networks would require math that is beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
 
-* In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/), be sure to practice the demo before class. If you are not familiar with this project, we encourage you to [watch this video](https://youtu.be/3BhkeY974Rg).
+* In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/). Be sure to practice the demo before class. If you are not familiar with this project, we encourage you to [watch this video](https://youtu.be/3BhkeY974Rg).
 
 ### Class Slides and Time Tracker
 
