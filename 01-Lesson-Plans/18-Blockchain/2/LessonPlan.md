@@ -92,21 +92,25 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Students Do: Cryptography Use Cases (10 min)
+### 2. Students Do: Cryptography Use Cases (15 min)
 
-Students will be researching some applications of cryptography in the wild.
+In this activity, students will be researching some applications of cryptography in the wild.
 
 Explain to the students that getting good at this type of research is key to succeeding in an emerging field like the blockchain industry.
+
+Have TAs circulate around the class and ensure students are not stuck. This should be a generally easy-going activity.
 
 **Files:**
 
 * [README.md](Activities/02-Stu_Cryptography_Use_Cases/README.md)
 
-Have TAs circulate around the class and ensure students are not stuck. This should be a generally easy going activity.
+---
 
-### 3. Instructor Do: Cryptography Use Case Review (15 min)
+### 3. Instructor Do: Cryptography Use Cases Review (10 min)
 
-Given the research the students just did, ask the students to their definitions of the terms:
+Given the research the students just did, in this activity you will conduct a facilitated discussion to allow students to share their insights.
+
+Start the activity, by asking the students to share their definitions of the following terms:
 
 * Cryptography
 
@@ -124,8 +128,7 @@ Given the research the students just did, ask the students to their definitions 
 
   **Answer**: Using cryptography to email/communicate securely.
 
-Now, ask the students to share some ideas about where they might have used cryptography in their lives.
-Some examples may include:
+Now, ask the students to share some ideas about where they might have used cryptography in their lives, some examples may include:
 
 * Storing files safely.
 
@@ -135,7 +138,7 @@ Some examples may include:
 
 * Payment systems (EMV chips, online payment gateways, banking communication).
 
-Ask the students:
+Ask the students the following questions:
 
 * What sort of institutions would you hold to the standard of using good cryptography?
 
@@ -151,11 +154,13 @@ Ask the students:
 
   **Answer**: Using that algorithm for data integrity would no longer be secure, since each hash is no longer unique to the data.
 
-Now elucidate that while you expect these services to be using good cryptography, practically every application benefits
-from having it. By using good cryptography, a more robust and secure internet can exist.
+Now elucidate that while you expect these services to be using good cryptography, practically every application benefits from having it. By using good cryptography, a more robust and secure internet can exist.
 
-Remind students that practically all of the hacks you hear about in the news are from misconfigured or lack of cryptography,
-so it is very important to integrate it throughout their lives in order to protect their data and identity.
+Remind students that practically all of the hacks you hear about in the news are from misconfigured or lack of cryptography, so it is very important to integrate it throughout their lives in order to protect their data and identity.
+
+Answer any questions before moving on.
+
+---
 
 ### 4. Instructor Do: Hashing Demo (10 min)
 
