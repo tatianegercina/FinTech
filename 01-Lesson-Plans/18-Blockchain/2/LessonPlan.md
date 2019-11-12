@@ -487,18 +487,19 @@ Answer any questions before moving on.
 
 ### 11. Students Do: Asymmetric Encryption (10 min)
 
-Students will get into pairs of 2 and encrypt and decrypt messages between each other using
-asymmetric encryption instead of symmetric.
+Students will get into groups of two people, they will encrypt and decrypt messages between each other using asymmetric encryption instead of symmetric.
+
+Have TAs circulate and ensure that students are successfully encrypting and decrypting each other's messages.
 
 **Files:**
 
 * [README.md](Activities/11-Stu_Asymmetric_Encryption/README.md)
 
-Have TAs circulate and ensure that students are successfully encrypting and decrypting each other's messages.
+---
 
 ### 12. Instructor Do: Asymmetric Encryption Review (5 min)
 
-Ask the students the following questions:
+Conduct a facilitated discussion in the class, by asking the students the following questions:
 
 * What is the biggest benefit to using asymmetric encryption over symmetric?
 
@@ -510,11 +511,13 @@ Ask the students the following questions:
 
   **Answer**: You have a single, private key with symmetric, versus having a pair of keys for public and private use in asymmetric.
 
-- - -
+Answer any questions before moving on.
+
+---
 
 ### 13. BREAK (15 min)
 
-- - -
+---
 
 ### 14. Instructor Do: Digital Signatures (10 min)
 
