@@ -265,6 +265,8 @@ In this activity, students will once again break off into groups of two to four 
 
 * Use the slides to set up this activity. (Slides 38–41)
 
+* The [instructor preparation document](../Instructor_Support/Blockchain.md) contains additional background information for the blockchain related slides.
+
 * In essence, this thought experiment asks students to define the financial and technical challenges of the Altruistic Alpacas charity. Students may have a mix of financial and technical backgrounds, but this exercise should force them to think creatively about the problem and identify challenges from both a financial and technical perspective.
 
 * The key to executing this exercise in the classroom is to ensure that students thinking outside their sphere of knowledge as well as thinking deeply about each problem.
