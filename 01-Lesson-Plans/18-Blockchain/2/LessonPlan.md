@@ -393,62 +393,73 @@ Answer any questions before moving on.
 
 ### 10. Instructor Do: Asymmetric Cryptography Demo (10 min)
 
+In this activity, students will learn how asymmetric cryptography works.
+
 Explain to students that we need a way of sharing secret data without having to share a password beforehand.
 
-* Asymmetric cryptography doesn't just use one key like symmetric, but now it splits up the key into a "keypair"
-  -- a public key and a private key. This allows us to do some neat stuff that we'll dive into shortly.
+* Asymmetric cryptography doesn't just use one key like symmetric, but now it splits up the key into a "keypair" -- a public key and a private key.
+
+* This pair of keys allows us to do some neat stuff that we'll dive into shortly.
+
+Expose to students the following situation:
 
 * In the context of encryption, imagine that Joe's public key is like a special lockbox that you can use to store secrets in.
-  Once you close this box, it can only be opened with Joe's private key.
-  Anyone can use Joe's public key to send him secret data, but only he can unlock the data with his private key.
+
+* Once you close this box, it can only be opened with Joe's private key.
+
+* Anyone can use Joe's public key to send him secret data, but only he can unlock the data with his private key.
 
 Pick a volunteer to help assist with this demo. They will be encrypting a message using the instructor's public key.
 
-Navigate to the ["Box" feature](https://tweetnacl.js.org/#/box) of the TweetNaCl.js site.
+Navigate to the ["Box" feature](https://tweetnacl.js.org/#/box) of the TweetNaCl.js site. Have your volunteer student do the same.
+
+Generate a `Secret Key` using the `Random` button next to the "My Secret Key" box.
 Have your volunteer student do the same.
 
-Generate a `Secret Key` using the first `Random` button.
-Have your volunteer student do the same.
-
-This should generate a pair of keys, public and private:
+* This should generate a pair of keys, public and private:
 
 ![asymmetric keys](Images/asymmetric-keys.png)
 
-Send the student your Public Key in the `My Public Key` field at the bottom.
-Have them paste this public key into the `Their Public Key` field.
+Slack out your Public Key in the `My Public Key` field to the volunteer student.
 
 ![asymmetric public](Images/asymmetric-public.png)
 
-* Explain that in this case, you are free to share your public key. In fact, it is what will be used to encrypt the message.
+Have the student paste this public key into the `Their Public Key` field.
+
+![their-asymmetric-public](Images/their-asymmetric-public.png)
+
+Explain that in this case, you are free to share your public key. In fact, it is what will be used to encrypt the message.
 
 * You must **always** keep your private/secret key **safe**, and **never** ever share it!
 
-Have the student generate a `Nonce`, then ensure that the student has the following three fields populated:
+Have the volunteer student generate a `Nonce`, then ensure that the student has the following three fields populated:
 
-* Their Public Key (instructor's)
+* "Their Public Key" (instructor's key).
 
-* Secret Key
+* "Secret Key".
 
-* My Public Key (student's)
+* "My Public Key" (student's key).
 
-* Nonce
+* "Nonce".
 
-Have the student type a class-friendly message into the `Message` box, then click `Encrypt`.
+Have the volunteer student type a class-friendly message into the `Message` box, then click `Encrypt`.
 
-Have the student send over the following fields:
+Ask the student slack out the following fields to you:
 
-* Public Key
+* "Public Key".
 
-* Nonce
+* "Nonce".
 
-* Encrypted Message (in `Box` field)
+* Encrypted message (the text in the `Box` field)
 
-Once they have done that, copy the information into the running demo.
+![Student message](Images/student-message.png)
+
+Once the student done that, copy the information into the running demo in your computer.
 
 You should have the **Student** public key in the `Their Public Key` field, the encrypted message in the `Box` field,
 and the nonce in the `Nonce` field.
 
-![student's info](Images/asymmetric-students-info.png)
+![student's info](Images/decrypting-message.png)
 
 Click `Decrypt` and the message should be displayed:
 
@@ -463,12 +474,16 @@ Ask the students:
 Elaborate to the students about how this technique allows for secure communication without having to share private data.
 
 * The idea is that you encrypt the data using the recipient's **public** key.
-  Then, the recipient uses their **private** key to decrypt the message.
 
-* Only the sender and receiver can decrypt the messages between them, nobody in between, and they do not need
-  to share a secret key beforehand.
+* Then, the recipient uses their **private** key to decrypt the message.
+
+* Only the sender and receiver can decrypt the messages between them, nobody in between, and they do not need to share a secret key beforehand.
 
 * This is what allows for something called "end-to-end" encryption, which is what encrypted messaging platforms use.
+
+Answer any questions before moving on.
+
+---
 
 ### 11. Students Do: Asymmetric Encryption (10 min)
 
