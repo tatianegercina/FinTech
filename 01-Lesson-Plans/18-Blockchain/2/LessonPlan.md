@@ -521,68 +521,82 @@ Answer any questions before moving on.
 
 ### 14. Instructor Do: Digital Signatures (10 min)
 
-Asymmetric cryptography lets us do another really useful thing -- digital signatures.
-Give this example:
+In this activity, students will learn how asymmetric cryptography can be used in digital signatures.
+
+Explain to students, that one of the applications of asymmetric cryptography is the generation and usage of digital signatures.
+
+Illustrate the following example to the class:
 
 * Let's say Joe wanted to sign a legal agreement, but he also wanted digital proof that was the exact agreement.
 
-* What Joe can do is take the document and "sign" it with his private key. This outputs a string called a "signature"
-  that can then be used to prove the document is still the same as when it was signed originally.
+* What Joe can do is take the document and "sign" it with his private key.
+
+* This outputs a string called a "signature" that can then be used to prove the document is still the same as when it was signed originally.
 
 * To do this, you take the document and digital signature and check it against Joe's public key.
-  That's it -- if the function succeeds then you know that the signature was actually signed by Joe and was not modified.
+
+* If the function succeeds then you know that the signature was actually signed by Joe and was not modified.
 
 * In this case, Joe uses his private key to "sign" his identity, and the world can use his public key to verify the signature came from him.
 
-Pick another volunteer (or TA) to help assist with this demo.
+Pick another volunteer student to help assist with the following demo.
 
-Navigate to the ["Sign" feature](https://tweetnacl.js.org/#/sign) of the demo site.
-Have your volunteer do the same, then have them click the `Verify` feature on the top left.
+Navigate to the ["Sign" feature](https://tweetnacl.js.org/#/sign) of the TweetNaCl.js demo site and do the following:
 
-Generate a `Secret Key`.
+* Have your volunteer also to navigate to the "Sign" feature of the TweetNaCl.js demo, then aks the student to click the `Verify` feature on the top left.
+
+  ![Sign verify](Images/sign-verify.png)
+
+* On your computer, ensure the "Sign" option is selected and click on the "Random" button to generate a `Secret Key`.
+
+  ![Secret Key](Images/sign-secret-key.png)
 
 * Explain that "secret key" and "private key" are synonymous.
 
-Type a message to sign.
-Make it something like "I authorize transferring $100 to Jane Doe" to stress importance of the data's integrity, and to maliciously modify later.
+* Type a message to sign. Make it something like `I authorize transferring $100 to Jane Doe` to stress importance of the data integrity, and to maliciously modify later.
 
-Click `Sign` to generate the message signature.
+* Click `Sign` to generate the message signature.
 
 ![signed message](Images/signed-message.png)
 
-Send the following fields to the student to have them verify the message's signature:
+* Slack out the following fields to the volunteer student to verify the message's signature:
 
-* Public Key
+  * Public Key
 
-* Message
+  * Message
 
-* Signature
+  * Signature
 
-Ensure that the student is at the `Verify` section of the `Sign` feature, and have them paste
-the public key, signature, and message into their corresponding fields.
+* Ensure that the volunteer student is at the `Verify` section of the `Sign` feature, and ask the student to paste the public key, signature, and message into their corresponding fields.
 
-Once they have pasted the values in the correct fields, they should be able to click `Verify`
-at the bottom of the page to check the signature against the public key.
+  ![Student verify message](Images/student-verify-message.png)
 
-The student should see:
+* Once the volunteer student pasted the values in the correct fields, the student should be able to click on "Verify" at the bottom of the page to check the signature against the public key.
 
-![verified message](Images/verified-message.png)
+  ![verified message](Images/verified-message.png)
 
 * Ask the student if the message was properly verified, and if they see a green success box.
 
-Navigate to the `Verify` section as well, and demonstrate the same verified message to the class.
-The fields should stay populated.
+* Navigate to the `Verify` section as well, and demonstrate the same verified message to the class. The fields should stay populated.
 
-Click `Verify` at the top to re-enable the ability to edit the `Message` field:
+  ![Verify your message](Images/verify-your-message.gif)
 
-![verify again](Images/verify-again.png)
+* Click `Verify` at the top to re-enable the ability to edit the `Message` field.
 
-Edit the message to say something different, like increasing the dollar amount from $100 to $1000.
+  ![verify again](Images/verify-edit.gif)
 
-Demonstrate that once you modify the message after it is signed, and click `Verify` at the bottom,
+* Edit the message to say something different, like increasing the dollar amount from $100 to $1000.
+
+* Demonstrate that once you modify the message after it is signed, and click `Verify` at the bottom,
 the signature fails to validate.
 
-![verification failed](Images/verify-failed.png)
+![verification failed](Images/verify-failed.gif)
+
+Explain to students that digital signatures are widely used to corroborate that the content of a text remains immutable.
+
+Answer any questions before moving on.
+
+---
 
 ### 15. Students Do: Signing and Verifying Messages (10 min)
 
