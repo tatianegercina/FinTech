@@ -54,12 +54,7 @@ By the end of the class, students be able to:
 
 ### 1. Instructor Do: Welcome to Class (5 min)
 
-**Files:**
-
-* [slides x-y]()
-
-Welcome to the cryptography fundamentals part of the course. In today's class you will be covering the basic cryptographic
-techniques that blockchain technology, as well as the rest of the internet, is built upon.
+Welcome to the cryptography fundamentals part of the course. In today's class you will be covering the basic cryptographic techniques that blockchain technology, as well as the rest of the internet, is built upon.
 
 Ask the students to refresh their definitions:
 
@@ -87,13 +82,15 @@ Ask the students to raise their hand if:
 
 * They have ever used an encrypted messaging service.
 
-Point out that students may have seen cryptography in action when browsing the internet over HTTPS by pointing out the "green lock"
-in the URL bar of their web browsers.
+Point out that students may have seen cryptography in action when browsing the internet over HTTPS by pointing out the "green lock" in the URL bar of their web browsers.
 
 ![green lock https](Images/green-lock-https.png)
 
-* Describe that that this means the communication between you and the website is
-  "encrypted" so that nobody else on the network can see the information.
+* This means the communication between you and the website is "encrypted" so that nobody else on the network can see the information.
+
+Answer any questions before moving on.
+
+---
 
 ### 2. Students Do: Cryptography Use Cases (10 min)
 
