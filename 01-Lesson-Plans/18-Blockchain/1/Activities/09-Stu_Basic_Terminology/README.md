@@ -16,4 +16,7 @@ Answer the following questions:
 
 5. What is a miner, or block producer?
 
-6. Who validates all of the rules of the blockchain?
+6. Who makes all of the rules of the blockchain?
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

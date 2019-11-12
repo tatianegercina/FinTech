@@ -238,7 +238,7 @@ def build_dashboard(signals_df, portfolio_evaluation_df):
     return dashboard
 ```
 
-* Similar to the backtesting section, the actual dashboard used in an algorithmic trading platform may be different when backtesting and when live trading. By encapsulating the code in to this function, any number of dashboard changes can be made and adapted over time.
+* Similar to the backtesting section, the actual dashboard used in an algorithmic trading platform may be different when backtesting and when live trading. By encapsulating the code into this function, any number of dashboard changes can be made and adapted over time.
 
 Finally, code the `main` function and highlight the following:
 
@@ -405,7 +405,7 @@ Move to the `initialize` function definition and highlight the following points:
 ```python
 def initialize(cash=None):
     """Initialize the dashboard, data storage, and account balances."""
-    print("Intializing Account and DataFrame")
+    print("Initializing Account and DataFrame")
 
     # Initialize Account
     account = {"balance": cash, "shares": 0}
@@ -654,7 +654,7 @@ pn.extension()
 Update the code for the `initialize`, `build_dashboard`, and `update_dashboard` functions and highlight the following:
 
 ```python
-# Intialize the dashboard
+# Initialize the dashboard
     dashboard = build_dashboard()
 
     # @TODO: We will complete the rest of this later!
@@ -769,7 +769,7 @@ Import the sqlite3 library and show how the database connector is initialized in
 ```python
 def initialize(cash=None):
     """Initialize the dashboard, data storage, and account balances."""
-    print("Intializing account, database, and DataFrame")
+    print("Initializing account, database, and DataFrame")
 
     # Initialize Database
     db = sqlite3.connect("algo_trader_history.sqlite")
@@ -853,7 +853,7 @@ Ask if there are any questions before moving on.
 
 In this activity, students will learn how to use the Streamz library to create a dedicated pipeline for continuous streaming data.
 
-The purpose of this activity is to show students how to update a visualization as data continues to flow without the need for re-constructing the visual component each time.
+The purpose of this activity is to show students how to update a visualization as data continues to flow without the need for reconstructing the visual component each time.
 
 **File:** [streamz.ipynb](Activities/08-Ins_Streaming/Solved/streamz.ipynb)
 

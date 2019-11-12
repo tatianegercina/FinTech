@@ -6,7 +6,7 @@ This guide will include installation and verification steps for the following te
 
 ## Wordcloud Library
 
-In this unit, you will learn how to create word clouds visualizations to analyse text using [the `wordcloud` library](https://anaconda.org/conda-forge/wordcloud).
+In this unit, you will learn how to create word clouds visualizations to analyze text using [the `wordcloud` library](https://anaconda.org/conda-forge/wordcloud).
 
 To install this library, open the terminal and execute the following command:
 
@@ -28,9 +28,9 @@ conda list | grep wordcloud
 
 ## News API Python Client Library
 
-In this unit, you will learn how to analyse text and sentiment from news articles using the [New API service](https://newsapi.org/). In order to interact with this service, you should install the [News API Python client library](https://newsapi.org/docs/client-libraries/python) as follows.
+In this unit, you will learn how to analyze text and sentiment from news articles using the [New API service](https://newsapi.org/). In order to interact with this service, you should install the [News API Python client library](https://newsapi.org/docs/client-libraries/python) as follows.
 
-Open the terminal, and execute the following command.
+Open the terminal and execute the following command.
 
 ```shell
 pip install newsapi-python
@@ -52,7 +52,7 @@ conda list | grep newsapi-python
 
 In this unit, you will learn how to the [IBM Watson Tone Analyzer](https://www.ibm.com/watson/services/tone-analyzer/) to analyze tone on text communications. In order to use this service, you need to install the [IBM Watson Python Library](https://pypi.org/project/ibm-watson/) as follows.
 
-Open the terminal, and execute the following command.
+Open the terminal and execute the following command.
 
 ```shell
 pip install --upgrade "ibm-watson>=3.0.3"
@@ -71,7 +71,7 @@ conda list | grep ibm-watson
 
 ## SpaCy Library Installation
 
-In this unit, you will learn how to perform text analysis using [the `spcacy` library](https://spacy.io/).
+In this unit, you will learn how to perform text analysis using [the `spacy` library](https://spacy.io/).
 
 To install this library, open the terminal and execute the following commands:
 
@@ -81,7 +81,7 @@ pip install -U spacy
 python -m spacy download en_core_web_sm
 ```
 
-The first command will install the `spacy` library, the second command is going to install the English language linguistic model that is going to be used in the activities.
+The first command will install the `spacy` library; the second command is going to install the English language linguistic model that is going to be used in the activities.
 
 ### Verify the SpaCy Library Installation
 
@@ -151,7 +151,7 @@ If you want to validate which version of a package is installed in your environm
 python -c "import <package_name>;print(<package_name>.__version__)"
 ```
 
-Where `<package_name>` is the name of the package you want to verify. For example, to corroborate the current version of the `spacy` package you should run the following command in the terminal.
+Where `<package_name>` is the name of the package you want to verify. For example, to corroborate the current version of the `spacy` package, you should run the following command in the terminal.
 
 ```shell
 python -c "import spacy;print(spacy.__version__)"
@@ -171,7 +171,7 @@ EnvironmentNotWritableError: The current user does not have write permissions to
  environment location: C:\ProgramData\Anaconda3
 ```
 
-If you ever see this message, try running the Git Bash terminal as `Administrator`. In Windows 10 you can do it as follows.
+If you ever see this message, try running the Git Bash terminal as `Administrator`. In Windows 10, you can do it as follows.
 
 1. Right-click on the Git Bash icon.
 
