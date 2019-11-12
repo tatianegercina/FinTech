@@ -164,30 +164,74 @@ Answer any questions before moving on.
 
 ### 4. Instructor Do: Hashing Demo (10 min)
 
-Time to demonstrate hashing several different strings, and comparing the results to show that given the same input, you will
-output the same hash.
-
-Ask the students to define hashing again:
-
-  **Answer**: A one way function that produces a digital fingerprint of data.
+In this activity, students will learn how hashing works by using several different strings, and comparing the results to show, that given the same input, you will output the same hash.
 
 **Files:**
 
 * [solution.py](Activities/04-Ins_Hashing/Solved/solution.py)
 
-Walk through the solution and highlight the following:
+Ask a volunteer student to define hashing again:
 
-  * Notice how each hash is different, even though only one character was changed in the input
+  **Answer**: A one way function that produces a digital fingerprint of data.
 
-  * Notice that no matter what, the same input will give the same hash output, it's a one to one relationship.
+Walk through the solution Python script and highlight the following:
+
+* The [`hashlib` module](https://docs.python.org/3/library/hashlib.html) is imported; This module is part of the Python Standard library and contains an interface to the most popular hashing algorithms.
+
+  ```python
+  import hashlib
+  ```
+
+Explain to students that most of the hashing algorithms are complaint with the [Federal Information Processing Standards (FIPS)](https://en.wikipedia.org/wiki/Federal_Information_Processing_Standards). These standards are developed by the United States federal government for use in computer systems by non-military government agencies and government contractors.
+
+* `haslib` includes the FIPS secure hash algorithms `SHA1`, `SHA224`, `SHA256`, `SHA384`, and `SHA512`, as well as the [RSA’s MD5 algorithm](https://en.wikipedia.org/wiki/MD5).
+
+* A function called `hash` is defined to create a hash from an input string using the `sha256` algorithm.
+
+  ```python
+  def hash(message):
+    return hashlib.sha256(message).hexdigest()
+  ```
+
+* Notice that no matter what, the same input will give the same hash output as can be seen with `sentence_one` and `sentence_two`. It's a one to one relationship.
+
+  ```python
+  sentence_one = b"The quick brown fox jumped over the lazy dog"
+
+  print(sentence_one, hash(sentence_one))
+  # output: 7d38b5cd25a2baf85ad3bb5b9311383e671a8a142eb302b324d4a5fba8748c69
+
+  sentence_two = b"The quick brown fox jumped over the lazy dog"
+
+  print(sentence_two, hash(sentence_two))
+  # output: 7d38b5cd25a2baf85ad3bb5b9311383e671a8a142eb302b324d4a5fba8748c69
+  ```
+
+* Notice how each hash is different, even though only one character was changed in the input as can be seen with `payment_message`.
+
+  ```python
+  payment_message = b"I agree to pay Joe $90"
+
+  print(payment_message, hash(payment_message))
+  # output: 8784fee852b5ee466c49b331098286feebc7c0d03ebf6ba826833fac376f4607
+
+  payment_message = b"I agree to pay Joe $9"
+
+  print(payment_message, hash(payment_message))
+  # output: eee60f2df1736fb21297cd062d81eaa6f9f95241bf38c04a4db4ff264a0bae72
+  ```
 
 Ask the students if the output of the hash looks familiar, and where they might have seen them so far:
 
-  **Answer**: Transaction IDs
+  **Answer**: Transaction IDs.
 
-  **Answer**: Block hashes
+  **Answer**: Block hashes.
 
 Point out that addresses are actually derived from hashing as well, but are not purely hashes as they will learn later today.
+
+Answer any questions before moving on.
+
+---
 
 ### 5. Students Do: Hashing with Hashlib (10 min)
 
