@@ -26,7 +26,7 @@ You are tasked to create a neural network model to predict if a credit card hold
 
 8. Fit the model with `100` epochs.
 
-9. Plot the loss function and accuracy using `hvplot`.
+9. Plot the loss function and accuracy.
 
 10. Evaluate the model using testing data and the `evaluate` method.
 
