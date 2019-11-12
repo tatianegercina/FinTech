@@ -289,34 +289,37 @@ Answer any questions before moving on.
 
 ### 7. Instructor Do: Symmetric Cryptography (10 min)
 
-Time to introduce the concept of symmetric cryptography.
+In this activity, students will be introduced to the concept of symmetric cryptography.
 
-* Explain to the students that symmetric cryptography means "one key" to "one lock" -- hence the "symmetry."
+Open the session slides, move to the "Symmetric Cryptography" section and highlight the following:
 
-* If you wanted to share the contents of a locked box, you would have to also give away the key (or a copy).
+* Symmetric cryptography means "one key" to "one lock" -- hence the "symmetry."
 
-* This is the same technique used to encrypt your hard drive or password-protect a document.
-  It's used to protect "data at rest" aka data that is not moving across a network.
+* If you want to share the contents of a locked box, you would have to also give away the key (or a copy).
+
+* This is the same technique used to encrypt your hard drive or password-protect a document. It's used to protect "data at rest" aka data that is not moving across a network.
 
 ![lock](https://image.shutterstock.com/image-photo/macro-shot-antique-weathered-vintage-600w-551871160.jpg)
 
-Open up the [Secretbox demo](https://tweetnacl.js.org/#/secretbox) from TweetNacl.js.
-This tool demonstrates symmetric and asymmetric crypto, as well as hashing, signing, and verifying messages.
+Open your browser and navigate to the [Secretbox demo](https://tweetnacl.js.org/#/secretbox) from TweetNacl.js.
 
-* Explain to the students that this JavaScript library contains all of the cryptography tools we need to get our job done.
-  Don't worry, you'll become very familiar with these tools the more you work with blockchains.
+* This tool demonstrates symmetric and asymmetric crypto, as well as hashing, signing, and verifying messages.
+
+Explain to the students that this `JavaScript` library contains all of the cryptography tools we need to get our job done.
+
+Comment to students that they shouldn't worry, they will become very familiar with these tools the more they work with blockchains.
 
 Type an arbitrary message into the `Message` box:
 
 ![symmetric message](Images/symmetric-message.png)
 
-* Reinforce that this message is a secret, and could be some corporate or health data that needs protecting
+Reinforce that this message is a secret, and could be some corporate or health data that needs protecting
 
 Generate a random symmetric key by clicking the `Random` button in the `Key` field:
 
 ![symmetric key](Images/symmetric-key.png)
 
-* Explain that this key is just like using a password that you would think of on your own.
+Explain that this key is just like using a password that you would think of on your own.
 
 * In this case, we're going to let the tool generate a random, secure key for us.
 
@@ -324,27 +327,29 @@ Generate a random nonce:
 
 ![nonce](Images/symmetric-nonce.png)
 
-* Explain to the students that a "nonce" stands for "number used once."
+Explain to the students that a "nonce" stands for "number used once". This means that you add a bit of randomness to your data, so that when you encrypt it, the result is unique.
 
-* This means that you add a bit of randomness to your data, so that when you encrypt it, the result is unique.
+* Without the "nonce", if you encrypt the same data with the same key, you'll get the same encrypted output every time.
 
-* Without this, if you encrypt the same data with the same key, you'll get the same encrypted output every time.
-  This adds to a hacker's ability to do something called "cryptanalysis" in which they analyze encrypted data in order
-  to break the encryption. By adding randomness, this becomes much harder of a task.
+* This adds to a hacker's ability to do something called "cryptanalysis" in which they analyze encrypted data to break the encryption.
 
-Encrypt the message:
+* By adding randomness using "nonce", this becomes much harder of a task.
+
+Click on the "Encrypt" button to encrypt the message:
 
 ![symmetric encryption](Images/symmetric-encryption.png)
 
-* Explain that the encrypted message can now be copied securely to a safe place.
+Explain that the encrypted message can now be copied securely to a safe place.
 
-Delete the plaintext in the `Message` box.
-
-* Point out that we now only have the encrypted data plus its key and nonce.
+Delete the plaintext in the `Message` box, and point out that we now only have the encrypted data plus its key and nonce.
 
 Then, click `Decrypt` again to demonstrate the process of decryption.
 
 * Only the key, nonce, and encrypted message are needed to decrypt back to the original message. We can store the encrypted message safely and decrypt it with the key and nonce later!
+
+Answer any questions before moving on.
+
+---
 
 ### 8. Students Do: Encrypting and Decrypting Messages (10 min)
 
