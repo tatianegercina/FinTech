@@ -2,12 +2,9 @@
 
 ### Overview
 
-Today's class will have the students actually build a real Ethereum-based blockchain using the `puppeth` tool bundled
-with `geth`, the official Ethereum node software.
+Today's class will have the students actually build a real Ethereum-based blockchain using the `puppeth` tool bundled with `geth`, the official Ethereum node software.
 
-The goal of this lesson is to build a Proof of Work based chain in class, to prepare the students for building
-a "Proof of Authority" based test network at home, as well as explain the differences in consensus algorithms and the
-tradeoffs that they balance.
+The goal of this lesson is to build a "Proof of Work" based chain in class, to prepare the students for building a "Proof of Authority" based test network at home, as well as explain the differences in consensus algorithms and the tradeoffs that they balance.
 
 ### Class Objectives
 
@@ -25,18 +22,15 @@ By the end of the unit, students will be able to:
 
 * Send a transaction on their local network.
 
-- - -
+---
 
 ### Instructor Notes
 
-* Before class, make sure to follow the `geth` [install instructions](https://github.com/ethereum/go-ethereum/wiki/Installing-Geth)
-  and ensure that the tool is functioning.
+* Before class, make sure to follow the `geth` [install instructions](https://github.com/ethereum/go-ethereum/wiki/Installing-Geth) and ensure that the tool is functioning in your computer.
 
-* Have an address/wallet ready to populate as a pre-funded account. You can generate a new one with MyCrypto, or use the same wallet as before.
+* Have an address/wallet ready to populate as a pre-funded account. You can generate a new one with MyCrypto, or use the same wallet from Day 1.
 
 * Have a look at the [Proof of Stake](https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ) FAQ on the Ethereum wiki for a deep comparison between it and Proof of Work.
-
-- - -
 
 ### Class Slides and Time Tracker
 
@@ -48,7 +42,7 @@ By the end of the unit, students will be able to:
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
