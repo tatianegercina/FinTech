@@ -1,18 +1,18 @@
 ### 1. Instructor Do: Random Forest Trading (15 min)
 
-In this activity, students will learn how to generate a set of trading signal derived from raw BTC/USD data that will be used as features to train a Random Forest machine learning model that will autonomously make predictions and corresponding trades.
+In this activity, students will learn how to generate a set of trading signals derived from raw BTC/USD data that will be used as features to train a Random Forest machine learning model that will autonomously make predictions and corresponding trades.
 
 **File:** [trading_signal_features.ipynb](Activities/01-Ins_Trading_Signal_Features/Solved/trading_signal_features.ipynb)
 
 First, quickly introduce the following:
 
-* Now that students have learned to generate trading signals, backtest their trading strategies, and evaluate their results, it is now time to incorporate machine learning into the mix! Students will now have the opportunity to use a machine learning model (Random Forest) to correctly predict next day positive or negative returns based off of multiple trading signals.
+* Now that students have learned to generate trading signals, backtest their trading strategies, and evaluate their results, it is now time to incorporate machine learning into the mix! Students will now have the opportunity to use a machine learning model (Random Forest) to correctly predict next day positive or negative returns based on multiple trading signals.
 
 * The Random Forest model will require multiple features, or in this case, multiple trading signals to train itself on. Therefore, students will learn to generate multiple trading signals using various technical indicators such as an exponential moving average of closing prices, exponential moving average of daily return volatility, and Bollinger Bands, which is are a set of lines representing a (positive and negative) standard deviation away from a simple moving average (SMA) of the asset's closing price.
 
 Then, open the solution file and discuss the following:
 
-* As always, before proceeding to generating the multiple features or trading signals of the Random Forest model, the following will first have to be done: importing the relevant libraries, reading in the data as a Pandas DataFrame, and preparing/cleaning the data.
+* As always, before proceeding to generate the multiple features or trading signals of the Random Forest model, the following will first have to be done: importing the relevant libraries, reading in the data as a Pandas DataFrame, and preparing/cleaning the data.
 
   ```python
   # Import libraries and dependencies
@@ -35,7 +35,7 @@ Then, open the solution file and discuss the following:
   btc_df
   ```
 
-* Then, in order to calculate the exponential moving average of daily return volatility (2nd trading signal), we will of course need prepare the DataFrame by calculating the daily returns of BTC/USD closing prices. Using the `dropna` function to drop any rows with NA values is a generally good practice.
+* Then, in order to calculate the exponential moving average of daily return volatility (2nd trading signal), we will of course need to prepare the DataFrame by calculating the daily returns of BTC/USD closing prices. Using the `dropna` function to drop any rows with NA values is a generally good practice.
 
   ```python
   # Drop NAs and calculate daily percent return
@@ -57,7 +57,7 @@ Then, open the solution file and discuss the following:
 
     ![ema-plot](Images/ema-plot.png)
 
-* Similarly, an exponential moving average of daily return volatility gives more weight to the most recent of daily returns. Therefore, when a short window EMA or fast EMA of daily return volatility is greater than a long window or slow EMA of daily return volatility, the crossover suggests that a short opportunity exists where daily return volatility is expected to rise. This is because during times of rising price volatility, there often exists a negative price bias (selling) and vice versa for when daily return volatility is expected to fall (buying).
+* Similarly, an exponential moving average of daily return volatility gives more weight to the most recent of daily returns. Therefore, when a short window EMA or fast EMA of daily return volatility is greater than a long window or slow EMA of daily return volatility, the crossover suggests that a short opportunity exists where daily return volatility is expected to rise. This is because, during times of rising price volatility, there often exists a negative price bias (selling) and vice versa for when daily return volatility is expected to fall (buying).
 
   ![ema-std](Images/ema-std.png)
 
@@ -69,7 +69,7 @@ Then, open the solution file and discuss the following:
 
   ![bollinger-band-plot.png](Images/bollinger-band-plot.png)
 
-At the end of the discussion, ask students whether or not they understand what the trading signals are suggesting. This is important as these trading signals will end up training the Random Forest model, therefore it is crucial for them to understanding the basis upon which the model will be trained.
+At the end of the discussion, ask students whether or not they understand what the trading signals are suggesting. This is important as these trading signals will end up training the Random Forest model; therefore it is crucial for them to understand the basis upon which the model will be trained.
 
 ---
 
@@ -79,7 +79,7 @@ In this activity, students will learn how to use the set of trading signal featu
 
 **File:** [random_forest_training.ipynb](Activities/02-Ins_Random_Forest_Training/Solved/random_forest_training.ipynb)
 
-Before proceeding with the coding activity, open the slides and briefly re-cap the the use of machine learning models in regards to trading:
+Before proceeding with the coding activity, open the slides, and briefly re-cap the use of machine learning models in regards to trading:
 
 * How will we incorporate a machine learning model in terms of trading?
 
@@ -87,11 +87,11 @@ Before proceeding with the coding activity, open the slides and briefly re-cap t
 
 * What is a Random Forest model?
 
-  **Answer:** A Random Forest model is among one of the best supervised algorithms in terms of its ability to predict outcomes. The Random Forest model utilizes a combination of multiple decision tree models to "average away" or minimize the impact of any single decision tree with high variance, thereby creating a more reliable predicted result derived from the strongest features. For example, in regards to portfolio optimization, combining the concept of sharp ratios and portfolio diversification tends to create a portfolio of maximum expected return with minimal variance or risk due to the tendency for non-correlated stock to "cancel" out each other's variances.
+  **Answer:** A Random Forest model is among one of the best-supervised algorithms in terms of its ability to predict outcomes. The Random Forest model utilizes a combination of multiple decision tree models to "average away" or minimize the impact of any single decision tree with high variance, thereby creating a more reliable predicted result derived from the strongest features. For example, in regards to portfolio optimization, combining the concept of sharp ratios and portfolio diversification tends to create a portfolio of maximum expected return with minimal variance or risk due to the tendency for the non-correlated stock to "cancel" out each other's variances.
 
 * Why is it called a Random Forest?
 
-  **Answer:** A Random Forest model is a combination of many decision tree models with each decision tree or "tree" randomly selecting a subset of the observations and features to train itself on. The result is a final prediction that is an average across this "forest" of random tress.
+  **Answer:** A Random Forest model is a combination of many decision tree models with each decision tree or "tree" randomly selecting a subset of the observations and features to train itself on. The result is a final prediction that is an average across this "forest" of random trees.
 
 Then, open the solution file and discuss the following:
 
@@ -136,11 +136,11 @@ Then, open the solution file and discuss the following:
 
   ![x-y-testing-datasets](Images/x-y-testing-datasets.png)
 
-* And now for the last piece to the puzzle! After importing the `sklearn` library and associated Random Forest classes, the model is fit with the x and y training data and then used to predict the y values derived from the x test dataset. The results are then shown in the following DataFrame.
+* And now for the last piece to the puzzle! After importing the `sklearn` library and associated Random Forest classes, the model is fitted with the x and y training data and then used to predict the y values derived from the x test dataset. The results are then shown in the following DataFrame.
 
   ![random-forest-model](Images/random-forest-model.png)
 
-* Finally, the `joblib` library allows a user to save a pre-trained model to a file for convenient future deployment. Doing so can be very valuable as fitting a model can be resource intensive when dealing with large amounts of data, therefore persisting a model saves both time and effort (re-running code).
+* Finally, the `joblib` library allows a user to save a pre-trained model to a file for convenient future deployment. Doing so can be very valuable as fitting a model can be resource-intensive when dealing with large amounts of data, therefore persisting a model saves both time and effort (re-running code).
 
   ```python
   from joblib import dump, load
@@ -175,11 +175,11 @@ Open the solution file and discuss the following:
 
   ![actual-results-vs-predicted-results](Images/actual-results-vs-predicted-results.png)
 
-* The comparative results can then be plotted to show the turnover of the Random Forest model. In other words, the following plot shows how many times the model predicted that a particular day would be positive or negative based off of the features or trading signals.
+* The comparative results can then be plotted to show the turnover of the Random Forest model. In other words, the following plot shows how many times the model predicted that a particular day would be positive or negative based on the features or trading signals.
 
   ![random-forest-model-plot-1](Images/random-forest-model-plot-1.png)
 
-* Viewing the totality of the actual vs. predicted results can be hard to decipher, therefore viewing a small portion such as the last 10 records provides better understanding of how the model performs.
+* Viewing the totality of the actual vs. predicted results can be hard to decipher, therefore viewing a small portion such as the last 10 records provides a better understanding of how the model performs.
 
   ![random-forest-model-plot-2](Images/random-forest-model-plot-2.png)
 
@@ -218,11 +218,11 @@ Open the slideshow and quickly re-cap the following. Engage students by having t
 
 * What was the main takeaway from today's lesson?
 
-  **Answer:** That the process for implementing a machine learning trading model can be fairly straightforward, but the ability to construct a sophisticated enough trading model that can outperform the markets will require more effort via further understanding of the markets and fine-tuning of the model (more features and therefore information).
+  **Answer:** That the process for implementing a machine learning trading model can be fairly straightforward, but the ability to construct a sophisticated enough trading model that can outperform the markets will require more effort via a further understanding of the markets and fine-tuning of the model (more features and therefore information).
 
 Then, ask students if they have any further questions before moving onto the following talking points regarding model improvement:
 
-* Admittedly, the Random Forest trading model still has room for improvement before it can be considered a robust system for automated machine learning based trading. This is because while the activities aim to simplify the process for implementation to provide beginner insight, the trade-off in complexity affects the overall performance of the model. In particular, several factors could have benefited the training and therefore overall performance of the Random Forest trading model, such as using more observations or data, more features or variables, and continuous rather than binary calculations for trading signals.
+* Admittedly, the Random Forest trading model still has room for improvement before it can be considered a robust system for automated machine learning-based trading. This is because while the activities aim to simplify the process for implementation to provide beginner insight, the trade-off in complexity affects the overall performance of the model. In particular, several factors could have benefited the training and, therefore, overall performance of the Random Forest trading model, such as using more observations or data, more features or variables, and continuous rather than binary calculations for trading signals.
 
 * The number of observations and features supplied to the model for training can be increased to provide more information, and therefore a better understanding for the model to make more accurate predictions. In this case, there were only 462 observations and 3 features upon which the model was trained.
 
@@ -232,15 +232,15 @@ Then, ask students if they have any further questions before moving onto the fol
 
   ![continuous-vs-binary](Images/continuous-vs-binary.png)
 
-* Lastly, a lot of effort and time is spent on collecting and preparing training data. Therefore, as an alternative solution, Amazon SageMaker, a machine learning cloud service that enables users to build, train, and deploy machine learning models quickly and conveniently, could be used to minimize the work effort spent on preparing data and instead focus on optimizing the accuracy or performance of the model. Amazon SageMaker also provides several methods for accessing its functionality such as via the AWS web GUI, specific API endpoints, or the SageMaker Python SDK.
+* Lastly, a lot of effort and time is spent on collecting and preparing training data. Therefore, as an alternative solution, Amazon SageMaker, a machine learning cloud service that enables users to build, train, and deploy machine learning models quickly and conveniently, could be used to minimize the work effort spent on preparing data and instead focus on optimizing the accuracy or performance of the model. Amazon SageMaker also provides several methods for accessing its functionality, such as via the AWS web GUI, specific API endpoints, or the SageMaker Python SDK.
 
   ![aws-sagemaker](Images/aws-sagemaker.png)
 
 Finally, end the lesson with some encouragement for students:
 
-* Today marks the end of everything we have learned so far in the course! At this point in time, students have learned to not only use Python and its various libraries, but also learn how to implement machine learning based strategies to derive predictive insight. Students should feel very proud, as they have reached a technical milestone that many have yet to accomplish, and that they are on their way to becoming data scientists!
+* Today marks the end of everything we have learned so far in the course! At this point in time, students have learned to not only use Python and its various libraries but also learn how to implement machine learning based strategies to derive predictive insight. Students should feel very proud, as they have reached a technical milestone that many have yet to accomplish and that they are on their way to becoming data scientists!
 
-* Looking toward the horizon, students will soon delve deep into the world of Blockchain technology, or the next generation digital economy. With their now refined data analytic skills matched with machine learning capabilities, students will become absolute rock stars in the FinTech space once they add Blockchain to their technical repertoire!
+* Looking toward the horizon, students will soon delve deep into the world of Blockchain technology or the next generation digital economy. With their now refined data analytic skills matched with machine learning capabilities, students will become absolute rock stars in the FinTech space once they add Blockchain to their technical repertoire!
 
 ---
 
