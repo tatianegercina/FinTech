@@ -28,8 +28,7 @@ By the end of the unit, students will be able to:
 
 ### Instructor Notes
 
-* Before class, prepare to use the mnemonic phrase you have been using throughout the course, we will
-  be extracting keys and addresses from it.
+* Before class, prepare to use the mnemonic phrase you have been using throughout the course, we will be extracting keys and addresses from it.
 
 * Ensure that an ETH address from this mnemonic is prefunded in your custom chain.
 
@@ -51,7 +50,7 @@ By the end of the unit, students will be able to:
 
 Open the slides, cover the agenda for the day, then navigate to the beginning of the slideshow.
 
-Welcome students back refresh a bit on some blockchain architecture.
+Welcome students to today's class. Cover the agenda slides and then provide a blockchain architecture refresher.
 
 Ask the students the following questions:
 
@@ -75,7 +74,9 @@ Ask the class:
 
   **Answer**: web3.py
 
-Time to get excited, let's dive into working with Web3.
+Wrap up the welcome with some encouraging or engaging language:
+
+> Time to get excited! Let's dive into working with Web3!
 
 ### 2. Instructor Do: Intro to Web3.py (5 min)
 
@@ -94,11 +95,9 @@ Continue through the slides, introducing the concept of "Web 3.0" and the Python
 
 * Now with Web 3.0, we refer less to the user experience, but to the infrastructure of the internet.
 
-* In the current model, servers are highly centralized, websites can go down,
-  and archiving information is a difficult task. For example, we all know how hard Wikipedia works to get you to donate.
+* In the current model, servers are highly centralized, websites can go down, and archiving information is a difficult task. For example, we all know how hard Wikipedia works to get you to donate.
 
-* With the emergence of blockchains and other distributed technologies, we can build
-  the Web 3.0 -- a decentralized web where sites like Wikipedia wouldn't struggle since we'd just store a local copy ourselves.
+* With the emergence of blockchains and other distributed technologies, we can build the Web 3.0 -- a decentralized web where sites like Wikipedia wouldn't struggle since we'd just store a local copy ourselves.
 
 ![web3.py](Images/web3.py.png)
 
@@ -114,9 +113,11 @@ Students will now activate their local custom chains they build last unit.
 
 Provide a checklist for the students with the commands necessary to start the chain, as well as a backup chain for students to use if something went wrong with theirs.
 
+Circulate around with the TAs to ensure that everyone is able to start their networks. If any student cannot complete this, ask them to pair with a neighboor until they can troubleshoot their system during a break.
+
 **Instructions:**
 
-* [README.md](Activities/03-Stu_Activate_Network/README.md)
+* [README.md](Activities/01-Stu_Activate_Network/README.md)
 
 **Files:**
 
@@ -203,9 +204,9 @@ Ask the students:
 
 ### 5. Everyone Do: Importing Private Keys into Web3.py (15 min)
 
-Now it's time to import the private key of this address into Web3.py.
+Explain that it's now time to import the private key of this address into Web3.py.
 
-First, let's extract the private key from the mnemonic phrases we've been using.
+Show students how to extract the private key from the mnemonic phrases we've been using.
 
 Open up MyCrypto, import the mnemonic, and select the first address:
 
@@ -293,7 +294,7 @@ Install `python-dotenv`:
 pip install python-dotenv
 ```
 
-Then, at the top of our [file](Activities/05-Ins_Importing_Private_Keys/Solved/main.py), we can auto-import the environment variables:
+Then, at the top of our [file](Activities/02-Ins_Importing_Private_Keys/Solved/main.py), we can auto-import the environment variables:
 
 ```python
 import os
@@ -401,7 +402,7 @@ Now we will start the process of importing keys and sending transactions with Py
 
 **Files:**
 
-* [main.py](Activities/11-Ins_Sending_Txns/Solved/main.py)
+* [main.py](Activities/03-Ins_Sending_Txns/Solved/main.py)
 
 Continue in the `main.py` you've been working in.
 
@@ -518,8 +519,7 @@ def create_raw_tx(account, recipient, amount):
   return {}
 ```
 
-* Explain that the `w3.eth.estimateGas` function takes the raw transaction parameters and estimates the price you will pay in fees.
-  We can customize the algorithm used to estimate the fees later.
+* Explain that the `w3.eth.estimateGas` function takes the raw transaction parameters and estimates the price you will pay in fees. We can customize the algorithm used to estimate the fees later.
 
 Add the following fields to the object in the `return` clause:
 
@@ -629,7 +629,7 @@ We'll need to import the key in a different way.
 
 **Files:**
 
-* [main.py](Activities/13-Ins_Importing_Keystore/Solved/main.py)
+* [main.py](Activities/04-Ins_Importing_Keystore/Solved/main.py)
 
 Continue using the keystore that you created earlier in class.
 
@@ -751,7 +751,7 @@ Now, challenge the students to use this program that they've written to send a t
 
 **Files:**
 
-* [main.py](Activities/14-Stu_Sending_Txns_Back/Solved/main.py)
+* [main.py](Activities/05-Stu_Sending_Txns_Back/Solved/main.py)
 
 Given the code we've written so far (provided above), this function should be all that is necessary to get the job done:
 
@@ -793,7 +793,7 @@ Send out the following instructions to have the students extract a Bitcoin testn
 
 **Files:**
 
-* [Acquiring Test Bitcoins](Activities/16-Ins_Recap/README.md)
+* [Acquiring Test Bitcoins](Activities/06-Ins_Recap/README.md)
 
 Since it takes time for transactions to mine, we are having the students request the testnet coins early,
 allowing time in between class for troubleshooting in case students have difficulties.
