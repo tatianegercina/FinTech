@@ -230,7 +230,7 @@ They should all have empty balances, as we are generating mainnet Bitcoin keys, 
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_BIP32_Derivation/README.md)
+* [README.md](Activities/01-Stu_BIP32_Derivation/README.md)
 
 Have the TAs circulate and ensure that students are deriving the proper BIP32 keys.
 
@@ -324,7 +324,7 @@ Now it's time for the students to derive multiple coins from their mnemonics.
 
 **Instructions:**
 
-* [README.md](Activities/09-Stu_BIP44_Derivation/README.md)
+* [README.md](Activities/02-Stu_BIP44_Derivation/README.md)
 
 Have the TAs circulate and ensure that students are generating BTC testnet and Ethereum keys, and that they match those that they used previously in the course.
 
@@ -693,7 +693,7 @@ and software/hardware implementations.
 
 **Instructions:**
 
-* [README.md](Activities/18-Stu_If_I_Were_Exchange/README.md)
+* [README.md](Activities/04-Stu_If_I_Were_Exchange/README.md)
 
 Have TAs circulate and ask questions about the students exchange designs, including what type of wallets they'd use
 and how they manage the funds.
