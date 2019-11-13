@@ -144,11 +144,11 @@ But first, send out the instructions too all students and have the students prep
 
 **Instructions:**
 
-* [README.md](Activities/03-Stu_Wallet_Check/README.md)
+* [README.md](Activities/01-Stu_Wallet_Check/README.md)
 
 **Files:**
 
-* [multi-output-tesnet-tx.py](Activities/03-Stu_Wallet_Check/Solved/multi-output-testnet-tx.py)
+* [multi-output-tesnet-tx.py](Activities/01-Stu_Wallet_Check/Solved/multi-output-testnet-tx.py)
 
 Once the students have prepared their testnet address and private keys, we can move on.
 
@@ -237,7 +237,7 @@ They will pick apart the individual details of the transactions, including the U
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Visualizing_UTXOs/README.md)
+* [README.md](Activities/02-Stu_Visualizing_UTXOs/README.md)
 
 ### 6. Instructor Do: Review UTXOs (10 min)
 
@@ -363,7 +363,7 @@ Now it's time to demonstrate how a multi-output transaction is built.
 
 **Files:**
 
-* [Multi-Output Transaction](Activities/12-Ins_Multi_Output_Tx/Solved/multi-output-testnet-tx.py)
+* [Multi-Output Transaction](Activities/03-Ins_Multi_Output_Tx/Solved/multi-output-testnet-tx.py)
 
 First, ask a couple of students to volunteer their addresses (who haven't already been sent to you).
 
@@ -431,11 +431,11 @@ In this activity, students will write their own Python program that will send a 
 
 **Instructions:**
 
-* [README.md](Activities/13-Stu_Multi_Output_Tx/README.md)
+* [README.md](Activities/04-Stu_Multi_Output_Tx/README.md)
 
 **Files:**
 
-* [multi-output-testnet.tx](Activities/13-Stu_Multi_Output_Tx/Unsolved/multi-output-testnet-tx.py)
+* [multi-output-testnet.tx](Activities/04-Stu_Multi_Output_Tx/Unsolved/multi-output-testnet-tx.py)
 
 Have TAs circulate and ensure that students are not stuck.
 
@@ -548,7 +548,7 @@ Now, the students will practice using the functions you just demonstrated.
 
 **Instructions:**
 
-* [README.md](Activities/16-Stu_Fetching_Network_Data/README.md)
+* [README.md](Activities/05-Stu_Fetching_Network_Data/README.md)
 
 Have TAs circulate and ensure that students are not stuck and can fetch balances, transaction history, and UTXOs.
 
