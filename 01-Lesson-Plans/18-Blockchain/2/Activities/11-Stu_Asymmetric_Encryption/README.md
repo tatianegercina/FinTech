@@ -4,7 +4,7 @@ In this activity, you'll be sending encrypted messages the real way, by using pu
 
 ## Instructions
 
-Get together with a partner that you will be sending messages with, and do the following:
+Get together with a partner that you will be sending messages with and do the following:
 
 * Navigate to the ["Box" feature](https://tweetnacl.js.org/#/box) of the TweetNaCl.js demo.
 

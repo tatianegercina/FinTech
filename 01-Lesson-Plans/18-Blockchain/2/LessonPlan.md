@@ -60,11 +60,11 @@ Ask the students to refresh their definitions:
 
 * What is a hash?
 
- **Answer**: A one-way function that produces a digital fingerprint of data.
+    **Answer**: A one-way function that produces a digital fingerprint of data.
 
 * What is a wallet?
 
- **Answer**: A set of "keys" to your funds that are on the blockchain.
+    **Answer**: A set of "keys" to your funds that are on the blockchain.
 
 Explain that today, we will be learning the techniques that make these things possible.
 
@@ -94,7 +94,7 @@ Answer any questions before moving on.
 
 ### 2. Students Do: Cryptography Use Cases (15 min)
 
-In this activity, students will be researching some applications of cryptography in the wild.
+In this activity, students will be researching in groups some applications of cryptography in the wild.
 
 Explain to the students that getting good at this type of research is key to succeeding in an emerging field like the blockchain industry.
 
@@ -668,7 +668,7 @@ Click `Mine` in the first block to change it green and to regenerate the hashes:
 
 * Point out that we still need to mine, or "calculate" each block going forward again, one at a time, chronologically to completely rebuild the chain.
 
-Comment to students, that we will learn more about how mining works next class, but you can think of it as rebuilding the block.
+Explain to students that we will learn more about how mining works next class, but you can think of it as rebuilding the block.
 
 Click on `Mine` in the second and third blocks to demonstrate.
 
