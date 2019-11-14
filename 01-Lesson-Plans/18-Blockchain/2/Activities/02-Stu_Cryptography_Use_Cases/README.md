@@ -4,21 +4,23 @@ In this activity, you will be researching different use cases of cryptography, a
 
 ## Instructions
 
-Create groups up to three people, and research, define and discuss the following terms. Write down your definitions and conclusion to share with the class.:
+With groups up to three people in size, research and discuss the following:
 
-* Cryptography
+* What is Cryptography?
 
-* Digital Signature
+* What is a Digital Signature?
 
-* Encryption
+* What is Encryption?
 
-* PGP
+* What is PGP (Pretty Good Privacy)?
 
-Now, think about how you may have used cryptography in your life.
+Talk with your partners about how you may have used cryptography in your life.
 
-* What types of services were these for?
+* Why types of services use cryptography?
 
 * Would you trust these services without the use of cryptography?
+
+Write down your answers to the above questions and be prepared to share them with the class.
 
 ---
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

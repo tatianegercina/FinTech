@@ -10,7 +10,7 @@ Using the [starter file](Unsolved/hashing.py), complete the following steps:
 
 2. Print both messages and their corresponding hashes.
 
-3. Compare the two hashes in an `if/else` statement. The output should be `true` since they are the same message.
+3. Compare the two hashes in an `if/else` statement. The output should be `True` since they are the same message.
 
 4. Compare the length of the hashes. What do you notice?
 
