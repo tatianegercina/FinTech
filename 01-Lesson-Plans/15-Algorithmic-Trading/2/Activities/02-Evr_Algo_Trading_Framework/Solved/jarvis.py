@@ -140,13 +140,13 @@ def evaluate_metrics(signals_df):
 
     # Calculate annualized return
     portfolio_evaluation_df.loc["Annual Return"] = (
-        1 + signals_df["Portfolio Daily Returns"].mean()
-    ) ** 252 - 1
+        signals_df["Portfolio Daily Returns"].mean() * 252
+    )
 
     # Calculate annual volatility
     portfolio_evaluation_df.loc["Annual Volatility"] = (
-        1 + signals_df["Portfolio Daily Returns"].std()
-    ) ** 252 - 1
+        1 + signals_df["Portfolio Daily Returns"].std() * 252
+    )
 
     # Calculate Sharpe Ratio
     portfolio_evaluation_df.loc["Sharpe Ratio"] = (
