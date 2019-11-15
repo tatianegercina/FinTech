@@ -58,15 +58,15 @@ Continue by refreshing students a bit on the data structure of a blockchain. Ask
 
 * What does the "chain" in blockchain refer to?
 
- **Answer** The chain of hashes that link each block to the previous.
+  **Answer** The chain of hashes that link each block to the previous.
 
 * What is a digital signature?
 
- **Answer** A message that you can validate the integrity and authenticity of cryptographically.
+  **Answer** A message that you can validate the integrity and authenticity of cryptographically.
 
 * What is a node?
 
- **Answer** A node is a participant in the network that maintains a full copy of the blockchain.
+  **Answer** A node is a participant in the network that maintains a full copy of the blockchain.
 
 Explain to the students that today they will be building a real, functioning blockchain from scratch, so get excited!
 
@@ -82,15 +82,17 @@ Open the lesson slides and move to the "Consensus Algorithms" section, recall to
 
 * How would you know if somebody was lying in the network? This is a consensus problem.
 
- **Answer**: TBD with Alec!
+  **Answer**: Since there are many copies of the chain, it is easy to verify with another node.
+
+  **Answer**: In reality, there are also digital signatures that would enforce the integrity
 
 * Do any blockchain enthusiasts know what this problem is called?
 
- **Answer**: Byzantine General's problem!
+  **Answer**: Byzantine General's problem!
 
 Play the following video for the class to explain the problem:
 
-* [Byzantine General's Problem](https://www.youtube.com/watch?v=_MwqAaVweJ8)
+* [Byzantine General's Problem](https://youtu.be/dfsRQyYXOsQ)
 
 Explain to students that **consensus algorithms** are how we solve this problem.
 
@@ -98,11 +100,11 @@ Like most things in blockchain, they are simple words that get complicated fast,
 
 * Can someone define consensus for us?
 
- **Answer**: "Coming to agreement." In a blockchain, we mean agreeing on what block in the chain is going to come next.
+  **Answer**: "Coming to agreement." In a blockchain, we mean agreeing on what block in the chain is going to come next.
 
 * What about consensus algorithms?
 
- **Answer**: In blockchain, we mean the math that decides what block in the chain will come next.
+  **Answer**: In blockchain, we mean the math that decides what block in the chain will come next.
 
 Explain to the students that:
 
@@ -190,31 +192,31 @@ Ask the students the following questions:
 
 * What is the biggest strength of:
 
- * Proof of Work
+  * Proof of Work
 
- **Answer**: Most secure, most decentralized.
+    **Answer**: Most secure, most decentralized.
 
- * Proof of Stake
+  * Proof of Stake
 
- **Answer**: Similar security as PoW without the electricity cost.
+    **Answer**: Similar security as PoW without the electricity cost.
 
- * Proof of Authority
+  * Proof of Authority
 
- **Answer**: Fastest, great for testing and development.
+    **Answer**: Fastest, great for testing and development.
 
 * What is the biggest weakness of:
 
- * Proof of Work
+  * Proof of Work
 
- **Answer**: High energy/computational cost.
+    **Answer**: High energy/computational cost.
 
- * Proof of Stake
+  * Proof of Stake
 
- **Answer**: "Nothing at Stake," potential wealth distribution issues, incentive structure can be taken advantage of.
+    **Answer**: "Nothing at Stake," potential wealth distribution issues, incentive structure can be taken advantage of.
 
- * Proof of Authority
+  * Proof of Authority
 
- **Answer**: Highly centralized, least secure.
+    **Answer**: Highly centralized, least secure.
 
 Congratulate the class on learning some of the most important and fundamental algorithms that blockchains are using today. Now, we can take this knowledge and start to build our blockchain.
 
@@ -333,15 +335,15 @@ Conduct a facilitated discussion by asking the students the following questions:
 
 * What is important about the genesis block?
 
- **Answer**: It contains the initial rules for the blockchain network, like consensus algorithm, pre-funded accounts, etc.
+  **Answer**: It contains the initial rules for the blockchain network, like consensus algorithm, pre-funded accounts, etc.
 
 * What is the point of pre-funding accounts in the genesis block?
 
- **Answer**: So that we have some crypto to test with right away; otherwise, we'll have to mine it manually (time-consuming).
+  **Answer**: So that we have some crypto to test with right away; otherwise, we'll have to mine it manually (time-consuming).
 
 * Since we chose **Proof of Work**, what mechanism are we using to create new blocks?
 
- **Answer**: Mining
+  **Answer**: Mining
 
 Answer any questions before moving on.
 
