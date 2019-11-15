@@ -26,6 +26,8 @@ By the end of the unit, students will be able to:
 
 ### Instructor Notes
 
+* **Important Note:** For this week's activities, Windows users **MUST** use `git-bash` and not the default command prompt in Windows!
+
 * Before class, make sure to follow the `geth` [install instructions](https://github.com/ethereum/go-ethereum/wiki/Installing-Geth) and ensure that the tool is functioning in your computer.
 
 * Have an address/wallet ready to populate as a pre-funded account. You can generate a new one with MyCrypto, or use the same wallet from Day 1.
