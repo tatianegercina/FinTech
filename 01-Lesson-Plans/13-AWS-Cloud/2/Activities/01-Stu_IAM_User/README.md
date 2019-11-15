@@ -1,6 +1,6 @@
 # Creating Your First IAM Admin User and Group
 
-As a [best practice][1], you should not use your AWS account root user for any task where it's not required. Instead, it's better to create a new IAM user for each person that requires administrator access.
+As a [best practice][1], you should not use your AWS account root user for any task where it is not required. Instead, it is better to create a new IAM user for each person that requires administrator access.
 
 To view the tasks that require you to sign in as the root user, see [AWS Tasks that Require Account Root User][2].
 
@@ -35,11 +35,11 @@ Open the [AWS Management Console](https://console.aws.amazon.com) using your _ro
 
   ![Create an administrator IAM user - Step 5](Images/iam-user-5.png)
 
-* In the policy list, select the check box for _AdministratorAccess_. Then choose the _Create group_ button.
+* In the policy list, select the checkbox for _AdministratorAccess_. Then choose the _Create group_ button.
 
   ![Create an administrator IAM user - Step 6](Images/iam-user-6.png)
 
-* After creating the group, select the check box for your new group. Choose Refresh if necessary to see the group in the list.
+* After creating the group, select the checkbox for your new group. Choose Refresh if necessary to see the group on the list.
 
   ![Create an administrator IAM user - Step 7](Images/iam-user-7.png)
 
@@ -67,7 +67,7 @@ Enable access to billing data for the IAM admin user as follows:
 
   ![Create an administrator IAM user - Step 12](Images/iam-user-12.png)
 
-* Select the check box to _Activate IAM Access_ and choose _Update_.
+* Select the checkbox to _Activate IAM Access_ and choose _Update_.
 
   ![Create an administrator IAM user - Step 13](Images/iam-user-13.png)
 
@@ -75,7 +75,7 @@ Sign-out from your session, open the `CSV` file with the new `administrator` use
 
 Congratulations! You have created your own admin user.
 
-You can use this same process to create more groups and users and to give your users access to your AWS account resources. To learn about using policies that restrict user permissions to specific AWS resources, see [Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html) and [Example IAM Identity-Based Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_examples.html). To add additional users to the group after it's created, see [Adding and Removing Users in an IAM Group](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups_manage_add-remove-users.html).
+You can use this same process to create more groups and users and to give your users access to your AWS account resources. To learn about using policies that restrict user permissions to specific AWS resources, see [Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html) and [Example IAM Identity-Based Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_examples.html). To add additional users to the group after it is created, see [Adding and Removing Users in an IAM Group](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups_manage_add-remove-users.html).
 
 [1]: https://docs.aws.amazon.com/best-practices.html#lock-away-credentials
 [2]: https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html

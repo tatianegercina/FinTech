@@ -22,6 +22,11 @@ By the end of today's class, students will be able to:
 
 * The TAs should be ready to help explain and break down concepts for students struggling to grasp the material.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [7.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b512f6ac-ee8f-441e-8f26-aac6015c140c) Note that this video may not reflect the most recent lesson plan.
+
+---
+
 ### Class Slides and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1PNx_qkrRTq-5wmpMXD5DeHXbfaGs5ogLdPa2Ee9GqmQ/edit?usp=sharing).
@@ -96,13 +101,13 @@ Open [pets.csv](Activities/02-Stu_Data_Normalization/Resources/pets.csv) and exp
 
 * The final product will look like [pets_cleaned.csv](Activities/02-Stu_Data_Normalization/Resources/pets_cleaned.csv).
 
-Next, open [schema.sql](Activities/02-Stu_Data_Normalization/Solved/schema.sql) in pgAdmin. Walk through the code and explain the following:
+Next, open [schema.sql](Activities/02-Stu_Data_Normalization/Solved/schema.sql) in pgAdmin. Walkthrough the code and explain the following:
 
 * Second normal form requires the data to be in first normal form, which was accomplished in the previous step.
 
 * All non-ID columns are dependent on the primary key.
 
-* The `owners` table will include each owner name once, which is dependent on the primary key for the table.
+* The `owners` table will include each owner's name once, which is dependent on the primary key for the table.
 
 * Next, a `pet_names` table is created, with each pet given a name and two IDs: one unique `id` for the pet itself and an `owner_id` that will link each pet to its correct owner.
 
@@ -126,7 +131,7 @@ In this activity, students will be introduced to the concept of foreign keys -- 
 
 Use the slides on foreign keys to explain the concept of foreign keys and how they are used to connect tables:
 
-* A foreign key is a link between tables. The foreign key in the first table points to, or is linked to, the primary key in a second table.
+* A foreign key is a link between tables. The foreign key in the first table points to or is linked to, the primary key in a second table.
 
 * A foreign key also prevents invalid data from being entered into a column. The data being entered MUST be a value from the referenced column.
 
@@ -279,9 +284,19 @@ Open `schema.sql` in pgAdmin and walk through the code, explaining the following
 
 * Data is inserted into the `customer_phone` table. Like the `customer_email` table, the `customer_id` is a foreign key that references the `id` of the `customer` table.
 
-* To test if we have the correct foreign keys, we can attempt to insert a value with an `id` of 10. This returns an error because that `id` does not exist in the `customer` table.
+* To test if we have the correct foreign keys, we can attempt to insert a value with an `id` of 10. Uncomment the code:
 
-* Finally, all tables can be joined together by their respective IDs.
+  ```sql
+  -- INSERT INTO customer_phone(customer_id, phone)
+  -- VALUES
+    -- (10, '555-444-3333');
+  ```
+
+* Then run the `INSERT` statement. Explain:
+
+  * This returns an error because that `id` does not exist in the `customer` table.
+
+* Finally explain that all tables can be joined together by their respective IDs.
 
 ### 8. Instructor Do: Intro to Data Relationships (10 min)
 
@@ -570,7 +585,7 @@ In this activity, students will read data into a Pandas DataFrame from a Postgre
 
 * [schema.sql](Activities/08-Stu_Feeding_Pandas_SQL/Solved/schema.sql)
 
-Walk through the solution and highlight the following:
+Walkthrough the solution and highlight the following:
 
 * In order to create the connection to the PostgreSQL database, the `create_engine` function is imported from `sqlalchemy`.
 
@@ -808,11 +823,11 @@ Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams
 
 * A conceptual diagram has only basic information, such as the names of the tables and their attributes.
 
-* Creating a diagram looks similar to writing code. For example, in the following image, `Gym` followed by the hyphen creates the table name within the diagram.
+* Creating a diagram looks similar to writing code. For example, in the following image, `Gym` followed by the hyphen, creates the table name within the diagram.
 
   ![gym.png](Images/gym.png)
 
-* Transitioning a conceptual diagram to a logical diagram requires more information. Data types are defined and primary keys are established by adding ID rows to the tables, such as in the `Trainers` table:
+* Transitioning a conceptual diagram to a logical diagram requires more information. Data types are defined, and primary keys are established by adding ID rows to the tables, such as in the `Trainers` table:
 
   ![trainers.png](Images/trainers.png)
 

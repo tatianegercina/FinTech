@@ -1,27 +1,32 @@
 # Build a Blockchain Online
 
-In this activity, you will be building a blockchain with fundamental data structures and cryptography
-you've just learned.
+In this activity, you will be building a blockchain with fundamental data structures and cryptography you've just learned.
 
 ## Instructions
 
-1. Navigate to the [Anders Blockchain Demo](https://anders.com/blockchain/blockchain.html).
+* Navigate to the [Anders Blockchain Demo](https://anders.com/blockchain/blockchain).
 
-2. Type some data into a block:
+* Type some data into a block:
 
-![data](Images/blockchain-data.png)
+  ![data](Images/blockchain-data.png)
 
-1. Notice that the chain is now "broken" from that point onward.
-   Click `Mine` on the block you modified. This should regenerate the block's hashes and allow you to move on.
+* Notice that the chain is now "broken" from that point onward.
 
-![mining](Images/blockchain-mining.png)
+* Click `Mine` on the block you modified. This should regenerate the block's hashes and allow you to move on.
 
-1. Mine the rest of the chain to rebuild it.
+  ![mining](Images/blockchain-mining.png)
 
-2. Now, modify a block that is further in the chain, like block 3.
+* Mine the rest of the chain to rebuild it.
 
-Answer some questions to yourself:
+* Now, modify a block that is further in the chain, like block 3.
+
+* Answer some questions to yourself:
 
   * Do you have to mine the chain before block 3 again?
 
   * What happens if you were to mine block 5, then 4? Try it out.
+
+  ![mining gif](Images/blockchain-mining.gif)
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

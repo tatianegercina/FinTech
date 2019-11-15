@@ -35,9 +35,6 @@ gradebook.db
 # Idea
 .idea
 
-# Editor
-.vscode
-
 # PySpark
 metastore/
 metastore_db/
