@@ -60,7 +60,7 @@ Open the [AWS Free Tier Supplemental](../Supplemental/AWS-Free-Tier.md) and brie
 | Amazon SageMaker (Free Trial)                                                    | Amazon Lex (12 Months Free)       | AWS Lambda (Always Free)                              | Amazon S3 (12 Months Free) |
 | -------------------------------------------------------------------------------- | --------------------------------- | ----------------------------------------------------- | -------------------------- |
 | `250` hours per month of `t2.medium` notebook usage for the first **two months** | `10,000` text requests per month  | `1,000,000` free requests per month                   | `5` GB of Standard Storage |
-| `50` hours per month of `m4.xlarge` for training for the first **two months**    | `5,000` speech requests per month | Up to `3.2` million seconds of computing time per month | `20,000` Get Requests      |
+| `50` hours per month of `m4.xlarge` for training for the first **two months**    | `5,000` speech requests per month | Up to `3.2` million seconds of compute time per month | `20,000` Get Requests      |
 | `125` hours per month of `m4.xlarge` for hosting for the first **two months**    |                                   |                                                       | `2,000` Put Requests       |
 
 Answer any questions before moving on.
