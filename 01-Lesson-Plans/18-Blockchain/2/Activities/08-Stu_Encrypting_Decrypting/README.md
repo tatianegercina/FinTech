@@ -1,6 +1,6 @@
 # Encrypting and Decrypting Messages
 
-Pick a partner to encrypt and decrypt some messages with.
+Pick a partner to encrypt and decrypt some messages using the Secretbox tool.
 
 ## Instructions
 
@@ -8,17 +8,17 @@ Pick a partner to encrypt and decrypt some messages with.
 
 * Generate a key by clicking `Random` in the `Key` field:
 
-* ![symmetric key](Images/symmetric-key.png)
+![symmetric key](Images/symmetric-key.png)
 
 * Generate a "nonce" (number used once):
 
-* ![nonce](Images/symmetric-nonce.png)
+![nonce](Images/symmetric-nonce.png)
 
 * Type a secret message that you will send to your partner:
 
-* ![super secret](Images/symmetric-message.png)
+![super secret](Images/symmetric-message.png)
 
-* Copy and send the following fields to your partner:
+* Copy and send the following fields to your partner via Slack:
 
   * Key
 
@@ -31,3 +31,6 @@ Pick a partner to encrypt and decrypt some messages with.
 * Try to decrypt your partner's message by filling in each value to their corresponding field.
 
 * Verify with your partner that you see each other's messages correctly decrypted on each other's computers.
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

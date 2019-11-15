@@ -2,9 +2,9 @@
 
 ![deep-learning.jpg](Images/deep-learning.jpg)
 
-Due to the volatility of cryptocurrency speculation, investors will often try to incorporate sentiment from social media and news articles to help guide their trading strategies. One such indicator is the [Crypto Fear and Greed Index](https://alternative.me/crypto/fear-and-greed-index/) which attempts to use a variety of data sources to produce a daily FNG value for cryptocurrency. You have been asked to help build and evaluate deep learning models using both the FNG values and simple closing prices to determine if the FNG indicator provides a better signal for cryptocurrencies than the normal closing price data.
+Due to the volatility of cryptocurrency speculation, investors will often try to incorporate sentiment from social media and news articles to help guide their trading strategies. One such indicator is the [Crypto Fear and Greed Index (FNG)](https://alternative.me/crypto/fear-and-greed-index/) which attempts to use a variety of data sources to produce a daily FNG value for cryptocurrency. You have been asked to help build and evaluate deep learning models using both the FNG values and simple closing prices to determine if the FNG indicator provides a better signal for cryptocurrencies than the normal closing price data.
 
-In this assignment, you will use deep learning recurrant neural networks to model Bitcoin closing prices. One model will use the FNG indicators to predict the closing price while the second model will use a window of closing prices to predict the nth closing price.
+In this assignment, you will use deep learning recurrent neural networks to model bitcoin closing prices. One model will use the FNG indicators to predict the closing price while the second model will use a window of closing prices to predict the nth closing price.
 
 You will need to:
 
@@ -26,7 +26,7 @@ You will need to:
 
 ### Prepare the data for training and testing
 
-Use the starter code as a guide to create a Jupyter notebook for each RNN. The starter code contains a function to help window the data for each dataset.
+Use the starter code as a guide to create a Jupyter Notebook for each RNN. The starter code contains a function to help window the data for each dataset.
 
 For the Fear and Greed model, you will use the FNG values to try and predict the closing price. A function is provided in the notebook to help with this.
 
@@ -40,9 +40,9 @@ Finally, reshape the X_train and X_test values to fit the model's requirement of
 
 ### Build and train custom LSTM RNNs
 
-In each Jupyter notebook, create the same custom LSTM RNN architecture. In one notebook, you will fit the data using the FNG values. In the second notebook, you will fit the data using only closing prices.
+In each Jupyter Notebook, create the same custom LSTM RNN architecture. In one notebook, you will fit the data using the FNG values. In the second notebook, you will fit the data using only closing prices.
 
-Use the same parameters and training steps for each model. This is necessary to accurately compare each model.
+Use the same parameters and training steps for each model. This is necessary to compare each model accurately.
 
 ### Evaluate the performance of each model
 
@@ -78,11 +78,11 @@ For training, use at least 10 estimators for both models.
 
 ### Submission
 
-* Create Jupyter Notebooks for the homework and host the notebooks on Github.
+* Create Jupyter Notebooks for the homework and host the notebooks on GitHub.
 
-* Include a Markdown that summarizes your homework and include this report in your Github repository.
+* Include a Markdown that summarizes your homework and include this report in your GitHub repository.
 
-* Submit the link to your Github project to Bootcampspot.
+* Submit the link to your GitHub project to Bootcamp Spot.
 
 - - -
 

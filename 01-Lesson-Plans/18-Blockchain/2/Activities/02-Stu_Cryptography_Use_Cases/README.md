@@ -1,22 +1,26 @@
 # Cryptography Use Cases
 
-In this activity, you will be researching different use cases of cryptography, and relating them to how you may have
-used cryptography before.
+In this activity, you will be researching different use cases of cryptography, and relating them to how you may have used cryptography before.
 
 ## Instructions
 
-Research and define the following terms:
+With groups up to three people in size, research and discuss the following:
 
-1. Cryptography
+* What is Cryptography?
 
-2. Digital Signature
+* What is a Digital Signature?
 
-3. Encryption
+* What is Encryption?
 
-4. PGP
+* What is PGP (Pretty Good Privacy)?
 
-Now, think about how you may have used cryptography in your life.
+Talk with your partners about how you may have used cryptography in your life.
 
-* What types of services were these for?
+* Why types of services use cryptography?
 
 * Would you trust these services without the use of cryptography?
+
+Write down your answers to the above questions and be prepared to share them with the class.
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

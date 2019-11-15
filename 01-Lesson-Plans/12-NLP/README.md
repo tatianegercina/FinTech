@@ -1,4 +1,4 @@
-## Unit 12 - Natural Language Processing
+## Unit 12—Natural Language Processing
 
 ### Lesson Plans
 

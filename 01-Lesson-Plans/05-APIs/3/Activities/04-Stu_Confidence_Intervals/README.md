@@ -1,8 +1,8 @@
-# Free Throw Simulation
+# Archery Target Hits
 
-In this activity, a coach wants to assess the long-term performance of one of his players when it comes to free throws. The player has a free throw accuracy of approximately `70%` and therefore makes on average `7` free throws for every `10` shots. The coach wants to know the likelihood of the player making `9-10` free throws in a single session.
+In this activity, a beginner archer has a shot accuracy of approximately `20%` and therefore on average hits the target `1` time for every `5` shots. His archery master wants to assess the beginner archer's *long-term performance* of hitting the target, and therefore wants to simulate and predict the beginner archer's performance over many trials. Specifically, the archery master wants to know what the range of hit targets (out of `5` shots) the beginner archer is likely to make for a `95%` confidence interval. In other words, what is the range of targets that the beginner archer will hit out of `5` shots if he is `95%` certain of the outcome?
 
-Create a Monte Carlo simulation with `1000` simulations of `10` free throws to analyze the player's frequency distribution of made free throws and the corresponding probability distribution of made free throws to determine the likelihood of the player making `9-10` free throws in a session.
+Create a Monte Carlo simulation with `1000` simulations of `5` shots to analyze the beginner archer's frequency distribution and corresponding probability distribution of hit targets to determine the `95%` confidence interval of hit targets.
 
 ## Instructions
 
@@ -10,32 +10,34 @@ Create a Monte Carlo simulation with `1000` simulations of `10` free throws to a
 
   * Import libraries and dependencies
 
-  * Write a Monte Carlo simulation that loops through `10` free throws for every simulation of `1000` simulations and saves the results:
+  * Write a Monte Carlo simulation that loops through `5` shots for every simulation of `1000` simulations and saves the results:
 
-    * Set variables for the desired number of simulations and free throws.
+    * Set variables for the desired number of simulations and shots.
 
-    * Create a list `throw` consisting of the strings `made` and `missed`.
+    * Create a list `shot` consisting of the strings `hit` and `missed`.
 
     * Create an empty `pandas` DataFrame to hold the results of each simulation.
 
-    * Create a nested for loop to loop through `10` free throws for every simulation of `1000` simulations.
+    * Create a nested for loop to loop through `5` shots for every simulation of `1000` simulations.
 
-    * Use the `choice` function from the `random` class of the `numpy` library to randomly choose between the list elements `made` and `missed` of the `throw` list. Use the `p` parameter for the `choice` function to specify the probabilities of making a free throw and missing a free throw; set the `p` parameter to `[0.7, 0.3]`.
+    * Use the `choice` function from the `random` class of the `numpy` library to randomly choose between the list elements `hit` and `missed` of the `shot` list. Use the `p` parameter for the `choice` function to specify the probabilities of hitting a shot and missing a shot; set the `p` parameter to `[0.2, 0.8]`.
 
     * Append the results to the DataFrame, with each column set as the series of free throw results for every simulation.
 
-  * Loop through every column of the DataFrame and use the `value_counts` function to count the number of made free throws per simulation. Select only the values of the `made` key from the Series object that the `value_counts` function returns. Save results to another DataFrame.
+  * Loop through every column of the DataFrame and use the `value_counts` function to count the number of hit targets per simulation. Select only the values of the `hit` key from the Series object that the `value_counts` function returns. Save the results to another DataFrame.
 
-  * Create a frequency distribution histogram from the DataFrame of made free throws per simulation. Make sure to manually set the bin edges using the `bin` parameter.
+  * Create a frequency distribution histogram from the DataFrame of hit targets per simulation. Make sure to manually set the bin edges using the `bin` parameter.
 
-  * Create a probability distribution histrogram from the DataFrame of made free throws per simulation. Set the `density` parameter to `True`.
+  * Create a probability distribution histogram from the DataFrame of hit targets per simulation. Set the `density` parameter to `True`.
 
-  * Using the probability distribution histogram, assess the likelihood of the player making `9-10` free throws in a single session (results may vary with each run of the program).
+  * Use the `quantile` function and create a `95%` confidence interval range from the DataFrame of hit targets per simulation.
+
+  * Plot the upper and lower bounds of the `95%` confidence interval over the probability distribution histogram of hit targets.
 
 ## Hints
 
-* To learn more about histograms and probability distributions, read more [here](https://learnche.org/pid/univariate-review/histograms-and-probability-distributions).  
+* To learn more about confidence intervals, read more [here](https://www.khanacademy.org/math/ap-statistics/estimating-confidence-ap/introduction-confidence-intervals/a/interpreting-confidence-levels-and-confidence-intervals).
 
-
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

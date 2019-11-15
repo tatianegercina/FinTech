@@ -26,7 +26,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Slack out the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class.
+* Slack out the [IEXFinance Installation Guide](../Supplemental/IEXFinance_Installation_Guide.md) (again) and the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class.
 
 * This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created and accounts and received API keys prior to this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson so they have ample time to sign up. Students were instructed to sign up at the end of 5.1. There will be an activity dedicated to confirming that each student has signed up.
 
@@ -540,7 +540,7 @@ Explain that data can be extracted from Plaid using the `GET` function. The Plai
 
   ```python
   # Exchange public token for access token
-  exchange_response = client.Item.public_token.exchange(create_response['public_token'])
+  exchange_response = client.Item.public_token.exchange(create_tkn_response['public_token'])
   ```
 
   ![token_exchange.png](Images/token_exchange.png)
@@ -699,7 +699,7 @@ Students will just have completed a lengthy activity of installing and using the
 
 If a student or team of students were chosen to conduct a review, instruct them to perform a dry walk-through using the [solution](Activities/06-Stu_Sporting_Plaid_Pt_2/Solved/sporting_plaid.ipynb). Otherwise, use the [solution](Activities/06-Stu_Sporting_Plaid_Pt_2/Solved/sporting_plaid.ipynb) to complete the dry walk-through yourself.
 
-* The Plaid API functions offer a great way to submit requests without having to create and customize or concatenate request URLs.
+* The Plaid SDK functions offer a great way to submit requests without having to create and customize or concatenate request URLs.
 
 * Plaid has a Client object that is used to communicate with the Plaid servers. This object stores the **client id**, **secret**, and **public** keys, and it is used to execute each API request.
 

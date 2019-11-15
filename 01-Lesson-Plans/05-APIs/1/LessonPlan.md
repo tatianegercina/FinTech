@@ -32,6 +32,8 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
+* Slack out the [IEXFinance Installation Guide](../Supplemental/IEXFinance_Installation_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with iexfinance outside of class time.
+
 * This class will focus on the fundamentals of APIs and the process of submitting APIs. This class is a great opportunity for students to be impressed and inspired by FinTech. There are a number of fun and creative FinTech APIs, such as Quandl and World of Bank, that will be used to drive student engagement. This lesson is the perfect opportunity to get students excited about FinTech again!
 
 * The first half of the lesson will include instructor demonstrations of submitting requests to different FinTech APIs using Postman. Each demo should be focused on showcasing FinTech APIs and getting students excited about contributing to the wealth of APIs that are already out there. Make sure to create accounts for these APIs:
@@ -102,7 +104,7 @@ Navigate to the [Quandle API Overview](https://www.quandl.com/tools/api) page, a
 * Submit Quandl API to get AAPL's stock prices using an internet browser and the link below. Show students the data, and bring attention to the AAPL stock prices in the output.
 
   ```
-  https://www.quandl.com/api/v3/datasets/OPEC/ORB.json
+  https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=<instructor's API key>
   ```
 
   ![quandl_request_output.png](Images/quandl_request_output.png)
@@ -486,7 +488,7 @@ Demonstrate with live code how to use the Python `requests` library, and use the
 * JSON data has to be selected based off levels and hierarchies. For example, some JSON objects are organized by JSON object -> JSON array -> attribute. Some have multiple objects, and others have multiple JSON arrays. Either way, accessing JSON data is just like accessing data in a dictionary. Brackets `[]` are used with **keys** to retrieve values.
 
   ```python
-  # Select country and GDP value for first row
+  # Select country and GDP value for second row
   country = data[1][1]['country']['value']
   gdp_value = data[1][1]['value']
 

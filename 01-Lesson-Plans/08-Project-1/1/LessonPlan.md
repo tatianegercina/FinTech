@@ -18,6 +18,9 @@ Be sure to slack out the [Visual Introduction to Git](https://medium.com/@ashk3l
 
 * If possible, share the above links both _before_ today's class and again at the end of it.
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [8.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a2cb4f58-e796-4877-a52d-aad10153dca8) Note that this video may not reflect the most recent lesson plan.
+
 ### Class Slides and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1UUMgKSR6fKiP-32CQYOhLcSiJEIrq7P7yiYtKtySsHY/edit?usp=sharing
