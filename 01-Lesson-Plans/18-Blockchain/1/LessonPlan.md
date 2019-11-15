@@ -26,6 +26,8 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
+* **Important Note:** For this week's activities, Windows users **MUST** use `git-bash` and not the default command prompt in Windows!
+
 * Some students may already be involved with cryptocurrencies or other blockchain projects and may have some opinions already about particular blockchain implementations. Due to the niche nature of the field, they may have certain biases already.
 
 * Ethereum has the largest developer community in the blockchain space, learning it has high skill transferability.

@@ -32,6 +32,8 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
+* **Important Note:** For this week's activities, Windows users **MUST** use `git-bash` and not the default command prompt in Windows!
+
 * Today is a heavy cryptography day, it is advisable to refresh on symmetric vs. asymmetric (public key) cryptography, as well as digital signatures.
 
 * If students are having trouble connecting with the real-world examples, they will likely have a better understanding when sending encrypted messages to each other.
