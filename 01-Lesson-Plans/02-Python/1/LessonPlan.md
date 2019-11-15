@@ -1073,7 +1073,7 @@ Discuss the importance of using a problem-solving methodology when developing pr
 
 * Having a good approach to understanding problems will enable students to design complex applications and troubleshoot errors and bugs.
 
-Go over Polyga's techniques to problem solving, which are are straightforward and easy to remember. The steps are:
+Go over G Polya's techniques to problem solving, which are are straightforward and easy to remember. The steps are:
 
 1. Understand the problem: Gather as much information as possible pertaining to the problem being solved, inputs, desired outputs, and limitations.
 
