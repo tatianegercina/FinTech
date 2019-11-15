@@ -60,7 +60,7 @@ Open the [AWS Free Tier Supplemental](../Supplemental/AWS-Free-Tier.md) and brie
 | Amazon SageMaker (Free Trial)                                                    | Amazon Lex (12 Months Free)       | AWS Lambda (Always Free)                              | Amazon S3 (12 Months Free) |
 | -------------------------------------------------------------------------------- | --------------------------------- | ----------------------------------------------------- | -------------------------- |
 | `250` hours per month of `t2.medium` notebook usage for the first **two months** | `10,000` text requests per month  | `1,000,000` free requests per month                   | `5` GB of Standard Storage |
-| `50` hours per month of `m4.xlarge` for training for the first **two months**    | `5,000` speech requests per month | Up to `3.2` million seconds of compute time per month | `20,000` Get Requests      |
+| `50` hours per month of `m4.xlarge` for training for the first **two months**    | `5,000` speech requests per month | Up to `3.2` million seconds of computing time per month | `20,000` Get Requests      |
 | `125` hours per month of `m4.xlarge` for hosting for the first **two months**    |                                   |                                                       | `2,000` Put Requests       |
 
 Answer any questions before moving on.
@@ -172,7 +172,7 @@ In this activity, students will learn how to create an instance of Amazon SageMa
 
 Tell students that you will demo how to create an Amazon SageMaker notebook instance, and ask them to follow your steps as you move along the demo. Ask TAs to assist students if they get stuck along the process.
 
-Login into your AWS Management Console using your admin user. Tell students that the first component that Amazon SageMaker requires is an [Amazon S3](https://aws.amazon.com/s3) bucket to store data to feed machine-learning models or to store prediction results.
+Log into your AWS Management Console using your admin user. Tell students that the first component that Amazon SageMaker requires is an [Amazon S3](https://aws.amazon.com/s3) bucket to store data to feed machine-learning models or to store prediction results.
 
 To create an Amazon S3 bucket, follow the next steps:
 
@@ -209,7 +209,7 @@ Explain to students that the next step is to create a Jupyter Notebook instance 
 
   ![Creating an Amazon SageMaker instance - step 7](Images/sagemaker-7.png)
 
-* On the Amazon SageMaker console, be sure that `Oregon` is the selected region, on the left pane menu, under Notebook section choose Notebook instances.
+* On the Amazon SageMaker console, be sure that `Oregon` is the selected region, on the left pane menu, under the Notebook section, choose Notebook instances.
 
   ![Creating an Amazon SageMaker instance - step 8](Images/sagemaker-8.png)
 
@@ -225,7 +225,7 @@ Explain to students that the next step is to create a Jupyter Notebook instance 
     * Elastic Inference: `none`
     ![Creating an Amazon SageMaker instance - step 10](Images/sagemaker-10.png)
   * **Section: Permissions and encryption**
-    * IAM role: On the dropdown list select the `Create a new role` option.
+    * IAM role: On the dropdown list, select the `Create a new role` option.
     ![Creating an Amazon SageMaker instance - step 11](Images/sagemaker-11.png)
     * Under the S3 buckets you specify - optional section, choose Specific S3 buckets and type the name of the Amazon S3 bucket you created in the past section (e.g., `sagemaker-20190903-1026`), click on Create role to continue.
     ![Creating an Amazon SageMaker instance - step 12](Images/sagemaker-12.png)
@@ -236,7 +236,7 @@ Explain to students that the next step is to create a Jupyter Notebook instance 
 
   ![Creating an Amazon SageMaker instance - step 14](Images/sagemaker-14.png)
 
-While the notebook instance is being created, explain to students that AWS charges for these and most resources when they are created, even when not in use. This instance is billed for by the second until it's turned off and deleted. Students will learn how to delete these resources later in today's class.
+While the notebook instance is being created, explain to students that AWS charges for these and most resources when they are created, even when not in use. This instance is billed for by the seconds until it's turned off and deleted. Students will learn how to delete these resources later in today's class.
 
 * Once the notebook instance status is InService, it's ready to be used; in the Actions column, click on `Open JupyterLab` to continue.
 
@@ -616,10 +616,10 @@ This activity will require the use of an AWS SageMaker notebook instance. The un
 * Upload the solved notebook: [credit-risk-classification.ipynb](Activities/05-Stu_Credit_Risk_Classification/Solved/credit-risk-classification.ipynb).
 
 * Walk through the solved notebook, cell by cell, highlighting the following points:
-  * This activity is similar to the previous Housing Price Prediction; however, rather than `linear regression` we are calculating a `logistic regression` to perform a `binary classification`.
+  * This activity is similar to the previous Housing Price Prediction; however, rather than `linear regression`, we are calculating a `logistic regression` to perform a `binary classification`.
   * The output of the model prediction is a binary label (0, 1): "good" or "bad" credit risk.
   * Despite using a curated dataset, we still need to perform some data preparation tasks: split, hot-encode, and scale the input features.
-  * Similar to the housing price prediction, we use the AWS SageMaker built-in `linear-lerner` algorithm but change the hyper-parameter `predictor_type` to `binary_classifier`.
+  * Similar to the housing price prediction, we use the AWS SageMaker built-in `linear-learner` algorithm but change the hyper-parameter `predictor_type` to `binary_classifier`.
   * Unlike with housing price prediction, the predictions are in the `predicted_label` field in the prediction result.
   * For our model evaluation, besides the accuracy score, we use a confusion matrix to get a quick sense of the model's true-positive or negative and false-positive or negative prediction combinations.
 
@@ -649,7 +649,7 @@ Select the instance again on the left circular dot, click on Actions and select 
 
 * At the end of today's lesson, the notebook instances list should be empty and state: "There are currently no resources." Otherwise, charges will be incurred for any remaining active instances.
 
-Lastly, go to the Amazon S3 console, and remove the buckets created for the activity as follows.
+Lastly, go to the Amazon S3 console and remove the buckets created for the activity as follows.
 
 * Choose the checkbox next to the bucket name, next click on the Delete button.
 
@@ -671,7 +671,7 @@ Collaborate with TAs, on assisting students in deleting all the AWS resources th
 
 ![Downloading a Jupyter notebook](Images/download-notebook-sm.png)
 
-Answer any questions before finishing class.
+Answer any questions before finishing the class.
 
 ---
 
