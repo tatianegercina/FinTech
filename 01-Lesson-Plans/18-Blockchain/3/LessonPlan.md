@@ -2,12 +2,9 @@
 
 ### Overview
 
-Today's class will have the students actually build a real Ethereum-based blockchain using the `puppeth` tool bundled
-with `geth`, the official Ethereum node software.
+Today's class will have the students build a real Ethereum-based blockchain using the `puppeth` tool bundled with `geth`, the official Ethereum node software.
 
-The goal of this lesson is to build a Proof of Work based chain in class, to prepare the students for building
-a "Proof of Authority" based test network at home, as well as explain the differences in consensus algorithms and the
-tradeoffs that they balance.
+The goal of this lesson is to build a "Proof of Work" based chain in class, to prepare the students for building a "Proof of Authority" based test network at home, as well as explain the differences in consensus algorithms and the tradeoffs that they balance.
 
 ### Class Objectives
 
@@ -19,24 +16,21 @@ By the end of the unit, students will be able to:
 
 * Initialize `geth` nodes using a `genesis.json`.
 
-* Run and connect `geth` nodes together.
+* Run and connect `geth` nodes.
 
 * Build a blockchain network and produce blocks.
 
 * Send a transaction on their local network.
 
-- - -
+---
 
 ### Instructor Notes
 
-* Before class, make sure to follow the `geth` [install instructions](https://github.com/ethereum/go-ethereum/wiki/Installing-Geth)
-  and ensure that the tool is functioning.
+* Before class, make sure to follow the `geth` [install instructions](https://github.com/ethereum/go-ethereum/wiki/Installing-Geth) and ensure that the tool is functioning in your computer.
 
-* Have an address/wallet ready to populate as a pre-funded account. You can generate a new one with MyCrypto, or use the same wallet as before.
+* Have an address/wallet ready to populate as a pre-funded account. You can generate a new one with MyCrypto, or use the same wallet from Day 1.
 
-* Have a look at the [Proof of Stake](https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ) FAQ on the Ethereum wiki for a deep comparison between it and Proof of Work.
-
-- - -
+* Have a look at the [Proof of Stake](https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ) FAQ on the Ethereum wiki for an in-depth comparison between it and Proof of Work.
 
 ### Class Slides and Time Tracker
 
@@ -48,15 +42,19 @@ By the end of the unit, students will be able to:
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Open the slides, cover the agenda for the day, then navigate to the beginning of the slideshow.
+Welcome students to the third day of the introduction to the blockchain technology, open the lesson slides, and highlight that by the end of Today's class, we will do the following:
 
-Welcome students back refresh a bit on the data structure of a blockchain.
+* Build a blockchain from scratch!
 
-Ask the students the following questions:
+* Learn the differences between the various consensus algorithms available.
+
+* Make transactions in our very own blockchain.
+
+Continue by refreshing students a bit on the data structure of a blockchain. Ask the students the following questions:
 
 * What does the "chain" in blockchain refer to?
 
@@ -72,30 +70,37 @@ Ask the students the following questions:
 
 Explain to the students that today they will be building a real, functioning blockchain from scratch, so get excited!
 
-### 2. Instructor Do: Consensus Algorithms (15 min)
+Answer any questions before moving on.
 
-To get started building our blockchain, let’s think back to the people chain we built on the first day of class.
+---
 
-Have the students ponder:
+### 2. Instructor Do: Consensus Algorithms (10 min)
+
+In this activity, students will learn what consensus algorithms are and the differences between the available existing options.
+
+Open the lesson slides and move to the "Consensus Algorithms" section, recall to students the "people chain" we built in Day 1 and have students to ponder about the following:
 
 * How would you know if somebody was lying in the network? This is a consensus problem.
 
-Ask the students:
+  **Answer**: Since there are many copies of the chain, it is easy to verify with another node.
+
+  **Answer**: In reality, there are also digital signatures that would enforce the integrity
 
 * Do any blockchain enthusiasts know what this problem is called?
 
-  **Answer**: Byzantine general’s problem!
+  **Answer**: Byzantine General's problem!
 
 Play the following video for the class to explain the problem:
 
-* [Byzantine General's Problem](https://www.youtube.com/watch?v=_MwqAaVweJ8)
+* [Byzantine General's Problem](https://youtu.be/dfsRQyYXOsQ)
 
-Consensus algorithms are how we solve this problem. Like most things in blockchain,
-they are simple words that get complicated fast, so let’s start with some definitions.
+Explain to students that **consensus algorithms** are how we solve this problem.
+
+Like most things in blockchain, they are simple words that get complicated fast, so start with some definitions and aks students the following questions:
 
 * Can someone define consensus for us?
 
-  **Answer**: "Coming to agreement." In blockchain, we mean coming to agreement on what block in the chain is going to come next.
+  **Answer**: "Coming to agreement." In a blockchain, we mean agreeing on what block in the chain is going to come next.
 
 * What about consensus algorithms?
 
@@ -104,29 +109,20 @@ they are simple words that get complicated fast, so let’s start with some defi
 Explain to the students that:
 
 * In a decentralized system, you cannot trust the participants in the network.
-  It's a database that can be written to by anyone, which means special rules must be in place to prevent the database
-  from being modified in a malicious way.
 
-Break down the main purposes for a consensus algorithm:
+* A decentralized system is like a database that can be written to by anyone, which means special rules must be in place to prevent the database from being modified maliciously.
 
-* The main purpose of a consensus algorithm in blockchain is to get the entire network to agree on which block
-  gets added to the chain next.
+Explain to students that consensus algorithms help to add trust to the systems. Break down the primary purposes for a consensus algorithm:
 
-* A good consensus algorithm makes it so expensive to cheat, aka "roll back" the chain,
-  that you'd make more just playing the game by the rules and just adding to it (aka mining) instead.
+* The main purpose of a consensus algorithm in blockchain is to get the entire network to agree on which block gets added to the chain next.
 
-Explain that there are many consensus algorithms in development, but blockchain technology has reignited innovation in the
-distributed computing field, so we'll discuss the more popular algorithms relevant to blockchain.
+* A good consensus algorithm makes it so expensive to cheat, aka "roll back" the chain, that you'd make more just playing the game by the rules and just adding to it (aka mining) instead.
 
-Send this table to the students and have them fill out the table for each algorithm:
+Explain to students that there are many consensus algorithms in development, but blockchain technology has reignited innovation in the distributed computing field; we'll discuss the more popular algorithms relevant to blockchain.
 
-Name | Strength | Weakness
----------|----------|---------
-Proof of Work | |
-Proof of Stake | |
-Proof of Authority | |
+#### Proof of Authority
 
-The first, simplest, and least secure algorithm we'll start with is called "Proof of Authority."
+The first, most straightforward, and least secure algorithm we'll start with is called "Proof of Authority."
 
 ![proof of authority](https://image.shutterstock.com/image-photo/successful-team-leader-manager-ceo-600w-461317327.jpg)
 
@@ -134,69 +130,61 @@ The first, simplest, and least secure algorithm we'll start with is called "Proo
 
 * This is a centralized but cheap algorithm mainly used to power test networks.
 
-* This algorithm is never used in production, mainnet blockchains, only for development, which is what we'll be using it for.
+* This algorithm is never used in production **mainnet blockchains**, it is only for development and testing in **testnet blockchains**.
 
-Ask the students:
-
-* What is the biggest strength of Proof of Authority?
-
-  **Answer**: Fast and cheap, good for test or development networks.
+#### Proof of Work
 
 ![proof of work](https://image.shutterstock.com/image-photo/bitcoin-cryptocurrency-mining-farm-600w-761471725.jpg)
 
-* Proof of Work is the most popular algorithm in blockchain currently.
-  This is what Bitcoin came out with, and where the term "mining" comes from.
+* Proof of Work (PoW) is the most popular algorithm in blockchain nowadays.
+
+* This is what Bitcoin came out with, and where the term "mining" comes from.
 
 * Proof of Work is the act of converting computing power that costs real-world energy and money into a block with transactions in it.
-  The block is then submitted to the network for confirmation, and the block with the most "work" put into it gets added.
+
+* The block is then submitted to the network for confirmation, and the block with the most "work" put into it gets added.
 
 * This is a very secure algorithm, but the most expensive in terms of resources. This is its biggest criticism.
 
-Ask the students:
-
-* What is the biggest strength of Proof of Work?
-
-  **Answer**: It's the most secure and decentralized consensus algorithm deployed today.
+#### Proof of Stake
 
 ![proof of stake](https://image.shutterstock.com/image-photo/closeup-portrait-shocked-surprised-young-600w-207481837.jpg)
 
-* Explain that Proof of Stake is very similar to PoW, only instead of contributing computational power, you "stake"
-  some of the cryptocurrency, aka "collateralize" it while you produce blocks.
+Explain to students that Proof of Stake (PoS) is very similar to PoW, the main difference is that instead of contributing computational power, this algorithm "stake" some of the cryptocurrency, aka "collateralize" it while you produce blocks.
 
-* "Staking" your coins means to lock them in a transaction that proves to the rest of the network that you are willing
-  to "put your money where your mouth is" in order to be trusted to make blocks.
-  If you cheat, you are penalized from your stake.
+* "Staking" your coins means to lock them in a transaction that proves to the rest of the network that you are willing to "put your money where your mouth is" to be trusted to make blocks.
 
-* The biggest criticism is the "nothing at stake" problem, where block producers have nothing to lose for producing alternative
-  versions/histories of the blockchain. Some versions of this algorithm include "punishing" cheaters by "burning" their stake and not
-  letting them get it back.
+* If you cheat, you are penalized from your stake.
 
-* Despite this concern, much of the blockchain community is moving towards different variations of PoS, including Ethereum,
-  with mathematical safe-guards in place to reduce this risk significantly.
+* The most significant criticism is the "nothing at stake" problem, where block producers have nothing to lose for producing alternative versions/histories of the blockchain.
 
-Ask the students:
+* Some versions of this algorithm include "punishing" cheaters by "burning" their stake and not letting them get it back.
 
-* What is the biggest strength of Proof of Stake?
+* Despite this concern, much of the blockchain community is moving towards different variations of PoS, including Ethereum, with mathematical safeguards in place to reduce this risk significantly.
 
-  **Answer**: Similar security to PoW without the energy cost.
+Explain to the class that there are many other consensus algorithms under research and development, highlight the following:
 
-Explain to the class that there are many others to research, and give them a few extra examples to go along:
+* Proof of Capacity - It uses free hard drive space as a contribution to the network.
 
-* Proof of Capacity - Using free hard drive space as a contribution to the network.
+* Proof of Burn -- This algorithm "burns" or making some amount of coins un-spendable to act as a stake to the network.
 
-* Proof of Burn -- "Burning" or making some amount of coins un-spendable to act as a stake to the network.
+Answer any questions before moving on.
 
-### 3. Students Do: Turn and Teach Consensus Algorithms (10 min)
+---
 
-Students will now turn and teach the three consensus algorithms just covered.
+### 3. Students Do: Turn and Teach Consensus Algorithms (15 min)
 
-Have the students get into groups of 3 (one student per algorithm).
+In this activity, students will turn and teach the three consensus algorithms just covered.
+
+Have the students get into groups of three (one student per algorithm).
+
+Have TAs circulate and ensure that students are actively engaging in discussion.
 
 **Instructions:**
 
 * [README.md](Activities/03-Stu_Consensus_Algos/README.md)
 
-Have TAs circulate and ensure that students are actively engaging in discussion.
+---
 
 ### 4. Instructor Do: Consensus Algorithm Review (5 min)
 
@@ -224,65 +212,67 @@ Ask the students the following questions:
 
   * Proof of Stake
 
-    **Answer**: "Nothing at Stake," potential wealth distribution issues, incentive structure can possibly be taken advantage of.
+    **Answer**: "Nothing at Stake," potential wealth distribution issues, incentive structure can be taken advantage of.
 
   * Proof of Authority
 
     **Answer**: Highly centralized, least secure.
 
-Congratulate the class on learning some of the most important and fundamental algorithms that blockchains are using today.
-Now, we can take this knowledge and start to build our own blockchain.
+Congratulate the class on learning some of the most important and fundamental algorithms that blockchains are using today. Now, we can take this knowledge and start to build our blockchain.
+
+Finally, highlight to students the following:
 
 * Many computer scientists and mathematicians around the globe are working very hard to solve these problems.
 
-* Understanding fundamentally how these algorithms work allows you to understand the rest of the blockchain community
-  and why certain design decisions are being made, and what makes blockchains different from each other.
+* Understanding fundamentally how these algorithms work allows you to understand the rest of the blockchain community and why individual design decisions are being made, and what makes blockchains different from each other.
+
+Answer any questions before moving on.
+
+---
 
 ### 5. Instructor Do: Creating a Genesis Block Demo (10 min)
 
-In this activity, you will be demonstrating the generation of a genesis block using the `puppeth` tool bundled with
-`geth`.
+In this activity, you will be demonstrating the generation of a genesis block using the `puppeth` tool bundled with the Go Ethereum (`geth`) tool.
 
-* Explain to the class that now we are going to be building the first block of the chain,
-  where we will decide on which consensus algorithm to pick and configure the network.
+Explain to students that now we are going to build our blockchain. We will start building the first block of the chain, where we will decide on which consensus algorithm to pick and configure the network.
 
-First, introduce the `geth` tool to the class.
+Introduce the Go Ethereum tool to the class and highlight the following:
 
-![golang](https://www.vertica.com/wp-content/uploads/2019/07/Golang-1000x565.png)
+* The Go Ethereum tool is one of the three original implementations of the Ethereum protocol.
 
-* Geth is a command line tool written in the Go programming language -- don't worry, you don't need to know Go,
-  just that it's super fast and has a cute mascot!
+* It is written in the Go programming language, fully open source, and licensed under the GNU LGPL v3.
 
-* It is the official Ethereum node software used to initialize, run and manage Ethereum nodes.
+* We will use the Go Ethereum tool via the `geth` command-line tool.
+
+* `geth` is the official Ethereum node software used to initialize, run and manage Ethereum nodes.
+
+* Don't worry, you don't need to learn Go! You just have to know that it's super fast and has a cute mascot called Gogopher!
+
+ ![Gogopher](Images/256px-Gogophercolor.png)
 
 Ask the students to recall what a "node" is.
 
-  **Answer**: A participant of the network that keeps a full copy of the blockchain and maintains the consensus rules of the network.
+* **Answer**: A participant of the network that keeps a full copy of the blockchain and maintains the consensus rules of the network.
 
-* By default, running `geth` will create a standard Ethereum node that will sync to the main
-  network.
+* By default, running `geth` will create a standard Ethereum node that will sync to the main network.
 
-* However, since `geth` comes with a handy tool called `puppeth`, we will create our own networks!
+* However, since `geth` comes with a handy tool called `puppeth`, we will create our networks!
 
-Open a terminal window and type the following command:
+Open a terminal window (GitBash in Windows) navigate to your `Blockchain-Tools` folder and type the following command:
 
 ```bash
-puppeth
+./puppeth
 ```
 
 This should show the following prompt:
 
 ![puppeth](Images/puppeth.png)
 
-* Explain to the class that the prompt is saying that this tool can be used to setup a complete
-  Ethereum network ecosystem, including nodes, monitoring tools, and more.
+Explain to the class that the prompt is saying that this tool can be used to set up a complete Ethereum network ecosystem, including nodes, monitoring tools, and more.
 
-* The Genesis block is the very first block in the chain. It contains the initial rules for the network,
-  like the consensus algorithm and pre-funded accounts.
+* The Genesis block is the very first block in the chain. It contains the initial rules for the network, like the consensus algorithm and pre-funded accounts.
 
-Ask the class to come up with a clever name for your new network.
-
-Type in the name, like "puppernet" and hit enter to move forward in the wizard.
+Ask the class to come up with a clever name for your new network. Type in the name, like "puppernet" and hit enter to move forward in the wizard.
 
 Type `2` to pick the `Configure new genesis` option, then `1` to `Create new genesis from scratch`:
 
@@ -298,46 +288,50 @@ Type `1` to choose `Proof of Work` and continue.
 
 You will be asked to pre-fund accounts. Paste an address from any Ethereum wallet that you control, without the `0x` prefix.
 
-Use MyCrypto like from the previous class, but explain to the students:
+Use MyCrypto like from the previous class, and explain to the students that in this step is where we are going to pre-fund any accounts.
 
-* This is where we are going to prefund any accounts. We're going to paste in the address from the wallet we used the other day,
-  and when used on this new network, it will be heavily funded for us to test with.
+* We're going to paste in the address from the wallet we used the on Day 1, and when used on this new network, it will be heavily funded for us to test with.
 
 Once you paste an address and hit enter, hit enter again on the blank `0x` address to continue the prompt.
 
-Continue with the default option for the prompt that asks to pre-fund "precompile-addresses" by hitting enter again,
-until you reach the `Chain ID` prompt:
+Continue with the default option for the prompt that asks `Should the precompile-addresses (0x1 .. 0xff) be pre-funded with 1 wei?` by hitting enter again until you reach the `Chain ID` prompt.
 
 ![prefunding accounts](Images/puppeth-prefund.png)
 
-Ask the class to come up with a number to use as a "chain ID" or make one up yourself.
+Ask the class to come up with a number to use as a "chain ID" or make one up yourself, like `333`, for example.
 
-Once you enter the chain ID, the next enter should show this success message and redirect to the original prompt:
+Once you enter the chain ID, hit enter, and you should show this success message and redirect to the original prompt.
 
 ![success](Images/puppeth-success.png)
 
 Great! Your genesis configuration is stored in your local home directory.
 We'll export this later. For now, it's time to have the students generate a genesis block.
 
+Answer any questions before moving on.
+
+---
+
 ### 6. Students Do: Creating a Genesis Block (10 min)
 
-Students will create their own genesis configuration just like was demonstrated.
-
-**Instructions:**
-
-* [README.md](Activities/06-Stu_Genesis_Creation/README.md)
-
-Have the TAs circulate and ensure that the students are able to get to the "successful genesis creation" message.
+In this activity, students will create their genesis configuration, just like was demonstrated.
 
 Ensure that every student has seen the success message for creating a new genesis configuration.
 
 If a student is stuck, have either a TA or fellow student help get them un-stuck.
 
+Have the TAs circulate and ensure that the students can get to the "successful genesis creation" message.
+
 Once every student has seen the success message, you can move on.
 
-### 7. Instructor Do: Review Genesis Configuration (5 min)
+**Instructions:**
 
-Ask the students:
+* [README.md](Activities/06-Stu_Genesis_Creation/README.md)
+
+---
+
+### 7. Instructor Do: Creating a Genesis Block Review (5 min)
+
+Conduct a facilitated discussion by asking the students the following questions:
 
 * What is important about the genesis block?
 
@@ -345,148 +339,162 @@ Ask the students:
 
 * What is the point of pre-funding accounts in the genesis block?
 
-  **Answer**: So that we have some crypto to test with right away, otherwise we'll have to mine it manually (time consuming).
+  **Answer**: So that we have some crypto to test with right away; otherwise, we'll have to mine it manually (time-consuming).
 
-* Since we chose Proof of Work, what mechanism are we using to create new blocks?
+* Since we chose **Proof of Work**, what mechanism are we using to create new blocks?
 
   **Answer**: Mining
 
+Answer any questions before moving on.
+
+---
+
 ### 8. Instructor Do: Creating two nodes with accounts (10 min)
 
-First, we need to export our genesis configuration into a `json` file.
+In this activity, students will learn how to add nodes to our brand new blockchain.
 
-In `puppeth`, navigate to the `Manage existing genesis` by typing `2` and enter.
+The first step is to export our genesis configuration into a `json` file. Follow the next steps to do so.
 
-Then, type `2` again to `Export genesis configurations`, then continue with the default (current) directory:
+* In the `puppeth` prompt, navigate to the `Manage existing genesis` by typing `2` and hit enter.
 
-![export genesis puppeth](Images/puppeth-export.png)
+* Next, type `2` again to choose the `Export genesis configurations` option, then continue with the default (current) directory:
 
-* This will export several `networkname.json` files -- we only need the first one without `aleth`, `parity`, or `harmony` suffixes.
+ ![export genesis puppeth](Images/puppeth-export.png)
 
-* We can use the `networkname.json` file to initialize any new nodes in the system automatically to grow the network!
+* This will export several `networkname.json` files -- we only need the first one without `aleth`, `parity`, or `harmony` suffixes. In this demo, we will need the file names `puppernet.json`.
 
-Now, we need to create at least two nodes to build the chain from the genesis block onward.
-Exit `puppeth` by using `Ctrl+C`.
+Explain to students that we can use the `networkname.json` file to initialize any new nodes in the system automatically to grow the network!
 
-Then create the first node's data directory using `geth` and a couple command line flags:
+* Now, we need to create at least two nodes to build the chain from the genesis block onward.
+
+Exit the `puppeth` prompt by using the `Ctrl+C` keys combination.
+
+Explain to students that now you will create the first node's data directory using the `geth` command and a couple of command-line flags. Be sure you are under your `Blockchain-Tools` directory and run the following command from the terminal window.
 
 ```bash
-geth account new --datadir node1
+./geth account new --datadir node1
 ```
 
-* Explain to the class that you are using `geth` here to create a new account in the `node1` folder.
-  This is where all data belonging to the first node will belong, and the address that the mining rewards will go.
+Explain to students that you are using the `geth` command here to create a new account in the `node1` folder.
 
-You will have to enter a password to encrypt the keypair. Ask the students:
+* This is where all data belonging to the first node will reside, and the address that the mining rewards will go.
+
+You will have to enter a password to encrypt the key-pair. Ask the students:
 
 * What type of cryptography are we using when we lock the keys with a password?
 
-  **Answer**: Symmetric cryptography!
+ **Answer**: Symmetric cryptography!
 
-* In this case, we're actually locking a pair of asymmetric keys with a symmetric password, wild times!
+* In this case, we're locking a pair of asymmetric keys with a symmetric password, wild times!
 
-It might be worth mentioning that by doing this, we create a security bottleneck with our password.
-All a hacker has to do is brute force the password, which is significantly easier than the long private key.
+It might be worth mentioning that by doing this, we create a security bottleneck with our password. All a hacker has to do is brute force the password, which is significantly easier than the long private key.
 
-**Note**: In production, you would use a hardware wallet, but more on the different types of wallets next unit.
+Explain to students that in a production environment, you would use a hardware wallet. We will explore the different types of wallets in the next unit.
 
-Once you successfully create the account you should see this message:
+Once you successfully create the account, you should see this message:
 
 ![geth new account](Images/geth-account-new.png)
 
-Next, create another account using a different `datadir`:
+Next, create another account using a different `datadir` by running the following command in the terminal window:
 
 ```bash
-geth account new --datadir node2
+./geth account new --datadir node2
 ```
 
-* Explain to the students that you typically would only have one node per machine, but you need
-  at least two to create a blockchain and that's why we're doubling up on the same computer.
+Explain to students that you typically would only have one node per machine, but you need to create at least two nodes in your computer to create a blockchain.
 
 * Now we have two folders that each node can use to store its private key and its copy of the blockchain.
 
-Time to initialize and tell the nodes to use our genesis block!
+Explain to students that now is time to initialize and tell the nodes to use our genesis block! Open the terminal window and run the following command to initialize `node1`.
 
 ```bash
-geth init puppernet.json --datadir node1
+./geth init puppernet.json --datadir node1
 ```
 
 You should see this success message:
 
 ![geth init](Images/geth-init.png)
 
-* Explain to the class that this node is now initialized. This means that it is using our genesis block as a starting
-  point.
+Explain to the class that this node is now initialized. This means that it is using our genesis block as a starting point.
 
-Repeat this process for the second node:
+Repeat the same process for the second node by running the following command in the terminal window.
 
 ```bash
-geth init puppernet.json --datadir node2
+./geth init puppernet.json --datadir node2
 ```
 
-Your directory structure should look something like:
+Your directory structure should look something like this:
 
 ![directory tree](Images/geth-tree.png)
 
-The chain is ready to be started. Now it's time to have the students initialize their nodes.
+Explain to students that the chain is ready to be started. Now it's time to have the students initialize their nodes.
+
+Answer any questions before moving on.
+
+---
 
 ### 9. Students Do: Creating two nodes with accounts (15 min)
 
-Students will now creating their own nodes and accounts for their custom blockchain network
+In this activity, students will create their nodes and accounts for their custom blockchain network.
+
+Have the TAs circulate and ensure that students are successfully following the instructions and initializing their nodes.
 
 **Instructions:**
 
 * [README.md](Activities/09-Stu_Nodes_Accounts/README.md)
 
-Have the TAs circulate and ensure that students are successfully following the instructions and initializing their nodes.
+---
 
 ### 10. Instructor Do: Review Node configuration (15 min)
 
 Use this time to ensure that all students have properly configured two nodes with accounts.
 
-The student's directory structure should look something like:
+* The student's directory structure should look something like this:
 
-![directory tree](Images/geth-tree.png)
+ ![directory tree](Images/geth-tree.png)
 
-If anyone encounters errors, double check that:
+* If anyone encounters errors, double-check the following:
 
-* The network is selected in `puppeth` before exporting the genesis configuration.
+ * The network is selected in `puppeth` before exporting the genesis configuration.
 
-* The `genesis.json` is in the same directory as the node folders, not inside any node folders.
+ * The `genesis.json` is in the same directory as the node folders, not inside any node folders.
 
-* The `genesis.json` was actually exported.
+ * The `genesis.json` was exported.
 
-- - -
+Answer any questions before moving on.
 
+---
 ### 11. BREAK (40 min)
 
-- - -
+---
 
 ### 12. Instructor Do: Starting the Blockchain (10 min)
 
-Now it's time to start the chain!
+Now it's time to start the chain! In this activity, students will learn how to build their blockchain.
 
-Launch the first node into mining mode with the following command:
+Open the terminal window (Git Bash in Windows), navigate to your `Blockchain-Tools` folder and launch the first node into mining mode with the following command:
 
 ```bash
-geth --datadir node1 --mine --minerthreads 1
+./geth --datadir node1 --mine --minerthreads 1
 ```
 
-Explain each of the new command line flags:
+**Note:** Under Microsoft Windows you may see a pop-up window asking for permission from the firewall, be sure you check all the boxes and click on the "Allow access" button.
+
+Explain each of the new command-line flags:
 
 * The `--mine` flag tells the node to mine new blocks.
 
 * The `--minerthreads` flag tells `geth` how many CPU threads, or "workers" to use during mining.
-  Since our difficulty is low, we can set it to 1.
+
+* Since our difficulty is low, we can set it to 1.
 
 You should see the node `Committing new mining work`:
 
 ![node mining](Images/mining.png)
 
-Now this is our miner in the network. Let's launch the second node and configure it to let us talk to the chain!
+Now, this is our miner in the network. Let's launch the second node and configure it to let us talk to the chain!
 
-First, copy the entire `enode://` address (including the last `@address:port` segment)
-of the first node located in the `Started P2P Networking` line:
+Scroll up in the terminal window and copy the entire `enode://` address (including the last `@address:port` segment) of the first node located in the `Started P2P Networking` line:
 
 ![enodeid](Images/enodeid.png)
 
@@ -494,51 +502,65 @@ of the first node located in the `Started P2P Networking` line:
 
 Open another terminal window and navigate to the same directory as before.
 
-Launch the second node, enabling RPC, changing the default port, and passing the `enodeid` of the first node in quotes:
+Launch the second node, enabling RPC, changing the default port, and passing the `enodeid` of the first node you copied in quotes, the command will vary from OS X to Windows:
 
-```bash
-geth --datadir node2 --port 30304 --rpc --bootnodes "enode://69994ca26f775569b5cdb4970299c2265f7dcb7714a4ffaf66400f50e5128e79e2ff465731ddf597030f931375aa90f40d6cff7ace0f4afb84ae8de19da047bf@127.0.0.1:30303"
-```
+* Running in OS X:
 
-Explain each of the new command line flags:
+ ```bash
+ ./geth --datadir node2 --port 30304 --rpc --bootnodes "enode://69994ca26f775569b5cdb4970299c2265f7dcb7714a4ffaf66400f50e5128e79e2ff465731ddf597030f931375aa90f40d6cff7ace0f4afb84ae8de19da047bf@127.0.0.1:30303"
+ ```
 
-* The `--rpc` flag enables us to talk to our node, which will allow us to use MyCrypto or Metamask to transact on our chain.
+* Running in Windows:
+
+ ```bash
+ ./geth --datadir node2 --port 30304 --rpc --bootnodes "enode://69994ca26f775569b5cdb4970299c2265f7dcb7714a4ffaf66400f50e5128e79e2ff465731ddf597030f931375aa90f40d6cff7ace0f4afb84ae8de19da047bf@127.0.0.1:30303" --ipcdisable
+ ```
+
+Explain each of the new command-line flags:
+
+* The `--rpc` flag enables us to talk to our node, which will allow us to use MyCrypto to transact on our chain.
 
 * Since the first node's sync port already took up `30303`, we need to change this one to `30304` using `--port`.
 
-* The `--bootnodes` flag allows you to pass the network info needed to find other nodes in the blockchain.
-  This will allow us to connect both of our nodes to each other.
+* The `--bootnodes` flag allows you to pass the network info needed to find other nodes in the blockchain. This will allow us to connect both of our nodes.
 
-The output of the second node should show information about `Importing block segments` and synchronization:
+* In Microsoft Windows, we need to add the flag `--ipcdisable` due to the way Windows spawns new IPC/Unix sockets doesn't allow for having multiple sockets running from `geth` at once. Since we are only using `RCP` we can safely disable the `IPC` sockets.
 
-![node sync](Images/node-sync.png)
+* The output of the second node should show information about `Importing block segments` and synchronization:
 
-Now it's time to have the students bring their own blockchains to life!
+ ![node sync](Images/node-sync.png)
 
-**Note**: If you ever encounter strange errors, or need to start over without destroying the accounts,
-run the following command to clear the chain data (this will reset the enode addresses as well):
+Now it's time to have the students bring their blockchains to life!
+
+**Note**: If you ever encounter strange errors, or need to start over without destroying the accounts, run the following command to clear the chain data (this will reset the `enode` addresses as well):
 
 ```bash
 rm -Rf node1/geth node2/geth
 ```
 
-This will be a key command for assisting students during the next activity.
+This will be a crucial command for assisting students during the next activity.
+
+Answer any questions before moving on.
+
+---
 
 ### 13. Students Do: Bringing the blockchain to life (15 min)
 
-Students will now launch their own chains using the same techniques.
+In this activity, students will launch their chains using the same techniques presented in the demo.
 
-**Instructions:**
-
-* [README.md](Activities/13-Stu_Starting_Chain/README.md)
-
-Have the TAs circulate and ensure that students are able to start their chains and mine blocks.
+Have the TAs circulate and ensure that students can start their chains and mine blocks.
 
 If students encounter errors, have them enter the command to clear the chain data without clearing the accounts:
 
 ```bash
 rm -Rf node1/geth node2/geth
 ```
+
+**Instructions:**
+
+* [README.md](Activities/13-Stu_Starting_Chain/README.md)
+
+---
 
 ### 14. Instructor Do: Ensuring Block Production (15 min)
 
@@ -552,72 +574,107 @@ Ensure that:
 
 * The `enode://` address of the **first** node is copied into the **second** node's `--bootnodes` flag in quotes.
 
-* The firewall of the student's machine is allowing `geth` to bind to the proper ports.
+* The firewall of the student's machine is allowing `geth` to bind to the proper ports, especially in Windows.
 
 * The `--port` on the second node is set to something different from the first.
-  The default sync port is `30303`, so recommend `30304` for the second node.
+
+* The default sync port is `30303`, so recommend `30304` for the second node.
 
 * The `--rpc` flag is enabled on the second node. This will be necessary to connect MyCrypto to the blockchain in the next activity.
 
+* In Microsoft Windows, the flag `--ipcdisable` should be added.
+
+Answer any questions before moving on.
+
+---
+
 ### 15. Instructor Do: Transacting on the chain (10 min)
 
-Now it's time to connect MyCrypto to the chain and send a transaction.
+In this activity, students will learn how to connect MyCrypto to the chain we created and send a transaction.
 
-Open up MyCrypto, then click `Change Network` at the bottom left:
+The first step is to retrieve the private key of the ETH address you use to pre-fund the genesis block. Follow the next steps.
+
+* Open up MyCrypto and be sure the `Kovan` network is selected.
+
+ ![Verify Kovan network](Images/verify-kovan.gif)
+
+* Unlock your wallet using your mnemonic phrase and choose the address you want to inspect.
+
+* Select the ETH address you use to pre-fund your chain, and in the "Select" dropdown list, choose "Wallet Info.
+
+* Click on the eye icon next to the "Private Key" field, and copy and paste the private key of the wallet.
+
+ ![Get private key](Images/get-private-key.gif)
+
+Explain to students that now you are going to connect MyCrypto with the blockchain you created. Follow the next steps.
+
+* In the left pane on MyCrypto, click "Change Network" at the bottom left:
 
 ![change network](Images/change-network.png)
 
-Click `Add Custom Node`, then add the custom network information that was set in the genesis.
-Ensure that you scroll down to choose `Custom` in the `Network` column to reveal more options like `Chain ID`:
+* Click on "Add Custom Node", then add the custom network information that was set in the genesis.
 
-![custom network](Images/custom-network.png)
+* Ensure that you scroll down to choose `Custom` in the "Network" setting to reveal more options like `Chain ID`:
 
-* Explain that the currency is still denominated by ETH since we never changed that.
+ ![custom network](Images/custom-network.png)
+
+Explain to students that ETH still denominates the currency since we never changed that, type `ETH` in the "Currency" setting.
 
 * The chain ID must match what you came up with earlier.
 
-* The URL is pointing to the default RPC port on your local machine. Everyone should use this same URL.
+* The URL is pointing to the default RPC port on your local machine. Everyone should use this same URL: `http://127.0.0.1:8545`.
 
-Once you save and use the network, double check that it is selected and is connected.
+* Click on the "Save & Use Custom Node" button, to use the network; double-check that it is selected and is connected.
 
-Import the account that you pre-funded during genesis creation. This will vary based on the method used to generate,
-but will likely be a mnemonic, private key, or keystore file.
+ ![Puppernet connected](Images/puppernet-connected.png)
 
-![prefunded account](Images/prefunded-account.png)
+Open the wallet that you use to pre-fund the chain during genesis creation as follows:
 
-* Looks like we're filthy rich! This is the balance that was prefunded for this account in the genesis configuration.
+* On the left pane menu, click on "View & Send".
 
-* We're going to send a transaction to ourselves to test it out.
+* Next, click on the "Private Key" option to continue.
 
-First, copy the address into the `To Address` field, then fill in an arbitrary amount of ETH:
+ ![Open wallet step 1](Images/open-wallet-1.png)
 
-![transaction send](Images/transaction-send.png)
+* A new window will pop-up, paste the private key of the pre-fund wallet and click on the "Unlock" button to continue.
 
-Confirm the transaction by clicking `Send` on the next prompt.
+ ![Open wallet step 2](Images/open-wallet-2.png)
 
-Click the `Check TX Status` when the green message pops up, confirm the logout:
+* Looks like we're filthy rich! This is the balance that was pre-funded for this account in the genesis configuration; however, these millions of ETH tokens are just for testing purposes.
 
-![check tx](Images/check-tx-status.png)
+ ![prefunded account](Images/prefunded-account.png)
 
-You should see the transaction go from `Pending` to `Successful` in around the same blocktime you set in the genesis.
+Explain to students that now we're going to send a transaction to ourselves to test it out. Follow the next steps.
 
-You can click the `Check TX Status` button to update the status.
+* Copy the pre-fund address into the "To Address" field, then fill in an arbitrary amount of ETH:
 
-![successful transaction](Images/transaction-status.png)
+ ![transaction send](Images/transaction-send.png)
 
-Congratulations, that was the first transaction send on this blockchain network!
-Now it's time for the students to do the same.
+* Confirm the transaction by clicking "Send Transaction", and the "Send" button in the pop-up window.
+
+ ![Send transaction](Images/send-transaction.gif)
+
+* Click the `Check TX Status` when the green message pops up, confirm the logout:
+
+ ![check tx](Images/check-tx-status.png)
+
+* You should see the transaction go from `Pending` to `Successful` in around the same blocktime you set in the genesis.
+
+* You can click the `Check TX Status` button to update the status.
+
+ ![successful transaction](Images/transaction-status.png)
+
+Congratulations that was the first transaction send on this blockchain network! Now it's time for the students to do the same.
+
+Answer any questions before moving on.
+
+---
 
 ### 16. Students Do: Transacting on their chains (10 min)
 
-Now it's time for the students to connect MyCrypto to their chain and send a transaction!
+In this activity, students will to connect MyCrypto to their chain and send a transaction!
 
-**Instructions:**
-
-* [README.md](Activities/16-Stu_Transact/README.md)
-
-Have the TAs circulate and ensure that students are successfully connecting MyCrypto to their
-second RPC-enabled node and sending a transaction from a prefunded account.
+Have the TAs circulate and ensure that students are successfully connecting MyCrypto to their second RPC-enabled node and sending a transaction from a pre-funded account.
 
 Take this time to troubleshoot and ensure that the students are successfully transacting.
 
@@ -627,13 +684,19 @@ Ensure that:
 
 * The chain ID matches their genesis configuration.
 
-* The account being used is the one that the student prefunded in their genesis configuration.
+* The account being used is the one that the student pre-funded in their genesis configuration.
 
 * Their chain is still running:
 
-  * One node is mining.
+ * `node1` is mining.
 
-  * One node is RPC enabled.
+ * `node2` is RPC enabled.
+
+**Instructions:**
+
+* [README.md](Activities/16-Stu_Transact/README.md)
+
+---
 
 ### 17. Instructor Do: Structured Review (35 mins)
 
@@ -649,6 +712,12 @@ Suggested Format:
 
 * Allow students to start the homework with extra TA support.
 
-Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
+
+---
 
 ### End Class
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
