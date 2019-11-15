@@ -20,7 +20,7 @@ Use the starter Jupyter Notebook and perform the following tasks:
 
 To use unsupervised learning algorithms, all the features should be numeric and on similar scales. Perform the following data transformations:
 
-* The `Genre` column contains categorical data; anytime you have categorical variables, you should transform them to a numerical value. In this case, transforming `Male` to `1` and `Female` to `0` is a feasible solution.
+* The `Gender` column contains categorical data; anytime you have categorical variables, you should transform them to a numerical value. In this case, transforming `Male` to `1` and `Female` to `0` is a feasible solution.
 
 * The `Annual Income` column is on a different scale than the other columns. It is necessary to have a similar scale on all the variables to use unsupervised learning algorithms, so `Annual Income` should be rescaled. In this case, dividing by `1000` is the simplest approach.
 
