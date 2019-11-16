@@ -18,7 +18,7 @@ Now that you have learned about Ethereum, the leading decentralized world comput
 
 ## Hint
 
-* Some of these companies might not directly refer to blockchain projects, so you'll want to focus more on the members that have started implementations versus the ones supporting research and development.
+* Some of these companies might not directly referrence blockchain projects, so you'll want to focus more on the members that have started implementations versus the ones supporting research and development.
 
 ---
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
