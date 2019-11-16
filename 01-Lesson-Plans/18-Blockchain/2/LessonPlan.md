@@ -178,7 +178,7 @@ Ask a volunteer student to define hashing again:
 
 Walk through the solution Python script and highlight the following:
 
-* The [`hashlib` module](https://docs.python.org/3/library/hashlib.html) is imported; This module is part of the Python Standard library and contains an interface to the most popular hashing algorithms.
+* The [`hashlib` module](https://docs.python.org/3/library/hashlib.html) is imported; This module is part of the Python Standard Library and contains an interface to the most popular hashing algorithms.
 
  ```python
  import hashlib
@@ -186,7 +186,7 @@ Walk through the solution Python script and highlight the following:
 
 Explain to students that most of the hashing algorithms are compliant with the [Federal Information Processing Standards (FIPS)](https://en.wikipedia.org/wiki/Federal_Information_Processing_Standards). The United States federal government develops these standards for use in computer systems by non-military government agencies and government contractors.
 
-* `haslib` includes the FIPS secure hash algorithms `SHA1`, `SHA224`, `SHA256`, `SHA384`, and `SHA512`, as well as the [RSA’s MD5 algorithm](https://en.wikipedia.org/wiki/MD5).
+* `hashlib` includes the FIPS secure hash algorithms `SHA1`, `SHA224`, `SHA256`, `SHA384`, and `SHA512`, as well as the [RSA’s MD5 algorithm](https://en.wikipedia.org/wiki/MD5).
 
 * A function called `hash` is defined to create a hash from an input string using the `sha256` algorithm.
 
@@ -229,7 +229,7 @@ Ask the students if the output of the hash looks familiar, and where they might 
 
  **Answer**: Block hashes.
 
-Point out that addresses are actually derived from hashing as well, but are not purely hashes as they will learn later today.
+Point out that addresses are actually derived from hashing as well, but are not purely hashed as they will learn later today.
 
 Answer any questions before moving on.
 
@@ -405,7 +405,7 @@ Explain to students that we need a way of sharing secret data without having to 
 
 Expose to students the following situation:
 
-* In the context of encryption, imagine that Joe's public key is like a special lock box that you can use to store secrets in.
+* In the context of encryption, imagine that Joe's public key is like a special lockbox that you can use to store secrets in.
 
 * Once you close this box, it can only be opened with Joe's private key.
 
@@ -628,7 +628,7 @@ Ask the students (critical):
 
 * So what do transactions on a blockchain and digital signatures have in common?
 
- **Answer**: A transaction is just a signed message authorizing transfer of funds, hence cannot be modified and can be verified
+ **Answer**: A transaction is just a signed message authorizing the transfer of funds, hence cannot be modified and can be verified
 
 Tell the students to start thinking about the different ways you might use these cryptographic techniques in the context of blockchain and cryptocurrencies.
 
@@ -638,7 +638,7 @@ Answer any questions before moving on.
 
 ### 17. Instructor Do: Blockchain Data Structure (10 min)
 
-Now that the students understand the fundamental cryptographic techniques that power the internet and blockchain tech let's break down the data structure of a blockchain and why the design is so secure.
+Now that the students understand the fundamental cryptographic techniques that power the internet and blockchain tech, let's break down the data structure of a blockchain and why the design is so secure.
 
 Open up the [Anders Blockchain Demo](https://anders.com/blockchain/blockchain) and walk through the different fields.
 

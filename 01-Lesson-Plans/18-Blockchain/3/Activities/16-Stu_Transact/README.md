@@ -24,7 +24,7 @@ Now you are going to connect MyCrypto with the blockchain you created. Follow th
 
 * Click "Add Custom Node", then add the custom network information that you set in the genesis.
 
-* Ensure that you scroll down to choose `Custom` in the "Network" column to reveal more options like `Chain ID`:
+* Make sure that you scroll down to choose `Custom` in the "Network" column to reveal more options like `Chain ID`:
 
  ![custom network](Images/custom-network.png)
 

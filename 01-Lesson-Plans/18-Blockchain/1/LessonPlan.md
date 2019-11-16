@@ -42,7 +42,7 @@ By the end of the class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1syUXqizy8YoZuYVrYmJwDFv1TADW5IqXX0a_Itkvh_w/edit#slide=id.g54ab1329fa_1_44).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
 
@@ -58,7 +58,7 @@ By the end of the class, students will be able to:
 
  * [Lesson Slides]()
 
-Welcome students to the class by expressing excitement over starting the final lap in this bootcamp marathon -- BLOCKCHAIN -- and that some might say it’s the most exciting lap by far!
+Welcome students to the class by expressing excitement over starting the final lap in this boot camp marathon -- BLOCKCHAIN -- and that some might say it’s the most exciting lap by far!
 
 Open the lesson slides and highlight the following:
 
@@ -295,7 +295,7 @@ Elaborate and bring out this analogy:
 
 * The blockchain is agnostic to the users, regardless of political or social status, or geographic location.
 
-* A wealthy banker or government leader use the protocol in the exact same way anyone else would.
+* A wealthy banker or government leader uses the protocol in the exact same way anyone else would.
 
 * Open blockchain networks are also governed in a neutral fashion, with many using the blockchain itself for voting on the next network upgrades.
 
@@ -443,7 +443,7 @@ Navigate to the slides and define common terms:
 
 * However, it is easy to run the hash function over the same data again to verify the result is the same.
 
-* If you were to change a single bit of the input, you would get a completely different hash. This allows for something called "data integrity" which is a very important part of internet and data security as well as blockchain technology.
+* If you were to change a single bit of the input, you would get a completely different hash. This allows for something called "data integrity" which is a very important part of the internet and data security as well as blockchain technology.
 
 #### Digital Signature
 
@@ -523,7 +523,7 @@ You will lead the activity, and the students should follow you along the process
 
 Open the MyCrypto App, and follow the next steps along with the demo.
 
-1. On the left menu, click on "Create New Wallet", next on the right-side panel click on "Generate a Wallet" under the "Create New Wallet Section"
+1. On the left menu, click on "Create New Wallet", next on the right-side panel click on "Generate a Wallet" under the "Create New Wallet Section."
 
  ![Create wallet](Images/create.png)
 
@@ -547,9 +547,9 @@ Open the MyCrypto App, and follow the next steps along with the demo.
 
  ![Unlock wallet steps](Images/MyCryptop-Unlock-Steps.png)
 
-At this point, you have created your wallet; now you need to unlock it to start making transactions.
+At this point, you have created your wallet; now, you need to unlock it to start making transactions.
 
-6. Unlock your wallet by going to "View & Send" option in the left pane menu and pick the "Mnemonic Phrase" option.
+6. Unlock your wallet by going to the "View & Send" option in the left pane menu and pick the "Mnemonic Phrase" option.
 
  ![Unlock wallet step 1](Images/unlock-1.png)
 
@@ -571,7 +571,7 @@ At this point, you have created your wallet; now you need to unlock it to start 
 
  ![Change network](Images/change_network_kovan.gif)
 
-Explain to students that, to test a blockchain, there are testing networks (aka `testnets`) that contains a group of testing addresses for development proposes. In the case of Ethereum the most commonly used testnets are `kovan` and `ropsten`. We will use `kovan` for this demo, since it's faster on delivering testing tokens than `ropsten`.
+Explain to students that, to test a blockchain, there are testing networks (aka `testnets`) that contain a group of testing addresses for development proposes. In the case of Ethereum, the most commonly used testnets are `kovan` and `ropsten`. We will use `kovan` for this demo since it's faster on delivering testing tokens than `ropsten`.
 
 11. Now you are going to request a test Ethereum token from the `kovan` network, and it's going to be transferred to your wallet. Open your browser, and navigate to the testnet token faucet at [https://faucet.kovan.network/](https://faucet.kovan.network/). Once you open the page, click on the "Login with Github" button to continue.
 
@@ -601,7 +601,7 @@ Explain to students that `Etherscan` is a visual BlockExplorer for the Ethereum 
 
 16. Now it's time to make transactions. Slack out your wallet address to a couple of students and have them send theirs.
 
-17. Using MyCrypto, send some transactions to the students. Paste the destination address in the "To Address" box, define an amount to transfer (e.g., `0.02 ETH`), set the transactions fee (you can leave the default value), and click on the "Send Transaction" button to finish. After finishing the transaction, refresh your account balance to reflect the new amount after the transaction.
+17. Using MyCrypto, send some transactions to the students. Paste the destination address in the "To Address" box, define an amount to transfer (e.g., `0.02 ETH`), set the transaction fee (you can leave the default value), and click on the "Send Transaction" button to finish. After finishing the transaction, refresh your account balance to reflect the new amount after the transaction.
 
  ![ETH Transaction](Images/eth-transaction-1.gif)
 
@@ -751,9 +751,9 @@ Now, transition to talk about the types of financial services that you can build
 
 * Loans – Using crypto-currency as collateral for loans to reduce costs of transactions.
 
-* Deposit taking – Storing crypto in wallets to use as interest-earning assets.
+* Deposit-taking – Storing crypto in wallets to use as interest-earning assets.
 
-* Notary services – Blockchain based notary services that authenticates documents.
+* Notary services – Blockchain-based notary services that authenticate documents.
 
 * Brokerage services – Trading tokens and other digital assets on the Blockchain.
 

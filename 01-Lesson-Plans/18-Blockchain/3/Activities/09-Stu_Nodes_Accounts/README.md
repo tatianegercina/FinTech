@@ -22,7 +22,7 @@ Now, we need to create at least two nodes to build the chain from the genesis bl
 
 * Exit `puppeth` by using the `Ctrl+C` keys combination.
 
-* Create the first node's data directory using the `geth` command and a couple of command-line flags by running the following line in your terminal window (Git Bash in Windows):
+* Create the first node's data directory using the `geth` command and a couple of command line flags by running the following line in your terminal window (Git Bash in Windows):
 
  ```bash
  ./geth account new --datadir node1
