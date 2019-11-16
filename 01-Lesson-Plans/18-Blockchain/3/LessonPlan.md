@@ -102,7 +102,7 @@ Like most things in blockchain, they are simple words that get complicated fast,
 
 * Can someone define consensus for us?
 
-  **Answer**: "Coming to agreement." In a blockchain, we mean agreeing on what block in the chain is going to come next.
+  **Answer**: "Coming to an agreement." In a blockchain, we mean agreeing on what block in the chain is going to come next.
 
 * What about consensus algorithms?
 
@@ -118,7 +118,7 @@ Explain to students that consensus algorithms help to add trust to the systems. 
 
 * The main purpose of a consensus algorithm in blockchain is to get the entire network to agree on which block gets added to the chain next.
 
-* A good consensus algorithm makes it so expensive to cheat, aka "roll back" the chain, that you'd make more just playing the game by the rules and just adding to it (aka mining) instead.
+* A good consensus algorithm makes it so expensive to cheat, aka "rollback" the chain, that you'd make more just playing the game by the rules and just adding to it (aka mining) instead.
 
 Explain to students that there are many consensus algorithms in development, but blockchain technology has reignited innovation in the distributed computing field; we'll discuss the more popular algorithms relevant to blockchain.
 
@@ -296,7 +296,7 @@ Use MyCrypto like from the previous class, and explain to the students that in t
 
 Once you paste an address and hit enter, hit enter again on the blank `0x` address to continue the prompt.
 
-Continue with the default option for the prompt that asks `Should the precompile-addresses (0x1 .. 0xff) be pre-funded with 1 wei?` by hitting enter again until you reach the `Chain ID` prompt.
+Continue with the default option for the prompt that asks, `Should the precompile-addresses (0x1 .. 0xff) be pre-funded with 1 wei?` by hitting enter again until you reach the `Chain ID` prompt.
 
 ![prefunding accounts](Images/puppeth-prefund.png)
 
@@ -666,7 +666,7 @@ Explain to students that now we're going to send a transaction to ourselves to t
 
  ![successful transaction](Images/transaction-status.png)
 
-Congratulations that was the first transaction send on this blockchain network! Now it's time for the students to do the same.
+Congratulations, that was the first transaction send on this blockchain network! Now it's time for the students to do the same.
 
 Answer any questions before moving on.
 
@@ -702,7 +702,7 @@ Ensure that:
 
 ### 17. Instructor Do: Structured Review (35 mins)
 
-Note: If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
+Note: If you are teaching this Lesson on a weeknight, please save this 35-minute review for the next Saturday class.
 
 Please use the entire time to review questions with the students before officially ending class.
 

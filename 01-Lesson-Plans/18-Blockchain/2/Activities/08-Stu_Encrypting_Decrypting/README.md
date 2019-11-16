@@ -26,7 +26,7 @@ Pick a partner to encrypt and decrypt some messages using the Secretbox tool.
 
   * Encrypted message in `Box` field
 
-* Once you have send the three necessary fields, refresh the page to clear out the values.
+* Once you have sent the three necessary fields, refresh the page to clear out the values.
 
 * Try to decrypt your partner's message by filling in each value to their corresponding field.
 
