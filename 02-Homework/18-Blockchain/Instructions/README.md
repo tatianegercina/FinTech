@@ -2,7 +2,7 @@
 
 For this assignment, you will take on the role of a new developer at a small bank.
 
-Your mission, should you choose to accept it, will be to set up a testnet block chain for your organization.
+Your mission, should you choose to accept it, will be to set up a testnet blockchain for your organization.
 
 To do this, you will create and submit four deliverables:
 
@@ -24,9 +24,9 @@ can use to explore potentials for blockchain at ZBank.
 
 You have decided on setting up a testnet because:
 
-There is no real money involved, which will give your team of developers freedom to experiment.
+There is no real money involved, which will give your team of developers the freedom to experiment.
 
-Testnets allows for offline development
+Testnets allows for offline development.
 
 In order to set up a testnet, you will need to use the following skills/tools we learned in class:
 
@@ -53,7 +53,7 @@ Be sure to include any preliminary setup information, such as installing depende
 
 * Create accounts for two (or more) nodes for the network with a separate `datadir` for each using `geth`.
 
-* Run `puppeth`, name your network and select the option to configure a new genesis block.
+* Run `puppeth`, name your network, and select the option to configure a new genesis block.
 
 * Choose the `Clique (Proof of Authority)` consensus algorithm.
 
@@ -73,7 +73,7 @@ Be sure to include any preliminary setup information, such as installing depende
 
 * Initialize each node with the new `networkname.json` with `geth`.
 
-* Run the first node, unlock the account, enable mining and the RPC flag. Only one node needs RPC enabled.
+* Run the first node, unlock the account, enable mining, and the RPC flag. Only one node needs RPC enabled.
 
 * Set a different peer port for the second node and use the first node's `enode` address as the `bootnode` flag.
 
@@ -113,7 +113,7 @@ Be sure to include any preliminary setup information, such as installing depende
 
 * Explain how to connect MyCrypto to your network and demonstrate (via screenshots and steps) and send a transaction.
 
-* Upload the code including the `networkname.json` and node folders.
+* Upload the code, including the `networkname.json` and node folders.
 
 ### Remember, *never* share your mainnet private keys! This is a testnet, so coins have no value here!
 
