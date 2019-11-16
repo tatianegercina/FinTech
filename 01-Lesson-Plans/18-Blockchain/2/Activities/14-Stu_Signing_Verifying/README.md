@@ -2,7 +2,7 @@
 
 In this activity, you will be signing and verifying messages.
 
-Pick a partner to verify messages between.
+Pick a partner to verify messages with.
 
 ## Instructions
 
@@ -32,7 +32,7 @@ Pick a partner to verify messages between.
 
 * Do the same thing again, only modify the message before verifying it. Does the verification fail?
 
-* Ensure that your partner was able to verify your message signature.
+* Make sure that your partner was able to verify your message signature.
 
 ---
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

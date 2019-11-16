@@ -46,9 +46,8 @@ Once you are done, you will see the steps you will need to unlock your account i
 
 11.  Paste your wallet address and request the tokens. You can view the transaction status on Etherscan using the link provided.
 
-12.  Once the tokens have arrived at your wallet, send your address to your neighbor and have them send you theirs.
-    You might need to refresh your balance.
+12.  Once the tokens have arrived at your wallet, send your address to your neighbor and have them send you theirs. You might need to refresh your balance.
 
 13.  Send some transactions to your neighbor(s), checking out all of the different attributes along the way.
 
-Take note of the transactions that have processed on the network for later, you will be using the transaction IDs in the next activity.
+Take note of the transactions that have processed on the network for later; you will be using the transaction IDs in the next activity.

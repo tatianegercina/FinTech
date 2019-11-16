@@ -1,4 +1,4 @@
-# Google it! Basic Terminology
+# Google It! Basic Terminology
 
 You will be researching common terms used in blockchain development. These will be used throughout the course.
 

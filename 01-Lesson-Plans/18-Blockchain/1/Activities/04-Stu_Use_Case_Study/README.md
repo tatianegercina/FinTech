@@ -1,10 +1,10 @@
 # Use Case Study
 
-In this activity you will examine several cryptocurrency and blockchain use cases, and curate a list of features that each have. This list will be compared against later in class today.
+In this activity, you will examine several cryptocurrency and blockchain use cases and curate a list of features that each have. This list will be used again later in class today.
 
 ## Instructions
 
-* Get into a small group of 3-4.
+* Get into a group of three or four.
 
 * Each group member should pick a use case to read for a few minutes.
 
@@ -34,7 +34,7 @@ In this activity you will examine several cryptocurrency and blockchain use case
 
 ## Hint
 
-* Think big, it's okay to point out socioeconomic features, not just technical ones.
+* Think big, it's OK to point out socioeconomic features, not just technical ones.
 
 * Try to imagine the implications of these technologies on society.
 
