@@ -32,13 +32,17 @@ By the end of the class, students will be able to:
 
 * Ethereum has the largest developer community in the blockchain space, learning it has high skill transferability.
 
-* In this unit, students will be introduced to [Solidity](https://solidity.readthedocs.io/), an object-oriented, high-level language for implementing smart contracts for Ethereum.
-
-* Smart Contracts are programs that run on the blockchain, and nothing more. Smart contracts are written in Solidity; next contracts are compiled and created through a transaction on the blockchain. Once the contract is created, it can be used on Ethereum.
-
 * While blockchain inherently has a finance-heavy set of use cases, encourage students to think bigger, since the technology can be used for building secure, globally distributed software.
 
 * There is an activity called "Peoplechain" aimed to emulate the public, censor resistant, and borderless nature of the blockchain; be sure to read through before the class.
+
+* If you encounter any issues with requesting KETH from the Kovan faucet, the following mnemonic phrase has been pre-funded with test tokens (**for instructors only!**):
+
+  `use trouble sponsor panda camp grow pact matrix chief black napkin ghost`
+
+  If you end up needing to use this wallet, simply import it into MyCrypto, change to the Kovan network, then distribute the KETH to the class and yourself.
+  Since you can work with very small amounts of Ether, you should have plenty of KETH to work with. Sending `0.1` at a time should suffice.
+  Make a note to help refill this later for other instructors once the Kovan faucet is back up and running.
 
 ### Slideshow and Time Tracker
 
@@ -529,7 +533,7 @@ Open the MyCrypto App, and follow the next steps along with the demo.
 
  Explain to students, that we are going to use this option since we are going to make transactions with test Ethereum tokens, this is the best option for testing proposes and it has no cost; students shouldn't be worried about the warning message in red letters that states that this option is "Commonly a target for phishing or hacking".
 
-2. In the "Crete New Waller" screen, scroll down to the "Mnemonic Phrase" option and click on the "Generate a Mnemonic Phrase" button.
+2. In the "Create New Wallet" screen, scroll down to the "Mnemonic Phrase" option and click on the "Generate a Mnemonic Phrase" button.
 
  ![Create nmemonic](Images/mnemonic.gif)
 
@@ -606,6 +610,20 @@ Explain to students that `Etherscan` is a visual BlockExplorer for the Ethereum 
  ![ETH Transaction](Images/eth-transaction-1.gif)
 
 Explain to students that as they can see in the message that appears after the transaction, it's not an immediate operation; after a transaction is sent, it's mined and confirm in a process that could take three or more hours. You can check the status of the transaction on `Etherscan` using the links provided after the transaction.
+
+Inform the students:
+
+* These test tokens are provided by faucets run by developers just like us, so when we're done with our test tokens, it is polite
+  to send them back to the faucet. Otherwise, if we simply discarded our wallets that had test Ether in them, those developers have to
+  put more effort into keeping the faucet funded and create new test tokens. This applies for all test blockchain networks as well!
+
+If you encounter any issues with requesting KETH from the Kovan faucet, the following mnemonic phrase has been pre-funded with test tokens (**for instructors only!**):
+
+`use trouble sponsor panda camp grow pact matrix chief black napkin ghost`
+
+If you end up needing to use this wallet, simply import it into MyCrypto, change to the Kovan network, then distribute the KETH to the class and yourself.
+Since you can work with very small amounts of Ether, you should have plenty of KETH to work with. Sending `0.1` at a time should suffice.
+Make a note to help refill this later for other instructors once the Kovan faucet is back up and running.
 
 Answer any questions before moving on.
 
