@@ -533,7 +533,7 @@ Open the MyCrypto App, and follow the next steps along with the demo.
 
  Explain to students, that we are going to use this option since we are going to make transactions with test Ethereum tokens, this is the best option for testing proposes and it has no cost; students shouldn't be worried about the warning message in red letters that states that this option is "Commonly a target for phishing or hacking".
 
-2. In the "Crete New Wallet" screen, scroll down to the "Mnemonic Phrase" option and click on the "Generate a Mnemonic Phrase" button.
+2. In the "Create New Wallet" screen, scroll down to the "Mnemonic Phrase" option and click on the "Generate a Mnemonic Phrase" button.
 
  ![Create nmemonic](Images/mnemonic.gif)
 
