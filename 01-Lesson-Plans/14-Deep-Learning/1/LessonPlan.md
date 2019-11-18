@@ -38,7 +38,7 @@ By the end of class, students will be able to:
 
 * A thorough understanding of neural networks would require math that is beyond the scope of this class. Luckily, we only need an intuitive understanding of the underlying algorithms to implement a neural network. Some details will necessarily need to be glossed over, but we will provide some additional materials for those students who are inclined to dig deeper.
 
-* In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/). Be sure to practice the demo before class. If you are not familiar with this project, we encourage you to [watch this video](https://youtu.be/3BhkeY974Rg).
+* In the introduction to neural networks, a demo is made using the [Teachable Machine project from Google](https://teachablemachine.withgoogle.com/v1/). Be sure to practice the demo before class. If you are not familiar with this project, we encourage you to [watch this video](https://youtu.be/3BhkeY974Rg).
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [14.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d6cecb1c-4ed3-4cf1-83e6-aaf500da5859) Note that this video may not reflect the most recent lesson plan.
@@ -136,7 +136,7 @@ Explain to students that there are several deep mathematical concepts behind neu
 
 Explain to students that this week, we will give an intuitive introduction to the components that make up a neural network and how they work together to learn.
 
-Open your web browser and navigate to [the Teachable Machine website](https://teachablemachine.withgoogle.com). This web application shows the fundamental mechanism of a neural network by training a model that recognizes gestures from your webcam to predict one of three classes.
+Open your web browser and navigate to [the Teachable Machine website](https://teachablemachine.withgoogle.com/v1/). This web application shows the fundamental mechanism of a neural network by training a model that recognizes gestures from your webcam to predict one of three classes.
 
 Once you open the Teachable Machine website, follow the next steps to conduct the demo.
 
