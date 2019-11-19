@@ -3,6 +3,8 @@
 In this demonstration we will be discussing how conditionals in Solidity are formatted differently from Python.
 To show this, we will be reviewing basic logical operators and control flow to build a basic `TradeController` contract that tracks trades on the Ethereum blockchain.
 
+Explain trade controllers to the class: 
+
 * Say you want to build a basic trade controller that will signal whether or not we should be buying, selling or holding based on a designated price.
   We're not going to use complex logic, just buy low and sell high.
   The main goal is to understand the differences in syntax for conditionals.
