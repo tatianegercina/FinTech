@@ -4,5 +4,5 @@ contract SimpleCustomerAccount {
     address owner = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
     bool newAccount = true;
     uint accountBalance = 33333333;
-    string customer_name = "Jane Doe";
+    string customerName = "Jane Doe";
 }
