@@ -22,7 +22,7 @@ contract TradeController {
 
 * Make note that we are using `uint` for our prices and balances. This is because we'll always be dealing with positive numbers, never negative balances or prices.
 
-Next we are going to define a function called `makeTrade`.
+Next, show the class how to define a function called `makeTrade`.
 We will be passing a `uint` to `makeTrade` that represents the `current_price` of an asset:
 
 ```solidity
