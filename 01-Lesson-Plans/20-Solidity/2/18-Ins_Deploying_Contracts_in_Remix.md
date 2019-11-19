@@ -1,4 +1,4 @@
-### 20. Everyone Do: Deploying a Contract in Remix (10 min)
+### 18. Everyone Do: Deploying a Contract in Remix (10 min)
 
 In this activity students will take their `JointSavings` account contract, compile and deploy it on their local testnet.
 
