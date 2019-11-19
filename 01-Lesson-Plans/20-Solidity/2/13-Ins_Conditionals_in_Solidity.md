@@ -74,7 +74,15 @@ function makeTrade(uint current_price, bool buy_anyway) public {
 }
 ```
 
-* What if we want to buy anyway, regardless of the previous price? This would be a perfect use case for our `||` (or) operator.
+Engage the class with the following question:
+
+* What if we want to buy anyway, regardless of the previous price? What operator would allow us to achieve that?
+
+  * Answer: This would be a perfect use case for our `||` (or) operator.
+  
+Show the class how to add modify the code to use the `||` operator to always default to buying regardless of the previous price.
+
+* First, we add a new `bool` parameter called `buy_anyway` -- when we set this to `true`, we can override the price check in the `if` statement by saying `|| buy_anyway`. In plain English, this `if` statement now says "if the current_price is less than the previous_price, or buy_anyway is set to true, then continue."
 
 * First, we add a new `bool` parameter called `buy_anyway` -- when we set this to `true`, we can override the price check in the `if` statement
   by saying `|| buy_anyway`. In plain English, this `if` statement now says "if the current_price is less than the previous_price, or buy_anyway is set to true, then continue."
