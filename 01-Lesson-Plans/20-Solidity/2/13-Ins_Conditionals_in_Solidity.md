@@ -56,7 +56,9 @@ function makeTrade(uint current_price) public {
 
 * Take note that just like when we define the body of a function in Solidity the body of an `if statement` is also contained in curly brackets.
 
-* Now that we have a value for what the `current_price` is, we can compare that to the `previous_price` to determine whether or not we should buy.
+Now that we have a value for what the `current_price` is, show the class that we can compare that to the `previous_price` to determine whether or not we should buy.
+
+* If the `current_price` is lower than `previous_price`, we set the `trade_type` to the `string` "Buy".
 
 * If the `current_price` is lower than `previous_price`, we set the `trade_type` to the `string` "Buy".
 
