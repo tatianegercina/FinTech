@@ -1,4 +1,4 @@
-# Implementing Ether Management Functions(Joint Savings Account)
+# Implementing Ether Management Functions (Joint Savings Account)
 
 In this activity, you will be implementing basic functions for `depositing`, and `withdrawing` ether from a contracts address.
 

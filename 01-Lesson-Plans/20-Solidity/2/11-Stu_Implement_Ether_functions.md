@@ -1,4 +1,4 @@
-### 11. Students Do:  "Implementing Ether Management functions"(15 min)
+### 11. Students Do: Implementing Ether Management functions (15 min)
 
 In this exercise students will beging implementing a `joint savings account` contract using the ether management functions from the previous activity. By the end of this activity students will be able to deposit and witdraw ether from their contract's address.
 
