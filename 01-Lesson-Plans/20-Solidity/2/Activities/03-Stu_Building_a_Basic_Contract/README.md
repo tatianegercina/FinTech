@@ -16,16 +16,15 @@ In this activity, you will build a simple smart contract to represent a customer
       }
     ```
 
-* Add the following variables:
+* Choose the appropriate data type for the following variables:
 
-  * An `address` named `owner` -- make this equal to your main Ethereum address.
+  * `owner` - your main Ethereum address (i.e. 0xaaaaaaaaaaaaaaaaa).
 
-  * A `bool` named `isNewAccount` -- we can set this to `true` or `false` to represent if the account is new.
+  * `is_new_account` - represents if the account is new or not (`true` or `false`).
 
-  * A `uint` (non-negative integer) called `account_balance` -- we can set this to whatever number we'd like for now (as long as it is positive!).
+  * `account_balance` - holds the account balance (10000).
 
-  * A `string` called `customer_name` -- set this to equal the name of the customer.
-  Remember to use the `"` double-quote when defining strings in Solidity!
+  * `customer_name` - holds the name of the customer ("Bob").
 
 ## Challenge
 
