@@ -632,7 +632,7 @@ Transition to a dry walkthrough of the code used to calculate each of these metr
 * Explain the code to calculate annual volatility. Emphasize that annual volatility involves calculating the standard deviation for each daily return. The standard deviation is then annualized by multiplying by the number of trading days in the year.
 
   ```python
-  annual_volatility = signals_df['Portfolio Daily Returns'].std() * 252
+  annual_volatility = signals_df['Portfolio Daily Returns'].std() * np.sqrt(252)
   ```
 
 * Ask students if anyone remembers how to calculate a Sharpe ratio.
@@ -652,8 +652,8 @@ Transition to a dry walkthrough of the code used to calculate each of these metr
 * Sortino ratios are calculated using the downside return. Sortino ratios are calculated by dividing the average daily return by the square root of the average downside return.
 
   ```python
-  down_stdev = np.sqrt(sortino_ratio_df['Downside Returns'].mean())
-  expected_return = sortino_ratio_df['Portfolio Daily Returns'].mean()
+  down_stdev = np.sqrt(sortino_ratio_df['Downside Returns'].mean()) * np.sqrt(252)
+  expected_return = sortino_ratio_df['Portfolio Daily Returns'].mean() * 252
 
   sortino_ratio = expected_return/down_stdev
   portfolio_evaluation_df.loc['Sortino Ratio'] = sortino_ratio
