@@ -3,13 +3,17 @@
 In this demonstration we will be discussing how conditionals in Solidity are formatted differently from Python.
 To show this, we will be reviewing basic logical operators and control flow to build a basic `TradeController` contract that tracks trades on the Ethereum blockchain.
 
-Explain trade controllers to the class: 
+**Files:**
+
+* [TradeController.sol](Activities/13-Ins_Conditionals/Solved/TradeController.sol)
+
+Explain trade controllers to the class:
 
 * Say you want to build a basic trade controller that will signal whether or not we should be buying, selling or holding based on a designated price.
   We're not going to use complex logic, just buy low and sell high.
   The main goal is to understand the differences in syntax for conditionals.
 
-We are going to start by defining a `uint` called `previous_price`, and a `string` called `trade_type`.
+Show the class how to define a `uint` variable called `previous_price` and a `string` variable called `trade_type`.
 
 ```solidity
 pragma solidity ^0.5.11;
@@ -20,21 +24,15 @@ contract TradeController {
 }
 ```
 
-* Make note that we are using `uint` for our prices and balances. This is because we'll always be dealing with positive numbers, never negative balances or prices.
+* A `unint` is used to define the previous price. This is because the price balances will always be positive and never have a negative balance or negative price.
+
+* The trade type of "Buy" or "Sell" can be stored as a string.
 
 Next, show the class how to define a function called `makeTrade`.
 We will be passing a `uint` to `makeTrade` that represents the `current_price` of an asset:
 
 ```solidity
-pragma solidity ^0.5.11;
-
-contract TradeController {
-
-    uint previous_price;
-    string trade_type;
-
-    function makeTrade(uint current_price) public {
-    }
+    function makeTrade(uint current_price) public {}
 }
 ```
 
@@ -81,7 +79,7 @@ Engage the class with the following question:
 * What if we want to buy anyway, regardless of the previous price? What operator would allow us to achieve that?
 
   * Answer: This would be a perfect use case for our `||` (or) operator.
-  
+
 Show the class how to add modify the code to use the `||` operator to always default to buying regardless of the previous price.
 
 * First, we add a new `bool` parameter called `buy_anyway` -- when we set this to `true`, we can override the price check in the `if` statement by saying `|| buy_anyway`. In plain English, this `if` statement now says "if the current_price is less than the previous_price, or buy_anyway is set to true, then continue."
@@ -99,7 +97,7 @@ function makeTrade(uint current_price, bool buy_anyway) public {
     if (current_price < previous_price || buy_anyway) {
             trade_type = "Buy";
             previous_price = current_price;
-    } else if (current_price > previous_price){
+    } else if (current_price > previous_price) {
             trade_type = "Sell";
             previous_price = current_price;
     } else {
