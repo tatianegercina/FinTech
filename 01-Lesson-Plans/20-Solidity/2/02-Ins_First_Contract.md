@@ -8,19 +8,19 @@ In this activity, you will demonstrate how to construct a basic contract in Soli
 
 Open your web browser and navigate to the [Remix IDE website](http://remix.ethereum.org):
 
-  ![compiling-1.png](Images/remix_1.png)
+ ![remix_1.png](Images/remix_1.png)
 
 Click on the create new file button in the file explorer:
 
- ![compiling-1.png](Images/remix_2.png)
+ ![remix_2.png](Images/remix_2.png)
 
 Enter the name of the new Solidity file "message_contract.sol" and click `OK`:
 
- ![compiling-1.png](Images/remix_3.png)
+ ![remix_3.png](Images/remix_3.png)
 
 You should now see the following empty editor window:
 
-![compiling-1.png](Images/remix_4.png)
+![Images/remix_4.png](Images/remix_4.png)
 
 Type the following contract into the editor window:
 
@@ -93,10 +93,11 @@ Demonstrate how to compile the contract using Remix and highlight the following:
 
 Click the "Solidity Compiler" button on the remix sidebar.
 
-![compiling-1.png](Images/remix_compiler.png)
+![remix_compiler_button.png](Images/remix_compiler_button.png)
+
 
 Click `Compile`:
 
-![compiling-1.png](Images/remix_compile_button.png)
+![remix_compile_contract.png](Images/remix_compile_contract.png)
 
 Explain that we will continue to iterate on this example throughout the lesson to add more functionality.
