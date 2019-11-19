@@ -60,7 +60,7 @@ By the end of the class, students will be able to:
 
 * **Files:**
 
- * [Lesson Slides]()
+ * [Lesson Slides](https://docs.google.com/presentation/d/1syUXqizy8YoZuYVrYmJwDFv1TADW5IqXX0a_Itkvh_w/edit?usp=sharing)
 
 Welcome students to the class by expressing excitement over starting the final lap in this boot camp marathon -- BLOCKCHAIN -- and that some might say it’s the most exciting lap by far!
 
