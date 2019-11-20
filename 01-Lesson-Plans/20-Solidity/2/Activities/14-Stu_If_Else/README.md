@@ -4,7 +4,7 @@ In this activity, you will add an if statement to your `JointSavings` contract t
 
 ## Instructions
 
-* Take a moment to look over your `JointSavings` contract from activity 11. As you may recall we defined variables at the begining of the contract that hold the values of two of your addresses from `ganache`.
+* Take a moment to look over your `JointSavings` contract from activity 11. As you may recall we defined variables at the begining of the contract that hold the values for two ethereum addresses genrated from our mnemonic phrase.
 
 * Right now anyone can pass an address to our contract's witdraw function and witdraw the funds to any address that they choose. We need to make it so that funds from the contract can only be witdrawn to the accounts that we define.
 
