@@ -10,4 +10,8 @@ The only way to not excel at this exercise is to not participate in the research
 
 **Instructions:**
 
-* [README.md]()
+* [README.md](Activities/01-Stu_Smart_Contracts_Research/README.md)
+
+---
+
+### 4. Instructor Do: Smart Contracts in Action Review (5 mins)
