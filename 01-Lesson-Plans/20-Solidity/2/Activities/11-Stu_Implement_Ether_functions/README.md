@@ -14,7 +14,7 @@ contract JointSavings {
 }
 ```
 
-* Inside this new contract define a variable named `account_one` of type `address` and set it's value to one of your `wallet's addresses` in `ganache`. Then define a second variable named `account_two` of type `address` and set it as another one of your addresses.
+* Inside this new contract define a variable named `account_one` of type `address` and set it's value to one of the `wallet's addresses` that you generated from your mnenonic phrase.  Then define a second variable named `account_two` of type `address` and set it as another one of your addresses.
 
 * Now define a function named `withdraw` that will accpet a `uint` named `amount`, and a `payable address` named `recipient`.
 
