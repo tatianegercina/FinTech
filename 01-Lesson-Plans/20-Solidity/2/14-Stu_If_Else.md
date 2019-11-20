@@ -15,7 +15,7 @@ Send out the instructions, which includes a cheat-sheet that compares how condit
 
 * [JointSavings.sol](Activities/14-Stu_If_Else/Unsolved/JointSavings.sol)
 
-* [Conditionals Cheat Sheet](Activities/14-Stu_If_Else/Conditionals_Cheatsheet.md)
+* [Conditionals Cheat Sheet](Activities/14-Stu_If_Else/Resources/Conditionals_Cheatsheet.md)
 
 Have the TAs circulate the class and ensure that students are properly implementing their if/else statements.
 
