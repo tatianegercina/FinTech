@@ -12,13 +12,13 @@ In this activity, you will examine several smart contracts use cases and curate 
 
 4. Discuss the different features and functionalities that were identified by each member of the group, and compare them with the features that dApps should comply according to ["The General Theory of Decentralized Applications"](https://github.com/DavidJohnstonCEO/DecentralizedApplications):
 
- * Decentralized operation: open-source code, autonomous operation, consensus of its users.
+   * Decentralized operation: open-source code, autonomous operation, consensus of its users.
 
- * Decentralized storage: storage on a blockchain, cryptographically sealed.
+   * Decentralized storage: storage on a blockchain, cryptographically sealed.
 
- * Cryptographic cryptocurrency: use of tokens for access and value contribution.
+   * Cryptographic cryptocurrency: use of tokens for access and value contribution.
 
- * Token generation: tokens as proof of value, generated through a cryptographic algorithm.
+   * Token generation: tokens as proof of value, generated through a cryptographic algorithm.
 
 5. Try to come up with a core set of features that you may share with the class.
 
@@ -43,6 +43,12 @@ In this activity, you will examine several smart contracts use cases and curate 
 * [HireGo - Reinventing shared mobility using blockchain, smart contracts, and A.I.](https://www.hirego.io/)
 
 * [CryptoMotors - Digital Automaker powered by the Ethereum Blockchain](https://www.cryptomotors.io/)
+
+## Hints
+
+* Think big, it's OK to point out socioeconomic features, not just technical ones.
+
+* Try to imagine the implications of these use cases on society.
 
 ---
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
