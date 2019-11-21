@@ -1,30 +1,30 @@
-# Asyncio & Streamz Installation Guide
+# Web3.py & Bit Installation Guide
 
-This guide serves as a step by step process for setting up and validating the asyncio and streamz Python libraries. Without these libraries, class activities and their associated code will not be able to perform the necessary operations for asynchronous programming and data streaming, respectively.
+This guide serves as a step by step process for setting up and validating the `web3.py` and `bit` Python libraries. Without these libraries, class activities and their associated code will not be able to perform the necessary operations for communicating with blockchain networks programmatically.
 
 ## Installation
 
-Open a terminal, and execute the following commands to install `asyncio` and `streamz`, respectively.
+Open a terminal, and execute the following commands to install `web3.py` and `bit`, respectively.
 
-* Use the `pip install` command to download the `asyncio` module.
+* Use the `pip install` command to download the `web3.py` module.
 
   ```shell
-  pip install asyncio
+  pip install web3
   ```
 
   ![asyncio-install](Images/asyncio-install.png)
 
-* Use the `conda install` command to download the `streamz` module.
+* Use the `pip install` command to download the `bit` module.
 
   ```shell
-  conda install -c conda-forge streamz
+  pip install bit
   ```
 
   ![streamz-install](Images/streamz-install.png)
 
 ## Verify Installation
 
-Once the `asyncio` and `streamz` modules are downloaded and installed, verify that both installations completed successfully.
+Once the `web3.py` and `bit` modules are downloaded and installed, verify that both installations completed successfully.
 
 * Use the `pip list` function with a `grep` argument to identify if the `asyncio` library installed successfully.
 
