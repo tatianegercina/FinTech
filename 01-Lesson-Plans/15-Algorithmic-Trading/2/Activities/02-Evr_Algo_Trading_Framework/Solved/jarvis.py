@@ -140,13 +140,13 @@ def evaluate_metrics(signals_df):
 
     # Calculate annualized return
     portfolio_evaluation_df.loc["Annual Return"] = (
-        1 + signals_df["Portfolio Daily Returns"].mean()
-    ) ** 252 - 1
+        signals_df["Portfolio Daily Returns"].mean() * 252
+    )
 
     # Calculate annual volatility
     portfolio_evaluation_df.loc["Annual Volatility"] = (
-        1 + signals_df["Portfolio Daily Returns"].std()
-    ) ** 252 - 1
+        1 + signals_df["Portfolio Daily Returns"].std() * np.sqrt(252)
+    )
 
     # Calculate Sharpe Ratio
     portfolio_evaluation_df.loc["Sharpe Ratio"] = (
@@ -165,8 +165,8 @@ def evaluate_metrics(signals_df):
     portfolio_evaluation_df
 
     # Calculate Sortino Ratio
-    down_stdev = np.sqrt(sortino_ratio_df["Downside Returns"].mean())
-    expected_return = sortino_ratio_df["Portfolio Daily Returns"].mean()
+    down_stdev = np.sqrt(sortino_ratio_df["Downside Returns"].mean()) * np.sqrt(252)
+    expected_return = sortino_ratio_df["Portfolio Daily Returns"].mean() * 252
     sortino_ratio = expected_return / down_stdev
 
     portfolio_evaluation_df.loc["Sortino Ratio"] = sortino_ratio
