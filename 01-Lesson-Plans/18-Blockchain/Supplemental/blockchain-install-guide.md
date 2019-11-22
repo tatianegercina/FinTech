@@ -56,7 +56,7 @@ To install the Go Ethereum Tools, please follow the next steps:
 
  2.2. Installing in Windows.
  ![Installing Geth - 2](Images/geth-2.gif)
- You need to know if you are running a `32 bit` or `64 bit` version of Microsoft Windows, if you are not sure about that, you can check your version following [this steps](https://support.microsoft.com/en-us/help/13443/windows-which-version-am-i-running).
+ You need to know if you are running a `32 bit` or `64 bit` version of Microsoft Windows, if you are not sure about that, you can check your version following [these steps](https://support.microsoft.com/en-us/help/13443/windows-which-version-am-i-running).
 
  Depending on your Windows version, you should download the `32 bit` or `64 bit` version of the Go Ethereum Tools.
 
