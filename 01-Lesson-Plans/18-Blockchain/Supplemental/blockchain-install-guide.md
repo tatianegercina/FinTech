@@ -51,8 +51,9 @@ To install the Go Ethereum Tools, please follow the next steps:
 2. Scroll down to the "Stable Releases" section and proceed depending on your operating system.
 
  2.1. Installing in OS X.
+ Click on the **"Geth & Tools 1.9.7"** to download the applications bundle archive.
  ![Installing Geth - 1](Images/geth-1.gif)
- Click on the "Geth & Tools 1.9.7" to download the applications bundle archive.
+ .
 
  2.2. Installing in Windows.
  ![Installing Geth - 2](Images/geth-2.gif)
