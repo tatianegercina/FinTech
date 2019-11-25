@@ -16,7 +16,7 @@ The goal of this activity is to get familiarized with the diversity of dApps tha
 
     Along the exploration and research time, you should try to response the following questions:
 
-    * Why this dApps caught your attention?
+    * Why this dApp caught your attention?
 
     * What is the status of this dApps?
 
