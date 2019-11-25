@@ -652,7 +652,11 @@ Now, we'll need to add the following code to pull the keystore, prompt for a pas
 Add the following code after the first account assignment:
 
 ```python
-with open(Path("./keystore/UTC--2019-10-09T00-24-47.260Z--a2c1ec996cee707bb3c323f2d5d9334ad51f835b")) as keyfile:
+with open(
+    Path(
+        "./keystore/UTC--2019-10-09T00-24-47.260Z--a2c1ec996cee707bb3c323f2d5d9334ad51f835b"
+    )
+) as keyfile:
     encrypted_key = keyfile.read()
     private_key = w3.eth.account.decrypt(
         encrypted_key, getpass("Enter keystore password: ")
@@ -683,7 +687,11 @@ w3.middleware_onion.inject(geth_poa_middleware, layer=0)
 
 account_one = Account.from_key(os.getenv("PRIVATE_KEY"))
 
-with open(Path("./keystore/UTC--2019-10-09T00-24-47.260Z--a2c1ec996cee707bb3c323f2d5d9334ad51f835b")) as keyfile:
+with open(
+    Path(
+        "./keystore/UTC--2019-10-09T00-24-47.260Z--a2c1ec996cee707bb3c323f2d5d9334ad51f835b"
+    )
+) as keyfile:
     encrypted_key = keyfile.read()
     private_key = w3.eth.account.decrypt(
         encrypted_key, getpass("Enter keystore password: ")
