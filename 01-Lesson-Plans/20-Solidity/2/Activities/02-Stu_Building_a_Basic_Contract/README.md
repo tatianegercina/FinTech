@@ -36,3 +36,7 @@ In this activity, you will build a simple smart contract to represent a customer
 
 * Using types is a pain to get used to at first, but once you get the hang of them, they will help prevent bugs in the future,
   and make your code much less ambiguous!
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
