@@ -23,9 +23,5 @@
   "git.autofetch": true,
   "editor.tabSize": 2,
   "python.linting.pylintEnabled": true,
-  "python.linting.enabled": true,
-  "cSpell.words": [
-    "UTXO",
-    "utxos"
-  ]
+  "python.linting.enabled": true
 }
