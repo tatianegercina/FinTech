@@ -37,7 +37,7 @@ def create_raw_tx(account, recipient, amount):
 
 
 def send_tx(account, recipient, amount):
-    tx = create_raw_tx(account.address, recipient, amount)
+    tx = create_raw_tx(account, recipient, amount)
     signed_tx = account.sign_transaction(tx)
     result = w3.eth.sendRawTransaction(signed_tx.rawTransaction)
     return result.hex()
