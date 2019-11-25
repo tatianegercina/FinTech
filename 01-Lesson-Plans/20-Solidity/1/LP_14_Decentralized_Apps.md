@@ -104,3 +104,82 @@ Go further with the demo, click on the "Create Account" button in the upper righ
 * In order to allow bank withdrawal and having access to the full services offer, you need to verify your identity.
 
 Explain to students that this is a demonstration of how a traditional service, as saving money and having a credit card, can be eased and disrupted using the same blockchain technology they are learning in class.
+
+Ask to students the following rhetoric question:
+
+* How could you disrupt in any other sector than finance creating a dApp?
+
+Comment to students that will answer to this question in the next activity  and continue with the next dApp demo.
+
+In the next aApp demo, students will learn how they can use a dApp by transferring `ETH` to use the service provided by the dApp using MetaMask, explain to students that this is how normally they will interact with a dApp.
+
+Open your browser and navigate to https://www.akta.io/. Akta is a cloud file storage service that uses the `Ropsten` test network to work, so you should be sure that you have `ETH` in your wallet in this test network, if you don't have any token in this test network, refer to the ["Getting Ropsten Tokens Guide"](../Instructor_Support/getting-ropsten-tokens.md) in the Instructor Support folder.
+
+Once you open the Akta website, follow the next steps to conduct the demo.
+
+1. Click on the MetaMask fox icon in the toolbar, and ensure you have selected the `Ropsten` test network and you have `ETH` available in your wallet.
+
+    ![State Of The Dapps - 12](Images/state-of-the-daps-12.png)
+
+2. Click on the "Log In" button to continue.
+
+3. In the next page, you will be asked to link an Ethereum account to start using Akta, click on the "Connect Account" button to continue.
+
+    ![State Of The Dapps - 13](Images/state-of-the-daps-13.png)
+
+4. You will see a pop-up window where MetaMask is asking you for permissions to connect Akta your account, click on the "Connect" button to continue.
+
+    ![State Of The Dapps - 14](Images/state-of-the-daps-14.png)
+
+    Explain to students that dApps will normally request for this connection access before start using it, since the wallet address is unique, dApps use it as login credentials. The connection is securely done through the Ethereum network selected.
+
+5. Next, you are asked to sign the Smart Contract to continue the connection process, click on the "Sign" button to proceed.
+
+    ![State Of The Dapps - 15](Images/state-of-the-daps-15.png)
+
+6. After signing the smart contract, you are lead to the Akta main page, explain to students that we have no transfer any `ETH` by now, we just allow the dApp to connect to our wallet after signing the contract.
+
+    ![State Of The Dapps - 16](Images/state-of-the-daps-16.png)
+
+7. Now, we are going to upload a document to show how the transactions work. Click on the "Add" button to upload a file.
+
+8. In the next page, you have to choose the file to upload. Optionally, you can send an e-mail to any person if your want to share this file, we will omit this part in this demo. Click on the "Choose File" button and select any file from your local computer (you may upload a generic picture for this demo), continue by clicking in the "Upload" button.
+
+    ![State Of The Dapps - 17](Images/state-of-the-daps-17.png)
+
+9. You will be warned that the document has no signature, since this file is for personal usage, we can proceed by clicking on the "OK" to continue.
+
+    ![State Of The Dapps - 18](Images/state-of-the-daps-18.png)
+
+10. Next, you have to assign a name to the file, type the name of your choice and click "OK" to continue. You can only use letters and numbers.
+
+    ![State Of The Dapps - 19](Images/state-of-the-daps-19.png)
+
+11. In the next dialog box, you will be informed that you file is going to be uploaded to the blockchain, so the process is going to take some time. Click on the "OK" button to continue.
+
+    ![State Of The Dapps - 20](Images/state-of-the-daps-20.png)
+    The upload time depends on your internet connection speed and the current state of the blockchain workload, it takes less than one minute while preparing this demo with a `3.2 MB` file in a WiFi connection with `10 mbps` upload rate.
+
+12. You are going to be asked to sign the file upload transaction using MetaMask, click on the "Sign" button to proceed.
+
+    ![State Of The Dapps - 21](Images/state-of-the-daps-21.png)
+
+13. Next you are asked to pay in `ETH` for the transaction using your wallet in MetaMask. You may note that the transaction is free, but you are requested to pay the `GAS` fee, this is particular case for this dApp, explain to students that normally transactions in dApps will incur in costs to be paid in `ETH` in addition to the correspondent `GAS` fee. Click on the "Confirm" button to continue.
+
+    ![State Of The Dapps - 22](Images/state-of-the-daps-22.png)
+
+14. After confirming the transactions fee, you will be lead to the Akta home page where you can see your file uploaded to the blockchain.
+
+    ![State Of The Dapps - 23](Images/state-of-the-daps-23.png)
+
+End the activity by explaining to students that the goal of these two dApps demos is to show them how they can interact with dApps. Highlight the following closing points:
+
+* Nexo is a dApp closer to a traditional web application; it combines the features of the typical web application with the decentralized power of dApps.
+
+* Akta is a dApp with a frontend created to interact with the user and allow transactions using MetaMask.
+
+* We use the `Ropsten` test network in this demo, however, dApps that are monetizing their services use the Ethereum main network, so you have to actually pay for the services those dApps provide.
+
+Answer any questions before moving on.
+
+---
