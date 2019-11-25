@@ -2,7 +2,7 @@
 
 In this activity, students will learn about the different sectors where dApps are disrupting the traditional market practices in such areas as banking, exchanges, games, and art.
 
-Open the lesson slides and highlight the following:
+Open the lesson slides, move to the "Unveiling Decentralized Apps" section and highlight the following:
 
 * dApps are currently used beyond the finance sector.
 
