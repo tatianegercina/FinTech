@@ -39,3 +39,7 @@ recipient.transfer(amount);
 * Don't forget that the `deposit` functions needs to be `public payable`.
 
 * Don't forget that the address that we are passing into our withdraw function to transfer the funds to must also be marked `payable`.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

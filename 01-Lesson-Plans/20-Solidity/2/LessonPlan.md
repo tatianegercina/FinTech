@@ -98,7 +98,7 @@ In this activity, you will demonstrate how to construct a basic contract in Soli
 
 **Files:**
 
-* [first_contract.sol](Activities/02-Ins_First_Contract/Solved/first_contract.sol)
+* [first_contract.sol](Activities/01-Ins_First_Contract/Solved/first_contract.sol)
 
 Open your web browser and navigate to the [Remix IDE website](http://remix.ethereum.org):
 
@@ -188,7 +188,6 @@ Click the "Solidity Compiler" button on the remix sidebar.
 
 ![remix_compiler_button.png](Images/remix_compiler_button.png)
 
-
 Click `Compile`:
 
 ![remix_compile_contract.png](Images/remix_compile_contract.png)
@@ -203,19 +202,19 @@ Explain to the class that by the end of today, we will have build a simple joint
 
 **Instructions:**
 
-* [README.md](Activities/03-Stu_Building_a_Basic_Contract/README.md)
+* [README.md](Activities/02-Stu_Building_a_Basic_Contract/README.md)
 
 **Files:**
 
-* [Unsolved - SimpleCustomerAccount.sol](Activities/03-Stu_Building_a_Basic_Contract/Unsolved/SimpleCustomerAccount.sol)
+* [Unsolved - SimpleCustomerAccount.sol](Activities/02-Stu_Building_a_Basic_Contract/Unsolved/SimpleCustomerAccount.sol)
 
-* [Solved - SimpleCustomerAccount.sol](Activities/03-Stu_Building_a_Basic_Contract/Solved/SimpleCustomerAccount.sol)
+* [Solved - SimpleCustomerAccount.sol](Activities/02-Stu_Building_a_Basic_Contract/Solved/SimpleCustomerAccount.sol)
 
 ### 4. Instructor Do: Data Types Review (5 min)
 
 **Files:**
 
-* [SimpleCustomerAccount.sol](Activities/03-Stu_Building_a_Basic_Contract/Solved/SimpleCustomerAccount.sol)
+* [SimpleCustomerAccount.sol](Activities/02-Stu_Building_a_Basic_Contract/Solved/SimpleCustomerAccount.sol)
 
 Open the solution and ask the students the following questions:
 
@@ -317,13 +316,13 @@ Send out the instructions to the class so that they may begin reviewing the exer
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Adding_a_Getter_and_Setter/README.md)
+* [README.md](Activities/03-Stu_Adding_a_Getter_and_Setter/README.md)
 
 **Files:**
 
-* [Unsolved - Getter_Setter.sol](Activities/06-Stu_Adding_a_Getter_and_Setter/Unsolved/Getter_Setter.sol)
+* [Unsolved - Getter_Setter.sol](Activities/03-Stu_Adding_a_Getter_and_Setter/Unsolved/Getter_Setter.sol)
 
-* [Solved - Getter_Setter.sol](Activities/06-Stu_Adding_a_Getter_and_Setter/Solved/Getter_Setter.sol)
+* [Solved - Getter_Setter.sol](Activities/03-Stu_Adding_a_Getter_and_Setter/Solved/Getter_Setter.sol)
 
 Have TAs circulate to address any questions that students may have about Solidity functions, their modifiers and parameters.
 
@@ -337,7 +336,7 @@ Have TAs circulate to address any questions that students may have about Solidit
 
 **Files:**
 
-* [Getter_Setter.sol](Activities/06-Stu_Adding_a_Getter_and_Setter/Solved/Getter_Setter.sol)
+* [Getter_Setter.sol](Activities/03-Stu_Adding_a_Getter_and_Setter/Solved/Getter_Setter.sol)
 
 Open the solution and explain the following:
 
@@ -389,7 +388,13 @@ Open the solution and explain the following:
 
 Ask for any remaining questions before moving on.
 
-### 9. Instructor Do: Welcome Back to Class (5 min)
+---
+
+### 8. BREAK (15 min)
+
+---
+
+### 9. Instructor Do: Quick Review (10 min)
 
 * If I have a function or variable that I want to be able to call from outside the contract, what modifier would I add to the function definition?
 
@@ -532,19 +537,19 @@ In this exercise students will be implementing a `joint savings account` contrac
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_Implement_Ether_functions/README.md)
+* [README.md](Activities/04-Stu_Implement_Ether_functions/README.md)
 
 **Files:**
 
-* [Unsolved - JointSavings.sol](Activities/11-Stu_Implement_Ether_functions/Unsolved/JointSavings.sol)
+* [Unsolved - JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Unsolved/JointSavings.sol)
 
-* [Solved - JointSavings.sol](Activities/11-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
+* [Solved - JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
 
 ### 12. Instructor Do: Review Ether Management Functions (5 min)
 
 **Files:**
 
-* [JointSavings.sol](Activities/11-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
+* [JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
 
 Open the solution and explain the following:
 
@@ -577,6 +582,7 @@ Open the solution and explain the following:
 ```
 
 Ask for any remaining questions before moving on.
+
 ### 13. Instructor Do: Conditionals in Solidity (10 min)
 
 In this demonstration we will be discussing how conditionals in Solidity are formatted differently from Python.
@@ -584,7 +590,7 @@ To show this, we will be reviewing basic logical operators and control flow to b
 
 **Files:**
 
-* [TradeController.sol](Activities/13-Ins_Conditionals/Solved/TradeController.sol)
+* [TradeController.sol](Activities/05-Ins_Conditionals/Solved/TradeController.sol)
 
 Explain trade controllers to the class:
 
@@ -697,13 +703,13 @@ Send out the instructions, which includes a cheat-sheet that compares how condit
 
 **Instructions:**
 
-* [README.md](Activities/14-Stu_If_Else/README.md)
+* [README.md](Activities/06-Stu_If_Else/README.md)
 
 **Files:**
 
-* [JointSavings.sol](Activities/14-Stu_If_Else/Unsolved/JointSavings.sol)
+* [JointSavings.sol](Activities/06-Stu_If_Else/Unsolved/JointSavings.sol)
 
-* [Conditionals Cheat Sheet](Activities/14-Stu_If_Else/Resources/Conditionals_Cheatsheet.md)
+* [Conditionals Cheat Sheet](Activities/06-Stu_If_Else/Resources/Conditionals_Cheatsheet.md)
 
 Have the TAs circulate the class and ensure that students are properly implementing their if/else statements.
 
@@ -717,7 +723,7 @@ Remind them that they have to:
 
 **Files:**
 
-* [JointSavings.sol](Activities/14-Stu_If_Else/Solved/JointSavings.sol)
+* [JointSavings.sol](Activities/06-Stu_If_Else/Solved/JointSavings.sol)
 
 Open the solution and explain the following:
 
@@ -735,7 +741,7 @@ if (recipient == account_one || recipient == account_two) {
 
 Ask for any remaining questions before moving on.
 
-### 19. Everyone Do: Restricting the Withdraw Function with Require (15 min) (Critical)
+### 16. Everyone Do: Restricting the Withdraw Function with Require (20 min) (Critical)
 
 In this activity we will be replacing our `if` conditional statement with a `require`.
 
@@ -745,7 +751,7 @@ Continue with the `JointSavings.sol` contract in [Remix](https://remix.ethereum.
 
 **Files:**
 
-* [Unsolved - JointSavings.sol](Activities/19-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
+* [Unsolved - JointSavings.sol](Activities/07-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
 
 Up to this point, everyone's contract should look like this:
 
@@ -800,13 +806,13 @@ Have the students catch up with the code, then elaborate:
 
 Now we have a fully working `JointSavings` account with withdraw protection on our contract account and a deposit function to deposit our funds. Let's compile and deploy our contract to test it out!
 
-### 18. Everyone Do: Deploying a Contract in Remix (10 min)
+### 17. Everyone Do: Deploying a Contract in Remix (10 min)
 
 In this activity students will take their `JointSavings` account contract, compile and deploy it on their local testnet.
 
 **Files:**
 
-* [JointSavings.sol](Activities/16-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
+* [JointSavings.sol](Activities/07-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
 
 Let's compile and deploy our contract to test it out!
 
@@ -916,7 +922,7 @@ Congratulations, you have now written, compiled, deployed and executed your firs
 
 Not only have you written a smart contract but you have learned a strictly typed programming language which will enable you to write super precise and fast code.
 
-### 19. Instructor Do: End of Day Recap (5 min)
+### 18. Instructor Do: End of Day Recap (5 min)
 
 Ask the following review questions.
 

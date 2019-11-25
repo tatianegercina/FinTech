@@ -16,4 +16,8 @@ In this activity, you will add an if statement to your `JointSavings` contract t
 
 ## Hints
 
-* If you are stuck please refer back to the [(Conditionals Cheat Sheet)][/Activities/13-Ins_Conditionals/]
+* If you are stuck please refer back to the Conditionals Cheat Sheet.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

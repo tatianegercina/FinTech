@@ -45,3 +45,7 @@ function setInfo(address newOwner, bool isNewAccount, uint newAccountBalance, st
 * Really think about all of the variables that your `getter` is going to return and their order in the returns statement.
 
 * For the `setter` don't forget that all you are doing is `setting` the new values for the customer variables.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
