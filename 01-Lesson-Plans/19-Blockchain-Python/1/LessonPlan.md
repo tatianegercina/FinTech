@@ -568,10 +568,14 @@ Now, all we need is to add the "send" piece:
 def send_tx(account, recipient, amount):
     tx = create_raw_tx(account, recipient, amount)
     signed_tx = account.sign_transaction(tx)
-    return w3.eth.sendRawTransaction(signed_tx.rawTransaction)
+    result = w3.eth.sendRawTransaction(signed_tx.rawTransaction)
+    print(result.hex())
+    return result.hex()
 ```
 
 * Explain that the `w3.eth.sendRawTransaction` function takes the raw, signed transaction bytes and sends it to the node you are connected to.
+
+* This outputs the hexadecimal format of the transaction hash, so that we can read it in our terminal and use it for later, versus printing the raw bytes.
 
 With this function, we can now send a transaction.
 
@@ -598,6 +602,11 @@ This will return `None` if the transaction is still pending, otherwise, it will 
 ```python
 AttributeDict({'blockHash': HexBytes('0xff057860c590f610f18acadedb46505443019436c11c1498941b21c8d51b9922'), 'blockNumber': 972, 'contractAddress': None, 'cumulativeGasUsed': 21000, 'from': '0xc3879b456daa348a16b6524cbc558d2cc984722c', 'gasUsed': 21000, 'logs': [], 'logsBloom': HexBytes('0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'), 'status': 1, 'to': '0xa2c1ec996cee707bb3c323f2d5d9334ad51f835b', 'transactionHash': HexBytes('0x53aab3d6b39642337c4ddf75463fa925d4796b913f91f4ec6a2d41c2cf17de0a'), 'transactionIndex': 0})
 ```
+
+If students encounter an "invalid address" or "address checksum" error, then the way the recipient address was copied did not copy in the "uppercase" format.
+To solve this, we can simply wrap the address in `Web3.toChecksumAddress(address)`. When Ethereum addresses are uppercase, they have a "checksum" that allows
+the wallet software to check if the address is correct. Since the address wasn't copied in checksum format, we have to make sure that the address is exactly
+the same, since the wallet can no longer verify if the address is valid, but will be able to send to it anyway.
 
 Congratulations! You now know how to create and send transactions manually using pure Python!
 
@@ -649,7 +658,11 @@ Now, we'll need to add the following code to pull the keystore, prompt for a pas
 Add the following code after the first account assignment:
 
 ```python
-with open(Path("./keystore")) as keyfile:
+with open(
+    Path(
+        "./keystore/UTC--2019-10-09T00-24-47.260Z--a2c1ec996cee707bb3c323f2d5d9334ad51f835b"
+    )
+) as keyfile:
     encrypted_key = keyfile.read()
     private_key = w3.eth.account.decrypt(
         encrypted_key, getpass("Enter keystore password: ")
@@ -680,7 +693,11 @@ w3.middleware_onion.inject(geth_poa_middleware, layer=0)
 
 account_one = Account.from_key(os.getenv("PRIVATE_KEY"))
 
-with open(Path("./keystore")) as keyfile:
+with open(
+    Path(
+        "./keystore/UTC--2019-10-09T00-24-47.260Z--a2c1ec996cee707bb3c323f2d5d9334ad51f835b"
+    )
+) as keyfile:
     encrypted_key = keyfile.read()
     private_key = w3.eth.account.decrypt(
         encrypted_key, getpass("Enter keystore password: ")
@@ -704,7 +721,9 @@ def create_raw_tx(account, recipient, amount):
 def send_tx(account, recipient, amount):
     tx = create_raw_tx(account, recipient, amount)
     signed_tx = account.sign_transaction(tx)
-    return w3.eth.sendRawTransaction(signed_tx.rawTransaction)
+    result = w3.eth.sendRawTransaction(signed_tx.rawTransaction)
+    print(result.hex())
+    return result.hex()
 ```
 
 Ensure that all of the students are caught up to this point.
@@ -761,7 +780,7 @@ send_tx(account_two, account_one.address, 333)
 
 Have TAs circulate and assist any students that are having difficulties.
 
-If the students are having trouble, remind them that they are passing the entire `account_two` object
+If the students are having trouble, remind them that they need to pass the entire `account_two` object
 as the sending account, and passing just the `account_one.address` to the recipient field.
 
 Remind students that they will need to send what is available in the balance.
