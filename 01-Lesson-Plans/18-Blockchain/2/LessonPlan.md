@@ -4,7 +4,7 @@
 
 Today's class will introduce students to the fundamental cryptographic techniques used throughout blockchain and internet technologies.
 
-The goal of this lesson is to have the students understand and apply basic cryptographic concepts to their daily lives, as well as to arbitrary data understanding the significance and applications of these techniques.
+The goal of this lesson is to have the students understand and apply basic cryptographic concepts to their daily lives, as well as to arbitrary data, thus understanding the significance and applications of these techniques.
 
 ### Class Objectives
 
@@ -335,7 +335,7 @@ Explain to the students that a "nonce" stands for "number used once". This means
 
 * This adds to a hacker's ability to do something called ["cryptanalysis"](https://en.wikipedia.org/wiki/Cryptanalysis) in which they analyze encrypted data to break the encryption.
 
-* By adding randomness using "nonce", this becomes much harder of a task.
+* By adding randomness using "nonce", this becomes a much harder task.
 
 Click on the "Encrypt" button to encrypt the message:
 
@@ -545,7 +545,7 @@ Pick another volunteer student to help assist with the following demo.
 
 Navigate to the ["Sign" feature](https://tweetnacl.js.org/#/sign) of the TweetNaCl.js demo site and do the following:
 
-* Have your volunteer also to navigate to the "Sign" feature of the TweetNaCl.js demo, then aks the student to click the `Verify` feature on the top left.
+* Have your volunteer also to navigate to the "Sign" feature of the TweetNaCl.js demo, then ask the student to click the `Verify` feature on the top left.
 
  ![Sign verify](Images/sign-verify.png)
 
@@ -686,7 +686,7 @@ Now, it's time to have the students try it for themselves. Answer any questions 
 
 In this activity, students will be repeating the blockchain online activity at their computers.
 
-Slack out the [Anders Blockchain Demo](https://anders.com/blockchain/blockchain.html) to the students.
+Slack out the [Anders Blockchain Demo](https://anders.com/blockchain/blockchain) to the students.
 
 Have the TAs circulate through the class and ensure that students are connecting blocks and rebuilding the chain.
 
@@ -718,7 +718,7 @@ Answer any questions before moving on.
 
 Now that the students have a fundamental understanding of cryptography, and how a blockchain is built using these concepts and data structures, it's time to review and put a cap on the day.
 
-First, congratulate and encourage the students to get through one of the hardest and conceptually abstract days of this section. They are now equipped with knowledge of blockchain *and* security.
+First, congratulate and encourage the students for getting through one of the hardest and conceptually abstract days of this section. They are now equipped with knowledge of blockchain *and* security.
 
 Ask the students the following questions:
 
