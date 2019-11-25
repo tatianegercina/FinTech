@@ -12,7 +12,7 @@ Open a terminal, and execute the following commands to install `web3.py` and `bi
   pip install web3
   ```
 
-  ![asyncio-install](Images/asyncio-install.png)
+  ![web3-install](Images/web3-install.png)
 
 * Use the `pip install` command to download the `bit` module.
 
@@ -20,27 +20,27 @@ Open a terminal, and execute the following commands to install `web3.py` and `bi
   pip install bit
   ```
 
-  ![streamz-install](Images/streamz-install.png)
+  ![bit-install](Images/bit-install.png)
 
 ## Verify Installation
 
 Once the `web3.py` and `bit` modules are downloaded and installed, verify that both installations completed successfully.
 
-* Use the `pip list` function with a `grep` argument to identify if the `asyncio` library installed successfully.
+* Use the `pip list` function with a `grep` argument to identify if the `web3` library installed successfully.
 
   ```shell
-  pip list | grep asyncio
+  pip list | grep web3
   ```
 
-  ![asyncio-verify](Images/asyncio-verify.png)
+  ![web3-verify](Images/web3-verify.png)
 
-* Use the `conda list` function with a `grep` argument to identify if the `streamz` library installed successfully.
+* Use the `conda list` function with a `grep` argument to identify if the `bit` library installed successfully.
 
   ```shell
-  conda list | grep streamz
+  conda list | grep bit
   ```
 
-  ![streamz-verify](Images/streamz-verify.png)
+  ![bit-verify](Images/bit-verify.png)
 
 ## Troubleshooting
 
@@ -62,26 +62,26 @@ An out-of-date Anaconda environment can create issues when trying to install new
     conda update conda
     ```
 
-3. Create a fresh conda environment to use with `asyncio` and `streamz`.
+3. Create a fresh conda environment to use with `web3` and `bit`.
 
     ```shell
-    conda create -n algotrading python=3.7 anaconda
+    conda create -n ethereum python=3.7 anaconda
     ```
 
 4. Activate the new environment.
 
     ```shell
-    conda activate algotrading
+    conda activate ethereum
     ```
 
-5. Install the `asyncio` and `streamz` packages.
+5. Install the `web3` and `bit` packages.
 
     ```shell
-    pip install iexfinance
+    pip install web3
     ```
 
     ```shell
-    conda install -c conda-forge streamz
+    pip install bit
     ```
 
 ---
