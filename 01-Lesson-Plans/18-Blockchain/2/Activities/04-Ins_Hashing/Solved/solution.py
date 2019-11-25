@@ -1,4 +1,4 @@
-# Hasing Demo
+# Hashing Demo
 
 # initial imports
 import hashlib
