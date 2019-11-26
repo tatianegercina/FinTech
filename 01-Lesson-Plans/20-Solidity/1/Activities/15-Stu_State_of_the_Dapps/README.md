@@ -12,7 +12,7 @@ The goal of this activity is to get familiarized with the diversity of dApps tha
 
 3. You are encouraged to research among those dApps that are based on Ethereum, but feel free to explore other blockchain networks.
 
-4. Spend a few minutes each member of the group to explore the dApps on the selected category and look for a dApps that could be interesting to share with the class.
+4. Each member of the group should spend a few minutes to explore the dApps on the selected category and look for a dApps that could be interesting to share with the class.
 
     As your explore and research different dApps, you should try to answer the following questions:
 
