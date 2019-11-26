@@ -16,21 +16,21 @@ Have TAs circulate the classroom to help students and foster collaboration in ea
 
 In this activity, conduct a facilitated discussion to allow the students to share their findings after the previous research activity.
 
-Recall students that Ethereum is one of the most used blockchains to create a deploy dApps since it offers more than a cryptocurrency, but also a complete development framework to support different use cases.
+Remind students that Ethereum is one of the most used blockchains to create and deploy dApps. This is because Ethereum is more than a Cryptocurrency. It also offers a complete development framework to support different use case.
 
-Use this activity's time wisely to allow all groups to share their findings regarding the following questions:
+Use this activity's time to allow all groups to share their findings regarding the following questions:
 
-* Why this dApp caught your attention?
+* Why did this dApp catch your attention?
 
-* What is the status of this dApps?
+* What is the status of this dApp?
 
-* What blockchain networks do the dApp use to operate?
+* What blockchain network(s) does the dApp use?
 
 * Is it possible to use MetaMask to interact with the dApps?
 
-* How this dApp is disrupting the traditional market in its sector?
+* How does the dApp disrupt the traditional market in its sector?
 
-* How this dApp is facing new customers onboarding?
+* How this dApp is facing new customers on-boarding?
 
 Answer any questions before moving on.
 

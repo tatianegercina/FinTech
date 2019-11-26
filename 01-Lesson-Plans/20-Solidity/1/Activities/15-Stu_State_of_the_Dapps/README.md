@@ -12,19 +12,19 @@ The goal of this activity is to get familiarized with the diversity of dApps tha
 
 3. You are encouraged to research among those dApps that are based on Ethereum, but feel free to explore other blockchain networks.
 
-4. During no more than then minutes, each member of the group has to explore the dApps on the selected category and look for a dApps that could be interesting to share with the class.
+4. Spend a few minutes each member of the group to explore the dApps on the selected category and look for a dApps that could be interesting to share with the class.
 
-    Along the exploration and research time, you should try to response the following questions:
+    As your explore and research different dApps, you should try to answer the following questions:
 
-    * Why this dApp caught your attention?
+    * Why did this dApp catch your attention?
 
-    * What is the status of this dApps?
+    * What is the status of this dApp?
 
-    * What blockchain networks do the dApp use to operate?
+    * What blockchain network(s) does the dApp use?
 
     * Is it possible to use MetaMask to interact with the dApps?
 
-    * How this dApp is disrupting the traditional market in its sector?
+    * How does the dApp disrupt the traditional market in its sector?
 
     * How this dApp is facing new customers on-boarding?
 
