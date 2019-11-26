@@ -81,7 +81,7 @@ Click the blocks tab:
 
 ![ganache_blocks.png](Images/ganache_blocks.png)
 
-This page should be relatively empty, only listing block zero, explain.
+This page should be relatively empty, only listing block zero -- explain:
 
 * Since it is a new workspace, the blockchain only consists of the block that contains our initial blockchain configuration.
 
