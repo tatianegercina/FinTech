@@ -44,7 +44,9 @@ Show the class the example machine code.
 
 * Virtual Machine
 
-  * The EVM contains a virtual stack, memory, and program counter; the essential parts of a physical computer just virtual.
+  * The EVM contains a memory, storage, and all of the essential parts of a physical computer, just virtual, and sandboxed inside of your Ethereum node.
+  
+  * Every Ethereum node runs the EVM, which is how all Ethereum nodes are able to process and validate transactions and smart contracts.
 
 * Process/Runtime
 
