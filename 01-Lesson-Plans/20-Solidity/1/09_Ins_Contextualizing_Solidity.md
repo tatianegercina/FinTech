@@ -6,7 +6,7 @@ In this exercise, the instructor will explain to the students that Solidity is a
 
 [EVM Diagram](Images/EVM.png)
 
-* Solidity is the language of smart contracts used by Ethereum, as well as burrow and many other enterprise blockchain solutions.
+* Solidity is the language of smart contracts used by Ethereum, as well as Ethereum-compatible blockchains like IBM's Hyperledger Fabric and Burrow, JPMorgan Chase's Quorum, Ethereum Classic, and last, but not least, Counterparty which extends Bitcoin to support the EVM.
 
 * We're going to learn Solidity this week! It's a statically typed language, so it will also help you understand other statically typed languages like C++.
 
