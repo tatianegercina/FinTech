@@ -141,4 +141,4 @@ Explain to the students that:
 
 * We must set our environment to `Injected Web3` so that Remix can talk to MetaMask, which can talk to our local blockchain. In this case, MetaMask is "injecting" the Web3 library into your browser, which allows Remix to communicate to the outside world (Ethereum).
 
-* We will be deploying our first contracts tomorrow but we will be taking some time today to familiarize ourselves with Remix.
+* We will be writing our own custom smart contracts tomorrow, but today we will just be familiarizing ourselves with Remix.
