@@ -39,7 +39,7 @@ Click the Server tab.
 
 * The `PORT` field is the port that your node will be listening for communication. For all of our examples, we will be using port `8545`.
 
-* You don't need to worry about the `NETWORK ID` field; it is for ganaches internal tracking.
+* You don't need to worry about the `NETWORK ID` field; it is for Ganache's internal tracking.
 
 * The `automine` feature is a very convenient option; when a transaction happens, such as someone executing/deploying a smart contract or sending/receiving funds, the block is instantaneously processed so that there is no wait time.
 
