@@ -131,7 +131,7 @@ At this point, open `MetaMask`. MetaMask may prompt you to sign-in. Then select 
 
 * In this case, the blockchain that we are communicating with is our local development chain.
 
-Change the Environment to `Injected Web3`.
+Change the Environment to `Injected Web3`:
 
 ![remix_injected_web3](Images/remix_injected_web3.png)
 
