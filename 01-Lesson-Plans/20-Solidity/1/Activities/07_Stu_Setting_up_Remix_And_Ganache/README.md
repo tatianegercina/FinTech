@@ -10,7 +10,7 @@ In this activity, you will be configuring your development environment for writi
 
 ![Ganache releases](../../Images/ganache_github_releases.png)
 
-* Once you have downloaded the Ganache executable for your desired operating system. Install and launch Ganache.
+* Once you have downloaded the Ganache executable for your desired operating system, install and launch Ganache.
 
 ![Ganache releases](../../Images/ganache_create_workspace.png)
 
