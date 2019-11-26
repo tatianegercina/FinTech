@@ -8,7 +8,7 @@ In this exercise, the instructor will explain to the students that Solidity is a
 
 * Solidity is the language of smart contracts used by Ethereum, as well as Ethereum-compatible blockchains like IBM's Hyperledger Fabric and Burrow, JPMorgan Chase's Quorum, Ethereum Classic, and last, but not least, Counterparty which extends Bitcoin to support the EVM.
 
-* We're going to learn Solidity this week! It's a statically typed language, so it will also help you understand other statically typed languages like C++.
+* Solidity is a statically typed language, so it will also help you understand other statically typed languages you may have heard of, like C, C++, Go, Java, Rust, and many more.
 
 Present the following diagram to the class and give them a few minutes to think about what is being illustrated.
 
