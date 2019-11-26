@@ -38,11 +38,19 @@ This guide serves as an overview for the various concepts required to understand
 
 * What is BIP?
 
+  **Answer:** A BIP or Bitcoin Improvement Proposal is a design document for introducing new features or information about the Bitcoin blockchain network.
+
 * What is BIP32?
+
+  **Answer:** BIP32 proposes a Hierarchical Deterministic (HD) key creation and transfer protocol, in which a parent key allows for the creation of child keys in a hierarchy. Therefore, wallets that use this protocol are often called HD wallets.
 
 * What is BIP39?
 
+  **Answer:** BIP39 proposes the implementation of a mnemonic code or mnemonic sentence--a group of easy to remember words--for the generation of Hierarchical Deterministic (HD) keys.
+
 * What is BIP44?
+
+  **Answer:** 
 
 ---
 
@@ -57,3 +65,8 @@ Links:
 * https://www.investopedia.com/terms/b/blockchain-wallet.asp - blockchain wallet
 * https://blog.unocoin.com/what-happens-if-you-forget-your-bitcoin-wallet-keys-bbf563ce281a - losing bitcoin wallet keys
 * https://www.investopedia.com/terms/h/hash.asp - hash
+* https://en.bitcoin.it/wiki/Bitcoin_Improvement_Proposals - bitcoin improvement models
+* https://bitcoin.org/en/glossary/hd-protocol - BIP32
+* https://www.w3.org/2016/04/blockchain-workshop/interest/robles.html - BIP32
+* https://github.com/WebOfTrustInfo/rwot1-sf/blob/master/topics-and-advance-readings/hierarchical-deterministic-keys--bip32-and-beyond.md - BIP32
+* https://en.bitcoin.it/wiki/Deterministic_wallet 
