@@ -34,7 +34,9 @@ Present the following diagram to the class and give them a few minutes to think 
 
   * A user pays a certain amount of `gas` for each instruction that gets executed by the EVM.
 
-  * Instead of just a transaction fee like `bitcoin`, you have a fee for running programs.
+  * Instead of just a plain transaction fee like with Bitcoin, users pay fees based on running different computations. Each computation has a different `gas` cost associated with it.
+  
+  * The cost of each of these opcodes is determined by the community, in the Ethereum node software. In fact, it is updated occasionally to keep the network fair when certain opcodes become too expensive for average nodes to process.
 
 Show the class the example machine code.
 
