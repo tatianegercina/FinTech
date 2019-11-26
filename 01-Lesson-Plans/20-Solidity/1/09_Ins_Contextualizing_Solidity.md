@@ -54,7 +54,7 @@ Show the class the example machine code.
 
   * The Ethereum node spawns a process for the EVM.
 
-  * It takes multiple full nodes running multiple EVM's to verify calculations.
+  * While each node can verify transactions within its own EVM, it takes multiple full nodes running their own EVMs to properly secure the network.
 
   * `Geth` is one implementation of an Ethereum full node written in GO.
 
