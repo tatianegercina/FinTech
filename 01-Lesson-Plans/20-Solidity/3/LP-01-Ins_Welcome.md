@@ -25,7 +25,13 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* @TODO
+* Today's lesson should be exciting for students now that they have gotten a small taste of building smart contracts with Solidity.
+
+* Expect some or all of the students to be somewhat anxious about learning a new language. Especially when that language differs so much from Python. Reassure them that, with practice, they will be able to read and write Solidity in no time at all!
+
+* Today's class introduces students to new programming concepts specific to the Solidity language. They will learn to use these concepts to build sophisticated smart contracts for Ethereum.
+
+* If you are new to Solidity, we recommend reviewing the [Instructor Support documents](Instructor_Support/Solidity.md) in preparation for this class.
 
 ### Slideshow and Time Tracker
 
@@ -40,10 +46,6 @@ By the end of the class, students will be able to:
 ---
 
 ### 1. Instructor Do: Welcome (5 min)
-
-* **Files:**
-
- * [Lesson Slides]()
 
 Welcome students to the class by getting them excited about more advanced Solidity concepts!
 
