@@ -50,7 +50,7 @@ This guide serves as an overview for the various concepts required to understand
 
 * What is BIP44?
 
-  **Answer:** BIP44 defines an implementation of a HD wallet in which a single seed or mnemonic sentence can be used to generate keys for an unlimited number of independent cryptocoins such as Bitcoin, Litecoin or Namecoin under a single account.
+  **Answer:** BIP44 defines an implementation of a HD wallet in which a single seed or mnemonic sentence can be used to generate keys for multiple cryptocurrencies such as Bitcoin, Litecoin or Namecoin under a single account.
 
 ---
 
