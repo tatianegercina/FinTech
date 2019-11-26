@@ -19,13 +19,13 @@ Continue with lesson slides and ask the following question to students:
 
 * If you were about to start a dApp program, how will you boost your new users' base?
 
-If no-one answers the question, ask for a volunteer from the blockchain enthusiast in class to share her or his insights. You may conclude with the following argument.
+If no-one answers the question, ask for a volunteer from the blockchain enthusiast in class to share her or his insights. You may conclude with the following example.
 
-* From the radio to television and the internet, every new disrupting technology has faced adoption challenges, in the end, part of the solution is to ease how the people use the technology; most of the times, improving user experience may increase the new users base.
+* From radio to television and now the internet, every new disrupting technology has faced adoption challenges. In the end, part of the solution has been to ease how people use the technology. In other words, improving the user experience may increase the new users base.
 
-Open your browser and navigate to the [State Of The Dapps website](https://www.stateofthedapps.com/), explain to students that this is a statistic platform that offers a panorama of the dApps ecosystem through the analysis of the activity in GitHub of the dApps projects listed in its ranking.
+Open your browser and navigate to the [State Of The Dapps website](https://www.stateofthedapps.com/). Explain to students that this platform showcases a panorama of the dApps ecosystem and ranks the dApps based on an analysis of GitHub activity.
 
-Start the website navigation as you explain that this ranking was initially focused on Ethereum; however, this website presents dApps developed for other blockchains platforms as well.
+Start the website navigation as you explain that this ranking was initially focused on Ethereum. However, this website presents dApps developed for other blockchain platforms as well.
 
 ![State Of The Dapps - 1](Images/state-of-the-daps-1.png)
 
@@ -33,7 +33,7 @@ In the navigation menu at the top, click on the "All DApps" option, and highligh
 
 ![State Of The Dapps - 2](Images/state-of-the-daps-2.gif)
 
-* This option allows us to search for the bast directory of dApps.
+* This option allows us to search for the best directory of dApps.
 
 * The results can be filtered by `platform`, `category`, and `status`.
 
@@ -73,7 +73,7 @@ Click on the "Launch DApp/website" button below the logo of Nexo on the right si
 
   ![State Of The Dapps - 6](Images/state-of-the-daps-6.png)
 
-Comment to students that as it can be seen so far, this project is trying to disrupt in the banking sector by offering a solution to earn with cryptocurrency savings and offering an automated line of credit.
+Explain to students that as it can be seen so far, this project is trying to disrupt in the banking sector by offering a solution to earn interest with cryptocurrency savings and offering an automated line of credit.
 
 Go further with the demo, click on the "Create Account" button in the upper right corner, and follow the next steps.
 
@@ -85,11 +85,11 @@ Go further with the demo, click on the "Create Account" button in the upper righ
 
   ![State Of The Dapps - 8](Images/state-of-the-daps-8.png)
 
-* After entering your account details, you will see the next page asking for verifying your e-mail account.
+* After entering your account details, you will see the next page asking for verification of your e-mail account.
 
   ![State Of The Dapps - 9](Images/state-of-the-daps-9.png)
 
-* Open your inbox, verify your e-mail address form the message you received from Nexo, and you will be lead to the following confirmation page.
+* Open your inbox, verify your e-mail address using the message you received from Nexo. This link will redirect you to the following confirmation page.
 
   ![State Of The Dapps - 10](Images/state-of-the-daps-10.png)
 
@@ -97,13 +97,13 @@ Go further with the demo, click on the "Create Account" button in the upper righ
 
   ![State Of The Dapps - 11](Images/state-of-the-daps-11.gif)
 
-* The user experience excels since you can start using your brand new account without leaving your computer and just after few clicks.
+* The user experience excels since you can start using your brand new account with just a few clicks without leaving your computer.
 
 * You can start making transactions and saving cryptocurrency assets by using Nexo as your wallet.
 
-* To allow bank withdrawal and having access to the full services offer, you need to verify your identity.
+* To allow bank withdrawal and gain access to the full services offered, you need to verify your identity.
 
-Explain to students that this is a demonstration of how a traditional service as saving money and having a credit card, can be eased and disrupted using the same blockchain technology they are learning in class.
+Explain to students that this is a demonstration of how a traditional service (saving money and having a credit card) can be simplified and disrupted using the same blockchain technology they are learning in class.
 
 Ask students the following rhetoric question:
 
@@ -131,23 +131,24 @@ Once you open the Akta website, follow the next steps to conduct the demo.
 
    ![State Of The Dapps - 14](Images/state-of-the-daps-14.png)
 
-    Explain to students that dApps will typically request for this connection access before start using it; since the wallet address is unique, dApps use it as login credentials. The connection is securely made through the Ethereum network selected.
+    * DApps will typically request access to this connection before using it. Since the wallet address is unique, dApps can use it as login credentials. The connection is then securely made through the selected Ethereum network.
+
 
 5. Next, you are asked to sign the Smart Contract to continue the connection process, click on the "Sign" button to proceed.
 
    ![State Of The Dapps - 15](Images/state-of-the-daps-15.png)
 
-6. After signing the smart contract, you are lead to the Akta main page, explain to students that we have no transfer any `ETH` by now, we allow the dApp to connect to our wallet after signing the contract.
+6. After signing the smart contract, you are led to the Akta main page. Explain to students that we have not transferred any `ETH` yet. We allow the dApp to connect to our wallet only after signing the contract.
 
    ![State Of The Dapps - 16](Images/state-of-the-daps-16.png)
 
 7. Now, we are going to upload a document to show how the transactions work. Click on the "Add" button to upload a file.
 
-8. On the next page, you have to choose the file to upload. Optionally, you can send an e-mail to any person if you want to share this file, we will omit this part in this demo. Click on the "Choose File" button and select any file from your local computer (you may upload a generic picture for this demo), continue by clicking in the "Upload" button.
+8. On the next page, you have to choose the file to upload. Optionally, you can send an e-mail to any person if you want to share this file. However, we will omit this part in this demo. Click on the "Choose File" button and select any file from your local computer (you may upload a generic picture for this demo). Continue by clicking the `Upload` button.
 
    ![State Of The Dapps - 17](Images/state-of-the-daps-17.png)
 
-9. You will be warned that the document has no signature since this file is for personal usage, we can proceed by clicking on the "OK" to continue.
+9. You will be warned that the document has no signature. Since this file is for personal usage, we can proceed by clicking on the `OK` to continue.
 
    ![State Of The Dapps - 18](Images/state-of-the-daps-18.png)
 
@@ -158,7 +159,7 @@ Once you open the Akta website, follow the next steps to conduct the demo.
 11. In the next dialog box, you will be informed that your file is going to be uploaded to the blockchain, so the process is going to take some time. Click on the "OK" button to continue.
 
     ![State Of The Dapps - 20](Images/state-of-the-daps-20.png)
-    The upload time depends on your internet connection speed and the current state of the blockchain workload; it takes less than one minute while preparing this demo with a `3.2 MB` file in a WiFi connection with `10 mbps` upload rate.
+    The upload time depends on your internet connection speed and the current state of the blockchain workload; it takes less than one minute while preparing this demo with a `3.2 MB` file in a WiFi connection with `10 mbps` upload rate, for the class demo you may use a smaller image file or a text file.
 
 12. You are going to be asked to sign the file upload transaction using MetaMask, click on the "Sign" button to proceed.
 
