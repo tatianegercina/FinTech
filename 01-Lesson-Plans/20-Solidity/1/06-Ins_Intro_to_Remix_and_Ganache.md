@@ -139,6 +139,6 @@ Explain to the students that:
 
 * Web3 is a library which allows you to communicate with Ethereum nodes.
 
-* We must set our environment to `Injected Web3` so that remix can talk to our local development chain.
+* We must set our environment to `Injected Web3` so that Remix can talk to MetaMask, which can talk to our local blockchain. In this case, MetaMask is "injecting" the Web3 library into your browser, which allows Remix to communicate to the outside world (Ethereum).
 
 * We will be deploying our first contracts tomorrow but we will be taking some time today to familiarize ourselves with Remix.
