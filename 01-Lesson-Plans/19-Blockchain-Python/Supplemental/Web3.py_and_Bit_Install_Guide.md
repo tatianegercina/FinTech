@@ -46,6 +46,22 @@ Once the `web3.py` and `bit` modules are downloaded and installed, verify that b
 
 It can be frustrating when packages do not install correctly, therefore use the below approaches to troubleshoot any installation or usage issues.
 
+### Install Microsoft Visual C++ Build Tools
+
+In some cases, the `Web3.py` library may fail to install due to the need for Microsoft Visual C++ Build Tools. In such an event, following the below steps to resolve the issue:
+
+1. Go to: https://visualstudio.microsoft.com/downloads/
+
+2. Scroll down the page and click on "Tools for Visual Studio 2019" to reveal the sub-options.
+
+3. Download the "Build Tools for Visual Studio 2019" package.
+
+    ![vs-build-tools](Images/vs-build-tools.png)
+
+4. Run the package file and select the C++ build tools option. Then click install.
+
+5. This process takes about 15 minutes
+
 ### Update Conda Environment
 
 An out-of-date Anaconda environment can create issues when trying to install new packages. Follow the below steps to update your conda environment.
