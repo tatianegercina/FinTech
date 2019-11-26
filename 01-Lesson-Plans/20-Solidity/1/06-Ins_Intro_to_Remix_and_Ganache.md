@@ -45,7 +45,7 @@ Click the Server tab.
 
 * `Automine` is convenient because you can see the results of transactions instantaneously but dangerous in the fact that it is not representative of how a blockchain normally functions.
 
-* The ERROR ON TRANSACTION FAILURE is useful because it will log additional information about errors to our GUI.
+* The `ERROR ON TRANSACTION FAILURE` is useful because it will log additional information about errors to our GUI.
 
 Now click `Accounts and Keys`.
 
