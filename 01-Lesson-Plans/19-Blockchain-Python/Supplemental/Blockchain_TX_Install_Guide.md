@@ -37,7 +37,7 @@ Once the `web3.py` and `bit` modules are downloaded and installed, verify that b
 * Use the `conda list` function with a `grep` argument to identify if the `bit` library installed successfully.
 
   ```shell
-  conda list | grep bit
+  pip list | grep bit
   ```
 
   ![bit-verify](Images/bit-verify.png)
