@@ -58,4 +58,4 @@ Show the class the example machine code.
 
 * Hardware
 
-  * It's a blockchain; hardware could potentially be anything that can run the software needed to host a node on the network.
+  * Since blockchains are written in software, the hardware can be any machine that is capable of running the node software and connecting to the internet.
