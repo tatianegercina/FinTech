@@ -1,6 +1,6 @@
 # Smart Contracts in Action
 
-In this activity, you will examine several smart contracts use cases and curate a list of features that each has.
+In this activity, you will examine several smart contract use cases and curate a list of features for each.
 
 ## Instructions
 
@@ -8,7 +8,7 @@ In this activity, you will examine several smart contracts use cases and curate 
 
 2. Each group should pick a use case to read for a few minutes.
 
-3. Every member of the group should read the use case and make a list of the different features and functionality that she or he notices.
+3. Every member of the group should read the use case and make a list of the different features and functionality that they notice.
 
 4. Discuss the different features and functionalities that were identified by each member of the group, and compare them with the features that dApps should comply according to ["The General Theory of Decentralized Applications"](https://github.com/DavidJohnstonCEO/DecentralizedApplications):
 
@@ -46,7 +46,7 @@ In this activity, you will examine several smart contracts use cases and curate 
 
 ## Hints
 
-* Think big, it's OK to point out socioeconomic features, not just technical ones.
+* Think big, It's OK to point out socioeconomic features in addition to technical ones.
 
 * Try to imagine the implications of these use cases on society.
 
