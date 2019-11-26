@@ -4,7 +4,7 @@ In this activity, the instructor will have the class installing the [MetaMask](h
 
 Open the lesson slides, move to the "Installing MetaMask" section, and highlight the following:
 
-* MetaMask is a web browser extension that allows you to run Ethereum dApps right in your browser without running a full Ethereum node.
+* MetaMask is a web browser extension that allows you to run an Ethereum decentralized application (dApp) right in your browser without running a full Ethereum node.
 
 * We are going to use MetaMask to run our dApps and make transfers to our blockchains.
 
@@ -22,21 +22,29 @@ Click on the "Get Chrome Extension" link, a new window is going to be opened whe
 
 ![MetaMask installation - 2](Images/metamask-2.png)
 
-Click on the "Add to Chrome" button to start the installation process, next a pop-up window will be opened where you have to click on the "Add Extension" button to continue.
+Click on the "Add to Chrome" button to start the installation process.
+
+Next a pop-up window will be opened where you have to click on the "Add Extension" button to continue.
 
 ![MetaMask installation - 3](Images/metamask-3.png)
 
-Next, the "Welcome to MetaMask" website will be opened, explain to students that they should see a small "fox icon" in the toolbar if MetaMask was successfully installed in their web browsers.
+When the "Welcome to MetaMask" website opens, explain to students that they should see a small "fox icon" in the toolbar if MetaMask was successfully installed in their web browsers.
 
 ![MetaMask installation - 4](Images/metamask-4.png)
 
 To start configuring your MetaMask account, click on the "Get Started" button.
 
-Explain to students that we will import the wallet that runs in our local blockchain, click on the "Import Wallet" button to continue.
+Explain to students that we will import the wallet that runs in our local blockchain.
+
+Click on the "Import Wallet" button to continue.
 
 ![MetaMask installation - 5](Images/metamask-5.png)
 
-Next, you will see the data usage agreement where the MetaMask team asks you to collaborate on improving the tool, explain to students that they may choose the option for their preference. Click the choice of your preference to continue.
+Explain the following points about the usage agreement:
+
+* The usage agreement is where the MetaMask team asks you to collaborate on improving the tool.
+
+* This agreement to participate is optional and is a personal choice.
 
 ![MetaMask installation - 6](Images/metamask-6.png)
 
@@ -50,16 +58,24 @@ After filling out your wallet details, click on the "Import" button to continue,
 
 ![MetaMask installation - 8](Images/metamask-8.png)
 
-You may notice a message at the bottom of the page that says that `MetaMask cannot recover your seedphrase`, explain to students that it means that once you import your keys, MetaMask won't export them again, so if you lose your mnemonic you can't extract it from metamask; encourage students to keep their mnemonics in a safe place!
+Students may notice a message at the bottom of the page that says that `MetaMask cannot recover your seedphrase`. Explain to students that this means that once you import your keys, MetaMask won't export them again, so if you lose your mnemonic you can't extract it from metamask. Encourage students to keep their mnemonics in a safe place!
 
-Click on the "All Done" button to continue; you will see a page showing the balance of your wallet and the transaction history.
+Click on the "All Done" button to continue. Explain to students that they will see a page showing the balance of their wallet and the transaction history.
 
 ![MetaMask installation - 9](Images/metamask-9.png)
 
-You may note that you have `0 ETH` and no transactions, explain to students that this is all right from now since we have not started our local blockchain, we will learn how to connect MetaMask with our local wallet in the future activities.
+Explain to students that they may have `0 ETH` and no transactions. Explain to students that this is all right from now since we have not started our local blockchain. We will learn how to connect MetaMask with our local wallet in the future activities.
 
-Recall students that in Ethereum, you can use the same keys across any Ethereum compatible network, so your address can have different balances on each network like the main net, Kovan, Ropsten, or your local blockchain, but all use the same addresses and keys.
+Explain the following about the wallet keys:
 
-Congratulate students on getting started with their first dApps, answer any questions before moving on.
+* In Ethereum, the same keys can be used across any Ethereum network.
+
+* Addresses can have difference balances on each of these networks.
+
+* Regardless of the network (i.e. main net, Kovan, Ropsten, or a local blockchain), all of these networks use the same addresses and keys.
+
+Congratulate students on getting started with their first dApp!
+
+Answer any questions before moving on.
 
 ---
