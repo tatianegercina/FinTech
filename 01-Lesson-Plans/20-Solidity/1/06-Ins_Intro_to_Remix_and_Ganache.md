@@ -111,7 +111,7 @@ The Solidity file's code should appear in the editor window.
 
 Reassure the students that though this contract may look complicated now, soon it will make a lot more sense.
 
-Click the `Solidity Compiler` button on the remix sidebar then click `Compile` to compile the contract.
+Click the `Solidity Compiler` button on the Remix sidebar then click `Compile` to compile the contract.
 
 ![remix_compile_message_board](Images/remix_compile_message_board.png)
 
