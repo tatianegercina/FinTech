@@ -18,11 +18,19 @@ This guide serves as an overview for the various concepts required to understand
 
 * What are the advantages vs. disadvantages of both types of encryption techniques?
 
-  **Answer:** Symmetric encryption is the oldest and best-known technique for encryption; however, because of its use of only a single key (the private/secret key), there is the potential for a breach in security when exchanging the private key between two parties, especially over a vast network such as the Internet with possible eavesdroppers. In contrast, due to the use of a key pair in asymmetric encryption (public and private key), the private key is never exchanged and therefore is kept a secret at all times. Though as a result of the use of a key pair, asymmetic encryption is slower than symmetric encryption due to the increased processing power used to encrypt and decrypt messages.
+  **Answer:** Symmetric encryption is the oldest and best-known technique for encryption; however, because of its use of only a single key (the private/secret key), there is the potential for a breach in security when exchanging the private key between two parties, especially over a vast network such as the Internet with possible eavesdroppers. In contrast, due to the use of a key pair in asymmetric encryption (public and private key), the private key is never exchanged and therefore is kept a secret at all times. Though as a result of the use of a key pair, asymmetric encryption is slower than symmetric encryption due to the increased processing power used to encrypt and decrypt messages.
 
 * What is a digital signature?
 
+  **Answer:** A digital signature is a numerical value that is represented as a sequence of characters and is the product of ensuring the contents of a message have not been altered in transit (integrity), that the message was indeed sent by the sender (authentication), and that the sender cannot deny having sent the message (non-repudiation).
+
+* How does a digital signature work?
+
+  **Answer:** For example, a server could digitally sign a document and asymmetrically encrypt the message using its key pair (private key in this case) and create a one-way hash value. Clients with the associated public key would then be able to decrypt the message, and in doing so verify both the sender as well as the integrity of the message contents.
+
 * What is a wallet?
+
+  **Answer:** 
 
 * What is a hash?
 
@@ -43,3 +51,5 @@ Links:
 
 https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences - symmetric vs asymmetric
 https://support.microsoft.com/en-us/help/246071/description-of-symmetric-and-asymmetric-encryption - symmetric vs asymmetric
+https://www.instantssl.com/digital-signature - digital signature
+https://medium.com/@xragrawal/digital-signature-from-blockchain-context-cedcd563eee5 - digital signature
