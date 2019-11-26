@@ -137,7 +137,7 @@ Change the Environment to `Injected Web3`:
 
 Explain to the students that:
 
-* Web3.js is a set of javascript libraries which allow you to communicate with an Ethereum node.
+* Web3 is a library which allows you to communicate with Ethereum nodes.
 
 * We must set our environment to `Injected Web3` so that remix can talk to our local development chain.
 
