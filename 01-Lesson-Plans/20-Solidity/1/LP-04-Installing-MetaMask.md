@@ -48,9 +48,9 @@ Explain the following points about the usage agreement:
 
 ![MetaMask installation - 6](Images/metamask-6.png)
 
-In the next window, explain to students that they should enter the twelve words mnemonic of their local wallet, their wallet password, and they should click on the "I have read and agree the Terms of Use" checkbox to continue.
+In the next window, explain to students that they should enter the twelve word mnemonic of their local wallet, their wallet password, and they should click on the "I have read and agree the Terms of Use" checkbox to continue.
 
-Explain to students that we can securely accept the "Terms of Use" from MetaMask. If any student has a concern, invite him or her to read through the terms by clicking on the link.
+Explain to students that we can securely accept the "Terms of Use" from MetaMask. If anyone has a concern about this step, invite them to read through the terms by clicking on the link.
 
 ![MetaMask installation - 7](Images/metamask-7.png)
 
