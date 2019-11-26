@@ -32,7 +32,7 @@ Present the following diagram to the class and give them a few minutes to think 
 
   * EVM machine code consists of a list of instructions that the EVM will perform.
 
-  * A user pays a certain amount of `GAS` for each instruction that gets executed by the EVM.
+  * A user pays a certain amount of `gas` for each instruction that gets executed by the EVM.
 
   * Instead of just a transaction fee like `bitcoin`, you have a fee for running programs.
 
