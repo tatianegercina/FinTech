@@ -1,4 +1,4 @@
-# Web3.py & Bit Installation Guide
+# Blockchain Transactions Install Guide
 
 This guide serves as a step by step process for setting up and validating the `web3.py` and `bit` Python libraries. Without these libraries, class activities and their associated code will not be able to perform the necessary operations for communicating with blockchain networks programmatically.
 
