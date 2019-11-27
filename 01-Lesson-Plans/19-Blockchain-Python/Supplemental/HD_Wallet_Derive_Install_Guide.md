@@ -43,13 +43,30 @@ For those with a Mac OS X operating system, execute the following steps:
   php -S localhost:8000 phpinfo.php
   ```
 
-* The terminal should output the following and spin up a web server to showcase the results of the test `phpinfo` script.
+* The terminal should output the following and spin up a web server to showcase the results of the test `phpinfo` script. If you see the following output, then congratulations! Your machine is now updated to the newest version of PHP!
 
   ![php-terminal](Images/php-terminal.png)
 
   ![php-test](Images/php-test.png)
 
 ## Installation
+
+Now that the latest version of PHP is installed on our machines, we can now proceed to the installation of the `hd-wallet-derive` library.
+
+Execute the following steps:
+
+* Navigate to the [Github website](https://github.com/dan-da/hd-wallet-derive) for the `hd-wallet-derive` library and scroll down to the installation instructions.
+
+* Next, open a terminal and execute the following commands.
+
+  ```shell
+  git clone https://github.com/dan-da/hd-wallet-derive
+  cd hd-wallet-derive
+  php -r "readfile('https://getcomposer.org/installer');" | php
+  php composer.phar install
+  ```
+
+* 
 
 ## Execution
 
