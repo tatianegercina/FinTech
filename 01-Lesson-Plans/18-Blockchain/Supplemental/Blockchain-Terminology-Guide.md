@@ -52,18 +52,18 @@ This guide serves as an overview for the various concepts required to understand
 
   **Answer:** A consensus algorithm is a protocol used to verify the validity of transactions on a blockchain network. Due to the decentralized nature of the blockchain network, there is no central authority and therefore nodes within the blockchain network must be able to verify such transactions with certainty.
 
+* What is proof of authority?
+
+  **Answer:** Proof of Authority (PoA) is a reputation-based consensus algorithm in which the model relies on a limited number of block validators that act as moderators to verify the newest blocks and transactions.
+
+* What is proof of work?
+
+  **Answer:** Proof of Work (PoW) is an asset-based consensus algorithm in which the model relies on producing a piece of data which is both resource (computation) and time intensive, but allows for others to verify the validity of the transaction. This consensus algorithm directly relates to the blockchain mining concept in which miners solve intense computations to finalize transactions.
+
+* What is proof of stake?
+
+  **Answer:** Proof of Stake (PoS) is an collateral-based consensus algorithm in which the model relies on transactional validators whom are selected based on the amount of Bitcoin or Ether they hold. When they validate transactions, they put up a stake of their own Bitcoin or Ether and are rewarded (proportional to their stake) when a new block or transaction is added to the blockchain.
+
 ---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
-https://www.investopedia.com/terms/b/blockchain.asp - blockchain
-https://www.investopedia.com/terms/b/blockchain-wallet.asp - blockchain wallet
-https://blog.unocoin.com/what-happens-if-you-forget-your-bitcoin-wallet-keys-bbf563ce281a - blockchain wallet
-https://www.instantssl.com/digital-signature - digital signature
-https://medium.com/@xragrawal/digital-signature-from-blockchain-context-cedcd563eee5 - digital signature
-https://www.investopedia.com/terms/h/hash.asp - hash
-https://medium.com/coinmonks/blockchain-what-is-a-node-or-masternode-and-what-does-it-do-4d9a4200938f - blockchain node
-https://www.bitcoinmining.com/ - bitcoin mining
-https://www.investopedia.com/terms/b/blockchain-wallet.asp - blockchain wallet
-https://blog.unocoin.com/what-happens-if-you-forget-your-bitcoin-wallet-keys-bbf563ce281a - blockchain wallet
-https://www.binance.vision/blockchain/what-is-a-blockchain-consensus-algorithm - consensus algorithms
