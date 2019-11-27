@@ -22,7 +22,7 @@ For those with a **Windows operating system**, execute the following steps:
 
   ![xampp-path](Images/xampp-path.PNG)
 
-* Next, navigate to the System Environment Variables and edit the `PATH` environment variable.
+* Next, navigate to the System Environment Variables and edit the `Path` environment variable.
 
   ![start-menu-environment-search](Images/start-menu-environment-search.PNG)
 
@@ -30,7 +30,7 @@ For those with a **Windows operating system**, execute the following steps:
 
   ![environment-variables](Images/environment-variables.PNG)
 
-  ![environment-path-edit](environment-path-edit.PNG)
+  ![environment-path-edit](Images/environment-path-edit.PNG)
 
 For those with a **Mac OS X operating system**, execute the following steps:
 
