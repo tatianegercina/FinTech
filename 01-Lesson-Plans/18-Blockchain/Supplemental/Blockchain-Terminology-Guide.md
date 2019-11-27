@@ -1,72 +1,69 @@
-# Blockchain Terminology Guide
+# Blockchain Transactions Terminology Guide
 
-In this Unit, you will use some software tools and utilities to interact with blockchains and to create your very own blockchain from scratch.
+This guide serves as an overview for the various concepts required to understand the fundamentals of blockchain networks.
 
-Please follow this guide after starting Unit 18 to be able to follow all the activities and homework assignments.
+## Terminologies
 
-**Important Note:** Windows users **MUST** use `git-bash` and not the default Windows command prompt when you are requested to open the terminal window to execute commands.
+* What is a blockchain?
 
-## Installing MyCrypto Desktop App
+  **Answer:** A blockchain is a network of nodes or machines linked in a peer-to-peer fashion that facilitates transactions in a verifiable and permanent way. A blockchain network is also often called an open distributed ledger.
 
-[MyCrypto](https://www.mycrypto.com/) is a free, open-source, client-side interface that allows you to interact directly with the blockchain.
+* What is a blockchain node?
 
-For this Unit, we will use MyCrypto Desktop App to manage ethereum wallets and make transactions in the blockchain.
+  **Answer:** A node is a single machine that contributes to the infrastructure of a blockchain network. Blockchains networks as a whole are composed of multiple nodes that are interconnected with each other and therefore exchange the latest blockchain data with each other so that each node is up-to-date with the latest verified transactions on the blockchain network.
 
-To install MyCrypto Desktop App, please follow the next steps:
+* What is blockchain mining?
 
-1. Open your browser and navigate to the downloads page at https://download.mycrypto.com/.
+  **Answer:** Blockchain mining is the process of adding verified transaction records to the current blockchain data; miners act as separate nodes that are paid a fee to verify blockchain transactions and do so by solving intense computations to finalize transactions.
 
- ![MyCrypto installation - step 1](Images/mycrypto-1.png)
+* What is a blockchain wallet?
 
-2. Depending on your operating system, you will be redirected to the corresponding application installer. If you are not correctly redirected, choose the appropriate installer for your operating system.
+  **Answer:** A blockchain wallet is a digital wallet containing a public and private key that is used to not only store cryptocurrencies, but also conduct secure transactions amongst other users via wallet addresses (hashed version of a public key). It is imperative that the private key for a digital wallet be kept safe, as losing it will be prevent a user from accessing their funds (no other way for decryption).
 
-3. Once you download the installer, open the file, and follow the installation wizard. You will start using this application on Day 1.
+* What is Ethereum?
 
-### MyCrypto Installation Notes
+  **Answer:** Ethereum is an open software platform based on blockchain technology that enables developers to build and deploy decentralized applications.
 
-General Notes:
+* What is a hash?
 
-* The first time you execute MyCrypto, you will see the following starting tutorial, we suggest to read trough as you click "Next" to continue.
+  **Answer:** A hash value is a product of a function that converts an input of letters and numbers into an encrypted output of a fixed length. Hashing is one way to enable security during message transmission when the message is intended for a particular recipient only, ensuring that the message has not been tampered with, as doing so would generate a new hash value different from the originating hash value.
 
- ![MyCrypto installation - step 2](Images/mycrypto-2.gif)
+* What is a digital signature?
 
-Running in OS X:
+  **Answer:** A digital signature is a numerical value that is represented as a sequence of characters and is the product of ensuring the contents of a message have not been altered in transit (integrity), that the message was indeed sent by the sender (authentication), and that the sender cannot deny having sent the message (non-repudiation).
 
-* The first time you execute MyCrypto, you will see the following warning message, you can safely click on the "Open" button to start the application.
+* What is encryption?
 
- ![OS X Warning](Images/mycrypto-mac-wanrning.png)
+  **Answer:** Encryption is the process in which a message is encoded in a format that cannot be read or understood by an external party lacking the necessary credentials.
 
-## Installing Go Ethereum Tools
+* What is symmetric encryption?
 
-[Go Ethereum](https://geth.ethereum.org/) is one of the three original implementations of the Ethereum protocol. It is written in Go, fully open-source and licensed under the GNU LGPL v3.
+  **Answer:** Symmetric encryption is the simplest type of encryption that uses only a single key (a private/secret key) to both encrypt and decrypt information. As a result, the parties communicating via symmetric encryption must exchange the secret key so that it can be used in the decryption process, which is a security disadvantage compared to asymmetric encryption.
 
-In this Unit, we will use Go Ethereum Tools to create our very own blockchain, from the genesis block to mining tokens and making transactions.
+* What is an asymmetric key?
 
-Despite there are installers for OS X and Windows, we will use the application executable binary files to have a seamless experience between both operating systems and avoid some technical issues that currently exist in Windows.
+  **Answer:** Asymmetric encryption uses a key pair: a public and private key. As the name suggests, the public key is made freely available to anyone on the Internet while the private key is kept a secret by the end-user. Therefore, messages that are encrypted using the public key can only be decrypted using the associated private key, and messages that are encrypted using the private key can only be decrypted using the associated public key.
 
-To install the Go Ethereum Tools, please follow the next steps:
+* What are the advantages vs. disadvantages of both types of encryption techniques?
 
-1. Open your browser and navigate to the Go Ethereum Tools download page at https://geth.ethereum.org/downloads/
+  **Answer:** Symmetric encryption is the oldest and best-known technique for encryption; however, because of its use of only a single key (the private/secret key), there is the potential for a breach in security when exchanging the private key between two parties, especially over a vast network such as the Internet with possible eavesdroppers. In contrast, due to the use of a key pair in asymmetric encryption (public and private key), the private key is never exchanged and therefore is kept a secret at all times. Though as a result of the use of a key pair, asymmetric encryption is slower than symmetric encryption due to the increased processing power used to encrypt and decrypt messages.
 
-2. Scroll down to the "Stable Releases" section and proceed depending on your operating system.
+* What is a consensus algorithm?
 
- 2.1. Installing in OS X.
- Click on the **"Geth & Tools 1.9.7"** to download the applications bundle archive.
- ![Installing Geth - 1](Images/geth-1.gif)
-
- 2.2. Installing in Windows.
- ![Installing Geth - 2](Images/geth-2.gif)
- You need to know if you are running a `32 bit` or `64 bit` version of Microsoft Windows, if you are not sure about that, you can check your version following [these steps](https://support.microsoft.com/en-us/help/13443/windows-which-version-am-i-running).
-
- Depending on your Windows version, you should download the `32 bit` or `64 bit` version of the Go Ethereum Tools.
-
-3. After downloading the tools archive, open your "Downloads" folder, and you will find a file named `geth-alltools-darwin-amd64-1.9.7-a718daa6.tar.gz` in OS X, and a file called `geth-alltools-windows-amd64-1.9.7-a718daa6.zip` in Windows. Note that the last numbers in the filename could vary depending on the last built available.
-
-4. Decompress the archive in the location of your preference in your computer's hard drive, and rename the containing folder as `Blockchain-Tools`. We recommend using a location that can be easily accessed from the terminal window like the user's home directory.
-
- ![Installing Geth - 3](Images/geth-3.png)
-
-5. You have finished the installation process; you will use these tools to create your very own blockchain!
+  **Answer:** A consensus algorithm is a protocol used to verify the validity of transactions on a blockchain network. Due to the decentralized nature of the blockchain network, there is no central authority and therefore nodes within the blockchain network must be able to verify such transactions with certainty.
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
+https://www.investopedia.com/terms/b/blockchain.asp - blockchain
+https://www.investopedia.com/terms/b/blockchain-wallet.asp - blockchain wallet
+https://blog.unocoin.com/what-happens-if-you-forget-your-bitcoin-wallet-keys-bbf563ce281a - blockchain wallet
+https://www.instantssl.com/digital-signature - digital signature
+https://medium.com/@xragrawal/digital-signature-from-blockchain-context-cedcd563eee5 - digital signature
+https://www.investopedia.com/terms/h/hash.asp - hash
+https://medium.com/coinmonks/blockchain-what-is-a-node-or-masternode-and-what-does-it-do-4d9a4200938f - blockchain node
+https://www.bitcoinmining.com/ - bitcoin mining
+https://www.investopedia.com/terms/b/blockchain-wallet.asp - blockchain wallet
+https://blog.unocoin.com/what-happens-if-you-forget-your-bitcoin-wallet-keys-bbf563ce281a - blockchain wallet
+https://www.binance.vision/blockchain/what-is-a-blockchain-consensus-algorithm - consensus algorithms
