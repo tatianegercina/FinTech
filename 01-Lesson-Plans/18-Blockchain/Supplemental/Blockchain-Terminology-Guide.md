@@ -1,4 +1,4 @@
-# Blockchain Transactions Terminology Guide
+# Blockchain Terminology Guide
 
 This guide serves as an overview for the various concepts required to understand the fundamentals of blockchain networks.
 
