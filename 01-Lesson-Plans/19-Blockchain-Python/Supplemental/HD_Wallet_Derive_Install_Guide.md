@@ -57,6 +57,8 @@ Execute the following steps:
 
 * Navigate to the [Github website](https://github.com/dan-da/hd-wallet-derive) for the `hd-wallet-derive` library and scroll down to the installation instructions.
 
+  ![hd-wallet-derive-github](Images/hd-wallet-derive-github.png)
+
 * Next, open a terminal and execute the following commands.
 
   ```shell
@@ -66,9 +68,27 @@ Execute the following steps:
   php composer.phar install
   ```
 
-* 
+* You should now have a folder called `hd-wallet-derive` containing the PHP library.
 
 ## Execution
+
+Last step! Execute the `hd-wallet-derive` library to derive derive BIP32 addresses and private keys for Bitcoin and other alternative coins.
+
+* Navigate to your `hd-wallet-derive` folder.
+
+  ![hd-wallet-derive-folder](Images/hd-wallet-derive-folder.png)
+
+* Then execute the following commands (these are examples from the GitHub website).
+
+  ```shell
+  ./hd-wallet-derive.php -g --key=xprv9tyUQV64JT5qs3RSTJkXCWKMyUgoQp7F3hA1xzG6ZGu6u6Q9VMNjGr67Lctvy5P8oyaYAL9CAWrUE9i6GoNMKUga5biW6Hx4tws2six3b9c
+  ```
+
+  ```shell
+  ./hd-wallet-derive.php -g --key=xprv9tyUQV64JT5qs3RSTJkXCWKMyUgoQp7F3hA1xzG6ZGu6u6Q9VMNjGr67Lctvy5P8oyaYAL9CAWrUE9i6GoNMKUga5biW6Hx4tws2six3b9c --numderive=3 --preset=bitcoincore --cols=path,address --path-change
+  ```
+
+  ![hd-wallet-derive-execute](Images/hd-wallet-derive-execute.png)
 
 ---
 
