@@ -4,7 +4,7 @@
 
 * https://www.investopedia.com/terms/b/blockchain.asp
 
-## Node
+## Nodes
 
 * https://medium.com/coinmonks/blockchain-what-is-a-node-or-masternode-and-what-does-it-do-4d9a4200938f
 
