@@ -90,6 +90,8 @@ Last step! Execute the `hd-wallet-derive` library to derive derive BIP32 address
 
   ![hd-wallet-derive-execute](Images/hd-wallet-derive-execute.png)
 
+* Congratulations! The `hd-wallet-derive` library should now be working and good to go!
+
 ---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
