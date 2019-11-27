@@ -2,7 +2,7 @@
 
 This guide serves as a step by step process for setting up the `hd-wallet-derive` library used to derive BIP32 addresses and private keys for Bitcoin and other alternative coins or "altcoins".
 
-## Installation
+## Environment Setup
 
 The `hd-wallet-derive` library is written in the PHP language, therefore students will be required to first set up PHP on their machines before installing and then running the `hd-wallet-derive` library.
 
@@ -27,6 +27,31 @@ For those with a Mac OS X operating system, execute the following steps:
   ```shell
   export PATH=$PATH:/usr/local/bin
   ```
+
+* Next, test that the newest version of PHP is working correctly by first creating a test PHP script called `phpinfo.php` and then executing the following command.
+
+  ```php
+  <?php
+  
+  // Show all information, defaults to INFO_ALL
+  phpinfo();
+
+  ?>
+  ```
+
+  ```shell
+  php -S localhost:8000 phpinfo.php
+  ```
+
+* The terminal should output the following and spin up a web server to showcase the results of the test `phpinfo` script.
+
+  ![php-terminal](Images/php-terminal.png)
+
+  ![php-test](Images/php-test.png)
+
+## Installation
+
+## Execution
 
 ---
 
