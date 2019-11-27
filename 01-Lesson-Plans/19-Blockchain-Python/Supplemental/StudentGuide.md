@@ -6,7 +6,7 @@
 
 * https://support.microsoft.com/en-us/help/246071/description-of-symmetric-and-asymmetric-encryption
 
-## Bitcoin Wallets
+## Blockchain Wallets
 
 * https://www.investopedia.com/terms/b/blockchain-wallet.asp
 
