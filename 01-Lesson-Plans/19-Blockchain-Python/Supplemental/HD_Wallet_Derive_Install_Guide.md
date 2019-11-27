@@ -14,7 +14,23 @@ For those with a **Windows operating system**, execute the following steps:
 
   ![XAMPP-website](Images/XAMPP-website.png)
 
-* 
+* Use the XAMPP package to install PHP and its associated dependencies. Keep the defaults for now unless there is a dependency conflict.
+
+  ![XAMPP-install](Images/XAMPP-install.PNG)
+
+* Then, once the XAMPP package is installed, navigate to the folder where the PHP binaries are installed. This should be at `C:\xampp\php`.
+
+  ![xampp-path](Images/xampp-path.PNG)
+
+* Next, navigate to the System Environment Variables and edit the `PATH` environment variable.
+
+  ![start-menu-environment-search](Images/start-menu-environment-search.PNG)
+
+  ![environment-menu](environment-menu.PNG)
+
+  ![environment-variables](Images/environment-variables.PNG)
+
+  ![environment-path-edit](environment-path-edit.PNG)
 
 For those with a **Mac OS X operating system**, execute the following steps:
 
