@@ -6,9 +6,15 @@ This guide serves as a step by step process for setting up the `hd-wallet-derive
 
 The `hd-wallet-derive` library is written in the PHP language, therefore students will be required to first set up PHP on their machines before installing and then running the `hd-wallet-derive` library.
 
+**Note:** For the Windows installation we will be using the XAMPP package while for the Mac OS X installations we will be using Homebrew. The reasoning for this is because the XAMPP installation on MAC OS X does not provide a clearly defined path to the PHP installation, which is necessary for using the PHP CLI.
+
 For those with a **Windows operating system**, execute the following steps:
 
-* Windows machines do not come with a pre-build PHP and Apache Web Server, and therefore will require both. Luckily, there are installers that bundle these two together! Visit the [XAMPP website](https://www.apachefriends.org/index.html) and download the installer for Windows; the XAMPP is a popular PHP development environment that is easy to install and configure.
+* Windows machines do not come with a pre-built PHP and Apache Web Server, and therefore will require both. Luckily, there are installers that bundle these two together! Visit the [XAMPP website](https://www.apachefriends.org/index.html) and download the installer for Windows; the XAMPP is a popular PHP development environment that is easy to install and configure.
+
+  ![XAMPP-website](Images/XAMPP-website.png)
+
+* 
 
 For those with a **Mac OS X operating system**, execute the following steps:
 
