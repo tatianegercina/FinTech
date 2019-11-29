@@ -29,4 +29,4 @@ In this activity, you will be configuring your development environment for writi
     * TOTAL ACCOUNTS TO GENERATE = `10`
     * AUTOGENERATE HD MNEMONIC = `YOUR MNEMONIC PHRASE`
 
-* Once you've saved your workspace, take a few minutes to explore Ganache. Then open the remix IDE at [remix.ethereum.org](https://remix.ethereum.org) and use your remaining time exploring remix.
+* Once you've saved your workspace, take a few minutes to explore Ganache. Then open the Remix IDE at [remix.ethereum.org](https://remix.ethereum.org) and use your remaining time exploring Remix.
