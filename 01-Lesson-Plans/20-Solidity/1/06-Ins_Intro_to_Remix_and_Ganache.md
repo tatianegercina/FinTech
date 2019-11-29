@@ -29,7 +29,7 @@ Click `New Workspace` to create a new workspace.
 
 * Let's name our new workspace `fintech`
 
-* As you can see, there is another field titled `TRUFFLE PROJECTS`. What this field allows you to do is link a project that uses Truffle's Solidity compiler.  Today we will not be using Truffle's compiler. We will use `Remix`; Ethereum foundations online implementation of a Solidity IDE that has its own built-in compiler.
+* As you can see, there is another field titled `TRUFFLE PROJECTS`. What this field allows you to do is link a project that uses the `truffle solidity compiler`.  Today we will not be using the truffle compiler. We will use `remix`; Ethereum foundations online implementation of the `solidity compiler`.
 
 Click the Server tab.
 
