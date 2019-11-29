@@ -101,7 +101,7 @@ Briefly introduce Remix:
 
 * Remix allows you to write, compile and deploy Solidity smart contracts onto the Ethereum blockchain.
 
-Open the example smart contract [MessageBoard.sol](Activities/06-Ins_Intro_to_Remix_and_Ganache/Solved/MessageBoard.sol) by clicking the `Add local file` button.
+Create a new smart contract by clicking the `Add local file` button. Then, populate the contents with [MessageBoard.sol](Activities/06-Ins_Intro_to_Remix_and_Ganache/Solved/MessageBoard.sol).
 
 ![remix_open_file](Images/remix_open_file.png)
 
