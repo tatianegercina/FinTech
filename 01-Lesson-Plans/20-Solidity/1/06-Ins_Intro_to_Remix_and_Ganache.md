@@ -95,7 +95,7 @@ Now that Ganache is running the local development blockchain on `localhost:8545`
 
 ![remix_home.png](Images/remix_home.png)
 
-Briefly introduce remix.
+Briefly introduce Remix:
 
 * Remix is an online IDE, and compiler for the `Solidity` smart contract language.
 
