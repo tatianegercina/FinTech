@@ -4,19 +4,19 @@ Students will fill in a simple chart (pipeline) of the various levels of the EVM
 
 **Instructions:**
 
-* [README.md](Activities/02-Stu_Practice/README.md)
+* [README.md](Activities/10_Stu_Contextualizing_Solidity_Worksheet/README.md)
 
 **Files:**
 
-* [WorkSheet - Solved](Activities/10_Stu_Contextualizing_Solidity_Worksheet/Solved/EVM_worksheet.png)
+* [WorkSheet - Solved](Activities/10_Stu_Contextualizing_Solidity_Worksheet/Solved/evm_worksheet.md)
 
-* [WorkSheet - Unsolved](Activities/10_Stu_Contextualizing_Solidity_Worksheet/Unsolved/EVM_worksheet.png)
+* [WorkSheet - Unsolved](Activities/10_Stu_Contextualizing_Solidity_Worksheet/Unsolved/evm_worksheet.md)
 
 ### 11. Instructor Do: Contextualizing Solidity Review (5 min)
 
 Once again, display the completed graphic of the EVM's architecture to the class.
 
-![Solved](Activities/10_Stu_Contextualizing_Solidity_Worksheet/Solved/EVM_worksheet.png)
+![Solved](Images/EVM_graphic.png)
 
 Ask the class the following recall questions:
 
@@ -28,15 +28,11 @@ Ask the class the following recall questions:
 
 * What do you think some benefits of Solidity being a compiled language might be?
 
-  **Answer** Human readable code can turn into machine readable code.
+  **Answer** Human readable code can turn into machine-readable code.
 
-  **Answer** Code can just be executed faster.
+  **Answer** Code can be executed faster.
 
-* What's a basic component of a virtual machine?
-
-   **Answer** CPU, program counter, or stack.
-
-* What is an example of a `Higher Level Language`?
+* What's an example of a programing language that humans write, eg `High level languages`?
 
   **Answer** Solidity
 
