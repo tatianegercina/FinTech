@@ -8,7 +8,7 @@ In this activity, you will be configuring your development environment for writi
 
 * If the link is not working or your correct `operating system` is not appearing on the page. Downloads of the latest ganache releases can be found on their Github page at [Ganache releases](https://github.com/trufflesuite/ganache/releases).
 
-![Ganache releases](../../Images/ganache_github_releases.png)
+![Ganache releases](Images/ganache_github_releases.png)
 
 * Once you have downloaded the Ganache executable for your desired operating system, install and launch Ganache.
 
