@@ -1,21 +1,9 @@
-### Levels of the EVM Stack
+### Levels of the Ethereum Stack
 
- | Level of EVM  | Implementation |
----------|----------|---------
-| - | Solidity |
-| Machine Code | - |
-| - | Ethereum Virtual Machine |
-| Process/Runtime | - |
+| Level on the Stack | Ethereum Implementation |
+| --------- |------- |
+| High Level Language | {Answer Here} |
+| Machine Code | {Answer Here} |
+| Virtual Machine | Ethereum Virtual Machine |
+| Process/Runtime | {Answer Here} |
 | Hardware | Physical Processor |
-
-Wordbank
-
------
-
-* EVM Byte Code
-
-* High-Level Language
-
-* Virtual Machine
-
-* Ethereum Node (Geth, Parity)
