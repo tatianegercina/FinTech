@@ -62,7 +62,7 @@ For those with a **Mac OS X operating system**, execute the following steps:
 * Once Homebrew is installed, execute the following command in your terminal. This should install the latest version of PHP (7.3 at this current time).
 
   ```shell
-  brew install php
+  brew install php@7.3
   ```
 
 * Then, in order to point to the newest version of PHP, export the following path to your `PATH` environment variable. This will allow you to run the command `php` from anywhere in your terminal and point to the Homebrew version that was just installed.
