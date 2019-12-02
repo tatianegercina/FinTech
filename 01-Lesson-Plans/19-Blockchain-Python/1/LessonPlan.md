@@ -50,7 +50,7 @@ By the end of the unit, students will be able to:
 
 Open the slides, cover the agenda for the day, then navigate to the beginning of the slideshow.
 
-Welcome students to today's class. Cover the agenda slides and then provide a blockchain architecture refresher.
+Welcome the students to today's class. Cover the agenda slides and then provide a blockchain architecture refresher.
 
 Ask the students the following questions:
 
@@ -66,7 +66,7 @@ Ask the students the following questions:
 
   **Answer**: A signed message that authorizes the transfer of funds from one account to another.
 
-Explain that today we are going to be talking to blockchains in our favorite language, Python.
+Explain to students that today, we are going to be talking to blockchains in our favorite language, Python.
 
 Ask the class:
 
@@ -101,7 +101,7 @@ Continue through the slides, introducing the concept of "Web 3.0" and the Python
 
 ![web3.py](Images/web3.py.png)
 
-* Web3.py is a library gives us the ability to talk to Ethereum nodes in our favorite language, Python.
+* Web3.py is a library that gives us the ability to talk to Ethereum nodes in our favorite language, Python.
 
 * Think of it like any other SDK you've used to talk to other APIs, only the API comes from an Ethereum node this time.
 
@@ -109,11 +109,11 @@ Continue through the slides, introducing the concept of "Web 3.0" and the Python
 
 ### 3. Students Do: Activate Ethereum Network (10 min)
 
-Students will now activate their local custom chains they build last unit.
+Students will now activate their local custom chains; they build the last unit.
 
 Provide a checklist for the students with the commands necessary to start the chain, as well as a backup chain for students to use if something went wrong with theirs.
 
-Circulate around with the TAs to ensure that everyone is able to start their networks. If any student cannot complete this, ask them to pair with a neighboor until they can troubleshoot their system during a break.
+Circulate around with the TAs to ensure that everyone is able to start their networks. If any student cannot complete this, ask them to pair with a neighbor until they can troubleshoot their system during a break.
 
 **Instructions:**
 
@@ -129,7 +129,7 @@ Ask the students a few questions that they might have realized during the homewo
 
 * What does the RPC port allow us to do?
 
-  **Answer**: This exposes this Ethereum APIs needed to talk to our node.
+  **Answer**: This exposes these Ethereum APIs needed to talk to our node.
 
 Assure the students that if they don't know the answers to these next questions, it's totally okay:
 
@@ -142,7 +142,7 @@ Assure the students that if they don't know the answers to these next questions,
 
   **Answer**: A regular node still is connected to other nodes, so it can provide its peer list as well, even though it might not be as large.
 
-Alright, that's enough architecure for now, let's start fetching data from our blockchain!
+Alright, that's enough architecture; for now, let's start fetching data from our blockchain!
 
 ### 4. Everyone Do: Fetching balance with Web3.py (15 min)
 
@@ -184,7 +184,7 @@ This should display the latest block number.
 
 If students encounter an error at this stage, ensure that their local chains are properly running with the RPC port `8545` exposed.
 
-Let's check the balance of our primary address that we've been using throughout class.
+Let's check the balance of our primary address that we've been using throughout the class.
 
 * Replace your address with an address you've been using on your local chains.
 
@@ -194,7 +194,7 @@ w3.eth.getBalance("0xc3879B456DAA348a16B6524CBC558d2CC984722c")
 
 This should return a number that matches the balance in your wallet.
 
-Voila! Now it's time to actually spend some Ether from that address.
+Voila! Now it's time to actually to spend some Ether from that address.
 
 Ask the students:
 
@@ -316,7 +316,7 @@ print(private_key)
 Have the students save and run this file. Ensure that the students are successfully printing their keys.
 
 Now we're getting keys loaded in a much more secure way!
-Congratulate the students on learning a bit of cyber security on top of all of their FinTech skills.
+Congratulate the students on learning a bit of cybersecurity on top of all of their FinTech skills.
 
 ### 6. Instructor Do: Importing Keys with Environment Variables Review (5 min)
 
@@ -324,7 +324,7 @@ Ask the students a few questions about why we wrote the code the way we did.
 
 * What is the point of environment variables?
 
-  **Answer**: One reason is for having machine-specific variables, another is to keep sensitive data out of the code.
+  **Answer**: One reason is for having machine-specific variables; another is to keep sensitive data out of the code.
 
 * Why not just keep the key in the code?
 
@@ -336,44 +336,44 @@ Ask the students a few questions about why we wrote the code the way we did.
 
 ### 7. Everyone Do: Creating a Keystore (10 min)
 
-Time to create a keystore, an encrypted file that contains the private key to an account.
+Time to create a Keystore, a Keystore is an encrypted file that contains the private key to an account.
 
-* Explain to class that a keystore is a more secure method of storing the keys long-term, but requires a password to decrypt/unlock.
+* Explain to the class that a Keystore is a more secure method of storing the keys long-term, but requires a password to decrypt/unlock.
 
 Present the following scenario to the class:
 
 * Suppose your sibling or other relative wants in on the action that is your new blockchain.
   They are begging you to send them some crypto, and now you feel you're ready to.
 
-* Let's create a keystore for your relative, so that we can send funds to their account later, with pure Python.
+* Let's create a Keystore for your relative, so that we can send funds to their account later, with pure Python.
 
-First, open up MyCrypto again, then select `Create new Wallet` at the left hand side.
+First, open up MyCrypto again, then select `Create new Wallet` at the left-hand side.
 
 Click `Generate a Wallet`, then click `Generate a Keystore File`.
 
 ![mycrypto create keystore](Images/mycrypto-create-keystore.gif)
 
-Have the class follow along, and have them all create a unique password for their relative's keystore.
+Have the class follow along, and have them all create a unique password for their relative's Keystore.
 
-Instruct the class that they will be prompted to download their keystore file. Tell the students to save the keystore file into the same directory that their Python web3 code is in.
+Instruct the class that they will be prompted to download their Keystore file. Tell the students to save the Keystore file into the same directory that their Python web3 code is in.
 
-Students can optionally choose to save a paper wallet version of the keystore for safe keeping, which includes the private key and address.
+Students can optionally choose to save a paper wallet version of the Keystore for safekeeping, which includes the private key and address.
 
-Ensure that all students have created a new keystore and saved the file before continuing.
+Ensure that all students have created a new Keystore and saved the file before continuing.
 
 ### 8. Instructor Do: Keystore Review (5 min)
 
-Ask the students a few questions about keystores:
+Ask the students a few questions about Keystores:
 
-* What is a keystore?
+* What is a Keystore?
 
   **Answer**: An encrypted file that contains some data, like a private key.
 
-* Why use a keystore instead of just a private key?
+* Why use a Keystore instead of just a private key?
 
-  **Answer**: The private key stays protected on disk, since it's encrypted.
+  **Answer**: The private key stays protected on the disk since it's encrypted.
 
-* What type of cryptography does a keystore use to encrypt a private key?
+* What type of cryptography does a Keystore use to encrypt a private key?
 
   **Answer**: Symmetric Cryptography! (The password is the symmetric key).
 
@@ -387,7 +387,7 @@ Ask the students a few questions about keystores:
 
 Welcome the students back to class, and have them get settled in.
 
-Have the students prepare the address of the keystore they created before break by opening up MyCrypto,
+Have the students prepare the address of the Keystore they created before the break by opening up MyCrypto,
 importing the Keystore File, and entering the password:
 
 ![mycrypto import keystore](Images/mycrypto-import-keystore.gif)
@@ -408,7 +408,7 @@ Continue in the `main.py` you've been working in.
 
 Students that are running a PoA chain will have to use a special middleware function to support their chain.
 
-Ask the students to raise their hand if the local chain they are using is using Proof of Authority.
+Ask the students to raise their hands if the local chain they are using is using Proof of Authority.
 
 For the students that raise their hands, have them add the following to their code:
 
@@ -443,7 +443,7 @@ private_key = os.getenv("PRIVATE_KEY")
 
 The students that are using Proof of Work locally do not need to follow these steps.
 
-Now, we need to convert the private key into an object that we can use to sign transactions, as well as messages, with.
+Now, we need to convert the private key into an object that we can use to sign transactions, as well as messages with.
 
 Import the `Account` module from `eth_account` at the top of the file:
 
@@ -509,7 +509,7 @@ def create_raw_tx(account, recipient, amount):
 
 Ensure students have defined their functions to this point.
 
-Now, lets take these parameters and arrange them in a way that aligns with a proper Ethereum transaction.
+Now, let us take these parameters and arrange them in a way that aligns with a proper Ethereum transaction.
 
 First, we need a way of estimating the gas, aka transaction fee, needed to send the transaction:
 
@@ -575,11 +575,11 @@ def send_tx(account, recipient, amount):
 
 * Explain that the `w3.eth.sendRawTransaction` function takes the raw, signed transaction bytes and sends it to the node you are connected to.
 
-* This outputs the hexadecimal format of the transaction hash, so that we can read it in our terminal and use it for later, versus printing the raw bytes.
+* This outputs the hexadecimal format of the transaction hash so that we can read it in our terminal and use it for later, versus printing the raw bytes.
 
 With this function, we can now send a transaction.
 
-Let's take our relative's new address that we generated from the keystore and send them some crypto!
+Let's take our relative's new address that we generated from the Keystore and send them some crypto!
 
 ```python
 send_tx(account_one, "0xa2C1eC996ceE707bB3c323f2D5D9334Ad51F835b", 3333333333)
@@ -616,7 +616,7 @@ Ask the students a few questions:
 
 * Why is this useful to us?
 
-  **Answer**: We can programmatically manage money and build next generation applications.
+  **Answer**: We can programmatically manage money and build next-generation applications.
 
 * What cryptographic technique are we using when we sign a transaction?
 
@@ -632,7 +632,7 @@ Ask the students a few questions:
 
 ### 13. Everyone Do: Importing Keystore Accounts (15 min)
 
-Now, let's say we wanted to send a transaction from the account stored in a keystore.
+Now, let's say we wanted to send a transaction from the account stored in a Keystore.
 
 We'll need to import the key in a different way.
 
@@ -640,9 +640,9 @@ We'll need to import the key in a different way.
 
 * [main.py](Activities/04-Ins_Importing_Keystore/Solved/main.py)
 
-Continue using the keystore that you created earlier in class.
+Continue using the Keystore that you created earlier in class.
 
-Let's also continue in the same `main.py`. We need to import a couple of modules to securely decrypt the keystore.
+Let's also continue in the same `main.py`. We need to import a couple of modules to decrypt the Keystore securely.
 
 Add this to the top of the file:
 
@@ -651,9 +651,9 @@ from pathlib import Path
 from getpass import getpass
 ```
 
-* `getpass` is a library that allows us to ask for a password in the command line securely. We'll use this to get the keystore password later.
+* `getpass` is a library that allows us to ask for a password in the command line securely. We'll use this to get the Keystore password later.
 
-Now, we'll need to add the following code to pull the keystore, prompt for a password, decrypt the key and convert to and `Account` object.
+Now, we'll need to add the following code to pull the Keystore, prompt for a password, decrypt the key and convert to and `Account` object.
 
 Add the following code after the first account assignment:
 
@@ -728,7 +728,7 @@ def send_tx(account, recipient, amount):
 
 Ensure that all of the students are caught up to this point.
 
-We can verify the second account was properly imported by running the following:
+We can verify that the second account was properly imported by running the following:
 
 ```python
 print(account_two.address)
@@ -805,8 +805,8 @@ Ask the students:
 
 * Wouldn't it be cool to do this with other blockchains besides Ethereum?
 
-Explain that we'll be learning how to perform this same process with the Bitcoin blockchain, and by proxy,
-all of it's decendants (like Litecoin, Dash, Bitcoin Cash, etc).
+Explain that we'll be learning how to perform this same process with the Bitcoin blockchain and by proxy,
+all of its descendants (like Litecoin, Dash, Bitcoin Cash, etc.).
 
 Send out the following instructions to have the students extract a Bitcoin testnet address and request tokens.
 
@@ -817,7 +817,7 @@ Send out the following instructions to have the students extract a Bitcoin testn
 Since it takes time for transactions to mine, we are having the students request the testnet coins early,
 allowing time in between class for troubleshooting in case students have difficulties.
 
-Before next class, request some test bitcoins of your own to prepare to send to students that had difficulties.
+Before the next class, request some test bitcoins of your own to prepare to send to students that had difficulties.
 
 - - -
 
