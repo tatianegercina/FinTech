@@ -26,6 +26,11 @@ For those with a **Windows operating system**, execute the following steps:
 
 ```shell
 extension=php_gmp.dll
+```
+
+* This will enable a necessary PHP extension that `hd-wallet-derive` relies on.
+
+* Next, navigate to the System Environment Variables and edit the `Path` environment variable; add the path containing the PHP binaries to the end of the `Path` environment variable.
 
   ![start-menu-environment-search](Images/start-menu-environment-search.PNG)
 
@@ -39,7 +44,7 @@ extension=php_gmp.dll
 
   ```php
   <?php
-  
+
   // Show all information, defaults to INFO_ALL
   phpinfo();
 
@@ -78,7 +83,7 @@ For those with a **Mac OS X operating system**, execute the following steps:
 
   ```php
   <?php
-  
+
   // Show all information, defaults to INFO_ALL
   phpinfo();
 
