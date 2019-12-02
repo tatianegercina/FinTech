@@ -42,6 +42,8 @@ By the end of the class, students will be able to:
 
 * Today's lesson is not designed to teach someone how the math and algorithms work, the goal is to allow students to be able to navigate the blockchain industry and to understand basic security.
 
+* Slack out the [Blockchain TX Installation Guide](../../19-Blockchain-Python/Supplemental/Blockchain_TX_Install_Guide.md) and the [HD Wallet Derive Installation Guide](../../19-Blockchain-Python/Supplemental/HD_Wallet_Derive_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson 18.2 Slides](https://docs.google.com/presentation/d/1BoVhryoBLymyaMhnds0B77Mgydfa3yhOV-iX9xMT1EI/edit?usp=sharing).

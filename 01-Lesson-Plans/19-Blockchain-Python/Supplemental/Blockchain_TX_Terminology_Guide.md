@@ -1,6 +1,6 @@
 # Blockchain Transactions Terminology Guide
 
-This guide serves as an overview for the various concepts required to understand the notion of sending and receiving transactions over a blockchain network using virtual wallets.
+This guide serves as an overview of the various concepts required to understand the notion of sending and receiving transactions over a blockchain network using virtual wallets.
 
 ## Terminologies
 
@@ -30,11 +30,11 @@ This guide serves as an overview for the various concepts required to understand
 
 * How does a digital signature work?
 
-  **Answer:** For example, a server could digitally sign a document and asymmetrically encrypt the message using its key pair (private key in this case) and create a one-way hash value. Clients with the associated public key would then be able to decrypt the message, and in doing so verify both the sender as well as the integrity of the message contents.
+  **Answer:** For example, a server could digitally sign a document and asymmetrically encrypt the message using its key pair (private key in this case) and create a one-way hash value. Clients with the associated public key would then be able to decrypt the message, and in doing so, verify both the sender as well as the integrity of the message contents.
 
 * What is a (blockchain) wallet?
 
-  **Answer:** A blockchain wallet is a digital wallet containing a public and private key that is used to not only store cryptocurrencies, but also conduct secure transactions amongst other users via wallet addresses (hashed version of a public key). It is imperative that the private key for a digital wallet be kept safe, as losing it will be prevent a user from accessing their funds (no other way for decryption).
+  **Answer:** A blockchain wallet is a digital wallet containing a public and a private key that is used to not only store cryptocurrencies, but also conduct secure transactions amongst other users via wallet addresses (hashed version of a public key). It is imperative that the private key for a digital wallet be kept safe, as losing it will prevent a user from accessing their funds (no other way for decryption).
 
 * What is BIP?
 
