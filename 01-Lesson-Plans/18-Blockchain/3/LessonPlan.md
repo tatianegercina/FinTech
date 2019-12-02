@@ -34,6 +34,8 @@ By the end of the unit, students will be able to:
 
 * Have a look at the [Proof of Stake](https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ) FAQ on the Ethereum wiki for an in-depth comparison between it and Proof of Work.
 
+* Slack out the [Blockchain TX Installation Guide](../../19-Blockchain-Python/Supplemental/Blockchain_TX_Install_Guide.md) and the [HD Wallet Derive Installation Guide](../../19-Blockchain-Python/Supplemental/HD_Wallet_Derive_Install_Guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
+
 ### Class Slides and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1E5gDn4M6ivj1i0ZoUmjhcRUIam97v-scO0xQgu1B_CQ/edit?usp=sharing).

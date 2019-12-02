@@ -4,7 +4,7 @@ This guide serves as a step by step process for setting up and validating the `w
 
 ## Installation
 
-Open a terminal, and execute the following commands to install `web3.py` and `bit`, respectively.
+Open a terminal and execute the following commands to install `web3.py` and `bit`, respectively.
 
 * Use the `pip install` command to download the `web3.py` module.
 
