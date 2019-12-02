@@ -413,6 +413,16 @@ Once everyone has successfully installed the tool, have everyone `cd ..` into th
 
 First, let's create something called a "symlink" -- essentially a shortcut -- to our `hd-wallet-derive.php` script called `derive` to make the command shorter.
 
+Note, creating symlinks is not supported by default on Windows, only reading them, so first, have Windows users perform the following steps:
+
+* Open up Git-Bash as an administrator (right click on Git-Bash in the start menu).
+
+* Within `bash`, run the command `export MSYS=winsymlinks:nativestrict`.
+
+* `cd` back to the parent directory of `hd-wallet-derive`, within the same workspace as before.
+
+* Continue following along with the next steps in this elevated terminal window. After we create the symlink, we can go back to using our regular Git-Bash terminal.
+
 Have everyone type:
 
 ```bash
@@ -421,7 +431,9 @@ ln -s hd-wallet-derive/hd-wallet-derive.php derive
 
 Now, instead of calling the program by its full name, like `./hd-wallet-derive/hd-wallet-derive.php`, we can just call `./derive`.
 
-Type the following command into the terminal, explaining each flag:
+* Windows users can now go back to using their regular terminal, or continue in the elevated terminal.
+
+Type the following command into the terminal, using your instructor mnemonic, and explain each flag:
 
 ```bash
 ./derive -g --mnemonic="INSERT MNEMONIC HERE" --cols=path,address,privkey,pubkey
@@ -521,6 +533,17 @@ p_status = p.wait()
 
 print(output)
 ```
+
+For students that are running Windows:
+
+* Windows processes commands slightly differently from other operating systems.
+  Instead of calling `./derive` using the "dot-slash" format, we must write out the full command and call `php` manually, like so:
+
+```python
+command = 'php derive -g --mnemonic="INSERT HERE" --cols=path,address,privkey,pubkey'
+```
+
+Ensure Windows users understand the difference in formatting for their command, then move on.
 
 Have everyone copy this down, and explain:
 
