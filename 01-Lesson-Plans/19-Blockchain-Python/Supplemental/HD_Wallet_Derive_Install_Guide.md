@@ -102,7 +102,7 @@ Execute the following steps:
 
   ![hd-wallet-derive-github](Images/hd-wallet-derive-github.png)
 
-* Next, open a terminal and execute the following commands.
+* Next, open a terminal and execute the following commands. If you are using Windows, you will need to open the Git-Bash GUI via `C:\Program Files\Git\bin\bash` directly to enable something called `tty` mode that makes the terminal more compatible with Unix systems. Once installed, you may move back to using the usual Git-Bash terminal.
 
   ```shell
   git clone https://github.com/dan-da/hd-wallet-derive
