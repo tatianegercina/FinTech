@@ -22,7 +22,7 @@ For those with a **Windows operating system**, execute the following steps:
 
   ![xampp-path](Images/xampp-path.PNG)
 
-*  Edit the `php.ini` folder (`C:\xampp\php\php.ini`) and add the following line to the file:
+*  Edit the `php.ini` file (`C:\xampp\php\php.ini`) and add the following line to the file:
 
 ```shell
 extension=php_gmp.dll
