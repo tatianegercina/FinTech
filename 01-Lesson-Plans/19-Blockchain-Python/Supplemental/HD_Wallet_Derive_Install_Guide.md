@@ -22,7 +22,10 @@ For those with a **Windows operating system**, execute the following steps:
 
   ![xampp-path](Images/xampp-path.PNG)
 
-* Next, navigate to the System Environment Variables and edit the `Path` environment variable; add the path containing the PHP binaries to the end of the `Path` environment variable.
+*  Edit the `php.ini` folder (`C:\xampp\php\php.ini`) and add the following line to the file:
+
+```shell
+extension=php_gmp.dll
 
   ![start-menu-environment-search](Images/start-menu-environment-search.PNG)
 
