@@ -837,7 +837,7 @@ Perform the following:
 
   ![Remix Deployed Contract](Images/remix_deployed_contract.png)
 
-* If your contract successfully deployed, it should now appear as a grey box under deployed contracts at the bottom of the deploy sidebar.
+  * If your contract successfully deployed, it should now appear as a grey box under deployed contracts at the bottom of the deploy sidebar.
 
 * Click the drop-down arrow next to the grey deployed contract to display the contract's functions that can be called.
 
@@ -861,7 +861,7 @@ Lead students through passing `10 ether` into the deposit function and then with
 
 * Now click the `Deposit` button under the deployed contract.
 
-![Remix transaction Confirm](Images/remix_transaction_confirm.png)
+  ![Remix transaction Confirm](Images/remix_transaction_confirm.png)
 
 * You will be prompted by meta mask to confirm the amount. Click `Confirm`.
 
