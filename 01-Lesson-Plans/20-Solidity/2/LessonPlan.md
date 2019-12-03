@@ -98,9 +98,9 @@ In this activity, you will demonstrate how to construct a basic contract in Soli
 
 Open your web browser and navigate to the [Remix IDE website](http://remix.ethereum.org):
 
-![remix_1.png](Images/remix_1.png)
-
 * Click on the create new file button in the file explorer:
+
+  ![remix_1.png](Images/remix_1.png)
 
   ![remix_2.png](Images/remix_2.png)
 
