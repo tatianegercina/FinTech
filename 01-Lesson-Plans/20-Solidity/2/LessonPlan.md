@@ -385,25 +385,27 @@ Ask for any remaining questions before moving on.
 
 ### 9. Instructor Do: Quick Review (10 min)
 
+In this activity, the instructor performs a quick review on concepts learned throughout the first half of today's lesson.
+
 * If I have a function or variable that I want to be able to call from outside the contract, what modifier would I add to the function definition?
 
- Answer: `public or the public modifier`
+  **Answer:** `public or the public modifier`
 
 * If I pass a parameter into a function, where will I have to store that variable temporarily?
 
- Answer `In memory`
+  **Answer:** `In memory`
 
 * For someone that wants to create a function that stores a given address, what data type would they use?
 
- Answer `address data type`
+  **Answer:** `address data type`
 
 * If you’re writing a function that returns a string and an address, what would be in the returns?
 
- Answer: `returns(string memory, address)`
+  **Answer:** `returns(string memory, address)`
 
 * If you’re writing a function that returns a boolean and a string, what would be in the returns?
 
- Answer: `returns(boolean, string memory)`
+  **Answer:** `returns(boolean, string memory)`
 
 ### 10. Instructor Do: Storing, Catching, Withdrawing Ether (10 min)
 
