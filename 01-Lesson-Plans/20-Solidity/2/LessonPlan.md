@@ -98,30 +98,30 @@ In this activity, you will demonstrate how to construct a basic contract in Soli
 
 Open your web browser and navigate to the [Remix IDE website](http://remix.ethereum.org):
 
- ![remix_1.png](Images/remix_1.png)
+![remix_1.png](Images/remix_1.png)
 
-Click on the create new file button in the file explorer:
+* Click on the create new file button in the file explorer:
 
- ![remix_2.png](Images/remix_2.png)
+  ![remix_2.png](Images/remix_2.png)
 
-Enter the name of the new Solidity file "message_contract.sol" and click `OK`:
+* Enter the name of the new Solidity file "message_contract.sol" and click `OK`:
 
- ![remix_3.png](Images/remix_3.png)
+  ![remix_3.png](Images/remix_3.png)
 
-You should now see the following empty editor window:
+* You should now see the following empty editor window:
 
-![Images/remix_4.png](Images/remix_4.png)
+  ![Images/remix_4.png](Images/remix_4.png)
 
-Type the following contract into the editor window:
+* Type the following contract into the editor window:
 
-```solidity
-pragma solidity ^0.5.0;
+  ```solidity
+  pragma solidity ^0.5.0;
 
-contract MessageContract {
- address my_address = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- string message = "Send me money!";
-}
-```
+  contract MessageContract {
+  address my_address = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+  string message = "Send me money!";
+  }
+  ```
 
 Break down the contract to the students:
 
