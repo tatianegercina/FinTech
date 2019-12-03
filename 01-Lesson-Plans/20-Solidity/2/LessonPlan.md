@@ -411,61 +411,55 @@ In this activity, the instructor performs a quick review on concepts learned thr
 
 In this activity, we will demonstrate how to add functions for depositing ether, withdrawing ether, and a default "fallback" function that can be used to catch Ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions as well as to payable addresses in the contract.
 
-Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavings.sol`.
+Earlier in the day, we built a simple contract that stored variables representing a rewards/bank account balance. Let's take that a step further and build a JointSavings account smart contract that allows two addresses to manage a savings account.
 
-* Earlier in the day, we built a simple contract that stored variables representing a rewards/bank account balance.
- Let's take that a step further and build a JointSavings account smart contract that allows two addresses to manage a savings account.
+Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavings.sol`:
 
-Type the following contract boilerplate:
+* Type the following contract boilerplate:
 
-```solidity
-pragma solidity ^0.5.0;
+  ```solidity
+  pragma solidity ^0.5.0;
 
-contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
-}
-```
+  contract JointSavings {
+  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+  }
+  ```
 
-* Once again, we are defining what version of the compiler we want to use by setting the `pragma`.
+  * Once again, we are defining what version of the compiler we want to use by setting the `pragma`.
 
-* Then, we define the contract and call it `JointSavings`.
+  * Then, we define the contract and call it `JointSavings`.
 
-* Next, we set two addresses to represent the owners of the joint savings account.
+  * Next, we set two addresses to represent the owners of the joint savings account.
 
-* Pay special attention to the new modifier that we are using called `payable`.
- By setting an `address` or function as `payable`, we unlock special functions that allow us to capture and manage Ether.
+  * Pay special attention to the new modifier that we are using called `payable`. By setting an `address` or function as `payable`, we unlock special functions that allow us to capture and manage Ether.
 
-For example, if we wanted to withdraw Ether from the contract, we can add a withdraw function like so:
+* For example, if we wanted to withdraw Ether from the contract, we can add a withdraw function like so:
 
-```solidity
-pragma solidity ^0.5.0;
+  ```solidity
+  pragma solidity ^0.5.0;
 
-contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+  contract JointSavings {
+  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
- function withdraw(uint amount, address payable recipient) public {
- return recipient.transfer(amount);
- }
-}
-```
+  function withdraw(uint amount, address payable recipient) public {
+  return recipient.transfer(amount);
+  }
+  }
+  ```
 
-* Our withdrawal function accepts the following parameters:
+  * Our withdrawal function accepts the following parameters:
 
- * A `uint` amount representing the amount of Ether (in its smallest denomination, Wei) we would like to withdraw.
+    * A `uint` amount representing the amount of Ether (in its smallest denomination, Wei) we would like to withdraw.
 
- * The `address` recipient that we would like to withdraw to.
+    * The `address` recipient that we would like to withdraw to.
 
-* All smart contracts on Ethereum have their own address when deployed, and can store and send Ether like a wallet.
+  * All smart contracts on Ethereum have their own address when deployed, and can store and send Ether like a wallet.
 
-* Address types have built-in functions, like `address.balance`.
- If we set the address to `payable`, the `.transfer` function is enabled, which allows us to transfer
- Ether from the contract's wallet to that address.
+  * Address types have built-in functions, like `address.balance`. If we set the address to `payable`, the `.transfer` function is enabled, which allows us to transfer Ether from the contract's wallet to that address.
 
-* Notice that we have the recipient parameter set as a `payable address` in this withdraw function.
- We still have to be explicit like this in the parameters as well, so that we can call the `.transfer` function on the
- recipient address later in the function.
+  * Notice that we have the recipient parameter set as a `payable address` in this withdraw function. We still have to be explicit like this in the parameters as well, so that we can call the `.transfer` function on the recipient address later in the function.
 
 Now that we have the ability to withdraw, let's add the ability to deposit:
 
