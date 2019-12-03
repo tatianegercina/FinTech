@@ -540,31 +540,31 @@ Open the solution and explain the following:
 
 * The `withdraw` function accepts the following parameters:
 
- * A `uint` named `amount`.
+  * A `uint` named `amount`.
 
- * A `payable address` named `recipient`.
+  * A `payable address` named `recipient`.
 
 * Inside the `withdraw` function, we transfer our designated amount to our designated recipient address.
 
 * Remember, since we set our recipient address as payable, we are able to call the built-in `transfer` method and pass it an amount.
 
-```solidity
- function withdraw(uint amount, address payable recipient) public {
- recipient.transfer(amount);
- }
-```
+  ```solidity
+  function withdraw(uint amount, address payable recipient) public {
+  recipient.transfer(amount);
+  }
+  ```
 
 * We also added an empty function called deposit so that our contract can store our `Eth`.
 
-```solidity
- function deposit() public payable {}
-```
+  ```solidity
+  function deposit() public payable {}
+  ```
 
 * Lastly, we added our payable fallback function so that any `Eth` sent to our contract outside of the deposit function, such as sending `Eth` directly to the contract's address, will also be stored.
 
-```solidity
- function() external payable {}
-```
+  ```solidity
+  function() external payable {}
+  ```
 
 Ask for any remaining questions before moving on.
 
