@@ -209,19 +209,19 @@ Open the solution and ask the students the following questions:
 
 * Why is Solidity so strict with its typing?
 
- **Answer:** It allows for better error handling in code.
+  **Answer:** It allows for better error handling in code.
 
- **Answer:** Contracts should not leave room for ambiguity.
+  **Answer:** Contracts should not leave room for ambiguity.
 
- **Answer:** Being upfront about data types and the size to store them results in less computational overhead/gas costs.
+  **Answer:** Being upfront about data types and the size to store them results in less computational overhead/gas costs.
 
 * Why do we have a separate data type for addresses in Solidity?
 
- **Answer:** Addresses are a fixed size, so it is more cost-effective than a string, which uses a variable amount of storage space.
+  **Answer:** Addresses are a fixed size, so it is more cost-effective than a string, which uses a variable amount of storage space.
 
 * What's the difference between an `int` and a `uint`?
 
- **Answer:** An `int` stores positive and negative numbers, a `uint` only stores positive numbers.
+  **Answer:** An `int` stores positive and negative numbers, a `uint` only stores positive numbers.
 
 Now that we've thoroughly covered many of the types within Solidity let's add some functions to our contract!
 
