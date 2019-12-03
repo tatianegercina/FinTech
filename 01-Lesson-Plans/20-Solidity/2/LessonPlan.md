@@ -229,9 +229,9 @@ Now that we've thoroughly covered many of the types within Solidity let's add so
 
 In this demonstration, the instructor will show the various nuances of functions in Solidity, such as specifying the return type and public/private modifiers.
 
-Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrade.sol`:
+Let's say you are a famous crypto trader and wanted to publish your latest buy order at the price that you bought at. You want to be able to cryptographically prove that it was you that made that recommendation, so you're going to build a smart contract to publish your latest trade to the blockchain.
 
-* Let's say you are a famous crypto trader and wanted to publish your latest buy order at the price that you bought at. You want to be able to cryptographically prove that it was you that made that recommendation, so you're going to build a smart contract to publish your latest trade to the blockchain.
+Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrade.sol`:
 
 * Type the following contract boilerplate:
 
