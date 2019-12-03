@@ -891,7 +891,7 @@ Call the `Withdraw` function and pass it 10 `ether` (in `wei`) and the address t
 
 * You will have to open `MetaMask` to confirm the transaction if it does not open automatically.
 
-![Remix Withdraw Confirm](Images/remix_withdraw_confirm.png)
+  ![Remix Withdraw Confirm](Images/remix_withdraw_confirm.png)
 
 Click confirm in the `MetaMask` window.
 
@@ -909,37 +909,35 @@ Ask the following review questions.
 
 * What are some aspects of Solidity?
 
-* **Answer** Solidity is:
+  **Answer** Solidity is:
 
- * A high-level object-oriented programing language.
+  * A high-level object-oriented programing language.
 
- * It is the language used to write smart contracts on the Ethereum blockchain.
+  * It is the language used to write smart contracts on the Ethereum blockchain.
 
- * Is strictly typed.
+  * Is strictly typed.
 
 * What advantages would a language have for specifying the type?
 
- **Answer:** Specifying the data types allows the language to use the most optimal storage container for the data, thus saving space.
- This is especially important for smart contracts because it costs money to store data.
+  **Answer:** Specifying the data types allows the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts because it costs money to store data.
 
- **Answer:** When the language is dealing with finance, you want the code to be very precise and accurate.
+  **Answer:** When the language is dealing with finance, you want the code to be very precise and accurate.
 
- **Answer:** Types can be used by the compiler for error-checking.
+  **Answer:** Types can be used by the compiler for error-checking.
 
 * If I pass a parameter into a function, where will I have to store that variable temporarily?
 
- **Answer** `In memory`
+  **Answer** `In memory`
 
 * As you know, moving Ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the gas that was sent?
 
- **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our Ether back,
- since it was never successfully spent.
+  **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our Ether back, since it was never successfully spent.
 
 * Why do we use a `testnet` to test our code?
 
- **Answer** Ether costs real money on `mainnet`, we don't want to waste real money testing code.
+  **Answer** Ether costs real money on `mainnet`, we don't want to waste real money testing code.
 
- **Answer** Until our code is fully tested we might not uncover certain bugs or potential security vulnerabilities; `testnet` gives us a way to run our code as if it's in production without it being in production.
+  **Answer** Until our code is fully tested we might not uncover certain bugs or potential security vulnerabilities; `testnet` gives us a way to run our code as if it's in production without it being in production.
 
 Conclude class by congratulating students on learning the basics of a brand new programming language! Solidity is a highly sought after skill that many companies are interested in.
 
