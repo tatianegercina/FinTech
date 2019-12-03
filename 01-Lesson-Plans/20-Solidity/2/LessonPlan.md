@@ -173,13 +173,13 @@ Use the following questions to engage the class:
 
 Demonstrate how to compile the contract using Remix and highlight the following:
 
-Click the "Solidity Compiler" button on the remix sidebar.
+* Click the "Solidity Compiler" button on the remix sidebar.
 
-![remix_compiler_button.png](Images/remix_compiler_button.png)
+  ![remix_compiler_button.png](Images/remix_compiler_button.png)
 
-Click `Compile`:
+* Click `Compile`:
 
-![remix_compile_contract.png](Images/remix_compile_contract.png)
+  ![remix_compile_contract.png](Images/remix_compile_contract.png)
 
 Explain that we will continue to iterate on this example throughout the lesson to add more functionality.
 
