@@ -52,5 +52,33 @@ To install MetaMask, follow the next steps.
 
 Congratulations! You have installed MetaMask.
 
+## Installing Ganache
+
+[Ganache](https://www.trufflesuite.com/ganache) is a personal blockchain for Ethereum development you can use to deploy contracts, develop your applications, and run tests. It's available for Windows, OS X, and Linux.
+
+To install Ganache, follow the next steps.
+
+* Open the [Ganache website](https://www.trufflesuite.com/ganache) in your browser.
+
+* Depending on your operating system, you will see the corresponding download button.
+
+  | Ganache install button in Windows                 | Ganache install button in OS X                    |
+  | ------------------------------------------------- | ------------------------------------------------- |
+  | ![Ganache installation - 1](Images/ganache-1.png) | ![Ganache installation - 2](Images/ganache-2.png) |
+
+* Click on the _Download_ button to save the installer to your computer.
+
+### Running the Ganache Installer in OS X
+
+* Open the installer file and drag the Ganache app to the "Applications" folder.
+
+    ![Ganache installation - 3](Images/ganache-3.gif)
+
+* Open the "Applications" folder and double-click on the "Ganache" icon. You will be asked for permissions to run the application, you can safely click on the "Open" button to continue.
+
+* Next, you will see a screen where the Ganache development team asks for your collaboration to share usage analytics with them. Choose the best option for you and click on the "Continue" button to finish the installation process.
+
+    ![Ganache installation - 4](Images/ganache-4.gif)
+
 ---
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
