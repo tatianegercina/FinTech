@@ -811,19 +811,19 @@ Perform the following:
 
   * Now open MetaMask, and enter the password to unlock your account, then make sure the network is "Localhost 8545".
 
-  ![Remix Meta Mask](Images/remix_meta_mask.png)
+    ![Remix Meta Mask](Images/remix_meta_mask.png)
 
-* You should now see your primary wallet balance in MetaMask.
+  * You should now see your primary wallet balance in MetaMask.
 
-Click the `Deploy & Run Transaction` button in the Remix sidebar.
+* Click the `Deploy & Run Transaction` button in the Remix sidebar.
 
-![Remix Deploy](Images/remix_deploy.png)
+  ![Remix Deploy](Images/remix_deploy.png)
 
-Ensure that all students are on the deploy tab before moving forward.
+  * Ensure that all students are on the deploy tab before moving forward.
 
-Now click the environment dropdown menu. By default, it will have `Javascript VM` checked, switch this to `Injected Web3`. This will allow Metamask to send our contract `Eth`.
+* Now click the environment dropdown menu. By default, it will have `Javascript VM` checked, switch this to `Injected Web3`. This will allow Metamask to send our contract `Eth`.
 
-![Remix Deploy](Images/remix_enviroment.png)
+  ![Remix Deploy](Images/remix_enviroment.png)
 
 * You will be prompted to connect your account in Meta Mask to remix.
 
