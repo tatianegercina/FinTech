@@ -827,21 +827,21 @@ Perform the following:
 
 * You will be prompted to connect your account in Meta Mask to remix.
 
-![Remix Deploy](Images/remix_web3_prompt.png)
+  ![Remix Deploy](Images/remix_web3_prompt.png)
 
-Click the yellow `Deploy` button to deploy the contract, then `Confirm` in MetaMask.
+* Click the yellow `Deploy` button to deploy the contract, then `Confirm` in MetaMask.
 
-![Remix Confirm Deploy](Images/remix_deploy_confirm.png)
+  ![Remix Confirm Deploy](Images/remix_deploy_confirm.png)
 
-Pause while the students deploy their contracts.
+* Pause while the students deploy their contracts.
 
-![Remix Deployed Contract](Images/remix_deployed_contract.png)
+  ![Remix Deployed Contract](Images/remix_deployed_contract.png)
 
 * If your contract successfully deployed, it should now appear as a grey box under deployed contracts at the bottom of the deploy sidebar.
 
-Click the drop-down arrow next to the grey deployed contract to display the contract's functions that can be called.
+* Click the drop-down arrow next to the grey deployed contract to display the contract's functions that can be called.
 
-![Remix Contract Functions](Images/remix_contract_functions.png)
+  ![Remix Contract Functions](Images/remix_contract_functions.png)
 
 Discuss with the students:
 
