@@ -331,49 +331,49 @@ Open the solution and explain the following:
 
 * The `getInfo` function should specify the following return types:
 
- * `address`
+  * `address`
 
- * `bool`
+  * `bool`
 
- * `uint`
+  * `uint`
 
- * `string memory`
+  * `string memory`
 
 * Inside the `getInfo` we should return the following variables:
 
- * `owner`
+  * `owner`
 
- * `newAccount`
+  * `newAccount`
 
- * `accountBalance`
+  * `accountBalance`
 
- * `accountID`
+  * `accountID`
 
-```solidity
- function getInfo() public returns(address, bool, uint, string memory) {
- return (owner, newAccount, accountBalance, accountID);
- }
-```
+    ```solidity
+    function getInfo() public returns(address, bool, uint, string memory) {
+    return (owner, newAccount, accountBalance, accountID);
+    }
+    ```
 
 * The `setInfo` function should accept the following parameters:
 
- * newOwner as an `address` type
+  * newOwner as an `address` type
 
- * isNewAccount as a `bool`
+  * isNewAccount as a `bool`
 
- * newAccountBalance as a `uint`
+  * newAccountBalance as a `uint`
 
- * newAccountID as `string memory`
+  * newAccountID as `string memory`
 
 * Inside the `setInfo` function, we should set the following variables equal to the following function parameters.
 
- * `owner` is equal to `newOwner`
+  * `owner` is equal to `newOwner`
 
- * `newAccount` is equal to `isNewAccount`
+  * `newAccount` is equal to `isNewAccount`
 
- * `accountBalance` is equal to `newAccountBalance`
+  * `accountBalance` is equal to `newAccountBalance`
 
- * `accountID` is equal to `accountID`
+  * `accountID` is equal to `accountID`
 
 Ask for any remaining questions before moving on.
 
