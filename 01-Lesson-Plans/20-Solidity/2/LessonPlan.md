@@ -694,9 +694,7 @@ Send out the instructions, which includes a cheat-sheet that compares how condit
 
 * [Conditionals Cheat Sheet](Activities/06-Stu_If_Else/Resources/Conditionals_Cheatsheet.md)
 
-Have the TAs circulate the class and ensure that students are properly implementing their if/else statements.
-
-Remind them that they have to:
+Have the TAs circulate the class and ensure that students are properly implementing their if/else statements. Remind them that they have to:
 
 * Put the condition in parenthesis.
 
@@ -716,11 +714,11 @@ Open the solution and explain the following:
 
 * Inside the condition itself, we are checking that `recipient` is equal to `account_one` or `recipient` is equal to `account_two`.
 
-```Solidity
-if (recipient == account_one || recipient == account_two) {
- recipient.transfer(amount);
-}
-```
+  ```Solidity
+  if (recipient == account_one || recipient == account_two) {
+  recipient.transfer(amount);
+  }
+  ```
 
 Ask for any remaining questions before moving on.
 
@@ -781,11 +779,11 @@ Have the students catch up with the code, then elaborate:
 
 * The major difference between an `if/else` and a `require` is a fundamental one.
 
- * When an `if/else` is false, the code inside the `if` statement does not execute, but the contract as a whole continues to execute as if everything was successful, thus continuing to spend the gas that was allotted to the contract call.
+* When an `if/else` is false, the code inside the `if` statement does not execute, but the contract as a whole continues to execute as if everything was successful, thus continuing to spend the gas that was allotted to the contract call.
 
- * Unlike the `if/else` when a `require`'s condition fails, the contract immediately ends execution, and the remaining gas is returned to the person that executed the contract.
+* Unlike the `if/else` when a `require`'s condition fails, the contract immediately ends execution, and the remaining gas is returned to the person that executed the contract.
 
- * You can think of a `require` more as a type of error handling; as you can see, we can even declare a custom error message to the user. If withdraw is passed an address that is not one of the two addresses defined in our contract, then they will get the message `You do not own this account!`.
+* You can think of a `require` more as a type of error handling; as you can see, we can even declare a custom error message to the user. If withdraw is passed an address that is not one of the two addresses defined in our contract, then they will get the message `You do not own this account!`.
 
 Now we have a fully working `JointSavings` account with withdraw protection on our contract account and a deposit function to deposit our funds. Let's compile and deploy our contract to test it out!
 
@@ -793,27 +791,27 @@ Now we have a fully working `JointSavings` account with withdraw protection on o
 
 In this activity, students will take their `JointSavings` account contract, compile and deploy it on their local `testnet`.
 
+Let's compile and deploy our contract to test it out!
+
 **Files:**
 
 * [JointSavings.sol](Activities/07-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
 
-Let's compile and deploy our contract to test it out!
+Perform the following:
 
-Start by having everyone open the `Ganache` application.
+* Start by having everyone open the `Ganache` application. Instruct everyone to select the workspace we previously configured.
 
-Instruct everyone to select the workspace we previously configured.
+  ![Ganache Running](Images/ganache_running.png)
 
-![Ganache Running](Images/ganache_running.png)
+* Ensure the students all have Ganache running before moving on.
 
-Ensure the students all have Ganache running before moving on.
+  * You should see your servers running on `http://127.0.0.1:8545`
 
-* You should see your servers running on `http://127.0.0.1:8545`
+  * Navigate to [Remix](http://remix.ethereum.org/) in your browser and open the `JointSavings.sol` contract.
 
-* Navigate to [Remix](http://remix.ethereum.org/) in your browser and open the `JointSavings.sol` contract.
+  * Now open MetaMask, and enter the password to unlock your account, then make sure the network is "Localhost 8545".
 
-* Now open MetaMask, and enter the password to unlock your account, then make sure the network is "Localhost 8545".
-
-![Remix Meta Mask](Images/remix_meta_mask.png)
+  ![Remix Meta Mask](Images/remix_meta_mask.png)
 
 * You should now see your primary wallet balance in MetaMask.
 
