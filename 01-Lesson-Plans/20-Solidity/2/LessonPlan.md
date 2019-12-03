@@ -385,7 +385,7 @@ Ask for any remaining questions before moving on.
 
 ### 9. Instructor Do: Quick Review (10 min)
 
-In this activity, the instructor performs a quick review on concepts learned throughout the first half of today's lesson.
+This activity is a quick review of concepts learned throughout the first half of today's lesson.
 
 * If I have a function or variable that I want to be able to call from outside the contract, what modifier would I add to the function definition?
 
