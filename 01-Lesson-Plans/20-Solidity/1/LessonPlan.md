@@ -1,3 +1,75 @@
+## 20.1 Lesson Plan: Debunking Smart Contracts
+
+---
+
+### Overview
+
+Today's class introduces students to smart contracts.
+
+At a glance, smart contracts are computer programs that allow credible transactions of digital assets under certain conditions without third parties. In this unit, students will learn what a smart contract is, and they will build smart contracts using [Solidity](https://solidity.readthedocs.io/en/latest/index.html), an object-oriented language for implementing smart contracts in Ethereum.
+
+Today's class will introduce students to the fundamental concepts of smart contracts, as well as to the development tools and environment they will use to create, compile, and deploy their smart contracts.
+
+### Class Objectives
+
+By the end of the unit, students will be able to:
+
+* Explain what a smart contract is, and its applications in FinTech and other business areas.
+
+* Understand how Solidity works and identify its differences with Python as programming language.
+
+* Explain how the Ethereum Virtual Machine (EVM) is an isolated environment, and how Solidity code can only access on-chain data.
+
+* Recognize that a smart contract is a program that runs on the EVM (Ethereum Virtual Machine)
+
+* Identify the different kinds of smart contracts and their top use cases.
+
+* Explain how Remix & Ganache support blockchain development.
+
+* Set up their developer environment using Remix and Ganache.
+
+### Instructor Notes
+
+* Smart contracts have a lot of math and computing complexity that is beyond the scope of Today's class. The goal of this lesson is to show students how smart contracts work and what tools are used to create, compile, and deploy smart contracts.
+
+* Smart contracts have several applications beyond the financial sector such as medical, industrial (supply chain), cyber security, and many more. Feel free to include additional use cases or applications that you believe are suitable for the class.
+
+* Setting up the development environment may be tricky; be sure to follow the [installation guide](../Supplemental/smart-contracts-installation-guide.md) before the class to get familiarized with the process.
+
+### Slideshow and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy."
+
+* The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+
+---
+
+### 1. Instructor Do: Welcome Class (5 min)
+
+Welcome students to the smart contracts unit!
+
+Open the lesson slides and briefly introduce smart contracts:
+
+* Smart contracts are just computer programs that can run on a blockchain.
+
+* They are used to allow credible transactions of digital assets under certain conditions without third parties.
+
+* Using smart contracts allow for building completely decentralized applications, called "dApps".
+
+* Today, we will be exploring the smart contract/dApp ecosystem and getting familiar with the development tools needed to build them.
+
+Explain to students that smart contracts are disrupting the way we understand the ownership and transference of goods, not only digital, but also tangible.
+
+This is why smart contracts are being used beyond the financial sector in government, real state, supply chain, and health care.
+
+Let's start by exploring some use cases of smart contracts!
+
+---
+
 ### 2. Instructor Do: Introduction to Smart Contracts and dApps (10 min)
 
 In this activity, students will learn more about smart contracts, and they will be introduced to the concept of decentralized applications (dApps).
