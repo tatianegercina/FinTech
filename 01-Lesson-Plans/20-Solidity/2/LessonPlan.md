@@ -581,7 +581,7 @@ Explain trade controllers to the class:
 
 * Say you want to build a basic trade controller that will signal whether or not we should be buying, selling, or holding based on a designated price. We're not going to use complex logic, just buy low and sell high. The main goal is to understand the differences in syntax for conditionals.
 
-Show the class how to define a `uint` variable called `previous_price` and a `string` variable called `trade_type`.
+Then, show the class how to define a `uint` variable called `previous_price` and a `string` variable called `trade_type`.
 
 ```solidity
 pragma solidity ^0.5.11;
@@ -646,7 +646,7 @@ Engage the class with the following question:
 
 * What if we want to buy anyway, regardless of the previous price? What operator would allow us to achieve that?
 
- * Answer: This would be a perfect use case for our `||` (or) operator.
+  * Answer: This would be a perfect use case for our `||` (or) operator.
 
 Show the class how to  modify the code to use the `||` operator to always default to buying regardless of the previous price.
 
