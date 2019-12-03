@@ -59,6 +59,7 @@ Comment to students that in the following weeks, they will learn how to create a
 Answer any questions before moving on.
 
 ---
+
 ### 3. Student Do: Smart Contracts in Action (15 min)
 
 In this activity, students will work in groups up to three people to analyze several use cases to explore that correspond with popular types of smart contracts like tokens, notaries, supply chain, digital marketplaces, etc.
@@ -90,6 +91,7 @@ Conduct a facilitated discussion by asking a couple of groups to share their con
 Have groups share a few items on the lists of features they curated, answer any questions before moving on.
 
 ---
+
 ### 4. Everyone Do: Installing MetaMask (10 min)
 
 In this activity, the instructor will have the class installing the [MetaMask](https://metamask.io/) browser extension, and import their mnemonics to enable dApp support on their web browsers.
@@ -171,6 +173,7 @@ Congratulate students on getting started with their first dApp!
 Answer any questions before moving on.
 
 ---
+
 ### 6. Instructor Do: Intro to Remix and Ganache (15 min)
 
 In this activity, the instructor will demo the tools used by smart contract engineers to develop, compile, and deploy code on the Ethereum blockchain. Students will gain familiarity with tools from the `Truffle Suite` namely `Ganache`, the one-click development blockchain.
@@ -315,6 +318,7 @@ Explain to the students that:
 * We must set our environment to `Injected Web3` so that Remix can talk to MetaMask, which can talk to our local blockchain. In this case, MetaMask is "injecting" the Web3 library into your browser, which allows Remix to communicate to the outside world (Ethereum).
 
 * We will be writing our own custom smart contracts tomorrow, but today we will just be familiarizing ourselves with Remix.
+
 ### 07. Students Do: Setting up Remix and Ganache (15 min)
 
 Students will setup Ganache, create a workspace for `fintech`, set the `RPC port` to `8545`, and import their `mnemonic` into Ganache's settings to keep their wallets consistent in their test blockchain. Then, they will explore the Remix IDE with the time left.
@@ -346,6 +350,7 @@ Open Ganache and ask the students the following questions.
   **Answer** It allows for writing, compiling, and deploying all in one place.
 
   **Answer** It supports connecting to local development blockchains.
+
 ### 09. Instructor Do: Contextualizing Solidity (15 min)
 
 In this exercise, the instructor will explain to the students that Solidity is a statically typed language and that it runs inside the EVM in a sandbox.
@@ -408,6 +413,7 @@ Show the class the example machine code.
 * Hardware
 
   * Since blockchains are written in software, the hardware can be any machine that is capable of running the node software and connecting to the internet.
+
 ### 10. Students Do: Contextualizing Solidity Worksheet (10 min)
 
 Students will fill in a simple chart (pipeline) of the various levels of the EVM's architecture with the names of the various levels and their real-world implementation.
@@ -449,6 +455,7 @@ Ask the class the following recall questions:
   **Answer** C++
 
   **Answer** Java
+
 ### 13. Instructor Do: Unveiling Decentralized Apps (15 min)
 
 In this activity, students will learn about the different sectors where dApps are disrupting the traditional market practices in such areas as banking, exchanges, games, and art.
@@ -635,6 +642,7 @@ End the activity by explaining to students that the goal of these two dApps demo
 Answer any questions before moving on.
 
 ---
+
 ### 15. Student Do: State Of The Dapps (20 min)
 
 In this activity, students will visit [The State Of The Dapps website](https://www.stateofthedapps.com/) to explore the many dApps that exist in the blockchain ecosystem. Students will work in groups up to three people to research and to analyze a dApps from any sector from their interest.
@@ -672,6 +680,7 @@ Use this activity's time to allow all groups to share their findings regarding t
 Answer any questions before moving on.
 
 ---
+
 ### 17. Instructor Do: Homework Demo (5 mins)
 
 In this activity, students will get a big-picture overview of the homework.
@@ -695,6 +704,7 @@ Explain to students that this will be an excellent opportunity to gain hands-on 
 Answer any questions before moving on.
 
 ---
+
 ### 18. Instructor Do: Recap (5 min)
 
 Congratulate students on completing their first day on smart contracts! End the class by briefly reviewing the main concepts of the day, Smart Contracts and dApps.
