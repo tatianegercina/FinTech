@@ -57,34 +57,30 @@ Welcome to Day 2 of Intro to Solidity. Let's start by reviewing some of the conc
 
 * What is Solidity?
 
- **Answer** Solidity is a high-level object-oriented programing language. It is the language used to write smart contracts on the Ethereum blockchain.
+  **Answer** Solidity is a high-level object-oriented programing language. It is the language used to write smart contracts on the Ethereum blockchain.
 
 * What is a smart contract?
 
- **Answer** A smart contract is essentially just a program that runs on the global computer that is the Ethereum blockchain.
+  **Answer** A smart contract is essentially just a program that runs on the global computer that is the Ethereum blockchain.
 
 * What is a dApp (Distributed App)?
 
- **Answer** A dApp is an application stack that leverages one or many smart contracts on the Ethereum blockchain.
+  **Answer** A dApp is an application stack that leverages one or many smart contracts on the Ethereum blockchain.
 * Why are dApps important?
 
- **Answer:** Instead of relying on centralized infrastructure to run applications, which are prone to censorship and access
- issues, you can write apps that are secured and powered by the blockchain and pay the world to run your application instead of
- a single, fallible entity.
+  **Answer:** Instead of relying on centralized infrastructure to run applications, which are prone to censorship and access issues, you can write apps that are secured and powered by the blockchain and pay the world to run your application instead of a single, fallible entity.
 
- **Answer:** It is a way of writing applications that require the 5 pillars of open blockchain
+  **Answer:** It is a way of writing applications that require the 5 pillars of open blockchain
 
 * What are the 5 Pillars of Open Blockchains?
 
- **Answer:** Open, Borderless (Decentralized), Neutral, Censor Resistant, Public
+  **Answer:** Open, Borderless (Decentralized), Neutral, Censor Resistant, Public
 
 * Why might we be learning Solidity compared to any other programming language?
 
- **Answer:** We are in an age where blockchain technologies are beginning to shape the world around us in new and exciting ways.
- Learning Solidity will allow us to build complex decentralized applications that plug directly into Ethereum.
+  **Answer:** We are in an age where blockchain technologies are beginning to shape the world around us in new and exciting ways. Learning Solidity will allow us to build complex decentralized applications that plug directly into Ethereum.
 
- **Answer:** Solidity is quickly becoming the de-facto standard for digital smart contracts, and is supported in multiple blockchains, including
- Ethereum, Ethereum Classic, Hyperledger Fabric, Quorum, and more.
+  **Answer:** Solidity is quickly becoming the de-facto standard for digital smart contracts, and is supported in multiple blockchains, including Ethereum, Ethereum Classic, Hyperledger Fabric, Quorum, and more.
 
 Let's get the class excited about smart contracts.
 
