@@ -4,7 +4,7 @@ In this activity, you will be configuring your development environment for writi
 
 ## Instructions
 
-* [Download Ganache](https://www.trufflesuite.com/ganache) from the following link.
+* Install Ganache following the Unit 20 Installation Guide.
 
 * If the link is not working or your correct `operating system` is not appearing on the page. Downloads of the latest ganache releases can be found on their Github page at [Ganache releases](https://github.com/trufflesuite/ganache/releases).
 
