@@ -9,13 +9,13 @@ to at least 3 of your fellow students.
 
 * Using [this starter code](Unsolved/multi-output-testnet-tx.py), construct and send a transaction that sends `0.0003 BTC` to each of these addresses.
 
-  * To do this, you will need to push a tuple with the following format to the outputs array:
+ * To do this, you will need to push a tuple with the following format to the outputs array:
 
-    ```python
-      ("address", 0.0, "denomination")
-    ```
+ ```python
+  ("address", 0.0, "denomination")
+ ```
 
-* Add the `send` function using `key.send`. Pass the outputs to this function, and print the result.
+* Add the `send` function using `key.send`. Pass the outputs to this function and print the result.
 
 ## Challenge
 
