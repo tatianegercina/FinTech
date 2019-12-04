@@ -164,7 +164,7 @@ Have groups share a few items on the lists of features they curated, answer any 
 
 ---
 
-### 4. Everyone Do: Installing MetaMask (10 min)
+### 5. Everyone Do: Installing MetaMask (10 min)
 
 In this activity, the instructor will have the class installing the [MetaMask](https://metamask.io/) browser extension, and import their mnemonics to enable dApp support on their web browsers.
 
@@ -401,7 +401,7 @@ Students will setup Ganache, create a workspace for `fintech`, set the `RPC port
 
 Have the TA's circulate the room to assist with any installation issues that students may be having -- Students may have to add an allow rule to windows firewall.
 
-### 08. Instructor Do: Remix and Ganache Review
+### 08. Instructor Do: Remix and Ganache Review (5 min)
 
 Open Ganache and ask the students the following questions.
 
@@ -527,6 +527,12 @@ Ask the class the following recall questions:
  **Answer** C++
 
  **Answer** Java
+
+---
+
+### 12. BREAK (15 min)
+
+---
 
 ### 13. Instructor Do: Unveiling Decentralized Apps (15 min)
 
@@ -715,7 +721,7 @@ Answer any questions before moving on.
 
 ---
 
-### 15. Student Do: State Of The Dapps (20 min)
+### 14. Student Do: State Of The Dapps (20 min)
 
 In this activity, students will visit [The State Of The Dapps website](https://www.stateofthedapps.com/) to explore the many dApps that exist in the blockchain ecosystem. Students will work in groups up to three people to research and to analyze a dApps from any sector from their interest.
 
@@ -729,7 +735,7 @@ Have TAs circulate the classroom to help students and foster collaboration in ea
 
 ---
 
-### 16. Instructor Do: State Of The Dapps Review (10 min)
+### 15. Instructor Do: State Of The Dapps Review (10 min)
 
 In this activity, conduct a facilitated discussion to allow the students to share their findings after the previous research activity.
 
@@ -753,7 +759,7 @@ Answer any questions before moving on.
 
 ---
 
-### 17. Instructor Do: Homework Demo (5 mins)
+### 16. Instructor Do: Homework Demo (5 mins)
 
 In this activity, students will get a big-picture overview of the homework.
 
@@ -777,7 +783,7 @@ Answer any questions before moving on.
 
 ---
 
-### 18. Instructor Do: Recap (5 min)
+### 17. Instructor Do: Recap (5 min)
 
 Congratulate students on completing their first day on smart contracts! End the class by briefly reviewing the main concepts of the day, Smart Contracts and dApps.
 
@@ -794,3 +800,9 @@ Explain to students that we will begin to learn how to program smart contracts i
 By the end of this Unit, students will be writing their custom smart contracts and dApps for Ethereum!
 
 ---
+
+### End Class
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
