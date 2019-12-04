@@ -76,7 +76,13 @@ For those with a **Mac OS X operating system**, execute the following steps:
 * Then, in order to point to the newest version of PHP, export the following path to your `PATH` environment variable. This will allow you to run the command `php` from anywhere in your terminal and point to the Homebrew version that was just installed.
 
   ```shell
-  export PATH=$PATH:/usr/local/bin
+  export PATH=/usr/local/opt/php@7.3/bin:$PATH
+  ```
+
+* Append this to your `.bash_profile` by running the following (or manually edit the file):
+
+  ```shell
+  echo "export PATH=/usr/local/opt/php@7.3/bin:$PATH" >> ~/.bash_profile
   ```
 
 * Next, test that the newest version of PHP is working correctly by first creating a test PHP script called `phpinfo.php` and then executing the following command.
