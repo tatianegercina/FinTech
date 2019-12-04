@@ -484,6 +484,8 @@ Open the terminal window (Git Bash in Windows), navigate to your `Blockchain-Too
 
 **Note:** Under Microsoft Windows you may see a pop-up window asking for permission from the firewall, be sure you check all the boxes and click on the "Allow access" button.
 
+**Note:** In the event that your `enode` address ends in an IP address that is _not_ the localhost (127.0.0.1), you may add the `—rpcaddr 127.0.0.1` flag in order to force it to do so. 
+
 Explain each of the new command-line flags:
 
 * The `--mine` flag tells the node to mine new blocks.
