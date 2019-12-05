@@ -46,6 +46,9 @@ By the end of the unit, students will be able to:
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [18.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=69e9f9c6-f369-44a7-b574-ab190134eb81) Note that this video may not reflect the most recent lesson plan.
+
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
@@ -484,7 +487,7 @@ Open the terminal window (Git Bash in Windows), navigate to your `Blockchain-Too
 
 **Note:** Under Microsoft Windows you may see a pop-up window asking for permission from the firewall, be sure you check all the boxes and click on the "Allow access" button.
 
-**Note:** In the event that your `enode` address ends in an IP address that is _not_ the localhost (127.0.0.1), you may add the `—rpcaddr 127.0.0.1` flag in order to force it to do so. 
+**Note:** In the event that your `enode` address ends in an IP address that is _not_ the localhost (127.0.0.1), you may add the `—rpcaddr 127.0.0.1` flag in order to force it to do so.
 
 Explain each of the new command-line flags:
 
