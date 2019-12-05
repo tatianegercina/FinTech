@@ -85,7 +85,7 @@ Transition into a dry demonstration (just visit the site) of a practical FinTech
 
   ![plaid_services.png](Images/plaid_services.png)
 
-- - -
+---
 
 ### 2. Instructor Do: API Keys (5 min) (Critical)
 
@@ -127,7 +127,7 @@ Initiate a facilitated discussion by communicating the following guided question
 
 End the activity by asking the students if they have any further questions.
 
-- - -
+---
 
 ### 3. Instructor Do: Keys to the FinTech Kingdom (10 min)
 
@@ -167,7 +167,7 @@ Excite students about FinTech APIs by highlighting the following points.
 
 Ask if there are any questions or comments before moving on.
 
-- - -
+---
 
 ### 4. Instructor Do: Creating Environment Variables (5 min) (Critical)
 
@@ -205,7 +205,7 @@ Open the [starter file](Activities/01-Ins_Create_Env_Variables/Unsolved/keys.sh)
 
 Ask if there are any questions, and then move on to the next activity.
 
-- - -
+---
 
 ### 5. Instructor Do: Calling Environment Variables (5 min) (Critical)
 
@@ -254,7 +254,7 @@ Navigate to the 5.2 slides, and touch point on each of the below discussion poin
 
 Ask students if there are any questions before continuing.
 
-- - -
+---
 
 ### 6. Students Do: Under Lock and Key (20 min)
 
@@ -274,7 +274,7 @@ If students finish early, use the extra time to review the final two guided revi
 
 * [README.md](Activities/03-Stu_Under_Lock_And_Key/README.md)
 
-- - -
+---
 
 ### 7. Instructor Do: Under Lock and Key Activity Review (5 min)
 
@@ -342,7 +342,7 @@ If time remains, ask two final, guided questions:
 
 Ask for any remaining questions before moving on.
 
-- - -
+---
 
 ### 8. Instructor Do: Intro to SDKs (5 min) (Critical)
 
@@ -386,11 +386,11 @@ Ask students the following guided question:
 
 Ask students if there are any questions before moving on.
 
-- - -
+---
 
 ### 9. BREAK (15 min)
 
-- - -
+---
 
 ### 10. Instructor Do: Intro to Plaid (10 min)
 
@@ -431,7 +431,7 @@ Facilitate discussion with the following talking points and guided questions:
 
 * By leveraging the data provided by Plaid, consumers no longer have to rely on financial services professionals or big companies to give them insights into their data. Furthermore, developers no longer have to concern themselves with data acquisition and brokering communication with financial institutions. Instead, both parties can just use Plaid.
 
-- - -
+---
 
 ### 11. Instructor Do: Plaid Demo (15 min)
 
@@ -589,7 +589,7 @@ Take some time to emphasize what it means to have this type of data provided by 
 
 If time remains, ask students for any thoughts or questions.
 
-- - -
+---
 
 ### 12. Students Do: Sporting Plaid—Part 1 (20 min)
 
@@ -609,7 +609,7 @@ Communicate to students that they can work with a partner to complete the activi
 
 * [README.md](Activities/05-Stu_Sporting_Plaid_Pt_1/README.md)
 
-- - -
+---
 
 ### 13. Instructor Do: Emotional Break (10 min)
 
@@ -639,7 +639,7 @@ If time remains, ask the following questions:
 
 Ask students if they have any questions before moving on.
 
-- - -
+---
 
 ### 14. Students Do: Sporting Plaid—Part 2 (25 min)
 
@@ -659,7 +659,7 @@ Circulate through the room and provide assistance while students are working. St
 
 * [README.md](Activities/06-Stu_Sporting_Plaid_Pt_2/README.md)
 
-- - -
+---
 
 ### 15. Instructor Do: Sporting Plaid Activity Review (15 min)
 
@@ -754,7 +754,7 @@ Underscore to students that working with Plaid does not mean just working within
 
 Ask if there are any remaining questions.
 
-- - -
+---
 
 ### 16. Recap (10 min)
 
@@ -802,6 +802,6 @@ Communicate to students that the applications they've completed today should be 
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

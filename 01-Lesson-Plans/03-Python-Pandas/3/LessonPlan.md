@@ -766,7 +766,7 @@ Open [mastering_concatenation.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/
 
 Ask if there are any questions before moving on.
 
-- - -
+---
 
 ### 15. Instructor Do: Standard Deviation and Risk (10 min)
 
