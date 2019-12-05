@@ -339,7 +339,7 @@ This page should be relatively empty, only listing block zero -- explain:
 
 Inform the students that they will have time to explore the various pages of Ganache as they set up their Ganache blockchain in the next activity.
 
-* Now that Ganache is running the local development blockchain on `localhost:8545`.
+* Ganache is now running the local development blockchain on `localhost:8545`.
 
 Open [Remix](http://remix.ethereum.org) in your web browser.
 
