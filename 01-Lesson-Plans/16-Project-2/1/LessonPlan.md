@@ -20,6 +20,9 @@ It is highly recommended to request project proposals from students and then app
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [16.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=500cf497-3427-4ff5-ad41-ab1001881742) Note that this video may not reflect the most recent lesson plan.
+
 - - -
 
 ### Class Objectives
