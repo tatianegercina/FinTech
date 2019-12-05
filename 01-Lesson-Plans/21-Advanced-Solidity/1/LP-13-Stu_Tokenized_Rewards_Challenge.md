@@ -31,9 +31,9 @@ Send out the instructions to the students and have TAs circulate the class. Remi
 
 Note: since Solidity does not support floating point numbers (decimals), a formula is provided in the instructions to calculate percentages from "basis points."
 
-1 basis point = 0.01% -- therefore you can calculate a percentage by using `basis_points * some_number / 10000`.
+`1` basis point = `0.01%`. You can calculate a percentage by using `basis_points * some_number / 10000`.
 
-For example: `250 basis points * $100 / 10000` is equal to `$2.5` -- aka 2.5%
+For example: `250 basis points * $100 / 10000` is equal to `$2.5` or 2.5%
 
 Here's a handy chart for easy reference (also provided to the students):
 

@@ -8,7 +8,8 @@ contract ArcadeToken {
     address payable owner = msg.sender;
     string public symbol = "ARCD";
     uint public exchange_rate = 100;
-    // insert
+    // insert public fee_rate here in "basis points" -- used to calculate the fee percentage later
+    // insert public reward_rate set to the amount of tokens rewarded per wei spent
 
     mapping(address => uint) balances;
 
@@ -30,5 +31,16 @@ contract ArcadeToken {
     function mint(address recipient, uint value) public {
         require(msg.sender == owner, "You do not have permission to mint tokens!");
         balances[recipient] = balances[recipient].add(value);
+    }
+
+    // Remember to use SafeMath for all math operations!
+    function spend(address payable recipient) public payable {
+        uint fee = ;// calculate 0.25% from basis points using msg.value (percent = basis_points * your_number / 10000)
+        uint reward = ;// reward 3 points for every wei spent (multiply msg.value)
+
+        balances[msg.sender] = ;// add reward to sender point balance
+
+        // transfer msg.value minus fee to the recipient
+        // transfer fee to owner here
     }
 }
