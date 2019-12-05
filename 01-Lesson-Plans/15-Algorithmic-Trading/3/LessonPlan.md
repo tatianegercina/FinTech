@@ -1,3 +1,17 @@
+## 15.3 Lesson Plan:
+
+---
+
+### Overview
+
+Today's lesson shows students how to use machine learning models in their algorithmic trading framework.
+
+### Instructor Notes
+* Students may be at or near their learning capacity by this point in the course, but encourage them to use today's material as a guide for incorporating machine learning models into an algorithmic trading strategy. These ideas can potentially be used in their projects.
+* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+
+---
+
 ### 1. Instructor Do: Random Forest Trading (15 min)
 
 In this activity, students will learn how to generate a set of trading signals derived from raw BTC/USD data that will be used as features to train a Random Forest machine learning model that will autonomously make predictions and corresponding trades.

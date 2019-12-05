@@ -52,6 +52,9 @@ Note: Editing access is not available for this document. If you wish to modify t
 
 The time tracker for this lesson can be viewed here: [Time Tracker.xlsx](TimeTracker.xlsx)
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [15.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6702e079-360f-4970-b75a-aafe00f8da33) Note that this video may not reflect the most recent lesson plan.
+
 ---
 
 ### 1. Instructor Do: Welcome Class (10 min)
