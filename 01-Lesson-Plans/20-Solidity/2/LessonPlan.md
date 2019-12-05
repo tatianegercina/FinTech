@@ -33,11 +33,9 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* This is the first time students have encountered a strictly typed programming language. This is going to be a very difficult
- adjustment for the students to make, since they are going to have to remember to specify the data types everywhere, as well as use semicolons to end expressions.
+* This is the first time students have encountered a strictly typed programming language. This is going to be a very difficult adjustment for the students to make, since they are going to have to remember to specify the data types everywhere, as well as use semicolons to end expressions.
 
-* Remind the students that if they get frustrated, they are learning something that few are skilled at, and by learning
- a strictly typed language now, they will be able to easily learn any other programming language in the future.
+* Remind the students that if they get frustrated, they are learning something that few are skilled at, and by learning a strictly typed language now, they will be able to easily learn any other programming language in the future.
 
 ### Slideshow and Time Tracker
 
@@ -66,6 +64,7 @@ Welcome to Day 2 of Intro to Solidity. Let's start by reviewing some of the conc
 * What is a dApp (Distributed App)?
 
   **Answer** A dApp is an application stack that leverages one or many smart contracts on the Ethereum blockchain.
+
 * Why are dApps important?
 
   **Answer:** Instead of relying on centralized infrastructure to run applications, which are prone to censorship and access issues, you can write apps that are secured and powered by the blockchain and pay the world to run your application instead of a single, fallible entity.
@@ -88,6 +87,8 @@ Let's get the class excited about smart contracts.
 
 * In the first half of class today, we will translate some of the core coding concepts you have learned to a new language, Solidity, and create your first "smart contract".
 
+---
+
 ### 2. Instructor Do: First Contract (10 min)
 
 In this activity, you will demonstrate how to construct a basic contract in Solidity that sets an arbitrary `string` and an `address`.
@@ -98,9 +99,11 @@ In this activity, you will demonstrate how to construct a basic contract in Soli
 
 Open your web browser and navigate to the [Remix IDE website](http://remix.ethereum.org):
 
-* Click on the create new file button in the file explorer:
+* Enable the `Solidity` development environment if it's disabled.
 
   ![remix_1.png](Images/remix_1.png)
+
+* Click on the create new file button in the file explorer:
 
   ![remix_2.png](Images/remix_2.png)
 
@@ -155,11 +158,11 @@ Take a moment to discuss data types with the class. Explain to the class the fol
 
 * There are several reasons for this:
 
-  * Much like how a legal contract does not leave room for ambiguity, we also remove the same ambiguity from our code by being very specific about how we are storing data, like strings, numbers, arrays, or booleans (true/false values).
+  * Much like how a legal contract does not leave room for ambiguity, we also remove the same ambiguity from our code by being very specific about how we are storing data, like strings, numbers, arrays, or booleans (`true`/`false` values).
 
   * When we define the data types upfront, the Solidity compiler does not have to expend the resources figuring out what type the data is. In Python, the interpreter runs the code and figures out the types on the fly. While this makes writing the code easier, it is more expensive to run since Python has to calculate the type again every time.
 
-  * Different data types have a different gas cost associated with it. Therefore, if you have to store an `address`, you should use the native `address` type instead of a `string`, since it's cheaper that way.
+  * Different data types have a different `gas` cost associated with it. Therefore, if you have to store an `address`, you should use the native `address` type instead of a `string`, since it's cheaper that way.
 
 Use the following questions to engage the class:
 
@@ -183,11 +186,13 @@ Demonstrate how to compile the contract using Remix and highlight the following:
 
 Explain that we will continue to iterate on this example throughout the lesson to add more functionality.
 
+---
+
 ### 3. Students Do: Build a Basic Contract (15 min)
 
 In this exercise, students will use their data type cheat sheet to build a basic contract that stores simple variables that represent a rewards/bank account balance.
 
-Explain to the class that by the end of today, we will have to build a simple joint savings account, and that tomorrow, we will add special features like a timelock based on a threshold.
+Explain to the class that by the end of today, we will have to build a simple joint savings account, and that next class, we will add special features like a `timelock` based on a threshold.
 
 **Instructions:**
 
@@ -198,6 +203,8 @@ Explain to the class that by the end of today, we will have to build a simple jo
 * [Unsolved - SimpleCustomerAccount.sol](Activities/02-Stu_Building_a_Basic_Contract/Unsolved/SimpleCustomerAccount.sol)
 
 * [Solved - SimpleCustomerAccount.sol](Activities/02-Stu_Building_a_Basic_Contract/Solved/SimpleCustomerAccount.sol)
+
+---
 
 ### 4. Instructor Do: Data Types Review (5 min)
 
@@ -225,9 +232,11 @@ Open the solution and ask the students the following questions:
 
 Now that we've thoroughly covered many of the types within Solidity let's add some functions to our contract!
 
+---
+
 ### 5. Instructor Do: Solidity Functions (10 min)
 
-In this demonstration, the instructor will show the various nuances of functions in Solidity, such as specifying the return type and public/private modifiers.
+In this demonstration, the instructor will show the various nuances of functions in Solidity, such as specifying the return type and `public`/`private` modifiers.
 
 Let's say you are a famous crypto trader and wanted to publish your latest buy order at the price that you bought at. You want to be able to cryptographically prove that it was you that made that recommendation, so you're going to build a smart contract to publish your latest trade to the blockchain.
 
@@ -257,15 +266,15 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
   pragma solidity ^0.5.0;
 
   contract LatestTrade {
-  string coin = "BTC";
-  uint price;
-  bool is_buy_order;
+    string coin = "BTC";
+    uint price;
+    bool is_buy_order;
 
-  function updateTrade(string memory newCoin, uint newPrice, bool is_buy) public {
-  coin = newCoin;
-  price = newPrice;
-  is_buy_order = is_buy; /// is this a buy or a sell order?
-  }
+    function updateTrade(string memory newCoin, uint newPrice, bool is_buy) public {
+      coin = newCoin;
+      price = newPrice;
+      is_buy_order = is_buy; /// is this a buy or a sell order?
+    }
   }
   ```
 

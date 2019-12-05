@@ -4,7 +4,7 @@ In this activity, you will build a simple smart contract to represent a customer
 
 ## Instructions
 
-* Use this [Data Type Cheatsheet](Types_Cheatsheet.md) to easily see how you define variables in Solidity compared to Python.
+* Use this [Data Type Cheatsheet](Resources/Types_Cheatsheet.md) to easily see how you define variables in Solidity compared to Python.
 
 * Create a basic smart contract named `SimpleCustomerAccount`.
 
