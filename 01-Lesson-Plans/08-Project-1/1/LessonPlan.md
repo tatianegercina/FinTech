@@ -32,7 +32,7 @@ Be sure to slack out the [Visual Introduction to Git](https://medium.com/@ashk3l
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### Class Objectives
 
@@ -41,7 +41,7 @@ Be sure to slack out the [Visual Introduction to Git](https://medium.com/@ashk3l
 * Students must be able to create new branches with Git.
 * Students must be able to push local branches to GitHub.
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Students (5 min)
 
@@ -183,7 +183,7 @@ Refer to [03-Stu_Branching-Pushing](Activities/03-Stu_Branching-Pushing/README.m
 
 * If completed successfully, you should see the pull request listed under the repo's "Pull request" tab.
 
-- - -
+---
 
 **Part II**: Reviewing a Pull Request
 
@@ -231,11 +231,11 @@ Step through the [slideshow]() and explain the requirements for Project 1.
 
 Take a moment to address any remaining student questions before dismissing the class for break.
 
-- - -
+---
 
 ### 8. BREAK (15 min)
 
-- - -
+---
 
 ### 9. Student Do: Project Work (1 hr, 45 min)
 
@@ -243,11 +243,11 @@ Students should spend the remainder of class working with their groups to develo
 
 Be sure to walk around and offer advice on project scope, finding data sources, and what kinds of questions would be interesting and realistic for students to investigate.
 
-- - -
+---
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 

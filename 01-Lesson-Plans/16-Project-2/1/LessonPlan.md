@@ -20,13 +20,13 @@ It is highly recommended to request project proposals from students and then app
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### Class Objectives
 
 * Students must be able to articulate the requirements for Project 2.
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Students (15 min)
 
@@ -50,10 +50,10 @@ Break students into their project groups, and have them start to brainstorm idea
 
 Students will work with their groups to brainstorm project ideas and work on their project proposals. Project proposals should be finalized and submitted for instructor approval by the start of the next class.
 
-- - -
+---
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

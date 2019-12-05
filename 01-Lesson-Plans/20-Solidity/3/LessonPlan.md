@@ -2,8 +2,7 @@
 
 ### Overview
 
-Today's class will dive into more complex Solidity concepts, such as `mapping`s, globally available units and attributes,
-and how to tell time in the Ethereum blockchain.
+Today's class will dive into more complex Solidity concepts, such as `mapping`s, globally available units and attributes, and how to tell time in the Ethereum blockchain.
 
 ### Class Objectives
 
@@ -49,8 +48,7 @@ By the end of the class, students will be able to:
 
 Welcome students to the class by getting them excited about more advanced Solidity concepts!
 
-* Today we are going to be learning how to work with time in Solidity, how to add a timelock to our contract,
-  and how to make our contracts reusable with constructors!
+* Today we are going to be learning how to work with time in Solidity, how to add a timelock to our contract, and how to make our contracts reusable with constructors!
 
 Have the students open up [Remix](https://remix.ethereum.org) and open up the `JointSavings.sol` contract from last class.
 
@@ -78,9 +76,7 @@ Ask for remaining questions before moving along.
 
 ### 3. Instructor Do: Globally Available Variables and Attributes in Solidity (10 min)
 
-In this activity, we will cover some globally available attributes and variables in Solidity, such as
-`block` and `msg` in order to save the details of who last withdrew, when, and how much was withdrawn.
-We'll also add the ability to save the same details, but for deposits.
+In this activity, we will cover some globally available attributes and variables in Solidity, such as `block` and `msg` in order to save the details of who last withdrew, when, and how much was withdrawn. We'll also add the ability to save the same details, but for deposits.
 
 **Files:**
 
@@ -91,18 +87,16 @@ We'll also add the ability to save the same details, but for deposits.
 Propose to the students:
 
 * What if we wanted to store the details of who last withdrew, when, and how much they withdrew?
-  To do this, we'll need some built-in variables in Solidity that we can use to access
-  this information.
 
-Open up [Remix](https://remix.ethereum.org) and continue in the `JointSavings.sol` -- the unsolved `GlobalAttributes.sol`
-contains the code that `JointSavings` should have up to this point.
+* To do this, we'll need some built-in variables in Solidity that we can use to access this information.
+
+Open up [Remix](https://remix.ethereum.org) and continue in the `JointSavings.sol` -- the unsolved `GlobalAttributes.sol` contains the code that `JointSavings` should have up to this point.
 
 First, we need to change the way we check who the account owners are.
 
 * Currently, we are checking whether or not the recipient parameter matches either of the accounts we set as the owners.
-  This actually opens up a slight "vulnerability" where anyone can force this contract to withdraw funds into either of the
-  owner wallets. While this doesn't transfer the Ether away from the owners, you certainly wouldn't want someone to have *any*
-  control over your funds, even if it means moving between accounts you own.
+
+* This actually opens up a slight "vulnerability" where anyone can force this contract to withdraw funds into either of the owner wallets. While this doesn't transfer the Ether away from the owners, you certainly wouldn't want someone to have *any* control over your funds, even if it means moving between accounts you own.
 
 * We can do this by checking the built-in `msg.sender` variable.
 
@@ -115,11 +109,9 @@ Remove the recipient parameter from the `withdraw` function, then replace any in
   }
 ```
 
-* Now are contract is safe from other people controlling our funds. We are now checking that the person who is actually
-  sending the transaction, `msg.sender` is any of the account owners. Now, only the owners can successfully `withdraw` to their accounts.
+* Now that the contract is safe from other people controlling our funds, we want to verify the sender. In other words, we check that the person who is actually sending the transaction, `msg.sender`, is one of the account owners. Doing this ensures that only the owners can successfully `withdraw` to their accounts.
 
-* Notice that we can actually call the `.transfer` function just like we did before -- this means that we can replace `recipient`
-  with `msg.sender` as a drop in -- in other words, `msg.sender` is a payable address type.
+* Notice that we can actually call the `.transfer` function just like we did before. This  means that we can replace `recipient` with `msg.sender` as a drop in. In other words, `msg.sender` is a payable address type.
 
 Let's add an `address` variable called `last_to_withdraw` to the contract:
 
@@ -143,10 +135,10 @@ contract JointSavings {
 }
 ```
 
-* Notice that the address is not payable. This is because we only want to use this variable for tracking purposes,
-  so we won't be calling `.transfer` on it.
+* Notice that the address is not payable. This is because we only want to use this variable for tracking purposes, so we won't be calling `.transfer` on it.
 
-Now we need to add a check to see if the current recipient is different from the previous in the withdraw function.
+* Now we need to add a check to see if the current recipient is different from the previous in the withdraw function.
+
 Add an `if` statement that checks if the recipient is different from the previous.
 
 ```solidity
@@ -168,8 +160,7 @@ Ask the students:
   **Answer**: It costs gas to write to the chain. By checking beforehand, we can prevent spending unnecessary gas
   when the variable doesn't need to change.
 
-Let's add a couple more variables to the mix for more details. Under the `last_to_withdraw` variable,
-add the following variables:
+Let's add a couple more variables to the mix for more details. Under the `last_to_withdraw` variable, add the following variables:
 
 ```solidity
 address last_to_withdraw;
@@ -181,8 +172,7 @@ uint last_deposit_block;
 uint last_deposit_amount;
 ```
 
-* We are going to add a couple uint variables that will keep track of which block number the withdraw occurred at,
-  as well as how much was withdrawn. We'll do the same for deposits.
+* We are going to add a couple uint variables that will keep track of which block number the withdraw occurred at, as well as how much was withdrawn. We'll do the same for deposits.
 
 * While this data is already on-chain, visible from a block explorer, it is sometimes useful to have available in-contract.
 
@@ -221,16 +211,15 @@ function deposit() public payable {
 
 Explain to the class:
 
-* Notice that we are able to access the current block number using `block.number`. In this case, `block` is a built-in
-  global variable that we can use to access various data about the current block.
+* Notice that we are able to access the current block number using `block.number`. In this case, `block` is a built-in global variable that we can use to access various data about the current block.
 
 * In the `deposit` function, we are setting the `last_deposit_amount` to equal `msg.value`.
-  `msg` refers to the current transaction that is executing the smart contract. `msg.value` actually refers
-  to the amount of Ether that is attached to said transaction. In our case, we can save the amount that was deposited by
-  storing the `msg.value`. We can use `msg.value` for many other calculations in the future, creating conditions that require
-  a certain amount of Ether, or that keep track of how much Ether each user has stored in your contract.
 
-Lastly, we need to add the `public` keyword to these variables in order to auto-generate "getter" functions for them:
+* `msg` refers to the current transaction that is executing the smart contract.
+
+* `msg.value` actually refers to the amount of Ether that is attached to said transaction. In our case, we can save the amount that was deposited by storing the `msg.value`. We can use `msg.value` for many other calculations in the future, creating conditions that require a certain amount of Ether, or that keep track of how much Ether each user has stored in your contract.
+
+Finally, we need to add the `public` keyword to these variables in order to auto-generate "getter" functions for them:
 
 ```solidity
 address public last_to_withdraw;
@@ -244,12 +233,9 @@ uint public last_deposit_amount;
 
 Explain to the class:
 
-* Instead of creating a special function that fetches these values, a getter, like we did before,
-  we can actually simply set a variable to `public` and Solidity will automatically generate a "getter" function
-  for that variable, with the exact name as the variable!
+* Instead of creating a special function that fetches these values, a getter, like we did before, we can actually simply set a variable to `public` and Solidity will automatically generate a "getter" function for that variable, with the exact name as the variable!
 
-* For example, we can now access the `last_to_withdraw` variable by calling the variable name as a function,
-  like `last_to_withdraw()` -- the getter function name is equal to the variable name automatically.
+* For example, we can now access the `last_to_withdraw` variable by calling the variable name as a function, like `last_to_withdraw()`. Note: The getter function name is equal to the variable name automatically.
 
 * We still have to specify whether our functions are `public`, but this will make fetching data for us much easier.
 
@@ -268,8 +254,8 @@ In this activity, students will be adding the same details using `msg` and `bloc
 * [Unsolved - GlobalAttributes.sol](Activities/04-Stu_Global_Variables/Unsolved/GlobalAttributes.sol)
 
 Send out the instructions, and have the TAs circulate around the room to ensure that students are following along.
-Encourage the students to visit the Solidity documentation link provided to reference what variables are available,
-such as `block` and `msg`.
+
+Encourage the students to visit the Solidity documentation link provided to reference what variables are available, such as `block` and `msg`.
 
 ### 5. Instructor Do: Review Global Attributes (10 min)
 
@@ -301,8 +287,7 @@ Ask for further questions before moving on.
 
 In this activity, we'll be adding a bit more logic to create a withdraw threshold.
 
-We will be adding a "timelock" that locks withdrawals for 24 hours when someone withdraws, as well as explain
-the nuances when it comes to telling time in Ethereum.
+We will be adding a "timelock" that locks withdrawals for 24 hours when someone withdraws, as well as explain the nuances when it comes to telling time in Ethereum.
 
 Continue in the same contract as before, `JointSavings.sol`, or leverage the equivalent unsolved version below.
 
@@ -364,8 +349,8 @@ Explain to the students:
 * You may notice the compiler is saying to "avoid using now/block.timestamp" -- this is because of the inherent inaccuracy of the current time caused by the average blocktime.
 
 * In Ethereum, the accuracy of `now` will always fluctuate based on the average blocktime. For the majority of our use cases, we can get away with a 15 second window.
-  However, timing-critical applications will need to use special contracts called "Oracles" that can provide the exact current time, but we will not need to engineer these in our case,
-  but keep this in mind for the future, if you decide to build timing-critical decentralized applications.
+
+  * Timing-critical applications will need to use special contracts called "Oracles" that can provide the exact current time. Note: we will not need to engineer these in our case, but any timing-critical decentralized applications may need Oracles.
 
 Now, add the locking functionality by adding `unlock_time = now + 24 hours;` just before the `msg.sender.transfer`.
 
@@ -393,11 +378,9 @@ function withdraw(uint amount) public {
 
 * Solidity provides time units in `seconds`, `minutes`, `days`, and `weeks` -- and does not consider leap years!
 
-* This is another reminder that if we need extremely specific time, we'll need special smart contracts to maintain the Gregorian calendar for us,
-  but we are just fine using this implementation.
+* This is another reminder that if we need extremely specific time, we'll need special smart contracts to maintain the Gregorian calendar for us, but we are just fine using this implementation.
 
-* Using this logic, the withdraw function will first check if the `unlock_time` has passed, by checking if it is less than now.
-  Then, just before withdrawing, it sets the new `unlock_time` to be 24 hours from now.
+* Using this logic, the withdraw function will first check if the `unlock_time` has passed, by checking if it is less than now. Then, just before withdrawing, it sets the new `unlock_time` to be 24 hours from now.
 
 Now it's time for the students to create the timelock!
 
@@ -429,9 +412,7 @@ Open the solution and explain the following:
 
 * We must enforce the timelock right away, which is why we place the `require` at the very top of the function.
 
-* We also set the timelock right before we transfer, and not after. We want to make sure we calculate the lock before
-  we send the funds for security purposes. Always remember to change calculate the new state BEFORE sending funds.
-  Otherwise, something called a "re-entry" attack may be possible, which we will learn about in the next unit.
+* We also set the timelock right before we transfer, and not after. We want to make sure we calculate the lock before we send the funds for security purposes. Always remember to change calculate the new state `BEFORE` sending funds. Otherwise, something called a "re-entry" attack may be possible, which we will learn about in the next unit.
 
 Ask the students:
 
@@ -447,11 +428,11 @@ Ask the students:
 
 Ask for any remaining questions before moving on.
 
-- - -
+---
 
 ### 9. BREAK (40 min)
 
-- - -
+---
 
 ### 10. Instructor Do: Welcome Back to Class (5 min)
 
@@ -467,14 +448,11 @@ Have students navigate back to their [Remix IDE](https://remix.ethereum.org) and
 
 ### 11. Instructor Do: Adding a Withdraw Threshold (10 min)
 
-In this activity, we will add a simple `if` statement that checks if we are withdrawing over 1/3 of the balance,
-and updates the timelock if over that threshold.
+In this activity, we will add a simple `if` statement that checks if we are withdrawing over 1/3 of the balance, and updates the timelock if over that threshold.
 
-* We are going to add a threshold that triggers this timelock only when we withdraw over a third of the balance.
-  We will still allow the withdraw, but further withdraws will be locked for 24 hours after that.
+* We are going to add a threshold that triggers this timelock only when we withdraw over a third of the balance. We will still allow the withdraw, but further withdraws will be locked for 24 hours after that.
 
 * This should be plenty of time for the other account holder to do some explaining as to why they withdrew so much!
-
 
 **Files:**
 
@@ -499,7 +477,8 @@ Explain to the class:
 * This condition is effectively saying: "If the amount we are withdrawing is greater than the balance of the contract divided by 3, lock the contract for 24 hours."
 
 * With this one condition, we are creating a much more customized system than we'd be able to build on top of typical banking infrastructure.
-  Simple things like this can also be what make your smart contracts so powerful -- you can enforce whatever rules you decide!
+
+* Simple things like this can also be what make your smart contracts so powerful -- you can enforce whatever rules you decide!
 
 Now, have the students add the same threshold to their contracts!
 
@@ -527,11 +506,9 @@ Ensure that students are accessing the contract's balance using `address(this).b
 
 Open the solution and explain the following:
 
-* You can access the current balance of the contract by using `address(this).balance`. In this case, `this` is the contract
-  and it is being converted into the `address` type, and all `address`es have the `.balance` function available.
+* You can access the current balance of the contract by using `address(this).balance`. In this case, `this` is the contract and it is being converted into the `address` type, and all `address`es have the `.balance` function available.
 
-* While we are dividing the balance by 3 by using the native `/` symbol, we will be learning more secure ways of dividing numbers
-  next week. For now, this works just fine.
+* While we are dividing the balance by 3 by using the native `/` symbol, we will be learning more secure ways of dividing numbers next week. For now, this works just fine.
 
 Ask for any remaining questions before moving on.
 
@@ -549,8 +526,7 @@ Explain to the class:
 
 * Notice how we have our account owners hardcoded? Meaning, we set the values directly in the code to equal the addresses we want.
 
-* While this works functionally, it is a code smell, as we'd have to modify the contract code manually every time we wanted to
-  deploy a new JointSavings account.
+* While this works functionally, it is a code smell, as we'd have to modify the contract code manually every time we wanted to deploy a new JointSavings account.
 
 * To make this contract reusable over and over again, we need to add a special function called a `constructor`.
 
@@ -582,8 +558,7 @@ contract JointSavings {
 
 * This constructor takes in the two payable addresses we want to set as our account owners, and sets them to the designated addresses.
 
-* This constructor function will only run ONCE, during the deployment of the contract. It will never be run again after that,
-  it is simply used to "construct" the necessary variables in order to get the contract built.
+* This constructor function will only run ONCE, during the deployment of the contract. It will never be run again after that, it is simply used to "construct" the necessary variables in order to get the contract built.
 
 * Soon, we will deploy this contract, and you will see an option in Remix that allows us to pass in these parameters during deployment.
 
@@ -657,8 +632,7 @@ First, open up `Ganache` and ensure that your local network is running.
 
 Have students open up their Ganache workspaces as well, and allow them to catch up.
 
-In Remix, navigate to the `Deploy` tab, switch the Web3 provider to `Injected Web3` to connect to MetaMask,
-then login/confirm the MetaMask connection:
+In Remix, navigate to the `Deploy` tab, switch the Web3 provider to `Injected Web3` to connect to MetaMask, then login/confirm the MetaMask connection:
 
 ![Remix Deploy](Images/remix-deploy.png)
 
@@ -704,9 +678,7 @@ Get the class excited, as they have just built a complex smart contract that can
 
 ### 18. Instructor Do: Review Smart Contracts (10 min)
 
-Congratulate the students on building smart contracts, and remind them that few in the world can do this, let alone tried!
-They are already differentiating themselves from the crypto-crowd.
-However, you must remind them that with this power comes responsibility -- security should be top of mind and we cannot allow cutting corners in Solidity!
+Congratulate the students on building smart contracts, and remind them that few in the world can do this, let alone tried! They are already differentiating themselves from the crypto-crowd. However, you must remind them that with this power comes responsibility -- security should be top of mind and we cannot allow cutting corners in Solidity!
 
 Ask the students the following questions:
 
@@ -733,6 +705,26 @@ Ask the students the following questions:
 
   **Answer:** In order to get more accurate time, we need special Oracle contracts.
 
-### 19. Instructor Do: Recap/Career Services (35 min)
+### 19. Instructor Do: Structured Review (35 mins)
 
-This section is reserved for the career services portion of class.
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
+
+Please use the entire time to review questions with the students before officially ending class.
+
+Suggested Format:
+
+* Ask students for specific activities to revisit.
+
+* Revisit key activities for the homework.
+
+* Allow students to start the homework with extra TA support.
+
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings
+
+---
+
+### End Class
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

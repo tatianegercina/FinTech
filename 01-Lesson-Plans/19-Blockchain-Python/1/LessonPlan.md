@@ -24,7 +24,7 @@ By the end of the unit, students will be able to:
 
 * Request testnet tokens from Bitcoin.
 
-- - -
+---
 
 ### Instructor Notes
 
@@ -32,7 +32,7 @@ By the end of the unit, students will be able to:
 
 * Ensure that an ETH address from this mnemonic is prefunded in your custom chain.
 
-- - -
+---
 
 ### Class Slides and Time Tracker
 
@@ -44,7 +44,7 @@ By the end of the unit, students will be able to:
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
@@ -377,11 +377,11 @@ Ask the students a few questions about Keystores:
 
   **Answer**: Symmetric Cryptography! (The password is the symmetric key).
 
-- - -
+---
 
 ### 9. BREAK (15 min)
 
-- - -
+---
 
 ### 10. Instructor Do: Welcome Back to Class (5 min)
 
@@ -819,10 +819,10 @@ allowing time in between class for troubleshooting in case students have difficu
 
 Before the next class, request some test bitcoins of your own to prepare to send to students that had difficulties.
 
-- - -
+---
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

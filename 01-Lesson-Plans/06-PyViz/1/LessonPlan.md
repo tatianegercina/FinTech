@@ -161,7 +161,7 @@ Facilitate discussion by asking the following questions:
 
 Ask if there are any questions; then, move onto the next module.
 
-- - -
+---
 
 ### 4. Instructor Do: Intro to HvPlot (5 min)
 
@@ -309,7 +309,7 @@ In this activity, students revisit plots they made earlier in the class using Ma
 
 * [plotting_visual_takeover.ipynb](Activities/02-Stu_Plotting_Visual_Takeover/Unsolved/Core/plotting_visual_takeover.ipynb)
 
-- - -
+---
 
 ### 7. Instructor Do: Plotting a Visual Takeover Activity Review (10 min)
 
@@ -536,7 +536,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 * [composing_masterpieces.ipynb](Activities/06-Stu_Composing_Masterpieces/Unsolved/composing_masterpieces.ipynb)
 
-- - -
+---
 
 ### 14. Instructor Do: Composing Masterpieces Activity Review (10 min)
 
@@ -702,7 +702,7 @@ Make sure to slack out to students the [hvPlot customization](https://hvplot.pyv
 
 * [picture_perfect.ipynb](Activities/08-Stu_Picture_Perfect/Unsolved/Core/picture_perfect.ipynb)
 
-- - -
+---
 
 ### 17. Students Do: Picture Perfect Activity Review (10 min)
 

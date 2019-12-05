@@ -818,8 +818,10 @@ Suggested Format:
 
 Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings
 
+---
+
 ## End Class
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
