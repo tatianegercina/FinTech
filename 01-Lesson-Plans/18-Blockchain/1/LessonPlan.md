@@ -54,6 +54,9 @@ By the end of the class, students will be able to:
 
 * The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [18.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=17303471-178a-461d-8b72-ab1001881715) Note that this video may not reflect the most recent lesson plan.
+
 ---
 
 ### 1. Instructor Do: Welcome (5 min)
