@@ -284,7 +284,7 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
 
   * The reason we specify that the string is stored in `memory` is that strings are a more complex and thus more expensive data type than integers and addresses, and the EVM requires you to specify where it is stored.
 
-  * While we operate on the string (like passing it in from a parameter), we can store it in `memory` and use less gas than storing a string normally.
+  * While we operate on the string (like passing it in from a parameter), we can store it in `memory` and use less `gas` than storing a string normally.
 
   * Since we defined `string coin` at the top of the contract without specifying `memory`, any variable stored in `coin` is permanently written to the blockchain.
 
@@ -292,7 +292,7 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
 
   ```solidity
   function getLatestTrade() public returns (string memory, uint, bool) {
-  return (coin, price, is_buy_order);
+      return (coin, price, is_buy_order);
   }
   ```
 
@@ -305,6 +305,8 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
   * Since we are just fetching data, calling this function is free! It only costs money to write data to the blockchain or perform calculations on things in `memory`!
 
   * You can "get" the data all you want since it's already stored on the blockchain node.
+
+---
 
 ### 6. Students Do: Adding a Getter and Setter (15 min)
 
