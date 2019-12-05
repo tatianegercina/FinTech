@@ -4,27 +4,27 @@
 
 [MetaMask](https://metamask.io/) is a web browser extension that allows you to run Ethereum dApps right in your browser without running a full Ethereum node.
 
-To install MetaMask, follow the next steps.
+To install MetaMask, follow these steps:
 
 * Open the [MetaMask website](https://metamask.io/) in your browser.
 
  ![MetaMask installation - 1](Images/metamask-1.png)
 
-* Click on the "Get Chrome Extension" link, a new window is going to be opened where you will be able to install the MetaMask extension from the Chrome Web Store.
+* Click on the `Get Chrome Extension` link. This will open a new window where you will be able to install the MetaMask extension from the Chrome Web Store.
 
  ![MetaMask installation - 2](Images/metamask-2.png)
 
-* Click on the "Add to Chrome" button to start the installation process, next a pop-up window will be opened where you have to click on the "Add Extension" button to continue.
+* Click on the `Add to Chrome` button to start the installation process. A pop-up window will open where you have to click on the `Add Extension` button to continue.
 
  ![MetaMask installation - 3](Images/metamask-3.png)
 
-* Next, the "Welcome to MetaMask" website will be opened, you should see a small "fox icon" in the toolbar if MetaMask was successfully installed in your web browsers.
+* Next, the "Welcome to MetaMask" website will be opened. If MetaMask was successfully installed, you will see a small fox icon in the toolbar of the web browser. If this does not show up, revisit the previous steps or contact a TA for assistance.
 
  ![MetaMask installation - 4](Images/metamask-4.png)
 
-* To start configuring your MetaMask account, click on the "Get Started" button.
+* Click the `Get Started` button to start configuring your MetaMask account.
 
-* You will import the wallet that runs in your local blockchain, click on the "Import Wallet" button to continue.
+* You can now import the wallet that runs in your local blockchain. Click on the `Import Wallet` button to continue.
 
  ![MetaMask installation - 5](Images/metamask-5.png)
 
@@ -32,9 +32,9 @@ To install MetaMask, follow the next steps.
 
  ![MetaMask installation - 6](Images/metamask-6.png)
 
-* In the next window, you should enter the twelve words mnemonic of your local wallet, your wallet password, and you should click on the "I have read and agree the Terms of Use" checkbox to continue.
+* In the next window, you should enter the twelve word mnemonic of your local wallet (your wallet password), and you should click on the `I have read and agree the Terms of Use` checkbox to continue.
 
-* If you have a concern, please read through the terms by clicking on the link.
+* Be sure to read through the terms by clicking on the link.
 
  ![MetaMask installation - 7](Images/metamask-7.png)
 
@@ -48,7 +48,7 @@ To install MetaMask, follow the next steps.
 
  ![MetaMask installation - 9](Images/metamask-9.png)
 
-* You may note that you have `0 ETH` and no transactions, this is all right from now since you are not connected to your local blockchain.
+* You may note that you have `0 ETH` and no transactions. This is all right from now since you are not connected to your local blockchain.
 
 Congratulations! You have installed MetaMask.
 
@@ -82,7 +82,7 @@ To download Ganache, follow the next steps.
 
 ### Running the Installer in Windows 10
 
-* Open de installer file, a new window will pop-up asking to install Ganache.
+* Open de installer file. A new window will pop-up asking to install Ganache.
 
 * Make sure the "Launch when ready" checkbox is selected and click on the "Install" button to continue.
 
