@@ -34,7 +34,7 @@ By the end of the Unit, students will be able to:
 
 * Smart contracts have several applications beyond the financial sector such as medical, industrial (supply chain), cybersecurity, and many more. Feel free to include additional use cases or applications that you believe are suitable for the class.
 
-* Setting up the development environment may be tricky; be sure to follow the [installation guide](../Supplemental/smart-contracts-installation-guide.md) before the class to get familiarized with the process.
+* Setting up the development environment may be tricky; be sure to follow the [installation guide](../Supplemental/solidity-install-guide.md) before the class to get familiarized with the process.
 
 ### Slideshow and Time Tracker
 
