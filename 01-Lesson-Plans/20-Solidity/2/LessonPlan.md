@@ -27,7 +27,7 @@ By the end of the class, students will be able to:
 
 * Enforce conditionals using the built-in `require` clause in Solidity.
 
-* "Articulate the value of adding the `require` function and how it enables better error handling and returns excess gas.
+* Articulate the value of adding the `require` function and how it enables better error handling and returns excess gas.
 
 * Deploy and test a smart contract with Remix + Ganache.
 
