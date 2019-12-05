@@ -22,7 +22,7 @@ It is highly recommended to request project proposals from students and then app
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Students (15 min)
 
@@ -42,10 +42,10 @@ Explain that today's class will be dedicated to working on their final projects.
 
 Students will work on their final projects for the remainder of the class.
 
-- - -
+---
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

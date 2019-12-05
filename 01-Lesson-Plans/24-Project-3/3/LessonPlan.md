@@ -8,13 +8,13 @@ In this class, your students will present their final projects to the class! The
 
 * At the end of class today, celebrate! Students have just completed an intense journal over the last 24 weeks that will likely have significant impact on their own lives. Make sure to celebrate this accomplishment with them!
 
-- - -
+---
 
 ### Class Objectives
 
 * Arrive early to class so that you can set the room up for presentations: Panopto, microphone, and the rest of your equipment.
 
-- - -
+---
 
 ### 0. Instructor Do: Set Up Your Equipment (15 minutes before class)
 
@@ -54,11 +54,11 @@ Ask which groups would like to go first, then second, and so on. When groups sto
 
 * When a group finishes afternoon, announce a break.
 
-- - -
+---
 
 ### 4. BREAK (40 min)
 
-- - -
+---
 
 ### 5. Presentations Part 2 (1 hour, 30 minutes)
 
@@ -70,11 +70,11 @@ When the last group finishes, give them an estimate for when they can expect to 
 
 Congratulate them! It's challenging to conceive, develop, and present a new FinTech project! Remind them how much they've learned over the past 6 months.
 
-- - -
+---
 
 ### End Class
 
-- - -
+---
 
 ### After Project Demos
 
@@ -82,6 +82,6 @@ After students have presented their projects, please take some time to submit th
 
 * [Student Project Examples]()
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

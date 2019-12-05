@@ -23,7 +23,7 @@ and to understand how wallets work across the blockchain ecosystem.
 
 * Integrate basic terminal output (stdout) into Python code.
 
-- - -
+---
 
 ### Instructor Notes
 
@@ -33,7 +33,7 @@ and to understand how wallets work across the blockchain ecosystem.
 
 * Ensure that you have properly installed the [hd-wallet-derive](https://github.com/dan-da/hd-wallet-derive#installation-and-running) PHP CLI tool at least once before class.
 
-- - -
+---
 
 ### Class Slides and Time Tracker
 
@@ -45,7 +45,7 @@ and to understand how wallets work across the blockchain ecosystem.
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
@@ -353,11 +353,11 @@ Congratulate the students on learning about the wallet standards that the entire
 Explain that they can now take this understanding anywhere in the blockchain space, and
 that all blockchains have an incentive to integrate with this universal standard.
 
-- - -
+---
 
 ### 11. BREAK (15 min)
 
-- - -
+---
 
 ### 12. Instructor Do: Welcome Back to Class (5 min)
 
@@ -773,10 +773,10 @@ Suggested Format:
 
 Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings
 
-- - -
+---
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

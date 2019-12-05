@@ -54,7 +54,7 @@ By the end of this class, students will be able to:
 
 **File:** [Welcome and Refresher Slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit?usp=sharing)
 
-Welcome students back to class. Open the slideshow and review today’s [class objectives](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_8). 
+Welcome students back to class. Open the slideshow and review today’s [class objectives](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g5578adef6f_0_8).
 
 Navigate to the [refresher slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g55e32eac42_0_38) and do a quick review of the previous lesson by presenting the following questions to the class:
 
@@ -990,7 +990,7 @@ Answer any questions before moving on.
 
 * [nesting_dict_of_dicts.py](Activities/07-Ins_Nesting/Solved/nesting_dict_of_dicts.py)
 
-Introduce nesting by explaining that lists and dictionaries are really just data containers. Use the [slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g55e32eac42_0_91) to accompany your lecture. 
+Introduce nesting by explaining that lists and dictionaries are really just data containers. Use the [slides](https://docs.google.com/presentation/d/1cFrN2LIjmDC2UdVQMYIY-_peQc4mty4R63lvyJbqn1I/edit#slide=id.g55e32eac42_0_91) to accompany your lecture.
 
 * The values in a list or dictionary can actually be other lists and dictionaries. This means that you can have a list of dictionaries, or a dictionary where each value is a list. You can also have lists of lists and dictionaries of dictionaries!
 
@@ -1682,4 +1682,4 @@ Let students know that office hours are available for anyone who would like to a
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

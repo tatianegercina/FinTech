@@ -20,7 +20,7 @@ By the end of the unit, students will be able to:
 
 * Explain the difference between Ethereum and Bitcoin's account models (UTXOs vs. Nonces).
 
-- - -
+---
 
 ### Instructor Notes
 
@@ -35,7 +35,7 @@ By the end of the unit, students will be able to:
 
 * Ensure that you have the `bit` Python library install via `pip install bit`.
 
-- - -
+---
 
 ### Class Slides and Time Tracker
 
@@ -47,7 +47,7 @@ By the end of the unit, students will be able to:
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
@@ -336,11 +336,11 @@ Ask the students the following questions:
  **Answer:** There are 6 blocks that were mined after the transaction was mined.
  This threshold makes it virtually impossible to reverse.
 
-- - -
+---
 
 ### 10. BREAK (15 min)
 
-- - -
+---
 
 ### 11. Instructor Do: Welcome Back to Class (5 min)
 
@@ -570,10 +570,10 @@ Ask the students the following questions:
 
  **Answer:** It abstracts all of the functions you'd need to interact with Bitcoin, keys, and includes currency conversions.
 
-- - -
+---
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
