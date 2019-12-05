@@ -60,15 +60,15 @@ First, let's ask the students some recall questions about static data types:
 
 * What is a `uint`?
 
- **Answer:** Unsigned Integer.
+  * **Answer:** Unsigned Integer.
 
 * What is the difference between an `int` and a `uint`?
 
- **Answer:** `int` can be positive and negative, `uint` is positive only.
+  * **Answer:** `int` can be positive and negative, `uint` is positive only.
 
 * What is a `payable` address, and why is it different from a regular address?
 
- **Answer:** A payable address is like a normal address type, except it allows the `.transfer` function to be called in order to send it Ether.
+  * **Answer:** A payable address is like a normal address type, except it allows the `.transfer` function to be called in order to send it Ether.
 
 Ask for any remaining questions before moving along.
 
@@ -157,8 +157,7 @@ Ask the students:
 
 * Why might we include this if statement, versus just setting the `last_to_withdraw` every time?
 
- **Answer**: It costs gas to write to the chain. By checking beforehand, we can prevent spending unnecessary gas
- when the variable doesn't need to change.
+  * **Answer**: It costs gas to write to the chain. By checking beforehand, we can prevent spending unnecessary gas when the variable doesn't need to change.
 
 Let's add a couple more variables to the mix for more details. Under the `last_to_withdraw` variable, add the following variables:
 
@@ -275,11 +274,11 @@ Ask the students the following questions:
 
 * Why might we want to access these variables in our contracts?
 
- **Answer:** It allows us to make decisions on what to do next based on who is calling the function, and under what conditions.
+  * **Answer:** It allows us to make decisions on what to do next based on who is calling the function, and under what conditions.
 
 * What is `msg.value`?
 
- **Answer:** The amount of Ether that was sent with the transaction.
+  * **Answer:** The amount of Ether that was sent with the transaction.
 
 Ask for further questions before moving on.
 
@@ -418,13 +417,11 @@ Ask the students:
 
 * What does a `require` do again? Why is it better than an `if` statement for this check?
 
- **Answer:** `require` enforces a requirement, stopping the contract if the requirement is not satisfied, and returns leftover gas and Ether.
- In this case, we want this hard stopping point, as we will not move forward if this condition is not met.
+  * **Answer:** `require` enforces a requirement, stopping the contract if the requirement is not satisfied, and returns leftover gas and Ether. In this case, we want this hard stopping point, as we will not move forward if this condition is not met.
 
 * Why is there variability in the accuracy of time when using `now`/`block.timestamp`?
 
- **Answer:** This is due to the average block time of the network. Unless we use special Gregorian Calendar contracts,
- we will have to work within the block time window.
+  * **Answer:** This is due to the average block time of the network. Unless we use special Gregorian Calendar contracts, we will have to work within the block time window.
 
 Ask for any remaining questions before moving on.
 
@@ -470,7 +467,7 @@ Add this to the contract in Remix, then ask the class:
 
 * What does `address(this).balance` do?
 
- **Answer:** Gives the current balance of the contract.
+  * **Answer:** Gives the current balance of the contract.
 
 Explain to the class:
 
@@ -603,15 +600,15 @@ Ask the students the following questions:
 
 * When is the constructor function called?
 
- **Answer:** During deployment.
+  * **Answer:** During deployment.
 
 * Can the function be called again after the contract is on-chain?
 
- **Answer:** No, it is only called during deployment.
+  * **Answer:** No, it is only called during deployment.
 
 * Why is a constructor better to use than hardcoding values?
 
- **Answer:** We can now reuse our contract code over and over again, as-is, and pass new parameters during deployment.
+  * **Answer:** We can now reuse our contract code over and over again, as-is, and pass new parameters during deployment.
 
 Ask for any remaining questions before moving on.
 
@@ -684,25 +681,25 @@ Ask the students the following questions:
 
 * What are smart contracts useful for?
 
- **Answer:** We can build any program on top of the blockchain, giving us the ability to write fully decentralized applications.
+  * **Answer:** We can build any program on top of the blockchain, giving us the ability to write fully decentralized applications.
 
 * Why do we use a constructor?
 
- **Answer:** So we can avoid hardcoded values and reuse our code.
+  * **Answer:** So we can avoid hardcoded values and reuse our code.
 
 * Why do we use strict data types in Solidity?
 
- **Answer:** We need to be unambiguous in our code, just like we need to be unambiguous in legal contracts.
+  * **Answer:** We need to be unambiguous in our code, just like we need to be unambiguous in legal contracts.
 
- **Answer:** It is more efficient, and thus cheaper, to define the types upfront, versus having Solidity figure it out after the fact, spending precious gas.
+  * **Answer:** It is more efficient, and thus cheaper, to define the types upfront, versus having Solidity figure it out after the fact, spending precious gas.
 
 * What nuances are there when it comes to telling time in Solidity/Ethereum?
 
- **Answer:** We are limited to static time that is not Gregorian.
+  * **Answer:** We are limited to static time that is not Gregorian.
 
- **Answer:** We are limited to a window of accuracy defined by the average block time.
+  * **Answer:** We are limited to a window of accuracy defined by the average block time.
 
- **Answer:** To get more accurate time, we need special Oracle contracts.
+  * **Answer:** To get more accurate time, we need special Oracle contracts.
 
 ### 19. Instructor Do: Structured Review (35 mins)
 
