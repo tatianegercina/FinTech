@@ -10,7 +10,7 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * Code drills range in complexity and pace, so the time allotted to each section of activities should be fluid in order to allow each student to work through the problems at their own pace. You may find it helpful to review certain drills or activities with the entire class, but the majority of the time will likely be best served by rotating between groups of students to help them with any issues that they are having. This will also be a good time to see how they are feeling about Python in general and to give them some words of encouragement.
 
-* One way to challenge students is to have "code drill races," where students pair off and race each other to complete a set of drills. However, use this strategy cautiously and thoughtfully so that you don't overwhelm any beginner programmers. 
+* One way to challenge students is to have "code drill races," where students pair off and race each other to complete a set of drills. However, use this strategy cautiously and thoughtfully so that you don't overwhelm any beginner programmers.
 
 * Overall, this should be a fun day for students that will help them build confidence in their programming skills. Be sure to offer plenty of support and encouragement to beginners.
 
@@ -20,7 +20,7 @@ Today's class is an opportunity for students to review and practice fundamental 
 * To watch an example class lecture, go here: [3.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e1e2c6d5-ca1e-4255-8b93-aaa301156f71) Note that this video may not reflect the most recent lesson plan.
 
 
-- - -
+---
 
 ### 1. Instructor Do: Welcome Students (5 min)
 
@@ -36,7 +36,7 @@ Explain code drills to students:
 
 * Code drills are a way to help build that muscle memory. They are designed to provide basic practice with coding. The problems range from simple to complex, and they force you to focus on the fundamentals of the language.
 
-Tell students that while they will be given all code drills at once, they should work through them at their own pace. Meanwhile, you and the TAs will be circulating the classroom to oversee student work and answer any questions they have. 
+Tell students that while they will be given all code drills at once, they should work through them at their own pace. Meanwhile, you and the TAs will be circulating the classroom to oversee student work and answer any questions they have.
 
 Encourage students to try to complete the simple code drills from memory, googling answers as needed.
 
@@ -46,10 +46,10 @@ Students will be given the remaining class time to work through the code drills 
 
 **File:** [Code Drills](Activities/)
 
-- - -
+---
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

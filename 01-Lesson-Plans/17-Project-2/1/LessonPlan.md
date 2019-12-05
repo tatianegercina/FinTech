@@ -26,13 +26,13 @@ The remaining schedule for Project 2 is as follows:
 
   * Students present their projects!
 
-- - -
+---
 
 ### Class Objectives
 
 * Students work on their group projects.
 
-- - -
+---
 
 ### 1. Welcome Class (5 min)
 
@@ -62,11 +62,11 @@ TAs and instructors: For the next 90 minutes, you're senior developers! Walk aro
 
 * In any case, make sure all teams seem prepared to complete their projects by Saturday.
 
-- - -
+---
 
 ### 4. BREAK (15 min)
 
-- - -
+---
 
 ### 5. Student Do: Project Work (1 hour, 15 minutes)
 
@@ -76,6 +76,6 @@ Allow students to continue working on their projects.
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

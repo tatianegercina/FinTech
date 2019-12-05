@@ -1228,4 +1228,4 @@ Congratulate students on making it through their first lesson on programming! Of
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

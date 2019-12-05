@@ -8,7 +8,7 @@ In this class, your students will present their project apps to the class! Theyâ
 
 * Students should know the parts of their projects that impress you and the TAs and what they can improve on for future projects. This will help direct their focus for future assignments on what aspects of development they need to work on.
 
-- - -
+---
 
 ### Class Objectives
 
@@ -16,7 +16,7 @@ In this class, your students will present their project apps to the class! Theyâ
 
 * To provide students more time and support for their group projects.
 
-- - -
+---
 
 ### 0. Instructor Do: Set Up Your Equipment (15 minutes before class)
 
@@ -56,11 +56,11 @@ Ask which groups would like to go first, then second and so on. When groups stop
 
 * When a group finishes after noon, announce a break.
 
-- - -
+---
 
 ### 4. BREAK (40 min)
 
-- - -
+---
 
 ### 5. Presentations Part 2 (1 hour, 30 minutes)
 
@@ -72,11 +72,11 @@ When the last group finishes, give them an estimate for when they can expect to 
 
 Congratulate them! It's challenging to conceive, develop, and present a new FinTech project. Remind them that this they accomplished all this in just nine weeks, and tell them to imagine what they'll come up with in their next two projects after learning even more techniques.
 
-- - -
+---
 
 ### End Class
 
-- - -
+---
 
 ### After Project Demos
 
@@ -84,6 +84,6 @@ After students have presented their projects, please take some time to submit th
 
 * [Student Project Examples]()
 
-- - -
+---
 
 Â© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -26,7 +26,7 @@ The remaining schedule for Project 2 is as follows:
 
   * Students present their final projects!
 
-- - -
+---
 
 ### Class Objectives
 
@@ -34,7 +34,7 @@ The remaining schedule for Project 2 is as follows:
 
 * To make sure students spend **at least a half-hour **outlining their presentations.
 
-- - -
+---
 
 ### 1. Welcome Class (5 min)
 
@@ -66,20 +66,20 @@ Some students may feel nervous about their deadline approaching. Reassure them t
 
 A few groups might not seem poised to finish their projects on time. Tell them to drop any undeveloped and unnecessary features. Even if they can't meet their proposed goal, they should still present a functional project on Saturday. Add that they can talk about the dropped features as planned updates.
 
-- - -
+---
 
 ### 4. BREAK (15 min)
 
-- - -
+---
 
 ### 5. Student Do: Project Work (1 hour, 10 minutes)
 
 Allow students to continue working on projects.
 
-- - -
+---
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
