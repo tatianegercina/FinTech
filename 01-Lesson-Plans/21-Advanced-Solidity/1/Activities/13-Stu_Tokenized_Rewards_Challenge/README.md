@@ -61,6 +61,8 @@ This same model can apply for any rewards system and can be customized to the us
 
   * **Remember** to use **SafeMath** for **all** math operations!
 
+* Congratulations! You have successfully built a rewards system that can be used in many different businesses. Take the rest of the time to deploy and test your contract features.
+
 ## Challenge
 
 * If time remains, try to replace the hardcoded variables at the top of the contract with a constructor to allow for deploying this rewards system anywhere.
