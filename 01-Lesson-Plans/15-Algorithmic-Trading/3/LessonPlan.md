@@ -1,4 +1,8 @@
-### Overview:
+## 15.3 Lesson Plan:
+
+---
+
+### Overview
 
 Today's lesson shows students how to use machine learning models in their algorithmic trading framework.
 
