@@ -164,7 +164,7 @@ Have groups share a few items on the lists of features they curated, answer any 
 
 ---
 
-### 4. Everyone Do: Installing MetaMask (10 min)
+### 5. Everyone Do: Installing MetaMask (10 min)
 
 In this activity, the instructor will have the class installing the [MetaMask](https://metamask.io/) browser extension, and import their mnemonics to enable dApp support on their web browsers.
 
@@ -415,7 +415,7 @@ Have the TA's circulate the room to assist with any installation issues that stu
 
 ---
 
-### 08. Instructor Do: Remix and Ganache Review
+### 08. Instructor Do: Remix and Ganache Review (5 min)
 
 Open Ganache and ask the students the following questions.
 
@@ -552,6 +552,12 @@ Ask the class the following recall questions:
   **Answer** C++
 
   **Answer** Java
+
+---
+
+---
+
+### 12. BREAK (15 min)
 
 ---
 
