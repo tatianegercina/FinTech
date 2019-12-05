@@ -148,7 +148,7 @@ The only way to not excel at this exercise is to not participate in the research
 
 ---
 
-### 4. Instructor Do: Smart Contracts in Action Review (5 min)
+### 5. Instructor Do: Smart Contracts in Action Review (5 min)
 
 Conduct a facilitated discussion by asking a couple of groups to share their conclusions and insights about the use cases their review, focus on discussing with the class which features they noticed are compliant with the criteria from ["The General Theory of Decentralized Applications"](https://github.com/DavidJohnstonCEO/DecentralizedApplications).
 
@@ -339,7 +339,9 @@ This page should be relatively empty, only listing block zero -- explain:
 
 Inform the students that they will have time to explore the various pages of Ganache as they set up their Ganache blockchain in the next activity.
 
-Now that Ganache is running the local development blockchain on `localhost:8545`, Open [Remix](http://remix.ethereum.org) in your web browser.
+* Now that Ganache is running the local development blockchain on `localhost:8545`.
+
+Open [Remix](http://remix.ethereum.org) in your web browser.
 
 ![remix_home.png](Images/remix_home.png)
 
@@ -348,6 +350,10 @@ Briefly introduce Remix:
 * Remix is an online IDE and compiler for the `Solidity` smart contract language.
 
 * Remix allows you to write, compile and deploy Solidity smart contracts onto the Ethereum blockchain.
+
+Enable the `Solidity` development environment by clicking on the "Solidity" button on the Remix Home tab.
+
+![remix_solidity_env](Images/remix_enable_solidity_env.gif)
 
 Create a new smart contract by clicking the `Add local file` button. Then, populate the contents with [MessageBoard.sol](Activities/06-Ins_Intro_to_Remix_and_Ganache/Solved/MessageBoard.sol).
 
@@ -383,6 +389,10 @@ Change the Environment to `Injected Web3`:
 
 ![remix_injected_web3](Images/remix_injected_web3.png)
 
+You will see a connection request from MetaMask to connect Remix with your local blockchain, click the "Connect" button to continue.
+
+![remix_metamask_connection](Images/remix_metamask_connection.png)
+
 Explain to the students that:
 
 * Web3 is a library that allows you to communicate with Ethereum nodes.
@@ -390,6 +400,8 @@ Explain to the students that:
 * We must set our environment to `Injected Web3` so that Remix can talk to MetaMask, which can talk to our local blockchain. In this case, MetaMask is "injecting" the Web3 library into your browser, which allows Remix to communicate to the outside world (Ethereum).
 
 * We will be writing our own custom smart contracts tomorrow, but today we will just be familiarizing ourselves with Remix.
+
+---
 
 ### 07. Students Do: Setting up Remix and Ganache (15 min)
 
@@ -401,31 +413,39 @@ Students will setup Ganache, create a workspace for `fintech`, set the `RPC port
 
 Have the TA's circulate the room to assist with any installation issues that students may be having -- Students may have to add an allow rule to windows firewall.
 
+---
+
 ### 08. Instructor Do: Remix and Ganache Review
 
 Open Ganache and ask the students the following questions.
 
 * How might a local development blockchain like Ganache make it easier to develop smart contracts?
 
- **Answer** It allows potentially insecure code to run in a private(non-public) environment.
+  **Answer** It allows potentially insecure code to run in a private(non-public) environment.
 
- **Answer** It saves you from having to purchase actual ether.
+  **Answer** It saves you from having to purchase actual ether.
 
- **Answer** Ether is automatically generated in your wallet for testing smart contracts.
+  **Answer** Ether is automatically generated in your wallet for testing smart contracts.
 
- **Answer** Transactions happen right away.
+  **Answer** Transactions happen right away.
 
 * How might remix make it easier to write smart contracts?
 
- **Answer** You can write a smart contract from pretty much any browser.
+  **Answer** You can write a smart contract from pretty much any browser.
 
- **Answer** It allows for writing, compiling, and deploying all in one place.
+  **Answer** It allows for writing, compiling, and deploying all in one place.
 
- **Answer** It supports connecting to local development blockchains.
+  **Answer** It supports connecting to local development blockchains.
 
-### 09. Instructor Do: Contextualizing Solidity (15 min)
+---
 
-In this exercise, the instructor will explain to the students that Solidity is a statically typed language and that it runs inside the EVM in a sandbox.
+### 09. BREAK (15 min)
+
+---
+
+### 10. Instructor Do: Contextualizing Solidity (15 min)
+
+In this exercise, the instructor will explain to the students that Solidity is a statically typed language and that it runs inside the Ethereum Virtual Machine (EVM) in a sandbox.
 
 * Solidity is the language of smart contracts used by Ethereum, as well as Ethereum-compatible blockchains like IBM's Hyperledger Fabric and Burrow, JPMorgan Chase's Quorum, Ethereum Classic, and last, but not least, Counterparty which extends Bitcoin to support the EVM.
 
@@ -433,7 +453,7 @@ In this exercise, the instructor will explain to the students that Solidity is a
 
 Present the following diagram to the class and give them a few minutes to think about what is being illustrated.
 
-* Try to conceptualize what is happening in the graphic.
+Try to conceptualize what is happening in the graphic.
 
 ![Diagram](Images/EVM.png)
 
@@ -441,52 +461,55 @@ Present the following diagram to the class and give them a few minutes to think 
 
 * Higher Level language
 
- * Solidity is the `Higher Level Language` of the EVM.
+  * Solidity is the `Higher Level Language` of the EVM.
 
- * A higher level language allows code to be written that is independent of a particular computer's hardware.
+  * A higher level language allows code to be written that is independent of a particular computer's hardware.
 
- * A higher level language is a language that is more easily understandable for humans than machine code.
+  * A higher level language is a language that is more easily understandable for humans than machine code.
 
- * A higher level language cannot be understood by a computer; it has to be compiled to machine code by the compiler before it can be understood.
+  * A higher level language cannot be understood by a computer; it has to be compiled to machine code by the compiler before it can be understood.
 
 * Machine Code
 
- * EVM machine code consists of a list of instructions that the EVM will perform.
+  * EVM machine code consists of a list of instructions that the EVM will perform.
 
- * A user pays a certain amount of `gas` for each instruction that gets executed by the EVM.
+  * A user pays a certain amount of `gas` for each instruction that gets executed by the EVM.
 
- * Instead of just a plain transaction fee like with Bitcoin, users pay fees based on running different computations. Each computation has a different `gas` cost associated with it.
+  * Instead of just a plain transaction fee like with Bitcoin, users pay fees based on running different computations. Each computation has a different `gas` cost associated with it.
 
- * The cost of each of these opcodes is determined by the community, in the Ethereum node software. In fact, it is updated occasionally to keep the network fair when certain opcodes become too expensive for average nodes to process.
+  * The cost of each of these opcodes is determined by the community, in the Ethereum node software. In fact, it is updated occasionally to keep the network fair when certain opcodes become too expensive for average nodes to process.
 
 Show the class the example machine code.
 
 ```bytecode
- "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x40 MLOAD PUSH2 0x872 CODESIZE SUB DUP1 PUSH2 0x872 DUP4 CODECOPY DUP2 DUP2 ADD PUSH1 0x40 MSTORE PUSH1 0x20 DUP2 LT ISZERO PUSH2 "
+"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x40 MLOAD PUSH2 0x872 CODESIZE SUB DUP1 PUSH2 0x872 DUP4 CODECOPY DUP2 DUP2 ADD PUSH1 0x40 MSTORE PUSH1 0x20 DUP2 LT ISZERO PUSH2 "
 ```
 
 * This is what the Solidity code compiles down to. As you can see, there are different instructions, aka "opcodes" that are telling the EVM exactly what to do.
+
 * Virtual Machine
 
- * The EVM contains a memory, storage, and all of the essential parts of a physical computer, just virtual, and sandboxed inside of your Ethereum node.
+  * The EVM contains a memory, storage, and all of the essential parts of a physical computer, just virtual, and sandboxed inside of your Ethereum node.
 
- * Every Ethereum node runs the EVM, which is how all Ethereum nodes are able to process and validate transactions and smart contracts.
+  * Every Ethereum node runs the EVM, which is how all Ethereum nodes are able to process and validate transactions and smart contracts.
 
 * Process/Runtime
 
- * The process/runtime is the actual process that runs on the host machine.
+  * The process/runtime is the actual process that runs on the host machine.
 
- * The Ethereum node spawns a process for the EVM.
+  * The Ethereum node spawns a process for the EVM.
 
- * While each node can verify transactions within its own EVM, it takes multiple full nodes running their own EVMs to properly secure the network.
+  * While each node can verify transactions within its own EVM, it takes multiple full nodes running their own EVMs to properly secure the network.
 
- * `Geth` is one implementation of an Ethereum full node written in GO.
+  * `Geth` is one implementation of an Ethereum full node written in GO.
 
 * Hardware
 
- * Since blockchains are written in software, the hardware can be any machine that is capable of running the node software and connecting to the internet.
+  * Since blockchains are written in software, the hardware can be any machine that is capable of running the node software and connecting to the internet.
 
-### 10. Students Do: Contextualizing Solidity Worksheet (10 min)
+---
+
+### 11. Students Do: Contextualizing Solidity Worksheet (10 min)
 
 Students will fill in a simple chart (pipeline) of the various levels of the EVM's architecture with the names of the various levels and their real-world implementation.
 
@@ -500,7 +523,9 @@ Students will fill in a simple chart (pipeline) of the various levels of the EVM
 
 * [WorkSheet - Unsolved](Activities/10_Stu_Contextualizing_Solidity_Worksheet/Unsolved/evm_worksheet.md)
 
-### 11. Instructor Do: Contextualizing Solidity Review (5 min)
+---
+
+### 12. Instructor Do: Contextualizing Solidity Review (5 min)
 
 Once again, display the completed graphic of the EVM's architecture to the class.
 
@@ -510,23 +535,25 @@ Ask the class the following recall questions:
 
 * What is a potential benefit of executing code in a virtual machine?
 
- **Answer** The code executed in a virtual machine cannot affect the host machine directly.
+  **Answer** The code executed in a virtual machine cannot affect the host machine directly.
 
- **Answer** The code can run anywhere the virtual machine can run.
+  **Answer** The code can run anywhere the virtual machine can run.
 
 * What do you think some benefits of Solidity being a compiled language might be?
 
- **Answer** Human readable code can turn into machine-readable code.
+  **Answer** Human readable code can turn into machine-readable code.
 
- **Answer** Code can be executed faster.
+  **Answer** Code can be executed faster.
 
 * What's an example of a programing language that humans write, e.g. `High-level languages`?
 
- **Answer** Solidity
+  **Answer** Solidity
 
- **Answer** C++
+  **Answer** C++
 
- **Answer** Java
+  **Answer** Java
+
+---
 
 ### 13. Instructor Do: Unveiling Decentralized Apps (15 min)
 
@@ -715,7 +742,7 @@ Answer any questions before moving on.
 
 ---
 
-### 15. Student Do: State Of The Dapps (20 min)
+### 14. Student Do: State Of The Dapps (20 min)
 
 In this activity, students will visit [The State Of The Dapps website](https://www.stateofthedapps.com/) to explore the many dApps that exist in the blockchain ecosystem. Students will work in groups up to three people to research and to analyze a dApps from any sector from their interest.
 
@@ -729,7 +756,7 @@ Have TAs circulate the classroom to help students and foster collaboration in ea
 
 ---
 
-### 16. Instructor Do: State Of The Dapps Review (10 min)
+### 15. Instructor Do: State Of The Dapps Review (10 min)
 
 In this activity, conduct a facilitated discussion to allow the students to share their findings after the previous research activity.
 
@@ -753,7 +780,7 @@ Answer any questions before moving on.
 
 ---
 
-### 17. Instructor Do: Homework Demo (5 mins)
+### 16. Instructor Do: Homework Demo (5 mins)
 
 In this activity, students will get a big-picture overview of the homework.
 
@@ -777,7 +804,7 @@ Answer any questions before moving on.
 
 ---
 
-### 18. Instructor Do: Recap (5 min)
+### 17. Instructor Do: Recap (5 min)
 
 Congratulate students on completing their first day on smart contracts! End the class by briefly reviewing the main concepts of the day, Smart Contracts and dApps.
 
@@ -793,4 +820,6 @@ Explain to students that we will begin to learn how to program smart contracts i
 
 By the end of this Unit, students will be writing their custom smart contracts and dApps for Ethereum!
 
+### End Class
 ---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
