@@ -1,11 +1,10 @@
 # Using SafeMath to secure your token
 
-In this activity, you will implement the SafeMath library and use it for all math operations in order to secure your token
-from integer underflow and overflow vulnerabilities, as well as other math-related vulnerabilities.
+In this activity, you will implement the SafeMath library and use it for all math operations in order to secure your token from integer underflow and overflow vulnerabilities, as well as other math-related vulnerabilities.
 
 ## Instructions
 
-* Navigate to Remix, and open up your `ArcadeToken.sol` contract.
+* Navigate to Remix, and open up your `ArcadeToken.sol` contract. You can also use this [starter file](Unsolved/ArcadeToken.sol).
 
 * Add the following import statement just below the `pragma` and above the `contract` definition:
 
@@ -13,8 +12,7 @@ from integer underflow and overflow vulnerabilities, as well as other math-relat
   import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
   ```
 
-  * You can find this URL later by a quick internet search for "OpenZeppelin SafeMath" and copying the "raw" URL to the contract from GitHub.
-  You may do this with any other contract library in the future as well.
+  * You can find this URL later by a quick internet search for "OpenZeppelin SafeMath" and copying the "raw" URL to the contract from GitHub.You may do this with any other contract library in the future as well.
 
 * Add the following as the first line of code in your smart contract:
 
