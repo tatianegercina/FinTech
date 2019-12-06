@@ -748,23 +748,25 @@ Open the solution and explain the following:
 
   ```Solidity
   if (recipient == account_one || recipient == account_two) {
-  recipient.transfer(amount);
+    recipient.transfer(amount);
   }
   ```
 
 Ask for any remaining questions before moving on.
 
+---
+
 ### 16. Everyone Do: Restricting the Withdraw Function with Require (20 min) (Critical)
 
-In this activity, we will be replacing our `if` conditional statement with a `require`.
-
-Have students follow along while you code.
-
-Continue with the `JointSavings.sol` contract in [Remix](https://remix.ethereum.org) and ensure that students have theirs open as well.
+In this activity, we will be replacing our `if` conditional statement with a `require` function.
 
 **Files:**
 
 * [Unsolved - JointSavings.sol](Activities/07-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
+
+Have students follow along while you code.
+
+Continue with the `JointSavings.sol` contract in [Remix](https://remix.ethereum.org) and ensure that students have theirs open as well.
 
 Up to this point, everyone's contract should look like this:
 
@@ -772,18 +774,18 @@ Up to this point, everyone's contract should look like this:
 pragma solidity ^0.5.0;
 
 contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
- function withdraw(uint amount, address payable recipient) public {
- if (recipient == account_one || recipient == account_two) {
- recipient.transfer(amount);
- }
- }
+  function withdraw(uint amount, address payable recipient) public {
+    if (recipient == account_one || recipient == account_two) {
+      recipient.transfer(amount);
+    }
+  }
 
- function deposit() public payable {}
+  function deposit() public payable {}
 
- function() external payable {}
+  function() external payable {}
 }
 ```
 
@@ -798,9 +800,9 @@ Remove the `if` statement, then replace it with the following `require`:
 
 ```solidity
 function withdraw(uint amount, address payable recipient) public {
- require(recipient == account_one || recipient == account_two, "You do not own this account!");
- recipient.transfer(amount);
- }
+  require(recipient == account_one || recipient == account_two, "You do not own this account!");
+  recipient.transfer(amount);
+}
 ```
 
 Have the students catch up with the code, then elaborate:
@@ -819,15 +821,17 @@ Have the students catch up with the code, then elaborate:
 
 Now we have a fully working `JointSavings` account with withdraw protection on our contract account and a deposit function to deposit our funds. Let's compile and deploy our contract to test it out!
 
+---
+
 ### 17. Everyone Do: Deploying a Contract in Remix (10 min)
 
 In this activity, students will take their `JointSavings` account contract, compile and deploy it on their local `testnet`.
 
-Let's compile and deploy our contract to test it out!
-
 **Files:**
 
 * [JointSavings.sol](Activities/07-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
+
+Let's compile and deploy our contract to test it out!
 
 Perform the following:
 
@@ -857,7 +861,7 @@ Perform the following:
 
   ![Remix Deploy](Images/remix_enviroment.png)
 
-* You will be prompted to connect your account in Meta Mask to remix.
+* You may be prompted to connect your account in MetaMask to remix.
 
   ![Remix Deploy](Images/remix_web3_prompt.png)
 
@@ -867,9 +871,9 @@ Perform the following:
 
 * Pause while the students deploy their contracts.
 
-  ![Remix Deployed Contract](Images/remix_deployed_contract.png)
+* If your contract successfully deployed, it should now appear as a grey box under deployed contracts at the bottom of the deploy sidebar.
 
-  * If your contract successfully deployed, it should now appear as a grey box under deployed contracts at the bottom of the deploy sidebar.
+  ![Remix Deployed Contract](Images/remix_deployed_contract.png)
 
 * Click the drop-down arrow next to the grey deployed contract to display the contract's functions that can be called.
 
@@ -881,7 +885,7 @@ Discuss with the students:
 
 * As you can see, all of the functions have an input that allows you to send the function parameters.
 
-* Notice that the deposit function does not have an input next to it. This is because it does not have any parameters. Instead, you will pass it ether through the value field at the top.
+* Notice that the deposit function does not have an input next to it. This is because it does not have any parameters. Instead, you will pass it Ether through the value field at the top.
 
 Lead students through passing `10 ether` into the deposit function and then withdrawing it.
 
@@ -915,7 +919,7 @@ Since we defined the `amount` variable as a `uint256` we are working with the sm
 
 We can do this in many ways, we can either use `Web3.py`, a website like [eth-converter.com](eth-converter.com), or we can remember that `1 ether` is equivalent to 1 * 10^18 `wei`. That's right, we can specify incredibly small amounts of `ether` by using `wei`. In our case, `10 ether` is `10000000000000000000 wei` -- aka 1 with 19 zeros after it.
 
-Call the `Withdraw` function and pass it 10 `ether` (in `wei`) and the address to withdraw to.
+Call the `Withdraw` function and pass it `10 ether` (in `wei`) and the address to withdraw to.
 
 ![Remix Withdraw](Images/remix_withdraw.png)
 
@@ -935,41 +939,43 @@ Congratulations, you have now written, compiled, deployed, and executed your fir
 
 Not only have you written a smart contract, but you have learned a strictly typed programming language which will enable you to write super precise and fast code.
 
+---
+
 ### 18. Instructor Do: End of Day Recap (5 min)
 
 Ask the following review questions.
 
 * What are some aspects of Solidity?
 
-  **Answer** Solidity is:
+  * **Answer** Solidity is:
 
-  * A high-level object-oriented programing language.
+    * A high-level object-oriented programing language.
 
-  * It is the language used to write smart contracts on the Ethereum blockchain.
+    * It is the language used to write smart contracts on the Ethereum blockchain.
 
-  * Is strictly typed.
+    * Is strictly typed.
 
 * What advantages would a language have for specifying the type?
 
-  **Answer:** Specifying the data types allows the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts because it costs money to store data.
+  * **Answer:** Specifying the data types allows the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts because it costs money to store data.
 
-  **Answer:** When the language is dealing with finance, you want the code to be very precise and accurate.
+  * **Answer:** When the language is dealing with finance, you want the code to be very precise and accurate.
 
-  **Answer:** Types can be used by the compiler for error-checking.
+  * **Answer:** Types can be used by the compiler for error-checking.
 
 * If I pass a parameter into a function, where will I have to store that variable temporarily?
 
-  **Answer** `In memory`
+  * **Answer** `In memory`
 
 * As you know, moving Ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the gas that was sent?
 
-  **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our Ether back, since it was never successfully spent.
+  * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our Ether back, since it was never successfully spent.
 
 * Why do we use a `testnet` to test our code?
 
-  **Answer** Ether costs real money on `mainnet`, we don't want to waste real money testing code.
+  * **Answer** Ether costs real money on `mainnet`, we don't want to waste real money testing code.
 
-  **Answer** Until our code is fully tested we might not uncover certain bugs or potential security vulnerabilities; `testnet` gives us a way to run our code as if it's in production without it being in production.
+  * **Answer** Until our code is fully tested we might not uncover certain bugs or potential security vulnerabilities; `testnet` gives us a way to run our code as if it's in production without it being in production.
 
 Conclude class by congratulating students on learning the basics of a brand new programming language! Solidity is a highly sought after skill that many companies are interested in.
 
