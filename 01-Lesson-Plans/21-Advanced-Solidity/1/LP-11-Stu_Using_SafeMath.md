@@ -20,8 +20,7 @@ Ensure that students:
 
 * Replace the math operations with the SafeMath alternatives.
 
-Take care that students are reassigning the variables with an `=` and not just running the SafeMath operations.
-SafeMath will not mutate the variable it is operating on, so you will need to ensure that the variables are reassigned.
+Take care that students are reassigning the variables with an `=` and not just running the SafeMath operations. SafeMath will not mutate the variable it is operating on, so you will need to ensure that the variables are reassigned.
 
 ### 12. Instructor Do: SafeMath Review (10 min)
 
@@ -31,11 +30,9 @@ SafeMath will not mutate the variable it is operating on, so you will need to en
 
 Open the solution and explain the following:
 
-* We import the SafeMath library directly from GitHub at the top of the file. This is only supported in Remix.
-  We can also copy and paste the contract directly into our code above our own.
+* We import the SafeMath library directly from GitHub at the top of the file. This is only supported in Remix. We can also copy and paste the contract directly into our code above our own.
 
-* We need the `using SafeMath for uint;` line to link the library to the `uint` type.
-  That way, we can call the `.add()`, `.sub()`, etc functions on any `uint` later.
+* We need the `using SafeMath for uint;` line to link the library to the `uint` type. That way, we can call the `.add()`, `.sub()`, etc functions on any `uint` later.
 
 * By replacing all of the math operations with the SafeMath alternatives, we secure ourselves from potential balance hacks.
 
