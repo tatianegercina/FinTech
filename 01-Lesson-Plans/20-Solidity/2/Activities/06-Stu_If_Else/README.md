@@ -1,12 +1,12 @@
 # Using If/Else in Solidity
 
-In this activity, you will add an if statement to your `JointSavings` contract that checks `if` the recipient address matches either of the account owner addresses.
+In this activity, you will add an `if` statement to your `JointSavings` contract that checks `if` the recipient address matches either of the account owner addresses.
 
 ## Instructions
 
-* Take a moment to look over your `JointSavings` contract from activity 11. As you may recall we defined variables at the begining of the contract that hold the values for two ethereum addresses genrated from our mnemonic phrase.
+* Take a moment to look over your `JointSavings` contract from the Instructor's demo. As you may recall we defined variables at the beginning of the contract that hold the values for two Ethereum addresses generated from our mnemonic phrase.
 
-* Right now anyone can pass an address to our contract's witdraw function and witdraw the funds to any address that they choose. We need to make it so that funds from the contract can only be witdrawn to the accounts that we define.
+* Right now anyone can pass an address to our contract's `withdraw` function and `withdraw` the funds to any address that they choose. We need to make it so that funds from the contract can only be withdrawn to the accounts that we define.
 
 * To implement this check you will need to use an `if statement` and the `||` (or) operator to check if the `recipient` is `==` to `account_one` or `account_two`.
 
