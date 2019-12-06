@@ -545,7 +545,7 @@ Great! Now we have a fully functioning Savings account contract. We can use this
 
 ### 11. Students Do: Implementing Ether Management functions (15 min)
 
-In this exercise, students will be implementing a `joint savings account` contract using the ether management functions from the previous activity. By the end of this activity, students will be able to deposit and withdraw ether from their contract's address.
+In this exercise, students will be implementing a `joint savings account` contract using the Ether management functions from the previous activity. By the end of this activity, students will be able to deposit and withdraw ether from their contract's address.
 
 **Instructions:**
 
@@ -556,6 +556,8 @@ In this exercise, students will be implementing a `joint savings account` contra
 * [Unsolved - JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Unsolved/JointSavings.sol)
 
 * [Solved - JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
+
+---
 
 ### 12. Instructor Do: Review Ether Management Functions (5 min)
 
@@ -577,7 +579,7 @@ Open the solution and explain the following:
 
   ```solidity
   function withdraw(uint amount, address payable recipient) public {
-  recipient.transfer(amount);
+    recipient.transfer(amount);
   }
   ```
 
@@ -595,9 +597,12 @@ Open the solution and explain the following:
 
 Ask for any remaining questions before moving on.
 
+---
+
 ### 13. Instructor Do: Conditionals in Solidity (10 min)
 
 In this demonstration, we will be discussing how conditionals in Solidity are formatted differently from Python.
+
 To show this, we will be reviewing basic logical operators and control flow to build a basic `TradeController` contract that tracks trades on the Ethereum blockchain.
 
 **Files:**
@@ -611,11 +616,11 @@ Explain trade controllers to the class:
 Then, show the class how to define a `uint` variable called `previous_price` and a `string` variable called `trade_type`.
 
 ```solidity
-pragma solidity ^0.5.11;
+pragma solidity ^0.5.0;
 
 contract TradeController {
- uint previous_price;
- string trade_type;
+  uint previous_price;
+  string trade_type;
 }
 ```
 
@@ -623,12 +628,10 @@ contract TradeController {
 
 * The trade type of "Buy" or "Sell" can be stored as a string.
 
-Next, show the class how to define a function called `makeTrade`.
-We will be passing a `uint` to `makeTrade` that represents the `current_price` of an asset:
+Next, show the class how to define a function called `makeTrade`. We will be passing a `uint` to `makeTrade` that represents the `current_price` of an asset:
 
 ```solidity
  function makeTrade(uint current_price) public {}
-}
 ```
 
 * This `makeTrade` function accepts a `uint` that represents the current price of the asset.
@@ -637,10 +640,10 @@ Now let's add a basic conditional to check if the `current_price` we are attempt
 
 ```solidity
 function makeTrade(uint current_price) public {
- if (current_price < previous_price) {
- trade_type = "Buy";
- previous_price = current_price;
- }
+  if (current_price < previous_price) {
+    trade_type = "Buy";
+    previous_price = current_price;
+  }
 }
 ```
 
@@ -652,8 +655,6 @@ Now that we have a value for what the `current_price` is show the class that we 
 
 * If the `current_price` is lower than `previous_price`, we set the `trade_type` to the `string` "Buy".
 
-* If the `current_price` is lower than `previous_price`, we set the `trade_type` to the `string` "Buy".
-
 * In the final line inside the `if statement`, we update the `previous_price` to the `current_price` we just traded at to compare against next time.
 
 Add a new `bool` parameter called `buy_anyway` to the `makeTrade` function.
@@ -662,10 +663,10 @@ Place `|| buy_anyway` at the end of the condition to allow it to return `true` e
 
 ```solidity
 function makeTrade(uint current_price, bool buy_anyway) public {
- if (current_price < previous_price || buy_anyway) {
- trade_type = "Buy";
- previous_price = current_price;
- }
+  if (current_price < previous_price || buy_anyway) {
+    trade_type = "Buy";
+    previous_price = current_price;
+  }
 }
 ```
 
@@ -673,7 +674,7 @@ Engage the class with the following question:
 
 * What if we want to buy anyway, regardless of the previous price? What operator would allow us to achieve that?
 
-  * Answer: This would be a perfect use case for our `||` (or) operator.
+  * **Answer**: This would be a perfect use case for our `||` (or) operator.
 
 Show the class how to  modify the code to use the `||` operator to always default to buying regardless of the previous price.
 
@@ -685,23 +686,25 @@ Add an `else if` with a condition to check if the `current_price` is less than t
 
 ```solidity
 function makeTrade(uint current_price, bool buy_anyway) public {
- if (current_price < previous_price || buy_anyway) {
- trade_type = "Buy";
- previous_price = current_price;
- } else if (current_price > previous_price) {
- trade_type = "Sell";
- previous_price = current_price;
- } else {
- trade_type = "Hold";
- }
+  if (current_price < previous_price || buy_anyway) {
+    trade_type = "Buy";
+    previous_price = current_price;
+  } else if (current_price > previous_price) {
+    trade_type = "Sell";
+    previous_price = current_price;
+  } else {
+    trade_type = "Hold";
+  }
 }
 ```
 
 * If the `current_price` is more than the `previous_price` and we do not want to `buy_anyway`, then we are going to sell, so we move to the `else if`.
 
-* If the first two conditions evaluate to `false`, then we are going to set the `trade_type` to hold because we can not currently buy or sell.
+* If the first two conditions evaluate to `false`, then we are going to set the `trade_type` to `Hold` because we can not currently buy or sell.
 
 Now it's time for the students to use some conditionals in Solidity!
+
+---
 
 ### 14. Students Do: Using If/Else in Solidity (10 min)
 
@@ -726,6 +729,8 @@ Have the TAs circulate the class and ensure that students are properly implement
 * Put the condition in parenthesis.
 
 * Put the body of the if statement in curly brackets.
+
+---
 
 ### 15. Instructor Do: Conditionals Review (5 min)
 
