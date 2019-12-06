@@ -1,9 +1,10 @@
 pragma solidity ^0.5.0;
 
-import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol"; // only works in Remix
+// @NOTE: This only works in Remix. Alternatively, paste the contents of SafeMath.sol directly here above ArcadeToken.
+import "github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/math/SafeMath.sol";
 
 contract ArcadeToken {
-    using SafeMath for uint; // required to setup the library for use with uint types
+    using SafeMath for uint;
 
     address payable owner = msg.sender;
     string public symbol = "ARCD";
@@ -16,7 +17,7 @@ contract ArcadeToken {
     }
 
     function transfer(address recipient, uint value) public {
-        balances[msg.sender] = balances[msg.sender].sub(value); // prevents integer underflow
+        balances[msg.sender] = balances[msg.sender].sub(value);
         balances[recipient] = balances[recipient].add(value);
     }
 

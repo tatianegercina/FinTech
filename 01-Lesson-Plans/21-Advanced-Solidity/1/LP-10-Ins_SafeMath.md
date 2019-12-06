@@ -1,19 +1,26 @@
 ### 10. Instructor Do: 3rd Parties Libraries in Solidity (SafeMath) (15 min) (Critical)
 
-Now that we've built tokens, our code is not secure.
-In this activity, we're going to make our contracts secure by using a library called SafeMath from OpenZeppelin.
+Now it's time to make our tokens more secure. Briefly explain to the class:
 
-But first, let's demonstrate how our contract is vulnerable to rewarding infinite tokens via an "integer underflow" exploit.
+* The tokens that we have created so far are not actually secure.
 
-Continue with the `ArcadeToken.sol` contract. It should match the unsolved file below at this point.
+* We can make these secure by using a library called `SafeMath` from OpenZeppelin.
 
 **Files:**
 
 * [ArcadeTokenSafeMath.sol](Activities/10-Ins_SafeMath/Unsolved/ArcadeTokenSafeMath.sol)
 
-In the `Deploy` tab in Remix, expand the `transfer` function of the `ArcadeToken` contract deployed in the previous activity.
+First, show students how a contract is vulnerable to rewarding infinite tokens via an `integer underflow` exploit. Here's an example in-action:
 
-Deploy a new version of the contract to ensure that your account has an `ARCD` balance of `0`.
+![Hacked Balance GIF](Images/hacked_balance.gif)
+
+Continue with the `ArcadeToken.sol` contract. It should match the unsolved file below at this point.
+
+In the `Deploy` tab in Remix, deploy a new version of the contract to ensure that your account has an `ARCD` balance of `0`.
+
+Then, expand the `transfer` function to expose the parameter inputs:
+
+![Redeploy ArcadeToken](Images/redeploy.gif)
 
 Fill in any address that is **different** from the current account in the `recipient` field, and a value of `1` in the `value` field:
 
@@ -35,11 +42,9 @@ Allow the students to give their answers, then confirm:
 
 * When we subtract `1` from a `uint` that is set to `0`, we actually perform something called an "integer underflow."
 
-* Imagine if you took a car's odometer (mileage tracker) and cranked it to the maximum value it could support.
-  What would happen when you reached mile `999999999...`? It would reset back to `0`. That's an integer overflow.
+* Imagine if you took a car's odometer (mileage tracker) and cranked it to the maximum value it could support. What would happen when you reached mile `999999999...`? It would reset back to `0`. That's an integer overflow.
 
-* An underflow is the opposite, when we subtract `1` from `0`, we roll it back to the maximum value that can fit inside a `uint`.
-  By default, most programming languages behave this way. It's up to us to make sure that does not happen.
+* An underflow is the opposite, when we subtract `1` from `0`, we roll it back to the maximum value that can fit inside a `uint`. By default, most programming languages behave this way. It's up to us to make sure that does not happen.
 
 Ensure the students understand the concept of an underflow/overflow and how it allows us to hack an insecure contract, then move on.
 
@@ -47,8 +52,7 @@ Ensure the students understand the concept of an underflow/overflow and how it a
 
 Introduce the OpenZeppelin project, and the SafeMath library:
 
-* The OpenZeppelin project contains many standardized smart contracts and templates to help the community build off of.
-  This allows developers to write more secure and efficient Solidity code.
+* The OpenZeppelin project contains many standardized smart contracts and templates to help the community build off of. This allows developers to write more secure and efficient Solidity code.
 
 * To fix our contract, we can leverage the SafeMath library provided by OpenZeppelin.
 
@@ -69,6 +73,8 @@ contract ArcadeToken {
 ```
 
 * Remix supports importing libraries straight from Github. It will automatically resolve the dependencies for us.
+
+* Alternatively, we could paste the contents of the `SafeMath.sol` file directly where the import would be, above the `ArcadeToken` contract definition.
 
 Next, in the first line of the contract, add `using SafeMath for uint;` to link the library to the `uint` type:
 
