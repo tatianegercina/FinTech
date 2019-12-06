@@ -3,11 +3,12 @@
 In this activity, you will create a system very similar to credit card reward points with your `ArcadeToken`.
 
 You will a new function to your token called `spend` that allows users to spend regular Ether with your contract.
+
 In your spend function, you will take a very small "microtransaction" fee and forward the rest of the Ether to the recipient.
+
 In exchange for the small fee (or even no fee, if you so desire), you will reward tokens based on a multiplier (say, 3 tokens rewarded for every wei spent).
 
-This will create incentive for your loyal customers to continue returning to your Arcade (or whatever business you can think of) to spend their tokens,
-and generates capital passively for you to continue improving the Arcade. This works like a credit card fee, but instead collects fees passively instead of annually.
+This will create incentive for your loyal customers to continue returning to your Arcade (or whatever business you can think of) to spend their tokens, and generates capital passively for you to continue improving the Arcade. This works like a credit card fee, but instead collects fees passively instead of annually.
 
 This same model can apply for any rewards system and can be customized to the use case, so long as the incentive configuration can benefit both parties.
 
