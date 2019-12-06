@@ -10,14 +10,11 @@ Begin by giving the students some background on tokens and how they can be utili
 
 * Since tokens are built using smart contracts they can be programmed to do many things besides just payments.
 
-* By tokenizing things, we can make representing and trading value extremely easy and efficient.
-  Since they are blockchain powered, these tokens can be traded globally without any additional infrastructure.
+* By tokenizing things, we can make representing and trading value extremely easy and efficient.Since they are blockchain powered, these tokens can be traded globally without any additional infrastructure.
 
-* Representing commodities as tokens allows for easy transportation of ownership. For example, transferring a metric ton of gold takes a lot of energy.
-  Sending tokens representing that metric ton of gold is much easier, and allows for the same borderless nature given by the blockchain.
+* Representing commodities as tokens allows for easy transportation of ownership. For example, transferring a metric ton of gold takes a lot of energy. Sending tokens representing that metric ton of gold is much easier, and allows for the same borderless nature given by the blockchain.
 
-* Imagine opening up your cryptowallet to see all the various assets you own in a single place, digital and physical.
-  You could manage your house ownership, car payments, artwork, investments, video game items, and more with cryptographically provable math.
+* Imagine opening up your cryptowallet to see all the various assets you own in a single place, digital and physical. You could manage your house ownership, car payments, artwork, investments, video game items, and more with cryptographically provable math.
 
 * Business assets can easily be tracked and transferred, dramatically improving liquidity and auditability.
 
