@@ -356,15 +356,15 @@ Open the solution and explain the following:
 
   * `owner`
 
-  * `newAccount`
+  * `is_new_account`
 
-  * `accountBalance`
+  * `account_balance`
 
-  * `accountID`
+  * `customer_name`
 
     ```solidity
     function getInfo() public returns(address, bool, uint, string memory) {
-    return (owner, newAccount, accountBalance, accountID);
+        return (owner, is_new_account, account_balance, customer_name);
     }
     ```
 
@@ -382,11 +382,20 @@ Open the solution and explain the following:
 
   * `owner` is equal to `newOwner`
 
-  * `newAccount` is equal to `isNewAccount`
+  * `is_new_account` is equal to `isNewAccount`
 
-  * `accountBalance` is equal to `newAccountBalance`
+  * `account_balance` is equal to `newAccountBalance`
 
-  * `accountID` is equal to `accountID`
+  * `customer_name` is equal to `newCustomerName`
+
+  ```solidity
+  function setInfo(address newOwner, bool isNewAccount, uint newAccountBalance, string memory newCustomerName) public {
+        owner = newOwner;
+        is_new_account = isNewAccount;
+        account_balance = newAccountBalance;
+        customer_name = newCustomerName;
+    }
+  ```
 
 Ask for any remaining questions before moving on.
 

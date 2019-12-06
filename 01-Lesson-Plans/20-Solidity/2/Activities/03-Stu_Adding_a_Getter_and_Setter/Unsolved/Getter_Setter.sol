@@ -2,15 +2,15 @@ pragma solidity ^0.5.11;
 
 contract SimpleCustomerAccount {
     address owner;
-    bool newAccount;
-    uint accountBalance;
-    string accountID;
+    bool is_new_account;
+    uint account_balance;
+    string customer_name;
 
-    function getInfo() public returns(){
+    function getInfo() public returns() {
         return ();
     }
 
-    function setInfo(address newOwner, bool isNewAccount, uint newAccountBalance, string memory newAccountID) public{
+    function setInfo(address newOwner, bool isNewAccount, uint newAccountBalance, string memory newCustomerName) public {
         // YOUR CODE HERE!
     }
 }
