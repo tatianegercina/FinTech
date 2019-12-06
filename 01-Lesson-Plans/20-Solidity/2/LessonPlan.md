@@ -27,17 +27,15 @@ By the end of the class, students will be able to:
 
 * Enforce conditionals using the built-in `require` clause in Solidity.
 
-* "Articulate the value of adding the `require` function and how it enables better error handling and returns excess gas.
+* Articulate the value of adding the `require` function and how it enables better error handling and returns excess gas.
 
 * Deploy and test a smart contract with Remix + Ganache.
 
 ### Instructor Notes
 
-* This is the first time students have encountered a strictly typed programming language. This is going to be a very difficult
- adjustment for the students to make, since they are going to have to remember to specify the data types everywhere, as well as use semicolons to end expressions.
+* This is the first time students have encountered a strictly typed programming language. This is going to be a very difficult adjustment for the students to make, since they are going to have to remember to specify the data types everywhere, as well as use semicolons to end expressions.
 
-* Remind the students that if they get frustrated, they are learning something that few are skilled at, and by learning
- a strictly typed language now, they will be able to easily learn any other programming language in the future.
+* Remind the students that if they get frustrated, they are learning something that few are skilled at, and by learning a strictly typed language now, they will be able to easily learn any other programming language in the future.
 
 ### Slideshow and Time Tracker
 
@@ -66,6 +64,7 @@ Welcome to Day 2 of Intro to Solidity. Let's start by reviewing some of the conc
 * What is a dApp (Distributed App)?
 
   **Answer** A dApp is an application stack that leverages one or many smart contracts on the Ethereum blockchain.
+
 * Why are dApps important?
 
   **Answer:** Instead of relying on centralized infrastructure to run applications, which are prone to censorship and access issues, you can write apps that are secured and powered by the blockchain and pay the world to run your application instead of a single, fallible entity.
@@ -88,6 +87,8 @@ Let's get the class excited about smart contracts.
 
 * In the first half of class today, we will translate some of the core coding concepts you have learned to a new language, Solidity, and create your first "smart contract".
 
+---
+
 ### 2. Instructor Do: First Contract (10 min)
 
 In this activity, you will demonstrate how to construct a basic contract in Solidity that sets an arbitrary `string` and an `address`.
@@ -98,9 +99,11 @@ In this activity, you will demonstrate how to construct a basic contract in Soli
 
 Open your web browser and navigate to the [Remix IDE website](http://remix.ethereum.org):
 
-* Click on the create new file button in the file explorer:
+* Enable the `Solidity` development environment if it's disabled.
 
   ![remix_1.png](Images/remix_1.png)
+
+* Click on the create new file button in the file explorer:
 
   ![remix_2.png](Images/remix_2.png)
 
@@ -155,11 +158,11 @@ Take a moment to discuss data types with the class. Explain to the class the fol
 
 * There are several reasons for this:
 
-  * Much like how a legal contract does not leave room for ambiguity, we also remove the same ambiguity from our code by being very specific about how we are storing data, like strings, numbers, arrays, or booleans (true/false values).
+  * Much like how a legal contract does not leave room for ambiguity, we also remove the same ambiguity from our code by being very specific about how we are storing data, like strings, numbers, arrays, or booleans (`true`/`false` values).
 
   * When we define the data types upfront, the Solidity compiler does not have to expend the resources figuring out what type the data is. In Python, the interpreter runs the code and figures out the types on the fly. While this makes writing the code easier, it is more expensive to run since Python has to calculate the type again every time.
 
-  * Different data types have a different gas cost associated with it. Therefore, if you have to store an `address`, you should use the native `address` type instead of a `string`, since it's cheaper that way.
+  * Different data types have a different `gas` cost associated with it. Therefore, if you have to store an `address`, you should use the native `address` type instead of a `string`, since it's cheaper that way.
 
 Use the following questions to engage the class:
 
@@ -183,11 +186,13 @@ Demonstrate how to compile the contract using Remix and highlight the following:
 
 Explain that we will continue to iterate on this example throughout the lesson to add more functionality.
 
+---
+
 ### 3. Students Do: Build a Basic Contract (15 min)
 
 In this exercise, students will use their data type cheat sheet to build a basic contract that stores simple variables that represent a rewards/bank account balance.
 
-Explain to the class that by the end of today, we will have to build a simple joint savings account, and that tomorrow, we will add special features like a timelock based on a threshold.
+Explain to the class that by the end of today, we will have to build a simple joint savings account, and that next class, we will add special features like a `timelock` based on a threshold.
 
 **Instructions:**
 
@@ -198,6 +203,8 @@ Explain to the class that by the end of today, we will have to build a simple jo
 * [Unsolved - SimpleCustomerAccount.sol](Activities/02-Stu_Building_a_Basic_Contract/Unsolved/SimpleCustomerAccount.sol)
 
 * [Solved - SimpleCustomerAccount.sol](Activities/02-Stu_Building_a_Basic_Contract/Solved/SimpleCustomerAccount.sol)
+
+---
 
 ### 4. Instructor Do: Data Types Review (5 min)
 
@@ -225,9 +232,11 @@ Open the solution and ask the students the following questions:
 
 Now that we've thoroughly covered many of the types within Solidity let's add some functions to our contract!
 
+---
+
 ### 5. Instructor Do: Solidity Functions (10 min)
 
-In this demonstration, the instructor will show the various nuances of functions in Solidity, such as specifying the return type and public/private modifiers.
+In this demonstration, the instructor will show the various nuances of functions in Solidity, such as specifying the return type and `public`/`private` modifiers.
 
 Let's say you are a famous crypto trader and wanted to publish your latest buy order at the price that you bought at. You want to be able to cryptographically prove that it was you that made that recommendation, so you're going to build a smart contract to publish your latest trade to the blockchain.
 
@@ -257,15 +266,15 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
   pragma solidity ^0.5.0;
 
   contract LatestTrade {
-  string coin = "BTC";
-  uint price;
-  bool is_buy_order;
+    string coin = "BTC";
+    uint price;
+    bool is_buy_order;
 
-  function updateTrade(string memory newCoin, uint newPrice, bool is_buy) public {
-  coin = newCoin;
-  price = newPrice;
-  is_buy_order = is_buy; /// is this a buy or a sell order?
-  }
+    function updateTrade(string memory newCoin, uint newPrice, bool is_buy) public {
+      coin = newCoin;
+      price = newPrice;
+      is_buy_order = is_buy; /// is this a buy or a sell order?
+    }
   }
   ```
 
@@ -275,7 +284,7 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
 
   * The reason we specify that the string is stored in `memory` is that strings are a more complex and thus more expensive data type than integers and addresses, and the EVM requires you to specify where it is stored.
 
-  * While we operate on the string (like passing it in from a parameter), we can store it in `memory` and use less gas than storing a string normally.
+  * While we operate on the string (like passing it in from a parameter), we can store it in `memory` and use less `gas` than storing a string normally.
 
   * Since we defined `string coin` at the top of the contract without specifying `memory`, any variable stored in `coin` is permanently written to the blockchain.
 
@@ -283,7 +292,7 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
 
   ```solidity
   function getLatestTrade() public returns (string memory, uint, bool) {
-  return (coin, price, is_buy_order);
+      return (coin, price, is_buy_order);
   }
   ```
 
@@ -297,9 +306,11 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
 
   * You can "get" the data all you want since it's already stored on the blockchain node.
 
+---
+
 ### 6. Students Do: Adding a Getter and Setter (15 min)
 
-In this exercise, students will be adding a Getter and a Setter function to the `SimpleCustomerAccount` contract that they just wrote.
+In this exercise, students will be adding a `Getter` and a `Setter` function to the `SimpleCustomerAccount` contract that they just wrote.
 
 Send out the instructions to the class so that they may begin reviewing the exercise.
 
@@ -320,6 +331,8 @@ Have TAs circulate to address any questions that students may have about Solidit
 * A return statement's values must be contained within parenthesis when returning multiple values.
 
 * Functions must contain the public modifier to be accessible outside the contract.
+
+---
 
 ### 7. Instructor Do: Review Getters and Setters (5 min)
 
@@ -343,15 +356,15 @@ Open the solution and explain the following:
 
   * `owner`
 
-  * `newAccount`
+  * `is_new_account`
 
-  * `accountBalance`
+  * `account_balance`
 
-  * `accountID`
+  * `customer_name`
 
     ```solidity
     function getInfo() public returns(address, bool, uint, string memory) {
-    return (owner, newAccount, accountBalance, accountID);
+        return (owner, is_new_account, account_balance, customer_name);
     }
     ```
 
@@ -369,11 +382,20 @@ Open the solution and explain the following:
 
   * `owner` is equal to `newOwner`
 
-  * `newAccount` is equal to `isNewAccount`
+  * `is_new_account` is equal to `isNewAccount`
 
-  * `accountBalance` is equal to `newAccountBalance`
+  * `account_balance` is equal to `newAccountBalance`
 
-  * `accountID` is equal to `accountID`
+  * `customer_name` is equal to `newCustomerName`
+
+  ```solidity
+  function setInfo(address newOwner, bool isNewAccount, uint newAccountBalance, string memory newCustomerName) public {
+        owner = newOwner;
+        is_new_account = isNewAccount;
+        account_balance = newAccountBalance;
+        customer_name = newCustomerName;
+    }
+  ```
 
 Ask for any remaining questions before moving on.
 
@@ -389,27 +411,31 @@ This activity is a quick review of concepts learned throughout the first half of
 
 * If I have a function or variable that I want to be able to call from outside the contract, what modifier would I add to the function definition?
 
-  **Answer:** `public or the public modifier`
+  * **Answer:** `public or the public modifier`
 
 * If I pass a parameter into a function, where will I have to store that variable temporarily?
 
-  **Answer:** `In memory`
+  * **Answer:** `In memory`
 
 * For someone that wants to create a function that stores a given address, what data type would they use?
 
-  **Answer:** `address data type`
+  * **Answer:** `address data type`
 
 * If you’re writing a function that returns a string and an address, what would be in the returns?
 
-  **Answer:** `returns(string memory, address)`
+  * **Answer:** `returns(string memory, address)`
 
 * If you’re writing a function that returns a boolean and a string, what would be in the returns?
 
-  **Answer:** `returns(boolean, string memory)`
+  * **Answer:** `returns(boolean, string memory)`
+
+Answer any questions before moving on.
+
+---
 
 ### 10. Instructor Do: Storing, Catching, Withdrawing Ether (10 min)
 
-In this activity, we will demonstrate how to add functions for depositing ether, withdrawing ether, and a default "fallback" function that can be used to catch Ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions as well as to payable addresses in the contract.
+In this activity, we will demonstrate how to add functions for depositing Ether, withdrawing Ether, and a default `fallback` function that can be used to catch Ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions as well as to payable addresses in the contract.
 
 Earlier in the day, we built a simple contract that stored variables representing a rewards/bank account balance. Let's take that a step further and build a JointSavings account smart contract that allows two addresses to manage a savings account.
 
@@ -421,8 +447,8 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
   pragma solidity ^0.5.0;
 
   contract JointSavings {
-  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
   }
   ```
 
@@ -440,12 +466,12 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
   pragma solidity ^0.5.0;
 
   contract JointSavings {
-  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
   function withdraw(uint amount, address payable recipient) public {
-  return recipient.transfer(amount);
-  }
+    return recipient.transfer(amount);
+    }
   }
   ```
 
@@ -467,14 +493,14 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
   pragma solidity ^0.5.0;
 
   contract JointSavings {
-  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
-  function withdraw(uint amount, address payable recipient) public {
-  return recipient.transfer(amount);
-  }
+    function withdraw(uint amount, address payable recipient) public {
+      return recipient.transfer(amount);
+    }
 
-  function deposit() public payable {}
+    function deposit() public payable {}
   }
   ```
 
@@ -488,37 +514,38 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
 
 Ask the students the following question:
 
-* As you know, moving Ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the gas that was sent?
+* As you know, moving Ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the `gas` that was sent?
 
-  **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our Ether back since it was never successfully spent.
+  * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our Ether back since it was never successfully spent.
 
-We are going to add one final line to make sure that if Ether is sent to the contract without using the `deposit` function,
-(i.e., sending Ether directly to the contract's address) we can still capture the Ether into the contract's wallet.
+We are going to add one final line to make sure that if Ether is sent to the contract without using the `deposit` function, (i.e., sending Ether directly to the contract's address) we can still capture the Ether into the contract's wallet.
 
-* If we don't add this `payable` fallback function, and Ether is sent to our contract address, it will return the Ether instead, forcing other users to send via the `deposit` function. In our case, we want to capture all Ether sent to the contract.
+* If we don't add this `external payable` fallback function, and Ether is sent to our contract address, it will return the Ether instead, forcing other users to send via the `deposit` function. In our case, we want to capture all Ether sent to the contract.
 
   ```solidity
   pragma solidity ^0.5.0;
 
   contract JointSavings {
-  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
-  function withdraw(uint amount, address payable recipient) public {
-  return recipient.transfer(amount);
-  }
+    function withdraw(uint amount, address payable recipient) public {
+      return recipient.transfer(amount);
+    }
 
-  function deposit() public payable {}
+    function deposit() public payable {}
 
-  function() external payable {}
-  }
+    function() external payable {}
+    }
   ```
 
 Great! Now we have a fully functioning Savings account contract. We can use this smart contract to store Ether, and withdraw it to any address we choose!
 
+---
+
 ### 11. Students Do: Implementing Ether Management functions (15 min)
 
-In this exercise, students will be implementing a `joint savings account` contract using the ether management functions from the previous activity. By the end of this activity, students will be able to deposit and withdraw ether from their contract's address.
+In this exercise, students will be implementing a `joint savings account` contract using the Ether management functions from the previous activity. By the end of this activity, students will be able to deposit and withdraw ether from their contract's address.
 
 **Instructions:**
 
@@ -529,6 +556,8 @@ In this exercise, students will be implementing a `joint savings account` contra
 * [Unsolved - JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Unsolved/JointSavings.sol)
 
 * [Solved - JointSavings.sol](Activities/04-Stu_Implement_Ether_functions/Solved/JointSavings.sol)
+
+---
 
 ### 12. Instructor Do: Review Ether Management Functions (5 min)
 
@@ -550,7 +579,7 @@ Open the solution and explain the following:
 
   ```solidity
   function withdraw(uint amount, address payable recipient) public {
-  recipient.transfer(amount);
+    recipient.transfer(amount);
   }
   ```
 
@@ -568,9 +597,12 @@ Open the solution and explain the following:
 
 Ask for any remaining questions before moving on.
 
+---
+
 ### 13. Instructor Do: Conditionals in Solidity (10 min)
 
 In this demonstration, we will be discussing how conditionals in Solidity are formatted differently from Python.
+
 To show this, we will be reviewing basic logical operators and control flow to build a basic `TradeController` contract that tracks trades on the Ethereum blockchain.
 
 **Files:**
@@ -584,11 +616,11 @@ Explain trade controllers to the class:
 Then, show the class how to define a `uint` variable called `previous_price` and a `string` variable called `trade_type`.
 
 ```solidity
-pragma solidity ^0.5.11;
+pragma solidity ^0.5.0;
 
 contract TradeController {
- uint previous_price;
- string trade_type;
+  uint previous_price;
+  string trade_type;
 }
 ```
 
@@ -596,12 +628,10 @@ contract TradeController {
 
 * The trade type of "Buy" or "Sell" can be stored as a string.
 
-Next, show the class how to define a function called `makeTrade`.
-We will be passing a `uint` to `makeTrade` that represents the `current_price` of an asset:
+Next, show the class how to define a function called `makeTrade`. We will be passing a `uint` to `makeTrade` that represents the `current_price` of an asset:
 
 ```solidity
  function makeTrade(uint current_price) public {}
-}
 ```
 
 * This `makeTrade` function accepts a `uint` that represents the current price of the asset.
@@ -610,10 +640,10 @@ Now let's add a basic conditional to check if the `current_price` we are attempt
 
 ```solidity
 function makeTrade(uint current_price) public {
- if (current_price < previous_price) {
- trade_type = "Buy";
- previous_price = current_price;
- }
+  if (current_price < previous_price) {
+    trade_type = "Buy";
+    previous_price = current_price;
+  }
 }
 ```
 
@@ -625,8 +655,6 @@ Now that we have a value for what the `current_price` is show the class that we 
 
 * If the `current_price` is lower than `previous_price`, we set the `trade_type` to the `string` "Buy".
 
-* If the `current_price` is lower than `previous_price`, we set the `trade_type` to the `string` "Buy".
-
 * In the final line inside the `if statement`, we update the `previous_price` to the `current_price` we just traded at to compare against next time.
 
 Add a new `bool` parameter called `buy_anyway` to the `makeTrade` function.
@@ -635,10 +663,10 @@ Place `|| buy_anyway` at the end of the condition to allow it to return `true` e
 
 ```solidity
 function makeTrade(uint current_price, bool buy_anyway) public {
- if (current_price < previous_price || buy_anyway) {
- trade_type = "Buy";
- previous_price = current_price;
- }
+  if (current_price < previous_price || buy_anyway) {
+    trade_type = "Buy";
+    previous_price = current_price;
+  }
 }
 ```
 
@@ -646,7 +674,7 @@ Engage the class with the following question:
 
 * What if we want to buy anyway, regardless of the previous price? What operator would allow us to achieve that?
 
-  * Answer: This would be a perfect use case for our `||` (or) operator.
+  * **Answer**: This would be a perfect use case for our `||` (or) operator.
 
 Show the class how to  modify the code to use the `||` operator to always default to buying regardless of the previous price.
 
@@ -658,23 +686,25 @@ Add an `else if` with a condition to check if the `current_price` is less than t
 
 ```solidity
 function makeTrade(uint current_price, bool buy_anyway) public {
- if (current_price < previous_price || buy_anyway) {
- trade_type = "Buy";
- previous_price = current_price;
- } else if (current_price > previous_price) {
- trade_type = "Sell";
- previous_price = current_price;
- } else {
- trade_type = "Hold";
- }
+  if (current_price < previous_price || buy_anyway) {
+    trade_type = "Buy";
+    previous_price = current_price;
+  } else if (current_price > previous_price) {
+    trade_type = "Sell";
+    previous_price = current_price;
+  } else {
+    trade_type = "Hold";
+  }
 }
 ```
 
 * If the `current_price` is more than the `previous_price` and we do not want to `buy_anyway`, then we are going to sell, so we move to the `else if`.
 
-* If the first two conditions evaluate to `false`, then we are going to set the `trade_type` to hold because we can not currently buy or sell.
+* If the first two conditions evaluate to `false`, then we are going to set the `trade_type` to `Hold` because we can not currently buy or sell.
 
 Now it's time for the students to use some conditionals in Solidity!
+
+---
 
 ### 14. Students Do: Using If/Else in Solidity (10 min)
 
@@ -700,6 +730,8 @@ Have the TAs circulate the class and ensure that students are properly implement
 
 * Put the body of the if statement in curly brackets.
 
+---
+
 ### 15. Instructor Do: Conditionals Review (5 min)
 
 **Files:**
@@ -716,23 +748,25 @@ Open the solution and explain the following:
 
   ```Solidity
   if (recipient == account_one || recipient == account_two) {
-  recipient.transfer(amount);
+    recipient.transfer(amount);
   }
   ```
 
 Ask for any remaining questions before moving on.
 
+---
+
 ### 16. Everyone Do: Restricting the Withdraw Function with Require (20 min) (Critical)
 
-In this activity, we will be replacing our `if` conditional statement with a `require`.
-
-Have students follow along while you code.
-
-Continue with the `JointSavings.sol` contract in [Remix](https://remix.ethereum.org) and ensure that students have theirs open as well.
+In this activity, we will be replacing our `if` conditional statement with a `require` function.
 
 **Files:**
 
 * [Unsolved - JointSavings.sol](Activities/07-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
+
+Have students follow along while you code.
+
+Continue with the `JointSavings.sol` contract in [Remix](https://remix.ethereum.org) and ensure that students have theirs open as well.
 
 Up to this point, everyone's contract should look like this:
 
@@ -740,18 +774,18 @@ Up to this point, everyone's contract should look like this:
 pragma solidity ^0.5.0;
 
 contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
- function withdraw(uint amount, address payable recipient) public {
- if (recipient == account_one || recipient == account_two) {
- recipient.transfer(amount);
- }
- }
+  function withdraw(uint amount, address payable recipient) public {
+    if (recipient == account_one || recipient == account_two) {
+      recipient.transfer(amount);
+    }
+  }
 
- function deposit() public payable {}
+  function deposit() public payable {}
 
- function() external payable {}
+  function() external payable {}
 }
 ```
 
@@ -766,9 +800,9 @@ Remove the `if` statement, then replace it with the following `require`:
 
 ```solidity
 function withdraw(uint amount, address payable recipient) public {
- require(recipient == account_one || recipient == account_two, "You do not own this account!");
- recipient.transfer(amount);
- }
+  require(recipient == account_one || recipient == account_two, "You do not own this account!");
+  recipient.transfer(amount);
+}
 ```
 
 Have the students catch up with the code, then elaborate:
@@ -787,15 +821,17 @@ Have the students catch up with the code, then elaborate:
 
 Now we have a fully working `JointSavings` account with withdraw protection on our contract account and a deposit function to deposit our funds. Let's compile and deploy our contract to test it out!
 
+---
+
 ### 17. Everyone Do: Deploying a Contract in Remix (10 min)
 
 In this activity, students will take their `JointSavings` account contract, compile and deploy it on their local `testnet`.
 
-Let's compile and deploy our contract to test it out!
-
 **Files:**
 
 * [JointSavings.sol](Activities/07-Ins_Restricting_Withdraw_With_Require/Solved/JointSavings.sol)
+
+Let's compile and deploy our contract to test it out!
 
 Perform the following:
 
@@ -825,7 +861,7 @@ Perform the following:
 
   ![Remix Deploy](Images/remix_enviroment.png)
 
-* You will be prompted to connect your account in Meta Mask to remix.
+* You may be prompted to connect your account in MetaMask to remix.
 
   ![Remix Deploy](Images/remix_web3_prompt.png)
 
@@ -835,9 +871,9 @@ Perform the following:
 
 * Pause while the students deploy their contracts.
 
-  ![Remix Deployed Contract](Images/remix_deployed_contract.png)
+* If your contract successfully deployed, it should now appear as a grey box under deployed contracts at the bottom of the deploy sidebar.
 
-  * If your contract successfully deployed, it should now appear as a grey box under deployed contracts at the bottom of the deploy sidebar.
+  ![Remix Deployed Contract](Images/remix_deployed_contract.png)
 
 * Click the drop-down arrow next to the grey deployed contract to display the contract's functions that can be called.
 
@@ -849,7 +885,7 @@ Discuss with the students:
 
 * As you can see, all of the functions have an input that allows you to send the function parameters.
 
-* Notice that the deposit function does not have an input next to it. This is because it does not have any parameters. Instead, you will pass it ether through the value field at the top.
+* Notice that the deposit function does not have an input next to it. This is because it does not have any parameters. Instead, you will pass it Ether through the value field at the top.
 
 Lead students through passing `10 ether` into the deposit function and then withdrawing it.
 
@@ -883,7 +919,7 @@ Since we defined the `amount` variable as a `uint256` we are working with the sm
 
 We can do this in many ways, we can either use `Web3.py`, a website like [eth-converter.com](eth-converter.com), or we can remember that `1 ether` is equivalent to 1 * 10^18 `wei`. That's right, we can specify incredibly small amounts of `ether` by using `wei`. In our case, `10 ether` is `10000000000000000000 wei` -- aka 1 with 19 zeros after it.
 
-Call the `Withdraw` function and pass it 10 `ether` (in `wei`) and the address to withdraw to.
+Call the `Withdraw` function and pass it `10 ether` (in `wei`) and the address to withdraw to.
 
 ![Remix Withdraw](Images/remix_withdraw.png)
 
@@ -903,41 +939,43 @@ Congratulations, you have now written, compiled, deployed, and executed your fir
 
 Not only have you written a smart contract, but you have learned a strictly typed programming language which will enable you to write super precise and fast code.
 
+---
+
 ### 18. Instructor Do: End of Day Recap (5 min)
 
 Ask the following review questions.
 
 * What are some aspects of Solidity?
 
-  **Answer** Solidity is:
+  * **Answer** Solidity is:
 
-  * A high-level object-oriented programing language.
+    * A high-level object-oriented programing language.
 
-  * It is the language used to write smart contracts on the Ethereum blockchain.
+    * It is the language used to write smart contracts on the Ethereum blockchain.
 
-  * Is strictly typed.
+    * Is strictly typed.
 
 * What advantages would a language have for specifying the type?
 
-  **Answer:** Specifying the data types allows the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts because it costs money to store data.
+  * **Answer:** Specifying the data types allows the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts because it costs money to store data.
 
-  **Answer:** When the language is dealing with finance, you want the code to be very precise and accurate.
+  * **Answer:** When the language is dealing with finance, you want the code to be very precise and accurate.
 
-  **Answer:** Types can be used by the compiler for error-checking.
+  * **Answer:** Types can be used by the compiler for error-checking.
 
 * If I pass a parameter into a function, where will I have to store that variable temporarily?
 
-  **Answer** `In memory`
+  * **Answer** `In memory`
 
 * As you know, moving Ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the gas that was sent?
 
-  **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our Ether back, since it was never successfully spent.
+  * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our Ether back, since it was never successfully spent.
 
 * Why do we use a `testnet` to test our code?
 
-  **Answer** Ether costs real money on `mainnet`, we don't want to waste real money testing code.
+  * **Answer** Ether costs real money on `mainnet`, we don't want to waste real money testing code.
 
-  **Answer** Until our code is fully tested we might not uncover certain bugs or potential security vulnerabilities; `testnet` gives us a way to run our code as if it's in production without it being in production.
+  * **Answer** Until our code is fully tested we might not uncover certain bugs or potential security vulnerabilities; `testnet` gives us a way to run our code as if it's in production without it being in production.
 
 Conclude class by congratulating students on learning the basics of a brand new programming language! Solidity is a highly sought after skill that many companies are interested in.
 
