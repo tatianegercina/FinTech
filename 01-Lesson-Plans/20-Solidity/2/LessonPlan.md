@@ -411,27 +411,31 @@ This activity is a quick review of concepts learned throughout the first half of
 
 * If I have a function or variable that I want to be able to call from outside the contract, what modifier would I add to the function definition?
 
-  **Answer:** `public or the public modifier`
+  * **Answer:** `public or the public modifier`
 
 * If I pass a parameter into a function, where will I have to store that variable temporarily?
 
-  **Answer:** `In memory`
+  * **Answer:** `In memory`
 
 * For someone that wants to create a function that stores a given address, what data type would they use?
 
-  **Answer:** `address data type`
+  * **Answer:** `address data type`
 
 * If you’re writing a function that returns a string and an address, what would be in the returns?
 
-  **Answer:** `returns(string memory, address)`
+  * **Answer:** `returns(string memory, address)`
 
 * If you’re writing a function that returns a boolean and a string, what would be in the returns?
 
-  **Answer:** `returns(boolean, string memory)`
+  * **Answer:** `returns(boolean, string memory)`
+
+Answer any questions before moving on.
+
+---
 
 ### 10. Instructor Do: Storing, Catching, Withdrawing Ether (10 min)
 
-In this activity, we will demonstrate how to add functions for depositing ether, withdrawing ether, and a default "fallback" function that can be used to catch Ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions as well as to payable addresses in the contract.
+In this activity, we will demonstrate how to add functions for depositing Ether, withdrawing Ether, and a default `fallback` function that can be used to catch Ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions as well as to payable addresses in the contract.
 
 Earlier in the day, we built a simple contract that stored variables representing a rewards/bank account balance. Let's take that a step further and build a JointSavings account smart contract that allows two addresses to manage a savings account.
 
@@ -443,8 +447,8 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
   pragma solidity ^0.5.0;
 
   contract JointSavings {
-  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
   }
   ```
 
@@ -462,12 +466,12 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
   pragma solidity ^0.5.0;
 
   contract JointSavings {
-  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
   function withdraw(uint amount, address payable recipient) public {
-  return recipient.transfer(amount);
-  }
+    return recipient.transfer(amount);
+    }
   }
   ```
 
@@ -489,14 +493,14 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
   pragma solidity ^0.5.0;
 
   contract JointSavings {
-  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
-  function withdraw(uint amount, address payable recipient) public {
-  return recipient.transfer(amount);
-  }
+    function withdraw(uint amount, address payable recipient) public {
+      return recipient.transfer(amount);
+    }
 
-  function deposit() public payable {}
+    function deposit() public payable {}
   }
   ```
 
@@ -510,33 +514,34 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
 
 Ask the students the following question:
 
-* As you know, moving Ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the gas that was sent?
+* As you know, moving Ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the `gas` that was sent?
 
-  **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our Ether back since it was never successfully spent.
+  * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our Ether back since it was never successfully spent.
 
-We are going to add one final line to make sure that if Ether is sent to the contract without using the `deposit` function,
-(i.e., sending Ether directly to the contract's address) we can still capture the Ether into the contract's wallet.
+We are going to add one final line to make sure that if Ether is sent to the contract without using the `deposit` function, (i.e., sending Ether directly to the contract's address) we can still capture the Ether into the contract's wallet.
 
-* If we don't add this `payable` fallback function, and Ether is sent to our contract address, it will return the Ether instead, forcing other users to send via the `deposit` function. In our case, we want to capture all Ether sent to the contract.
+* If we don't add this `external payable` fallback function, and Ether is sent to our contract address, it will return the Ether instead, forcing other users to send via the `deposit` function. In our case, we want to capture all Ether sent to the contract.
 
   ```solidity
   pragma solidity ^0.5.0;
 
   contract JointSavings {
-  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
-  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
-  function withdraw(uint amount, address payable recipient) public {
-  return recipient.transfer(amount);
-  }
+    function withdraw(uint amount, address payable recipient) public {
+      return recipient.transfer(amount);
+    }
 
-  function deposit() public payable {}
+    function deposit() public payable {}
 
-  function() external payable {}
-  }
+    function() external payable {}
+    }
   ```
 
 Great! Now we have a fully functioning Savings account contract. We can use this smart contract to store Ether, and withdraw it to any address we choose!
+
+---
 
 ### 11. Students Do: Implementing Ether Management functions (15 min)
 
