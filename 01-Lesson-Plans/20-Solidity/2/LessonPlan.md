@@ -310,7 +310,7 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
 
 ### 6. Students Do: Adding a Getter and Setter (15 min)
 
-In this exercise, students will be adding a Getter and a Setter function to the `SimpleCustomerAccount` contract that they just wrote.
+In this exercise, students will be adding a `Getter` and a `Setter` function to the `SimpleCustomerAccount` contract that they just wrote.
 
 Send out the instructions to the class so that they may begin reviewing the exercise.
 
@@ -331,6 +331,8 @@ Have TAs circulate to address any questions that students may have about Solidit
 * A return statement's values must be contained within parenthesis when returning multiple values.
 
 * Functions must contain the public modifier to be accessible outside the contract.
+
+---
 
 ### 7. Instructor Do: Review Getters and Setters (5 min)
 
