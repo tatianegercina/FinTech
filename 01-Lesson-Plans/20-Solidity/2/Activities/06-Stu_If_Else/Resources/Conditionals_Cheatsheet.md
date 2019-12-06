@@ -1,10 +1,10 @@
 #### Conditonals Data Type Cheatsheet
 
-English | Python | Solidity
----------|----------|---------
- "Red" `or` "blue"  | or | \|\|
-   1 `and` 4 | and |  &&
- `Not` "funny" | not | !
+English             | Python   | Solidity
+--------------------|----------|---------
+ "Red" `or` "blue"  | `or`     | `||`
+   1 `and` 4        | `and`    |  `&&`
+ `Not` "funny"      | `not`    | `!`
 
 Some code examples
 
@@ -37,3 +37,6 @@ if (number > 1 && number > 4) {
   return number;
 }
  ```
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
