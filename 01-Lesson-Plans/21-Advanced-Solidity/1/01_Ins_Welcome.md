@@ -18,7 +18,7 @@ By the end of the unit, students will be able to:
 
 * Build a simple token on the ETH blockchain.
 
-* Import 3rd OpenZeppelin libraries from Github within Solidity.
+* Import 3rd party OpenZeppelin libraries from Github within Solidity.
 
 * Use the SafeMath library to perform secure math operations.
 
@@ -28,9 +28,15 @@ By the end of the unit, students will be able to:
 
 ### Instructor Notes
 
-* @TODO
+* Today's class will be a challenging one as student start to dig deeper into advanced Solidity concepts. Take plenty of time to cover and review the new concepts in today's class.
 
-### 1. Instructor Do: Welcome Back (5 min)
+* Reassure students that as they practice Solidity, they will begin to see common patterns in the code. Many of the examples show this week can be reused in other smart contract applications.
+
+* Refer to OpenZeppelin Safe Math documentation for further information about functions. [Safe Math Docs](https://docs.openzeppelin.com/contracts/2.x/api/math)
+
+* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+
+### 1. Instructor Do: Welcome Back (10 min)
 
 Take a few minutes to discuss the following recall questions with the class.
 
@@ -51,6 +57,14 @@ Take a few minutes to discuss the following recall questions with the class.
 * What is the difference between an `int` and a `uint`?
 
   **Answer:** `int` can be positive and negative, `uint` is positive only.
+
+* Why is Solidity so strict with its typing?
+
+  **Answer:** It allows for better error handling in code.
+
+  **Answer:** Contracts should not leave room for ambiguity.
+
+  **Answer:** Being upfront about data types and the size to store them results in less computational overhead/gas costs.
 
 * What is a `payable` address, and why is it different from a regular address?
 
