@@ -1,4 +1,4 @@
-# Unit 4: Pandas
+# Unit 11: Classification
 
 ## Helpful Links
 * The Confusion Matrix and Other Metrics
