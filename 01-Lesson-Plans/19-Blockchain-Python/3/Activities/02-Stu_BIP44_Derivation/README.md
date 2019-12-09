@@ -12,9 +12,9 @@ In this activity, you will generate keys for multiple blockchains using the BIP4
 
 * Change the coin type to `Ethereum`.
 
-* Confirm that the keys are the same as used throughout class by checking them on an ETH block explorer.
+* Confirm that the keys are the same as used throughout the class by checking them on an ETH block explorer.
 
 * Navigate to the [SLIP44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) "Registered Coin Types" list.
 
 * Take a look at all of the different coins available.
-  Try generating coins from this list within the tool.
+ Try generating coins from this list within the tool.

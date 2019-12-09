@@ -19,7 +19,7 @@ First, brainstorm with your group about the following bits of the architecture:
 * How would you support multiple cryptocurrencies?
 
 * How would you manage bidding and trading between users? How would you match two trades together?
-  What would the transaction lifecycle of the trade look like, with you (the exchange) being the middle-man?
+ What would the transaction lifecycle of the trade look like, with you (the exchange) being the middle-man?
 
 Once your group has decided on the general architecture of the exchange, write down the answers to these questions.
-Then, summarize the architecture as if you were explaining it to an engineer you needed to help build it.
+Then, summarize the architecture as if you were explaining it to an engineer; you needed to help build it.

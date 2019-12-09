@@ -7,7 +7,7 @@ using throughout the blockchain section of the course.
 ## Instructions
 
 * Navigate to the `Releases` Github page for the [BIP39 tool](https://github.com/iancoleman/bip39/releases)
-  and download the lastest version of `bip39-standalone.html` from the assets dropdown.
+ and download the latest version of `bip39-standalone.html` from the assets dropdown.
 
 * Open the downloaded `bip39-standalone.html` in your favorite browser.
 
