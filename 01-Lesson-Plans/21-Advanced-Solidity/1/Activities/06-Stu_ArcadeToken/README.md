@@ -6,7 +6,7 @@ This will allow you to collect Ether in exchange for `ARCD` tokens that users ca
 
 ## Instructions
 
-* Open up Remix, and create a new contract called `ArcadeToken.sol`. You can also use this [starter file](01-Lesson-Plans/21-Advanced-Solidity/1/Activities/06-Stu_ArcadeToken/Unsolved/ArcadeToken.sol).
+* Open up Remix, and create a new contract called `ArcadeToken.sol`. You can also use this [starter file](Unsolved/ArcadeToken.sol).
 
 * After you define and name your contract `ArcadeToken`, add the following variables:
 
