@@ -6,6 +6,8 @@ In today's class, students will be introduced to the concept of tokens on the Et
 
 Students will learn more advanced Solidity data structures, what tokens are, and how to use them.
 
+---
+
 ### Class Objectives
 
 By the end of the unit, students will be able to:
@@ -26,6 +28,8 @@ By the end of the unit, students will be able to:
 
 * Design smart contracts that can replace traditional business mechanisms.
 
+---
+
 ### Instructor Notes
 
 * Today's class will be a challenging one as student start to dig deeper into advanced Solidity concepts. Take plenty of time to cover and review the new concepts in today's class.
@@ -35,6 +39,8 @@ By the end of the unit, students will be able to:
 * Refer to OpenZeppelin Safe Math documentation for further information about functions. [Safe Math Docs](https://docs.openzeppelin.com/contracts/2.x/api/math)
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
+
+---
 
 ### 1. Instructor Do: Welcome Back (10 min)
 
@@ -76,6 +82,8 @@ Take a few minutes to discuss the following recall questions with the class.
 
   **Answer** The code can run anywhere the virtual machine can run.
 
+---
+
 ### 2. Instructor Do: Intro to Tokenomics (10 min)
 
 This activity will introduce the idea of `Tokenomics,` the nature of tokens on the blockchain and what gives them value, the loose definitions of coins and tokens, as well as several examples.
@@ -108,6 +116,8 @@ Additionally, clarify that the previous statement is a loose definition, and you
 
 Now it's time for students to explore some tokens themselves!
 
+---
+
 ### 3. Students Do: Token Exploration (10 min)
 
 Students will take the given activity time to research their selected tokens.
@@ -117,6 +127,8 @@ Have the students open the following list of popular Ethereum blockchain tokens 
 **Instructions:**
 
 * [README.md](Activities/03_Stu_Token_Exploration/README.md)
+
+---
 
 ### 4. Instructor Do: Review Questions (5 min)
 
@@ -155,6 +167,8 @@ Discuss the following review questions with the class.
   * **Maker Dao (Dai)** - Dai is a token but also a `stablecoin`, this means 1 Dai = $1. Instead of having a central company back the fiat, the MakerDAO converts Ether to the Dai stablecoin. This creates a 1:1 parity with the USD, without a central authority, just smart contracts!
 
   * **Golem (GNT)** - is a token that you use to pay for rentable computing power on the Golem network. It allows you to pay for computations that occur outside of Ethereum, like GPU access or other hardcore number-crunching jobs.
+
+---
 
 ### 5. Instructor Do: Mappings Data Structure in Solidity (15 min) (Critical)
 
@@ -302,6 +316,8 @@ function mint(address recipient, uint value) public {
 
 Time for the students to get their hands dirty with some token design!
 
+---
+
 ### 6. Students Do: Building an Arcade Token with Mappings (20 min)
 
 In this activity, students will practice using the `mapping` data structure by building an ArcadeToken.
@@ -375,6 +391,8 @@ Welcome the students back to the class. Allow them to settle in while asking a f
   * **Answer:** There is no set cap, but we are limited by gas prices and gas limits of the current state of the blockchain network.
 
 Get the students excited about the next activity by explaining how we are now going to secure our tokens from a vulnerability that allows users to spend tokens they don't have!
+
+---
 
 ### 10. Instructor Do: 3rd Parties Libraries in Solidity (SafeMath) (15 min) (Critical)
 
@@ -514,6 +532,8 @@ transact to ArcadeToken.transfer errored: Error: [ethjs-rpc] rpc error with payl
 
 Now it's time for students to secure their tokens!
 
+---
+
 ### 11. Students Do: Using SafeMath (15 min)
 
 In this activity students will implement the SafeMath library and replace all math operations with the SafeMath alternatives.
@@ -538,6 +558,8 @@ Ensure that students:
 
 Take care that students are reassigning the variables with an `=` and not just running the SafeMath operations. SafeMath will not mutate the variable it is operating on, so you will need to ensure that the variables are reassigned.
 
+---
+
 ### 12. Instructor Do: SafeMath Review (10 min)
 
 **Files:**
@@ -553,6 +575,8 @@ Open the solution and explain the following:
 * By replacing all of the math operations with the SafeMath alternatives, we secure ourselves from potential balance hacks.
 
 Ask for any remaining questions before moving on.
+
+---
 
 ### 13. Students Do: Tokenized Reward System Challenge (20 min)
 
@@ -600,6 +624,8 @@ Basis Points | Percentage
 
 Ensure students are applying this formula if they decide to use percentages in their rewards system.
 
+---
+
 ### 14. Instructor Do: Challenge Review / Recap (10 min)
 
 **Files:**
@@ -640,16 +666,18 @@ Ask the students the following questions:
 
 Ask for any remaining questions before moving on.
 
+---
+
 ### 15. Instructor Do: Homework Demo (10 min)
 
 This section is reserved for the homework demo. Take some time to review the homework with the class.
 
-* [Unit 21 Homework Instructions](02-Homework/21-Advanced-Solidity/Instructions/README.md)
+* [Unit 21 Homework Instructions](../../../02-Homework/21-Advanced-Solidity/Instructions/README.md)
 
-- - -
+---
 
 ### End Class
 
-- - -
+---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

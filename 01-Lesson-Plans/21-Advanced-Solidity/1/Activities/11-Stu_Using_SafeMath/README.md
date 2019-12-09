@@ -4,7 +4,7 @@ In this activity, you will implement the SafeMath library and use it for all mat
 
 ## Instructions
 
-* Navigate to Remix, and open up your `ArcadeToken.sol` contract. You can also use this [starter file](Unsolved/ArcadeToken.sol).
+* Navigate to Remix, and open up your `ArcadeToken.sol` contract. You can also use this [starter file](Unsolved/ArcadeTokenSafeMath.sol).
 
 * Add the following import statement just below the `pragma` and above the `contract` definition:
 
