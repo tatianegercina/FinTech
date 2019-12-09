@@ -378,7 +378,7 @@ Welcome the students back to class and ask a few recall questions:
 In this activity, you will lead a code along leveraging the `hd-wallet-derive`
 command-line tool to generate addresses using the same BIP44 scheme as the online tool.
 
-Before starting, ensure that everyone has PHP7 installed on their systems. The quick install guide is located [here]().
+Before starting, ensure that everyone has PHP7 installed on their systems. The quick install guide is located [here](https://github.com/coding-boot-camp/FinTech-Lesson-Plans/blob/master/01-Lesson-Plans/19-Blockchain-Python/Supplemental/HD_Wallet_Derive_Install_Guide.md).
 
 Students can check their PHP installation by typing `php -v` in the terminal, which should output version `7.3`.
 
