@@ -48,7 +48,7 @@ Take a few minutes to discuss the following recall questions with the class.
 
 * Before we move on to new and advanced concepts in Solidity, let's review some of the basics that we already know.
 
-  **Answer** Solidity is:
+  * **Answer** Solidity is:
 
   * A high-level object-oriented programing language.
 
@@ -58,29 +58,29 @@ Take a few minutes to discuss the following recall questions with the class.
 
 * What is a `uint`?
 
-* **Answer:** Unsigned Integer.
+  * **Answer:** Unsigned Integer.
 
 * What is the difference between an `int` and a `uint`?
 
-  **Answer:** `int` can be positive and negative, `uint` is positive only.
+  * **Answer:** `int` can be positive and negative, `uint` is positive only.
 
 * Why is Solidity so strict with its typing?
 
-  **Answer:** It allows for better error handling in code.
+  * **Answer:** It allows for better error handling in code.
 
-  **Answer:** Contracts should not leave room for ambiguity.
+  * **Answer:** Contracts should not leave room for ambiguity.
 
-  **Answer:** Being upfront about data types and the size to store them results in less computational overhead/gas costs.
+  * **Answer:** Being upfront about data types and the size to store them results in less computational overhead/gas costs.
 
 * What is a `payable` address, and why is it different from a regular address?
 
-  **Answer:** A payable address is like a normal address type, except it allows the `.transfer` function to be called in order to send it Ether.
+  * **Answer:** A payable address is like a normal address type, except it allows the `.transfer` function to be called in order to send it Ether.
 
 * What is a potential benefit of executing code in a virtual machine?
 
-  **Answer** The code executed in a virtual machine cannot affect the host machine directly.
+  * **Answer** The code executed in a virtual machine cannot affect the host machine directly.
 
-  **Answer** The code can run anywhere the virtual machine can run.
+  * **Answer** The code can run anywhere the virtual machine can run.
 
 ---
 
@@ -136,23 +136,23 @@ Discuss the following review questions with the class.
 
 * What are some potential differences between `coins` and `tokens`?
 
-  **Answer** Tokens are often built on top of a blockchain platform, whereas coins usually have their own blockchain.
+  * **Answer** Tokens are often built on top of a blockchain platform, whereas coins usually have their own blockchain.
 
-  **Answer** A token is programmed with a smart contract.
+  * **Answer** A token is programmed with a smart contract.
 
 * What are some potential similarities between `coins` and `tokens`?
 
-  **Answer** Both coins and tokens can represent value.
+  * **Answer** Both coins and tokens can represent value.
 
-  **Answer** Both coins and tokens utilize a blockchain on some level.
+  * **Answer** Both coins and tokens utilize a blockchain on some level.
 
-  **Answer** Both coins and tokens can have a fixed or infinite amount of supply, depending on the system.
+  * **Answer** Both coins and tokens can have a fixed or infinite amount of supply, depending on the system.
 
-  **Answer** Both coins and tokens can be used to implement a stablecoin.
+  * **Answer** Both coins and tokens can be used to implement a stablecoin.
 
   What are some real-world use cases that you discovered while researching popular tokens?
 
-  **Potential Answers**
+  * **Potential Answers**
 
   * **BAT** - seeking to address fraud in advertising, basic attention is an open-source, decentralized ad platform that allows advertisers to pay website publishers for the attention of users.
 
@@ -172,18 +172,21 @@ Discuss the following review questions with the class.
 
 ### 5. Instructor Do: Mappings Data Structure in Solidity (15 min) (Critical)
 
+This activity shows students how to build a simple token with Solidity.
+
+**Files:**
+
+* [ArcadeToken.sol](Activities/05-Ins_Mappings/Unsolved/ArcadeToken.sol)
+
 Now that we are familiar with the concept of tokens, let's build one!
 
 * In order to build a token with Solidity, we need to learn one more data structure, called a `mapping`.
 
 * You can think of a mapping as a `mapping` between two variables. For instance, you can *map* an address to a balance.
-  You can map a customer ID to an address, or vice versa. They can even be nested, but we won't need to do that.
+
+* You can map a customer ID to an address, or vice versa. They can even be nested, but we won't need to do that.
 
 Open up Remix and create a new contract called `ArcadeToken.sol`.
-
-**Files:**
-
-* [ArcadeToken.sol](Activities/05-Ins_Mappings/Unsolved/ArcadeToken.sol)
 
 Define the token contract like so:
 
@@ -274,8 +277,7 @@ function transfer(address recipient, uint value) public {
 
 * As you can see, the logic here is actually just as simple as you would expect. Value moves from one address to another.
 
-Note, this contract is currently vulnerable to something called an `integer underflow` attack and allows users to spend tokens they do not have.
-If students notice this, simply explain that we will add more security features later today to prevent spending with zero token balance.
+Note, this contract is currently vulnerable to something called an `integer underflow` attack and allows users to spend tokens they do not have. If students notice this, simply explain that we will add more security features later today to prevent spending with zero token balance.
 
 Now, we'll need some way to allow users to purchase tokens from the contract. Add a new `purchase` function, and set it to `payable`:
 
@@ -396,15 +398,17 @@ Get the students excited about the next activity by explaining how we are now go
 
 ### 10. Instructor Do: 3rd Parties Libraries in Solidity (SafeMath) (15 min) (Critical)
 
+This demonstration shows students how to use the `SafeMath` from `OpenZeppelin` to secure their tokens.
+
+**Files:**
+
+* [ArcadeTokenSafeMath.sol](Activities/10-Ins_SafeMath/Unsolved/ArcadeTokenSafeMath.sol)
+
 Now it's time to make our tokens more secure. Briefly explain to the class:
 
 * The tokens that we have created so far are not actually secure.
 
 * We can make these secure by using a library called `SafeMath` from OpenZeppelin.
-
-**Files:**
-
-* [ArcadeTokenSafeMath.sol](Activities/10-Ins_SafeMath/Unsolved/ArcadeTokenSafeMath.sol)
 
 First, show students how a contract is vulnerable to rewarding infinite tokens via an `integer underflow` exploit. Here's an example in-action:
 
