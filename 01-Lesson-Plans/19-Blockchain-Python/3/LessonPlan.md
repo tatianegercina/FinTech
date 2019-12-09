@@ -57,15 +57,15 @@ Ask the students the following questions:
 
 * What is a UTXO?
 
- **Answer:** Unspent Transaction Output
+  * **Answer:** Unspent Transaction Output
 
 * What is a private key in the context of blockchain?
 
- **Answer:** A key that allows you to sign transactions.
+  * **Answer:** A key that allows you to sign transactions.
 
 * What is a wallet?
 
- **Answer:** A piece of software that manages your private keys and allows you to sign and send transactions.
+  * **Answer:** A piece of software that manages your private keys and allows you to sign and send transactions.
 
 Explain to the class that there are two parts of a wallet.
 
@@ -83,11 +83,11 @@ Remind the class that we have already worked with several wallets already, that 
 
 Ask the class to name a few, such as:
 
- **Answer:** MyCrypto
+  * **Answer:** MyCrypto
 
- **Answer:** Web3.py
+  * **Answer:** Web3.py
 
- **Answer:** Bit
+  * **Answer:** Bit
 
 Elaborate:
 
@@ -161,15 +161,15 @@ Ask the students the following questions:
 
 * Why is BIP39 important?
 
- **Answer:** It allows people to remember and write down a much more human-friendly version of the key.
+  * **Answer:** It allows people to remember and write down a much more human-friendly version of the key.
 
 * What sort of mistakes do human-readable keys prevent?
 
- **Answer:** Incorrectly writing down the private key string.
+  * **Answer:** Incorrectly writing down the private key string.
 
 * Why did we download the offline version of the BIP39 tool?
 
- **Answer:** It is more secure since the online version can still get hacked.
+  * **Answer:** It is more secure since the online version can still get hacked.
  It is safer to download the open-source code straight from Github and run it locally.
 
 ### 5. Instructor Do: Back to BIP32 (10 min)
@@ -214,11 +214,11 @@ Ask the students:
 
 * Why might you want to do that?
 
- **Answer:** That way, customers can't see your entire balance and purchase history!
+  * **Answer:** That way, customers can't see your entire balance and purchase history!
 
- **Answer:** Accounting becomes much easier, as each address becomes a receipt of sorts containing that transaction only.
+  * **Answer:** Accounting becomes much easier, as each address becomes a receipt of sorts containing that transaction only.
 
- **Answer:** Bitcoin is pseudonymous, not anonymous, so generating new addresses helps preserve privacy.
+  * **Answer:** Bitcoin is pseudonymous, not anonymous, so generating new addresses helps preserve privacy.
 
 Now, time for the students to derive some keys of their own!
 
@@ -239,19 +239,19 @@ Ask the students:
 
 * Why is BIP32 useful?
 
- **Answer:** Since Bitcoin is UTXO native, we can generate a new address for every transaction.
+  * **Answer:** Since Bitcoin is UTXO native, we can generate a new address for every transaction.
 
- **Answer:** Allows for better and easier accounting on the blockchain.
+  * **Answer:** Allows for better and easier accounting on the blockchain.
 
- **Answer:** Preserves privacy by using new addresses for receiving money.
+  * **Answer:** Preserves privacy by using new addresses for receiving money.
 
 * What do you notice about the balance on these addresses?
 
- **Answer:** They are empty, and not the same as we used last week.
+  * **Answer:** They are empty, and not the same as we used last week.
 
 * Why are these addresses different from those we used last week?
 
- **Answer:** These are mainnet keys, which are different from Bitcoin's testnet keys.
+  * **Answer:** These are mainnet keys, which are different from Bitcoin's testnet keys.
 
 Explain to the students that we will learn how to generate keys for different coins,
 including Bitcoin Testnet and Ethereum in this next activity.
@@ -332,19 +332,19 @@ Ask the students:
 
 * Why is BIP44 useful?
 
- **Answer:** It allows you to use one master key across multiple blockchains!
+  * **Answer:** It allows you to use one master key across multiple blockchains!
 
- **Answer:** It still supports multiple addresses like BIP32.
+  * **Answer:** It still supports multiple addresses like BIP32.
 
- **Answer:** It allows the rest of the crypto and blockchain community to be more interoperable.
+  * **Answer:** It allows the rest of the crypto and blockchain community to be more interoperable.
 
 * Would an exchange or an innovative bank use BIP44? Why?
 
- **Answer:** Yes, it would use it to keep track of customer's keys across multiple blockchains.
+  * **Answer:** Yes, it would use it to keep track of customer's keys across multiple blockchains.
 
 * Where does the list of coin types come from?
 
- **Answer:** BIP44's sister standard, SLIP44.
+  * **Answer:** BIP44's sister standard, SLIP44.
 
 Congratulate the students on learning about the wallet standards that the entire crypto community has settled upon using!
 
@@ -363,15 +363,15 @@ Welcome the students back to class and ask a few recall questions:
 
 * What is BIP39?
 
- **Answer:** The standard that allows us to convert mnemonics to master keys.
+  * **Answer:** The standard that allows us to convert mnemonics to master keys.
 
 * What is BIP32?
 
- **Answer:** The standard that allows us to generate a tree of keys from the master seed.
+  * **Answer:** The standard that allows us to generate a tree of keys from the master seed.
 
 * What is BIP44?
 
- **Answer:** The standard that allows us to generate trees of keys for multiple coins, all from the original master seed!
+  * **Answer:** The standard that allows us to generate trees of keys for multiple coins, all from the original master seed!
 
 ### 13. Everyone Do: Using the `hd-wallet-derive` Tool (15 min)
 
@@ -462,31 +462,31 @@ Ask the students the following questions:
 
 * Why would we want to have a CLI version of the online tool?
 
- **Answer:** We can capture the output and use it in Python.
+  * **Answer:** We can capture the output and use it in Python.
 
- **Answer:** We don't always want to use a GUI for things when a command can get the job done quicker.
+  * **Answer:** We don't always want to use a GUI for things when a command can get the job done quicker.
 
 * What is the point of BIP44?
 
- **Answer:** We can manage keys from many blockchains using a single master seed.
+  * **Answer:** We can manage keys from many blockchains using a single master seed.
 
 * What is the derivation path?
 
- **Answer:** The derivation path is the path along the tree that the key is created from, starting at the master key.
+  * **Answer:** The derivation path is the path along the tree that the key is created from, starting at the master key.
 
 * Why might we want to use this tool over others?
 
- **Answer:** Good documentation.
+  * **Answer:** Good documentation.
 
- **Answer:** Supports many different coins.
+  * **Answer:** Supports many different coins.
 
- **Answer:** Supports many different wallet standards other than just BIP44.
+  * **Answer:** Supports many different wallet standards other than just BIP44.
 
 * What might be a downfall of using this tool over others?
 
- **Answer:** We have to have PHP installed on our systems, which we might not have control over.
+  * **Answer:** We have to have PHP installed on our systems, which we might not have control over.
 
- **Answer:** We are relying on an external tool for the work, versus using a library.
+  * **Answer:** We are relying on an external tool for the work, versus using a library.
  Having a pure Python library that supported all of the same features would be ideal for us.
 
 ### 15. Everyone Do: Processing Terminal Output in Python (10 min)
@@ -559,11 +559,11 @@ Once everyone has successfully copied and run this program, ask the following qu
 
 * What do you notice about the output, particularly the format?
 
- **Answer:** It is not formatted very nicely, or in a way that we can process this easily.
+  * **Answer:** It is not formatted very nicely, or in a way that we can process this easily.
 
 * What would be another format that would be easier to work with, in this case?
 
- **Answer:** JSON or CSV format.
+  * **Answer:** JSON or CSV format.
 
 Great! Let's tell the derivation tool to give us output in JSON format. We can do this by adding the `--format=json` flag to the command string:
 
@@ -607,23 +607,23 @@ Ask the students:
 
 * What might we use this for?
 
- **Answer:** We can build a universal wallet with this!
+  * **Answer:** We can build a universal wallet with this!
 
- **Answer:** We can build payment gateways with this!
+  * **Answer:** We can build payment gateways with this!
 
- **Answer:** We can integrate crypto into many different systems!
+  * **Answer:** We can integrate crypto into many different systems!
 
 * What is `stdout`?
 
- **Answer:** The standard output that programs can print to.
+  * **Answer:** The standard output that programs can print to.
 
 * What is the more ideal and secure way of managing our mnemonic in our Python code?
 
- **Answer:** Environment variables.
+  * **Answer:** Environment variables.
 
 * What could we use to pass different arguments to the command with? (Think strings)
 
- **Answer:** We can use "f" strings or complex string formatting to customize the output we want.
+  * **Answer:** We can use "f" strings or complex string formatting to customize the output we want.
 
 ### 17. Instructor Do: Wallets vs. Wallets (15 min)
 
@@ -647,7 +647,7 @@ Continue through the slideshow until:
 
 * Does anyone know why this is more secure than using our mnemonics like we have been?
 
- **Answer:** The hardware wallet never outputs the private keys once they are generated the first time.
+  * **Answer:** The hardware wallet never outputs the private keys once they are generated the first time.
 
 * Essentially, what this means is that this device will give you one, and only one opportunity to write down your mnemonic phrase.
  After that, the device will never output the private keys again. You can only use it to restore or generate a mnemonic.
@@ -662,7 +662,7 @@ Now ask the students:
 
 * If hardware wallets are so secure, why would we ever use anything else?
 
- **Answer:** Security is a spectrum.
+  * **Answer:** Security is a spectrum.
 
 Elaborate that a software wallet on your phone or laptop is like carrying physical cash with you, you only want to carry so much.
 
@@ -677,7 +677,7 @@ Ask the students:
 
 * Can anyone guess as to why software wallets aren't as secure as a hardware wallet?
 
- **Answer:** Computers and phones get hacked all the time!
+  * **Answer:** Computers and phones get hacked all the time!
 
 Explain to the class:
 
@@ -695,11 +695,11 @@ Ask the students:
 
 * So what would a "hot" wallet be in this case? Software or hardware?
 
- **Answer:** Software wallets are hot wallets.
+  * **Answer:** Software wallets are hot wallets.
 
 * What would be a "cold" wallet?
 
- **Answer:** Hardware wallets.
+  * **Answer:** Hardware wallets.
 
 Congratulations! Now you understand the different wallet standards, the different implementations of these wallets in hardware
 and software, and when to use each!
@@ -726,31 +726,31 @@ Ask the students the following questions:
 
 * What type of wallet would be the best for an exchange to use?
 
- **Answer:** Hardware wallet
+  * **Answer:** Hardware wallet
 
 * Should you keep all of the funds available to spend, or should you keep a percentage offline?
 
- **Answer:** You should store most of the funds offline, then when customers withdraw, do the withdraws in bulk.
+  * **Answer:** You should store most of the funds offline, then when customers withdraw, do the withdraws in bulk.
 
 * How might a decentralized exchange work differently?
 
- **Answer:** The exchange wouldn't need to hold any keys or funds, but would purely facilitate direct peer to peer trades.
+  * **Answer:** The exchange wouldn't need to hold any keys or funds, but would purely facilitate direct peer to peer trades.
 
 * What is the advantage of a centralized exchange?
 
- **Answer:** Easy onboarding, you can hold the company liable.
+  * **Answer:** Easy onboarding, you can hold the company liable.
 
- **Answer:** Potentially higher liquidity, and leverage options. More advanced services may be provided.
+  * **Answer:** Potentially higher liquidity, and leverage options. More advanced services may be provided.
 
 * What are some disadvantages to centralized exchanges?
 
- **Answer:** If the exchange gets hacked, the crypto is gone for good. This can sink the exchange.
+  * **Answer:** If the exchange gets hacked, the crypto is gone for good. This can sink the exchange.
 
- **Answer:** Customers don't own or manage the private keys being used, which means the exchange has control over the funds.
+  * **Answer:** Customers don't own or manage the private keys being used, which means the exchange has control over the funds.
 
 * What wallet standards have we learned?
 
- **Answer:** BIP39, BIP32, and BIP44
+  * **Answer:** BIP39, BIP32, and BIP44
 
 ### 20. Instructor Do: Structured Review (35 mins)
 
