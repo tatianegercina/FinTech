@@ -1,6 +1,6 @@
 # GitHub Reorganized
 
-In this activity, you will clone your GitHub repo, create a folder structure, and then create a `backup` branch from the `master` branch.
+In this activity, you will clone your GitHub repo, create a folder structure, and then push those changes to the `master` branch.
 
 ## Instructions
 
@@ -26,6 +26,6 @@ Complete the following steps.
 
 GitLab has a pretty good tutorial on how to use the git CLI. Check it out [here](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html).
 
---- 
+---
 
 © 2019 Trilogy Education Services
