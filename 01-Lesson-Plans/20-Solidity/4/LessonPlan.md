@@ -8,7 +8,7 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * Today's class will consist of Solidity code drills and review activities.
 
-* Due to the difference between Python and Solidity, Today's class is an excellent opportunity to encourage students to consolidate their skills working with a compiled and strongly typed programming language like Solidity.
+* Due to the differences between Python and Solidity, Today's class is an excellent opportunity for students to consolidate their skills by working with a compiled and strongly typed programming language like Solidity.
 
 * Code drills range in complexity and pace, so the time allotted to each section of activities should be fluid to allow each student to work through the problems at their own pace.
 
@@ -16,17 +16,7 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * One way to challenge students is to have "code drill races," where students pair off and race each other to complete a set of drills. However, use this strategy cautiously and thoughtfully so that you don't overwhelm any beginner programmers.
 
-* Overall, this should be a fun day for students that will help them build confidence in their Solidity programming skills. Be sure to offer plenty of support and encouragement to those students who have never worked with a compiled language.
-
-### Slideshow and Time Tracker
-
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 20.4 Slides]().
-
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
-
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+* Overall, this should be a fun day for students that will help them build confidence in their Solidity programming skills. Be sure to offer plenty of support and encouragement to those students who have never worked with a compiled language
 
 ---
 
@@ -38,7 +28,7 @@ Explain code drills to students:
 
 * Solidity introduces a new programming paradigm that may be challenging to master. The good news is that we are going to continue working with Solidity in the forthcoming weeks.
 
-* The most successful path to mastering anything is to practice, Today's class will offer the opportunity to strengthen the Solidity basics through a series of code drills that varies in complexity and are aimed to prepare you for the next weeks.
+* The most successful path to mastering anything is to practice. Today's class will offer the opportunity to strengthen the Solidity basics through a series of code drills that varies in complexity and are aimed to prepare you for the next weeks.
 
 * The key to learning to code is _to code_. Building steady daily coding habits will help build muscle memory that makes the process of typing code and remembering syntax easier.
 
