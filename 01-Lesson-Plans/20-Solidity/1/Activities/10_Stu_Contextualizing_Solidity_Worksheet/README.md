@@ -4,7 +4,7 @@ In this exercise, you will be filling in a simple chart (pipeline) of the variou
 
 ## Instructions
 
-* Using the wordbank below, fill in the levels of the following worksheet:
+* Using the word bank below, fill in the levels of the following worksheet:
 
 | Level on the Stack | Ethereum Implementation |
 | --------- |------- |
@@ -14,7 +14,7 @@ In this exercise, you will be filling in a simple chart (pipeline) of the variou
 | Process/Runtime | {Answer Here} |
 | Hardware | Physical Processor |
 
-* Once you have completed your worksheet discuss with the person beside you your justification for placing each value on each level.
+* Once you have completed your worksheet, discuss with the person beside you your justification for placing each value on each level.
 
 ## Word Bank
 

@@ -1,4 +1,4 @@
-# Unit 20 - "Looks like we've made First Contract!"
+# Unit 20 - "Looks like we've made our First Contract!"
 
 ![contract](https://image.shutterstock.com/z/stock-photo-two-hands-handshake-polygonal-low-poly-hud-illustration-smart-contract-agreement-blockchain-and-1161295627.jpg)
 
@@ -9,9 +9,9 @@ allow other businesses and individuals to participate and strengthen the network
 
 Fortunately, you've been learning how to program smart contracts with Solidity! What you will be doing this assignment
 is creating an `Identity` contract. This contract will be very simple, only storing info such as name, email, website,
-github, image URL, a short bio, and an array of payable addresses.
+GitHub, image URL, a short bio, and an array of payable addresses.
 
-Your co-worker has already built you a frontend that will work with the contract, so long as it implements the exact
+Your coworker has already built you a frontend that will work with the contract, so long as it implements the exact
 public variables and functions specified below.
 
 ## Files
@@ -68,16 +68,15 @@ You will need the following functions:
 - `onlyBy(owner)` modifier -- This function should set a `require` check ensuring that only the owner can call the function.
 
 - "Setter" functions -- These functions will be setting the above variables. These *MUST* be restricted to the owner
-  of the contract by the `onlyBy(owner)` modifier.
+ of the contract by the `onlyBy(owner)` modifier.
 
-- `getAddress` -- This function will be a `public view` that takes a `uint256` integer index, and returns the designated
-  address from the array. Anyone can call this function and does not need the `onlyBy(owner)` modifier.
+- `getAddress` -- This function will be a `public view` that takes a `uint256` integer index, and returns the designated address from the array. Anyone can call this function and does not need the `onlyBy(owner)` modifier.
 
 - `getAddressCount` -- This `public view` function will return the length of the address array.
-  This is necessary to keep track of the number of addresses stored in the contract.
+ This is necessary to keep track of the number of addresses stored in the contract.
 
 - `delAddress` -- This function will take a `uint256` integer index and delete the designated address from the array.
-  This function *MUST* be restricted to the owner of the contract by the `onlyBy(owner)` modifier.
+ This function *MUST* be restricted to the owner of the contract by the `onlyBy(owner)` modifier.
 
 You will also need to create an event that notifies clients that info has changed. You can make separate events for each,
 or combine them into a generic event that passes the parameter that was changed as well as the value to the client.
@@ -135,7 +134,7 @@ transaction parameters.
 
 ### Deploy to a testnet
 
-Request testnet tokens from your preferred faucet on your preferred testnet (not your local chain).
+Request the testnet tokens from your preferred faucet, on your preferred testnet (not your local chain).
 
 You may use either Ropsten, Kovan, Rinkeby, Goerli, or any networks that are bundled with MetaMask.
 
@@ -171,10 +170,10 @@ following line in the `package.json` file:
 
 `"build": "parcel build -d build/frontend --public-url ./identity-dapp/ index.html",`
 
-You must change the `./identity-dapp/` portion to `./your-repo-name/`. This is necessary to properly generate the URLs
+You must change the `./identity-dapp/` portion to `./your-repo-name/`. This is necessary to generate the URLs properly
 on the page, since Github Pages defaults to the `https://username.github.io/your-repo-name/` format.
 
-If you are deploying to a URL that is at the "root" domain (i.e. no `/your-repo-name/` prefix) such as
+If you are deploying to a URL that is at the "root" domain (i.e., no `/your-repo-name/` prefix) such as
 `https://identity-dapp.yourportfoliosite.com`, you can remove the `--public-url ./identity-dapp` flag entirely.
 
 Once your Github Pages repo is configured, initialize your `identity` project folder with the instructions given and
