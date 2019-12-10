@@ -1,31 +1,26 @@
 pragma solidity ^0.5.0;
 
 contract ProfitSplitter {
-    address payable beneficiary_one;
-    address payable beneficiary_two;
-    address payable beneficiary_three;
+    // @TODO: Insert the three payable beneficiary addresses
+    // Your code here!
 
     constructor(address payable _one, address payable _two, address payable _three) public {
-        beneficiary_one = _one;
-        beneficiary_two = _two;
-        beneficiary_three = _three;
+        // @TODO: Set the beneficiary addresses to equal the parameters
+        // Your code here!
 }
 
-    function balance() public view returns(uint) {
-        return address(this).balance;
-    }
+    // @TODO: Create a balance function that returns the `uint` of the current contract balance
+    // Your code here!
 
     function deposit() public payable {
-        uint amount = msg.value / 3;
+        // @TODO: Split `msg.value` into 3 and store in a `uint` called `amount`
 
-        beneficiary_one.transfer(amount);
-        beneficiary_two.transfer(amount);
-        beneficiary_three.transfer(amount);
+        // @TODO: Transfer the `amount` to each beneficiary address
 
-        beneficiary_one.transfer(msg.value - amount * 3); // take care of a potential remainder
+        // @TODO: Take care of a potential remainder by subtracting `amount * 3` from `msg.value` and sending that to a beneficiary
     }
 
     function() external payable {
-        deposit();
+        // @TODO: Call the deposit function from the fallback to ensure the logic executes when Ether is sent directly to the contract
     }
 }
