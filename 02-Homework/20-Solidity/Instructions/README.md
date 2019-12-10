@@ -4,146 +4,89 @@
 
 ## Background
 
-Now that your company has its very own custom blockchain running, the team wants to begin opening the chain to
-allow other businesses and individuals to participate and strengthen the network. But first, the team wants to create a system on-chain built to allow these businesses to register a list of addresses that belong to that company.
+Now that your company has its very own custom blockchain running, the team wants to build a smart contract that will allow the team to split the company profits 3 ways.
 
-Fortunately, you've been learning how to program smart contracts with Solidity! What you will be doing this assignment
-is creating an `Identity` contract. This contract will be very simple, only storing info such as name, email, website,
-github, image URL, a short bio, and an array of payable addresses.
+Fortunately, you've been learning how to program smart contracts with Solidity! What you will be doing this assignment is creating a `ProfitSplitter` contract. This contract will accept payment using a `deposit` function, and automatically divide the Ether among the beneficiaries.
 
-Your co-worker has already built you a frontend that will work with the contract, so long as it implements the exact
-public variables and functions specified below.
+You will deploy the contract to an Ethereum testnet, like Kovan, so the team can test it out before moving to production.
 
 ## Files
 
-Truffle project [starter code](Starter-Code/identity.zip)
+ProfitSplitter [starter code](Starter-Code/ProfitSplitter.sol)
 
 ## Instructions
 
 ### Starting your project
 
-Download and extract the starter code above. This contains a small frontend that will interact with your contract when
-you successfully implement the proper functions and variables.
+Navigate to the [Remix IDE](https://remix.ethereum.org) and create a new contract called `ProfitSplitter.sol` using the starter code above.
 
-You will need to install the dependencies once you `cd` into the `identity` folder by running:
-
-`npm install`
-
-This will allow you to build and deploy the project to Github Pages later.
-
-You can use the development server by running:
-
-`npm run dev`
-
-When you have finished your contract, you can navigate to `localhost:1234` and interact with the contract with MetaMask.
-
-You can build the project for production by running:
-
-`npm run build`
+While developing and testing your contract, use the [Ganache](https://www.trufflesuite.com/ganache) development chain, and point MetaMask to `localhost:8545`, or replace the port with what you have set in your workspace.
 
 ### Designing the Smart Contract
 
-You will need to provide the following `public` variables:
+At the top of your contract, you will need to define the following `public` variables:
 
-- `name` -- The name of the individual/company as a `string`
+* `beneficiary_one` -- The `address` of the first beneficiary. Make sure to set this to `payable`.
 
-- `email` -- The email address of the individual/company as a `string`
+* `beneficiary_two` -- Another `address payable` that represents the second beneficiary.
 
-- `website` -- The website of the individual/company as a `string`
+* `beneficiary_three` -- The third `address payable` that represents the third beneficiary.
 
-- `github` -- Github repository/account/project URL `string`
+Create a constructor function that accepts:
 
-- `image` -- A profile image/logo URL `string`
+* `address payable _one`
 
-- `bio` -- A short bio `string`
+* `address payable _two`
 
-- `addresses` -- A `payable` `address` array
+* `address payable _three`
 
-Feel absolutely free to add more variables you see fit to attach to an Identity. Get creative!
+Within the constructor, set the beneficiary addresses to equal the parameter values. This will allow you to avoid hardcoding the beneficiary addresses.
 
-You will need the following functions:
+Next, create the following functions:
 
-- The `constructor` must include the initial public variables that you'd like the contract to start with.
+* `balance` -- This function should be set to `public view returns(uint)`, and must return the contract's current balance. Since we should always be sending Ether to the beneficiaries, this function should always return `0`. If it does not, the `deposit` function is not handling remainders properly and should be fixed. This will serve as a test function of sorts.
 
-- `onlyBy(owner)` modifier -- This function should set a `require` check ensuring that only the owner can call the function.
+* `deposit` -- This function should set to `public payable` check ensuring that only the owner can call the function.
 
-- "Setter" functions -- These functions will be setting the above variables. These *MUST* be restricted to the owner
-  of the contract by the `onlyBy(owner)` modifier.
+  * In this function, perform the following steps:
 
-- `getAddress` -- This function will be a `public view` that takes a `uint256` integer index, and returns the designated
-  address from the array. Anyone can call this function and does not need the `onlyBy(owner)` modifier.
+    * Set a `uint amount` to equal `msg.value / 3;` in order to calculate the split value of the Ether.
 
-- `getAddressCount` -- This `public view` function will return the length of the address array.
-  This is necessary to keep track of the number of addresses stored in the contract.
+    * Transfer the `amount` to `beneficiary_one`.
 
-- `delAddress` -- This function will take a `uint256` integer index and delete the designated address from the array.
-  This function *MUST* be restricted to the owner of the contract by the `onlyBy(owner)` modifier.
+    * Repeat the steps for `beneficiary_two` and `beneficiary_three`.
 
-You will also need to create an event that notifies clients that info has changed. You can make separate events for each,
-or combine them into a generic event that passes the parameter that was changed as well as the value to the client.
+    * Since `uint` only contains positive whole numbers, and Solidity does not fully support float/decimals, we must deal with a potential remainder at the end of this function, since `amount` will discard the remainder during division.
 
-### Setting up the deployment/migration script
+    * We may either have `1` or `2` wei leftover, so pick a beneficiary that gets the change and transfer them the `msg.value - amount * 3`. This will re-multiply the `amount` by 3, then subtract it from the `msg.value` to account for any leftover wei.
 
-We have provided the migration script for the `Identity` contract. This should run without error once the contract
-is properly designed.
+* Create a fallback function using `function() external payable`, and call the `deposit` function from within it. This will ensure that the logic in `deposit` executes if Ether is sent directly to the contract. This is important to prevent Ether from being locked in the contract, since we don't have a `withdraw` function in this use-case.
 
-Take a look inside the `migrations` folder and edit the `2_identity.js` file according to the information you would
-like to store on the contract.
+### Challenge
 
-The completed migration script should look something like this (but with the complete parameter set):
+Create a rolling counter called `uint counter` at the top of the contract.
 
-![2_identity.js](Images/2_identity.png)
+In the `deposit` function, you can create a counter that goes from `0` to `2` before resetting back to `0` using modulous. Create a some of `if` statements to check which beneficiary to send the leftover wei to by checking the counter, then increment it with `counter += counter % 2`.
 
-### Deploy the contract
+This will make the way remainders are handled more fair to the each beneficiary.
 
-Run `truffle migrate` to build and deploy the contract to your local network.
+### Test the contract
 
-### Connect MetaMask to your local node
+In the `Deploy` tab in Remix, deploy the contract to your local Ganache chain by connecting to `Injected Web3` and ensuring MetaMask is pointed to `localhost:8545`.
 
-Add a custom network to MetaMask if you have not already that points to your local Ganache, PoA, or PoW network.
+You will need to fill in the constructor parameters with your designated `beneficiary` addresses.
 
-You should also import the private key from your network that deployed the contract.
-This is likely `web3.eth.accounts[0]`.
+Test the `deposit` function by sending various values. Keep an eye on the `beneficiary` balances as you send different amounts of Ether to the contract and ensure the logic is executing properly.
 
-### Update the frontend
+![Remix Testing](Images/remix-test.png)
 
-Once you have the contract's address, replace the `const contractAddress = ""` line with the
-proper address. If you are running the dev server, the frontend will hot-reload. Make sure that the `identityJson`
-path is also correct (it should be pointing to the contract's ABI).
+### Deploy to a live Testnet
 
-### Test the contract locally
+Once you feel comfortable with your contract, point MetaMask at the Kovan or Ropsten network. Ensure you have test Ether on this network!
 
-Once you have properly built the contract, the proper variables should appear in the frontend at `localhost:1234`.
+After switching MetaMask to Kovan, simply deploy the contract as before and keep note of the deployed address. The transaction will also be in your MetaMask history, and on the blockchain permanently to explore later.
 
-This is an example of what the frontend will look like once the smart contract is successfully built:
-
-![frontend-success](Images/frontend-success.png)
-
-There are admin features that only appear when you are using the *same* account in MetaMask that you used to deploy
-the contract. This will enable adding and deleting addresses.
-
-The Github, website, and email links should all properly navigate to the correct places. If not, replace the values with
-valid links. Use full URLs when setting the variables.
-
-You should be able to set and get values only using the account used to deploy the contract.
-This account is likely `web3.eth.accounts[0]` as that is the default used by Truffle.
-
-You can also test the contract by dropping into an interactive Python shell (or writing a script) that uses `web3.py`
-to connect to the local chain that the `Identity` contract is deployed to, then using something like:
-`identity_contract.functions.FUNCTION_NAME(param).transact(TX_PARAMS)` and setting the function name and building the
-transaction parameters.
-
-### Deploy to a testnet
-
-Request testnet tokens from your preferred faucet on your preferred testnet (not your local chain).
-
-You may use either Ropsten, Kovan, Rinkeby, Goerli, or any networks that are bundled with MetaMask.
-
-Configure your `truffle-config.js` to properly utilize your Infura account (or if you are running) and point to the
-designated testnet.
-
-Once you deploy the contract successfully, you will need to update the `contractAddress` variable in `dapp.js` again
-before you deploy the frontend.
+![Remix Deploy](Images/remix-deploy.png)
 
 ## Resources
 
@@ -162,27 +105,6 @@ If you enjoy building games, here's a great tutorial called [CryptoZombies](http
 
 ## Submission
 
-Create a `README.md` that explains what testnet the contract is on, and how to connect MetaMask to it.
+Create a `README.md` that explains what testnet the contract is on, the motivation for the contract.
 
-You will also deploy this dApp to Github Pages. Your coworker has provided a helper script to assist in deploying.
-
-Create a Github repo, name it `identity-dapp`. If you would like to name it something else, you will need to change the
-following line in the `package.json` file:
-
-`"build": "parcel build -d build/frontend --public-url ./identity-dapp/ index.html",`
-
-You must change the `./identity-dapp/` portion to `./your-repo-name/`. This is necessary to properly generate the URLs
-on the page, since Github Pages defaults to the `https://username.github.io/your-repo-name/` format.
-
-If you are deploying to a URL that is at the "root" domain (i.e. no `/your-repo-name/` prefix) such as
-`https://identity-dapp.yourportfoliosite.com`, you can remove the `--public-url ./identity-dapp` flag entirely.
-
-Once your Github Pages repo is configured, initialize your `identity` project folder with the instructions given and
-push your code.
-
-When ready, simply run `npm run deploy` -- this will build the frontend to a separate branch that will be hosted via
-Github Pages.
-
-Navigate to the deployed dApp, set MetaMask to the proper network, and make sure the frontend works!
-
-Congratulate yourself for building a decentralized identity system!
+Upload this to a Github repository that explains how the contract works, and provide the testnet address for others to be able to send to.
