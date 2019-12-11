@@ -12,9 +12,3 @@ pragma solidity ^0.5.0;
 
     * A positive integer variable `num_votes` with an initial value of zero.
 */
-
-contract VotingSystem {
-  address public chair;
-  address last_voter;
-  uint num_votes = 0;
-}
