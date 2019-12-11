@@ -22,7 +22,7 @@ Open [Remix](http://remix.ethereum.org/), import the [starter file](Unsolved/var
 
 8. Create an unsigned `32 bit` integer `eth_usd_rate` and assign the current value in USD of `1 ETH` to it.
 
-9. Create an `256` unsigned integer constant `eth_wei_rate` and assign the number of Wei in one Ether.
+9. Create a `256` unsigned integer constant `eth_wei_rate` and assign the number of Wei in one Ether.
 
 10. Create a new public unsigned `256 bit` integer variable named `daily_expenses_wei` and assign the value of `daily_expenses_eth` plus eth_wei_rate.
 
