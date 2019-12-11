@@ -12,6 +12,7 @@ contract TieredProfitSplitter {
         employee_three = _three;
     }
 
+    // Should always return 0!
     function balance() public view returns(uint) {
         return address(this).balance;
     }

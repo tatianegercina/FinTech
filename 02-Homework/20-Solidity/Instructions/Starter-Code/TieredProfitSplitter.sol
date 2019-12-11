@@ -12,6 +12,7 @@ contract TieredProfitSplitter {
         employee_three = _three;
     }
 
+    // Should always return 0! Use this to test your `deposit` function's logic
     function balance() public view returns(uint) {
         return address(this).balance;
     }
@@ -22,9 +23,9 @@ contract TieredProfitSplitter {
         uint amount;
 
         // @TODO: Calculate and transfer the distribution percentage
-        // Step 1: Set amount to equal `point` * the percentage (in raw integer format)
+        // Step 1: Set amount to equal `points` * the number of percentage points for this employee
         // Step 2: Add the `amount` to `total` to keep a running total
-        // Step 3: Transfer the `amount` to the first employee
+        // Step 3: Transfer the `amount` to the employee
 
         // @TODO: Repeat the previous steps for `employee_two` and `employee_three`
         // Your code here!

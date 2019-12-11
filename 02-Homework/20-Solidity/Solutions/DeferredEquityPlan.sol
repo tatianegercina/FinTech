@@ -2,15 +2,15 @@ pragma solidity ^0.5.0;
 
 // lvl 3: equity plan
 contract DeferredEquityPlan {
-    address human_resources = msg.sender;
+    address human_resources;
 
     address payable employee; // bob
-    bool active;
+    bool active = true;
 
     uint total_shares = 1000;
     uint annual_distribution = 250; // 1000 shares over 4 years
 
-    uint start_time; // contract start time
+    uint start_time = now; // contract start time
     uint unlock_time = now + 365 days; // will increment every year
 
     uint public distributed_shares; // starts at 0
@@ -18,12 +18,10 @@ contract DeferredEquityPlan {
     constructor(address payable _employee) public {
         human_resources = msg.sender;
         employee = _employee;
-        active = true;
-        start_time = now;
     }
 
     function distribute() public {
-        require(msg.sender == human_resources || msg.sender == employee, "You do not have permission to execute this contract.");
+        require(msg.sender == human_resources || msg.sender == employee, "You are not authorized to execute this contract.");
         require(active == true, "Contract not active.");
         require(unlock_time <= now, "Shares have not vested yet!");
         require(distributed_shares < total_shares, "All shares have been distributed.");
@@ -32,8 +30,9 @@ contract DeferredEquityPlan {
         distributed_shares = (now - start_time) / 365 days * annual_distribution; // calculate total shares from how many years have passed * annual_distribution
     }
 
+    // human_resources and the employee can deactivate this contract at-will
     function deactivate() public {
-        require(msg.sender == human_resources, "Cannot deactivate this contract.");
+        require(msg.sender == human_resources || msg.sender == employee, "You are not authorized to deactivate this contract.");
         active = false;
     }
 
