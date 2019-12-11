@@ -164,6 +164,8 @@ Using the starter code, perform the following:
 
     * Make sure to include the parenthesis around `now - start_time` in your calculation to ensure that the order of operations is followed properly.
 
+  * The final `if` statement provided checks that in case the employee does not cash out until 5+ years after the contract start, the contract does not reward more than the `total_shares` agreed upon in the contract.
+
 * Deploy and test your contract locally.
 
   * For this contract, you test the timelock functionality by adding a new variable called `uint fakenow = now;` as the first line of the contract, replacing every other instance of `now` with `fakenow`, then using the following `fastforward` function.
