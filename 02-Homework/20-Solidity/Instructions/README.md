@@ -18,7 +18,7 @@ You will deploy the contracts to an Ethereum testnet, like Kovan, so the team ca
 
 ## Files
 
-* [`AssociateProfitSplitter.sol`](Starter-Code/ProfitSplitter.sol) -- Level 1 starter code.
+* [`AssociateProfitSplitter.sol`](Starter-Code/AssociateProfitSplitter.sol) -- Level 1 starter code.
 
 * [`TieredProfitSplitter.sol`](Starter-Code/TieredProfitSplitter.sol) -- Level 2 starter code.
 
