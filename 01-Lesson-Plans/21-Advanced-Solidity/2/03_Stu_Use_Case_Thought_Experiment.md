@@ -8,7 +8,7 @@ In this activity, students will break into groups of 3 - 5 people and brainstorm
 
 ### 4. Instructor Do: Fungible vs Non-Fungible Review (10 min)
 
-Now that the students have collected their lists of fungible and non-fungible use cases go around the room and ask each group the following questions.
+Now that the students have collected their lists of fungible and non-fungible use cases. Go around the room and ask each group the following questions.
 
 * What was your favorite `Fungible` use case?
 
