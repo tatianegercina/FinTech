@@ -38,6 +38,10 @@ contract DeferredEquityPlan {
         // Make sure to include the parenthesis around (now - start_time) to get accurate results!
         // Your code here!
 
+        // double check in case the employee does not cash out until after 5+ years
+        if (distributed_shares > 1000) {
+            distributed_shares = 1000;
+        }
     }
 
     // human_resources and the employee can deactivate this contract at-will

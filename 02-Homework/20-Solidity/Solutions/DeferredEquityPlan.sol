@@ -28,6 +28,11 @@ contract DeferredEquityPlan {
 
         unlock_time += 365 days; // lock for another year
         distributed_shares = (now - start_time) / 365 days * annual_distribution; // calculate total shares from how many years have passed * annual_distribution
+
+        // double check in case the employee does not cash out until after 5+ years
+        if (distributed_shares > 1000) {
+            distributed_shares = 1000;
+        }
     }
 
     // human_resources and the employee can deactivate this contract at-will
