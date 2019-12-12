@@ -36,7 +36,7 @@ This assignment has 3 levels of difficulty, with each contract increasing in com
 
 ### Starting your project
 
-Navigate to the [Remix IDE](https://remix.ethereum.org) and create a new contract called `ProfitSplitter.sol` using the starter code above.
+Navigate to the [Remix IDE](https://remix.ethereum.org) and create a new contract called `AssociateProfitSplitter.sol` using the starter code for level one above.
 
 While developing and testing your contract, use the [Ganache](https://www.trufflesuite.com/ganache) development chain, and point MetaMask to `localhost:8545`, or replace the port with what you have set in your workspace.
 
