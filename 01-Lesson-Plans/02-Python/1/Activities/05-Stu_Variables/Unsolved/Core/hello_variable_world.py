@@ -4,10 +4,10 @@
 # Increase = Current Price - Original Price
 # Percent Increase = Increase / Original x 100
 
-# Create integer variable for original_price
+# Create float variable for original_price
 
 
-# Create integer variable for current_price
+# Create float variable for current_price
 
 
 # Calculate difference between current_price and original_price
