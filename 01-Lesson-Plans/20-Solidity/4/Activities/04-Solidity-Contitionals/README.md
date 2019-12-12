@@ -14,7 +14,7 @@ Open [Remix](http://remix.ethereum.org/), import the [starter files](Unsolved/),
 
 2. Add a public function named `makeTrade` to the `LatestTrade` contract as follows:
 
-    * Define an unsigned integer `curren_price` as the unique function's parameter.
+    * Define an unsigned integer `current_price` as the unique function's parameter.
 
     * Into the body of the function, use an `if` statement to check if the input parameter `current_price` is less than the contract variable `current_price`, if so, set the `trade_type` string variable as "Buy" and set the `previous_price` to the `current_price`.
 
@@ -28,7 +28,7 @@ Open [Remix](http://remix.ethereum.org/), import the [starter files](Unsolved/),
 
     * Add an `Else` statement to set the `trade_type` to "Hold" in case the previous conditions were false.
 
-4. Use the `personal_savings.sol` file to update the `PersonalSaving` contract as follows:
+4. Use the `personal_savings.sol` file to update the `PersonalSavings` contract as follows:
 
     * Add an `if` statement to the `withdraw` function to validate if the `recipient` address parameter is equal to the `public_savings` or the `private_savings` addresses, and the balance of the contract is greater than or equal to the `amount` parameter; if so, call the `transfer` method of the `recipient` address.
 
