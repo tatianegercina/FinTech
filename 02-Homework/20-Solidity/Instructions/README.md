@@ -102,7 +102,7 @@ Using the starter code, within the `deposit` function, perform the following:
 
 * The `uint amount` variable will be used to temporarily store the amount to send each employee. For each employee, set the `amount` to equal the number of `points` multiplied by the percentage (say, 60 for 60%).
 
-* After calculating the `amount` for the firstAdd the `amount` to the `total` to keep a running total of how much of the `msg.value` we are distributing so far.
+* After calculating the `amount` for the first employee, add the `amount` to the `total` to keep a running total of how much of the `msg.value` we are distributing so far.
 
 * Then, transfer the `amount` to `employee_one`. Repeat the steps for each employee, setting the `amount` to equal the `points` multiplied by their given percentage.
 
