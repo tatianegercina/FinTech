@@ -6,13 +6,15 @@ In this activity, you will be exploring the various token standards.
 
 * In your web browser navigate to the Ethereum foundation's [Online list of ERCs](https://eips.ethereum.org/erc)
 
-* Click the following ERC standards `21, 721, 77, and 1155`, and read their abstract, motivation, and specification sections.
+* As you are reading through the various ERC standards, write down a few things that you find interesting about each one.
 
-* As you are reading through the various ERC standards, write down a few things that you find interesting about the various aspects of the standards.
+* Click the following ERC standards `21, 721, 77, 1155`, and read their abstract, motivation, and specification sections.
+
+* Click two additional standards of your choice, and read their abstract, motivation, and specification sections.
 
 ## Challenge
 
-* If time remains, try brainstorming what ERC standards you would want to potentially see in the list.
+* If time remains, try brainstorming what ERC standards you would want to see in the list.
 
 ## Hints
 
