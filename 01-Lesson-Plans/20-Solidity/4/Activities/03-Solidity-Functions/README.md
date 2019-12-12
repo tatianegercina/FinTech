@@ -6,7 +6,7 @@ In this activity, you will practice functions into Smart Contracts in Solidity.
 
 Open [Remix](http://remix.ethereum.org/), import the [starter files](Unsolved/), and perform the following code drills. Once you finish, compile the files to ensure the code works.
 
-1. Create a contract named `LatestTrade` that contains:
+1. Use the `latest_trade.sol` file to create a contract named `LatestTrade` that contains:
 
     * A string variable `coin` with the value `XRP` assigned to it.
 
