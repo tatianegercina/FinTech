@@ -14,8 +14,6 @@ Fortunately, you've been learning how to program smart contracts with Solidity! 
 
 * Distribute company shares for employees in a "deferred equity incentive plan" automatically.
 
-You will deploy the contracts to an Ethereum testnet, like Kovan, so the team can test them out before moving to production.
-
 ## Files
 
 * [`AssociateProfitSplitter.sol`](Starter-Code/AssociateProfitSplitter.sol) -- Level 1 starter code.
