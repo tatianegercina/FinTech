@@ -10,26 +10,36 @@ Open [Remix](http://remix.ethereum.org/), import the [starter file](Unsolved/Rid
 
 1. Create a contract called `RideToken` that contains:
 
-    * An Ethereum address variable `my_address` with a valid Ethereum address assigned to it.
+    * Initializes a public address variable `owner`.
 
-    * A string variable `message` with a greeting salutation assigned to it.
+    * Initialized a public mapping variable `balances` that maps address to uint.
 
-2. Create a contract called `PersonalSavings` than contains:
+2. Create a public `constructor` function that sets the `address` variable as the `msg.sender`
 
-    * A public payable address variable called `public_savings` with a valid Ethereum address assigned to it.
+3. Create a public `mint` function that...
 
-    * An address variable called `private_savings` with a valid address assigned to it.
+    * Inputs an address variable `receiver` as the first parameter.
 
-    * A string variable called `account_holder` with your name assigned to it.
+    * Inputs a uint variable `amount` as the second parameter.
 
-3. Create a contract called `VotingSystem` that contains:
+    * Uses a require statement to check if the `msg.sender` is equal to the `owner` address variable.
 
+      * If so, the `balances` mapping object should be updated with the associated receiver and newly minted `amount`.
 
-    * A public address variable `chair`.
+      * If not, the contract should print "Permission Denied. You are not the contract owner."
 
-    * An address variable `last_voter`.
+4. Create a public `send` function that...
 
-    * A positive integer variable `num_votes` with an initial value of zero.
+    * Inputs an address variable `receiver` as the first parameter.
+
+    * Inputs a uint variable `amount` as the second parameter.
+
+    * Uses a require statement to check if the `amount` is less than or equal to the token balance associated with the `msg.sender`.
+
+      * If so, decrement the token balance of the `msg.sender` by the `amount`, and similarly, increment the token balance of the `receiver` by the `amount`.
+
+      * If not, the contract should print "Insufficient balance."
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
