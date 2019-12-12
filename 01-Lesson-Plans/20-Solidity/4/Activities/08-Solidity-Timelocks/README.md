@@ -1,4 +1,4 @@
-# Advanced Solidity Contracts
+# Solidity Timelocks
 
 In this activity, a small local amusement park has asked you to incorporate a blockchain-based digital tokening system to replace their current physical token system.
 
