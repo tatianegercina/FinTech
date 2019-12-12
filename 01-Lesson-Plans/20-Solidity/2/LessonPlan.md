@@ -4,7 +4,7 @@
 
 Today's class will introduce the Solidity programming language to the class. Solidity is the de-facto smart contract programming language that is compatible with many blockchains, including Ethereum.
 
-The goal of today is to familiarize the students with the strictly typed language features of Solidity enough to build a Joint Savings Account smart contract that can store and withdraw Ether.
+The goal of today is to familiarize the students with the strictly typed language features of Solidity enough to build a Joint Savings Account smart contract that can store and withdraw ether.
 
 ### Class Objectives
 
@@ -19,9 +19,9 @@ By the end of the class, students will be able to:
 * Create getters and setters in Solidity, including return type.
 
 * Create basic functions in Solidity
- (in this case, a `deposit` function to add Ether, a `withdraw` function to withdraw Ether, and a `fallback` function to capture Ether).
+ (in this case, a `deposit` function to add ether, a `withdraw` function to withdraw ether, and a `fallback` function to capture ether).
 
-* Utilize the built-in `payable` modifier in Solidity to give addresses or functions the ability to accept Ether.
+* Utilize the built-in `payable` modifier in Solidity to give addresses or functions the ability to accept ether.
 
 * Use basic conditionals (if/else) in Solidity.
 
@@ -41,7 +41,7 @@ By the end of the class, students will be able to:
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1Pzxz5_697qF-NaQdSyntcP1n8-DRovkdh1VyNDT2oN0/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -433,9 +433,9 @@ Answer any questions before moving on.
 
 ---
 
-### 10. Instructor Do: Storing, Catching, Withdrawing Ether (10 min)
+### 10. Instructor Do: Storing, Catching, Withdrawing ether (10 min)
 
-In this activity, we will demonstrate how to add functions for depositing Ether, withdrawing Ether, and a default `fallback` function that can be used to catch Ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions as well as to payable addresses in the contract.
+In this activity, we will demonstrate how to add functions for depositing ether, withdrawing ether, and a default `fallback` function that can be used to catch ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions as well as to payable addresses in the contract.
 
 Earlier in the day, we built a simple contract that stored variables representing a rewards/bank account balance. Let's take that a step further and build a JointSavings account smart contract that allows two addresses to manage a savings account.
 
@@ -458,9 +458,9 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
 
  * Next, we set two addresses to represent the owners of the joint savings account.
 
- * Pay special attention to the new modifier that we are using called `payable`. By setting an `address` or function as `payable`, we unlock special functions that allow us to capture and manage Ether.
+ * Pay special attention to the new modifier that we are using called `payable`. By setting an `address` or function as `payable`, we unlock special functions that allow us to capture and manage ether.
 
-* For example, if we wanted to withdraw Ether from the contract, we can add a withdraw function like so:
+* For example, if we wanted to withdraw ether from the contract, we can add a withdraw function like so:
 
  ```solidity
  pragma solidity ^0.5.0;
@@ -477,13 +477,13 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
 
  * Our withdrawal function accepts the following parameters:
 
- * A `uint` amount representing the amount of Ether (in its smallest denomination, Wei) we would like to withdraw.
+ * A `uint` amount representing the amount of ether (in its smallest denomination, Wei) we would like to withdraw.
 
  * The `address` recipient that we would like to withdraw to.
 
- * All smart contracts on Ethereum have their own address when deployed, and can store and send Ether like a wallet.
+ * All smart contracts on Ethereum have their own address when deployed, and can store and send ether like a wallet.
 
- * Address types have built-in functions, like `address.balance`. If we set the address to `payable`, the `.transfer` function is enabled, which allows us to transfer Ether from the contract's wallet to that address.
+ * Address types have built-in functions, like `address.balance`. If we set the address to `payable`, the `.transfer` function is enabled, which allows us to transfer ether from the contract's wallet to that address.
 
  * Notice that we have the recipient parameter set as a `payable address` in this withdraw function. We still have to be explicit like this in the parameters as well, so that we can call the `.transfer` function on the recipient address later in the function.
 
@@ -504,23 +504,23 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
  }
  ```
 
- * Remember, all smart contracts on Ethereum have their own address when deployed, and can store and send Ether like a wallet. It is up to us to create functions that manage this Ether properly, as we did with the withdraw function.
+ * Remember, all smart contracts on Ethereum have their own address when deployed, and can store and send ether like a wallet. It is up to us to create functions that manage this ether properly, as we did with the withdraw function.
 
- * When we create a deposit function and set it to `payable`, we are telling the contract to accept the Ether that is sent to this function.
+ * When we create a deposit function and set it to `payable`, we are telling the contract to accept the ether that is sent to this function.
 
- * As you can see, our `deposit` function body is blank; our function does not contain anything. The reason for this is that we only register this function to accept and hold the Ether that we send it, and this can be done by just adding the `payable` modifier. We can add more to this function later, like event logging, but for now, we'll do a bare-bones deposit function.
+ * As you can see, our `deposit` function body is blank; our function does not contain anything. The reason for this is that we only register this function to accept and hold the ether that we send it, and this can be done by just adding the `payable` modifier. We can add more to this function later, like event logging, but for now, we'll do a bare-bones deposit function.
 
- * We now have a complete contract where any account can send our contract Ether through the `deposit` function. It can also send any amount of Ether to any address that we specify in the `withdraw` function (as long as we have enough balance, of course!).
+ * We now have a complete contract where any account can send our contract ether through the `deposit` function. It can also send any amount of ether to any address that we specify in the `withdraw` function (as long as we have enough balance, of course!).
 
 Ask the students the following question:
 
-* As you know, moving Ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the `gas` that was sent?
+* As you know, moving ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the `gas` that was sent?
 
- * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our Ether back since it was never successfully spent.
+ * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our ether back since it was never successfully spent.
 
-We are going to add one final line to make sure that if Ether is sent to the contract without using the `deposit` function, (i.e., sending Ether directly to the contract's address), we can still capture the Ether into the contract's wallet.
+We are going to add one final line to make sure that if ether is sent to the contract without using the `deposit` function, (i.e., sending ether directly to the contract's address), we can still capture the ether into the contract's wallet.
 
-* If we don't add this `external payable` fallback function, and Ether is sent to our contract address, it will return the Ether instead, forcing other users to send via the `deposit` function. In our case, we want to capture all Ether sent to the contract.
+* If we don't add this `external payable` fallback function, and ether is sent to our contract address, it will return the ether instead, forcing other users to send via the `deposit` function. In our case, we want to capture all ether sent to the contract.
 
  ```solidity
  pragma solidity ^0.5.0;
@@ -539,13 +539,13 @@ We are going to add one final line to make sure that if Ether is sent to the con
  }
  ```
 
-Great! Now we have a fully functioning Savings account contract. We can use this smart contract to store Ether, and withdraw it to any address we choose!
+Great! Now we have a fully functioning Savings account contract. We can use this smart contract to store ether, and withdraw it to any address we choose!
 
 ---
 
-### 11. Students Do: Implementing Ether Management functions (15 min)
+### 11. Students Do: Implementing ether Management functions (15 min)
 
-In this exercise, students will be implementing a `joint savings account` contract using the Ether management functions from the previous activity. By the end of this activity, students will be able to deposit and withdraw ether from their contract's address.
+In this exercise, students will be implementing a `joint savings account` contract using the ether management functions from the previous activity. By the end of this activity, students will be able to deposit and withdraw ether from their contract's address.
 
 **Instructions:**
 
@@ -559,7 +559,7 @@ In this exercise, students will be implementing a `joint savings account` contra
 
 ---
 
-### 12. Instructor Do: Review Ether Management Functions (5 min)
+### 12. Instructor Do: Review ether Management Functions (5 min)
 
 **Files:**
 
@@ -794,7 +794,7 @@ Explain to the class:
 * Even though this contract is logically sound, there is a special function we need to use called `require` to enforce the account check
  instead of using the `if` statement.
 
-* The `require` function checks a condition just like an `if` statement does, only if the condition is false, it will return the leftover `gas` used and any `Ether`, and roll back the entire transaction. Consider it a hard stopping point that you absolutely `require` a specific condition to be true to continue.
+* The `require` function checks a condition just like an `if` statement does, only if the condition is false, it will return the leftover `gas` used and any `ether`, and roll back the entire transaction. Consider it a hard stopping point that you absolutely `require` a specific condition to be true to continue.
 
 Remove the `if` statement, then replace it with the following `require`:
 
@@ -885,11 +885,11 @@ Discuss with the students:
 
 * As you can see, all of the functions have an input that allows you to send the function parameters.
 
-* Notice that the deposit function does not have an input next to it. This is because it does not have any parameters. Instead, you will pass it Ether through the value field at the top.
+* Notice that the deposit function does not have an input next to it. This is because it does not have any parameters. Instead, you will pass it ether through the value field at the top.
 
 Lead students through passing `10 ether` into the deposit function and then withdrawing it.
 
-![Remix Deposit Ether](Images/remix_deposit_ether.png)
+![Remix Deposit ether](Images/remix_deposit_ether.png)
 
 * We are now going to deposit some ether into our `JointSavings` account.
 
@@ -967,13 +967,13 @@ Ask the following review questions.
 
  * **Answer** `In memory`
 
-* As you know, moving Ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the gas that was sent?
+* As you know, moving ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the gas that was sent?
 
- * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our Ether back since it was never successfully spent.
+ * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our ether back since it was never successfully spent.
 
 * Why do we use a `testnet` to test our code?
 
- * **Answer** Ether costs real money on `mainnet`, we don't want to waste real money testing code.
+ * **Answer** ether costs real money on `mainnet`, we don't want to waste real money testing code.
 
  * **Answer** Until our code is fully tested we might not uncover certain bugs or potential security vulnerabilities; `testnet` gives us a way to run our code as if it's in production without it being in production.
 
