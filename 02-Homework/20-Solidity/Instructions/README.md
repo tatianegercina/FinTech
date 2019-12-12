@@ -174,7 +174,7 @@ Using the starter code, perform the following:
 
 * Deploy and test your contract locally.
 
-  * For this contract, you test the timelock functionality by adding a new variable called `uint fakenow = now;` as the first line of the contract, replacing every other instance of `now` with `fakenow`, then using the following `fastforward` function.
+  * For this contract, test the timelock functionality by adding a new variable called `uint fakenow = now;` as the first line of the contract, then replace every other instance of `now` with `fakenow`. Utilize the following `fastforward` function to manipulate `fakenow` during testing.
 
   * Add this function to "fast forward" time by 100 days when the contract is deployed (requires setting up `fakenow`):
 
