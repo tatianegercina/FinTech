@@ -98,7 +98,7 @@ Using the starter code, within the `deposit` function, perform the following:
 
 * Calculate the number of points/units by dividing `msg.value` by `100`.
 
-  * This will allow us to multiply the points with a number representing a percentage. For example, `points * 80` will output a number that is ~80% of the `msg.value`.
+  * This will allow us to multiply the points with a number representing a percentage. For example, `points * 60` will output a number that is ~60% of the `msg.value`.
 
 * The `uint amount` variable will be used to temporarily store the amount to send each employee. For each employee, set the `amount` to equal the number of `points` multiplied by the percentage (say, 60 for 60%).
 
@@ -108,7 +108,13 @@ Using the starter code, within the `deposit` function, perform the following:
 
 * For example, each transfer should look something like the following for each employee, until after transferring to the third employee:
 
-  * Step 1: `amount = points * 80;`
+  * Step 1: `amount = points * 60;`
+
+    * For `employee_one`, distribute `points * 60`.
+
+    * For `employee_two`, distribute `points * 25`.
+
+    * For `employee_three`, distribute `points * 15`.
 
   * Step 2: `total += amount;`
 
