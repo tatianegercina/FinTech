@@ -14,4 +14,4 @@ Ask the students the following review questions about the ERC standards activity
 
 * Why do you think `fungible` and `non-fungible` were implemented as separate contracts.
 
-* What contracts do you think you would want to potentially see on the list of ERCs?
+* What ERC standards would you like to see?
