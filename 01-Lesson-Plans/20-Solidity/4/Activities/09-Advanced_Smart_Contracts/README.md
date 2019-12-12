@@ -1,14 +1,14 @@
 # Advanced Solidity Contracts
 
-In this activity, a small local amusement park has asked you to incorporate a blockchain-based digital tokening system to replace their current physical tokens.
+In this activity, a small local amusement park has asked you to incorporate a blockchain-based digital tokening system to replace their current physical token system.
 
 Therefore, you will use the fundamentals of Solidity smart contracts to create a `RideToken` contract.
 
 ## Instructions
 
-Open [Remix](http://remix.ethereum.org/), import the [starter file](Unsolved/smart-contracts.sol) and perform the following code drills. Once you finish, compile and deploy the contract to ensure the code works.
+Open [Remix](http://remix.ethereum.org/), import the [starter file](Unsolved/RideToken.sol) and perform the following code drills. Once you finish, compile and deploy the contract to ensure the code works.
 
-1. Create a contract called `MessageContract` that contains:
+1. Create a contract called `RideToken` that contains:
 
     * An Ethereum address variable `my_address` with a valid Ethereum address assigned to it.
 
