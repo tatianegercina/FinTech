@@ -35,4 +35,5 @@ contract DayTradingAccount {
   // Fallback function
   function() external payable {
   }
+
 }
