@@ -796,13 +796,17 @@ In this activity, students will get a big-picture overview of the homework.
 
 Open the Unit 20 homework assignment instruction and briefly demo the homework instructions for students. Be sure to highlight the following:
 
-* The goal of this homework assignment is to use Solidity to define, create, and deploy a smart contract dApp. MetaMask will be used to interact with the contract operations.
+* The goal of this homework assignment is to use Solidity to define, create, and deploy a smart contract that allows business owners to split profits between themselves automatically.
 
-* The identity smart contract will be deployed as a dApp using GitHub pages.
+* MetaMask will be used to interact with and deploy the contract.
 
-* Starter code is provided that includes a small frontend that can be used to interact with the contract.
+* Students will test their dApps locally, using Ganache and Remix.
 
-* Students will test their dApps locally, and also, by deploying their solution to a test net.
+* The ProfitSplitter smart contracts will be deployed onto a live testnet like Kovan.
+
+* Starter code is provided that includes contract boilerplate to help you get off the ground.
+
+* There are 3 Levels of difficulty for this assignment. You can do all of them with the skills you have learned this unit, so try to finish all 3!
 
 Explain to students that this will be an excellent opportunity to gain hands-on experience in creating and deploying smart contracts using Solidity.
 
