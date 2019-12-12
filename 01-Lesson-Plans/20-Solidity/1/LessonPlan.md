@@ -34,11 +34,11 @@ By the end of the Unit, students will be able to:
 
 * Smart contracts have several applications beyond the financial sector such as medical, industrial (supply chain), cybersecurity, and many more. Feel free to include additional use cases or applications that you believe are suitable for the class.
 
-* Setting up the development environment may be tricky; be sure to follow the [installation guide](../Supplemental/solidity-install-guide.md) before the class to get familiarized with the process.
+* Setting up the development environment may be tricky; be sure to follow the [installation guide](../Supplemental/unit-20-install-guide.md) before the class to get familiarized with the process.
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1nTdsL4xs1-BWEpdjocEA0DW4SoUJRLXGjwRMb3G5L44/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -148,7 +148,7 @@ The only way to not excel at this exercise is to not participate in the research
 
 ---
 
-### 5. Instructor Do: Smart Contracts in Action Review (5 min)
+### 4. Instructor Do: Smart Contracts in Action Review (5 min)
 
 Conduct a facilitated discussion by asking a couple of groups to share their conclusions and insights about the use cases their review, focus on discussing with the class which features they noticed are compliant with the criteria from ["The General Theory of Decentralized Applications"](https://github.com/DavidJohnstonCEO/DecentralizedApplications).
 
@@ -190,7 +190,7 @@ Click on the `Get Chrome Extension` link, a new window is going to be opened whe
 
 Click on the `Add to Chrome` button to start the installation process.
 
-Next a pop-up window will be opened where you have to click on the `Add Extension` button to continue.
+Next, a pop-up window will be opened where you have to click on the `Add Extension` button to continue.
 
 ![MetaMask installation - 3](Images/metamask-3.png)
 
@@ -421,21 +421,21 @@ Open Ganache and ask the students the following questions.
 
 * How might a local development blockchain like Ganache make it easier to develop smart contracts?
 
-  **Answer** It allows potentially insecure code to run in a private(non-public) environment.
+ **Answer** It allows potentially insecure code to run in a private(non-public) environment.
 
-  **Answer** It saves you from having to purchase actual ether.
+ **Answer** It saves you from having to purchase actual ether.
 
-  **Answer** Ether is automatically generated in your wallet for testing smart contracts.
+ **Answer** Ether is automatically generated in your wallet for testing smart contracts.
 
-  **Answer** Transactions happen right away.
+ **Answer** Transactions happen right away.
 
 * How might remix make it easier to write smart contracts?
 
-  **Answer** You can write a smart contract from pretty much any browser.
+ **Answer** You can write a smart contract from pretty much any browser.
 
-  **Answer** It allows for writing, compiling, and deploying all in one place.
+ **Answer** It allows for writing, compiling, and deploying all in one place.
 
-  **Answer** It supports connecting to local development blockchains.
+ **Answer** It supports connecting to local development blockchains.
 
 ---
 
@@ -461,23 +461,23 @@ Try to conceptualize what is happening in the graphic.
 
 * Higher Level language
 
-  * Solidity is the `Higher Level Language` of the EVM.
+ * Solidity is the `Higher Level Language` of the EVM.
 
-  * A higher level language allows code to be written that is independent of a particular computer's hardware.
+ * A higher level language allows code to be written that is independent of a particular computer's hardware.
 
-  * A higher level language is a language that is more easily understandable for humans than machine code.
+ * A higher level language is a language that is more easily understandable for humans than machine code.
 
-  * A higher level language cannot be understood by a computer; it has to be compiled to machine code by the compiler before it can be understood.
+ * A higher level language cannot be understood by a computer; it has to be compiled to machine code by the compiler before it can be understood.
 
 * Machine Code
 
-  * EVM machine code consists of a list of instructions that the EVM will perform.
+ * EVM machine code consists of a list of instructions that the EVM will perform.
 
-  * A user pays a certain amount of `gas` for each instruction that gets executed by the EVM.
+ * A user pays a certain amount of `gas` for each instruction that gets executed by the EVM.
 
-  * Instead of just a plain transaction fee like with Bitcoin, users pay fees based on running different computations. Each computation has a different `gas` cost associated with it.
+ * Instead of just a plain transaction fee like with Bitcoin, users pay fees based on running different computations. Each computation has a different `gas` cost associated with it.
 
-  * The cost of each of these opcodes is determined by the community, in the Ethereum node software. In fact, it is updated occasionally to keep the network fair when certain opcodes become too expensive for average nodes to process.
+ * The cost of each of these opcodes is determined by the community, in the Ethereum node software. In fact, it is updated occasionally to keep the network fair when certain opcodes become too expensive for average nodes to process.
 
 Show the class the example machine code.
 
@@ -489,23 +489,23 @@ Show the class the example machine code.
 
 * Virtual Machine
 
-  * The EVM contains a memory, storage, and all of the essential parts of a physical computer, just virtual, and sandboxed inside of your Ethereum node.
+ * The EVM contains a memory, storage, and all of the essential parts of a physical computer, just virtual, and sandboxed inside of your Ethereum node.
 
-  * Every Ethereum node runs the EVM, which is how all Ethereum nodes are able to process and validate transactions and smart contracts.
+ * Every Ethereum node runs the EVM, which is how all Ethereum nodes are able to process and validate transactions and smart contracts.
 
 * Process/Runtime
 
-  * The process/runtime is the actual process that runs on the host machine.
+ * The process/runtime is the actual process that runs on the host machine.
 
-  * The Ethereum node spawns a process for the EVM.
+ * The Ethereum node spawns a process for the EVM.
 
-  * While each node can verify transactions within its own EVM, it takes multiple full nodes running their own EVMs to properly secure the network.
+ * While each node can verify transactions within its own EVM, it takes multiple full nodes running their own EVMs to secure the network properly.
 
-  * `Geth` is one implementation of an Ethereum full node written in GO.
+ * `Geth` is one implementation of an Ethereum full node written in GO.
 
 * Hardware
 
-  * Since blockchains are written in software, the hardware can be any machine that is capable of running the node software and connecting to the internet.
+ * Since blockchains are written in software, the hardware can be any machine that is capable of running the node software and connecting to the internet.
 
 ---
 
@@ -535,23 +535,23 @@ Ask the class the following recall questions:
 
 * What is a potential benefit of executing code in a virtual machine?
 
-  **Answer** The code executed in a virtual machine cannot affect the host machine directly.
+ **Answer** The code executed in a virtual machine cannot affect the host machine directly.
 
-  **Answer** The code can run anywhere the virtual machine can run.
+ **Answer** The code can run anywhere the virtual machine can run.
 
 * What do you think some benefits of Solidity being a compiled language might be?
 
-  **Answer** Human readable code can turn into machine-readable code.
+ **Answer** Human readable code can turn into a machine-readable code.
 
-  **Answer** Code can be executed faster.
+ **Answer** Code can be executed faster.
 
 * What's an example of a programing language that humans write, e.g. `High-level languages`?
 
-  **Answer** Solidity
+ **Answer** Solidity
 
-  **Answer** C++
+ **Answer** C++
 
-  **Answer** Java
+ **Answer** Java
 
 ---
 
@@ -584,11 +584,11 @@ Continue with lesson slides and ask the following question to students:
 
 If no-one answers the question, ask for a volunteer from the blockchain enthusiast in class to share her or his insights. You may conclude with the following example.
 
-* From radio to television and now the internet, every new disrupting technology has faced adoption challenges. In the end, part of the solution has been to ease how people use the technology. In other words, improving the user experience may increase the new user base.
+* From radio to television and now the internet, every new disrupting technology has faced adoption challenges. In the end, part of the solution has been to ease how people use technology. In other words, improving the user experience may increase the new user base.
 
 Open your browser and navigate to the [State Of The Dapps website](https://www.stateofthedapps.com/). Explain to students that this platform showcases a panorama of the dApps ecosystem and ranks the dApps based on an analysis of GitHub activity.
 
-Start the website navigation as you explain that this ranking was initially focused on Ethereum. However, this website presents dApps developed for other blockchain platforms as well.
+Start the website navigation as you explain that this ranking was initially focused on Ethereum. However, this website presents dApps developed for other blockchain platforms, as well.
 
 ![State Of The Dapps - 1](Images/state-of-the-daps-1.png)
 
@@ -676,7 +676,7 @@ Comment to students that they will answer to this question in the next activity 
 
 In the next dApp demo, students will learn how they can use a dApp by transferring `ETH` to use the service provided by the dApp using MetaMask, explain to students that this is how normally they will interact with a dApp.
 
-Open your browser and navigate to https://www.akta.io/. Akta is a cloud file storage service that uses the `Ropsten` test network to work, so you should be sure that you have `ETH` in your wallet in this test network, if you don't have any token in this test network, refer to the ["Getting Ropsten Tokens Guide"](../Instructor_Support/getting-ropsten-tokens.md) in the Instructor Support folder.
+Open your browser and navigate to https://www.akta.io/. Akta is a cloud file storage service that uses the `Ropsten` test network to work, so you should be sure that you have `ETH` in your wallet in this test network if you don't have any token in this test network, refer to the ["Getting Ropsten Tokens Guide"](../Instructor_Support/getting-ropsten-tokens.md) in the Instructor Support folder.
 
 Once you open the Akta website, follow the next steps to conduct the demo.
 
@@ -820,9 +820,9 @@ Congratulate students on completing their first day on smart contracts! End the 
 
 Ask students to provide a definition of a smart contract and a dApp and then provide the following definitions:
 
-* Smart contracts are computer programs that run on the blockchain, that allow for any type of computation. They are mainly used to allow credible transaction of digital assets under certain conditions without third parties.
+* Smart contracts are computer programs that run on the blockchain, that allow for any computation. They are mainly used to allow credible transaction of digital assets under certain conditions without third parties.
 
-* A dApp is a software application that has a decentralized operation and uses a decentralized storage or database.
+* A dApp is a software application that has a decentralized operation and uses decentralized storage or database.
 
 * In general terms, a smart contract is a decentralized application that can run on a blockchain.
 
