@@ -34,8 +34,7 @@ In this activity, you will build a simple, smart contract to represent a custome
 
 * Remember to use semicolons at the end of every variable definition, and every line of code that doesn't end in curly brackets!
 
-* Using types is a pain to get used to at first, but once you get the hang of them, they will help prevent bugs in the future,
- and make your code much less ambiguous!
+* Using types is a pain to get used to at first, but once you get the hang of them, they will help prevent bugs in the future, and make your code much less ambiguous!
 
 ---
 
