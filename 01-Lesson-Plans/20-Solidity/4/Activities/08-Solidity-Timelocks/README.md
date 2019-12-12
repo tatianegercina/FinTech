@@ -1,44 +1,40 @@
 # Solidity Timelocks
 
-In this activity, a small local amusement park has asked you to incorporate a blockchain-based digital tokening system to replace their current physical token system.
+In this activity, a day trading firm has asked you to incorporate a blockchain-based investment account system to replace their current system. In particular, they want to ensure that a user must wait at least 24 hours from their last withdrawal to withdraw again from their account.
 
-Therefore, you will use the fundamentals of Solidity smart contracts to create a `RideToken` contract.
+Therefore, you will create a `DayTradingAccount` smart contract that utilizes timelocks.
 
 ## Instructions
 
-Open [Remix](http://remix.ethereum.org/), import the [starter file](Unsolved/RideToken.sol) and perform the following code drills. Once you finish, compile and deploy the contract to ensure the code works.
+Open [Remix](http://remix.ethereum.org/), import the [starter file](Unsolved/DayTradingAccount.sol) and perform the following code drills. Once you finish, compile and deploy the contract to ensure the code works.
 
-1. Create a contract called `RideToken` that contains:
+1. Create a contract called `DayTradingAccount` that contains:
 
-    * Initializes a public address variable `owner`.
+    * Initializes a public payable address variable `owner`.
 
-    * Initialized a public mapping variable `balances` that maps address to uint.
+    * Initialized a public uint variable `unlock_time`.
 
-2. Create a public `constructor` function that sets the `address` variable as the `msg.sender`
+2. Create a public `constructor` function that sets the `owner` as the `msg.sender`.
 
-3. Create a public `mint` function that...
+3. Create a public payable `deposit` function and a fallback function.
 
-    * Inputs an address variable `receiver` as the first parameter.
+4. Create a public view `getBalance` function that returns the balance within the contract.
 
-    * Inputs a uint variable `amount` as the second parameter.
+5. Create a public `withdraw` function that...
 
-    * Uses a require statement to check if the `msg.sender` is equal to the `owner` address variable.
-
-      * If so, the `balances` mapping object should be updated with the associated receiver and newly minted `amount`.
-
-      * If not, the contract should print "Permission Denied. You are not the contract owner."
-
-4. Create a public `send` function that...
-
-    * Inputs an address variable `receiver` as the first parameter.
+    * Inputs a payable address varaible `recipient` as the first parameter.
 
     * Inputs a uint variable `amount` as the second parameter.
 
-    * Uses a require statement to check if the `amount` is less than or equal to the token balance associated with the `msg.sender`.
+    * Uses a require statement to check if the `recipient` is equal to the `owner`. Otherwise, the transaction should error out with the following statement: "You are not the owner of this account. Permission denied."
 
-      * If so, decrement the token balance of the `msg.sender` by the `amount`, and similarly, increment the token balance of the `receiver` by the `amount`.
+    * Uses a require statement to check if the `unlock` time is before the current `now` time. Otherwise, the transaction should error out with the following statement: "You need to wait at least 24 hours from the last withdrawal before making another one."
 
-      * If not, the contract should print "Insufficient balance."
+    * Uses a require statement to check if the balance of the contract minus the withdrawn amount is greater than 25,000 wei. Otherwise, the transaction should error out with the following statement: "Withdrawing this amount would put you below the day trading threshold of 25,000 wei."
+
+    * Sets the unlock time to the current time plus 24 hours.
+
+    * Transfers the parameterized `amount` to the `recipient` address using the `transfer` function.
 
 ---
 

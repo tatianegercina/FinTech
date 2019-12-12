@@ -3,10 +3,10 @@ pragma solidity ^0.5.0;
 contract DayTradingAccount {
 
   // Initializes a payable address variable for the contract owner
-  address payable owner;
+  public address payable owner;
 
   // Initializes a uint timelock variable
-  uint unlock_time;
+  public uint unlock_time;
 
   // Constructor for setting the owner of the contract as the one who deploys the contract
   constructor() public {
@@ -20,6 +20,7 @@ contract DayTradingAccount {
 
   // Withdraws the balance to a specified recipient
   function withdraw(address payable recipient, uint amount) public {
+      require(recipient == owner, "You are not the owner of this account. Permission denied.")
       require(unlock_time < now, "You need to wait at least 24 hours from the last withdrawal before making another one.");
       require(address(this).balance - amount > 25000, "Withdrawing this amount would put you below the day trading threshold of 25,000 wei.");
 
