@@ -8,6 +8,8 @@ In this activity, students will be introduced to various ERC standards. Students
 
 * Today we will be discussing several of these standards, also known as `EIP`s, we will specifically be talking about `ERC`s a type of `EIP` specifically related to application-level standards and conventions such as smart contracts.
 
+* The ERCs we will be focusing on today are `20, 721, 777, 1155`.
+
 Click the following link to review the list of [Ethereum Improvement Proposals](https://eips.ethereum.org).
 
 ![List of EIPS](Images/eips.png)
