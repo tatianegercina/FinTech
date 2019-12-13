@@ -18,5 +18,9 @@
 
 * Building Ethereum Dapps, Roberto Infante, Manning Publications: https://www.manning.com/books/building-ethereum-dapps.
 
+## Resources
+
+* Ethereum for Developers: https://ethereum.org/developers/#getting-started
+
 ---
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
