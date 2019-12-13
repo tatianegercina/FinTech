@@ -32,6 +32,46 @@ Open [Remix](http://remix.ethereum.org/), import the [starter files](Unsolved/),
 
     * Add an `if` statement to the `withdraw` function to validate if the `recipient` address parameter is equal to the `public_savings` or the `private_savings` addresses, and the balance of the contract is greater than or equal to the `amount` parameter; if so, call the `transfer` method of the `recipient` address.
 
+## Conditonals Data Type Cheatsheet
+
+English             | Python   | Solidity
+--------------------|----------|---------
+ "Red" `or` "blue"  | `or`     | `||`
+   1 `and` 4        | `and`    |  `&&`
+ `Not` "funny"      | `not`    | `!`
+
+Some code examples
+
+Python `or`:
+
+ ```python
+if number == 1 or number == 2:
+  return number
+ ```
+
+Solidity `or`
+
+ ```solidity
+if (number == 1 || number == 2) {
+  return number;
+}
+ ```
+
+ Python `and`:
+
+ ```python
+if number > 1 and color > 4:
+  return number
+ ```
+
+Solidity `and`
+
+ ```solidity
+if (number > 1 && number > 4) {
+  return number;
+}
+ ```
+
 ## Hints
 
 * You can get the balance of the current contract by calling `address(this).balance` as mentioned [here](https://ethereum.stackexchange.com/a/21449).
