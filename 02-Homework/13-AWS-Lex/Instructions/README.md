@@ -170,10 +170,21 @@ Now your bot is ready to advise customers about retirement plans on Slack. Publi
 
 ### Submission
 
-* Create a python script with your final lambda function.
-* From the Amazon Lex Console export your bot, intent, and slot using `Amazon Lex` as the target platform.
-* Create a short video showing a demo of your Robo Advisor in action from Slack.
-* Create and upload a repository with the above files to GitHub and post a link in BootCamp Spot.
+You should create a brand new repository in GitHub and upload the following files to your repo.
+
+* A python script with your final lambda function.
+
+* From the Amazon Lex Console, export your bot, intent, and slot using `Amazon Lex` as the target platform, and upload the ZIP files to your repo.
+
+* Create a short video or animated GIF showing a demo of your Robo Advisor in action from Slack. Upload the video or animated GIF file to your repo.
+
+Once you have uploaded all the files into the repo, post a link to your homework's repository in BootCamp Spot.
+
+### Hints
+
+* If you are using a Mac, you can create a screen-recording using the built-in QuickTime player. Follow [this link](https://support.apple.com/en-us/HT208721#quicktime) to learn more.
+
+* If you are using Windows 10, you can create a screen-recording using the built-in Xbox Game Bar. Follow [this link](https://beta.support.xbox.com/help/friends-social-activity/share-socialize/record-game-clips-game-bar-windows-10) to learn more.
 
 ---
 
