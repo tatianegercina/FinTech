@@ -1,4 +1,4 @@
-### 06. Students Do: ERC Standards Review (15 min)
+### 06. Students Do: ERC Standards Exploration (15 min)
 
 **Instructions:**
 
