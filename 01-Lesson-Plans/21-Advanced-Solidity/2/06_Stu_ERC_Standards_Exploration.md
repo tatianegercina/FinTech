@@ -1,5 +1,8 @@
 ### 06. Students Do: ERC Standards Exploration (15 min)
 
+In this activity, students will be exploring the various ERC standards that are currently being developed, and that have been accepted as final.
+
+Send out the instructions and have TAs circulate the class.
 **Instructions:**
 
 * [README.md](Activities/06_Stu_ERC_Standards_Exploration/README.md)
