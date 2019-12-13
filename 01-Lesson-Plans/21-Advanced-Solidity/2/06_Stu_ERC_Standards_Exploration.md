@@ -29,7 +29,9 @@ Ask the students the following review questions about the ERC standards activity
 
 * **Answer** 721, 1155
 
-* Why do you think some potential benefits of EIP's having to follow the acceptance process might be?
+* What do you think some potential benefits of EIP's having to follow the acceptance process might be?
+
+* **Answer** Community support, better standards from peer review, open development.
 
 * Why do you think `fungible` and `non-fungible` were implemented as separate contracts.
 
