@@ -33,6 +33,12 @@ Ask the students the following review questions about the ERC standards activity
 
 * **Answer** Community support, better standards from peer review, open development.
 
-* Why do you think `fungible` and `non-fungible` were implemented as separate contracts.
+* Why do you think `fungible` and `non-fungible` are implemented as separate contracts?
+
+* **Answer** Keeping the standards focused on the use case and as simple as possible helps increase the adoption of the standard, and makes them easier to work with.
+
+* Why do you think ERC1155 combines the fungible and non-fungible concepts into one?
+
+* **Answer** For some use cases, like video games, you need a mix of fungible and non-fungible tokens available. For these edge cases, ERC1155 has your back.
 
 * What ERC standards would you like to see?
