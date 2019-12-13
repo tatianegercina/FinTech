@@ -21,9 +21,15 @@ Explain to the students:
 
 Ask the students the following review questions about the ERC standards activity.
 
-* Why do you think some potential benefits of EIP's having to follow the acceptance process might be?
+* Which token standards were fungible?
 
-* Were their any contracts that you found particularly useful.
+* **Answer** 20, 777, 1155
+
+* Which token standards were fungible?
+
+* **Answer** 721, 1155
+
+* Why do you think some potential benefits of EIP's having to follow the acceptance process might be?
 
 * Why do you think `fungible` and `non-fungible` were implemented as separate contracts.
 
