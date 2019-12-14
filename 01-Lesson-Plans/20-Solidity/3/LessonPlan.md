@@ -240,6 +240,8 @@ Explain to the class:
 
 Great! Now it's time for the students to modify their contracts and add some more details using `block` and `msg`!
 
+---
+
 ### 4. Students Do: Using Global Variables (10 min)
 
 In this activity, students will be adding the same details using `msg` and `block` variables in their contracts.
@@ -282,6 +284,8 @@ Ask the students the following questions:
 
 Ask for further questions before moving on.
 
+---
+
 ### 6. Instructor Do: Telling time in Solidity (10 min)
 
 In this activity, we'll be adding a bit more logic to create a withdraw threshold.
@@ -317,9 +321,9 @@ contract JointSavings {
 
 * Explain to the class that there are a few things to understand about telling time in Ethereum.
 
- * The first is that we are storing the time in `uint` format. This is standard for many systems (originating from Unix), allowing us to store the current time in an integer format.
+  * The first is that we are storing the time in `uint` format. This is standard for many systems (originating from Unix), allowing us to store the current time in an integer format.
 
- * Let's dig into the other nuances by continuing our code.
+  * Let's dig into the other nuances by continuing our code.
 
 Add the following `require` to the contract at the top of the `withdraw` function:
 
@@ -349,7 +353,7 @@ Explain to the students:
 
 * In Ethereum, the accuracy of `now` will always fluctuate based on the average blocktime. For the majority of our use cases, we can get away with a 15-second window.
 
- * Timing-critical applications will need to use special contracts called "Oracles" that can provide the exact current time. Note: we will not need to engineer these in our case, but any timing-critical decentralized applications may need Oracles.
+  * Timing-critical applications will need to use special contracts called "Oracles" that can provide the exact current time. Note: we will not need to engineer these in our case, but any timing-critical decentralized applications may need Oracles.
 
 Now, add the locking functionality by adding `unlock_time = now + 24 hours;` just before the `msg.sender.transfer`.
 
@@ -382,6 +386,8 @@ function withdraw(uint amount) public {
 * Using this logic, the withdraw function will first check if the `unlock_time` has passed, by checking if it is less than now. Then, just before withdrawing, it sets the new `unlock_time` to be 24 hours from now.
 
 Now it's time for the students to create the timelock!
+
+---
 
 ### 7. Students Do: Creating a Timelock (10 min)
 
@@ -443,6 +449,8 @@ Welcome the students back to class, allow them to settle, and explain the follow
 
 Have students navigate back to their [Remix IDE](https://remix.ethereum.org) and continue.
 
+---
+
 ### 11. Instructor Do: Adding a Withdraw Threshold (10 min)
 
 In this activity, we will add a simple `if` statement that checks if we are withdrawing over 1/3 of the balance, and updates the timelock if over that threshold.
@@ -479,6 +487,8 @@ Explain to the class:
 
 Now, have the students add the same threshold to their contracts!
 
+---
+
 ### 12. Students Do: Adding the Withdraw Threshold (10 min)
 
 In this activity, students will follow the same steps to add the threshold to their withdraw function's timelock.
@@ -508,6 +518,8 @@ Open the solution and explain the following:
 * While we are dividing the balance by three by using the native `/` symbol, we will be learning more secure ways of dividing numbers next week. For now, this works just fine.
 
 Ask for any remaining questions before moving on.
+
+---
 
 ### 14. Instructor Do: Intro to Constructors (10 min) (Critical)
 
@@ -561,6 +573,8 @@ contract JointSavings {
 
 Now it's time for the students to add their constructors!
 
+---
+
 ### 15. Students Do: Adding a Constructor to the contract (15 min)
 
 In this activity, students will replace their hardcoded values with a constructor in order to make their contracts
@@ -611,6 +625,8 @@ Ask the students the following questions:
   * **Answer:** We can now reuse our contract code over and over again, as-is, and pass new parameters during deployment.
 
 Ask for any remaining questions before moving on.
+
+---
 
 ### 17. Everyone Do: Deploying and Testing the Contract (15 min) (Critical)
 
@@ -700,6 +716,8 @@ Ask the students the following questions:
   * **Answer:** We are limited to a window of accuracy defined by the average block time.
 
   * **Answer:** To get more accurate time, we need special Oracle contracts.
+
+---
 
 ### 19. Instructor Do: Structured Review (35 mins)
 
