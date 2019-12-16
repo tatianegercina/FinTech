@@ -30,13 +30,13 @@ By the end of the class, students will be able to:
 
 * Today's class introduces students to new programming concepts specific to the Solidity language. They will learn to use these concepts to build sophisticated smart contracts for Ethereum.
 
-* If you are new to Solidity, we recommend reviewing the [Instructor Support documents](Instructor_Support/Solidity.md) in preparation for this class.
+* If you are new to Solidity, we recommend reviewing the [Instructor Support documents](../Instructor_Support/Solidity.md) in preparation for this class.
 
 ### Slideshow and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1gRBz8OI5bruHxvoox5qagh13VWJMzG2r_n3yCRX_FMI/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -109,9 +109,9 @@ Remove the recipient parameter from the `withdraw` function, then replace any in
  }
 ```
 
-* Now that the contract is safe from other people controlling our funds, we want to verify the sender. In other words, we check that the person who is actually sending the transaction, `msg.sender`, is one of the account owners. Doing this ensures that only the owners can successfully `withdraw` to their accounts.
+* Now that the contract is safe from other people controlling our funds, we want to verify the sender. In other words, we check that the person who is sending the transaction, `msg.sender`, is one of the account owners. Doing this ensures that only the owners can successfully `withdraw` to their accounts.
 
-* Notice that we can actually call the `.transfer` function just like we did before. This means that we can replace `recipient` with `msg.sender` as a drop-in. In other words, `msg.sender` is a payable address type.
+* Notice that we can call the `.transfer` function just like we did before. This means that we can replace `recipient` with `msg.sender` as a drop-in. In other words, `msg.sender` is a payable address type.
 
 Let's add an `address` variable called `last_to_withdraw` to the contract:
 
@@ -216,7 +216,7 @@ Explain to the class:
 
 * `msg` refers to the current transaction that is executing the smart contract.
 
-* `msg.value` actually refers to the amount of Ether that is attached to said transaction. In our case, we can save the amount that was deposited by storing the `msg.value`. We can use `msg.value` for many other calculations in the future, creating conditions that require a certain amount of Ether, or that keep track of how much Ether each user has stored in your contract.
+* `msg.value` Refers to the amount of Ether that is attached to said transaction. In our case, we can save the amount that was deposited by storing the `msg.value`. We can use `msg.value` for many other calculations in the future, creating conditions that require a certain amount of Ether, or that keep track of how much Ether each user has stored in your contract.
 
 Finally, we need to add the `public` keyword to these variables in order to auto-generate "getter" functions for them:
 
@@ -254,7 +254,7 @@ In this activity, students will be adding the same details using `msg` and `bloc
 
 * [Unsolved - GlobalAttributes.sol](Activities/04-Stu_Global_Variables/Unsolved/GlobalAttributes.sol)
 
-Send out the instructions, and have the TAs circulate around the room to ensure that students are following along.
+Send out the instructions, and have the TAs circulate the room to ensure that students are following along.
 
 Encourage the students to visit the Solidity documentation link provided to reference what variables are available, such as `block` and `msg`.
 
@@ -266,7 +266,7 @@ Encourage the students to visit the Solidity documentation link provided to refe
 
 Open the solution and explain the following:
 
-* We set the variables as `public` so that we don't have to create our own getter functions manually.
+* We set the variables as `public` so that we don't have to create our getter functions manually.
 
 * `block` accesses the current block's information.
 
@@ -455,7 +455,7 @@ Have students navigate back to their [Remix IDE](https://remix.ethereum.org) and
 
 In this activity, we will add a simple `if` statement that checks if we are withdrawing over 1/3 of the balance, and updates the timelock if over that threshold.
 
-* We are going to add a threshold that triggers this timelock only when we withdraw over a third of the balance. We will still allow the withdraw, but further withdraws will be locked for 24 hours after that.
+* We are going to add a threshold that triggers this timelock only when we withdraw over a third of the balance. We will still allow the withdraw, but further withdrawals will be locked for 24 hours after that.
 
 * This should be plenty of time for the other account holder to do some explaining as to why they withdrew so much!
 
@@ -501,7 +501,7 @@ In this activity, students will follow the same steps to add the threshold to th
 
 * [Unsolved - WithdrawThreshold.sol](Activities/12-Stu_Threshold/Unsolved/WithdrawThreshold.sol)
 
-Send out the instructions and ensure that students are able to wrap their timelock using the proper conditional.
+Send out the instructions and ensure that students can wrap their timelock using the proper conditional.
 
 Ensure that students are accessing the contract's balance using `address(this).balance`.
 
@@ -711,7 +711,7 @@ Ask the students the following questions:
 
 * What nuances are there when it comes to telling time in Solidity/Ethereum?
 
-  * **Answer:** We are limited to static time that is not Gregorian.
+  * **Answer:** We are limited to the static time that is not Gregorian.
 
   * **Answer:** We are limited to a window of accuracy defined by the average block time.
 

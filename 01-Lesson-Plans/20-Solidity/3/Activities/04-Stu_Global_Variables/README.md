@@ -7,8 +7,7 @@ when, and how much.
 
 * Remove the `recipient` parameter from the `withdraw` function.
 
-* Replace any instance of `recipient` with `msg.sender` -- this will ensure that we are checking who is actually
-  sending the transaction, versus some parameter that anyone can control.
+* Replace any instance of `recipient` with `msg.sender` -- this will ensure that we are checking who is sending the transaction, versus some parameter that anyone can control.
 
 * Add the following variable definitions, under the account owner definitions:
 
@@ -16,7 +15,7 @@ when, and how much.
 
   * `last_withdraw_block` -- since `block.number` is a `uint`, we'll need to make this variable a `uint` as well.
 
-  * `last_withdraw_amount` -- we'll need this to be a `uint` as well, since that's what Ether is measured in.
+  * `last_withdraw_amount` -- we'll need this to be a `uint` as well since that's what Ether is measured in.
 
 * Then, in the `withdraw` function, add the following logic (the full `if` statement, including what's inside):
 

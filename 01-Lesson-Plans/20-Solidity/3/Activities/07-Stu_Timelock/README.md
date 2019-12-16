@@ -7,8 +7,7 @@ that will lock the contract for 24 hours after withdrawing.
 
 * Add a new variable called `unlock_time` -- this will be a `uint` type.
 
-* In the `withdraw` function, add a `require` that checks if `unlock_time < now` and returns the error "Account locked!"
-  when the condition is not met.
+* In the `withdraw` function, add a `require` that checks if `unlock_time < now` and returns the error "Account locked!" when the condition is not met.
 
 * Right before the `msg.sender.transfer` call at the end of the `withdraw` function, update the `unlock_time` to `now + 24 hours;`
 
