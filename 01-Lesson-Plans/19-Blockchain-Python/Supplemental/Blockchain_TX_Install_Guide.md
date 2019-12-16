@@ -1,12 +1,19 @@
 # Blockchain Transactions Install Guide
 
-This guide serves as a step by step process for setting up and validating the `web3.py`, `bit`, and `hd-wallet-derive` libraries used to programmatically send and receive transactions over a blockchain network via virtual wallets. Without these libraries, class activities and their associated code will not be able to perform the necessary operations.
+This guide serves as a step by step process for setting up and validating the [`web3.py`](https://web3py.readthedocs.io/en/stable/), [`bit`](https://ofek.dev/bit/), and [`hd-wallet-derive`](https://github.com/dan-da/hd-wallet-derive  ) libraries used to programmatically send and receive transactions over a blockchain network via virtual wallets. Without these libraries, class activities and their associated code will not be able to perform the necessary operations.
+
+**Important Notes:**
+
+* Remember to install these libraries in your Python virtual environment or create a new one for this unit.
+
+* Windows users **MUST** use `git-bash` and not the default Windows command prompt when you are requested to open the terminal window to execute commands.
+
 
 ## Installation
 
 Open a terminal and execute the following commands to install `web3.py` and `bit`, respectively.
 
-* Use the `pip install` command to download the `web3.py` module.
+* Use the `pip install` command to download and install the `web3.py` module.
 
   ```shell
   pip install web3
@@ -14,7 +21,7 @@ Open a terminal and execute the following commands to install `web3.py` and `bit
 
   ![web3-install](Images/web3-install.png)
 
-* Use the `pip install` command to download the `bit` module.
+* Use the `pip install` command to download and install the `bit` module.
 
   ```shell
   pip install bit
