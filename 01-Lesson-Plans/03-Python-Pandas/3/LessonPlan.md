@@ -1,5 +1,3 @@
-placeholder
-
 ## 3.3 Lesson Plan: Risk and Returns Over Time
 
 ### Overview
