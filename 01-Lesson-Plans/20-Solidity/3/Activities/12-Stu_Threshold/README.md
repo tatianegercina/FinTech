@@ -1,6 +1,6 @@
 # Adding a Withdraw Threshold to your Joint Savings Account
 
-In this activity, you will add a simple `if` statement that checks if the withdraw amount is greater than 1/3 of the contract
+In this activity, you will add a simple `if` statement that checks if the withdrawal amount is greater than 1/3 of the contract
 balance.
 
 ## Instructions
