@@ -11,11 +11,9 @@ Explain to the students:
 
 * You will be exploring the ERC standards that are currently being developed or have been finalized by the community.
 
-* As you explore the standards, when you see something interesting, relevant, or a keyword that sticks out, click on the standard and read the `Motivation` and `Abstract` sections. If the ERC goes over your head, that's okay. Try to get a basic understanding of the motivation, don't worry about the technical specifications yet.
-
 * The goal of this activity is to be able to learn how to leverage the current state of the community standards when developing ideas or implementing blockchain technologies. By getting comfortable exploring the standards, you will be able to keep up with the latest developments in the ecosystem and know that your implementations will be compatible with the community.
 
-* Don't be intimidated by the fancy language, and if you really don't understand something, try to check out another standard or do some quick Googling!
+* Don't be intimidated by the fancy language, try to do some quick Googling!
 
 ### 7. Instructor Do: ERC Standards Review (10 min)
 
@@ -42,3 +40,9 @@ Ask the students the following review questions about the ERC standards activity
 * **Answer** For some use cases, like video games, you need a mix of fungible and non-fungible tokens available. For these edge cases, ERC1155 has your back.
 
 * What ERC standards would you like to see?
+
+---
+
+### 8. BREAK (15 min)
+
+---
