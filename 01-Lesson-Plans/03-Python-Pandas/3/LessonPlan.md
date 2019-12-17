@@ -104,7 +104,7 @@ Walk students through the following steps.
 
   **Note:** Due to the copy and paste of values only, the date values will be represented in numerical format. Therefore, they will have to be re-formatted as date values after downloading the CSV and editing in Excel. 
 
-* Rename the file as `fb_google_finance` and then download and save the file as a CSV.
+* Rename the file as `fb_google_finance` and then download and save the file as a CSV. Make sure to reside in the second tab where the hard-pasted values are contained.
 
   ![fb-google-finance-csv](Images/fb-google-finance-csv.png)
 
