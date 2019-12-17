@@ -6,8 +6,7 @@ This guide serves as a step by step process for setting up and validating the [`
 
 * Remember to install these libraries in your Python virtual environment or create a new one for this unit.
 
-* Windows users **MUST** use `git-bash` and not the default Windows command prompt when you are requested to open the terminal window to execute commands.
-
+* Windows users **MUST** use `git-bash` and not the default Windows command prompt when you are requested to open the terminal window to execute commands. You should run `git-bash` as administrator to successfully install the libraries.
 
 ## Installation
 
@@ -53,9 +52,9 @@ Once the `web3.py` and `bit` modules are downloaded and installed, verify that b
 
 It can be frustrating when packages do not install correctly, therefore use the below approaches to troubleshoot any installation or usage issues.
 
-### Install Microsoft Visual C++ Build Tools
+### Install Microsoft Visual C++ Build Tools In Windows
 
-In some cases, the `Web3.py` library may fail to install due to the need for Microsoft Visual C++ Build Tools. In such an event, following the below steps to resolve the issue:
+In some cases, the `Web3.py` library may fail to install in Microsoft Windows due to the need for Microsoft Visual C++ Build Tools. In such an event, following the below steps to resolve the issue:
 
 1. Go to: https://visualstudio.microsoft.com/downloads/
 
@@ -72,6 +71,8 @@ In some cases, the `Web3.py` library may fail to install due to the need for Mic
 ### Update Conda Environment
 
 An out-of-date Anaconda environment can create issues when trying to install new packages. Follow the below steps to update your conda environment.
+
+**Important Note:** Windows users **MUST** use the _Anaconda Prompt_ to run these commands.
 
 1. Deactivate your current conda environment. This is required in order to update the global conda environment. Be sure to quit any running applications, such as Jupyter, prior to deactivating the environment.
 
