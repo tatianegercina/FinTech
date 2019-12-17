@@ -39,8 +39,8 @@ By the end of class, students will be able to:
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
-* To watch an example class lecture, go here: [3.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=10e7097d-5905-4c40-b413-aaa600dbb8ee) Note that this video may not reflect the most recent lesson plan.
 
+* To watch an example class lecture, go here: [3.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=10e7097d-5905-4c40-b413-aaa600dbb8ee) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
 
@@ -56,7 +56,7 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome and Refresher Demo (5 min)
 
-In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
+In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns. Data for this activity will be retrieved from Google Sheets via the in-built Google Finance function.
 
 Welcome students to the second day of Pandas and use the slides to explain the focus of today's class.
 
@@ -66,39 +66,41 @@ Welcome students to the second day of Pandas and use the slides to explain the f
 
 Introduce the refresher demo on returns.
 
-* The following demo will show how to extract historical ticker data from NASDAQ.com as a CSV. The goal is to get students to understand that all of the data they need to perform ROI analysis is just a few clicks away.
+* The following demo will show how to extract historical ticker data from Google Sheets via the Google Finance function as a CSV. The goal is to get students to understand that all of the data they need to perform ROI analysis is just a few clicks away.
 
-* Using NASDAQ.com, students can leverage historical stock data to keep a running tab on daily returns for specific stocks.
+* Using Google Finance, students can leverage historical stock data to keep a running tab on daily returns for specific stocks.
 
-* Students will watch and follow along to navigate the NASDAQ site.
+* Students will watch and follow along to navigate the Google Sheets website.
 
 Walk students through the following steps.
 
-* Navigate to the [NASDAQ](https://nasdaq.com) website. Use the search bar to enter in the name or ticker of a stock. This example uses Facebook.
+* Navigate to the [Google Sheets](https://docs.google.com/spreadsheets/) website. Then open a new spreadsheet.
 
-  ![nasdaq_search.png](Images/nasdaq_search.png)
+  ![new-google-sheet.png](Images/new-google-sheet.png)
 
-* Use the left-hand navigation pane to select Historical Quote. This link will open a web UI that can be used to select the time range of data that you need.
+* Use the Google Finance in-built function to extract historical stock data from within Google Sheets. The function takes in five input parameters:
 
-  ![launch_historical.png](Images/launch_historical.png)
+  ![google-finance-sheet.png](Images/google-finance-sheet.png)
 
-* Choose the NASDAQ Official Close Price page.
+  * `ticker`: The ticker symbol for the security to consider.
 
-  * NASDAQ provides a simplified view of ticker prices with the NASDAQ Official Close Price page. This page provides access to ticker close prices.
+  * `attribute`: The attribute to fetch about `ticker` from Google Finance.
 
-  * NASDAQ also provides flexibility for extracting additional data elements as well (open price, high price, etc.).
+  * `start_date`: The start date when fetching historical data.
 
-  ![nasdaq_layout.png](Images/nasdaq_layout.png)
+  * `end_date`: The end date when fetching historical data, or the number of days from `start_date` for which to return data.
 
-* Select 3 months as the timeframe.
+  * `interval`: The frequency of returned data; either "DAILY" or "WEEKLY".
 
-  ![select_timeframe.png](Images/select_timeframe.png)
+* Type in the following for the Google Finance function: `=GOOGLEFINANCE("FB", "price", "1/1/2014", "12/31/2018", "DAILY")`. The data should populate within the Google Sheet.
 
-* Scroll down and right-click on the **Download all available data** link. Click **Save link as**.
+  ![fb-google-finance-extract](Images/fb-google-finance-extract.png)
 
-* Choose a folder and name the file `fb_nasdaq.csv`. Click **Save**.
+* Rename the file as `fb_google_finance` and then download and save the file as a CSV.
 
-  ![fb_nasdaq.png](Images/fb_nasdaq.png)
+  ![fb-google-finance-csv](Images/fb-google-finance-csv.png)
+
+  **Note:** The downloaded file may have to be renamed again as the Google Sheets appends the current sheet name to the file, for example `fb_google_finance - Sheet1.csv`.
 
 * Load the saved file into Pandas and output the data to the screen.
 
