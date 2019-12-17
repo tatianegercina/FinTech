@@ -68,7 +68,7 @@ Introduce the refresher demo on returns.
 
 * The following demo will show how to extract historical ticker data from Google Sheets via the Google Finance function as a CSV. The goal is to get students to understand that all of the data they need to perform ROI analysis is just a few clicks away.
 
-* Using Google Finance, students can leverage historical stock data to keep a running tab on daily returns for specific stocks.
+* Using Google Sheets with the in-built Google Finance function, students can leverage historical stock data to keep a running tab on daily returns for specific stocks.
 
 * Students will watch and follow along to navigate the Google Sheets website.
 
