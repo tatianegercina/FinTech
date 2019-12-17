@@ -110,6 +110,10 @@ Walk students through the following steps.
 
   **Note:** The downloaded file may have to be renamed again as the Google Sheets appends the current sheet name to the file, for example `fb_google_finance - Sheet2.csv`.
 
+* Open the file in Excel and format the numerical date values in proper date formatting.
+
+  ![google-finance-format-in-excel](Images/google-finance-format-in-excel.png)
+
 * Load the saved file into Pandas and output the data to the screen.
 
 * Use the `index_col`, `parse_dates`, and `infer_datetime_format` attributes to create a DatetimeIndex (based on `Trader DATE`) for date range manipulation. These attributes are used to ensure that Pandas interprets the date index as a date object.
