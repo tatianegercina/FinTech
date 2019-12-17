@@ -96,11 +96,19 @@ Walk students through the following steps.
 
   ![fb-google-finance-extract](Images/fb-google-finance-extract.png)
 
+* Then, create a new Google Sheet tab and copy and paste the historical stock data into the new tab. Make sure to "paste values only" otherwise the data will not download correctly.
+
+  ![google-finance-copy-hard-paste](Images/google-finance-copy-hard-paste.png)
+
+  ![google-finance-epoch-date](Images/google-finance-epoch-date.png)
+
+  **Note:** Due to the copy and paste of values only, the date values will be represented in numerical format. Therefore, they will have to be re-formatted as date values after downloading the CSV and editing in Excel. 
+
 * Rename the file as `fb_google_finance` and then download and save the file as a CSV.
 
   ![fb-google-finance-csv](Images/fb-google-finance-csv.png)
 
-  **Note:** The downloaded file may have to be renamed again as the Google Sheets appends the current sheet name to the file, for example `fb_google_finance - Sheet1.csv`.
+  **Note:** The downloaded file may have to be renamed again as the Google Sheets appends the current sheet name to the file, for example `fb_google_finance - Sheet2.csv`.
 
 * Load the saved file into Pandas and output the data to the screen.
 
