@@ -169,7 +169,7 @@ Discuss the following review questions with the class.
 
   * **0x** - a protocol that allows the creation of decentralized crypto exchanges on the Ethereum blockchain using smart contracts for negotiation between users.
 
-  * **Gemini Dollar (GUSD)** - the first federally regulated stablecoin the Gemini dolllar is issued by the Gemini Trust Company, LLC, a New York trust company. Each GUSD is backed by one USD.
+  * **Gemini Dollar (GUSD)** - the first federally regulated stablecoin the Gemini dollar is issued by the Gemini Trust Company, LLC, a New York trust company. Each GUSD is backed by one USD.
 
   * **Hedge** - a platform that creates a market for knowledge on best trading practices, allows users to trade their current market analysis for an equivalent amount of value.
 
