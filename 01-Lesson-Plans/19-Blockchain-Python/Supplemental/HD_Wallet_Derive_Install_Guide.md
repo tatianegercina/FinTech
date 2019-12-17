@@ -1,12 +1,14 @@
 # HD Derive Wallet Install Guide
 
-This guide serves as a step by step process for setting up the `hd-wallet-derive` library used to derive BIP32 addresses and private keys for Bitcoin and other alternative coins or "altcoins".
+This guide serves as a step by step process for setting up the [`hd-wallet-derive` library](https://github.com/dan-da/hd-wallet-derive) used to derive `BIP32` addresses and private keys for Bitcoin and other alternative coins or "altcoins".
 
 ## Environment Setup
 
 The `hd-wallet-derive` library is written in the PHP language; therefore you will be required to first set up PHP on your machines before installing and then running the `hd-wallet-derive` library.
 
 **Note:** For the Windows installation, we will be using the XAMPP package, while for the Mac OS X installations, we will be using Homebrew. The reasoning for this is because the XAMPP installation on MAC OS X does not provide a clearly defined path to the PHP installation, which is necessary for using the PHP CLI.
+
+### Environment Setup in Microsoft Windows Operating System
 
 For those with a **Windows operating system**, execute the following steps:
 
@@ -61,31 +63,55 @@ extension=php_gmp.dll
 
   ![phpinfo-test](Images/phpinfo-test.PNG)
 
+### Environment Setup in OS X Operating System
+
 For those with a **Mac OS X operating system**, execute the following steps:
 
-* Mac OS X already comes pre-built with PHP and the Apache Web Server; however, we will need to upgrade the PHP version to 7.3. Therefore, to do so, make sure that Homebrew, a package manager for Mac OS, is installed on your Mac OS machine. If not, visit the [Homebrew website](https://brew.sh/) and install Homebrew using the given install command.
+* Mac OS X already comes pre-built with PHP and the Apache Web Server; however, we will need to upgrade the PHP version to 7.3.
 
-  ![homebrew-install](Images/homebrew-install.png)
-
-* Once Homebrew is installed, execute the following command in your terminal. This should install the latest version of PHP (7.3 at this current time).
+* Open the terminal and execute the following command to download and install PHP version 7.3.
 
   ```shell
-  brew install php@7.3
+  curl -s https://php-osx.liip.ch/install.sh | bash -s 7.3
   ```
 
-* Then, in order to point to the newest version of PHP, export the following path to your `PATH` environment variable. This will allow you to run the command `php` from anywhere in your terminal and point to the Homebrew version that was just installed.
+* You will be asked to type your password to install the software package.
+
+  ![PHP OS X install - 1](Images/php-os-x-1.png)
+
+* Once the installation finishes, execute the following command in the terminal to edit your `.bash_profile` in the `nano` text editor.
 
   ```shell
-  export PATH=/usr/local/opt/php@7.3/bin:$PATH
+  nano ~/.bash_profile
   ```
 
-* Append this to your `.bash_profile` by running the following (or manually edit the file):
+* The `nano` text editor will be opened, scroll down to the end of the file and add the following commands to point to the newest version of PHP globally in your system.
 
   ```shell
-  echo "export PATH=/usr/local/opt/php@7.3/bin:$PATH" >> ~/.bash_profile
+  # PHP Path Config
+  export PATH=/usr/local/php5/bin:$PATH
+  export PATH
   ```
 
-* Next, test that the newest version of PHP is working correctly by first creating a test PHP script called `phpinfo.php` and then executing the following command.
+  ![PHP OS X install - 2](Images/php-os-x-2.png)
+
+* Save the changes by pressing the `CONTROL + O` keys combination. Next, exit `nano` by pressing the `CONTROL + X` keys combination.
+
+* Execute the following command to reload your `bash_profile`.
+
+  ```shell
+  source ~/.bash_profile
+  ```
+
+* Close and reopen the terminal. Next, verify that PHP version 7.3 is the current version in your system by executing the following command:
+
+  ```shell
+  php -version
+  ```
+
+  ![PHP OS X install - 3](Images/php-os-x-3.png)
+
+* Test that the newest version of PHP is working correctly by first creating a test PHP script called `phpinfo.php` with the following code.
 
   ```php
   <?php
@@ -96,6 +122,8 @@ For those with a **Mac OS X operating system**, execute the following steps:
   ?>
   ```
 
+* Next, execute the following command from the terminal.
+
   ```shell
   php -S localhost:8000 phpinfo.php
   ```
@@ -104,9 +132,11 @@ For those with a **Mac OS X operating system**, execute the following steps:
 
   ![php-terminal](Images/php-terminal.png)
 
+* Open your web browser and navigate to [`http://localhost:8000/`](http://localhost:8000/); you should see the following page with the current PHP configuration in your system.
+
   ![php-test](Images/php-test.png)
 
-## Installation
+## hd-wallet-derive Installation
 
 Now that the latest version of PHP is installed on our machines, we can now proceed to the installation of the `hd-wallet-derive` library.
 
@@ -127,9 +157,9 @@ Execute the following steps:
 
 * You should now have a folder called `hd-wallet-derive` containing the PHP library.
 
-## Execution
+## hd-wallet-derive Execution
 
-Last step! Execute the `hd-wallet-derive` library to derive BIP32 addresses and private keys for Bitcoin and other alternative coins.
+Last step! Execute the `hd-wallet-derive` library to derive `BIP32` addresses and private keys for Bitcoin and other alternative coins.
 
 * Navigate to your `hd-wallet-derive` folder.
 
