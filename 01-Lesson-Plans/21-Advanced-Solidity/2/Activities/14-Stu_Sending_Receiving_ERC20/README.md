@@ -20,7 +20,7 @@ In this activity, you will partner up with a neighbor, and transact your tokens 
 
   ![Mint tokens](Images/mint.png)
 
-* Send tokens to your neighbor by selecting the token in MetaMask, and clicking `Send`, and pasting your partner's address.
+* Send tokens to your neighbor by selecting the token in MetaMask, clicking `Send`, and pasting your partner's address.
 
 ![ARCD Send](Images/arcd-send.gif)
 
