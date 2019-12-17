@@ -7,10 +7,9 @@ pragma solidity ^0.5.0;
 /*
 This is a multi-line comment.
 You can comment out many lines at once.
-For the most part you will see single line comments but it is good to see this.
+For the most part, you will see single-line comments, but it is good to see this.
 
-As in single line comments, any code contained within multi-line comments
-are not executed.
+As in single-line comments, any code contained within multi-line comments is not executed.
 */
 
 contract TravelExpenses {
