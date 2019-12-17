@@ -116,14 +116,12 @@ Walk students through the following steps.
 
   ![google-finance-finished-format](Images/google-finance-finished-format.png)
 
-* Load the saved file into Pandas and output the data to the screen.
-
-* Use the `index_col`, `parse_dates`, and `infer_datetime_format` attributes to create a DatetimeIndex (based on `Trader DATE`) for date range manipulation. These attributes are used to ensure that Pandas interprets the date index as a date object.
+* Next, load the saved file into Pandas and use the `index_col`, `parse_dates`, and `infer_datetime_format` attributes to create a DatetimeIndex (based on `Date`) for date range manipulation. These attributes are used to ensure that Pandas interprets the date index as a date object.
 
   ```python
   # Read in CSV data
-  csv_path = Path('../Resources/fb_nasdaq.csv')
-  fb_ticker_data = pd.read_csv(csv_path, index_col='Trade DATE', parse_dates=True, infer_datetime_format=True)
+  csv_path = Path('Resources/fb_google_finance.csv')
+  fb_ticker_data = pd.read_csv(csv_path, index_col='Date', parse_dates=True, infer_datetime_format=True)
   fb_ticker_data.head()
   ```
 
