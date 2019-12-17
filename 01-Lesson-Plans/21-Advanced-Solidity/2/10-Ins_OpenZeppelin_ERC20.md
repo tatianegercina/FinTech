@@ -16,6 +16,8 @@ Explain why we are starting with ERC20 to the students:
 
   * ERC20 tokens are plentiful in the wild, and are implemented by stablecoins like Coinbase's USDC and Gemini's GUSD, so it is important to understand how they are structured.
 
+  * ERC777 depends another contract defined in EIP1820 to be deployed onto our network, so we'll worry about that later.
+
 Open [Remix](https://remix.ethereum.org) and create a new file called `ArcadeTokenERC20.sol`, and start with the following boilerplate:
 
 ```solidity

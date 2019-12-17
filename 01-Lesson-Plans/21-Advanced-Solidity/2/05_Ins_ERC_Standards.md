@@ -12,12 +12,11 @@ In this activity, students will be introduced to various ERC standards. Students
 
   * EIP 20: ERC20 Fungible Token Standard
 
-  ** EIP 721: ERC721 Non-Fungible Token Standard
+  * EIP 721: ERC721 Non-Fungible Token Standard
 
-  ** EIP 777: ERC777 Fungible Token Standard
+  * EIP 777: ERC777 Fungible Token Standard
 
-  ** EIP 1155: ERC1155 Multi-Token Standard
-
+  * EIP 1155: ERC1155 Multi-Token Standard
 
 Click the following link to review the list of [Ethereum Improvement Proposals](https://eips.ethereum.org).
 
