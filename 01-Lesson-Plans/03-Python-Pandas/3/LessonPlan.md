@@ -114,6 +114,8 @@ Walk students through the following steps.
 
   ![google-finance-format-in-excel](Images/google-finance-format-in-excel.png)
 
+  ![google-finance-finished-format](Images/google-finance-finished-format.png)
+
 * Load the saved file into Pandas and output the data to the screen.
 
 * Use the `index_col`, `parse_dates`, and `infer_datetime_format` attributes to create a DatetimeIndex (based on `Trader DATE`) for date range manipulation. These attributes are used to ensure that Pandas interprets the date index as a date object.
