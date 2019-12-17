@@ -6,7 +6,7 @@ Therefore, you will create a `DayTradingAccount` smart contract that utilizes ti
 
 ## Instructions
 
-Open [Remix](http://remix.ethereum.org/), import the [starter file](Unsolved/DayTradingAccount.sol) and perform the following code drills. Once you finish, compile and deploy the contract to ensure the code works.
+Open [Remix](http://remix.ethereum.org/), import the [starter file](Unsolved/DayTradingAccount.sol) and perform the following code drills. Once you finish, compile, and deploy the contract to ensure the code works.
 
 1. Create a contract called `DayTradingAccount` that contains:
 
@@ -18,11 +18,11 @@ Open [Remix](http://remix.ethereum.org/), import the [starter file](Unsolved/Day
 
 3. Create a public payable `deposit` function and a fallback function.
 
-4. Create a public view `getBalance` function that returns the balance within the contract.
+4. Create a public view of `getBalance` function that returns the balance within the contract.
 
 5. Create a public `withdraw` function that...
 
-    * Inputs a payable address varaible `recipient` as the first parameter.
+    * Inputs a payable address variable `recipient` as the first parameter.
 
     * Inputs a uint variable `amount` as the second parameter.
 
