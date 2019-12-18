@@ -8,13 +8,11 @@ One of the key methods used to conduct corporate analysis is the **case study**.
 
 In this homework assignment, you will:
 
-* Select a Fintech domain that interests you, and then choose a company or project within that domain. 
+* Select a Fintech domain that interests you, and then choose a company or project within that domain.
 
 * Research the domain and company.
 
 * Write a detailed case study of the company.
-
-* Prepare and deliver a short presentation of your case study to the class. (You will give the presentation in class next week.)
 
 * Upload your case study to your git repository.
 
@@ -54,27 +52,27 @@ This assignment will challenge you to polish your FinTech research skills by acc
 
 * Robo-advising
 
-Remember that because FinTech is an evolving field, different FinTech reports may use different names and definitions for various domains and sectors (e.g., CB Insights, Investopedia, Accenture). In addition, you may come across lists of FinTech domains online that are either longer or shorter than the list above; there is no one comprehensive list. 
+Remember that because FinTech is an evolving field, different FinTech reports may use different names and definitions for various domains and sectors (e.g., CB Insights, Investopedia, Accenture). In addition, you may come across lists of FinTech domains online that are either longer or shorter than the list above; there is no one comprehensive list.
 
-#### 2. Choose a company (or project) within  your chosen Fintech domain. 
+#### 2. Choose a company (or project) within  your chosen Fintech domain.
 
 Use online research to identify the trends in your domain, and choose a company that is successful or otherwise interesting to you. For example, if you chose Wealth Management, you may want to look at online journals, periodicals, reports, and websites about the future of Wealth Management, or how FinTech is changing or disrupting Wealth Management.
 
 Your company could be:
 
-* A new, emerging FinTech company that is doing well in a particular domain. Examples include Square, Plaid, Lemonade, RobinHood, and Coinbase. 
+* A new, emerging FinTech company that is doing well in a particular domain. Examples include Square, Plaid, Lemonade, RobinHood, and Coinbase.
 
 * A large incumbent financial or technology company that is doing something interesting and new with technology. Examples include Goldman Sachs’ Marcus, JP Morgan’s JPMCoin, Facebook Libra, and Apple Card.
 
 * A smaller start-up that is not yet wildly successful, but that you find promising and interesting. This may include a FinTech company in your local area or a company with a new idea that you would like to learn more about.
 
-#### 3. Conduct your research, using the case study template as a guide. 
+#### 3. Conduct your research, using the case study template as a guide.
 
-We recommend that you use the case study template below in order to focus your research. You may lengthen, shorten, or––if necessary––remove sections from the template to accommodate the information available about your company. 
+We recommend that you use the case study template below in order to focus your research. You may lengthen, shorten, or––if necessary––remove sections from the template to accommodate the information available about your company.
 
 **Note** If you have chosen a project within a larger company (such as the Apple Credit Card), you may want to focus your research on the origins and scope of the project rather than on the company itself.
 
-**Case Study Template** 
+**Case Study Template**
 
 ```
 # TITLE
@@ -122,26 +120,23 @@ What solution does this company offer that their competitors do not or cannot of
 
 ## Recommendations
 
-* If you were to advise the company, what products or services would you suggest they offer? (This could be something that a competitor offers, or use your imagination!) 
+* If you were to advise the company, what products or services would you suggest they offer? (This could be something that a competitor offers, or use your imagination!)
 
 * Why do you think that offering this product or service would benefit the company?
 
-* What technologies would this additional product or service utilize? 
+* What technologies would this additional product or service utilize?
 
 * Why are these technologies appropriate for your solution?
 ```
 
-#### 4. Write the case study. 
+#### 4. Write the case study.
 
-Write the finished case study report in a markdown `README.md` file, using the above case study template. Your report should be approximately 5–8 pages long to ensure you provide all relevant information.
+Write the finished case study report in a markdown `README.md` file, using the above case study template. Your report should be sufficiently long to ensure you provide all relevant information about the company or project in a thorough manner.
 
-Be sure to cite your sources in an addendum on the final page. List all websites, podcasts, blogs, or articles that you consulted in order to write the report, and provide links. Your list should be thorough and account for all sources you used, but it does not need to be a formal works cited page. 
+Be sure to cite your sources in an addendum at the end of the report. List all websites, podcasts, blogs, or articles that you consulted in order to write the report, and provide links. Your list should be thorough and account for all sources you used, but it does not need to be a formal works cited page.
 
-#### 5. Present your findings.
 
-Create a short slideshow that summarizes the information in your case study report and present it to the class. Plan on having 1 or 2 slides for each of the 5 sections of the template. Your presentation should be no more than 5 minutes. 
-
-#### 6. Upload your case study to your git repository.
+#### 5. Upload your case study to your git repository.
 
 You learned some technical aspects of FinTech this week, including how to set up and populate a git repository. As a final step, take your finished case study and upload it to a repository to share with your instructor and class.
 
@@ -151,7 +146,7 @@ You learned some technical aspects of FinTech this week, including how to set up
 
 ### FinTech Companies and Domains
 
-For an overview of some of the most successful companies across FinTech domains, check out these resources: 
+For an overview of some of the most successful companies across FinTech domains, check out these resources:
 
 * [The 11 Biggest FinTech Companies in America 2019, Forbes](https://www.forbes.com/sites/jeffkauflin/2019/02/04/the-10-biggest-fintech-companies-in-america-2019/#5e6a3bc932b9)
 
@@ -177,7 +172,7 @@ As you research your company, you may find these types resources to be useful:
 
 * The company’s blog
 
-* Company press releases (These can often be found on the Press page of the company's website, or via Google search.) 
+* Company press releases (These can often be found on the Press page of the company's website, or via Google search.)
 
 * Websites of competitors
 
@@ -217,10 +212,8 @@ As you research your company, you may find these types resources to be useful:
 
 * Upload the README file containing your case study report to this repository.
 
-* Include your presentation slideshow or a link to an online slideshow such as Google Slides. Make sure that the slideshow can be viewed by anyone.
-
 * Submit the link to your GitHub repository to Bootcamp Spot.
 
-- - - 
+- - -
 
 © 2019 Trilogy Education Services
