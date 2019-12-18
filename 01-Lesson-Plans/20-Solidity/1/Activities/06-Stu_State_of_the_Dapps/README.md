@@ -33,4 +33,5 @@ The goal of this activity is to get familiarized with the diversity of dApps tha
 6. Choose one of the dApps analyzed to be shared with the class as a compelling use case.
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
