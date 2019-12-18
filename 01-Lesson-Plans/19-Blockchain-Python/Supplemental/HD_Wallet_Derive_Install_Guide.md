@@ -6,7 +6,7 @@ This guide serves as a step by step process for setting up the [`hd-wallet-deriv
 
 The `hd-wallet-derive` library is written in the PHP language; therefore you will be required to first set up PHP on your machines before installing and then running the `hd-wallet-derive` library.
 
-**Note:** For the Windows installation, we will be using the XAMPP package, while for the Mac OS X installations, we will be using Homebrew. The reasoning for this is because the XAMPP installation on MAC OS X does not provide a clearly defined path to the PHP installation, which is necessary for using the PHP CLI.
+**Note:** For the Windows installation, we will be using the XAMPP package, while for the Mac OS X installations, we will update the pre-build PHP version up to `v7.3`.
 
 ### Environment Setup in Microsoft Windows Operating System
 
@@ -20,29 +20,29 @@ For those with a **Windows operating system**, execute the following steps:
 
   ![XAMPP-install](Images/XAMPP-install.PNG)
 
-* Then, once the XAMPP package is installed, navigate to the folder where the PHP binaries are installed. This should be at `C:\xampp\php`.
+* Then, once the XAMPP package is installed, navigate to the folder where the PHP binaries are located. This should be at `C:\xampp\php`.
 
   ![xampp-path](Images/xampp-path.PNG)
 
-*  Edit the `php.ini` file (`C:\xampp\php\php.ini`) and add the following line to the file:
+* Edit the `php.ini` file (`C:\xampp\php\php.ini`) using Notepad and add the following line at the end of the file:
 
-```shell
-extension=php_gmp.dll
-```
+  ```shell
+  extension=php_gmp.dll
+  ```
 
 * This will enable a necessary PHP extension that `hd-wallet-derive` relies on.
 
-* Next, navigate to the System Environment Variables and edit the `Path` environment variable; add the path containing the PHP binaries to the end of the `Path` environment variable.
+* Next, navigate to the System Environment Variables in the Control Panel and edit the `Path` environment variable; add the path containing the PHP binaries (`C:\xampp\php`) to the end of the `Path` environment variable.
 
   ![start-menu-environment-search](Images/start-menu-environment-search.PNG)
 
-  ![environment-menu](environment-menu.PNG)
+  ![environment-menu](Images/environment-menu.PNG)
 
   ![environment-variables](Images/environment-variables.PNG)
 
   ![environment-path-edit](Images/environment-path-edit.PNG)
 
-* Lastly, test that the newest version of PHP is working by first creating a test PHP script called `phpinfo.php` and then executing the following command.
+* Test that the newest version of PHP is working by first creating a test PHP script called `phpinfo.php` with the following code.
 
   ```php
   <?php
@@ -53,6 +53,8 @@ extension=php_gmp.dll
   ?>
   ```
 
+* Next, execute the following command from the `git-bash` (close any `git-bash` terminal window opened and open a new one if this is your case).
+
   ```shell
   php -S localhost:8000 phpinfo.php
   ```
@@ -60,6 +62,8 @@ extension=php_gmp.dll
 * The terminal should output the following and spin up a web server to showcase the results of the test `phpinfo` script. If you see the following output, then congratulations! Your machine is now updated to the newest version of PHP!
 
   ![php-terminal-windows](Images/php-terminal-windows.PNG)
+
+* Open your web browser and navigate to [`http://localhost:8000/`](http://localhost:8000/); you should see the following page with the current PHP configuration in your system.
 
   ![phpinfo-test](Images/phpinfo-test.PNG)
 
