@@ -6,7 +6,7 @@ This guide serves as a step by step process for setting up the [`hd-wallet-deriv
 
 The `hd-wallet-derive` library is written in the PHP language; therefore you will be required to first set up PHP on your machines before installing and then running the `hd-wallet-derive` library.
 
-**Note:** For the Windows installation, we will be using the XAMPP package, while for the Mac OS X installations, we will update the pre-build PHP version up to `v7.3`.
+**Note:** For the Windows installation, we will be using the XAMPP package, while for the Mac OS X installation, we will have two options; you can update the pre-build PHP version up to `v7.3` or you can use Homebrew.
 
 ### Environment Setup in Microsoft Windows Operating System
 
@@ -69,7 +69,11 @@ For those with a **Windows operating system**, execute the following steps:
 
 ### Environment Setup in OS X Operating System
 
-For those with a **Mac OS X operating system**, execute the following steps:
+For those with a **Mac OS X operating system**, there are two options to install PHP, you can update the OS X pre-built PHP version up to `v7.3`, or you can use the Homebrew package manager. Both methods work great, your choice will depend on weather or not you want or have the rights to use Homebrew in your computer; some corporate computers have policies that restrict the usage of third-party package managers like Homebrew.
+
+#### Option 1: Installing PHP by Updating the Pre-Built PHP in Mac OS X
+
+To update the pre-built version of PHP in OS X execute the following steps:
 
 * Mac OS X already comes pre-built with PHP and the Apache Web Server; however, we will need to upgrade the PHP version to 7.3.
 
@@ -140,6 +144,55 @@ For those with a **Mac OS X operating system**, execute the following steps:
 
   ![php-test](Images/php-test.png)
 
+#### Option 2: Installing PHP Using the Homebrew Package Manager
+
+To install PHP in Mac OS X using Homebrew execute the following steps:
+
+* Mac OS X already comes pre-built with PHP and the Apache Web Server; however, we will need to upgrade the PHP version to 7.3. Therefore, to do so, make sure that Homebrew, a package manager for Mac OS, is installed on your Mac OS machine. If not, visit the [Homebrew website](https://brew.sh/) and install Homebrew using the given install command.
+
+  ![homebrew-install](Images/homebrew-install.png)
+
+* Once Homebrew is installed, execute the following command in your terminal. This should install the latest version of PHP (7.3 at this current time).
+
+  ```shell
+  brew install php@7.3
+  ```
+
+* Then, in order to point to the newest version of PHP, export the following path to your `PATH` environment variable. This will allow you to run the command `php` from anywhere in your terminal and point to the Homebrew version that was just installed.
+
+  ```shell
+  export PATH=/usr/local/opt/php@7.3/bin:$PATH
+  ```
+
+* Append this to your `.bash_profile` by running the following (or manually edit the file):
+
+  ```shell
+  echo "export PATH=/usr/local/opt/php@7.3/bin:$PATH" >> ~/.bash_profile
+  ```
+
+* Next, test that the newest version of PHP is working correctly by first creating a test PHP script called `phpinfo.php` and then executing the following command.
+
+  ```php
+  <?php
+
+  // Show all information, defaults to INFO_ALL
+  phpinfo();
+
+  ?>
+  ```
+
+  ```shell
+  php -S localhost:8000 phpinfo.php
+  ```
+
+* The terminal should output the following and spin up a web server to showcase the results of the test `phpinfo` script. If you see the following output, then congratulations! Your machine is now updated to the newest version of PHP!
+
+  ![php-terminal](Images/php-terminal.png)
+
+* Open your web browser and navigate to [`http://localhost:8000/`](http://localhost:8000/); you should see the following page with the current PHP configuration in your system.
+
+  ![php-test](Images/php-test.png)
+
 ## hd-wallet-derive Installation
 
 Now that the latest version of PHP is installed on our machines, we can now proceed to the installation of the `hd-wallet-derive` library.
@@ -150,13 +203,13 @@ Execute the following steps:
 
   ![hd-wallet-derive-github](Images/hd-wallet-derive-github.png)
 
-* Next, open a terminal and execute the following commands. If you are using Windows, you will need to open the Git-Bash GUI via `C:\Program Files\Git\bin\bash` directly to enable something called `tty` mode that makes the terminal more compatible with Unix systems. Once installed, you may move back to using the usual Git-Bash terminal.
+* Next, open a terminal and execute the following commands. If you are using Windows, you will need to open the `git-bash` GUI via `C:\Program Files\Git\bin\bash.exe` directly to enable something called `tty` mode that makes the terminal more compatible with Unix systems. Once installed, you may move back to using the usual `git-bash` terminal.
 
   ```shell
   git clone https://github.com/dan-da/hd-wallet-derive
   cd hd-wallet-derive
   php -r "readfile('https://getcomposer.org/installer');" | php
-  php composer.phar install
+  php -d pcre.jit=0 composer.phar install
   ```
 
 * You should now have a folder called `hd-wallet-derive` containing the PHP library.
