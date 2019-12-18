@@ -12,3 +12,7 @@ allowing for reusable code and better code style.
 * In the body of the `constructor`, set `account_one` and `account_two` to equal the respective parameters.
 
 * Remove the hardcoded address value from the account owner variables, but keep the variable definitions like the others!
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

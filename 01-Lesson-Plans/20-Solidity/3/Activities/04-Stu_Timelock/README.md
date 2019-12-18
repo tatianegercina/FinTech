@@ -16,3 +16,7 @@ that will lock the contract for 24 hours after withdrawing.
 ## Hints
 
 * To see what time units are available, with even more details, visit the [Solidity documentation.](https://solidity.readthedocs.io/en/latest/units-and-global-variables.html)
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -13,3 +13,7 @@ balance.
 
 * You can access the current balance of the contract by using `address(this).balance`. In this case, `this` is the contract
   and it is being converted into the `address` type, and all `address`es have the `.balance` function available.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
