@@ -43,7 +43,7 @@ By the end of the unit, students will be able to:
 
 ### Instructor Notes
 
-* Today's class will be a challenging one as student start to dig deeper into advanced Solidity concepts. Take plenty of time to cover and review the new concepts in today's class.
+* Today's class will be a challenging one as students start to dig deeper into advanced Solidity concepts. Take plenty of time to cover and review the new concepts in today's class.
 
 * Reassure students that as they practice Solidity, they will begin to see common patterns in the code. Many of the examples show this week can be reused in other smart contract applications.
 
@@ -107,11 +107,11 @@ Begin by giving the students some background on tokens and how they can be utili
 
 * Since tokens are built using smart contracts they can be programmed to do many things besides just payments.
 
-* By tokenizing things, we can make representing and trading value extremely easy and efficient. Since they are blockchain powered, these tokens can be traded globally without any additional infrastructure.
+* By tokenizing things, we can make representing and trading value extremely easy and efficient. Since they are blockchain-powered, these tokens can be traded globally without any additional infrastructure.
 
-* Representing commodities as tokens allows for easy transportation of ownership. For example, transferring a metric ton of gold takes a lot of energy. Sending tokens representing that metric ton of gold is much easier, and allows for the same borderless nature given by the blockchain.
+* Representing commodities as tokens allow for easy transportation of ownership. For example, transferring a metric ton of gold takes a lot of energy. Sending tokens representing that metric ton of gold is much easier, and allows for the same borderless nature given by the blockchain.
 
-* Imagine opening up your cryptowallet to see all the various assets you own in a single place, digital and physical. You could manage your house ownership, car payments, artwork, investments, video game items, and more with cryptographically provable math.
+* Imagine opening up your crypto wallet to see all the various assets you own in a single place, digital and physical. You could manage your house ownership, car payments, artwork, investments, video game items, and more with cryptographically provable math.
 
 * Business assets can easily be tracked and transferred, dramatically improving liquidity and auditability.
 
@@ -189,11 +189,11 @@ This activity shows students how to build a simple token with Solidity.
 
 * [ArcadeToken.sol](Activities/05-Ins_Mappings/Unsolved/ArcadeToken.sol)
 
-Now that we are familiar with the concept of tokens, let's build one!
+Now that we are familiar with the concept of tokens let's build one!
 
 * In order to build a token with Solidity, we need to learn one more data structure, called a `mapping`.
 
-* You can think of a mapping as a `mapping` between two variables. For instance, you can *map* an address to a balance.
+* You can think of mapping as a `mapping` between two variables. For instance, you can *map* an address to a balance.
 
 * You can map a customer ID to an address, or vice versa. They can even be nested, but we won't need to do that.
 
@@ -209,7 +209,7 @@ contract ArcadeToken {
 }
 ```
 
-* Let's say we owned an Arcade; we're going to have customers exchange Ether for tokens that can be spent to play games, redeem prizes, etc., at the arcade.
+* Let's say we owned an Arcade; we're going to have customers exchange Ether for tokens that can be spent to play games, redeem prizes, etc., at the Arcade.
 
 First, define a few variables to get the contract started:
 
@@ -225,9 +225,9 @@ contract ArcadeToken {
 
 * We are setting the owner of the ArcadeToken contract to the `msg.sender`. Since this is only called once during deployment, this will set ourselves us as the owner when we deploy later.
 
-* We are setting a `string public` called `symbol` to our token's ticker. MetaMask, and many other wallets and explorers will recognize the symbol as long as it is a public string.
+* We are setting a `string public` called `symbol` to our token's ticker. MetaMask and many other wallets and explorers will recognize the symbol as long as it is a public string.
 
-* Setting the `exchange_rate` to `100` represents the amount of tokens we will distribute per `wei` spent later.
+* Setting the `exchange_rate` to `100` represents the number of tokens that we will distribute per `wei` spent later.
 
 Next, we need to add a way of tracking ArcadeToken user balances. To do this, we will add a `mapping`:
 
@@ -245,9 +245,9 @@ contract ArcadeToken {
 
 Stop and explain the `mapping` data structure to the class:
 
-* Here we are setting a `mapping` of the type `address` to `uint`. This means that we can use an `address` as a key, and set a `uint` value associated with it.
+* Here we are setting a `mapping` of the type `address` to `uint`. This means that we can use an `address` as a key and set a `uint` value associated with it.
 
-* It is conceptually similar to an unordered list of key-value pairs, or a Python dictionary (key-value store), or a hash-table, but not as flexible since we set the types up front. They do not have a set limit to the number of values you can store, and adding or changing values does not cost more gas as the mapping grows. In fact, we are only limited by gas in regards to how much we can store per transaction and per block.
+* It is conceptually similar to an unordered list of key-value pairs, or a Python dictionary (key-value store), or a hash-table, but not as flexible since we set the types upfront. They do not have a set limit to the number of values you can store, and adding or changing values does not cost more gas as the mapping grows. In fact, we are only limited by gas in regards to how much we can store per transaction and per block.
 
 * Since this `mapping` pairs `address`es to `uint`s, we can associate any `address` with a balance stored in a `uint`.
 
@@ -282,11 +282,11 @@ function transfer(address recipient, uint value) public {
 }
 ```
 
-* We are adding a new function that called `transfer` that accepts a `recipient` and a `value`.
+* We are adding a new function called `transfer` that accepts a `recipient` and a `value`.
 
 * This function subtracts the value from the token balance of the sender, then adds that same value to the token balance of the recipient address.
 
-* As you can see, the logic here is actually just as simple as you would expect. Value moves from one address to another.
+* As you can see, the logic here is just as simple as you would expect. Value moves from one address to another.
 
 Note, this contract is currently vulnerable to something called an `integer underflow` attack and allows users to spend tokens they do not have. If students notice this, simply explain that we will add more security features later today to prevent spending with zero token balance.
 
@@ -304,7 +304,7 @@ function purchase() public payable {
 
 * We then multiply the `msg.value` by the `exchange_rate` we set earlier.
 
-* Next, we add the amount of tokens being purchased to the token balance of the `msg.sender` by changing the value in the `balances mapping`.
+* Next, we add the number of tokens being purchased to the token balance of the `msg.sender` by changing the value in the `balances mapping`.
 
 * Finally, we transfer the Ether to ourselves via the `owner.transfer(msg.value)` call.
 
@@ -321,7 +321,7 @@ function mint(address recipient, uint value) public {
 }
 ```
 
-* This function accepts the same parameters as `transfer`, however it can only be called by the `owner` due to the `require`.
+* This function accepts the same parameters as `transfer`, however, it can only be called by the `owner` due to the `require`.
 
 * This way, whenever we need to mint new tokens as the owner, we can add value to any balance needed.
 
@@ -377,7 +377,7 @@ Open the solution and explain the following:
 
 * By setting an `exchange_rate`, we can reward/create tokens based on how much `wei` is sent to the `purchase` function, and then collect the Ether for ourselves, automatically!
 
-* In our `mint` function, we restrict the function to only allow ourselves (the `owner`) to create new tokens when we need to.
+* In our `mint` function, we restrict the function only to allow ourselves (the `owner`) to create new tokens when we need to.
 
 Ask for any remaining questions before moving on.
 
@@ -389,7 +389,7 @@ Ask for any remaining questions before moving on.
 
 ### 9. Instructor Do: Welcome Back to Class (5 min)
 
-Welcome the students back to the class. Allow them to settle in while asking a few recall questions:
+Welcome the students back to the class. Allow them to settle in a while, asking a few recall questions:
 
 * What is a `mapping`?
 
@@ -417,7 +417,7 @@ This demonstration shows students how to use the `SafeMath` from `OpenZeppelin` 
 
 Now it's time to make our tokens more secure. Briefly explain to the class:
 
-* The tokens that we have created so far are not actually secure.
+* The tokens that we have created so far are not secure.
 
 * We can make these secure by using a library called `SafeMath` from OpenZeppelin.
 
@@ -439,7 +439,7 @@ Fill in any address that is **different** from the current account in the `recip
 
 Hit `Transact`, confirm the transaction in MetaMask, then click on the `balance` function in the contract.
 
-You will notice that you have an extremely high balance of tokens, in fact, the maximum balance you could possibly have!
+You will notice that you have an extremely high balance of tokens; in fact, the maximum balance you could possibly have!
 
 ![Hacked Balance](Images/hacked_balance.png)
 
@@ -537,7 +537,7 @@ transact to ArcadeToken.transfer pending ...
 transact to ArcadeToken.transfer errored: Error: [ethjs-rpc] rpc error with payload {"id":559065790857,"jsonrpc":"2.0","params":["0xf8ab1a843b9aca00832dc6c094aa6b6a74aec9a4d05484c9841dd911b35838bb4180b844a9059cbb000000000000000000000000a29f7e79ecea4ce30dd78cfeb9605d9aff5143a50000000000000000000000000000000000000000000000000000000000000001822d45a0dc029786c5cb8efb0c75ed6d6c86db6f75e5e51af57e584f0df168e6d4fffbf0a069cabf26a54d320aaea8d68d98d02d296fbf80335200c6434b021f9324058ef7"],"method":"eth_sendRawTransaction"} [object Object]
 ```
 
-* Voila! Now are contract is secured against integer under/overflows.
+* Voila! Now our contract is secured against integer under/overflows.
 
 * Note, this will only work with `uint` currently, but we can declare it for `int` as well in the future.
 
@@ -551,7 +551,7 @@ Now it's time for students to secure their tokens!
 
 ### 11. Students Do: Using SafeMath (15 min)
 
-In this activity students will implement the SafeMath library and replace all math operations with the SafeMath alternatives.
+In this activity, students will implement the SafeMath library and replace all math operations with the SafeMath alternatives.
 
 Send out the instructions and have TAs circulate the class.
 
@@ -611,15 +611,15 @@ Send out the instructions to the students and have TAs circulate the class. Remi
 
 Clarify the activity a bit to the students:
 
-* In this activity we will incentivize loyal Arcade to users to collect `ARCD` tokens passively during regular Ether transactions that can later be used in the Arcade.
+* In this activity, we will incentivize loyal Arcade to users to collect `ARCD` tokens passively during regular Ether transactions that can later be used in the Arcade.
 
-* We will alter our contract to provide a system similar to credit card points that can be redeemed for cashback, in-store credits, etc. by adding a new function called `spend` that will collect a small transaction fee to the `owner` and forward the rest of the Ether to a `recipient`. Then, the contract will reward X amount of points for every wei spent.
+* We will alter our contract to provide a system similar to credit card points that can be redeemed for cash back, in-store credits, etc. by adding a new function called `spend` that will collect a small transaction fee to the `owner` and forward the rest of the Ether to a `recipient`. Then, the contract will reward X amount of points for every wei spent.
 
-* Say we actually ran an Arcade, or some other store or service. Loyal Arcade customers can spend their Ether with our contract and redeem the tokens back at the Arcade!
+* Say we ran an Arcade, or some other store or service. Loyal Arcade customers can spend their Ether with our contract and redeem the tokens back at the Arcade!
 
-* The contract owner collects a small Ether fee passively in return for the rewarded tokens, so capital is generated to provide these benefits. You could configure the reward system however you'd see fit.
+* The contract owner collects a small Ether fee passively in return for the rewarded tokens, so capital is generated to provide these benefits. You could configure the reward system; however, you'd see fit.
 
-Note: since Solidity does not support floating point numbers (decimals), a formula is provided in the instructions to calculate percentages from "basis points."
+Note: since Solidity does not support floating-point numbers (decimals), a formula is provided in the instructions to calculate percentages from "basis points."
 
 `1` basis point = `0.01%`. You can calculate a percentage by using `basis_points * some_number / 10000`.
 
@@ -665,17 +665,17 @@ Ask the students the following questions:
 
   * **Answer:** You could incentivize loyal users to return to your Arcade or business.
 
-  * **Answer:** You generate capital from small fees that allow you to further develop your business.
+  * **Answer:** You generate capital from small fees that allow you to develop your business further.
 
   * **Answer:** This works much like an annual credit card fee would, but instead collects passively.
 
-  * **Answer:** You only need to write the contract once, then you have the reward system in place. Less infrastructure cost for the business.
+  * **Answer:** You only need to write the contract once, then you have the reward system in place — less infrastructure cost for the business.
 
 * What are some downsides to this system?
 
-  * **Answer:** Some users won't be willing to pay an extra fee. In that case you may be able to remove it applicable for your business model.
+  * **Answer:** Some users won't be willing to pay an extra fee. In that case, you may be able to remove it, if applicable to your business model.
 
-  * **Answer:** Users have to pay extra gas to run the `spend` function vs paying Ether directly.
+  * **Answer:** Users have to pay extra gas to run the `spend` function vs. paying Ether directly.
 
   * **Answer:** It may be difficult to come up with a viable rewards system that works for your business.
 
