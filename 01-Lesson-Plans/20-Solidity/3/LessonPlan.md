@@ -80,9 +80,9 @@ In this activity, we will cover some globally available attributes and variables
 
 **Files:**
 
-* [Solved - GlobalAttributes.sol](Activities/03-Ins_Global_Attributes/Solved/GlobalAttributes.sol)
+* [Solved - GlobalAttributes.sol](Activities/01-Ins_Global_Attributes/Solved/GlobalAttributes.sol)
 
-* [Unsolved - GlobalAttributes.sol](Activities/03-Ins_Global_Attributes/Unsolved/GlobalAttributes.sol)
+* [Unsolved - GlobalAttributes.sol](Activities/01-Ins_Global_Attributes/Unsolved/GlobalAttributes.sol)
 
 Propose to the students:
 
@@ -248,11 +248,11 @@ In this activity, students will be adding the same details using `msg` and `bloc
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Global_Variables/README.md)
+* [README.md](Activities/02-Stu_Global_Variables/README.md)
 
 **Files:**
 
-* [Unsolved - GlobalAttributes.sol](Activities/04-Stu_Global_Variables/Unsolved/GlobalAttributes.sol)
+* [Unsolved - GlobalAttributes.sol](Activities/02-Stu_Global_Variables/Unsolved/GlobalAttributes.sol)
 
 Send out the instructions, and have the TAs circulate the room to ensure that students are following along.
 
@@ -262,7 +262,7 @@ Encourage the students to visit the Solidity documentation link provided to refe
 
 **Files:**
 
-* [Solved - GlobalAttributes.sol](Activities/04-Stu_Global_Variables/Solved/GlobalAttributes.sol)
+* [Solved - GlobalAttributes.sol](Activities/02-Stu_Global_Variables/Solved/GlobalAttributes.sol)
 
 Open the solution and explain the following:
 
@@ -296,7 +296,7 @@ Continue in the same contract as before, `JointSavings.sol`, or leverage the equ
 
 **Files:**
 
-* [TellingTime.sol](Activities/06-Ins_Time_Solidity/Unsolved/TellingTime.sol)
+* [TellingTime.sol](Activities/03-Ins_Time_Solidity/Unsolved/TellingTime.sol)
 
 First, add another variable called `uint unlock_time` -- this will be used to control when our contract is locked and unlocked:
 
@@ -395,11 +395,11 @@ In this activity, students will add the same timelock to their `JointSavings` co
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Timelock/README.md)
+* [README.md](Activities/04-Stu_Timelock/README.md)
 
 **Files:**
 
-* [Unsolved - TellingTime.sol](Activities/07-Stu_Timelock/Unsolved/TellingTime.sol)
+* [Unsolved - TellingTime.sol](Activities/04-Stu_Timelock/Unsolved/TellingTime.sol)
 
 Send out the instructions, and have TAs circulate and ensure that students are:
 
@@ -411,7 +411,7 @@ Send out the instructions, and have TAs circulate and ensure that students are:
 
 **Files:**
 
-* [Solved - TellingTime.sol](Activities/07-Stu_Timelock/Solved/TellingTime.sol)
+* [Solved - TellingTime.sol](Activities/04-Stu_Timelock/Solved/TellingTime.sol)
 
 Open the solution and explain the following:
 
@@ -461,7 +461,9 @@ In this activity, we will add a simple `if` statement that checks if we are with
 
 **Files:**
 
-* [Unsolved - WithdrawThreshold.sol](Activities/11-Ins_Adding_Withdraw_Threshold/Unsolved/WithdrawThreshold.sol)
+* [Solved - WithdrawThreshold.sol](Activities/05-Ins_Adding_Withdraw_Threshold/Solved/WithdrawThreshold.sol)
+
+* [Unsolved - WithdrawThreshold.sol](Activities/05-Ins_Adding_Withdraw_Threshold/Unsolved/WithdrawThreshold.sol)
 
 This activity is quite simple. All we need to do is add the following `if` statement surrounding the original timelock:
 
@@ -495,11 +497,11 @@ In this activity, students will follow the same steps to add the threshold to th
 
 **Instructions:**
 
-* [README.md](Activities/12-Stu_Threshold/README.md)
+* [README.md](Activities/06-Stu_Threshold/README.md)
 
 **Files:**
 
-* [Unsolved - WithdrawThreshold.sol](Activities/12-Stu_Threshold/Unsolved/WithdrawThreshold.sol)
+* [Unsolved - WithdrawThreshold.sol](Activities/06-Stu_Threshold/Unsolved/WithdrawThreshold.sol)
 
 Send out the instructions and ensure that students can wrap their timelock using the proper conditional.
 
@@ -509,7 +511,7 @@ Ensure that students are accessing the contract's balance using `address(this).b
 
 **Files:**
 
-* [Solved - WithdrawThreshold.sol](Activities/12-Stu_Threshold/Solved/WithdrawThreshold.sol)
+* [Solved - WithdrawThreshold.sol](Activities/06-Stu_Threshold/Solved/WithdrawThreshold.sol)
 
 Open the solution and explain the following:
 
@@ -529,7 +531,9 @@ Continue working in the same `JointSavings.sol` or leverage the equivalent contr
 
 **Files:**
 
-* [Unsolved - Constructors.sol](Activities/14-Ins_Constructors/Unsolved/Constructors.sol)
+* [Solved - Constructors.sol](Activities/07-Ins_Constructors/Solved/Constructors.sol)
+
+* [Unsolved - Constructors.sol](Activities/07-Ins_Constructors/Unsolved/Constructors.sol)
 
 Explain to the class:
 
@@ -582,11 +586,11 @@ reusable and more production-ready.
 
 **Instructions:**
 
-* [README.md](Activities/15-Stu_Adding_Constructor/README.md)
+* [README.md](Activities/08-Stu_Adding_Constructor/README.md)
 
 **Files:**
 
-* [Unsolved - Constructors.sol](Activities/15-Stu_Adding_Constructor/Unsolved/Constructors.sol)
+* [Unsolved - Constructors.sol](Activities/08-Stu_Adding_Constructor/Unsolved/Constructors.sol)
 
 Send out the instructions and have TAs circulate the class.
 
@@ -602,7 +606,7 @@ Ensure that students are:
 
 **Files:**
 
-* [Solved - Constructors.sol](Activities/15-Stu_Adding_Constructor/Solved/Constructors.sol)
+* [Solved - Constructors.sol](Activities/08-Stu_Adding_Constructor/Solved/Constructors.sol)
 
 Open the solution and explain the following:
 
@@ -637,7 +641,7 @@ Ensure that everyone has the same contract setup that looks just like the soluti
 
 **Files:**
 
-* [Solved - JointSavings.sol](Activities/17-Ins_Deploying_Testing/Solved/JointSavings.sol)
+* [Solved - JointSavings.sol](Activities/09-Ins_Deploying_Testing/Solved/JointSavings.sol)
 
 First, open up `Ganache` and ensure that your local network is running.
 
