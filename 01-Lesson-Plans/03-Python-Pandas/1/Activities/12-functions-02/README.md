@@ -23,16 +23,16 @@ Perform the following:
 8. Define a function `dance_party` that:
 
     * Takes in a string as an argument.
-    
+
     * Prints "dance!"
-    
-    * Updates the string from calling the `wibble` function with that argument. 
-    
+
+    * Updates the string from calling the `wibble` function with that argument.
+
     * Updates the string from calling the `warble` function with that argument.
-    
+
     * Returns the updated string.
 
-9. Print the result of calling your `dance_party` function with your name as the argument. 
+9. Print the result of calling your `dance_party` function with your name as the argument.
 
     ```
     # Should result in:
@@ -41,15 +41,6 @@ Perform the following:
     # wibbly MyName arglebargle
     ```
 
-10. Execute the Python program.
-
-    * Open the command line.
-
-    * Run `source activate PythonData` to activate your virtual environment.
-
-    * Navigate to the directory that is holding this code drill.
-
-    * Run `python filename.py` to test your output.
 
 ---
 

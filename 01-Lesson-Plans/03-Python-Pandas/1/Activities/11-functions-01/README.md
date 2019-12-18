@@ -28,15 +28,6 @@ Open the [starter file](Unsolved/functions-01.py) and perform the following:
 
 11. Call the `average` function and assign a variable `calculated_average`. Then print `calculated_average`.
 
-12. Execute the Python program.
-
-    * Open the command line.
-
-    * Run `source activate PythonData` to activate your virtual environment.
-
-    * Navigate to the directory that is holding this code drill.
-
-    * Run `python filename.py` to test your output.
 
 ---
 
