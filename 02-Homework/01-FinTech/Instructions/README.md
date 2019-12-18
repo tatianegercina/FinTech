@@ -14,8 +14,6 @@ In this homework assignment, you will:
 
 * Write a detailed case study of the company.
 
-* Prepare and deliver a short presentation of your case study to the class.
-
 * Upload your case study to your git repository.
 
 This assignment will challenge you to polish your FinTech research skills by accessing reports, publications, and online resources that FinTech professionals use to evaluate the industry. It will also help you situate the techniques and technologies you will be mastering in this course––e.g., machine learning, Python, modeling, blockchain––within the real world of global FinTech. Finally, it will give you practice presenting and speaking about FinTech strategy and technology.
