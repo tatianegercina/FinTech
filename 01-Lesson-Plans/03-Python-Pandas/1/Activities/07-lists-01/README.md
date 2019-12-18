@@ -22,15 +22,6 @@ Open the [starter file](Unsolved/lists-01.py) and perform the following:
 
 8. Print the 4th index of `list_4`.
 
-9. Execute the Python program.
-
-    * Open the command line.
-
-    * Run `source activate PythonData` to activate your virtual environment.
-
-    * Navigate to the directory that is holding this code drill.
-
-    * Run `python filename.py` to test your output.
 
 ---
 

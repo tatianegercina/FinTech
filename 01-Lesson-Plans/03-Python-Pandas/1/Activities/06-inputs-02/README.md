@@ -28,16 +28,6 @@ Perform the following:
 
 3. Else, print the string of "You didn't give us your name! Goodbye".
 
-4. Execute the Python program.
-
-    * Open the command line. 
-
-    * Run `source activate PythonData` to activate your virtual environment.
-
-    * Navigate to the directory that is holding this code drill.
-
-    * Run `python filename.py` to test your output.
-
 ---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

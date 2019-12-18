@@ -18,16 +18,6 @@ Open the [starter file](Unsolved/dicts-02.py) and perform the following:
 
 2. Answer each question by printing the expected result using bracket notation for the `show` dictionary.
 
-3. Execute the Python program.
-
-    * Open the command line.
-
-    * Run `source activate PythonData` to activate your virtual environment.
-
-    * Navigate to the directory that is holding this code drill.
-
-    * Run `python filename.py` to test your output.
-
 ## Hint
 
 In this activity, you may find that you're repeating yourself a lot. It may be helpful to create variables that point to different locations within the dictionary. For example:
@@ -36,7 +26,7 @@ In this activity, you may find that you're repeating yourself a lot. It may be h
 
 Then, to get the actor who plays Rick in _The Walking Dead_, we would simply write:
 
-`drama["the_walking_dead"]["cast"][0]["actor"]` 
+`drama["the_walking_dead"]["cast"][0]["actor"]`
 
 As opposed to:
 

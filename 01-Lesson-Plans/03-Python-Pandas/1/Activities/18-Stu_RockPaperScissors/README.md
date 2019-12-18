@@ -10,6 +10,8 @@ In this activity, you will create an RPS game that takes user input from the com
 
 3. Compare the user's input to the computer's choice to determine if the user won, lost, or tied.
 
+4. Remember to pseudo-code first!
+
 ## Hint
 
 You can refer to this [Stack Overflow post](https://stackoverflow.com/questions/306400/how-to-randomly-select-an-item-from-a-list).

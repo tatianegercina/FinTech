@@ -10,9 +10,9 @@ Open the [starter file](Unsolved/csv-01.py) and perform the following:
 
 2. Set the path for the CSV file.
 
-3. Create new lists to store data for heaviest and tallest Pokemon. 
+3. Create new lists to store data for heaviest and tallest Pokemon.
 
-4. Open the CSV file. 
+4. Open the CSV file.
 
 5. Iterate through the data and search for the number the user inputted. Remember to skip the header of the CSV.
 
@@ -24,15 +24,6 @@ Open the [starter file](Unsolved/csv-01.py) and perform the following:
 
 9. Print the list of heaviest and tallest Pokemon.
 
-10. Execute the Python program.
-
-    * Open the command line.
-
-    * Run `source activate PythonData` to activate your virtual environment.
-
-    * Navigate to the directory that is holding this code drill.
-
-    * Run `python filename.py` to test your output.
 
 ## Hint
 

@@ -42,27 +42,17 @@ Open the [starter file](Unsolved/condition-control-flow-01.py) and perform the f
 
 18. Declare a variable `total_cost` that takes the sum of all costs above (excluding budget).
 
-19. Write an if statement that checks whether the sum of all the costs is within the budget. 
+19. Write an if statement that checks whether the sum of all the costs is within the budget.
 
-    * If so, print "You're total cost is " concatentated with the `total_cost` variable. 
-    
+    * If so, print "You're total cost is " concatentated with the `total_cost` variable.
+
     * Else, print "You're over budget by " concatenated with the difference between `budget` and `total_cost`.
 
-20. Write an if statement that checks whether the `rent_cost` is larger than the sum of the `utilities_cost`, `food_cost`, and `transportation_cost`. 
+20. Write an if statement that checks whether the `rent_cost` is larger than the sum of the `utilities_cost`, `food_cost`, and `transportation_cost`.
 
-    * If so, print a string that says "The rent is too damn high!". 
-    
+    * If so, print a string that says "The rent is too damn high!".
+
     * Else, print a string that says "Ahhh just right!"
-
-21. Execute the Python program.
-
-    * Open the command line. 
-
-    * Run `source activate PythonData` to activate your virtual environment.
-
-    * Navigate to the directory that is holding this code drill.
-
-    * Run `python filename.py` to test your output.
 
 ---
 

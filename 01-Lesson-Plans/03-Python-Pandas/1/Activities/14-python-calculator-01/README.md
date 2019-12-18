@@ -1,6 +1,6 @@
 # Making a Calculator
 
-This activity will combine everything we've covered today, along with some tools from yesterday. You will build a basic arithmetic calculator that takes in user input and returns the result of the calculation. 
+This activity will combine everything we've covered today, along with some tools from yesterday. You will build a basic arithmetic calculator that takes in user input and returns the result of the calculation.
 
 ## Instructions
 
@@ -18,15 +18,6 @@ Open the [starter file](Unsolved/python-calculator-01.py) and perform the follow
 
 2. Call the `calculate` function and print the results.
 
-3. Execute the Python program.
-
-    * Open the command line.
-
-    * Run `source activate PythonData` to activate your virtual environment.
-
-    * Navigate to the directory that is holding this code drill.
-
-    * Run `python filename.py` to test your output.
 
 ---
 
