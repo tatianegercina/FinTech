@@ -1,6 +1,6 @@
 ### 3. Students Do: Crowdsale Exploration and Discussion (10 min)
 
-Students will be provided a list of crowdsales from which they will explore and research the most popular crowdsales in history.
+Students will be provided a list of crowdsales from which they will explore and research some of the most popular crowdsales in history.
 
 **Instructions:**
 
