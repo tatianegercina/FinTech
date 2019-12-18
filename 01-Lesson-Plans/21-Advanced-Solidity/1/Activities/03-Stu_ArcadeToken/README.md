@@ -14,7 +14,7 @@ This will allow you to collect Ether in exchange for `ARCD` tokens that users ca
 
   * A `string` called `symbol`. Set this to `ARCD` and make sure that it is `public`. This will allow wallets like MetaMask to recognize your token's symbol/ticker.
 
-  * Set an `exchange_rate` variable to equal the amount of tokens to distribute per `wei`. Make sure the variable is a `uint public` type!
+  * Set an `exchange_rate` variable to equal the number of tokens to be distributed per `wei`. Make sure the variable is a `uint public` type!
 
 * Next, it's time to add the most important data structure, the `mapping`:
 
@@ -32,7 +32,7 @@ This will allow you to collect Ether in exchange for `ARCD` tokens that users ca
 
 * Customers will now need a way to purchase new `ARCD` tokens! Add a `public payable` function called `purchase`. It does not need any parameters. Within the function:
 
-  * Calculate a new `uint` called `amount` by multiplying `msg.value` with the `exchange_rate`. This will calculate the amount of tokens to distribute.
+  * Calculate a new `uint` called `amount` by multiplying `msg.value` with the `exchange_rate`. This will calculate the number of tokens to distribute.
 
   * Next, add the `amount` to the balance of `msg.sender`.
 
@@ -56,7 +56,7 @@ This will allow you to collect Ether in exchange for `ARCD` tokens that users ca
 
 ## Hints
 
-* Remember, a mapping simply associates one data type to another. By pairing `address` to `uint`, we can track balances.
+* Remember, a mapping associates one data type to another. By pairing `address` to `uint`, we can track balances.
 
   * For example, `0xc3879B456DAA348a16B6524CBC558d2CC984722c => 333` is what the data might look like in contract storage.
 

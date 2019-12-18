@@ -8,7 +8,7 @@ In your spend function, you will take a very small "microtransaction" fee and fo
 
 In exchange for the small fee (or even no fee, if you so desire), you will reward tokens based on a multiplier (say, 3 tokens rewarded for every wei spent).
 
-This will create incentive for your loyal customers to continue returning to your Arcade (or whatever business you can think of) to spend their tokens, and generates capital passively for you to continue improving the Arcade. This works like a credit card fee, but instead collects fees passively instead of annually.
+This will create an incentive for your loyal customers to continue returning to your Arcade (or whatever business you can think of) to spend their tokens and generates capital passively for you to continue improving the Arcade. This works like a credit card fee but instead collects fees passively instead of annually.
 
 This same model can apply for any rewards system and can be customized to the use case, so long as the incentive configuration can benefit both parties.
 
@@ -18,7 +18,7 @@ This same model can apply for any rewards system and can be customized to the us
 
   * A `uint public` called `fee_rate` -- this will be set to a number of "basis points."
 
-  * Since Ethereum does not fully support floating point (decimal) numbers, we have to use basis points to calculate our percent.
+  * Since Ethereum does not fully support floating-point (decimal) numbers, we have to use basis points to calculate our percent.
 
   * `1` basis point = `0.01%`. You can calculate a percentage by using the formula `basis_points.mul(some_number).div(10000)`.
 
@@ -36,11 +36,11 @@ This same model can apply for any rewards system and can be customized to the us
     1000 | 10%
     10000 | 100%
 
-  * Assuming this, set your `fee_rate` to equal the amount of basis points you'd like to charge per transaction. This will be calculated in our `spend` function later.
+  * Assuming this, set your `fee_rate` to equal the number of basis points you'd like to charge per transaction. This will be calculated in our `spend` function later.
 
   * For example, set `fee_rate` to `25` to charge `0.25%` per transaction. Make sure the fee is reasonable!
 
-* Next, add a `uint public reward_rate` below the `fee_rate` and set this to equal the amount of tokens to reward per wei spent.
+* Next, add a `uint public reward_rate` below the `fee_rate` and set this to equal the number of tokens to reward per wei spent.
 
   * For example, set `fee_rate` to `3` to reward 3 tokens per wei spent.
 
