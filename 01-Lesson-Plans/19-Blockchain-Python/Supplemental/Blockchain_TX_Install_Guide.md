@@ -4,13 +4,25 @@ This guide serves as a step by step process for setting up and validating the [`
 
 **Important Notes:**
 
-* Remember to install these libraries in your Python virtual environment or create a new one for this unit.
+* It is strongly recommended to create a new Python virtual environment for this unit to prevent cross-dependency issues.
 
 * Windows users **MUST** use `git-bash` and not the default Windows command prompt when you are requested to open the terminal window to execute commands. You should run `git-bash` as administrator to successfully install the libraries.
 
 ## Installation
 
 Open a terminal and execute the following commands to install `web3.py` and `bit`, respectively.
+
+* Open the terminal and run the following command to create a brand new Python virtual environment for this unit.
+
+  ```shell
+  conda create -n ethereum python=3.7 anaconda
+  ```
+
+* Activate the new environment.
+
+  ```shell
+  conda activate ethereum
+  ```
 
 * Use the `pip install` command to download and install the `web3.py` module.
 
