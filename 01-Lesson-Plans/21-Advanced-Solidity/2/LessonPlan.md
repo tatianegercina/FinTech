@@ -122,7 +122,7 @@ In this activity, students will break into groups of 3 - 5 people and brainstorm
 
 **Instructions:**
 
-* [README.md](Activities/03_Stu_Use_Case_Thought_Experiment/README.md)
+* [README.md](Activities/02_Stu_Use_Case_Thought_Experiment/README.md)
 
 ### 4. Instructor Do: Fungible vs Non-Fungible Review (10 min)
 
@@ -203,7 +203,7 @@ In this activity, students will be exploring the various ERC standards that are 
 Send out the instructions and have TAs circulate the class.
 **Instructions:**
 
-* [README.md](Activities/06_Stu_ERC_Standards_Exploration/README.md)
+* [README.md](Activities/03_Stu_ERC_Standards_Exploration/README.md)
 
 Explain to the students:
 
@@ -271,7 +271,7 @@ In this activity, you will demonstrate the ERC20 contract provided by the OpenZe
 
 **Files:**
 
-* [ArcadeTokenERC20.sol](Activities/10-Ins_OpenZeppelin_ERC20/Solved/ArcadeTokenERC20.sol)
+* [ArcadeTokenERC20.sol](Activities/04-Ins_OpenZeppelin_ERC20/Solved/ArcadeTokenERC20.sol)
 
 Explain why we are starting with ERC20 to the students:
 
@@ -467,11 +467,11 @@ Send out the instructions and have TAs circulate the class.
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_ERC20/README.md)
+* [README.md](Activities/05-Stu_ERC20/README.md)
 
 **Files:**
 
-* [ArcadeTokenERC20.sol](Activities/11-Stu_ERC20/Unsolved/ArcadeTokenERC20.sol)
+* [ArcadeTokenERC20.sol](Activities/05-Stu_ERC20/Unsolved/ArcadeTokenERC20.sol)
 
 Ensure that students are properly passing parameters to the `ERC20Detailed` constructor and that they are properly using the `onlyOwner` modifier.
 
@@ -479,7 +479,7 @@ Ensure that students are properly passing parameters to the `ERC20Detailed` cons
 
 **Files:**
 
-* [ArcadeTokenERC20.sol](Activities/11-Stu_ERC20/Solved/ArcadeTokenERC20.sol)
+* [ArcadeTokenERC20.sol](Activities/05-Stu_ERC20/Solved/ArcadeTokenERC20.sol)
 
 Open the solution and explain the following:
 
@@ -499,7 +499,7 @@ In this activity, you will lead a code along, where the entire class will deploy
 
 **Files:**
 
-* [ArcadeTokenERC20.sol](Activities/13-Evr_Deploying_ERC20/Resources/ArcadeTokenERC20.sol)
+* [ArcadeTokenERC20.sol](Activities/06-Evr_Deploying_ERC20/Resources/ArcadeTokenERC20.sol)
 
 First, assign a number to every student in the class. This will be the number that they will append to their `symbol` as a way of quickly identifying which `ArcadeToken` was deployed by each student.
 
@@ -565,7 +565,7 @@ In this activity, students will pair up and exchange each other's tokens on the 
 
 **Instructions:**
 
-* [README.md](Activities/14-Stu_Sending_Receiving_ERC20/README.md)
+* [README.md](Activities/07-Stu_Sending_Receiving_ERC20/README.md)
 
 Have TAs circulate the room and ensure that students are able to call their contract functions properly, and mint and transfer tokens to each other.
 
