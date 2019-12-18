@@ -1,12 +1,12 @@
 ### 2. Instructor Do: Crowdsales in Ethereum (10 min)
 
-In this activity you will explain how crowdsales have become a very popular method for distributing tokens.
+In this activity, you will explain how crowdsales have become a popular method for distributing tokens.
 
-* For companies and startups its cheap to have new ideas but executing those ideas can be very expensive.
+* For companies and startups, it's cheap to have new ideas, but executing those ideas can be very expensive.
 
-* Over the last decade `crowdfunding` has become a popularized way for projects to receive funding that enables them to successfully bring their product or service to production.
+* Over the last decade, `crowdfunding` has become a popularized way for projects to receive funding that enables them to successfully bring their product or service to production.
 
-* `Crowdfunding` is the process of raising funds by asking a large number of people each for a small amount of money. Crowdfunding is often done through a `crowdfunding platform` where users are promised a product or service and can then donate money to a project in a stream-lined manner.
+* `Crowdfunding` is the process of raising funds by asking a large number of people each for a small amount of money. Crowdfunding is often done through a `crowdfunding platform` where users are promised a product or service and can then donate money to a project in a streamlined manner.
 
 * Blockchain technologies and the rise of tokenomics has enabled a new form of `crowdfunding` known as a `crowdsale`.
 
@@ -29,3 +29,31 @@ Pose the class the following question:
   * Any other initial operating costs
 
 Explain to the class that tokenomics still plays a huge rule in `crowdsales`. Investors backing the project aren't always just buying the token because they believe the future project will be successful but also because they believe the perceived market value of the token will increase.
+
+* Important factors of a crowdsale:
+
+  * Price & Rate Configuration
+
+  * Will your crowdsale offer tokens at a fixed price?
+
+  * Emission
+
+  * Is there a cap on the total number of tokens released?
+
+  * Is there a cap on the total number of tokens a single person can buy?
+
+  * How is your token sent to people participating in the crowdsale?
+
+  * Start/Endtime/Timeframe
+
+  * Are the funds distributed during the crowdsale or after.
+
+  * Is there a refund policy if the goal was not successful.
+
+* When implementing a crowdsale, you have to first decide how you are going to release tokens to the participants of the sale. This is known as `token emission` and is normally done in one of three ways:
+
+  * The crowdsale contract owns a given number of tokens and transfers ownership of them as users purchase them.
+
+  * The crowdsale contract dynamically mints new tokens as they are purchased.
+
+  * The crowdsale contract has access to a multi-sig wallet from which it can transfer ownership of tokens as they are purchased.
