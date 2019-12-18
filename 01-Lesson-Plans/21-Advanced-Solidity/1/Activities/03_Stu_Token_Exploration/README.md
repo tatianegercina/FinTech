@@ -12,7 +12,7 @@ In this activity, you will examine several tokens on the Ethereum blockchain and
 
 * [0x](https://bravenewcoin.com/insights/monero-no-plans-to-go-'legit')
 
-* [Tether (USDT)](https://tether.to/)
+* [Gemini Dollar (GUSD)](https://gemini.com/dollar/)
 
 * [Hedge](https://hedgetrade.com/)
 
