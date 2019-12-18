@@ -39,3 +39,7 @@ In this activity, you will implement the SafeMath library and use it for all mat
 ## Hints
 
 * Remember to include the variable reassignments -- SafeMath will not mutate the variable it is operating on. You must reassign the variable with an `=`.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
