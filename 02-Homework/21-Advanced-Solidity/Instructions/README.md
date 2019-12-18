@@ -11,7 +11,7 @@ You will need to create an ERC20 token that will be minted through a `MintedCrow
 from the OpenZeppelin Solidity library.
 
 This crowdsale contract will manage the entire process, allowing users to send ETH and get back PPC (PupperCoin).
-This contract will actually mint the tokens automatically and distribute them to buyers in one transaction.
+This contract will mint the tokens automatically and distribute them to buyers in one transaction.
 
 It will need to inherit `CappedCrowdsale` (your choice as to the limit), `RefundableCrowdsale`, and `MintedCrowdsale`.
 
@@ -59,7 +59,7 @@ You must ensure that you are passing the proper parameters into the contract con
 function. You must also correctly import the contracts and link the two together using Truffles `link` feature.
 
 First, deploy the crowdsale to your local blockchain. After you confirm that you can purchase the tokens with ETH,
-you will need to then request Kovan or Ropsten testnet tokens and deploy it to that network.
+you will need to request Kovan or Ropsten testnet tokens and deploy it to that network.
 
 Make sure that you have your `truffle-config.js` properly configured in order to deploy to that network, and make sure
 to specify the network via the `--network` flag when running `truffle migrate`.
