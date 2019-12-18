@@ -32,40 +32,39 @@ For those with a **Windows operating system**, execute the following steps:
 
 * This will enable a necessary PHP extension that `hd-wallet-derive` relies on.
 
-* Next, navigate to the System Environment Variables in the Control Panel and edit the `Path` environment variable; add the path containing the PHP binaries (`C:\xampp\php`) to the end of the `Path` environment variable.
+* Next, you need to update the System Environment Variables and add the path containing the PHP binaries (`C:\xampp\php`) to the `PATH` environment variable.
 
-  ![start-menu-environment-search](Images/start-menu-environment-search.PNG)
+* For this particular step, we will use the Windows Command Prompt as Administrator. In the Cortana search field, type in CMD; you will see the Command Prompt application in the search results, choose the "Run as administrator" option to continue.
 
-  ![environment-menu](Images/environment-menu.PNG)
+  ![Open CMD as Admin](Images/cmd-as-admin.png)
 
-  ![environment-variables](Images/environment-variables.PNG)
+* You will be asked if you want the Command Prompt to make changes in your system, click on the "Yes" button to continue.
 
-  ![environment-path-edit](Images/environment-path-edit.PNG)
+  ![Open CMD as Admin - 2](Images/cmd-as-admin-2.png)
 
-* Test that the newest version of PHP is working by first creating a test PHP script called `phpinfo.php` with the following code.
+* You will be able to run commands as administrator if you see the title `Administrator: Command Prompt` int he window. In the administrator's prompt, it’ll say `Administrator`, while other prompts will not.
 
-  ```php
-  <?php
+  ![Open CMD as Admin - 3](Images/cmd-as-admin-3.png)
 
-  // Show all information, defaults to INFO_ALL
-  phpinfo();
-
-  ?>
-  ```
-
-* Next, execute the following command from the `git-bash` (close any `git-bash` terminal window opened and open a new one if this is your case).
+* Now type the following command to update the `PATH` system variable.
 
   ```shell
-  php -S localhost:8000 phpinfo.php
+  setx /M PATH "%PATH%;C:\xampp\php"
   ```
 
-* The terminal should output the following and spin up a web server to showcase the results of the test `phpinfo` script. If you see the following output, then congratulations! Your machine is now updated to the newest version of PHP!
+* If everything was successful, you will see a confirmation message.
 
-  ![php-terminal-windows](Images/php-terminal-windows.PNG)
+  ![Open CMD as Admin - 4](Images/cmd-as-admin-4.png)
 
-* Open your web browser and navigate to [`http://localhost:8000/`](http://localhost:8000/); you should see the following page with the current PHP configuration in your system.
+* Test that the newest version of PHP is working. Close all the terminal windows (`git-bash` and Windows Command Prompt), open a new `git-bash` terminal windows and execute the following command.
 
-  ![phpinfo-test](Images/phpinfo-test.PNG)
+  ```shell
+  php -version
+  ```
+
+* If you see the following output, then congratulations! Your machine is now updated to the newest version of PHP!
+
+  ![Open CMD as Admin - 5](Images/cmd-as-admin-5.png)
 
 ### Environment Setup in OS X Operating System
 
@@ -117,32 +116,9 @@ To update the pre-built version of PHP in OS X execute the following steps:
   php -version
   ```
 
+* If you see the following output, then congratulations! Your machine is now updated to the newest version of PHP!
+
   ![PHP OS X install - 3](Images/php-os-x-3.png)
-
-* Test that the newest version of PHP is working correctly by first creating a test PHP script called `phpinfo.php` with the following code.
-
-  ```php
-  <?php
-
-  // Show all information, defaults to INFO_ALL
-  phpinfo();
-
-  ?>
-  ```
-
-* Next, execute the following command from the terminal.
-
-  ```shell
-  php -S localhost:8000 phpinfo.php
-  ```
-
-* The terminal should output the following and spin up a web server to showcase the results of the test `phpinfo` script. If you see the following output, then congratulations! Your machine is now updated to the newest version of PHP!
-
-  ![php-terminal](Images/php-terminal.png)
-
-* Open your web browser and navigate to [`http://localhost:8000/`](http://localhost:8000/); you should see the following page with the current PHP configuration in your system.
-
-  ![php-test](Images/php-test.png)
 
 #### Option 2: Installing PHP Using the Homebrew Package Manager
 
@@ -170,28 +146,15 @@ To install PHP in Mac OS X using Homebrew execute the following steps:
   echo "export PATH=/usr/local/opt/php@7.3/bin:$PATH" >> ~/.bash_profile
   ```
 
-* Next, test that the newest version of PHP is working correctly by first creating a test PHP script called `phpinfo.php` and then executing the following command.
-
-  ```php
-  <?php
-
-  // Show all information, defaults to INFO_ALL
-  phpinfo();
-
-  ?>
-  ```
+* Close and reopen the terminal. Next, verify that PHP version 7.3 is the current version in your system by executing the following command:
 
   ```shell
-  php -S localhost:8000 phpinfo.php
+  php -version
   ```
 
-* The terminal should output the following and spin up a web server to showcase the results of the test `phpinfo` script. If you see the following output, then congratulations! Your machine is now updated to the newest version of PHP!
+* If you see the following output, then congratulations! Your machine is now updated to the newest version of PHP!
 
-  ![php-terminal](Images/php-terminal.png)
-
-* Open your web browser and navigate to [`http://localhost:8000/`](http://localhost:8000/); you should see the following page with the current PHP configuration in your system.
-
-  ![php-test](Images/php-test.png)
+  ![PHP OS X install - 3](Images/php-os-x-3.png)
 
 ## hd-wallet-derive Installation
 
