@@ -137,7 +137,7 @@ Have the students open the following list of popular Ethereum blockchain tokens 
 
 **Instructions:**
 
-* [README.md](Activities/03_Stu_Token_Exploration/README.md)
+* [README.md](Activities/01-Stu_Token_Exploration/README.md)
 
 ---
 
@@ -187,7 +187,7 @@ This activity shows students how to build a simple token with Solidity.
 
 **Files:**
 
-* [ArcadeToken.sol](Activities/05-Ins_Mappings/Unsolved/ArcadeToken.sol)
+* [ArcadeToken.sol](Activities/02-Ins_Mappings/Unsolved/ArcadeToken.sol)
 
 Now that we are familiar with the concept of tokens, let's build one!
 
@@ -339,11 +339,11 @@ Send out the instructions and the starter code below, and have the TAs circulate
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_ArcadeToken/README.md)
+* [README.md](Activities/03-Stu_ArcadeToken/README.md)
 
 **Files:**
 
-* [ArcadeToken.sol](Activities/06-Stu_ArcadeToken/Unsolved/ArcadeToken.sol)
+* [ArcadeToken.sol](Activities/03-Stu_ArcadeToken/Unsolved/ArcadeToken.sol)
 
 Ensure that students are using the mapping to map `address` to `uint` specifically.
 
@@ -363,7 +363,7 @@ For students that are confused about `mapping`:
 
 **Files:**
 
-* [ArcadeToken.sol](Activities/06-Stu_ArcadeToken/Solved/ArcadeToken.sol)
+* [ArcadeToken.sol](Activities/03-Stu_ArcadeToken/Solved/ArcadeToken.sol)
 
 Open the solution and explain the following:
 
@@ -413,7 +413,7 @@ This demonstration shows students how to use the `SafeMath` from `OpenZeppelin` 
 
 **Files:**
 
-* [ArcadeTokenSafeMath.sol](Activities/10-Ins_SafeMath/Unsolved/ArcadeTokenSafeMath.sol)
+* [ArcadeTokenSafeMath.sol](Activities/04-Ins_SafeMath/Unsolved/ArcadeTokenSafeMath.sol)
 
 Now it's time to make our tokens more secure. Briefly explain to the class:
 
@@ -557,11 +557,11 @@ Send out the instructions and have TAs circulate the class.
 
 **Instructions:**
 
-* [README.md](Activities/11-Stu_Using_SafeMath/README.md)
+* [README.md](Activities/05-Stu_Using_SafeMath/README.md)
 
 **Files:**
 
-* [ArcadeTokenSafeMath.sol](Activities/11-Stu_Using_SafeMath/Unsolved/ArcadeTokenSafeMath.sol)
+* [ArcadeTokenSafeMath.sol](Activities/05-Stu_Using_SafeMath/Unsolved/ArcadeTokenSafeMath.sol)
 
 Ensure that students:
 
@@ -579,7 +579,7 @@ Take care that students are reassigning the variables with an `=` and not just r
 
 **Files:**
 
-* [ArcadeTokenSafeMath.sol](Activities/11-Stu_Using_SafeMath/Solved/ArcadeTokenSafeMath.sol)
+* [ArcadeTokenSafeMath.sol](Activities/05-Stu_Using_SafeMath/Solved/ArcadeTokenSafeMath.sol)
 
 Open the solution and explain the following:
 
@@ -603,11 +603,11 @@ Send out the instructions to the students and have TAs circulate the class. Remi
 
 **Instructions:**
 
-* [README.md](Activities/13-Stu_Tokenized_Rewards_Challenge/README.md)
+* [README.md](Activities/06-Stu_Tokenized_Rewards_Challenge/README.md)
 
 **Files:**
 
-* [ArcadeTokenRewards.sol](Activities/13-Stu_Tokenized_Rewards_Challenge/Unsolved/ArcadeTokenRewards.sol)
+* [ArcadeTokenRewards.sol](Activities/06-Stu_Tokenized_Rewards_Challenge/Unsolved/ArcadeTokenRewards.sol)
 
 Clarify the activity a bit to the students:
 
@@ -645,7 +645,7 @@ Ensure students are applying this formula if they decide to use percentages in t
 
 **Files:**
 
-* [ArcadeTokenRewards.sol](Activities/13-Stu_Tokenized_Rewards_Challenge/Solved/ArcadeTokenRewards.sol)
+* [ArcadeTokenRewards.sol](Activities/06-Stu_Tokenized_Rewards_Challenge/Solved/ArcadeTokenRewards.sol)
 
 Open the solution and explain the following:
 
