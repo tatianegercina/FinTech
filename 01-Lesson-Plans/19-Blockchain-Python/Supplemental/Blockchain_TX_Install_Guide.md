@@ -1,12 +1,30 @@
 # Blockchain Transactions Install Guide
 
-This guide serves as a step by step process for setting up and validating the `web3.py`, `bit`, and `hd-wallet-derive` libraries used to programmatically send and receive transactions over a blockchain network via virtual wallets. Without these libraries, class activities and their associated code will not be able to perform the necessary operations.
+This guide serves as a step by step process for setting up and validating the [`web3.py`](https://web3py.readthedocs.io/en/stable/), [`bit`](https://ofek.dev/bit/), and [`hd-wallet-derive`](https://github.com/dan-da/hd-wallet-derive  ) libraries used to programmatically send and receive transactions over a blockchain network via virtual wallets. Without these libraries, class activities and their associated code will not be able to perform the necessary operations.
+
+**Important Notes:**
+
+* It is strongly recommended to create a new Python virtual environment for this unit to prevent cross-dependency issues.
+
+* Windows users **MUST** use `git-bash` and not the default Windows command prompt when you are requested to open the terminal window to execute commands. You should run `git-bash` as administrator to successfully install the libraries.
 
 ## Installation
 
 Open a terminal and execute the following commands to install `web3.py` and `bit`, respectively.
 
-* Use the `pip install` command to download the `web3.py` module.
+* Open the terminal and run the following command to create a brand new Python virtual environment for this unit.
+
+  ```shell
+  conda create -n ethereum python=3.7 anaconda
+  ```
+
+* Activate the new environment.
+
+  ```shell
+  conda activate ethereum
+  ```
+
+* Use the `pip install` command to download and install the `web3.py` module.
 
   ```shell
   pip install web3
@@ -14,7 +32,7 @@ Open a terminal and execute the following commands to install `web3.py` and `bit
 
   ![web3-install](Images/web3-install.png)
 
-* Use the `pip install` command to download the `bit` module.
+* Use the `pip install` command to download and install the `bit` module.
 
   ```shell
   pip install bit
@@ -46,9 +64,9 @@ Once the `web3.py` and `bit` modules are downloaded and installed, verify that b
 
 It can be frustrating when packages do not install correctly, therefore use the below approaches to troubleshoot any installation or usage issues.
 
-### Install Microsoft Visual C++ Build Tools
+### Install Microsoft Visual C++ Build Tools In Windows
 
-In some cases, the `Web3.py` library may fail to install due to the need for Microsoft Visual C++ Build Tools. In such an event, following the below steps to resolve the issue:
+In some cases, the `Web3.py` library may fail to install in Microsoft Windows due to the need for Microsoft Visual C++ Build Tools. In such an event, following the below steps to resolve the issue:
 
 1. Go to: https://visualstudio.microsoft.com/downloads/
 
@@ -65,6 +83,8 @@ In some cases, the `Web3.py` library may fail to install due to the need for Mic
 ### Update Conda Environment
 
 An out-of-date Anaconda environment can create issues when trying to install new packages. Follow the below steps to update your conda environment.
+
+**Important Note:** Windows users **MUST** use the _Anaconda Prompt_ to run these commands.
 
 1. Deactivate your current conda environment. This is required in order to update the global conda environment. Be sure to quit any running applications, such as Jupyter, prior to deactivating the environment.
 
