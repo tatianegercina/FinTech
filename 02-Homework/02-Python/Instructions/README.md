@@ -10,7 +10,7 @@ You've made it! It's time to put away the Excel sheet and join the big leagues. 
 
 2. In your local git repository, create a directory for both of the Python activities. Use folder names that correspond to the activities: **PyBank** and **PyRamen**.
 
-3. In each folder you just created, add a new file called `main.py`. This will be the main script to run for each analysis.
+3. In each folder you just created, add a new file called `main.ipynb`. Remember that to create this file you will need to use JupyterLab to correctly generate the .ipynb file format. This will be the main notebook to run for each analysis.
 
 4. Push the above changes to GitHub.
 
@@ -81,13 +81,13 @@ Complete the following:
   * Initialize an empty `menu` list object to hold the contents of `menu_data.csv`.
 
   * Use a `with` statement and open the `menu_data.csv` by using its file path.
-  
+
   * Use the `reader` function from the `csv` library to begin reading `menu_data.csv`.
 
   * Use the `next` function to skip the header (first row of the CSV).
 
   * Loop over the rest of the rows and append every row to the `menu` list object (the outcome will be a list of lists).
-  
+
 * Set up the same process to read in `sales_data.csv`. However, instead append every row of the sales data to a new `sales` list object.
 
 ### Manipulate the Data
@@ -95,7 +95,7 @@ Complete the following:
 Complete the following:
 
 * Initialize an empty `report` dictionary to hold the future aggregated per-product results. The `report` dictionary will eventually contain the following metrics:
-  
+
   * `01-count`: the total quantity for each ramen type
 
   * `02-revenue`: the total revenue for each ramen type
@@ -106,13 +106,13 @@ Complete the following:
 
 * Then, loop through every row in the `sales` list object.
 
-  * For each row of the `sales` data, set the following columns of the sales data to their own variables: 
-  
+  * For each row of the `sales` data, set the following columns of the sales data to their own variables:
+
     * Quantity
     * Menu_Item
-  
+
   * Perform a quick check if the `sales_item` is already included in the `report`. If not, initialize the key-value pairs for the particular `sales_item` in the report. Then, set the `sales_item` as a new key to the `report` dictionary and the values as a nested dictionary containing the following:
-  
+
     ```python
     {
     "01-count": 0,
@@ -121,7 +121,7 @@ Complete the following:
     "04-profit": 0,
     }
     ```
-  
+
 * Create a nested loop by looping through every record in `menu`.
 
   * For each row of the `menu` data, set the following columns of the menu data to their own variables:
@@ -144,7 +144,7 @@ Complete the following:
   * Else print the message "{sales_item} does not equal {item}! NO MATCH!".
 
 * Write out the contents of the `report` dictionary to a text file. The report should output each ramen type as the keys and `01-count`, `02-revenue`, `03-cogs`, and `04-profit` metrics as the values for every ramen type as shown:
-  
+
   ```
   spicy miso ramen {'01-count': 9238, '02-revenue': 110856.0, '03-cogs': 46190.0, '04-profit': 64666.0}
   tori paitan ramen {'01-count': 9156, '02-revenue': 119028.0, '03-cogs': 54936.0, '04-profit': 64092.0}
@@ -181,7 +181,7 @@ Complete the following:
 
 * Feel encouraged to work in groups, but don't shortchange yourself by copying someone else's work. Dig your heels in, burn the night oil, and learn this while you can! These are skills that will pay dividends in your future career.
 
-* Start early, and reach out for help often! Challenge yourself to identify _specific_ questions for your instructors and TAs. Don't resign yourself to simply saying, "I'm totally lost." Come prepared to show your effort and thought patterns, we'll be happy to help along the way.
+* **Start early**, and reach out for help often! Challenge yourself to identify _specific_ questions for your instructors and TAs. Don't resign yourself to simply saying, "I'm totally lost." Come prepared to show your effort and thought patterns, we'll be happy to help along the way.
 
 * Always commit your work (and do it often!) and back it up with GitHub pushes. You don't want to lose hours of your work because you didn't push it to GitHub every half hour or so.
 
