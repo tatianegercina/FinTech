@@ -2,7 +2,7 @@
 
 ### Overview
 
-In the last class students were introduced to several of the popular ERC token standards (20, 721, 777, 1155) and implemented their own ERC20 compliant token using the OpenZeppelin libraries. Today students will be introduced to the concept of crowdsales, a popular method for distributing tokens; they will explore popular historic crowdsales and implement their own crowdsale using the OpenZeppelin libraries.
+In the last class, students were introduced to several of the popular ERC token standards (20, 721, 777, 1155) and implemented an ERC20 compliant token using the OpenZeppelin libraries. Today students will be introduced to the concept of crowdsales, a popular method for distributing tokens; they will explore popular historic crowdsales and implement their own crowdsale using the OpenZeppelin libraries.
 
 ### Class Objectives
 
@@ -20,7 +20,7 @@ By the end of the unit, students will be able to:
 
 ### 1. Instructor Do: Welcome to Class (10 min)
 
-Refresh the students on ERC standards and set the stage for todays class by briefly discussing the topic of token distribution.
+Refresh the students on ERC standards and set the stage for today's class by briefly discussing the topic of token distribution.
 
 Review the following recall questions with the class.
 
@@ -35,6 +35,7 @@ Review the following recall questions with the class.
 * **Answer** Ethereum Domain Name Service
 
 * **Answer** Multi Token Standard
+
 * What are some benefits of ERC standards?
 
 * **Answer** Provides a way to submit new standards within the community.
@@ -60,3 +61,11 @@ Review the following recall questions with the class.
 * **Answer** Fungible tokens are interchangeable with one another whereas non-fungible are not.
 
 * **Answer** Non-fungible tokens use ERC 721, fungible tokens use ERC 777.
+
+Now that the students are familiar with tokens and the various ERC token standards, briefly introduce the concept of token distributions by discussing the following question with the class.
+
+* We understand basic tokenomics and how to implement our own ERC compliant token, but now how do we distribute that token to users and create a market for it?
+
+  * This is where a `crowdsale` comes in.
+
+Inform the class that we will be discussing the concept and application of crowdsales in the next activity.
