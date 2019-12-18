@@ -252,7 +252,7 @@ In this activity, the instructor will demo the tools used by smart contract engi
 
 **Files:**
 
-* [MessageBoard.sol](Activities/06-Ins_Intro_to_Remix_and_Ganache/Solved/MessageBoard.sol)
+* [MessageBoard.sol](Activities/02-Ins_Intro_to_Remix_and_Ganache/Solved/MessageBoard.sol)
 
 Start by launching Ganache. While Ganache is starting, take a moment to tell the students a little bit about Ganache and the Truffle suite.
 
@@ -355,7 +355,7 @@ Enable the `Solidity` development environment by clicking on the "Solidity" butt
 
 ![remix_solidity_env](Images/remix_enable_solidity_env.gif)
 
-Create a new smart contract by clicking the `Add local file` button. Then, populate the contents with [MessageBoard.sol](Activities/06-Ins_Intro_to_Remix_and_Ganache/Solved/MessageBoard.sol).
+Create a new smart contract by clicking the `Add local file` button. Then, populate the contents with [MessageBoard.sol](Activities/02-Ins_Intro_to_Remix_and_Ganache/Solved/MessageBoard.sol).
 
 ![remix_open_file](Images/remix_open_file.png)
 
@@ -409,7 +409,7 @@ Students will setup Ganache, create a workspace for `fintech`, set the `RPC port
 
 **Instructions:**
 
-* [README.md](Activities/07_Stu_Setting_up_Remix_And_Ganache/README.md)
+* [README.md](Activities/03_Stu_Setting_up_Remix_And_Ganache/README.md)
 
 Have the TA's circulate the room to assist with any installation issues that students may be having -- Students may have to add an allow rule to windows firewall.
 
@@ -515,13 +515,13 @@ Students will fill in a simple chart (pipeline) of the various levels of the EVM
 
 **Instructions:**
 
-* [README.md](Activities/10_Stu_Contextualizing_Solidity_Worksheet/README.md)
+* [README.md](Activities/05_Stu_Contextualizing_Solidity_Worksheet/README.md)
 
 **Files:**
 
-* [WorkSheet - Solved](Activities/10_Stu_Contextualizing_Solidity_Worksheet/Solved/evm_worksheet.md)
+* [WorkSheet - Solved](Activities/05_Stu_Contextualizing_Solidity_Worksheet/Solved/evm_worksheet.md)
 
-* [WorkSheet - Unsolved](Activities/10_Stu_Contextualizing_Solidity_Worksheet/Unsolved/evm_worksheet.md)
+* [WorkSheet - Unsolved](Activities/05_Stu_Contextualizing_Solidity_Worksheet/Unsolved/evm_worksheet.md)
 
 ---
 
@@ -758,7 +758,7 @@ Have TAs circulate the classroom to help students and foster collaboration in ea
 
 **Instructions:**
 
-* [README.md](Activities/15-Stu_State_of_the_Dapps/README.md)
+* [README.md](Activities/06-Stu_State_of_the_Dapps/README.md)
 
 ---
 

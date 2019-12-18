@@ -23,3 +23,7 @@ In this exercise, you will be filling in a simple chart (pipeline) of the variou
 * Solidity
 
 * Ethereum Node Software (Geth, Parity)
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -51,4 +51,5 @@ In this activity, you will examine several smart contract use cases and curate a
 * Try to imagine the implications of these use cases on society.
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
