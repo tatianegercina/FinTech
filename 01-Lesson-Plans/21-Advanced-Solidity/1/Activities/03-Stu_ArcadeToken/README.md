@@ -61,3 +61,7 @@ This will allow you to collect Ether in exchange for `ARCD` tokens that users ca
   * For example, `0xc3879B456DAA348a16B6524CBC558d2CC984722c => 333` is what the data might look like in contract storage.
 
 * For more details about how mappings work, visit the [Solidity Documentation](https://solidity.readthedocs.io/en/v0.5.13/types.html#mapping-types).
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -73,3 +73,7 @@ This same model can apply for any rewards system and can be customized to the us
 ## Hints
 
 * If you would like to know more about how basis points work, visit [Investopedia](https://www.investopedia.com/terms/b/basispoint.asp) for more information.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
