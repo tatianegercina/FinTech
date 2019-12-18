@@ -399,10 +399,10 @@ The commands should be:
 git clone https://github.com/dan-da/hd-wallet-derive
 cd hd-wallet-derive
 php -r "readfile('https://getcomposer.org/installer');" | php
-php composer.phar install
+php -d pcre.jit=0 composer.phar install
 ```
 
-Run these commands and install the dependencies. Have the students run the example given once the installation completes.
+Modify the last line to add the `-d pcre.jit=0` parameter to avoid some issues that may arise in Mac OS X. Run these commands and install the dependencies. Have the students run the example given once the installation completes.
 
 Ensure that everyone has successfully installed and can run the `hd-wallet-derive` tool from the command line.
 Once everyone has successfully installed the tool, have everyone `cd ..` into the directory containing the `hd-wallet-derive` folder.
