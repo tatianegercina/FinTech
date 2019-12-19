@@ -8,7 +8,7 @@ Open the [starter file](Unsolved/variables-01.py) and perform the following:
 
 **Create string variables.**
 
-1. Create a variable named `subject` with no value (None).
+1. Create a variable named `subject` with no value (i.e. set the value to None).
 
 2. Assign a value of "Programmers" to the variable `subject`.
 
