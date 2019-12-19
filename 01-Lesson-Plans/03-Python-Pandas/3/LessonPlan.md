@@ -521,7 +521,7 @@ Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing
 * `DatetimeIndexes` can be split into year, month, and day segments. The `DatetimeIndex` object includes the attributes `index.year`, `index.month`, and `index.day` for this. Passing these to a `groupby` statement will create multiple indexes based on each attribute.
 
   ```python
-  # Group by year, month, and day
+  # Group by year, month, and day and grab first of each group
   ticker_data_grp = ticker_data.groupby([ticker_data.index.year, ticker_data.index.month, ticker_data.index.day]).first()
   ticker_data_grp
   ```
