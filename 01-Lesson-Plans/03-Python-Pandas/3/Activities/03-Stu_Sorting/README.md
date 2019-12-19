@@ -14,15 +14,13 @@ Using the [starter file](Unsolved/out_of_sorts.ipynb) and Google Finance histori
 
 4. Output a sample of the data.
 
-5. Sort the DataFrame by `Close` in descending order using `sort_values`.
+5. Calculate daily returns.
 
-6. Calculate daily returns.
+6. Sort the DataFrame by `Close` in descending order using `sort_values` to obtain top daily return records. 
 
-7. Sort the DataFrame by `Close` again in descending order using `sort_values` to obtain top daily return records. 
+7. Slice out 5 records.
 
-8. Slice out 5 records.
-
-9. Plot the data.
+8. Plot the data.
 
 ---
 
