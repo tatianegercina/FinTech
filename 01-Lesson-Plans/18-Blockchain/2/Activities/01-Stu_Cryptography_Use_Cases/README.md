@@ -23,4 +23,5 @@ Talk with your partners about how you may have used cryptography in your life.
 Write down your answers to the above questions and be prepared to share them with the class.
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
