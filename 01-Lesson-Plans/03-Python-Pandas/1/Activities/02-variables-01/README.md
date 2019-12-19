@@ -21,7 +21,7 @@ Open the [starter file](Unsolved/variables-01.py) and perform the following:
 6. Create a variable, `full_name`, and assign it a value of the combination of `first_name` and `last_name` with a space.
 
 7. Create a variable, `profession`, and assign it a value of a string, "Computer Programmer".
-  
+
 8. Create a variable, `known_for`, and assign it a value of a string, "First Computer Programmer".
 
 9. Create a variable, `first_algorithm`, and assign it a value of a string, "Analytical Engine".
@@ -61,16 +61,6 @@ Open the [starter file](Unsolved/variables-01.py) and perform the following:
 3. Create and print a variable, `statement_three`, by assigning it a value of a concatenated string: "In 1842 she published the first Algorithm, the Analytical Engine, at the age of 27."
 
 4. Create and print a variable, `statement_four`, by assigning it a value of a concatenated string: "She was a British Citizen who lived in London, England until her passing in 1852 at the age of 37."
-
-**Execute the Python program.**
-
-1. Open the command line.
-
-2. Run `source activate PythonData` to activate your virtual environment.
-
-3. Navigate to the directory that is holding this code drill.
-
-4. Run `python filename.py` to test your output.
 
 ---
 
