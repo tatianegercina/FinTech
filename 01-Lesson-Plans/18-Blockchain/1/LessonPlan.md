@@ -626,6 +626,8 @@ If you end up needing to use this wallet, simply import it into MyCrypto, change
 Since you can work with very small amounts of Ether, you should have plenty of KETH to work with. Sending `0.1` at a time should suffice.
 Make a note to help refill this later for other instructors once the Kovan faucet is back up and running.
 
+Some students may encounter a [rare bug](https://github.com/MyCryptoHQ/MyCrypto/issues/2197) in MyCrypto where duplicate words in their mnemonic phrase causes the confirmation page to "get stuck" after selecting one of the duplicate words. If this occurs, simply have the student restart the "Create a New Wallet" process and generate a new mnemonic.
+
 Answer any questions before moving on.
 
 ---
