@@ -112,6 +112,10 @@ Walk students through the following steps.
 
   **Note:** The downloaded file may have to be renamed again as the Google Sheets appends the current sheet name to the file, for example `fb_google_finance - Sheet2.csv`.
 
+* The general process for extracting Google Finance data from within Google Sheets and downloading as a CSV is shown below.
+
+  ![google_finance_download](Images/google_finance_download.gif)
+
 * Open the file in Excel and format the numerical date values in proper date formatting.
 
   ![google-finance-format-in-excel](Images/google-finance-format-in-excel.png)
