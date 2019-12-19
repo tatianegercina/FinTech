@@ -603,9 +603,9 @@ Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexin
 * When working with dates as indexes, it's common to set the following two `read_csv` parameters to `True`: `parse_dates` and `infer_datetime_format`. These two date parameters eliminate the need to cast a date series to a `datetime` object.
 
   ```python
-  # Read csv data with dates
-  csv_path = Path("../../Resources/nasdaq_data.csv")
-  nasdaq_data = pd.read_csv(csv_path, parse_dates=True, index_col="Trade DATE", infer_datetime_format=True)
+  # Read csv data
+  csv_path = Path("../../Resources/goog_google_finance.csv")
+  goog_df = pd.read_csv(csv_path, parse_dates=True, index_col="Date", infer_datetime_format=True)
   ```
 
 * Multi-indexing is used to create multiple lookup points for data, as well as hierarchal relationships between data elements.
@@ -622,8 +622,8 @@ Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexin
 
   ```python
   # Set multi-index by grouping
-  nasdaq_data_grp = nasdaq_data.groupby([nasdaq_data.index.year, nasdaq_data.index.month]).first()
-  nasdaq_data_grp.head()
+  goog_df_grp = goog_df.groupby([goog_df.index.year, goog_df.index.month]).first()
+  goog_df_grp.head()
   ```
 
   ![Multi_Indexing_Groupby.png](Images/Multi_Indexing_Groupby.png)
@@ -631,9 +631,9 @@ Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexin
 * Once items have been grouped and indexed, data can be retrieved using those indexes.
 
   ```python
-  # Select GOOG NOCP for May 2019
-  google_may_2019_data = nasdaq_data_grp.loc[2019, 5]
-  print(google_may_2019_data)
+  # Select GOOG Close for May 2019
+  google_may_2019_data = goog_df_grp.loc[2019, 5]
+  google_may_2019_data
   ```
 
   ![Multi_Indexing_Lookup.png](Images/Multi_Indexing_Lookup.png)
