@@ -151,7 +151,7 @@ Use the slideshow to go over the course agenda and timeline. (Slides 10–13)
 
 * **Weeks 23–24:** Students are tasked with their final project.
 
-Then, explain that these skills and knowledge translate into real jobs. Activities and homework assignments will allow students to apply real-world FinTech job skills. (Slides 12–17)
+Then, explain that these skills and knowledge translate into real jobs. Activities and homework assignments will allow students to apply real-world FinTech job skills.
 
 Answer any questions before moving on.
 
