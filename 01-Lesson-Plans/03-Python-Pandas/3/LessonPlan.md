@@ -545,9 +545,9 @@ Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing
 * Because multi-indexing involves grouping data, an aggregation can be applied against the data. A common example is the `mean` function for calculating average. This is an alternative to using the `first` and `last` functions. Because aggregate functions are being used, outputs represent summarized/aggregated records.
 
   ```python
-  # Group by year and month and calculate average
-  ticker_data_grp_2 = ticker_data.groupby([ticker_data.index.year, ticker_data.index.month]).mean()
-  ticker_data_grp_2.head()
+  # Group by year and month and calculate the average of each group
+  ticker_data_grp_4 = ticker_data.groupby([ticker_data.index.year, ticker_data.index.month]).mean()
+  ticker_data_grp_4
   ```
 
   ![multi_index_agg.png](Images/multi_index_agg.png)
