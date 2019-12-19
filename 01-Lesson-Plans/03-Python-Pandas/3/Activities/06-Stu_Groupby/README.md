@@ -6,7 +6,7 @@ It's time you brushed up on the price dynamics of each crypto. Conduct a price a
 
 ## Instructions
 
-Using the [starter file](Unsolved/group_dynamics.ipynb) and the NASDAQ historical stock [data](Resources/crypto_data.csv), complete the following steps:
+Using the [starter file](Unsolved/group_dynamics.ipynb) and the historical stock [data](Resources/crypto_data.csv), complete the following steps:
 
 1. Load CSV data into Pandas using `read_csv`.
 
