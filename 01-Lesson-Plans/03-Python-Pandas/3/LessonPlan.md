@@ -563,7 +563,7 @@ Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing
   ```python
   # Slice data for 4/12/2019 from first group
   ticker_data_slice = ticker_data_grp.loc[2019,4,12]
-  ticker_data_slice.head()
+  ticker_data_slice
   ```
 
   ![multi_index_slice.png](Images/multi_index_slice.png)
