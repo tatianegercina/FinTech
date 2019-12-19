@@ -254,8 +254,8 @@ Open [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Solved/out_of_sorts.ipynb) a
 * The `sort_values` function can be used to sort a DataFrame by a specific column.
 
   ```python
-  # Sort data by `NOCP` in descending order
-  tsla_sorted = tsla_daily_returns.sort_values("NOCP")
+  # Sort data by `Close` in ascending order (default)
+  tsla_sorted = tsla_df.sort_values("Close")
   tsla_sorted.head()
   ```
 
