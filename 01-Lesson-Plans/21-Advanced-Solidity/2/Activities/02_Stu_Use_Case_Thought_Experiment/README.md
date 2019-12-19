@@ -1,6 +1,6 @@
 # Use Case Thought Experiment
 
-We have been discussing tokens, tokenomics, and tokens ability to represent a store of value on the Ethereum blockchain. In the previous activity, we learned that there are two primary use cases for tokens in the form of `fungible` and `non-fungible` goods. In the following activity you will pair with other students around you to brainstorm your own potential use-cases for fungible and non-fungible tokens on the blockchain.
+We have been discussing tokens, tokenomics, and tokens' ability to represent a store of value on the Ethereum blockchain. In the previous activity, we learned that there are two primary use cases for tokens in the form of `fungible` and `non-fungible` goods. In the following activity, you will pair with other students around you to brainstorm your potential use-cases for fungible and non-fungible tokens on the blockchain.
 
 ## Instructions
 

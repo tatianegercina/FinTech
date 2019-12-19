@@ -8,7 +8,7 @@ The starter code will contain the basics like file imports and boilerplate to sa
 
 * Starting with the `onlyOwner` modifier, add a `require` that checks to see if `msg.sender` is equal to the `owner` of the contract.
 
-  * Leave the underscore `_` at the end of the function in order to tell Solidity how to return back to the function that calls the modifier.
+  * Leave the underscore `_` at the end of the function in order to tell Solidity how to return to the function that calls the modifier.
 
 * For the constructor function's definition, perform the following:
 
@@ -26,7 +26,7 @@ The starter code will contain the basics like file imports and boilerplate to sa
 
 * In the `mint` function, call the internal `_mint` function the same way, only pass the `recipient` and `amount` parameters to `_mint` instead.
 
-* Finally, restrict the `mint` function to only be called by the owner by adding `onlyOwner` to the function's modifiers. Since the only modifier is `public`, you can add `onlyOwner` after `public`.
+* Finally, restrict the `mint` function only to be called by the owner by adding `onlyOwner` to the function's modifiers. Since the only modifier is `public`, you can add `onlyOwner` after `public`.
 
 ## Hints
 
