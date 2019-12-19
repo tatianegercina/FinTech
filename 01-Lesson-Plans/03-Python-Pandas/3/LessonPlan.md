@@ -187,13 +187,13 @@ Ask if there are any questions before moving on.
 
 ### 3. Student Do: Out of Sorts (15 min)
 
-In this activity, students will extract data for a single ticker from [NASDAQ](https://nasdaq.com) and calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
+In this activity, students will extract data for a single ticker from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function and calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
 
 **File:** [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Unsolved/out_of_sorts.ipynb)
 
 **Instructions:** [README.md](Activities/03-Stu_Sorting/README.md)
 
-As students work on the activity, circulate the room with the TAs to offer assistance to students who need it. Make sure students can extract the data from the NASDAQ website.
+As students work on the activity, circulate the room with the TAs to offer assistance to students who need it. Make sure students can extract the data from the Google Sheets website.
 
 If a student finishes the activity early, ask if they are willing to help present the solution by live coding how to sort a DataFrame by more than one column. This live-coding exercise will be completed in the activity review (the next part of the lesson).
 
@@ -389,7 +389,7 @@ In this section, review the Group Dynamics activity by completing a dry walk-thr
 
 **File:** [group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/group_dynamics.ipynb)
 
-Open the solution file,[group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/group_dynamics.ipynb), and complete a dry walk-through of the student activity solution, covering the following points:
+Open the solution file, [group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/group_dynamics.ipynb), and complete a dry walk-through of the student activity solution, covering the following points:
 
 * The `groupby` function can be used to group a DataFrame by a column. This allows data to be aggregated and summarized in groups rather than all at once. DataFrames can be grouped by a single column or multiple columns.
 
@@ -477,7 +477,7 @@ If time remains, end the review by calling on students to answer the following r
 
 ### 8. Instructor Do: Multi-Indexing (10 min)
 
-Now that students have learned that indexes can be created by using the `groupby` key, it's important that they know how to directly multi-index DataFrames. Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
+Now that students have learned that indexes can be created by using the `groupby` key, it's important that they know how to directly multi-index DataFrames. Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
 
 **Files:**
 
@@ -576,7 +576,7 @@ Ask if there are any questions before moving on.
 
 ### 9. Student Do: Indexing Fever (15 min)
 
-In this activity, students will use hierarchical indexes to gain access to historical stock data. The goal of this activity is for students to take their indexing skills to the next level by using DataFrames with multiple indexes. Students will leverage [NASDAQ](https://nasdaq.com) data to perform data segmentation for a single ticker over multiple months in a year.
+In this activity, students will use hierarchical indexes to gain access to historical stock data. The goal of this activity is for students to take their indexing skills to the next level by using DataFrames with multiple indexes. Students will leverage [Google Sheets](https://docs.google.com/spreadsheets/) to extract Google Finance data to perform data segmentation for a single ticker over multiple months in a year.
 
 **File:** [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Unsolved/Core/indexing_fever.ipynb)
 
@@ -784,7 +784,7 @@ Ask if there are any questions before moving on.
 
 ### 15. Instructor Do: Standard Deviation and Risk (10 min)
 
-This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate Sharpe ratios in the next activity. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
+This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate Sharpe ratios in the next activity. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
 
 **File:**
 
@@ -895,7 +895,7 @@ Ask if there are any questions before moving on.
 
 ### 16. Instructor Do: Sharpe Ratios (5 min)
 
-In this section, students will be introduced to Sharpe ratios and learn why risk-reward ratios are important in finance. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
+In this section, students will be introduced to Sharpe ratios and learn why risk-reward ratios are important in finance. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
 
 **Files:**
 
