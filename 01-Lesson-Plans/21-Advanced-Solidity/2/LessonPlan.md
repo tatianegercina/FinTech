@@ -61,14 +61,13 @@ Review tokens, and the concept of tokenomics with the class.
 
   * **Answer** They represent some store of value.
 
-
-* **Answer** They can be programmed with a smart contract.
+  * **Answer** They can be programmed with a smart contract.
 
 * What are some generally accepted differences between `coins` and `tokens`?
 
-* **Answer** Tokens are commonly built on top of an existing blockchain platform. In contrast, coins are commonly a fundamental component of a blockchain platform.
+  * **Answer** Tokens are commonly built on top of an existing blockchain platform. In contrast, coins are commonly a fundamental component of a blockchain platform.
 
-* **Answer** Coins are typically used as just a currency for buying and selling things. In contrast, tokens can have broader use cases.
+  * **Answer** Coins are typically used as just a currency for buying and selling things. In contrast, tokens can have broader use cases.
 
   * **Answer**  Sometimes there's no difference at all; many people within the crypto communities use the terms interchangeably.
 
