@@ -262,8 +262,8 @@ Open [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Solved/out_of_sorts.ipynb) a
 * The `sort_values` function has an attribute called `ascending` that can be configured as either `True` or `False`. Setting ascending to `True` sorts data in ascending order. `False` sorts data in descending order.
 
   ```python
-  # Sort data by `NOCP` in descending order
-  tsla_sorted = tsla_daily_returns.sort_values("NOCP", ascending=False)
+  # Sort data by `Close` in descending order
+  tsla_sorted = tsla_df.sort_values("Close", ascending=False)
   tsla_sorted.head()
   ```
 
