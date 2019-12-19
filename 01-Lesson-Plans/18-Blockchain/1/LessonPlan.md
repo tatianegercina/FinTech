@@ -36,13 +36,15 @@ By the end of the class, students will be able to:
 
 * There is an activity called "Peoplechain" aimed to emulate the public, censor resistant, and borderless nature of the blockchain; be sure to read through before the class.
 
-* If you encounter any issues with requesting KETH from the Kovan faucet, the following mnemonic phrase has been pre-funded with test tokens (**for instructors only!**):
+* **If you encounter any issues with requesting KETH from the Kovan faucet**, the following mnemonic phrase has been pre-funded with test tokens (**for instructors only!**):
 
   `use trouble sponsor panda camp grow pact matrix chief black napkin ghost`
 
   If you end up needing to use this wallet, simply import it into MyCrypto, change to the Kovan network, then distribute the KETH to the class and yourself.
   Since you can work with very small amounts of Ether, you should have plenty of KETH to work with. Sending `0.1` at a time should suffice.
   Make a note to help refill this later for other instructors once the Kovan faucet is back up and running.
+
+* Some students may encounter a [rare bug](https://github.com/MyCryptoHQ/MyCrypto/issues/2197) in MyCrypto where duplicate words in their mnemonic phrase causes the confirmation page to "get stuck" after selecting one of the duplicate words. If this occurs, simply have the student restart the "Create a New Wallet" process and generate a new mnemonic.
 
 ### Slideshow and Time Tracker
 
