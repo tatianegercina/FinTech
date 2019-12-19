@@ -528,6 +528,8 @@ Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing
 
   ![multi_index_date.png](Images/multi_index_date.png)
 
+  **Note:** The `first` function is used to display the first values for a GroupBy object. In this case, every value down to the `year`, `month`, and `day` level is unique, and therefore grabs the first and only value.
+
 * Multi-indexed data can be selected by using the `first` and `last` functions. `First` selects the first multi-index group, and `last` selects the last group.
 
   ```python
