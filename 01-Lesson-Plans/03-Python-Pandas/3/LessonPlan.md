@@ -540,6 +540,8 @@ Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing
 
   ![multi_index_first.png](Images/multi_index_first.png)
 
+  ![multi-index-last](Images/multi-index-last.png)
+
 * Because multi-indexing involves grouping data, an aggregation can be applied against the data. A common example is the `mean` function for calculating average. This is an alternative to using the `first` and `last` functions. Because aggregate functions are being used, outputs represent summarized/aggregated records.
 
   ```python
