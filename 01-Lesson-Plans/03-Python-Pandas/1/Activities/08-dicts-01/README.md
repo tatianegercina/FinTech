@@ -12,15 +12,6 @@ Open the [starter file](Unsolved/dicts-01.py) and perform the following:
 
 2. Print the manually modified `san_francisco` dictionary. Confirm that the contents match the commented-out version.
 
-3. Execute the Python program.
-
-    * Open the command line.
-
-    * Run `source activate PythonData` to activate your virtual environment.
-
-    * Navigate to the directory that is holding this code drill.
-
-    * Run `python filename.py` to test your output.
 
 ## Hint
 
