@@ -92,7 +92,9 @@ Walk students through the following steps.
 
   * `interval`: The frequency of returned data; either "DAILY" or "WEEKLY".
 
-* Type in the following for the Google Finance function: `=GOOGLEFINANCE("FB", "price", "1/1/2014", "12/31/2018", "DAILY")`. The data should populate within the Google Sheet.
+  **Note:** The `end_date` provides historical data up to but not including the date specified.
+
+* Type in the following for the Google Finance function: `=GOOGLEFINANCE("FB", "price", "2/12/2019", "5/14/2019", "DAILY")`. The data should populate within the Google Sheet.
 
   ![fb-google-finance-extract](Images/fb-google-finance-extract.png)
 
