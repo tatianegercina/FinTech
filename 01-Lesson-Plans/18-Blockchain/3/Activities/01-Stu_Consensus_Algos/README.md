@@ -25,4 +25,5 @@ In this activity, you will get with a group of three and review the pros and con
 * If time remains, try discussing any other consensus algorithms you may have heard about or studied and the tradeoffs they make.
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
