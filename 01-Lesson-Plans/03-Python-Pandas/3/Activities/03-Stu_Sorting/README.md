@@ -4,19 +4,19 @@ You're trying to identify the top 5 performing days for Tesla investment returns
 
 ## Instructions
 
-Using the [starter file](Unsolved/out_of_sorts.ipynb) and NASDAQ historical stock data, complete the following steps:
+Using the [starter file](Unsolved/out_of_sorts.ipynb) and Google Finance historical stock data, complete the following steps:
 
-1. Navigate to [NASDAQ.com](https://nasdaq.com) and download ticker data. Load the CSV data into Pandas using `read_csv`.
+1. Navigate to [Google Sheets](https://docs.google.com/spreadsheets/) and use the in-built Google Finance function to download ticker data. Load the CSV data into Pandas using the `read_csv` function.
 
-2. Index data by `Trade DATE`.
+2. Index data by `Date`.
 
 3. Clean the data.
 
 4. Output a sample of the data.
 
-5. Calculate daily returns.
+5. Sort the DataFrame by `NOCP` in descending order using `sort_values`.
 
-6. Sort the DataFrame by `NOCP` in descending order using `sort_values`.
+6. Calculate daily returns.
 
 7. Slice out 5 records.
 
