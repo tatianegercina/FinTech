@@ -511,20 +511,20 @@ Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing
 
 * A `DatetimeIndex` can be created by passing a `Date` field to the `index_col` attribute when using `read_csv`. `parse_dates` and `infer_datetime_format` should also be included.
 
-    ```python
-    # Read in data
-    csv_path = Path("../Resources/stock_data_by_ticker.csv")
-    ticker_data = pd.read_csv(csv_path, index_col='Date', parse_dates=True, infer_datetime_format=True)
-    ticker_data.head()
-    ```
+  ```python
+  # Read in data
+  csv_path = Path("../Resources/twtr_google_finance.csv")
+  ticker_data = pd.read_csv(csv_path, parse_dates=True, index_col='Date', infer_datetime_format=True)
+  ticker_data.head()
+  ```
 
 * `DatetimeIndexes` can be split into year, month, and day segments. The `DatetimeIndex` object includes the attributes `index.year`, `index.month`, and `index.day` for this. Passing these to a `groupby` statement will create multiple indexes based on each attribute.
 
   ```python
   # Group by year, month, and day
   ticker_data_grp = ticker_data.groupby([ticker_data.index.year, ticker_data.index.month, ticker_data.index.day]).first()
-  ticker_data_grp.head()
-   ```
+  ticker_data_grp
+  ```
 
   ![multi_index_date.png](Images/multi_index_date.png)
 
