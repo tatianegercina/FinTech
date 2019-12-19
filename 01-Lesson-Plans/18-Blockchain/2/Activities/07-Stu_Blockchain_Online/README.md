@@ -29,4 +29,5 @@ In this activity, you will be building a blockchain with fundamental data struct
   ![mining gif](Images/blockchain-mining.gif)
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

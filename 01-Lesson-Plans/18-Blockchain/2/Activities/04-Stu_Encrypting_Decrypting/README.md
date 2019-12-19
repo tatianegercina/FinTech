@@ -33,4 +33,5 @@ Pick a partner to encrypt and decrypt some messages using the Secretbox tool.
 * Verify with your partner that you see each other's messages correctly decrypted on each other's computers.
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

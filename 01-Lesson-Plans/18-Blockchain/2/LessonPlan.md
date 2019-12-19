@@ -99,7 +99,7 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Students Do: Cryptography Use Cases (15 min)
+### 2. Students Do: Cryptography Use Cases (10 min)
 
 In this activity, students will be researching in groups some applications of cryptography in the wild.
 
@@ -109,7 +109,7 @@ Have TAs circulate the class and ensure students are not stuck. This should be a
 
 **Files:**
 
-* [README.md](Activities/02-Stu_Cryptography_Use_Cases/README.md)
+* [README.md](Activities/01-Stu_Cryptography_Use_Cases/README.md)
 
 ---
 
@@ -175,7 +175,7 @@ In this activity, students will learn how hashing works by using several differe
 
 **Files:**
 
-* [solution.py](Activities/04-Ins_Hashing/Solved/solution.py)
+* [solution.py](Activities/02-Ins_Hashing/Solved/solution.py)
 
 Ask a volunteer student to define hashing again:
 
@@ -246,9 +246,9 @@ In this activity, students will now hash two equivalent messages and compare the
 
 **Files:**
 
-* [README.md](Activities/05-Stu_Hashlib/README.md)
+* [README.md](Activities/03-Stu_Hashlib/README.md)
 
-* [hashing.py](Activities/05-Stu_Hashlib/Unsolved/hashing.py)
+* [hashing.py](Activities/03-Stu_Hashlib/Unsolved/hashing.py)
 
 Point out to the students that the strings that are being hashed require the following syntax:
 
@@ -268,7 +268,7 @@ Have TAs circulate through the class to ensure that students can properly hash m
 
 **Files:**
 
-* [hashing.py](Activities/05-Stu_Hashlib/Solved/hashing.py)
+* [hashing.py](Activities/03-Stu_Hashlib/Solved/hashing.py)
 
 Ask the students the following questions:
 
@@ -370,7 +370,7 @@ Have TAs circulate and ensure that students can use the tool properly and are su
 
 **Files:**
 
-* [README.md](Activities/08-Stu_Encrypting_Decrypting/README.md)
+* [README.md](Activities/04-Stu_Encrypting_Decrypting/README.md)
 
 ---
 
@@ -500,7 +500,7 @@ Have TAs circulate and ensure that students are successfully encrypting and decr
 
 **Files:**
 
-* [README.md](Activities/11-Stu_Asymmetric_Encryption/README.md)
+* [README.md](Activities/05-Stu_Asymmetric_Encryption/README.md)
 
 ---
 
@@ -613,7 +613,7 @@ Have TAs circulate through the class and ensure that students are successfully v
 
 **Files:**
 
-* [README.md](Activities/14-Stu_Signing_Verifying/README.md)
+* [README.md](Activities/06-Stu_Signing_Verifying/README.md)
 
 ---
 
@@ -697,7 +697,7 @@ Have the TAs circulate through the class and ensure that students are connecting
 
 **Instructions:**
 
-* [README.md](Activities/18-Stu_Blockchain_Online/README.md)
+* [README.md](Activities/07-Stu_Blockchain_Online/README.md)
 
 ---
 
@@ -719,7 +719,7 @@ Answer any questions before moving on.
 
 ---
 
-### 20. Instructor Do: Recap / Where's the crypto in crypto? (10 min)
+### 20. Instructor Do: Recap / Where's the crypto in crypto? (5 min)
 
 Now that the students have a fundamental understanding of cryptography, and how a blockchain is built using these concepts and data structures, it's time to review and put a cap on the day.
 
