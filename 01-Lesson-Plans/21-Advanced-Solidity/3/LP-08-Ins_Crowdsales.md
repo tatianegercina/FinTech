@@ -24,9 +24,7 @@ Explain to the students:
 
   * Time limits for the sale.
 
-Briefly open (**max** 2 minutes) the [OpenZeppelin Crowdsale Documentation](https://docs.openzeppelin.com/contracts/2.x/crowdsales) and explore the different features they discuss. Make a stop at the [Crowdsale Constructor API doc](https://docs.openzeppelin.com/contracts/2.x/api/crowdsale#Crowdsale-constructor-uint256-address-payable-contract-IERC20-) and point out the constructor parameters for the `Crowdsale` contract (`uint256 rate, address payable wallet, contract IERC20 token`).
-
-![OpenZeppelin Crowdsale Documentation](Images/oz-crowdsale-docs.png)
+Briefly open (**max** 2 minutes) the [Crowdsale Constructor API doc](https://docs.openzeppelin.com/contracts/2.x/api/crowdsale#Crowdsale-constructor-uint256-address-payable-contract-IERC20-) and point out the constructor parameters for the `Crowdsale` contract (`uint256 rate, address payable wallet, contract IERC20 token`).
 
 ![Crowdsale Constructor](Images/oz-crowdsale-constructor.png)
 
