@@ -52,4 +52,5 @@ Awesome! Your genesis configuration is stored in your local home directory.
 We'll export this later. For now, congratulate yourself on creating the rules for your new blockchain network!
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

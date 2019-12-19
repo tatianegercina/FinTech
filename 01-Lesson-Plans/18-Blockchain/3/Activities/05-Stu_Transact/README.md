@@ -73,4 +73,5 @@ Explain to students that now we're going to send a transaction to ourselves to t
 Congratulations! That was the first transaction send on this blockchain network!
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

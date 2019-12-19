@@ -51,7 +51,7 @@ By the end of the unit, students will be able to:
 
 ---
 
-### 1. Instructor Do: Welcome Class (5 min)
+### 1. Instructor Do: Welcome Class (10 min)
 
 Welcome students to the third day of the introduction to the blockchain technology, open the lesson slides, and highlight that by the end of Today's class, we will do the following:
 
@@ -189,7 +189,7 @@ Have TAs circulate and ensure that students are actively engaging in discussion.
 
 **Instructions:**
 
-* [README.md](Activities/03-Stu_Consensus_Algos/README.md)
+* [README.md](Activities/01-Stu_Consensus_Algos/README.md)
 
 ---
 
@@ -332,7 +332,7 @@ Once every student has seen the success message, you can move on.
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Genesis_Creation/README.md)
+* [README.md](Activities/02-Stu_Genesis_Creation/README.md)
 
 ---
 
@@ -448,7 +448,7 @@ Have the TAs circulate and ensure that students are successfully following the i
 
 **Instructions:**
 
-* [README.md](Activities/09-Stu_Nodes_Accounts/README.md)
+* [README.md](Activities/03-Stu_Nodes_Accounts/README.md)
 
 ---
 
@@ -567,7 +567,7 @@ rm -Rf node1/geth node2/geth
 
 **Instructions:**
 
-* [README.md](Activities/13-Stu_Starting_Chain/README.md)
+* [README.md](Activities/04-Stu_Starting_Chain/README.md)
 
 ---
 
@@ -703,7 +703,7 @@ Ensure that:
 
 **Instructions:**
 
-* [README.md](Activities/16-Stu_Transact/README.md)
+* [README.md](Activities/05-Stu_Transact/README.md)
 
 ---
 

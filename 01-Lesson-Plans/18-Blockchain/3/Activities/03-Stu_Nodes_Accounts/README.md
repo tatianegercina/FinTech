@@ -63,4 +63,5 @@ Your final directory structure should look something like:
 ![directory tree](Images/geth-tree.png)
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
