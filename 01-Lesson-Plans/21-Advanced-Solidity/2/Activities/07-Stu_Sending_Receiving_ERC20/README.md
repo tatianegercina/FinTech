@@ -24,7 +24,7 @@ In this activity, you will partner up with a neighbor, and transact your tokens 
 
 ![ARCD Send](Images/arcd-send.gif)
 
-* Your partner will be sending their own ARCD tokens to you. Make sure to add your partner's token contract address into MetaMask the same way you added yours to get it to recognize the balance you have of their tokens.
+* Your partner will be sending their ARCD tokens to you. Make sure to add your partner's token contract address into MetaMask the same way you added yours to get it to recognize the balance you have of their tokens.
 
 * Explore the transactions in the Etherscan block explorer by clicking `View Transaction Details`:
 

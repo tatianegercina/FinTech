@@ -15,7 +15,7 @@ contract ArcadeToken is ERC20, ERC20Detailed {
     constructor(uint initial_supply) ERC20Detailed() public {
         // @TODO: Set the owner to be `msg.sender`
 
-        // @TODO: Call the internal `_mint` function to give `intial_supply` to the `owner`
+        // @TODO: Call the internal `_mint` function to give `initial_supply` to the `owner`
     }
 
     // @TODO: Add the `onlyOwner` modifier to this function after `public`
