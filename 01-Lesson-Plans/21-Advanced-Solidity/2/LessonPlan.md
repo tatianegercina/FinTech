@@ -34,37 +34,37 @@ Review tokens, and the concept of tokenomics with the class.
 
 * What are things that can be represented by a token?
 
-* **Answer** Property
+  * **Answer** Property
 
-* **Answer** Currency
+  * **Answer** Currency
 
-* **Answer** Votes
+  * **Answer** Votes
 
-* **Answer** Potentially any other store of value
+  * **Answer** Potentially any other store of value
 
 * What are some common aspects of a `token`.
 
-* **Answer** They have a supply which can be a fixed or infinite amount.
+  * **Answer** They have a supply which can be a fixed or infinite amount.
 
-* **Answer** They represent some store of value.
+  * **Answer** They represent some store of value.
 
-* **Answer** They can be programed with a smart contract.
+  * **Answer** They can be programed with a smart contract.
 
 * What are some generally accepted differences between `coins` and `tokens`?
 
-* **Answer** Tokens are commonly built on top of an existing blockchain platform, whereas coins are commonly a fundamental component of a blockchain platform.
+  * **Answer** Tokens are commonly built on top of an existing blockchain platform, whereas coins are commonly a fundamental component of a blockchain platform.
 
-* **Answer** Coins are typically used as just a currency for buying and selling things whereas tokens can have broader use cases.
+  * **Answer** Coins are typically used as just a currency for buying and selling things whereas tokens can have broader use cases.
 
-* **Answer**  Sometimes there's no difference at all; many people within the crypto communities use the terms interchangeably.
+  * **Answer**  Sometimes there's no difference at all; many people within the crypto communities use the terms interchangeably.
 
 * What are some potential benefits of tokenizing an asset on an open blockchain?
 
-* **Answer** The asset can be traded globally without any additional infrastructure.
+  * **Answer** The asset can be traded globally without any additional infrastructure.
 
-* **Answer** Easy transfer of ownership with improvements in liquidity and audibility.
+  * **Answer** Easy transfer of ownership with improvements in liquidity and audibility.
 
-* **Answer** Benefits of an open blockchain; open, public, borderless, censorship-resistant, and neutral.
+  * **Answer** Benefits of an open blockchain; open, public, borderless, censorship-resistant, and neutral.
 
 ### 2. Instructor Do: Fungible vs Non-Fungible Tokens (10 min)
 
@@ -219,23 +219,23 @@ Ask the students the following review questions about the ERC standards activity
 
 * Which token standards were fungible?
 
-* **Answer** 20, 777, 1155
+  * **Answer** 20, 777, 1155
 
 * Which token standards were fungible?
 
-* **Answer** 721, 1155
+  * **Answer** 721, 1155
 
 * What do you think some potential benefits of EIP's having to follow the acceptance process might be?
 
-* **Answer** Community support, better standards from peer review, open development.
+  * **Answer** Community support, better standards from peer review, open development.
 
 * Why do you think `fungible` and `non-fungible` are implemented as separate contracts?
 
-* **Answer** Keeping the standards focused on the use case and as simple as possible helps increase the adoption of the standard, and makes them easier to work with.
+  * **Answer** Keeping the standards focused on the use case and as simple as possible helps increase the adoption of the standard, and makes them easier to work with.
 
 * Why do you think ERC1155 combines the fungible and non-fungible concepts into one?
 
-* **Answer** For some use cases, like video games, you need a mix of fungible and non-fungible tokens available. For these edge cases, ERC1155 has your back.
+  * **Answer** For some use cases, like video games, you need a mix of fungible and non-fungible tokens available. For these edge cases, ERC1155 has your back.
 
 * What ERC standards would you like to see?
 
@@ -251,19 +251,19 @@ Before the break, we discussed various ERC token standards and what the students
 
 * Why might Ethereum improvement proposals such as ERCs be important?
 
-* **Answer** Provides a way to submit new standards within the community.
+  * **Answer** Provides a way to submit new standards within the community.
 
-* **Answer** Allows the community to agree on a current standard for a feature.
+  * **Answer** Allows the community to agree on a current standard for a feature.
 
-* **Answer** Helps prevent bugs and security vulnerabilities by creating a specification for implementing certain types of smart contracts.
+  * **Answer** Helps prevent bugs and security vulnerabilities by creating a specification for implementing certain types of smart contracts.
 
 * What are some of the categories for EIP's?
 
-* **Answer** Core, Networking, Interface, ERC, Meta, Informational
+  * **Answer** Core, Networking, Interface, ERC, Meta, Informational
 
 * What are some of the ERC's that we've taken a look at so far?
 
-* **Answer** 20, 777, 721, 1155
+  * **Answer** 20, 777, 721, 1155
 
 ### 10. Instructor Do: OpenZeppelin's ERC Library (15 min) (Critical)
 
@@ -594,3 +594,11 @@ Ask the students the following questions:
 * Why was MetaMask able to understand, send, and receive our ArcadeTokens?
 
   * **Answer:** MetaMask is compatible with the ERC20 standard, so it can recognize and utilize our tokens!
+
+---
+
+### End Class
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
