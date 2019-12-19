@@ -122,7 +122,7 @@ Walk students through the following steps.
 
   ```python
   # Read in CSV data
-  csv_path = Path('Resources/fb_google_finance.csv')
+  csv_path = Path('../Resources/fb_google_finance.csv')
   fb_ticker_data = pd.read_csv(csv_path, index_col='Date', parse_dates=True, infer_datetime_format=True)
   fb_ticker_data.head()
   ```
