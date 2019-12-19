@@ -1,6 +1,6 @@
 # Using a Wallet
 
-In this activity you will create a crypto wallet with [MyCrypto Desktop App](https://download.mycrypto.com/). If you have not already installed the MyCrypto App, please follow the instructions in [the installation guide](Supplemental/blockchain-install-guide.md).
+In this activity you will create a crypto wallet with [MyCrypto Desktop App](https://download.mycrypto.com/). If you have not already installed the MyCrypto App, please follow the instructions in [the installation guide](Resources/blockchain-install-guide.md).
 
 Using MyCrypto Desktop App, you will be requesting testnet tokens and sending transactions to your fellow students.
 
@@ -51,3 +51,7 @@ Once you are done, you will see the steps you will need to unlock your account i
 13.  Send some transactions to your neighbor(s), checking out all of the different attributes along the way.
 
 Take note of the transactions that have processed on the network for later; you will be using the transaction IDs in the next activity.
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

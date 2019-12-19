@@ -57,4 +57,5 @@ Rosa is a Money Sender. Joe is the Slacker for U.S. Record Keepers. Alec is the 
 * Alec sends a copy of the transaction to his team channel, the China Record Keepers.
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -49,4 +49,5 @@ Get into small groups up to three people, or work with the same groups as before
 14. What other information can you gleam from these transactions?
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

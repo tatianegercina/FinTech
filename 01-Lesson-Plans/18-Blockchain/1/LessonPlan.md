@@ -200,7 +200,7 @@ The only way to not excel at this exercise is to not participate in the research
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Use_Case_Study/README.md)
+* [README.md](Activities/01-Stu_Use_Case_Study/README.md)
 
 ---
 
@@ -368,7 +368,7 @@ Have TAs circulate to provide assistance to students facing challenges or to cla
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Peoplechain/README.md)
+* [README.md](Activities/02-Stu_Peoplechain/README.md)
 
 ---
 
@@ -424,7 +424,7 @@ Have the TAs circulate through the class and clarify definitions for students th
 
 **Instructions:**
 
-* [README.md](Activities/09-Stu_Basic_Terminology/README.md)
+* [README.md](Activities/03-Stu_Basic_Terminology/README.md)
 
 ### 10. Instructor Do: Basic Terminology Review (10 min)
 
@@ -680,11 +680,11 @@ Have TAs circulate to provide assistance to students facing challenges or to cla
 
 **Instructions:**
 
-* [README.md](Activities/14-Stu_Visualizing_Transactions/README.md)
+* [README.md](Activities/05-Stu_Visualizing_Transactions/README.md)
 
 ---
 
-### 15. Instructor Do: Visualizing Transactions Review (5 min)
+### 15. Instructor Do: Visualizing Transactions Review (10 min)
 
 Review the groups and ensure that students can navigate and visualize transactions.
 
@@ -796,7 +796,7 @@ Have TAs circulate throughout the class, facilitating discussion and ensuring st
 
 **Instructions:**
 
-* [README.md](Activities/15-Stu_Use_Case_Brainstorm/README.md)
+* [README.md](Activities/06-Stu_Use_Case_Brainstorm/README.md)
 
 ---
 
@@ -830,7 +830,7 @@ Answer any questions before moving on.
 
 ---
 
-### 19. Instructor Do: Recap (5 min)
+### 19. Instructor Do: Recap (10 min)
 
 Students have learned tons of new information today. Facilitate a discussion around the different ideas that were spoken about during the class, and what questions students may be asking the most.
 

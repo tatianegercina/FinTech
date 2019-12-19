@@ -19,4 +19,5 @@ Answer the following questions:
 6. Who makes all of the rules of the blockchain?
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
