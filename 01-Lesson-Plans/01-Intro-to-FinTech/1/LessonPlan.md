@@ -137,9 +137,9 @@ In this section, provide an overview of the topics and technologies used in the 
 
 Use the slideshow to go over the course agenda and timeline. (Slides 10–13)
 
-* **Weeks 1–2:** Students will be introduced to the world of FinTech and the current financial landscape.
+* **Week 1:** Students will be introduced to the world of FinTech and the current financial landscape.
 
-* **Weeks 3–7:** While useful and easy to grasp, Excel is limited in its technical capabilities compared to a full-fledged programming language like Python. This is why, over the next several weeks, students will learn the basics of Python as well as how to use additional libraries and tools such as Pandas, APIs, Plotly, and SQL databases, all within the context of financial analysis.
+* **Weeks 2–7:** Students will learn the basics of Python and how to use additional libraries and tools such as Pandas, APIs, Plotly, and SQL databases, in the context of financial analysis.
 
 * **Weeks 8–9** Students are tasked with their first project.
 
@@ -151,7 +151,7 @@ Use the slideshow to go over the course agenda and timeline. (Slides 10–13)
 
 * **Weeks 23–24:** Students are tasked with their final project.
 
-Then, explain that these skills and knowledge translate into real jobs. Activities and homework assignments will allow students to apply real-world FinTech job skills. (Slides 14–18)
+Then, explain that these skills and knowledge translate into real jobs. Activities and homework assignments will allow students to apply real-world FinTech job skills. (Slides 12–17)
 
 Answer any questions before moving on.
 
