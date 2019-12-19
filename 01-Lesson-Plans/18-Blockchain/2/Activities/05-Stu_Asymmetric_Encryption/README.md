@@ -45,4 +45,5 @@ Think to yourself and discuss with your partner:
 * What makes this safer than symmetric encryption for communications?
 
 ---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
