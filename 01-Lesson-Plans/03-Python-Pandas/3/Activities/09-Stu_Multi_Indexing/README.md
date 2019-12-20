@@ -6,9 +6,9 @@ You've caught the multi-indexing fever! Add power to your financial analytic pip
 
 Using the [starter file](Unsolved/Core/indexing_fever.ipynb), complete the following steps:
 
-1. Extract three months of historical data from NASDAQ.com, and load the CSV data into Pandas using `read_csv`.
+1. Extract three months of historical data from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function, and load the CSV data into Pandas using `read_csv`.
 
-2. In the `read_csv` function, set the index to equal `Trade DATE` series. Enable read_csv's `parse_dates` and `infer_datetime_format` parameters.
+2. In the `read_csv` function, set the index to equal `Date` series. Enable read_csv's `parse_dates` and `infer_datetime_format` parameters.
 
 3. Group data by DatetimeIndex year and month.
 
