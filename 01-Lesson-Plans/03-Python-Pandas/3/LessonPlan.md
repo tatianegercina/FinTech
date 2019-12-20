@@ -39,8 +39,8 @@ By the end of class, students will be able to:
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
-* To watch an example class lecture, go here: [3.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=10e7097d-5905-4c40-b413-aaa600dbb8ee) Note that this video may not reflect the most recent lesson plan.
 
+* To watch an example class lecture, go here: [3.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=10e7097d-5905-4c40-b413-aaa600dbb8ee) Note that this video may not reflect the most recent lesson plan.
 
 ### Class Slides and Time Tracker
 
@@ -56,7 +56,7 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome and Refresher Demo (5 min)
 
-In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
+In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns. Data for this activity will be retrieved from Google Sheets via the in-built Google Finance function.
 
 Welcome students to the second day of Pandas and use the slides to explain the focus of today's class.
 
@@ -66,48 +66,68 @@ Welcome students to the second day of Pandas and use the slides to explain the f
 
 Introduce the refresher demo on returns.
 
-* The following demo will show how to extract historical ticker data from NASDAQ.com as a CSV. The goal is to get students to understand that all of the data they need to perform ROI analysis is just a few clicks away.
+* The following demo will show how to extract historical ticker data from Google Sheets via the Google Finance function as a CSV. The goal is to get students to understand that all of the data they need to perform ROI analysis is just a few clicks away.
 
-* Using NASDAQ.com, students can leverage historical stock data to keep a running tab on daily returns for specific stocks.
+* Using Google Sheets with the in-built Google Finance function, students can leverage historical stock data to keep a running tab on daily returns for specific stocks.
 
-* Students will watch and follow along to navigate the NASDAQ site.
+* Students will watch and follow along to navigate the Google Sheets website.
 
 Walk students through the following steps.
 
-* Navigate to the [NASDAQ](https://nasdaq.com) website. Use the search bar to enter in the name or ticker of a stock. This example uses Facebook.
+* Navigate to the [Google Sheets](https://docs.google.com/spreadsheets/) website. Then open a new spreadsheet.
 
-  ![nasdaq_search.png](Images/nasdaq_search.png)
+  ![new-google-sheet.png](Images/new-google-sheet.png)
 
-* Use the left-hand navigation pane to select Historical Quote. This link will open a web UI that can be used to select the time range of data that you need.
+* Use the Google Finance in-built function to extract historical stock data from within Google Sheets. The function takes in five input parameters:
 
-  ![launch_historical.png](Images/launch_historical.png)
+  ![google-finance-sheet.png](Images/google-finance-sheet.png)
 
-* Choose the NASDAQ Official Close Price page.
+  * `ticker`: The ticker symbol for the security to consider.
 
-  * NASDAQ provides a simplified view of ticker prices with the NASDAQ Official Close Price page. This page provides access to ticker close prices.
+  * `attribute`: The attribute to fetch about `ticker` from Google Finance.
 
-  * NASDAQ also provides flexibility for extracting additional data elements as well (open price, high price, etc.).
+  * `start_date`: The start date when fetching historical data.
 
-  ![nasdaq_layout.png](Images/nasdaq_layout.png)
+  * `end_date`: The end date when fetching historical data, or the number of days from `start_date` for which to return data.
 
-* Select 3 months as the timeframe.
+  * `interval`: The frequency of returned data; either "DAILY" or "WEEKLY".
 
-  ![select_timeframe.png](Images/select_timeframe.png)
+  **Note:** The `end_date` provides historical data up to but not including the date specified.
 
-* Scroll down and right-click on the **Download all available data** link. Click **Save link as**.
+* Type in the following for the Google Finance function: `=GOOGLEFINANCE("FB", "price", "2/12/2019", "5/14/2019", "DAILY")`. The data should populate within the Google Sheet.
 
-* Choose a folder and name the file `fb_nasdaq.csv`. Click **Save**.
+  ![fb-google-finance-extract](Images/fb-google-finance-extract.png)
 
-  ![fb_nasdaq.png](Images/fb_nasdaq.png)
+* Then, create a new Google Sheet tab and copy and paste the historical stock data into the new tab. Make sure to "paste values only" otherwise the data will not download correctly.
 
-* Load the saved file into Pandas and output the data to the screen.
+  ![google-finance-copy-hard-paste](Images/google-finance-copy-hard-paste.png)
 
-* Use the `index_col`, `parse_dates`, and `infer_datetime_format` attributes to create a DatetimeIndex (based on `Trader DATE`) for date range manipulation. These attributes are used to ensure that Pandas interprets the date index as a date object.
+  ![google-finance-epoch-date](Images/google-finance-epoch-date.png)
+
+  **Note:** Due to the copy and paste of values only, the date values will be represented in numerical format. Therefore, they will have to be re-formatted as date values after downloading the CSV and editing in Excel. 
+
+* Rename the file as `fb_google_finance` and then download and save the file as a CSV. Make sure to reside in the second tab where the hard-pasted values are contained.
+
+  ![fb-google-finance-csv](Images/fb-google-finance-csv.png)
+
+  **Note:** The downloaded file may have to be renamed again as the Google Sheets appends the current sheet name to the file, for example `fb_google_finance - Sheet2.csv`.
+
+* The general process for extracting Google Finance data from within Google Sheets and downloading as a CSV is shown below.
+
+  ![google_finance_download](Images/google_finance_download.gif)
+
+* Open the file in Excel and format the numerical date values in proper date formatting.
+
+  ![google-finance-format-in-excel](Images/google-finance-format-in-excel.png)
+
+  ![google-finance-finished-format](Images/google-finance-finished-format.png)
+
+* Next, load the saved file into Pandas and use the `index_col`, `parse_dates`, and `infer_datetime_format` attributes to create a DatetimeIndex (based on `Date`) for date range manipulation. These attributes are used to ensure that Pandas interprets the date index as a date object.
 
   ```python
   # Read in CSV data
-  csv_path = Path('../Resources/fb_nasdaq.csv')
-  fb_ticker_data = pd.read_csv(csv_path, index_col='Trade DATE', parse_dates=True, infer_datetime_format=True)
+  csv_path = Path('../Resources/fb_google_finance.csv')
+  fb_ticker_data = pd.read_csv(csv_path, index_col='Date', parse_dates=True, infer_datetime_format=True)
   fb_ticker_data.head()
   ```
 
@@ -173,13 +193,13 @@ Ask if there are any questions before moving on.
 
 ### 3. Student Do: Out of Sorts (15 min)
 
-In this activity, students will extract data for a single ticker from [NASDAQ](https://nasdaq.com) and calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
+In this activity, students will extract data for a single ticker from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function and calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
 
 **File:** [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Unsolved/out_of_sorts.ipynb)
 
 **Instructions:** [README.md](Activities/03-Stu_Sorting/README.md)
 
-As students work on the activity, circulate the room with the TAs to offer assistance to students who need it. Make sure students can extract the data from the NASDAQ website.
+As students work on the activity, circulate the room with the TAs to offer assistance to students who need it. Make sure students can extract the data from the Google Sheets website.
 
 If a student finishes the activity early, ask if they are willing to help present the solution by live coding how to sort a DataFrame by more than one column. This live-coding exercise will be completed in the activity review (the next part of the lesson).
 
@@ -238,16 +258,16 @@ Open [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Solved/out_of_sorts.ipynb) a
 * The `sort_values` function can be used to sort a DataFrame by a specific column.
 
   ```python
-  # Sort data by `NOCP` in descending order
-  tsla_sorted = tsla_daily_returns.sort_values("NOCP")
+  # Sort data by `Close` in ascending order (default)
+  tsla_sorted = tsla_df.sort_values("Close")
   tsla_sorted.head()
   ```
 
 * The `sort_values` function has an attribute called `ascending` that can be configured as either `True` or `False`. Setting ascending to `True` sorts data in ascending order. `False` sorts data in descending order.
 
   ```python
-  # Sort data by `NOCP` in descending order
-  tsla_sorted = tsla_daily_returns.sort_values("NOCP", ascending=False)
+  # Sort data by `Close` in descending order
+  tsla_sorted = tsla_df.sort_values("Close", ascending=False)
   tsla_sorted.head()
   ```
 
@@ -375,7 +395,7 @@ In this section, review the Group Dynamics activity by completing a dry walk-thr
 
 **File:** [group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/group_dynamics.ipynb)
 
-Open the solution file,[group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/group_dynamics.ipynb), and complete a dry walk-through of the student activity solution, covering the following points:
+Open the solution file, [group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/group_dynamics.ipynb), and complete a dry walk-through of the student activity solution, covering the following points:
 
 * The `groupby` function can be used to group a DataFrame by a column. This allows data to be aggregated and summarized in groups rather than all at once. DataFrames can be grouped by a single column or multiple columns.
 
@@ -463,7 +483,7 @@ If time remains, end the review by calling on students to answer the following r
 
 ### 8. Instructor Do: Multi-Indexing (10 min)
 
-Now that students have learned that indexes can be created by using the `groupby` key, it's important that they know how to directly multi-index DataFrames. Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
+Now that students have learned that indexes can be created by using the `groupby` key, it's important that they know how to directly multi-index DataFrames. Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
 
 **Files:**
 
@@ -495,22 +515,24 @@ Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing
 
 * A `DatetimeIndex` can be created by passing a `Date` field to the `index_col` attribute when using `read_csv`. `parse_dates` and `infer_datetime_format` should also be included.
 
-    ```python
-    # Read in data
-    csv_path = Path("../Resources/stock_data_by_ticker.csv")
-    ticker_data = pd.read_csv(csv_path, index_col='Date', parse_dates=True, infer_datetime_format=True)
-    ticker_data.head()
-    ```
+  ```python
+  # Read in data
+  csv_path = Path("../Resources/twtr_google_finance.csv")
+  ticker_data = pd.read_csv(csv_path, parse_dates=True, index_col='Date', infer_datetime_format=True)
+  ticker_data.head()
+  ```
 
 * `DatetimeIndexes` can be split into year, month, and day segments. The `DatetimeIndex` object includes the attributes `index.year`, `index.month`, and `index.day` for this. Passing these to a `groupby` statement will create multiple indexes based on each attribute.
 
   ```python
-  # Group by year, month, and day
+  # Group by year, month, and day and grab first of each group
   ticker_data_grp = ticker_data.groupby([ticker_data.index.year, ticker_data.index.month, ticker_data.index.day]).first()
-  ticker_data_grp.head()
-   ```
+  ticker_data_grp
+  ```
 
   ![multi_index_date.png](Images/multi_index_date.png)
+
+  **Note:** The `first` function is used to display the first value for each group within a GroupBy object. In this case, every group down to the `year`, `month`, and `day` level is unique, and therefore grabs the first and only value of every group.
 
 * Multi-indexed data can be selected by using the `first` and `last` functions. `First` selects the first multi-index group, and `last` selects the last group.
 
@@ -522,12 +544,14 @@ Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing
 
   ![multi_index_first.png](Images/multi_index_first.png)
 
+  ![multi-index-last](Images/multi-index-last.png)
+
 * Because multi-indexing involves grouping data, an aggregation can be applied against the data. A common example is the `mean` function for calculating average. This is an alternative to using the `first` and `last` functions. Because aggregate functions are being used, outputs represent summarized/aggregated records.
 
   ```python
-  # Group by year and month and calculate average
-  ticker_data_grp_2 = ticker_data.groupby([ticker_data.index.year, ticker_data.index.month]).mean()
-  ticker_data_grp_2.head()
+  # Group by year and month and calculate the average of each group
+  ticker_data_grp_4 = ticker_data.groupby([ticker_data.index.year, ticker_data.index.month]).mean()
+  ticker_data_grp_4
   ```
 
   ![multi_index_agg.png](Images/multi_index_agg.png)
@@ -543,7 +567,7 @@ Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing
   ```python
   # Slice data for 4/12/2019 from first group
   ticker_data_slice = ticker_data_grp.loc[2019,4,12]
-  ticker_data_slice.head()
+  ticker_data_slice
   ```
 
   ![multi_index_slice.png](Images/multi_index_slice.png)
@@ -562,7 +586,7 @@ Ask if there are any questions before moving on.
 
 ### 9. Student Do: Indexing Fever (15 min)
 
-In this activity, students will use hierarchical indexes to gain access to historical stock data. The goal of this activity is for students to take their indexing skills to the next level by using DataFrames with multiple indexes. Students will leverage [NASDAQ](https://nasdaq.com) data to perform data segmentation for a single ticker over multiple months in a year.
+In this activity, students will use hierarchical indexes to gain access to historical stock data. The goal of this activity is for students to take their indexing skills to the next level by using DataFrames with multiple indexes. Students will leverage [Google Sheets](https://docs.google.com/spreadsheets/) to extract Google Finance data to perform data segmentation for a single ticker over multiple months in a year.
 
 **File:** [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Unsolved/Core/indexing_fever.ipynb)
 
@@ -583,9 +607,9 @@ Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexin
 * When working with dates as indexes, it's common to set the following two `read_csv` parameters to `True`: `parse_dates` and `infer_datetime_format`. These two date parameters eliminate the need to cast a date series to a `datetime` object.
 
   ```python
-  # Read csv data with dates
-  csv_path = Path("../../Resources/nasdaq_data.csv")
-  nasdaq_data = pd.read_csv(csv_path, parse_dates=True, index_col="Trade DATE", infer_datetime_format=True)
+  # Read csv data
+  csv_path = Path("../../Resources/goog_google_finance.csv")
+  goog_df = pd.read_csv(csv_path, parse_dates=True, index_col="Date", infer_datetime_format=True)
   ```
 
 * Multi-indexing is used to create multiple lookup points for data, as well as hierarchal relationships between data elements.
@@ -602,8 +626,8 @@ Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexin
 
   ```python
   # Set multi-index by grouping
-  nasdaq_data_grp = nasdaq_data.groupby([nasdaq_data.index.year, nasdaq_data.index.month]).first()
-  nasdaq_data_grp.head()
+  goog_df_grp = goog_df.groupby([goog_df.index.year, goog_df.index.month]).first()
+  goog_df_grp.head()
   ```
 
   ![Multi_Indexing_Groupby.png](Images/Multi_Indexing_Groupby.png)
@@ -611,9 +635,9 @@ Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexin
 * Once items have been grouped and indexed, data can be retrieved using those indexes.
 
   ```python
-  # Select GOOG NOCP for May 2019
-  google_may_2019_data = nasdaq_data_grp.loc[2019, 5]
-  print(google_may_2019_data)
+  # Select GOOG Close for May 2019
+  google_may_2019_data = goog_df_grp.loc[2019, 5]
+  google_may_2019_data
   ```
 
   ![Multi_Indexing_Lookup.png](Images/Multi_Indexing_Lookup.png)
@@ -770,7 +794,7 @@ Ask if there are any questions before moving on.
 
 ### 15. Instructor Do: Standard Deviation and Risk (10 min)
 
-This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate Sharpe ratios in the next activity. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
+This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate Sharpe ratios in the next activity. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
 
 **File:**
 
@@ -881,7 +905,7 @@ Ask if there are any questions before moving on.
 
 ### 16. Instructor Do: Sharpe Ratios (5 min)
 
-In this section, students will be introduced to Sharpe ratios and learn why risk-reward ratios are important in finance. Data for this activity was retrieved from [NASDAQ](http://nasdaq.com).
+In this section, students will be introduced to Sharpe ratios and learn why risk-reward ratios are important in finance. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
 
 **Files:**
 
