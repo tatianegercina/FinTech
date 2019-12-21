@@ -6,11 +6,11 @@ This guide serves as a step by step process for setting up and validating the [`
 
 * It is strongly recommended to create a new Python virtual environment for this unit to prevent cross-dependency issues.
 
-* Windows users **MUST** use `git-bash` and not the default Windows command prompt when you are requested to open the terminal window to execute commands. You should run `git-bash` as administrator to successfully install the libraries.
+* Windows users **MUST** use `git-bash` or _Anaconda Prompt_, and not the default Windows command prompt when you are requested to open the terminal window to execute commands, depending on the type of task to perform.
 
 ## Installation
 
-Open a terminal and execute the following commands to install `web3.py` and `bit`, respectively.
+Open a terminal and execute the following commands to install `web3.py` and `bit`, respectively. Windows users **MUST** use the _Anaconda Prompt_ in this section.
 
 * Open the terminal and run the following command to create a brand new Python virtual environment for this unit.
 
@@ -42,7 +42,7 @@ Open a terminal and execute the following commands to install `web3.py` and `bit
 
 ## Verify Installation
 
-Once the `web3.py` and `bit` modules are downloaded and installed, verify that both installations completed successfully.
+Once the `web3.py` and `bit` modules are downloaded and installed, verify that both installations completed successfully. Windows users **MUST** use `git-bash` in this section.
 
 * Use the `pip list` function with a `grep` argument to identify if the `web3` library installed successfully.
 
