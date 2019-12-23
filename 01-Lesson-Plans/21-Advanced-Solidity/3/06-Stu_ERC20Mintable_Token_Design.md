@@ -13,7 +13,10 @@ contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 }
 ```
 
-* Add a constructor that accepts `string memory name`, `string memory symbol`, and `uint initial_supply`. Pass the `name` and `symbol` variables to a secondary `ERC20Detailed` constructor, and hardcode the third `decimals` parameter to `18` (Ethereum's default). Within the constructor body, call the `mint` function and pass the `msg.sender` and `initial_supply`.
+* Add a constructor that accepts `string memory name`, `string memory symbol`, and `uint initial_supply`. Pass the `name` and `symbol` variables to a secondary `ERC20Detailed` constructor, and hardcode the third `decimals` parameter to `18` (Ethereum's default).
+
+* Within the constructor body, call the `mint` function and pass the `msg.sender` and `initial_supply`.
+
 ## Challenge
 
 * If time remains, calling the `mint` functions and try adding and removing minters from the contract.
