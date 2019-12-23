@@ -18,6 +18,9 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * Overall, this should be a fun day for students that will help them build confidence in their Solidity programming skills. Be sure to offer plenty of support and encouragement to those students who have never worked with a compiled language
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [20.4 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aed7b919-b3e3-4440-b4d2-ab28004ce6f0) Note that this video may not reflect the most recent lesson plan.
+
 ---
 
 ### 1. Instructor Do: Welcome Students (5 min)
