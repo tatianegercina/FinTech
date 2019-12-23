@@ -12,7 +12,7 @@ Help Harold create a program that will achieve the marketing department's goalsâ
 
 ## Instructions
 
-* Create a function named `create_phrase` that takes in `name` and `revenue` as parameters, and returns a dynamic greeting based on revenue conditionals:
+* Create a function named `create_greeting` that takes in `first_name`, `last_name`, and `revenue` as parameters, and returns a dynamic greeting based on revenue conditionals:
 
   * Platinum = 3001+
   * Gold = 2001â€“3000
