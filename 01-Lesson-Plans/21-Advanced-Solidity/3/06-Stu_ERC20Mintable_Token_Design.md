@@ -1,6 +1,6 @@
 # ERC20Mintable Token Design
 
-In this activity, you will build a mintable ERC20token and prepare it for a crowdsale
+In this activity, you will build a mintable ERC20token and prepare it for a crowdsale.
 
 ## Instructions
 
