@@ -45,6 +45,9 @@ and to understand how wallets work across the blockchain ecosystem.
 
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
+### Sample Class Video (Highly Recommended)
+* To watch an example class lecture, go here: [19.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2768585e-9656-444d-acbd-ab1f0053d1df) Note that this video may not reflect the most recent lesson plan.
+
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
