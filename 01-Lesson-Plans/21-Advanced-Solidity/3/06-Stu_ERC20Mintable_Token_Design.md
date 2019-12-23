@@ -13,6 +13,7 @@ contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 }
 ```
 
+* Add a constructor that accepts `string memory name`, `string memory symbol`, and `uint initial_supply`. Pass the `name` and `symbol` variables to a secondary `ERC20Detailed` constructor. Within the constructor body, call the `mint` function and pass the `msg.sender` and `initial_supply`.
 ## Challenge
 
 * If time remains, try calling your ERC20 mintable token contract with different parameters, such as `name`, `symbol`, and `initial supply`.
