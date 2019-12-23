@@ -8,15 +8,7 @@
 
 ## Instructions
 
-## Fetching FRED data
-
-* Use Pandas's web datareader to pull in data from FRED as a Pandas DataFrame. You do not need an API key.
-
-* See the documentation for an example of retrieving data from FRED: [https://pandas-datareader.readthedocs.io/en/latest/remote_data.html](https://pandas-datareader.readthedocs.io/en/latest/remote_data.html).
-
-### Hodrick-Prescott Filter
-
-* Use the DataReader to fetch the GDP data from FRED using the start and end dates.
+* Read the csv GDP data and set the `DATE` column as a datetime index.
 
 * Plot the raw GDP data as a line plot.
 
@@ -29,14 +21,6 @@
 * Repeat the processes for inflation (keyword `CPIAUCNS`) and job count (keyword `PAYEMS`).
 
 * For at least one of these data sets, plot the exponentially-weighted moving averages. How do the results compare to results of the H-P filter?
-
-### Notes
-
-You will need to install the [pandas-datareader](https://pandas-datareader.readthedocs.io/en/latest/) for the activity.
-
-```
-pip install pandas-datareader
-```
 
 ---
 
