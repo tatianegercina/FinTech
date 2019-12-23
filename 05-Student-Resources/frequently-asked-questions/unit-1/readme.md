@@ -21,4 +21,25 @@ In a similar way, virtual environments create a personalized space for your proj
 
 Another important reason for using virtual environments is for deployment purposes.  If you have an application you wish to deploy, you wouldn't want to install a bunch of packages it doesn't need to run.  This will slow down the application and cause deployment errors.
 
-####
+#### Where can I find out more about FinTech and stay up to date on FinTech news?
+
+As with most topics, there are numerous resources for gaining more information and all are just a Google search away!  But to get you started on your journey, here are a few web resources that we like:
+
+[FinTech Weekly](https://www.fintechweekly.com/)
+
+[TechCrunch](https://techcrunch.com/tag/fintech/)
+
+[Coin Telegraph](https://cointelegraph.com/)
+
+[FinTech Futures](https://www.fintechfutures.com/)
+
+#### Where can I get a consise beginner summary for Markdown?
+
+Right here! Try the [Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
+
+#### How does the instructor execute computer commands so quickly?
+
+The answer is simple - keyboard shortcuts.  You may not have needed them before - but in coding, they will be one of your new best friends.  Check out these keyboard shortcut cheatsheets:
+
+[Mac](placeholder)
+[windows](placeholder)
