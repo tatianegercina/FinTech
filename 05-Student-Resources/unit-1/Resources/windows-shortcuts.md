@@ -1,4 +1,4 @@
-<center><h1>Windows Keyboard Shortcuts</h1>    
+<h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Windows Keyboard Shortcuts</h1>     
 
   
 
@@ -20,4 +20,4 @@
 |` Alt + Page Up `            | Move up one screen            |
 | `Alt + Page down `          | Move down one screen          |
 | `Ctrl + Alt +Tab `          | View open apps                |
-|` Windows Button + Left or Right arrow key `| Manipulate split screen       |</center>
+|` Windows Button + Left or Right arrow key `| Manipulate split screen      
