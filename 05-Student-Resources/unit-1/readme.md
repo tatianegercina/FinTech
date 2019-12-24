@@ -39,7 +39,7 @@ Right here! Try this [Markdown Guide!](https://www.markdownguide.org/cheat-sheet
 
 #### How does the instructor execute computer commands so quickly?
 
-The answer is simple - keyboard shortcuts.  You may not have needed them before - but in coding, they will be one of your new best friends.  Check out these keyboard shortcut cheatsheets:
+The answer is simple - keyboard shortcuts.  You may not have needed them before - but in coding, they'll be one of your new best friends.  Check out these keyboard shortcut cheatsheets to help you get started:
 
-[Mac](Resources/windows-shortcuts.md)
-[windows](Resources/mac-shortcuts.md)
+[Mac](Resources/mac-shortcuts.md)  
+[Windows](Resources/windows-shortcuts.md)
