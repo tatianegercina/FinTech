@@ -80,6 +80,12 @@ In some cases, the `Web3.py` library may fail to install in Microsoft Windows du
 
 5. This process takes about 15 minutes
 
+### Issues Installing `bit` or `web3` After Installing the Microsoft Visual C++ Build Tools In Windows
+
+Along the installation process of `bit` or `web3` you may experience an issue related with the Microsoft Visual C++ Build tools in Windows if you update Windows after installing the build tools, and before installing these Python libraries.
+
+You may see an error message that states that `wheel is not supported`, the solution for this issue is to uninstall and reinstall the Microsoft Visual C++ Build Tools.
+
 ### Update Conda Environment
 
 An out-of-date Anaconda environment can create issues when trying to install new packages. Follow the below steps to update your conda environment.
