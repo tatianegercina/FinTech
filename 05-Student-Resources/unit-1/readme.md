@@ -33,13 +33,13 @@ As with most topics, there are numerous resources for gaining more information a
 
 [FinTech Futures](https://www.fintechfutures.com/)
 
-#### Where can I get a consise beginner summary for Markdown?
+#### Where can I get a simple, yet comprehensive beginner summary for Markdown?
 
-Right here! Try the [Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
+Right here! Try this [Markdown Guide!](https://www.markdownguide.org/cheat-sheet/)
 
 #### How does the instructor execute computer commands so quickly?
 
 The answer is simple - keyboard shortcuts.  You may not have needed them before - but in coding, they will be one of your new best friends.  Check out these keyboard shortcut cheatsheets:
 
-[Mac](placeholder)
-[windows](placeholder)
+[Mac](Resources/windows-shortcuts.md)
+[windows](Resources/mac-shortcuts.md)
