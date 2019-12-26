@@ -1,47 +1,114 @@
 ## FAQs
 
-## Unit 01: Intro to Finance and Programming
-#### Where can I get started with learning Git?
-Start with our pre-work, which has two modules with video tutorials and activities that can help out with the foundations of working with Git:
-[Bootcamp Pre-work](https://coding-bootcamp-fintech-prework.readthedocs-hosted.com/en/latest )
+## Unit 02: Python
+#### What's the relevance of Python?
+Python is the primary language that we will be using in this course. It's a semantic language which makes it easier to read and understand, and the reliance on indentation makes the organized structure quicker to grasp. With this language, we'll be able to dive into a slew of libraries that will make solving complex data problems more simple.
 
-Conveniently, GitHub has their own set of guides to help break down how to use the program:
-[GitHub Guides](https://guides.github.com/)
+#### What's up with this crazy indentation?
+With Python, indentation is more than just organization and readability. Python's functionality actually depends on proper indentation!
 
-Additionally, if you find videos helpful in your learning process, this is roughly an hour of video designed to cover the fundamentals of Git and GitHub:
-[No Nonsense Github Videos](https://github.com/Multishifties/No-Nonsense-Github-Project)
+In this snippet, we're using indentation to tell our code where our for loops begin and end. In Python, indenting creates blocks of code that work together. Similarly, indenting backwards tells the program when to end a loop.
 
-Finally, we have a handy visual Git reference guide located here:
-[Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)  
+```python
+for x in range(10):
+    print(x)
 
+for x in range(20, 30):
+    print(x)
+```
 
-#### Where can I get a simple, yet comprehensive beginner summary for Markdown?
-
-Right here! Try this [Markdown Guide!](https://www.markdownguide.org/cheat-sheet/)
-
-#### How does the instructor execute computer commands so quickly?
-
-The answer is simple - keyboard shortcuts.  You may not have needed them before - but in coding, they'll be one of your new best friends.  Check out these keyboard shortcut cheatsheets to help you get started:
-
-[Mac](Resources/mac-shortcuts.md)  
-[Windows](Resources/windows-shortcuts.md)
+The code you will write in Python will eventually be seen by someone else. Focusing on organization and readability is important because you want colleagues to be able to read your code. If your code is poorly organized it will be difficult to read later on.
 
 
-#### Why do I need a virtual environment?
-Virtual environments can be compared to different user profiles on one computer.  You might share a computer in your home with your family, but you might not have the same programs installed as your 5 year old son, or the same bookmarked pages as your teenaged daughter.  When you are ready to the use the computer, you simply log in and all your personal settings are there waiting for you.
 
-In a similar way, virtual environments create a personalized space for your project within your computer.  For example, you might be working on a project with your group during project week that needs certain packages that you don't typically need in the everyday course of class.  You also notice that one of the necessary packages doesn't work with your version of Python and you need a downgraded version.  You would create a virtual environment to download only the packages needed for the project and could set that virtual environment to run the needed version of Python.  Because of your virtual environment you won't need to downgrade your Python package across the board, but only for the project you need it for.
+#### How do list comprehensions work?
+In a list comprehension, you are writing a for loop in a concise format that outputs a list object.  It can be confusing because the variable is repeated twice.  What the code is saying is: for each item in my old list, add that item to my new list.
 
-Another important reason for using virtual environments is for deployment purposes.  If you have an application you wish to deploy, you wouldn't want unneeded code packages installed with it.  This will slow down the application and cause deployment errors.  Having a virtual environment will self contain only what is needed for the application.
+For example:
 
-#### Where can I find out more about FinTech and stay up to date on FinTech news?
+Input:
+```Python
+old_list = range(10)
+new_list = [item for item in old_list]
+    print(new_list)
+```
+Output:
+```Python
 
-As with most topics, there are numerous resources for gaining more information and all are just a Google search away!  But to get you started on your journey, here are a few web resources that we like:
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
 
-[FinTech Weekly](https://www.fintechweekly.com/)
+#### How are variables assigned with a For Loop?
+Typically a for loop is iterating over an object and extracting each of the next smallest objects.  The variable is established after the word `For`. If your variable is `letter` and your object is `name` then Python finds the next smallest item in the `name` object you are iterating over and assigns `letter` to each of them.
 
-[TechCrunch](https://techcrunch.com/tag/fintech/)
 
-[Coin Telegraph](https://cointelegraph.com/)
+Input:
+```Python
+name = 'Elliot'
+for letter in name:
+  print(letter)
+```
+Ouput:
+```Python
+E
+l
+l
+i
+o
+t
+```
 
-[FinTech Futures](https://www.fintechfutures.com/)
+In the example of a list of strings, the next smallest items are the individual strings:
+
+
+Input:
+```Python
+name_list = ['Elliot' ,'Darlene', 'Angela', 'Shayla']
+for name in name_list:
+  print(name)
+```
+Output:
+```Python
+Elliot
+Darlene
+Angela
+Shayla
+```
+
+
+#### How does slicing work?
+Slice notation allows you to extract certain information from a list.  The syntax is `a[start:stop:step]`, with `step` being an optional component.  If a start number is ommited, it is assumed to be zero.  If a stop number is ommitted, it is assumed to be one more than the index number of the last item in the data.  In the following examples ommitting the stop number is the equavilient of using the number 4, because there are only 4 items (0, 1, 2, 3) in the list.
+
+Given the following list:
+`name_list = ['Elliot' ,'Darlene', 'Angela', 'Shayla']`
+
+Input: `name_list[:]` OR `name_list[0:4]`
+
+Both have the same output:
+```Python
+['Elliot' ,'Darlene', 'Angela', 'Shayla']
+```
+
+Input: `name_list[0:2]`
+
+Output is first two names:
+```Python
+['Elliot' ,'Darlene']
+```
+
+Input: `name_list[2:4]`
+
+Output is last two names:
+```Python
+['Angela', 'Shayla']
+```
+
+Input: `name_list[0:4:2]` OR `name_list[:4:2]` OR `name_list[::2]`
+
+
+All three have the same output - every other name, starting with the first name:
+```Python
+['Elliot', 'Angela']
+```
+
+For more information check out this [Stack Overflow post](https://stackoverflow.com/questions/509211/understanding-slice-notation)
