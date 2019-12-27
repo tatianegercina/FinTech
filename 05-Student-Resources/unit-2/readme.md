@@ -1,8 +1,8 @@
 ## FAQs
 
 ## Unit 02: Python
-[What's the relevance of Python?](#what's-the-relevance-of-python)<br>
-[What's up with this crazy indentation?](#what's-up-with-this-crazy-indentation)<br>
+[What's the relevance of Python?](#whats-the-relevance-of-python)<br>
+[What's up with this crazy indentation?](#whats-up-with-this-crazy-indentation)<br>
 [How do list comprehensions work?](#how-do-list-comprehensions-work)<br>
 [How are variables assigned with a For Loop?](#how-are-variables-assigned-with-a-For-Loop)<br>
 [How does slicing work?](#how-does-slicing-work)<br>
