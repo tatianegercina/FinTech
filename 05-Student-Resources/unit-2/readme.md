@@ -172,3 +172,17 @@ Which gives us:
 ```Python
 'Apollo'
 ```
+#### How can tabular data be accessed to faciliate exploration in Python?
+
+Tabular data is data in the form of table with rows, columns and values.  Spreadsheets and CSV files are a very well-known forms of tabular data.  This format makes is simple to find values, but how do we manipulate those values using Python?  The data must be 'read into' a program.
+
+Python has a CSV module with a `reader()` function that allows for the 'reading in' or 'parsing' of csv tabular data into your python code.  The data is stored in a variable that can be interated over using a for loop, thereby extracting the data within.
+
+To open our sample `battlestar_csv.csv` file, and then designate each column as a variable we would do the following:
+
+  ```Python
+  with open(`battlestar_csv.csv`, 'r') as file:
+    for cylon in file:
+      alias = cylon[0]
+      model = cylon[1]
+```
