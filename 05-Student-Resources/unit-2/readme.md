@@ -4,9 +4,9 @@
 [What's the relevance of Python?](#what's-the-relevance-of-python?)<br>
 [What's up with this crazy indentation?](#What's-up-with-this-crazy-indentation?)<br>
 [How do list comprehensions work?](#How-do-list-comprehensions-work?)<br>
-[How are variables assigned with a For Loop?](How-are-variables-assigned-with-a-For-Loop?)<br>
-[How does slicing work?](How-does-slicing-work?)<br>
-[How do you access values in a nested dictionary?](How-do-you-access-values-in-a-nested-dictionary?)<br>
+[How are variables assigned with a For Loop?](#How-are-variables-assigned-with-a-For-Loop?)<br>
+[How does slicing work?](#How-does-slicing-work?)<br>
+[How do you access values in a nested dictionary?](#How-do-you-access-values-in-a-nested-dictionary?)<br>
 
 #### What's the relevance of Python?
 Python is the primary language that we will be using in this course. It's a semantic language which makes it easier to read and understand, and the reliance on indentation makes the organized structure quicker to grasp. With this language, we'll be able to dive into a slew of libraries that will make solving complex data problems more simple.
