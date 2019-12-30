@@ -183,8 +183,18 @@ Python has a CSV module with a `reader()` function that allows for the 'reading 
 To open our sample `battlestar_csv.csv` file, and then designate each column as a variable we would do the following:
 
   ```Python
-  with open(`battlestar_csv.csv`, 'r') as file:
-    for cylon in file:
-      alias = cylon[0]
-      model = cylon[1]
+alias = []
+model_number = []
+with open('auditingprojects/battlestar_csv.csv', 'r') as file:
+    csvfile = csv.reader(file, delimiter=',')
+    for row in csvfile:
+        alias.append(row[0])
+        model_number.append(row[1])
 ```
+When we say for `row` in `file`, we are literally storing a row in the spreadsheet in the variable `row` during each loop:
+![Alt Text](Resources/cylon_rows_gif.gif)
+
+To get the columns we use indexing:
+![Alt Text](Resources/cylon_columns_gif.gif)
+
+In this way, the alias variable now holds row[0], or the first column and all its row values.  And the model_number variable now holds row[1], or the second column and all its row values.
