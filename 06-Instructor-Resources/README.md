@@ -15,19 +15,12 @@ If you think of other potential questions to add, please let us know! We are alw
 
 
 ## Unit 01: Intro to Finance and Programming
-#### Where can I get started with learning Git?
-Start with our pre-work, which has two modules with video tutorials and activities that can help out with the foundations of working with Git:
-[Bootcamp Pre-work](https://coding-bootcamp-fintech-prework.readthedocs-hosted.com/en/latest )
-
-Conveniently, GitHub has their own set of guides to help break down how to use the program:
-[GitHub Guides](https://guides.github.com/)
-
-Additionally, if you find videos helpful in your learning process, this is roughly an hour of video designed to cover the fundamentals of Git and GitHub:
-[No Nonsense Github Videos](https://github.com/Multishifties/No-Nonsense-Github-Project)
-
-Finally, we have a handy visual Git reference guide located here:
-[Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
-
+[Unit 01 - Full FAQ](../05-Student-Resources/unit-1/readme.md#faqs) <br>
+[Where can I started with learning Git?](../05-Student-Resources/unit-1/readme.md#where-can-I-get-started-with-learning-git) <br>
+[Where can I get a simple, yet comprehensive beginner summary for Markdown?](../05-Student-Resources/unit-1/readme.md#where-can-i-get-a-simple-yet-comprehensive-beginner-summary-for-markdown) <br>
+[How does the instructor execute computer commands so quickly?](../05-Student-Resources/unit-1/readme.md#how-does-the-instructor-execute-computer-commands-so-quickly) <br>
+[Why do I need a virtual environment?](../05-Student-Resources/unit-1/readme.md#why-do-i-need-a-virtual-environment) <br>
+[Where can I find out more about FinTech and stay up to date on FinTech news?](../05-Student-Resources/unit-1/readme.md#where-can-I-find-out-more-about-fintech-and-stay-up-to-date-on-fintech-news) <br>
 
 ---
 ## Unit 02: Python
