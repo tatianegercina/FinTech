@@ -176,25 +176,25 @@ Which gives us:
 ```
 #### How can tabular data be accessed to faciliate exploration in Python?
 
-Tabular data is data in the form of table with rows, columns and values.  Spreadsheets and CSV files are a very well-known forms of tabular data.  This format makes is simple to find values, but how do we manipulate those values using Python?  The data must be 'read into' a program.
+Tabular data is data in the form of a table with rows, columns and values.  Spreadsheets and CSV files are a very well-known forms of tabular data.  This format makes it simple to find values, but how do we manipulate those values using Python?  The data must be 'read into' a program.
 
 Python has a CSV module with a `reader()` function that allows for the 'reading in' or 'parsing' of csv tabular data into your python code.  The data is stored in a variable that can be interated over using a for loop, thereby extracting the data within.
 
-To open our sample `battlestar_csv.csv` file, and then designate each column as a variable we would do the following:
+To open our sample `battlestar.csv` file, and then designate each column as a variable we would do the following:
 
   ```Python
 alias = []
 model_number = []
-with open('auditingprojects/battlestar_csv.csv', 'r') as file:
+with open('auditingprojects/battlestar.csv', 'r') as file:
     csvfile = csv.reader(file, delimiter=',')
     for row in csvfile:
         alias.append(row[0])
         model_number.append(row[1])
 ```
 When we say for `row` in `file`, we are literally storing a row in the spreadsheet in the variable `row` during each loop:
-![Alt Text](Resources/cylon_rows_gif.gif)
+![Alt Text](Resources/cylon_rows.gif)
 
 To get the columns we use indexing:
-![Alt Text](Resources/cylon_columns_gif.gif)
+![Alt Text](Resources/cylon_columns.gif)
 
-In this way, the alias variable now holds row[0], or the first column and all its row values.  And the model_number variable now holds row[1], or the second column and all its row values.
+In this way, the `alias` variable now holds `row[0]` - the first column and all its row values.  And the `model_number` variable now holds `row[1]` - the second column and all its row values.
