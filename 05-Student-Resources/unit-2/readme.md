@@ -191,10 +191,10 @@ with open('auditingprojects/battlestar.csv', 'r') as file:
         alias.append(row[0])
         model_number.append(row[1])
 ```
-When we say for `row` in `file`, we are literally storing a row in the spreadsheet in the variable `row` during each loop:
+When we say for `row` in `file`, we are literally storing a row in the spreadsheet in the variable `row` during each loop:<br>
 ![Alt Text](Resources/cylon_rows.gif)
 
-To get the columns we use indexing:
+To get the columns we use indexing:<br>
 ![Alt Text](Resources/cylon_columns.gif)
 
 In this way, the `alias` variable now holds `row[0]` - the first column and all its row values.  And the `model_number` variable now holds `row[1]` - the second column and all its row values.
