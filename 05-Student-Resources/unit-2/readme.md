@@ -4,7 +4,7 @@
 [What's the relevance of Python?](#whats-the-relevance-of-python)<br>
 [What's up with this crazy indentation?](#whats-up-with-this-crazy-indentation)<br>
 [How do list comprehensions work?](#how-do-list-comprehensions-work)<br>
-[How are variables assigned with a For Loop?](#how-are-variables-assigned-with-a-For-Loop)<br>
+[How are variables assigned with a for loop?](#how-are-variables-assigned-with-a-for-loop)<br>
 [How does slicing work?](#how-does-slicing-work)<br>
 [How do you access values in a nested dictionary?](#how-do-you-access-values-in-a-nested-dictionary)<br>
 [How can tabular data be accessed to faciliate exploration in Python?](#How-can-tabular-data-be-accessed-to-faciliate-exploration-in-Python)<br>
@@ -47,7 +47,7 @@ Output:
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-#### How are variables assigned with a For Loop?
+#### How are variables assigned with a for loop?
 Typically a for loop is iterating over an object and extracting each of the next smallest objects.  The variable is established after the word `For`. If your variable is `letter` and your object is `name` then Python finds the next smallest item in the `name` object you are iterating over and assigns `letter` to each of them.
 
 
