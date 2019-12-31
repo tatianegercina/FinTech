@@ -189,7 +189,7 @@ Open the file `sort_dataframe.ipynb` and highlight the following:
 
 * Additionally we can set a new index and *then* sort.  In the following example we set the `Price` column as the index and then sort based on descending price values.
 
-![set-index-sort-descending.png](Images/set-index-sort-descending.png)
+  ![set-index-sort-descending.png](Images/set-index-sort-descending.png)
 
 
 Ask if there are any questions before moving on.
