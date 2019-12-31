@@ -914,7 +914,7 @@ In this section, students will be introduced to Sharpe ratios and learn why risk
 
 **Files:**
 
-* [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.ipynb)
+* [sharpe_ratios.ipynb](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.ipynb)
 
 Tell students that understanding how to identify risk and assess investment performance will help them adjust for risk in order to maximize reward.
 
@@ -928,7 +928,7 @@ Open the slideshow and provide an overview of Sharpe ratios and how they are cal
 
   ![sharpe_ratio_formula.png](Images/sharpe_ratio_formula.PNG)
 
-Open [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.ipynb) and live code how to calculate and plot sharpe ratios. Explain the following as part of the demo:
+Open [sharpe_ratios.ipynb](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.ipynb) and live code how to calculate and plot sharpe ratios. Explain the following as part of the demo:
 
 * Sharpe ratios are commonly used to indicate whether or not an investment is a good decision. While standard deviation illustrates how far an investment has deviated from its average, Sharpe ratios use standard deviation to illustrate the relationship between standard deviation and risk-reward.
 
