@@ -24,24 +24,14 @@ If you think of other potential questions to add, please let us know! We are alw
 
 ---
 ## Unit 02: Python
-#### What's the relevance of Python?
-Python is the primary language that we will be using in this course. It's a semantic language which makes it easier to read and understand, and the reliance on indentation makes the organized structure quicker to grasp. With this language, we'll be able to dive into a slew of libraries that will make solving complex data problems more simple.
-
-#### What's up with this crazy indentation?
-With Python, indentation is more than just organization and readability. Python's functionality actually depends on proper indentation!
-
-In this snippet, we're using indentation to tell our code where our for loops begin and end. In Python, indenting creates blocks of code that work together. Similarly, indenting backwards tells the program when to end a loop.
-
-```python
-for x in range(10):
-    print(x)
-
-for x in range(20, 30):
-    print(x)
-```
-
-The code you will write in Python will eventually be seen by someone else. Focusing on organization and readability is important because you want colleagues to be able to read your code. If your code is poorly organized it will be difficult to read later on.
-
+[Unit 02 - Full FAQ](../05-Student-Resources/unit-2/readme.md#faqs) <br>
+[What's the relevance of Python?](../05-Student-Resources/unit-2/readme.md#whats-the-relevance-of-python) <br>
+[What's up with this crazy indentation?](../05-Student-Resources/unit-2/readme.md#whats-up-with-this-crazy-indentation) <br>
+[How do list comprehensions work?](../05-Student-Resources/unit-2/readme.md#how-do-list-comprehensions-work) <br>
+[How are variables assigned with a for loop?](../05-Student-Resources/unit-2/readme.md#how-are-variables-assigned-with-a-for-loop) <br>
+[How does slicing work?](../05-Student-Resources/unit-2/readme.md#how-does-slicing-work) <br>
+[How do you access values in a nested dictionary?](../05-Student-Resources/unit-2/readme.md#how-do-you-access-values-in-a-nested-dictionary) <br>
+[How can tabular data be accessed to faciliate exploration in Python?](../05-Student-Resources/unit-2/readme.md#How-can-tabular-data-be-accessed-to-faciliate-exploration-in-Python) <br>
 
 ---
 ## Unit 04: Pandas
