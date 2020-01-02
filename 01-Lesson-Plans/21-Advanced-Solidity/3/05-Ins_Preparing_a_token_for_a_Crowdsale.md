@@ -23,18 +23,18 @@ Explain to the students:
 
 * As previously discussed, OpenZeppelin provides contracts that are implementations of common standards.
 
-* Here, just like before we are importing the ERC20 contracts from the OpenZeppelin library, now, however, we are also going to import and implement a new contract called `ERC20Mintable`
+* Here, just like before we are importing the ERC20 contracts from the OpenZeppelin library, now, however, we are also going to import and implement a new contract called `ERC20Mintable`.
 
-Add the ERC20MIntable reference to the contract definition.
+Add the ERC20Mintable reference to the contract definition:
 
 ```solidity
 contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 }
 ```
 
-Now that we have inherited the structures from `ERC20`, `ERC20Detailed`, and `ERC20Mintable`.
+* We have inherited the structures from `ERC20`, `ERC20Detailed`, and `ERC20Mintable`.
 
-* By saying that `ArcadeToken is ERC20`, we are inheriting all of the properties and functions of ERC20Mintable into our new contract. As you have seen, we can inherit from multiple contracts; we are now going to inherit the defined functions and properties for ERC20, ERC20Detailed, and ERC20mintable.
+* By saying that `ArcadeToken is ERC20`, we are inheriting all of the properties and functions of `ERC20Mintable` into our new contract, including the `mint` function. As you have seen, we can inherit from multiple contracts.
 
 Once again, expand upon the concept of inheritance by opening up the `ERC20Mintable.sol` in Remix from the sidebar (you will need to save `ArcadeTokenMintable.sol` to get Remix to load the library):
 
@@ -84,13 +84,13 @@ contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 
 * Here we are defining the constructor for the `ERC20Detailed` contract that we previously imported.
 
-* `ERC20Detailed`'s constructor accpets the variable name, and symbol that we defined in the main ArcadeToken contract.
+* `ERC20Detailed`'s constructor accepts the variables `name` and `symbol` that we defined in the main ArcadeToken contract.
 
-* Here we are also hardcoding the number `18` as our third parameter. This parameter defines the number of decimals that our token will have. In this case the number `18` denotes that the smallest increment of our token is `.000000000000000001`.
+* Here we are also hardcoding the number `18` as our third parameter. This parameter defines the number of decimals that our token will have. In this case the number `18` denotes that the smallest increment of our token is `.000000000000000001`. We are sticking with `18` since it's Ethereum's default.
 
-Finally it's time to define the contracts body. Inside the body of the contract call the `mint` function and pass it the current `msg.sender` and the `inital_supply` variable that is defined in our constructor.
+Finally it's time to define the contract's body. Inside the body of the contract, call the `mint` function, passing `msg.sender` and the `inital_supply` variable that is defined in our constructor.
 
-Your complete code should now look something like this.
+Your complete code should now look something like this:
 
 ```solidity
 pragma solidity ^0.5.0;
