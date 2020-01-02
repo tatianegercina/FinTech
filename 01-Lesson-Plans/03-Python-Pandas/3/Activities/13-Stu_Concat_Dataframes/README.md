@@ -12,6 +12,7 @@ Using the [starter file](Unsolved/mastering_concatenation.ipynb) and the data in
 
 3. Use the `concat` function to concat DataFrames `fin_leaders_mbr_status` and `investors_leadership_mbr_status` by `axis='columns'` and `join='inner'`.
 
+4. Use the `concat` function to concat the two DataFrames made in steps 2 and 3 using by `axis='columns'` and `join='inner'`.
 ---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
