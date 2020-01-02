@@ -707,21 +707,15 @@ Ensure that:
 
 ---
 
-### 17. Instructor Do: Structured Review (35 mins)
+### 17. Instructor Do: Career Services Lesson (35 min)
 
-Note: If you are teaching this Lesson on a weeknight, please save this 35-minute review for the next Saturday class.
+**Note:** If you are teaching this lesson on a weeknight, save this section for the next Saturday class.
 
-Please use the entire time to review questions with the students before officially ending class.
+Use the following lesson plan to discuss the Career Services content for this week.
 
-Suggested Format:
+**Files:**
 
-* Ask students for specific activities to revisit.
-
-* Revisit key activities for the homework.
-
-* Allow students to start the homework with extra TA support.
-
-Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
+* [Career Services Lesson Plan](Career_Services_LessonPlan.md)
 
 ---
 
