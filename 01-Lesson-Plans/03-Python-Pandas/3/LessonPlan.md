@@ -46,7 +46,7 @@ By the end of class, students will be able to:
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1VySvayQsq5TY-aaE-9cgaBxZmG4KF11aNJMvnyyxrBo/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -104,7 +104,7 @@ Walk students through the following steps.
 
   ![google-finance-epoch-date](Images/google-finance-epoch-date.png)
 
-  **Note:** Due to the copy and paste of values only, the date values will be represented in numerical format. Therefore, they will have to be re-formatted as date values after downloading the CSV and editing in Excel. 
+  **Note:** Due to the copy and paste of values only, the date values will be represented in numerical format. Therefore, they will have to be re-formatted as date values after downloading the CSV and editing in Excel.
 
 * Rename the file as `fb_google_finance` and then download and save the file as a CSV. Make sure to reside in the second tab where the hard-pasted values are contained.
 
@@ -157,7 +157,7 @@ In this part of the lesson, you will demo how to sort DataFrame values in ascend
 
 **File:**
 
-* [sort_dataframe.ipynb](Activities/Ins_Sorting/Solved/sort_dataframe.ipynb)
+* [sort_dataframe.ipynb](Activities/02-Ins_Sorting/Solved/sort_dataframe.ipynb)
 
 Open the slides to the `Sorting` section.
 
@@ -169,7 +169,7 @@ Start by explaining that it is very common to sort values in ascending or descen
 
 Open the file `sort_dataframe.ipynb` and highlight the following:
 
-* A DataFrame can be created from lists or dictionaries. In this example, a DataFrame of painting prices is supplied as a Python dictionary, which we convert to a DataFrame.
+* A DataFrame can be created from lists or dictionaries. In this example, a DataFrame of painting prices is supplied as a list of Python dictionaries, which we convert to a DataFrame.
 
   ![creating-dataframes.png](Images/creating-dataframes.png)
 
@@ -186,6 +186,11 @@ Open the file `sort_dataframe.ipynb` and highlight the following:
   ```python
   painting_df.sort_index(ascending=False)
   ```
+
+* Additionally we can set a new index and *then* sort.  In the following example we set the `Price` column as the index and then sort based on descending price values.
+
+  ![set-index-sort.png](Images/set-index-sort.png)
+
 
 Ask if there are any questions before moving on.
 
@@ -236,7 +241,7 @@ Ask the student to live code a solution to the given scenario. If the student lo
 
 * Can you use a list to tell Pandas to sort some columns by ascending values and others by descending values?
 
-    **Answer:** Yes. The `ascending` parameter can be used to do sort columns by ascending values. Default value is `True`. `False` will sort in descending order. The `ascending` parameter accepts a list of Boolean responses when data is sorted by more than one column.
+    **Answer:** Yes. The `ascending` parameter can be used to sort columns by ascending values. Default value is `True`. `False` will sort in descending order. The `ascending` parameter accepts a list of Boolean responses when data is sorted by more than one column.
 
 **Scenario:**
 
@@ -662,7 +667,7 @@ In this section, you will provide an overview of concatenation and then live cod
 
 Introduce the topic of concatenation by explaining the following:
 
-* Indexing, grouping, and sorting datasets are all part data analysis preparation. Another step in this process is combining, or concatenating, datasets. This is beneficial when more than one dataset needs to be combined.
+* Indexing, grouping, and sorting datasets are all part of data analysis preparation. Another step in this process is combining, or concatenating, datasets. This is beneficial when more than one dataset needs to be combined.
 
 * For example, multiple months of financial records or investment data from different markets can be consolidated into one dataset in order to streamline and centralize data analysis.
 
@@ -742,9 +747,9 @@ Ask if there are any questions before moving on.
 
 In this activity, students will get hands-on experience with combining multiple DataFrames using the `concat` function. The goal of the activity is for students to take dues and membership data from two community organizations and combine the data into a single DataFrame.
 
-**File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_DataFrames/Unsolved/mastering_concatenation.ipynb)
+**File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_Dataframes/Unsolved/mastering_concatenation.ipynb)
 
-**Instructions:** [README.md](Activities/13-Stu_Concat_DataFrames/README.md)
+**Instructions:** [README.md](Activities/13-Stu_Concat_Dataframes/README.md)
 
 ---
 
@@ -752,7 +757,7 @@ In this activity, students will get hands-on experience with combining multiple 
 
 In this part of the lesson, review the Mastering Concatenation activity with students. First, you will conduct a brief Q & A to test students' understanding, and then you will perform a dry walk-through of the solution.
 
-**File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/mastering_concatenation.ipynb)
+**File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_Dataframes/Solved/mastering_concatenation.ipynb)
 
 Start the review by conducting a Q & A with the following questions:
 
@@ -768,7 +773,7 @@ Start the review by conducting a Q & A with the following questions:
 
   **Answer:** Outer join. Inner joins represent only a section of all of the data.
 
-Open [mastering_concatenation.ipynb](Activities/13-Stu_Concat_DataFrames/Solved/mastering_concatenation.ipynb) to review the solution, covering the following points:
+Open [mastering_concatenation.ipynb](Activities/13-Stu_Concat_Dataframes/Solved/mastering_concatenation.ipynb) to review the solution, covering the following points:
 
 * The `concat` function can be used to combine or link more than one DataFrame.
 
@@ -909,7 +914,7 @@ In this section, students will be introduced to Sharpe ratios and learn why risk
 
 **Files:**
 
-* [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py)
+* [sharpe_ratios.ipynb](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.ipynb)
 
 Tell students that understanding how to identify risk and assess investment performance will help them adjust for risk in order to maximize reward.
 
@@ -923,7 +928,7 @@ Open the slideshow and provide an overview of Sharpe ratios and how they are cal
 
   ![sharpe_ratio_formula.png](Images/sharpe_ratio_formula.PNG)
 
-Open [sharpe_ratios.py](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.py) and live code how to calculate and plot sharpe ratios. Explain the following as part of the demo:
+Open [sharpe_ratios.ipynb](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.ipynb) and live code how to calculate and plot sharpe ratios. Explain the following as part of the demo:
 
 * Sharpe ratios are commonly used to indicate whether or not an investment is a good decision. While standard deviation illustrates how far an investment has deviated from its average, Sharpe ratios use standard deviation to illustrate the relationship between standard deviation and risk-reward.
 
