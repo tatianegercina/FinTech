@@ -1,26 +1,35 @@
-# ERC20Mintable Token Design
+### 6. Students Do: ERC20 Mintable Token Design (10 min)
 
-In this activity, you will build a mintable ERC20token and prepare it for a crowdsale.
+In this activity, students will build a mintable ERC20 token and prepare it for a crowdsale.
 
-## Instructions
+**Instructions:**
 
-* Open the example contract [ArcadeTokenERC20.sol](Activities/06-Stu_ERC20Mintable_Token_Design/Unsolved/ArcadeTokenMintable.sol).
+* [README.md](Activities/06-Stu_ERC20Mintable_Token_Design/README.md)
 
-* From the OpenZeppelin libraries, use ArcadeToken to extend ERC20, ERC20Detailed, and ERC20Mintable. Your contract should look something like:
+### 7. Instructor Do: ERC20Mintable Review (10 min)
 
-```solidity
-contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
-}
-```
+Review the previous activity with the class by discussing the following recall questions.
 
-* Add a constructor that accepts `string memory name`, `string memory symbol`, and `uint initial_supply`. Pass the `name` and `symbol` variables to a secondary `ERC20Detailed` constructor, and hardcode the third `decimals` parameter to `18` (Ethereum's default).
+* What are some benefits of using the OpenZeppelin libraries?
 
-* Within the constructor body, call the `mint` function and pass the `msg.sender` and `initial_supply`.
+* **Answer** OpenZeppelin follows the community standards defined for various ERCS.
 
-## Challenge
+* **Answer** Saves development time by providing a boilerplate for common tasks.
 
-* If time remains, calling the `mint` functions and try adding and removing minters from the contract.
+* **Answer** OpenZeppelin smart contracts are secure.
 
-## Hints
+* Why might we restrict who can mint tokens?
 
-* In case you need some help, you can refer to the [OpenZeppelin Documentation page](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20) on ERC20 tokens.
+* **Answer** If anyone could mint tokens using our contract, it would essentially make them worthless.
+
+* What are we doing when we say `ArcadeToken is ERC20` in our contract definition.
+
+* **Answer** We are inheriting the functions and properties from ERC20 to ArcadeToken.
+
+* What are some things a function modifier may be used for in solidity?
+
+* **Answer** To restrict access to a function.
+
+* **Answer** To expose a function.
+
+* **Answer** To add dependencies to a function.
