@@ -1,6 +1,6 @@
 ### 6. Students Do: ERC20 Mintable Token Design (10 min)
 
-In this activity, students will build a mintable ERC20token and prepare it for a crowdsale.
+In this activity, students will build a mintable ERC20 token and prepare it for a crowdsale.
 
 **Instructions:**
 
