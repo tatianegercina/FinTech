@@ -4,7 +4,7 @@ In this activity, you will create a system very similar to credit card reward po
 
 You will create a new function to your token called `spend` that allows users to spend regular Ether with your contract.
 
-In your spend function, you will take a very small "microtransaction" fee and forward the rest of the Ether to the recipient.
+In your `spend` function, you will take a very small "microtransaction" fee and forward the rest of the Ether to the recipient.
 
 In exchange for the small fee (or even no fee, if you so desire), you will reward tokens based on a multiplier (say, 3 tokens rewarded for every wei spent).
 
