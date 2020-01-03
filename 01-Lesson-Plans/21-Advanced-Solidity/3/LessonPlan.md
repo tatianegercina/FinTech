@@ -22,6 +22,21 @@ By the end of the unit, students will be able to:
 
 ---
 
+### Instructor Notes
+
+* Today's class will be heavily focused on crowdsales. While this method of fundraising has been used legitimately for many successful companies and projects in the space, there are many scams. Try to limit the discussion of scams and keep the class focused on legitimate implementations, but acknowledge that there is risk involved when investing in crowdfunded projects, just as there are risks in any other investment.
+
+* Ethereum itself was crowdfunded by the people with Bitcoin, but certainly has not been the largest crowdsale, and has been used to launch other platforms that raised even more funds. It is recommended to familiarize yourself with popular crowdsales such as Basic Attention Token, Filecoin, EOS, Qtum, and others from the [most funded ICO list.](https://icowatchlist.com/finished/most-funded)
+
+* While Initial Coin Offerings (ICOs) have been the most popular type of crowdsale, the industry is moving toward Security Token Offerings (STOs) and more regulated systems.
+* OpenZeppelin provides many different configurations for crowdsales. Encourage students to perform their due diligence with legal compliance and technical requirements of a crowdsale if they show interest in leveraging one themselves in the future.
+
+* When discussing security, drive home the importance of due diligence in software development. Encourage the students to get excited about security research, as they will have to think about security inherently in their future.
+
+* Encourage students to not just seek out and scan for low-level bugs and exploits in their code, but to thoroughly analyze the logical implementation of their code as to not create a vulnerability by improperly implementing the business logic. A secure specification can still be implemented insecurely, so it is important to build their ability to "think like a hacker."
+
+---
+
 ### Class Slides and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
