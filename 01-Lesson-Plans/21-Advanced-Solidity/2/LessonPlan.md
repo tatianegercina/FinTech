@@ -1,4 +1,4 @@
-# 21.2 Lesson Plan: Writing Secure Contracts with OpenZeppelin
+## 21.2 Lesson Plan: Writing Secure Contracts with OpenZeppelin
 
 ### Overview
 
@@ -606,9 +606,7 @@ Ask the students the following questions:
 
 * Why was MetaMask able to understand, send, and receive our ArcadeTokens?
 
-
   * **Answer:** MetaMask is compatible with the ERC20 standard so that it can recognize and utilize our tokens!
-
 
 ---
 
