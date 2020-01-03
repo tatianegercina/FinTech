@@ -2,7 +2,7 @@
 
 In this activity, you will create a system very similar to credit card reward points with your `ArcadeToken`.
 
-You will a new function to your token called `spend` that allows users to spend regular Ether with your contract.
+You will create a new function to your token called `spend` that allows users to spend regular Ether with your contract.
 
 In your spend function, you will take a very small "microtransaction" fee and forward the rest of the Ether to the recipient.
 
