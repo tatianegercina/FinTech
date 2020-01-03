@@ -4,7 +4,7 @@ In this activity, you will build a mintable ERC20token and prepare it for a crow
 
 ## Instructions
 
-* Open the example contract [ArcadeTokenERC20.sol](Activities/06-Stu_ERC20Mintable_Token_Design/Unsolved/ArcadeTokenMintable.sol).
+* Open the example contract [ArcadeTokenERC20.sol](Unsolved/ArcadeTokenMintable.sol).
 
 * From the OpenZeppelin libraries, use ArcadeToken to extend ERC20, ERC20Detailed, and ERC20Mintable. Your contract should look something like:
 

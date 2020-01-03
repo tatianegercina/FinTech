@@ -4,6 +4,8 @@
 
 In the last class, students were introduced to several of the popular ERC token standards (20, 721, 777, 1155) and implemented an ERC20 compliant token using the OpenZeppelin libraries. Today students will be introduced to the concept of crowdsales, a popular method for distributing tokens; they will explore popular historic crowdsales and implement their own crowdsale using the OpenZeppelin libraries.
 
+---
+
 ### Class Objectives
 
 By the end of the unit, students will be able to:
@@ -18,20 +20,17 @@ By the end of the unit, students will be able to:
 
 * Perform a Mythril security scan on contracts to test for simple security vulnerabilities.
 
-### Slideshow and Time Tracker
+---
+
+### Class Slides and Time Tracker
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting `Make a copy`.
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
-
-
-### Instructor Notes
-
-* TBD
+* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -81,9 +80,7 @@ Review the following recall questions with the class.
 
 Now that the students are familiar with tokens and the various ERC token standards, briefly introduce the concept of token distributions by discussing the following question with the class.
 
-* Explain the following to students:
-
-  * We understand basic tokenomics and how to implement our own ERC compliant token, but now how do we distribute that token to users and create a market for it?
+* We understand basic tokenomics and how to implement our own ERC compliant token, but now how do we distribute that token to users and create a market for it?
 
   * This is where a `crowdsale` comes in.
 
@@ -155,7 +152,7 @@ Students will be provided a list of crowdsales from which they will explore and 
 
 **Instructions:**
 
-* [README.md](Activities/03_Stu_Crowdsale_Exploration_and_Discussion/README.md)
+* [README.md](Activities/01-Stu_Crowdsale_Exploration_and_Discussion/README.md)
 
 ### 4. Instructor Do: Crowdsales Review (5 min)
 
@@ -189,9 +186,172 @@ Discuss the following review questions with the class.
 
   * **Answer** Increased control over a crowdfunding platform; you essentially become the crowdfunding platform.
 
-### 4. Students Do: ERC20Mintable Token Design
+### 5. Instructor Do: Preparing a token for a Crowdsale (10 min)
 
-In this activity, students will build a mintable ERC20token and prepare it for a crowdsale.
+In this activity, students will be introduced to the ERC20Mintable contract from OpenZeppelin, and how they can use it to prepare a token that can work in a crowdsale.
+
+**Files:**
+
+[ArcadeTokenMintable.sol](Activities/02-Ins_Preparing_a_token_for_a_Crowdsale/Solved/ArcadeTokenMintable.sol)
+
+Open [Remix](https://remix.ethereum.org) and create a new file called `ArcadeTokenMintable.sol`, and start with the following boilerplate:
+
+```solidity
+pragma solidity ^0.5.0;
+
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20Detailed.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20Mintable.sol";
+
+contract ArcadeToken is ERC20, ERC20Detailed {
+}
+```
+
+Explain to the students:
+
+* As previously discussed, OpenZeppelin provides contracts that are implementations of common standards.
+
+* Here, just like before we are importing the ERC20 contracts from the OpenZeppelin library, now, however, we are also going to import and implement a new contract called `ERC20Mintable`.
+
+Add the ERC20Mintable reference to the contract definition:
+
+```solidity
+contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
+}
+```
+
+* We have inherited the structures from `ERC20`, `ERC20Detailed`, and `ERC20Mintable`.
+
+* By saying that `ArcadeToken is ERC20`, we are inheriting all of the properties and functions of `ERC20Mintable` into our new contract, including the `mint` function. As you have seen, we can inherit from multiple contracts.
+
+Once again, expand upon the concept of inheritance by opening up the `ERC20Mintable.sol` in Remix from the sidebar (you will need to save `ArcadeTokenMintable.sol` to get Remix to load the library):
+
+![ERC20MintableFile](Images/ERC20MintableFile.png)
+
+Take a moment to point out the code in the file, particularly the comments.
+
+![ERC20MintableCode](Images/ERC20MintableCode.png)
+
+* `ERC20Mintable` extends `ERC20` to add a set of accounts with the MinterRole, who have permission to mint (create) new tokens as they see fit.
+
+* At construction, the deployer of the contract is the only minter.
+
+* The `onlyMinter` modifier restricts the mint function so that only accounts with the MinterRole can call the mint function.
+
+Close OpenZeppelin's `ERC20Mintable` and navigate back to `ArcadeTokenMintable.sol`.
+
+Now that `ERC20Mintable`'s functionality has been imported into our new contract it's time to add our constructors.
+
+First add the constructor for the ArcadeToken contract itself. This constructor will accept a string `name`, a string `symbol`, and a uint `initial_supply`.
+
+```solidity
+contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
+    constructor(
+        string memory name,
+        string memory symbol,
+        uint initial_supply
+    )
+}
+```
+
+* Our contracts constructor accepts three values a string `name`, a string `symbol`, and a uint `initial_supply`.
+
+Next define the constructor for the `ERC20Detailed` contract that we are importing.
+
+```solidity
+contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
+    constructor(
+        string memory name,
+        string memory symbol,
+        uint initial_supply
+    )
+        ERC20Detailed(name, symbol, 18)
+        public
+}
+```
+
+* Here we are defining the constructor for the `ERC20Detailed` contract that we previously imported.
+
+* `ERC20Detailed`'s constructor accepts the variables `name` and `symbol` that we defined in the main ArcadeToken contract.
+
+* Here we are also hardcoding the number `18` as our third parameter. This parameter defines the number of decimals that our token will have. In this case the number `18` denotes that the smallest increment of our token is `.000000000000000001`. We are sticking with `18` since it's Ethereum's default.
+
+Finally it's time to define the contract's body. Inside the body of the contract, call the `mint` function, passing `msg.sender` and the `inital_supply` variable that is defined in our constructor.
+
+Your complete code should now look something like this:
+
+```solidity
+pragma solidity ^0.5.0;
+
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20Detailed.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20Mintable.sol";
+
+contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
+    constructor(
+        string memory name,
+        string memory symbol,
+        uint initial_supply
+    )
+        ERC20Detailed(name, symbol, 18)
+        public
+    {
+        mint(msg.sender, initial_supply);
+    }
+}
+```
+
+* Now when our `ArcadeToken` contract is deployed it will call the mint function passing it the current `msg.sender` as well a our defined `inital_supply`.
+
+Compile and deploy the completed contract for the class.
+
+![Deploy ERC20Mintable](Images/DeployArcadeTokenMintable.gif)
+
+In the next activity the students will now be implementing their own `ERC20Mintable` token for crowdsale.
+
+### 6. Students Do: ERC20 Mintable Token Design (10 min)
+
+In this activity, students will build a mintable ERC20 token and prepare it for a crowdsale.
+
+**Instructions:**
+
+* [README.md](Activities/03-Stu_ERC20Mintable_Token_Design/README.md)
+
+**File:**
+
+* [ArcadeTokenMintable.sol](Activities/03-Stu_ERC20Mintable_Token_Design/Unsolved/ArcadeTokenMintable.sol)
+
+### 7. Instructor Do: Review ERC20 Mintable Token Design (10 min)
+
+**File:**
+
+* [ArcadeTokenMintable.sol](Activities/03-Stu_ERC20Mintable_Token_Design/Solved/ArcadeTokenMintable.sol)
+
+Review the previous activity with the class by discussing the following recall questions.
+
+* What are some benefits of using the OpenZeppelin libraries?
+
+  * **Answer** OpenZeppelin follows the community standards defined for various ERCS.
+
+  * **Answer** Saves development time by providing a boilerplate for common tasks.
+
+  * **Answer** OpenZeppelin smart contracts are secure.
+
+* Why might we restrict who can mint tokens?
+
+  * **Answer** If anyone could mint tokens using our contract, it would essentially make them worthless.
+
+* What are we doing when we say `ArcadeToken is ERC20` in our contract definition.
+
+  * **Answer** We are inheriting the functions and properties from ERC20 to ArcadeToken.
+
+* What are some things a function modifier may be used for in solidity?
+
+  * **Answer** To restrict access to a function.
+
+  * **Answer** To expose a function.
+
+  * **Answer** To add dependencies to a function.
 
 ### 8. Instructor Do: OpenZeppelin Crowdsales (15 min) (Critical)
 
@@ -199,9 +359,9 @@ In this activity, you will demonstrate OpenZeppelin's Crowdsale contract library
 
 **Files:**
 
-* [ArcadeTokenMintable.sol](Activities/08-Ins_Crowdsales/Solved/ArcadeTokenMintable.sol)
+* [ArcadeTokenMintable.sol](Activities/04-Ins_Crowdsales/Solved/ArcadeTokenMintable.sol)
 
-* [ArcadeTokenSale.sol](Activities/08-Ins_Crowdsales/Solved/ArcadeTokenSale.sol)
+* [ArcadeTokenSale.sol](Activities/04-Ins_Crowdsales/Solved/ArcadeTokenSale.sol)
 
 Explain to the students:
 
@@ -334,7 +494,7 @@ token.renounceMinter();
 
 * Since `msg.sender` is the default minter when deploying `ERC20Mintable` tokens, and `ArcadeTokenSaleDeployer` is the `msg.sender` when creating the token, we need to set things straight by making the `ArcadeTokenSale` contract a minter, and having the `ArcadeTokenSaleDeployer` renounce its "mintership," since we only want the crowdsale contract to have control of minting.
 
-Your contract should now match the [ArcadeTokenSale.sol](Activities/08-Ins_Crowdsales/Solved/ArcadeTokenSale.sol) solution linked above.
+Your contract should now match the [ArcadeTokenSale.sol](Activities/04-Ins_Crowdsales/Solved/ArcadeTokenSale.sol) solution linked above.
 
 Navigate back to the `ArcadeTokenMintable.sol`.
 
@@ -386,13 +546,13 @@ Send the instructions to the students and have TAs circulate the class.
 
 **Instructions:**
 
-* [README.md](Activities/09-Stu_ArcadeTokenSale/README.md)
+* [README.md](Activities/05-Stu_ArcadeTokenSale/README.md)
 
 **Files:**
 
-* [ArcadeTokenMintable.sol](Activities/09-Stu_ArcadeTokenSale/Unsolved/ArcadeTokenMintable.sol)
+* [ArcadeTokenMintable.sol](Activities/05-Stu_ArcadeTokenSale/Unsolved/ArcadeTokenMintable.sol)
 
-* [ArcadeTokenSale.sol](Activities/09-Stu_ArcadeTokenSale/Unsolved/ArcadeTokenSale.sol)
+* [ArcadeTokenSale.sol](Activities/05-Stu_ArcadeTokenSale/Unsolved/ArcadeTokenSale.sol)
 
 Ensure that students are not modifying the constructor *parameters* of `ArcadeTokenMintable`, since it needs to match the ERC20 standard, which specifies `(string name, string symbol, uint initial_supply)`. We pass in `0` as the `initial_supply` when initializing the `ArcadeToken`.
 
@@ -400,9 +560,9 @@ Ensure that students are not modifying the constructor *parameters* of `ArcadeTo
 
 **Files:**
 
-* [ArcadeTokenMintable.sol](Activities/09-Stu_ArcadeTokenSale/Solved/ArcadeTokenMintable.sol)
+* [ArcadeTokenMintable.sol](Activities/05-Stu_ArcadeTokenSale/Solved/ArcadeTokenMintable.sol)
 
-* [ArcadeTokenSale.sol](Activities/09-Stu_ArcadeTokenSale/Solved/ArcadeTokenSale.sol)
+* [ArcadeTokenSale.sol](Activities/05-Stu_ArcadeTokenSale/Solved/ArcadeTokenSale.sol)
 
 Open the solution and explain the following:
 
@@ -462,7 +622,7 @@ In this activity, you will demonstrate the MythX security tool, and how it can i
 
 **Files:**
 
-* [ArcadeTokenVulnerable.sol](Activities/13-Ins_Security/Solved/ArcadeTokenVulnerable.sol)
+* [ArcadeTokenVulnerable.sol](Activities/06-Ins_Security/Solved/ArcadeTokenVulnerable.sol)
 
 Security is a fundamental topic regarding anything to do with technology, especially software that works directly with monetary value. Stress the importance of security:
 
@@ -496,7 +656,7 @@ Open up [Remix](https://remix.ethereum.org) and enable the MythX plugin:
 
 * We can use this tool for unlimited scans. We would only need to pay for this tool for increased analysis that uses other tools behind the scenes, besides the open source Mythril tool.
 
-Now, time to use an old contract as an example for what a vulnerable contract could look like. Create a new file called `ArcadeTokenVulnerable.sol` and populate it with the [file linked above](Activities/13-Ins_Security/Solved/ArcadeTokenVulnerable.sol).
+Now, time to use an old contract as an example for what a vulnerable contract could look like. Create a new file called `ArcadeTokenVulnerable.sol` and populate it with the [file linked above](Activities/06-Ins_Security/Solved/ArcadeTokenVulnerable.sol).
 
 * Remember this contract we wrote back when we first learned how tokens worked?
 
@@ -564,11 +724,11 @@ Send out the instructions and have TAs circulate the class.
 
 **Instructions:**
 
-* [README.md](Activities/14-Stu_Scanning_with_MythX/README.md)
+* [README.md](Activities/07-Stu_Scanning_with_MythX/README.md)
 
 **Files:**
 
-* [ArcadeTokenVulnerable.sol](Activities/14-Stu_Scanning_with_MythX/Solved/ArcadeTokenVulnerable.sol)
+* [ArcadeTokenVulnerable.sol](Activities/07-Stu_Scanning_with_MythX/Solved/ArcadeTokenVulnerable.sol)
 
 Ensure that students are scanning their contracts with MythX properly.
 
@@ -594,13 +754,13 @@ Now that students have scanned their contracts, ask them the following questions
 
 Now that students have scanned and fixed their contracts, it's time for them to dive a bit deeper into some common vulnerabilities.
 
-### 15. Students Do: Exploring Common Smart Contract Vulnerabilities (SWCs) (10 min)
+### 16. Students Do: Exploring Common Smart Contract Vulnerabilities (SWCs) (10 min)
 
 In this activity, students will use the remaining time to explore the most common smart contract vulnerabilities by checking out the [SWC Registry](https://swcregistry.io/) and the [SWC Coverage](https://mythx.io/swc-coverage/) that MythX supports.
 
 **Instructions:**
 
-* [README.md](Activities/15-Stu_SWC_Exploration/README.md)
+* [README.md](Activities/08-Stu_SWC_Exploration/README.md)
 
 Have TAs circulate the room and ensure that students are looking at example code and trying to understand the different vulnerabilities they are researching.
 
@@ -608,7 +768,7 @@ Some vulnerabilities may be very complex or low-level, encourage the students to
 
 If students get too confused, have them move onto other vulnerabilities and have them take a step back and slow down, or practice working with the example code in Remix.
 
-### 16. Instructor Do: Review SWCs (5 min)
+### 17. Instructor Do: Review SWCs (5 min)
 
 Ask the students the following questions:
 
@@ -626,7 +786,7 @@ Ask the students the following questions:
 
   **Answer:** By having a list that contains example code and an identifiable SWC number, one can practice avoiding the vulnerabilities before having a tool identify them.
 
-### 17. Instructor Do: Structured Review (35 mins)
+### 18. Instructor Do: Structured Review (35 mins)
 
 **Note:** If you are teaching this lesson on a weeknight, please save this 35-minute review for the next Saturday class.
 
