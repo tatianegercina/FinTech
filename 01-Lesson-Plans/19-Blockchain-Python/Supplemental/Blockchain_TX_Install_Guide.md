@@ -8,7 +8,19 @@ This guide serves as a step by step process for setting up and validating the [`
 
 * Windows users **MUST** use `git-bash` or _Anaconda Prompt_, and not the default Windows command prompt when you are requested to open the terminal window to execute commands, depending on the type of task to perform.
 
-## Installation
+## Screencast Videos
+
+If you need additional help in the installation process, you can follow the step by step video guides in the following links.
+
+### Microsoft Windows Users
+
+* [Installing Unit 19 Python Libraries for Windows](https://youtu.be/C6hXsiaaR8M)
+
+### Mac OS X Users
+
+* [Installing Unit 19 Python Libraries for MAC](https://youtu.be/ZQc86Yc18ME)
+
+## Installation Process
 
 Open a terminal and execute the following commands to install `web3.py` and `bit`, respectively. Windows users **MUST** use the _Anaconda Prompt_ in this section.
 
