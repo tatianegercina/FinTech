@@ -30,6 +30,14 @@
 
 * [Online list of ERCs](https://eips.ethereum.org/erc)
 
+* [Crowdsales in Ethereum](https://docs.openzeppelin.com/contracts/2.x/crowdsales)
+
+## Smart Contract Vulnerabilities
+
+* [Smart Contract Weakness Classification (SWC) Registry](https://swcregistry.io/)
+
+* [SWC coverage and status](https://mythx.io/swc-coverage/)
+
 ## Mapping Types
 
 * [Mapping Types Documentation](https://solidity.readthedocs.io/en/v0.6.0/types.html#mapping-types)
@@ -46,6 +54,5 @@
 
 * [OpenZeppelin SafeMath Documentation](https://docs.openzeppelin.com/contracts/2.x/api/math#SafeMath)
 
-## Crowdsales
-
-* [Crowdsales Documentation](https://docs.openzeppelin.com/contracts/2.x/crowdsales)
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
