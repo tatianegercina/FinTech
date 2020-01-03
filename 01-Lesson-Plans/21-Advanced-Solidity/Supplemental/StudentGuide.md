@@ -2,7 +2,7 @@
 
 ## Tokenomics
 
-* [Tonenomics. Thomas Power & Sean Au. Packt Publishing](https://www.oreilly.com/library/view/tokenomics/9781789136326/)
+* [Tokenomics. Thomas Power & Sean Au. Packt Publishing](https://www.oreilly.com/library/view/tokenomics/9781789136326/)
 
 * [Three Definitions of Tokenomics](https://www.coindesk.com/three-definitions-tokenomics)
 
@@ -10,13 +10,25 @@
 
 * [What is Tokenomics? Ultimate Investor's Guide - Part 2](https://blockgeeks.com/guides/what-is-tokenomics-part-2/)
 
+## Key Concepts
+
+* [Tokens Definition from OpenZeppelin](https://docs.openzeppelin.com/contracts/2.x/tokens)
+
 * [Token vs Coin: What’s the Difference?](https://www.bitdegree.org/tutorials/token-vs-coin/)
+
+* [Fungibility](https://en.wikipedia.org/wiki/Fungibility)
 
 * [List of ERC-20 Tokens](https://etherscan.io/tokens)
 
 * [Stablecoin definition from Investopedia](https://www.investopedia.com/terms/s/stablecoin.asp)
 
 * [Basis Points (BPS) definition from Investopedia](https://www.investopedia.com/terms/b/basispoint.asp)
+
+## Ethereum
+
+* [Ethereum Improvement Proposals](https://eips.ethereum.org/)
+
+* [Online list of ERCs](https://eips.ethereum.org/erc)
 
 ## Mapping Types
 
