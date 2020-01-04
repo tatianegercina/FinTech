@@ -8,23 +8,23 @@ The investment division of Harold's company has been investing in algorithmic tr
 
 You just learned these quantitative analysis techniques with Python and Pandas, so Harold has come to you with a challenge—to help him determine which portfolio is performing the best across many areas: volatility, returns, risk, and Sharpe ratios.
 
-You will need to create a tool (an analysis notebook) that analyzes and visualizes the major metrics of the portfolios across all of these areas, and determine which portfolio outperformed the others. You will be given the historical daily returns of several portfolios: some from the firm's algorithmic portfolios, some that represent the portfolios of famous "whale" investors like Warren Buffett, and some from big hedge and mutual funds. You will then use this analysis to create a custom portfolio of stocks and compare its performance to that of the other portfolios, as well as the larger market (S&P 500).
+You will need to create a tool (an analysis notebook) that analyzes and visualizes the major metrics of the portfolios across all of these areas, and determine which portfolio outperformed the others. You will be given the historical daily returns of several portfolios: some from the firm's algorithmic portfolios, some that represent the portfolios of famous "whale" investors like Warren Buffett, and some from the big hedge and mutual funds. You will then use this analysis to create a custom portfolio of stocks and compare its performance to that of the other portfolios, as well as the larger market (S&P 500).
 
 In this homework assignment, you will be accomplishing three main tasks:
 
-1. [Read in and Wrangle Returns Data](#Data-Preparation)
-2. [Determine Success of Each Portfolio](#Quant-Analysis)
-3. [Choose and Evaluate a Custom Portfolio](#Custom-Portfolio)
+1. [Read in and Wrangle Returns Data](#Prepare-the-Data)
+2. [Determine Success of Each Portfolio](#Conduct-Quantitative-Analysis)
+3. [Choose and Evaluate a Custom Portfolio](#Create-Custom-Portfolio)
 
 ---
 
 ## Instructions
 
-**File:** [Whale Analysis Starter Code](Starter_Code/whale_analyis.ipynb)
+**File:** [Whale Analysis Starter Code](Starter_Code/whale_analysis.ipynb)
 
 ### Prepare the Data
 
-First, read and clean several CSV files for analysis. The CSV files include whale portfolio returns, algorithmic trading portfolio returns, and S&P 500 historic prices. Use the [Whale Analysis Starter Code](Starter_Code/whale_analyis.ipynb) to complete the following steps:
+First, read and clean several CSV files for analysis. The CSV files include whale portfolio returns, algorithmic trading portfolio returns, and S&P 500 historical prices. Use the [Whale Analysis Starter Code](Starter_Code/whale_analyis.ipynb) to complete the following steps:
 
 1. Use Pandas to read in each of the [CSV files](Resources) as a DataFrame. Be sure to convert the dates to a `DateTimeIndex`.
 
@@ -54,7 +54,7 @@ Analyze the data to see if any of the portfolios outperform the stock market (i.
 
 #### Rolling Statistics
 
-1. Plot the rolling standard deviation of the firm's portfolios along with the rolling standard deviation of the S&P 500. Does risk increase for each of the portfolios at the same time risk increases in the S&P?
+1. Plot the rolling standard deviation of the firm's portfolios along with the rolling standard deviation of the S&P 500. Does the risk increase for each of the portfolios at the same time risk increases in the S&P?
 
 2. Construct a correlation table for the algorithmic, whale, and S&P 500 returns. Which returns most closely mimic the S&P?
 

@@ -434,7 +434,7 @@ Students will learn basic, common terminology that will enable them to navigate 
 
 * **Files:**
 
- * [Lesson Slides]()
+ * [Lesson Slides](https://docs.google.com/presentation/d/1syUXqizy8YoZuYVrYmJwDFv1TADW5IqXX0a_Itkvh_w/edit?usp=sharing)
 
 Navigate to the slides and define common terms:
 

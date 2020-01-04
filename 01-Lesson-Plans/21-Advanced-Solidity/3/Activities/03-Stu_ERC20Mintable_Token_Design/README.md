@@ -4,7 +4,7 @@ In this activity, you will build a mintable ERC20token and prepare it for a crow
 
 ## Instructions
 
-* Open the example contract [ArcadeTokenERC20.sol](Activities/06-Stu_ERC20Mintable_Token_Design/Unsolved/ArcadeTokenMintable.sol).
+* Open the example contract [ArcadeTokenERC20.sol](Unsolved/ArcadeTokenMintable.sol).
 
 * From the OpenZeppelin libraries, use ArcadeToken to extend ERC20, ERC20Detailed, and ERC20Mintable. Your contract should look something like:
 
@@ -17,9 +17,11 @@ contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 
 * Within the constructor body, call the `mint` function and pass the `msg.sender` and `initial_supply`.
 
+* Deploy your new contract on your local Ganache blockchain.
+
 ## Challenge
 
-* If time remains, calling the `mint` functions and try adding and removing minters from the contract.
+* If time remains, play around with changing the various contract parameters to create new and unique tokens.
 
 ## Hints
 
