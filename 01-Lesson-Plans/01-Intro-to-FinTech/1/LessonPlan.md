@@ -73,9 +73,9 @@ In this section, you will discuss the concept of FinTech as well as provide some
 
 **File:** [Defining FinTech Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit?usp=sharing)
 
-Open the slideshow and review today's objectives. (Slide 3)
+Open the slideshow and review today's objectives.
 
-Then move on to the first topic of the day: defining FinTech. Review the slides while presenting the following questions and answers to the class. (Slides 4–9)
+Then move on to the first topic of the day: defining FinTech. Review the slides while presenting the following questions and answers to the class.
 
 * What exactly *is* FinTech?
 
@@ -111,7 +111,7 @@ In this activity, students get a chance to reflect by writing down what FinTech 
 
 **File:** [README.md](Activities/01-Stu_FinTech_Group_Discussions/README.md)
 
-During this activity, students will share their responses with their classmates. Be sure that you and the TAs circulate the classroom to listen to students' responses. If you hear responses that are especially engaging or interesting, ask those students to share their response with the class during the review portion (Instructor Do: Review FinTech and Me).
+During this activity, students will share their responses with their classmates. Be sure that you and the TAs circulate the classroom to listen to students' responses. If you hear responses that are especially engaging or interesting, ask those students to share their responses with the class during the review portion (Instructor Do: Review FinTech and Me).
 
 ### 4. Instructor Do: Review FinTech and Me (10 min)
 
@@ -123,7 +123,7 @@ Once all volunteers have presented, tie everything together by explaining the fo
 
 * FinTech is the application of technology to the finance industry, but what it means at the individual level can differ.
 
-* Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. And still others see FinTech as a path to new career supported by growing demand.
+* Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. Furthermore, still, others see FinTech as a path to a new career supported by growing demand.
 
 * Despite students' differing reasons for wanting to learn more about FinTech, each of them has made the leap to take this course. Therefore, it's important to continue to get to know each other, as they'll be together "in the trenches" for the next 24 weeks. The relationships you build in this class can serve as valuable network connections after the completion of the course.
 
@@ -131,11 +131,11 @@ Once all volunteers have presented, tie everything together by explaining the fo
 
 ### 5. Instructor Do: Course Overview (10 min)
 
-In this section, provide an overview of the topics and technologies used in the course, as well the timeline for each topic or unit.
+In this section, provide an overview of the topics and technologies used in the course, as well as the timeline for each topic or unit.
 
 **File:** [Course Overview Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_6)
 
-Use the slideshow to go over the course agenda and timeline. (Slides 10–13)
+Use the slideshow to go over the course agenda and timeline.
 
 * **Week 1:** Students will be introduced to the world of FinTech and the current financial landscape.
 
@@ -163,13 +163,13 @@ Provide students with some encouragement and tips for overcoming the mental frus
 
 **File:** [Tips Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_12)
 
-Open the next series of slides and emphasize the following points. (Slides 19–25)
+Open the next series of slides and emphasize the following points.
 
-* Embrace your inner toddler. Recognizing how little you know is a first step toward growth as a learner. Hard work, humility, and a relentless desire to improve are essential for succeeding in this program.
+* Embrace your inner toddler. Recognizing how little you know is the first step toward growth as a learner. Hard work, humility, and a relentless desire to improve are essential for succeeding in this program.
 
 * At times, learning the skills taught in this course will be intimidating and frustrating. Remember that becoming a skilled professional is challenging and will take time. There is no way around that.
 
-* Due to the challenging nature of this course, there will be many moments where students will doubt themselves. Remember that everyone starts as a beginner, including the instructor. Also remember why you were admitted to this program in the first place: you have what it takes to succeed.
+* Due to the challenging nature of this course, there will be many moments where students will doubt themselves. Remember that everyone starts as a beginner, including the instructor. Also, remember why you were admitted to this program in the first place: you have what it takes to succeed.
 
 * Form a community with your classmates. Even though challenging times are up ahead, students have a solid support system: their instructor, TAs, student success manager, and, perhaps most importantly, each other. When you're frustrated or stuck, remember that we're all in this together. Seek help when you need it and lift each other up.
 
@@ -203,7 +203,7 @@ In this activity, students will reflect on how the current state of the FinTech 
 
 Quickly explain to the class the following:
 
-* *Rip Van Winkle* is a short story by the American author Washington Irving, first published in 1819. It follows a Dutch American villager in colonial America named Rip Van Winkle who falls asleep in the Catskill Mountains and wakes up 20 years later, completely missing the events of the American Revolution.
+* *Rip Van Winkle* is a short story by the American author Washington Irving, first published in 1819. It follows a Dutch American villager in colonial America named Rip Van Winkle, who falls asleep in the Catskill Mountains and wakes up 20 years later, completely missing the events of the American Revolution.
 
 * We'll apply the Rip Van Winkle story to FinTech by imagining if a financial analyst who fell asleep in the year 1999 and woke up today. What would he or she find most surprising about the current finance world?
 
@@ -237,11 +237,11 @@ In this section, engage students with a facilitated discussion about why FinTech
 
 **File:** [The Rise of FinTech Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_21)
 
-Open the slideshow and use the slides to help guide your discussion, focusing on the following talking points. (Slides 27–34)
+Open the slideshow and use the slides to help guide your discussion, focusing on the following talking points.
 
 As you review the slides, look for opportunities to prompt students to reflect. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer. For example, ask students to share examples of innovative FinTech companies and how they are disrupting the financial services industry.
 
-* Recent technological advancements in (big) data and mobile network infrastructure has led to a consumer desire for companies to not only provide more efficient data-driven services, but also quality engagement through scalable mobile platforms.
+* Recent technological advancements in (big) data and mobile network infrastructure has led to a consumer desire for companies to provide not only more efficient data-driven services, but also quality engagement through scalable mobile platforms.
 
 * To keep up with consumer demand, large financial firms that have been slower to adopt newer technologies have been forced to make larger investments in technology.
 
@@ -263,15 +263,15 @@ In this activity, students will once again break off into groups of two to four 
 
 **Notes:**
 
-* Use the slides to set up this activity. (Slides 38–41)
+* Use the slides to set up this activity.
 
 * The [instructor preparation document](../Instructor_Support/Blockchain.md) contains additional background information for the blockchain related slides.
 
 * In essence, this thought experiment asks students to define the financial and technical challenges of the Altruistic Alpacas charity. Students may have a mix of financial and technical backgrounds, but this exercise should force them to think creatively about the problem and identify challenges from both a financial and technical perspective.
 
-* The key to executing this exercise in the classroom is to ensure that students thinking outside their sphere of knowledge as well as thinking deeply about each problem.
+* The key to executing this exercise in the classroom is to ensure that students are thinking outside their sphere of knowledge as well as thinking deeply about each problem.
 
-* Set a time for 25 minutes and allow students to discuss their options. Remind them that they should be prepared to discuss these issues with the class.
+* Set a timer for 25 minutes and allow students to discuss their options. Remind them that they should be prepared to discuss these issues with the class.
 
 * As students work, you and your TAs should walk around the classroom and listen to student discussions. When appropriate, nudge them to think more critically. Many students may rely on their personal backgrounds, but this is a good time to think outside the box. For instance:
 
@@ -287,7 +287,7 @@ In this activity, students will once again break off into groups of two to four 
 
 When time is up, ask a few groups to share some of the challenges they identified. Consider opening a notepad file or using the whiteboard to track a running list of the challenges for each problem area.
 
-Once you have a list of challenges, use the slides to break down some of the potential solutions to these problems. (Slides 43–61)
+Once you have a list of challenges, use the slides to break down some of the potential solutions to these problems.
 
 Tell students the following:
 

@@ -15,40 +15,23 @@ If you think of other potential questions to add, please let us know! We are alw
 
 
 ## Unit 01: Intro to Finance and Programming
-#### Where can I get started with learning Git?
-Start with our pre-work, which has two modules with video tutorials and activities that can help out with the foundations of working with Git:
-[Bootcamp Pre-work](https://coding-bootcamp-fintech-prework.readthedocs-hosted.com/en/latest )
-
-Conveniently, GitHub has their own set of guides to help break down how to use the program:
-[GitHub Guides](https://guides.github.com/)
-
-Additionally, if you find videos helpful in your learning process, this is roughly an hour of video designed to cover the fundamentals of Git and GitHub:
-[No Nonsense Github Videos](https://github.com/Multishifties/No-Nonsense-Github-Project)
-
-Finally, we have a handy visual Git reference guide located here:
-[Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
-
+[Unit 01 - Full FAQ](../05-Student-Resources/unit-1/readme.md#faqs) <br>
+[Where can I started with learning Git?](../05-Student-Resources/unit-1/readme.md#where-can-I-get-started-with-learning-git) <br>
+[Where can I get a simple, yet comprehensive beginner summary for Markdown?](../05-Student-Resources/unit-1/readme.md#where-can-i-get-a-simple-yet-comprehensive-beginner-summary-for-markdown) <br>
+[How does the instructor execute computer commands so quickly?](../05-Student-Resources/unit-1/readme.md#how-does-the-instructor-execute-computer-commands-so-quickly) <br>
+[Why do I need a virtual environment?](../05-Student-Resources/unit-1/readme.md#why-do-i-need-a-virtual-environment) <br>
+[Where can I find out more about FinTech and stay up to date on FinTech news?](../05-Student-Resources/unit-1/readme.md#where-can-I-find-out-more-about-fintech-and-stay-up-to-date-on-fintech-news) <br>
 
 ---
 ## Unit 02: Python
-#### What's the relevance of Python?
-Python is the primary language that we will be using in this course. It's a semantic language which makes it easier to read and understand, and the reliance on indentation makes the organized structure quicker to grasp. With this language, we'll be able to dive into a slew of libraries that will make solving complex data problems more simple.
-
-#### What's up with this crazy indentation?
-With Python, indentation is more than just organization and readability. Python's functionality actually depends on proper indentation!
-
-In this snippet, we're using indentation to tell our code where our for loops begin and end. In Python, indenting creates blocks of code that work together. Similarly, indenting backwards tells the program when to end a loop.
-
-```python
-for x in range(10):
-    print(x)
-
-for x in range(20, 30):
-    print(x)
-```
-
-The code you will write in Python will eventually be seen by someone else. Focusing on organization and readability is important because you want colleagues to be able to read your code. If your code is poorly organized it will be difficult to read later on.
-
+[Unit 02 - Full FAQ](../05-Student-Resources/unit-2/readme.md#faqs) <br>
+[What's the relevance of Python?](../05-Student-Resources/unit-2/readme.md#whats-the-relevance-of-python) <br>
+[What's up with this crazy indentation?](../05-Student-Resources/unit-2/readme.md#whats-up-with-this-crazy-indentation) <br>
+[How do list comprehensions work?](../05-Student-Resources/unit-2/readme.md#how-do-list-comprehensions-work) <br>
+[How are variables assigned with a for loop?](../05-Student-Resources/unit-2/readme.md#how-are-variables-assigned-with-a-for-loop) <br>
+[How does slicing work?](../05-Student-Resources/unit-2/readme.md#how-does-slicing-work) <br>
+[How do you access values in a nested dictionary?](../05-Student-Resources/unit-2/readme.md#how-do-you-access-values-in-a-nested-dictionary) <br>
+[How can tabular data be accessed to faciliate exploration in Python?](../05-Student-Resources/unit-2/readme.md#How-can-tabular-data-be-accessed-to-faciliate-exploration-in-Python) <br>
 
 ---
 ## Unit 04: Pandas
