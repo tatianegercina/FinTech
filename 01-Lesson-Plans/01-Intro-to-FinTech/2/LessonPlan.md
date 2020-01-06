@@ -53,7 +53,7 @@ Welcome students to the second day of class and the next lesson in Unit 1.
 
 Take some time to introduce the topics that will be covered in this lesson: command line and Anaconda virtual environment, and a brief history of FinTech. This lesson will give students both the skills and knowledge required to gain a deeper understanding of the changing landscape of the FinTech ecosystem.
 
-Use the slideshow to review the objectives for today's class. (Slide 3)
+Use the slideshow to review the objectives for today's class.
 
 Cover the following points:
 
@@ -75,7 +75,7 @@ In this section, students will learn the basics of using the command line to per
 
 **File:** [Command Line Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g512780ac1c_0_0)
 
-Open the slideshow and use slides 4–7 as you present the following questions and answers:
+Open the slideshow and use the slides as you present the following questions and answers:
 
 * What is the command line?
 
@@ -139,7 +139,7 @@ In this activity, students will perform their own file system operations via the
 
 ### 4. Instructor Do: Review File System Operations (5 min)
 
-Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points. You can also use [slide 11](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_0) to show these definitions to students:
+Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points. You can also use the slides to show these definitions to students:
 
 * `mkdir` creates folder directories.
 
@@ -169,7 +169,7 @@ In this section, students will learn about file version control and how to uploa
 
 **File:** [Version Control Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_8_0)
 
-Open the slideshow and go through the slides while covering the following points about version control. (Slides 12–26)
+Open the slideshow and go through the slides while covering the following points about version control.
 
 * **Versioning** is simply a way to keep track of changes to files and folders over time.
 
@@ -247,7 +247,7 @@ In this section, give students a brief summary of some of the key factors leadin
 
 **File:** [Evolution of FinTech Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_3_22)
 
-Open the slideshow and go through the slides while reviewing the key historical factors leading to the present-day FinTech boom. (Slides 32–46)
+Open the slideshow and go through the slides while reviewing the key historical factors leading to the present-day FinTech boom.
 
 * Mobile Infrastructure and Shifting Consumer Preferences
 
@@ -289,7 +289,7 @@ This section will be a brief discussion of the positive impact that technology h
 
 **File:** [FinTech Domains Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_3_35)
 
-Open the slideshow and ask the students the following questions. (Slides 47–55)
+Open the slideshow and ask the students the following questions.
 
 * What are some areas in the financial industry in which technology has disrupted traditional finance activities?
 
@@ -335,7 +335,7 @@ First, ask students the following questions:
 
 * Did you find anything notable or interesting while researching the FinTech domains?
 
-If students are confused or want more information, open the [slides in the slideshow appendix](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360) and review the following FinTech domains and trends. (Slides 65–79)
+If students are confused or want more information, open the [slides in the slideshow appendix](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_5_360) and review the following FinTech domains and trends.
 
 * Payments and Remittances
 * Robo Advisors and Personal Finance
