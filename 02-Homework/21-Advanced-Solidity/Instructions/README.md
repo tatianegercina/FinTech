@@ -60,15 +60,17 @@ In this contract, you will model the deployment based off of the `ArcadeTokenCro
 
 ### Deploying the crowdsale
 
-Deploy the crowsale to the Kovan or Ropsten testnet, and store the deployed address for later.
+Deploy the crowsale to the Kovan or Ropsten testnet, and store the deployed address for later. Switch MetaMask to your desired network, and use the `Deploy` tab in Remix to deploy your contracts. Take note of the total gas cost, and compare it to how costly it would be in reality.
 
 ### Testing the crowdsale
 
-Test the crowdsale once again using your testnet tokens, then once you confirm that the crowdsale works as expected, try to add the token to MyCrypto and test a transaction.
+Test the crowdsale by sending Ether to the crowdale, then once you confirm that the crowdsale works as expected, try to add the token to MyCrypto and test a transaction. You can test the time functionality by replacing `now` with `fakenow`, and creating a setter function to modify `fakenow` to whatever time you want to simulate.
 
-You can add custom tokens from the `Add custom token` feature:
+You can add custom tokens in MyCrypto from the `Add custom token` feature:
 
 ![add-custom-token](https://i.imgur.com/p1wwXQ9.png)
+
+You can also do the same for MetaMask.
 
 ### Submission
 
