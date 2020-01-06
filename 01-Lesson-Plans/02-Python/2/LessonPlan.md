@@ -145,7 +145,7 @@ for i in range(len(cheer)):
     print()
 ```
 
-Open the slideshow and use slides 5-7 to discuss basic concepts related to lists. Be sure to highlight the following:
+Open the slideshow and use the slides to discuss basic concepts related to lists. Be sure to highlight the following:
 
 * A list in Python is a collection of ordered elements or values, separated by commas, with an index of "zero" for the first element.
 

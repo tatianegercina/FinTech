@@ -50,7 +50,7 @@ In this activity, instructors will introduce the problem-solving guidelines that
 
 * [Problem Solving Guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf)
 
-Open the slideshow and explain the following:
+
 
 * Students will use the methodologies outlined in the [problem-solving guidelines](Activities/01-Ins_Problem_Solving_Guidelines/Solved/TechnicalInterviewGuidelines.pdf) to impress upon a technical interviewer that they are strong problem solvers. Specifically, students will use the following technical interview methodologies:
 
