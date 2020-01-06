@@ -6,11 +6,23 @@ This guide serves as a step by step process for setting up and validating the [`
 
 * It is strongly recommended to create a new Python virtual environment for this unit to prevent cross-dependency issues.
 
-* Windows users **MUST** use `git-bash` and not the default Windows command prompt when you are requested to open the terminal window to execute commands. You should run `git-bash` as administrator to successfully install the libraries.
+* Windows users **MUST** use `git-bash` or _Anaconda Prompt_, and not the default Windows command prompt when you are requested to open the terminal window to execute commands, depending on the type of task to perform.
 
-## Installation
+## Screencast Videos
 
-Open a terminal and execute the following commands to install `web3.py` and `bit`, respectively.
+If you need additional help in the installation process, you can follow the step by step video guides in the following links.
+
+### Microsoft Windows Users
+
+* [Installing Unit 19 Python Libraries for Windows](https://youtu.be/C6hXsiaaR8M)
+
+### Mac OS X Users
+
+* [Installing Unit 19 Python Libraries for MAC](https://youtu.be/ZQc86Yc18ME)
+
+## Installation Process
+
+Open a terminal and execute the following commands to install `web3.py` and `bit`, respectively. Windows users **MUST** use the _Anaconda Prompt_ in this section.
 
 * Open the terminal and run the following command to create a brand new Python virtual environment for this unit.
 
@@ -42,7 +54,7 @@ Open a terminal and execute the following commands to install `web3.py` and `bit
 
 ## Verify Installation
 
-Once the `web3.py` and `bit` modules are downloaded and installed, verify that both installations completed successfully.
+Once the `web3.py` and `bit` modules are downloaded and installed, verify that both installations completed successfully. Windows users **MUST** use `git-bash` in this section.
 
 * Use the `pip list` function with a `grep` argument to identify if the `web3` library installed successfully.
 
@@ -79,6 +91,12 @@ In some cases, the `Web3.py` library may fail to install in Microsoft Windows du
 4. Run the package file and select the C++ build tools option. Then click install.
 
 5. This process takes about 15 minutes
+
+### Issues Installing `bit` or `web3` After Installing the Microsoft Visual C++ Build Tools In Windows
+
+Along the installation process of `bit` or `web3` you may experience an issue related with the Microsoft Visual C++ Build tools in Windows if you update Windows after installing the build tools, and before installing these Python libraries.
+
+You may see an error message that states that `wheel is not supported`, the solution for this issue is to uninstall and reinstall the Microsoft Visual C++ Build Tools.
 
 ### Update Conda Environment
 
