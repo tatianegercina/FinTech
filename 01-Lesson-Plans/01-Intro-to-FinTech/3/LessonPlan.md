@@ -54,7 +54,7 @@ Welcome students to the third day of class and the final lesson of Unit 1.
 
 **File:** [Lesson 1.3 Slideshow](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit)
 
-Use slides 1–3 to introduce today's lesson and objectives. Then, review the following points with students:
+Use the slides to introduce today's lesson and objectives. Then, review the following points with students:
 
 * The previous two lessons focused on introducing the FinTech course structure as well as the FinTech industry more broadly. We discussed the history and current landscape of the FinTech ecosystem, as well as specific factors that have led to changes in various FinTech domains.
 
@@ -74,7 +74,7 @@ This section provides students with a quick recap of how to create and download 
 
 **File:** [GitHub Refresher Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit#slide=id.g5d815a1bb6_2_0)
 
-Open the slideshow and present the following questions and answers. (Slides 4–11)
+Open the slideshow and present the following questions and answers.
 
 * What is git?
 
@@ -174,7 +174,7 @@ In this section, students will be introduced to the git CLI and additional git o
 
 **File:** [Introduction to Git CLI Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit#slide=id.g5d80c858bb_1_1206)
 
-Use the slides to review the following points. (Slides 16–21)
+Use the slides to review the following points.
 
 * How the GitHub web app differs from the git CLI:
 
@@ -208,7 +208,7 @@ Use the slides to review the following points. (Slides 16–21)
 
   * `git pull`: Downloads changed files from the remote git repository to the local git repository and updates the local files.
 
-  Then, tell students it's time for a GitHub pop quiz. Use the slides to walk through the following questions and answers. (Slides )
+  Then, tell students it's time for a GitHub pop quiz. Use the slides to walk through the following questions and answers.
 
 * What is a git commit?
 
@@ -313,8 +313,7 @@ In this part of the lesson, students will be introduced to markdown files and th
 
 **File:** [Markdown Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit#slide=id.g5d815a1bb6_2_20)
 
-Open the slideshow and review the Markdown slides, while presenting the following questions and answers. (Slides 29–32)
-
+Open the slideshow and review the Markdown slides, while presenting the following questions and answers.
 * What is markdown?
 
   **Answer:** Markdown is a lightweight markup language that contains syntax for adding formatting elements to plain-text documents.
