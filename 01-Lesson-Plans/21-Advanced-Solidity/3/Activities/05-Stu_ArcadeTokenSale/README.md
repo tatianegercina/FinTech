@@ -8,7 +8,7 @@ In this activity, you will be creating a crowdsale contract using the OpenZeppel
 
 * First, at the top of the contract, you will need to import `ArcadeTokenMintable.sol`.
 
-* Inside of the `ArcadeTokenSale` contract, you will need to create a constructor that fulfils the parameters that OpenZeppelin's `Crowdsale` contract. According to the [documentation](https://docs.openzeppelin.com/contracts/2.x/api/crowdsale#Crowdsale-constructor-uint256-address-payable-contract-IERC20-), `Crowdsale` accepts three parameters:
+* Inside of the `ArcadeTokenSale` contract, you will need to create a constructor that fulfills the parameters that OpenZeppelin's `Crowdsale` contract. According to the [documentation](https://docs.openzeppelin.com/contracts/2.x/api/crowdsale#Crowdsale-constructor-uint256-address-payable-contract-IERC20-), `Crowdsale` accepts three parameters:
 
   ![Crowdsale Constructor](Images/oz-crowdsale-constructor.png)
 
@@ -16,13 +16,13 @@ In this activity, you will be creating a crowdsale contract using the OpenZeppel
 
   * You will need to pass in the parameters from the main constructor to the secondary `Crowdsale` constructor using the same methodology in `ArcadeTokenMintable.sol`.
 
-  * The body of the constructor can stay empty, since all of the logic is inherited from `Crowdsale` and `MintedCrowdsale`.
+  * The body of the constructor can stay empty since all of the logic is inherited from `Crowdsale` and `MintedCrowdsale`.
 
 * Now, below `ArcadeTokenSale`, at the top of the `ArcadeTokenSaleDeployer` contract, add the following variables to store the addresses of the `ArcadeToken` and `ArcadeTokenSale` contracts that this contract will be deploying:
 
-  * An `address public` called `arcade_sale_address` which will store `ArcadeTokenSale`'s address once deployed.
+  * An `address public` called `arcade_sale_address`, which will store `ArcadeTokenSale`'s address once deployed.
 
-  * An `address public` called `token_address` which will store `ArcadeToken`'s address once deployed.
+  * An `address public` called `token_address`, which will store `ArcadeToken`'s address once deployed.
 
 * Inside of the constructor, perform the following:
 
@@ -57,13 +57,13 @@ In this activity, you will be creating a crowdsale contract using the OpenZeppel
 
 * Open up your `ArcadeTokenMintable.sol` contract. It should match what is in this [starter code](Unsolved/ArcadeTokenMintable.sol).
 
-* Remove the `mint` call that is inside of the body of the constructor. The constructor must now be empty since we will be delegating all minting logic to the ArcadeTokenSale contract. Otherwise, since `msg.sender` would be the `ArcadeTokenSaleDeployer` contract, these tokens would be locked up with no function to withdraw, and it is cheaper gas-wise to prevent this from occuring in the first place.
+* Remove the `mint` call that is inside of the body of the constructor. The constructor must now be empty since we will be delegating all minting logic to the ArcadeTokenSale contract. Otherwise, since `msg.sender` would be the `ArcadeTokenSaleDeployer` contract, these tokens would be locked up with no function to withdraw, and it is cheaper gas-wise to prevent this from occurring in the first place.
 
 * Deploy and test your contract. You will need to load the `ArcadeTokenSale` and `ArcadeToken` contracts via their deployed address using the `At Address` feature in the `Deploy` tab of Remix:
 
   ![Deployment](Images/deployment.gif)
 
-* Make a test purchase by setting the `value` field to some Ether value and calling the `buyTokens` function on the `ArcadeTokenSale` contract, then checking your balance on the `ArcadeToken` contract:
+* Make a test purchase by setting the `value` field to some Ether value and calling the `buyTokens` function on the `ArcadeTokenSale` contract, then check your balance on the `ArcadeToken` contract:
 
   ![Purchase](Images/purchase.gif)
 
