@@ -24,6 +24,20 @@ By the end of the unit, students will be able to:
 
 ### 1. Instructor Do: Welcome Back (10 min)
 
-Previously students have implemented both a basic token as well as the ERC21 fungible token standard using the OpenZeppelin libraries. Today they will be implementing their first ERC721 Non-fungible token using the Openzeppelin libraries. Take a few minutes to review the concept of fungibility by discussing the following recall questions with the class.
+Previously students have implemented both a basic token as well as the ERC21 fungible token standard using the OpenZeppelin libraries. Today they will be implementing their first ERC721 Non-fungible token using the Openzeppelin libraries. Take a few minutes to review ERC's, OpenZeppelin and the concept of fungibility by discussing the following recall questions with the class.
 
-*
+* What are some differences between `fungible` and `non-fungible` tokens?
+
+* **Answer** Non-fungible tokens are unique, fungible tokens are not unique.
+
+* **Answer** Fungible tokens are interchangeable with one another whereas non-fungible are not.
+
+* **Answer** Non-fungible tokens use ERC 721, fungible tokens use ERC 777.
+
+* What are some potential benefits of using open source libraries such as OpenZeppelin?
+
+* **Answer** They are freely available to use and contribute to under the MIT license.
+
+* **Answer** It's a community-backed project that has implemented many of the communities agreed-upon standards (EIPS/ERCS).
+
+* **Answer** It provides a secure, standardized starting point for various smart contract standards.
