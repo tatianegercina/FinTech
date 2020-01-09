@@ -8,7 +8,8 @@
 [What is the difference between a Series and a DataFrame?](#what-is-the-difference-between-a-series-and-a-dataframe)<br>
 [Why do my Dataframe changes disappear when I move to the next cell in Jupyter?](#why-do-my-dataframe-changes-disappear-when-i-move-to-the-next-cell-in-Jupyter)<br>
 [How do you loop through a DataFrame?](#how-do-you-loop-through-a-dataframe)<br>
-[]
+[Why must I apply a function to a groupby object in order to output a DataFrame?](#why-must-i-apply-a-function-to-a-groupby-object-in-order-to-output-a-dataframe)<br>
+[What does this error mean: `TypeError: unsupported operand type`?](#what-does-this-error-mean-typeerror-unsupported-operand-type)<br>
 #### Why is it called pandas?
 According to *Python for Data Analysis*, written by Pandas inventor himself, Wes McKinney, the name pandas "is derived from panel data, an econometrics term for multidimensional structured data sets, and Python data analysis itself"(McKinney, 2013).
 
