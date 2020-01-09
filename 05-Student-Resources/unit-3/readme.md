@@ -65,7 +65,7 @@ The groupby function puts all elements of a certain category together by finding
 Have you ever gotten an error similar to this:  `TypeError: unsupported operand type(s) for +: 'int' and 'str'`?  If so, its because you were trying to combine data of different types, and Python doesn't like that! Let's take the following code, where we are trying to concatenate a string the end of an integer to make a new sentence:
 ```python
 for x in cylon_df['Model#']:
-    print(str(x) + ' is the best!')
+    print(x + ' is the best!')
 ```
 This would throw the following error:
 ```python
