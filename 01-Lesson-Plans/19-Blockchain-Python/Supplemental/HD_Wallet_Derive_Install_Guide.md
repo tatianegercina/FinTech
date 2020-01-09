@@ -8,6 +8,25 @@ The `hd-wallet-derive` library is written in the PHP language; therefore, you wi
 
 **Note:** For the Windows installation, we will be using the XAMPP package, while for the Mac OS X installation, we will have two options; you can update the pre-build PHP version up to `v7.3` or you can use Homebrew.
 
+## Screencast Videos
+
+If you need additional help in the installation process, you can follow the step by step video guides in the following links.
+
+### Microsoft Windows Users
+
+* [Installing PHP Version 7.3 for Windows](https://youtu.be/IvcZZaIEL_4)
+
+* [HD Derive Wallet Install for Windows](https://youtu.be/A_tqm4j4vsY)
+
+### Mac OS X Users
+
+* [Installing PHP Version 7.3 for MAC - Option 1](https://youtu.be/Q3RA7PiW9Ws)
+
+* [Installing PHP Using the Homebrew Package Manger for Mac - Option 2](https://youtu.be/SNRQSwlOKbs)
+
+* [HD Derive Wallet Install for Mac](https://youtu.be/c-Qc3Pss6oM)
+
+
 ### Environment Setup in Microsoft Windows Operating System
 
 For those with a **Windows operating system**, execute the following steps:
