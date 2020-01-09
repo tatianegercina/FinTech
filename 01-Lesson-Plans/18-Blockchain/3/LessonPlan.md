@@ -30,6 +30,10 @@ By the end of the unit, students will be able to:
 
 * Before class, make sure to follow the `geth` [install instructions](https://github.com/ethereum/go-ethereum/wiki/Installing-Geth) and ensure that the tool is functioning in your computer.
 
+* It is highly advised to keep track of the commands you run in order to start a blockchain with `geth`. There are many commands, but two of them will be the most important, and it is easiest to keep track if you are maintaining the notes in each step.
+
+* If all else fails, and a student is absolutely unable to start their own blockchain, you can distribute the pre-built [devchain](../Supplemental/devchain.zip). Within is a prebuilt genesis configuration, with two nodes and accounts, as well as a `README.md` for how to start the chain. The chain has mined about 30 blocks already, so it is ready to continue mining.
+
 * Have an address/wallet ready to populate as a pre-funded account. You can generate a new one with MyCrypto, or use the same wallet from Day 1.
 
 * Have a look at the [Proof of Stake](https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ) FAQ on the Ethereum wiki for an in-depth comparison between it and Proof of Work.
@@ -358,7 +362,7 @@ Answer any questions before moving on.
 
 ### 8. Instructor Do: Creating two nodes with accounts (10 min)
 
-In this activity, students will learn how to add nodes to our brand new blockchain.
+In this activity, students will learn how to add nodes to our brand new blockchain. It is advised to keep track of the commands you are using in a text file for reference. Alternatively, you can tap into the `bash history`, but the ordering may not be consistent. There are many commands involved with the next few activities, so it is important to keep track of where you are in the process.
 
 The first step is to export our genesis configuration into a `json` file. Follow the next steps to do so.
 
@@ -376,11 +380,25 @@ Explain to students that we can use the `networkname.json` file to initialize an
 
 Exit the `puppeth` prompt by using the `Ctrl+C` keys combination.
 
-Explain to students that now you will create the first node's data directory using the `geth` command and a couple of command-line flags. Be sure you are under your `Blockchain-Tools` directory and run the following command from the terminal window.
+Explain to students that now you will create the first node's data directory using the `geth` command and a couple of command-line flags. Be sure you are under your `Blockchain-Tools` directory and run the following command from the terminal window:
 
 ```bash
 ./geth account new --datadir node1
 ```
+
+Copy the address that is printed into your notes file, and label it "Node 1 Key". You will need this for future reference. You can always fetch the address later by printing the keystore file in the node's folder like so:
+
+```bash
+cat node1/keystore/UTC--2019-10-08T20-14-04.346928000Z--959a2bd5da6097bab0c2d98e14ebfa65bed06b1b
+```
+
+This will output something like:
+
+```bash
+{"address":"959a2bd5da6097bab0c2d98e14ebfa65bed06b1b","crypto":{"cipher":"aes-128-ctr","ciphertext":"07d7df14c082d8d4d14c7d2877c968a9bb624f398c4b820127dcd8d0dfe62bc1","cipherparams":{"iv":"494ce9a4fb08101a52eb3f60b1b80a2f"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"c6a8ce0ed96bada27cd8e82906a78c795953901e90736170180db97196644052"},"mac":"440e051dd3c0333966a403e8a037c50fa80355ea0a911aa323c0f9ef01214f28"},"id":"0de99a24-763b-4c98-8ed7-115954e6d420","version":3}
+```
+
+You can simply copy the `address` property from the JSON keystore. Notice that you can also just copy the address from the end of the file name, since it is appended with the address.
 
 Explain to students that you are using the `geth` command here to create a new account in the `node1` folder.
 
@@ -408,6 +426,8 @@ Next, create another account using a different `datadir` by running the followin
 ./geth account new --datadir node2
 ```
 
+Copy and label your second node's address in your notes file for later.
+
 Explain to students that you typically would only have one node per machine, but you need to create at least two nodes in your computer to create a blockchain.
 
 * Now we have two folders that each node can use to store its private key and its copy of the blockchain.
@@ -417,6 +437,8 @@ Explain to students that now is time to initialize and tell the nodes to use our
 ```bash
 ./geth init puppernet.json --datadir node1
 ```
+
+Since you only run the `init` commands once, you do not need to copy these commands into your notes.
 
 You should see this success message:
 
@@ -445,6 +467,8 @@ Answer any questions before moving on.
 In this activity, students will create their nodes and accounts for their custom blockchain network.
 
 Have the TAs circulate and ensure that students are successfully following the instructions and initializing their nodes.
+
+Ensure that students are copying the necessary information into their
 
 **Instructions:**
 
@@ -487,7 +511,7 @@ Open the terminal window (Git Bash in Windows), navigate to your `Blockchain-Too
 
 **Note:** Under Microsoft Windows you may see a pop-up window asking for permission from the firewall, be sure you check all the boxes and click on the "Allow access" button.
 
-**Note:** In the event that your `enode` address ends in an IP address that is _not_ the localhost (127.0.0.1), you may add the `—rpcaddr 127.0.0.1` flag in order to force it to do so.
+**Note:** In the event that your `enode` address ends in an IP address that is _not_ the localhost (127.0.0.1), you may add the `--rpcaddr 127.0.0.1` flag in order to force it to do so.
 
 Explain each of the new command-line flags:
 
@@ -500,6 +524,8 @@ Explain each of the new command-line flags:
 You should see the node `Committing new mining work`:
 
 ![node mining](Images/mining.png)
+
+Copy this command into your notes and label it `Start Node 1`.
 
 Now, this is our miner in the network. Let's launch the second node and configure it to let us talk to the chain!
 
@@ -539,15 +565,17 @@ Explain each of the new command-line flags:
 
  ![node sync](Images/node-sync.png)
 
+Copy this command into your notes and label it `Start Node 2`.
+
 Now it's time to have the students bring their blockchains to life!
 
-**Note**: If you ever encounter strange errors, or need to start over without destroying the accounts, run the following command to clear the chain data (this will reset the `enode` addresses as well):
+**Note**: If you ever encounter strange errors, or need to start over **without** destroying the accounts, run the following command to clear the chain data (this will reset the `enode` addresses as well):
 
 ```bash
 rm -Rf node1/geth node2/geth
 ```
 
-This will be a crucial command for assisting students during the next activity.
+This will be a crucial command for assisting students during the next activity. After running this command, you simply need to run another `geth init` on each node, then copy the new `enodeid` for the first node for use in the second node's start command. Everything else should stay the same, since the `genesis.json` contains the same accounts that are still in each node's `node/keystore` folder. Clearing the `node/geth` folder **just** deletes the blockchain data and allows for re-initialization from Block 0. The `enodeid` is the only aspect that will change.
 
 Answer any questions before moving on.
 
@@ -558,6 +586,8 @@ Answer any questions before moving on.
 In this activity, students will launch their chains using the same techniques presented in the demo.
 
 Have the TAs circulate and ensure that students can start their chains and mine blocks.
+
+Ensure that students are keeping track of the commands they run to start each node in their notes file for ease of reference.
 
 If students encounter errors, have them enter the command to clear the chain data without clearing the accounts:
 

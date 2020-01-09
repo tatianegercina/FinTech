@@ -33,13 +33,13 @@ By the end of the unit, students will be able to:
 
 * When discussing security, drive home the importance of due diligence in software development. Encourage the students to get excited about security research, as they will have to think about security inherently in their future.
 
-* Encourage students to not just seek out and scan for low-level bugs and exploits in their code, but to thoroughly analyze the logical implementation of their code as to not create a vulnerability by improperly implementing the business logic. A secure specification can still be implemented insecurely, so it is important to build their ability to "think like a hacker."
+* Encourage students not just to seek out and scan for low-level bugs and exploits in their code, but to thoroughly analyze the logical implementation of their code as to not create a vulnerability by improperly implementing the business logic. A secure specification can still be implemented insecurely, so it is important to build their ability to "think like a hacker."
 
 ---
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1NbUpKtI1i4AaeJ1fQds5t_hfJ4aiO-xqvdQe1t4tvts/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -91,7 +91,7 @@ Review the following recall questions with the class.
 
   * **Answer** Fungible tokens are interchangeable with one another whereas non-fungible are not.
 
-  * **Answer** Non-fungible tokens use ERC 721, fungible tokens use ERC 777.
+  * **Answer** non-fungible tokens use ERC 721, fungible tokens use ERC 777.
 
 Now that the students are familiar with tokens and the various ERC token standards, briefly introduce the concept of token distributions by discussing the following question with the class.
 
@@ -107,7 +107,7 @@ In this activity, you will explain how crowdsales have become a popular method f
 
 * For companies and startups, it's cheap to have new ideas, but executing those ideas can be very expensive.
 
-* Over the last decade, `crowdfunding` has become a popularized way for projects to receive funding that enables them to successfully bring their product or service to production.
+* Over the last decade, `crowdfunding` has become a popularized way for projects to receive funding that enables them to bring their product or service to production successfully.
 
 * `Crowdfunding` is the process of raising funds by asking a large number of people each for a small amount of money. Crowdfunding is often done through a `crowdfunding platform` where users are promised a product or service and can then donate money to a project in a streamlined manner.
 
@@ -131,7 +131,7 @@ Pose the class the following question:
 
   * Any other initial operating costs
 
-Explain to the class that tokenomics still plays a huge rule in `crowdsales`. Investors backing the project aren't always just buying the token because they believe the future project will be successful but also because they believe the perceived market value of the token will increase.
+Explain to the class that tokenomics still play a huge rule in `crowdsales`. Investors backing the project aren't always just buying the token because they believe the future project will be successful but also because they believe the perceived market value of the token will increase.
 
 * Important factors of a crowdsale:
 
@@ -153,7 +153,7 @@ Explain to the class that tokenomics still plays a huge rule in `crowdsales`. In
 
   * Is there a refund policy if the goal was not successful.
 
-* When implementing a crowdsale, you have to first decide how you are going to release tokens to the participants of the sale. This is known as `token emission` and is normally done in one of three ways:
+* When implementing a crowdsale, you have first to decide how you are going to release tokens to the participants of the sale. This is known as `token emission` and is normally done in one of three ways:
 
   * The crowdsale contract owns a given number of tokens and transfers ownership of them as users purchase them.
 
@@ -177,9 +177,9 @@ Discuss the following review questions with the class.
 
 * **Example Answer** The price of ether during its initial sale was 2000 ETH per BTC.
 
-* **Example Answer** According to the Ethereum blogpost "Ether is a product, NOT a security or investment offering. Ether is simply a token useful for paying transaction fees or building or purchasing decentralized application services on the Ethereum platform; it does not give you voting rights over anything, and we make no guarantees of its future value."
+* **Example Answer** According to the Ethereum blog post, "Ether is a product, NOT a security or investment offering. Ether is simply a token useful for paying transaction fees or building or purchasing decentralized application services on the Ethereum platform; it does not give you voting rights over anything, and we make no guarantees of its future value."
 
-* **Example Answer** Basic Attention Token raised 36 million in 24 seconds hitting the hard cap on their token supply.
+* **Example Answer** Basic Attention Token raised 36 million in 30 seconds, hitting the hard cap on their token supply.
 
 * **Example Answer** FileCoin was capped at 200 million FileCoins
 
@@ -226,7 +226,7 @@ Explain to the students:
 
 * As previously discussed, OpenZeppelin provides contracts that are implementations of common standards.
 
-* Here, just like before we are importing the ERC20 contracts from the OpenZeppelin library, now, however, we are also going to import and implement a new contract called `ERC20Mintable`.
+* Here, just like before, we are importing the ERC20 contracts from the OpenZeppelin library, now, however, we are also going to import and implement a new contract called `ERC20Mintable`.
 
 Add the ERC20Mintable reference to the contract definition:
 
@@ -255,9 +255,9 @@ Take a moment to point out the code in the file, particularly the comments.
 
 Close OpenZeppelin's `ERC20Mintable` and navigate back to `ArcadeTokenMintable.sol`.
 
-Now that `ERC20Mintable`'s functionality has been imported into our new contract it's time to add our constructors.
+Now that `ERC20Mintable`'s functionality has been imported into our new contract, it's time to add our constructors.
 
-First add the constructor for the ArcadeToken contract itself. This constructor will accept a string `name`, a string `symbol`, and a uint `initial_supply`.
+First, add the constructor for the ArcadeToken contract itself. This constructor will accept a string `name`, a string `symbol`, and a uint `initial_supply`.
 
 ```solidity
 contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
@@ -271,7 +271,7 @@ contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 
 * Our contracts constructor accepts three values a string `name`, a string `symbol`, and a uint `initial_supply`.
 
-Next define the constructor for the `ERC20Detailed` contract that we are importing.
+Next, define the constructor for the `ERC20Detailed` contract that we are importing.
 
 ```solidity
 contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
@@ -289,9 +289,9 @@ contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 
 * `ERC20Detailed`'s constructor accepts the variables `name` and `symbol` that we defined in the main ArcadeToken contract.
 
-* Here we are also hardcoding the number `18` as our third parameter. This parameter defines the number of decimals that our token will have. In this case the number `18` denotes that the smallest increment of our token is `.000000000000000001`. We are sticking with `18` since it's Ethereum's default.
+* Here we are also hardcoding the number `18` as our third parameter. This parameter defines the number of decimals that our token will have. In this case, the number `18` denotes that the smallest increment of our token is `.000000000000000001`. We are sticking with `18` since it's Ethereum's default.
 
-Finally it's time to define the contract's body. Inside the body of the contract, call the `mint` function, passing `msg.sender` and the `inital_supply` variable that is defined in our constructor.
+Finally, it's time to define the contract's body. Inside the body of the contract, call the `mint` function, passing `msg.sender` and the `inital_supply` variable that is defined in our constructor.
 
 Your complete code should now look something like this:
 
@@ -316,13 +316,13 @@ contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 }
 ```
 
-* Now when our `ArcadeToken` contract is deployed it will call the mint function passing it the current `msg.sender` as well a our defined `inital_supply`.
+* Now when our `ArcadeToken` contract is deployed it will call the mint function passing it the current `msg.sender` as well as our defined `inital_supply`.
 
 Compile and deploy the completed contract for the class.
 
 ![Deploy ERC20Mintable](Images/DeployArcadeTokenMintable.gif)
 
-In the next activity the students will now be implementing their own `ERC20Mintable` token for crowdsale.
+In the next activity, the students will now be implementing their own `ERC20Mintable` token for crowdsale.
 
 ### 6. Students Do: ERC20 Mintable Token Design (10 min)
 
@@ -382,7 +382,7 @@ Explain to the students:
 
 * In this activity, we will be exploring the Crowdsale contracts that OpenZeppelin provides. Since our token is now `ERC20Mintable`, we will create a `MintedCrowdsale` that will automatically manage our token sale securely.
 
-* OpenZeppelin Crowdsale contracts allow us to do a variety of things, including the ability to configure (amont many others):
+* OpenZeppelin Crowdsale contracts allow us to do a variety of things, including the ability to configure (among many others):
 
   * Token Price and Exchange Rates.
 
@@ -444,7 +444,7 @@ contract ArcadeTokenSale is Crowdsale, MintedCrowdsale {
 
 * Here we are simply accepting the same parameters that the OpenZeppelin documentation listed for the `Crowdsale` contract from our main constructor, and passing them into the `Crowdsale` constructor.
 
-* This will allow `ArcadeTokenSale` to initialize all of the variables that `Crowdsale` requires. The body of the constructor can stay empty, since all of the logic is already in the `Crowdsale` and `MintedCrowdsale` contracts.
+* This will allow `ArcadeTokenSale` to initialize all of the variables that `Crowdsale` requires. The body of the constructor can stay empty since all of the logic is already in the `Crowdsale` and `MintedCrowdsale` contracts.
 
 Now, we will need to create one more contract in this file, below the `ArcadeTokenSale`, called `ArcadeTokenSaleDeployer`:
 
@@ -461,7 +461,7 @@ contract ArcadeTokenSaleDeployer {
 }
 ```
 
-* We are going to use a temporary contract, called `ArcadeTokenSaleDeployer` to help us deploy and configure our `ArcadeToken` and `ArcadeTokenSale` contracts with all of the correct information.
+* We are going to use a temporary contract, called `ArcadeTokenSaleDeployer`, to help us deploy and configure our `ArcadeToken` and `ArcadeTokenSale` contracts with all of the correct information.
 
 * First, we're going to create some public variables to store the addresses of the contracts we will be deploying from `ArcadeTokenSaleDeployer` to keep track of later.
 
@@ -507,7 +507,7 @@ token.addMinter(arcade_sale_address);
 token.renounceMinter();
 ```
 
-* Since `msg.sender` is the default minter when deploying `ERC20Mintable` tokens, and `ArcadeTokenSaleDeployer` is the `msg.sender` when creating the token, we need to set things straight by making the `ArcadeTokenSale` contract a minter, and having the `ArcadeTokenSaleDeployer` renounce its "mintership," since we only want the crowdsale contract to have control of minting.
+* Since `msg.sender` is the default minter when deploying `ERC20Mintable` tokens, and `ArcadeTokenSaleDeployer` is the `msg.sender` when creating the token, we need to set things straight by making the `ArcadeTokenSale` contract a minter, and to have the `ArcadeTokenSaleDeployer` renounce its "mintership," since we only want the crowdsale contract to have control of minting.
 
 Your contract should now match the [ArcadeTokenSale.sol](Activities/04-Ins_Crowdsales/Solved/ArcadeTokenSale.sol) solution linked above.
 
@@ -539,7 +539,7 @@ contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 
 * This is because the `ArcadeTokenSaleDeployer` contract is the one that creates the `ArcadeToken` initially. Therefore, `msg.sender` would actually be the address of the `ArcadeTokenSaleDeployer` contract! Since we have no function to withdraw those tokens, they'd be effectively "burned" out of the usable supply. We could add a function to `ArcadeTokenSaleDeployer` to withdraw, but that is quite unnecessary and would ultimately be more expensive.
 
-* It is especially important to think twice about who exactly `msg.sender` is, and how `msg.sender` can be manipulated. Remember, other people can write smart contracts that could talk to yours, so `msg.sender` isn't always going to be a simple wallet.
+* It is especially important to think twice about who exactly `msg.sender` is, and how `msg.sender` can be manipulated. Remember, other people, can write smart contracts that could talk to yours, so `msg.sender` isn't always going to be a simple wallet.
 
 That's all we need to get the crowdsale going. Navigate to the `Deploy` tab in Remix, and deploy the `ArcadeTokenSaleDeployer` contract, passing in the parameters.
 
@@ -621,19 +621,19 @@ Ask the following recall questions:
 
   * **Answer:** Managing the general sale and creation of tokens automatically.
 
-* Why must we be careful about using `msg.sender` as a check in our contracts?
+* Why must we be careful about using `msg.sender` as a check-in our contracts?
 
   * **Answer:** `msg.sender` can also be another smart contract, so if the logic requires a human to be on the other end, it might not work.
 
 * Why do `ArcadeToken` and `ArcadeTokenSale` have empty constructor bodies?
 
-  * **Answer:** All of the logic for these contracts is handled in the contracts that they inherit, so no additional logic is needed.
+  * **Answer:** All of the logic for these contracts are handled in the contracts that they inherit, so no additional logic is needed.
 
 Explain to the students that for the rest of the class, we will be examining the security of the crowdsale we just built, and learning about the common vulnerabilities that smart contract developers should avoid.
 
 ### 13. Instructor Do: Solidity Security / MythX Intro (15 min) (Critical)
 
-In this activity, you will demonstrate the MythX security tool, and how it can identify some common security vulnerabilities in Solidity contracts.
+In this activity, you will demonstrate the MythX security tool and how it can identify some common security vulnerabilities in Solidity contracts.
 
 **Files:**
 
@@ -641,11 +641,11 @@ In this activity, you will demonstrate the MythX security tool, and how it can i
 
 Security is a fundamental topic regarding anything to do with technology, especially software that works directly with monetary value. Stress the importance of security:
 
-* In our testnet and local development environments, we are able to "battle test" our code before we deploy it to the prime-time mainnet. It is especially important when programming smart contracts to avoid certain design patters that lead to vulnerabilities that could potentially be exploited.
+* In our testnet and local development environments, we can "battle test" our code before we deploy it to the prime-time mainnet. It is especially important when programming smart contracts to avoid certain design patterns that lead to vulnerabilities that could potentially be exploited.
 
 * Software security is not a new field, but it has recently exploded in demand and will continue to be a critical part of the software development lifecycle. Security is not just left to the security team in the software world; in reality, the security of a system is the sum of its technical and human aspects, and every person in an organization should be working towards the goal of higher security.
 
-* Typically organizations will have dedicated security teams continuously vetting and testing the software and operations. This does not mean you are off the hook! As the engineers, you are the first, and often, only line of defense standing between a hacker and your trophies. When developing software, you should be taking security very seriously and integrate it from the ground up.
+* Typically, organizations will have dedicated security teams continuously vetting and testing the software and operations. This does not mean you are off the hook! As the engineers, you are the first, and often, the only line of defense standing between a hacker and your trophies. When developing software, you should be taking security very seriously and integrate it from the ground up.
 
 Briefly discuss the Ethereum DAO hack:
 
@@ -657,21 +657,21 @@ Briefly discuss the Ethereum DAO hack:
 
 Present the MythX/Mythril tool to the class by opening the [MythX](https://mythx.io/) website.
 
-* MythX is a service that is based on an open source command line tool, [Mythril](https://github.com/ConsenSys/mythril), that allows Solidity developers to scan for common low-level vulnerabilities in their contracts. The tool has integrations with many IDEs, including Remix itself!
+* MythX is a service that is based on an open-source command-line tool, [Mythril](https://github.com/ConsenSys/mythril), that allows Solidity developers to scan for common low-level vulnerabilities in their contracts. The tool has integrations with many IDEs, including Remix itself!
 
-* This tool will help identify the low hanging fruit that you can take care of easily during development. **However**, no automated security tool will uncover **all** vulnerabilities. For instance, it can't uncover logical bugs, like if you are missing some `require`s or have a function that doesn't quite check all of the required access control permissions needed for the contract to work as expected. Essentially, it can detect the little things here and there that could potentially lead to big exploits, but it cannot tell if your contract fulfils its design requirements.
+* This tool will help identify the low hanging fruit that you can take care of easily during development. **However**, no automated security tool will uncover **all** vulnerabilities. For instance, it can't uncover logical bugs, like if you are missing some `require`s or have a function that doesn't quite check all of the required access control permissions needed for the contract to work as expected. Essentially, it can detect the little things here and there that could potentially lead to big exploits, but it cannot tell if your contract fulfills its design requirements.
 
 Open up [Remix](https://remix.ethereum.org) and enable the MythX plugin:
 
 ![MythX Remix Plugin](Images/mythx-remix.gif)
 
-* This plugin will run in trial mode, but you can create an account at the MythX website, and configure the plugin credentials.
+* This plugin will run in trial mode, but you can create an account at the MythX website and configure the plugin credentials.
 
 * Registration is easy (and free), it's simply providing an email and signing a message with MetaMask, but this is optional.
 
-* We can use this tool for unlimited scans. We would only need to pay for this tool for increased analysis that uses other tools behind the scenes, besides the open source Mythril tool.
+* We can use this tool for unlimited scans. We would only need to pay for this tool for increased analysis that uses other tools behind the scenes, besides the open-source Mythril tool.
 
-Now, time to use an old contract as an example for what a vulnerable contract could look like. Create a new file called `ArcadeTokenVulnerable.sol` and populate it with the [file linked above](Activities/06-Ins_Security/Solved/ArcadeTokenVulnerable.sol).
+Now, time to use an old contract as an example of what a vulnerable contract could look like. Create a new file called `ArcadeTokenVulnerable.sol` and populate it with the [file linked above](Activities/06-Ins_Security/Solved/ArcadeTokenVulnerable.sol).
 
 * Remember this contract we wrote back when we first learned how tokens worked?
 
@@ -686,7 +686,7 @@ function transfer(address recipient, uint value) public {
 }
 ```
 
-* This function would allow us to send tokens without having balance, and would actually cause the hacker's balance to increase to the maximum value that `uint` allowed.
+* This function would allow us to send tokens without having balance and would cause the hacker's balance to increase to the maximum value that `uint` allowed.
 
 * Let's see what MythX has to say about this contract!
 
@@ -700,7 +700,7 @@ This process can take up to 2 minutes, while you are waiting, ask the students:
 
   **Answer:** OpenZeppelin's SafeMath library!
 
-* Who is ultimately responsible for the cyber security of an organization?
+* Who is ultimately responsible for the cybersecurity of an organization?
 
   **Answer:** Everyone is responsible for carrying the burden of security!
 
@@ -708,7 +708,7 @@ This process can take up to 2 minutes, while you are waiting, ask the students:
 
   **Answer:** The security team is already going to be overwhelmed with many other things to patch and is fighting a constant upward-hill battle.
 
-  **Answer:** Every little bit off effort towards security helps.
+  **Answer:** Every little bit of effort towards security helps.
 
   **Answer:** We can't be lazy when developing and leave security as an afterthought.
 
@@ -727,7 +727,7 @@ identified by clicking on the red and yellow boxes in the sidebar:
 
 * The issues highlighted in `yellow` are warnings. While they are not critical vulnerabilities that MythX knows can be directly exploited, they are flags to look out for. While a hacker might be able to hack your contract using one or two red/critical vulnerabilities as expected, they may also be able to combine several yellow/warning level vulnerabilities to craft an exploit that leverages multiple "less serious" vulnerabilities.
 
-* It is best to get our contracts as close to fully-passing as possible. However, there are some instances where we simply can't, and there are instances where you might be adding safe-guards where the tool cannot recognize, and generate a warning anyway. These tools are not perfect, but they can help a long way.
+* It is best to get our contracts as close to fully-passing as possible. However, there are some instances where we simply can't, and there are instances where you might be adding safeguards where the tool cannot recognize, and generate a warning anyway. These tools are not perfect, but they can help a long way.
 
 Now it's time for the students to analyze some contracts of their own, starting with the crowdsale they just built!
 
@@ -763,7 +763,7 @@ Now that students have scanned their contracts, ask them the following questions
 
 * After fixing our vulnerabilities, are our contracts "hack-proof?"
 
-  **Answer:** We cannot guarantee that they are hack proof, but we still performed due diligence.
+  **Answer:** We cannot guarantee that they are hack-proof, but we still performed due diligence.
 
   **Answer:** There may be a bug in our logic that the tool cannot pick up, so we should still have a 3rd party security team test and audit these contracts before deploying to production/mainnet.
 
@@ -789,11 +789,11 @@ Ask the students the following questions:
 
 * What was the most interesting vulnerability you found?
 
-* Why might some vulnerabilities be suppported by the free version of MythX and some require Pro?
+* Why might some vulnerabilities be supported by the free version of MythX and some require Pro?
 
   **Answer:** Some analysis takes more computation and time, which costs MythX more.
 
-  **Answer:** Other tools may be used besides the open source tools that MythX makes available.
+  **Answer:** Other tools may be used besides the open-source tools that MythX makes available.
 
 * Why is it useful to be able to explore a registry of vulnerabilities like the SWC?
 
