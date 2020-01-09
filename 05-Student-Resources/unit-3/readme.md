@@ -14,7 +14,7 @@ According to *Python for Data Analysis*, written by Pandas inventor himself, Wes
 #### How do you access a column?
 To access a column in your DataFrame you call the DataFrame variable plus the column using either bracket or dot notation.  For example, lets use the following DataFrame named `cylons`:
 
-![Cylon DF](Resources/Cylon_DF.png)<br>
+![Cylon DF](Resources/Cylon_DF.PNG)<br>
 
 you would access the `Model_Number` column as follows:
 
@@ -26,7 +26,7 @@ If Pandas throws a key error at you, it can be really frustrating, especially wh
 #### What is a DataFrame axis?
 A DataFrame axis is simply the column headers or the row index positions.  This image helps to visualize it:
 
-![Cylon DF Axes](Resources/Cylon_Axes.PNG)<br>
+![Cylon DF Axes](Resources/Cylon_Axes.png)<br>
 
 
 #### What is the difference between a Series and a DataFrame?
@@ -34,20 +34,6 @@ A DataFrame is a 2D matrix object holding rows and columns.  A Series is a 1D ob
 
 ![Cylon DF Series](Resources/Cylon_Series.PNG)<br>
 
-#### Why do my Dataframe changes disappear when I move to the next cell in Jupyter?
-
-When a DataFrame is stored in a variable, it is a one time snapshot of the DataFrame at the time of storage.  If you run changes to the DataFrame, you must either store the new DataFrame in a new variable, overwrite the old DataFrame variable name, or use the `inplace = True` argument in the function parameters.  Here's an example:
-
-lets see we make the following change to our Cylon DataFrame
-
-
-#### How do you loop through a DataFrame?
-
-#### Groupby?
-
-#### Working with Data types
-
-#### mapping?
 
 
 
