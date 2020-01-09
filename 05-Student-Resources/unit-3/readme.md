@@ -34,6 +34,21 @@ A DataFrame is a 2D matrix object holding rows and columns.  A Series is a 1D ob
 
 ![Cylon DF Series](Resources/Cylon_Series.PNG)<br>
 
+#### Why do my Dataframe changes disappear when I move to the next cell in Jupyter?
+
+When a DataFrame is stored in a variable, it is a one time snapshot of the DataFrame at the time of storage.  If you run changes to the DataFrame, you must either store the new DataFrame in a new variable, overwrite the old DataFrame variable name, or use the `inplace = True` argument in the function parameters.  Here's an example:
+
+lets see we make the following change to our Cylon DataFrame
+
+
+#### How do you loop through a DataFrame?
+
+#### Groupby?
+
+#### Working with Data types
+
+#### mapping?
+
 
 
 ### Sources
