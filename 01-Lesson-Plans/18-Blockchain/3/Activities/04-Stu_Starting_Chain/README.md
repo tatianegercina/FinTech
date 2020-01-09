@@ -10,6 +10,8 @@ In this activity, you will be starting both nodes that you've created before to 
 
 Time to start your blockchain network! Open a terminal window (Git Bash in Windows) navigate to your `Blockchain-Tools` folder and follow the next steps.
 
+In your notes text file, make sure to keep track of **every** command you run in this activity for later. You can use these notes as a cheat-sheet later to easily start your chain again.
+
 * Launch the first node into mining mode with the following command:
 
  ```bash
@@ -23,6 +25,8 @@ Time to start your blockchain network! Open a terminal window (Git Bash in Windo
 You should see the node `Committing new mining work`:
 
 ![node mining](Images/mining.png)
+
+* Copy this command into your notes and label it `Start Node 1`.
 
 Now you will launch the second node and configure it to let us talk to the chain via RPC.
 
@@ -49,6 +53,8 @@ Now you will launch the second node and configure it to let us talk to the chain
 * The output of the second node should show information about `Importing block segments` and synchronization:
 
  ![node sync](Images/node-sync.png)
+
+* Copy this command into your notes and call it `Start Node 2`.
 
 ## Hints
 
