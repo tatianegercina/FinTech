@@ -22,6 +22,8 @@ By the end of the unit, students will be able to:
 
 * Refer to OpenZeppelin ERC721 documentation for further information about Non-Fungible Tokens. [ERC721 Docs](https://docs.openzeppelin.com/contracts/2.x/api/token/erc721)
 
+* Refer to the `IPFS` documentation for further information about [IPFS Docs](https://docs.ipfs.io/)
+
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
 ### 1. Instructor Do: Welcome Back (10 min)
