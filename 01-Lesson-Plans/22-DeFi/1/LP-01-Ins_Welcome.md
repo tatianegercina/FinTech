@@ -12,6 +12,8 @@ By the end of the unit, students will be able to:
 
 * Explain what events are and how they can be used to create a dApp
 
+* Use IPFS to store immutable data off-chain to save gas
+
 * Use Filters in Web3.py to react to Events from smart contracts
 
 ### Instructor Notes
@@ -34,6 +36,24 @@ Previously students have implemented both a basic token as well as the ERC21 fun
 
 * **Answer** Non-fungible tokens use ERC 721, fungible tokens use ERC 777.
 
+* What are some examples of `fungible` assets?
+
+* **Answer** United States Dollars (USD)
+
+* **Answer** Ethereum (ETH)
+
+* **Answer** Bitcoin (BTC)
+
+* **Answer** Gold
+
+* What are some examples of `non-fungible` assets?
+
+* **Answer** Art
+
+* **Answer** Diamonds
+
+* **Answer** Land Ownership
+
 * What are some potential benefits of using open source libraries such as OpenZeppelin?
 
 * **Answer** They are freely available to use and contribute to under the MIT license.
@@ -41,3 +61,11 @@ Previously students have implemented both a basic token as well as the ERC21 fun
 * **Answer** It's a community-backed project that has implemented many of the communities agreed-upon standards (EIPS/ERCS).
 
 * **Answer** It provides a secure, standardized starting point for various smart contract standards.
+
+Now that the class has been refreshed on fungibility, set the stage for today's lesson by introducing the concept of `DeFi`.
+
+* `DeFi` is short for decentralized finance.
+
+* `DeFi` encompasses many of the technologies and paradigms that we have learned throughout the previous unit, however, defi is not a particular technology or implementation.
+
+* `DeFi` is a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
