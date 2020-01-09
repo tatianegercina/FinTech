@@ -32,11 +32,25 @@ You should see a success message similar to this one:
 
 ![geth new account](Images/geth-account-new.png)
 
+* Create a new text file for notes, and copy the node's address into the file and label it `Node 1 Key`.
+
 * Repeat the same process for the second node by replacing the `datadir` parameter with the `node2` folder.
 
  ```bash
  ./geth account new --datadir node2
  ```
+
+* Make sure to keep track of the node's addresses and which belongs to which. You can always fetch the address later by printing the keystore file in the node's folder like so:
+
+  ```bash
+  cat node1/keystore/UTC--2019-10-08T20-14-04.346928000Z--959a2bd5da6097bab0c2d98e14ebfa65bed06b1b
+  ```
+
+  This will output something like:
+
+  ```bash
+  {"address":"959a2bd5da6097bab0c2d98e14ebfa65bed06b1b","crypto":{"cipher":"aes-128-ctr","ciphertext":"07d7df14c082d8d4d14c7d2877c968a9bb624f398c4b820127dcd8d0dfe62bc1","cipherparams":{"iv":"494ce9a4fb08101a52eb3f60b1b80a2f"},"kdf":"scrypt","kdfparams":{"dklen":32,"n":262144,"p":1,"r":8,"salt":"c6a8ce0ed96bada27cd8e82906a78c795953901e90736170180db97196644052"},"mac":"440e051dd3c0333966a403e8a037c50fa80355ea0a911aa323c0f9ef01214f28"},"id":"0de99a24-763b-4c98-8ed7-115954e6d420","version":3}
+  ```
 
 Now, it's time to initialize and tell the nodes to use your genesis block!
 
@@ -49,6 +63,8 @@ Now, it's time to initialize and tell the nodes to use your genesis block!
 You should see this success message:
 
 ![geth init](Images/geth-init.png)
+
+* Since you only initialize your nodes once, you don't need to copy anything into your notes here.
 
 * Run the same command for `node2`.
 
