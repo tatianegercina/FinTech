@@ -2,7 +2,7 @@
 
 PyViz is a Python visualization package that provides a single platform to access multiple visualization packages, including Matplotlib, Plotly Express, hvPlot, Panel, D3.js, etc.
 
-Follow the below steps to install and set up PyViz in your Python environment. These steps should be completed outside of class.
+Follow the steps below to install and set up PyViz in your Python environment. These steps should be completed outside of class.
 
 1. Download the PyViz dependencies **nodejs** and **npm** (included in nodejs).
 
@@ -18,7 +18,7 @@ Follow the below steps to install and set up PyViz in your Python environment. T
     conda install -c pyviz panel
     ```
 
-3. PyViz installation also requires installation of Jupyter Lab extensions. These extensions are used to render PyViz plots in Jupyter Lab. Execute the below commands to install the necessary Jupyter Lab extensions for PyViz and Plotly Express.
+3. PyViz installation also requires the installation of Jupyter Lab extensions. These extensions are used to render PyViz plots in Jupyter Lab. Execute the below commands to install the necessary Jupyter Lab extensions for PyViz and Plotly Express.
 
     ```shell
     jupyter labextension install @pyviz/jupyterlab_pyviz

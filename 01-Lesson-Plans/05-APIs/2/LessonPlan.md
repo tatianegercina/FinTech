@@ -4,7 +4,7 @@
 
 ### Overview
 
-Today's class will focus on exposing students to the exciting and innovative FinTech APIs that have been disrupting the industry. There are so many groundbreaking APIs in the FinTech industry that it's almost impossible not to get excited about them. APIs used in this lesson include **Quandl**, an API that provides access to historical stock data, and **Plaid**, an API that brokers connections between multiple financial institution to create a unified view of personal, financial information and accelerate the extraction of data from multiple financial accounts. Both of these services help democratize and decentralize financial data stores and analytic approaches. And this just the beginning. New APIs and SDKs (software development kits) are released regularly, which means there's always new technologies to use to enhance and advance the FinTech industry. It's a new world, and it's a world to be excited about!
+Today's class will focus on exposing students to the exciting and innovative FinTech APIs that have been disrupting the industry. There are so many groundbreaking APIs in the FinTech industry that it's almost impossible not to get excited about them. APIs used in this lesson include **Quandl**, an API that provides access to historical stock data, and **Plaid**, an API that brokers connections between multiple financial institutions to create a unified view of personal, financial information and accelerate the extraction of data from multiple financial accounts. Both of these services help democratize and decentralize financial data stores and analytic approaches. And this just the beginning. New APIs and SDKs (software development kits) are released regularly, which means there's always new technologies to use to enhance and advance the FinTech industry. It's a new world, and it's a world to be excited about!
 
 This lesson presents students with hands-on experience using APIs in a Python environment, requesting and leveraging API keys, and securely storing API keys and credentials as **environment variables** (variables that exist at the operating system level). Students will programmatically submit API requests to Quandl using the Python `requests` library and Plaid's software development kit, a library packaged to provide developers with access to Plaid's endpoints and functions.
 
@@ -28,7 +28,7 @@ By the end of class, students will be able to:
 
 * Slack out the [IEXFinance Installation Guide](../Supplemental/IEXFinance_Installation_Guide.md) (again) and the [PyViz Installation Guide](../../06-PyViz/Supplemental/PyVizInstallationGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class.
 
-* This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created and accounts and received API keys prior to this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson so they have ample time to sign up. Students were instructed to sign up at the end of 5.1. There will be an activity dedicated to confirming that each student has signed up.
+* This lesson includes the demonstration and use of two APIs that require users to have accounts and API keys. You, students, and TAs will all need to have created and accounts and received API keys prior to this lesson. The following links can be used to sign up for accounts and get keys. Slack these links out to TAs and students before the beginning of the lesson, so they have ample time to sign up. Students were instructed to sign up at the end of 5.1. There will be an activity dedicated to confirming that each student has signed up.
 
   * [Quandl](https://www.quandl.com/sign-up-modal?defaultModal=showSignUp)
 
@@ -40,7 +40,7 @@ By the end of class, students will be able to:
 
 * Some students may have experience working with making API calls. Keep an eye out for any students who might be advanced with APIs and could help with review activities. Allowing advanced students to conduct reviews and help their peers is a great way to keep them engaged and interested in the material.
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
+* Have your TAs keep track of the [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [5.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=50ef1953-f071-47b8-8bb3-aab10107ea41) Note that this video may not reflect the most recent lesson plan.
@@ -75,9 +75,9 @@ Transition into a dry demonstration (just visit the site) of a practical FinTech
 
 * Explain that Plaid is an API that allows users to connect multiple bank accounts to one platform and provides a unified view of a person's financial ecosystem. This allows users to manage and analyze their accounts and financial information from one spot.
 
-* Communicate that Plaid was designed as a tool for developers to accelerate their FinTech development. Developers can use Plaid to provide services to their users and consumers without having to worry about making API calls to each individual bank or financial entity.
+* Communicate that Plaid was designed as a tool for developers to accelerate their FinTech development. Developers can use Plaid to provide services to their users and consumers without having to worry about making API calls to each bank or financial entity.
 
-* Because Plaid handles the behind-the-scenes handshakes with each financial institution, developers are able to focus on designing and developing a program that will:
+* Because Plaid handles the behind-the-scenes handshakes with each financial institution, developers can focus on designing and developing a program that will:
 
   1. Make calls to Plaid.
 
@@ -89,7 +89,7 @@ Transition into a dry demonstration (just visit the site) of a practical FinTech
 
 ### 2. Instructor Do: API Keys (5 min) (Critical)
 
-In this activity, students and instructor will participate in a facilitated discussion regarding API keys. Students will learn the what, why, and how of API keys.
+In this activity, students and the instructor will participate in a facilitated discussion regarding API keys. Students will learn the what, why, and how of API keys.
 
 Guided questions are provided to help facilitate discussion. Use these questions as time permits.
 
@@ -101,9 +101,9 @@ Navigate to the `API Keys` section of the 5.2 slides and introduce students to A
 
   ![API Key](Images/api-key.png)
 
-* Explain the main reason why companies use API keys is to monitor and control user requests and receive compensation for their services and intellectual property. Because API keys detail permissions and privileges for users, companies can programmatically disable and enable API privileges based on  number of requests submitted.
+* Explain the main reason why companies use API keys is to monitor and control user requests and receive compensation for their services and intellectual property. Because API keys detail permissions and privileges for users, companies can programmatically disable and enable API privileges based on a number of requests submitted.
 
-Initiate a facilitated discussion by communicating the following guided questions and discussion points. Choose two or three questions to ask, depending on available time.
+Initiate a facilitated discussion by communicating the following guided questions and discussion points. Choose two or three questions to ask, depending on the available time.
 
 * Ask the students: API keys are submitted with all API requests. Does it seem safe to transmit a unique key over the internet with every request? If no, why not?
 
@@ -131,19 +131,19 @@ End the activity by asking the students if they have any further questions.
 
 ### 3. Instructor Do: Keys to the FinTech Kingdom (10 min)
 
-Over the next couple activities, students will be working with APIs that require keys for access. Use this time to engage them with an API keys facilitated review discussion.
+Over the next couple of activities, students will be working with APIs that require keys for access. Use this time to engage them with API keys facilitated review discussion.
 
 Engage the students with the following review questions:
 
 * Do *all* APIs require API keys?
 
-  **Answer:** No. Only some APIs require keys to be used. Others allow users to submit requests for free (with rate limits).
+  **Answer:** No. Only some APIs require keys to be used. Others allow users to submit requests for free (with rate-limits).
 
 * Why require users to have an API key when requests can be sent without APIs?
 
-  **Answer:** API keys allow companies monitor, analyze, and enforce rate limits.
+  **Answer:** API keys allow companies to monitor, analyze, and enforce rate limits.
 
-* What happens when the `?api_key=` tag is used? Is a function executed or is a parameter passed.
+* What happens when the `?api_key=` tag is used? Is a function executed, or is a parameter passed?
 
   **Answer:** A parameter is being passed.
 
@@ -153,7 +153,7 @@ Engage the students with the following review questions:
 
 * Do you think API keys are naturally secure?
 
-  **Answer:** No, they are not. API keys are transmitted across network and are not naturally encrypted. API keys can be encrypted to make them private.
+  **Answer:** No, they are not. API keys are transmitted across the network and are not naturally encrypted. API keys can be encrypted to make them private.
 
 * Is there a problem with sharing an API key?
 
@@ -191,13 +191,13 @@ Open the [starter file](Activities/01-Ins_Create_Env_Variables/Unsolved/keys.sh)
   export QUANDL_API_KEY="ENTER YOUR API KEY HERE"
   ```
 
-* Once the `keys.sh` file has been created, it has to be executed. Execution can occur manually or it can be scheduled. Navigate to where `keys.sh` is saved, and execute the following shell command:
+* Once the `keys.sh` file has been created; it has to be executed. Execution can occur manually, or it can be scheduled. Navigate to where `keys.sh` is saved, and execute the following shell command:
 
   ```shell
   . ./keys.sh
   ```
 
-* Execute an `echo` command to output the value of variable to the screen.
+* Execute an `echo` command to output the value of the variable to the screen.
 
   ```shell
   echo $QUANDL_API_KEY
@@ -223,9 +223,9 @@ Introduce students to the concept of environment variables by asking the followi
 
   **Answer:** Variables could be created, and the keys could be stored in the variables.
 
-Navigate to the 5.2 slides, and touch point on each of the below discussion points.
+Navigate to the 5.2 slides and touchpoint on each of the below discussion points.
 
-* Environment variables are variables just like Python variables; however, instead of being created in a Python application, they're created on a user's computer. environment variables are operating-system level variables that are accessible by all programs and applications.
+* Environment variables are variables just like Python variables; however, instead of being created in a Python application, they're created on a user's computer. Environment variables are operating-system-level variables that are accessible by all programs and applications.
 
 * Environment variables are given a name, and they can hold any string value. It is important to note that environment variables can only hold strings.
 
@@ -239,7 +239,7 @@ Navigate to the 5.2 slides, and touch point on each of the below discussion poin
   api_key = os.getenv("QUANDL_API_KEY")
   ```
 
-* If an environment variable does not exist, Python will return None as the value. An empty environment variable will cause an API call to fail. If an API doesn't seem to be working right, double check your environment variable using the `type` command. This will indicate if the environment variable is of type None (null) or string  (not null).
+* If an environment variable does not exist, Python will return None as the value. An empty environment variable will cause an API call to fail. If an API doesn't seem to be working right, double-check your environment variable using the `type` command. This will indicate if the environment variable is of type None (null) or string  (not null).
 
   ```python
   api_key = os.getenv("MY_QUANDL_API_KEY")
@@ -298,11 +298,11 @@ Kick off the activity review session by asking students to summarize the process
 
   **Answer:** The environment variable should be called in Python using the `os.environ.get` function.
 
-* Is there ever a time where an API key  should be hard-coded within a Python script?
+* Is there ever a time where an API key should be hard-coded within a Python script?
 
   **Answer:** No. The best practice for keeping API keys secure is to store them in environment variables. This practice should always be used.
 
-Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ipynb), and end the review session with a quick dry walk-through of the solution.
+Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ipynb), and end the review session with a quick-dry walk-through of the solution.
 
 * The `export` command is used to create environment variables. Once created, the environment variables are then shared with all child processes. For example, when the `keys.sh` file is executed, the export command will ensure the `QUANDL_API_KEY` variable is accessible by all processes running in the terminal that executed the `keys.sh` file.
 
@@ -382,7 +382,7 @@ Ask students the following guided question:
 
 * Because SDKs provide out-of-the-box functions that can be used with the API, developers do not have to worry about reinventing the wheel. What is an example of a function or operation a FinTech SDK might provide?
 
-  **Answer:** A FinTech SDK might provide a function that calculates sharpe ratios, which means users would not need to create this functionality themselves; they'd be able to use the SDK to extract historical stock data AND calculate sharpe ratios. The requests library would only support data extraction.
+  **Answer:** A FinTech SDK might provide a function that calculates Sharpe ratios, which means users would not need to create this functionality themselves; they'd be able to use the SDK to extract historical stock data AND calculate Sharpe ratios. The requests library would only support data extraction.
 
 Ask students if there are any questions before moving on.
 
@@ -402,9 +402,9 @@ Navigate to the `Plaid SDK` section of the 5.2 slides, and introduce the Plaid b
 
 * As a FinTech company, Plaid has two customers in mind: the everyday person seeking to take ownership and control over their finances, and the developers seeking to design and build robust FinTech applications that enable financial analysis.
 
-* Plaid is tipping the financial scales by breaking down barriers and providing a self-service platform not for FinTech professionals but for FinTech consumers: a platform offering data and analytic needs  to promote the decentralization of financial analytics. Plaid literally bestows upon users the processing power and data access points previously reserved just for financial elites.
+* Plaid is tipping the financial scales by breaking down barriers and providing a self-service platform not for FinTech professionals but for FinTech consumers: a platform offering data and analytic needs to promote the decentralization of financial analytics. Plaid literally bestows upon users the processing power and data access points previously reserved just for financial elites.
 
-* What exactly does Plaid do? Plaid brokers connections to users' bank accounts to create a one-stop shop experience for financial management. Typically when analyzing data across multiple accounts, one would have to visit each financial institution and extract the desired data. Plaid streamlines this process by offering a platform that will broker the request for data extraction so users do not have to manually do it. Plaid also offers analytics and insights products as well, helping users better understand trends in their data.
+* What exactly does Plaid do? Plaid brokers connections to users' bank accounts to create a one-stop-shop experience for financial management. Typically when analyzing data across multiple accounts, one would have to visit each financial institution and extract the desired data. Plaid streamlines this process by offering a platform that will broker the request for data extraction, so users do not have to do it manually. Plaid also offers analytics and insights products as well, helping users better understand trends in their data.
 
 * Plaid offers the following services:
 
@@ -425,7 +425,7 @@ Facilitate discussion with the following talking points and guided questions:
 
 * Plaid was created as a tool to assist developers in designing FinTech applications. By brokering connections to financial institutions, Plaid allows developers to focus on designing analytic pipelines for consumers that provide insight and drive financial budgeting decisions. If you had access to your savings, investment, and retirement account data, what would you do with it?
 
-  **Answer:** Calculate rate of cumulative returns daily, quarterly, and yearly to show cumulative returns over time. This insight could be used to change the types of funds, bonds, and individualized stocks used in each account.
+  **Answer:** Calculate the rate of cumulative returns daily, quarterly, and yearly to show cumulative returns over time. This insight could be used to change the types of funds, bonds, and individualized stocks used in each account.
 
   **Answer:** Calculate beta to compare individualized stock and retirement portfolio volatility.
 
@@ -445,7 +445,7 @@ Have the `keys.sh` file prepared before class so that it does not need to be cre
 
 * [plaid_demo.ipynb](Activities/04-Ins_Plaid_Demo/Solved/plaid_demo.ipynb)
 
-Emphasize to students that one of the really cool things about Plaid is that it provides a developers sandbox for users to get started running. The sandbox contains account data that can be used to test connectivity to Plaid, as well as test some of Plaid's functionality.
+Emphasize to students that one of the cool things about Plaid is that it provides developers a sandbox for users to get started running. The sandbox contains account data that can be used to test connectivity to Plaid, as well as test some of Plaid's functionality.
 
 * The sandbox is great because it gives developers a space to play with Plaid without having to connect to personal bank accounts. This grants developers the ability to focus on what they intend to build rather than how they're going to get their data.
 
@@ -515,7 +515,7 @@ Open the Jupyter [starter file](Activities/04-Ins_Plaid_Demo/Solved/plaid_demo.i
 
 Explain that data can be extracted from Plaid using the `GET` function. The Plaid sandbox comes preloaded with financial data ready and available for use. Sandbox data includes institution data, account information, transactions, investment records, and more. However, to extract data, there are a few data attributes that are needed first.
 
-* Generate a list all of the institutions that have been loaded into the sandbox. This can be done by using the `Institutions.get` function, which accepts count as an argument.
+* Generate a list of all of the institutions that have been loaded into the sandbox. This can be done by using the `Institutions.get` function, which accepts count as an argument.
 
   ```python
   # Fetch institutions
@@ -583,9 +583,9 @@ Once the access token is in hand, you can really start using Plaid to its fulles
 
 Take some time to emphasize what it means to have this type of data provided by Plaid. Use FinTech use cases to help ground the discussion.
 
-* Imagine wanting to create some type of monitoring tool that flags transactions based off certain rules (e.g., time of day, amount, time since last transaction). Banks provide some of this functionality with their mobile apps, but rarely do they ever allow users to create custom rules. A developer could create an app that does just this, and he or she could use Plaid as their foundation. The sandbox data in Plaid could be used to begin development and testing. And once the app is ready for production, Plaid can be the mechanism that consumers use to connect their accounts.
+* Imagine wanting to create some type of monitoring tool that flags transactions based on certain rules (e.g., time of day, amount, time since the last transaction). Banks provide some of this functionality with their mobile apps but rarely do they ever allow users to create custom rules. A developer could create an app that does just this, and he or she could use Plaid as their foundation. The sandbox data in Plaid could be used to begin development and testing. Furthermore, once the app is ready for production, Plaid can be the mechanism that consumers use to connect their accounts.
 
-* Imagine wanting to create a digital dashboard for personal spending. Plaid is what can make this happen, providing the outlet for connecting to personal accounts, as well as a means to consolidate and extract data for aggregation. This means as developers we can provide our consumers with the look, feel, and functionality that we want: a financial digital dashboard for the people, by the people.
+* Imagine wanting to create a digital dashboard for personal spending. Plaid is what can make this happen, providing the outlet for connecting to personal accounts, as well as a means to consolidate and extract data for aggregation. This means that as developers, we can provide our consumers with the look, feel, and functionality that we want: a digital financial dashboard for the people, by the people.
 
 If time remains, ask students for any thoughts or questions.
 
@@ -593,7 +593,7 @@ If time remains, ask students for any thoughts or questions.
 
 ### 12. Students Do: Sporting Plaid—Part 1 (20 min)
 
-This activity is the first part of a two part mini-project activity. Students will create environment variables for Plaid API keys and install the Plaid SDK, which will be used in the next activity to extract transaction data.
+This activity is the first part of a two-part mini-project activity. Students will create environment variables for Plaid API keys and install the Plaid SDK, which will be used in the next activity to extract transaction data.
 
 Instruct TAs to confirm that each student has Plaid API keys and can authenticate with Plaid. Circulate through the room to help troubleshoot any challenges related to environment variables and API keys.
 
@@ -633,7 +633,7 @@ If time remains, ask the following questions:
 
 * Why is Plaid considered a FinTech disrupter?
 
-  **Answer:** Plaid is changing the way developers and consumers can get access to FinTech data. Not only is Plaid providing a technology platform to get access to FinTech data, it is also providing analytic and insight products to help consumers understand their data and make data-driven decisions.
+  **Answer:** Plaid is changing the way developers and consumers can get access to FinTech data. Not only is Plaid providing a technology platform to get access to FinTech data, but it is also providing analytic and insight products to help consumers understand their data and make data-driven decisions.
 
 * How glad are you that SDKs don't require users to build long, parameterized request URLs like the Python `requests` library?
 
@@ -669,13 +669,13 @@ Circulate through the room and provide assistance while students are working. St
 
 Students will just have completed a lengthy activity of installing and using the Plaid SDK to extract financial data. End the class with a reflection exercise to reinforce the conceptual information learned.
 
-* Give students 2 minutes to pick one data element from the Plaid transactions data that they'd like to analyze. Call on each student in round-robin fashion and ask them to volunteer a data point of interest. Allow the students to suggest different types of analysis they'd like to do with Plaid's data.
+* Give students 2 minutes to pick one data element from the Plaid transaction data that they'd like to analyze. Call on each student in a round-robin fashion and ask them to volunteer a data point of interest. Allow the students to suggest different types of analysis they'd like to do with Plaid's data.
 
-  **Answer:** Example data elements include amount of interest payments, number of restaurant purchases, number of travel purchases across time, etc.
+  **Answer:** Example data elements include the amount of interest payments, number of restaurant purchases, number of travel purchases across time, etc.
 
-* Ask students to create a summarized list of the steps needed to properly and securely export environment variables. Ask if there is anyone who would like to volunteer an answer; if not, ask students to call the steps out in unison.
+* Ask students to create a summarized list of the steps needed to securely and adequately export environment variables. Ask if there is anyone who would like to volunteer an answer; if not, ask students to call the steps out in unison.
 
-  **Answer:** Steps for properly and securely exporting environment variables include:
+  **Answer:** Steps for securely and adequately exporting environment variables include:
 
     1. Creating `keys.sh` file.
 
@@ -691,7 +691,7 @@ Students will just have completed a lengthy activity of installing and using the
 
   **Answer:** Daily financial monitoring will focus on a unified view of all accounts rather than a microcosmic deep-dive into one account.
 
-  **Answer:** Plaid will become the one-stop-shop for all financial data needs. This includes daily monitoring and ad-hoc reporting. Instead of checking in with a bank app for one's current account balance or most recent transaction, Plaid will be used.
+  **Answer:** Plaid will become the one-stop-shop for all financial data needs. This includes daily monitoring and ad-hoc reporting. Instead of checking in with a bank app for one's current account balance or a most recent transaction, Plaid will be used.
 
   **Answer:** Instead of democratizing FinTech, Plaid could become the new centralized entity for FinTech data and decision-making. This could lead to reduced rate limits and more expensive premiums.
 
@@ -758,7 +758,7 @@ Ask if there are any remaining questions.
 
 ### 16. Recap (10 min)
 
-Woo-hoo! You've reached the end of APIs Day 2. Over the past two days, the class has been bombarded with an array of APIs, ranging from APIs that allow users to play fun games to APIs that provide users with a unified view of data across all financial accounts. The importance of API keys has been drilled home, as has as the need to store them as environment variables.
+Woo-hoo! You've reached the end of APIs Day 2. Over the past two days, the class has been bombarded with an array of APIs, ranging from APIs that allow users to play fun games to APIs that provide users with a unified view of data across all financial accounts. The importance of API keys has been drilled home, as has the need to store them as environment variables.
 
 Recap by asking students to summarize with one word or a three-word phrase what they learned today. Ask for volunteers, and then eventually go round-robin if necessary.
 
@@ -784,7 +784,7 @@ Underscore to students that their progress in learning how to programmatically s
 
   * For example, in order to write a machine-learning algorithm that gets data from the Amazon cloud, an AWS SDK will be needed.
 
-  * To process social media data in real time, a streaming service API will be needed. (e.g., Kafka-Python).
+  * To process social media data in real-time, a streaming service API will be needed. (e.g., Kafka-Python).
 
 Highlight that students have shown themselves to be cutting edge by working with technologies like Plaid, which are disrupting the FinTech data world.
 
