@@ -78,6 +78,8 @@ In addition to the firms mentioned above, here are a few examples of fintechs do
 This is your specialty. Using the instructor demos and in-class activities for units 10-17, it’ll be up to you to get the students writing ML code and making predictions from ML models. 
 
 
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 
 
 
