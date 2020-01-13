@@ -1,149 +1,40 @@
-### 3. Instructor Do: RNNs for NLP - Sentiment Analysis (20 mins)
+### 6. Instructor Do: Intro to the ROC Curve and AUC (15 min)
 
-In this activity, students will learn how to define an LSTM RNN model for sentiment analysis using Keras. Also, data preparation for using LSTM models for natural language processing is introduced.
+In this activity, students will learn how to measure the performance of a binary classification from by fetching metrics from keras to plot and interpret the ROC curve and AUC.
 
 **Files:**
 
-* [austin_coffee_sentiment.ipynb](Activities/01-Ins_Sentiment_Analysis/Solved/austin_coffee_sentiment.ipynb)
+* [austin_coffee_sentiment.ipynb](Activities/03-Ins_ROC_AUC/Solved/austin_coffee_sentiment.ipynb)
 
-* [austin_coffee_shops_reviews.csv](Activities/01-Ins_Sentiment_Analysis/Resources/austin_coffee_shops_reviews.csv)
+* [austin_coffee_shops_reviews.csv](Activities/03-Ins_ROC_AUC/Resources/austin_coffee_shops_reviews.csv)
 
-Explain to students that you will start exploring the LSTM RNNs by creating a model for sentiment analysis using the Keras API of TensorFlow.
+Explain to students that besides the metrics you gather from Keras in the previous activity, there are some additional ones that can be used to assess the performance of a classification model.
 
-Open the unsolved Jupyter notebook, live code the solution, and highlight the following.
+Open the lesson slides and navigate to the "Introducing ROC Curve and AUC" section and highlight the following:
 
-* For this demo, we are going to use a dataset that contains `6878` customer reviews of Coffee Shops at Austin, Texas. The reviews were taken from Yelp; however, the names of the Coffee Shops were anonymized for privacy reasons.
+* ROC stands for "Receiver Operating Characteristic".
 
-* The dataset has the following columns:
+* The ROC curve shows the performance of a classification model as its discrimination threshold is varied.
 
-  * `coffee_shop_name`: The anonymized name of the coffee shop.
+* To plot a ROC curve, we use two parameters: true positive rate (`TPR` - also known as recall) and the false positive rate (`FPR`).
 
-  * `full_review_text`: The customers reviews.
+* The `TPR` is calculated as follows:
 
-  * `sentiment`: The sentiment of each customer's review. `0` - Negative, `1` - Positive.
+  ![rnn-sentiment-6](Images/rnn-sentiment-6.png)
 
-Create a new Pandas DataFrame named `reviews_df` and load the data from the `CSV` file provided.
+* The `FPR` is calculated as follows:
 
-![rnn-sentiment-1](Images/rnn-sentiment-1.png)
+  ![rnn-sentiment-7](Images/rnn-sentiment-7.png)
 
-* As you can see, the names of the coffee shops are anonymized, the review comments are in plain English, and the sentiment of each customer review is already scored as positive (`1`) or negative (`0`).
+* Every point in the ROC curve represents the `TPR` Vs. `FPR` at different thresholds. The following image a typical ROC Curve.
 
-Explain to students that RNNs, like any other neural network model, require an array data type, so the `full_review_text` column will be transformed into the `X` array and the "sentiment" column into the `y` array.
+  ![ROC Curve](Images/roc-curve.png)
 
-```python
-# Creating the X and y vectors
-X = reviews_df["full_review_text"].values
-y = reviews_df["sentiment"].values
-```
+* Interpreting the ROC curve may be challenging; fortunately, we have the `AUC` that measures the area underneath the entire ROC curve (from `(0,0)` to `(1,1)`.
 
-Explain to students that to train the RNN model, the text data should be encoded as an integer. This transformation can be done using [the Keras preprocessing modules](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing).
+  ![AUC](Images/auc.png)
 
-Import the `Tokenizer` and `pad_sequences` modules and highlight the following.
-
-```python
-# Import Keras modules for data encoding
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-```
-
-* The customers' review comments need to be tokenized by creating a `Tokenizer` object and fitting it with all the text comments in the `X` variable.
-
-  ```python
-  # Create an instance of the Tokenizer and fit it with the X text data
-  tokenizer = Tokenizer(lower=True)
-  tokenizer.fit_on_texts(X)
-  ```
-
-* We will use `lower=True` argument to convert all the text into lowercase to ensure data consistency.
-
-* The `Tokenizer` object generates a dictionary that creates a list of words (tokens) that maps every unique word in the text with a unique integer. This list is going to be an encoded dictionary of the universe of particular words in the dataset; this dictionary is similar to the bag of words technique described in the NLP Unit.
-
-  ```python
-  # Print the first five elements of the encoded vocabulary
-  for token in list(tokenizer.word_index)[:5]:
-    print(f"word: '{token}', token: {tokenizer.word_index[token]}")
-  ```
-
-* Once the list of tokens is created, we need to transform every text review comment into a numerical sequence; this task is accomplished using the `texts_to_sequences()` method.
-
-  ![rnn-sentiment-2](Images/rnn-sentiment-2.png)
-
-* First, the text should be tokenized by fitting the Tokenizer class on the data set. As you can see, I use "lower = True" argument to convert the text into lowercase to ensure consistency of the data. Afterward, we should map our list of words (tokens) to a list of unique integers for each unique word using texts_to_sequences class.
-
-* The RNN model requires that all the values of the `X` vector have the same length; the `pad_sequences` method will ensure that all integer encoded reviews have the same size. Each entry in `X` will be shortened to `140` integers, or pad with `0's` in case it's shorter.
-
-  ```python
-  # Padding sequences
-  X_pad = pad_sequences(X_seq, maxlen=140, padding="post")
-  ```
-
-Explain to students that once the data is encoded, we will create training, validation, and testing sets.
-
-```python
-# Creating training, validation, and testing sets
-from sklearn.model_selection import train_test_split
-
-X_train, X_test, y_train, y_test = train_test_split(X_pad, y, random_state=78)
-
-X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, random_state=78)
-```
-
-Highlight the following about these sets:
-
-* First of all, we create the training and testing sets as we usually do.
-
-* The next step is to create the validation set, we split the initial training set, to create a new training set to fit the model and a validation test which data is going to be used during the training process to verify the model's metrics.
-
-Now it's time to start building the model using Keras. Explain to students that we will use the `Sequential` as have been done before; however, there are two new types of layers that are needed: `Embedding` and `LSTM`.
-
-```python
-# Import Keras modules for model creation
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Embedding, LSTM, Dense
-```
-
-Highlight the following about these new types of layers.
-
-* [`Embedding` layer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/Embedding?version=stable): It's a type of layer that is used in neural networks to process encoded text data.
-
-* [`LSTM` layer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM?version=stable): It's used to add an LSTM layer to the model.
-
-Explain to students that the `Embedding` layer requires at least three parameters as follows. The `vocabulary_size` refers to the size of the vocabulary in the text that is going to be processed; this variable is set at the total number of words in the `tokenizer` dictionary plus `1`. The second parameter needed by this layer is the `input_length`; this parameter is set at `140` (`max_words` variable) that is the value defined for padding the reviews. Finally, the third parameter is the `embedding_size`; this parameter specifies how many dimensions will be used to represent each word. As a rule-of-thumb, a multiple of eight could be used; for this demo, tuning the model value `64` delivered the best result.
-
-```python
-# Model set-up
-vocabulary_size = len(tokenizer.word_counts.keys()) + 1
-max_words = 140
-embedding_size = 64
-```
-
-After setting these initial variables, the model's structure is defined. Explain to students that the LSTM RNN model will have two layers, start coding the model structure and comment on the following.
-
-```python
-# Define the LSTM RNN model
-model = Sequential()
-
-# Layer 1
-model.add(Embedding(vocabulary_size, embedding_size, input_length=max_words))
-
-# Layer 2
-model.add(LSTM(units=280))
-
-# Output layer
-model.add(Dense(1, activation="sigmoid"))
-```
-
-* The model is defined as a `Sequential` instance.
-
-* The first layer is an `Embedding` type, this layer process the integer-encoded sequence of each review comment to create a dense vector representation that will be used by the `LSTM` layer.
-
-* Next, we add an `LSTM` layer with `280` units (the double of the `max_words` variable as initial test value). This layer transforms the dense vector into a single vector that contains information about the entire sequence that will be used by the activation function in the `Dense` layer to score the sentiment.
-
-* Potentially, adding more `LSTM` layers and input units can lead to better results.
-
-* Finally, we add a `Dense` output layer with a sigmoid activation function to predict the probability of a review being positive.
-
-After defining our LSTM RNN, it's time to compile the model. Explain to students that we will include several metrics to verify the model's performance during the training phase using the validation test.
+* The value of `AUC` ranges from `0` to `1`. A model whose predictions are `100%` wrong has an `AUC=0.0` of 0.0; in contrast, a model whose predictions are `100%` correct has an `AUC=1.0`.
 
 Point out that these metrics are part of [the Keras metrics module](https://www.tensorflow.org/api_docs/python/tf/keras/metrics?version=stable) and that these are the same metrics students are already familiar from previous units when binary classification was introduced. The only new metric is `AUC` that will be explained next in the model's evaluation.
 
@@ -207,32 +98,6 @@ Continue the demo with the model performance assessment, explain to students tha
   ![rnn-sentiment-5](Images/rnn-sentiment-5.png)
 
 Explain to students that the third metric to plot is AUC that stands for Area Under the ROC Curve.
-
-Open the lesson slides and navigate to the "Introducing ROC Curve and AUC" section and highlight the following:
-
-* ROC stands for "Receiver Operating Characteristic".
-
-* The ROC curve shows the performance of a classification model as its discrimination threshold is varied.
-
-* To plot a ROC curve, we use two parameters: true positive rate (`TPR` - also known as recall) and the false positive rate (`FPR`).
-
-* The `TPR` is calculated as follows:
-
-  ![rnn-sentiment-6](Images/rnn-sentiment-6.png)
-
-* The `FPR` is calculated as follows:
-
-  ![rnn-sentiment-7](Images/rnn-sentiment-7.png)
-
-* Every point in the ROC curve represents the `TPR` Vs. `FPR` at different thresholds. The following image a typical ROC Curve.
-
-  ![ROC Curve](Images/roc-curve.png)
-
-* Interpreting the ROC curve may be challenging; fortunately, we have the `AUC` that measures the area underneath the entire ROC curve (from `(0,0)` to `(1,1)`.
-
-  ![AUC](Images/auc.png)
-
-* The value of `AUC` ranges from `0` to `1`. A model whose predictions are `100%` wrong has an `AUC=0.0` of 0.0; in contrast, a model whose predictions are `100%` correct has an `AUC=1.0`.
 
 Come back to the Jupyter notebook and plot the value of `AUC` along the training process.
 
