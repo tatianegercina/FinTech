@@ -6,7 +6,7 @@ Instructional Staff, please use the reference material below to help you prepare
 
 ## Section Overview
 
-* [Machine Learning for FinTech]("ML-in-Fintech.md")
+* [Machine Learning for FinTech](ML-in-Fintech.md)
 
 ---
 
