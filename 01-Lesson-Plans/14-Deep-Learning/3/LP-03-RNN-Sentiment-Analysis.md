@@ -1,4 +1,4 @@
-### 3. Instructor Do: RNNs for NLP - Sentiment Analysis (20 mins)
+### 3. Instructor Do: RNNs for NLP - Sentiment Analysis (15 min)
 
 In this activity, students will learn how to define an LSTM RNN model for sentiment analysis using Keras. Also, data preparation for using LSTM models for natural language processing is introduced.
 
