@@ -2,7 +2,7 @@
 
 ### Overview
 
-In today's class, students will be introduced to the concept of DeFi short for decentralized finance. Though DeFi most commonly refers to financial systems built upon distributed ledgers frequently leveraging smart contracts. Students will gain the scope that DeFi is not a particular technology or implementation but rather a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
+In today's class, students will be introduced to the concept of DeFi (short for decentralized finance). Though DeFi most commonly refers to financial systems built upon distributed ledgers frequently leveraging smart contracts. Students will gain the scope that DeFi is not a particular technology or implementation but rather a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
 
 ### Class Objectives
 
