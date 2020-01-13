@@ -74,7 +74,6 @@ In this activity, instructors will overview the process of the mock interviews f
 
 * [Peer Interview Grading Rubric](Activities/02-Ins_Intro_to_Partner_Interviews/Solved/PeerTechnicalInterviewRubric.xlsx)
 
-Open the slideshow and explain the following:
 
 * Students will break off into pairs, with one student acting as the interviewer and the other student acting as the interviewee. Students will decide themselves who goes first in each role.
 
