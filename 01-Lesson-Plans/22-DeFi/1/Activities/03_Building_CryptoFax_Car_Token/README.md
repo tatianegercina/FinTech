@@ -19,6 +19,8 @@ In this activity, you will implement a non-fungible car token containing an immu
 
   ```
 
+  * In this contract, we will be leveraging the contract for ERC721Full and the safemath counters data type.
+
 * Create a new contract named `CryptoFax` that inherits from ERC721Full and for ERC721Full's constructor function's definition, perform the following:
 
   * Pass in the variables that ERC721Full expects, which are `string name`, `string symbol` Use the following values:
@@ -35,12 +37,22 @@ In this activity, you will implement a non-fungible car token containing an immu
   }
   ```
 
-* Next, create a new counter to keep track of what current token_id we are on starting from 0. Apply the `using for` syntax to attach the safe math counter library to the counter type and create a new variable named `token_ids` that is of type `Counters.counter`.
+  * We will be extending the ERC721Full contract for our ArtToken contract.
+
+  * The ERC721Full constructor accepts a `string` for the `token name` and a `string` for the `token's symbol`.
+
+* Next, create a new counter to keep track of what current `token_id` we are on starting from 0. Apply the `using for` syntax to attach the safe math counter library to the counter type and create a new variable named `token_ids` that is of type `Counters.counter`.
 
   ```solidity
   using Counters for Counters.Counter;
   Counters.Counter token_ids;
   ```
+
+  * Remember the `using for` syntax is used to attach a library to a type in solidity.
+
+  * In order for us to track the number of tokens that have been minted and to generate the next `token_id` we will be leveraging the custom Counter data structure from OpenZeppelin.
+
+  * OpenZeppelin safemath counters allow us to increment and decrement a counter without worrying about overflows and other common types of errors.
 
 * Each cryptofax car token will contain a `string` representing the vehicle's `vin` and a `uint` that tracks the number of accidents the vehicle has had. Represent this information as a `struct` named `Car ` containing two attributes `string vin` and `uint accidents`.
 
@@ -51,19 +63,33 @@ In this activity, you will implement a non-fungible car token containing an immu
       }
   ```
 
-* You now have to associate each instance of a car's information as defined in the struct with each car token. This is done by means of a mapping between the token_id and the given car. Define a new `mapping` named `cars` that maps a `uint` to our defined `Car` data structure.
+  * Recall that struct is short for structure.
+
+  * Structs allow you to have structured collections of data within a user-defined datatype.
+
+  * As you can see, the struct that we are creating for this contract contains two strings and a uint.
+
+  * You can think of a struct kind of like a python dictionary in that they are both types of objects containing data, however, make no mistake a struct is a fundamentally different data type than a python dictionary.
+
+* Define a new `mapping` named `cars` that maps a `uint` to our defined `Car` data structure.
 
   ```solidity
       mapping(uint => Car) public cars;
   ```
 
-* The data that is stored on-chain for each car token is stored in the cars `mapping`, but accident reports are far too large to store on-chain.  Instead, it is a much gas price to store accident reports in a decentralized storage provider such as `IPFS` and then referenced on-chain by hash. Calling an event is an easy and cheap way to permanently log a `URI` or `Uniform Resource Identifier`. Define a new event called `Accident` that will accept a `uint` named `token_id`, and a `string` named  `report_uri`.
+  * You have to associate each instance of a car's information as defined in the struct with each car token. This is done by means of a `mapping` between the `token_id` and the given car.
+
+* Define a new event called `Accident` that will accept a `uint` named `token_id`, and a `string` named  `report_uri`.
 
   ```solidity
       event Accident(uint token_id, string report_uri);
   ```
 
-* Add a function named `registerVehicle`. This function will be responsible for registering a new vehicle on the chain; it accepts the following parameters
+    * The data that is stored on-chain for each car token is stored in the cars `mapping`, but accident reports are far too large to store on-chain.  Instead, it is a much cheaper in gass to store accident reports in a decentralized storage provider such as `IPFS` and then referenced on-chain by hash.
+
+    * Calling an event is an easy and cheap way to permanently log a `URI` or `Uniform Resource Identifier`.
+
+* Add a function named `registerVehicle`. This function will be responsible for registering a new vehicle on the chain; it accepts the following parameters:
 
   * address owner,
 
@@ -113,13 +139,13 @@ In this activity, you will implement a non-fungible car token containing an immu
       }
   ```
 
-* On the next line inside of the `registerVehicle` function call the internal `_setTokenURI` method from `ERC721Full`and pass it the gnereated `token_id`,and the `token_uri` passed to the registerVehicle function.
+* On the next line inside of the `registerVehicle` function call the internal `_setTokenURI` method from `ERC721Full`and pass it the generated `token_id` aas well as the `token_uri` passed to the registerVehicle function.
 
   ```solidity
   _setTokenURI(token_id, token_uri);
   ```
 
-* In order to register a new vehicle it's `token_id` must be stored in the defined mapping of car_tokens. On the next line of the `registerVehicle` function add the generated `token_id` and map it to a new car instace with the passed vin and `0` for the default number of accidents. Then have the `registerVehicle` function return the generted `token_id`.
+* In order to register a new vehicle it's `token_id` must be stored in the defined mapping of car_tokens. On the next line of the `registerVehicle` function add the generated `token_id` and map it to a new car instance with the passed vin and `0` for the default number of accidents. Then have the `registerVehicle` function return the generated `token_id`.
 
   ```solidity
           cars[token_id] = Car(vin, 0);
@@ -145,7 +171,7 @@ In this activity, you will implement a non-fungible car token containing an immu
 
 ## Challenge
 
-* If time remains, try registering multiple vehicles by calling the registerVehicle function in your cryptofax contract.
+* If time remains, try registering multiple vehicles by calling the `registerVehicle` function in your cryptofax contract.
 
 ## Hints
 

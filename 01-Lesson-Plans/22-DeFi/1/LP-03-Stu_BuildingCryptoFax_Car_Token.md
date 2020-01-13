@@ -1,6 +1,6 @@
 ### 3. Students Do: Building the CryptoFax Car Token (20 min)
 
-In this activity students will implement a non-fungible car token containing an immutable vehicle history using the ERC721 OpenZeppelin contract. This contract will require them to apply their knowledge of safemath counters, structs, and events.
+In this activity, students will implement a non-fungible car token containing an immutable vehicle history using the ERC721 OpenZeppelin contract. This contract will require them to apply their knowledge of safemath counters, structs, and events.
 
 **Instructions:**
 
