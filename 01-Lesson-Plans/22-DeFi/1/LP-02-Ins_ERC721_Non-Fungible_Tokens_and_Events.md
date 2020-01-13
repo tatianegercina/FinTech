@@ -41,7 +41,7 @@ Now define a new counter to keep track of what current `token_id` we are on star
 
 * Openzeppelin safemath counters allow us to increment and decrement a counter without worrying about overflows and other common types of errors.
 
-Represent the artwork's information as a struct named `Artwork` containing these three attributes. A `string` named `name`, a `string` named artist and a `uint` named appraisal_value.
+Represent the artwork's information as a struct named `Artwork` containing these three attributes. A `string` named `name`, a `string` named artist, and a `uint` named `appraisal_value`.
 
   ```solidity
       struct Artwork {
@@ -55,11 +55,11 @@ Represent the artwork's information as a struct named `Artwork` containing these
 
 * In this activity, we will be using a new data structure called a `struct`.
 
-* As you might be able to guess, struct is short for `structure`.
+* As you might be able to guess, `struct` is short for `structure`.
 
 * Structs allow you to have `structured collections` of data within a user-defined datatype.
 
-* As you can see, the struct that we are creating for this contract contains two `string`s and a `uint`.
+* As you can see, the `struct` that we are creating for this contract contains two `string`s and a `uint`.
 
 * You can think of a struct kind of like a python dictionary in that they are both types of objects containing data, however, make no mistake a struct is a fundamentally different data type than a python dictionary.
 
@@ -69,7 +69,7 @@ Define a new `mapping` named `art_collection` that maps a `uint` to our defined 
       mapping(uint => Artwork) public art_collection;
   ```
 
-* We now have to associate each instance of an artwork's information as defined in the `struct` with each art token. This is done by means of a mapping between the `token_id` and the given art tokens id.
+* We now have to associate each instance of an artwork's information as defined in the `struct` with each art token. This is done by means of a mapping between the `token_id` and the given art token's id.
 
 Define a new event called `Appraisal` that will accept a `uint` named `token_id`, a second `uint` named `appraisal_value` and a string named `report_uri`.
 
@@ -85,7 +85,7 @@ Define a function named `registerArtwork`; it accepts the following parameters:
 
   * address owner,
 
-  * string memory vin
+  * string memory name
 
   * string memory artist
 
@@ -103,7 +103,7 @@ Define a function named `registerArtwork`; it accepts the following parameters:
 
 * This function will be responsible for registering a new piece of artwork on the chain.
 
-Add the lines of code inside the `registerArtwork` function for generating the token's id.
+Add the following lines of code inside the `registerArtwork` function for generating the token's id.
 
   ```solidity
           token_ids.increment();
@@ -128,7 +128,7 @@ On the next line inside of the `registerArtwork` function call the internal `_se
 
 * A typical ERC721 token contains an attached `tokenURI`. Usually linking to some sort of json object.
 
-On the next line of the `registerArtwork` function add the generated `token_id` and map it to a new artwork instace with the passed `name`, `artist`, `initial_value`. Then have the `registerArtwork` function return the generted `token_id`.
+On the next line of the `registerArtwork` function add the generated `token_id` and map it to a new artwork instace with the passed `name`, `artist`, `initial_value`. Then have the `registerArtwork` function return the generated `token_id`.
 
   ```solidity
           cars[token_id] = Car(vin, 0);
@@ -137,15 +137,15 @@ On the next line of the `registerArtwork` function add the generated `token_id` 
 
 * In order to register a piece of art it's `token_id` must be stored in the defined mapping of art tokens.
 
-* When our `registerArtwork` function finishes creating a new artwork token it will then return the token's id.
+* When our `registerArtwork` function finishes creating a new artwork token, it will then return the token's id.
 
-Define a second function named `newAppraisal`, this function will be responsible for reporting a new artwork apprasialt by logging it's `report_uri`, it accepts three parameters a `uint` named `token_id`, a seocnd `uint` named `new_value` and a `string memory` represeting the `report_uri`. Make `newAppraisal` a public function that returns a `uint`.
+Define a second function named `newAppraisal`, this function will be responsible for reporting a new artwork apprasial by logging it's `report_uri`, it accepts three parameters a `uint` named `token_id`, a second `uint` named `new_value` and a `string memory` representing the `report_uri`. Make `newAppraisal` a public function that returns a `uint`.
 
   ```solidity
       function newAppraisal(uint token_id, uint new_value, string memory report_uri) public returns(uint) {
   ```
 
-Inside the body of the `newAppraisal` function set the passed token_id's appraisal_value to the new_amount passed to the function. Then `emit` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last apparasial and the `report_uri`. Finally return the `new_amount` value.
+Inside the body of the `newAppraisal` function set the passed token_id's appraisal_value to the new_amount passed to the function. Then `emit` the `Appraisal` event passing it the given `token_id`, the `new_amount` for the last appraisal and the `report_uri`. Finally return the `new_amount` value.
 
   ```solidity
           art_collection[token_id].appraisal_value = new_value;
