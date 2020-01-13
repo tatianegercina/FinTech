@@ -1,4 +1,4 @@
-## 4.2 Lesson Plan: Pandas Review Day (6:30 p.m.)
+## 4.2 Lesson Plan: Pandas Review Day
 
 ### Overview
 
