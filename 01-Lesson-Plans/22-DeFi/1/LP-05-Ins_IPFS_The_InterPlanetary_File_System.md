@@ -122,3 +122,7 @@ You may have to increase the `Gas Limit` but once the contract has successfully 
 * initial_value: `62,000,000`
 
 * token_uri: `https://gateway.pinata.cloud/ipfs/QmX2F3KFJzELLkn7Qadkq19tF62wQzAKDToTwhzNqWLpJ4`
+
+Congratulate them, that was a lot to take in. Then briefly introduce the next activity.
+
+* We've now deployed our ERC721 non-fungible token with a linked IPFS `token URI`. In the next activity, you will be uploading a similar token URI file to pinata for your CryptoFax car token.
