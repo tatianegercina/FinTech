@@ -1,4 +1,4 @@
-### 3. Instructor Do: RNNs for NLP - Sentiment Analysis (20 mins)
+### 6. Instructor Do: RNNs for NLP - Sentiment Analysis (15 min)
 
 In this activity, students will learn how to define an LSTM RNN model for sentiment analysis using Keras. Also, data preparation for using LSTM models for natural language processing is introduced.
 
@@ -77,24 +77,20 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
   X_pad = pad_sequences(X_seq, maxlen=140, padding="post")
   ```
 
-Explain to students that once the data is encoded, we will create training, validation, and testing sets.
+Explain to students that once the data is encoded, we will create training and testing sets.
 
 ```python
 # Creating training, validation, and testing sets
 from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(X_pad, y, random_state=78)
-
-X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, random_state=78)
 ```
 
 Highlight the following about these sets:
 
 * First of all, we create the training and testing sets as we usually do.
 
-* The next step is to create the validation set, we split the initial training set, to create a new training set to fit the model and a validation test which data is going to be used during the training process to verify the model's metrics.
-
-Now it's time to start building the model using Keras. Explain to students that we will use the `Sequential` as have been done before; however, there are two new types of layers that are needed: `Embedding` and `LSTM`.
+* Now it's time to start building the model using Keras. We will use the `Sequential` model as have been done before; however, there are two new types of layers that are needed: `Embedding` and `LSTM`.
 
 ```python
 # Import Keras modules for model creation
@@ -143,41 +139,29 @@ model.add(Dense(1, activation="sigmoid"))
 
 * Finally, we add a `Dense` output layer with a sigmoid activation function to predict the probability of a review being positive.
 
-After defining our LSTM RNN, it's time to compile the model. Explain to students that we will include several metrics to verify the model's performance during the training phase using the validation test.
+* After defining our LSTM RNN, it's time to compile the model.
 
-Point out that these metrics are part of [the Keras metrics module](https://www.tensorflow.org/api_docs/python/tf/keras/metrics?version=stable) and that these are the same metrics students are already familiar from previous units when binary classification was introduced. The only new metric is `AUC` that will be explained next in the model's evaluation.
-
-Explain to students that the `name` parameter is used to quickly identify each parameter during the training process and the model evaluation phase.
+* Since this is a binary classification model, we'll use the `binary_crossentropy` loss function with the `adam` optimizer.
 
 ```python
 # Compile the model
 model.compile(
   loss="binary_crossentropy",
-  optimizer="adam",
-  metrics=[
-  "accuracy",
-  tf.keras.metrics.TruePositives(name="tp"),
-  tf.keras.metrics.TrueNegatives(name="tn"),
-  tf.keras.metrics.FalsePositives(name="fp"),
-  tf.keras.metrics.FalseNegatives(name="fn"),
-  tf.keras.metrics.Precision(name="precision"),
-  tf.keras.metrics.Recall(name="recall")
-  ],
+  optimizer="adam"
 )
 ```
 
-Time to fit the model! Explain to students that we will use a `batch_size = 1000` to speed-up the training process along `10` epochs. Point out that you are introducing the `validation_data` parameter to the `fit` method, explain to students that this parameter specifies a dataset that is used to validate the model's performance along the training process, excluding the validation data sample as training data.
+Time to fit the model! Explain to students that we will use a `batch_size = 1000` to speed-up the training process along `10` epochs.
 
 ```python
 # Training the model
 batch_size = 1000
-training_history = model.fit(
- X_train,
- y_train,
- validation_data=(X_val, y_val),
- epochs=10,
- batch_size=batch_size,
- verbose=1,
+model.fit(
+    X_train,
+    y_train,
+    epochs=10,
+    batch_size=batch_size,
+    verbose=1,
 )
 ```
 
@@ -185,31 +169,11 @@ Execute the compilation code and highlight the following.
 
 ![rnn-sentiment-3](Images/rnn-sentiment-3.gif)
 
-* Note that the training runs on `3868` samples and the validation on `1290` samples.
+* Note that the training runs on `5158` samples.
 
 * As you can see, each epoch takes around `20` seconds, so running `10` epochs will take close to five minutes, so be patient.
 
-* Also note that all the metrics are calculated on each epoch for the training and validation data. The validation metrics have the `val_` prefix.
-
-* The model training results will be saved in the `training_history` variable for further analysis.
-
-Continue the demo with the model performance assessment, explain to students that you will plot four metrics that they are already familiar with: `loss`, `accuracy`, `precision`, and `recall`. Highlight the following.
-
-* The metrics results of the training process are stored in the `history` dictionary of the `training_history` object.
-
-* You can access each metric using the names we define when compiling the model.
-
-* To plot the metrics results, we are going to create a DataFrame using the `history` dictionary and plotting using the `plot()` method of the Pandas DataFrame.
-
-  ![rnn-sentiment-4](Images/rnn-sentiment-4.png)
-
-  ![rnn-sentiment-5](Images/rnn-sentiment-5.png)
-
-  ![rnn-sentiment-12](Images/rnn-sentiment-12.png)
-
-  ![rnn-sentiment-13](Images/rnn-sentiment-13.png)
-
-Now it's time to test our model by making some predictions. To do that, explain to students that we are going to use a sample of ten integer-encoded review comments from the testing set.
+Once the training process ends, it's time to test our model by making some predictions. To do that, explain to students that we are going to use a sample of ten integer-encoded review comments from the testing set.
 
 To predict the sentiment of each review comment, point out that we will use the `predict_classes()` method that returns the predicted class.
 
