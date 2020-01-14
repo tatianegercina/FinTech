@@ -28,7 +28,7 @@ Begin by giving the students some background on IPFS, what it is, how it works.
 
 * In a typical `client-server` model, `centralized` servers store data that is accessed via `location-based addressing`. This provides an easy way to secure and manage data in a scalable manner, though it doesn't come without its drawbacks.
 
-  * Since data is stored on `centralized` servers anyone with access to those servers; whether an authorized admin or a hacker with malicious intent, can alter and remove data. This poses problems in both the realms of privacy and security because in this model control of the server is equal to control of the data.
+  * Since data is stored on `centralized` servers, anyone with access to those servers; whether an authorized admin or a hacker with malicious intent, can alter and remove data. This poses problems in both the realms of privacy and security because in this model control of the server is equal to control of the data.
 
   * In `location-based addressing`; a piece of data is recognized by location as opposed to its content; this means that to access a piece of data you must go to its specific location even if the same data is available from a closer source.
 
@@ -36,9 +36,9 @@ Begin by giving the students some background on IPFS, what it is, how it works.
 
   * The `client-server` model works well for websites and small pieces of data, but it's not the most efficient when it comes to big pieces of data.
 
-* IPFS hopes to address these issues with the traditional `client-server` model with the use of a dstirbuted `peer to peer` file-sharing system.
+* IPFS hopes to address these issues with the traditional `client-server` model with the use of a distributed `peer to peer` file-sharing system.
 
-Now that the students have a general grasp on what IPFS is and the purpose that it is trying to serve. Introduce the class to the Pinata service and how `IPFS` can be a valuable tool for building dApps and decentralized systems.
+Now that the students have a general grasp on what IPFS is and the purposes that it is trying to serve. Introduce the class to the Pinata service and how `IPFS` can be a valuable tool for building dApps and decentralized systems.
 
 Open a web browser and navigate to the [Pinata Website](https://pinata.cloud/).
 
@@ -75,9 +75,9 @@ Open the [Example URI file](Activities/05_Ins_IPFS_The_InterPlanetary_File_Syste
 }
 ```
 
-* As previously mentioned each `ERC721` token typically has an associated `token URI` that is stored on some off-chain storage provider such as IPFS. A URI may resolve to any file but an ERC721 token URI usually looks something like this.
+* As previously mentioned, each `ERC721` token typically has an associated `token URI` that is stored on some off-chain storage provider such as IPFS. A URI may resolve to any file, but an ERC721 token URI usually looks something like this.
 
-Click on the `Pinata Upload` link in the websites top navigation bar.
+Click on the `Pinata Upload` link in the website's top navigation bar.
 
 ![Pinata Upload Link](Images/pinata_upload_link.png)
 
@@ -89,7 +89,7 @@ Now click the `Browse` button and upload the [Example URI file](Activities/05_In
 
 * Uploading a file on Pinata is as simple as clicking `Browse` and then clicking `Upload`.
 
-After the upload is successfull, click the `Pin Explorer` link in the website's top navigation bar.
+After the upload is successful, click the `Pin Explorer` link in the website's top navigation bar.
 
 ![Pin Explorer Link](Images/pinata_pin_explorer_link.png)
 
@@ -97,11 +97,11 @@ After the upload is successfull, click the `Pin Explorer` link in the website's 
 
 ![Pinata Explorer](Images/pinata_pin_explorer.png)
 
-* As you can see our Artwork Token's json file shows up in our list of pinned files, it even has a corresponding IPFS hash.
+* As you can see, our Artwork Token's json file shows up in our list of pinned files; it even has a corresponding IPFS hash.
 
 * If we click the hash link, pinata will even generate a link to the file on IPFS accessible through pinata's free IPFS gateway.
 
-Make a note to the class that the pinata gateway is a point of centralization but that dApps can leverage the use of multiple IPFS gateways to mitigate this.
+Make a note to the class that the pinata gateway is a point of centralization, but that dApps can leverage the use of multiple IPFS gateways to mitigate this.
 
 Click the listed IPFS hash and copy the generated URI path.
 
@@ -111,7 +111,7 @@ Click the listed IPFS hash and copy the generated URI path.
 
 Now navigate to [Remix](http://remix.ethereum.org/). Then open the example contract for the `Artwork Token` and compile/deploy the contract on your local ganache blockchain.
 
-You may have to increase the `Gas Limit` but once the contract has successfully deployed click on the deployed contract and click the the `newAppraisal` function. Fill in the fields with a generated address from your wallet, some sample details about the artwork, and the token URI; then call the function. The data you enter should look something like this:
+You may have to increase the `Gas Limit`, but once the contract has successfully deployed, click on the deployed contract and click the `newAppraisal` function. Fill in the fields with a generated address from your wallet, some sample details about the artwork, and the token URI; then call the function. The data you enter should look something like this:
 
 * owner : `0xc3879B456DAA348a16B6524CBC558d2CC984722c`
 
@@ -123,6 +123,6 @@ You may have to increase the `Gas Limit` but once the contract has successfully 
 
 * token_uri: `https://gateway.pinata.cloud/ipfs/QmX2F3KFJzELLkn7Qadkq19tF62wQzAKDToTwhzNqWLpJ4`
 
-Congratulate them, that was a lot to take in. Then briefly introduce the next activity.
+Congratulate them, that was a lot of new information to take in; then briefly introduce the next activity.
 
 * We've now deployed our ERC721 non-fungible token with a linked IPFS `token URI`. In the next activity, you will be uploading a similar token URI file to pinata for your CryptoFax car token.
