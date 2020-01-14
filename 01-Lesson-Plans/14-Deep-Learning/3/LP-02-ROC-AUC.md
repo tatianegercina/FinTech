@@ -1,14 +1,14 @@
-### 6. Instructor Do: Intro to the ROC Curve and AUC (15 min)
+### 2. Instructor Do: Intro to the ROC Curve and AUC (15 min)
 
-In this activity, students will learn how to measure the performance of a binary classification from by fetching metrics from keras to plot and interpret the ROC curve and AUC.
+In this activity, students will learn how to measure the performance of a binary classification model by fetching metrics from keras to plot and interpret the ROC curve and AUC.
 
 **Files:**
 
-* [austin_coffee_sentiment.ipynb](Activities/03-Ins_ROC_AUC/Solved/austin_coffee_sentiment.ipynb)
+* [austin_coffee_sentiment.ipynb](Activities/01-Ins_ROC_AUC/Solved/austin_coffee_sentiment.ipynb)
 
-* [austin_coffee_shops_reviews.csv](Activities/03-Ins_ROC_AUC/Resources/austin_coffee_shops_reviews.csv)
+* [austin_coffee_shops_reviews.csv](Activities/01-Ins_ROC_AUC/Resources/austin_coffee_shops_reviews.csv)
 
-Explain to students that besides the metrics you gather from Keras in the previous activity, there are some additional ones that can be used to assess the performance of a classification model.
+Explain to students that you will start Today's class by learning some advanced evaluation metrics, such as the ROC curve and AUC, that will be used to evaluate deep learning models.
 
 Open the lesson slides and navigate to the "Introducing ROC Curve and AUC" section and highlight the following:
 
@@ -35,6 +35,8 @@ Open the lesson slides and navigate to the "Introducing ROC Curve and AUC" secti
   ![AUC](Images/auc.png)
 
 * The value of `AUC` ranges from `0` to `1`. A model whose predictions are `100%` wrong has an `AUC=0.0` of 0.0; in contrast, a model whose predictions are `100%` correct has an `AUC=1.0`.
+
+Come back to the Jupyter notebook and
 
 Point out that these metrics are part of [the Keras metrics module](https://www.tensorflow.org/api_docs/python/tf/keras/metrics?version=stable) and that these are the same metrics students are already familiar from previous units when binary classification was introduced. The only new metric is `AUC` that will be explained next in the model's evaluation.
 
