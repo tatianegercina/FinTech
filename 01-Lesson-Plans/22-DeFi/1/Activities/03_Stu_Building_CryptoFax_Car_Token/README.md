@@ -145,7 +145,7 @@ In this activity, you will implement a non-fungible car token containing an immu
   _setTokenURI(token_id, token_uri);
   ```
 
-* In order to register a new vehicle it's `token_id` must be stored in the defined mapping of car_tokens. On the next line of the `registerVehicle` function add the generated `token_id` and map it to a new car instance with the passed vin and `0` for the default number of accidents. Then have the `registerVehicle` function return the generated `token_id`.
+* In order to register a new vehicle, its `token_id` must be stored in the defined mapping of car_tokens. On the next line of the `registerVehicle` function add the generated `token_id` and map it to a new car instance with the passed vin and `0` for the default number of accidents. Then have the `registerVehicle` function return the generated `token_id`.
 
   ```solidity
           cars[token_id] = Car(vin, 0);
@@ -177,9 +177,11 @@ In this activity, you will implement a non-fungible car token containing an immu
 
 * You are `emitting` the  Accident function in order to trigger the logging of a new accident report.
 
+* Congratulations, at this point, you should now have a complete Cryptofax ERC721 non-fungible car token contract. Now deploy your contract in remix onto your local ganache blockchain.
+
 ## Challenge
 
-* If time remains, try registering multiple vehicles by calling the `registerVehicle` function in your cryptofax contract.
+* If time remains, try to brainstorm and deploy the CryptoFax contract with some other custom attributes within the Car `struct`.
 
 ## Hints
 
