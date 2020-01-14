@@ -152,7 +152,7 @@ In this activity, you will implement a non-fungible car token containing an immu
           return token_id;
   ```
 
-* Define a second function named `reportAccident`, this function will be responsible for reporting a new accident by logging it's `report_uri`, it accepts two parameters a `uint` named `token_id` and a `string memory` represeting the `report_uri`. Make `reportAccident` a public function that returns a `uint`.
+* Define a second function named `reportAccident`, this function will be responsible for reporting a new accident by logging its `report_uri`, it accepts two parameters a `uint` named `token_id` and a `string memory` represeting the `report_uri`. Make `reportAccident` a public function that returns a `uint`.
 
   ```solidity
       function reportAccident(uint token_id, string memory report_uri) public returns(uint) {}
