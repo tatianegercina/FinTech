@@ -73,16 +73,12 @@ In this activity, you will implement a non-fungible car token containing an immu
 
 * Define a new `mapping` named `cars` that maps a `uint` to our defined `Car` data structure.
 
-  ```solidity
-      mapping(uint => Car) public cars;
-  ```
-
   * You have to associate each instance of a car's information as defined in the struct with each car token. This is done by means of a `mapping` between the `token_id` and the given car.
 
 * Define a new event called `Accident` that will accept a `uint` named `token_id`, and a `string` named  `report_uri`.
 
   ```solidity
-      event Accident(uint token_id, string report_uri);
+      event EventName(parameters);
   ```
 
     * The data that is stored on-chain for each car token is stored in the cars `mapping`, however, accident reports are far too large to store on-chain.  Instead, it is much cheaper (in gas) to store accident reports in a decentralized storage provider such as [IPFS](https://ipfs.io/) and then reference them on-chain by hash.
@@ -112,10 +108,6 @@ In this activity, you will implement a non-fungible car token containing an immu
 
 * Next, inside the `registerVehicle` function call the internal `_mint` method from `ERC721Full`. Pass the `_mint` function the `owner` value that was defined and the new `token_id` that was generated.
 
-  ```solidity
-          _mint(owner, token_id);
-  ```
-
 * A typical ERC721 token contains an attached `tokenURI`, the car token's may resolve to something like this.
 
   ```json
@@ -139,11 +131,7 @@ In this activity, you will implement a non-fungible car token containing an immu
       }
   ```
 
-* On the next line inside of the `registerVehicle` function call the internal `_setTokenURI` method from `ERC721Full`and pass it the generated `token_id` as well as the `token_uri` passed to the registerVehicle function.
-
-  ```solidity
-  _setTokenURI(token_id, token_uri);
-  ```
+* On the next line inside of the `registerVehicle` function call the internal `_setTokenURI` method from `ERC721Full`and pass it the generated `token_id` as well as the `token_uri` passed to the `registerVehicle` function.
 
 * In order to register a new vehicle, its `token_id` must be stored in the defined mapping of car_tokens. On the next line of the `registerVehicle` function add the generated `token_id` and map it to a new car instance with the passed vin and `0` for the default number of accidents. Then have the `registerVehicle` function return the generated `token_id`.
 
