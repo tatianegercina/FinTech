@@ -4,7 +4,7 @@ In this activity, you will upload a Car TokenURI file to IPFS via Pinata and lin
 
 ## Instructions
 
-* Open the [example token uri file](Unsolved/example_uri.json) and fill out the corresponding `description` fields for the `make`, `modl` and `year` of the car token that you are planning to mint.
+* Open the [example token uri file](Unsolved/example_uri.json) and fill out the corresponding `description` fields for the `make`, `model`, and `year` of the car token that you are planning to mint.
 
 ```solidity
 {
@@ -35,15 +35,31 @@ In this activity, you will upload a Car TokenURI file to IPFS via Pinata and lin
 
 ![Pinata email verification](../../Images/pinata_confirm_account.png)
 
-* Now click the `Pinata Upload` page and upload your customized car token uri.
+* Now click the `Pinata Upload` page and upload your customized car token URI.
 
 ![Pinata Upload Link](../../Images/pinata_upload_link.png)
 
-* After your file has successfully uploaded, navigate to the `Pinata explorer` page and click and copy the link to the token uri file.
+* After your file has successfully uploaded, navigate to the `Pinata explorer` page.
 
 ![Pinata explorer](../../Images/pinata_pin_explorer_link.png)
 
-* Deploy your CryptoFax contract onto your local ganche blochcain using remix.
+* Confirm that your file was successfully uploaded to IPFS by clicking the link to it's corresponding `IPFS hash`.
+
+  * By default, pinata generates a connection to the IPFS network through their free IPFS gateway, however, we will be using a direct `ipfs://` link to the hash that will be resolved through the IPFS browser extension.
+
+* Navigate to the [IPFS Browser Companion github](https://github.com/ipfs-shipyard/ipfs-companion) and install the browser extension for your desired browser.
+
+  ![IPFS Install Links](../../Images/ipfs-browser-companion.png)
+
+* Originally the CIDV0 standard allowed for url hashes that supported both upper and lowercase characters but this breaks in many browers including firefox and was not capable of encoding human readable information.
+
+  * Pinata is a useful service but they have yet to update their file pinning frontend to support CIDV1. In order to avoid bugs you are going to convert your `IPFS hash` with a free CIDV1 converter at the [CID IPFS Website](https://cid.ipfs.io).
+
+  ![CID Converter](../../Images/cid-converter.png)
+
+ * Now to test the browser extension copy the files new CIDv1 `IPFS hash` and preppend `ipfs://` to the front of it, eg, [ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq](ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq). Your file should successfully render in your browser.
+
+* Now deploy your CryptoFax contract onto your local ganache blockchain using remix.
 
 * You may have to increase the `Gas Limit`, but once the contract has successfully deployed, click on the deployed contract and then click the `registerVehicle` function. Fill in the fields with a generated address from your wallet, the vin of the car, and the token URI; then call the function. The data you enter should look something like this:
 
@@ -51,7 +67,7 @@ In this activity, you will upload a Car TokenURI file to IPFS via Pinata and lin
 
 * vin: `1HTMMAAL65H124192`
 
-* token_uri: `https://gateway.pinata.cloud/ipfs/QmdAjcCixaefMxUkSjUQbuMoEc4hvoHNktagevNozHz6KD`
+* token_uri: `ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq`
 
 ## Challenge
 
@@ -59,4 +75,4 @@ In this activity, you will upload a Car TokenURI file to IPFS via Pinata and lin
 
 ## Hints
 
-* You can read more about how `IPFS` works and the concepts behind it on  the [IPFS wwebsite](https://ipfs.io/#how)
+* You can read more about how `IPFS` works and the concepts behind it on  the [IPFS website](https://ipfs.io/#how)
