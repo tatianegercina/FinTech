@@ -97,17 +97,33 @@ After the upload is successful, click the `Pin Explorer` link in the website's t
 
 ![Pinata Explorer](Images/pinata_pin_explorer.png)
 
-* As you can see, our Artwork Token's json file shows up in our list of pinned files; it even has a corresponding IPFS hash.
+* As you can see, our Artwork Token's json file shows up in our list of pinned files; make note of the corresponding IPFS hash.
+
+![Pin Hash Click](Images/pinata_pin_hash.png)
 
 * If we click the hash link, pinata will even generate a link to the file on IPFS accessible through pinata's free IPFS gateway.
 
 Make a note to the class that the pinata gateway is a point of centralization, but that dApps can leverage the use of multiple IPFS gateways to mitigate this.
 
-Click the listed IPFS hash and copy the generated URI path.
-
-![Pin Hash Click](Images/pinata_pin_hash.png)
-
 ![Gateway File](Images/pinata_gateway_file.png)
+
+  * By default, pinata generates a connection to the IPFS network through their free IPFS gateway, however, we will be using a direct `ipfs://` link to the hash that will be resolved through the IPFS browser extension.
+
+* Navigate to the [IPFS Browser Companion github](https://github.com/ipfs-shipyard/ipfs-companion) and install the browser extension for your desired browser.
+
+  ![IPFS Install Links](../../Images/ipfs-browser-companion.png)
+
+In your browser open the [CID IPFS Website](https://cid.ipfs.io) and convert the CIDV0 hash to a CIDV1 hash.
+
+![CID Converter](../../Images/cid-converter.png)
+
+* Originally the CIDV0 standard allowed for url hashes that supported both upper and lowercase characters but this breaks in many browsers.
+
+  * Pinata is a useful service but they have yet to update their file pinning frontend to support CIDV1. In order to avoid bugs we are going to convert the `IPFS hash` with a free CIDV1 converter.
+
+Now to test the browser extension copy the files new CIDv1 `IPFS hash` and prepend `ipfs://` to the front of it, eg, [ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq](ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq). Demonstrate creating the link and opening it in your browser.
+
+* Once the IPFS browser extension is installed files on IPFS can be accessed at `ipfs://whatever your file hash is`.
 
 Now navigate to [Remix](http://remix.ethereum.org/). Then open the example contract for the `Artwork Token` and compile/deploy the contract on your local ganache blockchain.
 
