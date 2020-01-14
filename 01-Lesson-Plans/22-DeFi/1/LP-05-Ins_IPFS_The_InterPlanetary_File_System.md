@@ -107,9 +107,9 @@ Make a note to the class that the pinata gateway is a point of centralization, b
 
 ![Gateway File](Images/pinata_gateway_file.png)
 
-  * By default, pinata generates a connection to the IPFS network through their free IPFS gateway, however, we will be using a direct `ipfs://` link to the hash that will be resolved through the IPFS browser extension.
+* By default, pinata generates a connection to the IPFS network through their free IPFS gateway, however, we will be using a direct `ipfs://` link to the hash that will be resolved through the IPFS browser extension.
 
-* Navigate to the [IPFS Browser Companion github](https://github.com/ipfs-shipyard/ipfs-companion) and install the browser extension for your desired browser.
+Navigate to the [IPFS Browser Companion github](https://github.com/ipfs-shipyard/ipfs-companion) and install the browser extension for your desired browser.
 
   ![IPFS Install Links](../../Images/ipfs-browser-companion.png)
 
@@ -119,7 +119,7 @@ In your browser open the [CID IPFS Website](https://cid.ipfs.io) and convert the
 
 * Originally the CIDV0 standard allowed for url hashes that supported both upper and lowercase characters but this breaks in many browsers.
 
-  * Pinata is a useful service but they have yet to update their file pinning frontend to support CIDV1. In order to avoid bugs we are going to convert the `IPFS hash` with a free CIDV1 converter.
+* Pinata is a useful service but they have yet to update their file pinning frontend to support CIDV1. In order to avoid bugs we are going to convert the `IPFS hash` with a free CIDV1 converter.
 
 Now to test the browser extension copy the files new CIDv1 `IPFS hash` and prepend `ipfs://` to the front of it, eg, [ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq](ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq). Demonstrate creating the link and opening it in your browser.
 
@@ -128,6 +128,8 @@ Now to test the browser extension copy the files new CIDv1 `IPFS hash` and prepe
 Now navigate to [Remix](http://remix.ethereum.org/). Then open the example contract for the `Artwork Token` and compile/deploy the contract on your local ganache blockchain.
 
 You may have to increase the `Gas Limit`, but once the contract has successfully deployed, click on the deployed contract and click the `newAppraisal` function. Fill in the fields with a generated address from your wallet, some sample details about the artwork, and the token URI; then call the function. The data you enter should look something like this:
+
+![Register Artwork](Images/remix_register_artwork.png)
 
 * owner : `0xc3879B456DAA348a16B6524CBC558d2CC984722c`
 
