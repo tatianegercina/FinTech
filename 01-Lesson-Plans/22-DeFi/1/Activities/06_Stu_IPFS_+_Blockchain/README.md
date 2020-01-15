@@ -51,7 +51,7 @@ In this activity, you will upload a Car TokenURI file to IPFS via Pinata and lin
 
   ![IPFS Install Links](Images/ipfs-browser-companion.png)
 
-* Originally the CIDV0 standard allowed for url hashes that supported both upper and lowercase characters but this breaks in many browers including firefox and was not capable of encoding human readable information.
+* Originally the CIDV0 standard allowed for url hashes that supported both upper and lowercase characters but this breaks in many browers including firefox.
 
   * Pinata is a useful service but they have yet to update their file pinning frontend to support CIDV1. In order to avoid bugs you are going to convert your `IPFS hash` with a free CIDV1 converter at the [CID IPFS Website](https://cid.ipfs.io).
 
