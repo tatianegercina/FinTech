@@ -68,7 +68,7 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 12. Instructor Do: Welcome Back to Class (15 min)
+### 12. Instructor Do: Intro to Project 3 (15 min)
 
 Greet the class and explain that today is the first day of their final project!
 
