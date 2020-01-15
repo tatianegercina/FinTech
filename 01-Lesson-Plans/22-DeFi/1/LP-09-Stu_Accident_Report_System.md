@@ -18,6 +18,12 @@ Send out the instructions and the starter code, and have TAs circulate the room,
 
 If students are having difficulties, make sure of the following:
 
+* The student has installed the `python-dotenv` package. This can be done by running the following command:
+
+```bash
+pip install python-dotenv
+```
+
 * The `header` object is properly configured, and that the Pinata API secrets are saved to the `.env` file properly.
 
 * The `.env` file contains the proper values (all should be filled in).
