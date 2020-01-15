@@ -21,25 +21,15 @@ In this activity, you will implement a non-fungible car token containing an immu
 
   * In this contract, you will be leveraging the contract for ERC721Full and the safemath counters data type.
 
-* Create a new contract named `CryptoFax` that inherits from ERC721Full and for ERC721Full's constructor function's definition, perform the following:
+* You will be extending the `ERC721Full` contract for your CryptoFax car token using the `is` syntax.
+
+* Create a new contract named `CryptoFax` that inherits from `ERC721Full` and for ERC721Full's constructor function's definition, perform the following:
 
   * Pass in the variables that ERC721Full expects, which are `string name`, `string symbol` Use the following values:
 
     * `"CryptoFax"` for the first parameter.
 
     * `"CARS"` as the second.
-
-* The contract with the constructor call should look something like this:
-
-  ```solidity
-  contract ContractName is ERC721Full {
-    constructor() ERC721Full("TokenName", "TKN") public { }
-  }
-  ```
-
-  * You will be extending the ERC721Full contract for your ArtToken contract.
-
-  * The ERC721Full constructor accepts a `string` for the `token name` and a `string` for the `token's symbol`.
 
 * Next, create a new counter to keep track of what `token_id` you are currently on starting from 0. Apply the `using for` syntax to attach the safe math counter library to the counter type and create a new variable named `token_ids` that is of type `Counters.counter`.
 
@@ -73,13 +63,9 @@ In this activity, you will implement a non-fungible car token containing an immu
 
 * Define a new `mapping` named `cars` that maps a `uint` to our defined `Car` data structure.
 
-  * You have to associate each instance of a car's information as defined in the struct with each car token. This is done by means of a `mapping` between the `token_id` and the given car.
+  * You have to associate each instance of a car's information as defined in the `struct` with each car token. This is done by means of a `mapping` between the `token_id` and the given car.
 
 * Define a new event called `Accident` that will accept a `uint` named `token_id`, and a `string` named  `report_uri`.
-
-  ```solidity
-      event EventName(parameters);
-  ```
 
     * The data that is stored on-chain for each car token is stored in the cars `mapping`, however, accident reports are far too large to store on-chain.  Instead, it is much cheaper (in gas) to store accident reports in a decentralized storage provider such as [IPFS](https://ipfs.io/) and then reference them on-chain by hash.
 
@@ -94,10 +80,6 @@ In this activity, you will implement a non-fungible car token containing an immu
   * string memory token_uri
 
   and is a `public` function that `returns` a `uint`.
-
-  ```solidity
-  function registerVehicle(address owner, string memory vin, string memory token_uri) public returns(uint) {}
-  ```
 
 * Inside the body of the `registerVehicle` function you must generate the next token_id; this is done by incrementing the `token_ids` counter with the `.increment()` method and then by fetching the current count with the `.current()` method; storing it as a `uint` named `token_id`.
 
@@ -140,11 +122,7 @@ In this activity, you will implement a non-fungible car token containing an immu
           return token_id;
   ```
 
-* Define a second function named `reportAccident`, this function will be responsible for reporting a new accident by logging its `report_uri`, it accepts two parameters a `uint` named `token_id` and a `string memory` represeting the `report_uri`. Make `reportAccident` a public function that returns a `uint`.
-
-  ```solidity
-      function reportAccident(uint token_id, string memory report_uri) public returns(uint) {}
-  ```
+* Define a second function named `reportAccident`, this function will be responsible for reporting a new accident by logging its `report_uri`, it accepts two parameters a `uint` named `token_id` and a `string memory` named  `report_uri`. Make `reportAccident` is a public function that returns a `uint`.
 
 * Inside the `reportAccident` function three things happen:
 
