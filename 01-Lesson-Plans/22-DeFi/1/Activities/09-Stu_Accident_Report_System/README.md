@@ -4,6 +4,12 @@ In this activity, you will be building the Accident Report System command line i
 
 ## Instructions
 
+* Make sure you have the `python-dotenv` package installed. This can be done by running the following command:
+
+```bash
+pip install python-dotenv
+```
+
 * Create a new working directory called `accident` and `cd` into it. You will need to stay in this directory for the rest of this activity.
 
 * Create a file called `.env` and populate it with the [starter code.](Unsolved/.env).
