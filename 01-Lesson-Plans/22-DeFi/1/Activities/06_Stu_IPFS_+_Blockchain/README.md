@@ -29,19 +29,19 @@ In this activity, you will upload a Car TokenURI file to IPFS via Pinata and lin
 
 * Now open your web browser to the [pinata website](https://pinata.cloud) and register for a new account.
 
-![Pinata Signup](../../Images/pinata_singup.png)
+![Pinata Signup](Images/pinata_singup.png)
 
 * After you have successfully registered your pinata account; navigate to your email inbox and click the `account activation link`.
 
-![Pinata email verification](../../Images/pinata_confirm_account.png)
+![Pinata email verification](Images/pinata_confirm_account.png)
 
 * Now click the `Pinata Upload` page and upload your customized car token URI.
 
-![Pinata Upload Link](../../Images/pinata_upload_link.png)
+![Pinata Upload Link](Images/pinata_upload_link.png)
 
 * After your file has successfully uploaded, navigate to the `Pinata explorer` page.
 
-![Pinata explorer](../../Images/pinata_pin_explorer_link.png)
+![Pinata explorer](Images/pinata_pin_explorer_link.png)
 
 * Confirm that your file was successfully uploaded to IPFS by clicking the link to it's corresponding `IPFS hash`.
 
@@ -49,13 +49,13 @@ In this activity, you will upload a Car TokenURI file to IPFS via Pinata and lin
 
 * Navigate to the [IPFS Browser Companion github](https://github.com/ipfs-shipyard/ipfs-companion) and install the browser extension for your desired browser.
 
-  ![IPFS Install Links](../../Images/ipfs-browser-companion.png)
+  ![IPFS Install Links](Images/ipfs-browser-companion.png)
 
 * Originally the CIDV0 standard allowed for url hashes that supported both upper and lowercase characters but this breaks in many browers including firefox and was not capable of encoding human readable information.
 
   * Pinata is a useful service but they have yet to update their file pinning frontend to support CIDV1. In order to avoid bugs you are going to convert your `IPFS hash` with a free CIDV1 converter at the [CID IPFS Website](https://cid.ipfs.io).
 
-  ![CID Converter](../../Images/cid-converter.png)
+  ![CID Converter](Images/cid-converter.png)
 
  * Now to test the browser extension copy the files new CIDv1 `IPFS hash` and preppend `ipfs://` to the front of it, eg, [ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq](ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq). Your file should successfully render in your browser.
 
