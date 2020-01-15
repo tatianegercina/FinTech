@@ -46,7 +46,13 @@ from dotenv import load_dotenv
 load_dotenv()
 ```
 
-* This will now load the previously defined environment variables.
+* This will now load the previously defined environment variables. The `python-dotenv` package automatically imports the environment variables from a `.env` file in your project directory.
+
+*Note:* This requires the `python-dotenv` package. This was used in Unit 19 for importing private keys and other environment variables. You may need to install it by using:
+
+```bash
+pip install python-dotenv
+```
 
 Now it's time to setup a `POST` request to the Pinata API that will pin arbitrary JSON data to IPFS.
 
@@ -129,7 +135,7 @@ def convertDataToJSON(time, description):
 
 * `pinataContent` contains the object that will be pinned to IPFS by Pinata. Only what is in this field will be uploaded to IPFS.
 
-* Finally, we are simply converting the `data` dictionary into a JSON string by using `json.dumps(data)`.
+* Finally, we are simply converting the `data` dictionary into a JSON string by using `json.dumps(data)`. The `json.dumps` function takes in a Python dictionary and outputs a compatible JSON `string`. Remember, JSON stands for `JavaScript Object Notation`. JSON originally came from JavaScript, and is used in many other systems, but Python needs to convert the way its stores data in dictionaries into the JSON format.
 
 Now it's time to setup the functions we need to setup our `CryptoFax` contract object in Python using `web3.py`.
 
