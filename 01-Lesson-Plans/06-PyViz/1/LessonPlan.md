@@ -42,7 +42,7 @@ By the end of this class, students will be able to:
 
   * Make sure to emphasize the real-world use cases of visualizing real estate, such as finding the best place to move to, since some students may not find the real estate market as exciting as the stock market.
 
-* A key to today's class is getting students to not only create visualizations but to also explore their visualizations using widgets. Therefore, each assignment will serve two purposes: coding the visualization and analyzing the visualization to make key insights about the data.
+* A key to today's class is getting students to not only create visualizations but also to explore their visualizations using widgets. Therefore, each assignment will serve two purposes: coding the visualization and analyzing the visualization to make key insights about the data.
 
 * Remember that the purpose of this class is not just to teach students how to make interactive plots. Rather, the focus is to teach students how to tell stories through interactive plots, stories that users can deep dive into using the interactive widgets provided by PyViz's technologies.
 
@@ -67,9 +67,6 @@ By the end of this class, students will be able to:
 
 ### 1. Instructor Do: Welcome (5 min)
 
-**Files:**
-
-* [Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit?usp=sharing)
 
 Welcome to Unit 6! Unit 6 is dedicated to introducing and teaching students all they need to know about data visualization using the PyViz visualization platform.
 
@@ -101,7 +98,7 @@ Ask for any questions before proceeding.
 
 ### 2. Instructor Do: Review Homework (10 min)
 
-This activity involves a quick demo and review of the homework.
+This activity involves a quick demo and a review of the homework.
 
 **Files:**
 
@@ -131,9 +128,6 @@ Ask the students for any questions before moving forward.
 
 Students will be introduced to PyViz by way of a facilitated discussion led by the instructor. The discussion will focus on the advantages of using PyViz rather than individual technologies (HoloViews, Matplotlib, D3.js, etc.).
 
-**Files:**
-
-* [Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit#slide=id.g49cc2d98fb_0_55)
 
 Communicate to students that the Python environment comes packed with a number of different visualization technologies that have all been wrapped together into one platform called PyViz.
 
@@ -143,7 +137,7 @@ Navigate to the 6.1 slides, and highlight the following:
 
 * Each visualization technology in the PyViz ecosystem has the power and features to provide stand-alone visualizations. Each technology also has its strengths and weaknesses, which will be explored later.
 
-* PyViz’s platform allows for different visualization technologies to be integrated with one another to create dashboards (which can be done with PyViz’s Panel software). This is pivotal for FinTech, as PyViz provides all the necessary tools needed to create financial dashboards for personal and corporate use.
+* PyViz’s platform allows for different visualization technologies to be integrated to create dashboards (which can be done with PyViz’s Panel software). This is pivotal for FinTech, as PyViz provides all the necessary tools needed to create financial dashboards for personal and corporate use.
 
 * For FinTech, using PyViz means you have access to your standard plots as well as finance specific plots, like candlestick charts. Another benefit of PyViz is that the sheer number of plotting technologies means that there's a greater chance of users finding the visualizations they need.
 
@@ -151,7 +145,7 @@ Facilitate discussion by asking the following questions:
 
 * Let’s say I just wanted to use Matplotlib and HoloViews. Why not just download those technologies specifically rather than installing PyViz?
 
-  * **Answer:** Matplotlib and HoloViews may not satisfy all of the visualization needs required. For example, Matplotlib and HoloViews provide visualizations, but they do not offer a way to create a dashboard. Installing PyViz will ensure all viable technologies are accessible.
+  * **Answer:** Matplotlib and HoloViews may not satisfy all of the visualization tools required. For example, Matplotlib and HoloViews provide visualizations, but they do not offer a way to create a dashboard. Installing PyViz will ensure all viable technologies are accessible.
 
   * **Answer:** Installing PyViz instead of just the individual technologies would mean that you’d get access to the individual technologies as well as the integration architecture that PyViz uses to integrate the libraries.
 
@@ -167,9 +161,6 @@ Ask if there are any questions; then, move onto the next module.
 
 Students participate in a formal lecture regarding what hvPlot is and what it has to offer in terms of data visualization.
 
-**Files:**
-
-* [Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit#slide=id.g5fd55e56a3_0_42)
 
 Navigate to the 6.1 slides, and introduce students to the world of hvPlot interactive graphs!
 
@@ -237,7 +228,7 @@ Open the [starter file](Activities/01-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb), an
 
   * Emphasize to students that even though hvPlot uses the function `hvplot` and not Pandas `plot`, the `hvplot` function actually makes reference to the Pandas `plot` interface. This allows for hvPlots to be created and manipulated in the same ways as Pandas plots (including plot attributes), just with an interactive component.
 
-* The `hvPlot` function is used to create a standard hvPlot chart. For example, when applied against a DataFrame containing cumulative returns for five different tickers, hvPlot would create a visualization using the metadata and data from the DataFrame. No configuration is needed by the user.
+* The `hvPlot` function is used to create a standard hvPlot chart. For example, when applied against a DataFrame containing cumulative returns for five different tickers, hvPlot would create a visualization using the metadata and data from the DataFrame. The user needs no configuration.
 
   ```python
   # Data Prep
@@ -264,7 +255,7 @@ Open the [starter file](Activities/01-Ins_hvPlot_Demo/Unsolved/hvPlot.ipynb), an
   )
   ```
 
-* The `hvPlot` function also has a `bar` attribute for visualization of categorical data. It works the same as the `line` attribute, but it creates a bar visualization rather than line. It is important to note to students that bar plots require categorical data and not just time series data. Bar plots need to compare the x-axis against the y-axis.
+* The `hvPlot` function also has a `bar` attribute for visualization of categorical data. It works the same as the `line` attribute, but it creates a bar visualization rather than a line. It is important to note to students that bar plots require categorical data and not just time series data. Bar plots need to compare the x-axis against the y-axis.
 
   ```python
   # Data Prep
@@ -299,7 +290,7 @@ Ask students if they have any questions before moving onto the next activity.
 
 ### 6. Students Do: Plotting a Visual Takeover (15 min)
 
-In this activity, students revisit plots they made earlier in the class using Matplotlib and they recreate them as hvPlots. This bridge assignment aims to demonstrate the similarities between the hvPlot plot API and Matplotlib's API.
+In this activity, students revisit plots they made earlier in the class using Matplotlib, and they recreate them as hvPlots. This bridge assignment aims to demonstrate the similarities between the hvPlot plot API and Matplotlib's API.
 
 **Instructions**
 
@@ -317,11 +308,11 @@ In this activity, students revisit plots they made earlier in the class using Ma
 
 * [plotting_visual_takeover.ipynb](Activities/02-Stu_Plotting_Visual_Takeover/Solved/Core/plotting_visual_takeover.ipynb)
 
-Open the solution, and conduct a dry walkthrough while explaining the following:
+Open the solution and conduct a dry walkthrough while explaining the following:
 
 * The hvPlot library can be used to create interactive plot visualizations.
 
-* HvPlot has attributes that can be used to explicitly create line and bar plots. If an explicit declaration is not desired, the `hvplot` function can be used.
+* HvPlot has attributes that can be used to create line and bar plots explicitly. If an explicit declaration is not desired, the `hvplot` function can be used.
 
   ```python
   # Plot a hvplot bar chart of the top 20 market cap companies
@@ -340,11 +331,11 @@ If time remains, transition into a small review session. Ask the following guide
 
   * **Answer:** HvPlot visualizations are interactive rather than static. They also come equipped with widgets that allow users to manage how they want to interact with the data.
 
-* What are example ways in which a user can interact with an hvPlot visualization?
+* What are examples of ways in which a user can interact with an hvPlot visualization?
 
   * **Answer:** Zooming, panning, hovering, filtering
 
-* Since Matplotlib or Pandas and hvPlot-plotting APIs work the same way, is hvPlot reinventing the wheel by maintaining their own visualization technology?
+* Since Matplotlib or Pandas and hvPlot-plotting APIs work the same way, is hvPlot reinventing the wheel by maintaining their visualization technology?
 
   * **Answer:** No. HvPlot abstracts over Pandas or Matplotlib and inherits the objects and attributes already created by these technologies. HvPlot leverages existing code rather than creating new code from scratch.
 
@@ -358,11 +349,9 @@ Ask for any remaining questions before moving on.
 
 ### 9. Instructor Do: HvPlot Widgets (10 min)
 
-By the end of this activity, students and the instructor will have deep dived into the different interactions possible with hvPlots. While students may have used some of the widgets already, this activity will serve as a formal review of each button and interaction.
+By the end of this activity, students and the instructor will have deep-dived into the different interactions possible with hvPlots. While students may have used some of the widgets already, this activity will serve as a formal review of each button and interaction.
 
 **Files:**
-
-* [Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit#slide=id.g5fd55e56a3_0_91)
 
 * [hvplot_widgets.ipynb](Activities/03-Ins_hvPlot_Widgets/Solved/hvplot_widgets.ipynb)
 
@@ -410,7 +399,7 @@ Transition into a demo of the widget bar by opening the solution file and highli
 
   ![hvplot_hover.gif](Images/hvplot_hover.gif)
 
-* HvPlot also includes a reset widget button, which resets all visualization interactions. If the visualization was previously zoomed in at 110%, the reset will bring the zoom percentage back to 100%.
+* HvPlot also includes a reset widget button, which resets all visualization interactions. If the visualization was previously zoomed in at 110%, the reset would bring the zoom percentage back to 100%.
 
   ![hvplot_reset.gif](Images/hvplot_reset.gif)
 
@@ -456,9 +445,9 @@ Engage the students by facilitating a review discussion. Ask the following quest
 
   * **Answer:** Visualizations are interactive rather than static
 
-  * **Answer:** HvPlot dynamically handles the data so the best visualizations can be created. The `hvPlot` function figures out the best way to visualize the data, on its own. This might mean a line vs. bar plot.
+  * **Answer:** HvPlot dynamically handles the data so the best visualizations can be created. The `hvPlot` function figures out the best way to visualize the data on its own. This might mean a line vs. bar plot.
 
-* Sometimes the text on a display is hard to read. The labels can become illegible, depending on the amount of data being plotted. What's the best way to dive deep into the data and improve clarity and understanding?
+* Sometimes the text on display is hard to read. The labels can become illegible, depending on the amount of data being plotted. What's the best way to dive deep into the data and improve clarity and understanding?
 
   * **Answer:** Use the zoom widgets. This will limit the amount of data displayed on the screen, which will magnify the x-axis and y-axis values. This differs from static plots because static plots would require the width of the plot to be manipulated.
 
@@ -473,8 +462,6 @@ Ask for any remaining questions before moving on.
 By the end of this activity, students will have received a dry walkthrough demo on how to combine two plot objects to create a plot with subplots. This activity will teach students how to create plot layouts and overlay visualizations to create a centralized location for comparative data analysis.
 
 **Files:**
-
-* [Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit#slide=id.g5fdae88b8a_0_213)
 
 * [composing_plots.ipynb](Activities/05-Ins_Composing_Plots/Solved/composing_plots.ipynb)
 
@@ -514,7 +501,7 @@ sorted_data.hvplot() * sorted_data_med.hvplot()
 
   ![single_widget_bar.gif](Images/single_widget_bar.gif)
 
-Ask and answer any students questions. Then, move onto the next activity.
+Ask and answer any students' questions. Then, move onto the next activity.
 
 ---
 
@@ -604,13 +591,11 @@ Ask for any remaining questions before moving on.
 
 ### 15. Instructor Do: Visualization Options (10 min) (Critical)
 
-The goal of this activity is to provide students with a dry walkthrough demonstration of how to use hvPlot plot attributes and options to customize the look and feel of visualizations. This activity will enable students to perfect their visualizations by fine tuning details such as axis labels and to create attractive color themes and effects.
+The goal of this activity is to provide students with a dry walkthrough demonstration of how to use hvPlot plot attributes and options to customize the look and feel of visualizations. This activity will enable students to perfect their visualizations by fine-tuning details such as axis labels and to create attractive color themes and effects.
 
 Data for this activity was retrieved from [catalog.data.gov](https://catalog.data.gov/dataset/real-estate-sale-history-06c8f).
 
 **Files:**
-
-* [Slides](https://docs.google.com/presentation/d/1niPF_N8OQgG416cJizsJnCpJKZG73Iufzd-3H-mRf7E/edit#slide=id.g5fdae88b8a_3_7)
 
 * [viz_options.ipynb](Activities/07-Ins_Viz_Options/Solved/viz_options.ipynb)
 
@@ -692,7 +677,7 @@ Ask if there are any more questions. Then, continue to the student challenge act
 
 By the end of this activity, students will have employed hvPlot customization attributes and options to perfect and add finishing touches to their visualizations.
 
-Make sure to slack out to students the [hvPlot customization](https://hvplot.pyviz.org/user_guide/Customization.html) documentation so they have a complete list of all options available.
+Make sure to slack out to students the [hvPlot customization](https://hvplot.pyviz.org/user_guide/Customization.html) documentation, so they have a complete list of all options available.
 
 **Instructions:**
 
@@ -734,7 +719,7 @@ If time remains, ask students the following review questions:
 
 * Can composed plots be customized?
 
-  * **Answer:** Yes. composed plots can be customized with the `opts` function. The composing operation will have to be placed within parenthesis for the `opts` function to take effect.
+  * **Answer:** Yes. Composed plots can be customized with the `opts` function. The composing operation will have to be placed within parenthesis for the `opts` function to take effect.
 
 Ask for any remaining questions before moving on.
 
@@ -762,7 +747,7 @@ Facilitate a recap discussion with students by asking some of the following ques
 
   * **Answer:** HvPlot offers all the same features and functionality provided in Matplotlib and Pandas Plot API.
 
-  * **Answer:** HvPlot abstracts over the common data visualization packages. This allows hvPlots to be created and customized similar to other plots.
+  * **Answer:** HvPlot abstracts over the common data visualization packages. This allows hvPlots to be created and customized, similar to other plots.
 
   * **Answer:** Interactive visualizations include the ability to zoom, pan, filter, get hover hints, and save visualizations.
 
@@ -770,15 +755,15 @@ Facilitate a recap discussion with students by asking some of the following ques
 
   * **Answer:** Interactive visualizations come with their own swagger, such as 3D graphs, color gradients, and custom widgets.
 
-  * **Answer:** Interactive visualizations take data analysis, exploration, and reporting to the next level by providing opportunity for on-the-fly data changes and manipulations. One user can zoom in to see just a segment of the data, while another user can zoom out to get a holistic, comprehensive view. Coding changes are not necessary.
+  * **Answer:** Interactive visualizations take data analysis, exploration, and reporting to the next level by providing an opportunity for on-the-fly data changes and manipulations. One user can zoom in to see just a segment of the data, while another user can zoom out to get a holistic, comprehensive view. Coding changes are not necessary.
 
-  * **Answer:** Matplotlib and Pandas Plot API are valuable, but the static plots make it difficult to analyze data at different levels of granularity. When working with static plots, underlying data needs to be manipulated for any change to take place on the visualization. Interactive visualizations allow for users to change the data being displayed by filtering, zooming, panning, etc.
+  * **Answer:** Matplotlib and Pandas Plot API are valuable, but the static plots make it difficult to analyze data at different levels of granularity. When working with static plots, underlying data needs to be manipulated for any change to take place on the visualization. Interactive visualizations allow users to change the data being displayed by filtering, zooming, panning, etc.
 
 If time remains, emphasize one last time the importance of interactive visualizations.
 
 * Communicate to students that with the rise of data science and data-driven industries is going to result in interactive visualizations becoming a staple of the data world.
 
-* Explain that as data volumes increase, users will need interactive visualizations to help shift and parse through countless data points. Interactive visualizations are empowering users to deep dive into data themselves to find new and unique structures and patterns that otherwise would have required large data dumps.
+* Explain that as data volumes increase, users will need interactive visualizations to help shift and parse through countless data points. Interactive visualizations are empowering users to dive deep into data themselves to find new and unique structures and patterns that otherwise would have required large data dumps.
 
 * Highlight that without interactive visualizations, users are stuck trying to analyze data in charts and graphs that are too small and static to glean insight from.
 
