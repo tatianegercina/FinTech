@@ -57,7 +57,7 @@ In this activity, you will implement a non-fungible car token containing an immu
 
   * Structs allow you to have structured collections of data within a user-defined datatype.
 
-  * As you can see, the struct that you must create for this contract contains two strings and a uint.
+  * As you can see, the struct that you must create for this contract contains a string and a uint.
 
   * You can think of a struct kind of like a python dictionary in that they are both types of objects containing data, however, make no mistake a struct is a fundamentally different data type than a python dictionary.
 
