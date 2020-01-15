@@ -1,0 +1,14 @@
+{
+  "title": "Artwork Metadata",
+  "type": "object",
+  "properties": {
+      "type_of_art": {
+          "type": "string",
+          "description": "Painting"
+      },
+      "year_created": {
+          "type": "uint",
+          "description": "1503"
+      }
+  }
+}
