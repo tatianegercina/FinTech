@@ -27,7 +27,7 @@ In this activity, you will upload a Car TokenURI file to IPFS via Pinata and lin
 }
 ```
 
-* Now open your web browser to the [pianta website](https://pinata.cloud) and register for a new account.
+* Now open your web browser to the [pinata website](https://pinata.cloud) and register for a new account.
 
 ![Pinata Signup](../../Images/pinata_singup.png)
 
