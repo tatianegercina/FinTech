@@ -48,7 +48,7 @@ load_dotenv()
 
 * This will now load the previously defined environment variables. The `python-dotenv` package automatically imports the environment variables from a `.env` file in your project directory.
 
-*Note:* This requires the `python-dotenv` package. This was used in Unit 19 for importing private keys and other environment variables. You may need to install it by using:
+*Note:* This requires the `python-dotenv` package for importing private keys and other environment variables. You may need to install it by using:
 
 ```bash
 pip install python-dotenv
