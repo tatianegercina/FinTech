@@ -1,6 +1,6 @@
 # IEXFinance Installation Guide
 
-This guide serves as a step by step process for setting up and validating the `iexfinance` Python SDK. Without this library, class activities and code will not be able to extract historical stock data and therefore will not be able to be completed.
+This guide serves as a step by step process for setting up and validating the `iexfinance` Python SDK. Without this library, class activities and code will not be able to extract historical stock data and therefore, will not be able to be completed.
 
 ## Install
 
@@ -10,7 +10,7 @@ In order to install the `iexfinance` package, all of the dependencies must be sa
 
 * Requests
 
-Open a terminal, and execute the following command to install `iexfinance`.
+Open a terminal and execute the following command to install `iexfinance`.
 
 * Use the `pip install` command to download the `iexfinance` module.
 
@@ -56,7 +56,7 @@ It can be frustrating when packages do not install correctly, therefore use the 
 
 ### Update Conda Environment
 
-An out-of-date Anaconda environment can create issues when trying to install new packages. Follow the below steps to update your conda environment.
+An out-of-date Anaconda environment can create issues when trying to install new packages. Follow the steps below to update your conda environment.
 
 1. Deactivate your current conda environment. This is required in order to update the global conda environment. Be sure to quit any running applications, such as Jupyter, prior to deactivating the environment.
 
@@ -90,7 +90,7 @@ An out-of-date Anaconda environment can create issues when trying to install new
 
 ### Verify IEX Cloud Usage
 
-Sometimes, queries to the IEX Cloud API will fail. This is most likely because of a max usage related to a IEX Cloud account, as shown below.
+Sometimes, queries to the IEX Cloud API will fail. This is most likely because of a max usage related to an IEX Cloud account, as shown below.
 
   ![iex-query-error](Images/iex-query-error.png)
 

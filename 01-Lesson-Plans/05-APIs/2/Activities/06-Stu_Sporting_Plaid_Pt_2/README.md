@@ -1,6 +1,6 @@
 # Sporting Plaid (Part 2)
 
-You've joined the **Plaid** ranks and have refused to bend the knee to the privatization of financial data and financial services. Now that you've equipped your Plaid API keys, disrupt the FinTech market even more by designing a prototype that monitors credit card interest payments and provides consumers with an on-demand list of all interest payments within the past 365 days.
+You've joined the **Plaid** ranks and have refused to bend the knee to the privatization of financial data and financial services. Now that you've equipped your Plaid API keys disrupt the FinTech market even more by designing a prototype that monitors credit card interest payments and provides consumers with an on-demand list of all interest payments within the past 365 days.
 
 ## Instructions
 
@@ -16,9 +16,9 @@ You've joined the **Plaid** ranks and have refused to bend the knee to the priva
 
 6. Parse the JSON output, and store the access token as a Python variable.
 
-7. Extract list of transactions for all accounts using the `client.Transactions.get` function for the past 365 days.
+7. Extract the list of transactions for all accounts using the `client.Transactions.get` function for the past 365 days.
 
-8. Parse JSON output for the amounts of all transactions with name `INTRST PYMNT` for the past 365 days.
+8. Parse JSON output for the amounts of all transactions with the name `INTRST PYMNT` for the past 365 days.
 
 ### Challenge
 
