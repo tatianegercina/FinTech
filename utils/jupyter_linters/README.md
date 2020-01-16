@@ -8,9 +8,12 @@ nbspell - Builds a list of spelling errors for a given directory.
 
 nberr - Checks notebook output cells for errors.
 
+nbdiff - Checks to see if the code in the Unsolved notebooks matches the code in the Solved.
+
 ## Installation
 
 ```shell
+cd utils/jupyter_linters
 pip install -e .
 ```
 
@@ -47,6 +50,12 @@ Options:
   --help  Show this message and exit.
 ```
 
+```shell
+nbdiff --help
+Usage: nbdiff [OPTIONS] [ACTIVITIES_DIRECTORY]
+
+Options:
+  --help  Show this message and exit.
 - - -
 
 ## Usage
@@ -83,4 +92,8 @@ nberr path/to/notebooks
 
 ```shell
 nbspell path/to/notebooks
+```
+
+```shell
+nbdiff path/to/Activities
 ```
