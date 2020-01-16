@@ -16,7 +16,7 @@ By the end of class, students will be able to:
 
 * Complete Plotly interactive plots
 
-* Store MapBox API key as environment variable and authenticate
+* Store MapBox API key as an environment variable and authenticate
 
 * Integrate MapBox API with Plotly
 
@@ -30,13 +30,13 @@ By the end of class, students will be able to:
 
 * Throughout the day, reinforce to students the importance and power of interactive plotting. The widgets, automatic color formatting and skins, and plot types can all be accessed and manipulated with ease. The plots being created by Plotly Express would have taken someone in the past hours to create. Plotly Express does it in seconds.
 
-* Keep pacing in mind while progressing through the day. Give students the opportunity to ask questions. When necessary, ask students to save questions to the review sessions. Encourage students to collaborate on activities.
+* Keep pacing in mind while progressing through the day. Allow students to ask questions. When necessary, ask students to save questions for the review sessions. Encourage students to collaborate on activities.
 
-* The pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage students who are confused to attend office hours.
+* The pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage confused students to attend office hours.
 
-* Slack out the PyViz install guide to students so that they have ample time to install and confirm installation of Plotly Express and its Jupyter plugin.
+* Slack out the PyViz install guide to students so that they have ample time to install and confirm the installation of Plotly Express and its Jupyter plugin.
 
-* Due to the amount of content that needs to be covered in this lesson, there will be no class time dedicated to system checks. Communicate to students that they must have Plotly Express installed and running prior to coming to class. Any challenges or issues should be worked out with a TA.
+* Due to the amount of content that needs to be covered in this lesson, there will be no class time dedicated to system checks. Communicate to students that they must have Plotly Express installed and running before coming to class. Any challenges or issues should be worked out with a TA.
 
 * Have your TAs keep track of time with the Time Tracker.
 
@@ -105,7 +105,7 @@ Navigate to the 6.2 slides, and quickly highlight the following:
 
 * Plotly Express works much like hvPlot, giving users a simple `plot` based interface that allows developers to create and customize interactive visualizations.
 
-* Plotly Express is packaged and powered by the Plotly library, an open source graphing library for Python.
+* Plotly Express is packaged and powered by the Plotly library, an open-source graphing library for Python.
 
 * In addition to the chart types we've already seen (e.g., scatter, line, and bar), Plotly Express includes charting types such as parallel coordinates and parallel categories, plot types that are useful when visualizing correlations and the relationships between data points.
 
@@ -115,9 +115,9 @@ Navigate to the 6.2 slides, and quickly highlight the following:
 
 Communicate to students that working with Plotly Express is going to be similar to working with all of the other plotting APIs covered in this class so far. The only difference is the type of charts and underlying technology used to create those charts.
 
-Open the starter file provided and live code how to create a scatter plot using Plotly Express.
+Open the starter file provided and live code, creating a scatter plot using Plotly Express.
 
-* Import the Plotly Express library, and prepare the dataset. Because Plotly Express abstracts over Pandas (like hvPlot), data for visualization should be stored in a Pandas DataFrame.
+* Import the Plotly Express library, and prepare the dataset because Plotly Express abstracts over Pandas (like hvPlot), data for visualization should be stored in a Pandas DataFrame.
 
   ```python
   import plotly_express as px
@@ -128,13 +128,13 @@ Open the starter file provided and live code how to create a scatter plot using 
   md_housing_sales.head()
   ```
 
-* Create a scatter plot using the Maryland real estate housing sales data. Correlate average sale price to cost of living index to confirm that average sale price will increase exponentially with cost of living index, as expected.
+* Create a scatter plot using the Maryland real estate housing sales data. Correlate average sale price to the cost of living index to confirm that average sale price will increase exponentially with the cost of living index, as expected.
 
   * Use Cost of Living Index as `x`.
 
   * Use Average Sale Price as `y`.
 
-  * Control the size of the circles by setting size to equal Number of Housing Units Sold.
+  * Control the size of the circles by setting the size to equal Number of Housing Units Sold.
 
   * Color code the plot by County.
 
@@ -149,7 +149,7 @@ Open the starter file provided and live code how to create a scatter plot using 
 
     ![plotly_scatter.png](Images/plotly_scatter.png)
 
-* Create another scatter plot comparing the cost of living index to number of housing units sold to determine if higher cost of living index can be correlated to the number of sales.
+* Create another scatter plot comparing the cost of living index to the number of housing units sold to determine if the higher cost of living index can be correlated to the number of sales.
 
   * Use **Cost of Living Index** as `x`.
 
@@ -180,13 +180,13 @@ Use the Plotly Express interactivity features and widget bar to interact with th
 
 If time remains, ask students some of the following questions:
 
-* What story does these visualizations tell about the real estate market in Maryland?
+* What story do these visualizations tell about the real estate market in Maryland?
 
-  * **Answer** The higher the cost of living, the higher number of housing units sold. More homes are being sold in areas with a higher cost of index, which can be related to the quality of the homes, population size of the counties, etc. It also shows that more and more individuals are gravitating toward the areas with higher cost.
+  * **Answer** The higher the cost of living, the higher the number of housing units sold. More homes are being sold in areas with a higher cost of the index, which can be related to the quality of the homes, the population size of the counties, etc. It also shows that more and more individuals are gravitating toward the areas with higher cost.
 
 * Which county could be an up-and-coming real-estate opportunity? Why?
 
-  * **Answer** Baltimore City. Baltimore City has an average real-estate sale price of less than $200,000, and the cost of living index is only 1.3% higher. This county has the cheapest prices with decent sales volume. Because of the number of sales, it seems the market is active with buying opportunities. While it might be too late to get involved, it's definitely a hot spot.
+  * **Answer** Baltimore City. Baltimore City has an average real-estate sale price of less than $200,000, and the cost of living index is only 1.3% higher. This county has the lowest prices with decent sales volume. Because of the number of sales, it seems the market is active with buying opportunities. While it might be too late to get involved, it's definitely a hot spot.
 
 Ask if there are any questions, and then move on to the student activity.
 
@@ -210,13 +210,13 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 ### 4. Instructor Do: Plotting with Plotly Activity Review (10 min)
 
-Students and instructor participate in a dry walkthrough of the solution for the previous activity.
+Students and instructors participate in a dry walkthrough of the solution for the previous activity.
 
 **Files:**
 
 * [plotting_w_plotly.ipynb](Activities/02-Stu_Plotting_w_Plotly/Solved/Core/plotting_w_plotly.ipynb)
 
-Open the solution, and conduct a dry walkthrough.
+Open the solution and conduct a dry walkthrough.
 
 * Plotly Express can be used to create scatter plots. This can be done by making a call to the `scatter` function.
 
@@ -249,7 +249,7 @@ Explore the data with the students. Encourage students to follow along and compl
 
 * Zoom in on the City of Clairton data points. Use the box select widget to highlight only the City of Clairton data (which will also fade out any other data points reflected at the time). Deep dive into the data for 2014.
 
-  * Communicate to students that the City of Clairton data for 2014 could be considered an outlier or data quality issue. Interactive visualizations allow users to get a closer look into outlying data points, which could communicate a need for further investigation and data exploration to better understand the outlier.
+  * Communicate to students that the City of Clairton data for 2014 could be considered an outlier or data quality issue. Interactive visualizations allow users to get a closer look into outlying data points, which could communicate a need for further investigation and data exploration to understand the outlier better.
 
   * Without the ability to interact with data points via technologies like Plotly Express, spotting outliers could be like spotting a needle in a haystack. The process would be less efficient and arguably less effective.
 
@@ -271,7 +271,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 Open the solved solution file and conduct a dry walkthrough. While walking through the solved file, highlight the below discussion points. Make sure to place particular emphasis on the what and why of parallel coordinate plots so students understand their use case and when they should be applied.
 
-Walk through the syntax required to create a parallel coordinate plot:
+Walkthrough the syntax required to create a parallel coordinate plot:
 
 * The parallel coordinate plot can be created using the `parallel_coordinates` function.
 
@@ -307,7 +307,7 @@ Break down the anatomy of the plot, emphasizing the components below.
 
 * Point out the colored lines on the plot. A line is used to represent a row from the DataFrame. A line will connect each attribute for that given row, which enables analysts to spot trends and track the related attributes and values.
 
-  * Each line is color coded to help assist in tracing the relationships. This is especially valuable when going from looking at data from a row point of view to looking at a visualization.
+  * Each line is color-coded to help assist in tracing the relationships. This is especially valuable when going from looking at data from a row point of view to looking at a visualization.
 
 Ask if there are any questions before moving on.
 
@@ -335,19 +335,19 @@ This will be the students' first time working with parallel coordinate plots. In
 
 * [plotting_in_parallel.ipynb](Activities/04-Stu_Parallel_Coordinates/Solved/Core/plotting_in_parallel.ipynb)
 
-Kick off the review session by asking some of the below questions.
+Kick off the review session by asking some of the questions below.
 
 * What's the function used to create a parallel coordinate plot?
 
   * **Answer:** `plotly.express.parallel_coordinates()`
 
-* What's the difference between a scatter plot and parallel coordinate plot?
+* What's the difference between a scatter plot and a parallel coordinate plot?
 
   * **Answer:** Scatter plots visualize the relationship between two data points as an intersection. Parallel coordinate plots visualize the relationship between two data points as parallel axes.
 
-  * **Answer:** **Scatter plots** inherently use two axes. Whereas parallel coordinate are built for multivariate analysis and can have 2-plus axes.
+  * **Answer:** **Scatter plots** inherently use two axes. Whereas, parallel coordinates are built for multivariate analysis and can have 2-plus axes.
 
-* In terms of interaction, which plot do you feel allows you to gain more value from interaction?
+* In terms of interaction, which plot do you feel allows you to gain more value from the interaction?
 
   * **Answer:** The parallel coordinate plot offers limited opportunities for interaction, which makes the scatter plot more fitted for interacting with plots. However, parallel coordinate plots structurally allow for relationships to be traced more effectively and efficiently.
 
@@ -373,7 +373,7 @@ Ask for any remaining questions before moving on.
 
 ### 9. Instructor Do: Parallel Categories (10 min) (Critical)
 
-In this activity, students continue learning about more advanced, statistical plots, like the parallel categories plot by way of an instructor demo. The instructor will demonstrate to students how to create a parallel categories plot, as well as highlight the differences between parallel categories and parallel coordinates.
+In this activity, students continue learning about more advanced statistical plots, like the parallel categories plot by way of an instructor demo. The instructor will demonstrate to students how to create a parallel categories plot, as well as highlight the differences between parallel categories and parallel coordinates.
 
 **Files:**
 
@@ -383,7 +383,7 @@ Navigate to the 6.2 slides, and highlight the following:
 
 * Whereas parallel coordinate plots are used for multivariate analysis and mapping relationships between variables, parallel categories plots are used to perform **multidimensional** analysis.
 
-  * An example of multidimensional analysis would be looking at sales and foreclosures data by housing type, region, and number of units. Housing type, region, and number of units would be good dimensions to consider.
+  * An example of multidimensional analysis would be looking at sales and foreclosures data by housing type, region, and the number of units. Housing type, region, and the number of units would be good dimensions to consider.
 
 * **Dimensions** are considered to be categories**. **Parallel categories plots focus on connecting the dots between each category and assessing the nuances per category and the impact of categories on other categories.
 
@@ -438,13 +438,13 @@ Open the [starter file](Activities/05-Ins_Parallel_Categories/Solved/parallel_ca
 
 ### 10. Student Do: Categorical Property Evaluation (15 min)
 
-Students complete anM activity and code out a parallel categories plot. Students will use the plot to visualize the dimensions and categories evaluated during real estate property assessments.
+Students complete an activity and code out a parallel categories plot. Students will use the plot to visualize the dimensions and categories evaluated during real estate property assessments.
 
 Encourage students to work in teams and collaborate on the information-seeking process. Indicate that even when working in teams, each student will still need to complete the activity.
 
 * Instruct the TAs to circulate to provide the teams with any troubleshooting assistance.
 
-Additionally, keep an eye out during the activity for students who finish early. Find a student volunteer who is wiling to present and describe the story being told by the documentation. Explain to the volunteer that they will have to present their plot to the class and tell the story of the data by interacting with the plot.
+Additionally, keep an eye out during the activity for students who finish early. Find a student volunteer who is willing to present and describe the story being told by the documentation. Explain to the volunteer that they will have to present their plot to the class and tell the story of the data by interacting with the plot.
 
 Data for this activity was acquired from [catalog.data.gov](https://catalog.data.gov/dataset/allegheny-county-property-assessments).
 
@@ -460,7 +460,7 @@ Data for this activity was acquired from [catalog.data.gov](https://catalog.data
 
 ### 11. Students Do: Categorical Property Evaluation Activity Review (10 min)
 
-This activity involves a student volunteering to tell the story of Alleghany property assessments. A student will present the parallel categories plot from the student activity and provide some findings regarding dimensional patterns.
+This activity involves student volunteering to tell the story of Alleghany property assessments. A student will present the parallel categories plot from the student activity and provide some findings regarding dimensional patterns.
 
 This activity is a revised version of the turn and teach activity type; however, instead of students working as teams, one student will lead the teaching.
 
@@ -468,7 +468,7 @@ This activity is a revised version of the turn and teach activity type; however,
 
 * [categorical_property_evaluation.ipynb](Activities/06-Stu_Categorical_Evaluation/Solved/categorical_evaluation.ipynb)
 
-Open the solution and ask the student volunteer to present the plot and relay their findings. Use the below discussion points to help facilitate the review.
+Open the solution and ask the student that volunteered to present the plot and relay their findings. Use the below discussion points to help facilitate the review.
 
 * The parallel categories plot is created using the `parallel_categories` function provided with **Plotly.express** package.
 
@@ -495,19 +495,19 @@ If time remains, initiate the storytelling piece of the review by asking the stu
 
   * **Answer:** Most homes have three bedrooms.
 
-* How many bedrooms and full bathrooms do single-family homes tend to commonly have?
+* How many bedrooms and full bathrooms do single-family homes tend to have commonly?
 
   * **Answer:** Three bedrooms one bath.
 
-* What type of patterns can be seen when correlating total number of rooms and bedrooms?
+* What type of patterns can be seen when correlating the total number of rooms and bedrooms?
 
   * **Answer:** The homes that have evaluated at the highest local price are the ones that have twice as many total rooms as bedrooms.
 
-  * **Answer:** Housing value is more affected by total number of rooms and bedrooms than full baths.
+  * **Answer:** Housing value is more affected by the total number of rooms and bedrooms than full baths.
 
 * Is there an identifiable story being told through the data? What is the story?
 
-  * **Answer:** Total number of rooms, bedrooms, and bathrooms are all used to assess a property and its value. The more rooms and bedrooms, the higher the sale price. Most single-family homes being assessed in Alleghany County 2019 have around six total rooms, three bedrooms, and one full bath.
+  * **Answer:** Total number of rooms, bedrooms, and bathrooms are all used to assess a property and its value. The more rooms and bedrooms, the higher the sale price. Most single-family homes being assessed in Allegheny County 2019 have around six total rooms, three bedrooms, and one full bath.
 
   * **Answer:** The houses evaluated at the highest costs tend to have more than five total rooms.
 
@@ -527,7 +527,7 @@ Data for this activity was retrieved from [catalog.data.gov](https://catalog.dat
 
 Navigate to the 6.2 slides, and highlight the following:
 
-* Mapbox API is an open source API that gives developers a range of mapping visualizations and functions that enable the creation of interactive map plots.
+* Mapbox API is an open-source API that gives developers a range of mapping visualizations and functions that enable the creation of interactive map plots.
 
 * Mapbox API is democratizing the map services industry (e.g., navigation and cartography), similar to how Plaid is doing this for FinTech.
 
@@ -537,7 +537,7 @@ Navigate to the 6.2 slides, and highlight the following:
 
 Open the starter file, and live code the following. Make sure to have your Mapbox API key handy. Highlight the discussion points while coding:
 
-* Plotly Express has an integration endpoint specific for Mapbox API. This allows Plotly to use the Mapbox maps API in order to create interactive map visualizations. Plotly Express comes with functions designed specifically for interacting with Mapbox.
+* Plotly Express has an integration endpoint specific for Mapbox API. This allows Plotly to use the Mapbox Maps API in order to create interactive map visualizations. Plotly Express comes with functions designed specifically for interacting with Mapbox.
 
   * Plotly's integration with Mapbbox makes it extremely convenient to use; no other imports are required. All that is needed is the Plotly Express library.
 
@@ -626,7 +626,7 @@ Open the solution and conduct a dry walkthrough:
 
 Next, transition into the presentation portion of the review.
 
-* Ask if there are any students who would like to present the three places they'd choose to go to. If no one volunteers, go around the room round robin.
+* Ask if any students would like to present the three places they'd choose to go to. If no one volunteers to present, go around the room round-robin style in place of volunteers.
 
 Ask for any remaining questions before moving on.
 
@@ -674,11 +674,11 @@ Start the activity review by asking if there is a group that wants to volunteer 
 
 * What guided your final decision on locations?
 
-  * **Answer:** Locations were chosen based off categorical type and proximity. Locations of type garden, park, and square were chosen for a specific experience.
+  * **Answer:** Locations were chosen based on categorical type and proximity. Locations of type garden, park, and square were chosen for a specific experience.
 
 * Were the geographic scatter plots helpful in understanding the distribution of places of interest throughout New York City? How did the visual help cement the image?
 
-  * **Answer:** Yes, the plots were helpful. By color coding by **PlaceType**, it was easy to see the clusters of each type of place. This helped outline the trek through the boroughs. It was also helpful in noticing trends in positioning of certain locations (e.g., Ellis and Liberty islands are in same place and the forts all seem to be north of Manhattan).
+  * **Answer:** Yes, the plots were helpful. By color-coding by **PlaceType**, it was easy to see the clusters of each type of place. This helped outline the trek through the boroughs. It was also helpful in noticing trends in the positioning of certain locations (e.g., Ellis and Liberty islands are in the same place, and the forts all seem to be north of Manhattan).
 
 If time remains, ask students to summarize three things they've learned today.
 
