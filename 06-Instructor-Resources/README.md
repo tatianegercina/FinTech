@@ -8,6 +8,7 @@ If you think of other potential questions to add, please let us know! We are alw
 
 [Unit 01 - Intro to Finance and Programming](#unit-01-intro-to-finance-and-programming) <br>
 [Unit 02 - Python](#unit-02-python) <br>
+[Unit 03 - Python/Pandas](#unit-03-pythonpandas) <br>
 [Unit 04 - Pandas](#unit-04-pandas) <br>
 [Unit 05 - APIs](#unit-05-apis) <br>
 [Unit 06 - Data Visualization](#unit-06-data-visualization) <br>
@@ -32,6 +33,19 @@ If you think of other potential questions to add, please let us know! We are alw
 [How does slicing work?](../05-Student-Resources/unit-2/readme.md#how-does-slicing-work) <br>
 [How do you access values in a nested dictionary?](../05-Student-Resources/unit-2/readme.md#how-do-you-access-values-in-a-nested-dictionary) <br>
 [How can tabular data be accessed to faciliate exploration in Python?](../05-Student-Resources/unit-2/readme.md#How-can-tabular-data-be-accessed-to-faciliate-exploration-in-Python) <br>
+
+---
+## Unit 03: Python/Pandas
+[Unit 03 - Full FAQ](../05-Student-Resources/unit-3/readme.md#faqs) <br>
+[Why is it called Pandas?](../05-Student-Resources/unit-3/readme.md#why-is-it-called-pandas)<br>
+[How do you access a column?](../05-Student-Resources/unit-3/readme.md#how-do-you-access-a-column)<br>
+[Why do I keep getting a key error?](../05-Student-Resources/unit-3/readme.md#why-do-i-keep-getting-a-key-error)<br>
+[What is a DataFrame axis?](../05-Student-Resources/unit-3/readme.md#what-is-a-dataframe-axis)<br>
+[What is the difference between a Series and a DataFrame?](../05-Student-Resources/unit-3/readme.md#what-is-the-difference-between-a-series-and-a-dataframe)<br>
+[Why do my Dataframe changes disappear when I move to the next cell in Jupyter?](../05-Student-Resources/unit-3/readme.md#why-do-my-dataframe-changes-disappear-when-i-move-to-the-next-cell-in-Jupyter)<br>
+[How do you loop through a DataFrame?](../05-Student-Resources/unit-3/readme.md#how-do-you-loop-through-a-dataframe)<br>
+[Why must I apply a function to a groupby object in order to output a DataFrame?](../05-Student-Resources/unit-3/readme.md#why-must-i-apply-a-function-to-a-groupby-object-in-order-to-output-a-dataframe)<br>
+[What does this error mean: `TypeError: unsupported operand type`?](../05-Student-Resources/unit-3/readme.md#what-does-this-error-mean-typeerror-unsupported-operand-type)<br>
 
 ---
 ## Unit 04: Pandas
