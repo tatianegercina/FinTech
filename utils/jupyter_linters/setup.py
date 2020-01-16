@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='lint_jupyter',
     version='0.1',
-    packages=["lintnb", "nberr"],
+    packages=["lintnb", "nberr", 'nbspell', 'nbdiff'],
     install_requires=[
         'Click',
         'nbformat',
