@@ -12,7 +12,7 @@ Explain to students that you will start Today's class by learning some advanced 
 
 Open the lesson slides and navigate to the "Introducing ROC Curve and AUC" section and highlight the following:
 
-* ROC stands for "Receiver Operating Characteristic".
+* ROC stands for "Receiver Operating Characteristic."
 
 * The ROC curve shows the performance of a classification model as its discrimination threshold is varied.
 
@@ -36,7 +36,7 @@ Open the lesson slides and navigate to the "Introducing ROC Curve and AUC" secti
 
 * The value of `AUC` ranges from `0` to `1`. A model whose predictions are `100%` wrong has an `AUC = 0.0`; in contrast, a model whose predictions are `100%` correct has an `AUC = 1.0`.
 
-Open the unsolved version of the Jupyter notebook and highlight the following while you live code the demo.
+Open the unsolved version of the Jupyter notebook and highlight the following while you live-code the demo.
 
 * For this demo, we will use a dataset that contains anonymous information about `284807` credit card transactions made by European credit cardholders in September 2013 to create a fraud detection model using a deep neural network.
 
@@ -58,7 +58,7 @@ Continue the data preprocessing and highlight the following:
   y = transactions_df["Class"].values
   ```
 
-* Since the numerical features are in different scales, the `StandardScaler` from `sklearn` will be use to scaled the data of `X`.
+* Since the numerical features are on different scales, the `StandardScaler` from `sklearn` will be used to scale the data of `X`.
 
   ```python
   # Import the StandardScaler from sklearn
@@ -84,7 +84,7 @@ Continue the data preprocessing and highlight the following:
 
 * Now it's time to define our deep neural network, we will use a `Sequential` model and two `Dense` layers.
 
-* First at all, we will define the number of inputs and the number of hidden nodes for each layer.
+* First of all, we will define the number of inputs and the number of hidden nodes for each layer.
 
   ```python
   # Model set-up
@@ -101,7 +101,7 @@ Continue the data preprocessing and highlight the following:
 
   # Layer 1
   model.add(
-      Dense(units=hidden_nodes_layer1, input_dim=number_input_features, activation="relu")
+    Dense(units=hidden_nodes_layer1, input_dim=number_input_features, activation="relu")
   )
 
   # Layer 2
@@ -113,7 +113,7 @@ Continue the data preprocessing and highlight the following:
 
 Explain to students that we are using the `sigmoid` activation function since we have a binary output, `1` for fraud or `0` for no-fraud.
 
-Next the the model is compiled. Explain to students that the `binary_crossentropy` loss function is used since want to create a binary classification model.
+Next, the model is compiled. Explain to students that the `binary_crossentropy` loss function is used since we want to create a binary classification model.
 
 Point out that we are defining some metrics to assess the model. These metrics are part of [the Keras metrics module](https://www.tensorflow.org/api_docs/python/tf/keras/metrics?version=stable) and that these are the same metrics students are already familiar from previous units when binary classification was introduced. The only new metric is `AUC` that will be explained next in the model's evaluation.
 
@@ -125,7 +125,7 @@ model.compile(
   loss="binary_crossentropy",
   optimizer="adam",
   metrics=[
-  "accuracy",
+    "accuracy",
     tf.keras.metrics.TruePositives(name="tp"),
     tf.keras.metrics.TrueNegatives(name="tn"),
     tf.keras.metrics.FalsePositives(name="fp"),
@@ -144,12 +144,12 @@ Time to fit the model! Explain to students that we will use a `batch_size = 1000
 batch_size = 1000
 epochs = 50
 training_history = model.fit(
-    X_train,
-    y_train,
-    validation_data=(X_val, y_val),
-    epochs=epochs,
-    batch_size=batch_size,
-    verbose=1,
+  X_train,
+  y_train,
+  validation_data=(X_val, y_val),
+  epochs=epochs,
+  batch_size=batch_size,
+  verbose=1,
 )
 ```
 
@@ -177,7 +177,7 @@ Continue the demo with the model performance assessment, explain to students tha
 
   ![roc-auc-4](Images/roc-auc-4.png)
 
-Explain to students that the third metric to plot is `AUC` that stands for "Area Under the ROC Curve". Highlight the following.
+Explain to students that the third metric to plot is `AUC` that stands for "Area Under the ROC Curve." Highlight the following.
 
 ![roc-auc-5](Images/roc-auc-5.png)
 
@@ -187,7 +187,7 @@ Explain to students that the third metric to plot is `AUC` that stands for "Area
 
 * `AUC` is classification-threshold-invariant. It measures the quality of the model's predictions regardless of the threshold.
 
-Continue to the ROC curve plot. Explain to students that [`sklearn` has a method in the `metrics` module called `roc_curve`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_curve.html) that calculates the values needed to plot the ROC curve for binary classification models. We will also going to use the `auc` method from `sklearn` in this part of the demo.
+Continue to the ROC curve plot. Explain to students that [`sklearn` has a method in the `metrics` module called `roc_curve`](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_curve.html) that calculates the values needed to plot the ROC curve for binary classification models. We will also use the `auc` method from `sklearn` in this part of the demo.
 
 ```python
 # Import the roc_curve and auc metrics from sklearn
@@ -227,15 +227,15 @@ Highlight the following as you continue live coding the demo.
   roc_df_test = pd.DataFrame({"FPR Test": fpr_test, "TPR Test": tpr_test,})
   ```
 
-* We will plot the ROC curve using the `plot()` method from the Pandas DataFrame, we are also including the `AUC` value in the title for further analysis.
+* We will plot the ROC curve using the `plot()` method from the Pandas DataFrame, we also include the `AUC` value in the title for further analysis.
 
   ![roc-auc-6](Images/roc-auc-6.png)
 
-* Plotting the training and testing data ROC curves is a visual technique to validate how the model behave with different data. It is also a way to see if my results with test data are relatively similar to train data or not.
+* Plotting the training and testing data ROC curves is a visual technique to validate how the model behaves with different data. It is also a way to see if my results with test data are relatively similar to train data or not.
 
-* In this case both curves are quite similar, usually this is the expected behavior of the training and testing ROC curves.
+* In this case, both curves are quite similar; usually, this is the expected behavior of the training and testing ROC curves.
 
-Continue the demo by coding the model's evaluation using the `evaluate()` method. Explain to students that the evaluation results will be stored in the `scores` objetc that it's going to be used to create a `metrics` dictionary with the evaluation results.
+Continue the demo by coding the model's evaluation using the `evaluate()` method. Explain to students that the evaluation results will be stored in the `scores` object that it's going to be used to create a `metrics` dictionary with the evaluation results.
 
 ![roc-auc-7](Images/roc-auc-7.png)
 
@@ -249,7 +249,7 @@ Next, the classification report is created using the `classification_report` met
 
 ![roc-auc-9](Images/roc-auc-9.png)
 
-Finally, point out to students that these techniques can be used to compare the performance of a single model using different hyperparameters, as well as to compare different model for the same problem.
+Finally, point out to students that these techniques can be used to compare the performance of a single model using different hyperparameters, as well as to compare different models for the same problem.
 
 Answer any questions before moving on.
 
