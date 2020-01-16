@@ -12,7 +12,7 @@ Use Plotly Express and **MapBox** to create a geographical plot that will visual
 
 2. Read in the places of interest data.
 
-3. Use the Plotly Express `scatter_mapbox` function to plot interest data, setting color to **Name**.
+3. Use the Plotly Express `scatter_mapbox` function to plot interest data, setting the color to **Name**.
 
 4. Use `scatter_mapbox` to plot places of interest by **place type**.
 
@@ -28,11 +28,11 @@ Use Plotly Express and **MapBox** to create a geographical plot that will visual
 
 3. Plot squares that are of interest.
 
-Plot data with count of boroughs as the size.
+Plot the data with the count of boroughs as the size.
 
 ### Hint
 
-Creating too many map plots in one notebook might create a memory issue. Consider creating a separate notebook for the challenge section. This will require you to read the CSV data in for both notebooks.
+Creating too many map plots in one notebook might create a memory issue. Consider creating a separate notebook for the challenge section. This will require you to read the CSV data in both notebooks.
 
 
 
