@@ -222,7 +222,7 @@ Open the solution and conduct a dry walkthrough.
 
   ```python
   # Read in data
-  foreclosures = pd.read_csv(Path('../../Resources/alleghany_foreclosures.csv'),
+  foreclosures = pd.read_csv(Path('../../Resources/allegheny_foreclosures.csv'),
                             infer_datetime_format= True,
                             parse_dates=True,
                             index_col='filing_date')
