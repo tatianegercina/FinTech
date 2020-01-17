@@ -32,7 +32,7 @@ By the end of the unit, students will be able to:
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
-### 1. Instructor Do: Welcome Back (10 min)
+### 1. Instructor Do: Welcome to Class (10 min)
 
 During the previous lecture students were introduced to the concept of DeFi (short for decentralized finance). Students were given the scope that many of the concepts that they had learned up to this point can be leveraged to build financial systems based off of the principals of DeFi as well as given the tools that directly enable these systems through the deployment of dApps such as solidity events and IPFS. Briefly review the following talking points to refresh the class on DeFi,events, and IPFS.
 
