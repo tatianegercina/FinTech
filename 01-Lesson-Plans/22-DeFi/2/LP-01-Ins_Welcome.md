@@ -2,7 +2,7 @@
 
 ### Overview
 
-In today's class, students will be introduced to the techniques and thought process that goes into taking a formalized contract spec and implementing it into solidity code. Throughout the process of software development, employees are oftwen required to collaborate with one-another createing a separation of concernes within a system's architecure. Students will learn to take a simple yet more formalized smart contract specification and implement it to fit the interface of an already established frontend dApp. Students will then deploy the configured dApp to a centralized production environment, Github pages.
+In today's class, students will be introduced to the thought process and techniques that go into taking a formalized contract spec and implementing it into solidity code. Throughout the process of software development, employees are often required to collaborate with one another creating a separation of concerns within a system's architecture. Students will learn to take a simple yet more formalized smart contract specification and implement it to fit the interface of an already established frontend dApp. Students will then deploy the configured dApp to a centralized production environment, Github pages.
 
 ### Class Objectives
 
@@ -34,7 +34,7 @@ By the end of the unit, students will be able to:
 
 ### 1. Instructor Do: Welcome Back (10 min)
 
-During the previous lecture students were introduced to the concept of DeFi (short for decentralized finance). Students learned how many of the concepts that they had learned up to this point can be leveraged to build financial systems based off of the principals of DeFI as well as the the tools that directly enable these systems through the deployment of dApps such as solidity events and IPFS. Breifly review the following talking points to refresh the class on DeFi,events, and IPFS.
+During the previous lecture students were introduced to the concept of DeFi (short for decentralized finance). Students learned how many of the concepts that they had learned up to this point can be leveraged to build financial systems based off of the principals of DeFi as well as the tools that directly enable these systems through the deployment of dApps such as solidity events and IPFS. Breifly review the following talking points to refresh the class on DeFi,events, and IPFS.
 
 * What are some benefits of solidity events?
 
@@ -50,7 +50,7 @@ During the previous lecture students were introduced to the concept of DeFi (sho
 
 * **Answer** Inefficiencies in the web such as `duplicate files`.
 
-* **Answer** Inefficiencies in the web such as having to route to a faraway sever to get the file you need when it might be right next door.
+* **Answer** Inefficiencies in the web such as having to route to a faraway server to get the file you need when it might be right next door.
 
 * **Answer** Problems with security and file integrity, such as not knowing whether or not files you have accessed over the web have changed.
 
