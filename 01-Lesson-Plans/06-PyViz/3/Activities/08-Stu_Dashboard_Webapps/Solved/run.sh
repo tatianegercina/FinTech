@@ -1,1 +1,0 @@
-panel serve monte_carlo_dashboard.ipynb
