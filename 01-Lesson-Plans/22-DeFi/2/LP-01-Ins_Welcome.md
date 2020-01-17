@@ -34,7 +34,7 @@ By the end of the unit, students will be able to:
 
 ### 1. Instructor Do: Welcome Back (10 min)
 
-In the previous day students
+During the previous lecture students were introduced to the concept of DeFi (short for decentralized finance). Students learned how many of the concepts that they had learned up to this point can be leveraged to build financial systems based off of the principals of DeFI as well as the the tools that directly enable these systems through the deployment of dApps such as solidity events and IPFS. Breifly review the following talking points to refresh the class on DeFi,events, and IPFS.
 
 * What are some benefits of solidity events?
 
