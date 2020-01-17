@@ -1,4 +1,4 @@
-## 22.1 Lesson Plan: DeFi (Decentralized Finance)
+## 22.2 Lesson Plan:
 
 ### Overview
 
