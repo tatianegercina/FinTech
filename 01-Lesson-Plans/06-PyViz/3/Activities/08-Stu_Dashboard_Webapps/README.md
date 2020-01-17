@@ -8,7 +8,7 @@ Create a Panel dashboard using the Monte Carlo simulation code and plots provide
 
 ## Instructions
 
-1. Create a Panel `column` object and store it in a variable called `tab_1_columns`. Put variables `interactive_return_range` and `interactive_plot` into the column. 
+1. Create a Panel `column` object and store it in a variable called `tab_1_columns`. Put variables `interactive_return_range` and `interactive_plot` into the column.
 
    **Hint:** Add Markdown header text to indicate what each variable is.
 
@@ -22,9 +22,9 @@ Create a Panel dashboard using the Monte Carlo simulation code and plots provide
 
 5. Call the `servable` function using the `dashboard` object created in step 4.
 
-6. Open up a terminal. Execute the `panel serve` command and pass the Jupyter Notebook as an argument. 
+6. Open up a terminal. Execute the `panel serve` command and pass the Jupyter Notebook as an argument.
 
-   **Hint:** Use the absolute path for file or relative path.
+   **Hint:** Use the absolute path for the file or relative path.
 
 7. Use the URL provided in the logs from `panel serve` to open the dashboard as a web app!
 
