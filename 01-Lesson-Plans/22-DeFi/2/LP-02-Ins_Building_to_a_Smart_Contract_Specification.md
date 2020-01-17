@@ -12,6 +12,8 @@ Instructor will discuss the process of breaking down the elements of a smart con
 
 Begin by opening the [Example CryptoRight EIP](Activities/LP-02-Ins_Building_to_a_Smart_Contract_Specification/Unsolved/ExampleEIP.md) and displaying it for the class.
 
-* In earlier classes we took a look at variety of the EIP specifications located on [https://eips.ethereum.org/EIPS](https://eips.ethereum.org/EIPS)
+* In earlier classes we took a look at a variety of the EIP specifications located on [https://eips.ethereum.org/EIPS](https://eips.ethereum.org/EIPS)
 
 * Today we will be taking a new example EIP, and are going to be breaking it down and translating it into functioning code.
+
+Together with the class read the `Simple Summary`, `Abstract` and the `Motivation` sections of the EIP.
