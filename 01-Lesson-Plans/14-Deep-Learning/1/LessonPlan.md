@@ -20,7 +20,7 @@ By the end of class, students will be able to:
 
 * Experiment with building neural network architectures using TensorFlow playground.
 
-* Preprocessing data for neural network models.
+* Preprocess data for neural network models.
 
 * Identify the Python libraries available to build neural networks.
 
