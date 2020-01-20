@@ -47,7 +47,8 @@ By the end of class, students will be able to:
 
 The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/11gh-YowNqHBx_WEm-OBHJypKImSc51zo71vEYohNdqY/edit?usp=sharing).
 
-To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this here.
+To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files.  You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+
 
 Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy."
 
@@ -99,22 +100,22 @@ Start the presentation by showing students the following image from the [Rorscha
 
 Allow students to play around for a few seconds sharing what they see, continue the presentation by telling students that there is no precise answer to this question.
 
-Continue to the "How our brain works" slide, and explain to students that any similarity they could find between the image and a real object is possible because our brain uses thousands of neurons connections to find a match between the visual input and a mental representation of an object.
+Continue to the "How our brain works" slide, and explain to students that any similarity they could find between the image and a real object is possible because our brain uses thousands of neuron connections to find a match between the visual input and a mental representation of an object.
 
-Follow to the slide titled "Our brain as inspiration for artificial neural nets," and explain to students that this power of our brain to process information and make predictions or interpretations is the fact that inspires neurophysiologists and mathematicians to start the development of artificial neural networks (ANN).
+Continue to the next slide, and explain to students that this power of our brain to process information and make predictions or interpretations is the fact that inspires neurophysiologists and mathematicians to start the development of artificial neural networks (ANN).
 
-* In the same way biological neurons receive input signals through the dendrites, an ANN can receive input variables and process those inputs using an activation function to compute an output, akin the neuron nucleus in the brain.
+* In the same way biological neurons receive input signals through the dendrites, an ANN can receive input variables and process those inputs using an activation function to compute an output, akin to the neuron nucleus in the brain.
 
 * The concept of ANNs was presented for the first time in 1943 when [Warren McCulloch and Walter Pitts](https://doi.org/10.1007/BF02478259
 ) created a computational model for neural networks that they implemented using electrical circuits.
 
 * From that initial idea of a single neuron, the concept evolved the last decades to more complex models that propose creating connections between neurons to the point of creating what we know today as neural networks.
 
-Follow to the slide "The Future is here: applications of neural nets" and highlight the following:
+Continue to the slide "The Future is here: applications of neural nets" and highlight the following:
 
 * Neural networks are here to stay, and applications become more common every day.
 
-* Companies like Google or Tesla are using neural networks to develop self-driving cars.
+* Companies like Google and Tesla are using neural networks to develop self-driving cars.
 
 * Using the power of neural networks, today you can talk in any language thanks to the automated translation of instant messaging applications like Skype.
 
@@ -122,7 +123,7 @@ Follow to the slide "The Future is here: applications of neural nets" and highli
 
 * Neural networks are also used to create a better world, not only for humans but also for wildlife thanks to projects like one led by the U.S. National Oceanic and Atmospheric Administration to save whales by tracking the North Atlantic right whales population using neural networks for image recognition.
 
-As you continue to the slide called "Neural Networks in Finance", explain to students that the financial sector is leading in the use of neural networks, and highlight the following applications:
+As you continue to the slide called "Neural Networks Applications in Finance", explain to students that the financial sector is leading in the use of neural networks, and highlight the following applications:
 
 * **Fraud detection:** According to Javelin Strategy & Research, errors on fraud detection can cost a bank $118 billion in lost revenue.
 
@@ -162,7 +163,7 @@ Once you open the Teachable Machine website, follow the next steps to conduct th
 
   ![Teachable Machine - Step 5](Images/intro_nns_5.gif)
 
-Now that you train the model, play around by making several poses and faces to the camera:
+Now that you have trained the model, play around by making several poses and faces to the camera:
 
 * Rise your right hand and explain to students that despite that the neural network was trained to recognize your left hand raised, these kinds of models are continuously learning and are capable of recognizing and learning new patterns.
 
@@ -214,7 +215,7 @@ After this brief technical introduction to the perceptron, continue with the fol
 
 * The key point is the weights and the bias will depend on the data available, the viewing history in this case.
 
-Continue to the slide entitled "The perceptron may be harsh" and highlight the following:
+Continue to through the slides and highlight the following:
 
 * In real life, if you want to choose a movie, you are not as strict as the perceptron could be.
 
@@ -232,13 +233,13 @@ Move to the slide entitled _Activation Function_ and highlight the following:
 
   ![Current neuron structure](Images/neuron_structure.png)
 
-* The difference is the **activation function** that adds a dose of reality to neurons decisions. It is a mathematical function with a characteristic _S-shaped_ curve, also called the sigmoid curve.
+* The difference is that the **activation function** adds a dose of reality to neuron's decisions. It is a mathematical function with a characteristic _S-shaped_ curve, also called the sigmoid curve.
 
   ![Sigmoid functions](Images/sigmoid_functions.png)
 
 * Using an activation function, the output is a probability.
 
-* Instead of _yes/no_ decision, with an activation function, we get the probability of yes, similar to using logistic regression.
+* Instead of a _yes/no_ decision, with an activation function, we get the probability of yes, similar to using logistic regression.
 
 * Following our example, using an activation function we can get a decision similar to real life, the final decision of watching a movie is a probability based on the input variables (what we know about the movie) and influenced by the bias (our personal preferences).
 
@@ -290,7 +291,7 @@ Recall to students that this is not new, a variety of `sklearn` classifiers alre
 
 * This example shows that neural networks can easily solve linear problems, but doesn't demonstrate their efficacy at nonlinear modeling problems.
 
-* The real power or neural networks can be seen when we add more than one neuron, especially dealing with nonlinear data. This is going to be explored later in Today's class.
+* The real power of neural networks can be seen when we add more than one neuron, especially dealing with nonlinear data. This is going to be explored later in Today's class.
 
 Answer any questions before moving on.
 
@@ -322,7 +323,7 @@ Open the lesson slides, go to the "Activating Your First Artificial Neuron" Sect
 
 Ask students if they have already installed TensorFlow, if some students don't, slack out the [installation guide](../Supplemental/deep_learning_installation_guide.md) and have your TAs to assist students in the process while you continue to the demo.
 
-This demo is an _Everyone Do_ activity where students are encouraged to follow your steps as you code, slack out the unsolved version of the Jupyter Notebook before continue.
+This demo is an _Everyone Do_ activity where students are encouraged to follow your steps as you code, slack out the unsolved version of the Jupyter Notebook before continuing.
 
 Open the unsolved version of the Jupyter Notebook, explain to students that you are going to demo how a neural network with a single neuron can be made using Keras, encourage the class to replicate your live coding and highlight the following:
 
@@ -352,6 +353,14 @@ Explain to students that we will start coding a neural network with a single neu
   ```
 
 * This dummy dataset contains 1000 samples with two features that are split into two groups.
+
+* As part of our data preprocessing, we transform `y` into a vertical vector.
+
+  ```python
+  # Transforming y to a vertical vector
+  y = y.reshape(-1, 1)
+  y.shape
+  ```
 
 * A DataFrame is created with the dummy data to generate a plot using Pandas' `plot()` method.
 
@@ -435,7 +444,7 @@ Explain to students, that as it was mentioned before, the `Dense()` class is use
 
   ![Neuron summary](Images/tf_neuro_summary.png)
 
-Explain to students that once that the structure of the model has been defined, it is compiled using a loss function and optimizer.
+Explain to students that once the structure of the model has been defined, it is compiled using a loss function and optimizer.
 
 ```python
 neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
@@ -443,7 +452,7 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
 
 * The `binary_crossentropy` loss function is used since this is a binary classification problem.
 
-* Optimizers are algorithms that shape and mold a neural network while it's trained, to its most accurate possible form by updating the model in response to the output of the loss function. The `adam` optimizer is used in this demo.
+* Optimizers are algorithms that shape and mold a neural network while it's trained to its most accurate possible form by updating the model in response to the output of the loss function. The `adam` optimizer is used in this demo.
 
 * An additional training metric, `accuracy`, is also specified.
 
@@ -453,7 +462,7 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
   model = neuron.fit(X_train_scaled, y_train, epochs=100)
   ```
 
-* Training consists of using the optimizer and loss function to update weights during each iteration of your training cycle. This training using 100 iterations or epochs.
+* Training consists of using the optimizer and loss function to update weights during each iteration of your training cycle. This training uses 100 iterations or epochs.
 
 * After each epoch, the results of the loss function and the accuracy are displayed.
 
@@ -461,11 +470,11 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
 
 * After the training ends, the model is evaluated by plotting the loss function and the accuracy across all epochs.
 
-* To create the plots, a DataFrame is created using the `history` dictionary. This dictionary stores the `loss` and `accuracy` results of all epochs.
+* To create the plots, a DataFrame is created using the `history` dictionary. This dictionary stores the `loss` and `accuracy` results of all epochs. ***Note:***  When `.fit()` is called on the model, it must be stored in a variable to access the dictionary by only adding `.history`, otherwise, you must call `.history.history`.
 
   ![Results plot from binary classification](Images/neuron_results_plot.png)
 
-* Using this simple one-neuron neural network, it can be seen that loss function decreases as expected, and the accuracy is drastically improved to `1.0` in the first epochs.
+* Using this simple one-neuron neural network, it can be seen that the loss function decreases as expected, and the accuracy is drastically improved to `1.0` in the first epochs.
 
 * The model is evaluated using the `evaluate` method and the testing data.
 
@@ -475,7 +484,7 @@ neuron.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"
 
   ![Neuron predictions](Images/neuron_predictions.png)
 
-Explain to students that using this simple one-neuron neural network is just an example to show them how a neural network can be constructed using Keras. This model is as effective as logistic regression for linear data, now the question that arises is, how good this model could be for nonlinear data?
+Explain to students that using this simple one-neuron neural network is just an example to show them how a neural network can be constructed using Keras. This model is as effective as logistic regression for linear data, now the question that arises is, how good could this model be for nonlinear data?
 
 Continue the demo to demonstrate what happens when we use this model with nonlinear data.
 
@@ -495,7 +504,7 @@ Continue the demo to demonstrate what happens when we use this model with nonlin
 
   ![Non-linear data plot](Images/non_linear_data_plot.png)
 
-Since students are already familiar with the neural network creation workflow, explain that you are going to follow a similar process than before, but now, you are going to use the nonlinear data to train the same model.
+Since students are already familiar with the neural network creation workflow, explain that you are going to follow a similar process as before, but now, you are going to use the nonlinear data to train the same model.
 
 ```python
 # Create training and testing sets
@@ -517,7 +526,7 @@ X_moon_test_scaled = X_moon_scaler.transform(X_moon_test)
 model_moon = neuron.fit(X_moon_train_scaled, y_moon_train, epochs=100, shuffle=True)
 ```
 
-* After training the model with the nonlinear data, it can be seen that the performance is worse than in the previous example, especially the accuracy is lower.
+* After training the model with the nonlinear data, it can be seen that the performance is worse than in the previous example - the accuracy is especially lower.
 
   ![Non-linear data plots](Images/neuron_plot_non_linear.png)
 
@@ -655,7 +664,7 @@ Collect a couple of answers from the class and highlight the following:
 
 * Using more epochs for training is another strategy to improve the model's accuracy.
 
-Explain to students that modeling neural networks is part science and part and art; the best model will be the result of several tests by playing around with the number of neurons and testing different activation functions.
+Explain to students that modeling neural networks is part science and part art; the best model will be the result of several tests by playing around with the number of neurons and testing different activation functions.
 
 Answer any questions before moving on.
 
@@ -705,7 +714,7 @@ Walk through the solution and highlight the following:
 
   ![Model evaluation](Images/cc-results.png)
 
-* The accuracy is not great, but it also is not as harmful to discard the model. It could be used in a real-world scenario to run a pilot project.
+* The accuracy is not great, but it also is not as harmful enough to discard the model. It could be used in a real-world scenario to run a pilot project.
 
 Explain to students that for the challenge section, different approaches could be taken, for this demo, the `tanh` activation function is used in the output layer, and the model is trained with `50` epochs.
 
@@ -725,7 +734,7 @@ nn_2.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 model_2 = nn_2.fit(X_train_scaled, y_train, epochs=50)
 ```
 
-* As it can be seen in the model's evaluation, the accuracy improves a little bit. Having more epochs not always make accuracy better.
+* As it can be seen in the model's evaluation, the accuracy improves a little bit. Having more epochs does not always make accuracy better.
 
 Answer any questions before moving on.
 
@@ -755,7 +764,7 @@ Open the lesson slides, move to the "Preparing Data for Neural Networks" Section
 
 * Scikit-learn offers an implementation of one-hot encoding in the [`OneHotEncoder` module](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html).
 
-Open the unsolved Jupyter Notebook and ask students to follow along as your live code one-hot encoding and model scaling.
+Open the unsolved Jupyter Notebook and ask students to follow along as you live code one-hot encoding and model scaling.
 
 * For this demo, the iris dataset is used. The data is loaded into a DataFrame.
 
@@ -860,17 +869,6 @@ Open the solution and highlight the following points about the data preparation:
 
 * The dataset consists of 561 input features that are obtained from the smartphone. Many of these features are actually transformations of the original smartphone accelerometer data. The complete explanation of input features can be found from the source URL for the dataset.
 
-* While this particular dataset appears to already be in a normalized form, it may be safer to scale the input features using StandardScaler or MinMaxScaler.
-
-  ```python
-  # Scale the training and testing input features using StandardScaler
-  X_scaler = StandardScaler()
-  X_scaler.fit(X_train)
-
-  X_train_scaled = X_scaler.transform(X_train)
-  X_test_scaled = X_scaler.transform(X_test)
-  ```
-
 * There are 12 target activity labels that can be identified using the `value_counts` function.
 
   ```python
@@ -888,6 +886,17 @@ Open the solution and highlight the following points about the data preparation:
   stand_to_sit            47
   sit_to_stand            23
   Name: activity, dtype: int64
+  ```
+
+* While this particular dataset appears to already be in a normalized form, it may be safer to scale the input features using StandardScaler or MinMaxScaler.
+
+  ```python
+  # Scale the training and testing input features using StandardScaler
+  X_scaler = StandardScaler()
+  X_scaler.fit(X_train)
+
+  X_train_scaled = X_scaler.transform(X_train)
+  X_test_scaled = X_scaler.transform(X_test)
   ```
 
 * The target labels must be converted to one-hot encoded vectors before the model can be trained. The `OneHotEncoder` can be used to make this transformation.
@@ -936,7 +945,7 @@ Next, walk through the process of building and training the model. Highlight the
 
 Take a moment to show the model summary and the number of total trainable parameters in the model. Highlight the following:
 
-* This neural network is very large due to the number of input features and the choice of 100 hidden notes. Each input feature is connected to each hidden node, so that results in the total number of training parameters in the model.
+* This neural network is very large due to the number of input features and the choice of 100 hidden nodes. Each input feature is connected to each hidden node, so that results in the total number of training parameters in the model.
 
 * Dimensionality reduction techniques such as PCA may improve the model performance and model size.
 
@@ -989,7 +998,7 @@ In this activity, the instructor will conduct a demonstration of the homework.
 
 Open the lesson slides, move to the "Homework Demo" Section, and highlight the following:
 
-* Cryptocurrencies are gaining the attention of investors; however, due to its volatility and nature, conventional indicators and metrics are not always suitable.
+* Cryptocurrencies are gaining the attention of investors; however, due to its volatile nature, conventional indicators and metrics are not always suitable.
 
 * The [Crypto Fear and Greed Index (FNG)](https://alternative.me/crypto/fear-and-greed-index/) is an instrument used to assess cryptocurrencies.
 
@@ -997,7 +1006,7 @@ Open the lesson slides, move to the "Homework Demo" Section, and highlight the f
 
 * In this Unit's homework assignment, you will build and evaluate deep learning models, using both the FNG values and simple closing prices, to determine if the FNG indicator provides a better signal for cryptocurrencies than the normal closing price data.
 
-Open the homework solutions and explain to students that in this unit, they will learn how to deal with time series using Long short-term memory (LSTM) recurrent neural networks (RNN); this special type of neural networks will be a key part to develop the homework's solution.
+Open the homework solutions and explain to students that in this unit, they will learn how to deal with time series using Long short-term memory (LSTM) recurrent neural networks (RNN); this special type of neural network will be a key part in developing the homework's solution.
 
 Answer any questions before moving on.
 
@@ -1007,9 +1016,9 @@ Answer any questions before moving on.
 
 This day may be hard for students since several new concepts were covered, spend a few minutes with the class reflecting on what they learn today.
 
-* Recall students that modeling neural networks is part art and part science, so they should be patient while defining models.
+* Recall to students that modeling neural networks is part art and part science, so they should be patient while defining models.
 
-* There are several frameworks to implement neural networks, Keras is a business class framework they can trust in for prototyping or deploy production models.
+* There are several frameworks to implement neural networks.  Keras is a business class framework they can trust for prototyping or deploying production models.
 
 * Mastering neural networks take time; however, thanks to frameworks like Keras, you don't need to have a Ph.D. to start using neural networks to solve real-world problems.
 
