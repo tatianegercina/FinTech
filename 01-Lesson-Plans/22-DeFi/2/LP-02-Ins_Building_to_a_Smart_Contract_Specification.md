@@ -146,9 +146,9 @@ Walk through the `openSourceWork`method  interface defintion.
 
     // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
 
-    // Map the copyright_id to the given reference uri using the copyright_uri mapping.
+    // Map the copyright_id to a Work struct containing the given uri using the copyright_uri mapping.
 
-    // no need to set address(0) in the copyright_owner mapping as this is already the default for empty address types
+    // no need to set address(0) in the copyrights mapping as this is already the default for empty address types
     }
   ```
 
@@ -158,9 +158,9 @@ Walk through the `openSourceWork`method  interface defintion.
 
   * Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
 
-  * Map the copyright_id to the given reference uri using the copyright_uri mapping.
+  * Map the copyright_id to a Work struct containing the given uri using the copyright_uri mapping.
 
-  * Also make the observation that since this type of copyright is `open source` there is no need to set `address(0)` because in the copyright_owner mapping this is already the default for empty address types.
+  * Also make the observation that since this type of copyright is `open source` there is no need to set `address(0)` because in the copyrights mapping this is already the default for empty address types.
 
 Next add the code implementation for each commented step inside the `openSourceWork` method.
 
@@ -175,7 +175,7 @@ Next add the code implementation for each commented step inside the `openSourceW
     // Map the copyright_id to the given reference uri using the copyright_uri mapping.
     copyright_uri[id] = reference_uri;
 
-    // no need to set address(0) in the copyright_owner mapping as this is already the default for empty address types
+    // no need to set address(0) in the copyrights mapping as this is already the default for empty address types
 
     }
   ```
