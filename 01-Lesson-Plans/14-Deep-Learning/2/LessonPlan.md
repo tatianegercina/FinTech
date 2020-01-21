@@ -41,7 +41,7 @@ The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students to the second day of the deep learning unit! Open the lesson slides and move to the _Hello Deep Learning!_ slide and highlight the following:
+Welcome students to the second day of the deep learning unit! Open the lesson slides and move to the _What is Deep Learning?_ slide and highlight the following:
 
 * Today, we will dive into constructing deep learning models with real-world data.
 
@@ -51,11 +51,11 @@ Welcome students to the second day of the deep learning unit! Open the lesson sl
 
 Explain to students that deep neural networks allow creating computational models composed of multiple layers that can learn representations of data with multiple levels of abstraction.
 
-* For example, in image recognition, each layer can identify different features of an input image to decide what is it about.
+* For example, in image recognition, each layer can identify different features of an input image to decide what it's about.
 
-Explain to students that deep neural networks are fun! Open the [Quick, Drawn! web application](https://quickdraw.withgoogle.com) in your browser and slack out the URL to students. Explain to students that they are going to play a Pictionary-like game using the power of deep learning.
+Explain to students that deep neural networks are fun! Open the [Quick, Draw! web application](https://quickdraw.withgoogle.com) in your browser and slack out the URL to students. Explain to students that they are going to play a Pictionary-like game using the power of deep learning.
 
-* The Quick, Draw! an application that can identify an image from a trace.
+* _Quick, Draw!_ is an application that can identify an image from a trace.
 
 * The game asks you to draw something in less than 20 seconds while the deep learning algorithm tries to guess what the trace could be.
 
@@ -73,7 +73,7 @@ Using the slides, move to the _Understanding Deep Learning_ section and highligh
 
 * As we have seen, neural networks work by calculating the weights of various input data and passing them on to the next layer of neurons. This proceeds until we get to the output layer, which makes the final decision on the predicted category or numerical value of an instance.
 
-* The number of layers that are included in a neural network model determines whether it is a "deep" learning model or not. While definitions vary, networks with more than one "hidden" layer can be classified as "deep." The prevalence of these deep learning models have been facilitated in recent years by the abundance and decreasing cost of computing power.
+* The number of layers that are included in a neural network model determine whether it is a "deep" learning model or not. While definitions vary, networks with more than one "hidden" layer can be classified as "deep." The prevalence of these deep learning models have been facilitated in recent years by the abundance and decreasing cost of computing power.
 
 * The advantages of adding layers lie in the fact that each additional layer of neurons makes it possible to model more complex relationships and concepts. Imagine we are trying to classify whether a picture contains a cat. Conceptually, the first step in solving this problem might involve checking whether there exists some animal in the picture. Drilling deeper, the model might detect the presence of paws, pointed ears, etc. This breaking down of the problem continues until we reach the raw input of the model, which are the individual pixels in the picture. If this problem is correctly specified, each conceptual layer would need its own layer of neurons.
 
@@ -529,7 +529,7 @@ Type the following command in the first cell, and click on the _Run_ button or p
 
 * To add a code snippet, open the left bar and type the kind of task you want to accomplish, for example, creating a bar chart.
 
-* Once the code snippet appears, click in _INSERT_ to add the code to your notebook.
+* Once the code snippet appears, click on _INSERT_ to add the code to your notebook.
 
   ![Images/colab04.gif](Images/colab04.gif)
 
@@ -567,7 +567,7 @@ Explain to students that it's possible to install new libraries in Google Colab 
 !pip install <library_name>
 ```
 
-Add a new code text bellow the title cell of the notebook, type and execute the following code to install `hvplot` and make it run in Google Colab. Note that `bokeh` is also installed to ensure we are using the last version.
+Add a new code text below the title cell of the notebook, type and execute the following code to install `hvplot` and make it run in Google Colab. Note that `bokeh` is also installed to ensure we are using the last version.
 
 ```python
 !pip install hvplot
@@ -576,7 +576,7 @@ Add a new code text bellow the title cell of the notebook, type and execute the 
 
 ![Images/colab09.gif](Images/colab09.gif)
 
-* Once you installed these libraries, you may be asked to restart the restart your runtime.
+* Once you have installed these libraries, you may be asked to restart the restart your runtime.
 
   ![Images/colab10.png](Images/colab10.png)
 
@@ -608,7 +608,7 @@ Delete the cell where you run `pip` and run all the notebook's cells to show stu
 
 ![Images/colab14.gif](Images/colab14.gif)
 
-Explain to students that there are plenty of examples created by the Colab community using an assortment of data that are available through the platform. These Notebooks can be found in [Seedbank website](https://research.google.com/seedbank/). Slack out the Seedbank URL to students and highlight the following:
+Explain to students that there are plenty of examples created by the Colab community using an assortment of data that are available through the platform. These Notebooks can be found on the [Seedbank website](https://research.google.com/seedbank/). Slack out the Seedbank URL to students and highlight the following:
 
 * Projects can be searched by tags or keywords.
 
