@@ -35,11 +35,11 @@ Next go through each method definition inside the specification section of the E
 
 * When writing code to a particular specification it can be very helpful to write comments for each step that must be performed inside a functions body. In this activity we will take the contract specification and break down each methods business logic and backing data structures into descriptive comments.
 
-Walk through the copyright_uri interface defintion.
+Walk through the copyrights interface defintion.
 
-* copyright_uri
+* copyrights
 
-  * Accepts a given `copyright_id` as a `uint` and returns a `mapped string` for the copyright's `reference_uri`.
+  * Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyright's `owner` and `uri`.
 
   * The ERC333 spec defines the following interface for this method.
 
@@ -61,31 +61,65 @@ Walk through the copyright_uri interface defintion.
 
   * Remember that a variable defined with the public modifier automatically generates a getter function with defined parameters. In this case our publically defined mapping `copyright_uri` generates a getter function that accepts a `uint` and retruns a `string`.
 
-  * This is a great example of how a specifications defined interface may not always exactly match what the actual code will look like but rather the interface that will be generated.
+  * This is a great example of how a specification's defined interface may not always exactly match what the actual code will look like but rather the interface that will be generated.
 
-Walk through the `copyright_owner` interface defintion.
+Walk through the `copyrightWork` method interface defintion.
 
-* copyright_owner
-
-  * Accepts a given `copyright_id` as a `uint`and returns a `mapped address` for the `copyright_owner`.
-
-  * The ERC333 spec defines this interface for the `copyright_id` method.
-
-  ```solidity
-  function copyright_owner(uint copyright_id) public returns(address copyright_owner);
-  ```
-
-  Now demonstrate what this looks like implemented inside the smart contract
+* copyrightWork
 
   ```Solidity
-  mapping(uint => address) public copyright_owner;
+  function copyrightWork(string memory reference_uri) public
+  ```
+
+  * The ERC333 spec defines this interface for the `openSourceWork` method.
+
+  ```Solidity
+   function copyrightWork(string memory reference_uri) public {
+    }
   ```
 
   * This translates to code that looks like this inside the smart contract.
 
-  * Once again pay particular attention to the wording  "as a `uint` and returns a `mapped address`, this can be translated to "a `uint` mapped to an `address`", eg, a public mapping.
+* Now let's focus on the function's description and break it down into comments about what steps must take place inside the function.
 
-Walk through the `openSourceWork` interface defintion.
+* Generates a new `copyright_id` of type `uint` and maps it to a `Work struct` containing the given copyright `owner` and `uri`.
+
+```Solidity
+     function copyrightWork(string memory reference_uri) public {
+      // Increment the copyright_ids counter with .increment() method.
+
+     // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
+
+    // Map the copyright_id to a Work struct containing the given uri and the msg.sender using the copyright_uri mapping.
+
+    }
+  ```
+
+* The `openSourceWork` method description can be broken down into the following steps.
+
+  * Increment the copyright_ids counter with .increment() method.
+
+  * Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
+
+  * Map the copyright_id to a Work struct containing the given uri and the msg.sender using the copyright_uri mapping.
+
+Next add the code implementation for each commented step inside the `copyrightWork` method.
+
+```Solidity
+     function copyrightWork(string memory reference_uri) public {
+      // Increment the copyright_ids counter with .increment() method.
+      copyright_ids.increment();
+
+     // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
+     uint id = copyright_ids.current();
+
+    // Map the copyright_id to a Work struct containing the given uri and the msg.sender using the copyright_uri mapping.
+    copyrights[id] = Work(msg.sender, reference_uri);
+
+    }
+```
+
+Walk through the `openSourceWork`method  interface defintion.
 
 * openSourceWork
 
@@ -93,7 +127,7 @@ Walk through the `openSourceWork` interface defintion.
   function openSourceWork(string memory reference_uri) public
   ```
 
-  * The ERC333 spec defines this interface for the `openSourceWork`  method.
+  * The ERC333 spec defines this interface for the `openSourceWork` method.
 
   ```Solidity
     function openSourceWork(string memory reference_uri) public {
@@ -104,7 +138,7 @@ Walk through the `openSourceWork` interface defintion.
 
 * Now let's focus on the function's description and break it down into comments about what steps must take place inside the function.
 
-* Generates a new `copyright_id` of type `uint` and maps it to a given `reference_uri` by calling `copyright_uri`.
+* Generates a new `copyright_id` of type `uint` and maps it to a `Work struct` containing the `uri`.
 
 ```Solidity
     function openSourceWork(string memory reference_uri) public {
@@ -133,15 +167,12 @@ Next add the code implementation for each commented step inside the `openSourceW
 ```Solidity
     function openSourceWork(string memory reference_uri) public {
      // Increment the copyright_ids counter with .increment() method.
-
      copyright_ids.increment();
 
      // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
-
-    uint id = copyright_ids.current();
+     uint id = copyright_ids.current();
 
     // Map the copyright_id to the given reference uri using the copyright_uri mapping.
-
     copyright_uri[id] = reference_uri;
 
     // no need to set address(0) in the copyright_owner mapping as this is already the default for empty address types

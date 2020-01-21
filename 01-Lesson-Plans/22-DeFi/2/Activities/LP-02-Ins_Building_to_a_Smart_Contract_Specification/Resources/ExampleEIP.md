@@ -20,25 +20,17 @@ The following standard allows for the implementation of a standard API for copyr
 
   * The following specifications use syntax from Solidity 0.5.0 (or above)
 
-#### copyright_uri:
+#### copyrights:
 
-Accepts a given `copyright_id` as a `uint` and returns a mapped `string` for the copyright's `reference_uri`.
+Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyright's `owner` and `uri`.
 
 ```Solidity
 function copyright_uri(uint copyright_id) public returns(string memory reference_uri);
 ```
 
-#### copyright_owner:
-
-Accepts a given `copyright_id` as a `uint`and returns a mapped `address` for the `copyright_owner`.
-
-```solidity
-function copyright_owner(uint copyright_id) public returns(address copyright_owner);
-```
-
 #### copyrightWork:
 
-Generates a new `copyright_id` of type `uint` and maps it to a given `reference_uri` by calling `copyright_uri`. Also maps the genrated `copyright_id` to the address of the current `msg.sender` by calling `copyright_owner`.
+Generates a new `copyright_id` of type `uint` and maps it to a given `Work struct` containing the associated copyright `owner` and `uri`.
 
 Must fire the Copyright event.
 
@@ -48,7 +40,7 @@ function copyrightWork(string memory reference_uri) public
 
 ### openSourceWork
 
-Generates a new `copyright_id` of type `uint` and maps it to a given `reference_uri` by calling `copyright_uri`.
+Generates a new `copyright_id` of type `uint` and maps it to a given `uri` by calling `copyright_uri`.
 
 ```Solidity
 function openSourceWork(string memory reference_uri) public
@@ -59,7 +51,7 @@ function openSourceWork(string memory reference_uri) public
 Re-maps a given copyright ID to the 0x0000000000000000000000000000000000000000 address in order to "open source" the copyright, and prevent anyone from modifying it further.
 
 ```Solidity
-function renounceCopyrightOwnership(uint token_id) external;
+function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id)
 ```
 
 #### transferCopyrightOwnership
