@@ -148,7 +148,7 @@ Walk through the `openSourceWork`method  interface defintion.
 
     // Map the copyright_id to a Work struct containing the given uri using the copyright_uri mapping.
 
-    // no need to set address(0) in the copyrights mapping as this is already the default for empty address types
+    // No need to set address(0) in the copyrights mapping as this is already the default for empty address types
     }
   ```
 
@@ -175,7 +175,7 @@ Next add the code implementation for each commented step inside the `openSourceW
     // Map the copyright_id to the given reference uri using the copyright_uri mapping.
     copyright_uri[id] = reference_uri;
 
-    // no need to set address(0) in the copyrights mapping as this is already the default for empty address types
+    // No need to set address(0) in the copyrights mapping as this is already the default for empty address types
 
     }
   ```
