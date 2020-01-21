@@ -636,7 +636,7 @@ In this activity, students will use the text classification demo notebook to und
 
 ### 12. Instructor Do: Review Deep Learning on the Web (15 min)
 
-Open the [Text Classification with Movie Reviews notebook](https://colab.research.google.com/github/tensorflow/docs/blob/r2.0rc/site/en/r2/tutorials/keras/basic_text_classification.ipynb).
+Open the [Text Classification with Movie Reviews notebook](https://research.google.com/seedbank/seed/classify_movie_reviews_using_tfkeras).
 
 Walk students through the notebook, pausing to highlight the various sections of code.
 
