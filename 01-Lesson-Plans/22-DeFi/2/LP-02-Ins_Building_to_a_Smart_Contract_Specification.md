@@ -41,11 +41,11 @@ Walk through the copyrights interface defintion.
 
   * Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyright's `owner` and `uri`.
 
-  * The ERC333 spec defines the following interface for this method.
-
   ```Solidity
   function copyright_uri(uint copyright_id) public returns(string memory reference_uri);
   ```
+
+  * The ERC333 spec defines this interface for the copyrights method.
 
   Now demonstrate what this looks like implemented inside the smart contract
 
