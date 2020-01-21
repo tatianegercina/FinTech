@@ -561,7 +561,7 @@ Run all the cells by clicking on the _Runtime_ menu and choose the _Run all_ opt
 
 * After a few seconds, all of the cells will run on the Google cloud!
 
-* The default settings for Google Colab currently install TensorFlow v1, however this will change in the near future.  Students may get the following error after running their imports, despite having upgraded or installed Tensorflow v2:
+* The default settings for Google Colab currently install TensorFlow v1, though this will change in the near future.  Students may get the following error after running their imports, despite having upgraded or installed Tensorflow v2:
 ![Images/colab02.png](Images/colab16.png)
 
 * Though the notebook should still run all cells as intended, the defaults can be updated to avoid potential issues in the future.  This can be done by running the following code, selecting `y` when prompted, and then restarting the runtime:
