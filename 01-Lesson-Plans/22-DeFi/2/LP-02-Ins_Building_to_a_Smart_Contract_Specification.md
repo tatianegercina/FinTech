@@ -130,8 +130,8 @@ Walk through the `openSourceWork`method  interface defintion.
   * The ERC333 spec defines this interface for the `openSourceWork` method.
 
   ```Solidity
-    function openSourceWork(string memory reference_uri) public {
-    }
+  function openSourceWork(string memory reference_uri) public {
+  }
   ```
 
   * This translates to code that looks  like this inside the smart contract.
