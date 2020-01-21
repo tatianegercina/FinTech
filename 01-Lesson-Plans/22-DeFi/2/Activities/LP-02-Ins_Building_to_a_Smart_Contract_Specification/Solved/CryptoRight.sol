@@ -41,9 +41,15 @@ contract CryptoRight is ICryptoRight {
         uint id = copyright_ids.current();
 
         copyrights[id].uri = reference_uri;
-        // no need to set address(0) in the copyright_owner mapping as this is already the default for empty address types
+        // no need to set address(0) in the copyrights mapping as this is already the default for empty address types
 
         emit OpenSource(id, reference_uri);
+    }
+
+    function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
+        copyrights[copyright_id].owner = new_owner;
+
+        emit Transfer(copyright_id, new_owner);
     }
 
     function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
@@ -51,12 +57,6 @@ contract CryptoRight is ICryptoRight {
         transferCopyrightOwnership(copyright_id, address(0));
 
         emit OpenSource(copyright_id, copyrights[copyright_id].uri);
-    }
-
-    function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
-        copyrights[copyright_id].owner = new_owner;
-
-        emit Transfer(copyright_id, new_owner);
     }
 
 }
