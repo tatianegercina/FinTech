@@ -48,7 +48,7 @@ function openSourceWork(string memory reference_uri) public
 
 #### renounceCopyrightOwnership
 
-Re-maps a given copyright ID to the 0x0000000000000000000000000000000000000000 address in order to "open source" the copyright, and prevent anyone from modifying it further.
+Re-maps a given copyright_id to the 0x0000000000000000000000000000000000000000 address in order to "open source" the copyright, and prevent anyone from modifying it further.
 
 ```Solidity
 function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id)
