@@ -9,9 +9,12 @@ contract CryptoRight is ICryptoRight {
 
     Counters.Counter copyright_ids;
 
-    mapping(uint => string) public copyright_uri;
+    struct Work {
+        address owner;
+        string uri;
+    }
 
-    mapping(uint => address) public copyright_owner;
+    mapping(uint => Work) public copyrights;
 
     event Copyright(uint copyright_id, address owner, string reference_uri);
 
@@ -20,7 +23,7 @@ contract CryptoRight is ICryptoRight {
     event Transfer(uint copyright_id, address new_owner);
 
     modifier onlyCopyrightOwner(uint copyright_id) {
-        require(copyright_owner[copyright_id] == msg.sender, "You do not have permission to alter this copyright!");
+        require(copyrights[copyright_id].owner == msg.sender, "You do not have permission to alter this copyright!");
         _;
     }
 
@@ -28,8 +31,7 @@ contract CryptoRight is ICryptoRight {
         copyright_ids.increment();
         uint id = copyright_ids.current();
 
-        copyright_uri[id] = reference_uri;
-        copyright_owner[id] = msg.sender;
+        copyrights[id] = Work(msg.sender, reference_uri);
 
         emit Copyright(id, msg.sender, reference_uri);
     }
@@ -38,7 +40,7 @@ contract CryptoRight is ICryptoRight {
         copyright_ids.increment();
         uint id = copyright_ids.current();
 
-        copyright_uri[id] = reference_uri;
+        copyrights[id].uri = reference_uri;
         // no need to set address(0) in the copyright_owner mapping as this is already the default for empty address types
 
         emit OpenSource(id, reference_uri);
@@ -48,11 +50,11 @@ contract CryptoRight is ICryptoRight {
         // set to 0x0000000000000000000000000000000000000000 address in order to "open source" the copyright, and prevent anyone from modifying it further.
         transferCopyrightOwnership(copyright_id, address(0));
 
-        emit OpenSource(copyright_id, copyright_uri[copyright_id]);
+        emit OpenSource(copyright_id, copyrights[copyright_id].uri);
     }
 
     function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
-        copyright_owner[copyright_id] = new_owner;
+        copyrights[copyright_id].owner = new_owner;
 
         emit Transfer(copyright_id, new_owner);
     }
