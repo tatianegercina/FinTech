@@ -38,7 +38,7 @@ Must fire the Copyright event.
 function copyrightWork(string memory reference_uri) public
 ```
 
-### openSourceWork
+#### openSourceWork
 
 Generates a new `copyright_id` of type `uint` and maps it to a given `uri` by calling `copyright_uri`.
 
