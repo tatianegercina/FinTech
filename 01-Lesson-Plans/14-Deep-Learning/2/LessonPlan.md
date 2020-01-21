@@ -561,6 +561,22 @@ Run all the cells by clicking on the _Runtime_ menu and choose the _Run all_ opt
 
 * After a few seconds, all of the cells will run on the Google cloud!
 
+* The default settings for Google Colab currently install TensorFlow v1, however this will change in the near future.  Students may get the following error after running their imports, despite having upgraded or installed Tensorflow v2:
+![Images/colab02.png](Images/colab16.png)
+
+* Though the notebook should still run all cells as intended, the defaults can be updated to avoid potential issues in the future.  This can be done by running the following code, selecting `y` when prompted, and then restarting the runtime:
+```python
+!pip uninstall tensorflow
+!pip install tensorflow==2.0.0
+```
+
+* Students can check then verify their Tensorflow version using the following code:
+```python
+import tensorflow as tf
+print(tf.__version__)
+```
+
+
 Explain to students that it's possible to install new libraries in Google Colab by running the following command
 
 ```python
