@@ -56,7 +56,7 @@ function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner
 
 #### transferCopyrightOwnership
 
-Re-maps a given copyright ID to a new copyright owner.
+Re-maps a given copyright_id to a new copyright owner.
 
 ```Solidity
    function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id)

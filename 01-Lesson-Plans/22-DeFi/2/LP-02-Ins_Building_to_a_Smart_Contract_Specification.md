@@ -179,3 +179,42 @@ Next add the code implementation for each commented step inside the `openSourceW
 
     }
   ```
+
+Walk through the `transferCopyrightOwnership` method  interface defintion.
+
+* transferCopyrightOwnership
+
+```Solidity
+function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
+```
+
+  * The ERC333 spec defines this interface for the `transferCopyrightOwnership` method.
+
+  ```Solidity
+     function transferCopyrightOwnership(uint
+    }
+  ```
+
+  * This translates to code that looks like this inside the smart contract.
+
+* Now let's focus on the function's description and break it down into comments about what steps must take place inside the function.
+
+* Re-maps a given copyright_id to a new copyright owner.
+
+```Solidity
+function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
+        //Re-maps a given copyright_id to a new copyright owner.
+
+    }
+```
+
+* As you can see the `transferCopyrightOwnership` method is relatively simple, the description can be copied into a single comment consisting of the exact description text.
+
+Next add the code implementation for each commented step inside the `transferCopyrightOwnership` method.
+
+```Solidity
+function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
+        //Re-maps a given copyright_id to a new copyright owner.
+        copyrights[copyright_id].owner = new_owner;
+    }
+```
