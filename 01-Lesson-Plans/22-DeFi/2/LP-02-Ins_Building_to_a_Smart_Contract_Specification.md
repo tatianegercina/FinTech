@@ -85,10 +85,10 @@ Walk through the `copyrightWork` method interface defintion.
 * Generates a new `copyright_id` of type `uint` and maps it to a `Work struct` containing the given copyright `owner` and `uri`.
 
 ```Solidity
-     function copyrightWork(string memory reference_uri) public {
-      // Increment the copyright_ids counter with .increment() method.
+    function copyrightWork(string memory reference_uri) public {
+    // Increment the copyright_ids counter with .increment() method.
 
-     // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
+    // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
 
     // Map the copyright_id to a Work struct containing the given uri and the msg.sender using the copyright_uri mapping.
 
@@ -106,12 +106,12 @@ Walk through the `copyrightWork` method interface defintion.
 Next add the code implementation for each commented step inside the `copyrightWork` method.
 
 ```Solidity
-     function copyrightWork(string memory reference_uri) public {
-      // Increment the copyright_ids counter with .increment() method.
-      copyright_ids.increment();
+    function copyrightWork(string memory reference_uri) public {
+    // Increment the copyright_ids counter with .increment() method.
+    copyright_ids.increment();
 
-     // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
-     uint id = copyright_ids.current();
+    // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
+    uint id = copyright_ids.current();
 
     // Map the copyright_id to a Work struct containing the given uri and the msg.sender using the copyright_uri mapping.
     copyrights[id] = Work(msg.sender, reference_uri);
@@ -142,9 +142,9 @@ Walk through the `openSourceWork`method  interface defintion.
 
 ```Solidity
     function openSourceWork(string memory reference_uri) public {
-      // Increment the copyright_ids counter with .increment() method.
+    // Increment the copyright_ids counter with .increment() method.
 
-     // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
+    // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
 
     // Map the copyright_id to the given reference uri using the copyright_uri mapping.
 
@@ -166,11 +166,11 @@ Next add the code implementation for each commented step inside the `openSourceW
 
 ```Solidity
     function openSourceWork(string memory reference_uri) public {
-     // Increment the copyright_ids counter with .increment() method.
-     copyright_ids.increment();
+    // Increment the copyright_ids counter with .increment() method.
+    copyright_ids.increment();
 
-     // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
-     uint id = copyright_ids.current();
+    // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
+    uint id = copyright_ids.current();
 
     // Map the copyright_id to the given reference uri using the copyright_uri mapping.
     copyright_uri[id] = reference_uri;
