@@ -59,7 +59,7 @@ function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner
 Re-maps a given copyright_id to a new copyright owner.
 
 ```Solidity
-   function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id)
+function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id)
 ```
 
 ### Events
@@ -69,7 +69,7 @@ Re-maps a given copyright_id to a new copyright owner.
 MUST trigger whenever ownership of a copyright is transferred.
 
 ```Solidity
-    event Copyright(uint copyright_id, address owner, string reference_uri);
+event Copyright(uint copyright_id, address owner, string reference_uri);
 ```
 
 ### OpenSource
