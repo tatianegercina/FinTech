@@ -111,6 +111,11 @@ contract CryptoRight is ICryptoRight {
 
     Counters.Counter copyright_ids;
 
+    struct Work {
+        address owner;
+        string uri;
+    }
+
     mapping(uint => Work) public copyrights;
 
     function copyrightWork(string memory reference_uri) public {
