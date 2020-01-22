@@ -66,7 +66,7 @@ function transferCopyrightOwnership(uint copyright_id, address new_owner) public
 
 #### Copyright
 
-MUST trigger whenever ownership of a copyright is transferred.
+MUST trigger whenever a new copyrighted work is registered.
 
 ```Solidity
 event Copyright(uint copyright_id, address owner, string reference_uri);
@@ -74,7 +74,7 @@ event Copyright(uint copyright_id, address owner, string reference_uri);
 
 ### OpenSource
 
-MUST trigger whenever a new OpenSource copyright is created.
+MUST trigger whenever a new open source work is registered.
 
 ```Solidity
 event OpenSource(uint copyright_id, string reference_uri);

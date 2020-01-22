@@ -9,13 +9,6 @@ contract CryptoRight is ICryptoRight {
 
     Counters.Counter copyright_ids;
 
-    struct Work {
-        address owner;
-        string uri;
-    }
-
-    mapping(uint => Work) public copyrights;
-
     event Copyright(uint copyright_id, address owner, string reference_uri);
 
     event OpenSource(uint copyright_id, string reference_uri);
@@ -26,6 +19,13 @@ contract CryptoRight is ICryptoRight {
         require(copyrights[copyright_id].owner == msg.sender, "You do not have permission to alter this copyright!");
         _;
     }
+
+    struct Work {
+        address owner;
+        string uri;
+    }
+
+    mapping(uint => Work) public copyrights;
 
     function copyrightWork(string memory reference_uri) public {
         copyright_ids.increment();
