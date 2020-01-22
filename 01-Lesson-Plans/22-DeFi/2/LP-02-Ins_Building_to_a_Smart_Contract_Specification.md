@@ -44,7 +44,7 @@ Walk through the copyrights method interface defintion.
   Inside the CryptoRight contract create a new struct named `Work`. Inside this struct create an `address` attribute named `owner` and a `string` attribute named `uri`.
 
   ```Solidity
-      struct Work {
+    struct Work {
         address owner;
         string uri;
     }
@@ -154,7 +154,7 @@ Next add the code implementation for each commented step inside the `copyrightWo
     }
 ```
 
-Walk through the `openSourceWork`method  interface defintion.
+Walk through the `openSourceWork` method interface defintion.
 
 * openSourceWork
 
@@ -169,9 +169,9 @@ Walk through the `openSourceWork`method  interface defintion.
   }
   ```
 
-  * This translates to code that looks  like this inside the smart contract.
+  * This translates to code that looks like this inside the smart contract.
 
-* Now let's focus on the function's description and break it down into comments about what steps must take place inside the function.
+* Now let's focus on the `openSourceWork` function's description and break it down into comments about what steps must take place inside the function.
 
 * Generates a new `copyright_id` of type `uint` and maps it to a `Work struct` containing the `uri`.
 
@@ -225,25 +225,37 @@ function transferCopyrightOwnership(uint copyright_id, address new_owner) public
 
   * The ERC333 spec defines this interface for the `transferCopyrightOwnership` method.
 
-  ```Solidity
-     function transferCopyrightOwnership(uint
-    }
-  ```
+  * Now let's first focus on the second half of the `transferCopyrightOwnership` method's description "This function must only be callable by the `address` of the `owner` of the given `copyright_id`".
 
-  * This translates to code that looks like this inside the smart contract.
-
-* Now let's focus on the function's description and break it down into comments about what steps must take place inside the function.
-
-* Re-maps a given copyright_id to a new copyright owner.
+Add a modifier between the `copyrights mapping` and `copyrightWork` function named `onlyCopyrightOwner`. Have the modifier accept a given `uint` named `copyright_id` and inside the modifer body add a `require statment` that checks if the given. `copyrights_id` is equal to the current `msg.sender`.
 
 ```Solidity
-function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
-        //Re-maps a given copyright_id to a new copyright owner.
-
+    modifier onlyCopyrightOwner(uint copyright_id) {
+        require(copyrights[copyright_id].owner == msg.sender, "You do not have permission to alter this copyright!");
+        _;
     }
 ```
 
-* As you can see the `transferCopyrightOwnership` method is relatively simple, the description can be copied into a single comment consisting of the exact description text.
+* Here we are adding a modifier accept with a  `require statment` that checks if the given. `copyrights_id` is equal to the current `msg.sender`.
+
+Add the`transferCopyrightOwnership` function defintion with the included `onlyCopyrightOwner`   modifier.
+
+```Solidity
+    function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
+    }
+```
+
+Add the following comments to the `transferCopyrightOwnership` function body.
+
+```Solidity
+    function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
+        // Re-maps a given copyright_id to a new copyright owner.
+    }
+```
+
+* Now let's take a look at the first part of the `transferCopyrightOwnership` function defintion and break it down into comments about what steps must take place inside the function.
+
+* As you can see the `transferCopyrightOwnership` method is relatively simple, the first part of the description can be copied into a single comment consisting of the exact text.
 
 Next add the code implementation for each commented step inside the `transferCopyrightOwnership` method.
 
