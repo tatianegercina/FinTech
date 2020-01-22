@@ -338,6 +338,13 @@ Define the `Copyright` event above the modifier. This section of your contract s
 
     Counters.Counter copyright_ids;
 
+    struct Work {
+        address owner;
+        string uri;
+    }
+
+    mapping(uint => Work) public copyrights;
+
     event Copyright(uint copyright_id, address owner, string reference_uri);
 
     modifier onlyCopyrightOwner(uint copyright_id) {
