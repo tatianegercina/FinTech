@@ -1,6 +1,6 @@
 ### 2. Building to a Smart Contract Specification : (15 min)
 
-Instructor will discuss the process of breaking down the elements of a smart contract specification, such as it's interface, and how to turn it into functioning code. The EIP provides an example interface file for testing the contract linked below.
+The instructor will discuss the process of breaking down the elements of a smart contract specification, such as it's interface, and how to turn it into functioning code. The EIP provides an example interface file for testing the contract linked below.
 
 **Files:**
 
@@ -16,7 +16,7 @@ Begin by opening the [Example CryptoRight EIP](Activities/LP-02-Ins_Building_to_
 
 * In earlier classes we took a look at a variety of the EIP specifications located on [https://eips.ethereum.org/EIPS](https://eips.ethereum.org/EIPS)
 
-* Today we will be taking a new example EIP and break it down; translating it into functioning code.
+* Today we will take a new example EIP, break it down and translate it into functioning code.
 
 * Let's begin by identifying the goal of the current contract This will allow us to gain scope on the logic that we will be implementing.
 
@@ -24,9 +24,9 @@ Begin by opening the [Example CryptoRight EIP](Activities/LP-02-Ins_Building_to_
 
 Together with the class read the `Simple Summary`, `Abstract` and `Motivation` sections of the EIP.
 
-Open [Remix](https:://remix.ethereum.org/) in your web browser and create two new contracts the first named `ICryptoRight.sol`  and the second named `CryptoRight.sol`.
+Open [Remix](https:://remix.ethereum.org/) in your web browser and create two new contracts the first-named `ICryptoRight.sol`  and the second named `CryptoRight.sol`.
 
-Inside `ICryptoRight.sol` paste the contents of [ICryptoRight.sol](Activities/LP-02-Ins_Building_to_a_Smart_Contract_Specification/Solved/ICryptoRight.sol).
+Inside `ICryptoRight.sol` paste the contents of [ICryptoRight.sol](Activities/LP-02-Ins_Building_to_a_Smart_Contract_Specification/Resources/ICryptoRight.sol) from the resources folder.
 
 Inside `CryptoRight.sol` define a new contract named `CryptoRight` that extends the `ICryptoRight` interface.
 
@@ -39,22 +39,22 @@ contract CryptoRight is ICryptoRight {
 }
 ```
 
-Next pull up remix side by side with the [Example CryptoRight EIP](Activities/LP-02-Ins_Building_to_a_Smart_Contract_Specification/Resources/ExampleEIP.md) and go through each method definition/descripton inside the specification section of the EIP document while scaffolding out each function with the class in realtime.
+Next, pull up remix side by side with the [Example CryptoRight EIP](Activities/LP-02-Ins_Building_to_a_Smart_Contract_Specification/Resources/ExampleEIP.md) and go through each method definition/description inside the specification section of the EIP document while scaffolding out each function with the class in realtime.
 
 * Now that we've familiarized ourselves with the goal of the example ERC333 copyright contract lets define the structure of our contract and scaffold out each function's business logic.
 
-* When writing code to a particular specification it can be very helpful to write comments for each step that must be performed inside a function's body. In this activity we will take the contract specification and break down each methods business logic and backing data structures into descriptive comments.
+* When writing code to a particular specification it can be very helpful to write comments for each step that must be performed inside a function's body. In this activity, we will take the contract specification and break down each of the method's business logic and backing data structures into descriptive comments.
 
-Read aloud thee `copyrights` method's interface defintion and description.
+Read aloud the `copyrights` method's interface definition and description.
 
 * copyrights
 
 * Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyright's `owner` and `uri`.
 
-Inside the Crypto right contract define the copyright methods
+Highlight the CryptoRight contract interface definition.
 
 ```Solidity
-  function copyright(uint copyright_id) public returns(string memory reference_uri);
+function copyright(uint copyright_id) public returns(string memory reference_uri);
 ```
 
 * The ERC333 spec defines this interface for the copyrights method.
@@ -62,7 +62,7 @@ Inside the Crypto right contract define the copyright methods
 Now demonstrate what this looks like implemented inside the smart contract.
 
 ```Solidity
-  mapping(uint => Work) public copyrights;
+mapping(uint => Work) public copyrights;
 ```
 
   * The details of the method were "Accepts a given `copyright_id` as a `uint` and returns a `mapped string`".
@@ -70,24 +70,24 @@ Now demonstrate what this looks like implemented inside the smart contract.
 
   * Pay particular attention to the wording  "as a `uint` and returns a `mapped string`, this can be translated to "a `uint` mapped to a `string`", eg, a mapping.
 
-  * Remember that a variable defined with the public modifier automatically generates a getter function with defined parameters. In this case our publically defined mapping `copyrights` generates a getter function that accepts a `uint` and retruns a `Work` struct.
+  * Remember that a variable defined with the public modifier automatically generates a getter function with defined parameters. In this case, our publically defined mapping `copyrights` generates a getter function that accepts a `uint` and returns a `Work` struct.
 
-  * This is a great example of how a specification's defined interface may not always exactly match what the actual code will look like but rather the interface that will be generated. Interface being both a defined function and the concept of what input/ouput for a given API is expected to be present.
+  * This is a great example of how a specification's defined interface may not always exactly match what the actual code will look like but rather the interface that will be generated. `Interface` being both a defined function and the concept of what input/output for a given `API` is expected to be present.
 
-Inside the CryptoRight contract under the `copyright_ids` coutner create a new struct named `Work`. Inside this struct create an `address` attribute named `owner` and a `string` attribute named `uri`.
+Inside the CryptoRight contract under the `copyright_ids` coutner create a new `struct` named `Work`. Inside this `struct` create an `address` attribute named `owner` and a `string` attribute named `uri`.
 
   ```Solidity
-    struct Work {
-        address owner;
-        string uri;
-    }
+  struct Work {
+      address owner;
+      string uri;
+  }
   ```
 
-* We've created our map that reference's a custom datatype named `Work`, but now we have to actually define that datatype with a struct.
+* We've created our map that reference's a custom datatype named `Work`, but now we have to define that datatype with a `struct`.
 
 * According to the `copyrights` method's spec we need a "`struct` containing the copyright's `owner` and `uri`".
 
-Read aloud the `copyrightWork` method interface defintion and description.
+Read aloud the `copyrightWork` method interface definition and description.
 
 * copyrightWork
 
@@ -104,7 +104,7 @@ Add the `copyrightWork` function to the contract.
   }
   ```
 
-  * This translates to a function defintion that looks like this inside the smart contract.
+  * This translates to a function definition that looks like this inside the smart contract.
 
 * Now let's focus on the function's description and break it down into comments about what steps must take place inside the function.
 
@@ -112,7 +112,7 @@ Highlight the `copyrightWork` method's description.
 
 * Generates a new `copyright_id` of type `uint` and maps it to a `Work struct` containing the given copyright `owner` and `uri`.
 
-Add the imports for `SafeMath counters` under the `pragma` and bind the `counter library` to the `Counter` datatype below the contrat defintion.
+Add the imports for `SafeMath counters` under the `pragma` and bind the `counter library` to the `Counter` datatype below the contract definition.
 
 ```Solidity
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/drafts/Counters.sol";
@@ -137,6 +137,8 @@ contract CryptoRight is ICryptoRight {
 
 * The `copyrightWork` method spec says that we have to generate an `id` for our copyrights but it doesn't specify how. This leaves it up to us to decide. For this contract let's use a Safemath counter and make each id the incremented value from the counter.
 
+Add the following comments inside the body of the `copyrightWork` function.
+
 ```Solidity
     function copyrightWork(string memory reference_uri) public {
     // Increment the copyright_ids counter with .increment() method.
@@ -150,13 +152,13 @@ contract CryptoRight is ICryptoRight {
 
 * The `copyrightWork` method description can be broken down into the following steps.
 
-  * Increment the copyright_ids counter with .increment() method.
+  * Increment the `copyright_ids` counter with `.increment()` method.
 
-  * Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
+  * Define a new `uint` for the `current_id` and set it to the current value of the `copyright_ids` counter using the `.current()` method.
 
-  * Map the copyright_id to a Work struct containing the given uri and the msg.sender using the copyrights mapping.
+  * Map the `copyright_id` to a `Work struct` containing the given `uri` and the `msg.sender` using the `copyrights` mapping.
 
-Next add the code implementation for each commented step inside the `copyrightWork` method.
+Next, add the code implementation for each commented step inside the `copyrightWork` method.
 
 ```Solidity
     function copyrightWork(string memory reference_uri) public {
@@ -172,7 +174,7 @@ Next add the code implementation for each commented step inside the `copyrightWo
     }
 ```
 
-Read aloud the `openSourceWork` method interface defintion.
+Read aloud the `openSourceWork` method interface definition.
 
 * openSourceWork
 
@@ -217,7 +219,7 @@ Add the following comments to the `openSourceWork` function body.
 
   * Also make the observation that since this type of copyright is `open source` there is no need to set `address(0)` because in the copyrights mapping this is already the default for empty address types.
 
-Next add the code implementation for each commented step inside the `openSourceWork` method.
+Next, add the code implementation for each commented step inside the `openSourceWork` method.
 
 ```Solidity
     function openSourceWork(string memory reference_uri) public {
@@ -247,7 +249,7 @@ function transferCopyrightOwnership(uint copyright_id, address new_owner) public
 
   * Now let's first focus on the second half of the `transferCopyrightOwnership` method's description "This function must only be callable by the `address` of the `owner` of the given `copyright_id`".
 
-Add a modifier between the `copyrights mapping` and `copyrightWork` function named `onlyCopyrightOwner`. Have the modifier accept a given `uint` named `copyright_id` and inside the modifer body add a `require statment` that checks if the given. `copyrights_id` is equal to the current `msg.sender`.
+Add a modifier between the `copyrights mapping` and `copyrightWork` function named `onlyCopyrightOwner`. Have the modifier accept a given `uint` named `copyright_id` and inside the modifier body add a `require statment` that checks if the given. `copyrights_id` is equal to the current `msg.sender`.
 
 ```Solidity
     modifier onlyCopyrightOwner(uint copyright_id) {
@@ -273,11 +275,11 @@ Add the following comments to the `transferCopyrightOwnership` function body.
     }
 ```
 
-* Now let's take a look at the first part of the `transferCopyrightOwnership` function defintion and break it down into comments about what steps must take place inside the function.
+* Now let's take a look at the first part of the `transferCopyrightOwnership` function definition and break it down into comments about what steps must take place inside the function.
 
 * As you can see the `transferCopyrightOwnership` method is relatively simple, the first part of the description can be copied into a single comment consisting of the exact text.
 
-Next add the code implementation for each commented step inside the `transferCopyrightOwnership` method.
+Next, add the code implementation for each commented step inside the `transferCopyrightOwnership` method.
 
 ```Solidity
 function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
@@ -286,9 +288,9 @@ function transferCopyrightOwnership(uint copyright_id, address new_owner) public
     }
 ```
 
-* Here we are passing our given `copyright_id` into our `copyrights mapping` in order to set the `owner` attribute to the `address` of the given `new_owner`
+* Here we are passing our given `copyright_id` into our `copyrights mapping` to set the `owner` attribute to the `address` of the given `new_owner`
 
-Read aloud the `renounceCopyrightOwnership` method interface defintion and description.
+Read aloud the `renounceCopyrightOwnership` method interface definition and description.
 
 * renounceCopyrightOwnership
 
@@ -307,11 +309,11 @@ Add the `renounceCopyrightOwnership` function defintion with the `onlyCopyrightO
 
   * Let's once again focus on the second part of the `renounceCopyrightOwnership` method's description. "This function must only be callable by the address of the owner of the given copyright_id".
 
-  * However this time around we already have our `onlyCopyrightOwner` defined. let's add it to our function defintion.
+  * However this time around we already have our `onlyCopyrightOwner` defined. let's add it to our function definition.
 
 * Now let's focus on the second part of the function's description and break it down into comments about what steps must take place inside the function.
 
-* Re-maps a given copyright ID to the 0x0000000000000000000000000000000000000000 address in order to "open source" the copyright, and prevent anyone from modifying it further.
+* Re-maps a given copyright ID to the 0x0000000000000000000000000000000000000000 address to "open source" the copyright, and prevent anyone from modifying it further.
 
 ```Solidity
     function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
@@ -321,9 +323,9 @@ Add the `renounceCopyrightOwnership` function defintion with the `onlyCopyrightO
 
 * Here the important part of the method descripton is "Re-maps a given copyright_id to the 0x0000000000000000000000000000000000000000".
 
-* Remember we've already impelmented a function that is able to re-map a copyright to a new owner's address called `transferCopyrightOwnership`.
+* Remember we've already implemented a function that can re-map a copyright to a new owner's address called `transferCopyrightOwnership`.
 
-Next add the code implementation for each commented step inside the `renounceCopyrightOwnership` method.
+Next, add the code implementation for each commented step inside the `renounceCopyrightOwnership` method.
 
 ```Solidity
     function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
@@ -335,11 +337,11 @@ Next add the code implementation for each commented step inside the `renounceCop
 
 * Here we call the previously `transferCopyrightOwnership` method passing it the given `copyright_id` and `address(0)`.
 
-* Mapping something to `address(0)` in effect makes it so that nonone can ever control that copyright, eg, it becomes `open source`.
+* Mapping something to `address(0)` in effect makes it so that no-one can ever control that copyright, eg, it becomes `open source`.
 
-Now that all of the method defintions with their accompanying bussiness logic have been implemented. Go back over the contract in remix and implement the defined `events` within the contract specification's events section.
+Now that all of the method definitions with their accompanying business logic have been implemented. Go back over the contract in remix and implement the defined `events` within the contract specification's events section.
 
-Read aloud the `Copyright` event interface defintion and description.
+Read aloud the `Copyright` event interface definition and description.
 
 ```Solidity
 event Copyright(uint copyright_id, address owner, string uri);
@@ -383,7 +385,7 @@ emit Copyright(id, msg.sender, reference_uri);
 
 * This should look something like this.
 
-Read aloud the `OpenSource` event interface defintion and description.
+Read aloud the `OpenSource` event interface definition and description.
 
 ```Solidity
 event OpenSource(uint copyright_id, string reference_uri);
@@ -391,9 +393,9 @@ event OpenSource(uint copyright_id, string reference_uri);
 
 * The copyright event requires a `uint copy_right_id`, and a `string reference_uri`.
 
-* According to the `OpenSource` event's description it MUST trigger whenever a new open source work is registered.
+* According to the `OpenSource` event's description it MUST trigger whenever a new open-source work is registered.
 
-Add the `OpenSource` event defintion below the `Copyright` event.
+Add the `OpenSource` event definition below the `Copyright` event.
 
 ```Solidity
 event Copyright(uint copyright_id, address owner, string uri);
@@ -439,7 +441,7 @@ On the last line inside the body of the `renounceCopyrightOwnership` function `e
 
 * Inside the `renounceCopyrightOwnership` function we emit the `OpenSource` event like this.
 
-Read aloud the `Transfer` event interface defintion and description.
+Read aloud the `Transfer` event interface definition and description.
 
 ```Solidity
 event Transfer(uint copyright_id, address new_owner);
@@ -449,7 +451,7 @@ event Transfer(uint copyright_id, address new_owner);
 
 * According to the `Transfer` event's description it MUST trigger whenever copyright ownership is transferred.
 
-Add the `Transfer` event defintion below the `OpenSource` event.
+Add the `Transfer` event definition below the `OpenSource` event.
 
 ```Solidity
 event Copyright(uint copyright_id, address owner, string uri);
@@ -473,3 +475,5 @@ On the last line inside the body of the `transferCopyrightOwnership` function `e
         emit Transfer(copyright_id, new_owner);
     }
 ```
+
+* We've now completed the code for an implementation of the Example ER333 copyright contract specification.
