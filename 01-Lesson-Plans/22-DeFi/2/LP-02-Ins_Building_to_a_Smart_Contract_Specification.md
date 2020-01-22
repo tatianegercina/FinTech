@@ -266,7 +266,7 @@ Next add the code implementation for each commented step inside the `transferCop
 
 ```Solidity
 function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
-        //Re-maps a given copyright_id to a new copyright owner.
+        // Re-maps a given copyright_id to a new copyright owner.
         copyrights[copyright_id].owner = new_owner;
     }
 ```
@@ -334,7 +334,7 @@ event Copyright(uint copyright_id, address owner, string uri);
 
 * According to the `Copyright` event's description it MUST trigger whenever a new copyrighted work is registered.
 
-* Let's define our events towards the top of our contract above our function's modifiers.
+* Let's define our events towards the top of our contract above our modifiers.
 
 Define the `Copyright` event above the modifier. This section of your contract should now look something like this.
 
@@ -388,7 +388,7 @@ event OpenSource(uint copyright_id, string reference_uri);
 
 * We are going to add the `OpenSource` event below the `Copyright` event.
 
-* Now as per the event description we have to emit the event when a new Open Source work is created or in other words when the `openSourceWork` function is called.
+* Now as per the event description we have to `emit` the event when a new Open Source work is created or in other words when the `openSourceWork` and `renounceCopyrightOwnership` functions are called.
 
 On the last line inside the body of the `openSourceWork` function `emit` the Copyright event passing it the required parameters.
 
@@ -396,8 +396,20 @@ On the last line inside the body of the `openSourceWork` function `emit` the Cop
  emit OpenSource(id, reference_uri);
 ```
 
-* This should look something like this.
+* Inside the `openSourceWork` function we emit the `OpenSource` event like this.
 
+On the last line inside the body of the `renounceCopyrightOwnership` function `emit` the Copyright event passing it the required parameters.
+
+```Solidity
+    function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
+        // Re-maps a given copyright_id to the 0x0000000000000000000000000000000000000000
+        transferCopyrightOwnership(copyright_id, address(0));
+
+        emit OpenSource(copyright_id, copyrights[copyright_id].uri);
+    }
+```
+
+* Inside the `renounceCopyrightOwnership` function we emit the `OpenSource` event like this.
 
 Walk through the `Transfer` event.
 
