@@ -46,20 +46,21 @@ Generates a new `copyright_id` of type `uint` and maps it to a given `uri` by ca
 function openSourceWork(string memory reference_uri) public
 ```
 
-#### renounceCopyrightOwnership
-
-Re-maps a given copyright_id to the 0x0000000000000000000000000000000000000000 address in order to "open source" the copyright, and prevent anyone from modifying it further.
-
-```Solidity
-function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id)
-```
 
 #### transferCopyrightOwnership
 
-Re-maps a given copyright_id to a new copyright owner.
+Re-maps a given copyright_id to a new copyright owner. This function must only be callable by the `address` of the `owner` of the given `copyright_id`.
 
 ```Solidity
 function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id)
+```
+
+#### renounceCopyrightOwnership
+
+Re-maps a given copyright_id to the 0x0000000000000000000000000000000000000000 address in order to "open source" the copyright, and prevent anyone from modifying it further. This function must only be callable by the `address` of the `owner` of the given `copyright_id`.
+
+```Solidity
+function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id)
 ```
 
 ### Events
