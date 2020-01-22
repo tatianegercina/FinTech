@@ -6,9 +6,9 @@
 * Create, use, and populate a SQL database with data.
 * Create, populate, and select data from a SQL table.
 * Import large CSV datasets into pgAdmin.
-* Use pgAdmin to select specific rows/columns of data out from a table.
+* Use pgAdmin to select specific rows/columns of data from a table.
 * Understand the different kinds of joins and how to use them to create new tables in pgAdmin.
-* Solidify the foundations of writing basic- to intermediate-level SQL statements.
+* Solidify the foundations of writing basic to intermediate-level SQL statements.
 * Develop an introductory understanding of table design and database management.
 
 ## Additional Resources
