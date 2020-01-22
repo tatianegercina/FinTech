@@ -101,17 +101,16 @@ function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner
 
 * The `renounceCopyrightOwnership` simply invokes the `transferCopyrightOwnership` passing it `address(0)` as the new owner.
 
-
 Ask the class the following review questions.
 
-* Are there anyways that you felt the `CryptoRight` code could be improved upon?
+* Are there any ways that you felt the `CryptoRight` contract code could be improved upon?
 
 * **Potential Answer** Common functionality such as generating copyright_ids could be abstracted to an internal function.
 
-What are some reasons for using a struct with two attributes instead of as opposed to two mappings for the copyright `owner` and `uri`.
+* What are some reasons for using a struct with two attributes instead of as opposed to two mappings for the copyright `owner` and `uri`.
 
 * **Answer** Cheaper gas cost
 
 * **Answer** Less complex code
 
-After having completed this exercise, can you think of any interesting EIP/ERC specification ideas?
+* After having completed this exercise, can you think of any interesting EIP/ERC specification ideas?
