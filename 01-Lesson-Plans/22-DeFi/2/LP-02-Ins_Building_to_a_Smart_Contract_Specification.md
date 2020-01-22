@@ -393,22 +393,6 @@ event OpenSource(uint copyright_id, string reference_uri);
 On the last line inside the body of the `OpenSource` function `emit` the Copyright event passing it the required parameters.
 
 ```Solidity
-    function openSourceWork(string memory reference_uri) public {
-        copyright_ids.increment();
-        uint id = copyright_ids.current();
-
-        copyrights[id].uri = reference_uri;
-        // no need to set address(0) in the copyrights mapping as this is already the default for empty address types
-
-        emit OpenSource(id, reference_uri);
-    }
-```
-
-* Inside the `openSourceWork` function we emit the `OpenSource` event like this.
-
-On the last line inside the body of the `renounceCopyrightOwnership` function `emit` the Copyright event passing it the required parameters.
-
-```Solidity
   function openSourceWork(string memory reference_uri) public {
     // Increment the copyright_ids counter with .increment() method.
     copyright_ids.increment();
@@ -422,6 +406,19 @@ On the last line inside the body of the `renounceCopyrightOwnership` function `e
     // No need to set address(0) in the copyrights mapping as this is already the default for empty address types
 
     emit OpenSource(copyright_id, copyrights[copyright_id].uri);
+    }
+```
+
+* Inside the `renounceCopyrightOwnership` function we emit the `OpenSource` event like this.
+
+On the last line inside the body of the `renounceCopyrightOwnership` function `emit` the Copyright event passing it the required parameters.
+
+```Solidity
+    function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
+        // Re-maps a given copyright_id to the 0x0000000000000000000000000000000000000000
+        transferCopyrightOwnership(copyright_id, address(0));
+
+        emit OpenSource(copyright_id, copyrights[copyright_id].uri);
     }
 ```
 
@@ -452,3 +449,12 @@ event Transfer(uint copyright_id, address new_owner);
 * Now as per the event description we have to emit the event whenever a copyright is transferred or in other words when the `transferCopyrightOwnership` function is called.
 
 On the last line inside the body of the `transferCopyrightOwnership` function `emit` the `Transfer` event passing it the required parameters.
+
+```Solidity
+    function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
+        // Re-maps a given copyright_id to a new copyright owner.
+        copyrights[copyright_id].owner = new_owner;
+
+        emit Transfer(copyright_id, new_owner);
+    }
+```
