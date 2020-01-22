@@ -73,6 +73,8 @@ Walk through the `copyrightWork` method interface defintion.
 
   * The ERC333 spec defines this interface for the `copyrightWork` method.
 
+Add the `copyrightWork` function to the contract.
+
   ```Solidity
   function copyrightWork(string memory reference_uri) public {
   }
@@ -97,6 +99,9 @@ contract CryptoRight is ICryptoRight {
     using Counters for Counters.Counter;
 
     Counters.Counter copyright_ids;
+
+    function copyrightWork(string memory reference_uri) public {
+}
 ```
 
 * The `copyrightWork` method spec says that we have to generate an `id` for our copyrights but it doesn't specify how. This leaves it up to us to decide. For this contract let's use a Safemath counter and make each id the incremented value from the counter.
