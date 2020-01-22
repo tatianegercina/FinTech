@@ -41,16 +41,27 @@ Walk through the copyrights method interface defintion.
 
   * Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyright's `owner` and `uri`.
 
+  Inside the CryptoRight contract create a new struct named `Work`. Inside this struct create an `address` attribute named `owner` and a `string` attribute named `uri`.
+
+  ```Solidity
+      struct Work {
+        address owner;
+        string uri;
+    }
+  ```
+
+* According to the `copyrights` method's spec we need a "`struct` containing the copyright's `owner` and `uri`".
+
   ```Solidity
   function copyright(uint copyright_id) public returns(string memory reference_uri);
   ```
 
   * The ERC333 spec defines this interface for the copyrights method.
 
-  Now demonstrate what this looks like implemented inside the smart contract
+  Now demonstrate what this looks like implemented inside the smart contract.
 
   ```Solidity
-  mapping(uint => string) public copyrights;
+  mapping(uint => Work) public copyrights;
   ```
 
   * This translates to a function defintion that looks like this.
@@ -100,13 +111,13 @@ contract CryptoRight is ICryptoRight {
 
     Counters.Counter copyright_ids;
 
+    mapping(uint => Work) public copyrights;
+
     function copyrightWork(string memory reference_uri) public {
 }
 ```
 
 * The `copyrightWork` method spec says that we have to generate an `id` for our copyrights but it doesn't specify how. This leaves it up to us to decide. For this contract let's use a Safemath counter and make each id the incremented value from the counter.
-
-Below the `copyright_ids` counter create a new struct named `Work`. Inside this struct create an `address` attribute named `owner` and a `string` attribute named `uri`.
 
 ```Solidity
     function copyrightWork(string memory reference_uri) public {
