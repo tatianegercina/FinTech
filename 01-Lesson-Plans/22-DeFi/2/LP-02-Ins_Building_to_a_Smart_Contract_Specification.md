@@ -265,3 +265,99 @@ Next add the code implementation for each commented step inside the `renounceCop
 * Here we call the previously `transferCopyrightOwnership` method passing it the given `copyright_id` and `address(0)`.
 
 * Mapping something to `address(0)` in effect makes it so that nonone can ever control that copyright, eg, it becomes `open source`.
+
+Now that all of the method defintions with their accompanying bussiness logic have been implemented. Go back over the contract in remix and implement the defined `events` within the contract specification's events section.
+
+Walk through the `Copyright` event.
+
+```Solidity
+event Copyright(uint copyright_id, address owner, string uri);
+```
+
+* The copyright event requires a `uint copy_right_id`, an `address owner`, and a `string reference_uri`.
+
+* According to the `Copyright` event's description it MUST trigger whenever a new copyrighted work is registered.
+
+* Let's define our events towards the top of our contract above our function's modifiers.
+
+Define the `Copyright` event above the modifier. This section of your contract should now look something like this.
+
+```Solidity
+    using Counters for Counters.Counter;
+
+    Counters.Counter copyright_ids;
+
+    event Copyright(uint copyright_id, address owner, string reference_uri);
+
+    modifier onlyCopyrightOwner(uint copyright_id) {
+        require(copyrights[copyright_id].owner == msg.sender, "You do not have permission to alter this copyright!");
+        _;
+    }
+```
+
+* Now as per the event description we have to emit the event when a new copyrighted work is registered or in other words when the `copyrightWork` function is called.
+
+On the last line inside the body of the `copyrightWork` function `emit` the Copyright event passing it the required parameters.
+
+```Solidity
+emit Copyright(id, msg.sender, reference_uri);
+```
+
+* This should look something like this.
+
+Walk through the `OpenSource` event.
+
+```Solidity
+event OpenSource(uint copyright_id, string reference_uri);
+```
+
+* The copyright event requires a `uint copy_right_id`, and a `string reference_uri`.
+
+* According to the `OpenSource` event's description it MUST trigger whenever a new open source work is registered.
+
+Add the `OpenSource` event defintion below the `Copyright` event.
+
+```Solidity
+event Copyright(uint copyright_id, address owner, string uri);
+
+event OpenSource(uint copyright_id, string reference_uri);
+```
+
+* We are going to add the `OpenSource` event below the `Copyright` event.
+
+* Now as per the event description we have to emit the event when a new Open Source work is created or in other words when the `openSourceWork` function is called.
+
+On the last line inside the body of the `openSourceWork` function `emit` the Copyright event passing it the required parameters.
+
+```Solidity
+ emit OpenSource(id, reference_uri);
+```
+
+* This should look something like this.
+
+
+Walk through the `Transfer` event.
+
+```Solidity
+event OpenSource(uint copyright_id, string reference_uri);
+```
+
+* The `Transfer` event requires a `uint copyright_id`, and an `address new_owner`.
+
+* According to the `Transfer` event's description it MUST trigger whenever copyright ownership is transferred.
+
+Add the `Transfer` event defintion below the `OpenSource` event.
+
+```Solidity
+event Copyright(uint copyright_id, address owner, string uri);
+
+event OpenSource(uint copyright_id, string reference_uri);
+
+event Transfer(uint copyright_id, address new_owner);
+```
+
+* We are going to add the `Transfer` event below the `OpenSource` event.
+
+* Now as per the event description we have to emit the event whenever a copyright is transferred or in other words when the `transferCopyrightOwnership` function is called.
+
+On the last line inside the body of the `transferCopyrightOwnership` function `emit` the `Transfer` event passing it the required parameters.
