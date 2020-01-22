@@ -278,6 +278,8 @@ Walk through the `renounceCopyrightOwnership` method interface defintion.
 
   * The ERC333 spec defines this interface for the `renounceCopyrightOwnership` method.
 
+Add the `renounceCopyrightOwnership` function defintion with the `onlyCopyrightOwner` modifier.
+
   ```Solidity
     function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
     }
