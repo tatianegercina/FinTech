@@ -35,14 +35,14 @@ Next go through each method definition inside the specification section of the E
 
 * When writing code to a particular specification it can be very helpful to write comments for each step that must be performed inside a functions body. In this activity we will take the contract specification and break down each methods business logic and backing data structures into descriptive comments.
 
-Walk through the copyrights interface defintion.
+Walk through the copyrights method interface defintion.
 
 * copyrights
 
   * Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyright's `owner` and `uri`.
 
   ```Solidity
-  function copyright_uri(uint copyright_id) public returns(string memory reference_uri);
+  function copyright(uint copyright_id) public returns(string memory reference_uri);
   ```
 
   * The ERC333 spec defines this interface for the copyrights method.
@@ -50,7 +50,7 @@ Walk through the copyrights interface defintion.
   Now demonstrate what this looks like implemented inside the smart contract
 
   ```Solidity
-  mapping(uint => string) public copyright_uri;
+  mapping(uint => string) public copyrights;
   ```
 
   * This translates to a function defintion that looks like this.
@@ -59,9 +59,9 @@ Walk through the copyrights interface defintion.
 
   * Pay particular attention to the wording  "as a `uint` and returns a `mapped string`, this can be translated to "a `uint` mapped to a `string`", eg, a mapping.
 
-  * Remember that a variable defined with the public modifier automatically generates a getter function with defined parameters. In this case our publically defined mapping `copyright_uri` generates a getter function that accepts a `uint` and retruns a `string`.
+  * Remember that a variable defined with the public modifier automatically generates a getter function with defined parameters. In this case our publically defined mapping `copyrights` generates a getter function that accepts a `uint` and retruns a `Work` struct.
 
-  * This is a great example of how a specification's defined interface may not always exactly match what the actual code will look like but rather the interface that will be generated.
+  * This is a great example of how a specification's defined interface may not always exactly match what the actual code will look like but rather the interface that will be generated. Interface being both a defined function and the concept of what input/ouput for a given API is expected to be present.
 
 Walk through the `copyrightWork` method interface defintion.
 
@@ -71,7 +71,7 @@ Walk through the `copyrightWork` method interface defintion.
   function copyrightWork(string memory reference_uri) public
   ```
 
-  * The ERC333 spec defines this interface for the `openSourceWork` method.
+  * The ERC333 spec defines this interface for the `copyrightWork` method.
 
   ```Solidity
   function copyrightWork(string memory reference_uri) public {
@@ -82,7 +82,26 @@ Walk through the `copyrightWork` method interface defintion.
 
 * Now let's focus on the function's description and break it down into comments about what steps must take place inside the function.
 
+Read the `copyrightWork` method's description.
+
 * Generates a new `copyright_id` of type `uint` and maps it to a `Work struct` containing the given copyright `owner` and `uri`.
+
+Add the imports for `SafeMath counters` under the `pragma` and bind the `counter library` to the `Counter` datatype below the contrat defintion.
+
+```Solidity
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/drafts/Counters.sol";
+import "./ICryptoRight.sol";
+
+contract CryptoRight is ICryptoRight {
+
+    using Counters for Counters.Counter;
+
+    Counters.Counter copyright_ids;
+```
+
+* The `copyrightWork` method spec says that we have to generate an `id` for our copyrights but it doesn't specify how. This leaves it up to us to decide. For this contract let's use a Safemath counter and make each id the incremented value from the counter.
+
+Below the `copyright_ids` counter create a new struct named `Work`. Inside this struct create an `address` attribute named `owner` and a `string` attribute named `uri`.
 
 ```Solidity
     function copyrightWork(string memory reference_uri) public {
@@ -90,18 +109,18 @@ Walk through the `copyrightWork` method interface defintion.
 
     // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
 
-    // Map the copyright_id to a Work struct containing the given uri and the msg.sender using the copyright_uri mapping.
+    // Map the copyright_id to a Work struct containing the given uri and the msg.sender using the copyrights mapping.
 
     }
   ```
 
-* The `openSourceWork` method description can be broken down into the following steps.
+* The `copyrightWork` method description can be broken down into the following steps.
 
   * Increment the copyright_ids counter with .increment() method.
 
   * Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
 
-  * Map the copyright_id to a Work struct containing the given uri and the msg.sender using the copyright_uri mapping.
+  * Map the copyright_id to a Work struct containing the given uri and the msg.sender using the copyrights mapping.
 
 Next add the code implementation for each commented step inside the `copyrightWork` method.
 
@@ -113,7 +132,7 @@ Next add the code implementation for each commented step inside the `copyrightWo
     // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
     uint id = copyright_ids.current();
 
-    // Map the copyright_id to a Work struct containing the given uri and the msg.sender using the copyright_uri mapping.
+    // Map the copyright_id to a Work struct containing the given uri and the msg.sender using the copyrights mapping.
     copyrights[id] = Work(msg.sender, reference_uri);
 
     }
@@ -146,7 +165,7 @@ Walk through the `openSourceWork`method  interface defintion.
 
     // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
 
-    // Map the copyright_id to a Work struct containing the given uri using the copyright_uri mapping.
+    // Map the copyright_id to a Work struct containing the given uri using the copyrights mapping.
 
     // No need to set address(0) in the copyrights mapping as this is already the default for empty address types
     }
@@ -158,7 +177,7 @@ Walk through the `openSourceWork`method  interface defintion.
 
   * Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
 
-  * Map the copyright_id to a Work struct containing the given uri using the copyright_uri mapping.
+  * Map the copyright_id to a Work struct containing the given uri using the copyrights mapping.
 
   * Also make the observation that since this type of copyright is `open source` there is no need to set `address(0)` because in the copyrights mapping this is already the default for empty address types.
 
@@ -172,8 +191,8 @@ Next add the code implementation for each commented step inside the `openSourceW
     // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
     uint id = copyright_ids.current();
 
-    // Map the copyright_id to the given reference uri using the copyright_uri mapping.
-    copyright_uri[id] = reference_uri;
+    // Map the copyright_id to the given reference uri using the copyrights mapping.
+    copyrights[id] = reference_uri;
 
     // No need to set address(0) in the copyrights mapping as this is already the default for empty address types
 
