@@ -220,7 +220,7 @@ Walk through the `transferCopyrightOwnership` method interface defintion.
 * transferCopyrightOwnership
 
 ```Solidity
-function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
+function transferCopyrightOwnership(uint copyright_id, address new_owner) public;
 ```
 
   * The ERC333 spec defines this interface for the `transferCopyrightOwnership` method.
@@ -236,7 +236,7 @@ Add a modifier between the `copyrights mapping` and `copyrightWork` function nam
     }
 ```
 
-* Here we are adding a modifier accept with a  `require statment` that checks if the given. `copyrights_id` is equal to the current `msg.sender`.
+* Here we are adding a modifier named `onlyCopyrightOwner` with a  `require statment` that checks if the given. `copyrights_id` is equal to the current `msg.sender`.
 
 Add the`transferCopyrightOwnership` function defintion with the included `onlyCopyrightOwner`   modifier.
 
@@ -273,7 +273,7 @@ Walk through the `renounceCopyrightOwnership` method interface defintion.
 * renounceCopyrightOwnership
 
 ```Solidity
-    function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id)
+    function renounceCopyrightOwnership(uint copyright_id) public;
 ```
 
   * The ERC333 spec defines this interface for the `renounceCopyrightOwnership` method.
@@ -283,9 +283,11 @@ Walk through the `renounceCopyrightOwnership` method interface defintion.
     }
   ```
 
-* This translates to code that looks like this inside the smart contract.
+  * Let's once again focus on the second part of the `renounceCopyrightOwnership` method's description. "This function must only be callable by the address of the owner of the given copyright_id".
 
-* Now let's focus on the function's description and break it down into comments about what steps must take place inside the function.
+  * However this time around we already have our `onlyCopyrightOwner` defined. let's add it to our function defintion.
+
+* Now let's focus on the second part of the function's description and break it down into comments about what steps must take place inside the function.
 
 * Re-maps a given copyright ID to the 0x0000000000000000000000000000000000000000 address in order to "open source" the copyright, and prevent anyone from modifying it further.
 
