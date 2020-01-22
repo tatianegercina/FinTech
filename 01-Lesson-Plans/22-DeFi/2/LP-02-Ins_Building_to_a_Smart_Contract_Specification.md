@@ -390,13 +390,17 @@ event OpenSource(uint copyright_id, string reference_uri);
 
 * Now as per the event description we have to `emit` the event when a new Open Source work is created or in other words when the `openSourceWork` and `renounceCopyrightOwnership` functions are called.
 
-On the last line inside the body of the `transferCopyrightOwnership` function `emit` the Copyright event passing it the required parameters.
+On the last line inside the body of the `OpenSource` function `emit` the Copyright event passing it the required parameters.
 
 ```Solidity
-    function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
-        copyrights[copyright_id].owner = new_owner;
+    function openSourceWork(string memory reference_uri) public {
+        copyright_ids.increment();
+        uint id = copyright_ids.current();
 
-        emit Transfer(copyright_id, new_owner);
+        copyrights[id].uri = reference_uri;
+        // no need to set address(0) in the copyrights mapping as this is already the default for empty address types
+
+        emit OpenSource(id, reference_uri);
     }
 ```
 
@@ -405,11 +409,19 @@ On the last line inside the body of the `transferCopyrightOwnership` function `e
 On the last line inside the body of the `renounceCopyrightOwnership` function `emit` the Copyright event passing it the required parameters.
 
 ```Solidity
-    function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
-        // Re-maps a given copyright_id to the 0x0000000000000000000000000000000000000000
-        transferCopyrightOwnership(copyright_id, address(0));
+  function openSourceWork(string memory reference_uri) public {
+    // Increment the copyright_ids counter with .increment() method.
+    copyright_ids.increment();
 
-        emit OpenSource(copyright_id, copyrights[copyright_id].uri);
+    // Define a new uint for the current_id and set it to the current value of the copyright_ids counter using the .current() method.
+    uint id = copyright_ids.current();
+
+    // Map the copyright_id to the given reference uri using the copyrights mapping.
+    copyrights[id] = reference_uri;
+
+    // No need to set address(0) in the copyrights mapping as this is already the default for empty address types
+
+    emit OpenSource(copyright_id, copyrights[copyright_id].uri);
     }
 ```
 
