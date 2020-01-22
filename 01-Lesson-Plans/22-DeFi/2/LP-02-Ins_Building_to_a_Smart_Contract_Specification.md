@@ -390,7 +390,7 @@ event OpenSource(uint copyright_id, string reference_uri);
 
 * Now as per the event description we have to `emit` the event when a new Open Source work is created or in other words when the `openSourceWork` and `renounceCopyrightOwnership` functions are called.
 
-On the last line inside the body of the `openSourceWork` function `emit` the Copyright event passing it the required parameters.
+On the last line inside the body of the `transferCopyrightOwnership` function `emit` the Copyright event passing it the required parameters.
 
 ```Solidity
     function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
