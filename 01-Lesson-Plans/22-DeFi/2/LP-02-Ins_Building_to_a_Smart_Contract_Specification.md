@@ -54,7 +54,7 @@ Read aloud the `copyrights` method's interface definition and description.
 Highlight the CryptoRight contract interface definition.
 
 ```Solidity
-function copyright(uint copyright_id) public returns(string memory reference_uri);
+function copyrights(uint copyright_id) public returns(IWork memory);
 ```
 
 * The ERC333 spec defines this interface for the copyrights method.

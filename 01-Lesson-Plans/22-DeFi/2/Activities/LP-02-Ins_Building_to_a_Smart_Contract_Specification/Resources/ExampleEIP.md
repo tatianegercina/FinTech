@@ -25,7 +25,7 @@ The following standard allows for the implementation of a standard API for copyr
 Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyright's `owner` and `uri`.
 
 ```Solidity
-function copyright_uri(uint copyright_id) public returns(string memory reference_uri);
+function copyrights(uint copyright_id) public returns(IWork memory);
 ```
 
 #### copyrightWork:
