@@ -47,13 +47,14 @@ contract CryptoRight is ICryptoRight {
     }
 
     function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
+        // Re-maps a given copyright_id to a new copyright owner.
         copyrights[copyright_id].owner = new_owner;
 
         emit Transfer(copyright_id, new_owner);
     }
 
     function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
-        // set to 0x0000000000000000000000000000000000000000 address in order to "open source" the copyright, and prevent anyone from modifying it further.
+        // Re-maps a given copyright_id to the 0x0000000000000000000000000000000000000000
         transferCopyrightOwnership(copyright_id, address(0));
 
         emit OpenSource(copyright_id, copyrights[copyright_id].uri);
