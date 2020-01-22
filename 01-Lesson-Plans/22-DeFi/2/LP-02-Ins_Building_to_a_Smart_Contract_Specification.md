@@ -393,7 +393,11 @@ event OpenSource(uint copyright_id, string reference_uri);
 On the last line inside the body of the `openSourceWork` function `emit` the Copyright event passing it the required parameters.
 
 ```Solidity
- emit OpenSource(id, reference_uri);
+    function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
+        copyrights[copyright_id].owner = new_owner;
+
+        emit Transfer(copyright_id, new_owner);
+    }
 ```
 
 * Inside the `openSourceWork` function we emit the `OpenSource` event like this.
@@ -414,7 +418,7 @@ On the last line inside the body of the `renounceCopyrightOwnership` function `e
 Walk through the `Transfer` event.
 
 ```Solidity
-event OpenSource(uint copyright_id, string reference_uri);
+event Transfer(uint copyright_id, address new_owner);
 ```
 
 * The `Transfer` event requires a `uint copyright_id`, and an `address new_owner`.
