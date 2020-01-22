@@ -7,38 +7,57 @@ contract CryptoRight is ICryptoRight {
 
     using Counters for Counters.Counter;
 
-    Counters.Counter copyright_id;
+    Counters.Counter copyright_ids;
 
-    mapping(uint => string) public copyrights;
+    struct Work {
+        address owner;
+        string uri;
+    }
 
-    mapping(uint => address) public copyright_owner;
+    mapping(uint => Work) public copyrights;
 
-    event Copyright(uint token_id, string reference_uri);
+    event Copyright(uint copyright_id, address owner, string reference_uri);
 
-    event Transfer(uint token_id, address recipient);
+    event OpenSource(uint copyright_id, string reference_uri);
 
-    modifier onlyCopyrightOwner(uint token_id) {
-        require(copyright_owner[token_id] == msg.sender, "You do not have permission to alter this copyright!");
+    event Transfer(uint copyright_id, address new_owner);
+
+    modifier onlyCopyrightOwner(uint copyright_id) {
+        require(copyrights[copyright_id].owner == msg.sender, "You do not have permission to alter this copyright!");
         _;
     }
 
     function copyrightWork(string memory reference_uri) public {
-        copyright_id.increment();
-        uint id = copyright_id.current();
+        copyright_ids.increment();
+        uint id = copyright_ids.current();
 
-        copyrights[id] = reference_uri;
-        copyright_owner[id] = msg.sender;
+        copyrights[id] = Work(msg.sender, reference_uri);
 
-        emit Copyright(id, reference_uri);
+        emit Copyright(id, msg.sender, reference_uri);
     }
 
-    function renounceCopyrightOwnership(uint token_id) public onlyCopyrightOwner(token_id) {
-        copyright_owner[token_id] = address(0); // set to 0x0000000000000000000000000000000000000000 address in order to "open source" the copyright, and prevent anyone from modifying it further.
+    function openSourceWork(string memory reference_uri) public {
+        copyright_ids.increment();
+        uint id = copyright_ids.current();
+
+        copyrights[id].uri = reference_uri;
+        // no need to set address(0) in the copyrights mapping as this is already the default for empty address types
+
+        emit OpenSource(id, reference_uri);
     }
 
-    function transferCopyrightOwnership(uint token_id, address recipient) public onlyCopyrightOwner(token_id) {
-        copyright_owner[token_id] = recipient;
-        emit Transfer(token_id, recipient);
+    function transferCopyrightOwnership(uint copyright_id, address new_owner) public onlyCopyrightOwner(copyright_id) {
+        // Re-maps a given copyright_id to a new copyright owner.
+        copyrights[copyright_id].owner = new_owner;
+
+        emit Transfer(copyright_id, new_owner);
+    }
+
+    function renounceCopyrightOwnership(uint copyright_id) public onlyCopyrightOwner(copyright_id) {
+        // Re-maps a given copyright_id to the 0x0000000000000000000000000000000000000000
+        transferCopyrightOwnership(copyright_id, address(0));
+
+        emit OpenSource(copyright_id, copyrights[copyright_id].uri);
     }
 
 }
