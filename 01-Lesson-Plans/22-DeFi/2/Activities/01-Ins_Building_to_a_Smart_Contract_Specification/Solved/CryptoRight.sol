@@ -1,7 +1,7 @@
 pragma solidity ^0.5.0;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/drafts/Counters.sol";
-import "./ICryptoRight.sol";
+import "../Resources/ICryptoRight.sol";
 
 contract CryptoRight is ICryptoRight {
 
