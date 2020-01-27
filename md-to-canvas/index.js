@@ -31,9 +31,7 @@ md.use(container, 'note', {
 
 const result = md.render(`
 
-::: note
-Testing this markdown
-:::
+::: note Testing this markdown :::
 
 `);
 
