@@ -123,7 +123,7 @@ Now define a new counter to keep track of what current `token_id` we are on star
 
 * In order for us to track the number of tokes that have been minted and to generate the next `token_id`, we will be leveraging the custom Counter data structure from OpenZeppelin.
 
-* Openzeppelin SafeMathcounters allows us to increment and decrement a counter without worrying about overflows and other common types of errors.
+* Openzeppelin SafeMath counters allows us to increment and decrement a counter without worrying about overflows and other common types of errors.
 
 Represent the artwork's information as a struct named `Artwork` containing these three attributes. A `string` named `name`, a `string` named artist, and a `uint` named `appraisal_value`.
 
