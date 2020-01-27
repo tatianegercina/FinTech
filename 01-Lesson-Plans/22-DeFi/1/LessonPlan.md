@@ -392,7 +392,7 @@ In this activity, students are introduced to the `IPFS` technology and how it ca
 
 **Files:**
 
-* [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_System/Solved/erc721example.sol)
+* [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_System/Solved/example_uri.json)
 
 Begin by giving the students some background on IPFS, what it is, how it works.
 
@@ -527,7 +527,7 @@ You may have to increase the `Gas Limit`, but once the contract has successfully
 
 * initial_value: `62000000`
 
-* token_uri: `https://gateway.pinata.cloud/ipfs/QmX2F3KFJzELLkn7Qadkq19tF62wQzAKDToTwhzNqWLpJ4`
+* token_uri: `ipfs://QmX2F3KFJzELLkn7Qadkq19tF62wQzAKDToTwhzNqWLpJ  `
 
 Congratulate them, that was a lot of new information to take in; then briefly introduce the next activity.
 
