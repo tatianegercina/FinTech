@@ -1,6 +1,6 @@
 # Sound of Music
 
-In this activity, you will use deep learning model to predict the geographical origins of a musical composition.
+In this activity, you will use a deep learning model to predict the geographical origins of a musical composition.
 
 ## The Dataset
 
