@@ -170,7 +170,7 @@ You'll need to set the account with  `priv_key_to_account` and use `send_tx` to 
 ```
 from web3.middleware import geth_poa_middleware
 
-w3.eth.setGasPriceStrategy(medium_gas_price_strategy)
+w3.middleware_onion.inject(geth_poa_middleware, layer=0)
 ```
 
 - Due to a bug in `web3.py`, you will need to send a transaction or two with MyCrypto first, since the
