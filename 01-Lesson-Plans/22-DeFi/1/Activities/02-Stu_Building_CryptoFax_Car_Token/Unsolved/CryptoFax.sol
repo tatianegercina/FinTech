@@ -5,7 +5,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 
 contract CryptoFax is ERC721Full {
 
-    constructor() ERC721Full("TokenName", "TKN") public { }
+    constructor() constructor() ERC721Full("TokenName", "TKN") public { }
 
     using Counters for Counters.Counter;
     Counters.Counter token_ids;
