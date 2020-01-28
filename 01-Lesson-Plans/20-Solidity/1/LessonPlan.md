@@ -376,7 +376,7 @@ Click the `Solidity Compiler` button on the Remix sidebar then click `Compile` t
 
 * Solidity is compiled to basic instructions that are read by the `Ethereum Virtual Machine`.
 
-Now click the `Deploy and Run Transaction` button on the remix sidebar bar.
+Now click the `Deploy` button on the Remix sidebar.
 
 ![remix_deploy_messsage_board](Images/remix_deploy_messsage_board.png)
 
