@@ -797,13 +797,181 @@ Open the solution and explain the following:
 
 Ask for any remaining questions before moving on.
 
+### 8. Instructor Do: Intro to Github Pages (10 min)
+
+In this activity, you will demonstrate the simple but elegant Github themes that Github Pages provides by creating a landing page for this dApp that explains its purpose and the technology it is written with, and linking to the subfolder.
+
+This will allow students to create a simple website explaining their application, which will allow them to better explain their applications to future employers, and the world in general.
+
+**Files:**
+
+* [index.html](Activities/05-Ins_Intro_Github_Pages/Resources/cryptoright/frontend/index.html)
+
+* [dapp.js](Activities/05-Ins_Intro_Github_Pages/Resources/cryptoright/frontend/dapp.js)
+
+* [CryptoRight.json](Activities/05-Ins_Intro_Github_Pages/Resources/cryptoright/frontend/CryptoRight.json)
+
+* [README.md](Activities/05-Ins_Intro_Github_Pages/Resources/cryptoright/README.md)
+
+First, explain to the students what Github Pages allows us to do:
+
+* Github Pages is a service provided by Github that automatically creates websites from your git repositories.
+
+* It allows us to define a `README.md` file and convert it into a simple landing page website that we can use to describe our application to new users, other developers, or future employers that you might want to show off to, that might not understand the full context of what your application does and how it works.
+
+* We are going to create a simple `README.md` file, describe our application, and link to it. Then, we just need to create a repository on Github, push our code to it, set a theme, and then we're live!
+
+In your workspace, create a folder called `cryptoright` and `cd` into it:
+
+```bash
+mkdir cryptoright
+cd cryptoright
+```
+
+Next, move the frontend code from the previous folder you were working in that contained the `dapp.js`, `index.html`, and `CryptoRight.json` into a subfolder called `frontend`.
+
+Create a `README.md` inside the top-level `cryptoright` folder.
+
+Your directory tree should look something like:
+
+![Github Pages file tree](Images/github-pages-tree.png)
+
+Within this `README.md` file, add some information explaining the application.
+You will also need to include a link to the dApp's `frontend` directory.
+
+* Github Pages will automatically convert the Markdown file into the HTML necessary to render the website's landing page. By including a link to the `frontend` directory in the `README.md` file, we can generate a URL that points to the dApp's frontend code from our landing page.
+
+For now, just add something simple like:
+
+```markdown
+
+# CryptoRight Blockchain Copyright System
+
+## Summary
+
+This application is a copyright management system built on the Ethereum blockchain.
+
+### Demo App
+
+Click [here](frontend/index.html) to launch the CryptoRight application.
+
+```
+
+* We can use regular Markdown syntax when writing our `README.md`. We just need to make sure that we include a link to `frontend/index.html` somewhere to point to our dApp.
+
+Next, create a new Github repository by navigating to [Github](https://github.com), clicking the `+` at the top right, and selecting `New Repository`:
+
+![New Github Repo](Images/github-new-repo.png)
+
+Give it a title and short description.
+
+* We need to set this repo to public in order to publish it as a website.
+
+* We also do not need to initialize the repository with a `README` since we have one already.
+
+Next, run the first set of commands that Github provides for uploading existing code to the repo, minus the first line of code that `echo`s to the `README.md` file:
+
+![Github Upload CLI](Images/github-repo-cli.png)
+
+* We need to run these commands within the `cryptoright` directory that contains all of our code, including the `README.md` and the `frontend` folder.
+
+* We don't need to run the `echo "# cryptoright" >> README.md` line, since we already have content in there.
+
+Once you run this set of commands, you will need to upload the rest of the frontend code, since this set only uploads the `README.md`:
+
+```bash
+git add -A
+git commit -m "add frontend code"
+git push
+```
+
+After running this, all of the code should be uploaded to the repository.
+
+![Github Upload Complete](Images/github-upload.png)
+
+Navigate to the repo settings on Github by clicking the `Settings` tab, and scroll down to the `Github Pages` section, and set the `Source` to `master`:
+
+![Github Pages Setup](Images/github-pages-setup.gif)
+
+* By setting up the `Source` that Github Pages will use to `master`, we are telling it to build out everything inside of our repository into a website.
+
+* All we need to do next is set a theme!
+
+Click the theme chooser in the same section, and play around with the themes, showing them off to the class a bit. Pick a theme, then navigate to the URL that Github Pages provides. You should see your website generated! **(This may take a few moments to reflect and may need a refresh.)**
+
+Click on the link that you generated to take you to your dApp, and ensure MetaMask is pointed at the correct network. The dApp should request permissions to connect, and once on the same network the contract is deployed to, the CryptoRight data should populate.
+
+![Github Pages Theme](Images/github-pages-theme.gif)
+
+* Just like that we have created a nice and elegant landing page website for our dApp. Github Pages has a lot of customization that you can dig even deeper into, to make nice website without yet having to learn frontend development.
+
+* We can also deploy our contracts to a live testnet like Kovan or Ropsten, even the Mainnet, all we need to change is the contract address in our frontend code!
+
+Voila! Now it's time to have students create their own landing pages!
+
+### 9. Students Do: Github Pages Landing Page (15 min)
+
+Now it's time for the students to create their own landing pages!
+
+Send out the instructions and have TAs circulate the room.
+
+**Instructions:**
+
+* [README.md](Activities/06-Stu_Github_Pages/README.md)
+
+**Files:**
+
+* [CryptoRight.json](Activities/06-Stu_Github_Pages/Resources/cryptoright/frontend/CryptoRight.json)
+
+* [dapp.js](Activities/06-Stu_Github_Pages/Resources/cryptoright/frontend/dapp.js)
+
+* [index.html](Activities/06-Stu_Github_Pages/Resources/cryptoright/frontend/dapp.js)
+
+* [README.md](Activities/06-Stu_Github_Pages/Resources/cryptoright/README.md)
+
+Ensure the following:
+
+* Students are using their own ABIs in `CryptoRight.json` and that their frontends are functioning with the local `python -m http.server 8000` command before attempting this activity.
+
+* Ensure that the students directory tree looks like the following:
+
+  ![Github File Tree](Images/github-pages-tree.png)
+
+* Ensure that within the `README.md` there is a link to the `frontend/index.html` file somewhere in order to generate the URL to the frontend dApp.
+
+### 10. Instructor Do: Github Pages Review (10 min)
+
+Ask the students the following questions:
+
+* What is the purpose of having a Github Pages website for our dApp?
+
+  **Answer:** It allows us to demonstrate our expertise in a context that we can control.
+
+  **Answer:** It allows us to write documentation websites, explain the purpose, gain developer and user traction, and much more.
+
+* What facilitates the connection between our frontend code that Github Pages hosts, and the Ethereum networks that we have configured/connected to?
+
+  **Answer:** MetaMask!
+
+* Would our frontend code work if we deployed it anywhere else?
+
+  **Answer:** Yes, as long as the browser has MetaMask installed, our dApp will run!
+
+* Would it be possible to deploy our frontend code to IPFS?
+
+  **Answer:** Absolutely! However, it would require some code changes to make sure that the URLs referenced work properly.
+
+* Would it be possible to use Github Pages to create a portfolio website that allows us to show off more than this application?
+
+  **Answer:** Absolutely! It should be leveraged wherever possible to get more exposure.
+
 ---
 
-### 8. BREAK (15 min)
+### 11. BREAK (15 min)
 
 ---
 
-### 9. Students Do: Project Work (Remainder of Class)
+### 12. Students Do: Project Work (Remainder of Class)
 
 Students will use the remainder of class to work on their projects.
 
