@@ -362,7 +362,7 @@ contract CryptoFax is ERC721Full {
 
 * Congratulations, you've just built an `ERC721` compliant `non-fungible` token complete with on-chain custom attributes and several linked token `URI`s
 
-Discuss the following review questions with the class:
+Return to the slides and discuss the following review questions with the class:
 
 * Why is a struct a useful data structure?
 
@@ -527,7 +527,7 @@ You may have to increase the `Gas Limit`, but once the contract has successfully
 
 * initial_value: `62000000`
 
-* token_uri: `ipfs://QmX2F3KFJzELLkn7Qadkq19tF62wQzAKDToTwhzNqWLpJ  `
+* token_uri: `ipfs://QmX2F3KFJzELLkn7Qadkq19tF62wQzAKDToTwhzNqWLpJ`
 
 Congratulate them, that was a lot of new information to take in; then briefly introduce the next activity.
 
@@ -551,33 +551,33 @@ Discuss the following review questions with the class about the general concepts
 
 * What are some potential issues that IPFS seeks to solve?
 
-* **Answer** Inefficiencies in the web such as `duplicate files`.
+* **Answer**: Inefficiencies in the web such as `duplicate files`.
 
-* **Answer** Inefficiencies in the web such as having to route to a faraway sever to get the file you need when it might be right next door.
+    * **Answer**: Inefficiencies in the web such as having to route to a faraway sever to get the file you need when it might be right next door.
 
-* **Answer** Problems with security and file integrity, such as not knowing whether or not files you have accessed over the web have changed.
+    * **Answer**: Problems with security and file integrity, such as not knowing whether or not files you have accessed over the web have changed.
 
-* **Answer** Problems with the security of centralized servers providing a centralized attack vector.
+    * **Answer**: Problems with the security of centralized servers providing a centralized attack vector.
 
-* What are some potential use cases of IPFS?
+* What are some potential issues that IPFS seeks to solve?
 
-* **Answer** Hosting any file that you want to maintain an immutable copy of.
+    * **Answer**: Hosting any file that you want to maintain an immutable copy of.
 
-* **Answer** Hosting any file that needs to be censorship-resistant.
+    * **Answer**: Hosting any file that needs to be censorship-resistant.
 
-* **Answer** Hosting very-large files between organizations.
+    * **Answer**: Hosting very-large files between organizations.
 
-* **Answer** Hosting any file in general.
+    * **Answer**: Hosting any file in general.
 
-Have the class take a moment to brainstorm some potential use-cases for IPFS; potential use-cases include:
+* Have the class take a moment to brainstorm some potential use-cases for IPFS; potential use-cases include:
 
-* **Potential Answer** An open street map application that shares panoramic photos of streets through a decentralized platform.
+    * **Potential Answer**: An open street map application that shares panoramic photos of streets through a decentralized platform.
 
-* **Potential Answer** A static website host.
+    * **Potential Answer**: A static website host.
 
-* **Potential Answer** A decentralized social platform where users can upload photos.
+    * **Potential Answer**: A decentralized social platform where users can upload photos.
 
-* **Potential Answer** A p2p chat with file sharing.
+    * **Potential Answer**: A p2p chat with file sharing.
 
 ---
 
