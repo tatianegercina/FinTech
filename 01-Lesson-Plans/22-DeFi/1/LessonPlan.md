@@ -42,37 +42,37 @@ Previously students have implemented both a basic token as well as the ERC21 fun
 
 * What are some differences between `fungible` and `non-fungible` tokens?
 
-* **Answer** Non-fungible tokens are unique, fungible tokens are not unique.
+    * **Answer**: Non-fungible tokens are unique, fungible tokens are not unique.
 
-* **Answer** Fungible tokens are interchangeable with one another whereas non-fungible are not.
+    * **Answer**: Fungible tokens are interchangeable with one another whereas non-fungible are not.
 
-* **Answer** Non-fungible tokens use ERC 721, fungible tokens use ERC 777.
+    * **Answer**: Non-fungible tokens use ERC 721, fungible tokens use ERC 777.
 
 * What are some examples of `fungible` assets?
 
-* **Answer** United States Dollars (USD)
+    * **Answer**: United States Dollars (USD)
 
-* **Answer** Ethereum (ETH)
+    * **Answer**: Ethereum (ETH)
 
-* **Answer** Bitcoin (BTC)
+    * **Answer**: Bitcoin (BTC)
 
-* **Answer** Gold
+    * **Answer**: Gold
 
 * What are some examples of `non-fungible` assets?
 
-* **Answer** Art
+    * **Answer**: Art
 
-* **Answer** Diamonds
+    * **Answer**: Diamonds
 
-* **Answer** Land Ownership
+    * **Answer**: Land Ownership
 
 * What are some potential benefits of using open source libraries such as OpenZeppelin?
 
-* **Answer** They are freely available to use and contribute to under the MIT license.
+    * **Answer**: They are freely available to use and contribute to under the MIT license.
 
-* **Answer** It's a community-backed project that has implemented many of the communities agreed-upon standards (EIPS/ERCS).
+    * **Answer**: It's a community-backed project that has implemented many of the communities agreed-upon standards (EIPS/ERCS).
 
-* **Answer** It provides a secure, standardized starting point for various smart contract standards.
+    * **Answer**: It provides a secure, standardized starting point for various smart contract standards.
 
 Now that the class has been refreshed on fungibility, set the stage for today's lesson by introducing the concept of `DeFi`.
 
