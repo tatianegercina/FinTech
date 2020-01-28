@@ -173,6 +173,12 @@ pip install python-dotenv
 
   * This command will fetch all `Accident` events using the `token_id` of `1`. Make sure this number matches the `token_id` that you made an accident report on.
 
+* After you have verified that you can fetch this metadata from your CLI, check out your [Pinata Pin Explorer](https://pinata.cloud/pinexplorer) to see what was uploaded to IPFS.
+
+## Challenge
+
+* Set the `name` of each pin in Pinata's API by adding a field called `name` inside a `pinataMetadata` object for easy access by following the [Pinata Documentation](https://pinata.cloud/documentation#PinJSONToIPFS). You will need to add the `pinataMetadata` object that contains the `name` key next to the `pinataOptions` (not within it!).
+
 ## Hints
 
 * Visit your [Pinata Account Page](https://pinata.cloud/account) to fetch your API keys and set them in the `.env` file.

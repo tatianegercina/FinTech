@@ -1,18 +1,5 @@
 {
-  "title": "Vehicle Metadata",
-  "type": "object",
-  "properties": {
-      "make": {
-          "type": "string",
-          "description": "Ford"
-      },
-      "model": {
-          "type": "string",
-          "description": "Fusion"
-      },
-      "year": {
-          "type": "uint",
-          "description": "2014"
-      }
-  }
+  "make": "Ford",
+  "model": "Fusion",
+  "year": 2014
 }

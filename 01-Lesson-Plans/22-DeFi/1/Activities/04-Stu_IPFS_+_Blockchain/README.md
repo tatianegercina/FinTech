@@ -8,22 +8,9 @@ In this activity, you will upload a Car TokenURI file to IPFS via Pinata and lin
 
 ```solidity
 {
-  "title": "Vehicle Metadata",
-  "type": "object",
-  "properties": {
-      "make": {
-          "type": "string",
-          "description": " "
-      },
-      "model": {
-          "type": "string",
-          "description": " "
-      },
-      "year": {
-          "type": "uint",
-          "description": " "
-      }
-  }
+  "make": "Tesla",
+  "model": "3",
+  "year": 2020
 }
 ```
 
@@ -51,9 +38,9 @@ In this activity, you will upload a Car TokenURI file to IPFS via Pinata and lin
 
   ![IPFS Install Links](Images/ipfs-browser-companion.png)
 
-* Originally the CIDV0 standard allowed for url hashes that supported both upper and lowercase characters but this breaks in many browers including firefox.
+* Originally the CIDv0 standard allowed for url hashes that supported both upper and lowercase characters but this breaks in many browers, including Firefox.
 
-  * Pinata is a useful service but they have yet to update their file pinning frontend to support CIDV1. In order to avoid bugs you are going to convert your `IPFS hash` with a free CIDV1 converter at the [CID IPFS Website](https://cid.ipfs.io).
+  * Pinata is a useful service but they have yet to update their file pinning frontend to support CIDv1. In order to avoid bugs you are going to convert your `IPFS hash` with a free CIDv1 converter at the [CID IPFS Website](https://cid.ipfs.io).
 
   ![CID Converter](Images/cid-converter.png)
 

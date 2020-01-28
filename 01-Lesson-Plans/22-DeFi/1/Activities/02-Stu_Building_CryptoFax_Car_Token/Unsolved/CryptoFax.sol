@@ -16,15 +16,15 @@ contract CryptoFax is ERC721Full {
 
     // Stores token_id => Car
     // Only permanent data that you would need to use in a smart contract later should be stored on-chain
-    mapping(/* Iplement cars mapping*/) public cars;
+    mapping(/* Implement cars mapping*/) public cars;
 
     event Accident(uint token_id, string report_uri);
 
-    function registerVehicle(/* Fucntion parameters */) public returns(/* Fucntion returns */) {
+    function registerVehicle(/* Function parameters */) public returns(/* Function returns */) {
       //Implement registerVehicle
     }
 
-    function reportAccident(/* Fucntion parameters */) public returns(/* Fucntion returns */) {
+    function reportAccident(/* Function parameters */) public returns(/* Function returns */) {
        //Implement reportAccident
     }
 }
