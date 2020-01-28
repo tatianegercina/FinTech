@@ -460,7 +460,7 @@ Click the `Try it for Free` or the `Signup` and register for a free account. If 
 
 * The pinata website provides a simple user interface for developers to upload and access files on IPFS.
 
-Open the [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_System/Solved/erc721example.sol) and display it to the class.
+Open the [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_System/Solved/example_uri.json) and display it to the class.
 
 ```json
 {
@@ -476,7 +476,7 @@ Click on the `Pinata Upload` link in the website's top navigation bar.
 
 ![Pinata Upload Link](Images/pinata_upload_link.png)
 
-Now click the `Browse` button and upload the [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_System/Solved/erc721example.sol)
+Now click the `Browse` button and upload the [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_System/Solved/example_uri.json)
 
 ![Pinata Upload](Images/pinata_upload.png)
 
@@ -522,7 +522,7 @@ In your browser, open the [CID IPFS Website](https://cid.ipfs.io) and convert th
 
 * Pinata is a useful service, but they have yet to update their file pinning  website frontend to support CIDv1. In order to avoid bugs, we are going to convert the `IPFS hash` with a free CIDv1 converter.
 
-Now to test the browser extension copy the files new CIDv1 `IPFS hash` and prepend `ipfs://` to the front of it, e.g., [ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq](ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq). Demonstrate creating the link and opening it in your browser.
+Now to test the browser extension copy the files new CIDv1 `IPFS hash` and prepend `ipfs://` to the front of it, e.g., [ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m](ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m). Demonstrate creating the link and opening it in your browser.
 
 * Once the IPFS browser extension is installed, files on IPFS can be accessed at `ipfs://whatever your file hash is`.
 
@@ -530,11 +530,11 @@ Now to test the browser extension copy the files new CIDv1 `IPFS hash` and prepe
 
 Now navigate to [Remix](http://remix.ethereum.org/). Then open the example contract for the `Artwork Token` and compile/deploy the contract on your local ganache blockchain.
 
-You may have to increase the `Gas Limit`, but once the contract has successfully deployed, click on the deployed contract and click the `newAppraisal` function. Fill in the fields with a generated address from your wallet, some sample details about the artwork, and the token URI; then call the function. The data you enter should look something like this:
+You may have to increase the `Gas Limit`, but once the contract has successfully deployed, click on the deployed contract and click the `newAppraisal` function. Fill in the fields with a generated address from your wallet, some sample details about the artwork, and the token URI; then call the function. The data you enter should be:
 
 ![Register Artwork](Images/remix_register_artwork.png)
 
-* owner : `0xc3879B456DAA348a16B6524CBC558d2CC984722c`
+* owner : `YOUR_ADDRESS_HERE`
 
 * name: `Mona Lisa`
 
@@ -542,7 +542,7 @@ You may have to increase the `Gas Limit`, but once the contract has successfully
 
 * initial_value: `62,000,000`
 
-* token_uri: `https://gateway.pinata.cloud/ipfs/QmX2F3KFJzELLkn7Qadkq19tF62wQzAKDToTwhzNqWLpJ4`
+* token_uri: `ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m`
 
 Congratulate them, that was a lot of new information to take in; then briefly introduce the next activity.
 
