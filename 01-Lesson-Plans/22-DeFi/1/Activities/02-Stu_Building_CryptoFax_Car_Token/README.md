@@ -90,11 +90,12 @@ In this activity, you will implement a non-fungible car token containing an immu
 
 * Next, inside the `registerVehicle` function call the internal `_mint` method from `ERC721Full`. Pass the `_mint` function the `owner` value that was defined and the new `token_id` that was generated.
 
-* A typical ERC721 token contains an attached `tokenURI`.  The car token's `tokenURI` may resolve to something like this:
+* A typical ERC721 token contains an attached `tokenURI`, the car token's may resolve to something like this.
 
   ```json
-
-      "type": "object",
+      {
+          "title": "Vehicle Metadata",
+          "type": "object",
           "properties": {
               "make": {
                   "type": "string",
@@ -125,11 +126,11 @@ In this activity, you will implement a non-fungible car token containing an immu
 
 * Inside the `reportAccident` function three things happen:
 
-  * The number of accidents is incremented for the given `token_id` inside the cars mapping,
+  * the number of accidents is incremented for the given `token_id` inside the cars mapping,
 
-  * The `Accident` event is `emmited` and passed the given `token_id` and `report_uri`
+  * the `Accident` event is `emmited` and passed the given `token_id` and `report_uri`
 
-  * The current number of accidents after the latest accident is returned.
+  * the current number of accidents after the latest accident is returned.
 
 ```solidity
         cars[token_id].accidents += 1;
