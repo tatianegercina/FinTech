@@ -101,7 +101,7 @@ In this activity, the class will be reintroduced to the ERC721 standard, review 
 Start by opening [Remix](https://remix.ethereum.org) in your web browser and creating a new contract named `ArtToken.sol`. Set the `pragma` and import the OpenZeppelin libraries for ERC721Full and SafeMath counters.
 
  ```solidity
- pragma solidity ^0.5.11;
+ pragma solidity ^0.5.0;
 
  import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721Full.sol";
  import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/drafts/Counters.sol";
@@ -195,6 +195,10 @@ Define a function named `registerArtwork`; it accepts the following parameters:
 
 * This function will be responsible for registering a new piece of artwork on the chain.
 
+* The token URI can be a link to some metadata anywhere on the internet. This can be a potential point of centralization, but we will solve that later by using a tool called IPFS.
+
+* In our use case, we will be creating a JSON object that contains a `name`, `description`, and `image` field, then converting it to a special immutable URI with IPFS that ensures that you will always be getting that same piece of data. Essentially, we will be linking to some JSON metadata in a decentralized fashion, but for now, we just need to be able to store a string.
+
 Add the following lines of code inside the `registerArtwork` function for generating the token's id.
 
  ```solidity
@@ -258,6 +262,12 @@ Inside the body of the `newAppraisal` function set the passed token_id's apprais
  * it returns the current artwork `appraisal_value` after the latest appraisal.
 
 * We have now created a new ERC721 non-fungible token with custom attributes.
+
+If you see a warning like this:
+
+![ERC721 Warning](Images/erc721-warning.png)
+
+This is coming from the OpenZeppelin library and is safe to ignore.
 
 ### 3. Students Do: Building the CryptoFax Car Token (20 min)
 
@@ -454,18 +464,9 @@ Open the [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_Syste
 
 ```json
 {
- "title": "Artwork Metadata",
- "type": "object",
- "properties": {
- "type_of_art": {
- "type": "string",
- "description": "Painting"
- },
- "year_created": {
- "type": "uint",
- "description": "1503"
- }
- }
+ "name": "Mona Lisa",
+ "description": "One of the most famous works of art by Leonardo da Vinci",
+ "image": "ipfs://bafybeiemxf5abjwjbikoz4mc3a3dla6ual3jsgpdr4cjr3oz3evfyavhwq/I/m/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
 }
 ```
 
@@ -505,19 +506,27 @@ Make a note to the class that the Pinata gateway is a point of centralization. H
 
 Navigate to the [IPFS Browser Companion github](https://github.com/ipfs-shipyard/ipfs-companion) and install the browser extension for your desired browser.
 
+* You do not need to install the IPFS Desktop version.
+
+* You also do not need to worry about if you cannot connect to an IPFS node, as the browser extension will fallback to the IPFS.io gateway. You do not need to install an IPFS node if you don't want to, though it is valuable to explore down the line.
+
  ![IPFS Install Links](Images/ipfs-browser-companion.png)
 
-In your browser, open the [CID IPFS Website](https://cid.ipfs.io) and convert the CIDV0 hash to a CIDV1 hash.
+In your browser, open the [CID IPFS Website](https://cid.ipfs.io) and convert the CIDv0 hash to a CIDv1 hash.
 
 ![CID Converter](Images/cid-converter.png)
 
-* Originally, the CIDV0 standard allowed for URL hashes that supported both upper and lowercase characters, but this breaks in many browsers.
+* Originally, the CIDv0 standard allowed for URL hashes that supported both upper and lowercase characters, but this breaks in many browsers nowadays since some of them automatically make your URL lowercase. Since the hash relied on case sensitivity to encode the necessary data, this broke it.
 
-* Pinata is a useful service, but they have yet to update their file pinning frontend to support CIDV1. In order to avoid bugs, we are going to convert the `IPFS hash` with a free CIDV1 converter.
+* CIDv1 is a longer, lowercase hash that also contains more metadata that can be converted for human-readable info in some applications. Since we're alway at the cutting edge, we are going to opt for the newer, more compatible standard.
+
+* Pinata is a useful service, but they have yet to update their file pinning  website frontend to support CIDv1. In order to avoid bugs, we are going to convert the `IPFS hash` with a free CIDv1 converter.
 
 Now to test the browser extension copy the files new CIDv1 `IPFS hash` and prepend `ipfs://` to the front of it, e.g., [ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq](ipfs://bafybeig4kuemgvy57tczysgckwhc76r6uibrrtrkwzrcvlrvsjfmptiblq). Demonstrate creating the link and opening it in your browser.
 
 * Once the IPFS browser extension is installed, files on IPFS can be accessed at `ipfs://whatever your file hash is`.
+
+* When pasting an IPFS URI into our browser, we need to make sure it is navigating directly to the `ifps://` scheme, and not simply searching the string on Google.
 
 Now navigate to [Remix](http://remix.ethereum.org/). Then open the example contract for the `Artwork Token` and compile/deploy the contract on your local ganache blockchain.
 
@@ -529,7 +538,7 @@ You may have to increase the `Gas Limit`, but once the contract has successfully
 
 * name: `Mona Lisa`
 
-* artist: ` Leonardo da Vinci`
+* artist: `Leonardo da Vinci`
 
 * initial_value: `62,000,000`
 
@@ -988,8 +997,6 @@ Open up `accident.py` and explain the following:
 Ask for any remaining questions before moving on.
 
 ### 12. Instructor Do: Intro to Project 3 (25 min)
-
-Greet the class and explain that today is the first day of their final project!
 
 Congratulate the class on having made it this far!
 
