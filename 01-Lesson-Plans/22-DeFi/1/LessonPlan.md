@@ -104,7 +104,7 @@ Start by opening [Remix](https://remix.ethereum.org) in your web browser and cre
 Next, create a new contract named ArtToken that inherits from ERC721Full, for ERC721Full's constructor function's definition pass in the variables that ERC721Full expects, which are a `string` for the `token name` and a `string` for the token's `symbol`. Use `"ArtToken"` for the first parameter and `"ART"` for the second parameter.
 
   ```solidity
-  contract ArtRegistry is ERC721Full {
+  contract ArtToken is ERC721Full {
 
       constructor() ERC721Full("ArtToken", "ART") public { }
   }
@@ -366,25 +366,25 @@ Return to the slides and discuss the following review questions with the class:
 
 * Why is a struct a useful data structure?
 
-  * **Answer** It allows you to create new dynamic data structures.
+  * **Answer**: It allows you to create new dynamic data structures.
 
-  * **Answer** It allows you to create data structures that contain multiple types.
+  * **Answer**: It allows you to create data structures that contain multiple types.
 
-  * **Answer** It allows you to create objects.
+  * **Answer**: It allows you to create objects.
 
 * What are some uses for solidity events?
 
-  * **Answer** Events are a cheap way of logging information on the blockchain.
+  * **Answer**: Events are a cheap way of logging information on the blockchain.
 
-  * **Answer** Events alappsApps to update and monitor given values on the blockchain.
+  * **Answer**: Events alappsApps to update and monitor given values on the blockchain.
 
 * What are some other examples of non-fungible tokens that could be created?
 
-  * **Answer** A token that represents a card in a cardgame.
+  * **Answer**: A token that represents a card in a cardgame.
 
-  * **Answer** A token that represents a persons debt.
+  * **Answer**: A token that represents a persons debt.
 
-  * **Answer** A token that represents a certification that a person has earned.
+  * **Answer**: A token that represents a certification that a person has earned.
 
 ### 5. Instructor Do: IPFS: The InterPlanetary File System (15 min)
 
@@ -527,7 +527,7 @@ You may have to increase the `Gas Limit`, but once the contract has successfully
 
 * initial_value: `62000000`
 
-* token_uri: `ipfs://QmX2F3KFJzELLkn7Qadkq19tF62wQzAKDToTwhzNqWLpJ`
+* token_uri: `https://gateway.pinata.cloud/ipfs/QmX2F3KFJzELLkn7Qadkq19tF62wQzAKDToTwhzNqWLpJ4`
 
 Congratulate them, that was a lot of new information to take in; then briefly introduce the next activity.
 
