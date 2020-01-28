@@ -91,17 +91,37 @@ In this activity, students will be introduced to Amazon Lex; they will learn how
 
 * [ShareBill Intent](Activities/01-Ins_Intro_Lex/Solved/ShareBill_6_6f154262-76b0-465f-aed1-ce1f3914c492_Intent_LEX_V1.zip)
 
-Start this activity by opening the slides to the _Intro to Lex_ section and highlight the following:
+Start this activity by opening the slides to the "Intro to Amazon Lex" section and highlight the following:
 
 * Amazon Lex is an AWS service that allows developers to create conversational interfaces powered by the same deep learning technologies like Alexa.
 
-* Getting started with Amazon Lex is quite easy, it is just a four-step process.
-
 * All the complexity of deep learning algorithms is encapsulated, no coding is needed to start using it.
 
-Introduce the Amazon Lex jargon to students using a day-to-day example like booking a hotel room; comment to students that they will gain hands-on experience with these concepts in Today's class.
+* Getting started with Amazon Lex is quite easy, it is just a four-step process.
 
-Clarify to students the AWS regions where Amazon Lex is available, and pricing varies among regions. We will use `US West (Oregon)` for running the examples.
+  1. Create a bot and configure it so it can understand user's goals/intent.
+
+  2. Test the bot on the Amazon Lex console. Make sure it engages in conversation with the user.
+
+  3. Publish the bot and create an alias.
+
+  4. Deploy the bot on a mobile application or a messaging platform such as Slack or Facebook Messenger.
+
+Introduce the Amazon Lex jargon to students and comment that they will gain hands-on experience with these concepts in Today's class.
+
+* **Bot:** It's the core component of Amazon Lex. A bot performs automated tasks such as booking a hotel, making a wire transfer, or suggesting an investment portfolio.
+
+* **Intent:** Represents an action that the user wants to perform such as BookHotel, TransferMoney, or SuggestPortfolio. A bot can have more than one intent.
+
+* **Utterances:** Speech or text phrases that trigger the intent. They refer to the dialog between the user and the boot.
+
+* **Slots:** A piece of data that is necessary for the chatbot to fulfill the user’s intent. Think of it as required user input.
+
+* **Fulfillment:** When the chatbot has collected all the slot values, then it proceeds with the logic in the fulfillment section. This is where an AWS lambda function can be used if you need some business logic.
+
+Clarify to students that Amazon Lex is available only in a few AWS regions (Oregon, N. Virginia, Ireland, and Sidney), and pricing varies among regions.
+
+For the latest list of the supported Amazon Lex AWS regions, slack out to students [the link of the AWS Region Table for all AWS global infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/). We will use `US West (Oregon)` for running the examples.
 
 Slack out the [Amazon Lex Pricing policies](https://aws.amazon.com/lex/pricing/), remind students that from the date they get started with Amazon Lex, they can process up to 10,000 text requests and 5,000 speech requests per month for free for the first year. **Note:** This is subject to change, so they should verify the pricing structure using the link above.
 
@@ -129,11 +149,12 @@ Follow the next steps to perform a live demo.
 
   ![Step 4b](Images/lex-step4b.png)
 
-* **Step 5:** To create a new bot, click on the _Custom bot_ option and fill-out the following, next click the `Create` button to continue:
+* **Step 5:** Depending if you have created or not a chatbot before, click on the _Get Started_ or the _Create_ button, choose the _Custom bot_ option and fill-out the following, next click the `Create` button to continue:
 
-  * _Bot name:_ Share_The_Bill
+  * _Bot name:_ Share_Bill
   * _Output voice:_ Mathew
   * _Session timeout:_ 5 min
+  * _Sentiment analysis:_ `No`
   * _COPPA:_ Select `No`
 
   ![Step 5](Images/lex-step5.png)
