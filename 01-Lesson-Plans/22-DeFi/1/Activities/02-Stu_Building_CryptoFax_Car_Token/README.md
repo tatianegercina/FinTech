@@ -4,10 +4,10 @@ In this activity, you will implement a non-fungible car token containing an immu
 
 ## Instructions
 
-* Define your new contract's  `pragma` as ^0.5.11.
+* Define your new contract's  `pragma` as ^0.5.0.
 
   ```solidity
-  pragma solidity ^0.5.11;
+  pragma solidity ^0.5.0;
   ```
 
 * Import the OpenZeppelin libraries for `ERC721Full` and `safemath counters`.
@@ -142,6 +142,12 @@ In this activity, you will implement a non-fungible car token containing an immu
 ```
 
 * You are `emitting` the  Accident function in order to trigger the logging of a new accident report.
+
+* If you see a warning like this:
+
+  ![ERC721 Warning](Images/erc721-warning.png)
+
+  This is coming from the OpenZeppelin library and is safe to ignore.
 
 * Congratulations, at this point, you should now have a complete Cryptofax ERC721 non-fungible car token contract. Now deploy your contract in remix onto your local ganache blockchain.
 
