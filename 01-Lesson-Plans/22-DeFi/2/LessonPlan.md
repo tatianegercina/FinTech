@@ -655,9 +655,9 @@ Ask the class the following review questions.
 
 * What are some reasons for using a struct with two attributes instead of as opposed to two mappings for the copyright `owner` and `uri`?
 
-* **Answer:** Cheaper gas cost
+* **Answer:** Cheaper gas cost.
 
-* **Answer:** Less complex code
+* **Answer:** Less complex code.
 
 * After having completed this exercise, can you think of any interesting EIP/ERC specification ideas?
 
