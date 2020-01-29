@@ -257,9 +257,9 @@ Start the activity by opening the lesson slides, navigate to the _Intro to AWS L
 
 * Sometimes AWS Lambda is seen as a web service or and API since it runs code remotely, however, AWS Lambda is a serverless technology where you just upload your code and Lambda takes care of everything.
 
-* In general terms. _serverless_ means that you do not have to be worried about any server configuration nor administration.
+* In general terms, _serverless_ means that you do not have to be worried about any server configuration nor administration.
 
-* AWS Lambda can have your automatically trigger from other AWS services or call it directly from any web or mobile app.
+* AWS Lambda can have your code automatically trigger from other AWS services or call it directly from any web or mobile app.
 
 * We are going to use AWS Lambda by triggering code from an Amazon Lex Bot.
 
@@ -312,9 +312,9 @@ Explain to students that the lambda function contains six general building block
 
     * `build_validation_result()`: This function defines an internal validation message structured as a python dictionary.
 
-    * `validate_data()`: This function validates the data provided by the user across the intent's dialog on Amazon Lex according to the business logic. In this demo, there are only to rules: (1) the user should be at least 21 years old (2) the amount in US Dollars to convert must be greater than zero.
+    * `validate_data()`: This function validates the data provided by the user across the intent's dialog on Amazon Lex according to the business logic. In this demo, there are only two rules: (1) the user should be at least 21 years old (2) the amount in US Dollars to convert must be greater than zero.
 
-Explain students that the `validate_data()` function uses the `build_validation_result()` function to return a validation result message. In this demo, if the user's age is less than 21 or the amount to convert is less than 0, a `False` result is returned; otherwise, a `True` result is returned.
+Explain students that the `validate_data()` function uses the `build_validation_result()` function to return a validation result message. In this demo, if the user's age is less than 21 or the amount to convert is less than `0`, a `False` result is returned; otherwise, a `True` result is returned.
 
 ```python
 def validate_data(birthday, usd_amount, intent_request):
@@ -657,11 +657,11 @@ Open a facilitated discussion with the students by asking the following question
 
 Continue the discussion by asking for volunteers that want to share their experience finding the bugs provoked by her or his partner.
 
-  **Sample Answer:** It was frustrating since error messages returned by Lambda were no clear.
+* **Sample Answer:** It was frustrating since error messages returned by Lambda were no clear.
 
-  **Sample Answer:** It was funny to play becoming a bug detective.
+* **Sample Answer:** It was funny to play becoming a bug detective.
 
-  **Sample Answer:** It was a great opportunity to practice my debugging skills.
+* **Sample Answer:** It was a great opportunity to practice my debugging skills.
 
 Close the discussion by answering any reminder question before moving forward.
 
