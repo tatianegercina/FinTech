@@ -1,6 +1,6 @@
 # Building the Accident Report System
 
-In this activity, you will be building the Accident Report System command line interface that will upload and pin accident reports to IPFS via Pinata, and permanently storing them on-chain by using the `reportAccident` function on your `CryptoFax` contract.
+In this activity, you will be building the Accident Report System command line interface that will upload and pin accident reports to IPFS via Pinata, permanently storing them on-chain by using the `reportAccident` function on your `CryptoFax` contract.
 
 ## Instructions
 
@@ -12,7 +12,7 @@ pip install python-dotenv
 
 * Create a new working directory called `accident` and `cd` into it. You will need to stay in this directory for the rest of this activity.
 
-* Create a file called `.env` and populate it with the [starter code.](Unsolved/.env).
+* Create a file called `.env` and populate it with the [starter code](Unsolved/.env).
 
   * Navigate to your [Pinata Account Page](https://pinata.cloud/account) and copy the API Key and Secret API Key into the corresponding environment variables in the `.env` file.
 
