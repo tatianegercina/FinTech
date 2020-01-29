@@ -10,7 +10,7 @@ Trilogy, as a company, values transparency and data-driven change quite highly. 
 
 ### Overview
 
-In today's class, students will be introduced to the concept of DeFi (short for decentralized finance). Though DeFi most commonly refers to financial systems built upon distributed ledgers frequently leveraging smart contracts. Students will gain the scope that DeFi is not a particular technology or implementation but rather a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
+In today's class, students will be introduced to the concept of DeFi (short for decentralized finance). Though DeFi most commonly refers to financial systems built upon distributed ledgers frequently leveraging smart contracts. Students will gain the scope that DeFi is not a particular technology or implementation.  Rather, DeFi is a movement within the financial technology sector where future financial systems are being created and deployed with an open, decentralized, and permissionless architecture.
 
 ### Class Objectives
 
@@ -50,37 +50,37 @@ Previously students have implemented both a basic token as well as the ERC21 fun
 
 * What are some differences between `fungible` and `non-fungible` tokens?
 
-* **Answer** Non-fungible tokens are unique, fungible tokens are not unique.
+    * **Answer**: Non-fungible tokens are unique, fungible tokens are not unique.
 
-* **Answer** Fungible tokens are interchangeable with one another whereas non-fungible are not.
+    * **Answer**: Fungible tokens are interchangeable with one another whereas non-fungible are not.
 
-* **Answer** non-fungible tokens use ERC 721, fungible tokens use ERC 777.
+    * **Answer**: non-fungible tokens use ERC 721, fungible tokens use ERC 777.
 
 * What are some examples of `fungible` assets?
 
-* **Answer** United States Dollars (USD)
+    * **Answer**: United States Dollars (USD)
 
-* **Answer** Ethereum (ETH)
+    * **Answer**: Ethereum (ETH)
 
-* **Answer** Bitcoin (BTC)
+    * **Answer**: Bitcoin (BTC)
 
-* **Answer** Gold
+    * **Answer**: Gold
 
 * What are some examples of `non-fungible` assets?
 
-* **Answer** Art
+    * **Answer**: Art
 
-* **Answer** Diamonds
+    * **Answer**: Diamonds
 
-* **Answer** Land Ownership
+    * **Answer**: Land Ownership
 
 * What are some potential benefits of using open source libraries such as OpenZeppelin?
 
-* **Answer** They are freely available to use and contribute to under the MIT license.
+    * **Answer**: They are freely available to use and contribute to under the MIT license.
 
-* **Answer** It's a community-backed project that has implemented many of the communities agreed-upon standards (EIPS/ERCS).
+    * **Answer**: It's a community-backed project that has implemented many of the communities agreed-upon standards (EIPS/ERCS).
 
-* **Answer** It provides a secure, standardized starting point for various smart contract standards.
+    * **Answer**: It provides a secure, standardized starting point for various smart contract standards.
 
 Now that the class has been refreshed on fungibility set the stage for today's lesson by introducing the concept of `DeFi`.
 
@@ -129,7 +129,7 @@ Now define a new counter to keep track of what current `token_id` we are on star
  Counters.Counter token_ids;
  ```
 
-* In order for us to track the number of tokes that have been minted and to generate the next `token_id`, we will be leveraging the custom Counter data structure from OpenZeppelin.
+* In order for us to track the number of tokens that have been minted and to generate the next `token_id`, we will be leveraging the custom Counter data structure from OpenZeppelin.
 
 * Openzeppelin SafeMath counters allows us to increment and decrement a counter without worrying about overflows and other common types of errors.
 
@@ -208,7 +208,7 @@ Add the following lines of code inside the `registerArtwork` function for genera
 
 * Inside the body of the `registerArtwork` function you must generate the next `token_id`, this is done by incrementing the `token_ids` counter with the `.increment()` method and then by fetching the current count with the `.current()` method; storing it as a `uint` named `token_id`.
 
-Next, inside the `registerArtwork` function, call the internal `_mint` method from `ERC721Full`. Pass the `_mint` function the `owner` value that we defined and the new `token_id` that was generated.
+Next, inside the `registerArtwork` function, call the internal `_mint` method from `ERC721Full`. Pass the `owner` value that we defined and the new `token_id` that was generated into the `_mint` function.
 
  ```solidity
  _mint(owner, token_id);
@@ -227,11 +227,11 @@ On the next line inside of the `registerArtwork` function, call the internal `_s
 On the next line of the `registerArtwork` function, add the generated `token_id` and map it to a new artwork instance with the passed `name`, `artist`, `initial_value`. Then have the `registerArtwork` function return the generated `token_id`.
 
  ```solidity
- cars[token_id] = Car(vin, 0);
- return token_id;
+      art_collection[token_id] = Artwork(name, artist, initial_value);
+      return token_id;
  ```
 
-* In order to register a piece of art, it's `token_id` must be stored in the defined mapping of art tokens.
+* In order to register a piece of art, its `token_id` must be stored in the defined mapping of art tokens.
 
 * When our `registerArtwork` function finishes creating a new artwork token, it will then return the token's id.
 
@@ -279,13 +279,16 @@ In this activity, students will implement a non-fungible car token containing an
 
 **Files:**
 
-* [Solved](Activities/02-Stu_Building_CryptoFax_Car_Token/Solved/CryptoFax.sol)
-
 * [Unsolved](Activities/02-Stu_Building_CryptoFax_Car_Token/Unsolved/CryptoFax.sol)
 
 ### 4. Instructor Do: ERC721 + Structs and Events Review (10 min)
 
 Open and review the solved solution from the previous activity.
+
+**Files:**
+
+* [Solved](Activities/02-Stu_Building_CryptoFax_Car_Token/Solved/CryptoFax.sol)
+
 
 ```solidity
 contract CryptoFax is ERC721Full {
@@ -364,7 +367,7 @@ contract CryptoFax is ERC721Full {
  }
 ```
 
-* The `reportAccident`function is responsible for reporting a new accident by logging it's `report_uri`, it accepts two parameters a `uint` named `token_id` and a `string memory` representing the `report_uri`.
+* The `reportAccident`function is responsible for reporting a new accident by logging its `report_uri`.  It accepts two parameters - a `uint` named `token_id` and a `string memory` representing the `report_uri`.
 
 * The `reportAccident` function does three things:
 
@@ -378,29 +381,29 @@ contract CryptoFax is ERC721Full {
 
 * Congratulations, you've just built an `ERC721` compliant `non-fungible` token complete with on-chain custom attributes and several linked token `URI`s
 
-Discuss the following review questions with the class:
+Return to the slides and discuss the following review questions with the class:
 
-* Why is a struct a useful data structure.
+* Why is a struct a useful data structure?
 
-* **Answer** It allows you to create new dynamic data structures.
+    * **Answer**: It allows you to create new dynamic data structures.
 
-* **Answer** It allows you to create data structures that contain multiple types.
+    * **Answer**: It allows you to create data structures that contain multiple types.
 
-* **Answer** It allows you to create objects.
+    * **Answer**: It allows you to create objects.
 
-* What are some uses for solidity events.
+* What are some uses for solidity events?
 
-* **Answer** Events are a cheap way of logging information on the blockchain.
+    * **Answer**: Events are a cheap way of logging information on the blockchain.
 
-* **Answer** Events alappsApps to update and monitor given values on the blockchain.
+    * **Answer**: Events alappsApps to update and monitor given values on the blockchain.
 
 * What are some other examples of non-fungible tokens that could be created?
 
-* **Answer** A token that represents a card in a card game.
+    * **Answer**: A token that represents a card in a card game.
 
-* **Answer** A token that represents a person's debt.
+    * **Answer**: A token that represents a person's debt.
 
-* **Answer** A token that represents a certification that a person has earned.
+    * **Answer**: A token that represents a certification that a person has earned.
 
 ### 5. Instructor Do: IPFS: The InterPlanetary File System (15 min)
 
@@ -408,7 +411,7 @@ In this activity, students are introduced to the `IPFS` technology and how it ca
 
 **Files:**
 
-* [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_System/Solved/erc721example.sol)
+* [Example URI file](Activities/03-Ins_IPFS_The_InterPlanetary_File_System/Solved/example_uri.json))
 
 Begin by giving the students some background on IPFS, what it is, how it works.
 
@@ -426,7 +429,7 @@ Begin by giving the students some background on IPFS, what it is, how it works.
 
 * For two users to exchange data with one another across the internet, they need a common set of rules for how the information is sent between them; this is a `communication protocol`.
 
-* `Communication protocols` are usually built within a stack known as a `protocol suite`. For example, the `internet protocol suite` is widely used today, and of the protocols that make up the suite `HyperText Transfer Protocol` or `HTTP` is the foundation for communication.
+* `Communication protocols` are usually built within a stack known as a `protocol suite`. For example, the `internet protocol suite` is widely used today, and of the protocols that make up the suite, `HyperText Transfer Protocol` or `HTTP` is the foundation for communication.
 
 * Another important piece is known as the `system's architecture` or how the actual computers within the network can communicate with one another. Traditionally this is done in a `client-server` model; however, IPFS leverages a `peer-to-peer` network model of connection.
 
@@ -540,7 +543,7 @@ You may have to increase the `Gas Limit`, but once the contract has successfully
 
 * artist: `Leonardo da Vinci`
 
-* initial_value: `62,000,000`
+* initial_value: `62000000`
 
 * token_uri: `ipfs://bafybeiamajrnvskqn4s7swwtnac33ewoo6dib7vx25tlhcnt7cbeysse4m`
 
@@ -566,33 +569,33 @@ Discuss the following review questions with the class about the general concepts
 
 * What are some potential issues that IPFS seeks to solve?
 
-* **Answer** Inefficiencies in the web such as `duplicate files`.
+    * **Answer**: Inefficiencies in the web such as `duplicate files`.
 
-* **Answer** Inefficiencies in the web such as having to route to a faraway server to get the file you need when it might be right next door.
+    * **Answer**: Inefficiencies in the web such as having to route to a faraway server to get the file you need when it might be right next door.
 
-* **Answer** Problems with security and file integrity, such as not knowing whether or not files you have accessed over the web have changed.
+    * **Answer**: Problems with security and file integrity, such as not knowing whether or not files you have accessed over the web have changed.
 
-* **Answer** Problems with the security of centralized servers providing a centralized attack vector.
+    * **Answer**: Problems with the security of centralized servers providing a centralized attack vector.
 
-* What are some potential use cases of IPFS?
+* What are some examples of how IPFS seeks to solve these issues?
 
-* **Answer** Hosting any file that you want to maintain an immutable copy of.
+    * **Answer**: Hosting any file that you want to maintain an immutable copy of.
 
-* **Answer** Hosting any file that needs to be censorship-resistant.
+    * **Answer**: Hosting any file that needs to be censorship-resistant.
 
-* **Answer** Hosting very-large files between organizations.
+    * **Answer**: Hosting very-large files between organizations.
 
-* **Answer** Hosting any file in general.
+    * **Answer**: Hosting any file in general.
 
-Have the class take a moment to brainstorm some potential use-cases for IPFS; potential use-cases include:
+* Have the class take a moment to brainstorm some potential use-cases for IPFS; potential use-cases include:
 
-* **Potential Answer** An open street map application that shares panoramic photos of streets through a decentralized platform.
+    * **Potential Answer**: An open street map application that shares panoramic photos of streets through a decentralized platform.
 
-* **Potential Answer** A static website host.
+    * **Potential Answer**: A static website host.
 
-* **Potential Answer** A decentralized social platform where users can upload photos.
+    * **Potential Answer**: A decentralized social platform where users can upload photos.
 
-* **Potential Answer** A p2p chat with file sharing.
+    * **Potential Answer**: A p2p chat with file sharing.
 
 ---
 
