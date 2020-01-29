@@ -46,23 +46,23 @@ During the previous class, students were introduced to the concept of DeFi (shor
 
 * What are some benefits of solidity events?
 
-  * **Answer** They are a cheap amount of gas.
+  **Answer:** They are a cheap amount of gas.
 
-  * **Answer** They allow you to keep a log of information on-chain.
+  **Answer:** They allow you to keep a log of information on-chain.
 
-  * **Answer** Events are MUCH cheaper than contract storage
+  **Answer:** Events are MUCH cheaper than contract storage.
 
-  * **Answer** Events are solidity's built-in way to interact with something external, such as a user interface.
+  **Answer:** Events are solidity's built-in way to interact with something external, such as a user interface.
 
 * What are some potential issues that IPFS seeks to solve?
 
-  * **Answer** Inefficiencies in the web such as `duplicate files`.
+  **Answer:** Inefficiencies in the web such as `duplicate files`.
 
-  * **Answer** Inefficiencies in the web such as having to route to a faraway server to get the file you need when it might be right next door.
+  **Answer:** Inefficiencies in the web such as having to route to a faraway server to get the file you need when it might be right next door.
 
-  * **Answer** Problems with security and file integrity, such as not knowing whether or not files you have accessed over the web have changed.
+  **Answer:** Problems with security and file integrity, such as not knowing whether or not files you have accessed over the web have changed.
 
-  * **Answer** Problems with the security of centralized servers providing a centralized attack vector.
+  **Answer:** Problems with the security of centralized servers providing a centralized attack vector.
 
 ### 2. Instructor Do: Building to a Smart Contract Specification (15 min)
 
@@ -78,9 +78,9 @@ The instructor will discuss the process of breaking down the elements of a smart
 
 Begin by opening the [Example CryptoRight EIP](Activities/01-Ins_Building_to_a_Smart_Contract_Specification/Resources/ExampleEIP.md) and displaying it for the class.
 
-* In earlier classes we took a look at a variety of the EIP specifications located on [https://eips.ethereum.org/EIPS](https://eips.ethereum.org/EIPS)
+* In earlier classes we took a look at a variety of the EIP specifications located on [https://eips.ethereum.org/](https://eips.ethereum.org/)
 
-* Today, we will take a new example EIP, break it down and translate it into functioning code.
+* Today we will take a new example EIP, break it down and translate it into functioning code. Remember, an EIP is an Ethereum Improvement Proposal. An ERC is an application-level (aka, Solidity) EIP.
 
 * Let's begin by identifying the goal of the current contract. This will allow us to gain scope on the logic that we will be implementing.
 
@@ -88,7 +88,7 @@ Begin by opening the [Example CryptoRight EIP](Activities/01-Ins_Building_to_a_S
 
 Together with the class, read the `Simple Summary`, `Abstract`, and `Motivation` sections of the EIP.
 
-Open [Remix](https:://remix.ethereum.org/) in your web browser and create two new contracts the first-named `ICryptoRight.sol`  and the second named `CryptoRight.sol`.
+Open [Remix](https://remix.ethereum.org/) in your web browser and create two new contracts the first-named `ICryptoRight.sol` and the second named `CryptoRight.sol`.
 
 Inside `ICryptoRight.sol` paste the contents of [ICryptoRight.sol](Activities/01-Ins_Building_to_a_Smart_Contract_Specification/Resources/ICryptoRight.sol) from the resources folder.
 
@@ -103,7 +103,9 @@ contract CryptoRight is ICryptoRight {
 }
 ```
 
-Next, pull up remix side by side with the [Example CryptoRight EIP](Activities/01-Ins_Building_to_a_Smart_Contract_Specification/Resources/ExampleEIP.md) and go through each method definition/description inside the specification section of the EIP document while scaffolding out each function with the class in realtime.
+* We can ignore the `ABIEncoderV2` warning that appears. This specification is using the latest ABI encoder in order to support checking certain functionalities at a more granular level (such as checking if we return a Work struct from a mapping).
+
+Next, pull up Remix side by side with the [Example CryptoRight EIP](Activities/01-Ins_Building_to_a_Smart_Contract_Specification/Resources/ExampleEIP.md).
 
 * Now that we've familiarized ourselves with the goal of the example ERC333 copyright contract, let's define the structure of our contract and scaffold out each function's business logic.
 
@@ -111,7 +113,7 @@ Next, pull up remix side by side with the [Example CryptoRight EIP](Activities/0
 
 Read aloud the `copyrights` method's interface definition and description.
 
-* copyrights
+* `copyrights`
 
 * Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyright's `owner` and `uri`.
 
@@ -138,7 +140,7 @@ mapping(uint => Work) public copyrights;
 
   * This is a great example of how a specification's defined interface may not always exactly match what the actual code will look like but rather the interface that will be generated. `Interface` is both a defined function and the concept of what input/output for a given `API` is expected to be present.
 
-Inside the CryptoRight contract under the `copyright_ids` coutner create a new `struct` named `Work`. Inside this `struct` create an `address` attribute named `owner` and a `string` attribute named `uri`.
+Inside the CryptoRight contract under the `copyright_ids` counter create a new `struct` named `Work`. Inside this `struct` create an `address` attribute named `owner` and a `string` attribute named `uri`.
 
   ```Solidity
   struct Work {
@@ -153,7 +155,7 @@ Inside the CryptoRight contract under the `copyright_ids` coutner create a new `
 
 Read aloud the `copyrightWork` method interface definition and description.
 
-* copyrightWork
+* `copyrightWork`
 
   ```Solidity
   function copyrightWork(string memory reference_uri) public
@@ -240,7 +242,7 @@ Next, add the code implementation for each commented step inside the `copyrightW
 
 Read aloud the `openSourceWork` method interface definition.
 
-* openSourceWork
+* `openSourceWork`
 
   ```Solidity
   function openSourceWork(string memory reference_uri) public
@@ -313,7 +315,7 @@ function transferCopyrightOwnership(uint copyright_id, address new_owner) public
 
   * Now let's first focus on the second half of the `transferCopyrightOwnership` method's description "This function must only be callable by the `address` of the `owner` of the given `copyright_id`".
 
-Add a modifier between the `copyrights mapping` and `copyrightWork` function named `onlyCopyrightOwner`. Have the modifier accept a given `uint` named `copyright_id` and inside the modifier body add a `require statement` that checks if the given. `copyrights_id` is equal to the current `msg.sender`.
+Add a modifier between the `copyrights mapping` and `copyrightWork` function named `onlyCopyrightOwner`. Have the modifier accept a given `uint` named `copyright_id` and inside the modifier body add a `require statment` that checks if the given `copyrights_id` is equal to the current `msg.sender`.
 
 ```Solidity
     modifier onlyCopyrightOwner(uint copyright_id) {
@@ -408,7 +410,7 @@ Now that all of the method definitions with their accompanying business logic ha
 Read aloud the `Copyright` event interface definition and description.
 
 ```Solidity
-event Copyright(uint copyright_id, address owner, string uri);
+event Copyright(uint copyright_id, address owner, string reference_uri);
 ```
 
 * The copyright event requires a `uint copy_right_id`, an `address owner`, and a `string reference_uri`.
@@ -462,12 +464,12 @@ event OpenSource(uint copyright_id, string reference_uri);
 Add the `OpenSource` event definition below the `Copyright` event.
 
 ```Solidity
-event Copyright(uint copyright_id, address owner, string uri);
+event Copyright(uint copyright_id, address owner, string reference_uri);
 
 event OpenSource(uint copyright_id, string reference_uri);
 ```
 
-* We are going to add the `OpenSource` event below the `Copyright` event.
+* As you can see, we are going to add the `OpenSource` event below the `Copyright` event, but the order does not matter.
 
 * Now, as per the event description, we have to `emit` the event when a new Open Source work is created or in other words when the `openSourceWork` and `renounceCopyrightOwnership` functions are called.
 
@@ -518,7 +520,7 @@ event Transfer(uint copyright_id, address new_owner);
 Add the `Transfer` event definition below the `OpenSource` event.
 
 ```Solidity
-event Copyright(uint copyright_id, address owner, string uri);
+event Copyright(uint copyright_id, address owner, string reference_uri);
 
 event OpenSource(uint copyright_id, string reference_uri);
 
@@ -597,7 +599,7 @@ modifier onlyCopyrightOwner(uint copyright_id) {
 }
 ```
 
-* To restrict the `transferCopyrightOwnership` and `renounceCopyrightOwnership` methods so that only the owner of the `copyright_id` given to the function can call it we implemented the `onlyCopyrightOwner` modifier containing a require that compares the given `copyright_id` parameter to the current `msg.sender`.
+* To restrict the `transferCopyrightOwnership` and `renounceCopyrightOwnership` methods so that only the owner of the `copyright_id` given to the function can call it, we implemented the `onlyCopyrightOwner` modifier containing a require that compares the given `copyright_id` parameter to the current `msg.sender`.
 
 ```Solidity
 function copyrightWork(string memory reference_uri) public {
@@ -620,7 +622,7 @@ function openSourceWork(string memory reference_uri) public {
     }
 ```
 
-* The `copyrightWork` and `openSourceWork` functions were both implemented in a very similar way. Both functions generate a new `copyright_id` by incrementing the `copyright_ids` counter and taking its current value. Where the two functions differ is when it comes to setting the Work's owner's address. Sine open-source works don't have an owner we leave the `owner` attribute set to the default `address(0)`.
+* The `copyrightWork` and `openSourceWork` functions were both implemented in a very similar way. Both functions generate a new `copyright_id` by incrementing the `copyright_ids` counter and taking its current value. Where the two functions differ is when it comes to setting the Work's owner's address. Since open-source works don't have an owner in this system we leave the `owner` attribute set to the default `address(0)`.
 
 
 ```Solidity
@@ -651,11 +653,11 @@ Ask the class the following review questions.
 
 * **Potential Answer** Common functionality such as generating copyright_ids could be abstracted to an internal function.
 
-* What are some reasons for using a struct with two attributes instead of as opposed to two mappings for the copyright `owner` and `uri`.
+* What are some reasons for using a struct with two attributes instead of as opposed to two mappings for the copyright `owner` and `uri`?
 
-* **Answer** Cheaper gas cost
+* **Answer:** Cheaper gas cost.
 
-* **Answer** Less complex code
+* **Answer:** Less complex code.
 
 * After having completed this exercise, can you think of any interesting EIP/ERC specification ideas?
 
@@ -701,7 +703,7 @@ const contract_address = "0xcBE34754fE19B9b7068f6E1e1CEB4E9A1e4AAB35";
 
 * We must ensure this address matches our deployed contract; otherwise, the frontend will not know where to find the contract.
 
-After that, all that is left to ensure that the `CryptoRight.json` has the contract's ABI within.
+After that, all that is left is to ensure that the `CryptoRight.json` has the contract's ABI within.
 
 * The `CryptoRight.json` file contains the contract's ABI. This dApp automatically loads this file and expects it to be in the same directory. We'll want to ensure that our contract's ABI is in this file.
 
