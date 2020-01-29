@@ -55,8 +55,8 @@ const dApp = {
     const pinata_api_key = $("#dapp-pinata-api-key").val();
     const pinata_secret_api_key = $("#dapp-pinata-secret-api-key").val();
 
-    if (!pinata_api_key || !pinata_secret_api_key) {
-      alert("Pinata API Keys required!");
+    if (!pinata_api_key || !pinata_secret_api_key || !name || !description || !image) {
+      M.toast({ html: "Please fill out then entire form!" });
       return;
     }
 
