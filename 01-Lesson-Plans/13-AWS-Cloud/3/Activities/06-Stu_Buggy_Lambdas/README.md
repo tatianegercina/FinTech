@@ -33,3 +33,6 @@ As you already know not everything is hunky-dory on coding, there are sometimes 
 5. Comment between both of you about your experience debugging the Lambda's code.
 
 6. Undo the changes or restore your Lambda function from your backup copy.
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
