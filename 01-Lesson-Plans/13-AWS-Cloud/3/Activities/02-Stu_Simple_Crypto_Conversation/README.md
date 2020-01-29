@@ -12,6 +12,7 @@ You decided to go beyond the typical online survey or the old-fashioned phone ca
     * _Bot name:_ `Crypto_Converter`
     * _Output voice:_ Salli
     * _Session timeout:_ 5 min
+    * _Sentiment analysis_: `No`
     * _COPPA:_ Select `No`
 
   ![Cryto converter creation](Images/cypto_converter_creation.png)
@@ -24,7 +25,7 @@ You decided to go beyond the typical online survey or the old-fashioned phone ca
 
     * `I want to convert USD to BTC`
     * `I want to convert dollars to BTC`
-    * `I want to convert dollars to BTC`
+    * `I want to convert dollars to bitcoin`
 
 4. Add two slots as follows:
 
@@ -54,3 +55,6 @@ At the end, your intent's configuration should look like this.
 8. Once the build process ends, test your boot with the sample utterances, you should have a final conversation flow like the following.
 
 ![Sample bot test](Images/crypto_converter_1.gif)
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
