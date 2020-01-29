@@ -18,7 +18,7 @@ contract CryptoRight is ICryptoRight {
 
     event Copyright(uint copyright_id, address owner, string reference_uri);
 
-    event OpenSource(uint copyright_id, string reference_uri);
+    event OpenSource(uint copyright_id, string uri);
 
     event Transfer(uint copyright_id, address new_owner);
 
