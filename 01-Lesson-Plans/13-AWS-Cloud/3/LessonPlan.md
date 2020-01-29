@@ -235,7 +235,7 @@ To import the solution, click on the _Import_ option into the _Actions_ button a
 
 Click on the `Crypto_Converter` bot, once the `convertUSD` intent is on the screen highlight the following:
 
-* Adding `{usdAmount}` on the sample utterances, will allow the user send messages like `I want to convert **100** dollars to BTC` where the deep learning algorithms will match the `{usdAmount}` label with a number on the utterance speech, as can be seen on the demo gif file bellow.
+* Adding `{usdAmount}` on the sample utterances, will allow the user send messages like `I want to convert 100 dollars to BTC` where the deep learning algorithms will match the `{usdAmount}` label with a number on the utterance speech, as can be seen on the demo gif file bellow.
 
 * When the bot is tested, the date of birth can be given on any format (e.g., `12/16/1978`, `16/12/1978`, `Dec 16, 1978`), using the `AMAZON.DATE` slot type will transform the date automatically to the `YYYY-mm-dd` format, as can be seen on the demo gif file bellow.
 
