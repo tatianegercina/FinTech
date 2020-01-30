@@ -1,7 +1,7 @@
 pragma solidity ^0.5.0;
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/drafts/Counters.sol";
-import "../Resources/ICryptoRight.sol";
+import "./ICryptoRight.sol";
 
 contract CryptoRight is ICryptoRight {
 
@@ -18,7 +18,7 @@ contract CryptoRight is ICryptoRight {
 
     event Copyright(uint copyright_id, address owner, string reference_uri);
 
-    event OpenSource(uint copyright_id, string uri);
+    event OpenSource(uint copyright_id, string reference_uri);
 
     event Transfer(uint copyright_id, address new_owner);
 
