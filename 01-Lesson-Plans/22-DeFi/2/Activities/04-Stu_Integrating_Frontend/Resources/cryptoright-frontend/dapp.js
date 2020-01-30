@@ -1,5 +1,5 @@
 // Change this address to match your deployed contract!
-const contract_address = "0xcBE34754fE19B9b7068f6E1e1CEB4E9A1e4AAB35";
+const contract_address = "0xeD6e922a4fA3978A652d2BA7253Df055C2BF79C9";
 
 const dApp = {
   ethEnabled: function() {
@@ -106,7 +106,7 @@ const dApp = {
 
       const method = $("#dapp-opensource-toggle").prop("checked") ? this.contract.methods.openSourceWork(reference_uri) : this.contract.methods.copyrightWork(reference_uri);
 
-      method.send({from: this.accounts[0]})
+      await method.send({from: this.accounts[0]})
       .on("receipt", (receipt) => {
         M.toast({ html: "Transaction Mined! Refreshing UI..." });
         location.reload();
