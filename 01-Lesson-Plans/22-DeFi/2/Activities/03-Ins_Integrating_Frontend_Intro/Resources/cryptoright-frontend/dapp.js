@@ -104,13 +104,19 @@ const dApp = {
       M.toast({ html: `Success. Reference URI located at ${reference_uri}.` });
       M.toast({ html: "Sending to blockchain..." });
 
-      const method = $("#dapp-opensource-toggle").prop("checked") ? this.contract.methods.openSourceWork(reference_uri) : this.contract.methods.copyrightWork(reference_uri);
-
-      await method.send({from: this.accounts[0]})
-      .on("receipt", (receipt) => {
-        M.toast({ html: "Transaction Mined! Refreshing UI..." });
-        location.reload();
-      });
+      if ($("#dapp-opensource-toggle").prop("checked")) {
+        this.contract.methods.openSourceWork(reference_uri).send({from: this.accounts[0]})
+        .on("receipt", (receipt) => {
+          M.toast({ html: "Transaction Mined! Refreshing UI..." });
+          location.reload();
+        });
+      } else {
+        this.contract.methods.copyrightWork(reference_uri).send({from: this.accounts[0]})
+        .on("receipt", (receipt) => {
+          M.toast({ html: "Transaction Mined! Refreshing UI..." });
+          location.reload();
+        });
+      }
 
     } catch (e) {
       alert("ERROR:", JSON.stringify(e));
