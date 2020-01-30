@@ -237,11 +237,12 @@ Define a new `public` function named `auctionEnd`.
 
 * This function will end the auction and send the highest bid to the beneficiary.
 
-Inside the body of the `auctionEnd` function define a `require` statement that will check if the auction has ended by negating the `ended` variable with the `!` operator. Then set the `ended` variable equal to `true` and `emit` the `AuctionEnded` event passing it the `highestBidder` and the `highestBid` variables. Finally, transfer the `highestBid` amount to the `beneficiary` using the `.transfer` address method.
+Inside the body of the `auctionEnd` function define a `require` statement that will check if the auction has ended by negating the `ended` variable with the `!` operator. Below that define a second `require` statement that checks to see if `msg.sender` is equal to `beneficiary`. Then set the `ended` variable equal to `true` and `emit` the `AuctionEnded` event passing it the `highestBidder` and the `highestBid` variables. Finally, transfer the `highestBid` amount to the `beneficiary` using the `.transfer` address method.
 
 ```solidity
         // 1. Conditions
         require(!ended, "auctionEnd has already been called.");
+        require(msg.sender == beneficiary, "You are not the auction beneficiary");
 
         // 2. Effects
         ended = true;
@@ -266,6 +267,8 @@ Inside the body of the `auctionEnd` function define a `require` statement that w
 * Inside the body of the `auctionEnd` contract:
 
   * We are going to first check for the condition of whether or not the auction has ended by negating the `ended` variable with the `!` operator.
+
+  * A second require is defined to check if the `msg.sender` attempting to end the auction is equal to the `beneficiary` running the auction.
 
   * Next we are going to set ended equal to true to end the auction if it hasn't already ended, eg our perform our effects.
 
