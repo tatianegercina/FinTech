@@ -190,7 +190,7 @@ Next, define a new `if statement` that checks if the amount variable is greater 
 
 * Inside the `withdraw` function we are first going to check the current amount that the person who is calling the withdraw function, eg, `msg.sender` has deposited into the contract. If the amount is not greater than 0 then there is nothing to withdraw and we return `true`.
 
-Set the current `msg.sender's` mapped `uint` value inside `pendingReturns` to 0.
+Inside the `if stament` set the current `msg.sender's` mapped `uint` value from `pendingReturns` to 0.
 
 ```solidity
             pendingReturns[msg.sender] = 0;
@@ -237,7 +237,7 @@ Define a new `public` function named `auctionEnd`.
 
 * This function will end the auction and send the highest bid to the beneficiary.
 
-Inside the body of the `auctionEnd` contract define a `require` statement that will check if the auction has ended by negating the `ended` variable with the `!` operator. Then set the `ended` variable equal to `true` and `emit` the `AuctionEnded` event passing it the `highestBidder` and the `highestBid` variables. Finally, transfer the `highestBid` amount to the `beneficiary` using the `.transfer` address method.
+Inside the body of the `auctionEnd` function define a `require` statement that will check if the auction has ended by negating the `ended` variable with the `!` operator. Then set the `ended` variable equal to `true` and `emit` the `AuctionEnded` event passing it the `highestBidder` and the `highestBid` variables. Finally, transfer the `highestBid` amount to the `beneficiary` using the `.transfer` address method.
 
 ```solidity
         // 1. Conditions
