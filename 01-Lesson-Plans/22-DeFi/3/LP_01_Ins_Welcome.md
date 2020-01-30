@@ -42,28 +42,28 @@ Review the following recall questions with the class.
 
 * What are some benefits of using Github pages?
 
-**Answer** Quick and Easy Deployments.
+* **Answer** Quick and Easy Deployments.
 
-**Answer** Free Static Web Hosting
+* **Answer** Free Static Web Hosting
 
-**Answer** Free-SSL
+* **Answer** Free-SSL
 
-**Answer** Integrated Version Control(GIT)
+* **Answer** Integrated Version Control(GIT)
 
 * Why is having a documented/formalized API for your applications and libraries important?
 
-**Answer** Good documentation is always important.
+* **Answer** Good documentation is always important.
 
-**Answer** Helps set forth standards from and for your given implementation. (like `EIPS` and `ERCS`)
+* **Answer** Helps set forth standards from and for your given implementation. (like `EIPS` and `ERCS`)
 
-**Answer** So that others can build off of your application.
+* **Answer** So that others can build off of your application.
 
-Having written many smart contracts, and now deployed a dApp. What are some contracts that you believe could be leveraged within a dApp?
+* Having written many smart contracts, and now deployed a dApp. What are some contracts that you believe could be leveraged within a dApp?
 
-**Potential Answer** A contract that tracks the immutable locations of historical landmarks.
+* **Potential Answer** A contract that tracks the immutable locations of historical landmarks.
 
-**Potential Answer** A contract that transfers tokens between two users within a decentralized product swapping website.
+* **Potential Answer** A contract that transfers tokens between two users within a decentralized product swapping website.
 
-**Potential Answer** Maintain an immutable achievement list of users' achievements within an online course dApp.
+* **Potential Answer** Maintain an immutable achievement list of users' achievements within an online course dApp.
 
-**Potential Answer** Any other dApp or smart contract that you can think of; the Ethereum blockchain is a globally distributed datastore and supports a fully Turing complete programing language.
+* **Potential Answer** Any other dApp or smart contract that you can think of; the Ethereum blockchain is a globally distributed datastore and supports a fully Turing complete programing language.
