@@ -7,7 +7,8 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
     constructor(
         string memory name,
-        string memory symbol
+        string memory symbol,
+        uint initial_supply
     )
         ERC20Detailed(name, symbol, 18)
         public

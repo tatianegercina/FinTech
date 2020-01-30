@@ -12,9 +12,9 @@ By the end of the unit, students will be able to:
 
 * Articulate different types of crowdsales and how Ethereum/blockchain makes them much easier and auditable.
 
-* Prepare an ERC777Mintable token for Crowdsale
+* Prepare an ERC20Mintable token for Crowdsale
 
-* Build a crowdsale that distributes an ERC777Mintable token.
+* Build a crowdsale that distributes an ERC20Mintable token.
 
 * Design contracts to avoid common security pitfalls, such as a re-entrancy attack.
 
