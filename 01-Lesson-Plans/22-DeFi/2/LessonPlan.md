@@ -413,7 +413,7 @@ Read aloud the `Copyright` event interface definition and description.
 event Copyright(uint copyright_id, address owner, string reference_uri);
 ```
 
-* The copyright event requires a `uint copy_right_id`, an `address owner`, and a `string reference_uri`.
+* The copyright event requires a `uint copyright_id`, an `address owner`, and a `string reference_uri`.
 
 * According to the `Copyright` event's description, it MUST trigger whenever a new copyrighted work is registered.
 
