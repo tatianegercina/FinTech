@@ -99,6 +99,7 @@ contract MartianAuction {
 
         // 1. Conditions
         require(!ended, "auctionEnd has already been called.");
+        require(msg.sender == beneficiary, "You are not the auction beneficiary");
 
         // 2. Effects
         ended = true;
