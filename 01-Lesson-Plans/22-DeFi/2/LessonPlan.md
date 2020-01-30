@@ -698,7 +698,7 @@ Next, you will need to modify the `contract_address` variable stored in the fron
 Open up `dapp.js` in a code editor, and modify the first line of code. Copy the deployed contract address (redeploy a fresh contract if needed) from Remix, and set the `contract_address` variable:
 
 ```javascript
-const contract_address = "0xcBE34754fE19B9b7068f6E1e1CEB4E9A1e4AAB35";
+const contract_address = "0xa5b70b3f9e02b2d0b85E10042a76b1A7F397Cc6b";
 ```
 
 * We must ensure this address matches our deployed contract; otherwise, the frontend will not know where to find the contract.
