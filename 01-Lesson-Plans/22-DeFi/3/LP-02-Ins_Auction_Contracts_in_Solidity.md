@@ -237,7 +237,17 @@ Define a new `public` function named `auctionEnd`.
 
 * This function will end the auction and send the highest bid to the beneficiary.
 
-Inside the body of the `auctionEnd` function define a `require` statement that will check if the auction has ended by negating the `ended` variable with the `!` operator. Below that define a second `require` statement that checks to see if `msg.sender` is equal to `beneficiary`. Then set the `ended` variable equal to `true` and `emit` the `AuctionEnded` event passing it the `highestBidder` and the `highestBid` variables. Finally, transfer the `highestBid` amount to the `beneficiary` using the `.transfer` address method.
+Inside the body of the `auctionEnd` contract:
+
+  Define a `require` statement that will check if the auction has ended by negating the `ended` variable with the `!` operator.
+
+  Below that define a second `require` statement that checks to see if `msg.sender` is equal to `beneficiary`.
+
+  Then set the `ended` variable equal to `true`.
+
+  `Emit` the `AuctionEnded` event passing it the `highestBidder` and the `highestBid` variables.
+
+  Transfer the `highestBid` amount to the `beneficiary` using the `.transfer` address method.
 
 ```solidity
         // 1. Conditions
