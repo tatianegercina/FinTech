@@ -46,9 +46,9 @@ You are a smart contract engineer on a team of elite developers hired by the mar
 
     * Now define a nested `if statement` inside the first, in the condition statement call `msg.sender.send` and send the previously defined `amount` to them. Add a `not` operator in front of the statement to `negate` the value from `true` to `false`.
 
-    * Inside the nested `if statement` set the current `ms.sender`'s mapped `uint` value back to the value of `amount` and return `false`.
+    * Inside the nested `if statement` set the current `msg.sender`'s mapped `uint` value back to the value of `amount` and return `false`.
 
-* Inside the `pendingReturn`, return the passed `sender`'s corresponding `pendingReturn amount` via the `pendingReturns` mapping.
+* Inside the `pendingReturn` function, return the passed `sender`'s corresponding `pendingReturn amount` via the `pendingReturns` mapping.
 
 * Inside the body of the `auctionEnd` contract:
 
