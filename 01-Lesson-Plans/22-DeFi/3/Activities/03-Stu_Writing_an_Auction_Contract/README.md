@@ -54,6 +54,8 @@ You are a smart contract engineer on a team of elite developers hired by the mar
 
   *  Define a `require` statement that will check if the auction has ended by negating the `ended` variable with the `!` operator.
 
+  * Below that define a second `require` statement that checks to see if `msg.sender` is equal to `beneficiary`.
+
   * Then set the `ended` variable equal to `true`.
 
   * `Emit` the `AuctionEnded` event passing it the `highestBidder` and the `highestBid` variables.
