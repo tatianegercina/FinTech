@@ -6,7 +6,7 @@ Previously students were introduced to the concept of tokens on the Ethereum blo
 
 ### Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of the class, students will be able to:
 
 * Explain the difference between fungible and non-fungible tokens and their use-cases.
 

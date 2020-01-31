@@ -10,7 +10,7 @@ and to understand how wallets work across the blockchain ecosystem.
 
 ### Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of the class, students will be able to:
 
 * Explain the role of web3 in communicating with Ethereum nodes.
 

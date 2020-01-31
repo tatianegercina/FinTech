@@ -10,7 +10,7 @@ Students will learn more advanced Solidity data structures, what tokens are, and
 
 ### Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of the class, students will be able to:
 
 * Explain what gives tokens (digital assets) value, and the different mechanisms in which tokens may be collateralized.
 
