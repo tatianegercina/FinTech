@@ -1,3 +1,5 @@
+placeholder
+
 ## 18.1 Lesson Plan: Blockchain Building Blocks
 
 ### Overview
