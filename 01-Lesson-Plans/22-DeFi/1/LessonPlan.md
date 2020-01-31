@@ -14,7 +14,7 @@ In today's class, students will be introduced to the concept of DeFi (short for 
 
 ### Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of the class, students will be able to:
 
 * Build non-fungible ERC721 tokens with OpenZeppelin
 
