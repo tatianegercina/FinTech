@@ -255,12 +255,18 @@ Demonstrate that the data frame is now a true time series:
 
 Having properly formatted and indexed the time series, explain next how to select and slice the data frame with specified dates:
 
+  * Using the `loc[]` accessor, only rows from the year 1980 can be selected.
   ```python
   first_year = df2.loc['1980']
   ```
 
-  * Using the `loc[]` accessor, only rows from the year 1980 can be selected.
+  * Specific months or days of a particular year can be accessed this way as well, using the following syntax:
+```python
+  sepcific_date1 = df2.loc['1980-11']
+  specific_date2 = df2.loc['November 1, 2016']
+  specific_date3 = df2.loc['2016-Nov-1']
 
+```
   * The `loc[]` accessor can also be used to slice a date range: `two_year_period = df2.loc['1985': '1986']`.
 
 Next, explain that the `resample()` method groups rows by a specified time frame:
@@ -287,7 +293,9 @@ Next, explain that the `resample()` method groups rows by a specified time frame
 
 * For example, the index of the data frame, which is formatted as datetime, stores information on the specific year, month, and even the week of the year for each row.
 
-* More attributes can be found by consulting the documentation.
+* More attributes can be found by consulting the [documentation](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html).
+
+* Slack out the documentation link to the class: https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
 
 - - -
 
