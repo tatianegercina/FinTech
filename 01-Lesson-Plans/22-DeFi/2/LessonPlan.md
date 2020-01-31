@@ -10,7 +10,7 @@ Students will use the remainder of the class to work on their projects.
 
 ### Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of the class, students will be able to:
 
 * Implement a given smart contract specification into real solidity code.
 
@@ -544,7 +544,7 @@ On the last line inside the body of the `transferCopyrightOwnership` function `e
 
 * We've now completed the code for an implementation of the Example ER333 copyright contract specification.
 
-### 3. Student Do: Practice What the Instructor Just Covered (15 min)
+### 3. Student Do: Building to a Smart Contract Specification (15 min)
 
 In this activity, students will take a simple, smart contract specification, in this particular case, the ERC333 example contract specification and implement it.
 
@@ -558,7 +558,7 @@ In this activity, students will take a simple, smart contract specification, in 
 
 * [Resources - ICryptoRight.sol](Activities/02-Stu_Matching_a_Contract_Specification/Resources/ICryptoRight.sol)
 
-### 4. Instructor Do: Smart Contract Specifications review (10 min)
+### 4. Instructor Do: Smart Contract Specifications Review (10 min)
 
 Walkthrough the solution and highlight the following:
 
@@ -911,7 +911,7 @@ Click on the link that you generated to take you to your dApp, and ensure MetaMa
 
 Voila! Now it's time to have students create their own landing pages!
 
-### 9. Students Do: Github Pages Landing Page (15 min)
+### 9. Students Do: Create a Landing Page with GitHub Pages (15 min)
 
 Now it's time for the students to create their own landing pages!
 
@@ -949,7 +949,7 @@ Ask the students the following questions:
 
   **Answer:** It allows us to demonstrate our expertise in a context that we can control.
 
-  **Answer:** It allows us to write documentation websites, explain the purpose, gain developer and user traction, and much more.
+  **Answer:** It allows us to write documentation websites, explain the purpose of our project, gain developer and user traction, and much more.
 
 * What facilitates the connection between our frontend code that Github Pages hosts, and the Ethereum networks that we have configured/connected to?
 
@@ -965,7 +965,7 @@ Ask the students the following questions:
 
 * Would it be possible to use Github Pages to create a portfolio website that allows us to show off more than this application?
 
-  **Answer:** Absolutely! It should be leveraged wherever possible to get more exposure.
+  **Answer:** Absolutely! It should be leveraged wherever possible to give your work more exposure.
 
 ---
 

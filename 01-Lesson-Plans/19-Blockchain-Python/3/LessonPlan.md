@@ -9,7 +9,7 @@ and to understand how wallets work across the blockchain ecosystem.
 
 ### Class Objectives
 
-* By the end of the unit, students will be able to:
+* By the end of the class, students will be able to:
 
 * Explain that BIP32 generates a tree of keys from a single "master key" 256bit seed, and why it is used (increased privacy, merchants, etc).
 

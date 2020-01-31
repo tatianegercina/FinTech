@@ -6,7 +6,7 @@ In Today's class, students will be introduced to conversational user interfaces 
 
 ### Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of the class, students will be able to:
 
 * Describe the applications of conversational interfaces for finance and banking.
 
