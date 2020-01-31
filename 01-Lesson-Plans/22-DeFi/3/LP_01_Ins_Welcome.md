@@ -48,7 +48,7 @@ Review the following recall questions with the class.
 
   **Answer:** Free-SSL
 
-  **Answer:** Integrated Version Control(GIT)
+  **Answer:** Integrated Version Control (Git)
 
 * Why is having a documented/formalized API for your applications and libraries important?
 
