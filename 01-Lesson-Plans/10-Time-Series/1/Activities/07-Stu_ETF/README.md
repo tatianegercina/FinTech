@@ -2,7 +2,7 @@
 
 ## Instructions
 
-At a given moment in the ETF market, there is a price at which sellers are willing to sell and a price at which buyers are willing to buy. The closest discrepancy between the selling and buying prices is referred to as the bid-ask spread.
+At a given moment in the ETF (Exchange-traded Fund)  market, there is a price at which sellers are willing to sell and a price at which buyers are willing to buy. The closest discrepancy between the selling and buying prices is referred to as the bid-ask spread.
 
 In this activity, you will analyze the autocorrelation of a ETF bid-ask spread.
 
