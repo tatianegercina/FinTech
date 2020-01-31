@@ -623,11 +623,18 @@ Explain that autocorrelation can be computed at a different lag
 
 Once again, if necessary, remind your students that autocorrelation is simply the correlation of current data with past data.
 
-Explain that the `plot_acf()` function visualizes what we have discussed so far:
+Explain that the we will import `plot_acf()` and `plot_pacf()` from statsmodels:
 
-  ```python
-  sm.graphics.tsaplots.plot_acf(df.Temperature, lags=48)
-  ```
+```python
+  import statsmodels as sm
+  from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+```
+
+The `plot_acf()` function visualizes what we have discussed so far:
+
+```python
+  plot_acf(df.Temperature, lags=48)
+```
 
   ![Images/ac04.png](Images/ac04.png)
 
@@ -656,7 +663,7 @@ Next, introduce partial autocorrelation functions:
 Explain that a PACF plot will illustrate the idea in concrete terms:
 
   ```python
-  sm.graphics.tsaplots.plot_pacf(df.Temperature, lags=48, zero=False)
+  plot_pacf(df.Temperature, lags=48, zero=False)
   ```
 
   ![Images/ac05.png](Images/ac05.png)
