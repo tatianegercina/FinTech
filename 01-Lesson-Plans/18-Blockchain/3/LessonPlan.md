@@ -8,7 +8,7 @@ The goal of this lesson is to build a "Proof of Work" based chain in class, to p
 
 ### Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of the class, students will be able to:
 
 * Explain the most popular consensus algorithms and the tradeoffs between each.
 

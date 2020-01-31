@@ -8,7 +8,7 @@ Today's class will introduce students to recurrent neural networks (RNN).
 
 ### Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of the class, students will be able to:
 
 * Identify the differences between ANN, RNN, and LSTM RNN models.
 

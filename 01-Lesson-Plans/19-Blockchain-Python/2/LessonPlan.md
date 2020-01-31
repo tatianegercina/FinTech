@@ -10,7 +10,7 @@ and to understand how wallets work across the blockchain ecosystem.
 
 ### Class Objectives
 
-By the end of the unit, students will be able to:
+By the end of the class, students will be able to:
 
 * Define Unspent Transaction Output (UTXO) (data structure behind Bitcoin-based projects).
 
