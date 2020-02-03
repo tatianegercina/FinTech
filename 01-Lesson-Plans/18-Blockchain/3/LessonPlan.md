@@ -410,7 +410,7 @@ You will have to enter a password to encrypt the key-pair. Ask the students:
 
 * What type of cryptography are we using when we lock the keys with a password?
 
- **Answer**: Symmetric cryptography!
+  **Answer**: Symmetric cryptography!
 
 * In this case, we're locking a pair of asymmetric keys with a symmetric password, wild times!
 
@@ -484,15 +484,15 @@ Use this time to ensure that all students have properly configured two nodes wit
 
 * The student's directory structure should look something like this:
 
- ![directory tree](Images/geth-tree.png)
+  ![directory tree](Images/geth-tree.png)
 
 * If anyone encounters errors, double-check the following:
 
- * The network is selected in `puppeth` before exporting the genesis configuration.
+  * The network is selected in `puppeth` before exporting the genesis configuration.
 
- * The `genesis.json` is in the same directory as the node folders, not inside any node folders.
+  * The `genesis.json` is in the same directory as the node folders, not inside any node folders.
 
- * The `genesis.json` was exported.
+  * The `genesis.json` was exported.
 
 Answer any questions before moving on.
 
