@@ -51,6 +51,7 @@ By the end of the class, students will be able to:
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [18.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=69e9f9c6-f369-44a7-b574-ab190134eb81) Note that this video may not reflect the most recent lesson plan.
 
 ---
@@ -727,9 +728,9 @@ Ensure that:
 
 * Their chain is still running:
 
- * `node1` is mining.
+  * `node1` is mining.
 
- * `node2` is RPC enabled.
+  * `node2` is RPC enabled.
 
 **Instructions:**
 
