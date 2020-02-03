@@ -1,5 +1,3 @@
-placeholder
-
 ## 18.2 Lesson Plan: Basic Cryptography
 
 ### Overview
