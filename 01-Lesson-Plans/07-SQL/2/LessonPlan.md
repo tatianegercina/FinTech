@@ -619,7 +619,7 @@ The sample query would be as follows:
       (
         SELECT film_id
         FROM film
-        WHERE title = 'Blanket Beverly'
+        WHERE title = 'BLANKET BEVERLY'
       )
     )
   )
