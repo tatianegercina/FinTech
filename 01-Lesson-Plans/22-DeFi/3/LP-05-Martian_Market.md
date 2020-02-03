@@ -1,4 +1,4 @@
-### 3. Instructor Do: The Martian Market (ERC721 + Auctions) (15 min) (Critical)
+### 5. Instructor Do: The Martian Market (ERC721 + Auctions) (15 min) (Critical)
 
 In this activity, you will be demonstrating combining the ERC721 standard with the modified `MartianAuction` contract that was built in the previous activity.
 
