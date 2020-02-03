@@ -51,6 +51,7 @@ By the end of the class, students will be able to:
 * The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [18.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=69e9f9c6-f369-44a7-b574-ab190134eb81) Note that this video may not reflect the most recent lesson plan.
 
 ---
@@ -408,7 +409,7 @@ You will have to enter a password to encrypt the key-pair. Ask the students:
 
 * What type of cryptography are we using when we lock the keys with a password?
 
- **Answer**: Symmetric cryptography!
+  **Answer**: Symmetric cryptography!
 
 * In this case, we're locking a pair of asymmetric keys with a symmetric password, wild times!
 
@@ -482,15 +483,15 @@ Use this time to ensure that all students have properly configured two nodes wit
 
 * The student's directory structure should look something like this:
 
- ![directory tree](Images/geth-tree.png)
+  ![directory tree](Images/geth-tree.png)
 
 * If anyone encounters errors, double-check the following:
 
- * The network is selected in `puppeth` before exporting the genesis configuration.
+  * The network is selected in `puppeth` before exporting the genesis configuration.
 
- * The `genesis.json` is in the same directory as the node folders, not inside any node folders.
+  * The `genesis.json` is in the same directory as the node folders, not inside any node folders.
 
- * The `genesis.json` was exported.
+  * The `genesis.json` was exported.
 
 Answer any questions before moving on.
 
@@ -727,9 +728,9 @@ Ensure that:
 
 * Their chain is still running:
 
- * `node1` is mining.
+  * `node1` is mining.
 
- * `node2` is RPC enabled.
+  * `node2` is RPC enabled.
 
 **Instructions:**
 
