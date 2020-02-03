@@ -35,7 +35,7 @@ WHERE
 -- Select all rows with a source of "BC"
 SELECT *
 FROM wordassociation
-WHERE source = "BC";
+WHERE source = 'BC';
 
 -- Collect all rows where the author is within the 333-335 range and has a source of "BC"
 SELECT *
