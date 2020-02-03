@@ -12,7 +12,7 @@ For many students, this unit and the units to follow will be the bread and butte
 
 * Remember to emphasize the real-world value and application of time series analysis, machine learning, sentiment analysis, and other advanced analytic concepts as they are discussed.
 
- * Learning how to develop machine learning algorithms is what is required to take programming to the next level in the current day technological ecosystem. By the end of the course, students will have evolved from standard Python developers to FinTech data scientist, capable of designing and developing:
+ * Learning how to develop machine learning algorithms is what is required to take programming to the next level in the current day technological ecosystem. By the end of the course, students will have evolved from standard Python developers to FinTech data scientists, capable of designing and developing:
 
    * Robo-advisors and chat-bots for algorithmic trading, product/investment recommendation, and customer service/support
 
@@ -185,7 +185,7 @@ Open the homework instructions and highlight the following:
 
 * Explain to students that this homework will consist of two parts:
 
-  * Time-Series Forecasting - forecasting Settle prices, Settle Returns, and Volatility.
+  * Time-Series Forecasting - forecasting Settle Prices, Settle Returns, and Volatility.
 
   * Linear Regression Modeling - predicting returns using linear regression.
 
@@ -197,7 +197,7 @@ Ask students if they have any questions before moving on.
 
 ### 4. Instructor Do: Time Series Basics (10 min)
 
-**File:** [Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
+**File:** [datetime_basics.ipynb](Activities/01-Ins_Time_Series_Basics/Solved/datetime_basics.ipynb)
 
 Explain to students that over the next several weeks, we will be learning about many different machine learning models and techniques, but we will start with Time Series Models. Time Series Models are very prevalent in the financial world and are very useful models for analyzing time series data.
 
@@ -221,15 +221,16 @@ Open the notebook and run the following lines of code:
   df.info()
   ```
 
-  ![Images/datetime00.png](Images/datetime00.png)
-
-  ![Images/datetime01.png](Images/datetime01.png)
-
   * The CSV, a data set of liquor sales figures, is opened with pandas.
 
   * `df.info()` lists the number of rows, as well as the column data types.
 
-  * The `datetime` column type is listed as `object`. In this case, this means that the datetime information is formatted as strings.
+  * The `datetime` column type is listed as `object`. In Pandas the `object` datatype name typically means the values held inside are strings.
+
+  ![Images/datetime00.png](Images/datetime00.png)
+
+  ![Images/datetime01.png](Images/datetime01.png)
+
 
 Explain how to read a time series data set:
 
@@ -243,22 +244,29 @@ Explain how to read a time series data set:
 
 Demonstrate that the data frame is now a true time series:
 
-  ![Images/datetime01.png](Images/datetime02.png)
-
-  ![Images/datetime01.png](Images/datetime03.png)
 
   * `df2.info()` shows that the index is a `DatetimeIndex`.
 
   * Plotting the `liquor_sales` column automatically formats the x-axis as dates.
 
+  ![Images/datetime01.png](Images/datetime02.png)
+
+  ![Images/datetime01.png](Images/datetime03.png)
+
 Having properly formatted and indexed the time series, explain next how to select and slice the data frame with specified dates:
 
+  * Using the `loc[]` accessor, only rows from the year 1980 can be selected.
   ```python
   first_year = df2.loc['1980']
   ```
 
-  * Using the `loc[]` accessor, only rows from the year 1980 can be selected.
+  * Specific months or days of a particular year can be accessed this way as well, using the following syntax:
+```python
+  sepcific_date1 = df2.loc['1980-11']
+  specific_date2 = df2.loc['November 1, 2016']
+  specific_date3 = df2.loc['2016-Nov-1']
 
+```
   * The `loc[]` accessor can also be used to slice a date range: `two_year_period = df2.loc['1985': '1986']`.
 
 Next, explain that the `resample()` method groups rows by a specified time frame:
@@ -283,9 +291,11 @@ Next, explain that the `resample()` method groups rows by a specified time frame
   df2.index.weekofyear
   ```
 
-* For example, the index of the data frame, which is formatted as datetime, store information on the specific year, month, and even the week of the year for each row.
+* For example, the index of the data frame, which is formatted as datetime, stores information on the specific year, month, and even the week of the year for each row.
 
-* More attributes can be found by consulting the documentation.
+* More attributes can be found by consulting the [documentation](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html).
+
+* Slack out the documentation link to the class: https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
 
 - - -
 
@@ -295,9 +305,9 @@ In this activity, students will practice the basics of time series manipulation 
 
 **Files:**
 
-* [Activities/02-Stu_Time_Series_Basics/README.md](Activities/02-Stu_Time_Series_Basics/README.md)
+* [README.md](Activities/02-Stu_Time_Series_Basics/README.md)
 
-* [Activities/02-Stu_Time_Series_Basics/Resources/amazon.csv](Activities/02-Stu_Time_Series_Basics/Resources/amazon.csv)
+* [amazon.csv](Activities/02-Stu_Time_Series_Basics/Resources/amazon.csv)
 
 - - -
 
@@ -339,7 +349,7 @@ Answer any remaining questions before moving on.
 
 ### 7. Instructor Do: Time Series Decomposition (10 min)
 
-* **File:** [Activities/03-Ins_Decomposition/Solved/decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
+* **File:** [decomposition.ipynb](Activities/03-Ins_Decomposition/Solved/decomposition.ipynb)
 
 Use the slides and define time series decomposition to the class:
 
@@ -613,11 +623,18 @@ Explain that autocorrelation can be computed at a different lag
 
 Once again, if necessary, remind your students that autocorrelation is simply the correlation of current data with past data.
 
-Explain that the `plot_acf()` function visualizes what we have discussed so far:
+Explain that the we will import `plot_acf()` and `plot_pacf()` from statsmodels:
 
-  ```python
-  sm.graphics.tsaplots.plot_acf(df.Temperature, lags=48)
-  ```
+```python
+  import statsmodels as sm
+  from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+```
+
+The `plot_acf()` function visualizes what we have discussed so far:
+
+```python
+  plot_acf(df.Temperature, lags=48)
+```
 
   ![Images/ac04.png](Images/ac04.png)
 
@@ -646,7 +663,7 @@ Next, introduce partial autocorrelation functions:
 Explain that a PACF plot will illustrate the idea in concrete terms:
 
   ```python
-  sm.graphics.tsaplots.plot_pacf(df.Temperature, lags=48, zero=False)
+  plot_pacf(df.Temperature, lags=48, zero=False)
   ```
 
   ![Images/ac05.png](Images/ac05.png)
@@ -661,7 +678,7 @@ Explain that a PACF plot will illustrate the idea in concrete terms:
 
 * In the ACF, there was high autocorrelation at lags of 24 and 48 hours. This makes sense, as the temperature at the same time across three days would be expected to be very similar.
 
-* In the PACF, however, we do not see a high partial autocorrelation at a lag fo 48 hours, since that can be explained by the lag at 24 hours.
+* In the PACF, however, we do not see a high partial autocorrelation at a lag for 48 hours, since that can be explained by the lag at 24 hours.
 
 Finally, summarize the key points of the activity:
 
