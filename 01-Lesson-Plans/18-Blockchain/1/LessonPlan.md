@@ -1,5 +1,3 @@
-placeholder
-
 ## 18.1 Lesson Plan: Blockchain Building Blocks
 
 ### Overview
@@ -59,6 +57,7 @@ By the end of the class, students will be able to:
 * The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [18.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=17303471-178a-461d-8b72-ab1001881715) Note that this video may not reflect the most recent lesson plan.
 
 ---
@@ -260,11 +259,11 @@ Begin by prefacing that each of these pillars ties into each other to build an o
 
 * Openness in this context refers to access:
 
- * Anyone can access the source code and create a project from it, therefore developer access is high.
+  * Anyone can access the source code and create a project from it, therefore developer access is high.
 
- * Anyone can access the chain and participate in the ecosystem.
+  * Anyone can access the chain and participate in the ecosystem.
 
- * Anyone can access the services the blockchain offers.
+  * Anyone can access the services the blockchain offers.
 
 * Openness means that the system is designed to incentivize users to keep it open. The internet is an example of this, and it is built on open protocols that anyone can learn and contribute to.
 
