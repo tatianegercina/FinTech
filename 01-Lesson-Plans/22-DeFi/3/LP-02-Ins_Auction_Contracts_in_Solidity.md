@@ -4,7 +4,7 @@ In this activity, the Instructor will demonstrate the various Auction contracts 
 
 **Files:**
 
-* [AuctionContract.sol](Activities/02-Ins_Auction_Contracts_in_Solidity/Solved/SimpleAuction.sol)
+* [AuctionContract.sol](Activities/02-Ins_Auction_Contracts_in_Solidity/Solved/MartianAuction.sol)
 
 Begin the activity by introducing the class to the backstory of the `Martian Land Foundation`.
 
@@ -20,7 +20,7 @@ Begin by reading the description for the `Simple Open Auction`.
 
 * We will take this contract and simplify it for our needs.
 
-Now open [Remix](https://remix.ethereum.org/) and create a new contract named `SimpleAuction.sol`. Begin by adding the pragma and contract declarations.
+Now open [Remix](https://remix.ethereum.org/) and create a new contract named `MartianAuction.sol`. Begin by adding the pragma and contract declarations.
 
 ```solidity
 pragma solidity >=0.4.22 <0.6.0;
