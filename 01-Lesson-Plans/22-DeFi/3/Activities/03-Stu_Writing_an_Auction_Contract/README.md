@@ -1,16 +1,16 @@
 # Writing an Auction Contract
 
-You are a smart contract engineer on a team of elite developers hired by the martian land foundation to build a system that will crowdfund the development of a new colony on Mars. To accomplish this goal and help humanity thrive on Mars you have communicated with your project manager, gathered the necessary business requirements and have decided to leverage an `Open Auction Smart Contract`. In this activity, you will take a SimpleAuction contract basd off of the Solidity documentation and modify it to suit the needs of the `Martian Land Foundation`.
+You are a smart contract engineer on a team of elite developers hired by the Martian Land Foundation to build a system that will crowdfund the development of a new colony on Mars. To accomplish this goal and help humanity thrive on Mars you have communicated with your project manager, gathered the necessary business requirements and have decided to leverage an `Open Auction Smart Contract`. In this activity, you will take a SimpleAuction contract basd off of the Solidity documentation and modify it to suit the needs of the `Martian Land Foundation`.
 
 ## Instructions
 
-* Begin by opening the [simple auction boilerplate contract](Unsolved/SimpleAuction.sol). This has been given to you based on the auction contract interface from the solidity docs.
+* Begin by opening the [simple auction boilerplate contract](Unsolved/MartianAuction.sol). This has been given to you based on the auction contract interface from the Solidity docs.
 
 * Inside the `MartianAuction` contract above the contract's constructor define some initial variables that will be used to track the state of the auction.
 
   * An `address payable public beneficiary` will be used to track the beneficiary of the contract.
 
-  * An `address public highestBidder` will be used to keep track of the address of the current highestBidder.
+  * An `address public highestBidder` will be used to keep track of the address of the current highest bidder.
 
   * A `uint public highestBid` will be used to track the current highest bid amount of the highest bidder.
 
@@ -68,4 +68,4 @@ You are a smart contract engineer on a team of elite developers hired by the mar
 
 ## Hints
 
-* In case you need some help with this contract, visit the [solidty documentation on auction contracts](https://solidity.readthedocs.io/en/v0.5.3/solidity-by-example.html#simple-open-auction) to gain additional insight.
+* In case you need some help with this contract, visit the [Solidity documentation on auction contracts](https://solidity.readthedocs.io/en/v0.5.3/solidity-by-example.html#simple-open-auction) to gain additional insight.
