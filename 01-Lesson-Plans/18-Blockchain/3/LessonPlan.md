@@ -1,5 +1,3 @@
-placeholder
-
 ## 18.3 Lesson Plan: Building a Blockchain
 
 ### Overview
