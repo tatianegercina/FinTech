@@ -57,6 +57,7 @@ By the end of the class, students will be able to:
 * The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [18.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=17303471-178a-461d-8b72-ab1001881715) Note that this video may not reflect the most recent lesson plan.
 
 ---
@@ -155,31 +156,31 @@ Ask the students the following questions, allowing them to answer, then confirm 
 
 * "Why would a banker want to use a blockchain?"
 
- **Answer**: Using a blockchain for inter-bank communication is faster, more secure, and cheaper than the systems in place now, Swift and ACH.
+  **Answer**: Using a blockchain for inter-bank communication is faster, more secure, and cheaper than the systems in place now, Swift and ACH.
 
 * Why would an individual in an underbanked, developing, or authoritarian country want to use a blockchain?
 
- **Answer**: Transactions cannot be censored.
+  **Answer**: Transactions cannot be censored.
 
- **Answer**: You only need a mobile device and internet connection, which is a common commodity, even in developing countries.
+  **Answer**: You only need a mobile device and internet connection, which is a common commodity, even in developing countries.
 
- **Answer**: Some blockchains can be used as a hedge against hyperinflation of their native currency.
+  **Answer**: Some blockchains can be used as a hedge against hyperinflation of their native currency.
 
 * Why would an individual in the US want to use a blockchain?
 
- **Answer**: Removes intermediaries like PayPal, Venmo, Cashapp, etc., and allows for peer to peer payments, thus lower fees.
+  **Answer**: Removes intermediaries like PayPal, Venmo, Cashapp, etc., and allows for peer to peer payments, thus lower fees.
 
- **Answer**: Custody over your funds, versus allowing a bank to have custody.
+  **Answer**: Custody over your funds, versus allowing a bank to have custody.
 
- **Answer**: Cheaper than domestic wire transfers
+  **Answer**: Cheaper than domestic wire transfers
 
- **Answer**: Brings financial services typically available to the upper class to everyone.
+  **Answer**: Brings financial services typically available to the upper class to everyone.
 
 * Why would anyone want to use blockchain?
 
- **Answer**: Fast, global transactions that are not managed by a single authority
+  **Answer**: Fast, global transactions that are not managed by a single authority
 
- **Answer**: Secure, modern infrastructure for the next generation of the internet. This is also known as Web 3.0.
+  **Answer**: Secure, modern infrastructure for the next generation of the internet. This is also known as Web 3.0.
 
 Answer any questions before moving on.
 
@@ -258,11 +259,11 @@ Begin by prefacing that each of these pillars ties into each other to build an o
 
 * Openness in this context refers to access:
 
- * Anyone can access the source code and create a project from it, therefore developer access is high.
+  * Anyone can access the source code and create a project from it, therefore developer access is high.
 
- * Anyone can access the chain and participate in the ecosystem.
+  * Anyone can access the chain and participate in the ecosystem.
 
- * Anyone can access the services the blockchain offers.
+  * Anyone can access the services the blockchain offers.
 
 * Openness means that the system is designed to incentivize users to keep it open. The internet is an example of this, and it is built on open protocols that anyone can learn and contribute to.
 
@@ -390,19 +391,19 @@ Ask the students a few questions about the activity:
 
 * If one person lied about a transaction, would it be easy to tell?
 
- **Answer**: Sure, you could double-check with another one of the many records of the transaction.
+  **Answer**: Sure, you could double-check with another one of the many records of the transaction.
 
- **Answer**: In reality, there are cryptographic features that will also prevent this.
+  **Answer**: In reality, there are cryptographic features that will also prevent this.
 
 * What would you do if you discovered a record keeper was lying, or not responding?
 
- **Answer** Take note and stop communicating with them.
+  **Answer** Take note and stop communicating with them.
 
- **Answer** You might even tell others that they lied.
+  **Answer** You might even tell others that they lied.
 
 * What are the ways this system is making lying harder to do?
 
- **Answer** Since the ledger is everywhere, and transactions are broadcasted to everyone, it is difficult to lie.
+  **Answer** Since the ledger is everywhere, and transactions are broadcasted to everyone, it is difficult to lie.
 
 * Theoretically, all the students in each country could be connected.
 
@@ -412,7 +413,7 @@ Ask the students to ponder the following (no answer required):
 
 * So, given the possibility of all these connections, what if one entire region had a different list of transactions?
 
- **Answer** You would have a consensus problem -- we’ll discuss how to manage this with consensus algorithms in a later lesson.
+  **Answer** You would have a consensus problem -- we’ll discuss how to manage this with consensus algorithms in a later lesson.
 
 Answer any questions before moving on.
 
@@ -434,7 +435,7 @@ Students will learn basic, common terminology that will enable them to navigate 
 
 * **Files:**
 
- * [Lesson Slides](https://docs.google.com/presentation/d/1syUXqizy8YoZuYVrYmJwDFv1TADW5IqXX0a_Itkvh_w/edit?usp=sharing)
+  * [Lesson Slides](https://docs.google.com/presentation/d/1syUXqizy8YoZuYVrYmJwDFv1TADW5IqXX0a_Itkvh_w/edit?usp=sharing)
 
 Navigate to the slides and define common terms:
 
@@ -696,15 +697,15 @@ Recap by asking the students to answer these questions:
 
 * "What is a transaction hash?"
 
- * **Answer:** It's an identifier used to identify a particular transaction uniquely.
+  **Answer:** It's an identifier used to identify a particular transaction uniquely.
 
 * "What type of information is available to you on a public blockchain's block explorer?"
 
- * **Answer:** Practically everything, balances, transaction history, data stored on-chain, etc.
+  **Answer:** Practically everything, balances, transaction history, data stored on-chain, etc.
 
 * "Is this a fully anonymous blockchain?"
 
- * **Answer:** No, the current version of the public Ethereum network is pseudonymous, not fully anonymous yet.
+  **Answer:** No, the current version of the public Ethereum network is pseudonymous, not fully anonymous yet.
 
 Explain to the class that while the current version of Ethereum is pseudonymous, future updates will bring a technology called "Zero-Knowledge Proofs" that will enable completely private transactions on a public network.
 
@@ -758,9 +759,9 @@ Ask the students the following question:
 
 * "What are some benefits you can think of to having compute power distributed in such a way?"
 
- * **Answer:** No bottlenecks in the system, since the world helps run the code
+  **Answer:** No bottlenecks in the system, since the world helps run the code
 
- * **Answer:** Highly reliable systems that will run regardless of if some servers go down
+  **Answer:** Highly reliable systems that will run regardless of if some servers go down
 
 If students are unclear as to how this works, reassure them that they will be learning the inner workings when they begin Smart Contracts in Unit 20.
 
@@ -812,19 +813,19 @@ Facilitate the discussion toward the benefits of decentralizing specific applica
 
 * What are the main benefits of decentralizing your application?
 
- * **Answer:** The application can only go down if the entire Ethereum network goes down.
+  **Answer:** The application can only go down if the entire Ethereum network goes down.
 
- * **Answer:** The application can run without a central server.
+  **Answer:** The application can run without a central server.
 
- * **Answer:** The application could potentially live forever (as long as Ethereum exists).
+  **Answer:** The application could potentially live forever (as long as Ethereum exists).
 
- * **Answer:** The application is pay-per-use, much like a decentralized AWS Lambda.
+  **Answer:** The application is pay-per-use, much like a decentralized AWS Lambda.
 
 * If the students chose a game-based use case, ask what type of assets they have represented?
 
 * Is there a limit to what you can build with Ethereum's Turing complete smart contracts?
 
- * **Answer:** No, in theory, you could build any application just as you would with any other general-purpose programming language.
+  **Answer:** No, in theory, you could build any application just as you would with any other general-purpose programming language.
 
 Reinforce the idea that Ethereum's smart contracts are just programs that run on a distributed, decentralized computer.
 
@@ -842,13 +843,13 @@ Students have learned tons of new information today. Facilitate a discussion aro
 
 * What types of financial services can blockchains improve?
 
- * **Answer:** Practically any that currently requires unnecessary middlemen.
+  **Answer:** Practically any that currently requires unnecessary middlemen.
 
 * How does blockchain technology improve the lives of people around the world?
 
- * **Answer:** It provides robust financial platforms that don't always exist, or are not trustworthy.
+  **Answer:** It provides robust financial platforms that don't always exist, or are not trustworthy.
 
- * **Answer:** It supports borderless, neutral, and censor resistant finance that cannot be oppressed easily.
+  **Answer:** It supports borderless, neutral, and censor resistant finance that cannot be oppressed easily.
 
 ---
 
