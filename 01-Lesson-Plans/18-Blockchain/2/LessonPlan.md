@@ -69,11 +69,11 @@ Ask the students to refresh their definitions:
 
 * What is a hash?
 
-    **Answer**: A one-way function that produces a digital fingerprint of data.
+  **Answer**: A one-way function that produces a digital fingerprint of data.
 
 * What is a wallet?
 
-    **Answer**: A set of "keys" to your funds that are on the blockchain.
+  **Answer**: A set of "keys" to your funds that are on the blockchain.
 
 Explain that today, we will be learning the techniques that make these things possible.
 
@@ -123,19 +123,19 @@ Start the activity by asking the students to share their definitions of the foll
 
 * Cryptography
 
- **Answer**: Using math to keep data secure.
+  **Answer**: Using math to keep data secure.
 
 * Encryption
 
- **Answer**: Using cryptography to keep data secret.
+  **Answer**: Using cryptography to keep data secret.
 
 * Digital Signatures
 
- **Answer**: Using cryptography to prove things stay the same.
+  **Answer**: Using cryptography to prove things stay the same.
 
 * PGP
 
- **Answer**: Using cryptography to email/communicate securely.
+  **Answer**: Using cryptography to email/communicate securely.
 
 Now, ask the students to share some ideas about where they might have used cryptography in their lives, some examples may include:
 
@@ -151,17 +151,17 @@ Ask the students the following questions:
 
 * What sort of institutions would you hold to the standard of using good cryptography?
 
- **Answer**: Banks, exchanges, financial institutions.
+  **Answer**: Banks, exchanges, financial institutions.
 
- **Answer**: Messaging platforms, payment systems.
+  **Answer**: Messaging platforms, payment systems.
 
 * What are some risks that could exist if an encryption algorithm is broken?
 
- **Answer**: A data breach could occur; private information could be exposed.
+  **Answer**: A data breach could occur; private information could be exposed.
 
 * What about a hashing algorithm?
 
- **Answer**: Using that algorithm for data integrity would no longer be secure since each hash is no longer unique to the data.
+  **Answer**: Using that algorithm for data integrity would no longer be secure since each hash is no longer unique to the data.
 
 Now elucidate that while you expect these services to be using good cryptography, practically every application benefits from having it. By using good cryptography, a more robust and secure internet can exist.
 
@@ -181,7 +181,7 @@ In this activity, students will learn how hashing works by using several differe
 
 Ask a volunteer student to define hashing again:
 
- **Answer**: A one-way function that produces a digital fingerprint of data.
+**Answer**: A one-way function that produces a digital fingerprint of data.
 
 Walk through the solution Python script and highlight the following:
 
@@ -276,19 +276,19 @@ Ask the students the following questions:
 
 * What do you notice about the length of the hashes?
 
- **Answer**: They are the same length, no matter what.
+  **Answer**: They are the same length, no matter what.
 
 * Why might this be useful?
 
- **Answer**: You can verify large amounts of data with a smaller string.
+  **Answer**: You can verify large amounts of data with a smaller string.
 
 * What is the biggest functionality hashing enables?
 
- **Answer**: Data integrity
+  **Answer**: Data integrity
 
 * What is the difference between data integrity and security?
 
- **Answer**: Data integrity is ensuring the data stays the same; security is ensuring the data stays secret.
+  **Answer**: Data integrity is ensuring the data stays the same; security is ensuring the data stays secret.
 
 Reaffirm to the students that the hashes of the messages should only be equal if the messages are equal.
 
@@ -382,19 +382,19 @@ Conduct a facilitated discussion in the class by asking the students the followi
 
 * What did you learn?
 
- **Answer**: The encryption and decryption process.
+  **Answer**: The encryption and decryption process.
 
 * What is the most significant security hole you see in this system?
 
- **Answer**: The key has to be known by both parties.
+  **Answer**: The key has to be known by both parties.
 
- **Answer**: It might be hard to deliver the key and nonce to the recipient securely.
+  **Answer**: It might be hard to deliver the key and nonce to the recipient securely.
 
 * What is symmetric cryptography best used for?
 
- **Answer**: Storing secure data on a hard drive. This is also called "encrypting data at rest."
+  **Answer**: Storing secure data on a hard drive. This is also called "encrypting data at rest."
 
- **Answer**: Securing data that does not need to be transferred over the internet.
+  **Answer**: Securing data that does not need to be transferred over the internet.
 
 Answer any questions before moving on.
 
@@ -478,7 +478,7 @@ Ask the students:
 
 * What information was not shared during this encrypted message exchange?
 
- **Answer**: The private key or password to the message.
+  **Answer**: The private key or password to the message.
 
 Elaborate to the students about how this technique allows for secure communication without having to share private data.
 
@@ -512,13 +512,13 @@ Conduct a facilitated discussion in the class by asking the students the followi
 
 * What is the most significant benefit to using asymmetric encryption over symmetric?
 
- **Answer**: You do not need to share a key beforehand.
+  **Answer**: You do not need to share a key beforehand.
 
- **Answer**: Only the recipient and the sender can decrypt the payloads.
+  **Answer**: Only the recipient and the sender can decrypt the payloads.
 
 * What is the difference between symmetric and asymmetric encryption?
 
- **Answer**: You have a single, private key with symmetric, versus having a pair of keys for public and private use in asymmetric.
+  **Answer**: You have a single, private key with symmetric, versus having a pair of keys for public and private use in asymmetric.
 
 Answer any questions before moving on.
 
@@ -570,11 +570,11 @@ Navigate to the ["Sign" feature](https://tweetnacl.js.org/#/sign) of the TweetNa
 
 * Slack out the following fields to the volunteer student to verify the message's signature:
 
- * Public Key
+  * Public Key
 
- * Message
+  * Message
 
- * Signature
+  * Signature
 
 * Ensure that the volunteer student is at the `Verify` section of the `Sign` feature, and ask the student to paste the public key, signature, and message into their corresponding fields.
 
@@ -625,9 +625,9 @@ Conduct a facilitated discussion by asking the students the following questions:
 
 * It looks like this helps a lot with data integrity. Why not just hash the message instead?
 
- **Answer**: This proves that the owner sent and authorized that data.
+  **Answer**: This proves that the owner sent and authorized that data.
 
- **Answer**: This is an additional layer. This provides authenticity and authentication at the same time, aka ownership and identity.
+  **Answer**: This is an additional layer. This provides authenticity and authentication at the same time, aka ownership and identity.
 
 Explain to the students that digital signatures, in combination with hashing and encryption, can be a powerful way to ensure a message is delivered securely (without other parties snooping in), and that the right message got there without modification.
 
@@ -635,7 +635,7 @@ Ask the students (critical):
 
 * So what do transactions on a blockchain and digital signatures have in common?
 
- **Answer**: A transaction is just a signed message authorizing the transfer of funds, hence cannot be modified and can be verified
+  **Answer**: A transaction is just a signed message authorizing the transfer of funds, hence cannot be modified and can be verified
 
 Tell the students to start thinking about the different ways you might use these cryptographic techniques in the context of blockchain and cryptocurrencies.
 
@@ -661,7 +661,7 @@ Ask the students the following question:
 
 * What were to happen if the first block was modified?
 
- **Answer**: The second block would be invalidated since the first block's hash changed
+  **Answer**: The second block would be invalidated since the first block's hash changed
 
 Continuing with the first block, type some data into the data field, like `Alice sends Bob $10`.
 
@@ -709,11 +709,11 @@ Conduct a facilitated discussion in the class by asking students the following q
 
 * How are the blocks linked together / What does the "chain" in blockchain mean?
 
- **Answer**: Each block is linked to the previous by putting the last block's hash inside of it.
+  **Answer**: Each block is linked to the previous by putting the last block's hash inside of it.
 
 * In a blockchain with ten blocks, if you were to modify the 3rd block, how many would you need to re-mine?
 
- **Answer**: 8 blocks, 3 through 10 need to be mined again
+  **Answer**: 8 blocks, 3 through 10 need to be mined again
 
 Explain that this is the feature that makes blockchain transactions so "final" -- once a block is accepted by the network, it takes an enormous amount of energy to "roll a transaction back" since each block from the point of that transaction forward must be mined *again*, which quickly becomes mathematically infeasible.
 
@@ -731,29 +731,29 @@ Ask the students the following questions:
 
 * So where's the "crypto" in cryptocurrency?
 
- **Answer**: It's an adage to the cryptography that is **heavily** used throughout the system.
+  **Answer**: It's an adage to the cryptography that is **heavily** used throughout the system.
 
- **Answer**: You could almost call it "cryptography currency" and get away with it.
+  **Answer**: You could almost call it "cryptography currency" and get away with it.
 
 * What is a hash?
 
- **Answer**: A one-way fingerprint of data, usually represented as a long string of alphanumeric characters.
+  **Answer**: A one-way fingerprint of data, usually represented as a long string of alphanumeric characters.
 
 * What is symmetric cryptography?
 
- **Answer**: A type of cryptography that uses a single, preshared key for encryption.
+  **Answer**: A type of cryptography that uses a single, preshared key for encryption.
 
 * What is asymmetric cryptography?
 
- **Answer**: AKA "public key cryptography" -- Cryptography that uses a pair of keys, public and private, for encrypting and signing messages.
+  **Answer**: AKA "public key cryptography" -- Cryptography that uses a pair of keys, public and private, for encrypting and signing messages.
 
 * What is a (digital) signature?
 
- **Answer**: A message that can be cryptographically validated for its authenticity and integrity.
+  **Answer**: A message that can be cryptographically validated for its authenticity and integrity.
 
 * Where is the "chain" in blockchain?
 
- **Answer**: Blocks are connected via a chain of hashes, giving the structure its name and security.
+  **Answer**: Blocks are connected via a chain of hashes, giving the structure its name and security.
 
 Remind the students that cryptography is a tough subject that is taught usually in a Computer Science degree and that they should be proud of learning it.
 
