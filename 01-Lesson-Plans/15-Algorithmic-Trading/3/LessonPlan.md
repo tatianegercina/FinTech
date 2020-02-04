@@ -1,4 +1,4 @@
-## 15.3 Lesson Plan:
+## 15.3 Lesson Plan: ML Trading
 
 ---
 
@@ -7,7 +7,9 @@
 Today's lesson shows students how to use machine learning models in their algorithmic trading framework.
 
 ### Instructor Notes
+
 * Students may be at or near their learning capacity by this point in the course, but encourage them to use today's material as a guide for incorporating machine learning models into an algorithmic trading strategy. These ideas can potentially be used in their projects.
+
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
 ---
