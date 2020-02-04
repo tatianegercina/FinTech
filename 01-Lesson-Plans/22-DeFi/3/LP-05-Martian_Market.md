@@ -108,7 +108,7 @@ function registerLand(string memory uri) public onlyOwner {
 
 * Then, we are calling the ERC721 `_mint` function, setting the `foundation_address` as the initial owner, and creating it at the `token_id` that we just generated.
 
-* Like all ERC721 tokens, we pass in a token URI into the `_setTokenURI` function. We can set this to what we'd like later, and in this case, will store raw JSON instead of an IPFS URI.
+* Like all ERC721 tokens, we pass in a token URI into the `_setTokenURI` function. We can set this to what we'd like later.
 
 * Finally, we call the `createAuction` function to create a new `MartianAuction` auction contract for our new token. We will use the results of this to manage the initial public (not the foundation) ownership of the tokens.
 
