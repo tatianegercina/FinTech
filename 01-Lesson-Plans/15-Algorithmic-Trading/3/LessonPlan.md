@@ -14,7 +14,7 @@ Today's lesson shows students how to use machine learning models in their algori
 
 ---
 
-### 1. Instructor Do: Random Forest Trading (15 min)
+### 1. Instructor Do: Generating Trading Signal Features (15 min)
 
 In this activity, students will learn how to generate a set of trading signals derived from raw BTC/USD data that will be used as features to train a Random Forest machine learning model that will autonomously make predictions and corresponding trades.
 
@@ -89,7 +89,7 @@ At the end of the discussion, ask students whether or not they understand what t
 
 ---
 
-### 2. Instructor Do: Random Forest Trading (15 min)
+### 2. Instructor Do: Training a ML Trading Model (15 min)
 
 In this activity, students will learn how to use the set of trading signal features they generated in the previous activity to now train a Random Forest machine learning model.
 
@@ -165,7 +165,7 @@ Then, open the solution file and discuss the following:
 
 ---
 
-### 3. Instructor Do: Random Forest Trading (15 min)
+### 3. Instructor Do: Tuning a ML Trading Model (15 min)
 
 In this activity, students will re-deploy a pre-trained Random Forest model to make predictions (positive or negative daily return) given the x test dataset of BTC/USD closing prices. Then, students will compare the actual results vs. the predicted results and backtest the Random Forest model given a capital allocation of $100,000.
 
@@ -218,7 +218,13 @@ Open the solution file and discuss the following:
 
 ---
 
-### 4. Instructor Do: Recap (15 min)
+### 4. Instructor Do: ML Trading Framework
+
+* placeholder
+
+---
+
+### 5. Instructor Do: Recap (15 min)
 
 In this activity, instructors will briefly re-cap the process of training and using a Random Forest trading model, discuss the ways in which the model can potentially be improved, and consider deploying the model through alternative means such as AWS' Sagemaker--a machine learning cloud service that enables users to build, train, and deploy machine learning models quickly and conveniently.
 
