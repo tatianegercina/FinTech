@@ -4,7 +4,7 @@ In this activity, students will take a SimpleAuction contract from the Solidity 
 
 **Instructions:**
 
-* [README.md](Activities/02-Stu_Practice/README.md)
+* [README.md](Activities/03-Stu_Writing_an_Auction_Contract/README.md)
 
 **Files:**
 
