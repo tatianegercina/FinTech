@@ -386,13 +386,12 @@ Finally, go through the `JOIN` query to display the data in full:
   ![Images/modeling04.png](Images/modeling04.png)
 
   ```sql
-  SELECT children.child_name, child_parent_junction.child_id,
-  parents.parent_name, child_parent_junction.parent_id
-  FROM children
-  LEFT JOIN child_parent_junction
-  ON child_parent.child_id = children.child_id
-  LEFT JOIN parents
-  ON child_parent_junction.parent_id = parents.parent_id;
+SELECT children.child_name, child_parent.child_id, parents.parent_name, child_parent.parent_id
+FROM children
+LEFT JOIN child_parent
+ON child_parent.child_id = children.child_id
+LEFT JOIN parents
+ON child_parent.parent_id = parents.parent_id;
   ```
 
 * The `children` table has a left join with the junction table, the results of which then have a left join with the `parents` table.
