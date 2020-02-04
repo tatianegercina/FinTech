@@ -1,0 +1,20 @@
+{
+  "messageVersion": "1.0",
+  "invocationSource": "DialogCodeHook",
+  "userId": "John",
+  "sessionAttributes": {},
+  "bot": {
+    "name": "Crypto_Converter",
+    "alias": "$LATEST",
+    "version": "$LATEST"
+  },
+  "outputDialogMode": "Text",
+  "currentIntent": {
+    "name": "ConvertUSD",
+    "slots": {
+      "birthday": "2014-12-16",
+      "usdAmount": "10"
+    },
+    "confirmationStatus": "None"
+  }
+}
