@@ -764,6 +764,14 @@ from web3.auto import w3
 
 * Since we configured `WEB3_PROVIDER_URI` in `.env`, `web3.auto` will automatically recognize the Ganache network and automatically connect and use the same accounts that Ganache generates. No need to work with private keys when using `web3.auto` and Ganache!
 
+Quickly pull up the [web3.py Documentation](https://web3py.readthedocs.io/en/stable/providers.html#how-automated-detection-works) for how auto-detection works. Explain the following:
+
+* Web3.py in auto-mode will try a few things. First, it will check the `WEB3_PROVIDER_URI` environment variable for a connection string. If it finds one, it'll try to connect to it. Since we provided one, it will find ours immediately!
+
+* After that, it tries to find local Unix socket files to connect to applications like `geth` with. Then, it tries to look for a `localhost:8545` RPC connection. If we didn't set `WEB3_PROVIDER_URI`, Web3.py might have found Ganache automatically.
+
+* It's easiest for us to just tell Web3.py right away where to connect, and have it manage our connection and Ganache accounts automatically! If we connect manually, we'd have to work with the raw private keys of our test addresses. Ganache exposes the accounts API to Web3.py, which is why we want to use auto-mode.
+
 Now, create one last function in `crypto.py`:
 
 ```python
