@@ -11,13 +11,16 @@ In this activity, you will create a landing page and deploy the Martian Market d
   cd martian_market
   ```
 
-* Move the frontend code from the previous folder you were working in that contained the `dapp.js`, `index.html`, and `martian_market` into a subfolder called `frontend`.
+* Move the frontend code from the `Resources/martian_market/frontend` folder into your `martian_market` folder. The path should be `YOUR_WORKSPACE/martian_market/frontend`.
+
+* In Remix, copy over the ABIs from `MartianMarket` and `MartianAuction` into separate `MartianMarket.json` and `MartianAuction.json` files in the `frontend` folder. This is necessary for the frontend to talk to the contract backend. Replace the contents of the example ABIs with your own. Your contract was built using the same structure, so the example ABI might work anyway, but to be sure, provide your own. You `must` have used the same names of the public functions as instructed, otherwise, neither will work.
 
 * Create a `README.md` inside the top-level `martian_market` folder.
 
-  * You can model the structure from the [Resources/martian_market](Resources/martian_market) folder.
+  * You can model the structure from the `Resources/martian_market` folder.
 
 * Within this `README.md` file, add some information explaining the application.
+
   You **must** include a link to the dApp's `frontend` directory by linking to `frontend/index.html` at least once, otherwise, the point of the landing page is lost!
 
   The syntax for a link in Markdown is `[Link Text Here](https://url_here)`. You can directly link to the `frontend/index.html` file with something like
@@ -52,7 +55,7 @@ In this activity, you will create a landing page and deploy the Martian Market d
 
 * Run the first set of commands that Github provides for uploading existing code to the repo, minus the first line of code that `echo`s to the `README.md` file (since there is already content in there):
 
-* Once you run this set of commands, you will need to upload the rest of the frontend code, since this set only uploads the `README.md`:
+* Once you run this set of commands, you will need to upload the rest of the frontend code, since the first set only uploads the `README.md`:
 
   ```bash
   git add -A
@@ -61,7 +64,6 @@ In this activity, you will create a landing page and deploy the Martian Market d
   ```
 
   * After running this, all of the code should be uploaded to the repository.
-
 
 * Navigate to the repo settings on Github by clicking the `Settings` tab, and scroll down to the `Github Pages` section, and set the `Source` to `master`:
 
