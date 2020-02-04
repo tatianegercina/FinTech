@@ -648,7 +648,11 @@ Ensure the following:
 
 * The `README.md` is one directory above the `frontend` folder. The directory that contains the `README.md` should be the folder used to initialize and push the Git repo.
 
-* Students are working with a **freshly**
+* Students are working with a **freshly** deployed `MartianMarket` contract.
+
+* Students have a link from their `README.md` to the `frontend/index.html` of their dApp.
+
+* Students are putting effort into the summary and presentation of their landing page.
 
 ### 9. Instructor Do: dApp Review (10 min)
 
