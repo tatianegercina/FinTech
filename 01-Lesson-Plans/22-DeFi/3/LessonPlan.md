@@ -394,7 +394,7 @@ Now discuss the following recall questions:
 
   **Answer** An event that is emitted when funds are withdrawn.
 
-### 5. Instructor Do: The Martian Market (ERC721 + Auctions) (15 min) (Critical)
+### 5. Instructor Do: The MartianMarket (ERC721 + Auctions) (15 min) (Critical)
 
 In this activity, you will be demonstrating combining the ERC721 standard with the modified `MartianAuction` contract that was built in the previous activity.
 
@@ -590,7 +590,7 @@ Have TAs circulate the room and ensure students are able to complete the activit
 
 * [MartianAuction.sol](Activities/06-Stu_Building_Martian_Market/Resources/MartianAuction.sol)
 
-### 7. Instructor Do: Martian Market Review (10 min)
+### 7. Instructor Do: MartianMarket Review (10 min)
 
 **Files:**
 
@@ -620,25 +620,37 @@ Ask the students:
 
 Ask for any remaining questions before moving on.
 
-### 9. Students Do: Creating a Landing Page and Deploying to Github Pages (15 min)
+### 8. Students Do: Deploying the MartianMarket (20 min)
 
-Students will create a landing page and deploy the Martian Market dApp to Github Pages.
+In this challenge activity, students will create a landing page and deploy the MartianMarket dApp to Github Pages. The frontend will be provided in a similar fashion to `CryptoRight`. Students will leverage their skills to put together their dApp, create a detailed landing page, and deploy to GitHub Pages.
+
+Send the instructions and have TAs circulate the class.
 
 **Instructions:**
 
-* [README.md](Activities/09-Stu_GitHub_Pages_Martian_Market/README.md)
+* [README.md](Activities/08-Stu_Deploying_Martian_Market/README.md)
 
 **Files:**
 
-* [index.html](Activities/09-Stu_GitHub_Pages_Martian_Market/Resources/martian_market/frontend/index.html)
+* [index.html](Activities/08-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/index.html)
 
-* [dapp.js](Activities/09-Stu_GitHub_Pages_Martian_Market/Resources/martian_market/frontend/dapp.js)
+* [dapp.js](Activities/08-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/dapp.js)
 
-* [MartianMarket.json](Activities/09-Stu_GitHub_Pages_Martian_Market/Resources/martian_market/frontend/MartianMarket.json)
+* [MartianMarket.json](Activities/08-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/MartianMarket.json)
 
-* [MartianAuction.json](Activities/09-Stu_GitHub_Pages_Martian_Market/Resources/martian_market/frontend/MartianAuction.json)
+* [MartianAuction.json](Activities/08-Stu_Deploying_Martian_Market/Resources/martian_market/frontend/MartianAuction.json)
 
-### 10. Instructor Do: dApp Review (10 min)
+Ensure the following:
+
+* Students have built their `MartianMarket` contracts exactly like the provided examples.
+
+* The ABI `json` files, `dapp.js`, `index.html` are all within the `frontend` folder.
+
+* The `README.md` is one directory above the `frontend` folder. The directory that contains the `README.md` should be the folder used to initialize and push the Git repo.
+
+* Students are working with a **freshly**
+
+### 9. Instructor Do: dApp Review (10 min)
 
 Walk through the following recall questions with the class to review the various technologies/levels of the stack and their purpose:
 
@@ -670,11 +682,11 @@ Walk through the following recall questions with the class to review the various
 
 ---
 
-### 10. BREAK (15 min)
+### 10. BREAK (40 min)
 
 ---
 
-### 11. Student Do: Project Work Session (45 min)
+### 11. Student Do: Project Work Session (50 min)
 
 Welcome the students back to class, and allow them to use this activity time to work on their Projects.
 
