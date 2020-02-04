@@ -22,9 +22,9 @@ In this activity, students will learn how to generate a set of trading signals d
 
 First, quickly introduce the following:
 
-* Now that students have learned to generate trading signals, backtest their trading strategies, and evaluate their results, it is now time to incorporate machine learning into the mix! Students will now have the opportunity to use a machine learning model (Random Forest) to correctly predict next day positive or negative returns based on multiple trading signals.
+* Now that students have learned to generate trading signals, backtest their trading strategies, and evaluate their results, it is now time to incorporate machine learning into the mix! Students will now have the opportunity to use multiple machine learning models (Random Forest, Logistic Regression, SVM) to correctly predict next day positive or negative returns based on generated trading signals that will become features to each model.
 
-* The Random Forest model will require multiple features, or in this case, multiple trading signals to train itself on. Therefore, students will learn to generate multiple trading signals using various technical indicators such as an exponential moving average of closing prices, exponential moving average of daily return volatility, and Bollinger Bands, which is are a set of lines representing a (positive and negative) standard deviation away from a simple moving average (SMA) of the asset's closing price.
+* Each machine learning model will require multiple features, or in this case, multiple trading signals to train themselves on. Therefore, students will learn to generate multiple trading signals using various technical indicators such as an exponential moving average of closing prices, exponential moving average of daily return volatility, and Bollinger Bands, which are a set of lines representing a (positive and negative) standard deviation away from a simple moving average (SMA) of the asset's closing price.
 
 Then, open the solution file and discuss the following:
 
@@ -40,7 +40,7 @@ Then, open the solution file and discuss the following:
 
   ```python
   # Set path to CSV and read in CSV, then set index as `Timestamp`
-  csv_path = Path('../Resources/kraken_btc_1hr.csv')
+  csv_path = Path('../Resources/kraken_btc_1hr_v2.csv')
   btc_df=pd.read_csv(csv_path)
   btc_df
   ```
@@ -91,13 +91,13 @@ At the end of the discussion, ask students whether or not they understand what t
 
 ### 2. Instructor Do: Training a ML Trading Model (15 min)
 
-In this activity, students will learn how to use the set of trading signal features they generated in the previous activity to now train a Random Forest machine learning model.
+In this activity, students will learn how to use the set of trading signal features they generated in the previous activity to now train multiple machine learning models, namely the Random Forest, Logistic Regression, and SVM classifiers.
 
 **File:** [random_forest_training.ipynb](Activities/02-Ins_Random_Forest_Training/Solved/random_forest_training.ipynb)
 
 Before proceeding with the coding activity, open the slides, and briefly re-cap the use of machine learning models in regards to trading:
 
-* How will we incorporate a machine learning model in terms of trading?
+* How will we incorporate machine learning models in terms of trading?
 
   **Answer:** Machine learning models need to be trained before they can make predictions. Therefore, using the trading signals generated from the previous activity, the Random Forest model will train itself using the trading signals as independent variables that determine a dependent variable (a positive or negative return for the next day). The model can then be saved as a pre-trained model for later use and loaded again for easy deployment.
 
@@ -108,6 +108,14 @@ Before proceeding with the coding activity, open the slides, and briefly re-cap 
 * Why is it called a Random Forest?
 
   **Answer:** A Random Forest model is a combination of many decision tree models with each decision tree or "tree" randomly selecting a subset of the observations and features to train itself on. The result is a final prediction that is an average across this "forest" of random trees.
+
+* What is a Logistic Regression model?
+
+  **Answer:** A Logistic Regression model predicts binary outcomes from input data and outputs a numerical probability between 0 and 1 for a designated categorical outcome. For example, the categorical outcome for a Logistic Regression trading model could be whether next day returns will be "positive" or "not positive."
+
+* What is a SVM model?
+
+  **Answer:** A SVM model separates classes of data points into multidimensional space in which each group of data points is segmented by a line to designate their respective classes. An SVM model is oftentimes more beneficial than Logistic Regression because the model supports the classification of outliers and overlapping data points, which can be particularly useful when dealing with random stock price fluctuations.
 
 Then, open the solution file and discuss the following:
 
