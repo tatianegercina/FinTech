@@ -170,12 +170,11 @@ Slack out [schema.sql](Activities/03-Ins_Foreign_Keys/Solved/schema.sql) for stu
 
   ```sql
   CREATE TABLE animals_location (
-  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  id SERIAL PRIMARY KEY,
   location VARCHAR(30) NOT NULL,
-  animal_id INTEGER(10) NOT NULL,
-  PRIMARY KEY (id),
+  animal_id INTEGER NOT NULL,
   FOREIGN KEY (animal_id) REFERENCES animals_all(id)
-  );
+);
   ```
 
 * The table is then populated with data and checked with a `SELECT ALL` query.
