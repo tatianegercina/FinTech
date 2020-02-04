@@ -1,4 +1,4 @@
-# Martian Market
+# MartianMarket
 
 ## Summary
 
@@ -6,4 +6,4 @@ This application is an online auction system for the Martian Land Foundation to 
 
 ### Demo App
 
-Click [here](frontend/index.html) to launch the Martian Market application.
+Click [here](frontend/index.html) to launch the MartianMarket application.

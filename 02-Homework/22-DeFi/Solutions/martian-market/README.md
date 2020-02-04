@@ -1,4 +1,4 @@
-# Martian Market dapp
+# MartianMarket dapp
 
 This dapp is deployed on Ropsten at the following address:
 
