@@ -73,7 +73,7 @@ MUST trigger whenever a new copyrighted work is registered.
 event Copyright(uint copyright_id, address owner, string reference_uri);
 ```
 
-### OpenSource
+#### OpenSource
 
 MUST trigger whenever a new open source work is registered.
 
@@ -81,7 +81,7 @@ MUST trigger whenever a new open source work is registered.
 event OpenSource(uint copyright_id, string reference_uri);
 ```
 
-### Transfer
+#### Transfer
 
 MUST trigger whenever a copyright is transferred.
 
