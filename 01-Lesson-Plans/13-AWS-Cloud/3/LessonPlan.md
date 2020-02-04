@@ -2,7 +2,7 @@
 
 ### Overview
 
-In Today's class, students will be introduced to conversational user interfaces (CUIs) also they will learn how CUIs are disrupting finance and banking. By the end of the class, students will create a robo advisor using Amazon Lex, Amazon Lambda and Slack.
+In Today's class, students will be introduced to conversational user interfaces (CUIs) also they will learn how CUIs are disrupting finance and banking. By the end of the class, students will create a robo advisor using Amazon Lex and Amazon Lambda.
 
 ### Class Objectives
 
@@ -16,15 +16,13 @@ By the end of the unit, students will be able to:
 
 * Apply their Python skills to add new features to an Amazon Lex bot using Amazon Lambda.
 
-* Deploy a robo advisor application on Slack.
-
 ### Instructor Notes
 
 * Slack out the [Deep Learning Installation Guide](../../14-Deep-Learning/Supplemental/deep_learning_installation_guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
 * There are several misconceptions and myths about what can be achieved with a Robo Advisor, make sure students understand what a Robo Advisor is and invite them to think about the endless possibilities of this technology for FinTech.
 
-* Today's class may be challenging for students because they are going to deal with different AWS services and the Slack API, so be sure to get familiar with all the activities before class.
+* Today's class may be challenging for students because they are going to deal with different AWS services, so be sure to get familiar with all the activities before class.
 
 * Amazon Lambda functions will be created and edited using the online code editor. This editor sometimes has issues or freezes up, so tell students to backup their code with a local Python script.
 
@@ -37,7 +35,7 @@ By the end of the unit, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1n9mKCC7_yl_P_GUHnLCauvdgunTLigX0tfamq2kJ0RQ/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -75,13 +73,13 @@ Explain to the class the technologies we will use Today and highlight the follow
 
 * Amazon Lambda is a computing service that runs code in response to events. We will use this service to program the actions of the robo advisor.
 
-* The robo advisor will be deployed as a Slack application where users will interact with it.
+* In order to interact with final users, an Amazon Lex's bot can be deployed on a mobile application or a messaging platform such as Slack, Kik, or Facebook Messenger.
 
 Answer any additional questions before moving forward.
 
 ---
 
-### 2. Instructor Do: Intro to Amazon Lex (10 min)
+### 2. Instructor Do: Intro to Amazon Lex (15 min)
 
 In this activity, students will be introduced to Amazon Lex; they will learn how to create a bot using the Amazon Lex console that returns parameters to the client by configuring a single intent, some slots, and a confirmation prompt.
 
@@ -149,13 +147,17 @@ Follow the next steps to perform a live demo.
 
   ![Step 4b](Images/lex-step4b.png)
 
-* **Step 5:** Depending if you have created or not a chatbot before, click on the _Get Started_ or the _Create_ button, choose the _Custom bot_ option and fill-out the following, next click the `Create` button to continue:
+* **Step 5:** Depending if you have created or not a chatbot before, click on the _Get Started_ or the _Create_ button, choose the _Custom bot_ option and fill-out the following.
 
   * _Bot name:_ Share_Bill
   * _Output voice:_ Mathew
   * _Session timeout:_ 5 min
   * _Sentiment analysis:_ `No`
   * _COPPA:_ Select `No`
+
+  Explain to students, that late in 2019, Amazon Web Services added the "sentiment analysis" feature to Amazon Lex. This feature allows to score the sentiment of users' utterances using another service called [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html) that implies additional charges. We are not going to use this feature in Today's class, but slack out [the sentiment analysis documentation](https://docs.aws.amazon.com/lex/latest/dg/sentiment-analysis.html) to students for further research.
+
+  Once you configure the bot, click the `Create` button to continue:
 
   ![Step 5](Images/lex-step5.png)
 
@@ -245,7 +247,7 @@ Answer any questions before moving on.
 
 ---
 
-### 5. Instructor Do: Intro to AWS Lambda (10 min)
+### 5. Instructor Do: Intro to AWS Lambda (15 min)
 
 This activity will introduce AWS Lambda to students. Also, students will learn how they can integrate Lambda functions into an Amazon Lex bot. The full code of the lambda function could be found on the _Solved_ directory.
 
@@ -518,7 +520,7 @@ Be sure to answer any reminder question and move to the next activity.
 
 ---
 
-### 8. Instructor Do: Testing AWS Lambda Functions (10 min)
+### 8. Instructor Do: Testing AWS Lambda Functions (15 min)
 
 In this activity, students will learn how to test AWS Lambda functions that validate Amazon Lex intents.
 
@@ -617,7 +619,7 @@ Answer any remainder question and continue to the next activity.
 
 ---
 
-### 9. Student Do: Buggy Lambdas (10 min)
+### 9. Student Do: Buggy Lambdas (15 min)
 
 In this activity, students will test their Lambdas and will practice their ability to find runtime errors. Slack out the instructions to students together with the starter test event.
 
@@ -847,172 +849,7 @@ Answer any reminder question before moving forward.
 
 ---
 
-### 15. Everyone Do: Deploying an Amazon Lex bot to Slack (20 min)
-
-This is a group activity, students will follow you on the process to publish the `Crypto_Converter` bot, and later, you will show them how to deploy the bot as a Slack App.
-
-Follow the next steps, ask your TAs to assist students along with the demo and be sure all the class is following you along the process.
-
-#### Step 1: Publish the Amazon Lex bot
-
-1. Open the Amazon Lex console and navigate to the `Crypto_Converter` bot.
-
-2. Click on the _Publish_ button located at the upper right corner. You should publish your bot before deploying it on any messaging or mobile application.
-
-3. A popup window will appear where you should give a name for your bot's published instance. Name the bot as `CryptoConverterBot` and click on the _Publish_ button to continue.
-
-  ![Publishing a bot](Images/publish-amazon-lex-bot.png)
-
-4. Once the publishing process is finished, you will see the following window. Click on _Close_ to continue.
-
-  ![Publishing bot process done](Images/bot-publishing-done.png)
-
-#### Step 2: Create a Slack Team
-
-Explain to students that, in order to publish the Amazon Lex bot as a Slack App, the first step is to create a Slack Team to deploy the app. Perform the following tasks and be sure students are on track as you move forward.
-
-1. To create a new Slack Team, open your web browser, and navigate to https://slack.com/create. Enter your e-mail address and click on the _Next_ button to continue.
-
-  ![Create Slack workspace - step 1](Images/slack-workspace-1.png)
-
-2. A six-digit verification code will be sent to your e-mail, check your inbox, and type the code in the six boxes to continue.
-
-  ![Create Slack workspace - step 2](Images/slack-workspace-2.png)
-
-3. Once you confirm your six-digit code, you will see the next page where you have to describe the purpose of your Slack Team. Since this is for education purposes, choose `Education non profit` and click on the _Next_ button to continue.
-
-  ![Create Slack workspace - step 3](Images/slack-workspace-3.png)
-
-4. Following, you will see a page where you have to define a name for your Slack Team. Type an original name for your team and click on the _Next_ button to continue.
-
-  ![Create Slack workspace - step 4](Images/slack-workspace-4.png)
-
-5. On the next page, you will be asked for the name of a current project on your team. Type `Crypto Converter Bot` and click on the _Next_ button to continue.
-
-  ![Create Slack workspace - step 5](Images/slack-workspace-5.png)
-
-6. Next, you are asked to invite some people to your team, skip this to continue.
-
-  ![Create Slack workspace - step 6](Images/slack-workspace-6.png)
-
-7. You have finished the Slack Team creation, click on the _Launch Workspace_ button to open your brand new channel. Comment to students that they will have some additional paid features by 14 days as it is stated in the this page; students won't be asked to enter any credit card information, so they can safely continue using this channel for free.
-
-  ![Create Slack workspace - step 7](Images/slack-workspace-7.png)
-
-#### Step 3: Create a Slack Application
-
-Comment to the students that now, you are going to login into the Slack Api to create a new Slack Application. The Slack Application will be the bridge between Amazon Lex and Slack to allow users to talk to the bot.
-
-1. Open your web browser and navigate to the Slack API Console at http://api.slack.com. Click on the _Start Building_ button to continue.
-
-  ![Create a Slack App - step 1](Images/slack-app-1.png)
-
-2. Type a name for your new app, for this demo, name the app as `Crypto Converter Bot`. From the _Development Slack Workspace_ dropdown list, select the name of the team's workspace you created on **Step 2**. Click on the _Create App_ button to continue.
-
-  ![Create a Slack App - step 2](Images/slack-app-2.png)
-
-3. After you have successfully created the application, Slack displays the Basic Information page for the application.
-
-  ![Create a Slack App - step 3](Images/slack-app-3.png)
-
-4. In the left menu, choose _Interactive Components_. Toggle the _Interactivity_ option to `On` and specify any valid URL in the _Request URL_ textbox. Use https://slack.com to get the verification token that you need in the next step. You will update this URL later. Click on the _Save Changes_ button to continue.
-
-  ![Create a Slack App - step 4](Images/slack-app-4.png)
-
-5. In the left menu, under _Settings_, choose _Basic Information_. Record the following application credentials to be used in the next step. To protect the privacy of your credentials, be sure to regenerate your _Client Secret_ and _Verification Token_ after the class.
-
-    * Client ID
-    * Client Secret
-    * Verification Token
-
-  ![Create a Slack App - step 5](Images/slack-app-5.png)
-
-#### Step 4: Integrate the Slack Application with the Amazon Lex Bot
-
-Now that you have Slack application credentials, you can integrate the application with your Amazon Lex bot. To associate the Slack application with your bot, we will add a bot channel association in Amazon Lex.
-
-1. Open the Amazon Lex console, select the `Crypto_Converter` bot and navigate to the _Channels_ tab. Choose _Slack_ from the left _Channels_ menu to continue.
-
-  ![Integrating Slack App - step 1](Images/slack-integration-1.png)
-
-2. Configure the _Slack_ channel as follows:
-
-    * **Channel Name:** `CyptoConverterSlackApp`
-    * **Channel Description:** `Slack channel for the Crypto Converter bot.`
-    * **KMS Key:** `aws/lex`
-    * **Alias:** `CryptoConverterBot`
-    * Type the _Client Id_, _Client secret_, and _Verification Token_, which you recorded in the preceding step. These are the credentials of the Slack application.
-
-  ![Integrating Slack App - step 2](Images/slack-integration-2.png)
-
-3. Click on the _Activate_ button to continue. The console creates the bot channel association and returns two URLs, record them.
-
-    * **Postback URL:** It is the Amazon Lex bot's endpoint that listens to Slack events.
-    * **OAuth URL:** It is your Amazon Lex bot's endpoint for an OAuth handshake with Slack.
-
-  ![Integrating Slack App - step 3](Images/slack-integration-3.png)
-
-#### Step 5: Complete Slack Integration
-
-Explain to students that, in this section, you will use the Slack API console to complete the integration of the Slack application.
-
-1. Come back to the Slack API console, in the left menu, choose _OAuth & Permissions_.
-
-  ![Complete Slack integration - step 1](Images/complete-slack-integration-1.png)
-
-2. In the _Redirect URLs section_, click on the _Add a new Redirect URL_ and add the OAuth URL that Amazon Lex provided in the preceding step. Once you typed the URL, click on the _Add_ button to continue and on _Save URLs_.
-
-  ![Complete Slack integration - step 2](Images/complete-slack-integration-2.png)
-
-3. In the _Scopes_ section, you need to add two permissions. In the _Bot Token Scopes_ section, click on the _Add an OAuth Scope_ button and filter the scopes dropdown list with the following text to add the permissions.
-
-    * `chat:write`
-
-    * `team:read`
-
-    ![Complete Slack integration - step 3a](Images/complete-slack-integration-3.gif)
-
-4. In the left menu, choose _Interactive Components_, update the _Request URL_ value to the Postback URL that Amazon Lex provided in the preceding step. Click on the _Save Changes_ button to continue.
-
-  ![Complete Slack integration - step 4](Images/complete-slack-integration-4.png)
-
-5. In the left menu, choose _Event Subscriptions_, configure this feature as follows:
-
-    * Toggle the _Enable events_ option to `On`.
-
-    * Set the _Request URL_ value to the Postback URL that Amazon Lex provided in the preceding step. Once you type it, Slack will verify the URL.
-  ![Complete Slack integration - step 5a](Images/complete-slack-integration-5a.png)
-
-    * In the _Subscribe to Bot Events_ section, click on the _Add Bot User Event_ button and filter the list by typing `message.im`. This event will enable direct messaging between the end-user and the Slack bot. Click on the _Save Changes_ button to continue.
-    ![Complete Slack integration - step 5b](Images/complete-slack-integration-5b.gif)
-
-6. In the left menu, choose _App Home_ and toggle on the _Always Show My Bot as Online_ option.
-
-  ![Complete Slack integration - step 6](Images/complete-slack-integration-6.png)
-
-#### Step 6: Test the Integration Between Amazon Lex and Slack
-
-Congratulate students on reaching this point, this is the final stage on getting Amazon Lex integrated with Slack, and there are just some last final touches to refine. Continue on the Slack API Console as follows.
-
-1. In the left menu, choose _OAuth and Permissions_ and click on the _Install App to Workspace_ button to install the application.
-
-  ![Test integration - step 1](Images/test-slack-integration-1.png)
-
-2. On the next page, you should authorize the bot to respond to messages on the Slack Team you created. Click on the _Allow_ button to continue.
-
-  ![Test integration - step 2](Images/test-slack-integration-2.png)
-
-3. You are redirected to your Slack team. In the left menu, in the _Apps_ section, choose your bot and engage in a chat with your Slack application, which is linked to the `Crypto_Converter` Amazon Lex bot. Start with the `I want to invest in crypto` sample utterance to test the bot. You should see a dialog like the shown below.
-
-  ![Demo crypto converter bot on Slack](Images/slack-crypto-converter-bot-test.gif)
-
-**Note:** If you do not see your bot, choose the plus icon (+) next to _Apps_ section to search for it.
-
-Ask your TAs to assist students in testing their bots, answer any additional questions before continuing.
-
----
-
-### 16. Instructor Do: Structured Review (35 min)
+### 15. Instructor Do: Structured Review (35 min)
 
 **Note:** If you are teaching this Lesson on a weeknight, please save this 35-minute review for the next Saturday class.
 
