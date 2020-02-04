@@ -6,6 +6,8 @@ In this activity, you will design a database model.
 
 You are the database consultant at a new university. Your job is to design a database model for the registrar. The database will keep track of information on students, courses offered by the university, and the courses each student has taken.
 
+* Begin by creating a new database named `university_db`.
+
 * Create a `students` table that keeps track of the following:
 
   * Unique ID number of each student
