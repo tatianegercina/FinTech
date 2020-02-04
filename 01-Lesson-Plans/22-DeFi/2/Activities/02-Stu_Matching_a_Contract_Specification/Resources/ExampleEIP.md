@@ -20,7 +20,7 @@ The following standard allows for the implementation of a standard API for copyr
 
   * The following specifications use syntax from Solidity 0.5.0 (or above)
 
-#### copyrights:
+#### copyrights
 
 Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` containing the copyright's `owner` and `uri`.
 
@@ -28,7 +28,7 @@ Accepts a given `copyright_id` as a `uint` and returns a `mapped struct` contain
 function copyrights(uint copyright_id) public returns(IWork memory);
 ```
 
-#### copyrightWork:
+#### copyrightWork
 
 Generates a new `copyright_id` of type `uint` and maps it to a given `Work struct` containing the associated copyright `owner` and `uri`.
 
@@ -73,7 +73,7 @@ MUST trigger whenever a new copyrighted work is registered.
 event Copyright(uint copyright_id, address owner, string reference_uri);
 ```
 
-### OpenSource
+#### OpenSource
 
 MUST trigger whenever a new open source work is registered.
 
@@ -81,7 +81,7 @@ MUST trigger whenever a new open source work is registered.
 event OpenSource(uint copyright_id, string reference_uri);
 ```
 
-### Transfer
+#### Transfer
 
 MUST trigger whenever a copyright is transferred.
 
