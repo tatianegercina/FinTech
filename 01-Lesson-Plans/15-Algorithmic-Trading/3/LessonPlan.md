@@ -191,7 +191,7 @@ Then, open the solution file and discuss the following:
 
   ![svm-accuracy](Images/svm-accuracy.png)
 
-* Oftentimes, an accuracy score is not enough of a performance measurement when trying to comprehend the performance of a classification model, as it merely indicates correct or incorrect prediction. For example, the model could predict every value as 1 and the accuracy score could end up being 50% or more. It is for this reason that the AUC-ROC curve is used, as the AUC-ROC curve indicates how well the model is capable of distinguishing between classes (predicting 0s and 0s and 1s as 1s). In essence, the higher the AUC score, the better the model is at correctly classifying the input data.
+* Oftentimes, an accuracy score is not enough of a performance measurement when trying to comprehend the performance of a classification model, as it merely indicates correct or incorrect prediction. For example, the model could predict every value as 1 and the accuracy score could end up being 50% or more. It is for this reason that the AUC-ROC curve or, Area Under The Curve-Receiver Operating Characteristics curve, is used, as the AUC-ROC curve indicates how well the model is capable of distinguishing between classes (predicting 0s and 0s and 1s as 1s). In essence, the higher the AUC score, the better the model is at correctly classifying the input data.
 
   **Note:** We will breakdown the AUC-ROC curve in more detail in the next activity.
 
@@ -200,6 +200,16 @@ Then, open the solution file and discuss the following:
   ![lr-auc-roc-curve](Images/lr-auc-roc-curve.png)
 
   ![svm-auc-roc-curve](Images/svm-auc-roc-curve.png)
+
+* Furthermore, when dealing with trading strategies it's important to gauge the performance of the particular trading strategy in the context of returns. Therefore, the cumulative return values for each model are calculated and evaluated--as well as a simple buy-and-hold strategy to serve as a baseline comparison.
+
+  ![rf-cumulative-returns-plot](Images/rf-cumulative-returns-plot.png)
+
+  ![lr-cumulative-returns-plot](Images/lr-cumulative-returns-plot.png)
+
+  ![svm-cumulative-returns-plot](Images/svm-cumulative-returns-plot.png)
+
+  ![baseline-cumulative-returns-plot](Images/baseline-cumulative-returns-plot.png)
 
 * Finally, the `joblib` library allows a user to save a pre-trained model to a file for convenient future deployment. Doing so can be very valuable as fitting a model can be resource-intensive when dealing with large amounts of data, therefore persisting a model saves both time and effort (re-running code).
 
