@@ -201,7 +201,7 @@ Then, open the solution file and discuss the following:
 
   ![svm-auc-roc-curve](Images/svm-auc-roc-curve.png)
 
-* Furthermore, when dealing with trading strategies it's important to gauge the performance of the particular trading strategy in the context of returns. Therefore, the cumulative return values for each model are calculated and evaluated--as well as a simple buy-and-hold strategy to serve as a baseline comparison.
+* Furthermore, when dealing with trading strategies it's important to gauge the performance of the particular trading strategy in the context of returns. Therefore, the cumulative return values for each model are calculated and evaluated--as well as a simple buy-and-hold strategy to serve as a baseline comparison. Unfortunately, it seems like a classic buy-and-hold strategy would work best! However, this could just be a result of a particular positive crypto price trend in the test dataset.
 
   ![rf-cumulative-returns-plot](Images/rf-cumulative-returns-plot.png)
 
@@ -214,6 +214,7 @@ Then, open the solution file and discuss the following:
 * Finally, the `joblib` library allows a user to save a pre-trained model to a file for convenient future deployment. Doing so can be very valuable as fitting a model can be resource-intensive when dealing with large amounts of data, therefore persisting a model saves both time and effort (re-running code). In this case, we save all three pre-trained models.
 
   ```python
+  # Save the pre-trained models
   from joblib import dump, load
   dump(rf_model, 'random_forest_model.joblib')
   dump(lr_model, 'logistic_regression_model.joblib')
@@ -224,11 +225,13 @@ Then, open the solution file and discuss the following:
 
 ### 3. Instructor Do: Tuning a ML Trading Model (15 min)
 
-In this activity, students will re-deploy a pre-trained Random Forest model to make predictions (positive or negative daily return) given the x test dataset of BTC/USD closing prices. Then, students will compare the actual results vs. the predicted results and backtest the Random Forest model given a capital allocation of $100,000.
+In this activity, students will focus on re-deploying a pre-trained Random Forest model to make predictions (positive or non-positive returns) given the x test dataset of BTC/USD closing prices. Then, students will tune/improve the Random Forest model by using GridSearch--a method for calculating the optimal parameters for a given model.
 
 **File:** [random_forest_trading.ipynb](Activities/03-Ins_Random_Forest_Trading/Solved/random_forest_trading.ipynb)
 
 Briefly discuss the following before proceeding to the coding solution:
+
+* The previous activity focused on training three different classification models (RF, LR, SVM); however, to streamline this activity, students will focus on the re-deployment and hyperparameter tuning of a single classification model--the Random Forest model.
 
 * Now that the pre-trained Random Forest model has been saved, re-deploying the model to make predictions becomes very straightforward--all that needs to be done is to feed in the x test data (trading signal data) and compare against the y test data (actual daily return results).
 
