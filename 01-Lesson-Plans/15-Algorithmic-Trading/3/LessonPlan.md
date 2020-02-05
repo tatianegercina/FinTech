@@ -167,7 +167,7 @@ Then, open the solution file and discuss the following:
 
   ![y-train-and-y-test](Images/y-train-and-y-test.png)
 
-* And now for the last piece to the puzzle! After importing the `sklearn` library and associated classification models, each model is fitted with the x and y training data and then used to predict the y values derived from the x test dataset.
+* Great, now that the data is set up properly, we can begin training our models! After importing the `sklearn` library and associated classification models, each model is fitted with the x and y training data and then used to predict the y values derived from the x test dataset.
 
   ![train-random-forest-model](Images/train-random-forest-model.png)
 
@@ -183,11 +183,15 @@ Then, open the solution file and discuss the following:
   from sklearn.metrics import accuracy_score
   ```
 
+* Model accuracy is merely defined as the number of correct predictions divided by the number of total predictions. In this case, the y-value predictions of each model are compared to the actual y-values of the test dataset.
+
   ![rf-accuracy](Images/rf-accuracy.png)
 
   ![lr-accuracy](Images/lr-accuracy.png)
 
   ![svm-accuracy](Images/svm-accuracy.png)
+
+* 
 
 * Finally, the `joblib` library allows a user to save a pre-trained model to a file for convenient future deployment. Doing so can be very valuable as fitting a model can be resource-intensive when dealing with large amounts of data, therefore persisting a model saves both time and effort (re-running code).
 
