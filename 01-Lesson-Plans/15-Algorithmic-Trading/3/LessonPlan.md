@@ -152,7 +152,7 @@ Then, open the solution file and discuss the following:
 
   ![infinity-error.png](Images/infinity-error.png)
 
-* Almost there! The final remaining steps before proceeding to train the three different classification models (RF, LR, SVM) is to now define the training and test windows and separate the X and Y training/testing datasets. In the following code snippet, the training and test data is split by a 70-30 ratio. In other words 70% of data is allocated to training data and the remaining 30% of data will be allocated to test data, which will serve as the input to the trained models to make predictions.
+* Almost there! The final remaining steps before proceeding to train the three different classification models (RF, LR, SVM) is to now define the training and test windows and separate the X and Y training/testing datasets. In the following code snippet, the training and test data is split by a 70-30 ratio and then further sub-divided into the respective X and Y datasets.
 
   ```python
   # Use 70% of the data for training and the remaineder for testing
@@ -166,12 +166,6 @@ Then, open the solution file and discuss the following:
   ![x-train-and-x-test](Images/x-train-and-x-test.png)
 
   ![y-train-and-y-test](Images/y-train-and-y-test.png)
-
-  ![training-testing-windows.png](Images/training-testing-windows.png)
-
-  ![x-y-training-datasets](Images/x-y-training-datasets.png)
-
-  ![x-y-testing-datasets](Images/x-y-testing-datasets.png)
 
 * And now for the last piece to the puzzle! After importing the `sklearn` library and associated Random Forest classes, the model is fitted with the x and y training data and then used to predict the y values derived from the x test dataset. The results are then shown in the following DataFrame.
 
