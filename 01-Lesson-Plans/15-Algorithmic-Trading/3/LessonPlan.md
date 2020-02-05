@@ -93,7 +93,7 @@ At the end of the discussion, ask students whether or not they understand what t
 
 In this activity, students will learn how to use the set of trading signal features they generated in the previous activity to now train multiple machine learning models, namely the Random Forest, Logistic Regression, and SVM classifiers.
 
-**File:** [random_forest_training.ipynb](Activities/02-Ins_Random_Forest_Training/Solved/random_forest_training.ipynb)
+**File:** [random_forest_training.ipynb](Activities/02-Ins_Training_ML_Trading_Model/Solved/training_ml_trading_model.ipynb)
 
 Before proceeding with the coding activity, open the slides, and briefly re-cap the use of machine learning models in regards to trading:
 
@@ -227,7 +227,7 @@ Then, open the solution file and discuss the following:
 
 In this activity, students will focus on re-deploying a pre-trained Random Forest model to make predictions (positive or non-positive returns) given the x test dataset of BTC/USD closing prices. Then, students will tune/improve the Random Forest model by using GridSearch--a method for calculating the optimal parameters for a given model.
 
-**File:** [random_forest_trading.ipynb](Activities/03-Ins_Random_Forest_Trading/Solved/random_forest_trading.ipynb)
+**File:** [random_forest_trading.ipynb](Activities/03-Ins_Tuning_ML_Trading_Model/Solved/tuning_ml_trading_model.ipynb)
 
 Briefly discuss the following before proceeding to the coding solution:
 
