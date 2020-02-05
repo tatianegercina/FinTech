@@ -140,7 +140,7 @@ Then, open the solution file and discuss the following:
 
   ![dependent-variable](Images/dependent-variable.png)
 
-* It is also important to check for any positive or negative infinity values, as such values will cause problems when subsequently training the model as suggested by the error below.
+* It is also important to check for and remove any positive or negative infinity values, as such values will cause problems when subsequently training the model as suggested by the potential error below.
 
   ```python
   # Drop NAs and replace positive/negative infinity values
