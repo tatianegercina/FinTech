@@ -193,13 +193,13 @@ Then, open the solution file and discuss the following:
 
 * Oftentimes, an accuracy score is not enough of a performance measurement when trying to comprehend the performance of a classification model, as it merely indicates correct or incorrect prediction. For example, the model could predict every value as 1 and the accuracy score could end up being 50% or more. It is for this reason that the AUC-ROC curve is used, as the AUC-ROC curve indicates how well the model is capable of distinguishing between classes (predicting 0s and 0s and 1s as 1s). In essence, the higher the AUC score, the better the model is at correctly classifying the input data.
 
-**Note:** We will breakdown the AUC-ROC curve in more detail in the next activity.
+  **Note:** We will breakdown the AUC-ROC curve in more detail in the next activity.
 
   ![rf-auc-roc-curve](Images/rf-auc-roc-curve.png)
 
   ![lr-auc-roc-curve](Images/lr-auc-roc-curve.png)
 
-  ![svm-auc-roc-curve](svm-auc-roc-curve.png)
+  ![svm-auc-roc-curve](Images/svm-auc-roc-curve.png)
 
 * Finally, the `joblib` library allows a user to save a pre-trained model to a file for convenient future deployment. Doing so can be very valuable as fitting a model can be resource-intensive when dealing with large amounts of data, therefore persisting a model saves both time and effort (re-running code).
 
