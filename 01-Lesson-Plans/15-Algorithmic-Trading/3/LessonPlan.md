@@ -211,11 +211,13 @@ Then, open the solution file and discuss the following:
 
   ![baseline-cumulative-returns-plot](Images/baseline-cumulative-returns-plot.png)
 
-* Finally, the `joblib` library allows a user to save a pre-trained model to a file for convenient future deployment. Doing so can be very valuable as fitting a model can be resource-intensive when dealing with large amounts of data, therefore persisting a model saves both time and effort (re-running code).
+* Finally, the `joblib` library allows a user to save a pre-trained model to a file for convenient future deployment. Doing so can be very valuable as fitting a model can be resource-intensive when dealing with large amounts of data, therefore persisting a model saves both time and effort (re-running code). In this case, we save all three pre-trained models.
 
   ```python
   from joblib import dump, load
-  dump(model, 'random_forest_model.joblib')
+  dump(rf_model, 'random_forest_model.joblib')
+  dump(lr_model, 'logistic_regression_model.joblib')
+  dump(svm_model, 'svm_model.joblib')
   ```
 
 ---
