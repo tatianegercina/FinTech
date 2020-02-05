@@ -20,7 +20,7 @@ By the end of the class, students will be able to:
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/12aqogAhj3QhOZfcmXCFAcOetHV2R27odqlCnAjqj2GY).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/presentation/d/1_BDSSZoS2qRvOOAZJvW0dtQVaJfvhtqYzjunIsDO02o).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting `Make a copy`.
 
@@ -30,7 +30,7 @@ By the end of the class, students will be able to:
 
 * Refer to the [Solidity documentation for open auctions](https://solidity.readthedocs.io/en/v0.5.11/solidity-by-example.html#simple-open-auction).
 
-* Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx).
+* Have your TAs keep track of the [Time Tracker](TimeTracker.xlsx).
 
 ### 1. Instructor Do: Welcome to Class (10 min)
 
@@ -52,7 +52,7 @@ Review the following recall questions with the class.
 
 * Why is having a documented/formalized API for your applications and libraries important?
 
-  **Answer:** Improves clarity of what the application can do, and how it works on a granular level.
+  **Answer:** Improves clarity of what the application can do and how it works on a granular level.
 
   **Answer:** Helps set forth standards from and for your given implementation. (like `EIPS` and `ERCS`)
 
@@ -78,15 +78,15 @@ In this activity, the Instructor will demonstrate the various Auction contracts 
 
 Begin the activity by introducing the class to the backstory of the `Martian Land Foundation`.
 
-* You are a smart contract engineer on a team of elite developers hired by the martian land foundation to build a system that will crowdfund the development of a new colony on Mars. To accomplish this goal and help humanity thrive on Mars you have communicated with your project manager, gathered the necessary business requirements and have decided to leverage an `Open Auction Smart Contract`.
+* You are a smart contract engineer on a team of elite developers hired by the martian land foundation to build a system that will crowdfund the development of a new colony on Mars. To accomplish this goal and help humanity thrive on Mars, you have communicated with your project manager, gathered the necessary business requirements, and have decided to leverage an `Open Auction Smart Contract`.
 
 Next open the [Solidity open auction contract documentation](https://solidity.readthedocs.io/en/v0.5.3/solidity-by-example.html#simple-open-auction)
 
-* To implement our open auction smart contract let's take a look at how the solidity community recommends we do it based on the current version of solidity.
+* To implement our open auction smart contract, let's take a look at how the solidity community recommends we do it based on the current version of solidity.
 
 Begin by reading the description for the `Simple Open Auction`.
 
-* "The general idea of the following simple auction contract is that everyone can send their bids during a bidding period. The bids already include sending money / ether in order to bind the bidders to their bid. If the highest bid is raised, the previously highest bidder gets her money back. After the end of the bidding period, the contract has to be called manually for the beneficiary to receive their money - contracts cannot activate themselves".
+* "The general idea of the following simple auction contract is that everyone can send their bids during a bidding period. The bids already include sending money/ether in order to bind the bidders to their bid. If the highest bid is raised, the previously highest bidder gets her money back. After the end of the bidding period, the contract has to be called manually for the beneficiary to receive their money - contracts cannot activate themselves".
 
 * We will take this contract and simplify it for our needs.
 
@@ -140,7 +140,7 @@ Define a public `bool` named `ended`.
     bool public ended;
 ```
 
-* We need a way to set when an auction's bidding period has closed and the auction has ended. We are going to track this with a pubic `bool` named ended.
+* We need a way to set when an auction's bidding period has closed, and the auction has ended. We are going to track this with a pubic `bool` named ended.
 
 Define the two events that we are going to use to log data for our frontend dApp.
 
@@ -151,11 +151,11 @@ Define the two events that we are going to use to log data for our frontend dApp
 
 ```
 
-* This contract will serve as a backend store of information for an auction.  To easily communicate with our frontend, we have to define some events.
+* This contract will serve as a backend store of information for an auction to easily communicate with our frontend, we have to define some events.
 
-* Whenever the highest bid amount increases we are going to call the `HighestBidIncreased` event and log the `address` of the bidder and the `amount`.
+* Whenever the highest bid amount increases, we are going to call the `HighestBidIncreased` event and log the `address` of the bidder and the `amount`.
 
-* Whenever an auction has ended we are going to call `AuctionEnded` and log the `winner` and the `winning bid amount`.
+* Whenever an auction has ended, we are going to call `AuctionEnded` and log the `winner` and the `winning bid amount`.
 
 Define the contracts `constructor` and set the public `beneficiary` variable to the value of a `_beneficiary` parameter passed to the constructor.
 
@@ -169,7 +169,7 @@ Define the contracts `constructor` and set the public `beneficiary` variable to 
 
 * Upon deployment of a new instance of the `MartianAuction` contract, a beneficiary or the person hosting the auction must be set. Here we are going to define a constructor that will set the beneficiary.
 
-Add a new `public` function defintion named `bid` for users to bid on the auction.
+Add a new `public` function definition named `bid` for users to bid on the auction.
 
 ```solidity
 function bid(address payable sender) public payable {
@@ -180,9 +180,9 @@ function bid(address payable sender) public payable {
 
 * Here we are defining a `public payable` function named `bid` that accepts an `address` of the designated bidder the bidder can send funds to.
 
-* Bidders will bid on the auction with the value sent and the value will only be refunded if the auction is not won.
+* Bidders will bid on the auction with the value sent, and the value will only be refunded if the auction is not won.
 
-Inside the `bid` function add the `require` check for if a sent bid is less than the current `highest bid`. If it is less, then we are going to send it back and not execute any further.
+Inside the `bid` function, add the `require` check for if a sent bid is less than the current `highest bid`. If it is less, then we are going to send it back and not execute any further.
 
 ```solidity
         require(
@@ -191,7 +191,7 @@ Inside the `bid` function add the `require` check for if a sent bid is less than
         );
 ```
 
-* Inside the `bid` function we are going to add a `require` to check if a sent bid is less than the current `highest bid`. If it is less, then we are going to send it back.
+* Inside the `bid` function, we are going to add a `require` to check if a sent bid is less than the current `highest bid`. If it is less, then we are going to send it back.
 
 Add a second `require` check inside the `bid` function that will check the ended variable to see if the auction has ended.
 
@@ -203,9 +203,9 @@ Add a second `require` check inside the `bid` function that will check the ended
 
 * Remember that we can use the logical operator `!` or `not` to check if something is not the condition.
 
-* In this case, we are checking if our `ended` variable which is set to `false` by default is `not false` or `true`.
+* In this case, we are checking if our `ended` variable, which is set to `false` by default is `not false` or `true`.
 
-Add an `if statement` to check if there has been a previous bidder. Inside the body of the `if statement` add the current `highestBidder` to the `pendingReturns` mapping and map the current value of `highestBid` to that bidder's address.
+Add an `if statement` to check if there has been a previous bidder. Inside the body of the `if statement`, add the current `highestBidder` to the `pendingReturns` mapping and map the current value of `highestBid` to that bidder's address.
 
 ```solidity
         if (highestBid != 0) {
@@ -218,11 +218,11 @@ Add an `if statement` to check if there has been a previous bidder. Inside the b
         }
 ```
 
-* Thus far our bid function checks if an `incoming bid` is `higher` than the `current bid` and whether the `auction` has `ended`. If the `bid` is `higher` than the `current bid` and the `auction` has `not ended` then the next line of code will continue to execute.
+* Thus far, our bid function checks if an `incoming bid` is `higher` than the `current bid` and whether the `auction` has `ended`. If the `bid` is `higher` than the `current bid` and the `auction` has `not ended` then the next line of code will continue to execute.
 
 * Now we need to save the previous bidders info so that they can withdraw their funds from the contract since they've been outbid.
 
-* Before we can do this we need to check that there has first been a previous bidder. This is done by checking if the `highestBid` is `not equal to 0`.
+* Before we can do this, we need to check that there has first been a previous bidder. This is done by checking if the `highestBid` is `not equal to 0`.
 
 Set the new `highestBidder` to the `address` passed from the `bid` function's `sender` parameter. Also set the new `highestBid` value to the `msg.value` sent to the bid function.
 
@@ -234,7 +234,7 @@ On the last line inside the `bid` function `emit` the `HighestBidIncreased` and 
         emit HighestBidIncreased(sender, msg.value);
 ```
 
-* To complete our bid function we need to set the new `highestBidder` equal to the `sender` parameter that was passed and the `highestBidder` equal to the amount sent to the bid function, eg, `msg.value`.
+* To complete our bid function, we need to set the new `highestBidder` equal to the `sender` parameter that was passed and the `highestBidder` equal to the amount sent to the bid function, e.g., `msg.value`.
 
 * Finally we `emit` the `HighestBidIncreased` event and pass it those two values as well.
 
@@ -245,9 +245,9 @@ function withdraw() public returns (bool) {
 }
 ```
 
-* Currently we have a way to bid and even outbid other bidders. As you may remember when a bidder is outbid the amount that they originally bid is stored in `pendingReturns`. Now we need to create a way for them to return that amount to their account.
+* Currently, we have a way to bid and even outbid other bidders. As you may remember, when a bidder is outbid, the amount that they originally bid is stored in `pendingReturns`. Now we need to create a way for them to return that amount to their account.
 
-Inside the `withdraw` function start by defining a new `uint` named `amount` and set the value equal to that of the `mapped` value of `msg.sender` in the `pendingReturns` map.
+Inside the `withdraw` function, start by defining a new `uint` named `amount` and set the value equal to that of the `mapped` value of `msg.sender` in the `pendingReturns` map.
 
 Next, define a new `if statement` that checks if the amount variable is greater than 0. After the `if statement` return `true`.
 
@@ -258,7 +258,7 @@ Next, define a new `if statement` that checks if the amount variable is greater 
         return true;
 ```
 
-* Inside the `withdraw` function we are first going to check the current amount that the person who is calling the withdraw function, eg, `msg.sender` has deposited into the contract. If the amount is not greater than 0 then there is nothing to withdraw and we return `true`.
+* Inside the `withdraw` function, we are first going to check the current amount that the person who is calling the withdraw function, e.g., `msg.sender` has deposited into the contract. If the amount is not greater than 0, then there is nothing to withdraw, and we return `true`.
 
 Inside the `if stament` set the current `msg.sender's` mapped `uint` value from `pendingReturns` to 0.
 
@@ -275,7 +275,7 @@ if (!msg.sender.send(amount)) {
 }
 ```
 
-* We are now going to `send` our defined `amount` to the `address` of the `bidder` attempting to `withdraw`. To check whether or not the transaction errored out we are going to `negate` the output with a `!` operator. This will allow the `if statement` to check if `msg.sender.send` returns `false`.
+* We are now going to `send` our defined `amount` to the `address` of the `bidder` attempting to `withdraw`. To check whether or not the transaction errored out, we are going to `negate` the output with a `!` operator. This will allow the `if statement` to check if `msg.sender.send` returns `false`.
 
 Inside the nested `if statement` set the current `ms.sender`'s mapped `uint` value back to the value of `amount` and return `false`.
 
@@ -284,7 +284,7 @@ Inside the nested `if statement` set the current `ms.sender`'s mapped `uint` val
          return false;
 ```
 
-* If the `msg.sender.send` fails and returns `false` we have to revert our change of zeroing out the current bidders owed balance and return the owed value to the previous amount.
+* If the `msg.sender.send` fails and returns `false`, we have to revert our change of zeroing out the current bidders owed balance and return the owed value to the previous amount.
 
 Define a new `public` function named `pendingReturn`, this function will accept a `sender`'s `address` and returns that `sender`'s corresponding `pendingReturn amount` via the `pendingReturns` mapping.
 
@@ -294,7 +294,7 @@ Define a new `public` function named `pendingReturn`, this function will accept 
     }
 ```
 
-* For ease of use let's define a new function named `pendingReturn`, this function will accept a `sender`'s `address` and returns that `sender`'s corresponding `pendingReturn amount` via the `pendingReturns` mapping.
+* For ease of use, let's define a new function named `pendingReturn`, this function will accept a `sender`'s `address` and returns that `sender`'s corresponding `pendingReturn amount` via the `pendingReturns` mapping.
 
 Define a new `public` function named `auctionEnd`.
 
@@ -332,7 +332,7 @@ Inside the body of the `auctionEnd` contract:
         beneficiary.transfer(highestBid);
 ```
 
-* It is a good guideline to structure functions that interact with other contracts (i.e. they call functions or send Ether) into three phases:
+* It is a good guideline to structure functions that interact with other contracts (i.e., they call functions or send Ether) into three phases:
 
   1. Checking conditions
 
@@ -354,7 +354,7 @@ Inside the body of the `auctionEnd` contract:
 
   * Finally, we are going to transfer the `highestBid` amount to the `beneficiary` using the `.transfer` address method.
 
-Congratulations, we have just built a `MartianAuction` contract, you may have very well just secured mankind's future.
+Congratulations, we have just built a `MartianAuction` contract; you may have very well just secured mankind's future.
 
 ### 3. Students Do: Writing an Auction Contract (15 min)
 
@@ -410,9 +410,9 @@ First, explain to the students:
 
 * We are going to be creating an ERC721 token with the ticker `MARS`. Only one entity will be allowed to create the tokens, and that entity in this example is called the "Martian Land Foundation." Assume this foundation is a global initiative from the governments of the world and is responsible for the terraforming and fundraising of Martian Land Development.
 
-* For every token that the Martian Land Foundation mints, an `Auction` contract will be created. This auction contract will become the new owner of the token, and will allow the public to bid on that piece of land. In spirit of humanity, some landmarks will be marked as "sovereign" and will become permanently owner-less.
+* For every token that the Martian Land Foundation mints, an `Auction` contract will be created. This auction contract will become the new owner of the token and will allow the public to bid on that piece of land. In the spirit of humanity, some landmarks will be marked as "sovereign" and will become permanently owner-less.
 
-* The Martian Land Foundation can end the auctions at anytime.
+* The Martian Land Foundation can end the auctions at any time.
 
 Open up [Remix](https://remix.ethereum.org) and create a new file called `MartianMarket.sol` and populate it with the contents of the [starter code](Activities/05-Ins_Martian_Market/Unsolved/MartianMarket.sol).
 
@@ -433,7 +433,7 @@ contract MartianMarket is ERC721Full, Ownable {
 
 * In this contract, we are simply defining an ERC721 token contract called `MartianMarket` with the ticker of `MARS`. Each `MARS` token will represent a plot of land/landmark on Mars.
 
-* We are importing the `MartianAuction` code as well, since we will want to create a new auction for every new token.
+* We are importing the `MartianAuction` code as well since we will want to create a new auction for every new token.
 
 * We are setting the ERC721 contract as `Ownable` using the OpenZeppelin library, as the Martian Land Foundation will be solely responsible for the management of the tokens, and we'll want to restrict some of our functions using the `onlyOwner` modifier that OpenZeppelin provides.
 
@@ -476,7 +476,7 @@ Add a modifier that will check if a specific token exists:
 
 * We need to add this `landRegistered` modifier in order to check whether or not a token exists before operating on it.
 
-* This is done by calling the `_exists` function that is built into OpenZeppelin's ERC721 library, and returning the message `Land not registered!` if it doesn't. We can attach this modifier to any function that we expect a token to exist with, like bidding on an auction, or transfering ownership of land.
+* This is done by calling the `_exists` function that is built into OpenZeppelin's ERC721 library and returning the message `Land not registered!` if it doesn't. We can attach this modifier to any function that we expect a token to exist with, like bidding on an auction, or transferring ownership of land.
 
 Add a function to create a new `MartianAuction` contract given a `token_id`:
 
@@ -553,7 +553,7 @@ Repeat the process with the `highestBid` and `pendingReturn` functions:
     }
 ```
 
-* All three of these functions are simply "forwarding" a value from the `MartianAuction` to the `MartianMarket` interface. We can use them to introspect any activity happening to the auctions we have going for any token.
+* All three of these functions are simply "forwarding" value from the `MartianAuction` to the `MartianMarket` interface. We can use them to introspect any activity happening to the auctions we have going for any token.
 
 Finally, we need to create our last function, `bid`:
 
@@ -564,13 +564,13 @@ Finally, we need to create our last function, `bid`:
     }
 ```
 
-* While this function starts out the same as the others, it is doing something a bit special. First thing to notice, is that it is set to `payable`. Meaning, we are going to expose this function to allow users to bid on specific `MARS` land tokens by sending Ether to this function, and forwarding it to the `MartianAuction`'s `bid` function.
+* While this function starts out the same as the others, it is doing something a bit special. The first thing to notice is that it is set to `payable`. Meaning, we are going to expose this function to allow users to bid on specific `MARS` land tokens by sending Ether to this function, and forwarding it to the `MartianAuction`'s `bid` function.
 
 * In order to forward the Ether sent from one function to another, we have to use a special `.value()` syntax. All we need to do is add `.value()` *before* the parameters of any function.
 
-* For example, `auction.bid(msg.sender)` is the normal syntax. However, this only passes in the `sender` address parameter that the `MartianAuction` expects. The actual Ether attached to the transaction would be left behind. By adding `.value(msg.value)` right before the normal parenthesis that include our parameters, we are sending the entire `msg.value` to the `auction.bid` function!
+* For example, `auction.bid(msg.sender)` is the normal syntax. However, this only passes in the `sender` address parameter that the `MartianAuction` expects. The actual Ether attached to the transaction would be left behind. By adding `.value(msg.value)` right before the normal parenthesis that includes our parameters, we are sending the entire `msg.value` to the `auction.bid` function!
 
-* We must be careful about this syntax, as it only forwards `2300` gas. Since that's enough to complete our function, we're okay. Otherwise, we'd have to add `.call` right before `.value()`, but that syntax doesn't protect against re-entrancy attacks, so we'd need to be very careful about modifying the state of our contract in that case.
+* We must be careful about this syntax, as it only forwards `2300` gas. Since that's enough to complete our function, we're okay. Otherwise, we'd have to add `.call` right before `.value()`, but that syntax doesn't protect against reentrancy attacks, so we'd need to be very careful about modifying the state of our contract in that case.
 
 Make sure your contract compiles and matches the [solution](Activities/05-Ins_Martian_Market/Solved/MartianMarket.sol). The next activity includes a frontend that expects the same ABI.
 
@@ -580,7 +580,7 @@ Voila! Now it's time for the students to build out the same system.
 
 In this activity, students will be building the ERC721 + Auction based `MartianMarket`.
 
-Have TAs circulate the room and ensure students are able to complete the activity.
+Have TAs circulate the room and ensure students can complete the activity.
 
 **Instructions:**
 
@@ -604,13 +604,13 @@ Open the solution and review the `MartianMarket` code. Make sure to explain the 
 
 * In the `bid` function, we are using the `.value` syntax.
 
-  * We must be careful about this syntax, as it only forwards `2300` gas. Since that's enough to complete our function, we're okay. Otherwise, we'd have to add `.call` right before `.value()`. That forwards the remaining gas, but that syntax doesn't protect against re-entrancy attacks, so we'd need to be very careful about modifying the state of our contract in that case.
+  * We must be careful about this syntax, as it only forwards `2300` gas. Since that's enough to complete our function, we're okay. Otherwise, we'd have to add `.call` right before `.value()`. That forwards the remaining gas, but that syntax doesn't protect against reentrancy attacks, so we'd need to be very careful about modifying the state of our contract in that case.
 
 Ask the students:
 
-* If we needed to drop down to the lower level `.call.value` syntax, how could we prevent a re-entrancy attack?
+* If we needed to drop down to the lower level `.call.value` syntax, how could we prevent a reentrancy attack?
 
-  **Answer:** We'd need to set any state that limits an Ether withdrawal before calling the external function. Like in the `MartianAuction` contract, we set the `pendingReturns` for the address that is calling the `withdraw` function *before* calling `.send`. If were able to get our function to `re-enter`, the check would know they already withdrew and stop the function from sending more Ether.
+  **Answer:** We'd need to set any state that limits an Ether withdrawal before calling the external function. Like in the `MartianAuction` contract, we set the `pendingReturns` for the address that is calling the `withdraw` function *before* calling `.send`. If we're able to get our function to `re-enter`, the check would know they already withdrew and stop the function from sending more Ether.
 
 * What are some ways we can improve the logic of the `MartianMarket`? Can we make it more decentralized? How?
 
@@ -646,7 +646,7 @@ Ensure the following:
 
 * Students have built their `MartianMarket` contracts exactly like the provided examples.
 
-* The ABI `json` files, `dapp.js`, `index.html` are all within the `frontend` folder.
+* The ABI `JSON` files, `dapp.js`, `index.html` are all within the `frontend` folder.
 
 * The `README.md` is one directory above the `frontend` folder. The directory that contains the `README.md` should be the folder used to initialize and push the Git repo.
 
@@ -658,7 +658,7 @@ Ensure the following:
 
 ### 9. Instructor Do: dApp Review (10 min)
 
-Walk through the following recall questions with the class to review the various technologies/levels of the stack and their purpose:
+Walkthrough the following recall questions with the class to review the various technologies/levels of the stack and their purpose:
 
 * What is the purpose of having a Github Pages website for our dApp?
 
@@ -678,9 +678,9 @@ Walk through the following recall questions with the class to review the various
 
 * What are some potential issues that IPFS seeks to solve?
 
-  **Answer:** Inefficiencies in the web such as duplicate files.
+  **Answer:** Inefficiencies in the web, such as duplicate files.
 
-  **Answer:** Inefficiencies in the web such as having to route to a faraway server to get the file you need when it might be right next door.
+  **Answer:** Inefficiencies on the web, such as having to route to a faraway server to get the file you need when it might be right next door.
 
   **Answer:** Problems with security and file integrity, such as not knowing whether or not files you have accessed over the web have changed.
 
@@ -694,7 +694,7 @@ Walk through the following recall questions with the class to review the various
 
 ### 11. Student Do: Project Work Session (50 min)
 
-Welcome the students back to class, and allow them to use this activity time to work on their Projects.
+Welcome the students back to class, and allow them to use this activity time to work on their projects.
 
 ### 12. Instructor Do: Career Services (35 min)
 
