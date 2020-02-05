@@ -25,7 +25,7 @@ It is time to take what you have learned about unsupervised learning and the AWS
 
 ### Background
 
-You were hired as a digital transformation consultant by one of the most prominent retirement plan providers in the country; they want to increase their client portfolio, especially by engaging young people. Since machine learning and NLP are disrupting finance to improve customer experience, you decide to create a robo advisor that could be used by customers or potential new customers to get investment portfolio recommendations for retirement using Slack.
+You were hired as a digital transformation consultant by one of the most prominent retirement plan providers in the country; they want to increase their client portfolio, especially by engaging young people. Since machine learning and NLP are disrupting finance to improve customer experience, you decide to create a robo advisor that could be used by customers or potential new customers to get investment portfolio recommendations for retirement.
 
 In this homework assignment, you will combine your new skills with Amazon Web Services with your already mastered Python superpowers, to create a bot that will recommend an investment portfolio for a retirement plan.
 
@@ -35,11 +35,7 @@ You are asked to accomplish the following main tasks:
 
 2. **[Build and Test the Robo Advisor](#Build-and-Test-the-Robo-Advisor):** Make sure that your bot is working and responding accurately along with the conversation with the user, by building and testing it.
 
-3. **[Deploy the Robo Advisor on Slack](#Deploy-the-Robo-Advisor-on-Slack):** Publish the bot and create a Robo Advisor Slack app.
-
-4. **[Enhance the Robo Advisor with an Amazon Lambda Function:](#Enhance-the-Robo-Advisor-with-an-Amazon-Lambda-Function)** Create an Amazon Lambda function that validates the user's input and returns the investment portfolio recommendation. This task includes testing the Amazon Lambda function and making the integration with the bot.
-
-5. **Deploy the Robo Advisor Powered by Amazon Lambda:** Publish a new version of your bot that includes the new Amazon Lambda function, also test the new version of your bot on Slack.
+3. **[Enhance the Robo Advisor with an Amazon Lambda Function:](#Enhance-the-Robo-Advisor-with-an-Amazon-Lambda-Function)** Create an Amazon Lambda function that validates the user's input and returns the investment portfolio recommendation. This task includes testing the Amazon Lambda function and making the integration with the bot.
 
 ---
 
@@ -64,6 +60,7 @@ Sign in into your AWS Management Console and [create a new custom Amazon Lex bot
 * **Bot name:** RoboAdvisor
 * **Output voice**: Salli
 * **Session timeout:** 5 minutes
+* **Sentiment analysis:** No
 * **COPPA**: No
 
 Create the `RecommendPortfolio` intent, and configure some sample utterances as follows (you can add more utterances at your own criteria):
@@ -119,19 +116,6 @@ In this section, you will test your Robo Advisor. Build the bot and test it on t
 
 ![Robo Advisor test](Images/bot-test-no-lambda.gif)
 
-#### Deploy the Robo Advisor on Slack
-
-Congratulations! You have your Robo Advisor working. Now in this section, your mission is to publish the first version of your bot and configure the connection to Slack.
-
-1. From the Amazon Lex console, publish the version 1 of the `RoboAdvisor` bot.
-2. Login into the [Slack API website](https://api.slack.com) and create a new app called `Robo Advisor` into the development Slack workspace you defined before in class.
-3. Go to the Amazon Lex Console, navigate to the *Channels* tab on the `RoboAdvisor` bot configuration, and set up the Slack connection details.
-4. Complete the Slack integration and test it.
-
-After completing these tasks, you should get your bot working on Slack as follows.
-
-![Robo Advisor test on Slack](Images/robo-advisor-slack-no-lambda.gif)
-
 #### Enhance the Robo Advisor with an Amazon Lambda Function
 
 In this section, you will create an Amazon Lambda function that will validate the data provided by the user on the Robo Advisor. Start by creating a new lambda function from scratch and name it `recommendPortfolio`. Select Python 3.7 as runtime.
@@ -162,12 +146,6 @@ After successfully testing your code, open the Amazon Lex Console and navigate t
 
 ![Robo Advisor test with Lambda](Images/bot-test-with-lambda.gif)
 
-#### Deploy the Robo Advisor Powered by Amazon Lambda
-
-Now your bot is ready to advise customers about retirement plans on Slack. Publish a new version of the bot and test it on Slack. Your final solution should look like this.
-
-![Robo Advisor test with Lambda on Slack](Images/robo-advisor-slack-with-lambda.gif)
-
 ### Submission
 
 You should create a brand new repository in GitHub and upload the following files to your repo.
@@ -176,7 +154,7 @@ You should create a brand new repository in GitHub and upload the following file
 
 * From the Amazon Lex Console, export your bot, intent, and slot using `Amazon Lex` as the target platform, and upload the ZIP files to your repo.
 
-* Create a short video or animated GIF showing a demo of your Robo Advisor in action from Slack. Upload the video or animated GIF file to your repo.
+* Create a short video or animated GIF showing a demo of your Robo Advisor in action from the test window. Upload the video or animated GIF file to your repo.
 
 Once you have uploaded all the files into the repo, post a link to your homework's repository in BootCamp Spot.
 
