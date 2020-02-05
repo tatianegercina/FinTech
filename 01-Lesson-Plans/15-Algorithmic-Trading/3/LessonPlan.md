@@ -259,9 +259,23 @@ Open the solution file and discuss the following:
 
   ![random-forest-model-plot-2](Images/random-forest-model-plot-2.png)
 
-* The results can then be further evaluated using the imported sklearn metrics to produce an accuracy score as well as a classification_report for the Random Forest model.
+* The results can then be further evaluated using imported sklearn metrics to produce an accuracy score as well as a classification report for the Random Forest model.
 
   ![accuracy-and-classification-report-rf](Images/accuracy-and-classification-report-rf.png)
+
+* In addition, results of the Random Forest model can be used to generate a confusion matrix that indicates the ability for a classification model to correctly classify its input data. In particular, there are true negatives, false positives, false negatives, and true positives, which represent when the model correctly or incorrectly predicts a value as 1 or 0 compared to the actual value of 1 or 0.
+
+  ![rf-confusion-matrix](Images/rf-confusion-matrix.png)
+
+* Using the designated values from the confusion matrix, the true positive rate and false positive rate can be calculated. This concept feeds into the inner workings of the AUC-ROC curve in which the true positive rate (y-axis) is compared with the false positive rate (x-axis) as various thresholds, thereby indicating the ability for the model to correctly classify the input data (as specified previously).
+
+  ![tpr-fpr-auc-roc-curve-rf](Images/tpr-fpr-auc-roc-curve-rf.png)
+
+* Before using GridSearch--a hyperparameter tuning method that calculates the optimal parameters for a given model--we will have to import the necessary pre-requisites, namely the libraries and functions as well as the x-train and y-train datasets which will be used to re-train the tuned Random Forest model.
+
+  ![rf-hyperparameter-tuning](Images/rf-hyperparameter-tuning.png)
+
+* 
 
 ---
 
