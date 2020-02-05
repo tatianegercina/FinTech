@@ -58,7 +58,7 @@ Review the following recall questions with the class.
 
   **Answer:** Facilitates code hand-offs between team members and increases collaboration.
 
-* Having written many smart contracts, and now deployed a dApp. What are some contracts that you believe could be leveraged within a dApp?
+* Having written many smart contracts, and now deployed a dApp, what are some contracts that you believe could be leveraged within a dApp?
 
   **Potential Answer:** A contract that tracks the immutable locations of historical landmarks.
 
@@ -115,7 +115,7 @@ contract MartianAuction {
 
 * Inside our contract, we are going to start by defining some initial variables that will track the state of our auction.
 
-* This consists of an
+* This consists of:
 
   * An `address payable public beneficiary` will be used to track the beneficiary of the contract.
 
@@ -151,7 +151,7 @@ Define the two events that we are going to use to log data for our frontend dApp
 
 ```
 
-* This contract will serve as a backend store of information for an auction to easily communicate this information with our frontend we have to define some events.
+* This contract will serve as a backend store of information for an auction to easily communicate with our frontend, we have to define some events.
 
 * Whenever the highest bid amount increases we are going to call the `HighestBidIncreased` event and log the `address` of the bidder and the `amount`.
 
@@ -199,11 +199,11 @@ Add a second `require` check inside the `bid` function that will check the ended
         require(!ended, "auctionEnd has already been called.");
 ```
 
-* Remember the `ended` variable that we defined at the top of our contract, well we are going to add a second check inside our bid function that will check that `bool` value to see if the auction has ended.
+* Remember the `ended` variable that we defined at the top of our contract? We are going to add a second check inside our bid function that will check that `bool` value to see if the auction has ended.
 
 * Remember that we can use the logical operator `!` or `not` to check if something is not the condition.
 
-*, In this case, we are checking if our `ended` variable which is set to `false` by default is `not false` or `true`.
+* In this case, we are checking if our `ended` variable which is set to `false` by default is `not false` or `true`.
 
 Add an `if statement` to check if there has been a previous bidder. Inside the body of the `if statement` add the current `highestBidder` to the `pendingReturns` mapping and map the current value of `highestBid` to that bidder's address.
 
@@ -350,7 +350,7 @@ Inside the body of the `auctionEnd` contract:
 
   * A second require is defined to check if the `msg.sender` attempting to end the auction is equal to the `beneficiary` running the auction.
 
-  * Next we are going to set ended equal to true to end the auction if it hasn't already ended, eg our perform our effects.
+  * Next, we are going to set `ended` equal to true to end the auction if it hasn't already.
 
   * Finally, we are going to transfer the `highestBid` amount to the `beneficiary` using the `.transfer` address method.
 
@@ -366,33 +366,35 @@ In this activity, students will take a SimpleAuction contract from the Solidity 
 
 **Files:**
 
-* [Solved - MartianAuction](Activities/03-Stu_Writing_an_Auction_Contract/Solved/MartianAuction.sol)
-
-* [Unsolved - MartianAuction](Activities/03-Stu_Writing_an_Auction_Contract/Unsolved/MartianAuction.sol)
+* [MartianAuction.sol](Activities/03-Stu_Writing_an_Auction_Contract/Unsolved/MartianAuction.sol)
 
 ### 4. Instructor Do: Writing an Auction Contract Review (15 min)
+
+**Files:**
+
+* [MartianAuction.sol](Activities/03-Stu_Writing_an_Auction_Contract/Solved/MartianAuction.sol)
 
 Review the code from the previous activity with the class.
 
 Now discuss the following recall questions:
 
-* What are some additional features that you believe could add useful functionality to this contract.
+* What are some additional features that you believe could add useful functionality to this contract?
 
-  **Potential Answer** The ability to re-open bids.
+  **Potential Answer:** The ability to re-open bids.
 
-  **Potential Answer** The ability to rebid at a higher price without additional transactions.
+  **Potential Answer:** The ability to rebid at a higher price without additional transactions.
 
-  **Potential Answer** The ability to set a minimum bid price.
+  **Potential Answer:** The ability to set a minimum bid price.
 
-  **Potential Answer** The ability to set a max bid price.
+  **Potential Answer:** The ability to set a max bid price.
 
-  **Potential Answer** A buy now at market price feature.
+  **Potential Answer:** A buy now at market price feature.
 
 * Are there any other events that you think this contract could benefit from having?
 
-  **Answer** An event that is emitted when the auction opens.
+  **Answer:** An event that is emitted when the auction opens.
 
-  **Answer** An event that is emitted when funds are withdrawn.
+  **Answer:** An event that is emitted when funds are withdrawn.
 
 ### 5. Instructor Do: The MartianMarket (ERC721 + Auctions) (15 min) (Critical)
 

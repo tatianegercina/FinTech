@@ -31,7 +31,7 @@ const dApp = {
           auctionEnded: Boolean(await this.marsContract.methods.auctionEnded(i).call()),
           pendingReturn: Number(await this.marsContract.methods.pendingReturn(i, this.accounts[0]).call()),
           auction: new window.web3.eth.Contract(
-            this.auctionJson.abi,
+            this.auctionJson,
             await this.marsContract.methods.auctions(i).call(),
             { defaultAccount: this.accounts[0] }
           ),
@@ -187,7 +187,7 @@ const dApp = {
     this.auctionJson = await (await fetch("./MartianAuction.json")).json();
 
     this.marsContract = new window.web3.eth.Contract(
-      this.marsJson.abi,
+      this.marsJson,
       this.contractAddress,
       { defaultAccount: this.accounts[0] }
     );

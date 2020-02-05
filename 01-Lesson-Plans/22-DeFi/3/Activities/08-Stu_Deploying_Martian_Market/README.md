@@ -19,6 +19,10 @@ In this activity, you will create a landing page and deploy the MartianMarket dA
 
   * Replace the contents of the example ABIs with your own. Your contract was built using the same structure, so the example ABI should work anyway, but to be sure, provide your own. You **must** have used the same names of the public functions as the example [solution](Resources/martian_market/MartianMarket.sol), otherwise, neither will work.
 
+  * Make sure to copy over the correct ABIs for each contract. You will have to manually select `MartianMarket` contract from the compiler menu:
+
+  ![ABI Selection](Images/abi-selection.gif)
+
 * At the top of the `dapp.js` frontend code, set the `contractAddress` variable to equal your deployed contract.
 
 * Ensure you have pasted your contract's ABIs into their corresponding `json` files and updated the `contractAddress` variable before moving on.
@@ -63,7 +67,7 @@ In this activity, you will create a landing page and deploy the MartianMarket dA
 
 * Run the first set of commands that Github provides for uploading existing code to the repo, minus the first line of code that `echo`s to the `README.md` file (since there is already content in there).
 
-  * Once you run this set of commands, you will need to upload the rest of the frontend code, since the first set only uploads the `README.md`:
+  * Once you run this set of commands, you will need to upload the rest of the frontend code, since the first set only uploads the `README.md`. Make sure you are in the top level `martian_market` folder and run:
 
     ```bash
     git add -A
@@ -77,9 +81,9 @@ In this activity, you will create a landing page and deploy the MartianMarket dA
 
 * Click the theme chooser, pick a theme, then navigate to the URL that Github Pages provides. You should see your website generated! **(This may take a few moments to reflect and may need a refresh.)**
 
-* Once on the landing page, check our your beautiful work, then on the link that you generated to take you to your dApp. Ensure MetaMask is pointed at the same network that you've deployed the contract to. The dApp should request permissions to connect, and once on the same network the contract is deployed to, the contract data should populate.
+* Once on the landing page, check out your beautiful work, then on the link that you generated to take you to your dApp. Ensure MetaMask is pointed at the same network that you've deployed the contract to. The dApp should request permissions to connect, and once on the same network the contract is deployed to, the contract data should populate.
 
-* This frontend works similarly to the `CryptoRight` frontend:
+* This frontend works similarly to the `CryptoRight` frontend, but here's a breakdown:
 
   * If you are using the same account in MetaMask as the `foundation_address` you deployed from, you should see some admin related UI elements.
 
