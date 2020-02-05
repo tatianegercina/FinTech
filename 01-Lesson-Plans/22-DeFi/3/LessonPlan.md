@@ -20,7 +20,7 @@ By the end of the class, students will be able to:
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/12aqogAhj3QhOZfcmXCFAcOetHV2R27odqlCnAjqj2GY).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/presentation/d/1_BDSSZoS2qRvOOAZJvW0dtQVaJfvhtqYzjunIsDO02o).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting `Make a copy`.
 
@@ -151,7 +151,7 @@ Define the two events that we are going to use to log data for our frontend dApp
 
 ```
 
-* This contract will serve as a backend store of information for an auction to easily communicate with our frontend, we have to define some events.
+* This contract will serve as a backend store of information for an auction.  To easily communicate with our frontend, we have to define some events.
 
 * Whenever the highest bid amount increases we are going to call the `HighestBidIncreased` event and log the `address` of the bidder and the `amount`.
 
@@ -167,7 +167,7 @@ Define the contracts `constructor` and set the public `beneficiary` variable to 
     }
 ```
 
-* Upon deployment of a new instance of the `MartianAuction` contract a beneficiary or the person hosting the auction must be set. here we are going to define a constructor that will set the beneficiary.
+* Upon deployment of a new instance of the `MartianAuction` contract, a beneficiary or the person hosting the auction must be set. Here we are going to define a constructor that will set the beneficiary.
 
 Add a new `public` function defintion named `bid` for users to bid on the auction.
 
@@ -249,7 +249,7 @@ function withdraw() public returns (bool) {
 
 Inside the `withdraw` function start by defining a new `uint` named `amount` and set the value equal to that of the `mapped` value of `msg.sender` in the `pendingReturns` map.
 
-Next, define a new `if statement` that checks if the amount variable is greater than 0. After the `if statment` return `true`.
+Next, define a new `if statement` that checks if the amount variable is greater than 0. After the `if statement` return `true`.
 
 ```solidity
       uint amount = pendingReturns[msg.sender];
@@ -303,7 +303,7 @@ Define a new `public` function named `auctionEnd`.
     }
 ```
 
-* Lastly we need some way to end the auction. let's define a new function named `auctionEnd`.
+* Lastly, we need some way to end the auction. Let's define a new function named `auctionEnd`.
 
 * This function will end the auction and send the highest bid to the beneficiary.
 

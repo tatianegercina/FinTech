@@ -81,7 +81,7 @@ In this activity, you will create a landing page and deploy the MartianMarket dA
 
 * Click the theme chooser, pick a theme, then navigate to the URL that Github Pages provides. You should see your website generated! **(This may take a few moments to reflect and may need a refresh.)**
 
-* Once on the landing page, check out your beautiful work, then on the link that you generated to take you to your dApp. Ensure MetaMask is pointed at the same network that you've deployed the contract to. The dApp should request permissions to connect, and once on the same network the contract is deployed to, the contract data should populate.
+* Once on the landing page, check out your beautiful work, then click on the link that you generated to take you to your dApp. Ensure MetaMask is pointed at the same network that you've deployed the contract to. The dApp should request permissions to connect, and once on the same network the contract is deployed to, the contract data should populate.
 
 * This frontend works similarly to the `CryptoRight` frontend, but here's a breakdown:
 
