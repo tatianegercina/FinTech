@@ -333,13 +333,13 @@ Open the solution file and discuss the following:
 
 ### 5. Instructor Do: Recap (15 min)
 
-In this activity, instructors will briefly re-cap the process of training and using a Random Forest trading model, discuss the ways in which the model can potentially be improved, and consider deploying the model through alternative means such as AWS' Sagemaker--a machine learning cloud service that enables users to build, train, and deploy machine learning models quickly and conveniently.
+In this activity, instructors will briefly re-cap the process of training and using a machine learning-based trading model, discuss the ways in which the model can potentially be improved, and consider deploying the model through alternative means such as AWS' Sagemaker--a machine learning cloud service that enables users to build, train, and deploy machine learning models quickly and conveniently.
 
 Open the slideshow and quickly re-cap the following. Engage students by having them answer the questions wherever possible:
 
 * What did we learn today?
 
-  **Answer:** We learned how to implement a machine learning model (Random Forest) to make predictions of next-day daily returns, given a set of trading signals derived from raw asset closing prices.
+  **Answer:** We learned how to implement multiple machine learning model to make predictions of next-day daily returns, given a set of trading signals derived from raw asset closing prices.
 
 * What was the process for implementing a machine learning trading model?
 
@@ -351,7 +351,7 @@ Open the slideshow and quickly re-cap the following. Engage students by having t
 
 Then, ask students if they have any further questions before moving onto the following talking points regarding model improvement:
 
-* Admittedly, the Random Forest trading model still has room for improvement before it can be considered a robust system for automated machine learning-based trading. This is because while the activities aim to simplify the process for implementation to provide beginner insight, the trade-off in complexity affects the overall performance of the model. In particular, several factors could have benefited the training and, therefore, overall performance of the Random Forest trading model, such as using more observations or data, more features or variables, and continuous rather than binary calculations for trading signals.
+* Admittedly, every one of the trading models still have room for improvement before they can be considered robust systems for automated machine learning-based trading. This is because while the activities aim to simplify the process for implementation to provide beginner insight, the trade-off in complexity affects the overall performance of the models. In particular, several factors could have benefited the training and, therefore, overall performance of the trading models, such as using more observations or data, more features or variables, and continuous rather than binary calculations for trading signals.
 
 * The number of observations and features supplied to the model for training can be increased to provide more information, and therefore a better understanding for the model to make more accurate predictions. In this case, there were only 462 observations and 3 features upon which the model was trained.
 
