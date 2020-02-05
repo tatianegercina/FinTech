@@ -305,7 +305,19 @@ In this activity, students will implement their new ML trading models into their
 
 Briefly discuss the following before proceeding to the coding solution:
 
-* Placeholder
+* Students should be proud! Students now know how to generate trading signals from raw historical stock/crypto prices data, use such signals to feed into several machine learning models (RF, LR, SVM) as features to predict next-day positive or non-positive returns, and evaluate/tune the performances of their trading models. However, how does this all tie into the context of a machine learning trading framework? Therefore, we will proceed to implement the trading models into the defined functions of the trading framework.
+
+* For simplicity, the following code activity exemplifies how to plug-and-play pre-trained models into the trading framework functions but does not show how to stream data and continually train a machine learning model continuously (this becomes both code and resource intensive quickly).
+
+Open the solution file and discuss the following:
+
+* The `fetch_data` function has been modified to pull in hourly data from the Kraken API to coincide with the hourly datasets upon which the Random Forest, Logistic Regression, and SVM models were trained.
+
+  ![fetch-data-hourly](Images/fetch-data-hourly.png)
+
+* The `generate_signals` function includes the code to generate the trading signals based off of the technical indicators shown at the beginning of the lesson (EMA closing prices, EMA volatility, Bollinger Bands). The `fetch_data` function is called to extract the hourly BTC/USD data from Kraken and then the `generate_signals` function generates the signals, which will serve as the input to the pre-trained models.
+
+  ![generate-signals](Images/generate-signals.png)
 
 ---
 
