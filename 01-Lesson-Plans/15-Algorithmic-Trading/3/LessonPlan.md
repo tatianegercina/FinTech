@@ -283,6 +283,18 @@ Open the solution file and discuss the following:
 
   ![rf-gridsearch](Images/rf-gridsearch.png)
 
+* Almost done! Now that the GridSearch function is complete, the `best_params_` and `best_estimator_` attributes of the GridSearchCV class can be called to get the optimal parameter values and the hyperparameter tuned trained model. Then, as usual, use the `predict` function to predict the y-values based off of the x-test dataset.
+
+  ![rf-re-run-tuned-model](Images/rf-re-run-tuned-model.png)
+
+* Finally, a re-evaluation of the hyperparameter tuned Random Forest model shows the affects of the parameter optimization.
+
+  **Note:** Currently this shows no change, will have to come back to this later.
+
+  ![rf-tuned-model-evaluation](Images/rf-tuned-model-evaluation.png)
+
+  ![rf-tuned-model-auc-roc-curve](Images/rf-tuned-model-auc-roc-curve.png)
+
 ---
 
 ### 4. Instructor Do: ML Trading Framework
