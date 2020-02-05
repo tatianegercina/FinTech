@@ -267,7 +267,7 @@ Open the solution file and discuss the following:
 
   ![rf-confusion-matrix](Images/rf-confusion-matrix.png)
 
-* Using the designated values from the confusion matrix, the true positive rate and false positive rate can be calculated. This concept feeds into the inner workings of the AUC-ROC curve in which the true positive rate (y-axis) is compared with the false positive rate (x-axis) as various thresholds, thereby indicating the ability for the model to correctly classify the input data (as specified previously).
+* Using the designated values from the confusion matrix, the true positive rate and false positive rate can be calculated. This concept feeds into the inner workings of the AUC-ROC curve in which the true positive rate (y-axis) is compared with the false positive rate (x-axis) at various thresholds, thereby indicating the ability for the model to correctly classify the input data (as specified previously).
 
   ![tpr-fpr-auc-roc-curve-rf](Images/tpr-fpr-auc-roc-curve-rf.png)
 
@@ -275,7 +275,13 @@ Open the solution file and discuss the following:
 
   ![rf-hyperparameter-tuning](Images/rf-hyperparameter-tuning.png)
 
-* 
+* The next step is to determine the available parameters to the Random Forest model in which to optimize or tune. The `get_params` function of the RandomForestClassifier class produces a dictionary of available parameters.
+
+  ![rf-available-parameters](Images/rf-available-parameters.png)
+
+* Finally, using a range of values for the specified parameters intended for optimization, the GridSearchCV class fits the x-train and y-train datasets over a Random Forest model and iterates over every combination of the given parameters to determine the optimal parameter values for the Random Forest model. It should be noted that `verbose` parameter allows developers to see the progress of the GridSearch function while the `n_jobs` parameter sets task concurrency (default uses 1 CPU core, setting to -1 uses all available CPU cores).
+
+  ![rf-gridsearch](Images/rf-gridsearch.png)
 
 ---
 
