@@ -40,7 +40,7 @@ You are a smart contract engineer on a team of elite developers hired by the Mar
 
   * Define a new `uint` named `amount` and set the value equal to that of the `mapped` value of `msg.sender` in the `pendingReturns` map.
 
-  * Next, define a new `if statement` that checks if the `amount` variable is greater than 0, then after the `if statment` return `true`.
+  * Next, define a new `if statement` that checks if the `amount` variable is greater than 0, then after the `if statement` return `true`.
 
   * Inside the `if stament` set the current `msg.sender's` mapped `uint` value from `pendingReturns` to 0.
 
