@@ -4,7 +4,7 @@ In this activity, you will combine an ERC721 token contract with the `MartianAuc
 
 ## Instructions
 
-* Open up [Remix](https://remix.ethereum.org) and create a new file called `MartianMarket.sol` and populate it with the contents of the [starter code](Activities/06-Stu_Building_Martian_Market/Unsolved/MartianMarket.sol).
+* Open up [Remix](https://remix.ethereum.org) and create a new file called `MartianMarket.sol` and populate it with the contents of the [starter code](Unsolved/MartianMarket.sol).
 
   * In this contract, we are simply defining an ERC721 token contract called `MartianMarket` with the ticker of `MARS`. Each `MARS` token will represent a plot of land/landmark on Mars.
 
