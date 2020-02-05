@@ -319,6 +319,16 @@ Open the solution file and discuss the following:
 
   ![generate-signals](Images/generate-signals.png)
 
+* Because is it not necessary to train any models, the `prepare_data` function then takes the result of the `generate_signals` function and designates the correct x-test and y-test datasets. In particular, the x-test dataset should include signals of the three different technical indicators while the y-test should include the hourly return as well as the dependent value (0 or 1 for positive returns).
+
+  ![prepare-testing-data](Images/prepare-testing-data.png)
+
+* Lastly, the `evaluate_model_performance` function simply takes in a pre-trained model as input along with the x-test and y-test datasets, thereby predicting the y-values from the x-test dataset and evaluating the performance against the y-test dataset.
+
+  ![evaluate-model-performance](Images/evaluate-model-performance.png)
+
+  ![evaluate-model-performance-results](Images/evaluate-model-performance-results.png)
+
 ---
 
 ### 5. Instructor Do: Recap (15 min)
