@@ -152,7 +152,20 @@ Then, open the solution file and discuss the following:
 
   ![infinity-error.png](Images/infinity-error.png)
 
-* Almost there! The final remaining steps before proceeding to train the Random Forest model is to now define the training and test windows and separate the X and Y training/testing datasets.
+* Almost there! The final remaining steps before proceeding to train the three different classification models (RF, LR, SVM) is to now define the training and test windows and separate the X and Y training/testing datasets. In the following code snippet, the training and test data is split by a 70-30 ratio. In other words 70% of data is allocated to training data and the remaining 30% of data will be allocated to test data, which will serve as the input to the trained models to make predictions.
+
+  ```python
+  # Use 70% of the data for training and the remaineder for testing
+  split = int(.7 * len(trading_signals_df))
+  x_train = trading_signals_df[x_var_list][:split - 1]
+  x_test = trading_signals_df[x_var_list][split:]
+  y_train = trading_signals_df[['Positive Return']][:split - 1]
+  y_test = trading_signals_df[['hourly_return', 'Positive Return']][split:]
+  ```
+
+  ![x-train-and-x-test](Images/x-train-and-x-test.png)
+
+  ![y-train-and-y-test](Images/y-train-and-y-test.png)
 
   ![training-testing-windows.png](Images/training-testing-windows.png)
 
