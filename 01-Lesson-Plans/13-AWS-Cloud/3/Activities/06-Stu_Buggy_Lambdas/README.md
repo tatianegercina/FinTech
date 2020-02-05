@@ -1,6 +1,6 @@
 # Testing Lambdas
 
-As you already know not everything is hunky-dory on coding, there are sometimes when bugs and errors appear to add some noise to your code. In this activity, you will test your own Lambda using the starting test event, next you will play a little with the partner next to you to provoke and find runtime errors.
+As you already know, not everything is hunky-dory on coding, there are sometimes when bugs and errors appear to add some noise to your code. In this activity, you will test your own Lambda using the starting test event. Next, you will play a little with the partner next to you to provoke and find runtime errors.
 
 ## Instructions
 
@@ -24,7 +24,7 @@ As you already know not everything is hunky-dory on coding, there are sometimes 
 
 1. Create a backup copy of your Lambda code.
 
-2. Work in pairs with the partner next to you, now both of you will mess-up a little bit the Lambda's code.
+2. Work in pairs with the partner next to you, now both of you will mess up a little bit the Lambda's code.
 
 3. Make two slight changes to the code of your partner, for example, rename a variable name, delete an imported library, drop a parenthesis, or rename a function name. Take note of what you changed!
 
@@ -33,3 +33,6 @@ As you already know not everything is hunky-dory on coding, there are sometimes 
 5. Comment between both of you about your experience debugging the Lambda's code.
 
 6. Undo the changes or restore your Lambda function from your backup copy.
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
