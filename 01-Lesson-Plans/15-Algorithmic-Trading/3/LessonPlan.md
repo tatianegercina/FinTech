@@ -228,7 +228,13 @@ Open the solution file and discuss the following:
 
 ### 4. Instructor Do: ML Trading Framework
 
-* placeholder
+In this activity, students will implement their new ML trading models into their trading frameworks and use them to predict the next-day categorical outcome of positive or non-positive returns from hourly crypto price observations.
+
+**File:** [ml_trading_framework.ipynb](Activities/04-Ins_ML_Trading_Framework/Solved/ml_trading_framework.ipynb)
+
+Briefly discuss the following before proceeding to the coding solution:
+
+* Placeholder
 
 ---
 
