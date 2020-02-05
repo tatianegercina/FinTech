@@ -175,6 +175,20 @@ Then, open the solution file and discuss the following:
 
   ![train-svm-model](Images/train-svm-model.png)
 
+* A model is only as good as its ability to perform! Therefore, its always important to evaluate the performance of a newly trained model. In particular, the accuracy, AUC-ROC curve, and cumulative returns are evaluated for each classification model (RF, LR, SVM).
+
+  ```python
+  # Import sklearn metrics
+  from sklearn.metrics import plot_roc_curve
+  from sklearn.metrics import accuracy_score
+  ```
+
+  ![rf-accuracy](Images/rf-accuracy.png)
+
+  ![lr-accuracy](Images/lr-accuracy.png)
+
+  ![svm-accuracy](Images/svm-accuracy.png)
+
 * Finally, the `joblib` library allows a user to save a pre-trained model to a file for convenient future deployment. Doing so can be very valuable as fitting a model can be resource-intensive when dealing with large amounts of data, therefore persisting a model saves both time and effort (re-running code).
 
   ```python
