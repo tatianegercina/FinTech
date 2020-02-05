@@ -1,4 +1,4 @@
-# 22.3 Lesson Plan:
+# 22.3 Lesson Plan
 
 ### Overview
 
@@ -10,7 +10,7 @@ By the end of the class, students will be able to:
 
 * Modify and Deploy an Auction contract written in Solidity.
 
-* Use the .value function to pass Ether from one function to another in Solidity, and understand the difference between `.value`, `.call.value`, `.send`, and `.transfer`.
+* Use the .value function to pass Ether from one function to another in Solidity, and explain the difference between `.value`, `.call.value`, `.send`, and `.transfer`.
 
 * Create an ERC721 token that leverages the Auction contracts in an internal mapping structure to create "Auctionable Non-Fungible Martian Land Tokens.
 
@@ -18,7 +18,7 @@ By the end of the class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1devzesQ1UKT2weYAz43Ei9YBIM863dYDtw9IFIMfLis/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/12aqogAhj3QhOZfcmXCFAcOetHV2R27odqlCnAjqj2GY).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/presentation/d/1_BDSSZoS2qRvOOAZJvW0dtQVaJfvhtqYzjunIsDO02o).
 
@@ -52,11 +52,11 @@ Review the following recall questions with the class.
 
 * Why is having a documented/formalized API for your applications and libraries important?
 
-  **Answer:** Good documentation is always important.
+  **Answer:** Improves clarity of what the application can do, and how it works on a granular level.
 
   **Answer:** Helps set forth standards from and for your given implementation. (like `EIPS` and `ERCS`)
 
-  **Answer:** So that others can build off of your application.
+  **Answer:** Facilitates code hand-offs between team members and increases collaboration.
 
 * Having written many smart contracts, and now deployed a dApp. What are some contracts that you believe could be leveraged within a dApp?
 
@@ -66,7 +66,7 @@ Review the following recall questions with the class.
 
   **Potential Answer:** Maintain an immutable achievement list of users' achievements within an online course dApp.
 
-  **Potential Answer:** Any other dApp or smart contract that you can think of; the Ethereum blockchain is a globally distributed datastore and supports a fully Turing complete programing language.
+  **Potential Answer:** Any other dApp or smart contract that you can think of—the Ethereum blockchain is a globally distributed data store and supports Turing-complete programming languages.
 
 ### 2. Instructor Do: Auction Contracts in Solidity (10 min)
 
@@ -80,7 +80,7 @@ Begin the activity by introducing the class to the backstory of the `Martian Lan
 
 * You are a smart contract engineer on a team of elite developers hired by the martian land foundation to build a system that will crowdfund the development of a new colony on Mars. To accomplish this goal and help humanity thrive on Mars you have communicated with your project manager, gathered the necessary business requirements and have decided to leverage an `Open Auction Smart Contract`.
 
-Next open the [solidity open auction contract documentation](https://solidity.readthedocs.io/en/v0.5.3/solidity-by-example.html#simple-open-auction)
+Next open the [Solidity open auction contract documentation](https://solidity.readthedocs.io/en/v0.5.3/solidity-by-example.html#simple-open-auction)
 
 * To implement our open auction smart contract let's take a look at how the solidity community recommends we do it based on the current version of solidity.
 
@@ -370,7 +370,7 @@ In this activity, students will take a SimpleAuction contract from the Solidity 
 
 * [Unsolved - MartianAuction](Activities/03-Stu_Writing_an_Auction_Contract/Unsolved/MartianAuction.sol)
 
-### 4. Instructor Do: MartianAuction Review (15 min)
+### 4. Instructor Do: Writing an Auction Contract Review (15 min)
 
 Review the code from the previous activity with the class.
 
@@ -664,9 +664,9 @@ Walk through the following recall questions with the class to review the various
 
   **Answer:** It allows us to write documentation websites, explain the purpose of our project, gain developer and user traction, and much more.
 
-* What are some benefits of solidity events?
+* What are some benefits of Solidity Events?
 
-  **Answer:** They are a cheap amount of gas.
+  **Answer:** They have a lower gas cost.
 
   **Answer:** They allow you to keep a log of information on-chain.
 
