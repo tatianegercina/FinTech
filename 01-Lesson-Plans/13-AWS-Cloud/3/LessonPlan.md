@@ -845,6 +845,18 @@ Continue to the Amazon Lex console, test the bot to validate the changes made on
 
 ![Extended Crypto Converter demo](Images/crypto_converter_extended.gif)
 
+Open the lesson slides, move to the slide entitled "Deploying Amazon Lex Bots" and highlight the following:
+
+* Once you create your bot in Amazon Lex, you may want to put it into action and have it talking with your potential users.
+
+* You have two options to deploy your Amazon Lex bot into a productive environment to interact with potential users; you can deploy your Amazon Lex bot in mobile applications or via messaging platforms.
+
+* To integrate your bot with mobile applications, you can use the AWS SDK or the AWS Mobile Hub service.
+
+* Amazon Lex provides four built-in channels to deploy your bot in messaging platforms. Using these channels, you can deploy your bot in Slack, Facebook Messenger, Kik, or Twilio SMS.
+
+Slack out to students the [Amazon Lex deployment guide](https://docs.aws.amazon.com/lex/latest/dg/examples.html), and encourage them to try any of these deployment options by themselves.
+
 Answer any reminder question before moving forward.
 
 ---
