@@ -12,6 +12,7 @@ If you think of other potential questions to add, please let us know! We are alw
 [Unit 04 - Pandas](#unit-04-pandas) <br>
 [Unit 05 - APIs](#unit-05-apis) <br>
 [Unit 06 - Data Visualization](#unit-06-data-visualization) <br>
+[Unit 10 - Time Series](#unit-10-time-series) <br>
 [Unit 14 - Deep Learning](#unit-14-deep-learning) <br>
 
 
@@ -74,6 +75,14 @@ Any time we work with an API, it's a good idea to have the documentation ready a
 ## Unit 06: Data Visualization
 #### What is the relevance of Data Visualization?
 Your stakeholders and clients will typically be much more able to understand your projections and analytics if there are compelling and visually interesting graphics that go along with them. Raw numbers may give information, but taking that data and creating visualizations is what tells a compelling story.
+
+---
+## Unit 10: Time Series
+[Unit 10 - Full FAQ](../05-Student-Resources/unit-10/readme.md#faqs) <br>
+[What's the point of using `datetime` objects?](../05-Student-Resources/unit-10/readme.md#whats-the-point-of-using-datetime-objects)<br>
+[How do you convert objects to `datetime`?](../05-Student-Resources/unit-10/readme.md#how-do-you-convert-objects-to-datetime)<br>
+[How do you access `datetime` objects?](../05-Student-Resources/unit-10/readme.md#how-do-you-access-datetime-objects)<br>
+
 
 ## Unit 14: Deep Learning
 #### Day by Day Walk through of each day in this week:
