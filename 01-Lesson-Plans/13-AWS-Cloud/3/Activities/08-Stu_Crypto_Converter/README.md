@@ -1,6 +1,6 @@
 # Extended Crypto Converter
 
-Customers just loved the new chatbot to convert from US Dollars to Bitcoin; however people started to ask about some other cryptocurrencies. After reviewing the logs of the conversation, you realized that customers are interested in Bitcoin, Ethereum, and Ripple, so you decide to extend your crypto converter to allow customers to convert from US Dollars to one of these three cryptocurrencies.
+Customers just loved the new chatbot to convert from US Dollars to Bitcoin; however people started to ask about some other cryptocurrencies. After reviewing the logs of the conversations, you realized that customers are interested in Bitcoin, Ethereum, and Ripple, so you decide to extend your crypto converter to allow customers to convert from US Dollars to one of these three cryptocurrencies.
 
 ## Instructions
 
@@ -11,7 +11,7 @@ Customers just loved the new chatbot to convert from US Dollars to Bitcoin; howe
     * **Slot type name:** `CryptoCurrency`
     * **Description:** `Available cryptocurrencies to convert.`
     * **Slot Resolution:** Choose _Restrict to Slot values and Synonyms_.
-    * **Value:** Add three values and synonyms, one per each cryptocurrency, as can be seen, bellow.
+    * **Value:** Add three values and synonyms, one per each cryptocurrency, as can be seen, below.
 
     ![New custom slot configuration](Images/configure-new-slot-type.png)
 
@@ -23,7 +23,7 @@ Customers just loved the new chatbot to convert from US Dollars to Bitcoin; howe
 
     ![New utterances](Images/new-crypto-utterances.png)
 
-4. Build the bot and test it on the Test bot window. Start with typing the sample utterance `I want to invest in crypto` to elicit all the slots as follows.
+4. Build the bot and test it in the Test bot window. Start with typing the sample utterance `I want to invest in crypto` to elicit all the slots as follows.
 
     ![Sample bot test](Images/custom_slots_1.gif)
 
@@ -75,11 +75,11 @@ As you noticed, the bot allows users to select between Bitcoin, Ethereum, and Ri
       )
       ```
 
-4. Remove the `get_btcprice()` function in case you won't need it anymore.
+4. Remove the `get_btcprice()` function - you won't need it anymore.
 
 5. Create at least three test events, one per cryptocurrency, to validate that the code is working correctly.
 
-6. Open the Amazon Lex console and test the bot on the _Test bot_ window. Since you only made changes to Lambda, there is no need to build the bot. It would be best if you now had accurate conversions for each cryptocurrency as it's shown below.
+6. Open the Amazon Lex console and test the bot in the _Test bot_ window. Since you only made changes to Lambda, there is no need to build the bot. You should now see accurate conversions for each cryptocurrency as it's shown below.
 
     ![Extended Crypto Converted demo](Images/crypto_converter_extended.gif)
 

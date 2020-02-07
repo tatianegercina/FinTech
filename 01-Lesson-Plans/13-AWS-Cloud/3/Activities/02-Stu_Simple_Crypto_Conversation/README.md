@@ -53,7 +53,7 @@ In the end, your intent's configuration should look like this.
 
 7. Build the bot by clicking on the _Build_ button.
 
-8. Once the build process ends, test your boot with the sample utterances, you should have a final conversation flow like the following.
+8. Once the build process ends, test your bot with the sample utterances, you should have a final conversation flow like the following.
 
 ![Sample bot test](Images/crypto_converter_1.gif)
 
