@@ -242,6 +242,8 @@ Click on the `Crypto_Converter` bot, once the `convertUSD` intent is on the scre
 
 * When the bot is tested, the date of birth can be given on any format (e.g., `12/16/1978`, `16/12/1978`, `Dec 16, 1978`), using the `AMAZON.DATE` slot type will transform the date automatically to the `YYYY-mm-dd` format, as can be seen on the demo gif file bellow.
 
+* Be aware that currently Amazon Lex only supports US English; so date transformations for birthdays like June 5, 1980, typed in a numerical format like 5/6/78, as in Spanish or Canadian English, will be transformed to `1980-05-06` (May 6, 1980).
+
   ![Demo bot test](Images/crypto_converter_1.gif)
 
 Answer any questions before moving on.
@@ -286,6 +288,8 @@ On the _Create function_ page, select the _Author from scratch_ option, fill out
 
 * **Function name:** `convertUSD` (This is the name to identify our new Lambda function)
 * **Runtime:** `Python 3.7`
+
+**Note:** Currently, AWS Lambda offers support for Python 3.8, be aware of choosing version 3.7 as the runtime to avoid version conflicts with the code in Today's lesson.
 
 ![Create function page](Images/aws-lambda-create-function.png)
 
@@ -592,7 +596,7 @@ By default, you will see that the last used test case is selected, notice that t
 
 ![Edit saved test event](Images/lambda-add-new-test-default-selection.png)
 
-Choose the _Create new test event_ option, and you will notice that the previous test event remains as a template. Change the value of the `usdAmount` slot to zero to test the amount validation coded on the Lambda. Click on the _Create_ button to continue.
+Choose the _Create new test event_ option, and you will notice that the previous test event remains as a template. Change the value of the `usdAmount` slot to zero to test the amount validation coded on the Lambda and name the new event as `convertErrAmount`. Click on the _Create_ button to continue.
 
 ![Create a new test event to cast amount value](Images/lambda-add-convertErrAmount.png)
 
@@ -713,7 +717,9 @@ Modify the utterances to have the _Sample utterances_ like the ones shown below.
 
 ![New sample utterances](Images/new-crypto-utterances.png)
 
-Highlight to students that on the new utterances, the word `bitcoin` has been substituted by the slot `crypto` to allow users to specify on their dialog what cryptocurrency they want to convert to, for example by typing `I want to convert USD to Ripple`.
+Highlight to students that on the new utterances, the words `bitcoin` and `BTC` should be deleted and type `{crypto}` instead to allow users to specify on their dialog what cryptocurrency they want to convert to, for example by typing `I want to convert USD to Ripple`, `Ripple` will be taken as the `crypto` slot.
+
+Also, note that you should not have repeated utterances since an error will raise when you compile the bot. The utterances `I want to convert {usdAmount} to BTC` and `I want to convert {usdAmount} to bitcoin` will become `I want to convert {usdAmount} to {crypto}`, so you only need to keep this utterance once.
 
 Build the bot and test it on the _Test bot_ window. Start with typing the sample utterance `I want to invest in crypto` to elicit all the slots as follows.
 
