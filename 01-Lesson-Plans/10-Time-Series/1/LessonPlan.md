@@ -203,17 +203,19 @@ Explain to students that over the next several weeks, we will be learning about 
 
 In this activity, you will introduce the basics of working with time series in Python.
 
-Explain that we will learn the following Pandas techniques to work with time series data:
+Navigate to the Time Series Basics slides and explain that we will learn the following Pandas techniques to work with time series data:
 
+
+* Using the `loc[]` accessor to select rows with specified dates. (First Slide)
+
+* Using the `resample()` method to group rows by day, week, month, year, or any datetime attribute. (Following Slide)
+
+In addition, we'll be:
 * Converting a column of dates from string to datetime format.
-
-* Using the `loc[]` accessor to select rows with specified dates.
-
-* Using the `resample()` method to group rows by day, week, month, year, or any datetime attribute.
 
 * Accessing datetime attributes from the index.
 
-Open the notebook and run the following lines of code:
+The next slide introduces an Instructor Demonstration. Open the notebook and run the following lines of code:
 
   ```python
   df = pd.read_csv('liquor_sales.csv')
@@ -394,6 +396,8 @@ Next, explain that the code below decomposes the liquor sales data.
   ```
 
 * The model is specified as multiplicative because the seasonal fluctuation (the spikes) increases with the series.
+   
+   * Why? If you have a time series with a trend, the amplitude of any seasonal activity  in that series tends to increase over time. In other words, those periodic 'spikes' in a series get 'spikier', the more you progress through time. A multiplicative model specification will better capture and predict this type of activity.
 
 Explain that the time series is decomposed visually by the library:
 
@@ -407,7 +411,7 @@ Explain that the time series is decomposed visually by the library:
 
 * The residual components are the leftovers when trend and seasonality are removed.
 
-Finally, explain that the library used in the notebook is more useful as an illustrative tool than a predictive tool. We will cover such tools during this week.
+Finally, explain that the library used in the notebook is more useful as an illustrative tool than a predictive tool. This is because we're not yet using these tools to actually make predictions about the future; we're just characterizing the data that we've got. We will cover such predictive tools and applications though during this week.
 
 - - -
 
@@ -419,7 +423,46 @@ Finally, explain that the library used in the notebook is more useful as an illu
 
 In this activity, you will introduce EWMA, or exponentially-weighted moving average. You will also introduce the Hodrick-Prescottt filter, a tool that captures trends by minimizing local fluctuations.
 
-**Files:**
+Begin by doing a concept overview of the EWMA and Hodrick-Prescott filters using the slides.  
+
+**EWMA Slides** 
+Explain that an exponentially-weighted moving average (EWMA) is similar to a moving average, with a significant difference:
+
+  ![Images/ma02.png](Images/ma02.png)
+
+* In an EWMA, unlike an MA, recent values carry more weight than values from a more distant past.
+
+* This strategy may better capture **trends** than a simple moving average.
+
+**Hodrick Prescott Slides**
+Introduce the topic of the Hodrick-Prescott filter:
+
+* It is a mathematical function used to separate short-term fluctuations, such as ones that occur daily, from longer-term trends.
+
+* It decomposes a time series into trend and non-trend components.
+
+* Like rolling average and EWMA, it can be used to capture trends.
+
+The math slide explains the overall mathematical idea of the Hodrick-Prescott filter:
+
+  ![Images/hp01.png](Images/hp01.png)
+
+* It is a function that minimizes the sum of two values.
+
+* As discussed previously, a time series can be decomposed into trend, periodicity, and noise.
+
+* If we temporarily disregard noise, then, time series data minus trend equals periodicity. 
+
+* The left side describes the cyclic element: time series (y) minus trend (tau).
+
+* The right side basically describes the volatility in trend.
+
+* The H-P filter essentially **minimizes** the aggregate values associated with non-trend (periodicity and volatility).
+ 
+Phew! Let's move on to demo-ing the code. 
+
+
+**Instructor Demo and Files:**
 
 * [hodrick.ipynb](Activities/04-Ins_Hodrick_Prescott/Solved/hodrick.ipynb)
 
@@ -429,7 +472,7 @@ Open the notebook and describe the dataset:
 
 * The data tracks the closing price during a two-year period of IVV, an exchange-traded fund (ETF) that tracks the S&P 500 index.
 
-Begin the activity with a brief review of the moving average:
+Begin the activity with a brief review of the moving average, before rolling on to EWMA and Hodrick-Prescott (excuse the pun):
 
 ![Images/ma01.png](Images/ma01.png)
 
@@ -437,41 +480,13 @@ Begin the activity with a brief review of the moving average:
 
 * In pandas, it can be computed with the `rolling()` and `mean()` methods, with the `window` argument specifying the number of prior values to average.
 
-Explain that an exponentially-weighted moving average (EWMA) is similar to a moving average, with a significant difference:
+* Yet the EWMA is different, as it gives greater weight to the most recent observations. In finance, this is nice, because it means we're still filtering out noise (like a moving average), yet we're also reacting more quickly to information (the "exponentially weighted" part of EWMA). 
 
-  ![Images/ma02.png](Images/ma02.png)
+* In pandas, an EWMA can be computed with the `ewm()` and `mean()` methods.
 
-* In an EWMA, unlike an MA, recent values carry more weight than values from a more distant past.
+* As mentioned above, in a rolling average, a `window` argument is supplied. By contrast, the `ewm()` method takes a `halflife` argument. 
+  *  The two are conceptually similar, but not mathematically the same thing. Essentially halflife relates to how much weight we give to the more recent observations: the shorter the halflife, the more weight we're giving to those recent observations (think: shorter half life==reacting more quickly).
 
-* This strategy may better capture **trends** than a simple moving average.
-
-* In pandas, it can be computed with the `ewm()` and `mean()` methods.
-
-* In a rolling average, a `window` argument is supplied. In contrast, the `ewm()` method takes a `halflife` argument.
-
-Introduce the topic of the Hodrick-Prescott filter:
-
-* It is a mathematical function used to separate short-term fluctuations, such as ones that occur daily, from longer-term trends.
-
-* It decomposes a time series into trend and non-trend components.
-
-* Like rolling average and EWMA, it can be used to capture trends.
-
-Open the slides to explain the overall mathematical idea of the Hodrick-Prescott filter:
-
-  ![Images/hp01.png](Images/hp01.png)
-
-* It is a function that minimizes the sum of two values.
-
-* As discussed previously, a time series can be decomposed into trend, periodicity, and noise.
-
-* If we temporarily disregard noise, then, time series data minus trend equals periodicity.
-
-* The left side describes the cyclic element: time series (y) minus trend (tau).
-
-* The right side basically describes the volatility in trend.
-
-* The H-P filter essentially **minimizes** the aggregate values associated with non-trend (periodicity and volatility).
 
 Next, explain the Python code used to run the Hodrick-Prescott filter:
 
@@ -492,7 +507,7 @@ Finally, show the plots of the trend and noise components after filtering:
 
   ![Images/hp04.png](Images/hp04.png)
 
-* The first plot shows the trend, which is considerably smoother than the raw time series data.
+* The first plot shows the trend, which is considerably smoother than the raw time series data. This represents the trend; the part of the time-series that is less driven by short term and random fluctuations.
 
 * The second plot shows the noise (non-trend) that has been filtered out.
 
@@ -518,15 +533,16 @@ In this activity, students will use the Hodrick-Prescott filter to identify macr
 
 Open the solution file, and conduct a brief dry walkthrough of the code.
 
-* Explain that Pandas's `DataReader` function is used to retrieve data from FRED at specified starting and endpoints.
+* Explain that we'll read in data from the Federal Reserve via a csv. 
+  *  (To prevent in-class bugs, we're using csv's, but for students that want to pull this data real-time, they can use Pandas's `DataReader` package.):
 
-  ```python
-  start = datetime.datetime(2004, 1, 1)
-  end = datetime.datetime(2010, 1, 1)
-  gdp = web.DataReader(['GDP'], 'fred', start, end)
-  ```
+        ```python
+        start = datetime.datetime(2004, 1, 1)
+        end = datetime.datetime(2010, 1, 1)
+        gdp = web.DataReader(['GDP'], 'fred', start, end)
+        ```
 
-  ![datareader.png](Images/datareader.png)
+        ![datareader.png](Images/datareader.png)
 
 * Explain using the H-P filter in Python. It is a `statsmodels` module that requires a single line of code. The plots are created simply with pandas's `plot()` method.
 
@@ -545,6 +561,16 @@ If time allows, take a moment to compare and contrast the H-P filter:
 
 ### 12. Instructor Do: Autocorrelation (15 min)
 
+Before diving into the code, introduce the concept of autocorrelation with the first few slides on it:
+
+* Up to this point, when dealing with linear regression, we have tried to identify the relationship between two unrelated variables, such as date vs. weather, or years of experience vs. salary.
+
+* Autocorrelation, on the other hand, determines to what extent, for example, today's values correlate with yesterday's values.
+
+* Hourly temperature is a clear, easy to understand, illustration of the concept autocorrelation. 
+  * What's the temperature an hour into the future? It's very likely to be similar to what it is now (one "lag" away).
+  * What's the temparature at noon today? Likely we'll get good information by looking at what the temperature was at noon yesterday (24 hours, or "lags", ago).
+
 **File:** [autocorrelation.ipynb](Activities/06-Ins_Auto_Correlation/Solved/autocorrelation.ipynb)
 
 Open the notebook and briefly describe the data set:
@@ -557,11 +583,6 @@ Open the notebook and briefly describe the data set:
 
 * Each hourly reading is fairly close to that of the previous hour.
 
-Introduce the concept of autocorrelation:
-
-* Up to this point, when dealing with linear regression, we have tried to identify the relationship between two unrelated variables, such as date vs. weather, or years of experience vs. salary.
-
-* Autocorrelation, on the other hand, determines to what extent, for example, today's values correlate with yesterday's values.
 
 To illustrate autocorrelation, explain to students that the `Lag_Temperature` column is the result of shifting the `Temperature` column down by one:
 
@@ -609,7 +630,7 @@ Next, explain the code used to calculate the auto correlation:
 
 * Here, the lag is 1, meaning that the series of temperature readings is correlated against a series of temperature readings taken one hour previously.
 
-* The correlation coefficient is 0.99, a very high number.
+* The correlation coefficient is 0.99, a very high number. Temperatures, unlike financial markets, are relatively easy to predict. 
 
 Explain that autocorrelation can be computed at a different lag
 
@@ -643,6 +664,7 @@ The `plot_acf()` function visualizes what we have discussed so far:
 * This plot, in other words, shows autocorrelation at lags up to 48, which was specified in the argument `lags=48`.
 
 * As pointed out previously, there is high autocorrelation at a lag of 1, slightly lower at lag 2, and so on. Then a high autocorrelation is found at a lag of 24, and multiples of 24, such as 48.
+     * This high autocorrelation at the -24 and -48 hour lag is a good example of seasonality; the weather today at noon is much more likely to be correlated with what the weather was yesterday at noon than, say, what the weather was last midnight.   
 
 Next, explain that the band in light blue is the confidence interval.
 
@@ -720,6 +742,9 @@ Walk through the solution code:
 * The bid-ask spread data is sampled at a 10-second interval, and NaN values are dropped.
 
 * The autocorrelation at a lag of 1 is 0.136.
+  * Think of this number as how a time series correlates with what it's value was just previously.
+  * If this value is 0.136, it means, for example, that a high bid-ask spread over the last ten seconds likely indicates a high bid-ask spread for the next ten seconds.
+  * Just like correlation, autocorrelation ranges from -1 to 1; this means that while we found a positive and predictable relationship, the evidence is still a little weak.
 
 Review the ACF and PACF plots:
 
@@ -735,7 +760,12 @@ Review the ACF and PACF plots:
 
   * The ACF and PACF plots here have a similar appearance, although that is not always the case.
 
-  * The ACF and PACF both appear to be significant at a lag of 1.
+  * The ACF and PACF both appear to be significant at a lag of 1, along with possibly the 4th lag.
+    * Should we chose the first lag, or lags 1 through 4? Both lags are above the blue shaded area, meaning their effect is real (statistically significant). That might suggest we use a model that carries the order all the way out to AR(4). Ultimately, however, whether an AR(1) or an AR(4) is more appropriate will really just ultimately depend on how well the two different specifications perform on the data that we have. 
+
+    * While approximately the 13th lag looks significant in the autocorrelation plot, it's not when looking at the partial autocorrelation plot below that. This illustrates the helpfulness of pacf(); the really beneficial lags are the 1st and the 4th, whereas the ones after that aren't really doing anything that's incrementally useful when it comes to making predictions about future bid-ask spreads. 
+
+  
 
 - - -
 
@@ -751,4 +781,4 @@ Ask if there are any questions before moving on. Encourage students to attend of
 
 - - -
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
