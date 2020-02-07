@@ -42,3 +42,26 @@ There are numerous ways to access `datetime` objects.  One of the benefits of us
 
 ![year_month_day_df](Resources/year_month_day_df.png)
 </details>
+<details>
+<summary><strong>To access a range of dates by year:</strong></summary>
+
+![year_month_day_df](Resources/range_year_df.png)
+</details>
+<details>
+<summary><strong>To access a range of dates by year and month:</strong></summary>
+
+![year_month_day_df](Resources/range_year_month_df.png)
+</details>
+<details>
+<summary><strong>To access a range of dates by year, month and day:</strong></summary>
+
+![year_month_day_df](Resources/range_year_month_day_df.png)
+</details>
+
+#### How do you group time series data?
+Grouping time series data is important for plotting and analysis.  The `.resample()` method allows grouping by multiple categories.  For example, we can group the jeopardy point values by year using the following code:
+![resample_Y_df](Resources/resample_Y_df.png)
+
+This groups all of the `value` data by year.  The data can then be plotted:
+
+![resample_Y_plot](Resources/resample_Y_plot.png)
