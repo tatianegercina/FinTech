@@ -105,4 +105,31 @@ Open the unsolved version of the Jupyter notebook, live code the solution and hi
           y_vader_pred.append(0)
   ```
 
-* We define a threshold of `0.1` to label a review as positive, if the `compound` score is greater or equal than `0.1`, the review comment will be positive (append `1` to `y_vader_pred`); if the `compound` score is below `0.1`, the review comment will be negative (append `0` to `y_vader_pred`).
+* Since we want to compare these two models on scoring sentiment as positive or negative, we need a way to interpret the polarity scores given by VADER.
+
+* Following some recommendations of NLP researchers, we define a threshold of `0.1` to label a review as positive, if the `compound` score is greater or equal than `0.1`, the review comment will be positive (append `1` to `y_vader_pred`); if the `compound` score is below `0.1`, the review comment will be negative (append `0` to `y_vader_pred`).
+
+* Once we score the sentiment using VADER, we need to normalize the values of the `y_vader_prob` list. We will use the min-max normalization algorithm.
+
+* We can apply the min-max normalization algorithm by using the `MinMaxScaler` method from `sklearn` as follows:
+
+  ```python
+  # Option 1: Normalizing data using MinMaxScaler from sklearn
+  from sklearn.preprocessing import MinMaxScaler
+
+  scaler = MinMaxScaler()
+  scaler.fit(np.array(y_vader_prob).reshape(-1,1))
+  y_vader_prob_norm = scaler.transform(np.array(y_vader_prob).reshape(-1,1))
+  ```
+
+* Also, we may want to manually code the min-max algorithm using a comprehension list as follows:
+
+  ```python
+  # Option 2: Using a comprehension list
+  normalized = [(x - min(y_vader_prob)) / (max(y_vader_prob) - min(y_vader_prob))
+                for x in y_vader_prob]
+  ```
+
+* Either method you use, will lead to the same results of normalizing the values between `0` and `1`. We will consider the first approach for this demo.
+
+* At this time, we have the original sentiments in `y_test`, the predicted sentiment classes in `y_vader_pred`, and the sentiment predictions in `y_vader_prob`. Not we will continue to score sentiment using an RNN LSTM model.
