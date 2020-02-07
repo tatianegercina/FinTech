@@ -88,7 +88,7 @@ vocabulary_size = len(tokenizer.word_counts.keys()) + 1
 embedding_size = 64
 ```
 
-* Define an RNN LSTM model with two layers as follows:
+* Define an RNN LSTM model as follows:
 
   * _Layer 1:_ Add an `Embedding` layer using the `vocabulary_size` and `embedding_size` variables as the first two parameters, and setting `input_length=max_words` (the same size as the padding).
 
