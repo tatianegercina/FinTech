@@ -27,41 +27,68 @@ df = pd.read_csv('jeopardy.csv', parse_dates=True, index_col='air_date)
 #### How do you access `datetime` objects?
 There are numerous ways to access `datetime` objects.  One of the benefits of using these data types, is the added functionality they provide for analysing data, not just with plotting but with cleaning and aggregating.  Using our Jeopardy example, we can access different episodes using different date calls:
 <details>
-<summary><strong>To access rows by a particular year:</strong></summary>
+<summary>To access rows by a particular year:</summary>
 
 ![year_df](Resources/year_df.png)
 </details>
 <details>
-<summary><strong>To access rows by a particular year and month:</strong></summary>
+<summary>To access rows by a particular year and month:</summary>
 
 ![year_month_df](Resources/year_month_df.png)
 </details>
 
 <details>
-<summary><strong>To access rows by a particular year, month, and day:</strong></summary>
+<summary>To access rows by a particular year, month, and day:</summary>
 
 ![year_month_day_df](Resources/year_month_day_df.png)
 </details>
 <details>
-<summary><strong>To access a range of dates by year:</strong></summary>
+<summary>To access a range of dates by year:</summary>
 
 ![year_month_day_df](Resources/range_year_df.png)
 </details>
 <details>
-<summary><strong>To access a range of dates by year and month:</strong></summary>
+<summary>To access a range of dates by year and month:</summary>
 
 ![year_month_day_df](Resources/range_year_month_df.png)
 </details>
 <details>
-<summary><strong>To access a range of dates by year, month and day:</strong></summary>
+<summary>To access a range of dates by year, month and day:</summary>
 
 ![year_month_day_df](Resources/range_year_month_day_df.png)
 </details>
 
 #### How do you group time series data?
 Grouping time series data is important for plotting and analysis.  The `.resample()` method allows grouping by multiple categories.  For example, we can group the jeopardy point values by year using the following code:
-![resample_Y_df](Resources/resample_Y_df.png)
+<img src= Resources/resample_Y_df.png width=325><br>
 
-This groups all of the `value` data by year.  The data can then be plotted:
+The data can then be plotted:
 
-![resample_Y_plot](Resources/resample_Y_plot.png)
+<img src= Resources/resample_Y_plot.png width=425><br>
+
+The following is a non-exhaustive list of many `.resample()` frequency aliases:
+| Alias       | Frequency Description                   |
+|-------------|-----------------------------------------|
+| `D`         | Calendar day                            |
+| `W`         | Weekly                                  |
+| `M`         | Month end                               |
+| `SM`        | Semi-month end  (15th & month end)      |
+| `BM`        | Business month end                      |
+| `MS`        | Month start                             |
+| `SMS`       | Semi-month start  (1st and 15th)        |
+| `BMS`       | Business month start                    |
+| `Q`         | Quarter end                             |
+| `BQ`        | Business quarter end                    |
+| `QS`        | Quarter start                           |
+| `BQS`       | Business quarter start                  |
+| `A`         | Year end                                |
+| `BA`, `BY`  | Business year end                       |
+| `AS`, `YS`  | Year start                              |
+| `BAS`, `BYS`| Business year start                     |
+| `BH`        | Business hour                           |
+| `H`         | Hourly                                  |
+| `T`, `min`  | Minutes                                 |
+| `S`         | Seconds                                 |
+| `L`, `ms`   | Milliseconds                            |
+| `U`, `us`   | Microseconds                            |
+| `N`         | Nanoseconds                             |
