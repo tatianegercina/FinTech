@@ -59,7 +59,7 @@ There are numerous ways to access `datetime` objects.  One of the benefits of us
 </details>
 
 #### How do you group time series data?
-Grouping time series data is important for plotting and analysis.  The `.resample()` method allows grouping by multiple categories.  For example, we can group the jeopardy point values by year using the following code:
+Grouping time series data is important for plotting and analysis.  The `.resample()` method allows grouping by multiple categories.  Similar to the `.groupby()` function, an aggregation method must be used to show the grouped data.  For example, we can group the mean jeopardy point values by year using the following code:
 <img src= Resources/resample_Y_df.png width=325><br>
 
 The data can then be plotted:
