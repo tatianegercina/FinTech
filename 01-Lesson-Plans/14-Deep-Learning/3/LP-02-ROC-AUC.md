@@ -1,6 +1,6 @@
 ### 2. Instructor Do: Intro to the ROC Curve and AUC (15 min)
 
-In this activity, students will learn how to measure the performance of a binary classification model by fetching metrics from Keras, as well as plotting and interpreting the ROC curve and AUC.
+In this activity, students will learn how to assess the performance of a binary classification model by fetching metrics from Keras, as well as plotting and interpreting the ROC curve and AUC.
 
 **Files:**
 
@@ -10,7 +10,7 @@ In this activity, students will learn how to measure the performance of a binary
 
 Explain to students that you will start Today's class by learning some advanced evaluation metrics, such as the ROC curve and AUC, that will be used to evaluate deep learning models.
 
-Open the lesson slides and navigate to the "Introducing ROC Curve and AUC" section and highlight the following:
+Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" section and highlight the following:
 
 * ROC stands for "Receiver Operating Characteristic."
 
