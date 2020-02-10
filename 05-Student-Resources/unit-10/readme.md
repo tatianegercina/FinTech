@@ -60,6 +60,7 @@ There are numerous ways to access `datetime` objects.  One of the benefits of us
 
 #### How do you group time series data?
 Grouping time series data is important for plotting and analysis.  The `.resample()` method allows grouping by multiple categories.  Similar to the `.groupby()` function, an aggregation method must be used to show the grouped data.  For example, we can group the mean jeopardy point values by year using the following code:
+
 <img src= Resources/resample_Y_df.png width=325><br>
 
 The data can then be plotted:
@@ -92,3 +93,9 @@ The following is a non-exhaustive list of many `.resample()` frequency aliases:
 | `L`, `ms`   | Milliseconds                            |
 | `U`, `us`   | Microseconds                            |
 | `N`         | Nanoseconds                             |
+
+#### Why do we smooth our time series data?
+
+Smoothing time series data helps clean out the 'noise' so we can better spot trends.  For example, to capture a true long-term trend in retail sales, it would be necessary to clean out the seasonal fluctuations in the data.  We know sales will spike in retail around the holidays each year, so that seasonal spike would need to be smoothed out so we can see the underlying trend.
+
+#### What are some methods for smoothing time series data?
