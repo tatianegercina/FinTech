@@ -102,30 +102,30 @@ In this activity, you will demonstrate how to construct a basic contract in Soli
 
 Open your web browser and navigate to the [Remix IDE website](http://remix.ethereum.org):
 
-* Enable the `Solidity` development environment if it's disabled.
+Enable the `Solidity` development environment if it's disabled.
 
  ![remix_1.png](Images/remix_1.png)
 
-* Click on the create new file button in the file explorer:
+Click on the create new file button in the file explorer:
 
  ![remix_2.png](Images/remix_2.png)
 
-* Enter the name of the new Solidity file "message_contract.sol" and click `OK`:
+Enter the name of the new Solidity file "message_contract.sol" and click `OK`:
 
  ![remix_3.png](Images/remix_3.png)
 
-* You should now see the following empty editor window:
+You should now see the following empty editor window:
 
  ![Images/remix_4.png](Images/remix_4.png)
 
-* Type the following contract into the editor window:
+Type the following contract into the editor window:
 
  ```solidity
  pragma solidity ^0.5.0;
 
  contract MessageContract {
- address my_address = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- string message = "Send me money!";
+    address my_address = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    string message = "Send me money!";
  }
  ```
 
@@ -161,21 +161,21 @@ Take a moment to discuss data types with the class. Explain to the class the fol
 
 * There are several reasons for this:
 
- * Much like how a legal contract does not leave room for ambiguity, we also remove the same ambiguity from our code by being very specific about how we are storing data, like strings, numbers, arrays, or booleans (`true`/`false` values).
+  * Much like how a legal contract does not leave room for ambiguity, we also remove the same ambiguity from our code by being very specific about how we are storing data, like strings, numbers, arrays, or booleans (`true`/`false` values).
 
- * When we define the data types upfront, the Solidity compiler does not have to expend the resources figuring out what type the data is. In Python, the interpreter runs the code and figures out the types on the fly. While this makes writing the code easier, it is more expensive to run since Python has to calculate the type again every time.
+  * When we define the data types upfront, the Solidity compiler does not have to expend the resources figuring out what type the data is. In Python, the interpreter runs the code and figures out the types on the fly. While this makes writing the code easier, it is more expensive to run since Python has to calculate the type again every time.
 
- * Different data types have a different `gas` cost associated with it. Therefore, if you have to store an `address`, you should use the native `address` type instead of a `string`, since it's cheaper that way.
+  * Different data types have a different `gas` cost associated with it. Therefore, if you have to store an `address`, you should use the native `address` type instead of a `string`, since it's cheaper that way.
 
 Use the following questions to engage the class:
 
 * What advantages would a language have for specifying the type?
 
- **Answer:** Specifying the data types allows the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts because it costs money to store data.
+  * **Answer:** Specifying the data types allows the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts because it costs money to store data.
 
- **Answer:** When the language is dealing with finance, you want the code to be very precise and accurate.
+  * **Answer:** When the language is dealing with finance, you want the code to be very precise and accurate.
 
- **Answer:** Types can be used by the compiler for error-checking.
+  * **Answer:** Types can be used by the compiler for error-checking.
 
 Demonstrate how to compile the contract using Remix and highlight the following:
 
