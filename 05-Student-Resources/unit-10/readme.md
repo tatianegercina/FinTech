@@ -99,3 +99,19 @@ The following is a non-exhaustive list of many `.resample()` frequency aliases:
 Smoothing time series data helps clean out the 'noise' so we can better spot trends.  For example, to capture a true long-term trend in retail sales, it would be necessary to clean out the seasonal fluctuations in the data.  We know sales will spike in retail around the holidays each year, so that seasonal spike would need to be smoothed out so we can see the underlying trend.
 
 #### What are some methods for smoothing time series data?
+
+Some of the methods we learn in class are exponentially weighted moving average (EWMA), Hodrick-Prescott filter.
+
+<details>
+<summary>Simple Moving Average:</summary>
+
+In a simple moving average, the mean is calculated on a specified number of data points to the get the trend line.  For example, using our Jeopardy data, we would get the simple moving average of the point values by calculating the mean of every 5 values, moving down 1 with each calculation. could be take on every 5 data points to get a moving (also known as rolling) average.  Using our Jeopardy data, lets visualize a simple moving average:
+
+![simple_ma_gif](Resources/simple_ma_gif.gif)
+
+</details>
+
+<details>
+<summary>Exponentially Weighted Moving Average (EWMA):</summary>
+
+EWMA is a moving average technique that applies more weight to recent data.
