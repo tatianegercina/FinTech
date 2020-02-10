@@ -12,6 +12,22 @@ Explain to students that you will start Today's class by learning some advanced 
 
 Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" section and highlight the following:
 
+* As you remember, we use the confusion matrix to assess the performance of a binary classification model.
+
+  ![Confusion matrix components](Images/confusion-matrix.png)
+
+* Let's recall the four components of this matrix:
+
+  * TP (True Positives): Refers to the positive values that were correctly classified as positive by the model.
+
+  * TN (True Negatives): Refers to the negative values that were correctly classified as negative by the model.
+
+  * FP (False Positives): Refers to the negative values that were incorrectly classified as positive by the model.
+
+  * FN (False Negatives): Refers to the positive values that were incorrectly classified as negative by the model.
+
+* The ROC Curve and AUC are a couple of techniques that use the values from the confusion matrix to check and visualize the performance of a classification model
+
 * ROC stands for "Receiver Operating Characteristic."
 
 * The ROC curve shows the performance of a classification model as its discrimination threshold is varied.
@@ -26,7 +42,7 @@ Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" s
 
   ![rnn-sentiment-7](Images/rnn-sentiment-7.png)
 
-* Every point in the ROC curve represents the `TPR` Vs. `FPR` at different thresholds. The following image a typical ROC Curve.
+* Every point in the ROC curve represents the `TPR` Vs. `FPR` at different thresholds. The following image is a typical ROC Curve.
 
   ![ROC Curve](Images/roc-curve.png)
 
@@ -36,9 +52,15 @@ Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" s
 
 * The value of `AUC` ranges from `0` to `1`. A model whose predictions are `100%` wrong has an `AUC = 0.0`; in contrast, a model whose predictions are `100%` correct has an `AUC = 1.0`.
 
+* Higher the AUC, better the model is at predicting `0s` as `0s` and `1s` as `1s`.
+
+  ![Different AUC values](Images/auc-for-roc-curves.png)
+
 Open the unsolved version of the Jupyter notebook and highlight the following while you live-code the demo.
 
-* For this demo, we will use a dataset that contains anonymous information about `284807` credit card transactions made by European credit cardholders in September 2013 to create a fraud detection model using a deep neural network.
+* For this demo, we will create a fraud detection model using a deep neural network.
+
+* We will use a dataset that contains anonymous information about `284807` credit card transactions made by European credit cardholders in September 2013.
 
 * The dataset contains nine numerical variables, which are the result of PCA transformation to protect the confidentiality of credit cardholders. Only the transaction amount can be seen as is.
 
@@ -115,7 +137,7 @@ Explain to students that we are using the `sigmoid` activation function since we
 
 Next, the model is compiled. Explain to students that the `binary_crossentropy` loss function is used since we want to create a binary classification model.
 
-Point out that we are defining some metrics to assess the model. These metrics are part of [the Keras metrics module](https://www.tensorflow.org/api_docs/python/tf/keras/metrics?version=stable) and that these are the same metrics students are already familiar from previous units when binary classification was introduced. The only new metric is `AUC` that will be explained next in the model's evaluation.
+Point out that we are defining some metrics to assess the model. These metrics are part of [the Keras metrics module](https://www.tensorflow.org/api_docs/python/tf/keras/metrics?version=stable) and that these are the same metrics students are already familiar from previous units when the binary classification was introduced. The only new metric is `AUC` that will be explained next in the model's evaluation.
 
 Explain to students that the `name` parameter is used to quickly identify each parameter during the training process and the model evaluation phase.
 
