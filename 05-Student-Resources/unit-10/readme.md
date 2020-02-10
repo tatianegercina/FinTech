@@ -109,6 +109,11 @@ In a simple moving average, the mean is calculated on a specified number of data
 
 ![simple_ma_gif](Resources/simple_ma_gif.gif)
 
+Using our Jeopardy data, we'll calculate the simple moving average values for the `value` column and place them in a new column called `moving avg`.  The moving average values are calculated using the `.rolling()` function, with a `window` parameter of 5 set.  The `window` parameter is the number of time points to include in the mean calculation.  For our example, we'll use a window of 5:
+```python
+df['moving avg']=df['value'].rolling(window=5).mean()
+```
+![simple_ma_df](Resources/simple_ma_df.png)
 </details>
 
 <details>
