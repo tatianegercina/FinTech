@@ -347,58 +347,58 @@ Open the solution and explain the following:
 
 * The `getInfo` function should specify the following return types:
 
- * `address`
+  * `address`
 
- * `bool`
+  * `bool`
 
- * `uint`
+  * `uint`
 
- * `string memory`
+  * `string memory`
 
 * Inside the `getInfo` we should return the following variables:
 
- * `owner`
+  * `owner`
 
- * `is_new_account`
+  * `is_new_account`
 
- * `account_balance`
+  * `account_balance`
 
- * `customer_name`
+  * `customer_name`
 
  ```solidity
  function getInfo() public returns(address, bool, uint, string memory) {
- return (owner, is_new_account, account_balance, customer_name);
+    return (owner, is_new_account, account_balance, customer_name);
  }
  ```
 
 * The `setInfo` function should accept the following parameters:
 
- * newOwner as an `address` type
+  * newOwner as an `address` type
 
- * isNewAccount as a `bool`
+  * isNewAccount as a `bool`
 
- * newAccountBalance as a `uint`
+  * newAccountBalance as a `uint`
 
- * newAccountID as `string memory`
+  * newAccountID as `string memory`
 
 * Inside the `setInfo` function, we should set the following variables equal to the following function parameters.
 
- * `owner` is equal to `newOwner`
+  * `owner` is equal to `newOwner`
 
- * `is_new_account` is equal to `isNewAccount`
+  * `is_new_account` is equal to `isNewAccount`
 
- * `account_balance` is equal to `newAccountBalance`
+  * `account_balance` is equal to `newAccountBalance`
 
- * `customer_name` is equal to `newCustomerName`
+  * `customer_name` is equal to `newCustomerName`
 
- ```solidity
+```solidity
  function setInfo(address newOwner, bool isNewAccount, uint newAccountBalance, string memory newCustomerName) public {
- owner = newOwner;
- is_new_account = isNewAccount;
- account_balance = newAccountBalance;
- customer_name = newCustomerName;
+    owner = newOwner;
+    is_new_account = isNewAccount;
+    account_balance = newAccountBalance;
+    customer_name = newCustomerName;
  }
- ```
+```
 
 Ask for any remaining questions before moving on.
 
