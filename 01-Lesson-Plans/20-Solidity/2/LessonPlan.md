@@ -444,14 +444,14 @@ Earlier in the day, we built a simple contract that stored variables representin
 
 Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavings.sol`:
 
-* Type the following contract boilerplate:
+Type the following contract boilerplate:
 
  ```solidity
  pragma solidity ^0.5.0;
 
  contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
  }
  ```
 
@@ -463,34 +463,36 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
 
  * Pay special attention to the new modifier that we are using called `payable`. By setting an `address` or function as `payable`, we unlock special functions that allow us to capture and manage ether.
 
-* For example, if we wanted to withdraw ether from the contract, we can add a withdraw function like so:
+Add a basic withdraw function to the contract.
 
  ```solidity
  pragma solidity ^0.5.0;
 
  contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
- function withdraw(uint amount, address payable recipient) public {
- return recipient.transfer(amount);
- }
+    function withdraw(uint amount, address payable recipient) public {
+        return recipient.transfer(amount);
+    }
  }
  ```
 
- * Our withdrawal function accepts the following parameters:
+ * For example, if we wanted to withdraw ether from the contract, we can add a withdraw function like so.
 
- * A `uint` amount representing the amount of ether (in its smallest denomination, Wei) we would like to withdraw.
+    * Our withdrawal function accepts the following parameters:
 
- * The `address` recipient that we would like to withdraw to.
+    * A `uint` amount representing the amount of ether (in its smallest denomination, Wei) we would like to withdraw.
 
- * All smart contracts on Ethereum have their own address when deployed, and can store and send ether like a wallet.
+    * The `address` recipient that we would like to withdraw to.
+
+    * All smart contracts on Ethereum have their own address when deployed, and can store and send ether like a wallet.
 
  * Address types have built-in functions, like `address.balance`. If we set the address to `payable`, the `.transfer` function is enabled, which allows us to transfer ether from the contract's wallet to that address.
 
  * Notice that we have the recipient parameter set as a `payable address` in this withdraw function. We still have to be explicit like this in the parameters as well, so that we can call the `.transfer` function on the recipient address later in the function.
 
-* Now that we can withdraw, let's add the ability to deposit:
+Add a `public payable` function named deposit to the contract.
 
  ```solidity
  pragma solidity ^0.5.0;
@@ -507,6 +509,8 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
  }
  ```
 
+ * Now that we can withdraw, let's add the ability to deposit.
+
  * Remember, all smart contracts on Ethereum have their own address when deployed, and can store and send ether like a wallet. It is up to us to create functions that manage this ether properly, as we did with the withdraw function.
 
  * When we create a deposit function and set it to `payable`, we are telling the contract to accept the ether that is sent to this function.
@@ -519,7 +523,7 @@ Ask the students the following question:
 
 * As you know, moving ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the `gas` that was sent?
 
- * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our ether back since it was never successfully spent.
+    * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our ether back since it was never successfully spent.
 
 We are going to add one final line to make sure that if ether is sent to the contract without using the `deposit` function, (i.e., sending ether directly to the contract's address), we can still capture the ether into the contract's wallet.
 
@@ -529,11 +533,11 @@ We are going to add one final line to make sure that if ether is sent to the con
  pragma solidity ^0.5.0;
 
  contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
  function withdraw(uint amount, address payable recipient) public {
- return recipient.transfer(amount);
+    return recipient.transfer(amount);
  }
 
  function deposit() public payable {}
