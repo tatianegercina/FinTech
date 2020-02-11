@@ -751,7 +751,7 @@ Open the solution and explain the following:
 
  ```Solidity
  if (recipient == account_one || recipient == account_two) {
- recipient.transfer(amount);
+    recipient.transfer(amount);
  }
  ```
 
@@ -777,14 +777,14 @@ Up to this point, everyone's contract should look like this:
 pragma solidity ^0.5.0;
 
 contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
- function withdraw(uint amount, address payable recipient) public {
- if (recipient == account_one || recipient == account_two) {
- recipient.transfer(amount);
- }
- }
+  function withdraw(uint amount, address payable recipient) public {
+    if (recipient == account_one || recipient == account_two) {
+        recipient.transfer(amount);
+    }
+  }
 
  function deposit() public payable {}
 
@@ -803,8 +803,8 @@ Remove the `if` statement, then replace it with the following `require`:
 
 ```solidity
 function withdraw(uint amount, address payable recipient) public {
- require(recipient == account_one || recipient == account_two, "You do not own this account!");
- recipient.transfer(amount);
+    require(recipient == account_one || recipient == account_two, "You do not own this account!");
+    recipient.transfer(amount);
 }
 ```
 
