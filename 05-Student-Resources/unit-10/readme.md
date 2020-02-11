@@ -119,4 +119,35 @@ df['moving avg']=df['value'].rolling(window=5).mean()
 <details>
 <summary>Exponentially Weighted Moving Average (EWMA):</summary>
 
-EWMA is a moving average technique that applies more weight to recent data.
+EWMA is a moving average technique that applies more weight to recent data. To obtain the EWMA with pandas, the `.ewm()` function is called. The weight you wish to apply can is supplied with the `halflife` parameter.  The `halflife` is how how long it takes a weight to reach 1/2 of its original weight. Using this method, the lower the `halflife`.  Half life can be visualized as follows:
+![ewma_gif](Resources/ewma_gif.gif)
+
+The function itself is called like this:
+```python
+df['ewma']=df['value'].ewm(halflife=3).mean()
+```
+![ewma_df](Resources/ewma_df.png)
+
+
+</details>
+
+<details>
+<summary>Hodrick Prescott Filter:</summary>
+The Hodrick Prescott filter separates your data into trend and noise, and converts them into two pandas Series.  These series can be placed into a DataFrame, or plotted directly allowing for easy visualization.
+
+For this example, we'll use Tesla stock price data from the last 10 years:
+
+![TSLA_df](Resources/TSLA_df.png)
+
+Next we'll import the Hodrick Prescott filter from the `statsmodels` library and use it to separate the noise from the trend:
+```python
+import statsmodels.api as sm
+noise, trend = sm.tsa.filters.hpfilter(df['Open'])
+```
+This data can then easily be plotted by using the `plot()` pandas function:
+
+![TSLA_noise](Resources/TSLA_noise.png)
+![TSLA_trend](Resources/TSLA_trend.png)
+
+
+</details>
