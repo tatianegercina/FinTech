@@ -295,7 +295,7 @@ Add a function to fetch all of the variables in one shot:
 
  ```solidity
  function getLatestTrade() public returns (string memory, uint, bool) {
- return (coin, price, is_buy_order);
+    return (coin, price, is_buy_order);
  }
  ```
 
