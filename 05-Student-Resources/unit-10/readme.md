@@ -174,9 +174,13 @@ Sometimes it can be difficult to visually determine whether the data is stationa
 
 #### How do you convert non-stationary data to stationary?
 
-If you determine your data is non-stationary, but you need to be, it can be converted by applying either `.pct_change()` or `.diff.()` to your target column.  The `.pct_change()` method will show the percentage change between values, while the `.diff()` method will subtract the values to get the difference:
+If you determine your data is non-stationary, but you need to be, it can be converted by applying either `.pct_change()` or `.diff.()` to your target column:
 
-<img src='Resources/diff_pct_chg.PNG' width=600><br>
+<img src='Resources/diff_pct_chg1.PNG' width=350><br>
+
+The `.pct_change()` method will show the percentage change between values, while the `.diff()` method will subtract the values to get the difference:
+
+<img src='Resources/diff_pct_chg2.PNG' width=550><br>
 
 #### Which models use stationary data and which use non-stationary data?
 
