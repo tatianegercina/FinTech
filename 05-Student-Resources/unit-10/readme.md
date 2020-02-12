@@ -131,14 +131,14 @@ df['moving avg']=df['value'].rolling(window=5).mean()
 <details>
 <summary>Exponentially Weighted Moving Average (EWMA):</summary>
 
-EWMA is a moving average technique that applies more weight to recent data. To obtain the EWMA with pandas, the `.ewm()` function is called. The weight you wish to apply can is supplied with the `halflife` parameter.  The `halflife` is how how long it takes a weight to reach 1/2 of its original weight. Using this method, the lower the `halflife` the move weight is placed on the most recent time periods.  Half life can be visualized as follows:
+EWMA is a moving average technique that applies more weight to recent data. To obtain the EWMA with pandas, the `.ewm()` function is called. The weight you wish to apply is supplied with the `halflife` parameter.  The `halflife` is how long it takes a weight to reach half of its original weight. Using this method, the lower the `halflife` the move weight is placed on the most recent time periods.  Half life can be visualized as follows:
 ![ewma_gif](Resources/ewma_gif.gif)
 
 The function itself is called like this:
 ```python
 df['ewma']=df['value'].ewm(halflife=3).mean()
 ```
-![ewma_df](Resources/ewma_df.png)
+![ewma_df](Resources/ewma_df.PNG)
 
 
 </details>
@@ -194,7 +194,7 @@ Below you can see the autocorrelation plotted with `.plot_acf()`, using the same
 
 <img src='Resources/ac04.png' width=450><br>
 
-Using partial autocorrelation, you can dive even deeper.  PACF allows you to see not just which lags are correlated but which ones have the heaviest effect on all the others.  Below we can see that lags 0 and 1 account for the rest of the days' temperatures.  This starts over agan at lag 25, because a new day begins.  This means that the temperatures for the entire day are dependent on the temperatures from lags 0 and 1.  Remember, lag is another word for your time interval!  In this case, hours.
+Using partial autocorrelation, you can dive even deeper.  PACF allows you to see not just which lags are correlated but which ones have the heaviest effect on all the others.  Below we can see that lags 0 and 1 account for the rest of the days' temperatures.  This starts over again at lag 25, because a new day begins.  This means that the temperatures for the entire day are dependent on the temperatures from lags 0 and 1.  Remember, lag is another word for your time interval!  In this case, hours.
 
 <img src='Resources/ac05.png' width=450><br>
 
