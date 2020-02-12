@@ -16,7 +16,7 @@
 [What is `get_dummies` and why do I have to use it?](#what-is-get-dummies-and-why-do-i-have-to-use-it)<br>
 
 #### What's the point of using `datetime` objects?
-Humans can look at a date and instantly know how to categorize it - day, month, year, etc. - but computers look at dates see just another line of text, and will interpret that text as `strings`.  This can make cleaning, prepping and plotting data very difficult.  That's where time series functionality comes into play.  Casting your date `strings` to `datetime` translates them for your code, allowing the code to interpret and categorize dates the same way you do.  For example, let's take a DataFrame of Jeopardy questions from the last 35 seasons.  In the following example, the data is read in via `.read_csv()`, but the dates are read in as `strings` by default.  You can see the dates are not categorized, but rather they are plotted in the order they appear in the data:
+Humans look dates and instantly know how to categorize them - day, month, year, etc.  Your code look at dates see just another line of text, and will interpret that text as `strings`.  This can make cleaning, prepping and plotting data very difficult.  That's where time series functionality comes into play.  Casting your date `strings` to `datetime` type translates them for your code, allowing the code to interpret and categorize dates the same way you do.  For example, let's plot some Jeopardy data from the last 35 seasons.  In the following example, the data is read in via `.read_csv()`, but the dates are read in as `strings` by default.  You can see the dates are not categorized, but rather they are plotted in the order they appear in the data:
 
 <img src='Resources/str_plot.png' width=400><br>
 
@@ -35,7 +35,7 @@ This converts each object to a `datetime` object.  Alternatively, you can also s
 df = pd.read_csv('jeopardy.csv', parse_dates=True, index_col='air_date)
 ```
 #### How do you access `datetime` objects?
-There are numerous ways to access `datetime` objects.  One of the benefits of using these data types, is the added functionality they provide for analysing data, not just with plotting but with cleaning and aggregating.  Using our Jeopardy example, we can access different episodes using different date calls:
+There are numerous ways to access `datetime` objects.  One of the benefits of using these data types is the added functionality they provide for analyzing data, not just with plotting but with cleaning and aggregating.  Using our Jeopardy example, we can access different episodes using different date calls:
 <details>
 <summary>To access rows by a particular year:</summary>
 
@@ -69,7 +69,7 @@ There are numerous ways to access `datetime` objects.  One of the benefits of us
 </details>
 
 #### How do you group time series data?
-Grouping time series data is important for plotting and analysis.  The `.resample()` method allows grouping by multiple categories.  Similar to the `.groupby()` function, an aggregation method must be used to show the grouped data.  For example, we can group the mean jeopardy point values by year using the following code:
+Grouping time series data is important for plotting and analysis.  The `.resample()` method allows grouping by multiple categories.  Similar to the `.groupby()` function, an aggregation method must be used to show the grouped data.  For example, we can group the mean Jeopardy point values by year using the following code:
 
 <img src= Resources/resample_Y_df.png width=325><br>
 
@@ -112,16 +112,16 @@ Smoothing time series data helps clean out the 'noise' so we can better spot tre
 
 #### What are some methods for smoothing time series data?
 
-Some of the methods we learn in class are exponentially weighted moving average (EWMA), Hodrick-Prescott filter.
+Some of the methods for smoothing time series data are simple moving average, exponentially weighted moving average (EWMA) and Hodrick-Prescott filter.
 
 <details>
 <summary>Simple Moving Average:</summary>
 
-In a simple moving average, the mean is calculated on a specified number of data points to the get the trend line.  For example, using our Jeopardy data, we would get the simple moving average of the point values by calculating the mean of every 5 values, moving down 1 with each calculation. could be take on every 5 data points to get a moving (also known as rolling) average.  Using our Jeopardy data, lets visualize a simple moving average:
+In a simple moving average, the mean is calculated on a specified number of data points to the get the trend line.  For example, using our Jeopardy data, we would get the simple moving average of the point values by calculating the mean of every 5 values, moving down 1 with each calculation.  Using our Jeopardy data, lets visualize a simple moving average:
 
 ![simple_ma_gif](Resources/simple_ma_gif.gif)
 
-Using our Jeopardy data, we'll calculate the simple moving average values for the `value` column and place them in a new column called `moving avg`.  The moving average values are calculated using the `.rolling()` function, with a `window` parameter of 5 set.  The `window` parameter is the number of time points to include in the mean calculation.  For our example, we'll use a window of 5:
+Now let's calculate the simple moving average values for the `value` column and place them in a new column called `moving avg`.  The moving average values are calculated using the `.rolling()` function, with the parameter `window` set to 5.  The `window` parameter is the number of time points to include in the mean calculation...
 ```python
 df['moving avg']=df['value'].rolling(window=5).mean()
 ```
@@ -131,7 +131,7 @@ df['moving avg']=df['value'].rolling(window=5).mean()
 <details>
 <summary>Exponentially Weighted Moving Average (EWMA):</summary>
 
-EWMA is a moving average technique that applies more weight to recent data. To obtain the EWMA with pandas, the `.ewm()` function is called. The weight you wish to apply can is supplied with the `halflife` parameter.  The `halflife` is how how long it takes a weight to reach 1/2 of its original weight. Using this method, the lower the `halflife`.  Half life can be visualized as follows:
+EWMA is a moving average technique that applies more weight to recent data. To obtain the EWMA with pandas, the `.ewm()` function is called. The weight you wish to apply can is supplied with the `halflife` parameter.  The `halflife` is how how long it takes a weight to reach 1/2 of its original weight. Using this method, the lower the `halflife` the move weight is placed on the most recent time periods.  Half life can be visualized as follows:
 ![ewma_gif](Resources/ewma_gif.gif)
 
 The function itself is called like this:
@@ -145,9 +145,9 @@ df['ewma']=df['value'].ewm(halflife=3).mean()
 
 <details>
 <summary>Hodrick Prescott Filter:</summary>
-The Hodrick Prescott filter separates your data into trend and noise, and converts them into two pandas Series.  These series can be placed into a DataFrame, or plotted directly allowing for easy visualization.
+The Hodrick Prescott filter separates your data into trend and noise, and converts them into two Pandas Series.  These Series can be placed into a DataFrame, or plotted directly allowing for easy visualization.
 
-For this example, we'll use Tesla stock price data from the last 10 years.  The date column will be converted to `datetime` type upon reading the csv which gives us fully date functionality, and displays our charts appropriately:
+For this example, we'll use Tesla stock price data from the last 10 years.  The date column will be converted to `datetime` type upon reading the csv which gives us full `datetime` functionality, and displays our charts appropriately:
 
 ![TSLA_df](Resources/TSLA_df.png)
 
@@ -156,7 +156,7 @@ Next we'll import the Hodrick Prescott filter from the `statsmodels` library and
 import statsmodels.api as sm
 noise, trend = sm.tsa.filters.hpfilter(df['Open'])
 ```
-This data can then easily be plotted by using the `plot()` pandas function:
+This data can then be easily plotted by using the `plot()` pandas function:
 
 ![TSLA_noise](Resources/TSLA_noise.png)
 ![TSLA_trend](Resources/TSLA_trend.png)
@@ -174,7 +174,7 @@ Sometimes it can be difficult to visually determine whether the data is stationa
 
 #### How do you convert non-stationary data to stationary?
 
-If you determine your data is non-stationary, but you need to be, it can be converted by applying either `.pct_change()` or `.diff.()` to your target column.  The `.pct_change()` method will percentage change between values, while the `.diff()` method will subtract the values to get the difference:
+If you determine your data is non-stationary, but you need to be, it can be converted by applying either `.pct_change()` or `.diff.()` to your target column.  The `.pct_change()` method will show the percentage change between values, while the `.diff()` method will subtract the values to get the difference:
 
 <img src='Resources/diff_pct_chg.PNG' width=600><br>
 
@@ -184,17 +184,17 @@ ARMA models assume stationarity.
 
 ARIMA does not assume stationarity.
 
-ARIMA will convert your data to stationary and then execute the function.  ARMA requires that you give the function stationary data to start.
+ARIMA will convert your data to stationary and then execute the function.  ARMA requires that you supply stationary data from the start.
 
 #### What is the point of ACF and PACF?
 
 ACF (Autocorrelation Function) and PACF (Partial Autocorrelation Function) help to determine the number of lags that are important in the correlation of a dataset.  This lag number is important for autoregressive models, such as ARMA and ARIMA.  Lags can be thought of as a unit of time - it's the measure of distance (in time) that the data point corresponds to.  ACF and PACF determine the correlation of data between those time points.
 
-Below you can see the autocorrelation plotted with `.plot_acf()`, using the same weather example from class.  Significant lags at exist at particular hours (lags).  You would expect that the temperature at hour (lag) 12 on one day will be closely correlated to the temperature at hour (lag) 12 on the next day, and so on.
+Below you can see the autocorrelation plotted with `.plot_acf()`, using the same weather example from class.  Significant lags exist at particular hours (lags).  You would expect that the temperature at hour (lag) 12 on one day will be closely correlated to the temperature at hour (lag) 12 on the next day, and so on.
 
 <img src='Resources/ac04.png' width=450><br>
 
-Using partial autocorrelation, you can dive even deeper.  PACF allows you to see not just which hours (lags) are correlated but which ones have the heaviest effect on all the others.  Below we can see that lags 0 and 1 account for the rest of the days temperatures.  This starts over agan at lag 25, because a new day begins.  This means that the temperatures for the entire day are dependent on the temperatures from lags 0 and 1.  Remember, lag is another word for your time interval!  In this case, hours.
+Using partial autocorrelation, you can dive even deeper.  PACF allows you to see not just which lags are correlated but which ones have the heaviest effect on all the others.  Below we can see that lags 0 and 1 account for the rest of the days' temperatures.  This starts over agan at lag 25, because a new day begins.  This means that the temperatures for the entire day are dependent on the temperatures from lags 0 and 1.  Remember, lag is another word for your time interval!  In this case, hours.
 
 <img src='Resources/ac05.png' width=450><br>
 
@@ -211,18 +211,18 @@ Our PACF plot, shows one significant lag, and thus our AR order value would be 1
 
 #### What is `.reshape()` and why do I have to use it?
 
-When working with Pandas, we often pass Series objects into our model.  The shape of values in a Pandas Series object is a simple list.  This has to be converted into a 2d array which is essentially an array of arrays - or list of lists. .  This is done using the `.reshape()` function.  The matrix values we desire are passed into this function.  In the following example we reshape our list into a 2d array using `.reshape(3,4)`, where 3 is the number of lists and 4 is the number of values in each list:
+When working with Pandas, we often pass Series objects into our model.  The shape of values in a Pandas Series object is a 1d array.  This has to be converted into a 2d array which is essentially an array of arrays - or list of lists. .  This is done using the `.reshape()` function.  The matrix values we desire are passed into this function.  In the following example we reshape our list into a 2d array using `.reshape(3,4)`, where 3 is the number of lists and 4 is the number of values in each list:
 
 ![2d_array](Resources/2d_array.png)
 
-Many models require the 2d array to be formatted such that each value is in a list by itself. If we were inserting the above sample data into a model, it would be converted using `.reshape(-1,1)`, where -1 indicates an unknwon number of rows, and ` indicates the number of values in each list.  The -1 will allow the function to generate the amount of rows necessary to hold the data.  The output looks like this:
+Many models require the 2d array to be formatted such that each value is in a list by itself. If we were inserting the above sample data into a model, it would be converted using `.reshape(-1,1)`, where -1 indicates an unknown number of rows, and 1 indicates the number of values in each list.  The -1 will allow the function to generate the amount of rows necessary to hold the data.  The output looks like this:
 
 ![2d_array_reshape](Resources/2d_array_reshape.png)
 
 
 #### What is `.get_dummies() and why do I have to use it?
 
-This function can convert your categorical data into numerical binary format.  This is especially important when working with certain types of models, because categorical data cannot be read by them model.  If you want to give your model feature data that is False/Positive, Male/Female, or Buy/Sell, it will need to be converted into binary so the computer can understand it.  The `get_dummies()` function does this by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  Lets encode the category column of our Jeopardy data using `get_dummies()`:
+This function can convert your categorical data into numerical binary format.  This is especially important when working with certain types of models, because categorical data cannot be read by the model.  If you want to give your model categorical data such as False/Positive, Male/Female, or Buy/Sell, it will need to be converted into binary so the computer can understand it.  The `get_dummies()` function does this by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  Lets encode the category column of our Jeopardy data using `get_dummies()`:
 
 ![get_dummies1](Resources/get_dummies1.PNG)
 
