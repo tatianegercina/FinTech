@@ -102,30 +102,30 @@ In this activity, you will demonstrate how to construct a basic contract in Soli
 
 Open your web browser and navigate to the [Remix IDE website](http://remix.ethereum.org):
 
-* Enable the `Solidity` development environment if it's disabled.
+Enable the `Solidity` development environment if it's disabled.
 
  ![remix_1.png](Images/remix_1.png)
 
-* Click on the create new file button in the file explorer:
+Click on the create new file button in the file explorer:
 
  ![remix_2.png](Images/remix_2.png)
 
-* Enter the name of the new Solidity file "message_contract.sol" and click `OK`:
+Enter the name of the new Solidity file "message_contract.sol" and click `OK`:
 
  ![remix_3.png](Images/remix_3.png)
 
-* You should now see the following empty editor window:
+You should now see the following empty editor window:
 
  ![Images/remix_4.png](Images/remix_4.png)
 
-* Type the following contract into the editor window:
+Type the following contract into the editor window:
 
  ```solidity
  pragma solidity ^0.5.0;
 
  contract MessageContract {
- address my_address = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- string message = "Send me money!";
+    address my_address = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    string message = "Send me money!";
  }
  ```
 
@@ -161,21 +161,21 @@ Take a moment to discuss data types with the class. Explain to the class the fol
 
 * There are several reasons for this:
 
- * Much like how a legal contract does not leave room for ambiguity, we also remove the same ambiguity from our code by being very specific about how we are storing data, like strings, numbers, arrays, or booleans (`true`/`false` values).
+  * Much like how a legal contract does not leave room for ambiguity, we also remove the same ambiguity from our code by being very specific about how we are storing data, like strings, numbers, arrays, or booleans (`true`/`false` values).
 
- * When we define the data types upfront, the Solidity compiler does not have to expend the resources figuring out what type the data is. In Python, the interpreter runs the code and figures out the types on the fly. While this makes writing the code easier, it is more expensive to run since Python has to calculate the type again every time.
+  * When we define the data types upfront, the Solidity compiler does not have to expend the resources figuring out what type the data is. In Python, the interpreter runs the code and figures out the types on the fly. While this makes writing the code easier, it is more expensive to run since Python has to calculate the type again every time.
 
- * Different data types have a different `gas` cost associated with it. Therefore, if you have to store an `address`, you should use the native `address` type instead of a `string`, since it's cheaper that way.
+  * Different data types have a different `gas` cost associated with it. Therefore, if you have to store an `address`, you should use the native `address` type instead of a `string`, since it's cheaper that way.
 
 Use the following questions to engage the class:
 
 * What advantages would a language have for specifying the type?
 
- **Answer:** Specifying the data types allows the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts because it costs money to store data.
+  * **Answer:** Specifying the data types allows the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts because it costs money to store data.
 
- **Answer:** When the language is dealing with finance, you want the code to be very precise and accurate.
+  * **Answer:** When the language is dealing with finance, you want the code to be very precise and accurate.
 
- **Answer:** Types can be used by the compiler for error-checking.
+  * **Answer:** Types can be used by the compiler for error-checking.
 
 Demonstrate how to compile the contract using Remix and highlight the following:
 
@@ -347,58 +347,58 @@ Open the solution and explain the following:
 
 * The `getInfo` function should specify the following return types:
 
- * `address`
+  * `address`
 
- * `bool`
+  * `bool`
 
- * `uint`
+  * `uint`
 
- * `string memory`
+  * `string memory`
 
 * Inside the `getInfo` we should return the following variables:
 
- * `owner`
+  * `owner`
 
- * `is_new_account`
+  * `is_new_account`
 
- * `account_balance`
+  * `account_balance`
 
- * `customer_name`
+  * `customer_name`
 
  ```solidity
  function getInfo() public returns(address, bool, uint, string memory) {
- return (owner, is_new_account, account_balance, customer_name);
+    return (owner, is_new_account, account_balance, customer_name);
  }
  ```
 
 * The `setInfo` function should accept the following parameters:
 
- * newOwner as an `address` type
+  * newOwner as an `address` type
 
- * isNewAccount as a `bool`
+  * isNewAccount as a `bool`
 
- * newAccountBalance as a `uint`
+  * newAccountBalance as a `uint`
 
- * newAccountID as `string memory`
+  * newAccountID as `string memory`
 
 * Inside the `setInfo` function, we should set the following variables equal to the following function parameters.
 
- * `owner` is equal to `newOwner`
+  * `owner` is equal to `newOwner`
 
- * `is_new_account` is equal to `isNewAccount`
+  * `is_new_account` is equal to `isNewAccount`
 
- * `account_balance` is equal to `newAccountBalance`
+  * `account_balance` is equal to `newAccountBalance`
 
- * `customer_name` is equal to `newCustomerName`
+  * `customer_name` is equal to `newCustomerName`
 
- ```solidity
+```solidity
  function setInfo(address newOwner, bool isNewAccount, uint newAccountBalance, string memory newCustomerName) public {
- owner = newOwner;
- is_new_account = isNewAccount;
- account_balance = newAccountBalance;
- customer_name = newCustomerName;
+    owner = newOwner;
+    is_new_account = isNewAccount;
+    account_balance = newAccountBalance;
+    customer_name = newCustomerName;
  }
- ```
+```
 
 Ask for any remaining questions before moving on.
 
@@ -751,7 +751,7 @@ Open the solution and explain the following:
 
  ```Solidity
  if (recipient == account_one || recipient == account_two) {
- recipient.transfer(amount);
+    recipient.transfer(amount);
  }
  ```
 
@@ -777,14 +777,14 @@ Up to this point, everyone's contract should look like this:
 pragma solidity ^0.5.0;
 
 contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+  address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+  address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
- function withdraw(uint amount, address payable recipient) public {
- if (recipient == account_one || recipient == account_two) {
- recipient.transfer(amount);
- }
- }
+  function withdraw(uint amount, address payable recipient) public {
+    if (recipient == account_one || recipient == account_two) {
+        recipient.transfer(amount);
+    }
+  }
 
  function deposit() public payable {}
 
@@ -803,8 +803,8 @@ Remove the `if` statement, then replace it with the following `require`:
 
 ```solidity
 function withdraw(uint amount, address payable recipient) public {
- require(recipient == account_one || recipient == account_two, "You do not own this account!");
- recipient.transfer(amount);
+    require(recipient == account_one || recipient == account_two, "You do not own this account!");
+    recipient.transfer(amount);
 }
 ```
 
