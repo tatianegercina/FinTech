@@ -198,7 +198,7 @@ Below you can see the autocorrelation plotted with `.plot_acf()`, using the same
 
 <img src='Resources/ac04.png' width=450><br>
 
-Using partial autocorrelation, you can dive even deeper.  PACF allows you to see not just which lags are correlated but which ones have the heaviest effect on all the others.  Below we can see that lags 0 and 1 account for the rest of the days' temperatures.  This starts over again at lag 25, because a new day begins.  This means that the temperatures for the entire day are dependent on the temperatures from lags 0 and 1.  Remember, lag is another word for your time interval!  In this case, hours.
+Using partial autocorrelation, you can dive even deeper.  PACF allows you to see not just which lags are correlated but which ones have the heaviest effect on all the others.  We run the `.pacf_plot()` function with the parameter `zero=False`.  This ignores the first lag because the correlation of something with itself is always equal to 1.  Now we can see that lags 1 and 2 account for the rest of the days' temperatures.  This starts over again at lag 25, because a new day begins.  This means that the temperatures for the entire day are dependent on the temperatures from lags 1 and 2.  Remember, lag is another word for your time interval!  In this case, hours.
 
 <img src='Resources/ac05.png' width=450><br>
 
@@ -209,7 +209,7 @@ The ARMA and ARIMA models require an `order` parameter.  For ARMA, this paramete
 
 The AR order number is the number of critical lags.  The lag number can be obtained from your PACF analysis.  The MA order number is the moving average window.  Determining the AR order on our Tesla stock data might look something like this:
 
-Our PACF plot, shows one significant lag, and thus our AR order value would be 1:
+Our PACF plot, shows two significant lags, and thus our AR order value would be 2:
 
 ![TSLA_pacf](Resources/TSLA_pacf.PNG)
 
