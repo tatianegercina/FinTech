@@ -82,6 +82,16 @@ Your stakeholders and clients will typically be much more able to understand you
 [What's the point of using `datetime` objects?](../05-Student-Resources/unit-10/readme.md#whats-the-point-of-using-datetime-objects)<br>
 [How do you convert objects to `datetime`?](../05-Student-Resources/unit-10/readme.md#how-do-you-convert-objects-to-datetime)<br>
 [How do you access `datetime` objects?](../05-Student-Resources/unit-10/readme.md#how-do-you-access-datetime-objects)<br>
+[How do you group time series data?](../05-Student-Resources/unit-10/readme.md#how-do-you-group-time-series-data)<br>
+[Why do we smooth our time series data?](../05-Student-Resources/unit-10/readme.md#why-do-we-smooth-our-time-series-data)<br>
+[What are some methods for smoothing time series data?](../05-Student-Resources/unit-10/readme.md#what-are-some-methods-for-smoothing-time-series-data)<br>
+[What are the basics of stationarity and non-stationarity?](../05-Student-Resources/unit-10/readme.md#what-are-the-basics-of-stationarity-and-non-stationarity)<br>
+[How do you convert non-stationary data to stationary?](../05-Student-Resources/unit-10/readme.md#how-do-you-convert-non-stationary-data-to-stationary)<br>
+[Which models use stationary data and which use non-stationary data?](../05-Student-Resources/unit-10/readme.md#which-models-use-stationary-data-and-which-use-non-stationary-data)<br>
+[What is the point of ACF and PACF?](../05-Student-Resources/unit-10/readme.md#what-is-the-point-of-ACF-and-PACF)<br>
+[How do I determine the order numbers for ARMA and ARIMA models?](../05-Student-Resources/unit-10/readme.md#how-do-I-determine-the-order-numbers-for-arma-and-arima-models)<br>
+[What is `.reshape()` and why do I have to use it?](../05-Student-Resources/unit-10/readme.md#what-is-reshape-and-why-do-i-have-to-use-it)<br>
+[What is `get_dummies` and why do I have to use it?](../05-Student-Resources/unit-10/readme.md#what-is-get-dummies-and-why-do-i-have-to-use-it)<br>
 
 
 ## Unit 14: Deep Learning

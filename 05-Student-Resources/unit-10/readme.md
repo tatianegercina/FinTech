@@ -78,6 +78,7 @@ The data can then be plotted:
 <img src= Resources/resample_Y_plot.png width=425><br>
 
 The following is a non-exhaustive list of many `.resample()` frequency aliases:
+
 | Alias       | Frequency Description                   |
 |-------------|-----------------------------------------|
 | `D`         | Calendar day                            |
@@ -103,6 +104,7 @@ The following is a non-exhaustive list of many `.resample()` frequency aliases:
 | `L`, `ms`   | Milliseconds                            |
 | `U`, `us`   | Microseconds                            |
 | `N`         | Nanoseconds                             |
+
 
 #### Why do we smooth our time series data?
 
