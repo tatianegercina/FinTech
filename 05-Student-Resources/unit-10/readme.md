@@ -1,19 +1,19 @@
 ## FAQs
 
 ## Unit 10: Time Series
-[What's the point of using `datetime` objects?](#whats-the-point)<br>
+[What's the point of using `datetime` objects?](#whats-the-point-of-using-datetime-objects)<br>
 [How do you convert objects to `datetime`?](#how-do-you-convert-objects-to-datetime)<br>
 [How do you access `datetime` objects?](#how-do-you-access-datetime-objects)<br>
 [How do you group time series data?](#how-do-you-group-time-series-data)<br>
 [Why do we smooth our time series data?](#why-do-we-smooth-our-time-series-data)<br>
 [What are some methods for smoothing time series data?](#what-are-some-methods-for-smoothing-time-series-data)<br>
-[Why do I need to understand stationarity and non-stationarity?](#why-do-i-need-to-understand-stationarity-and-non-stationarity)<br>
+[What are the basics of stationarity and non-stationarity?](#what-are-the-basics-of-stationarity-and-non-stationarity)<br>
 [How do you convert non-stationary data to stationary?](#how-do-you-convert-non-stationary-data-to-stationary)<br>
 [Which models use stationary data and which use non-stationary data?](#which-models-use-stationary-data-and-which-use-non-stationary-data)<br>
 [What is the point of ACF and PACF?](#what-is-the-point-of-ACF-and-PACF)<br>
 [How do I determine the order numbers for ARMA and ARIMA models?](#how-do-I-determine-the-order-numbers-for-arma-and-arima-models)<br>
-
-
+[What is `.reshape()` and why do I have to use it?](#what-is-reshape-and-why-do-i-have-to-use-it)<br>
+[What is `get_dummies` and why do I have to use it?](#what-is-get-dummies-and-why-do-i-have-to-use-it)<br>
 
 #### What's the point of using `datetime` objects?
 Humans can look at a date and instantly know how to categorize it - day, month, year, etc. - but computers look at dates see just another line of text, and will interpret that text as `strings`.  This can make cleaning, prepping and plotting data very difficult.  That's where time series functionality comes into play.  Casting your date `strings` to `datetime` translates them for your code, allowing the code to interpret and categorize dates the same way you do.  For example, let's take a DataFrame of Jeopardy questions from the last 35 seasons.  In the following example, the data is read in via `.read_csv()`, but the dates are read in as `strings` by default.  You can see the dates are not categorized, but rather they are plotted in the order they appear in the data:
@@ -227,8 +227,3 @@ This function can convert your categorical data into numerical binary format.  T
 You can see below that the categories have been converted into separate columns with a 1 or 0 representation, marking whether this data did or did not have this category:
 
 ![get_dummies2](Resources/get_dummies2.PNG)
-
-
-#### Is there a quick reference guide for the statistcal scoring methods and what values are acceptable?
-
-Yes! Click [here](Resources/stats_reference.md)!
