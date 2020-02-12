@@ -198,7 +198,7 @@ Below you can see the autocorrelation plotted with `.plot_acf()`, using the same
 
 <img src='Resources/ac04.png' width=450><br>
 
-Using partial autocorrelation, you can dive even deeper.  PACF allows you to see not just which lags are correlated but which ones have the heaviest effect on all the others.  We run the `.pacf_plot()` function with the parameter `zero=False`.  This ignores the first lag because the correlation of something with itself is always equal to 1.  Now we can see that lags 1 and 2 account for the rest of the days' temperatures.  This starts over again at lag 25, because a new day begins.  This means that the temperatures for the entire day are dependent on the temperatures from lags 1 and 2.  Remember, lag is another word for your time interval!  In this case, hours.
+Using partial autocorrelation, you can dive even deeper.  PACF allows you to see not just which lags are correlated, but which ones have the heaviest effect on all the others.  We run the `.pacf_plot()` function with the parameter `zero=False`.  This ignores the first lag because the correlation of something with itself is always equal to 1.  Now we can see that lag 1 accounts for the biggest impact on the the next hours' temperature.  This starts over again at lag 24, because a new day begins.  This means that the temperatures for that hour are heavily dependent on the temperatures from 1 lag (one hour) ago, and what the temperature was at the same time of day but the day before.  Remember, lag is another word for your time interval!  In this case, hours.
 
 ```python
 plot_pacf(df.Temperature, lags=48, zero=False)
