@@ -125,7 +125,7 @@ Now let's calculate the simple moving average values for the `value` column and 
 ```python
 df['moving avg']=df['value'].rolling(window=5).mean()
 ```
-![simple_ma_df](Resources/simple_ma_df.png)
+![simple_ma_df](Resources/simple_ma_df.PNG)
 </details>
 
 <details>
@@ -149,7 +149,7 @@ The Hodrick Prescott filter separates your data into trend and noise, and conver
 
 For this example, we'll use Tesla stock price data from the last 10 years.  The date column will be converted to `datetime` type upon reading the csv which gives us full `datetime` functionality, and displays our charts appropriately:
 
-![TSLA_df](Resources/TSLA_df.png)
+![TSLA_df](Resources/TSLA_df.PNG)
 
 Next we'll import the Hodrick Prescott filter from the `statsmodels` library and use it to separate the noise from the trend:
 ```python
@@ -158,8 +158,8 @@ noise, trend = sm.tsa.filters.hpfilter(df['Open'])
 ```
 This data can then be easily plotted by using the `plot()` pandas function:
 
-![TSLA_noise](Resources/TSLA_noise.png)
-![TSLA_trend](Resources/TSLA_trend.png)
+![TSLA_noise](Resources/TSLA_noise.PNG)
+![TSLA_trend](Resources/TSLA_trend.PNG)
 
 
 </details>
@@ -207,17 +207,17 @@ The AR order number is the number of critical lags.  The lag number can be obtai
 
 Our PACF plot, shows one significant lag, and thus our AR order value would be 1:
 
-![TSLA_pacf](Resources/TSLA_pacf.png)
+![TSLA_pacf](Resources/TSLA_pacf.PNG)
 
 #### What is `.reshape()` and why do I have to use it?
 
 When working with Pandas, we often pass Series objects into our model.  The shape of values in a Pandas Series object is a 1d array.  This has to be converted into a 2d array which is essentially an array of arrays - or list of lists. .  This is done using the `.reshape()` function.  The matrix values we desire are passed into this function.  In the following example we reshape our list into a 2d array using `.reshape(3,4)`, where 3 is the number of lists and 4 is the number of values in each list:
 
-![2d_array](Resources/2d_array.png)
+![2d_array](Resources/2d_array.PNG)
 
 Many models require the 2d array to be formatted such that each value is in a list by itself. If we were inserting the above sample data into a model, it would be converted using `.reshape(-1,1)`, where -1 indicates an unknown number of rows, and 1 indicates the number of values in each list.  The -1 will allow the function to generate the amount of rows necessary to hold the data.  The output looks like this:
 
-![2d_array_reshape](Resources/2d_array_reshape.png)
+![2d_array_reshape](Resources/2d_array_reshape.PNG)
 
 
 #### What is `.get_dummies() and why do I have to use it?
