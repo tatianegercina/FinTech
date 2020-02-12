@@ -9,12 +9,11 @@
 [What are some methods for smoothing time series data?](#what-are-some-methods-for-smoothing-time-series-data)<br>
 [Why do I need to understand stationarity and non-stationarity?](#why-do-i-need-to-understand-stationarity-and-non-stationarity)<br>
 [How do you convert non-stationary data to stationary?](#how-do-you-convert-non-stationary-data-to-stationary)<br>
-[Which models use stationary data and which use non-stationary data?](#which-models-use-stationary-data-and-which-use-non-stationary-data]<br>
-[What is the point of ACF and PACF?](#what-is-the-point-of-ACF-and-PACF]
+[Which models use stationary data and which use non-stationary data?](#which-models-use-stationary-data-and-which-use-non-stationary-data)<br>
+[What is the point of ACF and PACF?](#what-is-the-point-of-ACF-and-PACF)<br>
+[How do I determine the order numbers for ARMA and ARIMA models?](#how-do-I-determine-the-order-numbers-for-arma-and-arima-models)<br>
 
-#### Which models use stationary data and which use non-stationary data?
-#### What is the point of ACF and PACF?
-#### How do I determine the order numbers for ARMA and ARIMA models?
+
 
 #### What's the point of using `datetime` objects?
 Humans can look at a date and instantly know how to categorize it - day, month, year, etc. - but computers look at dates see just another line of text, and will interpret that text as `strings`.  This can make cleaning, prepping and plotting data very difficult.  That's where time series functionality comes into play.  Casting your date `strings` to `datetime` translates them for your code, allowing the code to interpret and categorize dates the same way you do.  For example, let's take a DataFrame of Jeopardy questions from the last 35 seasons.  In the following example, the data is read in via `.read_csv()`, but the dates are read in as `strings` by default.  You can see the dates are not categorized, but rather they are plotted in the order they appear in the data:
@@ -207,3 +206,29 @@ The AR order number is the number of critical lags.  The lag number can be obtai
 Our PACF plot, shows one significant lag, and thus our AR order value would be 1:
 
 ![TSLA_pacf](Resources/TSLA_pacf.png)
+
+#### What is `.reshape()` and why do I have to use it?
+
+When working with Pandas, we often pass Series objects into our model.  The shape of values in a Pandas Series object is a simple list.  This has to be converted into a 2d array which is essentially an array of arrays - or list of lists. .  This is done using the `.reshape()` function.  The matrix values we desire are passed into this function.  In the following example we reshape our list into a 2d array using `.reshape(3,4)`, where 3 is the number of lists and 4 is the number of values in each list:
+
+![2d_array](Resources/2d_array.png)
+
+Many models require the 2d array to be formatted such that each value is in a list by itself. If we were inserting the above sample data into a model, it would be converted using `.reshape(-1,1)`, where -1 indicates an unknwon number of rows, and ` indicates the number of values in each list.  The -1 will allow the function to generate the amount of rows necessary to hold the data.  The output looks like this:
+
+![2d_array_reshape](Resources/2d_array_reshape.png)
+
+
+#### What is `.get_dummies() and why do I have to use it?
+
+This function can convert your categorical data into numerical binary format.  This is especially important when working with certain types of models, because categorical data cannot be read by them model.  If you want to give your model feature data that is False/Positive, Male/Female, or Buy/Sell, it will need to be converted into binary so the computer can understand it.  The `get_dummies()` function does this by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  Lets encode the category column of our Jeopardy data using `get_dummies()`:
+
+![get_dummies1](Resources/get_dummies1.PNG)
+
+You can see below that the categories have been converted into separate columns with a 1 or 0 representation, marking whether this data did or did not have this category:
+
+![get_dummies2](Resources/get_dummies2.PNG)
+
+
+#### Is there a quick reference guide for the statistcal scoring methods and what values are acceptable?
+
+Yes! Click [here](Resources/stats_reference.md)!
