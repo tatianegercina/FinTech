@@ -4,6 +4,17 @@
 [What's the point of using `datetime` objects?](#whats-the-point)<br>
 [How do you convert objects to `datetime`?](#how-do-you-convert-objects-to-datetime)<br>
 [How do you access `datetime` objects?](#how-do-you-access-datetime-objects)<br>
+[How do you group time series data?](#how-do-you-group-time-series-data)<br>
+[Why do we smooth our time series data?](#why-do-we-smooth-our-time-series-data)<br>
+[What are some methods for smoothing time series data?](#what-are-some-methods-for-smoothing-time-series-data)<br>
+[Why do I need to understand stationarity and non-stationarity?](#why-do-i-need-to-understand-stationarity-and-non-stationarity)<br>
+[How do you convert non-stationary data to stationary?](#how-do-you-convert-non-stationary-data-to-stationary)<br>
+[Which models use stationary data and which use non-stationary data?](#which-models-use-stationary-data-and-which-use-non-stationary-data]<br>
+[What is the point of ACF and PACF?](#what-is-the-point-of-ACF-and-PACF]
+
+#### Which models use stationary data and which use non-stationary data?
+#### What is the point of ACF and PACF?
+#### How do I determine the order numbers for ARMA and ARIMA models?
 
 #### What's the point of using `datetime` objects?
 Humans can look at a date and instantly know how to categorize it - day, month, year, etc. - but computers look at dates see just another line of text, and will interpret that text as `strings`.  This can make cleaning, prepping and plotting data very difficult.  That's where time series functionality comes into play.  Casting your date `strings` to `datetime` translates them for your code, allowing the code to interpret and categorize dates the same way you do.  For example, let's take a DataFrame of Jeopardy questions from the last 35 seasons.  In the following example, the data is read in via `.read_csv()`, but the dates are read in as `strings` by default.  You can see the dates are not categorized, but rather they are plotted in the order they appear in the data:
@@ -135,7 +146,7 @@ df['ewma']=df['value'].ewm(halflife=3).mean()
 <summary>Hodrick Prescott Filter:</summary>
 The Hodrick Prescott filter separates your data into trend and noise, and converts them into two pandas Series.  These series can be placed into a DataFrame, or plotted directly allowing for easy visualization.
 
-For this example, we'll use Tesla stock price data from the last 10 years:
+For this example, we'll use Tesla stock price data from the last 10 years.  The date column will be converted to `datetime` type upon reading the csv which gives us fully date functionality, and displays our charts appropriately:
 
 ![TSLA_df](Resources/TSLA_df.png)
 
@@ -151,3 +162,48 @@ This data can then easily be plotted by using the `plot()` pandas function:
 
 
 </details>
+
+#### What are the basics of stationarity and non-stationarity?
+
+This is an important concept because certain models require stationary data and others require non-stationary data.  Simply put - stationary data has no trend and non-stationary data does.
+
+Sometimes it can be difficult to visually determine whether the data is stationary or not.  In these cases the Augmented Dickey-fuller (`adfuller()`) test can be implemented.  The 2nd line of the `adfuller()` output is the p-value.  If the p-value is greater than 0.5 then the data is non-stationary.
+
+<img src='Resources/TSLA_adfuller.PNG' width=500><br>
+
+#### How do you convert non-stationary data to stationary?
+
+If you determine your data is non-stationary, but you need to be, it can be converted by applying either `.pct_change()` or `.diff.()` to your target column.  The `.pct_change()` method will percentage change between values, while the `.diff()` method will subtract the values to get the difference:
+
+<img src='Resources/diff_pct_chg.PNG' width=600><br>
+
+#### Which models use stationary data and which use non-stationary data?
+
+ARMA models assume stationarity.
+
+ARIMA does not assume stationarity.
+
+ARIMA will convert your data to stationary and then execute the function.  ARMA requires that you give the function stationary data to start.
+
+#### What is the point of ACF and PACF?
+
+ACF (Autocorrelation Function) and PACF (Partial Autocorrelation Function) help to determine the number of lags that are important in the correlation of a dataset.  This lag number is important for autoregressive models, such as ARMA and ARIMA.  Lags can be thought of as a unit of time - it's the measure of distance (in time) that the data point corresponds to.  ACF and PACF determine the correlation of data between those time points.
+
+Below you can see the autocorrelation plotted with `.plot_acf()`, using the same weather example from class.  Significant lags at exist at particular hours (lags).  You would expect that the temperature at hour (lag) 12 on one day will be closely correlated to the temperature at hour (lag) 12 on the next day, and so on.
+
+<img src='Resources/ac04.png' width=450><br>
+
+Using partial autocorrelation, you can dive even deeper.  PACF allows you to see not just which hours (lags) are correlated but which ones have the heaviest effect on all the others.  Below we can see that lags 0 and 1 account for the rest of the days temperatures.  This starts over agan at lag 25, because a new day begins.  This means that the temperatures for the entire day are dependent on the temperatures from lags 0 and 1.  Remember, lag is another word for your time interval!  In this case, hours.
+
+<img src='Resources/ac05.png' width=450><br>
+
+
+#### How do I determine the order numbers for ARMA and ARIMA models?
+
+The ARMA and ARIMA models require an `order` parameter.  For ARMA, this parameter is a list of 2 values, the first being the AR (autoregressive) order, and the second being the MA (moving average) order.  For ARIMA, this parameter is a list of 3 values, the first is AR order, the 2nd is the difference order, and the 3rd is the MA order.  Because ARIMA models do not assume stationarity, the model must difference the values to obtain stationarity.  This value dictates the amount to difference the values.
+
+The AR order number is the number of critical lags.  The lag number can be obtained from your PACF analysis.  The MA order number is the moving average window.  Determining the AR order on our Tesla stock data might look something like this:
+
+Our PACF plot, shows one significant lag, and thus our AR order value would be 1:
+
+![TSLA_pacf](Resources/TSLA_pacf.png)
