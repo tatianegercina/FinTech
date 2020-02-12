@@ -168,7 +168,7 @@ This data can then be easily plotted by using the `plot()` pandas function:
 
 This is an important concept because certain models require stationary data and others require non-stationary data.  Simply put - stationary data has no trend and non-stationary data does.
 
-Sometimes it can be difficult to visually determine whether the data is stationary or not.  In these cases the Augmented Dickey-fuller (`adfuller()`) test can be implemented.  The 2nd line of the `adfuller()` output is the p-value.  If the p-value is greater than 0.5 then the data is non-stationary.
+Sometimes it can be difficult to visually determine whether the data is stationary or not.  In these cases the Augmented Dickey-fuller (`adfuller()`) test can be implemented.  The 2nd line of the `adfuller()` output is the p-value.  If the p-value is greater than 0.05 then the data is non-stationary.
 
 <img src='Resources/TSLA_adfuller.PNG' width=500><br>
 
