@@ -16,6 +16,8 @@
 
 ### Additional Course Resources
 
+* [Unit 3 FAQ](../../../05-Student-Resources/unit-3/readme.md)
+
 * [Anaconda Install Guide](AnacondaInstallGuide.md)
 
 - - -
