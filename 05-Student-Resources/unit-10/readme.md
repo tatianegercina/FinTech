@@ -26,7 +26,9 @@ df = pd.read_csv('jeopardy.csv', parse_dates=True, index_col='air_date)
 </details>
 <details><summary>
 How do you access `datetime` objects?</summary>
+
 There are numerous ways to access `datetime` objects.  One of the benefits of using these data types is the added functionality they provide for analyzing data, not just with plotting but with cleaning and aggregating.  Using our Jeopardy example, we can access different episodes using different date calls:
+
 <blockquote>
 <details>
 <summary>To access rows by a particular year:</summary>
@@ -60,6 +62,7 @@ There are numerous ways to access `datetime` objects.  One of the benefits of us
 ![year_month_day_df](Resources/range_year_month_day_df.png)
 </details>
 </blockquote>
+
 </details>
 
 <details><summary>
