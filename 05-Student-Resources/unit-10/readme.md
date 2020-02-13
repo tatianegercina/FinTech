@@ -39,6 +39,7 @@ df = pd.read_csv('jeopardy.csv', parse_dates=True, index_col='air_date)
 <details><summary>
 How do you access `datetime` objects?</summary>
 There are numerous ways to access `datetime` objects.  One of the benefits of using these data types is the added functionality they provide for analyzing data, not just with plotting but with cleaning and aggregating.  Using our Jeopardy example, we can access different episodes using different date calls:
+<blockquote>
 <details>
 <summary>To access rows by a particular year:</summary>
 
@@ -70,9 +71,11 @@ There are numerous ways to access `datetime` objects.  One of the benefits of us
 
 ![year_month_day_df](Resources/range_year_month_day_df.png)
 </details>
+</blockquote>
 </details>
+
 <details><summary>
-How do you group time series data?<summary>
+How do you group time series data?</summary>
 Grouping time series data is important for plotting and analysis.  The `.resample()` method allows grouping by multiple categories.  Similar to the `.groupby()` function, an aggregation method must be used to show the grouped data.  For example, we can group the mean Jeopardy point values by year using the following code:
 
 <img src= Resources/resample_Y_df.png width=325><br>
@@ -115,10 +118,10 @@ Why do we smooth our time series data?</summary>
 Smoothing time series data helps clean out the 'noise' so we can better spot trends.  For example, to capture a true long-term trend in retail sales, it would be necessary to clean out the seasonal fluctuations in the data.  We know sales will spike in retail around the holidays each year, so that seasonal spike would need to be smoothed out so we can see the underlying trend.
 </details>
 <details><summary>
-#### What are some methods for smoothing time series data?
+What are some methods for smoothing time series data?</summary>
 
 Some of the methods for smoothing time series data are simple moving average, exponentially weighted moving average (EWMA) and Hodrick-Prescott filter.
-
+<blockquote>
 <details>
 <summary>Simple Moving Average:</summary>
 
@@ -165,10 +168,10 @@ This data can then be easily plotted by using the `plot()` pandas function:
 
 ![TSLA_noise](Resources/TSLA_noise.PNG)
 ![TSLA_trend](Resources/TSLA_trend.PNG)
-
-
+</blockquote>
 </details>
-</details><summary>
+</details>
+<details><summary>
 What are the basics of stationarity and non-stationarity?</summary>
 
 This is an important concept because certain models require stationary data and others require non-stationary data.  Simply put - stationary data has no trend and non-stationary data does.
