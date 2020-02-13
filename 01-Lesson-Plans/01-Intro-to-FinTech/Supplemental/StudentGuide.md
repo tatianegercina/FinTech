@@ -8,6 +8,10 @@
 
 - - -
 
+### Additional Course Resources
+
+* [Unit 1 FAQ](../../../05-Student-Resources/unit-1/readme.md)
+
 ### Copyright
 
 © 2019 Trilogy Education Services
