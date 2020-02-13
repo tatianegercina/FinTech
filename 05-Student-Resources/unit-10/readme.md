@@ -1,7 +1,7 @@
 ## FAQs
 
 ## Unit 10: Time Series
-[What's the point of using `datetime` objects?](#whats-the-point-of-using-datetime-objects)<br>
+<!-- [What's the point of using `datetime` objects?](#whats-the-point-of-using-datetime-objects)<br>
 [How do you convert objects to `datetime`?](#how-do-you-convert-objects-to-datetime)<br>
 [How do you access `datetime` objects?](#how-do-you-access-datetime-objects)<br>
 [How do you group time series data?](#how-do-you-group-time-series-data)<br>
@@ -13,9 +13,10 @@
 [What is the point of ACF and PACF?](#what-is-the-point-of-ACF-and-PACF)<br>
 [How do I determine the order numbers for ARMA and ARIMA models?](#how-do-I-determine-the-order-numbers-for-arma-and-arima-models)<br>
 [What is `.reshape()` and why do I have to use it?](#what-is-reshape-and-why-do-i-have-to-use-it)<br>
-[What is `get_dummies` and why do I have to use it?](#what-is-get-dummies-and-why-do-i-have-to-use-it)<br>
+[What is `get_dummies` and why do I have to use it?](#what-is-get-dummies-and-why-do-i-have-to-use-it)<br> -->
+<details>
+<summary>What's the point of using `datetime` objects?</summary>
 
-#### What's the point of using `datetime` objects?
 Humans look dates and instantly know how to categorize them - day, month, year, etc.  Your code look at dates see just another line of text, and will interpret that text as `strings`.  This can make cleaning, prepping and plotting data very difficult.  That's where time series functionality comes into play.  Casting your date `strings` to `datetime` type translates them for your code, allowing the code to interpret and categorize dates the same way you do.  For example, let's plot some Jeopardy data from the last 35 seasons.  In the following example, the data is read in via `.read_csv()`, but the dates are read in as `strings` by default.  You can see the dates are not categorized, but rather they are plotted in the order they appear in the data:
 
 <img src='Resources/str_plot.png' width=400><br>
@@ -23,8 +24,8 @@ Humans look dates and instantly know how to categorize them - day, month, year, 
 In the next example, the dates are parsed and converted to `datetime` objects.  The dates are now being categorized properly and are listed in the correct order automatically:
 
 <img src='Resources/datetime_plot.png' width=600><br>
-
-#### How do you convert objects to `datetime`?
+</details>
+<details><summary>How do you convert objects to `datetime`?</summary>
 Converting objects to `datetime` can be tricky.  If using pandas, its best to handle the conversion upon reading in of data.  The syntax to handle the conversion from `read_csv()` is:
 
 ```python
@@ -34,7 +35,9 @@ This converts each object to a `datetime` object.  Alternatively, you can also s
 ```python
 df = pd.read_csv('jeopardy.csv', parse_dates=True, index_col='air_date)
 ```
-#### How do you access `datetime` objects?
+</details>
+<details><summary>
+How do you access `datetime` objects?</summary>
 There are numerous ways to access `datetime` objects.  One of the benefits of using these data types is the added functionality they provide for analyzing data, not just with plotting but with cleaning and aggregating.  Using our Jeopardy example, we can access different episodes using different date calls:
 <details>
 <summary>To access rows by a particular year:</summary>
@@ -67,8 +70,9 @@ There are numerous ways to access `datetime` objects.  One of the benefits of us
 
 ![year_month_day_df](Resources/range_year_month_day_df.png)
 </details>
-
-#### How do you group time series data?
+</details>
+<details><summary>
+How do you group time series data?<summary>
 Grouping time series data is important for plotting and analysis.  The `.resample()` method allows grouping by multiple categories.  Similar to the `.groupby()` function, an aggregation method must be used to show the grouped data.  For example, we can group the mean Jeopardy point values by year using the following code:
 
 <img src= Resources/resample_Y_df.png width=325><br>
@@ -104,12 +108,13 @@ The following is a non-exhaustive list of many `.resample()` frequency aliases:
 | `L`, `ms`   | Milliseconds                            |
 | `U`, `us`   | Microseconds                            |
 | `N`         | Nanoseconds                             |
-
-
-#### Why do we smooth our time series data?
+</details>
+<details><summary>
+Why do we smooth our time series data?</summary>
 
 Smoothing time series data helps clean out the 'noise' so we can better spot trends.  For example, to capture a true long-term trend in retail sales, it would be necessary to clean out the seasonal fluctuations in the data.  We know sales will spike in retail around the holidays each year, so that seasonal spike would need to be smoothed out so we can see the underlying trend.
-
+</details>
+<details><summary>
 #### What are some methods for smoothing time series data?
 
 Some of the methods for smoothing time series data are simple moving average, exponentially weighted moving average (EWMA) and Hodrick-Prescott filter.
@@ -163,16 +168,17 @@ This data can then be easily plotted by using the `plot()` pandas function:
 
 
 </details>
-
-#### What are the basics of stationarity and non-stationarity?
+</details><summary>
+What are the basics of stationarity and non-stationarity?</summary>
 
 This is an important concept because certain models require stationary data and others require non-stationary data.  Simply put - stationary data has no trend and non-stationary data does.
 
 Sometimes it can be difficult to visually determine whether the data is stationary or not.  In these cases the Augmented Dickey-fuller (`adfuller()`) test can be implemented.  The 2nd line of the `adfuller()` output is the p-value.  If the p-value is greater than 0.05 then the data is non-stationary.
 
 <img src='Resources/TSLA_adfuller.PNG' width=500><br>
-
-#### How do you convert non-stationary data to stationary?
+</details>
+<details><summary>
+How do you convert non-stationary data to stationary?</summary>
 
 If you determine your data is non-stationary, but you need to be, it can be converted by applying either `.pct_change()` or `.diff.()` to your target column:
 
@@ -181,16 +187,18 @@ If you determine your data is non-stationary, but you need to be, it can be conv
 The `.pct_change()` method will show the percentage change between values, while the `.diff()` method will subtract the values to get the difference:
 
 <img src='Resources/diff_pct_chg2.PNG' width=550><br>
-
-#### Which models use stationary data and which use non-stationary data?
+</details>
+<details><summary>
+Which models use stationary data and which use non-stationary data?</summary>
 
 ARMA models assume stationarity.
 
 ARIMA does not assume stationarity.
 
 ARIMA will convert your data to stationary and then execute the function.  ARMA requires that you supply stationary data from the start.
-
-#### What is the point of ACF and PACF?
+</details>
+<details><summary>
+What is the point of ACF and PACF?</summary>
 
 ACF (Autocorrelation Function) and PACF (Partial Autocorrelation Function) help to determine the number of lags that are important in the correlation of a dataset.  This lag number is important for autoregressive models, such as ARMA and ARIMA.  Lags can be thought of as a unit of time - it's the measure of distance (in time) that the data point corresponds to.  ACF and PACF determine the correlation of data between those time points.
 
@@ -206,8 +214,9 @@ plot_pacf(df.Temperature, lags=48, zero=False)
 
 <img src='Resources/ac05.png' width=460><br>
 
-
-#### How do I determine the order numbers for ARMA and ARIMA models?
+</details>
+<details><summary>
+How do I determine the order numbers for ARMA and ARIMA models?</summary>
 
 The ARMA and ARIMA models require an `order` parameter.  For ARMA, this parameter is a list of 2 values, the first being the AR (autoregressive) order, and the second being the MA (moving average) order.  For ARIMA, this parameter is a list of 3 values, the first is AR order, the 2nd is the difference order, and the 3rd is the MA order.  Because ARIMA models do not assume stationarity, the model must difference the values to obtain stationarity.  This value dictates the amount to difference the values.
 
@@ -216,8 +225,9 @@ The AR order number is the number of critical lags.  The lag number can be obtai
 Our PACF plot, shows two significant lags, and thus our AR order value would be 2:
 
 ![TSLA_pacf](Resources/TSLA_pacf.PNG)
-
-#### What is `.reshape()` and why do I have to use it?
+</details>
+<details><summary>
+What is `.reshape()` and why do I have to use it?</summary>
 
 When working with Pandas, we often pass Series objects into our model.  The shape of values in a Pandas Series object is a 1d array.  This has to be converted into a 2d array which is essentially an array of arrays - or list of lists. .  This is done using the `.reshape()` function.  The matrix values we desire are passed into this function.  In the following example we reshape our list into a 2d array using `.reshape(3,4)`, where 3 is the number of lists and 4 is the number of values in each list:
 
@@ -227,8 +237,9 @@ Many models require the 2d array to be formatted such that each value is in a li
 
 ![2d_array_reshape](Resources/2d_array_reshape.PNG)
 
-
-#### What is `.get_dummies() and why do I have to use it?
+</details>
+<details><summary>
+What is `.get_dummies() and why do I have to use it?</summary>
 
 This function can convert your categorical data into numerical binary format.  This is especially important when working with certain types of models, because categorical data cannot be read by the model.  If you want to give your model categorical data such as False/Positive, Male/Female, or Buy/Sell, it will need to be converted into binary so the computer can understand it.  The `get_dummies()` function does this by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  Lets encode the category column of our Jeopardy data using `get_dummies()`:
 
@@ -237,3 +248,4 @@ This function can convert your categorical data into numerical binary format.  T
 You can see below that the categories have been converted into separate columns with a 1 or 0 representation, marking whether this data did or did not have this category:
 
 ![get_dummies2](Resources/get_dummies2.PNG)
+</details>
