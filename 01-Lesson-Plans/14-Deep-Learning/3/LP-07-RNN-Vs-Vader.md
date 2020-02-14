@@ -53,15 +53,15 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
   y = df_reviews["sentiment"].values
   ```
 
-* To make the model comparison fair, we will use the same training and testing data. We will use the `train_test_split` method from `sklearn` to create the training, testing, and validation sets. Remember that it's crucial to set the `random_state` parameter for reproducibility.
+* To make the model comparison fair, we will use the same training and testing data. We will use the `train_test_split` method from `sklearn` to create the training, testing, and validation sets.
 
   ```python
   # Create the train, test, and validation sets
   from sklearn.model_selection import train_test_split
 
-  X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=3)
+  X_train, X_test, y_train, y_test = train_test_split(X, y)
 
-  X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, random_state=3)
+  X_train, X_val, y_train, y_val = train_test_split(X_train, y_train)
   ```
 
 * First, we will score the sentiment using VADER, the same technique we learn in the NLP unit.
@@ -162,7 +162,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
   ![Contrast of a move review comment as text and as numerical sequence](Images/text-vs-sequence.png)
 
-* As you know, RNN LSTM models need equal size inputs, so that, we will pad the sequences stored in `X_pad` up to `140` integers using the `pad_sequences` method from Keras.
+* RNN LSTM models need equal size inputs, so that, we will pad the sequences stored in `X_pad` up to `140` integers using the `pad_sequences` method from Keras.
 
   ```python
   # Import the pad_sequences method from Keras
@@ -181,9 +181,9 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
   ```python
   # Creating training, validation, and testing sets using the encoded data
-  X_train_rnn, X_test_rnn, y_train_rnn, y_test_rnn = train_test_split(X_pad, y, random_state=3)
+  X_train_rnn, X_test_rnn, y_train_rnn, y_test_rnn = train_test_split(X_pad, y)
 
-  X_train_rnn, X_val_rnn, y_train_rnn, y_val_rnn = train_test_split(X_train_rnn, y_train_rnn, random_state=3)
+  X_train_rnn, X_val_rnn, y_train_rnn, y_val_rnn = train_test_split(X_train_rnn, y_train_rnn)
   ```
 
 * Now we can define the structure of the RNN LSTM model since we will use an `Embedding` layer, we need to set the `input_dim` parameter to the size of the vocabulary, and define an embedding size, so we set the following initial configuration variables.

@@ -1,18 +1,18 @@
 # Students Do: Sentiment Analysis - RNNs Vs. Vader
 
-In this activity, students will use two different models to score sentiment. The goal is to put the performance metrics and techniques students have learned into action to decide which model performs better between VADER and RNN LSTM.
+In this activity, you will use two different models to score sentiment. The goal is to put the performance metrics and techniques you learned into action to decide which model performs better between VADER and RNN LSTM.
 
 ## The DataSet: IMBD Movie Reviews
 
-The dataset provided contains `25000` movie reviews based on [the data shared by Andrew Mass from Stanford University](http://ai.stanford.edu/~amaas/data/sentiment/). This dataset is intended to serve as a benchmark for sentiment classification, that's why it's suitable for this activity.
+The dataset provided contains `25000` movie reviews based on [the data shared by Andrew Mass from Stanford University](http://ai.stanford.edu/~amaas/data/sentiment/).
 
-The movie reviews are split evenly into `12500` positive reviews and `12500` negative reviews. The reviews are not attached to a particular movie, and this is not crucial for our models' comparison since we would like to benchmark which model performs better to score sentiment.
+The movie reviews are split evenly into `12500` positive reviews and `12500` negative reviews.
 
 You can learn more about this dataset in the following research paper: [Andrew L. Maas, Raymond E. Daly, Peter T. Pham, Dan Huang, Andrew Y. Ng and Christopher Potts. (2011). **Learning Word Vectors for Sentiment Analysis**. The 49th Annual Meeting of the Association for Computational Linguistics (ACL 2011)](http://ai.stanford.edu/~amaas/papers/wvSent_acl2011.pdf).
 
 ## Instructions
 
-Follow the next tasks to accomplish this activity. You can also go through the instructions in the started Jupyter notebook provided by the instructor along with the initial code.
+Use the starter notebook and complete the following tasks.
 
 ### Data Preprocessing
 
@@ -20,7 +20,7 @@ Follow the next tasks to accomplish this activity. You can also go through the i
 
 * Create the features set `X` and the target vector `y` by assigning the `comment` column to `X` and the `sentiment` column to `y`.
 
-* Use the `train_test_split` method from `sklearn` to create the training, testing, and validation sets. Remember to set the `random_state` parameter for reproducibility.
+* Use the `train_test_split` method from `sklearn` to create the training, testing, and validation sets.
 
 ## Scoring Sentiment Using VADER
 
