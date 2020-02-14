@@ -21,7 +21,7 @@ df = pd.read_csv('jeopardy.csv', parse_dates=True)
 ```
 This converts each object to a `datetime` object.  Alternatively, you can also set the index as the date column for ease of plotting:
 ```python
-df = pd.read_csv('jeopardy.csv', parse_dates=True, index_col='air_date)
+df = pd.read_csv('jeopardy.csv', infer_datetime_format=True, parse_dates=True, index_col='air_date)
 ```
 </details>
 <details><summary>
