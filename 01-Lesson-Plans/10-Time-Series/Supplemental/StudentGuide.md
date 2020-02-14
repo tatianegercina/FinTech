@@ -11,7 +11,7 @@ Humans look dates and instantly know how to categorize them - day, month, year, 
 
 In the next example, the dates are parsed and converted to `datetime` objects.  The dates are now being categorized properly and are listed in the correct order automatically:
 
-<img src='Images/datetime_plot.png' width=600><br>
+<img src='Images/datetime_plot.png' width=400><br>
 </details>
 <details><summary>How do you convert objects to `datetime`?</summary>
 Converting objects to `datetime` can be tricky.  If using pandas, its best to handle the conversion upon reading in of data.  The syntax to handle the conversion from `read_csv()` is:
@@ -21,7 +21,7 @@ df = pd.read_csv('jeopardy.csv', parse_dates=True)
 ```
 This converts each object to a `datetime` object.  Alternatively, you can also set the index as the date column for ease of plotting:
 ```python
-df = pd.read_csv('jeopardy.csv', parse_dates=True, index_col='air_date)
+df = pd.read_csv('jeopardy.csv', infer_datetime_format=True, parse_dates=True, index_col='air_date)
 ```
 </details>
 <details><summary>
@@ -148,7 +148,7 @@ The Hodrick Prescott filter separates your data into trend and noise, and conver
 
 For this example, we'll use Tesla stock price data from the last 10 years.  The date column will be converted to `datetime` type upon reading the csv which gives us full `datetime` functionality, and displays our charts appropriately:
 
-![TSLA_df](Images/Resources/TSLA_df.PNG)
+![TSLA_df](Images/TSLA_df.PNG)
 
 Next we'll import the Hodrick Prescott filter from the `statsmodels` library and use it to separate the noise from the trend:
 ```python
@@ -158,6 +158,7 @@ noise, trend = sm.tsa.filters.hpfilter(df['Open'])
 This data can then be easily plotted by using the `plot()` pandas function:
 
 ![TSLA_noise](Images/TSLA_noise.PNG)
+
 ![TSLA_trend](Images/TSLA_trend.PNG)
 </blockquote>
 </details>
@@ -176,11 +177,11 @@ How do you convert non-stationary data to stationary?</summary>
 
 If you determine your data is non-stationary, but you need to be, it can be converted by applying either `.pct_change()` or `.diff.()` to your target column:
 
-<img src='Images/diff_pct_chg1.PNG' width=350><br>
+<img src='Images/diff_pct_chg1.PNG' width=600><br>
 
 The `.pct_change()` method will show the percentage change between values, while the `.diff()` method will subtract the values to get the difference:
 
-<img src='Iamges/diff_pct_chg2.PNG' width=550><br>
+<img src='Images/diff_pct_chg2.PNG' width=500><br>
 </details>
 <details><summary>
 Which models use stationary data and which use non-stationary data?</summary>
@@ -221,11 +222,11 @@ Our PACF plot, shows two significant lags, and thus our AR order value would be 
 ![TSLA_pacf](Images/TSLA_pacf.PNG)
 </details>
 <details><summary>
-What is `.reshape()` and why do I have to use it?</summary>
+What is .reshape() and why do I have to use it?</summary>
 
 When working with Pandas, we often pass Series objects into our model.  The shape of values in a Pandas Series object is a 1d array.  This has to be converted into a 2d array which is essentially an array of arrays - or list of lists. .  This is done using the `.reshape()` function.  The matrix values we desire are passed into this function.  In the following example we reshape our list into a 2d array using `.reshape(3,4)`, where 3 is the number of lists and 4 is the number of values in each list:
 
-![2d_arrayImages/2d_array.PNG)
+![2d_arrayImages](Images/2d_array.PNG)
 
 Many models require the 2d array to be formatted such that each value is in a list by itself. If we were inserting the above sample data into a model, it would be converted using `.reshape(-1,1)`, where -1 indicates an unknown number of rows, and 1 indicates the number of values in each list.  The -1 will allow the function to generate the amount of rows necessary to hold the data.  The output looks like this:
 
@@ -233,7 +234,7 @@ Many models require the 2d array to be formatted such that each value is in a li
 
 </details>
 <details><summary>
-What is `.get_dummies() and why do I have to use it?</summary>
+What is .get_dummies() and why do I have to use it?</summary>
 
 This function can convert your categorical data into numerical binary format.  This is especially important when working with certain types of models, because categorical data cannot be read by the model.  If you want to give your model categorical data such as False/Positive, Male/Female, or Buy/Sell, it will need to be converted into binary so the computer can understand it.  The `get_dummies()` function does this by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  Lets encode the category column of our Jeopardy data using `get_dummies()`:
 
