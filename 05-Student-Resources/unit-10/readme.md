@@ -11,7 +11,7 @@ Humans look dates and instantly know how to categorize them - day, month, year, 
 
 In the next example, the dates are parsed and converted to `datetime` objects.  The dates are now being categorized properly and are listed in the correct order automatically:
 
-<img src='Resources/datetime_plot.png' width=600><br>
+<img src='Resources/datetime_plot.png' width=400><br>
 
 </details>
 <details><summary>How do you convert objects to `datetime`?</summary>
