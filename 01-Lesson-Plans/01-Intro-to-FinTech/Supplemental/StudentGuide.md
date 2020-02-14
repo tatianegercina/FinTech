@@ -9,7 +9,6 @@
 - - -
 ## FAQs
 
-## Unit 01: Intro to Finance and Programming
 #### Where can I get started with learning Git?
 Start with our pre-work, which has two modules with video tutorials and activities that can help out with the foundations of working with Git:
 [Bootcamp Pre-work](https://coding-bootcamp-fintech-prework.readthedocs-hosted.com/en/latest )
