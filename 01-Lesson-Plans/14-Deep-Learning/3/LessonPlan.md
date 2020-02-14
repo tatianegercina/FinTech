@@ -1,4 +1,4 @@
-## 14.3 Lesson Plan: Recurrent Neural Networks
+## 14.3 Lesson Plan: Recurrent Neural Networks (This version is in process to be updated)
 
 ---
 
