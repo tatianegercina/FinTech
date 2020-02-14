@@ -21,7 +21,7 @@
 * [Anaconda Install Guide](AnacondaInstallGuide.md)
 
 - - -
-## FAQs
+### FAQs
 
 [What's the relevance of Python?](#whats-the-relevance-of-python)<br>
 [What's up with this crazy indentation?](#whats-up-with-this-crazy-indentation)<br>
