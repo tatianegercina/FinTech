@@ -1,12 +1,12 @@
 ### 2. Instructor Do: Intro to the ROC Curve and AUC (10 min)
 
-In this activity, students will learn how to assess the performance of a binary classification model interpreting the ROC curve and AUC.
+In this activity, students will learn how to assess the performance of a binary classification model by interpreting the ROC curve and AUC.
 
-Explain to students that you will start Today's class by learning some advanced evaluation metrics, such as the ROC curve and AUC, that will be used to evaluate deep learning models.
+Explain to students that they will start Today's class by learning some advanced evaluation metrics, such as the ROC curve and AUC, that will be used to evaluate deep learning models.
 
 Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" section and highlight the following:
 
-* As you remember, we use the confusion matrix to assess the performance of a binary classification model.
+* The confusion matrix is one method that can be used to assess the performance of a binary classification model.
 
   ![Confusion matrix components](Images/confusion-matrix.png)
 
@@ -46,10 +46,16 @@ Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" s
 
 * The value of `AUC` ranges from `0` to `1`. A model whose predictions are `100%` wrong has an `AUC = 0.0`; in contrast, a model whose predictions are `100%` correct has an `AUC = 1.0`.
 
-* Higher the AUC, better the model is at predicting `0s` as `0s` and `1s` as `1s`.
+* An `AUC=1` is a paradox since it means that the model is perfect, but you may not trust in your model since it could be overfitted. A model with this `AUC` value correctly distinguishes between positive and negative classes.
+
+* An `AUC=0.50` means that the model is unable to distinguish between positive and negative classes.
+
+* Ideally, we may want to have `AUC` values ranging between `0` and `1`, where higher the AUC, better the model is at predicting `0s` as `0s` and `1s` as `1s`.
+
+* So, a model with an `AUC=0.90` may be better than a model with an `AUC=0.65`.
 
   ![Different AUC values](Images/auc-for-roc-curves.png)
 
-Comment to students that they will learn how to perform this analysis python next. Answer any questions before moving on.
+Explain to students that they will learn how to perform this analysis using python next. Answer any questions before moving on.
 
 ---
