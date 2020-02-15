@@ -451,9 +451,9 @@ In this activity, students will learn how to define an LSTM RNN model for sentim
 
 **Files:**
 
-* [austin_coffee_sentiment.ipynb](Activities/01-Ins_Sentiment_Analysis/Solved/austin_coffee_sentiment.ipynb)
+* [austin_coffee_sentiment.ipynb](Activities/02-Ins_Sentiment_Analysis/Solved/austin_coffee_sentiment.ipynb)
 
-* [austin_coffee_shops_reviews.csv](Activities/01-Ins_Sentiment_Analysis/Resources/austin_coffee_shops_reviews.csv)
+* [austin_coffee_shops_reviews.csv](Activities/02-Ins_Sentiment_Analysis/Resources/austin_coffee_shops_reviews.csv)
 
 Explain to students that you will start exploring the LSTM RNNs by creating a model for sentiment analysis using the Keras API of TensorFlow.
 
@@ -1024,9 +1024,9 @@ In this activity, students will learn how to built RNN LSTM models for time seri
 
 **Files:**
 
-* [lstm_predictor.ipynb](Activities/05-Ins_LSTM_Time_Series/Solved/lstm_predictor.ipynb)
+* [lstm_predictor.ipynb](Activities/04-Ins_LSTM_Time_Series/Solved/lstm_predictor.ipynb)
 
-* [stock_data.csv](Activities/05-Ins_LSTM_Time_Series/Resources/stock_data.csv)
+* [stock_data.csv](Activities/04-Ins_LSTM_Time_Series/Resources/stock_data.csv)
 
 Explain to students that RNN LSTM models can also be used to forecast time-series data, such as stock prices, sales, temperature, or even the heights of ocean tides or sound waves!
 
@@ -1277,11 +1277,11 @@ This activity is a mini-project where students will gain hands-on experience bui
 
 **Instructions:**
 
-* [README.md](AActivities/06-Stu_Predict_Gold_Prices/README.md)
+* [README.md](Activities/05-Stu_Predict_Gold_Prices/README.md)
 
 **Files:**
 
-* [gold_price_predict.ipynb](Activities/06-Stu_Predict_Gold_Prices/Unsolved/gold_price_predict.ipynb)
+* [gold_price_predict.ipynb](Activities/05-Stu_Predict_Gold_Prices/Unsolved/gold_price_predict.ipynb)
 
 ---
 
@@ -1289,7 +1289,7 @@ This activity is a mini-project where students will gain hands-on experience bui
 
 **Files:**
 
-* [gold_price_predict.ipynb](Activities/06-Stu_Predict_Gold_Prices/Solved/gold_price_predict.ipynb)
+* [gold_price_predict.ipynb](Activities/05-Stu_Predict_Gold_Prices/Solved/gold_price_predict.ipynb)
 
 Open the unsolved version of the Jupyter notebook, live code the solution, and highlight the following:
 
