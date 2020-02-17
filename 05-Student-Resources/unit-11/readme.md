@@ -43,7 +43,7 @@ Most categorical data is text based and must be converted to numerical so that c
 
 <blockquote>
 <details>
-<summary>.LabelEncoder()</summary>
+<summary>Preprocessing Target Data:</summary>
 
 Using the .`Labelencoder()` method from scikit-learn we can convert categorical data to numberical.  We begin with a simple DataFrame showing 6 countries:
 
@@ -65,13 +65,32 @@ Now you can see that the encoded values are numerical representations of the ori
 </details>
 
 <details>
-<summary>.get_dummies()</summary>
+<summary>Preprocessing Feature Data:</summary>
 There are situations when using `.LabelEncoder()` is not appropriate.  If you are encoding target values, (the values you wish to predict), then using the label encoder is great, however if you are encoding feature values, this method can cause accidental bias in your model prediction.  This is because the numerical representations of the data will be interpreted as values by the model.  A category of 5 will be given more weight than a category of 1.  This is where the `.get_dummies()` pandas function used in Unit 10 comes into play.  The function works by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  In the below example we use the `.get_dummies()` to convert the same country data as before:
 
 ```python
 encoded_data = pd.get_dummies(df.Country, columns='Country')
 ```
 ![country_df3](Resources/country_df3.PNG)
+</details>
+<details>
+<summary>Scaling Feature Data:</summary>
+In our prevoius example, we converted feature data to binary to avoid introducing bias into the model.  For the same reason, we should scale data that has large numerical variance between features, so that all features are initiall weighted the same.  For example, let's suppose that our country dataframe also includes average number of children, average life expectancy, and average salary by country:
+
+![country_df4](Resources/country_df4.PNG)
+
+These values vary greatly.  If you were using these values in a model, the higher numbers would automatically be read in with more weight bias.  That is where scaling comes in!  Using the `StandardScaler()` from scikit-learn, we will scale the data.  First we instantiate the `.StandardScaler()` instance, then fit it to the data, then transform the data and show in a new DataFrame:
+
+```python
+data_scaler = StandardScaler()
+data_scaler.fit(df)
+data_scaled = data_scaler.transform(df)
+```
+The new DataFrame shows the scaled data in place of the former values.  Now all the values standardized:
+
+
+![country_df5](Resources/country_df5.PNG)
+
 </details>
 </blockquote>
 </details>
