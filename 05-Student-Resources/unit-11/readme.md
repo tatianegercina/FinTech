@@ -25,8 +25,48 @@ Examples of categorical data inclue:
 
 <details>
 <summary>
- How do you preprocess data for classification?</summary>
+Why am I getting a value error for my continuous data?</summary>
 
+Are you running a Logistic Regression model and keep getting an error like the one below?
+
+![continuous_err](Resources/continuous_err.PNG)
+
+This error means you are giving non-categorical data to your Logistic Regression model.  Logistic Regression models use categorical data, and cannot compute continuous data.
+
+</details>
+
+
+<details>
+<summary>
+ How do you preprocess data for classification?</summary>
+Most categorical data is text based and must be converted to numerical so that computations can be ran.  For example ir your categories are male and female, you could convert them to 0 and 1.  scikit-learn offers functions that can handle this conversion simply.  Two options are `.LabelEncoder()` and `OneHotEncoder()`.
+
+<blockquote>
+<details>
+<summary>.LabelEncoder()</summary>
+
+Using the .`Labelencoder()` method from scikit-learn we can convert categorical data to numberical.  We begin with a simple DataFrame showing 6 countries:
+
+![country_df1](Resources/country_df1.PNG)
+
+Then we import `LabelEncoder` from sklern.preprocessing, after which we instantiate the `.LabelEncoder()` object, run a `.fit()` then `.transform()`.  The results are stored in a new variable `encoded_y` and inserted into a new DataFrame.
+
+```python
+from sklearn.preprocessing import LabelEncoder
+encoder = LabelEncoder()
+encoder.fit(df.Country)
+encoded_y = encoder.transform(df.Country)
+df['Encoded'] = encoded_y
+```
+Now you can see that the encoded values are numerical representations of the original countries:
+
+![country_df2](Resources/country_df2.PNG)
+
+</details>
+<details>
+<summary>.OneHotEncoder()</summary>
+</details>
+</blockquote>
 </details>
 
 <details>
