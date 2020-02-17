@@ -63,8 +63,15 @@ Now you can see that the encoded values are numerical representations of the ori
 ![country_df2](Resources/country_df2.PNG)
 
 </details>
+
 <details>
-<summary>.OneHotEncoder()</summary>
+<summary>.get_dummies()</summary>
+There are situations when using `.LabelEncoder()` is not appropriate.  If you are encoding target values, (the values you wish to predict), then using the label encoder is great, however if you are encoding feature values, this method can cause accidental bias in your model prediction.  This is because the numerical representations of the data will be interpreted as values by the model.  A category of 5 will be given more weight than a category of 1.  This is where the `.get_dummies()` pandas function used in Unit 10 comes into play.  The function works by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  In the below example we use the `.get_dummies()` to convert the same country data as before:
+
+```python
+encoded_data = pd.get_dummies(df.Country, columns='Country')
+```
+![country_df3](Resources/country_df3.PNG)
 </details>
 </blockquote>
 </details>
