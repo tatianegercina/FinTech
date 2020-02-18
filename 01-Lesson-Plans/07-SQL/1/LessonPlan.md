@@ -1,3 +1,5 @@
+placeholder
+
 ## 7.1 Lesson Plan: Introduction to SQL
 
 ### Overview
