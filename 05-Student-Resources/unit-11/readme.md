@@ -131,8 +131,16 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify = y, shuffle 
 <details>
 <summary>
 What is the difference between True/False Positives and True/False Negatives?</summary>
-Keeping track of the differences between these four guys can be a mind bender.  It often makes more sense when thought of as a medical procedure - the test said you have the flu, but you actually did not would be a False Positive.  But when applying these terms to machine elarning, where the values we are predicting are usually more than just true or false, and are less applicable to our daily lives as medical testing, their meaning can become abstract.  Here is a quick referencd to keeping them straight.  In our example, the model is predicting whether a color will be blue, green or purple.
+Keeping track of the differences between these four guys can be a mind bender.  It often makes more sense when thought of as a medical procedure.  For example let say you tested positive for flu, but you actually did not have it - this would be a False Positive.
+
+When applying these terms to machine learning, where the values we are predicting are usually more than just true or false, and are less applicable to our daily lives as is medical testing, their meaning can become abstract.  Here is a quick reference for keeping them straight.  In our example, the model is predicting whether a color will be blue, green or purple.
+
+
 <blockquote>
+<details>
+<summary>Terminology</summary>
+The True/False part of our terminology means that the test predicted either correctly (true) or incorrectly (false).  The Postiive/Negative part of the term means that the test was predicting the presence (positive) or abscense (negative) of something.
+</details>
 <details>
 <summary>True Positve</summary>
 I thought you were green and I was right!
@@ -184,6 +192,8 @@ The basic layout of a confusion matrix is the actual values are listed along the
 <summary>Precision</summary>
 Precision is a measurement of how many positively predicted values were actually correct.  For example, if our model was predicting colors - blue, green and purple, precision would be the measurement of how many times time model predicted purple and the actual value was also purple.
 
+The formula for precision is TP / (TP + FP).
+
 ![confusion3](Resources/conf_matrix3.gif)
 </details>
 
@@ -191,14 +201,12 @@ Precision is a measurement of how many positively predicted values were actually
 <summary>Recall</summary>
 Recall is a measurement of how many times a value was predict and was incorrect.  For example, if our model was predicting colors - blue, green and purple, recall would be the measurement of how many times green was predicted incorrectly.
 
+The formula for recall is TP / (TP + FN).
+
 ![confusion2](Resources/conf_matrix2.gif)
 </details>
 </details>
-<details>
-<summary>
- What is the difference between logistic regression and support vector machines?</summary>
 
-</details>
 
 <details>
 <summary>
