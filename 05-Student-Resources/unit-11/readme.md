@@ -162,19 +162,16 @@ The model predicted this value was not green and it was incorrect.
 
 <details>
 <summary>
- How do you understand the difference between precision, recall and accuracy?</summary>
-<blockquote>
-<details>
-<summary>Precision</summary>
-Precision is the number of correct predictions (true positive of TP) divided by the number of correct predictions (true positive or TP) + the number of false predictions (false postiive or FP):  TP/(TP+FP)
+How are precision and accuracy different?</summary>
 
 
-</details>
+Precision is a measure of how close elements are to each other.  Accuracy is a measure of how close items are to the target.
+<img src='Resources/acc_prec.png' width = 650>
 </details>
 
 <details>
 <summary>
- How do you read a confusion matrix?</summary>
+How do you use a confusion matrix?</summary>
 
 <blockquote>
 <details>
@@ -200,18 +197,6 @@ Recall is a measurement of how many times a value was predict and was incorrect.
 <details>
 <summary>
  What is the difference between logistic regression and support vector machines?</summary>
-
-</details>
-
-<details>
-<summary>
- What is `labelencoder()` and why do I have to use it?</summary>
-
-</details>
-
-<details>
-<summary>
-What is `standardscaler()` and why do I have to use it?</summary>
 
 </details>
 
