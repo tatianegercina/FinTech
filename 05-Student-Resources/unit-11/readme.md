@@ -128,6 +128,37 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify = y, shuffle 
  Supervised learning models
 
 </details>
+<details>
+<summary>
+What is the difference between True/False Positives and True/False Negatives?</summary>
+Keeping track of the differences between these four guys can be a mind bender.  It often makes more sense when thought of as a medical procedure - the test said you have the flu, but you actually did not would be a False Positive.  But when applying these terms to machine elarning, where the values we are predicting are usually more than just true or false, and are less applicable to our daily lives as medical testing, their meaning can become abstract.  Here is a quick referencd to keeping them straight.  In our example, the model is predicting whether a color will be blue, green or purple.
+<blockquote>
+<details>
+<summary>True Positve</summary>
+I thought you were green and I was right!
+
+The model predicted this value as green and it is correct.
+</details>
+<details>
+<summary>False Positive</summary>
+I thought you were green and I was wrong!
+
+The model predicted this value as green and it was incorrect.
+</details>
+<details>
+<summary>True Negative</summary>
+I thought you were not green and I was right!
+
+The model predicted this value was not green it was correct.
+
+</details>
+<details>
+<summary>False Negative</summary>
+I thought you were not green and I was wrong!
+
+The model predicted this value was not green and it was incorrect.
+</details>
+</details>
 
 <details>
 <summary>
