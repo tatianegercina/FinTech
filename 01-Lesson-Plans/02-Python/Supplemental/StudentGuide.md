@@ -23,19 +23,13 @@
 - - -
 ### FAQs
 
-[What's the relevance of Python?](#whats-the-relevance-of-python)<br>
-[What's up with this crazy indentation?](#whats-up-with-this-crazy-indentation)<br>
-[How do list comprehensions work?](#how-do-list-comprehensions-work)<br>
-[How are variables assigned with a for loop?](#how-are-variables-assigned-with-a-for-loop)<br>
-[How does slicing work?](#how-does-slicing-work)<br>
-[How do you access values in a nested dictionary?](#how-do-you-access-values-in-a-nested-dictionary)<br>
-[How can tabular data be accessed to faciliate exploration in Python?](#How-can-tabular-data-be-accessed-to-faciliate-exploration-in-Python)<br>
 
-
-#### What's the relevance of Python?
+<details>
+<summary>What's the relevance of Python?</summary>
 Python is the primary language that we will be using in this course. It's a semantic language which makes it easier to read and understand, and the reliance on indentation makes the organized structure quicker to grasp. With this language, we'll be able to dive into a slew of libraries that will make solving complex data problems more simple.
 
-#### What's up with this crazy indentation?
+</details>
+<details><summary>What's up with this crazy indentation?</summary>
 With Python, indentation is more than just organization and readability. Python's functionality actually depends on proper indentation!
 
 In this snippet, we're using indentation to tell our code where our for loops begin and end. In Python, indenting creates blocks of code that work together. Similarly, indenting backwards tells the program when to end a loop.
@@ -52,7 +46,8 @@ The code you will write in Python will eventually be seen by someone else. Focus
 
 
 
-#### How do list comprehensions work?
+</details>
+<details><summary>How do list comprehensions work?</summary>
 In a list comprehension, you are writing a for loop in a concise format that outputs a list object.  It can be confusing because the variable is repeated twice.  What the code is saying is: for each item in my old list, add that item to my new list.
 
 For example:
@@ -69,7 +64,8 @@ Output:
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-#### How are variables assigned with a for loop?
+</details>
+<details><summary>How are variables assigned with a for loop?</summary>
 Typically a for loop is iterating over an object and extracting each of the next smallest objects.  The variable is established after the word `For`. If your variable is `letter` and your object is `name` then Python finds the next smallest item in the `name` object you are iterating over and assigns `letter` to each of them.
 
 
@@ -107,7 +103,8 @@ Shayla
 ```
 
 
-#### How does slicing work?
+</details>
+<details><summary>How does slicing work?</summary>
 Slice notation allows you to extract certain information from a list.  The syntax is `a[start:stop:step]`, with `step` being an optional component.  If a start number is ommited, it is assumed to be zero.  If a stop number is ommitted, it is assumed to be one more than the index number of the last item in the data.  In the following examples ommitting the stop number is the equavilient of using the number 4, because there are only 4 items (0, 1, 2, 3) in the list.
 
 Given the following list:
@@ -144,7 +141,8 @@ All three have the same output - every other name, starting with the first name:
 
 For more information check out this [Stack Overflow post](https://stackoverflow.com/questions/509211/understanding-slice-notation)
 
-#### How do you access values in a nested dictionary?
+</details>
+<details><summary>How do you access values in a nested dictionary?</summary>
 
 Think of a dictionary like an assembled puzzle.  To get one of the pieces out of the puzzle, you have to deconstruct the puzzle by breaking apart the larger chunks and then the smaller chunks.  If you have a list of two dictionaries, you must first extract the dictionary you want, then you can extract the value you want.
 
@@ -196,7 +194,8 @@ Which gives us:
 ```Python
 'Apollo'
 ```
-#### How can tabular data be accessed to faciliate exploration in Python?
+</details>
+<details><summary>How can tabular data be accessed to faciliate exploration in Python?</summary>
 
 Tabular data is data in the form of a table with rows, columns and values.  Spreadsheets and CSV files are a very well-known forms of tabular data.  This format makes it simple to find values, but how do we manipulate those values using Python?  The data must be 'read into' a program.
 
@@ -221,7 +220,7 @@ To get the columns we use indexing:<br>
 
 In this way, the `alias` variable now holds `row[0]` - the first column and all its row values.  And the `model_number` variable now holds `row[1]` - the second column and all its row values.
 
-
+</details>
 - - -
 
 © 2019 Trilogy Education Services
