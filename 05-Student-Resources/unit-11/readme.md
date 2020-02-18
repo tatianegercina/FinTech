@@ -123,9 +123,11 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify = y, shuffle 
 
 <details>
 <summary>
- What is the difference between supervised learning and unsupervised learning?</summary>
+What is the difference between supervised learning and unsupervised learning?</summary>
 
- Supervised learning models
+Supervised models learn from labeled data and unsupervised models do not.  A simple way to visualize this would be think of yourself in this class!  You are the model and you are learning based on inputs from the class that are labeled - the class lessons, the tech stack, the assignments.  This is supervised learning.  Now if you were not in the class, and were attempting to learn all this on your own by just walking into a FinTech firm and watching what is happening around you - that would be unsupervised learning.
+
+Another example would be learning languages.  If you grew up in a location where Spanish was spoken fluently in your home, and you decided to then learn English by enrolling in a class, this would be supervised learning.  The class is structured and you would learn from labeled inputs.  However if you grow up with English as your native tongue, you learned it by being immersed in the data around you from the time you were born.  This is an example of unsupervised learning.
 
 </details>
 <details>
@@ -205,13 +207,6 @@ The formula for recall is TP / (TP + FN).
 
 ![confusion2](Resources/conf_matrix2.gif)
 </details>
-</details>
-
-
-<details>
-<summary>
-What is the difference between decision trees and random forests?</summary>
-
 </details>
 
 <details>
