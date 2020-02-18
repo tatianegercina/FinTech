@@ -125,20 +125,47 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify = y, shuffle 
 <summary>
  What is the difference between supervised learning and unsupervised learning?</summary>
 
+ Supervised learning models
+
 </details>
 
 <details>
 <summary>
  How do you understand the difference between precision, recall and accuracy?</summary>
+<blockquote>
+<details>
+<summary>Precision</summary>
+Precision is the number of correct predictions (true positive of TP) divided by the number of correct predictions (true positive or TP) + the number of false predictions (false postiive or FP):  TP/(TP+FP)
 
+
+</details>
 </details>
 
 <details>
 <summary>
  How do you read a confusion matrix?</summary>
 
+<blockquote>
+<details>
+<summary>Layout</summary>
+The basic layout of a confusion matrix is the actual values are listed along the x axis, and predicted values are listed along on the y axis.
+
+![confusion1](Resources/conf_matrix1.gif)
+</details>
+<details>
+<summary>Precision</summary>
+Precision is a measurement of how many positively predicted values were actually correct.  For example, if our model was predicting colors - blue, green and purple, precision would be the measurement of how many times time model predicted purple and the actual value was also purple.
+
+![confusion3](Resources/conf_matrix3.gif)
 </details>
 
+<details>
+<summary>Recall</summary>
+Recall is a measurement of how many times a value was predict and was incorrect.  For example, if our model was predicting colors - blue, green and purple, recall would be the measurement of how many times green was predicted incorrectly.
+
+![confusion2](Resources/conf_matrix2.gif)
+</details>
+</details>
 <details>
 <summary>
  What is the difference between logistic regression and support vector machines?</summary>
