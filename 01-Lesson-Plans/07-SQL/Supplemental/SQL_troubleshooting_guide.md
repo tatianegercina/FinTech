@@ -2,10 +2,6 @@
 
 This troubleshooting guide contains common issues and fixes pertaining to the use of pgAdmin and postgreSQL.
 
-Current list of issues is as follows:
-
-* Unable to Import/Export CSV via pgAdmin
-
 ## Unable to Import/Export CSV via pgAdmin
 
 Issues sometimes arise when using the built-in data import/export tool provided by pgAdmin, either due to slow read/write performance or complete operational failure. Thankfully, in the case of such events there are several alternative methods for importing data to your desired postgreSQL database and corresponding tables.
