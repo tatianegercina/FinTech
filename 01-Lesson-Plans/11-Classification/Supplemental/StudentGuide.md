@@ -313,7 +313,7 @@ ros = RandomUnderSampler(random_state=1)
 X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
 
 ```
-Cluster centroid undersampling
+Cluster centroid undersampling works by using Kmeans to cluster the majority data into a quanitity of clusters that is equal to the rows of minority data.  The method then takes the mean value (centroid) of each cluster to establish a new list of majority data that is now equal to the length of the list of minority data.  For example, if you have 10,000 rows of majority data and 300 rows of minority data, this method will make 300 clusters of majority data, and take their mean to establish 300 rows of new data that are respresentative of the majority class.
 
 To utilize `imblearn` for cluster centroid undersampling, we call the code as follows:
 
