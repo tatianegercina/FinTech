@@ -34,9 +34,9 @@ Right here! Try this [Markdown Guide!](https://www.markdownguide.org/cheat-sheet
 
 The answer is simple - keyboard shortcuts.  You may not have needed them before - but in coding, they'll be one of your new best friends.  Check out these keyboard shortcut cheatsheets to help you get started:
 
-[Mac](../../../05-Student-Resources/unit-1/Resources/mac-shortcuts.md)
+[Mac](Resources/mac-shortcuts.md)
 
-[Windows](../../../05-Student-Resources/unit-1/Resources/windows-shortcuts.md)
+[Windows](Resources/windows-shortcuts.md)
 
 
 </details>
