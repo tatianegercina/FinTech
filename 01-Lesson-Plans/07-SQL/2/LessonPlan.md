@@ -16,7 +16,7 @@ By the end of today's class, students will be able to:
 
 ### Instructor Notes
 
-* If you experience any issues with importing data as CSV files in pgAdmin, please refer to the data import troubleshooting [guide](../Supplemental/data_import_troubleshooting_guide.md).
+* If you experience any issues importing data as CSV files via pgAdmin, please refer to the data import troubleshooting [guide](../Supplemental/data_import_troubleshooting_guide.md).
 
 * Today's lesson will mostly use imported datasets, so make sure students are comfortable importing data from CSV files. All schemas for the tables will be provided along with the CSV files. Students who don't have this data imported correctly will not be able to follow along with the lesson.
 

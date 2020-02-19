@@ -18,7 +18,7 @@ By the end of today's class, students will be able to:
 
 ### Instructor Notes
 
-* If you experience any issues with importing data as CSV files in pgAdmin, please refer to the data import troubleshooting [guide](../Supplemental/data_import_troubleshooting_guide.md).
+* If you experience any issues importing data as CSV files via pgAdmin, please refer to the data import troubleshooting [guide](../Supplemental/data_import_troubleshooting_guide.md).
 
 * This lesson is less heavy on pure SQL, which will be used mainly to supplement the ideas presented today. If students continue to struggle with SQL basics, encourage them to practice on their own while still focusing on the concepts in this lesson.
 
