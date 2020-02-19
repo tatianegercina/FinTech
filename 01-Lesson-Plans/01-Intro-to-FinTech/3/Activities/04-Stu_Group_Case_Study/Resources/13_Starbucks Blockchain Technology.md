@@ -43,4 +43,4 @@ Starbucks is working on a new feature for its mobile app that will show customer
 * [Starbucks Working With Microsoft for Blockchain-Based Coffee Tracking Platform](https://cointelegraph.com/news/starbucks-working-with-microsoft-for-blockchain-based-coffee-tracking-platform)
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
