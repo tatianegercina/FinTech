@@ -18,4 +18,6 @@ PostgreSQL additionally provides a Command Line Interface (CLI) to not only acce
 
 ![export-psql-path](Images/export-psql-path.png)
 
+![sql-file-CLI](Images/sql-file-CLI.png)
+
 ### Sqlalchemy & Pandas DataFrames
