@@ -242,6 +242,7 @@ The formula for recall is TP / (TP + FN).
 <summary>
 What is the point of using ensemble learning?</summary>
 
+Ensemble learning is a method were multiple models are combined into one powerful predictor.  In classification instances, the different models might make a final prediction by calculating which class had the most votes.  In regression instances,  the mean of all results is typically taken and then offered as the final prediction.
 </details>
 
 <details>
