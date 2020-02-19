@@ -33,3 +33,11 @@ Now navigate to the folder containing the .sql file and run the following comman
 
 ### SQLAlchemy, Psycopg2, and Pandas DataFrames
 
+Data can also be written from a Pandas DataFrame directly to a PostgreSQL table using the in-built `to_sql` function. In order to make the connection to the PostgreSQL database, additional libraries such as `sqlalchemy` and `psycopg2` must be installed; `sqlalchemy` acts as the connection manager while `psycopg2` acts as the PostgreSQL drivers needed to connect specifically to a PostgreSQL DB.
+
+In order to import the `sqlalchemy` and `psycopg2` libraries, they will first need to be installed into the Python environment.
+
+```pip install sqlalchemy` 
+
+```pip install psycopg2-binary```
+
