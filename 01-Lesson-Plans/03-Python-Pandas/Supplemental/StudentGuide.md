@@ -26,11 +26,11 @@ According to *Python for Data Analysis*, written by Pandas inventor himself, Wes
 <details><summary>How do you access a column?</summary>
 To access a column in your DataFrame you call the DataFrame variable plus the column by using either bracket or dot notation.  For example, lets use the following DataFrame named `cylons`:
 
-![Cylon DF](../../../05-Student-Resources/unit-3/Resources/Cylon_DF.PNG)<br>
+![Cylon DF](Images/Cylon_DF.PNG)<br>
 
 you would access the `Model_Number` column as follows:
 
-![Cylon DF](../../../05-Student-Resources/unit-3/Resources/Cylon_Series.PNG)<br>
+![Cylon DF](Images/Cylon_Series.PNG)<br>
 
 </details>
 <details><summary>Why do I keep getting a key error?</summary>
@@ -40,14 +40,14 @@ If Pandas throws a key error at you, it can be really frustrating, especially wh
 <details><summary>What is a DataFrame axis?</summary>
 A DataFrame axis is simply the column headers or the row index positions.  This image helps to visualize it:
 
-![Cylon DF Axes](../../../05-Student-Resources/unit-3/Resources/Cylon_Axes.png)<br>
+![Cylon DF Axes](Images/Cylon_Axes.png)<br>
 
 
 </details>
 <details><summary>What is the difference between a Series and a DataFrame?</summary>
 A DataFrame is a 2D matrix object holding rows and columns.  A Series is a 1D object, much like an array, though it can have an index.  When a single column is extracted from a DataFrame, it is a Series object.  The following image shows a Series object extracted from our cylons DataFrame:
 
-![Cylon DF Series](../../../05-Student-Resources/unit-3/Resources/Cylon_Series.PNG)<br>
+![Cylon DF Series](Images/Cylon_Series.PNG)<br>
 
 </details>
 <details><summary>Why do my Dataframe changes disappear when I move to the next cell in Jupyter?</summary>
@@ -72,7 +72,7 @@ In this example `.loc()` searches for `i`, which represents the contents of each
 
 The groupby function puts all elements of a certain category together by finding each unique value in the column specified and converting that to a new index.  If you were to group our cylons_df by the `Model#` but not apply a function to it, the code can run the grouping, but it doesn't know what to do with the other columns.  There would be a new index, with extraneous data that doesn't fit the new index length or match up in anyway.  By applying an aggregation function, such as `.count()`, the code can perform an aggregation on the other columns and keep them in the object.  For example, if we run `cylons_df.groupby('Model#').count()`, our DataFrame index is converted into the unique values of cylon model numbers, and then the other data is counted based on how many there are of each model number.
 
-![Cylon DF Groupby](../../../05-Student-Resources/unit-3/Resources/Cylon_Groupby.PNG)<br>
+![Cylon DF Groupby](Images/Cylon_Groupby.PNG)<br>
 
 </details>
 <details><summary>What does this error mean: `TypeError: unsupported operand type`?</summary>
