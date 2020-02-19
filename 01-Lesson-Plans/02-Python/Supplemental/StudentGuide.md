@@ -157,7 +157,7 @@ battlestars =
   'Pilots': ['Starbuck', 'Apollo', 'Helo', 'Athena']}]
 ```
 Our list contains two dictionaries, with the Galactica being in the 2nd one.
-![Alt Text](../../../05-Student-Resources/unit-2/Resources/battlestar_dictionary.gif)
+![Alt Text](Images/battlestar_dictionary.gif)
 
 So we first call our list object (`battlestars`), then the index position of our 2nd dictionary - `1`.
 
@@ -172,7 +172,7 @@ Which gives us:
 ```
 
 Now that we have the dictionary we want, we can call the key we want.
-![Alt Text](../../../05-Student-Resources/unit-2/Resources/galactica_dictionary.gif)
+![Alt Text](Images/galactica_dictionary.gif)
 
 
 We need to get information on pilots, so we call the 'Pilots' key:
@@ -213,10 +213,10 @@ with open('auditingprojects/battlestar.csv', 'r') as file:
         model_number.append(row[1])
 ```
 When we say for `row` in `file`, we are literally storing a row in the spreadsheet in the variable `row` during each loop:<br>
-![Alt Text](../../../05-Student-Resources/unit-2/Resources/cylon_rows.gif)
+![Alt Text](Images/cylon_rows.gif)
 
 To get the columns we use indexing:<br>
-![Alt Text](../../../05-Student-Resources/unit-2/Resources/cylon_columns.gif)
+![Alt Text](Images/cylon_columns.gif)
 
 In this way, the `alias` variable now holds `row[0]` - the first column and all its row values.  And the `model_number` variable now holds `row[1]` - the second column and all its row values.
 
