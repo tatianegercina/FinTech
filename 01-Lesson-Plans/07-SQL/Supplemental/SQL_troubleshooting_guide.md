@@ -22,9 +22,9 @@ In order to access the postgreSQL CLI, you'll have to first set the `PATH` envir
 
 Now navigate to the folder containing the .sql file and run the following command: `psql -U postgres -d animals_db -f bird_song.sql`.
 
-`-U` : The username of the postgreSQL account.
-`-d` : The specified database.
-`-f` : The filepath to the .sql file.
+* `-U` : The username of the postgreSQL account.
+* `-d` : The specified database.
+* `-f` : The filepath to the .sql file.
 
 ![sql-file-CLI](Images/sql-file-CLI.png)
 
