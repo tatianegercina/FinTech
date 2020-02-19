@@ -272,8 +272,8 @@ For example, using our color classes from before.  If train our model on 95 gree
 <summary>
 How do I managed imabalanced data?</summary>
 Two methods for correcting imbalanced data are oversampling and undersampling.  There are imports available from the `imbalanced learn` library that make these two methods simple.
-<details>
-<blockquote>
+
+<blockquote><details>
 <summary>Oversampling</summary>
 The oversampling method can be done with random oversampling or the Synthetic Minority Oversampling Technique (SMOTE).
 
@@ -302,9 +302,9 @@ X_resampled, y_resampled = smote.fit_resample(X_train, y_train)
 <details>
 <summary>Undersampling</summary>
 Undersampling is done by removing data from the majority class until the minority and majority are proportional.  This is only feasible if there is still enough data to effectively train the model after removal.
-</blockquote>
-</details>
 
+</details>
+</blockquote>
 </details>
 
 ---
