@@ -34,13 +34,13 @@
 <details>
 <summary>What is the difference between linear regression and logistic regression?</summary>
 
-Though both use regression techniques, linear and logistic regressions are both quite different.  If the values you are predicting are continuous meaning they can be any number, then linear regression is the correct model.  If your values are categorical or binary, then logistic regression is the correct model.
+Though both use regression techniques, linear and logistic regressions are designed for two different types of data.  If the values you are predicting are continuous then linear regression is the correct model.  If your values are categorical then logistic regression is the correct model.
 </details>
 
 <details>
 <summary>What is the difference between continuous and categorical data?</summary>
-Continous data is quantitative data that can be any number with infinte possibilities.
-Categorical data is data that can be classified in specific groups.
+Continous data is quantitative data that can be any number with infinite possibilities.
+Categorical data can be classified into specific groups.
 
 Examples of categorical data inclue:
 - Male, Female
@@ -54,7 +54,7 @@ Examples of categorical data inclue:
 
 <details>
 <summary>
-Why am I getting a value error for my continuous data?</summary>
+Why am I getting a value error for continuous data?</summary>
 
 Are you running a Logistic Regression model and keep getting an error like the one below?
 
@@ -68,17 +68,17 @@ This error means you are giving non-categorical data to your Logistic Regression
 <details>
 <summary>
  How do you preprocess data for classification?</summary>
-Most categorical data is text based and must be converted to numerical so that computations can be ran.  For example ir your categories are male and female, you could convert them to 0 and 1.  scikit-learn offers functions that can handle this conversion simply.  Two options are `.LabelEncoder()` and `OneHotEncoder()`.
+Most categorical data is text based and must be converted to numerical so that computations can be ran.  For example, if your categories are male and female, you could convert them to 0 and 1.  scikit-learn offers functions that can handle this conversion simply.  Two options are `.LabelEncoder()` and `OneHotEncoder()`.
 
 <blockquote>
 <details>
 <summary>Preprocessing Target Data</summary>
 
-Using the .`Labelencoder()` method from scikit-learn we can convert categorical data to numberical.  We begin with a simple DataFrame showing 6 countries:
+Using the .`Labelencoder()` method from scikit-learn we can convert categorical data to numerical.  We begin with a simple DataFrame showing 6 countries:
 
 ![country_df1](Images/country_df1.PNG)
 
-Then we import `LabelEncoder` from sklern.preprocessing, after which we instantiate the `.LabelEncoder()` object, run a `.fit()` then `.transform()`.  The results are stored in a new variable `encoded_y` and inserted into a new DataFrame.
+Then we import `LabelEncoder` from sklearn.preprocessing, after which we instantiate the `.LabelEncoder()` object, run a `.fit()` then `.transform()`.  The results are stored in a new variable `encoded_y` and inserted into a new DataFrame.
 
 ```python
 from sklearn.preprocessing import LabelEncoder
@@ -104,18 +104,18 @@ encoded_data = pd.get_dummies(df.Country, columns='Country')
 </details>
 <details>
 <summary>Scaling Feature Data</summary>
-In our prevoius example, we converted feature data to binary to avoid introducing bias into the model.  For the same reason, we should scale data that has large numerical variance between features, so that all features are initiall weighted the same.  For example, let's suppose that our country dataframe also includes average number of children, average life expectancy, and average salary by country:
+In our prevoius example, we converted feature data to binary to avoid introducing bias into the model.  For the same reason, we should scale data that has large numerical variance between features, so that all features are weighted the same.  For example, let's suppose that our country DataFrame also includes average number of children, average life expectancy, and average salary by country.  Average number of children is a very small number compared to average life expectancy, which is a very small number compared to average salary by country.  These values vary greatly and need to be scaled, because the higher numbers will automatically be read in with more weight bias
 
 ![country_df4](Images/country_df4.PNG)
 
-These values vary greatly.  If you were using these values in a model, the higher numbers would automatically be read in with more weight bias.  That is where scaling comes in!  Using the `StandardScaler()` from scikit-learn, we will scale the data.  First we instantiate the `.StandardScaler()` instance, then fit it to the data, then transform the data and show in a new DataFrame:
+Using the `StandardScaler()` from scikit-learn, we will scale the data.  First we instantiate the `.StandardScaler()` instance, then fit it to the data, then transform the data and show it in a new DataFrame:
 
 ```python
 data_scaler = StandardScaler()
 data_scaler.fit(df)
 data_scaled = data_scaler.transform(df)
 ```
-The new DataFrame shows the scaled data in place of the former values.  Now all the values standardized:
+The new DataFrame shows the scaled data in place of the former values.  Now all the values are standardized:
 
 
 ![country_df5](Images/country_df5.PNG)
@@ -128,7 +128,7 @@ The new DataFrame shows the scaled data in place of the former values.  Now all 
 <summary>
  How does `train_test_split()` work?</summary>
 
-The `train_test_split()` function makes splitting data for testing easy!  The function outputs 4 sets of data points - 2 sets of feature data, and 2 sets of target data.  This is why the variables that define the function are typically `X_train, X_test, y_train, y_test`.  The most important parameters of the function are the `X` and `y`.  During preprocessing we separate our data into the feature data, or `X`, and the target data, or `y`.
+The `train_test_split()` function makes splitting data for testing easy!  The function outputs four sets of data points - two sets each of target and feature data where one set is for training and one set is for testing.  This is why the variables that define the function are typically `X_train, X_test, y_train, y_test`.  The most important parameters of the function are the `X` and `y`.  During preprocessing we separate our data into the feature data, or `X`, and the target data - `y`.
 
 The `y` data are the values we wish to predict, and the `X` data are the values we use to influence our predictions.  If our data is stored in a DataFrame, we just break it out and store it in variables.  The values we wish to predict are stored as `y` and the features we are using to make our predictions are stored as `X`.  We then feed these into the `train_test_split()` function.
 
@@ -136,7 +136,7 @@ Other parameters include: `stratify`, `test_size`, `train_size`, `random_state`,
 
 If the `y` values consists of binary data (for example, male/female), and 25% of those values are male, and 75% of those values are female, then setting the `stratify` parameter to `y` will ensure the test and train data have the same ratio of male to female as the entire data set.
 
-The specific `test_size` and `train_size` can also be set to override the default sizes.  The default for these parameters will select sizes that complement the data set.  The defaults can be overridden using either `int` of `float` values.  If the value set is `int`, then this will indicate a specific sample size you wish to include in the test or train set.  If the value set is `float` then it will indicate a percentage of the total dataset you wish to include in the test or train set.
+The specific `test_size` and `train_size` can also be set to override the default sizes.  The default for these parameters will select sizes that complement the data set.  The defaults can be overridden using either `int` or `float` values.  If the parameter is set to `int`, then this will indicate a specific sample size you wish to include in the test or train set.  If the parameter is set to `float` then it will indicate a percentage of the total dataset you wish to include in the test or train set.
 
 When using the `shuffle` parameter, the data is shuffled (randomized) prior to being divided into train and test sets.
 
@@ -154,7 +154,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify = y, shuffle 
 <summary>
 What is the difference between supervised learning and unsupervised learning?</summary>
 
-Supervised models learn from labeled data and unsupervised models do not.  A simple way to visualize this would be think of yourself in this class!  You are the model and you are learning based on inputs from the class that are labeled - the class lessons, the tech stack, the assignments.  This is supervised learning.  Now if you were not in the class, and were attempting to learn all this on your own by just walking into a FinTech firm and watching what is happening around you - that would be unsupervised learning.
+Supervised models learn from labeled data and unsupervised models do not.  A simple way to visualize this would be think of yourself in this class!  You are the model and you are learning based on inputs from the class that are labeled - the class lessons, the tech stack, the assignments, etc.  This is supervised learning.  Now if you were not in the class, and were attempting to learn all this on your own by just walking into a FinTech firm and watching what is happening around you - that would be unsupervised learning.
 
 Another example would be learning languages.  If you grew up in a location where Spanish was spoken fluently in your home, and you decided to then learn English by enrolling in a class, this would be supervised learning.  The class is structured and you would learn from labeled inputs.  However if you grow up with English as your native tongue, you learned it by being immersed in the data around you from the time you were born.  This is an example of unsupervised learning.
 
@@ -170,11 +170,13 @@ When applying these terms to machine learning, where the values we are predictin
 <blockquote>
 <details>
 <summary>Terminology</summary>
-The True/False part of our terminology means that the test predicted either correctly (true) or incorrectly (false).  The Postiive/Negative part of the term means that the test was predicting the presence (positive) or abscense (negative) of something.
+The True/False part of our terminology means that the test predicted either correctly (true) or incorrectly (false).  The Postiive/Negative part of the term means that the test was predicting the presence (positive) or absence (negative) of something.
 </details>
 <details>
 <summary>True Positve</summary>
 I thought you were green and I was right!
+
+**OR**
 
 The model predicted this value as green and it is correct.
 </details>
@@ -182,11 +184,15 @@ The model predicted this value as green and it is correct.
 <summary>False Positive</summary>
 I thought you were green and I was wrong!
 
+**OR**
+
 The model predicted this value as green and it was incorrect.
 </details>
 <details>
 <summary>True Negative</summary>
 I thought you were not green and I was right!
+
+**OR**
 
 The model predicted this value was not green it was correct.
 
@@ -194,6 +200,8 @@ The model predicted this value was not green it was correct.
 <details>
 <summary>False Negative</summary>
 I thought you were not green and I was wrong!
+
+**OR**
 
 The model predicted this value was not green and it was incorrect.
 </details>
@@ -204,7 +212,7 @@ The model predicted this value was not green and it was incorrect.
 How are precision and accuracy different?</summary>
 
 
-Precision is a measure of how close elements are to each other.  Accuracy is a measure of how close items are to the target.
+Precision is a measure of how close elements are to each other.  Accuracy is a measure of how close items are to the target.  The following image helps to visualize this:
 <img src='Images/acc_prec.png' width = 650>
 </details>
 
@@ -215,13 +223,13 @@ How do you use a confusion matrix?</summary>
 <blockquote>
 <details>
 <summary>Layout</summary>
-The basic layout of a confusion matrix is the actual values are listed along the x axis, and predicted values are listed along on the y axis.
+The basic layout of a confusion matrix is the actual values are listed along an axis, and predicted values are listed along on the opposite axis.
 
 ![confusion1](Images/conf_matrix1.gif)
 </details>
 <details>
 <summary>Precision</summary>
-Precision is a measurement of how many positively predicted values were actually correct.  For example, if our model was predicting colors - blue, green and purple, precision would be the measurement of how many times time model predicted purple and the actual value was also purple.
+Precision is the measurement of how many positively predicted values were actually correct.  For example, if our model was predicting colors - blue, green and purple, precision would be the measurement of how many times the model predicted purple and the actual value was also purple.
 
 The formula for precision is TP / (TP + FP).
 
@@ -230,7 +238,7 @@ The formula for precision is TP / (TP + FP).
 
 <details>
 <summary>Recall</summary>
-Recall is a measurement of how many times a value was predict and was incorrect.  For example, if our model was predicting colors - blue, green and purple, recall would be the measurement of how many times green was predicted incorrectly.
+Recall is the measurement of how many times a value was predicted and was also incorrect.  For example, if our model was predicting colors - blue, green and purple, recall would be the measurement of how many times green was predicted incorrectly.
 
 The formula for recall is TP / (TP + FN).
 
@@ -242,7 +250,7 @@ The formula for recall is TP / (TP + FN).
 <summary>
 What is the point of using ensemble learning?</summary>
 
-Ensemble learning is a method were multiple models are combined into one powerful predictor.  In classification instances, the different models might make a final prediction by calculating which class had the most votes.  In regression instances,  the mean of all results is typically taken and then offered as the final prediction.
+Ensemble learning is a method where multiple models are combined into one powerful predictor.  In classification instances, the different models might make a final prediction by calculating which class had the most votes or predictions.  In regression instances,  the mean of all results is typically taken and then offered as the final prediction.
 </details>
 
 <details>
@@ -265,13 +273,13 @@ We can tell this data is imbalanced because one of the values is represented ove
 
 Its important to check for imbalanced data because models will show bias to the values that appear more commonly, causing them to be predicted more often than the less commonly appearing values.  This can cause issue with the accuracy of the model not only because the model fails to predict the minority classes correctly, but also because the skewed number of data points for the majority class will make the model **appear** more accurate when it is actually not.
 
-For example, using our color classes from before.  If train our model on 95 greens, 2 blues, and 3 purples, and it predicts green for each of them because of the bias, then the accuracy will be 95% even though it can't predict the other colors.  Were that model to be implemented on a new data set, with 50 blues, 45 purples, and 5 greens, then it would guess the greens correct but not the blues and purples, resulting in only a 5% accuracy using the same model.
+As an example, let's use our color classes from before.  If we train our model on 95 greens, 2 blues, and 3 purples, and it predicts green for each of them because of the bias, then the accuracy will be 95% - even though it can't predict the other colors.  Were that model to be implemented on a new data set, with 50 blues, 45 purples, and 5 greens, then it would guess the greens correct but not the blues and purples, resulting in only a 5% accuracy using the same model.
 </details>
 
 <details>
 <summary>
 How do I managed imabalanced data?</summary>
-Two methods for correcting imbalanced data are oversampling and undersampling.  There are imports available from the `imbalanced learn` library that make these two methods simple.
+Two methods for correcting imbalanced data are oversampling and undersampling.  There are imports available from the Imbalanced Learn (`imblearn`) library that make these two methods simple.
 
 <blockquote><details>
 <summary>Oversampling</summary>
@@ -287,7 +295,7 @@ ros = RandomOverSampler(random_state=1)
 X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
 
 ```
-SMOTE works by adding generated synthetic (fake) data in a way that closely mimicks the existing minority class until the majority and minority classes are proportional..
+SMOTE works by adding generated synthetic (fake) data in a way that closely mimicks the existing minority class until the majority and minority classes are proportional.
 
 To utilize `imblearn` for SMOTE, we call the code as follows:
 ```python
