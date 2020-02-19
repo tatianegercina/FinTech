@@ -247,13 +247,63 @@ Ensemble learning is a method were multiple models are combined into one powerfu
 
 <details>
 <summary>
-how do I know if my data is imbalanced?</summary>
+How do I know if my data is imbalanced and why should I care?</summary>
+An easy way to check for imbalanced data is to use the `Counter()` function.  Passing your data through this function will count how many of each unique variable exist in the data.
 
+The usage syntax is below:
+```python
+from collections import Counter
+Counter(y_train)
+```
+
+Example output is:
+```python
+Counter({0: 11832, 1: 462})
+```
+
+We can tell this data is imbalanced because one of the values is represented over 11,000 times and the other value is represented under 500 times.
+
+Its important to check for imbalanced data because models will show bias to the values that appear more commonly, causing them to be predicted more often than the less commonly appearing values.  This can cause issue with the accuracy of the model not only because the model fails to predict the minority classes correctly, but also because the skewed number of data points for the majority class will make the model **appear** more accurate when it is actually not.
+
+For example, using our color classes from before.  If train our model on 95 greens, 2 blues, and 3 purples, and it predicts green for each of them because of the bias, then the accuracy will be 95% even though it can't predict the other colors.  Were that model to be implemented on a new data set, with 50 blues, 45 purples, and 5 greens, then it would guess the greens correct but not the blues and purples, resulting in only a 5% accuracy using the same model.
 </details>
 
 <details>
 <summary>
 How do I managed imabalanced data?</summary>
+Two methods for correcting imbalanced data are oversampling and undersampling.  There are imports available from the `imbalanced learn` library that make these two methods simple.
+<details>
+<blockquote>
+<summary>Oversampling</summary>
+The oversampling method can be done with random oversampling or the Synthetic Minority Oversampling Technique (SMOTE).
+
+Random oversampling duplicates the existing minority class data until it is equally proportional to the majority class.
+
+To utilize `imblearn` for random oversampling, we call the code as follows:
+```python
+
+from imblearn.over_sampling import RandomOverSampler
+ros = RandomOverSampler(random_state=1)
+X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
+
+```
+SMOTE works by adding generated synthetic (fake) data in a way that closely mimicks the existing minority class until the majority and minority classes are proportional..
+
+To utilize `imblearn` for random oversample, we call the code as follows:
+```python
+
+from imblearn.over_sampling import SMOTE
+smote = SMOTE(random_state=1, ratio=1.0)
+X_resampled, y_resampled = smote.fit_resample(X_train, y_train)
+
+```
+
+</details>
+<details>
+<summary>Undersampling</summary>
+Undersampling is done by removing data from the majority class until the minority and majority are proportional.  This is only feasible if there is still enough data to effectively train the model after removal.
+</blockquote>
+</details>
 
 </details>
 
