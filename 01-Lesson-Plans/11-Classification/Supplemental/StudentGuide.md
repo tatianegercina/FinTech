@@ -275,7 +275,7 @@ Two methods for correcting imbalanced data are oversampling and undersampling.  
 
 <blockquote><details>
 <summary>Oversampling</summary>
-The oversampling method can be done with random oversampling or the Synthetic Minority Oversampling Technique (SMOTE).
+The oversampling method involves adding data to the minority class so that the two classes are equal.  Two methods for this are random oversampling or the Synthetic Minority Oversampling Technique (SMOTE).
 
 Random oversampling duplicates the existing minority class data until it is equally proportional to the majority class.
 
@@ -289,7 +289,7 @@ X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
 ```
 SMOTE works by adding generated synthetic (fake) data in a way that closely mimicks the existing minority class until the majority and minority classes are proportional..
 
-To utilize `imblearn` for random oversample, we call the code as follows:
+To utilize `imblearn` for SMOTE, we call the code as follows:
 ```python
 
 from imblearn.over_sampling import SMOTE
@@ -301,8 +301,27 @@ X_resampled, y_resampled = smote.fit_resample(X_train, y_train)
 </details>
 <details>
 <summary>Undersampling</summary>
-Undersampling is done by removing data from the majority class until the minority and majority are proportional.  This is only feasible if there is still enough data to effectively train the model after removal.
+Undersampling is done by removing data from the majority class until the minority and majority are proportional.  This is only feasible if there is still enough data to effectively train the model after removal.  Two methods for undersampling are random undersampling and cluster centroid undersampling.
 
+Random undersampling removes the existing majority class data until it is equally proportional to the minority class.
+
+To utilize `imblearn` for random undersampling, we call the code as follows:
+```python
+
+from imblearn.under_sampling import RandomUnderSampler
+ros = RandomUnderSampler(random_state=1)
+X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
+
+```
+Cluster centroid undersampling
+
+To utilize `imblearn` for cluster centroid undersampling, we call the code as follows:
+
+```python
+from imblearn.under_sampling import ClusterCentroids
+cc = ClusterCentroids(random_state=1)
+X_resampled, y_resampled = cc.fit_resample(X_train, y_train)
+```
 </details>
 </blockquote>
 </details>
