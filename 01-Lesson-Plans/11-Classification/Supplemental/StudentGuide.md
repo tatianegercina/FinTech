@@ -284,7 +284,8 @@ Two methods for correcting imbalanced data are oversampling and undersampling.  
 <blockquote><details>
 <summary>Oversampling</summary>
 The oversampling method involves adding data to the minority class so that the two classes are equal.  Two methods for this are random oversampling or the Synthetic Minority Oversampling Technique (SMOTE).
-
+<blockquote><details>
+<summary>Random Oversampling</summary>
 Random oversampling duplicates the existing minority class data until it is equally proportional to the majority class.
 
 To utilize `imblearn` for random oversampling, we call the code as follows:
@@ -295,6 +296,9 @@ ros = RandomOverSampler(random_state=1)
 X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
 
 ```
+</details>
+<details>
+<summary>SMOTE</summary>
 SMOTE works by adding generated synthetic (fake) data in a way that closely mimicks the existing minority class until the majority and minority classes are proportional.
 
 To utilize `imblearn` for SMOTE, we call the code as follows:
@@ -305,12 +309,14 @@ smote = SMOTE(random_state=1, ratio=1.0)
 X_resampled, y_resampled = smote.fit_resample(X_train, y_train)
 
 ```
-
+</details>
+</blockquote>
 </details>
 <details>
 <summary>Undersampling</summary>
 Undersampling is done by removing data from the majority class until the minority and majority are proportional.  This is only feasible if there is still enough data to effectively train the model after removal.  Two methods for undersampling are random undersampling and cluster centroid undersampling.
-
+<blockquote><details>
+<summary>Random Undersampling</summary>
 Random undersampling removes the existing majority class data until it is equally proportional to the minority class.
 
 To utilize `imblearn` for random undersampling, we call the code as follows:
@@ -321,6 +327,9 @@ ros = RandomUnderSampler(random_state=1)
 X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
 
 ```
+</details>
+<details>
+<summary>Cluster Centroid Undersampling</summary>
 Cluster centroid undersampling works by using Kmeans to cluster the majority data into a quanitity of clusters that is equal to the rows of minority data.  The method then takes the mean value (centroid) of each cluster to establish a new list of majority data that is now equal to the length of the list of minority data.  For example, if you have 10,000 rows of majority data and 300 rows of minority data, this method will make 300 clusters of majority data, and take their mean to establish 300 rows of new data that are respresentative of the majority class.
 
 To utilize `imblearn` for cluster centroid undersampling, we call the code as follows:
@@ -330,6 +339,8 @@ from imblearn.under_sampling import ClusterCentroids
 cc = ClusterCentroids(random_state=1)
 X_resampled, y_resampled = cc.fit_resample(X_train, y_train)
 ```
+</details>
+<blockquote>
 </details>
 </blockquote>
 </details>
