@@ -342,6 +342,25 @@ X_resampled, y_resampled = cc.fit_resample(X_train, y_train)
 </details>
 <blockquote>
 </details>
+<details>
+<summary>Combination Sampling</summary>
+Combination sampling takes from both sides.  Because oversampling can lead to noisy data, and undersampling is not always feasible due to dataset size, a combination strategy may be worthwhile.
+<blockquote>
+<details>
+<summary>SMOTEENN</summary>
+
+One method for combination sampling is SMOTEEN (Synthetic Minority Oversampling Technique Edited Nearest Neighbors).  This method initially oversamples using SMOTE, but then undersamples by removing outliers from the data using a variation of K-Nearest Neighbors to remove data points that are surrounded by the opposite class.
+
+The code utilize this method is:
+```python
+from imblearn.combine import SMOTEENN
+
+sm = SMOTEENN(random_state=1)
+X_resampled, y_resampled = sm.fit_resample(X_train, y_train)
+```
+</details>
+</blockquote>
+</details>
 </blockquote>
 </details>
 
