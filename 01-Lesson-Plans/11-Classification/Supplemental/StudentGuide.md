@@ -279,7 +279,11 @@ As an example, let's use our color classes from before.  If we train our model o
 <details>
 <summary>
 How do I managed imabalanced data?</summary>
-Two methods for correcting imbalanced data are oversampling and undersampling.  There are imports available from the Imbalanced Learn (`imblearn`) library that make these two methods simple.
+The methods for correcting imbalanced data are oversampling, undersampling and combination sampling.  With oversampling we increase the amount of data in the minority class.  With undersampling we decrease the amount of data in the majority class:
+
+![sampling](Images/sampling.gif)
+
+There are imports available from the Imbalanced Learn (`imblearn`) library that make these methods simple.
 
 <blockquote><details>
 <summary>Oversampling</summary>
