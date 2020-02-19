@@ -31,4 +31,4 @@ Now navigate to the folder containing the .sql file and run the following comman
 
 ![sql-file-CLI](Images/sql-file-CLI.png)
 
-### Sqlalchemy & Pandas DataFrames
+### SQLAlchemy & Pandas DataFrames
