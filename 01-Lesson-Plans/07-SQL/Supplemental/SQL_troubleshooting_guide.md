@@ -66,4 +66,7 @@ Finally, now that the connection to the PostgreSQL database has been established
   * replace: Drop the table before inserting new values.
   * append: Insert new values to the existing table.
   
+* `index`: Writes the DataFrame index as a column.
+* `dtype`: Specifies the datatype for columns in dictionary format.
+
 ![sqlalchemy-pandas-read-write](Images/sqlalchemy-pandas-read-write.png)
