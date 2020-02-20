@@ -61,6 +61,7 @@ Finally, now that the connection to the PostgreSQL database has been established
 * `name`: Name of the SQL table
 * `con`: The SQLAlchemy engine loaded with DB drivers
 * `if_exists`: How to behave if the table already exists.
+  
   * fail: Raise a ValueError.
   * replace: Drop the table before inserting new values.
   * append: Insert new values to the existing table.
