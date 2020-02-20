@@ -39,7 +39,21 @@ Though both use regression techniques, linear and logistic regressions are desig
 
 <details>
 <summary>What is the difference between continuous and categorical data?</summary>
+<blockquote>
+<details>
+<summary>Continuous data</summary>
 Continous data is quantitative data that can be any number with infinite possibilities.
+
+Examples of continuous data include:
+
+- House prices:  $152,500, $378,935, $598,214, $95,290, $1,293,488
+- Population: 10,573; 192,568; 1,024,692; 5,288; 25,049
+- Age: 5, 19, 98 56, 40
+- Grades: 95, 80, 99, 70, 65
+
+</details>
+<details>
+<summary>Categorical data</summary>
 Categorical data can be classified into specific groups.
 
 Examples of categorical data inclue:
@@ -49,7 +63,8 @@ Examples of categorical data inclue:
 - Good, Bad, Neutral
 - Snickers, Milky Way, Twix
 - Soccer, Hockey, Baseball, Basketball, Lacrosse
-
+</details>
+</blockquote>
 </details>
 
 <details>
