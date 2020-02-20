@@ -69,4 +69,8 @@ Finally, now that the connection to the PostgreSQL database has been established
 * `index`: Writes the DataFrame index as a column.
 * `dtype`: Specifies the datatype for columns in dictionary format.
 
-![sqlalchemy-pandas-read-write](Images/sqlalchemy-pandas-read-write.png)
+![sqlalchemy-pandas-write](Images/sqlalchemy-pandas-write.png)
+
+Lastly, in order to check if the data was properly inserted, the in-built Pandas `read_sql_query` DataFrame function can be used to query a database and read the results as a Pandas DataFrame.
+
+![sqlalchemy-pandas-read](Images/sqlalchemy-pandas-read.png)
