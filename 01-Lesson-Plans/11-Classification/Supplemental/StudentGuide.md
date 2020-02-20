@@ -276,7 +276,9 @@ We can tell this data is imbalanced because one of the values is represented ove
 
 Its important to check for imbalanced data because models will show bias to the values that appear more commonly, causing them to be predicted more often than the less commonly appearing values.  This can cause issue with the accuracy of the model not only because the model fails to predict the minority classes correctly, but also because the skewed number of data points for the majority class will make the model **appear** more accurate when it is actually not.
 
-As an example, let's use our color classes from before.  If we train our model on 95 greens, 2 blues, and 3 purples, and it predicts green for each of them because of the bias, then the accuracy will be 95% - even though it can't predict the other colors.  Were that model to be implemented on a new data set, with 50 blues, 45 purples, and 5 greens, then it would guess the greens correct but not the blues and purples, resulting in only a 5% accuracy using the same model.
+As an example, let's use our color classes from before.  If we train our model on 90 greens, 5 blues, and 5 purples, and it predicts green for each of them because of the bias.  In this case the the accuracy will look great at 90% - even though it can't predict the other colors.  Were that model to be implemented on a new data set, with 45 blues, 45 purples, and 10 greens, then it would guess the greens correct but not the blues and purples, resulting in only a 10% accuracy using the same model.
+
+<img src="Images/bad_accuracy.PNG" width=600>
 </details>
 
 <details>
