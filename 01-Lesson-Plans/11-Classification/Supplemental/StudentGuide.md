@@ -41,7 +41,7 @@ Though both use regression techniques, linear and logistic regressions are desig
 <summary>What is the difference between continuous and categorical data?</summary>
 <blockquote>
 <details>
-<summary>Continuous data</summary>
+<summary><strong>Continuous Data</strong></summary>
 Continous data is quantitative data that can be any number with infinite possibilities.
 
 Examples of continuous data include:
@@ -53,7 +53,7 @@ Examples of continuous data include:
 
 </details>
 <details>
-<summary>Categorical data</summary>
+<summary><strong>Categorical Data</strong></summary>
 Categorical data can be classified into specific groups.
 
 Examples of categorical data inclue:
@@ -87,7 +87,7 @@ Most categorical data is text based and must be converted to numerical so that c
 
 <blockquote>
 <details>
-<summary>Preprocessing Target Data</summary>
+<summary><strong>Preprocessing Target Data</strong></summary>
 
 Using the .`Labelencoder()` method from scikit-learn we can convert categorical data to numerical.  We begin with a simple DataFrame showing 6 countries:
 
@@ -109,7 +109,7 @@ Now you can see that the encoded values are numerical representations of the ori
 </details>
 
 <details>
-<summary>Preprocessing Feature Data</summary>
+<summary><strong>Preprocessing Feature Data</strong></summary>
 There are situations when using `.LabelEncoder()` is not appropriate.  If you are encoding target values, (the values you wish to predict), then using the label encoder is great, however if you are encoding feature values, this method can cause accidental bias in your model prediction.  This is because the numerical representations of the data will be interpreted as values by the model.  A category of 5 will be given more weight than a category of 1.  This is where the `.get_dummies()` pandas function used in Unit 10 comes into play.  The function works by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  In the below example we use the `.get_dummies()` to convert the same country data as before:
 
 ```python
@@ -118,7 +118,7 @@ encoded_data = pd.get_dummies(df.Country, columns='Country')
 ![country_df3](Images/country_df3.PNG)
 </details>
 <details>
-<summary>Scaling Feature Data</summary>
+<summary><strong>Scaling Feature Data</strong></summary>
 In our prevoius example, we converted feature data to binary to avoid introducing bias into the model.  For the same reason, we should scale data that has large numerical variance between features, so that all features are weighted the same.  For example, let's suppose that our country DataFrame also includes average number of children, average life expectancy, and average salary by country.  Average number of children is a very small number compared to average life expectancy, which is a very small number compared to average salary by country.  These values vary greatly and need to be scaled, because the higher numbers will automatically be read in with more weight bias
 
 ![country_df4](Images/country_df4.PNG)
@@ -184,11 +184,11 @@ When applying these terms to machine learning, where the values we are predictin
 
 <blockquote>
 <details>
-<summary>Terminology</summary>
+<summary><strong>Terminology</strong></summary>
 The True/False part of our terminology means that the test predicted either correctly (true) or incorrectly (false).  The Postiive/Negative part of the term means that the test was predicting the presence (positive) or absence (negative) of something.
 </details>
 <details>
-<summary>True Positve</summary>
+<summary><strong>True Positve</strong></summary>
 I thought you were green and I was right!
 
 **OR**
@@ -196,7 +196,7 @@ I thought you were green and I was right!
 The model predicted this value as green and it is correct.
 </details>
 <details>
-<summary>False Positive</summary>
+<summary><strong>False Positive</strong></summary>
 I thought you were green and I was wrong!
 
 **OR**
@@ -204,7 +204,7 @@ I thought you were green and I was wrong!
 The model predicted this value as green and it was incorrect.
 </details>
 <details>
-<summary>True Negative</summary>
+<summary><strong>True Negative</strong></summary>
 I thought you were not green and I was right!
 
 **OR**
@@ -213,7 +213,7 @@ The model predicted this value was not green it was correct.
 
 </details>
 <details>
-<summary>False Negative</summary>
+<summary><strong>False Negative</strong></summary>
 I thought you were not green and I was wrong!
 
 **OR**
@@ -237,13 +237,13 @@ How do you use a confusion matrix?</summary>
 
 <blockquote>
 <details>
-<summary>Layout</summary>
+<summary><strong>Layout</strong></summary>
 The basic layout of a confusion matrix is the actual values are listed along an axis, and predicted values are listed along on the opposite axis.
 
 ![confusion1](Images/conf_matrix1.gif)
 </details>
 <details>
-<summary>Precision</summary>
+<summary><strong>Precision</strong></summary>
 Precision is the measurement of how many positively predicted values were actually correct.  For example, if our model was predicting colors - blue, green and purple, precision would be the measurement of how many times the model predicted purple and the actual value was also purple.
 
 The formula for precision is TP / (TP + FP).
@@ -252,7 +252,7 @@ The formula for precision is TP / (TP + FP).
 </details>
 
 <details>
-<summary>Recall</summary>
+<summary><strong>Recall</strong></summary>
 Recall is the measurement of how many times a value was predicted and was also incorrect.  For example, if our model was predicting colors - blue, green and purple, recall would be the measurement of how many times green was predicted incorrectly.
 
 The formula for recall is TP / (TP + FN).
