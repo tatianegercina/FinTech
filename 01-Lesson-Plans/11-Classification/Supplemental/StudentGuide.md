@@ -7,13 +7,11 @@
 
   *  [Walkthrough](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) of a Model Using and Interpreting a Confusion Matrix
 
-
 * Machine Learning with Imbalanced Data
 
   * Imbalanced Learning Package [Documentation](https://imbalanced-learn.readthedocs.io/en/stable/index.html)
 
   * Another Applied [Walkthrough](https://towardsdatascience.com/a-deep-dive-into-imbalanced-data-over-sampling-f1167ed74b5) Using the imbalanced-learn Package
-
 
 
 ---
@@ -56,10 +54,10 @@ Examples of continuous data include:
 <summary><strong>Categorical Data</strong></summary>
 Categorical data can be classified into specific groups.
 
-Examples of categorical data inclue:
+Examples of categorical data include:
 - Male, Female
 - Yes, No
-- Positve, Negative
+- Positive, Negative
 - Good, Bad, Neutral
 - Snickers, Milky Way, Twix
 - Soccer, Hockey, Baseball, Basketball, Lacrosse
@@ -68,21 +66,18 @@ Examples of categorical data inclue:
 </details>
 
 <details>
-<summary>
-Why am I getting a value error for continuous data?</summary>
+<summary>Why am I getting a value error for continuous data?</summary>
 
 Are you running a Logistic Regression model and keep getting an error like the one below?
 
-![continuous_err](Images/continuous_err.PNG)
+![continuous err](Images/continuous_err.PNG)
 
 This error means you are giving non-categorical data to your Logistic Regression model.  Logistic Regression models use categorical data, and cannot compute continuous data.
 
 </details>
 
-
 <details>
-<summary>
- How do you preprocess data for classification?</summary>
+<summary>How do you preprocess data for classification?</summary>
 Most categorical data is text based and must be converted to numerical so that computations can be ran.  For example, if your categories are male and female, you could convert them to 0 and 1.  scikit-learn offers functions that can handle this conversion simply.  Two options are `.LabelEncoder()` and `OneHotEncoder()`.
 
 <blockquote>
@@ -132,7 +127,6 @@ data_scaled = data_scaler.transform(df)
 ```
 The new DataFrame shows the scaled data in place of the former values.  Now all the values are standardized:
 
-
 ![country_df5](Images/country_df5.PNG)
 
 </details>
@@ -140,8 +134,7 @@ The new DataFrame shows the scaled data in place of the former values.  Now all 
 </details>
 
 <details>
-<summary>
- How does `train_test_split()` work?</summary>
+<summary>How does `train_test_split()` work?</summary>
 
 The `train_test_split()` function makes splitting data for testing easy!  The function outputs four sets of data points - two sets each of target and feature data where one set is for training and one set is for testing.  This is why the variables that define the function are typically `X_train, X_test, y_train, y_test`.  The most important parameters of the function are the `X` and `y`.  During preprocessing we separate our data into the feature data, or `X`, and the target data - `y`.
 
@@ -166,8 +159,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify = y, shuffle 
 </details>
 
 <details>
-<summary>
-What is the difference between supervised learning and unsupervised learning?</summary>
+<summary>What is the difference between supervised learning and unsupervised learning?</summary>
 
 Supervised models learn from labeled data and unsupervised models do not.  A simple way to visualize this would be think of yourself in this class!  You are the model and you are learning based on inputs from the class that are labeled - the class lessons, the tech stack, the assignments, etc.  This is supervised learning.  Now if you were not in the class, and were attempting to learn all this on your own by just walking into a FinTech firm and watching what is happening around you - that would be unsupervised learning.
 
@@ -175,12 +167,10 @@ Another example would be learning languages.  If you grew up in a location where
 
 </details>
 <details>
-<summary>
-What is the difference between True/False Positives and True/False Negatives?</summary>
+<summary>What is the difference between True/False Positives and True/False Negatives?</summary>
 Keeping track of the differences between these four guys can be a mind bender.  It often makes more sense when thought of as a medical procedure.  For example let say you tested positive for flu, but you actually did not have it - this would be a False Positive.
 
 When applying these terms to machine learning, where the values we are predicting are usually more than just true or false, and are less applicable to our daily lives as is medical testing, their meaning can become abstract.  Here is a quick reference for keeping them straight.  In our example, the model is predicting whether a color will be blue, green or purple.
-
 
 <blockquote>
 <details>
@@ -188,7 +178,7 @@ When applying these terms to machine learning, where the values we are predictin
 The True/False part of our terminology means that the test predicted either correctly (true) or incorrectly (false).  The Postiive/Negative part of the term means that the test was predicting the presence (positive) or absence (negative) of something.
 </details>
 <details>
-<summary><strong>True Positve</strong></summary>
+<summary><strong>True Positive</strong></summary>
 I thought you were green and I was right!
 
 **OR**
@@ -223,17 +213,14 @@ The model predicted this value was not green and it was incorrect.
 </details>
 
 <details>
-<summary>
-How are precision and accuracy different?</summary>
-
+<summary>How are precision and accuracy different?</summary>
 
 Precision is a measure of how close elements are to each other.  Accuracy is a measure of how close items are to the target.  The following image helps to visualize this:
 <img src='Images/acc_prec.png' width = 650>
 </details>
 
 <details>
-<summary>
-How do you use a confusion matrix?</summary>
+<summary>How do you use a confusion matrix?</summary>
 
 <blockquote>
 <details>
@@ -262,15 +249,13 @@ The formula for recall is TP / (TP + FN).
 </details>
 
 <details>
-<summary>
-What is the point of using ensemble learning?</summary>
+<summary>What is the point of using ensemble learning?</summary>
 
 Ensemble learning is a method where multiple models are combined into one powerful predictor.  In classification instances, the different models might make a final prediction by calculating which class had the most votes or predictions.  In regression instances,  the mean of all results is typically taken and then offered as the final prediction.
 </details>
 
 <details>
-<summary>
-How do I know if my data is imbalanced and why should I care?</summary>
+<summary>How do I know if my data is imbalanced and why should I care?</summary>
 An easy way to check for imbalanced data is to use the `Counter()` function.  Passing your data through this function will count how many of each unique variable exist in the data.
 
 The usage syntax is below:
@@ -292,8 +277,7 @@ As an example, let's use our color classes from before.  If we train our model o
 </details>
 
 <details>
-<summary>
-How do I managed imabalanced data?</summary>
+<summary>How do I managed imbalanced data?</summary>
 The methods for correcting imbalanced data are oversampling, undersampling and combination sampling.  With oversampling we increase the amount of data in the minority class.  With undersampling we decrease the amount of data in the majority class:
 
 ![sampling](Images/sampling.gif)
