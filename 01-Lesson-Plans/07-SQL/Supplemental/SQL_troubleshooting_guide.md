@@ -48,7 +48,14 @@ In addition, the data residing within the CSV will need to be imported into a Pa
 
 Next, the connection to the PostgreSQL database will need to be established. In order to make the connection, a database URI or connection string should be provided.
 
-Database connection strings often consist of several parameters:
+Database connection strings often consist of the following parameters:
 
-`<connector>://<username>:<password>@<server>:<port>/<database>`
-`postgresql://postgres:postgres@localhost:5432/animals_db`
+* `<connector>://<username>:<password>@<server>:<port>/<database>`
+
+The database connection string in this case was the following:
+
+* `postgresql://postgres:postgres@localhost:5432/animals_db`
+
+Finally, the 
+
+![sqlalchemy-pandas-read-write](Images/sqlalchemy-pandas-read-write.png)
