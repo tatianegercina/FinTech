@@ -56,6 +56,13 @@ The database connection string in this case was the following:
 
 * `postgresql://postgres:postgres@localhost:5432/animals_db`
 
-Finally, the 
+Finally, now that the connection to the PostgreSQL database has been established, the `to_sql` function can be used to write DataFrame contents to the specified PostgreSQL table. The `to_sql` function uses the following parameters:
 
+* `name`: Name of the SQL table
+* `con`: The SQLAlchemy engine loaded with DB drivers
+* `if_exists`: How to behave if the table already exists.
+  * fail: Raise a ValueError.
+  * replace: Drop the table before inserting new values.
+  * append: Insert new values to the existing table.
+  
 ![sqlalchemy-pandas-read-write](Images/sqlalchemy-pandas-read-write.png)
