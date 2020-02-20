@@ -278,7 +278,7 @@ Its important to check for imbalanced data because models will show bias to the 
 
 As an example, let's use our color classes from before.  If we train our model on 90 greens, 5 blues, and 5 purples, and it predicts green for each of them because of the bias.  In this case the the accuracy will look great at 90% - even though it can't predict the other colors.  Were that model to be implemented on a new data set, with 45 blues, 45 purples, and 10 greens, then it would guess the greens correct but not the blues and purples, resulting in only a 10% accuracy using the same model.
 
-<img src="Images/bad_accuracy.PNG" width=600>
+<img src="Images/bad_accuracy.png" width=600>
 </details>
 
 <details>
