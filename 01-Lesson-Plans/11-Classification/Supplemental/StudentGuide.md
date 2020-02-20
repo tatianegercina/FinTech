@@ -301,10 +301,10 @@ The methods for correcting imbalanced data are oversampling, undersampling and c
 There are imports available from the Imbalanced Learn (`imblearn`) library that make these methods simple.
 
 <blockquote><details>
-<summary>Oversampling</summary>
+<summary><strong>Oversampling</strong></summary>
 The oversampling method involves adding data to the minority class so that the two classes are equal.  Two methods for this are random oversampling or the Synthetic Minority Oversampling Technique (SMOTE).
 <blockquote><details>
-<summary>Random Oversampling</summary>
+<summary><strong>Random Oversampling</strong></summary>
 Random oversampling duplicates the existing minority class data until it is equally proportional to the majority class.
 
 To utilize `imblearn` for random oversampling, we call the code as follows:
@@ -317,7 +317,7 @@ X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
 ```
 </details>
 <details>
-<summary>SMOTE</summary>
+<summary><strong>SMOTE</strong></summary>
 SMOTE works by adding generated synthetic (fake) data in a way that closely mimicks the existing minority class until the majority and minority classes are proportional.
 
 To utilize `imblearn` for SMOTE, we call the code as follows:
@@ -332,10 +332,10 @@ X_resampled, y_resampled = smote.fit_resample(X_train, y_train)
 </blockquote>
 </details>
 <details>
-<summary>Undersampling</summary>
+<summary><strong>Undersampling</strong></summary>
 Undersampling is done by removing data from the majority class until the minority and majority are proportional.  This is only feasible if there is still enough data to effectively train the model after removal.  Two methods for undersampling are random undersampling and cluster centroid undersampling.
 <blockquote><details>
-<summary>Random Undersampling</summary>
+<summary><strong>Random Undersampling</strong></summary>
 Random undersampling removes the existing majority class data until it is equally proportional to the minority class.
 
 To utilize `imblearn` for random undersampling, we call the code as follows:
@@ -348,7 +348,7 @@ X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
 ```
 </details>
 <details>
-<summary>Cluster Centroid Undersampling</summary>
+<summary><strong>Cluster Centroid Undersampling</strong></summary>
 Cluster centroid undersampling works by using Kmeans to cluster the majority data into a quanitity of clusters that is equal to the rows of minority data.  The method then takes the mean value (centroid) of each cluster to establish a new list of majority data that is now equal to the length of the list of minority data.  For example, if you have 10,000 rows of majority data and 300 rows of minority data, this method will make 300 clusters of majority data, and take their mean to establish 300 rows of new data that are respresentative of the majority class.
 
 To utilize `imblearn` for cluster centroid undersampling, we call the code as follows:
@@ -362,11 +362,11 @@ X_resampled, y_resampled = cc.fit_resample(X_train, y_train)
 <blockquote>
 </details>
 <details>
-<summary>Combination Sampling</summary>
+<summary><strong>Combination Sampling</strong></summary>
 Combination sampling takes from both sides.  Because oversampling can lead to noisy data, and undersampling is not always feasible due to dataset size, a combination strategy may be worthwhile.
 <blockquote>
 <details>
-<summary>SMOTEENN</summary>
+<summary><strong>SMOTEENN</strong></summary>
 
 One method for combination sampling is SMOTEEN (Synthetic Minority Oversampling Technique Edited Nearest Neighbors).  This method initially oversamples using SMOTE, but then undersamples by removing outliers from the data using a variation of K-Nearest Neighbors to remove data points that are surrounded by the opposite class.
 
