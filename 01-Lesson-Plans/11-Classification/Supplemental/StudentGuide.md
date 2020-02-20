@@ -78,17 +78,17 @@ This error means you are giving non-categorical data to your Logistic Regression
 
 <details>
 <summary>How do you preprocess data for classification?</summary>
-Most categorical data is text based and must be converted to numerical so that computations can be ran.  For example, if your categories are male and female, you could convert them to 0 and 1.  scikit-learn offers functions that can handle this conversion simply.  Two options are `.LabelEncoder()` and `OneHotEncoder()`.
+Most categorical data is text based and must be converted to numerical so that computations can be ran.  For example, if your categories are male and female, you could convert them to 0 and 1.  Scikit-learn offers functions that can handle this conversion simply.  Two options are `.LabelEncoder()` and `OneHotEncoder()`.
 
 <blockquote>
 <details>
 <summary><strong>Preprocessing Target Data</strong></summary>
 
-Using the .`Labelencoder()` method from scikit-learn we can convert categorical data to numerical.  We begin with a simple DataFrame showing 6 countries:
+Using the `.Labelencoder()` method from scikit-learn we can convert categorical data to numerical.  We begin with a simple DataFrame showing 6 countries:
 
 ![country_df1](Images/country_df1.PNG)
 
-Then we import `LabelEncoder` from sklearn.preprocessing, after which we instantiate the `.LabelEncoder()` object, run a `.fit()` then `.transform()`.  The results are stored in a new variable `encoded_y` and inserted into a new DataFrame.
+Then we import `LabelEncoder` from sklearn.preprocessing, after which we instantiate the `.LabelEncoder()` object, then run a `.fit()` followed by `.transform()`.  The results are stored in a new variable `encoded_y` and inserted into a new DataFrame.
 
 ```python
 from sklearn.preprocessing import LabelEncoder
@@ -105,7 +105,8 @@ Now you can see that the encoded values are numerical representations of the ori
 
 <details>
 <summary><strong>Preprocessing Feature Data</strong></summary>
-There are situations when using `.LabelEncoder()` is not appropriate.  If you are encoding target values, (the values you wish to predict), then using the label encoder is great, however if you are encoding feature values, this method can cause accidental bias in your model prediction.  This is because the numerical representations of the data will be interpreted as values by the model.  A category of 5 will be given more weight than a category of 1.  This is where the `.get_dummies()` pandas function used in Unit 10 comes into play.  The function works by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  In the below example we use the `.get_dummies()` to convert the same country data as before:
+
+There are situations when using `.Labelencoder()` is not appropriate.  If you are encoding target values, (the values you wish to predict), then using the label encoder is great, however if you are encoding feature values, this method can cause accidental bias in your model prediction.  This is because the numerical representations of the data will be interpreted as values by the model.  A category of 5 will be given more weight than a category of 1.  This is where the `.get_dummies()` pandas function used in Unit 10 comes into play.  The function works by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  In the below example we use `.get_dummies()` to convert the same country data as before:
 
 ```python
 encoded_data = pd.get_dummies(df.Country, columns='Country')
@@ -168,7 +169,7 @@ Another example would be learning languages.  If you grew up in a location where
 </details>
 <details>
 <summary>What is the difference between True/False Positives and True/False Negatives?</summary>
-Keeping track of the differences between these four guys can be a mind bender.  It often makes more sense when thought of as a medical procedure.  For example let say you tested positive for flu, but you actually did not have it - this would be a False Positive.
+Keeping track of the differences between these four guys can be a mind bender.  It often makes more sense when thought of as a medical testing.  For example let say you tested positive for flu, but you actually did not have it - this would be a False Positive.
 
 When applying these terms to machine learning, where the values we are predicting are usually more than just true or false, and are less applicable to our daily lives as is medical testing, their meaning can become abstract.  Here is a quick reference for keeping them straight.  In our example, the model is predicting whether a color will be blue, green or purple.
 
@@ -225,7 +226,7 @@ Precision is a measure of how close elements are to each other.  Accuracy is a m
 <blockquote>
 <details>
 <summary><strong>Layout</strong></summary>
-The basic layout of a confusion matrix is the actual values are listed along an axis, and predicted values are listed along on the opposite axis.
+The basic layout of a confusion matrix is the actual values are listed along an axis, and predicted values are listed along the opposite axis.
 
 ![confusion1](Images/conf_matrix1.gif)
 </details>
@@ -256,9 +257,11 @@ Ensemble learning is a method where multiple models are combined into one powerf
 
 <details>
 <summary>How do I know if my data is imbalanced and why should I care?</summary>
+
 An easy way to check for imbalanced data is to use the `Counter()` function.  Passing your data through this function will count how many of each unique variable exist in the data.
 
 The usage syntax is below:
+
 ```python
 from collections import Counter
 Counter(y_train)
@@ -286,12 +289,13 @@ There are imports available from the Imbalanced Learn (`imblearn`) library that 
 
 <blockquote><details>
 <summary><strong>Oversampling</strong></summary>
-The oversampling method involves adding data to the minority class so that the two classes are equal.  Two methods for this are random oversampling or the Synthetic Minority Oversampling Technique (SMOTE).
+The oversampling method involves adding data to the minority class so that the two classes are equal.  Two methods for this are random oversampling and Synthetic Minority Oversampling Technique (SMOTE).
 <blockquote><details>
 <summary><strong>Random Oversampling</strong></summary>
-Random oversampling duplicates the existing minority class data until it is equally proportional to the majority class.
+Random oversampling duplicates the existing minority class data randomly until it is equally proportional to the majority class.
 
 To utilize `imblearn` for random oversampling, we call the code as follows:
+
 ```python
 
 from imblearn.over_sampling import RandomOverSampler
@@ -305,6 +309,7 @@ X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
 SMOTE works by adding generated synthetic (fake) data in a way that closely mimicks the existing minority class until the majority and minority classes are proportional.
 
 To utilize `imblearn` for SMOTE, we call the code as follows:
+
 ```python
 
 from imblearn.over_sampling import SMOTE
@@ -323,6 +328,7 @@ Undersampling is done by removing data from the majority class until the minorit
 Random undersampling removes the existing majority class data until it is equally proportional to the minority class.
 
 To utilize `imblearn` for random undersampling, we call the code as follows:
+
 ```python
 
 from imblearn.under_sampling import RandomUnderSampler
@@ -354,7 +360,8 @@ Combination sampling takes from both sides.  Because oversampling can lead to no
 
 One method for combination sampling is SMOTEEN (Synthetic Minority Oversampling Technique Edited Nearest Neighbors).  This method initially oversamples using SMOTE, but then undersamples by removing outliers from the data using a variation of K-Nearest Neighbors to remove data points that are surrounded by the opposite class.
 
-The code utilize this method is:
+The code to utilize this method is:
+
 ```python
 from imblearn.combine import SMOTEENN
 
