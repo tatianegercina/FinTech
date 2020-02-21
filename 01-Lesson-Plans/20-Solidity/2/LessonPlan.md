@@ -245,13 +245,13 @@ Let's say you are a famous crypto trader and wanted to publish your latest buy o
 
 Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrade.sol`:
 
-* Type the following contract boilerplate:
+Type the following contract boilerplate:
 
  ```solidity
  contract LatestTrade {
- string coin = "BTC";
- uint price;
- bool is_buy_order;
+    string coin = "BTC";
+    uint price;
+    bool is_buy_order;
  }
  ```
 
@@ -261,25 +261,25 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
 
  * Lastly, we are going to define a boolean (true/false value) called `is_buy_order`. If the order is a buy order, we will set this to `true`. If it is a sell order, we will set it to `false`.
 
- * Now that we have defined our variables for our contract's values, we can create a function to set them.
-
-* Add a function called `updateTrade` to the contract:
+Add a function called `updateTrade` to the contract:
 
  ```solidity
  pragma solidity ^0.5.0;
 
- contract LatestTrade {
- string coin = "BTC";
- uint price;
- bool is_buy_order;
+contract LatestTrade {
+    string coin = "BTC";
+    uint price;
+    bool is_buy_order;
 
- function updateTrade(string memory newCoin, uint newPrice, bool is_buy) public {
- coin = newCoin;
- price = newPrice;
- is_buy_order = is_buy; /// is this a buy or a sell order?
- }
- }
- ```
+    function updateTrade(string memory newCoin, uint newPrice, bool is_buy) public {
+        coin = newCoin;
+        price = newPrice;
+        is_buy_order = is_buy; /// is this a buy or a sell order?
+    }
+}
+```
+
+ * Now that we have defined our variables for our contract's values, we can create a function to set them.
 
  * Remember, we have to specify the data type of the parameters as well. We can't get away with ambiguity here as we can in Python!
 
@@ -291,13 +291,15 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
 
  * Since we defined `string coin` at the top of the contract without specifying `memory`, any variable stored in `coin` is permanently written to the blockchain.
 
-* Now it's time to add a function to fetch all of these variables in one shot:
+Add a function to fetch all of the variables in one shot:
 
  ```solidity
  function getLatestTrade() public returns (string memory, uint, bool) {
- return (coin, price, is_buy_order);
+    return (coin, price, is_buy_order);
  }
  ```
+
+ * Now it's time to add a function to fetch all of the defined variables in one shot.
 
  * Notice that we add the `public` to the function definition, and we also need to specify the return types!
 
