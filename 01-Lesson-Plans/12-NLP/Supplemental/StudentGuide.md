@@ -25,9 +25,39 @@ Computer speak is very specific; its unambigous, literal, methodical and mathema
 </blockquote>
 </details>
 <details>
-<summary>What is the Difference between Tokenization and Lemmatization Why do I Need them?</summary>
+<summary>What is Tokenization and Why do I Need It?</summary>
+
+Probably the most basic level of NLP is breaking apart language into smaller chunks.  This could be breaking apart a sentence into words, an article into sentences or book into phrases. The process is called tokenization and it can be thought of as simply stripping down a string using a delimiter as you would in Python using `.split()`.
+
+<blockquote>
+<details><summary>Word Tokenization</summary>
+In the following example we'll use `.split()` and the a space delimiter to tokenize our sentence:
+
+![Mando](Images/Mando_split.PNG)
+
+This method can work fine in some instances, but NLP can become much trickier than breaking down a sentence on a single delimiter.  You might need to write code that breaks down an entire text into whole phrases on multiple multiple delimiters.  Because of this, we use the Natural Language ToolKit (NLTK) platform to perform our tokenizing.  NLTK provides libraries and tools that help with NLP tasks such as text processing.  Let's tokenize the same sentence using NLTK's tokenizer, `word_tokenizer()`:
+
+![Mando1](Images/Mando_tokens.PNG)
+
+This method allows us to separate the words also, but even includes the period at the end.  It is a more concise delivery of the intended outcome.
+</details>
+<details><summary>Sentence Tokenization</summary>
+In NLP words are not the only items tokenized.  In the following example we'll tokenize a short text into sentences.  First we use `.split()` and the a period delimiter:
+
+![Mando3](Images/Mando_sent_split.PNG)
+
+This works ok, but we can get more concise results using NLTK's `sent_tokenizer()`:
+
+![Mando4](Images/Mando_sent_tokens.PNG)
+
+</details>
 </details>
 
+<details>
+<summary>What is Lemmatization and Why do I Need It?</summary>
+
+
+</details>
 
 <details>
 <summary>What is a corpus?</summary>
