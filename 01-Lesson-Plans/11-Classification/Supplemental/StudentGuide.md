@@ -282,7 +282,7 @@ As an example, let's use our color classes from before.  If we train our model o
 </details>
 
 <details>
-<summary>How do I managed imbalanced data?</summary>
+<summary>How do I manage imbalanced data?</summary>
 The methods for correcting imbalanced data are oversampling, undersampling and combination sampling.  With oversampling we increase the amount of data in the minority class.  With undersampling we decrease the amount of data in the majority class:
 
 ![sampling](Images/sampling.gif)
