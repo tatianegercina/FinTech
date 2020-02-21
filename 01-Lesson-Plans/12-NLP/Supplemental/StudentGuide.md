@@ -70,8 +70,39 @@ Similarly you can call other languages.  For example, here we look at French sto
 </details>
 <details><summary>Usage:</summary>
 
+Once we have our stopwords we can remove them from our list of important using a for loop.  First we store our stopwords in a variable:
+
+```python
+sw = set(stopwords.words('english'))
+```
+We can then run a for loop with this list to remove the stopwords:
+
+![mando_stopwords](Images/Mando_sw.PNG)
+
 
 </details>
+<details><summary>Custom Stopwords:</summary>
+
+In certain cases we may have additional words we need to remove.  Let's suppose that the words `yoda` and `mandalorian` are not necessary for our NLP work and we wish to add them to our stopwords.  We can add these words to our stopwords list as follows:
+
+```python
+sw = set(stopwords.words('english'))
+updated_sw = sw.union({'yoda', 'mandalorian'})
+```
+We can then run a for loop with this new list to remove the stopwords which now include `yoda` and `mandolorian`.  As you can see in our output, this was successful:
+
+![mando_stopwords](Images/Mando_new_sw.PNG)
+
+
+
+
+</details>
+</details>
+
+<details>
+<summary>Is there a place I can find a simple guide to Regex?</summary>
+
+
 </details>
 
 <details>
