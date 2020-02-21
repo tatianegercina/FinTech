@@ -10,7 +10,15 @@ All the financial services provided by Borrowell are free of charge; after analy
 
 ## Why This Matters
 
+Credit scores are crucial for any person interested in getting a credit, a loan, or a mortgage; however most of credit scores, like Equifax, imply a fee or annual subscriptions. For a person, having a chance of getting a credit score for free, and even more financial advice, is a great advantage and a magnificent support to improve finances his financial life.
+
 ## Why This May be Interesting
+
+Using artificial intelligence and financial behavior data analysis, Borrowell is not only offering free credit score to Canadians, but also providing financial education.
+
+Thanks to usability and it website and mobile apps, Borrowell is contributing in closing the gap between financial companies looking for customers and people who sometimes is afraid of asking for a line of credit or a loan due to the complexity of the application process.
+
+According to the company, over a million Canadians have joined Borrowell and trust them to make great decisions about credit and achieve their financial goals.
 
 ## Things to Keep in Mind for a Case Study
 
