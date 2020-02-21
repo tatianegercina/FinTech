@@ -53,6 +53,27 @@ This works ok, but we can get more concise results using NLTK's `sent_tokenizer(
 </details>
 </details>
 
+
+<details>
+<summary>What are Stopwords?</summary>
+
+Stopwords are considered words that hold no relevance to the outcome.  In the English langugae words such like, _is_, _the_, and  _it_ are considered extraneous.  They are words that are used in proper grammar but they hold no bearing on the meaning of the sentence.  As part of preprocessing or cleaning data for NLP, its important to remove these words so that unnecessary bias doesn't weigh our model down.  NLTK has built in lists of stopwords in multiple language and provides methods for extracting these words simply.
+<blockquote>
+<details><summary>Examples of Stopwords:</summary>
+We can view the built in list of English stopwords like this:
+
+![stopwords_english](Images/stopwords_english.PNG)
+
+Similarly you can call other languages.  For example, here we look at French stopwords:
+
+![stopwords_french](Images/stopwords_french.PNG)
+</details>
+<details><summary>Usage:</summary>
+
+
+</details>
+</details>
+
 <details>
 <summary>What is Lemmatization and Why do I Need It?</summary>
 
