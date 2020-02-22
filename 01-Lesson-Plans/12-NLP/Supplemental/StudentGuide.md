@@ -144,7 +144,14 @@ You can see in the following image, that compared to the original output, the ne
 
 <img src = 'Images/lemmatize_baby_Yoda.png' width = 400>
 
+A more concise way to generate this new list is with a list comprehension.  The results are the same:
 
+```python
+from nltk.stem import WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+
+result = [lemmatizer.lemmatize(word) for word in new_babyYoda]
+```
 </details>
 
 <details>
