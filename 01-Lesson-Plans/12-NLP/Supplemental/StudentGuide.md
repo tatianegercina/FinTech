@@ -89,7 +89,7 @@ In certain cases we may have additional words we need to remove.  Let's suppose 
 sw = set(stopwords.words('english'))
 updated_sw = sw.union({'yoda', 'mandalorian'})
 ```
-We can then run a for loop with this new list to remove the stopwords which now include `yoda` and `mandolorian`.  As you can see in our output, this was successful:
+We can then run a for loop with this new list to remove the stopwords which now include `yoda` and `mandalorian`.  As you can see in our output, this was successful:
 
 ![mando_stopwords](Images/Mando_new_sw.PNG)
 
@@ -107,6 +107,42 @@ We can then run a for loop with this new list to remove the stopwords which now 
 
 <details>
 <summary>What is Lemmatization and Why do I Need It?</summary>
+Lemmatization is the process of removing the added elements of a word to bring it to its root.  NLTK provides in built functionality for this process. The default for this function is to convert plural nouns to singular, but verbs and adjectives can also be converted.  To use the function, we import the module and instantiate the object as follows:
+
+```python
+from nltk.stem import WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+```
+
+We can then call on the function.  `.lemmatize()` must be used on text that has already been tokenized, otherwise it will break apart your text into a list of single letters.  In the following example we will lemmatize the sentence:  *'Of all babies in the many worlds in all the galaxies that make our universe, baby yoda rules all hearts as cutest'*.  The tokenized form of this sentence is stored in the object `baby_Yoda` and is a list of words as follows:
+```python
+['babies',
+ 'many',
+ 'worlds',
+ 'galaxies',
+ 'make',
+ 'universe',
+ ',',
+ 'baby',
+ 'yoda',
+ 'rules',
+ 'hearts',
+ 'cutest']
+```
+To properly lemmatize the `baby_Yoda` object:
+
+```python
+from nltk.stem import WordNetLemmatizer
+lemmatizer = WordNetLemmatizer()
+
+result = []
+for word in baby_Yoda:
+    word = lemmatizer.lemmatize(word)
+    result.append(word)
+```
+You can see in the following image, that compared to the original output, the new output has converted all plural words to singular:
+
+<img src = 'Images/lemmatize_baby_Yoda.png' width = 400>
 
 
 </details>
