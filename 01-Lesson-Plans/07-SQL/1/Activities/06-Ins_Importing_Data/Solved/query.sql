@@ -9,5 +9,6 @@ CREATE TABLE bird_song (
 	longitude DEC
 );
 
+
 -- View table columns and datatypes
 SELECT * FROM bird_song;
