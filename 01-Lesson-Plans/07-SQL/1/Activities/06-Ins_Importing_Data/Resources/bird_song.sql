@@ -1,11 +1,4 @@
-CREATE TABLE IF NOT EXISTS birdsong (
-  english_name VARCHAR(255),
-  country VARCHAR(255),
-  latitude FLOAT,
-  longitude FLOAT
-);
-
-INSERT INTO birdsong VALUES
+INSERT INTO bird_song VALUES
 ('Common Redpoll','Poland',50.7932,15.4995),
 ('Common Redpoll','Poland',50.7932,15.4995),
 ('Common Redpoll','Netherlands',52.8176,6.4326),
