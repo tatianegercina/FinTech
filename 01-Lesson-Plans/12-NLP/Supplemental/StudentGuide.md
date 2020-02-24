@@ -14,7 +14,7 @@ Natural Language Processing (NLP) is the development of technology that works wi
 
 Examples include:
 - Spell Checker
-- Talk to Alexa, Siri or Googl Assistant.
+- Talk to Alexa, Siri or Google Assistant.
 - Voice to text on mobile devices
 </details>
 <details>
@@ -158,7 +158,56 @@ result = [lemmatizer.lemmatize(word) for word in new_babyYoda]
 <details>
 <summary>What are N-grams and why do I Need them?</summary>
 
-Ngrams are word groupings that are grouped by **N** number of words.  For example we tokenize our mandalorian sentence into bigrams like this:
+<blockquote>
+<details>
+<summary>What they are:</summary>
+Ngrams are word groupings that are grouped by **N** number of words.  For example, let's use our original mando sentence: *The mandalorian has rescued baby Yoda.* If we grouped this sentence into bigrams (groups of 2 words), the division would be:
+
+*The mandalorian*,
+*mandalorian has*,
+*has rescued*,
+*rescued baby*,
+*baby Yoda.*
+</details>
+<details>
+<summary>How to find them programmatically:</summary>
+To get the ngram count of a text using NLTK, we must first tokenize our text using `word_tokenizer`:
+
+Input:
+```python
+from nltk.tokenize import word_tokenize
+
+mando = 'The mandalorian has rescued baby Yoda.'
+mando = word_tokenize(mando)
+print(mando)
+```
+
+Output:
+```python
+['The', 'mandalorian', 'has', 'rescued', 'baby', 'Yoda', '.']
+```
+
+We can then use NLTK to work with ngrams as follows:
+
+Input:
+```python
+from nltk.util import ngrams
+from collections import Counter
+
+Counter(ngrams(mando, n=2))
+```
+Output:
+```python
+Counter({('The', 'mandalorian'): 1,
+         ('mandalorian', 'has'): 1,
+         ('has', 'rescued'): 1,
+         ('rescued', 'baby'): 1,
+         ('baby', 'Yoda'): 1,
+         ('Yoda', '.'): 1})
+```
+
+The output is a dictionary of values that hold our two word combinations and the number of times those two words appear together.
+</details>
 
 
 
