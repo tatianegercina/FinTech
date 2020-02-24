@@ -161,13 +161,18 @@ A corpus is a collection of writings, whether on a particular subject or by an a
 
 In NLP a corpus can be thought of as a dataset that is specific to NLP tasks.  Corpora are vital for NLP, because effective NLP requires large quantities of text based data that include as many words as possible.  The larger the corpus (dataset), the more likely low frequency words are to be included in the text.
 
-There are numerous well known corpora used in NLP, some are general for language based applications, and some are more specialized for task specific applications.
+There are numerous well known corpora used in NLP, some are general for language based applications, and some are more specialized for task specific applications.  For example, when working on sentiment analysis projects, you could use the IMDB Reviews or Yelp Reviews corpora.
+
+For more info on corpora, how they work in NLP and where you can find corpora to use in your own projects click [here](https://devopedia.org/text-corpus-for-nlp)
 
 </details>
 
 
 <details>
 <summary>What are N-grams and why do I Need them?</summary>
+
+
+
 </details>
 
 
