@@ -154,6 +154,17 @@ result = [lemmatizer.lemmatize(word) for word in new_babyYoda]
 ```
 </details>
 
+
+<details>
+<summary>What are N-grams and why do I Need them?</summary>
+
+Ngrams are word groupings that are grouped by **N** number of words.  For example we tokenize our mandalorian sentence into bigrams like this:
+
+
+
+</details>
+
+
 <details>
 <summary>What is a corpus?</summary>
 
@@ -166,15 +177,6 @@ There are numerous well known corpora used in NLP, some are general for language
 For more info on corpora, how they work in NLP and where you can find corpora to use in your own projects click [here](https://devopedia.org/text-corpus-for-nlp)
 
 </details>
-
-
-<details>
-<summary>What are N-grams and why do I Need them?</summary>
-
-
-
-</details>
-
 
 
 <details>
