@@ -208,8 +208,26 @@ Counter({('The', 'mandalorian'): 1,
 
 The output is a dictionary of values that hold our two word combinations and the number of times those two words appear together.
 </details>
+<details>
+<summary>Why they're important:</summary>
 
+Ngrams help computers to understand the context of language.  As humans, we can break apart a sentence quickly to grasp the meaning behind it.  For an example, let's use the following sentence: *We need to hammer out the details of trip*.  The bigrams for the sentence are:
 
+*We need*,
+*need to*,
+*to hammer*,
+*hammer out*,
+*out the*
+*the details*,
+*details of*,
+*of trip.*
+
+Using the words before and after other words, gives the computer a better understanding of context.  The word *hammer* in this instance is used as a verb, with relevant bigrams of *to hammer* and *hammer out*.  The words *to* and *out* giving context that the word in this instance is being used as a verb.
+
+If instead our setence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun.
+
+</details>
+</blockquote>
 
 </details>
 
