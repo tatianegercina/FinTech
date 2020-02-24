@@ -239,21 +239,24 @@ A corpus is a collection of writings, typically used in machine learning work in
 
 There are numerous well known corpora used in NLP, some are general for language based applications, and some are more specialized for task specific applications.  For example, when working on sentiment analysis projects, you could use the IMDB Reviews or Yelp Reviews corpora.
 
-For more info on corpora, how they work in NLP and where you can find corpora to use in your own projects click [here](https://devopedia.org/text-corpus-for-nlp)
+For more info on corpora, how they work in NLP and where you can find corpora to use in your own projects click [here.](https://devopedia.org/text-corpus-for-nlp)
 
 </details>
-
-
-<details>
-<summary>What is Sentiment?</summary>
-</details>
-
 
 
 <details>
 <summary>What is TF-IDF?</summary>
 </details>
+Term Frequency - Inverse Document Frequency, or TF-IDF for short, measures the relevance of a word in the document.  It is calculated by combining the Term Frequency (TF) and the Inverse Document Frequency (IDF) to get a weighted value.
 
+Term frequency (TF) is the count of the word in a document of the corpus.  Inverse document frequency (IDF) is the number of documents the word appears in throughout the corpus.  For example if the word *Yoda* appears 500 times in my 10,000 word document then the TF is high.  But if I have 10,000 documents and *Yoda* only appears in 10 of them, then there is low IDF.  In this example, the TF-IDF is calculated as follows:
+
+
+
+
+An increase in TF will make the TF-IDF score go higher, because the more often a word is counted, it can be considered to be more relevant.  An increase in IDF will make the TF-IDF score go lower, because the more often a word appears throughout all the documents, it is considered more common and irrevelant.
+
+The calculated value of TF-IDF is a number from 0 to 1.  When the score approaches 0, the word is considered more common.  When the score approaches 1, the word is consered more relevant.
 
 
 <details>
