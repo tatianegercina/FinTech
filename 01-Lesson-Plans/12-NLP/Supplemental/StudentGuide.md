@@ -235,9 +235,7 @@ If instead our setence were *I need the hammer*, then having the word *the* prec
 <details>
 <summary>What is a corpus?</summary>
 
-A corpus is a collection of writings, whether on a particular subject or by an author.  The corpus of J.K. Rowling's work would include the Harry Potter series, spin-offs like *Fantastic Beasts and Where to Find Them*, and those books written under a pen name such as *Cuckoo's Calling*.
-
-In NLP a corpus can be thought of as a dataset that is specific to NLP tasks.  Corpora are vital for NLP, because effective NLP requires large quantities of text based data that include as many words as possible.  The larger the corpus (dataset), the more likely low frequency words are to be included in the text.
+A corpus is a collection of writings, typically used in machine learning work involving NLP.  It can be thought of as a dataset that is specific to NLP tasks.  Corpora are vital for NLP, because effective NLP requires large quantities of text based data that include as many words as possible.  The larger the corpus (dataset), the more likely low frequency words are to be included in the text.
 
 There are numerous well known corpora used in NLP, some are general for language based applications, and some are more specialized for task specific applications.  For example, when working on sentiment analysis projects, you could use the IMDB Reviews or Yelp Reviews corpora.
 
@@ -259,20 +257,9 @@ For more info on corpora, how they work in NLP and where you can find corpora to
 
 
 <details>
-<summary>What are Stop Words and How do I use them?</summary>
-</details>
-
-
-
-<details>
 <summary>What is the differency between spaCy and NLTK?</summary>
 </details>
 
-
-
-<details>
-<summary>What are N-grams and why do I Need them?</summary>
-</details>
 
 
 <details>
