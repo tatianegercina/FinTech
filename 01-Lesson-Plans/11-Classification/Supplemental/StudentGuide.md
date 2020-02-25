@@ -114,7 +114,7 @@ encoded_data = pd.get_dummies(df.Country, columns='Country')
 </details>
 <details>
 <summary><strong>Scaling Feature Data</strong></summary>
-In our prevoius example, we converted feature data to binary to avoid introducing bias into the model.  For the same reason, we should scale data that has large numerical variance between features, so that all features are weighted the same.  For example, let's suppose that our country DataFrame also includes average number of children, average life expectancy, and average salary by country.  Average number of children is a very small number compared to average life expectancy, which is a very small number compared to average salary by country.  These values vary greatly and need to be scaled, because the higher numbers may result in more weight bias.
+In our previous example, we converted feature data to binary to avoid introducing bias into the model.  For the same reason, we should scale data that has large numerical variance between features, so that all features are weighted the same.  For example, let's suppose that our country DataFrame also includes average number of children, average life expectancy, and average salary by country.  Average number of children is a very small number compared to average life expectancy, which is a very small number compared to average salary by country.  These values vary greatly and need to be scaled, because the higher numbers may result in more weight bias.
 
 ![country_df4](Images/country_df4.PNG)
 
@@ -173,6 +173,7 @@ An example of supervised learning would be to predict this year's final grades i
 Unsupervised learning models are given only input variables and must work to make connections to the data without predicting a labeled target.  These types of models are often clustering models that uncover connections in the data and group all the features into classes accordingly.
 
 An example of unsupervised learning would be to use website purchase data to group customers into two classes based on their spending habits.  This clustering might reveal that class 1 more spends more with a coupon incentive, while class 2 spends more with targeted advertising on social media.
+
 </details>
 </blockquote>
 </details>
