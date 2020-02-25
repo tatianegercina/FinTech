@@ -5,13 +5,13 @@
 
   *  Additional Confusion Matrix Code Examples over at [Scikit-learn Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
 
-  *  [Walkthrough](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html) of a Model Using and Interpreting a Confusion Matrix
+  *  [Walkthrough](https://www.kaggle.com/diegosch/classifier-evaluation-using-confusion-matrix) of a Model Using and Interpreting a Confusion Matrix
 
 * Machine Learning with Imbalanced Data
 
   * Imbalanced Learning Package [Documentation](https://imbalanced-learn.readthedocs.io/en/stable/index.html)
 
-  * Another Applied [Walkthrough](https://towardsdatascience.com/a-deep-dive-into-imbalanced-data-over-sampling-f1167ed74b5) Using the imbalanced-learn Package
+  * Another Applied [Walkthrough](https://www.kaggle.com/rafjaa/resampling-strategies-for-imbalanced-datasets) Using the imbalanced-learn Package
 
 
 ---
@@ -380,4 +380,4 @@ X_resampled, y_resampled = sm.fit_resample(X_train, y_train)
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
