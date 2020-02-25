@@ -153,7 +153,7 @@ When using this function the data is split randomly each time, however if the `r
 An example of implementing a `train_test_split()` instance is as follows:
 
 ```python
-X_train, X_test, y_train, y_test = train_test_split(X, y, stratify = y, shuffle = True)
+X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, shuffle=True)
 ```
 
 </details>
