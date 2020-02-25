@@ -88,7 +88,7 @@ Using `LabelEncoder()` from scikit-learn we can convert categorical data to nume
 
 ![country_df1](Images/country_df1.PNG)
 
-Then we import `LabelEncoder` from sklearn.preprocessing, after which we instantiate the `LabelEncoder()` object, then run a `.fit()` followed by `.transform()`.  The results are stored in a new variable `encoded_y` and inserted into a new DataFrame.
+Then we import `LabelEncoder` from sklearn.preprocessing, after which we instantiate the `LabelEncoder()` object, then run a `.fit()` followed by `.transform()`.  The results are stored in a new variable `encoded_y` and inserted into the DataFrame.
 
 ```python
 from sklearn.preprocessing import LabelEncoder
@@ -115,7 +115,7 @@ encoded_data = pd.get_dummies(df.Country, columns='Country')
 </details>
 <details>
 <summary><strong>Scaling Feature Data</strong></summary>
-In our prevoius example, we converted feature data to binary to avoid introducing bias into the model.  For the same reason, we should scale data that has large numerical variance between features, so that all features are weighted the same.  For example, let's suppose that our country DataFrame also includes average number of children, average life expectancy, and average salary by country.  Average number of children is a very small number compared to average life expectancy, which is a very small number compared to average salary by country.  These values vary greatly and need to be scaled, because the higher numbers will automatically be read in with more weight bias
+In our prevoius example, we converted feature data to binary to avoid introducing bias into the model.  For the same reason, we should scale data that has large numerical variance between features, so that all features are weighted the same.  For example, let's suppose that our country DataFrame also includes average number of children, average life expectancy, and average salary by country.  Average number of children is a very small number compared to average life expectancy, which is a very small number compared to average salary by country.  These values vary greatly and need to be scaled, because the higher numbers may result in more weight bias.
 
 ![country_df4](Images/country_df4.PNG)
 
@@ -169,14 +169,16 @@ Another example would be learning languages.  If you grew up in a location where
 </details>
 <details>
 <summary>What is the difference between True/False Positives and True/False Negatives?</summary>
-Keeping track of the differences between these four guys can be a mind bender.  It often makes more sense when thought of as a medical testing.  For example let say you tested positive for flu, but you actually did not have it - this would be a False Positive.
+Keeping track of the differences between these four can be a mind bender. It often makes more sense when thought of as a medical test.
+
+For example, let's say you tested positive for flu, but you actually did not have it - this would be a False Positive.
 
 When applying these terms to machine learning, where the values we are predicting are usually more than just true or false, and are less applicable to our daily lives as is medical testing, their meaning can become abstract.  Here is a quick reference for keeping them straight.  In our example, the model is predicting whether a color will be blue, green or purple.
 
 <blockquote>
 <details>
 <summary><strong>Terminology</strong></summary>
-The True/False part of our terminology means that the test predicted either correctly (true) or incorrectly (false).  The Postiive/Negative part of the term means that the test was predicting the presence (positive) or absence (negative) of something.
+The True/False part of our terminology means that the test predicted either correctly (true) or incorrectly (false).  The Postive/Negative part of the term means that the test was predicting the presence (positive) or absence (negative) of something.
 </details>
 <details>
 <summary><strong>True Positive</strong></summary>
