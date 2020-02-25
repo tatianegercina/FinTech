@@ -63,3 +63,8 @@ The third and final statement, the **cash flow statement** is used to understand
 ### Student Activity: Find a set of Financial Statements
 
 See instructions in [activity file](Activities/02-Stu_Find_a_Statement/README.md)
+
+
+---
+
+© 2020 Trilogy Education Services
