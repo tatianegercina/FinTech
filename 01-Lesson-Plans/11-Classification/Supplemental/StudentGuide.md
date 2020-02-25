@@ -160,11 +160,21 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, shuffle=Tr
 
 <details>
 <summary>What is the difference between supervised learning and unsupervised learning?</summary>
+<blockquote>
+<details>
+<summary>Supervised Learning</summary>
+Supervised machine learning uses labeled data with input variables (feature data) and output variables (target data) and uses the feature data to predict the target data.  The data is divided into training and testing sets.  The training set is used to teach (supervise!) the model so it learns how the input data is connected to the output data and can make predictions.  The testing data set is used to validate how well the model performs on data it has not seen before, by running the model on the testing feature data, and comparing it's predictions to the testing target data.
 
-Supervised models learn from labeled data and unsupervised models do not.  A simple way to visualize this would be think of yourself in this class!  You are the model and you are learning based on inputs from the class that are labeled - the class lessons, the tech stack, the assignments, etc.  This is supervised learning.  Now if you were not in the class, and were attempting to learn all this on your own by just walking into a FinTech firm and watching what is happening around you - that would be unsupervised learning.
+An example of supervised learning would be to predict this year's final grades in a class based on last years student study habit data as feature data, with their corresponding final grades as target data.  The model could be trained with the previous year's data, and then used to make predictions on this year's final grades using the study habit data from the new class.
 
-Another example would be learning languages.  If you grew up in a location where Spanish was spoken fluently in your home, and you decided to then learn English by enrolling in a class, this would be supervised learning.  The class is structured and you would learn from labeled inputs.  However if you grow up with English as your native tongue, you learned it by being immersed in the data around you from the time you were born.  This is an example of unsupervised learning.
+</details>
+<details>
+<summary>Unsupervised Learning</summary>
+Unsupervised learning models are given only input variables and must work to make connections to the data without predicting a labeled target.  These types of models are often clustering models that uncover connections in the data and group all the features into classes accordingly.
 
+An example of unsupervised learning would be to use website purchase data to group customers into two classes based on their spending habits.  This clustering might reveal that class 1 more spends more with a coupon incentive, while class 2 spends more with targeted advertising on social media.
+</details>
+</blockquote>
 </details>
 <details>
 <summary>What is the difference between True/False Positives and True/False Negatives?</summary>
