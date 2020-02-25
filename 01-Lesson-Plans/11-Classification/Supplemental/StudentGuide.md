@@ -78,17 +78,17 @@ This error means you are giving non-categorical data to your Logistic Regression
 
 <details>
 <summary>How do you preprocess data for classification?</summary>
-Most categorical data is text based and must be converted to numerical so that computations can be ran.  For example, if your categories are male and female, you could convert them to 0 and 1.  Scikit-learn offers functions that can handle this conversion simply.  Two options are `.LabelEncoder()` and `OneHotEncoder()`.
+Most categorical data is text based and must be converted to numerical so that computations can be ran.  For example, if your categories are male and female, you could convert them to 0 and 1.  Scikit-learn offers functions that can handle this conversion simply.  Two options are `LabelEncoder()` and `OneHotEncoder()`.
 
 <blockquote>
 <details>
 <summary><strong>Preprocessing Target Data</strong></summary>
 
-Using the `.Labelencoder()` method from scikit-learn we can convert categorical data to numerical.  We begin with a simple DataFrame showing 6 countries:
+Using `LabelEncoder()` from scikit-learn we can convert categorical data to numerical.  We begin with a simple DataFrame showing 6 countries:
 
 ![country_df1](Images/country_df1.PNG)
 
-Then we import `LabelEncoder` from sklearn.preprocessing, after which we instantiate the `.LabelEncoder()` object, then run a `.fit()` followed by `.transform()`.  The results are stored in a new variable `encoded_y` and inserted into a new DataFrame.
+Then we import `LabelEncoder` from sklearn.preprocessing, after which we instantiate the `LabelEncoder()` object, then run a `.fit()` followed by `.transform()`.  The results are stored in a new variable `encoded_y` and inserted into a new DataFrame.
 
 ```python
 from sklearn.preprocessing import LabelEncoder
@@ -106,7 +106,7 @@ Now you can see that the encoded values are numerical representations of the ori
 <details>
 <summary><strong>Preprocessing Feature Data</strong></summary>
 
-There are situations when using `.Labelencoder()` is not appropriate.  If you are encoding target values, (the values you wish to predict), then using the label encoder is great, however if you are encoding feature values, this method can cause accidental bias in your model prediction.  This is because the numerical representations of the data will be interpreted as values by the model.  A category of 5 will be given more weight than a category of 1.  This is where the `.get_dummies()` pandas function used in Unit 10 comes into play.  The function works by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  In the below example we use `.get_dummies()` to convert the same country data as before:
+There are situations when using `Labelencoder()` is not appropriate.  If you are encoding target values, (the values you wish to predict), then using the label encoder is great, however if you are encoding feature values, this method can cause accidental bias in your model prediction.  This is because the numerical representations of the data will be interpreted as values by the model.  A category of 5 will be given more weight than a category of 1.  This is where the `.get_dummies()` pandas function used in Unit 10 comes into play.  The function works by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  In the below example we use `.get_dummies()` to convert the same country data as before:
 
 ```python
 encoded_data = pd.get_dummies(df.Country, columns='Country')
