@@ -31,7 +31,7 @@
 <details>
 <summary>What is the difference between linear regression and logistic regression?</summary>
 
-Though both use regression techniques, linear and logistic regressions are designed for two different types of data.  If the values you are predicting are continuous then linear regression is the correct model.  If your values are categorical then logistic regression is the correct model.
+Though both use regression techniques, linear and logistic regressions are designed for two different types of data.  If the values you are predicting are continuous, then linear regression is the correct model.  If your values are categorical, then logistic regression is the correct model.
 </details>
 
 <details>
@@ -71,19 +71,19 @@ Are you running a Logistic Regression model and keep getting an error like the o
 
 ![continuous err](Images/continuous_err.PNG)
 
-This error means you are giving non-categorical data to your Logistic Regression model.  Logistic Regression models use categorical data, and cannot compute continuous data.
+This error means you are giving non-categorical data to your Logistic Regression model.  Logistic Regression models use categorical data and cannot compute continuous data.
 
 </details>
 
 <details>
 <summary>How do you preprocess data for classification?</summary>
-Most categorical data is text based and must be converted to numerical so that computations can be ran.  For example, if your categories are male and female, you could convert them to 0 and 1.  Scikit-learn offers functions that can handle this conversion simply.  Two options are `LabelEncoder()` and `OneHotEncoder()`.
+Most categorical data is text-based and must be converted to numerical so that computations can be ran.  For example, if your categories are male and female, you could convert them to 0 and 1.  Scikit-learn offers functions that can handle this conversion simply.  Two options are `LabelEncoder()` and `OneHotEncoder()`.
 
 <blockquote>
 <details>
 <summary><strong>Preprocessing Target Data</strong></summary>
 
-Using `LabelEncoder()` from scikit-learn we can convert categorical data to numerical.  We begin with a simple DataFrame showing 6 countries:
+Using `LabelEncoder()` from scikit-learn, we can convert categorical data to numerical.  We begin with a simple DataFrame showing 6 countries:
 
 ![country_df1](Images/country_df1.PNG)
 
@@ -105,7 +105,7 @@ Now you can see that the encoded values are numerical representations of the ori
 <details>
 <summary><strong>Preprocessing Feature Data</strong></summary>
 
-There are situations when using `Labelencoder()` is not appropriate.  If you are encoding target values, (the values you wish to predict), then using the label encoder is great, however if you are encoding feature values, this method can cause accidental bias in your model prediction.  This is because the numerical representations of the data will be interpreted as values by the model.  A category of 5 will be given more weight than a category of 1.  This is where the `.get_dummies()` pandas function used in Unit 10 comes into play.  The function works by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  In the below example we use `.get_dummies()` to convert the same country data as before:
+There are situations when using `Labelencoder()` is not appropriate.  If you are encoding target values (the values you wish to predict), then using the label encoder is great, however, if you are encoding feature values, this method can cause accidental bias in your model prediction.  This is because the numerical representations of the data will be interpreted as values by the model.  A category of 5 will be given more weight than a category of 1.  This is where the `.get_dummies()` pandas function used in Unit 10 comes into play.  The function works by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  In the below example we use `.get_dummies()` to convert the same country data as before:
 
 ```python
 encoded_data = pd.get_dummies(df.Country, columns='Country')
@@ -114,7 +114,7 @@ encoded_data = pd.get_dummies(df.Country, columns='Country')
 </details>
 <details>
 <summary><strong>Scaling Feature Data</strong></summary>
-In our previous example, we converted feature data to binary to avoid introducing bias into the model.  For the same reason, we should scale data that has large numerical variance between features, so that all features are weighted the same.  For example, let's suppose that our country DataFrame also includes average number of children, average life expectancy, and average salary by country.  Average number of children is a very small number compared to average life expectancy, which is a very small number compared to average salary by country.  These values vary greatly and need to be scaled, because the higher numbers may result in more weight bias.
+In our previous example, we converted feature data to binary to avoid introducing bias into the model.  For the same reason, we should scale data that have large numerical variance between features, so that all features are weighted the same.  For example, let's suppose that our country DataFrame also includes an average number of children, average life expectancy, and average salary by country.  The average number of children is a very small number compared to average life expectancy, which is a very small number compared to the average salary by country.  These values vary greatly and need to be scaled, because the higher numbers may result in more weight bias.
 
 ![country_df4](Images/country_df4.PNG)
 
@@ -136,7 +136,7 @@ The new DataFrame shows the scaled data in place of the former values.  Now all 
 <details>
 <summary>How does `train_test_split()` work?</summary>
 
-The `train_test_split()` function makes splitting data for testing easy!  The function outputs four sets of data points - two sets each of target and feature data where one set is for training and one set is for testing.  This is why the variables that define the function are typically `X_train, X_test, y_train, y_test`.  The most important parameters of the function are the `X` and `y`.  During preprocessing we separate our data into the feature data, or `X`, and the target data - `y`.
+The `train_test_split()` function makes splitting data for testing easy!  The function outputs four sets of data points - two sets each of target and feature data where one set is for training, and one set is for testing.  This is why the variables that define the function are typically `X_train, X_test, y_train, y_test`.  The most important parameters of the function are the `X` and `y`.  During preprocessing, we separate our data into the feature data, or `X`, and the target data - `y`.
 
 The `y` data are the values we wish to predict, and the `X` data are the values we use to influence our predictions.  If our data is stored in a DataFrame, we just break it out and store it in variables.  The values we wish to predict are stored as `y` and the features we are using to make our predictions are stored as `X`.  We then feed these into the `train_test_split()` function.
 
@@ -148,7 +148,7 @@ The specific `test_size` and `train_size` can also be set to override the defaul
 
 When using the `shuffle` parameter, the data is shuffled (randomized) prior to being divided into train and test sets.
 
-When using this function the data is split randomly each time, however if the `random_state` parameter is set, the same random split will be selected each time.  To use this paramenter, any number can be used as the `random_state` as long as it is used each time you run the model.  Using this parameter will always ensure the same split is obtained even if `shuffle` is set to `True`.
+When using this function, the data is split each time randomly; however, if the `random_state` parameter is set, the same random split will be selected each time.  To use this parameter, any number can be used as the `random_state` as long as it is used each time you run the model.  Using this parameter will always ensure the same split is obtained even if `shuffle` is set to `True`.
 
 An example of implementing a `train_test_split()` instance is as follows:
 
@@ -165,25 +165,25 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, shuffle=Tr
 <summary>Supervised Learning</summary>
 Supervised machine learning uses labeled data with input variables (feature data) and output variables (target data) and uses the feature data to predict the target data.  The data is divided into training and testing sets.  The training set is used to teach (supervise!) the model so it learns how the input data is connected to the output data and can make predictions.  The testing data set is used to validate how well the model performs on data it has not seen before, by running the model on the testing feature data, and comparing it's predictions to the testing target data.<br>
 <br>
-An example of supervised learning would be to predict this year's final grades in a class based on last years student study habit data as feature data, with their corresponding final grades as target data.  The model could be trained with the previous year's data, and then used to make predictions on this year's final grades using the study habit data from the new class.
+An example of supervised learning would be to predict this year's final grades in a class based on last year's student study habit data as feature data, with their corresponding final grades as target data.  The model could be trained with the previous year's data, and then used to make predictions on this year's final grades using the study habit data from the new class.
 
 </details>
 <details>
 <summary>Unsupervised Learning</summary>
 Unsupervised learning models are given only input variables and must work to make connections to the data without predicting a labeled target.  These types of models are often clustering models that uncover connections in the data and group all the features into classes accordingly.<br>
 <br>
-An example of unsupervised learning would be to use website purchase data to group customers into two classes based on their spending habits.  This clustering might reveal that class 1 more spends more with a coupon incentive, while class 2 spends more with targeted advertising on social media.
+An example of unsupervised learning would be to use website purchase data to group customers into two classes based on their spending habits.  This clustering might reveal that class 1 more spends more with a coupon incentive, while class 2 spends more on targeted advertising on social media.
 
 </details>
 </blockquote>
 </details>
 <details>
 <summary>What is the difference between True/False Positives and True/False Negatives?</summary>
-Keeping track of the differences between these four can be a mind bender. It often makes more sense when thought of as a medical test.<br>
+Keeping track of the differences between these four can be a mind-bender. It often makes more sense when thought of as a medical test.<br>
 <br>
-For example, let's say you tested positive for flu, but you actually did not have it - this would be a False Positive.<br>
+For example, let's say you tested positive for flu, but you did not have it - this would be a False Positive.<br>
 <br>
-When applying these terms to machine learning, where the values we are predicting are usually more than just true or false, and are less applicable to our daily lives as is medical testing, their meaning can become abstract.  Here is a quick reference for keeping them straight.  In our example, the model is predicting whether a color will be blue, green or purple.
+When applying these terms to machine learning, where the values we are predicting are usually more than just true or false and are less applicable to our daily lives as is medical testing, their meaning can become abstract.  Here is a quick reference for keeping them straight.  In our example, the model is predicting whether a color will be blue, green, or purple.
 
 <blockquote>
 <details>
@@ -212,7 +212,7 @@ I thought you were not green and I was right!
 
 **OR**
 
-The model predicted this value was not green it was correct.
+The model predicted this value was not green; it was correct.
 
 </details>
 <details>
@@ -253,7 +253,7 @@ The formula for precision is TP / (TP + FP).
 
 <details>
 <summary><strong>Recall</strong></summary>
-Recall is the measurement of how many times a value was predicted and was also incorrect.  For example, if our model was predicting colors - blue, green and purple, recall would be the measurement of how many times green was predicted incorrectly.
+Recall is the measurement of how many times a value was predicted and was also incorrect.  For example, if our model was predicting colors - blue, green, and purple, recall would be the measurement of how many times green was predicted incorrectly.
 
 The formula for recall is TP / (TP + FN).
 
@@ -284,18 +284,18 @@ Example output is:
 Counter({0: 11832, 1: 462})
 ```
 
-We can tell this data is imbalanced because one of the values is represented over 11,000 times and the other value is represented under 500 times.
+We can tell this data is imbalanced because one of the values is represented over 11,000 times, and the other value is represented under 500 times.
 
-Its important to check for imbalanced data because models will show bias to the values that appear more commonly, causing them to be predicted more often than the less commonly appearing values.  This can cause issue with the accuracy of the model not only because the model fails to predict the minority classes correctly, but also because the skewed number of data points for the majority class will make the model **appear** more accurate when it is actually not.
+It's important to check for imbalanced data because models will show bias to the values that appear more commonly, causing them to be predicted more often than the less commonly appearing values.  This can cause issue with the accuracy of the model not only because the model fails to predict the minority classes correctly, but also because the skewed number of data points for the majority class will make the model **appear** more accurate when it is actually not.
 
-As an example, let's use our color classes from before.  If we train our model on 90 greens, 5 blues, and 5 purples, and it predicts green for each of them because of the bias.  In this case the the accuracy will look great at 90% - even though it can't predict the other colors.  Were that model to be implemented on a new data set, with 45 blues, 45 purples, and 10 greens, then it would guess the greens correct but not the blues and purples, resulting in only a 10% accuracy using the same model.
+As an example, let's use our color classes from before.  If we train our model on 90 greens, 5 blues, and 5 purples, and it predicts green for each of them because of the bias.  In this case, the accuracy will look great at 90% - even though it can't predict the other colors.  Were that model to be implemented on a new data set, with 45 blues, 45 purples, and 10 greens, then it would guess the greens correct but not the blues and purples, resulting in only a 10% accuracy using the same model.
 
 <img src="Images/bad_accuracy.png" width=600>
 </details>
 
 <details>
 <summary>How do I manage imbalanced data?</summary>
-The methods for correcting imbalanced data are oversampling, undersampling and combination sampling.  With oversampling we increase the amount of data in the minority class.  With undersampling we decrease the amount of data in the majority class:
+The methods for correcting imbalanced data are oversampling, undersampling, and combination sampling.  With oversampling, we increase the amount of data in the minority class.  With undersampling, we decrease the amount of data in the majority class:
 
 ![sampling](Images/sampling.gif)
 
@@ -353,7 +353,7 @@ X_resampled, y_resampled = ros.fit_resample(X_train, y_train)
 </details>
 <details>
 <summary><strong>Cluster Centroid Undersampling</strong></summary>
-Cluster centroid undersampling works by using Kmeans to cluster the majority data into a quanitity of clusters that is equal to the rows of minority data.  The method then takes the mean value (centroid) of each cluster to establish a new list of majority data that is now equal to the length of the list of minority data.  For example, if you have 10,000 rows of majority data and 300 rows of minority data, this method will make 300 clusters of majority data, and take their mean to establish 300 rows of new data that are respresentative of the majority class.
+Cluster centroid undersampling works by using Kmeans to cluster the majority data into a quantity of clusters that is equal to the rows of minority data.  The method then takes the mean value (centroid) of each cluster to establish a new list of majority data that is now equal to the length of the list of minority data.  For example, if you have 10,000 rows of majority data and 300 rows of minority data, this method will make 300 clusters of majority data, and take their mean to establish 300 rows of new data that are respresentative of the majority class.
 
 To utilize `imblearn` for cluster centroid undersampling, we call the code as follows:
 
@@ -372,7 +372,7 @@ Combination sampling takes from both sides.  Because oversampling can lead to no
 <details>
 <summary><strong>SMOTEENN</strong></summary>
 
-One method for combination sampling is SMOTEEN (Synthetic Minority Oversampling Technique Edited Nearest Neighbors).  This method initially oversamples using SMOTE, but then undersamples by removing outliers from the data using a variation of K-Nearest Neighbors to remove data points that are surrounded by the opposite class.
+One method for combination sampling is SMOTEEN (Synthetic Minority Oversampling Technique Edited Nearest Neighbors).  This method initially oversamples using SMOTE but then undersamples by removing outliers from the data using a variation of K-Nearest Neighbors to remove data points that are surrounded by the opposite class.
 
 The code to utilize this method is:
 
