@@ -258,14 +258,22 @@ For example if the word *Yoda* appears 500 times in my 10,000 word document then
 
 <details>
 <summary>What is the difference between NLTK and spaCy?</summary>
-</details>
+
 The primary difference between NLTK and spaCy is that NLTK uses a rule-based approach and spaCy uses a statistical-based approach.
 
 With a rule-based approach, the model deterministically draws conclusions from the text using the rules of the selected language.  With a statistical approach, machine learning is used to make predictions about the text data.
 
 As an example, let's use sentiment analysis and the statement, "This restaurant was an excellent place to eat dry rice".  A rule-based approach might incorrectly translate the statement into positive sentiment because as a general rule of thumb, the word excellent reflects a positive sentiment.  However, given enough data that shows similar contexts, a statistical-based approach might pick up on the sarcasm, detecting the negative sentiment that is actually intended.
 
-
+</details>
 <details>
 <summary>What is the difference between POS Tagging and Dependency Parsing?</summary>
+
+Part of Speech Tagging (POS Tagging) is the process of labeling each word or token in a sentence as its part of speech (noun, verb, adjective), while  Dependency parsing takes those words and determines the relationships between each.  Dependency Parsing is the step that comes after POS tagging.
+
+If we were to POS tag and depedency parse the following sentence:
+`'The mandalorian has saved baby Yoda'`, the results would be like:
+<img src='Images/mando_dependencies.PNG' width = 900>
+
+
 </details>
