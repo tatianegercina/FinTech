@@ -164,14 +164,14 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, shuffle=Tr
 <details>
 <summary>Supervised Learning</summary>
 Supervised machine learning uses labeled data with input variables (feature data) and output variables (target data) and uses the feature data to predict the target data.  The data is divided into training and testing sets.  The training set is used to teach (supervise!) the model so it learns how the input data is connected to the output data and can make predictions.  The testing data set is used to validate how well the model performs on data it has not seen before, by running the model on the testing feature data, and comparing it's predictions to the testing target data.<br>
-
+<br>
 An example of supervised learning would be to predict this year's final grades in a class based on last years student study habit data as feature data, with their corresponding final grades as target data.  The model could be trained with the previous year's data, and then used to make predictions on this year's final grades using the study habit data from the new class.
 
 </details>
 <details>
 <summary>Unsupervised Learning</summary>
 Unsupervised learning models are given only input variables and must work to make connections to the data without predicting a labeled target.  These types of models are often clustering models that uncover connections in the data and group all the features into classes accordingly.<br>
-
+<br>
 An example of unsupervised learning would be to use website purchase data to group customers into two classes based on their spending habits.  This clustering might reveal that class 1 more spends more with a coupon incentive, while class 2 spends more with targeted advertising on social media.
 
 </details>
@@ -180,9 +180,9 @@ An example of unsupervised learning would be to use website purchase data to gro
 <details>
 <summary>What is the difference between True/False Positives and True/False Negatives?</summary>
 Keeping track of the differences between these four can be a mind bender. It often makes more sense when thought of as a medical test.<br>
-
+<br>
 For example, let's say you tested positive for flu, but you actually did not have it - this would be a False Positive.<br>
-
+<br>
 When applying these terms to machine learning, where the values we are predicting are usually more than just true or false, and are less applicable to our daily lives as is medical testing, their meaning can become abstract.  Here is a quick reference for keeping them straight.  In our example, the model is predicting whether a color will be blue, green or purple.
 
 <blockquote>
