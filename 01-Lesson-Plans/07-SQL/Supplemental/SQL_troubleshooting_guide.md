@@ -8,7 +8,7 @@ In the event of an error when using pgAdmin's data import tool, the database tab
 
 ### Execute .sql file via pgAdmin Query Editor
 
-Throughout the activities, CSV data files have been purposely accompanied by data equivalent .sql files that contain `INSERT` statements to populate a table with specified `VALUE` records. This allows a user to copy and paste the contents of the .sql file and run it through the pgAdmin query editor, effectively performing a manual insert of records to the specified postgreSQL table.
+Each activity will contain schema.sql files that can be used to create the database tables. The table can then be populated using pgAdmin's data import tool and the CSV files provided. If the data import tool fails, a seed.sql file is also provided that will manually insert the data into the tables. Please run the seed.sql file after the schema.sql file to ensure that the table is properly configured before data is inserted.
 
 ![sql-file-manual-insert](Images/sql-file-manual-insert.png)
 
