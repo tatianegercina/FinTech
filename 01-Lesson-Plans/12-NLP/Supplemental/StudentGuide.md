@@ -246,7 +246,7 @@ For more info on corpora, how they work in NLP and where you can find corpora to
 
 <details>
 <summary>What is TF-IDF?</summary>
-</details>
+
 Term Frequency - Inverse Document Frequency, or TF-IDF for short, measures the relevance of a word in the document.  It is calculated by combining the Term Frequency (TF) and the Inverse Document Frequency (IDF) to get a weighted value.
 
 Term frequency (TF) is the count of the word in a document of the corpus.  Inverse document frequency (IDF) is the number of documents the word appears in throughout the corpus.  An increase in TF will make the TF-IDF score go higher, because the more often a word is counted, it can be considered to be more relevant.  An increase in IDF will make the TF-IDF score go lower, because the more often a word appears throughout all the documents, it is considered more common and irrevelant.
@@ -254,12 +254,16 @@ Term frequency (TF) is the count of the word in a document of the corpus.  Inver
 The calculated value of TF-IDF is a number from 0 to 1.  When the score approaches 0, the word is considered more common.  When the score approaches 1, the word is consered more relevant.
 
 For example if the word *Yoda* appears 500 times in my 10,000 word document then the TF is high:  `500 / 10,000 = 0.05`.  But if I have 10,000 documents and *Yoda* only appears in 10 of them, then there is low IDF: `LOG(10,000 / 10) = 3`  In this example, the TF-IDF is: `0.05 / 3 = 0.0167`.  This is most certainly a number approaching 0, and would imply a relevant, or unique word - and we know that it is in this example, because *Yoda* appears frequently throughout my document, but not frequently throughout my set of documents.
-
-
-<details>
-<summary>What is the differency between spaCy and NLTK?</summary>
 </details>
 
+<details>
+<summary>What is the difference between NLTK and spaCy?</summary>
+</details>
+The primary difference between NLTK and spaCy is that NLTK uses a rule-based approach and spaCy uses a statistical-based approach.
+
+With a rule-based approach, the model deterministically draws conclusions from the text using the rules of the selected language.  With a statistical approach, machine learning is used to make predictions about the text data.
+
+As an example, let's use sentiment analysis and the statement, "This restaurant was an excellent place to eat dry rice".  A rule-based approach might incorrectly translate the statement into positive sentiment because as a general rule of thumb, the word excellent reflects a positive sentiment.  However, given enough data that shows similar contexts, a statistical-based approach might pick up on the sarcasm, detecting the negative sentiment that is actually intended.
 
 
 <details>
