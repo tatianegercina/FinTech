@@ -8,7 +8,7 @@ Coinsquare is a digital currency trading platform that allows users in Canada to
 
 According to a survey conducted by Payments Canada and Corbin Partners Inc in 2018, consumers in Canada are optimistic on expected usage of crypto currency, specially Bitcoin, for the foreseeable future. However, there is a gap between initial consumer perceptions about the safety of using crypto.
 
-There are several trading platforms where people can trade digital currency, nevertheless trading your money in a platform that is in another country could feels risky. Coinsquare is a trading platform based in Toronto that is focused on the Canadian market, it's compliant with Canadian regulations and
+There are several trading platforms where people can trade digital currency, nevertheless trading your money in a platform that is in another country could feels risky. Coinsquare is a trading platform based in Toronto that is focused on the Canadian market, it's compliant with Canadian regulations and it's aimed to close the safety and complexity gap perceived specially by people that is starting trading or investing in crypto.
 
 ## Why This May be Interesting
 
