@@ -4,7 +4,7 @@ This troubleshooting guide contains common issues and fixes pertaining to the us
 
 ## Unable to Import/Export CSV via pgAdmin
 
-Issues sometimes arise when using the built-in data import/export tool provided by pgAdmin, either due to slow read/write performance or complete operational failure. Thankfully, in the case of such events there are several alternative methods for importing data to your desired postgreSQL database and corresponding tables.
+In the event of an error when using pgAdmin's data import tool, the database tables can be created and populated using the provided .sql files. The following details two methods for manually creating and populating the tables.
 
 ### Execute .sql file via pgAdmin Query Editor
 
