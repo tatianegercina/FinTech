@@ -340,7 +340,7 @@ The remainder of today's class is intended to review any topics, activities, or 
 
 ---
 
-### 15. Instructor Do: Structured Review (35 min)
+### 14. Instructor Do: Structured Review (35 min)
 
 Note: If you are teaching this lesson on a weeknight, save this 35 minute review for the next Saturday class.
 
