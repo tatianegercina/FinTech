@@ -14,7 +14,7 @@ nbdiff - Checks to see if the code in the Unsolved notebooks matches the code in
 
 ```shell
 cd utils/jupyter_linters
-pip install -e .
+pip install .
 ```
 
 ![Install](Images/install.gif)
