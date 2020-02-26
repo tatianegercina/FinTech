@@ -37,7 +37,7 @@ Data can also be written from a Pandas DataFrame directly to a PostgreSQL table 
 
 In order to import the `sqlalchemy` and `psycopg2` libraries, they will first need to be installed into the Anaconda environment.
 
-* `conda install -c psycopg2`
+* `conda install -c anaconda psycopg2`
 
 ![sqlalchemy-psycopg2-import](Images/sqlalchemy-psycopg2-import.png)
 
