@@ -97,3 +97,7 @@ nbspell path/to/notebooks
 ```shell
 nbdiff path/to/Activities
 ```
+
+```shell
+lintpandas path/to/notebooks
+```
