@@ -24,7 +24,7 @@ In order to access the postgreSQL CLI, you'll have to first set the `PATH` envir
 **Note:** At the time of this writing, PostgreSQL has been updated to version 12. Therefore, if your PostgreSQL version is still on 11, then you paths may be the following instead:
 
 * Mac OS: `/Library/PostgreSQL/11/bin`
-* Windows: `C://Program \Files/PostgreSQL/12/bin/`
+* Windows: `C://Program \Files/PostgreSQL/11/bin/`
 
 ![export-psql-path](Images/export-psql-path.png)
 
