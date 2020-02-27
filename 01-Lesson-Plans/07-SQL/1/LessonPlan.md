@@ -24,6 +24,8 @@ By the end of class, students will be able to:
 
 * **Important:** [Instructions](../Supplemental/InstallationGuides) for installing PostgreSQL and pgAdmin should have already been slacked-out prior to today's class, as students needed to install these before class to conserve time for lessons and activities rather than for initial setup.
 
+* If you experience any issues importing data as CSV files via pgAdmin, please refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md).
+
 * Today's class will be challenging. In this lesson, a series of activities will introduce students to programming with SQL using PostgreSQL and pgAdmin. The pace of today's class will be quick as students absorb learning a new UI and programming language simultaneously.
 
 * Because this lesson introduces more than one new concept, circulate through the class during student activities to assist those who appear frustrated or stuck. Some students may already have experience with SQL; embrace these students' knowledge of the language, and have them assist students who are not yet familiar with SQL.

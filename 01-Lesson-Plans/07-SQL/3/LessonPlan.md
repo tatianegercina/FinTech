@@ -18,11 +18,14 @@ By the end of today's class, students will be able to:
 
 ### Instructor Notes
 
+* If you experience any issues importing data as CSV files via pgAdmin, please refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md).
+
 * This lesson is less heavy on pure SQL, which will be used mainly to supplement the ideas presented today. If students continue to struggle with SQL basics, encourage them to practice on their own while still focusing on the concepts in this lesson.
 
 * The TAs should be ready to help explain and break down concepts for students struggling to grasp the material.
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [7.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b512f6ac-ee8f-441e-8f26-aac6015c140c) Note that this video may not reflect the most recent lesson plan.
 
 ---
