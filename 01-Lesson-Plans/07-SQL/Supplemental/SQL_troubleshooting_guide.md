@@ -16,7 +16,7 @@ Each activity will contain schema.sql files that can be used to create the datab
 
 PostgreSQL additionally provides a Command Line Interface (CLI) to not only access and query SQL databases/tables, but also execute .sql files as well. This method has the advantage of being a native operation in which the data import operation is done entirely within the postgreSQL environment, often providing both reliability and speed.
 
-In order to access the postgreSQL CLI, you'll have to first set the `PATH` environment variable to point to the postgreSQL binaries. Therefore run one of the following commands depending on your operating system (Windows users will have to use the Command Prompt as Git Bash has issues with the psql CLI):
+In order to access the postgreSQL CLI, you'll have to first set the `PATH` environment variable to point to the postgreSQL binaries. Windows users will have to use the Command Prompt as Git Bash has issues with the psql CLI. When ready, run one of the following commands depending on your operating system:
 
 * Mac OS: `export PATH="$PATH:/Library/PostgreSQL/12/bin"`.
 * Windows: `SET PATH="%PATH%;C:\Program Files\PostgreSQL\12\bin"`
