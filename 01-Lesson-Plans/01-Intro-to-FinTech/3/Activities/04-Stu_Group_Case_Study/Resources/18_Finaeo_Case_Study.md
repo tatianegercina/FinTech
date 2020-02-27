@@ -14,6 +14,10 @@ Finaeo is aimed to simplify the workflow for brokers, carriers, and distributors
 
 ## Why This May be Interesting
 
+The Canadian life & health insurance marketplace is a billionaire business sector that provides financial protection for over 29 million Canadians. Despite it's a growing market, there are some reports that indicate that starting in 2018 insurance brokers experienced a hardening market since customers refuse to purchase an insurance mainly because of the cost.
+
+Having better tools that could reduce costs in the insurance value-chain, may lead to better prices for customers and revenue increase for brokers, carriers, and distributors. Finaeo is looking to be the platform of reference where life and health insurance professionals could trust to deal with all the complex paper work and customers tracking activities, to allow them to focus on creating trustworthy and life-long relationships with customers.
+
 ## Things to Keep in Mind for a Case Study
 
 ## Resources
