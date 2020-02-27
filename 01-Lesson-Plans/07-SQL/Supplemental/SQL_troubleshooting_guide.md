@@ -19,7 +19,7 @@ PostgreSQL additionally provides a Command Line Interface (CLI) to not only acce
 In order to access the postgreSQL CLI, you'll have to first set the `PATH` environment variable to point to the postgreSQL binaries. Therefore run one of the following commands depending on your operating system:
 
 * Mac OS: `export PATH="$PATH:/Library/PostgreSQL/12/bin"`.
-* Windows: `export PATH="$PATH:C:\Program Files\PostgreSQL\12\bin"`
+* Windows: `SET PATH="%PATH%;C:\Program Files\PostgreSQL\12\bin"`
 
 **Note:** At the time of this writing, PostgreSQL has been updated to version 12. Therefore, if your PostgreSQL version is still on 11, then you paths may be the following instead:
 
@@ -38,6 +38,8 @@ Now navigate to the folder containing the .sql file and run the following comman
 * `-f` : The filepath to the .sql file.
 
 ![sql-file-CLI](Images/sql-file-CLI.png)
+
+![psql-insert-windows](Images/psql-insert-windows.PNG)
 
 ### SQLAlchemy, Psycopg2, and Pandas DataFrames
 
