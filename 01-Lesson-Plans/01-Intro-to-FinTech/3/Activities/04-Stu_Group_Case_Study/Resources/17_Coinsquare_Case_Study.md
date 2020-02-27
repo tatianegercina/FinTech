@@ -12,7 +12,7 @@ There are several trading platforms where people can trade digital currency, nev
 
 ## Why This May be Interesting
 
-Cryptocurrencies are becoming more popular in Canada, especially Bitcoin, did you know that on average, Canadians searched for "Bitcoin" more than "Kim Kardashian" or "Banks," in 2019?. Another example is present in Toronto, where there is a growing network of Bitcoin start-ups and Bitcoin ATMs. The government and Canadian banks are also making strident efforts to increase and strengthen cryptocurrency regulations. If you consider these efforts and all the start-ups in Toronto, it would appear that Bitcoin is here to stay and using crypto is going to become more common in the forthcoming years.
+Cryptocurrencies are becoming more popular in Canada, especially Bitcoin, did you know that on average, Canadians searched for "Bitcoin" more then "Banks" in 2019?. Another example is present in Toronto, where there is a growing network of Bitcoin start-ups and Bitcoin ATMs. The government and Canadian banks are also making strident efforts to increase and strengthen cryptocurrency regulations. If you consider these efforts and all the start-ups in Toronto, it would appear that Bitcoin is here to stay and using crypto is going to become more common in the forthcoming years.
 
 Another example of how cryptocurrencies are disrupting in Canada is the pilot project that started in April 2019 to allow the residents of Innisfil, Ontario to pay their property taxes using Bitcoin, Ripple, Ethereum, Litecoin, or Bitcoin Cash.
 
@@ -42,7 +42,7 @@ The rise of this cryptocurrency based services, demands a robust platform that c
 
 * [Ontario town will soon accept Bitcoin for property tax](https://www.cbc.ca/news/canada/toronto/innisfil-property-tax-uber-ontario-bitcoin-crypto-1.5075961)
 
-* [Google Trends for "Bitcoin," "Kim Kardashian," and "Banks" in Canada](https://trends.google.com/trends/explore?geo=CA&q=%2Fm%2F0261x8t,Bitcoin,Banks)
+* [Google Trends in Canada for "Bitcoin" and "Banks" in 2019](https://trends.google.com/trends/explore?date=2019-01-01%202019-12-31&geo=CA&q=banks,bitcoin)
 
 * [Guide for cryptocurrency users and tax professionals (Government of Canada)](https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance/digital-currency/cryptocurrency-guide.html)
 
