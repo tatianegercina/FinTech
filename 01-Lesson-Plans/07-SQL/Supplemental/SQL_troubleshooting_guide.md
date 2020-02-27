@@ -28,6 +28,8 @@ In order to access the postgreSQL CLI, you'll have to first set the `PATH` envir
 
 ![export-psql-path](Images/export-psql-path.png)
 
+![export-psql-path-windows](Images/export-psql-path-windows.png)
+
 Now navigate to the folder containing the .sql file and run the following command: `psql -U postgres -d animals_db -f bird_song.sql`.
 
 * `psql`: The postgreSQL CLI
