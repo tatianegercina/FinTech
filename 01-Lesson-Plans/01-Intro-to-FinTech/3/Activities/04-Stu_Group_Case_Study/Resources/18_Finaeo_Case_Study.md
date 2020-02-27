@@ -8,6 +8,10 @@ Finaeo was founded by a team of insurance brokers on a mission to bridge the dig
 
 ## Why This Matters
 
+Traditionally insurance brokers follow a manual process to do their job. From spreadsheets, sticky-notes, and tons of papers over the desk, convincing a prospect customer to acquire an insurance package is a complex journey that could take from weeks, to even years.
+
+Finaeo is aimed to simplify the workflow for brokers, carriers, and distributors by reducing the paper-work and making the whole process digital through their platform, allowing all stakeholders to reduce distribution costs and save time on each transaction, and offering to customers a personalized on-boarding experience and the best products for their needs in a fraction of the time it normally takes.
+
 ## Why This May be Interesting
 
 ## Things to Keep in Mind for a Case Study
