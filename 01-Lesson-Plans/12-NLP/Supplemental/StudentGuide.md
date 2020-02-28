@@ -265,9 +265,17 @@ Term Frequency - Inverse Document Frequency, or TF-IDF for short, measures the r
 
 Term frequency (TF) is the count of the word in a document of the corpus.  Inverse document frequency (IDF) is the number of documents the word appears in throughout the corpus.  An increase in TF will make the TF-IDF score go higher, because the more often a word is counted, it can be considered to be more relevant.  An increase in IDF will make the TF-IDF score go lower, because the more often a word appears throughout all the documents, it is considered more common and irrevelant.
 
-The calculated value of TF-IDF is a number from 0 to 1.  When the score approaches 0, the word is considered more common.  When the score approaches 1, the word is considered more relevant.
+The calculated value of TF-IDF is a number from 0 to 1.  When the score approaches 0, the word is considered more common.  When the score approaches 1, the word is considered more unique (relevant).
+<blockquote>
 
-For example if the word *Yoda* appears 500 times in my 10,000 word document then the TF is high:  `500 / 10,000 = 0.05`.  But if I have 10,000 documents and *Yoda* only appears in 10 of them, then there is low IDF: `LOG(10,000 / 10) = 3`  In this example, the TF-IDF is: `0.05 / 3 = 0.0167`.  This is most certainly a number approaching 0, and would imply a relevant, or unique word - and we know that it is in this example, because *Yoda* appears frequently throughout my document, but not frequently throughout my set of documents.
+For example if the word *Yoda* appears 500 times in my 10,000 word document then the TF is high:  `500 / 10,000 = 0.05`.
+
+But if I have 10,000 documents and *Yoda* only appears in 10 of them, then there is low IDF: `LOG(10,000 / 10) = 3`
+
+In this example, the TF-IDF is: `0.05 / 3 = 0.0167`.
+
+This is most certainly a number approaching 0, and would imply a unique, or relevant word.  In this example, because *Yoda* appears frequently throughout the document, but not frequently throughout the set of documents, the TF-IDF is high.
+</blockquote>
 </details>
 
 <details>
