@@ -194,6 +194,8 @@ Set up the prompt for the following thought exercise by asking students the foll
 
 * What were some financial processes that are becoming obsolete or no longer exist today?
 
+Answer any questions before moving on.
+
 ---
 
 ### 9. Student Do: Rip Van Winkle Thought Exercise (10 min)
@@ -206,9 +208,11 @@ Quickly explain to the class the following:
 
 * We'll apply the Rip Van Winkle story to FinTech by imagining if a financial analyst who fell asleep in the year 1999 and woke up today. What would he or she find most surprising about the current finance world?
 
-* Students should define areas of finance that have been deeply affected by technology, naming specific companies, products, or innovations that would be surprising to a financial analyst from 1999.
+* You should define areas of finance that have been deeply affected by technology, naming specific companies, products, or innovations that would be surprising to a financial analyst from 1999.
 
-* Students should form groups of three or four. Each group will present their thoughts during the review portion of this activity.
+* You should form groups of three or four. Each group will present their thoughts during the review portion of this activity.
+
+Answer any questions before moving on.
 
 ---
 
