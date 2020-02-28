@@ -3,7 +3,7 @@
 ## FAQs
 
 <details>
-<summary>What is Natural Language Processing?</summary>
+<summary>What is Natural Language Processing?</summary><br>
 
 Natural Language Processing (NLP) is the development of technology that works with translating human language components into something a computer can work with.   NLP is at work anytime you interact with technology that responds to your language inputs.  It can be thought of as processing human language into computer inputs.
 
@@ -20,12 +20,12 @@ NLP allows a joining of computer speak with human speak to develop intricate tec
 
 </details>
 <details>
-<summary>What is Tokenization and why do I need it?</summary>
+<summary>What is Tokenization and why do I need it?</summary><br>
 
 Probably the most basic level of NLP is breaking apart language into smaller chunks.  This could be breaking apart a sentence into words, an article into sentences or a book into phrases. This process is called tokenization and it can be thought of as simply stripping down a string using a delimiter as you would in Python using `.split()`.
 
 <blockquote>
-<details><summary>Word Tokenization</summary>
+<details><summary>Word Tokenization</summary><Br>
 
 In the following example we'll use `.split()` and the a space delimiter to tokenize our sentence:
 
@@ -37,7 +37,7 @@ This method works ok, but NLP can become much trickier than breaking down a sent
 
 This method allows us to separate out the puncuation in addition to the words and can be combined with regex to be even more detailed.  It is a more concise delivery of the intended outcome.
 </details>
-<details><summary>Sentence Tokenization</summary>
+<details><summary>Sentence Tokenization</summary><br>
 
 In NLP words are not the only items tokenized.  In the following example we'll tokenize a short text into sentences.  First we use `.split()` and the period delimiter:
 
@@ -48,15 +48,16 @@ This works ok, but we get more concise results using NLTK's `sent_tokenizer()`:
 ![Mando4](Images/Mando_sent_tokens.PNG)
 
 </details>
+</blockquote><br>
 </details>
 
 
 <details>
-<summary>What are Stopwords?</summary>
+<summary>What are Stopwords?</summary><br>
 
 Stopwords are considered words that hold no relevance to the outcome.  In the English language words like, _is_, _the_, and  _it_ are considered extraneous.  They are words that are used in proper grammar but they hold no bearing on the meaning of the sentence.  As part of preprocessing or cleaning data for NLP, its important to remove these words so that unnecessary bias doesn't weigh our model down.  NLTK has built-in lists of stopwords in multiple languages and provides methods for extracting these words simply.
 <blockquote>
-<details><summary>Examples of Stopwords:</summary>
+<details><summary>Examples of Stopwords:</summary><br>
 
 We can view the built-in list of English stopwords like this:
 
@@ -66,7 +67,7 @@ Similarly, you can invoke other languages.  For example, here we look at French 
 
 ![stopwords_french](Images/stopwords_french.PNG)
 </details>
-<details><summary>Usage:</summary>
+<details><summary>Usage:</summary><br>
 
 Once we have our stopwords we can remove them using a for loop.  First we store our stopwords in a variable:
 
@@ -79,7 +80,7 @@ We can then run a for loop with this list to remove the stopwords:
 
 
 </details>
-<details><summary>Custom Stopwords:</summary>
+<details><summary>Custom Stopwords:</summary><br>
 
 In certain cases we may have additional words we need to remove.  Let's suppose that the words `yoda` and `mandalorian` are not necessary for our NLP work and we wish to add them to our stopwords.  We can add these words to our stopwords list as follows:
 
@@ -91,21 +92,22 @@ We can then run a for loop with this new list to remove the stopwords which now 
 
 ![mando_stopwords](Images/Mando_new_sw.PNG)
 </details>
+</blockquote><br>
 </details>
 
 <details>
-<summary>What is Regex and how is it used?</summary>
+<summary>What is Regex and how is it used?</summary><br>
 
 <blockquote>
 <details>
-<summary>What it is:</summary>
+<summary>What it is:</summary><br>
 
 Regex stands for *regular expression* and it allows us to search for text using very specific patterns.  It can be intimidating at first glance, but it's well worth the little study and persistance required to conquer it, especially in cases of NLP usage.  Consider using the find and replace option in your Word processor - it works great for finding specific text, but what if your query is more complex?  Perhaps you are looking for someone's name, and you can only remember that the last name ends with *b*.  Regex lets you find that!
 
 </details>
 
 <details>
-<summary>How it's used:</summary>
+<summary>How it's used:</summary><br>
 
 Before we tokenize, we apply regex.  This gives us clean token data.  Let's apply regex to our mando sentence: *The Mandalorian has rescued baby Yoda.  I do not care if he is not the real Yoda.  I am still calling him that.*
 
@@ -120,7 +122,7 @@ Then we can tokenize our sentence, leaving us with clean token data that has no 
 </details>
 
 <details>
-<summary>How to learn more:</summary>
+<summary>How to learn more:</summary><br>
 
 Here are some great resources to get you started:
 
@@ -130,12 +132,12 @@ Here are some great resources to get you started:
 - For hands-on practice click [here](http://play.inginf.units.it/#/) or [here.](https://www.hackerrank.com/domains/regex)
 
 </details>
-</blockquote>
+</blockquote><br>
 
 </details>
 
 <details>
-<summary>What is Lemmatization and why do I need it?</summary>
+<summary>What is Lemmatization and why do I need it?</summary><br>
 
 Lemmatization is the process of decomposing a word to its root, for example the lemmatized word *busiest* would be *busy*.  NLTK provides in-built functionality for this process. The default for this function is to convert plural nouns to singular, but verbs and adjectives can also be converted.  To use the function, we import the module and instantiate the object as follows:
 
@@ -186,11 +188,11 @@ result = [lemmatizer.lemmatize(word) for word in new_babyYoda]
 
 
 <details>
-<summary>What are N-grams and why do I need them?</summary>
+<summary>What are N-grams and why do I need them?</summary><br>
 
 <blockquote>
 <details>
-<summary>What they are:</summary>
+<summary>What they are:</summary><br>
 
 Ngrams are word groupings that are grouped by **N** number of words.  For example, let's use our original mando sentence: *The mandalorian has rescued baby Yoda.* If we grouped this sentence into bigrams (groups of 2 words), the division would be:
 
@@ -201,7 +203,7 @@ Ngrams are word groupings that are grouped by **N** number of words.  For exampl
 *baby Yoda.*<br>
 </details>
 <details>
-<summary>How to find them programmatically:</summary>
+<summary>How to find them programmatically:</summary><br>
 
 To get the ngram count of a text using NLTK, we must first tokenize our text using `word_tokenizer`:
 
@@ -241,7 +243,7 @@ Counter({('The', 'mandalorian'): 1,
 The output is a dictionary of values that hold our two word combinations and the number of times those two words appear together.
 </details>
 <details>
-<summary>Why they're important:</summary>
+<summary>Why they're important:</summary><br>
 
 Ngrams help computers to understand the context of language.  As humans, we can break apart a sentence quickly to grasp the meaning behind it.  For an example, let's use the following sentence: *Let's hammer out the details of our trip*.  The bigrams for the sentence are:
 
@@ -258,13 +260,13 @@ By using the words before and after other words, the computer gains a better und
 If instead our sentence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun, thus an entirely different context.
 
 </details>
-</blockquote>
+</blockquote><br>
 
 </details>
 
 
 <details>
-<summary>What is a corpus?</summary>
+<summary>What is a corpus?</summary><br>
 
 A corpus is a collection of writings, typically involving NLP.  It can be thought of as a dataset that is specific to NLP tasks.  Corpora are vital for NLP, because effective NLP requires large quantities of text based data that include as many words as possible.  The larger the corpus (dataset), the more likely low frequency words are to be included in the text.
 
@@ -276,7 +278,7 @@ For more info on corpora, how they work in NLP and where you can find corpora to
 
 
 <details>
-<summary>What is TF-IDF?</summary>
+<summary>What is TF-IDF?</summary><br>
 
 Term Frequency - Inverse Document Frequency, or TF-IDF for short, measures the relevance of a word in the document.  It is calculated by combining the Term Frequency (TF) and the Inverse Document Frequency (IDF) to get a weighted value.
 
@@ -295,11 +297,11 @@ In this example, the TF-IDF is: `0.05 / 3 = 0.0167`.
 
 This is most certainly a number approaching 0, and would imply a unique, or relevant word.  In this example, because *Yoda* appears frequently throughout the document, but not frequently throughout the set of documents, the TF-IDF is high.
 
-</blockquote>
+</blockquote><br>
 </details>
 
 <details>
-<summary>What is the difference between NLTK and spaCy?</summary>
+<summary>What is the difference between NLTK and spaCy?</summary><br>
 
 The primary difference between NLTK and spaCy is that NLTK uses a rule-based approach and spaCy uses a statistical-based approach.
 
@@ -309,7 +311,7 @@ Additionally, NLTK was built with research and education in mind.  It's a great 
 
 </details>
 <details>
-<summary>What is the difference between POS Tagging and Dependency Parsing?</summary>
+<summary>What is the difference between POS Tagging and Dependency Parsing?</summary><br>
 
 Part of speech tagging (POS tagging) is the process of labeling each word or token in a sentence as its part of speech (noun, verb, adjective), while dependency parsing takes those words and determines the relationships between each.  Dependency parsing is the step that comes after POS tagging.
 
