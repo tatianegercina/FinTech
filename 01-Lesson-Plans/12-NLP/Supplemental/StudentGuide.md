@@ -5,28 +5,19 @@
 <details>
 <summary>What is Natural Language Processing?</summary>
 
-
-<blockquote>
-<details>
-<summary>In a nutshell:</summary>
-
 Natural Language Processing (NLP) is the development of technology that works with translating human language components into something a computer can work with.   NLP is at work anytime you interact with technology that responds to your language inputs.  It can be thought of as processing human language into computer inputs.
 
 Examples include:
 - Spell Checker.
 - Talking to Alexa, Siri or Google Assistant.
 - Voice to text on mobile devices.
-</details>
-<details>
-<summary>But why?</summary>
 
 Computer speak is very specific; its unambigous, literal, methodical and mathematical.  Human language is quite the opposite - Words can share multiple meanings when used in different contexts, despite being spelled the same or sounding the same.
 
 When translating words between languages, direct word for word translation will often sound nonsensical because the order of the words and cultural sayings vary.  Even different dialects of the same language can have words or sayings that mean different things depending on your geography.
 
 NLP allows a joining of computer speak with human speak to develop intricate tech that can understand language.
-</details>
-</blockquote>
+
 </details>
 <details>
 <summary>What is Tokenization and why do I need it?</summary>
@@ -44,7 +35,7 @@ This method works ok, but NLP can become much trickier than breaking down a sent
 
 ![Mando1](Images/Mando_tokens.PNG)
 
-This method allows us to separate the words, but even includes the period at the end and can be combined with regex to be even more detailed.  It is a more concise delivery of the intended outcome.
+This method allows us to separate out the puncuation in addition to the words and can be combined with regex to be even more detailed.  It is a more concise delivery of the intended outcome.
 </details>
 <details><summary>Sentence Tokenization</summary>
 
@@ -63,15 +54,15 @@ This works ok, but we get more concise results using NLTK's `sent_tokenizer()`:
 <details>
 <summary>What are Stopwords?</summary>
 
-Stopwords are considered words that hold no relevance to the outcome.  In the English language words like, _is_, _the_, and  _it_ are considered extraneous.  They are words that are used in proper grammar but they hold no bearing on the meaning of the sentence.  As part of preprocessing or cleaning data for NLP, its important to remove these words so that unnecessary bias doesn't weigh our model down.  NLTK has built in lists of stopwords in multiple languages and provides methods for extracting these words simply.
+Stopwords are considered words that hold no relevance to the outcome.  In the English language words like, _is_, _the_, and  _it_ are considered extraneous.  They are words that are used in proper grammar but they hold no bearing on the meaning of the sentence.  As part of preprocessing or cleaning data for NLP, its important to remove these words so that unnecessary bias doesn't weigh our model down.  NLTK has built-in lists of stopwords in multiple languages and provides methods for extracting these words simply.
 <blockquote>
 <details><summary>Examples of Stopwords:</summary>
 
-We can view the built in list of English stopwords like this:
+We can view the built-in list of English stopwords like this:
 
 ![stopwords_english](Images/stopwords_english.PNG)
 
-Similarly you can call other languages.  For example, here we look at French stopwords:
+Similarly, you can invoke other languages.  For example, here we look at French stopwords:
 
 ![stopwords_french](Images/stopwords_french.PNG)
 </details>
@@ -111,23 +102,23 @@ Here are some great resources to get you started:
 
 - For a gentle introduction from Python click [here.](https://docs.python.org/3/howto/regex.html#regex-howto)
 - For an intro with practice prompts, try [this *Google for Education* module.](https://developers.google.com/edu/python/regular-expressions)
-- For quick glance cheat sheet click [here.](https://www.debuggex.com/cheatsheet/regex/python)
+- For a quick glance cheat sheet click [here.](https://www.debuggex.com/cheatsheet/regex/python)
 - For hands-on practice click [here](http://play.inginf.units.it/#/) or [here.](https://www.hackerrank.com/domains/regex)
 
 
 </details>
 
 <details>
-<summary>What is Lemmatization and Why do I need it?</summary>
+<summary>What is Lemmatization and why do I need it?</summary>
 
-Lemmatization is the process of removing the added elements of a word to bring it to its root.  NLTK provides in-built functionality for this process. The default for this function is to convert plural nouns to singular, but verbs and adjectives can also be converted.  To use the function, we import the module and instantiate the object as follows:
+Lemmatization is the process of decomposing a word to its root, for example the lemmatized word *busiest* would be *busy*.  NLTK provides in-built functionality for this process. The default for this function is to convert plural nouns to singular, but verbs and adjectives can also be converted.  To use the function, we import the module and instantiate the object as follows:
 
 ```python
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 ```
 
-We can then call on the function by using the method `.lemmatize()`.  In the following example we will lemmatize the sentence:  *'Of all babies in the many worlds in all the galaxies that make our universe, baby yoda rules all hearts as cutest'*.  The tokenized form of this sentence is stored in the object `baby_Yoda` and is a list of words as follows:
+We can then call on the function by using the method `.lemmatize()`.  In the following example we will lemmatize the sentence:  *'Of all babies in the many worlds in all the galaxies that make our universe, baby yoda rules all hearts as cutest'*.  The tokenized form of this sentence is as follows:
 ```python
 ['babies',
  'many',
@@ -226,19 +217,19 @@ The output is a dictionary of values that hold our two word combinations and the
 <details>
 <summary>Why they're important:</summary>
 
-Ngrams help computers to understand the context of language.  As humans, we can break apart a sentence quickly to grasp the meaning behind it.  For an example, let's use the following sentence: Let's hammer out the details of our trip*.  The bigrams for the sentence are:
+Ngrams help computers to understand the context of language.  As humans, we can break apart a sentence quickly to grasp the meaning behind it.  For an example, let's use the following sentence: *Let's hammer out the details of our trip*.  The bigrams for the sentence are:
 
-*Let's hammer*,
-*hammer out*,
-*out the*
-*the details*,
-*details of*,
-*of our*
-*our trip.*
+*Let's hammer*,<br>
+*hammer out*,<br>
+*out the*<br>
+*the details*,<br>
+*details of*,<br>
+*of our*<br>
+*our trip.*<br>
 
-By using the words before and after other words, the computer gains a better understanding of context.  The word *hammer* in this instance has bigrams of *Let's hammer* and *hammer out*.  The words *Let's* and *out* gives context that the word in this instance is being used as a verb.
+By using the words before and after other words, the computer gains a better understanding of context.  The word *hammer* in this instance has bigrams of *Let's hammer* and *hammer out*.  The words *Let's* and *out* gives context that *hammer* in this instance is being used as a verb.
 
-If instead our setence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun, thus an entirely different context.
+If instead our sentence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun, thus an entirely different context.
 
 </details>
 </blockquote>
@@ -249,7 +240,7 @@ If instead our setence were *I need the hammer*, then having the word *the* prec
 <details>
 <summary>What is a corpus?</summary>
 
-A corpus is a collection of writings, typically used in machine learning work involving NLP.  It can be thought of as a dataset that is specific to NLP tasks.  Corpora are vital for NLP, because effective NLP requires large quantities of text based data that include as many words as possible.  The larger the corpus (dataset), the more likely low frequency words are to be included in the text.
+A corpus is a collection of writings, typically involving NLP.  It can be thought of as a dataset that is specific to NLP tasks.  Corpora are vital for NLP, because effective NLP requires large quantities of text based data that include as many words as possible.  The larger the corpus (dataset), the more likely low frequency words are to be included in the text.
 
 There are numerous well known corpora used in NLP, some are general for language based applications, and some are more specialized for task specific applications.  For example, when working on sentiment analysis projects, you could use the IMDB Reviews or Yelp Reviews corpora.
 
@@ -268,13 +259,16 @@ Term frequency (TF) is the count of the word in a document of the corpus.  Inver
 The calculated value of TF-IDF is a number from 0 to 1.  When the score approaches 0, the word is considered more common.  When the score approaches 1, the word is considered more unique (relevant).
 <blockquote>
 
-For example if the word *Yoda* appears 500 times in my 10,000 word document then the TF is high:  `500 / 10,000 = 0.05`.
+For example:
 
-But if I have 10,000 documents and *Yoda* only appears in 10 of them, then there is low IDF: `LOG(10,000 / 10) = 3`
+If the word *Yoda* appears 500 times in my 10,000 word document then the TF is high:  `500 / 10,000 = 0.05`.
+
+If I have 10,000 documents and *Yoda* only appears in 10 of them, then IDF is low: `LOG(10,000 / 10) = 3`
 
 In this example, the TF-IDF is: `0.05 / 3 = 0.0167`.
 
 This is most certainly a number approaching 0, and would imply a unique, or relevant word.  In this example, because *Yoda* appears frequently throughout the document, but not frequently throughout the set of documents, the TF-IDF is high.
+
 </blockquote>
 </details>
 
@@ -283,7 +277,7 @@ This is most certainly a number approaching 0, and would imply a unique, or rele
 
 The primary difference between NLTK and spaCy is that NLTK uses a rule-based approach and spaCy uses a statistical-based approach.
 
-With a rule-based approach, the model deterministically draws conclusions from the text using the rules of the selected language.  with NLTK the word *sick* is negative based on rules that dictate that relationship.  With a statistical approach, machine learning can be used to make decisions using the context of the text.  SpaCy might notice that the word *sick* is used in a context that implies a positive relationship, for example *That steak was grilled to perfection! It was sick!*
+With a rule-based approach, the model deterministically draws conclusions from the text using the rules of the selected language.  With NLTK, the word *sick* is negative based on rules that dictate that relationship.  With a statistical approach, machine learning can be used to make decisions using the context of the text.  SpaCy might notice that the word *sick* is used in a context that implies a positive relationship, for example *That steak was grilled to perfection! It was sick!*
 
 Additionally, NLTK was built with research and education in mind.  It's a great resource for exploring your text data and conducting analyses, however all data is represented as strings which can make it more difficult to work with on a larger scale.  SpaCy was built with production performance in mind and tends to be faster thank NLTK.  All data with SpaCy is represented as objects and more task based functionality is provided.
 
