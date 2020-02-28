@@ -28,9 +28,6 @@ Due to a combination of inflation and a desire to generate profits, individuals 
 See instructions in [activity file](Activities/01-Stu_Inflation_Reflection/README.md)
 
 
-cogitate on personal investments and salary increase relative to inflation. If not employed, explore job opps that you may want to work in after this class ends. At what rate would your salary need to increase in order to keep up with inflation?
-
-
 ### Reading: Time Value of Money
 
 Is it better to have $10,000 today or $10,500 tomorrow? In general, it is better to have money today in order to be prepared for possible opporunities that may arise.
