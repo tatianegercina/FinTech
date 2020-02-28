@@ -124,7 +124,9 @@ Once all volunteers have presented, tie everything together by explaining the fo
 
 * Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. Furthermore, still, others see FinTech as a path to a new career supported by growing demand.
 
-* Despite students' differing reasons for wanting to learn more about FinTech, each of them has made the leap to take this course. Therefore, it's important to continue to get to know each other, as they'll be together "in the trenches" for the next 24 weeks. The relationships you build in this class can serve as valuable network connections after the completion of the course.
+Despite students' differing reasons for wanting to learn more about FinTech, each of them has made the leap to take this course. Therefore, it's important to continue to get to know each other, as they'll be together "in the trenches" for the next 24 weeks. The relationships you build in this class can serve as valuable network connections after the completion of the course.
+
+Answer any questions before moving on.
 
 ---
 
