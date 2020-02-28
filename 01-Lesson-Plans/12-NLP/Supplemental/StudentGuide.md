@@ -267,9 +267,9 @@ For example if the word *Yoda* appears 500 times in my 10,000 word document then
 
 The primary difference between NLTK and spaCy is that NLTK uses a rule-based approach and spaCy uses a statistical-based approach.
 
-With a rule-based approach, the model deterministically draws conclusions from the text using the rules of the selected language.  With a statistical approach, machine learning is used to make predictions about the text data.
+With a rule-based approach, the model deterministically draws conclusions from the text using the rules of the selected language.  with NLTK the word *sick* is negative based on rules that dictate that relationship.  With a statistical approach, machine learning can be used to make decisions using the context of the text.  SpaCy might notice that the word *sick* is used in a context that implies a positive relationship, for example *That steak was grilled to perfection! It was sick!*
 
-As an example, let's use sentiment analysis and the statement, "This restaurant was an excellent place to indulge in a nicely overcooked, over salted ribeye steak".  A rule-based approach might incorrectly translate the statement into positive sentiment because as a general rule of thumb, the words *excellent* and *indulge* reflect a positive sentiment.  However, given enough data that shows similar contexts, a statistical-based approach might pick up on the sarcasm, detecting the negative sentiment that is actually intended.
+Additionally, NLTK was built with research and education in mind.  It's a great resource for exploring your text data and conducting analyses, however all data is represented as strings which can make it more difficult to work with on a larger scale.  SpaCy was built with production performance in mind and tends to be faster thank NLTK.  All data with SpaCy is represented as objects and more task based functionality is provided.
 
 </details>
 <details>
