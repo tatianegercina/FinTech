@@ -94,9 +94,33 @@ We can then run a for loop with this new list to remove the stopwords which now 
 </details>
 
 <details>
-<summary>What the heck is Regex and where can I get help learning it?</summary>
+<summary>What is Regex and how is it used?</summary>
+
+<blockquote>
+<details>
+<summary>What it is:</summary>
 
 Regex stands for *regular expression* and it allows us to search for text using very specific patterns.  It can be intimidating at first glance, but it's well worth the little study and persistance required to conquer it, especially in cases of NLP usage.  Consider using the find and replace option in your Word processor - it works great for finding specific text, but what if your query is more complex?  Perhaps you are looking for someone's name, and you can only remember that the last name ends with *b*.  Regex lets you find that!
+
+</details>
+
+<details>
+<summary>How it's used:</summary>
+
+Before we tokenize, we apply regex.  This gives us clean token data.  Let's apply regex to our mando sentence: *The Mandalorian has rescued baby Yoda.  I do not care if he is not the real Yoda.  I am still calling him that.*
+
+First we import the `re` python module, and compile with the pattern we are searching for.  In this case we are searching for any character that is not a letter.  The `^` symbol indicates *not*. `A-Z` and `a-z` indicate any upper or lower case letter, and the empty `space` at the end indicates a `space`.  When we compile using `^A-Za-Z `, we are looking for any character that is not an upper or lower case letter, or a space.  We then use `.sub` to substitute something new in the place of any matches.  In the example below we are substituting `''` for any matches, which results in the deletion of that character:
+
+<img src='Images/mando_regex1.PNG' width=700>
+
+Then we can tokenize our sentence, leaving us with clean token data that has no non-alphanumeric characters:
+
+<img src='Images/mando_regex2.PNG' width=600>
+
+</details>
+
+<details>
+<summary>How to learn more:</summary>
 
 Here are some great resources to get you started:
 
@@ -105,6 +129,8 @@ Here are some great resources to get you started:
 - For a quick glance cheat sheet click [here.](https://www.debuggex.com/cheatsheet/regex/python)
 - For hands-on practice click [here](http://play.inginf.units.it/#/) or [here.](https://www.hackerrank.com/domains/regex)
 
+</details>
+</blockquote>
 
 </details>
 
