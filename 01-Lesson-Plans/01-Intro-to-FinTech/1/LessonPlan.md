@@ -72,8 +72,6 @@ Feel free to answer the questions below as a way to introduce yourself. However,
 
 In this section, you will discuss the concept of FinTech as well as provide some information about the FinTech industry.
 
-**File:** [Defining FinTech Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit?usp=sharing)
-
 Open the slideshow and review today's objectives.
 
 Then move on to the first topic of the day: defining FinTech. Review the slides while presenting the following questions and answers to the class.
