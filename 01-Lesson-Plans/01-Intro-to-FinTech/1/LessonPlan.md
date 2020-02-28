@@ -160,23 +160,23 @@ Answer any questions before moving on.
 
 Provide students with some encouragement and tips for overcoming the mental frustrations they will more than likely face throughout the course.
 
-**File:** [Tips Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_12)
-
-Open the next series of slides and emphasize the following points.
+Open the lesson slides, move to the "Tips" section and emphasize the following points.
 
 * Embrace your inner toddler. Recognizing how little you know is the first step toward growth as a learner. Hard work, humility, and a relentless desire to improve are essential for succeeding in this program.
 
 * At times, learning the skills taught in this course will be intimidating and frustrating. Remember that becoming a skilled professional is challenging and will take time. There is no way around that.
 
-* Due to the challenging nature of this course, there will be many moments where students will doubt themselves. Remember that everyone starts as a beginner, including the instructor. Also, remember why you were admitted to this program in the first place: you have what it takes to succeed.
+* Due to the challenging nature of this course, there will be many moments where you will doubt yourselves. Remember that everyone starts as a beginner, including the instructor. Also, remember why you were admitted to this program in the first place: you have what it takes to succeed.
 
-* Form a community with your classmates. Even though challenging times are up ahead, students have a solid support system: their instructor, TAs, student success manager, and, perhaps most importantly, each other. When you're frustrated or stuck, remember that we're all in this together. Seek help when you need it and lift each other up.
+* Form a community with your classmates. Even though challenging times are up ahead, as students you have a solid support system: the instructor, TAs, student success manager, and, perhaps most importantly, each other. When you're frustrated or stuck, remember that we're all in this together. Seek help when you need it and lift each other up.
 
 * Lastly, learning is supposed to be frustrating! It's a process, so stick with it. Things only get easier when we choose to embrace the difficulty and put in the hours to succeed.
 
 * Most importantly, celebrate your successes!
 
   ![fintech-tips](Images/fintech-tips.png)
+
+Answer any questions before going to the break.
 
 ---
 
