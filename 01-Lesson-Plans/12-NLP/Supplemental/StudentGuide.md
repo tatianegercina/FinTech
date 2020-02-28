@@ -105,6 +105,15 @@ We can then run a for loop with this new list to remove the stopwords which now 
 <details>
 <summary>Is there a place I can find a simple guide to Regex?</summary>
 
+Regex stands for *regular expression* and it allows us to search for text using very specific patterns.  It can be intimidating at first glance, but it's well worth the little study and persistance required to conquer it, especially in cases of NLP usage.  Consider using the find and replace option in your Word processor - it works great for finding specific text, but what if your query is more complex?  Perhaps you are looking for someone's name, and you can only remember that the last name ends with *b*.  Regex lets you find that!
+
+Here are some great resources to get you started:
+
+For a gentle introduction from Python click [here.](https://docs.python.org/3/howto/regex.html#regex-howto)
+For an intro with practice prompts, try [this *Google for Education* module.](https://developers.google.com/edu/python/regular-expressions)
+For quick glance cheat sheet click [here.](https://www.debuggex.com/cheatsheet/regex/python)
+For hands-on practice click [here](http://play.inginf.units.it/#/) or [here.](https://www.hackerrank.com/domains/regex)
+
 
 </details>
 
