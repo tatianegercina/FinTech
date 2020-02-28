@@ -103,16 +103,16 @@ We can then run a for loop with this new list to remove the stopwords which now 
 </details>
 
 <details>
-<summary>Is there a place I can find a simple guide to Regex?</summary>
+<summary>What the heck is Regex and where can I get help learning it?</summary>
 
 Regex stands for *regular expression* and it allows us to search for text using very specific patterns.  It can be intimidating at first glance, but it's well worth the little study and persistance required to conquer it, especially in cases of NLP usage.  Consider using the find and replace option in your Word processor - it works great for finding specific text, but what if your query is more complex?  Perhaps you are looking for someone's name, and you can only remember that the last name ends with *b*.  Regex lets you find that!
 
 Here are some great resources to get you started:
 
-For a gentle introduction from Python click [here.](https://docs.python.org/3/howto/regex.html#regex-howto)
-For an intro with practice prompts, try [this *Google for Education* module.](https://developers.google.com/edu/python/regular-expressions)
-For quick glance cheat sheet click [here.](https://www.debuggex.com/cheatsheet/regex/python)
-For hands-on practice click [here](http://play.inginf.units.it/#/) or [here.](https://www.hackerrank.com/domains/regex)
+- For a gentle introduction from Python click [here.](https://docs.python.org/3/howto/regex.html#regex-howto)
+- For an intro with practice prompts, try [this *Google for Education* module.](https://developers.google.com/edu/python/regular-expressions)
+- For quick glance cheat sheet click [here.](https://www.debuggex.com/cheatsheet/regex/python)
+- For hands-on practice click [here](http://play.inginf.units.it/#/) or [here.](https://www.hackerrank.com/domains/regex)
 
 
 </details>
@@ -226,20 +226,19 @@ The output is a dictionary of values that hold our two word combinations and the
 <details>
 <summary>Why they're important:</summary>
 
-Ngrams help computers to understand the context of language.  As humans, we can break apart a sentence quickly to grasp the meaning behind it.  For an example, let's use the following sentence: *We need to hammer out the details of trip*.  The bigrams for the sentence are:
+Ngrams help computers to understand the context of language.  As humans, we can break apart a sentence quickly to grasp the meaning behind it.  For an example, let's use the following sentence: Let's hammer out the details of our trip*.  The bigrams for the sentence are:
 
-*We need*,
-*need to*,
-*to hammer*,
+*Let's hammer*,
 *hammer out*,
 *out the*
 *the details*,
 *details of*,
-*of trip.*
+*of our*
+*our trip.*
 
-Using the words before and after other words, gives the computer a better understanding of context.  The word *hammer* in this instance has bigrams of *to hammer* and *hammer out*.  The words *to* and *out* gives context that the word in this instance is being used as a verb.
+By using the words before and after other words, the computer gains a better understanding of context.  The word *hammer* in this instance has bigrams of *Let's hammer* and *hammer out*.  The words *Let's* and *out* gives context that the word in this instance is being used as a verb.
 
-If instead our setence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun.
+If instead our setence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun, thus an entirely different context.
 
 </details>
 </blockquote>
