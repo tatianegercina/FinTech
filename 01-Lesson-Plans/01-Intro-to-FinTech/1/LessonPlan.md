@@ -134,8 +134,6 @@ Answer any questions before moving on.
 
 In this section, provide an overview of the topics and technologies used in the course, as well as the timeline for each topic or unit.
 
-**File:** [Course Overview Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_6)
-
 Use the slideshow to go over the course agenda and timeline.
 
 * **Week 1:** Students will be introduced to the world of FinTech and the current financial landscape.
