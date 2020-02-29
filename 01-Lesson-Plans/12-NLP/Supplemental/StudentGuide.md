@@ -1,6 +1,18 @@
 # Unit 20: Natural Language Processing
 
-## FAQs
+### Helpful Links
+
+* [first link](#) description of the link
+
+---
+
+### Additional Course Resources
+
+* [Install Guide](install_guide.md)
+
+---
+
+### FAQs
 
 <details>
 <summary>What is Natural Language Processing?</summary><br>
