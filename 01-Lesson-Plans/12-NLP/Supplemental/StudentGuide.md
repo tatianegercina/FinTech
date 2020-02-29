@@ -24,11 +24,11 @@
 Natural language processing is a field focused on the goal of having computers interact with (understand and generate) natural (human) language.
 
 Examples include:
-* Spell Checker.
+* A spell Checker.
 
-* Talking to Alexa, Siri or Google Assistant.
+* Talking to digital assistants such as Alexa, Siri or Google Assistant.
 
-* Voice to text on mobile devices.
+* Voice-to-text on mobile devices.
 
 Computer speak is very specific; its unambigous, literal, methodical and mathematical. Human language is quite the opposite * Words can share multiple meanings when used in different contexts, despite being spelled the same or sounding the same.
 
