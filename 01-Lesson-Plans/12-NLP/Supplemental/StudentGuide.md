@@ -21,7 +21,7 @@
 <details>
 <summary>What is Natural Language Processing?</summary><br>
 
-Natural Language Processing (NLP) is the development of technology that works with translating human language components into something a computer can work with. NLP is at work anytime you interact with technology that responds to your language inputs. It can be thought of as processing human language into computer inputs.
+Natural language processing is a field focused on the goal of having computers interact with (understand and generate) natural (human) language.
 
 Examples include:
 * Spell Checker.
