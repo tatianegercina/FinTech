@@ -20,11 +20,13 @@
 Natural Language Processing (NLP) is the development of technology that works with translating human language components into something a computer can work with. NLP is at work anytime you interact with technology that responds to your language inputs. It can be thought of as processing human language into computer inputs.
 
 Examples include:
-- Spell Checker.
-- Talking to Alexa, Siri or Google Assistant.
-- Voice to text on mobile devices.
+* Spell Checker.
 
-Computer speak is very specific; its unambigous, literal, methodical and mathematical. Human language is quite the opposite - Words can share multiple meanings when used in different contexts, despite being spelled the same or sounding the same.
+* Talking to Alexa, Siri or Google Assistant.
+
+* Voice to text on mobile devices.
+
+Computer speak is very specific; its unambigous, literal, methodical and mathematical. Human language is quite the opposite * Words can share multiple meanings when used in different contexts, despite being spelled the same or sounding the same.
 
 When translating words between languages, direct word for word translation will often sound nonsensical because the order of the words and cultural sayings vary. Even different dialects of the same language can have words or sayings that mean different things depending on your geography.
 
@@ -112,7 +114,7 @@ We can then run a for loop with this new list to remove the stopwords which now 
 <details>
 <summary>What it is:</summary><br>
 
-Regex stands for *regular expression* and it allows us to search for text using very specific patterns. It can be intimidating at first glance, but it's well worth the little study and persistance required to conquer it, especially in cases of NLP usage. Consider using the find and replace option in your Word processor - it works great for finding specific text, but what if your query is more complex?  Perhaps you are looking for someone's name, and you can only remember that the last name ends with *b*. Regex lets you find that!
+Regex stands for *regular expression* and it allows us to search for text using very specific patterns. It can be intimidating at first glance, but it's well worth the little study and persistance required to conquer it, especially in cases of NLP usage. Consider using the find and replace option in your Word processor * it works great for finding specific text, but what if your query is more complex?  Perhaps you are looking for someone's name, and you can only remember that the last name ends with *b*. Regex lets you find that!
 
 </details>
 
@@ -136,10 +138,13 @@ Then we can tokenize our sentence, leaving us with clean token data that has no 
 
 Here are some great resources to get you started:
 
-- For a gentle introduction from Python click [here.](https://docs.python.org/3/howto/regex.html#regex-howto)
-- For an intro with practice prompts, try [this *Google for Education* module.](https://developers.google.com/edu/python/regular-expressions)
-- For a quick glance cheat sheet click [here.](https://www.debuggex.com/cheatsheet/regex/python)
-- For hands-on practice click [here](http://play.inginf.units.it/#/) or [here.](https://www.hackerrank.com/domains/regex)
+* For a gentle introduction from Python click [here.](https://docs.python.org/3/howto/regex.html#regex-howto)
+
+* For an intro with practice prompts, try [this *Google for Education* module.](https://developers.google.com/edu/python/regular-expressions)
+
+* For a quick glance cheat sheet click [here.](https://www.debuggex.com/cheatsheet/regex/python)
+
+* For hands-on practice click [here](http://play.inginf.units.it/#/) or [here.](https://www.hackerrank.com/domains/regex)
 
 </details>
 </blockquote><br>
@@ -287,7 +292,7 @@ For more info on corpora, how they work in NLP and where you can find corpora to
 <details>
 <summary>What is TF-IDF?</summary><br>
 
-Term Frequency - Inverse Document Frequency, or TF-IDF for short, measures the relevance of a word in the document. It is calculated by combining the Term Frequency (TF) and the Inverse Document Frequency (IDF) to get a weighted value.
+Term Frequency * Inverse Document Frequency, or TF-IDF for short, measures the relevance of a word in the document. It is calculated by combining the Term Frequency (TF) and the Inverse Document Frequency (IDF) to get a weighted value.
 
 Term frequency (TF) is the count of the word in a document of the corpus. Inverse document frequency (IDF) is the number of documents the word appears in throughout the corpus. An increase in TF will make the TF-IDF score go higher, because the more often a word is counted, it can be considered to be more relevant. An increase in IDF will make the TF-IDF score go lower, because the more often a word appears throughout all the documents, it is considered more common and irrevelant.
 
