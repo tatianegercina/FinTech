@@ -2,13 +2,17 @@
 
 ### Helpful Links
 
-* [first link](#) description of the link
+* [Natural Language Processing with Python – Analyzing Text with the Natural Language Toolkit](https://www.nltk.org/book/) This online version of the NLTK book is a great reference for all things NLTK.
+
+* [spaCy 101: Everything you need to know](https://spacy.io/usage/spacy-101) This direct link to the spaCy documention is an excellent place to find out all there is to know about spaCy.
+
+* [Word Cloud](https://amueller.github.io/word_cloud/) The wordcloud documentation has everything from command line interface tools to gallery examples of how to make your own, unique word cloud.
 
 ---
 
 ### Additional Course Resources
 
-* [Install Guide](install_guide.md)
+* [NLP installation guide](nlp-env-install-guide.md)
 
 ---
 
