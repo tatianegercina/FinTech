@@ -180,14 +180,14 @@ We can then call on the function by using the method `.lemmatize()`. In the foll
  'hearts',
  'cutest']
 ```
-To properly lemmatize the `baby_Yoda` object:
+To properly lemmatize the `baby_yoda` object:
 
 ```python
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
 result = []
-for word in baby_Yoda:
+for word in baby_yoda:
     word = lemmatizer.lemmatize(word)
     result.append(word)
 ```
@@ -201,7 +201,7 @@ A more concise way to generate this new list is with a list comprehension. The r
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
-result = [lemmatizer.lemmatize(word) for word in new_babyYoda]
+result = [lemmatizer.lemmatize(word) for word in baby_yoda]
 ```
 </details>
 
