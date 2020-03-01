@@ -57,7 +57,8 @@ This method allows us to handle complex situations such as punctuation. We can a
 </details>
 <details><summary>Sentence Tokenization</summary><br>
 
-In NLP words are not the only items tokenized. In the following example we'll tokenize a short text into sentences. First we use `.split()` and the period delimiter:
+In NLP, words are not the only items that can be tokenized.  In the following example, we'll tokenize a short text into sentences.  First we use `.split()` and the period delimiter:
+
 
 ![Mando3](Images/Mando_sent_split.PNG)
 
@@ -158,7 +159,7 @@ Here are some great resources to get you started:
 <details>
 <summary>What is Lemmatization and why do I need it?</summary><br>
 
-Lemmatization is the process of decomposing a word to its root, for example the lemmatized word *busiest* would be *busy*. NLTK provides in-built functionality for this process. The default for this function is to convert plural nouns to singular, but verbs and adjectives can also be converted. To use the function, we import the module and instantiate the object as follows:
+Lemmatization is the process of decomposing a word to its root, for example the lemmatized word *busiest* would have a root of *busy*. NLTK provides in-built functionality for this process. The default for this function is to convert plural nouns to singular, but verbs and adjectives can also be converted. To use the function, we import the module and instantiate the object as follows:
 
 ```python
 from nltk.stem import WordNetLemmatizer
@@ -263,7 +264,7 @@ The output is a dictionary of values that hold our two word combinations and the
 <details>
 <summary>Why they're important:</summary><br>
 
-Ngrams help computers to understand the context of language. As humans, we can break apart a sentence quickly to grasp the meaning behind it. For an example, let's use the following sentence: *Let's hammer out the details of our trip*. The bigrams for the sentence are:
+Ngrams help computers to understand the context of language by looking at groups of words. . As humans, we can break apart a sentence quickly to grasp the meaning behind it. For an example, let's use the following sentence: *Let's hammer out the details of our trip*. The bigrams for the sentence are:
 
 *Let's hammer*,<br>
 *hammer out*,<br>
@@ -273,7 +274,7 @@ Ngrams help computers to understand the context of language. As humans, we can b
 *of our*<br>
 *our trip.*<br>
 
-By using the words before and after other words, the computer gains a better understanding of context. The word *hammer* in this instance has bigrams of *Let's hammer* and *hammer out*. The words *Let's* and *out* gives context that *hammer* in this instance is being used as a verb.
+Ngrams give us more context by looking at how the meaning changes when considering adjacent groups of words instead of single words. The word *hammer* in this instance has bigrams of *Let's hammer* and *hammer out*.  The words *Let's* and *out* gives context that *hammer* in this instance is being used as a verb.
 
 If instead our sentence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun, thus an entirely different context.
 
@@ -285,7 +286,7 @@ If instead our sentence were *I need the hammer*, then having the word *the* pre
 <details>
 <summary>What is a corpus?</summary><br>
 
-A corpus is a collection of writings, typically involving NLP. It can be thought of as a dataset that is specific to NLP tasks. Corpora are vital for NLP, because effective NLP requires large quantities of text based data that include as many words as possible. The larger the corpus (dataset), the more likely low frequency words are to be included in the text.
+A corpus is a collection of writings, typically involving NLP. It can be thought of as a dataset that is specific to NLP tasks. Corpora are vital for NLP, because effective NLP requires large quantities of text-based data that include as many words as possible. The larger the corpus (dataset), the more likely low frequency words are to be included in the text.
 
 There are numerous well known corpora used in NLP, some are general for language based applications, and some are more specialized for task specific applications. For example, when working on sentiment analysis projects, you could use the IMDB Reviews or Yelp Reviews corpora.
 
