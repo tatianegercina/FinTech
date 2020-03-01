@@ -40,7 +40,7 @@ NLP allows us process human language and text so that it can be used in machine 
 <details>
 <summary>What is Tokenization and why do I need it?</summary><br>
 
-Probably the most basic level of NLP is breaking apart language into smaller chunks. This could be breaking apart a sentence into words, an article into sentences or a book into phrases. This process is called tokenization and it can be thought of as simply stripping down a string using a delimiter as you would in Python using `.split()`.
+Tokenization is the process of breaking apart language into smaller pieces. A document of text could be tokenized into sentences, the sentences could be tokenized into words or phrases, or a word could be tokenized into characters. Tokens can then be counted, grouped, sorted, and further processed to help us better understand the content of the text. A simple example of tokenization is using Python's `.split()` function to split a sentence into a list of words using the whitespace as a delimiter.
 
 <blockquote>
 <details><summary>Word Tokenization</summary><Br>
