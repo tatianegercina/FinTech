@@ -49,11 +49,11 @@ In the following example we'll use `.split()` and the a space delimiter to token
 
 ![Mando](Images/Mando_split.PNG)
 
-This method works ok, but NLP can become much trickier than breaking down a sentence on a single delimiter. You might need to write code that breaks down an entire text into whole phrases on multiple delimiters. Because of this, we can use the Natural Language ToolKit (NLTK) platform to perform our tokenizing. NLTK provides libraries and tools that help with NLP tasks such as text processing. Let's tokenize the same sentence using NLTK's tokenizer, `word_tokenizer()`:
+This method works ok, but NLP can become much trickier than breaking down a sentence by a single delimiter. You might need to write code that breaks down an entire text into whole phrases on multiple delimiters. Because of this, we can use the Natural Language ToolKit (NLTK) platform to perform our tokenizing. NLTK provides libraries and tools that help with NLP tasks such as text processing. Let's tokenize the same sentence using NLTK's tokenizer, `word_tokenizer()`:
 
 ![Mando1](Images/Mando_tokens.PNG)
 
-This method allows us to separate out the puncuation in addition to the words and can be combined with regex to be even more detailed. It is a more concise delivery of the intended outcome.
+This method allows us to handle complex situations such as punctuation. We can also use regular expressions to further customize our tokenizer. This gives us much more flexibility to concisely deliver the intended outcome regardless of how complex the text might be.
 </details>
 <details><summary>Sentence Tokenization</summary><br>
 
