@@ -286,7 +286,7 @@ If instead our sentence were *I need the hammer*, then having the word *the* pre
 <details>
 <summary>What is a corpus?</summary><br>
 
-A corpus is a collection of writings, typically involving NLP. It can be thought of as a dataset that is specific to NLP tasks. Corpora are vital for NLP, because effective NLP requires large quantities of text-based data that include as many words as possible. The larger the corpus (dataset), the more likely low frequency words are to be included in the text.
+A corpus is a collection of writings, typically involving NLP. It can be thought of as a dataset that is specific to NLP tasks. Corpora are vital for NLP, as they are used for benchmarking a model's performance, NLP testing, and because effective NLP requires large quantities of text-based data that include as many words as possible. The larger the corpus (dataset), the more likely low frequency words are to be included in the text.
 
 There are numerous well known corpora used in NLP, some are general for language based applications, and some are more specialized for task specific applications. For example, when working on sentiment analysis projects, you could use the IMDB Reviews or Yelp Reviews corpora.
 
