@@ -30,11 +30,11 @@ Examples include:
 
 * Voice-to-text on mobile devices.
 
-Computer speak is very specific; its unambigous, literal, methodical and mathematical. Human language is quite the opposite * Words can share multiple meanings when used in different contexts, despite being spelled the same or sounding the same.
+Computer language is very specific; its unambigous, literal, methodical and mathematical. Human language is quite the opposite * Words can share multiple meanings when used in different contexts, despite being spelled the same or sounding the same.
 
 When translating words between languages, direct word for word translation will often sound nonsensical because the order of the words and cultural sayings vary. Even different dialects of the same language can have words or sayings that mean different things depending on your geography.
 
-NLP allows a joining of computer speak with human speak to develop intricate tech that can understand language.
+NLP allows a joining of computer language with human language to develop intricate tech that can understand language.
 
 </details>
 <details>
