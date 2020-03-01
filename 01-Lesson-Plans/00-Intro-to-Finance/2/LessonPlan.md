@@ -17,7 +17,7 @@ By the end of this module, you should be able to:
 
 ### Reading: Defining Financial Risk
 
-In investing, there is always some unpredictability in the outcome which we refer to as **uncertainty**. Several different types of financial instruments, we will calculate the **volatility** of the instrument over a period of time as the measure of unpredictability. Volatility can be calculated by finding the standard deviation of all of the [returns](https://www.investopedia.com/terms/r/return.asp) over the period.
+In investing, there is always some unpredictability in the outcome, such as whether our financial [return](https://www.investopedia.com/terms/r/return.asp) becomes much higher or lower than expected. We refer to this unpredictability as **uncertainty**. For several different types of financial instruments, we will calculate the volatility of the instrument over a period of time as the measure of uncertainty.
 
 This uncertainty can lead to large gains or losses in capital, which we refer to as **risk**. In many cases, we will use the calculated volatility as a stand-in for risk. However, depending on the specific type of risk we would like to model, we may approximate it in different ways. This module will cover several of the most commonly discussed types of risk.
 
@@ -31,7 +31,7 @@ In securities trading (the stock market) there are two principal types of risk w
 
 One of the ways banks make profit is by making loans to individuals or families. However, how can they know that they will be paid back? Any company that makes loans is likely to assess the credit risk of those they make loans to. In the U.S. we often utilize a calculation created by the Fair Isaac Company (FICO Score) to assess "creditworthiness". Any method of assessing a person's likelihood of paying back a loan is fair, as long as the features used in the assessment do not violate legal statutes for specific types of discriminatory practices.
 
-Imagine you own a real-estate company. After you have received your seed capital, you rush out and buy up as many properties as possible in order to establish yourself in a region, and in the process, you completely exhaust your cash on hand. Later, a large bill comes in the mail, which you are incapable of paying because you have no cash on hand. You now have to sell one or more of your properties to raise enough cash to pay for this bull, however, it will take some time to be able to receive the cash from the sale due to how slow real estate transactions operate - which refer to as the “illiquidity” of the market. In order to accelerate finding a buyer, you may need to sell one of your properties at a loss. The risk of finding yourself in the situation without enough cash on hand to cover debts is referred to as the liquidity risk. Liquidity risk is important for all companies to assess (especially banks) as they may need to take out high-interest short-term loans in order to cover debts in the near term, which can affect profits.
+Imagine you own a real-estate company. After you have received your seed capital, you rush out and buy up as many properties as possible in order to establish yourself in a region, and in the process, you completely exhaust your cash on hand. Later, a large bill comes in the mail, which you are incapable of paying because you have no cash on hand. You now have to sell one or more of your properties to raise enough cash to pay for this bill, however, it will take some time to be able to receive the cash from the sale due to how slow real estate transactions operate - which refer to as the “illiquidity” of the market. In order to accelerate finding a buyer, you may need to sell one of your properties at a loss. The risk of finding yourself in the situation without enough cash on hand to cover debts is referred to as the liquidity risk. Liquidity risk is important for all companies to assess (especially banks) as they may need to take out high-interest short-term loans in order to cover debts in the near term, which can affect profits.
 
 ### Student Activity: Risk Reflection
 
@@ -48,7 +48,9 @@ Expected Return = (Risk-Free Rate) + (Beta * Market Risk Premium)
 
 ```
 
-Where the risk-free rate is often the long-term yield of a government bond, Beta is equity beta (relative volatility of a single asset to the market's volatililty), and the market risk premium is the difference between the risk free rate and the expected return of the market. The market risk premium can be considered to be a descriptor of the amount of return expected for the risk of investment.
+Where the risk-free rate is often the interest rate (yield) on a short term government bond, Beta is equity beta (how much&mdash;e.g., one-for-one or twice as much&mdash;a particular stock moves in proportion to the broader equity market), and the market risk premium is the difference between the risk free rate and the expected return of the market. The market risk premium can be considered to be a descriptor of the long run return expected by the equity market, over and above short term government bonds (the riskless rate).
+
+Essentially, the CAPM states that an investor expects an equity return to be at least what she can get from a risk-less investment, plus an extra amoount for taking on the risk of stock. However, not all equities are equal: higher beta stocks are proportionally more risky, since a higher beta means that they fall more deeply whenever there's a market downturn. Greater reward (higher long-term returns) are therefore expected in order to compensate an investor for holding that type of higher beta, higher risk stock.
 
 ### Student Activity: Ratio Deep Dive
 

@@ -1,6 +1,6 @@
 # Portfolio Comparisons
 
-Now that we have discussed some of the core concepts in investing, let's take a moment to look back at some of the themes we've covered so far with regards to making comparisons across potential investments
+Now that we have discussed some of the core concepts in investing, let's take a moment to look back at some of the themes we've covered so far with regards to making comparisons across potential investments.
 
 ## Instructions
 
