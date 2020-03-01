@@ -45,7 +45,7 @@ Tokenization is the process of breaking apart language into smaller pieces. A do
 <blockquote>
 <details><summary>Word Tokenization</summary><Br>
 
-In the following example we'll use `.split()` and the a space delimiter to tokenize our sentence:
+In the following example we'll use `.split()` and the space delimiter to tokenize our sentence:
 
 ![Mando](Images/Mando_split.PNG)
 
@@ -297,7 +297,7 @@ For more info on corpora, how they work in NLP and where you can find corpora to
 <details>
 <summary>What is TF-IDF?</summary><br>
 
-Term Frequency * Inverse Document Frequency, or TF-IDF for short, measures the relevance of a word in the document. It is calculated by combining the Term Frequency (TF) and the Inverse Document Frequency (IDF) to get a weighted value.
+Term Frequency * Inverse Document Frequency, or TF-IDF for short, is a weighting factor intended to measure how important a word is to a document in a corpus. It is calculated by combining the Term Frequency (TF) and the Inverse Document Frequency (IDF) to get a weighted value.
 
 Term frequency (TF) is the count of the word in a document of the corpus. Inverse document frequency (IDF) is the number of documents the word appears in throughout the corpus. An increase in TF will make the TF-IDF score go higher, because the more often a word is counted, it can be considered to be more relevant. An increase in IDF will make the TF-IDF score go lower, because the more often a word appears throughout all the documents, it is considered more common and irrevelant.
 
