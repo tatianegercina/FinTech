@@ -6,13 +6,13 @@ In this module we will cover some the basics of finance as well as the mechanics
 
 ### Lesson Plans
 
-* [0.1 Lesson Plan: What is Money?](1/LessonPlan.md)
+* [0.1 Lesson Plan: What is Money?](01-What-Is-Money/LessonPlan.md)
 
-* [0.2 Lesson Plan: What is Risk?](2/LessonPlan.md)
+* [0.2 Lesson Plan: What is Risk?](02-What-Is-Risk/LessonPlan.md)
 
-* [0.3 Lesson Plan: Investing](3/LessonPlan.md)
+* [0.3 Lesson Plan: Investing](03-Investing/LessonPlan.md)
 
-* [0.4 Lesson Plan: Markets](4/LessonPlan.md)
+* [0.4 Lesson Plan: Markets](04-Markets/LessonPlan.md)
 
 - - -
 
