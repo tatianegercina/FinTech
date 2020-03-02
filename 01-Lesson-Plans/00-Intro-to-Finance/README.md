@@ -14,10 +14,6 @@ In this module we will cover some the basics of finance as well as the mechanics
 
 * [0.4 Lesson Plan](4/LessonPlan.md)
 
-### Supplemental
-
-* [Student Guide](Supplemental/StudentGuide.md)
-
 - - -
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
