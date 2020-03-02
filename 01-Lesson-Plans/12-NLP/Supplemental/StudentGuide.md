@@ -57,12 +57,12 @@ This method allows us to handle complex situations such as punctuation. We can a
 </details>
 <details><summary>Sentence Tokenization</summary><br>
 
-In NLP, words are not the only items that can be tokenized.  In the following example, we'll tokenize a short text into sentences.  First we use `.split()` and the period delimiter:
+In NLP, words are not the only items that can be tokenized, sentences can also be tokenized.  In the following example, we'll tokenize a short text into sentences.  First we use `.split()` and the period delimiter:
 
 
 ![Mando3](Images/Mando_sent_split.PNG)
 
-This works ok, but we get more concise results using NLTK's `sent_tokenizer()`:
+This works ok, but what if we have a more complex text? What if our text has exclamation points or question marks? Or, even trickier, what if our text contains periods that do not denote the end of a sentence, but rather some other punctuation, like the period after *Mr.* or *Mrs.*? To work with this type of text, NLTK offers the `sent_tokenizer()`.  It works similar to `word_tokenizer` but breaks apart text as sentence chunks, and is smart enough to know where the sentence breaks should be.  An example of using `sent_tokenzier` is as follows:
 
 ![Mando4](Images/Mando_sent_tokens.PNG)
 
