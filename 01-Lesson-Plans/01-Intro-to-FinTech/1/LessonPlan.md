@@ -232,23 +232,25 @@ In this review portion of the previous activity, students will present their ref
 
   * Cloud infrastructure
 
+Answer any questions before moving on.
+
 ---
 
 ### 11. Instructor Do: The Rise of FinTech (10 min)
 
 In this section, engage students with a facilitated discussion about why FinTech has become so prevalent today.
 
-**File:** [The Rise of FinTech Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_21)
-
-Open the slideshow and use the slides to help guide your discussion, focusing on the following talking points.
+Open the lesson slides deck, move to "The Rise of FinTech" section and use the slides to help guide your discussion, focusing on the following talking points.
 
 As you review the slides, look for opportunities to prompt students to reflect. Use the Socratic method to encourage students to offer their opinions aloud before revealing your own answer. For example, ask students to share examples of innovative FinTech companies and how they are disrupting the financial services industry.
+
+* Market analysis shows that global FinTech investment has grown dramatically in recent years.
+
+* Since 2015, FinTech startups are disrupting in different sectors in Canada, such as: accounting and expenses management, capital markets, lending, personal finance, digital banking, insurance, real estate, among others.
 
 * Recent technological advancements in (big) data and mobile network infrastructure has led to a consumer desire for companies to provide not only more efficient data-driven services, but also quality engagement through scalable mobile platforms.
 
 * To keep up with consumer demand, large financial firms that have been slower to adopt newer technologies have been forced to make larger investments in technology.
-
-* Market analysis shows that global FinTech investment has grown dramatically in recent years.
 
 * As a result, there is a growing demand for technical specialists who have the background and experience to navigate financial waters.
 
@@ -260,21 +262,19 @@ Answer any questions before moving on.
 
 ### 12. Student Do: Alpacalypse Now (15 min)
 
-In this activity, students will once again break off into groups of two to four to define and articulate the challenges faced by the Altruistic Alpacas charity. They will need to list at least five financial or technical challenges associated with each of the five core problem areas defined by the client.
-
-**File:** [Alpacalypse Now Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_6_27)
+In this activity, students will once again break off into groups of two to four to define and articulate the challenges faced by the fictional Altruistic Alpacas charity. They will need to list at least five financial or technical challenges associated with each of the five core problem areas defined by the client.
 
 **Notes:**
 
-* Use the slides to set up this activity.
+* Open the lesson slides and move to the "FinTech Thought Experiments" section to set up this activity.
 
-* The [instructor preparation document](../Instructor_Support/Blockchain.md) contains additional background information for the blockchain related slides.
+* The [instructor preparation document](../Instructional_Support/Blockchain.md) contains additional background information for the blockchain related slides.
 
 * In essence, this thought experiment asks students to define the financial and technical challenges of the Altruistic Alpacas charity. Students may have a mix of financial and technical backgrounds, but this exercise should force them to think creatively about the problem and identify challenges from both a financial and technical perspective.
 
 * The key to executing this exercise in the classroom is to ensure that students are thinking outside their sphere of knowledge as well as thinking deeply about each problem.
 
-* Set a timer for 25 minutes and allow students to discuss their options. Remind them that they should be prepared to discuss these issues with the class.
+* Set a timer for 15 minutes and allow students to discuss their options. Remind them that they should be prepared to discuss these issues with the class.
 
 * As students work, you and your TAs should walk around the classroom and listen to student discussions. When appropriate, nudge them to think more critically. Many students may rely on their personal backgrounds, but this is a good time to think outside the box. For instance:
 
@@ -286,11 +286,9 @@ In this activity, students will once again break off into groups of two to four 
 
 ### 13. Instructor Do: Review Alpacalypse Now (15 min)
 
-**File:** [Review Alpacalypse Now Slides](https://docs.google.com/presentation/d/18MPjh4W831eBO_Ck9z6J38VO-BhrQZVDpJLK-hlYM8k/edit#slide=id.g5ed7add082_5_39)
-
 When time is up, ask a few groups to share some of the challenges they identified. Consider opening a notepad file or using the whiteboard to track a running list of the challenges for each problem area.
 
-Once you have a list of challenges, use the slides to break down some of the potential solutions to these problems.
+Once you have a list of challenges, open the lesson slides and navigate to the "Review Alpacalypse Now" section to break down some of the potential solutions to these problems.
 
 Tell students the following:
 
@@ -304,13 +302,17 @@ Wrap up the activity review by reminding students that while these solutions may
 
 Encourage students by reminding them that they will soon get to dig into these technologies in future classes!
 
+Answer any questions before moving on.
+
 ---
 
 ### 14. Instructor Do: Introduce Homework (10 min)
 
-In this activity, instructors will review the Unit 1 homework assignment with the class.
+In this activity, you will review the Unit 1 homework assignment with the class.
 
-Open the [homework instructions](../../../02-Homework/01-FinTech/Instructions/README.md) and briefly discuss the task and due date.
+**File:** [Homework instructions](../../../02-Homework/01-FinTech/Instructions/README.md)
+
+Open the homework instructions and briefly discuss the task and due date.
 
 **Note:** As a general rule, all homework is due one week after the last day of the unit is covered.
 
@@ -322,4 +324,4 @@ Answer any questions, and thank students for their time and a great first class!
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
