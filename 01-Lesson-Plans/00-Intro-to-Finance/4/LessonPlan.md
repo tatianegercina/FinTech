@@ -14,7 +14,7 @@ By the end of this module, you will be able to:
 
 * Understand what derivatives are, and how they are sometimes used in practice
 
-* Understand the key risks and business concepts behind both insurance and real estate markets.
+* Understand the key risks and business concepts behind both insurance and real estate markets
 
 
 ### Reading: What is a Market?
