@@ -40,7 +40,7 @@ By the end of this class, students will be able to:
 
 * Activities that involve programming solutions will have an associated coding file linked at the beginning of the activity section. Click on the link to take you to the coding file required for the activity.
 
-* Please reference our [Student FAQ](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
+* Remind the class that a student guide for each unit can be found in the corresponding unit's supplemental folder. Each guide has helpful links and FAQ's for the unit. The unit 2 student guide can be found [here](../Supplemental/StudentGuide.md). If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
 
 * Have your TAs keep track of the time with the [Time Tracker](TimeTracker.xlsx).
 
@@ -299,7 +299,7 @@ Set up the following real-world scenario to help explain variables:
 
 * There are advantages to tracking performance or ranking in a game as `score`. First, it increases flexibility. We can reference `score` without specifying if its the score of a baseball game, video game, or even an exam. Regardless of context, `score` has a value, and that value has meaning. `score` as a word and concept is also easy to remember, and its significance is stored in people's mind (memory). `score` can be referenced in conversation, and others will understand its representation. This makes `score` a great example of a variable."
 
-Transition to discussing variables. Use the [slides]((https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57f3228557_0_1) to direct your discussion.
+Transition to discussing variables. Use the [slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f1GE58IrZwX1bfLvjoSbw/edit#slide=id.g57f3228557_0_1) to direct your discussion.
 
 * Variables are one of the key components of programming languages and serve as the primary means of data storage. All variables must have a name, value, and type.
 
