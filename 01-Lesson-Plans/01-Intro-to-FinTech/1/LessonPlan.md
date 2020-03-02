@@ -30,8 +30,6 @@ By the end of class, students will:
 
 * When reviewing the course requirements, be sure to emphasize that cheating or plagiarism of any kind is prohibited; engaging in this kind of behavior can endanger student eligibility for certification upon graduation.
 
-* Please reference our [Student FAQ](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
-
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [1.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=45af7a90-448b-4d8a-a37a-aa94015e8a75) Note that this video may not reflect the most recent lesson plan.
 
