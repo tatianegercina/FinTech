@@ -87,7 +87,7 @@ Similarly, you can invoke other languages. For example, here we look at French s
 </details>
 <details><summary>Usage:</summary><br>
 
-Once we have our stopwords we can remove them using a for loop. First we store our stopwords in a variable:
+Once we have our stopwords we can remove them using a for loop. First we store our stopwords as a set in a variable. The `set` data structure creates an unordered list with duplicates removed. Sets make it easy to compare the contents of lists to find the difference:
 
 ```python
 sw = set(stopwords.words('english'))
