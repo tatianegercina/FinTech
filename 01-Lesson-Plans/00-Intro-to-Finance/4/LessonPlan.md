@@ -4,7 +4,18 @@
 
 ### Overview
 
+In this module, we will discuss some markets for investment securities. In particular, we'll go into some detail about equity markets, insurance markets, derivatives, currencies, and real estate.
+
 ### Module Objectives
+
+By the end of this module, you will be able to:
+
+* Identify a few of the largest markets for investment securities (e.g., stocks, currencies, real estate)
+
+* Understand what derivatives are, and how they are sometimes used in practice
+
+* Understand the key risks and business concepts behind both insurance and real estate markets.
+
 
 ### Reading: What is a Market?
 
