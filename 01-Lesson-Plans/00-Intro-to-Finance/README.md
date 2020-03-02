@@ -1,4 +1,4 @@
-## Unit 1: Intro to FinTech
+## Unit 0: Intro to Finance
 
 ### Overview
 
