@@ -28,7 +28,7 @@ By the end of class, students will:
 
 * Make sure your TAs have sufficient time to introduce themselves as well, as they will be major stakeholders when it comes to helping students progress through the course.
 
-* When reviewing the course requirements, be sure to emphasize that cheating or plagiarism of any kind is prohibited; engaging in this kind of behavior can endanger student eligibility for certification upon graduation.
+* When reviewing the course requirements, be sure to emphasize that cheating or plagiarism of any kind is prohibited; engaging in this kind of behaviour can endanger student eligibility for certification upon graduation.
 
 * Please reference our [Student FAQ](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
 
@@ -132,7 +132,7 @@ Answer any questions before moving on.
 
 ### 5. Instructor Do: Course Overview (10 min)
 
-In this section, provide an overview of the topics and technologies used in the course, as well as the timeline for each topic or unit.
+In this section, provide an overview of the topics and technologies used in the course. Also, present the timeline for each subject or unit.
 
 Use the slideshow to go over the course agenda and timeline.
 
@@ -168,7 +168,7 @@ Open the lesson slides, move to the "Tips" section and emphasize the following p
 
 * Due to the challenging nature of this course, there will be many moments where you will doubt yourselves. Remember that everyone starts as a beginner, including the instructor. Also, remember why you were admitted to this program in the first place: you have what it takes to succeed.
 
-* Form a community with your classmates. Even though challenging times are up ahead, as students you have a solid support system: the instructor, TAs, student success manager, and, perhaps most importantly, each other. When you're frustrated or stuck, remember that we're all in this together. Seek help when you need it and lift each other up.
+* Form a community with your classmates. Even though challenging times are up ahead, as students, you have a reliable support system: the instructor, TAs, student success manager, and, perhaps most importantly, each other. When you're frustrated or stuck, remember that we're all in this together. Seek help when you need it and lift each other up.
 
 * Lastly, learning is supposed to be frustrating! It's a process, so stick with it. Things only get easier when we choose to embrace the difficulty and put in the hours to succeed.
 
@@ -222,7 +222,7 @@ In this review portion of the previous activity, students will present their ref
 
 * Ask for a few volunteers to share their group's thoughts on what they felt would be most surprising to a financial analyst from 1999 witnessing the current state of the finance world.
 
-* Take note of each group's findings and emphasize some of the overarching themes regarding the state of the current FinTech ecosystem. Some themes that are likely to come up include:
+* Take note of each group's findings and emphasize some of the overarching themes regarding the state of the current FinTech ecosystem. Some topics that are likely to come up include:
 
   * Automation
 
@@ -272,11 +272,13 @@ In this activity, students will once again break off into groups of two to four 
 
 * In essence, this thought experiment asks students to define the financial and technical challenges of the Altruistic Alpacas charity. Students may have a mix of financial and technical backgrounds, but this exercise should force them to think creatively about the problem and identify challenges from both a financial and technical perspective.
 
-* The key to executing this exercise in the classroom is to ensure that students are thinking outside their sphere of knowledge as well as thinking deeply about each problem.
+* To succeed in this exercise in the classroom, ensure that students are thinking outside their sphere of knowledge.
+
+* Challenge students to think deeply about each problem.
 
 * Set a timer for 15 minutes and allow students to discuss their options. Remind them that they should be prepared to discuss these issues with the class.
 
-* As students work, you and your TAs should walk around the classroom and listen to student discussions. When appropriate, nudge them to think more critically. Many students may rely on their personal backgrounds, but this is a good time to think outside the box. For instance:
+* As students work, you and your TAs should walk around the classroom and listen to student discussions. When appropriate, nudge them to think more critically. Many students may rely on their backgrounds, but this is an excellent time to think outside the box. For instance:
 
   * If students seem to have focused on only the financial aspects of the problem, prod them to think about the technical challenges. Or maybe they have taken an analytical approach; if so, ask about a machine learning/AI approach. You can also ask if they considered a cryptocurrency or blockchain solution, and so on.
 
