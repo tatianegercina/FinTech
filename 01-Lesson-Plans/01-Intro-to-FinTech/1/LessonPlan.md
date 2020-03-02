@@ -30,7 +30,7 @@ By the end of class, students will:
 
 * When reviewing the course requirements, be sure to emphasize that cheating or plagiarism of any kind is prohibited; engaging in this kind of behavior can endanger student eligibility for certification upon graduation.
 
-* Please reference our [Student FAQ](../../../06-Instructor-Resources/README.md) for answers to questions frequently asked by students of this program. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
+* Let students know a student guide for each unit can be found in the corresponding unit's supplemental folder. Each guide has helpful links and FAQ's for the unit. The unit 1 student guide can be found [here](../Supplemental/StudentGuide.md). If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [1.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=45af7a90-448b-4d8a-a37a-aa94015e8a75) Note that this video may not reflect the most recent lesson plan.
@@ -265,7 +265,7 @@ In this activity, students will once again break off into groups of two to four 
 
 * Use the slides to set up this activity.
 
-* The [instructor preparation document](../Instructor_Support/Blockchain.md) contains additional background information for the blockchain related slides.
+* The [instructor preparation document](../Instructional_Support/Blockchain.md) contains additional background information for the blockchain related slides.
 
 * In essence, this thought experiment asks students to define the financial and technical challenges of the Altruistic Alpacas charity. Students may have a mix of financial and technical backgrounds, but this exercise should force them to think creatively about the problem and identify challenges from both a financial and technical perspective.
 

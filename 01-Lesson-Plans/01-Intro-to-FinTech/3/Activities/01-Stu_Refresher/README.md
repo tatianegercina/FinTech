@@ -1,12 +1,12 @@
 # Create and Personalize a GitHub Repository
 
-In this activity, you will create a GitHub repository to hold future work assets that can be showcased to potential employers. 
+In this activity, you will create a GitHub repository to hold future work assets that can be showcased to potential employers.
 
 ## Instructions
 
 Complete the following steps.
 
-1. Navigate to [GitHub](www.github.com) and log in with your credentials. 
+1. Navigate to [GitHub](https://www.github.com) and log in with your credentials.
 
 1. Create a new GitHub repository.
 
@@ -18,13 +18,13 @@ Complete the following steps.
 
     * What are your career goals?
 
-    * Why did you choose FinTech as a career path? 
+    * Why did you choose FinTech as a career path?
 
 1. Update the `README.md` file in your online GitHub repository.
 
 ## Hint
 
-To learn more about git and how it's used, use [this resource](https://www.atlassian.com/git/tutorials/what-is-git). 
+To learn more about git and how it's used, use [this resource](https://www.atlassian.com/git/tutorials/what-is-git).
 
 ---
 
