@@ -273,7 +273,7 @@ Ngrams give NLP models more predictive power by revealing the context of words t
 
 Ngrams give context to this statement by looking at how the meaning changes when words are grouped in certain ways. The word *hammer* in this instance has bigrams of *Let's hammer* and *hammer out*.  The words *Let's* and *out* gives context that *hammer* in this instance is being used as a verb. The bigrams *hammer out* and *the details* might also tell our model that the word *hammer* is not being used literally, but rather in a context of clarification.
 
-If instead our sentence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun.  Were the sentence *Let's hammer out the details... not!*, then the word *not* would negate the sentence and also hint at sarcasm.  Both examples show a slight change in pattern and word order can alter the entire context of a sentence.  Ngrams help model pick up on those cues.
+If instead our sentence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun.  Were the sentence *Let's hammer out the details... not!*, then the word *not* would negate the sentence and also hint at sarcasm.  Both examples show a slight change in pattern and word order can alter the entire context of a sentence.  Ngrams help models pick up on these cues.
 
 
 
