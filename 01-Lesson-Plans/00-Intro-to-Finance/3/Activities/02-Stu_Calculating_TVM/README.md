@@ -1,6 +1,6 @@
 # Calculating TVM
 
-In order to build some familarity with the TVM equation, let's run through a quick practice problem
+In order to build some familiarity with the TVM equation, let's run through a quick practice problem
 
 ## Instructions
 
