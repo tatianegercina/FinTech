@@ -24,7 +24,7 @@ In this homework assignment, you will be accomplishing three main tasks:
 
 ### Prepare the Data
 
-First, read and clean several CSV files for analysis. The CSV files include whale portfolio returns, algorithmic trading portfolio returns, and S&P 500 historical prices. Use the [Whale Analysis Starter Code](Starter_Code/whale_analyis.ipynb) to complete the following steps:
+First, read and clean several CSV files for analysis. The CSV files include whale portfolio returns, algorithmic trading portfolio returns, and S&P 500 historical prices. Use the [Whale Analysis Starter Code](Starter_Code/whale_analysis.ipynb) to complete the following steps:
 
 1. Use Pandas to read in each of the [CSV files](Resources) as a DataFrame. Be sure to convert the dates to a `DateTimeIndex`.
 
