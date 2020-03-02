@@ -87,7 +87,7 @@ Similarly, you can invoke other languages. For example, here we look at French s
 </details>
 <details><summary>Usage:</summary><br>
 
-Once we have our stopwords we can remove them using a for loop. First we store our stopwords as a set in a variable. The `set` data structure creates an unordered list with duplicates removed. Sets make it easy to compare the contents of lists to find the difference:
+Once we have our stopwords we can remove them using a for loop. First we store our stopwords as a set in a variable. The `set` data structure creates an unordered list with duplicates removed. Sets make it easy to compare the contents of lists to find their differences:
 
 ```python
 sw = set(stopwords.words('english'))
@@ -264,19 +264,20 @@ The output is a dictionary of values that hold our two word combinations and the
 <details>
 <summary>Why they're important:</summary><br>
 
-Ngrams help computers to understand the context of language by looking at groups of words. . As humans, we can break apart a sentence quickly to grasp the meaning behind it. For an example, let's use the following sentence: *Let's hammer out the details of our trip*. The bigrams for the sentence are:
+Ngrams give NLP models more predictive power by revealing the context of words through analysis of their patterns. Humans innately understand the context of language by processing a sentence as we hear it.  We can tell by tone and inflection if the statement is a question or exlamation, and we can tell by word placement if a statement is postive of negative.  Ngrams give computers a similar ability by looking at groups of words. For an example, let's use the following sentence: *Let's hammer out the details.*. The bigrams for the sentence are:
 
 *Let's hammer*,<br>
 *hammer out*,<br>
-*out the*<br>
-*the details*,<br>
-*details of*,<br>
-*of our*<br>
-*our trip.*<br>
+*out the*,<br>
+*the details*<br>
 
-Ngrams give us more context by looking at how the meaning changes when considering adjacent groups of words instead of single words. The word *hammer* in this instance has bigrams of *Let's hammer* and *hammer out*.  The words *Let's* and *out* gives context that *hammer* in this instance is being used as a verb.
+Ngrams give context to this statement by looking at how the meaning changes when words are grouped in certain ways. The word *hammer* in this instance has bigrams of *Let's hammer* and *hammer out*.  The words *Let's* and *out* gives context that *hammer* in this instance is being used as a verb. The bigrams *hammer out* and *the details* might also tell our model that the word *hammer* is not being used literally, but rather in a context of clarification.
 
-If instead our sentence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun, thus an entirely different context.
+If instead our sentence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun.  Were the sentence *Let's hammer out the details... not!*, then the word *not* would negate the sentence and also hint at sarcasm.  Both examples show a slight change in pattern and word order can alter the entire context of a sentence.  Ngrams help model pick up on those cues.
+
+
+
+
 
 </details>
 </blockquote><br>
