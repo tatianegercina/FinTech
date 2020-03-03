@@ -126,7 +126,7 @@ Regex stands for *regular expression* and it allows us to search for text using 
 <details>
 <summary>How it's used:</summary><br>
 
-Before we tokenize, we apply regex. This gives us clean token data. Let's apply regex to our sentence sentence: *The Mandalorian has rescued baby Yoda. I do not care if he is not the real Yoda. I am still calling him that.*
+Before we tokenize, we apply regex. This gives us clean token data. Let's apply regex to the following sentence: *"Dylan and Eli love playing video games. They have lots of favorites."*
 
 First we import the `re` python module, and compile with the pattern we are searching for. In this case we are searching for any character that is not a letter. The `^` symbol indicates *not*. `A-Z` and `a-z` indicate any upper or lower case letter, and the empty `space` at the end indicates a `space`. When we compile using `^A-Za-Z `, we are looking for any character that is not an upper or lower case letter, or a space. We then use `.sub` to substitute something new in the place of any matches. In the example below we are substituting `''` for any matches, which results in the deletion of that character:
 
@@ -166,7 +166,7 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 ```
 
-We can then call on the function by using the method `.lemmatize()`. In the following example we will lemmatize the sentence:  *'Of all babies in the many worlds in all the galaxies that make our universe, baby yoda rules all hearts as cutest'*. The tokenized form of this sentence is as follows:
+We can then call on the function by using the method `.lemmatize()`. In the following example we will lemmatize the sentence:  *"Dylan and Eli love playing video games. They have lots of favorites."*. The tokenized form of this sentence is as follows:
 ```python
 ['dylan',
  'eli',
@@ -230,14 +230,21 @@ Input:
 ```python
 from nltk.tokenize import word_tokenize
 
-sentence = 'The mandalorian has rescued baby Yoda.'
+sentence = 'Dylan and Eli love playing video games.'
 sentence = word_tokenize(sentence)
 print(sentence)
 ```
 
 Output:
 ```python
-['The', 'mandalorian', 'has', 'rescued', 'baby', 'Yoda', '.']
+['Dylan',
+ 'and',
+ 'Eli',
+ 'love',
+ 'playing',
+ 'video',
+ 'games',
+ '.']
 ```
 
 We can then use NLTK to work with ngrams as follows:
@@ -251,12 +258,13 @@ Counter(ngrams(sentence, n=2))
 ```
 Output:
 ```python
-Counter({('The', 'mandalorian'): 1,
-         ('mandalorian', 'has'): 1,
-         ('has', 'rescued'): 1,
-         ('rescued', 'baby'): 1,
-         ('baby', 'Yoda'): 1,
-         ('Yoda', '.'): 1})
+Counter({('Dylan', 'and'): 1,
+         ('and', 'Eli'): 1,
+         ('Eli', 'love'): 1,
+         ('love', 'playing'): 1,
+         ('playing', 'video'): 1,
+         ('video', 'games'): 1,
+         ('games', '.'): 1,
 ```
 
 The output is a dictionary of values that hold our two word combinations and the number of times those two words appear together.
@@ -307,13 +315,13 @@ The calculated value of TF-IDF is a number from 0 to 1. When the score approache
 
 For example:
 
-If the word *Yoda* appears 500 times in my 10,000 word document then the TF is high:  `500 / 10,000 = 0.05`.
+If the word *video* appears 500 times in my 10,000 word document then the TF is high:  `500 / 10,000 = 0.05`.
 
-If I have 10,000 documents and *Yoda* only appears in 10 of them, then IDF is low: `LOG(10,000 / 10) = 3`
+If I have 10,000 documents and *video* only appears in 10 of them, then IDF is low: `LOG(10,000 / 10) = 3`
 
 In this example, the TF-IDF is: `0.05 / 3 = 0.0167`.
 
-This is most certainly a number approaching 0, and would imply a unique, or relevant word. In this example, because *Yoda* appears frequently throughout the document, but not frequently throughout the set of documents, the TF-IDF is high.
+This is most certainly a number approaching 0, and would imply a unique, or relevant word. In this example, because *video* appears frequently throughout the document, but not frequently throughout the set of documents, the TF-IDF is high.
 
 </blockquote><br>
 </details>
@@ -334,7 +342,7 @@ Additionally, NLTK was built with research and education in mind. It's a great r
 Part of speech tagging (POS tagging) is the process of labeling each word or token in a sentence as its part of speech (noun, verb, adjective), while dependency parsing takes those words and determines the relationships between each. Dependency parsing is the step that comes after POS tagging.
 
 If we were to POS tag and depedency parse the following sentence:
-`'The mandalorian has saved baby Yoda'`, the results would look like:
+`'Dylan and eli love video games.'`, the results would look like:
 <img src='Images/sentence_dependencies.PNG' width = 900>
 
 </details>
