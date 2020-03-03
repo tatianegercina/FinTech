@@ -31,6 +31,7 @@ By the end of this class, students will be able to:
 * Emphasize that understanding the history and larger context of FinTech is just as important as knowing what FinTech is. Employers will measure candidates not only by their technical skills, but also by their knowledge of what is happening in the financial services industry and the ability to grasp the bigger picture.
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [1.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0ab213e1-73b9-430f-b329-aa9500e80c9f) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
