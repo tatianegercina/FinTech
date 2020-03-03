@@ -100,7 +100,7 @@ Open the lesson slides and navigate to the "Introducing the ROC Curve and AUC" s
 
 * An `AUC=0.50` means that the model is unable to distinguish between positive and negative classes.
 
-* Ideally, we may want to have `AUC` values ranging between `0` and `1`, where higher the AUC, better the model is at predicting `0s` as `0s` and `1s` as `1s`.
+* Ideally, we may want to have `AUC` values ranging between `0` and `1`, where the higher the AUC, the better the model is at predicting `0s` as `0s` and `1s` as `1s`.
 
 * So, a model with an `AUC=0.90` may be better than a model with an `AUC=0.65`.
 
@@ -172,7 +172,7 @@ Continue the data preprocessing and highlight the following:
   X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, random_state=78)
   ```
 
-* We split the initial training set, to create a new training set to fit the model and a validation test which data is going to be used during the training process to verify the model's metrics.
+* We split the initial training set to create a new training set to fit the model, and a validation test for which data is going to be used during the training process to verify the model's metrics.
 
 * Now it's time to define our deep neural network, we will use a `Sequential` model and two `Dense` layers.
 
@@ -207,7 +207,7 @@ Explain to students that we are using the `sigmoid` activation function since we
 
 Next, the model is compiled. Explain to students that the `binary_crossentropy` loss function is used since we want to create a binary classification model.
 
-Point out that we are defining some metrics to assess the model. These metrics are part of [the Keras metrics module](https://www.tensorflow.org/api_docs/python/tf/keras/metrics?version=stable) and that these are the same metrics students are already familiar from previous units when the binary classification was introduced. The only new metric is `AUC` that will be explained next in the model's evaluation.
+Point out that we are defining some metrics to assess the model. These metrics are part of [the Keras metrics module](https://www.tensorflow.org/api_docs/python/tf/keras/metrics?version=stable) and are the same metrics students are already familiar with from previous units when binary classification was introduced. The only new metric is `AUC`, which will be explained next in the model's evaluation.
 
 Explain to students that the `name` parameter is used to quickly identify each parameter during the training process and the model evaluation phase.
 
@@ -323,7 +323,7 @@ Highlight the following as you continue live coding the demo.
 
   ![roc-auc-6](Images/roc-auc-6.png)
 
-* Plotting the training and testing data ROC curves is a visual technique to validate how the model behaves with different data. It is also a way to see if my results with test data are relatively similar to train data or not.
+* Plotting the training and testing data ROC curves is a visual technique to validate how the model behaves with different data. It is also a way to see if the results with test data are relatively similar to train data or not.
 
 * In this case, both curves are quite similar; usually, this is the expected behavior of the training and testing ROC curves.
 
@@ -375,13 +375,13 @@ Highlight the following reasons that ANNs are not suitable for detecting pattern
 
 * If we record in movement, we may have enough information to make a better prediction since we can have a sequence of images representing the car's movement.
 
-* A new challenge arises, ANNs don't have a memory mechanism to store the different states of a sequence of images _per se_.
+* There is a challenge with ANNs since this type of neural network doesn't have a memory mechanism to store the different states of a sequence of images _per se_.
 
 * This is where RNNs comes into action! RNNs are good at modeling sequence data thanks to their sequential memory.
 
 * Following the example in the slides, using RNNs, we can predict that the car is moving to the right.
 
-Explain to class, that in contrast to an ANN, an RNN can remember previous data thanks to a feedback loop. This feedback loop allows information to flow from one step to the next along the sequence.
+Explain to the class, that in contrast to an ANN, an RNN can remember previous data thanks to a feedback loop. This feedback loop allows information to flow from one step to the next along the sequence.
 
 ![ANNs Vs. RNNs](Images/ann_vs_rnn.png)
 
@@ -459,13 +459,13 @@ Explain to students that you will start exploring the LSTM RNNs by creating a mo
 
 Open the unsolved Jupyter notebook, live code the solution, and highlight the following.
 
-* For this demo, we are going to use a dataset that contains `6878` customer reviews of Coffee Shops at Austin, Texas. The reviews were taken from Yelp; however, the names of the Coffee Shops were anonymized for privacy reasons.
+* For this demo, we are going to use a dataset that contains `6878` customer reviews of Coffee Shops in Austin, Texas. The reviews were taken from Yelp; however, the names of the Coffee Shops were anonymized for privacy reasons.
 
 * The dataset has the following columns:
 
   * `coffee_shop_name`: The anonymized name of the coffee shop.
 
-  * `full_review_text`: The customers reviews.
+  * `full_review_text`: The customer reviews.
 
   * `sentiment`: The sentiment of each customer's review. `0` - Negative, `1` - Positive.
 
@@ -515,7 +515,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
   ![rnn-sentiment-2](Images/rnn-sentiment-2.png)
 
-* First, the text should be tokenized by fitting the Tokenizer class on the data set. As you can see, I use "lower = True" argument to convert the text into lowercase to ensure consistency of the data. Afterward, we should map our list of words (tokens) to a list of unique integers for each unique word using texts_to_sequences class.
+* First, the text should be tokenized by fitting the Tokenizer class on the data set, using the "lower = True" argument to convert the text into lowercase to ensure consistency of the data. Afterward, map the list of words (tokens) to a list of unique integers for each unique word using the `texts_to_sequences` class.
 
 * The RNN model requires that all the values of the `X` vector have the same length; the `pad_sequences` method will ensure that all integer encoded reviews have the same size. Each entry in `X` will be shortened to `140` integers, or pad with `0's` in case it's shorter.
 
@@ -537,7 +537,7 @@ Highlight the following about these sets:
 
 * First of all, we create the training and testing sets as we usually do.
 
-* Now it's time to start building the model using Keras. We will use the `Sequential` model as have been done before; however, there are two new types of layers that are needed: `Embedding` and `LSTM`.
+* Now it's time to start building the model using Keras. We will use the `Sequential` model as has been done before; however, there are two new types of layers that are needed: `Embedding` and `LSTM`.
 
 ```python
 # Import Keras modules for model creation
@@ -551,7 +551,7 @@ Highlight the following about these new types of layers.
 
 * [`LSTM` layer](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM?version=stable): It's used to add an LSTM layer to the model.
 
-Explain to students that the `Embedding` layer requires at least three parameters as follows. The `vocabulary_size` refers to the size of the vocabulary in the text that is going to be processed; this variable is set at the total number of words in the `tokenizer` dictionary plus `1`. The second parameter needed by this layer is the `input_length`; this parameter is set at `140` (`max_words` variable) that is the value defined for padding the reviews. Finally, the third parameter is the `embedding_size`; this parameter specifies how many dimensions will be used to represent each word. As a rule-of-thumb, a multiple of eight could be used; for this demo, tuning the model value `64` delivered the best result.
+Explain to students that the `Embedding` layer requires at least three parameters as follows. The `vocabulary_size` refers to the size of the vocabulary in the text that is going to be processed; this variable is set at the total number of words in the `tokenizer` dictionary plus `1`. The second parameter needed by this layer is the `input_length`; this parameter is set at `140` (`max_words` variable) that is the value defined for padding the reviews. Finally, the third parameter is the `embedding_size`; this parameter specifies how many dimensions will be used to represent each word. As a rule-of-thumb, a multiple of eight could be used; for this demo, tuning the model value to `64` delivered the best result.
 
 ```python
 # Model set-up
@@ -578,7 +578,7 @@ model.add(Dense(1, activation="sigmoid"))
 
 * The model is defined as a `Sequential` instance.
 
-* The first layer is an `Embedding` type, this layer process the integer-encoded sequence of each review comment to create a dense vector representation that will be used by the `LSTM` layer.
+* The first layer is an `Embedding` type, this layer processes the integer-encoded sequence of each review comment to create a dense vector representation that will be used by the `LSTM` layer.
 
 * Next, we add an `LSTM` layer with `280` units (the double of the `max_words` variable as initial test value). This layer transforms the dense vector into a single vector that contains information about the entire sequence that will be used by the activation function in the `Dense` layer to score the sentiment.
 
