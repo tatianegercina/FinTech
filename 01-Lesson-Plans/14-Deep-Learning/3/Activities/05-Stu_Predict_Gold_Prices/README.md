@@ -30,13 +30,13 @@ In this section, you will retrieve the Gold historical prices from the London Bu
 
 #### Data Cleaning
 
-Before continue, corroborate if there are any `null` or missing values in the DataFrame, if so, fill the missing values with the previous price in the series.
+Before you continue, corroborate if there are any `null` or missing values in the DataFrame, if so, fill the missing values with the previous price in the series.
 
 **Note:** You may want to review the [Working with missing data guide](https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html) from the Pandas documentation.
 
 #### Create the Features `X` and Target `y` Data
 
-Use the `window_data()` function bellow, to create the features set `X` and the target vector `y`. Define a window size of `30` days and use the column of the closing gold price (`USD (PM)`) for as feature and target column; this will allow your model to predict gold prices in USD.
+Use the `window_data()` function below to create the features set `X` and the target vector `y`. Define a window size of `30` days and use the column of the closing gold price (`USD (PM)`) for the feature and target column; this will allow your model to predict gold prices in USD.
 
 ```python
 def window_data(df, window, feature_col_number, target_col_number):
@@ -67,7 +67,7 @@ Before training the RNN LSTM model, use the `MinMaxScaler` from `sklearn` to sca
 
 #### Reshape Features Data for the LSTM Model
 
-The LSTM API from Keras needs to receive the features data as a _vertical vector_, so that reshape the `X` data in the form `reshape((X_train.shape[0], X_train.shape[1], 1))`. Both sets, training, and testing should be reshaped.
+The LSTM API from Keras needs to receive the features data as a _vertical vector_, so you must reshape the `X` data in the form `reshape((X_train.shape[0], X_train.shape[1], 1))`. Both sets, training, and testing should be reshaped.
 
 ### Build and Train the LSTM RNN
 
@@ -111,7 +111,7 @@ You will need to:
 
 2. Use the `X_test` data to make predictions.
 
-3. Create a DataFrame of Real (`y_test`) vs. predicted values.
+3. Create a DataFrame of real (`y_test`) vs. predicted values.
 
 4. Plot the real vs. predicted values as a line chart.
 

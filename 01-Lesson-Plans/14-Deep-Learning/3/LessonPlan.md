@@ -637,7 +637,7 @@ Answer any questions before moving on.
 
 ---
 
-### 6. Students Do: Sentiment Analysis - RNNs Vs. Vader (30 min)
+### 6. Students Do: Sentiment Analysis - RNNs Vs. Vader (40 min)
 
 In this activity, students will use two different models to score sentiment. The goal is to put the performance metrics and techniques students have learned into action to decide which model performs better between VADER and RNN LSTM.
 
@@ -667,7 +667,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
 * Scoring sentiment is adding value to financial decisions nowadays, that's why it's essential to know how to score sentiment using different models.
 
-* We used a dataset about movie reviews in this activity, but also we can use news feeds, blogs, or social media to score sentiment.
+* We used a dataset about movie reviews in this activity, but we can also use news feeds, blogs, or social media to score sentiment.
 
 * The goal of this activity is to compare the performance of VADER sentiment Vs. an RNN LSTM model to decide which one could be better to score sentiment.
 
@@ -746,7 +746,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
 * Since we want to compare these two models on scoring sentiment as positive or negative, we need a way to interpret the polarity scores given by VADER.
 
-* Following some recommendations of NLP researchers, we define a threshold of `0.1` to label a review as positive, if the `compound` score is greater or equal than `0.1`, the review comment will be positive (append `1` to `y_vader_pred`); if the `compound` score is below `0.1`, the review comment will be negative (append `0` to `y_vader_pred`).
+* Following some recommendations of NLP researchers, we define a threshold of `0.1` to label a review as positive, if the `compound` score is greater than or equal to `0.1`, the review comment will be positive (append `1` to `y_vader_pred`); if the `compound` score is below `0.1`, the review comment will be negative (append `0` to `y_vader_pred`).
 
 * Once we score the sentiment using VADER, we need to normalize the values of the `y_vader_prob` list. We will use the min-max normalization algorithm.
 
@@ -771,7 +771,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
 * Either method you use, will lead to the same results of normalizing the values between `0` and `1`. We will consider the first approach for this demo.
 
-* At this time, we have the original sentiments in `y_test`, the predicted sentiment classes in `y_vader_pred`, and the sentiment predictions in `y_vader_prob`. Not we will continue to score sentiment using an RNN LSTM model.
+* At this time, we have the original sentiments in `y_test`, the predicted sentiment classes in `y_vader_pred`, and the sentiment predictions in `y_vader_prob`. Now we will continue to score sentiment using an RNN LSTM model.
 
 * As you know, RNN LSTM models work with numerical data, so we need to encode the text data on the review comments to a numerical representation.
 
@@ -801,7 +801,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
   ![Contrast of a move review comment as text and as numerical sequence](Images/text-vs-sequence.png)
 
-* RNN LSTM models need equal size inputs, so that, we will pad the sequences stored in `X_pad` up to `140` integers using the `pad_sequences` method from Keras.
+* RNN LSTM models need equal size inputs, so we will pad the sequences stored in `X_pad` up to `140` integers using the `pad_sequences` method from Keras.
 
   ```python
   # Import the pad_sequences method from Keras
@@ -900,13 +900,13 @@ At this point in the solution's review, switch to the solved version to continue
   y_rnn_pred = model.predict_classes(X_test_rnn, batch_size=1000)
   ```
 
-* Now, we have sentiment scoring with both models, it's time to compare their performance.
+* Now, that we have sentiment scoring with both models, it's time to compare their performance.
 
 * We start by comparing the models' accuracy using the `accuracy_score` method from `sklearn`.
 
   ![Comparing models accuracy](Images/vader-rnn-accuracy.png)
 
-* At this point, the RNN LSTM model looks better since it has higher accuracy, let's take a look to the confusion matrices of this two models; we use the `confusion_matrix` method from `sklearn` for this task.
+* At this point, the RNN LSTM model looks better since it has higher accuracy, let's take a look at the confusion matrices of these two models; we use the `confusion_matrix` method from `sklearn` for this task.
 
 * Using the `confusion_matrix` method, and passing as parameters the sentiments from the testing data and the sentiments scored by both models, we gather the data needed to create and display a confusion matrix using a Pandas DataFrame.
 
@@ -914,7 +914,7 @@ At this point in the solution's review, switch to the solved version to continue
 
   ![Confusion matrix for VADER](Images/confusion-matrix-rnn.png)
 
-* After reviewing both confusion matrices, we observe that once again, the RNN LSTM model performs betters since it has less false positives and false negatives.
+* After reviewing both confusion matrices, we observe that once again, the RNN LSTM model performs better since it has less false positives and false negatives.
 
 * Another exciting tool for comparing binary classifications models is the `classification_report` from `sklearn`, since we can analyze metrics such as precision, recall, and the F1-score.
 
@@ -936,7 +936,7 @@ At this point in the solution's review, switch to the solved version to continue
   fpr_test_vader, tpr_test_vader, thresholds_test_vader = roc_curve(y_test, y_vader_prob_norm)
   ```
 
-* After calculating the `fpr` and `tpr` for VADER, we use the `auc` method of `sklearn` to calculate the AUC for VADER. Next, we Round the final result up to `4` decimals.
+* After calculating the `fpr` and `tpr` for VADER, we use the `auc` method of `sklearn` to calculate the AUC for VADER. Next, we round the final result up to `4` decimals.
 
   ```python
   # AUC for VADER
@@ -1018,9 +1018,9 @@ Answer any questions before moving on.
 
 ---
 
-### 9. Instructor Do: RNN LSTM and Time Series (20 min)
+### 9. Instructor Do: RNN LSTM and Time Series (15 min)
 
-In this activity, students will learn how to built RNN LSTM models for time series forecasting using Keras.
+In this activity, students will learn how to build RNN LSTM models for time series forecasting using Keras.
 
 **Files:**
 
@@ -1032,7 +1032,7 @@ Explain to students that RNN LSTM models can also be used to forecast time-serie
 
 Open the unsolved version of the Jupyter notebook; live code the solution and highlight the following:
 
-* At a glance, forecasting time series data using RNN LSTM models could be seen as a three steps process:
+* At a glance, forecasting time series data using RNN LSTM models could be seen as a three step process:
 
   * **Step 1:** Data preparation.
 
@@ -1133,7 +1133,7 @@ y_train = scaler.transform(y_train)
 y_test = scaler.transform(y_test)
 ```
 
-Explain to students that the LSTM API from Keras needs to receive the features data as a _vertical vector_  so that we need to reshape the `X` data in the form `reshape((X_train.shape[0], X_train.shape[1], 1))`. Both sets, training, and testing are reshaped.
+Explain to students that the LSTM API from Keras needs to receive the features data as a _vertical vector_  so we need to reshape the `X` data in the form `reshape((X_train.shape[0], X_train.shape[1], 1))`. Both sets, training, and testing are reshaped.
 
 ```python
 # Reshape the features for the model
@@ -1191,13 +1191,13 @@ model.add(Dense(1))
 
 * After each `LSTM` layer, we add a `Dropout` layer to prevent overfitting.
 
-* The parameter passed to the `Dropout` layer is the fraction of nodes that will be drop on each epoch.
+* The parameter passed to the `Dropout` layer is the fraction of nodes that will be dropped on each epoch.
 
-* For this demo, we will use a dropout value of `0.2`. It means that on each epoch, we will randomly drop `20%` of the units.
+* For this demo, we will use a dropout value of `0.2`, which means that on each epoch, we will randomly drop `20%` of the units.
 
-* The number of units in each `LSTM` layers, is equal to the size of the time window, in this demo, we are taking five previous `T-Bonds` closing prices to predict the next closing price.
+* The number of units in each `LSTM` layer, is equal to the size of the time window, in this demo, we are taking five previous `T-Bonds` closing prices to predict the next closing price.
 
-Explain to students that the optimizer and loss parameters need to be specified to compile the model. For a regression problem, a good starting choice for these parameters is to use `adam` for the optimizer and `mean_squre_error` for the loss function. Further information about these can be found on [the Keras API for TensorFlow website(https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM)].
+Explain to students that the optimizer and loss parameters need to be specified to compile the model. For a regression problem, a good starting choice for these parameters is to use `adam` for the optimizer and `mean_squre_error` for the loss function. Further information about these can be found on [the Keras API for TensorFlow website](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM).
 
 ```python
 # Compile the model
@@ -1231,7 +1231,7 @@ Explain to students that after training the model, it's time to evaluate our mod
   predicted = model.predict(X_test)
   ```
 
-* Since we scaled the original values using the `MinMaxScaler`, we need to recover the original prices to better understand of the predictions.
+* Since we scaled the original values using the `MinMaxScaler`, we need to recover the original prices to better understand the predictions.
 
 * We will use the `inverse_transform()` method of the scaler to decode the scaled values to their original scale.
 
@@ -1285,7 +1285,7 @@ This activity is a mini-project where students will gain hands-on experience bui
 
 ---
 
-### 11. Instructor Do: Review Predicting Gold Closing Prices (15 min)
+### 11. Instructor Do: Review Predicting Gold Closing Prices (10 min)
 
 **Files:**
 
@@ -1304,7 +1304,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
   quandl_key = os.getenv("QUANDL_API_KEY")
   ```
 
-* In this activity, you were asked to create a model to predict gold prices, so using our API key, we fetch the historical prices of gold up to Yesterday using the Quandl end-point for this price and the `requests` library.
+* In this activity, you were asked to create a model to predict gold prices, so using our API key, we fetch the historical prices of gold up to yesterday using the Quandl end-point for this price and the `requests` library.
 
   ```python
   # Set Gold price URL
@@ -1326,7 +1326,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
   ![Content of the dataset key](Images/dataset-key-content.png)
 
-* As you can imagine, we can also go to the API documentation to understand the structure of the response and identify where is the data we need. However, when you review the [Quandl API documentation for time-series data](https://docs.quandl.com/docs/in-depth-usage), you can see that the name of the main key of the `json` output is `dataset_data`.
+* As you can imagine, we can also go to the API documentation to understand the structure of the response and identify where the data is that we need. However, when you review the [Quandl API documentation for time-series data](https://docs.quandl.com/docs/in-depth-usage), you can see that the name of the main key of the `json` output is `dataset_data`.
 
   ![Quandl API docs](Images/quandl-api-docs.png)
 
@@ -1353,7 +1353,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
   ![Sample gold prices DataFrame](Images/sample-gold-prices-df.png)
 
-* It's important to clean the data before start using it any machine learning model. In this case, we look for missing data by counting all the null values in the DataFrame.
+* It's important to clean the data before we start using it for any machine learning model. In this case, we look for missing data by counting all the null values in the DataFrame.
 
   ![Missing gold prices in the DataFrame](Images/missing-gold-prices.png)
 
@@ -1364,9 +1364,9 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
   gold_df = gold_df.fillna(method ='pad')
   ```
 
-* Once that we cleaned up our data, we will create the features and target set using the custom `window_data()` function we define.
+* Once we have cleaned up our data, we will create the features and target set using the custom `window_data()` function we define.
 
-* For this demo, we will use a window size of `30` days, and since we want to predict the gold prices in US Dollars, we will pass `1` as feature and target columns index.
+* For this demo, we will use a window size of `30` days, and since we want to predict the gold prices in US Dollars, we will pass `1` as the feature and target columns index.
 
   ```python
   # Define the window size
@@ -1417,7 +1417,7 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
   y_test = scaler.transform(y_test)
   ```
 
-* As you already know, the LSTM API from Keras needs to receive the features data as a _vertical vector_, so that we reshape the `X` data in the form `reshape((X_train.shape[0], X_train.shape[1], 1))`. Both sets, training, and testing should be reshaped.
+* As you already know, the LSTM API from Keras needs to receive the features data as a _vertical vector_, so we reshape the `X` data with `reshape((X_train.shape[0], X_train.shape[1], 1))`. Both sets, training, and testing should be reshaped.
 
   ```python
   # Reshape the features data
@@ -1473,14 +1473,14 @@ Open the unsolved version of the Jupyter notebook, live code the solution, and h
 
   ![Mean square error of the model](Images/rnn-lstm-gold-mse.png)
 
-* It seems that the model is not to bad since the MSE is close to zero. Now, we will make predictions using the testing data for further analysis.
+* It seems that the model is not too bad since the MSE is close to zero. Now, we will make predictions using the testing data for further analysis.
 
 ```python
 # Make predictions using the testing data X_test
 predicted = model.predict(X_test)
 ```
 
-* Since we scaled the original values using the `MinMaxScaler`, we need to recover the original gold prices to better understand of the predictions.
+* Since we scaled the original values using the `MinMaxScaler`, we need to recover the original gold prices to better understand the predictions.
 
 * We will use the `inverse_transform()` method of the scaler to decode the scaled testing and predicted values to their original scale.
 
