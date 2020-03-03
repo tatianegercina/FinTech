@@ -43,5 +43,4 @@ Complete the following steps using the command line:
 * Use the `mv` operation to rename files or folders.
 
 ---
-
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
