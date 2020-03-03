@@ -4,15 +4,15 @@
 
 ### Overview
 
-Today's lesson will focus on command line basics and setting up an Anaconda virtual environment. It will also further investigate the key factors leading to the growth of the FinTech industry.
+Today's lesson will focus on command-line basics and setting up an Anaconda virtual environment. It will also further investigate the key factors leading to the growth of the FinTech industry.
 
-Specifically, students will be introduced to basic command line and virtual environment skills, which will help them use more advanced CLI tools in the next lesson as well as future units in the course; learn more about the history of FinTech and the areas that have been disrupted through innovation; and collaborate with others to make predictions about various FinTech domains in the form of future news headlines.
+Specifically, students will be introduced to basic command-line and virtual environment skills, which will help them use more advanced command-line interface (CLI) tools in the next lesson as well as future units in the course; learn more about the history of FinTech and the areas that have been disrupted through innovation; and collaborate with others to make predictions about various FinTech domains in the form of future news headlines.
 
 ### Class Objectives
 
 By the end of this class, students will be able to:
 
-* Use the command line to execute basic file system operations.
+* Use the command-line to execute basic file system operations.
 
 * Download and upload files to GitHub using the git GUI.
 
@@ -26,7 +26,7 @@ By the end of this class, students will be able to:
 
 * Slack out the [Anaconda Installation Guide](../../02-Python/Supplemental/AnacondaInstallGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with Python outside of the class time.
 
-* Students may have trouble grasping the notion of the command line. You can explain it like this: when students double-click on a folder to change directories, they are essentially executing a backend `cd` command. The GUI that a student sees is merely a visual overlay of the backend operations of the computer.
+* Students may have trouble grasping the notion of the command-line. You can explain it like this: when students double-click on a folder to change directories, they are essentially executing a backend `cd` command. The GUI that a student sees is merely a visual overlay of the backend operations of the computer.
 
 * Emphasize that understanding the history and larger context of FinTech is just as important as knowing what FinTech is. Employers will measure candidates not only by their technical skills, but also by their knowledge of what is happening in the financial services industry and the ability to grasp the bigger picture.
 
@@ -36,7 +36,7 @@ By the end of this class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.2 Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 1.2 Slides]().
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -50,23 +50,27 @@ By the end of this class, students will be able to:
 
 Welcome students to the second day of class and the next lesson in Unit 1.
 
-**File:** [Lesson 1.2 Slideshow](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
+Take some time to introduce the topics that will be covered in this lesson: command-line and Anaconda virtual environment, and a brief history of FinTech. This lesson will give students both the skills and knowledge required to gain a deeper understanding of the changing landscape of the FinTech ecosystem.
 
-Take some time to introduce the topics that will be covered in this lesson: command line and Anaconda virtual environment, and a brief history of FinTech. This lesson will give students both the skills and knowledge required to gain a deeper understanding of the changing landscape of the FinTech ecosystem.
+Open the lesson slides, review the objectives for today's class and highlight the following:
 
-Use the slideshow to review the objectives for today's class.
+* While later units and activities will utilize more advanced tools and technical concepts (APIs, algorithmic trading, etc.), today’s lesson will start small. We’ll begin by practicing the fundamentals of technical programming so that you can begin your FinTech journey.
 
-Cover the following points:
+* You will begin working with fundamental developer tools such as the command-line, a text-based utility for performing file system operations and executing programs.
 
-* While later units and activities will utilize more advanced tools and technical concepts (APIs, algorithmic trading, etc.), today’s lesson will start small. We’ll begin by practicing the fundamentals of technical programming so that students can begin their FinTech journey.
+* You will get started with Anaconda, a free and open-source distribution of the Python programming language for scientific computing that is broadly used by data scientist and FinTech professionals.
 
-* Students will begin working with fundamental developer tools such as the command line, a text-based utility for performing file system operations and executing programs. They will also learn to create an Anaconda virtual environment, a managed file space that exists as its own isolated environment with corresponding dependencies, residing on a physical computer. By the end of the day, students will join the ranks of millions of developers who also use the command line for file system operations and third-party CLIs (e.g., Conda).
+* To have a better organization of your work, you will also learn to create an Anaconda virtual environment, a managed file space that exists as its own isolated environment with corresponding dependencies, residing on a physical computer.
 
-* Today's lesson will briefly provide insight into the factors leading up to the current state of FinTech, as well as the financial sectors and FinTech domains that technology has helped to disrupt. It will also include a group activity in which students will research the factors for change of a particular FinTech domain.
+* By the end of the day, you will join the ranks of millions of developers who also use the command-line for file system operations and third-party CLIs (e.g., Conda).
+
+* Today's lesson will briefly provide insight into the factors leading up to the current state of FinTech, as well as the financial sectors and FinTech domains that technology has helped to disrupt. It will also include a group activity in which you will research the factors for change of a particular FinTech domain.
 
 * Understanding and being able to discuss FinTech's history is useful, particularly when applying to jobs; it will show employers that you care enough to familiarize yourself with the industry, as well as showcase an understanding of potential opportunities and pitfalls within the industry.
 
 Encourage students and get them excited for the lesson. Reiterate that today will be a crash course in both hard and soft skills: students will learn technical skills and contextual knowledge to aid them in their future careers in FinTech.
+
+Answer any questions before moving on.
 
 ---
 
