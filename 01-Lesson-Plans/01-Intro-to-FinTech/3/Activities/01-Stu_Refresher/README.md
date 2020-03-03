@@ -6,7 +6,7 @@ In this activity, you will create a GitHub repository to hold future work assets
 
 Complete the following steps.
 
-1. Navigate to [GitHub](www.github.com) and log in with your credentials. 
+1. Navigate to [GitHub](https://www.github.com) and log in with your credentials. 
 
 1. Create a new GitHub repository.
 
