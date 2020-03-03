@@ -105,7 +105,7 @@ In certain cases we may have additional words we need to remove. Let's suppose t
 sw = set(stopwords.words('english'))
 updated_sw = sw.union({'Dylan', 'Eli'})
 ```
-We can then run a for loop with this new list to remove the stopwords which now include `yoda` and `mandalorian`. As you can see in our output, this was successful:
+We can then run a for loop with this new list to remove the stopwords which now include `Dylan` and `Eli`. As you can see in our output, this was successful:
 
 ![sentence_stopwords](Images/sentence_new_sw.PNG)
 </details>
@@ -192,7 +192,7 @@ for word in sentence_tokenized:
 ```
 You can see in the following image, that compared to the original output, the new output has converted all plural words to singular:
 
-<img src = 'Images/lemmatize_baby_Yoda.png' width = 400>
+<img src = 'Images/lemmatize_sentence.png' width = 400>
 
 A more concise way to generate this new list is with a list comprehension. The results are the same:
 
