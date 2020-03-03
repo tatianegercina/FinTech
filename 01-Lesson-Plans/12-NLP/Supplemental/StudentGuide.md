@@ -342,7 +342,7 @@ Additionally, NLTK was built with research and education in mind. It's a great r
 Part of speech tagging (POS tagging) is the process of labeling each word or token in a sentence as its part of speech (noun, verb, adjective), while dependency parsing takes those words and determines the relationships between each. Dependency parsing is the step that comes after POS tagging.
 
 If we were to POS tag and depedency parse the following sentence:
-`'Dylan and eli love video games.'`, the results would look like:
+`'Dylan and Eli love video games.'`, the results would look like:
 <img src='Images/sentence_dependencies.PNG' width = 900>
 
 </details>
