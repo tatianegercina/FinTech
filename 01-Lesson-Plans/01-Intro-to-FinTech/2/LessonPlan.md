@@ -144,7 +144,11 @@ In this activity, students will perform their own file system operations via the
 
 ### 4. Instructor Do: Review File System Operations (5 min)
 
-Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_operations.sh) and cover the following points. You can also use the slides to show these definitions to students:
+**Files:**
+
+* [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_operations.sh)
+
+Open the solution and cover the following points. You can also use the slides to show these definitions to students:
 
 * `mkdir` creates folder directories.
 
@@ -166,19 +170,23 @@ Open [file_system_operations.sh](Activities/02-Stu_Terminal/Solved/file_system_o
 
 * `ls` lists the contents of the current directory.
 
+Answer any questions before moving on.
+
 ---
 
 ### 5. Instructor Do: Version Control and GitHub (20 min)
 
 In this section, students will learn about file version control and how to upload files to GitHub, which will be used to submit homework assignments in this course.
 
-**File:** [Version Control Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_8_0)
+Open the lesson slides, move to the "Version Control and GitHub" section and go through the slides while covering the following points about version control.
 
-Open the slideshow and go through the slides while covering the following points about version control.
+* There is an ancient problem when you work alone or collaboratively, it's hard to keep track of all the work history!
 
 * **Versioning** is simply a way to keep track of changes to files and folders over time.
 
-* Git and GitHub are tools that make tracking changes easy.
+* **Version control** systems are software that help you track changes you make in your code over time. As you edit your code, you tell the version control system to take a snapshot of your files. The version control system saves that snapshot permanently so you can recall it later if you need it.
+
+* Git and GitHub are tools that make tracking changes easy. For our class, we will use GitHub.
 
 * GitHub is a central location to create projects and track changes to files and folders in that project.
 
@@ -186,9 +194,9 @@ Open the slideshow and go through the slides while covering the following points
 
 * Under the covers, GitHub uses the git tool for file versioning.
 
-  * GitHub is just one of many vendors that use git in the backend (e.g., GitLab).
+* GitHub is just one of many vendors that use git in the backend (e.g., GitLab).
 
-  * For now, students will only be introduced to the GitHub GUI; however, in the next lesson, students will learn to work with GitHub via the command line using git, which allows for more advanced git operations.
+* For now, you will only be introduced to the GitHub GUI; however, in the next lesson, you will learn how to work with GitHub via the command line using git, which allows for more advanced git operations.
 
 * GitHub uses `commits` to track changes. You can think of a commit as a snapshot of what the files and folders looked like at a particular moment in time. You can always see any version of your changes by looking at the previous commits.
 
@@ -219,6 +227,8 @@ Finally, have the students follow along to complete these steps:
   ![drag file](Images/GitDemo_filedrag.gif)
 
 Encourage students to practice using GitHub before the next class and attend office hours if they run into any problems.
+
+Answer any questions before moving on.
 
 ---
 
