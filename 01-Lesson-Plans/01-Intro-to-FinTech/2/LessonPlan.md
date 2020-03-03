@@ -4,15 +4,15 @@
 
 ### Overview
 
-Today's lesson will focus on command-line basics and setting up an Anaconda virtual environment. It will also further investigate the key factors leading to the growth of the FinTech industry.
+Today's lesson will focus on command line basics and setting up an Anaconda virtual environment. It will also further investigate the key factors leading to the growth of the FinTech industry.
 
-Specifically, students will be introduced to basic command-line and virtual environment skills, which will help them use more advanced command-line interface (CLI) tools in the next lesson as well as future units in the course; learn more about the history of FinTech and the areas that have been disrupted through innovation; and collaborate with others to make predictions about various FinTech domains in the form of future news headlines.
+Specifically, students will be introduced to basic command line and virtual environment skills, which will help them use more advanced command line interface (CLI) tools in the next lesson as well as future units in the course; learn more about the history of FinTech and the areas that have been disrupted through innovation; and collaborate with others to make predictions about various FinTech domains in the form of future news headlines.
 
 ### Class Objectives
 
 By the end of this class, students will be able to:
 
-* Use the command-line to execute basic file system operations.
+* Use the command line to execute basic file system operations.
 
 * Download and upload files to GitHub using the git GUI.
 
@@ -26,7 +26,7 @@ By the end of this class, students will be able to:
 
 * Slack out the [Anaconda Installation Guide](../../02-Python/Supplemental/AnacondaInstallGuide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. This should help catch installation issues with Python outside of the class time.
 
-* Students may have trouble grasping the notion of the command-line. You can explain it like this: when students double-click on a folder to change directories, they are essentially executing a backend `cd` command. The GUI that a student sees is merely a visual overlay of the backend operations of the computer.
+* Students may have trouble grasping the notion of the command line. You can explain it like this: when students double-click on a folder to change directories, they are essentially executing a backend `cd` command. The graphical user interface (GUI) that a student sees is merely a visual overlay of the backend operations of the computer.
 
 * Emphasize that understanding the history and larger context of FinTech is just as important as knowing what FinTech is. Employers will measure candidates not only by their technical skills, but also by their knowledge of what is happening in the financial services industry and the ability to grasp the bigger picture.
 
@@ -50,19 +50,19 @@ By the end of this class, students will be able to:
 
 Welcome students to the second day of class and the next lesson in Unit 1.
 
-Take some time to introduce the topics that will be covered in this lesson: command-line and Anaconda virtual environment, and a brief history of FinTech. This lesson will give students both the skills and knowledge required to gain a deeper understanding of the changing landscape of the FinTech ecosystem.
+Take some time to introduce the topics that will be covered in this lesson: command line and Anaconda virtual environment, and a brief history of FinTech. This lesson will give students both the skills and knowledge required to gain a deeper understanding of the changing landscape of the FinTech ecosystem.
 
 Open the lesson slides, review the objectives for today's class and highlight the following:
 
 * While later units and activities will utilize more advanced tools and technical concepts (APIs, algorithmic trading, etc.), today’s lesson will start small. We’ll begin by practicing the fundamentals of technical programming so that you can begin your FinTech journey.
 
-* You will begin working with fundamental developer tools such as the command-line, a text-based utility for performing file system operations and executing programs.
+* You will begin working with fundamental developer tools such as the command line, a text-based utility for performing file system operations and executing programs.
 
 * You will get started with Anaconda, a free and open-source distribution of the Python programming language for scientific computing that is broadly used by data scientist and FinTech professionals.
 
 * To have a better organization of your work, you will also learn to create an Anaconda virtual environment, a managed file space that exists as its own isolated environment with corresponding dependencies, residing on a physical computer.
 
-* By the end of the day, you will join the ranks of millions of developers who also use the command-line for file system operations and third-party CLIs (e.g., Conda).
+* By the end of the day, you will join the ranks of millions of developers who also use the command line for file system operations and third-party CLIs (e.g., Conda).
 
 * Today's lesson will briefly provide insight into the factors leading up to the current state of FinTech, as well as the financial sectors and FinTech domains that technology has helped to disrupt. It will also include a group activity in which you will research the factors for change of a particular FinTech domain.
 
@@ -78,9 +78,7 @@ Answer any questions before moving on.
 
 In this section, students will learn the basics of using the command line to perform basic file system operations on their machines.
 
-**File:** [Command Line Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g512780ac1c_0_0)
-
-Open the slideshow and use the slides as you present the following questions and answers:
+Open the slideshow, move to the "Introduction to the Command Line" section and and use the slides as you present the following questions and answers:
 
 * What is the command line?
 
@@ -92,9 +90,11 @@ Open the slideshow and use the slides as you present the following questions and
 
 * Why use the command line?
 
-  **Answer:** Using the command line is efficient, as it does not expend the additional processing needed to produce the visuals associated with a graphical user interface (GUI).
+  **Answer:** Using the command line is efficient, as it does not expend the additional processing needed to produce the visuals associated with a GUI.
 
-Open the command line and demo the following commands. Tell students that on a Mac, the command line is accessed via Terminal, while Windows uses Git Bash.
+Explain to students that on a Mac, the command line is accessed via the Terminal app, while in Windows, we will use Git Bash since it's a package that contains `bash` commands and a collection of other UNIX-like utilities that we will use in the boot camp.
+
+Open the command line and demo the following commands.
 
 * `cd` changes the directory.
 
