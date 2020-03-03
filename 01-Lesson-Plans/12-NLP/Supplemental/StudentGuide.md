@@ -47,11 +47,11 @@ Tokenization is the process of breaking apart language into smaller pieces. A do
 
 In the following example we'll use `.split()` and the space delimiter to tokenize our sentence:
 
-![Mando](Images/Mando_split.PNG)
+![sentence](Images/sentence_split.PNG)
 
 This method works ok, but NLP can become much trickier than breaking down a sentence by a single delimiter. You might need to write code that breaks down an entire text into whole phrases on multiple delimiters. Because of this, we can use the Natural Language ToolKit (NLTK) platform to perform our tokenizing. NLTK provides libraries and tools that help with NLP tasks such as text processing. Let's tokenize the same sentence using NLTK's tokenizer, `word_tokenizer()`:
 
-![Mando1](Images/Mando_tokens.PNG)
+![sentence1](Images/sentence_tokens.PNG)
 
 This method allows us to handle complex situations such as punctuation. We can also use regular expressions to further customize our tokenizer. This gives us much more flexibility to concisely deliver the intended outcome regardless of how complex the text might be.
 </details>
@@ -60,11 +60,11 @@ This method allows us to handle complex situations such as punctuation. We can a
 In NLP, words are not the only items that can be tokenized, sentences can also be tokenized.  In the following example, we'll tokenize a short text into sentences.  First we use `.split()` and the period delimiter:
 
 
-![Mando3](Images/Mando_sent_split.PNG)
+![sentence3](Images/sentence_sent_split.PNG)
 
 This works ok, but what if we have a more complex text? What if our text has exclamation points or question marks? Or, even trickier, what if our text contains periods that do not denote the end of a sentence, but rather some other punctuation, like the period after *Mr.* or *Mrs.*? To work with this type of text, NLTK offers the `sent_tokenizer()`.  It works similar to `word_tokenizer` but breaks apart text as sentence chunks, and is smart enough to know where the sentence breaks should be.  An example of using `sent_tokenzier` is as follows:
 
-![Mando4](Images/Mando_sent_tokens.PNG)
+![sentence4](Images/sentence_sent_tokens.PNG)
 
 </details>
 </blockquote><br>
@@ -94,20 +94,20 @@ sw = set(stopwords.words('english'))
 ```
 We can then run a for loop with this list to remove the stopwords:
 
-![mando_stopwords](Images/Mando_sw.PNG)
+![sentence_stopwords](Images/sentence_sw.PNG)
 
 </details>
 <details><summary>Custom Stopwords:</summary><br>
 
-In certain cases we may have additional words we need to remove. Let's suppose that the words `yoda` and `mandalorian` are not necessary for our NLP work and we wish to add them to our stopwords. We can add these words to our stopwords list as follows:
+In certain cases we may have additional words we need to remove. Let's suppose that the words `Dylan` and `Eli` are not necessary for our NLP work and we wish to add them to our stopwords. We can add these words to our stopwords list as follows:
 
 ```python
 sw = set(stopwords.words('english'))
-updated_sw = sw.union({'yoda', 'mandalorian'})
+updated_sw = sw.union({'Dylan', 'Eli'})
 ```
 We can then run a for loop with this new list to remove the stopwords which now include `yoda` and `mandalorian`. As you can see in our output, this was successful:
 
-![mando_stopwords](Images/Mando_new_sw.PNG)
+![sentence_stopwords](Images/sentence_new_sw.PNG)
 </details>
 </blockquote><br>
 </details>
@@ -126,15 +126,15 @@ Regex stands for *regular expression* and it allows us to search for text using 
 <details>
 <summary>How it's used:</summary><br>
 
-Before we tokenize, we apply regex. This gives us clean token data. Let's apply regex to our mando sentence: *The Mandalorian has rescued baby Yoda. I do not care if he is not the real Yoda. I am still calling him that.*
+Before we tokenize, we apply regex. This gives us clean token data. Let's apply regex to our sentence sentence: *The Mandalorian has rescued baby Yoda. I do not care if he is not the real Yoda. I am still calling him that.*
 
 First we import the `re` python module, and compile with the pattern we are searching for. In this case we are searching for any character that is not a letter. The `^` symbol indicates *not*. `A-Z` and `a-z` indicate any upper or lower case letter, and the empty `space` at the end indicates a `space`. When we compile using `^A-Za-Z `, we are looking for any character that is not an upper or lower case letter, or a space. We then use `.sub` to substitute something new in the place of any matches. In the example below we are substituting `''` for any matches, which results in the deletion of that character:
 
-<img src='Images/mando_regex1.PNG' width=700>
+<img src='Images/sentence_regex1.PNG' width=700>
 
 Then we can tokenize our sentence, leaving us with clean token data that has no non-alphanumeric characters:
 
-<img src='Images/mando_regex2.PNG' width=600>
+<img src='Images/sentence_regex2.PNG' width=600>
 
 </details>
 
@@ -168,27 +168,25 @@ lemmatizer = WordNetLemmatizer()
 
 We can then call on the function by using the method `.lemmatize()`. In the following example we will lemmatize the sentence:  *'Of all babies in the many worlds in all the galaxies that make our universe, baby yoda rules all hearts as cutest'*. The tokenized form of this sentence is as follows:
 ```python
-['babies',
- 'many',
- 'worlds',
- 'galaxies',
- 'make',
- 'universe',
- ',',
- 'baby',
- 'yoda',
- 'rules',
- 'hearts',
- 'cutest']
+['dylan',
+ 'eli',
+ 'love',
+ 'playing',
+ 'video',
+ 'games',
+ '.',
+ 'lots',
+ 'favorites',
+ '.']
 ```
-To properly lemmatize the `baby_yoda` object:
+To properly lemmatize the `sentence_tokenized` object:
 
 ```python
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
 result = []
-for word in baby_yoda:
+for word in sentence_tokenized:
     word = lemmatizer.lemmatize(word)
     result.append(word)
 ```
@@ -202,7 +200,7 @@ A more concise way to generate this new list is with a list comprehension. The r
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
-result = [lemmatizer.lemmatize(word) for word in baby_yoda]
+result = [lemmatizer.lemmatize(word) for word in sentence_tokenized]
 ```
 </details>
 
@@ -213,13 +211,15 @@ result = [lemmatizer.lemmatize(word) for word in baby_yoda]
 <details>
 <summary>What they are:</summary><br>
 
-Ngrams are word groupings that are grouped by **N** number of words. For example, let's use our original mando sentence: *The mandalorian has rescued baby Yoda.* If we grouped this sentence into bigrams (groups of 2 words), the division would be:
+Ngrams are word groupings that are grouped by **N** number of words. For example, let's use part of our original sentence object: *Dylan and Eli love playing video games.* If we grouped this sentence into bigrams (groups of 2 words), the division would be:
 
-*The mandalorian*,<br>
-*mandalorian has*,<br>
-*has rescued*,<br>
-*rescued baby*,<br>
-*baby Yoda.*<br>
+*Dylan and*,<br>
+*and Eli*,<br>
+*Eli love*,<br>
+*love playing*,<br>
+*playing video*,<br>
+*video games.*<br>
+
 </details>
 <details>
 <summary>How to find them programmatically:</summary><br>
@@ -230,9 +230,9 @@ Input:
 ```python
 from nltk.tokenize import word_tokenize
 
-mando = 'The mandalorian has rescued baby Yoda.'
-mando = word_tokenize(mando)
-print(mando)
+sentence = 'The mandalorian has rescued baby Yoda.'
+sentence = word_tokenize(sentence)
+print(sentence)
 ```
 
 Output:
@@ -247,7 +247,7 @@ Input:
 from nltk.util import ngrams
 from collections import Counter
 
-Counter(ngrams(mando, n=2))
+Counter(ngrams(sentence, n=2))
 ```
 Output:
 ```python
@@ -335,6 +335,6 @@ Part of speech tagging (POS tagging) is the process of labeling each word or tok
 
 If we were to POS tag and depedency parse the following sentence:
 `'The mandalorian has saved baby Yoda'`, the results would look like:
-<img src='Images/mando_dependencies.PNG' width = 900>
+<img src='Images/sentence_dependencies.PNG' width = 900>
 
 </details>
