@@ -40,7 +40,7 @@ By the end of this class, students will be able to:
 
 * Activities that involve programming solutions will have an associated coding file linked at the beginning of the activity section. Click on the link to take you to the coding file required for the activity.
 
-* Remind the class that a student guide for each unit can be found in the corresponding unit's supplemental folder. Each guide has helpful links and FAQ's for the unit. The unit 2 student guide can be found here. If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
+* Remind the class that a student guide for each unit can be found in the corresponding unit's supplemental folder. Each guide has helpful links and FAQ's for the unit. The unit 2 student guide can be found [here.](../Supplemental/StudentGuide.md) If you have any recommendations for additional questions, feel free to log an issue or a pull request with your desired additions.
 
 * Have your TAs keep track of the time with the [Time Tracker](TimeTracker.xlsx).
 
