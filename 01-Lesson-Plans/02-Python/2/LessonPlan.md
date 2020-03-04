@@ -46,7 +46,7 @@ By the end of this class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -96,7 +96,7 @@ To introduce the topic of lists, remind students of what they have accomplished 
 
 * Students have worked with variables, conditionals, and for loops.
 
-* They have been able to automate some processes, but each program they've run has required some degree of hard-coding one-dimensional values, which can be tedious and often inefficient (hard-coding makes a program static rather than dynamic).
+* They have been able to automate some processes, but each program they've run has required some degree of hard-coding one-dimensional values, which can be tedious and often inefficient (hard-coding makes a program static, rather than dynamic).
 
 Tell students that in this class, they will begin to store data as collections and process values iteratively or repeatedly. The world of automation is banging at their doors!
 
@@ -108,7 +108,7 @@ Introduce the definition of lists:
 
 Review lists with the following analogy:
 
-* If Python commands and operations are like workers assigned specific tasks to do, lists are like the conveyor belt in the assembly line.
+* If Python commands and operations are like workers that are assigned specific tasks, lists are like the conveyor belt in the assembly line.
 
 * As the conveyor belt iterates, an item on the belt is processed.
 
@@ -413,7 +413,7 @@ Open the solution file and explain the following:
   What are my last five items on the list?
   ['eggs', 'apples', 'cinnamon', 'sugar', 'milk']
 
-  What are is every other item on the list, starting from the second item?
+  What is every other item on the list, starting from the second item?
   ['butter', 'apples', 'sugar']
   ```
 
