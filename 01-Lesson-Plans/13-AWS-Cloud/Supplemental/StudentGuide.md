@@ -2,16 +2,15 @@
 
 ### Helpful Links
 
-* This deployment guide from AWS is a handy reference for lexbot deployments[Creating and Activating an AWS Account.](https://docs.aws.amazon.com/lex/latest/dg/examples.html)
-* An excellent starter resource on spaCy: [*spaCy 101: Everything you need to know*](https://spacy.io/usage/spacy-101).
+* Click [here](https://d1.awsstatic.com/whitepapers/aws-overview.pdf) for a thorough whitepaper from Amazon Web Services describing what cloud computing is and what role their tools play.
+
+* This guide from AWS is a handy reference for Lex bot deployments - [Deploying Amazon Lex Bots.](https://docs.aws.amazon.com/lex/latest/dg/examples.html)
 
 ---
 
 ### Additional Course Resources
 
 * [Creating and Activating an AWS Account](1-Create-and-Activate-an-AWS-Account.md)
-
-* [Amazon Lex Deployment Guide](https://docs.aws.amazon.com/lex/latest/dg/examples.html)
 
 ---
 
