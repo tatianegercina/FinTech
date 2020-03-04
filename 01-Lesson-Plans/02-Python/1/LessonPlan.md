@@ -507,7 +507,7 @@ Use the [slides](https://docs.google.com/presentation/d/1fgulsaDy5mVRrZ0lUAOOg_f
 
 * In the previous activity, variables were used to tell computers what (data) to remember/store.
 
-* In this section, variables and their associated values are called upon and evaluated via conditionals, which determine the decisions or behavior the computer should exhibit.
+* In this section, variables and their associated values are called upon and evaluated via conditionals, which determine the decisions or behaviour the computer should exhibit.
 
 * Computers are simple in that they do exactly what you tell them to do. If you want to have a useful script, you must program decision logic into the computer.
 
