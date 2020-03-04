@@ -847,7 +847,7 @@ Answer any questions before moving on.
 
 Introduce for loops by presenting the following scenario:
 
-* Imagine that your new job at Accrual World, Inc. is to generate a daily report for each of your client's total sales. Every day, you need to gather the sales data from each client, and then break out your trusty calculator to add up their total sales. This results in hours of manual labor.
+* Imagine that your new job at Accrual World, Inc. is to generate a daily report for each of your client's total sales. Every day, you need to gather the sales data from each client, and then break out your trusty calculator to add up their total sales. This results in hours of manual labour.
 
 * Just before you finish, you realize that you were given last week's data. You have to start over! Well, there's a better way to handle repetitive tasks like this.
 
@@ -1108,7 +1108,7 @@ Explain that pseudocode is a great tool to use on interviews.
 
 * Pseudocoding on interviews allows employers to see a candidate's thought process and problem-solving skills, as well as their ability to design algorithms.
 
-* Some employers even specifically ask interviewees to complete a pseudocoding activity, which shows how interested employers are in developers' ability to solve problems, design and envision algorithms, and articulate process. Data shows that employers are looking for interviewees to pseudocode during interviews.
+* Some employers even ask interviewees to complete a pseudocoding activity, which shows how interested employers are in developers' ability to solve problems, design and envision algorithms, and articulate process. Data shows that employers are looking for interviewees to pseudocode during interviews.
 
 * Pseudocoding ensures that interviewees don't jump head first into a technical question; it requires them to think about what they're going to do. The last thing anyone wants is to start coding and not know what to do next.
 
@@ -1228,4 +1228,4 @@ Congratulate students on making it through their first lesson on programming! Of
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
