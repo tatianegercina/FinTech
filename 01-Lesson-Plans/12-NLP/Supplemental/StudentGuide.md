@@ -2,12 +2,11 @@
 
 ### Helpful Links
 
-* [Natural Language Processing with Python – Analyzing Text with the Natural Language Toolkit](https://www.nltk.org/book/) This online version of the NLTK book is a great reference for all things NLTK.
+* This online version of the NLTK book, [*Natural Language Processing with Python – Analyzing Text with the Natural Language Toolkit*](https://www.nltk.org/book/), is a great reference for all things NLTK.
 
-* [spaCy 101: Everything you need to know](https://spacy.io/usage/spacy-101) This direct link to the spaCy documention is an excellent place to find out all there is to know about spaCy.
+* An excellent starter resource on spaCy: [*spaCy 101: Everything you need to know*](https://spacy.io/usage/spacy-101).
 
-* [Word Cloud](https://amueller.github.io/word_cloud/) The wordcloud documentation has everything from command line interface tools to gallery examples of how to make your own, unique word cloud.
-
+* The [Word Cloud](https://amueller.github.io/word_cloud/) documentation has everything from command line interface tools to gallery examples of how to make your own, unique word cloud.
 ---
 
 ### Additional Course Resources
@@ -34,7 +33,7 @@ Computer language is very specific; its unambiguous, literal, methodical and mat
 
 When translating words between languages, direct word-for-word translation will often sound nonsensical because the order of the words and cultural idioms vary. Even different dialects of the same language can have words or sayings that mean different things depending on your geography.
 
-NLP allows us process human language and text so that it can be used in machine learning and software applications.
+NLP allows us to process human language and text so that it can be used in machine learning and software applications.
 
 </details>
 <details>
@@ -57,12 +56,12 @@ This method allows us to handle complex situations such as punctuation. We can a
 </details>
 <details><summary>Sentence Tokenization</summary><br>
 
-In NLP, words are not the only items that can be tokenized, sentences can also be tokenized.  In the following example, we'll tokenize a short text into sentences.  First we use `.split()` and the period delimiter:
+Sentences can also be tokenized.  In the following example, we'll tokenize a short text into sentences.  First we use `.split()` and the period delimiter:
 
 
 ![sentence3](Images/sentence_sent_split.PNG)
 
-This works ok, but what if we have a more complex text? What if our text has exclamation points or question marks? Or, even trickier, what if our text contains periods that do not denote the end of a sentence, but rather some other punctuation, like the period after *Mr.* or *Mrs.*? To work with this type of text, NLTK offers the `sent_tokenizer()`.  It works similar to `word_tokenizer` but breaks apart text as sentence chunks, and is smart enough to know where the sentence breaks should be.  An example of using `sent_tokenzier` is as follows:
+This works ok, but what if we have a more complex text? What if our text has exclamation points or question marks? Or, even trickier, what if our text contains periods that do not denote the end of a sentence, but rather some other punctuation, like the period after *Mr.* or *Mrs.*? To work with this type of text, NLTK offers the `sent_tokenizer()`.  It works much like the `word_tokenizer`, but breaks apart text as sentence chunks, and is smart enough to know where the sentence breaks should be.  An example of using `sent_tokenzier` is as follows:
 
 ![sentence4](Images/sentence_sent_tokens.PNG)
 
@@ -99,7 +98,7 @@ We can then run a for loop with this list to remove the stopwords:
 </details>
 <details><summary>Custom Stopwords:</summary><br>
 
-In certain cases we may have additional words we need to remove. Let's suppose that the words `Dylan` and `Eli` are not necessary for our NLP work and we wish to add them to our stopwords. We can add these words to our stopwords list as follows:
+In certain cases we may have additional words we need to remove. Let's suppose the words `Dylan` and `Eli` are not necessary for our NLP work and we wish to add them to our stopwords. We can add these words to our stopwords list as follows:
 
 ```python
 sw = set(stopwords.words('english'))
@@ -119,16 +118,16 @@ We can then run a for loop with this new list to remove the stopwords which now 
 <details>
 <summary>What it is:</summary><br>
 
-Regex stands for *regular expression* and it allows us to search for text using very specific patterns. It can be intimidating at first glance, but it's well worth the little study and persistance required to conquer it, especially in cases of NLP usage. Consider using the find and replace option in your Word processor * it works great for finding specific text, but what if your query is more complex?  Perhaps you are looking for someone's name, and you can only remember that the last name ends with *b*. Regex lets you find that!
+Regex stands for *regular expression* and it allows us to search for text using very specific patterns. It can be intimidating at first glance, but it's well worth the little study and persistance required to conquer it, especially in cases of NLP usage. Consider using the find and replace option in your Word processor - it works great for finding specific text, but what if your query is more complex?  Perhaps you are looking for someone's name, and you can only remember that the last name ends with *b*. Regex lets you find that!
 
 </details>
 
 <details>
 <summary>How it's used:</summary><br>
 
-Before we tokenize, we apply regex. This gives us clean token data. Let's apply regex to the following sentence: *"Dylan and Eli love playing video games. They have lots of favorites."*
+Before we tokenize, we use regex to get clean token data. Let's apply regex to the following sentence: *"Dylan and Eli love playing video games. They have lots of favorites."*
 
-First we import the `re` python module, and compile with the pattern we are searching for. In this case we are searching for any character that is not a letter. The `^` symbol indicates *not*. `A-Z` and `a-z` indicate any upper or lower case letter, and the empty `space` at the end indicates a `space`. When we compile using `^A-Za-Z `, we are looking for any character that is not an upper or lower case letter, or a space. We then use `.sub` to substitute something new in the place of any matches. In the example below we are substituting `''` for any matches, which results in the deletion of that character:
+First we import the `re` python module, and compile with the pattern we are searching for. In this case we are searching for any character that is not a letter. The `^` symbol indicates *not*. `A-Z` and `a-z` indicate any upper or lower case letter, and the empty `space` at the end indicates a `space`. When we compile using `^A-Za-Z `, we are looking for any character that is not an upper or lower case letter, or a space. We then use `.sub` to substitute something new in the place of any matches. In the example below we are substituting `''` (which is essentially nothing) for any matches, which results in the deletion of that character:
 
 <img src='Images/sentence_regex1.PNG' width=700>
 
@@ -272,7 +271,7 @@ The output is a dictionary of values that hold our two word combinations and the
 <details>
 <summary>Why they're important:</summary><br>
 
-Ngrams give NLP models more predictive power by revealing the context of words through analysis of their patterns. Humans innately understand the context of language by processing a sentence as we hear it.  We can tell by tone and inflection if the statement is a question or exlamation, and we can tell by word placement if a statement is postive of negative.  Ngrams give computers a similar ability by looking at groups of words. For an example, let's use the following sentence: *Let's hammer out the details.*. The bigrams for the sentence are:
+Ngrams give NLP models more predictive power by revealing the context of words through analysis of their patterns. Humans innately understand the context of language by processing a sentence as we hear it.  We can tell by tone and inflection if the statement is a question or exlamation, and we can tell by word placement if a statement is postive or negative.  Ngrams give computers a similar ability by looking at groups of words. For an example, let's use the following sentence: *Let's hammer out the details.*. The bigrams for the sentence are:
 
 *Let's hammer*,<br>
 *hammer out*,<br>
@@ -281,7 +280,7 @@ Ngrams give NLP models more predictive power by revealing the context of words t
 
 Ngrams give context to this statement by looking at how the meaning changes when words are grouped in certain ways. The word *hammer* in this instance has bigrams of *Let's hammer* and *hammer out*.  The words *Let's* and *out* gives context that *hammer* in this instance is being used as a verb. The bigrams *hammer out* and *the details* might also tell our model that the word *hammer* is not being used literally, but rather in a context of clarification.
 
-If instead our sentence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun.  Were the sentence *Let's hammer out the details... not!*, then the word *not* would negate the sentence and also hint at sarcasm.  Both examples show a slight change in pattern and word order can alter the entire context of a sentence.  Ngrams help models pick up on these cues.
+If instead our sentence were *I need the hammer*, then having the word *the* preceding the word *hammer* will give the context that hammer in this case is a noun.  Were the sentence *Let's hammer out the details...not!*, then the word *not* would negate the sentence and also hint at sarcasm.  Both examples show how a slight change in pattern and word order can alter the entire context of a sentence.  Ngrams help models pick up on these cues.
 
 
 
@@ -310,18 +309,24 @@ Term Frequency * Inverse Document Frequency, or TF-IDF for short, is a weighting
 
 Term frequency (TF) is the count of the word in a document of the corpus. Inverse document frequency (IDF) is the number of documents the word appears in throughout the corpus. An increase in TF will make the TF-IDF score go higher, because the more often a word is counted, it can be considered to be more relevant. An increase in IDF will make the TF-IDF score go lower, because the more often a word appears throughout all the documents, it is considered more common and irrevelant.
 
-The calculated value of TF-IDF is a number from 0 to 1. When the score approaches 0, the word is considered more common. When the score approaches 1, the word is considered more unique (relevant).
+The higher the TF-IDF score, the more common the word, the lower the TF-IDF score, the more unique (relevant) the word.
 <blockquote>
 
 For example:
 
-If the word *video* appears 500 times in my 10,000 word document then the TF is high:  `500 / 10,000 = 0.05`.
+If the word ***play*** appears **500** times in my **10,000** word document then the TF is high:  **`500 / 10,000 = 0.05`**.
 
-If I have 10,000 documents and *video* only appears in 10 of them, then IDF is low: `LOG(10,000 / 10) = 3`
+If I have **10,000** documents and ***video*** only appears in **10** of them, then IDF is low: **`LOG(10,000 / 10) = 3`**
 
-In this example, the TF-IDF is: `0.05 / 3 = 0.0167`.
+In this example, the TF-IDF is: **`0.05 * 3 = 0.15`**.
 
-This is most certainly a number approaching 0, and would imply a unique, or relevant word. In this example, because *video* appears frequently throughout the document, but not frequently throughout the set of documents, the TF-IDF is high.
+In the following list of list of words with TF-IDF values, the word *games* has the highest score, meaning it is a more relevant word than *play* or *video*.
+
+|Word|TF-IDF|
+| :----: | :----: |
+|*play*|0.15|
+|*video*|0.32|
+|*games*|0.47|
 
 </blockquote><br>
 </details>
@@ -333,7 +338,7 @@ The primary difference between NLTK and spaCy is that NLTK uses a rule-based app
 
 With a rule-based approach, the model deterministically draws conclusions from the text using the rules of the selected language. With NLTK, the word *sick* is negative based on rules that dictate that relationship. With a statistical approach, machine learning can be used to make decisions using the context of the text. SpaCy might notice that the word *sick* is used in a context that implies a positive relationship, for example *That steak was grilled to perfection! It was sick!*
 
-Additionally, NLTK was built with research and education in mind. It's a great resource for exploring your text data and conducting analyses, however all data is represented as strings which can make it more difficult to work with on a larger scale. SpaCy was built with production performance in mind and tends to be faster thank NLTK. All data with SpaCy is represented as objects and more task based functionality is provided.
+Additionally, NLTK was built with research and education in mind. It's a great resource for exploring your text data and conducting analyses, however all data is represented as strings which can make it more difficult to work with on a larger scale. SpaCy was built with production performance in mind and tends to be faster than NLTK. All data with SpaCy is represented as objects and more task based functionality is provided.
 
 </details>
 <details>
@@ -342,7 +347,7 @@ Additionally, NLTK was built with research and education in mind. It's a great r
 Part of speech tagging (POS tagging) is the process of labeling each word or token in a sentence as its part of speech (noun, verb, adjective), while dependency parsing takes those words and determines the relationships between each. Dependency parsing is the step that comes after POS tagging.
 
 If we were to POS tag and depedency parse the following sentence:
-`'Dylan and Eli love video games.'`, the results would look like:
+`'Dylan and Eli love video games.'`, the results would look like this:
 <img src='Images/sentence_dependencies.PNG' width = 900>
 
 </details>
