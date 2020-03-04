@@ -709,15 +709,15 @@ Be prepared to explain the following, for example:
 
   * `==` checks to see if a value equals another; it double-checks equality. (Like all work, you want to double-check what you're doing!) So, when you're basing a condition on equality, you should double-check what's being compared. You don't want to compare apples to oranges. They'll never be equal!
 
-  * `=` is used to set and put values in a variable; it is used to assess and declare that a variable is something. You're not comparing it; you know for sure this is the answer. Think back to algebra. When you finish showing your work and steps in the calculation, you declare that `x = <some value>`. This is exactly how using the `=` works when declaring variables. You're declaring rather than evaluating.
+  * `=` is used to set and put values in a variable; it is used to assess and declare that a variable is something. You're not comparing it; you know for sure this is the answer. Think back to algebra. When you finish showing your work and steps in the calculation, you declare that `x = <some value>`. This is exactly how using the `=` works when declaring variables. You're declaring, rather than evaluating.
 
 * It's difficult to remember when to use _greater than_ `>` and _less than_ `<` operators, and when to use _greater than or equal to_ `>=` and _less than or equal to_ `<=`.
 
   * Deciding when to use specific comparison operators comes down to whether you want your conditional statement to include the minimum and maximum values needed to pass the condition.
 
-  * This is best explained with the example of drinking age. In the U.S., you have to be 21 years of age or older to legally drink. 21 is the minimum age acceptable.
+  * This is best explained with the example of drinking age. In Ontario, you have to be 19 years of age or older to legally drink. 19 is the minimum age acceptable.
 
-  * If we were to write a program to check whether someone's age meets the legal conditions, we would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 21 cannot drink.
+  * If we were to write a program to check whether someone's age meets the legal conditions, we would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 19 cannot drink.
 
 Tell students to look at the following code. Ask:
 
