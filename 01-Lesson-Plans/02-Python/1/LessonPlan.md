@@ -309,7 +309,7 @@ Transition to discussing variables. Use the [slides]((https://docs.google.com/pr
 
   * Each cell has a name (e.g., A1), a value (e.g., 5), and a type (integer).
 
-* Variables allow us to name our data in ways that make it easier to understand and use in code, and provides the freedom of choice in regard to variable names.
+* Variables allow us to name our data in ways that make it easier to understand and use in code, and provide the freedom of choice in regard to variable names.
 
   * For example, computers allow us to name a string of text characters something like `first_name` or `first_nm`.
 
@@ -431,7 +431,7 @@ Review the solution to the variables activity, highlighting the following points
 
   * The Python interpreter receives the value, evaluates it internally, and determines what data type it is.
 
-  * This process is similar to a taste-testing challenge: Python unknowingly receives an item and has to "sense" what it is.
+  * This process is similar to a taste-test challenge: Python unknowingly receives an item and has to "sense" what it is.
 
 * String formatting can be used to improve the appearance of values when they are printed to the screen.
 
@@ -481,7 +481,7 @@ To guide students, you may want to follow up with questions such as:
 
 * Can a string be concatenated with an integer?
 
-  **Answer:** No, a string can only be concatenated with another string. Other data types like integers must first be converted to a string before it can be concatenated to another string.
+  **Answer:** No, a string can only be concatenated with another string. Other data types like integers must first be converted to a string before they can be concatenated to another string.
 
 * What type of calculations can be done with integers?
 
@@ -493,7 +493,7 @@ Ask if there are any questions before moving on.
 
 ### 9. Instructor Do: Conditionals (10 min)
 
-In this section, students will learn how to apply logic to the values assigned to variables. This establishes a workflow in which a program exhibits a specific behavior based on the evaluation of a condition.
+In this section, students will learn how to apply logic to the values assigned to variables. This establishes a workflow in which a program exhibits a specific behaviour based on the evaluation of a condition.
 
 **Files:**
 
