@@ -863,7 +863,7 @@ At this point, transition to your discussion to for loops. Use the [slides](http
 
 * **For loops** are used for iterating over a sequence or collection. As the sequence or collection is iterated, a process is executed. This means the process is executed with every round in the loop.
 
-  * For loops are called for loops because every time a loop happens, a repeating decision or behavior happens.
+  * For loops are called for loops because every time a loop happens, a repeating decision or behaviour happens.
 
   * For example, if you have a string `Hello World`, a loop would allow you to iterate over each letter in the phrase and perform some type of operation (e.g., capitalize each letter).
 
@@ -880,7 +880,7 @@ Open [loop_dee_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py) and rev
 
 * For loops should be used when you want a process to run _n_ number of times.
 
-  * For example, when you want to execute a decision or behavior for each number in a range, you would use a for loop: you know you have _n_ number of items, and you want a behavior executed for each item.
+  * For example, when you want to execute a decision or behaviour for each number in a range, you would use a for loop: you know you have _n_ number of items, and you want a behaviour executed for each item.
 
   * For loops should be used if you know a process needs to be executed a specific number of times.
 
@@ -940,7 +940,7 @@ Open [loop_dee_loop.py](Activities/08-Ins_Loops/Solved/loop_dee_loop.py) and rev
 
 Now introduce while loops and compare them to for loops.
 
-* Whereas for loops loop until they've completed a decision or behavior for each element in a sequence, **while loops** loop until a condition no longer evaluates as `True`.
+* Whereas for loops loop until they've completed a decision or behaviour for each element in a sequence, **while loops** loop until a condition no longer evaluates as `True`.
 
 * For example, `while` you are wearing your uniform (uniform = `True`), keep ringing up customers at the checkout line.
 
@@ -950,7 +950,7 @@ Now introduce while loops and compare them to for loops.
       # Ring up customers
   ```
 
-* While loops should be used when you want a decision or behavior to be executed continuously until a condition is no longer `True`. In other words, use a while loop when there's a specific condition that must be met in order for the loop to end.
+* While loops should be used when you want a decision or behaviour to be executed continuously until a condition is no longer `True`. In other words, use a while loop when there's a specific condition that must be met in order for the loop to end.
 
 * While loops require an **iterator**, or counter variable, to be created and incremented. If the iterator is not incremented, the loop will not iterate correctly.
 
@@ -1184,7 +1184,7 @@ Engage the students with the following questions:
 
 * How did pseudocoding improve or hinder your coding process?
 
-  **Sample Answer:**  Pseudocoding provides a human-readable set of requirements from which a program should operate. In other words, pseudocoding makes it easier to define and outline the behavior of an application.
+  **Sample Answer:**  Pseudocoding provides a human-readable set of requirements from which a program should operate. In other words, pseudocoding makes it easier to define and outline the behaviour of an application.
 
 * What are some best practices for pseudocoding?
 
