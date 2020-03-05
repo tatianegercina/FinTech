@@ -1658,7 +1658,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 20. Instructor Do: Reflection and End Class (5 min)
+### 20. Instructor Do: Reflections and End Class (5 min)
 
 Use the last few minutes of class to give the students encouraging and positive feedback. Remind them that they're one step closer to conquering Python and becoming masters of FinTech!
 
@@ -1682,4 +1682,4 @@ Let students know that office hours are available for anyone who would like to a
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
