@@ -440,13 +440,21 @@ Answer any questions before moving on.
 
 ---
 
-### 13. Instructor Do: Introduce Case Studies (10 min)
+### 13. Instructor Do: Writing Successful Case Studies (10 min)
 
 In this activity, students will learn about writing successful case studies and why it's important to have this ability in their skills set as FinTech professionals.
 
+Open the lesson slides, move to the "Writing Successful Case Studies" section and highlight the following:
 
+* As a FinTech professional, it is critical to learn how FinTech companies start, evolve, fail, and grow, and to be able to speak knowledgeably about the major players in the FinTech space.
 
-Explain to students the following:
+* Even those in a highly technical role must stay abreast of what is happening in the business landscape, as many FinTech companies are disrupting in creative ways that are transforming the traditional finance world.
+
+* FinTech industry covers so many domains, that it's hard to be savvy in every single area, so reading and writing case studies could give you the ability to be update on the most recent advances and successful stories in the FinTech realm.
+
+* Writing a successful case study may be challenging, since many people are not sure how to start or feel that are not good in expressing ideas in writing.
+
+* Being able to write a case study, may give an advantage while interviewing for a new job, or proving your mastery for a new position in your current company. You will demonstrate...
 
 * Now that you know how to manage your GitHub repositories and create text-formatted markdown files, you can move on to creating shared repositories in which multiple people collaborate to create a case study report.
 
