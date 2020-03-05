@@ -429,7 +429,7 @@ Introduce NumPy.
 
 - NumPy is a Python library that provides fast input/output, or I/O, on multidimensional or nested array objects. Among other things, NumPy can be used as a scientific computing or financial analysis tool.
 
-- The built-in NPV function from the NumPy library makes calculating NPV values simple so that you don't have to reinvent the wheel.
+- The built-in NPV function from the NumPy library makes calculating NPV values simple, so that you don't have to reinvent the wheel.
 
   ```python
   # Import the NumPy library
@@ -729,7 +729,7 @@ Open the [solution file](Activities/10-Stu_CSV_Reader/Solved/Core/sales_analysis
 
 - Python's CSV module parses CSV data and creates `row` list objects, making it easier to access specific column values for each row.
 
-- Data that is read in from CSV files is interpreted as strings. To perform numerical calculations, we'll need to convert the strings to ints or floats.
+- Data that is read from CSV files is interpreted as strings. To perform numerical calculations, we'll need to convert the strings to ints or floats.
 
   ```python
   for row in csvreader:
@@ -816,7 +816,7 @@ Suggested Format:
 
 * Allow students to start the homework with extra TA support.
 
-Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
 
 ---
 
@@ -824,4 +824,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
