@@ -6,7 +6,8 @@
 
 * [Visual Git Guide](http://marklodato.github.io/visual-git-guide/index-en.html)
 
-- - -
+---
+
 ## FAQs
 
 <details>
@@ -22,7 +23,6 @@ Additionally, if you find videos helpful in your learning process, this is rough
 
 Finally, we have a handy visual Git reference guide located here:
 [Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
-
 
 </details>
 <details><summary>Where can I get a simple, yet comprehensive beginner summary for Markdown?</summary>
