@@ -8,9 +8,6 @@
 
 * [3.3 Lesson Plan](3/LessonPlan.md)
 
-### Homework
-
-* [Instructions](../../Homework/03-Pandas/Instructions/README.md)
 
 - - -
 
