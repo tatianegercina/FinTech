@@ -41,4 +41,74 @@ An example of unsupervised learning would be to use website purchase data to gro
 
 <details>
 <summary>What is KMeans?</summary>
+
+<blockquote>
+<details>
+<summary>What is a centroid?</summary>
+
+</details>
+<details>
+<summary>How do you read an elbow chart?</summary>
+
+</details>
+</blockquote>
+</details>
+
+<details>
+<summary>What is PCA?</summary>
+
+</details>
+<details>
+<summary>What is the cloud?</summary>
+<blockquote>
+<details>
+<summary>Types of cloud services:</summary>
+
+</details>
+</blockquote>
+</details>
+
+
+<details>
+<summary>What is AWS and why should I care?</summary>
+
+</details>
+
+<details>
+<summary>What is an IAM Role?</summary>
+
+</details>
+
+<details>
+<summary>What are S3 buckets?</summary>
+
+</details>
+<details>
+<summary>What is Boto3?</summary>
+
+</details>
+<details>
+<summary>What is Sagemaker?</summary>
+
+<blockquote>
+<details>
+<summary>Sagemaker SDK Docs</summary>
+
+</details>
+
+<details>
+<summary>Built-in Algorithms</summary>
+
+</details>
+</blockquote>
+</details>
+
+<details>
+<summary>Why deploy a machine learning model in the cloud?</summary>
+
+</details>
+
+<details>
+<summary>What is a conversational user interface?</summary>
+
 </details>
