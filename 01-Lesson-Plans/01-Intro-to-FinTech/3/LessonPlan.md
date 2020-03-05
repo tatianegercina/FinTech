@@ -458,7 +458,7 @@ Next, provide an overview of the activity.
 
 * You will have 30 minutes to develop your case studies, and two to three minutes to present your reports.
 
-Slack out the [case study examples](https://github.com/coding-boot-camp/FinTech-Lesson-Plans/tree/master/01-Lesson-Plans/01-Intro-to-FinTech/3/Activities/04-Stu_Group_Case_Study/Resources) to the class for reference. Get them excited! This activity is an excellent opportunity for students to combine what they've learned technically (command line and git) as well as conceptually (FinTech domains) to produce a company analysis.
+Slack out the [case study examples](Activities/04-Stu_Group_Case_Study/Resources) to the class for reference. Get them excited! This activity is an excellent opportunity for students to combine what they've learned technically (command line and git) as well as conceptually (FinTech domains) to produce a company analysis.
 
 Answer any questions before moving on.
 
