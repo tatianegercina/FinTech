@@ -71,6 +71,31 @@ Once the `pydotplus` and the additional libraries download is complete, verify t
 
 It can be frustrating when packages do not install correctly. Use the below approaches to troubleshoot installation issues and get your machine learning libraries up and running!
 
+### Graphviz
+
+Windows users might run into issues with the GraphViz installation, in which case here are additional instructions:
+
+- Download and install the GraphViz application from:
+https://www.graphviz.org/
+
+- Do the following:
+a) click your start/search and type "environment" and select "edit the system environment variables"
+![Edit Environment Variables](Images/graphviztg.png)
+Click `Environment Variables` at the bottom
+![Edit Environment Variables Button](Images/graphvizev.png)
+Highlight `Path` and click `Edit`
+![Edit Environment Variables Path](Images/graphvizev2.png)
+
+- `Click` an empty line and add the two graphviz paths
+
+  ![Edit Environment Variables Path](Images/graphvizev3.png)
+
+   ``` shell
+   C:\Program Files (x86)\Graphviz2.38\bin
+
+   C:\Program Files (x86)\Graphviz2.38
+   ```
+
 ### Imbalanced-learn Installation Prerequisites
 
 In order to install the `imbalanced-learn` package, all of the dependencies must be satisfied. These dependencies come packaged with every Anaconda install/distribution. The dependencies list can be found below for reference.
