@@ -1,3 +1,22 @@
+## Prework Module 5: Startup Survival Guide
+
+---
+
+### Overview
+
+In previous modules, we explored what markets work and the basic definitions of equity and stock. In this module we will we will explore some of the financing stages of startups as well as different ways in which they compensate their employees.
+
+### Module Objectives
+
+By the end of this module, you will be able to:
+
+* Identify the major funding rounds for startup companies
+
+* Identify differences between common and preferred stock
+
+* Identify some of the most common ways in which startup employees can be paid for their work.
+
+
 Do you like to create new things? To push the boundaries of what people thought was possible? To create value for others with just your ideas? You may want to consider working for a startup!
 
 Startups are nascent entrepreneurial companies that look to bring a new product or service to a market before rapidly scaling. They differ from “lifestyle businesses” in that they intend to rapidly scale and generally are designed to disrupt an existing market. If things go well, they are often purchased by a larger company or undergo an Initial Public Offering (IPO) in order to become a public company themselves.
