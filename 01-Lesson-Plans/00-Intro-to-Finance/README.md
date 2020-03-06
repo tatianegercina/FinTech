@@ -14,6 +14,8 @@ In this module we will cover some the basics of finance as well as the mechanics
 
 * [0.4 Lesson Plan: Markets](04-Markets/LessonPlan.md)
 
+* [0.5 Lesson Plan: Startup Survival Guide](05-Startup-Survival-Guide/LessonPlan.md)
+
 - - -
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
