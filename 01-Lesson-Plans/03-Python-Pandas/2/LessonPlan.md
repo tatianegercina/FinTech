@@ -90,7 +90,7 @@ Use the slides and begin this part of the lesson by discussing the utility and h
 
 * However, as the volume and complexity of data has increased significantly, spreadsheets are now limited when it comes to data analysis.
 
-Ask the class what the pain points they have experienced while using spreadsheets to handle data. Possible answers include:
+Ask the class what pain points they have experienced while using spreadsheets to handle data. Possible answers include:
 
 * Microsoft Office is expensive.
 
@@ -108,7 +108,7 @@ Ask students if they have experienced any disasters or major challenges while wo
 
 * Regional sales data for a sales competition was copied and pasted next to the wrong sales representatives. This resulted in the wrong person being identified as the winner.
 
-* In a monthly budget spreadsheet, the Excel formula to calculate the remaining balance in a checking account did not include the entire cell range necessary for the calculation; this resulted in the account having a negative balance.
+* In a monthly budget spreadsheet, the Excel formula to calculate the remaining balance in a chequing account did not include the entire cell range necessary for the calculation; this resulted in the account having a negative balance.
 
 If time allows, you can end the discussion by presenting the following Pandas applications discussed in more detail [here](https://data-flair.training/blogs/applications-of-pandas/) to give students a taste of what to expect in the field. Applications to highlight include:
 
