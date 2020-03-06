@@ -446,29 +446,31 @@ In this activity, students will learn about writing successful case studies and 
 
 Open the lesson slides, move to the "Writing Successful Case Studies" section and highlight the following:
 
-* As a FinTech professional, it is critical to learn how FinTech companies start, evolve, fail, and grow, and to be able to speak knowledgeably about the major players in the FinTech space.
+* As a FinTech professional, it is critical to learn how FinTech companies start, evolve, fail, and grow, and to be able to speak knowledgeably about the significant players in the FinTech space.
 
 * Even those in a highly technical role must stay abreast of what is happening in the business landscape, as many FinTech companies are disrupting in creative ways that are transforming the traditional finance world.
 
-* FinTech industry covers so many domains, that it's hard to be savvy in every single area, so reading and writing case studies could give you the ability to be updated on the most recent advances and successful stories in the FinTech realm.
+* FinTech industry covers so many domains that it's hard to be savvy in every single area, so reading and writing case studies could give you the ability to be updated on the most recent advances and success stories in the FinTech realm.
 
-* Writing a successful case study may be challenging, since many people are not sure how to start or feel that are not good in expressing ideas in writing.
+* Writing a successful case study may be challenging since many people are not sure how to start or feel that they are not good at expressing ideas in writing.
 
-* Being able to write a case study, may give you an advantage while interviewing for a new job, or proving your mastery for a new position in your current company, since you will have the ability to outline your success or effectiveness in dealing with a client, a tough situation in your team, or a complex business scenario.
+* Being able to write a case study may give you an advantage while interviewing for a new job, or proving your mastery for a new position in your current company. You will have the ability to outline your success or effectiveness in dealing with a client, a tough situation in your team, or a complex business scenario.
 
-* A successful case study is a self-contained story about reality, typically you should describe how a real customer overcame their problems thanks to your products, services, or professional experience.
+* A successful case study is a self-contained story about reality. Typically it would be best if you described how a real customer overcame their problems thanks to your products, services, or professional experience.
 
-* As any story, a successful case study has a beginning, a middle, and an end, where your customer as protagonist, overcome a problem achieving their objectives.
+* Like any story, a successful case study has a beginning, a middle, and an end, where your customer, as the protagonist, overcome a problem in achieving their objectives.
 
-* A a general guide to write a case study, you can use the "Narrative Arc" that encompasses the following stages.
+* As a general guide to writing a case study, you can use the "Narrative Arc" that encompasses the following stages.
 
-  * **Exposition:** This is the beginning of the story where the characters (stakeholders) are introduces as well as the main conflict that will propel the story.
+  ![The narrative arc](images/narrative_arc.png)
+
+  * **Exposition:** This is the beginning of the story where the characters (stakeholders) are introduced; also, the central conflict that will propel the story.
 
   * **Rising Action:** In this stage, a series of events that complicate the situation for the protagonist (your customer) creates a rise in the story's suspense or tension.
 
-  * **Climax:** This is the stage of greatest suspense or tension in the story. The characters (stakeholders) are deeply involved in the conflict, and most of the times the protagonist (your customer) had to make a critical decision that will guide his actions in the climax.
+  * **Climax:** This is the stage of most considerable suspense or tension in the story. The characters (stakeholders) are deeply involved in the conflict, and most of the time, the protagonist (your customer) had to make a critical decision that will guide his actions in the climax.
 
-  * **Falling Action:** In this stage, there is a release of tension towards the conflict's resolution. In this state, you may describe how the protagonist (your customer) has changes as a result of facing the conflict. Normally in this part of the case study, is where you highlight how your product, service, or professional experiences contributes to create the path to the resolution.
+  * **Falling Action:** In this stage, there is a release of tension towards the conflict's resolution. In this state, you may describe how the protagonist (your customer) has changed as a result of facing the conflict. Usually, this part of the case study is where you highlight how your product, service, or professional experiences contribute to creating the path to the resolution.
 
   * **Resolution (aka Denouement):** This is the end of the story, typically a happy ending where the problems derived from the conflict are resolved by using your product, service, or professional experience. In the case of an interview case study exposure, the ending doesn't have to be a happy one, but a complete story with an interesting moral for avoiding conflict in the future.
 
