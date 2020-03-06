@@ -486,7 +486,9 @@ Next, provide an overview of the next activity.
 
 * You will have 30 minutes to develop your case studies, and two to three minutes to present your reports.
 
-Slack out the [case study examples](Activities/04-Stu_Group_Case_Study/Resources) to the class for reference. Get them excited! This activity is an excellent opportunity for students to combine what they've learned technically (command line and git) as well as conceptually (FinTech domains) to produce a company analysis.
+Slack out the [case study examples](Activities/04-Stu_Group_Case_Study/Resources) to the class for reference, as well as the ["Writing a Successful Case Study" guide](../Supplemental/Case_Study_Guide.md).
+
+Get students excited! This activity is an excellent opportunity for them to combine what they've learned technically (command line and git) as well as conceptually (FinTech domains) to produce a company analysis.
 
 You will prepare students to work in pairs to create a shortened FinTech case study in a shared GitHub repo. Remind students that this is an abbreviated version of their longer Unit 1 homework assignment, but they can use this activity to begin initial research on a potential FinTech company.
 
