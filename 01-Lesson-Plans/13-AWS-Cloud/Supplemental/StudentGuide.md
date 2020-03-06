@@ -56,6 +56,7 @@ The following video from StatQuest on YouTube provides an excellent, easy to und
 
 <details>
 <summary>How do you determine the `k` number of clusters?</summary>
+
 There are several ways to deterimine the best number of clusters for your model. For our class, we use the elbow method.  The elbow method takes into account a range of values for `k` and plots their inertia, inertia being how far the clusters expand from the centroid.  This number should be as low as possible, indicating tightly packed clusters.  When these values are plotted on a line chart, a bend should form where the optimal value of `k` is located.  This bend incates the point at which adding clusters does not greatly improve the inertia, thus the smallest amount of clusters with the best inertia.
 
 In the below elbow chart, the bend occurs at 6, meaning this is the optimal value for `k` for this example:
