@@ -201,7 +201,7 @@ Consult the Pandas documentation to read more about the [read_csv](https://panda
 
 Explain that, while the most common scenario is to simply provide the path to the file, Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files --- such as the parameters associated with the file path and header that were used in the demo code.
 
-Congratulate students on reading their first CSV file into Pandas as this is an exciting moment because students can now harness the power of Pandas to work with tabular data! Ask if there are any questions before moving on.
+Congratulate students on reading their first CSV file into Pandas. This is an exciting moment because students can now harness the power of Pandas to work with tabular data! Ask if there are any questions before moving on.
 
 ---
 
@@ -306,7 +306,7 @@ Slack out the solution file to students to use as a reference. Now that students
 
 ### 7. Instructor Do: Data Cleaning (10 min)
 
-Students will now take part in a lecture and discussion about data cleaning. They will learn what data cleaning, why it is necessary, and common strategies for cleaning data. This part of the lesson is crucial, as most of the data encountered in the real world is "dirty" and unusable.
+Students will now take part in a lecture and discussion about data cleaning. They will learn what data cleaning is, why it is necessary, and common strategies for cleaning data. This part of the lesson is crucial, as most of the data encountered in the real world is "dirty" and unusable.
 
 **File:** [data_cleaning.ipynb](Activities/04-Ins_Data_Cleaning/Solved/data_cleaning.ipynb)
 
@@ -340,13 +340,13 @@ Discuss how data quality is determined.
 
   * There should not be any duplicate rows in a dataset.
 
-* Data quality rules are also defined by business or functional rules. Sometimes data needs to be stored or formatted in a unique way for business needs. For example, an international company might store dates as `DD/MM/YYY`, whereas an American company might store dates as `MM/DD/YYYY`.
+* Data quality rules are also defined by business or functional rules. Sometimes data needs to be stored or formatted in a unique way for business needs. For example, an international company might store dates as `DD/MM/YYYY`, whereas an American company might store dates as `MM/DD/YYYY`.
 
-Mention to students that these rules can all be researched  outside of class.
+Mention to students that these rules can all be researched outside of class.
 
 Ask students to propose some reasons why data might become dirty. Then, highlight some of the common reasons for having dirty data:
 
-* **Typos:** When manually entering data, users can enter typos. If gone unchecked, typos can corrupt data values. There is little that can be be done to get rid of typos, as it is often difficult to identify them.
+* **Typos:** When manually entering data, users can enter typos. If gone unchecked, typos can corrupt data values. There is little that can be done to get rid of typos, as it is often difficult to identify them.
 
 * **Human error:** Humans can copy and manipulate data incorrectly. For instance, someone might copy and paste data into the wrong Excel file. Or a Python function can incorrectly compute a data value. If these issues are not fixed, data quality issues will arise down the road.
 
@@ -585,7 +585,7 @@ and review the activity solution.
 
 Ask students, "What steps should be taken if all values in a Series are null?" (Answer: The Series should be dropped.)
 
-* Nulls can throw a wrench in an analytic pipeline. The `isnull` function will identify which Series has nulls. If there are nulls, they can be removed or filled. The `dropna` and `fillna` functions provide this functionality, respectively. Note that it's important to understand which fields can have nulls and which one's cannot.
+* Nulls can throw a wrench in an analytic pipeline. The `isnull` function will identify which Series has nulls. If there are nulls, they can be removed or filled. The `dropna` and `fillna` functions provide this functionality, respectively. Note that it's important to understand which fields can have nulls and which ones cannot.
 
   ```python
   csv_data.isnull()
@@ -612,7 +612,7 @@ Ask students, "What steps should be taken if all values in a Series are null?" (
 
 * Identifying data types is valuable because it allows for incorrectly inferred data types to be corrected and converted to the appropriate data types.
 
-* If needed, a Series can be converted to the appropriate data type using the `astype` function (e.g., converting a date field from `string` to `Date`). Some conversions might require values to cleaned before they can be converted (e.g., removing `$` from an amount field).
+* If needed, a Series can be converted to the appropriate data type using the `astype` function (e.g., converting a date field from `string` to `Date`). Some conversions might require values to be cleaned before they can be converted (e.g., removing `$` from an amount field).
 
   ![LP_Ins_Data_Cleansing_Data_Types.PNG](Images/LP_Ins_Data_Cleansing_Data_Types.PNG)
 
@@ -620,7 +620,7 @@ If time allows, engage the students with the following review questions:
 
 * Two types of rules determine what is considered clean and dirty data. What are they?
 
-  **Answer:** Data quality rules are determined based on technical and business rules.
+  **Answer:** The quality of data is based upon technical and business rules.
 
 * True or false: It's okay to have currency symbols and commas in amount fields.
 
@@ -632,7 +632,7 @@ If time allows, engage the students with the following review questions:
 
 To guide students, you may want to follow up with questions such as the following:
 
-* I used `fillna(0)` to fill NaN or null values in my DataFrame, but now my first_name and last_name fields have 0s in them. What happened? What should I have done instead?
+* I used `fillna(0)` to fill NaN or null values in my DataFrame, but now my first_name and last_name fields have 0s in them. What happened, and what should I have done instead?
 
   **Answer:** `fillna(0)` fills all null/NaN values in the DataFrame, regardless of the data type of the Series where the null is. `fillna()` should have been applied against the specific Series that needed the nulls converted to 0.
 
@@ -640,7 +640,7 @@ To guide students, you may want to follow up with questions such as the followin
 
   **Answer:** False. Technical rules might be disregarded in order to satisfy business rules.
 
-For more comprehensive data cleaning strategies, slack out the following [link](https://www.kaggle.com/chrisbow/kernels?sortBy=relevance&group=everyone&search=Cleaning+data+with+Python&page=1&pageSize=20&userId=1541110) for curious students who want to learn more about data-cleaning processes using Python. Ask if there are any questions before moving on.
+For more comprehensive data cleaning strategies, slack out the following [link](https://www.kaggle.com/chrisbow/kernels?sortBy=relevance&group=everyone&search=Cleaning+data+with+Python&page=1&pageSize=20&userId=1541110) for curious students who want to learn more about data cleaning processes using Python. Ask if there are any questions before moving on.
 
 ---
 
@@ -676,7 +676,7 @@ Open [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb) and demo
 
   ![index_overview](Images/index_overview.png)
 
-* The `copy` function is used to decouple original DataFrames from DataFrames indexed by `set_index`. This prevents changes made to the indexed DataFrame from being made to the original DataFrame, ensuring that the state of the original DataFrame is preserved. This is Pandas' way of implementing version control on DataFrames.
+* The `copy` function is used to decouple original DataFrames from DataFrames indexed by `set_index`. This prevents changes made to the indexed DataFrame from being made to the original DataFrame, ensuring that the state of the original DataFrame is preserved. This is Pandas way of implementing version control on DataFrames.
 
   ![index_copy](Images/index_copy.png)
 
@@ -1023,10 +1023,10 @@ Before ending class, give students encouragement and allow them time to vocalize
 
 * Tell students that they are now ready to start using more advanced financial calculations and functions, and eventually move on to working with APIs.
 
-* Let the students know that office hours are available for anyone who might have additional questions, would like to review more, or would like to just talk Python, Pandas, financial portfolios, and/or FinTech in general.
+* Let the students know that office hours are available for anyone who might have additional questions, would like to review more, or would just like to talk Python, Pandas, financial portfolios, and/or FinTech in general.
 
 ### End Class
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
