@@ -457,7 +457,7 @@ In this activity, students learn how to import data (CSV) into an existing table
 
 **Files:**
 
-* [birdsong.csv](Activities/06-Ins_Importing_Data/Resources/birdsong.csv)
+* [bird_song.csv](Activities/06-Ins_Importing_Data/Resources/bird_song.csv)
 
 * [query.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
 
@@ -483,7 +483,7 @@ In the Options tab, complete the following steps:
 
 * Slide the Import/Export tab to Import.
 
-* Click on the dot menu to navigate to the `birdsong.csv` file on your computer.
+* Click on the dot menu to navigate to the `bird_song.csv` file on your computer.
 
 * Slide the Header tab to Yes.
 
@@ -493,7 +493,7 @@ In the Options tab, complete the following steps:
 
  ![import.png](Images/import.png)
 
-In the query tool, rerun `SELECT * FROM birdsong` to verify that data has been imported.
+In the query tool, rerun `SELECT * FROM bird_song` to verify that data has been imported.
 
 Let the class know that the larger a dataset is, the longer it will take for pgAdmin to import values.
 
