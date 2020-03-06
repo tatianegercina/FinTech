@@ -22,11 +22,11 @@ By the end of this module, you will be able to:
 
 To discuss the definition of money, we first need to define the concept of **value**, which is the perceived benefit derived from a good or service. For example, one may value apples for their intrinsic capacity as food. **Money** is a way in which we can measure value, and serves three main functions:
 
-  - Unit of account: Money can serve as a direct numerical measurement of value for a good or service, acting as a standard description of value.
+  * Unit of account: Money can serve as a direct numerical measurement of value for a good or service, acting as a standard description of value.
 
-  - Medium of exchange: A useful form of money is accepted by a large number of participants in a market.
+  * Medium of exchange: A useful form of money is accepted by a large number of participants in a market.
 
-  - Store of value: Money should "generally" be stable relative to most of the goods and services it is exchanged for.
+  * Store of value: Money should "generally" be stable relative to most of the goods and services it is exchanged for.
 
 Money has had many forms throughout history, and we refer to physical money as currency. Some earlier forms include precious metals, gems, and seashells, which we refer to as commodity money. Later, we began to create money that represented discrete portions of those commodities which we call representative money.
 
