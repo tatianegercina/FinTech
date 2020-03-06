@@ -32,15 +32,17 @@ Complete the following steps:
 
     * **Description content:** Content for the description
 
-    * **Contributors:** The names of everyone in your group
+    * **Contributors:** The names of everyone in your group and optionally a contact e-mail.
 
-    * **Level 3 heading:** A title for the FinTech case study report
+5. Create a new markdown file named `company_case_study.md` where you should replace the word `company` with the name of the company you choose to write your case study about (e.g. `starbucks_case_study.md`). Include the following structure in your document.
+
+    * **Level 1 heading:** A title for the FinTech case study report
 
     * **Case study content:** Content for the case study
 
-5. Push the changes to the shared GitHub repository.
+6. Push the changes to the shared GitHub repository.
 
-6. Navigate to the shared GitHub repository and confirm the changes.
+7. Navigate to the shared GitHub repository and confirm the changes.
 
 ## Hint
 

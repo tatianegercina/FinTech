@@ -450,19 +450,35 @@ Open the lesson slides, move to the "Writing Successful Case Studies" section an
 
 * Even those in a highly technical role must stay abreast of what is happening in the business landscape, as many FinTech companies are disrupting in creative ways that are transforming the traditional finance world.
 
-* FinTech industry covers so many domains, that it's hard to be savvy in every single area, so reading and writing case studies could give you the ability to be update on the most recent advances and successful stories in the FinTech realm.
+* FinTech industry covers so many domains, that it's hard to be savvy in every single area, so reading and writing case studies could give you the ability to be updated on the most recent advances and successful stories in the FinTech realm.
 
 * Writing a successful case study may be challenging, since many people are not sure how to start or feel that are not good in expressing ideas in writing.
 
-* Being able to write a case study, may give an advantage while interviewing for a new job, or proving your mastery for a new position in your current company. You will demonstrate...
+* Being able to write a case study, may give you an advantage while interviewing for a new job, or proving your mastery for a new position in your current company, since you will have the ability to outline your success or effectiveness in dealing with a client, a tough situation in your team, or a complex business scenario.
+
+* A successful case study is a self-contained story about reality, typically you should describe how a real customer overcame their problems thanks to your products, services, or professional experience.
+
+* As any story, a successful case study has a beginning, a middle, and an end, where your customer as protagonist, overcome a problem achieving their objectives.
+
+* A a general guide to write a case study, you can use the "Narrative Arc" that encompasses the following stages.
+
+  * **Exposition:** This is the beginning of the story where the characters (stakeholders) are introduces as well as the main conflict that will propel the story.
+
+  * **Rising Action:** In this stage, a series of events that complicate the situation for the protagonist (your customer) creates a rise in the story's suspense or tension.
+
+  * **Climax:** This is the stage of greatest suspense or tension in the story. The characters (stakeholders) are deeply involved in the conflict, and most of the times the protagonist (your customer) had to make a critical decision that will guide his actions in the climax.
+
+  * **Falling Action:** In this stage, there is a release of tension towards the conflict's resolution. In this state, you may describe how the protagonist (your customer) has changes as a result of facing the conflict. Normally in this part of the case study, is where you highlight how your product, service, or professional experiences contributes to create the path to the resolution.
+
+  * **Resolution (aka Denouement):** This is the end of the story, typically a happy ending where the problems derived from the conflict are resolved by using your product, service, or professional experience. In the case of an interview case study exposure, the ending doesn't have to be a happy one, but a complete story with an interesting moral for avoiding conflict in the future.
+
+Next, provide an overview of the next activity.
 
 * Now that you know how to manage your GitHub repositories and create text-formatted markdown files, you can move on to creating shared repositories in which multiple people collaborate to create a case study report.
 
-* Git repositories are often shared and have multiple collaborators; therefore, this activity will give you practice in this kind of scenario.
+* Git repositories are often shared and have multiple collaborators; therefore, the next activity will give you practice in this kind of scenario.
 
-Next, provide an overview of the activity.
-
-* In the class GitHub repository, there will be a list of FinTech case study proposals. These include information about the company, reasons the company might make for an interesting case study, and additional resources to explore.
+* In the class GitHub repository, there are a list of FinTech case study proposals. These include information about the company, reasons the company might make for an interesting case study, and additional resources to explore.
 
 * You should pair off, choose one of the FinTech companies on the list, and then conduct your research.
 
