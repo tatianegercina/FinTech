@@ -68,13 +68,33 @@ In the below elbow chart, the bend occurs at 6, meaning this is the optimal valu
 
 <details>
 <summary>What is PCA?</summary>
-
+Placeholder
+https://www.youtube.com/watch?v=FgakZw6K1QQ
 </details>
 <details>
 <summary>What is the cloud?</summary>
+
+The cloud is an abstract term for accessing computing power online from a machine other than your own.  When you save files to the cloud, it really just means you're saving your files on a machine (server) located somewhere else, but that can be accessed anywhere via the internet.  These servers are located on server farms where thousands of computers are operating simultaneously to provide computing services via *"the cloud"*.
+
+Storage such as Google Drive is a popular cloud computing product, but there are many others.  Amazon Web Services (AWS) currently provides over 175 services on the cloud.  Examples include; Sagemaker - which allows you to run juypter notebooks on the cloud, Lex - which allows you build conversational interfaces (chatbots) and run them in the cloud, and Relational Database Service (RDS), which allows you to connect to a database via the cloud.
+
+For a full list of AWS services click [here.](https://aws.amazon.com/products/)
+
 <blockquote>
 <details>
 <summary>Types of cloud services:</summary>
+
+Cloud services can be divided into 4 general categories:
+
+**Is this ok - took from LP?**
+
+**Infrastructure as a service (IaaS):** Online services that provide APIs to access different infrastructures such as servers, virtual machines, storage, load balancers, or network interfaces (e.g., [Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/)).
+
+**Platform as a service (PaaS):** Provides a platform that allow customers to develop, run, and manage applications without the complexity of building and maintaining their own physical infrastructure (e.g., [Amazon Web Services](https://aws.amazon.com/)).
+
+**Software as a service (SaaS):** Refers to a software licensing and delivery model where software is licensed on a subscription basis and is centrally hosted (e.g., [Microsoft Office 365](https://www.office.com/)).
+
+**Function/code as a service (FaaS):** Also known as serverless computing, it offers a remote procedure call that enables the deployment of individual functions in the cloud that run in response to events (e.g., [AWS Lambda](https://aws.amazon.com/lambda/)).
 
 </details>
 </blockquote>
