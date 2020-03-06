@@ -48,7 +48,10 @@ The vast majority of the time anyone is discussing the price or action on a stoc
 
 The end of many interview processes involves some negotiation of payment. When working at a startup, you may be offered the opportunity to exchange some of your potential income for equity in the company you are helping to build. This section will explore some of the possible ways in which you may be compensated for your work.
 
-Regular Income: income which we would typically associate with working at a job. In some startups, there may not be enough cash on hand to pay competitive salaries, and thus other methods of compensation may be used.
-Up-front equity: This is typically restricted to founders or extremely early employees in the company. Often in the pre-seed and seed stages of a company, there may not be enough cash to pay a salary, and thus a major share/ownership of the company must be portioned amongst those working on a project
-Options: For companies that are beginning to grow may also offer options in the company in addition to a regular income. These options are often not able to be exercised until the company is acquired or reaches an IPO. Ultimately, however, the employee has the opportunity to possibly purchase shares at a significantly lower price than what the equity is currently worth, meaning that the stock could be sold immediately for a profit, or kept as it continues to grow.
-Restricted Stock Units (RSU’s): an RSU is another stock-like compensation method that essentially assigns a certain number of shares to be given to the employee after a given amount of time known as the **vesting period**.
+* Regular Income: income which we would typically associate with working at a job. In some startups, there may not be enough cash on hand to pay competitive salaries, and thus other methods of compensation may be used.
+
+* Up-front equity: This is typically restricted to founders or extremely early employees in the company. Often in the pre-seed and seed stages of a company, there may not be enough cash to pay a salary, and thus a major share/ownership of the company must be portioned amongst those working on a project
+
+* Options: For companies that are beginning to grow may also offer options in the company in addition to a regular income. These options are often not able to be exercised until the company is acquired or reaches an IPO. Ultimately, however, the employee has the opportunity to possibly purchase shares at a significantly lower price than what the equity is currently worth, meaning that the stock could be sold immediately for a profit, or kept as it continues to grow.
+
+* Restricted Stock Units (RSU’s): an RSU is another stock-like compensation method that essentially assigns a certain number of shares to be given to the employee after a given amount of time known as the **vesting period**.
