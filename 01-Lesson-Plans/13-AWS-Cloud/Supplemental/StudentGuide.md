@@ -44,12 +44,23 @@ An example of unsupervised learning would be to use website purchase data to gro
 
 <blockquote>
 <details>
-<summary>What is a centroid?</summary>
+<summary>What it is:</summary>
 
+Kmeans is one of the most popular unsupervised machine learning models.  This clustering algorithm uses a number (refered to as `k`) of clusters and then plots those initial clusters in random locations. The distance between each cluster and each data point is then taken, and each data point is assigned to the nearest cluster, after which the mean of each cluster is calculated to create centroids.  Centroid is simply the word for the mean of the cluster (the center!).  The data is reclustered based on the new centroid location rather than the initial random location. This is where the *means* in *k-means* comes from! The variance of the clusters is then calculated, and the process starts again with new randomly generated clusters.  The process is repeated for the number of times you specify, after which the scenario with the lease variance is chosen to represent the final clusters.
+
+![k-means](Images/k-means.gif)
+
+
+The following video from StatQuest on YouTube provides an excellent, easy to understand explanation of the process: [K-means Clustering.](https://www.youtube.com/watch?v=4b5d3muPQmA)
 </details>
-<details>
-<summary>How do you read an elbow chart?</summary>
 
+<details>
+<summary>How do you determine the `k` number of clusters?</summary>
+There are several ways to deterimine the best number of clusters for your model. For our class, we use the elbow method.  The elbow method takes into account a range of values for `k` and plots their inertia, inertia being how far the clusters expand from the centroid.  This number should be as low as possible, indicating tightly packed clusters.  When these values are plotted on a line chart, a bend should form where the optimal value of `k` is located.  This bend incates the point at which adding clusters does not greatly improve the inertia, thus the smallest amount of clusters with the best inertia.
+
+In the below elbow chart, the bend occurs at 6, meaning this is the optimal value for `k` for this example:
+
+![elbow chart](Images/elbow_chart.png)
 </details>
 </blockquote>
 </details>
@@ -75,7 +86,7 @@ An example of unsupervised learning would be to use website purchase data to gro
 </details>
 
 <details>
-<summary>What is an IAM Role?</summary>
+<summary>What is an IAM Role?</summary>c
 
 </details>
 
