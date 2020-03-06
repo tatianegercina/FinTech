@@ -40,16 +40,15 @@ While we have only discussed up until series C, some businesses continue into se
 Earlier investors are typically rewarded with a larger number of shares in the company, as they take on more risk relative to those investors that joined later when the company is more stable. In some regions, earlier investors aggressively lockout later investors that may potentially dilute shares, which motivates investors to invest earlier rather than later.
 
 
-
 ### Student Activity: Crunch Numbers on Crunchbase
 
-Houston companies on crunchbase
+See instructions in [activity file](Activities/01-Stu_Crunching_Crunchbase/README.md)
 
 ### Reading: More than just stock
 
 Recall that stocks represent a share in the equity, and thus ownership, of a company. This partial ownership often comes with voting rights for an event such as corporate policies, approval of new board members, and other events that impact the company at scale. The amount of voting power associated with each stock varies depending upon on the companies and its policies. For example, some companies scale the number of votes a stock is worth by the position of the person casting the vote. Stocks come in two major forms with regards to this voting power that we will explore here: Common and Preferred stock.
 
-The vast majority of the time anyone is discussing the price or action on a stock, they are referring to Common stock. This form of stock confers ownership of the company as well as rights to dividends if the company distributes them. However, while Preferred stock still represents ownership of the company, it differs in two key ways. First, preferred stock doesn’t come with voting rights! Preferred stock-holders are generally beholden to the decisions of the company as a whole. Second, preferred stock-holders are given priority in the payment of dividends, a merger, or a liquidation. Essentially, holding a preferred stock trades voting powers in favor of financial priority. Preferred stock can be converted into Common stock under certain conditions as well.
+The vast majority of the time anyone is discussing the price or action on a stock, they are referring to Common stock. This form of stock confers ownership of the company as well as rights to dividends if the company distributes them. However, while Preferred stock still represents ownership of the company, it differs in two key ways. First, preferred stock doesn’t come with voting rights! Preferred stock-holders are generally beholden to the decisions of the company as a whole. Second, preferred stock-holders are given priority in the payment of dividends, a merger, or a liquidation. The dividends are also often pre-specified, so that there is a consistent return associated with holding the security. Essentially, holding a preferred stock trades voting powers in favor of financial priority. Preferred stock can be converted into Common stock under certain conditions as well.
 
 In private companies, the descriptions of voting rights and compensation are largely dictated by the company policies. Preferred stock within the same comapny may have different subtypes with different voting, liquidation, and dividend rights among other factors. However, when a company transitions to public, there tends to be a flattening of the different types such that there are only the Preferred and Common stock types.
 
@@ -65,3 +64,5 @@ The end of many interview processes involves some negotiation of payment. When w
 * Options: For companies that are beginning to grow may also offer options in the company in addition to a regular income. These options are often not able to be exercised until the company is acquired or reaches an IPO. Ultimately, however, the employee has the opportunity to possibly purchase shares at a significantly lower price than what the equity is currently worth, meaning that the stock could be sold immediately for a profit, or kept as it continues to grow.
 
 * Restricted Stock Units (RSU’s): an RSU is another stock-like compensation method that essentially assigns a certain number of shares to be given to the employee after a given amount of time known as the **vesting period**.
+
+Owning equity in a company that is in the process of growing is intrinsically a long-term and illiquid risk. You will likely work for 3-5 years as your equity in the company fluctuates in value, you may wait even longer before you can actually liquidate the asset for cash. However, this risk also comes with the opportunity for outsized returns - if the company becomes highly valued (a "unicorn"!) then your equity could be worth millions overnight.
