@@ -38,10 +38,9 @@ Complete the following steps using the command line:
 
 ## Hints
 
-* Use the [CommonCommands.sh](Unsolved/CommonCommands.sh) file for reference if you need help performing these file system operations.
+* Use the [CommonCommands.md](Unsolved/CommonCommands.md) file for reference if you need help performing these file system operations.
 
 * Use the `mv` operation to rename files or folders.
 
 ---
-
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

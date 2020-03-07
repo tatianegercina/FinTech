@@ -245,13 +245,13 @@ Let's say you are a famous crypto trader and wanted to publish your latest buy o
 
 Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrade.sol`:
 
-* Type the following contract boilerplate:
+Type the following contract boilerplate:
 
  ```solidity
  contract LatestTrade {
- string coin = "BTC";
- uint price;
- bool is_buy_order;
+    string coin = "BTC";
+    uint price;
+    bool is_buy_order;
  }
  ```
 
@@ -261,25 +261,25 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
 
  * Lastly, we are going to define a boolean (true/false value) called `is_buy_order`. If the order is a buy order, we will set this to `true`. If it is a sell order, we will set it to `false`.
 
- * Now that we have defined our variables for our contract's values, we can create a function to set them.
-
-* Add a function called `updateTrade` to the contract:
+Add a function called `updateTrade` to the contract:
 
  ```solidity
  pragma solidity ^0.5.0;
 
- contract LatestTrade {
- string coin = "BTC";
- uint price;
- bool is_buy_order;
+contract LatestTrade {
+    string coin = "BTC";
+    uint price;
+    bool is_buy_order;
 
- function updateTrade(string memory newCoin, uint newPrice, bool is_buy) public {
- coin = newCoin;
- price = newPrice;
- is_buy_order = is_buy; /// is this a buy or a sell order?
- }
- }
- ```
+    function updateTrade(string memory newCoin, uint newPrice, bool is_buy) public {
+        coin = newCoin;
+        price = newPrice;
+        is_buy_order = is_buy; /// is this a buy or a sell order?
+    }
+}
+```
+
+ * Now that we have defined our variables for our contract's values, we can create a function to set them.
 
  * Remember, we have to specify the data type of the parameters as well. We can't get away with ambiguity here as we can in Python!
 
@@ -291,13 +291,15 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrad
 
  * Since we defined `string coin` at the top of the contract without specifying `memory`, any variable stored in `coin` is permanently written to the blockchain.
 
-* Now it's time to add a function to fetch all of these variables in one shot:
+Add a function to fetch all of the variables in one shot:
 
  ```solidity
  function getLatestTrade() public returns (string memory, uint, bool) {
- return (coin, price, is_buy_order);
+    return (coin, price, is_buy_order);
  }
  ```
+
+ * Now it's time to add a function to fetch all of the defined variables in one shot.
 
  * Notice that we add the `public` to the function definition, and we also need to specify the return types!
 
@@ -444,14 +446,14 @@ Earlier in the day, we built a simple contract that stored variables representin
 
 Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavings.sol`:
 
-* Type the following contract boilerplate:
+Type the following contract boilerplate:
 
  ```solidity
  pragma solidity ^0.5.0;
 
  contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
  }
  ```
 
@@ -463,49 +465,53 @@ Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavin
 
  * Pay special attention to the new modifier that we are using called `payable`. By setting an `address` or function as `payable`, we unlock special functions that allow us to capture and manage ether.
 
-* For example, if we wanted to withdraw ether from the contract, we can add a withdraw function like so:
+Add a basic withdraw function to the contract.
 
  ```solidity
  pragma solidity ^0.5.0;
 
  contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
- function withdraw(uint amount, address payable recipient) public {
- return recipient.transfer(amount);
- }
+    function withdraw(uint amount, address payable recipient) public {
+        return recipient.transfer(amount);
+    }
  }
  ```
 
- * Our withdrawal function accepts the following parameters:
+ * For example, if we wanted to withdraw ether from the contract, we can add a withdraw function like so.
 
- * A `uint` amount representing the amount of ether (in its smallest denomination, Wei) we would like to withdraw.
+    * Our withdrawal function accepts the following parameters:
 
- * The `address` recipient that we would like to withdraw to.
+    * A `uint` amount representing the amount of ether (in its smallest denomination, Wei) we would like to withdraw.
 
- * All smart contracts on Ethereum have their own address when deployed, and can store and send ether like a wallet.
+    * The `address` recipient that we would like to withdraw to.
+
+    * All smart contracts on Ethereum have their own address when deployed, and can store and send ether like a wallet.
 
  * Address types have built-in functions, like `address.balance`. If we set the address to `payable`, the `.transfer` function is enabled, which allows us to transfer ether from the contract's wallet to that address.
 
  * Notice that we have the recipient parameter set as a `payable address` in this withdraw function. We still have to be explicit like this in the parameters as well, so that we can call the `.transfer` function on the recipient address later in the function.
 
-* Now that we can withdraw, let's add the ability to deposit:
+Add a `public payable` function named deposit to the contract.
 
  ```solidity
  pragma solidity ^0.5.0;
 
  contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
  function withdraw(uint amount, address payable recipient) public {
- return recipient.transfer(amount);
+    return recipient.transfer(amount);
  }
 
  function deposit() public payable {}
  }
  ```
+
+ * Now that we can withdraw, let's add the ability to deposit.
 
  * Remember, all smart contracts on Ethereum have their own address when deployed, and can store and send ether like a wallet. It is up to us to create functions that manage this ether properly, as we did with the withdraw function.
 
@@ -519,7 +525,7 @@ Ask the students the following question:
 
 * As you know, moving ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the `gas` that was sent?
 
- * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our ether back since it was never successfully spent.
+    * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our ether back since it was never successfully spent.
 
 We are going to add one final line to make sure that if ether is sent to the contract without using the `deposit` function, (i.e., sending ether directly to the contract's address), we can still capture the ether into the contract's wallet.
 
@@ -529,11 +535,11 @@ We are going to add one final line to make sure that if ether is sent to the con
  pragma solidity ^0.5.0;
 
  contract JointSavings {
- address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
- address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
+    address payable account_one = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
+    address payable account_two = 0xA29f7E79ECEA4cE30DD78cfeb9605D9aFf5143a5;
 
  function withdraw(uint amount, address payable recipient) public {
- return recipient.transfer(amount);
+    return recipient.transfer(amount);
  }
 
  function deposit() public payable {}

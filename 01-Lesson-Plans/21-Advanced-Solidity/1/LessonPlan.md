@@ -415,7 +415,7 @@ This demonstration shows students how to use the `SafeMath` from `OpenZeppelin` 
 
 * [ArcadeTokenSafeMath.sol](Activities/04-Ins_SafeMath/Unsolved/ArcadeTokenSafeMath.sol)
 
-Now it's time to make our tokens more secure. Briefly explain to the class:
+It's time to make our tokens more secure. Briefly explain to the class:
 
 * The tokens that we have created so far are not secure.
 
@@ -461,7 +461,9 @@ Ensure the students understand the concept of an underflow/overflow and how it a
 
 * Thankfully, there are libraries out there that allow us to write more secure smart contracts.
 
-Introduce the OpenZeppelin project, and the SafeMath library:
+Introduce the OpenZeppelin project, and the SafeMath library by opening the [OpenZeppelin Contract Docs](https://docs.openzeppelin.com/contracts/2.x/) and by clicking `Math`:
+
+![OpenZeppelin Contract Docs](Images/openzeppelin_contract_docs.png)
 
 * The OpenZeppelin project contains many standardized smart contracts and templates to help the community build off of. This allows developers to write more secure and efficient Solidity code.
 
