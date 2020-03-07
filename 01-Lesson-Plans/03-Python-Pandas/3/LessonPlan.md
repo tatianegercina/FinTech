@@ -2,7 +2,7 @@
 
 ### Overview
 
-In the last class, students got their hands dirty using Pandas to read, clean, and analyze financial data over time. Today's lesson will continue this trajectory as students learn how to use Pandas to conduct time series analysis in order to calculate risks and returns over time. Learning this skill will allow students to manage all of the financial data they will inevitably encounter in FinTech. In this lesson students will also learn how to group data and apply multi-indexing to a DataFrame to improve the analysis and visualization of stock exchange data.
+In the last class, students got their hands dirty using Pandas to read, clean, and analyze financial data over time. Today's lesson will continue this trajectory, as students learn how to use Pandas to conduct time series analysis in order to calculate risks and returns over time. Learning this skill will allow students to manage all of the financial data they will inevitably encounter in FinTech. Students will also learn how to group data and apply multi-indexing to a DataFrame to improve the analysis and visualization of stock exchange data.
 
 ### Class Objectives
 
@@ -26,7 +26,7 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* Prepare for the lesson by running the code examples and reviewing the lectures before class. Today's lesson will be a quantum leap for students as they move beyond the basics of Pandas to more advanced concepts that can be applied to risk analysis use cases. You will need to clearly articulate what you are doing in each live demo and why, from a financial point of view. This is especially true for the standard deviation and Sharpe ratio activities.
+* Prepare for the lesson by running the code examples and reviewing the lectures before class. Today's lesson will be a quantum leap for students, as they move beyond the basics of Pandas to more advanced concepts that can be applied to risk analysis use cases. You will need to clearly articulate what you are doing in each live demo and why, from a financial point of view. This is especially true for the standard deviation and Sharpe ratio activities.
 
 * Throughout the lesson, be sure to underscore how Pandas lessens the burden of analysis by providing financial functions such as `MultiIndex` and `groupby()`. Students will learn the practical applications of these concepts by analyzing cryptocurrencies and stock exchange data. For example, tell students they can use the `groupby` function to automatically consolidate data in order to calculate an average, rather than organizing two years’ worth of daily returns data for each cryptocurrency in an Excel file. Similarly, instead of having to create a `groupby` function themselves, students get to use the Pandas function for free.
 
@@ -34,7 +34,7 @@ By the end of class, students will be able to:
 
 * Be mindful of the class pacing; the pace should feel urgent, but not rushed. Check for understanding regularly, and circulate the classroom with the TAs during activities to offer your assistance. Stick to the Time Tracker as closely as possible. Encourage students who are confused to attend office hours.
 
-* Encourage students to work in pairs or groups on the in-class activities to help facilitate discussions as well as troubleshooting. Collaborative exercises such as student-led activity reviews and discussions have been built into this lesson.
+* Encourage students to work in pairs or groups on the in-class activities to help facilitate discussions, as well as troubleshooting. Collaborative exercises such as student-led activity reviews and discussions have been built into this lesson.
 
 * Have your TAs keep track of time with the [Time Tracker](TimeTracker.xlsx).
 
@@ -50,7 +50,7 @@ By the end of class, students will be able to:
 
 * Note: Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -92,7 +92,7 @@ Walk students through the following steps.
 
   * `interval`: The frequency of returned data; either "DAILY" or "WEEKLY".
 
-  **Note:** The `end_date` provides historical data up to but not including the date specified.
+  **Note:** The `end_date` provides historical data up to, but not including, the date specified.
 
 * Type in the following for the Google Finance function: `=GOOGLEFINANCE("FB", "price", "2/12/2019", "5/14/2019", "DAILY")`. The data should populate within the Google Sheet.
 
@@ -198,7 +198,7 @@ Ask if there are any questions before moving on.
 
 ### 3. Student Do: Out of Sorts (15 min)
 
-In this activity, students will extract data for a single ticker from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function and calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
+In this activity, students will extract data for a single ticker from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function and calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top five performing days for returns.
 
 **File:** [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Unsolved/out_of_sorts.ipynb)
 
@@ -208,7 +208,7 @@ As students work on the activity, circulate the room with the TAs to offer assis
 
 If a student finishes the activity early, ask if they are willing to help present the solution by live coding how to sort a DataFrame by more than one column. This live-coding exercise will be completed in the activity review (the next part of the lesson).
 
-If the student agrees, spend up to 5 minutes with them reviewing the following scenario.
+If the student agrees, spend up to five minutes with them reviewing the following scenario.
 
 **Scenario:**
 
