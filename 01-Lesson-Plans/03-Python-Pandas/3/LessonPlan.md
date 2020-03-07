@@ -500,7 +500,7 @@ Use the slideshow to provide an overview of multi-indexing.
 
 * **Multi-indexing** is the process of indexing a dataset by more than one value. Multi-indexing is like using two bookmarks in a book. Each bookmark is an index, and depending on which index you go to, you'll get different content.
 
-* Multi-indexing is sometimes referred to as hierarchical indexing, as relationships can exist between indexes. For example, a state can be one index and a city can be another. Because a city belongs to a state, these indexes would be hierarchical.
+* Multi-indexing is sometimes referred to as hierarchical indexing, as relationships can exist between indexes. For example, a province can be one index and a city can be another. Because a city belongs to a province, these indexes would be hierarchical.
 
 * Multiple indexes are valuable because they enable dimensional data to be grouped and retrieved.
 
@@ -512,7 +512,7 @@ Use the slideshow to provide an overview of multi-indexing.
 
 Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing.ipynb) and live code how to create and use multiple indexes, as well as how to access data using more than one index. Cover the following points:
 
-* When working with indexes, its a common practice to clean data before setting indexes. For example, a Series being used as an index should not have any `NaN` values. These can be handled by first executing `dropna` against a DataFrame. The `set_index` function can then be used set the index.
+* When working with indexes, it's a common practice to clean data before setting indexes. For example, a Series being used as an index should not have any `NaN` values. These can be handled by first executing `dropna` against a DataFrame. The `set_index` function can then be used set the index.
 
 * Multi-indexing is commonly done when working with `Date` data.
 
@@ -755,11 +755,11 @@ In this activity, students will get hands-on experience with combining multiple 
 
 ### 14. Instructor Do: Review Mastering Concatenation (5 min)
 
-In this part of the lesson, review the Mastering Concatenation activity with students. First, you will conduct a brief Q & A to test students' understanding, and then you will perform a dry walk-through of the solution.
+In this part of the lesson, review the Mastering Concatenation activity with students. First, you will conduct a brief Q&A to test students' understanding, and then you will perform a dry walk-through of the solution.
 
 **File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_Dataframes/Solved/mastering_concatenation.ipynb)
 
-Start the review by conducting a Q & A with the following questions:
+Start the review by conducting a Q&A with the following questions:
 
 * If you want to consolidate two DataFrames with the same columns into one DataFrame, which `concat` axis would you use?
 
@@ -827,7 +827,7 @@ Open the slideshow and explain the following:
 
 Live code how to use Pandas to calculate standard deviation in order evaluate risk:
 
-* Standard deviation should be calculated using daily returns data. Calculating standard deviation against daily returns will help identify risk based on return value rather than price volatility.
+* Standard deviation should be calculated using daily returns data. Calculating standard deviation against daily returns will help identify risk based on return value, rather than price volatility.
 
   ![std_dev.png](Images/std_dev.png)
 
@@ -942,7 +942,7 @@ Open [sharpe_ratios.ipynb](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.
 
   ![sharpe_ratios.png](Images/sharpe_ratios.png)
 
-* The return-to-risk ratio can be used to determine which stocks and/or portfolios have outperformed the others. The higher the sharpe ratio, the better the investment.
+* The return-to-risk ratio can be used to determine which stocks and/or portfolios have outperformed the others. The higher the Sharpe ratio, the better the investment.
 
 * The `plot` function is used to visually compare Sharpe ratios.
 
@@ -1044,7 +1044,7 @@ Ask students the following questions:
 
 * How many smart investments did Harold make compared to risky investments? How many did you make?
 
-    **Answer:** Out of his 10 investments, Harold only made 4 good investments. Out of the students' 6 investments, 3 of them were smart investments.
+    **Answer:** Out of his 10 investments, Harold only made four good investments. Out of the students' six investments, three of them were smart investments.
 
 * Which cryptos are the smartest investments?
 
@@ -1058,11 +1058,11 @@ Ask if there are any questions before moving on.
 
 Use the slideshow to briefly recap today's class.
 
-Another battle won, another level completed. Students have been excelling at a quantum speed, and it's important they understand this. End the class with the following positive remarks:
+Another battle won, another level completed. Students have been excelling at quantum speed, and it's important they understand this. End the class with the following positive remarks:
 
-* Students have come so far. Earlier in the week they were just learning how to use Pandas. Now they're using Pandas to analyze investment risk and predict smart investments.
+* Students have come a long way. Earlier in the week they were just learning how to use Pandas. Now they're using Pandas to analyze investment risk and predict smart investments.
 
-* These skills are applicable to the real world. Being able to programmatically combine and group data in order to perform financial analysis and calculate investment risk will go a long way professionally and personally.
+* These skills are applicable to the real world. Being able to programmatically combine and group data in order to perform financial analysis and calculate investment risk will go a long way, professionally and personally.
 
 Engage the students by asking how they plan to incorporate skills from today's lesson into their resumes and/or work lives. Two skills that should be highlighted are:
 
@@ -1082,4 +1082,4 @@ Engage the students by asking how they plan to incorporate skills from today's l
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
