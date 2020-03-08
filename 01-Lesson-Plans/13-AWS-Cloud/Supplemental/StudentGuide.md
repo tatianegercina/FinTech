@@ -86,8 +86,6 @@ For a full list of AWS services click [here.](https://aws.amazon.com/products/)
 
 Cloud services can be divided into 4 general categories:
 
-**Is this ok - took from LP?**
-
 **Infrastructure as a service (IaaS):** Online services that provide APIs to access different infrastructures such as servers, virtual machines, storage, load balancers, or network interfaces (e.g., [Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/)).
 
 **Platform as a service (PaaS):** Provides a platform that allow customers to develop, run, and manage applications without the complexity of building and maintaining their own physical infrastructure (e.g., [Amazon Web Services](https://aws.amazon.com/)).
@@ -102,13 +100,20 @@ Cloud services can be divided into 4 general categories:
 
 
 <details>
-<summary>What is AWS and why should I care?</summary>
+<summary>What is AWS?</summary>
+
+AWS is a cloud computing platform provided by Amazon, offering over 175 different services via the cloud.  AWS is trusted by large companies and individual users alike to provide scalable, flexible computing power that is both cost effective and secure.  You might be surprised to know that many companies, including Netflix, use AWS for all their tech needs, including database and storage.
+
+Because the infrastructure is already in place, companies can easily scale up as needed without a huge up-front investment, and because they offer flexible usage options there is a cost appropriate option for everyone.
 
 </details>
 
 <details>
 <summary>What is an IAM Role?</summary>c
 
+AWS Identity and Access Management (IAM) allows you to securely control the acces of others to your AWS resources.  An IAM User can be created and then assigned a particular IAM role.  An IAM roles define *who* can do *what* to your AWS resources, and *when* they can do it. When you create an IAM User you are giving others access to your account without actually giving them the password.  Assigning a role to these users allows that access to be defined an restricted as you wish.
+
+https://aws.amazon.com/iam/faqs/
 </details>
 
 <details>
