@@ -126,6 +126,12 @@ Much like using virtual file folders on your own machine to store and organize y
 <details>
 <summary>What is Boto3?</summary>
 
+Boto3 is considered a Software Development Kit (SDK) for AWS.  SDKs are similar to Application Programming Interfaces (APIs) in that they both allow the user to interact with a platform, however SDKs are built to interact with a specific platform, where APIs are typicall used to allow platforms to interact with each other.  Boto3 allows Python developers to with various AWS resources outside of the AWS console, by programming those resources with code.
+
+A popular application of Boto3 is working with the contents of S3 buckets.  Boto3 is used to access those contents via Python code, and then you can manipulate the contents as you normally would - for example you might use Boto3 inside a Jupyter Notebook to load CSVs from an S3 bucket and then proceed to work with those CSVs with Pandas.
+
+The [Boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) is a great starting point for working with this SDK.  It describes the usage of the SDK and provides tutorials for implementing it with various AWS resources.
+
 </details>
 <details>
 <summary>What is Sagemaker?</summary>
