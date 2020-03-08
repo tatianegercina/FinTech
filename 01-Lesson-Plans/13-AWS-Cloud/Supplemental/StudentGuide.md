@@ -109,15 +109,18 @@ Because the infrastructure is already in place, companies can easily scale up as
 </details>
 
 <details>
-<summary>What is an IAM Role?</summary>c
+<summary>What is an IAM Role?</summary>
 
-AWS Identity and Access Management (IAM) allows you to securely control the acces of others to your AWS resources.  An IAM User can be created and then assigned a particular IAM role.  An IAM roles define *who* can do *what* to your AWS resources, and *when* they can do it. When you create an IAM User you are giving others access to your account without actually giving them the password.  Assigning a role to these users allows that access to be defined an restricted as you wish.
+AWS Identity and Access Management (IAM) allows you to securely control the acces of others to your AWS resources.   By creating an IAM User you are granting others secure access to your account without actually giving them your password.  After creating the user, a role can be assigned to the user that defines and resticts that access as you wish.  An IAM role defines *who* can do *what* to your AWS resources, and *when* they can do it. [This](https://aws.amazon.com/iam/faqs/) document from AWS contains some great frequently asked questions baout the IAM service.
 
-https://aws.amazon.com/iam/faqs/
 </details>
 
 <details>
 <summary>What are S3 buckets?</summary>
+
+Simple Storage Service, or S3 as its commonly known, is one of the most popular AWS services and was also one of first to be introduced, launching back in 2006.  S3 offers secure object storage in the cloud for anything from csv files to images and can be scaled as needed.  S3 can be used for anything from simple image hosting for your website, to connecting to data directly for database applications or analytics.
+
+Much like using virtual file folders on your own machine to store and organize your files, an S3 bucket is simply where your objects are stored on S3.
 
 </details>
 <details>
