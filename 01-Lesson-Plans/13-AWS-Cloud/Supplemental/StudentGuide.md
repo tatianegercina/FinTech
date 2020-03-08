@@ -4,14 +4,20 @@
 
 * Click [here](https://d1.awsstatic.com/whitepapers/aws-overview.pdf) for a thorough whitepaper from Amazon Web Services describing what cloud computing is and what role their tools play.
 
-* This guide from AWS is a handy reference for Lex bot deployments - [Deploying Amazon Lex Bots.](https://docs.aws.amazon.com/lex/latest/dg/examples.html)
+* [This](https://docs.aws.amazon.com/lex/latest/dg/examples.html) guide from AWS is a handy reference for Lex bot deployments.
 
-* The documentation for the Boto3 SDK is located [here](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+* For an simple explanation of how k-means works, click [here.](https://www.youtube.com/watch?v=4b5d3muPQmA)
+
+* Click [here](https://www.youtube.com/watch?v=FgakZw6K1QQ) for an easy to understand video on how PCA works.
 ---
 
 ### Additional Course Resources
 
 * [Creating and Activating an AWS Account](1-Create-and-Activate-an-AWS-Account.md)
+
+* [AWS Free Tier Info](AWS-Free-Tier.md)
+
+* [Deploying Lex bots to Slack](Deploying-Lex-Bot-to-Slack.md)
 
 ---
 
