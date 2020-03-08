@@ -4,6 +4,8 @@
 
 * Click [here](https://d1.awsstatic.com/whitepapers/aws-overview.pdf) for a thorough whitepaper from Amazon Web Services describing what cloud computing is and what role their tools play.
 
+* A great FAQ for AWS IAM Resources is located [here.](https://aws.amazon.com/iam/faqs/)
+
 * [This](https://docs.aws.amazon.com/lex/latest/dg/examples.html) guide from AWS is a handy reference for Lex bot deployments.
 
 * For an simple explanation of how k-means works, click [here.](https://www.youtube.com/watch?v=4b5d3muPQmA)
@@ -18,6 +20,8 @@
 * [AWS Free Tier Info](AWS-Free-Tier.md)
 
 * [Deploying Lex bots to Slack](Deploying-Lex-Bot-to-Slack.md)
+
+* [Deloitte Chat Bot Guide](deloitte-nl-fsi-chatbots-adopting-the-power-of-conversational-ux.pdf)
 
 ---
 
