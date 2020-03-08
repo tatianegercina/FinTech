@@ -6,6 +6,7 @@
 
 * This guide from AWS is a handy reference for Lex bot deployments - [Deploying Amazon Lex Bots.](https://docs.aws.amazon.com/lex/latest/dg/examples.html)
 
+* The documentation for the Boto3 SDK is located [here](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
 ---
 
 ### Additional Course Resources
