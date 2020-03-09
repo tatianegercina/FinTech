@@ -88,7 +88,7 @@ Complete the following:
 
   * Loop over the rest of the rows and append every row to the `menu` list object (the outcome will be a list of lists).
 
-* Set up the same process to read in `sales_data.csv`. However, instead append every row of the sales data to a new `sales` list object.
+* Set up the same process to read in `sales_data.csv`. But now, append every row of the sales data to a new `sales` list object.
 
 ### Manipulate the Data
 
@@ -132,7 +132,7 @@ Complete the following:
 
   * If the `sales_item` in sales is equal to the `item` in `menu`, capture the `quantity` from the sales data and the `price` and `cost` from the menu data to calculate the `profit` for each item.
 
-    * Cumulatively add the values to the corresponding metrics in the report like so:
+    * Cumulatively add the values to the corresponding metrics in the report, like so:
 
       ```python
       report[sales_item]["01-count"] += quantity
@@ -173,13 +173,13 @@ Complete the following:
 
 ## Hints and Considerations
 
-* Consider what we've learned so far. To date, we've learned how to import modules like `csv`; to read and write files in various formats; to store contents in variables, lists, and dictionaries; to iterate through basic data structures; and to debug along the way. Using what we've learned, try to break down you tasks into discrete mini-objectives. This will be a *much* better course of action than attempting to Google search for a miracle.
+* Consider what we've learned so far. To date, we've learned how to import modules like `csv`; to read and write files in various formats; to store contents in variables, lists, and dictionaries; to iterate through basic data structures; and to debug along the way. Using what we've learned, try to break down your tasks into discrete mini-objectives. This will be a *much* better course of action than attempting to Google search for a miracle.
 
 * As you will discover, for some of these activities, the datasets are quite large. This was done purposefully, as it showcases one of the limits of Excel-based analysis. While our first instinct as data analysts is often to head straight to Excel, creating scripts in Python can provide us with more robust options for handling "big data."
 
 * Your scripts should work for each dataset provided. Run your script for each dataset separately to make sure that the code works for different data.
 
-* Feel encouraged to work in groups, but don't shortchange yourself by copying someone else's work. Dig your heels in, burn the night oil, and learn this while you can! These are skills that will pay dividends in your future career.
+* Feel encouraged to work in groups, but don't shortchange yourself by copying someone else's work. Dig your heels in, and learn this while you can! These are skills that will pay dividends in your future career.
 
 * **Start early**, and reach out for help often! Challenge yourself to identify _specific_ questions for your instructors and TAs. Don't resign yourself to simply saying, "I'm totally lost." Come prepared to show your effort and thought patterns, we'll be happy to help along the way.
 
@@ -195,4 +195,4 @@ Complete the following:
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U Inc. brand. All Rights Reserved.
