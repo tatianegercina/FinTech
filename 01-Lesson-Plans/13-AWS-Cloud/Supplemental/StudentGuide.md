@@ -4,7 +4,11 @@
 
 * Click [here](https://d1.awsstatic.com/whitepapers/aws-overview.pdf) for a thorough whitepaper from Amazon Web Services describing what cloud computing is and what role their tools play.
 
+* If you're wondering how all the AWS services can work together in a real-world scenario, the video series [*This is My Architecture*](https://aws.amazon.com/this-is-my-architecture/?tma.sort-by=item.additionalFields.airDate&tma.sort-order=desc) is a great place to start.  Each video provides a 5 - 10 minute interview with a real company, where they explain how their workflow using AWS services.
+
 * A great FAQ for AWS IAM Resources is located [here.](https://aws.amazon.com/iam/faqs/)
+
+* For an easy to understand Sagemaker Deep Dive video series, click [here.](https://www.youtube.com/playlist?list=PLhr1KZpdzukcOr_6j_zmSrvYnLUtgqsZz)
 
 * [This](https://docs.aws.amazon.com/lex/latest/dg/examples.html) guide from AWS is a handy reference for Lex bot deployments.
 
@@ -147,18 +151,16 @@ The [Boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/lates
 <details>
 <summary>What is Sagemaker?</summary>
 
-<blockquote>
-<details>
-<summary>Sagemaker SDK Docs</summary>
+When it comes it Amazon Sagemaker - think Jupyter Notebook for Machine Learning!  Amazon Sagemaker is a fully managed machine learning IDE, which is essentially a cloud instance of Jupyter Notebook, optimized for machine learning purposes.  Each Sagemaker instance can connect to your data in the cloud via S3 buckets or your preferred storage.  The instance is pre-loaded with commonly used machine learning algorithms such as XGBoost and K-means, and can automatically hypertune them, making it easy to train and test your data, as well as get powerful predictions.  Sagemaker has built-in components that allow for easy deployment of your model via endpoints, which allow for real time use based on real time user input and data.
+
+AWS has several great resources to learn more about Sagemaker.
+
+For a real world application nusing AWS workflows check out [this](https://www.youtube.com/watch?v=gYXqv1UxW3Y) video.  They also have an informative Sagemaker blog [here](https://aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/sagemaker/) and an easy to understand Sagemaker Deep Dive video series [here](https://www.youtube.com/playlist?list=PLhr1KZpdzukcOr_6j_zmSrvYnLUtgqsZz).
+
+Additionally the AWS Sagemaker SDK docs are a great place to take your own deep dive: [Sagemaker SDK Docs.](https://sagemaker.readthedocs.io/en/stable/)
 
 </details>
 
-<details>
-<summary>Built-in Algorithms</summary>
-
-</details>
-</blockquote>
-</details>
 
 <details>
 <summary>Why deploy a machine learning model in the cloud?</summary>
