@@ -12,7 +12,7 @@
 
 * [This](https://docs.aws.amazon.com/lex/latest/dg/examples.html) guide from AWS is a handy reference for Lex bot deployments.
 
-* For AWS examples of Lex bots click [here.]((https://docs.aws.amazon.com/lex/latest/dg/examples.html)
+* For AWS examples of Lex bots click [here.](https://docs.aws.amazon.com/lex/latest/dg/examples.html)
 
 * For an simple explanation of how k-means works, click [here.](https://www.youtube.com/watch?v=4b5d3muPQmA)
 
@@ -63,7 +63,7 @@ An example of unsupervised learning would be to use website purchase data to gro
 <details>
 <summary>What it is:</summary>
 
-Kmeans is one of the most popular unsupervised machine learning models.  This clustering algorithm uses a number (refered to as `k`) of clusters and then plots those initial clusters in random locations. The distance between each cluster and each data point is then taken, and each data point is assigned to the nearest cluster, after which the mean of each cluster is calculated to create centroids.  Centroid is simply the word for the mean of the cluster (the center!).  The data is reclustered based on the new centroid location rather than the initial random location. This is where the *means* in *k-means* comes from! The variance of the clusters is then calculated, and the process starts again with new randomly generated clusters.  The process is repeated for the number of times you specify, after which the scenario with the lease variance is chosen to represent the final clusters.
+Kmeans is one of the most popular unsupervised machine learning models.  This clustering algorithm uses a number (referred to as `k`) of clusters and then plots those initial clusters in random locations. The distance between each cluster and each data point is then taken, and each data point is assigned to the nearest cluster, after which the mean of each cluster is calculated to create centroids.  A centroid is simply the word for the mean of the cluster (the center!).  The data is reclustered based on the new centroid location rather than the initial random location. This is where the *means* in *k-means* comes from! The variance of the clusters is then calculated, and the process starts again with new randomly generated clusters.  The process is repeated for the number of times you specify, after which the scenario with the lease variance is chosen to represent the final clusters.
 
 ![k-means](Images/k-means.gif)
 
@@ -74,7 +74,7 @@ The following video from StatQuest on YouTube provides an excellent, easy to und
 <details>
 <summary>How do you determine the `k` number of clusters?</summary>
 
-There are several ways to deterimine the best number of clusters for your model. For our class, we use the elbow method.  The elbow method takes into account a range of values for `k` and plots their inertia, inertia being how far the clusters expand from the centroid.  This number should be as low as possible, indicating tightly packed clusters.  When these values are plotted on a line chart, a bend should form where the optimal value of `k` is located.  This bend incates the point at which adding clusters does not greatly improve the inertia, thus the smallest amount of clusters with the best inertia.
+There are several ways to deterimine the best number of clusters for your model. For our class, we use the elbow method.  The elbow method takes into account a range of values for `k` and plots their inertia, inertia being how far the clusters expand from the centroid.  This number should be as low as possible, while still encompassing an adequate nubmer of clusters.  The lower number indicates tightly packed clusters.  When these values are plotted on a line chart, a bend should form where the optimal value of `k` is located.  This bend incates the point at which adding clusters does not greatly improve the inertia, thus the smallest amount of clusters with the best inertia.
 
 In the below elbow chart, the bend occurs at 6, meaning this is the optimal value for `k` for this example:
 
@@ -128,7 +128,7 @@ Because the infrastructure is already in place, companies can easily scale up as
 <details>
 <summary>What is an IAM Role?</summary>
 
-AWS Identity and Access Management (IAM) allows you to securely control the acces of others to your AWS resources.   By creating an IAM User you are granting others secure access to your account without actually giving them your password.  After creating the user, a role can be assigned to the user that defines and resticts that access as you wish.  An IAM role defines *who* can do *what* to your AWS resources, and *when* they can do it. [This](https://aws.amazon.com/iam/faqs/) document from AWS contains some great frequently asked questions baout the IAM service.
+AWS Identity and Access Management (IAM) allows you to securely control the acces of others to your AWS resources.   By creating an IAM User you are granting others secure access to your account without actually giving them your password.  After creating the user, a role can be assigned to the user that defines and resticts that access as you wish.  An IAM role defines *who* can do *what* to your AWS resources, and *when* they can do it. [This](https://aws.amazon.com/iam/faqs/) document from AWS contains some great frequently asked questions about the IAM service.
 
 </details>
 
@@ -143,7 +143,7 @@ Much like using virtual file folders on your own machine to store and organize y
 <details>
 <summary>What is Boto3?</summary>
 
-Boto3 is considered a Software Development Kit (SDK) for AWS.  SDKs are similar to Application Programming Interfaces (APIs) in that they both allow the user to interact with a platform, however SDKs are built to interact with a specific platform, where APIs are typicall used to allow platforms to interact with each other.  Boto3 allows Python developers to with various AWS resources outside of the AWS console, by programming those resources with code.
+Boto3 is considered a Software Development Kit (SDK) for AWS.  SDKs are similar to Application Programming Interfaces (APIs) in that they both allow the user to interact with a platform, however SDKs are built to interact with a specific platform, where APIs are typically used to allow platforms to interact with each other.  Boto3 allows Python developers to work with various AWS resources outside of the AWS console, by programming those resources with code.
 
 A popular application of Boto3 is working with the contents of S3 buckets.  Boto3 is used to access those contents via Python code, and then you can manipulate the contents as you normally would - for example you might use Boto3 inside a Jupyter Notebook to load CSVs from an S3 bucket and then proceed to work with those CSVs with Pandas.
 
@@ -151,9 +151,9 @@ The [Boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/lates
 
 </details>
 <details>
-<summary>What is Sagemaker?</summary>
+<summary>What is Sagemaker?</summary><br>
 
-When it comes it Amazon Sagemaker - think Jupyter Notebook for Machine Learning!  Amazon Sagemaker is a fully managed machine learning IDE, which is essentially a cloud instance of Jupyter Notebook, optimized for machine learning purposes.  Each Sagemaker instance can connect to your data in the cloud via S3 buckets or your preferred storage.  The instance is pre-loaded with commonly used machine learning algorithms such as XGBoost and K-means, and can automatically hypertune them, making it easy to train and test your data, as well as get powerful predictions.
+When it comes to Amazon Sagemaker - think Jupyter Notebook for Machine Learning!  Amazon Sagemaker is a fully managed machine learning IDE, which is essentially a cloud instance of Jupyter Notebook, optimized for machine learning purposes.  Each Sagemaker instance can connect to your data in the cloud via S3 buckets or your preferred storage.  The instance is pre-loaded with commonly used machine learning algorithms such as XGBoost and K-means, and can automatically hypertune them, making it easy to train and test your data, as well as get powerful predictions.
 
 The ability to deploy machine learning models in the cloud is very important for many models, for example recommendation models that are gathering your viewing data on Amazon while you shop and then making recommendations to you.  Models like that need to be deployed and active constantly to be effective.  Sagemaker has built-in components that allow for easy could deployment of your model via endpoints, which allow for real time use based on real time user input and data.
 
