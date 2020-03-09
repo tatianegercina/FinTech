@@ -2,6 +2,10 @@
 
 ### Helpful Links
 
+* For an simple explanation of how k-means works, click [here.](https://www.youtube.com/watch?v=4b5d3muPQmA)
+
+* Click [here](https://www.youtube.com/watch?v=FgakZw6K1QQ) for an easy to understand video on how PCA works.
+
 * Click [here](https://d1.awsstatic.com/whitepapers/aws-overview.pdf) for a thorough whitepaper from Amazon Web Services describing what cloud computing is and what role their tools play.
 
 * If you're wondering how all the AWS services can work together in a real-world scenario, the video series [*This is My Architecture*](https://aws.amazon.com/this-is-my-architecture/?tma.sort-by=item.additionalFields.airDate&tma.sort-order=desc) is a great place to start. Each video provides a 5 - 10 minute interview with a real company, where they explain their actual workflow using AWS services.
@@ -14,9 +18,6 @@
 
 * For AWS examples of Lex bots click [here.](https://docs.aws.amazon.com/lex/latest/dg/examples.html)
 
-* For an simple explanation of how k-means works, click [here.](https://www.youtube.com/watch?v=4b5d3muPQmA)
-
-* Click [here](https://www.youtube.com/watch?v=FgakZw6K1QQ) for an easy to understand video on how PCA works.
 ---
 
 ### Additional Course Resources
@@ -76,17 +77,59 @@ The following video from StatQuest on YouTube provides an excellent, easy to und
 
 There are several ways to deterimine the best number of clusters for your model. For our class, we use the elbow method. The elbow method takes into account a range of values for `k` and plots their inertia, inertia being how far the clusters expand from the centroid. This number should be as low as possible, while still encompassing an adequate nubmer of clusters. The lower number indicates tightly packed clusters. When these values are plotted on a line chart, a bend should form where the optimal value of `k` is located. This bend incates the point at which adding clusters does not greatly improve the inertia, thus the smallest amount of clusters with the best inertia.
 
-In the below elbow chart, the bend occurs at 6, meaning this is the optimal value for `k` for this example:
+In the below elbow chart, the bend occurs at 3, meaning this is the optimal value for `k` for this example:
 
 ![elbow chart](Images/elbow_chart.png)
 </details>
+
+<details>
+<summary>How to use the code:</summary><br>
+
+The elbow chart can be plotted as follows:
+
+```python
+import pandas as pd
+from sklearn.cluster import KMeans
+
+inertia = []
+k = list(range(1, 11))
+# Looking for the best k
+for i in k:
+    km = KMeans(n_clusters=i, random_state=0)
+    km.fit(df_iris)
+    inertia.append(km.inertia_)
+    elbow_data = {
+  "k": k,
+  "inertia": inertia
+}
+df_elbow = pd.DataFrame(elbow_data)
+df_elbow.plot(x="k", y="inertia", title="Elbow Curve", xticks=k)
+```
+Once you have the number for `k`, you can call the Kmeans function and set the `n_clusters` to your `k` value as follows:
+
+```python
+model = KMeans(n_clusters=3, random_state=5)
+model.fit(your_df)
+```
+
+</details>
+
 </blockquote>
 </details>
 
 <details>
-<summary>What is PCA?</summary><br>
-Placeholder
-https://www.youtube.com/watch?v=FgakZw6K1QQ
+<summary>What is Principal Component Analysis and when should I use it?</summary><br>
+
+Principal Component Analysis (PCA) is a statistical method of dimensionality reduction that can reduce the features of your data set, while still keep the majority of the pertinent information. The variables in your dataset are replaced with the principal component variables, which are essentially a recombination of the initial information that represents the most important data. PCA can be used when the dataset is quite large and reducing the features would speed up the machine learning model. It can also be used to plot your data when there are too many features to feasibly plot. For a great video on how this process actually works, click [here](https://www.youtube.com/watch?v=FgakZw6K1QQ)
+
+PCA can be imported from sci-kit learn as follows:
+
+```python
+from sklearn.decomposition import PCA
+pca = PCA(n_components=2)
+new_data_pca = pca.fit_transform(old_data)
+```
+
 </details>
 <details>
 <summary>What is the cloud?</summary><br>
