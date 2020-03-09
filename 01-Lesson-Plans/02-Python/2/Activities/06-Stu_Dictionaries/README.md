@@ -20,7 +20,7 @@ Using the [starter file](Unsolved/Core/market_cap_core.py), complete the followi
   - Wells Fargo: 273
   - Goldman Sachs: 87
   - Morgan Stanley: 72
-  - U.S. Bancorp: 83
+  - US Bancorp: 83
   - TD Bank: 108
   - PNC Financial Services: 67
   - Capital One: 47
@@ -34,7 +34,7 @@ Using the [starter file](Unsolved/Core/market_cap_core.py), complete the followi
 
 - Add a new bank `American Express` to the dictionary and set the market cap to `33`.
 
-- Delete `Wachovia` from the dictionary, as it is a deprecated bank acquired by Wells Fargo in 2008.
+- Delete `Wachovia` from the dictionary, as it is a depreciated bank acquired by Wells Fargo in 2008.
 
 ## Challenge
 
@@ -50,7 +50,7 @@ Group banks by their corresponding market capitalization tier.
 
 - Use an if-else statement and lists to compare and group banks by their corresponding market capitalization: `mega-cap`, `large-cap`, `mid-cap`, and `small-cap`.
 
-  - `mega-cap`: Market capitalization greater than or equal to \$300 billion.
+  - `mega-cap`: Market capitalization greater than or equal to $300 billion.
 
   - `large-cap`: Market capitalization greater than or equal to $10 billion and less than $300 billion.
 
@@ -64,7 +64,7 @@ Your results should look similar to the following:
 
 ```
 Total Market Capitalization: 1588
-Total Numer of Banks: 15
+Total Number of Banks: 15
 Average Market Capitalization: 105.87
 Largest Bank: JP Morgan Chase
 Smallest Bank: Republic Bancorp
@@ -77,4 +77,4 @@ Small Cap Banks: ['Republic Bancorp']
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
