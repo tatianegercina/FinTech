@@ -4,13 +4,15 @@
 
 * Click [here](https://d1.awsstatic.com/whitepapers/aws-overview.pdf) for a thorough whitepaper from Amazon Web Services describing what cloud computing is and what role their tools play.
 
-* If you're wondering how all the AWS services can work together in a real-world scenario, the video series [*This is My Architecture*](https://aws.amazon.com/this-is-my-architecture/?tma.sort-by=item.additionalFields.airDate&tma.sort-order=desc) is a great place to start.  Each video provides a 5 - 10 minute interview with a real company, where they explain how their workflow using AWS services.
+* If you're wondering how all the AWS services can work together in a real-world scenario, the video series [*This is My Architecture*](https://aws.amazon.com/this-is-my-architecture/?tma.sort-by=item.additionalFields.airDate&tma.sort-order=desc) is a great place to start.  Each video provides a 5 - 10 minute interview with a real company, where they explain their actual workflow using AWS services.
 
 * A great FAQ for AWS IAM Resources is located [here.](https://aws.amazon.com/iam/faqs/)
 
 * For an easy to understand Sagemaker Deep Dive video series, click [here.](https://www.youtube.com/playlist?list=PLhr1KZpdzukcOr_6j_zmSrvYnLUtgqsZz)
 
 * [This](https://docs.aws.amazon.com/lex/latest/dg/examples.html) guide from AWS is a handy reference for Lex bot deployments.
+
+* For AWS examples of Lex bots click [here.]((https://docs.aws.amazon.com/lex/latest/dg/examples.html)
 
 * For an simple explanation of how k-means works, click [here.](https://www.youtube.com/watch?v=4b5d3muPQmA)
 
@@ -151,7 +153,9 @@ The [Boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/lates
 <details>
 <summary>What is Sagemaker?</summary>
 
-When it comes it Amazon Sagemaker - think Jupyter Notebook for Machine Learning!  Amazon Sagemaker is a fully managed machine learning IDE, which is essentially a cloud instance of Jupyter Notebook, optimized for machine learning purposes.  Each Sagemaker instance can connect to your data in the cloud via S3 buckets or your preferred storage.  The instance is pre-loaded with commonly used machine learning algorithms such as XGBoost and K-means, and can automatically hypertune them, making it easy to train and test your data, as well as get powerful predictions.  Sagemaker has built-in components that allow for easy deployment of your model via endpoints, which allow for real time use based on real time user input and data.
+When it comes it Amazon Sagemaker - think Jupyter Notebook for Machine Learning!  Amazon Sagemaker is a fully managed machine learning IDE, which is essentially a cloud instance of Jupyter Notebook, optimized for machine learning purposes.  Each Sagemaker instance can connect to your data in the cloud via S3 buckets or your preferred storage.  The instance is pre-loaded with commonly used machine learning algorithms such as XGBoost and K-means, and can automatically hypertune them, making it easy to train and test your data, as well as get powerful predictions.
+
+The ability to deploy machine learning models in the cloud is very important for many models, for example recommendation models that are gathering your viewing data on Amazon while you shop and then making recommendations to you.  Models like that need to be deployed and active constantly to be effective.  Sagemaker has built-in components that allow for easy could deployment of your model via endpoints, which allow for real time use based on real time user input and data.
 
 AWS has several great resources to learn more about Sagemaker.
 
@@ -163,11 +167,10 @@ Additionally the AWS Sagemaker SDK docs are a great place to take your own deep 
 
 
 <details>
-<summary>Why deploy a machine learning model in the cloud?</summary>
+<summary>What is Amazon Lex?</summary>
 
-</details>
+To understand Amazon Lex, its important to first understand what a conversational user interface is.  Have you ever wondered why ou can't just *tell* your computer what to *do*?  A conversational user interface - commonly known as a chatbot - is an application that allows just that.  With chatbots, users can interact with machines using normal human language.  Though the idea of conversational user interfaces has been around for a very long time - think Space Odyssey:2001 and HAL - its only been in the recent past that NLP technology has become advanced enough to make practical applications of the tech a reality.
 
-<details>
-<summary>What is a conversational user interface?</summary>
+Amazon Lex allows you develop your own chatbots, harnessing the same tech that Amazon's Alexa uses, resulting in a powerfully accurate, state-of-the-art conversation interface that can be deployed to almost any platform, including Facebook Messenger and Slack.  And, like most AWS services, its fully managed, so it scales on its own.  So as users increase, there is no need to scale up - the infrastructure is already in place.  You just pay for what you use.  To learn more about Amazon Lex, check out their informative [FAQ](https://aws.amazon.com/lex/faqs/?nc=sn&loc=6).  To get more information on deploying your own converational user interface using Lex, check out our [deployment guide](Deploying-Lex-Bot-to-Slack.md) and the AWS Lex examples provided [here.]((https://docs.aws.amazon.com/lex/latest/dg/examples.html)
 
 </details>
