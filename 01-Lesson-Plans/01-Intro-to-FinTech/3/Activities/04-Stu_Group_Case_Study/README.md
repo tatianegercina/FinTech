@@ -1,6 +1,6 @@
 # FinTech Case Study
 
-In this activity, you will put together all of the skills you have learned so far. Work with a partner to create a FinTech case study report. It should be written in markdown and hosted on a shared GitHub repository. 
+In this activity, you will put together all of the skills you have learned so far. Work with a partner to create a FinTech case study report. It should be written in markdown and hosted on a shared GitHub repository.
 
 Be prepared to share your findings with the class!
 
@@ -22,30 +22,31 @@ Complete the following steps:
 
     * What is the prognosis for this company? Where do they expect to be in the future?
 
-4. Modify the README file to include the following features. **Note:** The list below includes the minimum requirements. Feel free to add other markdown features!
+4. Modify the `README` file to include the following features. **Note:** The list below includes the minimum requirements. Feel free to add other markdown features!
 
-    * **H1 heading:** A title for the FinTech case study
+    * **Level 1 heading:** A title for the FinTech case study
 
     * **Image:** An image relevant to the case study
 
-    * **H2 description:** A description header
+    * **Level 2 heading for description:** A description header
 
     * **Description content:** Content for the description
 
-    * **Contributors:** The names of everyone in your group
+    * **Contributors:** The names of everyone in your group and optionally a contact e-mail.
 
-    * **H3 heading:** A title for the FinTech case study report
+5. Create a new markdown file named `company_case_study.md` where you should replace the word `company` with the name of the company you choose to write your case study about (e.g. `starbucks_case_study.md`). Include the following structure in your document.
+
+    * **Level 1 heading:** A title for the FinTech case study report
 
     * **Case study content:** Content for the case study
 
-5. Push the changes to the shared GitHub repository.
+6. Push the changes to the shared GitHub repository.
 
-6. Navigate to the shared GitHub repository and confirm the changes.
+7. Navigate to the shared GitHub repository and confirm the changes.
 
 ## Hint
 
-If you and your partner plan to work on the file at the same time, be aware of merge conflicts. That is, be careful not to create separate versions of the file, as git will not know which version should take precedence. Learn more about git merge conflicts [here](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line). 
+If you and your partner plan to work on the file at the same time, be aware of merge conflicts. That is, be careful not to create separate versions of the file, as git will not know which version should take precedence. Learn more about git merge conflicts [here](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line).
 
 ---
-
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
