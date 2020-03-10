@@ -75,10 +75,12 @@ It can be frustrating when packages do not install correctly. Use the below appr
 
 Windows users might run into issues with the GraphViz installation, in which case here are additional instructions:
 
-- Download and install the GraphViz application from:
-https://www.graphviz.org/
+1. Download and install the stable version of the Windows GraphViz executable package from the [GraphViz downloads page](https://www.graphviz.org/download/).
 
-- Do the following:
+   ![Downloading the GraphViz executable package for Windows](images/graphviz_win_app.gif)
+
+2. Do the following:
+
 a) click your start/search and type "environment" and select "edit the system environment variables"
 ![Edit Environment Variables](Images/graphviztg.png)
 Click `Environment Variables` at the bottom
