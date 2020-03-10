@@ -18,7 +18,7 @@ Git is a great resource for managing your code and very convenient if you want t
 
     ![Copying the clone url](Images/03.PNG)
 
-4. Navigate to the directory where you want to save your future coding drills––e.g., your desktop, root directory, or Documents folder. Open the command line in this folder, and run `git clone ` with the link you've copied. This will make a local copy of the repository.
+4. Navigate to the directory where you want to save your future coding drills––e.g., your desktop, root directory, or Documents folder. Open the command line in this folder, and run `git clone` with the link you've copied. This will make a local copy of the repository.
 
     ![Cloning down a repository](Images/04.PNG)
 
@@ -30,7 +30,7 @@ Git is a great resource for managing your code and very convenient if you want t
 
     ![Adding a new file](Images/06.PNG)
 
-7. Use the  `git add .` command to add the contents of the current folder to be tracked by git. The period by itself references the current directory. Now git is waiting for those files to be committed.
+7. Use the `git add .` command to add the contents of the current folder to be tracked by git. The period by itself references the current directory. Now git is waiting for those files to be committed.
 
     ![Tracking a new file](Images/07.PNG)
 
@@ -60,4 +60,4 @@ Git is a great resource for managing your code and very convenient if you want t
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
