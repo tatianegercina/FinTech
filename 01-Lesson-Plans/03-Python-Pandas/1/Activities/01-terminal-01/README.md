@@ -10,7 +10,7 @@ In this activity, you'll get more practice with terminal commands.
 
 3. Use the `pwd` command to find the current path you're in.
 
-4. Create a new directory named `Activity-1`. Then list the contents of the current directory again to make sure it worked.
+4. Create a new directory named `Activity-1`. Then, list the contents of the current directory again to make sure it worked.
 
 5. Navigate into the directory you just created.
 
@@ -32,4 +32,4 @@ Use the Terminal Cheatsheet if you need guidance on which terminal commands shou
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
