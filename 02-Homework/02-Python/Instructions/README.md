@@ -1,198 +1,123 @@
-# Unit 2 | Homework Assignment: Automate Your Day Job with Python
+# Unit 2 Challenge Assignment: Py Lending
 
 ## Background
 
-You've made it! It's time to put away the Excel sheet and join the big leagues. Welcome to the world of programming with Python. In this homework assignment, you'll be using the concepts you've learned to complete **two** Python activities, PyBank and PyRamen. Both activities present a real-world situation in which your newfound Python skills will come in handy. These activities are far from easy, though, so expect some hard work ahead!
+The microfinance space is exploding across the globe. The idea of using small, short-term loans to effect social change in some of the poorest regions of the world is very appealing.
 
-## Before You Begin
+Your job as a newly-minted Python developer has provided you will some additional funds that are in need of an investment opportunity. A close friend heard about your interest in micro-finance and approached you with growing loan portofolio in which you could possibly become a lender.
 
-1. Create a new GitHub repo called `python-homework`. Then, clone it to your computer.
+You have just gotten your first look at the loan portfolio and realize you have to make some calculations before you can determine if this is an investment you are willing to undertake. You understand how bonds work, but throwing micro-finance specifics and foreign exchange into the mix makes the portfolio evaluation more challenging.
 
-2. In your local git repository, create a directory for both of the Python activities. Use folder names that correspond to the activities: **PyBank** and **PyRamen**.
+With a little bit of research, you came up with the following information on some important topics to help you in the evaluation process.
 
-3. In each folder you just created, add a new file called `main.py`. This will be the main script to run for each analysis.
 
-4. Push the above changes to GitHub.
+### Topic 1 - Microfinance vs Traditional Lending
 
-## PyBank
+The emerging microfinance field differs from the traditional lending market in several ways.
 
-![Revenue](Images/revenue-per-lead.jpg)
+ - The typical international microfinance loan only averages about $525 dollars.
 
-In this activity, you are tasked with creating a Python script for analyzing the financial records of your company. You will be provided with a financial dataset in this file: [budget_data.csv](PyBank/Resources/budget_data.csv). This dataset is composed of two columns, Date and Profit/Losses. (Thankfully, your company has rather lax standards for accounting, so the records are simple.)
+Contrast this amount to a typical microfinance loan in the US which avarages about $10,000. For additional context, the average small business loan in the US is 20,000. The average school loan is $37,000. the average autoloan is approximately $30,000. And the average mortgage loan approximately is $300,000.
 
-Your task is to create a Python script that analyzes the records to calculate each of the following:
+In the world of international microfinance, a small amount of money can potentially help a lot of individuals.
 
-* The total number of months included in the dataset.
+ - Microfinance interest rates are much higher than typically encountered averaging approximately 37% worldwide.
 
-* The net total amount of Profit/Losses over the entire period.
+Rates of microfinance loans in the US average 20%, and can reach upwards of 70% in some developing countries.
 
-* The average of the changes in Profit/Losses over the entire period.
+A portion of these larger rates is due to a higher risk of default in the lending pool, but operational costs are a more influential factor. Almost 12% of the microfinance interest rates can be attributed to the increased transaction costs incurred by the lender. Despite scale efficiencies, it is very expensive to manage the operations for such a large number of very small loans.
 
-* The greatest increase in profits (date and amount) over the entire period.
+- Lending periods are typically very short in the microfinance market averaging out to 4 months across the globe.
 
-* The greatest decrease in losses (date and amount) over the entire period.
+Given the nature of the loan and its borrower's rapidly changing circumstances, it is unusual to find loans that stretches past a single year.
 
-Your resulting analysis should look similar to the following:
+- Mobile technology has made microfinancing and financial inclusion possible in regions that are removed from a typical banking infrastructure.
 
-  ```text
-  Financial Analysis
-  ----------------------------
-  Total Months: 86
-  Total: $38382578
-  Average  Change: $-2315.12
-  Greatest Increase in Profits: Feb-2012 ($1926159)
-  Greatest Decrease in Profits: Sep-2013 ($-2196167)
-  ```
+Where almost no one in the 2nd, and certainly the 3rd world, has access to what we think of as traditionally banking, almost all of them have access to a cell phone. This has enabled the proliferation of mobile credit for those that are most in need.
 
-Your final script should print the analysis to the terminal and export a text file with the results.
+### Topic 2 - The 411 on Foreign Exchange
 
-## PyRamen (Optional)
+Foreign exchange is essentially the conversion of one currency for another. The foreign exchange rate is the amount of one currency per a unit of another currency.
 
-![ramen.jpg](Images/ramen.jpg)
+From our lesson, _direct_ fx rates_ quote the price of one unit of foreign currency is expressed in terms of the domestic currency. In contrast, _indirect_ fx rates quote the price of one unit of domestic currency in terms of the foreign currency.
 
-## Background
+For this exercise, the domestic currency will be the US dollar (USD) we will be using the foreign currencies of Pakistani Rupee (PKR), Kenyan Shilling (KES) and Indian Rupee (INR). All three will be quoted in direct terms.
 
-Welcome to Ichiban Ramen!
+For instance, the rate of 162.76 PKR means that each $1 is worth 162.76 PKR.
 
-Opening a ramen shop has always been your dream, and now it's finally been realized––you're closing out on your second year of sales! Like last year, you need to analyze your business's financial performance by cross-referencing your sales data with your internal menu data to figure out revenues and costs for the year.
+To calculate the value of a $1,000 USD loan in PKR terms is:  $1,000 x 162.76 = 162,760 PKR.
 
-This year, you also want to analyze how well your business did on a per-product basis (as you have several choices of ramen) in order to better understand which products are doing well, which are doing poorly, and, ultimately, which products may need to be removed or changed.
+The same calculations apply to the currencies KES and INR.
 
-You tried doing this type of per-product analysis last year in Excel, but you were not able to keep your reports up-to-date with your current sales data. Therefore, you need to innovate. With more customers and more data to process, you'll need a tool that will allow you to automate your calculations in a manner that scales with your business.
 
-Enter Python! Python provides a wide range of capabilities for handling data, harnessing the power of low-level Python data structures and high-level development libraries, all the while supporting the automation and scalability needs for a growing enterprise.
+Armed with this new information, the challenge of evaluating our investment opportunity will take place in 4 phases:
 
-In this homework assignment, you will need to:
+1. PyPortfolio - basic portofolio calculations
+2. PyNPV - evaluating the overall NPV of the portfolio
+3. PyFlows - looking at specifc period cash flows
+4. PyMobile - this bonus activity involves the Twilio SMS protocol
 
-1. [Read the Data](#Read-the-Data)
-
-2. [Manipulate the Data](#Manipulate-the-Data)
-
----
 
 ## Instructions
 
-### Read the Data
+You have just been received this micro-finance loan portfolio for your review.  You can assume that all of the loans in this portfolio were issued on the same date. You have determined that there are several steps that you need to undertake to appropriately evaluate this investing opportunity.
 
-Complete the following:
+### Phase 1 - PyPortfolio
 
-* Read in `menu_data.csv` and set its contents to a separate list object. (This way, you can cross-reference your menu data with your sales data as you read in your sales data in the coming steps.)
+In this phase you just want to get an overall feel for the investmet portfolio as presented. The goals of you analysis are to:
 
-  * Initialize an empty `menu` list object to hold the contents of `menu_data.csv`.
+ * Iterate through a List to determine the value of the portfolio in US dollars.
+ * Utilize variables, loops and conditional statements to determine the percentage that each of the foreign currency investments make up of the total portfolio.
+ * Combine the building blocks of Python with basic financial calculations to determine the amount of the loans in each foreign currency that was issued.
 
-  * Use a `with` statement and open the `menu_data.csv` by using its file path.
-  
-  * Use the `reader` function from the `csv` library to begin reading `menu_data.csv`.
 
-  * Use the `next` function to skip the header (first row of the CSV).
+### Phase 2 - PyNPV
 
-  * Loop over the rest of the rows and append every row to the `menu` list object (the outcome will be a list of lists).
-  
-* Set up the same process to read in `sales_data.csv`. However, instead append every row of the sales data to a new `sales` list object.
+You have just been informed that size of the portfolio has grown since you analysis started. There are enough loans in the portfolio to require an external file.
 
-### Manipulate the Data
+As your Python knowledge allows for you to work with external files, you will proceed with your analysis for the current portfolio.
 
-Complete the following:
+Overall, based on the information you gathered researching international microfinance, you would like to see a minimum return on your investment of 15%.
 
-* Initialize an empty `report` dictionary to hold the future aggregated per-product results. The `report` dictionary will eventually contain the following metrics:
-  
-  * `01-count`: the total quantity for each ramen type
+The goal of phase 2 is to:
 
-  * `02-revenue`: the total revenue for each ramen type
+ * Determine the net present value (NPV) of the portfolio.
+ * Determine the value of the portfolio taking into account the 12% cost of operational maintenance.
 
-  * `03-cogs`: the total cost of goods sold for each ramen type
 
-  * `04-profit`: the total profit for each ramen type
+### Phase 3 - PyFlows
 
-* Then, loop through every row in the `sales` list object.
+You have just been informed that size of the portfolio has grown since Your analysis started. The fundamental structure of the loans and the same currencies are involved, but there are enough loans in the portfolio to require a CSV file.
 
-  * For each row of the `sales` data, set the following columns of the sales data to their own variables: 
-  
-    * Quantity
-    * Menu_Item
-  
-  * Perform a quick check if the `sales_item` is already included in the `report`. If not, initialize the key-value pairs for the particular `sales_item` in the report. Then, set the `sales_item` as a new key to the `report` dictionary and the values as a nested dictionary containing the following:
-  
-    ```python
-    {
-    "01-count": 0,
-    "02-revenue": 0,
-    "03-cogs": 0,
-    "04-profit": 0,
-    }
-    ```
-  
-* Create a nested loop by looping through every record in `menu`.
+As your Python knowledge allows for you import and analyze external files, you will proceed with your analysis for the portfolio in its new form.
 
-  * For each row of the `menu` data, set the following columns of the menu data to their own variables:
+After Phase 2's analysis, you are reasonably certain that this is a solid investment opportunity. On last aspect of the portfolio that you are interested in analyzing are the monthly cash flows. You are trying to determine if the amount of monthly income is enough help you to fund additional loans.
 
-    * Item
-    * Price
-    * Cost
+The goal of this Phase 3 is to:
 
-  * If the `sales_item` in sales is equal to the `item` in `menu`, capture the `quantity` from the sales data and the `price` and `cost` from the menu data to calculate the `profit` for each item.
+* Import and examine the CSV file provided.
+* Determine how much USD income is generated on a monthly basis based on current interest rates.
+* Code the program so that these cash flow values are calculated automatically once new CSV files are imported.
 
-    * Cumulatively add the values to the corresponding metrics in the report like so:
 
-      ```python
-      report[sales_item]["01-count"] += quantity
-      report[sales_item]["02-revenue"] += price * quantity
-      report[sales_item]["03-cogs"] += cost * quantity
-      report[sales_item]["04-profit"] += profit * quantity
-      ```
+### Bonus - PyNotification
 
-  * Else print the message "{sales_item} does not equal {item}! NO MATCH!".
+In this bonus challenge, you will look into what it would take to set up mobile notifications for your loan recipients using the Twilio SMS functionality.
 
-* Write out the contents of the `report` dictionary to a text file. The report should output each ramen type as the keys and `01-count`, `02-revenue`, `03-cogs`, and `04-profit` metrics as the values for every ramen type as shown:
-  
-  ```
-  spicy miso ramen {'01-count': 9238, '02-revenue': 110856.0, '03-cogs': 46190.0, '04-profit': 64666.0}
-  tori paitan ramen {'01-count': 9156, '02-revenue': 119028.0, '03-cogs': 54936.0, '04-profit': 64092.0}
-  truffle butter ramen {'01-count': 8982, '02-revenue': 125748.0, '03-cogs': 62874.0, '04-profit': 62874.0}
-  tonkotsu ramen {'01-count': 9288, '02-revenue': 120744.0, '03-cogs': 55728.0, '04-profit': 65016.0}
-  vegetarian spicy miso {'01-count': 9216, '02-revenue': 110592.0, '03-cogs': 46080.0, '04-profit': 64512.0}
-  shio ramen {'01-count': 9180, '02-revenue': 100980.0, '03-cogs': 45900.0, '04-profit': 55080.0}
-  miso crab ramen {'01-count': 8890, '02-revenue': 106680.0, '03-cogs': 53340.0, '04-profit': 53340.0}
-  nagomi shoyu {'01-count': 9132, '02-revenue': 100452.0, '03-cogs': 45660.0, '04-profit': 54792.0}
-  soft-shell miso crab ramen {'01-count': 9130, '02-revenue': 127820.0, '03-cogs': 63910.0, '04-profit': 63910.0}
-  burnt garlic tonkotsu ramen {'01-count': 9070, '02-revenue': 126980.0, '03-cogs': 54420.0, '04-profit': 72560.0}
-  vegetarian curry + king trumpet mushroom ramen {'01-count': 8824, '02-revenue': 114712.0, '03-cogs': 61768.0, '04-profit': 52944.0}
-  ```
 
----
 
 ## Resources
 
-* [Stack Overflow](https://www.stackoverflow.com): A wealth of community-driven questions and answers, particularly effective for IT solution seekers.
+CSV file when created.
 
-* [Python Basics](https://pythonbasics.org/): Contains example materials and exercises for the Python 3 programming language.
+## Hints
 
-* [Python Documentation](https://docs.python.org/3/): Official Python documentation
+* f-string Formatting:
 
----
+* Rounding Values:
 
-## Hints and Considerations
+* NPV Calculation Formula:
 
-* Consider what we've learned so far. To date, we've learned how to import modules like `csv`; to read and write files in various formats; to store contents in variables, lists, and dictionaries; to iterate through basic data structures; and to debug along the way. Using what we've learned, try to break down you tasks into discrete mini-objectives. This will be a *much* better course of action than attempting to Google search for a miracle.
 
-* As you will discover, for some of these activities, the datasets are quite large. This was done purposefully, as it showcases one of the limits of Excel-based analysis. While our first instinct as data analysts is often to head straight to Excel, creating scripts in Python can provide us with more robust options for handling "big data."
-
-* Your scripts should work for each dataset provided. Run your script for each dataset separately to make sure that the code works for different data.
-
-* Feel encouraged to work in groups, but don't shortchange yourself by copying someone else's work. Dig your heels in, burn the night oil, and learn this while you can! These are skills that will pay dividends in your future career.
-
-* Start early, and reach out for help often! Challenge yourself to identify _specific_ questions for your instructors and TAs. Don't resign yourself to simply saying, "I'm totally lost." Come prepared to show your effort and thought patterns, we'll be happy to help along the way.
-
-* Always commit your work (and do it often!) and back it up with GitHub pushes. You don't want to lose hours of your work because you didn't push it to GitHub every half hour or so.
-
----
 
 ## Submission
-
-* Upload homework files to your GitHub repo.
-
-* Submit the link to your GitHub repo on Bootcamp Spot.
-
----
-
-© 2019 Trilogy Education Services
