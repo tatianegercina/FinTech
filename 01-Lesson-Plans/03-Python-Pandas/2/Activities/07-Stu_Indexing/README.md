@@ -25,7 +25,7 @@ Complete the following steps.
     * `annual_inc`
     * `purpose`
 
-6. Filter `filtered_df` by row values where `term` is equal to `36 months` in order to focus on only three-year loan records.
+6. Filter `filtered_df` by row values where `term` is equal to `36 months` in order to focus on three-year loan records only.
 
 7. Modify rows with `term` values equal to `36 months` to be `3 years`.
 
@@ -57,4 +57,4 @@ View the [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/) f
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
