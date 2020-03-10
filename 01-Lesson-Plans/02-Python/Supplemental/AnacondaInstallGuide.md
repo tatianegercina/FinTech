@@ -58,3 +58,9 @@ This guide walks through the installation and configuration process for an Anaco
     ```
 
     ![Jupyter_Lab_Activate_Dev.png](Images/Jupyter_Lab_Activate_Dev.png)
+
+10. Post-Installation you'll need to set up a few terminal commands. The instructions differ by your operating system:
+
+[Windows](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=93a9c967-71b2-434c-bcda-ab7a011f5c9c)
+
+[Mac](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1c0d69d6-523c-4275-86a5-ab7a011f370a)
