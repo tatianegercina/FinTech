@@ -28,7 +28,7 @@ By the end of this class, students will be able to:
 
 - Students need to have a thorough understanding of financial concepts and how they are used in order to develop a mindset for solving financial use cases programmatically. Make sure to relate each financial use case to its corresponding programmatic process.
 
-- Remember that students most likely have varying levels of finance experience. Therefore, make sure your lectures are clear and thorough for newcomers while serving as interesting refreshers for veterans. Draw upon your industry experience or tell a story that relates to the concepts at hand; make things simple to understand as well as memorable!
+- Remember that students most likely have varying levels of finance experience. Therefore, make sure your lectures are clear and thorough for newcomers while serving as interesting refreshers for veterans. Draw upon your industry experience or tell a story that relates to the concepts at hand; make things simple to understand, as well as memorable!
 
 - Make sure TAs circulate the classroom to provide assistance to students who are still struggling with Python concepts. If the lesson moves ahead of schedule, you can use the extra time to review those topics.
 
@@ -51,7 +51,7 @@ By the end of this class, students will be able to:
 
 - **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-- The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+- The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -65,11 +65,11 @@ In this section, welcome students to class, review the lesson objectives, and co
 
 - [refresher.py](Activities/01-Ins_Refresher/Solved/refresher.py)
 
-Welcome students back to class. Tell them that in today's lesson we will begin to apply Python concepts to financial use cases. Today will be fun!
+Welcome students back to class. Tell them that in today's lesson, we will begin to apply Python concepts to financial use cases. Today will be fun!
 
 Use the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57c97b9346_4_1) to review the class objectives.
 
-Use the solution file to perform a live coding session and quickly recap concepts learned in previous classes. During the session, ask the following questions:
+Use the solution file to perform a live coding session, and quickly recap concepts learned in previous classes. During the session, ask the following questions:
 
 - What are variables?
 
