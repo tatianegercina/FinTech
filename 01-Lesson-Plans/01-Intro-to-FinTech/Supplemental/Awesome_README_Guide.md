@@ -2,13 +2,13 @@
 
 Having a README file is crucial for any project in GitHub, GitLab, or any other version control platform. This guide is intended to help you on creating a fabulous README file for all the projects, class activities, and homework assignments that you will create in the Boot Camp as part of your public, professional portfolio.
 
-A good README file could be the difference between getting or not your next dream job, so be conscientious while writing your README files.
+A good README helps showcase your skills and abilities, so it is worth the time and effort to write a strong README. A well-written README could give you a competitive advantage and even help you land your dream job!
 
 ## The Anatomy of a README File
 
-There are several recommendations from industry and academia about what is the best structure for a README file; however, everyone agrees in a common rule, regardless the complexity of your project, you should always include a README file in the root folder of your repo.
+While there are many recommendations from industry and academia on what might be included in a README, everyone agrees that you always include a README of some kind in the root folder of your repo. Regardless of the project complexity, the README helps others understand what your repo is for and how they can use it.
 
-In all the repositories that you create in the Boot Camp, at least, you should include the following sections in the README file.
+In all the repositories that you create in the Boot Camp, at minimum, you should include the following sections in the README file.
 
 ```markdown
 # Project Title
@@ -19,7 +19,7 @@ Just after the title, introduce your project by describing attractively what the
 
 ## Technologies
 
-Describe what technologies are needed to use your project, such as programming languages, libraries, frameworks, and operating systems. Be sure to include the concrete versions you have used in the stable version of your project.
+Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
 
 ---
 
@@ -49,11 +49,15 @@ In this section, list all the people who contribute to this project; since you m
 
 ## License
 
-Be sure to include in this section the license that you use to distribute your project.
+When you share a project on a repository, especially a public one, it's important to choose the right license to specify others what they can and can not do with your source code and files. Use this section to include the licence you want to use.
 
 ```
 
-If you are creating a repository to share a report or writing document, you may want to omit the installation guide, examples, and usage sections, but not the reminder sections.
+If you are not sure about what license you may use for your project, you can use the [choosealicense.com](https://choosealicense.com/) website to decide which license fits your interest.
+
+For projects hosted in GitHub, you may read the ["Licensing a repository" article on the GitHub help](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository) to understand the implications of not choosing a license for your project.
+
+If you are creating a repository to share a report or writing document, you may want to omit the technologies, installation guide, examples, and usage sections, but not the other sections.
 
 ## The README Files Maturity Model
 
