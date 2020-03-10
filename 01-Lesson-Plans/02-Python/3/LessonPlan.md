@@ -69,7 +69,7 @@ Welcome students back to class. Tell them that in today's lesson, we will begin 
 
 Use the [slides](https://docs.google.com/presentation/d/1OUvK19EjgPd3WQ7ioMV5Gb5tuNkbXuNSvsrpjkFhnss/edit#slide=id.g57c97b9346_4_1) to review the class objectives.
 
-Use the solution file to perform a live coding session and quickly recap concepts learned in previous classes. During the session, ask the following questions:
+Use the solution file to perform a live coding session, and quickly recap concepts learned in previous classes. During the session, ask the following questions:
 
 - What are variables?
 
