@@ -22,4 +22,4 @@ Create a version of the same code that allows a user to select as much candy as 
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
