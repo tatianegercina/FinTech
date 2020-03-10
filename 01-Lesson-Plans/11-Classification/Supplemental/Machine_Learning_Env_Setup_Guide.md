@@ -79,24 +79,28 @@ Windows users might run into issues with the GraphViz installation, in which cas
 
    ![Downloading the GraphViz executable package for Windows](images/graphviz_win_app.gif)
 
-2. Do the following:
+2. Edit your environment variables by clicking on start and type "environment," next select the "Edit the system variables" option.
 
-a) click your start/search and type "environment" and select "edit the system environment variables"
-![Edit Environment Variables](Images/graphviztg.png)
-Click `Environment Variables` at the bottom
-![Edit Environment Variables Button](Images/graphvizev.png)
-Highlight `Path` and click `Edit`
-![Edit Environment Variables Path](Images/graphvizev2.png)
+    ![Edit Environment Variables](Images/edit-system-var-win.gif)
 
-- `Click` an empty line and add the two graphviz paths
+3. Click on the "Environment Variables" button at the bottom.
 
-  ![Edit Environment Variables Path](Images/graphvizev3.png)
+    ![Edit Environment Variables Button](Images/graphvizev.png)
 
-   ``` shell
-   C:\Program Files (x86)\Graphviz2.38\bin
+4. Select the "Path" variable and click "Edit."
 
-   C:\Program Files (x86)\Graphviz2.38
-   ```
+    ![Edit Environment Variables Path](Images/graphvizev2.png)
+
+5. Click on an empty line and add the two GraphViz paths. These paths may differ depending on the directory where GraphViz was installed in your computer, be sure to corroborate these paths.
+
+    ```text
+    C:\Program Files (x86)\GraphViz2.38
+    C:\Program Files (x86)\GraphViz2.38\bint
+    ```
+
+    ![Edit Environment Variables Path](Images/graphvizev3.png)
+
+6. Click on the "Ok" button in all the opened windows to finish and restart GitBash if you have it running.
 
 ### Imbalanced-learn Installation Prerequisites
 
