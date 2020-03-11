@@ -40,10 +40,10 @@
 <details>
 <summary>Supervised Learning</summary><br>
 
-Supervised machine learning uses labeled data with input variables (feature data) and output variables (target data) and uses the feature data to predict the target data. The data is divided into training and testing sets. The training set is used to teach (supervise!) the model so it learns how the input data is connected to the output data and can make predictions. The testing data set is used to validate how well the model performs on data it has not seen before, by running the model on the testing feature data, and comparing it's predictions to the testing target data.<br>
-<br>
-An example of supervised learning would be to predict this year's final grades in a class based on last year's student study habit data as feature data, with their corresponding final grades as target data. The model could be trained with the previous year's data, and then used to make predictions on this year's final grades using the study habit data from the new class.
+Supervised machine learning uses labeled data with input variables (feature data) and output variables (target data) and uses the feature data to predict the target data. Because the data is labeled, the outcome is known. This data can be fed to the model, and if the model guesses incorrectly, the error can be used to fine tune the model until it makes highly accurate guesses.<br>
 
+An example of this is using tuning forks to tune a piano. Tuning forks produce very precise tones. These tones are your known output. You can press a piano key and compare the piano's tone (model output) to the tuning fork (known y value). If the piano's tone is too low then you can tighten the piano wire to make the piano better at matching the tuning fork. This process of adjusting the model to make the output match the known output is essentially supervised learning.
+<br>
 </details>
 <details>
 <summary>Unsupervised Learning</summary><br>
@@ -51,11 +51,16 @@ An example of supervised learning would be to predict this year's final grades i
 Unsupervised learning models are given only input variables and must work to make connections to the data without predicting a labeled target. These types of models are often clustering models that uncover connections in the data and group all the features into classes accordingly.<br>
 <br>
 An example of unsupervised learning would be to use website purchase data to group customers into two classes based on their spending habits. This clustering might reveal that class 1 more spends more with a coupon incentive, while class 2 spends more on targeted advertising on social media.
-
 </details>
+
 </blockquote>
 </details>
+<details>
+<summary>How is Training and Testing Data Utilized?</summary><br>
 
+When working with models, data is divided into training and testing sets. The training set is used to teach (supervise!) the model so it learns how the input data is connected to the output data and can make predictions. The testing data set is used to validate how well the model performs on data it has not seen before, by running the model on the testing feature data, and comparing it's predictions to the testing target data.<br>
+
+</details>
 
 <details>
 <summary>What is KMeans?</summary><br>
@@ -212,7 +217,9 @@ Additionally the AWS Sagemaker SDK docs are a great place to take your own deep 
 <details>
 <summary>What is Amazon Lex?</summary><br>
 
-To understand Amazon Lex, its important to first understand what a conversational user interface is. A conversational user interface - commonly known as a chatbot - is an application that allows human-like interaction with computers.  Rather than just point and click, we can now communicate with computers using human lagnauge. Though the idea of conversational user interfaces has been around for a very long time - think *Space Odyssey: 2001* and *HAL* - its only been in the recent past that NLP technology has become advanced enough to make practical applications of the tech a reality. In fact, conversational AI has become so advanced that it can update in real time and change its responses to adapt to the conversation as it unfolds.
+To understand Amazon Lex, its important to first understand what a conversational user interface is. A conversational user interface - commonly known as a chatbot - is an application that allows human-like interaction with computers.  Rather than just point and click, we can now communicate with computers using human langauge.
+
+Though the idea of conversational user interfaces has been around for a very long time - think *Space Odyssey: 2001* and *HAL* - its only been in the recent past that NLP technology has become advanced enough to make practical applications of the tech a reality. In fact, conversational AI has become so advanced that it can update in real time and change its responses to adapt to the conversation as it unfolds.
 
 Amazon Lex allows you to develop your own chatbots, harnessing the same tech that Amazon's Alexa uses, resulting in a powerfully accurate, state-of-the-art conversation interface that can be deployed to almost any platform, including Facebook Messenger and Slack. And, like most AWS services, its fully managed, so it scales on its own. So as users increase, there is no need to scale up - the infrastructure is already in place. You just pay for what you use. To learn more about Amazon Lex, check out their informative [FAQ](https://aws.amazon.com/lex/faqs/?nc=sn&loc=6). To get more information on deploying your own converational user interface using Lex, check out our [deployment guide](Deploying-Lex-Bot-to-Slack.md) and the AWS Lex examples provided [here.](https://docs.aws.amazon.com/lex/latest/dg/examples.html)
 
