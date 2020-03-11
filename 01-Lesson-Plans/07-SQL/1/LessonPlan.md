@@ -105,9 +105,9 @@ Walk the class through the steps to create a database using pgAdmin.
 
 * Enter "animals_db" as the database name. Make sure the owner is set as the default Postgres, and then click Save.
 
- ![animals_db.png](Images/animals_db.png)
+ ![mortgage_db.png](Images/mortgage_db.png)
 
-At this point, show students that there is a new database listed in the left-hand menu. Explain that the new database, `animals_db`, is not yet connected to the server. Simply clicking on the database will create a connection to Postgres.
+At this point, show students that there is a new database listed in the left-hand menu. Explain that the new database, `mortgage_db`, is not yet connected to the server. Simply clicking on the database will create a connection to Postgres.
 
  ![new_db.png](Images/new_db.png)
 
