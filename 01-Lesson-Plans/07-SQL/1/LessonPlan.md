@@ -103,7 +103,7 @@ Walk the class through the steps to create a database using pgAdmin.
 
  ![create_database.png](Images/create_database.png)
 
-* Enter "animals_db" as the database name. Make sure the owner is set as the default Postgres, and then click Save.
+* Enter "mortgage_db" as the database name. Make sure the owner is set as the default Postgres, and then click Save.
 
  ![mortgage_db.png](Images/mortgage_db.png)
 
