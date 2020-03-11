@@ -64,7 +64,7 @@ An example of unsupervised learning would be to use website purchase data to gro
 <details>
 <summary>What it is:</summary><br>
 
-Kmeans is one of the most popular unsupervised machine learning models. This clustering algorithm uses a number (referred to as `k`) of clusters and then plots those initial clusters in random locations. The distance between each cluster and each data point is then taken, and each data point is assigned to the nearest cluster, after which the mean of each cluster is calculated to create centroids. A centroid is simply the word for the mean of the cluster (the center!). The data is reclustered based on the new centroid location rather than the initial random location. This is where the *means* in *k-means* comes from! The variance of the clusters is then calculated, and the process starts again with new randomly generated clusters. The process is repeated for the number of times you specify, after which the scenario with the lease variance is chosen to represent the final clusters.
+K-means is a popular unsupervised machine learning algorithm  for clustering data. It attempts to divide the data up into a number of clusters referred to as `k`. It can then compare a new data point to the centers of these existing clusters to see which cluster the new point is closest to. The new point can then be labeled as belonging to that closest data cluster.
 
 ![k-means](Images/k-means.gif)
 
