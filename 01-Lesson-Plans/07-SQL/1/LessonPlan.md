@@ -119,7 +119,7 @@ In this activity, the instructor walks students through the process of creating 
 
 Now that there is a database on the server, it's time to dig into the real meat of SQL and start creating tables within the new database!
 
-From the left-hand menu in pgAdmin, right-click "animals_db" and select Query Tool.
+From the left-hand menu in pgAdmin, right-click "mortgage_db" and select Query Tool.
 
 **Note:** You can also select Query Tool from the Tools drop-down menu at the top of the screen. (See the second screenshot below.)
 
@@ -132,12 +132,14 @@ Explain to students that this is how to access the code editor.
 Type the following lines of code, explaining each line:
 
  ```sql
- CREATE TABLE people (
- name VARCHAR(30) NOT NULL,
- has_pet BOOLEAN DEFAULT false,
- pet_type VARCHAR(10) NOT NULL,
- pet_name VARCHAR(30),
- pet_age INT
+ CREATE TABLE customer (
+ first_name VARCHAR(30) NOT NULL,
+ last_name VARCHAR(30),
+ age INT,
+ address VARCHAR(50),
+ city VARCHAR(50),
+ state VARCHAR(10),
+ zip_code INT
  );
  ```
 
@@ -184,14 +186,14 @@ Show the class an alternative method:
 Type the following code while explaining what it does line by line.
 
  ```sql
- INSERT INTO people (name, has_pet, pet_type, pet_name, pet_age)
- VALUES ('Jacob', true, 'dog', 'Misty', 10),
- ('Ahmed', true, 'rock', 'Rockington', 100),
- ('Peter', true, 'cat', 'Franklin', 2),
- ('Dave', true, 'dog', 'Queso', 1);
+ INSERT INTO customer (first_name, last_name, age, address, city, state, zip_code)
+ VALUES ('Michael', 'Meyer', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
+ ('Cindy', 'Stephens', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
+ ('John', 'Jackson', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ' ,89721),
+ ('Alexander', 'Martinez', 32, 'USNS Mosley, FPO', 'AA', 24673);
 
  SELECT *
- FROM people;
+ FROM customer;
  ```
 
 * This code operates as it reads: it inserts data into the `people` table and then specifies the columns in which data will be entered.
@@ -203,8 +205,8 @@ Type the following code while explaining what it does line by line.
 Use the following code to query the table, extracting only the `pet_name`.
 
  ```sql
- SELECT pet_name
- FROM people;
+ SELECT first_name
+ FROM customer;
  ```
 
 Explain that specifying a column name in the `SELECT` statement will return only the data contained in that field.
