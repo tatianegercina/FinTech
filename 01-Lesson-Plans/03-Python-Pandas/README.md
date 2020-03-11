@@ -10,7 +10,7 @@
 
 ### Homework
 
-* [Instructions](../../Homework/03-Pandas/Instructions/README.md)
+* [Instructions](../../02-Homework/04-Pandas/Instructions/README.md)
 
 - - -
 
