@@ -217,7 +217,7 @@ Additionally the AWS Sagemaker SDK docs are a great place to take your own deep 
 <details>
 <summary>What is Amazon Lex?</summary><br>
 
-To understand Amazon Lex, its important to first understand what a conversational user interface is. A conversational user interface - commonly known as a chatbot - is an application that allows human-like interaction with computers.  Rather than just point and click, we can now communicate with computers using human langauge.
+To understand Amazon Lex, its important to first understand what a conversational user interface is. A conversational user interface - commonly known as a chatbot - is an application that allows human-like interaction with computers. Rather than just point and click, we can now communicate with computers using human langauge.
 
 Though the idea of conversational user interfaces has been around for a very long time - think *Space Odyssey: 2001* and *HAL* - its only been in the recent past that NLP technology has become advanced enough to make practical applications of the tech a reality. In fact, conversational AI has become so advanced that it can update in real time and change its responses to adapt to the conversation as it unfolds.
 
