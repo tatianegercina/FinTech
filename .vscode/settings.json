@@ -17,11 +17,12 @@
   "[markdown]": {
     "editor.quickSuggestions": true
   },
-  "python.formatting.provider": "black",
+  "python.formatting.provider": "autopep8",
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "git.autofetch": true,
   "editor.tabSize": 2,
   "python.linting.pylintEnabled": true,
-  "python.linting.enabled": true
+  "python.linting.enabled": true,
+  "python.pythonPath": "/usr/local/opt/python@2/bin/python2.7"
 }
