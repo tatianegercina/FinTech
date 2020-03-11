@@ -79,24 +79,28 @@ As your Python knowledge allows for you to work with external files, you will pr
 
 Overall, based on the information you gathered researching international microfinance, you would like to see a minimum return on your investment of 15%.
 
-The goal of phase 2 is to:
+The goal of Phase 2 is to:
 
- * Determine the net present value (NPV) of the portfolio.
+ * De-annualize the loans to determine the monthly cash payment made on the loan.
+ * Determine the present value, also known as the fair value, of a single loan in the portfolio.
+ * Determine the net present value (NPV) of the entire portfolio.
  * Determine the value of the portfolio taking into account the 12% cost of operational maintenance.
 
 
 ### Phase 3 - PyFlows
 
-You have just been informed that size of the portfolio has grown since Your analysis started. The fundamental structure of the loans and the same currencies are involved, but there are enough loans in the portfolio to require a CSV file.
+You have just been informed that size of the portfolio has grown since your analysis started. The fundamental structure of the loans and the same currencies are involved, but there are enough loans in the portfolio to require a CSV file.
 
 As your Python knowledge allows for you import and analyze external files, you will proceed with your analysis for the portfolio in its new form.
 
-After Phase 2's analysis, you are reasonably certain that this is a solid investment opportunity. On last aspect of the portfolio that you are interested in analyzing are the monthly cash flows. You are trying to determine if the amount of monthly income is enough help you to fund additional loans.
+After Phase 2's analysis, you are reasonably certain that this is a solid investment opportunity. On last aspect of the portfolio that you are interested in analyzing are the monthly cash flows.
 
-The goal of this Phase 3 is to:
+Your goal is to determine the monthly flows you will have available to help fund additional loans.
+
+The goal of this Phase 3 activity is to:
 
 * Import and examine the CSV file provided.
-* Determine how much USD income is generated on a monthly basis based on current interest rates.
+* De-annualize the loans to determine how much USD income is generated on a monthly basis based on current interest rates.
 * Code the program so that these cash flow values are calculated automatically once new CSV files are imported.
 
 
@@ -110,14 +114,30 @@ In this bonus challenge, you will look into what it would take to set up mobile 
 
 CSV file when created.
 
+
 ## Hints
 
-* f-string Formatting:
+* [f-string Formatting](https://realpython.com/python-f-strings/)
 
-* Rounding Values:
+* [Rounding numbers in Python](https://realpython.com/python-rounding/)
 
-* NPV Calculation Formula:
+* [FX information](https://admiralmarkets.com/education/articles/forex-basics/forex-direct-quote-vs-forex-indirect-quote)
 
+> domestic or base currency / quote currency = fx rate
+
+> us dollar value * direct fx rates = local currency value
+
+> local currency value / direct fx rates = us dollar value
+
+* Fair Value Calculation for a loan - Determining the fair value of a loan involves evaluating each of the period cash flows in relation to the discount rate and the period of the payment.
+
+> FV = period_payment/(1 + discount_rate)^1st_period + period_payment/(1 + discount_rate)^2st_period +...+ period_payment/(1 + discount_rate)^last_period
 
 
 ## Submission
+
+1. Create a Github repository for this assignment called **Unit2_Python**, and clone it down to your machine.
+
+2. Utilize the Jupyter Notebook's included in the Instructions/Starter_Code to complete each of the phases detailed in the README.md.
+
+3. Copy the completed Notebooks into the Github repository and push the changes back up to the cloud.
