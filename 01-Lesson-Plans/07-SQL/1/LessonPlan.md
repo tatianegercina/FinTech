@@ -133,13 +133,13 @@ Type the following lines of code, explaining each line:
 
  ```sql
  CREATE TABLE customer (
- first_name VARCHAR(30) NOT NULL,
- last_name VARCHAR(30),
- age INT,
- address VARCHAR(50),
- city VARCHAR(50),
- state VARCHAR(10),
- zip_code INT
+    first_name VARCHAR(30) NOT NULL,
+    last_name VARCHAR(30),
+    age INT,
+    address VARCHAR(50),
+    city VARCHAR(50),
+    state VARCHAR(10),
+    zip_code INT
  );
  ```
 
