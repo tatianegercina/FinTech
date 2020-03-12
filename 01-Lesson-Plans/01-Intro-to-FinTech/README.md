@@ -10,7 +10,7 @@ This week we will cover...
 
 * [1.2 Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
 
-* [1.3 Slides](https://docs.google.com/presentation/d/1ltwZSLHyMLZjkW7s1z-6wuTZyPXkwBvto4_kRzFuKOE/edit?usp=sharing)
+* [1.3 Slides](https://docs.google.com/presentation/d/1P0c6TeZQV_mDRgDVZEYZbu2p-kiGbe7lpO4bElLYTxk/edit?usp=sharing)
 
 ### Lesson Plans
 
