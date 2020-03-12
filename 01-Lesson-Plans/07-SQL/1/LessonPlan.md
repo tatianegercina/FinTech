@@ -135,6 +135,7 @@ Type the following lines of code, explaining each line:
  CREATE TABLE customer (
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30),
+    gender VARCHAR(30),
     age INT,
     address VARCHAR(50),
     city VARCHAR(50),
@@ -186,25 +187,25 @@ Show the class an alternative method:
 Type the following code while explaining what it does line by line.
 
 ```sql
-INSERT INTO customer 
+INSERT INTO customer
 (first_name, last_name, age, address, city, state, zip_code)
-VALUES 
-('Michael', 'Meyer', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-('Cindy', 'Stephens', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
-('John', 'Jackson', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
-('Alexander', 'Martinez', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
+VALUES
+('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
+('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
+('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
+('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
 
 SELECT *
 FROM customer;
 ```
 
-* This code operates as it reads: it inserts data into the `people` table and then specifies the columns in which data will be entered.
+* This code operates as it reads: it inserts data into the `customer` table and then specifies the columns in which data will be entered.
 
 * The `VALUES` line places the data contained in the parentheses into the corresponding columns listed after the `INSERT INTO` statement.
 
 * Single quotations must be used for insert strings; otherwise, an error will result.
 
-Use the following code to query the table, extracting only the `pet_name`.
+Use the following code to query the table, extracting only the `first_name`.
 
  ```sql
  SELECT first_name
@@ -213,13 +214,13 @@ Use the following code to query the table, extracting only the `pet_name`.
 
 Explain that specifying a column name in the `SELECT` statement will return only the data contained in that field.
 
-Filter the queried data to display only dogs younger than 5.
+Filter the queried data to display only male customers younger than 34.
 
  ```sql
- SELECT pet_type, pet_name
- FROM people
- WHERE pet_type = 'dog'
- AND pet_age < 5;
+ SELECT first_name, last_name
+ FROM customer
+ WHERE gender = 'Male'
+ AND age < 34;
  ```
 
 Explain the following points:
