@@ -6,8 +6,24 @@
 
 Today's lesson shows students how to use machine learning models in their algorithmic trading framework.
 
+### Class Objectives
+
+By the end of class, students will be able to:
+
+* Generate trading signals that can be used to train a machine learning model.
+
+* Setup the training and testing time series data for a machine learning model.
+
+* Train a random forest model that can predict returns.
+
+* Save and load pre-trained machine learning models that can be used for algorithmic trading.
+
+* Backtest a machine learning algorithmic trading model to characterize performance.
+
 ### Instructor Notes
+
 * Students may be at or near their learning capacity by this point in the course, but encourage them to use today's material as a guide for incorporating machine learning models into an algorithmic trading strategy. These ideas can potentially be used in their projects.
+
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
 ---
