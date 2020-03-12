@@ -144,19 +144,23 @@ Type the following lines of code, explaining each line:
  );
  ```
 
-* `CREATE TABLE people (<COLUMNS>);` creates a table called `people` with the columns listed within the parentheses.
+* `CREATE TABLE customer (<COLUMNS>);` creates a table called `customer` with the columns listed within the parentheses.
 
-* `name VARCHAR(30) NOT NULL` creates a `name` column, which can hold character strings of up to 30 characters and will not allow null fields.
+* `first_name VARCHAR(30) NOT NULL` creates a `first_name` column, which can hold character strings of up to 30 characters and does not allow NULL values; The `NOT NULL` constraint requires the `first_name` column to have a value specified.
 
-* The `NOT NULL` constraint requires the name field to have a value specified.
+* `last_name VARCHAR(30)` creates a `last_name` column, which can hold character strings of up to 30 character, and unlike the `first_name` column, does allow NULL values.
 
-* `pet_type VARCHAR(10) NOT NULL,` creates a `pet_type` in the same manner as the `name` column is created. The only difference is the number of characters allowed in the column.
+* `gender VARCHAR(30)` creates a `gender` column in the same manner as the `first_name` and `last_name` columns.
 
-* `has_pet BOOLEAN DEFAULT false` creates a `has_pet` column that holds either true or false values, though the default value is now set as false.
+* `age` creates a `age` column that holds integers or whole numbers.
 
-* `pet_name VARCHAR(30)` creates a `pet_name` column, which can hold character strings of up to 30 characters and will allow null fields.
+* `address VARCHAR(50)` creates an `address` column, which can hold character strings of up to 50 characters.
 
-* `pet_age INT` creates a`pet_age` column, which can hold whole numbers.
+* `city` creates a `city` column, which can hold character strings of up to 50 characters.
+
+* `state` creates a `state` column, which can hold character strings of up to 10 characters.
+
+* `zip_code` creates `zip_code` column, which holds integers or whole numbers
 
  **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
 
@@ -188,7 +192,7 @@ Type the following code while explaining what it does line by line.
 
 ```sql
 INSERT INTO customer
-(first_name, last_name, age, address, city, state, zip_code)
+(first_name, last_name, gender, age, address, city, state, zip_code)
 VALUES
 ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
 ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
