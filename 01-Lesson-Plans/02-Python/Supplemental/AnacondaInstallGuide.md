@@ -59,8 +59,14 @@ This guide walks through the installation and configuration process for an Anaco
 
     ![Jupyter_Lab_Activate_Dev.png](Images/Jupyter_Lab_Activate_Dev.png)
 
-10. Post-Installation you'll need to set up a few terminal commands. The instructions differ by your operating system:
+10. After the installation of Anaconda,  we'll want to enable the terminal commands. The instructions differ by your operating system.
 
-[Windows](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=93a9c967-71b2-434c-bcda-ab7a011f5c9c)
+* [Windows](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=93a9c967-71b2-434c-bcda-ab7a011f5c9c)
 
-[Mac](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1c0d69d6-523c-4275-86a5-ab7a011f370a)
+* [Mac](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1c0d69d6-523c-4275-86a5-ab7a011f370a)
+
+A few other things to look out for during the post-installation:
+
+* Note that the exact location where your Anaconda folder is installed may differ based upon your operating system, version of operating system, and version of Anaconda. It is not uncommon to need to search for the "anaconda3" directory on your machine.
+
+* If you're having trouble locating the installation directory for Anaconda, try right-clicking the shortcut for anaconda-navigator and going to Properties (Windows) or Get Info (MacOS). The shourtcut should have a reference to the directory containing Anaconda.
