@@ -235,7 +235,7 @@ Explain to students that the next step is to create a Jupyter notebook instance 
 
 While the notebook instance is being created, explain to students that AWS charges for these and most resources as they are created, event when not in use, this instance is billed for by the second until it's turned off and deleted. Students will learn how to delete these resources later in Today's class.
 
-Explain to students that, as long as the free tier is used, there are no charges associated with Today's activities, however, if any of the students use an account that is more than two months old, the tasks performed Today using Amazon SageMaker will have an associated cost.
+Explain to students that, as long as the free tier is used, there are no charges associated with Today's activities, however, if any of the students use an account that is more than two months old, the tasks performed Today using Amazon SageMaker may have an associated cost.
 
 * Once the notebook instance status is _InService_, it's ready to be used; on the _Actions_ column, click on `Open JupyterLab` to continue.
 
@@ -341,16 +341,16 @@ Navigate to the main folder on Jupyter lab, and import the the unsolved version 
     X = features["TempAvgF"].values.reshape(-1, 1)
     ```
 
-    * The `y_austin_final.csv` data is initially loaded into the `y` DataFrame, this data represent the target variable in the lineal model.
+  * The `y_austin_final.csv` data is initially loaded into the `y` DataFrame, this data represent the target variable in the lineal model.
 
-      ```python
-      # Read the target data (precipitation sum inches)
-      file_path = Path("Data/y_austin_final.csv")
-      y = pd.read_csv(file_path, names=["PrecipitationSumInches"], header=None)
+    ```python
+    # Read the target data (precipitation sum inches)
+    file_path = Path("Data/y_austin_final.csv")
+    y = pd.read_csv(file_path, names=["PrecipitationSumInches"], header=None)
 
-      # Transforminf y into a vector
-      y = y.iloc[:, 0].values
-      ```
+    # Transforminf y into a vector
+    y = y.iloc[:, 0].values
+    ```
 
 * The data is split into a training and testing DataSets using the `train_test_split()` function from `sklearn`.
 
@@ -390,7 +390,7 @@ Continue with the following code, to format the training data as a protobuf reco
 # Encode the training data as Protocol Buffer
 buf = io.BytesIO()
 vectors = np.array(X_train).astype("float32")
-labels = np.array(Y_train).astype("float32)
+labels = np.array(y_train).astype("float32")
 smac.write_numpy_to_dense_tensor(buf, vectors, labels)
 buf.seek(0)
 
@@ -467,7 +467,7 @@ Create the instance of the linear learner algorithm and highlight the following:
   linear.fit({'train': s3_train_data, 'test': s3_test_data})
   ```
 
-Explain to students that this step might take few minutes and it will use resources from the AWS account. Normally, this time is not billed in the two months trial period, however, clarify to students that policies of AWS free and trial offers constantly changes, so they should always check the pricing pages for any service that they want to use. Bellow a sample output is shown, you will notice that text is in red, despite it could denote an error, it's not.
+Explain to students that this step might take few minutes and it will use resources from the AWS account. Normally, this time is not billed in the two months trial period, however, clarify to students that policies of AWS free and trial offers constantly changes, so they should always check the pricing pages for any service that they want to use. Bellow a sample output is shown, you will notice that the output text is in blue.
 
 ![Deploy SageMaker Model - step 3](Images/deploy-sagemaker-3.gif)
 
@@ -475,7 +475,7 @@ Once the `lineal-learner` model was trained, tell students that it can be deploy
 
 * In order to make predictions, the model should be deployed; a `ml.t2.medium` instant type is defined, since this is the instance type we selected when we created the notebook that is part of the free tier offer.
 
-* **Note:** This step may take a up to 15 minutes, if you are running out of time in this activity, open the solved version of the notebook and continue the demo by dry-walking through the code.
+**Important Note:** Explain to students that this step may take a up to 15 minutes since Amazon SageMaker is provisioning not only a Jupyter notebook, but also a series of virtual machines (EC2 instances) to compute the model. If you are running out of time in this activity, open the solved version of the notebook and continue the demo by dry-walking through the code.
 
   ```python
   linear_predictor = linear.deploy(initial_instance_count=1, instance_type="ml.t2.medium")
@@ -500,9 +500,9 @@ Explain to students that once you have the predictions, the model can be evaluat
 
 ![Deploy SageMaker Model - step 4](Images/deploy-sagemaker-4.png)
 
-* Additionally, the `RMSE` and `R2` scores are calculated.
+Additionally, the `RMSE` and `R2` scores are calculated.
 
-  ![Deploy SageMaker Model - step 5](Images/deploy-sagemaker-5.png)
+![Deploy SageMaker Model - step 5](Images/deploy-sagemaker-5.png)
 
 Finally, after reviewing the model evaluation's results, explain to students that the end point needs to be deleted to avoid additional AWS resources usage and extra billing.
 

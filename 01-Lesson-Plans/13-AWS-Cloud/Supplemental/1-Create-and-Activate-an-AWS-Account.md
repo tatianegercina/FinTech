@@ -75,7 +75,7 @@ Follow the next steps to turn on this feature.
 
     ![AWS Billing](Images/aws-billing.png)
 
-2. In the left menu of the "Billing" section, choose "Billing preferences," next enable the "Receive Free Tier Usage Alerts" option and type the e-mail address where you want to receive the usage alerts.
+2. In the left menu of the "Billing" section, choose "Billing preferences," next enable the "Receive Free Tier Usage Alerts" option and type the e-mail address where you want to receive the usage alerts. Click on the "Save preferences" button to finish.
 
     ![Enable free tier usage alerts](Images/set-free-tier-usage-alerts.png)
 
