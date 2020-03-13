@@ -536,7 +536,7 @@ In the Options tab, complete the following steps:
 
  ![import.png](Images/import.png)
 
-In the query tool, rerun `SELECT * FROM bird_song` to verify that data has been imported.
+In the query tool, rerun `SELECT * FROM mortgage` to verify that data has been imported.
 
 Let the class know that the larger a dataset is, the longer it will take for pgAdmin to import values.
 
@@ -546,9 +546,7 @@ In this activity, students will create a new table and import data from a CSV fi
 
 **Files:**
 
-* [WordAssociation_AC.csv](Activities/07-Stu_Hide_and_Seek/Resources/WordAssociation_AC.csv)
-
-* [WordAssociation_BC.csv](Activities/07-Stu_Hide_and_Seek/Resources/WordAssociation_BC.csv)
+* [customer.csv](Activities/07-Stu_Hide_and_Seek/Resources/customer.csv)
 
 **Instructions:** [README.md](Activities/07-Stu_Hide_and_Seek/README.md)
 
