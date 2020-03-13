@@ -506,11 +506,11 @@ Note: For students having issues using the pgAdmin Import/Export tool, there is 
 
 So far, the class has created its tables and values manually using SQL code. As one might imagine, this process can be tedious when translating large datasets from external sources. Thankfully, pgAdmin includes a built-in import tool that can take CSV files and easily import their data into tables.
 
-Return to pgAdmin and create a new database called `Miscellaneous_DB`.
+Return to pgAdmin and create a new database called `mortgage_db`.
 
 Open the CSV file within an integrated development environment, such as Excel, to show the dataset that will be imported. Be sure to point out that the first row of this dataset includes headers.
 
-* Open a query tool within `Miscellaneous_DB` and create a table named `bird_song`. Point out that the columns created match the data in the CSV file.
+* Open a query tool within `mortgage_db` and create a table named `mortgage`. Point out that the columns created match the data in the CSV file.
 
 * Once the table has been created, right-click Miscellaneous_DB from the left-hand menu and select Refresh.
 
