@@ -494,7 +494,7 @@ Answer any questions before moving on.
 
 In this activity, students learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
 
-**Note:** For students having issues using the pgAdmin Import/Export tool, there is an included [seed.sql](Activities/06-Ins_Importing_Data/Solved/query.sql) file. Have students refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
+**Note:** For students having issues using the pgAdmin Import/Export tool, there is an included [seed.sql](Activities/06-Ins_Importing_Data/Solved/query.sql) file for each activity in the remaining half of the day. Have students refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
 
 **Files:**
 
@@ -552,7 +552,13 @@ In this activity, students will create a new table and import data from a CSV fi
 
 ### 13. Instructor Do: Review Hide and Seek (5 min)
 
-**File:** [query.sql](Activities/07-Stu_Hide_and_Seek/Solved/query.sql)
+**Files:**
+
+* [schema.sql](Activities/07-Stu_Hide_and_Seek/Solved/schema.sql)
+
+* [seed.sql](Activities/07-Stu_Hide_and_Seek/Solved/seed.sql)
+
+* [query.sql](Activities/07-Stu_Hide_and_Seek/Solved/query.sql)
 
 Open pgAdmin and paste the code from [query.sql](Activities/07-Stu_Hide_and_Seek/Solved/query.sql) into the editor. Explain the following:
 
