@@ -4,17 +4,17 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 ### Instructions
 
-1. Create a new database in pgAdmin named `city_info`.
+1. Create a new database in pgAdmin named `state_info`.
 
-2. Using the query tool, create an empty table named `cities`. Be sure to match the data types!
+2. Using the query tool, create an empty table named `states`. Be sure to match the data types!
 
 3. Insert data into the new table. The result should match the following image.
 
-    ![cities_table.png](Images/cities_table.png)
+    ![states_table.png](Images/states_table.png)
 
 4. Query the table to recreate the following image.
 
-    ![cities_only.png](Images/cities_only.png)
+    ![states_only.png](Images/states_only.png)
 
 ### Bonus
 
