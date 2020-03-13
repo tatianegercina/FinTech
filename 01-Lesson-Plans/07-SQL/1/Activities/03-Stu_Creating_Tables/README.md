@@ -8,7 +8,7 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 2. Using the query tool, create an empty table named `states`. Be sure to match the data types!
 
-**Note:** For the `state_property_tax_rate` column, use the `FLOAT` data type.
+  **Note:** For the `state_property_tax_rate` column, use the `FLOAT` data type.
 
 3. Insert data into the new table. The result should match the following image.
 
