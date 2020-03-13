@@ -33,6 +33,7 @@ By the end of class, students will be able to:
 * This lesson introduces new content rapidly. Students may express frustration at learning a new interface and programming language simultaneously. Explain to students that while the learning curve may be steep at first, SQL experience is highly sought-after and well worth the effort required to become comfortable with it.
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [7.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c6264b7e-e1bb-41d4-be84-aac3016512d0) Note that this video may not reflect the most recent lesson plan.
 
 ---
@@ -467,7 +468,13 @@ In this activity, students will recreate a table and then query, insert, and upd
 
 ### 9. Instructor Do: Review Making and Using an ID (10 min)
 
-**File:** [query.sql](Activities/05-Stu_Making_IDs/Solved/query.sql)
+**Files:**
+
+* [schema.sql](Activities/05-Stu_Making_IDs/Solved/schema.sql)
+
+* [seed.sql](Activities/05-Stu_Making_IDs/Solved/seed.sql)
+
+* [query.sql](Activities/05-Stu_Making_IDs/Solved/query.sql)
 
 Open [query.sql](Activities/05-Stu_Making_IDs/Solved/query.sql) and copy the code into pgAdmin.
 
@@ -487,11 +494,17 @@ Answer any questions before moving on.
 
 In this activity, students learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
 
+Note: If students have issues using the pgAdmin Import/Export tool, refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md)
+
 **Files:**
 
-* [bird_song.csv](Activities/06-Ins_Importing_Data/Resources/bird_song.csv)
+* [mortgage.csv](Activities/06-Ins_Importing_Data/Resources/mortgage.csv)
+
+* [schema.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
 
 * [query.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
+
+* [seed.sql](Activities/06-Ins_Importing_Data/Solved/query.sql) (OPTIONAL)
 
 So far, the class has created its tables and values manually using SQL code. As one might imagine, this process can be tedious when translating large datasets from external sources. Thankfully, pgAdmin includes a built-in import tool that can take CSV files and easily import their data into tables.
 
