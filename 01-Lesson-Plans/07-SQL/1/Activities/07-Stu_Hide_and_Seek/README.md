@@ -14,7 +14,9 @@ In this activity, you will create a new table and import data from a CSV file.
 
 5. Create a query to return all male customers from California.
 
-6. Create a query to return all female customers from Maryland who are less than 30 years old.
+### Bonus
+
+* Create a query to return all female customers from Maryland who are less than 30 years old.
 
 ---
 
