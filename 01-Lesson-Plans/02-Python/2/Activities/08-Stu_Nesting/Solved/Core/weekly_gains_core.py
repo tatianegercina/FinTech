@@ -80,10 +80,10 @@ new_amd_record = [new_records['AMD']['date'], new_records['AMD']['open'], new_re
 new_twtr_record = [new_records['TWTR']['date'], new_records['TWTR']['open'], new_records['TWTR']['high'], new_records['TWTR']['low'], new_records['TWTR']['close']]
 
 # Choice 1: Add a new round of entries to the 'historical_stock_data' dictionary
-historical_stock_data['AAPL'].append([new_aapl_record])
-historical_stock_data['MU'].append([new_mu_record])
-historical_stock_data['AMD'].append([new_amd_record])
-historical_stock_data['TWTR'].append([new_twtr_record])
+historical_stock_data['AAPL'].append(new_aapl_record)
+historical_stock_data['MU'].append(new_mu_record)
+historical_stock_data['AMD'].append(new_amd_record)
+historical_stock_data['TWTR'].append(new_twtr_record)
 #print(historical_stock_data)
 
 # Choice 2: Add a new round of entries via for loop to the 'historical_stock_data' dictionary
