@@ -1,43 +1,51 @@
-SELECT * FROM banks;
+-- Query inserted rows from the banks table
+SELECT *
+FROM banks;
 
--- Query the rows with the language "MySQL"
+-- Query the rows with bank name equal to "Capital One"
 SELECT *
 FROM banks
 WHERE bank_name = 'Capital One';
 
--- Drop a duplicate row
+-- Drop the duplicate Capital One row
 DELETE FROM banks
-WHERE bank_id = 5;
+WHERE bank_id = 7;
 
+-- Query all rows to see change
 SELECT *
-FROM programming_languages;
+FROM banks;
 
 -- Add additional data
-INSERT INTO programming_languages (language, rating)
-VALUES ('Python', 98),
-	('C++', 73),
-	('R', 95);
+INSERT INTO banks
+(bank_name, bank_routing_number)
+VALUES
+('Ally Bank', 316289502),
+('Discover Bank', 639893944),
+('Bank of New York Mellon', 8734569384);
 
+-- Query all rows to see change
 SELECT *
-FROM programming_languages;
+FROM banks;
 
 -- Update "JS" to "JavaScript"
-UPDATE programming_languages
-SET language = 'JavaScript'
-WHERE id = 2;
+UPDATE banks
+SET bank_name = 'PNC Bank'
+WHERE bank_id = 4;
 
+-- Query all rows to see change
 SELECT *
-FROM programming_languages;
+FROM banks;
 
 -- Change HTML's rating to 90
-UPDATE programming_languages
-SET rating = 90
-WHERE id = 1;
+UPDATE banks
+SET bank_routing_number = 1995826182
+WHERE bank_id = 2;
 
+-- Query all rows to see change
 SELECT *
-FROM programming_languages;
+FROM banks;
 
 -- BONUS
 -- Add a "mastered" column with the boolean default of true
-ALTER TABLE programming_languages
-ADD COLUMN mastered BOOLEAN default true;
+ALTER TABLE banks
+ADD COLUMN mortgage_lender BOOLEAN default true;
