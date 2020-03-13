@@ -245,7 +245,7 @@ In this activity, students will use pgAdmin to recreate and query a table from a
 
 ### 6. Instructor Do: Review Creating Tables (5 min)
 
-**Files:** 
+**Files:**
 
 * [schema.sql](Activities/03-Stu_Creating_Tables/Solved/schema.sql)
 
