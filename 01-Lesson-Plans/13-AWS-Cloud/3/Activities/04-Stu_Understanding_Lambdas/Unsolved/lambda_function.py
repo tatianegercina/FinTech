@@ -16,12 +16,12 @@ def parse_float(n):
 
 def get_btcprice():
     """
-    Retrieves the current price of bitcoin in US Dollars from CoinMarketCap.
+    Retrieves the current price of bitcoin in US Dollars from the alternative.me Crypto API.
     """
-    bitcoin_api_url = "https://api.coinmarketcap.com/v1/ticker/bitcoin/"
+    bitcoin_api_url = "https://api.alternative.me/v2/ticker/bitcoin/?convert=USD"
     response = requests.get(bitcoin_api_url)
     response_json = response.json()
-    price_usd = parse_float(response_json[0]["price_usd"])
+    price_usd = parse_float(response_json["data"]["1"]["quotes"]["USD"]["price"])
     return price_usd
 
 

@@ -16,19 +16,23 @@ def parse_float(n):
 
 def get_cryptoprice(crypto):
     """
-    Retrieves the current price of BTC, ETH or XRP in US Dollars from CoinMarketCap.
+    Retrieves the current price of BTC, ETH or XRP in US Dollars from the alternative.me Crypto API.
     """
     url = ""
+    id = ""
     if crypto == "Bitcoin":
-        url = "https://api.coinmarketcap.com/v1/ticker/bitcoin/"
+        url = "https://api.alternative.me/v2/ticker/Bitcoin/?convert=USD"
+        id = "1"
     elif crypto == "Ethereum":
-        url = "https://api.coinmarketcap.com/v1/ticker/ethereum/"
+        url = "https://api.alternative.me/v2/ticker/Ethereum/?convert=USD"
+        id = "1027"
     else:
-        url = "https://api.coinmarketcap.com/v1/ticker/ripple/"
+        url = "https://api.alternative.me/v2/ticker/Ripple/?convert=USD"
+        id = "52"
 
     response = requests.get(url)
     response_json = response.json()
-    price_usd = parse_float(response_json[0]["price_usd"])
+    price_usd = parse_float(response_json["data"][id]["quotes"]["USD"]["price"])
     return price_usd
 
 def build_validation_result(is_valid, violated_slot, message_content):

@@ -6,7 +6,7 @@ Customers just loved the new chatbot to convert from US Dollars to Bitcoin; howe
 
 ### Create a custom slot
 
-1. Log-in to the AWS Management Console using your `Admin` user, navigate to the Amazon Lex console and create a new custom slot in the `convertUSD` intent of the `Crypto_Converter` bot as follows:
+1. Log-in to the AWS Management Console using your `Admin` user, navigate to the Amazon Lex console and create a new custom slot in the `ConvertUSD` intent of the `Crypto_Converter` bot as follows:
 
     * **Slot type name:** `CryptoCurrency`
     * **Description:** `Available cryptocurrencies to convert.`
@@ -46,10 +46,10 @@ As you noticed, the bot allows users to select between Bitcoin, Ethereum, and Ri
 
 1. Open the code of your `convertUSD` Lambda function on the AWS Lambda online code editor, make a backup copy just in case you need to restore your function.
 
-2. Create a new helper function called `get_cryptoprice(crypto)` that will receive as parameter the name of the cryptocurrency selected by the user and should return the price of the selected cryptocurrency in US Dollars. As a starting code, you can use the `get_btcprice()` function's code. To retrieve the current price of Ethereum and Ripple, use the following endpoints from CoinMarketCap.
+2. Create a new helper function called `get_cryptoprice(crypto)` that will receive as parameter the name of the cryptocurrency selected by the user and should return the price of the selected cryptocurrency in US Dollars. As a starting code, you can use the `get_btcprice()` function's code. To retrieve the current price of Ethereum and Ripple, use the following endpoints from the alternative.me Crypto API.
 
-    * **Ethereum:** https://api.coinmarketcap.com/v1/ticker/ethereum/
-    * **Ripple:** https://api.coinmarketcap.com/v1/ticker/ripple/
+    * **Ethereum:** https://api.alternative.me/v2/ticker/Ethereum/?convert=USD
+    * **Ripple:** https://api.alternative.me/v2/ticker/Ripple/?convert=USD
 
 3. Modify the `convert_usd()` function as follows:
 
@@ -90,4 +90,4 @@ As you noticed, the bot allows users to select between Bitcoin, Ethereum, and Ri
 * Remember to save your Lambda function once in a while to prevent code loses.
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
