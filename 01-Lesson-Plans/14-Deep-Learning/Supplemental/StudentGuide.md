@@ -64,6 +64,40 @@ An example of unsupervised learning would be to use website purchase data to gro
 
 </blockquote>
 </details>
+
+<details>
+<summary>What is an neural network (ANN)?</summary><br>
+Neural networks are a set of algorithms that are modeled after the human brain. They’re designed to recognize patterns and interpret sensory data through a kind of machine perception, labeling, or clustering raw input.
+
+
+</details>
+<details>
+<summary>What types of neural networks exist?</summary><br>
+
+There are many different types of neural networks.  For purposes of this class, we focus on Perceptron, Deep Neural Network, Recurrent Neural Network (RNN), and Long short-term memory (LSTM).
+
+<blockquote>
+<details>
+<summary>Perceptron</summary>
+
+</details>
+
+<details>
+<summary>Deep Neural Network</summary>
+
+</details>
+
+<details>
+<summary>Recurrent Neural Network (RNN)</summary>
+
+</details>
+
+<details>
+<summary>Long short-term memory (LSTM)</summary>
+
+</details>
+</blockquote><br>
+</details>
 <details>
 <summary>How is Training and Testing Data Utilized?</summary><br>
 
@@ -154,6 +188,18 @@ The new DataFrame shows the scaled data in place of the former values.  Now all 
 </blockquote>
 </details>
 
-<details>
+<details><summary>
+What is .reshape() and why do I have to use it?</summary>
+
+When working with Pandas, we often pass Series objects into our model.  The shape of values in a Pandas Series object is a 1d array.  This has to be converted into a 2d array which is essentially an array of arrays - or list of lists. .  This is done using the `.reshape()` function.  The matrix values we desire are passed into this function.  In the following example we reshape our list into a 2d array using `.reshape(3,4)`, where 3 is the number of lists and 4 is the number of values in each list:
+
+![2d_arrayImages](Images/2d_array.PNG)
+
+Many models require the 2d array to be formatted such that each value is in a list by itself. If we were inserting the above sample data into a model, it would be converted using `.reshape(-1,1)`, where -1 indicates an unknown number of rows, and 1 indicates the number of values in each list.  The -1 will allow the function to generate the amount of rows necessary to hold the data.  The output looks like this:
+
+![2d_array_reshape](Images/2d_array_reshape.PNG)
+
+</details>
+
 ---
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
