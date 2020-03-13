@@ -1,31 +1,13 @@
--- Drop table if exists
-DROP TABLE programming_languages;
-
--- Create new programming_languages table
-CREATE TABLE programming_languages (
-  id SERIAL PRIMARY KEY,
-  language VARCHAR(20),
-  rating INT
-);
-
--- Insert new data
-INSERT INTO programming_languages (language, rating)
-VALUES ('HTML', 95),
-	('JS', 99),
-	('JQuery', 98),
-	('MySQL', 70),
-	('MySQL', 70);
-
-SELECT * FROM programming_languages;
+SELECT * FROM banks;
 
 -- Query the rows with the language "MySQL"
 SELECT *
-FROM programming_languages
-WHERE language = 'MySQL';
+FROM banks
+WHERE bank_name = 'Capital One';
 
 -- Drop a duplicate row
-DELETE FROM programming_languages
-WHERE id = 5;
+DELETE FROM banks
+WHERE bank_id = 5;
 
 SELECT *
 FROM programming_languages;
