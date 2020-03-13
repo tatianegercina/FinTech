@@ -78,23 +78,23 @@ There are many different types of neural networks.  For purposes of this class, 
 
 <blockquote>
 <details>
-<summary>Perceptron</summary>
+<summary>Perceptron</summary><br>
+
+The original neural network - the perceptron - is a single layer neural network created by Frank Rosenblatt in further developed 1969 by Marvin Minsky and Seymour Papert.  It is the most basic model of an artificial nueron, taking inputs, applying weights, calculating a weighted sum prediction.
+</details>
+
+<details>
+<summary>Deep Neural Network</summary><br>
 
 </details>
 
 <details>
-<summary>Deep Neural Network</summary>
+<summary>Recurrent Neural Network (RNN)</summary><br>
 
 </details>
 
 <details>
-<summary>Recurrent Neural Network (RNN)</summary>
-
-</details>
-
-<details>
-<summary>Long short-term memory (LSTM)</summary>
-
+<summary>Long short-term memory (LSTM)</summary><br>
 </details>
 </blockquote><br>
 </details>
