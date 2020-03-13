@@ -1,6 +1,7 @@
 -- Create a new table
-CREATE TABLE cities (
-  city VARCHAR(30) NOT NULL,
-  state VARCHAR(30) NOT NULL,
-  population INT
+CREATE TABLE states (
+	state_name VARCHAR(50),
+	state_abbreviation CHAR(2),
+	population INT,
+	state_property_tax_rate FLOAT
 );

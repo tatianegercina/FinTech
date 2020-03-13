@@ -22,7 +22,7 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 1. Filter the table to view only state abbreviations.
 
-2. Filter the table to view only states with a population greater than 5,000,000.
+2. Filter the table to view states with a population greater than 5,000,000.
 
 3. Filter the table to view states with a population of greater than 5,000,000 and a state property tax rate of less than 0.01.
 
