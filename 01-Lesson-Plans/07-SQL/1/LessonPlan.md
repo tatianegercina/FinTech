@@ -164,9 +164,9 @@ Type the following lines of code, explaining each line:
 
  **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
 
-After reviewing the code, click the lightning bolt icon to run the script. Make a note of the Messages tab at the bottom of the screen.
+After reviewing the code, click the play icon to run the script. Make a note of the Messages tab at the bottom of the screen.
 
- ![lightning_bolt.png](Images/lightning_bolt.png)
+ ![play_icon.png](Images/play_icon.png)
 
 Demonstrate that the structure of a table can be visualized by appending the script with `SELECT * FROM <table name>;`. Point out the "table already exists" error message that now appears at the bottom of the page.
 
