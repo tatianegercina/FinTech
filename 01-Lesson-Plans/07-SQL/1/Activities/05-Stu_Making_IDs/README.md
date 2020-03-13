@@ -12,9 +12,9 @@ In this activity, you will recreate a table and then query, insert, and update d
 
 3. Query the table to return the rows containing "Capital One", and then delete one of the duplicates.
 
-4. Insert a few more rows of data for additional programming languages by adding the `bank_name` and `bank_routing_number` of your choice to the `banks` table.
+4. Insert a few more rows of data representing additional banks by adding the `bank_name` and `bank_routing_number` of your choice to the `banks` table.
 
-5. Change the name of the Citigroup bank to PNC.
+5. Change the name of the Citigroup to PNC.
 
 6. Change the bank_routing_number for Wells Fargo to 1995826182.
 
