@@ -168,7 +168,7 @@ After reviewing the code, click the lightning bolt icon to run the script. Make 
 
  ![lightning_bolt.png](Images/lightning_bolt.png)
 
-Demonstrate that the structure of a table can be visualized using `SELECT * FROM <table name>;`. Point out the error message that now appears at the bottom of the page.
+Demonstrate that the structure of a table can be visualized by appending the script with `SELECT * FROM <table name>;`. Point out the "table already exists" error message that now appears at the bottom of the page.
 
 * SQL data is persistent; it is not deleted or overwritten when identical commands are run unless specifically commanded.
 
