@@ -340,63 +340,76 @@ Answer any questions before moving on.
 
 In this activity, students are introduced to the concept of duplicate and unique values and how to properly remove duplicate records through the use of unique identifiers.
 
-**File:** [query.sql](Activities/04-Ins_Values_of_Uniques/Solved/query.sql)
+**Files:**
 
-Using the `people` table from the `animals_db` database, insert the duplicate data below into the table, and then visualize the table with the new information.
+* [schema.sql](Activities/04-Ins_Values_of_Uniques/Solved/schema.sql)
+
+* [seed.sql](Activities/04-Ins_Values_of_Uniques/Solved/seed.sql)
+
+* [query.sql](Activities/04-Ins_Values_of_Uniques/Solved/query.sql)
+
+Using the `customer` table from the `mortgage_db` database, insert the duplicate data below into the table, and then visualize the table with the new information.
 
  ```sql
- INSERT INTO people (name, has_pet, pet_type, pet_name, pet_age)
- VALUES ('Ahmed', true, 'rock', 'Rockington', 100);
+INSERT INTO customer
+(first_name, last_name, gender, age, address, city, state, zip_code)
+VALUES
+('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709);
 
  SELECT *
- FROM people;
+ FROM customer;
  ```
 
-Explain that duplicate data is a real-world occurrence (and an eyesore). Demonstrate how to remove the rows containing the string `Ahmed` in the `name` column.
+Explain that duplicate data is a real-world occurrence (and an eyesore). Demonstrate how to remove the rows containing the string `Michael` in the `first_name` column.
 
  ```sql
- DELETE FROM people
- WHERE name = 'Ahmed';
+DELETE FROM customer
+WHERE first_name = 'Michael';
  ```
 
 * The duplicate was deleted, but so was the original row. That's a little annoying. Make sure the class understands why this happened.
 
-* Because the name Ahmed appears twice in the table, SQL assumes that the user wants to delete every column containing that name; it doesn't understand that the user is simply trying to remove the duplicate row.
+* Because the name Michael appears twice in the table, SQL assumes that the user wants to delete every column containing that name; it doesn't understand that the user is simply trying to remove the duplicate row.
 
 * To prevent this kind of thing from occurring, programmers will often want to create a column that automatically populates each new row with unique data. This allows them to select and modify that row more easily.
 
-Remove the `people` table by running the following line of code:
+Remove the `customer` table by running the following line of code:
 
  ```sql
- -- Delete the table "people"
- DROP TABLE people;
+ -- Delete the table "customer"
+ DROP TABLE customer;
  ```
 
 Copy the following code from the `query.sql` file and paste it in the pgAdmin editor.
 
  ```sql
- -- Re-create the table "people" within animals_db
- CREATE TABLE people (
- id SERIAL PRIMARY KEY,
- name VARCHAR(30) NOT NULL,
- has_pet BOOLEAN DEFAULT false,
- pet_type VARCHAR(10) NOT NULL,
- pet_name VARCHAR(30),
- pet_age INT
- );
+ -- Re-create the table "customer" within mortgage_db
+CREATE TABLE customer (
+  customer_id SERIAL PRIMARY KEY,
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30),
+  gender VARCHAR(30),
+  age INT,
+  address VARCHAR(50),
+  city VARCHAR(50),
+  state CHAR(2),
+  zip_code CHAR(5)
+);
 
  -- Insert data into the table
- INSERT INTO people (name, has_pet, pet_type, pet_name, pet_age)
- VALUES ('Jacob', true, 'dog', 'Misty', 10),
- ('Ahmed', true, 'rock', 'Rockington', 100),
- ('Ahmed', true, 'rock', 'Rockington', 100),
- ('Peter', true, 'cat', 'Franklin', 2),
- ('Dave', true, 'dog', 'Queso', 1),
- ('Dave', true, 'dog', 'Pringles', 7);
+INSERT INTO customer
+(first_name, last_name, gender, age, address, city, state, zip_code)
+VALUES
+('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
+('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
+('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
+('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673),
+('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673),
+('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709);
 
  -- Query all fields from the table
  SELECT *
- FROM people;
+ FROM customer;
  ```
 
 Explain the following points:
@@ -409,37 +422,37 @@ Explain the following points:
 
 * Because values will automatically increment, each row's ID is guaranteed to be unique. This ensures that SQL does not identify and update the wrong row when CRUD (Create, Read, Update, Delete) statements are implemented (will cover in the following activities).
 
-* The `INSERT` statements have not changed, as they do not need to insert data specifically into the `id` column. SQL automatically provides value for this column, fulfilling the uniqueness constraint by automatically incrementing the last value used as an ID.
+* The `INSERT` statements have not changed, as they do not need to insert data specifically into the `customer_id` column. SQL automatically provides value for this column, fulfilling the uniqueness constraint by automatically incrementing the last value used as a customer ID.
 
-* The data type for the `id` column is automatically assigned as an integer.
+* The data type for the `customer_id` column is automatically assigned as an integer.
 
-* One entry in the table is incorrect: one of the Daves has the wrong `pet_name` and `pet_age`. We need to update the `pet_name` from Pringles to Rocket and the `pet_age` from 7 to 8.
+* One entry in the table is incorrect: one of the Michaels has the wrong `first_name` and `age`. We need to update the `first_name` from Michael to Brian and the `age` from 24 to 20.
 
-* To avoid issues with updating multiple rows, it's best to update by ID. First, query by name to find the ID for the row we want to update.
-
- ```sql
- SELECT id, name, pet_name, pet_age
- FROM people
- WHERE name = 'Dave';
- ```
-
-* This will return all rows that contain the name Dave, including the `id`, `pet_name`, and `pet_age` columns.
-
-* Next, we can select and update the `pet_name` from Pringles to Rocket and the `pet_age` from 7 to 8 based on the row's unique ID.
+* To avoid issues with updating multiple rows, it's best to update by the customer ID. First, query by name to find the ID for the row we want to update.
 
  ```sql
- UPDATE people
- SET has_pet = true, pet_name = 'Rocket', pet_age = 8
- WHERE id = 6;
+ SELECT customer_id, first_name, last_name, age
+ FROM customer
+ WHERE first_name = 'Michael';
  ```
 
-* Note that similar to a query, the `WHERE` statement is used to pinpoint the data we want to change. In this case, the `id` column is used to select the unique row we want to affect.
+* This will return all rows that contain the name Michael, including the `customer_id`, `first_name`, `last_name`, and `age` columns.
+
+* Next, we can select and update the `first_name` from Michael to Brian and the `age` from 24 to 20 based on the row's unique ID.
+
+ ```sql
+UPDATE customer
+SET first_name = 'Brian', age = 20
+WHERE customer_id = 6;
+ ```
+
+* Note that similar to a query, the `WHERE` statement is used to pinpoint the data we want to change. In this case, the `customer_id` column is used to select the unique row we want to affect.
 
 * Duplicate data is also easier to remove with the use of a unique ID. With the following code, remove the duplicate data:
 
  ```sql
- DELETE FROM people
- WHERE id = 3;
+ DELETE FROM customer
+ WHERE customer_id = 5;
  ```
 
 * This does precisely what was desired: duplicate data is deleted, and original data is preserved.
