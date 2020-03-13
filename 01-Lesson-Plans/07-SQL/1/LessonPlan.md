@@ -494,7 +494,7 @@ Answer any questions before moving on.
 
 In this activity, students learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
 
-Note: For students having issues using the pgAdmin Import/Export tool, there is an included [seed.sql](Activities/06-Ins_Importing_Data/Solved/query.sql) file. Have students refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
+**Note:** For students having issues using the pgAdmin Import/Export tool, there is an included [seed.sql](Activities/06-Ins_Importing_Data/Solved/query.sql) file. Have students refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
 
 **Files:**
 
@@ -516,11 +516,11 @@ Open the CSV file within an integrated development environment, such as Excel, t
 
 * Scroll down to Schemas and expand that menu, and then expand the Tables menu.
 
- ![table-expand.png](Images/table-expand.png)
+  ![table-expand.png](Images/table-expand.png)
 
 * Right-click the new table and select Import/Export from the menu.
 
- ![import-export.png](Images/import-export.png)
+  ![import-export.png](Images/import-export.png)
 
 In the Options tab, complete the following steps:
 
