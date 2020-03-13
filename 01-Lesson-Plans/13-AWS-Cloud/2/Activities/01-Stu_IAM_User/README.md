@@ -79,3 +79,6 @@ You can use this same process to create more groups and users and to give your u
 
 [1]: https://docs.aws.amazon.com/best-practices.html#lock-away-credentials
 [2]: https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

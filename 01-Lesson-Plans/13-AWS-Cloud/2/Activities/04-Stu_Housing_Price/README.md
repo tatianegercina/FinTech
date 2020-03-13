@@ -17,3 +17,6 @@ The _Boston house-price dataset_, contains information about different houses in
 * Once the model is deployed, you can forecast prices of homes not included in the dataset and also review the model's performance.
 
 * If you finish early, take a look at other Amazon SageMaker built-in algorithms [here](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-algo-docker-registry-paths.html).
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
