@@ -4,7 +4,7 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 ### Instructions
 
-**Note:** For the `state_property_tax_rate` column, use the `FLOAT` data type.
+**Note:** When defining the `state_property_tax_rate` column, use the `FLOAT` data type.
 
 1. Create a new database in pgAdmin named `state_info`.
 
@@ -20,11 +20,11 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 ### Bonus
 
-1. Filter the table to view only cities in Arizona.
+1. Filter the table to view only state_names.
 
-2. Filter the table to view only cities with a population of less than 100,000.
+2. Filter the table to view only states with a population greater than 5,000,000.
 
-3. Filter the table to view California cities with a population of less than 100,000.
+3. Filter the table to view states with a population of greater than 5,000,000 and a state property tax rate of less than 0.01.
 
 ### Hints
 
