@@ -139,28 +139,28 @@ Type the following lines of code, explaining each line:
     age INT,
     address VARCHAR(50),
     city VARCHAR(50),
-    state VARCHAR(10),
+    state CHAR(2),
     zip_code INT
  );
  ```
 
 * `CREATE TABLE customer (<COLUMNS>);` creates a table called `customer` with the columns listed within the parentheses.
 
-* `first_name VARCHAR(30) NOT NULL` creates a `first_name` column, which can hold character strings of up to 30 characters and does not allow NULL values; The `NOT NULL` constraint requires the `first_name` column to have a value specified.
+* `first_name VARCHAR(30) NOT NULL` creates a `first_name` column that represents the first name of a customer. The column values can hold character strings of up to 30 characters and does not allow NULL values; The `NOT NULL` constraint requires the `first_name` column to have a value specified.
 
-* `last_name VARCHAR(30)` creates a `last_name` column, which can hold character strings of up to 30 character, and unlike the `first_name` column, does allow NULL values.
+* `last_name VARCHAR(30)` creates a `last_name` column that represents the last name of a customer. The column values can hold character strings of up to 30 characters, and unlike the `first_name` column, allows NULL values.
 
-* `gender VARCHAR(30)` creates a `gender` column in the same manner as the `first_name` and `last_name` columns.
+* `gender VARCHAR(30)` creates a `gender` column that represents the gender of the customer. The column values can hold character strings of up to 30 characters.
 
-* `age` creates a `age` column that holds integers or whole numbers.
+* `age INT` creates an `age` column that represents the age of a customer. The column values must be integers.
 
-* `address VARCHAR(50)` creates an `address` column, which can hold character strings of up to 50 characters.
+* `address VARCHAR(50)` creates an `address` column that represents the street address of a customer. The column values can which can hold character strings of up to 50 characters.
 
-* `city` creates a `city` column, which can hold character strings of up to 50 characters.
+* `city VARCHAR(50)` creates a `city` column that represents the city in which the customer lives. The column values can hold character strings of up to 50 characters.
 
-* `state` creates a `state` column, which can hold character strings of up to 10 characters.
+* `state VARCHAR(10)` creates a `state` column that represents the state ticker in which the customer lives. The column values must be character strings of 2 characters.
 
-* `zip_code` creates `zip_code` column, which holds integers or whole numbers
+* `zip_code INT` creates `zip_code` column which represents the postal zip code of the customer. The column values must be integers.
 
  **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
 
