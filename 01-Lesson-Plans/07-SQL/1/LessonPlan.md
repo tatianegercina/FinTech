@@ -494,7 +494,7 @@ Answer any questions before moving on.
 
 In this activity, students learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
 
-Note: If students have issues using the pgAdmin Import/Export tool, refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md)
+Note: For students having issues using the pgAdmin Import/Export tool, there is an included [seed.sql](Activities/06-Ins_Importing_Data/Solved/query.sql) file. Have students refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
 
 **Files:**
 
@@ -503,8 +503,6 @@ Note: If students have issues using the pgAdmin Import/Export tool, refer to the
 * [schema.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
 
 * [query.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
-
-* [seed.sql](Activities/06-Ins_Importing_Data/Solved/query.sql) (OPTIONAL)
 
 So far, the class has created its tables and values manually using SQL code. As one might imagine, this process can be tedious when translating large datasets from external sources. Thankfully, pgAdmin includes a built-in import tool that can take CSV files and easily import their data into tables.
 
