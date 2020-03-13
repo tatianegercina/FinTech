@@ -20,7 +20,7 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 ### Bonus
 
-1. Filter the table to view only state_names.
+1. Filter the table to view only state abbreviations.
 
 2. Filter the table to view only states with a population greater than 5,000,000.
 

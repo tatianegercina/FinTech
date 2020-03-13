@@ -1,10 +1,10 @@
 -- View the table data
 SELECT *
-FROM cities;
+FROM states;
 
--- Use a query to view only the cities
-SELECT city
-FROM cities;
+-- Use a query to view only the state_name
+SELECT state_name
+FROM states;
 
 -- Bonus 1:
 -- Create a query to view cities in Arizona
