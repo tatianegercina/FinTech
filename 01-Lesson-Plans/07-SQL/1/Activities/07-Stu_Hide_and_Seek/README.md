@@ -1,28 +1,20 @@
-## Hide and Seek 
+## Customer Demographics
 
 In this activity, you will create a new table and import data from a CSV file.
 
 ### Instructions
 
-1. Create a new database called `payments_db`.
+1. Create a new database called `customer_db`.
 
-2. Create a new table in the `payments_db` database called `payments`.
+2. Create a new table in the `customer_db` database called `customer`.
 
-3. Import the data from the `payments.csv` file in the Resources folder.
+3. Import the data from the `customer.csv` file in the Resources folder.
 
-4. Create a query in which the data in the `word1` column is `stone`. 
+4. Create a query to return all female customers.
 
-5. Create a query that collects all rows in which the author is within the range 0–10.
+5. Create a query to return all male customers from California.
 
-6. Create a query that searches for any rows that have `pie` in their `word1` or `word2` columns.
-
-### Bonus
-
-* Import `WordAssociation_BC.csv` to the `wordassociation` table and research how to use the `SOURCE` statement.
-
-* Create a query that will collect all rows with a `source` of BC.
-
-* Create a query that will collect all rows with a `source` of BC and an author range between 333 and 335.
+6. Create a query to return all female customers from Maryland who are less than 30 years old.
 
 ---
 
