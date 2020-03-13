@@ -245,18 +245,25 @@ In this activity, students will use pgAdmin to recreate and query a table from a
 
 ### 6. Instructor Do: Review Creating Tables (5 min)
 
-**File:** [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql)
+**Files:** 
 
-Create a new database named `city_info` in pgAdmin. Then use the query tool to copy and paste, or live code, the solution from [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql).
+* [schema.sql](Activities/03-Stu_Creating_Tables/Solved/schema.sql)
+
+* [seed.sql](Activities/03-Stu_Creating_Tables/Solved/seed.sql)
+
+* [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql)
+
+Create a new database named `state_info` in pgAdmin. Then use the query tool to copy and paste, or live code, the solution from [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql).
 
 * To create a new table, specify the data type for each column.
 
  ```sql
- CREATE TABLE cities (
- city VARCHAR(30) NOT NULL,
- state VARCHAR(30) NOT NULL,
- population INT
- );
+CREATE TABLE states (
+  state_name VARCHAR(50),
+  state_abbreviation CHAR(2),
+  population INT,
+  state_property_tax_rate FLOAT
+);
  ```
 
 * Insert multiple rows of data into the new table.
@@ -266,63 +273,66 @@ Create a new database named `city_info` in pgAdmin. Then use the query tool to c
 * To make the code easier to read, each row of values is on its line, separated by a comma.
 
  ```sql
- INSERT INTO cities (city, state, population)
- VALUES ('Alameda', 'California', 79177),
- ('Mesa', 'Arizona', 496401),
- ('Boerne', 'Texas', 16056),
- ('Anaheim', 'California', 352497),
- ('Tucson', 'Arizona', 535677),
- ('Garland', 'Texas', 238002);
+INSERT INTO states
+(state_name, state_abbreviation, population, state_property_tax_rate)
+VALUES
+('Florida', 'FL', 21477737, 0.0093),
+('Alabama', 'AL', 4903185, 0.0042),
+('Texas', 'TX', 28995881, 0.0181),
+('Kentucky', 'KY', 4467673, 0.0086),
+('Virginia', 'VA', 8535519, 0.0081),
+('Louisiana', 'LA', 4648794, 0.0053),
+('Utah', 'UT', 3205958, 0.0064),
+('Vermont', 'VT', 623989, 0.0188);
  ```
 
 * Create a query to view the data using the `SELECT` clause.
 
- ```sql
- SELECT *
- FROM cities;
- ```
+```sql
+SELECT *
+FROM states;
+```
 
 * Note the syntax here. Even though the code can fit on a single line, it's good practice to split it up over two lines instead. This way, the code is easier to read when more advanced queries are created.
 
-Using the `SELECT` clause again, query the data to return only the cities in the table.
+Using the `SELECT` clause again, query the data to return only the state names in the table.
 
- ```sql
- SELECT city
- FROM cities;
- ```
+```sql
+SELECT state_name
+FROM states;
+```
 
-* The first bonus question incorporates a `WHERE` clause, which further filters the data.
+* The first bonus question is very similar to the previous query executed in that it displays only the values of a single column.
+
+```sql
+SELECT state_abbreviation
+FROM states;
+```
+
+* The second bonus question incorporates a `WHERE` clause, which further filters the data.
 
 * The `WHERE` clause is used to search for specific data within a database. In this case, we are extracting only the records that meet the specified condition.
 
-* In the line `WHERE state = 'Arizona';` we are specifying Arizona in the state column.
+* In the line `WHERE population > 5000000;` we are filtering for records that have a value that is greater than 5000000 in the population column.
 
- ```sql
- SELECT city, state
- FROM cities
- WHERE state = 'Arizona';
- ```
+```sql
+SELECT *
+FROM states
+WHERE population > 5000000;
+```
 
-Demonstrate the solution to the second bonus question.
-
-* Note that the `WHERE` clause is highly customizable, such as with the use of the `<` operator.
-
- ```sql
- SELECT *
- FROM cities
- WHERE population < 100000;
- ```
+* Note that the `WHERE` clause is highly customizable, and can use several operators like `<` (less than), `>` (greater than), and `=` (equals to).
 
 Walk through the solution to the third and final bonus question.
 
 * Queries can be filtered even further with the `AND` clause. This clause allows users to specify more than one condition in their query.
 
- ```sql
- SELECT *
- FROM cities
- WHERE population < 100000
- AND state = 'California';
- ```
+```sql
+SELECT *
+FROM states
+WHERE population > 5000000
+AND state_property_tax_rate < 0.01;
+```
 
 Answer any questions before moving on.
 
