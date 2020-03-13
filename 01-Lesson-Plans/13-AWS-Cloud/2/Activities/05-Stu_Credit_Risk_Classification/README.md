@@ -27,3 +27,6 @@ Von-Melle-Park 5
 * Take a look at the [Amazon SageMaker Linear Learner Algorithm documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html) if you have any questions about how it works.
 
 * Once the model is deployed, you can predict the credit risk given an input set of attributes.
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

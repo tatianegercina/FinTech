@@ -590,6 +590,8 @@ Have students share their opinions with the class and bring up the following poi
 
 * Availability: Although there are SLAs in place, AWS (and any other cloud providers) can and have suffered outages at times, causing data unavailability.
 
+Answer any questions before moving on.
+
 ---
 
 ### 11. Students Do: Credit Risk Evaluation with Amazon SageMaker (20 min)
@@ -684,4 +686,4 @@ Answer any questions before finishing the class.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
