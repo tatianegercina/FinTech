@@ -451,10 +451,10 @@ WHERE customer_id = 6;
 
 * Duplicate data is also easier to remove with the use of a unique ID. With the following code, remove the duplicate data:
 
- ```sql
- DELETE FROM customer
- WHERE customer_id = 5;
- ```
+```sql
+DELETE FROM customer
+WHERE customer_id = 5;
+```
 
 * This does precisely what was desired: duplicate data is deleted, and original data is preserved.
 
@@ -592,32 +592,34 @@ In today's class, each of the operations has been in use. Students have:
 
 * Created data in a table with the `INSERT` statement.
 
- ```sql
- INSERT INTO people (name, has_pet, pet_type, pet_name, pet_age)
- VALUES ('Ahmed', true, 'rock', 'Rockington', 100);
- ```
+```sql
+INSERT INTO customer
+(first_name, last_name, gender, age, address, city, state, zip_code)
+VALUES
+('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709);
+```
 
 * Read data with the use of `SELECT`.
 
- ```sql
- SELECT *
- FROM people;
- ```
+```sql
+SELECT *
+FROM customer;
+```
 
 * Updated a table's data using `UPDATE`.
 
- ```sql
- UPDATE people
- SET has_pet = true, pet_name = 'Rocket', pet_age = 8
- WHERE id = 6;
- ```
+```sql
+UPDATE customer
+SET first_name = 'Brian', age = 20
+WHERE customer_id = 6;
+```
 
 * Deleted data using `DELETE`.
 
- ```sql
- DELETE FROM people
- WHERE id = 3;
- ```
+```sql
+DELETE FROM customer
+WHERE customer_id = 5;
+```
 
 Introduce the class to an additional method of reading the data: wildcards.
 
