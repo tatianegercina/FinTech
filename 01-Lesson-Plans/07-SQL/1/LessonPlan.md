@@ -526,7 +526,7 @@ In the Options tab, complete the following steps:
 
 * Slide the Import/Export tab to Import.
 
-* Click on the dot menu to navigate to the `bird_song.csv` file on your computer.
+* Click on the dot menu to navigate to the `mortgage.csv` file on your computer.
 
 * Slide the Header tab to Yes.
 
@@ -641,9 +641,7 @@ In this activity, students will utilize CRUD operations (Create, Read, Update, D
 
 **Files:**
 
-* [schema.sql](Activities/08-Stu_CRUD/Resources/schema.sql)
-
-* [GlobalFirePower.csv](Activities/08-Stu_CRUD/Resources/GlobalFirePower.csv)
+* [sales.csv](Activities/08-Stu_CRUD/Resources/sales.csv)
 
 **Instructions:** [README.md](Activities/08-Stu_CRUD/README.md)
 
