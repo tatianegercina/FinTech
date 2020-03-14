@@ -8,6 +8,10 @@ In this activity, you will be utilizing CRUD operations (Create, Read, Update, D
 
 * Create a table `sales` and define the correct column names and data types according to the `sales.csv`. Import the data from `sales.csv` using the pgAdmin Import/Export tool.
 
+* 
+
+
+
 * Find the rows that have a `ReservePersonnel` of 0 and remove these rows from the dataset.
 
 * Every country in the world at least deserves one `FighterAircraft`—it only seems fair. Let's add one to each nation that has none.

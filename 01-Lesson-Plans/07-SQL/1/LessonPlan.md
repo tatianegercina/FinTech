@@ -655,9 +655,9 @@ This activity will require students to do some research. Links are provided to h
 
 * [schema.sql](Activities/08-Stu_CRUD/Resources/schema.sql)
 
-* [query.sql](Activities/08-Stu_CRUD/Solved/query.sql)
+* [seed.sql](Activities/08-Stu_CRUD/Resources/seed.sql)
 
-* [GlobalFirePower.csv](Activities/08-Stu_CRUD/Resources/GlobalFirePower.csv)
+* [query.sql](Activities/08-Stu_CRUD/Solved/query.sql)
 
 Open a query tool in `MiscellaneousDB` and copy and paste the code from schema.sql to create a new table named `firepower`. Go over the following:
 
