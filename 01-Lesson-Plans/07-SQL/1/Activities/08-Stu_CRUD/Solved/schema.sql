@@ -1,23 +1,11 @@
 -- Drop table if exists
-DROP TABLE firepower;
+DROP TABLE sales;
 
 -- Create new table to import data
-CREATE TABLE firepower (
-	country VARCHAR,
-	ISO3 VARCHAR,
-	rank INT,
-	TotalPopulation INT,
-	ManpowerAvailable INT,
-	TotalMilitaryPersonnel INT,
-	ActivePersonnel INT,
-	ReservePersonnel INT,
-	TotalAircraftStrength INT,
-	FighterAircraft INT,
-	AttackAircraft INT,
-	TotalHelicopterStrength INT,
-	AttackHelicopters INT
+CREATE TABLE sales (
+	sales_id SERIAL PRIMARY KEY,
+	payment_id INT,
+	mortgage_id INT,
+	loan_amount INT,
+	loan_date DATE
 );
-
--- Import data from firepower.csv
--- View the table to ensure all data has been imported correctly
-SELECT * FROM firepower;
