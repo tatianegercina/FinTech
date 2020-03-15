@@ -6,7 +6,7 @@ In this activity, you will train and deploy a _binary classification_ model usin
 
 The _German Credit Risk Dataset_, classifies people described by a set of attributes as good or bad credit risks. Due to the complex encoding of the original dataset, we will be using a *curated* version of the dataset from Kaggle.
 
-<https://www.kaggle.com/kabure/german-credit-data-with-risk/downloads/german_credit_data.csv/1>
+<https://www.kaggle.com/uciml/german-credit>
 
 __Original source:__
 Professor Dr. Hans Hofmann

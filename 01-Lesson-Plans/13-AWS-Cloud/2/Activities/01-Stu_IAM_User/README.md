@@ -77,7 +77,7 @@ Congratulations! You have created your own admin user.
 
 You can use this same process to create more groups and users and to give your users access to your AWS account resources. To learn about using policies that restrict user permissions to specific AWS resources, see [Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html) and [Example IAM Identity-Based Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_examples.html). To add additional users to the group after it is created, see [Adding and Removing Users in an IAM Group](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups_manage_add-remove-users.html).
 
-[1]: https://docs.aws.amazon.com/best-practices.html#lock-away-credentials
+[1]: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 [2]: https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html
 
 ---
