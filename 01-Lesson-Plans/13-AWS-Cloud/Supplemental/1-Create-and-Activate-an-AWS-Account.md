@@ -65,6 +65,20 @@ On the **Payment Information** page, enter the information about your payment me
 On the **Select a Support Plan** page, choose one of the available Support plans. For this class we don't need any support, we'll go the the `Basic Support`.
 For a description of the available Support plans and their benefits, see [Compare AWS Support Plans][3].
 
+## Set the Free Tier Usage Alerts
+
+To avoid undesired charges to your credit card, you can turn on an AWS configuration option to receive an alert via e-mail when your AWS free tier service is about to exceed the usage limits.
+
+Follow the next steps to turn on this feature.
+
+1. In the AWS Management Console home page type `billing` in the search box and choose the "Billing" option from the list.
+
+    ![AWS Billing](Images/aws-billing.png)
+
+2. In the left menu of the "Billing" section, choose "Billing preferences," next enable the "Receive Free Tier Usage Alerts" option and type the e-mail address where you want to receive the usage alerts. Click on the "Save preferences" button to finish.
+
+    ![Enable free tier usage alerts](Images/set-free-tier-usage-alerts.png)
+
 ## Wait for account activation
 
 After you choose a Support plan, a confirmation page indicates that your account is being activated. Accounts are usually activated within a few minutes, but the process might take up to 24 hours.
@@ -99,3 +113,6 @@ Account activation can sometimes be delayed. If the process takes more than 24 h
 [5]: https://aws.amazon.com/support
 
 Source: <https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/>
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

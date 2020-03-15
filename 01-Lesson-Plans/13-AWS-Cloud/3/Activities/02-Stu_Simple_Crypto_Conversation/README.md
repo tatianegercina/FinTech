@@ -20,7 +20,7 @@ You decided to go beyond the typical online survey or the old-fashioned phone ca
 
 ### Create and configure an intent
 
-2. Add a new intent and name it `convertUSD`.
+2. Add a new intent and name it `ConvertUSD`.
 
 3. Define some sample utterances, start by adding the following:
 
@@ -58,4 +58,4 @@ In the end, your intent's configuration should look like this.
 ![Sample bot test](Images/crypto_converter_1.gif)
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
