@@ -1,29 +1,21 @@
--- Add primary key
-ALTER TABLE firepower
-ADD COLUMN id SERIAL PRIMARY KEY;
+SELECT *
+FROM sales;
 
--- Delete and update data
-DELETE FROM firepower
-WHERE ReservePersonnel = 0;
+SELECT *
+FROM sales
+WHERE loan_amount < 300000;
 
-UPDATE firepower
-SET FighterAircraft = 1
-WHERE FighterAircraft = 0;
+SELECT AVG(loan_amount)
+FROM sales;
 
-UPDATE firepower
-SET TotalAircraftStrength = TotalAircraftStrength + 1
-WHERE FighterAircraft = 1;
-
--- Select averages and rename columns
-SELECT AVG(TotalMilitaryPersonnel) AS AvgTotMilPersonnel,
-	AVG(TotalAircraftStrength) AS AvgTotAircraftStrength,
-	AVG(TotalHelicopterStrength) AS AvgTotHelicopterStrength,
-	AVG(TotalPopulation) AS AvgTotalPopulation
-FROM firepower;
+UPDATE sales
+SET loan_amount = 423212
+WHERE sales_id = 33;
 
 -- Insert new data
-INSERT INTO firepower(Country, TotalPopulation, TotalMilitaryPersonnel, TotalAircraftStrength, TotalHelicopterStrength)
-VALUES ('GlobalLand', 60069024, 524358, 457, 183);
+INSERT INTO sales
+(sales_id, payment_id, mortgage_id, loan_amount, loan_date)
+VALUES (101, 101, 2, 734544, '10/5/1995');
 
--- View table
-SELECT * FROM firepower;
+DELETE FROM sales
+WHERE sales_id = 72;

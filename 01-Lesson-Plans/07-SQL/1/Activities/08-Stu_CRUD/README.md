@@ -8,21 +8,19 @@ In this activity, you will be utilizing CRUD operations (Create, Read, Update, D
 
 * Create a table `sales` and define the correct column names and data types according to the `sales.csv`. Import the data from `sales.csv` using the pgAdmin Import/Export tool.
 
-* 
+* Create a query to return the sales records with loan amounts less than $300,000.
 
+* Create a query to find the [average](https://www.w3schools.com/sql/sql_count_avg_sum.asp) loan amount of all the sales records.
 
+* Update the loan amount for sales_id 33 to $423,212.
 
-* Find the rows that have a `ReservePersonnel` of 0 and remove these rows from the dataset.
+* Insert a new record into the sales table where the sales_id is 101, the payment_id is 101, the mortgage_id is 2, the loan_amount is $734544, and the loan_date is `1995-10-05`.
 
-* Every country in the world at least deserves one `FighterAircraft`—it only seems fair. Let's add one to each nation that has none.
-
-* Oh no! By updating this column, the values within `TotalAircraftStrength` column are now off for those nations! We need to [add 1](https://stackoverflow.com/a/2680352) to the original number.
-
-* Find the [Averages](https://www.w3schools.com/sql/sql_count_avg_sum.asp) for `TotalMilitaryPersonnel`, `TotalAircraftStrength`, `TotalHelicopterStrength`, and `TotalPopulation`, and rename the columns with their designated average.
+* Delete the sales record where sales_id is 72.
 
 ### Bonus
 
-After creating your new nation and some parts of your military strategy, add the average values you calculated to the appropriate columns in the newly created rows. Update their values in any way you wish!
+`need to come back to this`
 
 ---
 
