@@ -30,7 +30,7 @@ By the end of class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 13.2 Slides]().
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 13.2 Slides](https://docs.google.com/presentation/d/17jc9_8FMijZJdai1JNnAQTO33HV-mhxFaMwI5FxRL8Q/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
 
@@ -44,7 +44,7 @@ By the end of class, students will be able to:
 
 Welcome class to day 2 of Unit 13, this should be a fun one since students will go more in-depth on using AWS to deploy machine learning models.
 
-Explain to students that we will use the free tier of AWS and the trial period for some of the services. Slack out the following resources to be used as a reference to understand how the free offer of AWS works.
+Explain to students that we will use the free tier of AWS and the trial period for some of the services. Slack out the following resources to be used as a reference to understand how the free tier of AWS works.
 
 * [AWS Free Tier Supplemental](../Supplemental/AWS-Free-Tier.md)
 
@@ -173,7 +173,7 @@ Login into your _AWS Management Console_ using your admin user, tell students th
 
 To create an Amazon S3 bucket, follow the next steps:
 
-* On the _Find Services_ search box, type's 3` and select the _S3_ service from the list.
+* On the _Find Services_ search box, type `S3` and select the _S3_ service from the list.
 
   ![Creating an Amazon SageMaker instance - step 1](Images/sagemaker-1.png)
 
@@ -263,7 +263,7 @@ Explain to students that it's possible to code a Jupyter notebook from scratch o
 
   ![Creating an Amazon SageMaker instance - step 19](Images/sagemaker-19.png)
 
-* Run all the cells on the notebook, comment to students that now this notebook is going to run on the AWS cloud using Amazon SageMaker.
+* Run all the cells in the notebook, comment to students that now this notebook is going to run on the AWS cloud using Amazon SageMaker.
 
   ![Creating an Amazon SageMaker instance - step 20](Images/sagemaker-20.gif)
 
@@ -370,7 +370,7 @@ Comment to students that once the data is loaded, the next step is to create the
   bucket = "sagemaker-bucket-name-here"
   ```
 
-* To identify the data files stores in Amazon S3, a prefix is defined.
+* To identify the data files stored in Amazon S3, a prefix is defined.
 
   ```python
   prefix = "austin-rainfall-regression"
@@ -454,7 +454,7 @@ Create the instance of the linear learner algorithm and highlight the following:
 * The linear learner hyperparameters are defined next, it's important to highlight that the `feature_dim` parameter should match with the number of predictors in `X`, in this case since we only have one predictor its value is `1`.
 
   ```python
-  # Define lineal learner hyperparameters
+  # Define linear learner hyperparameters
   linear.set_hyperparameters(
     feature_dim=1,
     mini_batch_size=100,
@@ -471,7 +471,7 @@ Create the instance of the linear learner algorithm and highlight the following:
   linear.fit({'train': s3_train_data, 'test': s3_test_data})
   ```
 
-Explain to students that this step might take a few minutes, and it will use resources from the AWS account. Typically, this time is not billed in the two months trial period. However, clarify to students that policies of AWS free and trial offers changes regularly, so they should always check the pricing pages for any service that they want to use. Bellow, a sample output is shown, you will notice that the output text is in blue.
+Explain to students that this step might take a few minutes, and it will use resources from the AWS account. Typically, this time is not billed in the two months trial period. However, clarify to students that policies of the AWS free and trial offer changes regularly, so they should always check the pricing pages for any service that they want to use. Below, a sample output is shown, you will notice that the output text is in blue.
 
 **Important Note:** Explain to students that this step may take up to 15 minutes since Amazon SageMaker is provisioning not only a Jupyter notebook but also a series of virtual machines (EC2 instances) to compute the model. If you are running out of time in this activity, open the solved version of the notebook and continue the demo by dry-walking through the code.
 
@@ -479,7 +479,7 @@ Explain to students that this step might take a few minutes, and it will use res
 
 Once the `lineal-learner` model was trained, tell students that it can be deployed to make predictions of the rainfall in Austin. Continue the demo and highlight the following:
 
-* In order to make predictions, the model should be deployed; a `ml.t2.medium` instant type is defined since this is the instance type we selected when we created the notebook that is part of the free tier offer.
+* In order to make predictions, the model should be deployed; a `ml.t2.medium` instance type is defined since this is the instance type we selected when we created the notebook that is part of the free tier offer.
 
   ```python
   linear_predictor = linear.deploy(initial_instance_count=1, instance_type="ml.t2.medium")
@@ -493,7 +493,7 @@ Once the `lineal-learner` model was trained, tell students that it can be deploy
   linear_predictor.deserializer = json_deserializer
   ```
 
-* To make predictions, we use the `predict()` method of the model. We will make predictions using the testing data; results are stored on the `y_predictions` array.
+* To make predictions, we use the `predict()` method of the model. We will make predictions using the testing data; results are stored in the `y_predictions` array.
 
   ```python
   result = linear_predictor.predict(X_test)
@@ -599,11 +599,11 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to delete their Amazon SageMaker notebook instance, so that no billing charges are incurred for it after class.
 
-Open the Amazon SageMaker console, on the left pane menu, under the _Notebook_ section, click on _Notebook instances_.
+Open the Amazon SageMaker console then, on the left pane menu, under the _Notebook_ section, click on _Notebook instances_.
 
 ![Deleting Amazon SageMaker instance - 1](Images/deleting-sm-1.png)
 
-Select the `sm-test` notebook instance on the left circular dot, once selected, click on the right _Actions_ menu and select _Stop_.
+Select the `sm-test` notebook instance on the left by clicking the circular dot, once selected, click on the right _Actions_ menu and select _Stop_.
 
 ![Deleting Amazon SageMaker instance - 2](Images/deleting-sm-2.png)
 
@@ -633,9 +633,9 @@ Answer any questions before moving on.
 
 In this activity, students will delete all the AWS resources created in Today's class to avoid additional charges.
 
-Explain students, as it was mentioned before, the policies for the AWS free tier and trials continually changes. Hence, it's essential to remove any unnecessary resources created on AWS to avoid additional charges, especially Amazon SageMaker instances, since regardless they are stopped, AWS bills you for hosting the instances.
+Explain to students, as it was mentioned before, the policies for the AWS free tier and trials continually change. Hence, it's essential to remove any unnecessary resources created on AWS to avoid additional charges, especially Amazon SageMaker instances, since regardless when they are stopped, AWS bills you for hosting the instances.
 
-Collaborate with TAs, on assisting students in deleting all the AWS resources that students like to remove. Remember to students, that they can save a local copy of the Jupyter notebooks, by right-clicking on the notebook name and selecting the _Download_ option.
+Collaborate with TAs, on assisting students in deleting all the AWS resources that students need to remove. Remind students, that they can save a local copy of the Jupyter notebooks, by right-clicking on the notebook name and selecting the _Download_ option.
 
 ![Downloading a Jupyter notebook](Images/download-notebook-sm.png)
 
