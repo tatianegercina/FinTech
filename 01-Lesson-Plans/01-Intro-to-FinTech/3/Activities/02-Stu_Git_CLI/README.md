@@ -6,7 +6,7 @@ In this activity, you will clone your GitHub repo, create a folder structure, an
 
 Complete the following steps.
 
-  1. Before you can clone your repository from the command line, you will need to configure the command line to your username and email address.  To do this run the following two commands, substituting your own username and email:<br>
+  1. Before you can clone your repository from the command line, you will need to configure the command line to your GitHub username and email address.  To do this run the following two commands, substituting your own GitHub username and the email you used to set up GitHub:<br>
 `git config --global user.name "YOUR_USERNAME"`<br>
 `git config --global user.email "your_email_address@example.com"`
 
