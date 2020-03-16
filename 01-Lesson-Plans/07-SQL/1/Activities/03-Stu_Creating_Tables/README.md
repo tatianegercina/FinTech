@@ -1,4 +1,4 @@
-## Creating Tables
+# Creating Tables
 
 In this activity, you will use pgAdmin to recreate and query a table based on image provided to you.
 
@@ -34,4 +34,4 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

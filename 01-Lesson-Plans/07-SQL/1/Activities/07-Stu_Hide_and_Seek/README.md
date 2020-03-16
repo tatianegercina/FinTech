@@ -1,4 +1,4 @@
-## Customer Demographics
+# Customer Demographics
 
 In this activity, you will create a new table and import data from a CSV file.
 
@@ -20,4 +20,4 @@ In this activity, you will create a new table and import data from a CSV file.
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

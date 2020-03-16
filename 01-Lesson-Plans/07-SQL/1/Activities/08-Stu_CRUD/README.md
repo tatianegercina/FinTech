@@ -1,4 +1,4 @@
-## Using CRUD: Seek, Create, Update, and Destroy
+# Using CRUD: Seek, Create, Update, and Destroy
 
 In this activity, you will be utilizing CRUD operations (Create, Read, Update, Destroy) on the provided data.
 
@@ -24,4 +24,4 @@ In this activity, you will be utilizing CRUD operations (Create, Read, Update, D
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

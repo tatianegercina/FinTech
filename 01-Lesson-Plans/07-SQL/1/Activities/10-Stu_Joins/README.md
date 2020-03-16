@@ -1,4 +1,4 @@
-## Joining the NBA
+# Joining the NBA
 
 In this activity, you will be using joins to query mortgage information.
 
@@ -32,4 +32,4 @@ Perform an INNER JOIN on the `banks` table via the already joined `payments` tab
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
