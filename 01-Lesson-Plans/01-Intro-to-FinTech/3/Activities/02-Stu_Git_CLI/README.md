@@ -6,7 +6,11 @@ In this activity, you will clone your GitHub repo, create a folder structure, an
 
 Complete the following steps.
 
-  1. Navigate to the GitHub website.  Click on the "Clone or download" button, and then copy the repo link.
+  1. Before you can clone your repository from the command line, you will need to configure the command line to your username and email address.  To do this run the following two commands, substituting your own username and email:<br>
+`git config --global user.name "YOUR_USERNAME"`<br>
+`git config --global user.email "your_email_address@example.com"`
+
+  1. Next, navigate to the GitHub website.  Click on the "Clone or download" button, and then copy the repo link.
 
   1. Open the command line and run the command `git clone <repository link>` to clone the repository to your local file system.
 
