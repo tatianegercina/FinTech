@@ -679,9 +679,9 @@ In this activity, students are introduced to the concept of joins -- the combina
 
 **Files:**
 
-* [mortgage.csv](Activities/09-Ins_Joins/Resources/players.csv)
+* [mortgage.csv](Activities/09-Ins_Joins/Resources/mortgage.csv)
 
-* [sales.csv](Activities/09-Ins_Joins/Resources/players.csv)
+* [sales.csv](Activities/09-Ins_Joins/Resources/sales.csv)
 
 * [schema.sql](Activities/09-Ins_Joins/Solved/schema.sql)
 
@@ -693,37 +693,30 @@ Students may recall working with merges and joins to combine datasets during the
 
 Create two new tables in `MiscellaneousDB` in pgAdmin named `mortgage` and `sales`.
 
-* Copy the code from [query.sql](Activities/09-Ins_Joins/Solved/query.sql) to create the tables, and then import the corresponding data from `players.csv` and `matches.csv`.
+* Copy the code from [query.sql](Activities/09-Ins_Joins/Solved/query.sql) to create the tables, and then import the corresponding data from `mortgage.csv` and `sales.csv`.
 
 * Remember to refresh the database; newly created tables will not immediately appear.
 
-* Point out that both tables have matching values within the `player_id` column of the `players` table and the `loser_id` and `winner_id` columns of the `matches` table.
+* Point out that both tables have matching values within the `mortgage_id` column of the `mortgage` table and the `mortgage_id` of the `sales` table.
 
 * Because there are common values, it is possible to join these tables together. For example:
 
- ```sql
- INNER JOIN players ON
- players.player_id=matches.loser_id;
- ```
+```sql
+SELECT *
+FROM mortgage
+INNER JOIN sales ON mortgage.mortgage_id = sales.mortgage_id;
+```
 
 * From the [query.sql](Activities/09-Ins_Joins/Solved/query.sql) file, copy and paste the code performing an `inner join` on the two tables:
-
- ```sql
- SELECT players.first_name, players.last_name, players.hand, matches.loser_rank
- FROM matches
- INNER JOIN players ON
- players.player_id=matches.loser_id;
- ```
 
 **Note:** Some students may have advanced knowledge of SQL queries and use aliases in their solutions. Using aliases is not necessary for today's activities; they will be covered more comprehensively in the next class.
 
  ```sql
- -- Advanced INNER JOIN solution
- SELECT p.first_name, p.last_name, p.hand, m.loser_rank
- FROM matches AS m
- INNER JOIN players AS p ON
- p.player_id=m.loser_id;
- ```
+-- Advanced INNER JOIN solution
+SELECT a.*, b.*
+FROM mortgage as a
+INNER JOIN sales as b ON a.mortgage_id = b.mortgage_id;
+```
 
 Point out one significant difference between SQL joins and Python joins:
 
@@ -733,15 +726,15 @@ Point out one significant difference between SQL joins and Python joins:
 
 * There are five primary types of joins that can be used with PostgreSQL:
 
- * `INNER JOIN` returns records that have matching values in both tables.
+  * `INNER JOIN` returns records that have matching values in both tables.
 
- * `LEFT JOIN` returns all records from the left table and the matched records from the right table.
+  * `LEFT JOIN` returns all records from the left table and the matched records from the right table.
 
- * `RIGHT JOIN` returns all records from the right table and the matched records from the left table.
+  * `RIGHT JOIN` returns all records from the right table and the matched records from the left table.
 
- * `CROSS JOIN` returns records that match every row of the left table with every row of the right table. This type of join has the potential to make very large tables.
+  * `CROSS JOIN` returns records that match every row of the left table with every row of the right table. This type of join has the potential to make very large tables.
 
- * `FULL OUTER JOIN` places null values within the columns that do not match between the two tables after an inner join is performed.
+  * `FULL OUTER JOIN` places null values within the columns that do not match between the two tables after an inner join is performed.
 
 Slack out the link to this explanation of Postgres [joins](https://www.tutorialspoint.com/postgresql/postgresql_using_joins.htm) for students to study.
 
