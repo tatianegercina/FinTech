@@ -80,7 +80,9 @@ There are many different types of neural networks.  For purposes of this class, 
 <details>
 <summary>Perceptron</summary><br>
 
-The original neural network - the perceptron - is a single layer neural network created by Frank Rosenblatt in further developed 1969 by Marvin Minsky and Seymour Papert.  It is the most basic model of an artificial nueron, taking inputs, applying weights, calculating a weighted sum prediction.
+The original neural network - the perceptron - is a single layer neural network created by Frank Rosenblatt in further developed 1969 by Marvin Minsky and Seymour Papert.  It is the most basic model of an artificial nueron, taking inputs, applying weights, and calculating a weighted sum prediction.
+
+![perceptron](Images/harsh_perceptron.png)
 </details>
 
 <details>
