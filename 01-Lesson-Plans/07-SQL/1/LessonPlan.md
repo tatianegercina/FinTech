@@ -254,7 +254,7 @@ In this activity, students will use pgAdmin to recreate and query a table from a
 
 * [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql)
 
-Create a new database named `state_info` in pgAdmin. Then use the query tool to copy and paste, or live code, the solution from [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql).
+Create a new database named `state_info` in pgAdmin. Then use the the schema.sql and seed.sql files to create and populate the `states` table. Use the query.sql file to walk through the correct queries.
 
 * To create a new table, specify the data type for each column.
 
@@ -659,9 +659,9 @@ This activity will require students to do some research. Links are provided to h
 
 * [query.sql](Activities/08-Stu_CRUD/Solved/query.sql)
 
-Open a query tool in `MiscellaneousDB` and copy and paste the code from schema.sql to create a new table named `firepower`. Go over the following:
+Open a query tool in `MiscellaneousDB` and copy and paste the code from schema.sql to create a new table named `sales`. Go over the following:
 
-* Refresh the table list, and then import the data from `GlobalFirePower.csv` into the new table.
+* Refresh the table list, and then import the data from `sales.csv` into the new table.
 
 * First, alter the table to add an `id`.
 
@@ -746,11 +746,9 @@ In this activity, students will be using joins to query NBA player seasonal stat
 
 **Files:**
 
-* [Players.csv](Activities/10-Stu_Joins/Resources/Players.csv)
+* [sales.csv](Activities/09-Ins_Joins/Resources/sales.csv)
 
-* [Seasons_Stats.csv](Activities/10-Stu_Joins/Resources/Seasons_Stats.csv)
-
-* [schema.sql](Activities/10-Stu_Joins/Resources/schema.sql)
+* [payments.csv](Activities/09-Ins_Joins/Resources/payments.csv)
 
 **Instructions:** [README.md](Activities/10-Stu_Joins/README.md)
 
@@ -758,15 +756,15 @@ In this activity, students will be using joins to query NBA player seasonal stat
 
 **Files:**
 
-* [sales.csv](Activities/09-Ins_Joins/Resources/sales.csv)
+* [schema.sql](Activities/10-Stu_Joins/Resources/schema.sql)
 
-* [payments.csv](Activities/09-Ins_Joins/Resources/payments.csv)
+* [seed.sql](Activities/09-Ins_Joins/Resources/payments.csv)
 
-* [banks.csv](Activities/09-Ins_Joins/Resources/banks.csv)
+* [query.sql](Activities/10-Stu_Joins/Solved/query.sql)
 
-Using [schema.sql](Activities/10-Stu_Joins/Resources/schema.sql) and the query tool, create two new tables named `players` and `seasons_stats` using the data in `Players.csv` and `Seasons_Stats.csv`.
+Using the schema.sql file and the query tool, create two new tables named `players` and `seasons_stats` using the data in `Players.csv` and `Seasons_Stats.csv`.
 
-Open [query.sql](Activities/10-Stu_Joins/Solved/query.sql) and copy the code. Then open a new query tool and paste the solution into the editor. Review the solution, explaining the following:
+Open query.sql and copy the code. Then open a new query tool and paste the solution into the editor. Review the solution, explaining the following:
 
 * Since the selected data comes from two different tables, the naming convention is `table_name.column_name`.
 
@@ -777,7 +775,7 @@ Open [query.sql](Activities/10-Stu_Joins/Solved/query.sql) and copy the code. Th
 ```sql
 select *
 from sales
-INNER JOIN payments ON sales.payment_id = payments.payment_id 
+INNER JOIN payments ON sales.payment_id = payments.payment_id
 ```
 
 Answer any questions before ending the class.
