@@ -12,7 +12,7 @@
 
 * A great FAQ for AWS IAM Resources is located [here.](https://aws.amazon.com/iam/faqs/)
 
-* For an easy to understand Sagemaker Deep Dive video series, click [here.](https://www.youtube.com/playlist?list=PLhr1KZpdzukcOr_6j_zmSrvYnLUtgqsZz)
+* For an easy to understand SageMaker Deep Dive video series, click [here.](https://www.youtube.com/playlist?list=PLhr1KZpdzukcOr_6j_zmSrvYnLUtgqsZz)
 
 * [This](https://docs.aws.amazon.com/lex/latest/dg/examples.html) guide from AWS is a handy reference for Lex bot deployments.
 
@@ -25,8 +25,6 @@
 * [Creating and Activating an AWS Account](1-Create-and-Activate-an-AWS-Account.md)
 
 * [AWS Free Tier Info](AWS-Free-Tier.md)
-
-* [Deploying Lex bots to Slack](Deploying-Lex-Bot-to-Slack.md)
 
 * [Deloitte Chat Bot Guide](deloitte-nl-fsi-chatbots-adopting-the-power-of-conversational-ux.pdf)
 
