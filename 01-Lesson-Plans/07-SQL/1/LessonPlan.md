@@ -254,18 +254,18 @@ In this activity, students will use pgAdmin to recreate and query a table from a
 
 * [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql)
 
-Create a new database named `state_info` in pgAdmin. Then use the the schema.sql and seed.sql files to create and populate the `states` table. Use the query.sql file to walk through the correct queries.
+Create a new database named `first_db` in pgAdmin. Then use the the schema.sql and seed.sql files to create and populate the `states` table. Use the query.sql file to walk through the correct queries.
 
 * To create a new table, specify the data type for each column.
 
- ```sql
-CREATE TABLE states (
-  state_name VARCHAR(50),
-  state_abbreviation CHAR(2),
-  population INT,
-  state_property_tax_rate FLOAT
-);
- ```
+  ```sql
+  CREATE TABLE states (
+    state_name VARCHAR(50),
+    state_abbreviation CHAR(2),
+    population INT,
+    state_property_tax_rate FLOAT
+  );
+  ```
 
 * Insert multiple rows of data into the new table.
 
@@ -289,26 +289,26 @@ VALUES
 
 * Create a query to view the data using the `SELECT` clause.
 
-```sql
-SELECT *
-FROM states;
-```
+  ```sql
+  SELECT *
+  FROM states;
+  ```
 
 * Note the syntax here. Even though the code can fit on a single line, it's good practice to split it up over two lines instead. This way, the code is easier to read when more advanced queries are created.
 
 Using the `SELECT` clause again, query the data to return only the state names in the table.
 
-```sql
-SELECT state_name
-FROM states;
-```
+  ```sql
+  SELECT state_name
+  FROM states;
+  ```
 
 * The first bonus question is very similar to the previous query executed in that it displays only the values of a single column.
 
-```sql
-SELECT state_abbreviation
-FROM states;
-```
+  ```sql
+  SELECT state_abbreviation
+  FROM states;
+  ```
 
 * The second bonus question incorporates a `WHERE` clause, which further filters the data.
 
