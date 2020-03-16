@@ -94,7 +94,7 @@ Begin by verifying that everyone has successfully installed pgAdmin and PostgreS
 
 * Open pgAdmin in a new browser window and ensure that everyone is able to follow along and view their new server in the browser.
 
- ![browser-view.png](Images/browser-view.png)
+  ![browser-view.png](Images/browser-view.png)
 
 Walk the class through the steps to create a database using pgAdmin.
 
@@ -102,13 +102,13 @@ Walk the class through the steps to create a database using pgAdmin.
 
 * From the menu, select Create, and then select Database to create a new database.
 
- ![create_database.png](Images/create_database.png)
+  ![create_database.png](Images/create_database.png)
 
-* Enter "mortgage_db" as the database name. Make sure the owner is set as the default Postgres, and then click Save.
+* Enter "example_db" as the database name. Make sure the owner is set as the default Postgres, and then click Save.
 
- ![mortgage_db.png](Images/mortgage_db.png)
+  ![mortgage_db.png](Images/mortgage_db.png)
 
-At this point, show students that there is a new database listed in the left-hand menu. Explain that the new database, `mortgage_db`, is not yet connected to the server. Simply clicking on the database will create a connection to Postgres.
+At this point, show students that there is a new database listed in the left-hand menu. Explain that the new database, `example_db`, is not yet connected to the server. Simply clicking on the database will create a connection to Postgres.
 
  ![new_db.png](Images/new_db.png)
 
