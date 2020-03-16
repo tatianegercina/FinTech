@@ -106,7 +106,7 @@ Walk the class through the steps to create a database using pgAdmin.
 
 * Enter "example_db" as the database name. Make sure the owner is set as the default Postgres, and then click Save.
 
-  ![mortgage_db.png](Images/mortgage_db.png)
+  ![example_db.png](Images/example_db.png)
 
 At this point, show students that there is a new database listed in the left-hand menu. Explain that the new database, `example_db`, is not yet connected to the server. Simply clicking on the database will create a connection to Postgres.
 
