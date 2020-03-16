@@ -120,7 +120,7 @@ In this activity, the instructor walks students through the process of creating 
 
 Now that there is a database on the server, it's time to dig into the real meat of SQL and start creating tables within the new database!
 
-From the left-hand menu in pgAdmin, right-click "mortgage_db" and select Query Tool.
+From the left-hand menu in pgAdmin, right-click "example_db" and select Query Tool.
 
 **Note:** You can also select Query Tool from the Tools drop-down menu at the top of the screen. (See the second screenshot below.)
 
