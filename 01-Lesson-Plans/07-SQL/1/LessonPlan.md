@@ -316,11 +316,11 @@ Using the `SELECT` clause again, query the data to return only the state names i
 
 * In the line `WHERE population > 5000000;` we are filtering for records that have a value that is greater than 5000000 in the population column.
 
-```sql
-SELECT *
-FROM states
-WHERE population > 5000000;
-```
+  ```sql
+  SELECT *
+  FROM states
+  WHERE population > 5000000;
+  ```
 
 * Note that the `WHERE` clause is highly customizable, and can use several operators like `<` (less than), `>` (greater than), and `=` (equals to).
 
@@ -328,12 +328,12 @@ Walk through the solution to the third and final bonus question.
 
 * Queries can be filtered even further with the `AND` clause. This clause allows users to specify more than one condition in their query.
 
-```sql
-SELECT *
-FROM states
-WHERE population > 5000000
-AND state_property_tax_rate < 0.01;
-```
+  ```sql
+  SELECT *
+  FROM states
+  WHERE population > 5000000
+  AND state_property_tax_rate < 0.01;
+  ```
 
 Answer any questions before moving on.
 
