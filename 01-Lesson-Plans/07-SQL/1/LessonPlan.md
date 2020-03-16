@@ -758,11 +758,11 @@ In this activity, students will be using joins to query NBA player seasonal stat
 
 **Files:**
 
-* [customer.csv](Activities/09-Ins_Joins/Resources/mortgage.csv)
-
 * [sales.csv](Activities/09-Ins_Joins/Resources/sales.csv)
 
 * [payments.csv](Activities/09-Ins_Joins/Resources/payments.csv)
+
+* [banks.csv](Activities/09-Ins_Joins/Resources/banks.csv)
 
 Using [schema.sql](Activities/10-Stu_Joins/Resources/schema.sql) and the query tool, create two new tables named `players` and `seasons_stats` using the data in `Players.csv` and `Seasons_Stats.csv`.
 
@@ -774,19 +774,11 @@ Open [query.sql](Activities/10-Stu_Joins/Solved/query.sql) and copy the code. Th
 
 * Finally, determine the key both tables will join on. For example, to join the two tables by using the `id` and an `INNER JOIN`, select the data columns to be viewed from both tables, and then specify which columns the tables will be connected by.
 
- ```sql
- SELECT players.id,
- players.player,
- players.height,
- players.weight,
- players.college,
- players.born,
- seasons_stats.position,
- seasons_stats.tm
- FROM players
- INNER JOIN seasons_stats ON
- players.id = seasons_stats.player_id;
- ```
+```sql
+select *
+from sales
+INNER JOIN payments ON sales.payment_id = payments.payment_id 
+```
 
 Answer any questions before ending the class.
 
