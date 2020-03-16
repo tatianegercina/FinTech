@@ -1,24 +1,34 @@
 ## Joining the NBA
 
-In this activity, you will be using joins to query NBA player seasonal statistics.
+In this activity, you will be using joins to query mortgage information.
 
 ### Instructions
 
-1. Create a new database named `NBA_DB` and create two new tables with pgAdmin named `players` and `seasons_stats`.
+1. Create a new database named `lending_db`.
 
-2. Copy the code from `schema.sql`  to create the tables, and then import the corresponding data from `Players.csv` and `Seasons_Stats.csv`.
+2. Use the `schema.sql` and the pgAdmin Import/Export tool to create the following tables (if not already present):
+
+    * [mortgage.csv](Resources/mortgage.csv)
+
+    * [sales.csv](Resources/sales.csv)
+
+    * [payments.csv](Resources/payments.csv)
 
     **Note:** Remember to refresh the database; newly created tables will not immediately appear.
 
-3. Perform joins that will generate the following outputs:
+3. Perform the following JOINs between the sales and payments table via the common `payment_id`.
 
-  Basic Information Table:
+    * INNER JOIN
 
-![Basic Info](Images/basic_info.png)
+    * LEFT JOIN
 
-  Percent Stats:
+    * RIGHT JOIN
 
-![Percent Stats](Images/percent_stats.png)
+    * FULL OUTER JOIN
+
+## Bonus
+
+Perform an INNER JOIN on the `banks` table via the already joined `payments` table to find the sales transactions connected to Wells Fargo bank accounts.
 
 ---
 

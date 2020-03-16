@@ -113,7 +113,9 @@ VALUES
     (99,2,377724,'2015-03-28'),
     (100,4,187826,'2018-05-28');
 
-INSERT INTO "payment" VALUES
+INSERT INTO payments 
+(bank_number, bank_routing_number, customer_id)
+VALUES
     (9269877403,905192010,1),
     (82888733522,629873495,2),
     (20862689216,905192010,3),

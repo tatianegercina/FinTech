@@ -14,7 +14,7 @@ CREATE TABLE sales (
   loan_date DATE
 );
 
-CREATE TABLE payemnts (
+CREATE TABLE payments (
   payment_id SERIAL PRIMARY KEY,
   bank_number BIGINT,
   bank_routing_number BIGINT,
