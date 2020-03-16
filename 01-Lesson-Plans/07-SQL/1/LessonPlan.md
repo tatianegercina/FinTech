@@ -756,7 +756,13 @@ In this activity, students will be using joins to query NBA player seasonal stat
 
 ### 19. Instructor Do: Review Joining the NBA (5 min)
 
-**File:** [query.sql](Activities/10-Stu_Joins/Solved/query.sql)
+**Files:**
+
+* [customer.csv](Activities/09-Ins_Joins/Resources/mortgage.csv)
+
+* [sales.csv](Activities/09-Ins_Joins/Resources/sales.csv)
+
+* [payments.csv](Activities/09-Ins_Joins/Resources/payments.csv)
 
 Using [schema.sql](Activities/10-Stu_Joins/Resources/schema.sql) and the query tool, create two new tables named `players` and `seasons_stats` using the data in `Players.csv` and `Seasons_Stats.csv`.
 
