@@ -679,15 +679,19 @@ In this activity, students are introduced to the concept of joins -- the combina
 
 **Files:**
 
+* [mortgage.csv](Activities/09-Ins_Joins/Resources/players.csv)
+
+* [sales.csv](Activities/09-Ins_Joins/Resources/players.csv)
+
+* [schema.sql](Activities/09-Ins_Joins/Solved/schema.sql)
+
+* [seed.sql](Activities/09-Ins_Joins/Solved/seed.sql)
+
 * [query.sql](Activities/09-Ins_Joins/Solved/query.sql)
-
-* [players.csv](Activities/09-Ins_Joins/Resources/players.csv)
-
-* [matches.csv](Activities/09-Ins_Joins/Resources/matches.csv)
 
 Students may recall working with merges and joins to combine datasets during the Pandas unit. While SQL is a vastly different language than Python, it also includes the functionality to merge tables.
 
-Create two new tables in `MiscellaneousDB` in pgAdmin named `players` and `matches`.
+Create two new tables in `MiscellaneousDB` in pgAdmin named `mortgage` and `sales`.
 
 * Copy the code from [query.sql](Activities/09-Ins_Joins/Solved/query.sql) to create the tables, and then import the corresponding data from `players.csv` and `matches.csv`.
 
