@@ -110,7 +110,7 @@ Walk the class through the steps to create a database using pgAdmin.
 
 At this point, show students that there is a new database listed in the left-hand menu. Explain that the new database, `example_db`, is not yet connected to the server. Simply clicking on the database will create a connection to Postgres.
 
- ![new_db.png](Images/new_db.png)
+![new_db.png](Images/new_db.png)
 
 Answer any questions before moving on.
 
@@ -124,9 +124,9 @@ From the left-hand menu in pgAdmin, right-click "example_db" and select Query To
 
 **Note:** You can also select Query Tool from the Tools drop-down menu at the top of the screen. (See the second screenshot below.)
 
- ![query_tool.png](Images/query_tool.png)
+![query_tool.png](Images/query_tool.png)
 
- ![tools_dropdown.png](Images/tool_dropdown.png)
+![tools_dropdown.png](Images/tool_dropdown.png)
 
 Explain to students that this is how to access the code editor.
 
@@ -181,7 +181,7 @@ Show the class an alternative method:
 
 * Highlight the lines of code to run, and then click the lightning bolt icon to run only the highlighted selection. This method of running SQL code is preferable to deleting the previous code.
 
- ![Select.png](Images/Select.png)
+  ![Select.png](Images/Select.png)
 
 * The structure of a table can be visualized using `SELECT * FROM <table name>;`.
 
