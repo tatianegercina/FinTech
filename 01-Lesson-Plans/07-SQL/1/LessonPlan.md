@@ -254,7 +254,7 @@ In this activity, students will use pgAdmin to recreate and query a table from a
 
 * [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql)
 
-Create a new database named `first_db` in pgAdmin. Then use the the schema.sql and seed.sql files to create and populate the `states` table. Use the query.sql file to walk through the correct queries.
+Create a new database named `state_info` in pgAdmin. Then use the the schema.sql and seed.sql files to create and populate the `states` table. Use the query.sql file to walk through the correct queries.
 
 * To create a new table, specify the data type for each column.
 
@@ -349,7 +349,7 @@ In this activity, students are introduced to the concept of duplicate and unique
 
 * [query.sql](Activities/04-Ins_Values_of_Uniques/Solved/query.sql)
 
-Using the `customer` table from the `mortgage_db` database, insert the duplicate data below into the table, and then visualize the table with the new information.
+Using the `customer` table from the `example_db` database, insert the duplicate data below into the table, and then visualize the table with the new information.
 
  ```sql
 INSERT INTO customer
@@ -381,7 +381,7 @@ Remove the `customer` table by running the following line of code:
  DROP TABLE customer;
  ```
 
-Copy the following code from the `query.sql` file and paste it in the pgAdmin editor.
+Copy the following code from `schema.sql`, `seed.sql`, and `query.sql` file and paste it in the pgAdmin editor.
 
  ```sql
  -- Re-create the table "customer" within mortgage_db
@@ -431,30 +431,30 @@ Explain the following points:
 
 * To avoid issues with updating multiple rows, it's best to update by the customer ID. First, query by name to find the ID for the row we want to update.
 
- ```sql
- SELECT customer_id, first_name, last_name, age
- FROM customer
- WHERE first_name = 'Michael';
- ```
+  ```sql
+  SELECT customer_id, first_name, last_name, age
+  FROM customer
+  WHERE first_name = 'Michael';
+  ```
 
 * This will return all rows that contain the name Michael, including the `customer_id`, `first_name`, `last_name`, and `age` columns.
 
 * Next, we can select and update the `first_name` from Michael to Brian and the `age` from 24 to 20 based on the row's unique ID.
 
- ```sql
-UPDATE customer
-SET first_name = 'Brian', age = 20
-WHERE customer_id = 6;
- ```
+  ```sql
+  UPDATE customer
+  SET first_name = 'Brian', age = 20
+  WHERE customer_id = 6;
+  ```
 
 * Note that similar to a query, the `WHERE` statement is used to pinpoint the data we want to change. In this case, the `customer_id` column is used to select the unique row we want to affect.
 
 * Duplicate data is also easier to remove with the use of a unique ID. With the following code, remove the duplicate data:
 
-```sql
-DELETE FROM customer
-WHERE customer_id = 5;
-```
+  ```sql
+  DELETE FROM customer
+  WHERE customer_id = 5;
+  ```
 
 * This does precisely what was desired: duplicate data is deleted, and original data is preserved.
 
