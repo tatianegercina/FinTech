@@ -24,5 +24,6 @@
   "editor.tabSize": 2,
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": true,
-  "python.pythonPath": "/usr/local/opt/python@2/bin/python2.7"
+  "python.pythonPath": "/anaconda3/bin/python",
+  "files.autoSave": "onFocusChange"
 }

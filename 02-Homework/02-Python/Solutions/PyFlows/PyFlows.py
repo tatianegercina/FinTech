@@ -1,20 +1,20 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # coding: utf-8
 
-# # PyFlows
-#
+# PyFlows
+
 # In this activity you are going to import a file that contains a larger portfolio of loans.
-#
-# Once imported, the focus of your analysis will be to determine the amount of USD flows generated each month.
-#
-# Because, as investor who is passionate about microfinancing, you want to be able to turn these monthly cash in flows into additional loans.
-#
-# The first step in this activity will be to import CSV file containint the newest portfolio information.
 
-# In[ ]:
+# As investor who is passionate about microfinancing, you want to be able to turn these monthly cash in flows into additional loans. Accordingly, the focus of your analysis will be to determine the amount of USD flows generated each month.
 
+
+# Part 1 - Importing the CSV
+
+# The first step in this activity will be to import the CSV file containing the newest portfolio information.
 
 # Instructions
+# Utilizing the instructions from the curriculum content...
+
 
 # @TODO
 # Import the Path library and module as well as the csv library
@@ -27,17 +27,18 @@ import csv
 # Initial a loans list to be build off of the loans in the csv file.
 
 line_num = 0
-loans = []
+microfinance_loan_portfolio = []
 
 
 # @TODO
 # Create a variable and assign it the module and file location of the csv file downloaded for this activity.
 
-csvpath = Path('./Resources/mf_loans_csv.csv')
+csvpath = Path('./Resources/microfinance_loan_portfolio.csv')
 
 
-#@TODO
+# @TODO
 # Write the code that opens, reads, and prints the CSV file for review.
+
 
 with open(csvpath, 'r') as csvfile:
 
@@ -47,145 +48,161 @@ with open(csvpath, 'r') as csvfile:
     print(type(csvreader))
 
     header = next(csvreader)
-    line_num +=1
+    line_num += 1
     print(f'{header} <---HEADER')
 
     for row in csvreader:
 
         print(row)
-        loans.append(row)
+        microfinance_loan_portfolio.append(row)
 
-print('loans', loans)
+print(f"The imported microfinance loan portfolio looks like: {microfinance_loan_portfolio}")
 
-
- Loan Portfolio Format
-#
+# Loan Portfolio Format
 # You will notice that our loan portfolio is in a slightly different format now.
-#
-# In the markdown box that follows, highlight the biggest difference between the format of the loan portfolio in the previous activity and the one you will be working with in this Phase.
-#
 
-Loan Portfolio Format -  Answer
-#
-# - Now a list of lists, rather than a list of dictionaries.
-# - Key:Value pairs are gone; have to reference values by their index position.
-# - Numerical values are strings rather than numbers. They will have to be converted.
+# In a separate text file, highlight at least 3 differences between the format of the loan portfolio in the previous Phases and the one just imported.
 
-# ## USD Receipts by Month
-#
-# In goal of this activity is to automate the process of accessing the approximate amount of US dollars to be received as payments for each month of the loan cycle.
-#
-# Because we want to automate this process to work with any loan portoflio, it makes sense to build a function that
-#
-# The function should take in three arguments, the loan portfolio, the month in question and return the
-# US value of the loan payments.
-#
-# It would also make sense to utilize current fx rates for the three currencies so that the projected USD value is as current as possible.
-#
-#
+# ANSWERS - Loan Portfolio Format
+# Now a list of lists, rather than a list of dictionaries.
+# Key:Value pairs are gone; have to reference values by their index position.
+# Numerical values are strings rather than numbers. They will have to be converted.
 
-# In[ ]:
+print('--------------------')
+
+# Part 2 - USD Receipts by Month
+
+# The goal of this activity is to automate the process of accessing the US dollar amount to be received in payments for each month of the loan cycle.
+
+# Because this is a process that will be done repeatedly for different loan portfolios and different months, the activity requires building a function.
+
+# Given that the goal is to calculate the payments generated per portfolio per month, the function should take in two arguments: the loan portfolio and the number of the month in question (numbered 1 -> 12).
+
+# The function should return return the US dollar value of the loan payments for the specific month.
+
+# In this activity, current fx rates will be provided for the three currencies so the projected US dollar value is as accurate as possible.
 
 
 # Instructions
 
-# Fortunately, our loan portfolio has the period_payment value attached to each of the loans.
-# With that, our function will focus on sorting through the repayment interval and term_in_months values to
-# make out calculations.
+# Fortunately, the loan portfolio has the period_payment included as an element in each of the loans.
+# With that, the function can focus on sorting through the repayment interval and term_in_months values to make calculations.
 
-# You also want to be able to apply current fx rates to the payments, this will reqire a second level sort on
-# local_currency.
+# The function will require a second level sort on currency so that currency fx values can be applied to the calculations.
 
-# As always, attempt to pseudocode the solution before writing the code.
+# As with the prior Phases, attempt to pseudocode the solution before writing the code.
 
-# @TODO
 
-# Initialize the variables for the current fx rates for each of the currencies.
-    #HINT -  You will be able to access the current rates on Google.
-# rates on Yahoo.
-# Initialize the variable for the monthly USD inflow.
+# Use the following FX rates when processing calculations. These rates differ from the ones provied at the time the loan was issued.
 
-curr_fx_pkr = 157.15
-curr_fx_kes = 102.48
-curr_fx_inr = 74.06
-
+current_fx_rate_usdpkr = 157.15
+current_fx_rate_usdkes = 102.48
+current_fx_rate_usdinr = 74.06
 
 
 # @TODO
-
-# 1. Create the  monthly flows function as well as creating the function all. As mentioned, the function will
-# take in 2 parameters, the loan portfolio and the month of the flows you would like calculate.
+# Create a function called 'calculate_monthly_cash_flows' As mentioned, the function will take in 2 parameters, the loan portfolio and the month of the flows you would like calculate.
 
 
-def convert_flow(loan):
-    print('loan_cf', loan[7], loan[4])
-    fx_flow = 0
+def convert_foreign_cash_flow_to_usd(loan):
+    """Converts the foreign currency cash flow amount into a US dollar amount using the fx rate provided."""
 
-    if loan[4]  == 'pkr':
-        fx_flow = int(loan[7]) / curr_fx_pkr
-        #print('flow', fx_flow)
+    print('loan_cf', interval_repayment_amount, local_currency)
+    flow_converted_to_usd = 0
 
+    if local_currency == 'pkr':
+        flow_converted_to_usd = int(interval_repayment_amount) / current_fx_rate_usdpkr
+        #print('flow', flow_converted_to_usd)
 
-    if loan[4]  == 'kes':
-        fx_flow = int(loan[7]) / curr_fx_kes
-        #print('flow', fx_flow)
+    if local_currency == 'kes':
+        flow_converted_to_usd = int(interval_repayment_amount) / current_fx_rate_usdkes
+        #print('flow', flow_converted_to_usd)
 
-    if loan[4]  == 'inr':
-        fx_flow = int(loan[7]) / curr_fx_inr
-        #print('flow', fx_flow)
+    if local_currency == 'inr':
+        flow_converted_to_usd = int(interval_repayment_amount) / current_fx_rate_usdinr
+        #print('flow', flow_converted_to_usd)
 
-    return fx_flow
-
-
-def monthly_flows(portfolio, month):
-    #print(portfolio)
-    flow_total_usd = 0
+    return flow_converted_to_usd
 
 
-    for loan in portfolio:
+def calculate_monthly_cash_flows(loan_portfolio, month_of_cash_flow_calculation):
+    """Calculates the US dollar cash flows generated by a specified loan portfolio for the specified month."""
 
-        if loan[3] == 'monthly':
+    # print(portfolio)
 
-            if month <= int(loan[1]):
+    # @TODO
+    # Create a function-scoped variable to hold the usd total of the monthly flow.
+    monthly_cash_flow_total_usd = 0
 
-                flow = int(loan[7])
-                #print('flow-m', flow)
+    # @TODO
+    # Write the for loop that iterates through each loan in the portfolio.
+    for loan in loan_portfolio:
 
-                flow_usd = convert_flow(loan)
-                print('usd_m', flow_usd)
+        # @TODO
+        # Create descriptive variables for each of the index positions in the loan and assign them to the index position of the loan.
+
+        # HINT - Variables names should be based off of the CVS file HEADER information.
+
+        loan_value_usd = loan[0]
+        term_in_months = loan[1]
+        annual_interest_rate = loan[2]
+        repayment_interval = loan[3]
+        local_currency = loan[4]
+        fx_rate_at_loan_issue = loan[5]
+        loan_local_value = loan[6]
+        interval_repayment_amount = loan[7]
+
+        # @TODO
+        # Create the 3 conditional statements that sort the loans by repayment interval
+
+        if repayment_interval == 'monthly':
+
+            # @TODO
+            # Inside each repayment_inteval conditional statement, nest a second conditional that verifies if the month that you are calculating the flow for is less than or equal to the term_in_months of the portfolio.
+            # In other words, will the portfolio make a payment for the month in question.
+
+            if month_of_cash_flow_calculation <= int(term_in_months):
+
+                local_cash_flow = int(interval_repayment_amount)
+                #print('flow-m', local_cash_flow)
+
+                monthly_cash_flow_amount_in_usd = convert_foreign_cash_flow_to_usd(loan)
+                print('usd_m', monthly_cash_flow_amount_in_usd)
+
+        if repayment_interval == 'quarterly':
+
+            if month_of_cash_flow_calculation <= int(term_in_months) and month % 3 == 0:
+
+                local_cash_flow = int(interval_repayment_amount)
+                #print('flow-q', local_cash_flow)
+
+                monthly_cash_flow_amount_in_usd = convert_foreign_cash_flow_to_usd(loan)
+                print('usd_q', monthly_cash_flow_amount_in_usd)
+
+        if repayment_interval == 'bullet':
+
+            if month_of_cash_flow_calculation == int(term_in_months):
+
+                local_cash_flow = int(interval_repayment_amount)
+                #print('flow-b', local_cash_flow)
+
+                monthly_cash_flow_amount_in_usd = convert_foreign_cash_flow_to_usd(loan)
+                print('usd_b', monthly_cash_flow_amount_in_usd)
+
+        monthly_cash_flow_total_usd += monthly_cash_flow_amount_in_usd
+        print('ft-in', monthly_cash_flow_total_usd)
+
+    return monthly_cash_flow_total_usd
 
 
+# @TODO
+# Create the function call for the calculate_monthly_cash_flow function. Pass the microfinance load and the value of the month (1-12) for which you want to calculate the flows.
 
-        if loan[3] == 'quarterly':
+    # HINT - It might make sense to set the function call equal to a variable so it can be utilized. A suggestion for a variable name is total_amount_of_usd_for_month.
 
-            if month <= int(loan[1]) and month % 3 == 0:
+total_amount_of_usd_for_month = calculate_monthly_cash_flows(microfinance_loan_portfolio, 6)
 
-                flow = int(loan[7])
-                #print('flow-q', flow)
+# @TODO
+# Write the print statement that provides the US dollar value cash flows for the month. Be sure to round the value to 2 decimal places.
 
-                flow_usd = convert_flow(loan)
-                print('usd_q', flow_usd)
-
-
-
-        if loan[3] == 'bullet':
-
-            if month == int(loan[1]):
-
-                flow = int(loan[7])
-                #print('flow-b', flow)
-
-                flow_usd = convert_flow(loan)
-                print('usd_b', flow_usd)
-
-
-        flow_total_usd += flow_usd
-        print('ft-in', flow_total_usd)
-
-    return flow_total_usd
-
-flow_total = monthly_flows(loans, 6)
-print(f'The total USD flows for the month are ${round(flow_total, 2)}.')
-
-
-# In[ ]:
+print(f"The total USD flows for the month are ${total_amount_of_usd_for_month: .2f}.")
