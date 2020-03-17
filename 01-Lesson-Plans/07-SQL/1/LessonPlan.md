@@ -681,9 +681,9 @@ In this activity, students are introduced to the concept of joins -- the combina
 
 **Files:**
 
-* [mortgage.csv](Activities/09-Ins_Joins/Resources/mortgage.csv)
-
 * [sales.csv](Activities/09-Ins_Joins/Resources/sales.csv)
+
+* [mortgage.csv](Activities/09-Ins_Joins/Resources/mortgage.csv)
 
 * [schema.sql](Activities/09-Ins_Joins/Solved/schema.sql)
 
@@ -693,42 +693,56 @@ In this activity, students are introduced to the concept of joins -- the combina
 
 Students may recall working with merges and joins to combine datasets during the Pandas unit. While SQL is a vastly different language than Python, it also includes the functionality to merge tables.
 
-Create two new tables in `mortgage_db` in pgAdmin named `mortgage` and `sales`.
+Create two new tables in `mortgage_db` in pgAdmin named `sales` and `mortgage`.
 
-* Copy the code from [query.sql](Activities/09-Ins_Joins/Solved/query.sql) to create the tables, and then import the corresponding data from `mortgage.csv` and `sales.csv`.
+* Copy the code from [query.sql](Activities/09-Ins_Joins/Solved/query.sql) to create the tables, and then import the corresponding data from `sales.csv` and `mortgage.csv`.
 
 * Remember to refresh the database; newly created tables will not immediately appear.
 
-* Point out that both tables have matching values within the `mortgage_id` column of the `mortgage` table and the `mortgage_id` of the `sales` table. Because there are common values, it is possible to join these tables together.
+* Point out that both tables have matching values within the `mortgage_id` column of the `sales` table and the `mortgage_id` of the `mortgage` table. Because there are common values, it is possible to join these tables together.
 
 * From the [query.sql](Activities/09-Ins_Joins/Solved/query.sql) file, copy and paste the code performing an `inner join` on the two tables:
 
   ```sql
-  SELECT *
-  FROM mortgage
-  INNER JOIN sales ON mortgage.mortgage_id = sales.mortgage_id;
+  SELECT sales.sales_id,
+         sales.payment_id,
+         sales.mortgage_id,
+         sales.loan_amount,
+         sales.loan_date,
+         mortgage.mortgage_id,
+         mortgage.mortgage_name,
+         mortgage.mortgage_rate
+  FROM sales
+  INNER JOIN mortgage ON sales.mortgage_id = mortgage.mortgage_id;
   ```
 
 **Note:** Some students may have advanced knowledge of SQL queries and use aliases in their solutions. Using aliases is not necessary for today's activities; they will be covered more comprehensively in the next class.
 
   ```sql
   -- Advanced INNER JOIN solution
-  SELECT a.*, b.*
-  FROM mortgage as a
-  INNER JOIN sales as b ON a.mortgage_id = b.mortgage_id;
+  SELECT a.sales_id,
+         a.payment_id,
+         a.mortgage_id,
+         a.loan_amount,
+         a.loan_date,
+         b.mortgage_id,
+         b.mortgage_name,
+         b.mortgage_rate
+  FROM sales as a
+  INNER JOIN mortgage as b ON a.mortgage_id = b.mortgage_id;
   ```
 
 Point out one significant difference between SQL joins and Python joins:
 
 * In SQL joins, the columns that should be viewed after the join must be declared in the initial `SELECT` statement.
 
-  ![inner-join.png](Images/inner-join.png)
+  ![join-columns.png](Images/join-columns.png)
 
 * There are five primary types of joins that can be used with PostgreSQL:
 
   * `INNER JOIN` returns records that have matching values in both tables.
 
-    ![inner_join](Images/inner_join.png)
+    ![inner-join](Images/inner-join.png)
 
   * `LEFT JOIN` returns all records from the left table and the matched records from the right table.
 
