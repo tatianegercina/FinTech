@@ -54,7 +54,7 @@ To calculate the value of a $1,000 USD loan in PKR terms is:  $1,000 x 162.76 = 
 The same calculations apply to the currencies KES and INR.
 
 
-Armed with this new information, the challenge of evaluating our investment opportunity will take place in 4 phases:
+Armed with this new information, the challenge of evaluating our investment opportunity will take place in 3 phases:
 
 1. PyPortfolio - basic portofolio calculations
 2. PyPresentValue - evaluating the overall present value of the loan portfolio
