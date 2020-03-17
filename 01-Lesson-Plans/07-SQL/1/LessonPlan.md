@@ -786,7 +786,7 @@ In this activity, students will be using joins to query payment information and 
 
 * [query.sql](Activities/10-Stu_Joins/Solved/query.sql)
 
-Using the schema.sql file and the query tool, create two new tables named `players` and `seasons_stats` using the data in `Players.csv` and `Seasons_Stats.csv`.
+Using the schema.sql file and the query tool, create two new tables named `banks` and `payments` using the data in `banks.csv` and `payments.csv`.
 
 Open query.sql and copy the code. Then open a new query tool and paste the solution into the editor. Review the solution, explaining the following:
 
