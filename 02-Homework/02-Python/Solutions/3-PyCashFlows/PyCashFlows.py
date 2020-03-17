@@ -58,10 +58,13 @@ with open(csvpath, 'r') as csvfile:
 
  #print(f"The imported microfinance loan portfolio looks like: {microfinance_loan_portfolio}")
 
+
 # Loan Portfolio Format
+
 # You will notice that our loan portfolio is in a slightly different format now.
 
-# In a separate text file, highlight at least 3 differences between the format of the loan portfolio in the previous Phases and the one just imported.
+# In a separate text file, compare and contrast the data structure of the loan portfolio just imported and that utilized in the previous phases.
+
 
 # ANSWERS - Loan Portfolio Format
 # Now a list of lists, rather than a list of dictionaries.
@@ -241,15 +244,19 @@ print('--------------------')
 
 # Part 3 - Evaluation
 
-# In a separate text file, evaluate the premise that the current portfolio will yield enough monthly cash to help fund additional loans. The file will be a required part of the submission.
+# In a separate text file, answer the following.
 
-# Question 1:
+# Questions 1:
 
-# How do the functions written above help to automate the process of evaluating the monthly cash flow yield?
+# Evaluate the premise that the current portfolio will yield enough monthly cash to help fund additional loans. What might work for initiating a new loan cycle: monthly, quarterly annually?
+
+# Question 2:
+
+# How do the functions written above help to automate the process of evaluating the monthly cash flow yield of loan portfolios?
 
 
 # For this next question, you have just been given responsibility for identifying the monthly US dollar yield on at least 10 microfinance portfolios of various sizes. The boss wants to know the expected cash flow yield across the whole suite of loans for each month of the year.
 
-# Question 2.
+# Question 3:
 
-# What additional functions would you put in place to further help automate the process?
+# What additional functions could you put in place to further help automate the process?

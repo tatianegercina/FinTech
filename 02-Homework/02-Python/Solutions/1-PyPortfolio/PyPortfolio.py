@@ -67,7 +67,7 @@ print('--------------------')
 #   kes - Kenyan Schilling
 #   inr - Indian Rupee
 
-#  usd_fx_issue - This number represents the foreign exchange rate between USD and the local currency on the date that the loan was issued. All 3 of our foreign currencies are quoted in directly. To calculate the local value, or PKR value, of the first loan you would multiply:
+#  usd_fx_issue - This number represents the foreign exchange rate between USD and the local currency on the date that the loan was issued. All 3 of our foreign currencies are quoted indirectly, that is 1 usd to the amount of foreign currency. To calculate the local value, or PKR value, of the first loan you would multiply:
 
 # > local_value_usd * usd_fx_issue = loan_local_value ==> 1000 usd * 162.76 fx = 162,760 pkr
 

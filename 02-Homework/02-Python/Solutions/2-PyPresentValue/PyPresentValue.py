@@ -246,7 +246,7 @@ print(f'The USD value of the loan based on the discounted_cash_flow model is ${u
 print('--------------------')
 
 
-# Challenge - Part 3 - DCF Valuation of the Portfolio using Functions
+# Challenge - Part 3 - Discounted Cash Flow Valuation of the Portfolio using Functions
 
 # The goal of a function is to reformulate a code block that does a single task into a code block that can process an action repeatedly.
 
@@ -362,11 +362,14 @@ usd_discounted_cash_flow_total = discounted_cash_flow_valuation(microfinance_por
 print(f'Given a discount rate of .20, the fair value of this loan portfolio is ${usd_discounted_cash_flow_total: .2f}.')
 
 
-# Challenge - Part 3 - Evaluation
-
-# Given the number that resulted from your present value calculation, does the opportunity to invest in this
-# microfinance portfolio meet your criteria?
-
-# Do you think that any parameters should be changed when doing this analysis? Would that change the outcome of your investment decision?
+# Challenge - Part 4 - Evaluation
 
 # Please provide your thoughts and analysis in a separate text file that should also be included with your submission.
+
+# Questions 1:
+
+# Given the number that resulted from your present value calculation, does the opportunity to invest in this microfinance portfolio meet your criteria? Does the answer change when you take into account 12% operational costs? How about when a default rate of 7%?
+
+# Question 2:
+
+# What parameters would you change if re-doing this analysis? Would that change the outcome of your investment decision?
