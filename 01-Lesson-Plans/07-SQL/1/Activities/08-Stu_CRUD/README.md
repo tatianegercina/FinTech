@@ -2,7 +2,7 @@
 
 In this activity, you will be utilizing CRUD operations (Create, Read, Update, Destroy) on the provided data.
 
-### Instructions
+## Instructions
 
 * Create a new database named `sales_db` in pgAdmin.
 
@@ -18,7 +18,7 @@ In this activity, you will be utilizing CRUD operations (Create, Read, Update, D
 
 * Delete the sales record where sales_id is 72.
 
-### Bonus
+## Bonus
 
 `need to come back to this`
 

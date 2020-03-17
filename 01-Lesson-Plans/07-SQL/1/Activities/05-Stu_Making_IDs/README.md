@@ -2,7 +2,7 @@
 
 In this activity, you will recreate a table and then query, insert, and update data.
 
-### Instructions
+## Instructions
 
 1. Create a new database named `bank_db`.
 
@@ -18,7 +18,7 @@ In this activity, you will recreate a table and then query, insert, and update d
 
 6. Change the bank_routing_number for Wells Fargo to 1995826182.
 
-### Bonus
+## Bonus
 
 * Research how to add columns to a table. Then create a Boolean column named `mortgage_lending` that has a default value of `true`.
 
