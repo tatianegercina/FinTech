@@ -16,7 +16,7 @@ In this activity, you will be using joins to query payment information and assoc
 
 3. Perform the correct join for each of the following use cases using the common `bank_routing_number` from the `payments` and `banks` tables:
 
-**Note:** Assume the `payments` table is the designated "left" table and the `banks` table is the designated "right" table.
+    **Note:** Assume the `payments` table is the designated "left" table and the `banks` table is the designated "right" table.
 
     * Return all payment records with matching bank routing numbers in the banks table.
 
