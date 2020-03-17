@@ -659,7 +659,7 @@ This activity will require students to do some research. Links are provided to h
 
 * [query.sql](Activities/08-Stu_CRUD/Solved/query.sql)
 
-Open a query tool in `MiscellaneousDB` and copy and paste the code from schema.sql to create a new table named `sales`. Go over the following:
+Open a query tool in `sales_db` and copy and paste the code from schema.sql to create a new table named `sales`. Go over the following:
 
 * Refresh the table list, and then import the data from `sales.csv` into the new table.
 
@@ -691,23 +691,21 @@ In this activity, students are introduced to the concept of joins -- the combina
 
 Students may recall working with merges and joins to combine datasets during the Pandas unit. While SQL is a vastly different language than Python, it also includes the functionality to merge tables.
 
-Create two new tables in `MiscellaneousDB` in pgAdmin named `mortgage` and `sales`.
+Create two new tables in `mortgage_db` in pgAdmin named `mortgage` and `sales`.
 
 * Copy the code from [query.sql](Activities/09-Ins_Joins/Solved/query.sql) to create the tables, and then import the corresponding data from `mortgage.csv` and `sales.csv`.
 
 * Remember to refresh the database; newly created tables will not immediately appear.
 
-* Point out that both tables have matching values within the `mortgage_id` column of the `mortgage` table and the `mortgage_id` of the `sales` table.
+* Point out that both tables have matching values within the `mortgage_id` column of the `mortgage` table and the `mortgage_id` of the `sales` table. Because there are common values, it is possible to join these tables together.
 
-* Because there are common values, it is possible to join these tables together. For example:
+* From the [query.sql](Activities/09-Ins_Joins/Solved/query.sql) file, copy and paste the code performing an `inner join` on the two tables:
 
   ```sql
   SELECT *
   FROM mortgage
   INNER JOIN sales ON mortgage.mortgage_id = sales.mortgage_id;
   ```
-
-* From the [query.sql](Activities/09-Ins_Joins/Solved/query.sql) file, copy and paste the code performing an `inner join` on the two tables:
 
 **Note:** Some students may have advanced knowledge of SQL queries and use aliases in their solutions. Using aliases is not necessary for today's activities; they will be covered more comprehensively in the next class.
 
@@ -728,13 +726,23 @@ Point out one significant difference between SQL joins and Python joins:
 
   * `INNER JOIN` returns records that have matching values in both tables.
 
+    [inner_join](Images/inner_join.png)!
+
   * `LEFT JOIN` returns all records from the left table and the matched records from the right table.
+
+    [left-join](Images/left-join.png)
 
   * `RIGHT JOIN` returns all records from the right table and the matched records from the left table.
 
+    [right-join](Images/right-join.png)
+
   * `CROSS JOIN` returns records that match every row of the left table with every row of the right table. This type of join has the potential to make very large tables.
 
+    ![cross-join](Images/cross-join.png)
+
   * `FULL OUTER JOIN` places null values within the columns that do not match between the two tables after an inner join is performed.
+
+    ![full-outer-join](Images/full-outer-join.png)
 
 Slack out the link to this explanation of Postgres [joins](https://www.tutorialspoint.com/postgresql/postgresql_using_joins.htm) for students to study.
 
