@@ -25,11 +25,11 @@ CROSS JOIN banks;
 
 -- BONUS
 select a.payment_id,
-	   a.bank_number,
-	   a.bank_routing_number,
-	   b.bank_name,
-	   c.first_name,
-	   c.last_name
+	     a.bank_number,
+	     a.bank_routing_number,
+	     b.bank_name,
+	     c.first_name,
+	     c.last_name
 from payments as a
 INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number
 INNER JOIN customer as c ON a.customer_id = c.customer_id

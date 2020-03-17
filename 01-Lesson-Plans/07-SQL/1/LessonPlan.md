@@ -791,20 +791,66 @@ In this activity, students will be using joins to query payment information and 
 
 * [query.sql](Activities/10-Stu_Joins/Solved/query.sql)
 
-Using the schema.sql file and the query tool, create two new tables named `banks` and `payments` using the data in `banks.csv` and `payments.csv`.
+Using the schema.sql file and the query tool, create two new tables named `payments` and `banks` using the data in `payments.csv` and `banks.csv`.
 
-Open query.sql and copy the code. Then open a new query tool and paste the solution into the editor. Review the solution, explaining the following:
+Open the query.sql file and copy the code. Then open a new query tool and paste the solution into the editor. Review the solution, explaining the following:
 
-* Since the selected data comes from two different tables, the naming convention is `table_name.column_name`.
+* Since the selected data comes from two different tables, the naming convention is `table_name.column_name`, which is aliased as simply `a.column_name` and `b.column_name` in this case.
 
-* Next, determine which table to select from and which table to `INNER JOIN` with. Remember, the inner join only selects data that has matching values in both tables.
-
-* Finally, determine the key both tables will join on. For example, to join the two tables by using the `id` and an `INNER JOIN`, select the data columns to be viewed from both tables, and then specify which columns the tables will be connected by.
+* An inner join returns the matching records from both the left and right-side tables.
 
   ```sql
   select *
   from payments as a
   INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+  ```
+
+* A left join returns all of the records from the left table regardless of matching or unmatching records on the right table.
+
+  ```sql
+  select *
+  from payments as a
+  LEFT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+  ```
+
+* A right join returns all of the records from the right table regardless of matching or unmatching records on the left table.
+
+  ```sql
+  select *
+  from payments as a
+  RIGHT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+  ```
+
+* A full outer join returns all of the records from both the left and right tables regardless of matching or unmatching in either side.
+
+  ```sql
+  -- Perform a FULL OUTER JOIN
+  select *
+  from payments as a
+  FULL OUTER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+  ```
+
+* A cross join pairs every row from the left table with every row from the right table.
+
+  ```sql
+  -- Perform a CROSS JOIN
+  select *
+  from payments
+  CROSS JOIN banks;
+  ```
+
+* In order to find the customers with Wells Fargo bank accounts, the banks and customer tables must be joined together with the payments table. This is because the customer table cannot directly join to the banks table as there is no common key or column; however, by using the payments table as a joiner table (containing both a `bank_routing_number` and a `customer_id`), customers can be linked to payment records that are linked to Wells Fargo bank accounts.
+
+  ```sql
+  select a.payment_id,
+         a.bank_number,
+         a.bank_routing_number,
+         b.bank_name,
+         c.first_name,
+         c.last_name
+  from payments as a
+  INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number
+  INNER JOIN customer as c ON a.customer_id = c.customer_id
   ```
 
 Answer any questions before ending the class.
