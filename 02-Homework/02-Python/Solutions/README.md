@@ -8,7 +8,7 @@ Insert image here
 
 The microfinance lending space is exploding across the globe. The idea of using small, short-term loans to effect social change in some of the poorest regions of the world is very appealing.
 
-Your job as a newly-minted Python developer has provided you will some additional funds that are available for an investment opportunity. A close friend heard about your interest in microfinance lending and approached you with an expanding loan portofolio in which you could possibly become a participant.
+Your job as a newly-minted Python developer has provided you with funds that are available for an investment opportunity. A close friend heard about your interest in microfinance lending and approached you with an expanding loan portofolio in which you could possibly become a participant.
 
 You have just gotten your first look at the loan portfolio and realize you have to make some calculations before you can determine if this is an investment you are willing to undertake. You understand how bond evaluation works, but microfinance loan specifics and foreign exchange fluctuations make the portfolio evaluation more challenging.
 
@@ -21,7 +21,7 @@ The emerging microfinance field differs from the traditional lending market in s
 
  - The typical international microfinance loan only averages about $525 dollars.
 
-Contrast this amount to a typical microfinance loan in the US which avarages about $10,000. For additional context, the average small business loan in the US is 20,000. The average school loan is $37,000. the average autoloan is approximately $30,000. And the average mortgage loan approximately is $300,000.
+Contrast this amount to a typical microfinance loan in the US which averages about $10,000. For additional context, the average small business loan in the US is 20,000. The average school loan is $37,000. The average auto loan is approximately $30,000. And the average mortgage loan approximately is $300,000.
 
 In the world of international microfinance, a small amount of money can potentially help a lot of individuals.
 
@@ -56,33 +56,33 @@ The same calculations apply to the currencies KES and INR.
 
 Armed with this new information, the challenge of evaluating our investment opportunity will take place in 3 phases:
 
-1. PyPortfolio - basic portofolio calculations
-2. PyPresentValue - evaluating the overall present value of the loan portfolio
-3. PyCashFlows - looking at the cash flow generated from loan repayments for specific months.
+1. PyPortfolio - This phase will focus on basic portfolio evaluation calculations.
+2. PyPresentValue - Phase 2 will involve an analysis, in stages, of the overall present value of the microfinance loan portfolio.
+3. PyCashFlows - The final phase will de-annualize the portfolio in an attempt to determine the cash flow generated from loan repayments for specified months.
 
 ---
 
 ### Files
-
-
 
 ---
 
 
 ## Instructions
 
-You have just been received the micro-finance loan portfolio for your review.  You can assume that all of the loans in this portfolio were issued on the same date. You have determined that there are several calculations need to be done to properly evaluate the overall portfolio.
+You have just received the microfinance loan portfolio for your review.  You have been advised that all of the loans in this portfolio were issued on the same date.
+
+After a quick scan, you have determined that there are several calculations need to be done to properly evaluate the overall portfolio.
 
 ### Phase 1 - PyPortfolio
 
-In this phase you just want to get an overall feel for the investmet portfolio as presented. The goals of you analysis are to:
+In this phase you just want to get an overall feel for the investment portfolio as presented. The goals of you analysis are to:
 
- * Iterate through the portfolio's provided determine the basic portfolio characteristics such as size and composition.
+ * Iterate through the portfolio's data structure to determine basic portfolio characteristics such as size and composition.
  * Utilize variables, loops, conditional statements and foreign exchange to calculate the local currency value of each loan issued.
 
 
 
-### Phase 2 - PyPresent Value
+### Phase 2 - PyPresentValue
 
 
 As your Python knowledge allows for you to work with external files, you will proceed with your analysis for the current portfolio.
@@ -94,14 +94,14 @@ The goal of the Phase 2 activity is to:
  * Determine the loan repayment amounts to be made based on each loan's specified repayment interval.
  * Determine the present value, also known as the fair value, of a single loan in the portfolio using a discounted cash flow (DCF) model.
  * Challenge - Determine the present value of the entire portfolio using the DCF model and functions.
- * Challenge - Evaluate the investment potential of the portfolio given the numbers calculated in Part 3 of the activity.
+ * Challenge - Evaluate the investment potential of the portfolio given the numbers calculated in part 3 of the activity.
 
 
 ### Phase 3 - PyCashFlows
 
-You have just been informed that size of the portfolio has grown since your analysis started. The fundamental structure of the loans and the same currencies are involved, but there are enough loans in the portfolio to require a CSV file.
+You have just been informed that the size of the portfolio has grown since your analysis started. The fundamental structure of the loans and the same currencies are involved, but there are enough loans in the portfolio to require a CSV file.
 
-As your Python knowledge allows for you import and analyze external files, you will proceed with your analysis for the portfolio in its new form.
+As your Python knowledge allows for you to import and analyze external files, you will proceed with your analysis for the portfolio in its new form.
 
 After Phase 2's analysis, you are reasonably certain that this investment opportunity is of interest to you. One last aspect of the portfolio that you are interested in analyzing are the monthly cash flows.
 
@@ -111,7 +111,7 @@ The goals of this Phase 3 activity are to:
 
 * Import and examine the CSV file provided. Compare and contrast the data structures between the imported file and the one you have been working with in the prior phases.
 * De-annualize the loans to determine how much USD income is generated on a monthly basis based on the current foreign exchange provided.
-* Write a a short evaluation of the portfolio's ability to generate new loans. Also, analyze how the code to process the calculations helps to automate the process of determining monthly flows in the current scenario and going forward.
+* Write a short evaluation of the portfolio's ability to generate new loans. Also, analyze how the code to process the calculations helps to automate the process of determining monthly flows in the current scenario and going forward.
 
 ---
 
