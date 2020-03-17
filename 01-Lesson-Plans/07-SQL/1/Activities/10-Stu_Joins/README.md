@@ -40,7 +40,16 @@ In this activity, you will be using joins to query payment information and assoc
 
 ## Bonus
 
-Perform an INNER JOIN on the `banks` table via the already joined `payments` table to find the sales transactions connected to Wells Fargo bank accounts.
+Create a `customer` table and import the [customer.csv](Resources/customer.csv) dataset. Then, join the customer table with the payments and banks tables to find the customers who have Wells Fargo bank accounts. Return the following columns:
+
+* payment_id
+* bank_number
+* bank_routing_number
+* bank_name
+* first_name
+* last_name
+
+![stu-join-challenge](Images/stu-join-challenge.png)
 
 ---
 

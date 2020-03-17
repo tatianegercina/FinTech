@@ -19,6 +19,7 @@ CREATE TABLE banks (
 DROP TABLE IF EXISTS customer;
 
 CREATE TABLE customer (
+   customer_id SERIAL PRIMARY KEY,
    first_name VARCHAR(30) NOT NULL,
    last_name VARCHAR(30),
    gender VARCHAR(30),
