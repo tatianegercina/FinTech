@@ -42,12 +42,12 @@ In this activity, you will be using joins to query payment information and assoc
 
 Create a `customer` table and import the [customer.csv](Resources/customer.csv) dataset. Then, join the customer table with the payments and banks tables to find the customers who have Wells Fargo bank accounts. Return the following columns:
 
-* payment_id
-* bank_number
-* bank_routing_number
-* bank_name
-* first_name
-* last_name
+* `payment_id`
+* `bank_number`
+* `bank_routing_number`
+* `bank_name`
+* `first_name`
+* `last_name`
 
 ![stu-join-challenge](Images/stu-join-challenge.png)
 
