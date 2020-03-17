@@ -4,11 +4,9 @@ In this activity, you will be using joins to query mortgage information.
 
 ### Instructions
 
-1. Create a new database named `lending_db`.
+1. Create a new database named `payments_db`.
 
 2. Use the `schema.sql` and the pgAdmin Import/Export tool to create the following tables (if not already present):
-
-    * [mortgage.csv](Resources/mortgage.csv)
 
     * [sales.csv](Resources/sales.csv)
 

@@ -764,9 +764,9 @@ In this activity, students will be using joins to query NBA player seasonal stat
 
 **Files:**
 
-* [schema.sql](Activities/10-Stu_Joins/Resources/schema.sql)
+* [schema.sql](Activities/10-Stu_Joins/Solved/schema.sql)
 
-* [seed.sql](Activities/09-Ins_Joins/Resources/payments.csv)
+* [seed.sql](Activities/10-Stu_Joins/Solved/seed.sql)
 
 * [query.sql](Activities/10-Stu_Joins/Solved/query.sql)
 
