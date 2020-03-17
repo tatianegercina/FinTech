@@ -14,25 +14,27 @@ In this activity, you will be using joins to query payment information and assoc
 
     **Note:** Remember to refresh the database; newly created tables will not immediately appear.
 
-3. Perform the following JOINs between the sales and payments table via the common `bank_routing_number`.
+3. Perform the correct join for each of the following use cases using the common `bank_routing_number` from the `payments` and `banks` tables:
 
-    * INNER JOIN
+**Note:** Assume the `payments` table is the designated "left" table and the `banks` table is the designated "right" table.
+
+    * Return all payment records with matching bank routing numbers in the banks table.
 
       ![stu-inner-join](Images/stu-inner-join.png)
 
-    * LEFT JOIN
+    * Return all payment records regardless if there is a matching bank routing number in the banks table.
 
       ![stu-left-join](Images/stu-left-join.png)
 
-    * RIGHT JOIN
+    * Return all bank records regardless if there is a matching bank routing number in the payments table.
 
       ![stu-right-join](Images/stu-right-join.png)
 
-    * FULL OUTER JOIN
+    * Return all records from both tables regardless if there is a matching bank routing number in either table.
 
       ![stu-full-outer-join](Images/stu-full-outer-join.png)
 
-    * CROSS JOIN
+    * Return paired records from both tables where each row of the first table is paired with each row of the second table.
 
       ![cross-join](Images/stu-cross-join.png)
 
