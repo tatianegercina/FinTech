@@ -1,4 +1,4 @@
-# Using CRUD: Seek, Create, Update, and Destroy
+# Using CRUD: CREATE, SELECT, UPDATE, and DELETE
 
 In this activity, you will be utilizing CRUD operations (Create, Read, Update, Destroy) on the provided data.
 
