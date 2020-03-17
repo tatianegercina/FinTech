@@ -384,7 +384,7 @@ Remove the `customer` table by running the following line of code:
 Copy the following code from `schema.sql`, `seed.sql`, and `query.sql` file and paste it in the pgAdmin editor.
 
  ```sql
- -- Re-create the table "customer" within mortgage_db
+ -- Re-create the table "customer" within example_db
 CREATE TABLE customer (
   customer_id SERIAL PRIMARY KEY,
   first_name VARCHAR(30) NOT NULL,
@@ -534,7 +534,7 @@ In the Options tab, complete the following steps:
 
 * Leave the other fields as they are, and then click OK.
 
- ![import.png](Images/import.png)
+  ![import.png](Images/import.png)
 
 In the query tool, rerun `SELECT * FROM mortgage` to verify that data has been imported.
 
@@ -592,34 +592,34 @@ In today's class, each of the operations has been in use. Students have:
 
 * Created data in a table with the `INSERT` statement.
 
-```sql
-INSERT INTO customer
-(first_name, last_name, gender, age, address, city, state, zip_code)
-VALUES
-('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709);
-```
+  ```sql
+  INSERT INTO customer
+  (first_name, last_name, gender, age, address, city, state, zip_code)
+  VALUES
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709);
+  ```
 
 * Read data with the use of `SELECT`.
 
-```sql
-SELECT *
-FROM customer;
-```
+  ```sql
+  SELECT *
+  FROM customer;
+  ```
 
 * Updated a table's data using `UPDATE`.
 
-```sql
-UPDATE customer
-SET first_name = 'Brian', age = 20
-WHERE customer_id = 6;
-```
+  ```sql
+  UPDATE customer
+  SET first_name = 'Brian', age = 20
+  WHERE customer_id = 6;
+  ```
 
 * Deleted data using `DELETE`.
 
-```sql
-DELETE FROM customer
-WHERE customer_id = 5;
-```
+  ```sql
+  DELETE FROM customer
+  WHERE customer_id = 5;
+  ```
 
 Introduce the class to an additional method of reading the data: wildcards.
 
@@ -701,28 +701,28 @@ Create two new tables in `MiscellaneousDB` in pgAdmin named `mortgage` and `sale
 
 * Because there are common values, it is possible to join these tables together. For example:
 
-```sql
-SELECT *
-FROM mortgage
-INNER JOIN sales ON mortgage.mortgage_id = sales.mortgage_id;
-```
+  ```sql
+  SELECT *
+  FROM mortgage
+  INNER JOIN sales ON mortgage.mortgage_id = sales.mortgage_id;
+  ```
 
 * From the [query.sql](Activities/09-Ins_Joins/Solved/query.sql) file, copy and paste the code performing an `inner join` on the two tables:
 
 **Note:** Some students may have advanced knowledge of SQL queries and use aliases in their solutions. Using aliases is not necessary for today's activities; they will be covered more comprehensively in the next class.
 
- ```sql
--- Advanced INNER JOIN solution
-SELECT a.*, b.*
-FROM mortgage as a
-INNER JOIN sales as b ON a.mortgage_id = b.mortgage_id;
-```
+  ```sql
+  -- Advanced INNER JOIN solution
+  SELECT a.*, b.*
+  FROM mortgage as a
+  INNER JOIN sales as b ON a.mortgage_id = b.mortgage_id;
+  ```
 
 Point out one significant difference between SQL joins and Python joins:
 
 * In SQL joins, the columns that should be viewed after the join must be declared in the initial `SELECT` statement.
 
- ![inner-join.png](Images/inner-join.png)
+  ![inner-join.png](Images/inner-join.png)
 
 * There are five primary types of joins that can be used with PostgreSQL:
 
@@ -772,11 +772,11 @@ Open query.sql and copy the code. Then open a new query tool and paste the solut
 
 * Finally, determine the key both tables will join on. For example, to join the two tables by using the `id` and an `INNER JOIN`, select the data columns to be viewed from both tables, and then specify which columns the tables will be connected by.
 
-```sql
-select *
-from sales
-INNER JOIN payments ON sales.payment_id = payments.payment_id
-```
+  ```sql
+  select *
+  from sales
+  INNER JOIN payments ON sales.payment_id = payments.payment_id
+  ```
 
 Answer any questions before ending the class.
 
