@@ -26,7 +26,22 @@ By the end of class, students will be able to:
 
 * Have your TAs keep track with the [Time Tracker](TimeTracker.xlsx)
 
+### Sample Class Video (Highly Recommended)
+
+* To watch an example class lecture, go here: [15.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a79f7419-2a51-4bc6-aa09-ab1c00f77a4b) Note that this video may not reflect the most recent lesson plan.
+
+### Slideshow and Time Tracker
+
+* The slides for this lesson can be viewed on Google Drive here: [15.3 Lesson Slides](https://docs.google.com/presentation/d/1ulDdO53mRd5pRy_6eFiRiSFVIK68BebCnP2lmQvvaiI/edit?usp=sharing).
+
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+
+* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx)
+
 ---
+
 
 ### 1. Instructor Do: Random Forest Trading (15 min)
 
@@ -280,4 +295,4 @@ Students will use the remaining class time to work on their projects.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
