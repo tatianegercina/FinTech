@@ -542,27 +542,27 @@ In the query tool, rerun `SELECT * FROM mortgage` to verify that data has been i
 
 Let the class know that the larger a dataset is, the longer it will take for pgAdmin to import values.
 
-### 12. Student Do: Hide and Seek (10 min)
+### 12. Student Do: Customer Demographics (10 min)
 
 In this activity, students will create a new table and import data from a CSV file.
 
 **Files:**
 
-* [customer.csv](Activities/07-Stu_Hide_and_Seek/Resources/customer.csv)
+* [customer.csv](Activities/07-Stu_Customer_Demographics/Resources/customer.csv)
 
-**Instructions:** [README.md](Activities/07-Stu_Hide_and_Seek/README.md)
+**Instructions:** [README.md](Activities/07-Stu_Customer_Demographics/README.md)
 
-### 13. Instructor Do: Review Hide and Seek (5 min)
+### 13. Instructor Do: Review Customer Demographics (5 min)
 
 **Files:**
 
-* [schema.sql](Activities/07-Stu_Hide_and_Seek/Solved/schema.sql)
+* [schema.sql](Activities/07-Stu_Customer_Demographics/Solved/schema.sql)
 
-* [seed.sql](Activities/07-Stu_Hide_and_Seek/Solved/seed.sql)
+* [seed.sql](Activities/07-Stu_Customer_Demographics/Solved/seed.sql)
 
-* [query.sql](Activities/07-Stu_Hide_and_Seek/Solved/query.sql)
+* [query.sql](Activities/07-Stu_Customer_Demographics/Solved/query.sql)
 
-Open pgAdmin and paste the code from [query.sql](Activities/07-Stu_Hide_and_Seek/Solved/query.sql) into the editor. Explain the following:
+Open pgAdmin and paste the code from [query.sql](Activities/07-Stu_Customer_Demographics/Solved/query.sql) into the editor. Explain the following:
 
 * Although the CSV data does not contain an `id` column, when we specify `SERIAL PRIMARY KEY` while creating the table, IDs will automatically be assigned to each row.
 

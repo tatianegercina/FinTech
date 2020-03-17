@@ -12,6 +12,9 @@ UPDATE sales
 SET loan_amount = 423212
 WHERE sales_id = 33;
 
+ALTER TABLE sales
+ADD COLUMN loan_distributed BOOLEAN DEFAULT True
+
 -- Insert new data
 INSERT INTO sales
 (sales_id, payment_id, mortgage_id, loan_amount, loan_date)
