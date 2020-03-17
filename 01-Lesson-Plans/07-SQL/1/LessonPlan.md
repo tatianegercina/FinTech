@@ -303,6 +303,8 @@ Create a new database named `state_info` in pgAdmin. Then use the the schema.sql
   FROM states;
   ```
 
+Walk through the solution to the first and second bonus question.
+
 * The first bonus question is very similar to the previous query executed in that it displays only the values of a single column.
 
   ```sql
