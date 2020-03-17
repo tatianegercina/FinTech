@@ -1,26 +1,32 @@
-# Joining the NBA
+# Joining the Big Banks
 
-In this activity, you will be using joins to query mortgage information.
+In this activity, you will be using joins to query payment information and associated bank information via a common bank routing number.
 
-### Instructions
+## Instructions
 
 1. Create a new database named `payments_db`.
 
-2. Use the `schema.sql` and the pgAdmin Import/Export tool to create the following tables (if not already present):
-
-    * [sales.csv](Resources/sales.csv)
+2. Use the `schema.sql` and the pgAdmin Import/Export tool to create the following tables:
 
     * [payments.csv](Resources/payments.csv)
 
+    * [banks.csv](Resources/banks.csv)
+
     **Note:** Remember to refresh the database; newly created tables will not immediately appear.
 
-3. Perform the following JOINs between the sales and payments table via the common `payment_id`.
+3. Perform the following JOINs between the sales and payments table via the common `bank_routing_number`.
 
     * INNER JOIN
 
+      ![stu-inner-join](Images/stu-inner-join.png)
+
     * LEFT JOIN
 
+      ![stu-left-join](Images/stu-left-join.png)
+
     * RIGHT JOIN
+
+      ![stu-right-join](Images/stu-right-join.png)
 
     * FULL OUTER JOIN
 

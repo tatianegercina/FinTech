@@ -1,18 +1,5 @@
--- Create new table
-CREATE TABLE mortgage (
-  mortgage_id SERIAL PRIMARY KEY,
-  mortgage_name VARCHAR(50),
-  mortgage_rate FLOAT
-);
-
--- Create new table to import data
-CREATE TABLE sales (
-  sales_id SERIAL PRIMARY KEY,
-  payment_id INT,
-  mortgage_id INT,
-  loan_amount INT,
-  loan_date DATE
-);
+DROP TABLE IF EXISTS payments;
+DROP TABLE IF EXISTS banks;
 
 CREATE TABLE payments (
   payment_id SERIAL PRIMARY KEY,
@@ -21,7 +8,16 @@ CREATE TABLE payments (
   customer_id INT
 );
 
+-- Create new programming_languages table
+CREATE TABLE banks (
+  bank_id SERIAL PRIMARY KEY,
+  bank_name VARCHAR(50),
+  bank_routing_number BIGINT
+);
+
 -- BONUS
+DROP TABLE IF EXISTS customer;
+
 CREATE TABLE customer (
    first_name VARCHAR(30) NOT NULL,
    last_name VARCHAR(30),
@@ -32,3 +28,4 @@ CREATE TABLE customer (
    state CHAR(2),
    zip_code CHAR(5)
 );
+

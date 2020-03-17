@@ -750,7 +750,7 @@ Demonstrate a couple of different joins that can be performed. Then answer any q
 
 ### 18. Student Do: Joining the Big Banks (20 min)
 
-In this activity, students will be using joins to query NBA player seasonal statistics.
+In this activity, students will be using joins to query payment information and associated bank information via a common bank routing number.
 
 **Files:**
 
