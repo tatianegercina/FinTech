@@ -744,21 +744,21 @@ Point out one significant difference between SQL joins and Python joins:
 
     ![inner-join](Images/inner-join.png)
 
-  * `LEFT JOIN` returns all records from the left table and the matched records from the right table.
+  * `LEFT JOIN` returns all records from the left table and the matched records from the right table. Unmatched left-side records will contain NULL values for right-side columns.
 
     ![left-join](Images/left-join.png)
 
-  * `RIGHT JOIN` returns all records from the right table and the matched records from the left table.
+  * `RIGHT JOIN` returns all records from the right table and the matched records from the left table. Unmatched right-side records will contain NULL values for left-side columns.
 
     ![right-join](Images/right-join.png)
 
-  * `CROSS JOIN` returns records that match every row of the left table with every row of the right table. This type of join has the potential to make very large tables.
-
-    ![cross-join](Images/cross-join.png)
-
-  * `FULL OUTER JOIN` places null values within the columns that do not match between the two tables after an inner join is performed.
+  * `FULL OUTER JOIN` returns all records from the left and right tables, displaying both matched records and unmatched records with NULL values.
 
     ![full-outer-join](Images/full-outer-join.png)
+
+  * `CROSS JOIN` returns records that match every row of the left table with every row of the right table. This type of join has the potential to make very large tables.
+
+      ![cross-join](Images/cross-join.png)
 
 Slack out the link to this explanation of Postgres [joins](https://www.tutorialspoint.com/postgresql/postgresql_using_joins.htm) for students to study.
 
