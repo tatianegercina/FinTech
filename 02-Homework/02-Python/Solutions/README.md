@@ -116,7 +116,7 @@ The goals of this Phase 3 activity are to:
 ---
 
 ## Hints and Considerations
-
+git
 * [f-string Formatting](https://realpython.com/python-f-strings/)
 
 * [Rounding numbers in Python](https://realpython.com/python-rounding/)
