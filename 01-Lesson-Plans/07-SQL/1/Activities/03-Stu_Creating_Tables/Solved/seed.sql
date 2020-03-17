@@ -1,4 +1,4 @@
--- Create a new table
+-- Insert data into the table
 INSERT INTO states
 (state_name, state_abbreviation, population, state_property_tax_rate)
 VALUES
