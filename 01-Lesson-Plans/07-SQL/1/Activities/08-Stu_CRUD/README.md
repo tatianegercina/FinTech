@@ -20,10 +20,6 @@ In this activity, you will be utilizing CRUD operations (Create, Read, Update, D
 
 * Delete the sales record where sales_id is 72.
 
-## Bonus
-
-`need to come back to this`
-
 ---
 
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
