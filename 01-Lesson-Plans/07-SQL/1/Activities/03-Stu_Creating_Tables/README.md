@@ -1,14 +1,14 @@
 # Creating Tables
 
-In this activity, you will use pgAdmin to recreate and query a table based on image provided to you.
+In this activity, you will use pgAdmin to recreate and query a table based on an image provided to you.
 
 ## Instructions
-
-**Note:** When defining the `state_property_tax_rate` column, use the `FLOAT` data type.
 
 1. Create a new database in pgAdmin named `state_info`.
 
 2. Using the query tool, create an empty table named `states`. Be sure to match the data types!
+
+    **Note:** When defining the `state_property_tax_rate` column, use the `FLOAT` data type.
 
 3. Insert data into the new table. The result should match the following image.
 
