@@ -748,19 +748,19 @@ Slack out the link to this explanation of Postgres [joins](https://www.tutorials
 
 Demonstrate a couple of different joins that can be performed. Then answer any questions before moving on to the next activity.
 
-### 18. Student Do: Joining the NBA (20 min)
+### 18. Student Do: Joining the Big Banks (20 min)
 
 In this activity, students will be using joins to query NBA player seasonal statistics.
 
 **Files:**
 
-* [sales.csv](Activities/09-Ins_Joins/Resources/sales.csv)
+* [banks.csv](Activities/10-Stu_Joins/Resources/banks.csv)
 
-* [payments.csv](Activities/09-Ins_Joins/Resources/payments.csv)
+* [payments.csv](Activities/10-Stu_Joins/Resources/payments.csv)
 
 **Instructions:** [README.md](Activities/10-Stu_Joins/README.md)
 
-### 19. Instructor Do: Review Joining the NBA (5 min)
+### 19. Instructor Do: Review Joining the Big Banks (5 min)
 
 **Files:**
 
