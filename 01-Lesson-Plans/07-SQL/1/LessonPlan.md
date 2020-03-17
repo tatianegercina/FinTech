@@ -502,6 +502,8 @@ In this activity, students learn how to import data (CSV) into an existing table
 
 * [schema.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
 
+* [seed.sql (optional)](Activities/06-Ins_Importing_Data/Solved/seed.sql)
+
 * [query.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
 
 So far, the class has created its tables and values manually using SQL code. As one might imagine, this process can be tedious when translating large datasets from external sources. Thankfully, pgAdmin includes a built-in import tool that can take CSV files and easily import their data into tables.
@@ -685,7 +687,7 @@ In this activity, students are introduced to the concept of joins -- the combina
 
 * [schema.sql](Activities/09-Ins_Joins/Solved/schema.sql)
 
-* [seed.sql](Activities/09-Ins_Joins/Solved/seed.sql)
+* [seed.sql (optional)](Activities/09-Ins_Joins/Solved/seed.sql)
 
 * [query.sql](Activities/09-Ins_Joins/Solved/query.sql)
 
