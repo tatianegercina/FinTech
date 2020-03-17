@@ -30,6 +30,12 @@ In this activity, you will be using joins to query payment information and assoc
 
     * FULL OUTER JOIN
 
+      ![stu-full-outer-join](Images/stu-full-outer-join.png)
+
+    * CROSS JOIN
+
+      ![cross-join](Images/stu-cross-join.png)
+
 ## Bonus
 
 Perform an INNER JOIN on the `banks` table via the already joined `payments` table to find the sales transactions connected to Wells Fargo bank accounts.
