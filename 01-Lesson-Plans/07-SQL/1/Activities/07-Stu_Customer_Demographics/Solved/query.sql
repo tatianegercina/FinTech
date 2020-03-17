@@ -13,6 +13,12 @@ from customer
 where gender = 'Male'
   AND state = 'NJ';
 
+-- Query and return all male customers from New Jersey or Ohio
+select *
+from customer
+where gender = 'Male'
+  AND state = 'NJ' OR state = 'OH'
+
 -- BONUS
 -- Query and return all female customers from Maryland who are younger than 30 years old.
 select *

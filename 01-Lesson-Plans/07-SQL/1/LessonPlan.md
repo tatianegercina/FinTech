@@ -482,7 +482,20 @@ Open [query.sql](Activities/05-Stu_Making_IDs/Solved/query.sql) and copy the cod
 
 Go over the lines of code used to create the ID and set it as the primary key. Make sure the class understands how this works, and explain how useful this will be in this week's homework.
 
-Review how to create a new column using the `ALTER TABLE` and `ADD COLUMN` statements. Explain that adding the column name and data type is completed in the same manner as creating a new table.
+```sql
+CREATE TABLE banks (
+  bank_id SERIAL PRIMARY KEY,
+  bank_name VARCHAR(50),
+  bank_routing_number BIGINT
+);
+```
+
+Review the bonus for creating a new column using the `ALTER TABLE` and `ADD COLUMN` statements. Explain that adding the column name and data type is completed in the same manner as creating a new table.
+
+```sql
+ALTER TABLE banks
+ADD COLUMN mortgage_lender BOOLEAN default true;
+```
 
 Answer any questions before moving on.
 
@@ -514,7 +527,7 @@ Open the CSV file within an integrated development environment, such as Excel, t
 
 * Open a query tool within `mortgage_db` and create a table named `mortgage`. Point out that the columns created match the data in the CSV file.
 
-* Once the table has been created, right-click Miscellaneous_DB from the left-hand menu and select Refresh.
+* Once the table has been created, right-click `mortgage_db` from the left-hand menu and select Refresh.
 
 * Scroll down to Schemas and expand that menu, and then expand the Tables menu.
 
@@ -562,7 +575,7 @@ In this activity, students will create a new table and import data from a CSV fi
 
 * [query.sql](Activities/07-Stu_Customer_Demographics/Solved/query.sql)
 
-Open pgAdmin and paste the code from [query.sql](Activities/07-Stu_Customer_Demographics/Solved/query.sql) into the editor. Explain the following:
+Open pgAdmin and paste the code from the schema.sql and query.sql files into the editor. Explain the following:
 
 * Although the CSV data does not contain an `id` column, when we specify `SERIAL PRIMARY KEY` while creating the table, IDs will automatically be assigned to each row.
 
@@ -570,9 +583,7 @@ Open pgAdmin and paste the code from [query.sql](Activities/07-Stu_Customer_Demo
 
 * To collect data that exists in either one column or another, the `OR` statement is included in the query.
 
-Walkthrough the solutions to the bonus questions, touching on the following points:
-
-* After importing the second table, we can specify a source with the `WHERE` statement.
+Walk through the solutions to the bonus questions, touching on the following point:
 
 * `AND` statements can be used more than once for more specific results.
 
@@ -661,19 +672,15 @@ This activity will require students to do some research. Links are provided to h
 
 * [query.sql](Activities/08-Stu_CRUD/Solved/query.sql)
 
-Open a query tool in `sales_db` and copy and paste the code from schema.sql to create a new table named `sales`. Go over the following:
+Open a query tool in `sales_db` and copy and paste the code from schema.sql and seed.sql to create and populate a new table named `sales`. Then explain the following:
 
-* Refresh the table list, and then import the data from `sales.csv` into the new table.
-
-* First, alter the table to add an `id`.
+* Select statements read the data from the table and outputs the specified columns.
 
 * Deletions and updates are made where the conditions are met.
 
-* Multiple averages can be selected at once.
+* An average of all values in a specified column can be calculated using the `AVG()` function.
 
-* Values can be inserted into the table even though not every value is filled out.
-
-* Finally, select all values to show the newly added country.
+* Columns can be added to pre-existing tables using the ALTER TABLE statement.
 
 ### 17. Instructor Do: Joins (15 min)
 
@@ -693,7 +700,7 @@ Students may recall working with merges and joins to combine datasets during the
 
 Create two new tables in `mortgage_db` in pgAdmin named `sales` and `mortgage`.
 
-* Copy the code from [query.sql](Activities/09-Ins_Joins/Solved/query.sql) to create the tables, and then import the corresponding data from `sales.csv` and `mortgage.csv`.
+* Copy the code from [schema.sql](Activities/09-Ins_Joins/Solved/schema.sql) to create the tables, and then import the corresponding data from `sales.csv` and `mortgage.csv`.
 
 * Remember to refresh the database; newly created tables will not immediately appear.
 
@@ -796,8 +803,8 @@ Open query.sql and copy the code. Then open a new query tool and paste the solut
 
   ```sql
   select *
-  from sales
-  INNER JOIN payments ON sales.payment_id = payments.payment_id
+  from payments as a
+  INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
   ```
 
 Answer any questions before ending the class.

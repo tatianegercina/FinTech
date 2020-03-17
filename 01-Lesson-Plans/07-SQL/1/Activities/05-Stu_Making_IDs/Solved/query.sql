@@ -46,6 +46,6 @@ SELECT *
 FROM banks;
 
 -- BONUS
--- Add a "mastered" column with the boolean default of true
+-- Add a "mortgage_lender" column with the boolean default of true
 ALTER TABLE banks
 ADD COLUMN mortgage_lender BOOLEAN default true;
