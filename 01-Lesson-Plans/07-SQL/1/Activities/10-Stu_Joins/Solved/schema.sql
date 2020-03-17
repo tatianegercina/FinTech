@@ -8,7 +8,6 @@ CREATE TABLE payments (
   customer_id INT
 );
 
--- Create new programming_languages table
 CREATE TABLE banks (
   bank_id SERIAL PRIMARY KEY,
   bank_name VARCHAR(50),
