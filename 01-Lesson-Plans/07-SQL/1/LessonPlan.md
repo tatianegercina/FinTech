@@ -726,15 +726,15 @@ Point out one significant difference between SQL joins and Python joins:
 
   * `INNER JOIN` returns records that have matching values in both tables.
 
-    [inner_join](Images/inner_join.png)!
+    ![inner_join](Images/inner_join.png)
 
   * `LEFT JOIN` returns all records from the left table and the matched records from the right table.
 
-    [left-join](Images/left-join.png)
+    ![left-join](Images/left-join.png)
 
   * `RIGHT JOIN` returns all records from the right table and the matched records from the left table.
 
-    [right-join](Images/right-join.png)
+    ![right-join](Images/right-join.png)
 
   * `CROSS JOIN` returns records that match every row of the left table with every row of the right table. This type of join has the potential to make very large tables.
 
