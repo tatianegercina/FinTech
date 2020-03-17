@@ -14,7 +14,7 @@ In this activity, you will recreate a table and then query, insert, and update d
 
 4. Insert a few more rows of data representing additional banks by adding the `bank_name` and `bank_routing_number` of your choice to the `banks` table.
 
-5. Change the name of the Citigroup to PNC.
+5. Change the name of Citigroup to PNC.
 
 6. Change the bank_routing_number for Wells Fargo to 1995826182.
 

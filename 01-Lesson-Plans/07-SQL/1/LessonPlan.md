@@ -494,15 +494,13 @@ Answer any questions before moving on.
 
 In this activity, students learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
 
-**Note:** For students having issues using the pgAdmin Import/Export tool, there is an included [seed.sql](Activities/06-Ins_Importing_Data/Solved/query.sql) file for each activity in the remaining half of the day. Have students refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
+**Note:** If issues arise when using the pgAdmin Import/Export tool, there is an included [seed.sql](Activities/06-Ins_Importing_Data/Solved/query.sql) file for each instructor/student activity in the remaining half of the day. Refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
 
 **Files:**
 
 * [mortgage.csv](Activities/06-Ins_Importing_Data/Resources/mortgage.csv)
 
 * [schema.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
-
-* [seed.sql (optional)](Activities/06-Ins_Importing_Data/Solved/seed.sql)
 
 * [query.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
 
@@ -686,8 +684,6 @@ In this activity, students are introduced to the concept of joins -- the combina
 * [mortgage.csv](Activities/09-Ins_Joins/Resources/mortgage.csv)
 
 * [schema.sql](Activities/09-Ins_Joins/Solved/schema.sql)
-
-* [seed.sql (optional)](Activities/09-Ins_Joins/Solved/seed.sql)
 
 * [query.sql](Activities/09-Ins_Joins/Solved/query.sql)
 
