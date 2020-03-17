@@ -1,5 +1,5 @@
 -- Drop table if exists
-DROP TABLE customer;
+DROP TABLE IF EXISTS customer;
 
 -- Create table and view column datatypes
 CREATE TABLE customer (
