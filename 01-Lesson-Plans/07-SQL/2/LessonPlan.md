@@ -56,13 +56,15 @@ Open the slides and cover the agenda.
 
 In this activity, instructors will help students prepare for today's lesson by importing the necessary data to their databases.
 
-**Files:**
+Note: If issues arise when using the pgAdmin Import/Export tool, there is an included seed.sql file within the Solved folder of each instructor/student activity. Distribute and use the file when necessary and refer to the SQL troubleshooting guide for more information on how to use the file.
 
-* [schema.sql](Activities/01-Evr_Import_Data/Resources/schema.sql)
+**Files:**
 
 * [actor.csv](Activities/01-Evr_Import_Data/Resources/actor.csv)
 
-* [Sakila CSV Data](Activities/01-Evr_Import_Data/Resources)
+* [schema.sql](Activities/01-Evr_Import_Data/Solved/schema.sql)
+
+* [query.sql](Activities/01-Evr_Import_Data/Solved/schema.sql)
 
 Explain to the class that today's activities will require a few tables to be imported into a database.
 
