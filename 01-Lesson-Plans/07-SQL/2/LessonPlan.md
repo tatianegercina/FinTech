@@ -292,11 +292,21 @@ Answer any questions before moving on.
 
 In this activity, you will use `ORDER BY` in combination with other SQL methods to query and order the tables.
 
+**Files:**
+
+* [payment.csv](Activities/05-Stu_Order_By/Resources/payment.csv)
+
 **Instructions:** [README.md](Activities/05-Stu_Order_By/README.md)
 
 ### 8. Instructor Do: Review Payments Ordered By (5 min)
 
-**File:** [query.sql](Activities/05-Stu_Order_By/Solved/query.sql)
+**Files:**
+
+* [schema.sql](Activities/05-Stu_Order_By/Solved/schema.sql)
+
+* [seed.sql](Activities/05-Stu_Order_By/Solved/seed.sql)
+
+* [query.sql](Activities/05-Stu_Order_By/Solved/query.sql)
 
 Open pgAdmin and walk through the solution, highlighting the following:
 

@@ -16,4 +16,4 @@ Using the `CAST()` function, cast the `payment_date` as a DATE datatype to group
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
