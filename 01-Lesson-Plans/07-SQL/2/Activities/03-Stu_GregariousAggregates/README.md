@@ -16,6 +16,8 @@ Use the `payment` table to answer the following questions:
 
 5. What is the count of payments for each customer?
 
+6. How many customers has each staff serviced?
+
 ## Hint
 
 Consult the Postgres documentation on [aggregate functions](https://www.postgresql.org/docs/9.5/functions-aggregate.html) for a summary of the available functions.
