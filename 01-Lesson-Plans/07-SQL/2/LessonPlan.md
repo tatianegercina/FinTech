@@ -219,13 +219,21 @@ Answer any questions before moving on.
 
 In this activity, students will practice writing queries with aggregate functions, grouping, and using aliases.
 
-**File:** [query.sql](Activities/03-Stu_GregariousAggregates/Unsolved/query.sql)
+**Files:**
+
+* [payment.csv](Activities/03-Stu_GregariousAggregates/Resources/payment.csv)
 
 **Instructions:** [README.md](Activities/03-Stu_GregariousAggregates/README.md)
 
 ### 5. Instructor Do: Review Gregarious Aggregates (5 min)
 
-**File**: [query.sql](Activities/03-Stu_GregariousAggregates/Solved/query.sql)
+**Files:**
+
+* [schema.sql](Activities/03-Stu_GregariousAggregates/Solved/schema.sql)
+
+* [seed.sql](Activities/03-Stu_GregariousAggregates/Unsolved/seed.sql)
+
+* [query.sql](Activities/03-Stu_GregariousAggregates/Unsolved/query.sql)
 
 Review the solution in pgAdmin and explain the following:
 
