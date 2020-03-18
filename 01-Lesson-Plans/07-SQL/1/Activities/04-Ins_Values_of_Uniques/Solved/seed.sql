@@ -18,7 +18,7 @@ VALUES
 SELECT *
 FROM customer;
 
--- Insert data into the table after re-creating with an incremental primary key
+-- Insert duplicated data into the table after re-creating with an incremental primary key
 INSERT INTO customer
 (first_name, last_name, gender, age, address, city, state, zip_code)
 VALUES

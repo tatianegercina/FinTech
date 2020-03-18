@@ -390,21 +390,21 @@ Remove the `customer` table by running the `DROP TABLE` statement. As the name s
 
 Copy the following code from `schema.sql`, `seed.sql`, and `query.sql` file and paste it in the pgAdmin editor.
 
- ```sql
- -- Re-create the table "customer" within example_db
+```sql
+-- Re-create the table "customer" with an incremental primary key
 CREATE TABLE customer (
-  customer_id SERIAL PRIMARY KEY,
-  first_name VARCHAR(30) NOT NULL,
-  last_name VARCHAR(30),
-  gender VARCHAR(30),
-  age INT,
-  address VARCHAR(50),
-  city VARCHAR(50),
-  state CHAR(2),
-  zip_code CHAR(5)
+customer_id SERIAL PRIMARY KEY,
+first_name VARCHAR(30) NOT NULL,
+last_name VARCHAR(30),
+gender VARCHAR(30),
+age INT,
+address VARCHAR(50),
+city VARCHAR(50),
+state CHAR(2),
+zip_code CHAR(5)
 );
 
- -- Insert data into the table
+-- Insert duplicated data back into the re-created table
 INSERT INTO customer
 (first_name, last_name, gender, age, address, city, state, zip_code)
 VALUES
@@ -415,10 +415,10 @@ VALUES
 ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
 ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
 
- -- Query all fields from the table
- SELECT *
- FROM customer;
- ```
+-- Query all fields from the table
+SELECT *
+FROM customer;
+```
 
 Explain the following points:
 

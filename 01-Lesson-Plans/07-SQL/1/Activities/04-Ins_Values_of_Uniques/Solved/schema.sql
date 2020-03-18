@@ -14,7 +14,7 @@ CREATE TABLE customer (
 );
 
 -- Re-create the table "customer"
--- with a incremental primary key
+-- with an incremental primary key
 CREATE TABLE customer (
   customer_id SERIAL PRIMARY KEY,
   first_name VARCHAR(30) NOT NULL,
