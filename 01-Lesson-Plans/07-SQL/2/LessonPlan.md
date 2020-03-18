@@ -94,6 +94,14 @@ The TAs should walk around the classroom to assist students with the database up
 
 In this activity, students will learn how to use aggregate functions, aliases, and groupby operations to analyze data on a higher-level or aggregated perspective.
 
+**Files:**
+
+* [film.csv](Activities/02-Ins_Aggregates/Resources/film.csv)
+
+* [schema.sql](Activities/02-Ins_Aggregates/Solved/schema.sql)
+
+* [query.sql](Activities/02-Ins_Aggregates/Solved/schema.sql)
+
 Use the `Aggregate Functions` section of the slides and review the following:
 
 * Similar to aggregates in Pandas, aggregate functions allow calculations on a set of values and return a singular value.
