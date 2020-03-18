@@ -110,9 +110,7 @@ Use the `Aggregate Functions` section of the slides and review the following:
 
 * Aggregates are often combined with `GROUP BY`, `HAVING`, and `SELECT`.
 
-**File:** [query.sql](Activities/02-Ins_Aggregates/Solved/query.sql)
-
-Select the `rental_db` database in pgAdmin and open a query window.
+Then, select the `rental_db` database in pgAdmin and open a query window.
 
 Run `SELECT * FROM film;` and count the number of rows.
 
