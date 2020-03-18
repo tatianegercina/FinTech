@@ -1,5 +1,5 @@
 -- Insert new data
-INSERT INTO banks 
+INSERT INTO banks
 (bank_name, bank_routing_number)
 VALUES
 ('Bank of America', 198491827),
@@ -13,7 +13,7 @@ VALUES
 ('Bank of New York Mellon', 8734569384);
 
 
-INSERT INTO payments 
+INSERT INTO payments
 (bank_number, bank_routing_number, customer_id)
 VALUES
 (9269877403,905192010,1),
@@ -220,4 +220,3 @@ VALUES
 ('Donna','Bray','Female',34,'58964 April Knoll','Hendrixchester','MI',31600),
 ('Carolyn','Williams','Female',34,'875 Rivas Alley','Butlerton','MA',81141),
 ('Lee','Sweeney','Male',25,'USCGC Caldwell','FPO','AA',30090);
-

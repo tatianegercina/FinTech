@@ -32,4 +32,4 @@ select a.payment_id,
 	     c.last_name
 from payments as a
 INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number
-INNER JOIN customer as c ON a.customer_id = c.customer_id
+INNER JOIN customer as c ON a.customer_id = c.customer_id;

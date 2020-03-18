@@ -17,7 +17,7 @@ where gender = 'Male'
 select *
 from customer
 where gender = 'Male'
-  AND state = 'NJ' OR state = 'OH'
+  AND state = 'NJ' OR state = 'OH';
 
 -- BONUS
 -- Query and return all female customers from Maryland who are younger than 30 years old.

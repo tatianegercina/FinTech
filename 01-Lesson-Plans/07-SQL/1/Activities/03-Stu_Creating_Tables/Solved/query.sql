@@ -9,7 +9,7 @@ FROM states;
 -- Bonus 1:
 -- Create a query to view only state abbreviations
 SELECT state_abbreviation
-FROM states
+FROM states;
 
 -- Bonus 2:
 -- Create a query to view states

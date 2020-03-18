@@ -2,7 +2,7 @@
 SELECT *
 FROM sales;
 
--- Return all rows and columns for records with 
+-- Return all rows and columns for records with
 -- loan amounts less than $300,000
 SELECT *
 FROM sales
@@ -19,7 +19,7 @@ WHERE sales_id = 33;
 
 -- Add a boolean column
 ALTER TABLE sales
-ADD COLUMN loan_distributed BOOLEAN DEFAULT True
+ADD COLUMN loan_distributed BOOLEAN DEFAULT True;
 
 -- Insert new data
 INSERT INTO sales
