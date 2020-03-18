@@ -1,4 +1,4 @@
--- Delete the table "customer"
+-- Drop "customer" table if exists 
 DROP TABLE IF EXISTS customer;
 
 -- Re-create the table "customer"
