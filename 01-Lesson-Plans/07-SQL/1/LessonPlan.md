@@ -355,17 +355,17 @@ In this activity, students are introduced to the concept of duplicate and unique
 
 Using the `customer` table from the `example_db` database, insert the duplicate data below into the table, and then visualize the table with the new information.
 
-![duplicate-records](Images/duplicate-records.png)
-
  ```sql
 INSERT INTO customer
 (first_name, last_name, gender, age, address, city, state, zip_code)
 VALUES
 ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709);
 
- SELECT *
- FROM customer;
- ```
+SELECT *
+FROM customer;
+```
+
+![duplicate-records](Images/duplicate-records.png)
 
 Explain that duplicate data is a real-world occurrence (and an eyesore). Demonstrate how to remove the rows containing the string `Michael` in the `first_name` column.
 
