@@ -10,14 +10,14 @@ WHERE first_name = 'Michael';
 -- Update a single row to change the `first_name` and `age` column data
 UPDATE customer
 SET first_name = 'Brian', age = 20
-WHERE customer_id = 6;
+WHERE customer_id = 5;
 
 SELECT *
 FROM customer;
 
--- Delete the duplicate entry using a unique id
+-- Delete the duplicate "Alexander Martinez" entry using a unique id
 DELETE FROM customer
-WHERE customer_id = 5;
+WHERE customer_id = 6;
 
 SELECT *
 FROM customer;

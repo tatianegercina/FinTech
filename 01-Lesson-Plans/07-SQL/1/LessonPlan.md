@@ -451,16 +451,16 @@ Explain the following points:
   ```sql
   UPDATE customer
   SET first_name = 'Brian', age = 20
-  WHERE customer_id = 6;
+  WHERE customer_id = 5;
   ```
 
 * Note that similar to a query, the `WHERE` statement is used to pinpoint the data we want to change. In this case, the `customer_id` column is used to select the unique row we want to affect.
 
-* Duplicate data is also easier to remove with the use of a unique ID. With the following code, remove the duplicate data:
+* Duplicate data is also easier to remove with the use of a unique ID. With the following code, remove the duplicate data for "Alexander Martinez":
 
   ```sql
   DELETE FROM customer
-  WHERE customer_id = 5;
+  WHERE customer_id = 6;
   ```
 
 * This does precisely what was desired: duplicate data is deleted, and original data is preserved.
