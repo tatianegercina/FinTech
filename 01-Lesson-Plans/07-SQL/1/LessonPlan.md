@@ -161,15 +161,17 @@ Type the following lines of code, explaining each line:
 
 * `state VARCHAR(10)` creates a `state` column that represents the state ticker in which the customer lives. The column values must be character strings of 2 characters.
 
-* `zip_code CHAR(5)` creates `zip_code` column which represents the postal zip code of the customer. The column values must be character strings of 5 characters.
+* `zip_code CHAR(5)` creates `zip_code` column which represents the postal zip code of the customer. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values *must* be character strings of 5 characters.
 
  **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
 
 After reviewing the code, click the play icon to run the script. Make a note of the Messages tab at the bottom of the screen.
 
- ![play_icon.png](Images/play_icon.png)
+![play_icon.png](Images/play_icon.png)
 
 Demonstrate that the structure of a table can be visualized by appending the script with `SELECT * FROM <table name>;`. Point out the "table already exists" error message that now appears at the bottom of the page.
+
+![table-exists](Images/table-exists.png)
 
 * SQL data is persistent; it is not deleted or overwritten when identical commands are run unless specifically commanded.
 
