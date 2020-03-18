@@ -229,9 +229,9 @@ In this activity, students will practice writing queries with aggregate function
 
 * [schema.sql](Activities/03-Stu_GregariousAggregates/Solved/schema.sql)
 
-* [seed.sql](Activities/03-Stu_GregariousAggregates/Unsolved/seed.sql)
+* [seed.sql](Activities/03-Stu_GregariousAggregates/Solved/seed.sql)
 
-* [query.sql](Activities/03-Stu_GregariousAggregates/Unsolved/query.sql)
+* [query.sql](Activities/03-Stu_GregariousAggregates/Solved/query.sql)
 
 Review the solution in pgAdmin and explain the following:
 
