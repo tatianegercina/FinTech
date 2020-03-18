@@ -1,6 +1,6 @@
 # PCA in Action
 
-In this activity, you will use PCA to reduce the dimensions of the consumers shopping dataset from `4` to `2` features. After applying PCA, you will use the principal components data to fit a k-means means model with `k=6` and make some conclusions.
+In this activity, you will use PCA to reduce the dimensions of the consumers shopping dataset from `4` to `2` features. After applying PCA, you will use the principal components data to fit a k-means model with `k=6` and make some conclusions.
 
 ## Instructions
 
