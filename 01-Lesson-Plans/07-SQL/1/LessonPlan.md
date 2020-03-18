@@ -495,7 +495,7 @@ CREATE TABLE banks (
 );
 ```
 
-Review the bonus for creating a new column using the `ALTER TABLE` and `ADD COLUMN` statements. Explain that adding the column name and data type is completed in the same manner as creating a new table.
+Review the bonus for creating a new column using the `ALTER TABLE` and `ADD COLUMN` statements. Explain that adding the column name and data type is completed in the same manner as creating a new table, and that the purpose of a BOOLEAN column could be to serve as a quick checkbox: True or False. In this case, the BOOLEAN column `mortgage_lender` serves as a value to represent banks that are eligible mortgage lenders.
 
 ```sql
 ALTER TABLE banks
