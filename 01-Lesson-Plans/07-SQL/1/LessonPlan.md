@@ -359,7 +359,8 @@ Using the `customer` table from the `example_db` database, insert the duplicate 
 INSERT INTO customer
 (first_name, last_name, gender, age, address, city, state, zip_code)
 VALUES
-('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709);
+('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
+('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
 
 SELECT *
 FROM customer;
