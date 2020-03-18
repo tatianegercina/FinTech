@@ -213,7 +213,7 @@ Ask the class if there are any further questions before moving to the next activ
 
 ### 4. Student Do: Understanding Customers (20 min)
 
-In this activity, students will perform some data preparation tasks on a dataset that contains data from purchases on an e-commerce website made by 200 customers. Students will use this dataset on further activities to find customer segments.
+In this activity, students will perform some data preparation tasks on a dataset that contains data from purchases on an e-commerce website made by 200 customers. Students will use this dataset in further activities to find customer segments.
 
 There are some data transformations that should be made to the dataset, so ask TAs to assist students if there are any questions about why the following changes are needed.
 
@@ -259,7 +259,7 @@ Walkthrough the solution and highlight the following:
   df_shopping.drop(columns=["CustomerID"], inplace=True)
   ```
 
-* Looking for `null` values and duplicate entries is part of any data preprocessing workflow; there are no `null` values nor duplicates on this DataFrame, so no additional adjustments are needed.
+* Looking for `null` values and duplicate entries is part of any data preprocessing workflow; there are no `null` values nor duplicates in this DataFrame, so no additional adjustments are needed.
 
 * The `Genre` column is categorical, so it should be transformed into numerical values. Transforming `Male` to `1` and `Female` to `0` is a common practice.
 
@@ -310,7 +310,7 @@ Open the lesson slides and move to the K-Means Algorithm section; go through the
 
 Explain to students that k-means is an unsupervised learning algorithm used to identify clusters and solve clustering issues.
 
-Continue on the slides to formally introduce k-means, and highlight the following:
+Continue on with the slides to formally introduce k-means, and highlight the following:
 
 * The k-means algorithm groups the data into `k` clusters, where each piece of data is assigned to a cluster based on some similarity or distance measure to a **centroid**.
 
@@ -634,7 +634,7 @@ Walkthrough the solution and highlight the following:
   shopping_pca = pca.fit_transform(shopping_scaled)
   ```
 
-Tell students that, when they fetch the explained variance, the first principal component will contain `33.7%` of the variance, and the second principal component will contain `26.2%` of the variance. Since we have `59.9%` of the information in the original dataset, it is worth to explore increasing the number of principal components up to three to verify if this ratio improves.
+Tell students that, when they fetch the explained variance, the first principal component will contain `33.7%` of the variance, and the second principal component will contain `26.2%` of the variance. Since we have `59.9%` of the information in the original dataset, it is worth it to explore increasing the number of principal components up to three to verify if this ratio improves.
 
 ![Explained variance with two PCs](Images/explained-variance-2pcs.png)
 
@@ -692,9 +692,9 @@ Collect two or three answers and emphasize the following points:
 
 * You get access to unlimited resources (in theory, maybe not in practice).
 
-* There are multiple services models, with trade-offs in responsibility and control. The most common are:
+* There are multiple service models, with trade-offs in responsibility and control. The most common are:
   * **Infrastructure as a service (IaaS):** Online services that provide APIs to access different infrastructures such as servers, virtual machines, storage, load balancers, or network interfaces (e.g., [Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/)).
-  * **Platform as a service (PaaS):** Provides a platform that allow customers to develop, run, and manage applications without the complexity of building and maintaining their own physical infrastructure (e.g., [Amazon Web Services](https://aws.amazon.com/)).
+  * **Platform as a service (PaaS):** Provides a platform that allows customers to develop, run, and manage applications without the complexity of building and maintaining their own physical infrastructure (e.g., [Amazon Web Services](https://aws.amazon.com/)).
   * **Software as a service (SaaS):** Refers to a software licensing and delivery model where software is licensed on a subscription basis and is centrally hosted (e.g., [Microsoft Office 365](https://www.office.com)).
   * **Function/code as a service (FaaS):** Also known as serverless computing, it offers a remote procedure call that enables the deployment of individual functions in the cloud that run in response to events (e.g., [AWS Lambda](https://aws.amazon.com/lambda/)).
 
@@ -772,7 +772,7 @@ Explain to students that learning how to train and deploy models with SageMaker 
 
 This activity is intended to give students a few minutes to explore SageMaker.
 
-Ask students to login into their [AWS Console](https://console.aws.amazon.com) and highlight the following:
+Ask students to log into their [AWS Console](https://console.aws.amazon.com) and highlight the following:
 
 * The Amazon SageMaker service could be reached at the Find Services search box by typing `sagemaker` in it.
 
