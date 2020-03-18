@@ -34,7 +34,7 @@ By the end of the class, students will be able to:
 
 * There are several theoretical aspects behind the k-means and PCA algorithms, focus the class on the practical application of these algorithms for customer segmentation and share the additional references presented on the slides for those students interested in having a deeper understanding.
 
-* The cloud is a core concept for FinTech professionals; however, it might be seen as complex and nebulous for some students; it's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud, by offering user-friendly interfaces that allow deployment of a machine-learning model with few lines of code and some mouse clicks.
+* The cloud is a core concept for FinTech professionals; however, it might be seen as complex and nebulous for some students; it's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud, by offering user-friendly interfaces that allow deployment of a machine-learning model with a few lines of code and some mouse clicks.
 
 * On Day 1, the homework demo is presented; be sure to get familiar with the homework's solutions before the class.
 
@@ -112,7 +112,7 @@ Students are already familiar with supervised learning algorithms and its applic
 
 Start a short facilitated discussion with students. Take one or two answers from the class by asking the following question:
 
-* If unsupervised learning deals with unlabeled data, what kind of questions or business problems do you think can we solve?
+* If unsupervised learning deals with unlabeled data, what kind of questions or business problems do you think we can solve?
 
   **Sample answer:** We can group customers on a retail chain by shopping habits, so we can send customized offers by email or mobile app to increase sales.
 
@@ -120,7 +120,7 @@ Start a short facilitated discussion with students. Take one or two answers from
 
   **Sample answer:** We can use unsupervised learning to cluster stock data so we can create investment portfolios according to the resulting groups.
 
-As an example, continue with the presentation on the slide titled "How can we understand our customers?" and then move forward by highlighting the following:
+As an example, continue the presentation with the slide titled "How can we understand our customers?" and then move forward by highlighting the following:
 
 * Beyond the typical segmentation variables, such as age, gender, income, or zip code, understanding customers is crucial in every sector.
 
@@ -136,7 +136,7 @@ As an example, continue with the presentation on the slide titled "How can we un
 
 * Customer segmentation is one of the most popular applications of unsupervised learning. It is the division of potential customers in a given market into discrete groups.
 
-* Thanks to unsupervised learning algorithms, we can group customers based similarities such as:
+* Thanks to unsupervised learning algorithms, we can group customer based similarities such as:
 
   * Customer needs (e.g., a particular product can satisfy some of them)
   * Responses to online marketing channels
@@ -200,7 +200,7 @@ Open the unsolved version of the Jupyter Notebook, live code the demo, and highl
 
 Explain to students that since all the variables on the dataset are numerical, there are no additional data preprocessing tasks to do. However, data transformations have to be done when there are categorical data or non-numeric features on the dataset. For example, transforming `male` and `female` categorical values to `0` and `1`.
 
-* Finally, the preprocessed DataFrame is saved on a new `CSV` file for further use.
+* Finally, the preprocessed DataFrame is saved as a new `CSV` file for further use.
 
   ```python
   file_path = Path("../Resources/new_iris_data.csv")
