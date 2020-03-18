@@ -374,7 +374,7 @@ WHERE first_name = 'Michael';
 
 * To prevent this kind of thing from occurring, programmers will often want to create a column that automatically populates each new row with unique data. This allows them to select and modify that row more easily.
 
-Remove the `customer` table by running the following line of code:
+Remove the `customer` table by running the `DROP TABLE` statement. As the name suggests, the `DROP TABLE` statement "drops" or deletes a table.
 
  ```sql
  -- Delete the table "customer"
@@ -655,9 +655,9 @@ This activity will require students to do some research. Links are provided to h
 
 **Files:**
 
-* [schema.sql](Activities/08-Stu_CRUD/Resources/schema.sql)
+* [schema.sql](Activities/08-Stu_CRUD/Solved/schema.sql)
 
-* [seed.sql](Activities/08-Stu_CRUD/Resources/seed.sql)
+* [seed.sql](Activities/08-Stu_CRUD/Solved/seed.sql)
 
 * [query.sql](Activities/08-Stu_CRUD/Solved/query.sql)
 
