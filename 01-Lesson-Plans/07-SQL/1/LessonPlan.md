@@ -355,6 +355,8 @@ In this activity, students are introduced to the concept of duplicate and unique
 
 Using the `customer` table from the `example_db` database, insert the duplicate data below into the table, and then visualize the table with the new information.
 
+![duplicate-records](Images/duplicate-records.png)
+
  ```sql
 INSERT INTO customer
 (first_name, last_name, gender, age, address, city, state, zip_code)
