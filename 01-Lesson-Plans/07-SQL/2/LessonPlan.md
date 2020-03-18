@@ -288,13 +288,13 @@ Open pgAdmin and explain the following:
 
 Answer any questions before moving on.
 
-### 7. Student Do: Movies Ordered By (15 min)
+### 7. Student Do: Payments Ordered By (15 min)
 
 In this activity, you will use `ORDER BY` in combination with other SQL methods to query and order the tables.
 
 **Instructions:** [README.md](Activities/05-Stu_Order_By/README.md)
 
-### 8. Instructor Do: Review Movies Ordered By (5 min)
+### 8. Instructor Do: Review Payments Ordered By (5 min)
 
 **File:** [query.sql](Activities/05-Stu_Order_By/Solved/query.sql)
 
