@@ -1,5 +1,5 @@
 -- Delete the table "customer"
-DROP TABLE customer;
+DROP TABLE IF EXISTS customer;
 
 -- Re-create the table "customer"
 CREATE TABLE customer (

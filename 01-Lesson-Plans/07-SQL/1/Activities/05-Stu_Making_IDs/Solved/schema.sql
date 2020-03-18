@@ -1,5 +1,5 @@
--- Drop table if exists
-DROP TABLE banks;
+-- Drop table "banks"
+DROP TABLE IF EXISTS banks;
 
 -- Create new table
 CREATE TABLE banks (

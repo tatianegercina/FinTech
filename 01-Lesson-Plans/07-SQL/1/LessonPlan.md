@@ -376,11 +376,11 @@ WHERE first_name = 'Michael';
 
 * To prevent this kind of thing from occurring, programmers will often want to create a column that automatically populates each new row with unique data. This allows them to select and modify that row more easily.
 
-Remove the `customer` table by running the `DROP TABLE` statement. As the name suggests, the `DROP TABLE` statement "drops" or deletes a table.
+Remove the `customer` table by running the `DROP TABLE` statement. As the name suggests, the `DROP TABLE` statement "drops" or deletes a table, while the `IF EXISTS` clause provides a conditional for dropping the table: if the table exists, then drop the table, otherwise skip the statement.
 
  ```sql
  -- Delete the table "customer"
- DROP TABLE customer;
+ DROP TABLE IF EXISTS customer;
  ```
 
 Copy the following code from `schema.sql`, `seed.sql`, and `query.sql` file and paste it in the pgAdmin editor.
