@@ -169,7 +169,7 @@ After reviewing the code, click the play icon to run the script. Make a note of 
 
 ![play_icon.png](Images/play_icon.png)
 
-Demonstrate that the structure of a table can be visualized by appending the script with `SELECT * FROM <table name>;`. Point out the "table already exists" error message that now appears at the bottom of the page.
+Demonstrate that the structure of a table can be visualized by appending the script with `SELECT * FROM <table name>;`. Point out that when running the appended script, a "relation <table_name> already exists" error message now appears at the bottom of the page due to the preceding `CREATE TABLE` statement.
 
 ![table-exists](Images/table-exists.png)
 
