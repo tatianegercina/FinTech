@@ -296,12 +296,14 @@ Create a new database named `state_info` in pgAdmin. Then use the the schema.sql
 
 * Note the syntax here. Even though the code can fit on a single line, it's good practice to split it up over two lines instead. This way, the code is easier to read when more advanced queries are created.
 
-Using the `SELECT` clause again, query the data to return only the state names in the table.
+* Using the `SELECT` clause again, query the data to return only the state names in the table.
 
   ```sql
   SELECT state_name
   FROM states;
   ```
+
+Walk through the solution to the first and second bonus question.
 
 * The first bonus question is very similar to the previous query executed in that it displays only the values of a single column.
 
@@ -480,7 +482,20 @@ Open [query.sql](Activities/05-Stu_Making_IDs/Solved/query.sql) and copy the cod
 
 Go over the lines of code used to create the ID and set it as the primary key. Make sure the class understands how this works, and explain how useful this will be in this week's homework.
 
-Review how to create a new column using the `ALTER TABLE` and `ADD COLUMN` statements. Explain that adding the column name and data type is completed in the same manner as creating a new table.
+```sql
+CREATE TABLE banks (
+  bank_id SERIAL PRIMARY KEY,
+  bank_name VARCHAR(50),
+  bank_routing_number BIGINT
+);
+```
+
+Review the bonus for creating a new column using the `ALTER TABLE` and `ADD COLUMN` statements. Explain that adding the column name and data type is completed in the same manner as creating a new table.
+
+```sql
+ALTER TABLE banks
+ADD COLUMN mortgage_lender BOOLEAN default true;
+```
 
 Answer any questions before moving on.
 
@@ -494,15 +509,13 @@ Answer any questions before moving on.
 
 In this activity, students learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
 
-**Note:** For students having issues using the pgAdmin Import/Export tool, there is an included [seed.sql](Activities/06-Ins_Importing_Data/Solved/query.sql) file for each activity in the remaining half of the day. Have students refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
+**Note:** If issues arise when using the pgAdmin Import/Export tool, there is an included [seed.sql](Activities/06-Ins_Importing_Data/Solved/seed.sql) file within the Solved folder of each instructor/student activity in the remaining half of the day. Distribute and use the file when necessary and refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
 
 **Files:**
 
 * [mortgage.csv](Activities/06-Ins_Importing_Data/Resources/mortgage.csv)
 
 * [schema.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
-
-* [seed.sql (optional)](Activities/06-Ins_Importing_Data/Solved/seed.sql)
 
 * [query.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
 
@@ -514,7 +527,7 @@ Open the CSV file within an integrated development environment, such as Excel, t
 
 * Open a query tool within `mortgage_db` and create a table named `mortgage`. Point out that the columns created match the data in the CSV file.
 
-* Once the table has been created, right-click Miscellaneous_DB from the left-hand menu and select Refresh.
+* Once the table has been created, right-click `mortgage_db` from the left-hand menu and select Refresh.
 
 * Scroll down to Schemas and expand that menu, and then expand the Tables menu.
 
@@ -562,7 +575,7 @@ In this activity, students will create a new table and import data from a CSV fi
 
 * [query.sql](Activities/07-Stu_Customer_Demographics/Solved/query.sql)
 
-Open pgAdmin and paste the code from [query.sql](Activities/07-Stu_Customer_Demographics/Solved/query.sql) into the editor. Explain the following:
+Open pgAdmin and paste the code from the schema.sql and query.sql files into the editor. Explain the following:
 
 * Although the CSV data does not contain an `id` column, when we specify `SERIAL PRIMARY KEY` while creating the table, IDs will automatically be assigned to each row.
 
@@ -570,9 +583,7 @@ Open pgAdmin and paste the code from [query.sql](Activities/07-Stu_Customer_Demo
 
 * To collect data that exists in either one column or another, the `OR` statement is included in the query.
 
-Walkthrough the solutions to the bonus questions, touching on the following points:
-
-* After importing the second table, we can specify a source with the `WHERE` statement.
+Walk through the solutions to the bonus questions, touching on the following point:
 
 * `AND` statements can be used more than once for more specific results.
 
@@ -661,19 +672,15 @@ This activity will require students to do some research. Links are provided to h
 
 * [query.sql](Activities/08-Stu_CRUD/Solved/query.sql)
 
-Open a query tool in `sales_db` and copy and paste the code from schema.sql to create a new table named `sales`. Go over the following:
+Open a query tool in `sales_db` and copy and paste the code from schema.sql and seed.sql to create and populate a new table named `sales`. Then explain the following:
 
-* Refresh the table list, and then import the data from `sales.csv` into the new table.
-
-* First, alter the table to add an `id`.
+* Select statements read the data from the table and outputs the specified columns.
 
 * Deletions and updates are made where the conditions are met.
 
-* Multiple averages can be selected at once.
+* An average of all values in a specified column can be calculated using the `AVG()` function.
 
-* Values can be inserted into the table even though not every value is filled out.
-
-* Finally, select all values to show the newly added country.
+* Columns can be added to pre-existing tables using the ALTER TABLE statement.
 
 ### 17. Instructor Do: Joins (15 min)
 
@@ -687,15 +694,13 @@ In this activity, students are introduced to the concept of joins -- the combina
 
 * [schema.sql](Activities/09-Ins_Joins/Solved/schema.sql)
 
-* [seed.sql (optional)](Activities/09-Ins_Joins/Solved/seed.sql)
-
 * [query.sql](Activities/09-Ins_Joins/Solved/query.sql)
 
 Students may recall working with merges and joins to combine datasets during the Pandas unit. While SQL is a vastly different language than Python, it also includes the functionality to merge tables.
 
 Create two new tables in `mortgage_db` in pgAdmin named `sales` and `mortgage`.
 
-* Copy the code from [query.sql](Activities/09-Ins_Joins/Solved/query.sql) to create the tables, and then import the corresponding data from `sales.csv` and `mortgage.csv`.
+* Copy the code from [schema.sql](Activities/09-Ins_Joins/Solved/schema.sql) to create the tables, and then import the corresponding data from `sales.csv` and `mortgage.csv`.
 
 * Remember to refresh the database; newly created tables will not immediately appear.
 
@@ -786,20 +791,66 @@ In this activity, students will be using joins to query payment information and 
 
 * [query.sql](Activities/10-Stu_Joins/Solved/query.sql)
 
-Using the schema.sql file and the query tool, create two new tables named `banks` and `payments` using the data in `banks.csv` and `payments.csv`.
+Using the schema.sql file and the query tool, create two new tables named `payments` and `banks` using the data in `payments.csv` and `banks.csv`.
 
-Open query.sql and copy the code. Then open a new query tool and paste the solution into the editor. Review the solution, explaining the following:
+Open the query.sql file and copy the code. Then open a new query tool and paste the solution into the editor. Review the solution, explaining the following:
 
-* Since the selected data comes from two different tables, the naming convention is `table_name.column_name`.
+* Since the selected data comes from two different tables, the naming convention is `table_name.column_name`, which is aliased as simply `a.column_name` and `b.column_name` in this case.
 
-* Next, determine which table to select from and which table to `INNER JOIN` with. Remember, the inner join only selects data that has matching values in both tables.
-
-* Finally, determine the key both tables will join on. For example, to join the two tables by using the `id` and an `INNER JOIN`, select the data columns to be viewed from both tables, and then specify which columns the tables will be connected by.
+* An inner join returns the matching records from both the left and right-side tables.
 
   ```sql
   select *
-  from sales
-  INNER JOIN payments ON sales.payment_id = payments.payment_id
+  from payments as a
+  INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+  ```
+
+* A left join returns all of the records from the left table regardless of matching or unmatching records on the right table.
+
+  ```sql
+  select *
+  from payments as a
+  LEFT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+  ```
+
+* A right join returns all of the records from the right table regardless of matching or unmatching records on the left table.
+
+  ```sql
+  select *
+  from payments as a
+  RIGHT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+  ```
+
+* A full outer join returns all of the records from both the left and right tables regardless of matching or unmatching in either side.
+
+  ```sql
+  -- Perform a FULL OUTER JOIN
+  select *
+  from payments as a
+  FULL OUTER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+  ```
+
+* A cross join pairs every row from the left table with every row from the right table.
+
+  ```sql
+  -- Perform a CROSS JOIN
+  select *
+  from payments
+  CROSS JOIN banks;
+  ```
+
+* In order to find the customers with Wells Fargo bank accounts, the banks and customer tables must be joined together with the payments table. This is because the customer table cannot directly join to the banks table as there is no common key or column; however, by using the payments table as a joiner table (containing both a `bank_routing_number` and a `customer_id`), customers can be linked to payment records that are linked to Wells Fargo bank accounts.
+
+  ```sql
+  select a.payment_id,
+         a.bank_number,
+         a.bank_routing_number,
+         b.bank_name,
+         c.first_name,
+         c.last_name
+  from payments as a
+  INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number
+  INNER JOIN customer as c ON a.customer_id = c.customer_id
   ```
 
 Answer any questions before ending the class.

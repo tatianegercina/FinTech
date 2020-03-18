@@ -6,7 +6,7 @@ In this activity, you will be using joins to query payment information and assoc
 
 1. Create a new database named `payments_db`.
 
-2. Use the `schema.sql` and the pgAdmin Import/Export tool to create the following tables:
+2. Use the the pgAdmin Import/Export tool to create the `payments` and `banks` tables:
 
     * [payments.csv](Resources/payments.csv)
 

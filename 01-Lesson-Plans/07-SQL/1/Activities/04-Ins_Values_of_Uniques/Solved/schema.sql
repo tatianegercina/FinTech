@@ -1,7 +1,7 @@
 -- Delete the table "customer"
 DROP TABLE customer;
 
--- Re-create the table "customer" within mortgage_db
+-- Re-create the table "customer"
 CREATE TABLE customer (
   customer_id SERIAL PRIMARY KEY,
   first_name VARCHAR(30) NOT NULL,

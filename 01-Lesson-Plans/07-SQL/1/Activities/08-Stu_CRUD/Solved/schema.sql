@@ -1,5 +1,5 @@
 -- Drop table if exists
-DROP TABLE sales;
+DROP TABLE IF EXISTS sales;
 
 -- Create new table to import data
 CREATE TABLE sales (

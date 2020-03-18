@@ -1,26 +1,35 @@
--- Join players with seasons_stats
-SELECT players.id,
-  players.player,
-  players.height,
-  players.weight,
-  players.college,
-  players.born,
-  seasons_stats.position,
-  seasons_stats.tm
-FROM players
-INNER JOIN seasons_stats ON
-players.id = seasons_stats.player_id;
+-- Perform an INNER JOIN
+select *
+from payments as a
+INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
 
+-- Perform a LEFT JOIN
+select *
+from payments as a
+LEFT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
 
--- Join seasons_stats with players
-SELECT seasons_stats.player_id,
-  players.college,
-  seasons_stats.year,
-  seasons_stats.position,
-  seasons_stats.Two_Point_Percentage,
-  seasons_stats.FG_Percentage,
-  seasons_stats.FT_Percentage,
-  seasons_stats.TS_Percentage
-FROM seasons_stats
-INNER JOIN players ON
-players.id = seasons_stats.player_id;
+-- Perform a RIGHT JOIN
+select *
+from payments as a
+RIGHT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+
+-- Perform a FULL OUTER JOIN
+select *
+from payments as a
+FULL OUTER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+
+-- Perform a CROSS JOIN
+select *
+from payments
+CROSS JOIN banks;
+
+-- BONUS
+select a.payment_id,
+	     a.bank_number,
+	     a.bank_routing_number,
+	     b.bank_name,
+	     c.first_name,
+	     c.last_name
+from payments as a
+INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number
+INNER JOIN customer as c ON a.customer_id = c.customer_id

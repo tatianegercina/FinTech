@@ -1,5 +1,5 @@
 -- Drop table if exists
-DROP TABLE mortgage;
+DROP TABLE IF EXISTS mortgage;
 
 -- Create new table
 CREATE TABLE mortgage (
