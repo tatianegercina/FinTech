@@ -10,7 +10,7 @@ WHERE first_name = 'Michael';
 -- Update a single row to change the `first_name` and `age` column data
 UPDATE customer
 SET first_name = 'Brian', age = 20
-WHERE id = 6;
+WHERE customer_id = 6;
 
 SELECT *
 FROM customer;

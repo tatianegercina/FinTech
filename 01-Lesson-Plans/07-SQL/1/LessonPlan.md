@@ -54,7 +54,7 @@ By the end of class, students will be able to:
 
 Welcome students to class and congratulate them on making it this far in the course! At this point, students are only one unit away from their first project, and so they should feel proud of what they have accomplished so far!
 
-Open the slideshow and overview the learning outcomes, class objectives, and a brief background of the SQL unit:
+Open the slideshow and review the learning outcomes, class objectives, and a brief background of the SQL unit:
 
 * Today's lesson will introduce students to the most popular database management language: SQL.
 
@@ -155,7 +155,7 @@ Type the following lines of code, explaining each line:
 
 * `age INT` creates an `age` column that represents the age of a customer. The column values must be integers.
 
-* `address VARCHAR(50)` creates an `address` column that represents the street address of a customer. The column values can which can hold character strings of up to 50 characters.
+* `address VARCHAR(50)` creates an `address` column that represents the street address of a customer. The column values can hold character strings of up to 50 characters.
 
 * `city VARCHAR(50)` creates a `city` column that represents the city in which the customer lives. The column values can hold character strings of up to 50 characters.
 
@@ -324,7 +324,7 @@ Walk through the solution to the first and second bonus question.
   WHERE population > 5000000;
   ```
 
-* Note that the `WHERE` clause is highly customizable, and can use several operators like `<` (less than), `>` (greater than), and `=` (equals to).
+* Note that the `WHERE` clause is highly customizable, and can use several operators like `<` (less than), `>` (greater than), and `=` (equal to).
 
 Walk through the solution to the third and final bonus question.
 
@@ -515,7 +515,7 @@ In this activity, students learn how to import data (CSV) into an existing table
 
 * [mortgage.csv](Activities/06-Ins_Importing_Data/Resources/mortgage.csv)
 
-* [schema.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
+* [schema.sql](Activities/06-Ins_Importing_Data/Solved/schema.sql)
 
 * [query.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
 
