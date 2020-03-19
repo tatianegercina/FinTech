@@ -4,7 +4,7 @@ In this activity, you will practice creating subqueries.
 
 ## Instructions
 
-Use the [`payment`](Resources/payment.csv), [`customer`](Resources/customer.csv), and [`rental`](Resources/rental.csv) tables to answer the following subquery questions:
+Use the [`payment`](Resources/payment.csv), [`customer`](Resources/customer.csv), [`staff`](Resources/staff.csv) and [`rental`](Resources/rental.csv) tables to answer the following subquery questions:
 
 1. Find the customer records of those who have made payments.
 
