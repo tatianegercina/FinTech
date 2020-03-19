@@ -56,7 +56,7 @@ Remember that because FinTech is an evolving field, different FinTech reports ma
 
 #### 2. Choose a company (or project) within  your chosen Fintech domain.
 
-Use online research to identify the trends in your domain, and choose a company that is successful or otherwise interesting to you. For example, if you chose Wealth Management, you may want to look at online journals, periodicals, reports, and websites about the future of Wealth Management, or how FinTech is changing or disrupting Wealth Management.
+Use online research to identify the trends in your domain, and choose a company that is successful or otherwise interesting to you. For example, if you chose wealth management, you may want to look at online journals, periodicals, reports, and websites about the future of wealth management, or how FinTech is changing or disrupting wealth management.
 
 Your company could be:
 
@@ -64,13 +64,13 @@ Your company could be:
 
 * A large incumbent financial or technology company that is doing something interesting and new with technology. Examples include Goldman Sachs’ Marcus, JP Morgan’s JPMCoin, Facebook Libra, and Apple Card.
 
-* A smaller start-up that is not yet wildly successful, but that you find promising and interesting. This may include a FinTech company in your local area or a company with a new idea that you would like to learn more about.
+* A smaller startup that is not yet wildly successful, but that you find promising and interesting. This may include a FinTech company in your local area, or a company with a new idea that you would like to learn more about.
 
 #### 3. Conduct your research, using the case study template as a guide.
 
 We recommend that you use the case study template below in order to focus your research. You may lengthen, shorten, or––if necessary––remove sections from the template to accommodate the information available about your company.
 
-**Note** If you have chosen a project within a larger company (such as the Apple Credit Card), you may want to focus your research on the origins and scope of the project rather than on the company itself.
+**Note** If you have chosen a project within a larger company (such as the Apple Card), you may want to focus your research on the origins and scope of the project, rather than on the company itself.
 
 **Case Study Template**
 
@@ -166,7 +166,7 @@ For an overview of some of the most successful companies across FinTech domains,
 
 ### Research Material
 
-As you research your company, you may find these types resources to be useful:
+As you research your company, you may find these types of resources useful:
 
 * The company’s website
 
@@ -180,7 +180,7 @@ As you research your company, you may find these types resources to be useful:
 
 * Interviews with the company’s founders, CTOs, or project leads
 
-* Reports devoted to the particular FinTech domain you are focusing on (e.g.,  FinTech in the mortgage industry)
+* Reports devoted to the particular FinTech domain you are focusing on (e.g., FinTech in the mortgage industry)
 
 * [Forbes](https://www.forbes.com/fintech/#39ae67bc13f1)
 
@@ -216,4 +216,4 @@ As you research your company, you may find these types resources to be useful:
 
 - - -
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
