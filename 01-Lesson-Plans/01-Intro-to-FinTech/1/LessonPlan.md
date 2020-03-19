@@ -199,9 +199,9 @@ Set up the prompt for the following thought exercise by asking students the foll
 
 ### 9. Student Do: Rip Van Winkle Thought Exercise (10 min)
 
-In this activity, students will reflect on how the current state of the FinTech world may differ from that of someone from the year 1999.
+In this activity, students will form groups of three or four and reflect on how the current state of the FinTech world differs from the year 1999.
 
-Quickly explain to the class the following:
+Quickly explain the following to the class:
 
 * *Rip Van Winkle* is a short story by the American author Washington Irving, first published in 1819. It follows a Dutch American villager in colonial America named Rip Van Winkle, who falls asleep in the Catskill Mountains and wakes up 20 years later, completely missing the events of the American Revolution.
 
@@ -209,7 +209,7 @@ Quickly explain to the class the following:
 
 * Students should define areas of finance that have been deeply affected by technology, naming specific companies, products, or innovations that would be surprising to a financial analyst from 1999.
 
-* Students should form groups of three or four. Each group will present their thoughts during the review portion of this activity.
+* Each group will present their thoughts during the review portion of this activity.
 
 ---
 
