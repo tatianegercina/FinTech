@@ -588,7 +588,13 @@ In this activity, students will pair up and practice their join and subquery ski
 
 ### 15. Instructor Do: Review a View with a Roomful of Queries (5 min)
 
-**File**: [query.sql](Activities/09-Stu_View_Room_Queries/Solved/query.sql)
+**Files**:
+
+* [schema.sql](Activities/09-Stu_View_Room_Queries/Solved/schema.sql)
+
+* [seed.sql](Activities/09-Stu_View_Room_Queries/Solved/seed.sql)
+
+* [query.sql](Activities/09-Stu_View_Room_Queries/Solved/query.sql)
 
 Review the code in the solution file and explain the following:
 
