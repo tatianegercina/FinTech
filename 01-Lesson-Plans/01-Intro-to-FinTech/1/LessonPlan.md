@@ -141,7 +141,7 @@ Use the slideshow to go over the course agenda and timeline.
 
 * **Weeks 2–7:** Students will learn the basics of Python and how to use additional libraries and tools such as Pandas, APIs, Plotly, and SQL databases, in the context of financial analysis.
 
-* **Weeks 8–9** Students are tasked with their first project.
+* **Weeks 8–9:** Students are tasked with their first project.
 
 * **Weeks 10–15:** Companies are becoming more and more data-driven in their decision-making. Through machine learning, students will learn how to interpret and create financial models as well as automate the execution of such models. Topics include algorithmic trading, robo-advisors, time series analysis, risk management, and Cloud ML technologies.
 
