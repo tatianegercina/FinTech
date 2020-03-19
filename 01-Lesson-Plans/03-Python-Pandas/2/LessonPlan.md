@@ -96,6 +96,8 @@ Ask the class what the pain points they have experienced while using spreadsheet
 
 * Cell formulas can be difficult to edit.
 
+* Formulas can be difficult to audit when they span multiple sheets, and no two analysts will build them in a consistent way
+
 * Spreadsheets can only hold so much data; the more data that is stored, the slower the workbook runs.
 
 * Excel files often stop responding and are vulnerable to corruption.
