@@ -582,9 +582,13 @@ For the remainder of the activity, have students create and drop their views.
 
 In this activity, students will pair up and practice their join and subquery skills, as well as build out a view.
 
-* **File:** [subquery.png](Images/subquery.png)
+**Files**:
 
-* **Instructions:** [README.md](Activities/09-Stu_View_Room_Queries/README.md)
+* [payment.csv](Activities/09-Stu_View_Room_Queries/Resources/payment.csv)
+
+* [customer.csv](Activities/09-Stu_View_Room_Queries/Resources/customer.csv)
+
+**Instructions:** [README.md](Activities/09-Stu_View_Room_Queries/README.md)
 
 ### 15. Instructor Do: Review a View with a Roomful of Queries (5 min)
 
