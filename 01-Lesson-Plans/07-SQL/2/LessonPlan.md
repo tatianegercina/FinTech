@@ -502,7 +502,13 @@ Review the solution in pgAdmin and explain the following:
 
 In this activity, students will learn how to create and utilize views, virtual tables that can be created from a single table, multiple tables, or another view.
 
-**File:** [query.sql](Activities/08-Ins_Create_Views/Solved/query.sql)
+**Files:**
+
+* [schema.sql](Activities/08-Ins_Create_Views/Solved/schema.sql)
+
+* [seed.sql](Activities/08-Ins_Create_Views/Solved/seed.sql)
+
+* [query.sql](Activities/08-Ins_Create_Views/Solved/query.sql)
 
 Use the `SQL Views` section of the slides to begin the discussion of views.
 
