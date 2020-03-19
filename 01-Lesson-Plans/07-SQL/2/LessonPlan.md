@@ -441,7 +441,13 @@ In this activity, students will practice creating subqueries.
 
 ### 12. Instructor Do: Review Subqueries (5 min)
 
-**File:** [query.sql](Activities/07-Stu_Subqueries/Solved/query.sql)
+**Files:**
+
+* [schema.sql](Activities/07-Stu_Subqueries/Solved/schema.sql)
+
+* [seed.sql](Activities/07-Stu_Subqueries/Solved/seed.sql)
+
+* [query.sql](Activities/07-Stu_Subqueries/Solved/query.sql)
 
 Review the solution in pgAdmin and explain the following:
 

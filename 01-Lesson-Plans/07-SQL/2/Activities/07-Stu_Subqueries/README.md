@@ -10,7 +10,7 @@ Use the [`payment`](Resources/payment.csv), [`customer`](Resources/customer.csv)
 
 2. Find the staff records of those who have helped customers make payments.
 
-3. Find the rental records of all films that have been paid for.
+3. Find the rental records of all films that have been rented out and paid for.
 
 ## Bonus
 
