@@ -2,7 +2,7 @@
 
 ### Overview
 
-In Today's class, students will be introduced to conversational user interfaces (CUIs); they will learn how CUIs are disrupting finance and banking. By the end of the class, students will create a robo-advisor using Amazon Lex and Amazon Lambda.
+In today's class, students will be introduced to conversational user interfaces (CUIs); they will learn how CUIs are disrupting finance and banking. By the end of the class, students will create a robo-advisor using Amazon Lex and Amazon Lambda.
 
 ### Class Objectives
 
@@ -20,7 +20,7 @@ By the end of the class, students will be able to:
 
 * Slack out the [Deep Learning Installation Guide](../../14-Deep-Learning/Supplemental/deep_learning_installation_guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
-* There are several misconceptions and myths about what can be achieved with a Robo Advisor, make sure students understand what a Robo Advisor is, and invite them to think about the endless possibilities of this technology for FinTech.
+* There are several misconceptions and myths about what can be achieved with a Robo Advisor. Make sure students understand what a Robo Advisor is, and invite them to think about the endless possibilities of this technology for FinTech.
 
 * Today's class may be challenging for students because they are going to deal with different AWS services, so be sure to get familiar with all the activities before class.
 
@@ -28,7 +28,7 @@ By the end of the class, students will be able to:
 
 * Testing Amazon Lambda functions could be tricky and frustrating, so have your TAs assisting students while they are coding and testing them.
 
-* **Important:** At the end of Today´s class, remember students to create a local copy of all their deployments on AWS, so they can delete them from the cloud to avoid additional charges. Also, remind students to be aware of the AWS free tier and trial expiration date.
+* **Important:** At the end of today´s class, remind students to create a local copy of all their deployments on AWS, so they can delete them from the cloud to avoid additional charges. Also, remind students to be aware of the AWS free tier and trial expiration date.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -66,9 +66,9 @@ Engage students by highlighting the benefits of this technology on finance and b
 
 Present to students the use cases shown on the _Example Chatbots Use Cases_ slide, ask a couple of them if they are familiar with services like these, and what was their experience.
 
-Explain to the class the technologies we will use Today and highlight the following:
+Explain to the class the technologies we will use today and highlight the following:
 
-* By the end of Today's class, we will create a robo-advisor using AWS.
+* By the end of today's class, we will create a robo-advisor using AWS.
 
 * Amazon Lex is a service for building conversational interfaces into any application using voice and text.
 
@@ -106,13 +106,13 @@ Start this activity by opening the slides to the "Intro to Amazon Lex" section a
 
   4. Deploy the bot on a mobile application or a messaging platform such as Slack, Kik, or Facebook Messenger.
 
-Introduce the Amazon Lex jargon to students and comment that they will gain hands-on experience with these concepts in Today's class.
+Introduce the Amazon Lex jargon to students and comment that they will gain hands-on experience with these concepts in today's class.
 
 * **Bot:** It's the core component of Amazon Lex. A bot performs automated tasks such as booking a hotel, making a wire transfer, or suggesting an investment portfolio.
 
 * **Intent:** Represents an action that the user wants to perform, such as BookHotel, TransferMoney, or SuggestPortfolio. A bot can have more than one intent.
 
-* **Utterances:** Speech or text phrases that trigger the intent. They refer to the dialog between the user and the boot.
+* **Utterances:** Speech or text phrases that trigger the intent. They refer to the dialog between the user and the bot.
 
 * **Slots:** A piece of data that is necessary for the chatbot to fulfill the user’s intent. Think of it as required user input.
 
@@ -122,7 +122,7 @@ Clarify to students that Amazon Lex is available only in a few AWS regions (Oreg
 
 For the latest list of the supported Amazon Lex AWS regions, slack out to students [the link of the AWS Region Table for all AWS global infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/). We will use `US West (Oregon)` for running the examples.
 
-Slack out the [Amazon Lex Pricing policies](https://aws.amazon.com/lex/pricing/), remind students that from the date they get started with Amazon Lex, they can process up to 10,000 text requests and 5,000 speech requests per month for free for the first year. **Note:** This is subject to change, so they should verify the pricing structure using the link above.
+Slack out the [Amazon Lex Pricing policies](https://aws.amazon.com/lex/pricing/). Remind students that from the date they get started with Amazon Lex, they can process up to 10,000 text requests and 5,000 speech requests per month for free for the first year. **Note:** This is subject to change, so they should verify the pricing structure using the link above.
 
 Close the presentation and open the AWS Management Console, explain to students that now you will create an Amazon Lex bot that will assist users to split a bill between a given number of people.
 
@@ -156,7 +156,7 @@ Follow the next steps to perform a live demo.
   * _Sentiment analysis:_ `No`
   * _COPPA:_ Select `No`
 
-  Explain to students that late in 2019, Amazon Web Services added the "sentiment analysis" feature to Amazon Lex. This feature allows scoring the sentiment of users' utterances using another service called [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html) that implies additional charges. We are not going to use this feature in Today's class, but slack out [the sentiment analysis documentation](https://docs.aws.amazon.com/lex/latest/dg/sentiment-analysis.html) to students for further research.
+  Explain to students that late in 2019, Amazon Web Services added the "sentiment analysis" feature to Amazon Lex. This feature allows scoring the sentiment of users' utterances using another service called [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html) that implies additional charges. We are not going to use this feature in today's class, but slack out [the sentiment analysis documentation](https://docs.aws.amazon.com/lex/latest/dg/sentiment-analysis.html) to students for further research.
 
   Once you configure the bot, click the `Create` button to continue:
 
@@ -166,7 +166,7 @@ Follow the next steps to perform a live demo.
 
    ![Step 6](Images/lex-step6.png)
 
-* **Step 7:** In this step, you should give a name to the intent, explain to students that usually intents are named as actions to be performed by the bot, type `ShareBill`, and click on the _Add_ button to continue.
+* **Step 7:** In this step, you should give a name to the intent. Explain to students that usually intents are named as actions to be performed by the bot, type `ShareBill`, and click on the _Add_ button to continue.
 
   ![Step 7](Images/lex-step7.png)
 
@@ -192,17 +192,17 @@ Follow the next steps to perform a live demo.
   * _Confirm prompt:_ `Are you sure you want to split a bill for ${totalAmount} between {numberPeople} people?`
   * _Cancel prompt:_ `Okay, let's start again.`
 
-  Explain to students that in the confirm prompt, `{totalAmount}` and `{numberPeople}` are a kind of variables that will be filled out with the values given by the user.
+  Explain to students that in the confirm prompt, `{totalAmount}` and `{numberPeople}` are a kind of variable that will be filled out with the values given by the user.
 
 * **Step 9:** Now it is time to see the bot in action, build your bot by clicking on the _Build_ button, and confirming the build option on the pop-up window.
 
   ![Step 9a](Images/lex-step9a.png)
 
-  The building process takes a couple of minutes. Once the process finished, you will see the following confirmation message, and the _Test bot_ window will appear. You can now close the confirmation message and test your bot.
+  The building process takes a couple of minutes. Once the process is finished, you will see the following confirmation message, and the _Test bot_ window will appear. You can now close the confirmation message and test your bot.
 
   ![Step 9b](Images/lex-step9b.png)
 
-* **Step 10:** Test your boot using the first sample utterance. You should have a dialog with the bot as follows.
+* **Step 10:** Test your bot using the first sample utterance. You should have a dialog with the bot as follows.
 
    ![Step 10](Images/lex-step10.gif)
 
@@ -216,7 +216,7 @@ Answer any pending questions before continuing.
 
 ### 3. Students Do: Simple Crypto Conversation (15 min)
 
-In Today's class, students will create a bot that converts a given amount on US Dollars to its value in bitcoin `BTC`, ethereum `ETH`, or ripple `XRP`. In this activity, students will start creating the bot by defining an intent, some sample utterances, and two slots to convert from US Dollars to `BTC`.
+In today's class, students will create a bot that converts a given amount of US Dollars to its value in bitcoin `BTC`, ethereum `ETH`, or ripple `XRP`. In this activity, students will start creating the bot by defining an intent, some sample utterances, and two slots to convert from US Dollars to `BTC`.
 
 **Instructions:**
 
@@ -232,13 +232,13 @@ In Today's class, students will create a bot that converts a given amount on US 
 
 You can choose to live demo the solution or import the solution file into your Amazon Lex console.
 
-To import the solution, click on the _Import_ option into the _Actions_ button and select the provided ZIP file; once the import process ends, you will have the bot and the intent available on your Amazon Lex console, be sure to build the bot before starting the review activity.
+To import the solution, click on the _Actions_ button, choose the _Import_ option and select the provided ZIP file; once the import process ends, you will have the bot and the intent available on your Amazon Lex console, be sure to build the bot before starting the review activity.
 
 ![Import Lex Bot](Images/import-lex-bot.png)
 
 Click on the `Crypto_Converter` bot, and once the `ConvertUSD` intent is on the screen, highlight the following:
 
-* Adding `{usdAmount}` on the sample utterances, will allow the user to send messages like `I want to convert 100 dollars to BTC` where the deep learning algorithms will match the `{usdAmount}` label with a number on the utterance speech, as can be seen on the demo gif file below.
+* Adding `{usdAmount}` to the sample utterances, will allow the user to send messages like `I want to convert 100 dollars to BTC` where the deep learning algorithms will match the `{usdAmount}` label with a number on the utterance speech, as can be seen in the demo gif file below.
 
 * When the bot is tested, the date of birth can be given on any format (e.g., `12/16/1978`, `16/12/1978`, `Dec 16, 1978`), using the `AMAZON.DATE` slot type will transform the date automatically to the `YYYY-mm-dd` format, as can be seen on the demo gif file below.
 
@@ -270,13 +270,13 @@ Start the activity by opening the lesson slides, navigate to the _Intro to AWS L
 
 * AWS Lambda enhances chatbots by combining the NLP capabilities of Amazon Lex to understand human speech, with the possibility of running code to fulfill user's requests, for example, booking a hotel room, making a wire transfer, or providing financial advice about an investment portfolio.
 
-* AWS Lambda interacts with other AWS services by processing events messages in `JSON`. Every AWS Services has its specific format.
+* AWS Lambda interacts with other AWS services by processing events messages in `JSON`. Every AWS Service has its specific format.
 
 * Amazon Lex "talks" to AWS Lambda to perform initialization and validation, fulfillment, or both.
 
 Explain to students that in this demo, you will show how to process `ElicitSlots`, `Delegate`, and `Close` response events.
 
-Close the slides and log-in into the AWS Management Console using your IAM administrator user, once you are logged in, type `Lambda` into the _AWS services_ search box and click on _Lambda_ to open the AWS Lambda console.
+Close the slides and log into the AWS Management Console using your IAM administrator user, once you are logged in, type `Lambda` into the _AWS services_ search box and click on _Lambda_ to open the AWS Lambda console.
 
 ![Search for AWS Lambda service on the AWS Management console](Images/search-lambda-service.png)
 
@@ -289,7 +289,7 @@ On the _Create function_ page, select the _Author from scratch_ option, fill out
 * **Function name:** `convertUSD` (This is the name to identify our new Lambda function)
 * **Runtime:** `Python 3.7`
 
-**Note:** Currently, AWS Lambda offers support for Python 3.8, be aware of choosing version 3.7 as the runtime to avoid version conflicts with the code in Today's lesson.
+**Note:** Currently, AWS Lambda offers support for Python 3.8 - however be sure to choose version 3.7 as the runtime to avoid version conflicts with the code in today's lesson.
 
 ![Create function page](Images/aws-lambda-create-function.png)
 
@@ -319,7 +319,7 @@ Explain to students that the lambda function contains six general building block
 
     * `build_validation_result()`: This function defines an internal validation message structured as a python dictionary.
 
-    * `validate_data()`: This function validates the data provided by the user across the intent's dialog on Amazon Lex according to the business logic. In this demo, there are only two rules: (1) the user should be at least 21 years old (2) the amount in US Dollars to convert must be greater than zero.
+    * `validate_data()`: This function validates the data provided by the user across the intent's dialog on Amazon Lex according to the business logic. In this demo, there are only two rules: (1) the user should be at least 21 years old, and (2) the amount in US Dollars to convert must be greater than zero.
 
 Explain to students that the `validate_data()` function uses the `build_validation_result()` function to return a validation result message. In this demo, if the user's age is less than `21` or the amount to convert is less than `0`, a `False` result is returned; otherwise, a `True` result is returned.
 
@@ -354,7 +354,7 @@ def validate_data(birthday, usd_amount, intent_request):
                 "please provide a correct amount in USD to convert.",
             )
 
-    # A True results is returned if age or amount are valid
+    # A True result is returned if age or amount are valid
     return build_validation_result(True, None, None)
 ```
 
@@ -395,7 +395,7 @@ if source == "DialogCodeHook":
     return delegate(output_session_attributes, get_slots(intent_request))
 ```
 
-Explain to students that once the conversation between the user and the bot ends, the current price of bitcoin in US Dollars is fetched using the `get_btcprice()` function, the conversion from USD to BTC in done and the `close()` function is called to return a `Fulfilled` event message to Lex.
+Explain to students that once the conversation between the user and the bot ends, the current price of bitcoin in US Dollars is fetched using the `get_btcprice()` function, the conversion from USD to BTC is done and the `close()` function is called to return a `Fulfilled` event message to Lex.
 
 ```python
 # Get the current price of BTC in USD and make the conversion from USD to BTC.
@@ -497,7 +497,7 @@ Open the Lambda function code in VSCode, conduct a facilitated discussion by ask
 
 * Does anyone have a different idea to organize the function's _building blocks_?
 
-  **Sample Answer:** Maybe we can omit the `parse_float()`, `get_btcprice()` and `validate_data()` helper functions and embed all the functionality on the `convert_usd()` intent handler function.
+  **Sample Answer:** Maybe we can omit the `parse_float()`, `get_btcprice()` and `validate_data()` helper functions and embed all the functionality in the `convert_usd()` intent handler function.
 
   **Sample Answer:** We can drop the `dispatch()` function by adding the intents' name validation into the `lambda_handler()` function.
 
@@ -535,11 +535,11 @@ In this activity, students will learn how to test AWS Lambda functions that vali
 
 * [convertErrDate.json](Activities/05-Ins_Testing_Lambdas/Solved/convertErrDate.json)
 
-Explain to students that one of the challenges working with AWS Lambda is dealing with errors, so it is important to know how to test a Lambda function on the AWS Lambda console. For this activity, three test cases are provided.
+Explain to students that one of the challenges working with AWS Lambda is dealing with errors, so it is important to know how to test a Lambda function in the AWS Lambda console. For this activity, three test cases are provided.
 
 Explain to students that Lambda functions are tested using a `JSON` file to send a testing event to Lambda; the structure of the event depends on the kind of service you are connecting to Lambda. This demo only will cover how to test Amazon Lex intents.
 
-Open the `convertUSD` lambda function on the AWS Lambda console to show students how to create a test case. Click on the _Test_ button on the upper right corner, then choose the _Create new test event_ option and paste the code from the `convertOkText.json` test case.
+Open the `convertUSD` lambda function in the AWS Lambda console to show students how to create a test case. Click the _Test_ button in the upper right corner, then choose the _Create new test event_ option and paste the code from the `convertOkText.json` test case.
 
 ```json
 {
@@ -586,7 +586,7 @@ Now the name of the new test case appears on the dropdown list next to the _Test
 
 Since this test case has valid data for both slots, comment to students that the test status is `Succeeded`, and the execution results show a response with both slots fulfilled with the data passed on the test case.
 
-Show students how to add a new test case, click on the test events dropdown list and choose the _Configure test events_ option.
+Show students how to add a new test case. Click on the test events dropdown list and choose the _Configure test events_ option.
 
 ![Add new test event](Images/lambda-add-new-test-evet.png)
 
@@ -650,7 +650,7 @@ Start the review activity by adding the `convertErrNegAmount` and `convertOldAge
 
 * The `convertErrNegAmount` behavior is the same as the case when a zero is passed, an `ElicitSlot` type is returned, asking the user for an amount greater than zero.
 
-* The `convertOldAge` text case runs as a correct test event, there is no further validation to prevent a very old person to use the bot.
+* The `convertOldAge` text case runs as a correct test event. There is no further validation to prevent a very old person to use the bot.
 
 Open a facilitated discussion with the students by asking the following question:
 
@@ -701,7 +701,7 @@ Once you are done, click on the _Save slot type_ button.
 
 ![Configuring the new slot type](Images/configure-new-slot-type.png)
 
-Come back to the `ConvertUSD` intent editor, add a new slot named `crypto`, click on the _Slot type_ dropdown list, and you will see your brand new slot type. Select `CryptoCurrency` from the list. End the slot configuration by typing `What cryptocurrency do you want to convert to?` on the prompt and be sure the _Required_ checkbox is selected.
+Come back to the `ConvertUSD` intent editor, add a new slot named `crypto`, click on the _Slot type_ dropdown list, and you will see your brand new slot type. Select `CryptoCurrency` from the list. End the slot configuration by typing `What cryptocurrency do you want to convert to?` in the prompt and be sure the _Required_ checkbox is selected.
 
 ![Add the crypto slot](Images/add-crypto-slot.png)
 
@@ -715,7 +715,7 @@ Highlight to students that on the new utterances, the words `bitcoin` and `BTC` 
 
 Also, note that you should not have repeated utterances since an error will raise when you compile the bot. The utterances `I want to convert {usdAmount} to BTC` and `I want to convert {usdAmount} to bitcoin` will become `I want to convert {usdAmount} to {crypto}`, so you only need to keep this utterance once.
 
-Build the bot and test it on the _Test bot_ window. Start with typing the sample utterance `I want to invest in crypto` to elicit all the slots as follows.
+Build the bot and test it in the _Test bot_ window. Start with typing the sample utterance `I want to invest in crypto` to elicit all the slots as follows.
 
 ![Sample utterance 1](Images/custom_slots_1.gif)
 
@@ -788,7 +788,7 @@ Continue to the Lambda function code, open the solution on your AWS Lambda onlin
 
 * There is no need to validate the name of the cryptocurrency since the user does not type it.
 
-* On the `get_cryptoprice()` function, the price for each cryptocurrency and its `ID` are retrieved from the alternative.me API using a URL defined on a `nested-if` structure.
+* On the `get_cryptoprice()` function, the price for each cryptocurrency and its `ID` are retrieved from the alternative.me API using a URL defined in a `nested-if` structure.
 
   ```python
   def get_cryptoprice(crypto):
@@ -861,7 +861,7 @@ Open the lesson slides, move to the slide entitled "Deploying Amazon Lex Bots" a
 
 Slack out to students the [Amazon Lex deployment guide](https://docs.aws.amazon.com/lex/latest/dg/examples.html), and encourage them to try any of these deployment options by themselves.
 
-Answer any reminder question before moving forward.
+Answer any remaining questions before moving forward.
 
 ---
 
