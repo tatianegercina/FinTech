@@ -630,6 +630,10 @@ In this activity, students will gain further experience with more advanced subqu
 
 **Files**:
 
+* [schema.sql](Activities/10-Ins_Revist_Subquery/Solved/schema.sql)
+
+* [seed.sql](Activities/10-Ins_Revist_Subquery/Solved/seed.sql)
+
 * [query.sql](Activities/10-Ins_Revist_Subquery/Solved/query.sql)
 
 * [Pagila ERD](http://www.postgresqltutorial.com/postgresql-sample-database/)
