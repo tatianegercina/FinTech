@@ -1,4 +1,4 @@
-# Unit 2 Challenge Assignment: Py Lending
+# Unit 2 Challenge Assignment: PyLending
 
 --------->
 Insert image here
