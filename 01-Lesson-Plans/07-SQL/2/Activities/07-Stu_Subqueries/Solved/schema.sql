@@ -1,34 +1,69 @@
--- Question 1
-
-SELECT city, city_id
-FROM city
-WHERE city IN ('Qalyub', 'Qinhuangdao', 'Qomsheh', 'Quilmes');
-
-
--- Question 2
-
-SELECT district
-FROM address
-WHERE city_id IN
-(
-  SELECT city_id
-  FROM city
-  WHERE city IN ('Qalyub', 'Qinhuangdao', 'Qomsheh', 'Quilmes')
+CREATE TABLE film (
+    film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL,
+    title character varying(255) NOT NULL,
+    description text,
+    release_year year,
+    language_id smallint NOT NULL,
+    original_language_id smallint,
+    rental_duration smallint DEFAULT 3 NOT NULL,
+    rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL,
+    length smallint,
+    replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL,
+    rating mpaa_rating DEFAULT 'G'::mpaa_rating,
+    last_update timestamp without time zone DEFAULT now() NOT NULL,
+    special_features text[],
+    fulltext tsvector NOT NULL
 );
 
+CREATE TABLE inventory (
+    inventory_id integer DEFAULT nextval('inventory_inventory_id_seq'::regclass) NOT NULL,
+    film_id smallint NOT NULL,
+    store_id smallint NOT NULL,
+    last_update timestamp without time zone DEFAULT now() NOT NULL
+);
 
--- Bonus
+CREATE TABLE payment (
+    payment_id integer DEFAULT nextval('payment_payment_id_seq'::regclass) NOT NULL,
+    customer_id smallint NOT NULL,
+    staff_id smallint NOT NULL,
+    rental_id integer NOT NULL,
+    amount numeric(5,2) NOT NULL,
+    payment_date timestamp without time zone NOT NULL
+);
 
-SELECT first_name, last_name
-FROM customer cus
-WHERE address_id IN
-(
-  SELECT address_id
-  FROM address a
-  WHERE city_id IN
-  (
-    SELECT city_id
-    FROM city
-    WHERE city LIKE 'Q%'
-  )
+CREATE TABLE customer (
+    customer_id integer DEFAULT nextval('customer_customer_id_seq'::regclass) NOT NULL,
+    store_id smallint NOT NULL,
+    first_name character varying(45) NOT NULL,
+    last_name character varying(45) NOT NULL,
+    email character varying(50),
+    address_id smallint NOT NULL,
+    activebool boolean DEFAULT true NOT NULL,
+    create_date date DEFAULT ('now'::text)::date NOT NULL,
+    last_update timestamp without time zone DEFAULT now(),
+    active integer
+);
+
+CREATE TABLE staff (
+    staff_id integer DEFAULT nextval('staff_staff_id_seq'::regclass) NOT NULL,
+    first_name character varying(45) NOT NULL,
+    last_name character varying(45) NOT NULL,
+    address_id smallint NOT NULL,
+    email character varying(50),
+    store_id smallint NOT NULL,
+    active boolean DEFAULT true NOT NULL,
+    username character varying(16) NOT NULL,
+    password character varying(40),
+    last_update timestamp without time zone DEFAULT now() NOT NULL,
+    picture bytea
+);
+
+CREATE TABLE rental (
+    rental_id integer DEFAULT nextval('rental_rental_id_seq'::regclass) NOT NULL,
+    rental_date timestamp without time zone NOT NULL,
+    inventory_id integer NOT NULL,
+    customer_id smallint NOT NULL,
+    return_date timestamp without time zone,
+    staff_id smallint NOT NULL,
+    last_update timestamp without time zone DEFAULT now() NOT NULL
 );

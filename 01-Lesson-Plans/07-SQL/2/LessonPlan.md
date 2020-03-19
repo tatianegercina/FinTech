@@ -435,7 +435,11 @@ In this activity, students will practice creating subqueries.
 
 * [payment.csv](Activities/07-Stu_Subqueries/Resources/payment.csv)
 
-* [customer.csv](Activities/07-Stu_Subqueries/Resources/payment.csv)
+* [customer.csv](Activities/07-Stu_Subqueries/Resources/customer.csv)
+
+* [staff.csv](Activities/07-Stu_Subqueries/Resources/staff.csv)
+
+* [rental.csv](Activities/07-Stu_Subqueries/Resources/rental.csv)
 
 **Instructions:** [README.md](Activities/07-Stu_Subqueries/README.md)
 
