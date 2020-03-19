@@ -8,7 +8,7 @@ As you already know, not everything is hunky-dory in coding, there are times whe
 
 1. Open the test event code provided by the instructor.
 
-2. Create a new test event for your `convertUSD` Lambda by copying and pasting the code provided and recreate the `convertOkText` test event on your AWS Lambda console.
+2. Create a new test event for your `convertUSD` Lambda by copying and pasting the code provided and recreate the `convertOkText` test event in your AWS Lambda console.
 
 3. Run the test and corroborate that the test succeeded.
 
