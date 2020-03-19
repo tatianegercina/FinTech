@@ -123,7 +123,7 @@ Once all volunteers have presented, tie everything together by explaining the fo
 
 * FinTech is the application of technology to the finance industry, but what it means at the individual level can differ.
 
-* Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. Furthermore, still, others see FinTech as a path to a new career supported by growing demand.
+* Some see FinTech as a way to upgrade their current skills to be more marketable to employers, while others see it as a way to eliminate inefficiencies in their current finance role. And some see FinTech as a path to a new career supported by growing demand.
 
 * Despite students' differing reasons for wanting to learn more about FinTech, each of them has made the leap to take this course. Therefore, it's important to continue to get to know each other, as they'll be together "in the trenches" for the next 24 weeks. The relationships you build in this class can serve as valuable network connections after the completion of the course.
 
