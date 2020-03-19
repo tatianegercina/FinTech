@@ -187,7 +187,7 @@ Open the next series of slides and emphasize the following points.
 
 ### 8. Instructor Do: FinTech's Past (5 min)
 
-In this activity, instructors begin to facilitate a discussion regarding the stark changes that have affected the finance realm over the last 20+ years.
+In this activity, facilitate a discussion on the stark changes that have affected the finance realm over the last 20+ years.
 
 Set up the prompt for the following thought exercise by asking students the following questions:
 
