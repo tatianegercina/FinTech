@@ -330,7 +330,17 @@ In this activity, students will be introduced to the concept of subqueries to qu
 
 Use the `Subqueries` section of the slides to begin the discussion of subqueries. A **subquery** is nested inside a larger query.
 
-**File:** [query.sql](Activities/06-Ins_Subqueries/Solved/query.sql)
+**Files:**
+
+* [film.csv](Activities/Resources/film.csv)
+
+* [inventory.csv](Activities/Resources/inventory.csv)
+
+* [schema.sql](Activities/06-Ins_Subqueries/Solved/schema.sql)
+
+* [seed.sql](Activities/06-Ins_Subqueries/Solved/seed.sql)
+
+* [query.sql](Activities/06-Ins_Subqueries/Solved/query.sql)
 
 Explain that there is often more than one way of accomplishing a task in SQL.
 
