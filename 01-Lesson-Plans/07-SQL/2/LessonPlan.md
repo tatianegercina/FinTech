@@ -431,6 +431,12 @@ Answer any questions before moving on.
 
 In this activity, students will practice creating subqueries.
 
+**Files:**
+
+* [payment.csv](Activities/07-Stu_Subqueries/Resources/payment.csv)
+
+* [customer.csv](Activities/07-Stu_Subqueries/Resources/payment.csv)
+
 **Instructions:** [README.md](Activities/07-Stu_Subqueries/README.md)
 
 ### 12. Instructor Do: Review Subqueries (5 min)

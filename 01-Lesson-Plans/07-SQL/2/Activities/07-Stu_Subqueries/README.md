@@ -1,21 +1,23 @@
-## Subqueries
+# Subqueries
 
 In this activity, you will practice creating subqueries.
 
-### Instructions
+## Instructions
 
-1. List the names and ID numbers of cities that are in the following list: `Qalyub`, `Qinhuangdao`, `Qomsheh`, `Quilmes`.
+Use the `payment`, `customer`, and `rental` tables to answer the following subquery questions:
 
-2. Display the districts in the above list of cities.
+1. Find the customer records of those who have made payments.
 
-   **Hint:** Use the `address` and `city` tables.
+2. Find the staff records of those who have helped customers make payments.
 
-### Bonus
+3. Find the rental records of all films that have been paid for.
 
-Using subqueries, find the first and last names of customers who reside in cities that begin with the letter *Q*.
+## Bonus
 
-**Hint:** You will need to use three tables and more than one subquery.
+Use the `payment`, `rental`, `inventory`, and `film` tables to find the film records of films that have been rented out and paid for.
 
- ---
+**Hint:** You will need to use multiple nested subqueries.
 
- © 2019 Trilogy Education Services
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
