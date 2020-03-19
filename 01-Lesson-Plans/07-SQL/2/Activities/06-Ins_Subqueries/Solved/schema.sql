@@ -1,31 +1,23 @@
--- First select title and id for movie EARLY HOME
-SELECT title, film_id
-FROM film
-WHERE title = 'EARLY HOME';
-
--- Using the film_id located in the previous query find it in the inventory table
-SELECT *
-FROM inventory
-WHERE film_id = 268;
-
--- Use Join to find the inventory, film and store id
-SELECT i.inventory_id, i.film_id, i.store_id
-FROM inventory i
-JOIN film f
-ON (i.film_id = f.film_id)
-WHERE f.title = 'EARLY HOME';
-
--- Use Subquery to get the film_id from the query finding EARLY HOME
-SELECT *
-FROM inventory
-WHERE film_id IN
-(
-  SELECT film_id
-  FROM film
-  WHERE title = 'EARLY HOME'
+CREATE TABLE film (
+    film_id integer DEFAULT nextval('film_film_id_seq'::regclass) NOT NULL,
+    title character varying(255) NOT NULL,
+    description text,
+    release_year year,
+    language_id smallint NOT NULL,
+    original_language_id smallint,
+    rental_duration smallint DEFAULT 3 NOT NULL,
+    rental_rate numeric(4,2) DEFAULT 4.99 NOT NULL,
+    length smallint,
+    replacement_cost numeric(5,2) DEFAULT 19.99 NOT NULL,
+    rating mpaa_rating DEFAULT 'G'::mpaa_rating,
+    last_update timestamp without time zone DEFAULT now() NOT NULL,
+    special_features text[],
+    fulltext tsvector NOT NULL
 );
 
--- Check to more sure the subquery returned correct value
-SELECT *
-FROM inventory
-WHERE film_id IN (268);
+CREATE TABLE inventory (
+    inventory_id integer DEFAULT nextval('inventory_inventory_id_seq'::regclass) NOT NULL,
+    film_id smallint NOT NULL,
+    store_id smallint NOT NULL,
+    last_update timestamp without time zone DEFAULT now() NOT NULL
+);
