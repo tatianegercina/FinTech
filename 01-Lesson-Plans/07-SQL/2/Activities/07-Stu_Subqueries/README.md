@@ -4,7 +4,7 @@ In this activity, you will practice creating subqueries.
 
 ## Instructions
 
-Use the `payment`, `customer`, and `rental` tables to answer the following subquery questions:
+Use the [`payment`](Resources/payment.csv), [`customer`](Resources/customer.csv), and [`rental`](Resources/rental.csv) tables to answer the following subquery questions:
 
 1. Find the customer records of those who have made payments.
 
@@ -14,7 +14,7 @@ Use the `payment`, `customer`, and `rental` tables to answer the following subqu
 
 ## Bonus
 
-Use the `payment`, `rental`, `inventory`, and `film` tables to find the film records of films that have been rented out and paid for.
+Use the [`payment`](Resources/payment.csv), [`rental`](Resources/rental.csv), [`inventory`](Resources/inventory.csv), and [`film`](Resources/film.csv) tables to find the film records of all films that have been rented out and paid for.
 
 **Hint:** You will need to use multiple nested subqueries.
 
