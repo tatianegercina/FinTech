@@ -716,7 +716,13 @@ In this activity, students will continue to practice subqueries. Students can ei
 
 ### 18. Instructor Do: Review Mine the Subquery (5 min)
 
-**File**: [query.sql](Activities/11-Stu_Mine_the_Subquery/Solved/query.sql)
+**Files**:
+
+* [schema.sql](Activities/11-Stu_Mine_the_Subquery/Solved/schema.sql)
+
+* [seed.sql](Activities/11-Stu_Mine_the_Subquery/Solved/seed.sql)
+
+* [query.sql](Activities/11-Stu_Mine_the_Subquery/Solved/query.sql)
 
 Review the solution to the activity and answer any questions that students have.
 
