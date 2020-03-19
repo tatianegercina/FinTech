@@ -89,7 +89,7 @@ Then move on to the first topic of the day: defining FinTech. Review the slides 
 
   * Large technology ecosystems
 
-  * New entrants/start-ups
+  * New entrants/startups
 
   * Incumbent financial institutions
 
