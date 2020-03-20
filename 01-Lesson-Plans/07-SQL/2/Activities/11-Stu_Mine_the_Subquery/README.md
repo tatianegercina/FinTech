@@ -1,8 +1,8 @@
-## Mine the Subqueries
+# Mine the Subqueries
 
 In this activity, you will continue to practice subqueries. Work individually or in pairs. You can use the [ERD](http://www.postgresqltutorial.com/postgresql-sample-database/) for help with the queries.
 
-### Instructions
+## Instructions
 
 * Using subqueries, find the titles of films that the employee `Jon Stephens` rented to customers.
 
@@ -18,4 +18,4 @@ In this activity, you will continue to practice subqueries. Work individually or
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -1,8 +1,8 @@
-## A View with a Roomful of Queries
+# A View with a Roomful of Queries
 
 In this activity, you will work with a partner to practice your join and subquery skills, as well as build out a view.
 
-### Instructions
+## Instructions
 
 * Write a query to get the number of payments and total payment amount for each customer in the `payment` table. Make sure to pull the customer `first_name` and `last_name` from the `customer` table via a `JOIN`.
 
