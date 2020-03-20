@@ -238,23 +238,23 @@ Review the solution in pgAdmin and explain the following:
 * By using the `AVG`, `SUM`, `MIN`, and `MAX` aggregate functions on the `amount` column of the `payment` table, the average, total, minimum, and maxmium payment can be determined.
 
   ```sql
-  select AVG(amount) as "avg_payment_amount"
-  from payment;
+  SELECT AVG(amount) AS "avg_payment_amount"
+  FROM payment;
 
-  select SUM(amount) as "total_payment_amount"
-  from payment;
+  SELECT SUM(amount) AS "total_payment_amount"
+  FROM payment;
 
-  select MIN(amount) as "min_payment_amount"
-  from payment;
+  SELECT MIN(amount) AS "min_payment_amount"
+  FROM payment;
 
-  select MAX(amount) as "max_payment_amount"
-  from payment;
+  SELECT MAX(amount) AS "max_payment_amount"
+  FROM payment;
   ```
 
 * Grouping by the `customer_id` of the `payment` table groups multiple records together by the same `customer_id` value, allowing aggregate functions such as the `COUNT` function to count the number of grouped records per `customer_id`. Therefore, calculating the number of payments per customer in this context.
 
   ```sql
-  select customer_id, COUNT(*) as "payment_count"
+  SELECT customer_id, COUNT(*) AS "payment_count"
   FROM payment
   GROUP BY customer_id;
   ```
@@ -262,7 +262,7 @@ Review the solution in pgAdmin and explain the following:
 * Similarly, grouping by the `staff_id` of the `payment` table and then using the `COUNT` function on the `customer_id` displays the number of customers each staff member has helped service or check out.
 
   ```sql
-  select staff_id, COUNT(customer_id) as "customer_count"
+  SELECT staff_id, COUNT(customer_id) AS "customer_count"
   FROM payment
   GROUP BY staff_id;
   ```
@@ -339,24 +339,24 @@ Open pgAdmin and walk through the solution, highlighting the following:
 * Using the `ORDER BY` clause in conjunction with the `COUNT` function ensures that aggregate results are now ordered in `DESC` or descending order. In this case, the number of payments per customer is calculated and ordered from the customers with the top number of payments to customers with the lowest number of payments.
 
   ```sql
-  select customer_id, COUNT(*) as payment_count
-  from payment
-  group by customer_id
+  SELECT customer_id, COUNT(*) AS payment_count
+  FROM payment
+  GROUP BY customer_id
   ORDER BY COUNT(*) DESC;
   ```
 
 * The `ORDER BY` clause can be used in either `ASC` (ascending) or `DESC` (descending) order. When used in conjunction with the `LIMIT` clause, results can be filtered down to the desired record count, which in this case will display the top 5 and bottom 5 customer payment counts.
 
   ```sql
-  select customer_id, SUM(amount) as total_payment_amount
-  from payment
-  group by customer_id
+  SELECT customer_id, SUM(amount) AS total_payment_amount
+  FROM payment
+  GROUP BY customer_id
   ORDER BY SUM(amount) DESC
   LIMIT 5;
 
-  select customer_id, SUM(amount) as total_payment_amount
-  from payment
-  group by customer_id
+  select customer_id, SUM(amount) AS total_payment_amount
+  FROM payment
+  GROUP BY customer_id
   ORDER BY SUM(amount) ASC
   LIMIT 5;
   ```
@@ -364,9 +364,9 @@ Open pgAdmin and walk through the solution, highlighting the following:
 * When calculating averages, average values can be lengthy in terms of their decimal places. Therefore, the `ROUND` function can be used to limit the results to the desired decimal place (in this case two decimal places).
 
   ```sql
-  select customer_id, ROUND(AVG(amount), 2) as average_payment_amount
-  from payment
-  group by customer_id
+  SELECT customer_id, ROUND(AVG(amount), 2) AS average_payment_amount
+  FROM payment
+  GROUP BY customer_id
   ORDER BY AVG(amount) DESC
   LIMIT 5;
   ```
@@ -374,9 +374,9 @@ Open pgAdmin and walk through the solution, highlighting the following:
 * For the first bonus, the `payment` table alone does not contain staff information, only a `staff_id`. Therefore, the a `JOIN` is necessary to access the `first_name` and `last_name` of the `staff` table, which can then be used in the `GROUP BY` clause to group by staff names and then calculate the count of customers they've serviced.
 
   ```sql
-  select first_name, last_name, COUNT(customer_id) as customer_count
-  from payment as a
-  JOIN staff as b ON a.staff_id = b.staff_id
+  SELECT first_name, last_name, COUNT(customer_id) AS customer_count
+  FROM payment AS a
+  JOIN staff AS b ON a.staff_id = b.staff_id
   GROUP BY first_name, last_name
   ORDER BY COUNT(customer_id) DESC;
   ```
@@ -384,8 +384,8 @@ Open pgAdmin and walk through the solution, highlighting the following:
 * The `CAST` function can be used to convert datetime column values to date datatypes. This effectively shortens the value to just the date portions (rather than date and timestamp), which allows for grouping by common date values.
 
   ```sql
-  select CAST(payment_date AS DATE), COUNT(*)
-  from payment
+  SELECT CAST(payment_date AS DATE), COUNT(*)
+  FROM payment
   GROUP BY CAST(payment_date AS DATE)
   ORDER BY COUNT(*) DESC;
   ```
@@ -693,9 +693,9 @@ Review the code in the solution file and explain the following:
 
   ```sql
   CREATE VIEW customer_revenues AS
-  select first_name, last_name, COUNT(payment_id) as payment_count, SUM(amount) as total_amount
-  from payment as a
-  JOIN customer as b ON a.customer_id = b.customer_id
+  SELECT first_name, last_name, COUNT(payment_id) AS payment_count, SUM(amount) AS total_amount
+  FROM payment AS a
+  JOIN customer AS b ON a.customer_id = b.customer_id
   GROUP BY first_name, last_name
   ORDER BY SUM(amount) DESC;
   ```
@@ -703,9 +703,9 @@ Review the code in the solution file and explain the following:
 * Querying the newly created `customer_revnues` view for `THERESA ROGERS` shows her total payment count and total revenues generated.
 
   ```sql
-  select *
-  from customer_revenues
-  where first_name = 'THERESA'
+  SELECT *
+  FROM customer_revenues
+  WHERE first_name = 'THERESA'
   AND last_name = 'WATSON';
   ```
 
@@ -715,24 +715,25 @@ Review the code in the solution file and explain the following:
 
   ```sql
   CREATE VIEW staff_sales AS
-  select staff_id, CAST(payment_date as DATE), COUNT(payment_id) as payment_count, SUM(amount) as total_amount
+  SELECT staff_id, CAST(payment_date AS DATE), COUNT(payment_id) AS payment_count, SUM(amount) AS total_amount
   FROM payment
   WHERE staff_id IN
   (
-    select staff_id
+    SELECT staff_id
     FROM staff
     WHERE first_name = 'Mike'
     AND last_name = 'Hillyer'
   )
-  GROUP BY staff_id, CAST(payment_date as DATE)
-  ORDER BY CAST(payment_date as DATE) DESC;
+  GROUP BY staff_id, CAST(payment_date AS DATE)
+  ORDER BY CAST(payment_date AS DATE) DESC;
   ```
 
 * Querying the newly created `staff_sales` view for the date `2005-07-31` shows the total payment count and total revenues generated from `staff_id` = 1, which represents `Mike Hillyer`.
 
   ```sql
-  select * from staff_sales
-  where payment_date = '2005-07-31';
+  SELECT *
+  FROM staff_sales
+  WHERE payment_date = '2005-07-31';
   ```
 
   ![mike-hillyer](Images/mike-hillyer.png)
@@ -872,21 +873,21 @@ Review the solution to the activity and answer any questions that students have.
 * The second question calls for the total payment amount generated from the rentals of the film `ACE GOLDFINGER`. Similar to the first question, the `film_id` of `ACE GOLDFINGER` must first be determined so that it can be used "up-the-chain" to the `inventory`, `rental`, and `payment` table, where we can finally calculate the `SUM` of the `amount` column to calculate the total payment amount for `ACE GOLDFINGER`.
 
   ```sql
-  select SUM(amount) as total_amount
-  from payment
+  SELECT SUM(amount) AS total_amount
+  FROM payment
   WHERE rental_id IN
     (
-    select rental_id
-    from rental
-    where inventory_id IN
+    SELECT rental_id
+    FROM rental
+    WHERE inventory_id IN
       (
-      select inventory_id
-      from inventory
-      where film_id IN
+      SELECT inventory_id
+      FROM inventory
+      WHERE film_id IN
         (
-        select film_id
-        from film
-        where title = 'ACE GOLDFINGER'
+        SELECT film_id
+        FROM film
+        WHERE title = 'ACE GOLDFINGER'
         )
       )
     );

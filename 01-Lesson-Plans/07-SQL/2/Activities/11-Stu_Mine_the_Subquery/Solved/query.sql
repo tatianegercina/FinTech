@@ -25,21 +25,21 @@ WHERE film_id IN
   );
 
 -- Using subqueries, find the total rental amount paid for the film `ACE GOLDFINGER`
-select SUM(amount) as total_amount
-from payment
+SELECT SUM(amount) AS total_amount
+FROM payment
 WHERE rental_id IN
 	(
-	select rental_id
-	from rental
-	where inventory_id IN
+	SELECT rental_id
+	FROM rental
+	WHERE inventory_id IN
 		(
-		select inventory_id
-		from inventory
-		where film_id IN
+		SELECT inventory_id
+		FROM inventory
+		WHERE film_id IN
 			(
-			select film_id
-			from film
-			where title = 'ACE GOLDFINGER'
+			SELECT film_id
+			FROM film
+			WHERE title = 'ACE GOLDFINGER'
 			)
 		)
 	);
