@@ -32,7 +32,7 @@ By the end of class, students will be able to:
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson 13.2 Slides](https://docs.google.com/presentation/d/17jc9_8FMijZJdai1JNnAQTO33HV-mhxFaMwI5FxRL8Q/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/14MiAunWj30hu-pYLGDz9JOM5XbGjunn1hZ6iyym4w2w/edit).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
@@ -58,7 +58,7 @@ Open the [AWS Free Tier Supplemental](../Supplemental/AWS-Free-Tier.md) and brie
 | `50` hours per month of `m4.xlarge` for training for the first **two months**    | `5,000` speech requests per month | Up to `3.2` million seconds of compute time per month | `20,000` Get Requests      |
 | `125` hours per month of `m4.xlarge` for hosting for the first **two months**    |                                   |                                                       | `2,000` Put Requests       |
 
-Explain to students that the quotas presented in this table are subject to change without previous advice, so double-checking the [AWS Free Tier Documentation](https://aws.amazon.com/free) is vital before start using the free offer from AWS.
+Explain to students that the quotas presented in this table are subject to change without notice, so double-checking the [AWS Free Tier Documentation](https://aws.amazon.com/free) is vital before start using the free offer from AWS.
 
 Answer any questions before moving on.
 
@@ -78,7 +78,7 @@ Open the [AWS Management Console](https://console.aws.amazon.com) using your _ro
 
   ![Create an administrator IAM user - Step 2](Images/iam-user-2.png)
 
-* On the _Add user_ page, fill out the details of the new `administrator` user and click on the _Next: Permissions_ button to continue.
+* On the _Add user_ page, provide your new user name in the _User name_ input box, then fill out the details of the new `administrator` by filling in the selections as seen below.  Afterword, click on the _Next: Permissions_ button to continue.
 
   * **User name:** `administrator`
   * **Access type:** Select the _Programmatic access_ and _AWS Management Console access_ boxes.
@@ -153,7 +153,7 @@ In this activity, students will create an administrator user to manage their AWS
 
 This review activity is intended to verify that all students have successfully created their admin user using IAM.
 
-Make sure all students have their AWS account working correctly, also, ask TAs to assist students who could have any issue before moving forward, forthcoming activities will use the `administrator` IAM user by default.
+Make sure all students have their AWS account working correctly, also, ask TAs to assist students who could have an issue before moving forward, forthcoming activities will use the `administrator` IAM user by default.
 
 Answer any questions before moving on.
 
@@ -477,7 +477,7 @@ Explain to students that this step might take a few minutes, and it will use res
 
 ![Deploy SageMaker Model - step 3](Images/deploy-sagemaker-3.gif)
 
-Once the `lineal-learner` model was trained, tell students that it can be deployed to make predictions of the rainfall in Austin. Continue the demo and highlight the following:
+Once the `linear-learner` model was trained, tell students that it can be deployed to make predictions of the rainfall in Austin. Continue the demo and highlight the following:
 
 * In order to make predictions, the model should be deployed; a `ml.t2.medium` instance type is defined since this is the instance type we selected when we created the notebook that is part of the free tier offer.
 
@@ -546,7 +546,7 @@ Have students share their opinions with the class and bring up the following poi
 
 **Cons:**
 
-* Data privacy/security: By uploading data to a third party, you are trusting your data on them. Certain kinds of data are subject to compliance and regulatory constraints.
+* Data privacy/security: By uploading data to a third party, you are trusting your data to them. Certain kinds of data are subject to compliance and regulatory constraints.
 
 * Visibility: You won't have oversight on AWS internal handling of your data and infrastructure.
 
