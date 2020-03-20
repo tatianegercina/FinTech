@@ -4,7 +4,7 @@ In this activity, you will continue to practice subqueries. Work individually or
 
 ### Instructions
 
-* Using subqueries, identify all actors who appear in the film *Alter Victory* in the `pagila` database.
+* Using subqueries, display the titles of films that the employee `Jon Stephens` rented to customers.
 
 * Using subqueries, display the titles of films that the employee Jon Stephens rented to customers.
 

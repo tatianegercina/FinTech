@@ -841,58 +841,56 @@ In this activity, students will continue to practice subqueries. Students can ei
 
 Review the solution to the activity and answer any questions that students have.
 
-A possible solution to the first problem is as follows:
-
-  ```sql
-  SELECT first_name, last_name
-  FROM actor
-  WHERE actor_id IN
-  (
-    SELECT actor_id
-    FROM film_actor
-    WHERE film_id IN
-    (
-      SELECT film_id
-      FROM film
-      WHERE title = 'ALTER VICTORY'
-    )
-  );
-  ```
-
-* It's recommended that you start with the most specific piece of information and work your way up. In this case, the innermost subquery retrieves the `film_id` of the given film title.
-
-* This information is used to retrieve the `actor_id`, which is then used to extract the names of the actors who appear in the film.
-
-A possible solution to the second problem is as follows:
+* The first question calls for all of the titles rented out by the staff member `Jon Stephens`. Therefore, when using subqueries, the `staff_id` of `Jon Stephens` must first be determined so that it can used "up-the-chain" to the `payment`, `rental`, `inventory`, and `film` tables where we finally pull the `title` column.
 
   ```sql
   SELECT title
   FROM film
-  WHERE film_id
-  IN (
+  WHERE film_id IN
+    (
     SELECT film_id
-      FROM inventory
-      WHERE inventory_id
-      IN (
-          SELECT inventory_id
-          FROM rental
-          WHERE staff_id
-          IN (
-                SELECT staff_id
-                FROM staff
-                WHERE last_name = 'Stephens' AND first_name = 'Jon'
-              )
+    FROM inventory
+    WHERE inventory_id IN
+      (
+      SELECT inventory_id
+      FROM rental
+      WHERE rental_id IN
+        (
+        SELECT rental_id
+        FROM payment
+        WHERE staff_id IN
+          (
+          SELECT staff_id
+          FROM staff
+          WHERE last_name = 'Stephens' AND first_name = 'Jon'
           )
+        )
+      )
     );
   ```
 
-* Similar to the first problem, the query begins with the most specific piece of information and works its way up.
+* The second question calls for the total payment amount generated from the rentals of the film `ACE GOLDFINGER`. Similar to the first question, the `film_id` of `ACE GOLDFINGER` must first be determined so that it can be used "up-the-chain" to the `inventory`, `rental`, and `payment` table, where we can finally calculate the `SUM` of the `amount` column to calculate the total payment amount for `ACE GOLDFINGER`.
 
-* The employee name is used to query the `staff_id`.
-
-* The `staff_id` is used to retrieve the `inventory_id` from rentals.
-
-* The `inventory_id` is used to retrieve the `film_id`, which is then used to retrieve the relevant film titles.
+  ```sql
+  select SUM(amount) as total_amount
+  from payment
+  WHERE rental_id IN
+    (
+    select rental_id
+    from rental
+    where inventory_id IN
+      (
+      select inventory_id
+      from inventory
+      where film_id IN
+        (
+        select film_id
+        from film
+        where title = 'ACE GOLDFINGER'
+        )
+      )
+    );
+  ```
 
 Answer any questions before ending class.
 
