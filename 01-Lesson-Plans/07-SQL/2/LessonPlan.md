@@ -106,7 +106,7 @@ Use the `Aggregate Functions` section of the slides and review the following:
 
 * Similar to aggregates in Pandas, aggregate functions allow calculations on a set of values and return a singular value.
 
-* Some of most commonly used aggregates are `Avg`, `COUNT`, `MIN`, `MAX`, and `SUM`.
+* Some of most commonly used aggregates are `AVG`, `COUNT`, `MIN`, `MAX`, and `SUM`.
 
 * Aggregates are often combined with `GROUP BY`, `HAVING`, and `SELECT`.
 
@@ -235,11 +235,37 @@ In this activity, students will practice writing queries with aggregate function
 
 Review the solution in pgAdmin and explain the following:
 
-* Postgres uses double quotes for table and column names, and single quotes for string constants.
+* By using the `AVG`, `SUM`, `MIN`, and `MAX` aggregate functions on the `amount` column of the `payment` table, the average, total, minimum, and maxmium payment can be determined.
 
-* `GROUP BY` is similar to the `groupby` operation in Pandas.
+  ```sql
+  select AVG(amount) as "avg_payment_amount"
+  from payment;
 
-* `SELECT` without aggregates can only choose the columns in the `GROUP BY` clause.
+  select SUM(amount) as "total_payment_amount"
+  from payment;
+
+  select MIN(amount) as "min_payment_amount"
+  from payment;
+
+  select MAX(amount) as "max_payment_amount"
+  from payment;
+  ```
+
+* Grouping by the `customer_id` of the `payment` table groups multiple records together by the same `customer_id` value, allowing aggregate functions such as the `COUNT` function to count the number of grouped records per `customer_id`. Therefore, calculating the number of payments per customer in this context.
+
+  ```sql
+  select customer_id, COUNT(*) as "payment_count"
+  FROM payment
+  GROUP BY customer_id;
+  ```
+
+* Similarly, grouping by the `staff_id` of the `payment` table and then using the `COUNT` function on the `customer_id` displays the number of customers each staff member has helped service or check out.
+
+  ```sql
+  select staff_id, COUNT(customer_id) as "customer_count"
+  FROM payment
+  GROUP BY staff_id;
+  ```
 
 Answer any questions before moving on.
 
