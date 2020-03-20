@@ -64,7 +64,7 @@ Note: If issues arise when using the pgAdmin Import/Export tool, there is an inc
 
 * [schema.sql](Activities/01-Evr_Import_Data/Solved/schema.sql)
 
-* [query.sql](Activities/01-Evr_Import_Data/Solved/schema.sql)
+* [query.sql](Activities/01-Evr_Import_Data/Solved/query.sql)
 
 Explain to the class that today's activities will require a few tables to be imported into a database.
 
@@ -76,7 +76,7 @@ Together with the class, walk through the following steps:
 
 * Open the query tool for the newly created `rental_db`.
 
-* Copy [schema.sql](Activities/01-Evr_Import_Data/Resources/schema.sql) and run the code to create the needed tables.
+* Copy [schema.sql](Activities/01-Evr_Import_Data/Solved/schema.sql) and run the code to create the needed tables.
 
 * Right-click the "actor" table on the right-hand side, and then select Import/Export.
 
@@ -404,9 +404,9 @@ Use the `Subqueries` section of the slides to begin the discussion of subqueries
 
 **Files:**
 
-* [film.csv](Activities/Resources/film.csv)
+* [film.csv](Activities/06-Ins_Subqueries/Resources/film.csv)
 
-* [inventory.csv](Activities/Resources/inventory.csv)
+* [inventory.csv](Activities/06-Ins_Subqueries/Resources/inventory.csv)
 
 * [schema.sql](Activities/06-Ins_Subqueries/Solved/schema.sql)
 
