@@ -63,11 +63,11 @@ By the end of the class, students will be able to:
 
 In this activity, students will be introduced to unsupervised learning and its most relevant applications. Also, an overview of the unit is presented, including a homework demo.
 
-Welcome the class to Unit 13, open the lesson slides, and move to the What You Will Achieve in this Unit section by highlighting the following:
+Welcome the class to Unit 13, open the lesson slides, and move to the "What You Will Achieve in this Unit" section by highlighting the following:
 
-* The cloud is a core tool for FinTech professionals; students will learn how to leverage their Python and machine-learning skills, by using Amazon Web Services to deploy models and business applications that could be reached by hundreds or thousands of people.
+* The cloud is a core tool for FinTech professionals; you will learn how to leverage their Python and machine-learning skills, by using Amazon Web Services to deploy models and business applications that could be reached by hundreds or thousands of people.
 
-* In this unit, students will have hands-on experience with the following AWS services:
+* In this unit, you will have hands-on experience with the following AWS services:
 
   * **Amazon SageMaker:** To deploy machine-learning models
   * **Amazon Lex:** To create conversational interfaces
@@ -76,7 +76,7 @@ Welcome the class to Unit 13, open the lesson slides, and move to the What You W
 
 Open your AWS Management Console, open the Cryptocurrencies Clustering homework's solution, and briefly explain to students that a machine-learning model could be deployed in the cloud using Jupyter Notebooks, a tool they already know, and Amazon SageMaker.
 
-Continue by opening the Amazon Lex Management console, open the RoboAdvisor homework solution, and test the bot with the sample utterance `I'm worried about my retirement` to conduct a sample dialogue as follows.
+Continue by opening the Amazon Lex Management console, or follow the slides, to demo the RoboAdvisor homework solution with the sample utterance `I'm worried about my retirement` to conduct a sample dialogue as follows.
 
 ![RoboAdvisor Demo](Images/robo-advisor-demo.gif)
 
@@ -88,7 +88,7 @@ Conclude the homework demo by telling students that they will create one of two 
 
 Continue with the slides by highlighting the following:
 
-* Cloud services are awesome tools for FinTech professionals. Students already have mastered several skills that will empower the cloud applications they will create.
+* Cloud services are fantastic tools for FinTech professionals. You already mastered several skills, such as Python, APIs, time series, classification algorithms, and NLP, that will empower the cloud applications you will create.
 
 * This journey starts by learning about unsupervised learning.
 
@@ -98,7 +98,7 @@ Continue with the slides by highlighting the following:
 
 In this activity, students will be introduced to unsupervised learning and its most relevant applications.
 
-Open the lesson slides and go to the Introduction to Unsupervised Learning section.
+Open the lesson slides and go to the "Introduction to Unsupervised Learning" section.
 
 Start the presentation by explaining to students that, in general terms, machine learning has two main areas of application: supervised and unsupervised learning.
 
@@ -110,6 +110,8 @@ Students are already familiar with supervised learning algorithms and its applic
 | Uses training datasets             | Uses just input datasets                   |
 | **Goal:** Predict a class or value | **Goal:** Determine patterns or group data |
 
+Explain to students that a glance, unsupervised learning uses unlabeled data to find patterns or group data.
+
 Start a short facilitated discussion with students. Take one or two answers from the class by asking the following question:
 
 * If unsupervised learning deals with unlabeled data, what kind of questions or business problems do you think we can solve?
@@ -120,7 +122,7 @@ Start a short facilitated discussion with students. Take one or two answers from
 
   **Sample answer:** We can use unsupervised learning to cluster stock data so we can create investment portfolios according to the resulting groups.
 
-As an example, continue the presentation with the slide titled "How can we understand our customers?" and then move forward by highlighting the following:
+Continue the presentation with the slide titled "How can we understand our customers?." Explain to students that you may answer this question using supervised or unsupervised learning, then move forward in the slides by highlighting the following:
 
 * Beyond the typical segmentation variables, such as age, gender, income, or zip code, understanding customers is crucial in every sector.
 
@@ -298,13 +300,15 @@ In this activity, students will learn how the k-means algorithm works. Use your 
 
 * [03_Ins_K-Means.ipynb](Activities/03-Ins_KMeans/Solved/03_Ins_K-Means.ipynb)
 
-Open the lesson slides and move to the K-Means Algorithm section; go through the slides and highlight the following.
+Open the lesson slides and move to "The K-Means Algorithm" section; go through the slides and highlight the following.
 
 * To understand how k-means works, a fictional anecdote is used.
 
   > Imagine that you are in a room full of spheres (data points), and you want to learn more about them, so you start to observe.
   >
   > You realize that every sphere represents a flower and that axes represent features of flowers. After observing the flowers, you discovered that there are some patterns when you combine the three features.
+  >
+  > At this point, K-Means comes to the rescue!
   >
   > We can see that spheres (data points) with similar features seem to be closer together than data points with dissimilar features. We can use this spatial information to group similar data points together.
 
@@ -695,7 +699,7 @@ In this activity, students will be introduced to the cloud and the generalities 
 
 Explain that while PCA can be very useful in speeding up algorithms by reducing dimensionality, modern machine-learning algorithms can also take advantage of powerful computing resources in the cloud.
 
-Open the lesson slides, move to the Welcome to the Cloud, and Amazon Web Services section and introduce the concept of the cloud by asking students to share what they think the cloud is.
+Open the lesson slides, move to the "Welcome to the Cloud and Amazon Web Services" section and introduce the concept of the cloud by asking students to share what they think the cloud is.
 
 Collect two or three answers and emphasize the following points:
 
