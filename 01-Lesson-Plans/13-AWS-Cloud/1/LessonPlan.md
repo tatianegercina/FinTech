@@ -144,7 +144,7 @@ As an example, continue the presentation with the slide titled "How can we under
 
 Explain to students that customer segmentation is driving revenue in leading companies such as Netflix and Amazon.
 
-* 75% of Netflix viewer activity is driven by recommendation ([source](http://blog.springtab.com/personalization-examples-netflix/)).
+* 75% of Netflix viewer activity is driven by recommendation ([source](https://www.wired.com/2013/08/qq-netflix-algorithm/)).
 
 * 35% of Amazon’s sales are generated through their recommendation engine ([source](https://www.martechadvisor.com/articles/customer-experience-2/recommendation-engines-how-amazon-and-netflix-are-winning-the-personalization-battle/)).
 
@@ -251,7 +251,7 @@ Walkthrough the solution and highlight the following:
 
   ![Data types check](Images/datatypes-check.png)
 
-* All columns have an appropriate data type, so no adjustments are needed.
+* All columns, but `Genre`, have a numeric data type. So we will only need to encode the `Genre` column.
 
 * The `CustomerID` column can be dropped; it is not relevant for clustering since it does not denote any relevant characteristic of customer shopping habits.
 
@@ -281,10 +281,10 @@ Walkthrough the solution and highlight the following:
 
 * Finally, the cleaned DataFrame is saved as a `CSV` file for being used in coming activities.
 
-```python
-  file_path = Path("../Resources/shopping_data_cleaned.csv")
-  df_shopping.to_csv(file_path, index=False)
-```
+  ```python
+    file_path = Path("../Resources/shopping_data_cleaned.csv")
+    df_shopping.to_csv(file_path, index=False)
+  ```
 
 Be sure that there are no questions before moving forward.
 
@@ -371,9 +371,30 @@ Continue the demo by adding a new column to the DataFrame with the predicted cla
 
 * Visualizing the clusters helps to understand how they are arranged graphically. In this case, we actually have too many features to represent visually, but we can take two or three of them to plot the clusters.
 
-  | Two features                          | Three Features                        |
-  | ------------------------------------- | ------------------------------------- |
-  | ![2 Features](Images/plotting-2d.png) | ![3 Features](Images/plotting-3d.png) |
+  ```python
+  # Plotting the clusters with two features
+  df_iris.hvplot.scatter(x="sepal_length", y="sepal_width", by="class")
+  ```
+
+  ![2 Features](Images/plotting-2d.png)
+
+  ```python
+  # Plotting the clusters with three features
+  fig = px.scatter_3d(
+      df_iris,
+      x="petal_width",
+      y="sepal_length",
+      z="petal_length",
+      color="class",
+      symbol="class",
+      size="sepal_width",
+      width=800,
+  )
+  fig.update_layout(legend=dict(x=0, y=1))
+  fig.show()
+  ```
+
+  ![3 Features](Images/plotting-3d.png)
 
 Continue the live coding demo by showing students how the best value for `k` can be found; highlight the following:
 
