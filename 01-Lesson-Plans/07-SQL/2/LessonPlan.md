@@ -620,11 +620,11 @@ Review the code in the solution file and explain the following:
 * Two pieces of information are required in the query: (1) the title of a film and (2) the number of copies of the title in the system.
 
   ```sql
-  SELECT title,
-  (SELECT COUNT(inventory.film_id)
-    FROM inventory
-    WHERE film.film_id = inventory.film_id ) AS "Number of Copies"
-  FROM film;
+  CREATE VIEW customer_revenues AS
+  select customer_id, COUNT(payment_id) as payment_count, SUM(amount) as total_amount
+  from payment
+  GROUP BY customer_id
+  ORDER BY SUM(amount) DESC;
   ```
 
 * Add `CREATE VIEW title_count AS` before the above query to create a view for the results.

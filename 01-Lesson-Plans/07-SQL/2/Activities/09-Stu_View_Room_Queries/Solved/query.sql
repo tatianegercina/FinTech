@@ -5,6 +5,8 @@ from payment
 GROUP BY customer_id
 ORDER BY SUM(amount) DESC;
 
+-- BONUS
+
 CREATE VIEW daily_revenues AS
 select CAST(payment_date as DATE), COUNT(payment_id) as payment_count, SUM(amount) as total_amount
 FROM payment
