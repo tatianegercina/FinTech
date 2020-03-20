@@ -689,7 +689,7 @@ In this activity, students will pair up and practice their join and subquery ski
 
 Review the code in the solution file and explain the following:
 
-* Two pieces of information are required in the query: (1) the title of a film and (2) the number of copies of the title in the system.
+* The `payment` table already contains the information necessary to calculate the payment count and total payment amount per `customer_id`; however, in order to pull the customer `first_name` and `last_name`, it is necessary to `JOIN` the `payment` table to the `customer` table via the common `customer_id`. Thus, instead of grouping by the `customer_id`, we can group by the `first_name` and `last_name` columns of the joined `customer` table.
 
   ```sql
   CREATE VIEW customer_revenues AS
@@ -700,15 +700,42 @@ Review the code in the solution file and explain the following:
   ORDER BY SUM(amount) DESC;
   ```
 
-* Add `CREATE VIEW title_count AS` before the above query to create a view for the results.
-
-* The newly created table view, `title_count`, can now be queried to find which titles have 7 copies in the inventory.
+* Querying the newly created `customer_revnues` view for `THERESA ROGERS` shows her total payment count and total revenues generated.
 
   ```sql
-  SELECT title, "Number of Copies"
-  FROM title_count
-  WHERE "Number of Copies" = 7;
+  select *
+  from customer_revenues
+  where first_name = 'THERESA'
+  AND last_name = 'WATSON';
   ```
+
+  ![theresa-watson](Images/theresa-watson.png)
+
+* The `payment` table already contains the information necessary to calculate the payment count and total payment amount per `staff_id`; however, the `staff_id` is not descriptive enough to determine if that value represents `Mike Hillyer`. Therefore, if using a subquery to answer the question, the `staff_id` of `Mike Hillyer` should be determined using a nested subquery for the `staff` table, which is then used in the top-level query to `GROUP BY` `staff_id` and (the casted) `payment_date`.
+
+  ```sql
+  CREATE VIEW staff_sales AS
+  select staff_id, CAST(payment_date as DATE), COUNT(payment_id) as payment_count, SUM(amount) as total_amount
+  FROM payment
+  WHERE staff_id IN
+  (
+    select staff_id
+    FROM staff
+    WHERE first_name = 'Mike'
+    AND last_name = 'Hillyer'
+  )
+  GROUP BY staff_id, CAST(payment_date as DATE)
+  ORDER BY CAST(payment_date as DATE) DESC;
+  ```
+
+* Querying the newly created `staff_sales` view for the date `2005-07-31` shows the total payment count and total revenues generated from `staff_id` = 1, which represents `Mike Hillyer`.
+
+  ```sql
+  select * from staff_sales
+  where payment_date = '2005-07-31';
+  ```
+
+  ![mike-hillyer](Images/mike-hillyer.png)
 
 Ask if there are any questions before moving on.
 

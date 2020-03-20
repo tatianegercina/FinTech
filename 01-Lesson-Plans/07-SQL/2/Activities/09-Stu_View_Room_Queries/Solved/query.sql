@@ -5,6 +5,11 @@ JOIN customer as b ON a.customer_id = b.customer_id
 GROUP BY first_name, last_name
 ORDER BY SUM(amount) DESC;
 
+select *
+from customer_revenues
+where first_name = 'THERESA'
+AND last_name = 'WATSON';
+
 -- BONUS
 CREATE VIEW staff_sales AS
 select staff_id, CAST(payment_date as DATE), COUNT(payment_id) as payment_count, SUM(amount) as total_amount

@@ -12,15 +12,15 @@ In this activity, you will work with a partner to practice your join and subquer
 
   * Then, create a view named `customer_revenues` from the above query.
 
-  * Query the newly created view to find the revenues associated with customer 'THERESA ROGERS'.
+  * Query the newly created view to find the revenues associated with customer 'THERESA WATSON'.
 
-* Write a query to get the number of payments and total payment amount that the staff member 'Mike Hillyer' has facilitated for each day in the `payment` table.
+* Write a query to get the number of payments and total payment amount that the staff member 'Mike Hillyer' has facilitated for each day in the `payment` table. Make sure to use a subquery instead of a join to do so.
 
   * The results should look similar to the following image.
 
   ![subquery](Images/subquery.png)
 
-  * Query the newly created view to find the sales for `Mike Hillyer` on the date `2005-07-31`.
+  * Query the newly created view to find the sales for `staff_id` = 1 on the date `2005-07-31`.
 
 ---
 
