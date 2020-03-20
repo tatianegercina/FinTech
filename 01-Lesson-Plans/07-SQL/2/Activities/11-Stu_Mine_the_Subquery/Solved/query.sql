@@ -1,21 +1,5 @@
--- Using subqueries, identify all actors who appear in the film _Alter Victory_ in the `sakila` database.
-
-SELECT first_name, last_name
-FROM actor
-WHERE actor_id IN
-(
-  SELECT actor_id
-  FROM film_actor
-  WHERE film_id IN
-  (
-    SELECT film_id
-    FROM film
-    WHERE title = 'ALTER VICTORY'
-  )
-);
-
--- Using subqueries, display the titles of films that were rented out by an employee named Jon Stephens.
-
+-- Using subqueries, display the titles of all films of which 
+-- employee `Jon Stephens` rented out to customers.
 SELECT title
 FROM film
 WHERE film_id
@@ -26,11 +10,38 @@ IN (
     IN (
         SELECT inventory_id
         FROM rental
-        WHERE staff_id
-        IN (
-              SELECT staff_id
-              FROM staff
-              WHERE last_name = 'Stephens' AND first_name = 'Jon'
-            )
-        )
+        WHERE rental_id IN
+		   (     
+		    SELECT rental_id
+		    FROM payment
+		    WHERE staff_id IN
+		    	(
+		          SELECT staff_id
+		          FROM staff
+		          WHERE last_name = 'Stephens' AND first_name = 'Jon'
+		        )
+		    )
+		)
   );
+
+-- Using subqueries, find the total rental amount paid for the film `ACE GOLDFINGER`
+select SUM(amount) as total_amount
+from payment
+WHERE rental_id IN 
+	(
+	select rental_id
+	from rental
+	where inventory_id IN
+		(
+		select inventory_id
+		from inventory
+		where film_id IN 
+			(
+			select film_id
+			from film
+			where title = 'ACE GOLDFINGER'
+			)
+		)
+	)
+
+
