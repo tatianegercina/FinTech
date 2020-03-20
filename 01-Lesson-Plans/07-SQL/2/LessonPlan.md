@@ -527,7 +527,7 @@ In this activity, students will practice creating subqueries.
 
 Review the solution in pgAdmin and explain the following:
 
-* In the first query, we're seeking the `first_name` and `last_name` of all customers who have made rental payments.
+* The first question asks to find the `first_name` and `last_name` of all customers who have made payments. Specifically, the query returns the `first_name` and `last_name` of all customers whose `customer_id` is present in the `payment` table.
 
   ```sql
   SELECT first_name, last_name
@@ -539,7 +539,7 @@ Review the solution in pgAdmin and explain the following:
     );
   ```
 
-* The second query is a subquery to select the staff `email` addresses of those who have helped customers make rental payments.
+* The second question asks to find the `email` of all staff that have helped service customers and their payments. Specifically, the query returns the `email` of all staff whose `staff_id` is present in the `payment` table.
 
   ```sql
   SELECT email
@@ -551,7 +551,7 @@ Review the solution in pgAdmin and explain the following:
     );
   ```
 
-* The third query returns the records of rentals that have been paid for.
+* The third question asks to find the entire rental records of all rentals that have been purchased. Specifically, the query returns all columns of the `rental` table for those `rental_ids` that are present in the `payment` table.
 
   ```sql
   SELECT *

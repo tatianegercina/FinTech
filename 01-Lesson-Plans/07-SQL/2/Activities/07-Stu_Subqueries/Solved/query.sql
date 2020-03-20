@@ -25,7 +25,7 @@ WHERE rental_id IN
     FROM payment
   );
 
--- 4. Find the film titles of all films that have been rented out and paid for
+-- BONUS
 SELECT title
 FROM film
 WHERE film_id IN
