@@ -1,5 +1,5 @@
 -- 1. Find the customer records of those who have made payments.
-SELECT *
+SELECT first_name, last_name
 FROM customer
 WHERE customer_id IN
   (
@@ -7,8 +7,8 @@ WHERE customer_id IN
   FROM payment
   );
 
--- 2. Find the staff records of those who have helped customers make payments.
-SELECT *
+-- 2. Find the staff email addresses of those who have helped customers make payments.
+SELECT email
 FROM staff
 WHERE staff_id IN
   (
@@ -25,8 +25,8 @@ WHERE rental_id IN
     FROM payment
   );
 
--- 4. Find the film records of all films that have been rented out and paid for
-SELECT *
+-- 4. Find the film titles of all films that have been rented out and paid for
+SELECT title
 FROM film
 WHERE film_id IN
   (
@@ -34,7 +34,7 @@ WHERE film_id IN
   FROM inventory
   WHERE inventory_id IN
     (
-    SELECT *
+    SELECT inventory_id
     FROM rental
     WHERE rental_id IN
       (

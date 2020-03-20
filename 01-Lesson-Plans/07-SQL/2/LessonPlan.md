@@ -455,47 +455,62 @@ In this activity, students will practice creating subqueries.
 
 Review the solution in pgAdmin and explain the following:
 
-* In the first query, we're seeking the name and ID number of cities from a given list:
-
-  ```sql
-  SELECT city, city_id
-  FROM city
-  WHERE city IN ('Qalyub', 'Qinhuangdao', 'Qomsheh', 'Quilmes');
-  ```
-
-* The second query is a subquery to select the `district`.
-
-* This query will select the `district` where `city_id` is in the results from the first query.
-
-  ```sql
-  SELECT district
-  FROM address
-  WHERE city_id IN
-  (
-    SELECT city_id
-    FROM city
-    WHERE city IN ('Qalyub', 'Qinhuangdao', 'Qomsheh', 'Quilmes')
-  );
-  ```
-
-* Because `district` is not available in the `city` table, we had to use the `city_id` from the `city` table. The `city_id` will now allow a connection between `district` and `city`.
-
-* The bonus adds another level of subqueries. It requires querying information from the `city` table, with which the `address` table is queried. That information is then used to query the `customer` table.
+* In the first query, we're seeking the `first_name` and `last_name` of all customers who have made rental payments.
 
   ```sql
   SELECT first_name, last_name
-  FROM customer cus
-  WHERE address_id IN
-  (
-    SELECT address_id
-    FROM address a
-    WHERE city_id IN
+  FROM customer
+  WHERE customer_id IN
     (
-      SELECT city_id
-      FROM city
-      WHERE city LIKE 'Q%'
-    )
-  );
+    SELECT customer_id
+    FROM payment
+    );
+  ```
+
+* The second query is a subquery to select the staff `email` addresses of those who have helped customers make rental payments.
+
+  ```sql
+  SELECT email
+  FROM staff
+  WHERE staff_id IN
+    (
+    SELECT staff_id
+    FROM payment
+    );
+  ```
+
+* The third query returns the records of rentals that have been paid for.
+
+  ```sql
+  SELECT *
+  FROM rental
+  WHERE rental_id IN
+    (
+      SELECT rental_id
+      FROM payment
+    );
+  ```
+
+* The bonus adds additional layers of nested subqueries. It requires querying a `rental_id` from the `payment` table, which is then used to query the `inventory_id` from the `rental` table, which is then used to query the `film_id` from the `inventory table`. Finally, the top level select statement returns the film titles that pertain to the `film_id` queried up the chain of nested subqueries.
+
+  ```sql
+  SELECT title
+  FROM film
+  WHERE film_id IN
+    (
+    SELECT film_id
+    FROM inventory
+    WHERE inventory_id IN
+      (
+      SELECT inventory_id
+      FROM rental
+      WHERE rental_id IN
+        (
+        SELECT rental_id
+        FROM payment
+        )
+      )
+    );
   ```
 
 ### 13. Instructor Do: Create Views (10 min)
