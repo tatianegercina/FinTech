@@ -558,8 +558,8 @@ Review the solution in pgAdmin and explain the following:
   FROM rental
   WHERE rental_id IN
     (
-      SELECT rental_id
-      FROM payment
+    SELECT rental_id
+    FROM payment
     );
   ```
 
@@ -794,26 +794,26 @@ The sample query would be as follows:
   SELECT COUNT(*)
   FROM customer
   WHERE customer_id IN
-  (
-    SELECT customer_id
-    FROM payment
-    WHERE rental_id IN
-  (
-    SELECT rental_id
-    FROM rental
-    WHERE inventory_id IN
     (
-      SELECT inventory_id
-      FROM inventory
-      WHERE film_id IN
+      SELECT customer_id
+      FROM payment
+      WHERE rental_id IN
       (
-        SELECT film_id
-        FROM film
-        WHERE title = 'BLANKET BEVERLY'
+        SELECT rental_id
+        FROM rental
+        WHERE inventory_id IN
+        (
+          SELECT inventory_id
+          FROM inventory
+          WHERE film_id IN
+          (
+            SELECT film_id
+            FROM film
+            WHERE title = 'BLANKET BEVERLY'
+          )
+        )
       )
-    )
-  )
-  );
+    );
   ```
 
 * `COUNT(*)` will count the number of rows, similar to how `SELECT *` will select all rows. The asterisk indicates *all*.

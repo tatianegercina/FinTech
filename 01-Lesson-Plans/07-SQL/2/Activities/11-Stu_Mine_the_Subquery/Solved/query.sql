@@ -43,5 +43,3 @@ WHERE rental_id IN
 			)
 		)
 	);
-
-

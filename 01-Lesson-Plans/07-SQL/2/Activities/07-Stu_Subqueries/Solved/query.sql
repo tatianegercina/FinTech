@@ -21,8 +21,8 @@ SELECT *
 FROM rental
 WHERE rental_id IN
   (
-    SELECT rental_id
-    FROM payment
+  SELECT rental_id
+  FROM payment
   );
 
 -- BONUS
