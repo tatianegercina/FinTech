@@ -4,9 +4,9 @@ In this activity, you will work with a partner to practice your join and subquer
 
 ### Instructions
 
-* Write a query to get the number of payments and total payment amount for each customer in the `payment` table.
+* Write a query to get the number of copies of a film title that exist in the inventory.
 
-  The results should look like those shown in the following image. Your challenge is to use a subquery (a query embedded within another query) instead of a join.
+    The results should look like those shown in the following image. Your challenge is to use a subquery (a query embedded within another query) instead of a join.
 
   ![Subquery](Images/subquery.png)
 
