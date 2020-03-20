@@ -1,5 +1,3 @@
-placeholder
-
 ## 7.3 Lesson Plan: Data Modeling
 
 ### Overview
