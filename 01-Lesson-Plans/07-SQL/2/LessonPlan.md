@@ -693,9 +693,10 @@ Review the code in the solution file and explain the following:
 
   ```sql
   CREATE VIEW customer_revenues AS
-  select customer_id, COUNT(payment_id) as payment_count, SUM(amount) as total_amount
-  from payment
-  GROUP BY customer_id
+  select first_name, last_name, COUNT(payment_id) as payment_count, SUM(amount) as total_amount
+  from payment as a
+  JOIN customer as b ON a.customer_id = b.customer_id
+  GROUP BY first_name, last_name
   ORDER BY SUM(amount) DESC;
   ```
 
