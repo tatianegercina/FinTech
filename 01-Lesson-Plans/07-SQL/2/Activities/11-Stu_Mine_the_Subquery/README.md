@@ -4,9 +4,17 @@ In this activity, you will continue to practice subqueries. Work individually or
 
 ### Instructions
 
-* Using subqueries, display the titles of films that the employee `Jon Stephens` rented to customers.
+* Using subqueries, find the titles of films that the employee `Jon Stephens` rented to customers.
 
-* Using subqueries, display the titles of films that the employee Jon Stephens rented to customers.
+  * The results should be similar to the following:
+
+  ![jon-stephens](Images/jon-stephens.png)
+
+* Using subqueries, find the total rental amount paid for the film `ACE GOLDFINGER`
+
+  * The results should be similar to the following:
+
+  ![ace-goldfinger](Images/ace-goldfinger.png)
 
 ---
 
