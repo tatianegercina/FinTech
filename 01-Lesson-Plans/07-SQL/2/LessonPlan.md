@@ -336,13 +336,59 @@ In this activity, you will use `ORDER BY` in combination with other SQL methods 
 
 Open pgAdmin and walk through the solution, highlighting the following:
 
-* The `actor` table is grouped by `first_name`, with an aggregate taking the count and then given an alias of `actor count`. The query is then ordered in descending order by the count.
+* Using the `ORDER BY` clause in conjunction with the `COUNT` function ensures that aggregate results are now ordered in `DESC` or descending order. In this case, the number of payments per customer is calculated and ordered from the customers with the top number of payments to customers with the lowest number of payments.
 
-* The `ROUND` function is used to limit the results to two decimal places.
+  ```sql
+  select customer_id, COUNT(*) as payment_count
+  from payment
+  group by customer_id
+  ORDER BY COUNT(*) DESC;
+  ```
 
-* `LIMIT 10` is added to the end of the query to return the top 10 results.
+* The `ORDER BY` clause can be used in either `ASC` (ascending) or `DESC` (descending) order. When used in conjunction with the `LIMIT` clause, results can be filtered down to the desired record count, which in this case will display the top 5 and bottom 5 customer payment counts.
 
-* For the bonus, a `JOIN` is needed to combine the `country` and `city` tables. The return of the join can then be grouped and aggregated. The result is sorted by the count of countries in descending order.
+  ```sql
+  select customer_id, SUM(amount) as total_payment_amount
+  from payment
+  group by customer_id
+  ORDER BY SUM(amount) DESC
+  LIMIT 5;
+
+  select customer_id, SUM(amount) as total_payment_amount
+  from payment
+  group by customer_id
+  ORDER BY SUM(amount) ASC
+  LIMIT 5;
+  ```
+
+* When calculating averages, average values can be lengthy in terms of their decimal places. Therefore, the `ROUND` function can be used to limit the results to the desired decimal place (in this case two decimal places).
+
+  ```sql
+  select customer_id, ROUND(AVG(amount), 2) as average_payment_amount
+  from payment
+  group by customer_id
+  ORDER BY AVG(amount) DESC
+  LIMIT 5;
+  ```
+
+* For the first bonus, the `payment` table alone does not contain staff information, only a `staff_id`. Therefore, the a `JOIN` is necessary to access the `first_name` and `last_name` of the `staff` table, which can then be used in the `GROUP BY` clause to group by staff names and then calculate the count of customers they've serviced.
+
+  ```sql
+  select first_name, last_name, COUNT(customer_id) as customer_count
+  from payment as a
+  JOIN staff as b ON a.staff_id = b.staff_id
+  GROUP BY first_name, last_name
+  ORDER BY COUNT(customer_id) DESC;
+  ```
+
+* The `CAST` function can be used to convert datetime column values to date datatypes. This effectively shortens the value to just the date portions (rather than date and timestamp), which allows for grouping by common date values.
+
+  ```sql
+  select CAST(payment_date AS DATE), COUNT(*)
+  from payment
+  GROUP BY CAST(payment_date AS DATE)
+  ORDER BY COUNT(*) DESC;
+  ```
 
 ---
 
