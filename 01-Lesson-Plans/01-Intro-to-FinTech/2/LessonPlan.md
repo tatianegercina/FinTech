@@ -301,17 +301,17 @@ Open the slideshow and ask the students the following questions.
 
 * How might cloud-based networking contribute to the advent of start-ups and technological innovators?
 
-  **Sample Answer:** Traditionally, hosting servers meant purchasing on-premises server farms with large up-front costs and regular maintenance, which was a barrier for entry for small startups. However, with cloud-based networking such as AWS, small start-ups and even individuals can quickly spin up servers faster and on an as-needed basis, thereby minimizing time to deployment and reducing up-front costs. This allows small start-ups to compete more efficiently with larger firms that have existing infrastructures.
+  **Sample Answer:** Traditionally, hosting servers meant purchasing on-premises server farms with large up-front costs and regular maintenance, which was a barrier for entry for small startups. However, with cloud-based networking such as AWS, small startups, and even individuals, can quickly spin up servers faster and on an as-needed basis, thereby minimizing time to deployment and reducing up-front costs. This allows small startups to compete more efficiently with larger firms that have existing infrastructures.
 
 * Where else might technology disrupt traditional finance?
 
   **Sample Answer:** Machine learning can be used in lending to more efficiently target customers who have a higher likelihood of paying back their loans, while avoiding those who have a higher likelihood of *not* paying back their loans.
 
-Then, end the discussion with the following points:
+End the discussion with the following points:
 
 * The field of FinTech is so vast and rapidly changing due to technological innovation that even entire domains of the FinTech ecosystem have begun to change the way in which companies operate and compete with their peers.
 
-* In order to complete the Unit 1 homework assignment (FinTech case study), students will need to comprehend the nature of the FinTech domains as well as the competitive factors affecting the underlying companies within those domains. Therefore, we will need to take a closer look at the FinTech landscape.
+* In order to complete the Unit 1 homework assignment (FinTech case study), students will need to comprehend the nature of the FinTech domains, as well as the competitive factors affecting the underlying companies within those domains. Therefore, we will need to take a closer look at the FinTech landscape.
 
 ---
 
@@ -362,7 +362,7 @@ Tell students the following:
 
 * This review will be done in the form of a turn-and-teach, in which each group will present their news headlines to the group next to them.
 
-* Students that they can send any relevant documents (containing FinTech domain information) to their peer group members to facilitate quicker and easier information transfer.
+* Tell students that they can send any relevant documents (containing FinTech domain information) to their peer group members to facilitate a quicker and easier transfer of information.
 
 **Note:** There should be an even number of groups to perform a turn-and-teach; however, if there is an odd number of groups, feel free to put three groups together to share their headlines.
 
@@ -370,9 +370,9 @@ Walk around the class with your TAs to support any discussions if necessary.
 
 After the turn-and-teach, ask for volunteers to share notable or interesting FinTech news headlines that they heard from their peer groups. Then, explain the following:
 
-* The intent of this activity was to provide students with not only the breadth but also the depth of knowledge for each FinTech domain. This knowledge will prove valuable when applying for roles within the FinTech industry.
+* The intent of this activity is to provide students with not only the breadth but also the depth of knowledge for each FinTech domain. This knowledge will prove valuable when applying for roles within the FinTech industry.
 
-* It's not enough to simply restate the past; you should also analyze and predict the future. After completing this activity, students should have a general idea about the trends affecting each FinTech domain as well as the potential outcomes that may result for each domain in the near future.
+* It's not enough to simply restate the past; you should also analyze and predict the future. After completing this activity, students should have a general idea about the trends affecting each FinTech domain, as well as the potential outcomes that may result for each domain in the near future.
 
 Ask if there are any questions before moving on.
 
@@ -396,7 +396,7 @@ Recap today's objectives. Students are now able to:
 
 * Make predictions about FinTech domains.
 
-Remind students that as FinTech professionals, they need to be both technical experts with cutting-edge skills as well as seasoned financiers. Today's lesson was good practice in both of these aspects; students are on their way to becoming FinTech subject matter experts (SMEs).
+Remind students that as FinTech professionals, they need to be both technical experts with cutting-edge skills, as well as seasoned financiers. Today's lesson was good practice in both of these aspects; students are on their way to becoming FinTech subject matter experts (SMEs).
 
 Ask if students have any remaining questions before ending the class. If needed, TAs will be hosting office hours after class.
 
@@ -404,4 +404,4 @@ Ask if students have any remaining questions before ending the class. If needed,
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
