@@ -324,14 +324,14 @@ If time permits, cover these additional points:
 
   ```python
   # Find the index of the particular element name
-  print("Determining the order of Pokemon 'Gyarados'...")
+  print("Determining the index of Pokemon 'Gyarados'...")
   print(pokemon)
   print(pokemon.index("Gyarados"))
   print()
   ```
 
   ```
-  Determining the order of Pokemon 'Gyarados'...
+  Determining the index of Pokemon 'Gyarados'...
   ['Pikachu', 'Charizard', 'Bulbasaur', 'Gyarados', 'Dragonite', 'Onyx']
   3
   ```
