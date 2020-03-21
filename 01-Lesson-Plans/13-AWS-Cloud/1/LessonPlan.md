@@ -34,7 +34,7 @@ By the end of the class, students will be able to:
 
 * There are several theoretical aspects behind the k-means and PCA algorithms, focus the class on the practical application of these algorithms for customer segmentation and share the additional references presented on the slides for those students interested in having a deeper understanding.
 
-* The cloud is a core concept for FinTech professionals; however, it might be seen as complex and nebulous for some students; it's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud, by offering user-friendly interfaces that allow deployment of a machine-learning model with few lines of code and some mouse clicks.
+* The cloud is a core concept for FinTech professionals; however, it might be seen as complex and nebulous for some students; it's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud, by offering user-friendly interfaces that allow deployment of a machine-learning model with a few lines of code and some mouse clicks.
 
 * On Day 1, the homework demo is presented; be sure to get familiar with the homework's solutions before the class.
 
@@ -63,11 +63,11 @@ By the end of the class, students will be able to:
 
 In this activity, students will be introduced to unsupervised learning and its most relevant applications. Also, an overview of the unit is presented, including a homework demo.
 
-Welcome the class to Unit 13, open the lesson slides, and move to the What You Will Achieve in this Unit section by highlighting the following:
+Welcome the class to Unit 13, open the lesson slides, and move to the "What You Will Achieve in this Unit" section by highlighting the following:
 
-* The cloud is a core tool for FinTech professionals; students will learn how to leverage their Python and machine-learning skills, by using Amazon Web Services to deploy models and business applications that could be reached by hundreds or thousands of people.
+* The cloud is a core tool for FinTech professionals; you will learn how to leverage their Python and machine-learning skills, by using Amazon Web Services to deploy models and business applications that could be reached by hundreds or thousands of people.
 
-* In this unit, students will have hands-on experience with the following AWS services:
+* In this unit, you will have hands-on experience with the following AWS services:
 
   * **Amazon SageMaker:** To deploy machine-learning models
   * **Amazon Lex:** To create conversational interfaces
@@ -76,7 +76,7 @@ Welcome the class to Unit 13, open the lesson slides, and move to the What You W
 
 Open your AWS Management Console, open the Cryptocurrencies Clustering homework's solution, and briefly explain to students that a machine-learning model could be deployed in the cloud using Jupyter Notebooks, a tool they already know, and Amazon SageMaker.
 
-Continue by opening the Amazon Lex Management console, open the RoboAdvisor homework solution, and test the bot with the sample utterance `I'm worried about my retirement` to conduct a sample dialogue as follows.
+Continue by opening the Amazon Lex Management console, or follow the slides, to demo the RoboAdvisor homework solution with the sample utterance `I'm worried about my retirement` to conduct a sample dialogue as follows.
 
 ![RoboAdvisor Demo](Images/robo-advisor-demo.gif)
 
@@ -88,7 +88,7 @@ Conclude the homework demo by telling students that they will create one of two 
 
 Continue with the slides by highlighting the following:
 
-* Cloud services are awesome tools for FinTech professionals. Students already have mastered several skills that will empower the cloud applications they will create.
+* Cloud services are fantastic tools for FinTech professionals. You already mastered several skills, such as Python, APIs, time series, classification algorithms, and NLP, that will empower the cloud applications you will create.
 
 * This journey starts by learning about unsupervised learning.
 
@@ -98,7 +98,7 @@ Continue with the slides by highlighting the following:
 
 In this activity, students will be introduced to unsupervised learning and its most relevant applications.
 
-Open the lesson slides and go to the Introduction to Unsupervised Learning section.
+Open the lesson slides and go to the "Introduction to Unsupervised Learning" section.
 
 Start the presentation by explaining to students that, in general terms, machine learning has two main areas of application: supervised and unsupervised learning.
 
@@ -110,9 +110,11 @@ Students are already familiar with supervised learning algorithms and its applic
 | Uses training datasets             | Uses just input datasets                   |
 | **Goal:** Predict a class or value | **Goal:** Determine patterns or group data |
 
+Explain to students that a glance, unsupervised learning uses unlabeled data to find patterns or group data.
+
 Start a short facilitated discussion with students. Take one or two answers from the class by asking the following question:
 
-* If unsupervised learning deals with unlabeled data, what kind of questions or business problems do you think can we solve?
+* If unsupervised learning deals with unlabeled data, what kind of questions or business problems do you think we can solve?
 
   **Sample answer:** We can group customers on a retail chain by shopping habits, so we can send customized offers by email or mobile app to increase sales.
 
@@ -120,7 +122,7 @@ Start a short facilitated discussion with students. Take one or two answers from
 
   **Sample answer:** We can use unsupervised learning to cluster stock data so we can create investment portfolios according to the resulting groups.
 
-As an example, continue with the presentation on the slide titled "How can we understand our customers?" and then move forward by highlighting the following:
+Continue the presentation with the slide titled "How can we understand our customers?." Explain to students that you may answer this question using supervised or unsupervised learning, then move forward in the slides by highlighting the following:
 
 * Beyond the typical segmentation variables, such as age, gender, income, or zip code, understanding customers is crucial in every sector.
 
@@ -136,7 +138,7 @@ As an example, continue with the presentation on the slide titled "How can we un
 
 * Customer segmentation is one of the most popular applications of unsupervised learning. It is the division of potential customers in a given market into discrete groups.
 
-* Thanks to unsupervised learning algorithms, we can group customers based similarities such as:
+* Thanks to unsupervised learning algorithms, we can group customer based similarities such as:
 
   * Customer needs (e.g., a particular product can satisfy some of them)
   * Responses to online marketing channels
@@ -144,7 +146,7 @@ As an example, continue with the presentation on the slide titled "How can we un
 
 Explain to students that customer segmentation is driving revenue in leading companies such as Netflix and Amazon.
 
-* 75% of Netflix viewer activity is driven by recommendation ([source](http://blog.springtab.com/personalization-examples-netflix/)).
+* 75% of Netflix viewer activity is driven by recommendation ([source](https://www.wired.com/2013/08/qq-netflix-algorithm/)).
 
 * 35% of Amazon’s sales are generated through their recommendation engine ([source](https://www.martechadvisor.com/articles/customer-experience-2/recommendation-engines-how-amazon-and-netflix-are-winning-the-personalization-battle/)).
 
@@ -200,7 +202,7 @@ Open the unsolved version of the Jupyter Notebook, live code the demo, and highl
 
 Explain to students that since all the variables on the dataset are numerical, there are no additional data preprocessing tasks to do. However, data transformations have to be done when there are categorical data or non-numeric features on the dataset. For example, transforming `male` and `female` categorical values to `0` and `1`.
 
-* Finally, the preprocessed DataFrame is saved on a new `CSV` file for further use.
+* Finally, the preprocessed DataFrame is saved as a new `CSV` file for further use.
 
   ```python
   file_path = Path("../Resources/new_iris_data.csv")
@@ -213,7 +215,7 @@ Ask the class if there are any further questions before moving to the next activ
 
 ### 4. Student Do: Understanding Customers (20 min)
 
-In this activity, students will perform some data preparation tasks on a dataset that contains data from purchases on an e-commerce website made by 200 customers. Students will use this dataset on further activities to find customer segments.
+In this activity, students will perform some data preparation tasks on a dataset that contains data from purchases on an e-commerce website made by 200 customers. Students will use this dataset in further activities to find customer segments.
 
 There are some data transformations that should be made to the dataset, so ask TAs to assist students if there are any questions about why the following changes are needed.
 
@@ -251,7 +253,7 @@ Walkthrough the solution and highlight the following:
 
   ![Data types check](Images/datatypes-check.png)
 
-* All columns have an appropriate data type, so no adjustments are needed.
+* All columns, but `Genre`, have a numeric data type. So we will only need to encode the `Genre` column.
 
 * The `CustomerID` column can be dropped; it is not relevant for clustering since it does not denote any relevant characteristic of customer shopping habits.
 
@@ -259,7 +261,7 @@ Walkthrough the solution and highlight the following:
   df_shopping.drop(columns=["CustomerID"], inplace=True)
   ```
 
-* Looking for `null` values and duplicate entries is part of any data preprocessing workflow; there are no `null` values nor duplicates on this DataFrame, so no additional adjustments are needed.
+* Looking for `null` values and duplicate entries is part of any data preprocessing workflow; there are no `null` values nor duplicates in this DataFrame, so no additional adjustments are needed.
 
 * The `Genre` column is categorical, so it should be transformed into numerical values. Transforming `Male` to `1` and `Female` to `0` is a common practice.
 
@@ -281,10 +283,10 @@ Walkthrough the solution and highlight the following:
 
 * Finally, the cleaned DataFrame is saved as a `CSV` file for being used in coming activities.
 
-```python
-  file_path = Path("../Resources/shopping_data_cleaned.csv")
-  df_shopping.to_csv(file_path, index=False)
-```
+  ```python
+    file_path = Path("../Resources/shopping_data_cleaned.csv")
+    df_shopping.to_csv(file_path, index=False)
+  ```
 
 Be sure that there are no questions before moving forward.
 
@@ -298,7 +300,7 @@ In this activity, students will learn how the k-means algorithm works. Use your 
 
 * [03_Ins_K-Means.ipynb](Activities/03-Ins_KMeans/Solved/03_Ins_K-Means.ipynb)
 
-Open the lesson slides and move to the K-Means Algorithm section; go through the slides and highlight the following.
+Open the lesson slides and move to "The K-Means Algorithm" section; go through the slides and highlight the following.
 
 * To understand how k-means works, a fictional anecdote is used.
 
@@ -306,11 +308,13 @@ Open the lesson slides and move to the K-Means Algorithm section; go through the
   >
   > You realize that every sphere represents a flower and that axes represent features of flowers. After observing the flowers, you discovered that there are some patterns when you combine the three features.
   >
+  > At this point, K-Means comes to the rescue!
+  >
   > We can see that spheres (data points) with similar features seem to be closer together than data points with dissimilar features. We can use this spatial information to group similar data points together.
 
 Explain to students that k-means is an unsupervised learning algorithm used to identify clusters and solve clustering issues.
 
-Continue on the slides to formally introduce k-means, and highlight the following:
+Continue on with the slides to formally introduce k-means, and highlight the following:
 
 * The k-means algorithm groups the data into `k` clusters, where each piece of data is assigned to a cluster based on some similarity or distance measure to a **centroid**.
 
@@ -371,9 +375,30 @@ Continue the demo by adding a new column to the DataFrame with the predicted cla
 
 * Visualizing the clusters helps to understand how they are arranged graphically. In this case, we actually have too many features to represent visually, but we can take two or three of them to plot the clusters.
 
-  | Two features                          | Three Features                        |
-  | ------------------------------------- | ------------------------------------- |
-  | ![2 Features](Images/plotting-2d.png) | ![3 Features](Images/plotting-3d.png) |
+  ```python
+  # Plotting the clusters with two features
+  df_iris.hvplot.scatter(x="sepal_length", y="sepal_width", by="class")
+  ```
+
+  ![2 Features](Images/plotting-2d.png)
+
+  ```python
+  # Plotting the clusters with three features
+  fig = px.scatter_3d(
+      df_iris,
+      x="petal_width",
+      y="sepal_length",
+      z="petal_length",
+      color="class",
+      symbol="class",
+      size="sepal_width",
+      width=800,
+  )
+  fig.update_layout(legend=dict(x=0, y=1))
+  fig.show()
+  ```
+
+  ![3 Features](Images/plotting-3d.png)
 
 Continue the live coding demo by showing students how the best value for `k` can be found; highlight the following:
 
@@ -634,7 +659,7 @@ Walkthrough the solution and highlight the following:
   shopping_pca = pca.fit_transform(shopping_scaled)
   ```
 
-Tell students that, when they fetch the explained variance, the first principal component will contain `33.7%` of the variance, and the second principal component will contain `26.2%` of the variance. Since we have `59.9%` of the information in the original dataset, it is worth to explore increasing the number of principal components up to three to verify if this ratio improves.
+Tell students that, when they fetch the explained variance, the first principal component will contain `33.7%` of the variance, and the second principal component will contain `26.2%` of the variance. Since we have `59.9%` of the information in the original dataset, it is worth it to explore increasing the number of principal components up to three to verify if this ratio improves.
 
 ![Explained variance with two PCs](Images/explained-variance-2pcs.png)
 
@@ -674,7 +699,7 @@ In this activity, students will be introduced to the cloud and the generalities 
 
 Explain that while PCA can be very useful in speeding up algorithms by reducing dimensionality, modern machine-learning algorithms can also take advantage of powerful computing resources in the cloud.
 
-Open the lesson slides, move to the Welcome to the Cloud, and Amazon Web Services section and introduce the concept of the cloud by asking students to share what they think the cloud is.
+Open the lesson slides, move to the "Welcome to the Cloud and Amazon Web Services" section and introduce the concept of the cloud by asking students to share what they think the cloud is.
 
 Collect two or three answers and emphasize the following points:
 
@@ -692,9 +717,9 @@ Collect two or three answers and emphasize the following points:
 
 * You get access to unlimited resources (in theory, maybe not in practice).
 
-* There are multiple services models, with trade-offs in responsibility and control. The most common are:
+* There are multiple service models, with trade-offs in responsibility and control. The most common are:
   * **Infrastructure as a service (IaaS):** Online services that provide APIs to access different infrastructures such as servers, virtual machines, storage, load balancers, or network interfaces (e.g., [Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/)).
-  * **Platform as a service (PaaS):** Provides a platform that allow customers to develop, run, and manage applications without the complexity of building and maintaining their own physical infrastructure (e.g., [Amazon Web Services](https://aws.amazon.com/)).
+  * **Platform as a service (PaaS):** Provides a platform that allows customers to develop, run, and manage applications without the complexity of building and maintaining their own physical infrastructure (e.g., [Amazon Web Services](https://aws.amazon.com/)).
   * **Software as a service (SaaS):** Refers to a software licensing and delivery model where software is licensed on a subscription basis and is centrally hosted (e.g., [Microsoft Office 365](https://www.office.com)).
   * **Function/code as a service (FaaS):** Also known as serverless computing, it offers a remote procedure call that enables the deployment of individual functions in the cloud that run in response to events (e.g., [AWS Lambda](https://aws.amazon.com/lambda/)).
 
@@ -772,7 +797,7 @@ Explain to students that learning how to train and deploy models with SageMaker 
 
 This activity is intended to give students a few minutes to explore SageMaker.
 
-Ask students to login into their [AWS Console](https://console.aws.amazon.com) and highlight the following:
+Ask students to log into their [AWS Console](https://console.aws.amazon.com) and highlight the following:
 
 * The Amazon SageMaker service could be reached at the Find Services search box by typing `sagemaker` in it.
 
