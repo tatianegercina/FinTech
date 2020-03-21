@@ -682,16 +682,17 @@ Open [csv_reader.py](Activities/09-Ins_CSV_Reader/Solved/csv_reader.py). Walk th
 - The `csv` library includes a `reader()` function that parses CSV data by a separator or delimiter, and creates a `row` list object that contains the values for every row in the CSV data.
 
   ```python
-  csvreader = csv.reader(csvfile, delimiter=',')
+  with open(filename, 'r') as csvfile: 
+      csvreader = csv.reader(csvfile, delimiter=',')
 
-  # Read each row of data after the
-  for row in csvreader:
-      # Print the row
-      print(row)
-      # Set salary variable equal to the value in the 4th column of each row
-      salary = int(row[3])
-      # Append the row salary value to the list of salaries
-      salaries.append(salary)
+      # Read each row of data after the
+      for row in csvreader:
+          # Print the row
+          print(row)
+          # Set salary variable equal to the value in the 4th column of each row
+          salary = int(row[3])
+          # Append the row salary value to the list of salaries
+          salaries.append(salary)
   ```
 
 - Writing to a CSV file is very similar syntactically to reading a CSV file. Use the `writerow()` function to write a list or row of data to the output CSV file.
