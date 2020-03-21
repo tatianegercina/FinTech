@@ -205,7 +205,7 @@ Finally, have the students follow along to complete these steps:
 
 * Choose your Excel file in the dialog box.
 
-  * Note that you can also drag and drop the file rather than use the "Upload files" button.
+  * Note that you can also drag and drop the file, rather than use the "Upload files" button.
 
 * Add a commit message and commit the changes.
 
@@ -243,7 +243,7 @@ Lastly, explain the following to the students:
 
 ### 8. Instructor Do: Evolution of FinTech (10 min)
 
-In this section, give students a brief summary of some of the key factors leading to the growth of the FinTech space. Understanding the historical background of FinTech as well as its current trajectory will give students knowledge that will help them both in employer interviews and their FinTech career.
+In this section, give students a brief summary of some of the key factors leading to the growth of the FinTech space. Understanding the historical background of FinTech, as well as its current trajectory, will give students knowledge that will help them both in employer interviews and their FinTech career.
 
 **File:** [Evolution of FinTech Slides](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit#slide=id.g5ecf7ad488_3_22)
 
@@ -261,7 +261,7 @@ Open the slideshow and go through the slides while reviewing the key historical 
 
 * Big Data
 
-  * Over the years, computer processing units (CPUs), random access memory (RAM), and hard drive storage devices have become more powerful and less expensive. Therefore, more companies were able to purchase and utilize large clusters of computers working in parallel.
+  * Over the years, computer processing units (CPUs), random access memory (RAM), and hard drive storage devices became more powerful and less expensive. Therefore, more companies were able to purchase and utilize large clusters of computers working in parallel.
 
   * Parallel processing paradigms have also shifted to become more efficient. Traditionally, to enable machines to work in parallel, the concept of MapReduce was born. With MapReduce, data workloads were split among multiple machines for disk-based processing, and then re-aggregated at the end to produce the result. With the advent of Spark, that same process has been refined for in-memory processing, in which data workloads utilize RAM that is much faster at processing data (though more costly).
 
@@ -301,7 +301,7 @@ Open the slideshow and ask the students the following questions.
 
 * How might cloud-based networking contribute to the advent of start-ups and technological innovators?
 
-  **Sample Answer:** Traditionally, hosting servers meant purchasing on-premises server farms with large up-front costs and regular maintenance, which was a barrier for entry for small start-ups. However, with cloud-based networking such as AWS, small start-ups and even individuals can quickly spin up servers faster and on an as-needed basis, thereby minimizing time to deployment and reducing up-front costs. This allows small start-ups to compete more efficiently with larger firms that have existing infrastructures.
+  **Sample Answer:** Traditionally, hosting servers meant purchasing on-premises server farms with large up-front costs and regular maintenance, which was a barrier for entry for small startups. However, with cloud-based networking such as AWS, small start-ups and even individuals can quickly spin up servers faster and on an as-needed basis, thereby minimizing time to deployment and reducing up-front costs. This allows small start-ups to compete more efficiently with larger firms that have existing infrastructures.
 
 * Where else might technology disrupt traditional finance?
 
