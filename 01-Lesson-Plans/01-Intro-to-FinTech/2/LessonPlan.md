@@ -348,7 +348,7 @@ If students are confused or want more information, open the [slides in the slide
 
 ### 12. Student Do: FinTech Domains, Part 2 (10 min)
 
-In this activity, students will build on the research gathered in Part 1 to create hypothetical news headlines for each FinTech domain for events that could potentially occur within the next five years. Students will continue working in their groups to complete this activity.
+In this activity, students will build on the research gathered in Part 1 to create hypothetical news headlines for events that could potentially occur within the next five years. Students will continue working in their groups to complete this activity.
 
 ---
 
