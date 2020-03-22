@@ -56,7 +56,7 @@ Welcome students to the third day of class and the final lesson of Unit 1.
 
 Use the slides to introduce today's lesson and objectives. Then, review the following points with students:
 
-* The previous two lessons focused on introducing the FinTech course structure as well as the FinTech industry more broadly. We discussed the history and current landscape of the FinTech ecosystem, as well as specific factors that have led to changes in various FinTech domains.
+* The previous two lessons focused on introducing the FinTech course structure, as well as the FinTech industry more broadly. We discussed the history and current landscape of the FinTech ecosystem, as well as specific factors that have led to changes in various FinTech domains.
 
 * Today, students will apply what they've learned so far about the FinTech industry to write their own case studies in visually enhanced markdown files, and then host them in a GitHub repository.
 
@@ -90,7 +90,7 @@ Open the slideshow and present the following questions and answers.
 
 * What is GitHub?
 
-  **Answer:** GitHub is a web-based file-hosting service that is one of the many vendors that uses git for file version control.
+  **Answer:** GitHub is a web-based file-hosting service—and one of many vendors using git—for file version control.
 
 * Why is git important?
 
