@@ -454,11 +454,11 @@ In this activity, students will work in pairs to create a shortened case study r
 
 Students will now present their findings to the class.
 
-Explain that each team should take 2 to 3 minutes to share their reports. They should log into their shared GitHub repo and use the markdown file they created to guide their presentation.
+Explain that each team should take two to three minutes to share their reports. They should log into their shared GitHub repo and use the markdown file they created to guide their presentation.
 
 **Note:** Make sure that all students participate in the presentation and are given an opportunity to speak.
 
-After each group has presented, do a pulse check on the class; that is, check in with them to see how they're feeling about the material. Ask students if they have any questions and if they found the activity to be enjoyable.
+After each group has presented, do a pulse check on the class; that is, check in to see how they're feeling about the material. Ask students if they have any questions and if they found the activity enjoyable.
 
 Finally, remind students that the Unit 1 homework assignment is a FinTech case study. Students can leverage the content created in this activity to complete the homework requirements.
 
@@ -484,4 +484,4 @@ Use the following slides and lesson plan to discuss the Career Services content 
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
