@@ -182,7 +182,7 @@ Use the slides to review the following points.
 
   * This is due to the fact that, more often than not, a GUI interacts with the underlying CLI to perform its functionality (e.g., click a button that executes a command on the back-end) and, therefore, is often a simplified version of the underlying functionality.
 
-* How one configures the git CLI:
+* How to configure the git CLI:
 
   * Open the command line.
 
@@ -338,7 +338,7 @@ Open the slideshow and review the Markdown slides, while presenting the followin
 
   * Images
 
-Reiterate to students the following:
+Reiterate the following to students:
 
 * Markdown allows us to create visually enhanced documents such as README files (for GitHub repos, for example), which are valuable not only to potential employers, but also to potential collaborators (colleagues or teammates).
 
@@ -438,7 +438,7 @@ Next, provide an overview of the activity.
 
 * Students should pair off, choose one of the FinTech companies on the list, and then conduct their research.
 
-* Students will have 30 minutes to develop their case studies, and 2 to 3 minutes to present their reports.
+* Students will have 30 minutes to develop their case studies, and two to three minutes to present their reports.
 
 Slack out the [case study examples](https://github.com/coding-boot-camp/FinTech-Lesson-Plans/tree/master/01-Lesson-Plans/01-Intro-to-FinTech/3/Activities/04-Stu_Group_Case_Study/Resources) to the class for reference. Get them excited! This activity is a great opportunity for students to combine what they've learned technically (command line and git) as well as conceptually (FinTech domains) to produce a company analysis.
 
@@ -446,7 +446,7 @@ Slack out the [case study examples](https://github.com/coding-boot-camp/FinTech-
 
 ### 14. Student Do: FinTech Case Study (30 min)
 
-n this activity, students will work in pairs to create a shortened case study report on a particular FinTech company, which will be chosen from a list of case study proposals. Each team will create a shared GitHub repository and write their report in markdown.
+In this activity, students will work in pairs to create a shortened case study report on a particular FinTech company, which will be chosen from a list of case study proposals. Each team will create a shared GitHub repository and write their report in markdown.
 
 **Instructions:** [README.md](Activities/04-Stu_Group_Case_Study/README.md)
 
