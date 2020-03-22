@@ -90,7 +90,7 @@ Open the slideshow and present the following questions and answers.
 
 * What is GitHub?
 
-  **Answer:** GitHub is a web-based file-hosting service—and one of many vendors using git—for file version control.
+  **Answer:** GitHub is a web-based file-hosting service—and one of many vendors that use git—for file version control.
 
 * Why is git important?
 
@@ -108,7 +108,7 @@ Then, demonstrate how to create a repository in GitHub, edit files in that repo,
 
   ![github-download](Images/github-download.png)
 
-* Unzip, or decompress, the ZIP file. Then, access the extracted git repository folder via the command line by performing a `cd` command to change directory inside the folder. Use the `ls` command with the `-l` parameter to display the folder's contents in list format.
+* Unzip, or decompress, the ZIP file. Then, access the extracted git repository folder via the command line by performing a `cd` command to change the directory inside the folder. Use the `ls` command with the `-l` parameter to display the folder's contents in list format.
 
   ![terminal-git-repository](Images/terminal-git-repository.png)
 
