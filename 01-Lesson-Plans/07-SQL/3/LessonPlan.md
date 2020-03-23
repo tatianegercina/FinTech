@@ -56,7 +56,7 @@ In this activity, students will be introduced to the three normal forms of data 
 
 **Files:**
 
-* [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/normalization.md)
+* [normalization.md](Activities/01-Ins_Data_Normalization/Solved/normalization.md)
 
 * [schema.sql](Activities/01-Ins_Data_Normalization/Solved/schema.sql)
 
