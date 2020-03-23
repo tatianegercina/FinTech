@@ -4,65 +4,84 @@ CREATE TABLE owners (
   owner_name VARCHAR(255)
 );
 
-INSERT INTO owners (ID, owner_name) VALUES
-(1, 'Sally'),
-(2, 'Charles'),
-(3, 'Angela'),
-(4, 'Kelly'),
-(5, 'Sam'),
-(6, 'Cassie');
+INSERT INTO owners 
+(ID, owner_name) 
+VALUES
+(141, 'Sally'),
+(232, 'Charles'),
+(353, 'Angela'),
+(424, 'Kelly'),
+(551, 'Samuel'),
+(612, 'Cassie');
 
 SELECT * FROM owners;
 
 -- Create pet name table and insert values
-CREATE TABLE pet_names (
+CREATE TABLE estates (
   id INT NOT NULL PRIMARY KEY,
   owner_id INT NOT NULL,
-  pet_name VARCHAR(255),
+  address VARCHAR(255),
+  city VARCHAR (255),
+  state VARCHAR(255),
+  zip_code VARCHAR(255),
   type VARCHAR (255)
 );
 
-INSERT INTO pet_names (id, owner_id, pet_name, type) VALUES
-(10, 1, 'Zeus', 'Dog'),
-(11, 1, 'Fido', 'Dog'),
-(12, 2, 'Kevin', 'Dog'),
-(13, 3, 'Sprinkles', 'Cat'),
-(14, 4, 'Jumper', 'Cat'),
-(15, 5, 'Hoppy', 'Rabbit'),
-(16, 6, 'Rex', 'Dog'),
-(17, 6, 'Carrot', 'Rabbit');
+INSERT INTO estates 
+(id, owner_id, address, city, state, zip_code) 
+VALUES
+(1, 141, '147 Jupiter Lane Apartment 2F', 'Pasadena', 'CA', 91101),
+(2, 232, '5 Calina Drive', 'Allentown', 'PA', 18101),
+(3, 353, '918 Sinclaire Court', 'Phoenix', 'AZ', 85004),
+(4, 353, '1727 Kalimar Road', 'Eugene' 'OR' 97401),
+(5, 424, '128 Sandy Beach Road', 'Avalon', 'NJ', 08202),
+(6, 551, '14 Honey Road', 'Lawrence', 'KS', 66044),
+(7, 612, '19 Stockton Avenue', 'Austin', 'TX' 78701),
+(8, 612, '323 Silamento Lane Apartment 4122', 'Rockville', 'MD', 20847);
 
-SELECT * FROM pet_names;
+SELECT * FROM estates;
 
--- Select owners and pets from joined table
-SELECT owner_name, pet_name
+-- Select all columns from joined table
+SELECT *
 FROM owners
-INNER JOIN pet_names ON owners.id = pet_names.owner_id;
+INNER JOIN estates ON owners.id = estates.owner_id;
+
+-- select explicit columns from joined table
+SELECT first_name, last_name, address, city, state, zip_code
+FROM owners
+INNER JOIN estates ON owners.id = estates.owner_id;
 
 -- BONUS
--- Create service table and insert data
-CREATE TABLE service (
+-- Create estate_type table and insert data
+CREATE TABLE estate_type (
   id INT NOT NULL PRIMARY KEY,
-  service_type VARCHAR(255)
+  type VARCHAR(255)
 );
 
-INSERT INTO service (id, service_type)
+INSERT INTO estate_type
+(id, service_type)
 VALUES
-(22, 'Walk'),
-(33, 'Feed'),
-(44, 'Hop');
+(11, 'House'),
+(22, 'Condo'),
+(33, 'Multi-Family'),
+(44, 'Land');
 
 -- Create new pet tables that takes a service id
-CREATE TABLE pet_names_new (
+CREATE TABLE estates_new (
   id INT NOT NULL PRIMARY KEY,
   owner_id INT NOT NULL,
-  service_id INT NOT NULL,
-  pet_name VARCHAR(255),
+  type_id INT NOT NULL,
+  address VARCHAR(255),
+  city VARCHAR (255),
+  state VARCHAR(255),
+  zip_code VARCHAR(255),
   type VARCHAR (255)
 );
 
 -- Insert data with service id
-INSERT INTO pet_names_new (ID, owner_id, service_id, pet_name, type) VALUES
+INSERT INTO estates_new 
+(ID, owner_id, service_id, pet_name, type)
+VALUES
 (10, 1, 22, 'Zeus', 'Dog'),
 (11, 1, 22, 'Fido', 'Dog'),
 (12, 2, 22, 'Kevin', 'Dog'),
