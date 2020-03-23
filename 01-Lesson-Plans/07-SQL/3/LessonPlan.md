@@ -50,6 +50,10 @@ Open the Class Objectives slide and review the objectives for today's class.
 
 ### 2. Instructor Do: Data Normalization (15 min)
 
+In this activity, students will be introduced to the three normal forms of data normalization.
+
+**Note:** The data represented in the following slideshow is provided in the .sql files below. Use them as necessary if students have questions pertaining to the data itself.
+
 **Files:**
 
 * [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/normalization.md)
