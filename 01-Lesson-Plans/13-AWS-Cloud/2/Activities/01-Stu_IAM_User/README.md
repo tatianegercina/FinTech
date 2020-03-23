@@ -16,7 +16,7 @@ Open the [AWS Management Console](https://console.aws.amazon.com) using your _ro
 
   ![Create an administrator IAM user - Step 2](Images/iam-user-2.png)
 
-* On the _Add user_ page, fill out the details of the new `administrator` user and click on the _Next: Permissions_ button to continue.
+* On the _Add user_ page, provide your new user name in the _User name_ input box, then fill out the details of the new `administrator` by filling in the selections as seen below.  Afterword, click on the _Next: Permissions_ button to continue.
 
   * **User name:** `administrator`
   * **Access type:** Select the _Programmatic access_ and _AWS Management Console access_ boxes.
@@ -77,5 +77,8 @@ Congratulations! You have created your own admin user.
 
 You can use this same process to create more groups and users and to give your users access to your AWS account resources. To learn about using policies that restrict user permissions to specific AWS resources, see [Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html) and [Example IAM Identity-Based Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_examples.html). To add additional users to the group after it is created, see [Adding and Removing Users in an IAM Group](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups_manage_add-remove-users.html).
 
-[1]: https://docs.aws.amazon.com/best-practices.html#lock-away-credentials
+[1]: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html
 [2]: https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

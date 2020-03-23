@@ -1,6 +1,6 @@
 # FinTech Case Study
 
-In this activity, you will put together all of the skills you have learned so far. Work with a partner to create a FinTech case study report. It should be written in markdown and hosted on a shared GitHub repository. 
+In this activity, you will put together all of the skills you have learned so far. Work with a partner to create a FinTech case study report. It should be written in markdown and hosted on a shared GitHub repository.
 
 Be prepared to share your findings with the class!
 
@@ -8,7 +8,7 @@ Be prepared to share your findings with the class!
 
 Complete the following steps:
 
-1. Navigate to the class GitHub repository and choose one of the case study proposals from the list.
+1. Navigate to the class GitLab/GitHub repository and choose one of the case study proposals from the list.
 
 2. Create a new GitHub repository to share with your partner.
 
@@ -44,7 +44,7 @@ Complete the following steps:
 
 ## Hint
 
-If you and your partner plan to work on the file at the same time, be aware of merge conflicts. That is, be careful not to create separate versions of the file, as git will not know which version should take precedence. Learn more about git merge conflicts [here](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line). 
+If you and your partner plan to work on the file at the same time, be aware of merge conflicts. That is, be careful not to create separate versions of the file, as git will not know which version should take precedence. Learn more about git merge conflicts [here](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line).
 
 ---
 

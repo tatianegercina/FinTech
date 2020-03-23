@@ -18,7 +18,7 @@ Using the [starter file](Unsolved/Core/sales_analysis_core.py), complete the fol
 
 6. Set the `name`, `count`, and `revenue` variables and convert strings to ints for numerical calculations.
 
-7. Calculate the average, append the average to the row, and append the row to the list of records.
+7. Calculate the simple average (`revenue` over `count`), append the average to the row, and append the row to the list of records.
 
 8. Write the list of records contained in `records` to an output CSV file.
 
