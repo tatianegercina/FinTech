@@ -52,7 +52,7 @@ Open the Class Objectives slide and review the objectives for today's class.
 
 **Files:**
 
-* [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/Normalization.md)
+* [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/normalization.md)
 
 * [schema.sql](Activities/01-Ins_Data_Normalization/Solved/schema.sql)
 
