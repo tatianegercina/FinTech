@@ -1,8 +1,8 @@
-## Pet Normalizer 
+# Pet Normalizer
 
 In this activity, you will be utilizing data normalization practices.
 
-### Instructions
+## Instructions
 
 * In pgAdmin, create a new database called `pets_db`.
 
@@ -26,4 +26,4 @@ In this activity, you will be utilizing data normalization practices.
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
