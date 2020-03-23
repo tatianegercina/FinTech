@@ -66,27 +66,25 @@ An example of unsupervised learning would be to use website purchase data to gro
 </details>
 
 <details>
-<summary>What is an neural network (ANN)?</summary><br>
-Neural networks are a set of algorithms that are modeled after the human brain. They’re designed to recognize patterns and interpret sensory data through a kind of machine perception, labeling, or clustering raw input.
+<summary>What are Artificial Neural Networks (ANNs) and what types exist?</summary><br>
+
+Neural networks are a set of algorithms that are modeled after the human brain. They’re designed to recognize patterns and interpret sensory data through a kind of machine perception, labeling, or clustering raw input. ANNs complete this task through the use input and output layers.  The data goes into a layer, where mathematical computation is completed, then those results are fed into the next layer.  There are many different types of neural networks.  For purposes of this class, we focus on Perceptron, Deep Neural Network, Recurrent Neural Network (RNN), and Long short-term memory (LSTM).
 
 
-</details>
-<details>
-<summary>What types of neural networks exist?</summary><br>
-
-There are many different types of neural networks.  For purposes of this class, we focus on Perceptron, Deep Neural Network, Recurrent Neural Network (RNN), and Long short-term memory (LSTM).
 
 <blockquote>
 <details>
 <summary>Perceptron</summary><br>
 
-The original neural network - the perceptron - is a single layer neural network created by Frank Rosenblatt in further developed 1969 by Marvin Minsky and Seymour Papert.  It is the most basic model of an artificial nueron, taking inputs, applying weights, and calculating a weighted sum prediction.
+The original neural network - the perceptron - is a single layer neural network created by Frank Rosenblatt in 1958 and further developed in 1969 by Marvin Minsky and Seymour Papert. It is the most basic model of an artificial nueron, taking inputs, applying weights, and calculating a binary weighted sum prediction.  Perceptron are very rigid with their predictions, because they can only predict binary classifications, such as True/False, Yes/No, etc.
 
 ![perceptron](Images/harsh_perceptron.png)
 </details>
 
 <details>
 <summary>Deep Neural Network</summary><br>
+
+Deep Neural Networks are neural networks that have more than one hidden layer. A simplistic way to visualize this is think of a multi-layer perceptron.
 
 </details>
 
