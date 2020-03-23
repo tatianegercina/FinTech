@@ -50,7 +50,15 @@ Open the Class Objectives slide and review the objectives for today's class.
 
 ### 2. Instructor Do: Data Normalization (15 min)
 
-**File:** [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/Normalization.md)
+**Files:**
+
+* [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/Normalization.md)
+
+* [schema.sql](Activities/01-Ins_Data_Normalization/Solved/schema.sql)
+
+* [seed.sql](Activities/01-Ins_Data_Normalization/Solved/schema.sql)
+
+* [query.sql](Activities/01-Ins_Data_Normalization/Solved/query.sql)
 
 Review the slides on data normalization, explaining the following:
 
@@ -177,7 +185,7 @@ Slack out [schema.sql](Activities/03-Ins_Foreign_Keys/Solved/schema.sql) for stu
   location VARCHAR(30) NOT NULL,
   animal_id INTEGER NOT NULL,
   FOREIGN KEY (animal_id) REFERENCES animals_all(id)
-);
+  );
   ```
 
 * The table is then populated with data and checked with a `SELECT ALL` query.
