@@ -52,7 +52,7 @@ Open the Class Objectives slide and review the objectives for today's class.
 
 In this activity, students will be introduced to the three normal forms of data normalization.
 
-**Note:** The data represented in the following slideshow is provided in the .sql files below. Use them as necessary if students have questions pertaining to the data itself.
+**Note:** The data normalization procedures represented in the following slideshow are provided in the .sql files below. Use them as necessary if students have questions pertaining to the data itself or just want to have the code on hand.
 
 **Files:**
 
