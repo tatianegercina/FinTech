@@ -30,7 +30,7 @@ By the end of class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson 13.2 Slides](https://docs.google.com/presentation/d/17jc9_8FMijZJdai1JNnAQTO33HV-mhxFaMwI5FxRL8Q/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson 13.2 Slides](https://docs.google.com/presentation/d/1Y-DPsCtOWFLDa2yCpwK77kqOlvUfrv33NRUxt7on0ic/edit?usp=sharing).
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
