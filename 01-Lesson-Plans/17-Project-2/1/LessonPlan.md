@@ -12,7 +12,7 @@ Most of this class will center on project work. You and the TAs should check up 
 
 ##### Instructor Notes
 
-Your students will be nearing the end of their projects. Even though it's the beginning of the week, you should push students to finish their apps before Thursday so they have enough time to practise their presentations.
+Your students will be nearing the end of their projects. Even though it's the beginning of the week, you should push students to finish their apps before Thursday so they have enough time to practice their presentations.
 
 It's crucial that you steer any off-course projects back on track. Come next class, the encroaching Saturday deadline will mire any attempt at a turnaround.
 
