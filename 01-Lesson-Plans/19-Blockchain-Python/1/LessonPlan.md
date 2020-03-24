@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today's class students will begin to interact with blockchains using Python libraries `web3.py`, `bit`,
+In today's class, students will begin to interact with blockchains using Python libraries `web3.py`, `bit`,
 and will also learn how BIP44 works in preparation for the homework.
 
 The goal of today's class is for the students to understand how to talk to Ethereum and Bitcoin nodes using Python,
@@ -28,7 +28,7 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* Before class, prepare to use the mnemonic phrase you have been using throughout the course, we will be extracting keys and addresses from it.
+* Before class, prepare to use the mnemonic phrase you have been using throughout the course, as we will be extracting keys and addresses from it.
 
 * Ensure that an ETH address from this mnemonic is prefunded in your custom chain.
 
@@ -42,7 +42,7 @@ By the end of the class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [19.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6b0987ef-966d-4ba5-8689-ab1e0124ac2a) Note that this video may not reflect the most recent lesson plan.
