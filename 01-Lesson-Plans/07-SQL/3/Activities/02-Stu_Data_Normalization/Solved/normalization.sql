@@ -1,5 +1,11 @@
 DROP TABLE IF EXISTS employee_normalization;
 DROP TABLE IF EXISTS first_nf_employee;
+DROP TABLE IF EXISTS second_nf_employee;
+DROP TABLE IF EXISTS second_nf_employee_assignment;
+DROP TABLE IF EXISTS second_nf_employee_email;
+DROP TABLE IF EXISTS second_nf_employee;
+DROP TABLE IF EXISTS third_nf_employee_assigment;
+DROP TABLE IF EXISTS third_nf_zipcode;
 
 CREATE TABLE employee_normalization (
 	employee_id INT,
@@ -44,21 +50,15 @@ CREATE TABLE second_nf_employee
 (
 	employee_id INT PRIMARY KEY,
 	name VARCHAR(255),
-	age INT,
-	address VARCHAR(255),
-	city VARCHAR(255),
-	state VARCHAR(255),
-	zip_code INT
+	age INT
 );
 
 INSERT INTO second_nf_employee
 (employee_id, name, age, address, city, state, zip_code)
 VALUES
-(123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002),
-(123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002),
-(456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami', 'FL', 33101),
-(456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami', 'FL', 33101),
-(789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 'San Francisco', 'CA', 94016);
+(123, 'Robert Bale', 32),
+(456, 'Anya Strensa', 25),
+(789, 'Arnold Tolenski', 43);
 
 CREATE TABLE second_nf_employee_assignment
 (
@@ -70,14 +70,12 @@ CREATE TABLE second_nf_employee_assignment
 	zip_code INT
 )
 
-INSERT INTO second_nf_employee_location
-(location_id, address, city, state, zip_code)
+INSERT INTO TABLE second_nf_employee_assignment
+(assignment_id, employee_id, address, city, state, zip_code)
 VALUES
-(1, '31 Pelham Drive', 'Houston', 'TX', 77002),
-(2, '142 Sunshine Road', 'Miami', 'FL', 33101),
-
-
-
+(1, 123, '31 Pelham Drive', 'Houston', 'TX', 77002),
+(2, 456, '142 Sunshine Road', 'Miami',' FL', 33101),
+(3, 789, '15 Silicon Avenue', 'San Francisco', 'CA', 94016);
 
 CREATE TABLE second_nf_employee_email
 (
@@ -95,7 +93,29 @@ VALUES
 (4, 456, 'soccergirl4251@gmail.com'),
 (5, 789, 'arnold.tolenski5121@gmail.com')
 
-CREATE TABLE second_nf_
+CREATE TABLE third_nf_employee_assignment
+(
+	assignment_id INT PRIMARY KEY,
+	employee_id INT,
+	address INT,
+	zip_code INT
+);
+
+
+
+CREATE TABLE third_nf_zipcode
+(
+	zipcode INT PRIMARY KEY,
+	city VARCHAR(255),
+	state VARCHAR(255)
+);
+
+INSERT INTO third_nf_zipcode
+(zip_code, city, state)
+VALUES
+(77002, 'Houston', 'TX'),
+(33101, 'Miami', 'FL'),
+(94016, 'San Francisco', 'CA');
 
 
 
