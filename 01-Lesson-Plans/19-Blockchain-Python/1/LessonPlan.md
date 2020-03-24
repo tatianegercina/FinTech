@@ -45,7 +45,7 @@ By the end of the class, students will be able to:
 * The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
-* To watch an example class lecture, go here: [19.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6b0987ef-966d-4ba5-8689-ab1e0124ac2a) Note that this video may not reflect the most recent lesson plan.
+* To watch an sample class lecture, go here: [19.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6b0987ef-966d-4ba5-8689-ab1e0124ac2a) Note that this video may not reflect the most recent lesson plan.
 
 ---
 
@@ -69,7 +69,7 @@ Ask the students the following questions:
 
   **Answer**: A signed message that authorizes the transfer of funds from one account to another.
 
-Explain to students that today, we are going to be talking to blockchains in our favorite language, Python.
+Explain to students that today we are going to be talking about blockchains in our favorite language, Python.
 
 Ask the class:
 
@@ -77,7 +77,7 @@ Ask the class:
 
   **Answer**: web3.py
 
-Wrap up the welcome with some encouraging or engaging language:
+Wrap up with some encouraging language:
 
 > Time to get excited! Let's dive into working with Web3!
 
@@ -91,16 +91,15 @@ Continue through the slides, introducing the concept of "Web 3.0" and the Python
 
 * This was the first generation of the web. The screenshot here is from February 2000.
 
-* Nowadays, we are used to very interactive sites that work really well and don't require the page to be re-rendered every time you click something.
-  This is the Web 2.0 we use today.
+* Nowadays, we are used to very interactive sites that work really well and don't require the page to be re-rendered every time you click something. This is the Web 2.0 we use today.
 
 ![web 3.0](https://image.shutterstock.com/image-photo/man-switching-next-generation-internet-600w-1449537596.jpg)
 
-* Now with Web 3.0, we refer less to the user experience, but to the infrastructure of the internet.
+* Now with Web 3.0, we refer less to the user experience, and more to the infrastructure of the internet.
 
 * In the current model, servers are highly centralized, websites can go down, and archiving information is a difficult task. For example, we all know how hard Wikipedia works to get you to donate.
 
-* With the emergence of blockchains and other distributed technologies, we can build the Web 3.0 -- a decentralized web where sites like Wikipedia wouldn't struggle since we'd just store a local copy ourselves.
+* With the emergence of blockchains and other distributed technologies, we can build the Web 3.0 -- a decentralized web where sites like Wikipedia wouldn't struggle, since we'd just store a local copy ourselves.
 
 ![web3.py](Images/web3.py.png)
 
@@ -116,7 +115,7 @@ Students will now activate their local custom chains; they build the last unit.
 
 Provide a checklist for the students with the commands necessary to start the chain, as well as a backup chain for students to use if something went wrong with theirs.
 
-Circulate around with the TAs to ensure that everyone is able to start their networks. If any student cannot complete this, ask them to pair with a neighbor until they can troubleshoot their system during a break.
+Circulate with the TAs to ensure that everyone is able to start their networks. If any student cannot complete this, have them pair up with a neighbor during the break to troubleshoot their system.
 
 **Instructions:**
 
