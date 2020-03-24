@@ -459,7 +459,7 @@ Slack out the ["Writing an Awesome README File" guide](../Supplemental/Awesome_R
 
 ---
 
-### 10. Student Do: Git Welcome (15 min)
+### 10. Student Do: GitHub Welcome (15 min)
 
 In this activity, students will visually enhance their README files for their GitHub repositories by adding additional markdown features.
 
