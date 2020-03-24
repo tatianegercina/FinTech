@@ -95,6 +95,31 @@ Though highly useful, RNNS only remember the last few steps, posing an issue for
 </details>
 
 <details>
+<summary>What are ROC curve and AUC?</summary><br>
+
+The ROC curve and AUC are used to visualize the performance of a classification model.  ROC stands for Receiver Operating Characteristic and AUC stands for Area Under the ROC Curve. The two methods are combined onto a single chart to produce the visualization.
+
+The Roc Curve on its own, shows how the model performed by measuring the recall (See below for a quick refresher on recall) and false positive rate (FPR).  A ROC curve is seen in the below image:
+
+<img src=Images/roc-curve.png width = 350>
+
+Because interpreting the ROC Curve is difficult, the AUC calculation comes into play.  The AUC measures the area that falls under the curve on a scale of 0 to 1.  If the model is 100% wrong then the AUC is 0.  If the model is 100% right, then the AUC is 1.  An example of this final visualization is seen in the below image:
+
+![ROC/AUC](Images/roc-curve-rnn-lstm.png)
+
+<blockquote>
+<details>
+<summary><strong>Recall</strong></summary>
+Recall is the measurement of how many times a value was predicted and was also incorrect.  For example, if our model was predicting colors - blue, green, and purple, recall would be the measurement of how many times green was predicted incorrectly.
+
+The formula for recall is TP / (TP + FN).
+
+</details>
+</blockquote>
+</details>
+
+
+<details>
 <summary>How is Training and Testing Data Utilized?</summary><br>
 
 When working with models, data is divided into training and testing sets. The training set is used to teach (supervise!) the model so it learns how the input data is connected to the output data and can make predictions. The testing data set is used to validate how well the model performs on data it has not seen before, by running the model on the testing feature data, and comparing it's predictions to the testing target data.<br>
