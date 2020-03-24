@@ -5,7 +5,7 @@ VALUES
 ('Smith', 'Chris, Abby, Susy'),
 ('Jones', 'Steve, Mary, Dillion');
 
-INSERT INTO first_normal_form
+INSERT INTO first_nf_family_children
 (family, children)
 VALUES
 ('Smith', 'Abby'),
