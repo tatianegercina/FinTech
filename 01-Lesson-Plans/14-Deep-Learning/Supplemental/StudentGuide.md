@@ -101,9 +101,10 @@ A full list of loss functions provided by Keras can be seen [here.](https://kera
 
 <summary>Optimizer Functions</summary><br>
 
+Optimizer functions help the loss functions to minimize their error by updating the weights used in the model according the loss.  The optimizer uses the loss function as a guide to keep it moving int he right direction.  If the loss is going up, the optimizer needs to readjust the weights.  A great medium article on the topic can be viewed [here.](https://medium.com/datadriveninvestor/overview-of-different-optimizers-for-neural-networks-e0ed119440c3)
 
+A full list of optimizer functions provided by Keras can be seen [here.](https://keras.io/optimizers/)
 
-https://medium.com/datadriveninvestor/overview-of-different-optimizers-for-neural-networks-e0ed119440c3
 
 </details>
 
