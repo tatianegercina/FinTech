@@ -140,7 +140,7 @@ model.add(Dense(units=1, activation="linear"))
 ```
 Now that the model is built, a summary can be displayed by accessing the `.summary` method on the model as follows:
 
-<img src=Images/model_summary.png width=475>
+<img src=Images/model_summary.PNG width=475>
 
 To continue the process, the model is compiled and fitted.  To compile the model we run `.compile()` on our model and specifiy a loss function, an optimizer and also a metrics output to measure the accuracy.  To fit the model, we run `.fit()`, providing the feature and target data, the data split to make validiation results on, and the number of epohds.  Remember, epochs is just another way of saying iterations, or the number of times we run the training:
 
@@ -150,7 +150,7 @@ model.fit(X, y, validation_split=0.3, epochs=200)
 ```
 Depending on the loss function and metrics designated, the output of fitting the model will resemble the following:
 
-<img src=Images/epochs.png width=500>
+<img src=Images/epochs.PNG width=500>
 
 To use the model to make predictions you can call `.predict()` on scaled feature data as follows:
 
