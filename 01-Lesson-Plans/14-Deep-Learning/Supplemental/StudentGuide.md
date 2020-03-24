@@ -110,6 +110,56 @@ Though highly useful, RNNS only remember the last few steps, posing an issue for
 </details>
 
 <details>
+<summary>How are Neural Networks contsructed using Keras?</summary><br>
+
+Using Keras makes building Neural Networks relatively simple.  In the following example we'll build a simple deep neural network.  We begin by importing the models needed to run the algorithms.
+
+```python
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+```
+
+Next we define our model by instantiating the `Sequential()` object, then we add our first hidden layer by calling the `.add()` method on our model object and inserting a `Dense()` layer with the proper variables:
+
+```python
+model = Sequential()
+model.add(Dense(units=10, input_dim=5, activation='relu'))
+```
+In the above code snippet, we added '5' neurons to the hidden layer via the `units` parameter.  We also gave `5` to our `input_dim` parameter and assigned the activation function `relu` to our `activation` parameter.  The `input_dim` is always the starting number of inputs.  The `units` parameter can vary.
+
+In the below code snippet we add a second hidden layer to the model, making this a deep neural network - notice we do not have to resupply the `input_dim`:
+
+```python
+model.add(Dense(units=15, activation='relu'))
+```
+
+Next, the output layer is added - notice we can specifiy a different activation function if we choose, and that the `units` are specified as `1` this time, because this is the ouput layer, where a final prediction will be generated:
+
+```python
+model.add(Dense(units=1, activation="linear"))
+```
+Now that the model is built, a summary can be displayed by accessing the `.summary` method on the model as follows:
+
+<img src=Images/model_summary.png width=475>
+
+To continue the process, the model is compiled and fitted.  To compile the model we run `.compile()` on our model and specifiy a loss function, an optimizer and also a metrics output to measure the accuracy.  To fit the model, we run `.fit()`, providing the feature and target data, the data split to make validiation results on, and the number of epohds.  Remember, epochs is just another way of saying iterations, or the number of times we run the training:
+
+```python
+model.compile(loss="mean_squared_error", optimizer="adam", metrics=["mse"])
+model.fit(X, y, validation_split=0.3, epochs=200)
+```
+Depending on the loss function and metrics designated, the output of fitting the model will resemble the following:
+
+<img src=Images/epochs.png width=500>
+
+To use the model to make predictions you can call `.predict()` on scaled feature data as follows:
+
+```python
+predictions = model.predict(X_test_scaled)
+```
+</details>
+
+<details>
 <summary>What are ROC curve and AUC?</summary><br>
 
 The ROC curve and AUC are used to visualize the performance of a classification model.  ROC stands for Receiver Operating Characteristic and AUC stands for Area Under the ROC Curve. The two methods are combined onto a single chart to produce the visualization.
