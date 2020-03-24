@@ -1,10 +1,10 @@
-# Pet Normalizer
+# Customer Email Normalizer
 
-In this activity, you will be utilizing data normalization practices.
+In this activity, you will be organizing data into the three normal forms.
 
 ## Instructions
 
-* In pgAdmin, create a new database called `pets_db`.
+* In pgAdmin, create a new database called `estate_db`.
 
 * Using SQL, create the following tables with continued normalized practices:
 

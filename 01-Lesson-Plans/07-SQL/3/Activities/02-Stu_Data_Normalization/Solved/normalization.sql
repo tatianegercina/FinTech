@@ -10,6 +10,19 @@ CREATE TABLE customer (
 INSERT INTO customer
 (customer_id, first_name, last_name, email)
 VALUES
+(123, 'Robert', 'Bale', 'robert.bale51231@gmail.com, robbieman512@gmail.com'),
+(456, 'Anya', 'Strensa', 'anya.strensa1412@gmail.com, soccergirl4251@gmail.com'),
+(789, 'Arnold', 'Tolenski', 'arnold.tolenski5121@gmail.com');
+
+
+
+
+
+
+
+INSERT INTO customer
+(customer_id, first_name, last_name, email)
+VALUES
 (123, 'Robert', 'Bale', 'robert.bale51231@gmail.com'),
 (123, 'Robert', 'Bale', 'robbieman512@gmail.com'),
 (456, 'Anya', 'Strensa', 'anya.strensa1412@gmail.com'),
