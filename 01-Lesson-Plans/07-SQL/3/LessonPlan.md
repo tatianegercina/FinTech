@@ -74,6 +74,8 @@ Review the slides on data normalization, explaining the following:
 
 * In **first normal form**, or 1NF, each row contains a single value, and each row is unique. In this example, each family's children are all listed in one row. The data is normalized into 1NF by creating a new row for each child.
 
+  ![first-normal-form](Images/first-normal-form.png)
+
 * In **second normal form**, or 2NF, the data is in 1NF. Additionally, all non-key columns are dependent on the primary key for the table. In this example, there are two tables. The Family table has the primary key `parent_id`, and the Child table has the primary key `child_id`.
 
 * Notice that `family_id` is added to the Child table. Since this is not a primary key, there can be non-unique values that relate to the Family table.
