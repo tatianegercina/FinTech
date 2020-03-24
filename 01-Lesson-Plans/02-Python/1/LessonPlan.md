@@ -715,9 +715,9 @@ Be prepared to explain the following, for example:
 
   * Deciding when to use specific comparison operators comes down to whether you want your conditional statement to include the minimum and maximum values needed to pass the condition.
 
-  * This is best explained with the example of drinking age. In the U.S., you have to be 21 years of age or older to legally drink. 21 is the minimum age acceptable.
+  * This is best explained with the example of drinking age. In Ontario, you have to be 19 years of age or older to legally drink; 19 is the minimum age acceptable.
 
-  * If we were to write a program to check whether someone's age meets the legal conditions, we would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 21 cannot drink.
+  * If we were to write a program to check whether someone's age meets the legal conditions, we would need to check for the minimum value acceptable, plus all numbers greater than it. If the minimum number is not included, the program will say that people who are 19 cannot drink.
 
 Tell students to look at the following code. Ask:
 
