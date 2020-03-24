@@ -1,3 +1,8 @@
+DROP TABLE IF EXISTS owners;
+DROP TABLE IF EXISTS estates;
+DROP TABLE IF EXISTS estate_type;
+
+
 -- Create owners table and insert values
 CREATE TABLE owners (
   id INT PRIMARY KEY NOT NULL,
