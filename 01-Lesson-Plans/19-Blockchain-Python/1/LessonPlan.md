@@ -655,7 +655,7 @@ from getpass import getpass
 
 * `getpass` is a library that allows us to ask for a password in the command line securely. We'll use this to get the Keystore password later.
 
-Now, we'll need to add the following code to pull the Keystore, prompt for a password, decrypt the key and convert to and `Account` object.
+Now, we'll need to add the following code to pull the Keystore, prompt for a password, decrypt the key, and convert to an `Account` object.
 
 Add the following code after the first account assignment:
 
@@ -748,8 +748,7 @@ Ask the students a few questions comparing the two methods we just used to impor
 
 * Why not just store the password in an environment variable?
 
-  **Answer**: The environment variables are stored in plaintext,
-  which means anyone who has access to the machine has access to the keys.
+  **Answer**: The environment variables are stored in plaintext, which means anyone who has access to the machine has access to the keys.
 
 * What are some other ways we might want to access private keys in the future?
 
@@ -763,8 +762,8 @@ Ask the students a few questions comparing the two methods we just used to impor
 
 * How might we use the `create_raw_tx` function to create a payment system?
 
-  **Answer**: We can use this to request a transaction, filling in all of the necessary parameters,
-  then all the user has to do is sign it.
+  **Answer**: We can use this to request a transaction, filling in all of the necessary parameters.
+  Then, all the user has to do is sign it.
 
 ### 14. Students Do: Sending Transactions from Keystore Account (10 min)
 
@@ -795,7 +794,7 @@ Ask the students the following questions:
 
   **Answer**: By calling `w3.eth.getTransaction` and passing the transaction hash.
 
-* What were to happen if we were to try to send a transaction to ourselves?
+* What could happen if we tried to send a transaction to ourselves?
 
   **Answer**: The transaction would still go through, but you'd pay the fee for it.
 
@@ -807,7 +806,7 @@ Ask the students:
 
 * Wouldn't it be cool to do this with other blockchains besides Ethereum?
 
-Explain that we'll be learning how to perform this same process with the Bitcoin blockchain and by proxy,
+Explain that we'll be learning how to perform this same process with the Bitcoin blockchain, and by proxy,
 all of its descendants (like Litecoin, Dash, Bitcoin Cash, etc.).
 
 Send out the following instructions to have the students extract a Bitcoin testnet address and request tokens.
@@ -827,4 +826,4 @@ Before the next class, request some test bitcoins of your own to prepare to send
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
