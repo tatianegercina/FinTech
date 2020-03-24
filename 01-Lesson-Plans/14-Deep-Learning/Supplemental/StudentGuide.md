@@ -66,38 +66,34 @@ An example of unsupervised learning would be to use website purchase data to gro
 </details>
 
 <details>
-<summary>What are Artificial Neural Networks (ANNs) and what types exist?</summary><br>
+<summary>What are Neural Networks and what does the Perceptron have to do with it?</summary><br>
 
-Neural networks are a set of algorithms that are modeled after the human brain. They’re designed to recognize patterns and interpret sensory data through a kind of machine perception, labeling, or clustering raw input. ANNs complete this task through the use input and output layers.  The data goes into a layer, where mathematical computation is completed, then those results are fed into the next layer.  There are many different types of neural networks.  For purposes of this class, we focus on Perceptron, Deep Neural Network, Recurrent Neural Network (RNN), and Long short-term memory (LSTM).
+Neural networks are a set of algorithms that are modeled after the human brain - essentially a network of artificial neurons designed to recognize patterns and interpret sensory data through machine perception, labeling, or by clustering raw input. Neural networks complete this task with layers of neurons. Data goes into a layer, where mathematical computation is completed, then those results are fed into the next layer.
 
-
-
-<blockquote>
-<details>
-<summary>Perceptron</summary><br>
-
-The original neural network - the perceptron - is a single layer neural network created by Frank Rosenblatt in 1958 and further developed in 1969 by Marvin Minsky and Seymour Papert. It is the most basic model of an artificial nueron, taking inputs, applying weights, and calculating a binary weighted sum prediction.  Perceptron are very rigid with their predictions, because they can only predict binary classifications, such as True/False, Yes/No, etc.
+The original neural network and building block for modern neural networks, is the perceptron. The perceptron is essentially a single neural network unit, or neuron.  Created by Frank Rosenblatt in 1958 and further developed in 1969 by Marvin Minsky and Seymour Papert, it's the most basic model of an artificial neuron, taking inputs, applying weights, and calculating a binary weighted sum prediction. Neural networks are composed of groups of these neurons, called layers.
 
 ![perceptron](Images/harsh_perceptron.png)
-</details>
-
-<details>
-<summary>Deep Neural Network</summary><br>
-
-Deep Neural Networks are neural networks that have more than one hidden layer. A simplistic way to visualize this is think of a multi-layer perceptron.
 
 </details>
-
 <details>
-<summary>Recurrent Neural Network (RNN)</summary><br>
+<summary>What is a Deep Neural Network?</summary><br>
+
+Deep Neural Networks are neural networks that have more than one hidden layer. One can visualize this by thinking of a network of connected perceptrons, or a multi-layer perceptron. With Deep Neural Networks, there is an input layer and an output layer, but between the two are multiple hidden layers running sophisticated computations to produce more refined output. A layer is a set of neurons, and is visualized by showing a column of those neurons and how they feed into the next column - or layer.  Below is an image of a basic deep neural network, they can be, and often much more complex.  To visualize even more types of deep neural nets and their structures, visit the [Tensorflow Playground.](https://playground.tensorflow.org/)
+
+
+![deep net](Images/nnet.png)
 
 </details>
 
 <details>
-<summary>Long short-term memory (LSTM)</summary><br>
+<summary>What is difference in Recurrent Neural Networks (RNNs) and Long-Short-Term Memory Recurrent Neural Networks (LSTM-RNNs)?</summary><br>
+
+A Recurrent neural network (RNN) is a type of deep neural network that can remember the past and update its results based on that information.  RNNs are called recurrent, because they cycle the information they receive through the layers more than once, effectively accessing their 'memory' to update their decisions based on the past.  This is the opposite of standard Articifical Neural Networks (ANNs) that utilize a feedforward method where the inputs are passed through each layer only only once, in a unilateral direction, and then outputted.
+
+Though highly useful, RNNS only remember the last few steps, posing an issue for scenarios such as time series analysis on large time windows.  LSTM-RNN can help resolve this problem by practicing more expansive, yet more selective memory.  The LSTM-RNN can predict which values are ok to forget and which it needs to hold on to so that longer time windows can be analyzed.
+
 </details>
-</blockquote><br>
-</details>
+
 <details>
 <summary>How is Training and Testing Data Utilized?</summary><br>
 
