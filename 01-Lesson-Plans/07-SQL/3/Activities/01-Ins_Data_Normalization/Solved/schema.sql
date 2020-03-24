@@ -32,7 +32,8 @@ CREATE TABLE second_nf_family
 CREATE TABLE second_nf_child
 (
 	child_id INT PRIMARY KEY,
-	family_id INT
+	family_id INT,
+	children VARCHAR(255)
 );
 
 -- Create raw data for third normal form use case
