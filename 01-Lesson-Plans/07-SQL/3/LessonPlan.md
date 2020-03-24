@@ -98,7 +98,7 @@ Review the slides on data normalization, explaining the following:
 
 Note that students may find 3NF a bit confusing. Encourage students to learn more about 3NF on their own. Today's lesson will mainly focus on 1NF and 2NF.
 
-Slack out [Normalization.md](Activities/01-Ins_Data_Normalization/Solved/Normalization.md) as a cheat sheet for students before moving on.
+Slack out [normalization.md](Activities/01-Ins_Data_Normalization/Solved/normalization.md) as a cheat sheet for students before moving on.
 
 ### 3. Student Do: Customer Email Normalizer (15 min)
 

@@ -1,10 +1,16 @@
-# Customer Email Normalizer
+# Employee Normalizer
 
-In this activity, you will be organizing data into the three normal forms.
+In this activity, you will be organizing improperly stored employee data into the three normal forms.
 
 ## Instructions
 
-* In pgAdmin, create a new database called `estate_db`.
+* In pgAdmin, create a new database called `normalization_db`.
+
+* Create a new table `customer_email` according to the provided [customer_email.csv](Resources/customer_email.csv), then import the csv into the `customer_email` table.
+
+* Create a new table `first_nf_customer_email` and insert the `customer_email` data according to 1NF data normalization standards.
+
+* Create two new tables `second_nf_customer` and `second_nf_customer_email` 
 
 * Using SQL, create the following tables with continued normalized practices:
 
