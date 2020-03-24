@@ -77,9 +77,35 @@ The original neural network and building block for modern neural networks, is th
 </details>
 
 <details>
-<summary>Why do I need an activation function?</summary><br>
+<summary>Why do I need an activation, loss, and optimizer functions?</summary><br>
+
+<blockquote>
+<details>
+<summary>Activation Functions</summary><br>
 
 Because the neuron predicts a rigid binary outcome, but reality is not always so cut and dry, the activation function was implemented.  Using an example from the lesson plan, let's say a father is choosing a movie on Netflix to watch with his child.  The neural network might predict that since this person is watching with a child, they will want an animated film.  But what if their child is a 13 year old Marvel fan?  The reality of life is not so cut and dry and as simple binary outcomes.  The activation function adds a dose of reality to the neuron's decisions. It is a mathematical function with a characteristic S-shaped curve, also called the sigmoid curve, which causes the outcome to be a probability rather than a strict `either or` output.
+
+A full list of activation functions provided by keras can be found [here.](https://keras.io/activations/)
+</details>
+
+<details>
+<summary>Loss Functions</summary><br>
+
+Loss functions measure how far the model is deviating from the expected result, the higher the number the more deviation, or the worse the performance.  A highly simplied way to visualize this is imagine trying to draw a picture of a blue circle.  You would analyize the tools you have available to get to the end result, looking for the most optimal.  You wouldn't use a red crayon and you wouldn't draw a rectangle.  You'd pick up the blue crayon and draw a circle.  Choosing anything else would result in huge error.  These errors are measured by the loss function.
+
+A full list of loss functions provided by Keras can be seen [here.](https://keras.io/losses/)
+
+</details>
+
+<details>
+
+<summary>Optimizer Functions</summary><br>
+
+
+
+https://medium.com/datadriveninvestor/overview-of-different-optimizers-for-neural-networks-e0ed119440c3
+
+</details>
 
 </details>
 
@@ -191,7 +217,7 @@ When working with models, data is divided into training and testing sets. The tr
 
 </details>
 <details>
-<summary>How does `train_test_split()` work?</summary>
+<summary>How does `train_test_split()` work?</summary><br>
 
 The `train_test_split()` function makes splitting data for testing easy!  The function outputs four sets of data points - two sets each of target and feature data where one set is for training, and one set is for testing.  This is why the variables that define the function are typically `X_train, X_test, y_train, y_test`.  The most important parameters of the function are the `X` and `y`.  During preprocessing, we separate our data into the feature data, or `X`, and the target data - `y`.
 
@@ -260,7 +286,7 @@ The new DataFrame shows the scaled data in place of the former values.  Now all 
 </details>
 
 <details><summary>
-What is .reshape() and why do I have to use it?</summary>
+What is .reshape() and why do I have to use it?</summary><br>
 
 When working with Pandas, we often pass Series objects into our model.  The shape of values in a Pandas Series object is a 1d array.  This has to be converted into a 2d array which is essentially an array of arrays - or list of lists. .  This is done using the `.reshape()` function.  The matrix values we desire are passed into this function.  In the following example we reshape our list into a 2d array using `.reshape(3,4)`, where 3 is the number of lists and 4 is the number of values in each list:
 
