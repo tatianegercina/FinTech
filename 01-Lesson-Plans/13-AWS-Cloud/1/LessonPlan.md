@@ -68,36 +68,96 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (10 min)
 
-In this activity, students will be introduced to the cloud the cloud services . Also, an overview of the unit is presented, including a homework demo.
+In this activity, students will learn what is the cloud, what are its pros and cons and why the cloud is important for FinTech professionals. The students will also be introduced to AWS and the particular services that will be used in this Unit. This activity concludes presenting a short demo of the conversational interfaces that will be done in class.
 
-Welcome the class to Unit 13, open the lesson slides, and move to the What You Will Achieve in this Unit section by highlighting the following:
+Welcome the class to Unit 13, explain to students that this is going to be a fun unit since they are going to learn how to deploy ML models in the cloud using AWS, and also, they will create conversational interfaces to implement bots that will be able to understand and response using natural language.
 
-* The cloud is a core tool for FinTech professionals; students will learn how to leverage their Python and machine-learning skills, by using Amazon Web Services to deploy models and business applications that could be reached by hundreds or thousands of people.
+Open the lesson slides, move to the "Welcome to the Cloud and Amazon Web Services" section and start talking about the cloud by asking to the students the following question.
 
-* In this unit, students will have hands-on experience with the following AWS services:
+* What do you think the cloud is?
 
-  * **Amazon SageMaker:** To deploy machine-learning models
-  * **Amazon Lex:** To create conversational interfaces
-  * **Amazon S3:** To store files in the cloud
-  * **AWS Lambda:** To create serverless applications
+Collect two or three answers and emphasize the following points:
 
-Open your AWS Management Console, open the Cryptocurrencies Clustering homework's solution, and briefly explain to students that a machine-learning model could be deployed in the cloud using Jupyter Notebooks, a tool they already know, and Amazon SageMaker.
+* In essence, the cloud refers to the on-demand availability of computer systems resources.
 
-Continue by opening the Amazon Lex Management console, open the RoboAdvisor homework solution, and test the bot with the sample utterance `I'm worried about my retirement` to conduct a sample dialogue as follows.
+* The computing resources may include: data storage, computing power, and collaboration platforms.
 
-![RoboAdvisor Demo](Images/robo-advisor-demo.gif)
+* There is no need to have physical access to the hardware; it is managed through the Internet using public or private networks.
 
-Conclude the homework demo by telling students that they will create one of two chatbots using Amazon Lex and AWS Lambda in this unit:
+* Normally, you pay as you go for what services you use (sometimes down to the second or byte) with little or no upfront costs.
+
+* Cloud computing is usually cheaper due to the economics of scale (and no upfront cost of physical hardware, setup, or provisioning).
+
+Explain to students that the cloud is a core tool for FinTech professionals; they will learn how to leverage their Python and ML skills using AWS to deploy models and business applications that could be reached by hundreds or thousands of people.
+
+Continue with the slides and highlight the following points about the models of cloud services:
+
+* There are multiple cloud services models, with trade-offs in responsibility and control. The most common are:
+
+  * **Infrastructure as a service (IaaS):** Online services that provide APIs to access different infrastructures such as servers, virtual machines, storage, load balancers, or network interfaces (e.g., [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines/)).
+
+  * **Platform as a service (PaaS):** Provides a platform that allow customers to develop, run, and manage applications without the complexity of building and maintaining their own physical infrastructure (e.g., [Amazon Web Services](https://aws.amazon.com/)).
+
+  * **Software as a service (SaaS):** Refers to a software licensing and delivery model where software is licensed on a subscription basis and is centrally hosted (e.g., [Microsoft Office 365](https://www.office.com)).
+
+  * **Function/code as a service (FaaS):** Also known as serverless computing, it offers a remote procedure call that enables the deployment of individual functions in the cloud that run in response to events (e.g., [AWS Lambda](https://aws.amazon.com/lambda/)).
+
+* Clouds can be created in a private data center (private cloud), in a data center managed by a provider (public cloud) or in a combination of both (hybrid cloud)
+
+* Cloud computing is considered secure enough to be used by many banks and government offices worldwide.
+
+* Cloud services allow you to scale your resources up and down as required.
+
+* There are multiple cloud service providers, including Amazon, Microsoft, Google, Oracle, and IBM.
+
+Explain to students that, despite we can trust in the the cloud and it is practically everywhere in our daily life, there are some of the disadvantages that we may take into account.
+
+Continue on the slides and highlight the following disadvantages of the cloud:
+
+* You have to trust a third-party provider with your data (encryption can address this).
+
+* You probably have to give up some privacy and confidentiality.
+
+* You depend on the service level agreements of a provider for issues to be addressed.
+
+* Incidents such as hardware failure are inevitable, but you have less oversight on their resolution.
+
+* Hardware might be shared with other tenants; "bad neighbors" can affect your resources.
+
+* Clouds can fail and have downtime, including those due to planned maintenances out of your control.
+
+Open your browser, navigate to the [Amazon Web Services](https://aws.amazon.com/) homepage and cover the following points:
+
+* Launched in March 2006, AWS popularized the concept of cloud computing and pioneered the cloud's adoption.
+
+* AWS comprises more than 140 services, including technologies for computing, storage, networking, database, analytics, IoT, machine learning, and more.
+
+* AWS launches its first region in Canada in 2016, it's called `ca-central-1`.
+
+* Having an AWS Canadian region, allow customers in Canada to offer cloud services that are complaint with the Canadian cloud services regulations.
+
+* Thousands of companies use AWS worldwide, [in Canada we have some relevant success stories with companies like](https://aws.amazon.com/canada/customer-success-stories/) The National Bank of Canada, Porter Airlines, Toronto Star, The Globe and Mail, The Government of Ontario, and many more.
+
+Slack out the following link to students if they want to learn more about AWS: [AWS Cloud Products](https://aws.amazon.com/products/)
+
+Explain to students that in this unit, they will have hands-on experience with the following AWS services:
+
+* **Amazon SageMaker:** To deploy ML models.
+* **Amazon Lex:** To create conversational interfaces.
+* **Amazon S3:** To store files in the cloud.
+* **AWS Lambda:** To create serverless applications.
+
+Conclude this introduction by telling students, that in this unit, they create two chatbots using Amazon Lex and AWS Lambda.
 
 1. A cryptocurrency converter.
 
+    ![Crypto converveter](Images/crypto-converter-demo.gif)
+
 2. An investment portfolio robo advisor.
 
-Continue with the slides by highlighting the following:
+   ![RoboAdvisor Demo](Images/robo-advisor-demo.gif)
 
-* Cloud services are awesome tools for FinTech professionals. Students already have mastered several skills that will empower the cloud applications they will create.
-
-* This journey starts by learning about unsupervised learning.
+Answer any questions before moving on.
 
 ---
 
@@ -680,61 +740,6 @@ Answer any questions before moving on.
 In this activity, students will be introduced to the cloud and the generalities of Amazon Web Services.
 
 Explain that while PCA can be very useful in speeding up algorithms by reducing dimensionality, modern machine-learning algorithms can also take advantage of powerful computing resources in the cloud.
-
-Open the lesson slides, move to the Welcome to the Cloud, and Amazon Web Services section and introduce the concept of the cloud by asking students to share what they think the cloud is.
-
-Collect two or three answers and emphasize the following points:
-
-* In essence, the cloud refers to the on-demand availability of computer system resources.
-
-* The computing resources include: compute processing power, data storage, and other services.
-
-* There is no need to have physical access to the hardware; it is managed through the internet (through public or private networks).
-
-* Normally, you pay as you go for what you use (sometimes down to the second or byte) with little or no upfront costs.
-
-* Services are usually charged like a utility service (think electricity bill).
-
-* Cloud computing is usually cheaper due to the economics of scale (and no upfront cost of physical hardware, setup, or provisioning).
-
-* You get access to unlimited resources (in theory, maybe not in practice).
-
-* There are multiple services models, with trade-offs in responsibility and control. The most common are:
-  * **Infrastructure as a service (IaaS):** Online services that provide APIs to access different infrastructures such as servers, virtual machines, storage, load balancers, or network interfaces (e.g., [Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/)).
-  * **Platform as a service (PaaS):** Provides a platform that allow customers to develop, run, and manage applications without the complexity of building and maintaining their own physical infrastructure (e.g., [Amazon Web Services](https://aws.amazon.com/)).
-  * **Software as a service (SaaS):** Refers to a software licensing and delivery model where software is licensed on a subscription basis and is centrally hosted (e.g., [Microsoft Office 365](https://www.office.com)).
-  * **Function/code as a service (FaaS):** Also known as serverless computing, it offers a remote procedure call that enables the deployment of individual functions in the cloud that run in response to events (e.g., [AWS Lambda](https://aws.amazon.com/lambda/)).
-
-* Clouds can be created in a private data center (private cloud), in a data center managed by a provider (public cloud) or in a combination of both (hybrid cloud)
-
-* Cloud computing is considered secure enough to be used by many banks and government offices.
-
-* Cloud services allow you to scale your resources up and down as required.
-
-* There are multiple cloud service providers, including Amazon, Microsoft, Google, Oracle, and IBM.
-
-* Some of the disadvantages of the cloud are:
-
-  * Having to trust a third-party provider with your data (encryption can address this).
-  * You probably have to give up some privacy and confidentiality.
-  * You depend on the service level agreements of a provider for issues to be addressed.
-  * Incidents such as hardware failure are inevitable, but you have less oversight on their resolution.
-  * Hardware might be shared with other tenants; "bad neighbors" can affect your resources.
-  * Clouds can fail and have downtime, including those due to planned maintenances out of your control.
-
-Visit the [Amazon Web Services (AWS)](https://aws.amazon.com/) homepage and cover the following points:
-
-* Launched in March 2006, Amazon Web Services (AWS) popularized the concept of cloud computing.
-
-* AWS comprises more than 140 services, including technologies for computing, storage, networking, database, analytics, IoT, machine learning, and more.
-
-* AWS started with a service called Elastic Compute Cloud (or EC2).
-
-* Although Amazon did not invent the concept, it pioneered the cloud's adoption.
-
-* [Thousands of companies use AWS](https://aws.amazon.com/solutions/case-studies/all/), including 2U, Airbnb, Adobe, Capital One, Comcast, Dropbox, Expedia, GE, Kellogg's, McDonalds, Philips, Yelp, and many more.
-
-Slack out the following link to students if they want to learn more about AWS: [AWS Cloud Products](https://aws.amazon.com/products/)
 
 Answer any questions before moving on.
 
