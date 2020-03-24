@@ -127,13 +127,13 @@ Circulate with the TAs to ensure that everyone is able to start their networks. 
 
 ### 4. Instructor Do: Review Networks (5 min)
 
-Ask the students a few questions that they might have realized during the homework.
+Ask the students a few questions that might have arisen during the homework.
 
 * What does the RPC port allow us to do?
 
   **Answer**: This exposes these Ethereum APIs needed to talk to our node.
 
-Assure the students that if they don't know the answers to these next questions, it's totally okay:
+Assure students that if they don't know the answers to these next questions, it's totally okay:
 
 * What is a `bootnode`?
 
@@ -144,13 +144,13 @@ Assure the students that if they don't know the answers to these next questions,
 
   **Answer**: A regular node still is connected to other nodes, so it can provide its peer list as well, even though it might not be as large.
 
-Alright, that's enough architecture; for now, let's start fetching data from our blockchain!
+Alright, that's enough architecture; let's start fetching data from our blockchain!
 
 ### 4. Everyone Do: Fetching balance with Web3.py (15 min)
 
 Time for us to start pulling transactions from the chain.
 
-Everyone will code along together, ensure that students are keeping up with every step.
+Everyone will code along together; ensure that students are keeping up with every step.
 
 Create a new folder called `web3` then `cd` into it:
 
@@ -200,7 +200,7 @@ Voila! Now it's time to actually to spend some Ether from that address.
 
 Ask the students:
 
-* How might actually do this?
+* How might we actually do this?
 
   **Answer**: By importing the private key!
 
@@ -219,11 +219,11 @@ to reveal the private key:
 
 ![mycrypto private key](Images/mycrypto-private-key.gif)
 
-Have the students catch up to this point and ensure everyone knows how to extract the private key.
+Have the students catch up to this point, and ensure everyone knows how to extract the private key.
 
 Now, navigate back to your Python editor.
 
-Define the private key in a variable. Your code should look like this at this point:
+Define the private key in a variable. At this point, your code should look like this:
 
 ```python
 from web3 import Web3
@@ -240,21 +240,21 @@ Ask the students:
 
   **Answer**: We have a private key directly in the code! That is a big no-no for security.
 
-* Can anyone guess as to what solutions might exist out here to help us keep private variables more secure?
+* Can anyone guess what solutions might exist to help us keep private variables more secure?
 
   **Answer**: Environment Variables!
 
-Great, let's find a way to import this a more secure way.
+Great—let's find out how to import this in a more secure way.
 
 Create a file called `.env` in the same directory. Have the class follow along.
 
-In this file, define the private key in an environment variable as such:
+In this file, define the private key in an environment variable as follows:
 
 ```bash
 PRIVATE_KEY=0x31938fae629c2e5f42c7c983dfba11a1b5122d005ba4ab43caaf59ad611bf734
 ```
 
-Great! Explain to the class that this `.env` file should **never** be committed to any Git repo, or uploaded to any server. It should stay on your local machine **ALWAYS**.
+Great! Explain to the class that this `.env` file should **never** be committed to any Git repo, or uploaded to any server. It should stay on your local machine, **ALWAYS**.
 
 In fact, we'll add it to a `.gitignore` just in case:
 
@@ -262,7 +262,7 @@ In fact, we'll add it to a `.gitignore` just in case:
 echo ".env" >> .gitignore
 ```
 
-Ensure students are complete to this point.
+Ensure that students are up to this point.
 
 Now, we need to import the key from the environment variable. Replace the `private_key` definition with the following:
 
@@ -338,13 +338,13 @@ Ask the students a few questions about why we wrote the code the way we did.
 
 ### 7. Everyone Do: Creating a Keystore (10 min)
 
-Time to create a Keystore, a Keystore is an encrypted file that contains the private key to an account.
+Time to create a Keystore, which is an encrypted file that contains the private key to an account.
 
 * Explain to the class that a Keystore is a more secure method of storing the keys long-term, but requires a password to decrypt/unlock.
 
 Present the following scenario to the class:
 
-* Suppose your sibling or other relative wants in on the action that is your new blockchain.
+* Suppose that your relative wants in on the action that is your new blockchain.
   They are begging you to send them some crypto, and now you feel you're ready to.
 
 * Let's create a Keystore for your relative, so that we can send funds to their account later, with pure Python.
@@ -445,7 +445,7 @@ private_key = os.getenv("PRIVATE_KEY")
 
 The students that are using Proof of Work locally do not need to follow these steps.
 
-Now, we need to convert the private key into an object that we can use to sign transactions, as well as messages with.
+Now, we need to convert the private key into an object that we can use to sign transactions, as well as messages.
 
 Import the `Account` module from `eth_account` at the top of the file:
 
@@ -463,7 +463,7 @@ account_one = Account.from_key(private_key)
 
 * We can use this object to sign transactions.
 
-For example, we can print the address of the account as such:
+For example, we can print the address of the account as follows:
 
 ```python
 print(account_one.address)
