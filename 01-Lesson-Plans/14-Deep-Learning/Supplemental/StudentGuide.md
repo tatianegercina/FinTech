@@ -167,45 +167,36 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, shuffle=Tr
 
 
 <details>
-<summary>How do you preprocess data for classification?</summary>
+<summary>How do you preprocess data for neural networks?</summary>
 Most categorical data is text-based and must be converted to numerical so that computations can be ran.  For example, if your categories are male and female, you could convert them to 0 and 1.  Scikit-learn offers functions that can handle this conversion simply.  Two options are `LabelEncoder()` and `OneHotEncoder()`.
 
 <blockquote>
 <details>
-<summary><strong>Preprocessing Target Data</strong></summary>
+<summary><strong>Preprocessing Categorical Data</strong></summary>
 
-Using `LabelEncoder()` from scikit-learn, we can convert categorical data to numerical.  We begin with a simple DataFrame showing 6 countries:
+Using `OneHotEncoder()` from scikit-learn, we can convert categorical data to numerical.  We begin with a simple DataFrame showing 6 countries:
 
 ![country_df1](Images/country_df1.PNG)
 
-Then we import `LabelEncoder` from sklearn.preprocessing, after which we instantiate the `LabelEncoder()` object, then run a `.fit()` followed by `.transform()`.  The results are stored in a new variable `encoded_y` and inserted into the DataFrame.
+Then we import `OneHotEncoder` from sklearn.preprocessing, after which we instantiate the `OneHotEncoder()` object, then run a `.fit()` followed by `.transform()`.  The results are stored in a new variable `encoded_y`.
 
 ```python
-from sklearn.preprocessing import LabelEncoder
-encoder = LabelEncoder()
+from sklearn.preprocessing import OneHotEncoder
+encoder = OneHotEncoder()
 encoder.fit(df.Country)
 encoded_y = encoder.transform(df.Country)
 df['Encoded'] = encoded_y
 ```
 Now you can see that the encoded values are numerical representations of the original countries:
 
-![country_df2](Images/country_df2.PNG)
+<img src= Images/OneHotEncode.PNG width = 400>
 
 </details>
 
-<details>
-<summary><strong>Preprocessing Feature Data</strong></summary>
 
-There are situations when using `Labelencoder()` is not appropriate.  If you are encoding target values (the values you wish to predict), then using the label encoder is great, however, if you are encoding feature values, this method can cause accidental bias in your model prediction.  This is because the numerical representations of the data will be interpreted as values by the model.  A category of 5 will be given more weight than a category of 1.  This is where the `.get_dummies()` pandas function used in Unit 10 comes into play.  The function works by splitting the categorical column of data into multiple columns of separate data with a 1 or 0 representation.  In the below example we use `.get_dummies()` to convert the same country data as before:
-
-```python
-encoded_data = pd.get_dummies(df.Country, columns='Country')
-```
-![country_df3](Images/country_df3.PNG)
-</details>
 <details>
 <summary><strong>Scaling Feature Data</strong></summary>
-In our previous example, we converted feature data to binary to avoid introducing bias into the model.  For the same reason, we should scale data that have large numerical variance between features, so that all features are weighted the same.  For example, let's suppose that our country DataFrame also includes an average number of children, average life expectancy, and average salary by country.  The average number of children is a very small number compared to average life expectancy, which is a very small number compared to the average salary by country.  These values vary greatly and need to be scaled, because the higher numbers may result in more weight bias.
+In an effort to avoid introducing bias to the model, we should scale data that have large numerical variance between features, so that all features are weighted the same.  For example, let's suppose that our country DataFrame also includes an average number of children, average life expectancy, and average salary by country.  The average number of children is a very small number compared to average life expectancy, which is a very small number compared to the average salary by country.  These values vary greatly and need to be scaled, because the higher numbers may result in more weight bias.
 
 ![country_df4](Images/country_df4.PNG)
 
