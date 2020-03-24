@@ -2,11 +2,13 @@
 
 ### Overview
 
-Today's class will introduce students to unsupervised learning and cloud services. Students will gain hands-on experience with the k-means algorithm, one of the most used unsupervised learning algorithms for clustering. Students also will learn how to speed up machine-learning algorithms by using principal component analysis (PCA), as well as to recognize and explain at least three main differences between supervised and unsupervised machine-learning algorithms.
+Today's class will introduce students to unsupervised learning and cloud services. Students will gain hands-on experience with the k-means algorithm, one of the most used unsupervised learning algorithms for clustering. Students also will learn how to speed up machine learning (ML) algorithms by using principal component analysis (PCA), as well as to recognize and explain at least three main differences between supervised and unsupervised ML algorithms.
 
-The concept of **the cloud** is presented to students by highlighting the importance that these kinds of computing services have for FinTech professionals, given that the cloud allows scaling machine-learning models to be used by hundreds or thousands of users.
+The concept of **the cloud** is presented to students by highlighting the importance that these kinds of computing services have for FinTech professionals, given that the cloud allows scaling ML models to be used by hundreds or thousands of users.
 
-As a prelude for the rest of the unit, a demo of the homework is presented as well as an introduction to Amazon Web Services (AWS) and Amazon SageMaker.
+Students will be introduced to Amazon Web Services (AWS), the cloud platform that is going to be used in this unit, as well as to the AWS resources that students will learn to deploy ML models in the cloud and create conversational interfaces, such as, robo advisors.
+
+As a prelude for the rest of the unit, a demo of the homework is presented.
 
 ### Class Objectives
 
@@ -49,11 +51,12 @@ By the end of the class, students will be able to:
 * Prior to class, make sure that all students have created their AWS account, and ask TAs to help troubleshoot any issues. If any students are unable to access a free tier account, ask that they pair up with a peer for this week.
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [13.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=496c4888-8f12-4852-b593-aaed011cc667) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1Z8JiUdBlHbeHD9yfI_0Bz2Zwe-PMpu0aD7kNY7JqImQ/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -65,7 +68,7 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (10 min)
 
-In this activity, students will be introduced to unsupervised learning and its most relevant applications. Also, an overview of the unit is presented, including a homework demo.
+In this activity, students will be introduced to the cloud the cloud services . Also, an overview of the unit is presented, including a homework demo.
 
 Welcome the class to Unit 13, open the lesson slides, and move to the What You Will Achieve in this Unit section by highlighting the following:
 
