@@ -2,11 +2,11 @@
 
 ### Overview
 
-Today's class will introduce students to unsupervised learning and cloud services. Students will gain hands-on experience with the k-means algorithm, one of the most used unsupervised algorithms for clustering. Students also will learn how to speed up machine-learning algorithms by using principal component analysis (PCA), as well as to recognize and explain at least three main differences between supervised and unsupervised machine-learning algorithms.
+Today's class will introduce students to unsupervised learning and cloud services. Students will gain hands-on experience with the k-means algorithm, one of the most used unsupervised learning algorithms for clustering. Students also will learn how to speed up machine-learning algorithms by using principal component analysis (PCA), as well as to recognize and explain at least three main differences between supervised and unsupervised machine-learning algorithms.
 
 The concept of **the cloud** is presented to students by highlighting the importance that these kinds of computing services have for FinTech professionals, given that the cloud allows scaling machine-learning models to be used by hundreds or thousands of users.
 
-As a prelude for the rest of the unit, a demo of the homework is presented as well as an introduction to Amazon Web Services (AWS) and AWS SageMaker.
+As a prelude for the rest of the unit, a demo of the homework is presented as well as an introduction to Amazon Web Services (AWS) and Amazon SageMaker.
 
 ### Class Objectives
 
@@ -24,7 +24,11 @@ By the end of the class, students will be able to:
 
 * Understand the basic concepts of the cloud and Amazon Web Services.
 
-* Recognize the main features of AWS SageMaker.
+* Describe the benefits of the cloud for FinTech professionals.
+
+* Recognize the main features of Amazon SageMaker.
+
+* Demonstrate how to run Jupyter notebooks in Amazon SageMaker Studio.
 
 ### Instructor Notes
 
