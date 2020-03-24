@@ -75,6 +75,21 @@ The original neural network and building block for modern neural networks, is th
 ![perceptron](Images/harsh_perceptron.png)
 
 </details>
+
+<details>
+<summary>Why do I need an activation function?</summary><br>
+
+Because the neuron predicts a rigid binary outcome, but reality is not always so cut and dry, the activation function was implemented.  Using an example from the lesson plan, let's say a father is choosing a movie on Netflix to watch with his child.  The neural network might predict that since this person is watching with a child, they will want an animated film.  But what if their child is a 13 year old Marvel fan?  The reality of life is not so cut and dry and as simple binary outcomes.  The activation function adds a dose of reality to the neuron's decisions. It is a mathematical function with a characteristic S-shaped curve, also called the sigmoid curve, which causes the outcome to be a probability rather than a strict `either or` output.
+
+</details>
+
+<details>
+<summary>What kinds of activation functions exist and how do I choose one?</summary><br>
+
+There are many types of activation functions, and because neural networks are part science and part art, choosing one is typically the result of much testing with different options to find the best result.  Some of the most popular activation functions include sigmoid, tanh, and relu.  For a complete list of activation functions offered by Keras and how to implement them in your code, click [here.](https://keras.io/activations/)
+
+</details>
+
 <details>
 <summary>What is a Deep Neural Network?</summary><br>
 
