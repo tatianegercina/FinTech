@@ -167,12 +167,13 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y, shuffle=Tr
 
 
 <details>
-<summary>How do you preprocess data for neural networks?</summary>
-Most categorical data is text-based and must be converted to numerical so that computations can be ran.  For example, if your categories are male and female, you could convert them to 0 and 1.  Scikit-learn offers functions that can handle this conversion simply.  Two options are `LabelEncoder()` and `OneHotEncoder()`.
+<summary>How do you preprocess data for neural networks?</summary><br>
+
+Preprocessing data for neural networks involves converting categorical data to numerical and scaling numerical data with high variance. Categorical data is text-based and must be converted to numerical so that computations can be ran.  Numerical data with high variance can inadvertantly introduce bias to the model.
 
 <blockquote>
 <details>
-<summary><strong>Preprocessing Categorical Data</strong></summary>
+<summary><strong>Preprocessing Categorical Data</strong></summary><br>
 
 Using `OneHotEncoder()` from scikit-learn, we can convert categorical data to numerical.  We begin with a simple DataFrame showing 6 countries:
 
@@ -180,13 +181,6 @@ Using `OneHotEncoder()` from scikit-learn, we can convert categorical data to nu
 
 Then we import `OneHotEncoder` from sklearn.preprocessing, after which we instantiate the `OneHotEncoder()` object, then run a `.fit()` followed by `.transform()`.  The results are stored in a new variable `encoded_y`.
 
-```python
-from sklearn.preprocessing import OneHotEncoder
-encoder = OneHotEncoder()
-encoder.fit(df.Country)
-encoded_y = encoder.transform(df.Country)
-df['Encoded'] = encoded_y
-```
 Now you can see that the encoded values are numerical representations of the original countries:
 
 <img src= Images/OneHotEncode.PNG width = 400>
@@ -195,7 +189,7 @@ Now you can see that the encoded values are numerical representations of the ori
 
 
 <details>
-<summary><strong>Scaling Feature Data</strong></summary>
+<summary><strong>Scaling Feature Data</strong></summary><br>
 In an effort to avoid introducing bias to the model, we should scale data that have large numerical variance between features, so that all features are weighted the same.  For example, let's suppose that our country DataFrame also includes an average number of children, average life expectancy, and average salary by country.  The average number of children is a very small number compared to average life expectancy, which is a very small number compared to the average salary by country.  These values vary greatly and need to be scaled, because the higher numbers may result in more weight bias.
 
 ![country_df4](Images/country_df4.PNG)
