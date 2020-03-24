@@ -513,7 +513,7 @@ Ensure students have defined their functions to this point.
 
 Now, let us take these parameters and arrange them in a way that aligns with a proper Ethereum transaction.
 
-First, we need a way of estimating the gas, aka transaction fee, needed to send the transaction:
+First, we need a way of estimating the gas, aka the transaction fee, needed to send the transaction:
 
 ```python
 def create_raw_tx(account, recipient, amount):
@@ -593,13 +593,13 @@ This will return something like:
 HexBytes('0x53aab3d6b39642337c4ddf75463fa925d4796b913f91f4ec6a2d41c2cf17de0a')
 ```
 
-This is the transaction ID. You can check the status of this transaction as such:
+This is the transaction ID. You can check the status of this transaction as follows:
 
 ```python
 w3.eth.getTransactionReceipt("0x53aab3d6b39642337c4ddf75463fa925d4796b913f91f4ec6a2d41c2cf17de0a")
 ```
 
-This will return `None` if the transaction is still pending, otherwise, it will return something like:
+This will return `None` if the transaction is still pending. Otherwise, it will return something like:
 
 ```python
 AttributeDict({'blockHash': HexBytes('0xff057860c590f610f18acadedb46505443019436c11c1498941b21c8d51b9922'), 'blockNumber': 972, 'contractAddress': None, 'cumulativeGasUsed': 21000, 'from': '0xc3879b456daa348a16b6524cbc558d2cc984722c', 'gasUsed': 21000, 'logs': [], 'logsBloom': HexBytes('0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'), 'status': 1, 'to': '0xa2c1ec996cee707bb3c323f2d5d9334ad51f835b', 'transactionHash': HexBytes('0x53aab3d6b39642337c4ddf75463fa925d4796b913f91f4ec6a2d41c2cf17de0a'), 'transactionIndex': 0})
