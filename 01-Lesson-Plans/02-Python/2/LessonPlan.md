@@ -1624,7 +1624,7 @@ Engage students with the following review questions:
 
 * How many `return` values can a function have?
 
-  **Answer:** A function can have only `return` one value.
+  **Answer:** A function can have only one `return` value.
 
 * What are the advantages of using functions?
 
@@ -1682,4 +1682,4 @@ Let students know that office hours are available for anyone who would like to a
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
