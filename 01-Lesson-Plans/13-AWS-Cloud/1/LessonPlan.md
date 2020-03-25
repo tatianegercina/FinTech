@@ -161,7 +161,45 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Instructor Do: Introduction to Unsupervised Learning (10 min)
+### 2. Instructor Do: Running Jupyter Notebooks in the Cloud with Amazon SageMaker (10 min)
+
+In this activity, students will learn what Amazon SageMaker is and how they can start running Jupyter notebooks in the Cloud using Amazon SageMaker Studio.
+
+Open the lesson slides, move to the "Running Jupyter Notebooks in the Cloud with Amazon SageMaker" section and highlight the following:
+
+* Amazon SageMaker is a platform service that allows software developers and data scientists to build, train, and deploy ML models in the cloud.
+
+* Amazon SageMaker is composed by different tools aimed to ease the entire machine learning workflow, from managing datasets to building, training, and deploying a model.
+
+* In this class, we will focus on gaining hands-on experience with Amazon SageMaker Studio, a web-based integrated development environment (IDE) that allow you to access all the services and tools needed to build, train, debug, deploy, and monitor your machine learning models.
+
+* Amazon SageMaker provides some built-in ML algorithms, but also, it supports leading ML frameworks such as TensorFlow, PyTorch, Apache MXNet, Keras, and Scikit-learn.
+
+* Some of the advantages of using Amazon SageMaker are the following:
+
+  * Provides tools that streamline a typical workflow for creating a ML model.
+
+  * Its infrastructure enables growth at scale with on-demand compute instances and dynamic storage.
+
+  * Building, training, and hosting is billed by the second with no minimum fees and no upfront commitments.
+
+  * Productivity may be boosted with One-Click Training and One-Click Deployment.
+
+  * Provides built-in security, which includes access controls and monitoring.
+
+Explain to students that learning how to train and deploy models with Amazon SageMaker is a very in-demand skill that is worth learning more about.
+
+Continue with the slides, show to students some of the companies that at currently using Amazon SageMaker and highlight the following:
+
+* **The Globe and Mail** is using Amazon SageMaker to build models to retain existing customers and acquire new ones.
+
+* **Novartis** is currently using Amazon SageMaker to build a computer vision-based model that will determine production line clearance.
+
+* Using Amazon SageMaker engineers at **Coinbase** developed a machine learning-driven system that recognizes mismatches and anomalies in sources of user identification, allowing them to quickly take action against potential sources of fraud.
+
+---
+
+### 2 (old). Instructor Do: Introduction to Unsupervised Learning (10 min)
 
 In this activity, students will be introduced to unsupervised learning and its most relevant applications.
 
@@ -747,36 +785,7 @@ Answer any questions before moving on.
 
 ### 14. Instructor Do: Intro to Amazon SageMaker (5 min)
 
-In this activity, students will be introduced to Amazon's machine-learning service called SageMaker.
 
-Open your web browser, visit the [AWS SageMaker homepage](https://aws.amazon.com/sagemaker/), and highlight the following points:
-
-![Amazon SageMaker homepage](Images/amazon-sagemaker-home.png)
-
-* Amazon SageMaker is a **platform service** that consists of three main components that work together or independently:
-
-  * **Build:** Notebook service to explore and prepare the data
-  * **Train:** Model training environment and infrastructure
-  * **Deploy:** Publishing and hosting a model on an HTTP API endpoint or executing a batch prediction/inference
-
-* Amazon SageMaker includes layers that work across all the components:
-
-  * **Ground Truth:** Data labeling service
-  * **Tuning:** Automatic model tuning by searching hyper-parameter values for best model fit
-  * **Algorithms:** Built-in algorithms (K-NN, k-means, PCA, Forecasting, and many more)
-  * **Frameworks:** Deep-learning framework containers (Scikit-learn, TensorFlow, MXNet, PyTorch, and others)
-  * **Docker containers:** Bring your own model or algorithm container and publishing to [AWS ECR](https://aws.amazon.com/ecr/)
-  * **Marketplace:** Integrates with AWS Marketplace to find, buy, and deploy third-party algorithms and models
-
-Review some of the advantages of using Amazon SageMaker:
-
-* Provides tools that streamline a typical workflow for creating a machine-learning model.
-* Its infrastructure enables growth at scale with on-demand compute instances and dynamic storage.
-* Building, training, and hosting is billed by the second with no minimum fees and no upfront commitments.
-* Advertises One-Click Training and One-Click Deployment.
-* Comes with built-in security, which includes access controls and monitoring.
-
-Explain to students that learning how to train and deploy models with SageMaker is a very in-demand skill that is worth learning more about.
 
 ---
 
