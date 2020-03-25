@@ -687,8 +687,6 @@ In this activity, students will read data into a Pandas DataFrame from a Postgre
 
 * [stu_feeding_pandas_sql.ipynb](Activities/08-Stu_Feeding_Pandas_SQL/Unsolved/stu_feeding_pandas_sql.ipynb)
 
-* [schema.sql](Activities/08-Stu_Feeding_Pandas_SQL/Unsolved/schema.sql)
-
 **Instructions:**
 
 * [README.md](Activities/08-Stu_Feeding_Pandas_SQL/README.md)
@@ -701,7 +699,11 @@ In this activity, students will read data into a Pandas DataFrame from a Postgre
 
 * [schema.sql](Activities/08-Stu_Feeding_Pandas_SQL/Solved/schema.sql)
 
-Walkthrough the solution and highlight the following:
+* [seed.sql](Activities/08-Stu_Feeding_Pandas_SQL/Solved/schema.sql)
+
+* [query.sql](Activities/08-Stu_Feeding_Pandas_SQL/Solved/query.sql)
+
+Walk through the solution and highlight the following:
 
 * In order to create the connection to the PostgreSQL database, the `create_engine` function is imported from `sqlalchemy`.
 
@@ -713,7 +715,7 @@ Walkthrough the solution and highlight the following:
 
   ```python
   # Define the databaser URL
-  db_url = "postgresql://postgres:postgres@localhost:5432/university"
+  db_url = "postgresql://postgres:postgres@localhost:5432/agent_db"
 
   # Create the engine object
   engine = create_engine(db_url)
@@ -723,27 +725,27 @@ Walkthrough the solution and highlight the following:
 
   ```python
   # Write the SQL query
-  query = "SELECT * FROM students"
+  query = "SELECT * FROM agents"
 
   # Read the SQL query into a DataFrame
   students_df = pd.read_sql(query, engine)
   ```
 
-* A DataFame called `lastname_df` is created to fetch the count of the last names.
+* A DataFame called `agent_region_df` is created to fetch the count of regions per agent_id.
 
   ```python
   # Write the SQL query
   query = """
-  SELECT last_name, count(last_name)
-  FROM students
-  GROUP BY last_name
+  SELECT agent_id, COUNT(region_id) as region_count
+  FROM agent_region_junction
+  GROUP BY agent_id
   """
 
   # Read the SQL query into a DataFrame
-  lastname_df = pd.read_sql(query, engine)
+  agent_region_df = pd.read_sql(query, engine)
   ```
 
-* The bar chart is created using `hvplot` and the `lastname_df` DataFrame.
+* The bar chart is created using `hvplot` and the `agent_region_df` DataFrame.
 
   ![Brothers counting bar chart](Images/brothers_counting_chart.png)
 
