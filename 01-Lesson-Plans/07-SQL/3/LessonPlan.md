@@ -346,64 +346,49 @@ Emphasize that using foreign keys to build relationships across data is a featur
 
 In this activity, students will create tables with foreign keys.
 
-**File**: [schema.sql](Activities/04-Stu_Foreign_Keys/Unsolved/schema.sql)
+**Files**:
+
+* [owners.csv](Activities/04-Stu_Foreign_Keys/Resources/owners.csv)
+
+* [estates.csv](Activities/04-Stu_Foreign_Keys/Resources/estates.csv)
 
 **Instructions:** [README.md](Activities/04-Stu_Foreign_Keys/README.md)
 
 ### 7. Instructor Do: Review Foreign Keys (5 min)
 
-**File**: [schema.sql](Activities/04-Stu_Foreign_Keys/Solved/schema.sql)
+**Files**:
 
-Open `schema.sql` in pgAdmin and walk through the code, explaining the following:
+* [schema.sql](Activities/04-Stu_Foreign_Keys/Solved/schema.sql)
 
-* Create a table named `customer`.
+* [seed.sql](Activities/04-Stu_Foreign_Keys/Solved/seed.sql)
+
+* [query.sql](Activities/04-Stu_Foreign_Keys/Solved/query.sql)
+
+Using the `schema.sql`, `seed.sql` files in pgAdmin, walk through the code and explain the following:
+
+* The `owner` and `estates` tables are linked via a foreign key relationship from the `owner_id` of the `estates` table to the `owner_id` of the `owner` table.
 
   ```sql
-  CREATE TABLE customer (
-      id SERIAL,
-      first_name VARCHAR(30) NOT NULL,
-      last_name VARCHAR(30) NOT NULL,
-      PRIMARY KEY (id)
+  -- Create owners table and insert values
+  CREATE TABLE owners (
+    owner_id INT PRIMARY KEY NOT NULL,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255)
+  );
+
+  -- Create pet name table and insert values
+  CREATE TABLE estates (
+    id INT NOT NULL PRIMARY KEY,
+    owner_id INT NOT NULL,
+    address VARCHAR(255),
+    city VARCHAR (255),
+    state VARCHAR(255),
+    zip_code VARCHAR(255),
+    type VARCHAR (255)
   );
   ```
 
-* Data is inserted that takes only `first_name` and `last_name` as values because the `id` will automatically be added.
-
-* Create a table named `customer_email`.
-
-  ```sql
-  CREATE TABLE customer_email (
-      id SERIAL,
-      email VARCHAR(30) NOT NULL,
-      customer_id INTEGER NOT NULL,
-      PRIMARY KEY (id),
-      FOREIGN KEY (customer_id) REFERENCES customer(id)
-  );
-  ```
-
-* The `customer_id` is a foreign key that references the `id` of the `customer` table. All data inserted must have an `id` that is in the `customer` table.
-
-* The `customer_phone` table is also created and references the same column as its foreign key:
-
-  ```sql
-  CREATE TABLE customer_phone (
-      id SERIAL,
-      phone VARCHAR(30) NOT NULL,
-      customer_id INTEGER NOT NULL,
-      PRIMARY KEY (id),
-      FOREIGN KEY (customer_id) REFERENCES customer(id)
-  );
-  ```
-
-* Data is inserted into the `customer_phone` table. Like the `customer_email` table, the `customer_id` is a foreign key that references the `id` of the `customer` table.
-
-* To test if we have the correct foreign keys, we can attempt to insert a value with an `id` of 10. Uncomment the code:
-
-  ```sql
-  -- INSERT INTO customer_phone(customer_id, phone)
-  -- VALUES
-    -- (10, '555-444-3333');
-  ```
+* Foreign keys should enforce **referential integrity**, therefore if we attempt to insert a record into the `estates` table with an `owner_id` of 10, the following error will output.
 
 * Then run the `INSERT` statement. Explain:
 
