@@ -537,51 +537,42 @@ In this activity, students will create table schemata for students and available
 
 Explain that this activity required creating separate tables for agents and regions as well as creating a junction table to reflect the many-to-many relationship between the two tables.
 
-Walk through the schema.sql and seed.sql files to create and populate the `agents` and `regions` tables and explain the following:
+Use the schema.sql and seed.sql files to walk through the creation and population of the `agents` and `regions` tables. Explain the following:
+
+* The `agents` and `regions` tables each have their own respective IDs as their primary key.
+
+* The `agents` and `regions` tables have additional columns or fields that pertain to the specific context of the table. For example, the `first_name` and `last_name` columns relate to the `agent_id` and represent the real estate agent's first and last name.
 
   ```sql
   CREATE TABLE agents (
-    agent_id SERIAL PRIMARY KEY,
+    agent_id PRIMARY KEY,
     first_name VARCHAR NOT NULL,
     last_name VARCHAR NOT NULL
   );
 
-  -- Create a table of courses
   CREATE TABLE regions (
     region_id INTEGER NOT NULL PRIMARY KEY,
     region_name VARCHAR NOT NULL
   );
   ```
 
-* Each table is given an ID as its primary key.
-
-* Each table has additional columns or fields that pertain to the specific context of the table. For example, the `first_name` and `last_name` columns relate to the `agent_id` and represent the real estate agent's first and last name.
-
-Next, do the same for the junction table, named `student_courses_junction`, and explain the code.
+* Unlike the `agents` and `regions` tables, the `agent_region_junction` table defines foreign key relationships (to the `agents` and `regions` tables) and sets a composite or multi-value key as its primary key.
 
   ```sql
-  -- Create a junction table.
-  CREATE TABLE student_courses_junction (
-    student_id INTEGER NOT NULL,
-    FOREIGN KEY (student_id) REFERENCES students(id),
-    course_id INTEGER NOT NULL,
-    FOREIGN KEY (course_id) REFERENCES courses(id),
-    course_term VARCHAR NOT NULL,
-    PRIMARY KEY (student_id, course_id)
+  CREATE TABLE agent_region_junction (
+    agent_id INTEGER NOT NULL,
+    FOREIGN KEY (agent_id) REFERENCES agents(agent_id),
+    region_id INTEGER NOT NULL,
+    FOREIGN KEY (region_id) REFERENCES regions(region_id),
+    PRIMARY KEY (agent_id, region_id)
   );
   ```
 
-* The table takes both a `student_id` and a `course_id`, which are references to the previously created tables.
+* New agent or regions data cannot be inserted into the `agent_region_junction` table that does not currently exist in the `agents` or `regions` tables.
 
-* Since `student_id` and `course_id` reference those tables, they become the foreign key.
-
-* New student or course data cannot be inserted into the `student_courses_junction` table that does not currently exist in the `students` or `courses` tables.
-
-* This table bridges the two previous tables and shows all courses taken by each student.
+* This table bridges the two previous tables and shows all regions managed by each agent.
 
 * The primary key will be a composite of both IDs.
-
-* Additionally, this table includes a new field, `course_term`, which is the term in which a course was taken by a student.
 
 Query the table to display the result.
 
@@ -592,12 +583,10 @@ To reinforce the many-to-many relationship, point out that many students can tak
 For the bonus, briefly explain that two outer joins can be performed to retrieve complete data on each student.
 
   ```sql
-  SELECT s.id, s.last_name, s.first_name, c.id, c.course_name, j.course_term
-  FROM students s
-  LEFT JOIN student_courses_junction j
-  ON s.id = j.student_id
-  LEFT JOIN courses c
-  ON c.id = j.course_id;
+  SELECT *
+  FROM agents a
+  LEFT JOIN agent_region_junction b ON a.agent_id = b.agent_id
+  LEFT JOIN regions c ON b.region_id = c.region_id;
   ```
 
   ![Images/modelingfpng](Images/modeling08.png)

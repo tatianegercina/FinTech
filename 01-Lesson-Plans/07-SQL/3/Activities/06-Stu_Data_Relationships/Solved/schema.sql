@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS agent_region_junction CASCADE;
 
 -- Create a table of students
 CREATE TABLE agents (
-  agent_id SERIAL PRIMARY KEY,
+  agent_id PRIMARY KEY,
   first_name VARCHAR NOT NULL,
   last_name VARCHAR NOT NULL
 );
