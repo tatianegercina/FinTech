@@ -839,57 +839,58 @@ Transition from the conceptual ERD to a logical ERD. Using the following lines, 
   ```sql
   Employee
   -
-  Employee_ID
+  Employee_ID PK
   Name
   Age
   Address
-  Zipcode
+  Zipcode FK - Zipcode.Zip_Code
 
   Zipcode
   -
-  Zip_Code
+  Zip_Code PK
   City
   State
 
   Employee_Email
   -
-  Email_ID
-  Employee_ID
+  Email_ID PK
+  Employee_ID FK - Employee.Employee_ID
   Email
 
   Owners
   -
-  Owner_ID
+  Owner_ID PK
   First_Name
   Last_Name
 
   Estates
   -
-  Estate_ID
-  Owner_ID
+  Estate_ID PK
+  Owner_ID FK - Owners.Owner_ID
+  Estate_Type FK - Estate_Type.Estate_Type_ID
   Address
-  Zip_Code
+  Zip_Code FK - Zipcode.Zip_Code
 
   Estate_Type
   -
-  Estate_Type_ID
+  Estate_Type_ID PK
   Estate_Type
 
   Agents
   -
-  Agent_ID,
+  Agent_ID PK,
   First_Name,
   Last_Name
 
   Regions
   -
-  Region_ID
+  Region_ID PK
   Region_Name
 
   Agent_Region_Junction
   -
-  Agent_ID
-  Region_ID
+  Agent_ID FK - Agents.Agent_ID
+  Region_ID FK - Regions.Region_ID
   ```
 
 * By defining the column types, this model has become more complex and is now considered a **logical model**.
@@ -958,7 +959,7 @@ Answer any questions before moving on.
 
 ### 16. Student Do: Designing an ERD, Part 1 (15 min)
 
-In this activity, students will create a conceptual ERD for a gym owner.
+In this activity, students will create a conceptual ERD for mortgage lending.
 
 **File:** [schema.txt](Activities/10-Stu_Designing_ERD/Unsolved/schema.txt)
 
