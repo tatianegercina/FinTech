@@ -441,13 +441,15 @@ In this activity, students will create table schemata for students and available
 
 * [schema.sql](Activities/06-Stu_Data_Relationships/Solved/schema.sql)
 
+* [seed.sql](Activities/06-Stu_Data_Relationships/Solved/seed.sql)
+
 * [query.sql](Activities/06-Stu_Data_Relationships/Solved/query.sql)
 
-Explain that this activity required creating separate tables for students and courses, and then creating a junction table to reflect the many-to-many relationship between the two tables.
+Explain that this activity required creating separate tables for agents and regions as well as creating a junction table to reflect the many-to-many relationship between the two tables.
 
-Paste in the schemata for the `students` and `courses` tables and explain the following:
+Use the schema.sql and seed.sql files to create and populate the `agents` and `regions` tables and explain the following:
 
-* Each table is given the ID as the primary key.
+* Each table is given an ID as its primary key.
 
 * Fields are added for required attributes for the table.
 
