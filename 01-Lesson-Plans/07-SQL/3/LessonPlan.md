@@ -312,6 +312,8 @@ Students should now understand how to create foreign keys, as well as how to use
   ('lucystern@gmail.com', 5);
   ```
 
+  ![fk-constraint-error](Images/fk-constraint-error.png)
+
 * Explain that the `animal_id` column is a foreign key that is assigned to the `id` column in the `animals_all` table. The `id` 5 doesn't exist in the `animals_all` table and therefore can't be referenced in the `animals_location` table.
 
 * Next, a new row is inserted into `animals_all` that will have an `id` of 5. Now a row can be inserted into `animals_location` with an `id` of 5 because it corresponds with an `id` in the `animals_all` table.

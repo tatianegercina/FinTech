@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS customer CASCADE;
+DROP TABLE IF EXISTS customer_email CASCADE;
+DROP TABLE IF EXISTS customer_phone CASCADE;
+
 -- 1. Create a Customer table
 CREATE TABLE customer (
   customer_id SERIAL PRIMARY KEY,
@@ -20,9 +24,9 @@ SELECT * FROM customer;
 -- 2. Create Customer Email table
 CREATE TABLE customer_email (
   email_id SERIAL PRIMARY KEY,
-  email VARCHAR(30) NOT NULL,
   customer_id INTEGER NOT NULL,
-  FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
+  FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
+  email VARCHAR(30) NOT NULL
 );
 
 -- Populate that table
