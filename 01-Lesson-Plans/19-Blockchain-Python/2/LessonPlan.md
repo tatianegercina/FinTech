@@ -392,7 +392,7 @@ print(key.send(outputs))
  `(address, amount, denomination)`
 
 * `Bit` is smart enough to take these outputs and build the full transaction out of them.
- Essentially we're telling `bit` what the outputs should look like, and it is building the transaction for us.
+ Essentially, we're telling `bit` what the outputs should look like, and it is building the transaction for us.
 
 Now, copy and paste your private key into the `key` assignment as such:
 
@@ -414,9 +414,9 @@ Alternatively, you can view [this existing transaction](https://live.blockcypher
 
 ![multi output tx](Images/multi-output-tx.png)
 
-See if the students can point out the output that has their bitcoins in it.
+See if students can indicate which output contains their bitcoins.
 
-Point out the outputs on the right that correspond to the student wallets (they are the bubbles with the `0.001 BTC` sent).
+Now, indicate which outputs on the right correspond to the student wallets (they are the bubbles with the `0.001 BTC` sent).
 
 Ask the students:
 
@@ -424,7 +424,7 @@ Ask the students:
 
  **Answer:** Back to the original address, starting with `mhrsdwPN4`.
 
-Now, time for the students to send their own multi-output transactions!
+Now, it's time for the students to send their own multi-output transactions!
 
 ### 13. Students Do: Sending a multi-output transaction (15 min)
 
