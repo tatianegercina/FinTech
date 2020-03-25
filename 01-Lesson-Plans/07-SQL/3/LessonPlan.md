@@ -642,7 +642,7 @@ Make sure all students have installed SQLAlchemy. Then open the unsolved Jupyter
 
   ![SQLAlchemy URL structure](Images/sqlalchemy_url.png)
 
-* To retrieve data from the database, we first need to define a SQL query that fetches the data we want.. In this example, all the rows from the `animals_all` table are retrieved.
+* To retrieve data from the database, we first need to define a SQL query that fetches the data we want.. In this example, all the rows from the `owners` table are retrieved.
 
   ```python
   query = "SELECT * FROM owners;"
@@ -658,7 +658,7 @@ Explain to students that once the data from the database is in a DataFrame, we c
 
 * The data from the `owners` DataFrame is shown. You can see that the data from the `owners` table is now loaded into the DataFrame.
 
-  ![Sample DataFrame records](Images/animals_df_head.png)
+  ![Sample DataFrame records](Images/owners_df.png)
 
 * A new query is defined to count the number of animals per owner.
 
