@@ -128,58 +128,58 @@ Next, using the code from the schema.sql and seed.sql files, create and populate
 
   ```sql
   INSERT INTO employee_normalization
-  (employee_id, name, age, address, city, state, zip_code, email)
+    (employee_id, name, age, address, city, state, zip_code, email)
   VALUES
-  (123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002, 'robert.bale51231@gmail.com, robbieman512@gmail.com'),
-  (456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami', 'FL', 33101, 'anya.strensa1412@gmail.com, soccergirl4251@gmail.com'),
-  (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 'San Francisco', 'CA', 94016, 'arnold.tolenski5121@gmail.com');
+    (123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002, 'robert.bale51231@gmail.com, robbieman512@gmail.com'),
+    (456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami', 'FL', 33101, 'anya.strensa1412@gmail.com, soccergirl4251@gmail.com'),
+    (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 'San Francisco', 'CA', 94016, 'arnold.tolenski5121@gmail.com');
 
   INSERT INTO first_nf_employee
-  (employee_id, name, age, address, city, state, zip_code, email)
+    (employee_id, name, age, address, city, state, zip_code, email)
   VALUES
-  (123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002, 'robert.bale51231@gmail.com'),
-  (123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002, 'robbieman512@gmail.com'),
-  (456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami', 'FL', 33101, 'anya.strensa1412@gmail.com'),
-  (456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami', 'FL', 33101, 'soccergirl4251@gmail.com'),
-  (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 'San Francisco', 'CA', 94016, 'arnold.tolenski5121@gmail.com');
+    (123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002, 'robert.bale51231@gmail.com'),
+    (123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002, 'robbieman512@gmail.com'),
+    (456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami', 'FL', 33101, 'anya.strensa1412@gmail.com'),
+    (456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami', 'FL', 33101, 'soccergirl4251@gmail.com'),
+    (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 'San Francisco', 'CA', 94016, 'arnold.tolenski5121@gmail.com');
   ```
 
 * In order to achieve second normal form, the data in `first_nf_employee` should be separated out to the `second_nf_employee` and `second_nf_employee_email` tables. Each table should represent a specific contextual domain, such as employee and email attributes, and should contain unique primary keys in which all non-ID columns are dependent. Note that the two tables are still connected by the common `employee_id` column.
 
   ```sql
   INSERT INTO second_nf_employee
-  (employee_id, name, age, address, city, state, zip_code)
+    (employee_id, name, age, address, city, state, zip_code)
   VALUES
-  (123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002),
-  (456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami',' FL', 33101),
-  (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 'San Francisco', 'CA', 94016);
+    (123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002),
+    (456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami',' FL', 33101),
+    (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 'San Francisco', 'CA', 94016);
 
   INSERT INTO second_nf_employee_email
-  (email_id, employee_id, email)
+    (email_id, employee_id, email)
   VALUES
-  (1, 123, 'robert.bale51231@gmail.com'),
-  (2, 123, 'robbieman512@gmail.com'),
-  (3, 456, 'anya.strensa1412@gmail.com'),
-  (4, 456, 'soccergirl4251@gmail.com'),
-  (5, 789, 'arnold.tolenski5121@gmail.com');
+    (1, 123, 'robert.bale51231@gmail.com'),
+    (2, 123, 'robbieman512@gmail.com'),
+    (3, 456, 'anya.strensa1412@gmail.com'),
+    (4, 456, 'soccergirl4251@gmail.com'),
+    (5, 789, 'arnold.tolenski5121@gmail.com');
   ```
 
 * In order to achieve third normal form, the data in `second_nf_employee` should be separated out to the `third_nf_employee` and `third_nf_zipcode` tables. The reason for this is that the data within the `second_nf_employee` table contains dependencies on non-primary key attributes. In other words, the `city` and `state` columns are dependent on the `zip_code` column and therefore should be separated out into their own table.
 
   ```sql
   INSERT INTO third_nf_employee
-  (employee_id, name, age, address, zip_code)
+    (employee_id, name, age, address, zip_code)
   VALUES
-  (123, 'Robert Bale', 32, '31 Pelham Drive', 77002),
-  (456, 'Anya Strensa', 25, '142 Sunshine Road', 33101),
-  (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 94016);
+    (123, 'Robert Bale', 32, '31 Pelham Drive', 77002),
+    (456, 'Anya Strensa', 25, '142 Sunshine Road', 33101),
+    (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 94016);
 
   INSERT INTO third_nf_zipcode
-  (zip_code, city, state)
+    (zip_code, city, state)
   VALUES
-  (77002, 'Houston', 'TX'),
-  (33101, 'Miami', 'FL'),
-  (94016, 'San Francisco', 'CA');
+    (77002, 'Houston', 'TX'),
+    (33101, 'Miami', 'FL'),
+    (94016, 'San Francisco', 'CA');
   ```
 
 Explain the bonus section of the activity:
@@ -227,7 +227,7 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
 
   ```sql
   INSERT INTO customer
-  (first_name, last_name)
+    (first_name, last_name)
   VALUES
     ('Bob', 'Smith'),
     ('Jane', 'Davidson'),
@@ -267,24 +267,24 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
 
   ```sql
   INSERT INTO customer_email
-  (customer_id, email)
+    (customer_id, email)
   VALUES
-  (1, 'bobsmith@email.com'),
-  (2, 'jdavids@email.com'),
-  (3, 'jimmyb@email.com'),
-  (4, 'sd@email.com');
+    (1, 'bobsmith@email.com'),
+    (2, 'jdavids@email.com'),
+    (3, 'jimmyb@email.com'),
+    (4, 'sd@email.com');
   ```
 
   ![customer_email_table](Images/Foreign_Keys22.png)
 
   ```sql
   INSERT INTO customer_phone
-  (customer_id, phone)
+    (customer_id, phone)
   VALUES
-  (1, '435-344-2245'),
-  (2, '332-776-4678'),
-  (3, '221-634-7753'),
-  (4, '445-663-5799');
+    (1, '435-344-2245'),
+    (2, '332-776-4678'),
+    (3, '221-634-7753'),
+    (4, '445-663-5799');
   ```
 
   ![customer_phone_table](Images/Foreign_Keys33.png)
@@ -307,30 +307,32 @@ Students should now understand how to create foreign keys, as well as how to use
 
   ```sql
   INSERT INTO customer_email
-  (email, customer_id)
+    (email, customer_id)
   VALUES
-  ('lucystern@gmail.com', 5);
+    ('lucystern@gmail.com', 5);
   ```
 
   ![fk-constraint-error](Images/fk-constraint-error.png)
 
-* Explain that the `animal_id` column is a foreign key that is assigned to the `id` column in the `animals_all` table. The `id` 5 doesn't exist in the `animals_all` table and therefore can't be referenced in the `animals_location` table.
+* Explain that the `customer_id` column is a foreign key that is assigned to the `customer_id` column in the `customer` table. The `customer_id` 5 doesn't exist in the `customer` table and therefore can't be referenced in the `customer_email` table.
 
-* Next, a new row is inserted into `animals_all` that will have an `id` of 5. Now a row can be inserted into `animals_location` with an `id` of 5 because it corresponds with an `id` in the `animals_all` table.
+* Next, a new row is inserted into `customer` that will have a `customer_id` of 5. Now a row can be inserted into `customer_email` with a `customer_id` of 5 because it corresponds with a `customer_id` in the `customer` table.
 
   ```sql
-  INSERT INTO animals_all (animal_species, owner_name)
+  INSERT INTO customer
+    (first_name, last_name)
   VALUES
-    ('Fish', 'Dave');
+    ('Lucy', 'Stern');
 
-  INSERT INTO animals_location (location, animal_id)
+  INSERT INTO customer_email
+    (email, customer_id)
   VALUES
-    ('River', 5);
+    ('lucystern@gmail.com', 5);
   ```
 
-* Check that the row was inserted using a `SELECT * FROM animal_location` query.
+* Check that the row was inserted using a `SELECT * FROM customer_email` query.
 
-  ![Foreign keys 3](Images/Foreign_Keys3.png)
+  ![fk-constraint-error-resolved](Images/fk-constraint-error-resolved.png)
 
 Answer any questions students have about foreign keys. Then ask students if they can think of other real-world cases in which the use of foreign keys makes sense. Here are two examples:
 
