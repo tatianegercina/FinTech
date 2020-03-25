@@ -275,6 +275,8 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
   (4, 'sd@email.com');
   ```
 
+  ![customer_email_table](Images/Foreign_Keys22.png)
+
   ```sql
   INSERT INTO customer_phone
   (customer_id, phone)
@@ -284,8 +286,6 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
   (3, '221-634-7753'),
   (4, '445-663-5799');
   ```
-
-  ![customer_email_table](Images/Foreign_Keys22.png)
 
   ![customer_phone_table](Images/Foreign_Keys33.png)
 
