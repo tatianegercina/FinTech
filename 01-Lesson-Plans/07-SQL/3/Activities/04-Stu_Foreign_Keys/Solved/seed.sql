@@ -9,7 +9,7 @@ VALUES
 (612, 'Cassie', 'Oberton');
 
 INSERT INTO estates
-(id, owner_id, address, city, state, zip_code)
+(estate_id, owner_id, address, city, state, zip_code)
 VALUES
 (1, 141, '147 Jupiter Lane Apartment 2F', 'Pasadena', 'CA', 91101),
 (2, 232, '5 Calina Drive', 'Allentown', 'PA', 18101),

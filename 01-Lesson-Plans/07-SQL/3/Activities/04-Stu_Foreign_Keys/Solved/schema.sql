@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS owners;
 DROP TABLE IF EXISTS estates;
 DROP TABLE IF EXISTS estate_type;
+DROP TABLE IF EXISTS estates_new;
 
 -- Create owners table and insert values
 CREATE TABLE owners (
@@ -11,8 +12,9 @@ CREATE TABLE owners (
 
 -- Create pet name table and insert values
 CREATE TABLE estates (
-  id INT NOT NULL PRIMARY KEY,
+  estate_id INT NOT NULL PRIMARY KEY,
   owner_id INT NOT NULL,
+  FOREIGN KEY (owner_id) REFERENCES owners(owner_id),
   address VARCHAR(255),
   city VARCHAR (255),
   state VARCHAR(255),
@@ -31,7 +33,9 @@ CREATE TABLE estate_type (
 CREATE TABLE estates_new (
   estate_id INT NOT NULL PRIMARY KEY,
   owner_id INT NOT NULL,
+  FOREIGN KEY (owner_id) REFERENCES owners(owner_id),
   estate_type_id INT NOT NULL,
+  FOREIGN KEY (estate_type_id) REFERENCES estate_type(estate_type_id),
   address VARCHAR(255),
   city VARCHAR (255),
   state VARCHAR(255),

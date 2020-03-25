@@ -388,11 +388,25 @@ Using the `schema.sql`, `seed.sql` files in pgAdmin, walk through the code and e
   );
   ```
 
-* Foreign keys should enforce **referential integrity**, therefore if we attempt to insert a record into the `estates` table with an `owner_id` of 10, the following error will output.
+* Foreign keys should enforce **referential integrity**, therefore if we attempt to insert a record into the `estates` table with an `owner_id` of 10, the following error will output as there is no record in the `owners` table where `owner_id` is `10`.
 
-* Then run the `INSERT` statement. Explain:
+  ```sql
+  INSERT INTO estates
+    (estate_id, owner_id, address, city, state, zip_code)
+  VALUES
+    (9, 10, '23 Delafield Avenue', 'New Brunswick', 'NJ', 08901);
+  ```
 
-  * This returns an error because that `id` does not exist in the `customer` table.
+  ![student-fk-constraint-error](Images/student-fk-constraint-error.png)
+
+* To alleviate the issue, a new record with an `owner_id` of 10 should first be added to the `owner` table. Then, re-attemping the insert into the `estates` table should succeed.
+
+  ```sql
+  INSERT INTO owners
+    (owner_id, first_name, last_name)
+  VALUES
+    (10, 'David', 'Stone')
+  ```
 
 * Finally explain that all tables can be joined together by their respective IDs.
 

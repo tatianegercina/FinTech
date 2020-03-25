@@ -1,11 +1,23 @@
 SELECT * FROM owners;
 SELECT * FROM estates;
 
---
+-- Attempt to insert data without referential integrity
 INSERT INTO estates
 (estate_id, owner_id, address, city, state, zip_code)
 VALUES
-(1, 10, '23 Delafield Avenue', 'New Brunswick', 'NJ', 08901),
+(9, 10, '23 Delafield Avenue', 'New Brunswick', 'NJ', 08901);
+
+-- Insert new record into owner table
+INSERT INTO owners
+(owner_id, first_name, last_name)
+VALUES
+(10, 'David', 'Stone')
+
+-- Re-attempt to insert data with referential integrity
+INSERT INTO estates
+(estate_id, owner_id, address, city, state, zip_code)
+VALUES
+(9, 10, '23 Delafield Avenue', 'New Brunswick', 'NJ', 08901);
 
 -- Select all columns from joined table
 SELECT *
