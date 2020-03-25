@@ -1,9 +1,8 @@
 -- 1. Create a Customer table
 CREATE TABLE customer (
-    id SERIAL,
-    first_name VARCHAR(30) NOT NULL,
-    last_name VARCHAR(30) NOT NULL,
-    PRIMARY KEY (id)
+  customer_id SERIAL PRIMARY KEY,
+  first_name VARCHAR(255) NOT NULL,
+  last_name VARCHAR(255) NOT NULL
 );
 
 -- Populate that table

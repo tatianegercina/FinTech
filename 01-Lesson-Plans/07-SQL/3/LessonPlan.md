@@ -197,7 +197,13 @@ Explain the bonus section of the activity:
 
 In this activity, students will be introduced to the concept of foreign keys -- columns designated as matching links or relations to another table.
 
-**File:** [schema.sql](Activities/03-Ins_Foreign_Keys/Solved/schema.sql)
+**Files:**
+
+* [schema.sql](Activities/03-Ins_Foreign_Keys/Solved/schema.sql)
+
+* [seed.sql](Activities/03-Ins_Foreign_Keys/Solved/seed.sql)
+
+* [query.sql](Activities/03-Ins_Foreign_Keys/Solved/query.sql)
 
 Use the slides on foreign keys to explain the concept of foreign keys and how they are used to connect tables:
 
@@ -205,34 +211,35 @@ Use the slides on foreign keys to explain the concept of foreign keys and how th
 
 * A foreign key also prevents invalid data from being entered into a column. The data being entered MUST be a value from the referenced column.
 
-Slack out [schema.sql](Activities/03-Ins_Foreign_Keys/Solved/schema.sql) for students to follow along. Review the code, explaining the following steps:
+Slack out the schema.sql, seed.sql, and query.sql files for students to follow along. Review the code, explaining the following steps:
 
-* Create a table named `animals_all` and set the primary key to `id`, which will be auto-populated and incremented with each new entry.
+* Create a table named `customer` and set the primary key to `customer_id`, which will be auto-populated and incremented with each new entry.
 
   ```sql
-  CREATE TABLE animals_all (
-    id SERIAL PRIMARY KEY,
-    animal_species VARCHAR(30) NOT NULL,
-    owner_name VARCHAR(30) NOT NULL
+  CREATE TABLE customer (
+    customer_id SERIAL PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL
   );
   ```
 
-* Insert data into the `animals_all` table, and then run a `SELECT` query to double-check that data has been inserted.
+* Insert data into the `customer` table, and then run a `SELECT` query to double-check that data has been inserted.
 
   ```sql
-  INSERT INTO animals_all (animal_species, owner_name)
+  INSERT INTO customer
+  (first_name, last_name)
   VALUES
-  ("Dog", "Bob"),
-  ("Fish", "Bob"),
-  ("Cat", "Kelly"),
-  ("Dolphin", "Aquaman");
+    ('Bob', 'Smith'),
+    ('Jane', 'Davidson'),
+    ('Jimmy', 'Bell'),
+    ('Stephanie', 'Duke');
 
-  SELECT * FROM animals_all;
+  SELECT * FROM customer;
   ```
 
-* Point out that a new table is created, and its primary key is labeled `id`. The `id` will be unique to this table and has no relation to the previously created table.
+* Point out that a new table is created, and its primary key is labeled `customer_id`. As a result, the `customer_id` will be unique to this table.
 
-  ![animals table](Images/Foreign_Keys1.png)
+  ![customer_table](Images/Foreign_Keys11.png)
 
 * A new table named `animals_location` is created. The `FOREIGN KEY (animal_id)` identifies the `animal_id` column as a foreign key.
 
