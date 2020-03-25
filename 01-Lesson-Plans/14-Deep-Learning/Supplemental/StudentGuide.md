@@ -92,7 +92,7 @@ Some of the most popular activation functions include sigmoid, tanh, and relu. A
 <details>
 <summary>Loss Functions</summary><br>
 
-Loss functions measure how far the model is deviating from the expected result, the higher the number, the more deviation, meaning poor performance. A highly simplied way to visualize this is imagine trying to walk down a mountain. You would analyize the paths you have available to get to the end result, looking for the most optimal. You wouldn't choose the rocky path that winds up and down, you'd choose the straightest, quickest path that expends the least energy. Choosing anything but the most optimal path will result in huge error. These errors are measured by the loss function.
+Loss functions measure how far the model is deviating from the expected result - the higher the number, the more deviation, meaning poor performance. A highly simplied way to visualize this, is to imagine trying to walk down a mountain. You would analyize the paths you have available to get to the end result, looking for the most optimal. You wouldn't choose the rocky path that winds up and down, you'd choose the straightest, quickest path that expends the least energy. Choosing anything but the most optimal path will result in huge error. These errors are measured by the loss function.
 
 Some of the most popular loss functions include mean squared error (MSE) and categorical cross-entropy. A full list of loss functions provided by Keras can be seen [here.](https://keras.io/losses/)
 
