@@ -1,23 +1,49 @@
-  Gym
-  -
-  Gym_Name
-  Address
-  City
-  Zipcode
+Employee
+-
+Employee_ID
+Name
+Age
+Address
+Zipcode
 
-  Trainers
-  -
-  First_Name
-  Last_Name
+Zipcode
+-
+Zip_Code
+City
+State
 
-  Members
-  -
-  First_Name
-  Last_Name
-  Address
-  City
+Employee_Email
+-
+Email_ID
+Employee_ID
+Email
 
-  Payments
-  -
-  CreditCard_Info
-  Billing_Zip
+Owners
+-
+Owner_ID
+First_Name
+Last_Name
+
+Estates
+-
+Address
+Zip_Code
+
+Estate_Type
+-
+Estate_Type
+
+Agents
+-
+First_Name,
+Last_Name
+
+Regions
+-
+Region_Name
+
+Agent_Region_Junction
+-
+Agent_ID
+Region_ID
+

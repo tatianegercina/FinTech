@@ -763,6 +763,8 @@ Use the ERD slides and begin the discussion of entity relationship diagrams (ERD
 
 * There are three types of ERDs: conceptual, logical, and physical. These will be covered more in-depth as we advance through today's lesson.
 
+  ![conceptual-vs-logical-vs-physical](Images/conceptual-vs-logical-vs-physical.png)
+
 * An ERD defines entities, their attributes, and data types, as well as illustrates the overall design of a database.
 
 To break down these concepts further, discuss the following example.
