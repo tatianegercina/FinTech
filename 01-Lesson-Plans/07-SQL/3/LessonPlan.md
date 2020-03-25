@@ -581,9 +581,9 @@ Query the table to display the result.
 
   ![Images/modeling07.png](Images/modeling07.png)
 
-To reinforce the many-to-many relationship, point out that many students can take many courses.
+To reinforce the many-to-many relationship, point out that many agents can be assigned many regions.
 
-For the bonus, briefly explain that two outer joins can be performed to retrieve complete data on each student.
+For the bonus, briefly explain that two outer joins can be performed to retrieve complete data on each agent.
 
   ```sql
   SELECT *
@@ -632,7 +632,7 @@ Make sure all students have installed SQLAlchemy. Then open the unsolved Jupyter
   from sqlalchemy import create_engine
   ```
 
-* We can connect to the database by calling the `create_engine` function and passing the database URL. In this example, we use the `animals` database that was created earlier, along with the default database username and password.
+* We can connect to the database by calling the `create_engine` function and passing the database URL. In this example, we use the `estate_db` database that was created earlier, along with the default database username and password.
 
   ```python
   engine = create_engine("postgresql://postgres:postgres@localhost:5432/estate_db")
