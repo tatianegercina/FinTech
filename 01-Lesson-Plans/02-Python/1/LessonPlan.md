@@ -56,7 +56,7 @@ By the end of this class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -293,7 +293,7 @@ At this point, students may feel apprehensive about the upcoming coding activiti
 
 Set up the following real-world scenario to help explain variables:
 
-* Think about any time you've kept score for a game or watched someone else keep score. It can be an involved process. Scores change all the time. Tally marks and points have to be tracked and calculated, and you're always searching for pen and paper.
+* Think about any time you've kept score for a game or watched someone else keep score. It can be an involved process—you need paper and pencil, tally marks and points have to be tracked and calculated, and scores are always changing.
 
 * In this scenario, `score` is a variable that represents an ever-changing numeric number. We can track two scores in two different variables: `team_a_score` and `team_b_score`. Whenever Team A gets a point, the `team_a_score` variable should be incremented by 1. The same goes for Team B. At any moment, the two scores can be compared to find out who is winning.
 
