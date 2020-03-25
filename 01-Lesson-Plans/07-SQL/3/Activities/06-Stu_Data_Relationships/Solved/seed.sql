@@ -14,10 +14,10 @@ VALUES
 
 INSERT INTO agent_region_junction (agent_id, region_id)
 VALUES
-  (1,11, 'Northeast'),
-  (1,33, 'Midwest'),
-  (2,44, 'West'),
-  (2,33, 'Midwest'),
-  (3,22, 'South'),
-  (3,33, 'Midwest'),
-  (3,44, 'West');
+  (1,11),
+  (1,33),
+  (2,44),
+  (2,33),
+  (3,22),
+  (3,33),
+  (3,44);

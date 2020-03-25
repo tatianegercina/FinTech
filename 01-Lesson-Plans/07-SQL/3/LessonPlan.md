@@ -607,6 +607,10 @@ In this activity, students will learn how to create a connection from Python to 
 
 * [schema.sql](Activities/07-Ins_Connecting_Pandas_SQL/Solved/schema.sql)
 
+* [seed.sql](Activities/07-Ins_Connecting_Pandas_SQL/Solved/seed.sql)
+
+* [query.sql](Activities/07-Ins_Connecting_Pandas_SQL/Solved/query.sql)
+
 Tell students that the SQLAlchemy library allows interaction between PostgreSQL and Python. Students should install this library on their virtual environment by executing the following command in the terminal:
 
 ```bash
