@@ -291,11 +291,11 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
 
 Recap the following:
 
-* The `id` column is the primary key of the `animals_all` table, while `animal_id` is a foreign key in the `animals_location` table.
+* The `customer_id` column is the primary key of the `customer` table, while `customer_id` is a foreign key in the `customer_email` and `customer_phone` tables.
 
-* Both the `id` column in `animals_all` and the `animal_id` in `animals_location` are designed to contain the same data (the ID), even though the names are different.
+* The `customer_id` column in both the `customer_email` and `customer_phone` tables are designed to contain the same `customer_id` data in the `customer` table. This is due to the foreign key relationship in which the `customer_id` of the `customer` table is linked.
 
-* SQL will throw an error if an attempt is made to change an `id` in one table but not the other.
+* SQL will throw an error if an attempt is made to change an `customer_id` in one table but not the other.
 
 * Foreign key columns need to be named appropriately in order to clarify the data they are referring to.
 
@@ -303,11 +303,13 @@ Students should now understand how to create foreign keys, as well as how to use
 
 * Foreign keys allow tables to be consistent and avoid issues caused by inserting, deleting, or updating one table without making those same changes in the other tables.
 
-* When attempting to insert a row into the new table with an `id` that does not exist in the other table, an error will be returned.
+* When attempting to insert a row into the new table with an `customer_id` that does not exist in the other table, an error will be returned.
 
   ```sql
-  INSERT INTO animals_location (location, animal_id)
-  VALUES ('River', 5);
+  INSERT INTO customer_email
+  (email, customer_id)
+  VALUES
+  ('lucystern@gmail.com', 5);
   ```
 
 * Explain that the `animal_id` column is a foreign key that is assigned to the `id` column in the `animals_all` table. The `id` 5 doesn't exist in the `animals_all` table and therefore can't be referenced in the `animals_location` table.

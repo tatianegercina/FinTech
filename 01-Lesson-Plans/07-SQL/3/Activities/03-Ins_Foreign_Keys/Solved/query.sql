@@ -19,7 +19,7 @@ SELECT * FROM customer;
 
 -- 2. Create Customer Email table
 CREATE TABLE customer_email (
-  id SERIAL PRIMARY KEY,
+  email_id SERIAL PRIMARY KEY,
   email VARCHAR(30) NOT NULL,
   customer_id INTEGER NOT NULL,
   FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
