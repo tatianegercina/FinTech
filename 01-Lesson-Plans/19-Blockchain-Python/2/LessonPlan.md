@@ -426,7 +426,7 @@ Ask the students:
 
 Now, it's time for the students to send their own multi-output transactions!
 
-### 13. Students Do: Sending a multi-output transaction (15 min)
+### 13. Student Do: Sending a multi-output transaction (15 min)
 
 In this activity, students will write their own Python program that will send a multi-output transaction.
 
@@ -441,14 +441,14 @@ In this activity, students will write their own Python program that will send a 
 Have TAs circulate and ensure that students are not stuck.
 
 If students encounter issues, ensure that they have spendable UTXOs in their wallet.
-This means checking their balance on a block explorer like Blockcypher and ensuring that the incoming transactions
-are confirmed, and the wallet has a positive balance.
+This means checking their balance on a block explorer like Blockcypher, ensuring that the incoming transactions
+are confirmed, and that the wallet has a positive balance.
 
 ### 14. Instructor Do: Bitcoin Transactions Review (5 min)
 
 Congratulate the students on programming money!
 
-Ask the students the following questions:
+Ask students the following questions:
 
 * What are some benefits the UTXO system provides?
 
@@ -462,7 +462,7 @@ Ask the students the following questions:
 
  **Answer:** It is slightly more complex to understand, otherwise it is very powerful.
 
-* Can you send multiple transactions in parallel in UTXO based systems (i.e., two separate transactions being mined at the same time from the same wallet)?
+* Can you send multiple transactions in parallel in UTXO based systems (i.e., two separate transactions being mined at the same time, from the same wallet)?
 
  **Answer:** It depends. As long as you are spending different UTXOs in each transaction, you can send them at the same time.
 
@@ -538,12 +538,12 @@ This will output something like:
 
 * Explain that the `confirmations` field indicates how many blocks ago the UTXO arrived in this wallet.
 
-Now explain to the students that with these functions you can emulate a lot of the functionality that a block explorer provides,
+Now explain to students that with these functions you can emulate a lot of the functionality that a block explorer provides,
 and the more you explore the `bit` library, the more you'll be able to build one yourself.
 
 We are going to use it to build a multi-coin crypto wallet later, and these functions are critical to accomplishing that.
 
-### 16. Students Do: Fetching Network Data (10 min)
+### 16. Student Do: Fetching Network Data (10 min)
 
 Now, the students will practice using the functions you just demonstrated.
 
@@ -579,4 +579,4 @@ Ask the students the following questions:
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
