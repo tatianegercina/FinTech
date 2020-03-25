@@ -6,7 +6,8 @@ CREATE TABLE customer (
 );
 
 -- Populate that table
-INSERT INTO customer (first_name, last_name)
+INSERT INTO customer
+(first_name, last_name)
 VALUES
   ('Bob', 'Smith'),
   ('Jane', 'Davidson'),

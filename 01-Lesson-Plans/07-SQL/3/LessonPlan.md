@@ -241,7 +241,16 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
 
   ![customer_table](Images/Foreign_Keys11.png)
 
-* A new table named `animals_location` is created. The `FOREIGN KEY (animal_id)` identifies the `animal_id` column as a foreign key.
+* The `customer_email` table references the `customer` table in its column definition `FOREIGN KEY (customer_id) REFERENCES customer(customer_id)` where it establishes the `customer_id` column as a foreign key relationship to the `customer_id` column in the `customer` table.
+
+  ```sql
+  CREATE TABLE customer_email (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(30) NOT NULL,
+    customer_id INTEGER NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
+  );
+  ```
 
 * After the foreign key has been identified, `REFERENCES animals_all(id)` tells the table that `animal_id` references, or is linked to, the `id` column in the `animals_all` table.
 
