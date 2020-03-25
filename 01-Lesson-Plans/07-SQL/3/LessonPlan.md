@@ -764,11 +764,11 @@ Use the ERD slides and begin the discussion of entity relationship diagrams (ERD
 
 * An **entity relationship diagram**, or **ERD**, is a visual representation of entity relationships within a database.
 
+* An ERD defines entities, their attributes, and data types, as well as illustrates the overall design of a database.
+
 * There are three types of ERDs: conceptual, logical, and physical. These will be covered more in-depth as we advance through today's lesson.
 
   ![conceptual-vs-logical-vs-physical](Images/conceptual-vs-logical-vs-physical.png)
-
-* An ERD defines entities, their attributes, and data types, as well as illustrates the overall design of a database.
 
 To break down these concepts further, discuss the following example.
 
@@ -801,30 +801,52 @@ With the design tool open in your browser, demonstrate how to create a simple co
   ```sql
   Employee
   -
+  Employee_ID
+  Name
+  Age
+  Address
+  Zipcode
 
   Zipcode
   -
+  Zip_Code
+  City
+  State
 
   Employee_Email
   -
+  Email_ID
+  Employee_ID
+  Email
 
   Owners
   -
+  Owner_ID
+  First_Name
+  Last_Name
 
   Estates
   -
+  Address
+  Zip_Code
 
   Estate_Type
   -
+  Estate_Type
 
   Agents
   -
+  First_Name,
+  Last_Name
 
   Regions
   -
+  Region_Name
 
   Agent_Region_Junction
   -
+  Agent_ID
+  Region_ID
   ```
 
 * The result should appear as follows:
