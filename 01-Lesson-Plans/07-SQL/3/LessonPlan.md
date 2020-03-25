@@ -114,7 +114,7 @@ In this activity, students will practice their data normalization skills using t
 
 * [schema.sql](Activities/02-Stu_Data_Normalization/Solved/schema.sql)
 
-* [seed.sql](Activities/02-Stu_Data_Normalization/Solved/schema.sql)
+* [seed.sql](Activities/02-Stu_Data_Normalization/Solved/seed.sql)
 
 * [query.sql](Activities/02-Stu_Data_Normalization/Solved/query.sql)
 
@@ -122,11 +122,47 @@ Open [employee_normalization.csv](Activities/02-Stu_Data_Normalization/Resources
 
 * To achieve first normal form, multiple data points should not be included in the same column. For columns containing multiple emails, a new row will need to be created for each email.
 
-* The final product will look like [pets_cleaned.csv](Activities/02-Stu_Data_Normalization/Resources/pets_cleaned.csv).
-
 Next, using the code from the schema.sql and seed.sql files, create and populate the tables in pgAdmin. Then use the query.sql file to explain the following:
 
-* Second normal form requires the data to be in first normal form, which was accomplished in the previous step.
+* The `first_nf_employee` table separates out the data from `employee_normalization` into records with atomic or single column values.
+
+  ```sql
+  INSERT INTO employee_normalization
+  (employee_id, name, age, address, city, state, zip_code, email)
+  VALUES
+  (123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002, 'robert.bale51231@gmail.com, robbieman512@gmail.com'),
+  (456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami', 'FL', 33101, 'anya.strensa1412@gmail.com, soccergirl4251@gmail.com'),
+  (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 'San Francisco', 'CA', 94016, 'arnold.tolenski5121@gmail.com');
+
+  INSERT INTO first_nf_employee
+  (employee_id, name, age, address, city, state, zip_code, email)
+  VALUES
+  (123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002, 'robert.bale51231@gmail.com'),
+  (123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002, 'robbieman512@gmail.com'),
+  (456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami', 'FL', 33101, 'anya.strensa1412@gmail.com'),
+  (456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami', 'FL', 33101, 'soccergirl4251@gmail.com'),
+  (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 'San Francisco', 'CA', 94016, 'arnold.tolenski5121@gmail.com');
+  ```
+
+* In order to achieve second normal form, the data in `first_nf_employee` should be separated out so as to create multiple tables that represent the contextual domains, namely the employee and email domains; the records in each table should be unique. Note that the two tables are still connected by the common `employee_id` column.
+
+  ```sql
+  INSERT INTO second_nf_employee
+  (employee_id, name, age, address, city, state, zip_code)
+  VALUES
+  (123, 'Robert Bale', 32, '31 Pelham Drive', 'Houston', 'TX', 77002),
+  (456, 'Anya Strensa', 25, '142 Sunshine Road', 'Miami',' FL', 33101),
+  (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 'San Francisco', 'CA', 94016);
+
+  INSERT INTO second_nf_employee_email
+  (email_id, employee_id, email)
+  VALUES
+  (1, 123, 'robert.bale51231@gmail.com'),
+  (2, 123, 'robbieman512@gmail.com'),
+  (3, 456, 'anya.strensa1412@gmail.com'),
+  (4, 456, 'soccergirl4251@gmail.com'),
+  (5, 789, 'arnold.tolenski5121@gmail.com');
+  ```
 
 * All non-ID columns are dependent on the primary key.
 
