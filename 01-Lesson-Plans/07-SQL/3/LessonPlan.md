@@ -750,7 +750,7 @@ Walk through the solution and highlight the following:
 
 * The bar chart is created using `hvplot` and the `agent_region_df` DataFrame.
 
-  ![Brothers counting bar chart](Images/brothers_counting_chart.png)
+  ![regions_per_agent](Images/regions_per_agent.png)
 
 Answer any questions before moving on.
 
