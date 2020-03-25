@@ -144,7 +144,7 @@ Next, using the code from the schema.sql and seed.sql files, create and populate
   (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 'San Francisco', 'CA', 94016, 'arnold.tolenski5121@gmail.com');
   ```
 
-* In order to achieve second normal form, the data in `first_nf_employee` should be separated out so as to create multiple tables that represent the contextual domains, namely the employee and email domains; the records in each table should be unique. Note that the two tables are still connected by the common `employee_id` column.
+* In order to achieve second normal form, the data in `first_nf_employee` should be separated out to the `second_nf_employee` and `second_nf_employee_email` tables. Each table should represent a specific contextual domain, such as employee and email attributes, and should contain unique primary keys in which all non-ID columns are dependent. Note that the two tables are still connected by the common `employee_id` column.
 
   ```sql
   INSERT INTO second_nf_employee
@@ -164,23 +164,34 @@ Next, using the code from the schema.sql and seed.sql files, create and populate
   (5, 789, 'arnold.tolenski5121@gmail.com');
   ```
 
-* All non-ID columns are dependent on the primary key.
+* In order to achieve third normal form, the data in `second_nf_employee` should be separated out to the `third_nf_employee` and `third_nf_zipcode` tables. The reason for this is that the data within the `second_nf_employee` table contains dependencies on non-primary key attributes. In other words, the `city` and `state` columns are dependent on the `zip_code` column and therefore should be separated out into their own table.
 
-* The `owners` table will include each owner's name once, which is dependent on the primary key for the table.
+  ```sql
+  INSERT INTO third_nf_employee
+  (employee_id, name, age, address, zip_code)
+  VALUES
+  (123, 'Robert Bale', 32, '31 Pelham Drive', 77002),
+  (456, 'Anya Strensa', 25, '142 Sunshine Road', 33101),
+  (789, 'Arnold Tolenski', 43, '15 Silicon Avenue', 94016);
 
-* Next, a `pet_names` table is created, with each pet given a name and two IDs: one unique `id` for the pet itself and an `owner_id` that will link each pet to its correct owner.
-
-* Each table has values that depend on the primary key and are not repeated in the other table.
-
-* Finally, the two tables can be joined by connecting the `owners` table on `id` and the `pet_names` table on `owner_id`.
+  INSERT INTO third_nf_zipcode
+  (zip_code, city, state)
+  VALUES
+  (77002, 'Houston', 'TX'),
+  (33101, 'Miami', 'FL'),
+  (94016, 'San Francisco', 'CA');
+  ```
 
 Explain the bonus section of the activity:
 
-* A `service` table is created and data is inserted, each with a unique `service_type` and `id`.
+* Data normalization separated our initial unorganized data into several tables; however, if we needed to retrieve information represented from the initial dataset, we can perform JOINs on the normalized tables.
 
-* A new `pets_name_new` table is created, this time adding a `service_id` for each animal.
-
-* All three tables can be joined to replicate a view of the cleaned CSV.
+  ```sql
+  SELECT *
+  FROM third_nf_employee AS a
+  LEFT JOIN second_nf_employee_email AS b ON a.employee_id = b.employee_id
+  LEFT JOIN third_nf_zipcode AS c ON a.zip_code = c.zip_code;
+  ```
 
 ### 5. Instructor Do: Intro to Foreign Keys (15 min)
 
