@@ -252,16 +252,20 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
   );
   ```
 
-* After the foreign key has been identified, `REFERENCES animals_all(id)` tells the table that `animal_id` references, or is linked to, the `id` column in the `animals_all` table.
+  ![customer_email_table](Images/Foreign_Keys22.png)
+
+* Similarly, the `customer_phone` table references the `customer` table in its column definition `FOREIGN KEY (customer_id) REFERENCES customer(customer_id)` where it establishes the `customer_id` columns as a foreign key relationship to the `customer_id` column in the `customer` table.
 
   ```sql
-  CREATE TABLE animals_location (
-  id SERIAL PRIMARY KEY,
-  location VARCHAR(30) NOT NULL,
-  animal_id INTEGER NOT NULL,
-  FOREIGN KEY (animal_id) REFERENCES animals_all(id)
+  CREATE TABLE customer_phone (
+    id SERIAL PRIMARY KEY,
+    phone VARCHAR(30) NOT NULL,
+    customer_id INTEGER NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
   );
   ```
+
+  ![customer_phone_table](Images/Foreign_Keys33.png)
 
 * The table is then populated with data and checked with a `SELECT ALL` query.
 

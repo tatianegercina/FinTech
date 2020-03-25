@@ -9,45 +9,45 @@ CREATE TABLE customer (
 INSERT INTO customer
 (first_name, last_name)
 VALUES
-  ('Bob', 'Smith'),
-  ('Jane', 'Davidson'),
-  ('Jimmy', 'Bell'),
-  ('Stephanie', 'Duke');
+('Bob', 'Smith'),
+('Jane', 'Davidson'),
+('Jimmy', 'Bell'),
+('Stephanie', 'Duke');
 
 -- View our table
 SELECT * FROM customer;
 
 -- 2. Create Customer Email table
 CREATE TABLE customer_email (
-    id SERIAL,
-    email VARCHAR(30) NOT NULL,
-    customer_id INTEGER NOT NULL,
-    PRIMARY KEY (id),
-    FOREIGN KEY (customer_id) REFERENCES customer(id)
+  id SERIAL PRIMARY KEY,
+  email VARCHAR(30) NOT NULL,
+  customer_id INTEGER NOT NULL,
+  FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
 );
 
 -- Populate that table
-INSERT INTO customer_email (customer_id, email)
+INSERT INTO customer_email
+(customer_id, email)
 VALUES
-  (1, 'bobsmith@email.com'),
-  (2, 'jdavids@email.com'),
-  (3, 'jimmyb@email.com'),
-  (4, 'sd@email.com');
+(1, 'bobsmith@email.com'),
+(2, 'jdavids@email.com'),
+(3, 'jimmyb@email.com'),
+(4, 'sd@email.com');
 
 -- View our second table
 SELECT * FROM customer_email;
 
 -- Let's create a third table with a foreign key that references the first table
 CREATE TABLE customer_phone (
-    id SERIAL,
-    phone VARCHAR(30) NOT NULL,
-    customer_id INTEGER NOT NULL,
-    PRIMARY KEY (id),
-    FOREIGN KEY (customer_id) REFERENCES customer(id)
+  id SERIAL PRIMARY KEY,
+  phone VARCHAR(30) NOT NULL,
+  customer_id INTEGER NOT NULL,
+  FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
 );
 
 -- Populate that table
-INSERT INTO customer_phone (customer_id, phone)
+INSERT INTO customer_phone
+(customer_id, phone)
 VALUES
   (1, '435-344-2245'),
   (2, '332-776-4678'),
