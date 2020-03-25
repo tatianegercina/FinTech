@@ -110,13 +110,21 @@ In this activity, students will practice their data normalization skills using t
 
 ### 4. Instructor Do: Review Employee Normalizer (5 min)
 
-Open [pets.csv](Activities/02-Stu_Data_Normalization/Resources/pets.csv) and explain the first step of normalization:
+**Files:**
 
-* Make sure multiple data points are not included in the same column. For columns containing multiple pets, a new row will need to be created for each pet.
+* [schema.sql](Activities/02-Stu_Data_Normalization/Solved/schema.sql)
+
+* [seed.sql](Activities/02-Stu_Data_Normalization/Solved/schema.sql)
+
+* [query.sql](Activities/02-Stu_Data_Normalization/Solved/query.sql)
+
+Open [employee_normalization.csv](Activities/02-Stu_Data_Normalization/Resources/employee_normalization.csv) and explain the first step of normalization:
+
+* To achieve first normal form, multiple data points should not be included in the same column. For columns containing multiple emails, a new row will need to be created for each email.
 
 * The final product will look like [pets_cleaned.csv](Activities/02-Stu_Data_Normalization/Resources/pets_cleaned.csv).
 
-Next, open [schema.sql](Activities/02-Stu_Data_Normalization/Solved/schema.sql) in pgAdmin. Walkthrough the code and explain the following:
+Next, using the code from the schema.sql and seed.sql files, create and populate the tables in pgAdmin. Then use the query.sql file to explain the following:
 
 * Second normal form requires the data to be in first normal form, which was accomplished in the previous step.
 
