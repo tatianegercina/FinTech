@@ -334,9 +334,9 @@ Ask the students the following questions:
 
  **Answer:** It connects to Bitcoin networks and manages keys, much like web3.py works with Ethereum.
 
-* What does it mean for a transaction to have 6 confirmations?
+* What does it mean for a transaction to have six confirmations?
 
- **Answer:** There are 6 blocks that were mined after the transaction was mined.
+ **Answer:** There are six blocks that were mined after the transaction was mined.
  This threshold makes it virtually impossible to reverse.
 
 ---
