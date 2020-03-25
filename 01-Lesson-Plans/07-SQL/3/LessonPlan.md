@@ -100,15 +100,15 @@ Note that students may find 3NF a bit confusing. Encourage students to learn mor
 
 Slack out [normalization.md](Activities/01-Ins_Data_Normalization/Solved/normalization.md) as a cheat sheet for students before moving on.
 
-### 3. Student Do: Customer Email Normalizer (15 min)
+### 3. Student Do: Employee Normalizer (15 min)
 
 In this activity, students will practice their data normalization skills using the provided data.
 
-**File:** [customer_email.csv](Activities/02-Stu_Data_Normalization/Resources/customer_email.csv)
+**File:** [employee_normalization.csv](Activities/02-Stu_Data_Normalization/Resources/employee_normalization.csv)
 
 **Instructions:** [README.md](Activities/02-Stu_Data_Normalization/README.md)
 
-### 4. Instructor Do: Review Customer Email Normalizer (5 min)
+### 4. Instructor Do: Review Employee Normalizer (5 min)
 
 Open [pets.csv](Activities/02-Stu_Data_Normalization/Resources/pets.csv) and explain the first step of normalization:
 
