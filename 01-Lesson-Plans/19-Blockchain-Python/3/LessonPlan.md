@@ -2,9 +2,9 @@
 
 ### Overview
 
-Today's class, students will learn how BIP44 works in preparation for the homework.
+In today's class, students will learn how BIP44 works in preparation for the homework.
 
-The goal of today's class is for the students to understand how to talk to Ethereum and Bitcoin nodes using Python,
+The goal of today's class is for students to understand how to talk to Ethereum and Bitcoin nodes using Python,
 and to understand how wallets work across the blockchain ecosystem.
 
 ### Class Objectives
@@ -43,7 +43,7 @@ and to understand how wallets work across the blockchain ecosystem.
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [19.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2768585e-9656-444d-acbd-ab1f0053d1df) Note that this video may not reflect the most recent lesson plan.
@@ -52,7 +52,7 @@ and to understand how wallets work across the blockchain ecosystem.
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students back and refresh a bit on some blockchain wallet architecture.
+Welcome students back, and do a quick refresher on blockchain wallet architecture.
 
 Open the slides, cover the agenda for the day, then navigate to the beginning of the slideshow.
 
@@ -80,9 +80,9 @@ Then, explain that the two parts of a wallet are:
  This is the low-level cryptographic library.
 
 * **Blockchain Node Connectors** -- Code that connects to the blockchains that the wallet supports.
- This is the library that connects the wallet to live blockchain nodes, where signed transactions from the key manager are sent to the network.
+This is the library that connects the wallet to live blockchain nodes, where signed transactions from the key manager are sent to the network.
 
-Remind the class that we have already worked with several wallets already, that contain both of these parts.
+Remind the class that we have already worked with several wallets already that contain both of these parts.
 
 Ask the class to name a few, such as:
 
@@ -101,7 +101,7 @@ Elaborate:
 * Today we will learn the wallet standards that allow us to use the same master key across multiple blockchains,
  as well as how to integrate a universal key manager tool with Web3.py and Bit using our good pal, Python.
 
- This will allow us to have one Python wallet that supports both of the blockchains we've learned so far so that we no longer
+ This will allow us to have one Python wallet that supports both of the blockchains we've learned so far, so that we no longer
  have to use separate tools to send transactions!
 
 ### 2. Instructor Do: Intro to BIP39 (Mnemonic Phrases) (10 min)
@@ -114,7 +114,7 @@ First, let's begin to explain how these wallets work.
 * This is why we are able to use the same 12-word mnemonic phrase across Bitcoin and Ethereum.
  In fact, we can use it across many more blockchains than that!
 
-Now, let's talk about how these mnemonic phrases we've been using.
+Now, let's talk about these mnemonic phrases we've been using.
 
 * So far, we've been using English words as our crypto keys. How might this be possible?
 
@@ -125,13 +125,13 @@ Now, let's talk about how these mnemonic phrases we've been using.
 * This standard comes up with exact lists of 2048 words per language like English, Spanish, Japanese, etc.
  as well as a formula that allows you to take a set of those words and generate private keys with them.
 
-* That way, instead of having to remember your private key (which is a long and confusing alphanumeric string),
- or worrying about writing it down correctly, you can remember the exact words that generate the master key/master seed instead,
+* That way, instead of having to remember your private key (which is a long and confusing alphanumeric string)
+ or worrying about writing it down correctly, you can remember the exact words that generate the master key/master seed,
  and securely convert back and forth from seed to mnemonic phrase.
 
 Now, open up IanColeman's BIP39 online tool [here](https://iancoleman.io/bip39/).
 
-Tell the students to ignore most of the things you see here for now and pay attention to a couple of fields first.
+Tell the students to ignore most of the things you see here for now, and shift their attention to a couple of fields first.
 
 Paste your Instructor Mnemonic into the `BIP39 Mnemonic` field to allow the tool to derive addresses:
 
@@ -146,7 +146,7 @@ Point out the `BIP39 Seed` field that is generated.
 
 Now, it's time to have the class convert their mnemonics to a master seed.
 
-### 3. Students Do: Converting Mnemonic to Seed (10 min)
+### 3. Student Do: Converting Mnemonic to Seed (10 min)
 
 In this activity, students will download a local copy of the BIP39 online tool
 and paste their mnemonics into it to convert to a master seed.
