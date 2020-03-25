@@ -537,17 +537,25 @@ In this activity, students will create table schemata for students and available
 
 Explain that this activity required creating separate tables for agents and regions as well as creating a junction table to reflect the many-to-many relationship between the two tables.
 
-Use the schema.sql and seed.sql files to create and populate the `agents` and `regions` tables and explain the following:
+Walk through the schema.sql and seed.sql files to create and populate the `agents` and `regions` tables and explain the following:
+
+  ```sql
+  CREATE TABLE agents (
+    agent_id SERIAL PRIMARY KEY,
+    first_name VARCHAR NOT NULL,
+    last_name VARCHAR NOT NULL
+  );
+
+  -- Create a table of courses
+  CREATE TABLE regions (
+    region_id INTEGER NOT NULL PRIMARY KEY,
+    region_name VARCHAR NOT NULL
+  );
+  ```
 
 * Each table is given an ID as its primary key.
 
-* Fields are added for required attributes for the table.
-
-* Populate the tables with the `INSERT` queries, and then display the tables.
-
-  ![Images/modeling05.png](Images/modeling05.png)
-
-  ![Images/modeling06.png](Images/modeling06.png)
+* Each table has additional columns or fields that pertain to the specific context of the table. For example, the `first_name` and `last_name` columns relate to the `agent_id` and represent the real estate agent's first and last name.
 
 Next, do the same for the junction table, named `student_courses_junction`, and explain the code.
 

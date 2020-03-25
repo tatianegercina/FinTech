@@ -1,7 +1,7 @@
 -- Drop tables
-DROP TABLE IF EXISTS agents;
-DROP TABLE IF EXISTS regions;
-DROP TABLE IF EXISTS agent_region_junction;
+DROP TABLE IF EXISTS agents CASCADE;
+DROP TABLE IF EXISTS regions CASCADE;
+DROP TABLE IF EXISTS agent_region_junction CASCADE;
 
 -- Create a table of students
 CREATE TABLE agents (
@@ -20,6 +20,7 @@ CREATE TABLE regions (
 CREATE TABLE agent_region_junction (
   agent_id INTEGER NOT NULL,
   FOREIGN KEY (agent_id) REFERENCES agents(agent_id),
-  region_id INTEGER NOT NULL
+  region_id INTEGER NOT NULL,
+  FOREIGN KEY (region_id) REFERENCES regions(region_id),
   PRIMARY KEY (agent_id, region_id)
 );
