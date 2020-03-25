@@ -1,8 +1,8 @@
 ## Designing an ERD, Part 1
 
-In this activity, you will work with a partner given the following scenario:
+In this activity, you will work with a partner to create a mortgage lending database model:
 
-You are meeting with a gym owner who wants to organize his data in a database. Create a conceptual ERD for the gym owner.
+Create a conceptual ERD for a mortgage lending database.
 
 ### Instructions
 
@@ -10,7 +10,7 @@ You are meeting with a gym owner who wants to organize his data in a database. C
 
 * Create a diagram using the [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) tool.
 
-* When you are satisfied with the conceptual diagram, update it to a logical ERD by including column data types and primary keys.
+* When you are satisfied with the conceptual diagram, update it to a physical ERD by including column data types and primary keys.
 
 * Update your existing diagram to reflect the changes.
 
