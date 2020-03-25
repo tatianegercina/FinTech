@@ -632,7 +632,7 @@ Make sure all students have installed SQLAlchemy. Then open the unsolved Jupyter
 * We can connect to the database by calling the `create_engine` function and passing the database URL. In this example, we use the `animals` database that was created earlier, along with the default database username and password.
 
   ```python
-  engine = create_engine("postgresql://postgres:postgres@localhost:5432/animals")
+  engine = create_engine("postgresql://postgres:postgres@localhost:5432/estate_db")
   ```
 
 * The structure of the database URL is defined as follows:
@@ -642,18 +642,18 @@ Make sure all students have installed SQLAlchemy. Then open the unsolved Jupyter
 * To retrieve data from the database, we first need to define a SQL query that fetches the data we want.. In this example, all the rows from the `animals_all` table are retrieved.
 
   ```python
-  query = "SELECT * FROM animals_all"
+  query = "SELECT * FROM owners;"
   ```
 
 * The DataFrame is created by using the [`read_sql()` function](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_sql.html) in Pandas. This function reads a SQL query or database table into a DataFrame. Two parameters are passed: the `query` and the `engine` instance that were defined earlier.
 
   ```python
-  animals_df = pd.read_sql(query, engine)
+  owners_df = pd.read_sql(query, engine)
   ```
 
 Explain to students that once the data from the database is in a DataFrame, we can perform any data processing, analysis, or visualization task.
 
-* The `head()` from the `animals_df` DataFrame is shown. You can see that the data from the `animals_all` table is now loaded into the DataFrame.
+* The data from the `owners` DataFrame is shown. You can see that the data from the `owners` table is now loaded into the DataFrame.
 
   ![Sample DataFrame records](Images/animals_df_head.png)
 
@@ -661,16 +661,18 @@ Explain to students that once the data from the database is in a DataFrame, we c
 
   ```python
   query = """
-  SELECT owner_name, COUNT(owner_name) AS animals
-  FROM animals_all
-  GROUP BY owner_name
+  SELECT CONCAT(owners.first_name, ' ', owners.last_name) as owner_name, COUNT(estate_id) as estate_count
+  FROM owners
+  INNER JOIN estates_new ON owners.owner_id = estates_new.owner_id
+  INNER JOIN estate_type ON estates_new.estate_type_id = estate_type.estate_type_id
+  GROUP BY CONCAT(owners.first_name, ' ', owners.last_name)
   """
   ```
 
-* The `animals_count_df` DataFrame is created to read the query, and a bar chart is created using `hvplot` to present the results.
+* The `estate_count_df` DataFrame is created to read the query, and a bar chart is created using `hvplot` to present the results.
 
   ```python
-  animals_count_df = pd.read_sql(query, engine)
+  estate_count_df = pd.read_sql(query, engine)
   ```
 
   ![Sample bar chart](Images/sample_bar_char_sqlalchemy.png)

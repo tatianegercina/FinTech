@@ -8,8 +8,3 @@ SELECT *
 FROM agents a
 LEFT JOIN agent_region_junction b ON a.agent_id = b.agent_id
 LEFT JOIN regions c ON b.region_id = c.region_id;
-
-
-
-
-
