@@ -252,8 +252,6 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
   );
   ```
 
-  ![customer_email_table](Images/Foreign_Keys22.png)
-
 * Similarly, the `customer_phone` table references the `customer` table in its column definition `FOREIGN KEY (customer_id) REFERENCES customer(customer_id)` where it establishes the `customer_id` columns as a foreign key relationship to the `customer_id` column in the `customer` table.
 
   ```sql
@@ -265,11 +263,31 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
   );
   ```
 
+* Populating the tables respectively and querying the tables exemplifies the foreign key relationship.
+
+  ```sql
+  INSERT INTO customer_email
+  (customer_id, email)
+  VALUES
+  (1, 'bobsmith@email.com'),
+  (2, 'jdavids@email.com'),
+  (3, 'jimmyb@email.com'),
+  (4, 'sd@email.com');
+  ```
+
+  ```sql
+  INSERT INTO customer_phone
+  (customer_id, phone)
+  VALUES
+  (1, '435-344-2245'),
+  (2, '332-776-4678'),
+  (3, '221-634-7753'),
+  (4, '445-663-5799');
+  ```
+
+  ![customer_email_table](Images/Foreign_Keys22.png)
+
   ![customer_phone_table](Images/Foreign_Keys33.png)
-
-* The table is then populated with data and checked with a `SELECT ALL` query.
-
-  ![animals table](Images/Foreign_Keys2.png)
 
 Recap the following:
 

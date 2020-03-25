@@ -49,10 +49,10 @@ CREATE TABLE customer_phone (
 INSERT INTO customer_phone
 (customer_id, phone)
 VALUES
-  (1, '435-344-2245'),
-  (2, '332-776-4678'),
-  (3, '221-634-7753'),
-  (4, '445-663-5799');
+(1, '435-344-2245'),
+(2, '332-776-4678'),
+(3, '221-634-7753'),
+(4, '445-663-5799');
 
 -- View our third table
 SELECT * FROM customer_phone;
