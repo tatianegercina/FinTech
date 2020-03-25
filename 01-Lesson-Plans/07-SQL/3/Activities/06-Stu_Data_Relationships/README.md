@@ -1,34 +1,32 @@
-## Data Modeling
+# Data Modeling
 
 In this activity, you will design a database model.
 
-### Instructions
+## Instructions
 
-You are the database consultant at a new university. Your job is to design a database model for the registrar. The database will keep track of information on students, courses offered by the university, and the courses each student has taken.
+You are a database consultant at a national real estate firm. Your job is to design a database model for the real estate agents and their designated regions. The database will keep track of information on agents, regions in which the firm operates, and the regions each real estate agent is assigned.
 
-* Begin by creating a new database named `university_db`.
+* Begin by creating a new database named `agent_db`.
 
-* Create a `students` table that keeps track of the following:
+* Create a `agent` table that keeps track of the following:
 
-  * Unique ID number of each student
+  * Unique ID number of each agent.
 
-  * Last and first names of each student
+  * First and last names of each agent.
 
-* Create a `courses` table that keeps track of the following:
+* Create a `region` table that keeps track of the following:
 
-  * Unique ID number of each course
+  * Unique ID number of each region.
 
-  * Name of each course
+  * Name of each region.
 
-* Create a `student_courses_junction` that keeps track of the following:
+* Create a `agent_region_junction` table that keeps track of the following:
 
-  * All courses that have been taken by each student
-
-  * Term in which a course was taken by a student (spring or fall)
+  * All regions that have been assigned to each agent.
 
 * Determine the data model that is appropriate here: one to one, one to many, or many to many.
 
-### Bonus
+## Bonus
 
 **Note:** Complete the bonus if time allows.
 
@@ -36,4 +34,4 @@ Join and query the tables to get all data on the students.
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
