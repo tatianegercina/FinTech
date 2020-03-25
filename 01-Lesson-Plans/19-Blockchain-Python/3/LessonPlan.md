@@ -172,12 +172,12 @@ Ask the students the following questions:
 
 * Why did we download the offline version of the BIP39 tool?
 
-  * **Answer:** It is more secure since the online version can still get hacked.
+  * **Answer:** It is more secure, since the online version can still get hacked.
  It is safer to download the open-source code straight from Github and run it locally.
 
 ### 5. Instructor Do: Back to BIP32 (10 min)
 
-Now let's actually generate some Bitcoin keys from this!
+Now, let's actually generate some Bitcoin keys from this!
 
 Back in the BIP39 tool, scroll down to the `Derivation Path` section and click the `BIP32` tab.
 
@@ -198,7 +198,7 @@ Point out the `Path` column on the left. Explain to the students:
 * This is the "derivation path" that is applied to the master seed. By applying this path to the master seed,
  the address and public/private keypair to the right is generated.
 
-* By incrementing the derivation path by 1, you can generate a new address and keypair.
+* By incrementing the derivation path by one (1), you can generate a new address and keypair.
 
 Ask the students:
 
@@ -209,23 +209,23 @@ Allow them to answer, then explain:
 * Since Bitcoin is UTXO native, we can generate a new address for every transaction.
  This allows us to make the accounting very easy.
 
-* Because we own all of the keys anyway, we can sign the UTXOs that belong to each of the "child" keys and spend from them all simultaneously.
+* Because we own all of the keys anyway, we can sign the UTXOs that belong to each of the "child" keys and spend from all of them simultaneously.
 
-* Let's say you were a merchant selling goods. For every customer purchase, you can increment the path by 1 and generate a new address for that customer to pay you through.
+* Let's say you were a merchant selling goods. For every customer purchase, you can increment the path by one, and generate a new address for that customer to pay you through.
 
 Ask the students:
 
 * Why might you want to do that?
 
-  * **Answer:** That way, customers can't see your entire balance and purchase history!
+  * **Answer:** Because customers can't see your entire balance and purchase history!
 
-  * **Answer:** Accounting becomes much easier, as each address becomes a receipt of sorts containing that transaction only.
+  * **Answer:** Accounting becomes much easier, as each address becomes a receipt of sorts, containing that transaction only.
 
   * **Answer:** Bitcoin is pseudonymous, not anonymous, so generating new addresses helps preserve privacy.
 
-Now, time for the students to derive some keys of their own!
+Now it's time for students to derive some keys of their own!
 
-### 6. Students Do: Deriving BIP32 Keys (HD Wallets) (10 min)
+### 6. Student Do: Deriving BIP32 Keys (HD Wallets) (10 min)
 
 Have the students derive some Bitcoin keys and check their addresses.
 They should all have empty balances, as we are generating mainnet Bitcoin keys, not the testnet keys used earlier this week.
@@ -276,7 +276,7 @@ Scroll down to the list of keys like before.
 
 Point out:
 
-* While these are all different keys than from BIP32, they are still mainnet Bitcoin keys.
+* While these are all different keys from BIP32, they are still mainnet Bitcoin keys.
 
 * Let's change that by creating some testnet Bitcoin keys.
 
@@ -292,7 +292,7 @@ Navigate back down to the derived addresses. You should now see the same testnet
 
 * Now, let's generate some Ethereum keys!
 
-Scroll back up to the `Coin` dropdown and select `ETH - Ethereum` .
+Scroll back up to the `Coin` dropdown and select `ETH - Ethereum`.
 
 Back down at the derived addresses section, you should see a list of Ethereum addresses:
 
@@ -317,9 +317,9 @@ Explain to the students that this is the sister-standard that contains the list 
 * This contains the data needed to get a coin registered onto this standard.
  New blockchains need to have a PR opened on this SLIP44 standard, and other wallets will use this list for integration.
 
-That was quite a lot, let's have the students get some practice generating keys for multiple coins!
+We've covered a lot; now let's have the students get some practice generating keys for multiple coins!
 
-### 9. Students Do: Deriving Multiple Coins with BIP44 (10 min)
+### 9. Student Do: Deriving Multiple Coins with BIP44 (10 min)
 
 Now it's time for the students to derive multiple coins from their mnemonics.
 
