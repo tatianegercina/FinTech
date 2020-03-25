@@ -150,21 +150,17 @@ Use the slideshow to go over the course agenda and timeline.
 
 * **Weeks 23–24:** Students are tasked with their final project.
 
-@@@arturo-revisions
-
 Explain to students that the skills and knowledge covered in the curriculum may translate into real jobs by the end of the Boot Camp.
 
-Engage students by presenting some of the activities and homework assignments that will allow them to apply real-world FinTech job skills. Highlight the following.
+Engage students by presenting some of the activities and homework assignments that will allow them to apply real-world FinTech job skills. Highlight the following:
 
 * Using Python, you will learn how to fetch stock information from APIs to create live applications to analyze stock movement.
 
 * You will learn how to analyze time-series data to create predictive models for stock prices.
 
-* Throughout the course, you will learn the basics behind the most common machine learning techniques such as linear regression, logistic regression, KNN, and k-means clustering, to apply these algorithms to classic challenges in the financial services sector.
+* Throughout the course, you will learn the basics behind the most common machine learning techniques, such as linear regression, logistic regression, KNN, and k-means clustering, to apply these algorithms to classic challenges in the financial services sector.
 
-* Also, you will learn how to apply natural language processing to analyze sentiment scores for cryptocurrency news.
-
-@@@
+* You will also learn how to apply natural language processing to analyze sentiment scores for cryptocurrency news.
 
 Answer any questions before moving on.
 
