@@ -6,29 +6,17 @@ In this activity, you will be organizing improperly stored employee data into th
 
 * In pgAdmin, create a new database called `normalization_db`.
 
-* Create a new table `customer_email` according to the provided [customer_email.csv](Resources/customer_email.csv), then import the csv into the `customer_email` table.
+* Create a new table `employee_normalization` according to the provided [employee_normalization.csv](Resources/employee_normalization.csv), then import the csv into the `employee_normalization` table.
 
-* Create a new table `first_nf_customer_email` and insert the `customer_email` data according to 1NF data normalization standards.
+* Create a new table `first_nf_employee` and that organizes the data in `employee_normalization` according to first normal form standards.
 
-* Create two new tables `second_nf_customer` and `second_nf_customer_email` 
+* Then, create two new tables `second_nf_employee` and `second_nf_employee_email` that organizes the data in `first_nf_employee` according to second normal form standards.
 
-* Using SQL, create the following tables with continued normalized practices:
-
-  * A table for owners that has an ID and the owner's name
-
-  * A table for pet names that has two IDs (one being the owner's name) and the pet's name.
-
-* Using the CSV file as guide, insert the data into respective tables.
-
-  **Hint:** Be sure that each table has a *unique primary key*.
+* Lastly, create two new tables `third_nf_employee` and `third_nf_zipcode` that organizes the data in `second_nf_employee` according to third normal form standards.
 
 ### Bonus
 
-* Create a `service` table that displays the different types of services that are offered.
-
-* Create a `pet_names_updated` table that takes an ID that will connect to the `services` table.
-
-* Join all three tables.
+* Join the `third_nf_employee`, `second_nf_employee_email` and `third_nf_zipcode` tables.
 
 ---
 
