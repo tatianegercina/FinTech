@@ -29,7 +29,7 @@ CREATE TABLE estate_type (
   estate_type VARCHAR(255)
 );
 
--- Create new pet tables that takes a service id
+-- Create new estates table that takes a estate_type id
 CREATE TABLE estates_new (
   estate_id INT NOT NULL PRIMARY KEY,
   owner_id INT NOT NULL,
