@@ -217,9 +217,10 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
 
   ```sql
   CREATE TABLE customer (
-    customer_id SERIAL PRIMARY KEY,
-    first_name VARCHAR(255) NOT NULL,
-    last_name VARCHAR(255) NOT NULL
+    customer_id SERIAL,
+    first_name VARCHAR(30) NOT NULL,
+    last_name VARCHAR(30) NOT NULL,
+    PRIMARY KEY (customer_id)
   );
   ```
 
@@ -245,10 +246,11 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
 
   ```sql
   CREATE TABLE customer_email (
-    id SERIAL PRIMARY KEY,
-    email VARCHAR(30) NOT NULL,
+    email_id SERIAL,
     customer_id INTEGER NOT NULL,
-    FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
+    email VARCHAR(30) NOT NULL,
+    PRIMARY KEY (email_id),
+    FOREIGN KEY (customer_id) REFERENCES customer(id)
   );
   ```
 
@@ -256,10 +258,11 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
 
   ```sql
   CREATE TABLE customer_phone (
-    id SERIAL PRIMARY KEY,
-    phone VARCHAR(30) NOT NULL,
-    customer_id INTEGER NOT NULL,
-    FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
+      customer_phone_id SERIAL,
+      phone VARCHAR(30) NOT NULL,
+      customer_id INTEGER NOT NULL,
+      PRIMARY KEY (customer_phone),
+      FOREIGN KEY (customer_id) REFERENCES customer(id)
   );
   ```
 
