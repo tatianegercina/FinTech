@@ -796,29 +796,32 @@ Open [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com
 With the design tool open in your browser, demonstrate how to create a simple conceptual ERD using the following text:
 
   ```sql
-  Gym
+  Employee
   -
-  Gym_Name
-  Address
-  City
+
   Zipcode
-
-  Trainers
   -
-  First_Name
-  Last_Name
 
-  Members
+  Employee_Email
   -
-  First_Name
-  Last_Name
-  Address
-  City
 
-  Payments
+  Owners
   -
-  CreditCard_Info
-  Billing_Zip
+
+  Estates
+  -
+
+  Estate_Type
+  -
+
+  Agents
+  -
+
+  Regions
+  -
+
+  Agent_Region_Junction
+  -
   ```
 
 * The result should appear as follows:
@@ -834,33 +837,59 @@ With the design tool open in your browser, demonstrate how to create a simple co
 Transition from the conceptual ERD to a logical ERD. Using the following lines, update your current entities with data types using the Quick Database Diagrams tool.
 
   ```sql
-  Gym
+  Employee
   -
-  ID INTEGER PK
-  Gym_Name VARCHAR
-  Address VARCHAR
-  City VARCHAR
-  Zipcode VARCHAR
+  Employee_ID
+  Name
+  Age
+  Address
+  Zipcode
 
-  Trainers
+  Zipcode
   -
-  ID INTEGER PK
-  First_Name VARCHAR
-  Last_Name VARCHAR
+  Zip_Code
+  City
+  State
 
-  Members
+  Employee_Email
   -
-  ID INTEGER PK
-  First_Name VARCHAR
-  Last_Name VARCHAR
-  Address VARCHAR
-  City VARCHAR
+  Email_ID
+  Employee_ID
+  Email
 
-  Payments
+  Owners
   -
-  ID INTEGER PK
-  CreditCard_Info INTEGER
-  Billing_Zip INTEGER
+  Owner_ID
+  First_Name
+  Last_Name
+
+  Estates
+  -
+  Estate_ID
+  Owner_ID
+  Address
+  Zip_Code
+
+  Estate_Type
+  -
+  Estate_Type_ID
+  Estate_Type
+
+  Agents
+  -
+  Agent_ID,
+  First_Name,
+  Last_Name
+
+  Regions
+  -
+  Region_ID
+  Region_Name
+
+  Agent_Region_Junction
+  -
+  Agent_ID
+  Region_ID
   ```
 
 * By defining the column types, this model has become more complex and is now considered a **logical model**.
