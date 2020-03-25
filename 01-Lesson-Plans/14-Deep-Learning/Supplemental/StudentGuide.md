@@ -56,7 +56,7 @@ The original neural network and building block for modern neural networks, is th
 
 <details>
 <summary>Are Neural Networks considered supervised learning or unsupervised learning?</summary><br>
-Neural networks can fall into both categories! Neural networks can run unsupervised learning jobs such as clustering algorithms or for NLP tasks, such as mapping out patterns in text. They can also be used for supervised learning jobs such as image classification and object detection.
+Neural networks can fall into both categories! Neural networks can run unsupervised learning jobs such as  mapping ot patterns in text for NLP, or for clustering algorithms. They can also be used for supervised learning jobs such as image classification and object detection.
 
 <blockquote>
 <details>
@@ -84,7 +84,7 @@ An example of unsupervised learning would be to use website purchase data to gro
 <details>
 <summary>Activation Functions</summary><br>
 
-Because the neuron predicts a rigid binary outcome, but reality is not always so cut and dry, the activation function was implemented. Using an example from the lesson plan, let's say a father is choosing a movie on Netflix to watch with his child. The neural network might predict that since this person is watching with a child, they will want an animated film. But in reality we have more than one input variable. What if the father wants to watch a kid friendly action film, or maybe they prefer new releases to older nostalgic films?  The reality of life is not so cut and dry as to have simple binary outcomes. The activation function adds a dose of reality to the neuron's decisions. It is a mathematical function with a characteristic S-shaped curve, also called the sigmoid curve, which causes the outcome to be a probability rather than a strict `either or` output.
+Because the neuron predicts a rigid binary outcome, but reality is not always so cut and dry, the activation function was implemented. Using an example from the lesson plan, let's say a father is choosing a movie on Netflix to watch with his child. The neural network might predict that since this person is watching with a child, they will want an animated film, but in reality we have more than one input variable. What if the father wants to watch a kid friendly action film, or maybe they prefer new releases to older nostalgic films?  The reality of life is not so cut and dry as to have simple binary outcomes. The activation function adds a dose of reality to the neuron's decisions. It is a mathematical function with a characteristic S-shaped curve, also called the sigmoid curve, which causes the outcome to be a probability rather than a strict `either or` output.
 
 Some of the most popular activation functions include sigmoid, tanh, and relu. A full list of activation functions provided by keras can be found [here.](https://keras.io/activations/)
 </details>
