@@ -951,12 +951,19 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
 
 * In the line containing `FK - `, the hyphen signifies a one-to-one relationship between the `Employee` and `Zipcode` tables, where each zip code in the `Employee` table is linked to one zip code in the `Zipcode` table.
 
-* Many types of relationships between entities can be illustrated with symbols, such as:
+* Many types of relationships between entities can be illustrated with various symbols. For example, the `Employee_Email` table has a many-to-one relationship with the `Employee` table via the employee_id foreign key. Therefore, the symbol describing the relationship is `>-`.
 
   ![entity-relationships.png](Images/entity-relationships.png)
 
+  ```sql
+  Employee_Email
+  -
+  email_id PK
+  employee_id FK >- Employee.employee_id
+  email
+  ```
 
-
+* After adding in the datatypes, primary keys, and foreign key relationships, the diagram should look like the following.
 
     ![logical-erd.png](Images/logical-ERD.png)
 
