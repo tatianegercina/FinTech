@@ -10,7 +10,7 @@ This guide serves as a step by step process for setting up and validating the [`
 
 ## Screencast Videos
 
-If you need additional help in the installation process, you can follow the step by step video guides in the following links.
+If you need additional help in the installation process, you can follow the step-by-step video guides in the following links.
 
 ### Microsoft Windows Users
 
@@ -74,11 +74,11 @@ Once the `web3.py` and `bit` modules are downloaded and installed, verify that b
 
 ## Troubleshooting
 
-It can be frustrating when packages do not install correctly, therefore use the below approaches to troubleshoot any installation or usage issues.
+It can be frustrating when packages do not install correctly. Therefore, use the below approaches to troubleshoot any installation or usage issues.
 
 ### Install Microsoft Visual C++ Build Tools In Windows
 
-In some cases, the `Web3.py` library may fail to install in Microsoft Windows due to the need for Microsoft Visual C++ Build Tools. In such an event, following the below steps to resolve the issue:
+In some cases, the `Web3.py` library may fail to install in Microsoft Windows, due to the need for Microsoft Visual C++ Build Tools. In such an event, following the below steps to resolve the issue:
 
 1. Go to: https://visualstudio.microsoft.com/downloads/
 
@@ -90,13 +90,13 @@ In some cases, the `Web3.py` library may fail to install in Microsoft Windows du
 
 4. Run the package file and select the C++ build tools option. Then click install.
 
-5. This process takes about 15 minutes
+5. This process takes about 15 minutes.
 
 ### Issues Installing `bit` or `web3` After Installing the Microsoft Visual C++ Build Tools In Windows
 
 Along the installation process of `bit` or `web3` you may experience an issue related with the Microsoft Visual C++ Build tools in Windows if you update Windows after installing the build tools, and before installing these Python libraries.
 
-You may see an error message that states that `wheel is not supported`, the solution for this issue is to uninstall and reinstall the Microsoft Visual C++ Build Tools.
+You may see an error message that states that `wheel is not supported`; the solution for this issue is to uninstall and reinstall the Microsoft Visual C++ Build Tools.
 
 ### Update Conda Environment
 
@@ -140,4 +140,4 @@ An out-of-date Anaconda environment can create issues when trying to install new
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
