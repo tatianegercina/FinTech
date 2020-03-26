@@ -1014,15 +1014,9 @@ Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams
 
   ![customer.png](Images/customer.png)
 
-* Transitioning a conceptual diagram to a logical diagram requires more information. Data types are defined, and primary keys are established by adding ID rows to the tables, such as in the `Trainers` table:
-
-  ![trainers.png](Images/trainers.png)
-
-  **Note**: Remember that the `PK` acronym stands for primary key.
-
 Copy and paste the remaining text from `schema.txt` to create the additional tables. The final product should appear as follows:
 
-  ![logical-ERD.png](Images/logical-ERD.png)
+  ![stu-logical-ERD.png](Images/stu-logical-ERD.png)
 
 Ask students if they created any other tables or connections, as there are many possible solutions in addition to those included here.
 
