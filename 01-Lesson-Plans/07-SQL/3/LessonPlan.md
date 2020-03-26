@@ -856,64 +856,68 @@ Open [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com
 
   **Note:** Another diagraming tool called [draw.io](http://draw.io/) can be used to quickly and easily create simple conceptual data models.
 
-Transition from the conceptual ERD to a logical ERD. Using the following lines, update your current entities with data types using the Quick Database Diagrams tool.
+Begin transition from the conceptual ERD to a logical ERD. Using the following lines, update your current entities with data types using the Quick Database Diagrams tool.
 
   ```sql
   Employee
   -
-  Employee_ID PK
+  Employee_ID
   Name
   Age
   Address
-  Zipcode FK - Zipcode.Zip_Code
+  Zipcode
 
   Zipcode
   -
-  Zip_Code PK
+  Zip_Code
   City
   State
 
   Employee_Email
   -
-  Email_ID PK
-  Employee_ID FK - Employee.Employee_ID
+  Email_ID
+  Employee_ID
   Email
 
   Owners
   -
-  Owner_ID PK
+  Owner_ID
   First_Name
   Last_Name
 
   Estates
   -
-  Estate_ID PK
-  Owner_ID FK - Owners.Owner_ID
-  Estate_Type FK - Estate_Type.Estate_Type_ID
+  Estate_ID
+  Owner_ID
+  Estate_Type
   Address
-  Zip_Code FK - Zipcode.Zip_Code
+  Zip_Code
 
   Estate_Type
   -
-  Estate_Type_ID PK
+  Estate_Type_ID
   Estate_Type
 
   Agents
   -
-  Agent_ID PK,
-  First_Name,
+  Agent_ID
+  First_Name
   Last_Name
 
   Regions
   -
-  Region_ID PK
+  Region_ID
   Region_Name
 
   Agent_Region_Junction
   -
-  Agent_ID FK - Agents.Agent_ID
-  Region_ID FK - Regions.Region_ID
+  Agent_ID
+  Region_ID
   ```
+
+* The result should appear as follows:
+
+  ![logical-erd-datatypes](Images/logical-erd-datatypes.png)
 
 * By defining the column types, this model has become more complex and is now considered a **logical model**.
 
