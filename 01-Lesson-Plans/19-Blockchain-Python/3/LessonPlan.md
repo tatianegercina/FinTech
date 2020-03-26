@@ -386,11 +386,11 @@ Before starting, ensure that everyone has PHP7 installed on their systems. The q
 Students can check their PHP installation by typing `php -v` in the terminal, which should output version `7.3`.
 
 * Explain to the class that while this tool is written in PHP, we just need it to be installed to run it,
- similarly, how Python needs to be installed to run Python programs.
+ similarly to how Python needs to be installed to run Python programs.
 
 * We will not be writing any PHP ourselves, but rather capturing the output of this tool inside of Python.
 
-First, share the `hd-wallet-derive` tool's [Github page](https://github.com/dan-da/hd-wallet-derive#installation-and-running)
+First, share the `hd-wallet-derive` tools [Github page](https://github.com/dan-da/hd-wallet-derive#installation-and-running)
 and have them navigate to the `Installation and Running` section.
 
 Have the students copy and paste the `Basics` section, ignoring the Ubuntu requirements (unless the student is running Ubuntu)
@@ -405,7 +405,7 @@ php -r "readfile('https://getcomposer.org/installer');" | php
 php -d pcre.jit=0 composer.phar install
 ```
 
-Modify the last line to add the `-d pcre.jit=0` parameter to avoid some issues that may arise in Mac OS X. Run these commands and install the dependencies. Have the students run the example given once the installation completes.
+Modify the last line to add the `-d pcre.jit=0` parameter to avoid some issues that may arise in Mac OS X. Run these commands and install the dependencies. Once the installation completes, have students run the example.
 
 Ensure that everyone has successfully installed and can run the `hd-wallet-derive` tool from the command line.
 Once everyone has successfully installed the tool, have everyone `cd ..` into the directory containing the `hd-wallet-derive` folder.
