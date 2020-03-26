@@ -4,8 +4,6 @@ In this activity, you will create and populate two new tables with foreign keys 
 
 ## Instructions
 
-**Note:** Make sure all tables have primary keys that increment with each new row of data.
-
 Complete the following:
 
 * Use the provided CSV files to create and populate the `owners` and `estates` tables:
