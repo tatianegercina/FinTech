@@ -1104,7 +1104,7 @@ Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams
 
 * Transitioning a logical ERD to a physical ERD is fairly simple. Assuming the tables, column names, primary keys, and foreign key relationships have already been set, all that is left for transitioning a logical data model to a physical data model is adding the appropriate column data types.
 
-* ![stu-physical-erd](Images/stu-physical-erd.png)
+  ![stu-physical-erd](Images/stu-physical-erd.png)
 
 Export the full schema from Quick Database Diagrams as a PostgreSQL file to demonstrate how schema creation code is converted to PostgreSQL code.
 
@@ -1116,11 +1116,47 @@ Export the full schema from Quick Database Diagrams as a PostgreSQL file to demo
 
 * Open the new file with VS Code to view the SQL code. Note how the table and column names are enclosed in quotation marks. These quotation marks will need to be included in queries (for example ,`SELECT * FROM "Members";`) or removed from the code, if preferred.
 
-* Note that each table has an `ALTER TABLE` statement. This adds a foreign key to each table.
+  ```sql
+  CREATE TABLE "Customer" (
+    "customer_id" INT   NOT NULL,
+    "first_name" VARCHAR(255)   NOT NULL,
+    "last_name" VARCHAR(255)   NOT NULL,
+    "gender" VARCHAR(255)   NOT NULL,
+    "age" INT   NOT NULL,
+    "address" VARCHAR(255)   NOT NULL,
+    "city" VARCHAR(255)   NOT NULL,
+    "state" VARCHAR(255)   NOT NULL,
+    "zip_code" INT   NOT NULL,
+    CONSTRAINT "pk_Customer" PRIMARY KEY (
+        "customer_id"
+     )
+  );
+  ```
 
 * The `CONSTRAINT` line contained in the table creation code is automatically generated upon exporting the diagram and does not need to be altered.
 
-Return to pgAdmin in the browser and create a new database called `gym`.
+  ```sql
+  CONSTRAINT "pk_Customer" PRIMARY KEY (
+        "customer_id"
+  ```
+
+* Note that each table has an `ALTER TABLE` statement. This adds a foreign key to each table.
+
+  ```sql
+  ALTER TABLE "Sales" ADD CONSTRAINT "fk_Sales_payment_id" FOREIGN KEY("payment_id")
+  REFERENCES "Payments" ("payment_id");
+
+  ALTER TABLE "Sales" ADD CONSTRAINT "fk_Sales_mortgage_id" FOREIGN KEY("mortgage_id")
+  REFERENCES "Mortgage" ("mortgage_id");
+
+  ALTER TABLE "Payments" ADD CONSTRAINT "fk_Payments_bank_routing_number" FOREIGN KEY("bank_routing_number")
+  REFERENCES "Banks" ("bank_routing_number");
+
+  ALTER TABLE "Payments" ADD CONSTRAINT "fk_Payments_customer_id" FOREIGN KEY("customer_id")
+  REFERENCES "Customer" ("customer_id");
+  ```
+
+Return to pgAdmin in the browser and create a new database called `mortgage_db`.
 
 * Open a query tool and paste in the newly downloaded SQL code to create the tables defined in the diagram.
 
