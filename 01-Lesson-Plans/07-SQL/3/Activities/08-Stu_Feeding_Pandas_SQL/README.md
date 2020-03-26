@@ -17,3 +17,7 @@ Using the `university` database that you created before, perform the following t
 Your bar chart should look like this.
 
 ![Sample brothers bart chart](Images/brothers_bar_chart.png)
+
+---
+
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

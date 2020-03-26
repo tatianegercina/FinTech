@@ -1,8 +1,8 @@
-## Designing an ERD, Part 2
+# Designing an ERD, Part 2
 
 In this activity, you and your partner will continue designing a database model for the mortgage lending database by transitioning your logical ERD created in the previous activity to a physical ERD.
 
-### Instructions
+## Instructions
 
 * Using the [starter code](Unsolved/schema.txt) provided, return to [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) and transition your logical ERD physical ERD by defining the data types of columns and the type of entity relationships between tables.
 
@@ -18,7 +18,7 @@ In this activity, you and your partner will continue designing a database model 
 
 * Open the file you downloaded with VS Code. Paste the code in pgAdmin, and then execute the code.
 
-### Hints
+## Hints
 
 * Foreign keys are added to each table represented by the `FK` acronym, followed by the relationship, e.g., `OrderID INT FK >- Order.OrderID`.
 
@@ -46,4 +46,4 @@ In this activity, you and your partner will continue designing a database model 
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

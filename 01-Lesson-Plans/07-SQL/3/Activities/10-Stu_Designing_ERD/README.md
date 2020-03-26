@@ -1,8 +1,8 @@
-## Designing an ERD, Part 1
+# Designing an ERD, Part 1
 
 In this activity, you will work with a partner to create a mortgage lending database model.
 
-### Instructions
+## Instructions
 
 Create a logical ERD for a mortgage lending database.
 
@@ -24,10 +24,10 @@ Create a logical ERD for a mortgage lending database.
 
 * Update your existing diagram to reflect the changes.
 
-### Hint
+## Hint
 
 Read this [documentation](https://www.visual-paradigm.com/support/documents/vpuserguide/3563/3564/85378_conceptual,l.html) for more in-depth explanations of entity relationship diagrams.
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
