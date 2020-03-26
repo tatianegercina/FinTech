@@ -768,7 +768,7 @@ Use the ERD slides and begin the discussion of entity relationship diagrams (ERD
 
 * An ERD defines entities, their attributes, and data types, as well as illustrates the overall design of a database.
 
-* There are three types of ERDs or data models: conceptual, logical, and physical. As the following image demonstrates, a conceptual data model is the simplest form, describing only entity names and relationships; a logical database model further expands upon the conceptual data model by additionally describing attributes or column names as well as primary and foreign key definition; a physical data expands upon the logical data model to additionally include column data types.
+* There are three types of ERDs or data models: **conceptual**, **logical**, and **physical**. As the following image demonstrates, a conceptual data model is the simplest form, describing only entity names and relationships; a logical database model further expands upon the conceptual data model by additionally describing attributes or column names as well as primary and foreign key definitions; a physical data expands upon the logical data model to additionally include column data types and specific naming conventions.
 
   ![conceptual-vs-logical-vs-physical](Images/conceptual-vs-logical-vs-physical.png)
 
@@ -789,7 +789,7 @@ Use the ERD slides and begin the discussion of entity relationship diagrams (ERD
   |----------------------|------------|---------|----------|
   ```
 
-To break down these concepts further, discuss the following example.
+Further expand upon the concepts of ERDs by discussing the following example.
 
 * In a database, the table is an entity; the data contained within the table are attributes; and the data type specified could be one of many things, such as Booleans, integers, or varying characters.
 
@@ -815,57 +815,35 @@ Open [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com
 
   **Note**: When exporting the diagram as **PostgreSQL**, the table schemata are automatically generated.
 
-With the design tool open in your browser, demonstrate how to create a simple conceptual ERD using the following text:
+With the design tool open in your browser, demonstrate how to begin setting up a simple data model based on today's activities:
 
   ```sql
   Employee
   -
-  Employee_ID
-  Name
-  Age
-  Address
-  Zipcode
 
   Zipcode
   -
-  Zip_Code
-  City
-  State
-
+  
   Employee_Email
   -
-  Email_ID
-  Employee_ID
-  Email
-
+  
   Owners
   -
-  Owner_ID
-  First_Name
-  Last_Name
-
+  
   Estates
   -
-  Address
-  Zip_Code
-
+  
   Estate_Type
   -
-  Estate_Type
-
+  
   Agents
   -
-  First_Name,
-  Last_Name
-
+  
   Regions
   -
-  Region_Name
-
+  
   Agent_Region_Junction
   -
-  Agent_ID
-  Region_ID
   ```
 
 * The result should appear as follows:
