@@ -60,7 +60,7 @@ In this activity, students will be introduced to the three normal forms of data 
 
 * [schema.sql](Activities/01-Ins_Data_Normalization/Solved/schema.sql)
 
-* [seed.sql](Activities/01-Ins_Data_Normalization/Solved/schema.sql)
+* [seed.sql](Activities/01-Ins_Data_Normalization/Solved/seed.sql)
 
 * [query.sql](Activities/01-Ins_Data_Normalization/Solved/query.sql)
 
@@ -125,6 +125,8 @@ Open [employee_normalization.csv](Activities/02-Stu_Data_Normalization/Resources
 Next, using the code from the schema.sql and seed.sql files, create and populate the tables in pgAdmin. Then use the query.sql file to explain the following:
 
 * The `first_nf_employee` table separates out the data from `employee_normalization` into records with atomic or single column values.
+
+  ![employee-normalization](Images/employee-normalization.png)
 
   ```sql
   INSERT INTO employee_normalization
