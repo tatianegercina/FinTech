@@ -197,6 +197,82 @@ Continue with the slides, show to students some of the companies that at current
 
 * Using Amazon SageMaker engineers at **Coinbase** developed a machine learning-driven system that recognizes mismatches and anomalies in sources of user identification, allowing them to quickly take action against potential sources of fraud.
 
+Now you will continue to demo Amazon SageMaker Studio. Open you web browser and log-in into the [AWS Management Console](https://console.aws.amazon.com/) with your root user.
+
+From the AWS Management Console, type `sagemaker` in the "Find Services" search box and choose `Amazon SageMaker` from the list.
+
+![Launching Amazon SageMaker](Images/launching-sagemaker.png)
+
+Explain to students that Amazon SageMaker Studio is currently offered by AWS as a general available preview version from the US East (Ohio) AWS region. Since it's a preview version, some aspects of the user interface (UI) may vary over the time it's release as a final version.
+
+Despite it's a preview version, explain to students that it's is fully functional and can be used free of charge during its preview period.
+
+In the Amazon SageMaker homepage, click on the "Amazon SageMaker Studio" at the left menu to continue.
+
+![Opening Amazon SageMaker Studio](Images/open-sagemaker-studio.png)
+
+If you are not in the `US East (Ohio)` AWS region, you will see a warning message asking for switching to that region. Open de AWS regions list, select the `US East (Ohio)` AWS region, and click again in the "Amazon SageMaker Studio" option in the left menu.
+
+![Switching to the US East (Ohio) AWS Region](Images/switching-to-ohio.gif)
+
+Once you landed the Amazon SageMaker Studio homepage, explain to students that one of the main advantages of using this tool is that it deals with all the technical complexity of creating the Amazon SageMaker instances, a process that implies to deploy some [Amazon EC2 instances (similar to virtual machines)](https://aws.amazon.com/ec2/) and several privacy settings, that in a manual process may take a few hours.
+
+Continue by setting the initial configuration for Amazon SageMaker Studio, under the "Get Started" section, choose the "Quick Start" option and leave the default user name.
+
+![Choosing the default user name for Amazon SageMaker Studio](Images/sagemaker-studio-user.png)
+
+Next, in the "Execution role" option, click on the listbox and choose "Create a new rol"; a pop-up window named "Create an IAM role" will appear, select "Any S3 bucket" under the "S3 buckets you specify" option and click on the "Create role" button to continue.
+
+![Create an execution role](Images/sagemaker-studio-execution-role.gif)
+
+Continue the demo by clicking on the "Submit" button.
+
+![Create an Amazon SageMaker Studio instance](Images/sagemaker-create-instance.png)
+
+Next, the new instance for Amazon SageMaker Studio and the new user will be configured, you will lead to a new page were you may have to wait about five minutes.
+
+![Amazon SageMaker Studio instance creation](Images/sagemaker-studio-instance-in-progress.png)
+
+Once the Amazon SageMaker Studio instance is ready, you will see the following notification message; you may have to wait an additional minute or two until the Studio user is ready, after that, you will see the "Open Studio" link enabled.
+
+![Amazon SageMaker Studio is ready](Images/sagemaker-studio-instance-ready.png)
+
+Continue the demo by clicking on the "Open Studio" link, a new window (or tab) will be opened and you will see the following loading page until the UI of Amazon SageMaker Studio appears. **Note:** This process may take up to five minutes the first time.
+
+![Loading Amazon SageMaker Studio](Images/sagemaker-studio-loading.png)
+
+After the loading process ends, you will see the UI of Amazon SageMaker Studio. You may note that is practically the same UI as Jupyter lab but with a different color scheme.
+
+![The Amazon SageMaker Studio UI](Images/sagemaker-studio-ui.png)
+
+Explain to students that Amazon SageMaker Studio can be used in the same way they were working locally with Jupyter lab, the main difference is that Studio is a cloud application that allows to access all the computing power of AWS. Continue the demo by clicking in the "Launcher" tab.
+
+Explain to students that Amazon SageMaker has different built-in images to create notebooks, these images are similar to a Python virtual environment. Continue the demo by ensuring the "Data Science" image is selected; next, click on the "Python 3" notebook option. A fresh Jupyter notebook will appear, test it by printing a `Hello!!` message.
+
+![Creating a notebook in Amazon SageMaker Studio](Images/sagemaker-studio-create-notebook.gif)
+
+Ensure that all the class has reach this point and everyone was able to run this simple testing line of code, ask TAs to assist any students that may be stuck.
+
+Once everyone in the class has Amazon SageMaker Studio running, explain to students that as any Jupyter lab interface, they can run their notebooks and custom code in Amazon SageMaker Studio.
+
+Explain to students that now you will show them how to import a local Jupyter notebook into Amazon SageMaker Studio.
+
+Ask your TAs to slack out to students the `monte_carlo.ipynb` Jupyter notebook and the `tickers_data.csv` data file.
+
+Continue the demo by importing the data file into Amazon SageMaker Studio. Click on the "New Folder" icon and create a new folder named `Data`; after creating the folder, import the `tickers_data.csv` file from your local drive.
+
+![Loading a CSV file into Amazon SageMaker Studio](Images/sagemaker_studio_csv.gif)
+
+Next, move to the root folder and import the `monte_carlo.ipynb` Jupyter notebook into Amazon SageMaker Studio.
+
+![Loading a Jupyter notebook into Amazon SageMaker Studio](Images/sagemaker-studio-ipynb.gif)
+
+Continue the demo by opening the Jupyter notebook and selecting the "Python 3 (Data Science)" kernel. Run all the cells of the notebook and explain to students that the code in this notebook runs a Monte Carlo simulation using the tickers data you imported and pure Python code, we are not using jet the built-in algorithms of Amazon SageMaker.
+
+![Running an imported Jupyter notebook in Amazon SageMaker Studio](Images/sagemaker-studio-running-notebook.gif)
+
+Be sure that all the students were able to run this notebook and answer any questions before moving on.
+
 ---
 
 ### 2 (old). Instructor Do: Introduction to Unsupervised Learning (10 min)
