@@ -8,7 +8,13 @@ You are given a dataset that contains historical data from purchases at a online
 
 Use the starter Jupyter Notebook and perform the following tasks:
 
-* Load the data into Pandas DataFrame, name it as `df_shopping`, and fetch the top 10 rows.
+* Load the provided `shopping_data.csv` data file in Amazon SageMaker Studio into a folder called `Data`.
+
+* In the root folder of Amazon SageMaker Studio, load the starter Jupyter notebook `preparing_data.ipynb`.
+
+* Open the started Jupyter notebook in Amazon SageMaker Studio and select the `Python 3 (Data Science)` kernel.
+
+* Load the data into Pandas DataFrame, name it as `df_shopping` and fetch the top 10 rows.
 
 * List the DataFrame's data types to ensure that they're aligned to the type of data stored in each column. Are there any columns whose data type need to be changed? If so, make the corresponding adjustments.
 
@@ -18,14 +24,14 @@ Use the starter Jupyter Notebook and perform the following tasks:
 
 * Remove duplicate entries if any.
 
-To use unsupervised learning algorithms, all the features should be numeric and on similar scales. Perform the following data transformations:
+Unsupervised learning algorithms require all the features to be numeric, and also, on similar scales. Perform the following data transformations.
 
 * The `Gender` column contains categorical data; anytime you have categorical variables, you should transform them to a numerical value. In this case, transforming `Male` to `1` and `Female` to `0` is a feasible solution.
 
-* The `Annual Income` column is on a different scale than the other columns. It is necessary to have a similar scale on all the variables to use unsupervised learning algorithms, so `Annual Income` should be rescaled. In this case, dividing by `1000` is the simplest approach.
+* The `Annual Income` column is on a different scale than the other columns, it is needed to have a similar scale on all the variables to use unsupervised learning algorithms, so `Annual Income` should be rescaled. In this case, dividing by `1000` is the most straightforward approach.
 
 Once you are done with data preprocessing, save the cleaned DataFrame in a new `CSV` file as `shopping_data_cleaned.csv`.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

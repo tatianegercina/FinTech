@@ -466,35 +466,43 @@ There are some data transformations that should be made to the dataset, so ask T
 
 **Instructions:**
 
-* [README.md](Activities/02-Stu_Preparing_Data/README.md)
+* [README.md](Activities/03-Stu_Preparing_Data/README.md)
 
 **Files:**
 
-* [preparing_data.ipynb](Activities/02-Stu_Preparing_Data/Unsolved/preparing_data.ipynb)
+* [preparing_data.ipynb](Activities/03-Stu_Preparing_Data/Unsolved/preparing_data.ipynb)
 
-* [shopping_data.csv](Activities/02-Stu_Preparing_Data/Resources/shopping_data.csv)
+* [shopping_data.csv](Activities/03-Stu_Preparing_Data/Resources/shopping_data.csv)
 
 ---
 
-### 5. Instructor Do: Review Understanding Customers (10 min)
+### 6. Instructor Do: Review Understanding Customers (10 min)
 
 **Files:**
 
-* [preparing_data.ipynb](Activities/02-Stu_Preparing_Data/Solved/preparing_data.ipynb)
+* [preparing_data.ipynb](Activities/03-Stu_Preparing_Data/Solved/preparing_data.ipynb)
 
-* [shopping_data.csv](Activities/02-Stu_Preparing_Data/Resources/shopping_data.csv)
+* [shopping_data.csv](Activities/03-Stu_Preparing_Data/Resources/shopping_data.csv)
 
-* [shopping_data_cleaned.csv](Activities/02-Stu_Preparing_Data/Resources/shopping_data_cleaned.csv)
+* [shopping_data_cleaned.csv](Activities/03-Stu_Preparing_Data/Resources/shopping_data_cleaned.csv)
 
-Walkthrough the solution and highlight the following:
+Load the provided `shopping_data.csv` data file in Amazon SageMaker Studio into a folder called `Data`.
+
+![Loading the shopping data into Amazon SageMaker Studio](Images/sagemaker-studio-shopping-data.gif)
+
+In the root folder of Amazon SageMaker Studio, load the unsolved version of the Jupyter notebook `preparing_data.ipynb`. Open the Jupyter notebook and select the `Python 3 (Data Science)` kernel.
+
+![Importing the unsolved version of the Jupyter notebook](Images/sagemaker-studio-shopping-ipynb.gif)
+
+Live code the solution and highlight the following:
 
 * Unsupervised learning algorithms only work with numerical data, so checking data types is an important task to ensure that numerical values were loaded to the DataFrame with the appropriate data type.
 
   ![Data types check](Images/datatypes-check.png)
 
-* All columns have an appropriate data type, so no adjustments are needed.
+* All columns, but `Gender`, have a numeric data type. So we will only need to encode the `Gender` column.
 
-* The `CustomerID` column can be dropped; it is not relevant for clustering since it does not denote any relevant characteristic of customer shopping habits.
+* The `CustomerID` column can be dropped; it is not relevant for clustering since it does not denote any important characteristic of customer shopping habits.
 
   ```python
   df_shopping.drop(columns=["CustomerID"], inplace=True)
@@ -502,16 +510,16 @@ Walkthrough the solution and highlight the following:
 
 * Looking for `null` values and duplicate entries is part of any data preprocessing workflow; there are no `null` values nor duplicates on this DataFrame, so no additional adjustments are needed.
 
-* The `Genre` column is categorical, so it should be transformed into numerical values. Transforming `Male` to `1` and `Female` to `0` is a common practice.
+* The `Gender` column is categorical, so it should be transformed into numerical values. Transforming `Male` to `1` and `Female` to `0` is a common practice.
 
   ```python
-  def changeGenre(genre):
-    if genre == "Male":
-        return 1
-    else:
-        return 0
+  def encodeGender(gender):
+      if gender.lower() == "Male":
+          return 1
+      else:
+          return 0
 
-  df_shopping["Genre"] = df_shopping["Genre"].apply(changeGenre)
+  df_shopping["Gender"] = df_shopping["Gender"].apply(encodeGender)
   ```
 
 * The `Annual Income` column is on a different scale than the other columns, so this column should be rescaled. Dividing by `1000` is the simplest approach.
@@ -522,16 +530,20 @@ Walkthrough the solution and highlight the following:
 
 * Finally, the cleaned DataFrame is saved as a `CSV` file for being used in coming activities.
 
-```python
-  file_path = Path("../Resources/shopping_data_cleaned.csv")
+  ```python
+  file_path = "Data/shopping_data_cleaned.csv"
   df_shopping.to_csv(file_path, index=False)
-```
+  ```
 
 Be sure that there are no questions before moving forward.
 
 ---
 
-### 6. Instructor Do: The K-Means Algorithm (15 min)
+### 7. BREAK (15 min)
+
+---
+
+### 8. Instructor Do: The K-Means Algorithm (15 min)
 
 In this activity, students will learn how the k-means algorithm works. Use your time wisely to cover the theoretical part, as well as the coding part.
 
@@ -654,7 +666,7 @@ Answer any remaining questions before moving on.
 
 ---
 
-### 7. Student Do: Customer Segments for E-Commerce (20 min)
+### 9. Student Do: Customer Segments for E-Commerce (20 min)
 
 In this activity, students will identify the best number of clusters on a customer clustering scenario using the elbow curve. Next, students will use k-means to cluster data and make conclusions about the obtained results.
 
@@ -670,7 +682,7 @@ In this activity, students will identify the best number of clusters on a custom
 
 ---
 
-### 8. Instructor Do: Review Customer Segments for E-Commerce (10 min)
+### 10. Instructor Do: Review Customer Segments for E-Commerce (10 min)
 
 **Files:**
 
@@ -755,11 +767,7 @@ Encourage one or two students to share their conclusions, ask for any remaining 
 
 ---
 
-### 9. BREAK (15 min)
-
----
-
-### 10. Instructor Do: Speeding up Machine-Learning Algorithms with PCA (10 min)
+### 11. Instructor Do: Speeding up Machine-Learning Algorithms with PCA (10 min)
 
 In this activity, students will learn how to use principal component analysis as a technique to speed up machine-learning algorithms by reducing the number of features.
 
@@ -837,7 +845,7 @@ Answer any questions before moving on.
 
 ---
 
-### 11. Student Do: PCA in Action (20 min)
+### 12. Student Do: PCA in Action (20 min)
 
 In this activity, students will use PCA to reduce the dimensions of the consumers' shopping dataset.
 
@@ -851,7 +859,7 @@ In this activity, students will use PCA to reduce the dimensions of the consumer
 
 ---
 
-### 12. Instructor Do: Review PCA in Action (10 min)
+### 13. Instructor Do: Review PCA in Action (10 min)
 
 **Files:**
 
@@ -908,40 +916,6 @@ Explain to students that the power of PCA to speed up machine-learning algorithm
 Answer any questions before moving on.
 
 ---
-
-### 13. Instructor Do: Welcome to the Cloud and Amazon Web Services (10 min)
-
-In this activity, students will be introduced to the cloud and the generalities of Amazon Web Services.
-
-Explain that while PCA can be very useful in speeding up algorithms by reducing dimensionality, modern machine-learning algorithms can also take advantage of powerful computing resources in the cloud.
-
-Answer any questions before moving on.
-
----
-
-### 14. Instructor Do: Intro to Amazon SageMaker (5 min)
-
-
-
----
-
-### 15. Student Do: Explore SageMaker (5 min)
-
-This activity is intended to give students a few minutes to explore SageMaker.
-
-Ask students to login into their [AWS Console](https://console.aws.amazon.com) and highlight the following:
-
-* The Amazon SageMaker service could be reached at the Find Services search box by typing `sagemaker` in it.
-
-    ![Looking for SageMaker](Images/looking-sagemaker.png)
-
-* Amazon SageMaker might not be available in all AWS regions, but `us-west (Oregon)` is sure to have it.
-
-Ask students to explore the main components on the left pane menu, and they can explore beyond the class by clicking on Start with an overview.
-
-![Amazon SageMaker Landing Page](Images/sagemaker-landing.png)
-
-Have TAs make sure that all students are able to log in and answer any questions before moving on.
 
 ### End Class
 
