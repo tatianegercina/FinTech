@@ -7,6 +7,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "archive": "./.archiver.sh",
     "test": "echo 'use yarn travis'",
     "travis": "cspell \"**/*.*\" && md-report . && markdownlint -i node_modules . && eslint -c .eslintrc.json . && find . -type f -name *.py | xargs -I {} pycodestyle --show-source {}",
     "lintpy": "run(){ find $1 -type f -name *.py | xargs -I {} pycodestyle --show-source {}; }; run",
@@ -40,8 +41,9 @@
     "gulp-imagemin": "^4.1.0",
     "gulp-stylefmt": "^1.1.0",
     "gulp-stylelint": "^3.9.0",
+    "imagemin-cli": "^5.1.0",
     "markdownlint": "^0.11.0",
-    "markdownlint-cli": "^0.13.0",
+    "markdownlint-cli": "^0.22.0",
     "remark-cli": "^2.1.0",
     "remark-lint": "^5.4.0",
     "remark-preset-lint-consistent": "^1.0.0",
