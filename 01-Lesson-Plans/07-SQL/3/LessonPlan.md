@@ -387,7 +387,7 @@ Using the `schema.sql`, `seed.sql` files in pgAdmin, walk through the code and e
     last_name VARCHAR(255)
   );
 
-  -- Create pet name table and insert values
+  -- Create estates table and insert values
   CREATE TABLE estates (
     id INT NOT NULL PRIMARY KEY,
     owner_id INT NOT NULL,
@@ -734,14 +734,14 @@ Walk through the solution and highlight the following:
   engine = create_engine(db_url)
   ```
 
-* The `students_df` DataFrame is created by reading a SQL query that fetches all the records from the `students` table.
+* The `agents_df` DataFrame is created by reading a SQL query that fetches all the records from the `agents` table.
 
   ```python
   # Write the SQL query
   query = "SELECT * FROM agents"
 
   # Read the SQL query into a DataFrame
-  students_df = pd.read_sql(query, engine)
+  agents_df = pd.read_sql(query, engine)
   ```
 
 * A DataFame called `agent_region_df` is created to fetch the count of regions per agent_id.
