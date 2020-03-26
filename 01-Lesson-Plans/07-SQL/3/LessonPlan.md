@@ -1158,15 +1158,23 @@ Export the full schema from Quick Database Diagrams as a PostgreSQL file to demo
 
 Return to pgAdmin in the browser and create a new database called `mortgage_db`.
 
-* Open a query tool and paste in the newly downloaded SQL code to create the tables defined in the diagram.
+* Open a query tool and paste in the newly downloaded SQL code to create the tables defined in the diagram. Then execute the code.
 
-* Execute the code, and then check the table creation using a `SELECT` statement for each table.
+* The following lines of code will give the error `there is no unique constraint matching given keys for referenced table "Banks"`. This is because the `bank_routing_number` in the `Banks` table is not a unique primary key and therefore cannot be referenced. To resolve the issue,the `bank_routing_number` in the Payments table should be converted to a `bank_id` instead; however, without changing the underlying data for simplicity, we can just remove these lines.  
 
   ```sql
-  SELECT * FROM "Trainers";
-  SELECT * FROM "Members";
-  SELECT * FROM "Gym";
+  ALTER TABLE "Payments" ADD CONSTRAINT "fk_Payments_bank_routing_number" FOREIGN KEY("bank_routing_number")
+  REFERENCES "Banks" ("bank_routing_number");
+  ```
+
+* Lastly, execute the code and verify that the tables have been created using a `SELECT` statement for each table.
+
+  ```sql
+  SELECT * FROM "Customers";
+  SELECT * FROM "Banks";
+  SELECT * FROM "Sales";
   SELECT * FROM "Payments";
+  SELECT * FROM "Mortgage";
   ```
 
 Answer any questions before moving on.
