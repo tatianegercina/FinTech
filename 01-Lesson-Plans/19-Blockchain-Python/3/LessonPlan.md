@@ -510,7 +510,7 @@ command = ''
 
 * The subprocess module allows us to call other processes, such as CLI tools, from within our Python process.
 
-* We are using single quotes since our command has double quotes in it. We can later use more advanced string formatting.
+* We are using single quotes, since our command has double quotes in it. Later, we can use more advanced string formatting.
 
 Wait for everyone to catch up, and then have everyone paste the command that they used in the terminal
 inside of the command string:
@@ -548,7 +548,7 @@ Ensure Windows users understand the difference in formatting for their command, 
 
 Have everyone copy this down, and explain:
 
-* While we don't need to know every detail of this command, we are essentially telling the subprocess module to call this command through a system "pipe" and telling it that the program is interactive with the `shell=True` flag.
+* While we don't need to know every detail of this command, we are essentially telling the subprocess module to call this command through a system "pipe," and telling it that the program is interactive with the `shell=True` flag.
 
 * "stdout" means "standard output" -- aka the output that programs return to the operating system to print. When you run "print" in Python, it pipes the string to `stdout`.
 
@@ -562,7 +562,7 @@ Once everyone has successfully copied and run this program, ask the following qu
 
 * What do you notice about the output, particularly the format?
 
-  * **Answer:** It is not formatted very nicely, or in a way that we can process this easily.
+  * **Answer:** It is not formatted very nicely, or in a way that we can process easily.
 
 * What would be another format that would be easier to work with, in this case?
 
@@ -596,7 +596,7 @@ print(keys)
 
 Ensure the students are caught up and are printing their keys in JSON format. You can challenge them to `print` it as well.
 
-Much better, right? Now that we have the keys in an object, we can access the address of the first key like so:
+Much better, right? Now that we have the keys in an object, we can access the address of the first key, like so:
 
 ```python
 print(keys[0]['address'])
@@ -640,19 +640,19 @@ Ask the students:
 
 * Have any of you heard the term "hot" or "cold" wallets before?
 
-* Let's clarify a bit on what these mean.
+* Let's clarify what these mean.
 
 Continue through the slideshow until:
 
 ![hardware wallet](https://image.shutterstock.com/image-photo/cryptocurrency-hardware-wallet-on-laptop-600w-1114321721.jpg)
 
-* This is a hardware wallet. It looks like a USB drive, right? Instead of storing files, what this device does is store your private keys. It can also sign transactions with those keys.
+* This is a hardware wallet. It looks like a USB drive, right? Instead of storing files, this device stores your private keys. It can also sign transactions with those keys.
 
-* Does anyone know why this is more secure than using our mnemonics like we have been?
+* Does anyone know why this is more secure than using our mnemonics?
 
   * **Answer:** The hardware wallet never outputs the private keys once they are generated the first time.
 
-* Essentially, what this means is that this device will give you one, and only one opportunity to write down your mnemonic phrase.
+* Essentially, what this means is that this device will give you one, and only one, opportunity to write down your mnemonic phrase.
  After that, the device will never output the private keys again. You can only use it to restore or generate a mnemonic.
 
 * You are effectively asking the device to sign a transaction that you send to it over USB.
@@ -667,18 +667,18 @@ Now ask the students:
 
   * **Answer:** Security is a spectrum.
 
-Elaborate that a software wallet on your phone or laptop is like carrying physical cash with you, you only want to carry so much.
+Elaborate that a software wallet on your phone or laptop is like carrying physical cash with you; and you only want to carry so much.
 
-* It's really easy to pull cash out of your wallet, but it also carries some risk.
+* While it's really easy to pull cash out of your wallet, it also carries some risk.
 
 * A hardware wallet is more like a sealed bank vault, or an ATM.
  You're protected by a lot more security measures, but it's not always as convenient.
 Imagine being in line at the store, pulling out a hardware wallet, plugging it into your phone, opening the companion app,
- confirming the transaction details, then entering your PIN on the hardware wallet. That would take forever, and probably be a bit embarrassing! In this case, storing a bit of crypto in a software wallet app on your phone is much easier, and you can refill it when convenient.
+ confirming the transaction details, then entering your PIN on the hardware wallet. That would take forever and probably be a bit embarrassing! In this case, storing a bit of crypto in a software wallet app on your phone is much easier, and you can refill it when convenient.
 
 Ask the students:
 
-* Can anyone guess as to why software wallets aren't as secure as a hardware wallet?
+* Can anyone guess why a software wallet isn't as secure as a hardware wallet?
 
   * **Answer:** Computers and phones get hacked all the time!
 
@@ -688,9 +688,9 @@ Explain to the class:
 
 So what's this talk about "hot" vs. "cold" wallets?
 
-* When we refer to hot vs. cold, we are referring to generally how often the wallet is accessed.
+* When we refer to hot vs. cold, we are generally referring to how often the wallet is accessed.
 
-* "Hot" wallets tend to be live and ready to spend funds, and much easier to access.
+* "Hot" wallets tend to be live, ready to spend funds, and much easier to access.
 
 * "Cold" wallets tend to store larger funds and are accessed less frequently, more like a vault.
 
@@ -700,14 +700,14 @@ Ask the students:
 
   * **Answer:** Software wallets are hot wallets.
 
-* What would be a "cold" wallet?
+* What would a "cold" wallet be?
 
   * **Answer:** Hardware wallets.
 
 Congratulations! Now you understand the different wallet standards, the different implementations of these wallets in hardware
 and software, and when to use each!
 
-### 18. Students Do: "If I Were an Exchange" Thought Experiment (15 min)
+### 18. Student Do: "If I Were an Exchange" Thought Experiment (15 min)
 
 In this activity, students will break into small groups and design an exchange given the different wallet standards
 and software/hardware implementations.
