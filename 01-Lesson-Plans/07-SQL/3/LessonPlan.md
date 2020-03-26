@@ -126,8 +126,6 @@ Next, using the code from the schema.sql and seed.sql files, create and populate
 
 * The `first_nf_employee` table separates out the data from `employee_normalization` into records with atomic or single column values.
 
-  ![employee-normalization](Images/employee-normalization.png)
-
   ```sql
   INSERT INTO employee_normalization
     (employee_id, name, age, address, city, state, zip_code, email)
@@ -422,6 +420,8 @@ In this activity, students will learn the many different types of data modeling 
 **Files:**
 
 * [schema.sql](Activities/05-Ins_Data_Relationships/Solved/schema.sql)
+
+* [seed.sql](Activities/05-Ins_Data_Relationships/Solved/seed.sql)
 
 * [query.sql](Activities/05-Ins_Data_Relationships/Solved/query.sql)
 
