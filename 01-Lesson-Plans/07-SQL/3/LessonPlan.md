@@ -963,43 +963,131 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
   email
   ```
 
-* After adding in the datatypes, primary keys, and foreign key relationships, the diagram should look like the following.
+* The complete schema for the logical data model should be as follows:
+
+  ```sql
+  Employee
+  -
+  employee_id PK
+  name
+  age
+  address
+  zip_code FK - Zipcode.zip_code
+
+  Zipcode
+  -
+  zip_code PK
+  city
+  state
+
+  Employee_Email
+  -
+  email_id PK
+  employee_id FK >- Employee.employee_id
+  email
+
+  Owners
+  -
+  owner_id PK
+  first_name
+  last_name
+
+  Estates
+  -
+  estate_id PK
+  owner_id FK - Owners.owner_id
+  estate_type FK - Estate_Type.estate_type_id
+  address
+  zip_code FK - Zipcode.zip_code
+
+  Estate_Type
+  -
+  estate_type_id PK
+  estate_type
+
+  Agents
+  -
+  agent_id PK
+  first_name
+  last_name
+
+  Regions
+  -
+  region_id PK
+  region_name
+
+  Agent_Region_Junction
+  -
+  agent_id FK >- Agents.agent_id
+  region_id FK >- Regions.region_id
+  ```
+
+  * In addition, with the added datatypes, primary keys, and foreign key relationships, the diagram should now look like the following.
 
     ![logical-erd.png](Images/logical-ERD.png)
 
-* IDs are added because when designing a **physical model**, the physical relationships between entities are constructed and linked. This is often done with the use of primary keys.
+Lastly, transition the logical data model to a physical data model. Using the following lines, update your current entities with data types using the Quick Database Diagrams tool.
 
-Using the Quick Database Diagrams tool, include the physical relationships in the entities by updating them as follows:
+```sql
+Employee
+-
+employee_id INT PK
+name VARCHAR(255)
+age INT
+address VARCHAR(255)
+zip_code INT FK - Zipcode.zip_code
 
-  ```sql
-  payment
-  -
-  id INT PK
-  customer_id INT FK - customer.id
-  amount DEC
-  payment_date DATE
+Zipcode
+-
+zip_code INT PK
+city VARCHAR(255)
+state VARCHAR(255)
 
-  customer
-  -
-  id INT PK
-  payment_id INT FK - payment.id
-  first_name VARCHAR
-  last_name VARCHAR
-  ```
+Employee_Email
+-
+email_id PK INT
+employee_id INT FK >- Employee.employee_id
+email VARCHAR(255)
 
+Owners
+-
+owner_id INT PK
+first_name VARCHAR(255)
+last_name VARCHAR(255)
 
+Estates
+-
+estate_id INT PK
+owner_id INT FK - Owners.owner_id
+estate_type VARCHAR(255) FK - Estate_Type.estate_type_id
+address VARCHAR(255)
+zip_code INT FK - Zipcode.zip_code
 
-* Point out that the diagram now has arrows connecting the entities, and that the connecting entities' text is now bold.
+Estate_Type
+-
+estate_type_id INT PK
+estate_type VARCHAR(255)
+
+Agents
+-
+agent_id INT PK
+first_name VARCHAR(255)
+last_name VARCHAR(255)
+
+Regions
+-
+region_id INT PK
+region_name VARCHAR(255)
+
+Agent_Region_Junction
+-
+agent_id INT FK >- Agents.agent_id
+region_id INT FK >- Regions.region_id
+```
+
+* Point out that the diagram is pretty much the same as the logical data model; however, datatypes are now listed.
 
   ![physical-erd.png](Images/physical-erd.png)
-
-* Two additional lines have been added: `customer_id` to the payment table and `payment_id` to the customer table. This was done to create unique relationships between the entities.
-
-* In the `payment` table, the section `FK - customer.id` signifies the physical connection between the `customer` table and its `id` column to the `payment` table and the `customer_id` column.
-
-* The added `FK` and `PK` abbreviations signify foreign key (FK) and primary key (PK). Note the key icon added to the specified entities in the diagram.
-
-* Note that this is the method used with the Quick Database Diagrams tool. Other ERD design tools may employ different techniques.
 
 If students need a refresher on data relationships, direct them to the documentation on the Quick Database Diagrams website following these steps.
 
