@@ -16,7 +16,7 @@ In this activity, you will be organizing improperly stored employee data into th
 
 ### Bonus
 
-* Join the `third_nf_employee`, `second_nf_employee_email` and `third_nf_zipcode` tables.
+* Join the `third_nf_employee`, `second_nf_employee_email` and `third_nf_zipcode` tables to re-create the initial dataset.
 
 ---
 
