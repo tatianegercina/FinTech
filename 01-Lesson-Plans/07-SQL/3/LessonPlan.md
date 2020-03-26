@@ -1022,9 +1022,9 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
   region_id FK >- Regions.region_id
   ```
 
-  * In addition, with the added datatypes, primary keys, and foreign key relationships, the diagram should now look like the following.
+* In addition, with the added datatypes, primary keys, and foreign key relationships, the diagram should now look like the following.
 
-    ![logical-erd.png](Images/logical-ERD.png)
+  ![logical-erd.png](Images/logical-ERD.png)
 
 Lastly, transition the logical data model to a physical data model. Using the following lines, update your current entities with data types using the Quick Database Diagrams tool.
 
