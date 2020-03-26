@@ -213,6 +213,14 @@ Use the slides on foreign keys to explain the concept of foreign keys and how th
 
 Slack out the schema.sql, seed.sql, and query.sql files for students to follow along. Review the code, explaining the following steps:
 
+* Use the `CASCADE` modifier in addition to the `DROP TABLE IF EXISTS` clause to drop any existing tables that may include foreign key constraints to other tables.
+
+  ```sql
+  DROP TABLE IF EXISTS customer CASCADE;
+  DROP TABLE IF EXISTS customer_email CASCADE;
+  DROP TABLE IF EXISTS customer_phone CASCADE;
+  ```
+
 * Create a table named `customer` and set the primary key to `customer_id`, which will be auto-populated and incremented with each new entry.
 
   ```sql
@@ -704,7 +712,7 @@ In this activity, students will read data into a Pandas DataFrame from a Postgre
 
 * [schema.sql](Activities/08-Stu_Feeding_Pandas_SQL/Solved/schema.sql)
 
-* [seed.sql](Activities/08-Stu_Feeding_Pandas_SQL/Solved/schema.sql)
+* [seed.sql](Activities/08-Stu_Feeding_Pandas_SQL/Solved/seed.sql)
 
 * [query.sql](Activities/08-Stu_Feeding_Pandas_SQL/Solved/query.sql)
 

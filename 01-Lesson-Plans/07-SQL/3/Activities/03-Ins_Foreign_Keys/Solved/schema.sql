@@ -1,3 +1,7 @@
+DROP TABLE IF EXISTS customer CASCADE;
+DROP TABLE IF EXISTS customer_email CASCADE;
+DROP TABLE IF EXISTS customer_phone CASCADE;
+
 -- 1. Create a Customer table
 CREATE TABLE customer (
     customer_id SERIAL,

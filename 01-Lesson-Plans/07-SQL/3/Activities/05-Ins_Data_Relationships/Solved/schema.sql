@@ -1,3 +1,10 @@
+DROP TABLE IF EXISTS simpsons;
+DROP TABLE IF EXISTS address;
+DROP TABLE IF EXISTS people;
+DROP TABLE IF EXISTS children;
+DROP TABLE IF EXISTS parents;
+DROP TABLE IF EXISTS child_parent CASCADE;
+
 -- One to one
 -- Simpson table
 CREATE TABLE simpsons(
