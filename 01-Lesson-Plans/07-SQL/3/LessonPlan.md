@@ -524,7 +524,7 @@ Ask if there are any questions before moving on.
 
 ### 9. Student Do: Data Relationships (10 min)
 
-In this activity, students will create table schemata for students and available courses, and then create a junction table to display all courses taken by students.
+In this activity, students will create table schemata for agents and regions, and then create a junction table to display all regions assigned to agents.
 
 **Instructions:** [README.md](Activities/06-Stu_Data_Relationships/README.md)
 

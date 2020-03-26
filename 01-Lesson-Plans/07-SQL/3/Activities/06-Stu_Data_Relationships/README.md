@@ -1,6 +1,6 @@
-# Data Modeling
+# Data Relationships
 
-In this activity, you will design a database model.
+In this activity, you will implement a many-to-many relationship with the help of a junction table.
 
 ## Instructions
 
