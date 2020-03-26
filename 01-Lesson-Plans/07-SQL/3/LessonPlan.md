@@ -1117,15 +1117,15 @@ In this activity, students will create a conceptual ERD for mortgage lending.
 
 * [schema.txt](Activities/10-Stu_Designing_ERD/Unsolved/schema.txt)
 
-* [customer.csv](Resources/customer.csv)
+* [customer.csv](Activities/10-Stu_Designing_ERD/Resources/customer.csv)
 
-* [banks.csv](Resources/banks.csv)
+* [banks.csv](Activities/10-Stu_Designing_ERD/Resources/banks.csv)
 
-* [sales.csv](Resources/sales.csv)
+* [sales.csv](Activities/10-Stu_Designing_ERD/Resources/sales.csv)
 
-* [payments.csv](Resources/payments.csv)
+* [payments.csv](Activities/10-Stu_Designing_ERD/Resources/payments.csv)
 
-* [mortgage.csv](Resources/mortgage.csv)
+* [mortgage.csv](Activities/10-Stu_Designing_ERD/Resources/mortgage.csv)
 
 **Instructions:** [README.md](Activities/10-Stu_Designing_ERD/README.md)
 
@@ -1169,15 +1169,15 @@ In this activity, students will transition their mortgage lending logical ERD to
 
 * [schema.txt](Activities/11-Stu_ERD/Unsolved/schema.txt)
 
-* [customer.csv](Resources/customer.csv)
+* [customer.csv](Activities/11-Stu_ERD/Resources/customer.csv)
 
-* [banks.csv](Resources/banks.csv)
+* [banks.csv](Activities/11-Stu_ERD/Resources/banks.csv)
 
-* [sales.csv](Resources/sales.csv)
+* [sales.csv](Activities/11-Stu_ERD/Resources/sales.csv)
 
-* [payments.csv](Resources/payments.csv)
+* [payments.csv](Activities/11-Stu_ERD/Resources/payments.csv)
 
-* [mortgage.csv](Resources/mortgage.csv)
+* [mortgage.csv](Activities/11-Stu_ERD/Resources/mortgage.csv)
 
 **Instructions:** [README.md](Activities/11-Stu_ERD/README.md)
 
