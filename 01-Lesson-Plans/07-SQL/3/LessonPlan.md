@@ -1104,7 +1104,7 @@ Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams
 
 * Transitioning a logical ERD to a physical ERD is fairly simple. Assuming the tables, column names, primary keys, and foreign key relationships have already been set, all that is left for transitioning a logical data model to a physical data model is adding the appropriate column data types.
 
-* ![stu-physical-erd](stu-physical-erd.png)
+* ![stu-physical-erd](Images/stu-physical-erd.png)
 
 Export the full schema from Quick Database Diagrams as a PostgreSQL file to demonstrate how schema creation code is converted to PostgreSQL code.
 
