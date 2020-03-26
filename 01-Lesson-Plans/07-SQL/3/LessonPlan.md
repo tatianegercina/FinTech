@@ -815,7 +815,7 @@ Open [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com
 
   **Note**: When exporting the diagram as **PostgreSQL**, the table schemata are automatically generated.
 
-With the design tool open in your browser, demonstrate how to begin setting up a simple data model based on today's activities:
+* With the design tool open in your browser, demonstrate how to begin setting up a simple conceptual data model based on today's activities:
 
   ```sql
   Employee
@@ -823,25 +823,25 @@ With the design tool open in your browser, demonstrate how to begin setting up a
 
   Zipcode
   -
-  
+
   Employee_Email
   -
-  
+
   Owners
   -
-  
+
   Estates
   -
-  
+
   Estate_Type
   -
-  
+
   Agents
   -
-  
+
   Regions
   -
-  
+
   Agent_Region_Junction
   -
   ```
@@ -852,9 +852,9 @@ With the design tool open in your browser, demonstrate how to begin setting up a
 
   **Note**: The tables' locations can be physically adjusted by clicking and dragging them in the browser.
 
-* Explain to the class that creating a conceptual model is the first step of designing an ERD.
+* Explain to the class that normally a conceptual model would contain the entity relationships among the tables; however due to the nature of the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) web app, entity relationships can only be drawn via explicit foreign key definitions. Therefore, we will have to transition to a logical data model to view the relationships for this particular demonstration.
 
-* When a conceptual model is created, the overall goals of creating a database are taken into account by defining entities and their relationships to each other.
+**Note:** Another diagraming tool called [draw.io](http://draw.io/) can be used to quickly and easily create simple conceptual data models. 
 
 Transition from the conceptual ERD to a logical ERD. Using the following lines, update your current entities with data types using the Quick Database Diagrams tool.
 
@@ -1026,10 +1026,6 @@ Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams
 Copy and paste the remaining text from `schema.txt` to create the additional tables. The final product should appear as follows:
 
   ![stu-logical-ERD.png](Images/stu-logical-ERD.png)
-
-* As previously described, the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) web app does not allow for defining abstract relationships between tables. Instead, in order to get the application to draw table or entity relationship lines, explicit foreign key definitions must be set. Normally, foreign key definition would fall under the classification of a physical data model.
-
-  ![logical-erd-2](Images/logical-erd-2.png)
 
 Ask students if they created any other tables or connections, as there are many possible solutions in addition to those included here.
 
