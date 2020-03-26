@@ -854,7 +854,7 @@ Open [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com
 
 * Explain to the class that normally a conceptual model would contain the entity relationships among the tables; however due to the nature of the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) web app, entity relationships can only be drawn via explicit foreign key definitions. Therefore, we will have to transition to a logical data model to view the relationships for this particular demonstration.
 
-**Note:** Another diagraming tool called [draw.io](http://draw.io/) can be used to quickly and easily create simple conceptual data models. 
+  **Note:** Another diagraming tool called [draw.io](http://draw.io/) can be used to quickly and easily create simple conceptual data models.
 
 Transition from the conceptual ERD to a logical ERD. Using the following lines, update your current entities with data types using the Quick Database Diagrams tool.
 
