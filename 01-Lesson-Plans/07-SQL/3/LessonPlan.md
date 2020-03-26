@@ -770,6 +770,21 @@ Use the ERD slides and begin the discussion of entity relationship diagrams (ERD
 
   ![conceptual-vs-logical-vs-physical](Images/conceptual-vs-logical-vs-physical.png)
 
+  ```
+  |----------------------|------------|---------|----------|
+  | Feature              | Conceptual | Logical | Physical |
+  |----------------------|------------|---------|----------|
+  | Entity Names         | X          | X       |          |
+  | Entity Relationships | X          | X       |          |
+  | Attributes           |            | X       |          |
+  | Primary Keys         |            | X       | X        |
+  | Foreign Keys         |            | X       | X        |
+  | Table Names          |            |         | X        |
+  | Column Names         |            |         | X        |
+  | Column Data Types    |            |         | X        |
+  |----------------------|------------|---------|----------|
+  ```
+
 To break down these concepts further, discuss the following example.
 
 * In a database, the table is an entity; the data contained within the table are attributes; and the data type specified could be one of many things, such as Booleans, integers, or varying characters.
@@ -1057,6 +1072,8 @@ Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams
 * As previously described, the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) web app does not allow for defining abstract relationships between tables. Instead, in order to get the application to draw table or entity relationship lines, explicit foreign key definitions must be set. Normally, foreign key definition would fall under the classification of a physical data model.
 
   ![logical-erd-2](Images/logical-erd-2.png)
+
+* 
 
 * For example, in the `Members` table, several rows were added to demonstrate data relationships. A row named `Gym_ID` was added as a foreign key (`FK`), establishing a one-to-many relationship by using the `>-` symbol.
 
