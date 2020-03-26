@@ -1052,7 +1052,11 @@ In this activity, students will transition their mortgage lending logical ERD to
 
 Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage. Copy and paste the solution using the code in the [`schema.txt`](Activities/11-Stu_ERD/Solved/schema.txt) file and explain the following:
 
-* Transitioning a logical ERD to a physical ERD involves adding appropriate entities to tables and mapping their relationships.
+* Transitioning a logical ERD to a physical ERD involves adding the appropriate primary keys, foreign key relationships, and column data types. Essentially, a physical data model describes the database implementation of a logical data model.
+
+* As previously described, the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) web app does not allow for defining abstract relationships between tables. Instead, in order to get the application to draw table or entity relationship lines, explicit foreign key definitions must be set. Normally, foreign key definition would fall under the classification of a physical data model.
+
+  ![logical-erd-2](Images/logical-erd-2.png)
 
 * For example, in the `Members` table, several rows were added to demonstrate data relationships. A row named `Gym_ID` was added as a foreign key (`FK`), establishing a one-to-many relationship by using the `>-` symbol.
 
