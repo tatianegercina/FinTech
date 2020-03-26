@@ -6,7 +6,17 @@ In this activity, you will work with a partner to create a mortgage lending data
 
 Create a logical ERD for a mortgage lending database.
 
-* Create a logical ERD by determining the entities that will be present in the database, along with their attributes. Be sure to include the following: `trainers`, `members`, and `gym` as well as one more entity that you think is necessary.
+* Use the following CSVs and their column names as a guide to generating the correct entities and attributes for the mortgage lending logical database model:
+
+  * ![customer.csv](Resources/customer.csv)
+
+  * ![banks.csv](Resources/banks.csv)
+
+  * ![sales.csv](Resources/sales.csv)
+
+  * ![payments.csv](Resources/payments.csv)
+
+  * ![mortgage.csv](Resources/mortgage.csv)
 
 * Create a diagram using the [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) tool.
 

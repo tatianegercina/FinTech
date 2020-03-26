@@ -1,10 +1,10 @@
 ## Designing an ERD, Part 2
 
-In this activity, you and your partner will continue designing an entity relationship diagram for the gym by transitioning your logical ERD created in the previous activity to a physical ERD.
+In this activity, you and your partner will continue designing a database model for the mortgage lending database by transitioning your logical ERD created in the previous activity to a physical ERD.
 
 ### Instructions
 
-* Using the [starter code](Unsolved/schema.txt) provided, return to [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) and transition your logical ERD physical ERD by creating the relationships between tables.
+* Using the [starter code](Unsolved/schema.txt) provided, return to [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) and transition your logical ERD physical ERD by defining the data types of columns and the type of entity relationships between tables.
 
 * When you are satisfied with your ERD, export the diagram as a PostgreSQ file:
 
@@ -38,7 +38,7 @@ In this activity, you and your partner will continue designing an entity relatio
 
   * Each member has one credit card on file.
 
-* Once the exported code has been used to create tables using pgAdmin, you can check the table creation with the following syntax. (Note the quotations around the table name.) 
+* Once the exported code has been used to create tables using pgAdmin, you can check the table creation with the following syntax. (Note the quotations around the table name.)
 
   ```sql
   SELECT * FROM "Members";
