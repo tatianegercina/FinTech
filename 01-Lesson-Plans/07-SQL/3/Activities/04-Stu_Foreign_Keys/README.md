@@ -8,6 +8,12 @@ In this activity, you will create and populate two new tables with foreign keys 
 
 Complete the following:
 
+* Use the provided CSV files to create and populate the `owners` and `estates` tables:
+
+  * [owners.csv](Resources/owners.csv)
+
+  * [estates.csv](Resources/estates.csv)
+
 * Create an `owners` table with an owner `first_name` and `last_name`.
 
 * Create a `estates` table with a foreign key that references a field in the original `owners` table.
