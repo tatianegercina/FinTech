@@ -165,6 +165,12 @@ Answer any questions before moving on.
 
 In this activity, students will learn what Amazon SageMaker is and how they can start running Jupyter notebooks in the Cloud using Amazon SageMaker Studio. This activity starts with an short presentation of Amazon SageMaker using the lesson slides and concludes with a collaborative demo where you will guide the students throughout the process of getting started with this cloud service.
 
+**Files:**
+
+* [monte_carlo.ipynb](Activities/01-Evr_Intro_SageMaker_Studio/monte_carlo.ipynb)
+
+* [tickers_data.csv](Activities/01-Evr_Intro_SageMaker_Studio/Resources/tickers_data.csv)
+
 Open the lesson slides, move to the "Running Jupyter Notebooks in the Cloud with Amazon SageMaker" section and highlight the following:
 
 * Amazon SageMaker is a platform service that allows software developers and data scientists to build, train, and deploy ML models in the cloud.
@@ -351,54 +357,102 @@ Answer any questions before moving on.
 
 ---
 
-### 3. Instructor Do: Data Preparation for Unsupervised Learning (10 min)
+### 4. Instructor Do: Data Preparation for Unsupervised Learning (10 min)
 
 In this activity, students will learn about the data preparation considerations they should take into account before they start working with unsupervised learning algorithms.
 
 **Files:**
 
-* [01_Ins_Data_Preparation.ipynb](Activities/01-Ins_Data_Prep/Solved/01_Ins_Data_Preparation.ipynb)
+* [Ins_Data_Preparation.ipynb](Activities/02-Ins_Data_Prep/Solved/Ins_Data_Preparation.ipynb)
 
-* [iris.csv](Activities/01-Ins_Data_Prep/Resources/iris.csv)
-
-* [new_iris_data.csv](Activities/01-Ins_Data_Prep/Resources/new_iris_data.csv)
+* [credit_risk.csv](Activities/02-Ins_Data_Prep/Resources/credit_risk.csv)
 
 Explain to students that data preparation for unsupervised learning does not differ too much from the process followed for supervised learning problems.
 
-Explain to the class that, as they already have done in past lessons, they should consider the following data preparation tasks:
-
-1. **Data selection:** Make a good choice of what data is going to be used. It is important to consider what data is available, what data is missing, and what data can be removed.
-2. **Data preprocessing:** Organize the selected data by formatting, cleaning, and sampling it.
-3. **Data transformation:** Transform the data to a format that eases its treatment and storage for future use (e.g., CSV file, spreadsheet, database).
-
 Highlight to students that the main difference in preparing data for unsupervised learning is that its algorithms don't have any target variable; they only have input features that will be used to find patterns in the data. So, they should take care of selecting features that could help to find those patterns or create groups.
 
-Open the unsolved version of the Jupyter Notebook, live code the demo, and highlight the following:
+Explain to students that to continue experiencing Amazon SageMaker Studio, the current and forthcoming activities will be ran in this cloud application.
 
-* To get started with unsupervised learning, [the iris dataset from the UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris) will be used.
+Import the `credit_risk.csv` data file into the `Data` folder in Amazon SageMaker Studio.
 
-* The data preparation workflow is quite similar to what students have been following in the past; once the data is selected, the next step is to load the data into a Pandas DataFrame.
+![Importing the credit risk data into Amazon SageMaker Studio](Images/sagemaker-studio-risk-data.gif)
 
-  ![Lading the iris dataset](Images/reading-iris-data.png)
+Import the the unsolved version of the Jupyter Notebook to Amazon SageMaker Studio, open the notebook and select the `Python 3 (Data Science)` kernel.
 
-* In coming activities, the `class` of the iris plants will be found using unsupervised learning, so the next step is to remove the `class` column since it is not necessary.
+![Importing the unsolved version of the Jupyter notebook](Images/sagemaker-studio-risk-ipynb.gif)
 
-  ![Removing the class column](Images/removing-class-column.png)
+Live code the demo and highlight the following:
 
-Explain to students that since all the variables on the dataset are numerical, there are no additional data preprocessing tasks to do. However, data transformations have to be done when there are categorical data or non-numeric features on the dataset. For example, transforming `male` and `female` categorical values to `0` and `1`.
+* To get started with unsupervised learning, we will use a credit risk dataset, where the risk level for each person is labelled as `low`, `medium`, or `high`.
 
-* Finally, the preprocessed DataFrame is saved on a new `CSV` file for further use.
+* The columns in the dataset are the following:
 
-  ```python
-  file_path = Path("../Resources/new_iris_data.csv")
-  new_iris_df.to_csv(file_path, index=False)
-  ```
+  * `age`: The age of the person.
+
+  * `deb_ratio`: Monthly debt payments, alimony, and living costs divided by monthly gross income.
+
+  * `monthly_income`: Monthly gross income.
+
+  * `dependents`: The number of dependents of each person.
+
+  * `gender`: The gender of the person.
+
+  * `risk`: The risk level for each person.
+
+* The first step is to load the data into a Pandas DataFrame; note that we are not using the `path` module to define the route to the CSV file since this module is not installed by default in Amazon SageMaker.
+
+  ![Lading the credit risk dataset](Images/load-credit-risk-data.png)
+
+* In coming activities, the risk level of each person will be computed using unsupervised learning, so the next step is to remove the `risk` column since it is not necessary.
+
+  ![Removing the risk column](Images/drop-risk-column.png)
+
+Explain to students that all the variables in the dataset should be numerical to fit the unsupervised learning algorithms, so we need to transform any categorical data or non-numeric features in the dataset. In this demo, we need to transform the `male` and `female` categorical values to a numeric representation.
+
+Explain to students that we may use the `LabelEncoder` from scikit-learn, however we will perform a manual encoding this time using the `encodeGender()` function.
+
+```python
+def encodeGender(gender):
+    """
+    This function transforms the gender expressed in text into a numerical representation.
+    """
+    if gender.lower() == "male":
+        return 1
+    else:
+        return 0
+```
+
+After defining the `encodeGender()` function, we enconde the `gender` column using the `apply()` method from Pandas.
+
+```python
+clean_df["gender"] = clean_df["gender"].apply(encodeGender)
+clean_df.head()
+```
+
+![Credit risk DataFrame with the encoded gender column](Images/encoded-gender.png)
+
+Explain to students, that it's recommended to have all the numerical features in the same scale, so in this demo, the `StandardScaler` from scikit-learn is used to scale the data.
+
+```python
+# Create the scaler instance
+data_scaler = StandardScaler()
+
+# Fit the scaler with the DataFrame's values
+data_scaler.fit(clean_df.values)
+
+# Scale the data
+scaled_data = data_scaler.transform(clean_df.values)
+```
+
+After scaling the data, explain to students that the data is transformed into a DataFrame to be saved as a CSV file for further use.
+
+![Creating a DataFrame with the scaled data and saving it as a CSV file](Images/saving-scaled-credit-risk-data.png)
 
 Ask the class if there are any further questions before moving to the next activity.
 
 ---
 
-### 4. Student Do: Understanding Customers (20 min)
+### 5. Student Do: Understanding Customers (20 min)
 
 In this activity, students will perform some data preparation tasks on a dataset that contains data from purchases on an e-commerce website made by 200 customers. Students will use this dataset on further activities to find customer segments.
 
