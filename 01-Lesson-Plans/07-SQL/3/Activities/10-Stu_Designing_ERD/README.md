@@ -1,12 +1,12 @@
 ## Designing an ERD, Part 1
 
-In this activity, you will work with a partner to create a mortgage lending database model:
-
-Create a conceptual ERD for a mortgage lending database.
+In this activity, you will work with a partner to create a mortgage lending database model.
 
 ### Instructions
 
-* Create a conceptual ERD by determining the entities that will be present in the database, along with their attributes. Be sure to include the following: `trainers`, `members`, and `gym` as well as one more entity that you think is necessary.
+Create a logical ERD for a mortgage lending database.
+
+* Create a logical ERD by determining the entities that will be present in the database, along with their attributes. Be sure to include the following: `trainers`, `members`, and `gym` as well as one more entity that you think is necessary.
 
 * Create a diagram using the [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) tool.
 
