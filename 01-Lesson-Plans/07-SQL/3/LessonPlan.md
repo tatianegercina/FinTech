@@ -1008,11 +1008,11 @@ In this activity, students will create a conceptual ERD for mortgage lending.
 
 Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage and demonstrate the solution, using the code in the [`schema.txt`](Activities/10-Stu_Designing_ERD/Solved/schema.txt) file. Live code while explaining the following:
 
-* A conceptual diagram has only basic information, such as the names of the tables and their attributes.
+* A logical ERD contains only basic information, such as the names of the tables and their attributes. In addition, a logical ERD will also define the foreign key relationships among tables; however, unlike a physical data model, the *types* of relationships (one-to-one, one-to-many, many-to-many) have yet to be defined.
 
-* Creating a diagram looks similar to writing code. For example, in the following image, `Gym` followed by the hyphen, creates the table name within the diagram.
+* Creating a diagram looks similar to writing code. For example, in the following image, `Customer` followed by the hyphen, creates the table name within the diagram.
 
-  ![gym.png](Images/gym.png)
+  ![customer.png](Images/customer.png)
 
 * Transitioning a conceptual diagram to a logical diagram requires more information. Data types are defined, and primary keys are established by adding ID rows to the tables, such as in the `Trainers` table:
 
@@ -1030,7 +1030,7 @@ Answer any questions before moving on.
 
 ### 18. Student Do: Designing an ERD, Part 2 (10 min)
 
-In this activity, students will further improve the ERD by creating a physical ERD.
+In this activity, students will transition their mortgage lending logical ERD to a physical ERD.
 
 **Files:**
 

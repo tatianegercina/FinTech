@@ -20,10 +20,6 @@ Create a logical ERD for a mortgage lending database.
 
 * Create a diagram using the [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) tool.
 
-* When you are satisfied with the conceptual diagram, update it to a physical ERD by including column data types and primary keys.
-
-* Update your existing diagram to reflect the changes.
-
 ## Hint
 
 Read this [documentation](https://www.visual-paradigm.com/support/documents/vpuserguide/3563/3564/85378_conceptual,l.html) for more in-depth explanations of entity relationship diagrams.
