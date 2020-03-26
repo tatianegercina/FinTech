@@ -8,15 +8,15 @@ Create a logical ERD for a mortgage lending database.
 
 * Use the following CSVs and their column names as a guide to generating the correct entities and attributes for the mortgage lending logical database model:
 
-  * ![customer.csv](Resources/customer.csv)
+  * [customer.csv](Resources/customer.csv)
 
-  * ![banks.csv](Resources/banks.csv)
+  * [banks.csv](Resources/banks.csv)
 
-  * ![sales.csv](Resources/sales.csv)
+  * [sales.csv](Resources/sales.csv)
 
-  * ![payments.csv](Resources/payments.csv)
+  * [payments.csv](Resources/payments.csv)
 
-  * ![mortgage.csv](Resources/mortgage.csv)
+  * [mortgage.csv](Resources/mortgage.csv)
 
 * Create a diagram using the [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) tool.
 
