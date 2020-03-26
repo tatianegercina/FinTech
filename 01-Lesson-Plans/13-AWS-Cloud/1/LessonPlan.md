@@ -275,15 +275,17 @@ Be sure that all the students were able to run this notebook and answer any ques
 
 ---
 
-### 2 (old). Instructor Do: Introduction to Unsupervised Learning (10 min)
+### 3. Instructor Do: Introduction to Unsupervised Learning (10 min)
 
 In this activity, students will be introduced to unsupervised learning and its most relevant applications.
 
-Open the lesson slides and go to the Introduction to Unsupervised Learning section.
+Explain to students that now you will introduce a new family of machine learning algorithms that are used to deal with unlabeled data.
+
+Open the lesson slides and go to the Introduction to "Unsupervised Learning" section.
 
 Start the presentation by explaining to students that, in general terms, machine learning has two main areas of application: supervised and unsupervised learning.
 
-Students are already familiar with supervised learning algorithms and its applications, highlight to students the main differences between these types of learning.
+From the previous units, students are already familiar with supervised learning algorithms and its applications, highlight to students the main differences between these types of learning.
 
 | Supervised Learning                | Unsupervised Learning                      |
 | ---------------------------------- | ------------------------------------------ |
@@ -301,7 +303,9 @@ Start a short facilitated discussion with students. Take one or two answers from
 
   **Sample answer:** We can use unsupervised learning to cluster stock data so we can create investment portfolios according to the resulting groups.
 
-As an example, continue with the presentation on the slide titled "How can we understand our customers?" and then move forward by highlighting the following:
+Continue with the presentation, move to the slide titled "How can we understand our customers?" and move forward by highlighting the following:
+
+* One of the most relevant uses of unsupervised learning, not only in FinTech, but also in some other sectors such as marketing, entertainment, or retail, is customer segmentation.
 
 * Beyond the typical segmentation variables, such as age, gender, income, or zip code, understanding customers is crucial in every sector.
 
@@ -341,7 +345,9 @@ End the presentation with a closing facilitated discussion. Ask the following qu
 
   **Sample answer:** Using customer segmentation, a portfolio can be categorized by industry, location, revenue, account size, and the number of employees to reveal where risk and opportunity live within the portfolio. These patterns can provide key measurable data for more predictive credit risk management.
 
-Explain to students that we will be learning how to use Scikit-learn and cloud-based tools to implement clustering and customer segmentation.
+Explain to students that in Today's class, they will learn how to use Scikit-learn to implement clustering and customer segmentation.
+
+Answer any questions before moving on.
 
 ---
 
