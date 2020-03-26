@@ -18,8 +18,8 @@ find 01-Lesson-Plans -type d -mindepth 1 -maxdepth 1 -exec cp -r {} build/01-Les
 
 pushd build/01-Lesson-Plans
 
-echo "Compress Lesson Images..."
-for f in $(find -E . -iregex ".*\.(jpg|png|jpeg)" -mindepth 1); do mv $f $f.raw && imagemin $f.raw > $f && rm $f.raw; done
+# echo "Compress Lesson Images..."
+# for f in $(find -E . -iregex ".*\.(jpg|png|jpeg)" -mindepth 1); do mv $f $f.raw && imagemin $f.raw > $f && rm $f.raw; done
 echo "Zip Lesson Folders..."
 find . -type d -maxdepth 1 -mindepth 1 -exec zip -rm {}.zip {} \;
 
@@ -32,8 +32,8 @@ find 02-Homework -type d -mindepth 1 -maxdepth 1 -exec cp -r {} build/02-Homewor
 
 pushd build/02-Homework
 
-echo "Compress Homework Images..."
-for f in $(find -E . -iregex ".*\.(jpg|png|jpeg)" -mindepth 1); do mv $f $f.raw && imagemin $f.raw > $f && rm $f.raw; done
+# echo "Compress Homework Images..."
+# for f in $(find -E . -iregex ".*\.(jpg|png|jpeg)" -mindepth 1); do mv $f $f.raw && imagemin $f.raw > $f && rm $f.raw; done
 echo "Zip Homework Folders..."
 find . -type d -maxdepth 1 -mindepth 1 -exec zip -rm {}.zip {} \;
 
@@ -46,8 +46,8 @@ find 03-Projects -type d -mindepth 1 -maxdepth 1 -exec cp -r {} build/03-Project
 
 pushd build/03-Projects
 
-echo "Compress Project Images..."
-for f in $(find -E . -iregex ".*\.(jpg|png|jpeg)" -mindepth 1); do mv $f $f.raw && imagemin $f.raw > $f && rm $f.raw; done
+# echo "Compress Project Images..."
+# for f in $(find -E . -iregex ".*\.(jpg|png|jpeg)" -mindepth 1); do mv $f $f.raw && imagemin $f.raw > $f && rm $f.raw; done
 echo "Zip Project folders..."
 find . -type d -maxdepth 1 -mindepth 1 -exec zip -rm {}.zip {} \;
 
