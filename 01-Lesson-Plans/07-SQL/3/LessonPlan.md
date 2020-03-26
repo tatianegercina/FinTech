@@ -764,11 +764,15 @@ Use the ERD slides and begin the discussion of entity relationship diagrams (ERD
 
 * An **entity relationship diagram**, or **ERD**, is a visual representation of entity relationships within a database.
 
+* ERDs are commonly interchanged with the term **data model**, as an ERD describes the relationships of tables within a database and therefore describes a model of a potential database.
+
 * An ERD defines entities, their attributes, and data types, as well as illustrates the overall design of a database.
 
-* There are three types of ERDs: conceptual, logical, and physical. These will be covered more in-depth as we advance through today's lesson.
+* There are three types of ERDs or data models: conceptual, logical, and physical. As the following image demonstrates, a conceptual data model is the simplest form, describing only entity names and relationships; a logical database model further expands upon the conceptual data model by additionally describing attributes or column names as well as primary and foreign key definition; a physical data expands upon the logical data model to additionally include column data types.
 
   ![conceptual-vs-logical-vs-physical](Images/conceptual-vs-logical-vs-physical.png)
+
+* The following break-down should provide a better understanding of the differences between the three data models.
 
   ```
   |----------------------|------------|---------|----------|
