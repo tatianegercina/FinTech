@@ -1029,44 +1029,25 @@ Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams
 
   ![customer.png](Images/customer.png)
 
+* When defining the *type* of entity relationship (one-to-one, one-to-many, many-to-many), it's important to think about how the data should interact with each other. For example, there can be multiple sales tied to a single payment record representing multiple mortgage contracts tied to a single bank account (many-to-one). However, a particular sale should only reference a single mortgage (one-to-one).
+
+  ```sql
+  Sales
+  -
+  sales_id INT PK
+  payment_id INT FK >- Payments.payment_id
+  mortgage_id INT FK - Mortgage.mortgage_id
+  loan_amount INT
+  loan_date DATE
+  ```
+
 Copy and paste the remaining text from `schema.txt` to create the additional tables. The final product should appear as follows:
 
   ![stu-logical-ERD.png](Images/stu-logical-ERD.png)
 
-
 * As previously described, the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) web app does not allow for defining abstract relationships between tables. Instead, in order to get the application to draw table or entity relationship lines, explicit foreign key definitions must be set. Normally, foreign key definition would fall under the classification of a physical data model.
 
   ![logical-erd-2](Images/logical-erd-2.png)
-
-* 
-
-* For example, in the `Members` table, several rows were added to demonstrate data relationships. A row named `Gym_ID` was added as a foreign key (`FK`), establishing a one-to-many relationship by using the `>-` symbol.
-
-* A row containing the `Trainer_ID` was also added to demonstrate the one-to-many relationship between the members and trainers. While one member will have no more than one trainer, one trainer may instruct many members.
-
-  ```sql
-  Gym_ID INTEGER FK >- Gym.Gym_ID
-  Trainer_ID INTEGER FK >- Trainers.Trainer_ID
-  ```
-
-* The `Trainers` table also has a one-to-many relationship (`>-`) created by adding a `Gym_ID` row to the table. While a trainer will be employed at a single gym, the gym will employ many trainers.
-
-  ```sql
-  Gym_ID INTEGER FK >- Gym.Gym_ID
-  ```
-
-* In the `Payments` table, a one-to-one relationship (`-`) is demonstrated by adding a `Member_ID` row and linking it to the `Members` table.
-
-  ```sql
-  Member_ID INTEGER FK - Members.Member_ID
-  ```
-
-
-
-
-
-
-
 
 Ask students if they created any other tables or connections, as there are many possible solutions in addition to those included here.
 
@@ -1160,7 +1141,7 @@ Return to pgAdmin in the browser and create a new database called `mortgage_db`.
 
 * Open a query tool and paste in the newly downloaded SQL code to create the tables defined in the diagram. Then execute the code.
 
-* The following lines of code will give the error `there is no unique constraint matching given keys for referenced table "Banks"`. This is because the `bank_routing_number` in the `Banks` table is not a unique primary key and therefore cannot be referenced. To resolve the issue,the `bank_routing_number` in the Payments table should be converted to a `bank_id` instead; however, without changing the underlying data for simplicity, we can just remove these lines.  
+* The following lines of code will give the error `there is no unique constraint matching given keys for referenced table "Banks"`. This is because the `bank_routing_number` in the `Banks` table is not a unique primary key and therefore cannot be referenced. To resolve the issue, the `bank_routing_number` in the Payments table should be converted to a `bank_id` instead; however, without changing the underlying data for simplicity, we can just remove these lines.  
 
   ```sql
   ALTER TABLE "Payments" ADD CONSTRAINT "fk_Payments_bank_routing_number" FOREIGN KEY("bank_routing_number")

@@ -19,8 +19,8 @@ bank_routing_number
 Sales
 -
 sales_id PK
-payment_id
-mortgage_id
+payment_id FK >- Payments.payment_id
+mortgage_id FK - Mortgage.mortgage_id
 loan_amount
 loan_date
 
@@ -28,8 +28,8 @@ Payments
 -
 payment_id PK
 bank_number
-bank_routing_number
-customer_id
+bank_routing_number FK - Banks.bank_routing_number
+customer_id FK -< Customer.customer_id
 
 Mortgage
 -
