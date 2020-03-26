@@ -16,8 +16,8 @@ the script into your backend with your dear old friend, Python.
 Once you've integrated this "universal" wallet, you can begin to manage billions of addresses across 300+ coins, giving
 you a serious edge against the competition.
 
-In this assignment, however, you will only need to get 2 coins working: Ethereum and Bitcoin Testnet.
-Ethereum keys are the same format on any network, so the Ethereum keys should work with your custom networks or testnets.
+In this assignment, however, you will only need to get two coins working: Ethereum and Bitcoin Testnet.
+Ethereum keys are the same format on any network, so they should work with your custom networks or testnets.
 
 ## Dependencies
 
@@ -37,13 +37,13 @@ Ethereum keys are the same format on any network, so the Ethereum keys should wo
 
 - Clone the `hd-wallet-derive` tool into this folder and install it using the instructions on its `README.md`.
 
-- Create a symlink called `derive` for the `hd-wallet-derive/hd-wallet-derive.php` script into the top level project
-  directory like so: `ln -s hd-wallet-derive/hd-wallet-derive.php derive`
+- Create a symlink called `derive` for the `hd-wallet-derive/hd-wallet-derive.php` script into the top-level project
+  directory, like so: `ln -s hd-wallet-derive/hd-wallet-derive.php derive`
 
   This will clean up the command needed to run the script in our code, as we can call `./derive`
   instead of `./hd-wallet-derive/hd-wallet-derive.php`.
 
-- Test that you can run the `./derive` script properly, use one of the examples on the repo's `README.md`
+- Test that you can run the `./derive` script properly, using one of the examples on the repo's `README.md`
 
 - Create a file called `wallet.py` -- this will be your universal wallet script.
 
