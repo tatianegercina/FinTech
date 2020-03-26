@@ -986,7 +986,19 @@ Answer any questions before moving on.
 
 In this activity, students will create a conceptual ERD for mortgage lending.
 
-**File:** [schema.txt](Activities/10-Stu_Designing_ERD/Unsolved/schema.txt)
+**Files:**
+
+* [schema.txt](Activities/10-Stu_Designing_ERD/Unsolved/schema.txt)
+
+* [customer.csv](Resources/customer.csv)
+
+* [banks.csv](Resources/banks.csv)
+
+* [sales.csv](Resources/sales.csv)
+
+* [payments.csv](Resources/payments.csv)
+
+* [mortgage.csv](Resources/mortgage.csv)
 
 **Instructions:** [README.md](Activities/10-Stu_Designing_ERD/README.md)
 
@@ -1020,7 +1032,19 @@ Answer any questions before moving on.
 
 In this activity, students will further improve the ERD by creating a physical ERD.
 
-**File:** [schema.txt](Activities/11-Stu_ERD/Unsolved/schema.txt)
+**Files:**
+
+* [schema.txt](Activities/11-Stu_ERD/Unsolved/schema.txt)
+
+* [customer.csv](Resources/customer.csv)
+
+* [banks.csv](Resources/banks.csv)
+
+* [sales.csv](Resources/sales.csv)
+
+* [payments.csv](Resources/payments.csv)
+
+* [mortgage.csv](Resources/mortgage.csv)
 
 **Instructions:** [README.md](Activities/11-Stu_ERD/README.md)
 
