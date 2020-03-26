@@ -758,7 +758,11 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to interpret and create an Entity Relationship Diagram (ERD) -- an asset that delineates the relationship among tables in a database.
 
-**File:** [pagila-erd.png](Images/pagila-erd.png)
+**Files:**
+
+* [pagila-erd.png](Images/pagila-erd.png)
+
+* [schema.txt](Activities/09-Ins_ERD/Solved/schema.txt)
 
 Use the ERD slides and begin the discussion of entity relationship diagrams (ERDs). Explain the following points:
 
@@ -815,7 +819,7 @@ Open [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com
 
   **Note**: When exporting the diagram as **PostgreSQL**, the table schemata are automatically generated.
 
-* With the design tool open in your browser, demonstrate how to begin setting up a simple conceptual data model based on today's activities:
+With the design tool open in your browser, demonstrate how to begin setting up a simple conceptual data model based on today's activities:
 
   ```sql
   Employee
@@ -856,72 +860,103 @@ Open [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com
 
   **Note:** Another diagraming tool called [draw.io](http://draw.io/) can be used to quickly and easily create simple conceptual data models.
 
-Begin transition from the conceptual ERD to a logical ERD. Using the following lines, update your current entities with data types using the Quick Database Diagrams tool.
+Begin transitioning from the conceptual ERD to a logical ERD. Using the following lines, update your current entities with data types using the Quick Database Diagrams tool.
 
   ```sql
   Employee
   -
-  Employee_ID
-  Name
-  Age
-  Address
-  Zipcode
+  employee_id
+  name
+  age
+  address
+  zip_code
 
   Zipcode
   -
-  Zip_Code
-  City
-  State
+  zip_code
+  city
+  state
 
   Employee_Email
   -
-  Email_ID
-  Employee_ID
-  Email
+  email_id
+  employee_id
+  email
 
   Owners
   -
-  Owner_ID
-  First_Name
-  Last_Name
+  owner_id
+  first_name
+  last_name
 
   Estates
   -
-  Estate_ID
-  Owner_ID
-  Estate_Type
-  Address
-  Zip_Code
+  estate_id
+  owner_id
+  estate_type
+  address
+  zip_code
 
   Estate_Type
   -
-  Estate_Type_ID
-  Estate_Type
+  estate_type_id
+  estate_type
 
   Agents
   -
-  Agent_ID
-  First_Name
-  Last_Name
+  agent_id
+  first_name
+  last_name
 
   Regions
   -
-  Region_ID
-  Region_Name
+  region_id
+  region_name
 
   Agent_Region_Junction
   -
-  Agent_ID
-  Region_ID
+  agent_id
+  region_id
   ```
 
 * The result should appear as follows:
 
   ![logical-erd-datatypes](Images/logical-erd-datatypes.png)
 
-* By defining the column types, this model has become more complex and is now considered a **logical model**.
+* The data model now contains data types but is not yet quite a full-fledged logical data model. This is because we need to continue to add in the foreign key relationships to represent the entity relationships in the diagram, as well as defining the primary keys for the tables.
 
-* Note that in addition to adding the data types for each column, an `ID` column has been included and designated as a primary key with the `PK` acronym.
+* Primary and foreign keys can be defined in the online diagram tool by using the `PK` and `FK` syntax after the attribute names of a table.
+
+  ```sql
+  Employee
+  -
+  employee_id PK
+  name
+  age
+  address
+  zip_code FK
+  ```
+
+* In order get the diagram to draw lines to represent the relationships between tables, the following syntax should be added to point the foreign key definition to the specific column of another table.
+
+  ```sql
+  Employee
+  -
+  employee_id PK
+  name
+  age
+  address
+  zip_code FK - Zipcode.zip_code
+  ```
+
+* In the line containing `FK - `, the hyphen signifies a one-to-one relationship between the `Employee` and `Zipcode` tables, where each zip code in the `Employee` table is linked to one zip code in the `Zipcode` table.
+
+* Many types of relationships between entities can be illustrated with symbols, such as:
+
+  ![entity-relationships.png](Images/entity-relationships.png)
+
+
+
 
     ![logical-erd.png](Images/logical-ERD.png)
 
@@ -945,11 +980,7 @@ Using the Quick Database Diagrams tool, include the physical relationships in th
   last_name VARCHAR
   ```
 
-* In the lines containing `FK - `, the hyphen signifies a one-to-one relationship between the tables, where each payment is linked to one customer using foreign keys.
 
-* Many types of relationships between entities can be illustrated with symbols, such as:
-
-  ![entity-relationships.png](Images/entity-relationships.png)
 
 * Point out that the diagram now has arrows connecting the entities, and that the connecting entities' text is now bold.
 
