@@ -721,11 +721,11 @@ and how they manage the funds.
 
 ### 19. Instructor Do: Exchange Design Review (10 min)
 
-While each group of students may have slightly different designs, generally, the centralize exchanges use similar implementations.
+While each group of students may have slightly different designs, the centralized exchanges generally use similar implementations.
 
 Have the students present their designs, picking a group leader to describe the architecture to the class.
 
-Ask the students the following questions:
+Ask students the following questions:
 
 * What type of wallet would be the best for an exchange to use?
 
@@ -733,7 +733,7 @@ Ask the students the following questions:
 
 * Should you keep all of the funds available to spend, or should you keep a percentage offline?
 
-  * **Answer:** You should store most of the funds offline, then when customers withdraw, do the withdraws in bulk.
+  * **Answer:** You should store most of the funds offline, and when customers withdraw, do the withdraws in bulk.
 
 * How might a decentralized exchange work differently?
 
@@ -741,7 +741,7 @@ Ask the students the following questions:
 
 * What is the advantage of a centralized exchange?
 
-  * **Answer:** Easy onboarding, you can hold the company liable.
+  * **Answer:** Easy onboarding, and you can hold the company liable.
 
   * **Answer:** Potentially higher liquidity, and leverage options. More advanced services may be provided.
 
@@ -777,4 +777,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
