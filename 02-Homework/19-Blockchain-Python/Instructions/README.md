@@ -45,7 +45,7 @@ Ethereum keys are the same format on any network, so they should work with your 
 
 - Test that you can run the `./derive` script properly, using one of the examples on the repo's `README.md`
 
-- Create a file called `wallet.py` -- this will be your universal wallet script.
+- Create a file called `wallet.py`—this will be your universal wallet script.
 
 Your directory tree should look something like this:
 
@@ -64,9 +64,9 @@ Your directory tree should look something like this:
 
 ### Generate a Mnemonic
 
-- Generate a new 12 word mnemonic using `hd-wallet-derive` or by using [this tool](https://iancoleman.io/bip39/).
+- Generate a new 12-word mnemonic using `hd-wallet-derive` or by using [this tool](https://iancoleman.io/bip39/).
 
-- Set this mnemonic as an environment variable, and include the one you generated as a fallback using:
+- Set this mnemonic as an environment variable, and include the one you generated as a fallback, using:
   `mnemonic = os.getenv('MNEMONIC', 'insert mnemonic here')`
 
 ### Deriving the wallet keys
@@ -83,7 +83,7 @@ Your directory tree should look something like this:
 - You should wrap all of this into one function, called `derive_wallets`
 
 - Create an object called `coins` that derives `ETH` and `BTCTEST` wallets with this function.
-  When done properly, the final object should look something like this (there are only 3 children each in this image):
+  When done properly, the final object should look something like this (there are only three children each in this image):
 
 ![wallet-object](Images/wallet-object.png)
 
@@ -142,7 +142,7 @@ You will need to create three more functions:
 ### Send some transactions!
 
 Now, you should be able to fund these wallets using testnet faucets. Open up a new terminal window inside of `wallet`,
-then run `python`. Within the Python shell, run `from wallet import *` -- you can now access the functions interactively.
+then run `python`. Within the Python shell, run `from wallet import *` — you can now access the functions interactively.
 You'll need to set the account with  `priv_key_to_account` and use `send_tx` to send transactions.
 
 #### Bitcoin Testnet transaction
@@ -153,7 +153,7 @@ You'll need to set the account with  `priv_key_to_account` and use `send_tx` to 
 
 - Send a transaction to another testnet address (either one of your own, or the faucet's).
 
-- Screenshot the confirmation of the transaction like so:
+- Screenshot the confirmation of the transaction, like so:
 
 ![btc-test](Images/btc-test.png)
 
@@ -178,7 +178,7 @@ w3.middleware_onion.inject(geth_poa_middleware, layer=0)
   or one of the `node` keystore files.
 
 - Send a transaction from the pre-funded address within the wallet to another, then copy the `txid` into
-  MyCrypto's TX Status, and screenshot the successful transaction like so:
+  MyCrypto's TX Status, and screenshot the successful transaction, like so:
 
 ![eth-test](Images/eth-test.png)
 
@@ -187,7 +187,7 @@ w3.middleware_onion.inject(geth_poa_middleware, layer=0)
 - Create a `README.md` that contains the test transaction screenshots, as well as the code used to send them.
   Pair the screenshot with the line(s) of code.
 
-- Write a short description about what the wallet does, what is is built with, and how to use it.
+- Write a short description about what the wallet does, what it is built with, and how to use it.
 
 - Include installing pip dependencies using `requirements.txt`, as well as cloning and installing `hd-wallet-derive`.
   You may include the `hd-wallet-derive` folder in your repo, but still include the install instructions. You do not
