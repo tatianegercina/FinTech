@@ -30,7 +30,7 @@ You are a database consultant at a national real estate firm. Your job is to des
 
 **Note:** Complete the bonus if time allows.
 
-Join and query the tables to get all data on the students.
+Join and query the tables to get all data on the agents.
 
 ---
 
