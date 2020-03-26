@@ -1023,7 +1023,7 @@ In this activity, students will create a conceptual ERD for mortgage lending.
 
 Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage and demonstrate the solution, using the code in the [`schema.txt`](Activities/10-Stu_Designing_ERD/Solved/schema.txt) file. Live code while explaining the following:
 
-* A logical ERD contains only basic information, such as the names of the tables and their attributes. In addition, a logical ERD will also define the foreign key relationships among tables; however, unlike a physical data model, the *types* of relationships (one-to-one, one-to-many, many-to-many) have yet to be defined.
+* A logical ERD contains only basic information, such as the names of the tables and their attributes. In addition, a logical ERD can also define primary keys and foreign key relationships among tables; however, unlike a physical data model, the data types of column names have yet to be defined.
 
 * Creating a diagram looks similar to writing code. For example, in the following image, `Customer` followed by the hyphen, creates the table name within the diagram.
 
@@ -1032,6 +1032,41 @@ Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams
 Copy and paste the remaining text from `schema.txt` to create the additional tables. The final product should appear as follows:
 
   ![stu-logical-ERD.png](Images/stu-logical-ERD.png)
+
+
+* As previously described, the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) web app does not allow for defining abstract relationships between tables. Instead, in order to get the application to draw table or entity relationship lines, explicit foreign key definitions must be set. Normally, foreign key definition would fall under the classification of a physical data model.
+
+  ![logical-erd-2](Images/logical-erd-2.png)
+
+* 
+
+* For example, in the `Members` table, several rows were added to demonstrate data relationships. A row named `Gym_ID` was added as a foreign key (`FK`), establishing a one-to-many relationship by using the `>-` symbol.
+
+* A row containing the `Trainer_ID` was also added to demonstrate the one-to-many relationship between the members and trainers. While one member will have no more than one trainer, one trainer may instruct many members.
+
+  ```sql
+  Gym_ID INTEGER FK >- Gym.Gym_ID
+  Trainer_ID INTEGER FK >- Trainers.Trainer_ID
+  ```
+
+* The `Trainers` table also has a one-to-many relationship (`>-`) created by adding a `Gym_ID` row to the table. While a trainer will be employed at a single gym, the gym will employ many trainers.
+
+  ```sql
+  Gym_ID INTEGER FK >- Gym.Gym_ID
+  ```
+
+* In the `Payments` table, a one-to-one relationship (`-`) is demonstrated by adding a `Member_ID` row and linking it to the `Members` table.
+
+  ```sql
+  Member_ID INTEGER FK - Members.Member_ID
+  ```
+
+
+
+
+
+
+
 
 Ask students if they created any other tables or connections, as there are many possible solutions in addition to those included here.
 
@@ -1067,34 +1102,9 @@ In this activity, students will transition their mortgage lending logical ERD to
 
 Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage. Copy and paste the solution using the code in the [`schema.txt`](Activities/11-Stu_ERD/Solved/schema.txt) file and explain the following:
 
-* Transitioning a logical ERD to a physical ERD involves adding the appropriate primary keys, foreign key relationships, and column data types. Essentially, a physical data model describes the database implementation of a logical data model.
+* Transitioning a logical ERD to a physical ERD is fairly simple. Assuming the tables, column names, primary keys, and foreign key relationships have already been set, all that is left for transitioning a logical data model to a physical data model is adding the appropriate column data types.
 
-* As previously described, the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) web app does not allow for defining abstract relationships between tables. Instead, in order to get the application to draw table or entity relationship lines, explicit foreign key definitions must be set. Normally, foreign key definition would fall under the classification of a physical data model.
-
-  ![logical-erd-2](Images/logical-erd-2.png)
-
-* 
-
-* For example, in the `Members` table, several rows were added to demonstrate data relationships. A row named `Gym_ID` was added as a foreign key (`FK`), establishing a one-to-many relationship by using the `>-` symbol.
-
-* A row containing the `Trainer_ID` was also added to demonstrate the one-to-many relationship between the members and trainers. While one member will have no more than one trainer, one trainer may instruct many members.
-
-  ```sql
-  Gym_ID INTEGER FK >- Gym.Gym_ID
-  Trainer_ID INTEGER FK >- Trainers.Trainer_ID
-  ```
-
-* The `Trainers` table also has a one-to-many relationship (`>-`) created by adding a `Gym_ID` row to the table. While a trainer will be employed at a single gym, the gym will employ many trainers.
-
-  ```sql
-  Gym_ID INTEGER FK >- Gym.Gym_ID
-  ```
-
-* In the `Payments` table, a one-to-one relationship (`-`) is demonstrated by adding a `Member_ID` row and linking it to the `Members` table.
-
-  ```sql
-  Member_ID INTEGER FK - Members.Member_ID
-  ```
+* ![stu-physical-erd](stu-physical-erd.png)
 
 Export the full schema from Quick Database Diagrams as a PostgreSQL file to demonstrate how schema creation code is converted to PostgreSQL code.
 
