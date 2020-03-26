@@ -762,6 +762,33 @@ Walk through the solution and highlight the following:
 
   ![regions_per_agent](Images/regions_per_agent.png)
 
+* For the first bonus, in order to get the number of regions per agent full name, we will need to join to the `agents` table from the `agent_region_junction` table and use the `CONCAT` function to combine the agent `first_name` and `last_name` to form the agent full name. Then group by the concatenated agent full name.
+
+  ```python
+  query = """
+  SELECT CONCAT(a.first_name, ' ', a.last_name) as agent_name, COUNT(region_id) as region_count
+  FROM agents as a
+  LEFT JOIN agent_region_junction as b ON a.agent_id = b.agent_id
+  GROUP BY CONCAT(a.first_name, ' ', a.last_name)
+  """
+  ```
+
+  ![regions-per-agent-full-name](Images/regions-per-agent-full-name.png)
+
+* For the second bonus, in order to get the number of agents per region name, we will need to join all three tables to then group by the region name and count the number of agents.
+
+  ```python
+  query = """
+  SELECT region_name, COUNT(a.agent_id) as agent_count
+  FROM agents a
+  LEFT JOIN agent_region_junction b ON a.agent_id = b.agent_id
+  LEFT JOIN regions c ON b.region_id = c.region_id
+  GROUP BY c.region_name
+  """
+  ```
+
+  ![agents-per-region](Images/agents-per-region.png)
+
 Answer any questions before moving on.
 
 ### 15. Instructor Do: Entity Relationship Diagrams (10 min)
