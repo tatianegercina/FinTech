@@ -86,6 +86,8 @@ Together with the class, walk through the following steps:
 
 * Run `SELECT * FROM actor LIMIT 100;` to confirm that the import was successful.
 
+  ![import-success](Images/import-success.png)
+
   **Optional:** Right-click the "actor" table and view the first 100 rows to check that the data was imported correctly.
 
 Have the class repeat this process for the remaining tables using the CSV files provided in the Resources folder.
