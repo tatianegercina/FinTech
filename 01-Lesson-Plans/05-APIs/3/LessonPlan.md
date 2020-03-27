@@ -420,7 +420,7 @@ Open the solution and explain the following:
 
 ### 9. Instructor Do: Simulation of Stock Price Trajectory (10 min)
 
-This activity exemplifies the use case where a Monte Carlo simulation can be applied to a historical dataset such as daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution. Stock datasets will be pulled in from the IEX API and used to generate a Monte Carlo simulation-based off a normally distributed random process using the dataset's calculated average and standard deviation of daily returns.
+This activity exemplifies the use case where a Monte Carlo simulation can be applied to a historical dataset such as daily closing stock prices, given the assumption that daily closing stock prices have a normal probability distribution. Stock datasets will be pulled in from the Alpaca API and used to generate a Monte Carlo simulation-based off a normally distributed random process using the dataset's calculated average and standard deviation of daily returns.
 
 **Files:**
 
@@ -434,32 +434,49 @@ Walkthrough the solution and highlight the following:
 
   ![example-normal-distribution](Images/example-normal-distribution.png)
 
-* The daily closing stock price data will be pulled using the `iexfinance` SDK that connects to the `iex` API. Therefore, make sure to import the necessary libraries and dependencies before proceeding.
+* The daily closing stock price data will be pulled using the `Alpaca-trade-api` SDK that connects to the `Alpaca` API. Therefore, make sure to import the necessary libraries and dependencies before proceeding.
 
   ```python
   # Import libraries and dependencies
   import numpy as np
   import pandas as pd
+  import os
   from datetime import datetime, timedelta
-  from iexfinance.stocks import get_historical_data
-  import iexfinance as iex
   import matplotlib.pyplot as plt
+  import alpaca_trade_api as tradeapi
   %matplotlib inline
   ```
 
-* Use the `get_symbols` function from the `refdata` class of the `iex` SDK to check the available stock ticker data that can be pulled from the `iex` API.
+* Now that you have imported the `alpaca-trade-api` and it's required dependencies we are going to list out the available, tradeable assets.
 
-  ![iex-check-tickers](Images/iex-check-tickers.png)
+* Use the `list_assets()` function from the `tradeapi` object to check the available stock ticker data that can be pulled from the `Alpaca` API. Then iterate over the data to only keep the currently tradeable assets.
 
-* The `get_historical_data` function from the `iexfinance` SDK takes in a `ticker`, `start_date`, and `end_date` parameter with an `output_format` option set to `pandas` to return a DataFrame of `AAPL` daily stock prices. The `start_date` and `end_date` variables, in this case, are set to `365` days from the current date and the current date, respectively.
+  ![alpaca-list-assets](Images/alpaca-list-assets.png)
 
-  ![iex-get-data](Images/iex-get-data.png)
+* Create a new empty DataFrame named `asset_info_df`. Convert the python list of assets to a panda's series and then define a new column in your DataFrame named `symbol` with that series.
 
-* Simulating stock price trajectory involves analyzing the closing prices of a stock. Therefore, it's best to drop the extraneous columns for the `AAPL` price data received from the `iex` API.
+  ![alpaca-list-assets-df](Images/alpaca-list-assets-df.png)
+
+* The `get_barset()` function from the `Alpaca` SDK takes in the following parameters
+  *  `ticker`,
+  *  `timeframe`,
+  *  `limit`,
+  *  `start_date`,
+  *  `end_date`,
+  *  `after`,
+  *  `until`
+
+* And returns an object containing a DataFrame of `AAPL` daily stock prices. The `start_date` and `end_date` variables, in this case, are set to `365` days from the `current date` and the `current date`, respectively.
+
+  ![alpaca-get-barset](Images/alpaca-get-barset.png)
+
+* The DataFrame object from the Alpaca SDK contains an outer level (`level 0`) that is not needed, drop this level using the `df.droplevel` function.
+
+*  Simulating stock price trajectory involves analyzing the closing prices of a stock. Therefore, it's best to drop the extraneous columns for the `AAPL` price data received from the `Alpaca` API.
 
   ![dataframe-drop-columns](Images/dataframe-drop-columns.png)
 
-* In order to simulate `AAPL` stock prices for the next `252` trading days, the simulation must be framed in the context of a stock's *growth*. Therefore, the `pct_change` function is used to calculate the last year of daily returns for `AAPL`, and the `mean` and `std` functions are used to calculate the average daily return and the volatility of daily returns.
+* To simulate `AAPL` stock prices for the next `252` trading days, the simulation must be framed in the context of a stock's *growth*. Therefore, the `pct_change` function is used to calculate the last year of daily returns for `AAPL`, and the `mean` and `std` functions are used to calculate the average daily return and the volatility of daily returns.
 
   ![aapl-daily-returns](Images/aapl-daily-returns.png)
 
@@ -508,13 +525,12 @@ In this activity, students execute a Monte Carlo simulation to forecast stock pr
 
 Open the solution and explain the following:
 
-* Make sure that the `IEX_TOKEN` environment variable is properly set so that the `iexfinance` SDK can communicate to the `IEX Cloud` API. Navigate [here](https://addisonlynch.github.io/iexfinance/stable/configuration.html) for more details on how to do so.
+* Make sure that the `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` environment variables are properly set in your projects `.env` file so that the `alpaca-trade-api` SDK can communicate to the `Alpaca` API.
+  ![alpaca-api-error](Images/alpaca-api-error.png)
 
-  ![missing-api-key](Images/missing-api-key.PNG)
+* The `get_historical_data` function in conjunction with the `datetime` library pulls stock data from the `Alpaca` API using a dynamic datetime range. Specifically, `start_date` and `end_date` variables are not hard-coded.
 
-* The `get_historical_data` function in conjunction with the `datetime` library pulls stock data from the `IEX Cloud` API using a dynamic datetime range. Specifically, `start_date` and `end_date` variables are not hard-coded.
-
-  ![datetime-range](Images/datetime-range.PNG)
+  ![datetime-range](Images/alpaca-data-tsla.png)
 
 * Applying a Monte Carlo simulation to forecasting the future daily closing prices of `TSLA` stock involves multiplying the closing price of each preceding trading day by a randomly generated daily return approximated by a normal probability distribution given the historical average and standard deviation of `TSLA` daily returns.
 
@@ -546,7 +562,7 @@ In this activity, students go one step further to produce not just a single pote
 
 Walkthrough the solution and highlight the following:
 
-* Simulating a single price trajectory for a stock, with respect to its average daily return and volatility, is but one pathway of which the stock price could move over time. Therefore, in order to analyze the possible ranges of where a stock price might end up, multiple simulations of stock price trajectories need to be run.
+* Simulating a single price trajectory for a stock, with respect to its average daily return and volatility, is but one pathway of which the stock price could move over time. Therefore, to analyze the possible ranges of where a stock price might end up, multiple simulations of stock price trajectories need to be run.
 
   ![multiple-stock-simulation](Images/multiple-stock-simulation.PNG)
 
@@ -685,9 +701,9 @@ In this activity, students ascend to the final step and learn to project not one
 
 Walkthrough the solution and highlight the following:
 
-* The `get_historical_data` function of the `iexfinance` SDK can provide stock price data for more than one ticker in a single API call. Supplying a list of tickers with the `output_format` parameter set to `pandas` returns a multilevel index DataFrame.
+* The `get_barset()` function of the `alpaca-trade-api` SDK can provide stock price data for more than one ticker in a single API call.
 
-  ![iex-multi-level-index](Images/iex-multi-level-index.png)
+  ![multi-level-index](Images/iex-multi-level-index.png)
 
 * To drop specific columns of a multilevel index DataFrame, use the `drop` function with the `level` parameter to specify the *level* of the DataFrame.
 
@@ -875,7 +891,7 @@ The content in this lesson is probably the most difficult material students have
 
 Make sure students can recognize and acknowledge their accomplishments. Communicate that
 
-* They've added another tool to their API-SDK tool belt: the IEX SDK, which is a great resource for historical stock data and financial functions.
+* They've added another tool to their API-SDK tool belt: the Alpaca Trade API SDK, which is a great resource for historical stock data and financial functions.
 
 * They've taken yet another deep dive into statistics, learning how to create, calculate, and interpret probability distributions. This includes using mean, standard deviation**, **daily returns, Numpy's random data generators, and histograms in order to implement and visualize portfolio simulations.
 
