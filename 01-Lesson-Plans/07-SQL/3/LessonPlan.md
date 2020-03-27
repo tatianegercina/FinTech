@@ -893,6 +893,49 @@ With the design tool open in your browser, demonstrate how to begin setting up a
 
   **Note**: The tables' locations can be physically adjusted by clicking and dragging them in the browser.
 
+* Explain to the class that at this point, the conceptual data model contains entities; however, it does not have describe any entity relationships. In order to create the relationships between tables, use the `rel <entity-name>` syntax to create abstract relationships between tables.
+
+```sql
+Employee
+rel Zipcode
+-
+
+Zipcode
+-
+
+Employee_Email
+rel Employee
+-
+
+Owners
+-
+
+Estates
+rel Owners
+rel Estate_Type
+rel Zipcode
+-
+
+Estate_Type
+-
+
+Agents
+-
+
+Regions
+-
+
+Agent_Region_Junction
+rel Agents
+rel Regions
+-
+```
+
+* The results should now appear as follows:
+
+  ![conceptual-data-model-entities](Images/conceptual-data-model-entities.png)
+
+
 * Explain to the class that normally a conceptual model would contain the entity relationships among the tables; however due to the nature of the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) web app, entity relationships can only be drawn via explicit foreign key definitions. Therefore, we will have to transition to a logical data model to view the relationships for this particular demonstration.
 
   **Note:** Another diagraming tool called [draw.io](http://draw.io/) can be used to quickly and easily create simple conceptual data models.
