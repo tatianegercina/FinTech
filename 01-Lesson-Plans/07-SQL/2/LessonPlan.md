@@ -82,6 +82,8 @@ Together with the class, walk through the following steps:
 
 * Import `actor.csv`.
 
+![import-data](Images/import-data.png)
+
 * Run `SELECT * FROM actor LIMIT 100;` to confirm that the import was successful.
 
   **Optional:** Right-click the "actor" table and view the first 100 rows to check that the data was imported correctly.
