@@ -221,6 +221,8 @@ In this activity, students will practice writing queries with aggregate function
 
 * [payment.csv](Activities/03-Stu_GregariousAggregates/Resources/payment.csv)
 
+* [query.sql](Activities/03-Stu_GregariousAggregates/Unsolved/query.sql)
+
 **Instructions:** [README.md](Activities/03-Stu_GregariousAggregates/README.md)
 
 ### 5. Instructor Do: Review Gregarious Aggregates (5 min)
@@ -235,7 +237,7 @@ In this activity, students will practice writing queries with aggregate function
 
 Review the solution in pgAdmin and explain the following:
 
-* By using the `AVG`, `SUM`, `MIN`, and `MAX` aggregate functions on the `amount` column of the `payment` table, the average, total, minimum, and maxmium payment can be determined.
+* By using the `AVG`, `SUM`, `MIN`, and `MAX` aggregate functions on the `amount` column of the `payment` table, the average, total, minimum, and maximum payments can be determined.
 
   ```sql
   SELECT AVG(amount) AS "avg_payment_amount"
@@ -283,7 +285,7 @@ Open pgAdmin and explain the following:
 
   ```sql
   SELECT film_id, AVG(length)  AS "avg length" FROM film
-  GROUP BY film_id, title
+  GROUP BY film_id
   ORDER BY "avg length";
   ```
 
@@ -321,6 +323,8 @@ In this activity, you will use `ORDER BY` in combination with other SQL methods 
 **Files:**
 
 * [payment.csv](Activities/05-Stu_Order_By/Resources/payment.csv)
+
+* [query.sql](Activities/05-Stu_Order_By/Unsolved/query.sql)
 
 **Instructions:** [README.md](Activities/05-Stu_Order_By/README.md)
 
@@ -700,7 +704,7 @@ Review the code in the solution file and explain the following:
   ORDER BY SUM(amount) DESC;
   ```
 
-* Querying the newly created `customer_revnues` view for `THERESA ROGERS` shows her total payment count and total revenues generated.
+* Querying the newly created `customer_revenues` view for `THERESA ROGERS` shows her total payment count and total revenues generated.
 
   ```sql
   SELECT *
@@ -818,7 +822,7 @@ The sample query would be as follows:
 
 * `COUNT(*)` will count the number of rows, similar to how `SELECT *` will select all rows. The asterisk indicates *all*.
 
-Run the query, which will return that 12 people have rented this film.
+Run the query, which will return that 16 people have rented this film.
 
 Explain that there are often multiple ways to find this result through different table relationships.
 
@@ -842,7 +846,7 @@ In this activity, students will continue to practice subqueries. Students can ei
 
 Review the solution to the activity and answer any questions that students have.
 
-* The first question calls for all of the titles rented out by the staff member `Jon Stephens`. Therefore, when using subqueries, the `staff_id` of `Jon Stephens` must first be determined so that it can used "up-the-chain" to the `payment`, `rental`, `inventory`, and `film` tables where we finally pull the `title` column.
+* The first question calls for all of the titles rented out by the staff member `Jon Stephens`. Therefore, when using subqueries, the `staff_id` of `Jon Stephens` must first be determined so that it can be used "up-the-chain" to the `payment`, `rental`, `inventory`, and `film` tables where we finally pull the `title` column.
 
   ```sql
   SELECT title

@@ -8,11 +8,11 @@ Use the `payment` table to answer the following questions:
 
 1. What is the average payment amount?
 
-2. What is the total payment amouht?
+2. What is the total payment amount?
 
-3. What is the minimum payment amouht?
+3. What is the minimum payment amount?
 
-4. What is the maxiumum payment amouht?
+4. What is the maximum payment amount?
 
 5. What is the count of payments for each customer?
 

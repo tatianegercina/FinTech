@@ -5,14 +5,14 @@ FROM payment
 GROUP BY customer_id
 ORDER BY COUNT(*) DESC;
 
--- Find the top 5 customers who have spend the most money
+-- Find the top 5 customers who have spent the most money
 SELECT customer_id, SUM(amount) AS total_payment_amount
 FROM payment
 GROUP BY customer_id
 ORDER BY SUM(amount) DESC
 LIMIT 5;
 
--- Find the bottom 5 customers who have spend the least money
+-- Find the bottom 5 customers who have spent the least money
 SELECT customer_id, SUM(amount) AS total_payment_amount
 FROM payment
 GROUP BY customer_id

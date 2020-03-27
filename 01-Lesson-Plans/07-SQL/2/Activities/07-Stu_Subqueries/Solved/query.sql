@@ -1,4 +1,4 @@
--- 1. Find the customer records of those who have made payments.
+-- 1. Find the customer first and last names of those who have made payments.
 SELECT first_name, last_name
 FROM customer
 WHERE customer_id IN
