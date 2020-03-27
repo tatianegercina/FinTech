@@ -18,8 +18,8 @@ PostgreSQL additionally provides a Command Line Interface (CLI) to not only acce
 
 In order to access the postgreSQL CLI, you'll have to first set the `PATH` environment variable to point to the postgreSQL binaries. Windows users will have to use the Command Prompt as Git Bash has issues with the psql CLI. When ready, run one of the following commands depending on your operating system:
 
-* Mac OS: `export PATH="$PATH:/Library/PostgreSQL/12/bin"`.
-* Windows: `SET PATH="%PATH%;C:\Program Files\PostgreSQL\12\bin"`
+* Mac OS: `export PATH=$PATH:/Library/PostgreSQL/12/bin`.
+* Windows: `SET PATH=%PATH%;C:\Program Files\PostgreSQL\12\bin`
 
 **Note:** At the time of this writing, PostgreSQL has been updated to version 12. Therefore, if your PostgreSQL version is still on 11, then your paths may be the following instead:
 
