@@ -82,7 +82,7 @@ Together with the class, walk through the following steps:
 
 * Import `actor.csv`.
 
-![import-data](Images/import-data.png)
+  ![import-data](Images/import-data.png)
 
 * Run `SELECT * FROM actor LIMIT 100;` to confirm that the import was successful.
 
