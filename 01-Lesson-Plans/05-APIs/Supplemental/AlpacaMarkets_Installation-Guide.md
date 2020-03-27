@@ -54,6 +54,28 @@ Save this file in the same folder as your python script or jupyter notebook file
 
   ![alpaca-env-save](Images/alpaca-env-save.png)
 
+  ![env-folder](Images/env-folder.png)
+
+## Enabling Hidden Files
+
+To work with `.env` files on your machine you will need to be able to view hidden files on your machine.
+
+  * Windows
+
+    * [Microsoft.com - Enabling Hidden Files](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files)
+
+  * Mac OSX
+
+    * Open FInder
+
+    * Press Command + Shift + Dot
+
+  * Linux (Ubuntu)
+
+    * Open your file manager
+
+    * Press Ctrl + H
+
 ## Usage
 
 Lastly, run `jupyter-lab`. You may have to restart `jupyter-lab` if it is already running in the terminal in order for `jupyter-lab` to re-scan the environment for new variables.
