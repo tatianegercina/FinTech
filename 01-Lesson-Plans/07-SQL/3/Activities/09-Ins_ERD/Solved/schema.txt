@@ -1,54 +1,67 @@
---Conceptual
+--Conceptual (without relationships)
 
 Employee
 -
-Employee_ID
-Name
-Age
-Address
-Zipcode
 
 Zipcode
 -
-Zip_Code
-City
-State
 
 Employee_Email
 -
-Email_ID
-Employee_ID
-Email
 
 Owners
 -
-Owner_ID
-First_Name
-Last_Name
 
 Estates
 -
-Address
-Zip_Code
 
 Estate_Type
 -
-Estate_Type
 
 Agents
 -
-First_Name,
-Last_Name
 
 Regions
 -
-Region_Name
 
 Agent_Region_Junction
 -
-Agent_ID
-Region_ID
 
+-- Conceptual (with relationships)
+
+Employee
+rel Zipcode
+-
+
+Zipcode
+-
+
+Employee_Email
+rel Employee
+-
+
+Owners
+-
+
+Estates
+rel Owners
+rel Estate_Type
+rel Zipcode
+-
+
+Estate_Type
+-
+
+Agents
+-
+
+Regions
+-
+
+Agent_Region_Junction
+rel Agents
+rel Regions
+-
 
 
 --Logical
