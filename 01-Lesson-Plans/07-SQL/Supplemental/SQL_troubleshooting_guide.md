@@ -21,16 +21,24 @@ In order to access the postgreSQL CLI, you'll have to first set the `PATH` envir
 * Mac OS: `export PATH="$PATH:/Library/PostgreSQL/12/bin"`.
 * Windows: `SET PATH="%PATH%;C:\Program Files\PostgreSQL\12\bin"`
 
-**Note:** At the time of this writing, PostgreSQL has been updated to version 12. Therefore, if your PostgreSQL version is still on 11, then you paths may be the following instead:
+**Note:** At the time of this writing, PostgreSQL has been updated to version 12. Therefore, if your PostgreSQL version is still on 11, then your paths may be the following instead:
 
 * Mac OS: `/Library/PostgreSQL/11/bin`
 * Windows: `C:\Program Files\PostgreSQL\11\bin`
+
+Make sure to check that the PATH changes have gone into effect; use the respective `ECHO` syntax for your operating system to query the contents of the environmental `PATH` variable. You may have to restart your terminal for changes to go into effect.
 
 ![export-psql-path](Images/export-psql-path.png)
 
 ![export-psql-path-windows](Images/export-psql-path-windows.PNG)
 
-Now navigate to the folder containing the .sql file and run the following command: `psql -U postgres -d animals_db -f bird_song.sql`.
+Now navigate to the folder containing the .sql file and run the following command:
+
+`psql -U <username> -d <database> -f <sql-file>`.
+
+In this case, the command should be the following:
+
+`psql -U postgres -d mortgage_db -f seed.sql`.
 
 * `psql`: The postgreSQL CLI
 * `-U` : The username of the postgreSQL account.
