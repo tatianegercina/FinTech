@@ -1005,7 +1005,7 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
 
   ![logical-erd-column-names](Images/logical-erd-column-names.png)
 
-* The data model now contains data types but is not yet quite a full-fledged logical data model. This is because we need to continue to add in the foreign key relationships to represent the entity relationships in the diagram, as well as defining the primary keys for the tables.
+* The data model now contains column names but is not yet quite a full-fledged logical data model. This is because we need to continue to add in the foreign key relationships to represent the *types* of entity relationships in the diagram, as well as defining the primary keys for the tables. As of this point, the `rel <entity-name>` syntax only describe abstract relationships between tables.
 
 * Primary and foreign keys can be defined in the online diagram tool by using the `PK` and `FK` syntax after the attribute names of a table.
 
@@ -1019,7 +1019,7 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
   zip_code FK
   ```
 
-* In order get the diagram to draw lines to represent the relationships between tables, the following syntax should be added to point the foreign key definition to the specific column of another table.
+* The following syntax should be added to point the foreign key definition to the specific column of another table.
 
   ```sql
   Employee
