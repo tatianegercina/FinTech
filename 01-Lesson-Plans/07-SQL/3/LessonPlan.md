@@ -895,55 +895,51 @@ With the design tool open in your browser, demonstrate how to begin setting up a
 
 * Explain to the class that at this point, the conceptual data model contains entities; however, it does not have describe any entity relationships. In order to create the relationships between tables, use the `rel <entity-name>` syntax to create abstract relationships between tables.
 
-```sql
-Employee
-rel Zipcode
--
+  ```sql
+  Employee
+  rel Zipcode
+  -
 
-Zipcode
--
+  Zipcode
+  -
 
-Employee_Email
-rel Employee
--
+  Employee_Email
+  rel Employee
+  -
 
-Owners
--
+  Owners
+  -
 
-Estates
-rel Owners
-rel Estate_Type
-rel Zipcode
--
+  Estates
+  rel Owners
+  rel Estate_Type
+  rel Zipcode
+  -
 
-Estate_Type
--
+  Estate_Type
+  -
 
-Agents
--
+  Agents
+  -
 
-Regions
--
+  Regions
+  -
 
-Agent_Region_Junction
-rel Agents
-rel Regions
--
-```
+  Agent_Region_Junction
+  rel Agents
+  rel Regions
+  -
+  ```
 
 * The results should now appear as follows:
 
   ![conceptual-data-model-entities](Images/conceptual-data-model-entities.png)
 
-
-* Explain to the class that normally a conceptual model would contain the entity relationships among the tables; however due to the nature of the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) web app, entity relationships can only be drawn via explicit foreign key definitions. Therefore, we will have to transition to a logical data model to view the relationships for this particular demonstration.
-
-  **Note:** Another diagraming tool called [draw.io](http://draw.io/) can be used to quickly and easily create simple conceptual data models.
-
-Begin transitioning from the conceptual ERD to a logical ERD. Using the following lines, update your current entities with data types using the Quick Database Diagrams tool.
+Begin transitioning from the conceptual ERD to a logical ERD. Using the following lines, update your current entities with column names using the Quick Database Diagrams tool.
 
   ```sql
   Employee
+  rel Zipcode
   -
   employee_id
   name
@@ -958,6 +954,7 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
   state
 
   Employee_Email
+  rel Employee
   -
   email_id
   employee_id
@@ -970,6 +967,9 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
   last_name
 
   Estates
+  rel Owners
+  rel Estate_Type
+  rel Zipcode
   -
   estate_id
   owner_id
@@ -994,6 +994,8 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
   region_name
 
   Agent_Region_Junction
+  rel Agents
+  rel Regions
   -
   agent_id
   region_id
