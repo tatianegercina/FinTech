@@ -71,7 +71,11 @@ Database connection strings often consist of the following parameters:
 
 The database connection string in this case was the following:
 
-* `postgresql://postgres:postgres@localhost:5432/animals_db`
+* `postgresql://postgres:postgres@localhost:5432/mortgage_db`
+
+Then, instantiate a connection to the database by using the newly created database connection string with the `create_engine` function.
+
+![create-engine](Images/create-engine.png)
 
 Finally, now that the connection to the PostgreSQL database has been established, the `to_sql` function can be used to write DataFrame contents to the specified PostgreSQL table. The `to_sql` function uses the following parameters:
 
