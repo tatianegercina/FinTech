@@ -517,6 +517,8 @@ In this activity, students will practice creating subqueries.
 
 * [rental.csv](Activities/07-Stu_Subqueries/Resources/rental.csv)
 
+* [query.sql](Activities/07-Stu_Subqueries/Unsolved/query.sql)
+
 **Instructions:** [README.md](Activities/07-Stu_Subqueries/README.md)
 
 ### 12. Instructor Do: Review Subqueries (5 min)
@@ -679,6 +681,8 @@ In this activity, students will pair up and practice their join and subquery ski
 
 * [customer.csv](Activities/09-Stu_View_Room_Queries/Resources/customer.csv)
 
+* [query.sql](Activities/09-Stu_View_Room_Queries/Unsolved/query.sql)
+
 **Instructions:** [README.md](Activities/09-Stu_View_Room_Queries/README.md)
 
 ### 15. Instructor Do: Review a View with a Roomful of Queries (5 min)
@@ -831,6 +835,20 @@ Answer any questions before moving on.
 ### 17. Student Do: Mine the Subquery (10 min)
 
 In this activity, students will continue to practice subqueries. Students can either work individually or in pairs.
+
+**Files**:
+
+* [customer.csv](Activities/11-Stu_Mine_the_Subquery/Resources/customer.csv)
+
+* [film.csv](Activities/11-Stu_Mine_the_Subquery/Resources/film.csv)
+
+* [inventory.csv](Activities/11-Stu_Mine_the_Subquery/Resources/inventory.csv)
+
+* [payment.csv](Activities/11-Stu_Mine_the_Subquery/Resources/payment.csv)
+
+* [rental.csv](Activities/11-Stu_Mine_the_Subquery/Resources/rental.csv)
+
+* [query.sql](Activities/11-Stu_Mine_the_Subquery/Unsolved/query.sql)
 
 **Instructions:** [README.md](Activities/11-Stu_Mine_the_Subquery/README.md)
 
