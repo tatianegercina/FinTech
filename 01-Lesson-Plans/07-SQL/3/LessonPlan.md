@@ -1003,7 +1003,7 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
 
 * The result should appear as follows:
 
-  ![logical-erd-datatypes](Images/logical-erd-datatypes.png)
+  ![logical-erd-column-names](Images/logical-erd-column-names.png)
 
 * The data model now contains data types but is not yet quite a full-fledged logical data model. This is because we need to continue to add in the foreign key relationships to represent the entity relationships in the diagram, as well as defining the primary keys for the tables.
 
