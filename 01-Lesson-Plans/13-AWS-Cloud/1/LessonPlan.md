@@ -864,7 +864,7 @@ Answer any questions before moving on.
 
 ---
 
-### 12. Student Do: PCA in Action (20 min)
+### 12. Student Do: PCA in Action (15 min)
 
 In this activity, students will use PCA to reduce the dimensions of the consumers' shopping dataset.
 
