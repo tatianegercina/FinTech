@@ -1,6 +1,6 @@
 # Clustering Customers for E-Commerce
 
-Once you have prepared the data, it's time to start looking for patterns that could lead you to define customer clusters. After talking with the CFO of the company about the next-quarter goals, you figured out that one way to understand customers, from the available data, is to cluster them according their spending capacity. However, you have to find how many groups you can define.
+Once you have prepared the data, it's time to start looking for patterns that could lead you to define customer clusters. After talking with the CFO of the company about the next-quarter goals, you figured out that one way to understand customers, from the available data, is to cluster them according to their spending capacity. However, you have to find how many groups you can define.
 
 You decide to use your new unsupervised learning skills and put k-means in action!
 

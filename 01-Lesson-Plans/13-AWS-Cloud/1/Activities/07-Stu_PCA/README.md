@@ -18,7 +18,7 @@ In this activity, you will use PCA to reduce the dimensions of the consumers sho
 
 7. Fetch the explained variance, analyze its value and answer the following question: How much information from the original dataset is explained by the principal components?
 
-8. Fit the k-means algorithm with `k=6` and the principal components data.
+8. Fit the k-means algorithm with `k=6` and the principal components' data.
 
 9. Plot the resulting clusters using the two principal components.
 

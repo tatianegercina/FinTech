@@ -6,7 +6,7 @@ Today's class will introduce students to unsupervised learning and cloud service
 
 The concept of **the cloud** is presented to students by highlighting the importance that these kinds of computing services have for FinTech professionals, given that the cloud allows scaling ML models to be used by hundreds or thousands of users.
 
-Students will be introduced to Amazon Web Services (AWS), the cloud platform that is going to be used in this unit, as well as to the AWS resources that students will learn to deploy ML models in the cloud and create conversational interfaces, such as, robo advisors.
+Students will be introduced to Amazon Web Services (AWS). This cloud platform is going to be used in this unit, as well as to the AWS resources that students will learn to deploy ML models in the cloud and create conversational interfaces, such as robo advisors.
 
 As a prelude for the rest of the unit, a demo of the homework is presented.
 
@@ -34,21 +34,23 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* Students have learned the generalities of machine learning, and they already know how to apply supervised machine learning; this class offers an overview of unsupervised machine learning, students will have hands-on experience using k-means on a business case scenario to demonstrate how unsupervised machine learning could add value to business decision-making.
+* Students have learned the generalities of machine learning; they already know how to use supervised machine learning algorithms. Today's class offers an overview of unsupervised machine learning, where students will have hands-on experience using k-means on a business case scenario.
 
-* Understanding unsupervised learning may be challenging, however everyone is a customer and is familiar with how companies use data to target customers or potential customers to offer products and services. Try to use analogies about how companies like [Amazon, Netflix, Google](https://www.pointillist.com/blog/customer-behavior-data/), or [Target](https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/) are using customer segmentation to provide customized offers, or [how Spotify is using segmentation](https://towardsdatascience.com/in-this-article-i-provide-a-detailed-analysis-of-spotify-as-a-company-music-industry-direction-eeb945d7257c) to improve its products and services.
+* Students will demonstrate how unsupervised machine learning could add value to business decision-making.
 
-* There are several theoretical aspects behind the k-means and PCA algorithms, focus the class on the practical application of these algorithms for customer segmentation and share the additional references presented on the slides for those students interested in having a deeper understanding.
+* Understanding unsupervised learning may be challenging; however, everyone is a customer and is familiar with how companies use data to target customers or potential customers to offer products and services. Try to use analogies about how companies like [Amazon, Netflix, Google](https://www.pointillist.com/blog/customer-behavior-data/), or [Target](https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/) are using customer segmentation to provide customized offers, or [how Spotify is using segmentation](https://towardsdatascience.com/in-this-article-i-provide-a-detailed-analysis-of-spotify-as-a-company-music-industry-direction-eeb945d7257c) to improve its products and services.
 
-* The cloud is a core concept for FinTech professionals; however, it might be seen as complex and nebulous for some students; it's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud, by offering user-friendly interfaces that allow deployment of a machine-learning model with few lines of code and some mouse clicks.
+* There are several theoretical aspects behind the k-means and PCA algorithms, focus the class on the practical application of these algorithms for customer segmentation and share the additional references presented on the slides for those students interested in having a more in-depth understanding.
+
+* The cloud is a core concept for FinTech professionals; however, it might be seen as complex and nebulous for some students. It's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud by offering user-friendly interfaces that allow the deployment of a machine learning model with few lines of code and some mouse clicks.
 
 * On Day 1, the homework demo is presented; be sure to get familiar with the homework's solutions before the class.
 
 * Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also, encourage students to work with partners.
 
-* **Important!** Slack out the disclaimer for [AWS Free Tier](../Supplemental/AWS-Free-Tier.md) services at the end of today's class. Explain to students that while we are only using free tier services in class, they should review this documentation to avoid accidentally incurring charges.
+* **Important!** Slack out the disclaimer for [AWS Free Tier](../Supplemental/AWS-Free-Tier.md) services at the end of today's class. Explain to students that while we are only using free tier services in the class, they should review this documentation to avoid accidentally incurring charges.
 
-* Prior to class, make sure that all students have created their AWS account, and ask TAs to help troubleshoot any issues. If any students are unable to access a free tier account, ask that they pair up with a peer for this week.
+* Before class, make sure that all students have created their AWS account, and ask TAs to help troubleshoot any issues. If any students are unable to access a free tier account, ask that they pair up with a peer for this week.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -68,11 +70,11 @@ By the end of the class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (10 min)
 
-In this activity, students will learn what is the cloud, what are its pros and cons and why the cloud is important for FinTech professionals. The students will also be introduced to AWS and the particular services that will be used in this Unit. This activity concludes presenting a short demo of the conversational interfaces that will be done in class.
+In this activity, students will learn what the cloud is, what are its pros and cons, and why the cloud is essential for FinTech professionals. The students will also be introduced to AWS and the particular services that will be used in this Unit. This activity concludes by presenting a short demo of the conversational interfaces that will be done in class.
 
-Welcome the class to Unit 13, explain to students that this is going to be a fun unit since they are going to learn how to deploy ML models in the cloud using AWS, and also, they will create conversational interfaces to implement bots that will be able to understand and response using natural language.
+Welcome the class to Unit 13, explain to students that this is going to be a fun unit since they are going to learn how to deploy ML models in the cloud using AWS. Also, they will create conversational interfaces to implement bots that will be able to understand and respond using natural language.
 
-Open the lesson slides, move to the "Welcome to the Cloud and Amazon Web Services" section and start talking about the cloud by asking to the students the following question.
+Open the lesson slides, move to the "Welcome to the Cloud and Amazon Web Services" section and start talking about the cloud by asking the students the following question.
 
 * What do you think the cloud is?
 
@@ -80,7 +82,7 @@ Collect two or three answers and emphasize the following points:
 
 * In essence, the cloud refers to the on-demand availability of computer systems resources.
 
-* The computing resources may include: data storage, computing power, and collaboration platforms.
+* The computing resources may include data storage, computing power, and collaboration platforms.
 
 * There is no need to have physical access to the hardware; it is managed through the Internet using public or private networks.
 
@@ -96,7 +98,7 @@ Continue with the slides and highlight the following points about the models of 
 
   * **Infrastructure as a service (IaaS):** Online services that provide APIs to access different infrastructures such as servers, virtual machines, storage, load balancers, or network interfaces (e.g., [Azure Virtual Machines](https://azure.microsoft.com/services/virtual-machines/)).
 
-  * **Platform as a service (PaaS):** Provides a platform that allow customers to develop, run, and manage applications without the complexity of building and maintaining their own physical infrastructure (e.g., [Amazon Web Services](https://aws.amazon.com/)).
+  * **Platform as a service (PaaS):** Provides a platform that allows customers to develop, run, and manage applications without the complexity of building and maintaining their physical infrastructure (e.g., [Amazon Web Services](https://aws.amazon.com/)).
 
   * **Software as a service (SaaS):** Refers to a software licensing and delivery model where software is licensed on a subscription basis and is centrally hosted (e.g., [Microsoft Office 365](https://www.office.com)).
 
@@ -110,7 +112,7 @@ Continue with the slides and highlight the following points about the models of 
 
 * There are multiple cloud service providers, including Amazon, Microsoft, Google, Oracle, and IBM.
 
-Explain to students that, despite we can trust in the the cloud and it is practically everywhere in our daily life, there are some of the disadvantages that we may take into account.
+Explain to students that, despite we can trust in the cloud and it is practically everywhere in our daily life, there are some of the disadvantages that we may take into account.
 
 Continue on the slides and highlight the following disadvantages of the cloud:
 
@@ -122,7 +124,7 @@ Continue on the slides and highlight the following disadvantages of the cloud:
 
 * Incidents such as hardware failure are inevitable, but you have less oversight on their resolution.
 
-* Hardware might be shared with other tenants; "bad neighbors" can affect your resources.
+* Hardware might be shared with other tenants; "bad neighbours" can affect your resources.
 
 * Clouds can fail and have downtime, including those due to planned maintenances out of your control.
 
@@ -132,7 +134,7 @@ Open your browser, navigate to the [Amazon Web Services](https://aws.amazon.com/
 
 * AWS comprises more than 140 services, including technologies for computing, storage, networking, database, analytics, IoT, machine learning, and more.
 
-* AWS launches its first region in Canada in 2016, it's called `ca-central-1`.
+* AWS launched its first region in Canada in 2016, it's called `ca-central-1`.
 
 * Having an AWS Canadian region, allow customers in Canada to offer cloud services that are complaint with the Canadian cloud services regulations.
 
@@ -145,9 +147,9 @@ Explain to students that in this unit, they will have hands-on experience with t
 * **Amazon SageMaker:** To deploy ML models.
 * **Amazon Lex:** To create conversational interfaces.
 * **Amazon S3:** To store files in the cloud.
-* **AWS Lambda:** To create serverless applications.
+* **AWS Lambda:** To develop serverless applications.
 
-Conclude this introduction by telling students, that in this unit, they create two chatbots using Amazon Lex and AWS Lambda.
+Conclude this introduction by telling students that in this unit, they create two chatbots using Amazon Lex and AWS Lambda.
 
 1. A cryptocurrency converter.
 
@@ -163,7 +165,7 @@ Answer any questions before moving on.
 
 ### 2. Everyone Do: Running Jupyter Notebooks in the Cloud with Amazon SageMaker (30 min)
 
-In this activity, students will learn what Amazon SageMaker is and how they can start running Jupyter notebooks in the Cloud using Amazon SageMaker Studio. This activity starts with an short presentation of Amazon SageMaker using the lesson slides and concludes with a collaborative demo where you will guide the students throughout the process of getting started with this cloud service.
+In this activity, students will learn what Amazon SageMaker is and how they can start running Jupyter notebooks in the Cloud using Amazon SageMaker Studio. This activity begins with a short presentation of Amazon SageMaker using the lesson slides. It concludes with a collaborative demo where you will guide the students throughout the process of getting started with this cloud service.
 
 **Files:**
 
@@ -175,15 +177,15 @@ Open the lesson slides, move to the "Running Jupyter Notebooks in the Cloud with
 
 * Amazon SageMaker is a platform service that allows software developers and data scientists to build, train, and deploy ML models in the cloud.
 
-* Amazon SageMaker is composed by different tools aimed to ease the entire machine learning workflow, from managing datasets to building, training, and deploying a model.
+* Amazon SageMaker is composed of different tools aimed to ease the entire machine learning workflow, from managing datasets to building, training, and deploying a model.
 
-* In this class, we will focus on gaining hands-on experience with Amazon SageMaker Studio, a web-based integrated development environment (IDE) that allow you to access all the services and tools needed to build, train, debug, deploy, and monitor your machine learning models.
+* In this class, we will focus on gaining hands-on experience with Amazon SageMaker Studio. It's a web-based integrated development environment (IDE) that allows you to access all the services and tools needed to build, train, debug, deploy, and monitor your machine learning models.
 
 * Amazon SageMaker provides some built-in ML algorithms, but also, it supports leading ML frameworks such as TensorFlow, PyTorch, Apache MXNet, Keras, and Scikit-learn.
 
 * Some of the advantages of using Amazon SageMaker are the following:
 
-  * Provides tools that streamline a typical workflow for creating a ML model.
+  * Provides tools that streamline a typical workflow for creating an ML model.
 
   * Its infrastructure enables growth at scale with on-demand compute instances and dynamic storage.
 
@@ -193,7 +195,7 @@ Open the lesson slides, move to the "Running Jupyter Notebooks in the Cloud with
 
   * Provides built-in security, which includes access controls and monitoring.
 
-Explain to students that learning how to train and deploy models with Amazon SageMaker is a very in-demand skill that is worth learning more about.
+Explain to students that learning how to train and deploy models with Amazon SageMaker is a very in-demand skill that is worth learning.
 
 Continue with the slides, show to students some of the companies that at currently using Amazon SageMaker and highlight the following:
 
@@ -201,15 +203,15 @@ Continue with the slides, show to students some of the companies that at current
 
 * [**Novartis**](https://aws.amazon.com/blogs/industries/aws-and-novartis-re-inventing-pharma-manufacturing/?cs=4) is currently using Amazon SageMaker to build a computer vision-based model that will determine production line clearance.
 
-* Using Amazon SageMaker engineers at [**Coinbase**](https://aws.amazon.com/machine-learning/customers/innovators/coinbase/?cs=3) developed a machine learning-driven system that recognizes mismatches and anomalies in sources of user identification, allowing them to quickly take action against potential sources of fraud.
+* Using Amazon SageMaker engineers at [**Coinbase**](https://aws.amazon.com/machine-learning/customers/innovators/coinbase/?cs=3) developed a machine learning-driven system that recognizes mismatches and anomalies in sources of user identification, allowing them to take action against potential sources of fraud quickly.
 
-Now you will continue to demo how to get started with Amazon SageMaker Studio. Ask students to log-in into into the [AWS Management Console](https://console.aws.amazon.com/) using their root user and to follow your steps throughout the process.
+Now you will continue to demo how to get started with Amazon SageMaker Studio. Ask students to log-in to the [AWS Management Console](https://console.aws.amazon.com/) using their root user and to follow your steps throughout the process.
 
 From the AWS Management Console, type `sagemaker` in the "Find Services" search box and choose `Amazon SageMaker` from the list.
 
 ![Launching Amazon SageMaker](Images/launching-sagemaker.png)
 
-Explain to students that Amazon SageMaker Studio is currently offered by AWS as a general available preview version from the US East (Ohio) AWS region. Since it's a preview version, some aspects of the user interface (UI) may vary over the time it's released as a final version.
+Explain to students that AWS currently offers Amazon SageMaker Studio as a generally available preview version from the US East (Ohio) AWS region. Since it's a preview version, some aspects of the user interface (UI) may vary over the time it's released as a final version.
 
 Despite they are going to use a preview version, explain to students that it's is fully functional and can be used free of charge during its preview period.
 
@@ -221,13 +223,13 @@ If you are not in the `US East (Ohio)` AWS region, you will see a warning messag
 
 ![Switching to the US East (Ohio) AWS Region](Images/switching-to-ohio.gif)
 
-Once you landed the Amazon SageMaker Studio homepage, explain to students that one of the main advantages of using this tool is that it deals with all the technical complexity of creating Amazon SageMaker instances which is a process that implies to deploy some [Amazon EC2 instances (similar to virtual machines)](https://aws.amazon.com/ec2/) and several privacy settings; following a manual process may take a few hours.
+Once you landed the Amazon SageMaker Studio homepage, explain to students that one of the main advantages of using this tool is that it deals with all the technical complexity of creating Amazon SageMaker instances. Creating instances is a process that implies to deploy some [Amazon EC2 instances (similar to virtual machines)](https://aws.amazon.com/ec2/) and several privacy settings; following a manual process may take a few hours.
 
 Continue by setting the initial configuration for Amazon SageMaker Studio, under the "Get Started" section, choose the "Quick Start" option and leave the default user name.
 
 ![Choosing the default user name for Amazon SageMaker Studio](Images/sagemaker-studio-user.png)
 
-Next, in the "Execution role" option, click on the listbox and choose "Create a new rol"; a pop-up window named "Create an IAM role" will appear, select "Any S3 bucket" under the "S3 buckets you specify" option and click on the "Create role" button to continue.
+Next, in the "Execution role" option, click on the list box and choose "Create a new role"; a pop-up window named "Create an IAM role" will appear, select "Any S3 bucket" under the "S3 buckets you specify" option and click on the "Create role" button to continue.
 
 ![Create an execution role](Images/sagemaker-studio-execution-role.gif)
 
@@ -235,7 +237,7 @@ Continue the demo by clicking on the "Submit" button.
 
 ![Create an Amazon SageMaker Studio instance](Images/sagemaker-create-instance.png)
 
-Next, the new instance of Amazon SageMaker Studio and the new user will be configured; you will be led to a new page were you may have to wait about five minutes.
+Next, the new instance of Amazon SageMaker Studio and the new user will be configured; you will be led to a new page where you may have to wait about five minutes.
 
 ![Amazon SageMaker Studio instance creation](Images/sagemaker-studio-instance-in-progress.png)
 
@@ -247,17 +249,17 @@ Continue the demo by clicking on the "Open Studio" link, a new window (or tab) w
 
 ![Loading Amazon SageMaker Studio](Images/sagemaker-studio-loading.png)
 
-After the loading process ends, you will see the UI of Amazon SageMaker Studio. You may note that is practically the same UI as Jupyter lab but with a different color scheme.
+After the loading process ends, you will see the UI of Amazon SageMaker Studio. You may note that it is practically the same UI as Jupyter lab but with a different colour scheme.
 
 ![The Amazon SageMaker Studio UI](Images/sagemaker-studio-ui.png)
 
-Explain to students that Amazon SageMaker Studio can be used in the same way they were working locally with Jupyter lab, the main difference is that Studio is a cloud application that allows to access all the computing power of AWS.
+Explain to students that Amazon SageMaker Studio can be used in the same way they were working locally with Jupyter lab; the main difference is that Studio is a cloud application that allows access to all the computing power of AWS.
 
-Continue the demo by clicking in the "Launcher" tab. Explain to students that Amazon SageMaker has different built-in images to create notebooks, these images are similar to a Python virtual environment. Continue the demo by ensuring the "Data Science" image is selected; next, click on the "Python 3" notebook option. A fresh Jupyter notebook will appear, test it by printing a `Hello!!` message.
+Continue the demo by clicking in the "Launcher" tab. Explain to students that Amazon SageMaker has different built-in images to create notebooks; these images are similar to a Python virtual environment. Continue the demo by ensuring the "Data Science" image is selected; next, click on the "Python 3" notebook option. A fresh Jupyter notebook will appear, test it by printing a `Hello!!` message.
 
 ![Creating a notebook in Amazon SageMaker Studio](Images/sagemaker-studio-create-notebook.gif)
 
-Ensure that all the class has reached this point and everyone was able to run this simple testing line of code, ask TAs to assist any students that may be stuck.
+Ensure that all the class has reached this point, and everyone was able to run this simple testing line of code, ask TAs to assist any students that may be stuck.
 
 Once everyone in the class has Amazon SageMaker Studio running, explain to students that as any Jupyter lab interface, they can run their notebooks and custom code in Amazon SageMaker Studio.
 
@@ -291,11 +293,11 @@ Open the lesson slides and go to the Introduction to "Unsupervised Learning" sec
 
 Start the presentation by explaining to students that, in general terms, machine learning has two main areas of application: supervised and unsupervised learning.
 
-From the previous units, students are already familiar with supervised learning algorithms and its applications, highlight to students the main differences between these types of learning.
+From the previous units, students are already familiar with supervised learning algorithms and their applications, highlight to students the main differences between these types of learning.
 
 | Supervised Learning                | Unsupervised Learning                      |
 | ---------------------------------- | ------------------------------------------ |
-| Input data is labeled              | Input data is unlabeled                    |
+| Input data is labelled             | Input data is unlabeled                    |
 | Uses training datasets             | Uses just input datasets                   |
 | **Goal:** Predict a class or value | **Goal:** Determine patterns or group data |
 
@@ -305,17 +307,17 @@ Start a short facilitated discussion with students. Take one or two answers from
 
   **Sample answer:** We can group customers on a retail chain by shopping habits, so we can send customized offers by email or mobile app to increase sales.
 
-  **Sample answer:** Having thousands of transactions per day on credit card operations, it is hard to identify anomalous or fraudulent transactions. We can use unsupervised learning to find patterns among transaction data to identify anomalies and potentially fraudulent transactions.
+  **Sample answer:** Having thousands of transactions per day on credit card operations, it is hard to identify abnormal or fraudulent transactions. We can use unsupervised learning to find patterns among transaction data to identify anomalies and potentially fraudulent transactions.
 
   **Sample answer:** We can use unsupervised learning to cluster stock data so we can create investment portfolios according to the resulting groups.
 
 Continue with the presentation, move to the slide titled "How can we understand our customers?" and move forward by highlighting the following:
 
-* One of the most relevant uses of unsupervised learning, not only in FinTech, but also in some other sectors such as marketing, entertainment, or retail, is customer segmentation.
+* One of the most important uses of unsupervised learning, not only in FinTech, but also in some other sectors such as marketing, entertainment, or retail, is customer segmentation.
 
 * Beyond the typical segmentation variables, such as age, gender, income, or zip code, understanding customers is crucial in every sector.
 
-* Supervised learning is very helpful at predicting the future based on labeled historical data; however, there are often situations where supervised learning is not feasible due to lack of information or lack of training labels.
+* Supervised learning is very helpful at predicting the future based on labelled historical data; however, there are often situations where supervised learning is not feasible due to lack of information or lack of training labels.
 
 * Unsupervised learning allows us to cluster data to find hidden or unknown patterns that can be used to understand the customers better. For example, to develop a customized offer that responds to the needs identified in every group.
 
@@ -323,7 +325,7 @@ Continue with the presentation, move to the slide titled "How can we understand 
 
   * **Clustering:** It allows us to split the dataset into groups according to similarity automatically. It can be used for customer segmentation and targeting.
 
-  * **Anomaly detection:** Automatically discovers unusual data points in a dataset. It is useful in identifying fraudulent transactions, discovering faulty pieces of hardware, or identifying an outlier caused by a human error during data entry.
+  * **Anomaly detection:** Automatically discovers unusual data points in a dataset. It is useful in identifying fraudulent transactions, locating broken pieces of hardware, or identifying an outlier caused by a human error during data entry.
 
 * Customer segmentation is one of the most popular applications of unsupervised learning. It is the division of potential customers in a given market into discrete groups.
 
@@ -331,7 +333,7 @@ Continue with the presentation, move to the slide titled "How can we understand 
 
   * Customer needs (e.g., a particular product can satisfy some of them)
   * Responses to online marketing channels
-  * Buying habits (e.g., best day for buying, weekly spend)
+  * Buying habits (e.g., the best day for buying, weekly spend)
 
 Explain to students that customer segmentation is driving revenue in leading companies such as Netflix and Amazon.
 
@@ -349,7 +351,7 @@ End the presentation with a closing facilitated discussion. Ask the following qu
 
 * How could an investment portfolio be improved using customer segmentation?
 
-  **Sample answer:** Using customer segmentation, a portfolio can be categorized by industry, location, revenue, account size, and the number of employees to reveal where risk and opportunity live within the portfolio. These patterns can provide key measurable data for more predictive credit risk management.
+  **Sample answer:** Using customer segmentation, a portfolio can be categorized by industry, location, revenue, account size, and the number of employees to reveal where risk and opportunity live within the portfolio. These patterns can provide critical measurable data for more predictive credit risk management.
 
 Explain to students that in Today's class, they will learn how to use Scikit-learn to implement clustering and customer segmentation.
 
@@ -371,13 +373,13 @@ Explain to students that data preparation for unsupervised learning does not dif
 
 Highlight to students that the main difference in preparing data for unsupervised learning is that its algorithms don't have any target variable; they only have input features that will be used to find patterns in the data. So, they should take care of selecting features that could help to find those patterns or create groups.
 
-Explain to students that to continue experiencing Amazon SageMaker Studio, the current and forthcoming activities will be ran in this cloud application.
+Explain to students that the current and forthcoming activities will be run in Amazon SageMaker Studio to gain hands-on experience with this cloud application.
 
 Import the `credit_risk.csv` data file into the `Data` folder in Amazon SageMaker Studio.
 
 ![Importing the credit risk data into Amazon SageMaker Studio](Images/sagemaker-studio-risk-data.gif)
 
-Import the the unsolved version of the Jupyter Notebook to Amazon SageMaker Studio, open the notebook and select the `Python 3 (Data Science)` kernel.
+Import the unsolved version of the Jupyter Notebook to Amazon SageMaker Studio, open the notebook and select the `Python 3 (Data Science)` kernel.
 
 ![Importing the unsolved version of the Jupyter notebook](Images/sagemaker-studio-risk-ipynb.gif)
 
@@ -403,13 +405,13 @@ Live code the demo and highlight the following:
 
   ![Lading the credit risk dataset](Images/load-credit-risk-data.png)
 
-* In coming activities, the risk level of each person will be computed using unsupervised learning, so the next step is to remove the `risk` column since it is not necessary.
+* In forthcoming activities, the risk level of each person will be computed using unsupervised learning, so the next step is to remove the `risk` column since it is not necessary.
 
   ![Removing the risk column](Images/drop-risk-column.png)
 
-Explain to students that all the variables in the dataset should be numerical to fit the unsupervised learning algorithms, so we need to transform any categorical data or non-numeric features in the dataset. In this demo, we need to transform the `male` and `female` categorical values to a numeric representation.
+Explain to students that all the variables in the dataset should be numerical to fit the unsupervised learning algorithms, so we need to transform any categorical data or non-numeric features in the dataset. In this demo, we need to turn the `male` and `female` categorical values to a numeric representation.
 
-Explain to students that we may use the `LabelEncoder` from scikit-learn, however we will perform a manual encoding this time using the `encodeGender()` function.
+Explain to students that we may use the `LabelEncoder` from scikit-learn; however we will perform a manual encoding this time using the `encodeGender()` function.
 
 ```python
 def encodeGender(gender):
@@ -431,7 +433,7 @@ clean_df.head()
 
 ![Credit risk DataFrame with the encoded gender column](Images/encoded-gender.png)
 
-Explain to students, that it's recommended to have all the numerical features in the same scale, so in this demo, the `StandardScaler` from scikit-learn is used to scale the data.
+Explain to students that it's recommended to have all the numerical features in the same scale, so in this demo, the `StandardScaler` from scikit-learn is used to scale the data.
 
 ```python
 # Create the scaler instance
@@ -456,7 +458,7 @@ Ask the class if there are any further questions before moving to the next activ
 
 In this activity, students will perform some data preparation tasks on a dataset that contains data from purchases on an e-commerce website made by 200 customers. Students will use this dataset on further activities to find customer segments.
 
-There are some data transformations that should be made to the dataset, so ask TAs to assist students if there are any questions about why the following changes are needed.
+Some data transformations should be made to the dataset, so ask TAs to assist students if there are any questions about why the following changes are needed.
 
 * **Annual Income:** This feature should be regularized since it is on a different scale than the other features; dividing by `1000` is the simplest solution.
 
@@ -510,7 +512,7 @@ Live code the solution and highlight the following:
 
 * Looking for `null` values and duplicate entries is part of any data preprocessing workflow; there are no `null` values nor duplicates on this DataFrame, so no additional adjustments are needed.
 
-* The `Gender` column is categorical, so it should be transformed into numerical values. Transforming `Male` to `1` and `Female` to `0` is a common practice.
+* The `Gender` column is categorical, so it should be transformed into numerical values. Turning `Male` to `1` and `Female` to `0` is a common practice.
 
   ```python
   def encodeGender(gender):
@@ -522,13 +524,13 @@ Live code the solution and highlight the following:
   df_shopping["Gender"] = df_shopping["Gender"].apply(encodeGender)
   ```
 
-* The `Annual Income` column is on a different scale than the other columns, so this column should be rescaled. Dividing by `1000` is the simplest approach.
+* The `Annual Income` column is on a different scale than the other columns, so this column should be rescaled. Dividing by `1000` is the most straightforward approach.
 
   ```python
   df_shopping["Annual Income"] = df_shopping["Annual Income"] / 1000
   ```
 
-* Finally, the cleaned DataFrame is saved as a `CSV` file for being used in coming activities.
+* Finally, the cleaned DataFrame is saved as a `CSV` file for being used in future activities.
 
   ```python
   file_path = "Data/shopping_data_cleaned.csv"
@@ -565,7 +567,7 @@ Open the lesson slides and move to the K-Means Algorithm section; go through the
 
 Explain to students that k-means is an unsupervised learning algorithm used to identify clusters and solve clustering issues.
 
-Continue on the slides to formally introduce k-means, and highlight the following:
+Continue on the slides to formally introduce k-means and highlight the following:
 
 * The k-means algorithm groups the data into `k` clusters, where each piece of data is assigned to a cluster based on some similarity or distance measure to a **centroid**.
 
@@ -590,7 +592,7 @@ Continue on the slides to formally introduce k-means, and highlight the followin
 
 * Analytically, using the inertia, we choose as the best `k` the `k` value where adding more clusters only marginally decreases the inertia.
 
-Reassure students that while this may sound complex, k-means is actually quite simple to implement using Python.
+Reassure students that while this may sound complex, k-means is quite simple to implement using Python.
 
 Close the presentation, switch to Amazon SageMaker Studio and upload the unsolved version of the Jupyter notebook.
 
@@ -624,19 +626,19 @@ Open the unsolved Jupyter Notebook, select the `Python 3 (Data Science)` kernel 
 
   ![K-Means predictions](Images/kmeans-predictions-risk.png)
 
-Explain to students that, as they can see, three classes were found, labeled as `0`, `1`, and `2`. Make it clear to the class that naming classes is part of the job done by a subject matter expert; the k-means algorithm is just able to identify how many clusters are in the data and label them with numbers.
+Explain to students that, as they can see, three classes were found, labelled as `0`, `1`, and `2`. Make it clear to students that naming the classes is part of the job done by a subject matter expert; the k-means algorithm is just able to identify how many clusters are in the data and label them with numbers.
 
 Continue the demo by adding a new column to the DataFrame with the predicted risk levels, explain to students that the predicted classes are in the `labels_` attribute of the model.
 
 ![Adding predicted classes](Images/adding-classes-column.png)
 
-* Visualizing the clusters helps to understand how they are arranged graphically. In this case, we actually have too many features to represent visually, but we can take two of them to plot the clusters.
+* Visualizing the clusters helps to understand how they are arranged graphically. In this case, we have too many features to represent visually, but we can take two of them to plot the clusters.
 
   ![Visualizing the clusters by plotting two Features](Images/plotting-2d.png)
 
 Continue the live coding demo by showing students how the best value for `k` can be found; highlight the following:
 
-* Two lists are created to store the values for the `inertia` and to define how many values of `k` we want to try. Ten values of `k` is normally a good number to start.
+* Two lists are created to store the values for the `inertia` and to define how many values of `k` we want to try. Ten values of `k` is usually a good number to start.
 
   ```python
   inertia = []
@@ -661,7 +663,7 @@ Continue the live coding demo by showing students how the best value for `k` can
   df_elbow.plot.line(x="k", y="inertia", title="Elbow Curve", xticks=k)
   ```
 
-* As can be seen on the elbow curve, visually the best value for `k` is `3`.
+* As can be seen on the elbow curve, visually, the best value for `k` is `3`.
 
   ![Elbow Curve](Images/elbow-curve.png)
 
@@ -706,7 +708,7 @@ Live code the solution and highlight the following:
   df_shopping = pd.read_csv(file_path)
    ```
 
-* The elbow curve is used to find the best value for `k`. A `for-loop` is used to loop 10 times, fitting the k-means model and fetching the `inertia` to create the plot.
+* The elbow curve is used to find the best value for `k`. A `for-loop` is used to loop ten times, fitting the k-means model and fetching the `inertia` to create the plot.
 
   ```python
   inertia = []
@@ -727,11 +729,11 @@ Live code the solution and highlight the following:
   df_elbow.plot.line(x="k", y="inertia", xticks=k, title="Elbow Curve")
   ```
 
-Explain to students that, after observing the elbow curve, they may conclude that the best two values for `k` are `5` and `6`, since at those points the elbow shape starts.
+Explain to students that, after observing the elbow curve, they may conclude that the best two values for `k` are `5` and `6`, since at those points, the elbow shape starts.
 
 ![elbow curve](Images/elbow-curve-customers.png)
 
-* The `get_clusters()` function, is a mechanism to encapsulate the k-means clustering algorithm to be reused. The value of `k` and the `data` where the clusters are going to be identified are passed as parameters.
+* The `get_clusters()` function is a mechanism to encapsulate the k-means clustering algorithm to be reused. The value of `k` and the `data` where the clusters are going to be identified are passed as parameters.
 
   ```python
   def get_clusters(k, data):
@@ -783,19 +785,19 @@ In this activity, students will learn how to use Principal Component Analysis (P
 
 Open the lesson slides and move to the "Speeding Up ML Algorithms with PCA" section and highlight the following:
 
-* There are some machine learning problems where the number of input features (or dimensions) is to high, for example in the order of tens or thousands of features.
+* There are some machine learning problems where the number of input features (or dimensions) is too high, for example, in the order of tens or thousands of features.
 
 * Working with too many variables may be complex and could lead to slow down ML algorithms computing.
 
-* PCA is a statistical technique that reduces the number of input features (or dimensions) of a dataset by creating a smaller number of dimensions that represents the underlying structure of the data.
+* PCA is a statistical technique that reduces the number of input features (or dimensions) of a dataset by creating a smaller number of dimensions that represent the underlying structure of the data.
 
 * The dimensions created by PCA are called principal components.
 
-* A principal components represent data points where there is a large variance and the data is most spread out.
+* A principal components represent data points where there is a significant variance, and the data is most spread out.
 
 Explain to students that we are not going to deal with the mathematical complexity of PCA, the most crucial fact that they have to remember is that PCA is used to reduce the number of input features. As a result, ML algorithms computing may speed-up.
 
-Close the presentation, switch to Amazon SageMaker Studio and upload the unsolved version of the Jupyter notebook. Next, Open the notebook, select the `Python 3 (Data Science)` kernel and live code the demo by highlighting the following:
+Close the presentation, switch to Amazon SageMaker Studio and upload the unsolved version of the Jupyter notebook. Next, open the notebook, select the `Python 3 (Data Science)` kernel and live code the demo by highlighting the following:
 
 ![Loading the unsolved Jupyter notebook](Images/sagemaker-studio-ins-pca.gif)
 
@@ -805,11 +807,11 @@ Close the presentation, switch to Amazon SageMaker Studio and upload the unsolve
   from sklearn.decomposition import PCA
   ```
 
-* For this demo we will use the `new_credit_risk.csv` data file that we created before.
+* For this demo, we will use the `new_credit_risk.csv` data file that we created before.
 
   ![Loading the credit risk data](Images/sagemaker-studio-pca-data.png)
 
-* Before start using the PCA algorithm, it's important to scale the data. We don't need to scale the data for this demo since we already scaled before, but keep in mind that this is crucial for the PCA algorithm to work.
+* Before start using the PCA algorithm, it's essential to scale the data. We don't need to scale the data for this demo since we already scaled before, but keep in mind that this is crucial for the PCA algorithm to work.
 
 * To start using this algorithm, a `PCA` model should be created specifying the final number of features in the `n_components` parameter. In this demo, the features will be reduced from `5` to `2` and the `random_state` parameter is set to `0` to allow model reproducibility.
 
@@ -825,11 +827,11 @@ Close the presentation, switch to Amazon SageMaker Studio and upload the unsolve
 
 Explain to students that after dimensionality reduction, we get as a result a smaller set of dimensions, these dimensions are the **principal components**. There isn’t a particular meaning assigned to each principal component; the new components are just the two main dimensions of variation that contains most of the information in the original dataset.
 
-* The resulting principal components, are transformed into a DataFrame to be used next to fit the k-means algorithm. You can see that principal component values have no direct relation with the values in the original dataset. They can be seen as a reduced representation of the original data.
+* The resulting principal components, are transformed into a DataFrame to be used next to fit the k-means algorithm. You can see that principal component values have no direct relationship with the values in the original dataset. They can be seen as a reduced representation of the original data.
 
   ![PCA Data](Images/pca-df.png)
 
-Explain to students that dimensionality reductions imply a loss of accuracy; however, the trick is to sacrifice a little accuracy for simplicity. Smaller datasets are easier to explore and visualize. They ease data analysis and speed up machine-learning algorithms without extraneous variables to process.
+Explain to students that dimensionality reductions imply a loss of accuracy; however, the trick is to sacrifice a little accuracy for simplicity. Smaller datasets are more comfortable to explore and visualize. They ease data analysis and speed up machine-learning algorithms without extraneous variables to process.
 
 * To know how much information can be attributed to each principal component, the explained variance ratio is used.
 
@@ -915,7 +917,7 @@ Live code the solution and highlight the following:
   shopping_pca = pca.fit_transform(shopping_scaled)
   ```
 
-Explain to students that according to the explained variance, the first principal component contains `44.3%` of the variance and the second principal component contains `33.3%` of the variance. We have `77.6%` of the information in the original dataset, so we may have a valid representation of the original data from the principal components.
+Explain to students that according to the explained variance, the first principal component contains `44.3%` of the variance and the second principal component contains `33.3%` of the variance. We have `77.6%` of the information in the original dataset so that we may have a valid representation of the original data from the principal components.
 
 ![Explained variance with two PCs](Images/explained-variance-2pcs.png)
 
