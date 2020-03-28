@@ -452,7 +452,7 @@ Ask the class if there are any further questions before moving to the next activ
 
 ---
 
-### 5. Student Do: Understanding Customers (20 min)
+### 5. Student Do: Understanding Customers (15 min)
 
 In this activity, students will perform some data preparation tasks on a dataset that contains data from purchases on an e-commerce website made by 200 customers. Students will use this dataset on further activities to find customer segments.
 
@@ -547,9 +547,11 @@ Be sure that there are no questions before moving forward.
 
 In this activity, students will learn how the k-means algorithm works. Use your time wisely to cover the theoretical part, as well as the coding part.
 
-**File:**
+**Files:**
 
-* [03_Ins_K-Means.ipynb](Activities/03-Ins_KMeans/Solved/03_Ins_K-Means.ipynb)
+* [Ins_K-Means.ipynb](Activities/04-Ins_KMeans/Solved/Ins_K-Means.ipynb)
+
+* [new_credit_risk.csv](Activities/04-Ins_KMeans/Resources/new_credit_risk.csv)
 
 Open the lesson slides and move to the K-Means Algorithm section; go through the slides and highlight the following.
 
@@ -590,9 +592,15 @@ Continue on the slides to formally introduce k-means, and highlight the followin
 
 Reassure students that while this may sound complex, k-means is actually quite simple to implement using Python.
 
-Close the presentation, open the starter unsolved Jupyter Notebook and live code the demo by highlighting the following:
+Close the presentation, switch to Amazon SageMaker Studio and upload the unsolved version of the Jupyter notebook.
 
-* This demo uses the data from the iris dataset presented before.
+![Uploading the unsolved version of the Jupyter notebook](Images/sagemaker-studio-risk-kmeans.gif)
+
+Open the unsolved Jupyter Notebook, select the `Python 3 (Data Science)` kernel and live code the demo by highlighting the following:
+
+![Opening the started notebook and select the Python 3 Data Science kernel](Images/sagemaker-studio-risk-kmeans-kernel.gif)
+
+* This demo uses the data from the risk level dataset presented before.
 
 * The k-means algorithm is imported from the `sklearn` library.
 
@@ -600,7 +608,7 @@ Close the presentation, open the starter unsolved Jupyter Notebook and live code
   from sklearn.cluster import KMeans
   ```
 
-* After the data is loaded in a DataFrame, the first step is to create an instance of the k-means algorithm and initialize it with the desired number of clusters (K). For this demo, we will use `k = 3`, since we already know we have three classes of iris plants.
+* After the data is loaded in a DataFrame, the first step is to create an instance of the k-means algorithm and initialize it with the desired number of clusters (K). For this demo, we will use `k = 3`, since we already know we have three classes of risk levels.
 
   ```python
   model = KMeans(n_clusters=3, random_state=5)
@@ -609,24 +617,22 @@ Close the presentation, open the starter unsolved Jupyter Notebook and live code
 * Once the model instance is created, the next step is to fit the model with the unlabeled data. When the model is being trained (fit to the data), the k-means algorithm will iteratively look for the best centroid for each of the `k` clusters.
 
   ```python
-  model.fit(df_iris)
+  model.fit(df_risk)
   ```
 
-* After the model is fit, the corresponding cluster for every iris plant in the dataset can be found using the `predict()` method.
+* After the model is fit, the corresponding cluster for every risk level in the dataset can be found using the `predict()` method.
 
-  ![K-Means predictions](Images/kmeans-predictions-iris.png)
+  ![K-Means predictions](Images/kmeans-predictions-risk.png)
 
 Explain to students that, as they can see, three classes were found, labeled as `0`, `1`, and `2`. Make it clear to the class that naming classes is part of the job done by a subject matter expert; the k-means algorithm is just able to identify how many clusters are in the data and label them with numbers.
 
-Continue the demo by adding a new column to the DataFrame with the predicted classes.
+Continue the demo by adding a new column to the DataFrame with the predicted risk levels, explain to students that the predicted classes are in the `labels_` attribute of the model.
 
 ![Adding predicted classes](Images/adding-classes-column.png)
 
-* Visualizing the clusters helps to understand how they are arranged graphically. In this case, we actually have too many features to represent visually, but we can take two or three of them to plot the clusters.
+* Visualizing the clusters helps to understand how they are arranged graphically. In this case, we actually have too many features to represent visually, but we can take two of them to plot the clusters.
 
-  | Two features                          | Three Features                        |
-  | ------------------------------------- | ------------------------------------- |
-  | ![2 Features](Images/plotting-2d.png) | ![3 Features](Images/plotting-3d.png) |
+  ![Visualizing the clusters by plotting two Features](Images/plotting-2d.png)
 
 Continue the live coding demo by showing students how the best value for `k` can be found; highlight the following:
 
@@ -637,32 +643,29 @@ Continue the live coding demo by showing students how the best value for `k` can
   k = list(range(1, 11))
   ```
 
-* A `for-loop` is defined to fit the k-means model with the data from `df_iris` and a number of clusters ranging from 1 to 10. The `inertia` is fetched in each iteration to be compared to the elbow curve.
+* A `for-loop` is defined to fit the k-means model with the data from `df_risk` and a number of clusters ranging from 1 to 10. The `inertia` is fetched in each iteration to be compared to the elbow curve.
 
   ```python
   # Looking for the best k
   for i in k:
       km = KMeans(n_clusters=i, random_state=0)
-      km.fit(df_iris)
+      km.fit(df_risk)
       inertia.append(km.inertia_)
   ```
 
-* The elbow curve is plotted using `hvPlot`, so a DataFrame is created.
+* The elbow curve is plotted using the `plot()` method of Pandas, so a DataFrame is created.
 
   ```python
-  elbow_data = {
-    "k": k,
-    "inertia": inertia
-  }
+  elbow_data = {"k": k, "inertia": inertia}
   df_elbow = pd.DataFrame(elbow_data)
-  df_elbow.hvplot.line(x="k", y="inertia", title="Elbow Curve", xticks=k)
+  df_elbow.plot.line(x="k", y="inertia", title="Elbow Curve", xticks=k)
   ```
 
 * As can be seen on the elbow curve, visually the best value for `k` is `3`.
 
   ![Elbow Curve](Images/elbow-curve.png)
 
-Answer any remaining questions before moving on.
+Answer any questions before moving on.
 
 ---
 
@@ -672,13 +675,13 @@ In this activity, students will identify the best number of clusters on a custom
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_K_Means_In_Action/README.md)
+* [README.md](Activities/05-Stu_K_Means_In_Action/README.md)
 
 **Files:**
 
-* [k_means_in_action.ipynb](Activities/04-Stu_K_Means_In_Action/Unsolved/k_means_in_action.ipynb)
+* [k_means_in_action.ipynb](Activities/05-Stu_K_Means_In_Action/Unsolved/k_means_in_action.ipynb)
 
-* [shopping_data_cleaned.csv](Activities/04-Stu_K_Means_In_Action/Resources/shopping_data_cleaned.csv)
+* [shopping_data_cleaned.csv](Activities/05-Stu_K_Means_In_Action/Resources/shopping_data_cleaned.csv)
 
 ---
 
@@ -686,73 +689,76 @@ In this activity, students will identify the best number of clusters on a custom
 
 **Files:**
 
-* [k_means_in_action.ipynb](Activities/04-Stu_K_Means_In_Action/Solved/k_means_in_action.ipynb)
+* [k_means_in_action.ipynb](Activities/05-Stu_K_Means_In_Action/Solved/k_means_in_action.ipynb)
 
-* [shopping_data_cleaned.csv](Activities/04-Stu_K_Means_In_Action/Resources/shopping_data_cleaned.csv)
+* [shopping_data_cleaned.csv](Activities/05-Stu_K_Means_In_Action/Resources/shopping_data_cleaned.csv)
 
-Walkthrough the solution and highlight the following:
+In the root folder of Amazon SageMaker Studio, load the unsolved version of the Jupyter notebook `k_means_in_action.ipynb`. Open the Jupyter notebook and select the `Python 3 (Data Science)` kernel.
+
+![Importing the unsolved version of the Jupyter notebook](Images/sagemaker-studio-customers-ipynb.gif)
+
+Live code the solution and highlight the following:
 
 * This activity uses the customer shopping data that was preprocessed earlier.
 
-    ```python
-    file_path = Path("../Resources/shopping_data_cleaned.csv")
-    df_shopping = pd.read_csv(file_path)
-    ```
+  ```python
+  file_path = "Data/shopping_data_cleaned.csv"
+  df_shopping = pd.read_csv(file_path)
+   ```
 
 * The elbow curve is used to find the best value for `k`. A `for-loop` is used to loop 10 times, fitting the k-means model and fetching the `inertia` to create the plot.
 
-    ```python
-    inertia = []
-    k = list(range(1, 11))
+  ```python
+  inertia = []
+  k = list(range(1, 11))
 
-    # Calculate the inertia for the range ok k values
-    for i in k:
-        km = KMeans(n_clusters=i, random_state=0)
-        km.fit(df_shopping)
-        inertia.append(km.inertia_)
-    ```
+  # Calculate the inertia for the range ok k values
+  for i in k:
+      km = KMeans(n_clusters=i, random_state=0)
+      km.fit(df_shopping)
+      inertia.append(km.inertia_)
+  ```
 
-* The elbow curve is created using `hvPlot`.
+* The elbow curve is created using the `plot()` method from Pandas.
 
-    ```python
-    elbow_data = {"k": k, "inertia": inertia}
-    df_elbow = pd.DataFrame(elbow_data)
-    df_elbow.hvplot.line(x="k", y="inertia", xticks=k, title="Elbow Curve")
-    ```
+  ```python
+  elbow_data = {"k": k, "inertia": inertia}
+  df_elbow = pd.DataFrame(elbow_data)
+  df_elbow.plot.line(x="k", y="inertia", xticks=k, title="Elbow Curve")
+  ```
 
-Explain to students that, after observing the elbow curve, they can conclude that the best two values for `k` can be `5` and `6`, since at those points the elbow shape starts.
+Explain to students that, after observing the elbow curve, they may conclude that the best two values for `k` are `5` and `6`, since at those points the elbow shape starts.
 
 ![elbow curve](Images/elbow-curve-customers.png)
 
 * The `get_clusters()` function, is a mechanism to encapsulate the k-means clustering algorithm to be reused. The value of `k` and the `data` where the clusters are going to be identified are passed as parameters.
 
-    ```python
-    def get_clusters(k, data):
-        # Initialize the K-Means model
-        model = KMeans(n_clusters=k, random_state=0)
+  ```python
+  def get_clusters(k, data):
+      # Initialize the K-Means model
+      model = KMeans(n_clusters=k, random_state=0)
 
-        # Fit the model
-        model.fit(data)
+      # Fit the model
+      model.fit(data)
 
-        # Predict clusters
-        predictions = model.predict(data)
+      # Predict clusters
+      predictions = model.predict(data)
 
-        # Create return DataFrame with predicted clusters
-        data["class"] = model.labels_
+      # Create return DataFrame with predicted clusters
+      data["class"] = model.labels_
 
-        return data
-    ```
+      return data
+  ```
 
 * A visual analysis of using k-means with `k=5` and `k=6` is done by creating a 2-D scatter plot, as well as a 3-D, scatter plot.
 
-| Plot Type       | `k=5`                                       | `k=6`                                       |
-| --------------- | ------------------------------------------- | ------------------------------------------- |
-| 2D Scatter plot | ![2D Scatter k=5](Images/2d-scatter-k5.png) | ![2D Scatter k=6](Images/2d-scatter-k6.png) |
-| 3D Scatter plot | ![3D Scatter k=5](Images/3d-scatter-k5.png) | ![3D Scatter k=5](Images/3d-scatter-k6.png) |
+  Scatter plot with `k=5`.
+  ![2D Scatter k=5](Images/2d-scatter-k5.png)
 
-Explain that even though we have more features than we can plot in two or three dimensions, it is still helpful to show the graphs.
+  Scatter plot with `k=6`.
+  ![2D Scatter k=6](Images/2d-scatter-k6.png)
 
-* After analyzing the plots, it can be concluded that using `k=6`, a more meaningful segmentation of customers can be done as follows:
+* After visually analyzing the clusters, the best value for `k` seems to be `6`. A value of `k=6`, allows to define more meaningful segmentation of customers as follows:
 
   * _Cluster 1_: Medium income, low annual spend
   * _Cluster 2_: Low income, low annual spend
@@ -763,50 +769,61 @@ Explain that even though we have more features than we can plot in two or three 
 
 * Having defined these clusters, we can formulate marketing strategies relevant to each cluster aimed to increase revenue.
 
-Encourage one or two students to share their conclusions, ask for any remaining questions, and move forward.
+Encourage one or two students to share their conclusions and answer any questions before moving on.
 
 ---
 
-### 11. Instructor Do: Speeding up Machine-Learning Algorithms with PCA (10 min)
+### 11. Instructor Do: Speeding Up Machine Learning Algorithms with PCA (10 min)
 
-In this activity, students will learn how to use principal component analysis as a technique to speed up machine-learning algorithms by reducing the number of features.
+In this activity, students will learn how to use Principal Component Analysis (PCA) as a technique to speed up ML algorithms by reducing the number of input features.
 
 **Files:**
 
-* [05_Ins_PCA.ipynb](Activities/05-Ins_PCA/Solved/05_Ins_PCA.ipynb)
+* [Ins_PCA.ipynb](Activities/06-Ins_PCA/Solved/Ins_PCA.ipynb)
 
-Explain to students that principal component analysis (PCA), is a statistical technique to speed up machine-learning algorithms when the number of input features (or dimensions) is too high. Explain to students that PCA reduces the number of dimensions by transforming a large set of variables into a smaller one that contains most of the information in the original large set.
+Open the lesson slides and move to the "Speeding Up ML Algorithms with PCA" section and highlight the following:
 
-Open the unsolved Jupyter Notebook, live code the demo, and highlight the following:
+* There are some machine learning problems where the number of input features (or dimensions) is to high, for example in the order of tens or thousands of features.
 
-* There are two libraries that should be imported from `sklearn` to use PCA: `StandardScaler` and `PCA`.
+* Working with too many variables may be complex and could lead to slow down ML algorithms computing.
+
+* PCA is a statistical technique that reduces the number of input features (or dimensions) of a dataset by creating a smaller number of dimensions that represents the underlying structure of the data.
+
+* The dimensions created by PCA are called principal components.
+
+* A principal components represent data points where there is a large variance and the data is most spread out.
+
+Explain to students that we are not going to deal with the mathematical complexity of PCA, the most crucial fact that they have to remember is that PCA is used to reduce the number of input features. As a result, ML algorithms computing may speed-up.
+
+Close the presentation, switch to Amazon SageMaker Studio and upload the unsolved version of the Jupyter notebook. Next, Open the notebook, select the `Python 3 (Data Science)` kernel and live code the demo by highlighting the following:
+
+![Loading the unsolved Jupyter notebook](Images/sagemaker-studio-ins-pca.gif)
+
+* Scikit-learn offers a class to compute PCA, you just need to import `PCA` from the `sklearn.decomposition` module.
 
   ```python
-  from sklearn.preprocessing import StandardScaler
   from sklearn.decomposition import PCA
   ```
 
-* The previously preprocessed version of the iris dataset is used to explain how to apply PCA.
+* For this demo we will use the `new_credit_risk.csv` data file that we created before.
 
-  ![The iris dataset without target class](Images/iris-dataset-no-targets.png)
+  ![Loading the credit risk data](Images/sagemaker-studio-pca-data.png)
 
-* There are four features in the iris dataset with values on different scales. The first step toward using PCA is to standardize the features' values. The `StandardScaler` library is used to do this.
+* Before start using the PCA algorithm, it's important to scale the data. We don't need to scale the data for this demo since we already scaled before, but keep in mind that this is crucial for the PCA algorithm to work.
 
-  ![Using StandardScaler](Images/using-standardscaler.png)
-
-* Once the features are standardized, PCA can be used to reduce the number of features in the dataset. First, a PCA model should be created specifying the final number of features in the `n_components` parameter. In this demo, the features are reduced from `4` to `2`.
+* To start using this algorithm, a `PCA` model should be created specifying the final number of features in the `n_components` parameter. In this demo, the features will be reduced from `5` to `2` and the `random_state` parameter is set to `0` to allow model reproducibility.
 
   ```python
-  pca = PCA(n_components=2)
+  pca = PCA(n_components=2, random_state=0)
   ```
 
 * After creating the PCA model, we apply dimensionality reduction on the scaled dataset.
 
   ```python
-  iris_pca = pca.fit_transform(iris_scaled)
+  risk_pca = pca.fit_transform(df_risk)
   ```
 
-Tell students that after dimensionality reduction, we get as a result a smaller set of dimensions called **principal components**. There isn’t a particular meaning assigned to each principal component; the new components are just the two main dimensions of variation that contains most of the information in the original dataset.
+Explain to students that after dimensionality reduction, we get as a result a smaller set of dimensions, these dimensions are the **principal components**. There isn’t a particular meaning assigned to each principal component; the new components are just the two main dimensions of variation that contains most of the information in the original dataset.
 
 * The resulting principal components, are transformed into a DataFrame to be used next to fit the k-means algorithm. You can see that principal component values have no direct relation with the values in the original dataset. They can be seen as a reduced representation of the original data.
 
@@ -814,27 +831,27 @@ Tell students that after dimensionality reduction, we get as a result a smaller 
 
 Explain to students that dimensionality reductions imply a loss of accuracy; however, the trick is to sacrifice a little accuracy for simplicity. Smaller datasets are easier to explore and visualize. They ease data analysis and speed up machine-learning algorithms without extraneous variables to process.
 
-* To know how much information can be attributed to each principal component, the explained variances are used.
+* To know how much information can be attributed to each principal component, the explained variance ratio is used.
 
   ![Explained variance](Images/explained-variance.png)
 
-Explain to students that in this demo, after using the attribute `explained_variance_ratio_`, they can see that the first principal component contains `72.77%` of the variance, and the second principal component contains `23.03%` of the variance. Both components together contain `95.80%` of the information.
+Explain to students that in this demo, after using the attribute `explained_variance_ratio_`, they can see that the first principal component contains `23.73%` of the variance, and the second principal component contains `20.45%` of the variance. Both components together contain `44.18%` of the information.
 
 * The elbow curve is generated using the principal components data. You can see that the resulting best value for `k` is `3`. Despite some accuracy loss due to dimensionality reduction, the results are still good enough.
 
   ![PCA Elbow Curve](Images/pca-elbow-curve.png)
 
-* The k-means algorithm is used to predict the clusters for the iris data. But now, the principal components data is used with `k=3`.
+* The k-means algorithm is used to predict the clusters for the credit risk data. But now, the principal components data is used with `k=3`.
 
   ```python
   # Initialize the K-Means model
   model = KMeans(n_clusters=3, random_state=0)
 
   # Fit the model
-  model.fit(df_iris_pca)
+  model.fit(df_risk_pca)
 
   # Predict clusters
-  predictions = model.predict(df_iris_pca)
+  predictions = model.predict(df_risk_pca)
   ```
 
 * Finally, the clusters are plotted. Now they are easier to analyze since we have only two features.
@@ -851,11 +868,13 @@ In this activity, students will use PCA to reduce the dimensions of the consumer
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_PCA/README.md)
+* [README.md](Activities/07-Stu_PCA/README.md)
 
 **Files:**
 
-* [06_Stu_PCA.ipynb](Activities/06-Stu_PCA/Unsolved/06_Stu_PCA.ipynb)
+* [06_Stu_PCA.ipynb](Activities/07-Stu_PCA/Unsolved/Stu_PCA.ipynb)
+
+* [shopping_data_cleaned.csv](Activities/07-Stu_PCA/Resources/shopping_data_cleaned.csv)
 
 ---
 
@@ -863,33 +882,42 @@ In this activity, students will use PCA to reduce the dimensions of the consumer
 
 **Files:**
 
-* [06_Stu_PCA.ipynb](Activities/06-Stu_PCA/Solved/06_Stu_PCA.ipynb)
+* [06_Stu_PCA.ipynb](Activities/07-Stu_PCA/Solved/Stu_PCA.ipynb)
 
-Walkthrough the solution and highlight the following:
+* [shopping_data_cleaned.csv](Activities/07-Stu_PCA/Resources/shopping_data_cleaned.csv)
 
-* After using PCA, the features' values on the `df_shopping` DataFrame are standardized using the `StandardScaler` library from `sklearn`.
+In the root folder of Amazon SageMaker Studio, load the unsolved version of the Jupyter notebook `Stu_PCA.ipynb`. Open the Jupyter notebook and select the `Python 3 (Data Science)` kernel.
+
+![Importing the unsolved version of the Jupyter notebook](Images/sagemaker-studio-pca-stu.gif)
+
+Live code the solution and highlight the following:
+
+* Before using PCA, the features' values on the `df_shopping` DataFrame are standardized using the `StandardScaler` library from `sklearn`.
 
   ```python
-  shopping_scaled = StandardScaler().fit_transform(df_shopping)
+  # Create the scaler instance
+  data_scaler = StandardScaler()
+
+  # Fit the scaler with the DataFrame's values
+  data_scaler.fit(df_shopping.values)
+
+  # Scale the data
+  shopping_scaled = data_scaler.transform(df_shopping.values)
   ```
 
-* PCA is initially used by reducing the number of features from `4` to `2`.
+* PCA is used to reduce the number of features from `4` to `2`.
 
   ```python
   # Initialize PCA model
-  pca = PCA(n_components=2)
+  pca = PCA(n_components=2, random_state=0)
 
   # Get two principal components for the data.
   shopping_pca = pca.fit_transform(shopping_scaled)
   ```
 
-Tell students that, when they fetch the explained variance, the first principal component will contain `33.7%` of the variance, and the second principal component will contain `26.2%` of the variance. Since we have `59.9%` of the information in the original dataset, it is worth to explore increasing the number of principal components up to three to verify if this ratio improves.
+Explain to students that according to the explained variance, the first principal component contains `44.3%` of the variance and the second principal component contains `33.3%` of the variance. We have `77.6%` of the information in the original dataset, so we may have a valid representation of the original data from the principal components.
 
 ![Explained variance with two PCs](Images/explained-variance-2pcs.png)
-
-* After PCA is applied defining three principal components, the explained variance value improves. This preserves `83.1%` of the information in the original dataset, so we can conclude that using three principal components is a better approach to reduce the dimensions in this case.
-
-  ![Explained variance with three PCs](Images/explained-variance-3pcs.png)
 
 * The k-means algorithm is fit with the principal components data to predict the clusters. A value of `k=6` is used, as this was the best value in the previous exercise using the elbow curve.
 
@@ -907,13 +935,13 @@ Tell students that, when they fetch the explained variance, the first principal 
   df_shopping_pca["class"] = model.labels_
   ```
 
-* Since we decided that three principal components were the best approach, a 3-D scatter plot is created with Plotly Express to represent the clusters visually.
+* Finally, a scatter plot is created to visualize the clusters using the PCA data. It can be seen that the six clusters are easy to visualize and understand.
 
   ![Clusters plot](Images/pca-data-plot.png)
 
 Explain to students that the power of PCA to speed up machine-learning algorithms is more noticeable when you are dealing with a dataset that has tens or hundreds of features. For datasets up to ten features, PCA adds value to simplify data analysis and visualization.
 
-Answer any questions before moving on.
+Answer any questions before ending the class.
 
 ---
 
