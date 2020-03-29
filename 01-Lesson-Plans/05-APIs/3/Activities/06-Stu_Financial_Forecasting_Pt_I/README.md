@@ -24,7 +24,7 @@ Help Harold by creating a Monte Carlo simulation that simulates the next `252 * 
 
     * Set a variable for `252 * 3` trading days.
 
-    * Create a list to hold simulated `TSLA` closing prices with the last closing price of the sample (data from IEX API call) as its first element.
+    * Create a list to hold simulated `TSLA` closing prices with the last closing price of the sample (data from Alpaca API call) as its first element.
 
     * For every trading day, calculate a simulated price using the preceding day's closing price multiplied by ```(1 + np.random.normal(avg_daily_return, std_dev_daily_return)```. In other words, multiply the preceding closing price by a randomly generated daily return based on a normal probability distribution of historical `TSLA` daily returns. Save the results to a `pandas` DataFrame.
 
