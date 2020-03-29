@@ -30,7 +30,7 @@ Once the `alpaca-trade-api` download is complete, verify the installation comple
   pip list | grep alpaca-trade-api
   ```
 
-  ![iexfinance_verify](Images/alpaca-verify.png)
+  ![alpaca_verify](Images/alpaca-verify.png)
 
 ## Set ALPACA_API_KEY and ALPACA_SECRET_KEY environment variables
 
@@ -100,7 +100,7 @@ An out-of-date Anaconda environment can create issues when trying to install new
     conda update conda
     ```
 
-3. Create a fresh conda environment to use with iexfinance.
+3. Create a fresh conda environment to use with alpaca.
 
     ```shell
     conda create -n alpacaenv python=3.7 anaconda
