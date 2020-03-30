@@ -34,7 +34,7 @@ By the end of class, students will be able to:
 
 ### Slideshow and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/17jc9_8FMijZJdai1JNnAQTO33HV-mhxFaMwI5FxRL8Q/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
@@ -46,23 +46,35 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome the class to day 2 of Unit 13, this should be a fun one since students will go deeper into using AWS to deploy machine -earning models.
+Welcome the class to day 2 of Unit 13, this should be a fun one since students will go deeper into using AWS to deploy ML models.
 
-Explain to students that throughout this unit, we will use the free tier of AWS as well as the trial period for some of the services. Slack out the following resources to be used as a reference to understand how the free offer of AWS works.
+Open the lesson slides and review the class objectives. Continue to the "AWS Free Tier" section and highlight the following:
+
+* Throughout this unit, we will use the free tier of AWS as well as the trial period for some of the services.
+
+* The details of the services that we will use in class can be seen in the following table.
+
+  | Amazon SageMaker (Free Trial)                                                    | Amazon Lex (12 Months Free)       | AWS Lambda (Always Free)                              | Amazon S3 (12 Months Free) |
+  | -------------------------------------------------------------------------------- | --------------------------------- | ----------------------------------------------------- | -------------------------- |
+  | `250` hours per month of `t2.medium` notebook usage for the first **two months** | `10,000` text requests per month  | `1,000,000` free requests per month                   | `5` GB of Standard Storage |
+  | `50` hours per month of `m4.xlarge` for training for the first **two months**    | `5,000` speech requests per month | Up to `3.2` million seconds of compute time per month | `20,000` Get Requests      |
+  | `125` hours per month of `m4.xlarge` for hosting for the first **two months**    |                                   |                                                       | `2,000` Put Requests       |
+
+* As you can see, Amazon SageMaker offers a two-months free trial. This period starts the day you launch your first notebook or instance in this service, so if you have never used Amazon SageMaker before, your trial period started in the past class.
+
+* Amazon Lex and Amazon S3 are free to use for one year as long as you don't overpass the limits of each service.
+
+* In the case of AWS Lambda, it's always free if you pull less than `1,000,000` requests and you use les that  `3.2` million seconds ofr compute time per month. This limits are usually enough for testing purposes.
+
+Slack out the following resources to be used as a future reference, and encourage students to keep updated of the Free Tier limits by visiting the AWS Free Tier documentation.
 
 * [AWS Free Tier Supplemental](../Supplemental/AWS-Free-Tier.md)
 
-* [AWS Free Tier Documentation](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Categories=categories%23ai-ml)
-
-Open the [AWS Free Tier Supplemental](../Supplemental/AWS-Free-Tier.md) and briefly explain to students the limits we will have for the services they will learn in this unit.
-
-| Amazon SageMaker (Free Trial)                                                    | Amazon Lex (12 Months Free)       | AWS Lambda (Always Free)                              | Amazon S3 (12 Months Free) |
-| -------------------------------------------------------------------------------- | --------------------------------- | ----------------------------------------------------- | -------------------------- |
-| `250` hours per month of `t2.medium` notebook usage for the first **two months** | `10,000` text requests per month  | `1,000,000` free requests per month                   | `5` GB of Standard Storage |
-| `50` hours per month of `m4.xlarge` for training for the first **two months**    | `5,000` speech requests per month | Up to `3.2` million seconds of compute time per month | `20,000` Get Requests      |
-| `125` hours per month of `m4.xlarge` for hosting for the first **two months**    |                                   |                                                       | `2,000` Put Requests       |
+* [AWS Free Tier Documentation](https://aws.amazon.com/free)
 
 Answer any questions before moving on.
+
+---
 
 ### 2. Instructor Do: Creating an Administrator User on IAM (10 min)
 
