@@ -2,7 +2,7 @@
 
 ### Overview
 
-In today's class, students will be introduced to some Amazon Web Services (AWS) tools and will learn how to leverage some cloud computing services for machine learning using Amazon SageMaker.
+In today's class, students will continue working with Amazon Web Services (AWS) and will learn how to leverage some cloud computing services for machine learning using Amazon SageMaker Studio.
 
 ### Class Objectives
 
@@ -12,15 +12,13 @@ By the end of class, students will be able to:
 
 * Orchestrate a cloud solution by combining different AWS services.
 
-* Understand how Amazon SageMaker works and how it can be used to deploy machine-learning models.
+* Understand how Amazon SageMaker Studio can be used to deploy machine-learning models.
 
 ### Instructor Notes
 
 * Slack out the [Deep Learning Installation Guide](../../14-Deep-Learning/Supplemental/deep_learning_installation_guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
 * This lesson introduces new content rapidly. Students may express frustration at learning new cloud technologies. Remind students that while the learning curve may be steep at first, AWS and cloud experience is highly sought-after and well worth the effort required to become comfortable with it.
-
-* **Important!** Slack out the disclaimer for [AWS Free Tier](../Supplemental/AWS-Free-Tier.md) services prior to class. Take some time at the beginning of class to explain that while we are only using free tier services in class; students should review this documentation in order to avoid accidentally incurring charges.
 
 * Note that in the past, AWS content has appeared differently for some instructional teams. It seems that AWS does A/B testing on their UI. If your AWS views _don’t_ match up with the views in the lesson plan, check that you've pulled the latest updates from GitHub or look in the Slack Instructional Team channel for announcements regarding this.
 
@@ -31,6 +29,7 @@ By the end of class, students will be able to:
 * There are a few activities that require setup. Have the class follow along and ask questions as you go.
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [13.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30a703ee-9c5d-497a-9348-aaee016135c6) Note that this video may not reflect the most recent lesson plan.
 
 ### Slideshow and Time Tracker
