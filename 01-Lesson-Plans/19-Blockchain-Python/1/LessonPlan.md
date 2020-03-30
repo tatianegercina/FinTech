@@ -45,7 +45,7 @@ By the end of the class, students will be able to:
 * The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
-* To watch an sample class lecture, go here: [19.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6b0987ef-966d-4ba5-8689-ab1e0124ac2a) Note that this video may not reflect the most recent lesson plan.
+* To watch a sample class lecture, go here: [19.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6b0987ef-966d-4ba5-8689-ab1e0124ac2a) Note that this video may not reflect the most recent lesson plan.
 
 ---
 
@@ -69,7 +69,7 @@ Ask the students the following questions:
 
   **Answer**: A signed message that authorizes the transfer of funds from one account to another.
 
-Explain to students that today we are going to be talking about blockchains in our favorite language, Python.
+Explain to students that today we are going to be talking to blockchains in our favorite language, Python.
 
 Ask the class:
 
