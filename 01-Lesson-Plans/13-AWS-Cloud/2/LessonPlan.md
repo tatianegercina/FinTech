@@ -76,38 +76,52 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Instructor Do: Creating an Administrator User on IAM (10 min)
+### 2. Everyone Do: Creating an Administrator User on IAM (15 min)
 
-In this activity, students will learn how to create an `administrator` user using AWS Identity and Access Management (IAM) service. This will add some extra security when working on AWS.
+In this activity, students will learn how to create an `administrator` user using AWS Identity and Access Management (IAM) service. This will add some extra security when working on AWS. This is a collaborative activity where students should follow your steps throughout the process, so be sure to keep the pace of the activity and ask TAs to assist those students who may be stuck.
 
-Explain to students that a common best practice is to avoid using the principal or root user to manage an AWS account. This principal user is the one they used to create the AWS account. A new user for each person that requires administrator access should be created using the AWS Identity and Access Management (IAM) service.
+Explain to students that a common best practice is to avoid using the principal or root user to manage an AWS account. The root user is the one they used to create their AWS account and the same user they use in Day 1.
 
-Open the [AWS Management Console](https://console.aws.amazon.com) using your root user, and show students how to create a new user on IAM as follows:
+Highlight to students that usually a new user should be created for each person that requires administrative access to the services of managed by an AWS root account, especially in corporate environments.
 
-* Look for the IAM service on the Find Services search box, type `iam`, and click on IAM service.
+Explain to students, that AWS provides a service called Identity and Access Management (IAM) service to create and manage users.
+
+Open the [AWS Management Console](https://console.aws.amazon.com) using your root user, ask to students to do the same to follow you in the process of creating a new user in IAM.
+
+Once all the students opened their AWS Management Console, explain to students that now you will create an `administrator` user that will have permissions to administer all the AWS services; this user may look redundant with the root user, however, if the access credentials of this new `administrator` user get compromised, you can block it or recreate the password to secure your services without compromising your root users.
+
+Continue the demo and highlight the following:
+
+* Start by looking for the IAM service on the Find Services search box, type `iam`, and click on IAM service.
 
   ![Create an administrator IAM user - Step 1](Images/iam-user-1.png)
 
-* In the left pane menu, choose the _Users_ option and click on the _Add user_ button.
+* In the IAM start page, you may note that this service is marked as `Global` in the upper right corner, this means that IAM users can access AWS resources in any AWS Region. In the left pane menu, choose the "Users" option to continue.
 
   ![Create an administrator IAM user - Step 2](Images/iam-user-2.png)
 
-* On the _Add user_ page, fill out the details of the new `administrator` user and click on the _Next: Permissions_ button to continue.
+* In the Users start page, click on the "Add user" button to continue.
+
+  ![Create an administrator IAM user - Step 3](Images/iam-user-2_bis.png)
+
+* On the _Add user_ page, fill out the details of the new `administrator` user and click on the "Next: Permissions" button to continue.
 
   * **User name:** `administrator`
-  * **Access type:** Select the _Programmatic access_ and _AWS Management Console access_ boxes.
-  * **Console password:** Choose _Custom password_ and type your own password.
-  * **Require password reset:** Unselect this box.
+  * **Access type:** Select the "Programmatic access" and "AWS Management Console access" boxes.
+  * **Console password:** Choose "Custom password" and type a password you may remember.
+  * **Require password reset:** Uncheck this box.
 
   ![Create an administrator IAM user - Step 3](Images/iam-user-3.png)
 
-* On the _Set permissions_ page, choose _Add user to group_ and click on the _Create group_ button.
+* On the "Set permissions" page, choose "Add user to group" and click on the "Create group" button.
 
   ![Create an administrator IAM user - Step 4](Images/iam-user-4.png)
 
-* In the Create group dialog box, type `Administrators` on the _Group name_ textbox.
+* In the "Create group" dialog box, type `Administrators` on the "Group name" textbox.
 
-* Choose _Filter policies_, and then choose _AWS managed - job function_ to filter the table contents.
+  ![Create an administrator IAM user - Step 4](Images/iam-user-4_bis.png)
+
+* Click on "Filter policies" and then choose "AWS managed - job function" to filter the policies table content.
 
   ![Create an administrator IAM user - Step 5](Images/iam-user-5.png)
 
@@ -119,35 +133,55 @@ Open the [AWS Management Console](https://console.aws.amazon.com) using your roo
 
   ![Create an administrator IAM user - Step 7](Images/iam-user-7.png)
 
-* Click on the _Next: Tags_ button to continue.
+* Click on the "Next: Tags" button to continue.
 
-* On the _Next: Tags_ page, leave the defaults and click on the _Next: Review_ button to continue.
+  ![Create an administrator IAM user - Step 7](Images/iam-user-7_bis.png)
+
+* On the "Add Tags" page, leave the defaults and click on the "Next: Review" button to continue.
 
   ![Create an administrator IAM user - Step 8](Images/iam-user-8.png)
 
-* Review the list of group memberships to be added to the new user. When you are ready to proceed, click on the _Create user_ button.
+* Review the list of group memberships to be added to the new user. When you are ready to proceed, click on the "Create user" button.
 
   ![Create an administrator IAM user - Step 9](Images/iam-user-9.png)
 
-* Once the user is created, download the user's credentials by clicking on the _Download .csv_ button. Keep those credentials safe.
+* Once the user is created, download the user's credentials by clicking on the "Download .csv" button. Keep these credentials safe.
 
   ![Create an administrator IAM user - Step 10](Images/iam-user-10.png)
 
-Enable access to billing data for the IAM admin user as follows:
+Explain to students that now you should enable access to billing data for the new IAM administrator user, proceed as follows:
 
-* On the navigation bar, choose your account name, and then choose My Account.
+* On the navigation bar, click on your account name and then choose "My Account".
 
   ![Create an administrator IAM user - Step 11](Images/iam-user-11.png)
 
-* Scroll down to the _IAM User and Role Access to Billing Information_ section, and click on the _Edit_ option.
+* In the next page, scroll down to the "IAM User and Role Access to Billing Information" section, and click on the _Edit_ option.
 
   ![Create an administrator IAM user - Step 12](Images/iam-user-12.png)
 
-* Select the checkbox to _Activate IAM Access_ and choose _Update_.
+* Check the option "Activate IAM Access" and click on the "Update" button to finish.
 
   ![Create an administrator IAM user - Step 13](Images/iam-user-13.png)
 
-Sign out from your session, open the `CSV` file with the new `administrator` user credentials, and login into the AWS Management Console using the user's URL and password. Tell students that from now on, they should avoid using their _root user_ and work with this new admin user instead.
+Explain to students that now, they should sign out from their current session with their root user to start using their new `administrator` user.
+
+![Create an administrator IAM user - Step 14](Images/iam-user-14.png)
+
+Next, ask to students to open the `CSV` file with the new `administrator` user credentials they downloaded before and highlight the following:
+
+* In the `CSV` file, you will find a custom login link that you need to use to access the AWS Management Console with your `administrator` user.
+
+  ![Create an administrator IAM user - Step 15](Images/iam-user-15.png)
+
+* Copy the custom login link and paste it on your browser to open the custom login page. Type `administrator` as the "IAM user name" and the password you choose before. Click on the "Sign in" button to continue.
+
+  ![Create an administrator IAM user - Step 16](Images/iam-user-16.png)
+
+* Now you are logged-in into the AWS Management Console with your brand new IAM user. You may note that the IAM user name appears in the upper right conner followed by your AWS account ID.
+
+  ![Create an administrator IAM user - Step 17](Images/iam-user-17.png)
+
+Explain to students that from now on, they should avoid using their "root user" and work with this new administrator user instead.
 
 Answer any questions before moving on.
 
