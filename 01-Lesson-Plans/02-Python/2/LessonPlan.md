@@ -1534,7 +1534,7 @@ Then, review the mechanics of function inputs and outputs while showing the code
 
   ![LP_Ins_Functions_Variable_Scope.png](Activities/09-Ins_Functions/Images/LP_Ins_Functions_Variable_Scope.png)
 
-* Function names should follow the `camel_case` naming convention.
+* Function names should follow the `snake_case` naming convention.
 
   ```python
   def calculate_market_cap()
