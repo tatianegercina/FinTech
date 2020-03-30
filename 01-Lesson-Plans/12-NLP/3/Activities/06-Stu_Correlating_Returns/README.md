@@ -4,8 +4,10 @@ In this activity, you will create a sentiment index from News API headlines and 
 
 ## Instructions
 
-* Download returns data for the past month for AAPL.
+* Download returns data for the past month for AAPL using the Alpaca API.
+
 * Get news headlines for at least five topics of your choice and apply sentiment analysis to the headlines.
+
 * Correlate the headlines' sentiment to S&P 500 returns for each topic. Which one had the highest correlation?
 
 ## Hint
