@@ -187,137 +187,43 @@ Answer any questions before moving on.
 
 ---
 
-### 3. Student Do: Creating an Administrator User on IAM (10 min)
-
-In this activity, students will create an administrator user to manage their AWS account.
-
-**Instructions:**
-
-* [README.md](Activities/01-Stu_IAM_User/README.md)
-
----
-
-### 4. Instructor Do: Review Creating an Administrator User on IAM (10 min)
-
-This review activity is intended to verify that all students have successfully created their admin user using IAM.
-
-Make sure all students have their AWS account working properly. Ask TAs to assist students who could have any issues before moving forward. Forthcoming activities will use the `administrator` IAM user by default.
-
-Answer any questions before moving on.
-
----
-
-### 5. Student Do: Creating an Amazon SageMaker Notebook Instance (20 min)
-
-In this activity, students will learn how to create an instance of Amazon SageMaker and how to use Jupyter notebooks on the AWS cloud.
+### 3. Instructor Do: Intro to the Amazon Simple Storage Service (Amazon S3) (10 min)
 
 **Files:**
 
-* [monte_carlo.ipynb](Activities/02-Evr_SageMaker/Solved/monte_carlo.ipynb)
+* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
 
-Tell students that you will demo how to create an Amazon SageMaker notebook instance, and ask them to follow your steps as you move along the demo. Ask TAs to assist students if they get stuck along the process.
+Walk through the solution and highlight the following:
 
-Log into your AWS Management Console using your admin user. Tell students that the first component that Amazon SageMaker requires is an [Amazon S3](https://aws.amazon.com/s3) bucket to store data to feed machine-learning models or to store prediction results.
-
-To create an Amazon S3 bucket, follow the next steps:
-
-* On the Find Services search box, type `s3` and select the S3 service from the list.
-
-  ![Creating an Amazon SageMaker instance - step 1](Images/sagemaker-1.png)
-
-* On the Amazon S3 console, click on the Create bucket button.
-
-  ![Creating an Amazon SageMaker instance - step 2](Images/sagemaker-2.png)
-
-* Fill the following details on the Create button window.
-
-  * **Section: Name and region**
-    * Bucket name: `sagemaker-<CURRENT-DATE+TIME>` (for example: `sagemaker-20190903-1026`)
-    * Region: `US West (Oregon)` (S3 and SageMaker instance regions should be the same)
-    * Click: Next
-    ![Creating an Amazon SageMaker instance - step 3](Images/sagemaker-3.png)
-  * **Section: Configure options**
-    * Click: Next (leave defaults)
-    ![Creating an Amazon SageMaker instance - step 4](Images/sagemaker-4.png)
-  * **Section: Set permissions**
-    * Click: Next (leave defaults)
-    ![Creating an Amazon SageMaker instance - step 5](Images/sagemaker-5.png)
-  * **Section: Review**
-    * Click: Create bucket
-    ![Creating an Amazon SageMaker instance - step 6](Images/sagemaker-6.png)
-
-* Note down (copy/paste/save) the name of the bucket for use in the following section.
-
-Explain to students that the next step is to create a Jupyter Notebook instance on Amazon SageMaker. Follow the next steps.
-
-* Navigate to the AWS Management Console homepage. On the Find Services search box, type `sagemaker` and select Amazon SageMaker from the list.
-
-  ![Creating an Amazon SageMaker instance - step 7](Images/sagemaker-7.png)
-
-* On the Amazon SageMaker console, be sure that `Oregon` is the selected region, on the left pane menu, under the Notebook section, choose Notebook instances.
-
-  ![Creating an Amazon SageMaker instance - step 8](Images/sagemaker-8.png)
-
-* On the Notebook instances page, click on the Create notebook instance button.
-
-  ![Creating an Amazon SageMaker instance - step 9](Images/sagemaker-9.png)
-
-* Fill in the following values on the Create notebook instance page:
-
-  * **Section: Notebook instance settings**
-    * Notebook instance name: `sm-test`
-    * Notebook instance type: `ml.m4.xlarge`
-    * Elastic Inference: `none`
-    ![Creating an Amazon SageMaker instance - step 10](Images/sagemaker-10.png)
-  * **Section: Permissions and encryption**
-    * IAM role: On the dropdown list, select the `Create a new role` option.
-    ![Creating an Amazon SageMaker instance - step 11](Images/sagemaker-11.png)
-    * Under the S3 buckets you specify - optional section, choose Specific S3 buckets and type the name of the Amazon S3 bucket you created in the past section (e.g., `sagemaker-20190903-1026`), click on Create role to continue.
-    ![Creating an Amazon SageMaker instance - step 12](Images/sagemaker-12.png)
-    * Root access: Be sure that the `Enable - Give users root access to the notebook` option is selected. Tell students that this option is less safe but allows more control over the instance.
-    ![Creating an Amazon SageMaker instance - step 13](Images/sagemaker-13.png)
-
-* Scroll down and click on the Create notebook instance button to continue. Comment to students that the creations process takes a few minutes to finish.
-
-  ![Creating an Amazon SageMaker instance - step 14](Images/sagemaker-14.png)
-
-While the notebook instance is being created, explain to students that AWS charges for these and most resources when they are created, even when not in use. This instance is billed for by the seconds until it's turned off and deleted. Students will learn how to delete these resources later in today's class.
-
-* Once the notebook instance status is InService, it's ready to be used; in the Actions column, click on `Open JupyterLab` to continue.
-
-  ![Creating an Amazon SageMaker instance - step 15](Images/sagemaker-15.png)
-
-* After a few seconds, you will see the Jupyter Lab UI. Tell students that this notebook is running on the AWS cloud.
-
-* On the Notebook section in the JupyterLab Launcher, select the `conda_python3` environment to create a new notebook.
-
-  ![Creating an Amazon SageMaker instance - step 16](Images/sagemaker-16.png)
-
-* On the new notebook, code a `hello world` statement in Python in the first cell as a test. Be sure that all of the class has reached this point before moving forward.
-
-  ![Creating an Amazon SageMaker instance - step 17](Images/sagemaker-17.png)
-
-Explain to students that it's possible to code a Jupyter Notebook from scratch on this Amazon SageMaker's notebook instance, but they can also open an existing Jupyter Notebook. Slack out to students the `monte_carlo.ipynb` starter file, and continue the demo as follows.
-
-* This demo code runs a Monte Carlo simulation that uses the IEX API, so ask students to have their API key at hand.
-
-* In your Amazon SageMaker notebook instance, in left icon menu, click on the Upload icon (arrow up) and select the `monte_carlo.ipynb` notebook to upload.
-
-  ![Creating an Amazon SageMaker instance - step 18](Images/sagemaker-18.png)
-
-* Open the `monte_carlo.ipynb` notebook. You'll probably see the message: `Select Kernel` or `Kernel not found`, select `conda_python3` and click on `Select` or `Set Kernel` to continue.
-
-  ![Creating an Amazon SageMaker instance - step 19](Images/sagemaker-19.png)
-
-* Run all the cells in the notebook. Tell students that now this notebook is going to run on the AWS cloud using Amazon SageMaker.
-
-  ![Creating an Amazon SageMaker instance - step 20](Images/sagemaker-20.gif)
-
-End the demo and answer any questions before moving on.
+* Something really important
 
 ---
 
-### 6. Instructor Do: Creating and Deploying a Machine Learning Model in Amazon SageMaker (15 min)
+### 4. Students Do: Creating Amazon S3 Buckets (15 min)
+
+**Instructions:**
+
+* [README.md](Activities/02-Stu_Practice/README.md)
+
+**Files:**
+
+* [starter-code.js](Activities/02-Stu_Practice/Unsolved/starter-code.js)
+
+---
+
+### 5. Instuctor Do: Review Creating Amazon S3 Buckets (10 min)
+
+**Files:**
+
+* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
+
+Walk through the solution and highlight the following:
+
+* Something really important
+
+---
+
+### 6. Everyone Do: Intro to Amazon SageMaker Built-in Algorithms (30 min)
 
 In this activity, students will learn how a machine-learning model is created, trained, deployed, and evaluated in Amazon SageMaker.
 
@@ -562,79 +468,11 @@ Answer any questions before moving on.
 
 ---
 
-### 7. Student Do: Deploying a Housing Price Prediction Model in Amazon SageMaker (20 min)
-
-In this activity, students will calculate a linear regression model to predict the price of a house using the Boston Housing dataset and the SageMaker built-in `Linear Learner` algorithm.
-
-**Instructions:**
-
-* [README.md](Activities/04-Stu_Housing_Price/README.md)
-
-**Files**:
-
-* [boston-housing-regression.ipynb](Activities/04-Stu_Housing_Price/Unsolved/boston-housing-regression.ipynb)
+### 7. BREAK (15 min)
 
 ---
 
-### 8. Instructor Do: Review Deploying a Housing Price Prediction Model in Amazon SageMaker (10 min)
-
-**Files**:
-
-* [boston-housing-regression.ipynb](Activities/04-Stu_Housing_Price/Solved/boston-housing-regression.ipynb)
-
-Reassure students that it is OK if this was challenging. Amazon SageMaker APIs have a learning curve, as do other AWS resources, along with machine learning in general. Tell students that they will get a lot of practice with AWS today!
-
-Walkthrough the solution and highlight the following:
-
-* The data is fetched and analyzed to become familiar with it.
-
-* The data is split into test and train datasets and converted into to the [RecordIO-wrapped ProtoBuf format](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-inference.html) used by Amazon SageMaker's algorithms.
-
-* The prepared and formatted data is uploaded to an Amazon S3 bucket.
-
-* The model is trained using a linear learner algorithm using the data stored in Amazon S3.
-
-* The trained model is deployed on an Amazon SageMaker instance.
-
-* Predictions are performed, and the model's performance is scored.
-
-Answer any questions before moving on.
-
----
-
-### 9. Break (15 min)
-
----
-
-### 10. Instructor Do: Pros and Cons of Deploying Machine Learning Models with Amazon SageMaker (10 min)
-
-Lead and facilitate a discussion around deploying models in Amazon SageMaker and why a RESTful ML API is useful.
-
-Have students share their opinions with the class and bring up the following points:
-
-**Pros:**
-
-* Data storage capacity: By using an Amazon S3 bucket to store the data, we could have trained a model on multiple terabytes of data, or a lot more space than would fit in our personal computer.
-
-* Hardware/GPU: By using different Amazon SageMaker instances to train our model, we can access compute power, including GPU capabilities, making powerful hardware available to us as required.
-
-* Cost: Using AWS resources, we only pay for what we use. We will turn off everything before ending the class and not incur further charges.
-
-* Availability: By deploying our model to another Amazon SageMaker instance, we have made the prediction functionality available 24/7 through a secure endpoint to an application or to be consumed by others without having to make our computer available.
-
-* RESTful API: As learned in previous units, APIs provide a standard mechanism to access data. Our machine-learning API can be consumed through apps and other channels in a simple form while remaining secure and allowing other constraints (authentication, authorization, rate limiting, etc.).
-
-**Cons:**
-
-* Data privacy and security: By uploading data to a third party, you are trusting your data to them. Certain kinds of data are subject to compliance and regulatory constraints.
-
-* Visibility: You will not have oversight on AWS internal handling of your data and infrastructure.
-
-* Unavailability: Although there are service-level agreements in place, AWS (and any other cloud provider) can and has suffered outages at times, causing data unavailability.
-
----
-
-### 11. Student Do: Credit Risk Evaluation with Amazon SageMaker (20 min)
+### 8. Student Do: Credit Risk Evaluation with Amazon SageMaker (20 min)
 
 In this activity, students will train and deploy a binary classification model to predict the credit risk of a person using the [German Credit Risk dataset](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) and the SageMaker built-in `Linear Learner` algorithm.
 
@@ -652,7 +490,7 @@ This activity will require the use of an AWS SageMaker notebook instance. The un
 
 ---
 
-### 12. Instructor Do: Review Credit Risk Evaluation with Amazon SageMaker (10 min)
+### 9. Instructor Do: Review Credit Risk Evaluation with Amazon SageMaker (10 min)
 
 * Open JupyterLab in your AWS SageMaker notebook instance.
 
@@ -672,7 +510,7 @@ Answer any questions before moving on.
 
 ---
 
-### 13. Instructor Do: Delete Notebook Instance (10 min)
+### 10. Everyone Do: Deleting AWS Resources (15 min)
 
 In this activity, students will learn how to delete their Amazon SageMaker notebook instance so that no billing charges are incurred for it after class.
 
@@ -706,19 +544,33 @@ Lastly, go to the Amazon S3 console and remove the buckets created for the activ
 
 Answer any questions before moving on.
 
-### 14. Student Do: Delete AWS Resources (15 min)
-
-In this activity, students will delete all the AWS resources created in today's class to avoid additional charges.
-
-Explain to students that, as was mentioned before, the policies for the AWS free tier and trials constantly changes, so it is important to remove any unnecessary resources created on AWS to avoid additional charges. Specifically, remove Amazon SageMaker instances because even though they are stopped, AWS bills for hosting the instances.
-
-Collaborate with TAs, on assisting students in deleting all the AWS resources that students would like to remove. Remind students that they can save a local copy of the Jupyter Notebooks by right-clicking on the notebook name and selecting the Download option.
-
-![Downloading a Jupyter notebook](Images/download-notebook-sm.png)
-
-Answer any questions before finishing the class.
-
 ---
+
+### 11. Instructor Do: Pros and Cons of Deploying Machine Learning Models with Amazon SageMaker (10 min)
+
+Lead and facilitate a discussion around deploying models in Amazon SageMaker and why a RESTful ML API is useful.
+
+Have students share their opinions with the class and bring up the following points:
+
+**Pros:**
+
+* Data storage capacity: By using an Amazon S3 bucket to store the data, we could have trained a model on multiple terabytes of data, or a lot more space than would fit in our personal computer.
+
+* Hardware/GPU: By using different Amazon SageMaker instances to train our model, we can access compute power, including GPU capabilities, making powerful hardware available to us as required.
+
+* Cost: Using AWS resources, we only pay for what we use. We will turn off everything before ending the class and not incur further charges.
+
+* Availability: By deploying our model to another Amazon SageMaker instance, we have made the prediction functionality available 24/7 through a secure endpoint to an application or to be consumed by others without having to make our computer available.
+
+* RESTful API: As learned in previous units, APIs provide a standard mechanism to access data. Our machine-learning API can be consumed through apps and other channels in a simple form while remaining secure and allowing other constraints (authentication, authorization, rate limiting, etc.).
+
+**Cons:**
+
+* Data privacy and security: By uploading data to a third party, you are trusting your data to them. Certain kinds of data are subject to compliance and regulatory constraints.
+
+* Visibility: You will not have oversight on AWS internal handling of your data and infrastructure.
+
+* Unavailability: Although there are service-level agreements in place, AWS (and any other cloud provider) can and has suffered outages at times, causing data unavailability.
 
 ### End Class
 
