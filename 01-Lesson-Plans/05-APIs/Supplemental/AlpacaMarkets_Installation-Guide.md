@@ -62,11 +62,15 @@ To work with `.env` files on your machine you will need to be able to view hidde
 
   * Windows
 
-    * [Microsoft.com - Enabling Hidden Files](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files)
+    * Type `folder` in search bar.
+    * Select `File Explorer Options`.
+    * Click the `View` tab in the pop up box, then click `Show hidden files, folders and drives` as shown below:
+
+    ![Windows-hidden-files](Images/Windows-hidden-file.png)
 
   * Mac OSX
 
-    * Open FInder
+    * Open Finder
 
     * Press Command + Shift + Dot
 
