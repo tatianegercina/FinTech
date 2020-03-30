@@ -410,7 +410,7 @@ Modify the last line to add the `-d pcre.jit=0` parameter to avoid some issues t
 Ensure that everyone has successfully installed and can run the `hd-wallet-derive` tool from the command line.
 Once everyone has successfully installed the tool, have everyone `cd ..` into the directory containing the `hd-wallet-derive` folder.
 
-* Explain that we are going to be working in the directory right above the tools, so that we don't mix our code with the tool's code.
+* Explain that we are going to be working in the directory right above the tool's, so that we don't mix our code with the tool's code.
 
 First, let's create something called a "symlink"—essentially a shortcut—to our `hd-wallet-derive.php` script called `derive` to make the command shorter.
 
