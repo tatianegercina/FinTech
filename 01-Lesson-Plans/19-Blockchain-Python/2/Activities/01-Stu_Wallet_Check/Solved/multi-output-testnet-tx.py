@@ -1,14 +1,14 @@
 from bit import wif_to_key
 
-# replace with your private key (do not send this to students)
-key = wif_to_key("cQpxiiQHueFJgK3EaHKvDqAE7cm8gWKMrSj3ZPMMHkDr7v5gbkQW")
+# replace with your private key
+key = wif_to_key("PRIVATE_KEY_IN_WIF_FORMAT_HERE")
 
-# replace with student addresses
+# replace with different addresses
 addresses = ["mn9CfkoXJpkCMkPbRcBfUphso7QaDmBmgz", "mv4rnyY3Su5gjcDNzbMLKBQkBicCtHUtFB"]
 
 outputs = []
 
 for address in addresses:
-    outputs.append((address, 0.001, "btc"))
+    outputs.append((address, 0.0001, "btc"))
 
 print(key.send(outputs))
