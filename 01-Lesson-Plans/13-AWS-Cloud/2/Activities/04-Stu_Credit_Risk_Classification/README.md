@@ -12,6 +12,8 @@ The "German Credit Risk Dataset," classifies people described by a set of attrib
 
 ## Instructions
 
+This activity will require the use of Amazon SageMaker Studio. Follow each cell, complete the missing code on the starter notebook as you are guided through the process.
+
 1. Open Amazon SageMaker Studio and upload the provided `credit-risk-classification.ipynb` notebook to the root folder.
 
 2. Upload the provided `german_credit_data.csv` data file to the `Data` folder in Amazon SageMaker Studio.

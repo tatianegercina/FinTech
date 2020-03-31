@@ -561,7 +561,17 @@ Slack out the following page to students, where they can learn more about the di
 
 * [Use Amazon SageMaker Built-in Algorithms](https://docs.aws.amazon.com/sagemaker/latest/dg/algos.html).
 
-Answer any questions before moving on.
+Explain to students that now you will show them how Amazon SageMaker stores the prediction results and data in Amazon S3.
+
+From the Amazon SageMaker console, click on services and select Amazon S3 from the services list.
+
+![Open the Amazon S3 console](Images/open-amazon-s3-console.gif)
+
+Open the the private bucket you created before, for example `sm-models-20200330-1244`, and explain to students that Amazon SageMaker stores the model's data in a compressed format for further analysis and usage.
+
+![Visualizing the Amazon SageMaker output files in Amazon S3](Images/amazon-sagemake-s3-files.gif)
+
+Finish the demo and answer any questions before moving on.
 
 ---
 
@@ -589,19 +599,28 @@ This activity will require the use of a Amazon SageMaker Studio. The unsolved no
 
 ### 9. Instructor Do: Review Credit Risk Evaluation with Amazon SageMaker (10 min)
 
-* Open JupyterLab in your AWS SageMaker notebook instance.
+**Files**:
 
-* Upload the dataset: [german_credit_data.csv](Activities/05-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv).
+* [credit-risk-classification.ipynb](Activities/04-Stu_Credit_Risk_Classification/Solved/credit-risk-classification.ipynb)
 
-* Upload the solved notebook: [credit-risk-classification.ipynb](Activities/05-Stu_Credit_Risk_Classification/Solved/credit-risk-classification.ipynb).
+* [german_credit_data.csv](Activities/04-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
 
-* Walk through the solved notebook, cell by cell, highlighting the following points:
-  * This activity is similar to the previous Housing Price Prediction; however, rather than `linear regression`, we are calculating a `logistic regression` to perform a `binary classification`.
-  * The output of the model prediction is a binary label (0, 1): "good" or "bad" credit risk.
-  * Despite using a curated dataset, we still need to perform some data preparation tasks: split, hot-encode, and scale the input features.
-  * Similar to the housing price prediction, we use the AWS SageMaker built-in `linear-learner` algorithm but change the hyper-parameter `predictor_type` to `binary_classifier`.
-  * Unlike with housing price prediction, the predictions are in the `predicted_label` field in the prediction result.
-  * For our model evaluation, besides the accuracy score, we use a confusion matrix to get a quick sense of the model's true-positive or negative and false-positive or negative prediction combinations.
+On your Amazon SageMaker Studio instance, upload the `german_credit_data.csv` data file to the `Data` folder as well as the solved version of the  `credit-risk-classification.ipynb` notebook to the root folder.
+
+Open the notebook, select the `Python 3 (Data Science)` kernel and perform a dry walkthrough review cell by cell by highlighting the following points:
+
+* In this activity we are computing a `logistic regression` to perform a `binary classification`.
+
+* The output of the model prediction is a binary label (0, 1): "Good" or "
+Bad" credit risk.
+
+* Despite using a curated dataset, we still need to perform some data preparation tasks: split, hot-encode, and scale the input features.
+
+* We use the Amazon SageMaker built-in `linear-learner` algorithm by setting the hyper-parameter `predictor_type` to `binary_classifier`.
+
+* The predictions are in the `predicted_label` field in the prediction result.
+
+* Lastly, for our model evaluation, besides the accuracy score, we use the classification report and a confusion matrix to get a quick sense of the model's true-positive/negative and false-positive/negative prediction combinations.
 
 Answer any questions before moving on.
 
@@ -609,35 +628,55 @@ Answer any questions before moving on.
 
 ### 10. Everyone Do: Deleting AWS Resources (15 min)
 
-In this activity, students will learn how to delete their Amazon SageMaker notebook instance so that no billing charges are incurred for it after class.
+In this activity, students will learn how to delete their AWS resources so that no billing charges are incurred for it after class.
 
-Open the Amazon SageMaker console, on the left pane menu, under the Notebook section, click on Notebook instances.
+This is a collaborative activity, so ask the students to follow your steps trough the process. Keep TAs assisting students that may be stuck.
 
-![Deleting Amazon SageMaker instance - 1](Images/deleting-sm-1.png)
+Start the demo by opening the Amazon SageMaker console, choose the "Endpoints" option in the left pane menu.
 
-Select the `sm-test` notebook instance on the left circular dot. Once selected, click on the right Actions menu and select Stop.
+![Checking for existing endpoints](Images/aws-delete-sm-endpoints.png)
 
-*![Deleting Amazon SageMaker instance - 2](Images/deleting-sm-2.png)*
+You should not have any endpoint in the "Endpoints" list, if any, select each endpoint and delete it from the "Actions" menu.
 
-Refresh the page and wait for the instance `Status` to change to `Stopped`. Note: This process will take a few minutes.
+Now, explain to students that every time they create a model, its configurations are stored and we may want to delete them to avoid additional charges.
 
-![Deleting Amazon SageMaker instance - 3](Images/deleting-sm-3.png)
+Click on "Endpoint configurations" in the left pane menu, you will see that there are several configurations.
 
-Select the instance again on the left circular dot, click on Actions and select Delete then confirm the delete.
+Delete all the endpoint configurations by selecting each one and choosing the "Delete" option from the "Actions" menu. Ask students to do the same.
 
-![Notebook Instance delete](Images/notebook-confirm-delete.png)
+![Deleting endpoint configuration](Images/amazon-sagemaker-delete-endpoint-conf.gif)
 
-* At the end of today's lesson, the notebook instances list should be empty and state: "There are currently no resources." Otherwise, charges will be incurred for any remaining active instances.
+Lastly, go to the Amazon S3 console to remove the buckets created for the activity by highlighting the following:
 
-Lastly, go to the Amazon S3 console and remove the buckets created for the activity as follows.
+* Select the bucket you want to delete, next, click on the "Delete" button.
 
-* Choose the checkbox next to the bucket name, next click on the Delete button.
+  ![Deleting Amazon S3 bucket](Images/delete-amazon-s3-bucket.png)
 
-![Deleting Amazon SageMaker instance - 4](Images/deleting-sm-4.png)
+* Since the bucket is not empty, you should delete all the objects first. Click on the "empty bucket configuration" link to continue.
 
-* On the Delete bucket window, type the name of the bucket to confirm that you want to delete it. Next, click on the Confirm button to finish.
+  ![Deleting Amazon S3 objects from a bucket](Images/amazon-s3-empy-bucket-conf.png)
 
-![Deleting Amazon SageMaker instance - 5](Images/deleting-sm-5.png)
+* Next, you need to confirm that you want to empty your bucket. Write the name of your bucket and click on the "Empy" button to continue.
+
+  ![Empty bucket confirmation](Images/amazon-s3-empty-confirm.png)
+
+* Once the bucket is empty, you will see a confirmation message. Click on the "Exit" button to return to the buckets list.
+
+  ![Empty bucket confirmation message](Images/amazon-s3-empty-confirmation.png)
+
+* To permanently delete your bucket, select it again and click on the delete button.
+
+  ![Deleting Amazon S3 bucket](Images/delete-amazon-s3-bucket.png)
+
+* Next, you need to confirm the bucket deletion by writing the name of the bucket. Click on the "Delete bucket" button to continue.
+
+  ![Deleting Amazon S3 bucket confirmation](Images/amazon-s3-delete-confirm.png)
+
+* Once the bucket is deleted, you will see a confirmation message.
+
+  ![Deleted bucket confirmation message](Images/amazon-s3-delete-confirmation-msg.png)
+
+Explain to students that they have to delete all the buckets manually, since the AWS Free Tier offers twelve months of Amazon S3 storage, they can keep them if the want. At least, they have to keep the public bucket for the activities in Day 3.
 
 Answer any questions before moving on.
 
@@ -668,6 +707,8 @@ Have students share their opinions with the class and bring up the following poi
 * Visibility: You will not have oversight on AWS internal handling of your data and infrastructure.
 
 * Unavailability: Although there are service-level agreements in place, AWS (and any other cloud provider) can and has suffered outages at times, causing data unavailability.
+
+---
 
 ### End Class
 
