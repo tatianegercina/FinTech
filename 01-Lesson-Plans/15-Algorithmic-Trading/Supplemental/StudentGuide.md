@@ -29,12 +29,13 @@ Algorithmic trading bots consist of three components:
 - Signals:  Information that is useful for predicting the asset movement (such as performance and evaluation metrics, public sentiment).
 - Entry Rules:  A decision rule telling you when to buy an asset (such as when a signal reaches a pre-specified, high enough level).
 - Exit Rules:  A decision rule telling you when to sell or dispose of an asset (such as when a signal reaches a pre-specified, low enough level).
-
+</details>
 <details>
 <summary>What is the difference between technical analysis and fundamental analysis?</summary><br>
 
 The two major schools of thought in trading analysis are technical and fundamental analysis.  They are both are beneficial techniques used to develop trading strategies, however the methods of each are quite different.
 <blockquote>
+
 <details>
 <summary>Technical Analysis</summary><br>
 
@@ -46,6 +47,7 @@ Technical analysis is used to determine the value of a stock based only on the p
 <summary>Fundamental Analysis</summary><br>
 
 Fundamental analysis attempts to determine the value of a stock based on qualitative factors like management style and business model, quantitative factors such as balance sheet numbers, and even emotional and subjective factors like public sentiment.  Fundamental analysts create complicated mathmatical forecasting models based on these factors, making many assumptions and applying different weights to various factors.
+
 <br>
 </details>
 
@@ -57,7 +59,7 @@ Fundamental analysis attempts to determine the value of a stock based on qualita
 <details>
 <summary>What is the difference between trading signals and technical indicators?</summary><br>
 
-Technical indicators are metrics used to evaluate stock price movements, while trading signals are the point which those indicators suggest a time to buy or sell.
+Technical indicators are metrics used to evaluate stock price movements, while trading signals are the point which those indicators suggest a time to buy or sell.  A good trading strategy will utlize both as one plays off the other.
 
 <blockquote>
 <details>
@@ -79,27 +81,23 @@ A trading signal is the point at which a technical indicator, such as the crosso
 </details>
 
 </details>
-
 <details>
-<summary>What types of trading signials exist?</summary><br>
-<blockquote>
+<summary>How do I create and use a Dual Moving Average Crossover?</summary><br>
+
+The dual moving average crossover utilizes short and long term moving averages.  When these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.
+
+If the short-term moving average line goes above the long-term moving average line, the indicator suggests that the price will be rising higher than the historical average in the short term.
+
+If the short-term moving average line dips below the long-term moving average line, the indicator suggests that the price will be dropping lower than the historical average in the short term.
+
+In the following candlestick chart for Bitcoin, you can see the dual moving average lines and the crossover points:
+
+<img src=Images/dual_ma_cross.png width=700>
+
+</details>
 <details>
-<summary>Trading Signal</summary><br>
-
-
-<br>
+<summary>How do I create and use Bollinger Bands?</summary><br>
 </details>
-<details>
-<summary>Trading Signal</summary><br>
-
-<br>
-</details>
-
-</blockquote>
-</details>
-
-</details>
-
 <details>
 <summary>What is backtesting and how do I use it?</summary><br>
 </details>
