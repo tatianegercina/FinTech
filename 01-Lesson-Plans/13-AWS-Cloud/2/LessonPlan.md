@@ -289,17 +289,15 @@ Answer any questions before moving on.
 
 ### 4. Students Do: Creating Amazon S3 Buckets (15 min)
 
+In this activity, students will gain hands-on experience on Amazon S3 by creating a public and a private buckets.
+
 **Instructions:**
 
-* [README.md](Activities/02-Stu_Practice/README.md)
-
-**Files:**
-
-* [starter-code.js](Activities/02-Stu_Practice/Unsolved/starter-code.js)
+* [README.md](Activities/02-Stu_S3/README.md)
 
 ---
 
-### 5. Instuctor Do: Review Creating Amazon S3 Buckets (10 min)
+### 5. Instructor Do: Review Creating Amazon S3 Buckets (10 min)
 
 **Files:**
 
