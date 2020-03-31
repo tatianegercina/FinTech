@@ -569,21 +569,21 @@ Answer any questions before moving on.
 
 ---
 
-### 8. Student Do: Credit Risk Evaluation with Amazon SageMaker (20 min)
+### 8. Student Do: Credit Risk Evaluation with Amazon SageMaker (40 min)
 
 In this activity, students will train and deploy a binary classification model to predict the credit risk of a person using the [German Credit Risk dataset](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) and the SageMaker built-in `Linear Learner` algorithm.
 
-This activity will require the use of an AWS SageMaker notebook instance. The unsolved notebook will guide students through the process and indicate what the missing code snippets are.
+This activity will require the use of a Amazon SageMaker Studio. The unsolved notebook will guide students through the process and indicate what the missing code snippets are.
 
 **Instructions:**
 
-* [README.md](Activities/05-Stu_Credit_Risk_Classification/README.md)
+* [README.md](Activities/04-Stu_Credit_Risk_Classification/README.md)
 
 **Files**:
 
-* [credit-risk-classification.ipynb](Activities/05-Stu_Credit_Risk_Classification/Unsolved/credit-risk-classification.ipynb)
+* [credit-risk-classification.ipynb](Activities/04-Stu_Credit_Risk_Classification/Unsolved/credit-risk-classification.ipynb)
 
-* [german_credit_data.csv](Activities/05-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
+* [german_credit_data.csv](Activities/04-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
 
 ---
 
