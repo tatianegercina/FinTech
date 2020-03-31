@@ -9,6 +9,6 @@ addresses = ["mn9CfkoXJpkCMkPbRcBfUphso7QaDmBmgz", "mv4rnyY3Su5gjcDNzbMLKBQkBicC
 outputs = []
 
 for address in addresses:
-    outputs.append((address, 0.001, "btc"))
+    outputs.append((address, 0.0001, "btc"))
 
 print(key.send(outputs))
