@@ -30,4 +30,4 @@
       *  This paper from academics at The University of Chicago and AQR (a large quantitative hedge fund manager) compare the performance of traditional statistical models used to forecast stock returns to the performance when deploying machine learning techniques (including random forests, but also many of the techniques we’ll learn in subsequent units). While dense, consider reading if you’re interested in a detailed contrast between traditional methods for forecasting stock returns and those involving machine learning.
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
