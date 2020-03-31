@@ -215,7 +215,7 @@ Ask the students:
 
 * What does having multiple outputs enable?
 
- **Answer:** You can send it to multiple people in one transaction.
+ **Answer:** One transaction can be sent to multiple people.
 
 * Now, can you have multiple inputs in a transaction?
 
