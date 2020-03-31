@@ -1,6 +1,6 @@
 # Students Do: Creating Amazon S3 Buckets
 
-In this activity, you will gain hands-on experience using Amazon S3 by creating two buckets.
+In this activity, you will gain hands-on experience using Amazon S3 by creating public and private buckets.
 
 ## Instructions
 

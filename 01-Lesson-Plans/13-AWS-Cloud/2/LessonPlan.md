@@ -313,40 +313,45 @@ Answer any questions before moving on.
 
 ### 6. Everyone Do: Intro to Amazon SageMaker Built-in Algorithms (30 min)
 
-In this activity, students will learn how a machine-learning model is created, trained, deployed, and evaluated in Amazon SageMaker.
+In this activity, students will learn how to create, train, deploy, and evaluate a built-in machine learning model in Amazon SageMaker Studio.
+
+This is a collaborative activity where you will lead the class throughout all the process, be sure to keep the pace allowing the students to follow you. Ask TAs to assist any student that may be stuck during the activity.
 
 **Files:**
 
-* [rainfall_forecast.ipynb](Activities/03-Ins_SageMaker_Deployment/Unsolved/rainfall_forecast.ipynb)
+* [rainfall_forecast.ipynb](Activities/03-Evr_SageMaker_Deployment/Unsolved/rainfall_forecast.ipynb)
 
-* [x_austin_final.csv](Activities/03-Ins_SageMaker_Deployment/Resources/x_austin_final.csv)
+* [x_austin_final.csv](Activities/03-Evr_SageMaker_Deployment/Resources/x_austin_final.csv)
 
-* [y_austin_final.csv](Activities/03-Ins_SageMaker_Deployment/Resources/y_austin_final.csv)
+* [y_austin_final.csv](Activities/03-Evr_SageMaker_Deployment/Resources/y_austin_final.csv)
 
-Explain to students that Amazon has actually created an extensive library of machine-learning models that are optimized for the cloud. This demo will show how to use one of those models.
+Explain to students that Amazon has created an extensive library of machine learning models that are optimized for the cloud. This demo will show how to use one of those models.
 
-Tell students that in this demo, you are going to deploy one of Amazon's linear regression models to predict the amount of rain that will fall in Austin, given the average temperature in degrees Fahrenheit.
+Tell students that you are going to demo one of Amazon's linear regression models to predict the amount of rain that will fall in Austin, given the average temperature in Fahrenheit degrees.
 
-Start the demo by opening the Jupyter lab UI at your Amazon SageMaker instance, and create a new folder called `Data`.
+Slack out the unsolved version of the Jupyter notebook and the two data files to the students, ask the class to follow you on this demo.
 
-![Deploy SageMaker Model - step 1](Images/deploy-sagemaker-1.png)
+Log-in into the AWS Management Console using your `administrator` IAM user, start the demo by opening Amazon SageMaker Studio and explain to students that the instance they created in Day 1, will be available also for this account since it has administrative rights. Remember to switch to the `US East (Ohio)` region before opening the Amazon SageMaker Studio control panel.
 
-Open the `Data` folder, and upload the following `CSV` files:
+![Deploy SageMaker Model - step 0](Images/deploy-sagemaker-0.gif)
 
-* `x_austin_final.csv`, this file contains historical weather conditions in Austin, Texas, over 1,319 days.
+Open the Amazon SageMaker Studio UI, open the folder called `Data` that you created before and upload the following `CSV` files by highlighting the following:
 
-* `y_austin_final.cvs`, this file contains the precipitation sums in inches in Austin, Texas, over 1,319 days.
+* `x_austin_final.csv`, this file contains historical weather conditions in Austin, Texas, along 1319 days.
 
-![Deploy SageMaker Model - step 2](Images/deploy-sagemaker-2.png)
+* `y_austin_final.cvs`, this file contains the precipitations sum in inches in Austin, Texas, along 1319 days.
 
-Navigate to the main folder on Jupyter lab, and import the unsolved version of the Jupyter Notebook to your Amazon SageMaker notebook instance. Live code the demo by highlighting the following:
+![Deploy SageMaker Model - step 1](Images/deploy-sagemaker-1.gif)
 
-* In the `Initial imports` section, some well-known libraries are imported. `sklearn` library is used to split the dataset in training and testing sets and to evaluate the model.
+Navigate to the main folder on Amazon SageMaker Studio, and import the unsolved version of the Jupyter notebook.
+
+![Deploy SageMaker Model - step 2](Images/deploy-sagemaker-2.gif)
+
+Open the `rainfall_forecast.ipynb` notebook, select the `Python 3 (Data Science) kernel and live code the demo by highlighting the following:
+
+* In the `Initial imports` section, some well-known libraries are imported. The `sklearn` library will be used to split the dataset in training and testing sets, as well as to evaluate the model.
 
   ```python
-  import os
-  import io
-  import json
   import numpy as np
   import pandas as pd
   from path import Path
@@ -366,41 +371,41 @@ Navigate to the main folder on Jupyter lab, and import the unsolved version of t
   import boto3
   ```
 
-* Along with the `sagemaker` modules, the `boto3` library is imported; this is [AWS SDK for Python](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
+* Along with the `sagemaker` modules, the `boto3` library is imported; `boto3` is the [AWS SDK for Python](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
 
-* The data to train and test the model is loaded into two Pandas DataFrames. Next, the data is transformed into a vector as follows:
+* The data to train and test the model, is loaded into two Pandas DataFrames, next, the data is transformed into a vector as follows:
 
-  * The `x_austin_final.csv` data is loaded into the `features` DataFrame. Next, the `TempAvgF` column, which denotes the average temperature in Austin in degrees Fahrenheit, is taken as an input variable (predictor) for the linear model.
+  * The `x_austin_final.csv` data is loaded into the `features` DataFrame, the `TempAvgF` column that denotes the average temperature in Austin in Fahrenheit degrees is taken as an input variable (predictor) for the linear model.
 
     ```python
     # Read the weather features data
     file_path = Path("Data/x_austin_final.csv")
     features = pd.read_csv(file_path)
 
-    # Transforming the "TempAvgF" column to a vector
+    # Transform the "TempAvgF" column to a vector
     X = features["TempAvgF"].values.reshape(-1, 1)
     ```
 
-    * The `y_austin_final.csv` data is initially loaded into the `y` DataFrame; this data represents the target variable in the linear model.
+  * The `y_austin_final.csv` data is initially loaded into the `y` DataFrame; this data represents the target variable in the linear model.
 
-      ```python
-      # Read the target data (precipitation sum inches)
-      file_path = Path("Data/y_austin_final.csv")
-      y = pd.read_csv(file_path, names=["PrecipitationSumInches"], header=None)
+    ```python
+    # Read the target data (precipitation sum inches)
+    file_path = Path("Data/y_austin_final.csv")
+    y = pd.read_csv(file_path, names=["PrecipitationSumInches"], header=None)
 
-      # Transforminf y into a vector
-      y = y.iloc[:, 0].values
-      ```
+    # Transform y into a vector
+    y = y.iloc[:, 0].values
+    ```
 
-* The data is split into training and testing datasets using the `train_test_split()` function from `sklearn`.
+* The data is split into a training and testing DataSets using the `train_test_split()` function from `sklearn`.
 
   ```python
-  X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+  X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
   ```
 
-Tell students that once the data is loaded, the next step is to create the linear regression model. The process starts with some initial configurations as follows:
+Comment to students that once the data is loaded, the next step is to create the linear regression model. The process starts with some initial configurations as follows:
 
-* The training and testing data should be stored in an Amazon S3 bucket, so a variable to store the name of the bucket we created before is defined.
+* The training and testing data should be stored in an Amazon S3 bucket, so a variable to store the name of the bucket we created before is defined. Set the `bucket` variable to the name of the private bucket you created before, e.g. `sm-models-20200330-1244`.
 
   ```python
   bucket = "sagemaker-bucket-name-here"
@@ -418,19 +423,19 @@ Tell students that once the data is loaded, the next step is to create the linea
   role = get_execution_role()
   ```
 
-Now it's time to upload the data to Amazon S3. Explain to students that in order to train the machine-learning model using Amazon SageMaker, the training and testing data should pass through an Amazon S3 bucket formatted using the [protobuf recordIO format](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-training.html#td-serialization).
+Now it's time to upload the data to Amazon S3. Explain to students that, to train the machine learning model using Amazon SageMaker, the training and testing data should pass through an Amazon S3 Bucket formatted using the [protobuf recordIO format](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-training.html#td-serialization).
 
 * The profobuf recordIO format, is a method to serialize structured data (similar to `JSON`), to allow different applications to communicate with each other or for storing data.
 
-Explain to students that using the profobuf recordIO format allows you to take advantage of **Pipe mode** when training the algorithms that support it. In Pipe mode, your training job streams data directly from Amazon S3. Streaming can provide faster start times for training jobs and better throughput.
+Explain to students that, using the profobuf recordIO format, allows you to take advantage of "Pipe mode" when training the algorithms that support it. In "Pipe mode," your training job streams data directly from Amazon S3. Streaming can provide faster start times for training jobs and better throughput.
 
-Continue with the following code to format the training data as a protobuf recordIO and upload it to the Amazon S3 bucket.
+Continue with the following code, to format the training data as a protobuf recordIO, and upload it to the Amazon S3 bucket.
 
 ```python
 # Encode the training data as Protocol Buffer
 buf = io.BytesIO()
 vectors = np.array(X_train).astype("float32")
-labels = np.array(Y_train).astype("float32)
+labels = np.array(y_train).astype("float32")
 smac.write_numpy_to_dense_tensor(buf, vectors, labels)
 buf.seek(0)
 
@@ -441,13 +446,13 @@ s3_train_data = "s3://{}/{}/train/{}".format(bucket, prefix, key)
 print("Training data uploaded to: {}".format(s3_train_data))
 ```
 
-Tell students that if you provide test data, the algorithm logs include the test score for the final model. Live code the following to upload the testing data.
+Tell students that, if you provide test data, the algorithm logs include the test score for the final model. Live code the following to upload the testing data.
 
 ```python
 # Encode the testing data as Protocol Buffer
 buf = io.BytesIO()
 vectors = np.array(X_test).astype("float32")
-labels = np.array(Y_test).astype("float32")
+labels = np.array(y_test).astype("float32")
 smac.write_numpy_to_dense_tensor(buf, vectors, labels)
 buf.seek(0)
 
@@ -458,7 +463,7 @@ s3_test_data = "s3://{}/{}/test/{}".format(bucket, prefix, key)
 print("Testing data uploaded to: {}".format(s3_test_data))
 ```
 
-Once you have uploaded your data to Amazon S3, it is time to train the machine-learning model. Tell students that in this demo, you will use the Amazon SageMaker's [linear learner algorithm](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html) to run a linear regression prediction model.
+Once you have uploaded your data to Amazon S3, it's time to train the machine learning model. Comment to students that in this demo, you will use the Amazon SageMaker's [_linear learner algorithm_](https://docs.aws.amazon.com/sagemaker/latest/dg/linear-learner.html) to run a linear regression prediction model.
 
 Create the instance of the linear learner algorithm and highlight the following:
 
@@ -474,7 +479,7 @@ Create the instance of the linear learner algorithm and highlight the following:
   sess = sagemaker.Session()
   ```
 
-* The estimator container is an AWS EC2 instance that will store and run the model. The estimator container is created using a `ml.m4.xlarge` train instance type.
+* The estimator container is an AWS EC2 instance that will store and run the model. The estimator container is created using a `ml.m4.xlarge` instance type for training the model.
 
   ```python
   linear = sagemaker.estimator.Estimator(
@@ -487,7 +492,7 @@ Create the instance of the linear learner algorithm and highlight the following:
     )
   ```
 
-* The linear learner hyperparameters are defined next. Highlight that the `feature_dim` parameter should match with the number of predictors in `X`; in this case, since we only have one predictor, its value is `1`.
+* The linear learner hyperparameters are defined next, it's important to highlight that the `feature_dim` parameter should match with the number of predictors in `X`, in this case since we only have one predictor its value is `1`.
 
   ```python
   # Define linear learner hyperparameters
@@ -501,25 +506,29 @@ Create the instance of the linear learner algorithm and highlight the following:
     )
   ```
 
-* The model is trained using the `fit` method of the Amazon SageMaker estimator. Note: This step might take a few minutes.
+* The model is trained using the `fit` method of the Amazon SageMaker estimator.
 
   ```python
   linear.fit({'train': s3_train_data, 'test': s3_test_data})
   ```
 
-Explain to students that this step might take a few minutes, and it will use resources from the AWS account. Normally, this time is not billed in the two-month trial period, however, clarify to students that policies of AWS free and trial offers constantly changes, so they should always check the pricing pages for any service that they want to use. Below, a sample output is shown. You will notice that the text is in red, but this does not denote an error.
+Explain to students that this step might take a few minutes, and it will use resources from the AWS account. Typically, this time is not billed in the two months trial period. However, clarify to students that policies of the AWS free and trial offer changes regularly, so they should always check the pricing pages for any service that they want to use. Below, a sample output is shown, you will notice that the output text is in blue.
+
+**Important Note:** Explain to students that this step may take up to 5 minutes since Amazon SageMaker is provisioning not only a machine learning model but also a series of virtual machines (EC2 instances) to compute the model. If you are running out of time in this activity, open the solved version of the notebook and continue the demo by dry-walking through the code.
 
 ![Deploy SageMaker Model - step 3](Images/deploy-sagemaker-3.gif)
 
-Once the `linear-learner` model has been trained, tell students that it can be deployed to make predictions of the rainfall in Austin. Continue the demo and highlight the following:
+Once the `linear-learner` model was trained, tell students that it can be deployed to make predictions of the rainfall in Austin. Continue the demo and highlight the following:
 
-* An instance of the linear-learner predictor is created. Note: This step might take a few minutes.
+* In order to make predictions, the model should be deployed; a `ml.t2.medium` instance type is defined since this is the instance type we have available for deployment as part of the free tier offer.
 
   ```python
-  linear_predictor = linear.deploy(initial_instance_count=1, instance_type="ml.m4.xlarge")
+  linear_predictor = linear.deploy(initial_instance_count=1, instance_type="ml.t2.medium")
   ```
 
-* Some configurations are made to specify the type of data files that are going to be used and to define how the data is going to be serialized and deserialized.
+**Important Note:** Explain to students that this step may take up to 8 minutes, it may take less time with an instance type with more computing power, but by doing date, we may incur in additional costs beyond the limits of the free tier offer. If you are running out of time in this activity, open the solved version of the notebook and continue the demo by dry-walking through the code.
+
+* Some configurations should be made to specify the type of data files that are going to be used and to define how the data is going to be serialized and deserialized.
 
   ```python
   linear_predictor.content_type = 'text/csv'
@@ -527,22 +536,22 @@ Once the `linear-learner` model has been trained, tell students that it can be d
   linear_predictor.deserializer = json_deserializer
   ```
 
-* Some predictions are made using the testing data; results are stored on the `y_predictions` array.
+* To make predictions, we use the `predict()` method of the model. We will make predictions using the testing data; results are stored in the `y_predictions` array.
 
   ```python
   result = linear_predictor.predict(X_test)
   y_predictions = np.array([r["score"] for r in result["predictions"]])
   ```
 
-Explain to students that once you have the predictions, the model can be evaluated using the techniques they already know. First, a plot to contrast the predicted rainfall values versus the real values is created.
+Explain to students that once you have the predictions, the model can be evaluated using the techniques we covered in previous units. First, a plot to contrast the predicted rainfall values versus the real values is created.
 
 ![Deploy SageMaker Model - step 4](Images/deploy-sagemaker-4.png)
 
-* Additionally, the `RMSE` and `R2` scores are calculated.
+Additionally, the `RMSE` and `R2` scores are calculated.
 
-  ![Deploy SageMaker Model - step 5](Images/deploy-sagemaker-5.png)
+![Deploy SageMaker Model - step 5](Images/deploy-sagemaker-5.png)
 
-  Finally, after reviewing the model evaluation's results, explain to students that the endpoint needs to be deleted to avoid additional AWS resources usage and extra billing.
+Finally, after reviewing the model evaluation's results, explain to students that the endpoint needs to be deleted to avoid additional AWS resources usage and extra billing.
 
 ```python
 sagemaker.Session().delete_endpoint(linear_predictor.endpoint)
