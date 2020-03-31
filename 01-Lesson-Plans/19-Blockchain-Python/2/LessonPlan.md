@@ -105,7 +105,7 @@ Then explain:
 * Even though Ethereum is quite a bit more capable functionally than Bitcoin, architectures designed for general computing
  are more expensive to use.
 
-* Bitcoin's architecture (and thus, all of its derivatives) is designed for complex payments on the natively
+* Bitcoin's architecture (and thus, all of its derivatives) is designed for complex payments on the native
  core layer of the blockchain, and can get them done for less computational effort than Ethereum.
 
 * In the case of Ethereum, you'd have to write smart contracts to do many types of transactions that Bitcoin can do natively,
