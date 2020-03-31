@@ -343,7 +343,7 @@ Ask the students:
 
 * Would an exchange or an innovative bank use BIP44? Why?
 
-  * **Answer:** Yes, it would use it to keep track of customer's keys across multiple blockchains.
+  * **Answer:** Yes, they would use it to keep track of customer's keys across multiple blockchains.
 
 * Where does the list of coin types come from?
 
