@@ -299,13 +299,15 @@ In this activity, students will gain hands-on experience on Amazon S3 by creatin
 
 ### 5. Instructor Do: Review Creating Amazon S3 Buckets (10 min)
 
-**Files:**
+In this activity, you should verify that all the students were able to log-in into their AWS Management Console using their `administrator` IAM user, and also created a private and a public bucket.
 
-* [solution.py](Activities/01-Ins_Really_Important/Solved/solution.py)
+Ask TAs to support those students that may have any issue, close the review activity by explaining to students that, since Amazon S3 is a cloud storage service where they can potentially store people's personal or sensitive information, they should be careful on be compliant with the personal information protection legislation that may apply depending on the nature of the service they want to provide, or the province or country of residence of their potential users or customers.
 
-Walk through the solution and highlight the following:
+Recall students that AWS is compliant with the most important security and information privacy compliance programs.
 
-* Something really important
+Slack out the link of the [AWS Compliance Programs webpage](https://aws.amazon.com/compliance/programs/) for further reference.
+
+Answer any questions before moving on.
 
 ---
 
