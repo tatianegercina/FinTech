@@ -90,7 +90,7 @@ If the short-term moving average line goes above the long-term moving average li
 
 If the short-term moving average line dips below the long-term moving average line, the indicator suggests that the price will be dropping lower than the historical average in the short term.
 
-In the following candlestick chart for Bitcoin, you can see the dual moving average lines and the crossover points:
+In the following candlestick chart for Bitcoin, you can see the dual moving average lines and the crossover points, indicating entry (buy signal) and exit (sell signal) points:
 
 <img src=Images/dual_ma_cross.png width=700>
 
