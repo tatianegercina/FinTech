@@ -2,15 +2,17 @@
 
 ### Overview
 
-In Today's class, students will be introduced to conversational user interfaces (CUIs); they will learn how CUIs are disrupting finance and banking. By the end of the class, students will create a robo-advisor using Amazon Lex and Amazon Lambda.
+In Today's class, students will be introduced to conversational user interfaces (CUIs); they will learn how CUIs are disrupting in the FinTech industry, especially in finance and banking. By the end of the class, students will create a robo advisor using Amazon Lex and Amazon Lambda.
 
 ### Class Objectives
 
 By the end of the class, students will be able to:
 
-* Describe the applications of conversational interfaces for finance and banking.
+* Explain what are conversational interfaces and their general applications in FinTech.
 
-* Recognize how machine learning contributes to creating conversational interfaces.
+* Describe the specific applications of conversational interfaces for finance and banking.
+
+* Recognize how machine learning and natural language processing contribute to creating conversational interfaces.
 
 * Create conversational interfaces using Amazon Lex.
 
