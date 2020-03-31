@@ -30,6 +30,53 @@ Algorithmic trading bots consist of three components:
 - Entry Rules:  A decision rule telling you when to buy an asset (such as when a signal reaches a pre-specified, high enough level).
 - Exit Rules:  A decision rule telling you when to sell or dispose of an asset (such as when a signal reaches a pre-specified, low enough level).
 
+<details>
+<summary>What is the difference between technical analysis and fundamental analysis?</summary><br>
+
+The two major schools of thought in trading analysis are technical and fundamental analysis.  They are both are beneficial techniques used to develop trading strategies, however the methods of each are quite different.
+<blockquote>
+<details>
+<summary>Technical Analysis</summary><br>
+
+Technical analysis is used to determine the value of a stock based only on the patterns and trends in its price movements and volume.  Examples of technical analysis methods are Moving Averages and Bollinger Bands.  Technical analysts look for known patterns in the trend lines these methods produce, such as pennants, flags and wedges.  Using these patterns, they attempt to predict the stock's future movements.  For an overview list of technical indicator patterns, check out [this](https://www.investopedia.com/articles/technical/112601.asp) Investopedia article.
+
+<br>
+</details>
+<details>
+<summary>Fundamental Analysis</summary><br>
+
+Fundamental analysis attempts to determine the value of a stock based on qualitative factors like management style and business model, quantitative factors such as balance sheet numbers, and even emotional and subjective factors like public sentiment.  Fundamental analysts create complicated mathmatical forecasting models based on these factors, making many assumptions and applying different weights to various factors.
+<br>
+</details>
+
+</blockquote>
+</details>
+
+
+</details>
+<details>
+<summary>What is the difference between trading signals and technical indicators?</summary><br>
+
+Technical indicators are metrics used to evaluate stock price movements, while trading signals are the point which those indicators suggest a time to buy or sell.
+
+<blockquote>
+<details>
+<summary>Technical Indicators</summary><br>
+
+Falling under the umbrella of technical analysis, a technical indicator is a data-driven metric that uses trading data such as closing price and volume to analyze the short or long-term price movements occurring over a specified period. For example, a 20-day simple moving average is a technical indicator representing a rolling 20-day mean of a stock's closing prices.
+
+<br>
+</details>
+<details>
+<summary>Trading Signals</summary><br>
+
+A trading signal is the point at which a technical indicator, such as the crossover of two moving averages (short MA and long MA), suggests an opportunity for action--namely whether an individual trader or algorithmic trading program should issue a buy or sell order for a security (such as a stock) at that point in time.
+
+<br>
+</details>
+
+</blockquote>
+</details>
 
 </details>
 
@@ -45,28 +92,6 @@ Algorithmic trading bots consist of three components:
 <details>
 <summary>Trading Signal</summary><br>
 
-<br>
-</details>
-
-</blockquote>
-</details>
-
-<details>
-<summary>What is the difference between technical analysis and fundamental analysis?</summary><br>
-
-The two major schools of thought in trading analysis are technical and fundamental analysis.  They are both are beneficial techniques used to develop trading strategies, however the methods of each are quite different.
-<blockquote>
-<details>
-<summary>Technical Analysis</summary><br>
-
-Technical analysis is used to determine the value of a stock based only on the patterns and trends in its price movements and volume.  Examples of technical analysis methods are Moving Averagess and Bollinger Bands.  Technical analysts use charts representing these indicators and look for known patterns in the trend lines such as pennants, flags and wedges.  Using these patterns, they attempt to predict the stock's future movements.  For an overview list of technical indicator patterns, check out [this](https://www.investopedia.com/articles/technical/112601.asp) Investopedia article.
-
-<br>
-</details>
-<details>
-<summary>Fundamental Analysis</summary><br>
-
-Fundamental analysis attempts to determine the value of a stock based on qualitative factors like management style and business model, quantitative factors such as balance sheet numbers, and even emotional and subjective factors like public sentiment.  Fundamental analysts create complicated mathmatical forecasting models based on these factors, making many assumptions and applying different weights to various factors.
 <br>
 </details>
 
