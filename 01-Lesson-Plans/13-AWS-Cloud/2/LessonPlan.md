@@ -20,9 +20,9 @@ By the end of class, students will be able to:
 
 * This lesson introduces new content rapidly. Students may express frustration at learning new cloud technologies. Remind students that while the learning curve may be steep at first, AWS and cloud experience is highly sought-after and well worth the effort required to become comfortable with it.
 
-* Note that in the past, AWS content has appeared differently for some instructional teams. It seems that AWS does A/B testing on their UI. If your AWS views _don’t_ match up with the views in the lesson plan, check that you've pulled the latest updates from GitHub or look in the Slack Instructional Team channel for announcements regarding this.
+* Note that in the past, AWS content has appeared differently for some instructional teams. It seems that AWS does A/B testing on their UI. If your AWS views don't match up with the opinions in the lesson plan, check that you've pulled the latest updates from GitHub or look in the Slack Instructional Team channel for announcements regarding this.
 
-* Check prior to class that all students have an AWS account and are able to log in.
+* Check before class that all students have an AWS account and can log in.
 
 * Today's class should be a fun one. Students will put together many different technologies covered so far and learn how they can interact with cloud services.
 
@@ -50,7 +50,7 @@ Welcome the class to day 2 of Unit 13, this should be a fun one since students w
 
 Open the lesson slides and review the class objectives. Continue to the "AWS Free Tier" section and highlight the following:
 
-* Throughout this unit, we will use the free tier of AWS as well as the trial period for some of the services.
+* In this unit, we will use the free tier of AWS and the trial period for some of the services.
 
 * The details of the services that we will use in class can be seen in the following table.
 
@@ -60,11 +60,11 @@ Open the lesson slides and review the class objectives. Continue to the "AWS Fre
   | `50` hours per month of `m4.xlarge` for training for the first **two months**    | `5,000` speech requests per month | Up to `3.2` million seconds of compute time per month | `20,000` Get Requests      |
   | `125` hours per month of `m4.xlarge` for hosting for the first **two months**    |                                   |                                                       | `2,000` Put Requests       |
 
-* As you can see, Amazon SageMaker offers a two-months free trial. This period starts the day you launch your first notebook or instance in this service, so if you have never used Amazon SageMaker before, your trial period started in the past class.
+* As you can see, Amazon SageMaker offers a two-months free trial. This period starts the day you launch your first notebook or instance in this service, so if you have never used Amazon SageMaker before, your trial period began in the past class.
 
 * Amazon Lex and Amazon S3 are free to use for one year as long as you don't overpass the limits of each service.
 
-* In the case of AWS Lambda, it's always free if you pull less than `1,000,000` requests and you use les that  `3.2` million seconds ofr compute time per month. This limits are usually enough for testing purposes.
+* In the case of AWS Lambda, it's always free if you pull less than `1,000,000` requests, and you use less than `3.2` million seconds of computing time per month. These limits are usually enough for testing purposes.
 
 Slack out the following resources to be used as a future reference, and encourage students to keep updated of the Free Tier limits by visiting the AWS Free Tier documentation.
 
@@ -78,17 +78,19 @@ Answer any questions before moving on.
 
 ### 2. Everyone Do: Creating an Administrator User on IAM (15 min)
 
-In this activity, students will learn how to create an `administrator` user using AWS Identity and Access Management (IAM) service. This will add some extra security when working on AWS. This is a collaborative activity where students should follow your steps throughout the process, so be sure to keep the pace of the activity and ask TAs to assist those students who may be stuck.
+In this activity, students will learn how to create an `administrator` user using AWS Identity and Access Management (IAM) service. An IAM user will add some extra security when working on AWS. This is a collaborative activity where students should follow your steps throughout the process, so be sure to keep the pace of the activity and ask TAs to assist those students who may be stuck.
 
-Explain to students that a common best practice is to avoid using the principal or root user to manage an AWS account. The root user is the one they used to create their AWS account and the same user they use in Day 1.
+Explain to students that a standard best practice is to avoid using the principal or root user to manage an AWS account. The root user is the one they used to create their AWS account and the same user they use on Day 1.
 
-Highlight to students that usually a new user should be created for each person that requires administrative access to the services of managed by an AWS root account, especially in corporate environments.
+Highlight to students, that usually a new user should be created for each person that requires administrative access to the services managed by an AWS root account, especially in corporate environments.
 
-Explain to students, that AWS provides a service called Identity and Access Management (IAM) service to create and manage users.
+Explain to students that AWS provides a service called Identity and Access Management (IAM) service to create and manage users.
 
-Open the [AWS Management Console](https://console.aws.amazon.com) using your root user, ask to students to do the same to follow you in the process of creating a new user in IAM.
+Open the [AWS Management Console](https://console.aws.amazon.com) using your root user, ask students to do the same to follow you in the process of creating a new user in IAM.
 
-Once all the students opened their AWS Management Console, explain to students that now you will create an `administrator` user that will have permissions to administer all the AWS services; this user may look redundant with the root user, however, if the access credentials of this new `administrator` user get compromised, you can block it or recreate the password to secure your services without compromising your root users.
+Once all the students opened their AWS Management Console, explain that now you will create an `administrator` user that will have permission to administer all the AWS services.
+
+Explain to students that this new user may look redundant with the root user, however, if the access credentials of this new `administrator` user get compromised, you can block it or recreate the password to secure your services without compromising your root users.
 
 Continue the demo and highlight the following:
 
@@ -117,7 +119,7 @@ Continue the demo and highlight the following:
 
   ![Create an administrator IAM user - Step 4](Images/iam-user-4.png)
 
-* In the "Create group" dialog box, type `Administrators` on the "Group name" textbox.
+* In the "Create group" dialogue box, type `Administrators` on the "Group name" textbox.
 
   ![Create an administrator IAM user - Step 4](Images/iam-user-4_bis.png)
 
@@ -151,11 +153,11 @@ Continue the demo and highlight the following:
 
 Explain to students that now you should enable access to billing data for the new IAM administrator user, proceed as follows:
 
-* On the navigation bar, click on your account name and then choose "My Account".
+* On the navigation bar, click on your account name and then choose "My Account."
 
   ![Create an administrator IAM user - Step 11](Images/iam-user-11.png)
 
-* In the next page, scroll down to the "IAM User and Role Access to Billing Information" section, and click on the _Edit_ option.
+* On the next page, scroll down to the "IAM User and Role Access to Billing Information" section, and click on the _Edit_ option.
 
   ![Create an administrator IAM user - Step 12](Images/iam-user-12.png)
 
@@ -167,7 +169,7 @@ Explain to students that now, they should sign out from their current session wi
 
 ![Create an administrator IAM user - Step 14](Images/iam-user-14.png)
 
-Next, ask to students to open the `CSV` file with the new `administrator` user credentials they downloaded before and highlight the following:
+Next, ask students to open the `CSV` file with the new `administrator` user credentials they downloaded before and highlight the following:
 
 * In the `CSV` file, you will find a custom login link that you need to use to access the AWS Management Console with your `administrator` user.
 
@@ -177,7 +179,7 @@ Next, ask to students to open the `CSV` file with the new `administrator` user c
 
   ![Create an administrator IAM user - Step 16](Images/iam-user-16.png)
 
-* Now you are logged-in into the AWS Management Console with your brand new IAM user. You may note that the IAM user name appears in the upper right conner followed by your AWS account ID.
+* Now you are logged-in into the AWS Management Console with your brand new IAM user. You may note that the IAM user name appears in the upper right corner, followed by your AWS account ID.
 
   ![Create an administrator IAM user - Step 17](Images/iam-user-17.png)
 
@@ -197,7 +199,7 @@ In this activity, students will learn how the Amazon S3 works and its importance
 
 * [private-wink-face.png](Activities/01-Ins_Intro_S3/Solved/private-wink-face.png)
 
-Be sure that you are logged-in using your new `administrator` IAM user before starting this activity.
+Be sure that you are logged in using your new `administrator` IAM user before starting this activity.
 
 Explain to students that AWS offers a service to store files in the cloud that is called Amazon Simple Storage Service or Amazon S3.
 
@@ -209,17 +211,17 @@ Explain to students that you will demo how they can use Amazon S3 and highlight 
 
 * Amazon S3 stores the files in a container that is called "Bucket".
 
-* You can have as many buckets as you want, but you must be cautious when defining the access permissions, since you can have public and private buckets.
+* You can have as many buckets as you want, but you must be cautious when defining the access permissions since you can have public and private buckets.
 
 * When you create a bucket, you can choose the AWS Region where you want to store your data. Depending on the region, different user data privacy legislation may apply.
 
-* You may note that you already have a bucket, it was created by Amazon SageMaker Studio in Day 1 when you configured your Amazon SageMaker Studio instance.
+* You may note that you already have a bucket. It was created by Amazon SageMaker Studio on Day 1 when you configured your Amazon SageMaker Studio instance.
 
   ![Current bucket in Amazon S3](Images/amazon-s3-getting-started.png)
 
-* Note that this bucket can have public objects and it's on the `US East (Ohio)` AWS Region since that is the current region where the Amazon SageMaker Studio preview is available.
+* Note that this bucket can have public objects, and it's on the `US East (Ohio)` AWS Region since that is the current region where the Amazon SageMaker Studio preview is available.
 
-* You can have public or private buckets in Amazon S3. You will use private buckets to store the prediction results of the ML models that your will create in Amazon SageMaker Studio, and public buckets to store some files that we will use in the next. class.
+* You can have public or private buckets in Amazon S3. You will use private buckets to store the prediction results of the ML models that you will create in Amazon SageMaker Studio, and public buckets to store some files that we will use in the next class.
 
 * To create a new bucket, click on the "Crete bucket" button.
 
@@ -229,7 +231,7 @@ Explain to students that you will demo how they can use Amazon S3 and highlight 
 
 * We will start by creating a private bucket to store the prediction results for our ML models.
 
-* As the "Bucket name" type the `sm-models` followed by the current timestamp, for example `sm-models-20200330-1244`. You should select the `US East (Ohio)` AWS Region since the Amazon S3 buckets and the Amazon SageMaker Studio instance should be in the same region.
+* As the "Bucket name" type the `sm-models` followed by the current timestamp, for example, `sm-models-20200330-1244`. You should select the `US East (Ohio)` AWS Region since the Amazon S3 buckets, and the Amazon SageMaker Studio instance should be in the same region.
 
   ![Setting the Amazon S3 bucket's name and region](Images/amazon-s3-name-region.png)
 
@@ -237,7 +239,7 @@ Explain to students that you will demo how they can use Amazon S3 and highlight 
 
   ![Setting private access to the Amazon S3 bucket](Images/amazon-s3-private-access.png)
 
-* Now, on the Amazon S3 console, note that your new bucket has been created and it has `Not Public` access.
+* Now, on the Amazon S3 console, note that your new bucket has been created, and it has `Not Public` access.
 
 * Adding files to a bucket is easy. Click on the name of your new bucket, next click on the "Upload" button and add the file you want to store in the bucket. Continue by clicking on the "Upload" button and you are done.
 
@@ -249,39 +251,39 @@ Explain to students that if they click on the file name, they will see the file'
 
 Continue the demo by highlighting the following:
 
-* If you click on the "Object URL", you may note that you can't see the image we uploaded, this is because this object is private.
+* If you click on the "Object URL," you may note that you can't see the image we uploaded, this is because this object is private.
 
-  ![Opening a private objet URL](Images/amazon-s3-private-file-url.gif)
+  ![Opening a private object URL](Images/amazon-s3-private-file-url.gif)
 
-* Now let's create a public bucket. You need to return to the Amazon S3 console, you may click on the "Amazon S3" link.
+* Now let's create a public bucket. You need to return to the Amazon S3 console and click on the "Amazon S3" link.
 
   ![Moving back to the Amazon S3 console](Images/amazon-s3-back-to-home.png)
 
 * From the Amazon S3 Console, click on the "Create bucket" button.
 
-* We will name the public bucket as `public-share` followed by the current timestamp, for example `public-share-20200330-1326`. For this bucket, we will choose the `Canada (Cental)` AWS Region.
+* We will name the public bucket as `public-share` followed by the current timestamp, for example, `public-share-20200330-1326`. For this bucket, we will choose the `Canada (Central)` AWS Region.
 
   ![Setting the name and region for the public Amazon S3 bucket](Images/amazon-s3-public-bucket-name-region.png)
 
-* In the "Bucket settings for Block Public Access" section, uncheck the "Block all public access" option and be sure that all the options bellow are unchecked.
+* In the "Bucket settings for Block Public Access" section, uncheck the "Block all public access" option and be sure that all the options below are unchecked.
 
-  ![Setting public access to the Amazon S3 bucket](Images/amazon-s3-settting-public-access.png)
+  ![Setting public access to the Amazon S3 bucket](Images/amazon-s3-setting-public-access.png)
 
 * Note that you will see a warning message stating that you are about to make the buckets and its object available to the public. Check the acknowledge notice and click on the "Create bucket" button to continue.
 
-Explain to students that it's okay to have public bucket, but they have to be careful about the files the share as public since they will be available to any person in the Internet.
+Explain to students that it's okay to have a public bucket, but they have to be careful about the files they share as public since they will be available to any person on the Internet.
 
-Continue the demo by uploading a file to the new public bucket, you have a happy face icon in the `Solved` folder of this activity that you can use.
+Continue the demo by uploading a file to the new public bucket. You have a happy face icon in the `Solved` folder of this activity that you can use.
 
 ![Uploading a file to the public Amazon S3 bucket](Images/amazon-s3-upload-public-file.gif)
 
-Next, explain to students that the file you uploaded is not public yet, first you need to set the particular access for that file public for everyone.
+Next, explain to students that the file you uploaded is not public yet; first you need to set the particular access for that file public for everyone.
 
-Click on the file name, next, click on the "Permissions" tab. Under the "Public access" section, choose "Everyone" and check the "Read object" property; save the changes and go back to the "Overview" tab to open the object's URL to see a nice happy face.
+Click on the file name; next, click on the "Permissions" tab. Under the "Public access" section, choose "Everyone" and check the "Read object" property; save the changes and go back to the "Overview" tab to open the object's URL to see a cute happy face.
 
 ![Setting access to everyone to a particular file](Images/amazon-s3-set-everyone-access.gif)
 
-Explain to students that a public Amazon S3 bucket, may contain private or public files depending on the particular permissions you particularly set to the objects or the AWS IAM policies you define.
+Explain to students that a public Amazon S3 bucket, may contain private or public files depending on the particular permissions you set to the objects or the AWS IAM policies you define.
 
 Answer any questions before moving on.
 
@@ -289,7 +291,7 @@ Answer any questions before moving on.
 
 ### 4. Students Do: Creating Amazon S3 Buckets (15 min)
 
-In this activity, students will gain hands-on experience on Amazon S3 by creating a public and a private buckets.
+In this activity, students will gain hands-on experience on Amazon S3 by creating a public and private buckets.
 
 **Instructions:**
 
@@ -299,9 +301,9 @@ In this activity, students will gain hands-on experience on Amazon S3 by creatin
 
 ### 5. Instructor Do: Review Creating Amazon S3 Buckets (10 min)
 
-In this activity, you should verify that all the students were able to log-in into their AWS Management Console using their `administrator` IAM user, and also created a private and a public bucket.
+In this activity, you should verify that all the students were able to login into their AWS Management Console using their `administrator` IAM user, and also created a private and a public bucket.
 
-Ask TAs to support those students that may have any issue, close the review activity by explaining to students that, since Amazon S3 is a cloud storage service where they can potentially store people's personal or sensitive information, they should be careful on be compliant with the personal information protection legislation that may apply depending on the nature of the service they want to provide, or the province or country of residence of their potential users or customers.
+Ask TAs to support those students that may have any issue. Close the review activity by explaining to students that, since Amazon S3 is a cloud storage service where they can potentially store people's personal or sensitive information, they should be careful about being compliant with the personal information protection legislation. The legislations may vary depending on the nature of the service they want to provide, or the province or country of residence of their potential users or customers.
 
 Recall students that AWS is compliant with the most important security and information privacy compliance programs.
 
@@ -331,7 +333,7 @@ Tell students that you are going to demo one of Amazon's linear regression model
 
 Slack out the unsolved version of the Jupyter notebook and the two data files to the students, ask the class to follow you on this demo.
 
-Log-in into the AWS Management Console using your `administrator` IAM user, start the demo by opening Amazon SageMaker Studio and explain to students that the instance they created in Day 1, will be available also for this account since it has administrative rights. Remember to switch to the `US East (Ohio)` region before opening the Amazon SageMaker Studio control panel.
+Log-in into the AWS Management Console using your `administrator` IAM user, start the demo by opening Amazon SageMaker Studio and explain to students that the instance they created on Day 1 will be available also for this account since it has administrative rights. Remember to switch to the `US East (Ohio)` region before opening the Amazon SageMaker Studio control panel.
 
 ![Deploy SageMaker Model - step 0](Images/deploy-sagemaker-0.gif)
 
@@ -405,7 +407,7 @@ Open the `rainfall_forecast.ipynb` notebook, select the `Python 3 (Data Science)
 
 Comment to students that once the data is loaded, the next step is to create the linear regression model. The process starts with some initial configurations as follows:
 
-* The training and testing data should be stored in an Amazon S3 bucket, so a variable to store the name of the bucket we created before is defined. Set the `bucket` variable to the name of the private bucket you created before, e.g. `sm-models-20200330-1244`.
+* The training and testing data should be stored in an Amazon S3 bucket, so a variable to store the name of the bucket we created before is defined. Set the `bucket` variable to the name of the private bucket you created previously, e.g. `sm-models-20200330-1244`.
 
   ```python
   bucket = "sagemaker-bucket-name-here"
@@ -423,7 +425,7 @@ Comment to students that once the data is loaded, the next step is to create the
   role = get_execution_role()
   ```
 
-Now it's time to upload the data to Amazon S3. Explain to students that, to train the machine learning model using Amazon SageMaker, the training and testing data should pass through an Amazon S3 Bucket formatted using the [protobuf recordIO format](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-training.html#td-serialization).
+Now it's time to upload the data to Amazon S3. Explain to students that, to train a machine learning model using Amazon SageMaker, the training and testing data should pass through an Amazon S3 Bucket formatted using the [protobuf recordIO format](https://docs.aws.amazon.com/sagemaker/latest/dg/cdf-training.html#td-serialization).
 
 * The profobuf recordIO format, is a method to serialize structured data (similar to `JSON`), to allow different applications to communicate with each other or for storing data.
 
@@ -512,7 +514,7 @@ Create the instance of the linear learner algorithm and highlight the following:
   linear.fit({'train': s3_train_data, 'test': s3_test_data})
   ```
 
-Explain to students that this step might take a few minutes, and it will use resources from the AWS account. Typically, this time is not billed in the two months trial period. However, clarify to students that policies of the AWS free and trial offer changes regularly, so they should always check the pricing pages for any service that they want to use. Below, a sample output is shown, you will notice that the output text is in blue.
+Explain to students that this step might take a few minutes, and it will use resources from the AWS account. Typically, this time is not billed in the two months trial period. However, clarify to students that policies of the AWS free and trial offer change regularly, so they should always check the pricing pages for any service that they want to use. Below, a sample output is shown; you will notice that the output text is in blue.
 
 **Important Note:** Explain to students that this step may take up to 5 minutes since Amazon SageMaker is provisioning not only a machine learning model but also a series of virtual machines (EC2 instances) to compute the model. If you are running out of time in this activity, open the solved version of the notebook and continue the demo by dry-walking through the code.
 
@@ -526,7 +528,7 @@ Once the `linear-learner` model was trained, tell students that it can be deploy
   linear_predictor = linear.deploy(initial_instance_count=1, instance_type="ml.t2.medium")
   ```
 
-**Important Note:** Explain to students that this step may take up to 8 minutes, it may take less time with an instance type with more computing power, but by doing date, we may incur in additional costs beyond the limits of the free tier offer. If you are running out of time in this activity, open the solved version of the notebook and continue the demo by dry-walking through the code.
+**Important Note:** Explain to students that this step may take up to 8 minutes, it may take less time with an instance type with more computing power, but by doing date, we may incur additional costs beyond the limits of the free tier offer. If you are running out of time in this activity, open the solved version of the notebook and continue the demo by dry-walking through the code.
 
 * Some configurations should be made to specify the type of data files that are going to be used and to define how the data is going to be serialized and deserialized.
 
@@ -567,9 +569,9 @@ From the Amazon SageMaker console, click on services and select Amazon S3 from t
 
 ![Open the Amazon S3 console](Images/open-amazon-s3-console.gif)
 
-Open the the private bucket you created before, for example `sm-models-20200330-1244`, and explain to students that Amazon SageMaker stores the model's data in a compressed format for further analysis and usage.
+Open the private bucket you created before, for example, `sm-models-20200330-1244`, and explain to students that Amazon SageMaker stores the model's data in a compressed format for further analysis and usage.
 
-![Visualizing the Amazon SageMaker output files in Amazon S3](Images/amazon-sagemake-s3-files.gif)
+![Visualizing the Amazon SageMaker output files in Amazon S3](Images/amazon-sagemaker-s3-files.gif)
 
 Finish the demo and answer any questions before moving on.
 
@@ -583,7 +585,7 @@ Finish the demo and answer any questions before moving on.
 
 In this activity, students will train and deploy a binary classification model to predict the credit risk of a person using the [German Credit Risk dataset](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) and the SageMaker built-in `Linear Learner` algorithm.
 
-This activity will require the use of a Amazon SageMaker Studio. The unsolved notebook will guide students through the process and indicate what the missing code snippets are.
+This activity will require the use of Amazon SageMaker Studio. The unsolved notebook will guide students through the process and indicate what the missing code snippets are.
 
 **Instructions:**
 
@@ -609,7 +611,7 @@ On your Amazon SageMaker Studio instance, upload the `german_credit_data.csv` da
 
 Open the notebook, select the `Python 3 (Data Science)` kernel and perform a dry walkthrough review cell by cell by highlighting the following points:
 
-* In this activity we are computing a `logistic regression` to perform a `binary classification`.
+* In this activity, we are computing a `logistic regression` to perform a `binary classification`.
 
 * The output of the model prediction is a binary label (0, 1): "Good" or "
 Bad" credit risk.
@@ -638,9 +640,9 @@ Start the demo by opening the Amazon SageMaker console, choose the "Endpoints" o
 
 You should not have any endpoint in the "Endpoints" list, if any, select each endpoint and delete it from the "Actions" menu.
 
-Now, explain to students that every time they create a model, its configurations are stored and we may want to delete them to avoid additional charges.
+Now, explain to students that every time they create a model, its configurations are stored, and we may want to delete them to avoid additional charges.
 
-Click on "Endpoint configurations" in the left pane menu, you will see that there are several configurations.
+Click on "Endpoint configurations" in the left pane menu; you will see that there are several configurations.
 
 Delete all the endpoint configurations by selecting each one and choosing the "Delete" option from the "Actions" menu. Ask students to do the same.
 
@@ -654,9 +656,9 @@ Lastly, go to the Amazon S3 console to remove the buckets created for the activi
 
 * Since the bucket is not empty, you should delete all the objects first. Click on the "empty bucket configuration" link to continue.
 
-  ![Deleting Amazon S3 objects from a bucket](Images/amazon-s3-empy-bucket-conf.png)
+  ![Deleting Amazon S3 objects from a bucket](Images/amazon-s3-empty-bucket-conf.png)
 
-* Next, you need to confirm that you want to empty your bucket. Write the name of your bucket and click on the "Empy" button to continue.
+* Next, you need to confirm that you want to empty your bucket. Write the name of your bucket and click on the "Empty" button to continue.
 
   ![Empty bucket confirmation](Images/amazon-s3-empty-confirm.png)
 
@@ -676,7 +678,7 @@ Lastly, go to the Amazon S3 console to remove the buckets created for the activi
 
   ![Deleted bucket confirmation message](Images/amazon-s3-delete-confirmation-msg.png)
 
-Explain to students that they have to delete all the buckets manually, since the AWS Free Tier offers twelve months of Amazon S3 storage, they can keep them if the want. At least, they have to keep the public bucket for the activities in Day 3.
+Explain to students that they have to delete all the buckets manually. Since the AWS Free Tier offers twelve months of Amazon S3 storage, they can keep them if they want; at least, they have to keep the public bucket for the activities on Day 3.
 
 Answer any questions before moving on.
 
@@ -684,7 +686,7 @@ Answer any questions before moving on.
 
 ### 11. Instructor Do: Pros and Cons of Deploying Machine Learning Models with Amazon SageMaker (10 min)
 
-Lead and facilitate a discussion around deploying models in Amazon SageMaker and why a RESTful ML API is useful.
+Lead and facilitate a discussion around deploying models in Amazon SageMaker and why a RESTful ML API is useful. You can use the lesson slides as support for this discussion.
 
 Have students share their opinions with the class and bring up the following points:
 
