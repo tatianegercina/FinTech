@@ -2,7 +2,6 @@
 
 As you already know, not everything is hunky-dory in coding, there are times when bugs and errors appear to add some noise to your code. In this activity, you will test your own Lambda using the starting test event. Then, you and your partner will play a little with the code to provoke and find runtime errors.
 
-
 ## Instructions
 
 ### Create test events
@@ -36,4 +35,4 @@ As you already know, not everything is hunky-dory in coding, there are times whe
 6. Undo the changes or restore your Lambda function from your backup copy.
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

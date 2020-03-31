@@ -11,4 +11,4 @@ Once you finish configuring your bot, build a new version, and test the conversa
 | ![Converter without errors](Images/converter_ok.gif) | ![Converter with errors](Images/converter_errors.gif) |
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

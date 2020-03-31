@@ -16,7 +16,7 @@ def parse_float(n):
 
 def get_btcprice():
     """
-    Retrieves the current price of bitcoin in US Dollars from the alternative.me Crypto API.
+    Retrieves the current price of bitcoin in US Dollars from the alternative.me Crypto API
     """
     bitcoin_api_url = "https://api.alternative.me/v2/ticker/bitcoin/?convert=USD"
     response = requests.get(bitcoin_api_url)
@@ -170,7 +170,7 @@ def convert_usd(intent_request):
 
     # Get the current price of BTC in USD and make the conversion from USD to BTC.
     btc_value = parse_float(usd_amount) / get_btcprice()
-    btc_value = round(btc_value, 2)
+    btc_value = round(btc_value, 4)
 
     # Return a message with conversion's result.
     return close(

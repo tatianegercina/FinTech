@@ -14,16 +14,26 @@ def parse_float(n):
         return float("nan")
 
 
-def get_btcprice():
+def get_cryptoprice(crypto):
     """
-    Retrieves the current price of bitcoin in US Dollars from the alternative.me Crypto API.
+    Retrieves the current price of BTC, ETH or XRP in US Dollars from the alternative.me Crypto API.
     """
-    bitcoin_api_url = "https://api.alternative.me/v2/ticker/bitcoin/?convert=USD"
-    response = requests.get(bitcoin_api_url)
-    response_json = response.json()
-    price_usd = parse_float(response_json["data"]["1"]["quotes"]["USD"]["price"])
-    return price_usd
+    url = ""
+    id = ""
+    if crypto == "Bitcoin":
+        url = "https://api.alternative.me/v2/ticker/Bitcoin/?convert=USD"
+        id = "1"
+    elif crypto == "Ethereum":
+        url = "https://api.alternative.me/v2/ticker/Ethereum/?convert=USD"
+        id = "1027"
+    else:
+        url = "https://api.alternative.me/v2/ticker/Ripple/?convert=USD"
+        id = "52"
 
+    response = requests.get(url)
+    response_json = response.json()
+    price_usd = parse_float(response_json["data"][id]["quotes"]["USD"]["price"])
+    return price_usd
 
 def build_validation_result(is_valid, violated_slot, message_content):
     """
@@ -135,6 +145,7 @@ def convert_usd(intent_request):
     # Gets slots' values
     birthday = get_slots(intent_request)["birthday"]
     usd_amount = get_slots(intent_request)["usdAmount"]
+    crypto = get_slots(intent_request)["crypto"]
 
     # Gets the invocation source, for Lex dialogs "DialogCodeHook" is expected.
     source = intent_request["invocationSource"]  #
@@ -168,9 +179,9 @@ def convert_usd(intent_request):
         # Once all slots are valid, a delegate dialog is returned to Lex to choose the next course of action.
         return delegate(output_session_attributes, get_slots(intent_request))
 
-    # Get the current price of BTC in USD and make the conversion from USD to BTC.
-    btc_value = parse_float(usd_amount) / get_btcprice()
-    btc_value = round(btc_value, 2)
+    # Get the current price of BTC, ETH or XRP in USD and make the conversion from USD.
+    crypto_value = parse_float(usd_amount) / get_cryptoprice(crypto)
+    crypto_value = round(crypto_value, 4)
 
     # Return a message with conversion's result.
     return close(
@@ -179,9 +190,9 @@ def convert_usd(intent_request):
         {
             "contentType": "PlainText",
             "content": """Thank you for your information;
-            you can get {} Bitcoins for your {} US Dollars.
+            you can get {} {} for your {} US Dollars.
             """.format(
-                btc_value, usd_amount
+                crypto_value, crypto, usd_amount
             ),
         },
     )

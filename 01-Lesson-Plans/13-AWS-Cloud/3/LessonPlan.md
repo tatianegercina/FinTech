@@ -236,7 +236,7 @@ To import the solution, click on the _Import_ option into the _Actions_ button a
 
 ![Import Lex Bot](Images/import-lex-bot.png)
 
-Click on the `Crypto_Converter` bot, and once the `convertUSD` intent is on the screen, highlight the following:
+Click on the `Crypto_Converter` bot, and once the `ConvertUSD` intent is on the screen, highlight the following:
 
 * Adding `{usdAmount}` on the sample utterances, will allow the user to send messages like `I want to convert 100 dollars to BTC` where the deep learning algorithms will match the `{usdAmount}` label with a number on the utterance speech, as can be seen on the demo gif file below.
 
@@ -309,19 +309,19 @@ Open the slides and show students the anatomy of the lambda function you are goi
 
 Explain to students that the lambda function contains six general building blocks, briefly present these blocks, and open the `lambda_function.py` script on VSCode by highlighting the following:
 
-1. **Required Libraries:** This section contains all the necessary libraries to code the business logic on the lambda functions, though AWS Lambda supports Python, the runtime doesn't support some common packages such as `pandas`, `numpy` or `requests`, so alternative packages should be used or installed. In this demo, we take the current price of bitcoin, making an API call to [CoinMarketCap](https://api.coinmarketcap.com/v1/ticker/bitcoin/), so the `requests` library is imported from the [`botocore` package](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html). A complete list of the python modules available on AWS Lambda can be found [here](https://gist.github.com/gene1wood/4a052f39490fae00e0c3).
+1. **Required Libraries:** This section contains all the necessary libraries to code the business logic on the lambda functions, though AWS Lambda supports Python, the runtime doesn't support some common packages such as `pandas`, `numpy` or `requests`, so alternative packages should be used or installed. In this demo, we take the current price of bitcoin, making an API call to the [alternative.me Crypyo API](https://alternative.me/crypto/api/), so the `requests` library is imported from the [`botocore` package](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html). A complete list of the python modules available on AWS Lambda can be found [here](https://gist.github.com/gene1wood/4a052f39490fae00e0c3).
 
 2. **Functionality Helper Functions:** These functions implement business logic and data validation. In this demo, we have four helper functions.
 
     * `parse_float()`: This function securely parses a non-numeric value to float.
 
-    * `get_btcprice()`: Retrieves the current price of bitcoin in US Dollars from CoinMarketCap.
+    * `get_btcprice()`: Retrieves the current price of bitcoin in US Dollars from the alternative.me Crypyo API.
 
     * `build_validation_result()`: This function defines an internal validation message structured as a python dictionary.
 
     * `validate_data()`: This function validates the data provided by the user across the intent's dialog on Amazon Lex according to the business logic. In this demo, there are only two rules: (1) the user should be at least 21 years old (2) the amount in US Dollars to convert must be greater than zero.
 
-Explain to students that the `validate_data()` function uses the `build_validation_result()` function to return a validation result message. In this demo, if the user's age is less than 21 or the amount to convert is less than `0`, a `False` result is returned; otherwise, a `True` result is returned.
+Explain to students that the `validate_data()` function uses the `build_validation_result()` function to return a validation result message. In this demo, if the user's age is less than `21` or the amount to convert is less than `0`, a `False` result is returned; otherwise, a `True` result is returned.
 
 ```python
 def validate_data(birthday, usd_amount, intent_request):
@@ -492,8 +492,6 @@ In this activity, students will inspect the code of a Lambda function to have a 
 **Files:**
 
 * [lambda_function.py](Activities/04-Stu_Understanding_Lambdas/Solved/lambda_function.py)
-
-* [Crypto_Converter export file](Activities/04-Stu_Understanding_Lambdas/Solved/Crypto_Converter_1_6dfe9e0e-82de-4d08-b33b-3bfd1d827672_Bot_LEX_V1.zip)
 
 Open the Lambda function code in VSCode, conduct a facilitated discussion by asking students about their findings, insights, or additional questions after reviewing the provided code. Start with some questions as follows.
 
@@ -682,13 +680,9 @@ Close the discussion by answering any remaining questions before moving forward.
 
 In this activity, students will learn how to create a custom slot and add it to an Amazon Lex bot intent.
 
-**Files:**
-
-* [Crypto Converter export file](Activities/07-Ins_Custom_Slots/Solved/Crypto_Converter_2_4aefdbf6-55cc-4892-b302-dc428c404e29_Bot_LEX_V1.zip)
-
 Comment to students that it is possible to create custom slot types. This is intended to gather specific data values for a slot, for example, the size of a pizza (personal, small, medium, or large) on a pizza ordering bot. Explain to students that now you will show them how to create a custom slot to allow users to choose the cryptocurrency they want to convert to.
 
-Open the Amazon Lex console and navigate to the `convertUSD` intent editor. On the left side menu, click on the blue plus symbol next to the _Slot types_ option to add a new custom slot type.
+Open the Amazon Lex console and navigate to the `ConvertUSD` intent editor. On the left side menu, click on the blue plus symbol next to the _Slot types_ option to add a new custom slot type.
 
 ![Adding a new slot type](Images/add-slot-type.png)
 
@@ -707,7 +701,7 @@ Once you are done, click on the _Save slot type_ button.
 
 ![Configuring the new slot type](Images/configure-new-slot-type.png)
 
-Come back to the `convertUSD` intent editor, add a new slot named `crypto`, click on the _Slot type_ dropdown list, and you will see your brand new slot type. Select `CryptoCurrency` from the list. End the slot configuration by typing `What cryptocurrency do you want to convert to?` on the prompt and be sure the _Required_ checkbox is selected.
+Come back to the `ConvertUSD` intent editor, add a new slot named `crypto`, click on the _Slot type_ dropdown list, and you will see your brand new slot type. Select `CryptoCurrency` from the list. End the slot configuration by typing `What cryptocurrency do you want to convert to?` on the prompt and be sure the _Required_ checkbox is selected.
 
 ![Add the crypto slot](Images/add-crypto-slot.png)
 
@@ -760,11 +754,11 @@ In this activity, students will extend their cryptocurrency converter by adding 
 
 **Instructions:**
 
-* [README.md](Activities/08-Stu_Crypto_Converter/README.md)
+* [README.md](Activities/07-Stu_Crypto_Converter/README.md)
 
 **Files:**
 
-* [lambda_function.py](Activities/08-Stu_Crypto_Converter/Unsolved/lambda_function.py)
+* [lambda_function.py](Activities/07-Stu_Crypto_Converter/Unsolved/lambda_function.py)
 
 ---
 
@@ -772,9 +766,9 @@ In this activity, students will extend their cryptocurrency converter by adding 
 
 **Files:**
 
-* [lambda_function.py](Activities/08-Stu_Crypto_Converter/Solved/lambda_function.py)
+* [lambda_function.py](Activities/07-Stu_Crypto_Converter/Solved/lambda_function.py)
 
-Start by reviewing the bot configuration. Open the Amazon Lex console, navigate to the `convertUSD` intent editor on the `Crypto_Converter` bot and highlight the following:
+Start by reviewing the bot configuration. Open the Amazon Lex console, navigate to the `ConvertUSD` intent editor on the `Crypto_Converter` bot and highlight the following:
 
 * As you presented on the previous demo, students should have created a new slot type called `CryptoCurrency` with the following structure:
 
@@ -794,24 +788,28 @@ Continue to the Lambda function code, open the solution on your AWS Lambda onlin
 
 * There is no need to validate the name of the cryptocurrency since the user does not type it.
 
-* On the `get_cryptoprice()` function, the price for each cryptocurrency is retrieved from CoinMarketCap using a URL defined on a `nested-if` structure.
+* On the `get_cryptoprice()` function, the price for each cryptocurrency and its `ID` are retrieved from the alternative.me API using a URL defined on a `nested-if` structure.
 
   ```python
   def get_cryptoprice(crypto):
       """
-      Retrieves the current price of BTC, ETH or XRP in US Dollars from CoinMarketCap.
+      Retrieves the current price of BTC, ETH or XRP in US Dollars from the alternative.me Crypto API.
       """
       url = ""
+      id = ""
       if crypto == "Bitcoin":
-          url = "https://api.coinmarketcap.com/v1/ticker/bitcoin/"
+          url = "https://api.alternative.me/v2/ticker/Bitcoin/?convert=USD"
+          id = "1"
       elif crypto == "Ethereum":
-          url = "https://api.coinmarketcap.com/v1/ticker/ethereum/"
+          url = "https://api.alternative.me/v2/ticker/Ethereum/?convert=USD"
+          id = "1027"
       else:
-          url = "https://api.coinmarketcap.com/v1/ticker/ripple/"
+          url = "https://api.alternative.me/v2/ticker/Ripple/?convert=USD"
+          id = "52"
 
       response = requests.get(url)
       response_json = response.json()
-      price_usd = parse_float(response_json[0]["price_usd"])
+      price_usd = parse_float(response_json["data"][id]["quotes"]["USD"]["price"])
       return price_usd
   ```
 
@@ -883,8 +881,10 @@ Suggested Format:
 
 Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
 
+---
+
 ### End Class
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
