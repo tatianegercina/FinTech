@@ -38,4 +38,4 @@ In this activity, you will build a simple, smart contract to represent a custome
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

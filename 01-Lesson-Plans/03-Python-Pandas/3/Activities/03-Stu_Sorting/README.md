@@ -24,4 +24,4 @@ Using the [starter file](Unsolved/out_of_sorts.ipynb) and Google Finance histori
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

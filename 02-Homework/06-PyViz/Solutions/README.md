@@ -86,4 +86,4 @@ plotly_express            0.4.0                      py_0  plotly
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

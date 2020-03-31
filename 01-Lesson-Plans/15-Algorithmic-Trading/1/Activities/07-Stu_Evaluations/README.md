@@ -46,4 +46,4 @@ Using the [starter file](Unsolved/the_big_short_part_3.ipynb), complete the foll
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

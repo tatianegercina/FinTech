@@ -24,4 +24,4 @@ The dataset contains `68` encoded features of music composition (columns from `0
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

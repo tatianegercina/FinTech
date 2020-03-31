@@ -12,4 +12,4 @@ Instructional Staff, please use the reference material below to help you prepare
 
 ### Copyright
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved

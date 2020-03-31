@@ -69,4 +69,4 @@ To install the Go Ethereum Tools, please follow the next steps:
 5. You have finished the installation process; you will use these tools to create your very own blockchain!
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

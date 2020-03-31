@@ -22,4 +22,4 @@ To start the autocorrelation plot at 1 lag (instead of 0), you will want to set 
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

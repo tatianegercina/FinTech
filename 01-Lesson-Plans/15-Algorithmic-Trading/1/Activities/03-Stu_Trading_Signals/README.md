@@ -44,4 +44,4 @@ Using the [starter file](Unsolved/the_big_short.ipynb), complete the following s
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

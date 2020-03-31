@@ -16,4 +16,4 @@ In this activity, you will work with a partner to practice your join and subquer
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

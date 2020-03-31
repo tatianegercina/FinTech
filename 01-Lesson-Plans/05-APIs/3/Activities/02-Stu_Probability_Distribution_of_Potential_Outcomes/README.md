@@ -38,4 +38,4 @@ Create a Monte Carlo simulation with `1000` simulations of `10` free throws to a
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -26,4 +26,4 @@ In this exercise, you will be filling in a simple chart (pipeline) of the variou
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

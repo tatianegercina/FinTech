@@ -74,4 +74,4 @@ Now you will launch the second node and configure it to let us talk to the chain
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

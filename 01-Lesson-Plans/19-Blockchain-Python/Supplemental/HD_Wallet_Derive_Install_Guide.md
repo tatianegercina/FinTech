@@ -220,4 +220,4 @@ Last step! Execute the `hd-wallet-derive` library to derive `BIP32` addresses an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

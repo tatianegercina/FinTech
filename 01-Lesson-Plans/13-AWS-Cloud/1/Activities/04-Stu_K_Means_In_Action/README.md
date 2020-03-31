@@ -19,7 +19,7 @@ Accomplish the following tasks and use k-means to cluster the customer data.
     * Create a 2-D scatter plot using `hvPlot` to analyze the clusters using `x="Annual Income"` and `y="Spending Score (1-100)"`.
 
     * Create a 3-D scatter plot using Plotly Express to analyze the clusters using `x="Age"`, `y="Spending Score (1-100)"`, and `z="Annual Income"`.
-    
+
       ---
-    
-      © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
+      © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

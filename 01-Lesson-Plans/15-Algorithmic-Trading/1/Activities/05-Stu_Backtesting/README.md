@@ -40,4 +40,4 @@ Remember that shorting a stock means to sell shares of a stock and then buy or c
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

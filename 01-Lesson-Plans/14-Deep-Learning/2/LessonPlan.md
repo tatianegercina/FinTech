@@ -666,4 +666,4 @@ Ask volunteers to give examples of ways they changed the architecture, and why. 
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

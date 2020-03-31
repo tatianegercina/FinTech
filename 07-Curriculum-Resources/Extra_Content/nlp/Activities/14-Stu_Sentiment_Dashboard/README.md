@@ -258,4 +258,4 @@ Create a radar chart like the one bellow using the `bar_polar()` method from Plo
 
 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

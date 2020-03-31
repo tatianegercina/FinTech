@@ -34,4 +34,4 @@ Remember to set the `ax` parameter when plotting multiple datasets on a single c
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

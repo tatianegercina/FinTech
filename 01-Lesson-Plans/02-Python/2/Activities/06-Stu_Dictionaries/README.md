@@ -77,4 +77,4 @@ Small Cap Banks: ['Republic Bancorp']
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

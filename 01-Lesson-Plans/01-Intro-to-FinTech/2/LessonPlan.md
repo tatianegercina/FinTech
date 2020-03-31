@@ -404,4 +404,4 @@ Ask if students have any remaining questions before ending the class. If needed,
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

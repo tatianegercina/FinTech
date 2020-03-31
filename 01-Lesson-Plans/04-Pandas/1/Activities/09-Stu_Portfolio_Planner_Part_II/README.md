@@ -65,4 +65,4 @@ Breathe easy! Take this activity one step at a time. Remember that this is the c
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

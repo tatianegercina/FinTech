@@ -78,11 +78,11 @@ Most candidates should be able to solve the basic problem of translating a word 
       * One way to solve this problem is to remember the punctuation mark and then append it to end of the translated word.
 
   * **Note**: If your candidate identifies legitimate solutions for the past two prompts, they are free to try to implement them. These are relatively difficult implementations.
-  
+
 ## Solution
 
 The [solution](Solved/pig_latin.py) strips the given string of any punctuation and adds the first letter and 'ay' to the end of every word in the string.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

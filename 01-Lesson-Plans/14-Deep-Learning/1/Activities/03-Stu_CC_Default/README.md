@@ -40,4 +40,4 @@ For this challenge section, you have to figure out how the model you created cou
 
 3. Evaluate the model's accuracy and loss and write down your conclusions.
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

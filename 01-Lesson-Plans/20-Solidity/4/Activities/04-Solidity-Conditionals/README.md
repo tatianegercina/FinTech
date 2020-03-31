@@ -79,4 +79,4 @@ if (number > 1 && number > 4) {
 * [Conditionals Cheatsheet](https://github.com/coding-boot-camp/FinTech-Lesson-Plans/blob/master/01-Lesson-Plans/20-Solidity/2/Activities/06-Stu_If_Else/Resources/Conditionals_Cheatsheet.md)
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

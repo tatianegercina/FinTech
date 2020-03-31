@@ -16,4 +16,4 @@ Using the city and country tables, determine the count of countries in descendin
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

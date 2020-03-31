@@ -57,5 +57,4 @@ https://www.aba.com/member-tools/industry-solutions/insights/state-card-fraud-20
 
 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

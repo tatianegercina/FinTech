@@ -74,4 +74,4 @@ Then, write this logic in a new function `calculate_compound_growth_rate_list`.
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

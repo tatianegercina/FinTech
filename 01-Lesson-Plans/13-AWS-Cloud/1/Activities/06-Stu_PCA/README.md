@@ -20,4 +20,4 @@ In this activity, you will use PCA to reduce the dimensions of the consumers sho
 
    ---
 
-   © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+   © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

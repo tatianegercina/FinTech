@@ -50,4 +50,4 @@ Using the starter file provided, pick up where part II left off and walk through
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

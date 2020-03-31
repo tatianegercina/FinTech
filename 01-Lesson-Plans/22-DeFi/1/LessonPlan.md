@@ -1025,4 +1025,4 @@ Explain that the rest of the class will be dedicated to working on their final p
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

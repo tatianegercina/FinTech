@@ -41,4 +41,4 @@ Open [Remix](http://remix.ethereum.org/), import the [starter file](Unsolved/per
     * Set `last_deposit_amount` equal to the `msg.value` variable.
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

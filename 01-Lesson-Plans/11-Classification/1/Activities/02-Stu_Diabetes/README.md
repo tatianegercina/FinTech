@@ -24,4 +24,4 @@ If you get stuck, refer back to the instructor demo notebook for examples of how
 
 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

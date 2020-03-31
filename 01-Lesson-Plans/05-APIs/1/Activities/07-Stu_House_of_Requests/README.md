@@ -66,4 +66,4 @@ When extracting values from the `Draw Cards` request, an index will have to be p
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

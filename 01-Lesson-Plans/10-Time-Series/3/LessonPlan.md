@@ -1135,4 +1135,4 @@ Use the following lesson plan to discuss the Career Services content for this we
 
 - - -
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -109,4 +109,4 @@ For comparing time and dates, take a look at the [date/time functions and operat
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

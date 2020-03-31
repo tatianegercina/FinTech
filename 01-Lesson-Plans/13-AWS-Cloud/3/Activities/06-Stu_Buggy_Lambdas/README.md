@@ -36,4 +36,4 @@ As you already know, not everything is hunky-dory in coding, there are times whe
 6. Undo the changes or restore your Lambda function from your backup copy.
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

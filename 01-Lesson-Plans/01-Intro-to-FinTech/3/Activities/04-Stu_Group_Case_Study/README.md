@@ -48,4 +48,4 @@ If you and your partner plan to work on the file at the same time, be aware of m
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

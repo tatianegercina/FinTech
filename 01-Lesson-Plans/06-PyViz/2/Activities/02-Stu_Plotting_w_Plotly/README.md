@@ -36,4 +36,4 @@ Creating an **area** plot can be done using the Plotly Express `area` function.
 
 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

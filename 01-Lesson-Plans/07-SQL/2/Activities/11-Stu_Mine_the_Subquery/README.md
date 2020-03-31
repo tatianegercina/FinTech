@@ -10,4 +10,4 @@ In this activity, you will continue to practice subqueries. Work individually or
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

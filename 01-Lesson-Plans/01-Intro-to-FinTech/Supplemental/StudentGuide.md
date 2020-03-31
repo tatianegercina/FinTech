@@ -64,4 +64,4 @@ As with most topics, there are numerous resources for gaining more information a
 
 ### Copyright
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

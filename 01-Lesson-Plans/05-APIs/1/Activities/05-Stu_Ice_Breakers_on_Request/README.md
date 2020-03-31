@@ -48,4 +48,4 @@ Selecting values from JSON data requires data be accessed first by parent object
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

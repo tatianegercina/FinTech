@@ -168,4 +168,4 @@ This is the final stage of getting Amazon Lex integrated with Slack, and there a
 **Note:** If you do not see your bot, choose the plus icon (+) next to _Apps_ section to search for it.
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

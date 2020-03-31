@@ -40,4 +40,4 @@ Dropping nulls after concatenation will ensure that data relationships are prese
 
 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

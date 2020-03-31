@@ -77,4 +77,4 @@ The solution is available in [Deep_Equals.ipynb](Solved/Deep_Equals.ipynb).
 
 ------
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

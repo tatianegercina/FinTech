@@ -15,4 +15,4 @@ Using the [starter file](Unsolved/mastering_concatenation.ipynb) and the data in
 4. Use the `concat` function to concat the two DataFrames made in steps 2 and 3 using by `axis='columns'` and `join='inner'`.
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

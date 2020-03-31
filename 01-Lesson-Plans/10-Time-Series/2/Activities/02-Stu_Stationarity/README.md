@@ -16,4 +16,4 @@ When adding new columns to the DataFrame, work with the closing stock prices. Do
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

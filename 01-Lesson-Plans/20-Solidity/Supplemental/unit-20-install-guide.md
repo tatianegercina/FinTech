@@ -111,4 +111,4 @@ If you see a warning message that says that Ganache is from an untrusted softwar
 ![Ganache installation - 6](Images/ganache-6.gif)
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

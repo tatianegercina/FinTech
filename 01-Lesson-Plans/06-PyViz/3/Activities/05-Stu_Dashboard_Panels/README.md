@@ -19,4 +19,4 @@ Put your best foot forward and create a dashboard using Panel. Emphasize to the 
 5. Declare a **tab** object containing the following content: `plots_as_column`, `row_of_bar`, and `row_of_parallel`.
 
 - - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

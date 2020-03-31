@@ -22,4 +22,4 @@ In this activity, you will be using joins to query NBA player seasonal statistic
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

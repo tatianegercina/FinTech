@@ -20,4 +20,4 @@ model = LogisticRegression(solver='lbfgs', random_state=1, max_iter=2000)
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

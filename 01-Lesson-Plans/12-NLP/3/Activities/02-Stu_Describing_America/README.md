@@ -8,4 +8,4 @@ In this activity, you will use the inaugural address corpus from NLTK and spaCy'
 * Look for the three most common adjectives used in the corpus. Track their usage over time in a line graph.
 * Create a list of the adjectives that describe "America" from this corpus
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

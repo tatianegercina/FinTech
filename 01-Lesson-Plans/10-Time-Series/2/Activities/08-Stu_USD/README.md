@@ -24,4 +24,4 @@ Is risk expected to increase or decrease over the next five days?
 
 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

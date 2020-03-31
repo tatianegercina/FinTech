@@ -26,4 +26,4 @@ In this activity, you will be utilizing data normalization practices.
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

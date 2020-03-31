@@ -28,4 +28,4 @@ GitLab has a pretty good tutorial on how to use the git CLI. Check it out [here]
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

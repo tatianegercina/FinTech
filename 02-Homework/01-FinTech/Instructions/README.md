@@ -216,4 +216,4 @@ As you research your company, you may find these types resources to be useful:
 
 - - -
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

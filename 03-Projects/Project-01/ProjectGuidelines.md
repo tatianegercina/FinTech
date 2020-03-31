@@ -74,4 +74,4 @@ In addition to submitting your project on Bootcamp Spot individually, please [fi
 
 - - -
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

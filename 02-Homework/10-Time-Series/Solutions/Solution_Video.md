@@ -9,4 +9,4 @@
   * [YouTube Video](https://youtu.be/qN8Ogy6XCyM)
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -13,4 +13,4 @@ In this activity you will practice sentence and word tokenization on some articl
 * You should sentence tokenize the text before word tokenizing it, and apply the word tokenizer to each sentence.
 * You can combine several lists into a DataFrame, and include column headers by using dictionary syntax with the pandas.DataFrame function. 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

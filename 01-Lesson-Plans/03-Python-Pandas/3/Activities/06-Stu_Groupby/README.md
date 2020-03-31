@@ -30,4 +30,4 @@ Using the [starter file](Unsolved/group_dynamics.ipynb) and the historical stock
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

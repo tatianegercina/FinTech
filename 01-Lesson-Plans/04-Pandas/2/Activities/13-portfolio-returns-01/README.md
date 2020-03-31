@@ -28,4 +28,4 @@ In this activity, you will learn how to calculate portfolio returns with a 60-40
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

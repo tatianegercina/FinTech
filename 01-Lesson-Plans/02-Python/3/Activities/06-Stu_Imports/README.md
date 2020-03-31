@@ -45,4 +45,4 @@ The project scenario with the max NPV value is 'neutral' with a NPV of 401.91926
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

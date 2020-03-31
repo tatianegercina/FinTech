@@ -1682,4 +1682,4 @@ Let students know that office hours are available for anyone who would like to a
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

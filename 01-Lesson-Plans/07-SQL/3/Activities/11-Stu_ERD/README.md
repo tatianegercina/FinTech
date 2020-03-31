@@ -46,4 +46,4 @@ In this activity, you and your partner will continue designing an entity relatio
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

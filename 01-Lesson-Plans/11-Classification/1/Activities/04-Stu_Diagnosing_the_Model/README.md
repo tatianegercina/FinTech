@@ -12,4 +12,4 @@ In a previous activity, you created a logistic regression model to predict wheth
 
 If time remains, discuss the results with a partner. How "good" is your predictor? Be prepared to share your model's diagnosis (the evaluation results) with the class!
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

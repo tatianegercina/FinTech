@@ -835,4 +835,4 @@ By the end of this Unit, students will be writing their custom smart contracts a
 
 ### End Class
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -9,5 +9,4 @@ In this activity, you will practice creating a function that strips non-letter c
 * Inspect the results of this function and keep track of the words that exist in the results and are uninformative. 
 * Reimplement clean_test, this time with a set of custom stopwords to apply.
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -12,4 +12,4 @@ Compute the root mean square error (RMSE) of in-sample and out-of-sample results
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

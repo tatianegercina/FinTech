@@ -42,4 +42,4 @@ In this activity, you are going to explore how random forest algorithms can be u
 
 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -1030,4 +1030,4 @@ Congratulate students on learning a new skill that will add value to their profe
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

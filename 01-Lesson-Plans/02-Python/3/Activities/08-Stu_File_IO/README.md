@@ -28,4 +28,4 @@ You already know a lot of the concepts needed to complete this activity, like va
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

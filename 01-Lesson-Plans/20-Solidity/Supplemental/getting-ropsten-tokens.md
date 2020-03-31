@@ -15,4 +15,4 @@ After a few minutes, you will receive at least `1 ETH` test token in your wallet
 We recommend you to get your test tokens before the class.
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

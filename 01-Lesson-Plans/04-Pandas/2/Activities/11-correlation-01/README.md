@@ -36,4 +36,4 @@ In this exercise, you will learn how to calculate correlation between the respec
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -42,4 +42,4 @@ In this activity, you will implement the SafeMath library and use it for all mat
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -88,4 +88,4 @@ This is a more complicated example to greedy algorithms than the [maximin](../ma
 
 ------
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

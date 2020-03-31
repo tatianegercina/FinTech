@@ -94,4 +94,4 @@ That said, implementation of blockchain technology by central banks is not witho
 These are largely technical challenges, that will likely by solved by future iterations of blockchain and distributed ledger technology. Other fundamental issues, however, such as a country’s regulatory control of its own currency, are likely to persist for some time.
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

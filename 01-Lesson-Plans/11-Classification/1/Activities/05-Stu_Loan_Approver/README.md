@@ -14,4 +14,4 @@ In this activity, you will build a logistic regression model that can be used to
 8. Generate the confusion matrix for the test data predictions.
 9. Generate the classification report for the test data.
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

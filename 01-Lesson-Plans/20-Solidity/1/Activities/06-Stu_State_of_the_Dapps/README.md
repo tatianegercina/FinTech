@@ -34,4 +34,4 @@ The goal of this activity is to get familiarized with the diversity of dApps tha
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

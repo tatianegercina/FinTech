@@ -8,4 +8,4 @@ In this activity, you will extract named entities of your own choosing from the 
 * Extract all NERs of the types you chose from the stories.
 * Create a word cloud with the extracted NERs
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

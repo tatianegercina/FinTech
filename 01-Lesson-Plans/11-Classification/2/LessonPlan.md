@@ -1171,4 +1171,4 @@ Congratulate students on learning about a new family of machine learning algorit
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

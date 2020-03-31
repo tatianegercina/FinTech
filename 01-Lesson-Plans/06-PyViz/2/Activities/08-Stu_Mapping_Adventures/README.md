@@ -36,4 +36,4 @@ Creating too many map plots in one notebook might create a memory issue. Conside
 
 
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

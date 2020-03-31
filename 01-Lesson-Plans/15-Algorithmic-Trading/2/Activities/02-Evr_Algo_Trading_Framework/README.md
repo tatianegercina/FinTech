@@ -8,4 +8,4 @@ Code along with the instructor and copy the code from the `trading_dashboard.ipy
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

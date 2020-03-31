@@ -12,4 +12,4 @@ In this activity, you will research and practice undersampling with the imbalanc
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

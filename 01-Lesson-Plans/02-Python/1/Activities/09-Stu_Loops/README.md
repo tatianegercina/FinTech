@@ -22,4 +22,4 @@ Output for this activity should resemble the following:
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services

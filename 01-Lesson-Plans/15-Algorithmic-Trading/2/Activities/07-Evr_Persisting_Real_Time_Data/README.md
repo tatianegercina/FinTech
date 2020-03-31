@@ -4,4 +4,4 @@ Code along with the instructor to update the algorithmic trading framework to pe
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

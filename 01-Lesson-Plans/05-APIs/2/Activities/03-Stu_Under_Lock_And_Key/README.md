@@ -30,4 +30,4 @@ Since Quandl has cracked down on the number of API calls users can make to the s
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
