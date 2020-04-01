@@ -52,9 +52,9 @@ By the end of the class, students will be able to:
 
 In this activity, students will be introduced to conversational user interfaces (CUIs); they will learn how CUIs are disrupting financial services and what tools they will use to create a robo-advisor.
 
-Welcome students back and explain that today we will learn about conversational user interfaces, one of the coolest applications of natural language processing. Explain to students that they will create a robo-advisor with conversational capabilities by the end of the day.
+Welcome students to day 3 and explain that today we will learn about conversational user interfaces, one of the coolest applications of natural language processing. Explain to students that they will create a robo advisor with conversational capabilities by the end of the day.
 
-Open the lesson slides and move to the _Conversational User Interfaces (CUIs) and Robo Advisors_ section, highlighting the following:
+Open the lesson slides and move to the "Conversational User Interfaces (CUIs) and Robo Advisors_ section, highlighting the following:
 
 * In the early years of computing history, people used to communicate with computers using text interfaces and some non-human-friendly commands.
 
@@ -62,21 +62,61 @@ Open the lesson slides and move to the _Conversational User Interfaces (CUIs) an
 
 * Chatbots are the most common applications of CUIs; however, Amazon Alexa, Apple Siri, or Google Assistant are also examples of CUIs.
 
-* Financial services providers are using CUIs by offering Robotic Advisors or Robo Advisors, as an additional communication channel for customers.
+* CUIs and Robo Advisors enhance customer engagement by using digital communication channels (social media or messaging apps).
 
-Engage students by highlighting the benefits of this technology on finance and banking, slack out [this article from Deloitte](../Supplemental/deloitte-nl-fsi-chatbots-adopting-the-power-of-conversational-ux.pdf) where they can learn more about the impact of chatbots in financial services.
+Engage students by highlighting that this technology is disruption on finance and banking by offering Robotic Advisors or Robo Advisors, as an additional communication channel for customers.
 
-Present to students the use cases shown on the _Example Chatbots Use Cases_ slide, ask a couple of them if they are familiar with services like these, and what was their experience.
+Highlight the following about chatbots in finance an banking:
 
-Explain to the class the technologies we will use Today and highlight the following:
+* According to Juniper Research, banks will save about 8 billion USD annually by 2020 thanks to chatbot use.
 
-* By the end of Today's class, we will create a robo-advisor using AWS.
+* Chatbots can improve customer experience by performing tasks 24/7. Customers don't need to wait for human replies for most common tasks or inquiries.
 
-* Amazon Lex is a service for building conversational interfaces into any application using voice and text.
+* Using NLP and sentiment analysis, chatbots understand how customers speak. Financial institutions can respond more adequately to customer needs.
 
-* Amazon Lambda is a computing service that runs code in response to events. We will use this service to program the actions of the robo-advisor.
+Present to students the use cases shown on the "Chatbots Use Cases" section; as you present the use cases, engage students by asking who is familiar with services like these and what was their experience.
+
+Highlight the following about chatbots use cases:
+
+* The first robo advisors were introduced in the Canadian FinTech industry in 2014.
+
+* Financial assets management aided by robo advisors are expected to show an annual growth rate of 26.7% from 2020 to 2023; there is a forecast of CAD$23,500m by 2023.
+
+* Depending on how a robo advisor operates, for example, as portfolio manager or investment advisors, they need to register with the Investment Industry Regulatory Organization of Canada (IIROC) and follow suitability obligations like disclosing investing risks to their clients
+
+* Wealthsimple.
+
+  * It is rated by several analysts as the best robo advisor in the Canadian market.
+
+  * Founded in 2014 in Toronto, It's an online investment management service focused on millennials. As of August 2019, the firm holds over CAD$5 billion in assets under management
+
+* News Wealth.
+
+  * The firm created Canada’s first SaaS-based digital wealth management platform to allow investors have access to personalized and transparent wealth management services.
+
+  * It was founded in 2014 and is based in Toronto.
+
+* Bolt from the Bank of Montreal (BMO).
+
+  * BMO launched Bolt in 2018 to allow customers to contact the bank via Facebook or Twitter for inquiries about products, foreign exchange rates, as well as branch locations and ATMs, 24×7.
+
+* Erica from Bank of America.
+
+  * It was launched in 2018 to offer customers a digital banking experience that encompassed voice, in-app messaging and predictive analytics.
+
+  * By December 2019, Erica reached more than 10 million users.
+
+Continue the presentation by introducing to the class the technologies we will use Today and highlight the following:
+
+* By the end of Today's class, we will create a robo advisor using two services AWS.
+
+* Amazon Lex is a service that uses the same technology behind Amazon Alexa, it's use for building conversational interfaces into any application using voice and text.
+
+* Amazon Lambda is a computing service that runs code in response to events. We will use this service to program the actions of the robo advisor.
 
 * To interact with final users, a bot created with Amazon Lex can be deployed on a mobile application or a messaging platform such as Slack, Kik, or Facebook Messenger.
+
+Slack out [this article from Deloitte](../Supplemental/deloitte-nl-fsi-chatbots-adopting-the-power-of-conversational-ux.pdf) where they can learn more about the impact of chatbots in financial services.
 
 Answer any additional questions before moving forward.
 
