@@ -82,9 +82,18 @@ A trading signal is the point at which a technical indicator, such as the crosso
 
 </details>
 <details>
-<summary>How do I create and use a Dual Moving Average Crossover?</summary><br>
+<summary>How do I use a Dual Moving Average Crossover?</summary><br>
 
-The dual moving average crossover utilizes short and long term moving averages.  When these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.
+
+<blockquote>
+<details>
+<summary>What it is:</summary><br>
+The dual moving average crossover utilizes short and long term moving averages.  When these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.<br>
+
+<br>
+</details>
+<details>
+<summary>How to use it:</summary><br>
 
 If the short-term moving average line goes above the long-term moving average line, the indicator suggests that the price will be rising higher than the historical average in the short term.
 
@@ -92,9 +101,88 @@ If the short-term moving average line dips below the long-term moving average li
 
 In the following candlestick chart for Bitcoin, you can see the dual moving average lines and the crossover points, indicating entry (buy signal) and exit (sell signal) points:
 
-<img src=Images/dual_ma_cross.png width=700>
+<img src=Images/dual_ma_cross.png width=700><br>
+</details>
+<details>
+<summary>How to create it:</summary><br>
+
+The dual moving average crossover can be created by using Pandas functionality.  In the following example, we'll begin with a simple data frame with a datetime index and column of closing stock prices:
+
+<img src=Images/signals_df.PNG width=150>
+
+First we initialize a `Signals` column, then create our short and long term moving average columns using the `.rolling()` and `.mean()` methods:
+
+```python
+# Set the short window and long windows
+short_window = 50
+long_window = 100
+
+# Generate the short and long moving averages (50 and 100 days, respectively)
+signals_df['Signal'] = 0.0
+signals_df['SMA50'] = signals_df['Close'].rolling(window=short_window).mean()
+signals_df['SMA100'] = signals_df['Close'].rolling(window=long_window).mean()
+
+signals_df.tail()
+```
+<img src=Images/signals_df_sma.PNG width=250>
+
+Next we create the signals themselves using `np.where()`.  The code begins at the start of the short rolling window because the values prior to that are null.  We accomplish this by slicing the column with a colon after the short_window variable: `signals_df[short_window:]`.  The complete code loos like this:
+```python
+# Generate the trading signal (1 or 0) to when the short window is less than the long
+# Note: Use 1 when the SMA50 is less than SMA100 and 0 for when it is not.
+signals_df["Signal"][short_window:] = np.where(
+    signals_df["SMA50"][short_window:] < signals_df["SMA100"][short_window:], 1.0, 0.0
+)
+```
+Don't let the above code confuse you!  It is simply checking if the STMA is smaller than the LTMA and inserted a 1 if it is.  A small snippet of the values generated can be seen below:
+
+<img src=Images/signals_df_values.PNG width=350>
+
+The next step is to take the `.diff()` of the `Signals` column and add it to the DataFrame.  Remember, `.diff` just subtracts one cell from the previous and provides the difference:
+
+<img src=Images/signals_df_diff.PNG width=350>
+
+Finally, the entry/exit points can be visualized using the following code:
+```python
+# Visualize exit position relative to close price
+exit = signals_df[signals_df['Entry/Exit'] == -1.0]['Close'].hvplot.scatter(
+    color='red',
+    legend=False,
+    ylabel='Price in $',
+    width=1000,
+    height=400)
+
+# Visualize entry position relative to close price
+entry = signals_df[signals_df['Entry/Exit'] == 1.0]['Close'].hvplot.scatter(
+    color='green',
+    legend=False,
+    ylabel='Price in $',
+    width=1000,
+    height=400)
+
+# Visualize close price for the investment
+security_close = signals_df[['Close']].hvplot(
+    line_color='lightgray',
+    ylabel='Price in $',
+    width=1000,
+    height=400)
+
+# Visualize moving averages
+moving_avgs = signals_df[['SMA50', 'SMA100']].hvplot(
+    ylabel='Price in $',
+    width=1000,
+    height=400)
+
+# Overlay plots
+entry_exit_plot = security_close * moving_avgs * entry * exit
+entry_exit_plot.opts(xaxis=None)
+```
+<img src=Images/signals_df_plot.PNG width=800>
 
 </details>
+</blockquote>
+</details>
+
 <details>
 <summary>How do I create and use Bollinger Bands?</summary><br>
 </details>
