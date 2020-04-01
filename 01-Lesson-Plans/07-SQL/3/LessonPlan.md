@@ -770,7 +770,7 @@ Walk through the solution and highlight the following:
 * The database URL is defined in the `db_url` variable, and then it's passed as a parameter to the `create_engine` function.
 
   ```python
-  # Define the databaser URL
+  # Define the database URL
   db_url = "postgresql://postgres:postgres@localhost:5432/agent_db"
 
   # Create the engine object
@@ -852,7 +852,7 @@ Use the ERD slides and begin the discussion of entity relationship diagrams (ERD
 
 * An ERD defines entities, their attributes, and data types, as well as illustrates the overall design of a database.
 
-* There are three types of ERDs or data models: **conceptual**, **logical**, and **physical**. As the following image demonstrates, a conceptual data model is the simplest form, describing only entity names and relationships; a logical database model further expands upon the conceptual data model by additionally describing attributes or column names as well as primary and foreign key definitions; a physical data expands upon the logical data model to additionally include column data types and specific naming conventions.
+* There are three types of ERDs or data models: **conceptual**, **logical**, and **physical**. As the following image demonstrates, a conceptual data model is the simplest form, describing only entity names and relationships; a logical database model further expands upon the conceptual data model by additionally describing attributes or column names as well as primary and foreign key definitions; a physical data model expands upon the logical data model to additionally include column data types and specific naming conventions.
 
   ![conceptual-vs-logical-vs-physical](Images/conceptual-vs-logical-vs-physical.png)
 
@@ -865,8 +865,8 @@ Use the ERD slides and begin the discussion of entity relationship diagrams (ERD
   | Entity Names         | X          | X       |          |
   | Entity Relationships | X          | X       |          |
   | Attributes           |            | X       |          |
-  | Primary Keys         |            | X       | X        |
-  | Foreign Keys         |            | X       | X        |
+  | Primary Keys         |            | X       |          |
+  | Foreign Keys         |            | X       |          |
   | Table Names          |            |         | X        |
   | Column Names         |            |         | X        |
   | Column Data Types    |            |         | X        |
@@ -936,7 +936,7 @@ With the design tool open in your browser, demonstrate how to begin setting up a
 
   **Note**: The tables' locations can be physically adjusted by clicking and dragging them in the browser.
 
-* Explain to the class that at this point, the conceptual data model contains entities; however, it does not have describe any entity relationships. In order to create the relationships between tables, use the `rel <entity-name>` syntax to create abstract relationships between tables.
+* Explain to the class that at this point, the conceptual data model contains entities; however, it does not have any entity relationships. In order to create the relationships between tables, use the `rel <entity-name>` syntax to create abstract relationships between tables.
 
   ```sql
   Employee
@@ -1269,14 +1269,14 @@ Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams
   ```sql
   Sales
   -
-  sales_id INT PK
-  payment_id INT FK >- Payments.payment_id
-  mortgage_id INT FK - Mortgage.mortgage_id
-  loan_amount INT
-  loan_date DATE
+  sales_id PK
+  payment_id FK >- Payments.payment_id
+  mortgage_id FK - Mortgage.mortgage_id
+  loan_amount
+  loan_date
   ```
 
-Copy and paste the remaining text from `schema.txt` to create the additional tables. The final product should appear as follows:
+Copy and paste the remaining text from `schema.txt` to create the additional tables. Then export the logical data model as a .png image file. The final product should appear as follows:
 
   ![stu-logical-ERD.png](Images/stu-logical-ERD.png)
 
@@ -1308,7 +1308,7 @@ In this activity, students will transition their mortgage lending logical ERD to
 
 * [schema.txt](Activities/11-Stu_ERD/Solved/schema.txt)
 
-* [query.sql](Activities/11-Stu_ERD/Solved/query.sql)
+* [schema.sql](Activities/11-Stu_ERD/Solved/schema.sql)
 
 Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams.com/#/) webpage. Copy and paste the solution using the code in the [`schema.txt`](Activities/11-Stu_ERD/Solved/schema.txt) file and explain the following:
 
@@ -1318,11 +1318,11 @@ Open the [Quick Database Diagrams (Quick DBD)](https://app.quickdatabasediagrams
 
 Export the full schema from Quick Database Diagrams as a PostgreSQL file to demonstrate how schema creation code is converted to PostgreSQL code.
 
-* From the Export tab, select PostgreSQL from the drop-down menu. A file named `QuickDBD-export.sql` will appear in your Downloads folder.
+* From the Export tab, select PostgreSQL from the drop-down menu. A file named `QuickDBD-export.sql` or something similar will appear in your Downloads folder.
 
   ![saving-schema.png](Images/saving-schema.png)
 
-  **Note:** The contents of the downloaded file is included in `query.sql`, if needed.
+  **Note:** The contents of the downloaded file are included in `query.sql` if needed.
 
 * Open the new file with VS Code to view the SQL code. Note how the table and column names are enclosed in quotation marks. These quotation marks will need to be included in queries (for example ,`SELECT * FROM "Members";`) or removed from the code, if preferred.
 
@@ -1343,7 +1343,7 @@ Export the full schema from Quick Database Diagrams as a PostgreSQL file to demo
   );
   ```
 
-* The `CONSTRAINT` line contained in the table creation code is automatically generated upon exporting the diagram and does not need to be altered.
+* The `CONSTRAINT` line contained in the table creation code is automatically generated upon exporting the diagram and sets the associated primary and foreign keys. The `CONSTRAINT` syntax is just another way to define primary and foreign key relationships.
 
   ```sql
   CONSTRAINT "pk_Customer" PRIMARY KEY (

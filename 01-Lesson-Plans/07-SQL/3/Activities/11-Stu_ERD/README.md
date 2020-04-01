@@ -4,9 +4,9 @@ In this activity, you and your partner will continue designing a database model 
 
 ## Instructions
 
-* Using the [starter code](Unsolved/schema.txt) provided, return to [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) and transition your logical ERD physical ERD by defining the data types of columns and the type of entity relationships between tables.
+* Using the [starter code](Unsolved/schema.txt) provided, return to [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) and transition your logical ERD to a physical ERD by defining the data types of columns and the type of entity relationships between tables.
 
-* When you are satisfied with your ERD, export the diagram as a PostgreSQ file:
+* When you are satisfied with your ERD, export the diagram as a PostgreSQL file:
 
   * In the Quick Database Diagrams tool, click on the Export tab and select PostgreSQL from the drop-down menu.
 
