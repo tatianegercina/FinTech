@@ -6,13 +6,13 @@
 
 Today's class introduces students to smart contracts.
 
-At a glance, smart contracts are computer programs that allow credible transactions of digital assets under certain conditions without third parties. In this Unit, students will learn what a smart contract is, and they will build smart contracts using [Solidity](https://solidity.readthedocs.io/en/latest/index.html), an object-oriented language for implementing smart contracts in Ethereum.
+At a glance, smart contracts are computer programs that allow credible transactions of digital assets under certain conditions without third parties. In this unit, students will learn what a smart contract is, and they will build smart contracts using [Solidity](https://solidity.readthedocs.io/en/latest/index.html), an object-oriented language for implementing smart contracts in Ethereum.
 
 Today's class will introduce students to the fundamental concepts of smart contracts, as well as to the development tools and environment they will use to create, compile, and deploy their smart contracts.
 
 ### Class Objectives
 
-By the end of the Unit, students will be able to:
+By the end of the unit, students will be able to:
 
 * Explain what a smart contract is, and its applications in FinTech and other business areas.
 
@@ -20,7 +20,7 @@ By the end of the Unit, students will be able to:
 
 * Explain how the Ethereum Virtual Machine (EVM) is an isolated environment, and how Solidity code can only access on-chain data.
 
-* Recognize that a smart contract is a program that runs on the EVM (Ethereum Virtual Machine)
+* Recognize that a smart contract is a program that runs on the EVM (Ethereum Virtual Machine).
 
 * Identify the different kinds of smart contracts and their top use cases.
 
@@ -30,9 +30,9 @@ By the end of the Unit, students will be able to:
 
 ### Instructor Notes
 
-* Smart contracts have a lot of math and computing complexity that is beyond the scope of today's class. The goal of this lesson is to show students how smart contracts work and what tools are used to create, compile, and deploy smart contracts.
+* Smart contracts have a lot of math and computing complexity that is beyond the scope of today's class. The goal of this lesson is to show students how smart contracts work, and what tools are used to create, compile, and deploy smart contracts.
 
-* Smart contracts have several applications beyond the financial sector such as medical, industrial (supply chain), cybersecurity, and many more. Feel free to include additional use cases or applications that you believe are suitable for the class.
+* Smart contracts have several applications beyond the financial sector, such as medical, industrial (supply chain), cybersecurity, and many more. Feel free to include additional use cases or applications that you believe are suitable for the class.
 
 * Setting up the development environment may be tricky; be sure to follow the [installation guide](../Supplemental/unit-20-install-guide.md) before the class to get familiarized with the process.
 
@@ -40,7 +40,7 @@ By the end of the Unit, students will be able to:
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1O5WeaftO_TZlpF22sK-MwKIZZC8sAsiMFdvPQhSHcCc/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository, along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting `Make a copy`.
 
