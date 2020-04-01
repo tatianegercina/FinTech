@@ -420,11 +420,11 @@ Have the TAs circulate the room to assist with any installation issues that stud
 
 ### 08. Instructor Do: Remix and Ganache Review (5 min)
 
-Open Ganache and ask the students the following questions.
+Open Ganache and ask the students the following questions:
 
 * How might a local development blockchain like Ganache make it easier to develop smart contracts?
 
- **Answer** It allows potentially insecure code to run in a private(non-public) environment.
+ **Answer** It allows potentially insecure code to run in a private (non-public) environment.
 
  **Answer** It saves you from having to purchase actual ether.
 
@@ -436,7 +436,7 @@ Open Ganache and ask the students the following questions.
 
  **Answer** You can write a smart contract from pretty much any browser.
 
- **Answer** It allows for writing, compiling, and deploying all in one place.
+ **Answer** It allows for writing, compiling, and deploying, all in one place.
 
  **Answer** It supports connecting to local development blockchains.
 
@@ -448,9 +448,9 @@ Open Ganache and ask the students the following questions.
 
 ### 10. Instructor Do: Contextualizing Solidity (15 min)
 
-In this exercise, the instructor will explain to the students that Solidity is a statically typed language and that it runs inside the Ethereum Virtual Machine (EVM) in a sandbox.
+In this exercise, the instructor will explain to students that Solidity is a statically typed language and that it runs inside the Ethereum Virtual Machine (EVM) in a sandbox.
 
-* Solidity is the language of smart contracts used by Ethereum, as well as Ethereum-compatible blockchains like IBM's Hyperledger Fabric and Burrow, JPMorgan Chase's Quorum, Ethereum Classic, and last, but not least, Counterparty which extends Bitcoin to support the EVM.
+* Solidity is the language of smart contracts used by Ethereum, as well as Ethereum-compatible blockchains like IBM's Hyperledger Fabric and Burrow, JPMorgan Chase's Quorum, Ethereum Classic, and last, but not least, Counterparty, which extends Bitcoin to support the EVM.
 
 * Solidity is a statically typed language, so it will also help you understand other statically typed languages you may have heard of, like C, C++, Go, Java, Rust, and many more.
 
@@ -462,7 +462,7 @@ Try to conceptualize what is happening in the graphic.
 
 * The Ethereum Virtual Machine is a sandboxed environment backed by a virtual stack and capable of performing calculations. There's an EVM embedded within every Ethereum full node on the Ethereum network. Since code executes inside the sandboxed processes of the Ethereum node, machine code remains isolated from the host machine. Let's break down the levels of the following graphic.
 
-* Higher Level language
+* Higher-level language
 
  * Solidity is the `Higher Level Language` of the EVM.
 
