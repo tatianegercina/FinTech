@@ -332,9 +332,9 @@ Click the blocks tab:
 
 ![ganache_blocks.png](Images/ganache_blocks.png)
 
-This page should be relatively empty, only listing block zero -- explain:
+This page should be relatively empty, only listing block zero. Explain:
 
-* Since it is a new workspace, the blockchain only consists of the block that contains our initial blockchain configuration.
+* Since it is a new workspace, the blockchain only consists of the block containing our initial blockchain configuration.
 
 * As more transactions happen, more blocks will be mined instantaneously because of the `automine` feature.
 
@@ -352,7 +352,7 @@ Briefly introduce Remix:
 
 * Remix is an online IDE and compiler for the `Solidity` smart contract language.
 
-* Remix allows you to write, compile and deploy Solidity smart contracts onto the Ethereum blockchain.
+* Remix allows you to write, compile, and deploy Solidity smart contracts onto the Ethereum blockchain.
 
 Enable the `Solidity` development environment by clicking on the "Solidity" button on the Remix Home tab.
 
@@ -366,7 +366,7 @@ The Solidity file's code should appear in the editor window.
 
 ![remix_editor_message](Images/remix_editor_message_board.png)
 
-Reassure the students that though this contract may look complicated now, soon it will make a lot more sense.
+Reassure the students that though this contract may look complicated now, it will make a lot more sense soon.
 
 Click the `Solidity Compiler` button on the Remix sidebar then click `Compile` to compile the contract.
 
@@ -392,21 +392,21 @@ Change the Environment to `Injected Web3`:
 
 ![remix_injected_web3](Images/remix_injected_web3.png)
 
-You will see a connection request from MetaMask to connect Remix with your local blockchain, click the "Connect" button to continue.
+You will see a connection request from MetaMask to connect Remix with your local blockchain. Click the "Connect" button to continue.
 
 ![remix_metamask_connection](Images/remix_metamask_connection.png)
 
-Explain to the students that:
+Explain to students that:
 
 * Web3 is a library that allows you to communicate with Ethereum nodes.
 
-* We must set our environment to `Injected Web3` so that Remix can talk to MetaMask, which can talk to our local blockchain. In this case, MetaMask is "injecting" the Web3 library into your browser, which allows Remix to communicate to the outside world (Ethereum).
+* We must set our environment to `Injected Web3` so that Remix can talk to MetaMask, which talks to our local blockchain. In this case, MetaMask is "injecting" the Web3 library into your browser, which allows Remix to communicate to the outside world (Ethereum).
 
 * We will be writing our own custom smart contracts tomorrow, but today we will just be familiarizing ourselves with Remix.
 
 ---
 
-### 07. Students Do: Setting up Remix and Ganache (15 min)
+### 07. Student Do: Setting up Remix and Ganache (15 min)
 
 Students will setup Ganache, create a workspace for `fintech`, set the `RPC port` to `8545`, and import their `mnemonic` into Ganache's settings to keep their wallets consistent in their test blockchain. Then, they will explore the Remix IDE with the time left.
 
@@ -414,7 +414,7 @@ Students will setup Ganache, create a workspace for `fintech`, set the `RPC port
 
 * [README.md](Activities/03_Stu_Setting_up_Remix_And_Ganache/README.md)
 
-Have the TA's circulate the room to assist with any installation issues that students may be having -- Students may have to add an allow rule to windows firewall.
+Have the TAs circulate the room to assist with any installation issues that students may be having. Students may have to add an allow rule to the Windows firewall.
 
 ---
 
