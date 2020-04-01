@@ -480,7 +480,7 @@ Next, discuss one-to-many relationships. We'll continue with our Simpsons exampl
 
   ![Images/one-to-many1.png](Images/one-to-many1.png)
 
-* This example has two tables. The first table lists only addresses. The second table lists each person's Social Security number and address.
+* This example has two tables. The first table lists only addresses. The second table lists each person's social security number and address id.
 
 * As before, one Social Security number is unique to one individual.
 
@@ -514,7 +514,7 @@ Ask the class what many-to-many relationships might be found in an online retail
 
 Demonstrate the creation of a junction table in Postgres.
 
-* First, open [schema.sql](Activities/05-Ins_Data_Relationships/Solved/schema.sql) and paste in the queries to create and insert into the `children` and `parents` tables. There are two separate tables:
+* First, open the [schema.sql](Activities/05-Ins_Data_Relationships/Solved/schema.sql) and [seed.sql](Activities/05-Ins_Data_Relationships/Solved/seed.sql) files and paste in the queries to create and insert data into the `children` and `parents` tables, respectively. There are two separate tables:
 
   ![Images/modeling01.png](Images/modeling01.png)
 
@@ -547,12 +547,12 @@ Finally, go through the `JOIN` query to display the data in full:
   ![Images/modeling04.png](Images/modeling04.png)
 
   ```sql
-SELECT children.child_name, child_parent.child_id, parents.parent_name, child_parent.parent_id
-FROM children
-LEFT JOIN child_parent
-ON child_parent.child_id = children.child_id
-LEFT JOIN parents
-ON child_parent.parent_id = parents.parent_id;
+  SELECT children.child_name, child_parent.child_id, parents.parent_name, child_parent.parent_id
+  FROM children
+  LEFT JOIN child_parent
+  ON child_parent.child_id = children.child_id
+  LEFT JOIN parents
+  ON child_parent.parent_id = parents.parent_id;
   ```
 
 * The `children` table has a left join with the junction table, the results of which then have a left join with the `parents` table.
