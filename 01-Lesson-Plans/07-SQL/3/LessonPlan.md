@@ -394,8 +394,7 @@ Using the `schema.sql`, `seed.sql` files in pgAdmin, walk through the code and e
     address VARCHAR(255),
     city VARCHAR (255),
     state VARCHAR(255),
-    zip_code VARCHAR(255),
-    type VARCHAR (255)
+    zip_code VARCHAR(255)
   );
   ```
 
@@ -419,7 +418,43 @@ Using the `schema.sql`, `seed.sql` files in pgAdmin, walk through the code and e
     (10, 'David', 'Stone')
   ```
 
-* Finally explain that all tables can be joined together by their respective IDs.
+* Explain that the `owners` and `estates` tables can be joined together by their mutual `owner_id` columns.
+
+  ```sql
+  SELECT *
+  FROM owners
+  INNER JOIN estates ON owners.owner_id = estates.owner_id;
+  ```
+
+* For the bonus, the `estate_type` and `estates_new` tables are linked by the mutual `estate_type_id`.
+
+  ```sql
+  CREATE TABLE estate_type (
+  estate_type_id INT NOT NULL PRIMARY KEY,
+  estate_type VARCHAR(255)
+  );
+
+  CREATE TABLE estates_new (
+    estate_id INT NOT NULL PRIMARY KEY,
+    owner_id INT NOT NULL,
+    FOREIGN KEY (owner_id) REFERENCES owners(owner_id),
+    address VARCHAR(255),
+    city VARCHAR (255),
+    state VARCHAR(255),
+    zip_code VARCHAR(255),
+    estate_type_id INT,
+    FOREIGN KEY (estate_type_id) REFERENCES estate_type(estate_type_id)
+  );
+  ```
+
+* Lastly, the `owners`, `estates_new`, and `estate_type` tables can be joined together by the mutual `owner_id` and `estate_type_id`, respectively.
+
+  ```sql
+  SELECT *
+  FROM owners
+  INNER JOIN estates_new ON owners.owner_id = estates_new.owner_id
+  INNER JOIN estate_type ON estates_new.estate_type_id = estate_type.estate_type_id;
+  ```
 
 ### 8. Instructor Do: Intro to Data Relationships (10 min)
 
