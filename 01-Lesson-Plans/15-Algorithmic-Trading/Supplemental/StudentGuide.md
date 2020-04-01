@@ -88,7 +88,10 @@ A trading signal is the point at which a technical indicator, such as the crosso
 <blockquote>
 <details>
 <summary>What it is:</summary><br>
-The dual moving average crossover utilizes short and long term moving averages.  When these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.<br>
+The dual moving average crossover utilizes short and long term simple moving averages.  When these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.
+
+Check out the [moving average refresher](Moving_Average_Refresher.md) if you need a quick refresh on how moving averages work!
+<br>
 
 <br>
 </details>
@@ -204,6 +207,41 @@ entry_exit_plot.opts(xaxis=None)
 
 <details>
 <summary>How do I create and use Bollinger Bands?</summary><br>
+
+<blockquote>
+<details>
+<summary>What it is:</summary><br>
+
+The dual moving average crossover utilizes short and long term moving averages.  When these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.<br>
+
+Check out the [moving average refresher](Moving_Average_Refresher.md) if you need a quick refresh on how moving averages work!
+
+<br>
+</details>
+<details>
+<summary>How to use it:</summary><br>
+
+If the short-term moving average line goes above the long-term moving average line, the indicator suggests that the price will be rising higher than the historical average in the short term.
+
+If the short-term moving average line dips below the long-term moving average line, the indicator suggests that the price will be dropping lower than the historical average in the short term.
+
+In the following candlestick chart for Bitcoin, you can see the dual moving average lines and the crossover points, indicating entry (buy signal) and exit (sell signal) points:
+
+<img src=Images/dual_ma_cross.png width=700><br>
+</details>
+<details>
+<summary>How to create it:</summary><br>
+
+The dual moving average crossover can be created by using Pandas functionality.  In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.
+
+<img src=Images/signals_df.PNG width=150>
+<blockquote>
+<details>
+<summary>Step One: Signal, STMA, and LTMA Columns</summary><br>
+
+</details>
+</blockquote>
+</details>
 </details>
 <details>
 <summary>What is backtesting and how do I use it?</summary><br>
