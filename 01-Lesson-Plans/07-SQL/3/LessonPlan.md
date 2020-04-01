@@ -577,6 +577,8 @@ In this activity, students will create table schemata for agents and regions, an
 
 * [regions.csv](Activities/06-Stu_Data_Relationships/Resources/regions.csv)
 
+* [agent_region_junction](Activities/06-Stu_Data_Relationships/Resources/agent_region_junction.csv)
+
 **Instructions:** [README.md](Activities/06-Stu_Data_Relationships/README.md)
 
 ### 10. Instructor Do: Review Data Relationships (5 min)
