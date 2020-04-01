@@ -601,13 +601,13 @@ Use the schema.sql and seed.sql files to walk through the creation and populatio
 
   ```sql
   CREATE TABLE agents (
-    agent_id PRIMARY KEY,
+    agent_id INT PRIMARY KEY,
     first_name VARCHAR NOT NULL,
     last_name VARCHAR NOT NULL
   );
 
   CREATE TABLE regions (
-    region_id INTEGER NOT NULL PRIMARY KEY,
+    region_id INT NOT NULL PRIMARY KEY,
     region_name VARCHAR NOT NULL
   );
   ```
@@ -616,7 +616,7 @@ Use the schema.sql and seed.sql files to walk through the creation and populatio
 
   ```sql
   CREATE TABLE agent_region_junction (
-    agent_id INTEGER NOT NULL,
+    agent_id INT NOT NULL,
     FOREIGN KEY (agent_id) REFERENCES agents(agent_id),
     region_id INTEGER NOT NULL,
     FOREIGN KEY (region_id) REFERENCES regions(region_id),
