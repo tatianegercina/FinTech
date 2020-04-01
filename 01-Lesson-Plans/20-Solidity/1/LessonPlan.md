@@ -227,13 +227,13 @@ After filling out your wallet details, click on the `Import` button to continue,
 
 ![MetaMask installation - 8](Images/metamask-8.png)
 
-Students may notice a message at the bottom of the page that says that `MetaMask cannot recover your seed phrase`. Explain to students that this means that once you import your keys, MetaMask won't export them again, so if you lose your mnemonic, you can't extract it from metamask. Encourage students to keep their mnemonics in a safe place!
+Students may notice a message at the bottom of the page that says, `MetaMask cannot recover your seed phrase`. Explain to students that this means that once you import your keys, MetaMask won't export them again. So if you lose your mnemonic, you can't extract it from Metamask. Encourage students to keep their mnemonics in a safe place!
 
 Click on the `All Done` button to continue. Explain to students that they will see a page showing the balance of their wallet and the transaction history.
 
 ![MetaMask installation - 9](Images/metamask-9.png)
 
-Explain to students that they may have `0 ETH` and no transactions. Explain to students that this is all right from now since we have not started our local blockchain. We will learn how to connect MetaMask with our local wallet in future activities.
+Explain to students that they may have `0 ETH` and no transactions. Tell students that this is all right for now, since we have not started our local blockchain. We will learn how to connect MetaMask with our local wallet in future activities.
 
 Explain the following about the wallet keys:
 
@@ -294,7 +294,7 @@ Click the Server tab.
 
 * The `automine` feature is a very convenient option; when a transaction happens, such as someone executing/deploying a smart contract or sending/receiving funds, the block is instantaneously processed so that there is no wait time.
 
-* `Automine` is convenient because you can see the results of transactions instantaneously but dangerous in the fact that it is not representative of how a blockchain normally functions.
+* `Automine` is convenient because you can see the results of transactions instantaneously, but dangerous in the fact that it is not representative of how a blockchain normally functions.
 
 * The `ERROR ON TRANSACTION FAILURE` is useful because it will log additional information about errors to our GUI.
 
@@ -308,7 +308,7 @@ Now click `Accounts and Keys`.
 
 * `TOTAL ACCOUNTS TO GENERATE` is the number of accounts that will be generated containing the balance.
 
-Emphasize the importance of the wallet mnemonic to an Ethereum wallet and its ability to generate addresses.
+Emphasize the importance of the wallet mnemonic to an Ethereum wallet, and its ability to generate addresses.
 
 * `AUTOGENERATE HD MNEMONIC` is another way to auto-generate our mnemonic. We, however, are going to be using our previously generated mnemonics.
 
@@ -322,7 +322,7 @@ Click `Save Workspace`.
 
 Elaborate on the following sections of the Ganache accounts page.
 
-* The workspace info bar displays the settings for your current workspace, many of these values should be familiar from the initial setup.
+* The workspace info bar displays the settings for your current workspace. Many of these values should be familiar from the initial setup.
 
 * As you can see, our wallet mnemonic is also listed.
 
