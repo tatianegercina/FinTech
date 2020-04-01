@@ -1,30 +1,32 @@
-## Creating Tables
+# Creating Tables
 
-In this activity, you will use pgAdmin to recreate and query a table based on image provided to you.
+In this activity, you will use pgAdmin to recreate and query a table based on an image provided to you.
 
-### Instructions
+## Instructions
 
-1. Create a new database in pgAdmin named `city_info`.
+1. Create a new database in pgAdmin named `state_info`.
 
-2. Using the query tool, create an empty table named `cities`. Be sure to match the data types!
+2. Using the query tool, create an empty table named `states`. Be sure to match the data types!
+
+    **Note:** When defining the `state_property_tax_rate` column, use the `FLOAT` data type.
 
 3. Insert data into the new table. The result should match the following image.
 
-    ![cities_table.png](Images/cities_table.png)
+    ![states_table.png](Images/states_table.png)
 
 4. Query the table to recreate the following image.
 
-    ![cities_only.png](Images/cities_only.png)
+    ![states_only.png](Images/states_only.png)
 
-### Bonus
+## Bonus
 
-1. Filter the table to view only cities in Arizona.
+1. Filter the table to view only state abbreviations.
 
-2. Filter the table to view only cities with a population of less than 100,000.
+2. Filter the table to view states with a population greater than `5,000,000`.
 
-3. Filter the table to view California cities with a population of less than 100,000.
+3. Filter the table to view states with a population of greater than `5,000,000` and a state property tax rate of less than `0.01`.
 
-### Hints
+## Hints
 
 * For the second bonus question, you will need to use a [`WHERE` clause](https://www.tutorialspoint.com/sql/sql-where-clause.htm) to filter the original query.
 
@@ -32,4 +34,4 @@ In this activity, you will use pgAdmin to recreate and query a table based on im
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
