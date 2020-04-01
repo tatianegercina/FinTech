@@ -16,7 +16,7 @@ CREATE TABLE customer_email (
     customer_id INTEGER NOT NULL,
     email VARCHAR(30) NOT NULL,
     PRIMARY KEY (email_id),
-    FOREIGN KEY (customer_id) REFERENCES customer(id)
+    FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
 );
 
 -- Let's create a third table with a foreign key that references the first table
@@ -24,6 +24,6 @@ CREATE TABLE customer_phone (
     customer_phone_id SERIAL,
     phone VARCHAR(30) NOT NULL,
     customer_id INTEGER NOT NULL,
-    PRIMARY KEY (customer_phone),
-    FOREIGN KEY (customer_id) REFERENCES customer(id)
+    PRIMARY KEY (customer_phone_id),
+    FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
 );

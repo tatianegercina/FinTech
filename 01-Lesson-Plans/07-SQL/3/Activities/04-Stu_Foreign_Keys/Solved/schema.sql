@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS owners;
-DROP TABLE IF EXISTS estates;
+DROP TABLE IF EXISTS owners CASCADE;
+DROP TABLE IF EXISTS estates CASCADE;
 DROP TABLE IF EXISTS estate_type;
 DROP TABLE IF EXISTS estates_new CASCADE;
 
@@ -10,7 +10,7 @@ CREATE TABLE owners (
   last_name VARCHAR(255)
 );
 
--- Create pet name table and insert values
+-- Create estates table and insert values
 CREATE TABLE estates (
   estate_id INT NOT NULL PRIMARY KEY,
   owner_id INT NOT NULL,
@@ -18,8 +18,7 @@ CREATE TABLE estates (
   address VARCHAR(255),
   city VARCHAR (255),
   state VARCHAR(255),
-  zip_code VARCHAR(255),
-  type VARCHAR (255)
+  zip_code VARCHAR(255)
 );
 
 -- BONUS
@@ -29,15 +28,16 @@ CREATE TABLE estate_type (
   estate_type VARCHAR(255)
 );
 
--- Create new estates table that takes a estate_type id
+-- Create new estates table and insert values
 CREATE TABLE estates_new (
   estate_id INT NOT NULL PRIMARY KEY,
   owner_id INT NOT NULL,
   FOREIGN KEY (owner_id) REFERENCES owners(owner_id),
-  estate_type_id INT NOT NULL,
-  FOREIGN KEY (estate_type_id) REFERENCES estate_type(estate_type_id),
   address VARCHAR(255),
   city VARCHAR (255),
   state VARCHAR(255),
-  zip_code VARCHAR(255)
+  zip_code VARCHAR(255),
+  estate_type_id INT,
+  FOREIGN KEY (estate_type_id) REFERENCES estate_type(estate_type_id)
 );
+

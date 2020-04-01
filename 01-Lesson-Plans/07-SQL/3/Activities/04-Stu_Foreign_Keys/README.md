@@ -12,9 +12,7 @@ Complete the following:
 
   * [estates.csv](Resources/estates.csv)
 
-* Create an `owners` table with an owner `first_name` and `last_name`.
-
-* Create a `estates` table with a foreign key that references a field in the original `owners` table.
+* Make sure that the `estates` table contains an `owner_id` foreign key that references the `owner_id` column in the `owners` table.
 
 * Test foreign keys by writing a query to insert data in the `estates` table that does not have a reference ID in the `owners` table.
 
@@ -23,6 +21,18 @@ Complete the following:
 ## Hint
 
 Think about how you can select certain columns in a table. Use those columns as a reference to insert data into a table.
+
+## Bonus
+
+* Use the provided CSV files to create a `estate_type` and `estates_new` table:
+
+  * [estate_type.csv](Resources/estate_type.csv)
+
+  * [estates_new.csv](Resources/estates_new.csv)
+
+* Make sure that the `estates_new` table contains an `estate_type_id` foreign key that references the `estate_type_id` column in the `estate_type` table.
+
+* Join all three `owners`, `estates_new`, and `estate_type` tables together.
 
 ---
 

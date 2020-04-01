@@ -258,7 +258,7 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
     customer_id INTEGER NOT NULL,
     email VARCHAR(30) NOT NULL,
     PRIMARY KEY (email_id),
-    FOREIGN KEY (customer_id) REFERENCES customer(id)
+    FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
   );
   ```
 
@@ -269,8 +269,8 @@ Slack out the schema.sql, seed.sql, and query.sql files for students to follow a
       customer_phone_id SERIAL,
       phone VARCHAR(30) NOT NULL,
       customer_id INTEGER NOT NULL,
-      PRIMARY KEY (customer_phone),
-      FOREIGN KEY (customer_id) REFERENCES customer(id)
+      PRIMARY KEY (customer_phone_id),
+      FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
   );
   ```
 
@@ -306,7 +306,7 @@ Recap the following:
 
 * The `customer_id` column in both the `customer_email` and `customer_phone` tables are designed to contain the same `customer_id` data in the `customer` table. This is due to the foreign key relationship in which the `customer_id` of the `customer` table is linked.
 
-* SQL will throw an error if an attempt is made to change an `customer_id` in one table but not the other.
+* SQL will throw an error if an attempt is made to change a `customer_id` in one table but not the other.
 
 * Foreign key columns need to be named appropriately in order to clarify the data they are referring to.
 
@@ -314,7 +314,7 @@ Students should now understand how to create foreign keys, as well as how to use
 
 * Foreign keys allow tables to be consistent and avoid issues caused by inserting, deleting, or updating one table without making those same changes in the other tables.
 
-* When attempting to insert a row into the new table with an `customer_id` that does not exist in the other table, an error will be returned.
+* When attempting to insert a row into the new table with a `customer_id` that does not exist in the other table, an error will be returned.
 
   ```sql
   INSERT INTO customer_email
@@ -327,7 +327,7 @@ Students should now understand how to create foreign keys, as well as how to use
 
 * Explain that the `customer_id` column is a foreign key that is assigned to the `customer_id` column in the `customer` table. The `customer_id` 5 doesn't exist in the `customer` table and therefore can't be referenced in the `customer_email` table.
 
-* Next, a new row is inserted into `customer` that will have a `customer_id` of 5. Now a row can be inserted into `customer_email` with a `customer_id` of 5 because it corresponds with a `customer_id` in the `customer` table.
+* Next, a new row is inserted into `customer` that will have a `customer_id` of 5 (due to `customer_id` being a serial or incremental primary key). Now a row can be inserted into `customer_email` with a `customer_id` of 5 because it corresponds with a `customer_id` in the `customer` table.
 
   ```sql
   INSERT INTO customer

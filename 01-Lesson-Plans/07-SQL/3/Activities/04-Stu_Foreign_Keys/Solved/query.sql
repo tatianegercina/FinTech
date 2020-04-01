@@ -11,7 +11,7 @@ VALUES
 INSERT INTO owners
 (owner_id, first_name, last_name)
 VALUES
-(10, 'David', 'Stone')
+(10, 'David', 'Stone');
 
 -- Re-attempt to insert data with referential integrity
 INSERT INTO estates
@@ -36,8 +36,8 @@ FROM owners
 INNER JOIN estates ON owners.owner_id = estates.owner_id;
 
 -- BONUS
-SELECT * FROM estate_type
-SELECT * FROM estates_new
+SELECT * FROM estate_type;
+SELECT * FROM estates_new;
 
 -- Join all three tables
 SELECT *
