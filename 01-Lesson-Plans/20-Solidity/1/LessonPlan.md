@@ -432,7 +432,7 @@ Open Ganache and ask the students the following questions:
 
  **Answer** Transactions happen right away.
 
-* How might remix make it easier to write smart contracts?
+* How might Remix make it easier to write smart contracts?
 
  **Answer** You can write a smart contract from pretty much any browser.
 
@@ -462,15 +462,15 @@ Try to conceptualize what is happening in the graphic.
 
 * The Ethereum Virtual Machine is a sandboxed environment backed by a virtual stack and capable of performing calculations. There's an EVM embedded within every Ethereum full node on the Ethereum network. Since code executes inside the sandboxed processes of the Ethereum node, machine code remains isolated from the host machine. Let's break down the levels of the following graphic.
 
-* Higher-level language
+* High-level language
 
- * Solidity is the `Higher Level Language` of the EVM.
+ * Solidity is the `High-level language` of the EVM.
 
- * A higher level language allows code to be written that is independent of a particular computer's hardware.
+ * A high-level language allows code to be written that is independent of a particular computer's hardware.
 
- * A higher level language is a language that is more easily understandable for humans than machine code.
+ * A high-level language is a language that is more easily understandable for humans than machine code.
 
- * A higher level language cannot be understood by a computer; it has to be compiled to machine code by the compiler before it can be understood.
+ * A high-level language cannot be understood by a computer; it has to be compiled to machine code by the compiler before it can be understood.
 
 * Machine Code
 
@@ -581,13 +581,13 @@ Open the lesson slides, move to the "Unveiling Decentralized Apps" section and h
 
 * According to the Fluence Labs' report, the major obstacle to dApps adoption is new users onboarding.
 
-Continue with lesson slides and ask the following question to students:
+Continue with the lesson slides and ask the following question to students:
 
-* If you were about to start a dApp program, how will you boost your new users' base?
+* If you were about to start a dApp program, how would you boost your new users' base?
 
-If no-one answers the question, ask for a volunteer from the blockchain enthusiast in class to share her or his insights. You may conclude with the following example.
+If no one answers the question, ask for a volunteer from the blockchain enthusiasts in class to share her or his insights. You may conclude with the following example:
 
-* From radio to television and now the internet, every new disrupting technology has faced adoption challenges. In the end, part of the solution has been to ease how people use technology. In other words, improving the user experience may increase the new user base.
+* From radio to television, and now the internet, every new disruptive technology has faced adoption challenges. In the end, part of the solution has been to ease how people use technology. In other words, improving the user experience may increase the new user base.
 
 Open your browser and navigate to the [State Of The Dapps website](https://www.stateofthedapps.com/). Explain to students that this platform showcases a panorama of the dApps ecosystem and ranks the dApps based on an analysis of GitHub activity.
 
@@ -605,11 +605,11 @@ In the navigation menu at the top, click on the "All DApps" option, and highligh
 
 * We may be interested in those projects that are `live`.
 
-Click on the "Rankings" option in the navigation menu and explain to the students that using this option, they can navigate through the dApps listing according to the rank given by the website's statistics.
+Click on the "Rankings" option in the navigation menu, and explain to the students that by using this option, they can navigate through the dApps listing according to the rank given by the website's statistics.
 
 ![State Of The Dapps - 3](Images/state-of-the-daps-3.png)
 
-* The rank is updated daily, and it's based on multiple factors including active users (unique source addresses in transactions to DApp contracts), transaction volume, developer activity, profile freshness and strength, and user recommendations.
+* The rank is updated daily and based on multiple factors, including active users (unique source addresses in transactions to DApp contracts), transaction volume, developer activity, profile freshness and strength, and user recommendations.
 
 * The results can be filtered by `platform` and `category`.
 
@@ -623,7 +623,7 @@ Continue by visiting the "Stats" section from the navigation menu and highlight 
 
 * This information can be used to benchmark the current state of the dApps ecosystem, as well as to analyze trends by a specific sector.
 
-In the search box at the top, look for the `nexo` project, explain to students that you are going to talk about one project that is doing a worth to mention work on attracting new users through improving user experience.
+In the search box at the top, look for the `nexo` project. Explain to students that you are going to talk about one project that is doing a worth to mention work on attracting new users through improving user experience.
 
 ![State Of The Dapps - 5](Images/state-of-the-daps-5.gif)
 
