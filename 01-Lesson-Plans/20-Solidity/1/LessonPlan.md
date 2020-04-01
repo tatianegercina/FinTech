@@ -679,7 +679,7 @@ Tell students that they will answer this question in the next activity. Now, con
 
 In this dApp demo, students will learn how they can use a dApp by transferring `ETH` to use the service provided by the dApp using MetaMask. Explain to students that this is how they would normally interact with a dApp.
 
-Open your browser and navigate to https://www.akta.io/. Akta is a cloud file storage service that uses the `Ropsten` test network to work, so you should be sure that you have `ETH` in your wallet in this test network if you don't have any token in this test network, refer to the ["Getting Ropsten Tokens Guide"](../Instructor_Support/getting-ropsten-tokens.md) in the Instructor Support folder.
+Open your browser and navigate to https://www.akta.io/. Akta is a cloud file storage service that uses the `Ropsten` test network to work, so be sure that you have `ETH` in your wallet in this test network, if you don't have any token in this test network, refer to the ["Getting Ropsten Tokens Guide"](../Instructor_Support/getting-ropsten-tokens.md) in the Instructor Support folder.
 
 Once you open the Akta website, follow the next steps to conduct the demo.
 
@@ -693,14 +693,14 @@ Once you open the Akta website, follow the next steps to conduct the demo.
 
  ![State Of The Dapps - 13](Images/state-of-the-daps-13.png)
 
-4. You will see a pop-up window where MetaMask is asking you for permissions to connect Akta your account, click on the "Connect" button to continue.
+4. You will see a pop-up window where MetaMask asks for permission to connect Akta to your account. Click on the "Connect" button to continue.
 
  ![State Of The Dapps - 14](Images/state-of-the-daps-14.png)
 
  * DApps will typically request access to this connection before using it. Since the wallet address is unique, dApps can use it as login credentials. The connection is then securely made through the selected Ethereum network.
 
 
-5. Next, you are asked to sign the Smart Contract to continue the connection process, click on the "Sign" button to proceed.
+5. Next, you are asked to sign the smart contract to continue the connection process; click on the "Sign" button to proceed.
 
  ![State Of The Dapps - 15](Images/state-of-the-daps-15.png)
 
@@ -710,32 +710,32 @@ Once you open the Akta website, follow the next steps to conduct the demo.
 
 7. Now, we are going to upload a document to show how the transactions work. Click on the "Add" button to upload a file.
 
-8. On the next page, you have to choose the file to upload. Optionally, you can send an e-mail to any person if you want to share this file. However, we will omit this part in this demo. Click on the "Choose File" button and select any file from your local computer (you may upload a generic picture for this demo). Continue by clicking the `Upload` button.
+8. On the next page, you have to choose the file to upload. Optionally, you can send an email to any person if you want to share this file. However, we will omit this part in this demo. Click on the "Choose File" button and select any file from your local computer (you may upload a generic picture for this demo). Continue by clicking the `Upload` button.
 
  ![State Of The Dapps - 17](Images/state-of-the-daps-17.png)
 
-9. You will be warned that the document has no signature. Since this file is for personal usage, we can proceed by clicking on the `OK` to continue.
+9. You will be warned that the document has no signature. Since this file is for personal usage, we can proceed by clicking on `OK` to continue.
 
  ![State Of The Dapps - 18](Images/state-of-the-daps-18.png)
 
-10. Next, you have to assign a name to the file, type the name of your choice, and click "OK" to continue. You can only use letters and numbers.
+10. Next, you have to assign a name to the file. Type the name of your choice, and click "OK" to continue. You can only use letters and numbers.
 
  ![State Of The Dapps - 19](Images/state-of-the-daps-19.png)
 
 11. In the next dialog box, you will be informed that your file is going to be uploaded to the blockchain, so the process is going to take some time. Click on the "OK" button to continue.
 
  ![State Of The Dapps - 20](Images/state-of-the-daps-20.png)
- The upload time depends on your internet connection speed and the current state of the blockchain workload; it takes less than one minute while preparing this demo with a `3.2 MB` file in a WiFi connection with `10 mbps` upload rate, for the class demo you may use a smaller image file or a text file.
+The upload time depends on your internet connection speed and the current state of the blockchain workload; it takes less than one minute while preparing this demo with a `3.2 MB` file in a WiFi connection with `10 mbps` upload rate. For the class demo you may use a smaller image file or a text file.
 
-12. You are going to be asked to sign the file upload transaction using MetaMask, click on the "Sign" button to proceed.
+12. Now, you will be asked to sign the file upload transaction using MetaMask; click on the "Sign" button to proceed.
 
  ![State Of The Dapps - 21](Images/state-of-the-daps-21.png)
 
-13. Next, you are asked to pay in `ETH` for the transaction using your wallet in MetaMask. You may note that the transaction is free. Still, you are requested to pay the `GAS` fee. This is the particular case for this dApp, explain to students that generally transactions in dApps will incur in costs to be paid in `ETH` in addition to the correspondent `GAS` fee. Click on the "Confirm" button to continue.
+13. Next, you are asked to pay in `ETH` for the transaction using your wallet in MetaMask. You may note that the transaction is free. Still, you will be requested to pay the `GAS` fee, which is the particular case for this dApp. Tell students that generally, transactions in dApps will incur costs to be paid in `ETH` in addition to the correspondent `GAS` fee. Click on the "Confirm" button to continue.
 
  ![State Of The Dapps - 22](Images/state-of-the-daps-22.png)
 
-14. After confirming the transaction fee, you will be lead to the Akta home page where you can see your file uploaded to the blockchain.
+14. After confirming the transaction fee, you will be led to the Akta home page where you will see your file uploaded to the blockchain.
 
  ![State Of The Dapps - 23](Images/state-of-the-daps-23.png)
 
@@ -745,7 +745,7 @@ End the activity by explaining to students that the goal of these two dApps demo
 
 * Akta is a dApp with a frontend created to interact with the user and allow transactions using MetaMask.
 
-* We use the `Ropsten` test network in this demo, however, dApps that are monetizing their services use the Ethereum main network, so you have actually to pay for the services those dApps provide.
+* We use the `Ropsten` test network in this demo. However, dApps that are monetizing their services use the Ethereum main network, so you actually have to pay for the services those dApps provide.
 
 Answer any questions before moving on.
 
@@ -755,7 +755,7 @@ Answer any questions before moving on.
 
 In this activity, students will visit [The State Of The Dapps website](https://www.stateofthedapps.com/) to explore the many dApps that exist in the blockchain ecosystem. Students will work in groups up to three people to research and to analyze a dApps from any sector from their interest.
 
-Students will be encouraged to use MetaMask when possible, and write down a short report on their research.
+Students will be encouraged to use MetaMask when possible, and write a short report on their research.
 
 Have TAs circulate the classroom to help students and foster collaboration in each group.
 
@@ -767,11 +767,11 @@ Have TAs circulate the classroom to help students and foster collaboration in ea
 
 ### 15. Instructor Do: State Of The Dapps Review (10 min)
 
-In this activity, conduct a facilitated discussion to allow the students to share their findings after the previous research activity.
+Now you will conduct a facilitated discussion to allow students to share their findings regarding the previous research activity.
 
-Remind students that Ethereum is one of the most used blockchains to create and deploy dApps. This is because Ethereum is more than a Cryptocurrency. It also offers a complete development framework to support different use cases.
+Remind students that Ethereum is one of the most used blockchains to create and deploy dApps. This is because Ethereum is more than a cryptocurrency; it also offers a complete development framework to support different use cases.
 
-Use this activity's time to allow all groups to share their findings regarding the following questions:
+Use this time to allow all groups to share their findings regarding the following questions:
 
 * Why did this dApp catch your attention?
 
@@ -797,7 +797,7 @@ In this activity, students will get a big-picture overview of the homework.
 
 * [README.md](../../../02-Homework/20-Solidity/Instructions/README.md)
 
-Open the Unit 20 homework assignment instruction and briefly demo the homework instructions for students. Be sure to highlight the following:
+Open the instructions for the Unit 20 homework assignment and do a brief demo for students. Be sure to highlight the following:
 
 * The goal of this homework assignment is to use Solidity to define, create, and deploy a smart contract that allows business owners to split profits between themselves automatically.
 
@@ -809,9 +809,9 @@ Open the Unit 20 homework assignment instruction and briefly demo the homework i
 
 * Starter code is provided that includes contract boilerplate to help you get off the ground.
 
-* There are 3 Levels of difficulty for this assignment. You can do all of them with the skills you have learned this unit, so try to finish all 3!
+* There are three levels of difficulty for this assignment. You can do all of them with the skills you have learned in this unit, so try to finish all three!
 
-Explain to students that this will be an excellent opportunity to gain hands-on experience in creating and deploying smart contracts using Solidity.
+Explain to students that this is an excellent opportunity to gain hands-on experience in creating and deploying smart contracts using Solidity.
 
 Answer any questions before moving on.
 
@@ -819,11 +819,11 @@ Answer any questions before moving on.
 
 ### 17. Instructor Do: Recap (5 min)
 
-Congratulate students on completing their first day on smart contracts! End the class by briefly reviewing the main concepts of the day, Smart Contracts and dApps.
+Congratulate students on completing their first day on smart contracts! End the class by briefly reviewing the main concepts of the day, smart contracts and dApps.
 
 Ask students to provide a definition of a smart contract and a dApp and then provide the following definitions:
 
-* Smart contracts are computer programs that run on the blockchain, that allow for any computation. They are mainly used to allow credible transaction of digital assets under certain conditions without third parties.
+* Smart contracts are computer programs that run on the blockchain and allow for any computation. They are mainly used to allow credible transactions of digital assets under certain conditions, without third parties.
 
 * A dApp is a software application that has a decentralized operation and uses decentralized storage or database.
 
@@ -831,8 +831,8 @@ Ask students to provide a definition of a smart contract and a dApp and then pro
 
 Explain to students that we will begin to learn how to program smart contracts in Ethereum using the Solidity programming language.
 
-By the end of this Unit, students will be writing their custom smart contracts and dApps for Ethereum!
+By the end of this unit, students will be writing their custom smart contracts and dApps for Ethereum!
 
 ### End Class
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
