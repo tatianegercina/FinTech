@@ -1,13 +1,21 @@
-## Mine the Subqueries
+# Mine the Subqueries
 
 In this activity, you will continue to practice subqueries. Work individually or in pairs. You can use the [ERD](http://www.postgresqltutorial.com/postgresql-sample-database/) for help with the queries.
 
-### Instructions
+## Instructions
 
-* Using subqueries, identify all actors who appear in the film *Alter Victory* in the `pagila` database.
+* Using subqueries, find the titles of films that the employee `Jon Stephens` rented to customers.
 
-* Using subqueries, display the titles of films that the employee Jon Stephens rented to customers.
+  * The results should be similar to the following:
+
+  ![jon-stephens](Images/jon-stephens.png)
+
+* Using subqueries, find the total rental amount paid for the film `ACE GOLDFINGER`
+
+  * The results should be similar to the following:
+
+  ![ace-goldfinger](Images/ace-goldfinger.png)
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -18,19 +18,27 @@ PostgreSQL additionally provides a Command Line Interface (CLI) to not only acce
 
 In order to access the postgreSQL CLI, you'll have to first set the `PATH` environment variable to point to the postgreSQL binaries. Windows users will have to use the Command Prompt as Git Bash has issues with the psql CLI. When ready, run one of the following commands depending on your operating system:
 
-* Mac OS: `export PATH="$PATH:/Library/PostgreSQL/12/bin"`.
-* Windows: `SET PATH="%PATH%;C:\Program Files\PostgreSQL\12\bin"`
+* Mac OS: `export PATH=$PATH:/Library/PostgreSQL/12/bin`.
+* Windows: `SET PATH=%PATH%;C:\Program Files\PostgreSQL\12\bin`
 
-**Note:** At the time of this writing, PostgreSQL has been updated to version 12. Therefore, if your PostgreSQL version is still on 11, then you paths may be the following instead:
+**Note:** At the time of this writing, PostgreSQL has been updated to version 12. Therefore, if your PostgreSQL version is still on 11, then your paths may be the following instead:
 
 * Mac OS: `/Library/PostgreSQL/11/bin`
 * Windows: `C:\Program Files\PostgreSQL\11\bin`
+
+Make sure to check that the PATH changes have gone into effect; use the respective `ECHO` syntax for your operating system to query the contents of the environmental `PATH` variable. You may have to restart your terminal for changes to go into effect.
 
 ![export-psql-path](Images/export-psql-path.png)
 
 ![export-psql-path-windows](Images/export-psql-path-windows.PNG)
 
-Now navigate to the folder containing the .sql file and run the following command: `psql -U postgres -d animals_db -f bird_song.sql`.
+Now navigate to the folder containing the .sql file and run the following command:
+
+`psql -U <username> -d <database> -f <sql-file>`.
+
+In this case, the command should be the following:
+
+`psql -U postgres -d mortgage_db -f seed.sql`.
 
 * `psql`: The postgreSQL CLI
 * `-U` : The username of the postgreSQL account.
@@ -63,7 +71,11 @@ Database connection strings often consist of the following parameters:
 
 The database connection string in this case was the following:
 
-* `postgresql://postgres:postgres@localhost:5432/animals_db`
+* `postgresql://postgres:postgres@localhost:5432/mortgage_db`
+
+Then, instantiate a connection to the database by using the newly created database connection string with the `create_engine` function.
+
+![create-engine](Images/create-engine.png)
 
 Finally, now that the connection to the PostgreSQL database has been established, the `to_sql` function can be used to write DataFrame contents to the specified PostgreSQL table. The `to_sql` function uses the following parameters:
 
