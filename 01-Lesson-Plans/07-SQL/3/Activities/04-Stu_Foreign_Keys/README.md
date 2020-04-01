@@ -6,6 +6,8 @@ In this activity, you will create and populate two new tables with foreign keys 
 
 Complete the following:
 
+* Create a database called `estate_db`.
+
 * Use the provided CSV files to create and populate the `owners` and `estates` tables:
 
   * [owners.csv](Resources/owners.csv)

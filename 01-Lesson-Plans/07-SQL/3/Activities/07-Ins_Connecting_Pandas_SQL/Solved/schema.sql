@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS owners;
-DROP TABLE IF EXISTS estates;
-DROP TABLE IF EXISTS estate_type;
+DROP TABLE IF EXISTS owners CASCADE;
+DROP TABLE IF EXISTS estates CASCADE;
+DROP TABLE IF EXISTS estate_type CASCADE;
 DROP TABLE IF EXISTS estates_new CASCADE;
 
 -- Create owners table and insert values
