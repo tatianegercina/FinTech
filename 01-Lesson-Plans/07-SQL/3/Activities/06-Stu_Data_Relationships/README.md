@@ -8,23 +8,21 @@ You are a database consultant at a national real estate firm. Your job is to des
 
 * Begin by creating a new database named `agent_db`.
 
-* Create a `agent` table that keeps track of the following:
+* Use the following CSV files to create and insert data for the `agents`, `regions`, and `agent_region_junction` tables:
 
-  * Unique ID number of each agent.
+  * [agents.csv](Resources/agents.csv)
 
-  * First and last names of each agent.
+  * [regions.csv](Resources/regions.csv)
 
-* Create a `region` table that keeps track of the following:
+  * [agent_region_junction.csv](Resources/agent_region_junction.csv)
 
-  * Unique ID number of each region.
+* Create an `agent_region_junction` table that contains the following:
 
-  * Name of each region.
+  * A foreign key relationship with the `agent_id` column in the `agents` table.
 
-* Create a `agent_region_junction` table that keeps track of the following:
+  * A foreign key relationship with the `region_id` column in the `regions` table.
 
-  * All regions that have been assigned to each agent.
-
-* Determine the data model that is appropriate here: one to one, one to many, or many to many.
+  * A composite or multi-key primary key `agent_id` and `region_id`.
 
 ## Bonus
 

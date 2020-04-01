@@ -571,6 +571,12 @@ Ask if there are any questions before moving on.
 
 In this activity, students will create table schemata for agents and regions, and then create a junction table to display all regions assigned to agents.
 
+**Files:**
+
+* [agents.csv](Activities/06-Stu_Data_Relationships/Resources/agents.csv)
+
+* [regions.csv](Activities/06-Stu_Data_Relationships/Resources/regions.csv)
+
 **Instructions:** [README.md](Activities/06-Stu_Data_Relationships/README.md)
 
 ### 10. Instructor Do: Review Data Relationships (5 min)
@@ -620,7 +626,7 @@ Use the schema.sql and seed.sql files to walk through the creation and populatio
 
 * This table bridges the two previous tables and shows all regions managed by each agent.
 
-* The primary key will be a composite of both IDs.
+* The primary key will be a composite key of both IDs.
 
 Query the table to display the result.
 
