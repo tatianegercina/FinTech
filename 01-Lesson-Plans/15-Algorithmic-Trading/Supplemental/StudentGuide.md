@@ -111,7 +111,7 @@ The dual moving average crossover can be created by using Pandas functionality. 
 <img src=Images/signals_df.PNG width=150>
 <blockquote>
 <details>
-<summary>Starting Point</summary><br>
+<summary>Step One: Signal, STMA, and LTMA Columns</summary><br>
 
 First we initialize a `Signals` column, then create our short and long term moving average columns using the `.rolling()` and `.mean()` methods:
 
@@ -130,10 +130,10 @@ signals_df.tail()
 <img src=Images/signals_df_sma.PNG width=250>
 <br>
 
-<br>
-</details>
+
+</details><br>
 <details>
-<summary>Next Point</summary><br>
+<summary>Step Two: Creating the Signal Values</summary><br>
 
 
 Next we create the signals themselves using `np.where()`.  The code begins at the start of the short rolling window because the values prior to that are null.  We accomplish this by slicing the column with a colon after the short_window variable: `signals_df[short_window:]`.  The complete code loos like this:
@@ -149,13 +149,14 @@ Don't let the above code confuse you!  It is simply checking if the STMA is smal
 <img src=Images/signals_df_values.PNG width=350>
 </details><br>
 <details>
-<summary>Third Point</summary><br>
+<summary>Step Three: Creating the Entry/Exit Points</summary><br>
+
 The next step is to take the `.diff()` of the `Signals` column and add it to the DataFrame.  Remember, `.diff` just subtracts one cell from the previous and provides the difference:
 
 <img src=Images/signals_df_diff.PNG width=350>
 </details><br>
 <details>
-<summary>Final Point</summary><br>
+<summary>Step Four: Visualizing the Indicators</summary><br>
 
 Finally, the entry/exit points can be visualized using the following code:
 ```python
