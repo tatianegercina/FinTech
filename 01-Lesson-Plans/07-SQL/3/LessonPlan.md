@@ -636,7 +636,7 @@ Query the table to display the result.
 
 To reinforce the many-to-many relationship, point out that many agents can be assigned many regions.
 
-For the bonus, briefly explain that two outer joins can be performed to retrieve complete data on each agent.
+For the bonus, briefly explain that two left outer joins can be performed to retrieve complete data on each agent.
 
   ```sql
   SELECT *
