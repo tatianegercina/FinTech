@@ -627,7 +627,7 @@ In the search box at the top, look for the `nexo` project. Explain to students t
 
 ![State Of The Dapps - 5](Images/state-of-the-daps-5.gif)
 
-* Nexo is an instant crypto lending provider on a global scale, servicing more than 40 currencies across more than 200 jurisdictions.
+* Nexo is a global, instant crypto lending provider, servicing more than 40 currencies across more than 200 jurisdictions.
 
 Click on the "Launch DApp/website" button below the logo of Nexo on the right side to open the project's website and highlight the following:
 
@@ -639,27 +639,27 @@ Click on the "Launch DApp/website" button below the logo of Nexo on the right si
 
  ![State Of The Dapps - 6](Images/state-of-the-daps-6.png)
 
-Explain to students that as it can be seen so far, this project is trying to disrupt in the banking sector by offering a solution to earn interest with cryptocurrency savings and offering an automated line of credit.
+Explain to students that so far, it appears that this project is trying to disrupt the banking sector by offering a solution to earn interest with cryptocurrency savings as well as offering an automated line of credit.
 
-Go further with the demo, click on the "Create Account" button in the upper right corner, and follow the next steps.
+Go further with the demo; click on the "Create Account" button in the upper right corner, and follow the next steps.
 
 ![State Of The Dapps - 7](Images/state-of-the-daps-7.png)
 
-**Note:** You may want to use a testing e-mail account for this demo.
+**Note:** You may want to use a testing email account for this demo.
 
-* To create an account, enter your e-mail and password. Solve the verification challenge and click on the "Sign Up" button.
+* To create an account, enter your email and password. Solve the verification challenge and click on the "Sign Up" button.
 
  ![State Of The Dapps - 8](Images/state-of-the-daps-8.png)
 
-* After entering your account details, you will see the next page asking for verification of your e-mail account.
+* After entering your account details, you will see the next page asking for verification of your email account.
 
  ![State Of The Dapps - 9](Images/state-of-the-daps-9.png)
 
-* Open your inbox, verify your e-mail address using the message you received from Nexo. This link will redirect you to the following confirmation page.
+* Open your inbox, verify your email address using the message you received from Nexo. This link will redirect you to the following confirmation page.
 
  ![State Of The Dapps - 10](Images/state-of-the-daps-10.png)
 
-* After clicking on the "Continue to your Nexo Account", you will have instant access to your brand new account.
+* After clicking on "Continue to your Nexo Account", you will have instant access to your brand new account.
 
  ![State Of The Dapps - 11](Images/state-of-the-daps-11.gif)
 
@@ -671,13 +671,13 @@ Go further with the demo, click on the "Create Account" button in the upper righ
 
 Explain to students that this is a demonstration of how a traditional service (saving money and having a credit card) can be simplified and disrupted using the same blockchain technology they are learning in class.
 
-Ask students the following rhetoric question:
+Ask students the following rhetorical question:
 
-* How could you disrupt in any other sector than finance creating a dApp?
+* How could you disrupt a sector besides finance by creating a dApp?
 
-Comment to students that they will answer to this question in the next activity and continue with the next dApp demo.
+Tell students that they will answer this question in the next activity. Now, continue with the next dApp demo.
 
-In the next dApp demo, students will learn how they can use a dApp by transferring `ETH` to use the service provided by the dApp using MetaMask, explain to students that this is how normally they will interact with a dApp.
+In this dApp demo, students will learn how they can use a dApp by transferring `ETH` to use the service provided by the dApp using MetaMask. Explain to students that this is how they would normally interact with a dApp.
 
 Open your browser and navigate to https://www.akta.io/. Akta is a cloud file storage service that uses the `Ropsten` test network to work, so you should be sure that you have `ETH` in your wallet in this test network if you don't have any token in this test network, refer to the ["Getting Ropsten Tokens Guide"](../Instructor_Support/getting-ropsten-tokens.md) in the Instructor Support folder.
 
