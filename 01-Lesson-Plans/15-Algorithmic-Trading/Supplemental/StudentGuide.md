@@ -106,9 +106,12 @@ In the following candlestick chart for Bitcoin, you can see the dual moving aver
 <details>
 <summary>How to create it:</summary><br>
 
-The dual moving average crossover can be created by using Pandas functionality.  In the following example, we'll begin with a simple data frame with a datetime index and column of closing stock prices:
+The dual moving average crossover can be created by using Pandas functionality.  In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.
 
 <img src=Images/signals_df.PNG width=150>
+<blockquote>
+<details>
+<summary>Starting Point</summary><br>
 
 First we initialize a `Signals` column, then create our short and long term moving average columns using the `.rolling()` and `.mean()` methods:
 
@@ -125,6 +128,13 @@ signals_df['SMA100'] = signals_df['Close'].rolling(window=long_window).mean()
 signals_df.tail()
 ```
 <img src=Images/signals_df_sma.PNG width=250>
+<br>
+
+<br>
+</details>
+<details>
+<summary>Next Point</summary><br>
+
 
 Next we create the signals themselves using `np.where()`.  The code begins at the start of the short rolling window because the values prior to that are null.  We accomplish this by slicing the column with a colon after the short_window variable: `signals_df[short_window:]`.  The complete code loos like this:
 ```python
@@ -137,10 +147,15 @@ signals_df["Signal"][short_window:] = np.where(
 Don't let the above code confuse you!  It is simply checking if the STMA is smaller than the LTMA and inserted a 1 if it is.  A small snippet of the values generated can be seen below:
 
 <img src=Images/signals_df_values.PNG width=350>
-
+</details><br>
+<details>
+<summary>Third Point</summary><br>
 The next step is to take the `.diff()` of the `Signals` column and add it to the DataFrame.  Remember, `.diff` just subtracts one cell from the previous and provides the difference:
 
 <img src=Images/signals_df_diff.PNG width=350>
+</details><br>
+<details>
+<summary>Final Point</summary><br>
 
 Finally, the entry/exit points can be visualized using the following code:
 ```python
@@ -179,6 +194,9 @@ entry_exit_plot.opts(xaxis=None)
 ```
 <img src=Images/signals_df_plot.PNG width=800>
 
+</details><br>
+</blockquote>
+</details>
 </details>
 </blockquote>
 </details>
