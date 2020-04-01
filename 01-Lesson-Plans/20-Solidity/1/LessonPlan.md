@@ -153,7 +153,7 @@ The only way to not excel at this exercise is to not participate in the research
 
 ### 4. Instructor Do: Smart Contracts in Action Review (5 min)
 
-Conduct a facilitated discussion by asking a couple of groups to share their conclusions and insights about the use cases they reviewed, focusing on discussing with the class which features they noticed are compliant with the criteria from ["The General Theory of Decentralized Applications"](https://github.com/DavidJohnstonCEO/DecentralizedApplications).
+Conduct a facilitated discussion by asking a couple of groups to share their conclusions and insights about the use cases they reviewed. Focus on discussing which features they noticed are compliant with the criteria from ["The General Theory of Decentralized Applications"](https://github.com/DavidJohnstonCEO/DecentralizedApplications).
 
 * Decentralized operation: open-source code, autonomous operation, consensus of its users.
 
@@ -163,13 +163,13 @@ Conduct a facilitated discussion by asking a couple of groups to share their con
 
 * Token generation: tokens as proof of value, generated through a cryptographic algorithm.
 
-Have groups share a few items on the lists of features they curated, answer any questions before moving on.
+Have groups share a few items on the lists of features they curated. Answer any questions before moving on.
 
 ---
 
 ### 5. Everyone Do: Installing MetaMask (10 min)
 
-In this activity, the instructor will have the class installing the [MetaMask](https://metamask.io/) browser extension, and import their mnemonics to enable dApp support on their web browsers.
+In this activity, the instructor will have students install the [MetaMask](https://metamask.io/) browser extension, and import their mnemonics to enable dApp support on their web browsers.
 
 Open the lesson slides, move to the `Installing MetaMask` section, and highlight the following:
 
@@ -177,33 +177,33 @@ Open the lesson slides, move to the `Installing MetaMask` section, and highlight
 
 * We are going to use MetaMask to run our dApps and make transfers to our blockchains.
 
-Slack out the MetaMask web address to students (https://metamask.io/), open the URL in your browser, and ask students to follow you along the installation process.
+Slack out the MetaMask web address to students (https://metamask.io/), open the URL in your browser, and ask students to follow along with the installation process.
 
 ![MetaMask installation - 1](Images/metamask-1.png)
 
 Explain to students that since MetaMask is a web browser extension, it will run seamlessly in any operating system.
 
-* When you navigate to the MetaMask's URL, your browser will be automatically detected, if not, choose the correct version.
+* When you navigate to the MetaMask's URL, your browser will be automatically detected. If not, choose the correct version.
 
-* The Google Chrome extension is going to be used in this demo.
+* The Google Chrome extension will be used in this demo.
 
-Click on the `Get Chrome Extension` link, a new window is going to be opened where you will be able to install the MetaMask extension from the Chrome Web Store.
+Click on the `Get Chrome Extension` link. A new window will open where you will install the MetaMask extension from the Chrome Web Store.
 
 ![MetaMask installation - 2](Images/metamask-2.png)
 
-Click on the `Add to Chrome` button to start the installation process.
+Click the `Add to Chrome` button to start the installation process.
 
 Next, a pop-up window will be opened where you have to click on the `Add Extension` button to continue.
 
 ![MetaMask installation - 3](Images/metamask-3.png)
 
-When the `Welcome to MetaMask` website opens, explain to students that they should see a small `fox icon` in the toolbar if MetaMask was successfully installed in their web browsers.
+When the `Welcome to MetaMask` website opens, tell students that they should see a small `fox icon` in the toolbar if MetaMask was successfully installed in their web browsers.
 
 ![MetaMask installation - 4](Images/metamask-4.png)
 
 To start configuring your MetaMask account, click on the `Get Started` button.
 
-Explain to students that we will import the wallet that runs in our local blockchain.
+Tell students that we will import the wallet that runs in our local blockchain.
 
 Click on the `Import Wallet` button to continue.
 
@@ -213,13 +213,13 @@ Explain the following points about the usage agreement:
 
 * The usage agreement is where the MetaMask team asks you to collaborate on improving the tool.
 
-* This agreement to participate is optional and is a personal choice.
+* This agreement to participate is optional, and a personal choice.
 
 ![MetaMask installation - 6](Images/metamask-6.png)
 
-In the next window, explain to students that they should enter the twelve word mnemonic of their local wallet, their wallet password, and they should click on the `I have read and agree to the Terms of Use` checkbox to continue.
+In the next window, explain to students that they should enter the 12-word mnemonic of their local wallet, their wallet password, and then click the `I have read and agree to the Terms of Use` checkbox to continue.
 
-Explain to students that we can securely accept the `Terms of Use` from MetaMask. If anyone has a concern about this step, invite them to read through the terms by clicking on the link.
+Tell students that we can securely accept the `Terms of Use` from MetaMask. If anyone has a concern about this step, invite them to read through the terms by clicking on the link.
 
 ![MetaMask installation - 7](Images/metamask-7.png)
 
