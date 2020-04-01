@@ -127,9 +127,9 @@ Continue in the lesson slides, move the `Decentralized Applications` section, an
 
 * Using dApps, we can develop software applications not only for the financial sector, but also for web browsers, cloud storage, instant messaging, social networks, and even operating systems.
 
-Explain to students that this new paradigm of software development is also known as version 3 of the internet or Web 3.0. Web 1.0 was the beginning of the internet were websites were very simple with limited interactivity, and the basic tools and protocols were defined; Web 2.0 was marked by the rise of social networks and cloud computers, the new Web 3.0 is the evolution of the internet to a decentralized environment powered by blockchain technologies.
+Explain to students that this new paradigm of software development is also known as version 3 of the internet, or Web 3.0. Web 1.0 was the beginning of the internet, where websites were very simple with limited interactivity, and the basic tools and protocols were defined; Web 2.0 was marked by the rise of social networks and cloud computers. The new Web 3.0 is the evolution of the internet to a decentralized environment powered by blockchain technologies.
 
-Comment to students that in the following weeks, they will learn how to create and deploy dApps using the Ethereum platform.
+Tell students that in the following weeks, they will learn how to create and deploy dApps using the Ethereum platform.
 
 Answer any questions before moving on.
 
@@ -137,7 +137,7 @@ Answer any questions before moving on.
 
 ### 3. Student Do: Smart Contracts in Action (15 min)
 
-In this activity, students will work in groups up to three people to analyze several use cases to explore that correspond with popular types of smart contracts like tokens, notaries, supply chain, digital marketplaces, etc.
+In this activity, students will work in groups of up to three people to analyze several use cases to explore that correspond with popular types of smart contracts like tokens, notaries, supply chain, digital marketplaces, etc.
 
 Circulate through the room while students are completing the activity. Look to identify students who are actively engaging peers and digging deeper. Keep these students in mind for later, as they may be helpful to distribute among groups.
 
@@ -153,7 +153,7 @@ The only way to not excel at this exercise is to not participate in the research
 
 ### 4. Instructor Do: Smart Contracts in Action Review (5 min)
 
-Conduct a facilitated discussion by asking a couple of groups to share their conclusions and insights about the use cases their review, focus on discussing with the class which features they noticed are compliant with the criteria from ["The General Theory of Decentralized Applications"](https://github.com/DavidJohnstonCEO/DecentralizedApplications).
+Conduct a facilitated discussion by asking a couple of groups to share their conclusions and insights about the use cases they reviewed, focusing on discussing with the class which features they noticed are compliant with the criteria from ["The General Theory of Decentralized Applications"](https://github.com/DavidJohnstonCEO/DecentralizedApplications).
 
 * Decentralized operation: open-source code, autonomous operation, consensus of its users.
 
