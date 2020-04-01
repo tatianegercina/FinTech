@@ -63,9 +63,9 @@ Open the lesson slides and briefly introduce smart contracts:
 
 * Using smart contracts allow for building completely decentralized applications, called `dApps`.
 
-* Today, we will be exploring the smart contract/dApp ecosystem and getting familiar with the development tools needed to build them.
+* Today, we will explore the smart contract/dApp ecosystem, and get familiar with the development tools needed to build them.
 
-Explain to students that smart contracts are disrupting the way we understand the ownership and transference of goods, not only digital but also tangible.
+Explain to students that smart contracts are disrupting the way we understand the ownership and transfer of tangible and digital goods.
 
 This is why smart contracts are being used beyond the financial sector in government, real state, supply chain, and health care.
 
