@@ -4,21 +4,23 @@ You and Harold have developed a Python application that will extract historical 
 
 Since Quandl has cracked down on the number of API calls users can make to the service without an **API key**, acquire a Quandl API key and save it as an **environment variable**. Create Python code that retrieves the environment variable and passes the key with the request URL. This will ensure that your team can make more than 50 API calls a day, and Quandl can manage and track rate limits.
 
+Note that the .env file needs to be called exactly .env. For the example files in tehse activities you should rename the file from "dot.env" to ".env".
+
 ## Instructions
 
 ### Acquire and Store API key
 
 1. Navigate to the Quandl [Account Settings](https://www.quandl.com/account/profile) page to retrieve your API key.
 
-2. Open the [keys.sh starter file](Unsolved/keys.sh), and declare an environment variable named `QUANDL_API_KEY`. Make sure to include the export command at the beginning of the declaration.
+2. Open the [.env starter file](Unsolved/dot.env), and declare an environment variable named `QUANDL_API_KEY`.
 
-3. Execute the `keys.sh` file to export environment variables. Hint: Use the `source` command when executing the script to source the environment variables.
+3. Rename the `dot.env` file to `.env`, and then in python load the environemental variables using `load_dotenv()`
 
 ### Execute API call with API key/env variable
 
 4. Open the [Jupyter Notebook starter file](Unsolved/env_variables.ipynb), and import the Python requests and os libraries.
 
-5. Use the `os.environ.get` function to retrieve the environment variable named `QUANDL_API_KEY`. Store as a Python variable named api_key.
+5. Use the `os.getenv()` function to retrieve the environment variable named `QUANDL_API_KEY`. Store as a Python variable named api_key.
 
 6. Use the `type` function to confirm the retrieval of the API key. Hint: If `NoneType` is returned, the environment variable does not exist. Revisit steps 2 and 3.
 
