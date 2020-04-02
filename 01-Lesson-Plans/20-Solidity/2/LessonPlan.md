@@ -438,7 +438,7 @@ Answer any questions before moving on.
 
 ---
 
-### 10. Instructor Do: Storing, Catching, Withdrawing ether (10 min)
+### 10. Instructor Do: Storing, Catching, Withdrawing Ether (10 min)
 
 In this activity, we will demonstrate how to add functions for depositing ether, withdrawing ether, and a default `fallback` function that can be used to catch ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions, as well as to payable addresses in the contract.
 
@@ -552,7 +552,7 @@ Great! Now we have a fully functioning savings account contract. We can use this
 
 ---
 
-### 11. Student Do: Implementing ether Management functions (15 min)
+### 11. Student Do: Implementing Ether Management functions (15 min)
 
 In this exercise, students will be implementing a `joint savings account` contract using the ether management functions from the previous activity. By the end of this activity, students will be able to deposit and withdraw ether from their contract's address.
 
@@ -568,7 +568,7 @@ In this exercise, students will be implementing a `joint savings account` contra
 
 ---
 
-### 12. Instructor Do: Review ether Management Functions (5 min)
+### 12. Instructor Do: Review Ether Management Functions (5 min)
 
 **Files:**
 
@@ -656,7 +656,7 @@ function makeTrade(uint current_price) public {
 }
 ```
 
-* Just like Python, in Solidity an `if statement` is the keyword `if` followed by a condition that evaluates to `true` or `false`. However, unlike Python, in Solidity, the conditions are contained inside the parenthesis.
+* Just like Python, in Solidity an `if statement` is the keyword `if` followed by a condition that evaluates to `true` or `false`. However, unlike Python, in Solidity, the conditions are contained inside the parentheses.
 
 * Take note that just like when we define the body of a function in Solidity, the body of an `if statement` is also contained in curly brackets.
 
@@ -685,9 +685,9 @@ Engage the class with the following question:
 
  * **Answer**: This would be a perfect use case for our `||` (or) operator.
 
-Show the class how to modify the code to use the `||` operator to always default to buying regardless of the previous price.
+Show the class how to modify the code to use the `||` operator to always default to buying, regardless of the previous price.
 
-* First, we add a new `bool` parameter called `buy_anyway` -- when we set this to `true`, we can override the price check in the `if` statement by saying `|| buy_anyway`. In plain English, this `if` statement now says, "if the current_price is less than the previous_price, or buy_anyway is set to true, then continue."
+* First, we add a new `bool` parameter called `buy_anyway`—when we set this to `true`, we can override the price check in the `if` statement by saying `|| buy_anyway`. In plain English, this `if` statement now says, "if the current_price is less than the previous_price, or buy_anyway is set to true, then continue."
 
 * In Python, most logical operators are defined keywords in plain English like `and`, `or`, `not`. However, in Solidity (and many other languages), we have symbols like `&&`, `||`, `!`, respectively.
 
@@ -709,13 +709,13 @@ function makeTrade(uint current_price, bool buy_anyway) public {
 
 * If the `current_price` is more than the `previous_price` and we do not want to `buy_anyway`, then we are going to sell, so we move to the `else if`.
 
-* If the first two conditions evaluate to `false`, then we are going to set the `trade_type` to `Hold` because we can not currently buy or sell.
+* If the first two conditions evaluate to `false`, then we are going to set the `trade_type` to `Hold` because we cannot currently buy or sell.
 
 Now it's time for the students to use some conditionals in Solidity!
 
 ---
 
-### 14. Students Do: Using If/Else in Solidity (10 min)
+### 14. Student Do: Using If/Else in Solidity (10 min)
 
 In this activity, students will add to their `JointSavings` contract functionality that uses if/else statements.
 
