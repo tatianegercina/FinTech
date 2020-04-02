@@ -803,6 +803,18 @@ Walk through the solution and highlight the following:
 
 * The bar chart is created using `hvplot` and the `agent_region_df` DataFrame.
 
+  ```python
+  # Create the bar chart usig hvplot
+  agent_region_df.hvplot.bar(
+    x="agent_id",
+    y="region_count",
+    xlabel="Agent ID",
+    ylabel="Region Count",
+    title="Number of Regions per Agent",
+    color="region_count",
+  )
+  ```
+
   ![regions_per_agent](Images/regions_per_agent.png)
 
 * For the first bonus, in order to get the number of regions per agent full name, we will need to join to the `agents` table from the `agent_region_junction` table and use the `CONCAT` function to combine the agent `first_name` and `last_name` to form the agent full name. Then group by the concatenated agent full name.
@@ -1380,7 +1392,7 @@ Return to pgAdmin in the browser and create a new database called `mortgage_db`.
 * Lastly, execute the code and verify that the tables have been created using a `SELECT` statement for each table.
 
   ```sql
-  SELECT * FROM "Customers";
+  SELECT * FROM "Customer";
   SELECT * FROM "Banks";
   SELECT * FROM "Sales";
   SELECT * FROM "Payments";
