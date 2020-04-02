@@ -440,9 +440,9 @@ Answer any questions before moving on.
 
 ### 10. Instructor Do: Storing, Catching, Withdrawing ether (10 min)
 
-In this activity, we will demonstrate how to add functions for depositing ether, withdrawing ether, and a default `fallback` function that can be used to catch ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions as well as to payable addresses in the contract.
+In this activity, we will demonstrate how to add functions for depositing ether, withdrawing ether, and a default `fallback` function that can be used to catch ether sent from outside a function call. The `payable` modifier will be introduced and added to payable functions, as well as to payable addresses in the contract.
 
-Earlier in the day, we built a simple contract that stored variables representing a rewards/bank account balance. Let's take that a step further and build a JointSavings account smart contract that allows two addresses to manage a savings account.
+Earlier in the day, we built a simple contract that stored variables representing a rewards/bank account balance. Let's take that a step further and build a joint savings account smart contract that allows two addresses to manage a savings account.
 
 Open [Remix](http://remix.ethereum.org) and create a new file called `JointSavings.sol`:
 
@@ -480,7 +480,7 @@ Add a basic withdraw function to the contract.
  }
  ```
 
- * For example, if we wanted to withdraw ether from the contract, we can add a withdraw function like so.
+ * For example, if we wanted to withdraw ether from the contract, we can add a withdraw function, like this:
 
     * Our withdrawal function accepts the following parameters:
 
@@ -525,7 +525,7 @@ Ask the students the following question:
 
 * As you know, moving ether around on the blockchain costs money. What if we don't have enough `gas` to complete the transaction? Do we lose all of the `gas` that was sent?
 
-    * **Answer:** We do lose the gas that was used up already, but the transaction will be reversed, and we would get our ether back since it was never successfully spent.
+    * **Answer:** We would lose the gas that was used up already, but the transaction would be reversed, returning our ether  since it was never spent.
 
 We are going to add one final line to make sure that if ether is sent to the contract without using the `deposit` function, (i.e., sending ether directly to the contract's address), we can still capture the ether into the contract's wallet.
 
@@ -548,11 +548,11 @@ We are going to add one final line to make sure that if ether is sent to the con
  }
  ```
 
-Great! Now we have a fully functioning Savings account contract. We can use this smart contract to store ether, and withdraw it to any address we choose!
+Great! Now we have a fully functioning savings account contract. We can use this smart contract to store ether, and withdraw it to any address we choose!
 
 ---
 
-### 11. Students Do: Implementing ether Management functions (15 min)
+### 11. Student Do: Implementing ether Management functions (15 min)
 
 In this exercise, students will be implementing a `joint savings account` contract using the ether management functions from the previous activity. By the end of this activity, students will be able to deposit and withdraw ether from their contract's address.
 
