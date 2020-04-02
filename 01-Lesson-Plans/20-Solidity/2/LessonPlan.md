@@ -944,7 +944,7 @@ Click confirm in the `MetaMask` window.
 
 * You should now see a confirmed `Deposit` transaction, a confirmed `Withdraw` transaction, and your `MetaMask` wallet should now once again contain the additional `10 ether`.
 
-Congratulations, you have now written, compiled, deployed, and executed your first smart contract!
+Congratulations...you have now written, compiled, deployed, and executed your first smart contract!
 
 Not only have you written a smart contract, but you have learned a strictly typed programming language which will enable you to write super precise and fast code.
 
@@ -966,13 +966,13 @@ Ask the following review questions.
 
 * What advantages would a language have for specifying the type?
 
- * **Answer:** Specifying the data types allow the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts because it costs money to store data.
+ * **Answer:** Specifying the data types allow the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts, because it costs money to store data.
 
  * **Answer:** When the language is dealing with finance, you want the code to be very precise and accurate.
 
  * **Answer:** Types can be used by the compiler for error-checking.
 
-* If I pass a parameter into a function, where will I have to store that variable temporarily?
+* If I pass a parameter into a function, where will I have to temporarily store that variable?
 
  * **Answer** `In memory`
 
@@ -982,9 +982,9 @@ Ask the following review questions.
 
 * Why do we use a `testnet` to test our code?
 
- * **Answer** ether costs real money on `mainnet`, we don't want to waste real money testing code.
+ * **Answer** Ether costs real money on `mainnet`; we don't want to waste real money testing code.
 
- * **Answer** Until our code is fully tested we might not uncover certain bugs or potential security vulnerabilities; `testnet` gives us a way to run our code as if it's in production without it being in production.
+ * **Answer** Until our code is fully tested, we might not uncover certain bugs or potential security vulnerabilities; `testnet` gives us a way to run our code as if it's in production, without it being in production.
 
 Conclude class by congratulating students on learning the basics of a brand new programming language! Solidity is a highly sought after skill that many companies are interested in.
 
@@ -994,4 +994,4 @@ Conclude class by congratulating students on learning the basics of a brand new 
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
