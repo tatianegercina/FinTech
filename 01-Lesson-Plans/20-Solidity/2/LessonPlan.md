@@ -2,17 +2,17 @@
 
 ### Overview
 
-Today's class will introduce the Solidity programming language to the class. Solidity is the de-facto smart contract programming language that is compatible with many blockchains, including Ethereum.
+Today's class will introduce the Solidity programming language to the class. Solidity is the de facto smart contract programming language that is compatible with many blockchains, including Ethereum.
 
-The goal of today is to familiarize the students with the strictly typed language features of Solidity enough to build a Joint Savings Account smart contract that can store and withdraw ether.
+Today's goal is to familiarize students with the strictly typed language features of Solidity enough so they can build a joint savings account smart contract that can store and withdraw ether.
 
 ### Class Objectives
 
 By the end of the class, students will be able to:
 
-* Explain the reason Solidity uses static typing is to increase efficiency and decrease cost.
+* Explain the reason Solidity uses static typing (to increase efficiency and decrease costs).
 
-* Store basic data types such as boolean, string, int, and address in Solidity.
+* Store basic data types, such as boolean, string, int, and addresses in Solidity.
 
 * Create a basic smart contract in Solidity.
 
@@ -35,7 +35,7 @@ By the end of the class, students will be able to:
 
 * This is the first time students have encountered a strictly typed programming language. This is going to be a very difficult adjustment for the students to make since they are going to have to remember to specify the data types everywhere, as well as use semicolons to end expressions.
 
-* Remind the students that if they get frustrated, they are learning something that few are skilled at, and by learning a strictly typed language now, they will be able to learn any other programming language in the future easily.
+* Remind students that if they get frustrated, they are learning something that few are skilled at, and by learning a strictly typed language now, they will be able to learn any other programming language in the future easily.
 
 ### Slideshow and Time Tracker
 
@@ -45,7 +45,7 @@ By the end of the class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [20.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1db75f98-e59c-417f-a885-ab28004ce71c) Note that this video may not reflect the most recent lesson plan.
