@@ -441,6 +441,9 @@ A cheat sheet to these calculations can be seen [here.](EvaluationsCalculationGu
 
 <details>
 <summary>What is a trading framework?</summary><br>
+
+
+
 </details>
 
 <details>
