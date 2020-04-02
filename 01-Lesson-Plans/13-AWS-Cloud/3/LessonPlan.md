@@ -128,9 +128,7 @@ In this activity, students will be introduced to Amazon Lex; they will learn how
 
 **Files:**
 
-* [Share_The_Bill Bot](Activities/01-Ins_Intro_Lex/Solved/Share_The_Bill_1_d57679ca-cc90-4b74-9a61-2211a93f7208_Bot_LEX_V1.zip)
-
-* [ShareBill Intent](Activities/01-Ins_Intro_Lex/Solved/ShareBill_6_6f154262-76b0-465f-aed1-ce1f3914c492_Intent_LEX_V1.zip)
+* [Crypto_Converter Bot](Activities/01-Evr_Intro_Lex/Solved/Crypto_Converter_1_a363e85f-1be3-4c14-a3d4-b0814792e3f7_Bot_LEX_V1.zip)
 
 Start this activity by opening the slides to the "Intro to Amazon Lex" section and highlight the following:
 
@@ -300,43 +298,7 @@ Ensure that all students successfully tested their bot, answer any pending quest
 
 ---
 
-### 3. Students Do: Simple Crypto Conversation (15 min)
-
-In Today's class, students will create a bot that converts a given amount on US Dollars to its value in bitcoin `BTC`, ethereum `ETH`, or ripple `XRP`. In this activity, students will start creating the bot by defining an intent, some sample utterances, and two slots to convert from US Dollars to `BTC`.
-
-**Instructions:**
-
-* [README.md](Activities/02-Stu_Simple_Crypto_Conversation/README.md)
-
----
-
-### 4. Instructor Do: Review Simple Crypto Conversation (10 min)
-
-**Files:**
-
-* [Crypto Converted export file](Activities/02-Stu_Simple_Crypto_Conversation/Solved/Crypto_Converter_1_c99b8f7e-ea4d-4a6e-bb46-f179beeb5e60_Bot_LEX_V1.zip)
-
-You can choose to live demo the solution or import the solution file into your Amazon Lex console.
-
-To import the solution, click on the _Import_ option into the _Actions_ button and select the provided ZIP file; once the import process ends, you will have the bot and the intent available on your Amazon Lex console, be sure to build the bot before starting the review activity.
-
-![Import Lex Bot](Images/import-lex-bot.png)
-
-Click on the `Crypto_Converter` bot, and once the `ConvertUSD` intent is on the screen, highlight the following:
-
-* Adding `{usdAmount}` on the sample utterances, will allow the user to send messages like `I want to convert 100 dollars to BTC` where the deep learning algorithms will match the `{usdAmount}` label with a number on the utterance speech, as can be seen on the demo gif file below.
-
-* When the bot is tested, the date of birth can be given on any format (e.g., `12/16/1978`, `16/12/1978`, `Dec 16, 1978`), using the `AMAZON.DATE` slot type will transform the date automatically to the `YYYY-mm-dd` format, as can be seen on the demo gif file below.
-
-* Be aware that currently Amazon Lex only supports US English; so date transformations for birthdays like June 5, 1980, typed in a numerical format like 5/6/78, as in Spanish or Canadian English, will be transformed to `1980-05-06` (May 6, 1980).
-
-  ![Demo bot test](Images/crypto_converter_1.gif)
-
-Answer any questions before moving on.
-
----
-
-### 5. Instructor Do: Intro to AWS Lambda (15 min)
+### 3. Instructor Do: Intro to AWS Lambda (15 min)
 
 This activity will introduce AWS Lambda to students. Also, students will learn how they can integrate Lambda functions into an Amazon Lex bot. The full code of the lambda function can be found in the _Solved_ directory.
 
@@ -559,7 +521,7 @@ Answer any pending questions from the class before moving forward.
 
 ---
 
-### 6. Student Do: Understanding Lambdas (15 min)
+### 4. Student Do: Understanding Lambdas (15 min)
 
 In this activity, students will inspect the code of a Lambda function to have a better understanding of how it works. Students will create their own Lambda function by importing the provided code and will build a new version of their bot. Be sure to slack out the `lambda_function.py` code to students before starting the activity.
 
@@ -573,7 +535,7 @@ In this activity, students will inspect the code of a Lambda function to have a 
 
 ---
 
-### 7. Instructor Do: Review Understanding Lambdas (10 min)
+### 5. Instructor Do: Review Understanding Lambdas (10 min)
 
 **Files:**
 
@@ -609,7 +571,7 @@ Be sure to answer any remaining questions, then move to the next activity.
 
 ---
 
-### 8. Instructor Do: Testing AWS Lambda Functions (15 min)
+### 6. Instructor Do: Testing AWS Lambda Functions (15 min)
 
 In this activity, students will learn how to test AWS Lambda functions that validate Amazon Lex intents.
 
@@ -708,7 +670,7 @@ Answer any remaining questions and continue to the next activity.
 
 ---
 
-### 9. Student Do: Buggy Lambdas (15 min)
+### 7. Student Do: Buggy Lambdas (15 min)
 
 In this activity, students will test their Lambdas and will practice their ability to find runtime errors. Slack out the instructions to students together with the starter test event.
 
@@ -722,7 +684,7 @@ In this activity, students will test their Lambdas and will practice their abili
 
 ---
 
-### 10. Instructor Do: Review Buggy Lambdas (10 min)
+### 8. Instructor Do: Review Buggy Lambdas (10 min)
 
 **Files:**
 
@@ -758,11 +720,11 @@ Close the discussion by answering any remaining questions before moving forward.
 
 ---
 
-### 11. BREAK (40 min)
+### 9. BREAK (40 min)
 
 ---
 
-### 12. Instructor Do: Custom Slots (10 min)
+### 10. Instructor Do: Custom Slots (10 min)
 
 In this activity, students will learn how to create a custom slot and add it to an Amazon Lex bot intent.
 
@@ -834,7 +796,7 @@ Answer any pending questions before continuing.
 
 ---
 
-### 13. Students Do: Crypto Converter (20 min)
+### 11. Students Do: Crypto Converter (20 min)
 
 In this activity, students will extend their cryptocurrency converter by adding a custom slot to allow users to select between Bitcoin, Ethereum, or Ripple to convert from US Dollars. Also, business logic to identify the cryptocurrency chosen by the user and make the conversion will be added to the Lambda function.
 
@@ -848,7 +810,7 @@ In this activity, students will extend their cryptocurrency converter by adding 
 
 ---
 
-### 14. Instructor Do: Review Crypto Converter (10 min)
+### 12. Instructor Do: Review Crypto Converter (10 min)
 
 **Files:**
 
@@ -951,7 +913,15 @@ Answer any reminder question before moving forward.
 
 ---
 
-### 15. Instructor Do: Structured Review (35 min)
+### 13. Instructor Do: Deployment Options (15 min)
+
+Walk through the solution and highlight the following:
+
+* Something really important
+
+---
+
+### 14. Instructor Do: Structured Review (35 min)
 
 **Note:** If you are teaching this Lesson on a weeknight, please save this 35-minute review for the next Saturday class.
 
