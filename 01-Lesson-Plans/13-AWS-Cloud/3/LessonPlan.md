@@ -170,7 +170,7 @@ For the latest list of the supported Amazon Lex AWS regions, slack out to studen
 
 Slack out the [Amazon Lex Pricing policies](https://aws.amazon.com/lex/pricing/), remind students that from the date they get started with Amazon Lex, they can process up to 10,000 text requests and 5,000 speech requests per month for free for the first year. **Note:** This is subject to change, so they should verify the pricing structure using the link above.
 
-Close the presentation and log-in into the AWS Management Console using your `administrator` IAM user, explain to students that now you will create together an Amazon Lex bot that will assist users to convert Dollars to Bitcoin.
+Close the presentation and log-in into the AWS Management Console using your `administrator` IAM user, explain to students that now you will create together an Amazon Lex bot that will assist users to convert dollars to bitcoin.
 
 Ask to students to log in as well using their `administrator` IAM users, once all the class is ready, ask students to follow you as you perform the live demo. Highlight the following:
 
@@ -213,51 +213,90 @@ Once you configure the bot, click the "Create" button to continue:
 
   ![Adding an intent](Images/amazon-lex-add-intent.gif)
 
-* **Step 7:** In this step, you should give a name to the intent, explain to students that usually intents are named as actions to be performed by the bot, type `ShareBill`, and click on the _Add_ button to continue.
+* In this window, you should give a name to the intent, usually intents are named as actions to be performed by the bot, type `convertCAD`, and click on the "Add" button to continue.
 
-  ![Step 7](Images/lex-step7.png)
+  ![Naming the intent](Images/amazon-lex-name-intent.png)
 
-* **Step 8:** In this step, you will configure the intent to allow the bot to interact with the user. Start by adding the following sample utterances:
+* Now, we need to configure the intent to allow the bot to interact with the user via natural language.
 
-  * `We want to split the bill`
-  * `Please help me to share the bill`
-  * `I want to share the bill with my friends`
+* To allow the bot interact with a user, we need to provide some starting context about the conversation that the bot can conduct. We provide this context using sample utterances.
 
-   At this point, explain to the students that these sample utterances will be used by the deep learning algorithm of Amazon Lex to understand the context of the conversation, the more different sample utterances you add, the better the conversation will flow between the bot and the user.
+* Sample utterances are phrases that a user can use to start a conversation with the bot.
 
-  ![Step 8](Images/lex-step8.png)
+* These sample utterances will be used by the deep learning algorithm of Amazon Lex to understand the context of the conversation, the more different sample utterances you add, the better the conversation will flow between the bot and the user. We will start adding the following sample utterances.
 
-  Add two slots as follows:
+  * `I want to convert CAD to BTC`
+  * `I want to convert dollars to BTC`
+  * `I want to convert dollars to bitcoin`
 
-  | Name | Slot type | Prompt |
-  | ------------ | ------------- | -------------------------------------------------------- |
-  | totalAmount | AMAZON.NUMBER | I will be pleased to help, what is the bill's total amount? |
-  | numberPeople | AMAZON.NUMBER | How many people are going to pay the bill? |
+  ![Adding sample utterances](Images/amazon-lex-add-utterances.png)
 
-  On the _Confirmation prompt_ section, enable the confirmation prompt and type the following confirm and cancel prompts:
+* Once we defined the sample utterances, we need to define the possible questions or dialogue that the bot can conduct to gather information from the user.
 
-  * _Confirm prompt:_ `Are you sure you want to split a bill for ${totalAmount} between {numberPeople} people?`
-  * _Cancel prompt:_ `Okay, let's start again.`
+* In this demo, we want to convert dollars to bitcoin, so we need someway to allow the bot ask how many dollars the user wants to convert to bitcoin.
 
-  Explain to students that in the confirm prompt, `{totalAmount}` and `{numberPeople}` are a kind of variables that will be filled out with the values given by the user.
+* We fetch data from the user and allow the bot to ask question using "slots".
 
-* **Step 9:** Now it is time to see the bot in action, build your bot by clicking on the _Build_ button, and confirming the build option on the pop-up window.
+* Slots are like variables in a Python script, you need to define a name to the slot, a data type (that is known as "slot type" in the context of Amazon Lex), and a prompt. A prompt is the question or phrase the bot is going to use to fetch the data to fulfill a slot.
 
-  ![Step 9a](Images/lex-step9a.png)
+Continue the demo by adding the following two slots:
 
-  The building process takes a couple of minutes. Once the process finished, you will see the following confirmation message, and the _Test bot_ window will appear. You can now close the confirmation message and test your bot.
+  | Name      | Slot type     | Prompt                                                                                                  |
+  | --------- | ------------- | ------------------------------------------------------------------------------------------------------- |
+  | birthday  | AMAZON.DATE   | This service can only be used by people over 18 years old, could you please give me your date of birth? |
+  | cadAmount | AMAZON.NUMBER | How many dollars do you want to convert?                                                                |
 
-  ![Step 9b](Images/lex-step9b.png)
+* To add a slot, scroll down to the "Slots" section. Start by typing the name of the slot in the "Name" box.
 
-* **Step 10:** Test your boot using the first sample utterance. You should have a dialog with the bot as follows.
+  ![Adding the name of a slot](Images/amazon-lex-add-slot-name.png)
 
-   ![Step 10](Images/lex-step10.gif)
+* Next, you need to define the "Slot type". Slot types are similar to data types in programming languages, since they define the kind of data that you can fetch and save in the slot. Amazon Lex provides several built-in slot types for the most common types of data that may be fetched in a conversation.
 
-  Explain to students that at this time, the bot has no business rules logic attached, that is why the final message the bot sends after fulfilling all the slots is a kind of non-friendly confirmation message. We will improve this by adding an Amazon Lambda function to the bot.
+  ![Choosing a slot type](Images/amazon-lex-choosing-slot-type.gif)
 
-   ![Fulfillment message](Images/lex-step10msg.png)
+* To finish the slot configuration, you need to add the prompt in the "Prompt" box.
 
-Answer any pending questions before continuing.
+  ![Setting the prompt in a slot](Images/amazon-lex-define-slot-prompt.png)
+
+* After adding the two slots, be sure that "Required" option is checked for both slots.
+
+  ![Checking required slots](Images/amazon-lex-required-slots.png)
+
+Explain to students that the final step is to define how the bot should respond when it successfully fulfill all the slots, as well as how to respond if the user want to cancel the intent action. This is done in the "Confirmation prompt" section.
+
+Scroll down to the "Confirmation prompt" section, check the "Confirmation prompt" option and type the following confirm and cancel prompts:
+
+* _Confirm prompt:_ `Are you sure you want to convert ${cadAmount} to Bitcoin?`
+
+* _Cancel prompt:_ `Okay, let's start again.`
+
+![Setting confirmation prompts](Images/amazon-lex-confirmation-prompt.png)
+
+Explain to students that in the confirm prompt, `{cadAmount}` is a kind of variable that will be filled out with the value given by the user.
+
+You have set all the configurations needed to test your bot. Ensure that all the students reached this point before continue and continue by highlighting the following:
+
+* Now it is time to see the bot in action! First, you need to build your bot by clicking on the "Build" button at the upper right corner and confirming the build option on the pop-up window.
+
+  ![Building the bot for testing](Images/amazon-lex-build-bot.gif)
+
+* The building process takes a couple of minutes. Once the process finished, you will see a confirmation message, and the "Test bot" window will appear.
+
+  ![Bot building confirmation](Images/amazon-lex-bot-build-success.png)
+
+* To test your bot, you can close the confirmation message. Start testing your boot using the first sample utterance.
+
+  ![Testing the Amazon Lex bot](Images/amazon-lex-testing-bot.gif)
+
+* When the bot is tested, the date of birth can be given on any format (e.g., `12/16/1978`, `16/12/1978`, `Dec 16, 1978`), using the `AMAZON.DATE` slot type will transform the date automatically to the `YYYY-mm-dd` format, as can be seen on the demo gif file below.
+
+* Be aware that currently Amazon Lex only supports US English; so date transformations for birthdays like June 5, 1980, typed in a numerical format like 5/6/78, as in Canadian English or Spanish, will be transformed to `1980-05-06` (May 6, 1980).
+
+Explain to students that at this time, the bot has no business rules logic attached, that is why the final message the bot sends after fulfilling all the slots is a kind of non-friendly confirmation message. We will improve this by adding an Amazon Lambda function to the bot later Today.
+
+![Fulfillment message](Images/amazon-lex-fulfillment-message.png)
+
+Ensure that all students successfully tested their bot, answer any pending questions before continuing with the next activity.
 
 ---
 
