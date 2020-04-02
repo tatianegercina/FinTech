@@ -733,9 +733,9 @@ Send out the instructions, which include a cheat sheet that compares how conditi
 
 * [Conditionals Cheat Sheet](Activities/06-Stu_If_Else/Resources/Conditionals_Cheatsheet.md)
 
-Have the TAs circulate the class and ensure that students are correctly implementing their if/else statements. Remind them that they have to:
+Have the TAs circulate the class to ensure that students are correctly implementing their if/else statements. Remind them that they have to:
 
-* Put the condition in parenthesis.
+* Put the condition in parentheses.
 
 * Put the body of the if statement in curly brackets.
 
@@ -816,7 +816,7 @@ function withdraw(uint amount, address payable recipient) public {
 
 Have the students catch up with the code, then elaborate:
 
-* The require just like an `if/else` else statement checks if an expression returns `true`.
+* The require is just like an `if/else` else statement checks if an expression returns `true`.
 
 * If the expression returns `true`, then the code after the declaration is executed.
 
@@ -826,7 +826,7 @@ Have the students catch up with the code, then elaborate:
 
 * Unlike the `if/else` when a `require`'s condition fails, the contract immediately ends execution, and the remaining gas is returned to the person that executed the contract.
 
-* You can think of a `require` more as a type of error handling; as you can see, we can even declare a custom error message to the user. If withdraw is passed an address that is not one of the two addresses defined in our contract, then they will get the message `You do not own this account!`.
+* You can think of a `require` more as a type of error handling; as you can see, we can even declare a custom error message to the user. If withdraw has passed an address that is not one of the two addresses defined in our contract, then they will get the message `You do not own this account!`.
 
 Now we have a fully working `JointSavings` account with withdrawing protection on our contract account and a deposit function to deposit our funds. Let's compile and deploy our contract to test it out!
 
