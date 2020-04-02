@@ -30,6 +30,12 @@ Once the `ccxt` module is downloaded and installed, verify that the installation
 
 Now that the `ccxt` module has been installed and verified, go to the [Kraken Cryptocurrency Exchange](https://www.kraken.com/en-us/) and sign up for an account.
 
+- Kraken does not offer services to residents of Washington state (WA) and New York (NY)
+
+```
+If you are signing up from either of these two states, please select a different state when signing up to have full use of the Kraken services.
+```
+
 Next, head to the API settings of your Kraken account and generate new API keys. Make sure to select all key permissions.
 
   ![kraken-api-settings](Images/kraken-api-settings.png)
