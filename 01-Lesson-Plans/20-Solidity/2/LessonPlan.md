@@ -58,7 +58,7 @@ Welcome to Day 2 of Intro to Solidity. Let's start by reviewing some of the conc
 
 * What is Solidity?
 
- **Answer** Solidity is a high-level object-oriented programing language. It is the language used to write smart contracts on the Ethereum blockchain.
+ **Answer** Solidity is a high-level, object-oriented programing language. It is the language used to write smart contracts on the Ethereum blockchain.
 
 * What is a smart contract?
 
@@ -72,9 +72,9 @@ Welcome to Day 2 of Intro to Solidity. Let's start by reviewing some of the conc
 
  **Answer:** Instead of relying on centralized infrastructure to run applications, which are prone to censorship and access issues, you can write apps that are secured and powered by the blockchain and pay the world to run your application instead of a single, fallible entity.
 
- **Answer:** It is a way of writing applications that require the 5 pillars of open blockchain
+ **Answer:** It is a way of writing applications that require the five pillars of open blockchain.
 
-* What are the 5 Pillars of Open Blockchains?
+* What are the Five Pillars of Open Blockchains?
 
  **Answer:** Open, Borderless (Decentralized), Neutral, Censor Resistant, Public
 
@@ -82,7 +82,7 @@ Welcome to Day 2 of Intro to Solidity. Let's start by reviewing some of the conc
 
  **Answer:** We are in an age where blockchain technologies are beginning to shape the world around us in new and exciting ways. Learning Solidity will allow us to build complex decentralized applications that plug directly into Ethereum.
 
- **Answer:** Solidity is quickly becoming the de-facto standard for digital smart contracts, and is supported in multiple blockchains, including Ethereum, Ethereum Classic, Hyperledger Fabric, Quorum, and more.
+ **Answer:** Solidity is quickly becoming the de facto standard for digital smart contracts, and is supported in multiple blockchains, including Ethereum, Ethereum Classic, Hyperledger Fabric, Quorum, and more.
 
 Let's get the class excited about smart contracts.
 
@@ -155,7 +155,7 @@ Break down the contract to the students:
  address my_address = 0xc3879B456DAA348a16B6524CBC558d2CC984722c;
  ```
 
-Take a moment to discuss data types with the class. Explain to the class the following:
+Take a moment to discuss data types with the class. Explain the following to students:
 
 * In contrast to Python, Solidity is very strict in the way that variables and functions are defined.
 
@@ -163,7 +163,7 @@ Take a moment to discuss data types with the class. Explain to the class the fol
 
   * Much like how a legal contract does not leave room for ambiguity, we also remove the same ambiguity from our code by being very specific about how we are storing data, like strings, numbers, arrays, or booleans (`true`/`false` values).
 
-  * When we define the data types upfront, the Solidity compiler does not have to expend the resources figuring out what type the data is. In Python, the interpreter runs the code and figures out the types on the fly. While this makes writing the code easier, it is more expensive to run since Python has to calculate the type again every time.
+  * When we define the data types upfront, the Solidity compiler does not have to expend resources to figure out what type the data is. In Python, the interpreter runs the code and figures out the types on the fly. While this makes writing the code easier, it is more expensive to run since Python has to calculate the type again every time.
 
   * Different data types have a different `gas` cost associated with it. Therefore, if you have to store an `address`, you should use the native `address` type instead of a `string`, since it's cheaper that way.
 
@@ -171,7 +171,7 @@ Use the following questions to engage the class:
 
 * What advantages would a language have for specifying the type?
 
-  * **Answer:** Specifying the data types allows the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts because it costs money to store data.
+  * **Answer:** Specifying the data types allows the language to use the most optimal storage container for the data, thus saving space. This is especially important for smart contracts, because it costs money to store data.
 
   * **Answer:** When the language is dealing with finance, you want the code to be very precise and accurate.
 
@@ -191,7 +191,7 @@ Explain that we will continue to iterate on this example throughout the lesson t
 
 ---
 
-### 3. Students Do: Build a Basic Contract (15 min)
+### 3. Student Do: Build a Basic Contract (15 min)
 
 In this exercise, students will use their data type cheat sheet to build a basic contract that stores simple variables that represent a rewards/bank account balance.
 
@@ -215,7 +215,7 @@ Explain to the class that by the end of today, we will have to build a simple jo
 
 * [SimpleCustomerAccount.sol](Activities/02-Stu_Building_a_Basic_Contract/Solved/SimpleCustomerAccount.sol)
 
-Open the solution and ask the students the following questions:
+Open the solution and ask students the following questions:
 
 * Why is Solidity so strict with its typing?
 
@@ -241,7 +241,7 @@ Now that we've thoroughly covered many of the types within Solidity, let's add s
 
 In this demonstration, the instructor will show the various nuances of functions in Solidity, such as specifying the return type and `public`/`private` modifiers.
 
-Let's say you are a famous crypto trader and wanted to publish your latest buy order at the price that you bought it at. You want to be able to prove that it was you that made that recommendation cryptographically, so you're going to build a smart contract to publish your latest trade to the blockchain.
+Let's say you are a famous crypto trader and want to publish your latest buy order at the price you bought it at. You want to be able to prove that it was you that made that recommendation cryptographically, so you're going to build a smart contract to publish your latest trade to the blockchain.
 
 Open [Remix](http://remix.ethereum.org) and create a new file called `LatestTrade.sol`:
 
@@ -281,11 +281,11 @@ contract LatestTrade {
 
  * Now that we have defined our variables for our contract's values, we can create a function to set them.
 
- * Remember, we have to specify the data type of the parameters as well. We can't get away with ambiguity here as we can in Python!
+ * Remember, we have to specify the data type of the parameters as well. We can't get away with ambiguity here, like we can in Python!
 
  * Pay close attention to the keyword `memory` in front of the `newCoin` variable.
 
- * The reason we specify that the string is stored in `memory` is that strings are a more complex and thus more expensive data type than integers and addresses, and the EVM requires you to specify where it is stored.
+ * The reason we specify that the string is stored in `memory` is that strings are a more complex (and thus more expensive) data type than integers and addresses, and the EVM requires you to specify where it is stored.
 
  * While we operate on the string (like passing it in from a parameter), we can store it in `memory` and use less `gas` than storing a string normally.
 
@@ -309,11 +309,11 @@ Add a function to fetch all of the variables in one shot:
 
  * Since we are just fetching data, calling this function is free! It only costs money to write data to the blockchain or perform calculations on things in `memory`!
 
- * You can "get" the data all you want since it's already stored on the blockchain node.
+ * You can "get" the data all you want, since it's already stored on the blockchain node.
 
 ---
 
-### 6. Students Do: Adding a Getter and Setter (15 min)
+### 6. Student Do: Adding a Getter and Setter (15 min)
 
 In this exercise, students will be adding a `Getter` and a `Setter` function to the `SimpleCustomerAccount` contract that they just wrote.
 
