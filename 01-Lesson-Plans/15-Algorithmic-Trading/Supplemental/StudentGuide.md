@@ -287,6 +287,135 @@ The dual moving average crossover can be created by using Pandas functionality. 
 </details>
 <details>
 <summary>What is backtesting and how do I use it?</summary><br>
+
+The term sounds more complicated that it actually is - backtesting is simply the testing of your trading strategy using historical data in a simulated scenario.  The results indicate how much the gains and losses would have been if the strategy had been implemented on a dummy portfolio of predetermined share size with a dummy capital amount of a predetermined size.  Typically `500` is chosen for the portfolio size and `$100,000` is chosen for the available capital.
+
+For an example of backtest simulation check out the steps below:
+
+<blockquote>
+<details>
+<summary>Step One: </summary><br>
+
+To conduct the simulation in Jupyter, the portfolio size and capital amount are set in variables so they can be easily inserted to our code:
+```python
+# Set initial capital
+initial_capital = float(100000)
+# Set the share size
+share_size = 500
+```
+The portfolio size, or *position*, is set in a column titled `Position` and is coded to equal `500` when the crossover signal is 1 by multipying our share size by the signal:
+```python
+# Take a 500 share position where the dual moving average crossover is 1 (SMA50 is greater than SMA100)
+signals_df['Position'] = share_size * signals_df['Signal']
+```
+This inserts a column as seen below: **Lori to update this picture to show column headers**
+<img src=Images/active-positions.png>
+</details>
+<details>
+<summary>Step Two: </summary><br>
+
+Next, a columm is inserted indicating the share size purchase or sale, depending on the entry/exit points.  If there is an entry point, the share size is  `500` if there is an exit point, the share size is `-500`.  This is creating by running `.diff()` on the `Position` column.
+
+```python
+# Find the points in time where a 500 share position is bought or sold
+signals_df['Entry/Exit Position'] = signals_df['Position'].diff()
+```
+
+This inserts a column as seen below: **update image**
+
+<img src=Images/entry-exit-positions.png>
+</details>
+<details>
+<summary>Step Three: </summary><br>
+
+Next, the column `Portfolio Holdings` is inserted to represent the cumulative investment in the chosen stock over time.  These values are obtained by multiplying the closing prices of the stock by the cumulative sum for entry/exit positions of 500 shares - or in this case the `Entry/Exity Position` column:
+
+```python
+# Multiply share price by entry/exit positions and get the cumulatively sum
+signals_df['Portfolio Holdings'] = signals_df['close'] * signals_df['Entry/Exit Position'].cumsum()
+```
+This inserts a column as seen below: **update image**
+</details>
+<details>
+<summary>Step Three: </summary><br>
+
+We now add another new column to represent the remaining cash value of our capital as we make our psuedo investments.  To calculate this value, we subtract the `initial_capital` from the product of the `close` prices and the cumulative sum of the `Entry/Exit Position`:
+
+```python
+# Subtract the initial capital by the portfolio holdings to get the amount of liquid cash in the portfolio
+signals_df['Portfolio Cash'] = initial_capital - (signals_df['close'] * signals_df['Entry/Exit Position']).cumsum()
+```
+This inserts a column as seen below: **update image**
+</details>
+<details>
+<summary>Step Four: </summary><br>
+
+Next, we add the values of the `Portfolio Cash` column to the values of the `Portfolio Holdings` column to create a new column of values - `Portfolio Total`.  This column represents the total value of the portfolio over time.
+
+```python
+
+# Get the total portfolio value by adding the cash amount by the portfolio holdings (or investments)
+signals_df['Portfolio Total'] = signals_df['Portfolio Cash'] + signals_df['Portfolio Holdings']
+```
+This inserts a column as seen below: **update image**
+</details>
+<details>
+<summary>Step Five: </summary><br>
+
+The final step before plotting is to generate the daily and cumulative returns.  The `Portfolio Daily Returns` column is populated by using `.pct_change()` on the `Portfolio Total` column.  The `Portfolio Cumulative Returns` column is populated using `cumprod()` on the newly generated `Portfolio Daily Returns` column.
+```python
+# Calculate the portfolio daily returns
+signals_df['Portfolio Daily Returns'] = signals_df['Portfolio Total'].pct_change()
+
+# Calculate the cumulative returns
+signals_df['Portfolio Cumulative Returns'] = (1 + signals_df['Portfolio Daily Returns']).cumprod() - 1
+```
+This inserts columns as seen below: **update image**
+
+</details>
+<details>
+<summary>Step Six: </summary><br>
+
+Finally, we can visualize the simulation and thus the overal success or failure of our strategy by plotting the values.
+
+```python
+# Visualize exit position relative to total portfolio value
+exit = signals_df[signals_df['Entry/Exit'] == -1.0]['Portfolio Total'].hvplot.scatter(
+    color='red',
+    legend=False,
+    ylabel='Total Portfolio Value',
+    width=1000,
+    height=400
+)
+
+# Visualize entry position relative to total portfolio value
+entry = signals_df[signals_df['Entry/Exit'] == 1.0]['Portfolio Total'].hvplot.scatter(
+    color='green',
+    legend=False,
+    ylabel='Total Portfolio Value',
+    width=1000,
+    height=400
+)
+
+# Visualize total portoflio value for the investment
+total_portfolio_value = signals_df[['Portfolio Total']].hvplot(
+    line_color='lightgray',
+    ylabel='Total Portfolio Value',
+    width=1000,
+    height=400
+)
+
+# Overlay plots
+portfolio_entry_exit_plot = total_portfolio_value * entry * exit
+portfolio_entry_exit_plot.opts(xaxis=None)
+```
+The above code generates a chart like the one below.  This allows us to visualize our simulation.  We can see our entry/exit points in red/green respectively, and we can see the trend line of the value of the portfolio rise over time.  This particular simulation increased the initial capital from $100,000 to a total portfolio value of $132,975:
+
+<img src=Images/sim_visualization.PNG>
+
+</details>
+</details>
+</blockquote>
 </details>
 
 <details>
