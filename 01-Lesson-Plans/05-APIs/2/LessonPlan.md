@@ -320,7 +320,6 @@ Open the [solution](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ip
   from dotenv import load_dotenv
   load_dotenv()
   ```
-  <!-- TODO: DELETE! ![source_keys.png](Images/source_keys.png) -->
 
 * Environment variables can be accessed in Python with the os library. The library has to be imported before it can be used. The os library has an `os.getenv` function that can be used to retrieve environment variables from the operating system. Once retrieved, the value can be saved as a Python variable (e.g.,  `api_key`).
 
