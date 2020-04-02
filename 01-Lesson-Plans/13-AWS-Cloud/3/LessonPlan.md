@@ -300,13 +300,13 @@ Ensure that all students successfully tested their bot, answer any pending quest
 
 ### 3. Instructor Do: Intro to AWS Lambda (15 min)
 
-This activity will introduce AWS Lambda to students. Also, students will learn how they can integrate Lambda functions into an Amazon Lex bot. The full code of the lambda function can be found in the _Solved_ directory.
+This activity will introduce AWS Lambda to students. Also, students will learn how they can integrate Lambda functions into an Amazon Lex bot. The full code of the lambda function can be found in the "Solved" directory.
 
 **Files:**
 
-* [lambda_function.py](Activities/03-Ins_Intro_Lambda/Solved/lambda_function.py)
+* [lambda_function.py](Activities/02-Ins_Intro_Lambda/Solved/lambda_function.py)
 
-Start the activity by opening the lesson slides, navigate to the _Intro to AWS Lambda_ section, and highlight the following:
+Start the activity by opening the lesson slides, navigate to the "Intro to AWS Lambda" section and highlight the following:
 
 * Sometimes AWS Lambda is seen as a web service or an API since it runs code remotely, however, AWS Lambda is a serverless technology where you just upload your code and Lambda takes care of everything.
 
@@ -314,7 +314,9 @@ Start the activity by opening the lesson slides, navigate to the _Intro to AWS L
 
 * AWS Lambda can have your code automatically trigger from other AWS services or call it directly from any web or mobile app.
 
-* We are going to use AWS Lambda by triggering code from an Amazon Lex Bot.
+Continue with the lesson slides, and [open the video "Intro to AWS Lambda"](https://youtu.be/eOBq__h4OJ4) for a three minutes video introduction to illustrate how AWS Lambda works.
+
+Once the video ends, continue with the slides and explain to students that Today we are going to use AWS Lambda by triggering code from an Amazon Lex Bot. Highlight the following:
 
 * AWS Lambda enhances chatbots by combining the NLP capabilities of Amazon Lex to understand human speech, with the possibility of running code to fulfill user's requests, for example, booking a hotel room, making a wire transfer, or providing financial advice about an investment portfolio.
 
@@ -322,192 +324,89 @@ Start the activity by opening the lesson slides, navigate to the _Intro to AWS L
 
 * Amazon Lex "talks" to AWS Lambda to perform initialization and validation, fulfillment, or both.
 
-Explain to students that in this demo, you will show how to process `ElicitSlots`, `Delegate`, and `Close` response events.
+Explain to students that in this demo, you will show how to process `ElicitSlots`, `Delegate`, and `Close` response events to communicate Amazon Lex and AWS Lambda.
 
-Close the slides and log-in into the AWS Management Console using your IAM administrator user, once you are logged in, type `Lambda` into the _AWS services_ search box and click on _Lambda_ to open the AWS Lambda console.
+Close the slides and log-in into the AWS Management Console using your IAM `administrator` user, once you are logged in, type `lambda` into the "Find Services" search box and click on choose "Lambda" from the list to open the AWS Lambda console.
 
 ![Search for AWS Lambda service on the AWS Management console](Images/search-lambda-service.png)
 
-In the AWS Lambda console, click on _Functions_ on the left side menu; continue by clicking on the _Create function_ button.
+In the AWS Lambda console, click on "Functions" on the left side menu; continue by clicking on the "Create function" button.
 
 ![AWS Lambda console](Images/aws-lambda-console.png)
 
-On the _Create function_ page, select the _Author from scratch_ option, fill out the following information, and click on the _Create function_ button:
+On the "Create function" page, select the "Author from scratch" option, fill out the following information, and click on the "Create function" button to continue:
 
-* **Function name:** `convertUSD` (This is the name to identify our new Lambda function)
+* **Function name:** `convertCAD` (This is the name to identify our new Lambda function)
+
 * **Runtime:** `Python 3.7`
 
 **Note:** Currently, AWS Lambda offers support for Python 3.8, be aware of choosing version 3.7 as the runtime to avoid version conflicts with the code in Today's lesson.
 
 ![Create function page](Images/aws-lambda-create-function.png)
 
-Explain to students that now AWS will create the `convertUSD` lambda function, and it takes a few seconds. Once created, you will see the following page.
+Explain to students that now AWS will create the `convertCAD` Lambda function environment by provisioning the infrastructure needed to run a serverless application; this process takes a few seconds.
 
-![convertUSD function created](Images/convertUSD-created.png)
+Once the Lambda function is created, you will see the following page.
 
-Scroll down to the _Function code_ section and explain to students that this code is a starter `Hello World` example. Highlight that a lambda function has a main events handler; its goal is to manage all the incoming messages and dispatch them depending on the business logic defined.
+![convertCAD function created](Images/convertCAD-created.png)
 
-* We will use the `lambda_handler` to route the incoming requests based on the user's intents captured by the Amazon Lex bot.
+Scroll down to the "Function code" section and explain to students that this code is a starter `Hello World` example. Highlight that a lambda function has a main events handler; its goal is to manage all the incoming messages and dispatch them depending on the business logic defined.
 
-![Function code section](Images/convertUSD-function-code.png)
+* We will use the `lambda_handler` function to route the incoming requests based on the user's intents captured by the Amazon Lex bot.
+
+![Function code section](Images/convertCAD-function-code.png)
 
 Open the slides and show students the anatomy of the lambda function you are going to use. Let the students know that this code can be used as a boilerplate template to code business logic to extend Amazon Lex bots functionality.
 
 ![Lambda function anatomy](Images/lambda-function-anatomy.png)
 
-Explain to students that the lambda function contains six general building blocks, briefly present these blocks, and open the `lambda_function.py` script on VSCode by highlighting the following:
+Explain to students that the lambda function contains six general building blocks; present these blocks by highlighting the following:
 
-1. **Required Libraries:** This section contains all the necessary libraries to code the business logic on the lambda functions, though AWS Lambda supports Python, the runtime doesn't support some common packages such as `pandas`, `numpy` or `requests`, so alternative packages should be used or installed. In this demo, we take the current price of bitcoin, making an API call to the [alternative.me Crypyo API](https://alternative.me/crypto/api/), so the `requests` library is imported from the [`botocore` package](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html). A complete list of the python modules available on AWS Lambda can be found [here](https://gist.github.com/gene1wood/4a052f39490fae00e0c3).
+1. **Required Libraries:** This section contains all the necessary libraries to code the business logic on the lambda functions, despite AWS Lambda supports Python, the AWS Lambda's runtime doesn't support some common packages such as `pandas`, `numpy` or `requests`, so alternative packages should be used or installed.
+
+    In this demo, we take the current price of bitcoin, making an API call to the [alternative.me Crypyo API](https://alternative.me/crypto/api/), so the `requests` library is imported from the [`botocore` package](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html). A complete list of the python modules available on AWS Lambda can be found [here](https://gist.github.com/gene1wood/4a052f39490fae00e0c3).
 
 2. **Functionality Helper Functions:** These functions implement business logic and data validation. In this demo, we have four helper functions.
 
     * `parse_float()`: This function securely parses a non-numeric value to float.
 
-    * `get_btcprice()`: Retrieves the current price of bitcoin in US Dollars from the alternative.me Crypyo API.
+    * `get_btcprice()`: Retrieves the current price of bitcoin in dollars from the alternative.me Crypyo API.
 
     * `build_validation_result()`: This function defines an internal validation message structured as a python dictionary.
 
-    * `validate_data()`: This function validates the data provided by the user across the intent's dialog on Amazon Lex according to the business logic. In this demo, there are only two rules: (1) the user should be at least 21 years old (2) the amount in US Dollars to convert must be greater than zero.
+    * `validate_data()`: This function validates the data provided by the user across the intent's dialog on Amazon Lex according to the business logic. In this demo, there are only two rules: (1) the user should be at least 18 years old (2) the amount in dollars to convert must be greater than zero.
 
-Explain to students that the `validate_data()` function uses the `build_validation_result()` function to return a validation result message. In this demo, if the user's age is less than `21` or the amount to convert is less than `0`, a `False` result is returned; otherwise, a `True` result is returned.
+    Explain to students that the `validate_data()` function uses the `build_validation_result()` function to return a validation result message. In this demo, if the user's age is less than `18` or the amount to convert is less than `0`, a `False` result is returned; otherwise, a `True` result is returned.
 
-```python
-def validate_data(birthday, usd_amount, intent_request):
-    """
-    Validates the data provided by the user.
-    """
-
-    # Validate that the user is over 21 years old
-    if birthday is not None:
-        birth_date = datetime.strptime(birthday, "%Y-%m-%d")
-        age = relativedelta(datetime.now(), birth_date).years
-        if age < 21:
-            return build_validation_result(
-                False,
-                "birthday",
-                "You should be at least 21 years old to use this service, "
-                "please provide a different date of birth.",
-            )
-
-    # Validate the investment amount, it should be > 0
-    if usd_amount is not None:
-        usd_amount = parse_float(
-            usd_amount
-        )  # Since parameters are strings it's important to cast values
-        if usd_amount <= 0:
-            return build_validation_result(
-                False,
-                "usdAmount",
-                "The amount to convert should be greater than zero, "
-                "please provide a correct amount in USD to convert.",
-            )
-
-    # A True results is returned if age or amount are valid
-    return build_validation_result(True, None, None)
-```
-
-3. **Dialog Actions Helper Functions:** These functions handle the input and response events data from the "conversation" between Amazon Lex and AWS Lambda. The `get_slots()` function fetches all the slots and their values from the current intent. The `elicit_slot()`, `delegate()` and `close()` functions, construct response messages structured as a valid JSON Lex event. The full structure of event data that Amazon Lex exchanges with a Lambda function can be reviewed [here](https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html).
+3. **Dialog Actions Helper Functions:** These functions handle the input and response events data from the conversation between Amazon Lex and AWS Lambda. The `get_slots()` function fetches all the slots and their values from the current intent. The `elicit_slot()`, `delegate()` and `close()` functions, construct response messages structured as a valid JSON Lex event. The full structure of event data that Amazon Lex exchanges with a Lambda function can be reviewed [here](https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html).
 
 4. **Intents Handlers:** The core business logic is coded into an intent handler. An intent handler is a function that implements the functionality that is willing to fulfill the user's intent.
 
-Explain to students that in this demo, the `convert_usd()` function contains all the logic to validate the user's input stored in the `slots` using the `validate_data()` helper function; along with the conversation between the user and the bot, if any of the `slots` have invalid data, an `elicitSlot` dialog is returned to request the data again to the user, otherwise a `delegate()` dialog is returned to direct Lex to choose the next course of action according to the bot's configuration.
+    Explain to students that in this demo, the `convert_cad()` function contains all the logic to validate the user's input stored in the `slots` using the `validate_data()` helper function; along with the conversation between the user and the bot, if any of the `slots` have invalid data, an `elicitSlot` dialog is returned to request the data again to the user, otherwise a `delegate()` dialog is returned to direct Lex to choose the next course of action according to the bot's configuration.
 
-```python
-if source == "DialogCodeHook":
-    # This code performs basic validation on the supplied input slots.
+    Highlight to students that once the conversation between the user and the bot ends, the current price of bitcoin in dollars is fetched using the `get_btcprice()` function, the conversion from dollars to bitcoin in done and the `close()` dialog function is called to return a `Fulfilled` event message to Lex.
 
-    # Gets all the slots
-    slots = get_slots(intent_request)
+5. **Intents Dispatcher:** An Amazon Lex bot can have one or more intents, the purpose of the `dispatch()` function is to validate that the current intent is valid and to dispatch the intent to the corresponding intent handler. In this demo, we only have one intent, so we only have one intent handler call to the `convert_cad()` function.
 
-    # Validates user's input using the validate_data function
-    validation_result = validate_data(birthday, usd_amount, intent_request)
+6. **Main Handler:** Every time a user sends a message to Amazon Lex, using text or voice, an event will be sent to AWS Lambda; the `lambda_handler()` function, catches every event and returns a response to Lex via the `dispatch()` function.
 
-    # If the data provided by the user is not valid,
-    # the elicitSlot dialog action is used to re-prompt for the first violation detected.
-    if not validation_result["isValid"]:
-        slots[validation_result["violatedSlot"]] = None  # Cleans invalid slot
-
-        # Returns an elicitSlot dialog to request new data for the invalid slot
-        return elicit_slot(
-            intent_request["sessionAttributes"],
-            intent_request["currentIntent"]["name"],
-            slots,
-            validation_result["violatedSlot"],
-            validation_result["message"],
-        )
-
-    # Fetch current session attributes
-    output_session_attributes = intent_request["sessionAttributes"]
-
-    # Once all slots are valid, a delegate dialog is returned to Lex to choose the next course of action.
-    return delegate(output_session_attributes, get_slots(intent_request))
-```
-
-Explain to students that once the conversation between the user and the bot ends, the current price of bitcoin in US Dollars is fetched using the `get_btcprice()` function, the conversion from USD to BTC in done and the `close()` function is called to return a `Fulfilled` event message to Lex.
-
-```python
-# Get the current price of BTC in USD and make the conversion from USD to BTC.
-btc_value = parse_float(usd_amount) / get_btcprice()
-btc_value = round(btc_value, 2)
-
-# Return a message with conversion's result.
-return close(
-    intent_request["sessionAttributes"],
-    "Fulfilled",
-    {
-        "contentType": "PlainText",
-        "content": """Thank you for your information;
-        you can get {} Bitcoins for your {} US Dollars.
-        """.format(
-            btc_value, usd_amount
-        ),
-    },
-)
-```
-
-5. **Intents Dispatcher:** An Amazon Lex bot can have one or more intents, the purpose of the `dispatch()` function is to validate that the current intent is valid and to dispatch the intent to the corresponding intent handler. In this demo, we only have one intent, so we only have one intent handler call to the `convert_usd()` function.
-
- ```python
-def dispatch(intent_request):
-    """
-    Called when the user specifies an intent for this bot.
-    """
-
-    # Get the name of the current intent
-    intent_name = intent_request["currentIntent"]["name"]
-
-    # Dispatch to bot's intent handlers
-    if intent_name == "ConvertUSD":
-        return convert_usd(intent_request)
-
-    raise Exception("Intent with name " + intent_name + " not supported")
- ```
-
-6. **Main Handler:** Every time a user sends a message to Lex, using text or voice, an event will be sent to Lambda; the `lambda_handler()` function, catches every event and returns a response to Lex via the `dispatch()` function.
-
- ```python
-def lambda_handler(event, context):
-    """
-    Route the incoming request based on intent.
-    The JSON body of the request is provided in the event slot.
-    """
-
-    return dispatch(event)
- ```
-
-After presenting the Lambda function's building blocks, copy and paste the code from VSCode to the code editor on the AWS Lambda console, click on the _Save_ button to continue.
+After presenting the Lambda function's building blocks, open the `lambda_function.py` script on VSCode, delete the sample code, and copy and paste the code from VSCode to the code editor on the AWS Lambda console. Click on the "Save" button to continue.
 
 ![Sample copied Lambda code](Images/copied-lambda-code.png)
 
-Open the Amazon Lex console to bind the `convertUSD` lambda function to the bot. Open the _Lambda initialization and validation_ section, enable the _Initialization and validation code hook_ option and select the `convertUSD` Lambda from the list, next be sure to select the `Latest` version.
+The next step is to communicate Amazon Lex with the Amazon Lambda function. Open the Amazon Lex console and open the `Crypto_Converter` bot.
 
-![Configure the Lambda initializations and validation](Images/lambda-init-val.png)
+![Opening the Amazon Lex console from the AWS Lambda console](Images/open-lex-from-lambda.gif)
 
-A pop-window asking you for permissions to your Lambda Function will appear next, click on the _Ok_ button to continue. Explain to students that this permission is needed to allow the communication between the bot and Lambda.
+Scroll down to the "Lambda initialization and validation" section, enable the _Initialization and validation code hook_ option and select the `convertCAD` Lambda from the list, next be sure to select the `Latest` version.
 
-![Lambda permission prompt](Images/lambda-permissions-prompt.png)
+A pop-window asking you for permissions to your Lambda Function may appear, click on the "Ok" button to continue. Explain to students that this permission is needed to allow the communication between the bot and Lambda.
 
-Scroll down to the _Confirmation prompt_ section and disable the checkbox, continue by opening the _Fulfillment_ section and choose the _AWS Lambda function option_, select the `convertUSD` Lambda and the `Latest` version. Click on the _Build_ button on the upper right corner. Now the bot is connected to Lambda to control the user's intent.
+![Configure the Lambda initializations and validation](Images/initializing-lambda-in-lex.gif)
+
+Scroll down to the "Confirmation prompt" section and disable the checkbox, continue by opening the "Fulfillment" section and choose the "AWS Lambda function" option, select the `convertCAD` Lambda and the `Latest` version.
+
+Click on the "Build" button on the upper right corner. Now the bot is connected to Lambda to control the user's intent.
 
 ![Confirmation and fulfillment configuration](Images/lambda-confirmation-fulfillment.png)
 
@@ -517,7 +416,7 @@ Test the Lambda powered bot with some of the sample utterances; you should have 
 | --- | ---|
 | ![Converter without errors](Images/converter_ok.gif) | ![Converter with errors](Images/converter_errors.gif) |
 
-Answer any pending questions from the class before moving forward.
+Congratulations! you have created your first bot assisted by AWS Lambda, answer any pending questions from the class before moving forward.
 
 ---
 
@@ -527,11 +426,11 @@ In this activity, students will inspect the code of a Lambda function to have a 
 
 **Instructions:**
 
-* [README.md](Activities/04-Stu_Understanding_Lambdas/README.md)
+* [README.md](Activities/03-Stu_Understanding_Lambdas/README.md)
 
 **Files:**
 
-* [lambda_function.py](Activities/04-Stu_Understanding_Lambdas/Unsolved/lambda_function.py)
+* [lambda_function.py](Activities/03-Stu_Understanding_Lambdas/Unsolved/lambda_function.py)
 
 ---
 
