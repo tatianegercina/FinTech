@@ -176,7 +176,7 @@ In the previous activity, students confirmed that they have their API keys. In t
 
 **Files:**
 
-* [.env](Activities/01-Ins_Create_Env_Variables/Unsolved/.env)
+* [.env](Activities/01-Ins_Create_Env_Variables/Unsolved/dot.env)
 
 Open the 5.2 slides, and highlight the following discussion points:
 
@@ -186,7 +186,7 @@ Open the 5.2 slides, and highlight the following discussion points:
 
 * However, it is often easier in local development to utilize a `.env` file which mimics the behavior of a shell file when used with the `python-dotenv` library. For this reason, we will use `python-dotenv` to load environmental variables which can be accessed using `os.getenv`.
 
-Open the [starter file](Activities/01-Ins_Create_Env_Variables/Unsolved/.env), and perform a live demo of creating and exporting environment variables with the `.env` file.
+Open the [starter file](Activities/01-Ins_Create_Env_Variables/Unsolved/dot.env), and perform a live demo of creating and exporting environment variables with the `.env` file.
 
 * Enter the following command into `.env` file.
 
@@ -273,7 +273,7 @@ If students finish early, use the extra time to review the final two guided revi
 
 * [env_variables.ipynb](Activities/03-Stu_Under_Lock_And_Key/Unsolved/env_variables.ipynb)
 
-* [.env](Activities/03-Stu_Under_Lock_And_Key/Solved/.env)
+* [.env](Activities/03-Stu_Under_Lock_And_Key/Solved/dot.env)
 
 **Instructions:**
 
@@ -285,7 +285,7 @@ If students finish early, use the extra time to review the final two guided revi
 
 **Files:**
 
-* [.env](Activities/03-Stu_Under_Lock_And_Key/Solved/.env)
+* [.env](Activities/03-Stu_Under_Lock_And_Key/Solved/dot.env)
 
 * [env_variables.ipynb](Activities/03-Stu_Under_Lock_And_Key/Solved/env_variables.ipynb)
 
@@ -449,7 +449,7 @@ Have the `.env` file prepared before class so that it does not need to be create
 
 **Files:**
 
-* [.env](Activities/04-Ins_Plaid_Demo/Solved/.env)
+* [.env](Activities/04-Ins_Plaid_Demo/Solved/dot.env)
 
 * [plaid_demo.ipynb](Activities/04-Ins_Plaid_Demo/Solved/plaid_demo.ipynb)
 
@@ -459,7 +459,7 @@ Emphasize to students that one of the cool things about Plaid is that it provide
 
 #### Prepare Environment Variables
 
-Open the [.env starter file](Activities/04-Ins_Plaid_Demo/Solved/.env), and set up your environment variables. If possible, complete this step prior to the lesson.
+Open the [.env starter file](Activities/04-Ins_Plaid_Demo/Solved/dot.env), and set up your environment variables. If possible, complete this step prior to the lesson.
 
 * Plaid uses three types of API keys (**client id**, **public key**, and **sandbox secret key**). Each of these needs to be saved as environment variables in a `.env` file. Log into [Plaid](https://dashboard.plaid.com/account/keys) to retrieve them.
 
@@ -610,7 +610,7 @@ Communicate to students that they can work with a partner to complete the activi
 
 **Files:**
 
-* [.env](Activities/05-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/.env)
+* [.env](Activities/05-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/dot.env)
 
 * [sporting_plaid.ipynb](Activities/05-Stu_Sporting_Plaid_Pt_1/Unsolved/Core/sporting_plaid.ipynb)
 
@@ -660,7 +660,7 @@ Circulate through the room and provide assistance while students are working. St
 
 **Files:**
 
-* [.env](Activities/06-Stu_Sporting_Plaid_Pt_2/Unsolved/.env)
+* [.env](Activities/06-Stu_Sporting_Plaid_Pt_2/Unsolved/dot.env)
 
 * [sporting_plaid.ipynb](Activities/06-Stu_Sporting_Plaid_Pt_2/Unsolved/sporting_plaid.ipynb)
 
