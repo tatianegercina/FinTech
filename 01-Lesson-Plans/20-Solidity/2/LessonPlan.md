@@ -333,7 +333,7 @@ Have TAs circulate to address any questions that students may have about Solidit
 
 * Remember that strings are a more complex datatype and thus require the memory modifier to be specified when you are passing them as a parameter to a function.
 
-* A return statement's values must be contained within parenthesis when returning multiple values.
+* A return statement's values must be contained within parentheses when returning multiple values.
 
 * Functions must contain the public modifier to be accessible outside the contract.
 
