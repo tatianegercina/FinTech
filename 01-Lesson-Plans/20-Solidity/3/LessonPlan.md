@@ -8,7 +8,7 @@ Today's class will dive into more complex Solidity concepts, such as `mapping`s,
 
 By the end of the class, students will be able to:
 
-* Use `uint` and `int` Number types in Solidity and explain when to use each.
+* Use `uint` and `int` number types in Solidity and explain when to use each.
 
 * Use global variables to tell the current block number, transaction sender, and transaction value.
 
@@ -26,7 +26,7 @@ By the end of the class, students will be able to:
 
 * Today's lesson should be exciting for students now that they have gotten a small taste of building smart contracts with Solidity.
 
-* Expect some or all of the students to be somewhat anxious about learning a new language. Especially when that language differs so much from Python, reassure them that, with practice, they will be able to read and write Solidity in no time at all!
+* Expect some (or all) of the students to be somewhat anxious about learning a new language, especially when that language differs so much from Python. Reassure them that with practice, they will be able to read and write Solidity in no time at all!
 
 * Today's class introduces students to new programming concepts specific to the Solidity language. They will learn to use these concepts to build sophisticated smart contracts for Ethereum.
 
@@ -40,7 +40,7 @@ By the end of the class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [20.3 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f4c7bd0f-b479-4cc6-8180-ab28004ce744) Note that this video may not reflect the most recent lesson plan.
@@ -67,7 +67,7 @@ First, let's ask the students some recall questions about static data types:
 
 * What is the difference between an `int` and a `uint`?
 
-  * **Answer:** `int` can be positive and negative, `uint` is positive only.
+  * **Answer:** `int` can be positive and negative; `uint` is positive only.
 
 * What is a `payable` address, and why is it different from a regular address?
 
@@ -93,7 +93,7 @@ Propose to the students:
 
 * To do this, we'll need some built-in variables in Solidity that we can use to access this information.
 
-Open up [Remix](https://remix.ethereum.org) and continue in the `JointSavings.sol` -- the unsolved `GlobalAttributes.sol` contains the code that `JointSavings` should have up to this point.
+Open up [Remix](https://remix.ethereum.org) and continue in the `JointSavings.sol`—the unsolved `GlobalAttributes.sol` contains the code that `JointSavings` should have up to this point.
 
 First, we need to change the way we check who the account owners are.
 
@@ -176,7 +176,7 @@ uint last_deposit_amount;
 
 * We are going to add a couple of uint variables that will keep track of which block number the withdraw occurred at, as well as how much was withdrawn. We'll do the same for deposits.
 
-* While this data is already on-chain, visible from a block explorer, it is sometimes useful to have available in-contract.
+* While this data is already on-chain and visible from a block explorer, it is sometimes useful to have available in-contract.
 
 * Solidity can't jump outside of its sandbox, so we need to be explicit about the variables we need and don't need.
 
@@ -245,7 +245,7 @@ Great! Now it's time for the students to modify their contracts and add some mor
 
 ---
 
-### 4. Students Do: Using Global Variables (10 min)
+### 4. Student Do: Using Global Variables (10 min)
 
 In this activity, students will be adding the same details using `msg` and `block` variables in their contracts.
 
@@ -283,7 +283,7 @@ Ask the students the following questions:
 
 * What is `msg.value`?
 
-  * **Answer:** The amount of Ether that was sent with the transaction.
+  * **Answer:** The amount of ether that was sent with the transaction.
 
 Ask for further questions before moving on.
 
