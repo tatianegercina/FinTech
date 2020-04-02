@@ -80,7 +80,7 @@ Open the slideshow to the Postgres section and take some time to go over the pur
 
 Slack out the following resources:
 
-* [Student Guide](../StudentGuide.md) containing this week's objectives as well as resource links.
+* [Student Guide](../Supplemental/StudentGuide.md) containing this week's objectives as well as resource links.
 
 * [SQL Reference Guide](../Supplemental/SQL_reference_guide.pdf) for students to use as a reference during the activities this week.
 
@@ -100,11 +100,11 @@ Walk the class through the steps to create a database using pgAdmin.
 
 * In the pgAdmin editor, right-click the newly established server to create a new database.
 
-* From the menu, select Create, and then select Database to create a new database.
+* From the menu, select `Create`, and then select `Database` to create a new database.
 
   ![create_database.png](Images/create_database.png)
 
-* Enter "example_db" as the database name. Make sure the owner is set as the default Postgres, and then click Save.
+* Enter "example_db" as the database name. Make sure the owner is set as the default `Postgres`, and then click Save.
 
   ![example_db.png](Images/example_db.png)
 
@@ -132,18 +132,18 @@ Explain to students that this is how to access the code editor.
 
 Type the following lines of code, explaining each line:
 
- ```sql
- CREATE TABLE customer (
-    first_name VARCHAR(30) NOT NULL,
-    last_name VARCHAR(30),
-    gender VARCHAR(30),
-    age INT,
-    address VARCHAR(50),
-    city VARCHAR(50),
-    state CHAR(2),
-    zip_code CHAR(5)
- );
- ```
+```sql
+CREATE TABLE customer (
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30),
+  gender VARCHAR(30),
+  age INT,
+  address VARCHAR(50),
+  city VARCHAR(50),
+  state CHAR(2),
+  zip_code CHAR(5)
+);
+```
 
 * `CREATE TABLE customer (<COLUMNS>);` creates a table called `customer` with the columns listed within the parentheses.
 
@@ -163,13 +163,15 @@ Type the following lines of code, explaining each line:
 
 * `zip_code CHAR(5)` creates `zip_code` column which represents the postal zip code of the customer. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values *must* be character strings of 5 characters.
 
- **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
+**Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
 
 After reviewing the code, click the play icon to run the script. Make a note of the Messages tab at the bottom of the screen.
 
 ![play_icon.png](Images/play_icon.png)
 
-Demonstrate that the structure of a table can be visualized by appending the script with `SELECT * FROM <table name>;`. Point out that when running the appended script, a "relation <table_name> already exists" error message now appears at the bottom of the page due to the preceding `CREATE TABLE` statement.
+Demonstrate that the structure of a table can be visualized by appending the script with `SELECT * FROM <table name>;`.
+
+Point out that when running the appended script, a "relation <table_name> already exists" error message now appears at the bottom of the page due to the preceding `CREATE TABLE` statement.
 
 ![table-exists](Images/table-exists.png)
 
@@ -195,12 +197,12 @@ Type the following code while explaining what it does line by line.
 
 ```sql
 INSERT INTO customer
-(first_name, last_name, gender, age, address, city, state, zip_code)
+  (first_name, last_name, gender, age, address, city, state, zip_code)
 VALUES
-('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
-('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
-('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
+  ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
+  ('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
 
 SELECT *
 FROM customer;
@@ -214,21 +216,22 @@ FROM customer;
 
 Use the following code to query the table, extracting only the `first_name`.
 
- ```sql
- SELECT first_name
- FROM customer;
- ```
+```sql
+SELECT first_name
+FROM customer;
+```
 
 Explain that specifying a column name in the `SELECT` statement will return only the data contained in that field.
 
 Filter the queried data to display only male customers younger than 34.
 
- ```sql
- SELECT first_name, last_name
- FROM customer
- WHERE gender = 'Male'
- AND age < 34;
- ```
+```sql
+SELECT first_name, last_name
+FROM customer
+WHERE
+  gender = 'Male'
+  AND age < 34;
+```
 
 Explain the following points:
 
@@ -277,16 +280,16 @@ Create a new database named `state_info` in pgAdmin. Then use the the schema.sql
 
   ```sql
   INSERT INTO states
-  (state_name, state_abbreviation, population, state_property_tax_rate)
+    (state_name, state_abbreviation, population, state_property_tax_rate)
   VALUES
-  ('Florida', 'FL', 21477737, 0.0093),
-  ('Alabama', 'AL', 4903185, 0.0042),
-  ('Texas', 'TX', 28995881, 0.0181),
-  ('Kentucky', 'KY', 4467673, 0.0086),
-  ('Virginia', 'VA', 8535519, 0.0081),
-  ('Louisiana', 'LA', 4648794, 0.0053),
-  ('Utah', 'UT', 3205958, 0.0064),
-  ('Vermont', 'VT', 623989, 0.0188);
+    ('Florida', 'FL', 21477737, 0.0093),
+    ('Alabama', 'AL', 4903185, 0.0042),
+    ('Texas', 'TX', 28995881, 0.0181),
+    ('Kentucky', 'KY', 4467673, 0.0086),
+    ('Virginia', 'VA', 8535519, 0.0081),
+    ('Louisiana', 'LA', 4648794, 0.0053),
+    ('Utah', 'UT', 3205958, 0.0064),
+    ('Vermont', 'VT', 623989, 0.0188);
   ```
 
 * Create a query to view the data using the `SELECT` clause.
@@ -357,10 +360,10 @@ Using the `customer` table from the `example_db` database, insert the duplicate 
 
  ```sql
 INSERT INTO customer
-(first_name, last_name, gender, age, address, city, state, zip_code)
+  (first_name, last_name, gender, age, address, city, state, zip_code)
 VALUES
-('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
 
 SELECT *
 FROM customer;
@@ -370,10 +373,10 @@ FROM customer;
 
 Explain that duplicate data is a real-world occurrence (and an eyesore). Demonstrate how to remove the rows containing the string `Michael` in the `first_name` column.
 
- ```sql
+```sql
 DELETE FROM customer
 WHERE first_name = 'Michael';
- ```
+```
 
 * The duplicate was deleted, but so was the original row. That's a little annoying. Make sure the class understands why this happened.
 
@@ -383,37 +386,37 @@ WHERE first_name = 'Michael';
 
 Remove the `customer` table by running the `DROP TABLE` statement. As the name suggests, the `DROP TABLE` statement "drops" or deletes a table, while the `IF EXISTS` clause provides a conditional for dropping the table: if the table exists, then drop the table, otherwise skip the statement.
 
- ```sql
- -- Delete the table "customer"
- DROP TABLE IF EXISTS customer;
- ```
+```sql
+-- Delete the table "customer"
+DROP TABLE IF EXISTS customer;
+```
 
 Copy the following code from `schema.sql`, `seed.sql`, and `query.sql` file and paste it in the pgAdmin editor.
 
 ```sql
 -- Re-create the table "customer" with an incremental primary key
 CREATE TABLE customer (
-customer_id SERIAL PRIMARY KEY,
-first_name VARCHAR(30) NOT NULL,
-last_name VARCHAR(30),
-gender VARCHAR(30),
-age INT,
-address VARCHAR(50),
-city VARCHAR(50),
-state CHAR(2),
-zip_code CHAR(5)
+  customer_id SERIAL PRIMARY KEY,
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30),
+  gender VARCHAR(30),
+  age INT,
+  address VARCHAR(50),
+  city VARCHAR(50),
+  state CHAR(2),
+  zip_code CHAR(5)
 );
 
 -- Insert duplicated data back into the re-created table
 INSERT INTO customer
-(first_name, last_name, gender, age, address, city, state, zip_code)
+  (first_name, last_name, gender, age, address, city, state, zip_code)
 VALUES
-('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
-('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
-('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673),
-('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
-('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
+  ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
+  ('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673),
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
 
 -- Query all fields from the table
 SELECT *
@@ -568,7 +571,7 @@ In this activity, students will create a new table and import data from a CSV fi
 
 * [customer.csv](Activities/07-Stu_Customer_Demographics/Resources/customer.csv)
 
-**Instructions:** [README.md](Activities/07-Stu_Customer_Demographics/README.md)
+* **Instructions:** [README.md](Activities/07-Stu_Customer_Demographics/README.md)
 
 ### 13. Instructor Do: Review Customer Demographics (5 min)
 
@@ -612,9 +615,9 @@ In today's class, each of the operations has been in use. Students have:
 
   ```sql
   INSERT INTO customer
-  (first_name, last_name, gender, age, address, city, state, zip_code)
+    (first_name, last_name, gender, age, address, city, state, zip_code)
   VALUES
-  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709);
+    ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709);
   ```
 
 * Read data with the use of `SELECT`.
@@ -714,14 +717,15 @@ Create two new tables in `mortgage_db` in pgAdmin named `sales` and `mortgage`.
 * From the [query.sql](Activities/09-Ins_Joins/Solved/query.sql) file, copy and paste the code performing an `inner join` on the two tables:
 
   ```sql
-  SELECT sales.sales_id,
-         sales.payment_id,
-         sales.mortgage_id,
-         sales.loan_amount,
-         sales.loan_date,
-         mortgage.mortgage_id,
-         mortgage.mortgage_name,
-         mortgage.mortgage_rate
+  SELECT
+    sales.sales_id,
+    sales.payment_id,
+    sales.mortgage_id,
+    sales.loan_amount,
+    sales.loan_date,
+    mortgage.mortgage_id,
+    mortgage.mortgage_name,
+    mortgage.mortgage_rate
   FROM sales
   INNER JOIN mortgage ON sales.mortgage_id = mortgage.mortgage_id;
   ```
@@ -730,14 +734,15 @@ Create two new tables in `mortgage_db` in pgAdmin named `sales` and `mortgage`.
 
   ```sql
   -- Advanced INNER JOIN solution
-  SELECT a.sales_id,
-         a.payment_id,
-         a.mortgage_id,
-         a.loan_amount,
-         a.loan_date,
-         b.mortgage_id,
-         b.mortgage_name,
-         b.mortgage_rate
+  SELECT
+    a.sales_id,
+    a.payment_id,
+    a.mortgage_id,
+    a.loan_amount,
+    a.loan_date,
+    b.mortgage_id,
+    b.mortgage_name,
+    b.mortgage_rate
   FROM sales as a
   INNER JOIN mortgage as b ON a.mortgage_id = b.mortgage_id;
   ```
@@ -768,7 +773,7 @@ Point out one significant difference between SQL joins and Python joins:
 
   * `CROSS JOIN` returns records that match every row of the left table with every row of the right table. This type of join has the potential to make very large tables.
 
-      ![cross-join](Images/cross-join.png)
+    ![cross-join](Images/cross-join.png)
 
 Slack out the link to this explanation of Postgres [joins](https://www.tutorialspoint.com/postgresql/postgresql_using_joins.htm) for students to study.
 
@@ -805,24 +810,24 @@ Open the query.sql file and copy the code. Then open a new query tool and paste 
 * An inner join returns the matching records from both the left and right-side tables.
 
   ```sql
-  select *
-  from payments as a
+  SELECT *
+  FROM payments as a
   INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
   ```
 
 * A left join returns all of the records from the left table regardless of matching or unmatching records on the right table.
 
   ```sql
-  select *
-  from payments as a
+  SELECT *
+  FROM payments as a
   LEFT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
   ```
 
 * A right join returns all of the records from the right table regardless of matching or unmatching records on the left table.
 
   ```sql
-  select *
-  from payments as a
+  SELECT *
+  FROM payments as a
   RIGHT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
   ```
 
@@ -830,8 +835,8 @@ Open the query.sql file and copy the code. Then open a new query tool and paste 
 
   ```sql
   -- Perform a FULL OUTER JOIN
-  select *
-  from payments as a
+  SELECT *
+  FROM payments as a
   FULL OUTER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
   ```
 
@@ -839,21 +844,22 @@ Open the query.sql file and copy the code. Then open a new query tool and paste 
 
   ```sql
   -- Perform a CROSS JOIN
-  select *
-  from payments
+  SELECT *
+  FROM payments
   CROSS JOIN banks;
   ```
 
 * In order to find the customers with Wells Fargo bank accounts, the banks and customer tables must be joined together with the payments table. This is because the customer table cannot directly join to the banks table as there is no common key or column; however, by using the payments table as a joiner table (containing both a `bank_routing_number` and a `customer_id`), customers can be linked to payment records that are linked to Wells Fargo bank accounts.
 
   ```sql
-  select a.payment_id,
-         a.bank_number,
-         a.bank_routing_number,
-         b.bank_name,
-         c.first_name,
-         c.last_name
-  from payments as a
+  SELECT
+    a.payment_id,
+    a.bank_number,
+    a.bank_routing_number,
+    b.bank_name,
+    c.first_name,
+    c.last_name
+  FROM payments as a
   INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number
   INNER JOIN customer as c ON a.customer_id = c.customer_id
   ```
