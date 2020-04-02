@@ -206,6 +206,48 @@ entry_exit_plot.opts(xaxis=None)
 </details>
 
 <details>
+<summary>How do I create and use Exponential Weighted Moving Average (EWMA) Crossovers?</summary><br>
+
+<blockquote>
+<details>
+<summary>What it is:</summary><br>
+
+The EWMA crossover utilizes short and long term exponentially weighted moving averages.  Because the most recent prices are more heavily weighted and because the smaller window has less time included, the short term EWMA is considered a fast moving trend line with more momentum than its long term EWMA counterpart.
+
+These two variables are subsequently referred to as a *fast close* for short term EWMA and a *slow close* for long term EWMA.
+
+Much like the dual simple moving average crossover, when these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.<br>
+
+Check out the [moving average refresher](Moving_Average_Refresher.md) if you need a quick refresh on how moving averages work!
+
+<br>
+</details>
+<details>
+<summary>How to use it:</summary><br>
+
+If the short-term moving average line goes above the long-term moving average line, the indicator suggests that the price will be rising higher than the historical average in the short term.
+
+If the short-term moving average line dips below the long-term moving average line, the indicator suggests that the price will be dropping lower than the historical average in the short term.
+
+In the following candlestick chart for Bitcoin, you can see the dual moving average lines and the crossover points, indicating entry (buy signal) and exit (sell signal) points:
+
+<img src=Images/dual_ma_cross.png width=700><br>
+</details>
+<details>
+<summary>How to create it:</summary><br>
+
+The dual moving average crossover can be created by using Pandas functionality.  In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.
+
+<img src=Images/signals_df.PNG width=150>
+<blockquote>
+<details>
+<summary>Step One: Signal, STMA, and LTMA Columns</summary><br>
+
+</details>
+</blockquote>
+</details>
+</details>
+<details>
 <summary>How do I create and use Bollinger Bands?</summary><br>
 
 <blockquote>
@@ -248,7 +290,24 @@ The dual moving average crossover can be created by using Pandas functionality. 
 </details>
 
 <details>
-<summary>What are evaluation metrics and how do I use them?</summary><br>
+<summary>What are evaluation metrics used for?</summary><br>
+
+Evaluation metrics are calculations used to assess the value of trades.  Used in conjunction with your trading algorithms, they can be used to analyze it's performance and plan for needed adjustments.  In class we cover the following evluation metrics:
+
+- **Cumulative Return:** the total/aggregated amount of gains and losses for an investment. Cumulative return is measured across time and not for a given time period.
+
+- **Annual Return:** a time-weighted annual percentage representing the return on an investment over a period of time.
+
+- **Annual Volatility:** the annualized degree of variation in trading prices over time.
+
+- **Sharpe Ratio:** The return of investment compared to its risk, measured by the difference between the return on investment and the risk-free return.
+
+- **Downside Deviation/Return:** The measure of risk for returns that are below the minimum acceptable return.
+
+- **Sortino Ratio:** The quotient of harmful volatility and overall volatility. The Sortino ratio focuses on downside deviation rather than the standard deviation.
+
+A cheat sheet to these calculations can be seen [here.](EvaluationsCalculationGuide.md)
+
 </details>
 
 <details>
