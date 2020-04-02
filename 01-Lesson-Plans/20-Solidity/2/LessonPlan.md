@@ -884,7 +884,7 @@ Perform the following:
 
  ![Remix Deployed Contract](Images/remix_deployed_contract.png)
 
-* Click the drop-down arrow next to the grey deployed contract to display the contract's functions that can be called.
+* Click the dropdown arrow next to the grey deployed contract to display the contract's functions that can be called.
 
  ![Remix Contract Functions](Images/remix_contract_functions.png)
 
@@ -896,25 +896,25 @@ Discuss with the students:
 
 * Notice that the deposit function does not have an input next to it. This is because it does not have any parameters. Instead, you will pass it ether through the value field at the top.
 
-Lead students through passing `10 ether` into the deposit function and then withdrawing it.
+Lead students through passing `10 ether` into the deposit function, and then withdrawing it.
 
 ![Remix Deposit ether](Images/remix_deposit_ether.png)
 
 * We are now going to deposit some ether into our `JointSavings` account.
 
-* Locate the value field and enter `10` into the input box. Then change the dropdown menu to the denomination `ether`. This is saying that we are going to send `10 ether` in this transaction.
+* Locate the value field and enter `10` into the input box. Then, change the dropdown menu to the denomination `ether`. This is saying that we are going to send `10 ether` in this transaction.
 
 * Now click the `Deposit` button under the deployed contract.
 
  ![Remix transaction Confirm](Images/remix_transaction_confirm.png)
 
-* You will be prompted by meta mask to confirm the amount. Click `Confirm`.
+* You will be prompted by MetaMask to confirm the amount. Click `Confirm`.
 
 Have students confirm that that the `10 eth` was subtracted from their wallet in MetaMask.
 
 ![Remix transaction Confirm](Images/remix_meta_mask_balance.png)
 
-* Reopen your MetaMask wallet and check to make sure that your deposited `eth` is subtracted from your wallet balance.
+* Reopen your MetaMask wallet, and check to make sure that your deposited `eth` is subtracted from your wallet balance.
 
 Lead students through withdrawing the `10 eth` from their `Jointsavings` account back to their wallet. Have students open their MetaMask wallet and copy their address at the top:
 
@@ -926,7 +926,7 @@ Lead students through withdrawing the `10 eth` from their `Jointsavings` account
 
 Since we defined the `amount` variable as a `uint256` we are working with the smallest denomination of `ether` called `wei`. Before we can withdraw our `10 ether`, we must convert it to an equivalent amount of `wei`.
 
-We can do this in many ways, we can either use `Web3.py`, a website like [eth-converter.com](eth-converter.com), or we can remember that `1 ether` is equivalent to 1 * 10^18 `wei`. That's right, we can specify incredibly small amounts of `ether` by using `wei`. In our case, `10 ether` is `10000000000000000000 wei` -- aka 1 with 19 zeros after it.
+We can do this in many ways: we can either use `Web3.py`, a website like [eth-converter.com](eth-converter.com), or we can remember that `1 ether` is equivalent to 1 * 10^18 `wei`. That's right—we can specify incredibly small amounts of `ether` by using `wei`. In our case, `10 ether` is `10000000000000000000 wei`—aka 1 with 19 zeros after it.
 
 Call the `Withdraw` function and pass it `10 ether` (in `wei`) and the address to withdraw to.
 
