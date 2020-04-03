@@ -633,7 +633,7 @@ Close the discussion by answering any remaining questions before moving forward.
 
 ---
 
-### 10. Instructor Do: Custom Slots (10 min)
+### 10. Instructor Do: Custom Slots (15 min)
 
 In this activity, students will learn how to create a custom slot and add it to an Amazon Lex bot intent.
 
@@ -742,15 +742,15 @@ Answer any questions before moving on.
 
 ### 11. Students Do: Crypto Converter (20 min)
 
-In this activity, students will extend their cryptocurrency converter by adding a custom slot to allow users to select between Bitcoin, Ethereum, or Ripple to convert from US Dollars. Also, business logic to identify the cryptocurrency chosen by the user and make the conversion will be added to the Lambda function.
+In this activity, students will extend their cryptocurrency converter by adding a custom slot to allow users to select between Bitcoin, Ethereum, or Ripple to convert from dollars. Also, business logic to identify the cryptocurrency chosen by the user and make the conversion will be added to the Lambda function.
 
 **Instructions:**
 
-* [README.md](Activities/07-Stu_Crypto_Converter/README.md)
+* [README.md](Activities/06-Stu_Crypto_Converter/README.md)
 
 **Files:**
 
-* [lambda_function.py](Activities/07-Stu_Crypto_Converter/Unsolved/lambda_function.py)
+* [lambda_function.py](Activities/06-Stu_Crypto_Converter/Unsolved/lambda_function.py)
 
 ---
 

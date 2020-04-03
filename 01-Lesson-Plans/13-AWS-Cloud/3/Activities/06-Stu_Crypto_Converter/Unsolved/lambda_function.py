@@ -14,26 +14,16 @@ def parse_float(n):
         return float("nan")
 
 
-def get_cryptoprice(crypto):
+def get_btcprice():
     """
-    Retrieves the current price of BTC, ETH or XRP in US Dollars from the alternative.me Crypto API.
+    Retrieves the current price of bitcoin in dollars from the alternative.me Crypto API.
     """
-    url = ""
-    id = ""
-    if crypto == "Bitcoin":
-        url = "https://api.alternative.me/v2/ticker/Bitcoin/?convert=USD"
-        id = "1"
-    elif crypto == "Ethereum":
-        url = "https://api.alternative.me/v2/ticker/Ethereum/?convert=USD"
-        id = "1027"
-    else:
-        url = "https://api.alternative.me/v2/ticker/Ripple/?convert=USD"
-        id = "52"
-
-    response = requests.get(url)
+    bitcoin_api_url = "https://api.alternative.me/v2/ticker/bitcoin/?convert=CAD"
+    response = requests.get(bitcoin_api_url)
     response_json = response.json()
-    price_usd = parse_float(response_json["data"][id]["quotes"]["USD"]["price"])
-    return price_usd
+    price_cad = parse_float(response_json["data"]["1"]["quotes"]["CAD"]["price"])
+    return price_cad
+
 
 def build_validation_result(is_valid, violated_slot, message_content):
     """
@@ -49,34 +39,34 @@ def build_validation_result(is_valid, violated_slot, message_content):
     }
 
 
-def validate_data(birthday, usd_amount, intent_request):
+def validate_data(birthday, cad_amount, intent_request):
     """
     Validates the data provided by the user.
     """
 
-    # Validate that the user is over 21 years old
+    # Validate that the user is over 18 years old
     if birthday is not None:
         birth_date = datetime.strptime(birthday, "%Y-%m-%d")
         age = relativedelta(datetime.now(), birth_date).years
-        if age < 21:
+        if age < 18:
             return build_validation_result(
                 False,
                 "birthday",
-                "You should be at least 21 years old to use this service, "
+                "You should be at least 18 years old to use this service, "
                 "please provide a different date of birth.",
             )
 
     # Validate the investment amount, it should be > 0
-    if usd_amount is not None:
-        usd_amount = parse_float(
-            usd_amount
+    if cad_amount is not None:
+        cad_amount = parse_float(
+            cad_amount
         )  # Since parameters are strings it's important to cast values
-        if usd_amount <= 0:
+        if cad_amount <= 0:
             return build_validation_result(
                 False,
-                "usdAmount",
+                "cadAmount",
                 "The amount to convert should be greater than zero, "
-                "please provide a correct amount in USD to convert.",
+                "please provide a correct amount in dollars to convert.",
             )
 
     # A True results is returned if age or amount are valid
@@ -137,15 +127,14 @@ def close(session_attributes, fulfillment_state, message):
 
 
 ### Intents Handlers ###
-def convert_usd(intent_request):
+def convert_cad(intent_request):
     """
-    Performs dialog management and fulfillment for recommending a portfolio.
+    Performs dialog management and fulfillment for converting from dollars to bitcoin.
     """
 
     # Gets slots' values
     birthday = get_slots(intent_request)["birthday"]
-    usd_amount = get_slots(intent_request)["usdAmount"]
-    crypto = get_slots(intent_request)["crypto"]
+    cad_amount = get_slots(intent_request)["cadAmount"]
 
     # Gets the invocation source, for Lex dialogs "DialogCodeHook" is expected.
     source = intent_request["invocationSource"]  #
@@ -157,7 +146,7 @@ def convert_usd(intent_request):
         slots = get_slots(intent_request)
 
         # Validates user's input using the validate_data function
-        validation_result = validate_data(birthday, usd_amount, intent_request)
+        validation_result = validate_data(birthday, cad_amount, intent_request)
 
         # If the data provided by the user is not valid,
         # the elicitSlot dialog action is used to re-prompt for the first violation detected.
@@ -179,9 +168,9 @@ def convert_usd(intent_request):
         # Once all slots are valid, a delegate dialog is returned to Lex to choose the next course of action.
         return delegate(output_session_attributes, get_slots(intent_request))
 
-    # Get the current price of BTC, ETH or XRP in USD and make the conversion from USD.
-    crypto_value = parse_float(usd_amount) / get_cryptoprice(crypto)
-    crypto_value = round(crypto_value, 4)
+    # Get the current price of bitcoin in dolars and make the conversion from dollars to bitcoin.
+    btc_value = parse_float(cad_amount) / get_btcprice()
+    btc_value = round(btc_value, 4)
 
     # Return a message with conversion's result.
     return close(
@@ -190,9 +179,9 @@ def convert_usd(intent_request):
         {
             "contentType": "PlainText",
             "content": """Thank you for your information;
-            you can get {} {} for your {} US Dollars.
+            you can get {} Bitcoins for your ${} dollars.
             """.format(
-                crypto_value, crypto, usd_amount
+                btc_value, cad_amount
             ),
         },
     )
@@ -208,8 +197,8 @@ def dispatch(intent_request):
     intent_name = intent_request["currentIntent"]["name"]
 
     # Dispatch to bot's intent handlers
-    if intent_name == "ConvertUSD":
-        return convert_usd(intent_request)
+    if intent_name == "convertCAD":
+        return convert_cad(intent_request)
 
     raise Exception("Intent with name " + intent_name + " not supported")
 
