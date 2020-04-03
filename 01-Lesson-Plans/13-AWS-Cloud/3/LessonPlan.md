@@ -597,13 +597,13 @@ In this activity, students will test their Lambda functions and will practice th
 
 **Files:**
 
-* [convertOkText.json](Activities/06-Stu_Buggy_Lambdas/Solved/convertOkText.json)
+* [convertOkText.json](Activities/05-Stu_Buggy_Lambdas/Solved/convertOkText.json)
 
-* [convertErrNegAmount.json](Activities/06-Stu_Buggy_Lambdas/Solved/convertErrNegAmount.json)
+* [convertErrNegAmount.json](Activities/05-Stu_Buggy_Lambdas/Solved/convertErrNegAmount.json)
 
-* [convertOldAge.json](Activities/06-Stu_Buggy_Lambdas/Solved/convertOldAge.json)
+* [convertOldAge.json](Activities/05-Stu_Buggy_Lambdas/Solved/convertOldAge.json)
 
-Start the review activity by adding the `convertErrNegAmount` and `convertOldAge` test events to your `convertUSD` Lambda. Run both tests, and highlight the following:
+Start the review activity by adding the `convertErrNegAmount` and `convertOldAge` test events to your `convertCAD` Lambda. Run both tests, and highlight the following:
 
 * The `convertErrNegAmount` behavior is the same as the case when a zero is passed, an `ElicitSlot` type is returned, asking the user for an amount greater than zero.
 
@@ -613,7 +613,7 @@ Open a facilitated discussion with the students by asking the following question
 
 * How can you prevent a possible fake date of birth from being given to the bot?
 
-  **Sample Answer:** Let us suppose that the average life expectancy is 85 years old, we can add an additional condition to validate that the age is between 21 and 85 years.
+  **Sample Answer:** Let us suppose that the average life expectancy is 85 years old, we can add an additional condition to validate that the age is between 18 and 85 years.
 
   **Sample Answer:** We can unfairly discriminate an older person to use the service, so I would not be worried about this kind of validation.
 
@@ -637,71 +637,106 @@ Close the discussion by answering any remaining questions before moving forward.
 
 In this activity, students will learn how to create a custom slot and add it to an Amazon Lex bot intent.
 
-Comment to students that it is possible to create custom slot types. This is intended to gather specific data values for a slot, for example, the size of a pizza (personal, small, medium, or large) on a pizza ordering bot. Explain to students that now you will show them how to create a custom slot to allow users to choose the cryptocurrency they want to convert to.
+Comment to students that it is possible to create custom slot types. This is intended to gather specific data values for a slot, for example, the size of a pizza (personal, small, medium, or large) on a pizza ordering bot.
 
-Open the Amazon Lex console and navigate to the `ConvertUSD` intent editor. On the left side menu, click on the blue plus symbol next to the _Slot types_ option to add a new custom slot type.
+Explain to students that you will show them how to create a custom slot to allow users to choose the cryptocurrency they want to convert to.
+
+Open the Amazon Lex console and navigate to the `convertCAD` intent editor. On the left side menu, click on the blue plus symbol next to the "Slot types" option to add a new custom slot type.
 
 ![Adding a new slot type](Images/add-slot-type.png)
 
-Next, a popup window will appear, click on the _Create slot type_ option to continue.
+Next, a popup window will appear, click on the "Create slot type" option to continue.
 
 ![Create a new slot type](Images/create-slot-type.png)
 
 Configure the new slot type as follows:
 
 * **Slot type name:** `CryptoCurrency`
-* **Description:** `Available cryptocurrencies to convert.`
-* **Slot Resolution:** Choose _Restrict to Slot values and Synonyms_. By selecting this option, the user has to choose only among the available options.
-* **Value:** Add three values and synonyms, one per each cryptocurrency, as can be seen below.
 
-Once you are done, click on the _Save slot type_ button.
+* **Description:** `Available cryptocurrencies to convert.`
+
+* **Slot Resolution:** Choose "Restrict to Slot values and Synonyms." By selecting this option, the user has to choose only among the available options.
+
+* **Value:** Add three values and synonyms, one per each of the following cryptocurrencies.
+
+  | Value | Synonym |
+  |-------|---------|
+  | Bitcoin | BTC |
+  | Ethereum | ETH |
+  | Ripple | XRP |
+
+Once you are done, click on the "Add slot to intent" button.
 
 ![Configuring the new slot type](Images/configure-new-slot-type.png)
 
-Come back to the `ConvertUSD` intent editor, add a new slot named `crypto`, click on the _Slot type_ dropdown list, and you will see your brand new slot type. Select `CryptoCurrency` from the list. End the slot configuration by typing `What cryptocurrency do you want to convert to?` on the prompt and be sure the _Required_ checkbox is selected.
+Back in the `convertCAD` intent editor, you will note that a new slot named `slotThree` was added with the `CryptoCurrency` slot type.
+
+![The new slot three added](Images/new-slotThree-added.png)
+
+Change the name of the `slotThree` to `crypto`, set the prompt as `What cryptocurrency do you want to convert to?` and be sure the "Required" checkbox is selected.
 
 ![Add the crypto slot](Images/add-crypto-slot.png)
 
 Explain to the students that now the bot is configured to elicit the `crypto` slot; however, we need to modify the utterances to add a better dialog that includes the new slot.
 
-Modify the utterances to have the _Sample utterances_ like the ones shown below.
+Modify the utterances to have the following "Sample utterances".
+
+* `I want to invest in cryptocurrencies`
+
+* `I want to convert dollars to a cryptocurrency`
+
+* `I want to buy {crypto}`
+
+* `I want to convert CAD to {crypto}`
+
+* `I want to convert dollars to {crypto}`
+
+* `I want to convert {cadAmount} dollars to {crypto}`
 
 ![New sample utterances](Images/new-crypto-utterances.png)
 
-Highlight to students that on the new utterances, the words `bitcoin` and `BTC` should be deleted and type `{crypto}` instead to allow users to specify on their dialog what cryptocurrency they want to convert to, for example by typing `I want to convert USD to Ripple`, `Ripple` will be taken as the `crypto` slot.
+Highlight to students that on the new utterances, the words `bitcoin` and `BTC` should be deleted and type `{crypto}` instead to allow users to specify on their dialog what cryptocurrency they want to convert to, for example by typing `I want to convert dollars to Ripple`, `Ripple` will be taken as the `crypto` slot.
 
-Also, note that you should not have repeated utterances since an error will raise when you compile the bot. The utterances `I want to convert {usdAmount} to BTC` and `I want to convert {usdAmount} to bitcoin` will become `I want to convert {usdAmount} to {crypto}`, so you only need to keep this utterance once.
+Also, explain to students that they should not have repeated utterances since an error will raise when they compile the bot.
 
-Build the bot and test it on the _Test bot_ window. Start with typing the sample utterance `I want to invest in crypto` to elicit all the slots as follows.
+Build the bot and test it on the "Test bot" window. Start with typing the sample utterance `I want to invest in cryptocurrencies` to elicit all the slots as follows.
 
 ![Sample utterance 1](Images/custom_slots_1.gif)
 
-Explain to students that, when the `crypto` slot is elicited, only the three options will be valid, however, giving the user the chance to type any cryptocurrency name could be prone to errors, that is why using _Card Slots_ could be useful.
+Explain to students that, when the `crypto` slot is elicited, only the three options will be valid, however, giving the user the chance to type any cryptocurrency name could be prone to errors, that is why using "Card Slots" could be useful.
 
-To create a _Card Slot_, click on the gear icon next to `crypto` slot's prompt.
+To create a "Card Slot," click on the gear icon next to `crypto` slot's prompt.
 
 ![Create a card slot](Images/create-card-slot.png)
 
-The _crypto settings_ window will open, scroll down to the _Prompt response cards_ section, and start by adding this URL in the _Image URL_ text field: https://cdn1.iconfinder.com/data/icons/cryptocurrency-set-2018/375/Asset_1480-128.png. Comment to students that this URL should point to a public image that they can store as a public asset on an AWS S3 bucket. For this demo, we are using a free public image from [Iconfinder](https://www.iconfinder.com/).
+The "crypto settings" window will open, scroll down to the "Prompt response cards" section, and start by adding this URL in the "Image URL" text field: <https://cdn1.iconfinder.com/data/icons/cryptocurrency-set-2018/375/Asset_1480-128.png>.
+
+Comment to students that this URL should point to a public image that they can store as a public asset on an AWS S3 bucket. For this demo, we are using a free public image from [Iconfinder](https://www.iconfinder.com/).
 
 ![Add card slot image](Images/add-card-slot-image.png)
 
-Comment to the students that a card slot can have up to five cards; in this demo, we will create one card with three options. Continue by adding the title and subtitle, as is shown below.
+Explain to the students that a card slot can have up to five cards; in this demo, we will create one card with three options. Continue by adding the following title and subtitle.
 
-* **Tittle:** `Available CryptoCurrencies`
+* **Tittle:** `Available Cryptocurrencies`
 * **Subtitle:** `Choose one crypto to convert`
 
-Next, explain to students that each option will appear as a button on the card, so a title should be defined for each one together with a value; the value is taken from the values assigned when the custom slot type is created. In this demo, you will see three possible values on the _Button value_ dropdown list, as it is shown below. Once you finish, click on the _Save_ button to continue.
+![Adding title and subtitle to the card](Images/add-tilte-and-subtile-slot.png)
+
+Next, explain to students that each option will appear as a button on the card, so a title should be defined for each button together with a value; the value is taken from the values assigned when the custom slot type is created.
+
+In this demo, you will see three possible values on the "Button value" dropdown list, as it is shown below. Once you finish, click on the "Save" button to continue.
 
 ![Card slot values](Images/card-slot-values.png)
 
-Click on the _Build_ button, once the build process is done, test your bot on the _Test bot_ window, show to students how the card's options are presented and click on `Ethereum`; as you can see below, something strange is happening - despite selecting `Ethererum`, the bot is converting to `Bitcoin`.
+Click on the "Build" button, once the build process is done. Test your bot on the "Test bot" window and show to students how the card's options are presented.
 
-![Sample card slot demo](Images/custo_slots_cards.gif)
+Click on `Ethereum`, as you can see below something strange is happening, despite selecting `Ethererum` the bot is converting to `Bitcoin`.
+
+![Sample card slot demo](Images/custom_slots_cards.gif)
 
 **What is happening?** Explain to students that the bot dialog and elicitation process is working correctly; however, we have to modify the Lambda function to allow the bot to make the correct conversion. This is going to be done in the next activity.
 
-Answer any pending questions before continuing.
+Answer any questions before moving on.
 
 ---
 
