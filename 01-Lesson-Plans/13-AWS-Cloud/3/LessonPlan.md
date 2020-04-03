@@ -758,25 +758,23 @@ In this activity, students will extend their cryptocurrency converter by adding 
 
 **Files:**
 
-* [lambda_function.py](Activities/07-Stu_Crypto_Converter/Solved/lambda_function.py)
+* [lambda_function.py](Activities/06-Stu_Crypto_Converter/Solved/lambda_function.py)
 
-Start by reviewing the bot configuration. Open the Amazon Lex console, navigate to the `ConvertUSD` intent editor on the `Crypto_Converter` bot and highlight the following:
+Start by reviewing the bot configuration. Open the Amazon Lex console, navigate to the `convertCAD` intent editor on the `Crypto_Converter` bot and highlight the following:
 
-* As you presented on the previous demo, students should have created a new slot type called `CryptoCurrency` with the following structure:
-
-  ![CrytoCurrency Slot Type](Images/cryptocurrency_slot_type.png)
+* As it was presented on the previous demo, you should have created a new slot type called `CryptoCurrency` with three possible values: Bitcoin, Ethereum, and Ripple.
 
 * The user can use either the value or the synonyms to refer to the cryptocurrencies while talking to the bot.
 
 * Once the new slot type is created, it is possible to add the `crypto` slot to the intent.
 
-* The `crypto` slot is configured to show prompt response cards as follows:
+* The `crypto` slot should be configured to show prompt response cards as follows:
 
   ![Crypto slot response cards](Images/crypto_slot_response_cards.png)
 
-* The card's image should be public, it can be stored anywhere on the web; an AWS S3 public asset could be the best option.
+* The card's image should be public, it can be stored anywhere on the web; an Amazon S3 public asset may be the best option.
 
-Continue to the Lambda function code, open the solution on your AWS Lambda online code editor, and highlight the following:
+Continue to the Lambda function code, open the solution on your AWS Lambda online code editor and highlight the following:
 
 * There is no need to validate the name of the cryptocurrency since the user does not type it.
 
@@ -785,56 +783,56 @@ Continue to the Lambda function code, open the solution on your AWS Lambda onlin
   ```python
   def get_cryptoprice(crypto):
       """
-      Retrieves the current price of BTC, ETH or XRP in US Dollars from the alternative.me Crypto API.
+      Retrieves the current price of BTC, ETH or XRP in Canadian Dollars from the alternative.me Crypto API.
       """
       url = ""
       id = ""
       if crypto == "Bitcoin":
-          url = "https://api.alternative.me/v2/ticker/Bitcoin/?convert=USD"
+          url = "https://api.alternative.me/v2/ticker/Bitcoin/?convert=CAD"
           id = "1"
       elif crypto == "Ethereum":
-          url = "https://api.alternative.me/v2/ticker/Ethereum/?convert=USD"
+          url = "https://api.alternative.me/v2/ticker/Ethereum/?convert=CAD"
           id = "1027"
       else:
-          url = "https://api.alternative.me/v2/ticker/Ripple/?convert=USD"
+          url = "https://api.alternative.me/v2/ticker/Ripple/?convert=CAD"
           id = "52"
 
       response = requests.get(url)
       response_json = response.json()
-      price_usd = parse_float(response_json["data"][id]["quotes"]["USD"]["price"])
-      return price_usd
+      price_cad = parse_float(response_json["data"][id]["quotes"]["CAD"]["price"])
+      return price_cad
   ```
 
-* To fetch the value of the `crypto` slot, a new variable called `crypto` was defined at the beginning of the `convert_usd()` function.
+* To fetch the value of the `crypto` slot, a new variable called `crypto` was defined at the beginning of the `convert_cad()` function.
 
   ```python
   crypto = get_slots(intent_request)["crypto"]
   ```
 
-* The `get_cryptoprice()` function is used in the `convert_usd()` function to fetch the current price of the selected cryptocurrency, then the conversion to US Dollars is calculated.
+* The `get_cryptoprice()` function is used in the `convert_cad()` function to fetch the current price of the selected cryptocurrency, then the conversion to Canadian Dollars is calculated.
 
   ```python
-  # Get the current price of BTC, ETH or XRP in USD and make the conversion from USD.
-  crypto_value = parse_float(usd_amount) / get_cryptoprice(crypto)
-
+  # Get the current price of BTC, ETH or XRP in CAD and make the conversion from CAD.
+  crypto_value = parse_float(cad_amount) / get_cryptoprice(crypto)
   crypto_value = round(crypto_value, 4)
   ```
 
-* The fulfillment message is formatted in the `convert_usd()` function to include the name of the selected cryptocurrency dynamically.
+* The fulfillment message is formatted in the `convert_cad()` function to include the name of the selected cryptocurrency dynamically.
 
   ```python
+  # Return a message with conversion's result.
   return close(
-          intent_request["sessionAttributes"],
-          "Fulfilled",
-          {
-              "contentType": "PlainText",
-              "content": """Thank you for your information;
-              you can get {} {} for your {} US Dollars.
-              """.format(
-                  crypto_value, crypto, usd_amount
-              ),
-          },
-      )
+      intent_request["sessionAttributes"],
+      "Fulfilled",
+      {
+          "contentType": "PlainText",
+          "content": """Thank you for your information;
+          you can get {} {} for your ${} dollars.
+          """.format(
+              crypto_value, crypto, cad_amount
+          ),
+      },
+  )
   ```
 
 Continue to the Amazon Lex console, test the bot to validate the changes made on Lambda; you should see a dialog as follows.
@@ -857,15 +855,7 @@ Answer any reminder question before moving forward.
 
 ---
 
-### 13. Instructor Do: Deployment Options (15 min)
-
-Walk through the solution and highlight the following:
-
-* Something really important
-
----
-
-### 14. Instructor Do: Structured Review (35 min)
+### 13. Instructor Do: Structured Review (35 min)
 
 **Note:** If you are teaching this Lesson on a weeknight, please save this 35-minute review for the next Saturday class.
 
