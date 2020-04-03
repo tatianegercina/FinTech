@@ -382,7 +382,7 @@ function withdraw(uint amount) public {
 
 * Notice how expressive we can calculate the time 24 hours from now, right in the native Solidity syntax!
 
-* Solidity provides time units in `seconds`, `minutes`, `days`, and `weeks` ---and does not consider leap years!
+* Solidity provides time units in `seconds`, `minutes`, `days`, and `weeks`—and does not consider leap years!
 
 * This is another reminder that if we need an extremely specific time, we'll need special smart contracts to maintain the Gregorian calendar for us, but we are just fine using this implementation.
 
@@ -392,7 +392,7 @@ Now it's time for the students to create the timelock!
 
 ---
 
-### 7. Students Do: Creating a Timelock (10 min)
+### 7. Student Do: Creating a Timelock (10 min)
 
 In this activity, students will add the same timelock to their `JointSavings` contracts.
 
@@ -426,7 +426,7 @@ Ask the students:
 
 * What does a `require` do again? Why is it better than an `if` statement for this check?
 
-  * **Answer:** `require` enforces a requirement, stopping the contract if the requirement is not satisfied, and returns leftover gas and Ether. In this case, we want this hard stopping point, as we will not move forward if this condition is not met.
+  * **Answer:** `require` enforces a requirement, stopping the contract if the requirement is not satisfied, and returns leftover gas and ether. In this case, we want this hard stopping point, as we will not move forward if this condition is not met.
 
 * Why is there variability in the accuracy of time when using `now`/`block.timestamp`?
 
@@ -488,7 +488,7 @@ Explain to the class:
 
 * With this one condition, we are creating a much more customized system than we'd be able to build on top of typical banking infrastructure.
 
-* Simple things like this can also be what makes your smart contracts so powerful -- you can enforce whatever rules you decide!
+* Simple things like this can also be what makes your smart contracts so powerful—you can enforce whatever rules you decide!
 
 Now, have the students add the same threshold to their contracts!
 
