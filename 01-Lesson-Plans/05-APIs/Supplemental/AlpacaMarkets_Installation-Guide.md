@@ -34,9 +34,14 @@ Once the `alpaca-trade-api` download is complete, verify the installation comple
 
 ## Set ALPACA_API_KEY and ALPACA_SECRET_KEY environment variables
 
-In order to use the Alpaca trade SDK, you will need to set your `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` environment variables prior to using the library, as Alpaca communicates with the Alpaca API.
+In order to use the Alpaca trade SDK, you will need to set your `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` environment variables before using the library, as Alpaca communicates with the Alpaca API.
 
-Go to [Alpaca Markets](https://app.alpaca.markets) and login to your account. After logging in click the `Go to Paper Account` link in the navigation sidebar.
+Go to [Alpaca Markets](https://app.alpaca.markets) and login to your account. After logging in you will be taken to a page that looks like this and will probably display a form asking you for personal information. **YOU DO NOT NEED TO ENTER THIS INFORMATION**
+
+![SSN_NOT_REQUIRED](Images/SSN_NOT_REQUIRED.png)
+
+
+Now, click the `Go to Paper Account` link in the navigation sidebar.
 
   ![alpaca-token](Images/alpaca_go_to_paper.png)
 
