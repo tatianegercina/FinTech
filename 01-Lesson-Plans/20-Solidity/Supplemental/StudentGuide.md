@@ -12,7 +12,7 @@
 
 * Control Structures in Ethereum: https://medium.com/@k3no/control-structures-in-ethereum-3f2d4149b84a
 
-* What difference between if and require in solidity: https://ethereum.stackexchange.com/questions/60585/what-difference-between-if-and-require-in-solidity
+* What difference between if and require in Solidity: https://ethereum.stackexchange.com/questions/60585/what-difference-between-if-and-require-in-solidity
 
 ## Books
 
@@ -23,4 +23,4 @@
 * Ethereum for Developers: https://ethereum.org/developers/#getting-started
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
