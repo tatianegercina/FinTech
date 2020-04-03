@@ -12,11 +12,11 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * Code drills range in complexity and pace, so the time allotted to each section of activities should be fluid, to allow each student to work through the problems at their own pace.
 
-* You may find it helpful to review specific drills or activities with the entire class, but the majority of time will likely be best served by rotating between groups of students to help them with any issues that they are having. This will also be a good time to see how they are feeling about Solidity in general and to give them some words of encouragement.
+* You may find it helpful to review specific drills or activities with the entire class, but the majority of time will likely be best served by rotating between groups of students to help them with any issues that they are having. This will also be a good time to see how they are feeling about Solidity in general, and to give them some words of encouragement.
 
-* One way to challenge students is to have "code drill races," where students pair off and race each other to complete a set of drills. However, use this strategy cautiously and thoughtfully so that you don't overwhelm any beginner programmers.
+* One way to challenge students is to have "code drill races," where students pair off and race each other to complete a set of drills. However, use this strategy cautiously and thoughtfully, so that you don't overwhelm any beginner programmers.
 
-* Overall, this should be a fun day for students that will help them build confidence in their Solidity programming skills. Be sure to offer plenty of support and encouragement to those students who have never worked with a compiled language
+* Overall, this should be a fun day for students that will help them build confidence in their Solidity programming skills. Be sure to offer plenty of support and encouragement to students who have never worked with a compiled language.
 
 ### Sample Class Video (Highly Recommended)
 * To watch an example class lecture, go here: [20.4 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=aed7b919-b3e3-4440-b4d2-ab28004ce6f0) Note that this video may not reflect the most recent lesson plan.
