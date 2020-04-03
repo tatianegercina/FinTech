@@ -25,17 +25,17 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 ### 1. Instructor Do: Welcome Students (5 min)
 
-Welcome students and explain that Today's class will be a fun Solidity review day. Every student will get the opportunity to work with the instructional staff to answer any Solidity questions they have. Still, the majority of time will be spent working through a series of Solidity code drills.
+Welcome students and explain that today's class will be a fun Solidity review day. Every student will get the opportunity to work with the instructional staff to answer any Solidity questions they have. Still, the majority of time will be spent working through a series of Solidity code drills.
 
 Explain code drills to students:
 
-* Solidity introduces a new programming paradigm that may be challenging to master. The good news is that we are going to continue working with Solidity in the forthcoming weeks.
+* Solidity introduces a new programming paradigm that may be challenging to master. The good news is that we will continue working with Solidity.
 
-* The most successful path to mastering anything is to practice. Today's class will offer the opportunity to strengthen the Solidity basics through a series of code drills that varies in complexity and are aimed to prepare you for the next weeks.
+* The most successful path to mastering anything is to practice. Today's class will offer the opportunity to strengthen the Solidity basics through a series of code drills that vary in complexity and are aimed to prepare you for the coming weeks.
 
-* The key to learning to code is _to code_. Building steady daily coding habits will help build muscle memory that makes the process of typing code and remembering syntax easier.
+* The key to learning to code is _to code_. Steadily building daily coding habits will help build muscle memory that makes the process of typing code and remembering syntax easier.
 
-* The goal is to practice coding in Solidity to the point where all of the syntax of the language becomes second nature. This allows you to use your mental power on problem-solving and not on basic things like how to declare a variable or define a contract.
+* The goal is to practice coding in Solidity to the point where all of the syntax of the language becomes second nature. This allows you to use your mental power on problem-solving, and not on basic things like how to declare a variable or define a contract.
 
 * Code drills are a way to help build that muscle memory. They are designed to provide essential practice with coding. The problems range from simple to complex, and they force you to focus on the fundamentals of the language.
 
