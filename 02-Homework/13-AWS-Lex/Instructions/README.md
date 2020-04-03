@@ -16,6 +16,7 @@ It is time to take what you have learned about unsupervised learning and the AWS
 
 5. Push the above changes to GitHub or GitLab.
 
+---
 
 ## Option 1: Robo Advisor for Retirement Plans
 
@@ -25,7 +26,7 @@ It is time to take what you have learned about unsupervised learning and the AWS
 
 ### Background
 
-You were hired as a digital transformation consultant by one of the most prominent retirement plan providers in the country; they want to increase their client portfolio, especially by engaging young people. Since machine learning and NLP are disrupting finance to improve customer experience, you decide to create a robo advisor that could be used by customers or potential new customers to get investment portfolio recommendations for retirement.
+You were hired as a digital transformation consultant by one of the most prominent retirement plan providers in the country; they want to increase their client portfolio, especially by engaging young people. Since machine learning and natural language processing are disrupting finance to improve customer experience, you decide to create a robo advisor that could be used by customers or potential new customers to get investment portfolio recommendations for retirement.
 
 In this homework assignment, you will combine your new skills with Amazon Web Services with your already mastered Python superpowers, to create a bot that will recommend an investment portfolio for a retirement plan.
 
@@ -37,17 +38,13 @@ You are asked to accomplish the following main tasks:
 
 3. **[Enhance the Robo Advisor with an Amazon Lambda Function:](#Enhance-the-Robo-Advisor-with-an-Amazon-Lambda-Function)** Create an Amazon Lambda function that validates the user's input and returns the investment portfolio recommendation. This task includes testing the Amazon Lambda function and making the integration with the bot.
 
----
-
 ### Files
 
-* [lambda_function.py](Starter_Files/lambda_function.py)
-* [correct_dialog.txt](Test_Cases/correct_dialog.txt)
-* [age_error.txt](Test_Cases/age_error.txt)
-* [incorrect_amount_error.txt](Test_Cases/incorrect_amount_error.txt)
-* [negative_age_error.txt](Test_Cases/negative_age_error.txt)
-
----
+* [lambda_function.py](Starter-Files/RoboAdvisor/lambda_function.py)
+* [correct_dialog.txt](Starter-Files/RoboAdvisor/Test-Cases/correct_dialog.json)
+* [age_error.txt](Starter-Files/RoboAdvisor/Test-Cases/age_error.json)
+* [incorrect_amount_error.txt](Starter-Files/RoboAdvisor/Test-Cases/incorrect_amount_error.json)
+* [negative_age_error.txt](Starter-Files/RoboAdvisor/Test-Cases/negative_age_error.json)
 
 ### Instructions
 
