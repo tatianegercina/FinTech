@@ -440,9 +440,11 @@ A cheat sheet to these calculations can be seen [here.](EvaluationsCalculationGu
 </details>
 
 <details>
-<summary>What is a trading framework?</summary><br>
+<summary>Why do I need a framework?</summary><br>
 
+A framework is much like a template for your code.  Its a programming technique that organizes code into a workflow that can easily be reused and applied to different scenarios.  Just as a libary like Pandas can provide prebuilt code to be easily inserted into your program, the framework provides prebuilt structure and organization into which that code can be inserted.  The code inside the framework can be easily changed to fit new data, but the flow of the code remains the same.
 
+The trading framework we build in class, provides a work flow for building an entire dashboard to visualize a trading strategy.  The code inside the framework can be swapped out to accompodate new data, but the work flow remains the same so that when the dashboard is generated all of its components have been generated and can be populated.
 
 </details>
 
