@@ -18,3 +18,5 @@
 * [pgAdmin Documentation](https://www.pgadmin.org/docs/)
 
 * [PostgreSQL Tutorial](https://www.tutorialspoint.com/postgresql/)
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

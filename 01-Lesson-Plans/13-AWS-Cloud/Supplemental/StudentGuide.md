@@ -222,3 +222,6 @@ Though the idea of conversational user interfaces has been around for a very lon
 Amazon Lex allows you to develop your own chatbots, harnessing the same tech that Amazon's Alexa uses, resulting in a powerfully accurate, state-of-the-art conversation interface that can be deployed to almost any platform, including Facebook Messenger and Slack. And, like most AWS services, its fully managed, so it scales on its own. So as users increase, there is no need to scale up - the infrastructure is already in place. You just pay for what you use. To learn more about Amazon Lex, check out their informative [FAQ](https://aws.amazon.com/lex/faqs/?nc=sn&loc=6). To get more information on deploying your own converational user interface using Lex, check out our [deployment guide](Deploying-Lex-Bot-to-Slack.md) and the AWS Lex examples provided [here.](https://docs.aws.amazon.com/lex/latest/dg/examples.html)
 
 </details>
+
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
