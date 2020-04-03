@@ -223,4 +223,4 @@ In this way, the `alias` variable now holds `row[0]` - the first column and all 
 </details>
 - - -
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

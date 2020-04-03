@@ -351,3 +351,6 @@ If we were to POS tag and dependency parse the following sentence:
 <img src='Images/sentence_dependencies.PNG' width = 900>
 
 </details>
+
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
