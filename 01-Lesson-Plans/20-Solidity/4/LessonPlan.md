@@ -8,11 +8,11 @@ Today's class is an opportunity for students to review and practice fundamental 
 
 * Today's class will consist of Solidity code drills and review activities.
 
-* Due to the differences between Python and Solidity, Today's class is an excellent opportunity for students to consolidate their skills by working with a compiled and strongly typed programming language like Solidity.
+* Due to the differences between Python and Solidity, today's class is an excellent opportunity for students to consolidate their skills by working with a compiled and strongly typed programming language like Solidity.
 
-* Code drills range in complexity and pace, so the time allotted to each section of activities should be fluid to allow each student to work through the problems at their own pace.
+* Code drills range in complexity and pace, so the time allotted to each section of activities should be fluid, to allow each student to work through the problems at their own pace.
 
-* You may find it helpful to review specific drills or activities with the entire class, but the majority of the time will likely be best served by rotating between groups of students to help them with any issues that they are having. This will also be a good time to see how they are feeling about Solidity in general and to give them some words of encouragement.
+* You may find it helpful to review specific drills or activities with the entire class, but the majority of time will likely be best served by rotating between groups of students to help them with any issues that they are having. This will also be a good time to see how they are feeling about Solidity in general and to give them some words of encouragement.
 
 * One way to challenge students is to have "code drill races," where students pair off and race each other to complete a set of drills. However, use this strategy cautiously and thoughtfully so that you don't overwhelm any beginner programmers.
 
