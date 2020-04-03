@@ -582,7 +582,7 @@ Now it's time for the students to add their constructors!
 
 ---
 
-### 15. Students Do: Adding a Constructor to the contract (15 min)
+### 15. Student Do: Adding a Constructor to the Contract (15 min)
 
 In this activity, students will replace their hardcoded values with a constructor in order to make their contracts
 reusable and more production-ready.
@@ -698,13 +698,13 @@ Get the class excited, as they have just built a complex smart contract that can
 
 ### 18. Instructor Do: Review Smart Contracts (10 min)
 
-Congratulate the students on building smart contracts, and remind them that few in the world can do this, let alone tried! They are already differentiating themselves from the crypto-crowd. However, you must remind them that with this power comes responsibility -- security should be top of mind, and we cannot allow cutting corners in Solidity!
+Congratulate the students on building smart contracts, and remind them that few in the world can do this! They are already differentiating themselves from the crypto-crowd. However, you must remind them that with this power comes responsibility— security should be top of mind, and we cannot allow cutting corners in Solidity!
 
 Ask the students the following questions:
 
 * What are smart contracts useful for?
 
-  * **Answer:** We can build any program on top of the blockchain, giving us the ability to write fully decentralized applications.
+  * **Answer:** Any program can be built on top of the blockchain, providing the ability to write fully decentralized applications.
 
 * Why do we use a constructor?
 
@@ -748,4 +748,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
