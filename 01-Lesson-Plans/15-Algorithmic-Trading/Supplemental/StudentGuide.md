@@ -469,3 +469,9 @@ A cheat sheet to these calculations can be seen [here.](EvaluationsCalculationGu
 <details>
 <summary>What is a pre-trained model and how do I implement one?</summary><br>
 </details>
+<br>
+<br>
+
+
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
