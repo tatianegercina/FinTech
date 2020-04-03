@@ -581,15 +581,15 @@ Answer any remaining questions and continue to the next activity.
 
 ### 7. Student Do: Buggy Lambdas (15 min)
 
-In this activity, students will test their Lambdas and will practice their ability to find runtime errors. Slack out the instructions to students together with the starter test event.
+In this activity, students will test their Lambda functions and will practice their ability to find runtime errors. Slack out the instructions to students together with the starter test event.
 
 **Instructions:**
 
-* [README.md](Activities/06-Stu_Buggy_Lambdas/README.md)
+* [README.md](Activities/05-Stu_Buggy_Lambdas/README.md)
 
 **Files:**
 
-* [convertOkTest.json](Activities/06-Stu_Buggy_Lambdas/Unsolved/convertOkTest.json)
+* [convertOkTest.json](Activities/05-Stu_Buggy_Lambdas/Unsolved/convertOkTest.json)
 
 ---
 
