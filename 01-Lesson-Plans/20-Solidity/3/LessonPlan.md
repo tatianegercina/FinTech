@@ -352,7 +352,7 @@ Explain to the students:
 
 * Using `now`, we can calculate the current time within a window of 15 seconds.
 
-* You may notice the compiler is saying to "avoid using now/block.timestamp" -- this is because of the inherent inaccuracy of the current time caused by the average blocktime.
+* You may notice the compiler is saying to "avoid using now/block.timestamp"—this is because of the inherent inaccuracy of the current time caused by the average blocktime.
 
 * In Ethereum, the accuracy of `now` will always fluctuate based on the average blocktime. For the majority of our use cases, we can get away with a 15-second window.
 
@@ -382,7 +382,7 @@ function withdraw(uint amount) public {
 
 * Notice how expressive we can calculate the time 24 hours from now, right in the native Solidity syntax!
 
-* Solidity provides time units in `seconds`, `minutes`, `days`, and `weeks` -- and does not consider leap years!
+* Solidity provides time units in `seconds`, `minutes`, `days`, and `weeks` ---and does not consider leap years!
 
 * This is another reminder that if we need an extremely specific time, we'll need special smart contracts to maintain the Gregorian calendar for us, but we are just fine using this implementation.
 
