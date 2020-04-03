@@ -301,7 +301,7 @@ Continue in the same contract as before, `JointSavings.sol`, or leverage the equ
 
 * [TellingTime.sol](Activities/03-Ins_Time_Solidity/Unsolved/TellingTime.sol)
 
-First, add another variable called `uint unlock_time` -- this will be used to control when our contract is locked and unlocked:
+First, add another variable called `uint unlock_time`—this will be used to control when our contract is locked and unlocked:
 
 ```solidity
 contract JointSavings {
