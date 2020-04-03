@@ -48,7 +48,7 @@ By the end of the class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Welcome Class (5 min)
+### 1. Instructor Do: Welcome Class (10 min)
 
 In this activity, students will be introduced to conversational user interfaces (CUIs); they will learn how CUIs are disrupting financial services and what tools they will use to create a robo advisor.
 
