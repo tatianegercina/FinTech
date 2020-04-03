@@ -12,3 +12,7 @@ smart contract examples that allow for quick learning of the language.
 
 We recommend following the [CryptoZombies](https://cryptozombies.io/) interactive tutorial to get in-depth practice that
 should bootstrap your Solidity skills quickly, especially if you are familiar with other programming languages.
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
