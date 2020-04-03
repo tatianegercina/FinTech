@@ -1,6 +1,6 @@
 # Extended Crypto Converter
 
-Customers just loved the new chatbot to convert from dollars to Bitcoin; however people started to ask about some other cryptocurrencies. After reviewing the logs of the conversations, you realized that customers are interested in Bitcoin, Ethereum, and Ripple, so you decide to extend your crypto converter to allow customers to convert from dollars to one of these three cryptocurrencies.
+Customers just loved the new chatbot to convert from dollars to Bitcoin; however, people started to ask about some other cryptocurrencies. After reviewing the logs of the conversations, you realized that customers are interested in Bitcoin, Ethereum, and Ripple, so you decide to extend your crypto converter to allow customers to convert from dollars to one of these three cryptocurrencies.
 
 ## Instructions
 
@@ -32,7 +32,7 @@ Customers just loved the new chatbot to convert from dollars to Bitcoin; however
 
     ![Add the crypto slot](Images/add-crypto-slot.png)
 
-3. To use your new `crypto` slot on the bot's conversation, modify the utterances to have the following "Sample utterances".
+3. To use your new `crypto` slot on the bot's conversation, modify the utterances to have the following "Sample utterances."
 
     * `I want to invest in cryptocurrencies`
 
@@ -60,7 +60,7 @@ Customers just loved the new chatbot to convert from dollars to Bitcoin; however
 
     * **Subtitle:** `Choose one crypto to convert.`
 
-    * Add one button per cryptocurrency as is shown below.
+    * Add one button per cryptocurrency, as is shown below.
 
     ![Card buttons](Images/card-slot-values.png)
 
@@ -70,23 +70,23 @@ Customers just loved the new chatbot to convert from dollars to Bitcoin; however
 
 ### Add Ethereum and Ripple conversion to Lambda
 
-As you noticed, the bot allows users to select between Bitcoin, Ethereum, and Ripple, however it's not making the accurate cryptocurrency conversions from dollars, now it's time to extend your Lambda function to solve this issue.
+As you noticed, the bot allows users to select between Bitcoin, Ethereum, and Ripple, however, it's not making the accurate cryptocurrency conversions from dollars, now it's time to extend your Lambda function to solve this issue.
 
 1. Open the code of your `convertCAD` Lambda function on the AWS Lambda online code editor, make a backup copy just in case you need to restore your function.
 
-2. Create a new helper function called `get_cryptoprice(crypto)` that will receive as parameter the name of the cryptocurrency selected by the user and should return the price of the selected cryptocurrency in Canadian Dollars. As a starting code, you can use the `get_btcprice()` function's code. To retrieve the current price of Ethereum and Ripple, use the following endpoints from the alternative.me Crypto API.
+2. Create a new helper function called `get_cryptoprice(crypto)` that will receive as parameter the name of the cryptocurrency selected by the user. This function should return the price of the chosen cryptocurrency in Canadian Dollars. As a starting code, you can use the `get_btcprice()` function's code. To retrieve the current price of Ethereum and Ripple, use the following endpoints from the alternative.me Crypto API.
 
     * **Ethereum:** https://api.alternative.me/v2/ticker/Ethereum/?convert=CAD
 
     * **Ripple:** https://api.alternative.me/v2/ticker/Ripple/?convert=CAD
 
-    **Important note:** In the JSON response from the Crypto API, every cryptocurrency has a different `ID` that need to be passed to fetch the price in dollars. For example, in the starter code you have the following line in the `get_btcprice()` function.
+    **Important note:** In the JSON response from the Crypto API, every cryptocurrency has a different `ID` that needs to be passed to fetch the price in dollars. For example, in the starter code, you have the following line in the `get_btcprice()` function.
 
     ```python
     price_cad = parse_float(response_json["data"]["1"]["quotes"]["CAD"]["price"])
     ```
 
-    The key `["1"]` corresponds to the `ID` for Bitcoin. So you need to consider change this `ID` depending on the cryptocurrency selected by the user. Ethereum `ID` is `1027` and Ripple `ID` is `52`.
+    The key `["1"]` corresponds to the `ID` for Bitcoin. So you need to change this `ID` depending on the cryptocurrency selected by the user. Ethereum `ID` is `1027`, and Ripple `ID` is `52`.
 
 3. Modify the `convert_cad()` function as follows:
 
@@ -117,7 +117,7 @@ As you noticed, the bot allows users to select between Bitcoin, Ethereum, and Ri
 
 5. Create at least three test events, one per cryptocurrency, to validate that the code is working correctly.
 
-6. Open the Amazon Lex console and test the bot in the "Test bot" window. Since you only made changes to Lambda, there is no need to build the bot. You should now see accurate conversions for each cryptocurrency as it's shown below.
+6. Open the Amazon Lex console and test the bot in the "Test bot" window. Since you only made changes to Lambda, there is no need to build the bot. You should now see accurate conversions for each cryptocurrency, as it's shown below.
 
     ![Extended Crypto Converted demo](Images/crypto_converter_extended.gif)
 
