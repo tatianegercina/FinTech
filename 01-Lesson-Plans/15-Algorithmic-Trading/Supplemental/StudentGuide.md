@@ -449,15 +449,12 @@ The trading framework we build in class, provides a work flow for building an en
 </details>
 
 <details>
-<summary>How do you design an end-to-end workflow for a trading framework?</summary><br>
-</details>
+<summary>What does it mean to persist data and why is it important?</summary><br>
 
-<details>
-<summary>What is a trading dashboard?</summary><br>
-</details>
+Data persistence is the concept of saving data to a database to have a reliable copy of data that is persisted rather than transiently stored as in-memory data structures.
 
-<details>
-<summary>Why should I persist my data?</summary><br>
+Persisting data is generally a best practice as it provides a method for data recovery should an application ever fail; data stored in transient in-memory data structures will be lost forever if the application itself terminates. Also, persisting data to a database allows for separate data analysis to be done at a later time, if desired.
+
 </details>
 
 <details>
