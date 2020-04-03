@@ -10,10 +10,10 @@
   },
   "outputDialogMode": "Text",
   "currentIntent": {
-    "name": "ConvertUSD",
+    "name": "convertCAD",
     "slots": {
       "birthday": "1978-12-16",
-      "usdAmount": "0"
+      "cadAmount": "10"
     },
     "confirmationStatus": "None"
   }
