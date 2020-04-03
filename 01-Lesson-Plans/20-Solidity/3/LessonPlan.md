@@ -348,7 +348,7 @@ function withdraw(uint amount) public {)
 
 Explain to the students:
 
-* You may notice that we are using the keyword `now` -- this is an alias for `block.timestamp`.
+* You may notice that we are using the keyword `now`—this is an alias for `block.timestamp`.
 
 * Using `now`, we can calculate the current time within a window of 15 seconds.
 
