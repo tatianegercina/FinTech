@@ -38,6 +38,8 @@ You are asked to accomplish the following main tasks:
 
 3. **[Enhance the Robo Advisor with an Amazon Lambda Function:](#Enhance-the-Robo-Advisor-with-an-Amazon-Lambda-Function)** Create an Amazon Lambda function that validates the user's input and returns the investment portfolio recommendation. This task includes testing the Amazon Lambda function and making the integration with the bot.
 
+---
+
 ### Files
 
 * [lambda_function.py](Starter-Files/RoboAdvisor/lambda_function.py)
@@ -46,13 +48,15 @@ You are asked to accomplish the following main tasks:
 * [incorrect_amount_error.txt](Starter-Files/RoboAdvisor/Test-Cases/incorrect_amount_error.json)
 * [negative_age_error.txt](Starter-Files/RoboAdvisor/Test-Cases/negative_age_error.json)
 
+---
+
 ### Instructions
 
 #### Initial Robo Advisor Configuration
 
 In this section, you will create the `RoboAdvisor` bot and add an intent with its corresponding slots.
 
-Sign in into your AWS Management Console using your `administrator` IAM user and [create a new custom Amazon Lex bot](https://console.aws.amazon.com/lex/home). Use the following parameters:
+Sign-in into your AWS Management Console using your `administrator` IAM user and [create a new custom Amazon Lex bot](https://console.aws.amazon.com/lex/home). Use the following parameters:
 
 * **Bot name:** `RoboAdvisor`
 
@@ -64,7 +68,7 @@ Sign in into your AWS Management Console using your `administrator` IAM user and
 
 * **COPPA**: `No`
 
-Create the `RecommendPortfolio` intent, and configure some sample utterances as follows (you can add more utterances at your own criteria):
+Create the `RecommendPortfolio` intent, and configure some sample utterances as follows (you can add more utterances at your criteria):
 
 * `I want to save money for my retirement`
 
@@ -86,7 +90,7 @@ Move to the "Confirmation Prompt" section, and set the following messages:
 
 * **Cancel:** `I will be pleased to assist you in the future.`
 
-On this bot you will use four slots, three using built-in types and one custom slot named `riskLevel`. Define the three initial required slots as follows:
+On this bot, you will use four slots, three using built-in types and one custom slot named `riskLevel`. Define the three initial required slots as follows:
 
 
 | Name             | Slot Type            | Prompt                                                                    |
@@ -120,7 +124,7 @@ Configure the `riskLevel` slot with four response cards, to add a new card click
 
 ![Add a new slot response card](Images/add-slot-card.png)
 
-Configure the response cards as follows, the image for each card should be uploaded to your Amazon S3 bucket.
+Configure the response cards as follows; the image for each card should be uploaded to your Amazon S3 bucket.
 
 | Card 1                              | Card 2                              |
 | ----------------------------------- | ----------------------------------- |
@@ -130,7 +134,7 @@ Configure the response cards as follows, the image for each card should be uploa
 | ----------------------------------- | ----------------------------------- |
 | ![Card 3 sample](Images/card3.png)  | ![Card 4 sample](Images/card4.png)  |
 
-**Note:** You can download free icons for your cards from [Iconfinder](https://www.iconfinder.com/) or you can use the icons provided on the [`Icons` directory](Starter-Files/RoboAdvisor/Icons) into the `RoboAdvisor` starter files folder.
+**Note:** You can download free icons for your cards from [Iconfinder](https://www.iconfinder.com/), or you can use the icons provided on the [`Icons` directory](Starter-Files/RoboAdvisor/Icons) into the `RoboAdvisor` starter files folder.
 
 #### Build and Test the Robo Advisor
 
@@ -164,11 +168,11 @@ Be creative while coding your solution, you can have all the code on the `recomm
 
 Once you finish coding your lambda function, test it using the [sample test cases](Test_Cases/) provided for this homework.
 
-After successfully testing your code, open the Amazon Lex Console and navigate to the `RecommendPortfolio` bot configuration, integrate your new lambda function by selecting it on the _Lambda initialization and validation_ and _Fulfillment_ sections. Build your bot, and you should have a conversation as follows.
+After successfully testing your code, open the Amazon Lex Console and navigate to the `RecommendPortfolio` bot configuration, integrate your new Lambda function by selecting it on the _Lambda initialization and validation_ and _Fulfillment_ sections. Build your bot, and you should have a conversation as follows.
 
 ![Robo Advisor test with Lambda](Images/bot-test-with-lambda.gif)
 
-### Submission
+### Option 1 Submission
 
 You should create a brand new repository in GitHub and upload the following files to your repo.
 
@@ -195,7 +199,7 @@ _[Cryptocurrencies coins by Worldspectrum](https://www.pexels.com/@worldspectrum
 
 ### Background
 
-You are a Senior Manager at the Advisory Services team on a [Big Four firm](https://en.wikipedia.org/wiki/Big_Four_accounting_firms), one of your most important clients, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers, however, they are lost in the immense universe of cryptocurrencies, they ask you to present a report of what cryptocurrencies are on the trading market and how cryptocurrencies could be grouped towards creating a classification for developing this new investment product.
+You are a Senior Manager at the Advisory Services team on a [Big Four firm](https://en.wikipedia.org/wiki/Big_Four_accounting_firms), one of your most important clients, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers; however, they are lost in the immense universe of cryptocurrencies, they ask you to present a report of what cryptocurrencies are on the trading market and how cryptocurrencies could be grouped towards creating a classification for developing this new investment product.
 
 In this homework assignment, you have the opportunity to put in action your new unsupervised learning and Amazon SageMaker skills to cluster cryptocurrencies and create some plots to present your results.
 
@@ -215,7 +219,9 @@ You are asked to accomplish the following main tasks:
 
 ### Files
 
-* [crypto_clustering.ipynb](Starter_Files/crypto_clustering.ipynb)
+* [crypto_clustering.ipynb](Starter-Files/ClusteringCrypto/crypto_clustering.ipynb)
+
+* [crypto_data.csv](Starter-Files/ClusteringCrypto/Resources/crypto_data.csv)
 
 ---
 
@@ -225,25 +231,29 @@ You are asked to accomplish the following main tasks:
 
 In this section, you have to load the information about cryptocurrencies from the provided `CSV` file and perform some data preprocessing tasks. The data was retrieved from  _CryptoCompare_ using this endpoint: `https://min-api.cryptocompare.com/data/all/coinlist`.
 
-Start by loading the data in a Pandas DataFrame named `crypto_df`, and continue with the following data preprocessing tasks.
+Upload the starter `crypto_clustering.ipynb` notebook to the root folder of Amazon SageMaker Studio, also, upload the `crypto_data.csv` data file to Amazon SageMaker Studio into a folder called `Data`.
 
-3. Remove all cryptocurrencies that are not on trading.
+Open the starter Jupyter notebook and select the `Python 3 (Data Science)` kernel and perform the following data preprocessing task.
 
-4. Remove all cryptocurrencies that have not an algorithm defined.
+1. Load the data into a Pandas DataFrame named `crypto_df`.
 
-5. Remove the `IsTrading` column.
+2. Remove all cryptocurrencies that are not on trading.
 
-6. Remove all cryptocurrencies with at least one null value.
+3. Remove all cryptocurrencies that have not an algorithm defined.
 
-7. Remove all cryptocurrencies without coins mined.
+4. Remove the `IsTrading` column.
 
-9. Store the names of all cryptocurrencies on a DataFramed named `coins_name`, use the `crypto_df.index` as the index for this new DataFrame.
+5. Remove all cryptocurrencies with at least one null value.
 
-10. Remove the `CoinName` column.
+6. Remove all cryptocurrencies without coins mined.
 
-11. Create dummies variables for all the text features, store the resulting data on a DataFrame named `X`.
+7. Store the names of all cryptocurrencies on a DataFramed named `coins_name`, use the `crypto_df.index` as the index for this new DataFrame.
 
-12. Use the [`StandardScaler` from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) to standardize all the data of the `X` DataFrame. Remember, this is important prior to using PCA and K-Means algorithms.
+8. Remove the `CoinName` column.
+
+9. Create dummies variables for all the text features, store the resulting data on a DataFrame named `X`.
+
+10. Use the [`StandardScaler` from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html) to standardize all the data of the `X` DataFrame. Remember, this is important prior to using PCA and K-Means algorithms.
 
 #### Reducing Data Dimensions Using PCA
 
@@ -273,61 +283,17 @@ Perform the following tasks:
 
 In this section, you will create some data visualization to present the final results. Perform the following tasks:
 
-1. Create a 3D-Scatter using Plotly Express to plot the clusters using the `clustered_df` DataFrame. You should include the following parameters on the plot: `hover_name="CoinName"` and `hover_data=["Algorithm"]` to show this additional info on each data point.
+1. Create a 2D-Scatter plot using the `plot()` method of Pandas to show the clusters using the `clustered_df` DataFrame. You can test different combinations for the `x` and `y` parameters, for example, you can start by setting `x="PC 1"` and `y="PC 2"`.
 
-2. Use `hvplot.table` to create a data table with all the current tradable cryptocurrencies. The table should have the following columns: `"CoinName", "Algorithm", "ProofType", "TotalCoinSupply", "TotalCoinsMined", "Class"`
+2. Display all the rows of the DataFrame to create a data table with all the current tradable cryptocurrencies. The table should have the following columns: `"CoinName", "Algorithm", "ProofType", "TotalCoinSupply", "TotalCoinsMined", "Class"`
 
-3. Create a scatter plot using `hvplot.scatter`, to present the clustered data about cryptocurrencies having `x="TotalCoinsMined"` and `y="TotalCoinSupply"` to contrast the number of available coins versus the total number of mined coins. Use the `hover_cols=["CoinName"]` parameter to include the cryptocurrency name on each data point.
+3. Create a 2D-Scatter plot using the `plot()` method of Pandas to present the clustered data about cryptocurrencies having `x="TotalCoinsMined"` and `y="TotalCoinSupply"` to contrast the number of available coins versus the total number of mined coins.
 
-### Optional Challenge
-
-For the challenge section, you have to upload your Jupyter notebook to Amazon SageMaker and deploy it.
-
-The `hvplot` and Plotly Express libraries are not included in the built-in anaconda environments, despite you can install external libraries on Amazon SageMaker, there is not still full support for these libraries; so, for this challenge section, you should use the `altair` library instead.
-
-Perform the following tasks:
-
-1. Upload your Jupyter notebook and rename it as `crypto_clustering_sm.ipynb`
-
-2. Select the `conda_python3` environment.
-
-3. Import the `altair` library by running the following code before the initial imports.
-
-  ```python
-  !pip install -U altair
-  ```
-
-4. Use the `altair` scatter plot to create the Elbow Curve.
-
-5. Use the `altair` scatter plot, instead of the 3D-Scatter from Plotly Express, to visualize the clusters. Since this is a 2D-Scatter, use `x="PC 1"` and `y="PC 2"` for the axes, and add the following columns as tool tips: `"CoinName", "Algorithm", "TotalCoinsMined", "TotalCoinSupply"`.
-
-6. Use the `altair` scatter plot to visualize the tradable cryptocurrencies using  `x="TotalCoinsMined"` and `y="TotalCoinSupply"` for the axes.
-
-7. Show the table of current tradable cryptocurrencies using the `display()` command.
-
-8. Remove all `hvplot` and Plotly Express references from your code.
-
-#### Complementary Resources
-
-* [Altair visualization library website](https://altair-viz.github.io/).
-
-* [Simple line chart using Altair](https://altair-viz.github.io/gallery/simple_line_chart.html).
-
-* [Simple Scatter Plot with Tooltips using Altair](https://altair-viz.github.io/gallery/scatter_tooltips.html)
-
-* [Color customization on Altair](https://github.com/altair-viz/altair/issues/921#issuecomment-395416682)
-
-* [Printing all rows from a DataFrame](https://stackoverflow.com/a/30691921/4325668)
-
-* [Install External Libraries and Kernels in Amazon SageMaker Notebook Instances](https://docs.aws.amazon.com/sagemaker/latest/dg/nbi-add-external.html)
-
-### Submission
+### Option 2 Submission
 
 * Code your solution using the provided starter Jupyter notebook.
 
-* For the _Challenge_ section, create a new Jupyter notebook named `crypto_clustering_sm.ipynb` and include the necessary code to import the additional required library.
-
-* Create and upload a repository with the above files to GitHub and post a link in BootCamp Spot.
+* Create and upload a repository with the Jupyter notebook containing the solution to GitHub and post a link in BootCamp Spot.
 
 ---
 
