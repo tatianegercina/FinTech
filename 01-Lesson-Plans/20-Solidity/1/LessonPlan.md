@@ -20,7 +20,7 @@ By the end of the unit, students will be able to:
 
 * Explain how the Ethereum Virtual Machine (EVM) is an isolated environment, and how Solidity code can only access on-chain data.
 
-* Recognize that a smart contract is a program that runs on the EVM (Ethereum Virtual Machine).
+* Recognize that a smart contract is a program that runs on the EVM.
 
 * Identify the different kinds of smart contracts and their top use cases.
 
