@@ -89,7 +89,7 @@ Spend up to three minutes on this initial question, and use the classroom board 
 
  * **Explanation:** We will use Ethereum in this class, a platform that not only offers a cryptocurrency, but is also a blockchain-based distributed computing platform featuring smart contract functionality and applications development.
 
-* A robust and reliable programming language.
+* A reliable and robust programming language.
 
  * **Explanation:** Along the following weeks, we will use Solidity, one of the best programming languages to create and deploy smart contracts in Ethereum.
 
