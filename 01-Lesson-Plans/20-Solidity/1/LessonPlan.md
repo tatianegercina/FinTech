@@ -83,7 +83,7 @@ Open the lesson slides and conduct a facilitated discussion by starting with the
 
 If nobody answers the question, lean on blockchain enthusiasts in the class to start the discussion by asking the question directly to one of them.
 
-Spend up to three minutes in this initial question, and use the classroom board to create a list of the building blocks shared by the students. Summarize the answers with the following list and explain each bullet.
+Spend up to three minutes on this initial question, and use the classroom board to create a list of the building blocks shared by the students. Summarize the answers with the following list and explain each bullet.
 
 * A reliable and robust blockchain technology.
 
