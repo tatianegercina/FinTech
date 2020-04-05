@@ -24,7 +24,7 @@ By the end of the unit, students will be able to:
 
 * Identify the different kinds of smart contracts and their top use cases.
 
-* Explain how Remix & Ganache support blockchain development.
+* Explain how Remix and Ganache support blockchain development.
 
 * Set up their developer environment using Remix and Ganache.
 
