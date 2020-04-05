@@ -512,7 +512,7 @@ Show the class the example machine code.
 
 ---
 
-### 11. Students Do: Contextualizing Solidity Worksheet (10 min)
+### 11. Student Do: Contextualizing Solidity Worksheet (10 min)
 
 Students will fill in a simple chart (pipeline) of the various levels of the EVM's architecture with the names of the various levels and their real-world implementation.
 
