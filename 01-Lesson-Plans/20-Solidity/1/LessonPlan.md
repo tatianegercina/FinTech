@@ -137,7 +137,7 @@ Answer any questions before moving on.
 
 ### 3. Student Do: Smart Contracts in Action (15 min)
 
-In this activity, students will work in groups of up to three people to analyze several use cases to explore that correspond with popular types of smart contracts like tokens, notaries, supply chain, digital marketplaces, etc.
+In this activity, students will work in groups of up to three people to analyze several use cases that correspond with popular types of smart contracts, like tokens, notaries, supply chain, digital marketplaces, etc.
 
 Circulate through the room while students are completing the activity. Look to identify students who are actively engaging peers and digging deeper. Keep these students in mind for later, as they may be helpful to distribute among groups.
 
