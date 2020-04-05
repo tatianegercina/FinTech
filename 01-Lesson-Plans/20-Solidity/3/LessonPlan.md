@@ -12,7 +12,7 @@ By the end of the class, students will be able to:
 
 * Use global variables to tell the current block number, transaction sender, and transaction value.
 
-* Work with time in Solidity and use time variables to create a Timelock.
+* Work with time in Solidity and use time variables to create a timelock.
 
 * Recognize that telling time in Solidity has variability relative to the network's block production time, and static compared to Gregorian calendar time.
 
@@ -71,7 +71,7 @@ First, let's ask the students some recall questions about static data types:
 
 * What is a `payable` address, and why is it different from a regular address?
 
-  * **Answer:** A payable address is like a normal address type, except it allows the `.transfer` function to be called in order to send it Ether.
+  * **Answer:** A payable address is like a normal address type, except it allows the `.transfer` function to be called in order to send it ether.
 
 Ask for any remaining questions before moving along.
 
@@ -99,7 +99,7 @@ First, we need to change the way we check who the account owners are.
 
 * Currently, we are checking whether or not the recipient parameter matches either of the accounts we set as the owners.
 
-* This actually opens up a slight "vulnerability" where anyone can force this contract to withdraw funds into either of the owner wallets. While this doesn't transfer the Ether away from the owners, you certainly wouldn't want someone to have *any* control over your funds, even if it means moving between accounts you own.
+* This actually opens up a slight "vulnerability" where anyone can force this contract to withdraw funds into either of the owner wallets. While this doesn't transfer the ether away from the owners, you certainly wouldn't want someone to have *any* control over your funds, even if it means moving between accounts you own.
 
 * We can do this by checking the built-in `msg.sender` variable.
 
