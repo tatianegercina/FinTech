@@ -156,7 +156,7 @@ function withdraw(uint amount) public {
 }
 ```
 
-Ask the students:
+Ask students:
 
 * Why might we include this if statement, versus just setting the `last_to_withdraw` every time?
 
@@ -219,7 +219,7 @@ Explain to the class:
 
 * `msg` refers to the current transaction that is executing the smart contract.
 
-* `msg.value` Refers to the amount of Ether that is attached to said transaction. In our case, we can save the amount that was deposited by storing the `msg.value`. We can use `msg.value` for many other calculations in the future, creating conditions that require a certain amount of Ether, or that keep track of how much Ether each user has stored in your contract.
+* `msg.value` Refers to the amount of ether that is attached to said transaction. In our case, we can save the amount that was deposited by storing the `msg.value`. We can use `msg.value` for many other calculations in the future, creating conditions that require a certain amount of ether, or that keep track of how much ether each user has stored in your contract.
 
 Finally, we need to add the `public` keyword to these variables in order to auto-generate "getter" functions for them:
 
@@ -275,11 +275,11 @@ Open the solution and explain the following:
 
 * `msg` refers to the current transaction's information.
 
-Ask the students the following questions:
+Ask students the following questions:
 
 * Why might we want to access these variables in our contracts?
 
-  * **Answer:** It allows us to make decisions on what to do next based on who is calling the function, and under what conditions.
+  * **Answer:** It allows us to make decisions on what to do next, based on who is calling the function and under what conditions.
 
 * What is `msg.value`?
 
@@ -494,7 +494,7 @@ Now, have the students add the same threshold to their contracts!
 
 ---
 
-### 12. Students Do: Adding the Withdraw Threshold (10 min)
+### 12. Student Do: Adding the Withdraw Threshold (10 min)
 
 In this activity, students will follow the same steps to add the threshold to their withdraw function's timelock.
 
