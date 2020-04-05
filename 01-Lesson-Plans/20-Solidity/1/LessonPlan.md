@@ -434,7 +434,7 @@ Open Ganache and ask the students the following questions:
 
 * How might Remix make it easier to write smart contracts?
 
- **Answer** You can write a smart contract from pretty much any browser.
+ **Answer** You can write a smart contract from almost any browser.
 
  **Answer** It allows for writing, compiling, and deploying, all in one place.
 
