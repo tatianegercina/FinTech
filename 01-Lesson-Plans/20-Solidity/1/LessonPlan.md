@@ -103,7 +103,7 @@ Spend up to three minutes on this initial question, and use the classroom board 
 
 * An industry-supported blockchain technology.
 
- * **Explanation:** Beside the [Ethereum Foundation](https://www.ethereum.org/), who is in charge of the development of the Ethereum framework, several companies also support Ethereum through [the Enterprise Ethereum Alliance (EEA)](https://entethalliance.org/). Various blockchain startups, research groups, and Fortune 500 companies form this association ([full list of members](https://entethalliance.org/members/)).
+ * **Explanation:** While the [Ethereum Foundation](https://www.ethereum.org/) is in charge of the development of the Ethereum framework, several companies also support Ethereum through [the Enterprise Ethereum Alliance (EEA)](https://entethalliance.org/). Various blockchain startups, research groups, and Fortune 500 companies form this association ([full list of members](https://entethalliance.org/members/)).
 
 * A suitable set of development tools to create and deploy smart contracts.
 
