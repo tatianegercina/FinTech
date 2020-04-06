@@ -227,7 +227,7 @@ Explain to students that you will demo how they can use Amazon S3 and highlight 
 
   ![Creating a new Amazon S3 bucket](Images/amazon-s3-create-new-bucket.png)
 
-* In the "Create bucket" page, first you need to define a new for your bucket. Bucket's names are unique across all the Amazon S3 space, so AWS checks the uniqueness of the name you typed before creating it.
+* In the "Create bucket" page, first you need to define a name for your bucket. Bucket's names are unique across all the Amazon S3 space, so AWS checks the uniqueness of the name you typed before creating it.
 
 * We will start by creating a private bucket to store the prediction results for our ML models.
 
