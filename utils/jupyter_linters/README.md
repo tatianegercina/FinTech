@@ -10,6 +10,8 @@ nberr - Checks notebook output cells for errors.
 
 nbdiff - Checks to see if the code in the Unsolved notebooks matches the code in the Solved.
 
+nbfinder - Search for a given pattern/code snippet in the jupyter notebook source cells.
+
 ## Installation
 
 ```shell
@@ -100,4 +102,8 @@ nbdiff path/to/Activities
 
 ```shell
 lintpandas path/to/notebooks
+```
+
+```shell
+nbfinder path/to/notebooks --pattern="import pandas as pd"
 ```
