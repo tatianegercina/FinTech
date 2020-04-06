@@ -177,7 +177,7 @@ Ask the students the following questions:
 
 ### 5. Instructor Do: Back to BIP32 (10 min)
 
-Now, let's actually generate some Bitcoin keys from this!
+Now let's actually generate some Bitcoin keys from this!
 
 Back in the BIP39 tool, scroll down to the `Derivation Path` section and click the `BIP32` tab.
 
