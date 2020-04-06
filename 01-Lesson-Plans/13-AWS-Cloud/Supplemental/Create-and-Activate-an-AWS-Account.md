@@ -99,3 +99,6 @@ Account activation can sometimes be delayed. If the process takes more than 24 h
 [5]: https://aws.amazon.com/support
 
 Source: <https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/>
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
