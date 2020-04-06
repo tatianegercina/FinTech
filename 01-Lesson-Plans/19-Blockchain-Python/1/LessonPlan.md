@@ -2,8 +2,7 @@
 
 ### Overview
 
-In today's class, students will begin to interact with blockchains using Python libraries `web3.py`, `bit`,
-and will also learn how BIP44 works in preparation for the homework.
+In today's class, students will begin to interact with blockchains using Python libraries `web3.py`and `bit`. They will also learn how BIP44 works in preparation for the homework.
 
 The goal of today's class is for the students to understand how to talk to Ethereum and Bitcoin nodes using Python,
 and to understand how wallets work across the blockchain ecosystem.
