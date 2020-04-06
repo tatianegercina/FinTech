@@ -105,5 +105,9 @@ lintpandas path/to/notebooks
 ```
 
 ```shell
+# Find a code pattern in the jupyter source cells
 nbfinder path/to/notebooks --pattern="import pandas as pd"
+
+# Add the verbose flag to show the source code as well as the path
+nbfinder path/to/notebooks --pattern="os.getenv" --verbose
 ```
