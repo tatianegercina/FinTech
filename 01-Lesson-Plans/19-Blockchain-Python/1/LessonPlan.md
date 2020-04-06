@@ -98,7 +98,7 @@ Continue through the slides, introducing the concept of "Web 3.0" and the Python
 
 * In the current model, servers are highly centralized, websites can go down, and archiving information is a difficult task. For example, we all know how hard Wikipedia works to get you to donate.
 
-* With the emergence of blockchains and other distributed technologies, we can build the Web 3.0 -- a decentralized web where sites like Wikipedia wouldn't struggle, since we'd just store a local copy ourselves.
+* With the emergence of blockchains and other distributed technologies, we can build the Web 3.0—a decentralized web where sites like Wikipedia wouldn't struggle, since we'd just store a local copy ourselves.
 
 ![web3.py](Images/web3.py.png)
 
