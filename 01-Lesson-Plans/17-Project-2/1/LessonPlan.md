@@ -58,7 +58,7 @@ TAs and instructors: For the next 90 minutes, you're senior developers! Walk aro
 
 * Maybe a member of the team finished all the work their role entailed. Perhaps they're waiting for other people to complete a certain task before they can continue. Make sure any students in these situations ask their teammates how else they can help.
 
-* Some students might be stumped by technology that they hadn't gone over in class, but are trying to use in their project. See if you can help out. If you're not familiar with the tech, direct that student to someone on the Boot Camp team who is.
+* Some students may be stumped by technology that they didn't go over in class but are trying to use in their project. See if you can help out. If you're not familiar with the tech, direct that student to someone on the Boot Camp team who is.
 
 * Ensure that all teams seem prepared to complete their projects by Saturday.
 
