@@ -1,6 +1,6 @@
 # Creating an Amazon SageMaker Instance
 
-In this activity, you will learn how you can start running Jupyter notebooks in the Cloud using Amazon SageMaker Studio.
+In this guide, you will learn how you can start running Jupyter notebooks in the Cloud using Amazon SageMaker Studio.
 
 Start by logging-in into the [AWS Management Console](https://console.aws.amazon.com/) using your `administrator` IAM use and to follow the next steps.
 
