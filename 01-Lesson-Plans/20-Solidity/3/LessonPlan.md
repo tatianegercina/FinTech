@@ -714,7 +714,7 @@ Ask the students the following questions:
 
   * **Answer:** We need to be unambiguous in our code, just like we need to be unambiguous in legal contracts.
 
-  * **Answer:** It is more efficient, and thus cheaper, to define the types upfront, versus having Solidity figure it out after the fact, spending precious gas.
+  * **Answer:** It is more efficient, and thus cheaper, to define the types upfront, vs. having Solidity figure it out after the fact, spending precious gas.
 
 * What nuances are there when it comes to telling time in Solidity/Ethereum?
 
