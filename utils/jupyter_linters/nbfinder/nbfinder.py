@@ -6,7 +6,8 @@ from pathlib import Path
 @click.command()
 @click.argument("notebook_directory", default=".")
 @click.option('--pattern', default="os.getenv", help='A code snippet/pattern to find in the source code.')
-def cli(notebook_directory, pattern):
+@click.option('--verbose', is_flag=True, help='enable to show the source code match.')
+def cli(notebook_directory, pattern, verbose):
 
     # Create Paths
     notebook_path = Path(notebook_directory)
@@ -23,7 +24,8 @@ def cli(notebook_directory, pattern):
                 if cell.cell_type == "code":
                     if pattern in cell.source:
                         print(f"Found pattern in: {notebook_path}")
-                        print(cell.source)
+                        if verbose:
+                            print(cell.source)
 
 
 if __name__ == "__main__":
