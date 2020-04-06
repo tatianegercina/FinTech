@@ -954,7 +954,7 @@ Not only have you written a smart contract, but you have learned a strictly type
 
 Ask the following review questions.
 
-* What are some aspects of Solidity?
+* What is Solidity?
 
  * **Answer** Solidity is:
 
