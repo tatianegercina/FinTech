@@ -4,7 +4,7 @@ This document contains guidelines, requirements, and suggestions for Project 2.
 
 ## Team Effort
 
-Before anything, remember that projects are a group effort: Working closely with your teammates is a requirement. This helps teach real-world collaborative workflows, and enables you to tackle more difficult problems than you'd be able to working alone.
+Before anything, remember that projects are a group effort: working closely with your teammates is a requirement. This helps teach real-world collaborative workflows and enables you to tackle more difficult problems than you'd be able to working alone.
 
 In other words, working in groups allows you to **work smart** and **dream big**. Take advantage of it!
 
