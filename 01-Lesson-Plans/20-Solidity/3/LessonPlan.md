@@ -289,7 +289,7 @@ Ask for further questions before moving on.
 
 ---
 
-### 6. Instructor Do: Telling time in Solidity (10 min)
+### 6. Instructor Do: Telling Time in Solidity (10 min)
 
 In this activity, we'll be adding a bit more logic to create a withdraw threshold.
 
