@@ -20,7 +20,7 @@ Write this as a brief summary of your interests and intent, including:
 
 * Candidate machine learning or statistical models that you may want to explore.
 
-This constitutes your Project Proposal and Outline, and should look something like this:
+This constitutes your Project Proposal and Outline, which should look something like this:
 
 > Our project is to predict credit card fraud. We'll fit a random forest algorithm to lending club data to create a predictive model. We will also fit a deep neural network model to the data, and compare the performance of both models to determine which has sufficient predictive power.
 
