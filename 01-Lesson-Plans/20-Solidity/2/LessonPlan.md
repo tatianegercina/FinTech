@@ -58,7 +58,7 @@ Welcome to Day 2 of Intro to Solidity. Let's start by reviewing some of the conc
 
 * What is Solidity?
 
- **Answer** Solidity is a high-level, object-oriented programing language. It is the language used to write smart contracts on the Ethereum blockchain.
+ **Answer** Solidity is a high-level, object-oriented programming language. It is the language used to write smart contracts on the Ethereum blockchain.
 
 * What is a smart contract?
 
@@ -958,7 +958,7 @@ Ask the following review questions.
 
  * **Answer** Solidity is:
 
- * A high-level object-oriented programing language.
+ * A high-level object-oriented programming language.
 
  * It is the language used to write smart contracts on the Ethereum blockchain.
 
