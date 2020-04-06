@@ -1,6 +1,6 @@
 # Creating an Amazon S3 Bucket
 
-In this activity, you will learn how to create private and public Amazon S3 buckets.
+In this guide, you will learn how to create private and public Amazon S3 buckets.
 
 Log-in into the AWS Management Console using your `administrator` IAM user before starting this activity. In the "Find Services" search box type `s3` and select `S3` from the services list.
 
