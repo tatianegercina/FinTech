@@ -78,7 +78,7 @@ It can be frustrating when packages do not install correctly. Therefore, use the
 
 ### Install Microsoft Visual C++ Build Tools In Windows
 
-In some cases, the `Web3.py` library may fail to install in Microsoft Windows, due to the need for Microsoft Visual C++ Build Tools. In such an event, following the below steps to resolve the issue:
+In some cases, the `Web3.py` library may fail to install in Microsoft Windows due to the need for Microsoft Visual C++ Build Tools. In such an event, following the below steps to resolve the issue:
 
 1. Go to: https://visualstudio.microsoft.com/downloads/
 
