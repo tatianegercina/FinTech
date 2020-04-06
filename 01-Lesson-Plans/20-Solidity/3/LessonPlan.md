@@ -448,7 +448,7 @@ Welcome the students back to class, allow them to settle, and explain the follow
  the balance is pulled.
 
 * Then, we are going to add a special function called a `constructor` that will allow us to deploy this contract with custom
- values, versus hardcoding things like our account owners directly in the code.
+ values vs. hardcoding things like our account owners directly in the code.
 
 Have students navigate back to their [Remix IDE](https://remix.ethereum.org) and continue.
 
