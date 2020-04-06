@@ -6,7 +6,7 @@ Your presentation must:
 
 * [ ] Be at least 8 to 10 minutes long (check with the instructor for the official presentation time).
 
-* [ ] Describe the core message, or hypothesis, for your project.
+* [ ] Describe the core message, or hypothesis, of your project.
 
 * [ ] Describe the predictive model chosen and why it was chosen.
 
