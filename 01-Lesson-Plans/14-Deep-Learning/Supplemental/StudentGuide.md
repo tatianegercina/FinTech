@@ -40,7 +40,7 @@
 
 * [Classification: ROC Curve and AUC - Google's Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc)
 
-* [sklearn.metrics.roc_curve](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_curve.html)
+* [Sci-kit learn roc_curve documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_curve.html)
 ### FAQs
 
 <details>
