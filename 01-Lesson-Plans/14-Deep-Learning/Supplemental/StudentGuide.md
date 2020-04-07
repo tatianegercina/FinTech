@@ -56,7 +56,7 @@ The original neural network and building block for modern neural networks, is th
 
 <details>
 <summary>Are Neural Networks considered supervised learning or unsupervised learning?</summary><br>
-Neural networks can fall into both categories! Neural networks can run unsupervised learning jobs such as  mapping ot patterns in text for NLP, or for clustering algorithms. They can also be used for supervised learning jobs such as image classification and object detection.
+Neural networks can fall into both categories! Neural networks can run unsupervised learning jobs such as mapping ot patterns in text for NLP, or for clustering algorithms. They can also be used for supervised learning jobs such as image classification and object detection.
 
 <blockquote>
 <details>
@@ -224,7 +224,7 @@ When working with models, data is divided into training and testing sets. The tr
 <details>
 <summary>How does `train_test_split()` work?</summary><br>
 
-The `train_test_split()` function makes splitting data for testing easy!  The function outputs four sets of data points - two sets each of target and feature data where one set is for training, and one set is for testing. This is why the variables that define the function are typically `X_train, X_test, y_train, y_test`. The most important parameters of the function are the `X` and `y`. During preprocessing, we separate our data into the feature data, or `X`, and the target data - `y`.
+The `train_test_split()` function makes splitting data for testing easy! The function outputs four sets of data points - two sets each of target and feature data where one set is for training, and one set is for testing. This is why the variables that define the function are typically `X_train, X_test, y_train, y_test`. The most important parameters of the function are the `X` and `y`. During preprocessing, we separate our data into the feature data, or `X`, and the target data - `y`.
 
 The `y` data are the values we wish to predict, and the `X` data are the values we use to influence our predictions. If our data is stored in a DataFrame, we just break it out and store it in variables. The values we wish to predict are stored as `y` and the features we are using to make our predictions are stored as `X`. We then feed these into the `train_test_split()` function.
 
