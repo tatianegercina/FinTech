@@ -306,11 +306,11 @@ function purchase() public payable {
 
 * Next, we add the number of tokens being purchased to the token balance of the `msg.sender` by changing the value in the `balances mapping`.
 
-* Finally, we transfer the Ether to ourselves via the `owner.transfer(msg.value)` call.
+* Finally, we transfer the ether to ourselves via the `owner.transfer(msg.value)` call.
 
-* Now, when users send Ether to this function, they will be given tokens based on the exchange rate, and the Ether will be sent to the ArcadeToken owner.
+* Now, when users send ether to this function, they will be given tokens based on the exchange rate, and the ether will be sent to the ArcadeToken owner.
 
-* Once the users have tokens, they can call the `transfer` function to send them back and forth, or to pay for Arcade games!
+* Once the users have tokens, they can call the `transfer` function to send them back and forth, or to pay for arcade games!
 
 Explain to the class that we'll need some way to create tokens out of thin air when we absolutely need to. To do this, we'll add a `mint` function:
 
@@ -331,7 +331,7 @@ Time for the students to get their hands dirty with some token design!
 
 ---
 
-### 6. Students Do: Building an Arcade Token with Mappings (20 min)
+### 6. Student Do: Building an Arcade Token with Mappings (20 min)
 
 In this activity, students will practice using the `mapping` data structure by building an ArcadeToken.
 
@@ -349,7 +349,7 @@ Ensure that students are using the mapping to map `address` to `uint` specifical
 
 If students are confused about how the `exchange_rate` works, remind them:
 
-* By multiplying the `exchange_rate` with the `msg.value`, you are effectively multiplying the amount of `wei`, the smallest denomination of Ether, which is stored in a `uint`. We will learn how to calculate Ether values later this week, but operating on `wei` gives absolute precision.
+* By multiplying the `exchange_rate` with the `msg.value`, you are effectively multiplying the amount of `wei`, the smallest denomination of ether, which is stored in a `uint`. We will learn how to calculate ether values later this week, but operating on `wei` gives absolute precision.
 
 For students that are confused about `mapping`:
 
@@ -375,7 +375,7 @@ Open the solution and explain the following:
 
 * In our `transfer` function, we simply subtract the value from the sender's balance in the `balances mapping` and add it to the recipient's.
 
-* By setting an `exchange_rate`, we can reward/create tokens based on how much `wei` is sent to the `purchase` function, and then collect the Ether for ourselves, automatically!
+* By setting an `exchange_rate`, we can reward/create tokens based on how much `wei` is sent to the `purchase` function, and then collect the ether for ourselves, automatically!
 
 * In our `mint` function, we restrict the function only to allow ourselves (the `owner`) to create new tokens when we need to.
 
@@ -403,11 +403,11 @@ Welcome the students back to the class. Allow them to settle in a while, asking 
 
   * **Answer:** There is no set cap, but we are limited by gas prices and gas limits of the current state of the blockchain network.
 
-Get the students excited about the next activity by explaining how we are now going to secure our tokens from a vulnerability that allows users to spend tokens they don't have!
+Get students excited about the next activity by explaining how we are now going to secure our tokens from a vulnerability that allows users to spend tokens they don't have!
 
 ---
 
-### 10. Instructor Do: 3rd Parties Libraries in Solidity (SafeMath) (15 min) (Critical)
+### 10. Instructor Do: 3rd Party Libraries in Solidity (SafeMath) (15 min) (Critical)
 
 This demonstration shows students how to use the `SafeMath` from `OpenZeppelin` to secure their tokens.
 
@@ -421,7 +421,7 @@ It's time to make our tokens more secure. Briefly explain to the class:
 
 * We can make these secure by using a library called `SafeMath` from OpenZeppelin.
 
-First, show students how a contract is vulnerable to rewarding infinite tokens via an `integer underflow` exploit. Here's an example in-action:
+First, show students how a contract is vulnerable to rewarding infinite tokens via an `integer underflow` exploit. Here's an example:
 
 ![Hacked Balance GIF](Images/hacked_balance.gif)
 
@@ -439,7 +439,7 @@ Fill in any address that is **different** from the current account in the `recip
 
 Hit `Transact`, confirm the transaction in MetaMask, then click on the `balance` function in the contract.
 
-You will notice that you have an extremely high balance of tokens; in fact, the maximum balance you could possibly have!
+You will notice that you have an extremely high balance of tokens. In fact, it's the maximum balance you could possibly have!
 
 ![Hacked Balance](Images/hacked_balance.png)
 
@@ -447,17 +447,17 @@ Ask the class:
 
 * Can anyone spot the vulnerability in our code that allows this to happen?
 
-Allow the students to give their answers, then confirm:
+Allow students to give their answers, then confirm:
 
 * We are subtracting the balance from the `msg.sender` without checking if there is enough first!
 
-* When we subtract `1` from a `uint` that is set to `0`, we actually perform something called an "integer underflow."
+* When we subtract `1` from a `uint` that is set to `0`, we perform something called an "integer underflow."
 
 * Imagine if you took a car's odometer (mileage tracker) and cranked it to the maximum value it could support. What would happen when you reached mile `999999999...`? It would reset back to `0`. That's an integer overflow.
 
-* An underflow is the opposite, when we subtract `1` from `0`, we roll it back to the maximum value that can fit inside a `uint`. By default, most programming languages behave this way. It's up to us to make sure that does not happen.
+* An underflow is the opposite. When we subtract `1` from `0`, we roll it back to the maximum value that can fit inside a `uint`. By default, most programming languages behave this way. It's up to us to make sure that does not happen.
 
-Ensure the students understand the concept of an underflow/overflow and how it allows us to hack an insecure contract, then move on.
+Ensure that students understand the concept of an underflow/overflow and how it allows us to hack an insecure contract. Then move on.
 
 * Thankfully, there are libraries out there that allow us to write more secure smart contracts.
 
