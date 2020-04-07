@@ -103,33 +103,33 @@ Begin by giving the students some background on tokens and how they can be utili
 
 * Tokens are used to represent an asset or utility on a blockchain platform.
 
-* You can tokenize things like gold, silver, the USD, real-estate, your car, artwork, property, and virtually anything that holds some value.
+* You can tokenize things like gold, silver, the USD, real estate, your car, artwork, property, and virtually anything that holds some value.
 
-* Since tokens are built using smart contracts they can be programmed to do many things besides just payments.
+* Since tokens are built using smart contracts, they can be programmed to do many things besides just payments.
 
 * By tokenizing things, we can make representing and trading value extremely easy and efficient. Since they are blockchain-powered, these tokens can be traded globally without any additional infrastructure.
 
 * Representing commodities as tokens allow for easy transportation of ownership. For example, transferring a metric ton of gold takes a lot of energy. Sending tokens representing that metric ton of gold is much easier, and allows for the same borderless nature given by the blockchain.
 
-* Imagine opening up your crypto wallet to see all the various assets you own in a single place, digital and physical. You could manage your house ownership, car payments, artwork, investments, video game items, and more with cryptographically provable math.
+* Imagine opening up your crypto wallet to see all the various assets you own in a single place, digital and physical. You could manage your house ownership, car payments, artwork, investments, video game items, and more, with cryptographically provable math.
 
 * Business assets can easily be tracked and transferred, dramatically improving liquidity and auditability.
 
-* Items you purchase at a grocery store can even be tokenized, allowing you to scan a code on your groceries to pull up the entire supply chain history of that item, allowing you to prove exactly where it came from.
+* Items you purchase at a grocery store can even be tokenized, allowing you to scan a code on your groceries to pull up the entire supply chain history of that item, so you can prove exactly where it came from.
 
-* Stablecoins are tokens designed to have stable value; unlike traditional cryptocurrencies, they are not as volatile since they are backed by fiat (government) currencies.
+* Stablecoins are tokens designed to have stable value. Unlike traditional cryptocurrencies, they are not as volatile, since they are backed by fiat (government) currencies.
 
 * Stablecoins normally hold USD within bank accounts and then issue tokens backed by these dollars.
 
 Clarify that `coins` are the cryptocurrencies native to the blockchain, coins like `BTC` and `ETH`, while `tokens` are generally built on top of existing blockchain platforms.
 
-Additionally, clarify that the previous statement is a loose definition, and you may hear people using the terms coin and token interchangeably.
+Additionally, clarify that the previous statement is a loose definition, and you may hear people using the terms "coin" and "token" interchangeably.
 
 Now it's time for students to explore some tokens themselves!
 
 ---
 
-### 3. Students Do: Token Exploration (10 min)
+### 3. Student Do: Token Exploration (10 min)
 
 Students will take the given activity time to research their selected tokens.
 
