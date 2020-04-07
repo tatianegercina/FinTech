@@ -526,9 +526,9 @@ Deploy a fresh version of this newly modified contract and fill in the `transfer
 
 ![Secure Transfer](Images/arcade_token_secure_transfer.png)
 
-Now, attempt to make the same transaction. You will need to ignore a `Gas estimation failed` error -- this is because even the EVM knows an error is likely to occur.
+Now, attempt to make the same transaction. You will need to ignore a `Gas estimation failed` error — this is because even the EVM knows an error is likely to occur.
 
-Sending the transaction anyway will result in an error like:
+Sending the transaction anyway will result in an error such as:
 
 ![MetaMask Failed](Images/metamask_failed.png)
 
@@ -541,17 +541,17 @@ transact to ArcadeToken.transfer errored: Error: [ethjs-rpc] rpc error with payl
 
 * Voila! Now our contract is secured against integer under/overflows.
 
-* Note, this will only work with `uint` currently, but we can declare it for `int` as well in the future.
+* Note: This will only work with `uint` currently, but we can also declare it for `int` in the future.
 
 * We'll need to make sure that we replace every instance of a normal operator like `+`, `-`, `*`, `/`, etc, with the SafeMath alternatives.
 
-* It is good practice to leverage this library by default, and the majority of smart contract developers do the same as it has prevented many tokens from being compromised.
+* It is good practice to leverage this library by default, and the majority of smart contract developers do the same, as it has prevented many tokens from being compromised.
 
 Now it's time for students to secure their tokens!
 
 ---
 
-### 11. Students Do: Using SafeMath (15 min)
+### 11. Student Do: Using SafeMath (15 min)
 
 In this activity, students will implement the SafeMath library and replace all math operations with the SafeMath alternatives.
 
