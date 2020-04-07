@@ -587,7 +587,7 @@ Open the solution and explain the following:
 
 * We import the SafeMath library directly from GitHub at the top of the file. This is only supported in Remix. We can also copy and paste the contract directly into our code above our own.
 
-* We need the `using SafeMath for uint;` line to link the library to the `uint` type. That way, we can call the `.add()`, `.sub()`, etc functions on any `uint` later.
+* We need the `using SafeMath for uint;` line to link the library to the `uint` type. That way, we can call the `.add()`, `.sub()`, etc. functions on any `uint` later.
 
 * By replacing all of the math operations with the SafeMath alternatives, we secure ourselves from potential balance hacks.
 
@@ -595,11 +595,11 @@ Ask for any remaining questions before moving on.
 
 ---
 
-### 13. Students Do: Tokenized Reward System Challenge (20 min)
+### 13. Student Do: Tokenized Reward System Challenge (20 min)
 
 In this activity, students will take some time to work on a "tokenized reward system" challenge.
 
-Students will modify their `ArcadeToken` to distribute tokens as a reward for spending Ether with the contract. The new `spend` function will collect a small transaction fee for the owner (say, `0.25%`) and reward points to the user in exchange (say, 3 tokens for every wei spent).
+Students will modify their `ArcadeToken` to distribute tokens as a reward for spending ether with the contract. The new `spend` function will collect a small transaction fee for the owner (say, `0.25%`) and reward points to the user in exchange (say, three tokens for every wei spent).
 
 Send out the instructions to the students and have TAs circulate the class. Remind students to use SafeMath operations!
 
@@ -613,21 +613,21 @@ Send out the instructions to the students and have TAs circulate the class. Remi
 
 Clarify the activity a bit to the students:
 
-* In this activity, we will incentivize loyal Arcade to users to collect `ARCD` tokens passively during regular Ether transactions that can later be used in the Arcade.
+* In this activity, we will incentivize loyal arcade users to collect `ARCD` tokens passively during regular ether transactions to be used later at the arcade.
 
-* We will alter our contract to provide a system similar to credit card points that can be redeemed for cash back, in-store credits, etc. by adding a new function called `spend` that will collect a small transaction fee to the `owner` and forward the rest of the Ether to a `recipient`. Then, the contract will reward X amount of points for every wei spent.
+* We will alter our contract to provide a system similar to credit card points that can be redeemed for cash back, in-store credits, etc. by adding a new function called `spend` that will collect a small transaction fee from the `owner` and forward the rest of the ether to a `recipient`. Then, the contract will reward X amount of points for every wei spent.
 
-* Say we ran an Arcade, or some other store or service. Loyal Arcade customers can spend their Ether with our contract and redeem the tokens back at the Arcade!
+* Say we ran an arcade or some other store or service. Loyal arcade customers can spend their ether with our contract and redeem tokens at the arcade!
 
-* The contract owner collects a small Ether fee passively in return for the rewarded tokens, so capital is generated to provide these benefits. You could configure the reward system; however, you'd see fit.
+* The contract owner passively collects a small ether fee in return for the rewarded tokens, so capital is generated to provide these benefits. You could configure the reward system however you see fit.
 
-Note: since Solidity does not support floating-point numbers (decimals), a formula is provided in the instructions to calculate percentages from "basis points."
+Note: Since Solidity does not support floating-point numbers (decimals), a formula is provided in the instructions to calculate percentages from "basis points."
 
 `1` basis point = `0.01%`. You can calculate a percentage by using `basis_points * some_number / 10000`.
 
 For example: `250 basis points * $100 / 10000` is equal to `$2.5` or 2.5%
 
-Here's a handy chart for easy reference (also provided to the students):
+Here's a handy chart for easy reference (also provided to students):
 
 Basis Points | Percentage
 ---------|----------
@@ -653,23 +653,23 @@ Open the solution and explain the following:
 
 * In our spend function, we calculate the fee by performing `uint fee = msg.value.mul(fee_rate).div(10000)`. This calculates a percentage of the `msg.value` by using the basis points formula.
 
-* We calculate the token reward amount by multiplying the `msg.value` by the reward as so: `uint reward = msg.value.mul(reward_rate)`.
+* We calculate the token reward amount by multiplying the `msg.value` by the reward, as follows: `uint reward = msg.value.mul(reward_rate)`.
 
-* We then add the rewards to the balance of the user by running `balances[msg.sender] = balances[msg.sender].add(reward)`.
+* We then add the rewards to the user's balance by running `balances[msg.sender] = balances[msg.sender].add(reward)`.
 
 * Next, we transfer the `msg.value` minus the fee to the `recipient` using `recipient.transfer(msg.value.sub(fee))`.
 
 * Finally, we transfer the remaining `fee` value by running `owner.transfer(fee)`.
 
-Ask the students the following questions:
+Ask students the following questions:
 
 * Why might we want to implement a reward system like this?
 
-  * **Answer:** You could incentivize loyal users to return to your Arcade or business.
+  * **Answer:** You could incentivize loyal users to return to your arcade or business.
 
-  * **Answer:** You generate capital from small fees that allow you to develop your business further.
+  * **Answer:** You generate capital from small fees that allow you to further develop your business.
 
-  * **Answer:** This works much like an annual credit card fee would, but instead collects passively.
+  * **Answer:** This works much like an annual credit card fee would, but collects passively instead.
 
   * **Answer:** You only need to write the contract once, then you have the reward system in place — less infrastructure cost for the business.
 
@@ -677,7 +677,7 @@ Ask the students the following questions:
 
   * **Answer:** Some users won't be willing to pay an extra fee. In that case, you may be able to remove it, if applicable to your business model.
 
-  * **Answer:** Users have to pay extra gas to run the `spend` function vs. paying Ether directly.
+  * **Answer:** Users have to pay extra gas to run the `spend` function vs. paying ether directly.
 
   * **Answer:** It may be difficult to come up with a viable rewards system that works for your business.
 
@@ -697,4 +697,4 @@ This section is reserved for the homework demo. Take some time to review the hom
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
