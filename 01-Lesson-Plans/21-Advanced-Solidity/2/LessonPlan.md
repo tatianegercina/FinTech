@@ -600,7 +600,7 @@ Ask the students the following questions:
 
 * What is the difference between fungible and non-fungible?
 
-  * **Answer:** Fungible refers to tokens where you ask "how many," whereas non-fungible refer to tokens where you ask "which one."
+  * **Answer:** Fungible refers to tokens where you ask "how many," whereas non-fungible refers to tokens where you ask "which one."
 
   * **Answer:** Fungible tokens are like-kinds, where each token can be exchanged with another of the same value without making a difference. Non-fungible tokens are unique per-token, meaning each token has its properties and value, like artwork or legal certificates.
 
@@ -614,4 +614,4 @@ Ask the students the following questions:
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
