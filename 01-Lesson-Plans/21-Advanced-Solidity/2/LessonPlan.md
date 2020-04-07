@@ -199,19 +199,19 @@ Core EIPs follow a slightly different process from the rest of the EIP categorie
 
   * Draft - During the draft phase, the initial draft and any changes are merged in as a pull request. The EIP must be implemented to progress to the next phase.
 
-  * Last Call - During the last call phase, the EIP is listed on the [https://eips.ethereum.org/](https://eips.ethereum.org/) website under the Last call section. If there are no unaddressed technical complaints will or changes to source material required, then the changes will become Final.
+  * Last Call - During the last call phase, the EIP is listed on the [https://eips.ethereum.org/](https://eips.ethereum.org/) website under the Last Call section. If there are no unaddressed technical complaints will or changes to source material required, then the changes will become Final.
 
   * Final -  The EIP becomes final, reflecting the most state-of-the-art standard.
 
-* Up to this point, we have discussed the concept of tokens, have implemented our basic token standard, and have learned that tokens can represent both fungible and non-fungible goods.
+* Up to this point, we have discussed the concept of tokens, implemented our basic token standard, and learned that tokens can represent both fungible and non-fungible goods.
 
-* There are ERC standards that the community has established to implement different use cases including `fungible` and `non-fungible` tokens. We have built our own `fungible` token using our logic. However, we should be able to find the latest community standards when we go to build our tokens and dApps in production.
+* There are ERC standards that the community has established to implement different use cases, including `fungible` and `non-fungible` tokens. We have built our own `fungible` token using our logic. However, we should be able to find the latest community standards when we build our tokens and dApps in production.
 
-* Assure students that by being able to follow the newest accepted `Ethereum Improvement Proposals`, that they will be able to stay up to date on the current Ethereum standards, practices, and technologies.
+* Assure students that by being able to follow the newest accepted `Ethereum Improvement Proposals`, they will be able to stay up to date on the current Ethereum standards, practices, and technologies.
 
-### 6. Students Do: ERC Standards Exploration (15 min)
+### 6. Student Do: ERC Standards Exploration (15 min)
 
-In this activity, students will be exploring the various ERC standards that are currently being developed, and that have been accepted as final.
+In this activity, students will explore the various ERC standards that are currently being developed, as well as those that have been accepted as final.
 
 Send out the instructions and have TAs circulate the class.
 **Instructions:**
