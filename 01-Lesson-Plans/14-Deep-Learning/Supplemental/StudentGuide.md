@@ -90,19 +90,17 @@ Some of the most popular activation functions include sigmoid, tanh, and relu. A
 </details>
 
 <details>
-<summary>Loss Functions</summary><br>
+<summary>Loss Functions and Optimizers</summary><br>
 
-Loss functions measure how far the model is deviating from the expected result - the higher the number, the more deviation, meaning poor performance. A highly simplied way to visualize this, is to imagine trying to walk down a mountain. You would analyize the paths you have available to get to the end result, looking for the most optimal. You wouldn't choose the rocky path that winds up and down, you'd choose the straightest, quickest path that expends the least energy. Choosing anything but the most optimal path will result in huge error. These errors are measured by the loss function.
+Loss functions measure how far the model is deviating from the expected result - the higher the number, the more deviation, meaning poor performance. Optimizer functions help the loss functions to minimize their error by updating the weights used in the model according to the loss. Optimizer functions fine tune your model by using the loss function as a guide to keep it moving in the right direction. If the loss is going up, the optimizer needs to readjust the weights.
+
+A real world example of loss functions and optimizers is riding a horse. The horse may start to drift or find its own path, but you can use the reins to guide the horse back to the correct path. In this example, your eyes are the loss function. You can see the correct path, so you know when the model (the horse) starts to drift course. Loss functions are just telling you how far off your model is from where you want it to be.
+
+The horse reins are like the optimizer. The optimizer is what takes the feedback from the loss function and updates the model to make it better match your desired outcome. For example, if you see (loss function) that the horse is drifting to the right of the correct path (error), you can pull to the left to correct the course (optimizer).
 
 Some of the most popular loss functions include mean squared error (MSE) and categorical cross-entropy. A full list of loss functions provided by Keras can be seen [here.](https://keras.io/losses/)
 
-</details>
-
-<details>
-
-<summary>Optimizer Functions</summary><br>
-
-Optimizer functions help the loss functions to minimize their error by updating the weights used in the model according to the loss. The optimizer uses the loss function as a guide to keep it moving in the right direction. If the loss is going up, the optimizer needs to readjust the weights. A great medium article on the topic can be viewed [here.](https://medium.com/datadriveninvestor/overview-of-different-optimizers-for-neural-networks-e0ed119440c3)
+ A great medium article on the topic can be viewed [here.](https://medium.com/datadriveninvestor/overview-of-different-optimizers-for-neural-networks-e0ed119440c3)
 
 Some of the most popular optimizer functions include Adam and Adadelta. A full list of optimizer functions provided by Keras can be seen [here.](https://keras.io/optimizers/)
 
