@@ -172,7 +172,7 @@ Now that the model is built, a summary can be displayed by accessing the `.summa
 
 <img src=Images/model_summary.PNG width=475>
 
-To continue the process, the model is compiled and fitted. To compile the model we run `.compile()` on our model and specifiy a loss function, an optimizer and also a metrics output to measure the accuracy. To fit the model, we run `.fit()`, providing the feature and target data, the data split to make validiation results on, and the number of epohds. Remember, epochs is just another way of saying iterations, or the number of times we run the training:
+To continue the process, the model is compiled and fit to the data (trained). To compile the model we run `.compile()` on our model and specify a loss function, an optimizer and also a metrics output to measure the accuracy. To fit the model, we run `.fit()`, providing the feature and target data, the data split to make validation results on, and the number of epochs. Remember, epochs is just another way of saying iterations, or the number of times we run the training:
 
 ```python
 model.compile(loss="mean_squared_error", optimizer="adam", metrics=["mse"])
