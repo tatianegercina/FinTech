@@ -43,7 +43,7 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* Today's class will be a challenging one as students start to dig deeper into advanced Solidity concepts. Take plenty of time to cover and review the new concepts in today's class.
+* Today's class will be a challenging one, as students start to dig deeper into advanced Solidity concepts. Take plenty of time to cover and review the new concepts in class.
 
 * Reassure students that as they practice Solidity, they will begin to see common patterns in the code. Many of the examples show this week can be reused in other smart contract applications.
 
@@ -61,7 +61,7 @@ Take a few minutes to discuss the following recall questions with the class.
 
   * **Answer** Solidity is:
 
-  * A high-level object-oriented programing language.
+  * A high-level object-oriented programming language.
 
   * It is the language used to write smart contracts on the Ethereum blockchain.
 
@@ -81,11 +81,11 @@ Take a few minutes to discuss the following recall questions with the class.
 
   * **Answer:** Contracts should not leave room for ambiguity.
 
-  * **Answer:** Being upfront about data types and the size to store them results in less computational overhead/gas costs.
+  * **Answer:** Being upfront about data types, and the size to store them, results in less computational overhead/gas costs.
 
 * What is a `payable` address, and why is it different from a regular address?
 
-  * **Answer:** A payable address is like a normal address type, except it allows the `.transfer` function to be called in order to send it Ether.
+  * **Answer:** A payable address is like a normal address type, except it allows the `.transfer` function to be called in order to send it ether.
 
 * What is a potential benefit of executing code in a virtual machine?
 
