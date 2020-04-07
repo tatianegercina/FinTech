@@ -331,7 +331,7 @@ Point out the code in the file:
 
 * The `transfer` function is also defined, just like the ERC20 standard specifies. It is formatted a bit differently from the way we defined it when we built our tokens from scratch. This is to make sure that certain security checks are performed. However, the same parameters and general logic are used to get the job done.
 
-* By saying that `ArcadeToken is ERC20`, we are inheriting all of these variables, functions, and so on into our contract. We can inherit from multiple contracts as well!
+* By saying that `ArcadeToken is ERC20`, we are inheriting all of these variables, functions, etc., into our contract. We can inherit from multiple contracts as well!
 
 * This means that we can call the `transfer` function and `balanceOf` functions, as well as the others like `_mint` in order to manage our token.
 
@@ -341,7 +341,7 @@ Next, open up OpenZeppelin's `ERC20Detailed` contract in the same folder and poi
 
 * Since the ERC20 standard defines the `name`, `symbol` (the token's ticker), and other variables as *optional*, OpenZeppelin separates the optional parameters into `ERC20Detailed`.
 
-* Notice that `ERC20Detailed` has its constructor as well to establish the `name`, `symbol`, and `decimals` parameter. The `name` is the human-friendly name of the token, the `symbol` is the ticker, and the `decimals` are the number of decimal points this token will use. We will stick to Ethereum's default, `18` in most of our cases.
+* Notice that `ERC20Detailed` has its constructor as well to establish the `name`, `symbol`, and `decimals` parameter. The `name` is the human-friendly name of the token, the `symbol` is the ticker, and the `decimals` are the number of decimal points this token will use. We will stick to Ethereum's default—`18` in most of our cases.
 
 * There are also "getter" functions that return these values.
 
@@ -384,7 +384,7 @@ Explain to the students that this is a constructor that also passes parameters t
 
 * Since we are inheriting from `ERC20Detailed`, and `ERC20Detailed` has a constructor, we need to pass the parameters it expects.
 
-* Remember, the `ERC20Detailed` constructor had three parameters: `name`, `symbol`, and `decimals`. Here, we are passing in `ArcadeToken` as the name, `ARCD` as the symbol, and we are using Ethereum's default `18` decimal places for easier conversion.
+* Remember, the `ERC20Detailed` constructor had three parameters: `name`, `symbol`, and `decimals`. Here, we are passing in `ArcadeToken` as the name, `ARCD` as the symbol, and using Ethereum's default `18` decimal places for easier conversion.
 
 * In our constructor, we are setting the `owner` as the `msg.sender`, and calling the `_mint` function that OpenZeppelin's `ERC20` provides to us. By passing in `initial_supply`, we can create an initial amount of tokens and send it to the owner upon deployment.
 
@@ -427,7 +427,7 @@ contract ArcadeToken is ERC20, ERC20Detailed {
 
 * Since we call this modifier `onlyOwner`, we can add `onlyOwner` to the functions that we want to restrict to ourselves.
 
-* Inside the modifier, we add the same `require` that we would normally to ensure that `msg.sender` is the `owner` address.
+* Inside the modifier, we add the same `require` that we would normally, to ensure that `msg.sender` is the `owner` address.
 
 * At the last line of the modifier, we need to add an underscore `_` to tell Solidity to return to the function that called the modifier.
 
@@ -486,7 +486,7 @@ Send out the instructions and have TAs circulate the class.
 
 * [ArcadeTokenERC20.sol](Activities/05-Stu_ERC20/Unsolved/ArcadeTokenERC20.sol)
 
-Ensure that students are properly passing parameters to the `ERC20Detailed` constructor and that they are properly using the `onlyOwner` modifier.
+Ensure that students are properly passing parameters to the `ERC20Detailed` constructor and properly using the `onlyOwner` modifier.
 
 ### 12. Instructor Do: ERC20 Review (10 min)
 
@@ -502,7 +502,7 @@ Open the solution and explain the following:
 
 * Within the constructor, we set the token's owner to `msg.sender`. Then we call `_mint` to add the `initial_supply` to the token owner's balance.
 
-* Our new `mint` function we added will be restricted to `onlyOwner`, and will
+* The new `mint` function we added will be restricted to `onlyOwner`, and will
 
 Ask for any remaining questions before moving on.
 
@@ -542,7 +542,7 @@ Point out the following before confirming the transaction:
 
 * The estimated price can be used to check how much deploying this token to the mainnet would cost. In this case, deploying our ERC20-compliant ArcadeToken would cost about $0.34 total.
 
-Confirm the transaction and have all of the students follow along and deploy their tokens to Kovan. It may take a couple of minutes for everyone's transactions to confirm. However, Kovan's blocktime is 5 seconds and should manage quickly.
+Confirm the transaction and have all of the students follow along and deploy their tokens to Kovan. It may take a couple of minutes for everyone's transactions to confirm. However, Kovan's blocktime is five seconds and should manage quickly.
 
 Once everyone has deployed, point out that Remix will allow you to interact with this contract in the sidebar as usual:
 
@@ -566,13 +566,13 @@ Explain to the students:
 
 * As long as we have our contract's code, and the address, we can generate the information we need to interact with the contract.
 
-* In fact, we don't need the code itself, just something called the ABI (Application Binary Interface), which is a compiled interface that is like an API, but in binary format. Since we have the code, we can generate the ABI. However, don't worry about that, Remix will handle that stuff behind the scenes.
+* In fact, we don't need the code itself, just something called the ABI (Application Binary Interface), which is a compiled interface that is like an API, but in binary format. Since we have the code, we can generate the ABI. However, don't worry about that—Remix will handle that stuff behind the scenes.
 
 * We can come back to this interactive menu at any time by pointing Remix in the right direction by setting the network and contract's address.
 
-Now time for the exciting part, actually using our tokens!
+Now time for the exciting part—actually using our tokens!
 
-### 14. Students Do: Sending and Receiving ERC20 tokens (15 min)
+### 14. Student Do: Sending and Receiving ERC20 tokens (15 min)
 
 In this activity, students will pair up and exchange each other's tokens on the testnet. They will also explore the transactions and the contract on the Etherscan block explorer, which provides more detail for ERC20-compliant smart contracts.
 
