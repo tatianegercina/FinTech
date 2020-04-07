@@ -133,7 +133,9 @@ Deep Neural Networks are neural networks that have more than one hidden layer. O
 
 A Recurrent neural network (RNN) is a type of deep neural network that can remember the past and update its results based on that information. RNNs are called recurrent, because they cycle the information they receive through the layers more than once, effectively accessing their 'memory' to update their decisions based on the past. This is the opposite of standard Articifical Neural Networks (ANNs) that utilize a feedforward method where the inputs are passed through each layer only only once, in a unilateral direction, and then outputted.
 
-Though highly useful, RNNS only remember the last few steps, posing an issue for scenarios such as time series analysis on large time windows. LSTM-RNN can help resolve this problem by practicing more expansive, yet more selective memory. The LSTM-RNN can predict which values are ok to forget and which it needs to hold on to so that longer time windows can be analyzed.
+While RNNs do well with short sequences of data, they can be overwhelmed and struggle to learn long sequences. This is because they have no way to sort out what information is important and what information isn't important over long periods of time. For example, suppose you wanted to build a machine learning model that could predict when you would want a snack. What you had for breakfast this morning may impact your hunger level for the day, but what you ate for breakfast 3 years ago may no longer be relevant to predicting today's snack time. This can pose an issue for scenarios such as time series analysis on large time windows. 
+
+LSTM-RNN can help resolve this problem by practicing more expansive, yet more selective memory. The LSTM-RNN can predict which values are ok to forget and which it needs to hold on to so that longer time windows can be analyzed. 
 
 </details>
 
