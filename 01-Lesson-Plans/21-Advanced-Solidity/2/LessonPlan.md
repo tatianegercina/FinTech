@@ -2,23 +2,23 @@
 
 ### Overview
 
-Previously students were introduced to the concept of tokens on the Ethereum blockchain. They learned what tokens are and how to use them. Today they will be introduced to the concept of `fungibility`, `fungible` vs. `non-fungible` goods, and how this relates to tokens and the various token standards.
+Previously students were introduced to the concept of tokens on the Ethereum blockchain. They learned what tokens are and how to use them. Today, they will be introduced to the concept of `fungibility`, `fungible` vs. `non-fungible` goods, and how this relates to tokens and various token standards.
 
 ### Class Objectives
 
-By the end of the class, students will be able to:
+By the end of today's class, students will be able to:
 
-* Explain the difference between fungible and non-fungible tokens and their use-cases.
+* Explain the difference between fungible and non-fungible tokens and their use cases.
 
 * Explain that ERC standards are official smart contract implementations for various use cases.
 
-* Explain which ERC token standards correspond with fungible vs. non-fungible tokens
+* Explain which ERC token standards correspond with fungible vs. non-fungible tokens.
 
-* Implement an ERC20 compatible fungible token using OpenZeppelin libraries
+* Implement an ERC20 compatible fungible token using OpenZeppelin libraries.
 
-* Evaluate different ERC standards and determine which work for different use cases
+* Evaluate different ERC standards and determine which work for different use cases.
 
-* Leverage open, community-maintained libraries in Solidity to implement ERC standards
+* Leverage open, community-maintained libraries in Solidity to implement ERC standards.
 
 ### Slideshow and Time Tracker
 
@@ -55,7 +55,7 @@ Review tokens, and the concept of tokenomics with the class.
 
   * **Answer** Potentially any other store of value
 
-* What are some common aspects of a `token`.
+* What are some common aspects of a `token`?
 
   * **Answer** They have a supply which can be a fixed or infinite amount.
 
@@ -65,7 +65,7 @@ Review tokens, and the concept of tokenomics with the class.
 
 * What are some generally accepted differences between `coins` and `tokens`?
 
-  * **Answer** Tokens are commonly built on top of an existing blockchain platform. In contrast, coins are commonly a fundamental component of a blockchain platform.
+  * **Answer** Tokens are usually built on top of an existing blockchain platform. In contrast, coins are commonly a fundamental component of a blockchain platform.
 
   * **Answer** Coins are typically used as just a currency for buying and selling things. In contrast, tokens can have broader use cases.
 
@@ -85,31 +85,31 @@ In this activity, students will be introduced to the concepts of fungible vs. no
 
 You will be starting with real-world examples and move into digital examples. Refer to the following link for additional documentation [OpenZeppenlin Documentation: Tokens](https://docs.openzeppelin.com/contracts/2.x/tokens#_different_kinds_of_tokens)
 
-* As previously discussed, tokens can be used to represent any potential store of value including, votes, currency, and property.
+* As previously discussed, tokens can be used to represent any potential store of value, including votes, currency, and property.
 
 * Tokens and the idea of tokenomics is an extremely powerful concept. However, it goes a lot deeper than just representing the value of an asset.
 
-Have the class consider the following question?
+Have the class consider the following question:
 
-* What happens if two assets are not of the same value, how do you represent them both with tokens?
+* What happens if two assets are not of the same value—how do you represent them both with tokens?
 
-Expand on the previous question with the following points and introduce the concept of `fungibility`.
+Expand on the previous question with the following points, and introduce the concept of `fungibility`.
 
-* Se we have things of equal value that are interchangeable with one another, and we have things that are not of equal value that are therefore not interchangeable with one another. This concept is referred to as `fungibility`.
+* Say we have things of equal value that are interchangeable with one another, and we have things that are not of equal value that are not interchangeable with one another. This concept is referred to as `fungibility`.
 
 * Examples of fungible goods include cryptocurrencies, fiat currencies, and voting rights.
 
-  * A vote is a vote, if you have two people that both have voted, then their votes both have the same voting power. Just like if you have two people that both have a `nickel`, both nickels are worth the same 5 cents.
+  * A vote is a vote. Let's say you have two people that have voted; each vote has the same power. Just like if you have two people that both have a `nickel`, each nickel is worth the same amount—five cents.
 
 * Examples of non-fungible goods include pieces of land, diamonds, or collectibles.
 
-  * A person could own a piece of land in San Diego, and a piece of land in Pennsylvania, these two pieces of land are different, they do not hold the same value and are therefore not interchangeable with one another. The same could be said for two different collectible figures like a Pop Vinyl or a Beanie Baby; each collectible is unique.
+  * Let's say a person owns a 1,000 square foot lot in Calgary, and the same sized lot in downtown Toronto. These pieces of land are different, and don't hold the same value. Therefore, they are not interchangeable with one another. The same could be said for two different collectible figures, like a Pop Vinyl or a Beanie Baby; each collectible is unique.
 
-* Previously, we implemented our basic token standard. Today we will be discussing and using some of the community accepted standards for implementing both fungible and non-fungible tokens.
+* Previously, we implemented our basic token standard. Today, we will discuss and use some of the community accepted standards for implementing both fungible and non-fungible tokens.
 
 Now that the students have a basic understanding of `fungibility`, discuss some of the real-world implementations of `fungible` and `non-fungible` tokens on the blockchain.
 
-In your web browser open the [CryptoKitties Website](https://www.cryptokitties.co/)
+In your web browser, open the [CryptoKitties Website](https://www.cryptokitties.co/)
 
 ![CryptoKitties](Images/cryptokitties_website.png)
 
@@ -119,7 +119,7 @@ In your web browser open the [CryptoKitties Website](https://www.cryptokitties.c
 
 * At the crypto peak in 2017, some `crypto kitties` were valued at over 130 thousand US dollars.
 
-Remind the students that we have already discussed many examples of `fungible` tokens yesterday. Examples include:
+Remind students that we discussed many examples of `fungible` tokens yesterday. Examples include:
 
 * Basic Attention Token (BAT)
 
@@ -129,9 +129,9 @@ Remind the students that we have already discussed many examples of `fungible` t
 
 * Our Arcade Token (ARCD)
 
-### 3. Students Do: Use Case Thought Experiment (15 min)
+### 3. Student Do: Use Case Thought Experiment (15 min)
 
-In this activity, students will break into groups of 3 - 5 people and brainstorm ways to leverage fungible and non-fungible tokens.
+In this activity, students will break into groups of three to five people and brainstorm ways to leverage fungible and non-fungible tokens.
 
 **Instructions:**
 
@@ -139,15 +139,15 @@ In this activity, students will break into groups of 3 - 5 people and brainstorm
 
 ### 4. Instructor Do: Fungible vs. Non-Fungible Review (10 min)
 
-Now that the students have collected their lists of fungible and non-fungible use cases. Go around the room and ask each group the following questions.
+Now that the students have collected their lists of fungible and non-fungible use cases, go around the room and ask each group the following questions:
 
-* What was your favorite `Fungible` use case?
+* What was your favorite `fungible` use case?
 
-* What was your favorite `Non-fungible` use case?
+* What was your favorite `non-fungible` use case?
 
-* Why do you think the benefits of scaling such a system on a blockchain would be?
+* What do you think the benefits of scaling such a system on a blockchain could be?
 
-* Why do you think some downsides of scaling such a system on a blockchain would be?
+* What do you think some downsides of scaling such a system on a blockchain could be?
 
 ### 5. Instructor Do: ERC Standards (10 min)
 
@@ -155,9 +155,9 @@ In this activity, students will be introduced to various ERC standards. Students
 
 * Ethereum is continuing to grow and rapidly evolve as the crypto community and the world continues to expand on the concepts of Web3 and blockchain.
 
-* Throughout these periods of change, standards are formed to lead to best practices within the platform to prevent bugs and security vulnerabilities.
+* Throughout these periods of change, standards are formed to lead to best practices within the platform, to prevent bugs and security vulnerabilities.
 
-* Today we will be discussing several of these standards, also known as `EIP`s, we will specifically be talking about `ERC`s a type of `EIP` specifically related to application-level standards and conventions such as smart contracts.
+* Today we will discuss several of these standards, also known as `EIP`s. We will talk about `ERC`s—a type of `EIP` specifically related to application-level standards and conventions such as smart contracts.
 
 * The ERCs we will be focusing on today are `20, 721, 777, 1155`.
 
