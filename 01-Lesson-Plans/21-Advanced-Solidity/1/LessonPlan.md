@@ -131,9 +131,9 @@ Now it's time for students to explore some tokens themselves!
 
 ### 3. Student Do: Token Exploration (10 min)
 
-Students will take the given activity time to research their selected tokens.
+Students will use this time to research their selected tokens.
 
-Have the students open the following list of popular Ethereum blockchain tokens and select a few that interest them.
+Have students open the following list of popular Ethereum blockchain tokens and select a few that interest them.
 
 **Instructions:**
 
@@ -169,19 +169,19 @@ Discuss the following review questions with the class.
 
   * **0x** - a protocol that allows the creation of decentralized crypto exchanges on the Ethereum blockchain using smart contracts for negotiation between users.
 
-  * **Gemini Dollar (GUSD)** - the first federally regulated stablecoin the Gemini dollar is issued by the Gemini Trust Company, LLC, a New York trust company. Each GUSD is backed by one USD.
+  * **Gemini Dollar (GUSD)** - the first federally regulated stablecoin, the Gemini dollar is issued by the Gemini Trust Company, LLC, in New York. Each GUSD is backed by one USD.
 
-  * **Hedge** - a platform that creates a market for knowledge on best trading practices, allows users to trade their current market analysis for an equivalent amount of value.
+  * **Hedge** - a platform that creates a market for knowledge on best trading practices, it allows users to trade their current market analyses for an equivalent amount of value.
 
   * **Vechain** - "VeChain offers a Blockchain-as-a-Service (`BaaS`) platform called ToolChain. ToolChain offerers services like product lifecycle management, supply chain process control, data deposit, data certification, and process certification to enterprise companies like Walmart.
 
-  * **Maker Dao (Dai)** - Dai is a token but also a `stablecoin`, this means 1 Dai = $1. Instead of having a central company back the fiat, the MakerDAO converts Ether to the Dai stablecoin. This creates a 1:1 parity with the USD, without a central authority, just smart contracts!
+  * **Maker Dao (Dai)** - Dai is a token but also a `stablecoin`, which means 1 Dai = $1. Instead of having a central company back the fiat, the MakerDAO converts ether to the Dai stablecoin. This creates a 1:1 parity with the USD, without a central authority, just smart contracts!
 
   * **Golem (GNT)** - is a token that you use to pay for rentable computing power on the Golem network. It allows you to pay for computations that occur outside of Ethereum, like GPU access or other hardcore number-crunching jobs.
 
 ---
 
-### 5. Instructor Do: Mappings Data Structure in Solidity (15 min) (Critical)
+### 5. Instructor Do: Mapping Data Structure in Solidity (15 min) (Critical)
 
 This activity shows students how to build a simple token with Solidity.
 
@@ -189,7 +189,7 @@ This activity shows students how to build a simple token with Solidity.
 
 * [ArcadeToken.sol](Activities/02-Ins_Mappings/Unsolved/ArcadeToken.sol)
 
-Now that we are familiar with the concept of tokens let's build one!
+Now that we are familiar with the concept of tokens, let's build one!
 
 * In order to build a token with Solidity, we need to learn one more data structure, called a `mapping`.
 
@@ -209,7 +209,7 @@ contract ArcadeToken {
 }
 ```
 
-* Let's say we owned an Arcade; we're going to have customers exchange Ether for tokens that can be spent to play games, redeem prizes, etc., at the Arcade.
+* Let's say we owned an arcade. We're going to have customers exchange ether for tokens that can be spent to play games, redeem prizes, etc., at the arcade.
 
 First, define a few variables to get the contract started:
 
@@ -225,7 +225,7 @@ contract ArcadeToken {
 
 * We are setting the owner of the ArcadeToken contract to the `msg.sender`. Since this is only called once during deployment, this will set ourselves us as the owner when we deploy later.
 
-* We are setting a `string public` called `symbol` to our token's ticker. MetaMask and many other wallets and explorers will recognize the symbol as long as it is a public string.
+* We are setting a `string public` called `symbol` to our token's ticker. MetaMask and many other wallets and explorers will recognize the symbol, as long as it is a public string.
 
 * Setting the `exchange_rate` to `100` represents the number of tokens that we will distribute per `wei` spent later.
 
@@ -251,7 +251,7 @@ Stop and explain the `mapping` data structure to the class:
 
 * Since this `mapping` pairs `address`es to `uint`s, we can associate any `address` with a balance stored in a `uint`.
 
-* Let's actually write a function that fetches a `uint` balance that is associated with an `address` by writing a balance function.
+* Let's actually write a function that fetches a `uint` balance associated with an `address` by writing a balance function.
 
 Demonstrate how to access the balance of an address by adding a new `balance` function:
 
@@ -271,7 +271,7 @@ function balance() public view returns(uint) {
 
   * For example, `0xc3879B456DAA348a16B6524CBC558d2CC984722c => 333` is what the data might look like in contract storage.
 
-* Mappings are flexible data types that allow you to link data together efficiently. They are much cheaper than using an array, so we'll be using them quite often. They are one of the main data types used in tokens, because of this easy way of creating a balance system. We can map any type to any type, even `address` to `address`.
+* Mappings are flexible data types that allow you to link data together efficiently. They are much cheaper than using an array, so we'll use them quite often. They are one of the main data types used in tokens, because of this easy way of creating a balance system. We can map any type to any type, even `address` to `address`.
 
 Now, let's demonstrate how customers could transfer ArcadeTokens between each other by adding another function called `transfer`:
 
@@ -288,7 +288,7 @@ function transfer(address recipient, uint value) public {
 
 * As you can see, the logic here is just as simple as you would expect. Value moves from one address to another.
 
-Note, this contract is currently vulnerable to something called an `integer underflow` attack and allows users to spend tokens they do not have. If students notice this, simply explain that we will add more security features later today to prevent spending with zero token balance.
+Note: This contract is currently vulnerable to something called an `integer underflow` attack and allows users to spend tokens they do not have. If students notice this, simply explain that we will add more security features later today to prevent spending with a zero token balance.
 
 Now, we'll need some way to allow users to purchase tokens from the contract. Add a new `purchase` function, and set it to `payable`:
 
@@ -300,7 +300,7 @@ function purchase() public payable {
 }
 ```
 
-* With this `purchase` function, we allow users to send Ether by setting the function to `payable`.
+* With this `purchase` function, we allow users to send ether by setting the function to `payable`.
 
 * We then multiply the `msg.value` by the `exchange_rate` we set earlier.
 
