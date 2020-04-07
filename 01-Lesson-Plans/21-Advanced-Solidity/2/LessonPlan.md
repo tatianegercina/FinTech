@@ -238,7 +238,7 @@ Ask students the following review questions about the ERC standards activity.
 
   * **Answer** 721, 1155
 
-* What do you think some potential benefits of EIP's having to follow the acceptance process might be?
+* What are some potential benefits of EIP's having to follow the acceptance process?
 
   * **Answer** Community support, better standards from peer review, open development.
 
@@ -260,15 +260,15 @@ Ask students the following review questions about the ERC standards activity.
 
 ### 9. Instructor Do: Welcome Back (5 min)
 
-Before the break, we discussed various ERC token standards and what the students found interesting about them. Take a few minutes to go over the following ERC review questions with the class.
+Before the break, we discussed various ERC token standards and what students found interesting about them. Take a few minutes to go over the following ERC review questions with the class.
 
 * Why might Ethereum improvement proposals such as ERCs be important?
 
-  * **Answer** Provides a way to submit new standards within the community.
+  * **Answer** They provide a way to submit new standards within the community.
 
-  * **Answer** Allows the community to agree on a current standard for a feature.
+  * **Answer** They allow the community to agree on a current standard for a feature.
 
-  * **Answer** Helps prevent bugs and security vulnerabilities by creating a specification for implementing certain types of smart contracts.
+  * **Answer** They help prevent bugs and security vulnerabilities by creating a specification for implementing certain types of smart contracts.
 
 * What are some of the categories for EIP's?
 
@@ -286,7 +286,7 @@ In this activity, you will demonstrate the ERC20 contract provided by the OpenZe
 
 * [ArcadeTokenERC20.sol](Activities/04-Ins_OpenZeppelin_ERC20/Solved/ArcadeTokenERC20.sol)
 
-Explain why we are starting with ERC20 to the students:
+Explain to students why we are starting with ERC20:
 
 * We are going to implement ERC20 before ERC777 for several reasons.
 
@@ -466,13 +466,13 @@ contract ArcadeToken is ERC20, ERC20Detailed {
 }
 ```
 
-* That's it! Now, this token is a fully functioning ERC20 token, that has a `mint` function that we created an `onlyOwner` modifier for.
+* That's it! Now, this token is a fully functioning ERC20 token that has a `mint` function that we created an `onlyOwner` modifier for.
 
 * We could potentially deploy this to the mainnet and get this listed on an exchange. It will also automatically be detected by many wallets and block explorers.
 
 Now it's time for the students to implement their own ERC20 tokens!
 
-### 11. Students Do: Building an ERC20 Token with OpenZeppelin (20 min)
+### 11. Student Do: Building an ERC20 Token with OpenZeppelin (20 min)
 
 In this activity, students will implement the ArcadeToken using the ERC20 standard, provided by the OpenZeppelin library.
 
