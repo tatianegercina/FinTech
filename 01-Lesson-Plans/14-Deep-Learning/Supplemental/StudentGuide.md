@@ -84,7 +84,7 @@ An example of unsupervised learning would be to use website purchase data to gro
 <details>
 <summary>Activation Functions</summary><br>
 
-Activation functions are really just math functions that allow us to adjust the linearity of the model. Data is complex and often has non-linear relationships between the inputs and the outputs. Changing the activation function to non-linear functions like ReLU allow us to build neural networks that can adapt to non-linear data. 
+Activation functions are really just math functions that allow us to adjust the linearity of the model. Data is complex and often has non-linear relationships between the inputs and the outputs. Changing the activation function to non-linear functions like ReLU allow us to build neural networks that can adapt to non-linear data.
 
 Some of the most popular activation functions include sigmoid, tanh, and relu. A full list of activation functions provided by keras can be found [here.](https://keras.io/activations/)
 </details>
@@ -133,9 +133,15 @@ Deep Neural Networks are neural networks that have more than one hidden layer. O
 
 A Recurrent neural network (RNN) is a type of deep neural network that can remember the past and update its results based on that information. RNNs are called recurrent, because they cycle the information they receive through the layers more than once, effectively accessing their 'memory' to update their decisions based on the past. This is the opposite of standard Articifical Neural Networks (ANNs) that utilize a feedforward method where the inputs are passed through each layer only only once, in a unilateral direction, and then outputted.
 
-While RNNs do well with short sequences of data, they can be overwhelmed and struggle to learn long sequences. This is because they have no way to sort out what information is important and what information isn't important over long periods of time. For example, suppose you wanted to build a machine learning model that could predict when you would want a snack. What you had for breakfast this morning may impact your hunger level for the day, but what you ate for breakfast 3 years ago may no longer be relevant to predicting today's snack time. This can pose an issue for scenarios such as time series analysis on large time windows. 
+While RNNs do well with short sequences of data, they can be overwhelmed and struggle to learn long sequences. This is because they have no way to sort out what information is important and what information isn't important over long periods of time. For example, suppose you wanted to build a machine learning model that could predict when you would want a snack. What you had for breakfast this morning may impact your hunger level for the day, but what you ate for breakfast 3 years ago may no longer be relevant to predicting today's snack time. This can pose an issue for scenarios such as time series analysis on large time windows.
 
-LSTM-RNN can help resolve this problem by practicing more expansive, yet more selective memory. The LSTM-RNN can predict which values are ok to forget and which it needs to hold on to so that longer time windows can be analyzed. 
+LSTM-RNN can help resolve this problem by practicing more expansive, yet more selective memory. The LSTM-RNN can predict which values are ok to forget and which it needs to hold on to so that longer time windows can be analyzed.
+
+</details>
+
+<details>
+<summary>What is the difference between linear and non-linear data?</summary>
+
 
 </details>
 
