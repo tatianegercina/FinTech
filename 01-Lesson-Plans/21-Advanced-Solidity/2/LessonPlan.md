@@ -211,24 +211,24 @@ Core EIPs follow a slightly different process from the rest of the EIP categorie
 
 ### 6. Student Do: ERC Standards Exploration (15 min)
 
-In this activity, students will explore the various ERC standards that are currently being developed, as well as those that have been accepted as final.
+In this activity, students will explore the various ERC standards that are currently being developed, as well as those that have been finalized.
 
 Send out the instructions and have TAs circulate the class.
 **Instructions:**
 
 * [README.md](Activities/03_Stu_ERC_Standards_Exploration/README.md)
 
-Explain to the students:
+Explain to students:
 
-* You will be exploring the ERC standards that are currently being developed or have been finalized by the community.
+* You will explore the ERC standards that are currently being developed or have been finalized by the community.
 
-* The goal of this activity is to be able to learn how to leverage the current state of the community standards when developing ideas or implementing blockchain technologies. By getting comfortable exploring the standards, you will be able to keep up with the latest developments in the ecosystem and know that your implementations will be compatible with the community.
+* The goal of this activity is to learn how to leverage the current state of the community standards when developing ideas or implementing blockchain technologies. By getting comfortable exploring the standards, you will be able to keep up with the latest developments in the ecosystem, and know that your implementations are compatible with the community.
 
-* Don't be intimidated by the fancy language; try to do some quick Googling!
+* Don't be intimidated by the fancy language; try to do some quick googling!
 
 ### 7. Instructor Do: ERC Standards Review (10 min)
 
-Ask the students the following review questions about the ERC standards activity.
+Ask students the following review questions about the ERC standards activity.
 
 * Which token standards were fungible?
 
