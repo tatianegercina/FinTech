@@ -2,13 +2,13 @@
 
 ### Overview
 
-In the last class, students were introduced to several of the popular ERC token standards (20, 721, 777, 1155) and implemented an ERC20 compliant token using the OpenZeppelin libraries. Today students will be introduced to the concept of crowdsales, a popular method for distributing tokens; they will explore popular historic crowdsales and implement their own crowdsale using the OpenZeppelin libraries.
+In the last class, students were introduced to several of the popular ERC token standards (20, 721, 777, 1155) and implemented an ERC20 compliant token using the OpenZeppelin libraries. Today, students will be introduced to the concept of crowdsales, a popular method for distributing tokens; they will explore popular historic crowdsales and implement their own crowdsale using the OpenZeppelin libraries.
 
 ---
 
 ### Class Objectives
 
-By the end of the class, students will be able to:
+By the end of today's class, students will be able to:
 
 * Articulate different types of crowdsales and how Ethereum/blockchain makes them much easier and auditable.
 
@@ -24,9 +24,9 @@ By the end of the class, students will be able to:
 
 ### Instructor Notes
 
-* Today's class will be heavily focused on crowdsales. While this method of fundraising has been used legitimately for many successful companies and projects in the space, there are many scams. Try to limit the discussion of scams and keep the class focused on legitimate implementations, but acknowledge that there is risk involved when investing in crowdfunded projects, just as there are risks in any other investment.
+* Today's class will be heavily focused on crowdsales. While this method of fundraising has been used legitimately for many successful companies and projects in the space, there are many scams. Try to limit the discussion of scams and keep the class focused on legitimate implementations while acknowledging that there is risk involved when investing in crowdfunded projects, just as there are risks with other investments.
 
-* Ethereum itself was crowdfunded by the people with Bitcoin, but certainly has not been the largest crowdsale, and has been used to launch other platforms that raised even more funds. It is recommended to familiarize yourself with popular crowdsales such as Basic Attention Token, Filecoin, EOS, Qtum, and others from the [most funded ICO list.](https://icowatchlist.com/finished/most-funded)
+* Ethereum itself was crowdfunded with Bitcoin, but certainly has not been the largest crowdsale, and has been used to launch other platforms that raised even more funds. It is recommended to familiarize yourself with popular crowdsales such as Basic Attention Token, Filecoin, EOS, Qtum, and others from the [most funded ICO list.](https://icowatchlist.com/finished/most-funded)
 
 * While Initial Coin Offerings (ICOs) have been the most popular type of crowdsale, the industry is moving toward Security Token Offerings (STOs) and more regulated systems.
 * OpenZeppelin provides many different configurations for crowdsales. Encourage students to perform their due diligence with legal compliance and technical requirements of a crowdsale if they show interest in leveraging one themselves in the future.
@@ -45,7 +45,7 @@ By the end of the class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
