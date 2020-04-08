@@ -593,7 +593,7 @@ Open the solution and explain the following:
 
 * After creating the `new ArcadeToken`, we store the token's address in the `token_address` variable for easy access later.
 
-* Next, we create the `new ArcadeTokenSale` contract and set the `rate` to `1` to keep parity with Ether units, then pass in the `wallet` that will receive all raised funds, and the`token` contract itself.
+* Next, we create the `new ArcadeTokenSale` contract and set the `rate` to `1` to keep parity with ether units, then pass in the `wallet` that will receive all raised funds, and the `token` contract itself.
 
 * In the same fashion, we store the `ArcadeTokenSale` contract's address in the `arcade_sale_address` variable.
 
@@ -621,7 +621,7 @@ Ask the following recall questions:
 
   * **Answer:** Managing the general sale and creation of tokens automatically.
 
-* Why must we be careful about using `msg.sender` as a check-in our contracts?
+* Why must we be careful about using `msg.sender` as a check-in with our contracts?
 
   * **Answer:** `msg.sender` can also be another smart contract, so if the logic requires a human to be on the other end, it might not work.
 
@@ -643,23 +643,23 @@ Security is a fundamental topic regarding anything to do with technology, especi
 
 * In our testnet and local development environments, we can "battle test" our code before we deploy it to the prime-time mainnet. It is especially important when programming smart contracts to avoid certain design patterns that lead to vulnerabilities that could potentially be exploited.
 
-* Software security is not a new field, but it has recently exploded in demand and will continue to be a critical part of the software development lifecycle. Security is not just left to the security team in the software world; in reality, the security of a system is the sum of its technical and human aspects, and every person in an organization should be working towards the goal of higher security.
+* Software security is not a new field, but it has recently exploded in demand and will continue to be a critical part of the software development lifecycle. Security is not just left to the security team in the software world. In reality, the security of a system is the sum of its technical and human aspects, and every person in an organization should be working towards the goal of higher security.
 
-* Typically, organizations will have dedicated security teams continuously vetting and testing the software and operations. This does not mean you are off the hook! As the engineers, you are the first, and often, the only line of defense standing between a hacker and your trophies. When developing software, you should be taking security very seriously and integrate it from the ground up.
+* Typically, organizations will have dedicated security teams continuously vetting and testing software and operations. This does not mean you are off the hook! As engineers, you are the first, and often, the only line of defense standing between a hacker and your trophies. When developing software, you should be taking security very seriously, integrating it from the ground up.
 
 Briefly discuss the Ethereum DAO hack:
 
-* Historically, we have seen instances of hacking in every industry. Since the blockchain space is still in adolescence and is rapidly growing, stumbles have occurred regarding smart contracts.
+* Historically, we have seen instances of hacking in every industry. Since the blockchain space is still in adolescence and rapidly growing, hiccups have occurred regarding smart contracts.
 
-* A notable instance of this is the DAO hack. This was an organization built entirely from smart contracts that was exploited due to a low-level technical attack called a "re-entrancy" attack that allowed a hacker to drain the contract's funds, which we will learn more about soon. Since this attack, measures have been made to help prevent such attacks, and more security improvements are being made every day.
+* A notable instance of this is the DAO hack. This was an organization built entirely from smart contracts that was exploited due to a low-level technical attack called a "re-entrancy" attack, allowing a hacker to drain the contract's funds, which we will learn more about soon. Since this attack, measures have been made to help prevent such attacks, and more security improvements are being made every day.
 
-* Thus, it is important to learn how to spot these vulnerabilities. One way we can do that is to leverage security tools that analyze our code and test it for these low-level vulnerabilities.
+* Thus, it is important to learn how to spot these vulnerabilities. One way to do that is to leverage security tools that analyze our code and test it for these low-level vulnerabilities.
 
 Present the MythX/Mythril tool to the class by opening the [MythX](https://mythx.io/) website.
 
 * MythX is a service that is based on an open-source command-line tool, [Mythril](https://github.com/ConsenSys/mythril), that allows Solidity developers to scan for common low-level vulnerabilities in their contracts. The tool has integrations with many IDEs, including Remix itself!
 
-* This tool will help identify the low hanging fruit that you can take care of easily during development. **However**, no automated security tool will uncover **all** vulnerabilities. For instance, it can't uncover logical bugs, like if you are missing some `require`s or have a function that doesn't quite check all of the required access control permissions needed for the contract to work as expected. Essentially, it can detect the little things here and there that could potentially lead to big exploits, but it cannot tell if your contract fulfills its design requirements.
+* This tool will help identify the low hanging fruit that you can easily take care of during development. **However**, no automated security tool will uncover **all** vulnerabilities. For instance, it can't uncover logical bugs, like if you are missing some `require`s or have a function that doesn't quite check all of the required access control permissions needed for the contract to work as expected. Essentially, it can detect the little things here and there that could potentially lead to big exploits, but it cannot tell if your contract fulfills its design requirements.
 
 Open up [Remix](https://remix.ethereum.org) and enable the MythX plugin:
 
@@ -667,13 +667,13 @@ Open up [Remix](https://remix.ethereum.org) and enable the MythX plugin:
 
 * This plugin will run in trial mode, but you can create an account at the MythX website and configure the plugin credentials.
 
-* Registration is easy (and free), it's simply providing an email and signing a message with MetaMask, but this is optional.
+* Registration is easy (and free); it's simply providing an email and signing a message with MetaMask, but this is optional.
 
-* We can use this tool for unlimited scans. We would only need to pay for this tool for increased analysis that uses other tools behind the scenes, besides the open-source Mythril tool.
+* We can use this tool for unlimited scans. We would only need to pay for this tool for increased analysis using other tools behind the scenes, besides the open-source Mythril tool.
 
 Now, time to use an old contract as an example of what a vulnerable contract could look like. Create a new file called `ArcadeTokenVulnerable.sol` and populate it with the [file linked above](Activities/06-Ins_Security/Solved/ArcadeTokenVulnerable.sol).
 
-* Remember this contract we wrote back when we first learned how tokens worked?
+* Remember this contract that we wrote back when we first learned how tokens worked?
 
 * Remember how we had an integer underflow/overflow vulnerability that allowed us to hack our token balances?
 
@@ -694,7 +694,7 @@ Open up the MythX tab in Remix, ensuring that your contract has compiled, and cl
 
 ![MythX Analyze](Images/mythx-analyze.png)
 
-This process can take up to 2 minutes, while you are waiting, ask the students:
+This process can take up to two minutes. While you are waiting, ask students:
 
 * What is the solution we used to fix our underflow/overflow issues?
 
@@ -706,7 +706,7 @@ This process can take up to 2 minutes, while you are waiting, ask the students:
 
 * Why do we use tools like this? Why not just offload this stuff to the security team?
 
-  **Answer:** The security team is already going to be overwhelmed with many other things to patch and is fighting a constant upward-hill battle.
+  **Answer:** The security team is already going to be overwhelmed with many other things to patch, and is fighting a constant upward battle.
 
   **Answer:** Every little bit of effort towards security helps.
 
@@ -727,11 +727,11 @@ identified by clicking on the red and yellow boxes in the sidebar:
 
 * The issues highlighted in `yellow` are warnings. While they are not critical vulnerabilities that MythX knows can be directly exploited, they are flags to look out for. While a hacker might be able to hack your contract using one or two red/critical vulnerabilities as expected, they may also be able to combine several yellow/warning level vulnerabilities to craft an exploit that leverages multiple "less serious" vulnerabilities.
 
-* It is best to get our contracts as close to fully-passing as possible. However, there are some instances where we simply can't, and there are instances where you might be adding safeguards where the tool cannot recognize, and generate a warning anyway. These tools are not perfect, but they can help a long way.
+* It is best to get our contracts as close to fully-passing as possible. However, there are some instances where we simply can't, and there are instances where you might be adding safeguards the tool cannot recognize, and generate a warning anyway. These tools are not perfect, but they can go a long way.
 
-Now it's time for the students to analyze some contracts of their own, starting with the crowdsale they just built!
+Now it's time for students to analyze some contracts of their own, starting with the crowdsale they just built!
 
-### 14. Students Do: Scanning Contracts with MythX (15 min)
+### 14. Student Do: Scanning Contracts with MythX (15 min)
 
 In this activity, students will spend the time scanning the contracts they have built so far in class, starting with the `ArcadeTokenSale` they just built.
 
