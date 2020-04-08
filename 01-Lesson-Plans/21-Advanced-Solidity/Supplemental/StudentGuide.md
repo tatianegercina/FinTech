@@ -55,4 +55,4 @@
 * [OpenZeppelin SafeMath Documentation](https://docs.openzeppelin.com/contracts/2.x/api/math#SafeMath)
 
 ---
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
