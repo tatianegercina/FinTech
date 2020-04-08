@@ -769,7 +769,7 @@ Now that students have scanned their contracts, ask them the following questions
 
 Now that students have scanned and fixed their contracts, it's time for them to dive a bit deeper into some common vulnerabilities.
 
-### 16. Students Do: Exploring Common Smart Contract Vulnerabilities (SWCs) (10 min)
+### 16. Student Do: Exploring Common Smart Contract Vulnerabilities (SWCs) (10 min)
 
 In this activity, students will use the remaining time to explore the most common smart contract vulnerabilities by checking out the [SWC Registry](https://swcregistry.io/) and the [SWC Coverage](https://mythx.io/swc-coverage/) that MythX supports.
 
@@ -779,9 +779,9 @@ In this activity, students will use the remaining time to explore the most commo
 
 Have TAs circulate the room and ensure that students are looking at example code and trying to understand the different vulnerabilities they are researching.
 
-Some vulnerabilities may be very complex or low-level, encourage the students to dig deeper into a concept they uncover that they don't understand by researching more examples online.
+Some vulnerabilities may be very complex or low-level. Encourage students to dig deeper into any concepts they uncover that they don't understand by researching more examples online.
 
-If students get too confused, have them move onto other vulnerabilities and have them take a step back and slow down, or practice working with the example code in Remix.
+If students get too confused, have them move onto other vulnerabilities, or take a step back and slow down, or practice working with the example code in Remix.
 
 ### 17. Instructor Do: Review SWCs (5 min)
 
@@ -789,7 +789,7 @@ Ask the students the following questions:
 
 * What was the most interesting vulnerability you found?
 
-* Why might some vulnerabilities be supported by the free version of MythX and some require Pro?
+* Why might some vulnerabilities be supported by the free version of MythX, and some require Pro?
 
   **Answer:** Some analysis takes more computation and time, which costs MythX more.
 
@@ -823,4 +823,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
