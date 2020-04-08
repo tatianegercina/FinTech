@@ -155,13 +155,13 @@ Explain to the class that tokenomics still plays a huge rule in `crowdsales`. In
 
 * When implementing a crowdsale, you have first to decide how you are going to release tokens to the participants of the sale. This is known as `token emission` and is normally done in one of three ways:
 
-  * The crowdsale contract owns a given number of tokens and transfers ownership of them as users purchase them.
+  * The crowdsale contract owns a given number of tokens, transferring ownership as users purchase them.
 
   * The crowdsale contract dynamically mints new tokens as they are purchased.
 
   * The crowdsale contract has access to a multi-sig wallet from which it can transfer ownership of tokens as they are purchased.
 
-### 3. Students Do: Crowdsale Exploration and Discussion (10 min)
+### 3. Student Do: Crowdsale Exploration and Discussion (10 min)
 
 Students will be provided a list of crowdsales from which they will explore and research some of the most popular crowdsales in history.
 
@@ -173,7 +173,7 @@ Students will be provided a list of crowdsales from which they will explore and 
 
 Discuss the following review questions with the class.
 
-* What were some of the factors or interesting things about the explored historical crowdsales?
+* Name some interesting things about the crowdsales that we reviewed.
 
 * **Example Answer** The price of ether during its initial sale was 2000 ETH per BTC.
 
@@ -181,9 +181,9 @@ Discuss the following review questions with the class.
 
 * **Example Answer** Basic Attention Token raised 36 million in 30 seconds, hitting the hard cap on their token supply.
 
-* **Example Answer** FileCoin was capped at 200 million FileCoins
+* **Example Answer** FileCoin was capped at 200 million FileCoins.
 
-* What are some costs that a company may create a crowdsale to raise funds for?
+* Name some things that a company might create a crowdsale to raise funds for?
 
   * **Answer** Production costs for a product
 
@@ -201,7 +201,7 @@ Discuss the following review questions with the class.
 
   * **Answer** Increased control over a crowdfunding platform; you essentially become the crowdfunding platform.
 
-### 5. Instructor Do: Preparing a token for a Crowdsale (10 min)
+### 5. Instructor Do: Preparing a Token for a Crowdsale (10 min)
 
 In this activity, students will be introduced to the ERC20Mintable contract from OpenZeppelin, and how they can use it to prepare a token that can work in a crowdsale.
 
