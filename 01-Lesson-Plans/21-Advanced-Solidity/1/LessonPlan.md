@@ -61,7 +61,7 @@ Take a few minutes to discuss the following recall questions with the class.
 
 * What is Solidity?
 
-  * **Answer** Solidity is:
+  * **Answer:** Solidity is:
 
   * A high-level object-oriented programming language.
 
