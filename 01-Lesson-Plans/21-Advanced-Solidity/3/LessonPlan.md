@@ -107,17 +107,17 @@ In this activity, you will explain how crowdsales have become a popular method f
 
 * For companies and startups, it's cheap to have new ideas, but executing those ideas can be very expensive.
 
-* Over the last decade, `crowdfunding` has become a popularized way for projects to receive funding that enables them to bring their product or service to production successfully.
+* Over the last decade, `crowdfunding` has become a popular way for projects to receive funding, enabling them to bring their product or service to production successfully.
 
-* `Crowdfunding` is the process of raising funds by asking a large number of people each for a small amount of money. Crowdfunding is often done through a `crowdfunding platform` where users are promised a product or service and can then donate money to a project in a streamlined manner.
+* `Crowdfunding` is the process of raising funds by asking a large number of people for small amounts of money. Crowdfunding is often done through a `crowdfunding platform` where users are promised a product or service and can then donate money to a project in a streamlined manner.
 
 * Blockchain technologies and the rise of tokenomics has enabled a new form of `crowdfunding` known as a `crowdsale`.
 
-* Unlike in traditional crowdfunding backers funding the project are not promised a particular product or service. They are instead promised a given number of tokens at a set price.
+* Unlike in traditional crowdfunding, backers funding the project are not promised a particular product or service. Instead, they are promised a given number of tokens at a set price.
 
 * The tokens sold during the `crowdsale` then serve as a way for users to take part in whatever product or service the company is planning to launch.
 
-Pose the class the following question:
+Pose the following question to the class:
 
 * What are some things that crowdsale funds could be used for?
 
@@ -131,7 +131,7 @@ Pose the class the following question:
 
   * Any other initial operating costs
 
-Explain to the class that tokenomics still play a huge rule in `crowdsales`. Investors backing the project aren't always just buying the token because they believe the future project will be successful but also because they believe the perceived market value of the token will increase.
+Explain to the class that tokenomics still plays a huge rule in `crowdsales`. Investors backing the project aren't just buying the token because they believe the future project will be successful, but because they believe the perceived market value of the token will increase.
 
 * Important factors of a crowdsale:
 
@@ -149,9 +149,9 @@ Explain to the class that tokenomics still play a huge rule in `crowdsales`. Inv
 
   * Start/Endtime/Timeframe
 
-  * Are the funds distributed during the crowdsale or after.
+  * Are the funds distributed during the crowdsale, or after?
 
-  * Is there a refund policy if the goal was not successful.
+  * Is there a refund policy if the goal was not successful?
 
 * When implementing a crowdsale, you have first to decide how you are going to release tokens to the participants of the sale. This is known as `token emission` and is normally done in one of three ways:
 
