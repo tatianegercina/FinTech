@@ -356,11 +356,11 @@ Review the previous activity with the class by discussing the following recall q
 
   * **Answer** If anyone could mint tokens using our contract, it would essentially make them worthless.
 
-* What are we doing when we say `ArcadeToken is ERC20` in our contract definition.
+* What are we doing when we say, `ArcadeToken is ERC20` in our contract definition?
 
   * **Answer** We are inheriting the functions and properties from ERC20 to ArcadeToken.
 
-* What are some things a function modifier may be used for in solidity?
+* What are some things a function modifier may be used for in Solidity?
 
   * **Answer** To restrict access to a function.
 
@@ -398,9 +398,9 @@ Briefly open (**max** 2 minutes) the [Crowdsale Constructor API doc](https://doc
 
 ![Crowdsale Constructor](Images/oz-crowdsale-constructor.png)
 
-* The crowdsale requires three parameters in the constructor. The first, `rate` is the conversion between our token and wei. Since we are using the default decimal value of `18` in our `ArcadeTokenMintable`, and we want to keep compatible with Ether units, this `rate` will just be set to `1`.
+* The crowdsale requires three parameters in the constructor. The first, `rate` is the conversion between our token and wei. Since we are using the default decimal value of `18` in our `ArcadeTokenMintable`, and we want to keep compatible with ether units, this `rate` will just be set to `1`.
 
-* The `wallet` parameter is the address that all of the Ether raised in the crowdsale will go. Since this is for our Arcade, we will set this parameter to our main wallet address.
+* The `wallet` parameter is the address that all of the ether raised in the crowdsale will go. Since this is for our arcade, we will set this parameter to our main wallet address.
 
 * The last parameter the crowdsale needs is the token itself. This will allow the crowdsale to interact with and mint the `ArcadeToken` once on-chain.
 
@@ -444,7 +444,7 @@ contract ArcadeTokenSale is Crowdsale, MintedCrowdsale {
 
 * Here we are simply accepting the same parameters that the OpenZeppelin documentation listed for the `Crowdsale` contract from our main constructor, and passing them into the `Crowdsale` constructor.
 
-* This will allow `ArcadeTokenSale` to initialize all of the variables that `Crowdsale` requires. The body of the constructor can stay empty since all of the logic is already in the `Crowdsale` and `MintedCrowdsale` contracts.
+* This will allow `ArcadeTokenSale` to initialize all of the variables that `Crowdsale` requires. The body of the constructor can stay empty, since all of the logic is already in the `Crowdsale` and `MintedCrowdsale` contracts.
 
 Now, we will need to create one more contract in this file, below the `ArcadeTokenSale`, called `ArcadeTokenSaleDeployer`:
 
@@ -491,13 +491,13 @@ contract ArcadeTokenSaleDeployer {
 }
 ```
 
-* We accept the `name` and `symbol` for our token that we create here. We also accept the `wallet` that will receive all Ether raised by the crowdsale.
+* We accept the `name` and `symbol` for our token that we create here. We also accept the `wallet` that will receive all ether raised by the crowdsale.
 
 * We create the `ArcadeToken` within the constructor and store it in a variable called `token`, passing in the `name` and `symbol` parameters, and setting the `initial_supply` to `0`. Notice that we are still specifying the type, only the type is `ArcadeToken`. It has the same interface as an ERC20 token, so the crowdsale will accept it.
 
 * We store the address of the token in the public variable we set earlier to keep handy.
 
-* Then, we create the `ArcadeTokenSale` itself. We hardcoded the `rate` as `1` to maintain parity with Ether units. We pass in the `wallet` and the actual `ArcadeToken`. We also store the address of the crowdsale itself for easy access later.
+* Then, we create the `ArcadeTokenSale` itself. We hardcoded the `rate` as `1` to maintain parity with ether units. We pass in the `wallet` and the actual `ArcadeToken`. We also store the address of the crowdsale itself for easy access later.
 
 Finally, we need to make the `ArcadeTokenSale` a `minter` and renounce the `minter` role from `ArcadeTokenSaleDeployer` at the end of the constructor:
 
@@ -537,9 +537,9 @@ contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 
 * Since our Crowdsale contract is going to be minting and distributing tokens, we don't want to mint any tokens in the constructor. In fact, since we were minting to `msg.sender`, keeping the mint function here would cause us to **lose tokens**.
 
-* This is because the `ArcadeTokenSaleDeployer` contract is the one that creates the `ArcadeToken` initially. Therefore, `msg.sender` would actually be the address of the `ArcadeTokenSaleDeployer` contract! Since we have no function to withdraw those tokens, they'd be effectively "burned" out of the usable supply. We could add a function to `ArcadeTokenSaleDeployer` to withdraw, but that is quite unnecessary and would ultimately be more expensive.
+* This is because the `ArcadeTokenSaleDeployer` contract is the one that creates the `ArcadeToken` initially. Therefore, `msg.sender` would actually be the address of the `ArcadeTokenSaleDeployer` contract! Since we have no function to withdraw those tokens, they'd be effectively "burned" out of the usable supply. We could add a function to `ArcadeTokenSaleDeployer` to withdraw, but that is unnecessary and would ultimately be more expensive.
 
-* It is especially important to think twice about who exactly `msg.sender` is, and how `msg.sender` can be manipulated. Remember, other people, can write smart contracts that could talk to yours, so `msg.sender` isn't always going to be a simple wallet.
+* It is especially important to think twice about who exactly `msg.sender` is, and how `msg.sender` can be manipulated. Remember, other people can write smart contracts that could talk to yours, so `msg.sender` isn't always going to be a simple wallet.
 
 That's all we need to get the crowdsale going. Navigate to the `Deploy` tab in Remix, and deploy the `ArcadeTokenSaleDeployer` contract, passing in the parameters.
 
@@ -553,7 +553,7 @@ Demonstrate purchasing some tokens from the `ArcadeTokenSale` and checking the b
 
 Now it's time for the students to make their own `ArcadeTokenSale`!
 
-### 9. Students Do: Building an ArcadeTokenSale with OpenZeppelin (20 min)
+### 9. Student Do: Building an ArcadeTokenSale with OpenZeppelin (20 min)
 
 In this activity, students will be creating and deploying an `ArcadeTokenSale` contract with an `ArcadeTokenSaleDeployer` contract.
 
