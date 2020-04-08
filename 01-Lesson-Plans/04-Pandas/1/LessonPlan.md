@@ -1,7 +1,5 @@
 ## 4.1 Lesson Plan: Investing Like the Pros
 
----
-
 ### Overview
 
 Today’s class will focus on analyzing the performance of groups of stocks, otherwise known as a portfolios. Stock portfolios proportion capital among several stocks to minimize risk. To create an optimal portfolio that maximizes returns while minimizing risk, it’s necessary to analyze the average return and risk of the portfolio overall and the correlations between stocks. In this lesson, students will learn how to analyze correlations between stocks, calculate rolling statistics and beta of stocks, optimize a portfolio, and compare portfolio performance.
@@ -32,16 +30,17 @@ By the end of class, students will be able to:
 
 * When explaining the notion of rolling statistics and how they benefit in identifying statistical trends, emphasize the comparison of the original data trend against the smoothed trend of the rolling statistic (mean or standard deviation).
 
-* When discussing portfolios and its characteristics—risk, return, correlation—explain the concepts in terms of money. For example, if you start with $10,000, how would a poorly optimized portfolio compare with one that is not?
+* When discussing portfolios and its characteristics—risk, return, and correlation, explain the concepts in terms of money. For example, if you start with $10,000, how would a poorly optimized portfolio compare with one that is not?
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [4.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2f56d5fa-30a1-4faf-b2af-aaa800fbbb53) Note that this video may not reflect the most recent lesson plan.
 
 ---
 
 ### Class Slides and Time Tracker
 
-* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1j7jRO2rmGlzStxqgHDOZRPKMT9F5AKb66WqXxEK9y7Q/edit?usp=sharing).
+* The slides for this lesson can be viewed on Google Drive here: [Lesson Slides]().
 
 * To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
