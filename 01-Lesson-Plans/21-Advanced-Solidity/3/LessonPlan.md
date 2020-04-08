@@ -226,7 +226,7 @@ Explain to the students:
 
 * As previously discussed, OpenZeppelin provides contracts that are implementations of common standards.
 
-* Here, just like before, we are importing the ERC20 contracts from the OpenZeppelin library, now, however, we are also going to import and implement a new contract called `ERC20Mintable`.
+* Here, just like before, we are importing the ERC20 contracts from the OpenZeppelin library. Now, however, we are also going to import and implement a new contract called `ERC20Mintable`.
 
 Add the ERC20Mintable reference to the contract definition:
 
@@ -269,7 +269,7 @@ contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 }
 ```
 
-* Our contracts constructor accepts three values a string `name`, a string `symbol`, and a uint `initial_supply`.
+* Our contracts constructor accepts three values: a string `name`, a string `symbol`, and a uint `initial_supply`.
 
 Next, define the constructor for the `ERC20Detailed` contract that we are importing.
 
@@ -316,7 +316,7 @@ contract ArcadeToken is ERC20, ERC20Detailed, ERC20Mintable {
 }
 ```
 
-* Now when our `ArcadeToken` contract is deployed it will call the mint function passing it the current `msg.sender` as well as our defined `inital_supply`.
+* Now when our `ArcadeToken` contract is deployed, it will call the mint function passing it the current `msg.sender` as well as our defined `inital_supply`.
 
 Compile and deploy the completed contract for the class.
 
@@ -324,7 +324,7 @@ Compile and deploy the completed contract for the class.
 
 In the next activity, the students will now be implementing their own `ERC20Mintable` token for crowdsale.
 
-### 6. Students Do: ERC20 Mintable Token Design (10 min)
+### 6. Student Do: ERC20 Mintable Token Design (10 min)
 
 In this activity, students will build a mintable ERC20 token and prepare it for a crowdsale.
 
