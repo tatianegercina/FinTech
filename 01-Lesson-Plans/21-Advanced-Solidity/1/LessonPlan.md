@@ -59,6 +59,8 @@ Take a few minutes to discuss the following recall questions with the class.
 
 * Before we move on to new and advanced concepts in Solidity, let's review some of the basics that we already know.
 
+* What is Solidity?
+
   * **Answer** Solidity is:
 
   * A high-level object-oriented programming language.
