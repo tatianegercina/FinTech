@@ -10,9 +10,11 @@ Follow the steps below to install and set up PyViz in your Python environment. T
     conda install -c conda-forge nodejs
     ```
 
-2. Use the `conda install` command to install the following packages: hvPlot, Plotly Express, and Panel.
+2. Use the `conda install` command to install the following packages: hvPlot, Plotly Express, and Panel. Note: On some of these installs, you may get a message that says that the requested packages are already installed. That is fine. Conda is really good at installing all of the required dependencies between these tools.
 
     ```shell
+    conda install -c pyviz pyviz
+    conda install -c pyviz holoviz
     conda install -c pyviz hvplot
     conda install -c plotly plotly
     conda install -c pyviz panel
