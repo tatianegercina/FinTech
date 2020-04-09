@@ -244,15 +244,17 @@ Congratulate students on reading their first CSV file into Pandas as this is an 
 
 ### 3. Student Do: Reading Stock Data from a CSV File (10 min)
 
-In this activity, students will get hands-on experience reading CSV files into Pandas. They will use the `read_csv` function, sample data with the `head` function, and create DataFrames with specified column names.
+In this activity, students will get hands-on experience reading CSV files using Pandas. They will use the `read_csv` function, sample data with the `head` function, and create DataFrames with specified column names.
 
 **Files:**
 
 * [reading_stock_data.ipynb](Activities/02-Stu_Reading_CSVs/Unsolved/reading_stock_data.ipynb)
 
-* [amd_stock_data.csv](Activities/02-Stu_Reading_CSVs/Resources/amd_stock_data.csv)
+* [shopify_stock_data.csv](Activities/02-Stu_Reading_CSVs/Resources/shopify_stock_data.csv)
 
-**Instructions:** [README.md](Activities/02-Stu_Reading_CSVs/README.md)
+**Instructions:**
+
+* [README.md](Activities/02-Stu_Reading_CSVs/README.md)
 
 ---
 
@@ -260,9 +262,13 @@ In this activity, students will get hands-on experience reading CSV files into P
 
 In this section, review the previous activity with students.
 
-**File:** [reading_stock_data.ipynb](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb)
+**Files:**
 
-Open the [solution file](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb) and review the following:
+* [reading_stock_data.ipynb](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_data.ipynb)
+
+* [shopify_stock_data.csv](Activities/02-Stu_Reading_CSVs/Resources/shopify_stock_data.csv)
+
+Open the solution file and review the following:
 
 * In order to use Pandas, the `pandas` library must be imported into the Python environment.
 
@@ -273,15 +279,21 @@ Open the [solution file](Activities/02-Stu_Reading_CSVs/Solved/reading_stock_dat
 
 * A DataFrame can be created from a CSV file with the `read_csv` function. This example uses a `Path` object to specify the location of the CSV file. Pandas can then read that file and create a DataFrame to hold the data.
 
-![Relative file path to CSV file](Images/05_relative_file_path.png)
+  ```python
+  # set the file path
+  file_path = Path("../Resources/shopify_stock_data.csv")
+
+  # create a Pandas DataFrame from a csv file
+  df = pd.read_csv(file_path)
+  ```
 
 * The `head` function can be used to output the first `n` number of lines from a DataFrame. It is common for a sample of a DataFrame to be output to make sure that headers and rows were imported correctly.
 
-![First record as columns names](Images/05_first_record_as_columns_names.png)
+  ![First record as columns names](Images/05_first_record_as_columns_names.png)
 
 * The `header=None` parameter can be specified to prevent the first row of data from being used as column names when there is no header provided. Once the `header` is set to `None`, the `df.columns` function can be used to assign column names.
 
-![Setting new columns names](Images/05_set_columns_names.png)
+  ![Setting new columns names](Images/05_set_columns_names.png)
 
 Ask if there are any questions before moving on.
 
