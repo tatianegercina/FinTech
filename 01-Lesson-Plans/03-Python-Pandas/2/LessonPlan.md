@@ -50,21 +50,55 @@ By the end of class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Welcome Class and Introduction to Pandas (5 min)
+### 1. Instructor Do: Welcome Class and Introduction to Pandas (10 min)
 
 In this section, you will give students a brief history of Pandas and an overview of its advantages, as well as explain why it's useful for FinTech professionals.
 
-Welcome students to the first day of Pandas. Explain why students are learning it and provide a brief history.
+Welcome students to the first day of Pandas. Open the lesson slides and briefly review the class objectives.
 
-* Pandas is currently one of the most powerful libraries in Python. Because of this, it is one of the most important superpowers students can have as FinTech professionals. Instead of reinventing the wheel and writing their own code, students will be able to leverage Pandas' repository of functions.
+Move to the "Hello Pandas!" section and highlight the following:
 
-* Pandas was created by Wes McKinney to offer a flexible, high-performance tool for conducting quantitative analysis of financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
+* Pandas is currently one of the most powerful libraries in Python for data manipulation and analysis. Because of this, it is one of the most important superpowers you can have as FinTech professionals. Instead of reinventing the wheel and writing your code, you will be able to leverage Pandas' repository of functions.
 
-* If Python was compared to a garage, Pandas would be the sleek Tesla parked inside. The owner can choose to leverage the speed, power, and efficiency of their Tesla and take it for a spin, or the owner could walk to their destination. While walking would produce the same result as using the Tesla, it would require extra labor and take more time. This lesson will teach students how skillfully utilize the sleek Tesla sitting in their garage.
+* Pandas was created by [Wes McKinney](https://wesmckinney.com/) to offer a flexible, high-performance tool for conducting quantitative analysis of financial data. Since 2008, Pandas has been used to manipulate, analyze, and visualize financial data.
 
-Transition to covering the advantages of Pandas.
+* If Python was compared to a garage, Pandas would be the sleek Tesla parked inside. The owner can choose to leverage the speed, power, and efficiency of their Tesla and take it for a spin, or the owner could walk to their destination. While walking would produce the same result as using the Tesla, it would require extra labor and take more time. This lesson will teach you how skillfully utilize the sleek Tesla sitting in your garage.
 
-* Pandas provides many advantages over Excel due to its data structures and built-in functions for analysis.
+Transition to the "Why Pandas?" section and highlight the following:
+
+* Since spreadsheets appeared in [1969 when LANPAR was first used by the plant budgeting operations of AT&T](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed the finance and quants analysis forever.
+
+* However, as the volume and complexity of data has increased significantly, spreadsheets are now limited when it comes to data analysis.
+
+Ask the class what the pain points they have experienced while using spreadsheets to handle data. Possible answers include:
+
+* Microsoft Office is expensive.
+
+* Cell formulas can be difficult to edit.
+
+* Spreadsheets can only hold so much data; the more data that is stored, the slower the workbook runs.
+
+* Excel files often stop responding and are vulnerable to corruption.
+
+* Automation and custom function creation is not inherent. Macros and VBA need to be learned.
+
+Ask students if they have experienced any disasters or major challenges while working in Excel. Possible answers include:
+
+* Excel hogged so much memory that my laptop crashed.
+
+* Regional sales data for a sales competition was copied and pasted next to the wrong sales representatives. This resulted in the wrong person being identified as the winner.
+
+* In a monthly budget spreadsheet, the Excel formula to calculate the remaining balance in a checking account did not include the entire cell range necessary for the calculation; this resulted in the account having a negative balance.
+
+After talking about some of the common pain points of using spreadsheets, introduce Pandas and highlight the following:
+
+* Fortunately, we have Pandas to help us manage data on Python.
+
+* Pandas is one of the most powerful open source libraries in Python for analyzing and manipulating data.
+
+* This library was born on 2008 at AQR Capital when Wes McKinney was looking for a high-performance and flexible tool to perform quantitative analysis on financial data.
+
+* Etymology: The name “Pandas” originates from “panel data structures.”
 
 * Pandas doesn't require users to memorize formulas. Common financial calculations and formulas are made available to Pandas users as functions.
 
@@ -72,9 +106,32 @@ Transition to covering the advantages of Pandas.
 
 * Pandas functions range from simple arithmetic to complex statistics. This allows users to automate most, if not all, financial calculations. Instead of writing the formula in a cell or calculating by hand, users just need to make a function call (e.g., `pct_change` to calculate daily returns for an investment).
 
-Explain to students that they have already installed Pandas through Anaconda, so they don't need to install additional libraries. However, if they have issues running Pandas, they can use a free notebook by [Google Colab](https://colab.research.google.com/) and troubleshoot their installation with a TA during a break or office hours.
+* Python + Pandas = the perfect combination for small experiments or for implementing large-scale production systems to analyze data and
+make smarter decisions.
+
+* Pandas provides many advantages over spreadsheets due to its data structures and built-in functions for analysis.
+
+  * Series (1D labeled vectors)
+  * DataFrame (2D structures similar to spreadsheets)
+  * Panel (Collection of DataFrames as 3D labeled arrays)
+
+* Pandas offers built-in time series functionality, which is a must for financial and quants analysis
+
+Explain to students that they have already installed Pandas through Anaconda, so they don't need to install additional libraries. However, if they have issues running Pandas, they can use a free notebook by [Google Colaboratory](https://colab.research.google.com/) and troubleshoot their installation with a TA during a break or office hours.
 
 Review the [instructions](../../../02-Homework/04-Pandas/Instructions/README.md) for the homework assignment. Focus on getting students excited about learning Pandas by previewing the skills and work they will accomplish by the end of the week. Emphasize calculating investment returns/profit over time, as well as plot visualizations.
+
+If time allows, you can end the discussion by presenting the following Pandas applications discussed in more detail [here](https://data-flair.training/blogs/applications-of-pandas/) to give students a taste of what to expect in the field. Applications to highlight include:
+
+* Stock prediction
+
+* Analytics
+
+* Data science
+
+Slack out the [above link](https://data-flair.training/blogs/applications-of-pandas/) to students so they can review the other applications outside of class.
+
+Answer any questions before moving on.
 
 ---
 
