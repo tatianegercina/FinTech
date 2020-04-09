@@ -153,7 +153,7 @@ Discuss the following review questions with the class.
 
   * **Answer** A token is programmed with a smart contract.
 
-* What are some potential similarities between `coins` and `tokens`?
+* What are some similarities between `coins` and `tokens`?
 
   * **Answer** Both coins and tokens can represent value.
 
