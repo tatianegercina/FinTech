@@ -135,49 +135,7 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Instructor Do: Why Pandas? (5 min)
-
-The goal of this section is to help students understand the relationship between Pandas and Python. In this part of the lesson you will cover some specific features of Pandas and how Pandas can alleviate some of the challenges presented by Excel.
-
-Use the slides and begin this part of the lesson by discussing the utility and history of spreadsheets.
-
-* Since spreadsheets appeared in [1969 when LANPAR was first used by the plant budgeting operations of AT&T](http://www.renepardo.com/), through [VisiCalc in 1970](https://en.wikipedia.org/wiki/VisiCalc) to [Microsoft Excel in 1987](https://en.wikipedia.org/wiki/Microsoft_Excel), they transformed the finance and quants analysis forever.
-
-* However, as the volume and complexity of data has increased significantly, spreadsheets are now limited when it comes to data analysis.
-
-Ask the class what the pain points they have experienced while using spreadsheets to handle data. Possible answers include:
-
-* Microsoft Office is expensive.
-
-* Cell formulas can be difficult to edit.
-
-* Spreadsheets can only hold so much data; the more data that is stored, the slower the workbook runs.
-
-* Excel files often stop responding and are vulnerable to corruption.
-
-* Automation and custom function creation is not inherent. Macros and VBA need to be learned.
-
-Ask students if they have experienced any disasters or major challenges while working in Excel. Possible answers include:
-
-* Excel hogged so much memory that my laptop crashed.
-
-* Regional sales data for a sales competition was copied and pasted next to the wrong sales representatives. This resulted in the wrong person being identified as the winner.
-
-* In a monthly budget spreadsheet, the Excel formula to calculate the remaining balance in a checking account did not include the entire cell range necessary for the calculation; this resulted in the account having a negative balance.
-
-If time allows, you can end the discussion by presenting the following Pandas applications discussed in more detail [here](https://data-flair.training/blogs/applications-of-pandas/) to give students a taste of what to expect in the field. Applications to highlight include:
-
-* Stock prediction
-
-* Analytics
-
-* Data science
-
-Slack out the [above link](https://data-flair.training/blogs/applications-of-pandas/) to students so they can review the other applications outside of class.
-
----
-
-### 3. Instructor Do: Reading CSVs (10 min)
+### 2. Instructor Do: Reading CSVs (10 min)
 
 The goal of this part of the lesson is to get students comfortable with reading CSV files into Pandas. Financial data is commonly converted from other formats (e.g., an Excel file) to CSV so that it can be manipulated by programs like Pandas. Learning how to read CSV data into Pandas is the first step in getting students started with creating automated analytics pipelines.
 
@@ -260,7 +218,7 @@ Congratulate students on reading their first CSV file into Pandas as this is an 
 
 ---
 
-### 4. Student Do: Reading Stock Data from a CSV File (10 min)
+### 3. Student Do: Reading Stock Data from a CSV File (10 min)
 
 In this activity, students will get hands-on experience reading CSV files into Pandas. They will use the `read_csv` function, sample data with the `head` function, and create DataFrames with specified column names.
 
@@ -274,7 +232,7 @@ In this activity, students will get hands-on experience reading CSV files into P
 
 ---
 
-### 5. Instructor Do: Review Reading Stock Data from a CSV File (5 min)
+### 4. Instructor Do: Review Reading Stock Data from a CSV File (5 min)
 
 In this section, review the previous activity with students.
 
@@ -305,7 +263,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 6. Instructor Do: Column Manipulation (10 min)
+### 5. Instructor Do: Column Manipulation (10 min)
 
 In this part of the lesson, students will learn how to use various Pandas functions to manipulate columns. It's important that students know how to create and curate DataFrames to fit their needs.
 
@@ -359,7 +317,7 @@ Slack out the solution file to students to use as a reference. Now that students
 
 ---
 
-### 7. Instructor Do: Data Cleaning (10 min)
+### 6. Instructor Do: Data Cleaning (10 min)
 
 Students will now take part in a lecture and discussion about data cleaning. They will learn what data cleaning, why it is necessary, and common strategies for cleaning data. This part of the lesson is crucial, as most of the data encountered in the real world is "dirty" and unusable.
 
@@ -580,7 +538,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 8. Student Do: Spring Cleaning (15 min)
+### 7. Student Do: Spring Cleaning (15 min)
 
 In this activity, students will perform a series of data quality checks on stock data to ensure the data is ready for analytical use. The objective of this activity is for students to learn how to clean data using Pandas native functions: `count`,`value_counts`,`isnull`,`sum`,`mean`,`contains`, and `replace`.
 
@@ -590,7 +548,7 @@ In this activity, students will perform a series of data quality checks on stock
 
 ---
 
-### 9. Instructor Do: Review Spring Cleaning (5 min)
+### 8. Instructor Do: Review Spring Cleaning (5 min)
 
 In this part of the lesson, review the solution to the data cleaning activity with students.
 
@@ -699,7 +657,7 @@ For more comprehensive data cleaning strategies, slack out the following [link](
 
 ---
 
-### 10. Instructor Do: Indexing (10 min)
+### 9. Instructor Do: Indexing (10 min)
 
 In this part of the lesson, students will learn how to locate and select data within a DataFrame through indexing. Indexing allows us to slice and dice our data so that we can get or set values for any of the cells in our table.
 
@@ -775,7 +733,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 11. Student Do: Three-Year Loans (15 min)
+### 10. Student Do: Three-Year Loans (15 min)
 
 Now that students have the conceptual knowledge to index and look up data, it's time they get some practice. In this activity, students will use DataFrame indexing on the dataset in `loans.csv` in order to generate insights about three-year loan customers.
 
@@ -787,11 +745,7 @@ Note that the data in `loans.csv` is a compilation of many different columns and
 
 ---
 
-### 12. BREAK (15 min)
-
----
-
-### 13. Instructor Do: Review Three-Year Loans (5 min)
+### 11. Instructor Do: Review Three-Year Loans (5 min)
 
 Use this part of the lesson to review the previous activity with students.
 
@@ -823,7 +777,11 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 14. Instructor Do: Pandas Visualizations (10 min)
+### 12. BREAK (15 min)
+
+---
+
+### 13. Instructor Do: Pandas Visualizations (10 min)
 
 This part of the lesson is focused on creating charts using Pandas visualization functions. You will demo how to plot data with and without indexes, as well as use line and bar charts.
 
@@ -861,7 +819,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 15. Student Do: Market Analysis (15 min)
+### 14. Student Do: Market Analysis (15 min)
 
 In this activity, students will use Pandas to create three different charts: pie chart, bar chart, and scatter plot. This activity will teach students how to create pie charts and scatter plots in addition to bar and line plots.
 
@@ -873,7 +831,7 @@ Circulate the classroom to review student progress as they complete the activity
 
 ---
 
-### 16. Instructor Do: Review Market Analysis (5 min)
+### 15. Instructor Do: Review Market Analysis (5 min)
 
 In this section, review the previous activity with students.
 
@@ -929,7 +887,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 17. Instructor Do: Returns (10 min)
+### 16. Instructor Do: Returns (10 min)
 
 The following demo introduces students to calculating daily returns with Pandas. It will also cover return on investment (ROI), the `pct_change` function, and cumulative returns. This section will build upon skills students have already learned: reading in CSV data, manipulating and cleaning DataFrames, and plotting data.
 
@@ -993,7 +951,7 @@ Now that students know how to calculate and plot returns, they will practice doi
 
 ---
 
-### 18. Student Do: Returns Over Date Ranges (15 min)
+### 17. Student Do: Returns Over Date Ranges (15 min)
 
 In this activity, students will analyze the last 10 years of historical price data for Advanced Micro Devices (AMD) and plot the daily returns over the last 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each time period to determine whether a short or long-term perspective should be used in prospecting AMD as a potential investment opportunity.
 
@@ -1003,7 +961,7 @@ In this activity, students will analyze the last 10 years of historical price da
 
 ---
 
-### 19. Instructor Do: Review Returns Over Date Ranges (5 min)
+### 18. Instructor Do: Review Returns Over Date Ranges (5 min)
 
 In this section, review the solution to the previous activity with students.
 
@@ -1057,28 +1015,6 @@ For what other accounts can daily returns be used to determine return on investm
 Ask if there are any questions before moving on.
 
 ---
-
-### 20. Instructor Do: Decompress and End Class
-
-Before ending class, give students encouragement and allow them time to vocalize their thoughts.
-
-* Tell students that they have come far in the last couple of weeks. Not only have they learned Python, but now they're well on their way to being skilled in Pandas as well. They have also begun to automate portfolio performance evaluation, making them one step closer to becoming masters of FinTech automation.
-
-* Ask students the following questions:
-
-  * What activity in this class was the most enjoyable to complete? The most fulfilling?
-
-  * What's the most stressful thing about programming?
-
-  * What concept or topic you the most time to figure out?
-
-  * Did you come across any shortcuts or unique ways to do things while completing the activities?
-
-* Emphasize student progress in grasping both financial and technical concepts. This is not an easy feat. It takes skill, intellect and abstract thinking, and perseverance to make it this far. They should all pat themselves on the back.
-
-* Tell students that they are now ready to start using more advanced financial calculations and functions, and eventually move on to working with APIs.
-
-* Let the students know that office hours are available for anyone who might have additional questions, would like to review more, or would like to just talk Python, Pandas, financial portfolios, and/or FinTech in general.
 
 ### End Class
 
