@@ -234,7 +234,7 @@ Ask students the following review questions about the ERC standards activity.
 
   * **Answer** 20, 777, 1155
 
-* Which token standards were fungible?
+* Which token standards were non-fungible?
 
   * **Answer** 721, 1155
 
