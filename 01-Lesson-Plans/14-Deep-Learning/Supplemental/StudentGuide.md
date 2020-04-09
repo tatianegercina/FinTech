@@ -56,15 +56,18 @@ The original neural network and building block for modern neural networks, is th
 
 <details>
 <summary>Are Neural Networks considered supervised learning or unsupervised learning?</summary><br>
-Neural networks can fall into both categories! Neural networks can run unsupervised learning jobs such as mapping ot patterns in text for NLP, or for clustering algorithms. They can also be used for supervised learning jobs such as image classification and object detection.
+Neural networks can fall into both categories! Neural networks can run unsupervised learning jobs such as mapping out patterns in text for NLP, or for clustering algorithms. They can also be used for supervised learning jobs such as image classification and object detection.<br>
 
+<br>
 <blockquote>
 <details>
 
 <summary>Supervised Learning</summary><br>
+
 Supervised machine learning uses labeled data with input variables (feature data) and output variables (target data) and uses the feature data to predict the target data. Because the data is labeled, the outcome is known. This data can be fed to the model, and if the model guesses incorrectly, the error can be used to fine tune the model until it makes highly accurate guesses.<br>
 
 An example of this is using tuning forks to tune a piano. Tuning forks produce very precise tones. These tones are your known output. You can press a piano key and compare the piano's tone (model output) to the tuning fork (known y value). If the piano's tone is too low then you can tighten the piano wire to make the piano better at matching the tuning fork. This process of adjusting the model to make the output match the known output is essentially supervised learning.
+
 <br>
 </details>
 <details>
@@ -116,7 +119,7 @@ Choosing the right function for your model is a great opportunity to have some f
 <details>
 <summary>What is a Deep Neural Network?</summary><br>
 
-Deep Neural Networks are neural networks that have more than one hidden layer. One can visualize this by thinking of a network of connected perceptrons, or a multi-layer perceptron. With Deep Neural Networks, there is an input layer and an output layer, but between the two are multiple hidden layers running sophisticated computations to produce more refined output. A layer is a set of neurons, and is visualized by showing a column of those neurons and how they feed into the next column - or layer. Below is an image of a basic deep neural network, they can be, and often much more complex. To visualize even more types of deep neural nets and their structures, visit the [Tensorflow Playground.](https://playground.tensorflow.org/)
+Deep Neural Networks are neural networks that have more than one hidden layer. One can visualize this by thinking of a network of connected perceptrons, or a multi-layer perceptron. With Deep Neural Networks, there is an input layer and an output layer, but between the two are multiple hidden layers running sophisticated computations to produce more refined output. A layer is a set of neurons, and is visualized by showing a column of those neurons and how they feed into the next column - or layer. Below is an image of a basic deep neural network, they can be, and often are, much more complex. To visualize even more types of deep neural nets and their structures, visit the [Tensorflow Playground.](https://playground.tensorflow.org/)
 
 
 ![deep net](Images/nnet.png)
@@ -126,7 +129,7 @@ Deep Neural Networks are neural networks that have more than one hidden layer. O
 <details>
 <summary>What is difference in Recurrent Neural Networks (RNNs) and Long-Short-Term Memory Recurrent Neural Networks (LSTM-RNNs)?</summary><br>
 
-A Recurrent neural network (RNN) is a type of deep neural network that can remember the past and update its results based on that information. RNNs are called recurrent, because they cycle the information they receive through the layers more than once, effectively accessing their 'memory' to update their decisions based on the past. This is the opposite of standard Articifical Neural Networks (ANNs) that utilize a feedforward method where the inputs are passed through each layer only only once, in a unilateral direction, and then outputted.
+A Recurrent neural network (RNN) is a type of deep neural network that can remember the past and update its results based on that information. RNNs are called recurrent, because they cycle the information they receive through the layers more than once, effectively accessing their 'memory' to update their decisions based on the past. This is the opposite of standard Articifical Neural Networks (ANNs) that utilize a feedforward method where the inputs are passed through each layer only once, in a unilateral direction, and then outputted.
 
 While RNNs do well with short sequences of data, they can be overwhelmed and struggle to learn long sequences. This is because they have no way to sort out what information is important and what information isn't important over long periods of time. For example, suppose you wanted to build a machine learning model that could predict when you would want a snack. What you had for breakfast this morning may impact your hunger level for the day, but what you ate for breakfast 3 years ago may no longer be relevant to predicting today's snack time. This can pose an issue for scenarios such as time series analysis on large time windows.
 
