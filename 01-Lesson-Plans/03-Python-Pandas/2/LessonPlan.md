@@ -135,9 +135,9 @@ Answer any questions before moving on.
 
 ---
 
-### 2. Instructor Do: Reading CSVs (10 min)
+### 2. Instructor Do: Reading CSV Files (10 min)
 
-The goal of this part of the lesson is to get students comfortable with reading CSV files into Pandas. Financial data is commonly converted from other formats (e.g., an Excel file) to CSV so that it can be manipulated by programs like Pandas. Learning how to read CSV data into Pandas is the first step in getting students started with creating automated analytics pipelines.
+The goal of this part of the lesson is to get students comfortable with reading CSV files into Pandas. Financial data is commonly converted from other formats (e.g., a Microsoft Excel file) to CSV so that it can be manipulated by programs like Pandas. Learning how to read CSV data into Pandas is the first step in getting students started with creating automated analytics pipelines.
 
 **Files:**
 
@@ -147,19 +147,21 @@ The goal of this part of the lesson is to get students comfortable with reading 
 
 * [sales_no_header.csv](Activities/01-Ins_Reading_CSVs/Resources/sales_no_header.csv)
 
-Introduce Pandas DataFrames and slack out the [Pandas DataFrame documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and [getting started guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe).
+Open the lesson slides, move to "The Pandas DataFrame" section and highlight the following:
 
 * A DataFrame is a special data structure in Pandas that is designed to work with tabular data (data that has rows and columns like a spreadsheet) and provides some useful functions to help analyze and manipulate tabular data.
 
 * A Pandas DataFrame can be created in several ways, such as using a Python dictionary, a list of lists, or reading data from an external file like CSV or JSON.
 
-* The [Pandas DataFrame documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and [getting started guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) are great resources if students want to learn more about creating DataFrames.
+* The [Pandas DataFrame Documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and the [Pandas Getting Started Guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) are great resources if you want to learn more about creating DataFrames.
 
-* Comma-separated values (CSV) is one of the most common file formats used to share data on finance. Students will start working with DataFrames by creating them from CSV files.
+* Comma-separated values (CSV) is one of the most common file formats used to share data on finance. You will start working with DataFrames by creating them from CSV files.
 
-Start by opening the two CSV files in the [Resources](Activities/01-Ins_Reading_CSVs/Resources) directory, `sales.csv` and `sales_no_header.csv` to show students the format of the data. Point out that one file has a header while the other does not. Refer back to these files during the demo as needed.
+Slack out to students the [Pandas DataFrame Documentation](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html) and the [Pandas Getting Started Guide](http://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html#dataframe) and encourage them to review these resources at their pace.
 
-Next, open `reading_csvs.ipynb` and walk through the following aspects of the code with your students. Highlight the following in sequential order.
+Continue by opening the two CSV files in the "Resources" directory (`sales.csv` and `sales_no_header.csv`) in VSCode or any other plain text editor to show students the format of the data. Point out that one file has a header while the other does not. Refer back to these files during the demo as needed.
+
+Next, open `reading_csvs.ipynb` Jupyter notebook and walk through the following aspects of the code with your students. Highlight the following in sequential order.
 
 First, emphasize how to import Pandas.
 
@@ -172,6 +174,12 @@ First, emphasize how to import Pandas.
   from pathlib import Path
   ```
 
+* Next, we use the `Path` class to set the file path to the CSV file we want to load into a DataFrame.
+
+  ```python
+  csvpath = Path("../Resources/sales.csv")
+  ```
+
 Next, discuss the `read_csv` function.
 
 * The `read_csv` function allows users to read a CSV file into a DataFrame.
@@ -179,20 +187,36 @@ Next, discuss the `read_csv` function.
 * The function usually just needs the path to the file, which in this case is defined using the `Path` class.
 
   ```python
-  csvpath = Path("../Resources/sales.csv")
   sales_dataframe = pd.read_csv(csvpath)
-  sales_dataframe.head()
   ```
 
 Then highlight the `head` function.
 
-* The `head` function shows the first 5 rows of the data by default.
+* The `head` function shows the first five rows of the data by default.
 
 * `head` is a common function used to take a peek at the DataFrame to ensure everything loaded correctly.
 
   ![dataframe.png](Images/dataframe.png)
 
-Now call attention to the `header` parameter for `read_csv`.
+Remark to students that this data is a fake dataset about sales.
+
+Continue the demo and explain to students that sometimes they may have situations where a given CSV file has no headers; ask the following question to the class:
+
+* How the `read_csv` function may deal with a CSV without a header?
+
+  * **Possible Answer:** The `read_csv` function will automatically detect that there is no header and will raise an error.
+
+  * **Possible Answer:** It's impossible to read a CSV file without headers in a DataFrame.
+
+  * **Possible Answer:** Since there is no header, the `read_csv` function will take the first row as the file header.
+
+Explain to students that if they load CSV file without a header into a DataFrame by passing just the file path to the `read_csv` function, the first row will be taken as the header.
+
+Continue the demo by loading the `sales_no_header` file into a DataFrame, use the `head` method to show demonstrate to students the default behavior fo the `read_csv` function.
+
+![Loading a CSV file with no header](Images/csv_no_header.png)
+
+Now call attention to the `header` parameter for `read_csv` and highlight the following:
 
 * The `header=None` parameter tells Pandas not to use the first row as the header. Because no header is specified, the column index numbers are used instead.
 
@@ -204,15 +228,15 @@ Now call attention to the `header` parameter for `read_csv`.
 
 * It is common to generate high-level statistics when creating a DataFrame. In this case the Pandas `describe` function can be used.
 
-  * The output of the function is summary statistics for numeric fields, including series counts, averages, minimum value, maximum value, and so on.
-
-  * A limitation of the `describe` function is that it only calculates summary statistics for numeric values columns.
-
   ![describe_summary.png](Images/describe_summary.png)
 
-Consult the Pandas documentation to read more about the [read_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) function. Show the many options available in the function signature.
+* The output of the `describe` function is summary statistics for numeric fields, including series counts, averages, minimum value, maximum value, and so on.
 
-Explain that, while the most common scenario is to simply provide the path to the file, Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files --- such as the parameters associated with the file path and header that were used in the demo code.
+* A limitation of the `describe` function is that it only calculates summary statistics for numeric values columns.
+
+Open the Pandas documentation to show students more about the [`read_csv`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html) function. Review the many options available in the function signature.
+
+Explain that, while the most common scenario is to simply provide the path to the file, Pandas provides a lot of configuration options for almost any other situation that may arise when reading CSV files, such as the parameters associated with the file path and header that were used in the demo code.
 
 Congratulate students on reading their first CSV file into Pandas as this is an exciting moment because students can now harness the power of Pandas to work with tabular data! Ask if there are any questions before moving on.
 
