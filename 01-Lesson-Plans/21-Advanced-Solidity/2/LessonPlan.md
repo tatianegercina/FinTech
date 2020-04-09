@@ -596,7 +596,7 @@ Ask the students the following questions:
 
   * **Answer:** Security tools.
 
-  * **Answer:** Standardized implementations of official ERCs to make developer lives easier.
+  * **Answer:** Standardized implementations of official ERCs to make developers lives easier.
 
 * What is the difference between fungible and non-fungible?
 
