@@ -147,7 +147,7 @@ Have students open the following list of popular Ethereum blockchain tokens and 
 
 Discuss the following review questions with the class.
 
-* What are some potential differences between `coins` and `tokens`?
+* What are some differences between `coins` and `tokens`?
 
   * **Answer** Tokens are often built on top of a blockchain platform, whereas coins usually have their own blockchain.
 
