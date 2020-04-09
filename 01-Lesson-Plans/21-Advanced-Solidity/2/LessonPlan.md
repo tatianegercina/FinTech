@@ -99,7 +99,7 @@ Expand on the previous question with the following points, and introduce the con
 
 * Examples of fungible goods include cryptocurrencies, fiat currencies, and voting rights.
 
-  * A vote is a vote. Let's say you have two people that have voted; each vote has the same power. Just like if you have two people that both have a `nickel`, each nickel is worth the same amount—five cents.
+  * A vote is a vote. Let's say you have two people that have voted; each vote has equal power. Just like if you have two people that each have one `nickel`, both nickels are worth the same amount—five cents.
 
 * Examples of non-fungible goods include pieces of land, diamonds, or collectibles.
 
