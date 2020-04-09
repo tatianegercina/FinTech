@@ -117,7 +117,7 @@ Begin by giving the students some background on tokens and how they can be utili
 
 * Business assets can easily be tracked and transferred, dramatically improving liquidity and auditability.
 
-* Items you purchase at a grocery store can even be tokenized, allowing you to scan a code on your groceries to pull up the entire supply chain history of that item, so you can prove exactly where it came from.
+* Items you purchase at a grocery store can even be tokenized, allowing you to scan a code to pull up the entire supply chain history of a given item, so you can prove exactly where it came from.
 
 * Stablecoins are tokens designed to have stable value. Unlike traditional cryptocurrencies, they are not as volatile, since they are backed by fiat (government) currencies.
 
