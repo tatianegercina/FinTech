@@ -167,7 +167,7 @@ Discuss the following review questions with the class.
 
   * **Potential Answers**
 
-  * **Basic Attention Token (BAT)** - seeking to address fraud in advertising, basic attention is an open-source, decentralized ad platform that allows advertisers to pay website publishers for the attention of users.
+  * **Basic Attention Token (BAT)** - seeking to address digital advertising fraud, basic attention is an open-source, decentralized ad platform that allows advertisers to pay website publishers for the attention of users.
 
   * **0x** - a protocol that allows the creation of decentralized crypto exchanges on the Ethereum blockchain using smart contracts for negotiation between users.
 
