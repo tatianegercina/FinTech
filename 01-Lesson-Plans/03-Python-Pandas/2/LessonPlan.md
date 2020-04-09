@@ -303,15 +303,17 @@ Ask if there are any questions before moving on.
 
 In this part of the lesson, students will learn how to use various Pandas functions to manipulate columns. It's important that students know how to create and curate DataFrames to fit their needs.
 
-**File:** [column_manipulation.ipynb](Activities/03-Ins_Columns/Solved/column_manipulation.ipynb)
+**Files:**
+
+[column_manipulation.ipynb](Activities/03-Ins_Columns/Solved/column_manipulation.ipynb)
 
 Transition to the topic of column manipulation by covering the following talking points:
 
 * Reading CSV data into Pandas is an easy feat, but sometimes the DataFrame's schema/structure needs to change. This includes changing DataFrame column names, adding columns, and dropping columns.
 
-* Now it's time to learn how to use the various Pandas functions to perform each of these operations. It's important that students know how to create and curate DataFrames to fit their needs.
+* Now it's time to learn how to use the various Pandas functions to perform each of these operations. It's important for you to know how to create and curate DataFrames to fit your needs.
 
-* In the previous activity, students created a Pandas DataFrame from a CSV file and assigned column names to the DataFrame. This was one example of column manipulation. There are also other ways to manipulate columns. This demonstration will cover the common techniques used to do so.
+* In the previous activity, you created a Pandas DataFrame from a CSV file and assigned column names to the DataFrame. This was one example of column manipulation. There are also other ways to manipulate columns. This demonstration will cover the common techniques used to do so.
 
 Open the solution file and demonstrate the fundamentals of column manipulation in Pandas:
 
@@ -347,7 +349,10 @@ Open the solution file and demonstrate the fundamentals of column manipulation i
 
 * Finally, columns that are no longer needed can be dropped using the `drop` function. Simply supply a list of the columns that should be dropped from the DataFrame.
 
-  ![customer-drop-columns.png](Images/customer-drop-columns.png)
+  ```python
+  # Use the `drop` method to delete a column from the `customer_dataframe`
+  customer_dataframe = customer_dataframe.drop(columns=["full_name"])
+  ```
 
 Slack out the solution file to students to use as a reference. Now that students have created, split, renamed, and dropped columns, they can move onto the next step of data wrangling: data cleaning.
 
