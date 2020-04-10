@@ -305,7 +305,9 @@ In this part of the lesson, students will learn how to use various Pandas functi
 
 **Files:**
 
-[column_manipulation.ipynb](Activities/03-Ins_Columns/Solved/column_manipulation.ipynb)
+* [column_manipulation.ipynb](Activities/03-Ins_Columns/Solved/column_manipulation.ipynb)
+
+* [customers.csv](Activities/03-Ins_Columns/Resources/customers.csv)
 
 Transition to the topic of column manipulation by covering the following talking points:
 
@@ -360,21 +362,27 @@ Slack out the solution file to students to use as a reference. Now that students
 
 ### 6. Instructor Do: Data Cleaning (10 min)
 
-Students will now take part in a lecture and discussion about data cleaning. They will learn what data cleaning, why it is necessary, and common strategies for cleaning data. This part of the lesson is crucial, as most of the data encountered in the real world is "dirty" and unusable.
+Students will now take part in a lecture and discussion about data cleaning. They will learn what data cleaning is, why it is necessary, and common strategies for cleaning data. This part of the lesson is crucial, as most of the data encountered in the real world is "dirty" and unusable.
 
-**File:** [data_cleaning.ipynb](Activities/04-Ins_Data_Cleaning/Solved/data_cleaning.ipynb)
+**Files:**
 
-Explain to students that up to this point, they have been working with clean data already curated for use. But in the real world, data is messy and needs to be prepared in order for it to be valuable. This process is called **data cleaning**.
+* [data_cleaning.ipynb](Activities/04-Ins_Data_Cleaning/Solved/data_cleaning.ipynb)
 
-Data cleaning is comprised of three parts:
+* [order_data.csv](Activities/04-Ins_Data_Cleaning/Resources/order_data.csv)
 
-1. Data exploration
+Open the lesson slides, move to the "Data Cleaning" section and highlight the following:
 
-2. Data quality checks
+* Up to this point, you have been working with clean data already curated for use. But in the real world, data is messy and needs to be prepared in order for it to be valuable. This process is called **data cleaning**.
 
-3. Data cleaning strategies
+* Data cleaning is comprised of three parts:
 
-Tell students you will demonstrate each of these parts so that they can confidently clean and prep data for analysis.
+  1. Data exploration
+
+  2. Data quality checks
+
+  3. Data cleaning strategies
+
+Explain to students that you will demonstrate each of these parts so that they can confidently clean and prep data for analysis.
 
 Introduce data cleaning by covering these points:
 
@@ -396,7 +404,7 @@ Discuss how data quality is determined.
 
 * Data quality rules are also defined by business or functional rules. Sometimes data needs to be stored or formatted in a unique way for business needs. For example, an international company might store dates as `DD/MM/YYY`, whereas an American company might store dates as `MM/DD/YYYY`.
 
-Mention to students that these rules can all be researched  outside of class.
+Mention to students that these rules can all be researched outside of class.
 
 Ask students to propose some reasons why data might become dirty. Then, highlight some of the common reasons for having dirty data:
 
@@ -406,16 +414,13 @@ Ask students to propose some reasons why data might become dirty. Then, highligh
 
 * **Poor data management:** Data is poorly managed when it is not cleaned or stored in an effective way. While not all data needs to be cleaned, industry standards and business rules should be consistently implemented to ensure the integrity of data.
 
-Discuss approaches for identifying data quality issues while live coding a few examples.
+Discuss approaches for identifying data quality issues while you switch to Jupyter lab to live coding a few examples.
 
 * The first step in assessing data for quality issues is to visually evaluate a sample of the data. This allows programmers to identify obvious quality issues as well as any skewed rows (e.g., a customer address in a first name field).
 
-  ```python
-  # Read in data file and take sample of data
-  csv_path = Path("order_data.csv")
-  csv_data = pd.read_csv(csv_path, index_col="order_no")
-  csv_data.sample(5)
-  ```
+* To load the CSV file into the DataFrame, we set the parameter `index_col="order_no` to use the `order_no` columns as index instead of the default numerical index that Pandas generates.
+
+* To get a sample of the data, Pandas provides the `sample` function to the DataFrame to randomly select rows from a DataFrame; we will fetch five rows in this demo.
 
   ![LP_Ins_Data_Cleansing_Sample_Data.PNG](Images/LP_Ins_Data_Cleansing_Sample_Data.PNG)
 
@@ -423,101 +428,59 @@ Discuss approaches for identifying data quality issues while live coding a few e
 
     **Note:** It's crucial to review data types after loading data into a DataFrame, as Pandas automatically assigns a data type to a Series. There are instances where Pandas is unable to infer the data type. Students will need to be aware of when this happens so that they can assign the proper data type.
 
-  ```python
-  # Retrieving DataFrame data types
-  csv_data.dtypes
-  ```
-
   ![LP_Ins_Data_Cleansing_Data_Types.PNG](Images/LP_Ins_Data_Cleansing_Data_Types.PNG)
 
 * Record counts should always be reviewed to ensure the expected number of rows matches the actual.
 
 * The total number of records can be identified using the `count` function. The `count` function counts the number of non-null cells for each column or row in a Pandas DataFrame.
 
-    ```python
-    # Identifying Series count
-    csv_data.count()
-    ```
+  ![LP_Ins_Data_Cleansing_Count.PNG](Images/LP_Ins_Data_Cleansing_Count.PNG)
 
-    ![LP_Ins_Data_Cleansing_Count.PNG](Images/LP_Ins_Data_Cleansing_Count.PNG)
+At this point, ask students:
 
-At this point, ask students, "Why do you think there are unequal counts in the data?" (Answer: Nulls and missing data.)
+* Why do you think there are unequal counts in the data?
 
-* Similarly, the quality of data can be assessed by using the `value_counts` function, which is a function that identifies the number of times a value occurs in a Series.
+  * **Answer:** Because there are nulls and missing data.
 
-* `Value_counts` reveals how many times a value occurs in a Series, with the most occurring value first.
+* Similarly, the quality of data can be assessed by using the `value_counts` function, which is a function that identifies the number of times a value occurs in a Series or column.
 
-    ```python
-    # Identifying frequency values
-    csv_data['customer_no'].value_counts()
-    ```
+* `value_counts` reveals how many times a value occurs in a Series, with the most occurring value first.
 
     ![LP_Ins_Data_Cleansing_Distinct_Customer.PNG](Images/LP_Ins_Data_Cleansing_Distinct_Customer.PNG)
 
 * Identifying `nulls` is key in assessing data quality health.
 
-  * Pandas offers a native function, `isnull()`, that can be used to identify missing values in a field represented as Python `None` objects.
+* Pandas offers a native function, `isnull()`, that can be used to identify missing values in a field represented as Python `None` objects.
 
-  * The `isnull()` function identifies which column values are nulls and which ones are not.
+* The `isnull()` function identifies which column values are nulls and which ones are not.
 
-  * If a column value is null, `isnull()` returns `True`. If the value is not null, `isnull` returns `False`.
+* If a column value is null, `isnull()` returns `True`. If the value is not null, `isnull` returns `False`.
 
-    ```python
-    # Checking for null
-    csv_data.isnull()
-    ```
-
-    ![LP_Ins_Data_Cleansing_CSV_Isnull.png](Images/LP_Ins_Data_Cleansing_CSV_Isnull.png)
+  ![LP_Ins_Data_Cleansing_CSV_Isnull.png](Images/LP_Ins_Data_Cleansing_CSV_Isnull.png)
 
 * Assessing the percentage of nulls for the entire DataFrame is also valuable, especially when it comes to determining what should be done with the nulls in a DataFrame.
 
 * The percentage of nulls will influence the course of action for cleaning nulls, namely, dropping the nulls or leaving them alone.
 
-    ```python
-    # Checking for percentage of null
-    csv_data.isnull().mean() * 100
-    ```
-
-    ![LP_Ins_Data_Cleansing_Null_Pct_Check.PNG](Images/LP_Ins_Data_Cleansing_Null_Pct_Check.PNG)
+  ![LP_Ins_Data_Cleansing_Null_Pct_Check.PNG](Images/LP_Ins_Data_Cleansing_Null_Pct_Check.PNG)
 
 * Another method for determining how many nulls are in the DataFrame is to calculate the sum of all nulls.
 
-    ```python
-    # Checking for number of nulls
-    csv_data.isnull().sum()
-    ```
-
-    ![LP_Ins_Data_Cleansing_No_Of_Null.PNG](Images/LP_Ins_Data_Cleansing_No_Of_Null.PNG)
+  ![LP_Ins_Data_Cleansing_No_Of_Null.PNG](Images/LP_Ins_Data_Cleansing_No_Of_Null.PNG)
 
 * Nulls can be cleaned by replacing them with a default value: "Unknown", 0, or mean(). This is exactly what the Pandas `fillna` does!
 
 * `Fillna` will replace every instance of `null` with the provided default value. For this reason, the function should be executed against a Series.
 
-    ```python
-    # Cleanse nulls from DataFrame by filling na
-    csv_data['customer_no'] = csv_data['customer_no'].fillna("Unknown")
-    csv_data
-    ```
-
-    ![LP_Ins_Data_Cleansing_Fill_Na.png](Images/LP_Ins_Data_Cleansing_Fill_Na.png)
+  ![LP_Ins_Data_Cleansing_Fill_Na.png](Images/LP_Ins_Data_Cleansing_Fill_Na.png)
 
 * Once nulls have been identified through a data quality process, a decision can be made to either drop the nulls or leave them.
 
 * The `dropna` Pandas function can be used to drop all null values.
 
-* Providing `inplace=True` as an argument will ensure the `dropna` function does not make a copy of the DataFrame but rather performs the operation on the original.
-
-  ```python
-  # Cleaning nulls from DataFrame by dropping
-  csv_data.dropna(inplace=True)
-  csv_data
-  ```
+  ![Dropping all rows with null values](Images/df-dropna.png)
 
 * A best practice is to combine the `isnull` function with the `sum` function to test the `dropna` function; this serves as a unit test of the `dropna` function. The expectation is there should be a count of 0 nulls for each Series.
-
-  ```python
-  csv_data_cleaned.isnull().sum()
-  ```
 
   ![LP_Ins_Data_Cleansing_No_Of_Null_2.PNG](Images/LP_Ins_Data_Cleansing_No_Of_Null_2.PNG)
 
@@ -525,31 +488,17 @@ At this point, ask students, "Why do you think there are unequal counts in the d
 
 * The `duplicated` function returns either `True` or `False`.
 
-  ```python
-  # Checking duplicates
-  csv_data.duplicated()
-  csv_data['customer_no'].duplicated()
-  ```
-
   ![LP_Ins_Data_Cleansing_Duplicated_Check.PNG](Images/LP_Ins_Data_Cleansing_Duplicated_Check.PNG)
 
 * The `drop_duplicates` function cleans duplicate rows. This function can be executed against a DataFrame or a Series.
 
-  ```python
-  # Cleaning duplicates
-  csv_data.drop_duplicates()
-  ```
+  ![Drop duplicates](Images/df_drop_duplicates.png)
 
 Next, tell students you will live code a few data quality checks that are especially relevant for financial data. Cover the following points in your discussion:
 
 * FinTech is all about manipulating financial data. Being able to inspect numeric values and gauge the quality of numerical data is critical to student success when analyzing and aggregating data.
 
 * A quick and easy way to confirm the quality of a numeric value is to sample the data and do a spot check.
-
-  ```python
-  # Generate sample of DataFrame to inspect for issues with numerical data
-  csv_data.head()
-  ```
 
   ![LP_Stu_Data_Cleansing_Head_Currency.PNG](Images/LP_Stu_Data_Cleansing_Head_Currency.PNG)
 
@@ -558,9 +507,8 @@ Next, tell students you will live code a few data quality checks that are especi
 * The cleaning operation can be created by leveraging and combining other Pandas functions (e.g., the Pandas `replace` function).
 
   ```python
-  # Cleaning identified numeric fields with $ symbol
+  # Clean identified numeric fields with $ symbol
   csv_data['order_total'] = csv_data['order_total'].str.replace('$', '')
-  csv_data['order_total']
   ```
 
   ![LP_Ins_Data_Cleansing_Currency_Clean.png](Images/LP_Ins_Data_Cleansing_Currency_Clean.png)
@@ -585,7 +533,7 @@ In this activity, students will perform a series of data quality checks on stock
 
 **File:** [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Unsolved/Core/spring_cleaning.ipynb)
 
-**Instructions:** [README.md](Activities/05-Stu_Data_Cleaning/README.md)
+**Instructions:**[README.md](Activities/05-Stu_Data_Cleaning/README.md)
 
 ---
 
