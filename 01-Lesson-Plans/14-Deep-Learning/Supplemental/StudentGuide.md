@@ -95,11 +95,11 @@ Some of the most popular activation functions include sigmoid, tanh, and relu. A
 <details>
 <summary>Linear and non-linear data</summary>
 
-Linearity is the property of data that allows it to be visually depicted as a straight line.  When plotted, a linear dataset will appear to move in one direction, in a relatively straight line as seen below:
+Linearity is the property of data that allows it to be visually depicted as a straight line. When plotted, a linear dataset will appear to move in one direction, in a relatively straight line as seen below:
 
 <img src=Images/linear-data.png width=400>
 
-Conversely, a nonlinear dataset will appear to be anything other than a straight line.  It might be a bell curve, jagged line or haphazard as seen in the example below:
+Conversely, a nonlinear dataset will appear to be anything other than a straight line. It might be a bell curve, jagged line or haphazard as seen in the example below:
 
 <img src=Images/non-linear-data.png width=400>
 
