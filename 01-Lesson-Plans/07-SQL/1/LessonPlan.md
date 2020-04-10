@@ -599,7 +599,7 @@ Answer any questions before moving on.
 
 ### 14. Instructor Do: CRUD (5 min)
 
-In this activity, students are introduced to the concept of Create, Read, Update, and Delete statements in SQL.
+In this activity, students are introduced to the concept of Create, Read, Update, and Delete (CRUD) statements in SQL.
 
 Return to the `CRUD` section of the slides and begin to explain CRUD operations.
 
@@ -658,7 +658,7 @@ Answer any questions before moving on.
 
 ### 15. Student Do: Using CRUD (20 min)
 
-In this activity, students will utilize CRUD operations (Create, Read, Update, Delete) on the provided data.
+In this activity, students will utilize CRUD operations on the provided data.
 
 **Files:**
 
@@ -682,7 +682,7 @@ This activity will require students to do some research. Links are provided to h
 
 Open a query tool in `sales_db` and copy and paste the code from schema.sql and seed.sql to create and populate a new table named `sales`. Then explain the following:
 
-* Select statements read the data from the table and outputs the specified columns.
+* Select statements read the data from the table and output the specified columns.
 
 * Deletions and updates are made where the conditions are met.
 
@@ -692,7 +692,7 @@ Open a query tool in `sales_db` and copy and paste the code from schema.sql and 
 
 ### 17. Instructor Do: Joins (15 min)
 
-In this activity, students are introduced to the concept of joins -- the combination of multiple related datasets into a single dataset.
+In this activity, students are introduced to the concept of joins—the combination of multiple related datasets into a single dataset.
 
 **Files:**
 
@@ -823,7 +823,7 @@ Open the query.sql file and copy the code. Then open a new query tool and paste 
   LEFT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
   ```
 
-* A right join returns all of the records from the right table regardless of matching or unmatching records on the left table.
+* A right join returns all of the records from the right table, regardless of matching or unmatching records on the left table.
 
   ```sql
   SELECT *
@@ -831,7 +831,7 @@ Open the query.sql file and copy the code. Then open a new query tool and paste 
   RIGHT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
   ```
 
-* A full outer join returns all of the records from both the left and right tables regardless of matching or unmatching in either side.
+* A full outer join returns all of the records from both the left and right tables, regardless of matching or unmatching in either side.
 
   ```sql
   -- Perform a FULL OUTER JOIN
@@ -849,7 +849,7 @@ Open the query.sql file and copy the code. Then open a new query tool and paste 
   CROSS JOIN banks;
   ```
 
-* In order to find the customers with Wells Fargo bank accounts, the banks and customer tables must be joined together with the payments table. This is because the customer table cannot directly join to the banks table as there is no common key or column; however, by using the payments table as a joiner table (containing both a `bank_routing_number` and a `customer_id`), customers can be linked to payment records that are linked to Wells Fargo bank accounts.
+* In order to find the customers with Wells Fargo bank accounts, the banks and customer tables must be joined together with the payments table. This is because the customer table cannot directly join to the banks table, as there is no common key or column. However, by using the payments table as a joiner table (containing both a `bank_routing_number` and a `customer_id`), customers can be linked to payment records that are linked to Wells Fargo bank accounts.
 
   ```sql
   SELECT
@@ -870,4 +870,4 @@ Answer any questions before ending the class.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
