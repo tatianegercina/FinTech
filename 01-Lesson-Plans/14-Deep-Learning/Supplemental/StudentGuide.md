@@ -93,6 +93,22 @@ Some of the most popular activation functions include sigmoid, tanh, and relu. A
 </details>
 
 <details>
+<summary>Linear and non-linear data</summary>
+
+Linearity is the property of data that allows it to be visually depicted as a straight line.  When plotted, a linear dataset will appear to move in one direction, in a relatively straight line as seen below:
+
+<img src=Images/linear-data.png width=400>
+
+Conversely, a nonlinear dataset will appear to be anything other than a straight line.  It might be a bell curve, jagged line or haphazard as seen in the example below:
+
+<img src=Images/non-linear-data.png width=400>
+
+Data points in a linear data set are proportionally separate with constant correlation, wheras non-linear data is disparately proportional with varying correlation.
+
+Linear data is much easier to predict that non-linear data, because the trend is always present, moving in the same direction, however nueral networks are especially equipped to work with non-linear data, due in many parts to non-linear activation functions.
+
+</details>
+<details>
 <summary>Loss Functions and Optimizers</summary><br>
 
 Loss functions measure how far the model is deviating from the expected result - the higher the number, the more deviation, meaning poor performance. Optimizer functions help the loss functions minimize their error by updating the weights used in the model according to the loss. Optimizer functions fine tune your model by using the loss function as a guide to keep it moving in the right direction. If the loss is going up, the optimizer needs to readjust the weights.
@@ -115,26 +131,6 @@ Some popular loss functions include mean squared error (MSE) and categorical cro
 Choosing the right function for your model is a great opportunity to have some fun with your code through experimentation! Building neural networks is part science and part art, so choosing these functions is typically the result of much testing with different options to find the best result.
 
 </details>
-
-
-<details>
-<summary>What is the difference between linear and non-linear data?</summary>
-
-Linearity is the property of data that allows it to be visually depicted as a straight line.  When plotted, a linear dataset will appear to move in one direction, in a relatively straight line as seen below:
-
-<img src=Images/linear-data.png width=4
-- 00>
-
-Conversely, a nonlinear dataset will appear to be anything other than a straight line.  It might be a bell curve, jagged line or haphazard as seen in the example below:
-
-<img src=Images/non-linear-data.png width=400>
-
-Data points in a linear data set are proportionally spearate with constant correlation, wheras non-linear data is disparately proportional with varying correlation.
-
-Linear data is much easier to predict that non-linear data, because the trend is always present, moving in the same direction.
-
-</details>
-
 
 <details>
 <summary>What is a Deep Neural Network?</summary><br>
