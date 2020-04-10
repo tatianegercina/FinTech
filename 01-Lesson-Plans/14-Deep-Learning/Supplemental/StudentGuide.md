@@ -116,6 +116,26 @@ Choosing the right function for your model is a great opportunity to have some f
 
 </details>
 
+
+<details>
+<summary>What is the difference between linear and non-linear data?</summary>
+
+Linearity is the property of data that allows it to be visually depicted as a straight line.  When plotted, a linear dataset will appear to move in one direction, in a relatively straight line as seen below:
+
+<img src=Images/linear-data.png width=4
+- 00>
+
+Conversely, a nonlinear dataset will appear to be anything other than a straight line.  It might be a bell curve, jagged line or haphazard as seen in the example below:
+
+<img src=Images/non-linear-data.png width=400>
+
+Data points in a linear data set are proportionally spearate with constant correlation, wheras non-linear data is disparately proportional with varying correlation.
+
+Linear data is much easier to predict that non-linear data, because the trend is always present, moving in the same direction.
+
+</details>
+
+
 <details>
 <summary>What is a Deep Neural Network?</summary><br>
 
@@ -134,12 +154,6 @@ A Recurrent neural network (RNN) is a type of deep neural network that can remem
 While RNNs do well with short sequences of data, they can be overwhelmed and struggle to learn long sequences. This is because they have no way to sort out what information is important and what information isn't important over long periods of time. For example, suppose you wanted to build a machine learning model that could predict when you would want a snack. What you had for breakfast this morning may impact your hunger level for the day, but what you ate for breakfast 3 years ago may no longer be relevant to predicting today's snack time. This can pose an issue for scenarios such as time series analysis on large time windows.
 
 LSTM-RNN can help resolve this problem by practicing more expansive, yet more selective memory. The LSTM-RNN can predict which values are ok to forget and which it needs to hold on to so that longer time windows can be analyzed.
-
-</details>
-
-<details>
-<summary>What is the difference between linear and non-linear data?</summary>
-
 
 </details>
 
