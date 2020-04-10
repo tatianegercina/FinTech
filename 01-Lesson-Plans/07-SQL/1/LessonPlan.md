@@ -6,7 +6,7 @@ In today's class, students are introduced to SQL databases and will learn how to
 
 ### Class Objectives
 
-By the end of class, students will be able to:
+By the end of today's class, students will be able to:
 
 * Install and run PostgreSQL (SQL) and pgAdmin (GUI) on their computers.
 
@@ -22,15 +22,15 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* **Important:** [Instructions](../Supplemental/InstallationGuides) for installing PostgreSQL and pgAdmin should have already been slacked-out prior to today's class, as students needed to install these before class to conserve time for lessons and activities rather than for initial setup.
+* **Important:** [Instructions](../Supplemental/InstallationGuides) for installing PostgreSQL and pgAdmin should be slacked out prior to today's class, as students need to install these before class to conserve time for lessons and activities.
 
 * If you experience any issues importing data as CSV files via pgAdmin, please refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md).
 
-* Today's class will be challenging. In this lesson, a series of activities will introduce students to programming with SQL using PostgreSQL and pgAdmin. The pace of today's class will be quick as students absorb learning a new UI and programming language simultaneously.
+* Today's class will be challenging. In this lesson, a series of activities will introduce students to programming with SQL using PostgreSQL and pgAdmin. The pace of today's class will be quick, as students absorb learning a new UI and programming language simultaneously.
 
-* Because this lesson introduces more than one new concept, circulate through the class during student activities to assist those who appear frustrated or stuck. Some students may already have experience with SQL; embrace these students' knowledge of the language, and have them assist students who are not yet familiar with SQL.
+* Because this lesson introduces more than one new concept, you and the TAs should circulate through the class during student activities to assist those who appear frustrated or stuck. Some students may already have SQL experience; embrace their knowledge, and have them assist students who are not yet familiar with SQL.
 
-* This lesson introduces new content rapidly. Students may express frustration at learning a new interface and programming language simultaneously. Explain to students that while the learning curve may be steep at first, SQL experience is highly sought-after and well worth the effort required to become comfortable with it.
+* This lesson introduces new content rapidly. Students may express frustration at learning a new interface and programming language simultaneously. Explain to students that while the learning curve may be steep at first, SQL experience is highly sought after and well worth the effort required to become comfortable with it.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -46,7 +46,7 @@ By the end of class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -72,9 +72,9 @@ Open the slideshow to the Postgres section and take some time to go over the pur
 
 * SQL (often pronounced "sequel") stands for Structured Query Language. It is a powerful programming language designed to allow programmers to create, populate, manipulate, and access databases, as well as provide the ability to leverage scalable server-side storage for large volumes of data.
 
-* With SQL, data is stored in tables on the server; much like spreadsheets, you would create in Microsoft Excel. This makes the data easy to visualize and search.
+* With SQL, data is stored in tables on a server, similar to spreadsheets that you would create in Microsoft Excel. This makes the data easy to visualize and search.
 
-* PostgreSQL (usually referred to as "Postgres") is an object-relational database system that uses the SQL language. PostgreSQL is one of the many *vendors* that utilize the underlying SQL technology -- similar to other well-known vendors such as MySQL, Microsoft SQL Server, and Oracle SQL.
+* PostgreSQL (usually referred to as "Postgres") is an object-relational database system that uses the SQL language. PostgreSQL is one of the many *vendors* that utilize the underlying SQL technology—similar to other well-known vendors such as MySQL, Microsoft SQL Server, and Oracle SQL.
 
 * pgAdmin is the database management tool used for working with Postgres. It simplifies the creation, maintenance, and use of database objects by providing a Graphical User Interface (GUI).
 
@@ -88,7 +88,7 @@ Slack out the following resources:
 
 ### 3. Instructor Do: Create a Database (5 min)
 
-In this activity, the instructor walks students through the process of creating a database in PostgreSQL.
+In this activity, you will walk students through the process of creating a database in PostgreSQL.
 
 Begin by verifying that everyone has successfully installed pgAdmin and PostgreSQL. Everyone should have completed this step prior to today's class.
 
@@ -116,7 +116,7 @@ Answer any questions before moving on.
 
 ### 4. Instructor Do: Create a Table (10 min)
 
-In this activity, the instructor walks students through the process of creating a table and manipulating its contents in PostgreSQL.
+In this activity, you will walk students through the process of creating a table and manipulating its contents in PostgreSQL.
 
 Now that there is a database on the server, it's time to dig into the real meat of SQL and start creating tables within the new database!
 
@@ -175,7 +175,7 @@ Point out that when running the appended script, a "relation <table_name> alread
 
 ![table-exists](Images/table-exists.png)
 
-* SQL data is persistent; it is not deleted or overwritten when identical commands are run unless specifically commanded.
+* SQL data is persistent; it is not deleted or overwritten when identical commands are run, unless specifically commanded.
 
 * This means that when a database or table is created with a name identical to one that already exists, an error will occur, telling the user that the database or table already exists.
 
@@ -193,7 +193,7 @@ Show the class an alternative method:
 
 * In the future, students will be able to view the structure of their table, and all of the values contained within it, using this same line of code.
 
-Type the following code while explaining what it does line by line.
+Type the following code, while explaining what it does, line by line:
 
 ```sql
 INSERT INTO customer
@@ -276,7 +276,7 @@ Create a new database named `state_info` in pgAdmin. Then use the the schema.sql
 
 * Each column is specified in the `INSERT INTO` clause, and the values are inserted in the same order.
 
-* To make the code easier to read, each row of values is on its line, separated by a comma.
+* To make the code easier to read, each row of values is on its own line, separated by a comma.
 
   ```sql
   INSERT INTO states
@@ -308,9 +308,9 @@ Create a new database named `state_info` in pgAdmin. Then use the the schema.sql
   FROM states;
   ```
 
-Walk through the solution to the first and second bonus question.
+Now, walk through the solutions for the first and second bonus questions.
 
-* The first bonus question is very similar to the previous query executed in that it displays only the values of a single column.
+* The first bonus question is very similar to the previous query executed, in that it displays only the values of a single column.
 
   ```sql
   SELECT state_abbreviation
@@ -331,7 +331,7 @@ Walk through the solution to the first and second bonus question.
 
 * Note that the `WHERE` clause is highly customizable, and can use several operators like `<` (less than), `>` (greater than), and `=` (equal to).
 
-Walk through the solution to the third and final bonus question.
+Now, walk through the solutions for the third and final bonus questions.
 
 * Queries can be filtered even further with the `AND` clause. This clause allows users to specify more than one condition in their query.
 
@@ -382,7 +382,7 @@ WHERE first_name = 'Michael';
 
 * Because the name Michael appears twice in the table, SQL assumes that the user wants to delete every column containing that name; it doesn't understand that the user is simply trying to remove the duplicate row.
 
-* To prevent this kind of thing from occurring, programmers will often want to create a column that automatically populates each new row with unique data. This allows them to select and modify that row more easily.
+* To prevent this from occurring, programmers will often want to create a column that automatically populates each new row with unique data. This allows them to select and modify that row more easily.
 
 Remove the `customer` table by running the `DROP TABLE` statement. As the name suggests, the `DROP TABLE` statement "drops" or deletes a table, while the `IF EXISTS` clause provides a conditional for dropping the table: if the table exists, then drop the table, otherwise skip the statement.
 
@@ -431,7 +431,7 @@ Explain the following points:
 
 * By default, the starting value is 1, and it will increase by 1 for each new record. When using `SERIAL` with our unique `PRIMARY KEY`, we automatically get unique, incrementing values for each table row.
 
-* Because values will automatically increment, each row's ID is guaranteed to be unique. This ensures that SQL does not identify and update the wrong row when CRUD (Create, Read, Update, Delete) statements are implemented (will cover in the following activities).
+* Because values will automatically increment, each row's ID is guaranteed to be unique. This ensures that SQL does not identify and update the wrong row when CRUD (Create, Read, Update, Delete) statements are implemented (which we'll cover in the following activities).
 
 * The `INSERT` statements have not changed, as they do not need to insert data specifically into the `customer_id` column. SQL automatically provides value for this column, fulfilling the uniqueness constraint by automatically incrementing the last value used as a customer ID.
 
@@ -515,7 +515,7 @@ Answer any questions before moving on.
 
 ### 11. Instructor Do: Import Data (10 min)
 
-In this activity, students learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
+In this activity, students will learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
 
 **Note:** If issues arise when using the pgAdmin Import/Export tool, there is an included [seed.sql](Activities/06-Ins_Importing_Data/Solved/seed.sql) file within the Solved folder of each instructor/student activity in the remaining half of the day. Distribute and use the file when necessary and refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
 
