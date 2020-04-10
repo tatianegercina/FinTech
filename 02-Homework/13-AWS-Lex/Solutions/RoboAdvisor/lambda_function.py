@@ -166,7 +166,7 @@ def recommend_portfolio(intent_request):
                 validation_result["message"],
             )
 
-        # Fetch current session attibutes
+        # Fetch current session attributes
         output_session_attributes = intent_request["sessionAttributes"]
 
         return delegate(output_session_attributes, get_slots(intent_request))
