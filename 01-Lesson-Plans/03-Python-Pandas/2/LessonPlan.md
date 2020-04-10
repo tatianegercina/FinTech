@@ -478,6 +478,8 @@ At this point, ask students:
 
 * The `dropna` Pandas function can be used to drop all null values.
 
+* Since we are creating a brand new DataFrame based on the original data but without null values, it's a good practice to use the `copy` function as well.
+
   ![Dropping all rows with null values](Images/df-dropna.png)
 
 * A best practice is to combine the `isnull` function with the `sum` function to test the `dropna` function; this serves as a unit test of the `dropna` function. The expectation is there should be a count of 0 nulls for each Series.
@@ -490,9 +492,12 @@ At this point, ask students:
 
   ![LP_Ins_Data_Cleansing_Duplicated_Check.PNG](Images/LP_Ins_Data_Cleansing_Duplicated_Check.PNG)
 
-* The `drop_duplicates` function cleans duplicate rows. This function can be executed against a DataFrame or a Series.
+* The `drop_duplicates` function cleans duplicate rows. This function can be executed against a DataFrame or a Series. We are using the `copy` function to create a brand new DataFrame without duplicates.
 
-  ![Drop duplicates](Images/df_drop_duplicates.png)
+  ```python
+  # Clean duplicates
+  csv_data = csv_data.drop_duplicates().copy()
+  ```
 
 Next, tell students you will live code a few data quality checks that are especially relevant for financial data. Cover the following points in your discussion:
 
@@ -506,20 +511,9 @@ Next, tell students you will live code a few data quality checks that are especi
 
 * The cleaning operation can be created by leveraging and combining other Pandas functions (e.g., the Pandas `replace` function).
 
-  ```python
-  # Clean identified numeric fields with $ symbol
-  csv_data['order_total'] = csv_data['order_total'].str.replace('$', '')
-  ```
-
   ![LP_Ins_Data_Cleansing_Currency_Clean.png](Images/LP_Ins_Data_Cleansing_Currency_Clean.png)
 
 * Once the currency symbols have been removed from the numeric field, the field can be converted to the appropriate data type.
-
-  ```python
-  csv_data.dtypes
-  csv_data['order_total'] = csv_data['order_total'].astype('float')
-  csv_data.dtypes
-  ```
 
   ![LP_Ins_Data_Cleansing_AsType.PNG](Images/LP_Ins_Data_Cleansing_AsType.PNG)
 
@@ -531,9 +525,15 @@ Ask if there are any questions before moving on.
 
 In this activity, students will perform a series of data quality checks on stock data to ensure the data is ready for analytical use. The objective of this activity is for students to learn how to clean data using Pandas native functions: `count`,`value_counts`,`isnull`,`sum`,`mean`,`contains`, and `replace`.
 
-**File:** [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Unsolved/Core/spring_cleaning.ipynb)
+**Files:**
 
-**Instructions:**[README.md](Activities/05-Stu_Data_Cleaning/README.md)
+* [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Unsolved/Core/spring_cleaning.ipynb)
+
+* [stock_data.csv](Activities/05-Stu_Data_Cleaning/Resources/stock_data.csv)
+
+**Instructions:**
+
+* [README.md](Activities/05-Stu_Data_Cleaning/README.md)
 
 ---
 
