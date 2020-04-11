@@ -367,7 +367,7 @@ Open pgAdmin and walk through the solution, highlighting the following:
   LIMIT 5;
   ```
 
-* When calculating averages, average values can be lengthy in terms of their decimal places. Therefore, the `ROUND` function can be used to limit the results to the desired decimal place (in this case two decimal places).
+* When calculating averages, average values can be lengthy in terms of their decimal places. Therefore, the `ROUND` function can be used to limit the results to the desired decimal place (in this case, two decimal places).
 
   ```sql
   SELECT customer_id, ROUND(AVG(amount), 2) AS average_payment_amount
@@ -377,7 +377,7 @@ Open pgAdmin and walk through the solution, highlighting the following:
   LIMIT 5;
   ```
 
-* For the first bonus, the `payment` table alone does not contain staff information, only a `staff_id`. Therefore, the a `JOIN` is necessary to access the `first_name` and `last_name` of the `staff` table, which can then be used in the `GROUP BY` clause to group by staff names and then calculate the count of customers they've serviced.
+* For the first bonus, the `payment` table alone does not contain staff information, only a `staff_id`. Therefore, the `JOIN` is necessary to access the `first_name` and `last_name` of the `staff` table, which can then be used in the `GROUP BY` clause to group by staff names and then calculate the count of customers they've serviced.
 
   ```sql
   SELECT first_name, last_name, COUNT(customer_id) AS customer_count
