@@ -595,7 +595,7 @@ Review the solution in pgAdmin and explain the following:
 
 ### 13. Instructor Do: Create Views (10 min)
 
-In this activity, students will learn how to create and utilize views, virtual tables that can be created from a single table, multiple tables, or another view.
+In this activity, students will learn how to create and utilize views—virtual tables that can be created from a single table, multiple tables, or another view.
 
 **Files:**
 
@@ -768,7 +768,7 @@ Discuss the following points with students:
 
 * Up to this point, the subqueries we've seen have been relatively straightforward. In this activity, we will look at more complicated examples, but don't worry. We can perform complexly nested subqueries using the same principles that we've learned so far.
 
-* We begin with a question: how many people have rented the film *Blanket Beverly*? To answer this question systematically, we must first identify the tables needed for our query.
+* Begin with a question: How many people have rented the film *Blanket Beverly*? To answer this question systematically, we must first identify the tables needed for our query.
 
 * To help with this process, an **entity relationship diagram (ERD)** is used.
 
@@ -776,7 +776,7 @@ Slack out the [ERD](http://www.postgresqltutorial.com/postgresql-sample-database
 
 * An ERD shows the connections between the tables.
 
-* The schema makes it easier to identify the tables we need as well as the keys we will use to link our subqueries.
+* The schema makes it easier to identify the tables we need, as well as the keys we will use to link our subqueries.
 
 * We will dive deeper into these in the next lesson.
 
@@ -894,7 +894,7 @@ Review the solution to the activity and answer any questions that students have.
     );
   ```
 
-* The second question calls for the total payment amount generated from the rentals of the film `ACE GOLDFINGER`. Similar to the first question, the `film_id` of `ACE GOLDFINGER` must first be determined so that it can be used "up-the-chain" to the `inventory`, `rental`, and `payment` table, where we can finally calculate the `SUM` of the `amount` column to calculate the total payment amount for `ACE GOLDFINGER`.
+* The second question calls for the total payment amount generated from the rentals of the film `ACE GOLDFINGER`. Similar to the first question, the `film_id` of `ACE GOLDFINGER` must first be determined so that it can be used "up-the-chain" to the `inventory`, `rental`, and `payment` tables, where we can finally calculate the `SUM` of the `amount` column to calculate the total payment amount for `ACE GOLDFINGER`.
 
   ```sql
   SELECT SUM(amount) AS total_amount
@@ -923,4 +923,4 @@ Answer any questions before ending class.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
