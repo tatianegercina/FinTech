@@ -54,7 +54,7 @@ Welcome students and review the class objectives, then open the slideshow and co
 
 In this activity, instructors will help students prepare for today's lesson by importing the necessary data to their databases.
 
-Note: If issues arise when using the pgAdmin Import/Export tool, there is an included seed.sql file within the Solved folder of each instructor/student activity. Distribute and use the file when necessary and refer to the SQL troubleshooting guide for more information on how to use the file.
+* **Note:** If issues arise when using the pgAdmin Import/Export tool, there is an included seed.sql file within the Solved folder of each instructor/student activity. Distribute and use the file when necessary and refer to the SQL troubleshooting guide for more information on how to use the file.
 
 **Files:**
 
