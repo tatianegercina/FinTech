@@ -541,16 +541,19 @@ In this activity, students will perform a series of data quality checks on stock
 
 In this part of the lesson, review the solution to the data cleaning activity with students.
 
-**File:** [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Solved/Core/spring_cleaning.ipynb)
+**Files:**
 
-Review data cleaning from a conceptual standpoint, mentioning the following points:
+* [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Solved/Core/spring_cleaning.ipynb)
+
+* [stock_data.csv](Activities/05-Stu_Data_Cleaning/Resources/stock_data.csv)
+
+Review data cleaning from a conceptual standpoint, mentioning the following points to students:
 
 * Data cleaning is important because it removes all of the issues and errors that would block or inhibit computation.
 
 * Without data cleaning, financial data can be calculated and aggregated incorrectly and inaccurately. Data quality issues can skew financial numbers, resulting in numbers being reported either higher or lower than actual. Since numbers drive business decisions in the financial world, use of incorrect data can have catastrophic implications.
 
-Open the solution file, [spring_cleaning.ipynb](Activities/05-Stu_Data_Cleaning/Solved/Core/spring_cleaning.ipynb),
-and review the activity solution.
+Open the solution file, review the activity solution and highlight the following:
 
 * The `shape` function provides a quick and easy way to understand the structure of a DataFrame, including the number of columns and number of tuples/rows in the DataFrame.
 
@@ -558,7 +561,7 @@ and review the activity solution.
   csv_data.shape
   ```
 
-  ```
+  ```text
   (504, 13)
   ```
 
@@ -568,7 +571,7 @@ and review the activity solution.
   csv_data.count()
   ```
 
-  ```
+  ```text
   name                  502
   sector                501
   price                 500
@@ -585,64 +588,141 @@ and review the activity solution.
   dtype: int64
   ```
 
-Ask students, "What steps should be taken if all values in a Series are null?" (Answer: The Series should be dropped.)
+Ask students the following question:
+
+* What steps should be taken if all values in a Series are null?
+
+  * **Answer:** The Series should be dropped.
 
 * Nulls can throw a wrench in an analytic pipeline. The `isnull` function will identify which Series has nulls. If there are nulls, they can be removed or filled. The `dropna` and `fillna` functions provide this functionality, respectively. Note that it's important to understand which fields can have nulls and which one's cannot.
 
-  ```python
-  csv_data.isnull()
-  ```
-
-  ![LP_Stu_Cleansing_Isnull.PNG](Images/LP_Stu_Data_Cleansing_Isnull.PNG)
-
-* Using `mean` and `sum` with `isnull` will calculate the percentage and number of nulls for a DataFrame. This is important when considering the distribution of missing values in a DataFrame. The percentage and number of nulls can impact how the missing values are cleaned.
+* Using `mean` with `isnull` will calculate the percentage of nulls for a DataFrame. This is important when considering the distribution of missing values in a DataFrame. The percentage of nulls can impact how the missing values are cleaned.
 
   ```python
   csv_data.isnull().mean() * 100
+  ```
+
+  ```text
+  symbol                0.000000
+  name                  0.396825
+  sector                0.595238
+  price                 0.793651
+  price_per_earnings    1.388889
+  dividend_yield        0.992063
+  earnings_per_share    1.190476
+  52_week_low           0.793651
+  52_week_high          0.793651
+  market_cap            0.793651
+  ebitda                2.380952
+  price_per_sales       0.793651
+  price_per_book        2.380952
+  sec_filings           0.793651
+  dtype: float64
+  ```
+
+* The records with null values are dropped and a new DataFrame is created.
+
+  ```python
+  csv_data = csv_data.dropna().copy()
+  ```
+
+* It's a common practice to double check for nulls, so the `isnull` function is used together with the `sum` function to verify if there are any null values.
+
+  ```python
   csv_data.isnull().sum()
   ```
 
-  ![LP_Ins_Data_Cleansing_Null_Pct_Check.PNG](Images/LP_Ins_Data_Cleansing_Null_Pct_Check.PNG)
+  ```text
+  symbol                0
+  name                  0
+  sector                0
+  price                 0
+  price_per_earnings    0
+  dividend_yield        0
+  earnings_per_share    0
+  52_week_low           0
+  52_week_high          0
+  market_cap            0
+  ebitda                0
+  price_per_sales       0
+  price_per_book        0
+  sec_filings           0
+  dtype: int64
+  ```
 
-  ![LP_Ins_Data_Cleansing_No_Of_Null.PNG](Images/LP_Ins_Data_Cleansing_No_Of_Null.PNG)
+* To set the default value for the `ebita` column to `0`, we use the `fillna` function.
 
-* Instead of dropping nulls in a Series, nulls can be filled with a default value. Common default values are "Unknown", 0, and mean().
+  ```python
+  csv_data["ebitda"] = csv_data["ebitda"].fillna(0)
+  ```
 
-  ![LP_Ins_Data_Cleansing_Fill_Na.png](Images/LP_Ins_Data_Cleansing_Fill_Na.png)
+* Finally, to remove duplicate values, the `drop_duplicates` function is used together with the `copy` function to create a new cleaned DataFramed.
 
-* The `dtypes` function can be used on a DataFrame to identify Series data types. A Series data type can also be identified by using `dtype`.
+  ```python
+  csv_data = csv_data.drop_duplicates().copy()
+  ```
 
-* Identifying data types is valuable because it allows for incorrectly inferred data types to be corrected and converted to the appropriate data types.
+Continue by showing the solution for the "Challenge" and highlight the following:
 
-* If needed, a Series can be converted to the appropriate data type using the `astype` function (e.g., converting a date field from `string` to `Date`). Some conversions might require values to cleaned before they can be converted (e.g., removing `$` from an amount field).
+* We start the challenge section by taking a quick sample of the data using the `head` function.
 
-  ![LP_Ins_Data_Cleansing_Data_Types.PNG](Images/LP_Ins_Data_Cleansing_Data_Types.PNG)
+  ```python
+  csv_data["price"].head()
+  ```
 
-If time allows, engage the students with the following review questions:
+  ```text
+  0    $222.89
+  2      56.27
+  3     108.48
+  5     108.48
+  6     185.16
+  Name: price, dtype: object
+  ```
 
-* Two types of rules determine what is considered clean and dirty data. What are they?
+* As you note, the `price` column has `$` currency symbols that need to be removed.
 
-  **Answer:** Data quality rules are determined based on technical and business rules.
+* We remove the `$` currency symbols using the `str` and the `replace` functions.
 
-* True or false: It's okay to have currency symbols and commas in amount fields.
+  ```python
+  csv_data["price"] = csv_data["price"].str.replace("$", "")
+  csv_data["price"].head(10)
+  ```
 
-  **Answer:** False. Amount fields should be floats. Floats cannot have symbols or commas, as these are strings.
+  ```text
+  0     222.89
+  2      56.27
+  3     108.48
+  5     108.48
+  6     185.16
+  7     109.63
+  10       178
+  11    179.11
+  14     152.8
+  15     62.49
+  ```
 
-* What two functions are used to identify and remove currency symbols?
+* Although we remove the `$` currency symbols, the data type of the `price` column is still object.
 
-  **Answer:** `contains()` can be used to identify currency symbols, and `replace()` can be used to remove them.
+  ```python
+  csv_data["price"].dtype
+  ```
 
-To guide students, you may want to follow up with questions such as the following:
+  ```text
+  dtype('O')
+  ```
 
-* I used `fillna(0)` to fill NaN or null values in my DataFrame, but now my first_name and last_name fields have 0s in them. What happened? What should I have done instead?
+* We end the challenge section by casting the `price` column to float.
 
-  **Answer:** `fillna(0)` fills all null/NaN values in the DataFrame, regardless of the data type of the Series where the null is. `fillna()` should have been applied against the specific Series that needed the nulls converted to 0.
+  ```python
+  csv_data["price"] = csv_data["price"].astype('float')
+  csv_data["price"].dtype
+  ```
 
-* True or false: Data quality rules do not conflict with one another.
+  ```text
+  dtype('float64')
+  ```
 
-  **Answer:** False. Technical rules might be disregarded in order to satisfy business rules.
-
-For more comprehensive data cleaning strategies, slack out the following [link](https://www.kaggle.com/chrisbow/kernels?sortBy=relevance&group=everyone&search=Cleaning+data+with+Python&page=1&pageSize=20&userId=1541110) for curious students who want to learn more about data-cleaning processes using Python. Ask if there are any questions before moving on.
+For more comprehensive data cleaning strategies, slack out the following [link](https://www.kaggle.com/search?q=cleaning+data+with+python+in%3Anotebooks+authorUserName%3Achrisbow) for curious students who want to learn more about data-cleaning processes using Python. Ask if there are any questions before moving on.
 
 ---
 
