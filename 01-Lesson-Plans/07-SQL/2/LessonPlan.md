@@ -46,9 +46,7 @@ By the end of today's class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students and review the class objectives.
-
-Then open the slideshow and cover the agenda.
+Welcome students and review the class objectives, then open the slideshow and cover the agenda.
 
 * Explain that today's lesson will provide a more in-depth look at SQL's features. Students will work with imported tables to expand their SQL skills.
 
