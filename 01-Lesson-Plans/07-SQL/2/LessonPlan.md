@@ -20,9 +20,9 @@ By the end of today's class, students will be able to:
 
 * Today's lesson will mostly use imported datasets, so make sure students are comfortable importing data from CSV files. All schemas for the tables will be provided along with the CSV files. Students who don't have this data imported correctly will not be able to follow along with the lesson.
 
-* This lesson will build on what students learned in the previous class, and each activity will combine multiple SQL elements. Students who are new to SQL may struggle a bit, but many of the concepts are similar to those they have learned previously.
+* This lesson will build on what students learned in the previous class, and each activity will combine multiple SQL elements. Students who are new to SQL may struggle a bit, but many of the concepts are similar to those they have previously learned.
 
-* SQL views will be a pleasant interlude from some of the heavy SQL lifting done prior; however, it is not crucial and so instructors should feel free to tweak the length and content as they deem appropriate.
+* SQL views will be a pleasant interlude from some of the heavy SQL lifting done prior. However, it is not crucial, and so instructors should feel free to tweak the length and content as they deem appropriate.
 
 * The TAs should be ready to help students who are confused or who have not imported the data correctly.
 
@@ -40,15 +40,15 @@ By the end of today's class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome the students and overview the class objectives.
+Welcome students and review the class objectives.
 
-Open the slides and cover the agenda.
+Then open the slideshow and cover the agenda.
 
 * Explain that today's lesson will provide a more in-depth look at SQL's features. Students will work with imported tables to expand their SQL skills.
 
