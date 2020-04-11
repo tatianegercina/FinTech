@@ -108,7 +108,7 @@ Use the `Aggregate Functions` section of the slides and review the following:
 
 * Similar to aggregates in Pandas, aggregate functions allow calculations on a set of values and return a singular value.
 
-* Some of most commonly used aggregates are `AVG`, `COUNT`, `MIN`, `MAX`, and `SUM`.
+* Some of the most commonly used aggregates are `AVG`, `COUNT`, `MIN`, `MAX`, and `SUM`.
 
 * Aggregates are often combined with `GROUP BY`, `HAVING`, and `SELECT`.
 
@@ -195,7 +195,7 @@ Ask a student to explain the query.
 
 * Movies that can be rented for three days cost an average of $2.82 to rent, movies that can be rented for four days cost an average of $2.97 to rent, and so on.
 
-* SQL can also return the rows that contain the minimum values and maximum values in a column using `MIN()` and `MAX()` respectively.
+* SQL can also return the rows that contain the minimum and maximum values in a column using `MIN()` and `MAX()` respectively.
 
   ```sql
   -- Find the rows with the minimum rental rate
