@@ -728,13 +728,39 @@ For more comprehensive data cleaning strategies, slack out the following [link](
 
 ### 9. Instructor Do: Indexing (10 min)
 
-In this part of the lesson, students will learn how to locate and select data within a DataFrame through indexing. Indexing allows us to slice and dice our data so that we can get or set values for any of the cells in our table.
+In this part of the lesson, students will learn how to locate and select data within a DataFrame through indexing.
 
-**File:** [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb)
+**Files:**
 
-Open [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb) and demo the activity, explaining the following:
+* [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb)
 
-* The `iloc[]` function returns row data based on a numerical index.
+* [people.csv](Activities/06-Ins_Indexing/Resources/people.csv)
+
+Open the unsolved version of the Jupyter notebook and live code the activity, explaining the following:
+
+* When you work with financial data, a common practice is to query your dataset to look for a particular record or to make adjustments on some values.
+
+* The Pandas DataFrame has some functions to locate and select data using indexing.
+
+* Indexing allows us to slice and dice our data so that we can get or set values for any of the cells in our table.
+
+Explain to students that for this demo, you will use a fictional customers dataset. The demo starts by loading the dataset into a Pandas DataFrame.
+
+![Loading customers data](Images/load-customer-data.png)
+
+Continue the demo and highlight the following:
+
+* After loading the customers data into the DataFrame, we fetch the summary statistics of the numeric columns with the `describe` function.
+
+![Fetching summary statistics from numerical columns](Images/customer-df-describe.png)
+
+* If you want to fetch the descriptive statistics of all the columns, including the ones that are not numerical, you should pass the parameter `include="all"` to the `describe` function.
+
+![Fetching summary statistics from all columns](Images/customer-df-describe-all.png)
+
+Explain to students that now you will show them how they can slide and dice the data. Highlight the following:
+
+* By default, the index of a DataFrame is numerical and starts in zero. The `iloc[]` function returns row data based on a numerical index.
 
   ![iloc-first-row](Images/iloc-first-row.png)
 
@@ -758,13 +784,9 @@ Open [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb) and demo
 
   ![index_overview](Images/index_overview.png)
 
-* The `copy` function is used to decouple original DataFrames from DataFrames indexed by `set_index`. This prevents changes made to the indexed DataFrame from being made to the original DataFrame, ensuring that the state of the original DataFrame is preserved. This is Pandas' way of implementing version control on DataFrames.
+* We can use the `sort_index` function to order alphabetically the data according to the new `first_name` index.
 
-  ![index_copy](Images/index_copy.png)
-
-* The alternative to using the `copy` function is to use the `inplace=True` parameter with the `set_index` function. `inplace=True` tells Pandas not to create a copy of the DataFrame when setting the index.
-
-  ![set-index-first-name](Images/set-index-first-name.png)
+  ![Sort index demo](Images/customers-df-sort-index.png)
 
 * The `loc[]` function returns a row based on a string index.
 
@@ -781,20 +803,6 @@ Open [indexing.ipynb](Activities/06-Ins_Indexing/Solved/indexing.ipynb) and demo
 * The `loc[]` function can modify specific row values.
 
   ![loc-assignment](Images/loc-assignment.png)
-
-If time remains, briefly discuss `DateTimeIndexes`. Show students the following syntax and explain why DateTimeIndexes should be used. Tell students that `DateTimeIndexes` will be revisited when we cover `MultiIndex`.
-
-* The `to_datetime` function can be used to create a `DateTimeIndex`. `DateTimeIndexes` work like regular indexes, but they allow for data to be looked up by date and date ranges as well.
-
-* Passing the `infer_datetime_format=True` parameter ensures that all dates are read the same way, regardless of their format. Example: MM-DD-YYYY vs. MM/DD/YYYY.
-
-  ```python
-  # Create DateTimeIndex
-  df.set_index(pd.to_datetime(df['date_col'], infer_datetime_format=True), inplace=True)
-  df.head()
-  ```
-
-  ![datetime-index](Images/datetime-index.png)
 
 Finally, explain that it will take some time to get used to indexing data with Pandas; but over time, it will become second nature. Practice makes perfect!
 
