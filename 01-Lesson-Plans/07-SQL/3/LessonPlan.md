@@ -787,7 +787,7 @@ Walk through the solution and highlight the following:
   agents_df = pd.read_sql(query, engine)
   ```
 
-* A DataFame called `agent_region_df` is created to fetch the count of regions per agent_id.
+* A DataFrame called `agent_region_df` is created to fetch the count of regions per agent_id.
 
   ```python
   # Write the SQL query
@@ -848,7 +848,7 @@ Answer any questions before moving on.
 
 ### 15. Instructor Do: Entity Relationship Diagrams (10 min)
 
-In this activity, students will learn how to interpret and create an Entity Relationship Diagram (ERD) -- an asset that delineates the relationship among tables in a database.
+In this activity, students will learn how to interpret and create an Entity Relationship Diagram (ERD)—an asset that delineates the relationship among tables in a database.
 
 **Files:**
 
@@ -864,11 +864,11 @@ Use the ERD slides and begin the discussion of entity relationship diagrams (ERD
 
 * An ERD defines entities, their attributes, and data types, as well as illustrates the overall design of a database.
 
-* There are three types of ERDs or data models: **conceptual**, **logical**, and **physical**. As the following image demonstrates, a conceptual data model is the simplest form, describing only entity names and relationships; a logical database model further expands upon the conceptual data model by additionally describing attributes or column names as well as primary and foreign key definitions; a physical data model expands upon the logical data model to additionally include column data types and specific naming conventions.
+* There are three types of ERDs, or data models: **conceptual**, **logical**, and **physical**. As the following image demonstrates, a conceptual data model is the simplest form, describing only entity names and relationships; a logical database model further expands upon the conceptual data model by additionally describing attributes or column names, as well as primary and foreign key definitions. A physical data model expands upon the logical data model to additionally include column data types and specific naming conventions.
 
   ![conceptual-vs-logical-vs-physical](Images/conceptual-vs-logical-vs-physical.png)
 
-* The following break-down should provide a better understanding of the differences between the three data models.
+* The following breakdown should provide a better understanding of the differences between the three data models.
 
   ```
   |----------------------|------------|---------|----------|
@@ -889,7 +889,7 @@ Further expand upon the concepts of ERDs by discussing the following example.
 
 * In a database, the table is an entity; the data contained within the table are attributes; and the data type specified could be one of many things, such as Booleans, integers, or varying characters.
 
-* In an entity relationship diagram, the relationships between entities are given a visual representation. This allows clear and concise joins between tables as well as a deeper understanding of the data contained within a database as a whole.
+* In an entity relationship diagram, the relationships between entities are given a visual representation. This allows clear and concise joins between tables, as well as a deeper understanding of the data contained within a database as a whole.
 
 * ERDs are used both to document existing databases and to aid in the creation of new databases.
 
