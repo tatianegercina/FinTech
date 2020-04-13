@@ -1,6 +1,6 @@
 # Three-Year Loans
 
-The higher-ups at Harold's firm want to know how to better target customers who are seeking three-year loans. Harold's manager has asked him to review a compilation of loan data, and then filter out the necessary data to generate insights about customers who have been granted three-year loans.
+The higher-ups at Harold's firm want to know how to target better customers who are seeking three-year loans. Harold's manager has asked him to review a compilation of loan data, and then filter out the necessary data to generate insights about customers who have been granted three-year loans.
 
 Follow the instructions to help Harold answer his manager's questions.
 
@@ -10,7 +10,7 @@ Complete the following steps.
 
 1. Import the necessary libraries and dependencies.
 
-2. Read in the `loans.csv` data.
+2. Read in the `loans.csv` data into a Pandas DataFrame.
 
 3. Show the first `10` records of the data.
 
@@ -25,7 +25,7 @@ Complete the following steps.
     * `annual_inc`
     * `purpose`
 
-6. Filter `filtered_df` by row values where `term` is equal to `36 months` in order to focus on only three-year loan records.
+6. Filter `filtered_df` by row values where `term` is equal to `36 months` to focus on only three-year loan records.
 
 7. Modify rows with `term` values equal to `36 months` to be `3 years`.
 
@@ -37,7 +37,7 @@ Complete the following steps.
 
 11. Use the `value_counts()` function on the `purpose` column of the `term_df` DataFrame to see the unique value counts for loan purposes of three-year loan customers.
 
-12. Filter `term_df` by rows with `annual_inc` greater than `80000`. Use the `mean()` function to see the average `int_rate` of three-year loan customers with annual incomes greater than $80,000.
+12. Filter `term_df` by rows with `annual_inc` higher than `80000`. Use the `mean()` function to see the average `int_rate` of three-year loan customers with annual incomes greater than $80,000.
 
 13. Filter `term_df` by rows with `annual_inc` less than `80000`. Use the `mean()` function to see the average `int_rate` of three-year loan customers with annual incomes less than $80,000.
 
@@ -47,9 +47,9 @@ Complete the following steps.
 
     * What are three-year loans generally used for?
 
-    * What is the difference between counts of three-year loan customers with annual incomes greater than 80,000, compared to those with annual incomes less than 80,000?
+    * What is the difference between counts of three-year loan customers with annual incomes greater than $80,000, compared to those with annual incomes less than $80,000?
 
-    * What is the difference between interest rates for customers with annual incomes greater than 80,000 compared to those with annual incomes less than 80,000?
+    * What is the difference between interest rates for customers with annual incomes greater than $80,000 compared to those with annual incomes less than $80,000?
 
 ## Hint
 
@@ -57,4 +57,4 @@ View the [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/) f
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

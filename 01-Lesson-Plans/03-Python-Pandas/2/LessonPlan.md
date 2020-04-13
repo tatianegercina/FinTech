@@ -816,9 +816,15 @@ Now that students have the conceptual knowledge to index and look up data, it's 
 
 Note that the data in `loans.csv` is a compilation of many different columns and loan durations. Students will need to filter the data and use functions on data subsets to answer the activity questions.
 
-**File:** [loans.ipynb](Activities/07-Stu_Indexing/Unsolved/loans.ipynb)
+**Files:**
 
-**Instructions:** [README.md](Activities/07-Stu_Indexing/README.md)
+* [loans.ipynb](Activities/07-Stu_Indexing/Unsolved/loans.ipynb)
+
+* [loans.csv](2/Activities/07-Stu_Indexing/Resources/loans.csv)
+
+**Instructions:**
+
+* [README.md](Activities/07-Stu_Indexing/README.md)
 
 ---
 
