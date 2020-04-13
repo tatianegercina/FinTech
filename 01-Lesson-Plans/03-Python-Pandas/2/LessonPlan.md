@@ -942,9 +942,15 @@ In this activity, students will use Pandas to create three different charts: pie
 
 Circulate the classroom to review student progress as they complete the activity. Guidance may be required, as this is the first time students will be exposed to pie charts and scatter plots.
 
-**File:** [market_analysis.ipynb](Activities/09-Stu_Pandas_Visualization/Unsolved/market_analysis.ipynb)
+**Files:**
 
-**Instructions:** [README.md](Activities/09-Stu_Pandas_Visualization/README.md)
+* [market_analysis.ipynb](Activities/09-Stu_Pandas_Visualization/Unsolved/market_analysis.ipynb)
+
+* [sp500_companies.csv](Activities/09-Stu_Pandas_Visualization/Resources/sp500_companies.csv)
+
+**Instructions:**
+
+* [README.md](Activities/09-Stu_Pandas_Visualization/README.md)
 
 ---
 
