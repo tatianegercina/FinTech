@@ -485,6 +485,33 @@ df = pd.read_csv('your_data.csv', infer_datetime_format=True, parse_dates=True, 
 
 <details>
 <summary>What is a pre-trained model and how do I implement one?</summary><br>
+
+Just as we can persist data using a database for longetivity and reuse, we can persist models for the same reasons.  When a model is persisted, it is refered to as pre-trained.  Pre-trained models, have been created, configured, and fitted to data then saved for later use.  The models can be loaded as any file can be loaded, using the right modules of course.
+
+This saves us the time consuming process of splitting our data for training and testing, then fitting the model.  If its been done once, and a successful combination has been found, the model can be saved and reused later.
+
+There are many ways to persist your model, however in class we use a library called `joblib`. To save the model we utilize the following code:
+
+```python
+from joblib import dump
+dump(model, 'your_model.joblib')
+```
+
+Once the model is saved, we can load it whenever we need to use it.  We load the model as follows:
+
+```python
+from joblib import load
+model = load('your_model.joblib')
+```
+
+Once the model is loaded, predictions can be made as normal:
+
+```python
+predictions = model.predict(X_test)
+```
+
+
+
 </details>
 <br>
 <br>
