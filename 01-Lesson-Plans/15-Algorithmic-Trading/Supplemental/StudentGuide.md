@@ -51,13 +51,13 @@ Fundamental analysis attempts to determine the value of a stock based on qualita
 <br>
 </details>
 
-</blockquote>
+</blockquote><br>
 </details>
 
 
 </details>
 <details>
-<summary>What is the difference between trading signals and technical indicators?</summary><br>
+<summary>What is the difference between technical indicators and trading signals?</summary><br>
 
 Technical indicators are metrics used to evaluate stock price movements, while trading signals are the point which those indicators suggest a time to buy or sell.  A good trading strategy will utlize both as one plays off the other.
 
@@ -77,7 +77,7 @@ A trading signal is the point at which a technical indicator, such as the crosso
 <br>
 </details>
 
-</blockquote>
+</blockquote><br>
 </details>
 
 </details>
@@ -112,7 +112,7 @@ In the following candlestick chart for Bitcoin, you can see the dual moving aver
 The dual moving average crossover can be created by using Pandas functionality.  In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.
 
 <img src=Images/signals_df.PNG width=150>
-<blockquote>
+<blockquote><br>
 <details>
 <summary>Step One: Signal, STMA, and LTMA Columns</summary><br>
 
@@ -198,11 +198,12 @@ entry_exit_plot.opts(xaxis=None)
 ```
 <img src=Images/signals_df_plot.PNG width=800>
 
-</details><br>
-</blockquote>
 </details>
+</blockquote><br>
 </details>
-</blockquote>
+
+</blockquote><br>
+</details>
 </details>
 
 <details>
@@ -212,9 +213,9 @@ entry_exit_plot.opts(xaxis=None)
 <details>
 <summary>What it is:</summary><br>
 
-The EWMA crossover utilizes short and long term exponentially weighted moving averages.  Because the most recent prices are more heavily weighted and because the smaller window has less time included, the short term EWMA is considered a fast moving trend line with more momentum than its long term EWMA counterpart.
+The EWMA crossover works in much the same way as the dual moving average crossover, except instead of a simple moving average, it utilizes short and long term exponentially weighted moving averages.  Because the most recent prices are more heavily weighted and because the smaller window has less time included, the short term EWMA is considered a fast moving trend line with more momentum than its long term EWMA counterpart.
 
-These two variables are subsequently referred to as a *fast close* for short term EWMA and a *slow close* for long term EWMA.
+These two variables are subsequently referred to as a *fast close* for short term EWMA and a *slow close* for long term EWMA. The trading signal from the *fast and slow close* trend lines, differs from dual moving average crossover where the signals indicate either a *long or hold*, or *short or hold* opportunity.  The EWMA crossover presents a *long* or *short* or *hold* opportunity.  __LORI FIX THIS __The logic behind this, is such that when the *fast close* is greater than the *slow close*, a long trade opportunity exists, as price action should rise in the short-term, while a short trade opportunity also exists, but for the opposite scenario in which the slow EMA is greater than the fast EMA.__
 
 Much like the dual simple moving average crossover, when these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.<br>
 
@@ -244,8 +245,9 @@ The dual moving average crossover can be created by using Pandas functionality. 
 <summary>Step One: Signal, STMA, and LTMA Columns</summary><br>
 
 </details>
-</blockquote>
 </details>
+</blockquote><br>
+
 </details>
 <details>
 <summary>How do I create and use Bollinger Bands?</summary><br>
@@ -282,8 +284,9 @@ The dual moving average crossover can be created by using Pandas functionality. 
 <summary>Step One: Signal, STMA, and LTMA Columns</summary><br>
 
 </details>
-</blockquote>
 </details>
+</blockquote><br>
+
 </details>
 <details>
 <summary>What is backtesting and how do I use it?</summary><br>
@@ -414,10 +417,10 @@ The above code generates a chart like the one below.  This allows us to visualiz
 <img src=Images/sim_visualization.PNG>
 
 </details>
-</details>
-</blockquote>
-</details>
 
+</blockquote><br>
+</details>
+</details>
 <details>
 <summary>What are evaluation metrics used for?</summary><br>
 
@@ -458,11 +461,26 @@ Persisting data is generally a best practice as it provides a method for data re
 </details>
 
 <details>
-<summary>Why do I need to use Asyncio?</summary><br>
-</details>
+<summary>Time Series Data Refresher</summary><br>
 
-<details>
-<summary>Time Series Data Refresher?</summary><br>
+Its important to convert dates into time series when working with python and pandas.  For a quick refresher on reading time series data into a pandas DataFrame, see below.  for a full refresher, head back to the [Unit 10 - Time Series FAQ.](../../10-Time-Series/Supplemental/StudentGuide.md)
+
+<blockquote>
+<details><summary>How do you convert objects to `datetime`?</summary>
+
+Converting objects to `datetime` can be tricky.  Using pandas, the conversion can be handled upon reading in of data.  The syntax to handle the conversion from `read_csv()` is:
+
+```python
+df = pd.read_csv('your_data.csv', parse_dates=True)
+```
+This converts each object to a `datetime` object.  Alternatively, you can also set the index as the date column for ease of plotting:
+```python
+df = pd.read_csv('your_data.csv', infer_datetime_format=True, parse_dates=True, index_col='Date')
+```
+
+</details>
+</blockquote>
+<br>
 </details>
 
 <details>
