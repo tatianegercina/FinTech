@@ -1104,11 +1104,17 @@ Answer any questions before moving on.
 
 ### 17. Student Do: Returns Over Date Ranges (15 min)
 
-In this activity, students will analyze the last 10 years of historical price data for Advanced Micro Devices (AMD) and plot the daily returns over the last 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each time period to determine whether a short or long-term perspective should be used in prospecting AMD as a potential investment opportunity.
+In this activity, students will analyze the last years of historical price data for Shopify and plot the daily returns over the last 1-, 3-, 5-, and 10-year periods. They will also need to find and show the differences in average daily returns for each time period to determine whether a short or long-term perspective should be used in prospecting Shopify as a potential investment opportunity.
 
-**File:** [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Unsolved/returns_over_date_ranges.ipynb)
+**File:**
 
-**Instructions:** [README.md](Activities/11-Stu_Returns/README.md)
+* [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Unsolved/returns_over_date_ranges.ipynb)
+
+* [shopify_stock_data.csv](Activities/11-Stu_Returns/Resources/shopify_stock_data.csv)
+
+**Instructions:**
+
+* [README.md](Activities/11-Stu_Returns/README.md)
 
 ---
 
