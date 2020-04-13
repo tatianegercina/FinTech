@@ -1060,7 +1060,7 @@ Begin transitioning from the conceptual ERD to a logical ERD. Using the followin
 
   ![logical-erd-column-names](Images/logical-erd-column-names.png)
 
-* The data model now contains column names but is not yet quite a full-fledged logical data model. This is because we need to continue to add in the foreign key relationships to represent the *types* of entity relationships in the diagram, as well as defining the primary keys for the tables. As of this point, the `rel <entity-name>` syntax only describes abstract relationships between tables.
+* The data model now contains column names, but is not quite yet a full-fledged logical data model. This is because we need to continue to add in the foreign key relationships to represent the *types* of entity relationships in the diagram, as well as defining the primary keys for the tables. As of this point, the `rel <entity-name>` syntax only describes abstract relationships between tables.
 
 * Primary and foreign keys can be defined in the online diagram tool by using the `PK` and `FK` syntax after the attribute names of a table.
 
@@ -1382,7 +1382,7 @@ Return to pgAdmin in the browser and create a new database called `mortgage_db`.
 
 * Open a query tool and paste in the newly downloaded SQL code to create the tables defined in the diagram. Then execute the code.
 
-* The following lines of code will give the error `there is no unique constraint matching given keys for referenced table "Banks"`. This is because the `bank_routing_number` in the `Banks` table is not a unique primary key and therefore cannot be referenced. To resolve the issue, the `bank_routing_number` in the Payments table should be converted to a `bank_id` instead; however, in order to avoid changing the underlying data for simplicity, we can just remove these lines.  
+* The following lines of code will give the error `there is no unique constraint matching given keys for referenced table "Banks"`. This is because the `bank_routing_number` in the `Banks` table is not a unique primary key, and therefore cannot be referenced. To resolve the issue, the `bank_routing_number` in the Payments table should be converted to a `bank_id` instead; however, in order to avoid changing the underlying data for simplicity, we can just remove these lines.  
 
   ```sql
   ALTER TABLE "Payments" ADD CONSTRAINT "fk_Payments_bank_routing_number" FOREIGN KEY("bank_routing_number")
@@ -1403,7 +1403,7 @@ Answer any questions before moving on.
 
 ### 20. Instructor Do: Structured Review (35 mins)
 
-**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
+**Note:** If you are teaching this lesson on a weeknight, please save this 35-minute review for the next Saturday class.
 
 Please use the entire time to review questions with the students before officially ending class.
 
@@ -1421,4 +1421,4 @@ Take your time on these questions! This is a great time to reinforce concepts an
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
