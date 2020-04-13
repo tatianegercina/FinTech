@@ -4,9 +4,9 @@
 
 ### Overview
 
-Today's lesson will focus on command line basics and setting up an Anaconda virtual environment. It will also further investigate the key factors leading to the growth of the FinTech industry.
+Today's lesson will focus on command line basics. It will also further investigate the key factors leading to the growth of the FinTech industry.
 
-Specifically, students will be introduced to basic command line and virtual environment skills, which will help them use more advanced CLI tools in the next lesson as well as future units in the course; learn more about the history of FinTech and the areas that have been disrupted through innovation; and collaborate with others to make predictions about various FinTech domains in the form of future news headlines.
+Specifically, students will be introduced to basic command line, which will help them use more advanced CLI tools in the next lesson as well as future units in the course; learn more about the history of FinTech and the areas that have been disrupted through innovation; and collaborate with others to make predictions about various FinTech domains in the form of future news headlines.
 
 ### Class Objectives
 
@@ -51,7 +51,7 @@ Welcome students to the second day of class and the next lesson in Unit 1.
 
 **File:** [Lesson 1.2 Slideshow](https://docs.google.com/presentation/d/1_7OIXTJY_Yli-E9KO7n4ZlGcylu9IMEsvJuFkhYivpc/edit?usp=sharing)
 
-Take some time to introduce the topics that will be covered in this lesson: command line and Anaconda virtual environment, and a brief history of FinTech. This lesson will give students both the skills and knowledge required to gain a deeper understanding of the changing landscape of the FinTech ecosystem.
+Take some time to introduce the topics that will be covered in this lesson: command line and a brief history of FinTech. This lesson will give students both the skills and knowledge required to gain a deeper understanding of the changing landscape of the FinTech ecosystem.
 
 Use the slideshow to review the objectives for today's class.
 
@@ -59,7 +59,7 @@ Cover the following points:
 
 * While later units and activities will utilize more advanced tools and technical concepts (APIs, algorithmic trading, etc.), today’s lesson will start small. We’ll begin by practicing the fundamentals of technical programming so that students can begin their FinTech journey.
 
-* Students will begin working with fundamental developer tools such as the command line, a text-based utility for performing file system operations and executing programs. They will also learn to create an Anaconda virtual environment, a managed file space that exists as its own isolated environment with corresponding dependencies, residing on a physical computer. By the end of the day, students will join the ranks of millions of developers who also use the command line for file system operations and third-party CLIs (e.g., Conda).
+* Students will begin working with fundamental developer tools such as the command line, a text-based utility for performing file system operations and executing programs. By the end of the day, students will join the ranks of millions of developers who also use the command line for file system operations and third-party CLIs (e.g., Conda).
 
 * Today's lesson will briefly provide insight into the factors leading up to the current state of FinTech, as well as the financial sectors and FinTech domains that technology has helped to disrupt. It will also include a group activity in which students will research the factors for change of a particular FinTech domain.
 
