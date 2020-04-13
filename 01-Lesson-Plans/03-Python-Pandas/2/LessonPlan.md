@@ -1018,13 +1018,29 @@ Ask if there are any questions before moving on.
 
 The following demo introduces students to calculating daily returns with Pandas. It will also cover return on investment (ROI), the `pct_change` function, and cumulative returns. This section will build upon skills students have already learned: reading in CSV data, manipulating and cleaning DataFrames, and plotting data.
 
-**File:** [returns.ipynb](Activities/10-Ins_Returns/Solved/returns.ipynb)
+**Files:**
 
-Open [returns.ipynb](Activities/10-Ins_Returns/Solved/returns.ipynb) to begin the demo. Incorporate the following points into your demonstration:
+* [returns.ipynb](Activities/10-Ins_Returns/Unsolved/returns.ipynb)
+
+* [TSX_Data.csv](Activities/10-Ins_Returns/Resources/TSX_Data.csv)
+
+Open the unsolved version to begin the demo. Incorporate the following points into your demonstration as you live code the solution:
+
+Open the lesson slides and move to the "Results" section, introduce the concept or ROI and highlight the following:
 
 * A **return on investment (ROI)** is a percentage calculation that signifies either a profit or loss relative to the initial cost of an investment.
 
 * ROI calculations can be used to standardize and compare the investment performances of varying asset classes such as equities, bonds, real estate, etc.
+
+Explain to students that ROI can be easily calculated in pure Python, show them the code in the slide and switch to the unsolved version of the Jupyter notebook to begin the demo.
+
+Incorporate the following points into your demonstration as you live code the solution:
+
+* Let's imagine that you invested $100 dollars last week in a single stock.
+
+* Suppose that you check the current price of the stock Today and its current price is $110 dolars.
+
+* How can you calculate the ROI using Python?
 
   ```python
   # ROI = (Current Value of Investment - Cost of Investment) / Cost of Investment
@@ -1038,13 +1054,19 @@ Open [returns.ipynb](Activities/10-Ins_Returns/Solved/returns.ipynb) to begin th
         f"is {roi} or {roi_pct}%")
   ```
 
-  ```
+  ```text
   ROI for an initial investment of $100 now priced at $110 is 0.1 or 10.0%
   ```
 
+* After calculating the ROI, you can see the it's `0.1` or `10%`.
+
+Continue the demo and explain to students that you will cover some concepts about returns using sample data from the [S&P/TSX Composite Index](https://en.wikipedia.org/wiki/S%26P/TSX_Composite_Index).
+
+Conduct a dry-walktrough on the code that loads the S&P TSX data and prepares the DataFrame to start the analysis. After plotting the daily close price, continue the demo and highlight the following:
+
 * **Daily returns** are a series of returns calculated over the course of several days, with each daily return representing the relative increase or decrease in investment between days.
 
-* The `shift()` function creates an offset of a DataFrame index by a specified amount. In this case, the index of the `sp500_csv` is offset by 1 to emulate the daily return formula.
+* The `shift()` function creates an offset of a DataFrame index by a specified amount. In this case, the index of the `tsx_csv` is offset by `1` to emulate the daily return formula.
 
   ![shift-function](Images/shift-function.png)
 
@@ -1070,11 +1092,13 @@ Open [returns.ipynb](Activities/10-Ins_Returns/Solved/returns.ipynb) to begin th
 
   ![cumprod-function](Images/cumprod-function.png)
 
-* Plotting cumulative returns makes it easier to visualize the profitability of a single asset and, in particular, the profitabilities of several asset classes over time. In this case, the plot shows that the S&P 500 grew more than 50% from 2014 to 2019.
+* Plotting cumulative returns makes it easier to visualize the profitability of a single asset and, in particular, the profitabilities of several asset classes over time. In this case, the plot shows that the S&P TSX lost its profitability in 2016, but started a recovery tendency since 2017.
 
   ![Plot of Cumulative Returns](Images/cumulative-return-plot.png)
 
-Now that students know how to calculate and plot returns, they will practice doing these skills by analyzing and plotting historical AMD data for Harold.
+Now that students know how to calculate and plot returns, they will practice doing these skills by analyzing and plotting historical Shopify data for Harold.
+
+Answer any questions before moving on.
 
 ---
 
