@@ -38,7 +38,7 @@ By the end of today's class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -52,7 +52,7 @@ Open the Class Objectives slide and review the objectives for today's class.
 
 In this activity, students will be introduced to the three normal forms of data normalization.
 
-**Note:** The data normalization procedures represented in the following slideshow are provided in the .sql files below. Use them as necessary if students have questions pertaining to the data itself or just want to have the code on hand.
+**Note:** The data normalization procedures represented in the following slides are provided in the .sql files below. Use them as necessary if students have questions pertaining to the data itself or just want to have the code on hand.
 
 **Files:**
 
@@ -64,7 +64,7 @@ In this activity, students will be introduced to the three normal forms of data 
 
 * [query.sql](Activities/01-Ins_Data_Normalization/Solved/query.sql)
 
-Review the slides on data normalization, explaining the following:
+Review the slides on data normalization, and explain the following:
 
 * Data normalization is the process of restructuring data to a set of defined "normal forms."
 
