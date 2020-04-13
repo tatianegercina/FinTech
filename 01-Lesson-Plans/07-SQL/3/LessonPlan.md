@@ -184,7 +184,7 @@ Next, using the code from the schema.sql and seed.sql files, create and populate
 
 Explain the bonus section of the activity:
 
-* Data normalization separated our initial unorganized data into several tables; however, if we needed to retrieve information represented from the initial dataset, we can perform JOINs on the normalized tables.
+* Data normalization separated our initial unorganized data into several tables; however, if we need to retrieve information represented from the initial dataset, we can perform JOINs on the normalized tables.
 
   ```sql
   SELECT *
