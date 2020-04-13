@@ -1092,7 +1092,7 @@ Conduct a dry-walktrough on the code that loads the S&P TSX data and prepares th
 
   ![cumprod-function](Images/cumprod-function.png)
 
-* Plotting cumulative returns makes it easier to visualize the profitability of a single asset and, in particular, the profitabilities of several asset classes over time. In this case, the plot shows that the S&P TSX lost its profitability in 2016, but started a recovery tendency since 2017.
+* Plotting cumulative returns makes it easier to visualize the profitability of a single asset and, in particular, the profitabilities of several asset classes over time. In this case, the plot shows that the S&P TSX lost a good deal of its value in 2015, but started a recovery tendency since 2016.
 
   ![Plot of Cumulative Returns](Images/cumulative-return-plot.png)
 
