@@ -256,7 +256,9 @@ The dual moving average crossover can be created by using Pandas functionality. 
 <details>
 <summary>What it is:</summary><br>
 
-The dual moving average crossover utilizes short and long term moving averages.  When these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.<br>
+Bollinger Bands are a set of lines representing a positive and negative standard deviation away from the simple moving average (SMA) of the asset's closing price.<br>
+
+These lines create _bands_ that move across the plot, creating an area of empty space. The area within this space represents where the closing price _should_ tend to be.  The entry/exit signals are generated when the closing price trend line moves out of that area and dips either below or above the bottom and top barriers of the bands.
 
 Check out the [moving average refresher](Moving_Average_Refresher.md) if you need a quick refresh on how moving averages work!
 
@@ -265,13 +267,13 @@ Check out the [moving average refresher](Moving_Average_Refresher.md) if you nee
 <details>
 <summary>How to use it:</summary><br>
 
-If the short-term moving average line goes above the long-term moving average line, the indicator suggests that the price will be rising higher than the historical average in the short term.
+When the closing price trend line moves below the lower band, a long (buy) opportunity exists as the signal suggests that the price action will tend to move upwards and more in line with where the price _should be_ (within the standard deviation area of the bands).
 
-If the short-term moving average line dips below the long-term moving average line, the indicator suggests that the price will be dropping lower than the historical average in the short term.
+When the closing price trend line moves above the upper band, a short (sell) opportunity exists as the signal suggests that the price action will tend to move lower and more in line with where the price _should be_ (within the standard deviation area of the bands).
 
-In the following candlestick chart for Bitcoin, you can see the dual moving average lines and the crossover points, indicating entry (buy signal) and exit (sell signal) points:
+<img src=Images/Boll-Bands.png width=700><br>
 
-<img src=Images/dual_ma_cross.png width=700><br>
+
 </details>
 <details>
 <summary>How to create it:</summary><br>
@@ -461,29 +463,6 @@ Persisting data is generally a best practice as it provides a method for data re
 </details>
 
 <details>
-<summary>Time Series Data Refresher</summary><br>
-
-Its important to convert dates into time series when working with python and pandas.  For a quick refresher on reading time series data into a pandas DataFrame, see below.  for a full refresher, head back to the [Unit 10 - Time Series FAQ.](../../10-Time-Series/Supplemental/StudentGuide.md)
-
-<blockquote>
-<details><summary>How do you convert objects to `datetime`?</summary>
-
-Converting objects to `datetime` can be tricky.  Using pandas, the conversion can be handled upon reading in of data.  The syntax to handle the conversion from `read_csv()` is:
-
-```python
-df = pd.read_csv('your_data.csv', parse_dates=True)
-```
-This converts each object to a `datetime` object.  Alternatively, you can also set the index as the date column for ease of plotting:
-```python
-df = pd.read_csv('your_data.csv', infer_datetime_format=True, parse_dates=True, index_col='Date')
-```
-
-</details>
-</blockquote>
-<br>
-</details>
-
-<details>
 <summary>What is a pre-trained model and how do I implement one?</summary><br>
 
 Just as we can persist data using a database for longetivity and reuse, we can persist models for the same reasons.  When a model is persisted, it is refered to as pre-trained.  Pre-trained models, have been created, configured, and fitted to data then saved for later use.  The models can be loaded as any file can be loaded, using the right modules of course.
@@ -509,11 +488,32 @@ Once the model is loaded, predictions can be made as normal:
 ```python
 predictions = model.predict(X_test)
 ```
+</details>
 
 
+
+<details>
+<summary>Help, I need a time series refTime Series Data Refresher</summary><br>
+
+Its important to convert dates into time series when working with python and pandas.  For a quick refresher on reading time series data into a pandas DataFrame, see below.  for a full refresher, head back to the [Unit 10 - Time Series FAQ.](../../10-Time-Series/Supplemental/StudentGuide.md)
+
+<blockquote>
+<details><summary>How do you convert objects to `datetime`?</summary>
+
+Converting objects to `datetime` can be tricky.  Using pandas, the conversion can be handled upon reading in of data.  The syntax to handle the conversion from `read_csv()` is:
+
+```python
+df = pd.read_csv('your_data.csv', parse_dates=True)
+```
+This converts each object to a `datetime` object.  Alternatively, you can also set the index as the date column for ease of plotting:
+```python
+df = pd.read_csv('your_data.csv', infer_datetime_format=True, parse_dates=True, index_col='Date')
+```
 
 </details>
+</blockquote>
 <br>
+</details>
 <br>
 
 
