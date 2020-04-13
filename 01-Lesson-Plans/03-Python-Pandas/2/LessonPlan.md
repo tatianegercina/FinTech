@@ -1122,7 +1122,11 @@ In this activity, students will analyze the last years of historical price data 
 
 In this section, review the solution to the previous activity with students.
 
-**File:** [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Solved/returns_over_date_ranges.ipynb)
+**Files:**
+
+* [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Solved/returns_over_date_ranges.ipynb)
+
+* [shopify_stock_data.csv](Activities/11-Stu_Returns/Resources/shopify_stock_data.csv)
 
 Tell students to turn to the person sitting next to them and spend the next three minutes doing the following:
 
@@ -1134,7 +1138,7 @@ Tell students to turn to the person sitting next to them and spend the next thre
 
   * Why not just calculate daily returns over time?
 
-With the remaining time, open the solution file, [returns_over_date_ranges.ipynb](Activities/11-Stu_Returns/Solved/returns_over_date_ranges.ipynb), and discuss the following points:
+With the remaining time, open the solution file and discuss the following points:
 
 * Set the `%matplotlib inline` feature to display plots in Jupyter Notebook.
 
@@ -1142,6 +1146,7 @@ With the remaining time, open the solution file, [returns_over_date_ranges.ipynb
   # Import libraries and dependencies
   import pandas as pd
   from pathlib import Path
+
   %matplotlib inline
   ```
 
@@ -1153,21 +1158,21 @@ With the remaining time, open the solution file, [returns_over_date_ranges.ipynb
 
   ![datetime-index](Images/datetime-index.png)
 
-* Notice the hard-coding required to create the slice notations for each time period. It would be more convenient to be able to choose a date and use a function to go 365 days prior to that date to create 1-year, 3-year, 5-year, and 10-year time chunks; `datetime` objects will help us do this in the future.
+* Notice the hard-coding required to create the slice notations for each time period. It would be more convenient to be able to choose a date and use a function to go 365 days prior to that date to create 1-year, 2-year, 3-year, and 4-year time chunks; `datetime` objects will help us do this in the future.
 
   ```python
-  # Slice DataFrame into 1 year time frame
-  daily_return_1_year = daily_return.loc['2018-04-30':'2019-04-29']
+  # Slice DataFrame into 1 year timeframe
+  daily_return_1_year = daily_return.loc["2018-12-30":"2019-12-31"]
   daily_return_1_year
   ```
 
-* The data shows that trading AMD in the short term is potentially more profitable, as the average daily return of a 1-year time frame is the highest at 0.004538, or 4.53%.
+* The data shows that trading Shopify in the short term is potentially more profitable, as the average daily return of a 1-year time frame is the highest at `0.004532`, or `4.53%`.
 
 Get students to briefly reflect about what they've just learned by asking the following question:
 
 For what other accounts can daily returns be used to determine return on investment?
 
-**Answer:** Savings accounts and 401(k) accounts generate daily ROI.
+**Answer:** Savings accounts and Registered Retirement Savings Plan (RRSP) accounts generate daily ROI.
 
 Ask if there are any questions before moving on.
 
