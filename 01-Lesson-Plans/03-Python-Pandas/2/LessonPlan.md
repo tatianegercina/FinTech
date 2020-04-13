@@ -820,7 +820,7 @@ Note that the data in `loans.csv` is a compilation of many different columns and
 
 * [loans.ipynb](Activities/07-Stu_Indexing/Unsolved/loans.ipynb)
 
-* [loans.csv](2/Activities/07-Stu_Indexing/Resources/loans.csv)
+* [loans.csv](Activities/07-Stu_Indexing/Resources/loans.csv)
 
 **Instructions:**
 
@@ -836,7 +836,7 @@ Use this part of the lesson to review the previous activity with students.
 
 * [loans.ipynb](Activities/07-Stu_Indexing/Solved/loans.ipynb)
 
-* [loans.csv](2/Activities/07-Stu_Indexing/Resources/loans.csv)
+* [loans.csv](Activities/07-Stu_Indexing/Resources/loans.csv)
 
 Open the solution file and explain the following while doing a dry walk-through:
 
@@ -888,11 +888,25 @@ Ask if there are any questions before moving on.
 
 This part of the lesson is focused on creating charts using Pandas visualization functions. You will demo how to plot data with and without indexes, as well as use line and bar charts.
 
-**File:** [visualization.ipynb](Activities/08-Ins_Pandas_Visualization/Solved/visualization.ipynb)
+**Files:**
 
-Open [visualization.ipynb](Activities/08-Ins_Pandas_Visualization/Solved/visualization.ipynb) to begin the demo. Explain the following:
+* [visualization.ipynb](Activities/08-Ins_Pandas_Visualization/Solved/visualization.ipynb)
+
+* [annual_gold.csv](Activities/08-Ins_Pandas_Visualization/Resources/annual_gold.csv)
+
+Open the unsolved version, live code the demo and explain the following:
 
 * Pandas makes visualization easy by including a DataFrame `plot()` function. The `plot()` function uses data from a DataFrame to set x- and y-axis data points.
+
+* The `plot()` function uses the `matplotlib`, a Python data visualization library, to create the plots.
+
+* To display the plots in the notebook's canvas, you need to set a [Jupyter notebook's magic command](https://ipython.readthedocs.io/en/stable/interactive/magics.html) that whose name is `matplotlib`. A magic command allows to add interactive elements to a Jupyter notebook, like plots.
+
+* To introduce a magic command, you should start with the percentage symbol `%` followed by the command name and optionally a parameter. In this demo, we pass the `inline` parameter to the `matplotlib` magic command to allow the plots to be displayed in the notebook's canvas.
+
+  ```python
+  %matplotlib inline
+  ```
 
 * Plotting data without defining the index will only display the default index of each row in the DataFrame. In order to set the dates as the x-axis label, the `Date` column needs to be set as the index.
 
@@ -918,7 +932,7 @@ Open [visualization.ipynb](Activities/08-Ins_Pandas_Visualization/Solved/visuali
 
   ![bar-chart-large](Images/bar-chart-large.png)
 
-Ask if there are any questions before moving on.
+Slack out to students the [Pandas Visualization help document](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html) as further reference to the different kind of plots Pandas includes. Ask if there are any questions before moving on.
 
 ---
 
