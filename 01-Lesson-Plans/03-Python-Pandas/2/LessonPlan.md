@@ -958,9 +958,13 @@ Circulate the classroom to review student progress as they complete the activity
 
 In this section, review the previous activity with students.
 
-**File:** [market_analysis.ipynb](Activities/09-Stu_Pandas_Visualization/Solved/market_analysis.ipynb)
+**Files:**
 
-Open the solution file, [market_analysis.ipynb](Activities/09-Stu_Pandas_Visualization/Solved/market_analysis.ipynb), and explain the following:
+* [market_analysis.ipynb](Activities/09-Stu_Pandas_Visualization/Solved/market_analysis.ipynb)
+
+* [sp500_companies.csv](Activities/09-Stu_Pandas_Visualization/Resources/sp500_companies.csv)
+
+Open the solution file and explain the following:
 
 * Setting the `%matplotlib inline` feature is necessary for displaying the plots in the Jupyter Notebook file.
 
@@ -979,7 +983,7 @@ Open the solution file, [market_analysis.ipynb](Activities/09-Stu_Pandas_Visuali
 
   ```python
   # Plot a pie chart from the distribution of company sectors
-  sector_count.plot(kind='pie')
+  sector_count.plot(kind="pie")
   ```
 
 * A pie chart is best suited for representing the distribution of an entire category, which, in this case, is the distribution of company sectors in the S&P 500. The plot shows that Consumer Discretionary companies hold the greatest weight or proportion among the S&P 500 companies.
@@ -988,8 +992,8 @@ Open the solution file, [market_analysis.ipynb](Activities/09-Stu_Pandas_Visuali
 
 * To create certain plots, it may be easier to create a subset of the original DataFrame. In this example, the `Symbol` and `Market Cap` columns can be selected as a subset of the original data.
 
-  ```
-  market_cap = sp500_companies_csv.loc[:, ['Symbol', 'Market Cap']]
+  ```python
+  market_cap = sp500_companies_csv.loc[:, ["Symbol", "Market Cap"]]
   ```
 
 * When plotting a DataFrame, set the index to a specific column to ensure the desired chart labels are displayed (ex. the x-axis labels on a line or bar chart).

@@ -28,7 +28,7 @@ Use the starter Jupyter notebook to complete the following steps.
 
 7. Create a subset DataFrame by selecting the `Price` and `Earnings/Share` columns.
 
-8. Plot a scatter plot of the price vs. earnings relationship.
+8. Plot a scatter plot of the price vs. earnings/share relationship.
 
 ## Hints
 
