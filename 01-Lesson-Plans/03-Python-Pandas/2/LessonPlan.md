@@ -832,9 +832,13 @@ Note that the data in `loans.csv` is a compilation of many different columns and
 
 Use this part of the lesson to review the previous activity with students.
 
-**File:** [loans.ipynb](Activities/07-Stu_Indexing/Solved/loans.ipynb)
+**Files:**
 
-Open the solution file, [loans.ipynb](Activities/07-Stu_Indexing/Solved/loans.ipynb), and explain the following while doing a dry walk-through:
+* [loans.ipynb](Activities/07-Stu_Indexing/Solved/loans.ipynb)
+
+* [loans.csv](2/Activities/07-Stu_Indexing/Resources/loans.csv)
+
+Open the solution file and explain the following while doing a dry walk-through:
 
 * Displaying an index of the first 10 rows is similar to what the `head()` function does; however, utilizing `iloc[]` gives you more control over the index ranges.
 
@@ -844,17 +848,33 @@ Open the solution file, [loans.ipynb](Activities/07-Stu_Indexing/Solved/loans.ip
 
   ![Specific Columns](Images/specific-columns.png)
 
+* We fetch the summary statistics of all the columns setting the paramater `include="all"` in the describe function.
+
+  ```python
+  loans_csv.describe(include="all")
+  ```
+
+* To create a new DataFrame based on a few of the columns, we use slicing with `iloc`.
+
+  ![DataFrame subset](Images/df-subset.png)
+
 * The `loc[]` function combines conditionals with column-value reassignment to modify specific values within a DataFrame.
 
-  ![row-modification-with-warning](Images/row-modification-with-warning.png)
-
-* Sometimes this may cause a `SettingWithCopyWarning`, where Pandas tries to set values on a copy of a slice of a DataFrame. Therefore, use the `copy()` function to establish a concrete object––rather than a pointer to an object––to fix the error.
-
   ![row-modification-without-warning](Images/row-modification-without-warning.png)
+
+* To get the summary statistics of the 3 year term loans, we use the `describe` function by setting the paramater `include="all"`.
+
+  ```python
+  term_df.describe(include="all")
+  ```
 
 * The `value_counts()` function counts the frequency of unique values of a specific column or Series object.
 
   ![Unique Values](Images/unique-values.png)
+
+* To get the summary statistics for 3 year loans of customers with annual income greater than $80,000 or less than $80,000 we filter the DataFrame using `loc` and conditionals.
+
+  ![Filtering Loans](Images/filtering-loans.png)
 
 Ask if there are any questions before moving on.
 
