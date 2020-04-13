@@ -195,7 +195,7 @@ Explain the bonus section of the activity:
 
 ### 5. Instructor Do: Intro to Foreign Keys (15 min)
 
-In this activity, students will be introduced to the concept of foreign keys -- columns designated as matching links or relations to another table.
+In this activity, students will be introduced to the concept of foreign keys—columns designated as matching links or relations to another table.
 
 **Files:**
 
@@ -472,7 +472,7 @@ Use the `Data Relationships` slides to explain that we will now cover one-to-one
 
 Begin by discussing one-to-one relationships. This example will use members of the Simpson family to illustrate the concept.
 
-* In a one-to-one relationship, each name is associated with one and only one Social Security number. In other words, each item in a column is linked to only one item from another column.
+* In a one-to-one relationship, each name is associated with one—and only one—Social Security number. In other words, each item in a column is linked to only one item from another column.
 
   ![Images/one-to-one.png](Images/one-to-one.png)
 
