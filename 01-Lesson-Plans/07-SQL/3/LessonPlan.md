@@ -480,7 +480,7 @@ Next, discuss one-to-many relationships. We'll continue with our Simpsons exampl
 
   ![Images/one-to-many1.png](Images/one-to-many1.png)
 
-* This example has two tables. The first table lists only addresses. The second table lists each person's social security number and address id.
+* This example has two tables. The first table lists only addresses. The second table lists each person's Social Security number and address id.
 
 * As before, one Social Security number is unique to one individual.
 
@@ -490,11 +490,11 @@ Discuss one-to-many relationships.
 
 * In a one-to-many relationship, the data from one table can be repeated for items in another table.
 
-Ask students to think of another example of real-life one-to-many relationships.
+Ask students to think of other examples of real life, one-to-many relationships.
 
 * One possible example is a purchase order with an internet company. Each order has a unique identifying number.
 
-* A customer might be associated with multiple orders, but each order is associated with one and only one customer.
+* A customer might be associated with multiple orders, but each order is associated with one, and only one, customer.
 
 Discuss many-to-many relationships.
 
@@ -591,7 +591,7 @@ In this activity, students will create table schemata for agents and regions, an
 
 * [query.sql](Activities/06-Stu_Data_Relationships/Solved/query.sql)
 
-Explain that this activity required creating separate tables for agents and regions as well as creating a junction table to reflect the many-to-many relationship between the two tables.
+Explain that this activity requires creating separate tables for agents and regions, as well as creating a junction table to reflect the many-to-many relationship between the two tables.
 
 Use the schema.sql and seed.sql files to walk through the creation and population of the `agents` and `regions` tables. Explain the following:
 
@@ -695,7 +695,7 @@ Make sure all students have installed SQLAlchemy. Then open the unsolved Jupyter
 
   ![SQLAlchemy URL structure](Images/sqlalchemy_url.png)
 
-* To retrieve data from the database, we first need to define a SQL query that fetches the data we want.. In this example, all the rows from the `owners` table are retrieved.
+* To retrieve data from the database, we first need to define a SQL query that fetches the data we want. In this example, all the rows from the `owners` table are retrieved.
 
   ```python
   query = "SELECT * FROM owners;"
