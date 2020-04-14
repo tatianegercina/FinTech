@@ -95,3 +95,7 @@ Finally, now that the connection to the PostgreSQL database has been established
 Lastly, in order to check if the data was properly inserted, the in-built Pandas `read_sql_query` DataFrame function can be used to query a database and read the results as a Pandas DataFrame.
 
 ![sqlalchemy-pandas-read](Images/sqlalchemy-pandas-read.png)
+
+---
+
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
