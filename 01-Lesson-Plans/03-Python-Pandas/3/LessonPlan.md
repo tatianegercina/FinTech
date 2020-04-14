@@ -120,6 +120,8 @@ In this activity, students will analyze data for a single ticker to calculate da
 
 * [out_of_sorts.ipynb](Activities/02-Stu_Sorting/Unsolved/out_of_sorts.ipynb)
 
+* [bb_stock_data.csv](Activities/02-Stu_Sorting/Resources/bb_stock_data.csv)
+
 **Instructions:**
 
 * [README.md](Activities/02-Stu_Sorting/README.md)
@@ -149,7 +151,11 @@ Review the sorting activity by having a student participate in a live-coding exe
 
 Skip to the dry walk-through of the activity solution if you do not have a student who can live code this activity.
 
-**File:** [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Solved/out_of_sorts.ipynb)
+**Files:**
+
+* [out_of_sorts.ipynb](Activities/02-Stu_Sorting/Solved/out_of_sorts.ipynb)
+
+* [bb_stock_data.csv](Activities/02-Stu_Sorting/Resources/bb_stock_data.csv)
 
 **Student Live Codes the Solution:**
 
@@ -163,7 +169,7 @@ Ask the student to live code a solution to the given scenario. If the student lo
 
     **Answer:** Yes. The `ascending` parameter can be used to sort columns by ascending values. Default value is `True`. `False` will sort in descending order. The `ascending` parameter accepts a list of Boolean responses when data is sorted by more than one column.
 
-**Scenario:**
+**Scenario for Student Live Coding:**
 
 There's a DataFrame named `df` that contains Olympic medal data (gold, silver, and bronze). The DataFrame has four columns:
 
@@ -178,25 +184,25 @@ Sort the data alphabetically by country. Then, present the data so that the meda
 
 Do this dry walk-through in place of the live-coding exercise if you do not have a student volunteer.
 
-Open [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Solved/out_of_sorts.ipynb) and explain the following:
+Open the solution and explain the following:
 
-* The `sort_values` function can be used to sort a DataFrame by a specific column.
+* Once the data is loaded into the DataFrame and cleaned, the daily returns of the Blackberry stock in 2019 is calculated using the `pct_change` function.
 
-  ```python
-  # Sort data by `Close` in ascending order (default)
-  tsla_sorted = tsla_df.sort_values("Close")
-  tsla_sorted.head()
-  ```
+  ![BB daily returns](Images/bb_daily_returns.png)
 
 * The `sort_values` function has an attribute called `ascending` that can be configured as either `True` or `False`. Setting ascending to `True` sorts data in ascending order. `False` sorts data in descending order.
 
-  ```python
-  # Sort data by `Close` in descending order
-  tsla_sorted = tsla_df.sort_values("Close", ascending=False)
-  tsla_sorted.head()
-  ```
+* In this activity, we set `ascending=False` and sort the DataFrame by the `Close` column to get the records with the top daily returns first.
 
   ![stu_sort_descending.png](Images/stu_sort_descending.png)
+
+* Next, we fetch the top five daily returns and create a new DataFrame.
+
+  ![BB top five daily returns](Images/bb_top_five_daily_returns.png)
+
+* Finally, we plot the data from the top five daily returns.
+
+  ![Plotting BB top five daily returns](Images/bb_top_five_daily_returns_plot.png)
 
 Ask if there are any questions before moving on.
 
