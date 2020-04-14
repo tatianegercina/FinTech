@@ -308,9 +308,13 @@ In this activity, students will work with historical cryptocurrency data. They w
 
 In this section, review the Group Dynamics activity by completing a dry walk-through of the solution. End by asking a series of review questions to test students' understanding.
 
-**File:** [group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/group_dynamics.ipynb)
+**Files:**
 
-Open the solution file, [group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/group_dynamics.ipynb), and complete a dry walk-through of the student activity solution, covering the following points:
+* [group_dynamics.ipynb](Activities/04-Stu_Groupby/Solved/group_dynamics.ipynb)
+
+* [crypto_data.csv](Activities/04-Stu_Groupby/Resources/crypto_data.csv)
+
+Open the solution file and complete a dry walk-through of the student activity solution, covering the following points:
 
 * The `groupby` function can be used to group a DataFrame by a column. This allows data to be aggregated and summarized in groups rather than all at once. DataFrames can be grouped by a single column or multiple columns.
 
@@ -318,23 +322,11 @@ Open the solution file, [group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/
 
   * Plotting a `DataFrameGroupByObject` will create a chart with multiple lines/bars. Each line/bar represents a group.
 
-  * To ensure all groups are plotted on the same chart, the data (the column with the data points) must be specified (i.e., `data_priceUsd`). Otherwise, multiple charts will be created for each group.
-
-  ```python
-  # Determine average price across two years
-  crypto_data_avg = crypto_data.groupby('cryptocurrency')['data_priceUsd'].mean()
-  crypto_data_avg
-  ```
+  * To ensure all groups are plotted on the same chart, the data (the column with the data points) must be specified (i.e., `data_price`). Otherwise, multiple charts will be created for each group.
 
   ![plot_group.png](Images/plot_group.png)
 
 * Grouping data is valuable when aggregations need to be performed, especially across time periods. Using `groupby` with the `avg` function calculates the average price for each crypto over the two-year time period.
-
-  ```python
-  # Determine average price across two years
-  crypto_data_avg = crypto_data.groupby('cryptocurrency')['data_priceUsd'].mean()
-  crypto_data_avg
-  ```
 
   ![group_average.png](Images/group_average.png)
 
@@ -342,11 +334,11 @@ Open the solution file, [group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/
 
   ```python
   # Determine max price across two years
-  crypto_data_max = crypto_data.groupby('cryptocurrency')['data_priceUsd'].max()
+  crypto_data_max = crypto_data.groupby("cryptocurrency")["data_price"].max()
   crypto_data_max
   ```
 
-  ```
+  ```text
   cryptocurrency
   bitcoin         19339.922660
   bitcoin-cash     3476.844119
@@ -360,11 +352,11 @@ Open the solution file, [group_dynamics.ipynb](Activities/06-Stu_Groupby/Solved/
 
   ```python
   # Determine min price across two years
-  crypto_data_min = crypto_data.groupby('cryptocurrency')['data_priceUsd'].min()
+  crypto_data_min = crypto_data.groupby("cryptocurrency")["data_price"].min()
   crypto_data_min
   ```
 
-  ```
+  ```text
   cryptocurrency
   bitcoin         1714.964198
   bitcoin-cash      78.977344
@@ -393,6 +385,8 @@ If time remains, end the review by calling on students to answer the following r
   * Calculating final grades for each student per class.
 
   * Calculating the number of horror movies released every decade between 1970 and 1990.
+
+Answer any questions before moving on.
 
 ---
 
