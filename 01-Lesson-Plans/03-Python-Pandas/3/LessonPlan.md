@@ -112,7 +112,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 3. Student Do: Out of Sorts (15 min)
+### 2. Student Do: Out of Sorts (10 min)
 
 In this activity, students will extract data for a single ticker from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function and calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
 
@@ -139,7 +139,7 @@ Sort the data alphabetically by country. Then, present the data so that the meda
 
 ---
 
-### 4. Instructor Do: Review Out of Sorts (5 min)
+### 3. Instructor Do: Review Out of Sorts (5 min)
 
 Review the sorting activity by having a student participate in a live-coding exercise in front of the class. This exercise should be completed only if the student feels comfortable and previously agreed to participate.
 
@@ -198,7 +198,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 5. Instructor Do: Grouping (10 min)
+### 4. Instructor Do: Grouping (10 min)
 
 This section focuses on grouping and aggregating data. Grouping data is particularly valuable when dealing with data for multiple stocks. You will give an overview of grouping and then perform a live demo of how to use the `groupby` function in Pandas. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
@@ -300,7 +300,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 6. Student Do: Group Dynamics (15 min)
+### 5. Student Do: Group Dynamics (15 min)
 
 In this activity, students will work with historical cryptocurrency data. They will load in cryptocurrency data, group data by each crypto, perform aggregations to analyze price trends, and then plot the results. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
@@ -310,7 +310,7 @@ In this activity, students will work with historical cryptocurrency data. They w
 
 ---
 
-### 7. Instructor Do: Review Group Dynamics (10 min)
+### 6. Instructor Do: Review Group Dynamics (10 min)
 
 In this section, review the Group Dynamics activity by completing a dry walk-through of the solution. End by asking a series of review questions to test students' understanding.
 
@@ -402,7 +402,7 @@ If time remains, end the review by calling on students to answer the following r
 
 ---
 
-### 8. Instructor Do: Multi-Indexing (10 min)
+### 7. Instructor Do: Multi-Indexing (10 min)
 
 Now that students have learned that indexes can be created by using the `groupby` key, it's important that they know how to directly multi-index DataFrames. Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
 
@@ -505,7 +505,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 9. Student Do: Indexing Fever (15 min)
+### 8. Student Do: Indexing Fever (15 min)
 
 In this activity, students will use hierarchical indexes to gain access to historical stock data. The goal of this activity is for students to take their indexing skills to the next level by using DataFrames with multiple indexes. Students will leverage [Google Sheets](https://docs.google.com/spreadsheets/) to extract Google Finance data to perform data segmentation for a single ticker over multiple months in a year.
 
@@ -515,7 +515,7 @@ In this activity, students will use hierarchical indexes to gain access to histo
 
 ---
 
-### 10. Instructor Do: Review Indexing Fever (10 min)
+### 9. Instructor Do: Review Indexing Fever (10 min)
 
 In this section, you will perform a dry walk-through of the solution for the Indexing Fever activity that students just completed.
 
@@ -567,11 +567,11 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 11. BREAK (15 min)
+### 10. BREAK (40 min)
 
 ---
 
-### 12. Instructor Do: Concatenating DataFrames (5 min)
+### 11. Instructor Do: Concatenating DataFrames (10 min)
 
 In this section, you will provide an overview of concatenation and then live code how to concatenate DataFrames. Data for this activity was retrieved from [Kaggle](http://kaggle.com).
 
@@ -659,7 +659,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 13. Student Do: Mastering Concatenation (15 min)
+### 12. Student Do: Mastering Concatenation (15 min)
 
 In this activity, students will get hands-on experience with combining multiple DataFrames using the `concat` function. The goal of the activity is for students to take dues and membership data from two community organizations and combine the data into a single DataFrame.
 
@@ -669,7 +669,7 @@ In this activity, students will get hands-on experience with combining multiple 
 
 ---
 
-### 14. Instructor Do: Review Mastering Concatenation (5 min)
+### 13. Instructor Do: Review Mastering Concatenation (5 min)
 
 In this part of the lesson, review the Mastering Concatenation activity with students. First, you will conduct a brief Q & A to test students' understanding, and then you will perform a dry walk-through of the solution.
 
@@ -713,7 +713,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 15. Instructor Do: Standard Deviation and Risk (10 min)
+### 14. Instructor Do: Standard Deviation and Risk (10 min)
 
 This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate Sharpe ratios in the next activity. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
 
@@ -824,7 +824,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 16. Instructor Do: Sharpe Ratios (5 min)
+### 15. Instructor Do: Sharpe Ratios (10 min)
 
 In this section, students will be introduced to Sharpe ratios and learn why risk-reward ratios are important in finance. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
 
@@ -873,7 +873,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 17. Student Do: Risky Business (15 min)
+### 16. Student Do: Risky Business (15 min)
 
 It's time to put it all together. In this activity, students will prep data and use standard deviation and Sharpe ratios to analyze cryptocurrency portfolio performance. The goal is to calculate which portfolio has the highest risk. Students will also identify which individual cryptos have had the greatest return. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
@@ -885,7 +885,7 @@ Encourage students to work in pairs to complete this activity.
 
 ---
 
-### 18. Instructor Do: Review Risky Business (5 min)
+### 17. Instructor Do: Review Risky Business (5 min)
 
 **File:** [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_business.ipynb)
 
@@ -970,29 +970,21 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 19. Instructor Do: Decompress and End Class (5 min)
+### 18. Instructor Do: Structured Review (35 mins)
 
-Use the slideshow to briefly recap today's class.
+**Note:** If you are teaching this Lesson on a weeknight, please save this 35 minute review for the next Saturday class.
 
-Another battle won, another level completed. Students have been excelling at a quantum speed, and it's important they understand this. End the class with the following positive remarks:
+Please use the entire time to review questions with the students before officially ending class.
 
-* Students have come so far. Earlier in the week they were just learning how to use Pandas. Now they're using Pandas to analyze investment risk and predict smart investments.
+Suggested Format:
 
-* These skills are applicable to the real world. Being able to programmatically combine and group data in order to perform financial analysis and calculate investment risk will go a long way professionally and personally.
+* Ask students for specific activities to revisit.
 
-Engage the students by asking how they plan to incorporate skills from today's lesson into their resumes and/or work lives. Two skills that should be highlighted are:
+* Revisit key activities for the homework.
 
-* Data Engineering and Analysis
+* Allow students to start the homework with extra TA support.
 
-  * The activities completed today involved reading, cleaning, combining, grouping, aggregating, and analyzing multiple datasets; this is actual data engineering and analysis.
-
-  * Data engineers and data analysts complete these same tasks every day.
-
-* Financial Reporting and Visualization
-
-  * The final activity presents a real-world use case. With the proper narrative and flow, the final activity could be used as a financial report.
-
-  * Students have calculated daily returns for investments and identified which investments are expected to produce the most reward and risk. They essentially have a report that presents findings on two portfolios and identifies the smarter investment.
+Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
 
 ### End Class
 
