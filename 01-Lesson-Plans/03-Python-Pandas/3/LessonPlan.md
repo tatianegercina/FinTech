@@ -114,13 +114,17 @@ Ask if there are any questions before moving on.
 
 ### 2. Student Do: Out of Sorts (10 min)
 
-In this activity, students will extract data for a single ticker from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function and calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top 5 performing days for returns.
+In this activity, students will analyze data for a single ticker to calculate daily returns for the year 2019. The data will then be sorted in descending order to identify the top five performing days for returns.
 
-**File:** [out_of_sorts.ipynb](Activities/03-Stu_Sorting/Unsolved/out_of_sorts.ipynb)
+**Files:**
 
-**Instructions:** [README.md](Activities/03-Stu_Sorting/README.md)
+* [out_of_sorts.ipynb](Activities/02-Stu_Sorting/Unsolved/out_of_sorts.ipynb)
 
-As students work on the activity, circulate the room with the TAs to offer assistance to students who need it. Make sure students can extract the data from the Google Sheets website.
+**Instructions:**
+
+* [README.md](Activities/02-Stu_Sorting/README.md)
+
+As students work on the activity, circulate the room with the TAs to offer assistance to students who need it.
 
 If a student finishes the activity early, ask if they are willing to help present the solution by live coding how to sort a DataFrame by more than one column. This live-coding exercise will be completed in the activity review (the next part of the lesson).
 
