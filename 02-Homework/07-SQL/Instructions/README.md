@@ -6,7 +6,7 @@
 
 ## Background
 
-Fraud is prevalent these days, whether you are a small taco shop or a large international business. While there are emerging technologies that employ machine learning and artificial intelligence to detect fraud, many instances of fraud detection still require strong data analytics to find abnormal charges.
+Fraud is everywhere these days—whether you are a small taco shop or a large international business. While there are emerging technologies that employ machine learning and artificial intelligence to detect fraud, many instances of fraud detection still require strong data analytics to find abnormal charges.
 
 In this homework assignment, you will apply your new SQL skills to analyze historical credit card transactions and consumption patterns in order to identify possible fraudulent transactions.
 
@@ -15,7 +15,7 @@ You are asked to accomplish three main tasks:
 1. [Data Modeling](#Data-Modeling):
 Define a database model to store the credit card transactions data and create a new PostgreSQL database using your model.
 
-2. [Data Engineering](#Data-Engineering): Create a database schema on PostgreSQL and populate your  database from the CSV files provided.
+2. [Data Engineering](#Data-Engineering): Create a database schema on PostgreSQL and populate your database from the CSV files provided.
 
 3. [Data Analysis](#Data-Analysis): Analyze the data to identify possible fraudulent transactions.
 
@@ -53,7 +53,7 @@ It's time to identify fraudulent transactions. In this part of the homework assi
 
 * Consider the time period 7:00 a.m. to 9:00 a.m.
 
-  * What are the top 100 highest transactions during this time period?
+  * What are the 100 highest transactions during this time period?
 
   * Do you see any fraudulent or anomalous transactions?
 
@@ -61,7 +61,7 @@ It's time to identify fraudulent transactions. In this part of the homework assi
 
 * Some fraudsters hack a credit card by making several small payments (generally less than $2.00), which are typically ignored by cardholders. Count the transactions that are less than $2.00 per cardholder. Is there any evidence to suggest that a credit card has been hacked? Explain your rationale.
 
-* What are the top 5 merchants prone to being hacked using small transactions?
+* What are the top five merchants prone to being hacked using small transactions?
 
 * Once you have a query that can be reused, create a view for each of the previous queries.
 
