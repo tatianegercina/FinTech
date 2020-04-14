@@ -397,10 +397,54 @@ import hvplot.pandas
 from pathlib import Path
 ```
 
-<img src=Images/signals_df.PNG width=150>
+<img src=Images/signals_bb_df.PNG width=150>
 <blockquote>
 <details>
-<summary>Step One: Signal, STMA, and LTMA Columns</summary><br>
+<summary>Step One: Generate the daily return column:</summary><br>
+
+We begin by adding a column to hold our daily return values:
+
+```python
+# Drop NAs and calculate daily percent return
+btc_df['daily_return'] = btc_df['Close'].dropna().pct_change()
+btc_df
+```
+<img src=Images/bb_df.PNG width=500>
+
+</details>
+
+<details>
+<summary>Step Two: Generate the values used to create bands:</summary><br>
+
+Next, we generate the values that are subsequently used to create the bands themselves.  We use a rolling standard deviation to do this, after which the upper and lower bounds of the bands are creating by adding or substracting the mid_band from the standard deviation respectively:
+
+```python
+# Drop NAs and calculate daily percent return
+btc_df['daily_return'] = btc_df['Close'].dropna().pct_change()
+btc_df# Set bollinger band window
+bollinger_window = 20
+
+# Calculate rolling mean and standard deviation
+btc_df['bollinger_mid_band'] = btc_df['Close'].rolling(window=bollinger_window).mean()
+btc_df['bollinger_std'] = btc_df['Close'].rolling(window=20).std()
+
+# Calculate upper and lowers bands of bollinger band
+btc_df['bollinger_upper_band']  = btc_df['bollinger_mid_band'] + (btc_df['bollinger_std'] * 1)
+btc_df['bollinger_lower_band']  = btc_df['bollinger_mid_band'] - (btc_df['bollinger_std'] * 1)
+```
+
+<img src=Images/bb_bands_df.PNG width=500>
+
+</details>
+<details>
+<summary>Step Three: Plot the bands!</summary><br>
+
+We can finally polot our bollinger bandS as follows:
+
+```python
+btc_df[['Close','bollinger_mid_band','bollinger_upper_band','bollinger_lower_band']].plot(figsize=(20,10))
+```
+<img src=Images/bb_df_plot.PNG width=500>
 
 </details>
 </details>
