@@ -392,15 +392,17 @@ Answer any questions before moving on.
 
 ### 7. Instructor Do: Multi-Indexing (10 min)
 
-Now that students have learned that indexes can be created by using the `groupby` key, it's important that they know how to directly multi-index DataFrames. Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
+Now that students have learned that indexes can be created by using the `groupby` key, it's important that they know how to directly multi-index DataFrames.
+
+Multi-indexing is a direct way to create multiple indexes in a DataFrame. Like the `groupby` function, multi-indexing allows data to be grouped and accessed or manipulated by group.
 
 **Files:**
 
-* [multi_indexing.ipynb](Activities/08-Ins_Multi_Indexing/Solved/multi_indexing.ipynb)
+* [multi_indexing.ipynb](Activities/05-Ins_Multi_Indexing/Solved/multi_indexing.ipynb)
 
-* [Starter File](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing.ipynb)
+* [metro_inc_stock_data.csv](Activities/05-Ins_Multi_Indexing/Resources/metro_inc_stock_data.csv)
 
-Use the slideshow to provide an overview of multi-indexing.
+Open the lesson slides, move to the "Multi-Indexing" section and provide an overview of multi-indexing as follows:
 
 * **Multi-indexing** is the process of indexing a dataset by more than one value. Multi-indexing is like using two bookmarks in a book. Each bookmark is an index, and depending on which index you go to, you'll get different content.
 
@@ -414,7 +416,7 @@ Use the slideshow to provide an overview of multi-indexing.
 
 * Essentially, multi-indexing improves data storage, lookup, and manipulation/assignment.
 
-Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing.ipynb) and live code how to create and use multiple indexes, as well as how to access data using more than one index. Cover the following points:
+Open the unsolved Jupyter notebook and live code how to create and use multiple indexes, as well as how to access data using more than one index. Cover the following points:
 
 * When working with indexes, its a common practice to clean data before setting indexes. For example, a Series being used as an index should not have any `NaN` values. These can be handled by first executing `dropna` against a DataFrame. The `set_index` function can then be used set the index.
 
@@ -426,42 +428,23 @@ Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing
 
   ```python
   # Read in data
-  csv_path = Path("../Resources/twtr_google_finance.csv")
-  ticker_data = pd.read_csv(csv_path, parse_dates=True, index_col='Date', infer_datetime_format=True)
-  ticker_data.head()
+  csv_path = Path("../Resources/metro_inc_stock_data.csv")
+  ticker_data = pd.read_csv(csv_path, parse_dates=True, index_col="Date", infer_datetime_format=True)
   ```
 
 * `DatetimeIndexes` can be split into year, month, and day segments. The `DatetimeIndex` object includes the attributes `index.year`, `index.month`, and `index.day` for this. Passing these to a `groupby` statement will create multiple indexes based on each attribute.
 
-  ```python
-  # Group by year, month, and day and grab first of each group
-  ticker_data_grp = ticker_data.groupby([ticker_data.index.year, ticker_data.index.month, ticker_data.index.day]).first()
-  ticker_data_grp
-  ```
+* The `first` function is used to display the first value for each group within a GroupBy object. In this case, every group down to the `year`, `month`, and `day` level is unique, and therefore grabs the first and only value of every group.
 
   ![multi_index_date.png](Images/multi_index_date.png)
 
-  **Note:** The `first` function is used to display the first value for each group within a GroupBy object. In this case, every group down to the `year`, `month`, and `day` level is unique, and therefore grabs the first and only value of every group.
-
 * Multi-indexed data can be selected by using the `first` and `last` functions. `First` selects the first multi-index group, and `last` selects the last group.
-
-  ```python
-  # Group by year, month, and day
-  ticker_data_grp_1 = ticker_data.groupby([ticker_data.index.year,ticker_data.index.month, ticker_data.index.day]).first()
-  ticker_data_grp_1.head()
-  ```
 
   ![multi_index_first.png](Images/multi_index_first.png)
 
   ![multi-index-last](Images/multi-index-last.png)
 
 * Because multi-indexing involves grouping data, an aggregation can be applied against the data. A common example is the `mean` function for calculating average. This is an alternative to using the `first` and `last` functions. Because aggregate functions are being used, outputs represent summarized/aggregated records.
-
-  ```python
-  # Group by year and month and calculate the average of each group
-  ticker_data_grp_4 = ticker_data.groupby([ticker_data.index.year, ticker_data.index.month]).mean()
-  ticker_data_grp_4
-  ```
 
   ![multi_index_agg.png](Images/multi_index_agg.png)
 
@@ -473,21 +456,7 @@ Open the [starter file](Activities/08-Ins_Multi_Indexing/Unsolved/multi_indexing
 
   * Essentially, indexes must be accessed and used hierarchically (e.g., `year` > `month` > `day`).
 
-  ```python
-  # Slice data for 4/12/2019 from first group
-  ticker_data_slice = ticker_data_grp.loc[2019,4,12]
-  ticker_data_slice
-  ```
-
   ![multi_index_slice.png](Images/multi_index_slice.png)
-
-  ```python
-  # Slice data for April 2019
-  ticker_data_slice = ticker_data_grp.loc[2019,4]
-  ticker_data_slice.head()
-  ```
-
-  ![slice_by_month.png](Images/slice_by_month.png)
 
 Ask if there are any questions before moving on.
 
