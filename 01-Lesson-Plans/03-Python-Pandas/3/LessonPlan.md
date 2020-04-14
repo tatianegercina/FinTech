@@ -54,116 +54,27 @@ By the end of class, students will be able to:
 
 ---
 
-### 1. Instructor Do: Welcome and Refresher Demo (5 min)
+### 1. Instructor Do: Welcome and Intro to Sorting (10 min)
 
-In this section, you will provide an overview of today's lesson and then get started with a warm-up activity focused on returns. Data for this activity will be retrieved from Google Sheets via the in-built Google Finance function.
+In this section, you will provide an overview of today's lesson and then you will introduce students to sorting.
 
-Welcome students to the second day of Pandas and use the slides to explain the focus of today's class.
+**Files:**
 
-* Students will leverage their data cleaning, indexing, and visualization skills from Day 1 in order to sort, group, multi-index, and concatenate multiple financial datasets for daily returns and investment risk analysis.
+* [sort_dataframe.ipynb](Activities/01-Ins_Sorting/Solved/sort_dataframe.ipynb)
 
-* By the end of the lesson, students will have used Pandas to compare two portfolios and identify which is the smarter investment.
+Welcome students to the second day of Pandas, open the lesson slides to explain the focus of today's class and highlight the following:
 
-Introduce the refresher demo on returns.
+* You will leverage your data cleaning, indexing, and visualization skills from Day 1 in order to sort, group, multi-index, and concatenate multiple financial datasets for daily returns and investment risk analysis.
 
-* The following demo will show how to extract historical ticker data from Google Sheets via the Google Finance function as a CSV. The goal is to get students to understand that all of the data they need to perform ROI analysis is just a few clicks away.
+* By the end of the lesson, your will have used Pandas to compare two portfolios and identify which is the smarter investment.
 
-* Using Google Sheets with the in-built Google Finance function, students can leverage historical stock data to keep a running tab on daily returns for specific stocks.
+Continue with the lesson slides, move to to the `Sorting` section and highlight the following:
 
-* Students will watch and follow along to navigate the Google Sheets website.
-
-Walk students through the following steps.
-
-* Navigate to the [Google Sheets](https://docs.google.com/spreadsheets/) website. Then open a new spreadsheet.
-
-  ![new-google-sheet.png](Images/new-google-sheet.png)
-
-* Use the Google Finance in-built function to extract historical stock data from within Google Sheets. The function takes in five input parameters:
-
-  ![google-finance-sheet.png](Images/google-finance-sheet.png)
-
-  * `ticker`: The ticker symbol for the security to consider.
-
-  * `attribute`: The attribute to fetch about `ticker` from Google Finance.
-
-  * `start_date`: The start date when fetching historical data.
-
-  * `end_date`: The end date when fetching historical data, or the number of days from `start_date` for which to return data.
-
-  * `interval`: The frequency of returned data; either "DAILY" or "WEEKLY".
-
-  **Note:** The `end_date` provides historical data up to but not including the date specified.
-
-* Type in the following for the Google Finance function: `=GOOGLEFINANCE("FB", "price", "2/12/2019", "5/14/2019", "DAILY")`. The data should populate within the Google Sheet.
-
-  ![fb-google-finance-extract](Images/fb-google-finance-extract.png)
-
-* Then, create a new Google Sheet tab and copy and paste the historical stock data into the new tab. Make sure to "paste values only" otherwise the data will not download correctly.
-
-  ![google-finance-copy-hard-paste](Images/google-finance-copy-hard-paste.png)
-
-  ![google-finance-epoch-date](Images/google-finance-epoch-date.png)
-
-  **Note:** Due to the copy and paste of values only, the date values will be represented in numerical format. Therefore, they will have to be re-formatted as date values after downloading the CSV and editing in Excel.
-
-* Rename the file as `fb_google_finance` and then download and save the file as a CSV. Make sure to reside in the second tab where the hard-pasted values are contained.
-
-  ![fb-google-finance-csv](Images/fb-google-finance-csv.png)
-
-  **Note:** The downloaded file may have to be renamed again as the Google Sheets appends the current sheet name to the file, for example `fb_google_finance - Sheet2.csv`.
-
-* The general process for extracting Google Finance data from within Google Sheets and downloading as a CSV is shown below.
-
-  ![google_finance_download](Images/google_finance_download.gif)
-
-* Open the file in Excel and format the numerical date values in proper date formatting.
-
-  ![google-finance-format-in-excel](Images/google-finance-format-in-excel.png)
-
-  ![google-finance-finished-format](Images/google-finance-finished-format.png)
-
-* Next, load the saved file into Pandas and use the `index_col`, `parse_dates`, and `infer_datetime_format` attributes to create a DatetimeIndex (based on `Date`) for date range manipulation. These attributes are used to ensure that Pandas interprets the date index as a date object.
-
-  ```python
-  # Read in CSV data
-  csv_path = Path('../Resources/fb_google_finance.csv')
-  fb_ticker_data = pd.read_csv(csv_path, index_col='Date', parse_dates=True, infer_datetime_format=True)
-  fb_ticker_data.head()
-  ```
-
-Instead of calculating daily returns, ask students to orally summarize the required steps to calculate daily returns for three months of data:
-
-"Now that we have the historical stock data, what are the necessary steps for calculating daily returns?"
-
-Write the steps on the board so they can be reinforced in students' visual memory:
-
-1. Clean the data.
-
-1. Execute `pct_change`.
-
-Ask students if they have any questions. Then, if time remains, review the agenda for today's class. Communicate the following:
-
-* Today's activities will provide the foundation needed for students to begin grouping and aggregating data.
-
-* It's common to group and aggregate financial data by a number of different metrics, including dates, tickers, and categories.
-
-* Example use cases include determining the average close price for a list of stock tickers and aggregating data (summing, adding, averaging) over time (e.g., 3-month intervals).
-
----
-
-### 2. Instructor Do: Sorting (5 min)
-
-In this part of the lesson, you will demo how to sort DataFrame values in ascending and descending order.
-
-**File:**
-
-* [sort_dataframe.ipynb](Activities/02-Ins_Sorting/Solved/sort_dataframe.ipynb)
-
-Open the slides to the `Sorting` section.
-
-Start by explaining that it is very common to sort values in ascending or descending order.
+* When you work with financial data, it is very common to sort values in ascending or descending order. Data is not always organized in the best way for analysis. Sometimes, data needs to be cleaned and sorted.
 
 * Pandas provides a function for this called `sort_values` that will sort a DataFrame by a column.
+
+* Using `sort_values`, data can be sorted in either ascending or descending order. This is especially important when you are dealing with dates, would you rather see dates sorted or randomly listed?
 
 * This function can be used to find the highest or lowest daily returns from stock data.
 
@@ -183,14 +94,19 @@ Open the file `sort_dataframe.ipynb` and highlight the following:
 
 * The DataFrame can also be sorted by the index.
 
-  ```python
-  painting_df.sort_index(ascending=False)
-  ```
+  ![sort index](Images/sort_index.png)
 
 * Additionally we can set a new index and *then* sort.  In the following example we set the `Price` column as the index and then sort based on descending price values.
 
   ![set-index-sort.png](Images/set-index-sort.png)
 
+Close this activity by highlighting the following about sorting and the skills that students will learn in Today's class:
+
+* Today's activities will provide the foundation you need to begin grouping and aggregating data.
+
+* It's common to group and aggregate financial data by a number of different metrics, including dates, tickers, and categories.
+
+* Example use cases include determining the average close price for a list of stock tickers and aggregating data (summing, adding, averaging) over time (e.g., 3-month intervals).
 
 Ask if there are any questions before moving on.
 
