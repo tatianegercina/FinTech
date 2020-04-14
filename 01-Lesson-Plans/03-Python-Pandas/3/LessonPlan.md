@@ -292,9 +292,15 @@ Slack out to students the [Group By Pandas User Guide](https://pandas.pydata.org
 
 In this activity, students will work with historical cryptocurrency data. They will load in cryptocurrency data, group data by each crypto, perform aggregations to analyze price trends, and then plot the results. Data for this activity was retrieved from [Coinbase](http://coinbase.com).
 
-**File:** [group_dynamics.ipynb](Activities/06-Stu_Groupby/Unsolved/group_dynamics.ipynb)
+**Files:**
 
-**Instructions:** [README.md](Activities/06-Stu_Groupby/README.md)
+* [group_dynamics.ipynb](Activities/04-Stu_Groupby/Unsolved/group_dynamics.ipynb)
+
+* [crypto_data.csv](Activities/04-Stu_Groupby/Resources/crypto_data.csv)
+
+**Instructions:**
+
+* [README.md](Activities/04-Stu_Groupby/README.md)
 
 ---
 
