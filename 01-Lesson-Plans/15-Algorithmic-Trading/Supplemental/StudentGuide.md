@@ -23,7 +23,7 @@
 <details>
 <summary>What is Algorithmic Trading and why do I need to understand it?</summary><br>
 
-Algorithmic trading is the trading of stocks using automated computer generated buy/sell decisions.  This type of trading is becoming more and more popular in the FinTech world largely because it can be backtested with historical and current data to prove profitability and for its ability to mitigate profit loss due to human error.  Some algorithmic trading strategies use the technology to inform their end decisions, while others run on auto-pilot - predicting and executing trades autonomously.
+Algorithmic trading is the trading of stocks using automated computer generated buy/sell decisions. This type of trading is becoming more and more popular in the FinTech world largely because it can be backtested with historical and current data to prove profitability and for its ability to mitigate profit loss due to human error. Some algorithmic trading strategies use the technology to inform their end decisions, while others run on auto-pilot - predicting and executing trades autonomously.
 
 Algorithmic trading bots consist of three components:
 - Signals:  Information that is useful for predicting the asset movement (such as performance and evaluation metrics, public sentiment).
@@ -33,20 +33,20 @@ Algorithmic trading bots consist of three components:
 <details>
 <summary>What is the difference between technical analysis and fundamental analysis?</summary><br>
 
-The two major schools of thought in trading analysis are technical and fundamental analysis.  They are both are beneficial techniques used to develop trading strategies, however the methods of each are quite different.
+The two major schools of thought in trading analysis are technical and fundamental analysis. They are both are beneficial techniques used to develop trading strategies, however the methods of each are quite different.
 <blockquote>
 
 <details>
 <summary>Technical Analysis</summary><br>
 
-Technical analysis is used to determine the value of a stock based only on the patterns and trends in its price movements and volume.  Examples of technical analysis methods are Moving Averages and Bollinger Bands.  Technical analysts look for known patterns in the trend lines these methods produce, such as pennants, flags and wedges.  Using these patterns, they attempt to predict the stock's future movements.  For an overview list of technical indicator patterns, check out [this](https://www.investopedia.com/articles/technical/112601.asp) Investopedia article.
+Technical analysis is used to determine the value of a stock based only on the patterns and trends in its price movements and volume. Examples of technical analysis methods are Moving Averages and Bollinger Bands. Technical analysts look for known patterns in the trend lines these methods produce, such as pennants, flags and wedges. Using these patterns, they attempt to predict the stock's future movements. For an overview list of technical indicator patterns, check out [this](https://www.investopedia.com/articles/technical/112601.asp) Investopedia article.
 
 <br>
 </details>
 <details>
 <summary>Fundamental Analysis</summary><br>
 
-Fundamental analysis attempts to determine the value of a stock based on qualitative factors like management style and business model, quantitative factors such as balance sheet numbers, and even emotional and subjective factors like public sentiment.  Fundamental analysts create complicated mathmatical forecasting models based on these factors, making many assumptions and applying different weights to various factors.
+Fundamental analysis attempts to determine the value of a stock based on qualitative factors like management style and business model, quantitative factors such as balance sheet numbers, and even emotional and subjective factors like public sentiment. Fundamental analysts create complicated mathmatical forecasting models based on these factors, making many assumptions and applying different weights to various factors.
 
 <br>
 </details>
@@ -59,7 +59,7 @@ Fundamental analysis attempts to determine the value of a stock based on qualita
 <details>
 <summary>What is the difference between technical indicators and trading signals?</summary><br>
 
-Technical indicators are metrics used to evaluate stock price movements, while trading signals are the point which those indicators suggest a time to buy or sell.  A good trading strategy will utlize both as one plays off the other.
+Technical indicators are metrics used to evaluate stock price movements, while trading signals are the point which those indicators suggest a time to buy or sell. A good trading strategy will utlize both as one plays off the other.
 
 <blockquote>
 <details>
@@ -86,17 +86,17 @@ A trading signal is the point at which a technical indicator, such as the crosso
 
 Both long and short strategies are attempts at profitting off the buying and selling of financial assets, however the methods of profitting are quite different.
 
-A long strategy is perhaps the most simple to understand and the most commonly used.  Going long is the classic - *buy low and sell high* strategy most of us are accustomed to when we think of profitting on a sale. To use this strategy the asset is purchased at the lowest price and sold at the highest price, the profit is the difference.
+A long strategy is perhaps the most simple to understand and the most commonly used. Going long is the classic - *buy low and sell high* strategy most of us are accustomed to when we think of profitting on a sale. To use this strategy the asset is purchased at the lowest price and sold at the highest price, the profit is the difference.
 
-A short strategy is much more difficult to conceptualize.  To short a stock or financial asset, is to make a profit off the decline in value, which seems counterintuitive to many of us at first glance.  To better understand, let's use an example scenario.
+A short strategy is much more difficult to conceptualize. To short a stock or financial asset, is to make a profit off the decline in value, which seems counterintuitive to many of us at first glance. To better understand, let's use an example scenario.
 <blockquote><br>
 Let's say that Bob owns 100 shares of *World's Best Co. Inc.* and they are each valued at $100, making their total value $1,000.
 
-You've been researching the *World's Best Co. Inc.* and you've found some information that leads you to believe its not really the best after all, and that it's stock is well over-valued at $100 per share.  You think its overvalued enough that the price is going to tank.  You ask to borrow Bob's shares, and he agrees, temporarily transferring ownership of the shares to you (kind of like renting a home is the temporary transfer of many ownership rights).  Now that you own the shares, even though its temporary, you can sell them!  You sell all 100 shares for $100 each for a $1,000 cash injection - Nice job!
+You've been researching the *World's Best Co. Inc.* and you've found some information that leads you to believe its not really the best after all, and that it's stock is well over-valued at $100 per share. You think its overvalued enough that the price is going to tank. You ask to borrow Bob's shares, and he agrees, temporarily transferring ownership of the shares to you (kind of like renting a home is the temporary transfer of many ownership rights). Now that you own the shares, even though its temporary, you can sell them!  You sell all 100 shares for $100 each for a $1,000 cash injection - Nice job!
 
-Not long after you do this, the price per share does in fact tank - down to $25 per share.  You can now buy 100 shares of the stock yourself at a total price of $250 to replace the borrowed stock you sold.  Just in time too, because you are scheduled to return Bob's 100 shares to him tomorrow per your contract agreement!  You transfer all 100 shares of stock back to Bob, while keeping the $750 profit you made on the sale!
+Not long after you do this, the price per share does in fact tank - down to $25 per share. You can now buy 100 shares of the stock yourself at a total price of $250 to replace the borrowed stock you sold. Just in time too, because you are scheduled to return Bob's 100 shares to him tomorrow per your contract agreement!  You transfer all 100 shares of stock back to Bob, while keeping the $750 profit you made on the sale!
 
-You may wonder, what's in it for Bob?  Don't worry - Bob will you charge you interest and fees on the renting of his stock, after all, its a risk to him to rent it out in case you don't return it.  But this is one of many reasons why shorting a stock can be both risky and profitable.<br>
+You may wonder, what's in it for Bob?  Don't worry - Bob will you charge you interest and fees on the renting of his stock, after all, its a risk to him to rent it out in case you don't return it. But this is one of many reasons why shorting a stock can be both risky and profitable.<br>
 <br>
 
 </blockquote><br>
@@ -105,12 +105,12 @@ You may wonder, what's in it for Bob?  Don't worry - Bob will you charge you int
 <summary>How do I use a Dual Moving Average Crossover?</summary>
 <font size = "2">
 
-_For ease of explanation, this example will use a **long strategy**.  For a refresher on the difference between **long and short strategies**, see the above section on _long/short strategy_ in this FAQ._</font>
+_For ease of explanation, this example will use a **long strategy**. For a refresher on the difference between **long and short strategies**, see the above section on _long/short strategy_ in this FAQ._</font>
 
 <blockquote>
 <details>
 <summary>What it is:</summary><br>
-The dual moving average crossover utilizes short and long term simple moving averages.  When these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.
+The dual moving average crossover utilizes short and long term simple moving averages. When these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other. The value at the time of the crossover is considered the crossover point - a type of technical indicator.
 
 Check out the [moving average refresher](Moving_Average_Refresher.md) if you need a quick refresh on how moving averages work!
 <br>
@@ -131,7 +131,7 @@ In the following candlestick chart for Bitcoin, you can see the dual moving aver
 <details>
 <summary>How to create it:</summary><br>
 
-The dual moving average crossover can be created by using Pandas functionality.  In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.
+The dual moving average crossover can be created by using Pandas functionality. In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.
 
 <img src=Images/signals_df.PNG width=150>
 <blockquote><br>
@@ -161,7 +161,7 @@ signals_df.tail()
 <summary>Step Two: Creating the Signal Values</summary><br>
 
 
-Next we create the signals themselves using `np.where()`.  The code begins at the start of the short rolling window because the values prior to that are null.  We accomplish this by slicing the column with a colon after the short_window variable: `signals_df[short_window:]`.  The complete code loos like this:
+Next we create the signals themselves using `np.where()`. The code begins at the start of the short rolling window because the values prior to that are null. We accomplish this by slicing the column with a colon after the short_window variable: `signals_df[short_window:]`. The complete code loos like this:
 ```python
 # Generate the trading signal (1 or 0) to when the short window is less than the long
 # Note: Use 1 when the SMA50 is less than SMA100 and 0 for when it is not.
@@ -169,14 +169,14 @@ signals_df["Signal"][short_window:] = np.where(
     signals_df["SMA50"][short_window:] < signals_df["SMA100"][short_window:], 1.0, 0.0
 )
 ```
-Don't let the above code confuse you!  It is simply checking if the STMA is smaller than the LTMA and inserted a 1 if it is.  A small snippet of the values generated can be seen below:
+Don't let the above code confuse you!  It is simply checking if the STMA is smaller than the LTMA and inserted a 1 if it is. A small snippet of the values generated can be seen below:
 
 <img src=Images/signals_df_values.PNG width=350>
 </details><br>
 <details>
 <summary>Step Three: Creating the Entry/Exit Points</summary><br>
 
-The next step is to take the `.diff()` of the `Signals` column and add it to the DataFrame.  Remember, `.diff` just subtracts one cell from the previous and provides the difference:
+The next step is to take the `.diff()` of the `Signals` column and add it to the DataFrame. Remember, `.diff` just subtracts one cell from the previous and provides the difference:
 
 <img src=Images/signals_df_diff.PNG width=350>
 </details><br>
@@ -231,14 +231,14 @@ entry_exit_plot.opts(xaxis=None)
 <summary>How do I create and use Exponential Weighted Moving Average (EWMA) Crossovers?</summary>
 <font size = "2">
 
-_For ease of explanation, this example will use a **long strategy**.  For a refresher on the difference between **long and short strategies**, see the above section on _long/short strategy_ in this FAQ._</font>
+_For ease of explanation, this example will use a **long strategy**. For a refresher on the difference between **long and short strategies**, see the above section on _long/short strategy_ in this FAQ._</font>
 <blockquote>
 <details>
 <summary>What it is:</summary><br>
 
-The EWMA crossover works in much the same way as the dual moving average crossover, except instead of a simple moving average, it utilizes short and long term exponentially weighted moving averages.  Because the most recent prices are more heavily weighted and because the smaller window has less time included, the short term EWMA is considered a fast moving trend line with more momentum than its long term EWMA counterpart.
+The EWMA crossover works in much the same way as the dual moving average crossover, except instead of a simple moving average, it utilizes short and long term exponentially weighted moving averages. Because the most recent prices are more heavily weighted and because the smaller window has less time included, the short term EWMA is considered a fast moving trend line with more momentum than its long term EWMA counterpart.
 
-These two variables are subsequently referred to as a *fast close* for short term EWMA and a *slow close* for long term EWMA. Much like the dual moving average crossover, when these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.<br>
+These two variables are subsequently referred to as a *fast close* for short term EWMA and a *slow close* for long term EWMA. Much like the dual moving average crossover, when these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other. The value at the time of the crossover is considered the crossover point - a type of technical indicator.<br>
 
 Check out the [moving average refresher](Moving_Average_Refresher.md) if you need a quick refresh on how moving averages work!
 
@@ -251,21 +251,21 @@ If the fast close trend line goes above the slow close trend line, the indicator
 
 If the fast close trend line dips below the slow close trend average line, the indicator suggests that the price will be dropping lower than the historical average in the short term.
 
-In the following candlestick chart for Bitcoin, you can see the dual moving average lines and the crossover points, indicating entry (buy signal) and exit (sell signal) points:
+In the following candlestick chart for Bitcoin, you can see the exponentially weighted moving average lines and the crossover points, indicating entry (buy signal) and exit (sell signal) points:
 
 <img src=Images/dual_ewma_cross.png width=700><br>
 </details>
 <details>
 <summary>How to create it:</summary><br>
 
-The exponentially weighted moving average crossover can be created by using Pandas functionality.  In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.
+The exponentially weighted moving average crossover can be created by using Pandas functionality. In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.
 ```python
 import numpy as np
 import pandas as pd
 import hvplot.pandas
 from pathlib import Path
 ```
-<img src=Images/signals_df.PNG width=150>
+<img src=Images/signals_ewm_df.PNG width=150>
 <blockquote><br>
 <details>
 <summary>Step One: Signal, Fast_Close, and Slow_Close Columns</summary><br>
@@ -293,7 +293,7 @@ signals_df.tail()
 <summary>Step Two: Creating the Signal Values</summary><br>
 
 
-Next we create the signals themselves using `np.where()`.  The code begins at the start of the fast_close window because the values prior to that are null.  We accomplish this by slicing the column with a colon after the short_window variable: `signals_df[short_window:]`.  The complete code loos like this:
+Next we create the signals themselves using `np.where()`. The code begins at the start of the fast_close window because the values prior to that are null. We accomplish this by slicing the column with a colon after the short_window variable: `signals_df[short_window:]`. The complete code loos like this:
 ```python
 # Generate the trading signal (1 or 0) to when the fast_close is less than the slow_close
 # Note: Use 1 when the fast_close is less than the slow_close and 0 for when it is not.
@@ -307,14 +307,14 @@ Don't let the above code confuse you!  It is simply checking if the fast close p
 <details>
 <summary>Step Three: Creating the Entry/Exit Points</summary><br>
 
-The next step is to take the `.diff()` of the `Signals` column and add it to the DataFrame.  Remember, `.diff` just subtracts one cell from the previous and provides the difference:
+The next step is to take the `.diff()` of the `Signals` column and add it to the DataFrame. Remember, `.diff` just subtracts one cell from the previous and provides the difference:
 
 <img src=Images/signals_df_ewm_diff.PNG width=350>
 </details><br>
 <details>
 <summary>Step Four: Visualizing the Indicators</summary><br>
 
-Finally, the entry/exit points can be visualized using the following code:
+Finally, the entry/exit points can be visualized using the code below. You'll notice there are many more entry/exit points than with the DMAC.  This is because the exponentially weighted moving averages cause the price action to move faster:
 ```python
 # Visualize exit position relative to close price
 exit = signals_df[signals_df['Entry/Exit'] == -1.0]['Close'].hvplot.scatter(
@@ -361,7 +361,7 @@ entry_exit_plot.opts(xaxis=None)
 <summary>How do I create and use Bollinger Bands?</summary>
 <font size = "2">
 
-_For ease of explanation, this example will use a **long strategy**.  For a refresher on the difference between **long and short strategies**, see the above section on _long/short strategy_ in this FAQ._</font>
+_For ease of explanation, this example will use a **long strategy**. For a refresher on the difference between **long and short strategies**, see the above section on _long/short strategy_ in this FAQ._</font>
 
 <blockquote>
 <details>
@@ -369,7 +369,7 @@ _For ease of explanation, this example will use a **long strategy**.  For a refr
 
 Bollinger Bands are a set of lines representing a positive and negative standard deviation away from the simple moving average (SMA) of the asset's closing price.<br>
 
-These lines create _bands_ that move across the plot, creating an area of empty space. The area within this space represents where the closing price _should_ tend to be.  The entry/exit signals are generated when the closing price trend line moves out of that area and dips either below or above the bottom and top barriers of the bands.
+These lines create _bands_ that move across the plot, creating an area of empty space. The area within this space represents where the closing price _should_ tend to be. The entry/exit signals are generated when the closing price trend line moves out of that area and dips either below or above the bottom and top barriers of the bands.
 
 Check out the [moving average refresher](Moving_Average_Refresher.md) if you need a quick refresh on how moving averages work!
 
@@ -389,7 +389,7 @@ When the closing price trend line moves above the upper band, a short (sell) opp
 <details>
 <summary>How to create it:</summary><br>
 
-The dual moving average crossover can be created by using Pandas functionality.  In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.  We will also need to import the following dependences:
+The dual moving average crossover can be created by using Pandas functionality. In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices. We will also need to import the following dependences:
 ```python
 import numpy as np
 import pandas as pd
@@ -410,7 +410,7 @@ from pathlib import Path
 <details>
 <summary>What is backtesting and how do I use it?</summary><br>
 
-The term sounds more complicated that it actually is - backtesting is simply the testing of your trading strategy using historical data in a simulated scenario.  The results indicate how much the gains and losses would have been if the strategy had been implemented on a dummy portfolio of predetermined share size with a dummy capital amount of a predetermined size.  Typically `500` is chosen for the portfolio size and `$100,000` is chosen for the available capital.
+The term sounds more complicated that it actually is - backtesting is simply the testing of your trading strategy using historical data in a simulated scenario. The results indicate how much the gains and losses would have been if the strategy had been implemented on a dummy portfolio of predetermined share size with a dummy capital amount of a predetermined size. Typically `500` is chosen for the portfolio size and `$100,000` is chosen for the available capital.
 
 For an example of backtest simulation check out the steps below:
 
@@ -436,7 +436,7 @@ This inserts a column as seen below: **Lori to update this picture to show colum
 <details>
 <summary>Step Two: </summary><br>
 
-Next, a columm is inserted indicating the share size purchase or sale, depending on the entry/exit points.  If there is an entry point, the share size is  `500` if there is an exit point, the share size is `-500`.  This is creating by running `.diff()` on the `Position` column.
+Next, a columm is inserted indicating the share size purchase or sale, depending on the entry/exit points. If there is an entry point, the share size is  `500` if there is an exit point, the share size is `-500`. This is creating by running `.diff()` on the `Position` column.
 
 ```python
 # Find the points in time where a 500 share position is bought or sold
@@ -450,7 +450,7 @@ This inserts a column as seen below: **update image**
 <details>
 <summary>Step Three: </summary><br>
 
-Next, the column `Portfolio Holdings` is inserted to represent the cumulative investment in the chosen stock over time.  These values are obtained by multiplying the closing prices of the stock by the cumulative sum for entry/exit positions of 500 shares - or in this case the `Entry/Exity Position` column:
+Next, the column `Portfolio Holdings` is inserted to represent the cumulative investment in the chosen stock over time. These values are obtained by multiplying the closing prices of the stock by the cumulative sum for entry/exit positions of 500 shares - or in this case the `Entry/Exity Position` column:
 
 ```python
 # Multiply share price by entry/exit positions and get the cumulatively sum
@@ -461,7 +461,7 @@ This inserts a column as seen below: **update image**
 <details>
 <summary>Step Three: </summary><br>
 
-We now add another new column to represent the remaining cash value of our capital as we make our psuedo investments.  To calculate this value, we subtract the `initial_capital` from the product of the `close` prices and the cumulative sum of the `Entry/Exit Position`:
+We now add another new column to represent the remaining cash value of our capital as we make our psuedo investments. To calculate this value, we subtract the `initial_capital` from the product of the `close` prices and the cumulative sum of the `Entry/Exit Position`:
 
 ```python
 # Subtract the initial capital by the portfolio holdings to get the amount of liquid cash in the portfolio
@@ -472,7 +472,7 @@ This inserts a column as seen below: **update image**
 <details>
 <summary>Step Four: </summary><br>
 
-Next, we add the values of the `Portfolio Cash` column to the values of the `Portfolio Holdings` column to create a new column of values - `Portfolio Total`.  This column represents the total value of the portfolio over time.
+Next, we add the values of the `Portfolio Cash` column to the values of the `Portfolio Holdings` column to create a new column of values - `Portfolio Total`. This column represents the total value of the portfolio over time.
 
 ```python
 
@@ -484,7 +484,7 @@ This inserts a column as seen below: **update image**
 <details>
 <summary>Step Five: </summary><br>
 
-The final step before plotting is to generate the daily and cumulative returns.  The `Portfolio Daily Returns` column is populated by using `.pct_change()` on the `Portfolio Total` column.  The `Portfolio Cumulative Returns` column is populated using `cumprod()` on the newly generated `Portfolio Daily Returns` column.
+The final step before plotting is to generate the daily and cumulative returns. The `Portfolio Daily Returns` column is populated by using `.pct_change()` on the `Portfolio Total` column. The `Portfolio Cumulative Returns` column is populated using `cumprod()` on the newly generated `Portfolio Daily Returns` column.
 ```python
 # Calculate the portfolio daily returns
 signals_df['Portfolio Daily Returns'] = signals_df['Portfolio Total'].pct_change()
@@ -531,7 +531,7 @@ total_portfolio_value = signals_df[['Portfolio Total']].hvplot(
 portfolio_entry_exit_plot = total_portfolio_value * entry * exit
 portfolio_entry_exit_plot.opts(xaxis=None)
 ```
-The above code generates a chart like the one below.  This allows us to visualize our simulation.  We can see our entry/exit points in red/green respectively, and we can see the trend line of the value of the portfolio rise over time.  This particular simulation increased the initial capital from $100,000 to a total portfolio value of $132,975:
+The above code generates a chart like the one below. This allows us to visualize our simulation. We can see our entry/exit points in red/green respectively, and we can see the trend line of the value of the portfolio rise over time. This particular simulation increased the initial capital from $100,000 to a total portfolio value of $132,975:
 
 <img src=Images/sim_visualization.PNG>
 
@@ -543,7 +543,7 @@ The above code generates a chart like the one below.  This allows us to visualiz
 <details>
 <summary>What are evaluation metrics used for?</summary><br>
 
-Evaluation metrics are calculations used to assess the value of trades.  Used in conjunction with your trading algorithms, they can be used to analyze it's performance and plan for needed adjustments.  In class we cover the following evluation metrics:
+Evaluation metrics are calculations used to assess the value of trades. Used in conjunction with your trading algorithms, they can be used to analyze it's performance and plan for needed adjustments. In class we cover the following evluation metrics:
 
 - **Cumulative Return:** the total/aggregated amount of gains and losses for an investment. Cumulative return is measured across time and not for a given time period.
 
@@ -564,9 +564,9 @@ A cheat sheet to these calculations can be seen [here.](EvaluationsCalculationGu
 <details>
 <summary>Why do I need a framework?</summary><br>
 
-A framework is much like a template for your code.  Its a programming technique that organizes code into a workflow that can easily be reused and applied to different scenarios.  Just as a libary like Pandas can provide prebuilt code to be easily inserted into your program, the framework provides prebuilt structure and organization into which that code can be inserted.  The code inside the framework can be easily changed to fit new data, but the flow of the code remains the same.
+A framework is much like a template for your code. Its a programming technique that organizes code into a workflow that can easily be reused and applied to different scenarios. Just as a libary like Pandas can provide prebuilt code to be easily inserted into your program, the framework provides prebuilt structure and organization into which that code can be inserted. The code inside the framework can be easily changed to fit new data, but the flow of the code remains the same.
 
-The trading framework we build in class, provides a work flow for building an entire dashboard to visualize a trading strategy.  The code inside the framework can be swapped out to accompodate new data, but the work flow remains the same so that when the dashboard is generated all of its components have been generated and can be populated.
+The trading framework we build in class, provides a work flow for building an entire dashboard to visualize a trading strategy. The code inside the framework can be swapped out to accompodate new data, but the work flow remains the same so that when the dashboard is generated all of its components have been generated and can be populated.
 
 </details>
 
@@ -582,9 +582,9 @@ Persisting data is generally a best practice as it provides a method for data re
 <details>
 <summary>What is a pre-trained model and how do I implement one?</summary><br>
 
-Just as we can persist data using a database for longetivity and reuse, we can persist models for the same reasons.  When a model is persisted, it is refered to as pre-trained.  Pre-trained models, have been created, configured, and fitted to data then saved for later use.  The models can be loaded as any file can be loaded, using the right modules of course.
+Just as we can persist data using a database for longetivity and reuse, we can persist models for the same reasons. When a model is persisted, it is refered to as pre-trained. Pre-trained models, have been created, configured, and fitted to data then saved for later use. The models can be loaded as any file can be loaded, using the right modules of course.
 
-This saves us the time consuming process of splitting our data for training and testing, then fitting the model.  If its been done once, and a successful combination has been found, the model can be saved and reused later.
+This saves us the time consuming process of splitting our data for training and testing, then fitting the model. If its been done once, and a successful combination has been found, the model can be saved and reused later.
 
 There are many ways to persist your model, however in class we use a library called `joblib`. To save the model we utilize the following code:
 
@@ -593,7 +593,7 @@ from joblib import dump
 dump(model, 'your_model.joblib')
 ```
 
-Once the model is saved, we can load it whenever we need to use it.  We load the model as follows:
+Once the model is saved, we can load it whenever we need to use it. We load the model as follows:
 
 ```python
 from joblib import load
@@ -610,19 +610,19 @@ predictions = model.predict(X_test)
 
 
 <details>
-<summary>Help, I need a time series refresher</summary><br>
+<summary>Help, I need a time series refresher!</summary><br>
 
-Its important to convert dates into time series when working with python and pandas.  For a quick refresher on reading time series data into a pandas DataFrame, see below.  for a full refresher, head back to the [Unit 10 - Time Series FAQ.](../../10-Time-Series/Supplemental/StudentGuide.md)
+Its important to convert dates into time series when working with python and pandas. For a quick refresher on reading time series data into a pandas DataFrame, see below. for a full refresher, head back to the [Unit 10 - Time Series FAQ.](../../10-Time-Series/Supplemental/StudentGuide.md)
 
 <blockquote>
 <details><summary>How do you convert objects to `datetime`?</summary>
 
-Converting objects to `datetime` can be tricky.  Using pandas, the conversion can be handled upon reading in of data.  The syntax to handle the conversion from `read_csv()` is:
+Converting objects to `datetime` can be tricky. Using pandas, the conversion can be handled upon reading in of data. The syntax to handle the conversion from `read_csv()` is:
 
 ```python
 df = pd.read_csv('your_data.csv', parse_dates=True)
 ```
-This converts each object to a `datetime` object.  Alternatively, you can also set the index as the date column for ease of plotting:
+This converts each object to a `datetime` object. Alternatively, you can also set the index as the date column for ease of plotting:
 ```python
 df = pd.read_csv('your_data.csv', infer_datetime_format=True, parse_dates=True, index_col='Date')
 ```
