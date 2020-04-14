@@ -253,7 +253,7 @@ If the fast close trend line dips below the slow close trend average line, the i
 
 In the following candlestick chart for Bitcoin, you can see the dual moving average lines and the crossover points, indicating entry (buy signal) and exit (sell signal) points:
 
-<img src=Images/dual_ma_cross.png width=700><br>
+<img src=Images/dual_ewma_cross.png width=700><br>
 </details>
 <details>
 <summary>How to create it:</summary><br>
