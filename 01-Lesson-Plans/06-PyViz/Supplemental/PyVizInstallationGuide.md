@@ -17,13 +17,14 @@ conda activate pyvizenv
     conda install -c conda-forge nodejs
     ```
 
-2. Use the `conda install` command to install the following packages:
+2. Use the `conda install` command to install the following packages. Note: On some of these installs, you may get a message that says that the requested packages are already installed. That is fine. Conda is really good at installing all of the required dependencies between these tools.
 
     ```shell
+    conda install -c pyviz pyviz
     conda install -c pyviz holoviz
     conda install -c pyviz hvplot
+    conda install -c plotly plotly
     conda install -c pyviz panel
-    conda install -c plotly plotly=4.6.0
     ```
 
 3. PyViz installation also requires the installation of Jupyter Lab extensions. These extensions are used to render PyViz plots in Jupyter Lab. Execute the below commands to install the necessary Jupyter Lab extensions for PyViz and Plotly Express.
