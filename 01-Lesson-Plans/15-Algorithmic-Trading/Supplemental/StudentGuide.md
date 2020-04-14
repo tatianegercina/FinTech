@@ -89,12 +89,23 @@ Both long and short strategies are attempts at profitting off the buying and sel
 A long strategy is perhaps the most simple to understand and the most commonly used.  Going long is the classic - *buy low and sell high* strategy most of us are accustomed to when we think of profitting on a sale. To use this strategy the asset is purchased at the lowest price and sold at the highest price, the profit is the difference.
 
 A short strategy is much more difficult to conceptualize.  To short a stock or financial asset, is to make a profit off the decline in value, which seems counterintuitive to many of us at first glance.  To better understand, let's use an example scenario.
+<blockquote><br>
+Let's say that Bob owns 100 shares of *World's Best Co. Inc.* and they are each valued at $100, making their total value $1,000.
 
+You've been researching the *World's Best Co. Inc.* and you've found some information that leads you to believe its not really the best after all, and that it's stock is well over-valued at $100 per share.  You think its overvalued enough that the price is going to tank.  You ask to borrow Bob's shares, and he agrees, temporarily transferring ownership of the shares to you (kind of like renting a home is the temporary transfer of many ownership rights).  Now that you own the shares, even though its temporary, you can sell them!  You sell all 100 shares for $100 each for a $1,000 cash injection - Nice job!
 
+Not long after you do this, the price per share does in fact tank - down to $25 per share.  You can now buy 100 shares of the stock yourself at a total price of $250 to replace the borrowed stock you sold.  Just in time too, because you are scheduled to return Bob's 100 shares to him tomorrow per your contract agreement!  You transfer all 100 shares of stock back to Bob, while keeping the $750 profit you made on the sale!
+
+You may wonder, what's in it for Bob?  Don't worry - Bob will you charge you interest and fees on the renting of his stock, after all, its a risk to him to rent it out in case you don't return it.  But this is one of many reasons why shorting a stock can be both risky and profitable.<br>
+<br>
+
+</blockquote><br>
 </details>
 <details>
-<summary>How do I use a Dual Moving Average Crossover?</summary><br>
+<summary>How do I use a Dual Moving Average Crossover?</summary>
+<font size = "2">
 
+_For ease of explanation, this example will use a **long strategy**.  For a refresher on the difference between **long and short strategies**, see the above section on _long/short strategy_ in this FAQ._</font>
 
 <blockquote>
 <details>
@@ -218,8 +229,10 @@ entry_exit_plot.opts(xaxis=None)
 </details>
 
 <details>
-<summary>How do I create and use Exponential Weighted Moving Average (EWMA) Crossovers?</summary><br>
+<summary>How do I create and use Exponential Weighted Moving Average (EWMA) Crossovers?</summary>
+<font size = "2">
 
+_For ease of explanation, this example will use a **long strategy**.  For a refresher on the difference between **long and short strategies**, see the above section on _long/short strategy_ in this FAQ._</font>
 <blockquote>
 <details>
 <summary>What it is:</summary><br>
@@ -261,7 +274,10 @@ The dual moving average crossover can be created by using Pandas functionality. 
 
 </details>
 <details>
-<summary>How do I create and use Bollinger Bands?</summary><br>
+<summary>How do I create and use Bollinger Bands?</summary>
+<font size = "2">
+
+_For ease of explanation, this example will use a **long strategy**.  For a refresher on the difference between **long and short strategies**, see the above section on _long/short strategy_ in this FAQ._</font>
 
 <blockquote>
 <details>
@@ -504,7 +520,7 @@ predictions = model.predict(X_test)
 
 
 <details>
-<summary>Help, I need a time series refTime Series Data Refresher</summary><br>
+<summary>Help, I need a time series refresher</summary><br>
 
 Its important to convert dates into time series when working with python and pandas.  For a quick refresher on reading time series data into a pandas DataFrame, see below.  for a full refresher, head back to the [Unit 10 - Time Series FAQ.](../../10-Time-Series/Supplemental/StudentGuide.md)
 
