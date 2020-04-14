@@ -181,7 +181,7 @@ Discuss the following review questions with the class.
 
 * **Example Answer** Basic Attention Token raised $35 million in under 30 seconds, hitting the hard cap on their token supply.
 
-* **Example Answer** FileCoin was capped at $200 million FileCoins.
+* **Example Answer** FileCoin was capped at $200 million Filecoins.
 
 * Name some things that a company might create a crowdsale to raise funds for?
 
