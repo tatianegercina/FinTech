@@ -179,9 +179,9 @@ Discuss the following review questions with the class.
 
 * **Example Answer** According to the Ethereum blog post, "Ether is a product, NOT a security or investment offering. Ether is simply a token useful for paying transaction fees or building or purchasing decentralized application services on the Ethereum platform; it does not give you voting rights over anything, and we make no guarantees of its future value."
 
-* **Example Answer** Basic Attention Token raised 36 million in 30 seconds, hitting the hard cap on their token supply.
+* **Example Answer** Basic Attention Token raised $35 million in under 30 seconds, hitting the hard cap on their token supply.
 
-* **Example Answer** FileCoin was capped at 200 million FileCoins.
+* **Example Answer** FileCoin was capped at $200 million FileCoins.
 
 * Name some things that a company might create a crowdsale to raise funds for?
 
