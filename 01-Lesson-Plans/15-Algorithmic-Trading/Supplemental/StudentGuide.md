@@ -82,6 +82,17 @@ A trading signal is the point at which a technical indicator, such as the crosso
 
 </details>
 <details>
+<summary>What is the difference between a long and short strategy?</summary><br>
+
+Both long and short strategies are attempts at profitting off the buying and selling of financial assets, however the methods of profitting are quite different.
+
+A long strategy is perhaps the most simple to understand and the most commonly used.  Going long is the classic - *buy low and sell high* strategy most of us are accustomed to when we think of profitting on a sale. To use this strategy the asset is purchased at the lowest price and sold at the highest price, the profit is the difference.
+
+A short strategy is much more difficult to conceptualize.  To short a stock or financial asset, is to make a profit off the decline in value, which seems counterintuitive to many of us at first glance.  To better understand, let's use an example scenario.
+
+
+</details>
+<details>
 <summary>How do I use a Dual Moving Average Crossover?</summary><br>
 
 
