@@ -227,7 +227,6 @@ entry_exit_plot.opts(xaxis=None)
 </blockquote><br>
 </details>
 </details>
-
 <details>
 <summary>How do I create and use Exponential Weighted Moving Average (EWMA) Crossovers?</summary>
 <font size = "2">
@@ -239,9 +238,7 @@ _For ease of explanation, this example will use a **long strategy**.  For a refr
 
 The EWMA crossover works in much the same way as the dual moving average crossover, except instead of a simple moving average, it utilizes short and long term exponentially weighted moving averages.  Because the most recent prices are more heavily weighted and because the smaller window has less time included, the short term EWMA is considered a fast moving trend line with more momentum than its long term EWMA counterpart.
 
-These two variables are subsequently referred to as a *fast close* for short term EWMA and a *slow close* for long term EWMA. The trading signal from the *fast and slow close* trend lines, differs from dual moving average crossover where the signals indicate either a *long or hold*, or *short or hold* opportunity.  The EWMA crossover presents a *long* or *short* or *hold* opportunity.  __LORI FIX THIS __The logic behind this, is such that when the *fast close* is greater than the *slow close*, a long trade opportunity exists, as price action should rise in the short-term, while a short trade opportunity also exists, but for the opposite scenario in which the slow EMA is greater than the fast EMA.__
-
-Much like the dual simple moving average crossover, when these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.<br>
+These two variables are subsequently referred to as a *fast close* for short term EWMA and a *slow close* for long term EWMA. Much like the dual moving average crossover, when these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other.  The value at the time of the crossover is considered the crossover point - a type of technical indicator.<br>
 
 Check out the [moving average refresher](Moving_Average_Refresher.md) if you need a quick refresh on how moving averages work!
 
@@ -250,9 +247,9 @@ Check out the [moving average refresher](Moving_Average_Refresher.md) if you nee
 <details>
 <summary>How to use it:</summary><br>
 
-If the short-term moving average line goes above the long-term moving average line, the indicator suggests that the price will be rising higher than the historical average in the short term.
+If the fast close trend line goes above the slow close trend line, the indicator suggests that the price will be rising higher than the historical average in the short term.
 
-If the short-term moving average line dips below the long-term moving average line, the indicator suggests that the price will be dropping lower than the historical average in the short term.
+If the fast close trend line dips below the slow close trend average line, the indicator suggests that the price will be dropping lower than the historical average in the short term.
 
 In the following candlestick chart for Bitcoin, you can see the dual moving average lines and the crossover points, indicating entry (buy signal) and exit (sell signal) points:
 
@@ -261,14 +258,101 @@ In the following candlestick chart for Bitcoin, you can see the dual moving aver
 <details>
 <summary>How to create it:</summary><br>
 
-The dual moving average crossover can be created by using Pandas functionality.  In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.
-
+The exponentially weighted moving average crossover can be created by using Pandas functionality.  In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.
+```python
+import numpy as np
+import pandas as pd
+import hvplot.pandas
+from pathlib import Path
+```
 <img src=Images/signals_df.PNG width=150>
-<blockquote>
+<blockquote><br>
 <details>
-<summary>Step One: Signal, STMA, and LTMA Columns</summary><br>
+<summary>Step One: Signal, Fast_Close, and Slow_Close Columns</summary><br>
+
+First we initialize a `Signal` column, then create our short and long term moving average columns using the `.ewm()` and `.mean()` methods:
+
+```python
+# Set the short window and long windows
+fast_close = 1
+slow_close = 10
+
+# Generate the fast and slow close exponentially weighted moving averages (1 and 10 days, respectively)
+signals_df['Fast_Close'] = signals_df['Close'].ewm(halflife=short_window).mean()
+signals_df['Slow_Close'] = signals_df['Close'].ewm(halflife=long_window).mean()
+signals_df['Signal'] = 0.0
+
+signals_df.tail()
+```
+<img src=Images/signals_df_ema.PNG width=250>
+<br>
+
+
+</details><br>
+<details>
+<summary>Step Two: Creating the Signal Values</summary><br>
+
+
+Next we create the signals themselves using `np.where()`.  The code begins at the start of the fast_close window because the values prior to that are null.  We accomplish this by slicing the column with a colon after the short_window variable: `signals_df[short_window:]`.  The complete code loos like this:
+```python
+# Generate the trading signal (1 or 0) to when the fast_close is less than the slow_close
+# Note: Use 1 when the fast_close is less than the slow_close and 0 for when it is not.
+signals_df["Signal"][short_window:] = np.where(
+    signals_df["fast_close"][short_window:] < signals_df["slow_close"][short_window:], 1.0, 0.0
+)
+```
+Don't let the above code confuse you!  It is simply checking if the fast close price is smaller than the slow close price and inserting a 1 if it is.
+
+</details><br>
+<details>
+<summary>Step Three: Creating the Entry/Exit Points</summary><br>
+
+The next step is to take the `.diff()` of the `Signals` column and add it to the DataFrame.  Remember, `.diff` just subtracts one cell from the previous and provides the difference:
+
+<img src=Images/signals_df_ewm_diff.PNG width=350>
+</details><br>
+<details>
+<summary>Step Four: Visualizing the Indicators</summary><br>
+
+Finally, the entry/exit points can be visualized using the following code:
+```python
+# Visualize exit position relative to close price
+exit = signals_df[signals_df['Entry/Exit'] == -1.0]['Close'].hvplot.scatter(
+    color='red',
+    legend=False,
+    ylabel='Price in $',
+    width=1000,
+    height=400)
+
+# Visualize entry position relative to close price
+entry = signals_df[signals_df['Entry/Exit'] == 1.0]['Close'].hvplot.scatter(
+    color='green',
+    legend=False,
+    ylabel='Price in $',
+    width=1000,
+    height=400)
+
+# Visualize close price for the investment
+security_close = signals_df[['Close']].hvplot(
+    line_color='lightgray',
+    ylabel='Price in $',
+    width=1000,
+    height=400)
+
+# Visualize exponentially weighted moving averages
+moving_avgs = signals_df[['Fast_Close', 'Slow_Close']].hvplot(
+    ylabel='Price in $',
+    width=1000,
+    height=400)
+
+# Overlay plots
+entry_exit_plot = security_close * moving_avgs * entry * exit
+entry_exit_plot.opts(xaxis=None)
+```
+<img src=Images/signals_df_ewm_plot.PNG width=800>
 
 </details>
+</blockquote><br>
 </details>
 </blockquote><br>
 
@@ -305,7 +389,13 @@ When the closing price trend line moves above the upper band, a short (sell) opp
 <details>
 <summary>How to create it:</summary><br>
 
-The dual moving average crossover can be created by using Pandas functionality.  In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.
+The dual moving average crossover can be created by using Pandas functionality.  In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.  We will also need to import the following dependences:
+```python
+import numpy as np
+import pandas as pd
+import hvplot.pandas
+from pathlib import Path
+```
 
 <img src=Images/signals_df.PNG width=150>
 <blockquote>
