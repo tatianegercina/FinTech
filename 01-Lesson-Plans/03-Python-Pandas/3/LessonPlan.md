@@ -214,39 +214,39 @@ This section focuses on grouping and aggregating data. Grouping data is particul
 
 **Files:**
 
-* [groupby.ipynb](Activities/05-Ins_Groupby/Solved/groupby.ipynb)
+* [groupby.ipynb](Activities/03-Ins_Groupby/Solved/groupby.ipynb)
 
-* [Starter File](Activities/05-Ins_Groupby/Unsolved/groupby.ipynb)
+* [crypto_data.csv](Activities/03-Ins_Groupby/Resources/crypto_data.csv)
 
-Introduce the `groupby` function by explaining the following:
-
-* The `groupby` function is just as common as the `sort_values` function.
-
-* Both of these functions are used to wrangle data into a state that is usable for analysis.
-
-Open the slideshow and provide a brief overview of the `groupby` function.
+Open the lesson slides, move to the "Grouping" section and introduce the `groupby` function by explaining the following:
 
 * A common technique in data analysis is to summarize data by grouping similar values.
 
-  * One example is grouping sales data by country.
+  * One example is grouping sales data by country or category.
 
-  * In our case, we may want to group data by the stock ticker.
+  * We also may want to group data by the stock ticker.
 
-  * Once the data is grouped, a count, sum, or average can be performed on the result.
+  * Once you group data, you can use an aggregated function (or aggregations) to perform operation over the grouped data.
 
-* The `groupby` function segments data into groups. Once groups are created, a function or operation can be executed against each group (e.g., addition).
+  * Example aggregations that can be done on groups are adding, summing, determining min and max, etc.
 
-* Data must be grouped using `groupby` before the values in each group can be aggregated. This ensures data is aggregated at the group level rather than at the column level.
+  ![Visual data aggregation](Images/visual_data_grouping.png)
 
-Start the live demonstration of how to use the `groupby` function. Open the [starter file](Activities/05-Ins_Groupby/Unsolved/groupby.ipynb) and live code while explaining the following:
+* Pandas offers the `groupby` function to group the data in a DataFrame.
+
+  * The `groupby` function is just as common as the `sort_values` function.
+
+  * Both of these functions are used to wrangle data into a state that is usable for analysis.
+
+  * The `groupby` function splits data into groups. Once groups are created, a function or operation can be executed against each group (e.g., addition).
+
+  * Data must be grouped using `groupby` before the values in each group can be aggregated. This ensures data is aggregated at the group level rather than at the column level.
+
+  ![Visual data grouping](Images/visual_grouping.png)
+
+Start the live demonstration of how to use the `groupby` function. Open the unsolved version of the Jupyter notebook and live code while explaining the following:
 
 * To group data, use the `groupby` function against a non-unique column. The `groupby` function accepts a series name as an argument. Users can also specify a return column with brackets, `[]`.
-
-  ```python
-  # Group by crypto data by cryptocurrency
-  crypto_data_grp = crypto_data.groupby('cryptocurrency').count()
-  crypto_data_grp
-  ```
 
   ![group_count.png](Images/group_count.png)
 
@@ -258,55 +258,33 @@ Start the live demonstration of how to use the `groupby` function. Open the [sta
 
   ```python
   # Group by crypto data by cryptocurrency
-  crypto_data_grp = crypto_data.groupby('cryptocurrency')
+  crypto_data_grp = crypto_data.groupby("cryptocurrency")
   crypto_data_grp
   ```
 
-  ```
+  ```text
   <pandas.core.groupby.generic.DataFrameGroupBy object at 0x000001CFF748A518>
   ```
 
 * Examples of aggregate functions that can be applied against `DataFrameGroupBy` objects include `count`, `sum`, and `mean`, just to name a few. These functions will proceed a `groupby` function.
 
-  ```python
-  # Calculate average data_priceUsd for each crypto
-  crypto_data_mean = crypto_data.groupby('cryptocurrency').mean()
-  crypto_data_mean
-  ```
-
   ![group_by_aggregate.png](Images/group_by_aggregate.png)
 
 * DataFrames can be grouped by more than one column. This groups values across each specified column and summarizes the data into one record. This approach can be used as a way to identify if there are any duplicates within the data.
 
-* In the following images, each `cryptocurrency` and `data_priceUsd` combination occurs only once. These images show the differences between grouping by one column or multiple columns.
-
-  ```python
-  # Group by more than one column
-  multi_group = crypto_data.groupby(['cryptocurrency','data_priceUsd'])['data_priceUsd'].count()
-  multi_group
-  ```
+* In this demo, we group the data by the `cryptocurrency` and `data_price` columns to create a view where we can count how many times a price is repeated by cryptocurrency.
 
   ![multi_group_count.png](Images/multi_group_count.png)
 
-  ```python
-  # Group by one column
-  single_group = crypto_data.groupby('cryptocurrency')['data_priceUsd'].count()
-  single_group
-  ```
+* We may want to round the prices, we can do that using the `round` function of the DataFrame, next we can group the data again.
 
-  ![compare_single_multi.png](Images/compare_single_multi.png)
+  ![multi_group_round_count.png](Images/multi_group_round_count.png)
 
 * Once data is grouped, each group can be plotted for comparison. This will plot multiple lines on a single plot. Each line is considered a subplot.
 
-  ```python
-  # Plot data_priceUsd for each crypto across time
-  grouped_cryptos = crypto_data.groupby('cryptocurrency')['data_priceUsd'].plot(legend=True)
-  grouped_cryptos
-  ```
-
   ![plotting_groupby.png](Images/plotting_groupby.png)
 
-Ask if there are any questions before moving on.
+Slack out to students the [Group By Pandas User Guide](https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html) as a further references and ask if there are any questions before moving on.
 
 ---
 
