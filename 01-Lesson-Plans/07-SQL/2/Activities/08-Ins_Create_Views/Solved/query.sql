@@ -21,7 +21,6 @@ ON (p.rental_id = r.rental_id)
     ON (s.store_id = i.store_id)
     GROUP BY s.store_id;
 
-
 -- Query the table view created
 SELECT *
 FROM total_sales;

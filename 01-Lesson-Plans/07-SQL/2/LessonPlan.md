@@ -16,16 +16,18 @@ By the end of today's class, students will be able to:
 
 ### Instructor Notes
 
+* If you experience any issues importing data as CSV files via pgAdmin, please refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md).
+
 * Today's lesson will mostly use imported datasets, so make sure students are comfortable importing data from CSV files. All schemas for the tables will be provided along with the CSV files. Students who don't have this data imported correctly will not be able to follow along with the lesson.
 
-* This lesson will build on what students learned in the previous class, and each activity will combine multiple SQL elements. Students who are new to SQL may struggle a bit, but many of the concepts are similar to those they have learned previously.
+* This lesson will build on what students learned in the previous class, and each activity will combine multiple SQL elements. Students who are new to SQL may struggle a bit, but many of the concepts are similar to those they have previously learned.
 
-* SQL views will be a pleasant interlude from some of the heavy SQL lifting done prior; however, it is not crucial and so instructors should feel free to tweak the length and content as they deem appropriate.
+* SQL views will be a pleasant interlude from some of the heavy SQL lifting done prior. However, it is not crucial, and so instructors should feel free to tweak the length and content as they deem appropriate.
 
 * The TAs should be ready to help students who are confused or who have not imported the data correctly.
 
-
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [7.2 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=592da5ea-c7a9-4d50-a22e-aac5002c0248) Note that this video may not reflect the most recent lesson plan.
 
 ---
@@ -38,15 +40,13 @@ By the end of today's class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome the students and overview the class objectives.
-
-Open the slides and cover the agenda.
+Welcome students and review the class objectives, then open the slideshow and cover the agenda.
 
 * Explain that today's lesson will provide a more in-depth look at SQL's features. Students will work with imported tables to expand their SQL skills.
 
@@ -54,13 +54,15 @@ Open the slides and cover the agenda.
 
 In this activity, instructors will help students prepare for today's lesson by importing the necessary data to their databases.
 
-**Files:**
+* **Note:** If issues arise when using the pgAdmin Import/Export tool, there is an included seed.sql file within the Solved folder of each instructor/student activity. Distribute and use the file when necessary and refer to the SQL troubleshooting guide for more information on how to use the file.
 
-* [schema.sql](Activities/01-Evr_Import_Data/Resources/schema.sql)
+**Files:**
 
 * [actor.csv](Activities/01-Evr_Import_Data/Resources/actor.csv)
 
-* [Sakila CSV Data](Activities/01-Evr_Import_Data/Resources)
+* [schema.sql](Activities/01-Evr_Import_Data/Solved/schema.sql)
+
+* [query.sql](Activities/01-Evr_Import_Data/Solved/query.sql)
 
 Explain to the class that today's activities will require a few tables to be imported into a database.
 
@@ -72,13 +74,17 @@ Together with the class, walk through the following steps:
 
 * Open the query tool for the newly created `rental_db`.
 
-* Copy [schema.sql](Activities/01-Evr_Import_Data/Resources/schema.sql) and run the code to create the needed tables.
+* Copy [schema.sql](Activities/01-Evr_Import_Data/Solved/schema.sql) and run the code to create the needed tables.
 
 * Right-click the "actor" table on the right-hand side, and then select Import/Export.
 
 * Import `actor.csv`.
 
+  ![import-data](Images/import-data.png)
+
 * Run `SELECT * FROM actor LIMIT 100;` to confirm that the import was successful.
+
+  ![import-success](Images/import-success.png)
 
   **Optional:** Right-click the "actor" table and view the first 100 rows to check that the data was imported correctly.
 
@@ -90,17 +96,23 @@ The TAs should walk around the classroom to assist students with the database up
 
 In this activity, students will learn how to use aggregate functions, aliases, and groupby operations to analyze data on a higher-level or aggregated perspective.
 
+**Files:**
+
+* [film.csv](Activities/02-Ins_Aggregates/Resources/film.csv)
+
+* [schema.sql](Activities/02-Ins_Aggregates/Solved/schema.sql)
+
+* [query.sql](Activities/02-Ins_Aggregates/Solved/schema.sql)
+
 Use the `Aggregate Functions` section of the slides and review the following:
 
 * Similar to aggregates in Pandas, aggregate functions allow calculations on a set of values and return a singular value.
 
-* Some of most commonly used aggregates are `Avg`, `COUNT`, `MIN`, `MAX`, and `SUM`.
+* Some of the most commonly used aggregates are `AVG`, `COUNT`, `MIN`, `MAX`, and `SUM`.
 
 * Aggregates are often combined with `GROUP BY`, `HAVING`, and `SELECT`.
 
-**File:** [query.sql](Activities/02-Ins_Aggregates/Solved/query.sql)
-
-Select the `rental_db` database in pgAdmin and open a query window.
+Then, select the `rental_db` database in pgAdmin and open a query window.
 
 Run `SELECT * FROM film;` and count the number of rows.
 
@@ -183,7 +195,7 @@ Ask a student to explain the query.
 
 * Movies that can be rented for three days cost an average of $2.82 to rent, movies that can be rented for four days cost an average of $2.97 to rent, and so on.
 
-* SQL can also return the rows that contain the minimum values and maximum values in a column using `MIN()` and `MAX()` respectively.
+* SQL can also return the rows that contain the minimum and maximum values in a column using `MIN()` and `MAX()` respectively.
 
   ```sql
   -- Find the rows with the minimum rental rate
@@ -207,21 +219,57 @@ Answer any questions before moving on.
 
 In this activity, students will practice writing queries with aggregate functions, grouping, and using aliases.
 
-**File:** [query.sql](Activities/03-Stu_GregariousAggregates/Unsolved/query.sql)
+**Files:**
+
+* [payment.csv](Activities/03-Stu_GregariousAggregates/Resources/payment.csv)
+
+* [query.sql](Activities/03-Stu_GregariousAggregates/Unsolved/query.sql)
 
 **Instructions:** [README.md](Activities/03-Stu_GregariousAggregates/README.md)
 
 ### 5. Instructor Do: Review Gregarious Aggregates (5 min)
 
-**File**: [query.sql](Activities/03-Stu_GregariousAggregates/Solved/query.sql)
+**Files:**
+
+* [schema.sql](Activities/03-Stu_GregariousAggregates/Solved/schema.sql)
+
+* [seed.sql](Activities/03-Stu_GregariousAggregates/Solved/seed.sql)
+
+* [query.sql](Activities/03-Stu_GregariousAggregates/Solved/query.sql)
 
 Review the solution in pgAdmin and explain the following:
 
-* Postgres uses double quotes for table and column names, and single quotes for string constants.
+* By using the `AVG`, `SUM`, `MIN`, and `MAX` aggregate functions on the `amount` column of the `payment` table, the average, total, minimum, and maximum payments can be determined.
 
-* `GROUP BY` is similar to the `groupby` operation in Pandas.
+  ```sql
+  SELECT AVG(amount) AS "avg_payment_amount"
+  FROM payment;
 
-* `SELECT` without aggregates can only choose the columns in the `GROUP BY` clause.
+  SELECT SUM(amount) AS "total_payment_amount"
+  FROM payment;
+
+  SELECT MIN(amount) AS "min_payment_amount"
+  FROM payment;
+
+  SELECT MAX(amount) AS "max_payment_amount"
+  FROM payment;
+  ```
+
+* Grouping by the `customer_id` of the `payment` table groups multiple records together by the same `customer_id` value, allowing aggregate functions such as the `COUNT` function to count the number of grouped records per `customer_id`. Therefore, calculating the number of payments per customer in this context.
+
+  ```sql
+  SELECT customer_id, COUNT(*) AS "payment_count"
+  FROM payment
+  GROUP BY customer_id;
+  ```
+
+* Similarly, grouping by the `staff_id` of the `payment` table and then using the `COUNT` function on the `customer_id` displays the number of customers each staff member has helped service or check out.
+
+  ```sql
+  SELECT staff_id, COUNT(customer_id) AS "customer_count"
+  FROM payment
+  GROUP BY staff_id;
+  ```
 
 Answer any questions before moving on.
 
@@ -239,7 +287,7 @@ Open pgAdmin and explain the following:
 
   ```sql
   SELECT film_id, AVG(length)  AS "avg length" FROM film
-  GROUP BY film_id, title
+  GROUP BY film_id
   ORDER BY "avg length";
   ```
 
@@ -270,25 +318,83 @@ Open pgAdmin and explain the following:
 
 Answer any questions before moving on.
 
-### 7. Student Do: Movies Ordered By (15 min)
+### 7. Student Do: Payments Ordered By (15 min)
 
 In this activity, you will use `ORDER BY` in combination with other SQL methods to query and order the tables.
 
+**Files:**
+
+* [payment.csv](Activities/05-Stu_Order_By/Resources/payment.csv)
+
+* [query.sql](Activities/05-Stu_Order_By/Unsolved/query.sql)
+
 **Instructions:** [README.md](Activities/05-Stu_Order_By/README.md)
 
-### 8. Instructor Do: Review Movies Ordered By (5 min)
+### 8. Instructor Do: Review Payments Ordered By (5 min)
 
-**File:** [query.sql](Activities/05-Stu_Order_By/Solved/query.sql)
+**Files:**
+
+* [schema.sql](Activities/05-Stu_Order_By/Solved/schema.sql)
+
+* [seed.sql](Activities/05-Stu_Order_By/Solved/seed.sql)
+
+* [query.sql](Activities/05-Stu_Order_By/Solved/query.sql)
 
 Open pgAdmin and walk through the solution, highlighting the following:
 
-* The `actor` table is grouped by `first_name`, with an aggregate taking the count and then given an alias of `actor count`. The query is then ordered in descending order by the count.
+* Using the `ORDER BY` clause in conjunction with the `COUNT` function ensures that aggregate results are now ordered in `DESC` or descending order. In this case, the number of payments per customer is calculated and ordered from the customers with the top number of payments to customers with the lowest number of payments.
 
-* The `ROUND` function is used to limit the results to two decimal places.
+  ```sql
+  SELECT customer_id, COUNT(*) AS payment_count
+  FROM payment
+  GROUP BY customer_id
+  ORDER BY COUNT(*) DESC;
+  ```
 
-* `LIMIT 10` is added to the end of the query to return the top 10 results.
+* The `ORDER BY` clause can be used in either `ASC` (ascending) or `DESC` (descending) order. When used in conjunction with the `LIMIT` clause, results can be filtered down to the desired record count, which in this case will display the top 5 and bottom 5 customer payment counts.
 
-* For the bonus, a `JOIN` is needed to combine the `country` and `city` tables. The return of the join can then be grouped and aggregated. The result is sorted by the count of countries in descending order.
+  ```sql
+  SELECT customer_id, SUM(amount) AS total_payment_amount
+  FROM payment
+  GROUP BY customer_id
+  ORDER BY SUM(amount) DESC
+  LIMIT 5;
+
+  select customer_id, SUM(amount) AS total_payment_amount
+  FROM payment
+  GROUP BY customer_id
+  ORDER BY SUM(amount) ASC
+  LIMIT 5;
+  ```
+
+* When calculating averages, average values can be lengthy in terms of their decimal places. Therefore, the `ROUND` function can be used to limit the results to the desired decimal place (in this case, two decimal places).
+
+  ```sql
+  SELECT customer_id, ROUND(AVG(amount), 2) AS average_payment_amount
+  FROM payment
+  GROUP BY customer_id
+  ORDER BY AVG(amount) DESC
+  LIMIT 5;
+  ```
+
+* For the first bonus, the `payment` table alone does not contain staff information, only a `staff_id`. Therefore, the `JOIN` is necessary to access the `first_name` and `last_name` of the `staff` table, which can then be used in the `GROUP BY` clause to group by staff names and then calculate the count of customers they've serviced.
+
+  ```sql
+  SELECT first_name, last_name, COUNT(customer_id) AS customer_count
+  FROM payment AS a
+  JOIN staff AS b ON a.staff_id = b.staff_id
+  GROUP BY first_name, last_name
+  ORDER BY COUNT(customer_id) DESC;
+  ```
+
+* The `CAST` function can be used to convert datetime column values to date datatypes. This effectively shortens the value to just the date portions (rather than date and timestamp), which allows for grouping by common date values.
+
+  ```sql
+  SELECT CAST(payment_date AS DATE), COUNT(*)
+  FROM payment
+  GROUP BY CAST(payment_date AS DATE)
+  ORDER BY COUNT(*) DESC;
+  ```
 
 ---
 
@@ -302,7 +408,17 @@ In this activity, students will be introduced to the concept of subqueries to qu
 
 Use the `Subqueries` section of the slides to begin the discussion of subqueries. A **subquery** is nested inside a larger query.
 
-**File:** [query.sql](Activities/06-Ins_Subqueries/Solved/query.sql)
+**Files:**
+
+* [film.csv](Activities/06-Ins_Subqueries/Resources/film.csv)
+
+* [inventory.csv](Activities/06-Ins_Subqueries/Resources/inventory.csv)
+
+* [schema.sql](Activities/06-Ins_Subqueries/Solved/schema.sql)
+
+* [seed.sql](Activities/06-Ins_Subqueries/Solved/seed.sql)
+
+* [query.sql](Activities/06-Ins_Subqueries/Solved/query.sql)
 
 Explain that there is often more than one way of accomplishing a task in SQL.
 
@@ -393,62 +509,101 @@ Answer any questions before moving on.
 
 In this activity, students will practice creating subqueries.
 
+**Files:**
+
+* [payment.csv](Activities/07-Stu_Subqueries/Resources/payment.csv)
+
+* [customer.csv](Activities/07-Stu_Subqueries/Resources/customer.csv)
+
+* [staff.csv](Activities/07-Stu_Subqueries/Resources/staff.csv)
+
+* [rental.csv](Activities/07-Stu_Subqueries/Resources/rental.csv)
+
+* [query.sql](Activities/07-Stu_Subqueries/Unsolved/query.sql)
+
 **Instructions:** [README.md](Activities/07-Stu_Subqueries/README.md)
 
 ### 12. Instructor Do: Review Subqueries (5 min)
 
-**File:** [query.sql](Activities/07-Stu_Subqueries/Solved/query.sql)
+**Files:**
+
+* [schema.sql](Activities/07-Stu_Subqueries/Solved/schema.sql)
+
+* [seed.sql](Activities/07-Stu_Subqueries/Solved/seed.sql)
+
+* [query.sql](Activities/07-Stu_Subqueries/Solved/query.sql)
 
 Review the solution in pgAdmin and explain the following:
 
-* In the first query, we're seeking the name and ID number of cities from a given list:
-
-  ```sql
-  SELECT city, city_id
-  FROM city
-  WHERE city IN ('Qalyub', 'Qinhuangdao', 'Qomsheh', 'Quilmes');
-  ```
-
-* The second query is a subquery to select the `district`.
-
-* This query will select the `district` where `city_id` is in the results from the first query.
-
-  ```sql
-  SELECT district
-  FROM address
-  WHERE city_id IN
-  (
-    SELECT city_id
-    FROM city
-    WHERE city IN ('Qalyub', 'Qinhuangdao', 'Qomsheh', 'Quilmes')
-  );
-  ```
-
-* Because `district` is not available in the `city` table, we had to use the `city_id` from the `city` table. The `city_id` will now allow a connection between `district` and `city`.
-
-* The bonus adds another level of subqueries. It requires querying information from the `city` table, with which the `address` table is queried. That information is then used to query the `customer` table.
+* The first question asks to find the `first_name` and `last_name` of all customers who have made payments. Specifically, the query returns the `first_name` and `last_name` of all customers whose `customer_id` is present in the `payment` table.
 
   ```sql
   SELECT first_name, last_name
-  FROM customer cus
-  WHERE address_id IN
-  (
-    SELECT address_id
-    FROM address a
-    WHERE city_id IN
+  FROM customer
+  WHERE customer_id IN
     (
-      SELECT city_id
-      FROM city
-      WHERE city LIKE 'Q%'
-    )
-  );
+    SELECT customer_id
+    FROM payment
+    );
+  ```
+
+* The second question asks to find the `email` of all staff that have helped service customers and their payments. Specifically, the query returns the `email` of all staff whose `staff_id` is present in the `payment` table.
+
+  ```sql
+  SELECT email
+  FROM staff
+  WHERE staff_id IN
+    (
+    SELECT staff_id
+    FROM payment
+    );
+  ```
+
+* The third question asks to find the entire rental records of all rentals that have been purchased. Specifically, the query returns all columns of the `rental` table for those `rental_ids` that are present in the `payment` table.
+
+  ```sql
+  SELECT *
+  FROM rental
+  WHERE rental_id IN
+    (
+    SELECT rental_id
+    FROM payment
+    );
+  ```
+
+* The bonus adds additional layers of nested subqueries. It requires querying a `rental_id` from the `payment` table, which is then used to query the `inventory_id` from the `rental` table, which is then used to query the `film_id` from the `inventory table`. Finally, the top level select statement returns the film titles that pertain to the `film_id` queried up the chain of nested subqueries.
+
+  ```sql
+  SELECT title
+  FROM film
+  WHERE film_id IN
+    (
+    SELECT film_id
+    FROM inventory
+    WHERE inventory_id IN
+      (
+      SELECT inventory_id
+      FROM rental
+      WHERE rental_id IN
+        (
+        SELECT rental_id
+        FROM payment
+        )
+      )
+    );
   ```
 
 ### 13. Instructor Do: Create Views (10 min)
 
-In this activity, students will learn how to create and utilize views, virtual tables that can be created from a single table, multiple tables, or another view.
+In this activity, students will learn how to create and utilize views—virtual tables that can be created from a single table, multiple tables, or another view.
 
-**File:** [query.sql](Activities/08-Ins_Create_Views/Solved/query.sql)
+**Files:**
+
+* [schema.sql](Activities/08-Ins_Create_Views/Solved/schema.sql)
+
+* [seed.sql](Activities/08-Ins_Create_Views/Solved/seed.sql)
+
+* [query.sql](Activities/08-Ins_Create_Views/Solved/query.sql)
 
 Use the `SQL Views` section of the slides to begin the discussion of views.
 
@@ -522,35 +677,76 @@ For the remainder of the activity, have students create and drop their views.
 
 In this activity, students will pair up and practice their join and subquery skills, as well as build out a view.
 
-* **File:** [subquery.png](Images/subquery.png)
+**Files**:
 
-* **Instructions:** [README.md](Activities/09-Stu_View_Room_Queries/README.md)
+* [payment.csv](Activities/09-Stu_View_Room_Queries/Resources/payment.csv)
+
+* [customer.csv](Activities/09-Stu_View_Room_Queries/Resources/customer.csv)
+
+* [query.sql](Activities/09-Stu_View_Room_Queries/Unsolved/query.sql)
+
+**Instructions:** [README.md](Activities/09-Stu_View_Room_Queries/README.md)
 
 ### 15. Instructor Do: Review a View with a Roomful of Queries (5 min)
 
-**File**: [query.sql](Activities/09-Stu_View_Room_Queries/Solved/query.sql)
+**Files**:
+
+* [schema.sql](Activities/09-Stu_View_Room_Queries/Solved/schema.sql)
+
+* [seed.sql](Activities/09-Stu_View_Room_Queries/Solved/seed.sql)
+
+* [query.sql](Activities/09-Stu_View_Room_Queries/Solved/query.sql)
 
 Review the code in the solution file and explain the following:
 
-* Two pieces of information are required in the query: (1) the title of a film and (2) the number of copies of the title in the system.
+* The `payment` table already contains the information necessary to calculate the payment count and total payment amount per `customer_id`; however, in order to pull the customer `first_name` and `last_name`, it is necessary to `JOIN` the `payment` table to the `customer` table via the common `customer_id`. Thus, instead of grouping by the `customer_id`, we can group by the `first_name` and `last_name` columns of the joined `customer` table.
 
   ```sql
-  SELECT title,
-  (SELECT COUNT(inventory.film_id)
-    FROM inventory
-    WHERE film.film_id = inventory.film_id ) AS "Number of Copies"
-  FROM film;
+  CREATE VIEW customer_revenues AS
+  SELECT first_name, last_name, COUNT(payment_id) AS payment_count, SUM(amount) AS total_amount
+  FROM payment AS a
+  JOIN customer AS b ON a.customer_id = b.customer_id
+  GROUP BY first_name, last_name
+  ORDER BY SUM(amount) DESC;
   ```
 
-* Add `CREATE VIEW title_count AS` before the above query to create a view for the results.
-
-* The newly created table view, `title_count`, can now be queried to find which titles have 7 copies in the inventory.
+* Querying the newly created `customer_revenues` view for `THERESA ROGERS` shows her total payment count and total revenues generated.
 
   ```sql
-  SELECT title, "Number of Copies"
-  FROM title_count
-  WHERE "Number of Copies" = 7;
+  SELECT *
+  FROM customer_revenues
+  WHERE first_name = 'THERESA'
+  AND last_name = 'WATSON';
   ```
+
+  ![theresa-watson](Images/theresa-watson.png)
+
+* The `payment` table already contains the information necessary to calculate the payment count and total payment amount per `staff_id`; however, the `staff_id` is not descriptive enough to determine if that value represents `Mike Hillyer`. Therefore, if using a subquery to answer the question, the `staff_id` of `Mike Hillyer` should be determined using a nested subquery for the `staff` table, which is then used in the top-level query to `GROUP BY` `staff_id` and (the casted) `payment_date`.
+
+  ```sql
+  CREATE VIEW staff_sales AS
+  SELECT staff_id, CAST(payment_date AS DATE), COUNT(payment_id) AS payment_count, SUM(amount) AS total_amount
+  FROM payment
+  WHERE staff_id IN
+  (
+    SELECT staff_id
+    FROM staff
+    WHERE first_name = 'Mike'
+    AND last_name = 'Hillyer'
+  )
+  GROUP BY staff_id, CAST(payment_date AS DATE)
+  ORDER BY CAST(payment_date AS DATE) DESC;
+  ```
+
+* Querying the newly created `staff_sales` view for the date `2005-07-31` shows the total payment count and total revenues generated from `staff_id` = 1, which represents `Mike Hillyer`.
+
+  ```sql
+  SELECT *
+  FROM staff_sales
+  WHERE payment_date = '2005-07-31';
+  ```
+
+  ![mike-hillyer](Images/mike-hillyer.png)
 
 Ask if there are any questions before moving on.
 
@@ -560,6 +756,10 @@ In this activity, students will gain further experience with more advanced subqu
 
 **Files**:
 
+* [schema.sql](Activities/10-Ins_Revist_Subquery/Solved/schema.sql)
+
+* [seed.sql](Activities/10-Ins_Revist_Subquery/Solved/seed.sql)
+
 * [query.sql](Activities/10-Ins_Revist_Subquery/Solved/query.sql)
 
 * [Pagila ERD](http://www.postgresqltutorial.com/postgresql-sample-database/)
@@ -568,7 +768,7 @@ Discuss the following points with students:
 
 * Up to this point, the subqueries we've seen have been relatively straightforward. In this activity, we will look at more complicated examples, but don't worry. We can perform complexly nested subqueries using the same principles that we've learned so far.
 
-* We begin with a question: how many people have rented the film *Blanket Beverly*? To answer this question systematically, we must first identify the tables needed for our query.
+* Begin with a question: How many people have rented the film *Blanket Beverly*? To answer this question systematically, we must first identify the tables needed for our query.
 
 * To help with this process, an **entity relationship diagram (ERD)** is used.
 
@@ -576,7 +776,7 @@ Slack out the [ERD](http://www.postgresqltutorial.com/postgresql-sample-database
 
 * An ERD shows the connections between the tables.
 
-* The schema makes it easier to identify the tables we need as well as the keys we will use to link our subqueries.
+* The schema makes it easier to identify the tables we need, as well as the keys we will use to link our subqueries.
 
 * We will dive deeper into these in the next lesson.
 
@@ -604,31 +804,31 @@ The sample query would be as follows:
   SELECT COUNT(*)
   FROM customer
   WHERE customer_id IN
-  (
-    SELECT customer_id
-    FROM payment
-    WHERE rental_id IN
-  (
-    SELECT rental_id
-    FROM rental
-    WHERE inventory_id IN
     (
-      SELECT inventory_id
-      FROM inventory
-      WHERE film_id IN
+      SELECT customer_id
+      FROM payment
+      WHERE rental_id IN
       (
-        SELECT film_id
-        FROM film
-        WHERE title = 'BLANKET BEVERLY'
+        SELECT rental_id
+        FROM rental
+        WHERE inventory_id IN
+        (
+          SELECT inventory_id
+          FROM inventory
+          WHERE film_id IN
+          (
+            SELECT film_id
+            FROM film
+            WHERE title = 'BLANKET BEVERLY'
+          )
+        )
       )
-    )
-  )
-  );
+    );
   ```
 
 * `COUNT(*)` will count the number of rows, similar to how `SELECT *` will select all rows. The asterisk indicates *all*.
 
-Run the query, which will return that 12 people have rented this film.
+Run the query, which will return that 16 people have rented this film.
 
 Explain that there are often multiple ways to find this result through different table relationships.
 
@@ -638,66 +838,84 @@ Answer any questions before moving on.
 
 In this activity, students will continue to practice subqueries. Students can either work individually or in pairs.
 
+**Files**:
+
+* [customer.csv](Activities/11-Stu_Mine_the_Subquery/Resources/customer.csv)
+
+* [film.csv](Activities/11-Stu_Mine_the_Subquery/Resources/film.csv)
+
+* [inventory.csv](Activities/11-Stu_Mine_the_Subquery/Resources/inventory.csv)
+
+* [payment.csv](Activities/11-Stu_Mine_the_Subquery/Resources/payment.csv)
+
+* [rental.csv](Activities/11-Stu_Mine_the_Subquery/Resources/rental.csv)
+
+* [query.sql](Activities/11-Stu_Mine_the_Subquery/Unsolved/query.sql)
+
 **Instructions:** [README.md](Activities/11-Stu_Mine_the_Subquery/README.md)
 
 ### 18. Instructor Do: Review Mine the Subquery (5 min)
 
-**File**: [query.sql](Activities/11-Stu_Mine_the_Subquery/Solved/query.sql)
+**Files**:
+
+* [schema.sql](Activities/11-Stu_Mine_the_Subquery/Solved/schema.sql)
+
+* [seed.sql](Activities/11-Stu_Mine_the_Subquery/Solved/seed.sql)
+
+* [query.sql](Activities/11-Stu_Mine_the_Subquery/Solved/query.sql)
 
 Review the solution to the activity and answer any questions that students have.
 
-A possible solution to the first problem is as follows:
-
-  ```sql
-  SELECT first_name, last_name
-  FROM actor
-  WHERE actor_id IN
-  (
-    SELECT actor_id
-    FROM film_actor
-    WHERE film_id IN
-    (
-      SELECT film_id
-      FROM film
-      WHERE title = 'ALTER VICTORY'
-    )
-  );
-  ```
-
-* It's recommended that you start with the most specific piece of information and work your way up. In this case, the innermost subquery retrieves the `film_id` of the given film title.
-
-* This information is used to retrieve the `actor_id`, which is then used to extract the names of the actors who appear in the film.
-
-A possible solution to the second problem is as follows:
+* The first question calls for all of the titles rented out by the staff member `Jon Stephens`. Therefore, when using subqueries, the `staff_id` of `Jon Stephens` must first be determined so that it can be used "up-the-chain" to the `payment`, `rental`, `inventory`, and `film` tables where we finally pull the `title` column.
 
   ```sql
   SELECT title
   FROM film
-  WHERE film_id
-  IN (
+  WHERE film_id IN
+    (
     SELECT film_id
-      FROM inventory
-      WHERE inventory_id
-      IN (
-          SELECT inventory_id
-          FROM rental
-          WHERE staff_id
-          IN (
-                SELECT staff_id
-                FROM staff
-                WHERE last_name = 'Stephens' AND first_name = 'Jon'
-              )
+    FROM inventory
+    WHERE inventory_id IN
+      (
+      SELECT inventory_id
+      FROM rental
+      WHERE rental_id IN
+        (
+        SELECT rental_id
+        FROM payment
+        WHERE staff_id IN
+          (
+          SELECT staff_id
+          FROM staff
+          WHERE last_name = 'Stephens' AND first_name = 'Jon'
           )
+        )
+      )
     );
   ```
 
-* Similar to the first problem, the query begins with the most specific piece of information and works its way up.
+* The second question calls for the total payment amount generated from the rentals of the film `ACE GOLDFINGER`. Similar to the first question, the `film_id` of `ACE GOLDFINGER` must first be determined so that it can be used "up-the-chain" to the `inventory`, `rental`, and `payment` tables, where we can finally calculate the `SUM` of the `amount` column to calculate the total payment amount for `ACE GOLDFINGER`.
 
-* The employee name is used to query the `staff_id`.
-
-* The `staff_id` is used to retrieve the `inventory_id` from rentals.
-
-* The `inventory_id` is used to retrieve the `film_id`, which is then used to retrieve the relevant film titles.
+  ```sql
+  SELECT SUM(amount) AS total_amount
+  FROM payment
+  WHERE rental_id IN
+    (
+    SELECT rental_id
+    FROM rental
+    WHERE inventory_id IN
+      (
+      SELECT inventory_id
+      FROM inventory
+      WHERE film_id IN
+        (
+        SELECT film_id
+        FROM film
+        WHERE title = 'ACE GOLDFINGER'
+        )
+      )
+    );
+  ```
 
 Answer any questions before ending class.
 
@@ -705,4 +923,4 @@ Answer any questions before ending class.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

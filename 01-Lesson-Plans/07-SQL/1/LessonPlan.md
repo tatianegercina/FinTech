@@ -6,7 +6,7 @@ In today's class, students are introduced to SQL databases and will learn how to
 
 ### Class Objectives
 
-By the end of class, students will be able to:
+By the end of today's class, students will be able to:
 
 * Install and run PostgreSQL (SQL) and pgAdmin (GUI) on their computers.
 
@@ -22,15 +22,18 @@ By the end of class, students will be able to:
 
 ### Instructor Notes
 
-* **Important:** [Instructions](../Supplemental/InstallationGuides) for installing PostgreSQL and pgAdmin should have already been slacked-out prior to today's class, as students needed to install these before class to conserve time for lessons and activities rather than for initial setup.
+* **Important:** [Instructions](../Supplemental/InstallationGuides) for installing PostgreSQL and pgAdmin should be slacked out prior to today's class, as students need to install these before class to conserve time for lessons and activities.
 
-* Today's class will be challenging. In this lesson, a series of activities will introduce students to programming with SQL using PostgreSQL and pgAdmin. The pace of today's class will be quick as students absorb learning a new UI and programming language simultaneously.
+* If you experience any issues importing data as CSV files via pgAdmin, please refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md).
 
-* Because this lesson introduces more than one new concept, circulate through the class during student activities to assist those who appear frustrated or stuck. Some students may already have experience with SQL; embrace these students' knowledge of the language, and have them assist students who are not yet familiar with SQL.
+* Today's class will be challenging. In this lesson, a series of activities will introduce students to programming with SQL using PostgreSQL and pgAdmin. The pace of today's class will be quick, as students absorb learning a new UI and programming language simultaneously.
 
-* This lesson introduces new content rapidly. Students may express frustration at learning a new interface and programming language simultaneously. Explain to students that while the learning curve may be steep at first, SQL experience is highly sought-after and well worth the effort required to become comfortable with it.
+* Because this lesson introduces more than one new concept, you and the TAs should circulate through the class during student activities to assist those who appear frustrated or stuck. Some students may already have SQL experience; embrace their knowledge, and have them assist students who are not yet familiar with SQL.
+
+* This lesson introduces new content rapidly. Students may express frustration at learning a new interface and programming language simultaneously. Explain to students that while the learning curve may be steep at first, SQL experience is highly sought after and well worth the effort required to become comfortable with it.
 
 ### Sample Class Video (Highly Recommended)
+
 * To watch an example class lecture, go here: [7.1 Class Video.](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c6264b7e-e1bb-41d4-be84-aac3016512d0) Note that this video may not reflect the most recent lesson plan.
 
 ---
@@ -43,7 +46,7 @@ By the end of class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
@@ -51,7 +54,7 @@ By the end of class, students will be able to:
 
 Welcome students to class and congratulate them on making it this far in the course! At this point, students are only one unit away from their first project, and so they should feel proud of what they have accomplished so far!
 
-Open the slideshow and overview the learning outcomes, class objectives, and a brief background of the SQL unit:
+Open the slideshow and review the learning outcomes, class objectives, and a brief background of the SQL unit:
 
 * Today's lesson will introduce students to the most popular database management language: SQL.
 
@@ -69,15 +72,15 @@ Open the slideshow to the Postgres section and take some time to go over the pur
 
 * SQL (often pronounced "sequel") stands for Structured Query Language. It is a powerful programming language designed to allow programmers to create, populate, manipulate, and access databases, as well as provide the ability to leverage scalable server-side storage for large volumes of data.
 
-* With SQL, data is stored in tables on the server; much like spreadsheets, you would create in Microsoft Excel. This makes the data easy to visualize and search.
+* With SQL, data is stored in tables on a server, similar to spreadsheets that you would create in Microsoft Excel. This makes the data easy to visualize and search.
 
-* PostgreSQL (usually referred to as "Postgres") is an object-relational database system that uses the SQL language. PostgreSQL is one of the many *vendors* that utilize the underlying SQL technology -- similar to other well-known vendors such as MySQL, Microsoft SQL Server, and Oracle SQL.
+* PostgreSQL (usually referred to as "Postgres") is an object-relational database system that uses the SQL language. PostgreSQL is one of the many *vendors* that utilize the underlying SQL technology—similar to other well-known vendors such as MySQL, Microsoft SQL Server, and Oracle SQL.
 
 * pgAdmin is the database management tool used for working with Postgres. It simplifies the creation, maintenance, and use of database objects by providing a Graphical User Interface (GUI).
 
 Slack out the following resources:
 
-* [Student Guide](../StudentGuide.md) containing this week's objectives as well as resource links.
+* [Student Guide](../Supplemental/StudentGuide.md) containing this week's objectives as well as resource links.
 
 * [SQL Reference Guide](../Supplemental/SQL_reference_guide.pdf) for students to use as a reference during the activities this week.
 
@@ -85,83 +88,94 @@ Slack out the following resources:
 
 ### 3. Instructor Do: Create a Database (5 min)
 
-In this activity, the instructor walks students through the process of creating a database in PostgreSQL.
+In this activity, you will walk students through the process of creating a database in PostgreSQL.
 
 Begin by verifying that everyone has successfully installed pgAdmin and PostgreSQL. Everyone should have completed this step prior to today's class.
 
 * Open pgAdmin in a new browser window and ensure that everyone is able to follow along and view their new server in the browser.
 
- ![browser-view.png](Images/browser-view.png)
+  ![browser-view.png](Images/browser-view.png)
 
 Walk the class through the steps to create a database using pgAdmin.
 
 * In the pgAdmin editor, right-click the newly established server to create a new database.
 
-* From the menu, select Create, and then select Database to create a new database.
+* From the menu, select `Create`, and then select `Database` to create a new database.
 
- ![create_database.png](Images/create_database.png)
+  ![create_database.png](Images/create_database.png)
 
-* Enter "animals_db" as the database name. Make sure the owner is set as the default Postgres, and then click Save.
+* Enter "example_db" as the database name. Make sure the owner is set as the default `Postgres`, and then click Save.
 
- ![animals_db.png](Images/animals_db.png)
+  ![example_db.png](Images/example_db.png)
 
-At this point, show students that there is a new database listed in the left-hand menu. Explain that the new database, `animals_db`, is not yet connected to the server. Simply clicking on the database will create a connection to Postgres.
+At this point, show students that there is a new database listed in the left-hand menu. Explain that the new database, `example_db`, is not yet connected to the server. Simply clicking on the database will create a connection to Postgres.
 
- ![new_db.png](Images/new_db.png)
+![new_db.png](Images/new_db.png)
 
 Answer any questions before moving on.
 
 ### 4. Instructor Do: Create a Table (10 min)
 
-In this activity, the instructor walks students through the process of creating a table and manipulating its contents in PostgreSQL.
+In this activity, you will walk students through the process of creating a table and manipulating its contents in PostgreSQL.
 
 Now that there is a database on the server, it's time to dig into the real meat of SQL and start creating tables within the new database!
 
-From the left-hand menu in pgAdmin, right-click "animals_db" and select Query Tool.
+From the left-hand menu in pgAdmin, right-click "example_db" and select Query Tool.
 
 **Note:** You can also select Query Tool from the Tools drop-down menu at the top of the screen. (See the second screenshot below.)
 
- ![query_tool.png](Images/query_tool.png)
+![query_tool.png](Images/query_tool.png)
 
- ![tools_dropdown.png](Images/tool_dropdown.png)
+![tools_dropdown.png](Images/tool_dropdown.png)
 
 Explain to students that this is how to access the code editor.
 
 Type the following lines of code, explaining each line:
 
- ```sql
- CREATE TABLE people (
- name VARCHAR(30) NOT NULL,
- has_pet BOOLEAN DEFAULT false,
- pet_type VARCHAR(10) NOT NULL,
- pet_name VARCHAR(30),
- pet_age INT
- );
- ```
+```sql
+CREATE TABLE customer (
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30),
+  gender VARCHAR(30),
+  age INT,
+  address VARCHAR(50),
+  city VARCHAR(50),
+  state CHAR(2),
+  zip_code CHAR(5)
+);
+```
 
-* `CREATE TABLE people (<COLUMNS>);` creates a table called `people` with the columns listed within the parentheses.
+* `CREATE TABLE customer (<COLUMNS>);` creates a table called `customer` with the columns listed within the parentheses.
 
-* `name VARCHAR(30) NOT NULL` creates a `name` column, which can hold character strings of up to 30 characters and will not allow null fields.
+* `first_name VARCHAR(30) NOT NULL` creates a `first_name` column that represents the first name of a customer. The column values can hold character strings of up to 30 characters and does not allow NULL values; The `NOT NULL` constraint requires the `first_name` column to have a value specified.
 
-* The `NOT NULL` constraint requires the name field to have a value specified.
+* `last_name VARCHAR(30)` creates a `last_name` column that represents the last name of a customer. The column values can hold character strings of up to 30 characters, and unlike the `first_name` column, allows NULL values.
 
-* `pet_type VARCHAR(10) NOT NULL,` creates a `pet_type` in the same manner as the `name` column is created. The only difference is the number of characters allowed in the column.
+* `gender VARCHAR(30)` creates a `gender` column that represents the gender of the customer. The column values can hold character strings of up to 30 characters.
 
-* `has_pet BOOLEAN DEFAULT false` creates a `has_pet` column that holds either true or false values, though the default value is now set as false.
+* `age INT` creates an `age` column that represents the age of a customer. The column values must be integers.
 
-* `pet_name VARCHAR(30)` creates a `pet_name` column, which can hold character strings of up to 30 characters and will allow null fields.
+* `address VARCHAR(50)` creates an `address` column that represents the street address of a customer. The column values can hold character strings of up to 50 characters.
 
-* `pet_age INT` creates a`pet_age` column, which can hold whole numbers.
+* `city VARCHAR(50)` creates a `city` column that represents the city in which the customer lives. The column values can hold character strings of up to 50 characters.
 
- **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
+* `state VARCHAR(10)` creates a `state` column that represents the state ticker in which the customer lives. The column values must be character strings of 2 characters.
 
-After reviewing the code, click the lightning bolt icon to run the script. Make a note of the Messages tab at the bottom of the screen.
+* `zip_code CHAR(5)` creates `zip_code` column which represents the postal zip code of the customer. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values *must* be character strings of 5 characters.
 
- ![lightning_bolt.png](Images/lightning_bolt.png)
+**Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
 
-Demonstrate that the structure of a table can be visualized using `SELECT * FROM <table name>;`. Point out the error message that now appears at the bottom of the page.
+After reviewing the code, click the play icon to run the script. Make a note of the Messages tab at the bottom of the screen.
 
-* SQL data is persistent; it is not deleted or overwritten when identical commands are run unless specifically commanded.
+![play_icon.png](Images/play_icon.png)
+
+Demonstrate that the structure of a table can be visualized by appending the script with `SELECT * FROM <table name>;`.
+
+Point out that when running the appended script, a "relation <table_name> already exists" error message now appears at the bottom of the page due to the preceding `CREATE TABLE` statement.
+
+![table-exists](Images/table-exists.png)
+
+* SQL data is persistent; it is not deleted or overwritten when identical commands are run, unless specifically commanded.
 
 * This means that when a database or table is created with a name identical to one that already exists, an error will occur, telling the user that the database or table already exists.
 
@@ -171,7 +185,7 @@ Show the class an alternative method:
 
 * Highlight the lines of code to run, and then click the lightning bolt icon to run only the highlighted selection. This method of running SQL code is preferable to deleting the previous code.
 
- ![Select.png](Images/Select.png)
+  ![Select.png](Images/Select.png)
 
 * The structure of a table can be visualized using `SELECT * FROM <table name>;`.
 
@@ -179,42 +193,45 @@ Show the class an alternative method:
 
 * In the future, students will be able to view the structure of their table, and all of the values contained within it, using this same line of code.
 
-Type the following code while explaining what it does line by line.
+Type the following code, while explaining what it does, line by line:
 
- ```sql
- INSERT INTO people (name, has_pet, pet_type, pet_name, pet_age)
- VALUES ('Jacob', true, 'dog', 'Misty', 10),
- ('Ahmed', true, 'rock', 'Rockington', 100),
- ('Peter', true, 'cat', 'Franklin', 2),
- ('Dave', true, 'dog', 'Queso', 1);
+```sql
+INSERT INTO customer
+  (first_name, last_name, gender, age, address, city, state, zip_code)
+VALUES
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
+  ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
+  ('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
 
- SELECT *
- FROM people;
- ```
+SELECT *
+FROM customer;
+```
 
-* This code operates as it reads: it inserts data into the `people` table and then specifies the columns in which data will be entered.
+* This code operates as it reads: it inserts data into the `customer` table and then specifies the columns in which data will be entered.
 
 * The `VALUES` line places the data contained in the parentheses into the corresponding columns listed after the `INSERT INTO` statement.
 
 * Single quotations must be used for insert strings; otherwise, an error will result.
 
-Use the following code to query the table, extracting only the `pet_name`.
+Use the following code to query the table, extracting only the `first_name`.
 
- ```sql
- SELECT pet_name
- FROM people;
- ```
+```sql
+SELECT first_name
+FROM customer;
+```
 
 Explain that specifying a column name in the `SELECT` statement will return only the data contained in that field.
 
-Filter the queried data to display only dogs younger than 5.
+Filter the queried data to display only male customers younger than 34.
 
- ```sql
- SELECT pet_type, pet_name
- FROM people
- WHERE pet_type = 'dog'
- AND pet_age < 5;
- ```
+```sql
+SELECT first_name, last_name
+FROM customer
+WHERE
+  gender = 'Male'
+  AND age < 34;
+```
 
 Explain the following points:
 
@@ -234,84 +251,96 @@ In this activity, students will use pgAdmin to recreate and query a table from a
 
 ### 6. Instructor Do: Review Creating Tables (5 min)
 
-**File:** [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql)
+**Files:**
 
-Create a new database named `city_info` in pgAdmin. Then use the query tool to copy and paste, or live code, the solution from [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql).
+* [schema.sql](Activities/03-Stu_Creating_Tables/Solved/schema.sql)
+
+* [seed.sql](Activities/03-Stu_Creating_Tables/Solved/seed.sql)
+
+* [query.sql](Activities/03-Stu_Creating_Tables/Solved/query.sql)
+
+Create a new database named `state_info` in pgAdmin. Then use the the schema.sql and seed.sql files to create and populate the `states` table. Use the query.sql file to walk through the correct queries.
 
 * To create a new table, specify the data type for each column.
 
- ```sql
- CREATE TABLE cities (
- city VARCHAR(30) NOT NULL,
- state VARCHAR(30) NOT NULL,
- population INT
- );
- ```
+  ```sql
+  CREATE TABLE states (
+    state_name VARCHAR(50),
+    state_abbreviation CHAR(2),
+    population INT,
+    state_property_tax_rate FLOAT
+  );
+  ```
 
 * Insert multiple rows of data into the new table.
 
 * Each column is specified in the `INSERT INTO` clause, and the values are inserted in the same order.
 
-* To make the code easier to read, each row of values is on its line, separated by a comma.
+* To make the code easier to read, each row of values is on its own line, separated by a comma.
 
- ```sql
- INSERT INTO cities (city, state, population)
- VALUES ('Alameda', 'California', 79177),
- ('Mesa', 'Arizona', 496401),
- ('Boerne', 'Texas', 16056),
- ('Anaheim', 'California', 352497),
- ('Tucson', 'Arizona', 535677),
- ('Garland', 'Texas', 238002);
- ```
+  ```sql
+  INSERT INTO states
+    (state_name, state_abbreviation, population, state_property_tax_rate)
+  VALUES
+    ('Florida', 'FL', 21477737, 0.0093),
+    ('Alabama', 'AL', 4903185, 0.0042),
+    ('Texas', 'TX', 28995881, 0.0181),
+    ('Kentucky', 'KY', 4467673, 0.0086),
+    ('Virginia', 'VA', 8535519, 0.0081),
+    ('Louisiana', 'LA', 4648794, 0.0053),
+    ('Utah', 'UT', 3205958, 0.0064),
+    ('Vermont', 'VT', 623989, 0.0188);
+  ```
 
 * Create a query to view the data using the `SELECT` clause.
 
- ```sql
- SELECT *
- FROM cities;
- ```
+  ```sql
+  SELECT *
+  FROM states;
+  ```
 
 * Note the syntax here. Even though the code can fit on a single line, it's good practice to split it up over two lines instead. This way, the code is easier to read when more advanced queries are created.
 
-Using the `SELECT` clause again, query the data to return only the cities in the table.
+* Using the `SELECT` clause again, query the data to return only the state names in the table.
 
- ```sql
- SELECT city
- FROM cities;
- ```
+  ```sql
+  SELECT state_name
+  FROM states;
+  ```
 
-* The first bonus question incorporates a `WHERE` clause, which further filters the data.
+Now, walk through the solutions for the first and second bonus questions.
+
+* The first bonus question is very similar to the previous query executed, in that it displays only the values of a single column.
+
+  ```sql
+  SELECT state_abbreviation
+  FROM states;
+  ```
+
+* The second bonus question incorporates a `WHERE` clause, which further filters the data.
 
 * The `WHERE` clause is used to search for specific data within a database. In this case, we are extracting only the records that meet the specified condition.
 
-* In the line `WHERE state = 'Arizona';` we are specifying Arizona in the state column.
+* In the line `WHERE population > 5000000;` we are filtering for records that have a value that is greater than 5000000 in the population column.
 
- ```sql
- SELECT city, state
- FROM cities
- WHERE state = 'Arizona';
- ```
+  ```sql
+  SELECT *
+  FROM states
+  WHERE population > 5000000;
+  ```
 
-Demonstrate the solution to the second bonus question.
+* Note that the `WHERE` clause is highly customizable, and can use several operators like `<` (less than), `>` (greater than), and `=` (equal to).
 
-* Note that the `WHERE` clause is highly customizable, such as with the use of the `<` operator.
-
- ```sql
- SELECT *
- FROM cities
- WHERE population < 100000;
- ```
-
-Walk through the solution to the third and final bonus question.
+Now, walk through the solutions for the third and final bonus questions.
 
 * Queries can be filtered even further with the `AND` clause. This clause allows users to specify more than one condition in their query.
 
- ```sql
- SELECT *
- FROM cities
- WHERE population < 100000
- AND state = 'California';
- ```
+  ```sql
+  SELECT *
+  FROM states
+  WHERE population > 5000000
+  AND state_property_tax_rate < 0.01;
+  ```
 
 Answer any questions before moving on.
 
@@ -319,64 +348,80 @@ Answer any questions before moving on.
 
 In this activity, students are introduced to the concept of duplicate and unique values and how to properly remove duplicate records through the use of unique identifiers.
 
-**File:** [query.sql](Activities/04-Ins_Values_of_Uniques/Solved/query.sql)
+**Files:**
 
-Using the `people` table from the `animals_db` database, insert the duplicate data below into the table, and then visualize the table with the new information.
+* [schema.sql](Activities/04-Ins_Values_of_Uniques/Solved/schema.sql)
 
- ```sql
- INSERT INTO people (name, has_pet, pet_type, pet_name, pet_age)
- VALUES ('Ahmed', true, 'rock', 'Rockington', 100);
+* [seed.sql](Activities/04-Ins_Values_of_Uniques/Solved/seed.sql)
 
- SELECT *
- FROM people;
- ```
+* [query.sql](Activities/04-Ins_Values_of_Uniques/Solved/query.sql)
 
-Explain that duplicate data is a real-world occurrence (and an eyesore). Demonstrate how to remove the rows containing the string `Ahmed` in the `name` column.
+Using the `customer` table from the `example_db` database, insert the duplicate data below into the table, and then visualize the table with the new information.
 
  ```sql
- DELETE FROM people
- WHERE name = 'Ahmed';
- ```
+INSERT INTO customer
+  (first_name, last_name, gender, age, address, city, state, zip_code)
+VALUES
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
+
+SELECT *
+FROM customer;
+```
+
+![duplicate-records](Images/duplicate-records.png)
+
+Explain that duplicate data is a real-world occurrence (and an eyesore). Demonstrate how to remove the rows containing the string `Michael` in the `first_name` column.
+
+```sql
+DELETE FROM customer
+WHERE first_name = 'Michael';
+```
 
 * The duplicate was deleted, but so was the original row. That's a little annoying. Make sure the class understands why this happened.
 
-* Because the name Ahmed appears twice in the table, SQL assumes that the user wants to delete every column containing that name; it doesn't understand that the user is simply trying to remove the duplicate row.
+* Because the name Michael appears twice in the table, SQL assumes that the user wants to delete every column containing that name; it doesn't understand that the user is simply trying to remove the duplicate row.
 
-* To prevent this kind of thing from occurring, programmers will often want to create a column that automatically populates each new row with unique data. This allows them to select and modify that row more easily.
+* To prevent this from occurring, programmers will often want to create a column that automatically populates each new row with unique data. This allows them to select and modify that row more easily.
 
-Remove the `people` table by running the following line of code:
+Remove the `customer` table by running the `DROP TABLE` statement. As the name suggests, the `DROP TABLE` statement "drops" or deletes a table, while the `IF EXISTS` clause provides a conditional for dropping the table: if the table exists, then drop the table, otherwise skip the statement.
 
- ```sql
- -- Delete the table "people"
- DROP TABLE people;
- ```
+```sql
+-- Delete the table "customer"
+DROP TABLE IF EXISTS customer;
+```
 
-Copy the following code from the `query.sql` file and paste it in the pgAdmin editor.
+Copy the following code from `schema.sql`, `seed.sql`, and `query.sql` file and paste it in the pgAdmin editor.
 
- ```sql
- -- Re-create the table "people" within animals_db
- CREATE TABLE people (
- id SERIAL PRIMARY KEY,
- name VARCHAR(30) NOT NULL,
- has_pet BOOLEAN DEFAULT false,
- pet_type VARCHAR(10) NOT NULL,
- pet_name VARCHAR(30),
- pet_age INT
- );
+```sql
+-- Re-create the table "customer" with an incremental primary key
+CREATE TABLE customer (
+  customer_id SERIAL PRIMARY KEY,
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30),
+  gender VARCHAR(30),
+  age INT,
+  address VARCHAR(50),
+  city VARCHAR(50),
+  state CHAR(2),
+  zip_code CHAR(5)
+);
 
- -- Insert data into the table
- INSERT INTO people (name, has_pet, pet_type, pet_name, pet_age)
- VALUES ('Jacob', true, 'dog', 'Misty', 10),
- ('Ahmed', true, 'rock', 'Rockington', 100),
- ('Ahmed', true, 'rock', 'Rockington', 100),
- ('Peter', true, 'cat', 'Franklin', 2),
- ('Dave', true, 'dog', 'Queso', 1),
- ('Dave', true, 'dog', 'Pringles', 7);
+-- Insert duplicated data back into the re-created table
+INSERT INTO customer
+  (first_name, last_name, gender, age, address, city, state, zip_code)
+VALUES
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
+  ('Cindy', 'Stephens', 'Female', 23, '838 Brown Street', 'East Christina', 'MT', 07829),
+  ('John', 'Jackson', 'Male', 34, '5319 Candice Motorway', 'Adkinstown', 'AZ', 89721),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673),
+  ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709),
+  ('Alexander', 'Martinez', 'Male', 32, 'USNS Mosley', 'FPO', 'AA', 24673);
 
- -- Query all fields from the table
- SELECT *
- FROM people;
- ```
+-- Query all fields from the table
+SELECT *
+FROM customer;
+```
 
 Explain the following points:
 
@@ -386,40 +431,40 @@ Explain the following points:
 
 * By default, the starting value is 1, and it will increase by 1 for each new record. When using `SERIAL` with our unique `PRIMARY KEY`, we automatically get unique, incrementing values for each table row.
 
-* Because values will automatically increment, each row's ID is guaranteed to be unique. This ensures that SQL does not identify and update the wrong row when CRUD (Create, Read, Update, Delete) statements are implemented (will cover in the following activities).
+* Because values will automatically increment, each row's ID is guaranteed to be unique. This ensures that SQL does not identify and update the wrong row when CRUD (Create, Read, Update, Delete) statements are implemented (which we'll cover in the following activities).
 
-* The `INSERT` statements have not changed, as they do not need to insert data specifically into the `id` column. SQL automatically provides value for this column, fulfilling the uniqueness constraint by automatically incrementing the last value used as an ID.
+* The `INSERT` statements have not changed, as they do not need to insert data specifically into the `customer_id` column. SQL automatically provides value for this column, fulfilling the uniqueness constraint by automatically incrementing the last value used as a customer ID.
 
-* The data type for the `id` column is automatically assigned as an integer.
+* The data type for the `customer_id` column is automatically assigned as an integer.
 
-* One entry in the table is incorrect: one of the Daves has the wrong `pet_name` and `pet_age`. We need to update the `pet_name` from Pringles to Rocket and the `pet_age` from 7 to 8.
+* One entry in the table is incorrect: one of the Michaels has the wrong `first_name` and `age`. We need to update the `first_name` from Michael to Brian and the `age` from 24 to 20.
 
-* To avoid issues with updating multiple rows, it's best to update by ID. First, query by name to find the ID for the row we want to update.
+* To avoid issues with updating multiple rows, it's best to update by the customer ID. First, query by name to find the ID for the row we want to update.
 
- ```sql
- SELECT id, name, pet_name, pet_age
- FROM people
- WHERE name = 'Dave';
- ```
+  ```sql
+  SELECT customer_id, first_name, last_name, age
+  FROM customer
+  WHERE first_name = 'Michael';
+  ```
 
-* This will return all rows that contain the name Dave, including the `id`, `pet_name`, and `pet_age` columns.
+* This will return all rows that contain the name Michael, including the `customer_id`, `first_name`, `last_name`, and `age` columns.
 
-* Next, we can select and update the `pet_name` from Pringles to Rocket and the `pet_age` from 7 to 8 based on the row's unique ID.
+* Next, we can select and update the `first_name` from Michael to Brian and the `age` from 24 to 20 based on the row's unique ID.
 
- ```sql
- UPDATE people
- SET has_pet = true, pet_name = 'Rocket', pet_age = 8
- WHERE id = 6;
- ```
+  ```sql
+  UPDATE customer
+  SET first_name = 'Brian', age = 20
+  WHERE customer_id = 5;
+  ```
 
-* Note that similar to a query, the `WHERE` statement is used to pinpoint the data we want to change. In this case, the `id` column is used to select the unique row we want to affect.
+* Note that similar to a query, the `WHERE` statement is used to pinpoint the data we want to change. In this case, the `customer_id` column is used to select the unique row we want to affect.
 
-* Duplicate data is also easier to remove with the use of a unique ID. With the following code, remove the duplicate data:
+* Duplicate data is also easier to remove with the use of a unique ID. With the following code, remove the duplicate data for "Alexander Martinez":
 
- ```sql
- DELETE FROM people
- WHERE id = 3;
- ```
+  ```sql
+  DELETE FROM customer
+  WHERE customer_id = 6;
+  ```
 
 * This does precisely what was desired: duplicate data is deleted, and original data is preserved.
 
@@ -433,13 +478,32 @@ In this activity, students will recreate a table and then query, insert, and upd
 
 ### 9. Instructor Do: Review Making and Using an ID (10 min)
 
-**File:** [query.sql](Activities/05-Stu_Making_IDs/Solved/query.sql)
+**Files:**
+
+* [schema.sql](Activities/05-Stu_Making_IDs/Solved/schema.sql)
+
+* [seed.sql](Activities/05-Stu_Making_IDs/Solved/seed.sql)
+
+* [query.sql](Activities/05-Stu_Making_IDs/Solved/query.sql)
 
 Open [query.sql](Activities/05-Stu_Making_IDs/Solved/query.sql) and copy the code into pgAdmin.
 
 Go over the lines of code used to create the ID and set it as the primary key. Make sure the class understands how this works, and explain how useful this will be in this week's homework.
 
-Review how to create a new column using the `ALTER TABLE` and `ADD COLUMN` statements. Explain that adding the column name and data type is completed in the same manner as creating a new table.
+```sql
+CREATE TABLE banks (
+  bank_id SERIAL PRIMARY KEY,
+  bank_name VARCHAR(50),
+  bank_routing_number BIGINT
+);
+```
+
+Review the bonus for creating a new column using the `ALTER TABLE` and `ADD COLUMN` statements. Explain that adding the column name and data type is completed in the same manner as creating a new table, and that the purpose of a BOOLEAN column could be to serve as a quick checkbox: True or False. In this case, the BOOLEAN column `mortgage_lender` serves as a value to represent banks that are eligible mortgage lenders.
+
+```sql
+ALTER TABLE banks
+ADD COLUMN mortgage_lender BOOLEAN default true;
+```
 
 Answer any questions before moving on.
 
@@ -451,37 +515,41 @@ Answer any questions before moving on.
 
 ### 11. Instructor Do: Import Data (10 min)
 
-In this activity, students learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
+In this activity, students will learn how to import data (CSV) into an existing table in a database using the Import/Export tool in pgAdmin.
+
+**Note:** If issues arise when using the pgAdmin Import/Export tool, there is an included [seed.sql](Activities/06-Ins_Importing_Data/Solved/seed.sql) file within the Solved folder of each instructor/student activity in the remaining half of the day. Distribute and use the file when necessary and refer to the SQL troubleshooting [guide](../Supplemental/SQL_troubleshooting_guide.md) for more information on how to use the file.
 
 **Files:**
 
-* [birdsong.csv](Activities/06-Ins_Importing_Data/Resources/birdsong.csv)
+* [mortgage.csv](Activities/06-Ins_Importing_Data/Resources/mortgage.csv)
+
+* [schema.sql](Activities/06-Ins_Importing_Data/Solved/schema.sql)
 
 * [query.sql](Activities/06-Ins_Importing_Data/Solved/query.sql)
 
 So far, the class has created its tables and values manually using SQL code. As one might imagine, this process can be tedious when translating large datasets from external sources. Thankfully, pgAdmin includes a built-in import tool that can take CSV files and easily import their data into tables.
 
-Return to pgAdmin and create a new database called `Miscellaneous_DB`.
+Return to pgAdmin and create a new database called `mortgage_db`.
 
 Open the CSV file within an integrated development environment, such as Excel, to show the dataset that will be imported. Be sure to point out that the first row of this dataset includes headers.
 
-* Open a query tool within `Miscellaneous_DB` and create a table named `bird_song`. Point out that the columns created match the data in the CSV file.
+* Open a query tool within `mortgage_db` and create a table named `mortgage`. Point out that the columns created match the data in the CSV file.
 
-* Once the table has been created, right-click Miscellaneous_DB from the left-hand menu and select Refresh.
+* Once the table has been created, right-click `mortgage_db` from the left-hand menu and select Refresh.
 
 * Scroll down to Schemas and expand that menu, and then expand the Tables menu.
 
- ![table-expand.png](Images/table-expand.png)
+  ![table-expand.png](Images/table-expand.png)
 
 * Right-click the new table and select Import/Export from the menu.
 
- ![import-export.png](Images/import-export.png)
+  ![import-export.png](Images/import-export.png)
 
 In the Options tab, complete the following steps:
 
 * Slide the Import/Export tab to Import.
 
-* Click on the dot menu to navigate to the `birdsong.csv` file on your computer.
+* Click on the dot menu to navigate to the `mortgage.csv` file on your computer.
 
 * Slide the Header tab to Yes.
 
@@ -489,29 +557,33 @@ In the Options tab, complete the following steps:
 
 * Leave the other fields as they are, and then click OK.
 
- ![import.png](Images/import.png)
+  ![import.png](Images/import.png)
 
-In the query tool, rerun `SELECT * FROM birdsong` to verify that data has been imported.
+In the query tool, rerun `SELECT * FROM mortgage` to verify that data has been imported.
 
 Let the class know that the larger a dataset is, the longer it will take for pgAdmin to import values.
 
-### 12. Student Do: Hide and Seek (10 min)
+### 12. Student Do: Customer Demographics (10 min)
 
 In this activity, students will create a new table and import data from a CSV file.
 
 **Files:**
 
-* [WordAssociation_AC.csv](Activities/07-Stu_Hide_and_Seek/Resources/WordAssociation_AC.csv)
+* [customer.csv](Activities/07-Stu_Customer_Demographics/Resources/customer.csv)
 
-* [WordAssociation_BC.csv](Activities/07-Stu_Hide_and_Seek/Resources/WordAssociation_BC.csv)
+* **Instructions:** [README.md](Activities/07-Stu_Customer_Demographics/README.md)
 
-**Instructions:** [README.md](Activities/07-Stu_Hide_and_Seek/README.md)
+### 13. Instructor Do: Review Customer Demographics (5 min)
 
-### 13. Instructor Do: Review Hide and Seek (5 min)
+**Files:**
 
-**File:** [query.sql](Activities/07-Stu_Hide_and_Seek/Solved/query.sql)
+* [schema.sql](Activities/07-Stu_Customer_Demographics/Solved/schema.sql)
 
-Open pgAdmin and paste the code from [query.sql](Activities/07-Stu_Hide_and_Seek/Solved/query.sql) into the editor. Explain the following:
+* [seed.sql](Activities/07-Stu_Customer_Demographics/Solved/seed.sql)
+
+* [query.sql](Activities/07-Stu_Customer_Demographics/Solved/query.sql)
+
+Open pgAdmin and paste the code from the schema.sql and query.sql files into the editor. Explain the following:
 
 * Although the CSV data does not contain an `id` column, when we specify `SERIAL PRIMARY KEY` while creating the table, IDs will automatically be assigned to each row.
 
@@ -519,9 +591,7 @@ Open pgAdmin and paste the code from [query.sql](Activities/07-Stu_Hide_and_Seek
 
 * To collect data that exists in either one column or another, the `OR` statement is included in the query.
 
-Walkthrough the solutions to the bonus questions, touching on the following points:
-
-* After importing the second table, we can specify a source with the `WHERE` statement.
+Walk through the solutions to the bonus questions, touching on the following point:
 
 * `AND` statements can be used more than once for more specific results.
 
@@ -529,7 +599,7 @@ Answer any questions before moving on.
 
 ### 14. Instructor Do: CRUD (5 min)
 
-In this activity, students are introduced to the concept of Create, Read, Update, and Delete statements in SQL.
+In this activity, students are introduced to the concept of Create, Read, Update, and Delete (CRUD) statements in SQL.
 
 Return to the `CRUD` section of the slides and begin to explain CRUD operations.
 
@@ -543,32 +613,34 @@ In today's class, each of the operations has been in use. Students have:
 
 * Created data in a table with the `INSERT` statement.
 
- ```sql
- INSERT INTO people (name, has_pet, pet_type, pet_name, pet_age)
- VALUES ('Ahmed', true, 'rock', 'Rockington', 100);
- ```
+  ```sql
+  INSERT INTO customer
+    (first_name, last_name, gender, age, address, city, state, zip_code)
+  VALUES
+    ('Michael', 'Meyer', 'Male', 24, '1021 Eddie Knolls Apt. 087', 'South Geraldton', 'RI', 43709);
+  ```
 
 * Read data with the use of `SELECT`.
 
- ```sql
- SELECT *
- FROM people;
- ```
+  ```sql
+  SELECT *
+  FROM customer;
+  ```
 
 * Updated a table's data using `UPDATE`.
 
- ```sql
- UPDATE people
- SET has_pet = true, pet_name = 'Rocket', pet_age = 8
- WHERE id = 6;
- ```
+  ```sql
+  UPDATE customer
+  SET first_name = 'Brian', age = 20
+  WHERE customer_id = 6;
+  ```
 
 * Deleted data using `DELETE`.
 
- ```sql
- DELETE FROM people
- WHERE id = 3;
- ```
+  ```sql
+  DELETE FROM customer
+  WHERE customer_id = 5;
+  ```
 
 Introduce the class to an additional method of reading the data: wildcards.
 
@@ -586,13 +658,11 @@ Answer any questions before moving on.
 
 ### 15. Student Do: Using CRUD (20 min)
 
-In this activity, students will utilize CRUD operations (Create, Read, Update, Delete) on the provided data.
+In this activity, students will utilize CRUD operations on the provided data.
 
 **Files:**
 
-* [schema.sql](Activities/08-Stu_CRUD/Resources/schema.sql)
-
-* [GlobalFirePower.csv](Activities/08-Stu_CRUD/Resources/GlobalFirePower.csv)
+* [sales.csv](Activities/08-Stu_CRUD/Resources/sales.csv)
 
 **Instructions:** [README.md](Activities/08-Stu_CRUD/README.md)
 
@@ -604,137 +674,195 @@ This activity will require students to do some research. Links are provided to h
 
 **Files:**
 
-* [schema.sql](Activities/08-Stu_CRUD/Resources/schema.sql)
+* [schema.sql](Activities/08-Stu_CRUD/Solved/schema.sql)
+
+* [seed.sql](Activities/08-Stu_CRUD/Solved/seed.sql)
 
 * [query.sql](Activities/08-Stu_CRUD/Solved/query.sql)
 
-* [GlobalFirePower.csv](Activities/08-Stu_CRUD/Resources/GlobalFirePower.csv)
+Open a query tool in `sales_db` and copy and paste the code from schema.sql and seed.sql to create and populate a new table named `sales`. Then explain the following:
 
-Open a query tool in `MiscellaneousDB` and copy and paste the code from schema.sql to create a new table named `firepower`. Go over the following:
-
-* Refresh the table list, and then import the data from `GlobalFirePower.csv` into the new table.
-
-* First, alter the table to add an `id`.
+* Select statements read the data from the table and output the specified columns.
 
 * Deletions and updates are made where the conditions are met.
 
-* Multiple averages can be selected at once.
+* An average of all values in a specified column can be calculated using the `AVG()` function.
 
-* Values can be inserted into the table even though not every value is filled out.
-
-* Finally, select all values to show the newly added country.
+* Columns can be added to pre-existing tables using the ALTER TABLE statement.
 
 ### 17. Instructor Do: Joins (15 min)
 
-In this activity, students are introduced to the concept of joins -- the combination of multiple related datasets into a single dataset.
+In this activity, students are introduced to the concept of joins—the combination of multiple related datasets into a single dataset.
 
 **Files:**
 
+* [sales.csv](Activities/09-Ins_Joins/Resources/sales.csv)
+
+* [mortgage.csv](Activities/09-Ins_Joins/Resources/mortgage.csv)
+
+* [schema.sql](Activities/09-Ins_Joins/Solved/schema.sql)
+
 * [query.sql](Activities/09-Ins_Joins/Solved/query.sql)
-
-* [players.csv](Activities/09-Ins_Joins/Resources/players.csv)
-
-* [matches.csv](Activities/09-Ins_Joins/Resources/matches.csv)
 
 Students may recall working with merges and joins to combine datasets during the Pandas unit. While SQL is a vastly different language than Python, it also includes the functionality to merge tables.
 
-Create two new tables in `MiscellaneousDB` in pgAdmin named `players` and `matches`.
+Create two new tables in `mortgage_db` in pgAdmin named `sales` and `mortgage`.
 
-* Copy the code from [query.sql](Activities/09-Ins_Joins/Solved/query.sql) to create the tables, and then import the corresponding data from `players.csv` and `matches.csv`.
+* Copy the code from [schema.sql](Activities/09-Ins_Joins/Solved/schema.sql) to create the tables, and then import the corresponding data from `sales.csv` and `mortgage.csv`.
 
 * Remember to refresh the database; newly created tables will not immediately appear.
 
-* Point out that both tables have matching values within the `player_id` column of the `players` table and the `loser_id` and `winner_id` columns of the `matches` table.
-
-* Because there are common values, it is possible to join these tables together. For example:
-
- ```sql
- INNER JOIN players ON
- players.player_id=matches.loser_id;
- ```
+* Point out that both tables have matching values within the `mortgage_id` column of the `sales` table and the `mortgage_id` of the `mortgage` table. Because there are common values, it is possible to join these tables together.
 
 * From the [query.sql](Activities/09-Ins_Joins/Solved/query.sql) file, copy and paste the code performing an `inner join` on the two tables:
 
- ```sql
- SELECT players.first_name, players.last_name, players.hand, matches.loser_rank
- FROM matches
- INNER JOIN players ON
- players.player_id=matches.loser_id;
- ```
+  ```sql
+  SELECT
+    sales.sales_id,
+    sales.payment_id,
+    sales.mortgage_id,
+    sales.loan_amount,
+    sales.loan_date,
+    mortgage.mortgage_id,
+    mortgage.mortgage_name,
+    mortgage.mortgage_rate
+  FROM sales
+  INNER JOIN mortgage ON sales.mortgage_id = mortgage.mortgage_id;
+  ```
 
 **Note:** Some students may have advanced knowledge of SQL queries and use aliases in their solutions. Using aliases is not necessary for today's activities; they will be covered more comprehensively in the next class.
 
- ```sql
- -- Advanced INNER JOIN solution
- SELECT p.first_name, p.last_name, p.hand, m.loser_rank
- FROM matches AS m
- INNER JOIN players AS p ON
- p.player_id=m.loser_id;
- ```
+  ```sql
+  -- Advanced INNER JOIN solution
+  SELECT
+    a.sales_id,
+    a.payment_id,
+    a.mortgage_id,
+    a.loan_amount,
+    a.loan_date,
+    b.mortgage_id,
+    b.mortgage_name,
+    b.mortgage_rate
+  FROM sales as a
+  INNER JOIN mortgage as b ON a.mortgage_id = b.mortgage_id;
+  ```
 
 Point out one significant difference between SQL joins and Python joins:
 
 * In SQL joins, the columns that should be viewed after the join must be declared in the initial `SELECT` statement.
 
- ![inner-join.png](Images/inner-join.png)
+  ![join-columns.png](Images/join-columns.png)
 
 * There are five primary types of joins that can be used with PostgreSQL:
 
- * `INNER JOIN` returns records that have matching values in both tables.
+  * `INNER JOIN` returns records that have matching values in both tables.
 
- * `LEFT JOIN` returns all records from the left table and the matched records from the right table.
+    ![inner-join](Images/inner-join.png)
 
- * `RIGHT JOIN` returns all records from the right table and the matched records from the left table.
+  * `LEFT JOIN` returns all records from the left table and the matched records from the right table. Unmatched left-side records will contain NULL values for right-side columns.
 
- * `CROSS JOIN` returns records that match every row of the left table with every row of the right table. This type of join has the potential to make very large tables.
+    ![left-join](Images/left-join.png)
 
- * `FULL OUTER JOIN` places null values within the columns that do not match between the two tables after an inner join is performed.
+  * `RIGHT JOIN` returns all records from the right table and the matched records from the left table. Unmatched right-side records will contain NULL values for left-side columns.
+
+    ![right-join](Images/right-join.png)
+
+  * `FULL OUTER JOIN` returns all records from the left and right tables, displaying both matched records and unmatched records with NULL values.
+
+    ![full-outer-join](Images/full-outer-join.png)
+
+  * `CROSS JOIN` returns records that match every row of the left table with every row of the right table. This type of join has the potential to make very large tables.
+
+    ![cross-join](Images/cross-join.png)
 
 Slack out the link to this explanation of Postgres [joins](https://www.tutorialspoint.com/postgresql/postgresql_using_joins.htm) for students to study.
 
 Demonstrate a couple of different joins that can be performed. Then answer any questions before moving on to the next activity.
 
-### 18. Student Do: Joining the NBA (20 min)
+### 18. Student Do: Joining the Big Banks (20 min)
 
-In this activity, students will be using joins to query NBA player seasonal statistics.
+In this activity, students will be using joins to query payment information and associated bank information via a common bank routing number.
 
 **Files:**
 
-* [Players.csv](Activities/10-Stu_Joins/Resources/Players.csv)
+* [banks.csv](Activities/10-Stu_Joins/Resources/banks.csv)
 
-* [Seasons_Stats.csv](Activities/10-Stu_Joins/Resources/Seasons_Stats.csv)
-
-* [schema.sql](Activities/10-Stu_Joins/Resources/schema.sql)
+* [payments.csv](Activities/10-Stu_Joins/Resources/payments.csv)
 
 **Instructions:** [README.md](Activities/10-Stu_Joins/README.md)
 
-### 19. Instructor Do: Review Joining the NBA (5 min)
+### 19. Instructor Do: Review Joining the Big Banks (5 min)
 
-**File:** [query.sql](Activities/10-Stu_Joins/Solved/query.sql)
+**Files:**
 
-Using [schema.sql](Activities/10-Stu_Joins/Resources/schema.sql) and the query tool, create two new tables named `players` and `seasons_stats` using the data in `Players.csv` and `Seasons_Stats.csv`.
+* [schema.sql](Activities/10-Stu_Joins/Solved/schema.sql)
 
-Open [query.sql](Activities/10-Stu_Joins/Solved/query.sql) and copy the code. Then open a new query tool and paste the solution into the editor. Review the solution, explaining the following:
+* [seed.sql](Activities/10-Stu_Joins/Solved/seed.sql)
 
-* Since the selected data comes from two different tables, the naming convention is `table_name.column_name`.
+* [query.sql](Activities/10-Stu_Joins/Solved/query.sql)
 
-* Next, determine which table to select from and which table to `INNER JOIN` with. Remember, the inner join only selects data that has matching values in both tables.
+Using the schema.sql file and the query tool, create two new tables named `payments` and `banks` using the data in `payments.csv` and `banks.csv`.
 
-* Finally, determine the key both tables will join on. For example, to join the two tables by using the `id` and an `INNER JOIN`, select the data columns to be viewed from both tables, and then specify which columns the tables will be connected by.
+Open the query.sql file and copy the code. Then open a new query tool and paste the solution into the editor. Review the solution, explaining the following:
 
- ```sql
- SELECT players.id,
- players.player,
- players.height,
- players.weight,
- players.college,
- players.born,
- seasons_stats.position,
- seasons_stats.tm
- FROM players
- INNER JOIN seasons_stats ON
- players.id = seasons_stats.player_id;
- ```
+* Since the selected data comes from two different tables, the naming convention is `table_name.column_name`, which is aliased as simply `a.column_name` and `b.column_name` in this case.
+
+* An inner join returns the matching records from both the left and right-side tables.
+
+  ```sql
+  SELECT *
+  FROM payments as a
+  INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+  ```
+
+* A left join returns all of the records from the left table regardless of matching or unmatching records on the right table.
+
+  ```sql
+  SELECT *
+  FROM payments as a
+  LEFT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+  ```
+
+* A right join returns all of the records from the right table, regardless of matching or unmatching records on the left table.
+
+  ```sql
+  SELECT *
+  FROM payments as a
+  RIGHT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+  ```
+
+* A full outer join returns all of the records from both the left and right tables, regardless of matching or unmatching in either side.
+
+  ```sql
+  -- Perform a FULL OUTER JOIN
+  SELECT *
+  FROM payments as a
+  FULL OUTER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
+  ```
+
+* A cross join pairs every row from the left table with every row from the right table.
+
+  ```sql
+  -- Perform a CROSS JOIN
+  SELECT *
+  FROM payments
+  CROSS JOIN banks;
+  ```
+
+* In order to find the customers with Wells Fargo bank accounts, the banks and customer tables must be joined together with the payments table. This is because the customer table cannot directly join to the banks table, as there is no common key or column. However, by using the payments table as a joiner table (containing both a `bank_routing_number` and a `customer_id`), customers can be linked to payment records that are linked to Wells Fargo bank accounts.
+
+  ```sql
+  SELECT
+    a.payment_id,
+    a.bank_number,
+    a.bank_routing_number,
+    b.bank_name,
+    c.first_name,
+    c.last_name
+  FROM payments as a
+  INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number
+  INNER JOIN customer as c ON a.customer_id = c.customer_id
+  ```
 
 Answer any questions before ending the class.
 
@@ -742,4 +870,4 @@ Answer any questions before ending the class.
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -1,61 +1,51 @@
--- Drop table if exists
-DROP TABLE programming_languages;
-
--- Create new programming_languages table
-CREATE TABLE programming_languages (
-  id SERIAL PRIMARY KEY,
-  language VARCHAR(20),
-  rating INT
-);
-
--- Insert new data
-INSERT INTO programming_languages (language, rating)
-VALUES ('HTML', 95),
-	('JS', 99),
-	('JQuery', 98),
-	('MySQL', 70),
-	('MySQL', 70);
-
-SELECT * FROM programming_languages;
-
--- Query the rows with the language "MySQL"
+-- Query all columns and rows from the banks table
 SELECT *
-FROM programming_languages
-WHERE language = 'MySQL';
+FROM banks;
 
--- Drop a duplicate row
-DELETE FROM programming_languages
-WHERE id = 5;
+-- Query all columns and rows with bank name equal to "Capital One"
+SELECT *
+FROM banks
+WHERE bank_name = 'Capital One';
+
+-- Drop the duplicate Capital One row
+-- and verify the change
+DELETE FROM banks
+WHERE bank_id = 7;
 
 SELECT *
-FROM programming_languages;
+FROM banks;
 
 -- Add additional data
-INSERT INTO programming_languages (language, rating)
-VALUES ('Python', 98),
-	('C++', 73),
-	('R', 95);
+-- and verify the change
+INSERT INTO banks
+(bank_name, bank_routing_number)
+VALUES
+('Ally Bank', 316289502),
+('Discover Bank', 639893944),
+('Bank of New York Mellon', 8734569384);
 
 SELECT *
-FROM programming_languages;
+FROM banks;
 
--- Update "JS" to "JavaScript"
-UPDATE programming_languages
-SET language = 'JavaScript'
-WHERE id = 2;
-
-SELECT *
-FROM programming_languages;
-
--- Change HTML's rating to 90
-UPDATE programming_languages
-SET rating = 90
-WHERE id = 1;
+-- Update "Citigroup" to "PNC Bank"
+-- and verify the change
+UPDATE banks
+SET bank_name = 'PNC Bank'
+WHERE bank_id = 4;
 
 SELECT *
-FROM programming_languages;
+FROM banks;
+
+-- Update bank_routing_number for bank_id 2
+-- and verify the change
+UPDATE banks
+SET bank_routing_number = 1995826182
+WHERE bank_id = 2;
+
+SELECT *
+FROM banks;
 
 -- BONUS
--- Add a "mastered" column with the boolean default of true
-ALTER TABLE programming_languages
-ADD COLUMN mastered BOOLEAN default true;
+-- Add a "mortgage_lender" column with the boolean default of true
+ALTER TABLE banks
+ADD COLUMN mortgage_lender BOOLEAN default true;

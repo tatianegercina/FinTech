@@ -1,25 +1,44 @@
--- Select count of actors first names in descending order
-SELECT first_name, COUNT(first_name) AS "actor count"
-FROM actor
-GROUP BY first_name
-ORDER BY "actor count" DESC;
 
--- Select the average duration of movies by rating
-SELECT rating, ROUND(AVG(rental_duration),2) AS "avg duration"
-FROM film
-GROUP BY rating
-ORDER BY "avg duration";
+-- Find the count of payments per customer in descending order
+SELECT customer_id, COUNT(*) AS payment_count
+FROM payment
+GROUP BY customer_id
+ORDER BY COUNT(*) DESC;
 
--- Select top ten replace costs for the length of the movie
-SELECT length, ROUND(AVG(replacement_cost)) AS "avg cost"
-FROM film
-GROUP BY length
-ORDER BY "avg cost" DESC
-LIMIT 10;
+-- Find the top 5 customers who have spent the most money
+SELECT customer_id, SUM(amount) AS total_payment_amount
+FROM payment
+GROUP BY customer_id
+ORDER BY SUM(amount) DESC
+LIMIT 5;
 
--- Select the count of countries
-SELECT country.country, COUNT(country.country) AS "country count"
-FROM city
-JOIN country ON city.country_id = country.country_id
-GROUP BY country.country
-ORDER BY "country count" DESC;
+-- Find the bottom 5 customers who have spent the least money
+SELECT customer_id, SUM(amount) AS total_payment_amount
+FROM payment
+GROUP BY customer_id
+ORDER BY SUM(amount) ASC
+LIMIT 5;
+
+-- Find the top 10 customers with the highest average payment
+-- rounded to two decimal places
+SELECT customer_id, ROUND(AVG(amount), 2) AS average_payment_amount
+FROM payment
+GROUP BY customer_id
+ORDER BY AVG(amount) DESC
+LIMIT 5;
+
+-- BONUS 1
+SELECT first_name, last_name, COUNT(customer_id) AS customer_count
+FROM payment AS a
+JOIN staff AS b ON a.staff_id = b.staff_id
+GROUP BY first_name, last_name
+ORDER BY COUNT(customer_id) DESC;
+
+
+-- BONUS 2
+SELECT CAST(payment_date AS DATE), COUNT(*)
+FROM payment
+GROUP BY CAST(payment_date AS DATE)
+ORDER BY COUNT(*) DESC;
+
+
