@@ -649,9 +649,9 @@ Security is a fundamental topic regarding anything to do with technology, especi
 
 Briefly discuss the Ethereum DAO hack:
 
-* Historically, we have seen instances of hacking in every industry. Since the blockchain space is still in adolescence and rapidly growing, hiccups have occurred regarding smart contracts.
+* Historically, we have seen instances of hacking in every industry. Since the blockchain space is still in adolescence and rapidly growing, missteps have occurred regarding smart contracts.
 
-* A notable instance of this is the DAO hack. This was an organization built entirely from smart contracts that was exploited due to a low-level technical attack called a "re-entrancy" attack, allowing a hacker to drain the contract's funds, which we will learn more about soon. Since this attack, measures have been made to help prevent such attacks, and more security improvements are being made every day.
+* A notable instance of this is the DAO hack. This was an organization built entirely from smart contracts that was exploited by a low-level technical attack called a "re-entrancy" attack, allowing a hacker to drain the contract's funds, which we will learn more about soon. Since this attack, measures have been made to help prevent such attacks, and more security improvements are being made every day.
 
 * Thus, it is important to learn how to spot these vulnerabilities. One way to do that is to leverage security tools that analyze our code and test it for these low-level vulnerabilities.
 
