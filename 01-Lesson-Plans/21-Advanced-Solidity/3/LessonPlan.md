@@ -400,7 +400,7 @@ Briefly open (**max** 2 minutes) the [Crowdsale Constructor API doc](https://doc
 
 * The crowdsale requires three parameters in the constructor. The first, `rate` is the conversion between our token and wei. Since we are using the default decimal value of `18` in our `ArcadeTokenMintable`, and we want to keep compatible with ether units, this `rate` will just be set to `1`.
 
-* The `wallet` parameter is the address that all of the ether raised in the crowdsale will go. Since this is for our arcade, we will set this parameter to our main wallet address.
+* The `wallet` parameter is the address where all of the ether raised in the crowdsale will go. Since this is for our arcade, we will set this parameter to our main wallet address.
 
 * The last parameter the crowdsale needs is the token itself. This will allow the crowdsale to interact with and mint the `ArcadeToken` once on-chain.
 
