@@ -1,5 +1,5 @@
-## Instructor Demo
+# Instructor Demo
 
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

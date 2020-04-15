@@ -1,34 +1,38 @@
--- Determine the relations
--- replace /relationship/ with the type of relationship to corresponding table
-
-Gym
+Customer
 -
-Gym_ID INTEGER PK
-Gym_Name VARCHAR
-Address VARCHAR
-City VARCHAR
-Zipcode VARCHAR
+customer_id PK
+first_name
+last_name
+gender
+age
+address
+city
+state
+zip_code
 
-Trainers
+Banks
 -
-Trainer_ID INTEGER PK
-Gym_ID INTEGER FK /relationship/ Gym.Gym_ID
-First_Name VARCHAR
-Last_Name VARCHAR
+bank_id PK
+bank_name
+bank_routing_number
 
-Members
+Sales
 -
-Member_ID INTEGER PK
-Gym_ID INTEGER FK /relationship/ Gym.Gym_ID
-Trainer_ID INTEGER FK /relationship/ Trainers.Trainer_ID
-First_Name VARCHAR
-Last_Name VARCHAR
-Address VARCHAR
-CITY VARCHAR
+sales_id PK
+payment_id FK >- Payments.payment_id
+mortgage_id FK - Mortgage.mortgage_id
+loan_amount
+loan_date
 
 Payments
 -
-Payment_ID INTEGER PK
-Member_ID INTEGER FK /relationship/ Members.Member_ID
-CreditCard_Info INTEGER
-Billing_Zip INTEGER
+payment_id PK
+bank_number
+bank_routing_number FK - Banks.bank_routing_number
+customer_id FK -< Customer.customer_id
+
+Mortgage
+-
+mortgage_id PK
+mortgage_name
+mortgage_rate

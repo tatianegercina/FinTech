@@ -1,21 +1,25 @@
--- 1. What is the average cost to rent a film in the pagila stores?
-SELECT AVG(rental_rate) AS "Average rental rate"
-FROM film;
+--1. What is the average payment amount?
+SELECT AVG(amount) AS "avg_payment_amount"
+from payment;
 
--- 2. What is the average rental cost of films by rating? On average, what is the cheapest rating of films to rent? Most expensive?
-SELECT rating, AVG(rental_rate) AS "Average rental rate"
-FROM film
-GROUP BY rating;
+--2. What is the total payment amount?
+SELECT SUM(amount) AS "total_payment_amount"
+from payment;
 
--- 3. How much would it cost to replace all the films in the database?
-SELECT SUM(replacement_cost) AS "Total replacement cost"
-FROM film;
+--3. What is the minimum payment amount?
+SELECT MIN(amount) AS "min_payment_amount"
+from payment;
 
--- 4. How much would it cost to replace all the films in each ratings category?
-SELECT rating, SUM(replacement_cost) AS "Replacement cost"
-FROM film
-GROUP BY rating;
+--4. What is the maximum payment amount?
+SELECT MAX(amount) AS "max_payment_amount"
+from payment;
 
--- 5. How long is the longest movie in the database? The shortest?
-SELECT MAX(length)
-FROM film;
+--5. What is the count of payments for each customer?
+SELECT customer_id, COUNT(*) AS "payment_count"
+FROM payment
+GROUP BY customer_id;
+
+--6. How many customers has each staff serviced?
+SELECT staff_id, COUNT(customer_id) AS "customer_count"
+FROM payment
+GROUP BY staff_id;

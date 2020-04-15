@@ -1,31 +1,41 @@
-## Foreign Keys 
+# Foreign Keys
 
 In this activity, you will create and populate two new tables with foreign keys that reference existing data.
 
-### Instructions
-
-**Note:** Make sure all tables have primary keys that increment with each new row of data.
+## Instructions
 
 Complete the following:
 
-* Create a `customer` table with a customer first name and customer last name.
+* Create a database called `estate_db`.
 
-* Create a `customer_email` table with a foreign key that references a field in the original `customer` table.
+* Use the provided CSV files to create and populate the `owners` and `estates` tables:
 
-* Populate the `customer_email` table with emails.
+  * [owners.csv](Resources/owners.csv)
 
-* Create a `customer_phone` table with a foreign key that references a field in the original `customer` table.
+  * [estates.csv](Resources/estates.csv)
 
-* Populate the `customer_phone` table with phone numbers.
+* Make sure that the `estates` table contains an `owner_id` foreign key that references the `owner_id` column in the `owners` table.
 
-* Test foreign keys by writing a query to insert data in the `customer_phone` table that does not have a reference ID in the `customer` table.
+* Test foreign keys by writing a query to insert data in the `estates` table that does not have a reference ID in the `owners` table.
 
-* Join all three tables.
+* Join the two tables.
 
-### Hint
+## Hint
 
 Think about how you can select certain columns in a table. Use those columns as a reference to insert data into a table.
 
+## Bonus
+
+* Use the provided CSV files to create a `estate_type` and `estates_new` table:
+
+  * [estate_type.csv](Resources/estate_type.csv)
+
+  * [estates_new.csv](Resources/estates_new.csv)
+
+* Make sure that the `estates_new` table contains an `estate_type_id` foreign key that references the `estate_type_id` column in the `estate_type` table.
+
+* Join all three `owners`, `estates_new`, and `estate_type` tables together.
+
 ---
 
-© 2019 Trilogy Education Services
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
