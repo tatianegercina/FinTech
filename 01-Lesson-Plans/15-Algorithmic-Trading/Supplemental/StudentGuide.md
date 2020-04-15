@@ -444,7 +444,7 @@ We can finally polot our bollinger bandS as follows:
 ```python
 btc_df[['Close','bollinger_mid_band','bollinger_upper_band','bollinger_lower_band']].plot(figsize=(20,10))
 ```
-<img src=Images/bb_df_plot.PNG width=500>
+<img src=Images/bb_df_plot.PNG width=800>
 
 </details>
 </details>
