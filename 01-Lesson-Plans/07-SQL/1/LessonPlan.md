@@ -161,7 +161,7 @@ CREATE TABLE customer (
 
 * `state VARCHAR(10)` creates a `state` column that represents the state ticker in which the customer lives. The column values must be character strings of 2 characters.
 
-* `zip_code CHAR(5)` creates a `zip_code` column which represents the postal zip code of the customer. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values *must* be character strings of 5 characters.
+* `zip_code CHAR(5)` creates a `zip_code` column which represents the postal code of the customer. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values *must* be character strings of 5 characters.
 
 **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
 
