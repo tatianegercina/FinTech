@@ -42,9 +42,9 @@ By the end of today's class, students will be able to:
 
 * The slides for this lesson can be viewed on Google Drive here: [Lesson Slides](https://docs.google.com/presentation/d/1xv6ebYYBpDpQAlB4EOxWeRcdOdZPDSp5oe8d27baU-w/edit?usp=sharing).
 
-* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, selecting "Download as," and then choosing "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
+* To add the slides to the student-facing repository, download the slides as a PDF by navigating to File, select "Download as," and then choose "PDF document." Then, add the PDF file to your class repository along with other necessary files. You can view instructions for this [here](https://docs.google.com/document/d/1XM90c4s9XjwZHjdUlwEMcv2iXcO_yRGx5p2iLZ3BGNI/edit?usp=sharing).
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and select "Make a copy...".
 
 * The Time Tracker for this lesson can be viewed here: [Time Tracker](TimeTracker.xlsx).
 
@@ -52,9 +52,9 @@ By the end of today's class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome students to class and congratulate them on making it this far in the course! At this point, students are only one unit away from their first project, and so they should feel proud of what they have accomplished so far!
+Welcome students to class and congratulate them on making it this far in the course! At this point, students are only one unit away from their first project, and should feel proud of what they have accomplished so far!
 
-Open the slideshow and review the learning outcomes, class objectives, and a brief background of the SQL unit:
+Open the slideshow and review the learning outcomes and class objectives. Then, give a brief background of the SQL unit:
 
 * Today's lesson will introduce students to the most popular database management language: SQL.
 
@@ -161,7 +161,7 @@ CREATE TABLE customer (
 
 * `state VARCHAR(10)` creates a `state` column that represents the state ticker in which the customer lives. The column values must be character strings of 2 characters.
 
-* `zip_code CHAR(5)` creates `zip_code` column which represents the postal zip code of the customer. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values *must* be character strings of 5 characters.
+* `zip_code CHAR(5)` creates a `zip_code` column which represents the postal zip code of the customer. Unlike the VARCHAR datatype, the CHAR datatype ensures that the column values *must* be character strings of 5 characters.
 
 **Note:** Be sure to point out the semicolon at the end of the statement, which tells pgAdmin that this line of code has concluded.
 
@@ -831,7 +831,7 @@ Open the query.sql file and copy the code. Then open a new query tool and paste 
   RIGHT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
   ```
 
-* A full outer join returns all of the records from both the left and right tables, regardless of matching or unmatching in either side.
+* A full outer join returns all of the records from both the left and right tables, regardless of matching or unmatching on either side.
 
   ```sql
   -- Perform a FULL OUTER JOIN
