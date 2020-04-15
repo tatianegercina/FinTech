@@ -645,7 +645,7 @@ Security is a fundamental topic regarding anything to do with technology, especi
 
 * Software security is not a new field, but it has recently exploded in demand and will continue to be a critical part of the software development lifecycle. Security is not just left to the security team in the software world. In reality, the security of a system is the sum of its technical and human aspects, and every person in an organization should be working towards the goal of higher security.
 
-* Typically, organizations will have dedicated security teams continuously vetting and testing software and operations. This does not mean you are off the hook! As engineers, you are the first, and often, the only line of defense standing between a hacker and your trophies. When developing software, you should be taking security very seriously, integrating it from the ground up.
+* Typically, organizations will have dedicated security teams continuously vetting and testing software and operations. This does not mean you are off the hook! As engineers, you are the first—and often, only—line of defense standing between a hacker and your trophies. When developing software, you should be taking security very seriously, integrating it from the ground up.
 
 Briefly discuss the Ethereum DAO hack:
 
