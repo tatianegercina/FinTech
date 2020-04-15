@@ -184,7 +184,7 @@ Complete the `generate_signals` function and discuss the following points:
 ```python
 def generate_signals(data_df):
     """Generates trading signals for a given dataset."""
-    # Grab just the `date` and `close` from the IEX dataset
+    # Grab just the `date` and `close` from the dataset
     signals_df = data_df.loc[:, ["date", "close"]].copy()
 
     # Set the `date` column as the index

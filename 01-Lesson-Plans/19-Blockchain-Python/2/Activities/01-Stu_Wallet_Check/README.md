@@ -7,7 +7,7 @@ send the address to your instructor.
 
 * Download a local copy of the BIP39 online converter from [the releases page](https://github.com/iancoleman/bip39/releases).
 
-  * You will need to download the `bip30-standalone.html` file.
+  * You will need to download the `bip39-standalone.html` file.
 
 * Open this file in your browser.
 

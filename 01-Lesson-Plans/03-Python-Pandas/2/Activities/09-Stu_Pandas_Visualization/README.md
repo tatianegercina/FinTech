@@ -22,6 +22,8 @@ Using the [starter file](Unsolved/market_analysis.ipynb), complete the following
 
 1. Plot a pie chart of the S&P 500 company sector distribution.
 
+# Bonus
+
 1. Create a subset DataFrame by selecting the `Symbol` and `Market Cap` columns. Use the `nlargest()` function on the subset DataFrame to return the top 20 rows of the `Market Cap` column.
 
 1. Plot a bar chart of the top 20 market cap companies.
@@ -33,6 +35,12 @@ Using the [starter file](Unsolved/market_analysis.ipynb), complete the following
 ## Hint
 
 Consult the [Pandas documentation](https://pandas.pydata.org/pandas-docs/version/0.17.0/index.html) for more information about the `value_counts()` and `nlargest()` functions.
+
+- [value_counts()](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.value_counts.html)
+
+- [nlargest()](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.nlargest.html)
+
+
 
 ---
 

@@ -58,7 +58,7 @@ Follow the steps outlined in the budget starter notebook to complete the followi
 
 #### Retirement Planner
 
-In this section, you will use the IEX API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to answer questions about the portfolio.
+In this section, you will use the Alpaca API to fetch historical closing prices for a retirement portfolio and then run Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to answer questions about the portfolio.
 
 Follow the steps outlined in the budget starter notebook to complete the following:
 
@@ -66,7 +66,7 @@ Follow the steps outlined in the budget starter notebook to complete the followi
 
 Create a Monte Carlo simulation for the retirement portfolio:
 
-1. Use the IEX API to fetch historical closing prices for a traditional 60/40 portfolio using the `SPY` and `AGG` tickers to represent the 60% stocks (SPY) and 40% bonds (AGG).
+1. Use the Alpaca API to fetch historical closing prices for a traditional 60/40 portfolio using the `SPY` and `AGG` tickers to represent the 60% stocks (SPY) and 40% bonds (AGG).
 2. Run a Monte Carlo Simulation of 500 runs and 30 years for the 60/40 portfolio and plot the results.
 
     ![monte carlo](Images/monte-carlo.png)
@@ -111,7 +111,7 @@ Harold was really impressed with your work on this planner, but commented that 3
 
 [Plaid API Docs](https://plaid.com/docs/)
 
-[IEX Financial API Docs](https://addisonlynch.github.io/iexfinance/stable/)
+[Alpaca Financial API Docs](https://alpaca.markets/docs/api-documentation/)
 
 For the Monte Carlo simulation, start out by running 100 simulations for one year of returns, and when you have the code worked out, run the simulation at 100–500 simulations for 30 years (this takes a long time).
 

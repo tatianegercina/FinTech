@@ -73,12 +73,7 @@ Create the `RecommendPortfolio` intent, and configure some sample utterances as 
 * I want to invest for my retirement
 * I would like to invest for my retirement
 
-Move to the *Confirmation Prompt* section, and set the following messages:
-
-* **Confirm:** Thanks, now I will look for the best investment portfolio for you.
-* **Cancel:** I will be pleased to assist you in the future.
-
-On this bot you will use four slots, three using built-in types and one custom slot named `riskLevel`. Define the three initial slots as follows:
+This bot will use four slots, three using built-in types and one custom slot named `riskLevel`. Define the three initial slots as follows:
 
 
 | Name             | Slot Type            | Prompt                                                                    |
@@ -104,7 +99,12 @@ Configure the response cards for the `riskLevel` slot as is shown bellow:
 | ----------------------------------- | ----------------------------------- |
 | ![Card 3 sample](Images/card3.png)  | ![Card 4 sample](Images/card4.png)  |
 
-**Note:** You can download free icons from [this website](https://www.iconfinder.com/) or you can use the icons provided on the [`Icons` directory](Icons/).
+**Note:** You can download free icons from [this website](https://www.iconfinder.com/) or you can use the icons provided in the [`Icons` directory](Icons/).
+
+Move to the *Confirmation Prompt* section, and set the following messages:
+
+* **Confirm:** Thanks, now I will look for the best investment portfolio for you.
+* **Cancel:** I will be pleased to assist you in the future.
 
 Leave the error handling configuration for the `RecommendPortfolio` bot with the default values.
 
@@ -112,7 +112,7 @@ Leave the error handling configuration for the `RecommendPortfolio` bot with the
 
 #### Build and Test the Robo Advisor
 
-In this section, you will test your Robo Advisor. Build the bot and test it on the chatbot window. You should see a conversation like the one below.
+In this section, you will test your Robo Advisor. Build the bot and test it in the chatbot window. You should see a conversation like the one below.
 
 ![Robo Advisor test](Images/bot-test-no-lambda.gif)
 
@@ -125,7 +125,7 @@ Use the starter code provided on [lambda_function.py](Starter_Files/lambda_funct
 ##### User Input Validation
 
 * The `age` should be greater than zero and less than 65.
-* the `investment_amount` should be equals o greater than 5000.
+* the `investment_amount` should be equal to or greater than 5000.
 
 ##### Investment Portfolio Recommendation
 
@@ -142,7 +142,7 @@ Be creative while coding your solution, you can have all the code on the `recomm
 
 Once you finish coding your lambda function, test it using the [sample test cases](Test_Cases/) provided for this homework.
 
-After successfully testing your code, open the Amazon Lex Console and navigate to the `RecommendPortfolio` bot configuration, integrate your new lambda function by selecting it on the _Lambda initialization and validation_ and _Fulfillment_ sections. Build your bot, and you should have a conversation as follows.
+After successfully testing your code, open the Amazon Lex Console and navigate to the `RecommendPortfolio` bot configuration, integrate your new lambda function by selecting it in the _Lambda initialization and validation_ and _Fulfillment_ sections. Build your bot, and you should have a conversation as follows.
 
 ![Robo Advisor test with Lambda](Images/bot-test-with-lambda.gif)
 
@@ -173,7 +173,7 @@ _[Cryptocurrencies coins by Worldspectrum](https://www.pexels.com/@worldspectrum
 
 ### Background
 
-You are a Senior Manager at the Advisory Services team on a [Big Four firm](https://en.wikipedia.org/wiki/Big_Four_accounting_firms), one of your most important clients, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers, however, they are lost in the immense universe of cryptocurrencies, they ask you to present a report of what cryptocurrencies are on the trading market and how cryptocurrencies could be grouped towards creating a classification for developing this new investment product.
+You are a Senior Manager at the Advisory Services team on a [Big Four firm](https://en.wikipedia.org/wiki/Big_Four_accounting_firms), and one of your most important clients, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers, however, they are lost in the immense universe of cryptocurrencies, so they ask you to present a report of what cryptocurrencies are on the trading market and how cryptocurrencies could be grouped towards creating a classification for developing this new investment product.
 
 In this homework assignment, you have the opportunity to put in action your new unsupervised learning and Amazon SageMaker skills to cluster cryptocurrencies and create some plots to present your results.
 
@@ -187,7 +187,7 @@ You are asked to accomplish the following main tasks:
 
 * **[Visualizing Results](#Visualizing-Results):** Create some plots and data tables to present your results.
 
-* **[Challenge](#Challenge):** Deploy your notebook to Amazon SageMaker.
+* **[Optional Challenge](#Optional-Challenge):** Deploy your notebook to Amazon SageMaker.
 
 ---
 
@@ -205,9 +205,9 @@ In this section, you have to load the information about cryptocurrencies from th
 
 Start by loading the data in a Pandas DataFrame named `crypto_df`, and continue with the following data preprocessing tasks.
 
-3. Remove all cryptocurrencies that are not on trading.
+3. Remove all cryptocurrencies that are not in trading.
 
-4. Remove all cryptocurrencies that have not an algorithm defined.
+4. Remove all cryptocurrencies that do not have an algorithm defined.
 
 5. Remove the `IsTrading` column.
 
@@ -215,7 +215,7 @@ Start by loading the data in a Pandas DataFrame named `crypto_df`, and continue 
 
 7. Remove all cryptocurrencies without coins mined.
 
-9. Store the names of all cryptocurrencies on a DataFramed named `coins_name`, use the `crypto_df.index` as the index for this new DataFrame.
+9. Store the names of all cryptocurrencies in a DataFrame named `coins_name`, use the `crypto_df.index` as the index for this new DataFrame.
 
 10. Remove the `CoinName` column.
 
@@ -261,7 +261,7 @@ In this section, you will create some data visualization to present the final re
 
 For the challenge section, you have to upload your Jupyter notebook to Amazon SageMaker and deploy it.
 
-The `hvplot` and Plotly Express libraries are not included in the built-in anaconda environments, despite you can install external libraries on Amazon SageMaker, there is not still full support for these libraries; so, for this challenge section, you should use the `altair` library instead.
+The `hvplot` and Plotly Express libraries are not included in the built-in anaconda environments, however you can install external libraries on Amazon SageMaker, there is still not full support for these libraries; so, for this challenge section, you should use the `altair` library instead.
 
 Perform the following tasks:
 
@@ -269,7 +269,7 @@ Perform the following tasks:
 
 2. Select the `conda_python3` environment.
 
-3. Import the `altair` library by running the following code before the initial imports.
+3. Install the `altair` library by running the following code before the initial imports.
 
   ```python
   !pip install -U altair

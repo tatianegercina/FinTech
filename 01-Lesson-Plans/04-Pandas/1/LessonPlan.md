@@ -418,7 +418,7 @@ Ask if there are any questions before moving on.
 
 ### 16. Students Do: Portfolio Planner Part 2 (20 mins)
 
-In this activity, students will work in pairs to continue from where they left off in Part 1 of their portfolio evaluation. In this next part, students will evaluate correlations and Sharpe ratios of the 10 stocks, and then filter by only non-correlated and positive Sharpe ratio stocks. They will also set equal-weighted portfolio allocations to the remaining stocks and perform an analysis of a $10,000 investment in the portfolio over time. Finally, they will compare the $10,000 investment in the portfolio to other $10,000 investments in lesser-optimized portfolios.
+In this activity, students will work in pairs to continue from where they left off in Part 1 of their portfolio evaluation. In this next part, students will evaluate correlations and Sharpe ratios of the 10 stocks, and then filter by only minimally-correlated and high positive Sharpe ratio stocks. They will also set equal-weighted portfolio allocations to those remaining stocks and perform an analysis of a $10,000 investment in the portfolio over time. Finally, they will compare the $10,000 investment in the portfolio to other $10,000 investments in lesser-optimized portfolios.
 
 **File:** [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb)
 
@@ -432,13 +432,13 @@ In this section, review the solution to the previous activity, Portfolio Planner
 
 Open the solution, [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Solved/portfolio_planner_part_2.ipynb), and explain the following:
 
-* Filter the 10 stocks to just the non-correlated stocks and stocks with positive Sharpe ratios. This is to maximize diversification of the portfolio—and, therefore, minimize volatility—and maximize the risk-to-returns ratio of the optimized portfolio.
+* Filter the 10 stocks to just the least-correlated stocks and stocks with the highest Sharpe ratios. This is to maximize diversification of the portfolio—and, therefore, minimize overall volatility—and maximize the risk-to-returns ratio of the optimized portfolio.
 
-* Stock correlation describes the linear relationship between the returns of two stocks, and indicates whether returns of both stocks tend to move in tandem, inversely, or randomly (no correlation).
+* Stock correlation describes the linear relationship between the returns of two stocks, and indicates whether returns of both stocks tend to move in tandem (high correlation), inversely (negative correlation), or randomly (no correlation).
 
   * The `corr` function used in conjunction with the `heatmap` function from the `seaborn` library makes it easy to spot the highly correlated stocks.
 
-  * In this case, the daily returns of `FANG` and `JNJ` appear to be highly correlated and can be dropped from the DataFrame.
+  * In this case, the daily returns of `BK` and `WRK` appear to be the most consistently and highly correlated with the other stocks and can be dropped from the DataFrame.
 
   ![part-2-correlation](Images/part-2-correlation.png)
 
@@ -452,9 +452,9 @@ Open the solution, [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_
 
 * The overlay chart of a $10,000 investments in each corresponding portfolio over time describes the following:
 
-  * The non-correlated and Sharpe ratio optimized portfolio performs the best of the four portfolios, consistently achieving higher returns with minimized volatility.
+  * The minimally-correlated and Sharpe ratio optimized portfolio performs the best of the four portfolios, consistently achieving higher returns with minimized volatility.
 
-    * The non-correlated (diversified) portfolio performs the second worst of the four portfolios; it manages to minimize volatility, but at the expense of higher returns.
+    * The minimally-correlated (diversified) portfolio performs the second worst of the four portfolios; it manages to minimize volatility, but at the expense of higher returns.
 
   * The original, unoptimized portfolio performs the second best of the four portfolios; it achieves higher returns but at the expense of more volatility. Returns increased more quickly, but also fell more quickly—notice the dip in early 2019.
 
@@ -492,4 +492,4 @@ Remind students that mastery doesn't happen in a day. Practice makes perfect!
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

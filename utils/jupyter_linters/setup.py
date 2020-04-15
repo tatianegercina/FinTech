@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='lint_jupyter',
     version='0.1',
-    packages=["lintnb", "nberr", 'nbspell', 'nbdiff', 'lintpandas'],
+    packages=["lintnb", "nberr", 'nbspell', 'nbdiff', 'lintpandas', 'nbfinder'],
     install_requires=[
         'Click',
         'nbformat',
@@ -16,7 +16,8 @@ setup(
             'nberr=nberr.nberr:cli',
             'nbspell=nbspell.nbspell:cli',
             'lintpandas=lintpandas.lintpandas:cli',
-            'nbdiff=nbdiff.nbdiff:cli'
+            'nbdiff=nbdiff.nbdiff:cli',
+            'nbfinder=nbfinder.nbfinder:cli'
         ]
     },
 )
