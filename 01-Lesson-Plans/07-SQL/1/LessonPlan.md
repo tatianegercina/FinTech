@@ -301,7 +301,7 @@ Create a new database named `state_info` in pgAdmin. Then use the the schema.sql
 
 * Note the syntax here. Even though the code can fit on a single line, it's good practice to split it up over two lines instead. This way, the code is easier to read when more advanced queries are created.
 
-* Using the `SELECT` clause again, query the data to return only the state names in the table.
+* Using the `SELECT` clause again, query the data to return only the province names in the table.
 
   ```sql
   SELECT state_name
