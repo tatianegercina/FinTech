@@ -815,7 +815,7 @@ Open the query.sql file and copy the code. Then open a new query tool and paste 
   INNER JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
   ```
 
-* A left join returns all of the records from the left table regardless of matching or unmatching records on the right table.
+* A left join returns all of the records from the left table, regardless of matching or unmatching records on the right table.
 
   ```sql
   SELECT *
@@ -831,7 +831,7 @@ Open the query.sql file and copy the code. Then open a new query tool and paste 
   RIGHT JOIN banks as b ON a.bank_routing_number = b.bank_routing_number;
   ```
 
-* A full outer join returns all of the records from both the left and right tables, regardless of matching or unmatching in either side.
+* A full outer join returns all of the records from both the left and right tables, regardless of matching or unmatching on either side.
 
   ```sql
   -- Perform a FULL OUTER JOIN
