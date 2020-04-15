@@ -145,7 +145,7 @@ Sort the data alphabetically by country. Then, present the data so that the meda
 
 ---
 
-### 3. Instructor Do: Review Out of Sorts (5 min)
+### 3. Instructor Do: Review Out of Sorts (10 min)
 
 Review the sorting activity by having a student participate in a live-coding exercise in front of the class. This exercise should be completed only if the student feels comfortable and previously agreed to participate.
 
@@ -464,21 +464,31 @@ Ask if there are any questions before moving on.
 
 ### 8. Student Do: Indexing Fever (15 min)
 
-In this activity, students will use hierarchical indexes to gain access to historical stock data. The goal of this activity is for students to take their indexing skills to the next level by using DataFrames with multiple indexes. Students will leverage [Google Sheets](https://docs.google.com/spreadsheets/) to extract Google Finance data to perform data segmentation for a single ticker over multiple months in a year.
+In this activity, students will use hierarchical indexes to gain access to historical stock data. The goal of this activity is for students to take their indexing skills to the next level by using DataFrames with multiple indexes.
 
-**File:** [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Unsolved/Core/indexing_fever.ipynb)
+**Files:**
 
-**Instructions:** [README.md](Activities/09-Stu_Multi_Indexing/README.md)
+* [indexing_fever.ipynb](Activities/06-Stu_Multi_Indexing/Unsolved/Core/indexing_fever.ipynb)
+
+* [bombardier_stock_data.csv](Activities/06-Stu_Multi_Indexing/Resources/bombardier_stock_data.csv)
+
+**Instructions:**
+
+* [README.md](Activities/06-Stu_Multi_Indexing/README.md)
 
 ---
 
-### 9. Instructor Do: Review Indexing Fever (10 min)
+### 9. Instructor Do: Review Indexing Fever (5 min)
 
 In this section, you will perform a dry walk-through of the solution for the Indexing Fever activity that students just completed.
 
-**File:** [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexing_fever.ipynb)
+**Files:**
 
-Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexing_fever.ipynb) to review the solution, covering the following points:
+* [indexing_fever.ipynb](Activities/06-Stu_Multi_Indexing/Solved/Challenge/indexing_fever.ipynb)
+
+* [bombardier_stock_data.csv](Activities/06-Stu_Multi_Indexing/Resources/bombardier_stock_data.csv)
+
+Open challenge solved version to review the solution, covering the following points:
 
 * `read_csv` accepts arguments that make creating indexes easy. Passing a column name to the `read_csv` `index_col` parameter will create a DataFrame index based on the values in that series.
 
@@ -486,8 +496,11 @@ Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexin
 
   ```python
   # Read csv data
-  csv_path = Path("../../Resources/goog_google_finance.csv")
-  goog_df = pd.read_csv(csv_path, parse_dates=True, index_col="Date", infer_datetime_format=True)
+  csv_path = Path("../../Resources/bombardier_stock_data.csv")
+
+  bbd_df = pd.read_csv(
+      csv_path, parse_dates=True, index_col="Date", infer_datetime_format=True
+  )
   ```
 
 * Multi-indexing is used to create multiple lookup points for data, as well as hierarchal relationships between data elements.
@@ -502,25 +515,21 @@ Open [indexing_fever.ipynb](Activities/09-Stu_Multi_Indexing/Solved/Core/indexin
 
 * Grouped data can be selected by using the `first` and `last` functions. These will return the first group of grouped items and the last group, respectively.
 
-  ```python
-  # Set multi-index by grouping
-  goog_df_grp = goog_df.groupby([goog_df.index.year, goog_df.index.month]).first()
-  goog_df_grp.head()
-  ```
+* When using a `DateTimeIndex`, data can be grouped by date. Components of date (i.e. year or month) can be accessed using `index.year` and `index.month`.
 
   ![Multi_Indexing_Groupby.png](Images/Multi_Indexing_Groupby.png)
 
-* Once items have been grouped and indexed, data can be retrieved using those indexes.
+* Once items have been grouped and indexed, data can be retrieved using those indexes and the `loc` function.
 
-  ```python
-  # Select GOOG Close for May 2019
-  google_may_2019_data = goog_df_grp.loc[2019, 5]
-  google_may_2019_data
-  ```
+* In this activity, we select data from a `DateTimeIndex` by using the `loc` function and passing as parameters the year (`2019`) and the month (`5`) as index values.
 
   ![Multi_Indexing_Lookup.png](Images/Multi_Indexing_Lookup.png)
 
-Ask if there are any questions before moving on.
+* For the challenge section, to calculate the mean close price for `BBD.B` for all of `2019`, we fetch all the data from `2019` using the `loc` function and use the `mean` to calculate the mean close price.
+
+  ![multi-index-challenge](Images/multi-index-challenge.png)
+
+Answer any questions before moving on.
 
 ---
 
