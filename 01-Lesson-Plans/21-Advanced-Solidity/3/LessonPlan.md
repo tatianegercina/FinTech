@@ -627,7 +627,7 @@ Ask the following recall questions:
 
 * Why do `ArcadeToken` and `ArcadeTokenSale` have empty constructor bodies?
 
-  * **Answer:** All of the logic for these contracts are handled in the contracts that they inherit, so no additional logic is needed.
+  * **Answer:** All of the logic for these contracts is handled in the contracts that they inherit, so no additional logic is needed.
 
 Explain to the students that for the rest of the class, we will be examining the security of the crowdsale we just built, and learning about the common vulnerabilities that smart contract developers should avoid.
 
