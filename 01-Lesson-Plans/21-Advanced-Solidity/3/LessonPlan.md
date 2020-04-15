@@ -384,7 +384,7 @@ Explain to the students:
 
 * OpenZeppelin Crowdsale contracts allow us to do a variety of things, including the ability to configure (among many others):
 
-  * Token Price and Exchange Rates.
+  * Token price and exchange rates.
 
   * Setting a maximum cap on the sale.
 
