@@ -54,15 +54,15 @@ By the end of class, students will be able to:
 
 Introduce today's lesson and get students excited for what they are about to learn. Today is when they will truly leverage Pandas to create insightful financial analyses.
 
-Welcome students to the third day of Pandas! Open the slideshow and introduce the concepts that will be covered in today's class. Tell students the following:
+Welcome students to the third day of Pandas! Open the slideshow and introduce the concepts that will be covered in today's class. Highlight the following:
 
-* In the previous two classes, we focused on Pandas basics and single stock evaluation. Today, students will transition to analyzing groups of stocks (stock portfolios) to achieve the best risk-to-reward ratio for their investments.
+* In the previous two classes, we focused on Pandas basics and single stock evaluation. Today, you will transition to analyze groups of stocks (stock portfolios) to achieve the best risk-to-reward ratio for your investments.
 
-* The focus of this lesson is on using Pandas to make more informed—and better!—investments. Students will be learning and using techniques used by financial analysts, quantitative traders, and portfolio managers. This should feel exciting and invigorating!
+* The focus of this lesson is on using Pandas to make more informed—and better!—investments. You will be learning and using techniques used by financial analysts, quantitative traders, and portfolio managers. This should feel exciting and invigorating!
 
-* Students should be prepared to test themselves mentally today, as they go from analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.
+* Get ready to test yourselves mentally today, as you go from analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.
 
-* Get excited! Feel energized! Today is the day where students truly begin leveraging the power of Pandas to create insightful analyses that can benefit their skills in financial analysis and investing.
+* Get excited! Feel energized! Today is the day where you truly begin leveraging the power of Pandas to create insightful analyses that can benefit your skills in financial analysis and investing.
 
 ---
 
