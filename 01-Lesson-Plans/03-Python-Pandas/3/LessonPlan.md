@@ -839,9 +839,15 @@ Encourage students to work in pairs to complete this activity.
 
 ### 17. Instructor Do: Review Risky Business (5 min)
 
-**File:** [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_business.ipynb)
+**Files:**
 
-Open [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_business.ipynb) to review the activity solution with students. Highlight the following:
+* [risky_business.ipynb](Activities/11-Stu_Risky_Business/Unsolved/Core/risky_business.ipynb)
+
+* [harold_portfolio.csv](Activities/11-Stu_Risky_Business/Resources/harold_portfolio.csv)
+
+* [my_portfolio.csv](Activities/11-Stu_Risky_Business/Resources/my_portfolio.csv)
+
+Open the solution, conduct a dry-walktrough review  and highlight the following:
 
 * It's important to remember to clean data before beginning to analyze and compute calculations with it. Remember to use the `dropna` function to remove `NaN` values. If the `dropna` function is not used, `NaN` values may end up becoming indexes.
 
@@ -901,11 +907,6 @@ Open [risky_business.ipynb](Activities/17-Stu_Risky_Business/Solved/Core/risky_b
 
 * Sharpe ratios can be visually represented with a bar chart. This allows users to easily see which investments have high and low Sharpe ratios.
 
-  ```python
-  # Plot
-  sharpe_ratios.plot.bar(title='Sharpe Ratios')
-  ```
-
   ![sharpe_plot.png](Images/sharpe_plot.png)
 
 Ask students the following questions:
@@ -918,7 +919,25 @@ Ask students the following questions:
 
     **Answer:** DOGE, TRON, and XML are the smartest crypto investments.
 
-Ask if there are any questions before moving on.
+For the challenge section, the first step is to compute the annualized standard deviation for each portfolio.
+
+![cryto_stu_annual_std](Images/cryto_stu_annual_std.png)
+
+Next, the share ratios for each portfolio is calculated.
+
+![crypto_stu_sharpe_ratios](Images/crypto_stu_sharpe_ratios.png)
+
+To decide who has the smartest portfolio, the average sharpe ratios are calculated and compared.
+
+![crypto_stu_final](Images/crypto_stu_final.png)
+
+Conclude the review by asking students the following question:
+
+* Which portfolio is the smartest investment, based off of risk to reward ratio?
+
+  **Answer:** My portfolio is the smartest! Harold owes me 5 dollars.
+
+Answer any questions before moving on.
 
 ---
 
