@@ -351,7 +351,7 @@ Open pgAdmin and walk through the solution, highlighting the following:
   ORDER BY COUNT(*) DESC;
   ```
 
-* The `ORDER BY` clause can be used in either `ASC` (ascending) or `DESC` (descending) order. When used in conjunction with the `LIMIT` clause, results can be filtered down to the desired record count, which in this case will display the top 5 and bottom 5 customer payment counts.
+* The `ORDER BY` clause can be used in either `ASC` (ascending) or `DESC` (descending) order. When used in conjunction with the `LIMIT` clause, results can be filtered down to the desired record count, which in this case will display the top five and bottom five customer payment counts.
 
   ```sql
   SELECT customer_id, SUM(amount) AS total_payment_amount
