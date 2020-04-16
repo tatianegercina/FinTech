@@ -184,7 +184,7 @@ Next, using the code from the schema.sql and seed.sql files, create and populate
 
 Explain the bonus section of the activity:
 
-* Data normalization separated our initial unorganized data into several tables; however, if we need to retrieve information represented from the initial dataset, we can perform JOINs on the normalized tables.
+* Data normalization separated our initial unorganized data into several tables; however, if we need to retrieve information represented from the initial dataset, we can perform joins on the normalized tables.
 
   ```sql
   SELECT *
@@ -207,7 +207,7 @@ In this activity, students will be introduced to the concept of foreign keys—c
 
 Use the slides on foreign keys to explain the concept of foreign keys and how they are used to connect tables:
 
-* A foreign key is a link between tables. The foreign key in the first table points to or is linked to, the primary key in a second table.
+* A foreign key is a link between tables. The foreign key in the first table points to, or is linked to, the primary key in a second table.
 
 * A foreign key also prevents invalid data from being entered into a column. The data being entered MUST be a value from the referenced column.
 
@@ -347,7 +347,7 @@ Students should now understand how to create foreign keys, as well as how to use
 
 Answer any questions students have about foreign keys. Then ask students if they can think of other real-world cases in which the use of foreign keys makes sense. Here are two examples:
 
-* States and countries in addresses: Think back to the `rental` database, where streets, addresses, cities, and countries were stored in different tables. So, for example, if a change occurs to the address of a customer, all information across all tables would need to change. This is called maintaining the **referential integrity**.
+* Provinces and countries in addresses: Think back to the `rental` database, where streets, addresses, cities, and countries were stored in different tables. So, for example, if a change occurs to the address of a customer, all information across all tables would need to change. This is called maintaining the **referential integrity**.
 
 * ID number of employees: In a database where the ID number of an employee is used in multiple tables, what happens if the employee's ID number changes? The ID number would need to be changed across all the tables that contain it.
 
