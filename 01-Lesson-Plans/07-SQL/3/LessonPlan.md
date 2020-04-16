@@ -612,7 +612,7 @@ Use the schema.sql and seed.sql files to walk through the creation and populatio
   );
   ```
 
-* Unlike the `agents` and `regions` tables, the `agent_region_junction` table defines foreign key relationships (to the `agents` and `regions` tables) and sets a composite or multi-value key as its primary key.
+* Unlike the `agents` and `regions` tables, the `agent_region_junction` table defines foreign key relationships (to the `agents` and `regions` tables) and sets a composite, or multi-value key, as its primary key.
 
   ```sql
   CREATE TABLE agent_region_junction (
