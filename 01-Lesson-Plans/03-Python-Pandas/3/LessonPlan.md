@@ -629,9 +629,21 @@ Answer any questions before moving on.
 
 In this activity, students will get hands-on experience with combining multiple DataFrames using the `concat` function. The goal of the activity is for students to take dues and membership data from two community organizations and combine the data into a single DataFrame.
 
-**File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_Dataframes/Unsolved/mastering_concatenation.ipynb)
+**Files:**
 
-**Instructions:** [README.md](Activities/13-Stu_Concat_Dataframes/README.md)
+* [mastering_concatenation.ipynb](Activities/08-Stu_Concat_Dataframes/Unsolved/mastering_concatenation.ipynb)
+
+* [fin_leaders_america.csv](Activities/08-Stu_Concat_Dataframes/Resources/fin_leaders_america.csv)
+
+* [fin_leaders_members.csv](Activities/08-Stu_Concat_Dataframes/Resources/fin_leaders_members.csv)
+
+* [invstrs_leadership_members.csv](Activities/08-Stu_Concat_Dataframes/Resources/invstrs_leadership_members.csv)
+
+* [invstrs_leadership.csv](Activities/08-Stu_Concat_Dataframes/Resources/invstrs_leadership.csv)
+
+**Instructions:**
+
+* [README.md](Activities/08-Stu_Concat_Dataframes/README.md)
 
 ---
 
