@@ -823,9 +823,17 @@ It's time to put it all together. In this activity, students will prep data and 
 
 Encourage students to work in pairs to complete this activity.
 
-**File:** [risky_business.ipynb](Activities/17-Stu_Risky_Business/Unsolved/Core/risky_business.ipynb)
+**Files:**
 
-**Instructions:** [README.md](Activities/17-Stu_Risky_Business/README.md)
+* [risky_business.ipynb](Activities/11-Stu_Risky_Business/Unsolved/Core/risky_business.ipynb)
+
+* [harold_portfolio.csv](Activities/11-Stu_Risky_Business/Resources/harold_portfolio.csv)
+
+* [my_portfolio.csv](Activities/11-Stu_Risky_Business/Resources/my_portfolio.csv)
+
+**Instructions:**
+
+* [README.md](Activities/11-Stu_Risky_Business/README.md)
 
 ---
 
