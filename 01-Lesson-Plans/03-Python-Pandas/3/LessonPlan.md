@@ -771,15 +771,19 @@ Answer any questions before moving on.
 
 ### 15. Instructor Do: Sharpe Ratios (10 min)
 
-In this section, students will be introduced to Sharpe ratios and learn why risk-reward ratios are important in finance. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
+In this section, students will be introduced to Sharpe ratios and learn why risk-reward ratios are important in finance.
 
 **Files:**
 
-* [sharpe_ratios.ipynb](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.ipynb)
+* [sharpe_ratios.ipynb](Activities/10-Ins_Sharpe_Ratios/Solved/sharpe_ratios.ipynb)
 
-Tell students that understanding how to identify risk and assess investment performance will help them adjust for risk in order to maximize reward.
+* [tech_stocks_2018_a.csv](Activities/10-Ins_Sharpe_Ratios/Resources/tech_stocks_2018_a.csv)
 
-Open the slideshow and provide an overview of Sharpe ratios and how they are calculated. Cover the following points:
+* [tech_stocks_2018_b.csv](Activities/10-Ins_Sharpe_Ratios/Resources/tech_stocks_2018_b.csv)
+
+Explain to students that understanding how to identify risk and assess investment performance will help them adjust for risk in order to maximize reward.
+
+Open the slideshow, move to the "Sharpe Ratios" section and provide an overview of Sharpe ratios and how they are calculated. Cover the following points:
 
 * **Sharpe ratios** are used to help compare rate of return for an investment with its risk. Sharpe ratios shed light on the potential of profits even with risk involved.
 
@@ -789,17 +793,17 @@ Open the slideshow and provide an overview of Sharpe ratios and how they are cal
 
   ![sharpe_ratio_formula.png](Images/sharpe_ratio_formula.PNG)
 
-Open [sharpe_ratios.ipynb](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.ipynb) and live code how to calculate and plot sharpe ratios. Explain the following as part of the demo:
+Open the unsolved Jupyter notebook and live code how to calculate and plot sharpe ratios. Explain the following as part of the demo:
+
+* To calculate sharpe rations in this demo, we will use data from two files with stock data from diverse technology companies.
+
+* After loading the data, we calculate daily returns and concatenate the resulting DataFrames using a `join` operation to compare prices in the same dates.
+
+  ![sharpe_rations_concat](Images/sharpe_rations_concat.png)
 
 * Sharpe ratios are commonly used to indicate whether or not an investment is a good decision. While standard deviation illustrates how far an investment has deviated from its average, Sharpe ratios use standard deviation to illustrate the relationship between standard deviation and risk-reward.
 
 * Sharpe ratios enable investors to judge whether or not an investment is a good decision. Sharpe ratios adjust for risk, making them a valuable indicator of asset performance.
-
-  ```python
-  # Calculate Sharpe Ratio
-  sharpe_ratios = (all_portfolios_returns.mean() * 252) / (all_portfolios_returns.std() * np.sqrt(252))
-  sharpe_ratios
-  ```
 
   ![sharpe_ratios.png](Images/sharpe_ratios.png)
 
@@ -807,14 +811,9 @@ Open [sharpe_ratios.ipynb](Activities/16-Ins_Sharpe_Ratios/Solved/sharpe_ratios.
 
 * The `plot` function is used to visually compare Sharpe ratios.
 
-  ```python
-  # Plot sharpe ratios
-  sharpe_ratios.plot(kind="bar", title="Sharpe Ratios")
-  ```
-
   ![sharpe_ratios_plot.png](Images/sharpe_ratios_plot.png)
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
