@@ -571,7 +571,7 @@ Review the solution in pgAdmin and explain the following:
     );
   ```
 
-* The bonus adds additional layers of nested subqueries. It requires querying a `rental_id` from the `payment` table, which is then used to query the `inventory_id` from the `rental` table, which is then used to query the `film_id` from the `inventory table`. Finally, the top level select statement returns the film titles that pertain to the `film_id` queried up the chain of nested subqueries.
+* The bonus adds additional layers of nested subqueries. It requires querying a `rental_id` from the `payment` table, which is then used to query the `inventory_id` from the `rental` table, which is then used to query the `film_id` from the `inventory table`. Finally, the top-level select statement returns the film titles that pertain to the `film_id` queried up the chain of nested subqueries.
 
   ```sql
   SELECT title
