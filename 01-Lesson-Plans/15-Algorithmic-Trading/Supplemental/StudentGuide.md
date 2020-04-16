@@ -33,7 +33,7 @@ Algorithmic trading bots consist of three components:
 <details>
 <summary>What is the difference between technical analysis and fundamental analysis?</summary><br>
 
-The two major schools of thought in trading analysis are technical and fundamental analysis. They are both are beneficial techniques used to develop trading strategies, however the methods of each are quite different.
+The two major schools of thought in trading analysis are technical and fundamental analysis. They are both beneficial techniques used to develop trading strategies, however the methods of each are quite different.
 <blockquote>
 
 <details>
@@ -59,7 +59,7 @@ Fundamental analysis attempts to determine the value of a stock based on qualita
 <details>
 <summary>What is the difference between technical indicators and trading signals?</summary><br>
 
-Technical indicators are metrics used to evaluate stock price movements, while trading signals are the point which those indicators suggest a time to buy or sell. A good trading strategy will utlize both as one plays off the other.
+Technical indicators are metrics used to evaluate stock price movements, while trading signals are the point at which those indicators suggest a time to buy or sell. A good trading strategy will utlize both as one plays off the other.
 
 <blockquote>
 <details>
@@ -90,11 +90,12 @@ A long strategy is perhaps the most simple to understand and the most commonly u
 
 A short strategy is much more difficult to conceptualize. To short a stock or financial asset, is to make a profit off the decline in value, which seems counterintuitive to many of us at first glance. To better understand, let's use an example scenario.
 <blockquote><br>
-Let's say that Bob owns 100 shares of *World's Best Co. Inc.* and they are each valued at $100, making their total value $1,000.
 
-You've been researching the *World's Best Co. Inc.* and you've found some information that leads you to believe its not really the best after all, and that it's stock is well over-valued at $100 per share. You think its overvalued enough that the price is going to tank. You ask to borrow Bob's shares, and he agrees, temporarily transferring ownership of the shares to you (kind of like renting a home is the temporary transfer of many ownership rights). Now that you own the shares, even though its temporary, you can sell them!  You sell all 100 shares for $100 each for a $1,000 cash injection - Nice job!
+Let's say that Bob owns 100 shares of *World's Best Co. Inc.* and they are each valued at $100, making their total value $10,000.
 
-Not long after you do this, the price per share does in fact tank - down to $25 per share. You can now buy 100 shares of the stock yourself at a total price of $250 to replace the borrowed stock you sold. Just in time too, because you are scheduled to return Bob's 100 shares to him tomorrow per your contract agreement!  You transfer all 100 shares of stock back to Bob, while keeping the $750 profit you made on the sale!
+You've been researching the *World's Best Co. Inc.* and you've found some information that leads you to believe its not really the best after all, and that it's stock is well over-valued at $100 per share. You think its overvalued enough that the price is going to tank. You ask to borrow Bob's shares, and he agrees, temporarily transferring ownership of the shares to you (kind of like renting a home is the temporary transfer of many ownership rights). Now that you own the shares, even though its temporary, you can sell them!  You sell all 100 shares for $100 each for a $10,000 cash injection - Nice job!
+
+Not long after you do this, the price per share does in fact tank - down to $25 per share. You can now buy another 100 shares of the stock yourself on the open market at a total price of $2,500 to replace the borrowed stock you sold. Just in time too, because you are scheduled to return Bob's 100 shares to him tomorrow per your contract agreement!  You transfer all 100 shares of stock back to Bob, while keeping the $7,500 profit you made on the sale!
 
 You may wonder, what's in it for Bob?  Don't worry - Bob will you charge you interest and fees on the renting of his stock, after all, its a risk to him to rent it out in case you don't return it. But this is one of many reasons why shorting a stock can be both risky and profitable.<br>
 <br>
@@ -105,13 +106,13 @@ You may wonder, what's in it for Bob?  Don't worry - Bob will you charge you int
 <summary>How do I use a Dual Moving Average Crossover?</summary>
 <font size = "2">
 
-_For ease of explanation, this example will use a **long strategy**. For a refresher on the difference between **long and short strategies**, see the above section on _long/short strategy_ in this FAQ._</font>
+_For ease of explanation, this example will use a **long strategy**. For a refresher on the difference between **long and short strategies**, see the above section on **_long/short strategy_** in this FAQ._</font>
 
 <blockquote>
 <details>
 <summary>What it is:</summary><br>
 The dual moving average crossover utilizes short and long term simple moving averages. When these two trend lines are plotted, they will move in the same direction on the chart and will eventually cross over each other. The value at the time of the crossover is considered the crossover point - a type of technical indicator.
-
+<br>
 Check out the [moving average refresher](Moving_Average_Refresher.md) if you need a quick refresh on how moving averages work!
 <br>
 
@@ -231,7 +232,7 @@ entry_exit_plot.opts(xaxis=None)
 <summary>How do I create and use Exponential Weighted Moving Average (EWMA) Crossovers?</summary>
 <font size = "2">
 
-_For ease of explanation, this example will use a **long strategy**. For a refresher on the difference between **long and short strategies**, see the above section on _long/short strategy_ in this FAQ._</font>
+_For ease of explanation, this example will use a **long strategy**. For a refresher on the difference between **long and short strategies**, see the above section on **_long/short strategy_** in this FAQ._</font>
 <blockquote>
 <details>
 <summary>What it is:</summary><br>
@@ -361,7 +362,7 @@ entry_exit_plot.opts(xaxis=None)
 <summary>How do I create and use Bollinger Bands?</summary>
 <font size = "2">
 
-_For ease of explanation, this example will use a **long strategy**. For a refresher on the difference between **long and short strategies**, see the above section on _long/short strategy_ in this FAQ._</font>
+_For ease of explanation, this example will use a **long strategy**. For a refresher on the difference between **long and short strategies**, see the above section on **_long/short strategy_** in this FAQ._</font>
 
 <blockquote>
 <details>
@@ -454,7 +455,7 @@ btc_df[['Close','bollinger_mid_band','bollinger_upper_band','bollinger_lower_ban
 <details>
 <summary>What is backtesting and how do I use it?</summary><br>
 
-The term sounds more complicated that it actually is - backtesting is simply the testing of your trading strategy using historical data in a simulated scenario. The results indicate how much the gains and losses would have been if the strategy had been implemented on a dummy portfolio of predetermined share size with a dummy capital amount of a predetermined size. Typically `500` is chosen for the portfolio size and `$100,000` is chosen for the available capital.
+The term sounds more complicated that it actually is - backtesting is simply the testing of your trading strategy using historical data in a simulated scenario. The results indicate how much the gains and losses **_would_** have been if the strategy had been implemented on a dummy portfolio of predetermined share size with a dummy capital amount of a predetermined size. Typically `500` is chosen for the portfolio size and `$100,000` is chosen for the available capital.
 
 For an example of backtest simulation check out the steps below:
 
@@ -474,7 +475,8 @@ The portfolio size, or *position*, is set in a column titled `Position` and is c
 # Take a 500 share position where the dual moving average crossover is 1 (SMA50 is greater than SMA100)
 signals_df['Position'] = share_size * signals_df['Signal']
 ```
-This inserts a column as seen below: **Lori to update this picture to show column headers**
+This inserts a column as seen below:
+
 <img src=Images/active-positions.png>
 </details>
 <details>
@@ -487,9 +489,9 @@ Next, a columm is inserted indicating the share size purchase or sale, depending
 signals_df['Entry/Exit Position'] = signals_df['Position'].diff()
 ```
 
-This inserts a column as seen below: **update image**
+This inserts a column as seen below:
 
-<img src=Images/entry-exit-positions.png>
+<img src=Images/active-positions_diff.png>
 </details>
 <details>
 <summary>Step Three: </summary><br>
@@ -500,7 +502,10 @@ Next, the column `Portfolio Holdings` is inserted to represent the cumulative in
 # Multiply share price by entry/exit positions and get the cumulatively sum
 signals_df['Portfolio Holdings'] = signals_df['close'] * signals_df['Entry/Exit Position'].cumsum()
 ```
-This inserts a column as seen below: **update image**
+This inserts a column as seen below:
+
+<img src=Images/active-positions_holdings.png>
+
 </details>
 <details>
 <summary>Step Three: </summary><br>
@@ -511,7 +516,10 @@ We now add another new column to represent the remaining cash value of our capit
 # Subtract the initial capital by the portfolio holdings to get the amount of liquid cash in the portfolio
 signals_df['Portfolio Cash'] = initial_capital - (signals_df['close'] * signals_df['Entry/Exit Position']).cumsum()
 ```
-This inserts a column as seen below: **update image**
+This inserts a column as seen below:
+
+<img src=Images/active-positions_cash.png>
+
 </details>
 <details>
 <summary>Step Four: </summary><br>
@@ -523,7 +531,10 @@ Next, we add the values of the `Portfolio Cash` column to the values of the `Por
 # Get the total portfolio value by adding the cash amount by the portfolio holdings (or investments)
 signals_df['Portfolio Total'] = signals_df['Portfolio Cash'] + signals_df['Portfolio Holdings']
 ```
-This inserts a column as seen below: **update image**
+This inserts a column as seen below:
+
+<img src=Images/active-positions_total.png>
+
 </details>
 <details>
 <summary>Step Five: </summary><br>
@@ -536,7 +547,10 @@ signals_df['Portfolio Daily Returns'] = signals_df['Portfolio Total'].pct_change
 # Calculate the cumulative returns
 signals_df['Portfolio Cumulative Returns'] = (1 + signals_df['Portfolio Daily Returns']).cumprod() - 1
 ```
-This inserts columns as seen below: **update image**
+This inserts columns as seen below:
+
+<img src=Images/active-positions_returns.png>
+
 
 </details>
 <details>
