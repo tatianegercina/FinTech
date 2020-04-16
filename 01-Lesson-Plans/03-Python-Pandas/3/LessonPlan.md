@@ -543,11 +543,19 @@ In this section, you will provide an overview of concatenation and then live cod
 
 **Files:**
 
-* [concat_dataframe.ipynb](Activities/12-Ins_Concat_DataFrame/Solved/concat_dataframes.ipynb)
+* [concat_dataframe.ipynb](Activities/07-Ins_Concat_DataFrame/Unsolved/concat_dataframes.ipynb)
 
-* [Starter File](Activities/12-Ins_Concat_DataFrame/Unsolved/concat_dataframes.ipynb)
+* [customer_info.csv](Activities/07-Ins_Concat_DataFrame/Resources/customer_info.csv)
 
-Introduce the topic of concatenation by explaining the following:
+* [rance_products.csv](Activities/07-Ins_Concat_DataFrame/Resources/france_products.csv)
+
+* [netherlands_products.csv](Activities/07-Ins_Concat_DataFrame/Resources/netherlands_products.csv)
+
+* [products.csv](Activities/07-Ins_Concat_DataFrame/Resources/products.csv)
+
+* [uk_products.csv](Activities/07-Ins_Concat_DataFrame/Resources/uk_products.csv)
+
+Open the lesson slides, move to the "Concatenation" section and introduce this topic by explaining the following:
 
 * Indexing, grouping, and sorting datasets are all part of data analysis preparation. Another step in this process is combining, or concatenating, datasets. This is beneficial when more than one dataset needs to be combined.
 
@@ -559,9 +567,13 @@ Open the slideshow and provide a brief overview of concatenation:
 
 * Concatenation creates a new object that represents data from all concatenated objects.
 
+* DataFrames can be concatenated so that the records from two or more DataFrames are combined.
+
+* Concatenation can be done by column so that the columns from one DataFrame are placed adjacent to columns from another DataFrame.
+
 * There are multiple ways to concatenate objects, including by column and row.
 
-* DataFrames can be joined together, or concatenated, using the Pandas `concat` function. This function enables users to join and combine more than one DataFrame.
+* DataFrames can be joined together, or concatenated, using the Pandas `concat` function.
 
 * The `concat` function accepts the following arguments:
 
@@ -571,57 +583,45 @@ Open the slideshow and provide a brief overview of concatenation:
 
   * the `join` operation (inner vs. outer)
 
-Open the [starter file](Activities/12-Ins_Concat_DataFrame/Unsolved/concat_dataframes.ipynb) and live code the following examples:
+* The `join="inner"` argument will create an intersection of the data.
 
-* A key consideration to keep in mind when concatenating DataFrames is that data is joined by index. Pandas' `concat` function will by default join rows or columns by index. Before concatenating DataFrames, make sure the DataFrames are indexed by the same column.
+* The `join="outer"` argument will union the data.
+
+Open the unsolved version of the Jupyter notebook, live code the demo and highlight the following:
+
+* A key consideration to keep in mind when concatenating DataFrames is that data is joined by index. Pandas `concat` function will by default join rows or columns by index. Before concatenating DataFrames, make sure the DataFrames are indexed by the same column.
 
   ```python
-  # Import data
-  france_data_path = Path('../Resources/france_products.csv')
-  uk_data_path = Path('../Resources/uk_products.csv')
-  netherlands_data_path = Path('../Resources/netherlands_products.csv')
-  customer_data_path = Path('../Resources/customer_info.csv')
-  products_data_path = Path('../Resources/products.csv')
+  # Set data files paths
+  france_data_path = Path("../Resources/france_products.csv")
+  uk_data_path = Path("../Resources/uk_products.csv")
+  netherlands_data_path = Path("../Resources/netherlands_products.csv")
+  customer_data_path = Path("../Resources/customer_info.csv")
+  products_data_path = Path("../Resources/products.csv")
 
   # Read in data and index by CustomerID
-  france_data = pd.read_csv(france_data_path, index_col='CustomerID')
-  uk_data = pd.read_csv(uk_data_path, index_col='CustomerID')
-  netherlands_data = pd.read_csv(netherlands_data_path, index_col='CustomerID')
-  customer_data = pd.read_csv(customer_data_path, index_col='CustomerID')
-  products_data = pd.read_csv(products_data_path, index_col='CustomerID')
+  france_data = pd.read_csv(france_data_path, index_col="CustomerID")
+  uk_data = pd.read_csv(uk_data_path, index_col="CustomerID")
+  netherlands_data = pd.read_csv(netherlands_data_path, index_col="CustomerID")
+  customer_data = pd.read_csv(customer_data_path, index_col="CustomerID")
+  products_data = pd.read_csv(products_data_path, index_col="CustomerID")
   ```
 
 * DataFrames can be joined by either `column` or `row`. The `axis` argument can be configured to specify which one to use.
 
-* If you need to create a dataset that reflects multiple columns from different DataFrames, the DataFrames should be joined on `column`. This will create a DataFrame that incorporates the columns from all DataFrames.
-
 * If rows from one DataFrame simply need to be combined or added to another DataFrame, the DataFrames should be joined on `row`. Joining on the `row` axis requires the DataFrames being joined to have the same columns.
-
-  ```python
-  # Join UK, France, and Netherlands full datasets by axis
-  joined_data_rows = pd.concat([france_data, uk_data, netherlands_data], axis="rows", join="inner")
-  joined_data_rows
-  ```
 
   ![concat_rows.png](Images/concat_rows.png)
 
-  ```python
-  # Join Customer and products by columns axis
-  joined_data_cols = pd.concat([customer_data, products_data], axis="columns", join="inner")
-  joined_data_cols.head()
-  ```
+* If you need to create a dataset that reflects multiple columns from different DataFrames, the DataFrames should be joined on `column`. This will create a DataFrame that incorporates the columns from all DataFrames.
 
   ![concat_columns.png](Images/concat_columns.png)
 
 * The `concat` function creates a new DataFrame that includes data from all datasets that were joined. The amount of data returned will depend on the type of `join` performed when concatenating.
 
-Tell students that additional information can be found in the [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html#set-logic-on-the-other-axes).
+Slack out to students the [Pandas documentation about merging](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html) for further reading and more examples of DataFrames concatenation.
 
-* The `join="inner"` argument will create an intersection of the data.
-
-* The `join="outer"` argument will union the data.
-
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
