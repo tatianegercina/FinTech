@@ -4,7 +4,6 @@
 
 * For a recorded demo of a trading signal activity from class, click [here.](Activities_walkthrough.md)
 
-
 ---
 
 ### Additional Course Resources
@@ -14,7 +13,6 @@
 * [CCXT Installation Guide](CCXT_Install_Guide.md)
 
 * [Evaluation Metrics Calculations Cheat Sheet](EvaluationsCalculationGuide.md)
-
 
 ---
 
@@ -53,7 +51,6 @@ Fundamental analysis attempts to determine the value of a stock based on qualita
 
 </blockquote><br>
 </details>
-
 
 </details>
 <details>
@@ -156,11 +153,9 @@ signals_df.tail()
 <img src=Images/signals_df_sma.PNG width=250>
 <br>
 
-
 </details><br>
 <details>
 <summary>Step Two: Creating the Signal Values</summary><br>
-
 
 Next we create the signals themselves using `np.where()`. The code begins at the start of the short rolling window because the values prior to that are null. We accomplish this by slicing the column with a colon after the short_window variable: `signals_df[short_window:]`. The complete code loos like this:
 ```python
@@ -262,8 +257,8 @@ In the following candlestick chart for Bitcoin, you can see the exponentially we
 The exponentially weighted moving average crossover can be created by using Pandas functionality. In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices.
 ```python
 import numpy as np
-import pandas as pd
-import hvplot.pandas
+import Pandas as pd
+import hvplot.Pandas
 from pathlib import Path
 ```
 <img src=Images/signals_ewm_df.PNG width=150>
@@ -288,11 +283,9 @@ signals_df.tail()
 <img src=Images/signals_df_ema.PNG width=250>
 <br>
 
-
 </details><br>
 <details>
 <summary>Step Two: Creating the Signal Values</summary><br>
-
 
 Next we create the signals themselves using `np.where()`. The code begins at the start of the fast_close window because the values prior to that are null. We accomplish this by slicing the column with a colon after the short_window variable: `signals_df[short_window:]`. The complete code loos like this:
 ```python
@@ -315,7 +308,7 @@ The next step is to take the `.diff()` of the `Signals` column and add it to the
 <details>
 <summary>Step Four: Visualizing the Indicators</summary><br>
 
-Finally, the entry/exit points can be visualized using the code below. You'll notice there are many more entry/exit points than with the DMAC.  This is because the exponentially weighted moving averages cause the price action to move faster:
+Finally, the entry/exit points can be visualized using the code below. You'll notice there are many more entry/exit points than with the DMAC. This is because the exponentially weighted moving averages cause the price action to move faster:
 ```python
 # Visualize exit position relative to close price
 exit = signals_df[signals_df['Entry/Exit'] == -1.0]['Close'].hvplot.scatter(
@@ -385,7 +378,6 @@ When the closing price trend line moves above the upper band, a short (sell) opp
 
 <img src=Images/Boll-Bands.png width=700><br>
 
-
 </details>
 <details>
 <summary>How to create it:</summary><br>
@@ -393,8 +385,8 @@ When the closing price trend line moves above the upper band, a short (sell) opp
 The dual moving average crossover can be created by using Pandas functionality. In the following steps we'll start with a simple example DataFrame with a datetime index and column of closing stock prices. We will also need to import the following dependences:
 ```python
 import numpy as np
-import pandas as pd
-import hvplot.pandas
+import Pandas as pd
+import hvplot.Pandas
 from pathlib import Path
 ```
 
@@ -417,19 +409,19 @@ btc_df
 <details>
 <summary>Step Two: Generate the values used to create bands:</summary><br>
 
-Next, we generate the values that are subsequently used to create the bands themselves.  We use a rolling standard deviation to do this, after which the upper and lower bounds of the bands are creating by adding or substracting the mid_band from the standard deviation respectively:
+Next, we generate the values that are subsequently used to create the bands themselves. We use a rolling standard deviation to do this, after which the upper and lower bounds of the bands are creating by adding or substracting the mid_band from the standard deviation respectively:
 
 ```python
 # Drop NAs and calculate daily percent return
 btc_df['daily_return'] = btc_df['Close'].dropna().pct_change()
-btc_df# Set bollinger band window
+btc_df# Set Bollinger band window
 bollinger_window = 20
 
 # Calculate rolling mean and standard deviation
 btc_df['bollinger_mid_band'] = btc_df['Close'].rolling(window=bollinger_window).mean()
 btc_df['bollinger_std'] = btc_df['Close'].rolling(window=20).std()
 
-# Calculate upper and lowers bands of bollinger band
+# Calculate upper and lowers bands of Bollinger band
 btc_df['bollinger_upper_band']  = btc_df['bollinger_mid_band'] + (btc_df['bollinger_std'] * 1)
 btc_df['bollinger_lower_band']  = btc_df['bollinger_mid_band'] - (btc_df['bollinger_std'] * 1)
 ```
@@ -440,7 +432,7 @@ btc_df['bollinger_lower_band']  = btc_df['bollinger_mid_band'] - (btc_df['bollin
 <details>
 <summary>Step Three: Plot the bands!</summary><br>
 
-We can finally polot our bollinger bandS as follows:
+We can finally plot our Bollinger bands as follows:
 
 ```python
 btc_df[['Close','bollinger_mid_band','bollinger_upper_band','bollinger_lower_band']].plot(figsize=(20,10))
@@ -453,11 +445,11 @@ btc_df[['Close','bollinger_mid_band','bollinger_upper_band','bollinger_lower_ban
 
 </details>
 <details>
-<summary>What is backtesting and how do I use it?</summary><br>
+<summary>What is back testing and how do I use it?</summary><br>
 
 The term sounds more complicated that it actually is - backtesting is simply the testing of your trading strategy using historical data in a simulated scenario. The results indicate how much the gains and losses **_would_** have been if the strategy had been implemented on a dummy portfolio of predetermined share size with a dummy capital amount of a predetermined size. Typically `500` is chosen for the portfolio size and `$100,000` is chosen for the available capital.
 
-For an example of backtest simulation check out the steps below:
+For an example of back test simulation check out the steps below:
 
 <blockquote>
 <details>
@@ -551,7 +543,6 @@ This inserts columns as seen below:
 
 <img src=Images/active-positions_returns.png>
 
-
 </details>
 <details>
 <summary>Step Six: </summary><br>
@@ -577,7 +568,7 @@ entry = signals_df[signals_df['Entry/Exit'] == 1.0]['Portfolio Total'].hvplot.sc
     height=400
 )
 
-# Visualize total portoflio value for the investment
+# Visualize total portfolio value for the investment
 total_portfolio_value = signals_df[['Portfolio Total']].hvplot(
     line_color='lightgray',
     ylabel='Total Portfolio Value',
@@ -622,9 +613,9 @@ A cheat sheet to these calculations can be seen [here.](EvaluationsCalculationGu
 <details>
 <summary>Why do I need a framework?</summary><br>
 
-A framework is much like a template for your code. Its a programming technique that organizes code into a workflow that can easily be reused and applied to different scenarios. Just as a libary like Pandas can provide prebuilt code to be easily inserted into your program, the framework provides prebuilt structure and organization into which that code can be inserted. The code inside the framework can be easily changed to fit new data, but the flow of the code remains the same.
+A framework is much like a template for your code. It's a programming technique that organizes code into a workflow that can easily be reused and applied to different scenarios. Just as a library like Pandas can provide prebuilt code to be easily inserted into your program, the framework provides prebuilt structure and organization into which that code can be inserted. The code inside the framework can be easily changed to fit new data, but the flow of the code remains the same.
 
-The trading framework we build in class, provides a work flow for building an entire dashboard to visualize a trading strategy. The code inside the framework can be swapped out to accompodate new data, but the work flow remains the same so that when the dashboard is generated all of its components have been generated and can be populated.
+The trading framework we build in class provides a work flow for building an entire dashboard to visualize a trading strategy. The code inside the framework can be swapped out to accompodate new data, but the work flow remains the same so that when the dashboard is generated all of its components created and can be populated.
 
 </details>
 
@@ -640,9 +631,9 @@ Persisting data is generally a best practice as it provides a method for data re
 <details>
 <summary>What is a pre-trained model and how do I implement one?</summary><br>
 
-Just as we can persist data using a database for longetivity and reuse, we can persist models for the same reasons. When a model is persisted, it is refered to as pre-trained. Pre-trained models, have been created, configured, and fitted to data then saved for later use. The models can be loaded as any file can be loaded, using the right modules of course.
+Just as we can persist data using a database for longetivity and reuse, we can persist models for the same reasons. When a model is persisted, it is referred to as pre-trained. Pre-trained models have been created, configured, and fitted to data then saved for later use. The models can be loaded as any file can be loaded, using the right modules of course.
 
-This saves us the time consuming process of splitting our data for training and testing, then fitting the model. If its been done once, and a successful combination has been found, the model can be saved and reused later.
+This saves us the time consuming process of splitting our data for training and testing, then fitting the model. If it has been done once, and a successful combination has been found, the model can be saved and reused later.
 
 There are many ways to persist your model, however in class we use a library called `joblib`. To save the model we utilize the following code:
 
@@ -666,16 +657,15 @@ predictions = model.predict(X_test)
 </details>
 
 
-
 <details>
 <summary>Help, I need a time series refresher!</summary><br>
 
-Its important to convert dates into time series when working with python and pandas. For a quick refresher on reading time series data into a pandas DataFrame, see below. for a full refresher, head back to the [Unit 10 - Time Series FAQ.](../../10-Time-Series/Supplemental/StudentGuide.md)
+It's important to convert dates into time series when working with python and Pandas. For a quick refresher on reading time series data into a Pandas DataFrame, see below. for a full refresher, head back to the [Unit 10 - Time Series FAQ.](../../10-Time-Series/Supplemental/StudentGuide.md)
 
 <blockquote>
 <details><summary>How do you convert objects to `datetime`?</summary>
 
-Converting objects to `datetime` can be tricky. Using pandas, the conversion can be handled upon reading in of data. The syntax to handle the conversion from `read_csv()` is:
+Converting objects to `datetime` can be tricky. Using Pandas, the conversion can be handled upon reading in of data. The syntax to handle the conversion from `read_csv()` is:
 
 ```python
 df = pd.read_csv('your_data.csv', parse_dates=True)
@@ -690,7 +680,6 @@ df = pd.read_csv('your_data.csv', infer_datetime_format=True, parse_dates=True, 
 <br>
 </details>
 <br>
-
 
 
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
