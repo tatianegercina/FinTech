@@ -25,8 +25,8 @@ Define a database model to store the credit card transactions data and create a 
 
 * [card_holder.csv](Data/card_holder.csv)
 * [credit_card.csv](Data/credit_card.csv)
-* [merchant.csv](Data/merchant.csv)
 * [merchant_category.csv](Data/merchant_category.csv)
+* [merchant.csv](Data/merchant.csv)
 * [transaction.csv](Data/transaction.csv)
 
 ## Instructions
@@ -35,9 +35,11 @@ Define a database model to store the credit card transactions data and create a 
 
 Create an entity relationship diagram (ERD) by inspecting the provided CSV files.
 
+**Note:** For the `credit_card` table, the `card` column should be a VARCHAR(20) datatype rather than an INT.
+
 Part of the challenge here is to figure out how many tables you should create, as well as what kind of relationships you need to define among the tables.
 
-Feel free to discuss your database model design ideas with your classmates. You can use a tool like [Quick Database Diagrams](https://www.quickdatabasediagrams.com) to create your model.
+Feel free to discuss your database model design ideas with your classmates. You can use a tool like [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) to create your model.
 
 ### Data Engineering
 
@@ -47,7 +49,7 @@ After creating the database schema, import the data from the corresponding CSV f
 
 ### Data Analysis
 
-It's time to identify fraudulent transactions. In this part of the homework assignment, you will analyze the data and then create a report to present your findings. You can use a Jupyter Notebook, a markdown file, or a word processor. Your report should answer the following questions:
+Now that your data is prepared within the database, it's finally time to identify fraudulent transactions using SQL and Pandas DataFrames. In this part of the homework assignment, you will analyze the data and then create a report within a Jupyter Notebook file to present your findings. Your report should answer the following questions:
 
 * How can you isolate (or group) the transactions of each cardholder?
 
