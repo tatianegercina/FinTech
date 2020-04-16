@@ -472,7 +472,7 @@ Use the `Data Relationships` slides to explain that we will now cover one-to-one
 
 Begin by discussing one-to-one relationships. This example will use members of the Simpson family to illustrate the concept.
 
-* In a one-to-one relationship, each name is associated with one—and only one—Social Security number. In other words, each item in a column is linked to only one item from another column.
+* In a one-to-one relationship, each name is associated with one—and only one—Social Insurance Number. In other words, each item in a column is linked to only one item from another column.
 
   ![Images/one-to-one.png](Images/one-to-one.png)
 
@@ -480,9 +480,9 @@ Next, discuss one-to-many relationships. We'll continue with our Simpsons exampl
 
   ![Images/one-to-many1.png](Images/one-to-many1.png)
 
-* This example has two tables. The first table lists only addresses. The second table lists each person's Social Security number and address id.
+* This example has two tables. The first table lists only addresses. The second table lists each person's Social Insurance Number and address id.
 
-* As before, one Social Security number is unique to one individual.
+* As before, one Social Insurance Number is unique to one individual.
 
 Discuss one-to-many relationships.
 
