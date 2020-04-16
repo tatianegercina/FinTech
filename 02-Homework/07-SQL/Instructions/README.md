@@ -25,8 +25,8 @@ Define a database model to store the credit card transactions data and create a 
 
 * [card_holder.csv](Data/card_holder.csv)
 * [credit_card.csv](Data/credit_card.csv)
-* [merchant.csv](Data/merchant.csv)
 * [merchant_category.csv](Data/merchant_category.csv)
+* [merchant.csv](Data/merchant.csv)
 * [transaction.csv](Data/transaction.csv)
 
 ## Instructions
@@ -47,7 +47,7 @@ After creating the database schema, import the data from the corresponding CSV f
 
 ### Data Analysis
 
-It's time to identify fraudulent transactions. In this part of the homework assignment, you will analyze the data and then create a report to present your findings. You can use a Jupyter Notebook, a markdown file, or a word processor. Your report should answer the following questions:
+Now that your data is prepared within the database, it's finally time to identify fraudulent transactions using SQL and Pandas DataFrames. In this part of the homework assignment, you will analyze the data and then create a report within a Jupyter Notebook file to present your findings. Your report should answer the following questions:
 
 * How can you isolate (or group) the transactions of each cardholder?
 
