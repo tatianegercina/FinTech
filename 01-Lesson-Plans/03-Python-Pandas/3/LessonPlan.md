@@ -651,7 +651,17 @@ In this activity, students will get hands-on experience with combining multiple 
 
 In this part of the lesson, review the Mastering Concatenation activity with students. First, you will conduct a brief Q & A to test students' understanding, and then you will perform a dry walk-through of the solution.
 
-**File:** [mastering_concatenation.ipynb](Activities/13-Stu_Concat_Dataframes/Solved/mastering_concatenation.ipynb)
+**Files:**
+
+* [mastering_concatenation.ipynb](Activities/08-Stu_Concat_Dataframes/Solved/mastering_concatenation.ipynb)
+
+* [fin_leaders_america.csv](Activities/08-Stu_Concat_Dataframes/Resources/fin_leaders_america.csv)
+
+* [fin_leaders_members.csv](Activities/08-Stu_Concat_Dataframes/Resources/fin_leaders_members.csv)
+
+* [invstrs_leadership_members.csv](Activities/08-Stu_Concat_Dataframes/Resources/invstrs_leadership_members.csv)
+
+* [invstrs_leadership.csv](Activities/08-Stu_Concat_Dataframes/Resources/invstrs_leadership.csv)
 
 Start the review by conducting a Q & A with the following questions:
 
@@ -667,121 +677,83 @@ Start the review by conducting a Q & A with the following questions:
 
   **Answer:** Outer join. Inner joins represent only a section of all of the data.
 
-Open [mastering_concatenation.ipynb](Activities/13-Stu_Concat_Dataframes/Solved/mastering_concatenation.ipynb) to review the solution, covering the following points:
+Open the solution and perform a dry-walktrough review by covering the following points:
 
 * The `concat` function can be used to combine or link more than one DataFrame.
 
-* DataFrames can be concatenated by `rows` or `columns`.
-
-  * Concatenating by `row` will create a DataFrame that has the total number of rows.
-
-  * Concatenating by `columns` produces a DataFrame that has the columns from all DataFrames concatenated.
-
-  ![concat_axis.png](Images/concat_axis.png)
-
 * DataFrames should be concatenated by `rows` when the columns of the DataFrame are the same and should remain the same. The idea is that the rows are appended.
 
-  ![stu_concat_rows.png](Images/stu_concat_rows.png)
+  ![stu_comined_dues](Images/stu_comined_dues.png)
 
 * DataFrames should be concatenated by `columns` when columns from one DataFrame need to be combined with columns from another DataFrame. The idea is that the columns are appended.
 
   ![stu_concat_cols.png](Images/stu_concat_cols.png)
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
 ### 14. Instructor Do: Standard Deviation and Risk (10 min)
 
-This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate Sharpe ratios in the next activity. Data for this activity was retrieved from [Google Sheets](https://docs.google.com/spreadsheets/) via the in-built Google Finance function.
+This section focuses on standard deviation and how it can be used to determine the risk associated with an investment. You will demo how to calculate standard deviation using Pandas. Students will need the concepts covered in this section to calculate Sharpe ratios in the next activity.
 
-**File:**
+**Files:**
 
-* [std_dev_risk.ipynb](Activities/15-Ins_Std_Dev_Risk/Solved/std_dev_risk.ipynb)
+* [std_dev_risk.ipynb](Activities/09-Ins_Std_Dev_Risk/Solved/std_dev_risk.ipynb)
 
-Introduce standard deviation and risk. Tell students that everything completed in class up until this point has been to prepare them for portfolio and risk analysis.
+* [tech_stocks_closing_value_2018.csv](Activities/09-Ins_Std_Dev_Risk/Resources/tech_stocks_closing_value_2018.csv)
 
-* With daily returns calculated, and data from multiple portfolios combined into one dataset, students are now able to complete a holistic analysis of stock data.
+Open the lesson slides and move to the "Standard Deviation and Risk" section.
 
-* The next step is to use **standard deviation** and **risk** to analyze portfolio performance, calculate risk, and identify risky investments.
+Explain to students that everything completed in class up until this point has been to prepare them for portfolio and risk analysis. Highlight the following:
 
-Open the slideshow and explain the following:
+* A key aspect of analyzing portfolio and stock data is determining **risk**.
 
-* A key aspect of analyzing portfolio and stock data is determining **risk**. Pandas provides a series of functions that can be used to calculate risk.
+* With daily returns calculated, and data from multiple portfolios combined into one dataset, you are now able to complete a holistic analysis of stock data.
 
 * One component of risk is calculating the mean performance or price of a stock. The second is calculating the standard deviation.
 
-* **Mean** can be used to determine the average value of a portfolio or stock overtime. This can serve as a baseline for measuring risk and value: a portfolio/stock performing above average is more valuable; investing in a portfolio or buying a stock performing below average is risky business.
+* The **mean** can be used to determine the average value of a portfolio or stock overtime. This can serve as a baseline for measuring risk and value: a portfolio/stock performing above average is more valuable; investing in a portfolio or buying a stock performing below average is risky business.
 
-* A common technique for measuring how far away an asset is from the mean is calculating the standard deviation. **Standard deviation** identifies exactly how far away a value is from the average price.
+* A common technique for measuring how far away an asset is from the mean is calculating the standard deviation. **Standard deviation** identifies exactly how far away a value is from the average.
 
-  * A low number indicates that the value is not far from the average.
+* The next step is to use **standard deviation** and **risk** to analyze portfolio performance, calculate risk, and identify risky investments.
+
+  * A low standard deviation indicates that the value is not far from the average.
 
   * A high standard deviation means that the value is an outlier.
 
-Live code how to use Pandas to calculate standard deviation in order evaluate risk:
+* Pandas provides a series of functions that can be used to calculate risk. The `std` function is used to calculate standard deviation for a DataFrame.
 
-* Standard deviation should be calculated using daily returns data. Calculating standard deviation against daily returns will help identify risk based on return value rather than price volatility.
+* Standard deviation can be used to determine the risk associated with an investment. Standard deviation is also used to calculate how much returns have been distributed from the average.
 
-  ![std_dev.png](Images/std_dev.png)
+* The greater the standard deviation, the greater the risk and the potential for a greater payout.
+
+End the presentation and open the unsolved Jupyter notebook. Live code how to use Pandas to calculate standard deviation to evaluate risk and highlight the following:
+
+* For this demo, we will use stock data from some popular technology companies.
+
+  ![risk_data](Images/risk_data.png)
+
+* Standard deviation should be computed using daily returns data, so we use the `pct_change` function to calculate daily returns for our stock data.
+
+  ![risk_daily_returns](Images/risk_daily_returns.png)
+
+* Calculating standard deviation against daily returns will help identify risk based on return value rather than price volatility.
 
 * The `std` Pandas function can be used to determine the risk associated with a portfolio or stock. Behind the scenes, the `std` function calculates the mean/average, and then it evaluates how far away from the average the input is. The function returns a new DataFrame.
 
-  ```python
-  # Daily Standard Deviations
-  daily_returns.std()
-  ```
-
-  ```
-  AAPL    0.018106
-  MSFT    0.017839
-  GOOG    0.017724
-  FB      0.023949
-  AMZN    0.022768
-  dtype: float64
-  ```
+  ![std_dev.png](Images/std_dev.png)
 
 * Sorting the output from the `std` function in descending order (using `sort_values`) will display the portfolios/stocks that have the most and least amount of risk.
-
-  ```python
-  # Identify the stock with the most and least risk
-  daily_std.sort_values(ascending=False)
-  ```
 
   ![risk_sort.png](Images/risk_sort.png)
 
 * It's often necessary to calculate standard deviation at the yearly level. Calculating annualized standard deviation is done by multiplying the square root (`sqrt`) of the number of trading days in a year (`252`) with the standard deviation.
 
-  ```python
-  # Calculate the annualized standard deviation (252 trading days)
-  annualized_std = daily_std * np.sqrt(252)
-  annualized_std.head()
-  ```
-
-  ```
-  AAPL    0.287428
-  MSFT    0.283180
-  GOOG    0.281354
-  FB      0.380172
-  AMZN    0.361434
-  dtype: float64
-  ```
+  ![anual_std](Images/anual_std.png)
 
 * A key way to assess risk is to use the `plot.hist` function to create a chart of standard deviation trends. This will visually demonstrate the mean value, as well as the number and severity of any deviations for each element being plotted (i.e., each portfolio).
-
-  ```python
-  portfolio_a_std = np.random.normal(scale=0.5, size=10000)
-  portfolio_b_std = np.random.normal(scale=1.0, size=10000)
-  portfolio_c_std = np.random.normal(scale=1.5, size=10000)
-
-  portfolio_std = pd.DataFrame({
-      "0.5": portfolio_a_std,
-      "1.0": portfolio_b_std,
-      "1.5": portfolio_c_std
-  })
-
-  portfolio_std.plot.hist(stacked=True, bins=100)
-  ```
 
   ![std_plot.png](Images/std_plot.png)
 
@@ -789,16 +761,11 @@ Live code how to use Pandas to calculate standard deviation in order evaluate ri
 
 * Box plots have what are known as whiskers. **Whiskers** represent the range, or spread, of the data. Data elements that extend beyond the whiskers are considered outliers.
 
-  ```python
-  # Plot box plot
-  portfolio_std.plot.box()
-  ```
-
   ![std_dev_box.png](Images/std_dev_box.png)
 
 Emphasize that the takeaway of these charts is that the greater the spread, the greater the risk. The greater the risk, the greater the potential for earnings and lost.
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
