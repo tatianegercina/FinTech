@@ -52,7 +52,7 @@ Open the Class Objectives slide and review the objectives for today's class.
 
 In this activity, students will be introduced to the three normal forms of data normalization.
 
-**Note:** The data normalization procedures represented in the following slides are provided in the .sql files below. Use them as necessary if students have questions pertaining to the data itself or just want to have the code on hand.
+**Note:** The data normalization procedures represented in the following slides are provided in the .sql files below. Use them as necessary if students have questions pertaining to the data itself, or just want to have the code on hand.
 
 **Files:**
 
@@ -78,7 +78,7 @@ Review the slides on data normalization, and explain the following:
 
 * Notice that `family_id` is added to the Child table. Since this is not a primary key, there can be non-unique values that relate to the Family table.
 
-* **Transitive dependency** is a column value's reliance on another column through a third column. The transitive property states that if X > Y and Y > Z, then we can infer that X > Z. Dependence means that one value relies on another, such as city on ZIP code, or age on birthday.
+* **Transitive dependency** is a column value's reliance on another column through a third column. The transitive property states that if X > Y and Y > Z, then we can infer that X > Z. Dependence means that one value relies on another, such as city on postal code, or age on birthday.
 
 * For example, let's say that a table has three columns: `StoreName`, `OwnerAddress`, and `OwnerName`.
 
