@@ -144,13 +144,21 @@ Open the unsolved version of the Jupyter notebook, live code the solution and hi
 
   ![correlation.png](Images/correlation.png)
 
+* Pandas doesn't offer a plot to visualize correlation, so we will `Seaborn`, a popular Python data visualization libraty that is built-in in Anaconda to create a heat map plot. In later units, we will learn about even more advanced plotting libraries.
+
+* The `heatmap` function from the `seaborn` library color codes the different variations in a correlation table. This is particularly useful when there are many variables in a correlation table.
+
+* When you are plotting correlations, it's useful to set the parameters `vmin=-1` and `vmax=1` to set a suitable range for color map.
+
+  ![correlation_seaborn.png](Images/correlation-seaborn.png)
+
 * Remember that correlation does not imply causation!
 
   * Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents`, this does not mean that buying more ice cream causes people to drown; it simply means that there is a positive relationship between the numbers.
 
   * Chances are there is another factor at play that results in this positive correlation. One possible factor is that as temperature increases (during the summer months), people tend to both eat more ice cream and go swimming.
 
-Expain to students that **Regression analysis** should be used to predict causation, i.e., how _x_ predicts _y_. Close this activity by asking the following question:
+Explain to students that **Regression analysis** should be used to predict causation, i.e., how _x_ predicts _y_. Close this activity by asking the following question:
 
 * How do these concepts apply to stock investments?
 
@@ -162,13 +170,33 @@ Answer any questions before moving on.
 
 ---
 
-### 4. Student Do: Diversification (15 min)
+### 3. Student Do: Diversification (15 min)
 
 In this activity, students will apply the concept of correlation to diversify a portfolio, a practical financial use case. In order to create a diversified portfolio that tends to minimize long-term volatility and risk, stocks within the portfolio should be as non-correlated as possible. Students need to find the stock with returns that are least correlated to the returns of stocks in an existing portfolio.
 
-**File:** [market_analysis.ipynb](Activities/02-Stu_Correlation/Unsolved/diversification.ipynb)
+**Files:**
 
-**Instructions:** [README.md](Activities/02-Stu_Correlation/README.md)
+* [market_analysis.ipynb](Activities/02-Stu_Correlation/Unsolved/diversification.ipynb)
+
+* [BMO.csv](Activities/02-Stu_Correlation/Resources/BMO.csv)
+
+* [CNQ.csv](Activities/02-Stu_Correlation/Resources/CNQ.csv)
+
+* [CVE.csv](Activities/02-Stu_Correlation/Resources/CVE.csv)
+
+* [ENB.csv](Activities/02-Stu_Correlation/Resources/ENB.csv)
+
+* [IMO.csv](Activities/02-Stu_Correlation/Resources/IMO.csv)
+
+* [IPL.csv](Activities/02-Stu_Correlation/Resources/IPL.csv)
+
+* [TRP.csv](Activities/02-Stu_Correlation/Resources/TRP.csv)
+
+**Instructions:**
+
+* [README.md](Activities/02-Stu_Correlation/README.md)
+
+---
 
 ### 5. Instructor Do: Review Diversification (5 min)
 
