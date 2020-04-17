@@ -66,11 +66,19 @@ Welcome students to the third day of Pandas! Open the slideshow and introduce th
 
 ---
 
-### 2. Instructor Do: Introduction to Portfolios (5 min)
+### 2. Instructor Do: Introduction to Portfolios and Correlation (15 min)
 
-Introduce stock portfolios using a discussion format to get students engaged in the topic.
+In this activity, you will use a discussion format to introduce stock portfolios and some of the particular regulations in Canada for FinTech companies. Also, this activity introduces students to the concept of correlation, or the positive or negative relationship between two variables.
 
-Ask students the following questions about portfolios and then explain the corresponding answers:
+**Files:**
+
+* [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
+
+* [drowning.csv](Activities/01-Ins_Correlation/Resources/drowning.csv)
+
+* [ice_cream.csv](Activities/01-Ins_Correlation/Resources/ice_cream.csv)
+
+Open the lesson slides, move to the "Introduction to Portfolios" section and ask students the following questions about portfolios and then explain the corresponding answers:
 
 * What is an investment portfolio?
 
@@ -78,7 +86,7 @@ Ask students the following questions about portfolios and then explain the corre
 
 * What is a stock portfolio?
 
-  **Answer:** A stock portfolio is an investment portfolio consisting of only equity. A stock portfolio consists of multiple stocks ranging from some or all the 11 sectors of the equity market: financials, utilities, consumer discretionary, consumer staples, energy, health care, industrials, technology, telecom, materials, and real estate.
+  **Answer:** A stock portfolio is an investment portfolio consisting of only equity. A stock portfolio consists of multiple stocks ranging from some or all the eleven sectors of the equity market: financials, utilities, consumer discretionary, consumer staples, energy, health care, industrials, technology, telecom, materials, and real estate.
 
 * Why are stock portfolios better than single stock investments?
 
@@ -86,42 +94,55 @@ Ask students the following questions about portfolios and then explain the corre
 
 * What is a stock market index?
 
-  **Answer:** Similar to a stock portfolio, a stock market index is a collection of stocks used to gauge the performance of a particular area within the stock market. For example, a popular stock market index is the S&P 500, a collection of 500 large market cap U.S. stocks that serve as a general health indicator of the overall U.S. stock market.
+  **Answer:** Similar to a stock portfolio, a stock market index is a collection of stocks used to gauge the performance of a particular area within the stock market. For example, a popular stock market index is the S&P TSX 60, a collection of sixty  large companies listed on the Toronto Stock Exchange and serves as a general health indicator of the overall Canadian stock market.
 
 * Why do stock market indexes matter?
 
-  **Answer:** Stock market indexes, like the S&P 500, serve as general health indicators for particular areas in the stock market. However, they also serve as benchmarks to compare performances of portfolios. For example, how does the performance of one's personal stock portfolio compare to that of the S&P 500 or general stock market?
+  **Answer:** Stock market indexes, like the S&P TSX 60, serve as general health indicators for particular areas in the stock market. However, they also serve as benchmarks to compare performances of portfolios. For example, how does the performance of one's personal stock portfolio compare to that of the S&P TSX 60 or general stock market?
 
-Ask if there are any questions before moving on.
-
----
-
-### 3. Instructor Do: Correlation (5 min)
-
-This part of the lesson introduces students to the concept of correlation, or the positive or negative relationship between two variables. Two datasets have been chosen to showcase the example of correlation: ice cream sales and drowning incidents.
-
-**File:** [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
-
-Open [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb). As you demo and show the plotted data, cover the following points:
+Continue the presentation by moving to the "Correlation" section in the lesson slides and highlight the following:
 
 * **Correlation** is the measure of a positive, negative, or neutral (random) relationship between two variables. For example, there is often a positive correlation between height and weight; that is, as you grow in height, you tend to weigh more.
 
-* When comparing the line trend of ice cream sales to drowning incidents, it is difficult to detect a relationship between the two. Therefore, use a scatterplot and set the _x_ and _y_ axes to the corresponding DataFrame columns. With a scatterplot, the relationship becomes more apparent.![line-chart](Images/line-chart.png)
-![scatterplot](Images/scatterplot.png)
+* Two given variables may have a positive or negative correlation.
 
-* Use the `corr` function to calculate and output a matrix of correlation values for each column-to-column pair of a DataFrame. Correlation values range from -1 to +1.
+  * A **positive correlation** is a relationship between two variables where one variable decreases as the other variable decreases, or one variable increases while the other increases.
 
-  * -1 indicates a negative relationship: variables move inversely to one another.
+  * A **negative correlation** is a relationship between two variables in which one variable increases as the other decreases, and vice versa.
 
-  * 0 indicates a neutral relationship: variables have no relationship and move randomly.
+* Regardless of two variables that may be correlated, you must be aware that correlation doesn't imply causation, as you will see next in the demo.
 
-  * +1 indicates a positive relationship: variables move in tandem with one another.
+Open the unsolved version of the Jupyter notebook, live code the solution and highlight the following:
+
+* In this demo, we will verify if there is any correlation between ice cream sales and drowning incidents.
+
+* We will start this demo by reading the ice cream sales and the drowning incidents data into two DataFrames and setting the `Month` column as index.
+
+  ![correlation_data](Images/correlation_data.png)
+
+* Before verify the correlation between this two variables, we will concatenate both DataFrames.
+
+  ![correlation_concat_data](Images/correlation_concat_data.png)
+
+* Now, we will plot the data from the concatenated DataFrame. When comparing the line trend of ice cream sales to drowning incidents, it is difficult to detect a relationship between the two variables.
+
+  ![line-chart](Images/line-chart.png)
+
+* However, if we use a scatter plot and set the _x_ and _y_ axes to the corresponding DataFrame columns, the relationship becomes more apparent.
+
+  ![scatterplot](Images/scatterplot.png)
+
+* Pandas provides the `corr` function to calculate and output a matrix of correlation values for each column-to-column pair of a DataFrame. Correlation values range from `-1` to `+1`.
+
+  * `-1` indicates a negative relationship: variables move inversely to one another.
+
+  * `0` indicates a neutral relationship: variables have no relationship and move randomly.
+
+  * `+1` indicates a positive relationship: variables move in tandem with one another.
+
+* As you can observe, despite it sounds crazy, there is a positive correlation between these two variables.
 
   ![correlation.png](Images/correlation.png)
-
-* The `heatmap` function from the `seaborn` library color codes the different variations in a correlation table. This is particularly useful when there are many variables in a correlation table.
-
-  ![correlation_seaborn.png](Images/correlation-seaborn.png)
 
 * Remember that correlation does not imply causation!
 
@@ -129,15 +150,15 @@ Open [correlation.ipynb](Activities/01-Ins_Correlation/Solved/correlation.ipynb)
 
   * Chances are there is another factor at play that results in this positive correlation. One possible factor is that as temperature increases (during the summer months), people tend to both eat more ice cream and go swimming.
 
-* **Regression analysis** should be used to predict causation, i.e., how _x_ predicts _y_.
+Expain to students that **Regression analysis** should be used to predict causation, i.e., how _x_ predicts _y_. Close this activity by asking the following question:
 
 * How do these concepts apply to stock investments?
 
-  * Investigating the correlations of returns among stocks in a portfolio can help analysts properly diversify their portfolios and mitigate risk and volatility.
+  **Answer:** Investigating the correlations of returns among stocks in a portfolio can help analysts properly diversify their portfolios and mitigate risk and volatility.
 
-  * Non-correlated stocks in a portfolio tend to cancel out large swings in volatility; one stock may increase in price while another may decrease in price rather than all stocks increasing or all stocks decreasing.
+  Non-correlated stocks in a portfolio tend to cancel out large swings in volatility; one stock may increase in price while another may decrease in price rather than all stocks increasing or all stocks decreasing.
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
