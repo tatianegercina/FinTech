@@ -282,7 +282,8 @@ Open [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb). As you walk through
 
 * What is the difference between covariance and variance?
 
-  **Answer:** Covariance is a measure of correlation. Correlation describes the directional relationship between two variables in a unit-free manner, while covariance describes the directional relationship between two variables with consideration for the type of data used (in this case, daily return values).
+   * Variance looks at one variable, measuring the range in which that variable’s values may take. By contrast, covariance looks at the variance of two variables, and studies how those two variables vary together. 
+   * Covariance is similar in concept to correlation: the difference is that covariance values are usually too difficult to interpret (other than being positive or negative), whereas correlation is a standardized value (regardless of data type) that ranges from -1 to 1.
 
 * How do covariance and variance relate to beta?
 
