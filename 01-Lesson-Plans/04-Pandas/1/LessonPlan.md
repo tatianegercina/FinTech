@@ -320,7 +320,7 @@ In this activity, students will calculate multiple windows of rolling statistics
 
 * [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
 
-* [nflx.csv](Activities/04-Stu_Rolling_Statistics/Resources/nflx.csv)
+* [shop.csv](Activities/04-Stu_Rolling_Statistics/Resources/shop.csv)
 
 **Instructions:**
 
@@ -328,33 +328,37 @@ In this activity, students will calculate multiple windows of rolling statistics
 
 ---
 
-### 8. Instructor Do: Review Simple Moving Averages (5 min)
+### 7. Instructor Do: Review Simple Moving Averages (5 min)
 
 In this section, review the solution to the previous activity, Simple Moving Averages.
 
-**File:** [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb)
+* [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb)
 
-Open the solution file, [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Solved/simple_moving_averages.ipynb), and explain the following:
+* [shop.csv](Activities/04-Stu_Rolling_Statistics/Resources/shop.csv)
 
-* The `rolling` function and the `window` parameter set the time window for the calculated metric, which in this case is the average or mean.
+Open the solution file and highlight the following:
+
+* The first step to help Harold to decide if it's worth to invest in Shopify Inc. for the long-term, is to load th data into a DataFrame and plot the daily closing prices.
+
+  ![shop_rolling_stats_data](Images/shop_rolling_stats_data.png)
+
+* The `rolling` function and the `window` parameter set the time window for the calculated metric, which in this case is the average or mean for 20-day, 50-day, and 100-day windows.
 
   ![rolling-mean-calculation](Images/rolling-mean-calculation.png)
 
-* Notice that the last 19 datetime indexes contain NaN values. This is because the `window` parameter has been set to `20`; therefore, the last 19 indexes do not have enough data to support the 20-day window.
-
-  ![not-enough-window-data](Images/not-enough-window-data.png)
-
-* When overlaying the plot of daily closing prices for NFLX with its simple moving averages, you can see the ways in which larger rolling time windows smooth data and show general trends, as opposed to smaller rolling time windows that showcase more volatility.
+* When overlaying the plot of daily closing prices for `SHOP` with its simple moving averages, you can see the ways in which larger rolling time windows smooth data and show general trends, as opposed to smaller rolling time windows that showcase more volatility.
 
   ![sma-overlay](Images/sma-overlay.png)
 
-* When overlaying the plot of daily closing prices for NFLX with its rolling standard deviations, you can see the differences in volatility for different time periods.
+* When overlaying the plot of daily closing prices for `SHOP` with its rolling standard deviations, you can see the differences in volatility for different time periods.
 
   ![std-overlay](Images/std-overlay.png)
 
-* Because the desire is to invest long term in NFLX, the `SMA100` and `STD100` should hold more emphasis. Based on the chart overlays, although there is a recent price uptrend in late 2018, long-term volatility has been high for the entirety of 2018 to 2019. Therefore, it may be best to hold off on investing in NFLX long term for now.
+* Because the desire is to invest long term in Shopify, the `SMA100` and `STD100` should hold more emphasis. Based on the chart overlays, although there is a recent price uptrend in earlier in 2019, long-term volatility has been high for the entirety of 2019. Therefore, it may best to hold off on investing in Shopify long term for now.
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
+
+---
 
 ### 9. Instructor Do: Beta (10 min)
 

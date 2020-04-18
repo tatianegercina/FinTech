@@ -1,6 +1,6 @@
 # Simple Moving Averages
 
-Harold's manager asked him to plot the 20-day, 50-day, and 100-day simple moving averages and rolling standard deviations for Shopify stock (`SHOP`). Upper management is looking to invest long term in `SHOP` potentially, but they want to be sure that they'll be taking a position at the right time.
+Harold's manager asked him to plot the 20-day, 50-day, and 100-day simple moving averages and rolling standard deviations for Shopify Inc. stock (`SHOP`). Upper management is looking to invest long term in `SHOP` potentially, but they want to be sure that they'll be taking a position at the right time.
 
 Use the Pandas library to help Harold plot the simple moving averages and rolling standard deviations to generate insights regarding whether or not the company should invest in `SHOP` long term.
 
