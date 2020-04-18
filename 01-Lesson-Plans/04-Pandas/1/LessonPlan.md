@@ -312,17 +312,21 @@ Answer any questions before moving on.
 
 ---
 
-### 7. Students Do: Simple Moving Averages (15 mins)
+### 6. Students Do: Simple Moving Averages (15 mins)
 
 In this activity, students will calculate multiple windows of rolling statistics, such as moving averages and rolling standard deviations, in order to identify trends in average price and volatility/risk that can provide insight to the investment decisions concerning a particular stock.
 
+**Files:**
+
+* [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
+
+* [nflx.csv](Activities/04-Stu_Rolling_Statistics/Resources/nflx.csv)
+
 **Instructions:**
 
-Students will calculate multiple windows of rolling statistics such as moving averages and rolling standard deviations. The goal is to identify trends in average price and volatility/risk in order to make the smartest investment decision.
+* [README.md](Activities/04-Stu_Rolling_Statistics/README.md)
 
-**File:** [simple_moving_averages.ipynb](Activities/04-Stu_Rolling_Statistics/Unsolved/simple_moving_averages.ipynb)
-
-**Instructions:** [README.md](Activities/04-Stu_Rolling_Statistics/README.md)
+---
 
 ### 8. Instructor Do: Review Simple Moving Averages (5 min)
 
