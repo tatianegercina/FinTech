@@ -250,13 +250,17 @@ Answer any questions before moving on.
 
 ---
 
-### 6. Instructor Do: Rolling Statistics (10 min)
+### 5. Instructor Do: Rolling Statistics (10 min)
 
 This section focuses on the concept of rolling statistics, in which a series of a particular metric is calculated over a shifting window of time. Rolling statistics help view the change or progression of a particular metric over time and therefore aid in identifying statistical trends.
 
-**File:** [rolling_statistics.ipynb](Activities/03-Ins_Rolling_Statistics/Solved/rolling_statistics.ipynb)
+**Files:**
 
-Walk through the solution and explain the following:
+* [rolling_statistics.ipynb](Activities/03-Ins_Rolling_Statistics/Solved/rolling_statistics.ipynb)
+
+* [tsla_historical.csv](Activities/03-Ins_Rolling_Statistics/Resources/tsla_historical.csv)
+
+Open the lesson slides, move to the "Rolling Statistics" section and explain the following:
 
 * A **rolling statistic** is a metric calculated over the range of a shifting, or rolling, window. For example, a 7-day rolling mean of 14 days' worth of closing prices for a stock would calculate the mean of the closing prices for days 1–7, and then days 2–8, and then days 3–9, and so on.
 
@@ -264,25 +268,47 @@ Walk through the solution and explain the following:
 
 * Rolling statistics help to show the progression or change of a particular metric over time. For example, calculating the average closing price of one year's worth of stock data will output a single metric, the average closing price for the year. But a rolling 7-day mean will give you the change in weekly average closing prices over the course of the year.
 
-* Rolling statistics tend to smooth out the trend of the initial dataset, allowing for more general or holistic analysis of a dataset rather than focusing on every twist and turn of the data. Overlaying a rolling statistic trend on top of the original data trend makes this feature easier to spot.
+Close the presentation, open the unsolved version of the Jupyter notebook and live code the demo by highlighting the following:
 
-  ![rolling-statistic-overlay](Images/rolling-statistic-overlay.png)
+* In this demo we will analyze historical stock data from Tesla Inc. (`TSLA`) to calculate rolling statistics in Python.
 
-* Rolling statistics factor in the progression of time. Therefore, a rolling 7-day window makes sense when looking at a short-term weekly investment scope. However, if investing for the long term, a rolling 180-day window might make more sense.
+* When you read time series data into a Pandas DataFrame, it's important to set the date as index and to sort the index in ascending order.
+
+  ![rolling_stats_read_data](Images/rolling_stats_read_data.png)
+
+* When we plot the daily closing prices, we can see a general trend of the prices with several spikes.
+
+  ![rolling_stats_daily_prices](Images/rolling_stats_daily_prices.png)
+
+* Rolling statistics tend to smooth out the trend of the initial dataset, allowing for more general or holistic analysis of a dataset rather than focusing on every twist and turn of the data.
+
+* Rolling statistics factor in the progression of time. Therefore, a rolling 7-day window makes sense to smooth out the trend when looking at a short-term weekly investment scope. Two interesting metrics to calculate in rolling statistics are the mean and the standard deviation.
+
+  ![rolling_stats_7_days](Images/rolling_stats_7_days.png)
+
+* For a mid-term investment scope, we may compute the rolling statistics with a 30-day window.
+
+  ![rolling_stats_30_days](Images/rolling_stats_30_days.png)
+
+* However, if you are investing for the long-term, a rolling 180-day window might make more sense.
+
+  ![rolling_stats_180_days](Images/rolling_stats_180_days.png)
 
 * Comparing different scopes of time can sometimes reveal insights that would not have been found otherwise.
 
-  For example, consider the 30-day rolling standard deviation as compared to the 180-day standard deviation of TSLA stock.
+* For example, consider the 30-day rolling standard deviation as compared to the 180-day standard deviation of TSLA stock.
 
-  Although on a monthly scale there was a spike in volatility in late 2018, over a 6-month period, the highest spike in volatility was in late 2016 when the stock skyrocketed.
+* Remember that standard deviation/volatility is how far data points deviate from the mean; this does not necessarily need to be negative.
 
-  **Note:** Remember that standard deviation/volatility is how far data points deviate from the mean; this does not necessarily need to be negative.
+* Although on a monthly scale there was a spike in volatility in late 2018, over a 6-month period, the highest spike in volatility was in late 2016 when the stock skyrocketed.
 
-  ![daily-close-tsla](Images/daily-close-tsla.png)
+Explain to students that overlaying a rolling statistic trend on top of the original data trend makes this feature easier to spot.
 
-  ![rolling-std-dev-30](Images/rolling-std-dev-30.png)
+Highlight to students that it's possible to overlay two plots using Pandas. They should assign the first plot to a variable that is commonly named as `ax`, next when the second plot is created, they should set the `ax` parameter of the `plot` function to the variable where they save the first plot (e.g. `ax=ax`).
 
-  ![rolling-std-dev-180](Images/rolling-std-dev-180.png)
+![rolling-statistic-overlay](Images/rolling-statistic-overlay.png)
+
+Answer any questions before moving on.
 
 ---
 
