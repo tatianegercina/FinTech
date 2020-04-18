@@ -198,23 +198,41 @@ In this activity, students will apply the concept of correlation to diversify a 
 
 ---
 
-### 5. Instructor Do: Review Diversification (5 min)
+### 4. Instructor Do: Review Diversification (10 min)
 
 In this section, you will review the solution to the Diversification activity with students.
 
-**File:** [diversification.ipynb](Activities/02-Stu_Correlation/Solved/diversification.ipynb)
+**Files:**
 
-Open the solution file, [diversification.ipynb](Activities/02-Stu_Correlation/Solved/diversification.ipynb), and explain the following:
+* [market_analysis.ipynb](Activities/02-Stu_Correlation/Solved/diversification.ipynb)
+
+* [BMO.csv](Activities/02-Stu_Correlation/Resources/BMO.csv)
+
+* [CNQ.csv](Activities/02-Stu_Correlation/Resources/CNQ.csv)
+
+* [CVE.csv](Activities/02-Stu_Correlation/Resources/CVE.csv)
+
+* [ENB.csv](Activities/02-Stu_Correlation/Resources/ENB.csv)
+
+* [IMO.csv](Activities/02-Stu_Correlation/Resources/IMO.csv)
+
+* [IPL.csv](Activities/02-Stu_Correlation/Resources/IPL.csv)
+
+* [TRP.csv](Activities/02-Stu_Correlation/Resources/TRP.csv)
+
+Open the solution file, live code the solution and explain the following:
 
 * Diversification of stock portfolios is an important strategy in the realm of investing, as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma. Therefore, it is necessary to not only analyze the average return and risk of the portfolio overall, but also the correlation between stocks (how much one stock price changes with or against another).
 
-* The `corr` function compares values from each column-to-column pair. Therefore, make sure that the DataFrame is properly formatted on a column-by-column basis for analysis.
+* The first step towards helping Harold to decide which energy stock should be included in the portfolio is to load the data files, concatenate all the data in a single DataFrame, and calculate de daily returns using the `pct_change` function.
 
-  ![formatted-dataframe](Images/formatted-dataframe.png)
+  ![diversifications_daily_returns](Images/diversifications_daily_returns.png)
 
-* When viewing a correlation table with many variables present, it's difficult to distinguish lower values from higher values. Using the `heatmap` function from the `seaborn` library makes it easier to discern differences by using color gradients.
+* The `corr` function compares values from each column-to-column pair. When viewing a correlation table with many variables present, it's difficult to distinguish lower values from higher values.
 
   ![correlation-table](Images/correlation-table.png)
+
+* The `heatmap` function from the `seaborn` library makes it easier to discern differences by using color gradients.
 
   ![correlation-heatmap](Images/correlation-heatmap.png)
 
@@ -222,13 +240,13 @@ Open the solution file, [diversification.ipynb](Activities/02-Stu_Correlation/So
 
   ![correlation-heatmap-scaled](Images/correlation-heatmap-scaled.png)
 
-* Look at the heatmap and cross reference the correlation table. It would appear as though the AMD stock appears to be the least correlated of the semiconductor stocks. Therefore, AMD stock would be the best semiconductor stock to add to the existing portfolio.
+* Look at the heatmap and cross reference the correlation table. It would appear as though the `ENB` stock appears to be the least correlated of the energy stocks. Therefore, the `ENV` stock would be the best energy stock to add to the existing portfolio.
 
   ![correlation-heatmap-focus](Images/correlation-heatmap-focus.png)
 
   ![correlation-table-focus](Images/correlation-table-focus.png)
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
