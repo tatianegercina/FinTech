@@ -376,7 +376,7 @@ When the closing price trend line moves below the lower band, a long (buy) oppor
 
 When the closing price trend line moves above the upper band, a short (sell) opportunity exists as the signal suggests that the price action will tend to move lower and more in line with where the price _should be_ (within the standard deviation area of the bands).
 
-<img src=Images/Boll-Bands.png width=700><br>
+<img src=Images/Boll-Bands.PNG width=700><br>
 
 </details>
 <details>
