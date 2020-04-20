@@ -486,11 +486,25 @@ In this activity, students will apply their knowledge of rolling statistics and 
 
 In this section, review the solution to the previous activity, Beta Comparisons.
 
-**File:** [beta_comparisons.ipynb](Activities/06-Stu_Beta/Solved/beta_comparisons.ipynb)
+**Files:**
 
-Open the solution file, [beta_comparisons.ipynb](Activities/06-Stu_Beta/Solved/beta_comparisons.ipynb), and explain the following:
+* [beta_comparisons.ipynb](Activities/06-Stu_Beta/Solved/beta_comparisons.ipynb)
 
-* Combine the DataFrames for each social media stock and the S&P 500 into a single DataFrame. This makes it easier to calculate the daily returns for each stock; simply call the `pct_change` function on the combined DataFrame.
+* [fb_data.csv](Activities/06-Stu_Beta/Resources/fb_data.csv)
+
+* [snap_data.csv](Activities/06-Stu_Beta/Resources/snap_data.csv)
+
+* [sp500_data.csv](Activities/06-Stu_Beta/Resources/sp500_data.csv)
+
+* [twtr_data.csv](Activities/06-Stu_Beta/Resources/twtr_data.csv)
+
+Open the solved version of the Jupyter notebook, live code the solution and explain the following:
+
+* The first step is to read in the data from the CSV files and combine the DataFrames for each social media stock and the S&P 500 into a single DataFrame.
+
+  ![stu_beta_data_read](Images/stu_beta_data_read.png)
+
+* Once the data is combines, it's easier to calculate the daily returns for each stock; simply call the `pct_change` function on the combined DataFrame.
 
   ![combined-dataframe](Images/combined-dataframe.png)
 
@@ -512,7 +526,7 @@ Open the solution file, [beta_comparisons.ipynb](Activities/06-Stu_Beta/Solved/b
 
 * Based on the overall beta calculations and the plotted chart, it is evident that `SNAP` holds the lowest beta, or relative volatility to the market. Interestingly enough, however, while `FB` and `TWTR` took a steep plunge in early 2019, `SNAP` rose dramatically.
 
-Ask if there are any questions before moving on.
+Answer any questions before moving on.
 
 ---
 
