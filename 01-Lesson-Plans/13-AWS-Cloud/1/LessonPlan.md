@@ -104,17 +104,17 @@ Continue with the slides and highlight the following points about the models of 
 
   * **Function/code as a service (FaaS):** Also known as serverless computing, it offers a remote procedure call that enables the deployment of individual functions in the cloud that run in response to events (e.g., [AWS Lambda](https://aws.amazon.com/lambda/)).
 
-* Clouds can be created in a private data center (private cloud), in a data center managed by a provider (public cloud) or in a combination of both (hybrid cloud)
+* Clouds can be created in a private data center (private cloud), in a data center managed by a provider (public cloud) or as a combination of both (hybrid cloud).
 
 * Cloud computing is considered secure enough to be used by many banks and government offices worldwide.
 
-* Cloud services allow you to scale your resources up and down as required.
+* Cloud services allow you to scale your resources up, or down, as required.
 
 * There are multiple cloud service providers, including Amazon, Microsoft, Google, Oracle, and IBM.
 
-Explain to students that, despite we can trust in the cloud and it is practically everywhere in our daily life, there are some of the disadvantages that we may take into account.
+Tell students that in spite of our trust in the cloud and its prevalence in our daily lives, it has some disadvantages that we should consider.
 
-Continue on the slides and highlight the following disadvantages of the cloud:
+Continue with the slides and highlight the following disadvantages of the cloud:
 
 * You have to trust a third-party provider with your data (encryption can address this).
 
@@ -128,7 +128,7 @@ Continue on the slides and highlight the following disadvantages of the cloud:
 
 * Clouds can fail and have downtime, including those due to planned maintenances out of your control.
 
-Open your browser, navigate to the [Amazon Web Services](https://aws.amazon.com/) homepage and cover the following points:
+Now, open your browser, navigate to the [Amazon Web Services](https://aws.amazon.com/) homepage and cover the following points:
 
 * Launched in March 2006, AWS popularized the concept of cloud computing and pioneered the cloud's adoption.
 
