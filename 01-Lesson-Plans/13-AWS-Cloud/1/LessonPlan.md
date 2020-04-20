@@ -259,13 +259,13 @@ Continue the demo by clicking the "Launcher" tab. Explain to students that Amazo
 
 ![Creating a notebook in Amazon SageMaker Studio](Images/sagemaker-studio-create-notebook.gif)
 
-Ensure that all the class has reached this point, and everyone was able to run this simple testing line of code, ask TAs to assist any students that may be stuck.
+Ensure all students have reached this point, and that everyone was able to run this simple testing line of code. Ask TAs to assist any students that may be stuck.
 
-Once everyone in the class has Amazon SageMaker Studio running, explain to students that as any Jupyter lab interface, they can run their notebooks and custom code in Amazon SageMaker Studio.
+Once everyone in the class has Amazon SageMaker Studio running, explain to students that like any Jupyter lab interface, they can run their notebooks and custom code in Amazon SageMaker Studio.
 
-Explain to students that now you will show them how to import a local Jupyter notebook into Amazon SageMaker Studio.
+Now, tell students that you will show them how to import a local Jupyter notebook into Amazon SageMaker Studio.
 
-Ask your TAs to slack out to students the `monte_carlo.ipynb` Jupyter notebook and the `tickers_data.csv` data file.
+Have your TAs slack out the `monte_carlo.ipynb` Jupyter notebook and the `tickers_data.csv` data file.
 
 Continue the demo by importing the data file into Amazon SageMaker Studio. Click on the "New Folder" icon and create a new folder named `Data`; after creating the folder, import the `tickers_data.csv` file from your local drive.
 
@@ -275,11 +275,11 @@ Next, move to the root folder and import the `monte_carlo.ipynb` Jupyter noteboo
 
 ![Loading a Jupyter notebook into Amazon SageMaker Studio](Images/sagemaker-studio-ipynb.gif)
 
-Continue the demo by opening the Jupyter notebook and selecting the "Python 3 (Data Science)" kernel. Run all the cells of the notebook and explain to students that the code in this notebook runs a Monte Carlo simulation using the tickers data you imported and pure Python code, we are not using jet the built-in algorithms of Amazon SageMaker.
+Continue the demo by opening the Jupyter notebook and selecting the "Python 3 (Data Science)" kernel. Run all the cells of the notebook and explain that this notebook code runs a Monte Carlo simulation using the tickers data you imported and pure Python code; we are not using the built-in algorithms of Amazon SageMaker yet.
 
 ![Running an imported Jupyter notebook in Amazon SageMaker Studio](Images/sagemaker-studio-running-notebook.gif)
 
-Be sure that all the students were able to run this notebook and answer any questions before moving on.
+Ensure that all the students were able to run this notebook, and answer any questions before moving on.
 
 ---
 
