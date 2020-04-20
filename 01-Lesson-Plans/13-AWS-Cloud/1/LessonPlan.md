@@ -46,7 +46,7 @@ By the end of today's class, students will be able to:
 
 * Because the homework demo is presented today (Day 1), get familiar with the homework's solutions before class.
 
-* Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also, encourage students to work with partners.
+* Be sure to set the pace for the class. Encourage students to work with partners, and remind them to attend office hours if they feel lost or stuck.
 
 * **Important!** Slack out the disclaimer for [AWS Free Tier](../Supplemental/AWS-Free-Tier.md) services at the end of today's class. Explain to students that while we are only using free tier services in the class, they should review this documentation to avoid accidentally incurring charges.
 
