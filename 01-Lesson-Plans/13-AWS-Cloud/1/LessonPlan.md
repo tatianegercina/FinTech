@@ -311,25 +311,25 @@ Start a short facilitated discussion with students. Ask the following question, 
 
   **Sample answer:** We can use unsupervised learning to cluster stock data so we can create investment portfolios according to the resulting groups.
 
-Continue with the presentation, move to the slide titled "How can we understand our customers?" and move forward by highlighting the following:
+Move to the slide titled "How can we understand our customers?" and highlight the following:
 
-* One of the most important uses of unsupervised learning, not only in FinTech, but also in some other sectors such as marketing, entertainment, or retail, is customer segmentation.
+* One of the most important uses of unsupervised learning, not only in FinTech, but also in sectors such as marketing, entertainment, or retail, is customer segmentation.
 
-* Beyond the typical segmentation variables, such as age, gender, income, or zip code, understanding customers is crucial in every sector.
+* Beyond the typical segmentation variables, such as age, gender, income, or postal code, understanding customers is crucial in every sector.
 
-* Supervised learning is very helpful at predicting the future based on labelled historical data; however, there are often situations where supervised learning is not feasible due to lack of information or lack of training labels.
+* Supervised learning is very helpful at predicting the future based on labelled historical data; however, there are often situations where supervised learning is not feasible, due to lack of information or lack of training labels.
 
-* Unsupervised learning allows us to cluster data to find hidden or unknown patterns that can be used to understand the customers better. For example, to develop a customized offer that responds to the needs identified in every group.
+* Unsupervised learning allows us to cluster data to find hidden or unknown patterns that can be used to understand customers better. For example, developing a customized offer that responds to the needs identified in every group.
 
 * The main applications of unsupervised learning are:
 
-  * **Clustering:** It allows us to split the dataset into groups according to similarity automatically. It can be used for customer segmentation and targeting.
+  * **Clustering:** It allows us to automatically split the dataset into groups according to similarity. It can be used for customer segmentation and targeting.
 
   * **Anomaly detection:** Automatically discovers unusual data points in a dataset. It is useful in identifying fraudulent transactions, locating broken pieces of hardware, or identifying an outlier caused by a human error during data entry.
 
 * Customer segmentation is one of the most popular applications of unsupervised learning. It is the division of potential customers in a given market into discrete groups.
 
-* Thanks to unsupervised learning algorithms, we can group customers based similarities such as:
+* Thanks to unsupervised learning algorithms, we can group customers based upon similarities such as:
 
   * Customer needs (e.g., a particular product can satisfy some of them)
   * Responses to online marketing channels
@@ -351,9 +351,9 @@ End the presentation with a closing facilitated discussion. Ask the following qu
 
 * How could an investment portfolio be improved using customer segmentation?
 
-  **Sample answer:** Using customer segmentation, a portfolio can be categorized by industry, location, revenue, account size, and the number of employees to reveal where risk and opportunity live within the portfolio. These patterns can provide critical measurable data for more predictive credit risk management.
+  **Sample answer:** Using customer segmentation, a portfolio can be categorized by industry, location, revenue, account size, and the number of employees, to reveal where risk and opportunity live within the portfolio. These patterns can provide critical measurable data for more predictive credit risk management.
 
-Explain to students that in Today's class, they will learn how to use Scikit-learn to implement clustering and customer segmentation.
+Explain to students that in today's class, they will learn how to use Scikit-learn to implement clustering and customer segmentation.
 
 Answer any questions before moving on.
 
