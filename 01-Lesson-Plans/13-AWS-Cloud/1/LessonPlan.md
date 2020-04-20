@@ -165,7 +165,7 @@ Answer any questions before moving on.
 
 ### 2. Everyone Do: Running Jupyter Notebooks in the Cloud with Amazon SageMaker (30 min)
 
-In this activity, students will learn about Amazon SageMaker and how to run Jupyter notebooks in the cloud using Amazon SageMaker Studio. After giving a short presentation on Amazon SageMaker with the lesson slides, you will guide students through the process of getting started with the cloud service via a collaborative demo.
+In this activity, students will learn about Amazon SageMaker and how to run Jupyter notebooks in the cloud with Amazon SageMaker Studio. After giving a short presentation on Amazon SageMaker using the lesson slides, you will guide students through how to get started on the cloud service with a collaborative demo.
 
 **Files:**
 
@@ -173,7 +173,7 @@ In this activity, students will learn about Amazon SageMaker and how to run Jupy
 
 * [tickers_data.csv](Activities/01-Evr_Intro_SageMaker_Studio/Resources/tickers_data.csv)
 
-Open the lesson slides, move to the "Running Jupyter Notebooks in the Cloud with Amazon SageMaker" section and highlight the following:
+Go to the "Running Jupyter Notebooks in the Cloud with Amazon SageMaker" section in the slideshow, and highlight the following:
 
 * Amazon SageMaker is a platform service that allows software developers and data scientists to build, train, and deploy ML models in the cloud.
 
@@ -181,31 +181,31 @@ Open the lesson slides, move to the "Running Jupyter Notebooks in the Cloud with
 
 * In this class, we will focus on gaining hands-on experience with Amazon SageMaker Studio. It's a web-based integrated development environment (IDE) that allows you to access all the services and tools needed to build, train, debug, deploy, and monitor your machine learning models.
 
-* Amazon SageMaker provides some built-in ML algorithms, but also, it supports leading ML frameworks such as TensorFlow, PyTorch, Apache MXNet, Keras, and Scikit-learn.
+* Amazon SageMaker provides some built-in ML algorithms, but also supports leading ML frameworks such as TensorFlow, PyTorch, Apache MXNet, Keras, and Scikit-learn.
 
 * Some of the advantages of using Amazon SageMaker are the following:
 
   * Provides tools that streamline a typical workflow for creating an ML model.
 
-  * Its infrastructure enables growth at scale with on-demand compute instances and dynamic storage.
+  * Its infrastructure enables growth at scale, with on-demand compute instances and dynamic storage.
 
-  * Building, training, and hosting is billed by the second with no minimum fees and no upfront commitments.
+  * Building, training, and hosting is billed by the second, with no minimum fees and no upfront commitments.
 
   * Productivity may be boosted with One-Click Training and One-Click Deployment.
 
-  * Provides built-in security, which includes access controls and monitoring.
+  * Provides built-in security, including access controls and monitoring.
 
-Explain to students that learning how to train and deploy models with Amazon SageMaker is a very in-demand skill that is worth learning.
+Explain to students that learning how to train and deploy models with Amazon SageMaker is an in-demand skill that is worth learning.
 
-Continue with the slides, show to students some of the companies that at currently using Amazon SageMaker and highlight the following:
+Continuing with the slides, show students some companies that currently use Amazon SageMaker, highlighting the following:
 
 * [**The Globe and Mail**](https://www.cantechletter.com/newswire/the-globe-and-mail-selects-aws-as-its-preferred-cloud-provider/) is using Amazon SageMaker to build models to retain existing customers and acquire new ones.
 
 * [**Novartis**](https://aws.amazon.com/blogs/industries/aws-and-novartis-re-inventing-pharma-manufacturing/?cs=4) is currently using Amazon SageMaker to build a computer vision-based model that will determine production line clearance.
 
-* Using Amazon SageMaker engineers at [**Coinbase**](https://aws.amazon.com/machine-learning/customers/innovators/coinbase/?cs=3) developed a machine learning-driven system that recognizes mismatches and anomalies in sources of user identification, allowing them to take action against potential sources of fraud quickly.
+* Using Amazon SageMaker, engineers at [**Coinbase**](https://aws.amazon.com/machine-learning/customers/innovators/coinbase/?cs=3) developed a machine learning-driven system that recognizes mismatches and anomalies in sources of user identification, allowing them to take action against potential sources of fraud quickly.
 
-Now you will continue to demo how to get started with Amazon SageMaker Studio. Ask students to log-in to the [AWS Management Console](https://console.aws.amazon.com/) using their root user and to follow your steps throughout the process.
+Now, you will continue to demo how to get started with Amazon SageMaker Studio. Ask students to log-in to the [AWS Management Console](https://console.aws.amazon.com/) using their root user and to follow your steps throughout the process.
 
 From the AWS Management Console, type `sagemaker` in the "Find Services" search box and choose `Amazon SageMaker` from the list.
 
