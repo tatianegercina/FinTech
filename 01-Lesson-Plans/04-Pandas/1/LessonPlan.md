@@ -534,9 +534,23 @@ Answer any questions before moving on.
 
 This section focuses on calculating returns for a group of stocks, or stock portfolios. Students should understand that portfolios of stocks are used by investors to manage and diversify risk. Defining a portfolio with varying capital allocations of stocks allows an investor to control and adjust their risk.
 
-**File:** [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.ipynb)
+**Files:**
 
-Open [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.ipynb) to review the solution. Cover the following points as you walk through the solved file.
+* [portfolio_returns.py](Activities/07-Ins_Portfolio_Returns/Solved/portfolio_returns.ipynb)
+
+* [emb_historical.csv](Activities/07-Ins_Portfolio_Returns/Resources/emb_historical.csv)
+
+* [imo_historical.csv](Activities/07-Ins_Portfolio_Returns/Resources/imo_historical.csv)
+
+Open the lesson slides, move to the "Portfolio Returns" section and highlight the following:
+
+* The purpose of a portfolio is to control the amount of risk and diversity in an investment.
+
+* Portfolio returns can be calculated using a dot product function, which multiplies allocated weights to each stock return.
+
+* Now, we will calculate portfolio returns using Python and all the metrics we have learned up to date.
+
+Open the unsolved version of the Jupyter notebook to live code the solution. Cover the following points as you walk through the file.
 
 * To calculate portfolio returns, each stock's closing prices are added as a column to the final portfolio DataFrame.
 
