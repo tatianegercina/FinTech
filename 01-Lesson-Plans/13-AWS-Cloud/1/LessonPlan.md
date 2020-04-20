@@ -2,11 +2,11 @@
 
 ### Overview
 
-Today's class will introduce students to unsupervised learning and cloud services. Students will gain hands-on experience with the k-means algorithm, one of the most used unsupervised learning algorithms for clustering. Students also will learn how to speed up machine learning (ML) algorithms by using principal component analysis (PCA), as well as to recognize and explain at least three main differences between supervised and unsupervised ML algorithms.
+Today's class will introduce students to unsupervised learning and cloud services. Students will gain hands-on experience with the k-means algorithm, one of the most used unsupervised learning algorithms for clustering. They will also learn how to speed up machine learning (ML) algorithms by using principal component analysis (PCA), and recognize and explain at least three main differences between supervised and unsupervised ML algorithms.
 
 The concept of **the cloud** is presented to students by highlighting the importance that these kinds of computing services have for FinTech professionals, given that the cloud allows scaling ML models to be used by hundreds or thousands of users.
 
-Students will be introduced to Amazon Web Services (AWS). This cloud platform is going to be used in this unit, as well as to the AWS resources that students will learn to deploy ML models in the cloud and create conversational interfaces, such as robo advisors.
+Students will be introduced to Amazon Web Services (AWS) cloud platform and resources in this unit, and will learn to deploy ML models in the cloud and create conversational interfaces, such as robo advisors.
 
 As a prelude for the rest of the unit, a demo of the homework is presented.
 
