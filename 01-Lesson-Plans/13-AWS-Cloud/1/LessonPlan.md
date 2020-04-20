@@ -287,27 +287,27 @@ Ensure that all the students were able to run this notebook, and answer any ques
 
 In this activity, students will be introduced to unsupervised learning and its most relevant applications.
 
-Explain to students that now you will introduce a new family of machine learning algorithms that are used to deal with unlabeled data.
+Explain to students that you will now introduce a new family of machine learning algorithms that are used to deal with unlabeled data.
 
-Open the lesson slides and go to the Introduction to "Unsupervised Learning" section.
+Open the lesson slides and go to the introduction of the "Unsupervised Learning" section.
 
 Start the presentation by explaining to students that, in general terms, machine learning has two main areas of application: supervised and unsupervised learning.
 
-From the previous units, students are already familiar with supervised learning algorithms and their applications, highlight to students the main differences between these types of learning.
+Students will already be familiar with supervised learning algorithms and their applications from previous units. Highlight the main differences between these modes of learning.
 
 | Supervised Learning                | Unsupervised Learning                      |
 | ---------------------------------- | ------------------------------------------ |
-| Input data is labelled             | Input data is unlabeled                    |
+| Input data is labelled             | Input data is unlabelled                    |
 | Uses training datasets             | Uses just input datasets                   |
 | **Goal:** Predict a class or value | **Goal:** Determine patterns or group data |
 
-Start a short facilitated discussion with students. Take one or two answers from the class by asking the following question:
+Start a short facilitated discussion with students. Ask the following question, taking a couple of answers from the class:
 
-* If unsupervised learning deals with unlabeled data, what kind of questions or business problems do you think can we solve?
+* If unsupervised learning deals with unlabelled data, what types of questions or business problems do you think we can solve?
 
   **Sample answer:** We can group customers on a retail chain by shopping habits, so we can send customized offers by email or mobile app to increase sales.
 
-  **Sample answer:** Having thousands of transactions per day on credit card operations, it is hard to identify abnormal or fraudulent transactions. We can use unsupervised learning to find patterns among transaction data to identify anomalies and potentially fraudulent transactions.
+  **Sample answer:** We can use unsupervised learning to find patterns among transaction data to identify anomalies and potentially fraudulent transactions (such as on credit card operations with a large number of daily transactions, making it challenging to identify abnormal activity). 
 
   **Sample answer:** We can use unsupervised learning to cluster stock data so we can create investment portfolios according to the resulting groups.
 
