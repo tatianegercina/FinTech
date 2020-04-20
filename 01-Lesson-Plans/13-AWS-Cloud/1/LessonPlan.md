@@ -12,7 +12,7 @@ As a prelude for the rest of the unit, a demo of the homework is presented.
 
 ### Class Objectives
 
-By the end of the class, students will be able to:
+By the end of today's class, students will be able to:
 
 * Recognize the differences between supervised and unsupervised machine learning.
 
@@ -38,13 +38,13 @@ By the end of the class, students will be able to:
 
 * Students will demonstrate how unsupervised machine learning could add value to business decision-making.
 
-* Understanding unsupervised learning may be challenging; however, everyone is a customer and is familiar with how companies use data to target customers or potential customers to offer products and services. Try to use analogies about how companies like [Amazon, Netflix, Google](https://www.pointillist.com/blog/customer-behavior-data/), or [Target](https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/) are using customer segmentation to provide customized offers, or [how Spotify is using segmentation](https://towardsdatascience.com/in-this-article-i-provide-a-detailed-analysis-of-spotify-as-a-company-music-industry-direction-eeb945d7257c) to improve its products and services.
+* While understanding unsupervised learning may be challenging, everyone is a customer and familiar with how companies use data to target customers or potential customers to offer products and services. Try to use analogies about how companies like [Amazon, Netflix, Google](https://www.pointillist.com/blog/customer-behavior-data/), or [Target](https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/) are using customer segmentation to provide customized offers, or [how Spotify is using segmentation](https://towardsdatascience.com/in-this-article-i-provide-a-detailed-analysis-of-spotify-as-a-company-music-industry-direction-eeb945d7257c) to improve its products and services.
 
-* There are several theoretical aspects behind the k-means and PCA algorithms, focus the class on the practical application of these algorithms for customer segmentation and share the additional references presented on the slides for those students interested in having a more in-depth understanding.
+* There are several theoretical aspects behind the k-means and PCA algorithms. Focus the class on the practical application of these algorithms for customer segmentation and share the additional references presented on the slides for those students interested in having a more in-depth understanding.
 
-* The cloud is a core concept for FinTech professionals; however, it might be seen as complex and nebulous for some students. It's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud by offering user-friendly interfaces that allow the deployment of a machine learning model with few lines of code and some mouse clicks.
+* The cloud is a core concept for FinTech professionals, but might be seen as complex and nebulous for some students. It's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud by offering user-friendly interfaces that allow the deployment of a machine learning model with few lines of code and some mouse clicks.
 
-* On Day 1, the homework demo is presented; be sure to get familiar with the homework's solutions before the class.
+* Because the homework demo is presented today (Day 1), get familiar with the homework's solutions before class.
 
 * Be sure to set the pace for the class. Encourage students to attend office hours if they feel lost or stuck. Also, encourage students to work with partners.
 
