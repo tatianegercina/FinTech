@@ -165,7 +165,7 @@ Answer any questions before moving on.
 
 ### 2. Everyone Do: Running Jupyter Notebooks in the Cloud with Amazon SageMaker (30 min)
 
-In this activity, students will learn what Amazon SageMaker is and how they can start running Jupyter notebooks in the Cloud using Amazon SageMaker Studio. This activity begins with a short presentation of Amazon SageMaker using the lesson slides. It concludes with a collaborative demo where you will guide the students throughout the process of getting started with this cloud service.
+In this activity, students will learn about Amazon SageMaker and how to run Jupyter notebooks in the cloud using Amazon SageMaker Studio. After giving a short presentation on Amazon SageMaker with the lesson slides, you will guide students through the process of getting started with the cloud service via a collaborative demo.
 
 **Files:**
 
