@@ -364,43 +364,93 @@ Answer any questions before moving on.
 
 In this activity, students will be introduced to the concept of beta and how it is used to determine the relative *unit-driven* performance of one variable to another. For example calculating the beta value of a stock's returns relative to the returns of the overall market.
 
-**File:** [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb)
+**Files:**
 
-Open [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb). As you walk through the demo, explain the following.
+* [beta.ipynb](Activities/05-Ins_Beta/Solved/beta.ipynb)
+
+* [amzn_data.csv](Activities/05-Ins_Beta/Resources/amzn_data.csv)
+
+* [sp500_data.csv](1/Activities/05-Ins_Beta/Resources/sp500_data.csv)
+
+Open the lesson slides, move to the "Beta" section and highlight the following:
+
+* Before start using Beta, there are two concepts that we need to review: covariance and variance.
 
 * What is covariance?
 
   * **Covariance** is a measure of the directional relationship between two variables. For example, the covariances between two financial assets such as stock returns would imply that both stock returns would move together with a positive covariance and move inversely with a negative covariance.
 
-  ![covariance.png](Images/covariance.png)
-
 * What is variance?
 
   * **Variance** is the measurement of how far numbers in a dataset are spread about their mean. For example, let's say stock A has an average price of $50, but varies in price as low as $5 and as high as $90. However, stock B averages $50, but varies in price as low as $40 and as high as $60. Stock A has a higher variance than stock B.
 
-  ![variance.png](Images/variance.png)
-
 * What is the difference between covariance and variance?
 
-  **Answer:** Covariance is a measure of correlation. Correlation describes the directional relationship between two variables in a unit-free manner, while covariance describes the directional relationship between two variables with consideration for the type of data used (in this case, daily return values).
+  * **Answer:** Variance looks at one variable, measuring the range in which that variable’s values may take. By contrast, covariance looks at the variance of two variables, and studies how those two variables vary together.
+
+    Covariance is similar in concept to correlation: the difference is that covariance values are usually too difficult to interpret (other than being positive or negative), whereas correlation is a standardized value (regardless of data type) that ranges from `-1` to `+1`.
 
 * How do covariance and variance relate to beta?
 
   * **Beta** uses covariance and variance to calculate the relative volatility of an individual stock's returns in comparison to the volatility of the overall market's returns.
 
-  ![beta.png](Images/beta.png)
+* The value of Beta can be interpreted as follows:
 
-* What is the difference between beta and correlation?
+  * `β = 1` exactly as volatile as the market
+  * `β >1` more volatile than the market
+  * `β < 1 > 0` less volatile than the market
+  * `β = 0` uncorrelated to the market
+  * `β < 0` negatively correlated to the market
 
-  * Beta measures the impact of one variable on another variable. Correlations measure the possible frequency of similar directional movements without consideration for cause and effect.
+* A company with a higher beta has greater risk and also greater expected returns.
 
-  * Beta is the slope of the two variables. Correlation is the strength of that linear relationship.
+Close the lesson slides and explain to students that now you will show them how to compute beta using Python.
 
-  ![beta-vs-correlation.png](Images/beta-vs-correlation.png)
+Open the unsolved version of the Jupyter notebook and highlight the following:
+
+* For this demo, we will use data from the stock price of Amazon and the S&P 500 index.
+
+* First, we load the data with the closing prices of Amazon and the S&P 500 index.
+
+  ![beta_read_data](Images/beta_read_data.png)
+
+* Next, we concatenate the data and calculate the daily returns using the `pct_change` function.
+
+  ![beta_prepare_data](Images/beta_prepare_data.png)
+
+* Since we want to compute the Beta of Amazon's stock in comparison with the S&P 500 index, the first step is to calculate the variance of the S&P 500 index. We use the `var` function from Pandas.
+
+  ![variance.png](Images/variance.png)
+
+* Next, we calculate the covariance of Amazon returns in contrast to the S&P 500 index. We use the `cov` function from Pandas.
+
+  ![covariance.png](Images/covariance.png)
+
+* To compute the value of Beta, we divide the covariance over the variance.
+
+  ![beta_value](Images/beta_value.png)
+
+* In this case, since Beta is greater than `1`, we may conclude that the Amazon stock is more volatile than the market; despite we may have a higher risk, we would have a return of 133% over the typical market return.
 
 * A good practice is to plot the progression of beta values for a stock over time using rolling windows to see its historical volatility relative to the market.
 
   ![rolling-beta.png](Images/rolling-beta.png)
+
+* Beta and correlation seem to be similar since both metrics contrast two variables, however there is a difference between beta and correlation.
+
+* Beta measures the impact of one variable on another variable. Correlations measure the possible frequency of similar directional movements without consideration for cause and effect.
+
+* To have a better understanding of this difference, we will use the `seaborn` library to plot the difference between beta and correlation.
+
+  ![beta-vs-correlation.png](Images/beta-vs-correlation.png)
+
+* Beta is the slope of the two variables. Correlation is the strength of that linear relationship.
+
+* We can also contrast the numerical values of beta and the correlation between Amazon and the S&P 500 index.
+
+  ![beta_vs_correlation](Images/beta_vs_correlation.png)
+
+* Note that the Beta value and the correlation do **not** match! Beta is a measure of volatility relative to the market. We would conclude that this stock is approximately 33% more volatile than the market (Beta of 1.329). The correlation is an indication of the extent of the linear relationship between `AMZN` and the `S&P500`.
 
 Ask if there are any questions before moving on.
 
