@@ -44,7 +44,7 @@ By the end of today's class, students will be able to:
 
 * The cloud is a core concept for FinTech professionals, but might be seen as complex and nebulous for some students. It's important to highlight how companies like Amazon Web Services have reduced the technological complexity behind the cloud by offering user-friendly interfaces that allow the deployment of a machine learning model with few lines of code and some mouse clicks.
 
-* Because the homework demo is presented today (Day 1), get familiar with the homework's solutions before class.
+* Because the homework demo is being presented today (Day 1), get familiar with the homework's solutions before class.
 
 * Be sure to set the pace for the class. Encourage students to work with partners, and remind them to attend office hours if they feel lost or stuck.
 
@@ -64,13 +64,13 @@ By the end of today's class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy."
 
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
+* The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx).
 
 ---
 
 ### 1. Instructor Do: Welcome Class (10 min)
 
-In this activity, students will learn what the cloud is, what are its pros and cons, and why the cloud is essential for FinTech professionals. The students will also be introduced to AWS and the particular services that will be used in this Unit. This activity concludes by presenting a short demo of the conversational interfaces that will be done in class.
+In this activity, students will learn what the cloud is, its pros and cons, and why it is essential for FinTech professionals. The students will also be introduced to AWS and the particular services that will be used in this unit. This activity concludes by presenting a short demo of the conversational interfaces that will be done in class.
 
 Welcome the class to Unit 13, explain to students that this is going to be a fun unit since they are going to learn how to deploy ML models in the cloud using AWS. Also, they will create conversational interfaces to implement bots that will be able to understand and respond using natural language.
 
