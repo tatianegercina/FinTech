@@ -360,7 +360,7 @@ Answer any questions before moving on.
 
 ---
 
-### 9. Instructor Do: Beta (10 min)
+### 8. Instructor Do: Beta (10 min)
 
 In this activity, students will be introduced to the concept of beta and how it is used to determine the relative *unit-driven* performance of one variable to another. For example calculating the beta value of a stock's returns relative to the returns of the overall market.
 
@@ -456,15 +456,33 @@ Ask if there are any questions before moving on.
 
 ---
 
+### 9. BREAK
+
+---
+
 ### 10. Student Do: Beta Comparisons (15 min)
 
 In this activity, students will apply their knowledge of rolling statistics and beta to plot the 30-day rolling betas of a group of stocks. The goal is to determine the most conservative stock choice, or the stock with the lowest beta.
 
-**File:** [beta_comparisons.ipynb](Activities/06-Stu_Beta/Unsolved/beta_comparisons.ipynb)
+**Files:**
 
-**Instructions:** [README.md](Activities/06-Stu_Beta/README.md)
+* [beta_comparisons.ipynb](Activities/06-Stu_Beta/Unsolved/beta_comparisons.ipynb)
 
-### 11. Instructor Do: Review Beta Comparisons (5 min)
+* [fb_data.csv](Activities/06-Stu_Beta/Resources/fb_data.csv)
+
+* [snap_data.csv](Activities/06-Stu_Beta/Resources/snap_data.csv)
+
+* [sp500_data.csv](Activities/06-Stu_Beta/Resources/sp500_data.csv)
+
+* [twtr_data.csv](Activities/06-Stu_Beta/Resources/twtr_data.csv)
+
+**Instructions:**
+
+* [README.md](Activities/06-Stu_Beta/README.md)
+
+---
+
+### 11. Instructor Do: Review Beta Comparisons (10 min)
 
 In this section, review the solution to the previous activity, Beta Comparisons.
 
@@ -495,10 +513,6 @@ Open the solution file, [beta_comparisons.ipynb](Activities/06-Stu_Beta/Solved/b
 * Based on the overall beta calculations and the plotted chart, it is evident that `SNAP` holds the lowest beta, or relative volatility to the market. Interestingly enough, however, while `FB` and `TWTR` took a steep plunge in early 2019, `SNAP` rose dramatically.
 
 Ask if there are any questions before moving on.
-
----
-
-### 12. BREAK (40 min)
 
 ---
 
