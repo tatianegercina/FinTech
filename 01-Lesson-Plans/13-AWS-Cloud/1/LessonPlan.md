@@ -215,21 +215,21 @@ Explain to students that AWS currently offers Amazon SageMaker Studio as a gener
 
 Despite they are going to use a preview version, explain to students that it's is fully functional and can be used free of charge during its preview period.
 
-In the Amazon SageMaker homepage, click on the "Amazon SageMaker Studio" at the left menu to continue.
+On the Amazon SageMaker homepage, click on the "Amazon SageMaker Studio" button in the left menu to continue.
 
 ![Opening Amazon SageMaker Studio](Images/open-sagemaker-studio.png)
 
-If you are not in the `US East (Ohio)` AWS region, you will see a warning message asking for switching to that region. Open the AWS regions list, select the `US East (Ohio)` AWS region, and click again in the "Amazon SageMaker Studio" option in the left menu.
+If you are not in the `US East (Ohio)` AWS region, you will see a warning message asking to switch to that region. Open the AWS regions list, select the `US East (Ohio)` AWS region, and click again on the "Amazon SageMaker Studio" option in the left menu.
 
 ![Switching to the US East (Ohio) AWS Region](Images/switching-to-ohio.gif)
 
-Once you landed the Amazon SageMaker Studio homepage, explain to students that one of the main advantages of using this tool is that it deals with all the technical complexity of creating Amazon SageMaker instances. Creating instances is a process that implies to deploy some [Amazon EC2 instances (similar to virtual machines)](https://aws.amazon.com/ec2/) and several privacy settings; following a manual process may take a few hours.
+Once you land on the Amazon SageMaker Studio homepage, explain to students that one of the main advantages of using this tool is that it deals with all the technical complexity of creating Amazon SageMaker instances. Creating instances is a process that implies to deploy some [Amazon EC2 instances (similar to virtual machines)](https://aws.amazon.com/ec2/) and several privacy settings; following a manual process may take a few hours.
 
-Continue by setting the initial configuration for Amazon SageMaker Studio, under the "Get Started" section, choose the "Quick Start" option and leave the default user name.
+Continue setting the initial configuration for Amazon SageMaker Studio; under the "Get Started" section, choose the "Quick Start" option and leave the default user name.
 
 ![Choosing the default user name for Amazon SageMaker Studio](Images/sagemaker-studio-user.png)
 
-Next, in the "Execution role" option, click on the list box and choose "Create a new role"; a pop-up window named "Create an IAM role" will appear, select "Any S3 bucket" under the "S3 buckets you specify" option and click on the "Create role" button to continue.
+Next, in the "Execution role" option, click on the list box and choose "Create a new role"; a pop-up window named "Create an IAM role" will appear. Select "Any S3 bucket" under the "S3 buckets you specify" option, and click on the "Create role" button to continue.
 
 ![Create an execution role](Images/sagemaker-studio-execution-role.gif)
 
@@ -241,21 +241,21 @@ Next, the new instance of Amazon SageMaker Studio and the new user will be confi
 
 ![Amazon SageMaker Studio instance creation](Images/sagemaker-studio-instance-in-progress.png)
 
-Once the Amazon SageMaker Studio instance is ready, you will see the following notification message; you may have to wait an additional minute or two until the Studio user is ready, after that, you will see the "Open Studio" link enabled.
+Once the Amazon SageMaker Studio instance is ready, you will see the following notification message. You may have to wait an additional minute or two until the Studio user is ready—after that, you will see the "Open Studio" link enabled.
 
 ![Amazon SageMaker Studio is ready](Images/sagemaker-studio-instance-ready.png)
 
-Continue the demo by clicking on the "Open Studio" link, a new window (or tab) will be opened and you will see the following loading page until the UI of Amazon SageMaker Studio appears. **Note:** This process may take up to five minutes the first time.
+Continue the demo by clicking on the "Open Studio" link. A new window (or tab) will be opened and you will see the following loading page until the UI of Amazon SageMaker Studio appears. **Note:** This process may take up to five minutes the first time.
 
 ![Loading Amazon SageMaker Studio](Images/sagemaker-studio-loading.png)
 
-After the loading process ends, you will see the UI of Amazon SageMaker Studio. You may note that it is practically the same UI as Jupyter lab but with a different colour scheme.
+After the loading process ends, you will see the UI of Amazon SageMaker Studio. You may note that it is practically the same UI as Jupyter lab, but with a different colour scheme.
 
 ![The Amazon SageMaker Studio UI](Images/sagemaker-studio-ui.png)
 
 Explain to students that Amazon SageMaker Studio can be used in the same way they were working locally with Jupyter lab; the main difference is that Studio is a cloud application that allows access to all the computing power of AWS.
 
-Continue the demo by clicking in the "Launcher" tab. Explain to students that Amazon SageMaker has different built-in images to create notebooks; these images are similar to a Python virtual environment. Continue the demo by ensuring the "Data Science" image is selected; next, click on the "Python 3" notebook option. A fresh Jupyter notebook will appear, test it by printing a `Hello!!` message.
+Continue the demo by clicking the "Launcher" tab. Explain to students that Amazon SageMaker has different built-in images to create notebooks; these images are similar to a Python virtual environment. Make sure that the "Data Science" image is selected, and then click on the "Python 3" notebook option. A fresh Jupyter notebook will appear. Test it by printing a `Hello!!` message.
 
 ![Creating a notebook in Amazon SageMaker Studio](Images/sagemaker-studio-create-notebook.gif)
 
