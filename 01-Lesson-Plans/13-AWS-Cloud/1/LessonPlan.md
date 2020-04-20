@@ -70,9 +70,9 @@ By the end of today's class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (10 min)
 
-In this activity, students will learn what the cloud is, its pros and cons, and why it is essential for FinTech professionals. The students will also be introduced to AWS and the particular services that will be used in this unit. This activity concludes by presenting a short demo of the conversational interfaces that will be done in class.
+In this activity, students will learn about the cloud, its pros and cons, and why it is essential for FinTech professionals. Students will also be introduced to AWS and the particular services that will be used in this unit. The activity will be concluded with a short demo of the conversational interfaces that will be utilized in class.
 
-Welcome the class to Unit 13, explain to students that this is going to be a fun unit since they are going to learn how to deploy ML models in the cloud using AWS. Also, they will create conversational interfaces to implement bots that will be able to understand and respond using natural language.
+Start by welcoming the class to Unit 13, and explain that it will be fun, as they'll be learning how to deploy ML models in the cloud using AWS. They will also create conversational interfaces to implement bots that will be able to understand and respond using natural language.
 
 Open the lesson slides, move to the "Welcome to the Cloud and Amazon Web Services" section and start talking about the cloud by asking the students the following question.
 
