@@ -1,31 +1,43 @@
--- Create tables
+DROP TABLE IF EXISTS owners CASCADE;
+DROP TABLE IF EXISTS estates CASCADE;
+DROP TABLE IF EXISTS estate_type CASCADE;
+DROP TABLE IF EXISTS estates_new CASCADE;
 
-CREATE TABLE animals_all (
-  id SERIAL PRIMARY KEY,
-  animal_species VARCHAR(30) NOT NULL,
-  owner_name VARCHAR(30) NOT NULL
+-- Create owners table and insert values
+CREATE TABLE owners (
+  owner_id INT PRIMARY KEY NOT NULL,
+  first_name VARCHAR(255),
+  last_name VARCHAR(255)
 );
 
-CREATE TABLE animals_location (
-  id SERIAL PRIMARY KEY,
-  location VARCHAR(30) NOT NULL,
-  animal_id INTEGER NOT NULL,
-  FOREIGN KEY (animal_id) REFERENCES animals_all(id)
+-- Create pet name table and insert values
+CREATE TABLE estates (
+  estate_id INT NOT NULL PRIMARY KEY,
+  owner_id INT NOT NULL,
+  FOREIGN KEY (owner_id) REFERENCES owners(owner_id),
+  address VARCHAR(255),
+  city VARCHAR (255),
+  state VARCHAR(255),
+  zip_code VARCHAR(255),
+  type VARCHAR (255)
 );
 
+-- BONUS
+-- Create estate_type table and insert data
+CREATE TABLE estate_type (
+  estate_type_id INT NOT NULL PRIMARY KEY,
+  estate_type VARCHAR(255)
+);
 
--- Insert data
-
-INSERT INTO animals_all (animal_species, owner_name)
-VALUES
-  ('Dog', 'Bob'),
-  ('Fish', 'Bob'),
-  ('Cat', 'Kelly'),
-  ('Dolphin', 'Aquaman');
-
-INSERT INTO animals_location (location, animal_id)
-VALUES
-  ('Dog House', 1),
-  ('Fish Tank', 2),
-  ('Bed', 3),
-  ('Ocean', 4);
+-- Create new pet tables that takes a service id
+CREATE TABLE estates_new (
+  estate_id INT NOT NULL PRIMARY KEY,
+  owner_id INT NOT NULL,
+  FOREIGN KEY (owner_id) REFERENCES owners(owner_id),
+  estate_type_id INT NOT NULL,
+  FOREIGN KEY (estate_type_id) REFERENCES estate_type(estate_type_id),
+  address VARCHAR(255),
+  city VARCHAR (255),
+  state VARCHAR(255),
+  zip_code VARCHAR(255)
+);

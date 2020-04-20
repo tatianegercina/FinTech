@@ -1,13 +1,17 @@
--- 1. What is the average cost to rent a film in the Sakila stores?
+--1. What is the average payment amount?
 
 
--- 2. What is the average rental cost of films by rating? On average, what is the cheapest rating of films to rent? Most expensive?
+--2. What is the total payment amount?
 
 
--- 3. How much would it cost to replace all the films in the database?
+--3. What is the minimum payment amount?
 
 
--- 4. How much would it cost to replace all the films in each ratings category?
+--4. What is the maximum payment amount?
 
 
--- 5. How long is the longest movie in the database? The shortest?
+--5. What is the count of payments for each customer?
+
+
+--6. How many customers has each staff serviced?
+

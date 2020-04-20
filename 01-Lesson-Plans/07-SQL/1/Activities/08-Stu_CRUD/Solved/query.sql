@@ -1,29 +1,31 @@
--- Add primary key
-ALTER TABLE firepower
-ADD COLUMN id SERIAL PRIMARY KEY;
+-- Return all rows and columns of sales table
+SELECT *
+FROM sales;
 
--- Delete and update data
-DELETE FROM firepower
-WHERE ReservePersonnel = 0;
+-- Return all rows and columns for records with
+-- loan amounts less than $300,000
+SELECT *
+FROM sales
+WHERE loan_amount < 300000;
 
-UPDATE firepower
-SET FighterAircraft = 1
-WHERE FighterAircraft = 0;
+-- Return the average loan amount
+SELECT AVG(loan_amount)
+FROM sales;
 
-UPDATE firepower
-SET TotalAircraftStrength = TotalAircraftStrength + 1
-WHERE FighterAircraft = 1;
+-- Update the loan amount for sales_id 33
+UPDATE sales
+SET loan_amount = 423212
+WHERE sales_id = 33;
 
--- Select averages and rename columns
-SELECT AVG(TotalMilitaryPersonnel) AS AvgTotMilPersonnel,
-	AVG(TotalAircraftStrength) AS AvgTotAircraftStrength,
-	AVG(TotalHelicopterStrength) AS AvgTotHelicopterStrength,
-	AVG(TotalPopulation) AS AvgTotalPopulation
-FROM firepower;
+-- Add a boolean column
+ALTER TABLE sales
+ADD COLUMN loan_distributed BOOLEAN DEFAULT True;
 
 -- Insert new data
-INSERT INTO firepower(Country, TotalPopulation, TotalMilitaryPersonnel, TotalAircraftStrength, TotalHelicopterStrength)
-VALUES ('GlobalLand', 60069024, 524358, 457, 183);
+INSERT INTO sales
+(sales_id, payment_id, mortgage_id, loan_amount, loan_date)
+VALUES (101, 101, 2, 734544, '10/5/1995');
 
--- View table
-SELECT * FROM firepower;
+-- Delete data
+DELETE FROM sales
+WHERE sales_id = 72;

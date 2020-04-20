@@ -6,7 +6,7 @@
 
 ## Background
 
-Fraud is prevalent these days, whether you are a small taco shop or a large international business. While there are emerging technologies that employ machine learning and artificial intelligence to detect fraud, many instances of fraud detection still require strong data analytics to find abnormal charges.
+Fraud is everywhere these days—whether you are a small taco shop or a large international business. While there are emerging technologies that employ machine learning and artificial intelligence to detect fraud, many instances of fraud detection still require strong data analytics to find abnormal charges.
 
 In this homework assignment, you will apply your new SQL skills to analyze historical credit card transactions and consumption patterns in order to identify possible fraudulent transactions.
 
@@ -15,7 +15,7 @@ You are asked to accomplish three main tasks:
 1. [Data Modeling](#Data-Modeling):
 Define a database model to store the credit card transactions data and create a new PostgreSQL database using your model.
 
-2. [Data Engineering](#Data-Engineering): Create a database schema on PostgreSQL and populate your  database from the CSV files provided.
+2. [Data Engineering](#Data-Engineering): Create a database schema on PostgreSQL and populate your database from the CSV files provided.
 
 3. [Data Analysis](#Data-Analysis): Analyze the data to identify possible fraudulent transactions.
 
@@ -25,8 +25,8 @@ Define a database model to store the credit card transactions data and create a 
 
 * [card_holder.csv](Data/card_holder.csv)
 * [credit_card.csv](Data/credit_card.csv)
-* [merchant.csv](Data/merchant.csv)
 * [merchant_category.csv](Data/merchant_category.csv)
+* [merchant.csv](Data/merchant.csv)
 * [transaction.csv](Data/transaction.csv)
 
 ## Instructions
@@ -35,9 +35,11 @@ Define a database model to store the credit card transactions data and create a 
 
 Create an entity relationship diagram (ERD) by inspecting the provided CSV files.
 
+**Note:** For the `credit_card` table, the `card` column should be a VARCHAR(20) datatype rather than an INT.
+
 Part of the challenge here is to figure out how many tables you should create, as well as what kind of relationships you need to define among the tables.
 
-Feel free to discuss your database model design ideas with your classmates. You can use a tool like [Quick Database Diagrams](https://www.quickdatabasediagrams.com) to create your model.
+Feel free to discuss your database model design ideas with your classmates. You can use a tool like [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/) to create your model.
 
 ### Data Engineering
 
@@ -47,13 +49,13 @@ After creating the database schema, import the data from the corresponding CSV f
 
 ### Data Analysis
 
-It's time to identify fraudulent transactions. In this part of the homework assignment, you will analyze the data and then create a report to present your findings. You can use a Jupyter Notebook, a markdown file, or a word processor. Your report should answer the following questions:
+Now that your data is prepared within the database, it's finally time to identify fraudulent transactions using SQL and Pandas DataFrames. In this part of the homework assignment, you will analyze the data and then create a report within a Jupyter Notebook file to present your findings. Your report should answer the following questions:
 
 * How can you isolate (or group) the transactions of each cardholder?
 
 * Consider the time period 7:00 a.m. to 9:00 a.m.
 
-  * What are the top 100 highest transactions during this time period?
+  * What are the 100 highest transactions during this time period?
 
   * Do you see any fraudulent or anomalous transactions?
 
@@ -61,7 +63,7 @@ It's time to identify fraudulent transactions. In this part of the homework assi
 
 * Some fraudsters hack a credit card by making several small payments (generally less than $2.00), which are typically ignored by cardholders. Count the transactions that are less than $2.00 per cardholder. Is there any evidence to suggest that a credit card has been hacked? Explain your rationale.
 
-* What are the top 5 merchants prone to being hacked using small transactions?
+* What are the top five merchants prone to being hacked using small transactions?
 
 * Once you have a query that can be reused, create a view for each of the previous queries.
 
@@ -73,9 +75,9 @@ Create a report for fraudulent transactions of some top customers of the firm. T
 
   * What difference do you observe between the consumption patterns? Does the difference suggest a fraudulent transaction? Explain your rationale.
 
-* The CEO of the biggest customer of the firm suspects that someone has used her corporate credit card without authorization in the first quarter of 2018 to pay quite expensive restaurant bills. You are asked to find any anomalous transactions during that period.
+* The CEO of the firm's biggest customer suspects that someone has used her corporate credit card without authorization in the first quarter of 2018 to pay for several expensive restaurant bills. You are asked to find any anomalous transactions during that period.
 
-  * Using Plotly Express, create a series of six box plots, one for each month, in order to identify how many outliers per month for cardholder ID 25.
+  * Using Plotly Express, create a series of six box plots, one for each month, in order to identify how many outliers there are per month for cardholder ID 25.
 
   * Do you notice any anomalies? Describe your observations and conclusions.
 
@@ -109,4 +111,4 @@ For comparing time and dates, take a look at the [date/time functions and operat
 
 ---
 
-© 2019 Trilogy Education Services
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

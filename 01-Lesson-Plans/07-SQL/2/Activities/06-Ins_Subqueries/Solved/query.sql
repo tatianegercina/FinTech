@@ -25,7 +25,7 @@ WHERE film_id IN
   WHERE title = 'EARLY HOME'
 );
 
--- Check to more sure the subquery returned correct value
+-- Check to make sure the subquery returned correct value
 SELECT *
 FROM inventory
 WHERE film_id IN (268);
