@@ -134,11 +134,11 @@ Now, open your browser, navigate to the [Amazon Web Services](https://aws.amazon
 
 * AWS comprises more than 140 services, including technologies for computing, storage, networking, database, analytics, IoT, machine learning, and more.
 
-* AWS launched its first region in Canada in 2016, it's called `ca-central-1`.
+* AWS first launched in the Canada region in 2016, named `ca-central-1`.
 
-* Having an AWS Canadian region, allow customers in Canada to offer cloud services that are complaint with the Canadian cloud services regulations.
+* This allowed customers in Canada to offer cloud services compliant with Canadian cloud services regulations.
 
-* Thousands of companies use AWS worldwide, [in Canada we have some relevant success stories with companies like](https://aws.amazon.com/canada/customer-success-stories/) The National Bank of Canada, Porter Airlines, Toronto Star, The Globe and Mail, The Government of Ontario, and many more.
+* Thousands of companies use AWS worldwide, [in Canada we have some relevant success stories with companies like](https://aws.amazon.com/canada/customer-success-stories/) The National Bank of Canada, the Toronto Star, The Globe and Mail, the Government of Ontario, and many more.
 
 Slack out the following link to students if they want to learn more about AWS: [AWS Cloud Products](https://aws.amazon.com/products/)
 
@@ -149,7 +149,7 @@ Explain to students that in this unit, they will have hands-on experience with t
 * **Amazon S3:** To store files in the cloud.
 * **AWS Lambda:** To develop serverless applications.
 
-Conclude this introduction by telling students that in this unit, they create two chatbots using Amazon Lex and AWS Lambda.
+Conclude this introduction by telling students that in this unit, they will create two chatbots using Amazon Lex and AWS Lambda.
 
 1. A cryptocurrency converter.
 
