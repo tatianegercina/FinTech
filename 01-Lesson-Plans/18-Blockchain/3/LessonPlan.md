@@ -28,7 +28,7 @@ By the end of the class, students will be able to:
 
 * **Important Note:** For this week's activities, Windows users **MUST** use `git-bash` and not the default command prompt in Windows!
 
-* Before class, make sure to follow the `geth` [install instructions](https://github.com/ethereum/go-ethereum/wiki/Installing-Geth) and ensure that the tool is functioning in your computer.
+* Before class, make sure to follow the `geth` [install instructions](../Supplemental/blockchain-install-guide.md) and ensure that the tool is functioning in your computer.
 
 * It is highly advised to keep track of the commands you run in order to start a blockchain with `geth`. There are many commands, but two of them will be the most important, and it is easiest to keep track if you are maintaining the notes in each step.
 
