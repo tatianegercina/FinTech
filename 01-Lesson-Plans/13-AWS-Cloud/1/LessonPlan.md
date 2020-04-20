@@ -74,17 +74,17 @@ In this activity, students will learn about the cloud, its pros and cons, and wh
 
 Start by welcoming the class to Unit 13, and explain that it will be fun, as they'll be learning how to deploy ML models in the cloud using AWS. They will also create conversational interfaces to implement bots that will be able to understand and respond using natural language.
 
-Open the lesson slides, move to the "Welcome to the Cloud and Amazon Web Services" section and start talking about the cloud by asking the students the following question.
+Open the lesson slides, navigate to the "Welcome to the Cloud and Amazon Web Services" section, and ask students the following question:
 
 * What do you think the cloud is?
 
-Collect two or three answers and emphasize the following points:
+Take two or three answers from the class, and then hit on the following points:
 
 * In essence, the cloud refers to the on-demand availability of computer systems resources.
 
 * The computing resources may include data storage, computing power, and collaboration platforms.
 
-* There is no need to have physical access to the hardware; it is managed through the Internet using public or private networks.
+* There is no need to have physical access to the hardware; it is managed through the internet using public or private networks.
 
 * Normally, you pay as you go for what services you use (sometimes down to the second or byte) with little or no upfront costs.
 
