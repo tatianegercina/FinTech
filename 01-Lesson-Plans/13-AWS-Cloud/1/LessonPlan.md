@@ -409,9 +409,9 @@ Live code the demo and highlight the following:
 
   ![Removing the risk column](Images/drop-risk-column.png)
 
-Explain to students that all the variables in the dataset should be numerical to fit the unsupervised learning algorithms, so we need to transform any categorical data or non-numeric features in the dataset. In this demo, we need to turn the `male` and `female` categorical values to a numeric representation.
+Explain to students that all the variables in the dataset should be numerical to fit the unsupervised learning algorithms, so we need to transform any categorical data or non-numeric features. In this demo, we must change the `male` and `female` categorical values into numeric representations.
 
-Explain to students that we may use the `LabelEncoder` from scikit-learn; however we will perform a manual encoding this time using the `encodeGender()` function.
+Explain to students that we may use the `LabelEncoder` from scikit-learn; however, we will perform a manual encoding this time using the `encodeGender()` function.
 
 ```python
 def encodeGender(gender):
@@ -456,13 +456,13 @@ Ask the class if there are any further questions before moving to the next activ
 
 ### 5. Student Do: Understanding Customers (15 min)
 
-In this activity, students will perform some data preparation tasks on a dataset that contains data from purchases on an e-commerce website made by 200 customers. Students will use this dataset on further activities to find customer segments.
+In this activity, students will perform data preparation tasks on a dataset containing data from purchases on an ecommerce website made by 200 customers. Students will use this dataset on further activities to find customer segments.
 
 Some data transformations should be made to the dataset, so ask TAs to assist students if there are any questions about why the following changes are needed.
 
 * **Annual Income:** This feature should be regularized since it is on a different scale than the other features; dividing by `1000` is the simplest solution.
 
-* **Gender:** The `Gender` should be transformed to a numerical value, in this case, transforming `Male` to `1` and `Female` to `0` is a feasible solution.
+* **Gender:** The `Gender` should be transformed to a numerical value; in this case, transforming `Male` to `1` and `Female` to `0` is a feasible solution.
 
 * **CustomerID:** Since this column is not relevant to the clustering algorithm, it should be dropped from the DataFrame.
 
@@ -504,7 +504,7 @@ Live code the solution and highlight the following:
 
 * All columns, but `Gender`, have a numeric data type. So we will only need to encode the `Gender` column.
 
-* The `CustomerID` column can be dropped; it is not relevant for clustering since it does not denote any important characteristic of customer shopping habits.
+* The `CustomerID` column can be dropped; it is not relevant for clustering since it does not denote any important characteristics of customer shopping habits.
 
   ```python
   df_shopping.drop(columns=["CustomerID"], inplace=True)
@@ -547,7 +547,7 @@ Be sure that there are no questions before moving forward.
 
 ### 8. Instructor Do: The K-Means Algorithm (15 min)
 
-In this activity, students will learn how the k-means algorithm works. Use your time wisely to cover the theoretical part, as well as the coding part.
+In this activity, students will learn how the k-means algorithm works. Use your time wisely to cover the theoretical portion, as well as the coding portion.
 
 **Files:**
 
@@ -561,13 +561,13 @@ Open the lesson slides and move to the K-Means Algorithm section; go through the
 
   > Imagine that you are in a room full of spheres (data points), and you want to learn more about them, so you start to observe.
   >
-  > You realize that every sphere represents a flower and that axes represent features of flowers. After observing the flowers, you discovered that there are some patterns when you combine the three features.
+  > You realize that every sphere represents a flower, and that axes represent features of flowers. After observing the flowers, you discover that there are some patterns when you combine the three features.
   >
   > We can see that spheres (data points) with similar features seem to be closer together than data points with dissimilar features. We can use this spatial information to group similar data points together.
 
 Explain to students that k-means is an unsupervised learning algorithm used to identify clusters and solve clustering issues.
 
-Continue on the slides to formally introduce k-means and highlight the following:
+Continue on the slides to formally introduce k-means, and highlight the following:
 
 * The k-means algorithm groups the data into `k` clusters, where each piece of data is assigned to a cluster based on some similarity or distance measure to a **centroid**.
 
@@ -588,13 +588,13 @@ Continue on the slides to formally introduce k-means and highlight the following
 
 * The **inertia** that is the sum of squared distances of samples to their closest cluster center is commonly used as an objective function.
 
-* Visually, the best number for `k` is the `k` value where the curve turns like an elbow.
+* Visually, the best number for `k` is the `k` value, where the curve turns like an elbow.
 
 * Analytically, using the inertia, we choose as the best `k` the `k` value where adding more clusters only marginally decreases the inertia.
 
 Reassure students that while this may sound complex, k-means is quite simple to implement using Python.
 
-Close the presentation, switch to Amazon SageMaker Studio and upload the unsolved version of the Jupyter notebook.
+Close the presentation, switch to Amazon SageMaker Studio, and upload the unsolved version of the Jupyter notebook.
 
 ![Uploading the unsolved version of the Jupyter notebook](Images/sagemaker-studio-risk-kmeans.gif)
 
@@ -628,7 +628,7 @@ Open the unsolved Jupyter Notebook, select the `Python 3 (Data Science)` kernel 
 
 Explain to students that, as they can see, three classes were found, labelled as `0`, `1`, and `2`. Make it clear to students that naming the classes is part of the job done by a subject matter expert; the k-means algorithm is just able to identify how many clusters are in the data and label them with numbers.
 
-Continue the demo by adding a new column to the DataFrame with the predicted risk levels, explain to students that the predicted classes are in the `labels_` attribute of the model.
+Continue the demo by adding a new column to the DataFrame with the predicted risk levels, and explain to students that the predicted classes are in the `labels_` attribute of the model.
 
 ![Adding predicted classes](Images/adding-classes-column.png)
 
