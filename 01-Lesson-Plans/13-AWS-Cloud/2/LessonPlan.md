@@ -80,17 +80,15 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to create an `administrator` user using AWS Identity and Access Management (IAM) service. An IAM user will add some extra security when working on AWS. This is a collaborative activity where students should follow your steps throughout the process, so be sure to keep the pace of the activity and ask TAs to assist those students who may be stuck.
 
-Explain to students that a standard best practice is to avoid using the principal or root user to manage an AWS account. The root user is the one they used to create their AWS account and the same user they use on Day 1.
+Explain to students that standard best practice is to avoid using the principal, or root user, to manage an AWS account. The root user is the one they used to create their AWS account (and the same user they used on Day 1).
 
-Highlight to students, that usually a new user should be created for each person that requires administrative access to the services managed by an AWS root account, especially in corporate environments.
+Highlight to students that a new user should be created for each person needing administrative access to the services managed by an AWS root account, especially in corporate environments. AWS provides a service called Identity and Access Management (IAM) service, to create and manage users.
 
-Explain to students that AWS provides a service called Identity and Access Management (IAM) service to create and manage users.
+Open the [AWS Management Console](https://console.aws.amazon.com) using your root user. Ask students to do the same, and follow you in the process of creating a new user in IAM.
 
-Open the [AWS Management Console](https://console.aws.amazon.com) using your root user, ask students to do the same to follow you in the process of creating a new user in IAM.
+Once all students have opened their AWS Management Console, explain that you will now create an `administrator` user that will have permission to administer all the AWS services.
 
-Once all the students opened their AWS Management Console, explain that now you will create an `administrator` user that will have permission to administer all the AWS services.
-
-Explain to students that this new user may look redundant with the root user, however, if the access credentials of this new `administrator` user get compromised, you can block it or recreate the password to secure your services without compromising your root users.
+Tell students that this new user may look redundant with the root user, however, if the access credentials of this new `administrator` user get compromised, you can block it or recreate the password to secure your services without compromising your root users.
 
 Continue the demo and highlight the following:
 
@@ -98,7 +96,7 @@ Continue the demo and highlight the following:
 
   ![Create an administrator IAM user - Step 1](Images/iam-user-1.png)
 
-* In the IAM start page, you may note that this service is marked as `Global` in the upper right corner, this means that IAM users can access AWS resources in any AWS Region. In the left pane menu, choose the "Users" option to continue.
+* In the IAM start page, you may note that this service is marked as `Global` in the upper right corner. This means that IAM users can access AWS resources in any AWS Region. In the left pane menu, choose the "Users" option to continue.
 
   ![Create an administrator IAM user - Step 2](Images/iam-user-2.png)
 
@@ -110,7 +108,7 @@ Continue the demo and highlight the following:
 
   * **User name:** `administrator`
   * **Access type:** Select the "Programmatic access" and "AWS Management Console access" boxes.
-  * **Console password:** Choose "Custom password" and type a password you may remember.
+  * **Console password:** Choose "Custom password" and type a password you can remember.
   * **Require password reset:** Uncheck this box.
 
   ![Create an administrator IAM user - Step 3](Images/iam-user-3.png)
@@ -151,7 +149,7 @@ Continue the demo and highlight the following:
 
   ![Create an administrator IAM user - Step 10](Images/iam-user-10.png)
 
-Explain to students that now you should enable access to billing data for the new IAM administrator user, proceed as follows:
+Explain to students that you should now enable access to billing data for the new IAM administrator user. Proceed as follows:
 
 * On the navigation bar, click on your account name and then choose "My Account."
 
@@ -169,17 +167,17 @@ Explain to students that now, they should sign out from their current session wi
 
 ![Create an administrator IAM user - Step 14](Images/iam-user-14.png)
 
-Next, ask students to open the `CSV` file with the new `administrator` user credentials they downloaded before and highlight the following:
+Next, ask students to open the `CSV` file with the new `administrator` user credentials they downloaded before, and highlight the following:
 
 * In the `CSV` file, you will find a custom login link that you need to use to access the AWS Management Console with your `administrator` user.
 
   ![Create an administrator IAM user - Step 15](Images/iam-user-15.png)
 
-* Copy the custom login link and paste it on your browser to open the custom login page. Type `administrator` as the "IAM user name" and the password you choose before. Click on the "Sign in" button to continue.
+* Copy the custom login link and paste it in your browser to open the custom login page. Type `administrator` as the "IAM user name" and the password you chose before. Click on the "Sign in" button to continue.
 
   ![Create an administrator IAM user - Step 16](Images/iam-user-16.png)
 
-* Now you are logged-in into the AWS Management Console with your brand new IAM user. You may note that the IAM user name appears in the upper right corner, followed by your AWS account ID.
+* Now you are logged into the AWS Management Console with your brand new IAM user. You may note that the IAM user name appears in the upper right corner, followed by your AWS account ID.
 
   ![Create an administrator IAM user - Step 17](Images/iam-user-17.png)
 
@@ -201,47 +199,47 @@ In this activity, students will learn how the Amazon S3 works and its importance
 
 Be sure that you are logged in using your new `administrator` IAM user before starting this activity.
 
-Explain to students that AWS offers a service to store files in the cloud that is called Amazon Simple Storage Service or Amazon S3.
+Tell students that AWS offers a service to store files in the cloud called Amazon Simple Storage Service, or Amazon S3.
 
-Open the AWS Management Console, in the "Find Services" search box type `s3` and select `S3` from the services list.
+Open the AWS Management Console. In the "Find Services" search box type `s3` and select `S3` from the services list.
 
 ![Launching Amazon S3 from the AWS Management Console](Images/amazon-s3-launch.png)
 
-Explain to students that you will demo how they can use Amazon S3 and highlight the following.
+Explain to students that you will demo how they can use Amazon S3. Highlight the following:
 
-* Amazon S3 stores the files in a container that is called "Bucket".
+* Amazon S3 stores files in a container that is called "Bucket".
 
 * You can have as many buckets as you want, but you must be cautious when defining the access permissions since you can have public and private buckets.
 
 * When you create a bucket, you can choose the AWS Region where you want to store your data. Depending on the region, different user data privacy legislation may apply.
 
-* You may note that you already have a bucket. It was created by Amazon SageMaker Studio on Day 1 when you configured your Amazon SageMaker Studio instance.
+* You may note that you already have a bucket. It was created by Amazon SageMaker Studio on Day 1, when you configured your Amazon SageMaker Studio instance.
 
   ![Current bucket in Amazon S3](Images/amazon-s3-getting-started.png)
 
-* Note that this bucket can have public objects, and it's on the `US East (Ohio)` AWS Region since that is the current region where the Amazon SageMaker Studio preview is available.
+* Note that this bucket can have public objects, and it's on the `US East (Ohio)` AWS Region, since that is the current region where the Amazon SageMaker Studio preview is available.
 
 * You can have public or private buckets in Amazon S3. You will use private buckets to store the prediction results of the ML models that you will create in Amazon SageMaker Studio, and public buckets to store some files that we will use in the next class.
 
-* To create a new bucket, click on the "Crete bucket" button.
+* To create a new bucket, click on the "Create bucket" button.
 
   ![Creating a new Amazon S3 bucket](Images/amazon-s3-create-new-bucket.png)
 
-* In the "Create bucket" page, first you need to define a name for your bucket. Bucket's names are unique across all the Amazon S3 space, so AWS checks the uniqueness of the name you typed before creating it.
+* In the "Create bucket" page, you first need to define a name for your bucket. Bucket names are unique across the Amazon S3 space, so AWS will check the uniqueness of the name you typed before creating it.
 
 * We will start by creating a private bucket to store the prediction results for our ML models.
 
-* As the "Bucket name" type the `sm-models` followed by the current timestamp, for example, `sm-models-20200330-1244`. You should select the `US East (Ohio)` AWS Region since the Amazon S3 buckets, and the Amazon SageMaker Studio instance should be in the same region.
+* As the "Bucket name" type the `sm-models` followed by the current timestamp. For example: `sm-models-20200330-1244`. You should select the `US East (Ohio)` AWS Region, since the Amazon S3 buckets and the Amazon SageMaker Studio instance should be in the same region.
 
   ![Setting the Amazon S3 bucket's name and region](Images/amazon-s3-name-region.png)
 
-* To define a private bucket, you should check the "Block all public access" option. Click on the "Create bucket" button to continue.
+* To define a private bucket, check the "Block all public access" option. Click on the "Create bucket" button to continue.
 
   ![Setting private access to the Amazon S3 bucket](Images/amazon-s3-private-access.png)
 
 * Now, on the Amazon S3 console, note that your new bucket has been created, and it has `Not Public` access.
 
-* Adding files to a bucket is easy. Click on the name of your new bucket, next click on the "Upload" button and add the file you want to store in the bucket. Continue by clicking on the "Upload" button and you are done.
+* Adding files to a bucket is easy. Click on the name of your new bucket, then click on the "Upload" button, and add the file you want to store in the bucket. Continue by clicking on the "Upload" button, and you are done.
 
   ![Uploading a file to the private Amazon S3 bucket](Images/amazon-s3-private-file-upload.gif)
 
@@ -251,17 +249,17 @@ Explain to students that if they click on the file name, they will see the file'
 
 Continue the demo by highlighting the following:
 
-* If you click on the "Object URL," you may note that you can't see the image we uploaded, this is because this object is private.
+* If you click on the "Object URL," you may note that you can't see the image we uploaded. This is because this object is private.
 
   ![Opening a private object URL](Images/amazon-s3-private-file-url.gif)
 
-* Now let's create a public bucket. You need to return to the Amazon S3 console and click on the "Amazon S3" link.
+* Now, let's create a public bucket. You need to return to the Amazon S3 console and click on the "Amazon S3" link.
 
   ![Moving back to the Amazon S3 console](Images/amazon-s3-back-to-home.png)
 
-* From the Amazon S3 Console, click on the "Create bucket" button.
+* From the Amazon S3 Console, click the "Create bucket" button.
 
-* We will name the public bucket as `public-share` followed by the current timestamp, for example, `public-share-20200330-1326`. For this bucket, we will choose the `Canada (Central)` AWS Region.
+* We will name the public bucket as `public-share` followed by the current timestamp. For example: `public-share-20200330-1326`. For this bucket, we will choose the `Canada (Central)` AWS Region.
 
   ![Setting the name and region for the public Amazon S3 bucket](Images/amazon-s3-public-bucket-name-region.png)
 
