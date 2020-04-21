@@ -287,9 +287,9 @@ Answer any questions before moving on.
 
 ---
 
-### 4. Students Do: Creating Amazon S3 Buckets (15 min)
+### 4. Student Do: Creating Amazon S3 Buckets (15 min)
 
-In this activity, students will gain hands-on experience on Amazon S3 by creating a public and private buckets.
+In this activity, students will gain hands-on experience on Amazon S3 by creating public and private buckets.
 
 **Instructions:**
 
@@ -299,11 +299,11 @@ In this activity, students will gain hands-on experience on Amazon S3 by creatin
 
 ### 5. Instructor Do: Review Creating Amazon S3 Buckets (10 min)
 
-In this activity, you should verify that all the students were able to login into their AWS Management Console using their `administrator` IAM user, and also created a private and a public bucket.
+For this activity, verify that all students were able to login into their AWS Management Console using their `administrator` IAM user, and created private and public buckets.
 
-Ask TAs to support those students that may have any issue. Close the review activity by explaining to students that, since Amazon S3 is a cloud storage service where they can potentially store people's personal or sensitive information, they should be careful about being compliant with the personal information protection legislation. The legislations may vary depending on the nature of the service they want to provide, or the province or country of residence of their potential users or customers.
+Ask TAs to support students that may have any issues. Close the review activity by explaining to students that, since Amazon S3 is a cloud storage service that can store personal and/or sensitive information, they should be careful to be compliant with the personal information protection legislation. Legislation may vary depending on the nature of the service they want to provide, or the province or country of residence of their potential users or customers.
 
-Recall students that AWS is compliant with the most important security and information privacy compliance programs.
+Remind students that AWS is compliant with the most important security and information privacy compliance programs.
 
 Slack out the link of the [AWS Compliance Programs webpage](https://aws.amazon.com/compliance/programs/) for further reference.
 
