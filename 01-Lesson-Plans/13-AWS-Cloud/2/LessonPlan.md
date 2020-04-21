@@ -267,21 +267,21 @@ Continue the demo by highlighting the following:
 
   ![Setting public access to the Amazon S3 bucket](Images/amazon-s3-setting-public-access.png)
 
-* Note that you will see a warning message stating that you are about to make the buckets and its object available to the public. Check the acknowledge notice and click on the "Create bucket" button to continue.
+* Note that you will see a warning message stating that you are about to make the buckets and its object available to the public. Check the acknowledge notice, and click on the "Create bucket" button to continue.
 
-Explain to students that it's okay to have a public bucket, but they have to be careful about the files they share as public since they will be available to any person on the Internet.
+Explain to students that it's okay to have a public bucket, but they have to be careful about the files they share as public, since they will be available to anyone on the internet.
 
 Continue the demo by uploading a file to the new public bucket. You have a happy face icon in the `Solved` folder of this activity that you can use.
 
 ![Uploading a file to the public Amazon S3 bucket](Images/amazon-s3-upload-public-file.gif)
 
-Next, explain to students that the file you uploaded is not public yet; first you need to set the particular access for that file public for everyone.
+Next, explain to students that the file you uploaded is not public yet; first, you need to set the particular access for that file to public for everyone.
 
-Click on the file name; next, click on the "Permissions" tab. Under the "Public access" section, choose "Everyone" and check the "Read object" property; save the changes and go back to the "Overview" tab to open the object's URL to see a cute happy face.
+Click on the file name; next, click on the "Permissions" tab. Under the "Public access" section, choose "Everyone" and check the "Read object" property. Save the changes and go back to the "Overview" tab to open the object's URL to see a cute happy face.
 
 ![Setting access to everyone to a particular file](Images/amazon-s3-set-everyone-access.gif)
 
-Explain to students that a public Amazon S3 bucket, may contain private or public files depending on the particular permissions you set to the objects or the AWS IAM policies you define.
+Explain to students that a public Amazon S3 bucket may contain private or public files depending on the particular permissions you set to the objects, or the AWS IAM policies you define.
 
 Answer any questions before moving on.
 
