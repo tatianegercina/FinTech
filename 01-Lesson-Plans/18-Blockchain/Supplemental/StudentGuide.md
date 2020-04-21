@@ -63,8 +63,48 @@
 </details>
 
 <details><summary>FAQs</summary>
+<blockquote>
 
+<details><summary>What is Blockchain?</summary>
+<blockquote>
+<details><summary>Why do we need it?</summary>
 
+</details>
+<details><summary>How do we use it?</summary>
+
+</details>
+
+</blockquote>
+</details>
+<details><summary>What are the 5 Pillars?</summary>
+
+</details>
+<details><summary>What is a Blockchain wallet?</summary>
+
+</details>
+
+<details><summary>What is a Block explorer and how do I use it?</summary>
+
+</details>
+<details><summary>What is cryptography and why is relevant to Blockchain?</summary>
+
+</details>
+<details><summary>What is the difference between Symetric and Asymetric Cryptography?</summary>
+
+</details>
+<details><summary>What is hash and why do I need it?</summary>
+
+</details>
+<details><summary>How are the blocks 'chained' in the Blockchain?</summary>
+
+</details>
+<details><summary>What is a Nonce, Public Key and Secret Key?</summary>
+
+</details>
+<details><summary>What are consensus algorithms?</summary>
+
+</details>
+</blockquote>
 </details>
 ---
 
