@@ -328,7 +328,7 @@ In this activity, students will calculate multiple windows of rolling statistics
 
 ---
 
-### 7. Instructor Do: Review Simple Moving Averages (5 min)
+### 7. Instructor Do: Review Simple Moving Averages (10 min)
 
 In this section, review the solution to the previous activity, Simple Moving Averages.
 
@@ -456,7 +456,7 @@ Ask if there are any questions before moving on.
 
 ---
 
-### 9. BREAK
+### 9. BREAK (15 min)
 
 ---
 
