@@ -2,7 +2,7 @@
 
 ### Overview
 
-Today’s class will focus on analyzing the performance of groups of stocks, otherwise known as a portfolios. Stock portfolios proportion capital among several stocks to minimize risk. To create an optimal portfolio that maximizes returns while minimizing risk, it’s necessary to analyze the average return and risk of the portfolio overall and the correlations between stocks. In this lesson, students will learn how to analyze correlations between stocks, calculate rolling statistics and beta of stocks, optimize a portfolio, and compare portfolio performance.
+Today’s class will focus on analyzing the performance of groups of stocks, otherwise known as portfolios. Stock portfolios proportion capital among several stocks to minimize risk. To create an optimal portfolio that maximizes returns while minimizing risk, it’s necessary to analyze the average return and risk of the portfolio overall and the correlations between stocks. In this lesson, students will learn how to analyze correlations between stocks, calculate rolling statistics and beta of stocks, optimize a portfolio, and compare portfolio performance.
 
 ### Class Objectives
 
@@ -52,13 +52,13 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Introduce today's lesson and get students excited for what they are about to learn. Today is when they will truly leverage Pandas to create insightful financial analyses.
+Introduce today's lesson and get students excited about what they are about to learn. Today is when they will genuinely leverage Pandas to create insightful financial analyses.
 
 Welcome students to the third day of Pandas! Open the slideshow and introduce the concepts that will be covered in today's class. Highlight the following:
 
 * In the previous two classes, we focused on Pandas basics and single stock evaluation. Today, you will transition to analyze groups of stocks (stock portfolios) to achieve the best risk-to-reward ratio for your investments.
 
-* The focus of this lesson is on using Pandas to make more informed—and better!—investments. You will be learning and using techniques used by financial analysts, quantitative traders, and portfolio managers. This should feel exciting and invigorating!
+* The focus of this lesson is on using Pandas to make more informed—and better!—investments. You will be learning and using techniques used by financial analysts, quantitative traders, and portfolio managers. This should feel exciting and refreshing!
 
 * Get ready to test yourselves mentally today, as you go from analyzing a single variable to analyzing an amalgamation of variables with relationships to one another.
 
@@ -90,15 +90,15 @@ Open the lesson slides, move to the "Introduction to Portfolios" section and ask
 
 * Why are stock portfolios better than single stock investments?
 
-  **Answer:** Single stock investments are risky in that they represent the "all eggs in one basket" problem. If the performance of a single stock fails, then so does the entirety of one's investment (as it is tied only to that particular stock). However, by grouping multiple stocks together, the risk is minimized or spread throughout the portfolio; a single stock might fail, but others can continue to succeed.
+  **Answer:** Single stock investments are risky in that they represent the "all eggs in one basket" problem. If the performance of a single stock fails, then so does the entirety of one's investment (as it is tied only to that particular stock). However, by grouping multiple stocks, the risk is minimized or spread throughout the portfolio; a single stock might fail, but others can continue to succeed.
 
 * What is a stock market index?
 
-  **Answer:** Similar to a stock portfolio, a stock market index is a collection of stocks used to gauge the performance of a particular area within the stock market. For example, a popular stock market index is the S&P TSX 60, a collection of sixty  large companies listed on the Toronto Stock Exchange and serves as a general health indicator of the overall Canadian stock market.
+  **Answer:** Similar to a stock portfolio, a stock market index is a collection of stocks used to gauge the performance of a particular area within the stock market. For example, a popular stock market index is the S&P TSX 60, a collection of sixty large companies listed on the Toronto Stock Exchange and serves as a general health indicator of the overall Canadian stock market.
 
 * Why do stock market indexes matter?
 
-  **Answer:** Stock market indexes, like the S&P TSX 60, serve as general health indicators for particular areas in the stock market. However, they also serve as benchmarks to compare performances of portfolios. For example, how does the performance of one's personal stock portfolio compare to that of the S&P TSX 60 or general stock market?
+  **Answer:** Stock market indexes, like the S&P TSX 60, serve as general health indicators for particular areas in the stock market. However, they also serve as benchmarks to compare performances of portfolios. For example, how does the performance of one's stock portfolio compare to that of the S&P TSX 60 or the general stock market?
 
 Continue the presentation by moving to the "Correlation" section in the lesson slides and highlight the following:
 
@@ -106,7 +106,7 @@ Continue the presentation by moving to the "Correlation" section in the lesson s
 
 * Two given variables may have a positive or negative correlation.
 
-  * A **positive correlation** is a relationship between two variables where one variable decreases as the other variable decreases, or one variable increases while the other increases.
+  * A **positive correlation** is a relationship between two variables where one variable decreases as the other variable decreases or one variable increases while the other increases.
 
   * A **negative correlation** is a relationship between two variables in which one variable increases as the other decreases, and vice versa.
 
@@ -116,11 +116,11 @@ Open the unsolved version of the Jupyter notebook, live code the solution and hi
 
 * In this demo, we will verify if there is any correlation between ice cream sales and drowning incidents.
 
-* We will start this demo by reading the ice cream sales and the drowning incidents data into two DataFrames and setting the `Month` column as index.
+* We will start this demo by reading the ice cream sales and the data of the drowning incident into two DataFrames and setting the `Month` column as the index.
 
   ![correlation_data](Images/correlation_data.png)
 
-* Before verify the correlation between this two variables, we will concatenate both DataFrames.
+* Before verify the correlation between these two variables, we will concatenate both DataFrames.
 
   ![correlation_concat_data](Images/correlation_concat_data.png)
 
@@ -140,21 +140,21 @@ Open the unsolved version of the Jupyter notebook, live code the solution and hi
 
   * `+1` indicates a positive relationship: variables move in tandem with one another.
 
-* As you can observe, despite it sounds crazy, there is a positive correlation between these two variables.
+* As you can observe, although it sounds crazy, there is a positive correlation between these two variables.
 
   ![correlation.png](Images/correlation.png)
 
-* Pandas doesn't offer a plot to visualize correlation, so we will `Seaborn`, a popular Python data visualization libraty that is built-in in Anaconda to create a heat map plot. In later units, we will learn about even more advanced plotting libraries.
+* Pandas doesn't offer a plot to visualize correlation, so we will `Seaborn`, a popular Python data visualization library that is built-in in Anaconda to create a heat map plot. In later units, we will learn about even more advanced plotting libraries.
 
-* The `heatmap` function from the `seaborn` library color codes the different variations in a correlation table. This is particularly useful when there are many variables in a correlation table.
+* The `heatmap` function from the `seaborn` library colour codes the different variations in a correlation table. This is particularly useful when there are many variables in a correlation table.
 
-* When you are plotting correlations, it's useful to set the parameters `vmin=-1` and `vmax=1` to set a suitable range for color map.
+* When you are plotting correlations, it's useful to set the parameters `vmin=-1` and `vmax=1` to set a suitable range for the colour map.
 
   ![correlation_seaborn.png](Images/correlation-seaborn.png)
 
 * Remember that correlation does not imply causation!
 
-  * Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents`, this does not mean that buying more ice cream causes people to drown; it simply means that there is a positive relationship between the numbers.
+  * Although `Ice Cream Sales` has a positive correlation of `0.819404` with `Drowning Incidents`, this does not mean that buying more ice cream causes people to drown; it merely means that there is a positive relationship between the numbers.
 
   * Chances are there is another factor at play that results in this positive correlation. One possible factor is that as temperature increases (during the summer months), people tend to both eat more ice cream and go swimming.
 
@@ -172,7 +172,7 @@ Answer any questions before moving on.
 
 ### 3. Student Do: Diversification (15 min)
 
-In this activity, students will apply the concept of correlation to diversify a portfolio, a practical financial use case. In order to create a diversified portfolio that tends to minimize long-term volatility and risk, stocks within the portfolio should be as non-correlated as possible. Students need to find the stock with returns that are least correlated to the returns of stocks in an existing portfolio.
+In this activity, students will apply the concept of correlation to diversify a portfolio, a practical financial use case. To create a diversified portfolio that tends to minimize long-term volatility and risk, stocks within the portfolio should be as non-correlated as possible. Students need to find the stock with returns that are least correlated to the returns of stocks in an existing portfolio.
 
 **Files:**
 
@@ -222,7 +222,7 @@ In this section, you will review the solution to the Diversification activity wi
 
 Open the solution file, live code the solution and explain the following:
 
-* Diversification of stock portfolios is an important strategy in the realm of investing, as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma. Therefore, it is necessary to not only analyze the average return and risk of the portfolio overall, but also the correlation between stocks (how much one stock price changes with or against another).
+* Diversification of stock portfolios is an important strategy in the realm of investing, as total capital is proportioned among several stocks, thereby minimizing risk by preventing the "all eggs in one basket" dilemma. Therefore, it is necessary to not only analyze the average return and risk of the portfolio overall but also the correlation between stocks (how much one stock price changes with or against another).
 
 * The first step towards helping Harold to decide which energy stock should be included in the portfolio is to load the data files, concatenate all the data in a single DataFrame, and calculate de daily returns using the `pct_change` function.
 
@@ -232,15 +232,15 @@ Open the solution file, live code the solution and explain the following:
 
   ![correlation-table](Images/correlation-table.png)
 
-* The `heatmap` function from the `seaborn` library makes it easier to discern differences by using color gradients.
+* The `heatmap` function from the `seaborn` library makes it easier to discern differences by using colour gradients.
 
   ![correlation-heatmap](Images/correlation-heatmap.png)
 
-* Use the `vmin` and `vmax` parameters with the `heatmap` function to modify the scale of the heatmap. Correlation values range from `-1` to `0` to `+1` , therefore the scale of the heatmap will need to reflect this.
+* Use the `vmin` and `vmax` parameters with the `heatmap` function to modify the scale of the heatmap. Correlation values range from `-1` to `0` to `+1`. Therefore the scale of the heatmap will need to reflect this.
 
   ![correlation-heatmap-scaled](Images/correlation-heatmap-scaled.png)
 
-* Look at the heatmap and cross reference the correlation table. It would appear as though the `ENB` stock appears to be the least correlated of the energy stocks. Therefore, the `ENV` stock would be the best energy stock to add to the existing portfolio.
+* Look at the heatmap and cross-reference the correlation table. It would appear as though the `ENB` stock seems to be the least correlated with the energy stocks. Therefore, the `ENV` stock would be the best energy stock to add to the existing portfolio.
 
   ![correlation-heatmap-focus](Images/correlation-heatmap-focus.png)
 
@@ -252,7 +252,7 @@ Answer any questions before moving on.
 
 ### 5. Instructor Do: Rolling Statistics (10 min)
 
-This section focuses on the concept of rolling statistics, in which a series of a particular metric is calculated over a shifting window of time. Rolling statistics help view the change or progression of a particular metric over time and therefore aid in identifying statistical trends.
+This section focuses on the concept of rolling statistics, in which a series of a particular metric is calculated over a shifting window of time. Rolling statistics help view the change or progression of a particular metric over time and, therefore, aid in identifying statistical trends.
 
 **Files:**
 
@@ -266,13 +266,13 @@ Open the lesson slides, move to the "Rolling Statistics" section and explain the
 
 * Some commonly used rolling statistics are rolling averages, otherwise known as simple moving averages, and rolling standard deviations.
 
-* Rolling statistics help to show the progression or change of a particular metric over time. For example, calculating the average closing price of one year's worth of stock data will output a single metric, the average closing price for the year. But a rolling 7-day mean will give you the change in weekly average closing prices over the course of the year.
+* Rolling statistics help to demonstrate the progression or change of a particular metric over time. For example, calculating the average closing price of one year's worth of stock data will output a single metric, the average closing price for the year. But a rolling 7-day mean will give you the change in weekly average closing prices over the year.
 
 Close the presentation, open the unsolved version of the Jupyter notebook and live code the demo by highlighting the following:
 
-* In this demo we will analyze historical stock data from Tesla Inc. (`TSLA`) to calculate rolling statistics in Python.
+* In this demo, we will analyze historical stock data from Tesla Inc. (`TSLA`) to calculate rolling statistics in Python.
 
-* When you read time series data into a Pandas DataFrame, it's important to set the date as index and to sort the index in ascending order.
+* When you read time series data into a Pandas DataFrame, it's important to set the date as an index and to sort the index in ascending order.
 
   ![rolling_stats_read_data](Images/rolling_stats_read_data.png)
 
@@ -280,7 +280,7 @@ Close the presentation, open the unsolved version of the Jupyter notebook and li
 
   ![rolling_stats_daily_prices](Images/rolling_stats_daily_prices.png)
 
-* Rolling statistics tend to smooth out the trend of the initial dataset, allowing for more general or holistic analysis of a dataset rather than focusing on every twist and turn of the data.
+* Rolling statistics tend to smooth out the trend of the initial dataset, allowing for a more general or holistic analysis of a dataset rather than focusing on every twist and turn of the data.
 
 * Rolling statistics factor in the progression of time. Therefore, a rolling 7-day window makes sense to smooth out the trend when looking at a short-term weekly investment scope. Two interesting metrics to calculate in rolling statistics are the mean and the standard deviation.
 
@@ -300,11 +300,11 @@ Close the presentation, open the unsolved version of the Jupyter notebook and li
 
 * Remember that standard deviation/volatility is how far data points deviate from the mean; this does not necessarily need to be negative.
 
-* Although on a monthly scale there was a spike in volatility in late 2018, over a 6-month period, the highest spike in volatility was in late 2016 when the stock skyrocketed.
+* Although on a monthly scale there was a spike in volatility in late 2018, over six months, the highest spike in volatility was in late 2016 when the stock skyrocketed.
 
 Explain to students that overlaying a rolling statistic trend on top of the original data trend makes this feature easier to spot.
 
-Highlight to students that it's possible to overlay two plots using Pandas. They should assign the first plot to a variable that is commonly named as `ax`, next when the second plot is created, they should set the `ax` parameter of the `plot` function to the variable where they save the first plot (e.g. `ax=ax`).
+Highlight to students that it's possible to overlay two plots using Pandas. They should assign the first plot to a variable that is commonly named as `ax`, next when the second plot is created. They should set the `ax` parameter of the `plot` function to the variable where they save the first plot (e.g. `ax=ax`).
 
 ![rolling-statistic-overlay](Images/rolling-statistic-overlay.png)
 
@@ -314,7 +314,7 @@ Answer any questions before moving on.
 
 ### 6. Students Do: Simple Moving Averages (15 mins)
 
-In this activity, students will calculate multiple windows of rolling statistics, such as moving averages and rolling standard deviations, in order to identify trends in average price and volatility/risk that can provide insight to the investment decisions concerning a particular stock.
+In this activity, students will calculate multiple windows of rolling statistics, such as moving averages and rolling standard deviations, to identify trends in average price and volatility/risk that can provide insight to the investment decisions concerning a particular stock.
 
 **Files:**
 
@@ -338,7 +338,7 @@ In this section, review the solution to the previous activity, Simple Moving Ave
 
 Open the solution file and highlight the following:
 
-* The first step to help Harold to decide if it's worth to invest in Shopify Inc. for the long-term, is to load th data into a DataFrame and plot the daily closing prices.
+* The first step to help Harold to decide if it's worth to invest in Shopify Inc. for the long-term, is to load the data into a DataFrame and plot the daily closing prices.
 
   ![shop_rolling_stats_data](Images/shop_rolling_stats_data.png)
 
@@ -350,7 +350,7 @@ Open the solution file and highlight the following:
 
   ![sma-overlay](Images/sma-overlay.png)
 
-* When overlaying the plot of daily closing prices for `SHOP` with its rolling standard deviations, you can see the differences in volatility for different time periods.
+* When overlaying the plot of daily closing prices for `SHOP` with its rolling standard deviations, you can see the differences in volatility for different periods.
 
   ![std-overlay](Images/std-overlay.png)
 
@@ -362,7 +362,7 @@ Answer any questions before moving on.
 
 ### 8. Instructor Do: Beta (10 min)
 
-In this activity, students will be introduced to the concept of beta and how it is used to determine the relative *unit-driven* performance of one variable to another. For example calculating the beta value of a stock's returns relative to the returns of the overall market.
+In this activity, students will be introduced to the concept of beta and how it is used to determine the relative *unit-driven* performance of one variable to another. For example, calculating the beta value of a stock's returns relative to the returns of the overall market.
 
 **Files:**
 
@@ -374,19 +374,19 @@ In this activity, students will be introduced to the concept of beta and how it 
 
 Open the lesson slides, move to the "Beta" section and highlight the following:
 
-* Before start using Beta, there are two concepts that we need to review: covariance and variance.
+* Before start using beta, there are two concepts that we need to review: covariance and variance.
 
 * What is covariance?
 
-  * **Covariance** is a measure of the directional relationship between two variables. For example, the covariances between two financial assets such as stock returns would imply that both stock returns would move together with a positive covariance and move inversely with a negative covariance.
+  * **Covariance** is a measure of the directional relationship between two variables. For example, the covariance between two financial assets, such as stock returns, would imply that both stock returns would move together with a positive covariance and move inversely with a negative covariance.
 
 * What is variance?
 
-  * **Variance** is the measurement of how far numbers in a dataset are spread about their mean. For example, let's say stock A has an average price of $50, but varies in price as low as $5 and as high as $90. However, stock B averages $50, but varies in price as low as $40 and as high as $60. Stock A has a higher variance than stock B.
+  * **Variance** is the measurement of how far numbers in a dataset are spread about their mean. For example, let's say stock A has an average price of $50 but varies in price as low as $5 and as high as $90. However, stock B averages $50 but differs in price as low as $40 and as high as $60. Stock A has a higher variance than stock B.
 
 * What is the difference between covariance and variance?
 
-  * **Answer:** Variance looks at one variable, measuring the range in which that variable’s values may take. By contrast, covariance looks at the variance of two variables, and studies how those two variables vary together.
+  * **Answer:** Variance looks at one variable, measuring the range in which that variable’s values may take. By contrast, covariance looks at the variance of two variables and studies how those two variables vary together.
 
     Covariance is similar in concept to correlation: the difference is that covariance values are usually too difficult to interpret (other than being positive or negative), whereas correlation is a standardized value (regardless of data type) that ranges from `-1` to `+1`.
 
@@ -426,17 +426,17 @@ Open the unsolved version of the Jupyter notebook and highlight the following:
 
   ![covariance.png](Images/covariance.png)
 
-* To compute the value of Beta, we divide the covariance over the variance.
+* To compute the value of beta, we divide the covariance over the variance.
 
   ![beta_value](Images/beta_value.png)
 
-* In this case, since Beta is greater than `1`, we may conclude that the Amazon stock is more volatile than the market; despite we may have a higher risk, we would have a return of 133% over the typical market return.
+* In this case, since beta is greater than `1`, we may conclude that the Amazon stock is more volatile than the market; although we may have a higher risk, we would have a return of 133% over the typical market return.
 
 * A good practice is to plot the progression of beta values for a stock over time using rolling windows to see its historical volatility relative to the market.
 
   ![rolling-beta.png](Images/rolling-beta.png)
 
-* Beta and correlation seem to be similar since both metrics contrast two variables, however there is a difference between beta and correlation.
+* Beta and correlation seem to be similar since both metrics contrast two variables, however, there is a difference between beta and correlation.
 
 * Beta measures the impact of one variable on another variable. Correlations measure the possible frequency of similar directional movements without consideration for cause and effect.
 
@@ -462,7 +462,7 @@ Ask if there are any questions before moving on.
 
 ### 10. Student Do: Beta Comparisons (15 min)
 
-In this activity, students will apply their knowledge of rolling statistics and beta to plot the 30-day rolling betas of a group of stocks. The goal is to determine the most conservative stock choice, or the stock with the lowest beta.
+In this activity, students will apply their knowledge of rolling statistics and beta to plot the 30-day rolling betas of a group of stocks. The goal is to determine the most conservative stock choice or the stock with the lowest beta.
 
 **Files:**
 
@@ -504,7 +504,7 @@ Open the solved version of the Jupyter notebook, live code the solution and expl
 
   ![stu_beta_data_read](Images/stu_beta_data_read.png)
 
-* Once the data is combines, it's easier to calculate the daily returns for each stock; simply call the `pct_change` function on the combined DataFrame.
+* Once the data is combined, it's easier to calculate the daily returns for each stock; simply call the `pct_change` function on the combined DataFrame.
 
   ![combined-dataframe](Images/combined-dataframe.png)
 
@@ -552,7 +552,7 @@ Open the lesson slides, move to the "Portfolio Returns" section and highlight th
 
 Open the unsolved version of the Jupyter notebook to live code the solution. Cover the following points as you walk through the file.
 
-* In this demo we will compare the closing prices of two energy stocks listed in the S&P TSX 60 index: Enbridge Inc. (`ENB`) and Imperial Oil Limited (`IMO`).
+* In this demo, we will compare the closing prices of two energy stocks listed in the S&P TSX 60 index: Enbridge Inc. (`ENB`) and Imperial Oil Limited (`IMO`).
 
 * To calculate portfolio returns, each stock's closing prices are added as a column to the final portfolio DataFrame.
 
@@ -560,13 +560,23 @@ Open the unsolved version of the Jupyter notebook to live code the solution. Cov
 
 * Portfolio daily returns are first calculated individually with `pct_change`. The total portfolio return is calculated using the weighted average (how much of each stock contributes to the total portfolio).
 
+* Portfolio weights represent the percentage of allocated capital to each stock. For example, a weight of `0.5` indicates that a single stock will be allocated `50%` of the capital within the portfolio. The sum of the weights should always equal `1`.
+
   ![portfolio-returns.png](Images/portfolio-returns.png)
 
 * The portfolio returns can also be calculated using a dot product, which is just a shortcut for the previous calculation. This can be handy for large portfolios with a lot of weights.
 
   ![dot-product.png](Images/dot-product.png)
 
+* Annualized volatility is calculated by multiplying standard deviation by the square root of the number of trading days in a year (252 days).
+
+  ![ins_portfolio_volatility](Images/ins_portfolio_volatility.png)
+
+* A higher portfolio's volatility means more risk but potentially higher returns.
+
 * The purpose of a portfolio is to control the amount of risk and diversity in an investment. In the following example, `ENB` has more volatility than `IMO`, so changing the weights of the portfolios (how much of each stock in invested in) may affect the returns.
+
+  * The `cumprod` function computes the cumulative returns to indicate the total return profit or loss from a percentage standpoint. Multiplying an initial investment of $10,000 by the series of cumulative returns outputs a trend over time of cumulative profit or loss.
 
   ![risk-management.png](Images/risk-management.png)
 
@@ -576,12 +586,31 @@ Ask if there are any questions before moving on.
 
 ### 13. Student Do: Portfolio Planner (30 min)
 
-This is two part mini-project where you will work in pairs to research a group of
-ten stocks and perform an analysis of a $10,000 investment in the portfolio over time.
+This activity is a two-part mini-project where you will work in pairs to research a group of ten stocks and perform an analysis of a $10,000 investment in the portfolio over time.
 
 **Files:**
 
 * [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner/Unsolved/portfolio_planner_part_1.ipynb)
+
+* [bk_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/bk_data.csv)
+
+* [jnj_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/jnj_data.csv)
+
+* [mu_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/mu_data.csv)
+
+* [sbux_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/sbux_data.csv)
+
+* [wdc_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/wdc_data.csv)
+
+* [fang_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/fang_data.csv)
+
+* [luv_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/luv_data.csv)
+
+* [nke_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/nke_data.csv)
+
+* [t_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/t_data.csv)
+
+* [wrk_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/wrk_data.csv)
 
 **Instructions:**
 
@@ -589,23 +618,57 @@ ten stocks and perform an analysis of a $10,000 investment in the portfolio over
 
 ---
 
-### 14. Instructor Do: Review Portfolio Planner, Part 1 (10 min)
+### 14. Instructor Do: Review Portfolio Planner (10 min)
 
-In this section, review the solution to the previous activity, Portfolio Planner, Part 1.
+In this section, you will review the solution to the previous activity.
 
-**File:** [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Solved/portfolio_planner_part_1.ipynb)
+**Files:**
 
-Open the solution, [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Solved/portfolio_planner_part_1.ipynb), and explain the following:
+* [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner/Solved/portfolio_planner_part_1.ipynb)
 
-* When dealing with datetime indexes, make sure to sort the DataFrame by index in ascending order, so as to arrange the dates chronologically from past to present. This is particularly important when employing time-series functions such as `pct_change`.
+* [portfolio_planner_part_2.ipynb](Activities/08-Stu_Portfolio_Planner/Solved/portfolio_planner_part_2.ipynb)
 
-  ![portfolio-planner-part-1-combine-sort-df](Images/portfolio-planner-part-1-combine-sort-df.png)
+* [bk_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/bk_data.csv)
+
+* [jnj_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/jnj_data.csv)
+
+* [mu_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/mu_data.csv)
+
+* [sbux_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/sbux_data.csv)
+
+* [wdc_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/wdc_data.csv)
+
+* [fang_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/fang_data.csv)
+
+* [luv_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/luv_data.csv)
+
+* [nke_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/nke_data.csv)
+
+* [t_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/t_data.csv)
+
+* [wrk_data.csv](Activities/08-Stu_Portfolio_Planner/Resources/wrk_data.csv)
+
+Open the solved version of the Jupyter notebook for Part 2, conduct a dry-walkthrough review and explain the following:
+
+* We will start reviewing Part 1.
+
+* The first step to help Harold to analyze these ten stocks, is to load the data into a DataFrame for each data file.
+
+  ![portfolio_data](Images/portfolio_data.png)
+
+* After reading in the data, we combine the data from all the DataFrames in a single DataFrame. When dealing with datetime indexes, make sure to sort the DataFrame by index in ascending order, to arrange the dates chronologically from past to present. This is particularly important when employing time-series functions such as `pct_change`.
+
+  ![portfolio_data_combined](Images/portfolio_data_combined.png)
 
 * Annualized volatility is calculated by multiplying standard deviation by the square root of the number of trading days in a year (252 days). Using the `sort_values` function quickly sorts each stock from least volatile to most volatile.
 
   ![assess-riskiness](Images/assess-riskiness.png)
 
-* Portfolio weights represent the percentage of allocated capital to each stock. For example, a weight of 0.5 indicates that a single stock will be allocated 50% of the capital within the portfolio. The sum of the weights should always equal 1.
+* Portfolio weights represent the percentage of allocated capital to each stock. For example, a weight of `0.5` indicates that a single stock will be allocated `50%` of the capital within the portfolio. The sum of the weights should always equal `1`.
+
+* The five stocks with the highest volatility are dropped to continue the analysis of the stocks.
+
+  ![portfolio_drop_five](Images/portfolio_drop_five.png)
 
 * The `dot` function multiplies the weights by the daily return of each column (four weights, four stocks) and sums the total for each row.
 
@@ -615,33 +678,31 @@ Open the solution, [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_
 
   ![portfolio-planner-cumulative-returns](Images/portfolio-planner-cumulative-returns.png)
 
-  ![plot-cumulative-profit-loss](Images/plot-cumulative-profit-loss.png)
+* In Part 2, we filter the ten stocks to just the non-correlated stocks and stocks with positive Sharpe ratios. This is to maximize the diversification of the portfolio—and, therefore, minimize volatility—and maximize the risk-to-returns ratio of the optimized portfolio.
 
-Ask if there are any questions before moving on.
+* We start Part 2 by re-calculating daily returns as the DataFrame was modified in Part 2.
 
----
-
-In this section, review the solution to the previous activity, Portfolio Planner, Part 2.
-
-**File:** [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Solved/portfolio_planner_part_2.ipynb)
-
-Open the solution, [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Solved/portfolio_planner_part_2.ipynb), and explain the following:
-
-* Filter the 10 stocks to just the non-correlated stocks and stocks with positive Sharpe ratios. This is to maximize diversification of the portfolio—and, therefore, minimize volatility—and maximize the risk-to-returns ratio of the optimized portfolio.
+  ![portfolio_reset_daily_returns](Images/portfolio_reset_daily_returns.png)
 
 * Stock correlation describes the linear relationship between the returns of two stocks, and indicates whether returns of both stocks tend to move in tandem, inversely, or randomly (no correlation).
 
-  * The `corr` function used in conjunction with the `heatmap` function from the `seaborn` library makes it easy to spot the highly correlated stocks.
-
-  * In this case, the daily returns of `FANG` and `JNJ` appear to be highly correlated and can be dropped from the DataFrame.
+* The `corr` function used in conjunction with the `heatmap` function from the `seaborn` library makes it easy to spot the highly correlated stocks.
 
   ![part-2-correlation](Images/part-2-correlation.png)
+
+* In this case, the daily returns of `FANG` and `JNJ` appear to be highly correlated and can be dropped from the DataFrame.
+
+  ![portfolio_drop_two](Images/portfolio_drop_two.png)
 
 * Unlike volatility, which measures risk, Sharpe ratios describe the riskiness of stocks relative to their returns. Therefore, Sharpe ratios measure risk-to-reward and indicate value-driven investments. The `mean` and `std` functions are used to calculate the Sharpe ratios of stocks.
 
   ![part-2-sharpe-ratios](Images/part-2-sharpe-ratios.png)
 
-* An equal-weighted portfolio consists of the same weight for every stock in the portfolio (totaling 1). For example, an equal-weighted stock portfolio of five stocks would have weights of 0.2, 0.2, 0.2, 0.2, and 0.2 for each stock.
+* We drop the three stocks with a negative sharpe ratio since it either means the risk-free rate is higher than the portfolio's return, or the portfolio's return is expected to be negative.
+
+  ![portfolio_drop_three](Images/portfolio_drop_three.png)
+
+* An equal-weighted portfolio consists of the same weight for every stock in the portfolio (totalling `1`). For example, an equal-weighted stock portfolio of five stocks would have weights of `0.2`, `0.2`, `0.2`, `0.2`, and `0.2` for each stock.
 
   ![part-2-equal-weighted](Images/part-2-equal-weighted.png)
 
@@ -649,37 +710,17 @@ Open the solution, [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_
 
   * The non-correlated and Sharpe ratio optimized portfolio performs the best of the four portfolios, consistently achieving higher returns with minimized volatility.
 
-    * The non-correlated (diversified) portfolio performs the second worst of the four portfolios; it manages to minimize volatility, but at the expense of higher returns.
+  * The non-correlated (diversified) portfolio performs the second-worst of the four portfolios; it manages to minimize volatility but at the expense of higher returns.
 
-  * The original, unoptimized portfolio performs the second best of the four portfolios; it achieves higher returns but at the expense of more volatility. Returns increased more quickly, but also fell more quickly—notice the dip in early 2019.
+  * The original, unoptimized portfolio performs the second-best of the four portfolios; it achieves higher returns but at the expense of more volatility. Returns increased more quickly, but also fell more quickly—notice the dip in early 2019.
 
   * The risk-optimized portfolio performs the worst of the four portfolios, achieving minimal volatility but at the expense of returns.
 
   ![part-2-overlay](Images/part-2-overlay.png)
 
-Ask if there are any questions before moving on.
-
-### 18. Instructor Do: Decompress (5 min)
-
-Spend this time letting students share their thoughts about this class, and also offer some encouraging words to boost motivation.
-
-Start by giving students positive feedback.
-
-* Students have come a long way in this Pandas unit!
-
-* Not only have they learned how to use the Pandas library, but they have begun to perform analysis and apply investment strategies like professional investors.
-
-Survey the class to get a sense of how they are feeling at this point in the unit and course overall. Are there any concepts that are still giving them trouble? Students should feel challenged but not lost.
-
-Ask students questions such as the following:
-
-* What activity was the most enjoyable to complete? The most fulfilling?
-
-* What activity was the most stressful or difficult? Why?
-
-* Did today's lesson flow well and make sense?
-
 Remind students that mastery doesn't happen in a day. Practice makes perfect!
+
+Answer any questions before ending the class.
 
 ---
 
