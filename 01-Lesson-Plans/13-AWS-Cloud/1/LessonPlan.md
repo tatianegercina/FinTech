@@ -361,7 +361,7 @@ Answer any questions before moving on.
 
 ### 4. Instructor Do: Data Preparation for Unsupervised Learning (10 min)
 
-In this activity, students will learn about the data preparation considerations they should take into account before they start working with unsupervised learning algorithms.
+In this activity, students will learn about data preparation considerations they should consider prior to working with unsupervised learning algorithms.
 
 **Files:**
 
@@ -460,7 +460,7 @@ In this activity, students will perform data preparation tasks on a dataset cont
 
 Some data transformations should be made to the dataset, so ask TAs to assist students if there are any questions about why the following changes are needed.
 
-* **Annual Income:** This feature should be regularized since it is on a different scale than the other features; dividing by `1000` is the simplest solution.
+* **Annual Income:** This feature should be regularized, since it is on a different scale than the other features; dividing by `1000` is the simplest solution.
 
 * **Gender:** The `Gender` should be transformed to a numerical value; in this case, transforming `Male` to `1` and `Female` to `0` is a feasible solution.
 
