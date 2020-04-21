@@ -1,6 +1,6 @@
 # Portfolio Planner, Part 2
 
-Harold has been asked to revisit the 10 stocks that were researched in Part 1 of this activity: 
+Harold has been asked to revisit the 10 stocks that were researched in Part 1 of this activity:
 
 * Bank of New York Mellon (BK)
 * Diamondback Energy (FANG)
@@ -61,7 +61,7 @@ Using the starter file, complete the following steps:
 
 ## Hint
 
-Breathe easy! Take this activity one step at a time. Remember that this is the culminating activity of the unit. Think about the bigger picture in terms of what makes a particular stock portfolio a good investment.
+Breathe easy! Take this activity one step at a time. Remember that this is the culminating activity of the Pandas lessons. Think about the bigger picture in terms of what makes a particular stock portfolio a good investment.
 
 ---
 

@@ -530,7 +530,7 @@ Answer any questions before moving on.
 
 ---
 
-### 13. Instructor Do: Portfolio Returns (10 min)
+### 12. Instructor Do: Portfolio Returns (10 min)
 
 This section focuses on calculating returns for a group of stocks, or stock portfolios. Students should understand that portfolios of stocks are used by investors to manage and diversify risk. Defining a portfolio with varying capital allocations of stocks allows an investor to control and adjust their risk.
 
@@ -552,6 +552,8 @@ Open the lesson slides, move to the "Portfolio Returns" section and highlight th
 
 Open the unsolved version of the Jupyter notebook to live code the solution. Cover the following points as you walk through the file.
 
+* In this demo we will compare the closing prices of two energy stocks listed in the S&P TSX 60 index: Enbridge Inc. (`ENB`) and Imperial Oil Limited (`IMO`).
+
 * To calculate portfolio returns, each stock's closing prices are added as a column to the final portfolio DataFrame.
 
   ![portfolio-dataframe.png](Images/portfolio-dataframe.png)
@@ -564,21 +566,30 @@ Open the unsolved version of the Jupyter notebook to live code the solution. Cov
 
   ![dot-product.png](Images/dot-product.png)
 
-* The purpose of a portfolio is to control the amount of risk and diversity in an investment. In the following example, AMD has more volatility than MU, so changing the weights of the portfolios (how much of each stock in invested in) may affect the returns.
+* The purpose of a portfolio is to control the amount of risk and diversity in an investment. In the following example, `ENB` has more volatility than `IMO`, so changing the weights of the portfolios (how much of each stock in invested in) may affect the returns.
 
   ![risk-management.png](Images/risk-management.png)
 
 Ask if there are any questions before moving on.
 
-### 14. Student Do: Portfolio Planner, Part 1 (20 min)
+---
 
-In this activity, students will work in pairs to research a group of 10 stocks, find the least to most volatile stocks, drop the top five highly volatile stocks, set portfolio weights to the remaining stocks according to risk profile, and perform an analysis of a `$10,000` investment in the portfolio over time.
+### 13. Student Do: Portfolio Planner (30 min)
 
-**File:** [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner_Part_I/Unsolved/portfolio_planner_part_1.ipynb)
+This is two part mini-project where you will work in pairs to research a group of
+ten stocks and perform an analysis of a $10,000 investment in the portfolio over time.
 
-**Instructions:** [README.md](Activities/08-Stu_Portfolio_Planner_Part_I/README.md)
+**Files:**
 
-### 15. Instructor Do: Review Portfolio Planner, Part 1 (10 min)
+* [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_Planner/Unsolved/portfolio_planner_part_1.ipynb)
+
+**Instructions:**
+
+* [README.md](Activities/08-Stu_Portfolio_Planner/README.md)
+
+---
+
+### 14. Instructor Do: Review Portfolio Planner, Part 1 (10 min)
 
 In this section, review the solution to the previous activity, Portfolio Planner, Part 1.
 
@@ -608,15 +619,7 @@ Open the solution, [portfolio_planner_part_1.ipynb](Activities/08-Stu_Portfolio_
 
 Ask if there are any questions before moving on.
 
-### 16. Students Do: Portfolio Planner Part 2 (20 mins)
-
-In this activity, students will work in pairs to continue from where they left off in Part 1 of their portfolio evaluation. In this next part, students will evaluate correlations and Sharpe ratios of the 10 stocks, and then filter by only non-correlated and positive Sharpe ratio stocks. They will also set equal-weighted portfolio allocations to the remaining stocks and perform an analysis of a $10,000 investment in the portfolio over time. Finally, they will compare the $10,000 investment in the portfolio to other $10,000 investments in lesser-optimized portfolios.
-
-**File:** [portfolio_planner_part_2.ipynb](Activities/09-Stu_Portfolio_Planner_Part_II/Unsolved/portfolio_planner_part_2.ipynb)
-
-**Instructions:** [README.md](Activities/09-Stu_Portfolio_Planner_Part_II/README.md)
-
-### 17. Instructor Do: Review Portfolio Planner, Part 2 (5 min)
+---
 
 In this section, review the solution to the previous activity, Portfolio Planner, Part 2.
 
