@@ -18,13 +18,13 @@ By the end of today's class, students will be able to:
 
 * Slack out the [Deep Learning Installation Guide](../../14-Deep-Learning/Supplemental/deep_learning_installation_guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
-* This lesson will introduce new content quickly, and some students may struggle to grasp the new cloud technologies. Remind them that while the learning curve may be steep at first, AWS and cloud experience is highly sought after, and well worth the effort required to become comfortable with it.
+* This lesson will introduce new content quickly, and some students may struggle to grasp the new cloud technologies. Remind them that while the learning curve may be steep at first, AWS and cloud experience is highly sought after and well worth the effort required to become comfortable with it.
 
 * Note that in the past, AWS content has appeared differently for some instructional teams. It seems that AWS does A/B testing on their UI. If your AWS views don't match up with the opinions in the lesson plan, check that you've pulled the latest updates from GitHub or look in the Slack Instructional Team channel for announcements regarding this.
 
 * Check before class that all students have an AWS account and can log in.
 
-* Today's class should be a fun one. Students will put together many different technologies covered so far and learn how they can interact with cloud services.
+* Today's class should be a fun one. Students will put together many of the different technologies covered so far and learn how they can interact with cloud services.
 
 * There are a few activities that require setup. Have the class follow along and ask questions as you go.
 
