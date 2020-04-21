@@ -537,7 +537,7 @@ Live code the solution and highlight the following:
   df_shopping.to_csv(file_path, index=False)
   ```
 
-Be sure that there are no questions before moving forward.
+Answer any questions before moving on.
 
 ---
 
