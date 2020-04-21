@@ -79,27 +79,56 @@
 <details><summary>What are the 5 Pillars?</summary>
 <blockquote>
 <details><summary>Open</summary>
-Openness in this context refers to access:
 
-Anyone can access the source code and create a project from it, therefore developer access is high.
+- Openness means that the system is designed to incentivize users to keep it open. The internet is an example of this, and it is built on open protocols that anyone can learn and contribute to.
 
-Anyone can access the chain and participate in the ecosystem.
+  - Anyone can access the source code and create a project from it, therefore developer access is high.
 
-Anyone can access the services the blockchain offers.
+  - Anyone can access the chain and participate in the ecosystem.
 
-Openness means that the system is designed to incentivize users to keep it open. The internet is an example of this, and it is built on open protocols that anyone can learn and contribute to.
+  - Anyone can access the services the blockchain offers.
+
+
 </details>
 <details><summary>Borderless</summary>
+
+- Borderless means the network is completely without geographical or political borders.
+- To be borderless, the network needs to be decentralized. This means there is **no** central party that holds control of the network.
+- Since the blockchain is synchronized onto every device that helps maintain it (called nodes), it lives everywhere.
 
 </details>
 <details><summary>Neutral</summary>
 
+- Neutral means that the protocol does not discriminate against any user, whether human or machine.
+
+- The blockchain is agnostic to users, regardless of political or social status, or geographic location.
+
+- Open blockchain networks are also governed in a neutral fashion, with many using the blockchain itself for voting on the next network upgrades.
 </details>
 <details><summary>Censor Resistant</summary>
+
+- Decentralized Blockchains are highly resistant to censorship and authoritarian control.
+
+- This means that people suffering in nations that have high censorship can still find a way to use these systems to reach out and to bypass the oppression.
+
+- For example:
+
+  - Blockchain is being used currently around the world to avoid censorship or hyperinflation in many countries.
+
+  - It has been said that blockchain and crypto can be seen as an insurance policy against a dystopian future.
+
+  - Money is often compared to a form of speech. These are systems where this form of expression cannot be censored.
 
 </details>
 <details><summary>Public</summary>
 
+- Open/Public blockchains are separate from the state are thus well-suited for public affairs.
+
+- Some Blockchains can be private - these are suited to military or government work, where confidentiality is required. This is at least until zero-knowledge proof technology that allows for total privacy on a public blockchain is further developed to scale.
+
+- This separation of state and money is a first in history. It is similar to the separation of church and state to allow for religious freedom; only this allows for monetary freedom.
+
+- These public systems are built by the people, for the people, and are governed by the people.
 </details>
 </blockquote>
 </details>
