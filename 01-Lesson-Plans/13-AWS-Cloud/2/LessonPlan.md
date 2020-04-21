@@ -46,7 +46,7 @@ By the end of today's class, students will be able to:
 
 ### 1. Instructor Do: Welcome Class (5 min)
 
-Welcome the class to day 2 of Unit 13, this should be a fun one since students will go deeper into using AWS to deploy ML models.
+Welcome the class to Day 2 of Unit 13! This should be a fun one, since students will go deeper into using AWS to deploy ML models.
 
 Open the lesson slides and review the class objectives. Continue to the "AWS Free Tier" section and highlight the following:
 
@@ -60,9 +60,9 @@ Open the lesson slides and review the class objectives. Continue to the "AWS Fre
   | `50` hours per month of `m4.xlarge` for training for the first **two months**    | `5,000` speech requests per month | Up to `3.2` million seconds of compute time per month | `20,000` Get Requests      |
   | `125` hours per month of `m4.xlarge` for hosting for the first **two months**    |                                   |                                                       | `2,000` Put Requests       |
 
-* As you can see, Amazon SageMaker offers a two-months free trial. This period starts the day you launch your first notebook or instance in this service, so if you have never used Amazon SageMaker before, your trial period began in the past class.
+* As you can see, Amazon SageMaker offers a free trial for two months. This period starts the day you launch your first notebook or instance in this service, so if you have never used Amazon SageMaker before, your trial period began in the last class.
 
-* Amazon Lex and Amazon S3 are free to use for one year as long as you don't overpass the limits of each service.
+* Amazon Lex and Amazon S3 are free to use for one year, as long as you don't surpass the limits of each service.
 
 * In the case of AWS Lambda, it's always free if you pull less than `1,000,000` requests, and you use less than `3.2` million seconds of computing time per month. These limits are usually enough for testing purposes.
 
