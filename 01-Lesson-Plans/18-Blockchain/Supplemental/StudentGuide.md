@@ -66,6 +66,15 @@
 <blockquote>
 
 <details><summary>What is Blockchain?</summary>
+
+- A blockchain is a distributed "immutable" database that is not controlled by a single, central authority.
+
+- The database is synchronized across the network, with special rules in place to incentivize good actors and disincentivize bad actors.
+
+- It is immutable, which means you can only add to the database: you cannot change the history. This provides a powerful means of creating a trusted "source of truth" in a trustless environment.
+
+
+
 <blockquote>
 <details><summary>Why do we need it?</summary>
 
@@ -76,7 +85,7 @@
 
 </blockquote>
 </details>
-<details><summary>What are the 5 Pillars?</summary>
+<details><summary>What are the 5 Pillars of Blockchain?</summary>
 <blockquote>
 <details><summary>Open</summary>
 
