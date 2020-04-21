@@ -369,17 +369,17 @@ In this activity, students will learn about the data preparation considerations 
 
 * [credit_risk.csv](Activities/02-Ins_Data_Prep/Resources/credit_risk.csv)
 
-Explain to students that data preparation for unsupervised learning does not differ too much from the process followed for supervised learning problems.
+Explain to students that data preparation for unsupervised learning does not differ much from the process for supervised learning problems.
 
-Highlight to students that the main difference in preparing data for unsupervised learning is that its algorithms don't have any target variable; they only have input features that will be used to find patterns in the data. So, they should take care of selecting features that could help to find those patterns or create groups.
+Tell students that the main difference in preparing data for unsupervised learning is that its algorithms don't have target variables—only input features, which are used to find patterns in the data. So they should take care in selecting features that help find those patterns, or create groups.
 
-Explain to students that the current and forthcoming activities will be run in Amazon SageMaker Studio to gain hands-on experience with this cloud application.
+Tell students that the current and following activities will be run in Amazon SageMaker Studio so they may gain hands-on experience with this cloud application.
 
 Import the `credit_risk.csv` data file into the `Data` folder in Amazon SageMaker Studio.
 
 ![Importing the credit risk data into Amazon SageMaker Studio](Images/sagemaker-studio-risk-data.gif)
 
-Import the unsolved version of the Jupyter Notebook to Amazon SageMaker Studio, open the notebook and select the `Python 3 (Data Science)` kernel.
+Import the unsolved version of the Jupyter Notebook to Amazon SageMaker Studio, then open the notebook and select the `Python 3 (Data Science)` kernel.
 
 ![Importing the unsolved version of the Jupyter notebook](Images/sagemaker-studio-risk-ipynb.gif)
 
@@ -387,7 +387,7 @@ Live code the demo and highlight the following:
 
 * To get started with unsupervised learning, we will use a credit risk dataset, where the risk level for each person is labelled as `low`, `medium`, or `high`.
 
-* The columns in the dataset are the following:
+* The columns in the dataset are as follows:
 
   * `age`: The age of the person.
 
@@ -401,11 +401,11 @@ Live code the demo and highlight the following:
 
   * `risk`: The risk level for each person.
 
-* The first step is to load the data into a Pandas DataFrame; note that we are not using the `path` module to define the route to the CSV file since this module is not installed by default in Amazon SageMaker.
+* The first step is to load the data into a Pandas DataFrame. Note that we are not using the `path` module to define the route to the CSV file, since this module is not installed by default in Amazon SageMaker.
 
   ![Lading the credit risk dataset](Images/load-credit-risk-data.png)
 
-* In forthcoming activities, the risk level of each person will be computed using unsupervised learning, so the next step is to remove the `risk` column since it is not necessary.
+* In forthcoming activities, the risk level of each person will be computed using unsupervised learning, so the next step is to remove the `risk` column, since it is not needed.
 
   ![Removing the risk column](Images/drop-risk-column.png)
 
@@ -424,7 +424,7 @@ def encodeGender(gender):
         return 0
 ```
 
-After defining the `encodeGender()` function, we enconde the `gender` column using the `apply()` method from Pandas.
+After defining the `encodeGender()` function, we encode the `gender` column using the `apply()` method from Pandas.
 
 ```python
 clean_df["gender"] = clean_df["gender"].apply(encodeGender)
