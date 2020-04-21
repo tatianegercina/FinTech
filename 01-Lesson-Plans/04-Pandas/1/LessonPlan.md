@@ -370,7 +370,7 @@ In this activity, students will be introduced to the concept of beta and how it 
 
 * [amzn_data.csv](Activities/05-Ins_Beta/Resources/amzn_data.csv)
 
-* [sp500_data.csv](1/Activities/05-Ins_Beta/Resources/sp500_data.csv)
+* [sp500_data.csv](Activities/05-Ins_Beta/Resources/sp500_data.csv)
 
 Open the lesson slides, move to the "Beta" section and highlight the following:
 
