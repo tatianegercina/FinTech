@@ -106,4 +106,4 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 
 ---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
