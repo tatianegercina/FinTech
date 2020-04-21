@@ -77,7 +77,31 @@
 </blockquote>
 </details>
 <details><summary>What are the 5 Pillars?</summary>
+<blockquote>
+<details><summary>Open</summary>
+Openness in this context refers to access:
 
+Anyone can access the source code and create a project from it, therefore developer access is high.
+
+Anyone can access the chain and participate in the ecosystem.
+
+Anyone can access the services the blockchain offers.
+
+Openness means that the system is designed to incentivize users to keep it open. The internet is an example of this, and it is built on open protocols that anyone can learn and contribute to.
+</details>
+<details><summary>Borderless</summary>
+
+</details>
+<details><summary>Neutral</summary>
+
+</details>
+<details><summary>Censor Resistant</summary>
+
+</details>
+<details><summary>Public</summary>
+
+</details>
+</blockquote>
 </details>
 <details><summary>What is a Blockchain wallet?</summary>
 
