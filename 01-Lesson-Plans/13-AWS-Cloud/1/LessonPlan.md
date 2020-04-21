@@ -785,19 +785,19 @@ In this activity, students will learn how to use Principal Component Analysis (P
 
 Open the lesson slides and move to the "Speeding Up ML Algorithms with PCA" section and highlight the following:
 
-* There are some machine learning problems where the number of input features (or dimensions) is too high, for example, in the order of tens or thousands of features.
+* There are some machine learning problems where the number of input features (or dimensions) is too high, for example, in the order of tens (or thousands) of features.
 
-* Working with too many variables may be complex and could lead to slow down ML algorithms computing.
+* Working with too many variables may be complex and could slow down ML algorithms computing.
 
 * PCA is a statistical technique that reduces the number of input features (or dimensions) of a dataset by creating a smaller number of dimensions that represent the underlying structure of the data.
 
 * The dimensions created by PCA are called principal components.
 
-* A principal components represent data points where there is a significant variance, and the data is most spread out.
+* Principal components represent data points where there is a significant variance, and the data is most spread out.
 
-Explain to students that we are not going to deal with the mathematical complexity of PCA, the most crucial fact that they have to remember is that PCA is used to reduce the number of input features. As a result, ML algorithms computing may speed-up.
+Explain to students that we are not going to deal with the mathematical complexity of PCA. The most crucial fact that they have to remember is that PCA is used to reduce the number of input features. As a result, ML algorithms computing may speed up.
 
-Close the presentation, switch to Amazon SageMaker Studio and upload the unsolved version of the Jupyter notebook. Next, open the notebook, select the `Python 3 (Data Science)` kernel and live code the demo by highlighting the following:
+Close the presentation, switch to Amazon SageMaker Studio, and upload the unsolved version of the Jupyter notebook. Next, open the notebook, select the `Python 3 (Data Science)` kernel and live code the demo by highlighting the following:
 
 ![Loading the unsolved Jupyter notebook](Images/sagemaker-studio-ins-pca.gif)
 
@@ -811,7 +811,7 @@ Close the presentation, switch to Amazon SageMaker Studio and upload the unsolve
 
   ![Loading the credit risk data](Images/sagemaker-studio-pca-data.png)
 
-* Before start using the PCA algorithm, it's essential to scale the data. We don't need to scale the data for this demo since we already scaled before, but keep in mind that this is crucial for the PCA algorithm to work.
+* Before using the PCA algorithm, it's essential to scale the data. We don't need to scale the data for this demo since we already scaled before, but keep in mind that this is crucial for the PCA algorithm to work.
 
 * To start using this algorithm, a `PCA` model should be created specifying the final number of features in the `n_components` parameter. In this demo, the features will be reduced from `5` to `2` and the `random_state` parameter is set to `0` to allow model reproducibility.
 
@@ -825,7 +825,7 @@ Close the presentation, switch to Amazon SageMaker Studio and upload the unsolve
   risk_pca = pca.fit_transform(df_risk)
   ```
 
-Explain to students that after dimensionality reduction, we get as a result a smaller set of dimensions, these dimensions are the **principal components**. There isn’t a particular meaning assigned to each principal component; the new components are just the two main dimensions of variation that contains most of the information in the original dataset.
+Explain to students that after dimensionality reduction, we get a smaller set of dimensions as a result. These dimensions are the **principal components**. There isn’t a particular meaning assigned to each principal component; the new components are just the two main dimensions of variation that contains most of the information in the original dataset.
 
 * The resulting principal components, are transformed into a DataFrame to be used next to fit the k-means algorithm. You can see that principal component values have no direct relationship with the values in the original dataset. They can be seen as a reduced representation of the original data.
 
