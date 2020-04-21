@@ -827,7 +827,7 @@ Close the presentation, switch to Amazon SageMaker Studio, and upload the unsolv
 
 Explain to students that after dimensionality reduction, we get a smaller set of dimensions as a result. These dimensions are the **principal components**. There isn’t a particular meaning assigned to each principal component; the new components are just the two main dimensions of variation that contains most of the information in the original dataset.
 
-* The resulting principal components, are transformed into a DataFrame to be used next to fit the k-means algorithm. You can see that principal component values have no direct relationship with the values in the original dataset. They can be seen as a reduced representation of the original data.
+* The resulting principal components are transformed into a DataFrame to be used next to fit the k-means algorithm. You can see that principal component values have no direct relationship with the values in the original dataset. They can be seen as a reduced representation of the original data.
 
   ![PCA Data](Images/pca-df.png)
 
@@ -894,7 +894,7 @@ In the root folder of Amazon SageMaker Studio, load the unsolved version of the 
 
 Live code the solution and highlight the following:
 
-* Before using PCA, the features' values on the `df_shopping` DataFrame are standardized using the `StandardScaler` library from `sklearn`.
+* Before using PCA, the features values on the `df_shopping` DataFrame are standardized using the `StandardScaler` library from `sklearn`.
 
   ```python
   # Create the scaler instance
@@ -917,7 +917,7 @@ Live code the solution and highlight the following:
   shopping_pca = pca.fit_transform(shopping_scaled)
   ```
 
-Explain to students that according to the explained variance, the first principal component contains `44.3%` of the variance and the second principal component contains `33.3%` of the variance. We have `77.6%` of the information in the original dataset so that we may have a valid representation of the original data from the principal components.
+Explain to students that according to the explained variance, the first principal component contains `44.3%` of the variance, and the second principal component contains `33.3%` of the variance. We have `77.6%` of the information in the original dataset so that we may have a valid representation of the original data from the principal components.
 
 ![Explained variance with two PCs](Images/explained-variance-2pcs.png)
 
@@ -941,7 +941,7 @@ Explain to students that according to the explained variance, the first principa
 
   ![Clusters plot](Images/pca-data-plot.png)
 
-Explain to students that the power of PCA to speed up machine-learning algorithms is more noticeable when you are dealing with a dataset that has tens or hundreds of features. For datasets up to ten features, PCA adds value to simplify data analysis and visualization.
+Explain to students that the power of PCA to speed up machine-learning algorithms is more noticeable when dealing with a dataset containing tens or hundreds of features. For datasets with up to ten features, PCA adds value to simplify data analysis and visualization.
 
 Answer any questions before ending the class.
 
