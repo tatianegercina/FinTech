@@ -559,7 +559,7 @@ Open the lesson slides and move to the K-Means Algorithm section; go through the
 
 * To understand how k-means works, a fictional anecdote is used.
 
-  > Imagine that you are in a room full of spheres (data points), and you want to learn more about them, so you start to observe.
+  > Imagine that you are in a room full of spheres (data points), and want to learn more, so you start to observe them.
   >
   > You realize that every sphere represents a flower, and that axes represent features of flowers. After observing the flowers, you discover that there are some patterns when you combine the three features.
   >
@@ -616,7 +616,7 @@ Open the unsolved Jupyter Notebook, select the `Python 3 (Data Science)` kernel 
   model = KMeans(n_clusters=3, random_state=5)
   ```
 
-* Once the model instance is created, the next step is to fit the model with the unlabeled data. When the model is being trained (fit to the data), the k-means algorithm will iteratively look for the best centroid for each of the `k` clusters.
+* Once the model instance is created, the next step is to fit the model with the unlabelled data. When the model is being trained (fit to the data), the k-means algorithm will iteratively look for the best centroid for each of the `k` clusters.
 
   ```python
   model.fit(df_risk)
@@ -638,7 +638,7 @@ Continue the demo by adding a new column to the DataFrame with the predicted ris
 
 Continue the live coding demo by showing students how the best value for `k` can be found; highlight the following:
 
-* Two lists are created to store the values for the `inertia` and to define how many values of `k` we want to try. Ten values of `k` is usually a good number to start.
+* Two lists are created to store the values for `inertia` and to define how many values of `k` we want to try. Ten values of `k` is usually a good number to start with.
 
   ```python
   inertia = []
