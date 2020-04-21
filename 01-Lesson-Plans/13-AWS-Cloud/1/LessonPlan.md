@@ -671,9 +671,9 @@ Answer any questions before moving on.
 
 ---
 
-### 9. Student Do: Customer Segments for E-Commerce (20 min)
+### 9. Student Do: Customer Segments for ECommerce (20 min)
 
-In this activity, students will identify the best number of clusters on a customer clustering scenario using the elbow curve. Next, students will use k-means to cluster data and make conclusions about the obtained results.
+In this activity, students will identify the best number of clusters on a customer clustering scenario using the elbow curve. Then, students will use k-means to cluster data and make conclusions about the obtained results.
 
 **Instructions:**
 
@@ -687,7 +687,7 @@ In this activity, students will identify the best number of clusters on a custom
 
 ---
 
-### 10. Instructor Do: Review Customer Segments for E-Commerce (10 min)
+### 10. Instructor Do: Review Customer Segments for ECommerce (10 min)
 
 **Files:**
 
@@ -771,7 +771,7 @@ Explain to students that, after observing the elbow curve, they may conclude tha
 
 * Having defined these clusters, we can formulate marketing strategies relevant to each cluster aimed to increase revenue.
 
-Encourage one or two students to share their conclusions and answer any questions before moving on.
+Encourage one or two students to share their conclusions, and answer any questions before moving on.
 
 ---
 
