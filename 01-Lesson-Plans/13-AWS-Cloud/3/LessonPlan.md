@@ -44,15 +44,15 @@ By the end of the class, students will be able to:
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, create a copy by navigating to File and selecting "Make a copy...".
 
-* The time tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx)
+* The Time Tracker for this lesson can be found here: [Time Tracker](TimeTracker.xlsx)
 
 ---
 
 ### 1. Instructor Do: Welcome Class (10 min)
 
-In this activity, students will be introduced to conversational user interfaces (CUIs); they will learn how CUIs are disrupting financial services and what tools they will use to create a robo advisor.
+In this activity, students will be introduced to conversational user interfaces (CUIs). They will learn how CUIs are disrupting financial services and what tools they need to use to create a robo-advisor.
 
-Welcome students to Day 3 and explain that Today we will learn about conversational user interfaces, one of the most refreshing applications of natural language processing. Explain to students that they will create a robo advisor with conversational capabilities by the end of the day.
+Welcome students to Day 3! Explain that today we will learn about conversational user interfaces, one of the most refreshing applications of natural language processing. Tell students that they will create a robo-advisor with conversational capabilities by the end of the day.
 
 Open the lesson slides and move to the "Conversational User Interfaces (CUIs) and Robo Advisors_ section, highlighting the following:
 
@@ -62,9 +62,9 @@ Open the lesson slides and move to the "Conversational User Interfaces (CUIs) an
 
 * Chatbots are the most common applications of CUIs; however, Amazon Alexa, Apple Siri, or Google Assistant are also examples of CUIs.
 
-* CUIs and Robo Advisors enhance customer engagement by using digital communication channels (social media or messaging apps).
+* CUIs and robo-advisors enhance customer engagement by using digital communication channels (social media or messaging apps).
 
-Engage students by highlighting that this technology is disruption on finance and banking by offering Robotic Advisors or Robo Advisors, as an additional communication channel for customers.
+Engage students by highlighting that this technology has been disruptive in finance and banking via robo-advisors, which are used as an additional communication channel for customers.
 
 Highlight the following about chatbots in finance and banking:
 
