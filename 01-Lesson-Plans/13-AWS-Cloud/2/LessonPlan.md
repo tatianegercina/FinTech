@@ -695,9 +695,9 @@ Have students share their opinions with the class and bring up the following poi
 
 * Cost: Using AWS resources, we only pay for what we use. We will turn off everything before ending the class and not incur further charges.
 
-* Availability: By deploying our model to another Amazon SageMaker instance, we have made the prediction functionality available 24/7 through a secure endpoint to an application or to be consumed by others without having to make our computer available.
+* Availability: By deploying our model to another Amazon SageMaker instance, we have made the prediction functionality available 24/7 through a secure endpoint to an application, or to be consumed by others without having to make our computer available.
 
-* RESTful API: As learned in previous units, APIs provide a standard mechanism to access data. Our machine-learning API can be consumed through apps and other channels in a simple form while remaining secure and allowing other constraints (authentication, authorization, rate limiting, etc.).
+* RESTful API: As learned in previous units, APIs provide a standard mechanism to access data. Our machine-learning API can be consumed through apps and other channels in a simple form, while remaining secure and allowing other constraints (authentication, authorization, rate limiting, etc.).
 
 **Cons:**
 
