@@ -1,4 +1,4 @@
-## 13.3 Lesson Plan - Amazon Lex and Robo Advisors
+## 13.3 Lesson Plan - Amazon Lex and Robo-advisors
 
 ### Overview
 
@@ -248,7 +248,7 @@ Continue the demo by adding the following two slots:
 
   ![Adding the name of a slot](Images/amazon-lex-add-slot-name.png)
 
-* Next, you need to define the "Slot type." Slot types are similar to data types in programming languages since they define the kind of data that you can fetch and save in the slot. Amazon Lex provides several built-in slot types for the most common types of data that may be fetched in a conversation.
+* Next, you need to define the "Slot type." Slot types are similar to data types in programming languages, since they define the kind of data that you can fetch and save in the slot. Amazon Lex provides several built-in slot types for the most common types of data that may be fetched in a conversation.
 
   ![Choosing a slot type](Images/amazon-lex-choosing-slot-type.gif)
 
@@ -262,7 +262,7 @@ Continue the demo by adding the following two slots:
 
 Explain to students that the final step is to define how the bot should respond when it successfully fulfills all the slots, as well as how to respond if the user wants to cancel the intent action. This is done in the "Confirmation prompt" section.
 
-Scroll down to the "Confirmation prompt" section, check the "Confirmation prompt" option and type the following confirm and cancel prompts:
+Scroll down to the "Confirmation prompt" section, check the "Confirmation prompt" option, and type the following confirm and cancel prompts:
 
 * _Confirm prompt:_ `Are you sure you want to convert ${cadAmount} to Bitcoin?`
 
@@ -272,23 +272,23 @@ Scroll down to the "Confirmation prompt" section, check the "Confirmation prompt
 
 Explain to students that in the confirm prompt, `{cadAmount}` is a kind of variable that will be filled out with the value given by the user.
 
-You have defined all the configurations needed to test your bot. Ensure that all the students reached this point before continuing. Highlight the following:
+You have defined all the configurations needed to test your bot. Ensure that all students have reached this point before continuing. Highlight the following:
 
-* Now it is time to see the bot in action! First, you need to build your bot by clicking on the "Build" button at the upper right corner and confirming the build option on the pop-up window.
+* Now, it's time to see the bot in action! First, you need to build your bot by clicking on the "Build" button at the upper right corner and confirming the build option on the pop-up window.
 
   ![Building the bot for testing](Images/amazon-lex-build-bot.gif)
 
-* The building process takes a couple of minutes. Once the process finished, you will see a confirmation message, and the "Test bot" window will appear.
+* The building process takes a couple of minutes. Once that's finished, you will see a confirmation message, and the "Test bot" window will appear.
 
   ![Bot building confirmation](Images/amazon-lex-bot-build-success.png)
 
-* To test your bot, you can close the confirmation message. Start testing your boot using the first sample utterance.
+* To test your bot, you can close the confirmation message. Start testing your bot using the first sample utterance.
 
   ![Testing the Amazon Lex bot](Images/amazon-lex-testing-bot.gif)
 
-* When the bot is tested, the date of birth can be given on any format (e.g., `12/16/1978`, `16/12/1978`, `Dec 16, 1978`), using the `AMAZON.DATE` slot type will transform the date automatically to the `YYYY-mm-dd` format, as can be seen on the demo gif file below.
+* When the bot is tested, the date of birth can be given in any format (e.g., `12/16/1978`, `16/12/1978`, `Dec 16, 1978`). Using the `AMAZON.DATE` slot type will transform the date automatically to the `YYYY-mm-dd` format, as can be seen on the demo gif file below.
 
-* Be aware that currently Amazon Lex only supports US English. Hence, date transformations for birthdays like June 5, 1980, typed in a numerical format like 5/6/78, as in Canadian English or Spanish, will be transformed to `1980-05-06` (May 6, 1980).
+* Be aware that currently, Amazon Lex only supports US English. Hence, date transformations for birthdays like June 5, 1980, typed in a numerical format like 5/6/78, as in Canadian English or Spanish, will be transformed to `1980-05-06` (May 6, 1980).
 
 Explain to students that at this time, the bot has no business rules logic attached, that is why the final message the bot sends after fulfilling all the slots is a kind of non-friendly confirmation message. We will improve this by adding an Amazon Lambda function to the bot later Today.
 
