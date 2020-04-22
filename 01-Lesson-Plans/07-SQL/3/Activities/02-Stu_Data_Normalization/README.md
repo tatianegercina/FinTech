@@ -6,7 +6,7 @@ In this activity, you will be organizing improperly stored employee data into th
 
 * In pgAdmin, create a new database called `normalization_db`.
 
-* Create a new table `employee_normalization` according to the provided [employee_normalization.csv](Resources/employee_normalization.csv), then import the csv into the `employee_normalization` table.
+* Create a new table `employee_normalization` according to the provided [employee_normalization.csv](Resources/employee_normalization.csv), then import the csv into the `employee_normalization` table. (If you have issues importing your `.csv` you may use the provided [seed file](Unsolved/seed.sql) to import the data.
 
 * Create a new table `first_nf_employee` and that organizes the data in `employee_normalization` according to first normal form standards.
 
