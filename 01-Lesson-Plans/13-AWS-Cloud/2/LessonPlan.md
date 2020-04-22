@@ -277,11 +277,11 @@ Continue the demo by uploading a file to the new public bucket. You have a happy
 
 Next, explain to students that the file you uploaded is not public yet; first, you need to set the particular access for that file to public for everyone.
 
-Click on the file name; next, click on the "Permissions" tab. Under the "Public access" section, choose "Everyone" and check the "Read object" property. Save the changes and go back to the "Overview" tab to open the object's URL to see a cute happy face.
+Click on the file name, then click the "Permissions" tab. Under the "Public access" section, choose "Everyone" and check the "Read object" property. Save the changes and go back to the "Overview" tab to open the object's URL to see a cute happy face.
 
 ![Setting access to everyone to a particular file](Images/amazon-s3-set-everyone-access.gif)
 
-Explain to students that a public Amazon S3 bucket may contain private or public files depending on the particular permissions you set to the objects, or the AWS IAM policies you define.
+Explain to students that a public Amazon S3 bucket may contain private or public files, depending on the particular permissions you set to the objects, or the AWS IAM policies you define.
 
 Answer any questions before moving on.
 
@@ -629,13 +629,13 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to delete their AWS resources so that no billing charges are incurred for it after class.
 
-This is a collaborative activity, so ask the students to follow your steps through the process. Keep TAs assisting students that may be stuck.
+This is a collaborative activity, so ask the students to follow your steps through the process. Have TAs assist students that may be stuck.
 
 Start the demo by opening the Amazon SageMaker console, choose the "Endpoints" option in the left pane menu.
 
 ![Checking for existing endpoints](Images/aws-delete-sm-endpoints.png)
 
-You should not have any endpoint in the "Endpoints" list, if any, select each endpoint and delete it from the "Actions" menu.
+You should not have any endpoints in the "Endpoints" list. If there are any, select each endpoint and delete it from the "Actions" menu.
 
 Now, explain to students that every time they create a model, its configurations are stored, and we may want to delete them to avoid additional charges.
 
@@ -647,7 +647,7 @@ Delete all the endpoint configurations by selecting each one and choosing the "D
 
 Lastly, go to the Amazon S3 console to remove the buckets created for the activity by highlighting the following:
 
-* Select the bucket you want to delete, next, click on the "Delete" button.
+* Select the bucket you want to delete. Then click the "Delete" button.
 
   ![Deleting Amazon S3 bucket](Images/delete-amazon-s3-bucket.png)
 
@@ -655,19 +655,19 @@ Lastly, go to the Amazon S3 console to remove the buckets created for the activi
 
   ![Deleting Amazon S3 objects from a bucket](Images/amazon-s3-empty-bucket-conf.png)
 
-* Next, you need to confirm that you want to empty your bucket. Write the name of your bucket and click on the "Empty" button to continue.
+* Next, you need to confirm that you want to empty your bucket. Write the name of your bucket and click the "Empty" button to continue.
 
   ![Empty bucket confirmation](Images/amazon-s3-empty-confirm.png)
 
-* Once the bucket is empty, you will see a confirmation message. Click on the "Exit" button to return to the buckets list.
+* Once the bucket is empty, you will see a confirmation message. Click the "Exit" button to return to the buckets list.
 
   ![Empty bucket confirmation message](Images/amazon-s3-empty-confirmation.png)
 
-* To permanently delete your bucket, select it again and click on the delete button.
+* To permanently delete your bucket, select it again and click the delete button.
 
   ![Deleting Amazon S3 bucket](Images/delete-amazon-s3-bucket.png)
 
-* Next, you need to confirm the bucket deletion by writing the name of the bucket. Click on the "Delete bucket" button to continue.
+* Next, you need to confirm the bucket deletion by writing the name of the bucket. Click the "Delete bucket" button to continue.
 
   ![Deleting Amazon S3 bucket confirmation](Images/amazon-s3-delete-confirm.png)
 
@@ -675,7 +675,7 @@ Lastly, go to the Amazon S3 console to remove the buckets created for the activi
 
   ![Deleted bucket confirmation message](Images/amazon-s3-delete-confirmation-msg.png)
 
-Explain to students that they have to delete all the buckets manually. Since the AWS Free Tier offers twelve months of Amazon S3 storage, they can keep them if they want; at least, they have to keep the public bucket for the activities on Day 3.
+Explain to students that they have to delete all the buckets manually. Since the AWS Free Tier offers twelve months of Amazon S3 storage, they can keep them if they want. At the least, they have to keep the public bucket for the activities on Day 3.
 
 Answer any questions before moving on.
 
