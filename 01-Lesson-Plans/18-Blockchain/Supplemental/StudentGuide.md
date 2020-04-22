@@ -67,16 +67,14 @@
 
 <details><summary>What is Blockchain?</summary>
 
-- A blockchain is a distributed "immutable" database that is not controlled by a single, central authority.
+A blockchain is an evergrowing list of records, called blocks, that are linked together cryptographically.  Along with encryption, the list of records (blocks), is stored in a distributed manner, meaning that exact copies of all records are stored across all machines that access the network.  Combined with encryption, this makes the blockchain extremely trustworthy, as the records are very difficult to alter.  Not only does the encryption form a layer of protection, but even if one record is changed, becuase there are so many duplicates, its easy to prove that the information was altered.
 
-- The database is synchronized across the network, with special rules in place to incentivize good actors and disincentivize bad actors.
-
-- It is immutable, which means you can only add to the database: you cannot change the history. This provides a powerful means of creating a trusted "source of truth" in a trustless environment.
-
-
+<img src= Images/BlockChain_info.png width=800>
 
 <blockquote>
 <details><summary>Why do we need it?</summary>
+
+A blockchain
 
 </details>
 <details><summary>How do we use it?</summary>
