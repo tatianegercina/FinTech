@@ -16,6 +16,10 @@ You are a database consultant at a national real estate firm. Your job is to des
 
   * [agent_region_junction.csv](Resources/agent_region_junction.csv)
 
+* If you have issues importing the `.csv` files, you may alternatively import the data using the following seed file:
+
+  * [seed.sql](Unsolved/seed.sql)
+
 * Create an `agent_region_junction` table that contains the following:
 
   * A foreign key relationship with the `agent_id` column in the `agents` table.
