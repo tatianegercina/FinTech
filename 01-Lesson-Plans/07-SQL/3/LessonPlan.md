@@ -104,7 +104,11 @@ Slack out [normalization.md](Activities/01-Ins_Data_Normalization/Solved/normali
 
 In this activity, students will practice their data normalization skills using the provided data.
 
-**File:** [employee_normalization.csv](Activities/02-Stu_Data_Normalization/Resources/employee_normalization.csv)
+**Files:**
+
+* [employee_normalization.csv](Activities/02-Stu_Data_Normalization/Resources/employee_normalization.csv)
+
+* [seed.sql](Activities/02-Stu_Data_Normalization/Unsolved/seed.sql)
 
 **Instructions:** [README.md](Activities/02-Stu_Data_Normalization/README.md)
 
@@ -363,6 +367,8 @@ In this activity, students will create tables with foreign keys.
 
 * [estates.csv](Activities/04-Stu_Foreign_Keys/Resources/estates.csv)
 
+* [seed.sql](Activities/04-Stu_Foreign_Keys/Unsolved/seed.sql)
+
 **Instructions:** [README.md](Activities/04-Stu_Foreign_Keys/README.md)
 
 ### 7. Instructor Do: Review Foreign Keys (5 min)
@@ -577,7 +583,9 @@ In this activity, students will create table schemata for agents and regions, an
 
 * [regions.csv](Activities/06-Stu_Data_Relationships/Resources/regions.csv)
 
-* [agent_region_junction](Activities/06-Stu_Data_Relationships/Resources/agent_region_junction.csv)
+* [agent_region_junction.csv](Activities/06-Stu_Data_Relationships/Resources/agent_region_junction.csv)
+
+* [seed.sql](Activities/06-Stu_Data_Relationships/Unsolved/seed.sql)
 
 **Instructions:** [README.md](Activities/06-Stu_Data_Relationships/README.md)
 
@@ -1382,7 +1390,7 @@ Return to pgAdmin in the browser and create a new database called `mortgage_db`.
 
 * Open a query tool and paste in the newly downloaded SQL code to create the tables defined in the diagram. Then execute the code.
 
-* The following lines of code will give the error `there is no unique constraint matching given keys for referenced table "Banks"`. This is because the `bank_routing_number` in the `Banks` table is not a unique primary key, and therefore cannot be referenced. To resolve the issue, the `bank_routing_number` in the Payments table should be converted to a `bank_id` instead; however, in order to avoid changing the underlying data for simplicity, we can just remove these lines.  
+* The following lines of code will give the error `there is no unique constraint matching given keys for referenced table "Banks"`. This is because the `bank_routing_number` in the `Banks` table is not a unique primary key, and therefore cannot be referenced. To resolve the issue, the `bank_routing_number` in the Payments table should be converted to a `bank_id` instead; however, in order to avoid changing the underlying data for simplicity, we can just remove these lines.
 
   ```sql
   ALTER TABLE "Payments" ADD CONSTRAINT "fk_Payments_bank_routing_number" FOREIGN KEY("bank_routing_number")
