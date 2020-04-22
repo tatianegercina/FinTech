@@ -2,7 +2,7 @@
 
 ### Overview
 
-In today's class, students will be introduced to conversational user interfaces (CUIs) and learn how they are disrupting the FinTech industry, especially in finance and banking. Students will also create a robo advisor using Amazon Lex and Amazon Lambda.
+In today's class, students will be introduced to conversational user interfaces (CUIs) and learn how they are disrupting the FinTech industry, especially in finance and banking. Students will also create a robo-advisor using Amazon Lex and Amazon Lambda.
 
 ### Class Objectives
 
@@ -22,15 +22,15 @@ By the end of the class, students will be able to:
 
 * Slack out the [Deep Learning Installation Guide](../../14-Deep-Learning/Supplemental/deep_learning_installation_guide.md). Tell students to complete the installation and verify it with a TA before the end of the next class. Students will need this installed before the next unit.
 
-* There are several misconceptions and myths about what can be achieved with a Robo Advisor, make sure students understand what a Robo Advisor is, and invite them to think about the endless possibilities of this technology for FinTech.
+* There are several misconceptions and myths about what can be achieved with a robo-advisor. Make sure that students understand what a robo-advisor is, and invite them to think about the endless possibilities of this technology for FinTech.
 
 * Today's class may be challenging for students because they are going to deal with different AWS services, so be sure to get familiar with all the activities before class.
 
 * Amazon Lambda functions will be created and edited using the online code editor. This editor sometimes has issues or freezes up, so tell students to back up their code with a local Python script.
 
-* Testing Amazon Lambda functions could be tricky and frustrating, so have your TAs assisting students while they are coding and testing them.
+* Testing Amazon Lambda functions can be tricky and frustrating, so have your TAs assisting students while they are coding and testing them.
 
-* **Important:** At the end of Today´s class, remember students to create a local copy of all their deployments on AWS, so they can delete them from the cloud to avoid additional charges. Also, remind students to be aware of the AWS free tier and trial expiration date.
+* **Important:** At the end of today´s class, have students create a local copy of all their deployments on AWS, so they can delete them from the cloud to avoid additional charges. Also, remind students to be aware of the AWS free tier and trial expiration date.
 
 ### Sample Class Video (Highly Recommended)
 
