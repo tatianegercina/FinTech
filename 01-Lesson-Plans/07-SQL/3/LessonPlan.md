@@ -367,6 +367,8 @@ In this activity, students will create tables with foreign keys.
 
 * [estates.csv](Activities/04-Stu_Foreign_Keys/Resources/estates.csv)
 
+* [seed.sql](Activities/04-Stu_Foreign_Keys/Unsolved/seed.sql)
+
 **Instructions:** [README.md](Activities/04-Stu_Foreign_Keys/README.md)
 
 ### 7. Instructor Do: Review Foreign Keys (5 min)
