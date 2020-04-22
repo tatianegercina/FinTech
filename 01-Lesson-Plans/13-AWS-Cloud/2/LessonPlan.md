@@ -605,14 +605,13 @@ This activity will require the use of Amazon SageMaker Studio. The unsolved note
 
 * [german_credit_data.csv](Activities/04-Stu_Credit_Risk_Classification/Resources/german_credit_data.csv)
 
-On your Amazon SageMaker Studio instance, upload the `german_credit_data.csv` data file to the `Data` folder as well as the solved version of the  `credit-risk-classification.ipynb` notebook to the root folder.
+On your Amazon SageMaker Studio instance, upload the `german_credit_data.csv` data file to the `Data` folder, as well as the solved version of the  `credit-risk-classification.ipynb` notebook to the root folder.
 
-Open the notebook, select the `Python 3 (Data Science)` kernel and perform a dry walkthrough review cell by cell by highlighting the following points:
+Open the notebook, select the `Python 3 (Data Science)` kernel, and perform a dry walkthrough review, cell by cell. Highlight the following points:
 
 * In this activity, we are computing a `logistic regression` to perform a `binary classification`.
 
-* The output of the model prediction is a binary label (0, 1): "Good" or "
-Bad" credit risk.
+* The output of the model prediction is a binary label (0, 1): "Good" or "Bad" credit risk.
 
 * Despite using a curated dataset, we still need to perform some data preparation tasks: split, hot-encode, and scale the input features.
 
@@ -630,7 +629,7 @@ Answer any questions before moving on.
 
 In this activity, students will learn how to delete their AWS resources so that no billing charges are incurred for it after class.
 
-This is a collaborative activity, so ask the students to follow your steps trough the process. Keep TAs assisting students that may be stuck.
+This is a collaborative activity, so ask the students to follow your steps through the process. Keep TAs assisting students that may be stuck.
 
 Start the demo by opening the Amazon SageMaker console, choose the "Endpoints" option in the left pane menu.
 
