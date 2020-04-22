@@ -64,37 +64,37 @@ Open the lesson slides and move to the "Conversational User Interfaces (CUIs) an
 
 * CUIs and robo-advisors enhance customer engagement by using digital communication channels (social media or messaging apps).
 
-Engage students by highlighting that this technology has been disruptive in finance and banking via robo-advisors, which are used as an additional communication channel for customers.
+Point out to students that this technology has been disruptive in finance and banking via robo-advisors, which are used as an additional communication channel for customers.
 
 Highlight the following about chatbots in finance and banking:
 
-* According to Juniper Research, banks will save about $8 billion USD annually by 2020 thanks to chatbot use.
+* According to Juniper Research, banks will save about $8 billion USD annually by 2020, thanks to chatbot use.
 
 * Chatbots can improve customer experience by performing tasks 24/7. Customers don't need to wait for human replies for most common tasks or inquiries.
 
-* Using NLP and sentiment analysis, chatbots understand how customers speak. Financial institutions can respond more adequately to customer needs.
+* Using NLP and sentiment analysis, chatbots understand how people speak, allowing financial institutions to respond more appropriately to customers' needs.
 
-Present to students the use cases that are shown on the "Chatbots Use Cases" section. As you present these, engage students by asking who is familiar with these types of services and what their experiences were like.
+Now show students the "Chatbots Use Cases" section. As you present these, engage students by asking who is familiar with these types of services and what their experiences were like.
 
 Highlight the following about chatbots use cases:
 
 * The first robo-advisors were introduced in the Canadian FinTech industry in 2014.
 
-* Financial assets management aided by robo advisors are expected to show an annual growth rate of 26.7% from 2020 to 2023; there is a forecast of CAD $23,500m by 2023.
+* Financial assets management aided by robo-advisors are expected to show an annual growth rate of 26.7% from 2020 to 2023; with a forecast of $23.5M CAD by 2023.
 
-* Depending on how a robo advisor operates, for example, as a portfolio manager or investment advisors, they need to register with the Investment Industry Regulatory Organization of Canada (IIROC) and follow suitability obligations like disclosing investing risks to their clients
+* Depending on how a robo-advisor operates (e.g., as a portfolio manager or investment advisor), one must register with the Investment Industry Regulatory Organization of Canada (IIROC) and follow suitability obligations, like disclosing investing risks to their clients.
 
 * Wealthsimple.
 
-  * It is rated by several analysts as the best robo advisor in the Canadian market.
+  * It is rated by several analysts as the best robo-advisor in the Canadian market.
 
-  * Founded in 2014 in Toronto, It's an online investment management service focused on millennials. As of August 2019, the firm holds over CAD$5 billion in assets under management
+  * Founded in 2014 in Toronto, it's an online investment management service focused on millennials. As of August 2019, the firm holds over $5 billion CAD in assets under management.
 
 * News Wealth.
 
-  * The firm created Canada’s first SaaS-based digital wealth management platform to allow investors to have access to personalized and transparent wealth management services.
+  * The firm created Canada’s first SaaS-based digital wealth management platform to allow investors access to personalized and transparent wealth management services.
 
-  * It was founded in 2014 and is based in Toronto.
+  * Based in Toronto, it was founded in 2014.
 
 * Bolt from the Bank of Montreal (BMO).
 
@@ -102,7 +102,7 @@ Highlight the following about chatbots use cases:
 
 * Erica from Bank of America.
 
-  * It was launched in 2018 to offer customers a digital banking experience that encompassed voice, in-app messaging and predictive analytics.
+  * This was launched in 2018 to offer customers a digital banking experience that encompassed voice, in-app messaging and predictive analytics.
 
   * By December 2019, Erica reached more than 10 million users.
 
