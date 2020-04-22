@@ -124,7 +124,7 @@ Answer any additional questions before moving forward.
 
 ### 2. Everyone Do: Creating Your First Bot Using Amazon Lex (30 min)
 
-In this activity, students will be introduced to Amazon Lex; they will learn how to create a bot using the Amazon Lex console that returns parameters to the client by configuring a single intent, some slots, and a confirmation prompt.
+In this activity, students will learn how to create a bot using the Amazon Lex console that returns parameters to the client by configuring a single intent, some slots, and a confirmation prompt.
 
 **Files:**
 
@@ -134,15 +134,15 @@ Start this activity by opening the slides to the "Intro to Amazon Lex" section a
 
 * Amazon Lex is an AWS service that allows developers to create conversational interfaces powered by the same deep learning technologies like Alexa.
 
-* Uses automatic speech recognition to convert speech to text and natural language understanding to recognize the intent of the text.
+* It uses automatic speech recognition to convert speech to text, and natural language understanding to recognize the intent of the text.
 
-* Encapsulates all the complexity of deep learning algorithms, no coding is needed to start using it.
+* It encapsulates all the complexity of deep learning algorithms; no coding is needed to start using it.
 
-* Allows integration with third-party applications, AWS services, and your code via AWS Lambda.
+* It allows integration with third-party applications, AWS services, and your code via AWS Lambda.
 
-* Getting started with Amazon Lex is quite easy, it is just a four-step process.
+* Getting started with Amazon Lex is quite easy–it is just a four-step process.
 
-  1. Create a bot and configure it so it can understand the user's goals/intent.
+  1. Create a bot and configure it to understand the user's goals/intent.
 
   2. Test the bot on the Amazon Lex console. Make sure it engages in conversation with the user.
 
@@ -150,17 +150,17 @@ Start this activity by opening the slides to the "Intro to Amazon Lex" section a
 
   4. Deploy the bot on a mobile application or a messaging platform such as Slack, Kik, or Facebook Messenger.
 
-Introduce the Amazon Lex jargon to students and comment that they will gain hands-on experience with these concepts in Today's class.
+Introduce the Amazon Lex jargon to students, and reassure them that they will gain hands-on experience with these concepts in today's class.
 
-* **Bot:** It's the core component of Amazon Lex. A bot performs automated tasks such as booking a hotel, making a wire transfer, or suggesting an investment portfolio.
+* **Bot:** This is the core component of Amazon Lex. A bot performs automated tasks such as booking a hotel, making a wire transfer, or suggesting an investment portfolio.
 
 * **Intent:** Represents an action that the user wants to perform, such as BookHotel, TransferMoney, or SuggestPortfolio. A bot can have more than one intent.
 
-* **Utterances:** Speech or text phrases that trigger the intent. They refer to the dialogue between the user and the boot.
+* **Utterances:** Speech or text phrases that trigger the intent. They refer to the dialogue between the user and the bot.
 
 * **Slots:** A piece of data that is necessary for the chatbot to fulfill the user’s intent. Think of it as required user input.
 
-* **Fulfillment:** When the chatbot has collected all the slot values, then it proceeds with the logic in the fulfillment section. This is where an AWS lambda function can be used if you need some business logic.
+* **Fulfillment:** When the chatbot has collected all the slot values, it proceeds with the logic in the fulfillment section. This is where an AWS lambda function can be used if you need some business logic.
 
 Clarify to students that Amazon Lex is available only in a few AWS regions (Oregon, N. Virginia, Ireland, and Sidney), and pricing varies among regions.
 
@@ -168,9 +168,9 @@ For the latest list of the supported Amazon Lex AWS regions, slack out to studen
 
 Slack out the [Amazon Lex Pricing policies](https://aws.amazon.com/lex/pricing/), remind students that from the date they get started with Amazon Lex, they can process up to 10,000 text requests and 5,000 speech requests per month for free for the first year. **Note:** This is subject to change, so they should verify the pricing structure using the link above.
 
-Close the presentation and log-in into the AWS Management Console using your `administrator` IAM user, explain to students that now you will create together an Amazon Lex bot that will assist users in converting dollars to bitcoin.
+Close the presentation and log in to the AWS Management Console using your `administrator` IAM user. Explain to students that you will now create an Amazon Lex bot together, to assist users in converting dollars to bitcoin.
 
-Ask students to log in as well using their `administrator` IAM users, once all the class is ready, ask students to follow you as you perform the live demo. Highlight the following:
+Ask students to log in as well with their `administrator` IAM users. Once everyone is ready, ask them to follow along as you perform the live demo. Highlight the following:
 
 * From the AWS Management Console, select `US West (Oregon)` AWS region for this demo.
 
@@ -180,7 +180,7 @@ Ask students to log in as well using their `administrator` IAM users, once all t
 
   ![Launching Amazon Lex](Images/amazon-lex-search-service.png)
 
-* Next, you will see the following page to get started with your first bot. Click on the "Get Started" button to continue.
+* You will now see the following page to get started with your first bot. Click on the "Get Started" button to continue.
 
   ![Get started page of Amazon Lex](Images/amazon-lex-get-started-page.png)
 
@@ -188,7 +188,7 @@ Ask students to log in as well using their `administrator` IAM users, once all t
 
   ![Step 4b](Images/lex-step4b.png)
 
-* Choose the "Custom bot" option and fill-out the following.
+* Choose the "Custom bot" option and fill in the following:
 
   * _Bot name:_ `Crypto_Converter`
   * _Output voice:_ Salli
