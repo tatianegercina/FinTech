@@ -106,13 +106,13 @@ Highlight the following about chatbots use cases:
 
   * By December 2019, Erica reached more than 10 million users.
 
-Continue the presentation by introducing to the class the technologies we will use Today and highlight the following:
+Continue the presentation by introducing the technologies we will use today, making sure to highlight the following:
 
-* By the end of Today's class, we will create a robo advisor using two services AWS.
+* By the end of today's class, we will create a robo-advisor using two services in AWS.
 
-* Amazon Lex is a service that uses the same technology behind Amazon Alexa; it's useful for building conversational interfaces into any application using voice and text.
+* Amazon Lex is a service using the same technology behind Amazon Alexa; it's useful for building conversational interfaces into any application using voice and text.
 
-* AWS Lambda is a computing service that runs code in response to events. We will use this service to program the actions of the robo advisor.
+* AWS Lambda is a computing service that runs code in response to events. We will use this service to program the actions of the robo-advisor.
 
 * To interact with final users, a bot created with Amazon Lex can be deployed on a mobile application or a messaging platform such as Slack, Kik, or Facebook Messenger.
 
