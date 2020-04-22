@@ -199,19 +199,19 @@ Ask students to log in as well with their `administrator` IAM users. Once everyo
 
   ![Setting the initial Amazon Lex's bot configurations](Images/amazon-lex-setting-initial-conf.png)
 
-Explain to students that late in 2019, Amazon Web Services added the "sentiment analysis" feature to Amazon Lex. This feature allows scoring the sentiment of users' utterances using another service called [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html) that implies additional charges. We are not going to use this feature in Today's class, but slack out [the sentiment analysis documentation](https://docs.aws.amazon.com/lex/latest/dg/sentiment-analysis.html) to students for further research.
+Explain to students that late in 2019, Amazon Web Services added the "sentiment analysis" feature to Amazon Lex. This feature allows scoring the sentiment of users' utterances using another service called [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html) that applies additional charges. We are not going to use this feature in today's class, but slack out [the sentiment analysis documentation](https://docs.aws.amazon.com/lex/latest/dg/sentiment-analysis.html) to students for further research.
 
-Highlight that nowadays, Amazon Lex is only available in US English, so there are some considerations to take, as you will explain later.
+Explain that Amazon Lex is only available in US English now, so there are some considerations to make (which will be covered later in more depth).
 
 Once you configure the bot, click the "Create" button to continue:
 
 ![Creating an Amazon Lex bot](Images/amazon-lex-create-bot.png)
 
-* Now, we will create an intent to respond to the user's actions. Click on the "Create Intent" button, and you will see a pop-up window entitled "Add intent." Click on the "Create intent" option to continue.
+* Now, we will create an intent to respond to the user's actions. Click the "Create Intent" button. You will see a pop-up window entitled "Add intent." Click on the "Create intent" option to continue.
 
   ![Adding an intent](Images/amazon-lex-add-intent.gif)
 
-* In this window, you should give a name to the intent; usually, intents are named as actions to be performed by the bot, type `convertCAD`, and click on the "Add" button to continue.
+* In this window, you should give a name to the intent. Usually, intents are named as actions to be performed by the bot. Type `convertCAD`, and click on the "Add" button to continue.
 
   ![Naming the intent](Images/amazon-lex-name-intent.png)
 
@@ -221,7 +221,7 @@ Once you configure the bot, click the "Create" button to continue:
 
 * Sample utterances are phrases that a user can use to start a conversation with the bot.
 
-* These sample utterances will be used by the deep learning algorithm of Amazon Lex to understand the context of the conversation, the more different sample utterances you add, the better the conversation will flow between the bot and the user. We will start adding the following sample utterances.
+* These sample utterances will be used by the deep learning algorithm of Amazon Lex to understand the context of the conversation. The more different sample utterances are added, the better the conversation will flow between the bot and the user. We will start by adding the following sample utterances:
 
   * `I want to convert CAD to BTC`
   * `I want to convert dollars to BTC`
@@ -229,7 +229,7 @@ Once you configure the bot, click the "Create" button to continue:
 
   ![Adding sample utterances](Images/amazon-lex-add-utterances.png)
 
-* Once we defined the sample utterances, we need to determine the possible questions or dialogue that the bot can conduct to gather information from the user.
+* Once we define the sample utterances, we need to determine the possible questions or dialogue that the bot can conduct to gather information from the user.
 
 * In this demo, we want to convert dollars to bitcoin, so we need some way to allow the bot to ask how many dollars the user wants to convert to bitcoin.
 
