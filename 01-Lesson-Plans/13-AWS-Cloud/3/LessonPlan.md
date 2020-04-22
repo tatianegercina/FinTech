@@ -68,19 +68,19 @@ Engage students by highlighting that this technology has been disruptive in fina
 
 Highlight the following about chatbots in finance and banking:
 
-* According to Juniper Research, banks will save about 8 billion USD annually by 2020 thanks to chatbot use.
+* According to Juniper Research, banks will save about $8 billion USD annually by 2020 thanks to chatbot use.
 
 * Chatbots can improve customer experience by performing tasks 24/7. Customers don't need to wait for human replies for most common tasks or inquiries.
 
 * Using NLP and sentiment analysis, chatbots understand how customers speak. Financial institutions can respond more adequately to customer needs.
 
-Present to students the use cases that are shown on the "Chatbots Use Cases" section; as you present the use cases, engage students by asking who is familiar with services like these and what was their experience.
+Present to students the use cases that are shown on the "Chatbots Use Cases" section. As you present these, engage students by asking who is familiar with these types of services and what their experiences were like.
 
 Highlight the following about chatbots use cases:
 
-* The first robo advisors were introduced in the Canadian FinTech industry in 2014.
+* The first robo-advisors were introduced in the Canadian FinTech industry in 2014.
 
-* Financial assets management aided by robo advisors are expected to show an annual growth rate of 26.7% from 2020 to 2023; there is a forecast of CAD$23,500m by 2023.
+* Financial assets management aided by robo advisors are expected to show an annual growth rate of 26.7% from 2020 to 2023; there is a forecast of CAD $23,500m by 2023.
 
 * Depending on how a robo advisor operates, for example, as a portfolio manager or investment advisors, they need to register with the Investment Industry Regulatory Organization of Canada (IIROC) and follow suitability obligations like disclosing investing risks to their clients
 
