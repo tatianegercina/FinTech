@@ -290,11 +290,11 @@ You have defined all the configurations needed to test your bot. Ensure that all
 
 * Be aware that currently, Amazon Lex only supports US English. Hence, date transformations for birthdays like June 5, 1980, typed in a numerical format like 5/6/78, as in Canadian English or Spanish, will be transformed to `1980-05-06` (May 6, 1980).
 
-Explain to students that at this time, the bot has no business rules logic attached, that is why the final message the bot sends after fulfilling all the slots is a kind of non-friendly confirmation message. We will improve this by adding an Amazon Lambda function to the bot later Today.
+Explain to students that at this time, the bot has no business rules logic attached. This is why the final message the bot sends after fulfilling all the slots is a somewhat impersonal confirmation message. We will improve this by adding an Amazon Lambda function to the bot later today.
 
 ![Fulfillment message](Images/amazon-lex-fulfillment-message.png)
 
-Ensure that all students successfully tested their bot, answer any pending questions before continuing with the next activity.
+Ensure that all students have successfully tested their bot, then answer any pending questions before continuing with the next activity.
 
 ---
 
