@@ -742,7 +742,7 @@ Answer any questions before moving on.
 
 ### 11. Student Do: Crypto Converter (20 min)
 
-In this activity, students will extend their cryptocurrency converter by adding a custom slot to allow users to select between Bitcoin, Ethereum, or Ripple to convert from dollars. Also, business logic to identify the cryptocurrency chosen by the user and make the conversion will be added to the Lambda function.
+In this activity, students will extend their cryptocurrency converter by adding a custom slot to allow users to select between Bitcoin, Ethereum, or Ripple to convert from dollars. We will also add business logic to identify the cryptocurrency chosen by the user and make the conversion, to the Lambda function.
 
 **Instructions:**
 
@@ -762,9 +762,9 @@ In this activity, students will extend their cryptocurrency converter by adding 
 
 Start by reviewing the bot configuration. Open the Amazon Lex console, navigate to the `convertCAD` intent editor on the `Crypto_Converter` bot and highlight the following:
 
-* As it was presented on the previous demo, you should have created a new slot type called `CryptoCurrency` with three possible values: Bitcoin, Ethereum, and Ripple.
+* As presented in the previous demo, you should have created a new slot type called `CryptoCurrency` with three possible values: Bitcoin, Ethereum, and Ripple.
 
-* The user can use either the value or the synonyms to refer to the cryptocurrencies while talking to the bot.
+* The user can either use the value or the synonyms to refer to the cryptocurrencies while talking to the bot.
 
 * Once the new slot type is created, it is possible to add the `crypto` slot to the intent.
 
@@ -774,9 +774,9 @@ Start by reviewing the bot configuration. Open the Amazon Lex console, navigate 
 
 * The card's image should be public, it can be stored anywhere on the web; an Amazon S3 public asset may be the best option.
 
-Continue to the Lambda function code, open the solution on your AWS Lambda online code editor and highlight the following:
+Continue to the Lambda function code. Open the solution on your AWS Lambda online code editor and highlight the following:
 
-* There is no need to validate the name of the cryptocurrency since the user does not type it.
+* There is no need to validate the name of the cryptocurrency, since the user does not type it.
 
 * On the `get_cryptoprice()` function, the price for each cryptocurrency and its `ID` is retrieved from the alternative.me API using a URL defined on a `nested-if` structure.
 
@@ -809,7 +809,7 @@ Continue to the Lambda function code, open the solution on your AWS Lambda onlin
   crypto = get_slots(intent_request)["crypto"]
   ```
 
-* The `get_cryptoprice()` function is used in the `convert_cad()` function to fetch the current price of the selected cryptocurrency, then the conversion to Canadian Dollars is calculated.
+* The `get_cryptoprice()` function is used in the `convert_cad()` function to fetch the current price of the selected cryptocurrency; then the conversion to Canadian Dollars is calculated.
 
   ```python
   # Get the current price of BTC, ETH or XRP in CAD and make the conversion from CAD.
@@ -835,23 +835,23 @@ Continue to the Lambda function code, open the solution on your AWS Lambda onlin
   )
   ```
 
-Continue to the Amazon Lex console, test the bot to validate the changes made on Lambda; you should see a dialogue as follows.
+Continue to the Amazon Lex console. Test the bot to validate the changes made on Lambda; you should see a dialogue as follows:
 
 ![Extended Crypto Converter demo](Images/crypto_converter_extended.gif)
 
-Open the lesson slides, move to the slide entitled "Deploying Amazon Lex Bots" and highlight the following:
+Open the lesson slides, and go to the slide titled "Deploying Amazon Lex Bots." Highlight the following:
 
-* Once you create your bot in Amazon Lex, you may want to put it into action and have it talking with your potential users.
+* Once you create your bot in Amazon Lex, you may want to put it into action and have it talk with your potential users.
 
-* You have two options to deploy your Amazon Lex bot into a productive environment to interact with potential users; you can deploy your Amazon Lex bot in mobile applications or via messaging platforms.
+* You have two options to deploy your Amazon Lex bot into a productive environment to interact with potential users; you can deploy your Amazon Lex bot in mobile applications, or via messaging platforms.
 
 * To integrate your bot with mobile applications, you can use the AWS SDK or the AWS Mobile Hub service.
 
-* Amazon Lex provides four built-in channels to deploy your bot in messaging platforms. Using these channels, you can deploy your bot in Slack, Facebook Messenger, Kik, or Twilio SMS.
+* Amazon Lex provides four built-in channels to deploy your bot in messaging platforms—Slack, Facebook Messenger, Kik, or Twilio SMS.
 
 Slack out to students the [Amazon Lex deployment guide](https://docs.aws.amazon.com/lex/latest/dg/examples.html), and encourage them to try any of these deployment options by themselves.
 
-Answer any reminder question before moving forward.
+Answer any questions before moving on.
 
 ---
 
@@ -869,7 +869,7 @@ Suggested Format:
 
 * Allow students to start the homework with extra TA support.
 
-Take your time on these questions! This is a great time to reinforce concepts and address misunderstandings.
+Take your time on these questions! This is a great time to reinforce concepts and address any misunderstandings.
 
 ---
 
