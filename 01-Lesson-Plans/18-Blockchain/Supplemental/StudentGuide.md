@@ -149,6 +149,16 @@ Much like a debit card does not hold your actual money, but the access to it, a 
 
 <details><summary>What is a Block explorer and how do I use it?</summary>
 
+A block explorer is a tool that allows you to search transactions on a particular blockchain.  Just as you might use a search engine to search topics online, the block explorer allows you to search blocks on the blockchain.  With a block explorer you can see various data about the block and drill down into the specifics.  For example on Etherscan, a block explorer for Ethereum, you can find information such as:
+
+* Block Height (block number on the chain)
+* Transaction Hash
+* From and To Address
+* Entity that mined the block
+* Block Reward
+* Difficulty
+* Gas
+
 </details>
 <details><summary>What is cryptography and why is relevant to Blockchain?</summary>
 
