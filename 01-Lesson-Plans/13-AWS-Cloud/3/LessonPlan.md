@@ -482,17 +482,17 @@ In this activity, students will learn how to test AWS Lambda functions that vali
 
 * [convertErrDate.json](Activities/04-Ins_Testing_Lambdas/Solved/convertErrDate.json)
 
-Explain to students that one of the challenges working with AWS Lambda is dealing with errors, so it is essential to know how to test a Lambda function on the AWS Lambda console. For this activity, three test cases are provided.
+Explain to students that one of the challenges of working with AWS Lambda is dealing with errors, so it is essential to know how to test a Lambda function on the AWS Lambda console. For this activity, three test cases are provided.
 
-Explain to students that Lambda functions are tested using a `JSON` file to send a testing event to Lambda; the structure of the event depends on the kind of service you are connecting to Lambda. This demo only will cover how to test Amazon Lex intents.
+Explain to students that Lambda functions are tested using a `JSON` file to send a testing event to Lambda; the structure of the event depends on the kind of service you are connecting to Lambda. This demo will only cover how to test Amazon Lex intents.
 
 Open the `convertCAD` lambda function on the AWS Lambda console to show students how to create a test case. Click on the "Test" button on the upper right corner, then choose the "Create new test event" option.
 
 ![Creating a test case](Images/amazon-lambda-create-test.gif)
 
-You will note that there is a `Hello World` test case, explain to students that this is a general test case, however, testing Lambda functions connected with Amazon Lex, require a particular format.
+You will note that there is a `Hello World` test case. Explain to students that this is a general test case. Testing Lambda functions connected with Amazon Lex require a particular format.
 
-Delete the starter test case code from the "Configure test event" window, open the `convertOkText.json` in VSCode and copy and paste the code in the "Configure test event" window.
+Delete the starter test case code from the "Configure test event" window, then open the `convertOkText.json` in VSCode and copy and paste the code in the "Configure test event" window.
 
 ```json
 {
@@ -523,35 +523,35 @@ After pasting the test case code, type `convertOkText` in the "Event name" box a
 
 * On the `bot` key, the name of the Amazon Lex bot is defined, so you should be sure that this name matches with your bot's name.
 
-* The `$LATEST` it's the default value to use for the `alias` and the `version` keys.
+* The `$LATEST` is the default value to use for the `alias` and the `version` keys.
 
 * Since this test event is passed as text, the value of the `outputDialogMode` key is `text`.
 
-* Under the `currentIntent` key, the values of the bot's slots are given, you should be aware that those names match with your slots names.
+* Under the `currentIntent` key, the values of the bot's slots are given. You should be aware that those names match with your slots names.
 
 * This is a test event where the `birthday` and `cadAmount` slots have valid data.
 
-Click on the "Create" button to continue.
+Click the "Create" button to continue.
 
-Explain to students that now the name of the new test case appears on the dropdown list next to the "Test" button. Click on the "Test" button, and you will see the test results on the window below the Lambda function code.
+Tell students that the name of the new test case now appears on the dropdown list, next to the "Test" button. Click the "Test" button, and you will see the test results on the window below the Lambda function code.
 
 ![Test results](Images/lambda-test-ok.png)
 
 Since this test case has valid data for both slots, explain to students that the test status is `Succeeded`, and the execution results show a response with both slots fulfilled with the data passed on the test case.
 
-Show students how to add a new test case, click on the test events dropdown list and choose the "Configure test events" option.
+Now show students how to add a new test case. Click on the test events dropdown list and choose the "Configure test events" option.
 
 ![Add new test event](Images/lambda-add-new-test-event.png)
 
-By default, you will see that the last used test case is selected, notice that the "Edit saved test events" option is chosen so that you can edit the test event.
+By default, you will see that the last used test case is selected. Notice that the "Edit saved test events" option is chosen so that you can edit the test event.
 
 ![Edit saved test event](Images/lambda-add-new-test-default-selection.png)
 
-Choose the "Create new test event" option, and you will notice that the previous test event remains as a template. Change the value of the `cadAmount` slot to zero to test the amount validation coded on the Lambda and name the new event as `convertErrAmount`. Click on the "Create" button to continue.
+Choose the "Create new test event" option, and you will notice that the previous test event remains as a template. Change the value of the `cadAmount` slot to zero, to test the amount validation coded on the Lambda and name the new event as `convertErrAmount`. Click on the "Create" button to continue.
 
 ![Create a new test event to cast amount value](Images/lambda-add-convertErrAmount.png)
 
-Select the `convertErrAmount` test on the "Test events" dropdown list and click on the "Test" button.
+Select the `convertErrAmount` test on the "Test events" dropdown list, and click the "Test" button.
 
 Explain to students that the test ran successfully again; however, now Lambda responds with an `ElicitSlot` type of dialogue where the message defined on the Lambda can be read. This test event is validating that the code catches the incorrect value at the Lambda, and the appropriate new data elicitation is sent to the user via Amazon Lex.
 
