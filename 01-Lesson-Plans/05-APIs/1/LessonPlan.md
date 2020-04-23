@@ -847,6 +847,6 @@ Before students leave for the end of the day, give them a small homework assignm
 
 ### End Class
 
-- - -
+---
 
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
