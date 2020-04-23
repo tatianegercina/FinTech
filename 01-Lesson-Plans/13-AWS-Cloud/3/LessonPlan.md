@@ -440,9 +440,9 @@ In this activity, students will inspect the code of a Lambda function to have a 
 
 * [lambda_function.py](Activities/03-Stu_Understanding_Lambdas/Solved/lambda_function.py)
 
-Open the Lambda function code in VSCode, conduct a facilitated discussion by asking students about their findings, insights, or additional questions after reviewing the provided code. Start with some questions as follows.
+Open the Lambda function code in VSCode, and then conduct a facilitated discussion by asking students about their findings, insights, or additional questions after reviewing the provided code. Consider starting with the following questions:
 
-* Does anyone have a different idea to organize the function's _building blocks_?
+* Does anyone have a different idea on how to organize the function's _building blocks_?
 
   **Sample Answer:** Maybe we can omit the `parse_float()`, `get_btcprice()` and `validate_data()` helper functions and embed all the functionality on the `convert_cad()` intent handler function.
 
@@ -450,9 +450,9 @@ Open the Lambda function code in VSCode, conduct a facilitated discussion by ask
 
 * Do you think we can avoid using the `parse_float()` function?
 
-  **Sample Answer:** Yes, we can do that by only using the `float()` function.
+  **Sample Answer:** Yes, but we can only do that by using the `float()` function.
 
-  **Sample Answer:** Yes, we can avoid defining the `parse_float()` function and use the `float()` function instead, however, having this function returning the value of `nan` for non-numeric values is more secure and eases testing.
+  **Sample Answer:** Yes, we can avoid defining the `parse_float()` function and use the `float()` function instead. Having this function return the value of `nan` for non-numeric values is more secure and eases testing.
 
 * Is there any other way to define the dialogue helper functions?
 
@@ -460,13 +460,13 @@ Open the Lambda function code in VSCode, conduct a facilitated discussion by ask
 
   **Sample Answer:** I think this is a very efficient way to handle the different dialogue types.
 
-Slack out the following resources, encourage students to learn more about AWS Lambda and Lex.
+Slack out the following resources and encourage students to learn more about AWS Lambda and Lex.
 
 * [Lambda Function Input Event and Response Format](https://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html#using-lambda-input-event-format)
 
 * [Amazon Lex and AWS Lambda Blueprints](https://docs.aws.amazon.com/lex/latest/dg/lex-lambda-blueprints.html)
 
-Be sure to answer any remaining questions, then move to the next activity.
+Answer any remaining questions, and move to the next activity.
 
 ---
 
