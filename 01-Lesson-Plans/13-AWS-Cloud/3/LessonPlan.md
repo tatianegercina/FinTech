@@ -553,7 +553,7 @@ Choose the "Create new test event" option, and you will notice that the previous
 
 Select the `convertErrAmount` test on the "Test events" dropdown list, and click the "Test" button.
 
-Explain to students that the test ran successfully again; however, now Lambda responds with an `ElicitSlot` type of dialogue where the message defined on the Lambda can be read. This test event is validating that the code catches the incorrect value at the Lambda, and the appropriate new data elicitation is sent to the user via Amazon Lex.
+Explain to students that the test ran successfully again. However, now Lambda responds with an `ElicitSlot` type of dialogue where the message defined on the Lambda can be read. This test event is validating that the code catches the incorrect value at the Lambda, and the appropriate new data elicitation is sent to the user via Amazon Lex.
 
 ![Running the convertErrAmount test event](Images/lambda-testing-convertErrAmount.png)
 
@@ -561,11 +561,11 @@ Create a final test event, but now to validate what happens when the user gives 
 
 ![Adding the convertErrDate test event](Images/lambda-add-convertErrDate.png)
 
-Execute the `convertErrDate` test, and comment to the students that the date validation was successfully run since the `ElicitSlot` dialogue type is returned together with the message asking for different age of birth.
+Execute the `convertErrDate` test, and tell students that the date validation was successfully run, since the `ElicitSlot` dialogue type is returned together with the message asking for a different date of birth.
 
 ![Test results from convertErrDate](Images/lambda-testing-results-convertErrDate.png)
 
-Close the execution results window, and now you will introduce a typo on the code to raise a runtime error. On the `parse_float()` function, delete the closing parenthesis on line 12. Click on the "Save" button and run any of the testing events.
+Close the execution results window. You will now introduce a typo on the code to raise a runtime error. On the `parse_float()` function, delete the closing parenthesis on line 12. Click the "Save" button and run any of the testing events.
 
 ![Provoking a runtime error](Images/lambda-provoking-runtime-error.png)
 
