@@ -306,17 +306,17 @@ This activity will introduce AWS Lambda to students. Also, students will learn h
 
 * [lambda_function.py](Activities/02-Ins_Intro_Lambda/Solved/lambda_function.py)
 
-Start the activity by opening the lesson slides, navigate to the "Intro to AWS Lambda" section and highlight the following:
+Start the activity by opening the lesson slides, navigate to the "Intro to AWS Lambda" section, and highlight the following:
 
-* Sometimes AWS Lambda is seen as a web service or an API since it runs code remotely, however, AWS Lambda is a serverless technology where you just upload your code and Lambda takes care of everything.
+* Sometimes AWS Lambda is seen as a web service or an API since it runs code remotely. However, AWS Lambda is a serverless technology where you just upload your code and Lambda takes care of everything.
 
-* In general terms, _serverless_ means that you do not have to be worried about any server configuration nor administration.
+* In general terms, _serverless_ means that you do not have to be worried about any server configuration or administration.
 
 * AWS Lambda can have your code automatically trigger from other AWS services or call it directly from any web or mobile app.
 
-Continue with the lesson slides, and [open the video "Intro to AWS Lambda"](https://youtu.be/eOBq__h4OJ4) for a three minutes video introduction to illustrate how AWS Lambda works.
+Continue with the lesson slides, and [open the video "Intro to AWS Lambda"](https://youtu.be/eOBq__h4OJ4) for a three-minute video introduction to illustrate how AWS Lambda works.
 
-Once the video ends, continue with the slides and explain to students that Today we are going to use AWS Lambda by triggering code from an Amazon Lex Bot. Highlight the following:
+When the video ends, continue with the slides. Explain that we are going to use AWS Lambda by triggering code from an Amazon Lex Bot. Highlight the following:
 
 * AWS Lambda enhances chatbots by combining the NLP capabilities of Amazon Lex to understand human speech, with the possibility of running code to fulfill user's requests, for example, booking a hotel room, making a wire transfer, or providing financial advice about an investment portfolio.
 
