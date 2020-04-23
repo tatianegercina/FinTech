@@ -138,7 +138,7 @@ Now, open your browser, navigate to the [Amazon Web Services](https://aws.amazon
 
 * This allowed customers in Canada to offer cloud services compliant with Canadian cloud services regulations.
 
-* Thousands of companies use AWS worldwide, [in Canada we have some relevant success stories with companies like](https://aws.amazon.com/canada/customer-success-stories/) The National Bank of Canada, the Toronto Star, The Globe and Mail, the Government of Ontario, and many more.
+* Thousands of companies use AWS worldwide, [in Canada we have some relevant success stories with companies like](https://aws.amazon.com/canada/customer-success-stories/) The National Bank of Canada, the Toronto Star, Porter Airlines, The Globe and Mail, the Government of Ontario, and many more.
 
 Slack out the following link to students if they want to learn more about AWS: [AWS Cloud Products](https://aws.amazon.com/products/)
 
