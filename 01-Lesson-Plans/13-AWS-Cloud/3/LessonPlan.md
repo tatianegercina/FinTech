@@ -318,15 +318,15 @@ Continue with the lesson slides, and [open the video "Intro to AWS Lambda"](http
 
 When the video ends, continue with the slides. Explain that we are going to use AWS Lambda by triggering code from an Amazon Lex Bot. Highlight the following:
 
-* AWS Lambda enhances chatbots by combining the NLP capabilities of Amazon Lex to understand human speech, with the possibility of running code to fulfill user's requests, for example, booking a hotel room, making a wire transfer, or providing financial advice about an investment portfolio.
+* AWS Lambda enhances chatbots by combining the NLP capabilities of Amazon Lex to understand human speech, with the possibility of running code to fulfill user's requests. Examples could be booking a hotel room, making a wire transfer, or providing financial advice about an investment portfolio.
 
-* AWS Lambda interacts with other AWS services by processing events messages in `JSON`. Each AWS Services has a specific format.
+* AWS Lambda interacts with other AWS services by processing events messages in `JSON`. Each Amazon Web Service has a specific format.
 
 * Amazon Lex "talks" to AWS Lambda to perform initialization and validation, fulfillment, or both.
 
 Explain to students that in this demo, you will show how to process `ElicitSlots`, `Delegate`, and `Close` response events to communicate Amazon Lex and AWS Lambda.
 
-Close the slides and log-in into the AWS Management Console using your IAM `administrator` user, once you are logged in, type `lambda` into the "Find Services" search box and click on choose "Lambda" from the list to open the AWS Lambda console.
+Close the slides and log in into the AWS Management Console using your IAM `administrator` user, once you are logged in, type `lambda` into the "Find Services" search box, and click on choose "Lambda" from the list to open the AWS Lambda console.
 
 ![Search for AWS Lambda service on the AWS Management console](Images/search-lambda-service.png)
 
@@ -340,7 +340,7 @@ On the "Create function" page, select the "Author from scratch" option, fill out
 
 * **Runtime:** `Python 3.7`
 
-**Note:** Currently, AWS Lambda offers support for Python 3.8, be aware of choosing version 3.7 as the runtime to avoid version conflicts with the code in Today's lesson.
+**Note:** Currently, AWS Lambda offers support for Python 3.8. Be aware of choosing version 3.7 as the runtime to avoid version conflicts with the code in today's lesson.
 
 ![Create function page](Images/aws-lambda-create-function.png)
 
