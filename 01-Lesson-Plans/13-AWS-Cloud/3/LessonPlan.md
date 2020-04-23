@@ -581,7 +581,7 @@ Answer any remaining questions and continue to the next activity.
 
 ### 7. Student Do: Buggy Lambdas (15 min)
 
-In this activity, students will test their Lambda functions and will practice their ability to find runtime errors. Slack out the instructions to students together with the starter test event.
+In this activity, students will test their Lambda functions and practice their ability to find runtime errors. Slack out the instructions to students along with the starter test event.
 
 **Instructions:**
 
@@ -613,15 +613,15 @@ Open a facilitated discussion with the students by asking the following question
 
 * How can you prevent a possible fake date of birth from being given to the bot?
 
-  **Sample Answer:** Let us suppose that the average life expectancy is 85 years old, we can supplement an additional condition to validate that the age is between 18 and 85 years.
+  **Sample Answer:** Let us suppose that if a person's average life expectancy is 85 years old, we can supplement an additional condition to validate that the age is between 18 and 85 years.
 
   **Sample Answer:** We can unfairly discriminate an older person to use the service, so I would not be worried about this kind of validation.
 
-Continue the discussion by asking for volunteers that want to share their experience finding the bugs provoked by her or his partner.
+Continue the discussion by asking for volunteers that want to share their experiences with finding the bugs that were planted by her or his partner.
 
-* **Sample Answer:** It was frustrating since error messages returned by Lambda were not clear.
+* **Sample Answer:** It was frustrating since the error messages returned by Lambda were not clear.
 
-* **Sample Answer:** It was funny to play becoming a bug detective.
+* **Sample Answer:** It was fun being a bug detective.
 
 * **Sample Answer:** It was an excellent opportunity to practice my debugging skills.
 
